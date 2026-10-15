@@ -45,20 +45,35 @@ O uso clínico de “proteinúria nefrótica” costuma remeter a excreção ≥
 
 ## 3. História, exame físico, edema, hematúria e proteinúria
 
-### 6.1 O edema não localiza a lesão renal sozinho
+### 3.1 O edema não localiza a lesão renal sozinho
 O edema de origem renal pode acompanhar retenção hidrossalina de uma síndrome nefrítica ou estar associado à perda proteica na síndrome nefrótica. Na anamnese, perguntar quando surgiu, se predominava em face ao despertar, se evoluiu para membros inferiores ou anasarca, como variou o peso e se houve redução de diurese. Avaliar ortopneia e dispneia, porque congestão pulmonar transforma uma apresentação aparentemente ambulatorial em urgência.
 
 A pressão arterial fornece informação sindrômica: hipertensão de instalação recente com hematúria e piora de creatinina favorece lesão glomerular inflamatória, embora pessoas com síndrome nefrótica também possam ser hipertensas. Edema isolado tem diferencial amplo: insuficiência cardíaca, hepatopatia, hipoalbuminemia de outras causas, insuficiência venosa e medicamentos. Identificar proteinúria verdadeira e função renal muda o raciocínio mais do que classificar edema como “renal” pela distribuição.
 
-### 6.2 Quando a urina muda de cor
+### 3.2 Quando a urina muda de cor
 Urina escura “cor de coca-cola” pode representar hematúria glomerular, mas a descrição visual é inespecífica. Tiras reagentes reconhecem atividade heme e podem positivar por hemoglobina ou mioglobina, mesmo sem hemácias no sedimento. A confirmação requer microscopia. Hemácias dismórficas, sobretudo acantócitos, e cilindros hemáticos aumentam a probabilidade de origem glomerular. Piúria, cilindros leucocitários, cristais ou bacteriúria têm outros significados, que dependem do contexto.
 
 Macroscopia também importa: coágulos e sangramento francamente vermelho frequentemente sugerem fonte urológica, mas não autorizam descartar glomerulopatia por completo. Dor lombar intensa, cólica, disúria, litíase e neoplasias urológicas devem entrar no diferencial. História de exercício vigoroso, menstruação e coleta contaminada exige repetir a amostra em condições adequadas antes de classificar achado persistente.
 
-### 6.3 Como quantificar proteinúria com segurança
+### 3.3 Como quantificar proteinúria com segurança
 A fita urinária é um instrumento de triagem, principalmente sensível à albumina, cuja intensidade depende também da concentração urinária. Não substitui quantificação. A relação albumina/creatinina (RAC) é conveniente para classificação de risco da DRC e a relação proteína/creatinina (RPC) estima proteinúria total. Relações em amostras isoladas não são intercambiáveis em todos os cenários; a coleta cronometrada pode ser útil quando a quantificação precisa orienta decisões ou quando há discordância clínica.
 
 Interprete o valor em conjunto com albumina sérica, pressão, TFG, sedimento e evolução. Um indivíduo com 4 g/dia de proteína e albumina normal não preenche automaticamente a síndrome nefrótica completa; outro com proteinúria menor, queda rápida de TFG e cilindros hemáticos pode estar muito mais ameaçado no curto prazo. A creatinina sérica isolada é inadequada para decidir urgência sem conhecer seu valor anterior e a velocidade de mudança.
+
+### Unidades do laboratório: RAC, RPC e faixa nefrótica sem atalhos perigosos
+
+A **relação albumina/creatinina urinária (RAC ou ACR)** mede albumina em relação à creatinina e costuma ser informada em mg/g. A **relação proteína/creatinina urinária (RPC ou PCR)** mede proteínas totais, muitas vezes em g/g, mas o laboratório também pode apresentar mg/g. Antes de interpretar o número, leia sempre **qual analito foi medido e a unidade**, pois RAC 300 mg/g não é o mesmo que RPC 300 g/g. O aumento da RAC é particularmente útil para classificar risco renal; já a RPC pode captar proteínas não albumínicas e é frequentemente útil na quantificação de proteinúria glomerular.
+
+Na nomenclatura da doença renal crônica KDIGO 2024, a albuminúria persistente é classificada em A1 (RAC menor que 30 mg/g), A2 (30–299 mg/g) e A3 (300 mg/g ou mais). Essas classes representam **grau de albuminúria**, e não substituem a classificação de causa e TFG. Um paciente em A3 não apresenta necessariamente síndrome nefrótica: a faixa nefrótica de **proteína total** em adultos é classicamente excreção acima de aproximadamente 3,5 g/dia, enquanto a síndrome clínica combina proteinúria importante, hipoalbuminemia e frequentemente edema. A albuminúria persistente por período superior a três meses pode integrar definição de doença renal crônica mesmo com TFG preservada, desde que haja implicação para saúde.
+
+| Resultado hipotético | Interpretação cuidadosa |
+| --- | --- |
+| RAC 45 mg/g, TFG normal em duas amostras com três meses de intervalo | Albuminúria A2 persistente; investigar causa e risco, sem chamar de síndrome nefrótica |
+| RPC 4 g/g, albumina sérica normal, sem edema | Proteinúria em faixa nefrótica sem prova suficiente de síndrome nefrótica clínica completa |
+| Hematúria dismórfica, cilindros hemáticos e creatinina duplicando, RPC 0,8 g/g | Alto risco de inflamação glomerular apesar de proteinúria abaixo da faixa nefrótica |
+| Fita reagente 2+ em urina muito concentrada, sem RAC/RPC | Triagem que exige quantificação; não permite diagnosticar etiologia nem magnitude exata da perda |
+
+A comparação de exames seriados deve respeitar concentração urinária, laboratório, variação biológica, intercorrência infecciosa, esforço físico e estabilidade hemodinâmica. Em criança, os limiares por superfície corporal ou RPC da nefropediatria devem ser utilizados em lugar da definição absoluta adulta. A escolha entre RAC, RPC e coleta de 24 horas depende da hipótese e do quanto uma medição mais precisa mudaria tratamento. Referências: KDIGO CKD 2024, https://kdigo.org/guidelines/ckd-evaluation-and-management/ e nomenclatura KDIGO, https://pmc.ncbi.nlm.nih.gov/articles/PMC7474711/ .
 
 ## 4. Avaliação inicial e reconhecimento de urgências
 
@@ -84,11 +99,41 @@ Interprete o valor em conjunto com albumina sérica, pressão, TFG, sedimento e 
 
 **Biópsia renal não é uma formalidade:** microscopia óptica revela proliferação, esclerose, crescentes e fibrose; imunofluorescência identifica padrão de depósitos; microscopia eletrônica pode caracterizar depósitos e alterações podocitárias. A proporção de lesões reversíveis (atividade) e cicatrizes (cronicidade) modifica tanto benefício esperado como toxicidade aceitável da imunossupressão. O clínico precisa verificar risco de sangramento e condições de segurança do procedimento antes de solicitá-lo.
 
+### Interpretação orientada à probabilidade pré-teste
+
+Um conjunto de testes só acrescenta informação quando nasce de uma pergunta clínica. **Hematúria com consumo de C3, recente piodermite e melhora gradual** favorece GN associada a infecção; títulos de ANCA pedidos sem manifestações sugestivas podem confundir ao gerar achados incidentais. **Sedimento nefrítico com perda rápida de TFG e hemorragia pulmonar** eleva a urgência para ANCA MPO/PR3 e anti-MBG, enquanto a biópsia ajuda a determinar mecanismo. **Proteinúria nefrótica em adulto com fenótipo membranoso** justifica avaliação de PLA2R e pesquisa orientada de causas secundárias. A interpretação de ANA positivo depende de título, manifestações sistêmicas e outros marcadores; não transformá-lo em diagnóstico de nefrite lúpica.
+
+Em pacientes que receberão imunossupressores, verificar riscos infecciosos antes de iniciar quando a situação permitir. Rastreamentos podem incluir hepatites virais, HIV e tuberculose latente, ajustados ao agente, contexto epidemiológico e tempo disponível. Durante emergência, colher exames de forma coordenada sem postergar terapias de suporte, e distinguir provas de infecção ativa de marcadores de exposição passada. O custo clínico do erro pode ocorrer em ambas as direções: tratar infecção como vasculite ou negar terapia de doença rapidamente progressiva por esperar todos os anticorpos.
+
+**Situações que pedem cuidado extra:** anticorpos monoclonais ou imunoglobulinas detectados no sangue não demonstram automaticamente que o depósito renal tem o mesmo mecanismo; a biópsia com avaliação apropriada é frequentemente necessária. Anti-PLA2R sérico negativo não exclui membranosa. Complemento normal não exclui IgA, ANCA ou anti-MBG. Em pacientes com insuficiência renal grave, resultado negativo de qualquer teste isolado deve ser confrontado com probabilidade clínica e histologia.
+
 ## 6. Biópsia renal e anatomopatologia clínica
 
 A expressão **crescente glomerular** descreve proliferação celular e acúmulo de componentes no espaço de Bowman em resposta a injúria intensa da parede capilar. Não é diagnóstico etiológico por si só. A imunofluorescência permite três grandes pistas: deposição linear de IgG na doença anti-MBG; depósitos granulares em processos por imunocomplexos, como lúpus e IgA; e pouca ou nenhuma deposição imune nas vasculites pauci-imunes, muitas vezes associadas a ANCA. Na prática, há apresentações sobrepostas, inclusive ANCA associado a anti-MBG.
 
 A classificação Oxford MEST-C da nefropatia por IgA descreve hipercelularidade mesangial (M), hipercelularidade endocapilar (E), esclerose segmentar (S), atrofia tubular/fibrose intersticial (T) e crescentes (C). É instrumento de descrição e prognóstico em contexto clínico, e não algoritmo que isoladamente determina imunossupressão. Em nefrite lúpica, a classe histológica deve ser integrada à atividade e cronicidade: tratar a pessoa não equivale a tratar apenas o número da classe.
+
+### Guia da microscopia glomerular: o que cada técnica acrescenta
+
+O exame anatomopatológico é mais informativo quando a amostra permite **três leituras complementares**. A microscopia óptica mostra celularidade, necrose, esclerose, crescentes, espessamento de membranas e dano tubulointersticial. A imunofluorescência identifica *quais* imunoglobulinas, frações de complemento ou cadeias leves estão depositadas e *como* se distribuem. A microscopia eletrônica localiza depósitos em relação à membrana basal, visualiza alterações do podócito e ajuda a reconhecer defeitos hereditários.
+
+| Achado predominante | Mecanismo sugerido | Como não interpretar errado |
+| --- | --- | --- |
+| IgG **linear** ao longo das membranas basais | Doença anti-MBG em contexto compatível | Não confundir padrão contínuo com granular; correlacionar com soro e síndrome clínica |
+| Depósito mesangial predominante de **IgA** | Nefropatia por IgA ou vasculite por IgA | Depósito isolado não descreve atividade, cronicidade ou gravidade clínica |
+| Depósitos granulares de múltiplos reagentes ("full house") | Apoiam nefrite lúpica | Padrão não é exclusivo de lúpus; verificar história e outras causas |
+| Predomínio de C3 com imunoglobulinas escassas | Glomerulopatia C3 / desregulação do complemento | GN relacionada a infecção pode produzir padrões próximos em fase inicial |
+| Pouca ou nenhuma imunoglobulina depositada em GN crescêntica | GN pauci-imune, frequentemente ANCA | ANCA soronegativo não exclui; infecções e outras etiologias ainda devem ser consideradas |
+| Depósitos granulares subepiteliais com lesão podocitária | Nefropatia membranosa em contexto apropriado | Pesquisa de PLA2R e causas secundárias ajudam a classificar, não apenas o aspecto histológico |
+| Apagamento difuso de pedicelos com óptica pouco alterada | Podocitopatia, inclusive lesões mínimas | Pode coexistir com GESF não amostrada; a distribuição focal exige amostra representativa |
+
+**Atividade e cronicidade são dimensões diferentes.** Crescentes celulares e necrose ajudam a estimar inflamação potencialmente reversível. Glomeruloesclerose global, crescentes fibrosos, atrofia tubular e fibrose intersticial refletem dano acumulado. A mesma etiologia pode exigir condutas distintas se a inflamação é intensa ou se predomina cicatriz irreversível. O laudo deve indicar número de glomérulos avaliáveis e adequação das amostras; ausência de uma lesão focal em fragmento pequeno não garante ausência no rim inteiro.
+
+### Preparação e limites da biópsia renal
+
+Antes de solicitar biópsia percutânea, avaliar pressão arterial, anemia, plaquetas, coagulação, uso de anticoagulantes/antiagregantes, presença de infecção, anatomia renal e possibilidade de cooperação durante o procedimento. Os ajustes de fármacos antitrombóticos dependem de risco clínico e protocolo local; **não suspender anticoagulante mecanicamente sem ponderar indicação e janela de segurança**. Ultrassonografia prévia pode apontar rim único, cistos importantes, alteração anatômica ou dimensão renal incompatível com procedimento habitual.
+
+Em síndrome pulmão-rim ou perda acelerada de filtração, a urgência da biópsia precisa ser equilibrada com risco de sangramento e estabilidade. Eventualmente, a equipe especializada inicia terapia em doença de alta suspeita antes de resultado histológico, depois de coleta criteriosa e consideração de infecção. Isso é exceção orientada pelo risco, não licença para imunossuprimir toda proteinúria sem diagnóstico. Fonte geral: KDIGO, Glomerular Diseases, seção sobre avaliação da biópsia, https://kdigo.org/guidelines/gd/ .
 
 ## 7. Diagnósticos diferenciais de alto impacto
 
@@ -96,26 +141,26 @@ A classificação Oxford MEST-C da nefropatia por IgA descreve hipercelularidade
 
 ## 8. Tratamento de suporte e segurança renal
 
-### 9.1 Controle volêmico e pressão
+### 8.1 Controle volêmico e pressão
 Quando há sobrecarga de volume, ajustar ingestão de sódio e considerar diurético de alça, monitorando diurese, peso, ortostatismo, sódio, potássio e creatinina. A presença de edema não autoriza diurese agressiva sem avaliar perfusão: pessoas com síndrome nefrótica podem ter redução do volume circulante efetivo apesar de edema periférico importante. Em congestão pulmonar com hipóxia, a prioridade é estabilização em serviço de urgência.
 
 Bloqueadores do sistema renina–angiotensina, como IECA ou BRA, reduzem pressão intraglomerular e albuminúria e são importantes em vários quadros proteinúricos. Contudo, seu início ou aumento requer monitoramento de creatinina e potássio; podem ser inadequados temporariamente diante de injúria renal aguda, hipercalemia, hipotensão ou desidratação. Não combinar IECA e BRA para obter maior antiproteinúria. Em gestação, IECA/BRA não são opções seguras.
 
-### 9.2 Redução do risco cardiovascular e complicações
+### 8.2 Redução do risco cardiovascular e complicações
 Além da progressão para DRC, a albuminúria persistente marca risco cardiovascular. Investigar tabagismo, diabetes, hipertensão, dislipidemia, obesidade e risco de eventos trombóticos. Síndrome nefrótica, especialmente com hipoalbuminemia importante e alguns tipos histológicos, pode aumentar risco de tromboembolismo; profilaxia anticoagulante não é universal e requer individualização conforme trombose e sangramento. Acompanhamento de vacinação e prevenção de infecções deve anteceder imunossupressão sempre que possível.
 
-### 9.3 Terapia imunomoduladora é específica
+### 8.3 Terapia imunomoduladora é específica
 Corticosteroides, ciclofosfamida, rituximabe, micofenolato, inibidores de calcineurina e terapias mais novas não são intercambiáveis. Seleção depende de doença, classe histológica, atividade, função renal, gravidade extrarrenal, infecções, risco reprodutivo e disponibilidade. Antes de imunossuprimir, rastrear infecções relevantes, revisar imunização e planejar profilaxias indicadas. Uma dose decorada fora desse contexto pode ensinar conduta perigosa.
 
 ## 9. Síndrome nefrótica na infância
 
-### 15.1 Por que a pediatria não é uma cópia dos adultos
+### 9.1 Por que a pediatria não é uma cópia dos adultos
 
 O perfil de doenças por trás da síndrome nefrótica muda com a idade. Na infância, especialmente entre os anos pré-escolares, há predomínio de apresentações idiopáticas sensíveis ao corticoide, frequentemente com histologia de lesões mínimas. O diagnóstico inicial é predominantemente clínico e laboratorial; em criança com apresentação típica, não se exige biópsia antes da primeira terapia. Em adultos, a necessidade de biópsia e a probabilidade de nefropatia membranosa, glomeruloesclerose segmentar e focal e causas secundárias são diferentes.
 
 Na consulta inicial, a principal decisão não é escolher uma imunossupressão de longo prazo. É verificar se a criança tem infecção grave, complicações trombóticas, hipovolemia intravascular, hipertensão importante ou injúria renal. A criança pode apresentar ascite tensa, dor abdominal, derrame pleural ou edema escrotal, e essas manifestações podem requerer condutas diferentes. Dor abdominal febril em criança nefrótica não é automaticamente edema intestinal: peritonite bacteriana espontânea precisa ser considerada.
 
-### 15.2 Definições contemporâneas que mudam o gabarito
+### 9.2 Definições contemporâneas que mudam o gabarito
 
 A diretriz KDIGO 2025 define **proteinúria em faixa nefrótica pediátrica** por relação proteína/creatinina urinária (RPC) de **2 g/g ou maior**, ou proteína urinária de pelo menos 1.000 mg/m²/dia, usando amostra apropriada. O diagnóstico clínico de síndrome nefrótica reúne proteinúria nessa faixa com **albumina sérica abaixo de 3 g/dL**, ou edema quando a albumina não está disponível. A confirmação de remissão completa utiliza, entre outros critérios, RPC até 0,2 g/g ou fita urinária negativa/traços em **três dias consecutivos**, preferindo primeira urina da manhã. Os limiares pediátricos não devem ser substituídos pela excreção absoluta de 3,5 g/dia dos adultos.
 
@@ -129,7 +174,7 @@ A resposta ao glicocorticoide é tão importante quanto a síndrome inicial. **S
 | Resistente a esteroide | Ausência de remissão completa após quatro semanas de dose diária padrão, com confirmação orientada por especialista | Considerar genética, biópsia e tratamento especializado |
 | Recaída | Retorno de proteinúria nefrótica após remissão | Reavaliar infecções, adesão, complicações e necessidade de novo curso terapêutico |
 
-### 15.3 Primeira crise: indicação, esquema e proteção
+### 9.3 Primeira crise: indicação, esquema e proteção
 
 Segundo KDIGO 2025, a terapia inicial com prednisona ou prednisolona costuma ter **8 ou 12 semanas**, com fase diária de quatro ou seis semanas seguida de fase em dias alternados por igual período. A dose padrão de início é **2 mg/kg/dia ou 60 mg/m²/dia**, respeitando máximo de **60 mg/dia**; a fase em dias alternados utiliza **1,5 mg/kg ou 40 mg/m²**, máximo de **40 mg por dose**, conforme protocolo de 8 ou 12 semanas. Apresentar as duas alternativas evita ensinar uma duração universal que a diretriz não determina. Em crianças com características atípicas, idade mais avançada, história familiar ou suspeita genética, o caminho pode envolver biópsia/genética antes de tratamentos empíricos.
 
@@ -137,13 +182,13 @@ A escolha prática requer medir altura, peso, superfície corporal quando aplica
 
 **Recaída em criança sensível:** uma estratégia KDIGO 2025 é reiniciar prednisona/prednisolona oral 2 mg/kg/dia (ou 60 mg/m²/dia; máximo 60 mg) até remissão completa mantida por pelo menos três dias; depois passar à dose em dias alternados de 1,5 mg/kg ou 40 mg/m² (máximo 40 mg) por quatro semanas, em conformidade com o especialista e protocolo aplicável. Cada episódio deve ser diferenciado de proteinúria transitória associada a febre sem síndrome nefrótica plenamente recorrente.
 
-### 15.4 O que fazer se as recaídas voltarem ou não houver resposta
+### 9.4 O que fazer se as recaídas voltarem ou não houver resposta
 
 Em recaídas pouco frequentes, novos ciclos de corticoide podem ser apropriados, desde que as toxicidades sejam acompanhadas. Em recaídas frequentes ou dependência, o plano deve buscar reduzir exposição cumulativa a esteroides: micofenolato, ciclofosfamida, inibidores de calcineurina e rituximabe são opções segundo perfil, disponibilidade e experiência pediátrica. Não há regra de que toda criança deva receber todos eles em sequência. Comprometimento de crescimento, obesidade, infecções recorrentes e toxicidade já existente podem alterar a escolha.
 
 Na resistência ao corticoide, KDIGO recomenda **ciclosporina ou tacrolimo** como opções de segunda linha inicial em crianças selecionadas; solicitar investigação genética e biópsia conforme perfil, especialmente se síndrome familiar, manifestação sindrômica ou ausência de resposta. Uma forma genética de alteração podocitária frequentemente não responde à mesma imunossupressão que doença idiopática; reconhecer essa possibilidade protege contra terapias ineficazes e tóxicas. Monitorar nível dos inibidores de calcineurina, pressão, função renal e interações, pois podem causar nefrotoxicidade e hipertensão.
 
-### 15.5 Complicações imediatas na infância
+### 9.5 Complicações imediatas na infância
 
 A infecção é complicação de alto impacto. Febre com dor abdominal, irritabilidade, prostração ou piora súbita do edema exige avaliação, inclusive de peritonite; edema acentuado pode dificultar identificação de sinais. Tromboembolismo, apesar de menos frequente que certas complicações infecciosas, deve ser considerado em dor assimétrica, dispneia inexplicada ou cefaleia neurológica. Hipovolemia efetiva pode se apresentar com taquicardia, má perfusão, dor abdominal e aumento de creatinina apesar de anasarca; diurese agressiva pode piorá-la.
 
@@ -153,41 +198,41 @@ O seguimento não termina com fita urinária negativa. Registrar evolução pond
 
 ## 10. Doença de lesões mínimas no adulto
 
-### 16.1 O defeito funcional pode ser mais exuberante que a microscopia óptica
+### 10.1 O defeito funcional pode ser mais exuberante que a microscopia óptica
 
 Na doença de lesões mínimas, a disfunção dos podócitos e do diafragma de filtração provoca proteinúria intensa; a microscopia óptica pode ser quase normal, enquanto a eletrônica demonstra apagamento difuso dos pedicelos. Isso explica o nome e a importância de não depender exclusivamente de microscopia óptica para entender a doença. Não se trata de uma glomerulonefrite proliferativa clássica. Em adultos, o quadro pode aparecer abruptamente com edema extenso e albumina muito baixa, às vezes com injúria renal aguda associada.
 
 A etiologia é frequentemente idiopática, mas deve-se perguntar por anti-inflamatórios não esteroidais e por contextos clínicos associados, inclusive neoplasias hematológicas. Investigar sinais sistêmicos e não assumir que um jovem adulto com proteinúria intensa tenha automaticamente doença de lesões mínimas: formas de GESF podem ter apresentação semelhante, e fragmento inadequado de biópsia pode dificultar a distinção, especialmente em lesões focais.
 
-### 16.2 Escolhendo e monitorando o tratamento
+### 10.2 Escolhendo e monitorando o tratamento
 
 Para doença de lesões mínimas comprovada em adulto, a terapêutica de primeira linha frequentemente utiliza glicocorticoides em regime apropriado à diretriz e às comorbidades. A resistência exige reconsiderar diagnóstico, adesão e possibilidade de GESF não amostrada. A duração de alta dose, retirada e alternativas devem seguir protocolo nefrológico com avaliação de resposta; não é correto transpor sem adaptação o esquema pediátrico de 8–12 semanas. Em intolerância, dependência, recaídas frequentes ou toxicidade, existem estratégias com inibidores de calcineurina, ciclofosfamida, micofenolato ou rituximabe, de acordo com subtipo clínico e decisão especializada.
 
 É crucial acompanhar proteinúria em série, albumina, creatinina, volume, pressão, glicemia e efeitos de esteroides. Em cada nova recaída, perguntar se há gatilho, exposição farmacológica ou diagnóstico inicial incorreto. A remissão clínica pode ocorrer em semanas, mas alguns adultos respondem mais lentamente que crianças, o que exige acompanhamento em vez de declarar resistência prematuramente.
 
-### 16.3 Questão diferencial: lesões mínimas versus GESF primária
+### 10.3 Questão diferencial: lesões mínimas versus GESF primária
 
 Ambas podem resultar em síndrome nefrótica com lesão podocitária. A GESF mostra cicatriz em parte dos glomérulos e segmentos acometidos, e a amostragem insuficiente pode não captá-la. Lesões mínimas costuma ter maior probabilidade de sensibilidade a esteroides e prognóstico renal favorável quando responde; GESF primária pode ser mais difícil de tratar e apresenta risco significativo de progressão. Contudo, a histologia precisa ser integrada a história, proteinúria, albumina e genética, e nenhuma imagem isolada traduz toda a patogênese.
 
 ## 11. Glomeruloesclerose segmentar e focal (GESF)
 
-### 17.1 O significado dos dois adjetivos
+### 11.1 O significado dos dois adjetivos
 
 **Focal** significa que nem todos os glomérulos da amostra estão comprometidos. **Segmentar** significa que apenas parte do tufo de um glomérulo acometido apresenta esclerose. Essa descrição morfológica não esclarece, sozinha, por que os podócitos foram lesados. O processo pode resultar de lesão primária presumivelmente mediada por fator circulante, adaptação a hiperfiltração, variantes genéticas, viroses ou medicamentos. Distinguir os grupos evita expor uma pessoa com GESF adaptativa à toxicidade de imunossupressão sem benefício esperado.
 
-### 17.2 Primária, secundária, genética e causa indeterminada
+### 11.2 Primária, secundária, genética e causa indeterminada
 
 A **GESF primária** tipicamente combina síndrome nefrótica completa (proteinúria maciça e hipoalbuminemia), apagamento difuso de pedicelos à eletrônica e ausência de causa secundária ou genética identificada. A **GESF secundária** pode acompanhar obesidade importante, redução congênita/adquirida de massa renal, refluxo, nefropatia hipertensiva avançada, HIV e outras agressões; a albumina sérica nem sempre está tão baixa quanto a proteinúria sugere. Em **GESF de causa indeterminada**, não há causa estabelecida, mas faltam componentes da apresentação primária; de acordo com KDIGO, tais pacientes merecem tratamento de suporte e monitoramento, não imunossupressão empírica apenas pelo laudo.
 
 A história familiar, idade de apresentação, proteinúria desde a infância, extrarrenais sindrômicos e resistência terapêutica podem justificar painel genético especializado. Algumas variantes associadas a APOL1 elevam risco de doença renal em pessoas com ancestralidade específica, mas ancestralidade presumida não substitui avaliação clínica e, quando indicado, teste e aconselhamento apropriados. O objetivo da genética é classificar mecanismo, orientar prognóstico e evitar tratamentos desnecessários, não criar estigma.
 
-### 17.3 Tratamento guiado pelo mecanismo
+### 11.3 Tratamento guiado pelo mecanismo
 
 GESF secundária/adaptativa: tratar doença precipitante, pressão, massa corporal quando pertinente, dislipidemia e proteinúria, com bloqueio do SRAA quando seguro. A biópsia com esclerose avançada pode representar dano já estabelecido, e imunossupressão não restaura glomérulos cicatrizados. GESF primária: glucocorticoide costuma ser terapia inicial em candidatos apropriados; inibidores de calcineurina podem ser alternativa por contraindicação a corticoide ou estratégia em resistência conforme KDIGO e serviço especializado. A noção de “resistência a corticoide” em GESF adulta envolve exposição e tempo adequados, não ausência de remissão após poucos dias.
 
 **Erro clássico:** encontrar proteinúria de 4 g/dia em paciente obeso com GESF e afirmar que há doença primária apenas porque ultrapassou 3,5 g/dia. A albumina sérica, o conjunto clínico, apagamento de pedicelos e história são decisivos. **Erro inverso:** descartar causa genética porque não há parentes diagnosticados; penetrância e reconhecimento familiar são imperfeitos.
 
-### 17.4 Seguimento e prognóstico
+### 11.4 Seguimento e prognóstico
 
 O principal marcador modificável de prognóstico costuma ser a persistência de proteinúria, sobretudo acompanhada por declínio de TFG. Remissão completa está associada a desfechos melhores, mas até remissão parcial sustentada pode ser clinicamente relevante. Monitorar potássio/creatinina com antiproteinúricos, efeitos de esteroide, toxicidade de calcineurínicos e complicações cardiovasculares. DRC avançada requer integração com planejamento de terapia renal substitutiva. Após transplante, recorrência da GESF primária é preocupação particular e não deve ser extrapolada para todas as formas secundárias ou genéticas.
 
@@ -195,21 +240,21 @@ O principal marcador modificável de prognóstico costuma ser a persistência de
 
 ## 12. Nefropatia membranosa
 
-### 18.1 Lesão por depósitos subepiteliais
+### 12.1 Lesão por depósitos subepiteliais
 
 Na nefropatia membranosa, a resposta imune contra antígenos relacionados ao podócito gera depósitos predominantemente **subepiteliais** e espessamento da membrana basal glomerular. O quadro clínico é frequentemente nefrótico, às vezes detectado como proteinúria persistente antes de ocorrer edema generalizado. Imunofluorescência granular ao longo das paredes capilares e depósitos à microscopia eletrônica sustentam a definição histológica. Há formas primárias, frequentemente associadas a anti-PLA2R, e causas secundárias relacionadas a LES, hepatites, neoplasias, fármacos e outros processos.
 
-### 18.2 Anti-PLA2R e necessidade de biópsia: nuance indispensável
+### 12.2 Anti-PLA2R e necessidade de biópsia: nuance indispensável
 
 Em adulto com síndrome nefrótica típica e anti-PLA2R positivo, a diretriz KDIGO aceita confirmação de nefropatia membranosa sem biópsia obrigatória em cenários adequados; a biópsia pode continuar útil quando existe queda inesperada de função renal, diabetes concomitante, sedimento atípico ou dúvidas de diagnóstico e prognóstico. Um teste **anti-PLA2R negativo não exclui** nefropatia membranosa nem mesmo doença associada a PLA2R: a expressão tecidual pode revelar positividade, e existem outros antígenos. A investigação de causa secundária continua mesmo diante de biomarcador positivo, considerando idade e risco clínico.
 
-### 18.3 Risco trombótico e anticoagulação
+### 12.3 Risco trombótico e anticoagulação
 
 A síndrome nefrótica acentua risco trombótico por vários mecanismos, como perdas urinárias de anticoagulantes naturais, alterações compensatórias da coagulação e hemoconcentração. A nefropatia membranosa é especialmente lembrada nas questões por trombose de veia renal, trombose venosa profunda e embolia pulmonar. Suspeitar de trombose de veia renal diante de dor lombar ou abdominal nova, hematúria e piora renal em paciente nefrótico, mas reconhecer que eventos podem ser silenciosos.
 
 A decisão de anticoagulação profilática **não depende apenas da proteinúria**: considerar albumina sérica, subtipo histológico, fatores trombóticos, imobilidade, risco hemorrágico, função renal e estratégias do serviço. Não prescrever profilaxia como regra a todo paciente com proteinúria nefrótica nem tratar de modo idêntico trombose estabelecida e prevenção primária.
 
-### 18.4 Quando observar e quando imunossuprimir
+### 12.4 Quando observar e quando imunossuprimir
 
 A abordagem começa com controle volêmico, pressão, proteinúria, risco cardiovascular e acompanhamento; algumas pessoas evoluem com remissão espontânea, sobretudo quando o risco é baixo. A decisão de imunossupressão combina proteinúria persistente, albumina, TFG, velocidade de perda funcional, títulos de anti-PLA2R quando úteis e complicações da síndrome nefrótica. Rituximabe é opção relevante; em cenários de risco mais elevado, esquemas baseados em ciclofosfamida e glicocorticoides ou calcineurínicos podem ser considerados. A escolha não decorre de uma tabela genérica de “primeira linha para toda membranosa”.
 
@@ -219,23 +264,23 @@ A abordagem começa com controle volêmico, pressão, proteinúria, risco cardio
 
 ## 13. Glomerulonefrite associada a infecção e glomerulopatia C3
 
-### 19.1 A inflamação pode persistir depois de a infecção desaparecer
+### 13.1 A inflamação pode persistir depois de a infecção desaparecer
 
 A GN pós-estreptocócica clássica é um subtipo de GN pós-infecciosa que surge após intervalo de latência, historicamente mais associada a crianças. Pode causar urina escura, hipertensão, edema e queda de função renal; consumo transitório de C3 favorece a hipótese. A pesquisa de evidência de infecção estreptocócica prévia pode recorrer a títulos sorológicos apropriados, interpretados segundo infecção de garganta ou pele e tempo decorrido. Cultura de orofaringe positiva, quando obtida já no período nefrítico, não comprova sozinha causalidade.
 
 Em adultos com diabetes, idade avançada ou comorbidades, a GN relacionada a infecção pode ocorrer **durante infecção ainda ativa**, como endocardite, abscessos ou infecção estafilocócica. Nessa situação, interpretar GN como processo “pós” e administrar imunossupressão antes de procurar foco infeccioso pode agravar o quadro. Tratamento causal demanda controle do foco, antibióticos quando indicados e manejo de hipertensão/volume e função renal.
 
-### 19.2 A cinética do complemento é diagnóstica
+### 13.2 A cinética do complemento é diagnóstica
 
 A queda de C3 após infecção, seguida de recuperação em semanas, favorece GN pós-infecciosa clássica. Persistência prolongada de hipocomplementemia, proteinúria intensa ou perda funcional sem melhora pede reconsiderar nefrite lúpica, doença associada a imunocomplexos ou glomerulopatia mediada por complemento. Não existe um relógio absoluto para todos os pacientes; avaliar o conjunto e o motivo de eventual biópsia. Em GN com padrão de depósitos dominantes de C3, a avaliação especializada do sistema complemento pode revelar disfunção da via alternativa.
 
-### 19.3 O padrão membranoproliferativo é uma descrição, não uma causa única
+### 13.3 O padrão membranoproliferativo é uma descrição, não uma causa única
 
 A antiga terminologia GN membranoproliferativa I/II/III misturava morfologia e mecanismo. Atualmente é mais útil descrever hipercelularidade e duplicação de membrana basal e separar etiologias por depósitos e complemento. Padrão membranoproliferativo por imunocomplexos pode decorrer de infecções crônicas, autoimunidade e gamopatias monoclonais. Já **glomerulopatia C3** indica deposição predominantemente de C3, englobando glomerulonefrite C3 e doença de depósitos densos, com avaliação de desregulação da via alternativa e variantes adquiridas/genéticas.
 
 O algoritmo inicial inclui investigação de infecção, hepatites, crioglobulinas, gamopatia conforme idade e história, imunologia e análise histológica. O tratamento pode exigir controlar doença primária, otimizar proteção renal e avaliar terapias dirigidas com especialistas em casos selecionados. “GNMP” sem interpretação de imunofluorescência não é justificativa suficiente para regime universal de corticoide.
 
-### 19.4 Endocardite como diagnóstico diferencial de vasculite
+### 13.4 Endocardite como diagnóstico diferencial de vasculite
 
 Febre persistente, sopro, fenômenos embólicos, hipocomplementemia e sedimento glomerular ativo podem apontar endocardite infecciosa, mesmo com autoanticorpos inespecíficos positivos. Colher hemoculturas conforme protocolo antes de antibióticos, quando não atrasa tratamento necessário, e usar ecocardiograma conforme suspeita. Em alguém com GNRP e febre, excluir uma infecção grave potencialmente reversível é parte essencial de decidir imunossupressão. A prioridade é reconhecer quando infecção e glomerulonefrite coexistem.
 
@@ -246,28 +291,28 @@ Febre persistente, sopro, fenômenos embólicos, hipocomplementemia e sedimento 
 
 ## 14. Nefropatia por IgA e vasculite por IgA
 
-### 24.1 Mecanismo e fenótipo clínico
+### 14.1 Mecanismo e fenótipo clínico
 A nefropatia por IgA decorre de processos envolvendo IgA1 com glicosilação alterada, anticorpos contra seus componentes e complexos circulantes capazes de se depositar no mesângio e provocar inflamação. Há apresentações com hematúria recorrente após infecções mucosas, proteinúria persistente, hipertensão ou declínio silencioso da TFG. O intervalo curto entre episódio de vias aéreas e hematúria é uma pista, não um marcador etiológico validado. Somente a **biópsia renal** confirma nefropatia por IgA.
 
 Na vasculite por IgA, deposição imune ocorre sistemicamente: púrpura palpável em regiões dependentes, artralgia/artrite, dor abdominal e acometimento renal são padrões clássicos, particularmente na infância. A presença de púrpura não torna a nefrite automaticamente leve. A urina pode mostrar hematúria e proteinúria desde o começo ou desenvolvê-las depois da fase cutânea; por isso o seguimento renal após a apresentação é fundamental mesmo quando a criança melhora das manifestações da pele.
 
-### 24.2 Estratificação KDIGO 2025
+### 14.2 Estratificação KDIGO 2025
 Em adultos com suspeita de nefropatia por IgA, proteinúria **≥0,5 g/dia** sugere risco de progressão e sustenta discussão de biópsia conforme condições clínicas. O alvo mínimo de tratamento é **menos de 0,5 g/dia** e, idealmente, **menos de 0,3 g/dia**, reconhecendo limites de pacientes já muito cicatrizados. Esse alvo é significativamente mais exigente que estratégias antigas centradas apenas em proteinúria <1 g/dia. A escala MEST-C e ferramentas internacionais de predição ajudam a explicar o risco após biópsia, porém não se deve usar um componente isolado de MEST-C como ordem direta para imunossupressão.
 
-### 24.3 Duas frentes de tratamento, com limites diferentes
+### 14.3 Duas frentes de tratamento, com limites diferentes
 A frente de **proteção renal** envolve sódio, peso, exercício possível, controle pressórico, antiproteinúricos e avaliação de terapias nefroprotetoras em elegíveis. A frente de **atividade imunológica** tenta modificar geração de complexos patogênicos e inflamação, com abordagens específicas em pacientes selecionados. KDIGO 2025 discute budesonida de liberação direcionada, regime sistêmico de glucocorticoide em circunstâncias apropriadas, inibidores de SGLT2 e bloqueio combinado endotelinérgico/angiotensínico via agentes específicos. Não se deve assumir que todos estão incorporados ou disponíveis no Brasil; a recomendação ao aluno deve distinguir evidência, registro e acesso.
 
 O acompanhamento precisa integrar eventos agudos e tendências crônicas: proteinúria de 24 horas ou relação equivalente, TFG estimada, PA, potássio e alterações do sedimento. Uma pequena queda isolada de TFG depois de ajuste antiproteinúrico pode ter mecanismo hemodinâmico, mas quedas relevantes/persistentes, hipotensão e hipercalemia exigem reavaliar esquema e estado volêmico. A decisão não depende de “normalizar” a hematúria antes de proteger os néfrons.
 
-### 24.4 IgA em crianças e vasculite com manifestações abdominais
+### 14.4 IgA em crianças e vasculite com manifestações abdominais
 Crianças com IgA e proteinúria sustentada demandam acompanhamento especializado; limiares de decisão sobre biópsia e tratamento diferem dos adultos. Em vasculite por IgA, dor abdominal intensa, sangramento gastrointestinal ou sinais de invaginação intestinal merecem avaliação urgente. A urina deve ser reavaliada seriamente ao longo de semanas e meses, junto à pressão e função renal, porque o desfecho renal determina parte importante do prognóstico. O uso de corticoide para sintomas sistêmicos não é justificativa para concluir que a nefrite está prevenida.
 
 ## 15. Nefrite lúpica
 
-### 23.1 O que torna a apresentação heterogênea
+### 15.1 O que torna a apresentação heterogênea
 Lúpus eritematoso sistêmico envolve perda de tolerância imunológica, formação de autoanticorpos e deposição de complexos imunes. Pode provocar proteinúria, hematúria, hipertensão e redução de TFG, com espectro de lesões que vai de depósitos mesangiais relativamente discretos a glomerulonefrite proliferativa grave ou síndrome nefrótica membranosa. Anti-dsDNA e consumo de complemento podem acompanhar atividade, mas não substituem dados urinários e histologia; **um complemento normal não exclui nefrite lúpica**, e uma mudança isolada no anti-dsDNA não define necessidade de terapia agressiva sem contexto clínico.
 
-### 23.2 Traduzindo classes histológicas em raciocínio clínico
+### 15.2 Traduzindo classes histológicas em raciocínio clínico
 - **Classes I e II:** depósitos e proliferação predominantemente mesangiais; o cuidado costuma considerar manifestações sistêmicas e proteinúria, sem aplicar automaticamente o tratamento intensivo das classes proliferativas.
 - **Classe III:** glomerulonefrite focal, com acometimento de menos da metade dos glomérulos, podendo ter atividade importante.
 - **Classe IV:** forma difusa, com comprometimento de ao menos metade dos glomérulos, muitas vezes associada a nefrite intensa e risco de perda funcional.
@@ -276,30 +321,30 @@ Lúpus eritematoso sistêmico envolve perda de tolerância imunológica, formaç
 
 A avaliação não termina com classe. O patologista informa necrose, crescentes, hipercelularidade, lesões vasculares, fibrose e atrofia tubular. Uma classe IV predominantemente crônica sem atividade inflamatória não deve ser tratada como se possuísse atividade proliferativa potencialmente reversível. Um paciente com classe V e trombose pode exigir manejo clínico imediato mesmo com TFG preservada.
 
-### 23.3 Tratamento de classe III/IV ativa
+### 15.3 Tratamento de classe III/IV ativa
 KDIGO 2024 recomenda considerar **hidroxicloroquina** em pacientes com LES, inclusive nefrite lúpica, salvo contraindicação, com ajuste e monitoramento pertinentes. A indução de classes III ou IV ativas, com ou sem classe V associada, baseia-se em glucocorticoide e um agente imunossupressor escolhido: **análogos do ácido micofenólico** ou **ciclofosfamida intravenosa em esquema apropriado** são fundamentos tradicionais. Em perfis selecionados, **belimumabe** associado à terapia de base ou **inibidor de calcineurina** mais análogo do ácido micofenólico integram estratégias combinadas. Seleção depende de TFG, intensidade de proteinúria, adesão, fertilidade, gestação, custo e disponibilidade.
 
 No seguimento, uma queda de proteinúria e estabilização renal sustentadas podem apontar resposta, mas a dinâmica difere conforme tipo de lesão, e algumas pessoas mantêm proteinúria por cicatriz. Não interromper terapia de manutenção precocemente apenas porque houve remissão laboratorial inicial; balancear prevenção de recaída, toxicidade, planos reprodutivos e resultados da biópsia quando repetida por indicação.
 
-### 23.4 Classe V e situações reprodutivas
+### 15.4 Classe V e situações reprodutivas
 Classe V isolada com proteinúria pouco importante pode seguir estratégia de proteção renal e acompanhamento; síndrome nefrótica e risco de trombose podem favorecer associação de imunossupressão e outras medidas. Micofenolato e ciclofosfamida oferecem riscos reprodutivos distintos e são incompatíveis com planejamento gestacional sem intervenção especializada. Pacientes que desejam gestar necessitam planejar remissão e substituir terapias teratogênicas com antecedência; uma alteração abrupta de medicamentos após confirmação de gestação pode precipitar atividade. Na suspeita de pré-eclâmpsia sobreposta, comparar evolução da PA, proteinúria, complemento, anti-dsDNA, plaquetas, enzimas hepáticas e sinais obstétricos, reconhecendo que há superposição.
 
-### 23.5 Por que exames repetidos importam
+### 15.5 Por que exames repetidos importam
 Monitorar proteinúria, sedimento, creatinina/TFG, pressão e marcadores de atividade conforme estágio e terapia. Hemograma e enzimas hepáticas podem revelar toxicidades; infeção oportunista e citopenias merecem atenção durante imunossupressão. A vacinação e a prevenção cardiovascular são parte do cuidado. Redução do uso de glucocorticoides quando seguro é meta importante para proteger osso, metabolismo, infecção e qualidade de vida.
 
 **Fonte:** KDIGO 2024 Lupus Nephritis, https://kdigo.org/guidelines/lupus-nephritis/.
 
 ## 16. Glomerulonefrite rapidamente progressiva (GNRP)
 
-### 20.1 Síndrome temporal antes de diagnóstico histológico
+### 16.1 Síndrome temporal antes de diagnóstico histológico
 Glomerulonefrite rapidamente progressiva descreve perda acentuada da função renal ao longo de dias a semanas, frequentemente acompanhada de hematúria glomerular, proteinúria variável, cilindros hemáticos e crescente glomerular na biópsia. O ponto didático é separar **síndrome clínica de progressão rápida** de **padrão histológico crescêntico**: um doente pode ter crescentes sem trajetória fulminante, e a suspeita clínica pode preceder a histologia. A velocidade de elevação da creatinina, a diurese, o potássio, a acidose e a repercussão sistêmica devem ser avaliados antes de aguardar exames autoimunes.
 
 O mecanismo comum é agressão intensa à parede capilar, com extravasamento de componentes sanguíneos para o espaço urinário e estímulo à formação de crescentes. Com a evolução, crescentes celulares podem fibrosar; por isso uma doença que começou potencialmente reversível pode tornar-se cicatricial. Essa transição explica a urgência da avaliação nefrológica. Entretanto, é incorreto concluir que toda elevação súbita de creatinina com hematúria seja GNRP: obstrução, necrose tubular, nefrite intersticial, microangiopatia trombótica e causas vasculares ainda precisam ser reconhecidas.
 
-### 20.2 Três mecanismos histológicos que orientam o diferencial
+### 16.2 Três mecanismos histológicos que orientam o diferencial
 **Tipo associado a anti-MBG:** imunofluorescência linear ao longo da membrana basal glomerular; quando há hemorragia alveolar, reconhece-se a síndrome pulmão-rim classicamente associada à doença anti-MBG. **Tipo por imunocomplexos:** padrão granular, como em nefrite lúpica, GN por IgA e GN associada a infecção. **Tipo pauci-imune:** pouca ou nenhuma deposição à imunofluorescência, associado frequentemente a vasculites ANCA. Esses padrões são mapas de probabilidades, não substitutos de integração histológica, sorológica e clínica.
 
-### 20.3 Algoritmo de risco imediato
+### 16.3 Algoritmo de risco imediato
 1. Verificar estabilidade respiratória e hemodinâmica; documentar diurese, ECG quando houver hipercalemia possível, gasometria se insuficiência respiratória ou distúrbio ácido-base importante.
 2. Coletar EAS com microscopia, proteína urinária, creatinina e eletrólitos seriados; comparar com exames prévios para dimensionar a progressão.
 3. Quando houver suspeita relevante de doença inflamatória glomerular, colher ANCA com PR3/MPO, anti-MBG, C3/C4, ANA/anti-dsDNA e pesquisa de infecção **conforme hipótese**; sorologia isolada não deve atrasar a estabilização.
@@ -307,44 +352,44 @@ O mecanismo comum é agressão intensa à parede capilar, com extravasamento de 
 5. Articular simultaneamente nefrologia e especialidades pertinentes; decisão de imunossupressão depende do conjunto clínico, inclusive da possibilidade de infecção não tratada.
 6. Identificar indicações de terapia renal substitutiva por manifestações refratárias ou perigosas (hipercalemia, acidose grave, congestão/hipoxemia, uremia sintomática), não por um número universal de creatinina.
 
-### 20.4 Por que o pulmão muda o cenário
+### 16.4 Por que o pulmão muda o cenário
 Hemoptise pode estar ausente em hemorragia alveolar difusa. Dispneia, queda de hemoglobina, novas opacidades pulmonares e hipoxemia em paciente com sedimento nefrítico justificam busca ativa. Pneumonia, edema pulmonar hidrostático, hemorragia associada a anticoagulantes e embolia pulmonar são diferenciais potencialmente graves. Broncoscopia e outros exames dependem de estabilização e decisão pneumológica; não esperar exame invasivo para tratar insuficiência respiratória.
 
 **Armadilha de prova:** o padrão pauci-imune da vasculite ANCA pode cursar com complemento sérico normal; a gravidade não está proporcional à concentração de anticorpos medida uma única vez. **Armadilha assistencial:** utilizar corticoide isoladamente durante semanas em GNRP por anti-MBG enquanto aguarda consulta eletiva não controla adequadamente a doença.
 
 ## 17. Doença anti-membrana basal glomerular
 
-### 21.1 Antígeno e repercussões
+### 17.1 Antígeno e repercussões
 Autoanticorpos dirigidos contra componente da membrana basal, especialmente domínio NC1 da cadeia alfa-3 do colágeno IV, lesam glomérulos e, em parte dos pacientes, capilares alveolares. Isso produz sedimento nefrítico com rápida deterioração renal e pode causar hemorragia alveolar. A presença ou ausência de acometimento pulmonar não determina se a doença renal é leve: apresentações renais isoladas podem evoluir gravemente.
 
 Na biópsia, os depósitos lineares de IgG são característica diagnóstica valiosa. Anti-MBG sérico apoia o diagnóstico, mas deve ser interpretado com técnicas laboratoriais, grau de suspeita e histologia. Solicitar ANCA concomitantemente, porque há pacientes duplamente positivos que compartilham características e risco de recorrência próprios.
 
-### 21.2 A intervenção precisa começar cedo
+### 17.2 A intervenção precisa começar cedo
 A diretriz KDIGO 2021, ainda referência para anti-MBG no conjunto das atualizações disponíveis, recomenda considerar início de tratamento **sem demora** quando a suspeita é alta, inclusive antes de confirmação histológica, em coordenação imediata com nefrologia. O esquema clássico de pacientes candidatos à intervenção intensiva associa troca plasmática para remover anticorpos, ciclofosfamida para reduzir produção de anticorpos e glucocorticoide para combater a inflamação. **Não significa que toda pessoa com anticorpo positivo receba sempre as três intervenções:** doença renal irreversível estabelecida, ausência de hemorragia pulmonar, comorbidades ou contraindicações alteram a avaliação benefício-risco.
 
 A plasmaférese geralmente prossegue até negativação de anticorpos circulantes, com monitorização e estratégias de reposição apropriadas ao sangramento. Glucocorticoides e ciclofosfamida exigem vigilância rigorosa de infecções, citopenias, alterações metabólicas e toxicidade gonadal. Na doença anti-MBG isolada, imunossupressão de manutenção prolongada **não é rotina**, porque recaídas costumam ser raras após eliminação dos anticorpos; pacientes duplamente positivos para ANCA precisam avaliação de manutenção mais semelhante à vasculite ANCA.
 
-### 21.3 Quando a função renal já está muito comprometida
+### 17.3 Quando a função renal já está muito comprometida
 A chance de recuperar função após grande destruição glomerular pode ser baixa. Ainda assim, lesão pulmonar ameaçadora à vida pode justificar terapia agressiva mesmo quando recuperação renal é improvável. Não reduzir a decisão a “está dialítico, então não tratar”: o pulmão e a histologia de atividade/cicatriz importam. Em quem progride para doença renal terminal e deseja transplante, acompanhar desaparecimento sustentado dos anticorpos e planejar o momento seguro em conjunto com equipe transplantadora.
 
 **Fonte:** KDIGO Glomerular Diseases 2021, capítulo Anti-GBM, https://kdigo.org/guidelines/gd/.
 
 ## 18. Vasculites associadas a ANCA
 
-### 22.1 Reconhecer doença sistêmica de pequenos vasos
+### 18.1 Reconhecer doença sistêmica de pequenos vasos
 Granulomatose com poliangeíte pode combinar rinossinusite persistente, otite, manifestações pulmonares e glomerulonefrite; poliangeíte microscópica frequentemente causa comprometimento renal e pulmonar sem granulomatose predominante; granulomatose eosinofílica com poliangeíte pode associar asma, eosinofilia, neuropatia e manifestações sistêmicas, enquanto a gravidade renal varia. Os nomes históricos Wegener e Churg–Strauss podem aparecer em enunciados antigos, mas a nomenclatura atual é preferível.
 
 ANCA com especificidade para **proteinase 3 (PR3)** ou **mieloperoxidase (MPO)** é mais informativo que escrever apenas “p-ANCA positivo” ou “c-ANCA positivo”. A associação PR3 com granulomatose com poliangeíte e MPO com poliangeíte microscópica é frequente, mas não perfeita. Anticorpos podem ser negativos em doença verdadeira, e podem ocorrer positividade sem vasculite clínica em outros contextos. Portanto, o diagnóstico depende do fenótipo e, quando possível, da confirmação histológica.
 
-### 22.2 Indução e manutenção não são sinônimos
+### 18.2 Indução e manutenção não são sinônimos
 Na vasculite com órgão ameaçado, o objetivo da indução é interromper rapidamente inflamação vascular ativa. KDIGO 2024 contempla **rituximabe ou ciclofosfamida** em associação a regime de glucocorticoide de exposição reduzida quando adequado, e **avacopana** como estratégia em pacientes selecionados para reduzir exposição esteroidal. A decisão envolve gravidade renal, hemorragia alveolar, função renal, infecção ativa, potencial reprodutivo, história de recaídas, disponibilidade e monitoramento. Não atribuir a avacopana aprovação ou acesso universal no SUS sem checar incorporação brasileira.
 
 Após remissão, a **manutenção** pretende reduzir recaídas, podendo empregar rituximabe ou azatioprina conforme perfil e protocolo. A distinção é fundamental: ciclofosfamida cumulativa tem toxicidades que desaconselham perpetuar o esquema de indução como rotina de manutenção; rituximabe exige vigilância de imunoglobulinas e infecção. Profilaxia de Pneumocystis jirovecii pode estar indicada durante certos esquemas de imunossupressão, principalmente com ciclofosfamida ou rituximabe, considerando diretrizes do serviço e contraindicações.
 
-### 22.3 E a plasmaférese?
+### 18.3 E a plasmaférese?
 A evidência contemporânea não respalda uso indiscriminado para qualquer ANCA positivo. Em KDIGO 2024, considerar troca plasmática em **doença renal especialmente grave/rápida**, certos pacientes em diálise e **hemorragia alveolar difusa com hipoxemia**, após avaliação individual. A dupla positividade ANCA e anti-MBG muda o cenário porque a terapia da doença anti-MBG inclui remoção de anticorpos. É impreciso tanto dizer “plasmaférese nunca mais é usada” quanto “todo paciente com hemoptise deve fazê-la”.
 
-### 22.4 Monitorar atividade sem confundir com dano acumulado
+### 18.4 Monitorar atividade sem confundir com dano acumulado
 A creatinina estável em patamar elevado pode refletir cicatriz, e não atividade autoimune. ANCA persistentemente positivo não é, por si, prova de recaída. A reavaliação combina trajetória de TFG, novo sedimento ativo, proteinúria, manifestações otorrinolaringológicas/pulmonares, neuropatia, hemograma, inflamação e informações anteriores. Recaída verdadeira pode demandar reindução; efeitos adversos, infecção e lesão cicatricial também podem explicar piora clínica e precisam ser excluídos.
 
 **Fonte:** KDIGO 2024 ANCA Vasculitis (incluindo esclarecimentos), https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/.
@@ -354,27 +399,27 @@ O **corrigendum da KDIGO 2024** esclareceu que a plasmaférese pode ser consider
 
 ## 19. Doenças hereditárias e causas sistêmicas
 
-### 25.1 Doença de Alport e nefropatia da membrana basal fina
+### 19.1 Doença de Alport e nefropatia da membrana basal fina
 Hematúria glomerular persistente desde infância, história familiar de doença renal ou surdez neurossensorial e alterações oculares podem sugerir espectro associado ao colágeno tipo IV, incluindo síndrome de Alport. Alterações dos genes COL4A3, COL4A4 e COL4A5 produzem apresentações variadas e formas de herança distintas. A antiga expressão “hematúria familiar benigna” pode induzir tranquilidade excessiva: certas variantes e famílias evoluem com albuminúria, hipertensão e DRC. Discussão de genética, aconselhamento familiar e prevenção de progressão são relevantes. Não equiparar toda membrana basal fina ao prognóstico mais grave de todas as formas de Alport.
 
-### 25.2 Amiloidose e doenças monoclonais
+### 19.2 Amiloidose e doenças monoclonais
 Em adulto com proteinúria importante, sintomas sistêmicos, neuropatia, cardiomiopatia ou gamopatia, deve-se cogitar amiloidose AL e outras doenças relacionadas a depósito. Amiloidose AA pode ocorrer em inflamação crônica persistente. Vermelho do Congo com birrefringência apropriada auxilia identificação de amiloide; **tipagem** é necessária para definir tratamento, e exame de sangue isolado não tipifica a lesão renal. Doença renal associada a imunoglobulina monoclonal pode ocorrer mesmo sem critérios de mieloma múltiplo; a terapia pode precisar dirigir-se ao clone hematológico responsável, não apenas controlar edema.
 
-### 25.3 Diabetes com glomerulopatia sobreposta
+### 19.3 Diabetes com glomerulopatia sobreposta
 Albuminúria em paciente com diabetes não elimina outra doença renal. Hematúria glomerular significativa, síndrome nefrótica abrupta, declínio muito rápido de TFG, ausência de outra microangiopatia no contexto em que seria esperada e achados sistêmicos podem justificar investigação adicional e eventual biópsia. O raciocínio correto começa classificando os achados; não assume que todo diabético com proteinúria tenha apenas nefropatia diabética, nem que a ausência de retinopatia prove causa não diabética.
 
-### 25.4 Glomerulopatias relacionadas a medicamentos e infecções
+### 19.4 Glomerulopatias relacionadas a medicamentos e infecções
 AINEs podem se associar a lesões mínimas e nefropatia membranosa; certos agentes antineoplásicos, antivirais e drogas ilícitas podem causar padrões diversos, incluindo microangiopatia trombótica, lesão podocitária e danos tubulares. Hepatites B e C, HIV, infecção estafilocócica e endocardite são causas importantes de glomerulopatias secundárias. A investigação deve conectar exposição e mecanismo plausível, evitar suspender medicação essencial sem plano e envolver tratamento da causa de base.
 
 ## 20. Prognóstico, seguimento e cuidado longitudinal
 
-### 26.1 O que documentar em cada retorno
+### 20.1 O que documentar em cada retorno
 Todo paciente com glomerulopatia deve ter linha de base recuperável de pressão arterial, edema/peso, creatinina/TFG, proteinúria quantificada, sedimento e terapias em uso. Em pacientes com imunossupressão, incluir hemograma, função hepática, interações, sinais de infecção, esquema vacinal e efeitos adversos conforme agente. Em doença autoimune, adicionar atividade sistêmica e marcadores específicos úteis. Comparar valores **em série**, não apenas com a faixa de referência do laboratório.
 
-### 26.2 Falha terapêutica versus recuperação lenta
+### 20.2 Falha terapêutica versus recuperação lenta
 Uma pessoa com nefropatia membranosa pode apresentar queda de autoanticorpos antes de reduzir proteinúria. Em nefrite lúpica, persistência de proteinúria pode decorrer de atividade, lesão residual ou ambos; tendência de creatinina e sedimento ajuda, mas casos selecionados requerem reavaliação histológica. Em GESF, remissão parcial de proteinúria pode ter valor prognóstico mesmo sem negativação completa. Em síndrome nefrótica infantil, recaída deve ser distinguida da refratariedade primária. O conceito universal é perguntar **qual biomarcador muda primeiro na doença específica**, evitando escalar toxicidade com base em marcador inadequado.
 
-### 26.3 Critérios práticos de reencaminhamento urgente
+### 20.3 Critérios práticos de reencaminhamento urgente
 - Creatinina em elevação acelerada, oligúria ou anúria, especialmente com sedimento ativo.
 - Dispneia/hipoxemia, hemoptise, dor torácica ou suspeita de tromboembolismo.
 - Hipertensão grave com cefaleia, alteração visual, dispneia ou sinais neurológicos.
@@ -382,10 +427,10 @@ Uma pessoa com nefropatia membranosa pode apresentar queda de autoanticorpos ant
 - Febre com sinais sistêmicos em paciente nefrótico/imunossuprimido, suspeita de peritonite ou sepse.
 - Sangramento importante, trombose suspeita, citopenias graves ou toxicidade aguda de imunossupressor.
 
-### 26.4 Perspectiva da APS no Brasil
+### 20.4 Perspectiva da APS no Brasil
 A atenção primária pode identificar achados urinários persistentes, aferir PA, repetir albuminúria em contexto apropriado, acompanhar fatores cardiovasculares e reconhecer sinais de alarme. O papel da APS não é indicar empiricamente ciclofosfamida, rituximabe ou biópsia, mas construir histórico de evolução, revisar medicamentos nefrotóxicos, reforçar adesão e facilitar encaminhamento oportuno. O manejo do edema deve considerar risco de desidratação, sobretudo em crianças e idosos. Coordenação com ambulatório de nefrologia e serviços de emergência evita que pacientes com doença tratável sejam perdidos antes da definição etiológica.
 
-### 26.5 Aconselhamento e decisão compartilhada
+### 20.5 Aconselhamento e decisão compartilhada
 Glomerulopatias podem exigir meses ou anos de avaliações e tratamentos. Informar ao paciente qual desfecho será monitorado (remissão, redução de proteinúria, preservação de TFG, controle pressórico), quais sinais exigem retorno imediato e quais riscos são próprios dos medicamentos. Perguntar por desejo reprodutivo antes de teratogênicos e gonadotóxicos; documentar preferências, disponibilidade financeira e acesso pelo SUS ou serviço de referência. Transmitir prognóstico em termos probabilísticos, evitando prometer cura com base em um exame isolado.
 
 ## 21. Vinhetas de interpretação laboratorial
