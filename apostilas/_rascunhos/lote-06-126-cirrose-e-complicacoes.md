@@ -194,3 +194,137 @@ Ascite **refratária** persiste/recorre precocemente apesar de restrição de s�
 
 **Pulo do Gato:** ascite recorrente por si é motivo para avaliar trajetória e elegibilidade transplantadora — não esperar Child C/CHC em todos.
 
+
+
+## 10. Peritonite bacteriana espontânea: diagnóstico que não depende de febre
+
+### 10.1 Suspeita e paracentese
+
+**Peritonite bacteriana espontânea (PBE)** é infecção do líquido ascítico **sem foco intra-abdominal cirúrgico evidente**, geralmente por translocação intestinal em pessoa com cirrose e ascite. Pode causar dor, febre, diarreia, encefalopatia, sangramento, lesão renal ou choque, mas a pessoa pode ser quase assintomática. Cirrótico hospitalizado com ascite, sobretudo em descompensação, deve ter **paracentese diagnóstica precoce**. Esperar rigidez, febre ou leucocitose deixa passar infecção relevante.
+
+O diagnóstico operacional clássico é **PMN ascítico ≥250 células/µL**, mesmo com cultura negativa. Calcular a contagem absoluta: em líquido com 800 leucócitos e 40% neutrófilos, há **320 PMN/µL**, ultrapassando corte; com 400 leucócitos e 20% neutrófilos, há 80 PMN/µL. Inocular amostra em frascos de hemocultura à beira-leito pode melhorar recuperação bacteriana. Se a punção for muito hemorrágica, interpretar ajuste de PMN por contagem de hemácias junto à clínica, não usar fórmula isolada para excluir infecção grave.
+
+**Bacterascite** é cultura positiva com PMN <250. Em paciente clinicamente estável e assintomático, pode caber reavaliar e repetir a paracentese; em paciente febril, instável ou deteriorando, a cultura positiva não pode ser ignorada. **Ascite neutrofílica com cultura negativa** é tratada como PBE quando o contexto é compatível. Uma urocultura positiva não substitui a análise do líquido: dois focos podem coexistir.
+
+### 10.2 PBE ou peritonite secundária?
+
+Perfuração, abscesso, isquemia intestinal e vazamentos pós-operatórios podem produzir ascite infectada com necessidade de **controle de fonte cirúrgico**. Flora polimicrobiana, anaeróbios, dor localizada intensa, gás extraluminal, glicose ascítica baixa, LDH elevada e falha de queda de PMN levantam suspeita. Os critérios clássicos de Runyon — pelo menos dois dentre proteína total ascítica >1 g/dL, glicose <50 mg/dL e LDH maior que limite sérico — podem ajudar, mas não têm sensibilidade perfeita. Em suspeita relevante, solicitar imagem e cirurgia conforme estabilidade. Não tratar toda ascite neutrofílica apenas com ceftriaxona se há abdome agudo cirúrgico.
+
+### 10.3 Antibiótico e albumina na PBE
+
+Escolher antibiótico pelo cenário. Em PBE comunitária sem resistência relevante, **ceftriaxona ou cefotaxima** são opções habituais; em infecção hospitalar, colonização por ESBL, choque ou exposição antimicrobiana recente, considerar epidemiologia, culturas prévias e agentes ativos com infectologia/CCIH, desescalonando após resultado. A duração frequentemente é cerca de **5–7 dias** nos responsivos sem foco adicional, mas gravidade e protocolo podem alterar. A cultura negativa não autoriza interromper antibiótico quando PMN ≥250 e contexto típico.
+
+**Albumina IV** reduz risco de disfunção renal e mortalidade em PBE, segundo ensaio clássico e diretrizes: esquema usual **1,5 g/kg no dia 1 e 1,0 g/kg no dia 3**, ponderando contraindicações e sobrecarga. Em paciente fictício de 70 kg, isso corresponde a **105 g** no dia 1 e **70 g** no dia 3. **Não confundir** com a albumina por litro removido após paracentese de grande volume. Pessoas com edema pulmonar/congestão exigem monitorização cuidadosa; a decisão sobre risco e uso em diferentes estratos deve seguir protocolo.
+
+Quando paciente piora após 48 horas, reavaliar resistência, foco secundário, choque e necessidade de nova paracentese; redução insuficiente da contagem de PMN é pista de falha. A profilaxia **secundária** é frequentemente indicada após PBE; a profilaxia **primária** é seletiva e exige análise conjunta de **proteína ascítica baixa** e disfunção hepática/renal ou outros critérios, **não apenas proteína <1,5 g/dL isolada**. Quinolonas e TMP-SMX trazem risco de resistência, efeitos adversos e alteração de microbiota, exigindo revisão periódica.
+
+## 11. Lesão renal aguda e síndrome hepatorrenal: consenso ADQI–ICA 2024
+
+### 11.1 Primeiro detectar a lesão renal
+
+No cirrótico, LRA pode resultar de **sangramento, perda gastrointestinal, diurético excessivo, sepse/PBE, necrose tubular, nefrotoxinas, doença glomerular, obstrução e HRS-AKI**, por vezes combinadas. O consenso ADQI–ICA 2024 usa aumento de creatinina **≥0,3 mg/dL em 48 horas** ou **≥50% da basal em sete dias**, e/ou oligúria **≤0,5 mL/kg/h por pelo menos seis horas**. Sarcopenia reduz creatinina basal: aumentar de 0,7 para 1,1 mg/dL já satisfaz LRA, mesmo que o laboratório assinale 1,1 como normal.
+
+Na avaliação inicial, rever diurese, PA/perfusão, vômitos/diarreia, sangramento, paracentese recente, antibióticos, diuréticos, AINEs, IECA/BRA, sepsis e obstrução. Fazer exame de urina/sedimento e ultrassom renal quando houver indicação. **FeNa ou sódio urinário baixos não confirmam HRS**, sobretudo com diuréticos, retenção de sódio e inflamação.
+
+### 11.2 O diagnóstico atualizado de HRS-AKI
+
+HRS-AKI é fenótipo de LRA em **cirrose com ascite**, com ausência de melhora após ressuscitação apropriada **se havia hipovolemia**, e sem forte evidência de explicação alternativa predominante. O consenso 2024 **não exige infundir albumina por 48 horas sistematicamente para fechar diagnóstico**. Em pessoa já euvolêmica ou congestionada, essa infusão pode causar sobrecarga pulmonar e atrasar tratamento. Quando hipovolemia existe, corrigi-la prontamente e avaliar resposta, geralmente num horizonte de até 24h; em dúvida volumétrica, fazer desafio cuidadosamente supervisionado, não fórmula automática para todos.
+
+O consenso também reconhece que HRS pode **coexistir** com lesão tubular, proteinúria ou DRC; não se deve excluir possibilidade com interpretação excessivamente rígida de sedimento ou biomarcador isolado. O diagnóstico exige raciocínio longitudinal, não checklist usado sem julgamento.
+
+| Questão | Hipovolemia | HRS-AKI | Necrose tubular |
+| --- | --- | --- | --- |
+| Contexto | Diurético, vômitos, diarreia, sangramento | Cirrose ascítica avançada, circulação vasodilatada | Choque prolongado, nefrotoxina, sepse grave |
+| Resposta após correção de volemia | Pode melhorar | Persiste apesar de correção adequada | Variável, frequentemente não imediata |
+| Urina/FeNa | Sem especificidade suficiente | FeNa pode ser baixa, mas não confirma | Sedimento pode apoiar lesão tubular |
+| Foco terapêutico | Corrigir perdas | Vasoconstritor + albumina titulada e transplante | Tratar causa e suporte renal |
+
+### 11.3 Terapia e armadilhas
+
+Em HRS-AKI diagnosticada, **terlipressina combinada à albumina 20–25%** é abordagem preferida em muitos centros; **noradrenalina** pode ser alternativa sob monitorização de UTI. O transplante hepático, quando elegível, é tratamento definitivo. A terapia depende de disponibilidade e contraindicações; não fornecer dose padrão sem protocolo/monitorização.
+
+**Terlipressina pode causar insuficiência respiratória, edema pulmonar e isquemia periférica/coronária.** Avaliar oxigenação, congestão, função cardiopulmonar, vasoconstrição e necessidade de interromper, conforme bula e protocolo. **Albumina deve ser ajustada diariamente**; suspender se houver sobrecarga. Hemodiálise pode ser suporte/ponte, não substitui tratamento do fígado.
+
+**Pegadinhas:** (1) creatinina absoluta aparentemente baixa não exclui LRA; (2) FeNa baixa não fecha HRS; (3) albumina 48 horas deixou de ser requisito sistemático; (4) diarreia excessiva por lactulose e hipovolemia podem gerar LRA pré-renal; (5) HRS e necrose tubular podem coexistir.
+
+## 12. Encefalopatia hepática: raciocínio clínico, gatilhos e nutrição
+
+### 12.1 Síndrome e classificação West Haven
+
+**Encefalopatia hepática (EH)** é disfunção neuropsiquiátrica associada a insuficiência hepática e/ou desvio portossistêmico, potencialmente reversível. A amônia participa do mecanismo, mas inflamação, disbiose, distúrbios eletrolíticos, alterações musculares e medicamentos também interferem. **Amônia plasmática isolada não confirma gravidade nem substitui exame clínico.**
+
+| West Haven | Estado típico |
+| --- | --- |
+| I | Atenção e sono alterados, lentificação leve, orientação preservada |
+| II | Letargia, desorientação temporal, asterixe possível |
+| III | Sonolência intensa e desorientação importante, resposta a estímulos |
+| IV | Coma |
+
+Asterixe não é exclusivo da EH (também ocorre na uremia e hipercapnia) e pode desaparecer em coma. Não confundir EH com AVC, hipoglicemia, hematoma subdural, intoxicação, abstinência de álcool ou sepse do SNC. Neuroimagem é indicada conforme déficit focal, trauma, apresentação atípica ou ausência de resposta, não por rotina indiscriminada.
+
+### 12.2 Buscar precipitante em toda descompensação
+
+Infecção **(PBE, pneumonia, ITU)**, hemorragia digestiva, constipação, desidratação, hiponatremia, hipocalemia, LRA, diurético excessivo, sedativos/benzodiazepínicos, opioides e TIPS são gatilhos comuns. Exame neurológico, glicemia, eletrólitos, função renal, revisão farmacológica e rastreio infeccioso dirigido são essenciais; **paracentese em cirrótico com ascite hospitalizado/descompensado** não pode ser esquecida. Corrigir apenas amônia sem buscar precipitante aumenta recidiva.
+
+### 12.3 Lactulose, rifaximina e via aérea
+
+**Lactulose** é primeira linha na EH manifesta: titulação na manutenção visando **2–3 evacuações amolecidas por dia**. Evitar diarreia intensa, que pode precipitar hipovolemia, hipernatremia, hipocalemia e piora da encefalopatia. Em pessoa sonolenta com risco de aspiração, **não administrar oralmente sem avaliar proteção da via aérea**; rota enteral segura ou enema são decisões de equipe e protocolo.
+
+**Rifaximina** costuma ser adicionada na prevenção de episódios recorrentes ou resposta insuficiente; cobertura/financiamento no SUS variam. Neomicina/metronidazol prolongados apresentam toxicidade e não devem ser oferecidos como primeira opção rotineira quando alternativas adequadas existem. A alta precisa de plano com família sobre evacuações, orientação, sinais de alarme, medicações e gatilhos.
+
+### 12.4 Proteína é parte do tratamento
+
+**Não prescrever restrição proteica crônica** por medo de amônia. Cirrose causa sarcopenia, e músculo participa do metabolismo nitrogenado. Metas habituais em adultos situam-se perto de **1,2–1,5 g/kg/dia de proteína**, ajustadas por nutricionista a peso ideal/condição clínica, com refeições fracionadas e ceia noturna. O mesmo paciente pode precisar controlar sódio na ascite **sem reduzir proteína e calorias a nível que piore desnutrição**.
+
+## 13. Hemorragia digestiva varicosa: estabilização e endoscopia precoce
+
+### 13.1 Conduta desde a suspeita
+
+Hematêmese/melena com cirrose e sinais de hipovolemia exigem considerar sangramento varicoso, sem ignorar úlcera péptica como diferencial. Monitorizar, obter acesso venoso, avaliar via aérea/aspiração, solicitar hemograma, função renal, INR e tipagem, com ressuscitação prudente. A estratégia transfusional é **restritiva** em pacientes elegíveis, frequentemente mirando Hb em torno de **7–9 g/dL**, mas choque/hemorragia maciça e comorbidades podem exigir decisões distintas antes de a Hb refletir perda real.
+
+**Não transfundir plasma apenas para “corrigir INR”** em cirrose com sangramento varicoso sem outra indicação. O reequilíbrio hemostático é complexo, plasma pode causar sobrecarga e não demonstrou benefício de rotina nessa finalidade.
+
+### 13.2 Vasoativo, antibiótico e EDA
+
+Iniciar **droga vasoativa esplâncnica** (octreotida, terlipressina ou somatostatina conforme serviço) **antes da endoscopia** e antibiótico profilático em cirrótico com sangramento gastrointestinal. Regime frequente: **ceftriaxona 1 g IV a cada 24 horas**, ponderando resistência e alergias. **AASLD 2024** descreve uso por **até cinco dias**, com possibilidade de suspender após controle de sangramento se não houver infecção ativa; documentos históricos podem citar até sete dias. A terapia vasoativa costuma continuar **2–5 dias** após confirmação, segundo diretriz.
+
+**EDA preferencialmente em até 12 horas após apresentação e estabilização**; para varizes esofágicas, **ligadura elástica** é a terapia endoscópica de escolha. Varizes gástricas requerem abordagem conforme tipo/centro: cianoacrilato, terapia guiada por ecoendoscopia, TIPS ou técnicas de obliteração em contextos específicos. Não aplicar ligadura esofágica automaticamente a todas as varizes gástricas.
+
+### 13.3 Sangramento refratário e TIPS
+
+Na falha endoscópica/ressangramento, considerar **TIPS de resgate** em candidatos, com tamponamento por balão ou stent esofágico autoexpansível apenas como **ponte temporária** por risco de necrose, aspiração e perfuração. **TIPS preemptivo/precoce** pode beneficiar subgrupos de alto risco (critérios clássicos de Child C 10–13 ou Child B >7 com sangramento ativo na EDA), com avaliação em centro especializado dentro de cerca de 72h quando indicado. Não transformar em intervenção universal para todo portador de variz.
+
+**Profilaxia secundária** após controle da hemorragia esofágica geralmente combina **betabloqueador não seletivo + ligaduras seriadas**, salvo contraindicação. Em profilaxia primária, NSBB em hipertensão portal clinicamente significativa compensada pode prevenir primeira descompensação; ligadura é opção em varizes de risco quando NSBB não é possível. Em choque/hipotensão, reavaliar NSBB.
+
+## 14. Hidrotórax, síndrome hepatopulmonar e hipertensão portopulmonar
+
+**Hidrotórax hepático** resulta de migração de líquido peritoneal para espaço pleural por defeitos diafragmáticos em hipertensão portal, tipicamente à direita, inclusive com ascite abdominal pouco aparente. Confirmar ausência de causa cardiopulmonar, neoplásica ou infecciosa independente; considerar toracocentese diagnóstica/terapêutica. Restrição moderada de sódio, diuréticos se tolerados e toracocentese de alívio são estratégias; em refratariedade, avaliar **TIPS e transplante**. **Dreno de tórax convencional permanente geralmente deve ser evitado** em hidrotórax não complicado devido a perdas proteicas, insuficiência renal e infecção.
+
+**Síndrome hepatopulmonar** envolve dilatações vasculares intrapulmonares e defeito de oxigenação na hepatopatia/hipertensão portal. **Platipneia** (dispneia pior em pé) e **ortodeoxia** (dessaturação ao ficar em pé) são pistas; o ecocardiograma com microbolhas pode mostrar passagem tardia sugestiva de dilatação intrapulmonar. Oxigênio quando indicado é suporte, e **transplante hepático** pode ser definitivo em elegíveis. **Hipertensão portopulmonar** é entidade diferente: doença vascular pulmonar hipertensiva, confirmada por investigação hemodinâmica conforme cardiopneumologia; pode exigir terapia específica e alterar elegibilidade ao transplante.
+
+## 15. Trombose portal, plaquetopenia e o mito da “autoanticoagulação”
+
+A cirrose reduz síntese de fatores **pró** e **anticoagulantes**, produzindo equilíbrio hemostático frágil. **INR alto não impede trombose**, e paciente pode desenvolver trombose portal, TVP ou TEP. Doppler e TC/RM contrastada avaliam extensão portal/mesentérica, fluxo, cavernomatose e eventual trombo tumoral associado a CHC. A decisão sobre anticoagulação depende de extensão, progressão, cronicidade, risco de isquemia intestinal, transplante e sangramento; não prescrever a todo trombo portal incidental crônico nem evitar tratamento de trombose progressiva apenas por INR elevado.
+
+**Hiperesplenismo** contribui para plaquetopenia e leucopenia; não é única causa. A necessidade de correção hemostática antes de procedimento depende de tipo de procedimento, sangramento ativo, plaquetas/fibrinogênio, fragilidade e protocolo; **paracentese usual não exige plasma profilático universal** por INR alterado.
+
+## 16. Carcinoma hepatocelular e vigilância sem perder o seguimento
+
+Cirrose por álcool, MASH, hepatites virais e outras etiologias aumenta risco de **CHC**, inclusive após cura virológica da hepatite C. Diretrizes AASLD recomendam vigilância **a cada seis meses com US abdominal e AFP** nas pessoas elegíveis com cirrose; subgrupos com hepatite B exigem vigilância mesmo sem cirrose. A decisão deve considerar se diagnóstico precoce levaria a tratamento curativo/prolongamento de vida e se o sistema consegue confirmar alterações.
+
+Nódulo suspeito exige **TC/RM multifásica** apropriada com critérios como LI-RADS em população validada; **AFP normal não exclui CHC**, AFP alta isolada não prova. Não biopsiar indiscriminadamente toda lesão sem avaliação de imagens; algumas têm critérios radiológicos suficientes no contexto correto. Tratamentos variam entre ressecção, ablação, terapias locorregionais, terapia sistêmica e transplante, segundo reserva hepática e extensão.
+
+**Critérios de Milão clássicos** incluem nódulo único ≤5 cm ou até três nódulos ≤3 cm, sem invasão vascular macroscópica/metástases; políticas nacionais de transplante têm regras próprias. Uma diretriz AASLD não equivale automaticamente a regra de alocação brasileira. Registrar resultados de US, data de reavaliação e investigação dos positivos é tão importante quanto pedir o exame.
+
+## 17. Nutrição, prevenção e vacinação no cuidado longitudinal
+
+A sarcopenia pode coexistir com obesidade e ascite e está ligada a pior prognóstico. Avaliar força, perda de massa muscular, ingestão de proteína e risco de quedas. Planejar **1,2–1,5 g/kg/dia de proteína** em muitos adultos segundo peso ajustado e risco nutricional, refeições fracionadas e ceia noturna; não impor dieta de baixa proteína por EH. Sódio ~2 g/dia na ascite deve ser compatibilizado com alimentação suficiente.
+
+Avaliar vacinação contra **hepatites A/B**, pneumococo, influenza e COVID-19 conforme PNI/susceptibilidade, saúde óssea, micronutrientes, tabagismo, manejo de álcool e suporte psicossocial. Evitar AINEs em ascite/risco de LRA; revisar todas as medicações e fitoterápicos. Pacientes com hipotensão e lesão renal podem tolerar mal agentes comuns de hipertensão arterial, exigindo ajuste individual, não retirada automática de todo tratamento cardiovascular sem avaliação.
+
+## 18. Transplante hepático e metas de cuidado
+
+**Primeira ascite**, hemorragia varicosa, EH manifesta, deterioração sintética, HRS-AKI e CHC selecionado são momentos para discutir **referenciamento à hepatologia/centro transplantador**, sem aguardar repetidas internações. A elegibilidade depende de função hepática, comorbidades, suporte, infecções, neoplasias, situação de álcool e regras nacionais; escores Child e MELD são parte do risco, mas não definem tudo. O manejo de hepatite, abstinência e nutrição pode melhorar trajetória e elegibilidade.
+
+Cuidados paliativos podem acompanhar terapia ativa e avaliação para transplante, especialmente diante de ascite refratária, dispneia, prurido, dor e sofrimento da família. Paliativo significa alívio de sintomas e escolha informada, não abandono da pessoa.
+
