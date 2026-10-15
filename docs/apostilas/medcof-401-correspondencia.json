@@ -4191,9 +4191,7 @@
       "pagina_pdf": 27,
       "bloco_medcof": 41,
       "luria_principal": 186,
-      "luria_complementares": [
-        234
-      ],
+      "luria_complementares": [],
       "tipo_insercao": "TEMA_DO_PLANO",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
     },
@@ -4848,6 +4846,7 @@
   ],
   "change_log": [
     "Corrigido #347: febre maculosa e icterícias febris são um capítulo de zoonoses/diferencial de síndrome febril no #186, NÃO de Doença de Chagas #234.",
-    "Adicionadas referências cruzadas de Ortopedia e Trauma Vascular para #237 (síndrome compartimental de membros), distinta de síndrome compartimental intra-abdominal."
+    "Adicionadas referências cruzadas de Ortopedia e Trauma Vascular para #237 (síndrome compartimental de membros), distinta de síndrome compartimental intra-abdominal.",
+    "Aula 347 (febre maculosa) sem referência cruzada no card 234 (Chagas), evitando associação indevida; capítulo de zoonoses vinculado ao 186."
   ]
 }
