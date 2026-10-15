@@ -251,6 +251,57 @@ Em hepatotoxicidade suspeita, verificar gravidade e exames, interromper/reintrod
 
 No esquema básico, apresentações combinadas são distribuídas segundo **faixas de peso** estabelecidas no programa. O peso pode aumentar durante recuperação e tornar necessário revisar a quantidade de comprimidos da apresentação em uso. Insuficiência renal importa especialmente ao etambutol e alguns fármacos de segunda linha; hepatopatia altera risco do conjunto. Em pessoas com cirrose, doença renal avançada, gravidez, extremos de idade ou interações múltiplas, não calcular dose usando uma tabela antiga indiferente ao tipo de comprimido. **A versão final prescritiva exige transcrição factual conferida, apresentação por apresentação, com limite de peso e dose máxima da norma.** Até lá, os detalhes ausentes devem permanecer marcados como pendência de segurança.
 
+
+### 4.4 Segurança no tratamento básico: hepatotoxicidade, neuropatia e visão
+
+Ensinar uma sequência fixa de comprimidos é insuficiente para atender pessoas com tuberculose. A segurança do esquema básico depende de **reconhecimento precoce de toxicidades** e de uma rota de avaliação que não gere nem abandono desnecessário nem manutenção de medicamentos diante de uma reação grave. Os principais componentes da terapia de primeira linha são: rifampicina (R), isoniazida (H), pirazinamida (Z) e etambutol (E). Suas reações adversas não são intercambiáveis, embora possam se sobrepor.
+
+| Fármaco | Efeito adverso importante | O que perguntar/examinar | Decisão segura |
+| --- | --- | --- | --- |
+| **Rifampicina** | Interações metabólicas, hepatotoxicidade, reações imunológicas e hematológicas raras | Medicamentos concomitantes, icterícia, hematomas, sangramento, intolerância sistêmica | Diferenciar urina alaranjada isolada (efeito esperado) de colúria e hepatite; checar interações |
+| **Isoniazida** | Hepatotoxicidade e neuropatia periférica | Parestesias, fraqueza, perda de sensibilidade, consumo de álcool, função hepática | Avaliar necessidade de piridoxina em grupos de risco; não ignorar sintomas neurológicos |
+| **Pirazinamida** | Hepatotoxicidade, hiperuricemia/artralgia, intolerância gastrointestinal | Dor articular, vômitos persistentes, anorexia, icterícia | Elevação assintomática de ácido úrico não define, sozinha, gota clínica ou suspensão |
+| **Etambutol** | Neuropatia óptica, alteração de acuidade e discriminação de cores | Visão embaçada, alteração da visão vermelho-verde, dor ocular; função renal | Sintoma visual novo requer avaliação imediata, não aguardar consulta de rotina |
+
+A lesão hepática relacionada ao tratamento pode apresentar **náusea persistente, vômitos, anorexia importante, dor abdominal, icterícia, urina escura acompanhada de mal-estar, fraqueza ou febre**. O paciente precisa saber diferenciar essas situações da mudança **alaranjada** de urina, lágrimas e secreções causada pela rifampicina. Orientar sobre o efeito esperado reduz suspensão por susto; orientar sobre sinais de hepatite permite procurar assistência antes de insuficiência hepática.
+
+#### 4.4.1 Um limiar de laboratório tem de ser lido junto com sintomas
+
+A diretriz ATS/CDC/IDSA de tratamento da TB sensível, empregada como referencial de segurança adicional ao protocolo brasileiro, considera suspeita de hepatite medicamentosa com **ALT ≥3 vezes o limite superior de normalidade na presença de sintomas** ou **ALT ≥5 vezes o limite na ausência de sintomas**. Esses limiares orientam **interrupção dos fármacos potencialmente hepatotóxicos e avaliação clínica/laboratorial urgente sob supervisão**. Não interpretá-los como permissão para esperar sintomas até ALT subir cinco vezes; qualquer icterícia, deterioração relevante da coagulação ou quadro de hepatite grave exige ação imediata independentemente da conta isolada.
+
+**Exemplo calculado:** laboratório informa ALT normal até 40 U/L. Pessoa que usa RHZE apresenta ALT 148 U/L (3,7 vezes o limite) e, há três dias, anorexia, náuseas persistentes e colúria. O conjunto **atinge limiar de suspeita de hepatotoxicidade**, devendo gerar avaliação no mesmo dia e decisão assistida sobre interrupção e substituição temporária conforme protocolo. Já uma pessoa assintomática com ALT 70 U/L (1,75 vez o limite) precisa reavaliação e monitorização orientada ao risco, mas o mesmo cálculo **não** obriga encerrar todo o esquema de forma automática.
+
+A investigação da alteração hepática exige considerar **hepatites virais, álcool, outros medicamentos hepatotóxicos, obstrução biliar, esteatose e envolvimento hepático pela própria TB**. Fazer o diagnóstico de hepatite por RHZE sem investigar concorrentes pode ocultar condição tratável. Se houver interrupção de drogas potencialmente hepatotóxicas, a reintrodução/alternativa deve ser **individualizada por referência habilitada**. Não ensinar a fazer “tentativa de reintrodução” por conta própria em casa.
+
+#### 4.4.2 Pyridoxina, etambutol e função renal: toxicidade evitável
+
+A isoniazida pode reduzir disponibilidade funcional de vitamina B6 e causar neuropatia, sobretudo em pessoas com desnutrição, diabetes, HIV, alcoolismo, gestação e outros fatores de risco. A **piridoxina** é frequentemente indicada preventivamente nesses grupos, conforme PCDT e dose ajustada ao contexto; não assumir que todo paciente terá neuropatia nem usar complexo vitamínico como substituto de investigação de outras causas de parestesias.
+
+O etambutol é eliminado principalmente pelos rins; comprometimento renal pode aumentar exposição e risco visual. Na suspeita de neuropatia óptica, investigar **acuidade visual de cada olho, discriminação de cores e outras causas oftalmológicas**; a orientação deve constar desde o início do tratamento. Dificuldade visual nova não deve ser tratada como efeito benigno inevitável: a avaliação rápida evita dano permanente em situações suscetíveis.
+
+### 4.5 Consulta de seguimento: o que documentar em cada retorno
+
+O Ministério da Saúde descreve o **tratamento diretamente observado (TDO)** como estratégia de acompanhamento humanizado e apoio, com tomada supervisionada presencialmente ou por recursos digitais autorizados. O TDO não é punição, medida de vigilância policial nem motivo para negar cuidado se o paciente trabalha ou mora longe. A equipe deve pactuar horário, local e modalidade viáveis e oferecer apoio para transporte, alimentação, vínculo social e entendimento do esquema.
+
+Checklist clínico em consulta de seguimento:
+
+1. **Resposta da doença:** febre, tosse, hemoptise, apetite, peso e capacidade de trabalho; comparar com linha de base e novas manifestações, sem usar ausência de febre como prova de cura.
+2. **Tomada real dos fármacos:** horários, quantidade de doses esquecidas, motivos, acesso a dispensação, eventos adversos e possibilidade de TDO presencial/digital apropriado.
+3. **Peso e apresentação farmacêutica:** conferir se mudança da faixa de peso exige ajuste da quantidade de comprimidos. Registrar a concentração da combinação fixa, não somente “RIPE”.
+4. **Microbiologia:** coletar baciloscopia de acompanhamento nos momentos indicados e cultura/TS quando o fluxo do Ministério da Saúde exigir, inclusive baciloscopia positiva no segundo mês. **TRM-TB não é teste rotineiro de cura**.
+5. **Toxicidade:** sintomas hepáticos, alterações visuais, parestesias, exantema e hematomas; decidir exames conforme risco clínico e esquema, evitando resultados solicitados sem plano de revisão.
+6. **Risco coletivo:** situação de transmissão, avaliação dos contatos, ambientes fechados, crianças e imunossuprimidos; orientar sem culpabilizar a pessoa.
+7. **Prognóstico e encerramento:** registrar evolução, esquema efetivamente completado, doses perdidas, desfechos, encaminhamento por sequela respiratória e necessidade de acompanhamento pós-TB.
+
+#### 4.5.1 Interrupção por falta de acesso não equivale a resistência adquirida comprovada
+
+Paciente que interrompeu tratamento está em **maior risco** de falha e resistência, mas o padrão real de resistência precisa ser demonstrado microbiologicamente quando indicado. Retomar sem avaliar tempo de interrupção, fase terapêutica, número de doses recebidas e situação clínica pode produzir tratamento ineficaz. Em geral, exige reorganização do plano na unidade de referência, culturas e testes de sensibilidade quando aplicáveis; **não há um único número de dias que permita reinício automático em todos os esquemas**.
+
+O acompanhamento também deve procurar barreiras evitáveis: emprego com horário incompatível, custos de deslocamento, estigma, moradia instável e intolerância medicamentosa. Uma estratégia de apoio bem pactuada pode impedir novas interrupções mais eficientemente que repreender o paciente. A comunicação deve proteger sigilo e considerar contato familiar e transmissão sem expor diagnóstico ao empregador sem necessidade legal ou consentimento adequado.
+
+**Fontes de segurança e cuidado:** Ministério da Saúde, página *Tratamento*, atualizada em 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; CDC, *Adverse Events During TB Treatment*, 17/04/2025, https://www.cdc.gov/tb/hcp/treatment/adverse-events.html ; ATS/CDC/IDSA, *Treatment of Drug-Susceptible Tuberculosis*, seção *Hepatotoxicity*, https://www.idsociety.org/practice-guideline/treatment-of-drug-susceptible-tb/ . Doses por faixa de peso e esquemas especiais brasileiros permanecem prioritários frente a regimes internacionais diferentes.
+
+
 ## 5. Tuberculose drogarresistente: seleção e monitorização
 
 ### 5.1 TB drogarresistente: o que mudou em outubro de 2026?
@@ -380,6 +431,33 @@ O esquema 3HP é destacado como preferencial em grupos/linhas de cuidado adequad
 
 A BCG integra o calendário infantil brasileiro para reduzir risco de formas graves, sobretudo meníngea e miliar; não impede toda infecção ou toda TB pulmonar posterior. A pessoa previamente vacinada pode desenvolver TB ativa, e a cicatriz não exclui necessidade de investigar tosse prolongada. Medidas ambientais — ventilação, diagnóstico oportuno, assistência e controle respiratório — permanecem fundamentais para prevenir transmissão por aerossóis. As recomendações de controle de infecção em serviços exigem medidas administrativas, ambientais e equipamentos de proteção respiratória.
 
+
+### 6.3 Investigação de contatos na APS: uma linha do tempo clínica
+
+O contato de pessoa com TB pulmonar bacteriologicamente confirmada não é tratado automaticamente como caso de doença ativa. A avaliação procura distinguir **exposição**, **infecção imunológica** e **doença**. A decisão leva em conta idade, proximidade/tempo em ambiente fechado, doença do caso índice, baciloscopia, sintomas, imunossupressão e padrão de resistência. O Ministério da Saúde enfatiza contato domiciliar e grupos vulneráveis, como crianças e pessoas com HIV, na prevenção da progressão.
+
+| Primeira pergunta | Situação | Próxima decisão orientativa |
+| --- | --- | --- |
+| Contato tem tosse, febre, emagrecimento, sudorese ou outros sintomas? | Possível TB ativa | Investigar doença clínica e microbiológica antes de prescrever prevenção |
+| Criança pequena ou imunodeprimido exposto, mesmo assintomático | Maior risco de progressão e teste imunológico falso-negativo | Avaliação prioritária em fluxo pediátrico/ILTB, com seguimento de janela conforme protocolo |
+| Adulto imunocompetente assintomático com exposição significativa | Infecção não estabelecida | Avaliação clínica, teste PT/IGRA e radiografia quando indicado por norma |
+| PT/IGRA positivo, sem TB ativa após avaliação | Evidência de infecção | Avaliar elegibilidade a tratamento preventivo 3HP/4R/H e interações |
+| Fonte com TB resistente | Padrão de sensibilidade muda profilaxia | Encaminhar decisão ao programa de TB resistente; não copiar regime preventivo da fonte sensível |
+| Contato é gestante ou usa antirretrovirais | Mais riscos de interação/tempo da intervenção | Individualizar esquema e monitorização por fonte oficial |
+
+Uma prova tuberculínica ou IGRA **não detecta bacilo viável no escarro**, não informa qual pulmão está comprometido e **não diferencia doença ativa de infecção latente**. Em pessoa com imunodepressão importante, teste negativo não garante que não ocorreu infecção; o seguimento depende de probabilidade pré-teste e situação clínica. É fundamental não converter uma exposição curta ocasional em tratamento preventivo automático, assim como não ignorar criança que mora em ambiente pouco ventilado com caso índice bacilífero.
+
+**Ventilação ambiental** protege mais que recomendar ao contato que não use o mesmo talher: a via de transmissão é aérea. Em serviço de saúde, aplicar triagem de sintomas, medidas administrativas, fluxo de pessoas com tosse, engenharia ambiental e proteção respiratória adequada conforme risco. Orientar que o uso de máscara pelo paciente e de respirador apropriado por profissionais pode ser importante em situações específicas, mas as recomendações concretas são do serviço e da avaliação de transmissibilidade.
+
+### 6.4 BCG: proteção importante, porém não esterilizante
+
+A BCG ofertada pelo SUS protege principalmente contra **formas graves da tuberculose infantil**, especialmente **meníngea e miliar**. Uma pessoa vacinada pode contrair e desenvolver TB pulmonar depois; a presença de cicatriz não exclui doença nem dispensa investigar contato. O Ministério da Saúde recomenda aplicação na infância ao nascer ou até a idade prevista pelo Programa Nacional de Imunizações, respeitadas contraindicações; em crianças com imunodeficiência conhecida, a avaliação vacinal necessita cuidado específico.
+
+O benefício populacional da BCG depende de vacinação oportuna, mas a prevenção da transmissão em adultos também exige **diagnóstico precoce, tratamento efetivo, rastreamento de contatos e ventilação de ambientes**. Em grupos com indicação de terapia preventiva, a vacina anterior não substitui 3HP/4R/H quando elegível. Não usar um suposto “teste BCG positivo” como marcador diagnóstico de doença ativa.
+
+**Fontes:** Ministério da Saúde, *Prevenção* (16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao ; *Diagnóstico* (16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico . Os fluxos específicos de idade, repetição de PT/IGRA e doses de terapia preventiva devem seguir a norma brasileira vigente e não foram substituídos por um algoritmo universal nesta apostila.
+
+
 ## 7. HIV, populações especiais, vigilância e armadilhas
 
 ### 7.1 Populações especiais e armadilhas
@@ -487,6 +565,16 @@ Mulher de 47 anos em BPaL interrompe todos os fármacos por várias semanas apó
 
 Homem de 56 anos em terapia imunossupressora potente convive com pessoa com TB pulmonar bacteriologicamente confirmada. Seu IGRA é negativo e está sem sintomas no momento. **Problema:** resultado imune negativo não é garantia de ausência de infecção recente em imunossupressão. **Raciocínio:** resposta imunológica pode ser limitada e a janela desde a exposição importa. **Exames:** avaliação clínica para TB ativa, histórico do caso fonte, imagem e exames segundo protocolo de contatos/imunossupressão. **Conduta:** referência à linha de cuidado e eventual manejo preventivo baseado em risco, sem declarar “não precisa acompanhar” por IGRA único. **Por que importa:** vigilância de contatos de alto risco pode prevenir doença grave.
 
+
+### Caso 11 — Hepatite medicamentosa durante o RHZE
+
+Homem de 45 anos inicia RHZE para TB pulmonar sensível e retorna no 18º dia com anorexia intensa, náuseas contínuas, dor no hipocôndrio direito e icterícia discreta. ALT está 195 U/L; o laboratório informa limite superior de 40 U/L, isto é, **4,9 vezes** o limite. **Hipóteses:** hepatotoxicidade medicamentosa e outras causas de lesão hepática; avaliar hepatites virais e outros fármacos. **Raciocínio:** há sintomas compatíveis com hepatite e elevação de ALT ≥3 vezes o limite; isso exige avaliação urgente, não explicação como simples “urina laranja de rifampicina”. **Exames:** AST/ALT, bilirrubinas, função de síntese hepática conforme gravidade, sorologias/avaliação de outras causas, revisão completa de medicamentos e álcool. **Conduta:** encaminhar no mesmo dia e conduzir interrupção de drogas hepatotóxicas e esquema de segurança conforme serviço de referência, sem reintrodução domiciliar autônoma. **Por que este caso importa:** reconhecer limiares com sintomas pode prevenir insuficiência hepática e interrupção inadequada de tratamento.
+
+### Caso 12 — Contato imunodeprimido com teste inicial negativo
+
+Mulher de 38 anos em imunossupressão por doença autoimune convive em domicílio pequeno com homem em tratamento de TB pulmonar bacilífera. Ela está sem tosse e teve IGRA negativo poucas semanas após o último contato intenso. **Hipóteses:** exposição com infecção ainda não demonstrada; risco de resposta imune limitada e janela após exposição. **Raciocínio:** o teste negativo não exclui infecção em imunossuprimido nem substitui avaliação clínica e protocolo para contatos de alto risco. **Exames:** avaliação para descartar doença ativa, RX conforme indicação, registro do perfil do caso fonte e estratégia de PT/IGRA e seguimento orientada ao programa. **Conduta:** encaminhar à equipe de TB/serviço que acompanha imunossupressão para definir indicação e momento de tratamento preventivo e orientar sinais de retorno. **Por que este caso importa:** a combinação de alto risco e teste imune negativo exige raciocínio temporal e não dispensa acompanhamento.
+
+
 ## 9. Questões autorais comentadas
 
 ### Questão 3 — Interpretação de imunoteste
@@ -592,6 +680,23 @@ B. Há recomendação de acompanhamento após conclusão, incluindo rastreio de 
 C. Deve receber BPaL continuamente para o resto da vida.
 D. IGRA anual é o único teste de cura.
 **Gabarito: B.** **A** ignora recidiva e sequelas medicamentosas; **C** transforma regime com prazo em terapia indefinida; **D** interpreta teste imune como exame bacteriológico. **Revisão:** cura farmacológica e seguimento são dimensões distintas.
+
+
+### Questão 19 — Hepatotoxicidade por RHZE
+Adulto em RHZE apresenta icterícia, náuseas persistentes e ALT 3,8 vezes o limite superior de normalidade. Qual conduta deve ser priorizada?
+A) Ignorar porque qualquer alteração hepática é esperada. B) Avaliar urgentemente hepatotoxicidade, outras causas e necessidade de suspender fármacos potencialmente hepatotóxicos sob supervisão. C) Aumentar pirazinamida. D) Suspender todos os fármacos por 30 dias sem comunicar a equipe.
+**Gabarito B.** Sintomas de hepatite com ALT ≥3 vezes o limite exigem intervenção. **A** ignora o risco; **C** pode intensificar toxicidade; **D** compromete cuidado e risco de resistência sem plano. **Mini-revisão:** ALT ≥3 vezes com sintomas ou ≥5 vezes sem sintomas são limiares de alerta na ATS/CDC/IDSA, sem dispensar julgamento clínico.
+
+### Questão 20 — TDO e adesão
+Sobre tratamento diretamente observado da TB no SUS, é correto dizer:
+A) É uma estratégia de punição do paciente. B) Pode envolver observação pactuada presencial ou recursos digitais aprovados, com objetivo de apoio e adesão. C) Torna desnecessária a avaliação de eventos adversos. D) Dispensa investigação de contatos e seguimento.
+**Gabarito B.** A página ministerial atualizada reconhece o TDO com apoio e modalidades digitais autorizadas. **A** estigmatiza; **C** ignora segurança; **D** elimina parte essencial da linha de cuidado. **Mini-revisão:** adesão exige vínculo, rastreabilidade e remoção de barreiras sociais.
+
+### Questão 21 — Vacinação BCG
+Uma criança com cicatriz de BCG reside com adulto que tem TB pulmonar bacilífera. Qual conclusão é adequada?
+A) A cicatriz exclui infecção pelo complexo MTB. B) A BCG protege particularmente de formas graves infantis, mas não dispensa investigação de contato. C) A vacina substitui tratamento preventivo quando este é indicado. D) Contato domiciliar só importa se compartilhou talheres.
+**Gabarito B.** **A/C** superestimam efeito esterilizante da vacina; **D** confunde transmissão aérea com contato por objetos. **Mini-revisão:** prevenção inclui BCG, ventilação, avaliação de contatos e ILTB quando elegível.
+
 
 ## Referências essenciais
 
