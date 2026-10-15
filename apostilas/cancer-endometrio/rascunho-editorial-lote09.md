@@ -589,11 +589,778 @@ Carcinoma endometrial → IHQ MMR → expressão preservada? sem evidência tumo
 - [x] Cirurgia, sentinela, adjuvância e doença avançada.
 - [x] Preservação de fertilidade, seguimento e Lynch.
 - [x] Fluxos, quadros e pérolas de prova.
-- [ ] Casos clínicos autorais completos.
-- [ ] Questões comentadas alternativa a alternativa.
-- [ ] Curadoria de imagens diagnósticas, esquemas moleculares e diagramas.
+- [x] Casos clínicos autorais completos — seção 29.
+- [x] Questões comentadas alternativa a alternativa — seção 30.
+- [x] Curadoria de 24 imagens candidatas — seção 31; licença e produção pendentes.
 - [ ] Revisão independente por oncoginecologista, patologista e radioterapeuta.
 - [ ] Verificar acesso e regulamentação brasileira de tecnologias e fármacos.
 - [ ] Integração nativa HTML/content.json e testes desktop/PWA.
 
 **Este rascunho não constitui protocolo oncológico assistencial certificado.**
+
+
+## 29. Casos clínicos comentados — 14 situações de diagnóstico, FIGO e tratamento
+
+Os casos são fictícios e autorais, voltados à formação universitária. As decisões de adjuvância são ilustrativas e precisam ser confirmadas pelo conjunto histológico, molecular e institucional de cada pessoa.
+
+### Caso 1 — Sangramento pós-menopausa, pequeno volume, grande risco
+
+**Apresentação e dados relevantes:** Mulher de 64 anos, menopausa há 14 anos, obesidade e DM2. Relata duas manchas rosadas na roupa íntima. US mostra eco endometrial irregular de 9 mm e espéculo sem lesão cervical.
+
+**Hipótese diagnóstica e diferenciais:** Atrofia, pólipo, EIN e carcinoma endometrial.
+
+**Raciocínio passo a passo:** O volume pequeno de sangue não protege contra neoplasia. ACOG 2026 enfatiza combinar US e amostragem na avaliação inicial da maioria das pacientes sintomáticas.
+
+**Exames e interpretação:** Biópsia endometrial e histeroscopia dirigida se lesão focal; hemograma conforme perda sanguínea.
+
+**Conduta e seguimento:** Amostragem histológica prioritária; se carcinoma, oncoginecologia e classificação molecular antes de plano definitivo.
+
+**Por que este caso importa:** Investigar sintoma não é rastrear assintomática; o diagnóstico final é histológico.
+
+### Caso 2 — Endométrio fino, sangramento recorrente
+
+**Apresentação e dados relevantes:** Mulher de 73 anos tem sangramento vaginal recorrente. Eco de 3 mm e colo sem alterações. O clínico considera câncer excluído por espessura <4 mm.
+
+**Hipótese diagnóstica e diferenciais:** Atrofia pode ser benigna, mas câncer focal/seroso permanece no diferencial.
+
+**Raciocínio passo a passo:** Mesmo na orientação ACOG anterior, persistência/recorrência com eco fino exige histologia. A atualização 2026 reforçou amostragem inicial em grande parte das sintomáticas.
+
+**Exames e interpretação:** Revisão do exame, biópsia; histeroscopia se amostra insuficiente ou suspeita focal.
+
+**Conduta e seguimento:** Não dar alta definitiva com base na espessura. Garantir retorno e comunicação do resultado.
+
+**Por que este caso importa:** A regra de 4 mm não é escudo absoluto, especialmente em sangramento recorrente.
+
+### Caso 3 — Usuária de tamoxifeno sintomática
+
+**Apresentação e dados relevantes:** Mulher de 59 anos, em tamoxifeno por câncer de mama, apresenta sangramento. US mostra endométrio cístico e heterogêneo de 14 mm.
+
+**Hipótese diagnóstica e diferenciais:** Pólipo e alterações induzidas pelo tamoxifeno versus EIN/câncer endometrial.
+
+**Raciocínio passo a passo:** A droga pode aumentar espessura sem câncer, mas o sangramento exige investigação. Suspensão de terapia da mama não deve ser improvisada por uma imagem.
+
+**Exames e interpretação:** Histeroscopia com biópsia dirigida; revisão da terapia de mama, história e fatores metabólicos.
+
+**Conduta e seguimento:** Coordenar com mastologia e ginecologia, tratar após histologia. Não aplicar corte ecográfico isolado a toda usuária.
+
+**Por que este caso importa:** Tamoxifeno modifica interpretação da US; o sintoma guia biópsia.
+
+### Caso 4 — Anovulação crônica aos 34 anos
+
+**Apresentação e dados relevantes:** Mulher de 34 anos, IMC 38, SOP, sangramentos prolongados e anemia apesar de terapia inicial. US sem lesão evidente, eco de 13 mm em fase do ciclo desconhecida.
+
+**Hipótese diagnóstica e diferenciais:** SUA anovulatório, pólipo e EIN/carcinoma precoce.
+
+**Raciocínio passo a passo:** O limite de 4 mm da pós-menopausa não vale na pré-menopausa. Fatores de risco e refratariedade justificam investigação apesar de idade <45 anos.
+
+**Exames e interpretação:** β-hCG, hemograma/ferritina, biópsia endometrial e histeroscopia conforme indicação.
+
+**Conduta e seguimento:** Corrigir anemia, investigar histologia antes de simplesmente trocar contraceptivo e discutir fertilidade caso EIN/câncer.
+
+**Por que este caso importa:** Idade jovem não impede câncer endometrial em anovulação persistente.
+
+### Caso 5 — Pipelle insuficiente não é biópsia benigna
+
+**Apresentação e dados relevantes:** Mulher de 69 anos, com sangramento recorrente e pólipo focal de 18 mm, recebe resultado 'sangue e muco; material insuficiente' na biópsia ambulatorial.
+
+**Hipótese diagnóstica e diferenciais:** Lesão não adequadamente amostrada, inclusive EIN ou carcinoma focal.
+
+**Raciocínio passo a passo:** Amostragem cega pode perder foco. Insuficiência de material não demonstra ausência de malignidade e exige continuidade da investigação quando suspeita persiste.
+
+**Exames e interpretação:** Histeroscopia para visualizar e biopsiar lesão; revisar morfologia e documentos prévios.
+
+**Conduta e seguimento:** Explicar limitação e agendar procedimento resolutivo com plano de retorno; não registrar câncer excluído.
+
+**Por que este caso importa:** Falha amostral é questão de qualidade diagnóstica, não laudo histológico negativo.
+
+### Caso 6 — EIN e reprodução concluída
+
+**Apresentação e dados relevantes:** Mulher de 48 anos, sangramento e biópsia confirmando EIN/hiperplasia atípica, apta à cirurgia e sem desejo de gestar.
+
+**Hipótese diagnóstica e diferenciais:** Lesão pré-maligna com risco de carcinoma concomitante.
+
+**Raciocínio passo a passo:** O ACOG 2023 registra carcinoma associado em proporção substancial de casos de EIN; histerectomia total é definitiva. Ablação do endométrio não é adequada.
+
+**Exames e interpretação:** Revisão patológica, avaliação pré-operatória e de possível carcinoma coexistente, planejamento de anexos conforme risco.
+
+**Conduta e seguimento:** Discussão de histerectomia total e análise integral da peça; explicar chance de carcinoma oculto.
+
+**Por que este caso importa:** EIN não é hiperplasia sem atipia e não se resolve com alta sem vigilância.
+
+### Caso 7 — EIN com desejo de fertilidade
+
+**Apresentação e dados relevantes:** Mulher de 29 anos com EIN confirmado quer engravidar e possui acesso a seguimento especializado. Não há invasão demonstrada em investigação inicial.
+
+**Hipótese diagnóstica e diferenciais:** Possibilidade de preservação uterina excepcional com tratamento progestagênico.
+
+**Raciocínio passo a passo:** Primeiro é necessário procurar carcinoma concomitante. Terapia hormonal não é sinônimo de cura e demanda reamostragem histológica, não US isolada.
+
+**Exames e interpretação:** Revisão de lâmina, histeroscopia e imagem conforme risco, eventual genética, plano reprodutivo e biópsias a cada 3–6 meses.
+
+**Conduta e seguimento:** DIU-LNG e/ou progestagênio contínuo em protocolo especializado, com critérios para cirurgia em falha/progressão.
+
+**Por que este caso importa:** A segurança depende tanto da seleção quanto do seguimento documentado.
+
+### Caso 8 — Endometrioide inicial de baixo risco
+
+**Apresentação e dados relevantes:** Mulher de 62 anos com histerectomia total e salpingo-ooforectomia. Endometrioide G1, 20% de invasão miometrial, sem LVSI, sentinela negativo, MMR preservado, p53 normal e RE positivo.
+
+**Hipótese diagnóstica e diferenciais:** FIGO 2023 IA2 endometrioide não agressivo, potencialmente NSMP baixo risco.
+
+**Raciocínio passo a passo:** A profundidade <50% e LVSI ausente são favoráveis; é necessário integrar molecular e outros dados antes de adjuvância.
+
+**Exames e interpretação:** Conferir laudo completo, qualidade do estadiamento linfonodal e revisão molecular.
+
+**Conduta e seguimento:** Se grupo de baixo risco confirmado, considerar observação sem radioterapia/quimioterapia, com seguimento clínico.
+
+**Por que este caso importa:** Diagnóstico de câncer não impõe adjuvância universal.
+
+### Caso 9 — Grau 3 e POLEmut patogênico
+
+**Apresentação e dados relevantes:** Mulher de 56 anos, endometrioide G3 com invasão miometrial de 35%, restrito ao útero, sentinelas negativos; variante POLE patogênica em exonuclease.
+
+**Hipótese diagnóstica e diferenciais:** Câncer inicial POLEmut com prognóstico molecular favorável apesar de alto grau.
+
+**Raciocínio passo a passo:** A FIGO 2023 permite anotação molecular IAm_POLEmut em cenários pertinentes; POLE patogênico pode superar a impressão prognóstica do grau isolado.
+
+**Exames e interpretação:** Conferir se variante é patogênica, extensão, LVSI, margem e marcadores múltiplos.
+
+**Conduta e seguimento:** Tumor board avalia desintensificação/ausência de adjuvância segundo critérios ESGO 2025 e registro de seguimento.
+
+**Por que este caso importa:** VUS em POLE não serve como prova de prognóstico favorável.
+
+### Caso 10 — Carcinoma seroso restrito a pólipo
+
+**Apresentação e dados relevantes:** Mulher de 72 anos, carcinoma seroso p53abn detectado num pólipo e sem invasão miometrial demonstrada inicialmente.
+
+**Hipótese diagnóstica e diferenciais:** Histotipo agressivo, potencial FIGO 2023 IC se restrito a pólipo/endométrio na peça final.
+
+**Raciocínio passo a passo:** Um fragmento sem invasão não demonstra ausência de doença extrauterina. A ESGO 2025 reconhece cenários de risco incerto sem miométrio invadido; não afirmar quimioterapia automática.
+
+**Exames e interpretação:** Histologia revisada, MMR/POLE/p53, imagem de extensão e cirurgia oncológica com inspeção/peritônio/linfonodos quando apropriado.
+
+**Conduta e seguimento:** Estadiar completamente antes de decidir adjuvância; considerar revisão multidisciplinar.
+
+**Por que este caso importa:** Pequeno pólipo pode hospedar histologia biologicamente agressiva.
+
+### Caso 11 — LVSI substancial apesar de miométrio superficial
+
+**Apresentação e dados relevantes:** Mulher de 65 anos, endometrioide G2 com 30% de invasão miometrial, LVSI substancial, linfonodos sentinelas negativos e MMRd.
+
+**Hipótese diagnóstica e diferenciais:** FIGO 2023 IIB por LVSI substancial em histologia não agressiva, quando critérios atendidos.
+
+**Raciocínio passo a passo:** Não classificar como IA2 apenas pela invasão <50%. A biologia molecular e LVSI modificam discussão de RT e vigilância.
+
+**Exames e interpretação:** Rever definição patológica de LVSI, MMR completo, níveis nodais e risco ESGO 2025.
+
+**Conduta e seguimento:** Tumor board discute RT externa/braquiterapia e investigação de Lynch conforme padrão de IHQ.
+
+**Por que este caso importa:** O novo FIGO dá peso ao LVSI substancial na categoria II.
+
+### Caso 12 — Suspeita de Lynch por perda MSH2/MSH6
+
+**Apresentação e dados relevantes:** Mulher de 43 anos, câncer endometrioide, IHQ tumoral perde MSH2/MSH6. Pai teve câncer colorretal aos 46 anos.
+
+**Hipótese diagnóstica e diferenciais:** MMRd tumoral e alta suspeita de síndrome de Lynch.
+
+**Raciocínio passo a passo:** Linhagem paterna é tão relevante quanto materna. IHQ anormal orienta testes germinativos, mas não comprova mutação herdada sem confirmação.
+
+**Exames e interpretação:** Heredograma, aconselhamento genético e teste germinativo dirigido, com triagem de outras neoplasias familiares.
+
+**Conduta e seguimento:** Tratar tumor por estádio e biomarcadores e encaminhar genética/gastroenterologia, respeitando privacidade e consentimento.
+
+**Por que este caso importa:** Endométrio pode ser o primeiro câncer identificado na família com Lynch.
+
+### Caso 13 — Recidiva avançada MMRd
+
+**Apresentação e dados relevantes:** Mulher de 67 anos com carcinoma endometrial recorrente, implantes peritoneais e metástases pulmonares; MMRd confirmado, sem quimioterapia para recidiva.
+
+**Hipótese diagnóstica e diferenciais:** Doença sistêmica avançada, potencial benefício de anti-PD-1/PD-L1 com carboplatina/paclitaxel em candidata.
+
+**Raciocínio passo a passo:** A ESGO 2025 recomenda combinação e manutenção em contexto MMRd, mas situação de acesso real do SUS, contraindicações autoimunes e condição da paciente exigem avaliação.
+
+**Exames e interpretação:** Reestadiamento, perfil molecular, terapia anterior, funções orgânicas, ECOG e objetivos de cuidado.
+
+**Conduta e seguimento:** Tumor board planeja quimioterapia ± imunoterapia conforme indicação e disponibilidade, com paliativos/suporte concomitantes.
+
+**Por que este caso importa:** Diretriz internacional não é comprovação de disponibilidade universal no Brasil.
+
+### Caso 14 — Recidiva isolada no coto vaginal
+
+**Apresentação e dados relevantes:** Mulher de 63 anos operada por tumor endometrioide há dois anos, sem radioterapia prévia, apresenta sangramento e biópsia de cúpula vaginal positiva para recidiva; imagem sem metástases.
+
+**Hipótese diagnóstica e diferenciais:** Recidiva locorregional possivelmente resgatável com intenção curativa.
+
+**Raciocínio passo a passo:** Biópsia e estadiamento confirmam distribuição; ausência de radioterapia anterior aumenta opções de RT externa com braquiterapia.
+
+**Exames e interpretação:** RM pélvica, exame clínico, TC/PET sob indicação, laudos cirúrgicos prévios e radioterapia anterior.
+
+**Conduta e seguimento:** Discutir radio-oncologia e braquiterapia/RT externa, sexualidade, sintomas urinários/intestinais e seguimento.
+
+**Por que este caso importa:** Recidiva não significa automaticamente incurabilidade; local e tratamento prévio importam.
+
+
+
+## 30. Questões autorais — 23 exercícios comentados alternativa por alternativa
+
+Todos os itens são originais; quando uma atualização de diretriz altera conduta antiga, versão/ano são citados. Dados de paciente são fictícios e não constituem recomendação individual de terapia.
+
+### Questão 1 — ACOG 2026 e sangramento pós-menopausa
+
+**Enunciado:** Qual avaliação inicial corresponde à atualização ACOG 2026 na maioria das sintomáticas?
+
+**A)** Apenas citologia cervical.
+
+**B)** US transvaginal associada à amostragem endometrial.
+
+**C)** US isolada com alta definitiva se eco ≤4 mm.
+
+**D)** Rastreamento anual de assintomáticas.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Colo não substitui endométrio.
+- **Alternativa B:** É a mudança anunciada em 2026.
+- **Alternativa C:** Recorrência e casos agressivos podem ter eco fino.
+- **Alternativa D:** Rastreamento habitual não é recomendado pelo INCA.
+
+**Mini-revisão:** Biópsia busca confirmação tecidual; US caracteriza anatomia.
+
+### Questão 2 — Eco fino e sangramento recorrente
+
+**Enunciado:** Mulher 72 anos com sangramento recorrente e eco de 3 mm necessita:
+
+**A)** Alta sem retorno.
+
+**B)** Investigação histológica, considerando histeroscopia.
+
+**C)** Somente CA-125.
+
+**D)** Progestagênio sem diagnóstico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O corte não exclui todos os tumores.
+- **Alternativa B:** Sangramento persistente exige histologia.
+- **Alternativa C:** Marcador não confirma câncer.
+- **Alternativa D:** Tratamento empírico pode atrasar diagnóstico.
+
+**Mini-revisão:** 4 mm não é certeza de ausência de carcinoma.
+
+### Questão 3 — Amostra de Pipelle insuficiente
+
+**Enunciado:** O laudo 'apenas sangue/muco; insuficiente' em mulher com lesão endometrial focal significa:
+
+**A)** Endométrio benigno.
+
+**B)** Amostra não diagnóstica; considerar histeroscopia dirigida.
+
+**C)** Carcinoma confirmado.
+
+**D)** Menopausa excluída.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não houve amostra adequada.
+- **Alternativa B:** A lesão focal pode escapar do método cego.
+- **Alternativa C:** Falta tecido comprobatório.
+- **Alternativa D:** Não se define estado menopausal por biópsia inadequada.
+
+**Mini-revisão:** Resultado insuficiente não é resultado negativo.
+
+### Questão 4 — Pré-menopausa com alto risco
+
+**Enunciado:** Paciente de 34 anos, SOP, obesidade e SUA refratário:
+
+**A)** Nunca precisa de biópsia antes de 45.
+
+**B)** Pode necessitar amostragem pelo risco e persistência.
+
+**C)** Usa corte de 4 mm da pós-menopausa.
+
+**D)** Só precisa de exame HPV.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Idade não é proibição.
+- **Alternativa B:** A exposição estrogênica sem oposição orienta risco.
+- **Alternativa C:** Contextos endometriais são diferentes.
+- **Alternativa D:** HPV cervical não investiga endométrio.
+
+**Mini-revisão:** Considerar gravidez e PALM-COEIN antes de instrumentar.
+
+### Questão 5 — EIN/AEH e cirurgia definitiva
+
+**Enunciado:** EIN/hiperplasia atípica confirmada em mulher que concluiu reprodução:
+
+**A)** Ablação endometrial.
+
+**B)** Histerectomia total como tratamento definitivo.
+
+**C)** Apenas observar dez anos.
+
+**D)** Histerectomia subtotal obrigatória.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não trata adequadamente e prejudica vigilância.
+- **Alternativa B:** É recomendação ACOG 2023.
+- **Alternativa C:** Carcinoma coexistente e progressão são riscos.
+- **Alternativa D:** Deixa colo e não é padrão.
+
+**Mini-revisão:** Carcinoma concomitante é frequente em série de EIN.
+
+### Questão 6 — EIN e preservação
+
+**Enunciado:** Candidata ao tratamento conservador de EIN precisa:
+
+**A)** Apenas US semestrais.
+
+**B)** Exclusão de carcinoma coexistente e biópsia de controle em 3–6 meses.
+
+**C)** Suspender seguimento quando sangramento cessa.
+
+**D)** Ablação por radiofrequência.
+
+**Gabarito: B.**
+
+- **Alternativa A:** US não prova remissão.
+- **Alternativa B:** Histologia seriada é indispensável.
+- **Alternativa C:** Sintomas podem não refletir atividade histológica.
+- **Alternativa D:** Ablação é inadequada.
+
+**Mini-revisão:** Conservação de útero requer seleção rigorosa.
+
+### Questão 7 — Rastreamento em assintomáticas
+
+**Enunciado:** O INCA recomenda rastreamento populacional de câncer endometrial em risco habitual?
+
+**A)** Sim, US anual para todas.
+
+**B)** Não, sem evidência de benefício líquido.
+
+**C)** Sim, citologia vaginal anual.
+
+**D)** Sim, CA-125 anual.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não há essa indicação populacional.
+- **Alternativa B:** Distinguir rastreio de investigação sintomática.
+- **Alternativa C:** Citologia não rastreia endométrio.
+- **Alternativa D:** CA-125 não é teste de rastreamento endometrial.
+
+**Mini-revisão:** Sintoma muda a estratégia: investigar cedo.
+
+### Questão 8 — FIGO 2023 IA2
+
+**Enunciado:** Endometrioide G1, 20% miométrio, sem LVSI substancial, restrito a útero:
+
+**A)** IA2.
+
+**B)** IB.
+
+**C)** IIC.
+
+**D)** IVC.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Corresponde a tipo não agressivo com invasão <50%.
+- **Alternativa B:** IB requer invasão ≥50% em tipo não agressivo.
+- **Alternativa C:** IIC refere histotipo agressivo invasivo.
+- **Alternativa D:** IVC envolve disseminação distante.
+
+**Mini-revisão:** Registrar versão 2023 ao fornecer estágio.
+
+### Questão 9 — FIGO 2023 por LVSI
+
+**Enunciado:** Endometrioide G2 com LVSI substancial, sem extensão extrauterina:
+
+**A)** IA1 automaticamente.
+
+**B)** IIB, se critérios de histotipo não agressivo atendidos.
+
+**C)** IVA.
+
+**D)** IVB.
+
+**Gabarito: B.**
+
+- **Alternativa A:** LVSI altera categorização.
+- **Alternativa B:** IIB incorpora LVSI substancial no não agressivo.
+- **Alternativa C:** IVA envolve mucosa vesical/retal.
+- **Alternativa D:** IVB envolve metástase peritoneal extrapélvica.
+
+**Mini-revisão:** LVSI substancial pode superar a profundidade superficial.
+
+### Questão 10 — Seroso sem invasão
+
+**Enunciado:** Carcinoma seroso limitado a pólipo sem invasão miometrial e sem disseminação:
+
+**A)** IA2.
+
+**B)** IC.
+
+**C)** IIC.
+
+**D)** IIIC.
+
+**Gabarito: B.**
+
+- **Alternativa A:** IA2 é não agressivo com <50% invasão.
+- **Alternativa B:** IC inclui histologia agressiva sem invasão.
+- **Alternativa C:** IIC exige invasão miometrial.
+- **Alternativa D:** IIIC exige linfonodos regionais acometidos.
+
+**Mini-revisão:** Seroso pode ser agressivo mesmo restrito à mucosa.
+
+### Questão 11 — Seroso com invasão
+
+**Enunciado:** Carcinoma seroso com qualquer invasão miometrial, sem extrauterina:
+
+**A)** IIC.
+
+**B)** IA1.
+
+**C)** IB independentemente de histologia.
+
+**D)** IVA.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Histologia agressiva invasiva define IIC na FIGO 2023.
+- **Alternativa B:** IA1 é não agressivo superficial.
+- **Alternativa C:** IB aplica-se a não agressivo ≥50%.
+- **Alternativa D:** IVA exige infiltração da mucosa vesical/retal.
+
+**Mini-revisão:** IIC não exige metade do miométrio se histotipo agressivo.
+
+### Questão 12 — POLEmut patogênico
+
+**Enunciado:** Endometrioide G3 restrito a útero com variante POLE patogênica:
+
+**A)** G3 obriga quimio.
+
+**B)** POLEmut pode permitir desintensificação adjuvante em selecionadas.
+
+**C)** POLE é igual à mutação BRCA.
+
+**D)** Sempre apresenta pior prognóstico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Molecular modifica risco.
+- **Alternativa B:** Patogenicidade e estádio precisam ser confirmados.
+- **Alternativa C:** Biologia molecular é diferente.
+- **Alternativa D:** POLEmut inicial tende a prognóstico favorável.
+
+**Mini-revisão:** Distinguir variante patogênica de VUS.
+
+### Questão 13 — p53abn invasivo
+
+**Enunciado:** Qual perfil sugere risco elevado, em contexto adequado?
+
+**A)** POLEmut inicial.
+
+**B)** p53abn com invasão miometrial.
+
+**C)** NSMP G1 RE positivo sem LVSI.
+
+**D)** Hiperplasia sem atipia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Tende a favorável.
+- **Alternativa B:** Biologia desfavorável e FIGO molecular modificada.
+- **Alternativa C:** Em geral mais favorável.
+- **Alternativa D:** Não é carcinoma invasivo.
+
+**Mini-revisão:** p53abn sem invasão pode cair em risco incerto.
+
+### Questão 14 — Classes moleculares
+
+**Enunciado:** Quais são os quatro grupos principais endometriais?
+
+**A)** BI-RADS 1–4.
+
+**B)** POLEmut, MMRd, NSMP e p53abn.
+
+**C)** HPV16, HPV18, HPV31, HPV45.
+
+**D)** HER2, ER, PR e EGFR.
+
+**Gabarito: B.**
+
+- **Alternativa A:** BI-RADS é mamografia.
+- **Alternativa B:** Corresponde a classificação molecular substituta do TCGA.
+- **Alternativa C:** HPV é primariamente relevante para câncer cervical.
+- **Alternativa D:** Marcadores não são quatro classes do esquema.
+
+**Mini-revisão:** NSMP é refinado pela ESGO 2025 com grau/RE.
+
+### Questão 15 — MLH1 e Lynch
+
+**Enunciado:** Perda de MLH1/PMS2 na IHQ tumoral exige considerar:
+
+**A)** Metilação do promotor MLH1 e avaliação genética se apropriado.
+
+**B)** Diagnóstico germinativo automático.
+
+**C)** Somente mamografia.
+
+**D)** Alta sem informar.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Pode distinguir silenciamento esporádico.
+- **Alternativa B:** MMRd tumoral não prova herança.
+- **Alternativa C:** Não investiga etiologia MMR.
+- **Alternativa D:** Pode haver implicação familiar.
+
+**Mini-revisão:** História paterna também é relevante.
+
+### Questão 16 — Cirurgia padrão
+
+**Enunciado:** Para a maioria dos carcinomas endometriais operáveis:
+
+**A)** Histerectomia total com anexos e estadiamento seletivo conforme risco.
+
+**B)** Somente polipectomia.
+
+**C)** Histerectomia subtotal universal.
+
+**D)** Morcelamento tumoral obrigatório.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É a abordagem de referência em muitas pacientes.
+- **Alternativa B:** Insuficiente na maioria dos carcinomas.
+- **Alternativa C:** Não é padrão.
+- **Alternativa D:** Fragmentação pode disseminar tumor.
+
+**Mini-revisão:** Preservação ovariana é exceção distinta de preservação uterina.
+
+### Questão 17 — Sentinela com ICG
+
+**Enunciado:** A técnica de linfonodo sentinela permite:
+
+**A)** Substituir biópsia endometrial.
+
+**B)** Estadiar drenagem linfática em selecionadas com menor morbidade que dissecção sistemática.
+
+**C)** Eliminar todo risco de micrometástase.
+
+**D)** Obrigar retirada de todos os nós.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Tecido primário continua essencial.
+- **Alternativa B:** É estratégia contemporânea.
+- **Alternativa C:** Falha de mapeamento existe.
+- **Alternativa D:** O algoritmo depende de risco/achados.
+
+**Mini-revisão:** Ultrastaging pode identificar doença nodal de baixo volume.
+
+### Questão 18 — Baixo risco e adjuvância
+
+**Enunciado:** Paciente operada G1 IA2 LVSI negativo NSMP baixo grau/RE+, sentinela negativo:
+
+**A)** Pode ser acompanhada sem adjuvância se baixo risco confirmado.
+
+**B)** Quimio é obrigatória.
+
+**C)** RT externa em todos os estágios.
+
+**D)** Imunoterapia obrigatória.
+
+**Gabarito: A.**
+
+- **Alternativa A:** ESGO 2025 admite nenhuma adjuvância no baixo risco.
+- **Alternativa B:** Excesso de tratamento.
+- **Alternativa C:** Toxicidade sem benefício em baixo risco.
+- **Alternativa D:** Depende de indicação, risco e acesso.
+
+**Mini-revisão:** A adjuvância responde ao risco integrado, não a rótulo 'câncer'.
+
+### Questão 19 — Avançado MMRd
+
+**Enunciado:** Na ESGO 2025, doença avançada ou recorrente MMRd elegível pode receber:
+
+**A)** Carboplatina/paclitaxel + inibidor de checkpoint e manutenção.
+
+**B)** Somente histerectomia subtotal.
+
+**C)** Apenas ácido acetilsalicílico.
+
+**D)** Nenhuma terapia sistêmica.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É estratégia baseada em estudos recentes.
+- **Alternativa B:** Não trata disseminação.
+- **Alternativa C:** Não é terapia oncológica.
+- **Alternativa D:** Existem opções.
+
+**Mini-revisão:** Diretriz internacional não prova financiamento universal no SUS.
+
+### Questão 20 — Preservação de fertilidade
+
+**Enunciado:** Quem pode ser potencial candidata a conservação uterina?
+
+**A)** Carcinossarcoma disseminado.
+
+**B)** Endometrioide G1 sem invasão miometrial/extrauterina comprovada e seguimento rigoroso.
+
+**C)** Seroso invasivo p53abn.
+
+**D)** Qualquer mulher abaixo de 35 anos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Doença agressiva não cabe.
+- **Alternativa B:** É cenário restrito de seleção.
+- **Alternativa C:** Biologia desfavorável.
+- **Alternativa D:** Idade isolada não basta.
+
+**Mini-revisão:** Resposta conservadora deve ser comprovada por tecido.
+
+### Questão 21 — Recidiva vaginal após cirurgia sem RT
+
+**Enunciado:** Lesão isolada de coto vaginal confirmada e sem metástases em paciente nunca irradiada:
+
+**A)** É automaticamente incurável.
+
+**B)** RT externa e braquiterapia podem oferecer resgate, conforme extensão.
+
+**C)** Apenas observar.
+
+**D)** Não fazer biópsia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Resgate local pode ser curativo.
+- **Alternativa B:** É opção padrão em cenários apropriados.
+- **Alternativa C:** Pode perder oportunidade.
+- **Alternativa D:** Histologia e estadiamento são necessários.
+
+**Mini-revisão:** Recidiva localizada difere de disseminada.
+
+### Questão 22 — Citologia cervical normal
+
+**Enunciado:** Papanicolau normal em mulher com sangramento pós-menopausa:
+
+**A)** Exclui câncer endometrial.
+
+**B)** Não exclui; investigar endométrio conforme sintoma.
+
+**C)** É prova de atrofia.
+
+**D)** Dispensa US e histologia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Exame cervical não é de endométrio.
+- **Alternativa B:** Sítios e métodos são distintos.
+- **Alternativa C:** Não diagnostica atrofia.
+- **Alternativa D:** A avaliação específica continua necessária.
+
+**Mini-revisão:** Endométrio e colo uterino não são sinônimos.
+
+### Questão 23 — Tumor de corpo uterino e FIGO IV
+
+**Enunciado:** Qual extensão corresponde a FIGO 2023 IVB?
+
+**A)** Invasão miometrial ≥50%.
+
+**B)** Metástase peritoneal extrapélvica.
+
+**C)** LVSI substancial isolada.
+
+**D)** Histotipo agressivo sem invasão.
+
+**Gabarito: B.**
+
+- **Alternativa A:** IB no histotipo não agressivo.
+- **Alternativa B:** FIGO IVB corresponde a peritônio extrapélvico.
+- **Alternativa C:** Pode corresponder a IIB em não agressivo.
+- **Alternativa D:** Pode corresponder a IC.
+
+**Mini-revisão:** Na FIGO 2023, IVB peritoneal extrapélvico e IVC distância não são equivalentes.
+
+
+
+## 31. Curadoria de 24 imagens médicas e diagramas candidatos
+
+A lista é **planejamento editorial**, não imagens já obtidas ou aprovadas. Buscar imagens clínicas reais com **licença compatível, anonimização e legenda validada**, dando prioridade a ultrassonografias, histeroscopia, RM e lâminas histopatológicas. Nunca incorporar figura protegida diretamente de uma diretriz sem direito de uso.
+
+| Nº | Imagem/diagrama | Legenda e ganho didático | Fonte proposta |
+|---|---|---|---|
+| 1 | Endométrio proliferativo versus secretor | Histologia normal e efeito hormonal estrogênio–progesterona | Imagem histológica autorizada |
+| 2 | Hiperplasia sem atipia versus EIN | Diferenças glandulares e atipia em HE | Atlas patológico com licença |
+| 3 | Endometrioide G1/G2/G3 | Arquitetura sólida e glandular em três quadros | Patologia acadêmica revisada |
+| 4 | Carcinoma seroso e p53abn | Padrão histológico e IHQ p53 interpretada | Fonte autorizada |
+| 5 | US transvaginal endométrio fino | Cálipers e plano sagital corretos | Exame radiológico permitido |
+| 6 | US transvaginal eco heterogêneo/pólipo | Morfologia focal suspeita, sem diagnóstico histológico visual | US licenciada |
+| 7 | Histeroscopia com pólipo suspeito | Cavidade uterina com biópsia dirigida | Endoscopia autorizada |
+| 8 | Pipelle versus histeroscopia | Esquema das limitações da amostragem cega | Desenho autoral |
+| 9 | RM invasão miometrial superficial | Comparação córtex endometrial/junção miometrial | RM permitida e revisada |
+| 10 | RM miometrial profunda | Demonstração de >50% do miométrio | RM permitida |
+| 11 | RM invasão estromal cervical | Diferença estroma versus glândula endocervical | RM institucional autorizada |
+| 12 | Estadiamento FIGO 2023 IA1–IC | Diagrama de pólipo, mucosa, invasão e histotipo agressivo | Diagrama autoral |
+| 13 | Estadiamento FIGO 2023 II–IV | Serosa/anexos/nodos e peritônio pélvico/extrapélvico | Diagrama autoral |
+| 14 | Classificação molecular | Fluxograma de POLE, MMR, p53 e NSMP | Esquema original ESGO 2025 |
+| 15 | Lynch e metilação MLH1 | Árvore MMRd e avaliação germinativa | Fluxo autoral |
+| 16 | Sentinela ICG | Injeção cervical e trajetos linfáticos pélvicos | Ilustração anatômica original |
+| 17 | EIN: decisão cirúrgica versus conservadora | Carcinoma coexistente e histologia seriada | Algoritmo ACOG 2023 original |
+| 18 | Preservação de fertilidade | G1, sem invasão e sem extrauterina, rebiopsias | Algoritmo ESGO/ESHRE/ESGE original |
+| 19 | Grupos adjuvantes ESGO 2025 | Observação, braquiterapia, EBRT, quimioterapia e risco incerto | Tabela autoral |
+| 20 | POLEmut versus p53abn | Matriz histologia, biomarcador e efeito no FIGO inicial | Diagrama original |
+| 21 | Recidiva vaginal | Anatomia do coto e ação da braquiterapia | Desenho médico original |
+| 22 | ACOG 2018 x ACOG 2026 | Mudança na triagem inicial de sangramento pós-menopausa | Comparação autoral com referências |
+| 23 | Endométrio versus colo uterino | Diferença anatômica e de rastreamento HPV | Desenho original |
+| 24 | Pós-tratamento: sinais de alarme | Checklist de sintomas, saúde sexual, reabilitação | Infográfico original |
+
+### Requisitos antes de incluir no aplicativo
+
+- **Histopatologia:** citar coloração, magnificação e padrão realmente demonstrado; patologista deve validar lâminas de G1/G3 e p53.
+- **US:** manter cálipers e plano correto, sem usar a imagem como prova autônoma de câncer.
+- **RM:** avaliar lateralidade/anatomia, invasão miometrial e presença de estroma cervical com laudo correspondente.
+- **FIGO:** desenhar exclusivamente versão 2023; incluir IA3, IC, IIB e IIC sem confundir com classificação 2009.
+- **Molecular:** representar quatro grupos básicos, mais grau/RE no NSMP, sem copiar gráfico protegido ESGO 2025.
+- **Privacidade e licenças:** retirar DICOM com dados identificáveis, garantir direito de uso educativo/comercial e atribuição.
+- **WebP e PWA:** preservar detalhes diagnósticos e texto, adicionar alt text, dimensionamento responsivo e link para fonte.
+- **Admin Aprovar:** sem licença ou qualidade suficiente, a figura permanece somente candidata.
+
+## 32. Integração com currículo LURIA e proposta de flashcards
+
+A apostila **Sangramento Uterino Anormal** permanece dona do conteúdo de PALM–COEIN, fisiologia menstrual e manejo do sangramento geral; esta aula é o módulo específico de oncoginecologia endometrial. Conectar com aulas 164 (colo do útero), 174 (ovário), 170 (sigilo e prontuário), 177 (complicações) e 180 (paliativos). A classificação molecular também fundamenta questões direcionadas, flashcards e comentários do Professor Alex.
+
+**Flashcards prioritários:** sinal cardinal; ACOG 2026 versus 2018; eco <4 mm no sangramento persistente; necessidade de biópsia; critérios para biópsia em jovem com SOP; EIN e carcinoma coexistente; ACOG 2023 de histologia em 3–6 meses; FIGO 2023 IA1–IC; IIB por LVSI; IIC histótipo agressivo; POLEmut; MMRd versus Lynch; MLH1 metilação; p53abn invasivo; NSMP grau/RE; linfonodo sentinela; baixo risco sem adjuvância; recidiva vaginal local; fertilidade restrita; imunoterapia avançada MMRd e realidade SUS.
+
+Ao inserir no banco de questões, marcar **GO / Oncologia ginecológica / Endométrio**, referência, grau de dificuldade e comentário de cada alternativa. Não misturar o assunto com câncer cervical/HPV por simples semelhança anatômica.
+
+## 33. Auditoria final e pendências de publicação
+
+**Escopo concluído no rascunho:** conceitos, fisiologia, carcinogênese, incidência brasileira INCA 2026–2028, fatores de risco, sinais, US/histologia, atualização ACOG 2026, EIN, FIGO 2023, biomarcadores e risco ESGO 2025, cirurgia e sentinela, radioterapia/quimioterapia/imunoterapia, fertilidade, Lynch, seguimento e recidiva. **14 casos completos, 23 questões com justificativa de A–D, 24 candidatos visuais.**
+
+### Verificações editoriais automatizáveis
+- [x] Não duplicar o módulo existente SUA; produzir complemento oncológico.
+- [x] Fiel ao escopo de sangramento pós-menopausa e biópsia histológica.
+- [x] Mudança ACOG 2026 explicitamente contextualizada frente à recomendação 2018.
+- [x] FIGO 2023 não confundido com FIGO 2009.
+- [x] POLE, MMR, p53 e NSMP representados como quatro categorias principais.
+- [x] ESGO 2025 distingue NSMP por grau/RE, reconhecendo risco incerto.
+- [x] Clínica/EIN, carcinoma concomitante e fertilidade são tópicos distintos.
+- [x] Sem prometer imunoterapia universal no SUS.
+- [x] Material inclui algoritmos, tabelas, 14 casos, 23 questões e 24 visuais candidatos.
+
+### Pendências importantes
+- [ ] Revisão médica independente por oncoginecologista, patologista, radio-oncologista e oncologista clínico.
+- [ ] Conferir estágios FIGO 2023/risco ESGO 2025 em cada caso, especialmente IA3, POLE/p53 e risco incerto.
+- [ ] Atualizar regulamentação brasileira de acesso a tecnologias e medicamentos antes de uso clínico.
+- [ ] Obter e aprovar 24 imagens, com legenda, licença e versão WebP.
+- [ ] Integrar Markdown à estrutura nativa HTML/content.json e indexar no cronograma; testar PWA.
+- [ ] Padronizar comentários de questões e revisar editorialmente sem cortar conteúdo útil.
+
+**Status: rascunho médico-científico aprofundado, pronto para revisão especializada e posterior integração — não protocolo assistencial certificado.**
