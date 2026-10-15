@@ -48,9 +48,11 @@
 
 ## Aula 50 — Financiamento e Gestão do SUS (15/10/2026)
 
-Aprofundado \`apostilas/_rascunhos/lote-03/50-financiamento-gestao-sus.md\` de **9.321 para 76.027 caracteres brutos**: **20 capítulos**, oito casos completos e 16 questões comentadas. Incluídos bases e cálculos de ASPS com LC141 atualizada pela LC227/2026; exceções LC209/2024 e LC234/2026; classificação ASPS; PPA/LDO/LOA; empenho, liquidação e RAP; repasses/bloqueios; Portaria 3.992; Portaria 3.493 e NT8/2026; SIOPS, DGMP, RAG e governança/regulação. Benchmark: \`SUS.pdf\` do Drive (resumo genérico sem autoria institucional confirmada), não reproduzido. Identidade LURIA comparada ao HTML de Assistência ao Parto.
+Aprofundado \`apostilas/_rascunhos/lote-03/50-financiamento-gestao-sus.md\` de **9.321 para 86.976 caracteres brutos**: **20 capítulos**, oito casos completos e 16 questões comentadas. Incluídos bases e cálculos de ASPS com LC141 atualizada pela LC227/2026; exceções LC209/2024 e LC234/2026; classificação ASPS; PPA/LDO/LOA; empenho, liquidação e RAP; repasses/bloqueios; Portarias 3.992 e **828/2020** (blocos vigentes Manutenção/Estruturação); Portaria 3.493 e NT8/2026; SIOPS, DGMP, RAG e governança/regulação. Benchmark: \`SUS.pdf\` do Drive (resumo genérico sem autoria institucional confirmada), não reproduzido. Identidade LURIA comparada ao HTML de Assistência ao Parto.
 
-Criado \`apostilas/financiamento-gestao-sus/index.html\`: **21 seções**, 8 casos, 16 questões com respostas expansíveis, 8 tabelas. Auditoria estática sem âncoras quebradas, IDs duplicados ou desequilíbrio nos elementos estruturais verificados. Relatório \`apostilas/_rascunhos/lote-03/50-VALIDACAO-EDITORIAL.md\`.
+Criado \`apostilas/financiamento-gestao-sus/index.html\`: **21 seções**, 8 casos, 16 questões com respostas expansíveis, 10 tabelas. Auditoria estática sem âncoras quebradas, IDs duplicados ou desequilíbrio nos elementos estruturais verificados. Relatório \`apostilas/_rascunhos/lote-03/50-VALIDACAO-EDITORIAL.md\`.
+
+**Nova etapa (15/10/2026):** correção jurídica dos blocos para Manutenção/Estruturação após Portaria 828/2020, oficina com cinco exercícios resolvidos e novo quadro de pegadinhas; HTML sincronizado com 124.593 caracteres e 10 tabelas. Relatório atualizado, sem testes PWA reais.
 
 **Estado: HTML_EDITORIAL_REVISAO_PENDENTE**, sem homologação clínica, revisão jurídica humana, visuais aprovados, teste PWA, merge ou deploy.
 
