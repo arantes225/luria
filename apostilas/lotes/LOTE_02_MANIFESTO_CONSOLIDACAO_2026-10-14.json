@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 11,
+  "version": 12,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "Pré-publicação: revisões pediátricas e TB zoonótica integradas; NÃO CERTIFICADO",
+  "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -22,10 +22,10 @@
       "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
       "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
-      "consolidated_sha": "4b9fbcc19d80a7879e51db66f0017afaf2849ded",
+      "consolidated_sha": "2bfdd798bf2da3369ce8e9aca51d602870fd0c9e",
       "source_raw_characters": 74961,
-      "consolidated_raw_characters": 132350,
-      "consolidated_approximate_plain_characters": 127348,
+      "consolidated_raw_characters": 139599,
+      "consolidated_approximate_plain_characters": 134362,
       "chapter_count": 10,
       "chapters": [
         {
@@ -69,13 +69,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 19,
-      "question_count": 24,
+      "case_count": 20,
+      "question_count": 25,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
-      "json_visible_estimate": 127348,
-      "json_table_count": 15
+      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
+      "json_visible_estimate": 134362,
+      "json_table_count": 16
     },
     {
       "id": "DPOC",
@@ -132,7 +132,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
+      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
       "json_visible_estimate": 106963,
       "json_table_count": 10
     },
@@ -195,7 +195,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
+      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
       "json_visible_estimate": 99415,
       "json_table_count": 13
     },
@@ -258,7 +258,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
+      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
       "json_visible_estimate": 91723,
       "json_table_count": 12
     },
@@ -270,10 +270,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "e6a26e4783fac389d980be372a295802b17f94eb",
+      "consolidated_sha": "2d626df44b24cc41bef8d1cdbdb9ef13f9a548c5",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 173745,
-      "consolidated_approximate_plain_characters": 166429,
+      "consolidated_raw_characters": 179902,
+      "consolidated_approximate_plain_characters": 172387,
       "chapter_count": 9,
       "chapters": [
         {
@@ -313,22 +313,22 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 21,
-      "question_count": 31,
+      "case_count": 22,
+      "question_count": 32,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
-      "json_visible_estimate": 166429,
-      "json_table_count": 21
+      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
+      "json_visible_estimate": 172387,
+      "json_table_count": 22
     }
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "13b088217f3b4e0412d3eaca632f9ba2ce2e0524",
+  "input_json_sha": "177d8aecf9949cb070a831a32936c1fd2eaeb5c7",
   "last_update_scope": [
-    "Asma: bronquiolite no lactente versus sibilância recorrente/asma pré-escolar, ensaio de CI 8–12 semanas quando apropriado conforme BTS/NICE/SIGN, casos 18–19 e questões 23–24",
-    "Tuberculose: M. bovis, exposição zoonótica, limitação do TRM para identificar espécie, resistência natural à pirazinamida, Nota MS 8/2024, casos 20–21 e questões 30–31",
-    "As cinco apostilas e o JSON foram conferidos estruturalmente; sem imagens autorizadas, execução Node do gerador, certificação médica, merge ou deploy"
+    "GINA completa 2026 até cinco anos: diferença entre SABA de alívio no pré-escolar e CI diário por recorrência/gravidade, evitando transpor AIR/MART escolar; novo Caso 20 e Questão 25 em Asma",
+    "Tuberculose neonatal: distinguir TB doença, exposição a caso-fonte bacilífero, tratamento preventivo primário e decisão sobre BCG; novo Caso 22 e Questão 32",
+    "Material comparativo do Drive relido; recomendações prioritariamente respaldadas por diretrizes GINA e Ministério da Saúde e conteúdo autoral; nenhuma figura protegida copiada"
   ],
   "last_revision": "2026-10-15"
 }
