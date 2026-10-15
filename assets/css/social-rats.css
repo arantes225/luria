@@ -93,9 +93,14 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
  #studyrats-customizer {border-radius:18px;background:var(--color-surface-elevated);}
  #studyrats-customizer .studyrats-rat-picker-controls {padding:16px;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);}
- #studyrats-customizer .studyrats-rat-picker-options {display:flex;flex-wrap:wrap;gap:8px;}
- #studyrats-customizer .studyrats-rat-choice {flex:0 1 96px;min-width:76px;border-radius:12px;}
+ #studyrats-customizer :is(.studyrats-rat-picker-options,.studyrats-accessory-picker-options) {grid-template-columns:repeat(auto-fill,minmax(82px,1fr))!important;gap:8px;}
+ #studyrats-customizer :is(.studyrats-rat-choice,.studyrats-accessory-choice) {height:86px!important;min-width:0;border-radius:12px;}
  #studyrats-customizer .studyrats-rat-choice.is-selected {background:color-mix(in srgb,var(--sf-teal) 12%,var(--color-surface));border-color:var(--sf-teal);}
- @media(max-width:520px) {#studyrats-customizer .studyrats-rat-picker-controls {padding:12px;}}
+ #studyrats-customizer .studyrats-rat-picker-status:empty {display:none;}
+ #studyrats-customizer .studyrats-rat-picker-controls {align-self:start;}
+ @media(max-width:520px) {#studyrats-customizer .studyrats-rat-picker-controls {padding:12px;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important;}#studyrats-customizer .studyrats-rat-picker-status {grid-column:1/-1;}#studyrats-customizer .studyrats-picker-group {min-width:0;}#studyrats-customizer :is(.studyrats-rat-picker-options,.studyrats-accessory-picker-options) {grid-template-columns:repeat(auto-fill,minmax(76px,1fr))!important;}}
+ /* Appearance, rather than the legacy root theme, owns character lighting. */
+ &[data-ui-appearance="light"] #studyrats-card :is(.studyrats-rat-img,.studyrats-rat-choice-img,.studyrats-accessory-choice-img) {filter:drop-shadow(0 2px 2px rgb(0 0 0 / .15))!important;}
+ &[data-ui-appearance="dark"] #studyrats-card :is(.studyrats-rat-img,.studyrats-rat-choice-img,.studyrats-accessory-choice-img) {filter:drop-shadow(0 0 2px rgb(255 255 255 / .65)) drop-shadow(0 0 7px color-mix(in srgb,var(--sf-violet) 55%,transparent)) drop-shadow(0 3px 4px rgb(0 0 0 / .3))!important;}
 }
 }
