@@ -147,13 +147,68 @@ Uma PT negativa pode ocorrer muito precocemente após infecção, em extremos et
 
 A interpretação de pontos de corte da PT e indicação de IGRA **dependem da finalidade (escore de TB ativa versus investigação de ILTB), grupo de risco e protocolo nacional vigente**. Evitar decorar um único valor de milímetros sem compreender a população. Quando se usa escore clínico de doença, aplicar a tabela oficial integral e adequada à faixa etária, não misturar valores de antigas versões de resumos de cursinho.
 
-## 10. Escore clínico brasileiro: por que existe e como evitar mau uso
 
-Como muitas crianças com doença pulmonar não oferecem confirmação bacteriológica, o Ministério da Saúde utiliza sistema de pontuação que combina dados clínico-radiológicos, contato epidemiológico, prova tuberculínica e estado nutricional. Um escore não substitui bom julgamento: organiza evidências que, isoladas, teriam sensibilidade insuficiente.
+## 10. Sistema brasileiro de pontuação clínica: tabela integral, interpretação e armadilhas
 
-**Faixas tradicionalmente utilizadas:** somatório ≥40 pontos indica TB muito provável e favorece início do tratamento; 30–35 sugere TB possível e decisão médica individualizada; pontuação ≤25 torna menos provável, mas persistência de suspeita exige investigação e, conforme gravidade, referência especializada. A pontuação exata de cada elemento da tabela oficial e suas exceções devem ser conferidas no manual nacional no momento do uso clínico, sem improvisar valores a partir de material secundário.
+O escore clínico-radiológico tem função específica: apoiar o diagnóstico de **tuberculose pulmonar em crianças e adolescentes com baciloscopia negativa, TRM-TB não detectado ou dificuldade de confirmação bacteriológica**, e não substituir a investigação de toda doença extrapulmonar. A fundamentação é epidemiológica e fisiopatológica: a paucibacilaridade dificulta obter amostra positiva; a associação de sintomas persistentes, imagem, contato, resposta imunológica e estado nutricional oferece uma síntese reprodutível de evidências indiretas.
 
-Na prova, a maior armadilha é o aluno ler um TRM negativo e não considerar a pontuação integrada. Na vida real, a maior armadilha adicional é usar o escore indiscriminadamente em meningite, doença grave extrapulmonar ou adolescente cavitário, para as quais o processo diagnóstico e a urgência têm particularidades.
+A tabela original é o **Quadro 11 do Manual de Recomendações do Ministério da Saúde, 2ª edição atualizada, 2019, pp. 77–78**, disponível em https://bvsms.saude.gov.br/bvs/publicacoes/manual_recomendacoes_controle_tuberculose_brasil_2_ed.pdf. A **SBP, em abril de 2026, pp. 7–8, apresenta atualização incluindo alternativa IGRA**, referida às notas ministeriais de 2022 e 2023. A síntese abaixo é original e didática; não constitui reprodução gráfica do quadro oficial.
+
+### 10.1. Os cinco eixos de pontuação
+
+| Eixo | Situação observada | Pontos |
+| --- | --- | ---: |
+| Quadro clínico | Febre ou tosse, prostração/adinamia, expectoração, emagrecimento ou sudorese **há pelo menos duas semanas** | **+15** |
+| Quadro clínico | Assintomático ou sintomas há menos de duas semanas | **0** |
+| Quadro clínico | Quadro respiratório que melhora com ou sem antibiótico dirigido a germes comuns | **−10** |
+| Radiografia | Adenomegalia hilar, padrão miliar e/ou condensação/infiltrado persistente por ≥2 semanas, sem melhora ou piorando com antibióticos usuais | **+15** |
+| Radiografia | Condensação ou infiltrado com duração menor que duas semanas | **+5** |
+| Radiografia | Radiografia de tórax normal | **−5** |
+| Contato | Contato próximo com adulto com tuberculose nos últimos dois anos | **+10** |
+| Contato | Ausência de contato conhecido ou contato ocasional | **0** |
+| Prova tuberculínica (PT) | Enduração ≥10 mm | **+10** |
+| Prova tuberculínica (PT) | Enduração de 5 a 9 mm | **+5** |
+| Prova tuberculínica (PT) | Enduração inferior a 5 mm | **0** |
+| Nutrição | Peso inferior ao percentil 10 na categoria de desnutrição indicada pela tabela histórica | **+5** |
+| Nutrição | Peso no percentil 10 ou acima | **0** |
+
+**Como somar:** escolher **uma** categoria por eixo; o quadro clínico e a radiografia são eixos separados dentro do domínio clínico-radiológico. Não somar “padrão miliar” + “adenopatia” + “infiltrado persistente” como se fossem três escores radiológicos independentes. O contato vale até dez pontos uma única vez. PT ≥10 mm vale dez pontos, não dez mais cinco. Nos serviços que utilizam IGRA, respeitar a atualização específica de seu enquadramento.
+
+**Interpretação histórica do Manual MS 2019:**
+- **≥40 pontos:** diagnóstico muito provável; recomenda-se iniciar o tratamento de TB conforme avaliação clínica.
+- **30–35 pontos:** TB possível; tratamento a critério médico e investigação adequada.
+- **<25 pontos:** diagnóstico pouco provável; prosseguir investigação/diferenciais se houver suspeita.
+
+**Nota de comparação importante:** a atualização da SBP 2026 usa a expressão **≤25 pontos** para a última categoria, enquanto o Manual MS 2019 reproduz **<25 pontos**. O escore funciona em incrementos de cinco, de modo que a pontuação **25** pode ocorrer. Para a LURIA, registrar explicitamente essa divergência, não atribuir falsamente a mesma desigualdade aos dois textos e buscar esclarecimento da coordenação de TB antes de transformar a fronteira exata em decisão automatizada de tratamento. Em qualquer pontuação baixa com suspeita de doença grave, a avaliação clínica prevalece sobre a categorização.
+
+### 10.2. IGRA no lugar da PT: leitura restrita ao contexto nacional
+
+O MS incorporou IGRA para investigação de infecção tuberculosa em contatos pediátricos **≥2 e <10 anos** e, em materiais posteriores, como alternativa à PT no escore dessa população. A nota do MS de fevereiro de 2022 contém uma exceção programática expressa: **em criança contato, de 2 a menos de 10 anos, um IGRA indeterminado pode ser tratado como ILTB provável**, devido ao risco elevado e às limitações de nova coleta. Isso **não** significa que todo IGRA indeterminado demonstre infecção biologicamente, nem que seja equivalente ao resultado reagente em qualquer idade ou paciente. Para pessoas com HIV ou pré-transplante, o próprio documento indica investigar/repetir resultado indeterminado, em vez de atribuir a mesma conclusão.
+
+A SBP 2026 utiliza no escore atualizado **IGRA reagente/indeterminado = 10 pontos**, **IGRA não reagente = 0**, no contexto da criança elegível. A interpretação deve ser feita à luz da elegibilidade do teste, da condição de contato e da exclusão de doença ativa. **Nunca classificar um resultado indeterminado de adolescente, lactente fora da faixa recomendada ou adulto como positivo universal.** Fontes: https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf e https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf .
+
+### 10.3. Erro tipográfico potencial em quadro secundário
+
+A tabela publicada no documento SBP 2026, p. 7, **mostra sem sinais de menos os valores “10 pontos” na linha de melhora após antibióticos e “5 pontos” na linha de radiografia normal**. Isso conflita com o Manual MS 2019, onde tais achados têm **−10** e **−5**, respectivamente. O caráter negativo é coerente com o raciocínio probabilístico: resolução após tratamento comum ou ausência de alterações radiológicas reduz, mas não zera, a suspeita. Para prevenir dano didático, esta apostila mantém **−10 e −5 do quadro primário oficial** e registra a divergência documental. Não transcrever a tabela SBP sem reconciliação.
+
+### 10.4. Três cálculos passo a passo
+
+**Exemplo A — alta probabilidade:** criança com tosse e febre por ≥2 semanas (**15**), adenopatia hilar (**15**), pai com TB transmissível no último ano (**10**), PT 7 mm (**5**) e peso ≥P10 (**0**). **Total = 45 pontos.** A pontuação favorece tratamento, mesmo com TRM negativo, após integração clínica e investigação adequada. Não é necessário elevar PT de 7 mm artificialmente a 10 mm para alcançar o ponto de corte.
+
+**Exemplo B — pontuação intermediária:** criança com tosse por três semanas (**15**), RX com infiltrado persistente (**15**), nenhum contato conhecido (**0**), PT 3 mm (**0**), peso adequado (**0**). **Total = 30 pontos.** O escore identifica TB possível; investigar amostras e diagnósticos diferenciais, com decisão terapêutica individualizada. Falso-negativo de PT pode ocorrer e não cancela os demais achados.
+
+**Exemplo C — menor probabilidade:** criança com sintomas por seis dias (**0**), radiografia normal (**−5**), contato ocasional (**0**), PT 0 mm (**0**), peso adequado (**0**). **Total = −5 pontos.** Não presumir doença pulmonar por TB nessa combinação, mas reavaliar se a história de exposição ou evolução mudar. Um escore baixo não serve para descartar meningite tuberculosa em paciente neurológico grave.
+
+### 10.5. Erros de aplicação e segurança
+
+- **Erro 1:** interpretar o escore como confirmação microbiológica. Ele é ferramenta de probabilidade clínica e pode conduzir a tratamento presuntivo.
+- **Erro 2:** substituir radiografia atual por descrição histórica sem data e somar o componente de forma arbitrária.
+- **Erro 3:** usar a PT ≥5 mm da investigação de ILTB como se ela sempre gerasse dez pontos: no quadro histórico, 5–9 mm vale cinco.
+- **Erro 4:** somar pontos de duas alternativas do mesmo domínio para inflar o total.
+- **Erro 5:** transformar IGRA indeterminado em positivo fora do contexto pediátrico específico explicitamente delimitado pelo MS.
+- **Erro 6:** usar classificação de doença pulmonar paucibacilar para negar TB extrapulmonar ameaçadora à vida.
+
+**Teste de autossuficiência:** se o aluno não consegue explicar cada parcela dos três exemplos e a razão de cada sinal positivo/negativo, a leitura do capítulo deve ser refeita antes de usar o escore em questões.
 
 ## 11. Diferenciais que precisam permanecer no diagnóstico
 
@@ -200,19 +255,78 @@ Os fármacos atuam em populações bacilares com características de replicaçã
 
 A Nota 5/2024 orienta avaliação mensal e reclassificação se resposta clínica não é satisfatória, podendo estender a manutenção para completar seis meses. Antes de simplesmente prolongar, verificar adesão, dose ajustada ao peso, erros de administração, resistência, fonte infectante e diagnóstico alternativo. Persistência/retorno dos sintomas após interrupção merece nova avaliação microbiológica e de resistência.
 
-## 14. Prescrição pedagógica e segurança farmacológica — não executar sem conferir tabela por peso
 
-As apresentações pediátricas combinadas facilitam tratamento, mas exigem faixa de peso correta e reavaliação do peso ao longo dos meses. Nas crianças abaixo de dez anos, a formulação dispersível da fase inicial RHZ contém, quando disponível no SUS, **R 75 mg + H 50 mg + Z 150 mg**; na manutenção, **R 75 mg + H 50 mg**. A Nota 5/2024 orienta uso dessas combinações pediátricas na faixa de peso correspondente e individualização em crianças abaixo de 4 kg, bem como em situações especificadas pela idade/peso.
+## 14. Farmacoterapia pediátrica: idade, apresentação, faixas de peso e segurança
 
-Para fins **didáticos** do tratamento da TB-doença em crianças, o material oficial brasileiro apresenta referência de doses diárias aproximadas para R **15 mg/kg** (faixa 10–20), H **10 mg/kg** (faixa 7–15) e Z **35 mg/kg** (faixa 30–40), respeitando máximos e apresentações da norma. Essas referências **não substituem a tabela de número de comprimidos por faixa de peso**, a qual precisa ser transcrita apenas após verificação integral no quadro oficial vigente; não arredondar individualmente sem conferir doses finais.
+Os nomes dos fármacos não bastam para prescrever: distinguir **esquema para TB ativa** de **tratamento preventivo**, conferir idade e peso atualizado, fase do tratamento, gravidade, sensibilidade do bacilo e formulação efetivamente dispensada. O MS estabelece diferenças importantes entre crianças menores de 10 anos com **menos de 25 kg**, crianças menores de 10 anos com **25 kg ou mais**, adolescentes a partir de 10 anos e lactentes com idade ≤3 meses ou peso <4 kg.
 
-**Rifampicina:** potente indutora enzimática, associada a interações com antirretrovirais, anticonvulsivantes e outras drogas; pode colorir secreções de alaranjado, causar hipersensibilidade e hepatotoxicidade. **Isoniazida:** hepatotoxicidade, neuropatia periférica em grupos de risco e interações; considerar piridoxina quando indicada por condições de suscetibilidade. **Pirazinamida:** toxicidade hepática, hiperuricemia e artralgia. **Etambutol:** risco de neuropatia óptica, requer avaliação visual compatível com capacidade da criança quando usado, sem afirmar que seja proibido em toda idade — a escolha segue protocolo e situação clínica.
+Os quadros abaixo são uma **síntese didática original** do *Folder de mesa: tratamento da TB em crianças* do Ministério da Saúde (2023), combinados com a **Nota Informativa 5/2024**, que altera o **tempo da fase de manutenção** em crianças elegíveis ao regime de quatro meses. Não usar o folder antigo isoladamente para escolher duração, pois ele foi publicado antes da inclusão do regime encurtado.
 
-Qualquer esquema deve ser auditado por peso atual, via, formulação disponível, tolerância gastrointestinal, interações, comorbidades hepáticas e suspeita de resistência. Eventos adversos graves como icterícia importante, vômitos persistentes com comprometimento sistêmico, urina escura acompanhada de outros sinais de hepatotoxicidade, reação cutânea grave ou alterações visuais precisam de avaliação imediata. A decisão sobre suspender, reintroduzir ou substituir fármacos compete a equipe clínica treinada e deve preservar efetividade do tratamento.
+### 14.1. Tratamento da TB ativa sensível com peso de 4 a menos de 25 kg e idade <10 anos
 
-### 14.1. HIV e outras interações de alta relevância
+**Comprimido dispersível na fase intensiva:** RHZ = rifampicina **75 mg** + isoniazida **50 mg** + pirazinamida **150 mg**.
 
-A rifampicina reduz concentrações de certos antirretrovirais. O esquema da TARV não deve ser interrompido ou alterado arbitrariamente; o manejo requer consulta ao PCDT vigente e à equipe de HIV pediátrico, com atenção a ajustes de dolutegravir/raltegravir e incompatibilidades com determinados esquemas contendo inibidores de protease. Desnutrição, HIV e doença disseminada modificam risco clínico e frequência de monitoramento, mas não justificam supor resistência sem evidência.
+**Comprimido dispersível na manutenção:** RH = rifampicina **75 mg** + isoniazida **50 mg**.
+
+| Peso da criança | RHZ dispersível — comprimidos por dia na fase inicial de 2 meses | RH dispersível — comprimidos por dia na manutenção |
+| --- | ---: | ---: |
+| **4–7 kg** | 1 | 1 |
+| **8–11 kg** | 2 | 2 |
+| **12–15 kg** | 3 | 3 |
+| **16–24 kg** | 4 | 4 |
+
+**Duração do RH de manutenção:** **2 meses** na TB sensível **não grave** quando a criança cumpre integralmente os critérios nacionais do regime encurtado; **4 meses** na TB pulmonar grave/não elegível; **10 meses** nas apresentações meníngea/osteoarticular sob protocolo especial de 12 meses. O número de comprimidos da fase RH pode ser idêntico em regimes de quatro, seis ou doze meses, **mas a duração não**.
+
+**Exemplo comentado:** criança de cinco anos, 13 kg, TB pulmonar sensível não grave adequadamente classificada. O quadro indica **3 comprimidos dispersíveis RHZ 75/50/150 por dia durante os dois primeiros meses** e, se mantida a elegibilidade/boa resposta, **3 comprimidos RH 75/50 por dia durante dois meses de manutenção**. Isso corresponde, durante a fase intensiva, a R 225 mg/dia, H 150 mg/dia e Z 450 mg/dia em dose fixa combinada; na manutenção, a R 225 mg/dia e H 150 mg/dia. Estes valores derivam da **multiplicação da quantidade oficial de comprimidos pelos componentes da formulação**, e não de arredondamento isolado de mg/kg. Não aplicar essa conta à criança com meningite, resistência, <4 kg ou formulações de outra concentração.
+
+**Exemplo de transição de peso:** criança que inicia a medicação com 11,7 kg (faixa 12–15 = 3 comprimidos) e evolui para 16,2 kg deve ter a dose reavaliada para a faixa 16–24 (4 comprimidos) conforme protocolo, mesmo que ainda esteja em manutenção. Não manter dose inadequada apenas porque a prescrição original foi impressa no início do tratamento.
+
+### 14.2. Crianças <10 anos e com peso ≥25 kg
+
+Nessa faixa, a Nota 5/2024 orienta **doses individualizadas**, e não quatro comprimidos dispersíveis pediátricos por extrapolação. O folder ministerial de 2023 apresenta a seguinte tabela para TB pulmonar sensível, com manutenção de RH cuja **duração deve ser adaptada** à nota de 2024 quando houver elegibilidade ao tratamento encurtado.
+
+| Faixa do folder (kg) | R (mg/dia) | H (mg/dia) | Z na fase intensiva (mg/dia) |
+| --- | ---: | ---: | ---: |
+| **25–30** | 450 | 300 | 900–1.000* |
+| **31–35** | 500 | 300 | 1.500** |
+| **36–40** | 600 | 300 | 1.500** |
+| **>40 até 45** | 600 | 300 | 1.500** |
+| **≥45** | 600 | 300 | 2.000** |
+
+O folder usa marcadores para a pirazinamida: *comprimidos dispersíveis de 150 mg* para a faixa indicada e comprimidos de 500 mg a partir dos pesos especificados, a depender da apresentação. **A tabela acima é referência educacional e deve ser revisada em conjunto com o formato integral do quadro antes de qualquer uso assistencial**, inclusive porque as fronteiras 40/45 kg e os rótulos ≥/ > do material original exigem interpretação criteriosa. Conferir diretamente o folder oficial e a disponibilidade atual do SUS; não usar cálculo de amostragem populacional como dose individual.
+
+Para menores de dez anos e ≥25 kg com TB meníngea/osteoarticular, a manutenção é prolongada **até dez meses** na orientação brasileira tradicional. Os valores individuais dos fármacos precisam ser ajustados conforme diagnóstico, função orgânica, interações e fonte oficial.
+
+### 14.3. Recém-nascidos, idade ≤3 meses ou peso <4 kg
+
+A nota do MS é explícita: **sem regime encurtado de quatro meses**. O tratamento de TB-doença utiliza R, H e Z individualizados, observando limitações de suspensão, comprimidos dispersíveis e preparo. O folder apresenta **doses de referência** R 15 mg/kg/dia (faixa 10–20), H 10 mg/kg/dia (faixa 7–15) e Z 35 mg/kg/dia (faixa 30–40), com individualização e monitorização. **Não confundir este tratamento da doença com os quatro meses de rifampicina na prevenção primária do recém-nascido exposto sem doença.**
+
+### 14.4. Adolescente a partir de 10 anos
+
+A fase intensiva do esquema básico inclui **RHZE** (R, H, Z, E) em dose fixa combinada apropriada; na manutenção, **RH**. A Nota 5/2024 determina a duração de **dois meses RHZE + dois meses RH** somente para adolescente com TB sensível não grave e critérios cumpridos, ou **dois meses RHZE + quatro meses RH** em doença pulmonar grave/não elegível. Não transportar para adolescentes a tabela de 75/50/150 mg destinada a crianças <10 anos e <25 kg. As combinações do adolescente dependem do peso e das apresentações padronizadas no SUS, com auditoria farmacêutica específica ainda necessária nesta apostila.
+
+### 14.5. Administração, tolerância e registro de adesão
+
+Comprimidos dispersíveis devem ser administrados no modo de preparo aprovado pela rede, em dose total e sem divisão arbitrária; para o **RH preventivo 3RH**, a Nota 6/2024 especifica dissolução em **50 mL de água potável**, ou pelo menos **10 mL** em criança com dificuldade, agitação após dissolução e administração imediata, descartando mistura não utilizada. Também especifica jejum e espera de uma hora para alimentação. A compatibilidade de orientações de diluição entre apresentações preventivas e de TB ativa precisa ser verificada no respectivo folheto técnico — **não presumir sem checagem que a bula de RH preventivo é intercambiável com qualquer produto contendo RHZE ou RHZ**.
+
+Em retornos, perguntar quantos comprimidos foram realmente ingeridos, se ocorreu vômito logo após a administração, se mistura foi descartada parcialmente, se o cuidador confunde fases e se a criança mudou de faixa ponderal. Plano escrito com esquema, fase, horário, contatos para dúvida, dose atual e critérios de alerta reduz interrupções. O tratamento diretamente observado (TDO) é estratégia de apoio e supervisão, não punição, e pode ser articulado pela APS com o núcleo familiar.
+
+### 14.6. Farmacologia e eventos adversos interpretados pela clínica
+
+| Fármaco | Mecanismo essencial | Eventos e cuidados mais úteis |
+| --- | --- | --- |
+| **Isoniazida (H)** | Bloqueio da síntese de ácidos micólicos após ativação bacteriana | Hepatotoxicidade, náuseas, neuropatia em predispostos; avaliar necessidade individual de piridoxina |
+| **Rifampicina (R)** | Inibição da RNA polimerase DNA-dependente | Interações por indução enzimática; secreções alaranjadas; rash, desconforto GI, hepatotoxicidade e raras alterações hematológicas |
+| **Pirazinamida (Z)** | Pró-fármaco ativo em ambientes intracelulares ácidos e metabolismo energético do bacilo | Hiperuricemia, artralgia, náuseas, hepatotoxicidade |
+| **Etambutol (E)** | Bloqueio de síntese de arabinogalactano na parede micobacteriana | Potencial neuropatia óptica; observar função visual segundo capacidade etária e protocolo |
+
+Os mecanismos foram articulados com o documento científico **SBP 2026**, sem copiar seu quadro. Um evento leve e esperado, como coloração de urina pela rifampicina, precisa ser diferenciado de **urina escura com icterícia, náusea persistente e prostração**, que exige investigação rápida de hepatotoxicidade e outras complicações. A rotina laboratorial é individualizada por indicação e risco, sem transformar todo paciente bem em monitoramento excessivo. Fármacos não devem ser suspensos e reiniciados de modo isolado por conta própria; uma reação adversa importante requer contato imediato com equipe treinada.
+
+### 14.7. TB e HIV: interações não devem ser resolvidas pela suspensão arbitrária da TARV
+
+Rifampicina pode comprometer exposição a inibidores de protease e inibidores de integrase e certos antirretrovirais. A **Nota 6/2024**, ao discutir **3RH preventivo**, explicita incompatibilidades com algumas combinações contendo lopinavir/ritonavir, darunavir ou nevirapina; relata a necessidade de ajustes de dose de raltegravir e dolutegravir em situações específicas e recomenda preferencialmente H por nove meses em algumas crianças com HIV naquelas situações. **Essas regras da prevenção não significam que TARV de crianças com TB-doença deva ser suspensa.** Tratamento concomitante da doença TB e HIV requer plano individualizado e referência ao PCDT infantil atualizado.
+
+**Portas de segurança antes de publicar esta seção:** validação de apresentação/marcas efetivamente existentes, limites máximos por faixa etária e peso, orientações de administração em TB ativa, ajuste em hepatopatia, imunossupressão e interações antirretrovirais por esquema.
 
 ## 15. Meningite tuberculosa: alto risco de atraso diagnóstico
 
@@ -236,24 +350,56 @@ Após contato, a primeira pergunta não é “qual profilaxia dar?”, mas **“
 
 Na infância, ILTB pode ser altamente relevante porque tratar antes da doença evita desfechos especialmente graves em lactentes e imunossuprimidos. Não se espera positividade da PT em todo contato recente: há janela imunológica e situações de anergia, exigindo manejo por risco e eventual reavaliação temporal. Protocolos específicos determinam quando iniciar tratamento preventivo mesmo sem PT/IGRA positivo ou disponível.
 
-### 17.1. Esquemas preventivos e a novidade 3RH
 
-A Nota Informativa nº 6/2024 do Ministério da Saúde disponibiliza a associação dispersível **rifampicina 75 mg + isoniazida 50 mg**, para esquema **3RH: 90 doses diárias ao longo de três meses** em crianças menores de dez anos com peso de 4 até menos de 25 kg que preencham critérios. Esse esquema é para **infecção sem doença ativa**, não para tratamento incompleto de TB pulmonar.
+### 17.1. Qual esquema preventivo é indicado?
 
-| Peso infantil para formulação RH 75/50 mg | Comprimidos dispersíveis/dia, conforme Nota 6/2024 |
-| --- | --- |
+**Primeiro, excluir tuberculose-doença ativa.** A escolha do tratamento preventivo (TPT) é condicionada a idade, peso, capacidade de deglutir, exposição a cepa resistente, função hepática, TARV e disponibilidade. A Nota 6/2024 do Ministério da Saúde descreve opções, e a SBP 2026 apresenta síntese de sua aplicação pediátrica.
+
+| Regime abreviado | Fármacos e tempo | Destinatário/consequência prática |
+| --- | --- | --- |
+| **3RH** | Rifampicina + isoniazida **diariamente**, **90 doses** em cerca de 3 meses | Crianças **<10 anos**, **4 a <25 kg**, especialmente quando não conseguem deglutir comprimidos comuns e não têm contraindicação |
+| **3HP** | Isoniazida + rifapentina **uma vez por semana**, **12 doses** | Faixas elegíveis com capacidade de deglutir conforme nota nacional; observar HIV/TARV e interações |
+| **4R** | Rifampicina **diária**, **120 doses** | No texto da Nota 6/2024, apresentação em suspensão reservada principalmente aos **<4 kg**, com aplicação também em condições específicas de resistência/intolerância à H segundo avaliação de referência |
+| **6H / 9H** | Isoniazida **diária** por 180 ou 270 doses | Alternativas quando esquemas mais curtos não são apropriados; em interações HIV específicas, a nota prefere 9H |
+
+A tabela demonstra que **3HP não é 3RH**: as letras mudam, a rifapentina não é rifampicina e o intervalo semanal não corresponde ao uso diário.
+
+### 17.2. Tabela original para 3RH pediátrico com dispersíveis RH 75/50
+
+Na Nota 6/2024, para **crianças menores de dez anos e peso inferior a 25 kg**, a dose diária de RH dispersível é:
+
+| Peso | Quantidade diária de comprimidos RH 75 mg/50 mg |
+| --- | ---: |
 | 4 a 7 kg | 1 |
 | 8 a 11 kg | 2 |
 | 12 a 15 kg | 3 |
 | 16 a 24 kg | 4 |
 
-A fórmula não cobre automaticamente crianças ≥25 kg, contraindicação à rifampicina ou H, hepatopatia importante ou exposição a cepa resistente. Outros esquemas preventivos do SUS, como quatro meses de rifampicina (4R), isoniazida isolada por tempo apropriado ou rifapentina mais isoniazida (3HP) em faixas elegíveis, exigem consulta ao protocolo atual para idade, peso, interações e disponibilidade. **Não transportar doses ou critérios de 3RH para 3HP**, que tem frequência e fármacos diferentes.
+A **duração programada é de 90 doses diárias, a serem tomadas em intervalo de três a cinco meses**. Na mesma nota, uma criança que retorne após abandono com **pelo menos 72 doses (≥80%)** pode ser considerada com tratamento completo nessa situação particular — isso **não** deve ser apresentado como autorização rotineira para prescrever somente 72 doses. Diante de interrupção, reavaliar possibilidade de TB ativa antes de decidir reinício.
 
-### 17.2. Recém-nascido coabitante de fonte bacilífera
+**Demonstração de preparo segundo Nota 6/2024:** dissolver os comprimidos prescritos em 50 mL de água potável; quando o volume dificulta deglutição, o documento admite 10 mL mínimos ou orientação médica. Agitar e administrar **todo o conteúdo imediatamente**. Descartar a mistura não utilizada. Orientar administração em jejum e esperar ao menos uma hora até oferecer alimento, com ajustes de viabilidade definidos pela equipe.
 
-O algoritmo nacional citado na Nota 6/2024 orienta investigação para excluir doença congênita/neonatal e, no recém-nascido coabitante de fonte bacilífera, manejo preventivo específico antes da BCG. A nota apresenta **rifampicina por quatro meses como quimioprofilaxia primária**, seguida de suspensão e BCG, sem prova tuberculínica naquele fluxograma. Este detalhe deve ser diferenciado de resumos antigos que sugerem outras sequências. Quando a BCG já foi aplicada inadvertidamente, o documento também orienta avaliação individual da decisão de revacinar e do esquema preventivo.
+### 17.3. Contato recente: janela imunológica e retestagem
 
-Esse fluxo não significa que toda mãe com qualquer história de TB deva deixar o filho sem BCG. É essencial confirmar infectividade da fonte, tempo e efetividade de tratamento, quadro do recém-nascido, possibilidade de TB congênita e recomendação vigente da referência materno-infantil.
+PT e IGRA podem ser negativos logo após infecção. O MS recomenda reavaliação temporal em contatos elegíveis. No algoritmo de crianças <10 anos, quando não há doença e o teste inicial é não reagente/negativo, o fluxograma SBP/MS 2026 aborda **repetição em cerca de oito semanas** em situações correspondentes, com manutenção do mesmo teste usado inicialmente, sempre considerando risco. Isso não autoriza deixar recém-nascido de altíssimo risco sem proteção enquanto se espera conversão.
+
+A PT positiva **≥5 mm** na investigação de infecção não tem o mesmo uso da distribuição **5–9 mm = 5 pontos e ≥10 mm = 10 pontos** do escore de doença; trata-se de objetivos diagnósticos diferentes. O IGRA indeterminado em **contato de 2 a <10 anos** tem orientação brasileira excepcional de manejar como ILTB provável, mas esse resultado não comprova infecção em qualquer outro grupo (Nota MS 2/2022).
+
+### 17.4. Manejo do recém-nascido exposto a fonte bacilífera
+
+O primeiro passo é avaliar risco de **TB congênita/ativa** e status infeccioso materno/domiciliar, observando sinais neonatais e resultados da fonte. Quando o RN **coabita com pessoa bacilífera** e não se constata doença na investigação, a Nota 6/2024 prevê **rifampicina preventiva por quatro meses**, sem PT posterior de rotina naquele fluxo, e BCG após concluir prevenção. Se recebeu BCG antes do reconhecimento da exposição, a nota recomenda ainda a profilaxia e avaliação individual da possível revacinação conforme resposta vacinal.
+
+**Divergência de doses a reconciliar:** a SBP 2026 menciona em uma passagem **rifampicina 10 mg/kg/dia** no RN exposto; na síntese dos esquemas apresenta **15 mg/kg/dia (faixa 10–20 mg/kg/dia)** para suspensão infantil. A Nota 6/2024 orienta 4R na prevenção de <4 kg com essa última referência de faixa de dose. Não converter essas passagens em prescrição neonatal automática sem validação do esquema nacional, da concentração da suspensão, da condição clínica e da disponibilidade atual. O valor final deve ser decidido por serviço habilitado e registro farmacológico auditado.
+
+### 17.5. Contato de tuberculose resistente
+
+O TPT de contatos não deve ser escolhido simplesmente porque a criança está assintomática: **o padrão de resistência do caso fonte muda o medicamento seguro e efetivo**. A Nota 6/2024 sugere 4R nos contatos de TB com monorresistência à H e alternativas baseadas em H nos contatos com monorresistência à R, desde que se exclua doença ativa e se valide situação específica. Para **TB multirresistente**, a SBP 2026 descreve acompanhamento clínico por dois anos como prática brasileira à época e menciona o avanço internacional da profilaxia com levofloxacino. Esse ponto deve ser confrontado com notas nacionais **posteriores a abril de 2026** e equipe de TB resistente; não declarar esquema preventivo com levofloxacino incorporado ao SUS sem documentação nacional específica.
+
+### 17.6. HIV, imunossupressão e prevenção
+
+A prioridade é a exclusão de doença ativa e ajuste de interações com antirretrovirais e outros imunossupressores. A Nota 6/2024 recomenda preferencialmente isoniazida por nove meses em determinadas crianças sob TARV incompatível com rifamicinas. O IGRA e a PT não são capazes de excluir doença em imunodeprimidos, e certas populações de contato têm indicação programática de tratamento preventivo mesmo com resultados não reagentes, após avaliação clínica. Não extrapolar a PT de um adolescente bem para definir conduta de lactente imunossuprimido.
+
+**Fontes centrais:** MS Nota 6/2024, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-6-2024-dispersiveis-rifampicina-e-isoniazida.pdf; MS Nota 2/2022, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf; SBP 2026, https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf.
 
 ## 18. Vacinação BCG, aleitamento e medidas de prevenção
 
@@ -271,11 +417,39 @@ Reavaliar dose conforme ganho de peso; perguntar como comprimidos dispersíveis 
 
 Em TB meníngea/osteoarticular, acompanhar sequelas neurológicas, audiovisuais, crescimento, função locomotora e necessidades de reabilitação; em TB pulmonar avaliar recuperação funcional e crescimento. Registro de término, desfecho e vigilância de contatos seguem definições do programa nacional, não critérios inventados a partir de resolução radiológica completa.
 
-## 20. Tuberculose resistente em crianças e adolescentes
 
-A resistência pode ter origem na transmissão de fonte resistente ou emergir durante uso inadequado de medicamentos. Suspeitar diante de **contato com caso confirmado resistente**, recidiva, tratamento prévio irregular, falta de resposta com adesão efetivamente boa ou identificação molecular de resistência à rifampicina. Semelhança clínica da TB resistente com a sensível obriga cuidado: não existe sinal físico que discrimine de modo confiável as duas.
+## 20. Tuberculose resistente em crianças e adolescentes: atualização brasileira de outubro de 2026
 
-Obter informações do caso fonte, realizar cultura e teste de sensibilidade quando possível e encaminhar para programa especializado. Esquemas de TB resistente mudaram com novas drogas e recomendações internacionais; eles não devem ser copiados para o cuidado da criança sem verificar idade, peso, resistência documentada, interações, eventos adversos e disponibilidade nacional. A diretriz OMS de setembro de 2026 consolida recomendações atualizadas para TB sensível e resistente, exigindo reconciliação formal com protocolos vigentes brasileiros antes de uma apostila final.
+Resistência pode ser **transmitida diretamente** a partir de fonte com cepa resistente ou selecionada durante exposição inadequada aos fármacos. A história do **caso fonte**, sua cultura e testes de sensibilidade são parte essencial da avaliação da criança, principalmente quando a amostra pediátrica é paucibacilar e difícil de confirmar. Suspeitar de resistência diante de TRM-TB que aponte resistência à rifampicina, contato com TB DR documentada, falha após confirmar adesão/absorção e episódios prévios de tratamento irregular.
+
+A **Nota Informativa MS 2/2026, de outubro de 2026**, revogou a Nota 1/2025 e define categorias contemporâneas:
+
+| Categoria | Regra conceitual |
+| --- | --- |
+| Monorresistência | Resistência a um único fármaco; vigilância nacional prioriza H ou R |
+| Polirresistência | Dois ou mais fármacos, **sem** a combinação simultânea de R e H |
+| TB RR | Resistência à rifampicina detectada por TRM, enquanto não se conhece integralmente resistência adicional |
+| TB MDR | Resistência **pelo menos à R e à H** |
+| Pré-XDR | R resistente (com ou sem H) **mais** resistência a fluoroquinolona |
+| XDR | R resistente (com ou sem H) **mais** fluoroquinolona **e** resistência à linezolida e/ou bedaquilina |
+
+### 20.1. O regime BPaLM de 2026 **não é universal em pediatria**
+
+A nova nota nacional inclui **BPaLM** = bedaquilina + pretomanida + linezolida + moxifloxacino e, em certos padrões de resistência à fluoroquinolona, **BPaL** = sem moxifloxacino. A elegibilidade oficial exige, entre outros critérios, **adolescentes de 14 anos ou mais**, TB RR/MDR/pré-XDR ou monorresistência à rifampicina em situação pertinente, confirmação e classificação adequadas e avaliação de contraindicações/interações por equipe especializada. **Não é indicado para menores de 14 anos**.
+
+Além da idade, o documento **exclui apresentações com acometimento do SNC, osteoarticular ou TB disseminada/miliar** desses esquemas curtos. A nota também lista contraindicações relevantes como gestação/lactação e certas exposições prévias aos fármacos, além de precauções relacionadas à duração do QT, neuropatias e interações. Não apresentar “BPaLM por seis meses” como prescrição automática para todo adolescente a partir dos 14 anos com TRM positivo.
+
+**Duração:** BPaLM tem duração máxima de **26 semanas**, sem prolongamento automático; BPaL pode ser avaliado para extensão até **39 semanas**, somente em condições específicas de resposta e adesão descritas pela nota. O laboratório deve priorizar testes de sensibilidade de primeira e segunda linha, incluindo fluoroquinolonas, bedaquilina e linezolida quando disponíveis.
+
+### 20.2. Crianças <14 anos com TB DR
+
+A nova disponibilidade nacional de BPaLM **não resolve automaticamente** o tratamento de crianças abaixo da idade prevista. Nessas crianças, buscar serviço de referência de TB DR para composição de esquema pediátrico individualizado segundo perfil da fonte e do paciente e documentos nacionais/internacionais aplicáveis. O regime de TB sensível 2RHZ/4RH ou 2RHZE/4RH **não deve ser mantido sem revisão** quando a resistência já foi confirmada. Não inventar dose de bedaquilina ou outro fármaco de segunda linha em idade/peso sem elegibilidade comprovada.
+
+### 20.3. Caso de fronteira: adolescente de 14 anos com meningite resistente
+
+A idade (≥14 anos) **não torna BPaLM elegível** se existe meningite, porque a Nota MS 2/2026 exclui envolvimento do SNC. Esse caso exige discussão especializada de esquema para TB-DR meníngea, monitorização intensiva e medidas de suporte. Na prova, reconhecer simultaneamente **critério de idade cumprido** e **contraindicação anatômica presente** é mais importante que memorizar a sigla farmacológica.
+
+**Referência primária:** MS, Nota Informativa 2/2026-CGTM/DATHI/SVSA/MS, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf .
 
 ## 21. Algoritmos textuais de decisão
 
@@ -346,6 +520,27 @@ Garota de sete anos com TB pulmonar diagnosticada clinicamente, iniciada em esqu
 **Por que importa:** ensina a tratar adesão, resistência e erro diagnóstico como hipóteses distintas que exigem ações diferentes.
 
 ---
+
+### Caso 7 — Aplicação real do escore, sem TRM positivo
+
+Menino de seis anos, tosse e febre intermitente há três semanas, pai em tratamento recente para TB pulmonar, peso atual acima do percentil 10. Radiografia mostra adenomegalia hilar persistente. PT 8 mm. TRM-TB em amostra pediátrica não detecta o agente.
+
+**Hipótese e cálculo:** clínica persistente ≥2 semanas = **15**; imagem compatível = **15**; contato próximo nos últimos dois anos = **10**; PT 5–9 mm = **5**; nutrição ≥P10 = **0**. **Total: 45 pontos.** Isso indica TB pulmonar muito provável segundo o escore brasileiro, em cenário apropriado. O TRM negativo não tem sensibilidade suficiente para excluir doença paucibacilar.
+
+**Conduta:** integrar o resultado ao exame físico, qualidade do RX e possibilidade de cultura; confirmar sensibilidade da fonte, avaliar HIV e decidir tratamento da TB ativa conforme gravidade. **Não** prescrever 3RH preventivo confundindo teste molecular negativo com ILTB. A duração curativa de quatro meses depende de classificação adicional de não gravidade e resposta, não do escore isoladamente.
+
+**Por que importa:** o escore não “prova” a presença do bacilo, mas pode subsidiar tratamento antes da confirmação microbiológica diante de probabilidade elevada.
+
+### Caso 8 — Adolescente com resistência à rifampicina e doença do SNC
+
+Adolescente de 14 anos com quadro subagudo de meningite, imagem sugestiva de acometimento basal e teste molecular que identifica M. tuberculosis com resistência à rifampicina. Um profissional propõe “BPaLM porque já tem 14 anos e é tuberculose resistente”.
+
+**Hipótese:** provável TB meníngea resistente, potencialmente de alto risco neurológico. Há dois problemas separados: tratar de imediato condição neurológica grave, e não escolher esquema curto contraindicado por apresentação anatômica.
+
+**Conduta:** internação, investigação segura, perfil de sensibilidade, avaliação neurológica/neurocirúrgica se necessária e referência para regime TB-DR meníngeo. A Nota MS 2/2026 permite BPaL/BPaLM a partir de 14 anos em outras situações elegíveis, mas **exclui SNC**, assim como formas osteoarticulares e miliares. Não empregar BPaLM apenas pelo limite etário.
+
+**Por que importa:** ensina simultaneamente a atualização recente do SUS e seus limites de segurança.
+
 
 ## 23. Questões autorais com comentário de cada alternativa
 
@@ -447,6 +642,55 @@ E. Aumentar pirazinamida sem avaliar o peso.
 
 ---
 
+### Questão 9 — Somatório do escore brasileiro
+
+Criança de sete anos, tosse há três semanas, radiografia com adenopatia hilar, contato estreito com adulto com TB no ano anterior, PT com enduração de 7 mm e peso acima do percentil 10. Qual o escore de acordo com o quadro MS 2019?
+
+A. 25 pontos.
+B. 30 pontos.
+C. 35 pontos.
+D. 45 pontos.
+E. 55 pontos.
+
+**Gabarito: D.** A, B e C subestimam ao omitir um ou mais componentes; E superestima ao pontuar PT 7 mm como ≥10 mm ou atribuir indevidamente pontos adicionais. D calcula **15 clínicos + 15 radiológicos + 10 contato + 5 PT + 0 nutrição = 45**. **Mini-revisão:** pontuar cinco eixos, uma categoria por eixo; separar resultado de PT para infecção e peso dentro do escore.
+
+### Questão 10 — Quatro meses e a forma grave
+
+Menina de cinco anos, 13 kg, TB pulmonar sensível com obstrução brônquica importante por adenopatia. Qual afirmação é correta?
+
+A. A idade torna obrigatório o tratamento em quatro meses.
+B. A obstrução de via aérea afasta classificação de TB intratorácica não grave para o regime encurtado.
+C. Um TRM negativo tornaria o regime de quatro meses sempre seguro.
+D. Crianças abaixo de dez anos exigem etambutol na fase intensiva em qualquer situação.
+E. O peso de 13 kg autoriza cinco comprimidos dispersíveis por dia.
+
+**Gabarito: B.** A não considera gravidade. B reconhece critério anatômico de elegibilidade. C confunde sensibilidade de teste com gravidade. D desconsidera esquema pediátrico RHZ nacional. E viola tabela de peso, cuja faixa 12–15 kg corresponde a três dispersíveis de RHZ/RH, segundo a fase. **Mini-revisão:** classificar gravidade antes de escolher duração, e calcular comprimidos por faixa, não pelo número de semanas.
+
+### Questão 11 — Dose preventiva 3RH e administração
+
+Criança de quatro anos, 9 kg, ILTB sem evidência de doença ativa, elegível a 3RH dispersível. Qual afirmação corresponde à Nota MS 6/2024?
+
+A. Administrar dois comprimidos RH 75/50 mg diariamente, com meta de 90 doses em três a cinco meses.
+B. Administrar dois comprimidos de RHZ 75/50/150 mg durante três meses.
+C. Administrar rifapentina diariamente na mesma apresentação.
+D. Considerar profilaxia completa assim que receber 30 doses.
+E. É permitido guardar por vários dias a mistura já dissolvida.
+
+**Gabarito: A.** B confunde esquema ativo com preventivo. C confunde rifapentina com rifampicina e frequência de 3HP. D não representa as 90 doses programadas; E contraria preparo de administração imediata. **Mini-revisão:** 8–11 kg = dois RH dispersíveis; a duração programada do esquema preventivo é de 90 doses.
+
+### Questão 12 — Atualização TB resistente 2026
+
+Adolescente de 15 anos com TB RR e meningite tuberculosa. Qual conduta reflete melhor a Nota MS 2/2026?
+
+A. BPaLM está automaticamente indicado porque a idade é ≥14 anos.
+B. BPaLM é regime para toda criança com resistência independentemente do sítio.
+C. A apresentação com comprometimento do SNC exclui uso do esquema curto BPaL/BPaLM descrito na nota; encaminhar à referência para regime apropriado.
+D. A única opção é monoterapia com rifampicina.
+E. A classificação de resistência deixa de importar porque se trata de meningite.
+
+**Gabarito: C.** A e B ignoram contraindicação por sítio; C integra idade, resistência e apresentação; D é farmacologicamente inadequada e ainda propõe droga com resistência; E ignora o padrão de sensibilidade. **Mini-revisão:** idade mínima não suplanta contraindicação clínica/anatômica.
+
+
 ## 24. Pérolas de prova e erros de conduta
 
 1. Tuberculose-doença pediátrica é frequentemente **paucibacilar**: TRM ou baciloscopia negativos não excluem o quadro.
@@ -496,7 +740,12 @@ A curadoria clínica deve procurar, verificar licença e submeter ao Admin — *
 8. **WHO.** Operational handbook on tuberculosis, module 5: management of tuberculosis in children and adolescents. Geneva, 2022. https://www.who.int/publications/i/item/9789240046832
 9. **WHO.** Consolidated guidelines on tuberculosis, module 4: treatment and care, 2nd edition. 25 September 2026. https://www.who.int/publications/i/item/9789240125124
 10. **WHO.** Operational handbook on tuberculosis, module 3: diagnosis. 2025. https://www.who.int/publications/i/item/9789240110991
-11. **Sociedade Brasileira de Pediatria.** Tuberculose na infância no Brasil: atualização. Página pública, 23 abr. 2026. https://www.sbp.com.br/tuberculose-na-infancia-no-brasil-atualizacao/ — **documento integral não revisado, acesso pendente**.
+11. **Sociedade Brasileira de Pediatria.** Tuberculose na infância no Brasil: atualização. Documento Científico nº 40, 23 abr. 2026. https://www.sbp.com.br/tuberculose-na-infancia-no-brasil-atualizacao/ — **versão integral em PDF examinada em 15/10/2026; ver referência 13**.
+
+12. **BRASIL. Ministério da Saúde.** Nota Informativa nº 2/2022-CGDR/DCCI/SVS/MS: interpretação do IGRA para ILTB e fluxos de contatos pediátricos, 2022. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf
+13. **Sociedade Brasileira de Pediatria (SBP).** Departamento Científico de Pneumologia. Tuberculose na infância no Brasil: atualização. Documento Científico nº 40, 23 abr. 2026. PDF integral **efetivamente aberto e comparado em 15/10/2026**: https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf
+14. **BRASIL. Ministério da Saúde.** Folder de mesa: esquemas para tratamento de TB em crianças, 2023, quadros de dispersíveis e dose por peso. https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf
+15. **BRASIL. Ministério da Saúde.** Nota Informativa nº 2/2026-CGTM/DATHI/SVSA/MS: diagnóstico e tratamento da TB drogarresistente com BPaL/BPaLM, out. 2026. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf
 
 As obras de benchmarking foram lidas apenas como comparação de temas; não constituem as referências normativas acima e não autorizam incorporação de texto, imagens ou tabelas.
 
@@ -504,11 +753,13 @@ As obras de benchmarking foram lidas apenas como comparação de temas; não con
 
 **Feito nesta etapa:** estudo comparativo efetivo de dois documentos do Drive; verificação de diretrizes primárias brasileiras e OMS; criação de roteiro integrado de fisiopatologia, clínica, microbiologia, imagem, diferenciais, terapêutica, prevenção e seguimento; seis casos originais; oito questões de cinco alternativas comentadas; roteiro de dez imagens candidatas.
 
+**Checkpoint adicional 15/10/2026 — revisão dirigida:** escore MS 2019 reconstituído com valores negativos; divergências de sinais entre a tabela oficial e a SBP 2026 registradas; inclusão contextual do IGRA indeterminado conforme Nota MS 2/2022; faixas pediátricas de RHZ/RH e cálculos conferidos; 3RH expandido com preparo e critérios de conclusão; incorporada Nota MS 2/2026 com BPaL/BPaLM e exclusões por idade e sítio; documento SBP 2026 integral efetivamente lido; dois casos e quatro questões acrescentados. **O texto ainda exige revisão independente, aferição de dose em consulta clínica e auditoria de autossuficiência.**
+
 **Ainda impeditivo para certificar/publicar:**
-- Verificação linha a linha da **tabela integral de escore clínico brasileiro**, inclusive critérios etários, pontuações e exceções.
+- Concluída checagem do escore histórico (MS 2019) e comparação com SBP 2026; **ainda precisa parecer técnico sobre divergências documentais (<25/≤25; erros de sinal da tabela SBP) antes de uso clínico automatizado**.
 - Auditoria farmacológica de **todos os fármacos e apresentações por peso**, doses máximas, manejo de eventos adversos, insuficiência hepática, HIV e outras comorbidades; acrescentar tabela completa RHZ/RH pediátrica conferida.
-- Consulta integral às recomendações nacionais atuais sobre **ILTB, acompanhamento de contatos, manejo neonatal e TDO**, harmonizando mudanças até outubro de 2026.
-- Contraste da atualização SBP 2026 integral (caso haja acesso) e revisão dos pontos novos da OMS de setembro de 2026; identificar eventuais divergências e a aplicabilidade no SUS.
+- Consulta à Nota MS 6/2024 e documento SBP 2026 realizada para ILTB e manejo neonatal; **confirmar eventuais alterações pós-abril/2026**, farmacologia dos RN e implementação da política de TDO no serviço.
+- **SBP 2026 integral aberto e contrastado nesta etapa**; permanece revisão aprofundada dos pontos novos da OMS de setembro de 2026 e aplicabilidade ao SUS.
 - Aprofundar sistematicamente TB extrapulmonar, histopatologia, cultura e métodos em amostras alternativas, TB resistente, cuidados psicossociais, educação do cuidador e populações especiais.
 - Aumentar a cobertura de casos e questões em subtemas de resistência, HIV, adolescência, neurotuberculose, miliar e diagnóstico diferencial.
 - Certificar piso de **60.000 caracteres didáticos úteis** (não confundir contagem Markdown bruta com conteúdo lecionável), revisar redundâncias e testar autossuficiência com questões resolvíveis só com o texto.
