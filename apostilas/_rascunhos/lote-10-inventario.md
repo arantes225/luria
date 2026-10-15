@@ -184,7 +184,7 @@ Foram consultadas fontes institucionais públicas **ISUOG Practice Guidelines 20
 
 | Nº | Caminho editorial | Caracteres Markdown brutos auditados | Casos | Questões | Status |
 | --- | --- | ---: | ---: | ---: | --- |
-| **211** — Transtornos depressivos e avaliação do risco de suicídio | \`apostilas/_rascunhos/lote-10-aula-211-transtornos-depressivos-risco-suicidio.md\` | **75.177** | 9 | 14 | Rascunho longo, não certificado |
+| **211** — Transtornos depressivos e avaliação do risco de suicídio | \`apostilas/_rascunhos/lote-10-aula-211-transtornos-depressivos-risco-suicidio.md\` | **75.703** | 9 | 14 | Rascunho longo, não certificado |
 | **212** — Transtorno bipolar e episódios do humor | \`apostilas/_rascunhos/lote-10-aula-212-transtorno-bipolar-episodios-humor.md\` | **73.317** | 9 | 14 | Rascunho longo, não certificado |
 
 ### Etapa zero / Benchmark da 211
