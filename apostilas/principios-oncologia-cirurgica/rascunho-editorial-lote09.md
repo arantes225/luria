@@ -588,10 +588,659 @@ Estágio + biologia → avaliação geriátrica/funcional/nutricional e anestés
 - [x] Emergências, doença metastática e cirurgia paliativa.
 - [x] Seguimento, reabilitação, ética e SUS.
 - [x] Referências verificáveis e algoritmos.
-- [ ] Casos clínicos originais completos com raciocínio e conduta.
-- [ ] Questões autorais comentadas individualmente.
-- [ ] Curadoria de 10+ imagens candidatas e licença.
+- [x] 12 casos clínicos originais completos com raciocínio e conduta (seção 35).
+- [x] 18 questões autorais comentadas por alternativa (seção 36).
+- [x] Plano de 18 imagens candidatas; licenças ainda pendentes (seção 37).
 - [ ] Revisão médica, cirúrgica, anestésica, de patologia e farmacêutica.
 - [ ] Integração ao formato nativo e teste PWA/desktop.
 
 **Estado:** versão inicial robusta, em revisão; não é apostila liberada para o site.
+
+
+---
+
+## 35. Casos clínicos de decisão oncológica — raciocínio completo
+
+Todos os casos abaixo são **fictícios**, com finalidade didática. A conduta real depende de histologia, estado clínico, protocolos oncológicos específicos e avaliação multidisciplinar.
+
+### Caso 1 — Massa profunda de coxa — suspeita de sarcoma
+
+**Apresentação:** Homem de 49 anos apresenta massa de 9 cm na face medial da coxa, profunda, progressivamente crescente e pouco dolorosa. Cirurgião de ambulatório propõe 'tirar como lipoma' sem imagem prévia.
+
+**Hipótese diagnóstica e problema de decisão:** Sarcoma de partes moles deve ser considerado, além de tumores benignos profundos. A conduta diagnóstica incorreta pode dificultar futura ressecção curativa.
+
+**Raciocínio cirúrgico passo a passo:** Tamanho importante, crescimento e profundidade em relação à fáscia são sinais de alerta; não provar malignidade, mas justificam abordagem em centro de referência. Exérese transversal ou fragmentada pode contaminar planos e dificultar cirurgia. A RM delimita compartimentos e vasos; biópsia percutânea precisa de trajeto planejado pela equipe que fará ressecção definitiva.
+
+**Exames e interpretação:** RM da coxa; core guiada de área representativa após planejamento do trajeto; revisão histológica especializada com tipagem/grau, estadiamento por imagem dirigido ao subtipo e avaliação de órgãos à distância.
+
+**Conduta inicial:** Encaminhar para centro com sarcoma, discutir cirurgia em bloco com margens adequadas e terapia perioperatória se indicada por histologia/estádio. Consentimento deve abordar necessidade de ressecção muscular/neurovascular e reabilitação.
+
+**Seguimento e avaliação de resultados:** Monitorizar função e margens, reabilitação, resultados definitivos e vigilância conforme subtipo.
+
+**Por que este caso importa:** O primeiro procedimento influencia possibilidade futura de R0; 'biópsia simples' pode ser ato oncológico decisivo.
+
+### Caso 2 — Tumor de cólon confirmado e anemia por sangramento
+
+**Apresentação:** Mulher de 66 anos apresenta anemia ferropriva, colonoscopia com massa em cólon direito e biópsia revelando adenocarcinoma invasivo. Está estável, sem obstrução, com capacidade funcional preservada.
+
+**Hipótese diagnóstica e problema de decisão:** Câncer de cólon aparentemente localizado a ser estadiado, sem indicação de operação emergencial apenas pelo diagnóstico.
+
+**Raciocínio cirúrgico passo a passo:** Estadiamento e avaliação perioperatória são importantes para planejar colectomia segmentar com drenagem linfática adequada. Tumor de cólon difere do reto quanto a RM pélvica e neoadjuvância usual. Corrigir/analisar anemia reduz risco, sem atrasar indefinidamente cirurgia de intenção curativa.
+
+**Exames e interpretação:** TC de tórax/abdome/pelve conforme protocolo, CEA basal quando indicado, hemograma/ferritina, função renal/hepática, revisão da colonoscopia completa e avaliação anestésica/nutricional.
+
+**Conduta inicial:** Discussão de colectomia oncológica com linfonodos, risco de anastomose/ostomia e adjuvância após pTNM. A escolha de técnica depende de equipe, extensão e segurança.
+
+**Seguimento e avaliação de resultados:** Revisar número de linfonodos, margens, invasão e biomarcadores como MMR/MSI quando indicado; programar vigilância específica.
+
+**Por que este caso importa:** O laudo de biópsia não substitui estadiamento; no câncer localizado, cirurgia deve acompanhar plano de adjuvância e seguimento.
+
+### Caso 3 — Câncer de reto com margem circunferencial ameaçada
+
+**Apresentação:** Homem de 57 anos apresenta sangramento retal e alteração do hábito intestinal. Colonoscopia confirma adenocarcinoma de reto médio. RM pélvica de alta resolução mostra tumor localmente avançado próximo à fáscia mesorretal, com linfonodos regionais suspeitos.
+
+**Hipótese diagnóstica e problema de decisão:** Câncer de reto localmente avançado com risco de margem circunferencial comprometida se operação imediata inadequadamente planejada.
+
+**Raciocínio cirúrgico passo a passo:** Reto não é cólon: anatomia pélvica, mesorreto, relação com fáscia, esfíncter e radioterapia alteram sequência. A equipe pode indicar neoadjuvância/quimiorradioterapia ou terapia neoadjuvante total conforme risco. Operar sem RM e discussão pode aumentar margem positiva e morbidade.
+
+**Exames e interpretação:** Estadiamento sistêmico por TC, colonoscopia e histologia adequadas, CEA conforme protocolo, RM com descrição de altura, EMVI, linfonodos e margem circunferencial, função esfincteriana.
+
+**Conduta inicial:** Tumor board com coloproctologia, oncologia e radioterapia; discutir neoadjuvância e cirurgia com excisão total do mesorreto/preservação esfíncter quando oncologicamente possível. Consentir risco de ostomia e disfunção intestinal/sexual.
+
+**Seguimento e avaliação de resultados:** Reestadiamento, peça patológica, indicação de adjuvância e reabilitação específica.
+
+**Por que este caso importa:** Mostra como o plano pré-operatório pode evitar uma cirurgia tecnicamente possível porém oncologicamente ruim.
+
+### Caso 4 — GIST gástrico junto à cárdia
+
+**Apresentação:** Mulher de 62 anos tem massa submucosa gástrica de 6 cm, suspeita de GIST e próxima à transição esofagogástrica. Equipe considera gastrectomia total e linfadenectomia extensa antes de estudo molecular.
+
+**Hipótese diagnóstica e problema de decisão:** GIST potencialmente localizado e sensível a terapia-alvo, cujo manejo difere de adenocarcinoma gástrico.
+
+**Raciocínio cirúrgico passo a passo:** GIST típico metastatiza com maior frequência para fígado/peritônio, e acometimento linfonodal é pouco comum. A prioridade é ressecar sem ruptura tumoral, preservando órgão quando viável. Terapia neoadjuvante com imatinibe pode ser considerada em situações selecionadas após confirmação e avaliação de mutação, para evitar cirurgia muito mutilante.
+
+**Exames e interpretação:** Ecoendoscopia/imagem e amostra histológica segura quando indicada, imuno-histoquímica apropriada e testes moleculares de KIT/PDGFRA quando relevantes, TC de estadiamento e avaliação da ressecabilidade.
+
+**Conduta inicial:** Discussão em centro especializado quanto a ressecção limitada versus neoadjuvância; evitar linfadenectomia rotineira sem indicação. Planejar integridade da cápsula/peça.
+
+**Seguimento e avaliação de resultados:** Laudo definitivo, índice mitótico, tamanho, local, ruptura e estratificação de risco para terapia adjuvante/vigilância.
+
+**Por que este caso importa:** A operação 'padrão de adenocarcinoma' não deve ser transplantada para GIST.
+
+### Caso 5 — Melanoma cutâneo: biópsia e Breslow
+
+**Apresentação:** Homem de 42 anos apresenta lesão pigmentada assimétrica de 1,4 cm na perna, com crescimento, múltiplas cores e bordas irregulares. Profissional pretende fazer cauterização e enviar fragmentos sem orientação.
+
+**Hipótese diagnóstica e problema de decisão:** Melanoma cutâneo suspeito, cujo planejamento depende de histologia completa e espessura de Breslow.
+
+**Raciocínio cirúrgico passo a passo:** Lesão deve ser avaliada com dermatoscopia e estratégia de biópsia preferencial que preserve avaliação de profundidade quando factível; cauterização/fragmentação prejudica Breslow e margens. A cirurgia definitiva e eventual sentinela dependem da espessura, ulceração e outros fatores, sem margem fixa universal.
+
+**Exames e interpretação:** Biópsia excisional diagnóstica com margem inicial apropriada quando viável, laudo com Breslow/ulceração, exame de cadeias linfonodais e estadiamento conforme risco.
+
+**Conduta inicial:** Encaminhar cirurgia oncológica/dermatológica para ampliação de margens e considerar BLS pela indicação específica; discutir risco de cicatriz e vigilância cutânea.
+
+**Seguimento e avaliação de resultados:** Avaliar margens, linfonodos, educação fotoproteção e acompanhamento conforme estádio.
+
+**Por que este caso importa:** Sem Breslow adequado, o médico perde informação que decide tanto margem quanto sentinela.
+
+### Caso 6 — Mama HER2 positiva — resposta à neoadjuvância
+
+**Apresentação:** Paciente de 45 anos com câncer de mama invasivo HER2 positivo de 4,5 cm e axila cN1 confirmada por biópsia conclui terapia sistêmica neoadjuvante, com desaparecimento de massa palpável e linfonodo normalizado ao US.
+
+**Hipótese diagnóstica e problema de decisão:** Resposta clínica importante em câncer de mama localmente avançado; doença residual microscópica ainda possível.
+
+**Raciocínio cirúrgico passo a passo:** Uma resposta ao exame e imagem não comprova resposta patológica completa. A cirurgia precisa localizar tumor/leito original e determinar estratégia axilar considerando status pré-neoadjuvância, marcação e técnica. O tratamento adjuvante pode depender de doença residual.
+
+**Exames e interpretação:** Revisar biópsia original e marcadores, marcações/clips, exames de resposta, decisão de conservação versus mastectomia, avaliação axilar conforme critérios PCDT e equipe.
+
+**Conduta inicial:** Planejar cirurgia e axila sem assumir cura pela resposta clínica; orientar anatomopatologia da peça, terapia sistêmica e radioterapia conforme achados. Consultar módulo 167 LURIA.
+
+**Seguimento e avaliação de resultados:** Revisão de pCR/resíduo, margens, linfonodos, reabilitação e vigilância.
+
+**Por que este caso importa:** A neoadjuvância não elimina automaticamente cirurgia, embora possa reduzir extensão e informar prognóstico.
+
+### Caso 7 — Metástases hepáticas limitadas de câncer colorretal
+
+**Apresentação:** Homem de 60 anos foi submetido a ressecção de câncer de cólon há dois anos. TC agora mostra duas lesões hepáticas confinadas a um lobo, sem outras metástases aparentes. Está ECOG 0 e doença com evolução lenta.
+
+**Hipótese diagnóstica e problema de decisão:** Recidiva oligometastática potencialmente tratável com estratégia locorregional, mas precisa de estadiamento e avaliação de reserva hepática.
+
+**Raciocínio cirúrgico passo a passo:** Metástase não torna a cirurgia proibida; seleção exige verificar todos os sítios, biologia, possibilidade de controle do primário, fígado remanescente suficiente, relação com vasos e opções sistêmicas. Ressecção de apenas parte da doença disseminada provavelmente não agrega o mesmo benefício.
+
+**Exames e interpretação:** TC/RM hepática conforme protocolo, estadiamento sistêmico, CEA, dados moleculares pertinentes e revisão em equipe hepatobiliar/oncologia.
+
+**Conduta inicial:** Discutir terapia sistêmica perioperatória e metastasectomia/ablação em paciente selecionado com intenção de controle completo. Não prometer cura definitiva porque R0 hepático seja possível.
+
+**Seguimento e avaliação de resultados:** Monitorar função hepática, complicações, recidiva e vigilância específica de cólon.
+
+**Por que este caso importa:** A palavra metastático não decide sozinha a intenção do tratamento.
+
+### Caso 8 — Carcinoma metastático com obstrução intestinal
+
+**Apresentação:** Mulher de 71 anos com neoplasia ovariana avançada, ascite e carcinomatose difusa apresenta vômitos recorrentes e obstrução intestinal parcial, sem sinais de perfuração. É frágil, ECOG 3 e já passou por múltiplas linhas terapêuticas.
+
+**Hipótese diagnóstica e problema de decisão:** Obstrução intestinal maligna em doença avançada; cirurgia paliativa tem benefícios e riscos incertos.
+
+**Raciocínio cirúrgico passo a passo:** A operação pode alivar sintomas em alguns cenários, mas aderências e múltiplos pontos de obstrução, carcinomatose e fragilidade tornam risco de fístula/ostomia/internação prolongada elevado. Objetivo da paciente é conseguir controlar vômitos e retornar para casa.
+
+**Exames e interpretação:** Avaliar sinais vitais, hidratação/eletrólitos, imagem para sítio/quantidade de obstruções, sintomas, função, prognóstico, possibilidades de intervenção endoscópica e suporte paliativo.
+
+**Conduta inicial:** Discutir equipe de oncologia, cirurgia e cuidados paliativos; otimização de sintomas/descompressão/nutrição proporcional e eventual procedimento se chance concreta de benefício. Não indicar laparotomia extensa só porque existe obstrução.
+
+**Seguimento e avaliação de resultados:** Medir alívio, tempo fora do hospital, capacidade de alimentação e preferência da paciente, reavaliando plano.
+
+**Por que este caso importa:** Cirurgia paliativa bem indicada nasce de objetivo e prognóstico, não de compulsão técnica para operar.
+
+### Caso 9 — Cirurgia em paciente idoso com sarcopenia
+
+**Apresentação:** Homem de 80 anos, ECOG 1, possui câncer de estômago localizado potencialmente curável. Perdeu 11% do peso em três meses, tem força de preensão baixa, anemia e mora sozinho. Recebe proposta de gastrectomia extensa em uma semana.
+
+**Hipótese diagnóstica e problema de decisão:** Tumor potencialmente ressecável com risco clínico-nutricional alto, que pode alterar operabilidade e preparo.
+
+**Raciocínio cirúrgico passo a passo:** ECOG aparentemente bom não exclui sarcopenia e fragilidade. O benefício da cirurgia deve ser preservado, mas é razoável avaliar nutrição, suporte, anemia, reserva cardiopulmonar e preabilitação quando não cria atraso perigoso. Idade isolada não é contraindicação automática.
+
+**Exames e interpretação:** Estadiamento completo, avaliação anestésica e geriátrica funcional, triagem nutricional, exames de anemia/ferro, função renal, PFP/cardiologia se indicadas e avaliação social.
+
+**Conduta inicial:** Planejamento multidisciplinar de otimização, nutrição, estratégia ERAS e suporte de alta; discutir extensão da gastrectomia e riscos/alternativas com paciente.
+
+**Seguimento e avaliação de resultados:** Monitorar complicações, reintrodução alimentar, vitaminas conforme segmento, reabilitação e adjuvância.
+
+**Por que este caso importa:** A avaliação perioperatória adequada não se limita ao ECOG ou à idade cronológica.
+
+### Caso 10 — Hematoma ou sangramento após cirurgia oncológica
+
+**Apresentação:** Paciente de 55 anos, no primeiro dia pós-operatório de colectomia oncológica, apresenta FC 132 bpm, PA 82/48, oligúria, queda de hemoglobina e aumento progressivo de distensão abdominal.
+
+**Hipótese diagnóstica e problema de decisão:** Hemorragia pós-operatória com choque até excluir; diferenciais incluem sepse/hipovolemia não hemorrágica e complicações vasculares.
+
+**Raciocínio cirúrgico passo a passo:** O evento é emergencial, independentemente de a operação ter conseguido R0. A instabilidade exige reconhecimento rápido e controle do problema, sem atrasar reanimação por imagem em paciente muito instável.
+
+**Exames e interpretação:** ABCDE, acesso/hemocomponentes conforme protocolo, exames laboratoriais seriados, avaliação de drenos e leito cirúrgico; imagem se condição permite e muda intervenção.
+
+**Conduta inicial:** Acionar cirurgião/anestesia/equipe de emergência, reanimar e obter controle hemostático cirúrgico/intervencionista conforme fonte. Registrar evento e comunicação, avaliando classificação de complicação após estabilização.
+
+**Seguimento e avaliação de resultados:** Monitorar perfusão, rim, anemia e trombose após estabilização; revisar plano oncológico/adjuvância sem perder segurança.
+
+**Por que este caso importa:** Desfecho imediato depende mais de reconhecer choque do que de conhecer detalhes do estadiamento.
+
+### Caso 11 — Câncer de pulmão com funcionalidade respiratória limitada
+
+**Apresentação:** Homem de 68 anos com adenocarcinoma pulmonar aparentemente inicial e ressecável na TC tem DPOC grave, dispneia em pequenas caminhadas e necessidade ocasional de oxigênio. Família insiste que remoção total do pulmão é a única cura possível.
+
+**Hipótese diagnóstica e problema de decisão:** Tumor anatomicamente ressecável, mas risco de operabilidade possivelmente desfavorável para cirurgia ampla; alternativas locais podem ser relevantes.
+
+**Raciocínio cirúrgico passo a passo:** A decisão depende de PFP, avaliação de reserva pulmonar prevista após ressecção, cardiopulmonar e estádio. A margem adequada precisa ser combinada com função residual. Alguns pacientes podem receber ressecção menor ou radioterapia estereotáxica conforme elegibilidade, não pneumonectomia automática.
+
+**Exames e interpretação:** Histologia, estadiamento com imagem apropriada, testes de função pulmonar/DLCO e estimativa pós-operatória, avaliação anestésica e cardiopulmonar.
+
+**Conduta inicial:** Tumor board com cirurgia torácica, pneumologia e radioterapia para discutir melhor estratégia e consentimento informado; reabilitação pulmonar e cessação do tabagismo.
+
+**Seguimento e avaliação de resultados:** Monitorar dispneia, função, qualidade de vida e controle oncológico por modalidade escolhida.
+
+**Por que este caso importa:** Ressecabilidade e operabilidade são eixos independentes.
+
+### Caso 12 — Margem microscópica positiva e plano adjuvante
+
+**Apresentação:** Mulher de 50 anos foi submetida a ressecção de tumor de cabeça e pescoço com intenção curativa. Laudo definitivo revela margem microscópica comprometida, sem doença macroscópica residual no campo operatório.
+
+**Hipótese diagnóstica e problema de decisão:** Ressecção R1, com risco aumentado de falha local, cujo manejo depende de histologia, sítio, estádio e possibilidade de resgate.
+
+**Raciocínio cirúrgico passo a passo:** R1 não é R2; a necessidade de reexcisão versus radioterapia/quimiorradioterapia deve ser avaliada conforme tumor e anatomia. Reoperar em região crítica pode causar disfunção de fala/deglutição. A cirurgia original não vira 'R0' porque não há tumor visível.
+
+**Exames e interpretação:** Revisão anatomopatológica e orientação da peça, imagem pós-operatória quando indicada, situação nodal e condição funcional, revisão de opções de preservação de função.
+
+**Conduta inicial:** Discussão em equipe especializada para tratamento complementar, reexcisão quando factível/beneficiosa ou outro plano; explicar riscos e documentar objetivo.
+
+**Seguimento e avaliação de resultados:** Reabilitação de fala/deglutição, vigilância de recidiva e complicações de RT ou cirurgia.
+
+**Por que este caso importa:** A consequência da margem depende do tumor e do risco funcional, não de uma regra universal de centímetros.
+
+
+## 36. Questões autorais de cirurgia oncológica — 18 gabaritos discutidos
+
+Questões inéditas no estilo ENAMED e residência, com alternativas plausíveis, análise por alternativa e mini-revisão de alto rendimento.
+
+### Questão 1 — Definição de R0
+
+**Enunciado:** No relatório de cirurgia oncológica, qual definição descreve ressecção R0?
+
+**A)** Tumor macroscópico residual visível.
+
+**B)** Margens livres de tumor residual microscópico detectável segundo critérios aplicáveis.
+
+**C)** Cirurgia sem anestesia geral.
+
+**D)** Ausência definitiva de risco de recidiva.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Corresponde a R2.
+- **Alternativa B:** R0 define ausência de resíduo tumoral microscopicamente detectável.
+- **Alternativa C:** Não depende de modalidade anestésica.
+- **Alternativa D:** Micrometástases podem persistir apesar de R0.
+
+**Mini-revisão:** R0/R1/R2 descrevem resíduo tumoral, não o estádio, a intenção isolada ou a sobrevida.
+
+### Questão 2 — Definição de R1 e R2
+
+**Enunciado:** Paciente teve margem microscópica positiva, mas não há tumor macroscópico residual. Qual classificação é mais apropriada?
+
+**A)** R0.
+
+**B)** R1.
+
+**C)** R2.
+
+**D)** M1 obrigatoriamente.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Margem microscópica positiva não é R0.
+- **Alternativa B:** R1 designa resíduo microscópico.
+- **Alternativa C:** R2 implica resíduo macroscópico.
+- **Alternativa D:** M1 significa metástase distante em sistemas TNM, não margem local.
+
+**Mini-revisão:** Não converter R1 em R2 por ansiedade clínica; terapia complementar depende do tumor.
+
+### Questão 3 — Biópsia de sarcoma
+
+**Enunciado:** Massa profunda de coxa com 9 cm e crescimento exige qual postura diagnóstica?
+
+**A)** Excisão não planejada como lipoma em qualquer serviço.
+
+**B)** Imagem local apropriada e biópsia com trajeto planejado por equipe de sarcoma.
+
+**C)** Fragmentar lesão e enviar só parte sem orientação.
+
+**D)** Observar indefinidamente sem avaliação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode comprometer margem e planos futuros.
+- **Alternativa B:** RM e core planejadas preservam opções de tratamento.
+- **Alternativa C:** Viola integridade e pode perder informações.
+- **Alternativa D:** Sinais de alerta justificam avaliação.
+
+**Mini-revisão:** A primeira biópsia é parte do tratamento futuro em tumores profundos suspeitos.
+
+### Questão 4 — Ressecabilidade versus operabilidade
+
+**Enunciado:** Um tumor pulmonar inicial pode ser removido tecnicamente, mas paciente tem DPOC grave e reserva respiratória muito baixa. O problema prioritário é:
+
+**A)** Ressecabilidade anatômica exclusivamente.
+
+**B)** Operabilidade clínica e benefício, além da ressecabilidade.
+
+**C)** Presença obrigatória de metástase.
+
+**D)** Ausência de indicação de discutir alternativa radioterápica.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O tumor pode ser ressecável e operação ainda ser insegura.
+- **Alternativa B:** A reserva determina risco e opções.
+- **Alternativa C:** Função pulmonar não implica metástase.
+- **Alternativa D:** Alternativas não cirúrgicas podem ter papel.
+
+**Mini-revisão:** Três conceitos separados: ressecável, operável e benéfico.
+
+### Questão 5 — Linfonodo sentinela
+
+**Enunciado:** Segundo NCI, biópsia do linfonodo sentinela é utilizada sobretudo em:
+
+**A)** Todos os sarcomas e GIST de rotina.
+
+**B)** Câncer de mama e melanoma em pacientes selecionados.
+
+**C)** Toda neoplasia do pâncreas.
+
+**D)** Todos os linfomas como cirurgia curativa.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Linfadenectomia não é rotina em GIST e maioria dos sarcomas.
+- **Alternativa B:** Essas são indicações clássicas conforme estágio e critérios.
+- **Alternativa C:** Não existe universalidade de sentinela no pâncreas.
+- **Alternativa D:** Linfoma é frequentemente sistêmico e biópsia para diagnóstico é diferente.
+
+**Mini-revisão:** Sentinela é método de estadiamento em tumores selecionados, não obrigação em toda cirurgia.
+
+### Questão 6 — GIST e linfonodos
+
+**Enunciado:** Em GIST gástrico localizado típico sem linfonodos suspeitos, qual princípio é mais adequado?
+
+**A)** Linfonodectomia D2 extensa como regra universal.
+
+**B)** Ressecção íntegra sem ruptura com margens adequadas; linfadenectomia não é rotineira.
+
+**C)** Morcelação livre intraperitoneal.
+
+**D)** Radioterapia adjuvante em todos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É estratégia de adenocarcinoma gástrico, não padrão de GIST.
+- **Alternativa B:** Integridade tumoral é central.
+- **Alternativa C:** Pode disseminar células tumorais.
+- **Alternativa D:** Terapia depende de subtipo/risco; não é universal.
+
+**Mini-revisão:** Histologia define técnica e padrão de disseminação.
+
+### Questão 7 — TNM clínico e patológico
+
+**Enunciado:** Qual afirmação distingue cTNM de pTNM?
+
+**A)** cTNM depende apenas de relatório cirúrgico final.
+
+**B)** cTNM usa avaliação antes do tratamento; pTNM inclui informação patológica de ressecção.
+
+**C)** Ambos são idênticos sempre.
+
+**D)** A letra N nunca se refere a linfonodos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Isso seria informação patológica.
+- **Alternativa B:** É a diferença essencial.
+- **Alternativa C:** Resposta e amostragem podem alterar estádio.
+- **Alternativa D:** N descreve linfonodos regionais nas neoplasias que usam TNM.
+
+**Mini-revisão:** O prefixo y identifica contexto após terapia prévia em sistemas aplicáveis.
+
+### Questão 8 — Grau versus estádio
+
+**Enunciado:** Laudo registra adenocarcinoma de alto grau, com pequena lesão confinada ao órgão, sem metástases. Qual interpretação é correta?
+
+**A)** Alto grau significa necessariamente M1.
+
+**B)** Grau descreve biologia/diferenciação; estádio descreve extensão anatômica.
+
+**C)** Toda histologia de alto grau exige exenteração.
+
+**D)** Estadiamento fica desnecessário.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Agressividade não é metástase definida.
+- **Alternativa B:** São variáveis diferentes.
+- **Alternativa C:** Extensão cirúrgica depende de tumor/estádio.
+- **Alternativa D:** Ambas as informações são importantes.
+
+**Mini-revisão:** Biologia tumoral pode alterar tratamento mesmo quando o T é pequeno.
+
+### Questão 9 — Neoadjuvância
+
+**Enunciado:** Em câncer de reto localmente avançado com margem mesorretal ameaçada na RM, qual próximo passo é mais apropriado?
+
+**A)** Operar imediatamente sem discutir imagem.
+
+**B)** Avaliar estratégia neoadjuvante em tumor board antes da excisão mesorretal.
+
+**C)** Dispensar avaliação linfonodal.
+
+**D)** Aplicar margens de melanoma ao reto.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode aumentar R1 e morbidade.
+- **Alternativa B:** A sequência multimodal depende da RM e fatores de risco.
+- **Alternativa C:** Estadiamento regional importa.
+- **Alternativa D:** Critérios de margens não são intercambiáveis.
+
+**Mini-revisão:** A ordem do tratamento oncológico pode ser tão importante quanto a técnica.
+
+### Questão 10 — Resposta radiológica completa
+
+**Enunciado:** Após neoadjuvância para câncer de mama, não existe massa palpável nem imagem suspeita. É correto dizer:
+
+**A)** Há garantia de resposta patológica completa.
+
+**B)** A avaliação clínica/radiológica não prova ausência de tumor residual e a cirurgia segue protocolo.
+
+**C)** Não é preciso revisar biópsia original.
+
+**D)** O status nodal prévio perdeu importância.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode haver doença residual microscópica.
+- **Alternativa B:** A resposta patológica depende de peça e critérios específicos.
+- **Alternativa C:** Histologia original e clip influenciam plano.
+- **Alternativa D:** A estratégia axilar considera doença anterior e resposta.
+
+**Mini-revisão:** Complete response clínica não equivale automaticamente a pCR.
+
+### Questão 11 — Invasão contígua
+
+**Enunciado:** Tumor maligno ressecável está aderido a órgão adjacente, com invasão suspeita. Qual princípio pode evitar margem comprometida?
+
+**A)** Separar à força o tumor para poupar qualquer tecido.
+
+**B)** Planejar ressecção em bloco das estruturas envolvidas quando oncologicamente indicado.
+
+**C)** Romper cápsula intencionalmente.
+
+**D)** Desconsiderar histologia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode entrar no tumor e deixar resíduo.
+- **Alternativa B:** Ressecção em bloco pode preservar integridade e margem.
+- **Alternativa C:** Ruptura pode disseminar lesão.
+- **Alternativa D:** Histologia define critérios de margem.
+
+**Mini-revisão:** A preservação de órgão é desejável quando segura, mas não à custa de ressecção inadequada.
+
+### Questão 12 — Avaliação do idoso frágil
+
+**Enunciado:** Paciente de 79 anos com câncer localizado tem sarcopenia e desnutrição apesar de IMC de 27. Qual conduta?
+
+**A)** Considerar IMC alto como prova de boa reserva.
+
+**B)** Avaliar fragilidade, nutrição, anemia e capacidade funcional, otimizar quando possível sem atraso indevido.
+
+**C)** Negar toda cirurgia pela idade.
+
+**D)** Exigir quimioterapia antes de qualquer nutrição.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Sarcopenia pode coexistir com sobrepeso.
+- **Alternativa B:** Avaliação perioperatória específica pode reduzir riscos.
+- **Alternativa C:** Idade isolada não é contraindicação absoluta.
+- **Alternativa D:** Não existe essa sequência universal.
+
+**Mini-revisão:** ECOG, ASA, fragilidade e risco nutricional medem dimensões diferentes.
+
+### Questão 13 — ERAS e nutrição
+
+**Enunciado:** Sobre recuperação aprimorada e diretriz ESPEN 2025, qual é a correta?
+
+**A)** Jejum prolongado sempre é benéfico.
+
+**B)** Nutrição integrada e alimentação/mobilização precoces quando seguras fazem parte de medidas de recuperação.
+
+**C)** Todos precisam de TPN indiscriminadamente.
+
+**D)** ERAS dispensa controle de choque/infecção.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Jejuns excessivos podem prejudicar recuperação.
+- **Alternativa B:** É princípio central de ESPEN/ERAS.
+- **Alternativa C:** Nutrição parenteral depende da indicação.
+- **Alternativa D:** ERAS não substitui segurança clínica.
+
+**Mini-revisão:** Protocolo de recuperação é ajustado ao procedimento e contraindicações.
+
+### Questão 14 — Cirurgia paliativa
+
+**Enunciado:** Paciente com carcinomatose difusa e múltiplas obstruções tem ECOG 4. Antes de indicar laparotomia, deve-se priorizar:
+
+**A)** Operar todo paciente com tumor, independentemente de risco.
+
+**B)** Definir objetivo de alívio, prognóstico, alternativas e chance de benefício proporcional.
+
+**C)** Prometer sobrevida curativa pela cirurgia.
+
+**D)** Ignorar preferência e sintomas.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode gerar grande dano sem benefício.
+- **Alternativa B:** A decisão paliativa compara alívio provável e carga do procedimento.
+- **Alternativa C:** Doença disseminada não permite promessa universal.
+- **Alternativa D:** Objetivos do paciente são fundamentais.
+
+**Mini-revisão:** Paliação não é desistência; é escolha de intervenção proporcional.
+
+### Questão 15 — Complicações Clavien–Dindo
+
+**Enunciado:** Paciente pós-operatório precisa de intervenção radiológica sem anestesia geral para drenar coleção. Qual grau Clavien–Dindo orientador?
+
+**A)** I.
+
+**B)** II.
+
+**C)** IIIa.
+
+**D)** V.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Não houve apenas desvio sem intervenção.
+- **Alternativa B:** Intervenção invasiva excede Grau II.
+- **Alternativa C:** IIIa corresponde a intervenção sem anestesia geral.
+- **Alternativa D:** V é óbito.
+
+**Mini-revisão:** Clavien–Dindo classifica complicação, não estadiamento tumoral ou ASA.
+
+### Questão 16 — Segurança cirúrgica OMS
+
+**Enunciado:** A lista de segurança cirúrgica da OMS estrutura verificações em quais momentos?
+
+**A)** Somente antes de alta hospitalar.
+
+**B)** Antes da indução, antes da incisão e antes de sair da sala operatória.
+
+**C)** Apenas na consulta pré-anestésica.
+
+**D)** Somente após laudo de patologia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O checklist atua em diferentes momentos do procedimento.
+- **Alternativa B:** São as três pausas centrais.
+- **Alternativa C:** A consulta pré-anestésica é importante, porém insuficiente.
+- **Alternativa D:** Patologia final ocorre após a operação.
+
+**Mini-revisão:** Identidade, sítio, alergias, antibiótico, amostras e comunicação devem ser verificados.
+
+### Questão 17 — Hemorragia pós-operatória
+
+**Enunciado:** No primeiro dia após colectomia, paciente com taquicardia, hipotensão, oligúria e queda de Hb exige:
+
+**A)** Consulta eletiva em semanas.
+
+**B)** Reanimação ABCDE e avaliação imediata de sangramento/choque com controle de fonte.
+
+**C)** Alta precoce para reduzir infecção.
+
+**D)** Esperar PET-CT oncológico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A instabilidade é ameaça imediata.
+- **Alternativa B:** A prioridade é perfusão e controle do problema.
+- **Alternativa C:** Alta seria insegura.
+- **Alternativa D:** PET-CT não trata choque.
+
+**Mini-revisão:** Complicações agudas têm precedência sobre discutir adjuvância.
+
+### Questão 18 — Metastasectomia hepática
+
+**Enunciado:** Após cirurgia de cólon, paciente apresenta duas metástases hepáticas e nenhuma outra doença demonstrada. Qual raciocínio?
+
+**A)** Metástase proíbe toda cirurgia.
+
+**B)** Avaliar possibilidade de controle de todos os sítios, função hepática, biologia e benefício de metastasectomia em equipe.
+
+**C)** Retirar apenas uma metástase sem estadiar.
+
+**D)** Realizar cirurgia sem avaliar tratamentos sistêmicos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Há cenários oligometastáticos selecionados para cirurgia.
+- **Alternativa B:** É análise correta e individualizada.
+- **Alternativa C:** Deixar doença ativa sem estratégia reduz benefício.
+- **Alternativa D:** Terapia sistêmica e cirurgia podem ser complementares.
+
+**Mini-revisão:** Tratamento de oligometástase exige seleção, não automatismo.
+
+
+## 37. Curadoria de imagens premium — 18 candidatas
+
+Esta camada visual é uma **lista de candidatas** e não indica arquivos já inseridos ou licença obtida. A seleção deve privilegiar imagens reais de RM, TC, US, endoscopia e patologia quando agregam raciocínio; os demais recursos devem ser infográficos e diagramas originais.
+
+| Nº | Figura candidata | Função | Fonte/condição |
+|---|---|---|---|
+| 1 | Anatomia de progressão tumoral epitelial | Esquema de epitélio normal → displasia → carcinoma in situ → invasão estromal. | Ilustração original LURIA, revisão anatomopatológica. |
+| 2 | Rotas de disseminação do câncer | Fluxograma linfática, hematogênica, perineural, contígua e transcelômica. | Diagrama autoral com exemplos por tumor. |
+| 3 | Imagem de sarcoma profundo em RM | Massa profunda de coxa com relação a fáscia, vasos e trajeto planejado de biópsia. | RM clínica real autorizada de instituição especializada; legenda com limitações. |
+| 4 | Core biópsia guiada por ultrassom | Imagem de agulha e alvo, destacando integridade de planos. | Imagem de procedência hospitalar com licença ou diagrama próprio. |
+| 5 | Diagrama TNM cT/cN/cM vs pT/pN/pM | Quadro antes versus depois da cirurgia e prefixo y pós-neoadjuvância. | Gráfico original de conceitos sem copiar tabelas AJCC protegidas. |
+| 6 | R0/R1/R2 em peça cirúrgica | Esquema de tumor e margem marcada a tinta com três condições de resíduo. | Ilustração original com revisão de patologia. |
+| 7 | Margem circunferencial no câncer de reto | RM pélvica mostrando relação tumor–fáscia mesorretal. | RM real institucional e revisão de radiologista abdominal. |
+| 8 | Linfonodo sentinela | Mapa de drenagem linfática e primeiro linfonodo em mama/melanoma. | Diagrama original, citar NCI. |
+| 9 | Excisão total do mesorreto | Plano anatômico de mesorreto e ressecção retal. | Ilustração cirúrgica licenciada ou original. |
+| 10 | Massa submucosa GIST | TC/endoscopia de lesão gástrica com exemplos de localização. | Exame real e laudo autorizado; não usar como imagem de adenocarcinoma. |
+| 11 | Linha do tempo neoadjuvante → cirurgia → adjuvante | Mapa de decisão por biologia, estágio e resposta. | Diagrama autoral transversal a tumores. |
+| 12 | Avaliação ressecabilidade x operabilidade | Matriz 2×2 com cenários tumor localizado, frágil, irressecável ou doença sistêmica. | Infográfico original sem dados clínicos reais. |
+| 13 | ERAS: jornada perioperatória | Pré-habilitação, nutrição, segurança, analgesia, alimentação e mobilização. | Arte original baseada ESPEN 2025 / ERAS Society. |
+| 14 | Checklist OMS para cirurgia segura | Diagrama de três pausas e principais verificações. | Criar esquema autoral resumido e creditar OMS; se reproduzir checklist integral, observar condições de reprodução. |
+| 15 | Manejo obstrução intestinal maligna | Fluxo instabilidade/perfuração → controle de foco; estável → tratamento proporcional. | Fluxograma original revisado por cirurgia/oncologia. |
+| 16 | Clavien–Dindo | Quadro comparativo I–V com exemplos de tratamento necessários. | Arte autoral com referência original apropriada. |
+| 17 | Imagem de metástases hepáticas limitadas | TC/RM com duas lesões e mapa do fígado remanescente. | Exame real de serviço hepatobiliar autorizado. |
+| 18 | Seguimento oncológico após cirurgia | Mapa patologia final → adjuvância → reabilitação → vigilância por tumor. | Diagrama original para revisão da aula. |
+
+### Regras para integração das imagens
+
+1. Verificar procedência, licença de reprodução e autorização de uso em plataforma educacional/comercial.
+2. Preservar contexto e achados verdadeiros: não atribuir diagnóstico a exame sem confirmação de origem.
+3. Converter imagens aprovadas a WebP com nitidez suficiente e orçamento de mídia LURIA; radiologia não deve perder detalhes finos.
+4. Criar alt text que descreva conteúdo e limite de cada exame; cores não podem ser o único modo de distinguir margens ou caminhos.
+5. Conferir figuras em desktop e PWA, legibilidade ao ampliar, orientação de peça, escalas e responsividade.
+6. Marcar esquemas como ilustrações, não exames de pacientes.
+7. Não usar fotografias identificáveis ou amostras clínicas sem permissão adequada.
+8. Vincular figura ao capítulo em que resolve uma dúvida, não em bloco decorativo.
+
+## 38. Auditoria da Aula 172 e trabalho restante
+
+**Produção concluída nesta etapa:** 38 seções editoriais, com princípios de oncologia, biópsia, patologia, TNM, margens R0/R1/R2, linfonodos, técnica por órgão, ERAS/nutrição, risco pré-operatório, complicações, metastasectomia, cirurgia paliativa, seguimento e ética; **12 casos**, **18 questões comentadas por alternativa** e **18 propostas de imagens**.
+
+### Riscos de desatualização e limites
+
+- A escolha cirúrgica específica por tumor e os PCDTs/DDT mudam em atualizações; validar antes de publicar, inclusive versões finais após consultas públicas de 2026.
+- Extensão de margens e indicação de linfonodo sentinela não são universais; verificar pelo tumor, estádio e terapia prévia.
+- ERAS e ESPEN aplicam práticas por especialidade e situação clínica, não ordem para alimentar precocemente todo paciente instável.
+- Avaliação da operabilidade e consentimento exige abordagem individual e revisão de segurança/anestesia.
+- A lista visual ainda não constitui seleção/licenciamento, nem o arquivo Markdown está integrado ao renderizador da LURIA.
+- Regras sobre acesso ao tratamento no SUS devem ser confirmadas com leis e normativas atuais do serviço.
+
+### Checklist de publicação
+- [x] Diagnóstico, biópsia e anatomopatologia, estadiamento e margem.
+- [x] Linfonodos, princípio de cirurgia conservadora, ressecção em bloco e preservação de órgãos.
+- [x] Neoadjuvância, adjuvância, metastasectomia e paliativos.
+- [x] Nutrição, sarcopenia, reabilitação, ERAS e cirurgia segura.
+- [x] Doze casos clínicos de decisão multidisciplinar.
+- [x] Dezoito questões comentadas individualmente.
+- [x] Dezoito imagens candidatas com utilidade e condição de fonte.
+- [ ] Revisão por cirurgia oncológica, anatomopatologia e anestesiologia.
+- [ ] Verificação de PCDTs/DDT vigentes por tumor e contraindicações.
+- [ ] Aprovação/licenças/otimização de imagens.
+- [ ] Integração ao HTML/content.json da plataforma sem duplicar temas.
+- [ ] Teste responsivo e visual desktop/PWA, indexação e acessibilidade.
+- [ ] Revisão científica e editorial independente, incluindo resultado de casos e alternativas.
+
+**Status:** rascunho amplo e autoral salvo em repositório; não é publicação médica certificada na plataforma.
