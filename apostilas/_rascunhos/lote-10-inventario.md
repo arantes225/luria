@@ -1,15 +1,23 @@
 # LURIA — Lote 10: inventário e plano editorial (apostilas 204–225)
 
-**Data:** 15/10/2026. **Branch:** `editorial/lote-10-apostilas-20261015`. **Situação:** inventário e plano de produção; **NÃO significa 22 apostilas prontas nem autoriza publicação**.
+**Data:** 15/10/2026. **Branch:** `editorial/lote-10-apostilas-20261015`. **Situação:** inventário e produção parcial em andamento — **204 e 205 possuem manuscritos originais não publicados; NÃO significa 22 apostilas prontas nem autoriza publicação**.
 
 **Base:** `assets/js/apostilas-lotes-225.js` e `assets/js/apostilas-editorial-enamed-2026.js`, na branch de auditoria ENAMED. Preservam-se 260 temas originais e os acréscimos próprios dos lotes 11–13. Nenhum tema de lote posterior deve ser antecipado ou sobrescrito.
+
+## Progresso verificável — 15/10/2026
+
+- **Aula 204:** `apostilas/_rascunhos/lote-10-204-vasculites-pediatricas-kawasaki.md`, 88.766 caracteres Markdown, 8 casos e 12 questões. Aborda AIJ, Kawasaki, IgAV e febre reumática. **Não publicado:** faltam benchmarking específico pediátrico, imagens, revisão profissional independente e testes.
+- **Aula 205:** `apostilas/_rascunhos/lote-10-205-dor-pelvica-torcao-anexial.md`, 82.642 caracteres Markdown, 8 casos, 12 questões, cinco fluxos e 10 propostas de imagens (sem aprovação). Conteúdo da triagem de dor pélvica, torção, ectópica/GLD, cistos hemorrágicos, DIP/ATO e diferenciais não ginecológicos. **Não publicado:** faltam benchmarking específico de torção, imagens, revisão profissional independente e testes.
+- **206–225:** seguem no planejamento. Não confundir a existência de notas na matriz com manuscritos finalizados.
+- Extensão acima de 60 mil **brutos** não equivale automaticamente a 60 mil caracteres didáticos úteis; métricas só serão consideradas aprovadas após auditoria qualitativa e scripts do repositório.
+- Nenhuma imagem clínica nova foi embutida ou publicada. Nenhum deploy foi realizado.
 
 ## Matriz-mestra
 
 | Nº | Área | Título oficial | Prioridade / status inicial |
 |---:|---|---|---|
-| 204 | Pediatria | Vasculites pediátricas e doença de Kawasaki | Alta/Diamante — **planejada, não certificada** |
-| 205 | Ginecologia e Obstetrícia | Dor pélvica aguda e torção anexial | Baixa/essencial — **planejada, não certificada** |
+| 204 | Pediatria | Vasculites pediátricas e doença de Kawasaki | Alta/Diamante — **manuscrito ~88,8 mil caracteres; revisão pendente** |
+| 205 | Ginecologia e Obstetrícia | Dor pélvica aguda e torção anexial | Baixa/essencial — **manuscrito ~82,6 mil caracteres; revisão pendente** |
 | 206 | Ginecologia e Obstetrícia | Miomas, pólipos e patologia uterina benigna | Média — **planejada, não certificada** |
 | 207 | Ginecologia e Obstetrícia | Prolapso genital e incontinência urinária feminina | Diamante/Alta — **planejada, não certificada** |
 | 208 | Ginecologia e Obstetrícia | Gestação gemelar e acompanhamento de alto risco | Alta — **planejada, não certificada** |
