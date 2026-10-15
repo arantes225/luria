@@ -19,7 +19,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 259 | Sistemas de Informação em Saúde e qualidade dos dados | 30.563 | 16 | Sim | Sim | Rascunho parcial |
 | 260 | Biossegurança e prevenção de infecções relacionadas à assistência | 59.437 | 26 | Sim | Sim | Rascunho ampliado, parcial |
 | 271 | Endocrinologia pediátrica | 29.109 | 14 | Sim | Sim | Rascunho parcial |
-| 272 | Fibrose cística | 41.768 | 22 | Sim | Sim | Rascunho parcial |
+| 272 | Fibrose cística | 65.509 | 26 | Sim | Sim | Rascunho ampliado, parcial |
 | 273 | Imunodeficiências na infância | 38.184 | 19 | Sim | Sim | Rascunho parcial |
 | 274 | Ortopedia pediátrica | 29.163 | 15 | Sim | Sim | Rascunho parcial |
 | 275 | Emergências de cirurgia pediátrica | 29.986 | 19 | Sim | Sim | Rascunho parcial |
@@ -27,7 +27,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 279 | Crescimento fetal reduzido e aumentado | — (HTML existente) | — | — | — | Auditoria preliminar |
 | 280 | Alterações fisiológicas da gestação | — (HTML existente) | — | — | — | Auditoria preliminar |
 
-**Total bruto dos 17 manuscritos:** 595.623 caracteres. **Média bruta:** 35.037.
+**Total bruto dos 17 manuscritos:** 619.364 caracteres. **Média bruta:** 36.433.
 
 *Os campos Casos? e Questões? refletem busca textual inicial de blocos, não contagem, profundidade ou aprovação científica. Quando constar “Rever”, pode ser diferença de título; conferir manualmente.*
 
@@ -53,3 +53,7 @@ Os manuscritos permanecem em `apostilas/_rascunhos/` e documentos administrativo
 ## Continuidade — 15/10/2026, #260
 
 Aprofundado o manuscrito #260 com 25.159 caracteres brutos originais, nos blocos 15A–15E: implementação de medidas seguras, oportunidades de higiene das mãos e auditoria, diagnóstico de bacteremia versus critérios de vigilância, cateter em diálise, cenários neonatal/obstétrico/APS, denominadores e interpretação crítica de indicadores, investigação de surtos e exercícios de integração. Benchmark parcial *Infecção de corrente sanguínea* foi efetivamente relido no Drive; contrastaram-se afirmações absolutas com fontes Anvisa/MS atuais. Referências oficiais 2025/2026 foram adicionadas, mas **não há homologação da etapa zero integral, da revisão médica nem dos 60.000 caracteres didáticos úteis**. O arquivo permanece em `_rascunhos`; nenhuma imagem foi publicada.
+
+## Continuidade — 15/10/2026, #272
+
+Aprofundado o manuscrito #272 com 23.741 caracteres brutos originais nos blocos 14A–14D, abrangendo raciocínio em triagem neonatal/teste do suor/genótipo, CRMS/CFSPID, microbiologia e função respiratória, ABPA e micobactérias não tuberculosas, hemoptise, pneumotórax, diabetes relacionado à fibrose cística, elegibilidade e regras de acesso a moduladores CFTR em 2026, além de quadro de decisões. Foram efetivamente relidos no Drive dois materiais pediátricos correlatos, mas nenhum comparador integral de fibrose cística foi localizado. Consulta pública Conitec não foi confundida com incorporação ao SUS. Fontes oficiais e de sociedades médicas indicadas no próprio rascunho. **Etapa zero integral, 60.000 caracteres didáticos úteis, validação científica especializada, imagens aprovadas, auditoria técnica e publicação ainda pendentes**. Somente alteração em branch editorial, sem afetar livros publicados.
