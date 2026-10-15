@@ -352,6 +352,67 @@ As opções não são escolhidas por “maior potência universal”. História 
 
 Registre linha de base: crises nos doze meses anteriores, atendimentos de emergência, cursos de prednisona, ACT/ACQ, espirometria, faltas ao trabalho e qualidade de vida. O PCDT recomenda reavaliação após alguns meses e acompanhamento continuado, com decisão sobre manter ou interromper baseada em redução de exacerbações, redução de corticoide oral e melhora de controle. Alguns pacientes melhoram muito o número de crises sem normalizar inteiramente VEF1; isso pode ser benefício importante. Se não há resposta clínica, reconsiderar diagnóstico, adesão, fenótipo e outro tratamento. Não suspender corticosteroide sistêmico crônico abruptamente, devido ao risco de supressão adrenal.
 
+
+### 7.2 Asma difícil de tratar e asma grave não são a mesma categoria
+
+Em um atendimento de seguimento, o primeiro erro é utilizar a quantidade de medicamentos como diagnóstico de gravidade. Uma pessoa pode receber corticosteroide inalatório (CI) em dose alta associado a broncodilatador beta-2 agonista de longa duração (LABA) e continuar com sintomas porque o diagnóstico original está incorreto, o dispositivo não é utilizado corretamente ou as doses são frequentemente omitidas. **Asma difícil de tratar** descreve esse cenário amplo: sintomas ou exacerbações persistentes apesar da prescrição de tratamento controlador intensivo, ou necessidade de tratamento intenso para conservar o controle. **Asma grave** é o subconjunto no qual a doença permanece não controlada **apesar da adesão ao tratamento otimizado, da técnica correta e da abordagem dos fatores contribuintes**, ou volta a piorar quando se tenta reduzir esse tratamento.
+
+O enquadramento de asma grave é, portanto, **retrospectivo**: exige verificar o que acontece após corrigir fatores modificáveis. Duas exacerbações que demandaram corticosteroide oral no último ano ou uma internação por exacerbação grave representam sinal de risco importante, mas não provam isoladamente que exista asma grave refratária. A avaliação exige distinguir controle atual, risco futuro e intensidade real do tratamento recebido.
+
+| Questão do especialista | Evidência que precisa ser procurada | Interpretação e consequência |
+| --- | --- | --- |
+| A doença é de fato asma? | História de sintomas variáveis e evidência objetiva de limitação variável do fluxo, sempre que possível | Diagnóstico impreciso pode levar a escalonamento inadequado; considerar obstrução laríngea induzível, DPOC, insuficiência cardíaca e outras causas. |
+| O tratamento chega ao pulmão? | Demonstração prática da técnica, dispositivo, capacidade inspiratória, coordenação, doses disponíveis e acesso financeiro | Se técnica ou adesão estão ruins, ainda não se concluiu resistência ao tratamento. |
+| Há fatores que mantêm crises? | Tabagismo/vape, exposições ocupacionais, rinite, sinusite/pólipos, obesidade, apneia obstrutiva do sono e medicamentos agravantes | Tratar a causa específica pode modificar profundamente o prognóstico. |
+| O controle continua insuficiente após otimização? | ACT ou ACQ seriados, exacerbações e uso de corticosteroide oral, espirometria e registro de intervenções | Persistência favorece avaliação especializada de asma grave e fenotipagem; deve haver documentação longitudinal. |
+| Existe indicação real de biológico? | Fenótipo, exacerbações, biomarcadores, idade, contraindicações, acesso e critérios brasileiros vigentes | O resultado de IgE, FeNO ou eosinófilos isoladamente não autoriza uma receita universal. |
+
+**Microalgoritmo autoral de investigação:** confirmar a doença → conferir entrega efetiva do tratamento → buscar agravantes e diferenciais → otimizar abordagem e reavaliar longitudinalmente → classificar a gravidade real → fenotipar → considerar tratamento adicional em centro de referência. Em um episódio agudo grave, esse itinerário longitudinal **não atrasa** suporte de emergência: a avaliação de refratariedade acontece depois de estabilizar o risco imediato.
+
+### 7.3 Fenótipos e endótipos: interpretar eosinófilos, IgE e FeNO sem confundir conceitos
+
+O fenótipo descreve características observáveis (idade de início, atopia, eosinofilia, pólipos nasais, crises desencadeadas por anti-inflamatórios); o endótipo se refere aos mecanismos biológicos subjacentes. A inflamação tipo 2 (T2) envolve circuitos imunológicos associados, entre outros, a IL-4, IL-5 e IL-13. Esses mecanismos se sobrepõem: não é possível traduzir a doença de um indivíduo inteiro por apenas um exame de sangue.
+
+**Eosinófilos sanguíneos:** a concentração oscila ao longo do tempo e pode ficar transitoriamente baixa após corticosteroides sistêmicos. Em pessoa com histórico coerente de exacerbações eosinofílicas, um único resultado baixo colhido após prednisona não basta para decretar fenótipo não T2. A investigação também deve excluir causas alternativas de eosinofilia, como parasitoses, reações medicamentosas e doenças sistêmicas. Eosinofilia muito acentuada, sintomas neuropáticos, púrpura ou comprometimento de órgãos exigem considerar diagnósticos como granulomatose eosinofílica com poliangiite, e não apenas indicar anti-IL-5.
+
+**IgE total e sensibilização:** a IgE total pode ser elevada em atopia e em outras condições. Para asma alérgica grave candidata a anti-IgE, importa a correlação entre história e sensibilização documentada a aeroalérgenos, além do peso e da faixa de IgE da tabela de posologia do produto. Ter IgE elevada sem doença respiratória compatível não define asma alérgica grave.
+
+**FeNO:** trata-se de biomarcador de processos inflamatórios associados à via IL-13; níveis elevados podem apoiar o fenótipo T2 e sugerir resposta a terapias específicas em conjunto com o quadro clínico. A interpretação muda com uso de CI, exposição tabágica, doença de vias aéreas superiores e fatores técnicos. Um FeNO baixo não descarta asma, sobretudo em pessoas sob tratamento anti-inflamatório.
+
+A GINA 2026 usa, para **suspeitar de inflamação T2 persistente em asma descontrolada sob CI em dose alta**, exemplos de eosinófilos sanguíneos a partir de 150 células/µL, FeNO a partir de 20 ppb, eosinófilos no escarro a partir de 2% ou história claramente relacionada a alérgeno. **Esses pontos são sinais de avaliação, NÃO limiares universais de elegibilidade ou de liberação pelo SUS.** Critérios de cada imunobiológico e exigências administrativas brasileiras podem ser distintos. Quando clínicamente seguro, histórico de medidas anteriores ou repetição em momento adequado pode recuperar informação mascarada pelo uso recente de corticoide, sem interromper tratamento indispensável só para elevar marcador laboratorial.
+
+A triagem de condições que imitam ou acompanham asma grave é parte do processo: bronquiectasias podem explicar infecção/expectoração crônicas; aspergilose broncopulmonar alérgica pode coexistir com asma e cursar com sensibilização e alterações radiológicas; rinossinusite crônica com pólipos pode modificar escolha terapêutica; intolerância respiratória a anti-inflamatórios não esteroidais demanda história dirigida. Para possíveis helmintíases em pacientes epidemiologicamente expostos, avaliar riscos antes de imunossupressão e terapia adicional, seguindo normas de investigação e tratamento aplicáveis. Nenhum biomarcador deve apagar os diagnósticos diferenciais.
+
+### 7.4 Escolha entre tratamentos adicionais: indicação internacional não equivale à incorporação brasileira
+
+Uma vez confirmada asma grave, a decisão depende da combinação de eventos clínicos e mecanismo provável, e não de uma escala fictícia de “biológicos mais fortes”. O anti-IgE visa o componente alérgico mediado por IgE; as terapias contra IL-5 ou seu receptor atuam no componente eosinofílico; o bloqueio do receptor IL-4 alfa interfere nas vias IL-4/IL-13. Os alvos diferem, e pacientes com vários traços T2 podem potencialmente preencher critérios para mais de uma opção.
+
+A diretriz GINA 2026 também discute **anti-TSLP (tezepelumabe)** como possibilidade internacional para determinados pacientes com asma grave, inclusive quando biomarcadores T2 não estão elevados. O benefício sobre exacerbações foi observado em populações selecionadas; **isso não equivale a afirmar incorporação automática, fornecimento universal ou autorização para a mesma indicação no SUS brasileiro**. Deve-se confrontar separadamente registro sanitário nacional, eventual incorporação Conitec, anexo atualizado do PCDT Asma e critérios da rede local. A apresentação de agentes como reslizumabe ou outros anti-IL-5 de duração prolongada na literatura internacional também não representa, sozinha, disponibilidade pública brasileira.
+
+Em indivíduos com componente T2, alergia verdadeira pode favorecer anti-IgE se os requisitos de dose e sensibilização forem atendidos; exacerbações eosinofílicas podem orientar a discussão sobre anti-IL-5/IL-5R; dermatite atópica e pólipos nasais relevantes podem pesar no julgamento sobre anti-IL-4R alfa. **Os critérios completos incluem gravidade, tratamentos prévios, eventos no último ano e faixa etária**, além dos exames. O impacto na vida da pessoa — custos indiretos de crises, medo de hospitalização e exposição repetida a prednisona — também deve entrar na decisão.
+
+| Situação encontrada | Erro frequente | Conduta de raciocínio |
+| --- | --- | --- |
+| Asma sem controle + técnica muito ruim | Chamar de “refratária” e prescrever biológico imediatamente | Corrigir administração e acesso, documentar uso e reavaliar antes de concluir gravidade resistente. |
+| Eosinófilos baixos após corticosteroide sistêmico | Negar fenótipo T2 para sempre | Recuperar resultados prévios ou repetir quando oportuno e seguro; não suspender proteção essencial por causa de exame. |
+| IgE alta, sem prova de sensibilização clinicamente relevante | Classificar automaticamente como asma alérgica candidata a omalizumabe | Confirmar sensibilização, história, critérios do produto, peso e PCDT. |
+| Repetidas crises apesar de terapia otimizada | Selecionar qualquer biológico pelo menor preço isoladamente | Verificar fenótipo, perfil de eficácia, contraindicações, idade, comorbidades, preferência e elegibilidade. |
+| Anti-TSLP citado na GINA | Considerar que toda recomendação GINA é fornecida no SUS | Diferenciar recomendação científica internacional, registro, incorporação e fluxo de dispensação efetiva. |
+
+O corticosteroide sistêmico de manutenção, quando ainda necessário, merece estratégia rigorosa de redução de danos: avaliar supressão do eixo adrenal, osteoporose, hiperglicemia, infecções, hipertensão, catarata e consequências emocionais. O objetivo é evitar exposição cumulativa desnecessária. Uma redução abrupta após uso crônico pode desencadear insuficiência adrenal; qualquer retirada deve ser individualizada e monitorada.
+
+### 7.5 Avaliar resposta, segurança e redução gradual: a vida depois de iniciar o biológico
+
+Antes da primeira dose, registre uma **linha de base longitudinal** que possa ser comparada: número de exacerbações com necessidade de corticosteroide oral nos últimos doze meses, hospitalizações, idas à emergência, grau de limitação, ACT/ACQ quando disponíveis, espirometria, dose cumulativa de corticosteroide sistêmico, faltas a trabalho/escola, comorbidades T2 e expectativas do paciente. Uma redução de internações pode representar ganho marcante mesmo sem normalização completa da função pulmonar.
+
+Após iniciar imunobiológico, a GINA 2026 orienta **reavaliar aproximadamente em 3–4 meses** e continuar acompanhamento periódico, em geral a cada **3–6 meses**. O plano não deve ser somente repetir hemograma: comparar crises, necessidade de prednisona, controle, função, eventos adversos e qualidade de vida. Resposta parcial pode exigir mais tempo de observação e revisão de fatores associados; ausência persistente de benefício deve motivar reavaliação de diagnóstico, fenótipo, adesão e eventual substituição ou suspensão sob especialista.
+
+**Redução de medicamentos:** em quem respondeu bem, avaliar primeiro redução gradual de corticosteroide oral crônico, com acompanhamento para insuficiência adrenal; depois ponderar outras terapias adicionais conforme segurança. A GINA ressalta que **não se deve eliminar completamente o tratamento contendo CI**. Em tratamento estável, alterações devem ser uma de cada vez, com monitorização subsequente; o desaparecimento de sintomas não é equivalente à cura definitiva. O tempo de permanência e eventual suspensão do imunobiológico dependem de resposta sustentada, risco de recaída e avaliação especializada, não de normalização pontual de eosinófilos.
+
+**Interação com a APS:** o serviço de referência decide tratamento especializado e critérios de fornecimento, mas a UBS precisa acompanhar técnica inalatória, vacinação, adesão, saúde mental, exposição ambiental, plano de ação, intercorrências, monitorização da corticoterapia e rastreio de complicações. Uma apostila que ensina apenas nomes de anticorpos perde a etapa responsável pela maior parte da segurança longitudinal.
+
+**Pulo do Gato:** três perguntas mudam o resultado da questão de prova: o tratamento prescrito foi realmente administrado? Há evidência consistente do fenótipo apesar das flutuações laboratoriais? O biológico citado é recomendação internacional, indicação regulatória nacional ou medicamento incorporado ao PCDT — qual desses níveis o enunciado está perguntando?
+
 ## 8. Populações especiais e comorbidades
 
 ### 8.1 Populações em que a regra geral precisa de adaptação
@@ -709,6 +770,15 @@ Menina de quatro anos, com dermatite atópica e mãe asmática, apresentou três
 Menina de quatro anos tem chiado e tosse fora de resfriados, usa SABA três a quatro dias por semana e precisou de urgência com corticosteroide sistêmico há cinco meses. Está estável hoje; a família relata dúvida sobre como montar o espaçador. **Hipóteses:** asma provável em pré-escolar com risco futuro de exacerbação, além de diagnósticos alternativos conforme anamnese/exame. **Raciocínio:** pela GINA 2026 completa, uso de alívio mais de duas vezes por semana e crise relevante recente favorecem **tratamento controlador diário com CI em baixa dose**, após avaliação clínica adequada; não copiar AIR/MART dos escolares. **Exames:** história de atopia, exposições, sinais de aspiração/doença crônica, avaliação de gravidade e crescimento; exames adicionais somente se indicados. **Conduta:** treinamento de dispositivo com família, plano escrito e ensaio monitorado de CI em apresentação adequada à idade, com retorno para avaliar resposta e segurança; orientar sinais de urgência. **Por que importa:** o fato de ter quatro anos não impede considerar anti-inflamatório controlador, mas muda dispositivo, evidência e esquema.
 
 
+
+### Caso 21 — A “asma grave” que melhorou ao corrigir a técnica inalatória
+
+Mulher de 33 anos com asma documentada, duas idas ao pronto atendimento no último ano e prescrição de CI-LABA em dose alta. Relata piora com exercícios e usa aerossol dosimetrado sem espaçador, acionando o spray depois de terminar a inspiração; também deixa de utilizar manutenção quando melhora. O exame não sugere urgência no momento. **Hipótese:** asma de difícil tratamento com fatores modificáveis importantes, ainda sem demonstração de asma verdadeiramente grave. **Raciocínio:** a prescrição intensiva não equivale à dose efetivamente entregue; a técnica errada e a adesão irregular explicam parte do risco. **Avaliação:** rever diagnóstico funcional, observar técnica, confirmar barreiras de acesso, estimar exacerbações e verificar comorbidades/ambiente. **Conduta:** educação prática com retorno da demonstração pelo paciente, dispositivo compatível, plano escrito, avaliação de adesão e reavaliação do controle. **Por que importa:** escalonar para biológico antes de demonstrar tratamento otimizado pode criar custo e risco sem corrigir a causa principal.
+
+### Caso 22 — Crises apesar de tratamento confirmado: fenotipar sem confundir as regras do SUS
+
+Homem de 46 anos com asma demonstrada por exames, três exacerbações com corticosteroide oral em doze meses apesar de tratamento inalatório otimizado, técnica conferida, doses regulares e cessação tabágica. Possui rinossinusite com pólipos e registros de eosinofilia anteriores à última crise; eosinófilos atuais estão baixos após tratamento sistêmico recente. **Hipótese:** asma grave candidata à fenotipagem especializada T2. **Raciocínio:** o exame atual pode estar suprimido pelo corticoide; os resultados longitudinais e a comorbidade ajudam a definir mecanismos, mas não bastam para liberar qualquer fármaco. **Exames e revisão:** histórico de valores, FeNO e sensibilização quando indicados, avaliação de comorbidades, infecções/parasitoses conforme risco, funções e resposta à terapia. **Conduta:** manter proteção com CI, encaminhar para definir elegibilidade conforme PCDT brasileiro atualizado e discutir opções alinhadas ao fenótipo. Após terapia adicional, acompanhar exacerbações, controle, eventos adversos e redução segura de corticoide sistêmico. **Por que importa:** baixar o número de eosinófilos por prednisona não significa ausência de inflamação T2; recomendar um agente na GINA não garante dispensação pelo SUS.
+
 ## 10. Questões autorais comentadas
 
 ### Questão 1
@@ -963,9 +1033,34 @@ D) Presumir bronquiolite aguda permanente e dispensar seguimento.
 **Gabarito: B.** No capítulo de crianças de até cinco anos, a GINA 2026 recomenda discutir CI controlador quando sintomas são frequentes ou há exacerbação relevante, com acompanhamento de resposta. **A** transporta formulação/estratégia de idade diferente. **C** ignora risco e benefício do controlador. **D** confunde bronquiolite viral do lactente com padrão recorrente de possível asma em pré-escolar. **Mini-revisão:** SABA eventual pode ser suficiente em pré-escolares selecionados da etapa 1, mas uso frequente e crise grave exigem rever necessidade de CI.
 
 
+
+### Questão 26 — Asma difícil de tratar versus asma grave
+
+Paciente com asma previamente documentada e prescrição de CI-LABA em dose alta segue apresentando crises. Na consulta demonstra técnica incorreta e admite omitir várias doses. Qual afirmação é mais adequada?
+
+A) Receber dose alta de CI-LABA já comprova asma grave independentemente de adesão.
+B) Primeiro otimizar técnica, adesão e fatores contribuintes; asma grave exige avaliação após tratamento efetivamente otimizado.
+C) A ausência de FeNO elevado elimina asma e dispensa avaliação funcional.
+D) Toda exacerbação com corticoide oral deve ser tratada exclusivamente com anti-IgE.
+
+**Gabarito: B.** **A:** confunde tratamento prescrito com tratamento administrado e falha farmacológica. **B:** corresponde ao raciocínio de diagnóstico retrospectivo de asma grave após abordagem de fatores modificáveis. **C:** FeNO não é teste único para excluir a doença. **D:** a escolha de terapia adicional depende de gravidade e fenótipo, e não apenas da ocorrência de uma crise. **Mini-revisão:** asma difícil de tratar pode melhorar ao corrigir problemas de técnica, adesão e comorbidades.
+
+### Questão 27 — Fenótipo T2, corticoide sistêmico e contexto brasileiro
+
+Adulto com asma grave bem documentada, crises recorrentes e eosinofilia prévia apresenta contagem baixa logo após prednisona. A diretriz internacional menciona anti-TSLP entre terapias possíveis. Qual decisão é cientificamente e administrativamente correta?
+
+A) Contagem baixa após prednisona exclui definitivamente inflamação T2.
+B) Todo medicamento listado na GINA está automaticamente incorporado ao SUS.
+C) Interpretar marcadores longitudinalmente e investigar elegibilidade pelo PCDT vigente, diferenciando recomendação GINA de acesso nacional.
+D) Suspender imediatamente CI-LABA quando se iniciar qualquer biológico.
+
+**Gabarito: C.** **A:** ignora supressão de eosinófilos por corticosteroides. **B:** confunde fontes e etapas regulatórias. **C:** combina precisão da avaliação fenotípica com segurança e disponibilidade no sistema brasileiro. **D:** interromper terapia anti-inflamatória basal eleva risco de descontrole; mesmo com boa resposta ao biológico, a redução deve ser gradual e supervisionada. **Mini-revisão:** biomarcadores não são a mesma coisa que critérios de prescrição; incorporação tecnológica não decorre automaticamente de recomendação internacional.
+
 ## Referências essenciais
 
 1. GINA Strategy Report 2026. https://ginasthma.org/2026-gina-strategy-report/
 2. GINA Summary Guide 2026. https://ginasthma.org/2026-gina-summary-guide/
 3. Ministério da Saúde — PCDT Asma (2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
 4. SBPT — Consensos e diretrizes. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/
+
+5. GINA — Difficult-to-Treat & Severe Asthma in Adolescent and Adult Patients, v7.0 (maio 2026). https://ginasthma.org/wp-content/uploads/2026/06/GINA-Severe-Asthma-Guide-2026-WEB-WMS.pdf
