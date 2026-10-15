@@ -493,6 +493,48 @@ Menino de 11 anos, HbSS, começa com desvio da rima labial e fraqueza do braço 
 **Exames:** protocolo de AVC com neuroimagem urgente e testes de hemoterapia.
 **Conduta:** ativação de rede AVC + hematologia, suporte e transfusão urgente conforme diretrizes ASH e condições locais, favorecendo troca quando viável e indicado. **Importância:** esperar resultados tardios antes de acionar hemoterapia pode piorar desfecho.
 
+
+### Caso 6 — Recém-nascido com FAS e mãe com dúvidas
+Recém-nascido, 22 dias, triagem neonatal informa padrão FAS. Está assintomático, cresce bem e a mãe teme que precise receber as mesmas transfusões de um primo com HbSS.
+**Hipótese:** traço falciforme HbAS, a confirmar/interpretar conforme fluxo neonatal.
+**Raciocínio:** FAS sugere HbF predominante com HbA e HbS; não equivale a FS, característico de suspeita de doença falciforme. História de transfusão, prematuridade e metodologia podem mudar leitura.
+**Exames:** confirmar resultado segundo programa de triagem, revisão de resultados dos pais e investigação adicional se houver discordância. Não pedir investigação extensa em bebê clinicamente bem sem indicação.
+**Conduta:** explicar diferença entre traço e doença, registrar orientação, oferecer aconselhamento reprodutivo familiar quando pertinente e não instituir tratamento de HbSS em bebê HbAS.
+**Por que importa:** comunicação precisa evita medo, condutas desnecessárias e negligência do aconselhamento genético.
+
+### Caso 7 — Anemia após transfusão com piora paradoxal
+Mulher de 29 anos com HbSS recebeu concentrado de hemácias por complicação hospitalar há 10 dias. Retorna com dor intensa, icterícia, urina escura e Hb de 5,4 g/dL, **inferior aos 7,7 g/dL documentados antes da transfusão**. LDH elevada e reticulócitos relativamente baixos para a anemia.
+**Hipóteses:** reação hemolítica transfusional tardia com hiper-hemólise; diferenciais incluem crise aplásica e exacerbação hemolítica por infecção.
+**Raciocínio:** intervalo pós-transfusão, queda abaixo do basal e hemoglobinúria são sinais de hiper-hemólise. Teste de antiglobulina negativo não a exclui.
+**Exames:** tipagem/pesquisa de anticorpos, provas de hemólise, reticulócitos, frações HbA/HbS quando disponíveis, investigação infecciosa e avaliação especializada.
+**Conduta:** internação e contato imediato com hematologia/hemoterapia; **não administrar outra unidade automaticamente** sem avaliar risco de intensificar hemólise. Abordagem imunomoduladora ou transfusão de resgate requer decisão especializada.
+**Por que importa:** confundir hiper-hemólise com simples piora de anemia pode causar iatrogenia grave.
+
+### Caso 8 — Talassemia não dependente de transfusão e déficit progressivo
+Homem de 34 anos com beta-talassemia NTDT, Hb em torno de 8,3 g/dL há anos, procura emergência por dor lombar e fraqueza progressiva nas pernas. Nas últimas 24 horas refere dificuldade para urinar.
+**Hipótese:** compressão medular por hematopoese extramedular paravertebral, entre outras causas de mielopatia.
+**Raciocínio:** a expansão hematopoética fora da medula pode formar massas compressivas. Déficit motor e disfunção esfincteriana são sinais neurológicos de alarme.
+**Exames:** exame neurológico completo, RM de coluna urgente, hemograma e avaliação hematológica; investigar diagnósticos alternativos.
+**Conduta:** avaliação emergencial multidisciplinar de compressão medular; tratamento específico conforme imagem, estabilidade e protocolos especializados.
+**Por que importa:** NTDT não significa doença sem complicações graves e a urgência neurológica não pode ser atribuída apenas à anemia.
+
+### Caso 9 — DTC anormal em criança sem sintomas neurológicos
+Menino de 8 anos com HbSS, sem história de AVC, faz DTC de rastreamento em serviço experiente e apresenta velocidades repetidamente dentro da faixa anormal por protocolo não imageado, com medidas superiores a 200 cm/s.
+**Hipótese:** alto risco de AVC isquêmico futuro em criança com HbSS.
+**Raciocínio:** a ausência de déficit focal não exclui vasculopatia. O rastreamento por DTC serve precisamente à prevenção **antes** do evento.
+**Exames:** confirmar técnica e critérios de medida, avaliar RM/angio-RM conforme indicação, documentar HbS, história e condições clínicas.
+**Conduta:** encaminhamento hematológico prioritário para programa de prevenção primária com transfusões regulares e metas específicas, quando indicado; hidroxicarbamida não deve substituir automaticamente transfusão no início.
+**Por que importa:** prevenção de AVC exige interpretação correta da velocidade e do tipo de exame.
+
+### Caso 10 — Adolescente com talassemia TDT e risco cardíaco oculto
+Adolescente de 17 anos com TDT recebe transfusões periódicas. A família relata adesão irregular à quelação por problemas de acesso. A ferritina apresenta flutuações e o ecocardiograma recente é preservado; RM cardíaca evidencia **T2* reduzido**, abaixo de 10 ms.
+**Hipótese:** sobrecarga importante de ferro miocárdico, apesar da função ventricular ainda preservada.
+**Raciocínio:** ecocardiograma normal não afasta depósito de ferro precoce. T2* de risco exige avaliação rápida e revisão de estratégia de quelação.
+**Exames:** confirmar protocolo e laudo da RM, função cardíaca, ECG, ferritina seriada, ferro hepático, função renal/hepática e adesão/acesso.
+**Conduta:** avaliação especializada para intensificar/adequar quelação, cardiologia e monitorização, com plano de acesso ao tratamento.
+**Por que importa:** a identificação precoce pode prevenir cardiomiopatia potencialmente grave.
+
+
 ## 10. Questões comentadas
 
 **1. Qual característica molecular define HbS?**
