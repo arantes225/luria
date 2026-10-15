@@ -317,6 +317,47 @@ O uso de iSGLT2, jejum prolongado, infecção e situações de déficit energét
 
 No estado hiperosmolar, glicemia muito elevada e diurese osmótica promovem desidratação e hiperosmolaridade, muitas vezes com comprometimento neurológico. Em vários pacientes há insulina suficiente para inibir cetogênese intensa, mas insuficiente para controlar glicose. **Osmolaridade efetiva** é estimada por 2×Na + glicose/18 quando Na está em mEq/L e glicose em mg/dL, enquanto osmolaridade total inclui ureia conforme unidade; não misturar fórmulas. **Exemplo:** Na 150, glicose 720 mg/dL → osmolaridade efetiva estimada 2×150 + 720/18 = **340 mOsm/kg**, marcadamente elevada. A correção deve considerar velocidade de mudança osmótica, perfusão, cardíaco/renal e causa precipitante.
 
+
+### 6.4 Critérios diagnósticos da CAD e do EHH: atualização internacional integrada
+
+A avaliação das crises hiperglicêmicas mudou nos consensos recentes. O consenso internacional ADA/EASD e sociedades parceiras de 2024 define cetoacidose diabética (**CAD/DKA**) por **três pilares**, todos necessários: componente de diabetes/hiperglicemia, cetose e acidose metabólica. No componente glicêmico, basta glicose **≥200 mg/dL** **ou história prévia de diabetes**, independentemente da glicemia na apresentação; isso reconhece CAD com glicemia pouco elevada. A cetose é demonstrada preferencialmente por **beta-hidroxibutirato ≥3,0 mmol/L**, ou cetonúria ≥2+ quando medida específica indisponível. A acidose metabólica envolve **pH <7,3 e/ou bicarbonato <18 mmol/L**. O ânion gap elevado pode apoiar, mas não substitui os três componentes quando há dosagem de cetonas.
+
+O **estado hiperglicêmico hiperosmolar (EHH/HHS)**, em contraste, exige na definição de 2024 os seguintes domínios: glicemia plasmática **≥600 mg/dL**, hiperosmolaridade (osmolaridade efetiva **>300 mOsm/kg** ou total **>320 mOsm/kg**), ausência de cetose importante (beta-hidroxibutirato **<3,0 mmol/L** ou cetonúria ≤2+) e ausência de acidose metabólica significativa (pH **≥7,3** e bicarbonato **≥15 mmol/L**). As formas mistas CAD/EHH existem e exigem avaliar ambos os mecanismos.
+
+| Elemento de decisão | CAD no consenso 2024 | EHH no consenso 2024 |
+| --- | --- | --- |
+| Glicose | ≥200 mg/dL ou diabetes prévio, mesmo com glicose abaixo de 200 | ≥600 mg/dL |
+| Cetose | Beta-hidroxibutirato ≥3,0 mmol/L ou cetonúria ≥2+ | Sem cetose importante: beta-hidroxibutirato <3,0 mmol/L |
+| Estado ácido-base | pH <7,3 e/ou bicarbonato <18 mmol/L | pH ≥7,3 e bicarbonato ≥15 mmol/L |
+| Osmolaridade | Pode aumentar, mas não é componente obrigatório da definição de CAD | Efetiva >300 ou total >320 mOsm/kg |
+| Pista clínica útil | Respiração profunda, náusea, vômitos, desidratação, possível glicemia pouco elevada em uso de iSGLT2 | Desidratação pronunciada, alteração neurológica, glicose geralmente muito alta; comum em DM2 e idosos |
+
+**Exemplo de cálculo:** paciente com Na 143 mEq/L e glicose 756 mg/dL tem osmolaridade **efetiva** estimada como 2 × 143 + (756/18) = 286 + 42 = **328 mOsm/kg**. A **total** incorpora ureia segundo a unidade (por exemplo, BUN/2,8 em mg/dL). Se o laboratório só informou **ureia em mg/dL**, não adicionar ureia/2,8 de forma incorreta como se fosse BUN. Essa confusão muda o resultado, particularmente em desidratação grave com azotemia.
+
+### 6.5 Reposição de potássio: o risco da primeira dose de insulina
+
+Na CAD, deficiência corporal total de potássio é frequente mesmo quando a medida sérica inicial está normal ou elevada. Insulina e correção da acidemia deslocam potássio para o compartimento intracelular, enquanto diurese osmótica contribui para perdas. **O consenso de 2024 orienta adiar o início de insulina quando potássio está <3,5 mmol/L**, até reposição suficiente sob monitorização; isso evita arritmia e fraqueza respiratória potencialmente fatais. Um ECG normal no primeiro momento não elimina risco de queda rápida subsequente.
+
+| Situação inicial | Raciocínio de segurança |
+| --- | --- |
+| K <3,5 mmol/L | Corrigir hipocalemia primeiro, monitorar ritmo/função renal e só então iniciar insulina IV conforme protocolo |
+| K entre 3,5 e 5,0 mmol/L | Necessidade de reposição habitual depende de diurese, função renal, ritmo, mudanças seriadas e protocolo hospitalar |
+| K elevado, oligúria ou doença renal avançada | Não repor potássio automaticamente; acompanhar função renal/ECG e repetição rápida de eletrólitos |
+| Queda de glicemia com cetose ainda importante | Acrescentar glicose IV quando indicada e manter terapia anticetogênica; interromper insulina antes da resolução pode recriar a crise |
+
+**Insulinoterapia da CAD no ambiente monitorado:** o consenso descreve infusão IV de insulina regular a partir de **0,1 U/kg/h** como um esquema para adultos com CAD, seguindo vigilância horária/frequente de glicose, potássio e acidose. Quando glicemia cai abaixo de aproximadamente **250 mg/dL**, pode ser necessário adicionar solução contendo glicose e reduzir a taxa de infusão para continuar resolvendo cetose com segurança. **Não transformar essa menção em prescrição automática:** choque, gestação, nefropatia, variação de osmolaridade, CAD leve, insuficiência cardíaca e protocolos locais mudam local e detalhes da terapia.
+
+### 6.6 Quando a CAD terminou? Critérios bioquímicos e transição
+
+Segundo o consenso 2024, a resolução da CAD inclui **beta-hidroxibutirato plasmático <0,6 mmol/L** e **pH venoso ≥7,3 ou bicarbonato ≥18 mmol/L**, com resolução clínica concomitante. A glicemia ter alcançado 180 mg/dL **não** é critério de resolução isolado. Após grandes volumes de salina, pode surgir acidose hiperclorêmica sem cetonemia persistente; interpretar pH, bicarbonato, cetonas e perfusão conjuntamente. Em EHH, a resolução depende de recuperação de osmolaridade, estado mental, volemia e diurese, não apenas de uma glicose arbitrária.
+
+**Transição da insulina IV para subcutânea:** iniciar o esquema basal com antecedência suficiente para que exista ação quando a infusão for interrompida; o consenso geralmente sugere **sobreposição de uma a duas horas**, individualizada ao tipo de insulina e ao contexto. Paciente com DM1 requer componente basal contínuo mesmo quando ainda não voltou a comer. A insulina prandial é ajustada quando a via oral e ingestão são retomadas. Se a pessoa estava usando bomba que falhou, identificar o problema de infusão antes da alta; trocar simplesmente a bomba sem educação e reserva de insulina pode repetir a CAD.
+
+**Sinais de urgência no seguimento:** vômitos persistentes, incapacidade de manter líquidos, dor abdominal importante, respiração profunda/rápida, sonolência, convulsão, cetonemia importante ou hipoglicemia grave exigem serviço de urgência. Uma estratégia domiciliar de “corrigir só a glicemia” pode atrasar tratamento de acidose, infecção precipitante ou comprometimento circulatório.
+
+**Referência desta seção:** Umpierrez GE e colaboradores. *Hyperglycemic Crises in Adults With Diabetes: A Consensus Report*. *Diabetes Care*. 2024;47:1257–1275. DOI 10.2337/dci24-0032. https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A . Esses limiares não substituem um protocolo pediátrico, obstétrico ou de terapia intensiva específico.
+
+
 ## 7. Complicações crônicas e rastreamento
 
 ### 7.1 Complicações crônicas: rastrear antes dos sintomas
@@ -367,6 +408,44 @@ A LURIA possui apostila específica de **diabetes mellitus gestacional**. O pres
 
 Jejum, vômitos, febre e procedimentos podem alterar necessidade de medicações. Educação deve orientar monitorização e quando procurar ajuda, sem incentivar suspensão geral de toda insulinoterapia. Para iSGLT2, risco de CAD euglicêmica aumenta em jejum prolongado e períodos perioperatórios; suspensões temporárias e reinício são guiados por fármaco, procedimento e segurança clínica. Insulina basal em DM1 costuma demandar continuidade com ajuste, mesmo quando ingestão oral está limitada.
 
+
+### 8.2 Metas glicêmicas do adulto idoso: três perfis de saúde distintos
+
+A ADA 2026 recomenda definir metas não apenas pela idade cronológica, mas pela **reserva funcional**, cognição, comorbidades, expectativa de benefício, hipoglicemias e capacidade real de administrar medicações. Uma pessoa de 79 anos independente e ativa pode ter objetivo bem diferente de outra da mesma idade com demência avançada e refeições imprevisíveis. O objetivo não é simplesmente “liberar glicose alta no idoso”; busca-se evitar hipoglicemia grave e hiperglicemia sintomática, preservando funcionalidade e qualidade de vida.
+
+| Perfil em ADA Standards 2026 | Objetivo glicêmico usual | Razão e alerta |
+| --- | --- | --- |
+| Idoso relativamente saudável, função e cognição preservadas | **HbA1c <7,0–7,5%** em muitos casos; se usa CGM, TIR 70–180 mg/dL **≥70%** com tempo <70 mg/dL ≤4% | Prevenção de complicações, quando terapia não causa hipoglicemia ou carga excessiva |
+| Saúde intermediária/complexa com múltiplas doenças, fragilidade ou limitações cognitivas/funcionais | Meta menos rígida, frequentemente **HbA1c <8,0%**; em CGM, TIR **≥50%** e tempo <70 mg/dL **<1%** | Evitar quedas, síncopes, delirium e hospitalização por hipoglicemia |
+| Saúde muito complexa, demência avançada ou doença terminal | **Não depender de um alvo fixo de HbA1c**; evitar hipoglicemia e hiperglicemia sintomática | Priorizar conforto, hidratação, funções cotidianas e mínimo de intervenções burdensome |
+
+Esses valores são **objetivos usuais condicionados**, não autorização para tolerar cetose, desidratação grave ou infecção descompensada. Sintomas de hiperglicemia sustentada (poliúria, polidipsia, infecção, perda de peso, fraqueza) também exigem ajuste. No idoso com redução de função renal, a depuração de insulina e de determinados hipoglicemiantes pode cair, aumentando episódios mesmo quando nenhuma dose mudou. A troca de ambiente — internação, retorno para casa, perda de cuidador — também altera a capacidade de seguir esquemas.
+
+**Sinais de plano terapêutico excessivamente complexo:** insulina em múltiplos horários que o paciente não compreende, necessidade de contagem de carboidratos sem apoio, duplicação acidental de canetas, armazenamento incorreto, hipoglicemia noturna recorrente e perda de alimentação. Uma simplificação supervisionada pode preservar controle clínico sem exigir objetivo de HbA1c inadequadamente rígido. A decisão deve documentar por que se reduziu carga terapêutica e como acompanhar a resposta.
+
+### 8.3 Dias de doença: um plano de ação para febre, vômito e jejum
+
+**Quando há infecção ou estresse agudo**, cortisol, catecolaminas e outros mediadores podem aumentar glicemia apesar de ingestão menor. Simultaneamente, quem usa insulina ou sulfonilureia pode fazer **hipoglicemia** por comer menos ou ter pior função renal. Portanto, o plano de dias de doença precisa prever monitorização de glicose, avaliação de cetonas para pessoas suscetíveis, manutenção de líquidos quando possível, revisão individual dos medicamentos e critérios de retorno. Não ensinar “se está doente, pare todas as medicações” nem “se está com hiperglicemia, aumente tudo”.
+
+**DM1 e deficiência insulínica:** a insulina **basal não deve ser omitida automaticamente**, mesmo sem refeições. A dose pode precisar de ajuste por médico/equipe treinada, e a necessidade de correções, cetonas e hidratação deve seguir plano escrito individual. Em usuário de bomba, hiperglicemia inesperada e cetona elevada exigem verificar cânula, reservatório, equipe/insulina e eventual alternativa injetável conforme orientação; infusão interrompida pode evoluir rapidamente para CAD.
+
+**DM2 em metformina e iSGLT2:** quando não se consegue manter líquidos, há vômitos importantes, queda da perfusão ou suspeita de lesão renal aguda, deve-se considerar **pausa temporária** de metformina e inibidores SGLT2, com orientação expressa sobre **quando e como reiniciar**. Inibidores SGLT2 exigem atenção a cetose euglicêmica durante jejum, cirurgia e infecção. Em uso de agonista GLP-1, vômitos importantes e desidratação podem justificar pausa/reavaliação; tiazolidinediona pode ser problemática em retenção de líquidos/descompensação cardíaca. Essas medidas dependem de prescrição individual e não se aplicam indistintamente a todas as classes.
+
+**Quando procurar avaliação urgente:** vômitos que impedem hidratação/medicação, cetonemia persistente importante, respiração rápida/profunda, confusão, desmaio, glicemias repetidamente muito altas com mudança clínica, hipoglicemia grave ou sinais de infecção com instabilidade. O fato de um monitor mostrar glicose “apenas 190” não descarta CAD com iSGLT2; avaliar corpos cetônicos e estado ácido-base diante de sintomas sugestivos.
+
+**Exemplo preventivo:** mulher com DM2 e insuficiência cardíaca, em iSGLT2, desenvolve gastroenterite com vômitos, pouca ingestão e tontura. A conduta não é dar mais fármaco para “corrigir açúcar”: avaliar hidratação, pressão, função renal e cetose conforme risco, considerar pausa orientada dos medicamentos apropriados e encaminhar se houver incapacidade de ingerir líquidos. Em pessoa com DM1, o problema é diferente: manter componente basal e prevenir CAD apesar de eventual redução de doses prandiais.
+
+### 8.4 Interpretação de CGM em uma consulta de dez minutos
+
+1. Confirme que o sensor esteve ativo em proporção suficiente do período e que existem dados de dias representativos; a ADA recomenda observar aproximadamente **14 dias**, quando viável, com pelo menos **70% de dados ativos** para análise de padrões.
+2. Leia **tempo abaixo de 70 mg/dL** antes de comemorar a média. Hipoglicemia recorrente tem peso clínico especial em idoso, pessoa com cardiopatia, quem dirige ou mora sozinho.
+3. Leia o **tempo de 70–180 mg/dL** junto de atividade, refeições, sono e medicamentos. Em muitos adultos, a meta usual é **TIR >70%**; em idosos complexos, um alvo ≥50% pode ser mais razoável.
+4. Compare as curvas de dias diferentes para identificar padrão: queda na madrugada sugere ação basal excessiva, enquanto pico repetido depois de refeição exige revisar carboidrato, insulina prandial e hora de aplicação. Evite ajustar basal para resolver todos os picos prandiais.
+5. Documente a mudança proposta, risco de hipoglicemia, capacidade de execução e data de reavaliação. A CGM é ferramenta para decisão compartilhada, não um ranking moral entre pacientes.
+
+**Fontes desta seção:** ADA, *Standards of Care in Diabetes — 2026*, seções 6 (*Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises*) e 13 (*Older Adults*). https://doi.org/10.2337/dc26-s006 ; https://doi.org/10.2337/dc26-s013 . A interpretação e as metas variam na gestação, infância, internação e alta fragilidade.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 3 — CAD euglicêmica associada a SGLT2
@@ -400,6 +479,16 @@ Homem de 70 anos em insulina relata HbA1c 6,8%, mas CGM mostra 12% do tempo com 
 ### Caso 10 — Lesão de pé com neuropatia
 
 Mulher de 62 anos, DM2, perda de sensibilidade, pé quente e inchado, pouca dor, sem ferida evidente. **Diferenciais:** Charcot agudo, infecção, trombose e outras causas. **Exames:** avaliação de pulsos, sinais sistêmicos, imagem apropriada, marcadores conforme suspeita. **Conduta:** impedir sobrecarga, encaminhar para avaliação especializada, investigar infecção/isquemia e evitar atraso. **Por que importa:** ausência de dor pode indicar neuropatia grave, não quadro benigno.
+
+
+### Caso 11 — Idosa independente versus idosa frágil
+
+Duas mulheres de 81 anos apresentam HbA1c de 7,8%. A primeira vive de modo independente, sem hipoglicemias, caminha diariamente e tem função renal adequada; a segunda possui demência moderada, caiu duas vezes no mês, recebe insulina basal e sulfonilureia, come de forma irregular e teve glicemia de 48 mg/dL durante a madrugada. **Problema:** a idade e a HbA1c são iguais, mas o risco do tratamento é muito diferente. **Raciocínio:** na primeira, pode ser apropriado discutir meta mais baixa se alcançável com segurança; na segunda, priorizar redução de hipoglicemia e simplificação, admitindo alvo menos rígido de acordo com ADA 2026. **Exames:** histórico capilar/CGM, TFGe, revisão da capacidade funcional, quedas, esquema e apoio de cuidador. **Conduta:** individualizar metas e reduzir medicação com risco de hipoglicemia quando indicado, sem abandonar vigilância de hiperglicemia sintomática. **Por que este caso importa:** HbA1c não define qualidade nem segurança do tratamento sem conhecer o paciente.
+
+### Caso 12 — CAD com glicose não extrema
+
+Homem de 58 anos, DM2 em uso de iSGLT2, está no pós-operatório e há dois dias quase não se alimenta. Chega com náuseas, respiração profunda, pH 7,21, bicarbonato 12 mmol/L, beta-hidroxibutirato 5,2 mmol/L e glicose 188 mg/dL. **Hipótese:** CAD euglicêmica relacionada a deficiência relativa de insulina em contexto de estresse/jejum e iSGLT2, com investigação de precipitantes. **Raciocínio:** diabetes conhecido satisfaz o componente D, beta-hidroxibutirato o componente K e pH/bicarbonato o componente A; a glicose inferior a 200 não exclui CAD. **Exames:** potássio, sódio, ureia/creatinina, gasometria seriada, ECG, investigação de infecção e volemia. **Conduta:** urgência hospitalar, reposição de fluidos/eletrólitos guiada por clínica e função renal, insulina em ambiente monitorado quando potássio permite e glicose suplementar quando necessária para completar correção da cetose. **Por que este caso importa:** reconhecer a tríade CAD evita falsa segurança pelo valor de glicemia.
+
 
 ## 10. Questões autorais comentadas
 
@@ -472,6 +561,28 @@ A) Ser considerados sempre benignos. B) Levantar suspeita de Charcot agudo e out
 Por que uma HbA1c de 6,9% pode ser insuficiente para declarar cuidado ótimo?
 A) Porque HbA1c mede potássio. B) Porque pode coexistir com hipoglicemias, albuminúria, retinopatia ou alto risco cardiovascular. C) Porque diabetes sempre exige HbA1c abaixo de 5,0%. D) Porque não há interesse em metas.
 **Gabarito B.** **A** é factual incorreta; **C** é meta inadequada/universalizante; **D** ignora valor do marcador. **Mini-revisão:** integrar segurança e órgãos-alvo.
+
+
+### Questão 17 — Diagnóstico de CAD atualizado
+Pessoa com diabetes prévio chega com glicose 183 mg/dL, beta-hidroxibutirato 4,1 mmol/L, pH 7,25 e bicarbonato 14 mmol/L. Qual afirmação corresponde ao consenso 2024?
+A) CAD está excluída porque glicose é <250. B) A combinação satisfaz critérios de CAD, mesmo sem hiperglicemia extrema. C) Basta glicose >600 para classificar EHH. D) O pH não influencia a classificação.
+**Gabarito: B.** Os três componentes estão presentes: diabetes prévio, cetose e acidose. **A** usa limiar antigo de modo absoluto; **C** ignora cetose e acidose e não cumpre glicose do EHH; **D** despreza critério essencial. **Mini-revisão:** nunca afastar CAD com base isolada na glicose de um usuário de iSGLT2.
+
+### Questão 18 — Eletrólitos na emergência
+Adulto com CAD tem potássio sérico de 3,1 mmol/L antes da insulinoterapia IV. A decisão inicial mais apropriada é:
+A) Iniciar insulina rapidamente e ignorar potássio. B) Priorizar correção de hipocalemia e monitorização antes de iniciar insulina intravenosa segundo protocolo. C) Repôr potássio somente se ECG tiver arritmia. D) Considerar o valor irrelevante porque CAD sempre aumenta potássio.
+**Gabarito: B.** A insulina reduz potássio sérico e pode precipitar arritmia grave em pessoa já hipocalêmica. **A/C/D** negligenciam a fisiologia e a prevenção de danos. **Mini-revisão:** no consenso 2024, K <3,5 mmol/L exige reposição antes de insulina IV.
+
+### Questão 19 — Metas no idoso frágil
+Idosa com demência moderada, duas hipoglicemias noturnas e HbA1c 6,4% está em insulina e sulfonilureia. Qual direção é mais apropriada?
+A) Intensificar até HbA1c <5,5%. B) Manter tudo porque a HbA1c é boa. C) Reavaliar e simplificar terapia hipoglicemiante, priorizando segurança e meta menos rígida. D) Ignorar as quedas.
+**Gabarito: C.** **A** aumenta risco; **B** reduz controle a média; **D** negligencia complicação. **Mini-revisão:** ADA 2026 favorece metas individualizadas, frequentemente <8% em idosos com saúde complexa, sem tolerar hiperglicemia sintomática.
+
+### Questão 20 — Sobreposição na transição IV/SC
+Paciente com DM1 recupera-se de CAD e reinicia dieta; a insulina IV será encerrada. Qual princípio evita recorrência?
+A) Interromper infusão IV e esperar várias horas antes de dose basal. B) Programar insulina basal subcutânea com sobreposição de ação antes de retirar IV, segundo protocolo. C) Trocar por metformina isolada. D) Suspender toda insulina até ocorrer nova hiperglicemia.
+**Gabarito: B.** A sobreposição evita ausência de insulina basal após suspensão da infusão. **A/D** deixam intervalo que permite cetogênese; **C** não supre deficiência absoluta. **Mini-revisão:** glicose normal não equivale a resolução de CAD ou dispensabilidade de basal.
+
 
 ## Referências essenciais
 
