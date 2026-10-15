@@ -58,3 +58,18 @@ A triagem exige que premissas conceituais centrais apareçam no corpo instrucion
 
 ## Complemento da auditoria de autossuficiência
 O primeiro teste detectou ausência do termo e da explicação explícita sobre *creatinina elevada* na decisão de angioTC dos capítulos de suporte da questão 7. Foi acrescentado um subcapítulo próprio na seção 5.2, distinguindo risco renal de contraste e risco imediato de infarto intestinal. A matriz foi refeita com 12/12 objetivos localizados; isto **continua sendo triagem lexical** e não comprovação de validade clínica.
+
+
+---
+
+## 6. Preparação técnica para a LURIA — etapa adicional
+
+A apostila foi convertida preliminarmente para o formato esperado pelo gerador de livros LURIA, preservando o rascunho clínico original separado:
+
+- \`apostilas/_rascunhos/lote-06-117-build-input-preliminar.json\`: entrada JSON com **30 seções** (introdução + 27 capítulos científicos + capítulo de casos + capítulo de questões) e **5 referências externas** vinculadas. A seção de controle editorial não foi incorporada como conteúdo do aluno.
+- \`apostilas/_rascunhos/lote-06-117-preview.html\`: prévia no HTML do template oficial da LURIA, mantendo CSS compartilhado e menu interno, com aviso visível de revisão, \`noindex,nofollow\` e sem inserir imagens candidatas.
+- Checagem estrutural feita na etapa de criação: **30 seções, 8 casos clínicos, 12 questões, 12 listas semânticas de alternativas A–D, zero imagens novas e zero links internos quebrados**.
+- A transformação para HTML foi executada em código editorial controlado, mas **os scripts oficiais em Node não foram executados**. Portanto, não classificar o pré-teste como \`node scripts/build-apostilas-batch.cjs --dry-run\` ou como QA de navegador real.
+- A contagem bruta da apostila é superior ao piso, e a estimativa do corpo didático sem casos/questões chegou a cerca de 64 mil caracteres, mas ainda é obrigatório verificar **utilidade, ausência de redundância e suficiência clínica reais**.
+
+**Ainda pendente:** localizar benchmark extenso de referência com autoria confirmada, auditoria médica, imagens licenciadas e aprovadas no Admin, execução dos validadores oficiais do repositório, inspeção desktop/PWA, resolução de eventuais falhas e autorização explícita de publicação. Preservar integralmente versões atuais publicadas.
