@@ -74,3 +74,34 @@ Uma execução seguinte de CI, **[38692816677](https://github.com/arantes225/lur
 **Artefato adicional no Actions:** \`PTBXL-ECG-REVIEW-ONLY\` do run 38692816677, ID **11952304322**. O título do artefato coincide com o da execução anterior, mas os **IDs e os conteúdos são diferentes**; não confundir.
 
 **Contagem real atual desta etapa:** **14 traçados clínicos reais convertidos**, 14 candidatos de validação, **zero aprovados**. A diferença entre dois códigos SCP de um mesmo exame e laudo médico precisa ser respeitada; usar rótulos \`IMI\`/\`ASMI\` como história de infarto anotada e não afirmar SCA aguda.
+
+
+## Terceira rodada (15/10/2026): 500 Hz reais, escala vertical comparável — substituição técnica do pacote anterior
+
+**Execução concluída com sucesso:** [GitHub Actions 38696857730](https://github.com/arantes225/luria/actions/runs/38696857730).  
+**Artefato:** \`PTBXL-14-ECGs-500Hz-ESCALA-UNIFORME-REVIEW-ONLY\`, ID **11955300806**, expiração indicada **22/10/2026**. Os 14 registros foram baixados diretamente dos \`records500/\` da versão **PTB-XL 1.0.3** e convertidos, após testes, sem interpolar ou inventar sinais.  
+**Manifesto de origem:** \`scripts/editorial/ptbxl-14-ids-review.json\`, com os mesmos 14 IDs do pacote anterior; renderizador \`scripts/editorial/render_ptbxl_ecgs.py\` atualizado para **500 Hz** e **uma escala vertical mV uniforme para todas as 12 derivações do mesmo exame**; workflow \`.github/workflows/editorial-ptbxl-500hz.yml\`.  
+**Resultado medido e verificado a partir dos arquivos reais produzidos:** 14/14 WebP válidos, 1.800×1.125 px cada, tamanhos de **99.092 a 120.816 bytes** (≤120 KiB); manifesto assinala \`sampling_hz=500\`, \`uniform_vertical_mV_limit\` e ambas as flags \`clinical_label_verified=false\` / \`publication_approved=false\`. Integridade ZIP verificada.  
+**Pacote de revisão produzido:** ZIP específico de 500 Hz com 14 WebPs, manifesto JSON com SHA-256 por figura, proveniência/licença CC BY 4.0 e aviso de não publicação; também foi produzida uma prévia em mosaico. Esta entrega está nos arquivos da conversa, **não no código ativo do site**. Nenhum ECG desta etapa foi aprovado clinicamente.
+
+### Por que substituir as 14 primeiras renderizações de 100 Hz?
+
+A primeira versão ajustava **o limite vertical de cada derivação separadamente**. Isso pode falsear a comparação visual de amplitudes entre derivações, embora cada traçado derive de uma medição real. A versão de 500 Hz foi reconstruída com **uma escala de mV compartilhada entre as doze derivações em cada ECG**, além de cinco vezes mais amostras por segundo. Portanto, **priorizar a versão nova para futura revisão e não importar a primeira no Admin**.
+
+A grade é uma **visualização digital com tempo e voltagem em unidades consistentes**, mas não foi construída como **papel físico calibrado a 25 mm/s e 10 mm/mV**. Não ensinar hipertrofia, onda Q patológica ou duração em “quadradinhos do papel” a partir da largura física da imagem sem consultar as unidades e a calibração. Em PDF ou PWA, redimensionamento da imagem altera os milímetros físicos, mas não os dados de origem.
+
+### Limitação importante descoberta durante a inspeção: falta tira de ritmo contínua
+
+Cada registro clínico contém 10 segundos; o desenho clássico 3×4 exibe quatro **janelas consecutivas de 2,5 s**, com derivações diferentes em cada coluna. Isso é suficiente para observar morfologia em 12 derivações, mas **não é uma tira de 10 s contínuos na mesma derivação**. Para concluir e ensinar **BAV II, BAV total, FA, flutter, arritmias intermitentes e regularidade de RR**, adicionar um painel de **DII contínuo por 10 s**, também extraído do próprio registro real de 500 Hz. Até que exista, **não certificar o material como traçado final para diagnóstico de dissociação AV**.
+
+**Critérios por grupo:**
+- \`1AVB\`: confirmar PR com cálculo digital e demonstrar condução P→QRS 1:1.
+- \`2AVB\` e \`3AVB\`: revisar **ondas P contínuas**, relação P–QRS, intervalos e eventuais batimentos de captura; **não inferir Mobitz I versus II a partir de relação 2:1**.
+- \`AFIB\` e \`AFLT\`: confirmar ausência/presença de atividade atrial organizada e variação RR com tira contínua; o exame 00449 apresenta ondas atriais visíveis em derivações inferiores, mas falta laudo de especialista.
+- \`SVTAC\`, \`STACH\`, \`SBRAD\`: conferir RR, morfologia de P, início/terminação quando disponível e sintomas; um registro de 10 s pode não mostrar começo da arritmia.
+- \`CRBBB\`/\`CLBBB\`: medir duração QRS, avaliar padrão precordial/lateral e excluir colocação de eletrodos errada.
+- \`IMI\`/\`ASMI\`: código de anotação não é **diagnóstico de SCA aguda**; avaliar ondas Q/ST/T e contexto temporal.
+- \`LNGQT\`: medir QT em mseg e RR em segundos, indicar fórmula de correção (Bazett/Fridericia) e limites; anotação isolada do banco não é prova de síndrome congênita.
+- \`NORM\`: examinar calibração, intervalos, QRS, eixo e repolarização; a etiqueta normal deve ser validada, não presumida.
+
+**Bloqueios permanentes:** 0 laudos independentes homologados; 0 figuras aprovadas pelo Admin; 0 imagens integradas à aula HTML/content.json; 0 publicação ou deploy. São **14 ECGs clínicos reais para curadoria**, ainda não a camada visual premium concluída.
