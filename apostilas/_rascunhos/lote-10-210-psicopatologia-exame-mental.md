@@ -632,3 +632,117 @@ E) O 4AT deve ser usado em UTI em vez de CAM-ICU em toda situação, conforme NI
 
 **Gabarito: B.** **A incorreta:** delirium pode ser hipoativo. **B correta:** flutuação e atenção alterada, mesmo com quietude, exigem avaliação. **C incorreta:** consciência/atenção e cronologia favorecem causa clínica. **D incorreta:** CAM-ICU e ICDSC são ferramentas adaptadas a terapia intensiva. **E incorreta:** NICE diferencia instrumentos por cenário assistencial. **Mini revisão:** não confundir baixo nível de atividade com ausência de gravidade.
 
+
+## 15. Pérolas clínicas, algoritmos e quadro de revisão
+
+### 15.1. Os doze mandamentos da semiologia mental segura
+
+1. **Separar relato de observação:** “ouço vozes” é relato; “fala sozinho durante entrevista” é observação; “psicose” é hipótese.
+2. **Determinar quando começou:** instalação em minutos/horas sugere evento clínico/neurovascular/intoxicação mais que muitos transtornos crônicos, embora não exclua crises psiquiátricas.
+3. **Registrar estado de vigília:** alucinação hipnagógica não é automaticamente psicose em vigília.
+4. **Examinar atenção antes de memória:** desatenção prejudica aquisição de informação e pode simular amnésia.
+5. **Delirium não exige agitação:** apresentações hipoativas são relevantes e devem ser procuradas.
+6. **Humor é experiência sustentada; afeto é expressão:** uma entrevista breve não substitui cronologia.
+7. **Circunstancial retorna à pergunta; tangencial se afasta do destino:** diferenciar percurso de desorganização.
+8. **Delírio de conteúdo não é delirium:** uma ideia delirante pode ocorrer com consciência clara; delirium costuma afetar atenção e consciência.
+9. **Pensamento intrusivo não é intenção comprovada:** observar egodistonia, comportamento, compulsões e avaliar risco real.
+10. **Primeiro episódio atípico exige olhar orgânico:** sinais vitais, fármacos, substâncias e exame neurológico podem alterar destino.
+11. **Capacidade é específica à decisão:** discordar do profissional não é incapacidade, e diagnóstico não anula autonomia.
+12. **Risco não cabe em número único:** avaliação de segurança é contínua, contextual e orientada a necessidades, não “baixo risco” definitivo.
+
+### 15.2. Fluxo A — paciente com alteração aguda do comportamento
+
+Chegada com agitação, apatia ou confusão → verificar **ABCDE, sinais vitais, glicemia e segurança** conforme quadro → pedir cronologia e linha de base → avaliar **atenção, nível de alerta, orientação e exame neurológico** → se flutuação/desatenção, priorizar delirium e causas clínicas, usando 4AT em ambiente pertinente → em UTI/recuperação, usar CAM-ICU ou ICDSC conforme NICE → tratar precipitantes e reavaliar sintomas residuais antes de rotular transtorno psiquiátrico primário.
+
+### 15.3. Fluxo B — relato de experiências perceptivas incomuns
+
+Perguntar **o que** foi percebido → identificar **estímulo externo real ou não** → definir vigília/sono, consciência, febre, medicamentos e substâncias → investigar convicção, crítica, angústia, conteúdo e risco → avaliar presença de delírios, desorganização, deterioração e alterações neurológicas → se fenômeno transitório do sono com crítica preservada e sem prejuízo, investigar sono e acompanhar; se síndrome psicótica em vigília/risco, avaliação médica/psiquiátrica; se febre e desatenção, priorizar delirium.
+
+### 15.4. Fluxo C — paciente com tristeza, ansiedade ou irritabilidade
+
+Cronologia e prejuízo funcional → examinar sono, energia, humor/afeto, psicomotricidade e cognição → **perguntar por episódios prévios de elevação de energia e menor necessidade de sono** antes de inferir depressão unipolar → pesquisar medicamentos e substâncias, causas clínicas pertinentes, contexto de luto/trauma → avaliar ideação suicida, autocuidado e rede → formular síndrome e plano de seguimento/encaminhamento para módulos específicos 211–214.
+
+### 15.5. Fluxo D — ideação suicida ou autoagressão
+
+Garantir local seguro e acolhimento → perguntar de forma direta e não julgadora sobre desejo de morrer, ideação, intenção, planejamento e acesso, comportamento recente, intoxicação, fatores protetivos e capacidade de manter segurança → integrar histórico e sinais atuais, sem classificar pessoa por um único escore → em risco agudo, **avaliação presencial urgente, apoio e medidas proporcionais de proteção** → definir plano de cuidado com profissionais, rede e retorno; **não basear alta em “baixo risco” de escala** (NICE NG225).
+
+### 15.6. Fluxo E — suspeita de catatonia
+
+Mutismo, estupor, posturas, negativismo ou agitação imotivada → avaliação clínica/neurológica imediata de hidratação, imobilidade, febre, rigidez e sinais autonômicos → revisar medicamentos, infecções e encefalite/condições médicas → investigar catatonia, síndrome neuroléptica maligna e outras causas com equipe especializada → suporte orgânico, prevenção de complicações e terapêutica do protocolo de emergência; não escalar antipsicótico indiscriminadamente.
+
+### 15.7. Um exemplo de ficha rápida do EEM sem questionário proprietário
+
+| Domínio | O que registrar objetivamente | Armadilha |
+|---|---|---|
+| Aparência e comportamento | higiene, movimentos, contato, colaboração, contexto | julgar caráter ou classe social |
+| Consciência | desperto, sonolento, oscilante | chamar sonolência de depressão |
+| Atenção | acompanha conversa, distraibilidade, tarefas adaptadas | erro de cálculo isolado = delirium |
+| Orientação | identidade, local, tempo, situação | erro na data exata = incapacidade |
+| Memória | registro, evocação, pistas, história basal | não avaliar atenção prévia |
+| Linguagem/fala | volume, ritmo, nomeação, compreensão | confundir afasia com pensamento desorganizado |
+| Humor/afeto | relato do humor e expressão observada | um sorriso descarta depressão |
+| Pensamento | curso, forma, conteúdo, convicção | delírio de conteúdo = delirium |
+| Percepção | modalidade, vigília, sono, estímulo e crítica | alucinação = esquizofrenia |
+| Psicocomportamento/risco | autocuidado, segurança, impulsividade | reduzir tudo a score |
+| Insight/juízo/capacidade | reconhecer situação, decidir caso concreto | diagnóstico = incapacidade civil |
+
+### 15.8. Situações de encaminhamento prioritário
+
+Encaminhar à **emergência médica** pacientes com rebaixamento de consciência, hipóxia, hipoglicemia, convulsão, déficit focal súbito, febre e rigidez com alteração mental, agitação com instabilidade autonômica, intoxicação/abstinência grave ou delirium com risco clínico. Encaminhar para **avaliação urgente de saúde mental**, integrada à avaliação orgânica quando necessário, em risco suicida imediato, grave incapacidade de autocuidado, psicose com comportamento inseguro, catatonia ou mania com perda importante de juízo/crítica. A descrição do quadro importa mais que rótulo isolado.
+
+## 16. Dez imagens e diagramas candidatos à fila editorial
+
+**Política de imagens:** o tema envolve sobretudo observação e raciocínio; ilustrações autorais e diagramas claros são preferíveis a fotografias estigmatizantes de “pessoa louca”. Não há necessidade editorial de reproduzir rosto de paciente real em sofrimento. **Nenhuma imagem foi incorporada ou declarada licenciada nesta etapa.** Antes de publicação, pesquisar fontes institucionais com direito comercial, avaliar qualidade, revisar medicina/linguagem, aprovar no Admin e converter para WebP responsivo.
+
+| Chave | Proposta | Onde usar | Legenda didática original |
+|---|---|---|---|
+| 210-img-01 | diagrama original de **sintoma → sinal → síndrome → diagnóstico** | §2 | “A inferência diagnóstica exige duração, prejuízo, contexto e exclusões” |
+| 210-img-02 | mapa original das **funções do EEM** em grade visual | §5 | “Descrever domínios separados aumenta precisão e reprodutibilidade” |
+| 210-img-03 | painel comparativo original de **humor e afeto**, com expressão neutra e reativa sem caricaturas | §5 | “Relato de humor não equivale a expressão afetiva observada” |
+| 210-img-04 | fluxograma original **curso/forma/conteúdo do pensamento** | §6 | “Taquipsiquismo, tangencialidade e delírio pertencem a eixos diferentes” |
+| 210-img-05 | quadro visual original **circunstancialidade versus tangencialidade** | §6 | “Uma resposta chega ao alvo; a outra não” |
+| 210-img-06 | desenho autoral de **estímulo real mal interpretado versus percepção sem estímulo** | §7 | “Ilusão não é alucinação” |
+| 210-img-07 | linha temporal autoral **hipnagógica → sono → hipnopômpica** | §7 | “O estado de vigília importa para interpretar experiências perceptivas” |
+| 210-img-08 | quadro **delirium × transtorno neurocognitivo × depressão** | §8 | “Início agudo e desatenção flutuante orientam delirium” |
+| 210-img-09 | cartão original de conduta diante de **mudança aguda do estado mental** | §§8,15 | “Sinais vitais, atenção, neurologia, medicamentos e precipitantes antes de diagnóstico primário” |
+| 210-img-10 | matriz original **formulação de segurança sem scores preditivos** | §§10,15 | “Necessidades e medidas de proteção contextualizadas, não um rótulo de risco” |
+
+**Licenças e ética:** não reutilizar o texto ou layout original do **4AT, CAM-ICU, ICDSC, OMS CDDR, NICE** ou testes protegidos sem verificar direitos e permissões. É possível **referenciá-los por link e finalidade**, mas não copiar instrumento de terceiro apenas porque consta de diretriz pública. A OMS CDDR é distribuída sob licença restrita para uso comercial (CC BY-NC-ND 3.0 IGO), portanto a LURIA não deve traduzir/adaptar suas páginas para venda sem autorização.
+
+## 17. Referências e o que foi efetivamente conferido
+
+1. **World Health Organization (WHO).** *Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR).* Genebra: WHO; 2024. ISBN 9789240077263. https://www.who.int/publications/i/item/9789240077263 . **Utilização:** estrutura diagnóstica internacional e distinção entre sintomas, síndromes e transtornos; **não reproduzir critérios extensos protegidos**. Licenciamento e possível uso comercial exigem atenção.
+2. **National Institute for Health and Care Excellence (NICE).** *Delirium: prevention, diagnosis and management in hospital and long-term care.* CG103, publicada 2010, **atualizada em 18/01/2023**. https://www.nice.org.uk/guidance/cg103/chapter/recommendations . **Utilização:** indicadores de delirium, avaliação com 4AT fora da UTI e CAM-ICU ou ICDSC na UTI/recuperação pós-operatória, manejo causal e medidas ambientais.
+3. **National Institute for Health and Care Excellence (NICE).** *Self-harm: assessment, management and preventing recurrence.* NG225; 2022. https://www.nice.org.uk/guidance/ng225/chapter/recommendations . **Utilização:** perguntas de segurança e plano de cuidado; **não utilizar escores/estratificação global** para previsão de suicídio ou para decidir alta.
+4. **World Health Organization.** *mhGAP Intervention Guide for mental, neurological and substance use disorders in non-specialized health settings*, version 2.0, 2016. https://www.who.int/publications/i/item/9789241549790 . **Utilização:** cuidado clínico integrado e importância de adaptar protocolos ao ambiente não especializado. **Não copiar algoritmos protegidos sem verificar licença.**
+5. **World Health Organization.** *ICD-11 for Mortality and Morbidity Statistics (MMS)*, plataforma terminológica/estatística oficial. https://icd.who.int/browse/2025-01/mms/en . **Utilização:** nomenclatura de categorias; disponibilidade da versão/idioma de adoção nacional deve ser verificada, sem confundir com o CDDR clínico.
+6. **Ministério da Saúde, Brasil.** Documentos de Atenção Básica e Rede de Atenção Psicossocial (RAPS): **referência nacional a verificar na versão vigente antes de implementar rotas locais de atendimento, sigilo, manejo de crise e rede.** Não atribuir parágrafos, doses ou critérios a documentos não acessados.
+7. **Literatura-texto complementar** para revisão editorial presencial: *Sims' Symptoms in the Mind*, livro de psicopatologia descritiva; e *Kaplan & Sadock's Synopsis of Psychiatry*, para organização da semiologia. **Não foi aberta uma edição específica dessas obras nesta etapa**, e nenhuma afirmação exclusiva foi atribuída a páginas ou edição não conferidas.
+
+**Transparência editorial:** na pesquisa do Drive foi encontrado apenas um material curto sobre síndromes cognitivas/delirium, não apostila homônima de exame mental. O conteúdo é uma construção original da LURIA apoiada em referências externas explicitadas, não adaptação/coprodução do PDF privado. Antes de certificação, buscar **fonte brasileira atual para semiologia e normas assistenciais** e realizar revisão por docente/psiquiatra.
+
+## 18. Auditoria do manuscrito 210 — situação e próximos gates
+
+| Requisito | Situação verificável |
+|---|---|
+| Etapa zero, escopo e deduplicação com 211–215 | redigidos; benchmark homônimo no Drive **não localizado** |
+| Bases conceituais, funções mentais e neurobiologia | redigidas, evitando simplificações neuroquímicas |
+| Entrevista psiquiátrica e anamnese | redigidas com ética, segurança e contexto |
+| EEM completo | 13 subitens e exemplo de registro |
+| Pensamento: curso, forma, conteúdo | redigido com diferenciais |
+| Percepção, sono e sintomas dissociativos | redigido |
+| Delirium e alteração aguda de consciência | redigido com referências à NICE 2023 |
+| Síndromes depressiva, maníaca, ansiosa, psicótica, catatônica | redigidas; tratamentos completos remetidos às 211–215 |
+| Risco suicida, violência, consentimento e capacidade | redigidos; avaliação contextual conforme NICE NG225 |
+| Roteiros por APS, pronto atendimento, enfermaria e ambulatório | redigidos |
+| Fluxogramas e quadros de revisão | cinco fluxos e tabela de EEM |
+| Casos clínicos originais | **8**, cada um com hipótese, investigação, conduta e relevância |
+| Questões autorais de cinco alternativas comentadas | **12** |
+| Imagens didáticas | **10 candidatas propostas**, **0 obtidas/validadas/incorporadas** |
+| Referências reais | OMS, NICE e mhGAP identificados; atualização nacional pendente |
+| Meta 60 mil caracteres didáticos úteis | **não certificada**; medição bruta não substitui qualidade |
+| Revisão clínica independente e licenciamento de escalas | **pendentes** |
+| Testes dos scripts, HTML, PWA e renderização responsiva | **não executados** |
+| Deploy/merge | **não realizados** |
+
+**Parecer editorial:** a apostila apresenta cobertura semiológica ampla e múltiplas situações clinicamente úteis, porém permanece **manuscrito em revisão**. Para considerar “aprovada”, validar terminologia pelo especialista, confrontar cronograma com as aulas 211–215, resolver pendências de fontes brasileiras, incorporar somente imagens originais/licenciadas e executar auditorias do repositório. Não inflar texto artificialmente para cumprir tamanho numérico.
