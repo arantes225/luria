@@ -768,7 +768,7 @@ B) A certeza pode diferir por desfecho; eventos hemorrágicos raros podem levar 
 C) GRADE mede apenas tamanho de amostra, sem considerar viés ou aplicação.  
 D) Uma recomendação forte implica que o estudo avaliou todas as populações do mundo.
 
-**Gabarito: B.** **A:** avaliação é por desfecho e domínios. **B:** poucos eventos podem produzir IC amplos e incerteza de dano. **C:** os domínios incluem viés, inconsciência? Não: **inconsistência**, indireção, imprecisão e viés de publicação. **D:** recomendação integra benefícios, danos, valores e recursos, e não pressupõe universalidade. **Mini-revisão:** certeza de evidência e força da recomendação são conceitos relacionados, mas distintos.
+**Gabarito: B.** **A:** avaliação é por desfecho e domínios. **B:** poucos eventos podem produzir IC amplos e incerteza de dano. **C:** os domínios incluem risco de viés, **inconsistência**, indireção, imprecisão e viés de publicação. **D:** recomendação integra benefícios, danos, valores e recursos, e não pressupõe universalidade. **Mini-revisão:** certeza de evidência e força da recomendação são conceitos relacionados, mas distintos.
 
 ### Questão 11 — Rastreamento e lead-time
 Em um grupo, o câncer é diagnosticado aos 65 anos e a pessoa morre aos 70. Em outro, é diagnosticado por rastreamento aos 60 e a pessoa também morre aos 70. Qual fenômeno é exemplificado?
