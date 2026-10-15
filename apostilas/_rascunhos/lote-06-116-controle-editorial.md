@@ -90,3 +90,21 @@ Foi criado o arquivo **`lote-06-116-sindromes-glomerulares-edicao-consolidada.md
 
 ### Curadoria visual iniciada
 Criado `apostilas/_rascunhos/lote-06-116-imagens-candidatas-parciais.json` com **2 candidatas** provenientes de artigos científicos cujas páginas declaram licenças Creative Commons com atribuição: (1) padrão *full house* na nefrite lúpica (BMC Nephrology 2012, CC BY 2.0); (2) biópsia da nefropatia membranosa por **microscopia óptica** (Frontiers in Medicine 2020, CC BY). A natureza da Figura 1 de membranosa foi confirmada no artigo para evitar legenda equivocada como microscopia eletrônica. Nenhuma imagem foi inserida no HTML, importada para a fila ou aprovada pelo Admin. Ainda faltam candidatas adicionais, conferência clínica/atribuição por figura, compressão e a aprovação administrativa obrigatória.
+
+
+---
+
+## Etapa 5 — QA estrutural e fontes brasileiras (14/10/2026)
+
+**Arquivos produzidos na branch editorial (sem publicação):**
+- `lote-06-116-build-input-preliminar.json`: insumo JSON com **24 seções**, **11 referências** e texto original convertido em HTML sem novas imagens.
+- `lote-06-116-preview.html`: prévia da apostila no template de leitura LURIA, criada sob `_rascunhos/`, com aviso de não validação e bloqueio a indexadores.
+- `lote-06-116-teste-autossuficiencia.md`: matriz de 12 questões e conferência automatizada preliminar contra capítulos, sem substituir revisão clínica.
+
+**Validação automatizada no ambiente de edição:** 24 seções no HTML; 12 questões, 8 casos, 12 listas semânticas de alternativas A–D; 0 âncoras ausentes; 0 seções com conteúdo HTML de risco; nenhuma figura clínica nova embutida; tamanho de texto das seções (88586 caracteres antes da exclusão de casos/questões e de redundâncias). Os scripts oficiais em Node não foram executados neste ambiente: esta checagem é **pré-validação**, não `--dry-run` oficial nem certificação clínica.
+
+**Correção científica importante:** em 2025, duas decisões brasileiras modificaram o contexto de disponibilidade potencial na rede pública: Portaria SECTICS/MS nº 77/2025 (rituximabe em crianças/adolescentes com síndrome nefrótica primária corticodependente e recaída frequente) e nº 79/2025 (micofenolato de mofetila/sódio na síndrome nefrótica primária pediátrica). As decisões **não dispensam** verificação de PCDT e condições de fornecimento. A versão pediátrica atualizada passou por Consulta Pública nº 101/2025 e foi recomendada em reunião de 2026, mas a lista oficial consultada ainda identifica a norma de 2018 como protocolo publicado. 
+
+**Correção didática:** a questão 11 duplicava a questão 5 sobre indução na nefrite lúpica. Foi substituída por diferencial de endocardite com GN por imunocomplexos; todas as alternativas das 12 questões foram separadas no HTML em listas semanticamente estruturadas.
+
+**Pendências essenciais:** benchmark extenso do Drive com procedência confirmada; revisão médica independente e confirmação farmacológica; execução real dos scripts `build-apostilas-batch.cjs --dry-run`, `audit-apostilas-60k.mjs`, `audit-apostilas-batch.cjs` e `check-syntax.cjs`; inspeção visual e navegação mobile/PWA; identificação, licença e aprovação administrativa das imagens. **Não executar merge/deploy nem marcar como concluída.**
