@@ -622,3 +622,122 @@ A velocidade sistólica máxima da artéria cerebral média elevada sugere anemi
 As janelas de vigilância e parto citadas ao longo da aula representam referências ISUOG, SMFM e NICE e dependem de corionicidade, complicações e infraestrutura. A linguagem “considerar”, quando usada em prematuridade (progesterona/cerclagem em subgrupos selecionados), expressa **incerteza ou condicionalidade de evidência**, não uma ordem de tratamento. É indispensável revisar protocolos brasileiros vigentes antes de fornecer doses, prescrever fármacos ou orientar procedimento.
 
 **Auditoria de questões:** os dez itens anteriores testam classificação anatômica, TTTS, TAPS, sFGR, diferenças de cronograma, parto e óbito único. Faltam ainda avaliações independentes de correção de gabaritos e distratores e conferência da exatidão dos limiares em cada diretriz. **Imagens:** nenhuma licença comercial ou aprovação Admin documentada. **Texto:** ainda não há laudo confirmando 60 mil caracteres didáticos úteis por contagem descontando tabelas, referências e redundâncias; nenhum deploy ou catálogo foram alterados.
+
+
+## 23. Auditoria prática do laudo de ultrassonografia gemelar
+
+Um laudo de medicina fetal não deve apenas registrar duas estimativas de peso. Na primeira avaliação, o conjunto mínimo precisa permitir **reproduzir corionicidade, amnionicidade, idade gestacional e identificação de cada feto**. Nos exames seriados, o médico responsável deve poder verificar qual bolsa tinha determinada medida de líquido, a posição da placenta, os Dopplers e se a evolução é realmente comparável com a visita anterior.
+
+| Dado que precisa estar documentado | Por que muda a conduta | Erro frequente |
+| --- | --- | --- |
+| Corionicidade e amnionicidade | Define risco de comunicações vasculares e vigilância | Inferir monocorionicidade apenas por placenta aparentemente única no terceiro trimestre. |
+| Datação precoce e método | Sustenta percentis e momento do nascimento | Recalcular idade a partir do feto pequeno e mascarar RCF. |
+| Identificação reprodutível dos fetos | Permite comparar dados seriados | Chamar sempre de A o feto maior, mesmo quando muda. |
+| Líquido de **cada** saco | Rastreia sequência oligo/polidrâmnio | Medir líquido global e não reconhecer o saco doador. |
+| Bexigas na MCDA | Contribui para estadiar STFF | Considerar bexiga ausente sem observar pelo tempo adequado. |
+| ACM-PSV em MoM quando indicado | Rastreia anemia/policitemia da TAPS | Confundir velocidade sistólica máxima com índice de pulsatilidade. |
+| Artéria umbilical do feto menor | Define padrões de sFGR | Interpretar fluxo intermitente como normal ou “intermediário sem risco”. |
+| Anatomia e coração de cada feto | Identifica anomalias discordantes | Um laudo morfológico único sem correlacionar com cada feto. |
+| Condições maternas, PA e sintomas | Integra risco placentário e indicação de parto | Guiar o nascimento exclusivamente por um número de peso. |
+
+**Exemplo de laudo explicativo:** “MCDA, datada por ultrassom de primeiro trimestre; feto A junto à parede esquerda materna, líquido DVP 5,0 cm, bexiga visível, peso estimado no percentil 35; feto B à direita materna, DVP 4,0 cm, bexiga visível, peso estimado no percentil 22; sem evidência atual de sequência oligo/poli, com outros parâmetros descritos em separado.” Esse texto **não substitui exame completo**, mas mostra como documentar achados suficientes para seguimento em vez de registrar somente “gemelar compatível”.
+
+### 23.1 Como identificar deterioração que exige atenção imediata
+
+Se o ultrassom demonstra **sequência oligo/polidrâmnio**, ausência de bexiga do doador, edema/hidropisia, Doppler criticamente alterado ou deterioração abrupta da vitalidade, o encaminhamento a serviço de medicina fetal deve ser prioritário. **Não aguardar próxima consulta quinzenal** para TTTS que já satisfaz critérios de risco. Se há parto iminente, sangramento intenso, hipertensão com disfunção de órgãos ou estado materno instável, a avaliação obstétrica emergencial ocorre em paralelo à fetal.
+
+Uma paciente MCDA com dor abdominal e distensão uterina rápida pode ter polidrâmnio de receptor; uma paciente sem qualquer queixa pode ter TAPS ou sFGR importante. Sintomas não substituem rastreio ultrassonográfico, mas seu aparecimento pode antecipar a necessidade de avaliação.
+
+## 24. Gêmeos conjugados e gestação múltipla de ordem superior: reconhecer sem aprofundamento desproporcional
+
+Os **gêmeos conjugados** constituem condição rara associada a desenvolvimento embrionário com continuidade anatômica entre fetos. A ultrassonografia precoce pode sugeri-los quando não se identifica separação de determinados segmentos anatômicos e há movimento/posição persistente conjunta; a confirmação requer exame anatômico de alta resolução por equipe experiente. O diagnóstico não se faz simplesmente pela proximidade dos fetos no saco amniótico. Avaliar **órgãos compartilhados**, especialmente coração, fígado, trato gastrointestinal e estruturas cranianas, orienta prognóstico e viabilidade de separação pós-natal.
+
+Conselhos sobre prognóstico devem evitar frases absolutas: a complexidade depende da topografia e de estruturas compartilhadas. Planejamento envolve medicina fetal, cirurgia pediátrica, cardiologia, neonatologia, genética e apoio familiar. Pode ser necessária RM fetal para delimitar anatomia; conduta e questões éticas dependem de avaliação individual, recursos e legislação.
+
+Em **trigêmeos e gestações superiores**, não basta multiplicar o número de exames ou copiar o calendário de DCDA. É necessário descrever corionicidade e amnionicidade de **cada par**, datação, risco de prematuridade e plano de acompanhamento de centro especializado. Gestações com componente monocoriônico devem ter vigilância correspondente ao risco de circulação compartilhada, sem pressupor que todos os fetos estão na mesma placenta.
+
+## 25. Comunicação clínica no ambulatório de alto risco
+
+Uma consulta de gestação gemelar de qualidade precisa traduzir a anatomia placentária em um plano compreensível à família. Em linguagem clínica acessível:
+
+- **DCDA:** “Os bebês têm placentas separadas. Vamos acompanhar crescimento e saúde materna, sobretudo parto prematuro e diferenças de crescimento.”
+- **MCDA:** “Eles compartilham a placenta, mas ficam em bolsas distintas. Os vasos da placenta podem comunicar as duas circulações; por isso os ultrassons são mais frequentes desde cedo.”
+- **MCMA:** “Além da placenta compartilhada, não há separação amniótica entre os fetos. O acompanhamento e o planejamento do nascimento precisam ser feitos em serviço com experiência específica.”
+
+Não se deve afirmar que toda gestação MCDA terá transfusão feto-fetal, nem apresentar uma US inicial normal como garantia de ausência futura. Orientar **como acessar o serviço** se a paciente apresenta sangramento, perda de líquido, contrações prematuras, cefaleia intensa, dificuldade respiratória ou diminuição dos movimentos fetais quando já perceptíveis. Registrar decisão compartilhada acerca da maternidade de referência e disponibilidade neonatal.
+
+## 26. Casos complementares de integração
+
+### Caso 7 — Colo curto não equivale a parto inevitável
+
+**Apresentação:** DCDA de 21 semanas, sem contrações, comprimento cervical transvaginal 19 mm em exame tecnicamente adequado. Sem dilatação documentada; história prévia de parto a termo.
+**Hipótese:** maior risco de parto prematuro espontâneo, sem evidência clínica atual de trabalho de parto.
+**Raciocínio:** colo ≤25 mm favorece identificar grupo de risco, mas o achado não determina semana do parto. Protocolos variam para progesterona e cerclagem em gemelares; a ISUOG considera progesterona vaginal em colo ≤25 mm com nível de evidência limitado, e cerclagem em subgrupos específicos de muito curto/dilatado. Não aplicar automaticamente um esquema de gestação única.
+**Exames e conduta:** confirmar medida, revisar sintomas e história, discutir conduta com serviço de alto risco, orientar sintomas de alerta e evitar repouso absoluto como tratamento universal.
+**Por que importa:** distingue *rastreio de risco* de diagnóstico de trabalho de parto.
+
+### Caso 8 — Feto bomba em TRAP
+
+**Apresentação:** MCDA de 19 semanas em centro especializado, com feto A estruturalmente preservado e massa/feto acárdico perfundido em sentido reverso ao Doppler; feto A apresenta sinais progressivos de sobrecarga.
+**Hipótese:** sequência TRAP com ameaça hemodinâmica ao feto bomba.
+**Raciocínio:** anastomoses mantêm circulação da massa acárdica pelo feto A, impondo débito adicional. Não é TTTS clássica porque o achado principal é perfusão retrógrada de massa acárdica, não oligo/poli.
+**Exames e conduta:** avaliação Doppler/hemodinâmica seriada, estratificação de risco e discussão de bloqueio vascular por terapia fetal em centro habilitado, com aconselhamento sobre perdas gestacionais e incertezas.
+**Por que importa:** o risco grave envolve o feto relativamente bem desenvolvido, que pode parecer normal no exame isolado.
+
+## 27. Questões complementares
+
+### Questão 11 — Cervicometria em gemelares
+Gestante DCDA assintomática com 21 semanas apresenta colo de 20 mm. Qual interpretação é mais adequada?
+
+A. Confirma trabalho de parto ativo.
+B. Exige cesárea imediata.
+C. Identifica maior risco de prematuridade e requer avaliação individualizada; não impõe automaticamente conduta da gestação única.
+D. Determina cerclagem universal em toda gemelar.
+E. Impede qualquer ultrassonografia posterior.
+
+**Gabarito: C.** A confunde medida e trabalho de parto; B não decorre de colo curto; D ignora diferenças de evidência e subgrupos; E é ilógico. **Revisão:** risco, sintoma, dilatação, antecedentes e protocolo formam o plano.
+
+### Questão 12 — TRAP
+Na sequência de perfusão arterial reversa gemelar, qual feto está especialmente ameaçado por sobrecarga circulatória?
+
+A. Apenas o feto acárdico, por insuficiência pulmonar isolada.
+B. O feto bomba que perfunde a massa acárdica por anastomoses.
+C. Apenas a gestante por isoimunização anti-D.
+D. Exclusivamente o feto com placenta independente.
+E. Nenhum, pois o fluxo reverso é fisiológico.
+
+**Gabarito: B.** A ignora mecanismo central; C/D são síndromes distintas; E nega repercussão hemodinâmica. **Revisão:** identificar perfusão anômala e risco cardíaco do feto bomba.
+
+### Questão 13 — Laudo MCDA
+Qual campo não deve faltar no seguimento ultrassonográfico de uma gestação MCDA?
+
+A. Apenas uma medida global de líquido.
+B. Apenas peso médio dos fetos.
+C. DVP **por saco**, bexiga de cada feto e avaliação serial de crescimento/Dopplers conforme protocolo.
+D. Apenas frequência cardíaca materna.
+E. Repetir apenas no parto quando não houver sintomas.
+
+**Gabarito: C.** A/B não permitem detectar TTTS e alteração seletiva; D/E ignoram risco fetal. **Revisão:** medidas devem ser atribuídas individualmente.
+
+### Questão 14 — Via e estrutura do serviço
+DCDA sem complicações, primeiro feto cefálico e segundo em apresentação variável. Qual fator é indispensável na discussão de parto vaginal?
+
+A. Somente a preferência de reduzir ocupação do centro cirúrgico.
+B. Disponibilidade de equipe treinada em assistência ao segundo gemelar e possibilidade de intervenção rápida.
+C. Proibição absoluta de monitorar ambos os fetos.
+D. Garantia de que segundo feto nunca mudará de apresentação.
+E. Ausência de neonatologista.
+
+**Gabarito: B.** A desconsidera segurança; C/D são falsos; E negligencia cuidado dos dois recém-nascidos. **Revisão:** aptidão da equipe e infraestrutura fazem parte da indicação.
+
+## 28. Controle de qualidade desta revisão
+
+Foram acrescentados dois casos novos e quatro questões originais, além do checklist de US, gestação superior e comunicação clínica. A **diretriz ISUOG 2025** é referência primária para gemelaridade; o **documento SMFM #72 (2024)** é específico de TTTS/TAPS e NICE NG137 orienta calendário e parto em seu contexto.
+
+**Não certificado:** exigem revisão especializada a nomenclatura/limiares exatos por guia, checagem das normativas brasileiras, licença das imagens e teste de autossuficiência. Mesmo ultrapassando eventual meta de caracteres brutos, **o texto não deve ser promovido ao site automaticamente**. Os arquivos de pré-natal, crescimento e vitalidade existentes foram preservados.
+
+**Fontes oficiais:** 
+- https://www.isuog.org/resource/updated-isuog-practice-guideline-role-of-ultrasound-in-twin-pregnancy.html
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC11788470/
+- https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/
+- https://www.nice.org.uk/guidance/ng137/chapter/Recommendations
