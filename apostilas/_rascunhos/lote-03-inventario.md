@@ -8,8 +8,8 @@
 |---|---|---|---|
 | 047 | Cirurgia Geral | Trauma: atendimento inicial e ABCDE | Manuscrito original aberto em apostilas/_rascunhos/lote-03-047-trauma-atendimento-inicial-xabcde.md. Atualizar para ATLS 11 xABCDE, sem publicar antes da auditoria. |
 | 048 | Pediatria | Imunizações na infância | **Etapa zero auditada em 15/10/2026**, registro em apostilas/_rascunhos/lote-03-048-imunizacoes-auditoria.md. Comparado PDF PNI 2020 do Drive (antigo), calendário oficial do MS 2026 e manuscrito PNI 135 (84.010 caracteres brutos). Não duplicar; módulo pediátrico autossuficiente ainda pendente de decisão editorial. |
-| 049 | Ginecologia e Obstetrícia | Gestação ectópica | **Já ensinada** em apostilas/hemorragias-primeiro-terceiro-trimestre/index.html, capítulo próprio “Gestação ectópica e gestação de localização desconhecida”. Aprofundar capítulo existente e avaliar necessidade de página autônoma apenas após auditoria. |
-| 050 | Medicina Preventiva | Financiamento e gestão do SUS | Não localizada pasta própria na listagem inicial. Verificar cobertura em conteúdos de SUS antes da criação. |
+| 049 | Ginecologia e Obstetrícia | Gestação ectópica | **Etapa zero auditada em 15/10/2026**; rascunho de auditoria e complemento autoral em apostilas/_rascunhos/lote-03-049-gestacao-ectopica-auditoria-complemento.md (21.726 caracteres brutos). Preservado capítulo existente em hemorragias-primeiro-terceiro-trimestre; integrar apenas lacunas com validação NICE/FEBRASGO. |
+| 050 | Medicina Preventiva | Financiamento e gestão do SUS | **Manuscrito original iniciado** em apostilas/_rascunhos/lote-03-050-financiamento-gestao-sus.md (69.468 caracteres brutos; 6 casos e 10 questões). Benchmark Drive foi apenas SUS.pdf correlato, sem apostila específica; LC 141, Constituição, Portaria 10.994/2026 e MS usados como fontes primárias. Em revisão; não publicado. |
 | 051 | Clínica Médica | DPOC | Não localizada pasta própria. Exige benchmark específico, GOLD atualizado, conduta clínica e exacerbações. |
 | 052 | Cirurgia Geral | Traumatismo cranioencefálico | Não localizada pasta própria; capítulo 047 trata somente reconhecimento e estabilização, não substitui a aula 052. |
 | 053 | Pediatria | Desidratação e terapia de reidratação | Não localizada pasta própria; cruzar com nº 058 (diarreia aguda) para evitar repetição do mesmo algoritmo terapêutico. |
@@ -69,3 +69,14 @@
 - [ ] Teste de autossuficiência com questões e cobertura de objetivos curriculares.
 - [ ] Imagens reais aprovadas pela fila Admin, com licença e atribuição.
 - [ ] Teste desktop/PWA e confirmação de publicação somente após aprovação explícita.
+
+## 6. Avanço adicional em 15/10/2026 — aulas 049 e 050
+
+- **049 — Gestação ectópica:** documento “02 - SANGRAMENTO DA PRIMEIRA METADE.pdf” aberto no Drive (seção de ectópica de resumo antigo). Obra LURIA existente em apostilas/hemorragias-primeiro-terceiro-trimestre/index.html lida e preservada. Complemento original com PUL, armadilhas do beta-hCG, ultrassonografia, contraindicações de MTX, seguimento, diferenciais, quatro microcasos e seis questões. Diretriz NICE NG126 consultada; não copiar texto do Drive ou contar caracteres existentes duas vezes.
+- **050 — Financiamento e gestão do SUS:** buscas no Drive por financiamento, SIOPS, LC 141, orçamento e planejamento não localizaram apostila específica. “SUS.pdf” (resumo correlato) aberto; etapa zero estritamente específica permanece incompleta. Fontes oficiais de outubro de 2026 consultadas; manuscrito autoral de 69.468 caracteres brutos, seis casos e dez questões com pisos de ASPS, blocos e transição APS 2026, sem publicação nem verificação final de 60 mil caracteres úteis.
+- **Estado da branch:** editorial/apostilas-lote-03-trauma-20261015, não mesclada a main; nenhuma alteração aplicada ao site público.
+
+### Próximas necessidades de auditoria
+1. Revisar se os conceitos novos da 049 agregam algo ao capítulo obstétrico existente e integrar apenas contribuições, sob decisão editorial.
+2. Verificar nos textos legais e na Nota Técnica nº 8/2026 as dimensões finas do cofinanciamento antes de converter a 050 em material normativo.
+3. Encontrar benchmark Drive realmente equivalente para a aula 050, cumprir testes de autossuficiência e auditoria de 60K úteis, sem elevar metragem por reexplicações.
