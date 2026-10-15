@@ -46,6 +46,18 @@ Atualizado em 15/10/2026. **Planejamento de revisão, não certificação de que
 - Um capítulo pode cobrir aulas complementares Diamante/Alta/Média/Baixa. A mesma aula não deve gerar várias apostilas; a correspondência pode indicar referências complementares quando necessário.
 - Todos os arquivos foram alterados apenas em uma branch e abertos em PR rascunho; **nada foi implantado na main**.
 
+## Handoff operacional dos próximos lotes
+
+**LEITURA OBRIGATÓRIA NO PRÓXIMO CHAT:** `docs/apostilas/CONTINUAR_PROXIMO_CHAT_LOTES_11_13.md`.
+
+**CONTROLE EDITÁVEL POR CARD:** `docs/apostilas/lotes-11-13-controle-revisao.json`.
+
+Os **55 cards dos lotes 11, 12 e 13** já possuem instruções individuais com dados MedCof/ENAMED: 35 originais sem produção presumida, 16 propostas novas ainda não iniciadas e 4 apostilas publicadas indexadas. Cada novo conteúdo está marcado como produção futura, e cada incorporação é uma **pendência explícita de conferência/complementação**.
+
+Na interface, todos os cards que possuam aulas mapeadas exibem **COMPLEMENTAR NA PRÓXIMA REVISÃO · SE AUSENTE** ou o equivalente de nova/publicada. O painel expansível distingue **destino principal** de **referência cruzada**, e apresenta classificação e página da aula MedCof.
+
+A revisão deve ocorrer na ordem 11 → 12 → 13, sem supor que o lote 10 esteja terminado; retomar o 10 apenas após confirmar com o usuário. Não editar a branch `main` nem publicar automaticamente: confirmar os conflitos com trabalhos paralelos no Codex antes do merge do PR #41.
+
 ## Como retomar o trabalho com outro chat/Codex
 1. Abrir `docs/apostilas/medcof-401-correspondencia.json` para obter o destino exato da aula e `assets/js/apostilas-editorial-enamed-2026.js` para as instruções adicionais do card.
 2. Conferir todos os tópicos da chave `notes[número].instruction` e o texto real da apostila.
