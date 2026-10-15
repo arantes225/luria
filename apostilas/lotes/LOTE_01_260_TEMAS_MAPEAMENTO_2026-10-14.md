@@ -17,7 +17,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Rascunho expandido `apostilas/diagnostico-datacao-gestacao/content.json`: 13 seções, 12 casos, 18 questões, ~65.113 caracteres aparentes — **não publicado/não certificado** |
 | 10 | Medicina Preventiva | Lei nº 8.080/1990 | Rascunho novo em `apostilas/lei-8080-1990/content.json`: 16 seções, 9 casos, 18 questões, 15 tabelas, ~63.658 caracteres aparentes — **não publicado, não certificado** |
 | 11 | Clínica Médica | Hipertensão arterial sistêmica | Rascunho em `apostilas/hipertensao-arterial-sistemica/content.json` — **não publicado, não certificado** |
-| 12 | Cirurgia Geral | Resposta metabólica ao trauma | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 12 | Cirurgia Geral | Resposta metabólica ao trauma | Novo rascunho em `apostilas/resposta-metabolica-ao-trauma/content.json`, 15 seções, 8 casos, 15 questões e 13 tabelas; >66 mil caracteres aparentes antes do acréscimo BRASPEN — **não publicado/não certificado** |
 | 13 | Pediatria | Prematuridade e baixo peso ao nascer | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 14 | Ginecologia e Obstetrícia | Exames e rastreamentos no pré-natal | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 15 | Medicina Preventiva | Lei nº 8.142/1990 | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **11 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 9, 11 e 16, 10) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses onze temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
-- Os outros **11 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **12 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 9, 11 e 16, 10) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses onze temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
+- Os outros **10 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
@@ -112,3 +112,12 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 - **Pendente:** revisão detalhada de disposições finais (arts. 39–55), ressalvas sobre exceções do art. 19-T, conferência de vigência das normas, revisão jurídica e editorial humana, prova de autossuficiência, teste PWA/desktop. **Não declarar completo; sem index.html, catálogo, merge ou deploy.**
 
 - **Revisão adicional 15/10/2026 (tema 010):** acrescidos arts. 39–55, transparência de espera e ressalvas às exceções do art. 19-T. Auditoria posterior: JSON válido, 16 seções e IDs únicos, 9 casos, 18 questões com gabaritos, 15 tabelas, ~63.658 caracteres aparentes sem parágrafo literalmente repetido. Meta quantitativa ultrapassada; ainda sem aprovação jurídica/semântica, teste desktop/PWA, curadoria visual, merge ou deploy.
+
+
+## Continuação de 15/10/2026 — tema 012: Resposta metabólica ao trauma
+
+- **Etapa zero:** inventário de apostilas do GitHub, leitura de `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` para delimitação curricular e leitura efetiva de três PDFs de tema correlato no Drive (`INTENSIVA - POLITRAUMA E QUEIMADURAS`, `CHOQUE - ABORDAGEM INICIAL` e `TRAUMA REVISAO ABCDE`). Autoria de cursinho não confirmada; referência específica de fisiologia do trauma não encontrada, limitação registrada em `apostilas/lotes/TEMA_012_RESPOSTA_METABOLICA_TRAUMA_AUDITORIA_2026-10-15.md`. Sem cópia de materiais do Drive.
+- **Rascunho:** `apostilas/resposta-metabolica-ao-trauma/content.json`, criado e ampliado com fisiologia ebb/flow (sem cronômetro fixo), eixo simpático/cortisol/ADH/SRAA, DAMPs/citocinas/albumina, carboidratos/lipídios/proteólise, oferta de O₂, lactato e base deficit, coagulopatia/lesão endotelial, disfunção multissistêmica, nutrição com prevenção de realimentação, situações especiais e prognóstico funcional. Inclui **8 casos e 15 questões originais**, quadros e referências rastreáveis.
+- **Diretrizes:** Rossaint et al., guideline europeu de hemorragia traumática 2023; ESPEN nutrição em UTI 2023, ESPEN nutrição cirúrgica 2025; **BRASPEN 2023**, com recomendação de nutrição enteral para trauma em 24–48h após estabilidade hemodinâmica. Não universalizar glutamina ou alimentar durante choque não controlado.
+- **Auditoria estrutural preliminar:** JSON válido, IDs de sumário consistentes, 15 seções, 13 tabelas, 8 casos, 15 questões com gabaritos e 0 repetições literais integrais; antes da complementação brasileira, ~66.681 caracteres aparentes. A métrica não demonstra ausência de redundância semântica nem qualidade científica.
+- **Pendências obrigatórias:** revisão médica/nutricional independente, conferência de diretrizes aplicáveis ao Brasil, avaliação de autossuficiência com provas representativas, curadoria de imagens e aprovação no Admin, teste desktop/PWA, conciliação com temas 007/017/022 e com mudanças da main. **Não criar HTML/index, catálogo, merge ou deploy.**
