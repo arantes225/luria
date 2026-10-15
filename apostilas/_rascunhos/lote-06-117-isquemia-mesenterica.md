@@ -70,6 +70,13 @@ Em pessoa com suspeita clínica forte, repetir lactato enquanto adia a angioTC �
 
 A necessidade de decisão urgente impõe discussão apropriada de contraste iodado mesmo em portadores de injúria renal; o risco de perder intestino viável muitas vezes supera o risco de deterioração renal relacionada ao contraste. Avaliar alergias e aspectos técnicos sem atrasos perigosos. **Arteriografia não é o exame inicial obrigatório**; pode integrar procedimento diagnóstico-terapêutico quando a estratégia endovascular está indicada.
 
+
+#### Creatinina elevada versus tempo até reperfusão
+
+Um paciente com suspeita importante de IMA pode apresentar **creatinina elevada** por DRC anterior, desidratação, hipoperfusão ou lesão renal aguda em desenvolvimento. O contraste iodado exige avaliação e medidas preventivas apropriadas, mas **não existe justificativa para retardar por horas uma angioTC potencialmente salvadora da vida apenas aguardando a creatinina cair**, sobretudo quando a hipótese clínica é forte. WSES 2022 ressalta que angioTC deve ser realizada mesmo na presença de lesão renal aguda quando a avaliação de isquemia mesentérica é urgente.
+
+A conduta segura é avaliar histórico renal, hemodinâmica, volume, alergias prévias, necessidade de contraste e de planejamento cirúrgico em **paralelo** à preparação do exame, oferecendo ressuscitação individualizada. O médico deve explicar que o risco imediato de necrose intestinal pode ser superior ao risco renal por contraste. Em pessoas com contraindicação absolutamente relevante ou condições especiais, a equipe discute estratégia específica, sem transformar a exceção em motivo para não investigar todos os pacientes.
+
 ### 5.3 O que o laudo deve informar
 
 | Achado | Interpretação possível | Limitação |
