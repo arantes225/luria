@@ -392,3 +392,184 @@ Cada candidata futura deverá conter nome, instituição, autoria, tipo de licen
 | Testes HTML desktop/PWA e autossuficiência | Não aplicável ao Markdown | **PENDENTE** |
 
 **Decisão editorial final desta etapa:** conservar o manuscrito 228 como **rascunho em branch editorial**, não alterar `main`, não gerar HTML incompleto ou inserir imagens sem licença e não anunciar como apostila certificada. Próxima iteração: aprofundar critérios SGB/CIDP, miastenia e miosites, expandir 4+ cenários de interpretação de exames, alargar parte terapêutica com segurança e completar matriz formal de rastreabilidade questão→capítulo.
+
+
+## 19. Interpretação de resultados difíceis: clínica, ENMG, líquor e imagem
+
+### 19.1 O estudo eletrofisiológico não é uma “fotografia do diagnóstico”
+A eletroneuromiografia reúne habitualmente **estudo de condução nervosa** e **exame de agulha**. São testes complementares, com objetivos distintos. O exame de condução aplica estímulos elétricos em nervos e avalia respostas motoras e sensitivas; já o exame de agulha investiga atividade espontânea e padrão de recrutamento das unidades motoras. Ambos dependem de técnica, temperatura do membro, anatomia e seleção de segmentos.
+
+Na lesão **axonal**, a quantidade de axônios funcionais cai; o potencial motor ou sensitivo frequentemente tem **amplitude reduzida**. Na lesão **desmielinizante**, a transmissão do impulso fica lenta ou falha em segmentos: latências prolongadas, velocidades reduzidas, dispersão temporal e bloqueios de condução ajudam a reconhecer o mecanismo. Essas alterações não são exclusivas de uma etiologia; compressões focais e erros técnicos também podem produzir sinais que parecem desmielinização.
+
+Na **radiculopatia** típica, a lesão está proximal ao gânglio da raiz dorsal, e os potenciais sensitivos distais podem permanecer normais apesar de sintomas sensitivos; tal preservação ajuda na localização, mas não é regra absoluta quando coexistem neuropatias. No exame de agulha podem surgir sinais de desnervação e alterações de recrutamento em músculos de um mesmo miotomo. A distribuição e o momento da avaliação influenciam sensibilidade: exame feito precocemente pode não demonstrar alterações esperadas.
+
+Em **doença do neurônio motor inferior**, a presença de potenciais neurogênicos em vários territórios pode apoiar investigação; porém **ela não basta para diagnosticar ELA**, principalmente sem exame clínico, progressão e exclusão de mimetizadores. Na **miopatia**, unidades motoras de curta duração e baixa amplitude com recrutamento precoce podem ocorrer, dependendo de estágio e músculo. A realização de agulha em músculos acometidos por outras lesões pode confundir o resultado.
+
+**Pergunta clínica antes de pedir ENMG:** “Quero localizar compressão do mediano ou radiculopatia?”, “Existe padrão axonal ou desmielinizante adquirido?”, “Preciso diferenciar miopatia e doença do neurônio motor?”, “É necessário selecionar músculo para biópsia?”. Um pedido específico melhora seleção de nervos/músculos e a interpretação posterior.
+
+### 19.2 Testes negativos e probabilidade pré-teste
+Um exame negativo não tem o mesmo peso em todos os cenários. Se o paciente apresenta fraqueza aguda progressiva, areflexia e dificuldade para tossir, a gravidade clínica não desaparece após uma ENMG normal nos primeiros dias. Da mesma forma, dor em queimação com perda de sensibilidade térmica e exame convencional sem alteração pode representar comprometimento de fibras finas.
+
+A interpretação exige três perguntas:
+1. **O exame avalia a estrutura que suspeito estar lesada?** Condução convencional não documenta adequadamente as fibras autonômicas ou nociceptivas finas.
+2. **O momento do exame permite encontrar o fenômeno?** Certas alterações levam dias ou semanas a tornar-se detectáveis; repetir estudo pode ser razoável.
+3. **O laudo resolve a etiologia ou apenas descreve mecanismo/localização?** “Polineuropatia axonal” exige investigar causas; “miopatia” não indica automaticamente autoimunidade.
+
+### 19.3 LCR na SGB e CIDP
+A dissociação albuminocitológica corresponde à **elevação proteica com contagem celular baixa**, mas é apenas um **dado de suporte**. Na SGB, a proteína pode ser normal na primeira semana. Em CIDP, elevação discreta da proteína liquórica sem forte sustentação eletrofisiológica não basta para o diagnóstico — especialmente em pessoas mais velhas ou com outras condições que elevam proteínas. Células em número elevado, sobretudo pleocitose significativa, deslocam a investigação para infecções, infiltrados, inflamação de outra natureza e doença neoplásica. O líquor deve ser interpretado à luz da cronologia, do exame e da segurança de punção.
+
+### 19.4 CK: números elevados e perguntas melhores
+CK (CPK) não é marcador específico de miosite inflamatória. Uma elevação discreta pode decorrer de exercício intenso, injeção intramuscular, trauma, massa muscular individual, variação de referência e medicamentos. Elevações importantes exigem pensar em rabdomiólise e função renal, sobretudo quando associadas a urina escura, desidratação, fraqueza intensa ou distúrbios de potássio.
+
+Em pessoa usando estatina, diferenciar:
+- **Mialgia com CK normal ou pouco elevada:** verificar relação temporal, outras causas e decisão compartilhada sobre manter, ajustar ou interromper temporariamente o medicamento.
+- **Miopatia tóxica por estatina:** quadro costuma melhorar com suspensão, mas tempo e gravidade variam.
+- **Miopatia necrosante imunomediada associada a anti-HMGCR:** fraqueza e CK persistentemente muito elevadas ou progressivas mesmo após retirada tornam necessária investigação especializada.
+- **Rabdomiólise:** avaliação urgente da função renal/eletrólitos, gravidade e precipitantes.
+
+**Pegadinha clínica:** transaminases elevadas acompanhando CK muito elevada podem ter contribuição muscular. Não concluir hepatopatia ativa apenas por AST/ALT sem examinar fígado, hemólise, bilirrubina e padrão de enzimas.
+
+## 20. Grandes decisões de urgência: quem não pode receber alta
+
+### 20.1 Quando a fraqueza respiratória está começando
+Em condições neuromusculares agudas, **avaliar diariamente ou mais frequentemente** a tendência da força respiratória quando houver risco; a frequência depende de gravidade e unidade. O paciente pode permanecer rosado e com oximetria normal até tarde. Preocupa mais a combinação de fraqueza cervical/axial, piora rápida, tosse fraca, dispneia supina, incapacidade de completar frases, disfagia e parâmetros ventilatórios seriados em deterioração.
+
+Capacidade vital e pressão inspiratória negativa podem apoiar acompanhamento; limiares numéricos conhecidos na prática precisam ser interpretados com habilidade técnica, obesidade, colaboração, dor e doença pulmonar preexistente, não funcionam como único gatilho absoluto. Um paciente que não consegue proteger via aérea por disfagia e secreções pode demandar suporte intensivo **mesmo sem** queda impressionante de capacidade vital.
+
+A **ventilação não invasiva** pode ser útil em cenários selecionados e sob equipe treinada, mas dificuldade bulbar, aspiração, secreções e progressão veloz podem torná-la insegura como substituta de proteção invasiva de via aérea. A decisão é intensivista, clínica e dinâmica.
+
+### 20.2 A instabilidade autonômica pode ser o problema dominante
+Na SGB, pacientes podem apresentar episódios de hipertensão, hipotensão, bradicardia, taquicardia, íleo e distúrbios urinários; reconhecer disautonomia evita tratar números isolados sem contexto. A monitorização cardíaca e hemodinâmica ganha importância quando há grande fraqueza ou variação autonômica. Não usar sedativos sem avaliação de risco respiratório.
+
+### 20.3 Lesão medular que imita doença periférica
+Fraqueza flácida no começo de uma lesão medular aguda pode coexistir com reflexos temporariamente diminuídos, confundindo localização. Dor axial intensa, nível sensitivo, retenção urinária e evolução após trauma ou em pessoa com neoplasia/infecção devem provocar investigação urgente de compressão ou inflamação medular. Na dúvida entre mielopatia e neuropatia periférica com déficit grave, priorizar o caminho diagnóstico que não atrase descompressão ou terapia tempo-dependente.
+
+### 20.4 Fraqueza aguda com CK e urina escura
+Pedir eletrólitos, renal, CK seriada e avaliação de fatores precipitantes. A abordagem exige avaliar hipercalemia, insuficiência renal aguda e síndrome compartimental quando houver dor desproporcional/compartimento tenso. Evitar atribuir toda urina escura a mioglobinúria sem avaliação urinária/hematológica. A estratégia hídrica deve individualizar risco de sobrecarga e comorbidades, especialmente cardiopatia e doença renal.
+
+## 21. Doenças musculares endócrinas, metabólicas e medicamentosas
+
+### 21.1 Hipotireoidismo, tireotoxicose e distúrbios eletrolíticos
+Hipotireoidismo pode produzir mialgia, cãibras, fraqueza proximal e CK elevada, às vezes com reflexos de relaxamento lento. Tireotoxicose pode causar miopatia proximal predominantemente motora, além de sinais hipermetabólicos. Distúrbios de **potássio, cálcio, fósforo e magnésio** também modificam força muscular e transmissão nervosa; história de episódios, gatilhos alimentares, tireotoxicose e resultado eletrocardiográfico ajudam a distinguir paralisias periódicas de doença muscular inflamatória.
+
+Tratamento é **corrigir causa específica** e monitorar complicações, não administrar imunossupressão a toda fraqueza proximal. Eletrólitos devem ser repetidos com atenção a hemólise e à apresentação clínica antes de classificar quadro isolado. Fraqueza aguda com alterações importantes do potássio pode representar emergência cardíaca.
+
+### 21.2 Miopatia associada a glicocorticoides
+Uso prolongado de glicocorticoide em doses relevantes pode causar fraqueza proximal insidiosa, especialmente de cintura pélvica, sem dor importante e frequentemente com CK normal. Ocorre em pessoas que receberam corticoide justamente para doença inflamatória, criando armadilha: piora funcional não é sempre sinal de miosite mais ativa. Avaliar atividade inflamatória, força, dosagens, história de desmame e saúde muscular. **Nunca interromper abruptamente corticoide prolongado** sem avaliação de eixo adrenal e necessidade de desmame.
+
+### 21.3 Deficiências nutricionais e cirurgia gastrointestinal
+Deficiência de B12 pode produzir comprometimento medular e neuropatia periférica; se houver combinação de perda proprioceptiva, hiperreflexia e alteração de marcha, pensar em **mieloneuropatia**. Deficiência de cobre após cirurgia gastrointestinal pode imitar mielopatia sensitiva. Ingestão excessiva de vitamina B6 é causa de neuropatia sensitiva, em contraste com o uso frequentemente indiscriminado da vitamina como suplemento.
+
+Avaliar dieta, cirurgias de desvio intestinal, medicamentos, uso de suplementos e laboratórios direcionados antes de presumir doença idiopática. A correção da deficiência deve ser acompanhada de prevenção de novo déficit e revisão de absorção, pois dano neurológico avançado pode não reverter totalmente.
+
+### 21.4 Efeitos de quimioterapia e drogas
+A neuropatia induzida por quimioterapia frequentemente envolve fibras sensitivas distais e pode limitar dose ou persistir depois do tratamento. O agente implicado, quantidade acumulada, comorbidades e gravidade determinam decisões compartilhadas com oncologia; não suspender quimioterapia potencialmente curativa sem discussão. Medicamentos como metronidazol em exposição relevante, isoniazida sem proteção indicada e determinados antirretrovirais também têm perfis neurotóxicos.
+
+## 22. Autoanticorpos e miosites: quando o painel muda o raciocínio
+
+Autoanticorpo não é “nome da doença” isolado. Aumenta valor quando há fenótipo compatível, técnica validada e interpretação cuidadosa. Resultados fortemente positivos para múltiplos autoanticorpos raros e mutuamente incomuns podem ser artefato de painel; o quadro clínico deve orientar necessidade de confirmação.
+
+| Achado | Associação clínica importante | Cuidado interpretativo |
+|---|---|---|
+| Anti-Jo-1 e outros antissintetase | Síndrome antissintetase, artrite, Raynaud e DPI | Ausência de fraqueza não descarta quadro pulmonar predominante |
+| Anti-MDA5 | Dermatomiosite, inclusive amiopática, e risco de DPI rapidamente progressiva em certos fenótipos | O risco real depende de manifestações, parâmetros respiratórios e contexto; não basta sorologia |
+| Anti-TIF1γ | Dermatomiosite adulta com risco de neoplasia associado em grupos específicos | Fazer triagem estratificada, não diagnosticar câncer por exame isolado |
+| Anti-NXP2 | Miosite, disfagia, calcinoses em alguns fenótipos e associação oncológica dependente de contexto | Relacionar com idade de início e dados clínicos |
+| Anti-Mi-2 | Dermatomiosite com manifestações cutâneo-musculares características | Não garante ausência de complicações em indivíduo específico |
+| Anti-SRP | Miopatia necrosante imunomediada, por vezes grave | Associar CK, força, EMG, biópsia e avaliação especializada |
+| Anti-HMGCR | Miopatia necrosante imunomediada, podendo associar-se a estatina | Exposição a estatina não é condição obrigatória para o subtipo |
+
+### 22.1 Como planejar rastreamento de neoplasia na miosite
+O IMACS 2023 separa **risco padrão, moderado e alto** entre pessoas com **miosite inflamatória idiopática adulta** de início recente, com base em combinação de subtipo, autoanticorpos e dados clínicos. Isso significa que:
+- Não é aceitável ignorar perda de peso, sintomas persistentes, hemogramas alterados ou achados focais em pessoa com dermatomiosite.
+- Não é adequado pedir tomografia de toda a extensão corporal indiscriminadamente em qualquer pessoa com CK elevada.
+- Triagens populacionais apropriadas para idade e sexo permanecem indicadas, acrescidas de avaliação conforme estratificação.
+- A recomendação de vigilância não deve ser extrapolada automaticamente de miosite adulta para dermatomiosite juvenil ou miosite por corpos de inclusão confirmada, grupos que possuem perfis distintos na diretriz.
+- Complicações como **disfagia e DPI** devem ser triadas desde o começo; o rastreamento oncológico não substitui segurança clínica imediata.
+
+### 22.2 Quando a biópsia muscular é útil
+A biópsia pode revelar padrões de inflamação, necrose, depósitos ou doença metabólica, mas deve ser orientada por fenótipo, exames e **seleção correta do músculo**. Escolher músculo totalmente atrófico e com substituição gordurosa acentuada pode reduzir rendimento; escolher músculo submetido recentemente a punção de agulha pode confundir reação local. Ressonância muscular com sequências para edema e gordura pode ajudar a selecionar local. Alguns pacientes têm diagnóstico suficientemente sustentado por quadro, anticorpos e outros exames sem biópsia; outros necessitam patologia para diferenciar lesão hereditária de imune.
+
+## 23. Acompanhamento, funcionalidade e prevenção de danos
+
+### 23.1 Medir evolução de modo clinicamente significativo
+Repetir somente “força 4/5” não demonstra recuperação funcional. Registre distância percorrida, tempo para levantar da cadeira, uso de escadas, capacidade de manusear utensílios, frequência de quedas, intensidade de dor, atividades diárias, abertura de embalagens, deglutição e necessidade de ventilação, conforme doença. Uma pessoa pode ganhar amplitude e coordenação mesmo sem mudança imediata de CK ou anticorpo.
+
+**Na SGB**, identificar platô, recuperação, fadiga residual e necessidades de reabilitação; piora após estabilização exige reavaliar complicações, flutuações relacionadas a tratamento ou diagnóstico alternativo. **Na CIDP**, usar medidas objetivas seriadas para decidir se imunoterapia está fazendo diferença, evitando tratamento continuado baseado apenas em sensação de “discreta melhora”. **Na miastenia**, definir metas de capacidade de fala, mastigação, olhos, membros e qualidade de vida, vigilância respiratória e toxicidade da medicação. **Na miopatia**, acompanhar força, função, CK quando informativa, pele, pulmão e deglutição.
+
+### 23.2 Reabilitação não é prêmio após a cura
+Reabilitação inclui proteção de articulações, prevenção de contraturas, órteses para pé caído, treinamento de equilíbrio, assistência para mobilidade, adaptação de objetos, conservação de energia e educação. O plano muda conforme doença ativa, fadiga e presença de instabilidade ventilatória. Reabilitação precoce supervisionada pode reduzir incapacidades secundárias, porém exercício extenuante sem monitorização em doença aguda grave é inadequado.
+
+### 23.3 Conselhos de alta com retorno seguro
+Antes de alta ou tratamento ambulatorial, comunicar claramente sinais de retorno imediato: piora rápida de força, incapacidade de sustentar a cabeça, engasgo, mudança de voz, falta de ar ao deitar, síncope, retenção urinária, perda da marcha, dor axial com sinais esfincterianos, urina escura com fraqueza, dor muscular intensa e sintomas cardíacos. Ajustar orientações à compreensão e às condições sociais do paciente.
+
+## 24. Casos adicionais: integração entre mecanismos, exames e condutas
+
+### Caso 7 — Vitamina em excesso e dormência progressiva
+Mulher de 44 anos, sem diabetes, relata um ano de queimação e dormência distal com desequilíbrio, principalmente em ambiente escuro. Uso diário de suplementos múltiplos para “energia” e “nervos”, além de doses elevadas de complexo B adquiridas sem prescrição. Reflexos aquileus reduzidos; diminuição de posição/vibração. Não há fraqueza proximal importante.
+**Hipótese:** neuropatia sensitiva com possível toxicidade por piridoxina, sem excluir outras causas. **Raciocínio:** suplementação não é sempre inócua; história farmacológica inclui produtos de venda livre. **Exames:** documentar doses de B6, ENMG conforme fenótipo, avaliar glicemia, B12 funcional e causas de neuropatia; testar equilíbrio/risco de quedas. **Conduta:** evitar exposição potencialmente tóxica com orientação, corrigir défices específicos e acompanhar evolução/reabilitação. **Por que importa:** a conduta “dar mais vitaminas” pode perpetuar neuropatia.
+
+### Caso 8 — Oftalmoplegia, ataxia e reflexos abolidos
+Homem de 38 anos apresenta diplopia, dificuldade de coordenar marcha e arreflexia surgidas em cinco dias após quadro respiratório. Força de braços e pernas é pouco diminuída. Exame demonstra limitação de movimentos oculares, ataxia e reflexos abolidos.
+**Hipótese:** síndrome de Miller Fisher, variante do espectro Guillain-Barré. **Diferenciais:** lesão de tronco encefálico, Wernicke, intoxicações e causas vestibulares/centrais. **Exames:** avaliação neurológica urgente, exame de tronco, neuroimagem conforme suspeita, anti-GQ1b quando disponível, ENMG/líquor a critério. **Conduta:** monitorar evolução e risco bulbar/respiratório; necessidade de imunoterapia definida conforme gravidade e progressão. **Por que importa:** SGB não é obrigatoriamente fraqueza ascendente clássica.
+
+### Caso 9 — Ptose que piora após antibiótico
+Homem de 57 anos, miastenia anti-AChR positiva e estável, desenvolve pneumonia e recebe um novo medicamento. Passa a ter fala nasal, disfagia e tosse fraca. A oximetria permanece 97%.
+**Hipótese:** exacerbação miastênica precipitada por infecção e possivelmente modulada por fármaco. **Diferenciais:** encefalopatia séptica, lesão de tronco, aspiração e efeitos adversos independentes. **Exames:** avaliação hospitalar de função bulbar e ventilatória seriada, oximetria, exames de infecção, revisão de fármacos. **Conduta:** **não simplesmente suspender antibiótico eficaz sem alternativa**, mas revisar risco e substituir se apropriado, tratar infecção, considerar IVIG/plasmaférese e suporte ventilatório conforme gravidade. **Por que importa:** o risco respiratório é clínico mesmo com saturação normal.
+
+### Caso 10 — Fraqueza após corticoide prolongado
+Pessoa de 62 anos com artrite reumatoide usa glicocorticoide em dose significativa há muitos meses e começa a ter dificuldade progressiva para levantar-se da cadeira, sem febre, mialgia, rash ou disfagia. CK normal e força de cintura pélvica diminuída.
+**Hipótese:** miopatia induzida por glicocorticoide, sem descartar descondicionamento e miopatia inflamatória associada a outras doenças. **Raciocínio:** CK normal e fraqueza proximal pouco dolorosa em pessoa exposta sustentam suspeita; não são confirmação isolada. **Exames:** revisão de doses, função endócrina quando indicada, avaliação de atividade da doença, nutrição e fragilidade; outros testes se atipias. **Conduta:** discutir redução segura e gradual da exposição se viável, reabilitação, tratamento da doença de base por alternativas apropriadas. **Importância:** intensificar esteroide “pela fraqueza” pode piorar a causa.
+
+## 25. Questões avançadas de prova: interpretação em cenário
+
+### Questão 9
+Paciente com dor em queimação plantar e perda térmica, sem déficit de vibração e com estudo convencional de condução nervosa normal. Qual afirmação é melhor?
+A) A normalidade eletrofisiológica exclui qualquer neuropatia.
+B) O quadro pode corresponder a neuropatia de fibras finas.
+C) O padrão confirma mielite transversa.
+D) O monofilamento normal exclui alteração nociceptiva.
+**Gabarito B.** Exame de condução usual avalia principalmente fibras mielinizadas grossas; **A** é erro de sensibilidade do teste; **C** precisaria de sinais medulares; **D** é incorreta porque monofilamento pesquisa perda protetora e não toda nocicepção. **Conceito:** cada teste deve ser confrontado com a estrutura e função que mede.
+
+### Questão 10
+Pessoa com suspeita de CIDP apresenta proteína liquórica discretamente elevada, mas exame clínico sem fraqueza clara e ENMG sem critérios desmielinizantes. Qual conduta evita sobrediagnóstico?
+A) Prescrever IVIG vitalícia apenas pela proteína elevada.
+B) Reavaliar diagnóstico, buscar mimetizadores e correlacionar dados clínicos e eletrofisiológicos.
+C) Diagnosticar SGB por curso de dois anos.
+D) Diagnosticar miastenia por qualquer proteína alta.
+**Gabarito B.** CIDP depende de síndrome e evidência adequada; **A** expõe a iatrogenia; **C** ignora duração; **D** sem relação. **Conceito:** biomarcador isolado não substitui critérios.
+
+### Questão 11
+Em uma pessoa com fraqueza respiratória neuromuscular progressiva e tosse fraca, SpO₂ é 98%. A melhor decisão é:
+A) Alta porque a saturação afasta risco ventilatório.
+B) Vigilância clínica e avaliação de função ventilatória seriada em ambiente capaz de intervenção.
+C) Aguardar cianose para medir força respiratória.
+D) Prescrever benzodiazepínico para diminuir esforço.
+**Gabarito B.** Hipoventilação pode preceder dessaturação; **A/C** atrasam proteção respiratória; **D** pode piorar drive/segurança. **Conceito:** deglutição, tosse, fala e tendência funcional são mais informativas que SpO₂ isolada.
+
+### Questão 12
+Homem apresenta fraqueza proximal com CK persistentemente muito elevada após suspensão de estatina por período adequado. Qual hipótese merece investigação?
+A) Exclusivamente fadiga psicológica.
+B) Miopatia necrosante imunomediada associada a anti-HMGCR.
+C) Neuropatia distal simples.
+D) Miastenia apenas ocular.
+**Gabarito B.** Persistência da lesão muscular após suspensão sugere mecanismo imune em parte dos casos. **A** não explica CK; **C** e **D** não são as síndromes típicas. **Conceito:** CK + força + cronologia definem necessidade de investigação especializada.
+
+### Questão 13
+Pessoa com dermatomiosite de início recente e autoanticorpo associado a risco oncológico consulta sem sintomas de câncer. Conduta de rastreamento mais correta:
+A) Nunca investigar neoplasia em miosite.
+B) Utilizar estratificação de risco, somando programa populacional e exames adicionais proporcionais à categoria.
+C) Exigir biópsia de todos os órgãos.
+D) Solicitar apenas CK a cada ano.
+**Gabarito B.** IMACS 2023 orienta triagem baseada em risco e não por anticorpo isolado. **A** ignora associação; **C** seria danoso; **D** não avalia neoplasia. **Conceito:** autoanticorpos apoiam estratificação, mas o paciente é mais que o painel.
+
+### Questão 14
+Homem idoso apresenta fraqueza assimétrica de flexores profundos dos dedos e quadríceps, quedas há três anos e pouca resposta ao corticoide. Próximo passo preferível:
+A) Intensificar corticoide indefinidamente sem reavaliar.
+B) Investigar miosite por corpos de inclusão e retirar o rótulo automático de polimiosite refratária.
+C) Atribuir à miastenia ocular por ausência de febre.
+D) Tratar como SGB aguda.
+**Gabarito B.** Padrão músculo-temporal é característico; **A** arrisca dano; **C** e **D** têm clínica distinta. **Conceito:** distribuição muscular e cronologia mudam diagnóstico e tratamento.
+
+## 26. Nota de encerramento desta fase de redação
+Esta expansão acrescenta raciocínio original para ENMG e LCR, avaliação da gravidade respiratória, efeitos medicamentosos/nutricionais, interpretação de autoanticorpos, reabilitação, quatro novos casos e seis questões comentadas. **Ainda é obrigatório** fazer revisão médica afirmação a afirmação, conferir referências, auditar a proporção de caracteres realmente didáticos, selecionar e aprovar imagens clínicas reais em fluxo Admin e validar a futura edição HTML em desktop e PWA. Não tratar contagem bruta como selo de qualidade.
