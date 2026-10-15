@@ -54,6 +54,48 @@ Exame: peso, estatura, IMC, cintura, pressão arterial com manguito adequado, pu
 
 Avaliações conforme perfil: glicemia/HbA1c, lipídios, função hepática, função renal, risco cardiovascular, história de AOS, sinais de MASLD/MASH, exames para causas secundárias selecionadas. TSH é razoável em cenários clínicos sugestivos, mas hipotireoidismo não explica automaticamente obesidade grave. Avaliar risco de lesão de órgão, não apenas somar laboratórios.
 
+
+### 3.1 A consulta centrada no risco: o que investigar antes de escolher tratamento
+A primeira entrevista deve separar **causa do ganho de peso**, **repercussão clínica da adiposidade**, **consequências psicossociais**, **experiências prévias de tratamento** e **objetivos do paciente**. Perguntas abertas ajudam a reconhecer insegurança alimentar, horários de trabalho, uso de corticoides e psicotrópicos, falta de sono, compulsão alimentar e limitações físicas. A participação do paciente na decisão é indispensável, inclusive quando prefere inicialmente trabalhar apenas sintomas e comorbidades, sem estabelecer um peso-alvo específico.
+
+Uma história cronológica é superior ao simples registro do peso atual: obesidade desde a infância pode apontar para predisposição genética e ambiente familiar, enquanto **ganho importante e rápido** em adulto obriga a examinar edema, uso de medicamentos, gestação quando pertinente, alteração de atividade, apneia e causas endócrinas selecionadas. Hipotireoidismo costuma associar-se a ganho ponderal modesto, não justifica presumir que todo excesso de adiposidade decorra dele. Síndrome de Cushing deve ser considerada quando houver sinais discriminativos, como fraqueza muscular proximal, estrias largas violáceas, equimoses fáceis e osteoporose desproporcional; o rastreamento indiscriminado em todo paciente com obesidade aumenta falsos positivos.
+
+História farmacológica inclui dose e duração de glicocorticoides, antipsicóticos, alguns estabilizadores do humor, antidepressivos, anticonvulsivantes e insulinoterapia. O objetivo não é suspender tratamento psiquiátrico ou metabólico essencial, mas **identificar alternativas com menor repercussão ponderal** e analisar efeitos relativos com os especialistas. Também é necessário perguntar sobre produtos sem prescrição, hormônios, suplementos, injetáveis de procedência duvidosa, medicamentos comprados pela internet e possíveis intervenções anteriores.
+
+Avaliar transtornos alimentares sem pressupor que sejam consequência inevitável da obesidade: episódios de ingestão com perda de controle, sofrimento subjetivo, compulsões, métodos purgativos e restrições muito intensas mudam a estratégia nutricional e a segurança de medicamentos. A condição merece tratamento específico. Medidas apenas coercitivas de pesagem ou metas rígidas podem agravar sofrimento. O peso deve ser aferido com consentimento, privacidade e equipamento adequado.
+
+### 3.2 Exame físico além do IMC
+Medir estatura com estadiômetro, peso em balança com capacidade compatível, circunferência de cintura por ponto anatômico padronizado, pressão arterial com manguito adequado e frequência cardíaca. A **relação cintura/altura** é um indicador adicional da adiposidade central; sua interpretação exige considerar idade e população. Na pessoa idosa, IMC e perda de peso podem esconder sarcopenia; avaliar força de preensão, velocidade de marcha, levantar da cadeira e ingestão proteica quando indicado.
+
+Examinar sinais de **resistência à insulina** (acantose nigricans), hipercortisolismo quando sugerido pela história, obesidade com hipoventilação, edema, alterações dermatológicas, insuficiência venosa, osteoartrose, hérnias e estigmas de cirrose. Circunferência cervical aumentada, ronco e sonolência diurna motivam avaliação de AOS, mas o diagnóstico exige método adequado quando indicado. Antes de programar atividade física, verificar doença cardiovascular descompensada, limitações ortopédicas e risco de quedas.
+
+### 3.3 Exames iniciais: seleção com propósito
+Em contexto ambulatorial, glicemia/HbA1c, perfil lipídico, função renal, avaliação hepática, pressão arterial e avaliação de fatores cardiovasculares costumam ser relevantes, modulados por idade, condições prévias, sintomas e acesso. Exames para TSH, investigação de hipercortisolismo, prolactina, andrógenos ou hipogonadismo devem responder a **hipóteses clínicas específicas**; não produzir painel hormonal universal para todos. Transaminases isoladas não afastam fibrose de doença hepática metabólica; avaliação de risco de fibrose pode requerer cálculo não invasivo e encaminhamento.
+
+**Alerta de prova:** pedir insulina basal para calcular resistência insulínica não é exigência para diagnosticar síndrome metabólica na prática. HOMA-IR tem uso epidemiológico e situações de pesquisa, mas não deve substituir glicemia, HbA1c e avaliação clínica. Da mesma forma, uma bioimpedância com boa aparência gráfica não substitui identificação de pré-diabetes, AOS e doença renal.
+
+### 3.4 Diagnóstico diferencial de aparente ganho de peso
+| Situação | Pista diferencial | Avaliação direcionada |
+|---|---|---|
+| Excesso de tecido adiposo persistente | Ganho gradual e cintura aumentada | História, antropometria seriada, comorbidades |
+| Retenção hidrossalina | Ganho rápido, edema, dispneia ou ascite | Exame cardiopulmonar, renal/hepático e investigação conforme gravidade |
+| Gestação | Amenorreia e contexto reprodutivo | História, teste apropriado se pertinente, cuidado pré-natal |
+| Hipotireoidismo | Bradicardia, intolerância ao frio, pele seca, constipação, cansaço | TSH e T4 livre conforme contexto |
+| Hipercortisolismo | Estrias largas violáceas, fraqueza proximal, equimoses, fraturas desproporcionais | Rastreamento endócrino apenas se suspeita apropriada |
+| Ganho associado a medicamentos | Relação temporal com introdução/aumento de dose | Reconciliação terapêutica e alternativas seguras |
+| Alteração de composição corporal | IMC elevado por maior massa magra, edema ou atipia | Exame funcional e composição corporal quando agrega |
+
+### 3.5 Meta terapêutica deve ser clínica, não exclusivamente estética
+Pacientes com o mesmo IMC podem ter prioridades diferentes. Em um indivíduo com DM2 descompensado, reduzir HbA1c e simplificar tratamento pode ser mais relevante que alcançar um número na balança. Em outro com artrose do joelho, a meta pode ser caminhar sem dor. Em outro com AOS grave, melhorar sintomas, pressão arterial e tratamento ventilatório tem prioridade. **A magnitude da perda de peso não é um desfecho substituto perfeito** de risco cardiovascular, qualidade de vida ou necessidade de tratamento de complicações.
+
+Documentar objetivos em dimensões separadas: peso/cintura, pressão arterial, glicemia, lipídios, qualidade de sono, atividades diárias, dor, força, episódios de compulsão, função hepática e bem-estar psicológico. É possível haver melhora cardiometabólica antes de grandes mudanças ponderais; também é possível haver perda de peso acompanhada de desnutrição proteica, o que não representa sucesso clínico.
+
+### 3.6 Critérios de investigação e encaminhamento
+Encaminhar ou discutir com endocrinologia/nutrologia quando: suspeita de obesidade monogênica ou sindrômica de início muito precoce; doença endócrina complexa; múltiplas comorbidades refratárias; hipoventilação; dificuldade terapêutica por interação medicamentosa; gestação planejada com necessidade de ajuste de farmacoterapia; risco nutricional importante. A equipe nutricional e psicológica é útil não como requisito punitivo, mas como suporte técnico e emocional.
+
+O acesso a farmacoterapia e cirurgia depende de avaliação individual, regulação, disponibilidade e capacidade de seguimento. Uma recomendação de diretriz **não cria automaticamente cobertura pelo SUS ou pelo plano**. O material deve manter essa distinção explícita ao descrever as opções.
+
+
 ## 4. Síndrome metabólica e fisiopatologia integrada
 Síndrome metabólica reúne fatores inter-relacionados, incluindo adiposidade central, pressão arterial elevada, triglicerídeos elevados, HDL baixo e alterações glicêmicas; os limiares e requisitos específicos variam conforme critério adotado (NCEP ATP III, IDF, harmonização) e população. O diagnóstico não é condição indispensável para tratar cada fator isolado. Diferenciar **conceito de risco** de **diagnóstico de diabetes**: uma glicemia de jejum alterada dentro dos critérios da síndrome não basta, sozinha, para DM2.
 
