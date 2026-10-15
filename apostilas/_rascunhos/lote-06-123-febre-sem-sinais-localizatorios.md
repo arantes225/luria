@@ -484,3 +484,118 @@ Orientações verbais devem ser acompanhadas de material escrito em português c
 
 **Alta de baixo risco** exige orientações, seguimento, acesso e monitoramento ativo de culturas; sem isso, uma estratégia ambulatorial aparentemente eficiente pode ser insegura. A documentação deve explicitar por que o serviço considerou a criança de baixo risco, qual protocolo foi usado e quem fará a revisão dos resultados pendentes.
 
+
+
+## 28. Oito casos clínicos integradores comentados
+
+### Caso 1 — Recém-nascido de dez dias, boa aparência e febre
+
+**Apresentação:** recém-nascido a termo com dez dias de vida, sem internação neonatal prolongada, é levado à emergência porque a mãe mediu 38,2°C em casa. Após uma mamada e retirada de cobertores, a triagem encontra 37,5°C; o bebê está corado e desperta ao estímulo, sem tosse, diarreia ou dificuldade respiratória. Os cuidadores perguntam se podem voltar para casa porque “a febre passou”.
+
+**Hipótese e diferencial:** febre documentada em neonato de dez dias **sem foco aparente**, com risco de **infecção bacteriana invasiva** e, conforme história e achados, HSV neonatal. Bom aspecto e temperatura normal no momento do exame não excluem doença. Desidratação ou calor ambiental podem ser considerados, mas não comprovam etiologia benigna.
+
+**Raciocínio:** a idade coloca o bebê em **8–21 dias AAP 2021**; não aplicar a mesma regra de alta de criança de 45 dias ou pré-escolar. História gestacional, colonização GBS, prematuridade, ruptura de membranas e antibióticos maternos ajudam a estimar risco adicional, mas ausência desses fatores não zera a chance de IBI.
+
+**Exames:** avaliação hospitalar com cultura sanguínea, urina por método adequado, EAS, avaliação de LCR conforme protocolo AAP e exames adicionais por quadro, incluindo HSV se houver achados relevantes. Coletar antes da terapia quando possível sem atrasar cuidados críticos.
+
+**Conduta:** avaliação pediátrica hospitalar e antibioticoterapia parenteral empírica com cobertura neonatal, internação/monitoramento de culturas segundo algoritmo. Não prescrever antitérmico e alta como conduta isolada.
+
+**Erro crítico:** interpretar melhora térmica como teste de exclusão de meningite. **Por que importa:** o risco do neonato é determinado principalmente por idade e vulnerabilidade, não pelo número no termômetro após medicação.
+
+### Caso 2 — 25 dias, biomarcadores baixos e a falsa “regra dos dois meses”
+
+**Apresentação:** lactente de 25 dias, nascido a termo, bom aspecto, febre retal de 38,0°C, sem foco ao exame. Hemocultura/urina estão sendo coletadas; PCT 0,15 ng/mL, PCR 5 mg/L e ANC 3.100/µL. O plantonista comenta: “PCT baixa, não precisa avaliar LCR nem observar; podemos dar alta sem retorno”.
+
+**Hipótese:** febre sem foco em **22–28 dias**, com biomarcadores inicialmente favoráveis. Mesmo com menor risco estimado em comparação com resultados alterados, não é equivalente ao estrato 29–60 dias.
+
+**Raciocínio:** a AAP 2021 possui recomendações específicas para 22–28 dias. A CPS 2026 pode propor opções de investigação/observação no neonato de baixo risco, mas com critérios e estrutura de acompanhamento próprios. PCT baixa isolada não autoriza alta; a decisão de LCR exige regra inteira, revisão da coleta e riscos sociais.
+
+**Exames:** EAS/cultura por técnica adequada, hemocultura e marcadores; considerar LP conforme protocolo local validado para idade, resultados e equipe. Se houver alteração de aparência, apneia ou convulsão, escalar independentemente de laboratório.
+
+**Conduta:** manter avaliação especializada, observação/internação e eventual terapia segundo algoritmo neonatal adotado. Compartilhar com responsáveis os motivos e a segurança de acompanhamento; documentar decisão.
+
+**Erro crítico:** aplicar Step-by-Step de 22–90 dias como se fosse um “teste PCT isolado”, desconsiderando todos os outros critérios. **Por que importa:** a classificação exige idade, biomarcadores, urina, estado clínico e logística.
+
+### Caso 3 — 46 dias, urina positiva, PCT baixa e sem sinais meníngeos
+
+**Apresentação:** lactente de 46 dias, bem-aparente, mamando, febre de 38,4°C e nenhum sintoma respiratório. EAS de urina por cateter mostra esterase leucocitária e piúria; hemocultura foi colhida. PCT 0,12 ng/mL, PCR 6 mg/L, ANC 2.900/µL, estável e com família capaz de retornar em 24 horas. Não há vômito nem letargia.
+
+**Hipótese:** **infecção urinária febril** em lactente de 29–60 dias, com risco de IBI que precisa ser estratificado, mas não necessariamente elevado só pela positividade urinária.
+
+**Raciocínio:** a CPS 2026 ressalta que urina positiva em 29–60 dias **não é indicação automática de LP** quando biomarcadores e avaliação clínica são favoráveis. Entretanto, a decisão deve seguir protocolo específico do serviço, considerando que regras preditivas têm critérios distintos; uma UA positiva não classifica criança como baixo risco por todas elas.
+
+**Exames:** confirmar cultura de urina, acompanhar hemocultura, avaliar exame clínico e outros exames conforme regra. LP se o conjunto indicar risco de meningite ou houver deterioração, não por reflexo isolado a EAS positivo.
+
+**Conduta:** tratar ITU com antibiótico apropriado para idade, susceptibilidade e via, discutindo observação hospitalar versus alta estruturada onde elegível e seguindo reavaliação em 24–48h. Garantir busca ativa de culturas. Não usar nitrofurantoína para tratar pielonefrite presumida.
+
+**Erro crítico:** confundir ITU com meningite obrigatória ou, no extremo oposto, esquecer a possibilidade de bacteremia concomitante. **Por que importa:** estratificação permite evitar tanto excesso quanto negligência.
+
+### Caso 4 — 78 dias com febre, boa alimentação e exames tranquilizadores
+
+**Apresentação:** bebê de 78 dias a termo, sem comorbidades, temperatura 38,3°C, exame sem foco, pele bem perfundida, mamadas e diurese adequadas. EAS e cultura foram coletados; não há sinais de meningite, choque nem dificuldade respiratória. Os pais vivem próximos da emergência e garantem retorno no dia seguinte.
+
+**Hipótese:** FSSL em lactente de **61–90 dias**, menor risco médio de IBI que neonatos, com necessidade de investigação mínima proporcional.
+
+**Raciocínio:** a diretriz **AAP 8–60 dias não cobre este bebê**. A CPS atualizada em 2026 inclui 61–90 dias, recomenda ao menos avaliação de urina e cultura e permite considerar esquema de investigação de 29–60 dias conforme fatores de risco. História de febre continua significativa apesar da boa aparência.
+
+**Exames:** EAS e urocultura como avaliação inicial; hemocultura, marcadores e outros exames conforme critérios clínicos, possibilidade de ITU e protocolo. Não pedir LP rotineira só pela idade se a criança permanece de baixo risco em algoritmo apropriado, mas reavaliar se qualquer alerta aparece.
+
+**Conduta:** observação/alta com responsável confiável e retorno em 24–48h se preencher critérios locais; orientar sinais de alarme e conferir resultados pendentes. Internar se vômitos, piora perfusional, suspeita de IBI ou rede de retorno inadequada.
+
+**Erro crítico:** dizer que completou “dois meses” e, portanto, é uma criança sem risco pediátrico específico. **Por que importa:** a faixa 61–90 tem evidências próprias.
+
+### Caso 5 — Pré-escolar vacinado, 40°C e sem sinais de gravidade
+
+**Apresentação:** menino de 19 meses, vacinação em dia, febre há 18 horas com máxima de 40,0°C, mas brinca entre episódios, bebe e urina normalmente. Não há tosse, dispneia, dor abdominal, rigidez, otite à otoscopia nem lesões cutâneas; capilar <2 segundos e exame pulmonar normal.
+
+**Hipótese:** FSSL aguda em criança previamente saudável e bem-aparente; infecção viral inicial é provável, sem foco bacteriano evidente. Infecção urinária pode ser considerada conforme fatores de risco e persistência, mas ausência de foco não obriga hemocultura.
+
+**Raciocínio:** a vacinação contra Hib e pneumococo reduziu bacteremia oculta nos contextos de alta cobertura; o risco desse pré-escolar é diferente do lactente de 19 dias. A temperatura de 40°C isolada não caracteriza sepse e melhora com antitérmico não distingue vírus de bactéria.
+
+**Exames:** nenhum exame amplo automático; considerar urina conforme idade, sexo, história e evolução. Hemograma/hemocultura/RX não são rotineiros sem sinais e critérios dirigidos.
+
+**Conduta:** medidas de conforto, hidratação, antitérmico se desconforto com dose verificada por peso, orientações específicas e reavaliação se febre prolongar ou surgirem sinais de alerta.
+
+**Erro crítico:** administrar ceftriaxona intramuscular apenas pela temperatura, sem evidência de doença bacteriana. **Por que importa:** pediatria atual combina probabilidade pré-teste e redução de dano iatrogênico.
+
+### Caso 6 — 39 dias com rinovírus positivo e recusa alimentar
+
+**Apresentação:** lactente de 39 dias apresenta febre 38,6°C, congestão nasal discreta e redução das mamadas, porém mantém boa perfusão e respiração. Painel viral nasal detecta rinovírus. O EAS ainda não foi colhido. Um residente conclui que “vírus confirmado, portanto bacteremia e ITU não são possíveis”.
+
+**Hipótese:** infecção viral respiratória possível, mas FSSL/infecção sistêmica ou ITU oculta ainda requer avaliação por idade e sinais. O rinovírus pode persistir na via aérea mesmo sem ser a causa exclusiva da febre.
+
+**Raciocínio:** CPS 2026 informa risco residual de SBI/IBI com vírus detectado e destaca limitações de rinovírus. A faixa 29–60 exige aplicação de protocolo inicial independentemente de painel positivo; redução alimentar também merece avaliar hidratação e capacidade de seguimento.
+
+**Exames:** EAS/cultura por técnica adequada, hemocultura e marcadores conforme abordagem de lactente; LP se risco e exame indicarem. Não postergar hidratação/suporte se há deterioração.
+
+**Conduta:** acompanhar ingestão/diurese, completar estratificação e decidir observação/alta/antibiótico segundo risco real e rede de retorno. Se criança piorar, reclassificar imediatamente.
+
+**Erro crítico:** tratar PCR viral como teste definitivo de exclusão de infecção bacteriana. **Por que importa:** diagnósticos virais e bacterianos podem coexistir, sobretudo nos pequenos.
+
+### Caso 7 — Febre no sexto dia: a hipótese inflamatória surge
+
+**Apresentação:** menina de três anos e meio tem febre diária há seis dias, inicialmente sem foco, seguida de olhos vermelhos sem secreção purulenta, lábios fissurados, exantema e edema de mãos. O exame pulmonar é normal e não há foco urinário evidente. Foi tratada como “virose” em duas visitas e os responsáveis notam irritabilidade importante.
+
+**Hipótese:** **doença de Kawasaki** ou Kawasaki incompleta, entre diagnósticos diferenciais, e necessidade de descartar outras causas inflamatórias/infecciosas. O conjunto de sinais mucocutâneos após febre persistente altera o raciocínio para além de FSSL aguda.
+
+**Raciocínio:** febre ≥5 dias com sinais clássicos merece investigação e avaliação pediátrica especializada, devido ao risco de envolvimento coronariano. MIS-C e outras doenças podem causar quadro semelhante conforme epidemiologia e avaliação.
+
+**Exames:** hemograma, marcadores inflamatórios e outros conforme protocolo de Kawasaki; ecocardiograma e avaliação cardiológica pediátrica quando indicado. Excluir focos infecciosos pertinentes e avaliar critérios diagnósticos, não se limitar a antitérmico.
+
+**Conduta:** encaminhamento hospitalar/serviço pediátrico para investigação e eventual tratamento específico, com seguimento cardiológico, sem atraso por “mais um antibiótico empírico” sem foco.
+
+**Erro crítico:** considerar que ausência de foco nas primeiras visitas impede revisão do diagnóstico. **Por que importa:** o tempo e os sinais novos mudam a hipótese e o risco.
+
+### Caso 8 — Dezesseis dias, convulsão e pequenas vesículas
+
+**Apresentação:** recém-nascido de 16 dias chega após crise convulsiva de dois minutos, febre 38,1°C e sucção reduzida. Exame encontra pequenas vesículas no tronco, discreta letargia e perfusão limítrofe. A mãe não relata lesão herpética ativa, e o serviço não dispõe de PCR de HSV com resultado imediato.
+
+**Hipótese:** infecção grave do SNC/sepse neonatal, incluindo **infecção por HSV neonatal**, sem excluir bacteremia e meningite bacteriana. A ausência de lesões maternas documentadas não elimina possibilidade de HSV.
+
+**Raciocínio:** não classificar convulsão em menor de um mês como “convulsão febril simples” e não aplicar regra de baixo risco por boa temperatura após antitérmico. A idade e os achados neurológicos/vesiculares exigem conduta emergencial.
+
+**Exames:** estabilização, glicemia/eletrólitos, culturas sanguíneas e urinárias, avaliação de LCR com testes para bactérias/HSV quando seguro e viável, provas de função hepática, coagulograma e outros conforme protocolo neonatal; colher PCR relevante, mas não aguardar resultado para tratamento em doente de alto risco.
+
+**Conduta:** internação, monitorização, antibióticos empíricos neonatais e **aciclovir intravenoso** conforme protocolo, além de tratamento de convulsão e suporte. Adaptar doses a idade, peso e função renal sob equipe especializada.
+
+**Erro crítico:** usar o rótulo genérico “virose com crise febril” e adiar tratamento antiviral. **Por que importa:** HSV neonatal tem janela estreita de intervenção e pode não ter apresentação clássica.
