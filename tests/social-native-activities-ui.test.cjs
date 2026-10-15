@@ -16,3 +16,9 @@ test('room activity workspace embeds canonical editors, protects rendering and p
  w.dispatchEvent(new w.MessageEvent('message',{origin:w.location.origin,source:frame.contentWindow,data:{type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:room}}));await wait();assert(calls.some(c=>c.p_action==='simulation_join'));
  w.dispatchEvent(new w.Event('luria:room-exit'));assert.equal(d.querySelector('#na-simulator iframe'),null);assert.equal(d.querySelector('#na-editor iframe'),null);assert.deepEqual(errors,[]);
 });
+
+test('embed presentation is limited to the room frame and keeps only the parent companion',async t=>{
+ const {w,d}=page(t,'amigos/index.html');w.eval(read('assets/js/room-native-embed.js'));assert.equal(w.LuriaRoomEmbed,undefined);
+ const frame=d.createElement('iframe');frame.id='room-native-editor';frame.dataset.roomId='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';frame.dataset.nativeKind='flashcards';d.body.append(frame);
+ const child=frame.contentWindow;child.eval(read('assets/js/room-native-embed.js'));assert.equal(child.LuriaRoomEmbed.kind,'flashcards');child.document.dispatchEvent(new child.Event('DOMContentLoaded'));const companion=child.document.createElement('professor-alex-mascot');child.document.body.append(companion);await wait();assert.equal(child.document.querySelector('professor-alex-mascot'),null);
+});
