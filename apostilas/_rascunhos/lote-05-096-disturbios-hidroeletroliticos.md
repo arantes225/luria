@@ -407,3 +407,190 @@ Há um detalhe central: **observação de associação não equivale a provar ca
 - **Acesso à água e suporte familiar**, para que o problema não retorne depois da alta.
 
 O plano de seguimento deve registrar a etiologia provável e sua correção. Uma pessoa idosa que voltou a beber apenas por intervenção hospitalar, mas permanece com dependência e cuidadores sem instrução, tem risco de recorrência.
+
+
+## 16. Hiperpotassemia na emergência: estabilizar, deslocar e eliminar
+
+A hiperpotassemia é uma das emergências eletrolíticas mais importantes porque pode alterar a excitabilidade e a condução cardíacas de forma imprevisível. O risco depende não só do valor, mas também da velocidade de subida, doença renal, acidose, medicamentos e função cardiovascular. Um erro recorrente nas provas é esperar uma sequência fixa de ondas T apiculadas, desaparecimento da onda P e alargamento do QRS. Essa sequência clássica é didática, mas **não é obrigatória**, e a sensibilidade de sinais eletrocardiográficos isolados é limitada.
+
+A diretriz da **UK Kidney Association de 2023** estratifica, em adultos, K de 5,5–5,9 mmol/L como leve, 6,0–6,4 como moderado e **≥6,5 mmol/L como grave**. A gravidade clínica pode ser maior do que a categoria numérica quando há instabilidade ou mudanças de ECG. No atendimento, essa classificação ajuda a organizar urgência e reavaliação, não substitui avaliação de causa.
+
+### 16.1. Decidir se o resultado é verdadeiro sem atrasar tratamento
+
+**Pseudohiperpotassemia** aparece, por exemplo, por hemólise, coleta prolongada com garrote, manipulação traumática, atraso de processamento ou trombocitose/leucocitose marcadas. Conferir aviso de hemólise, comparar coleta venosa adequada e gasometria quando indicado. Se o K foi 6,4 mmol/L em paciente estável com função renal normal, sem fatores de risco e tubo marcado como hemolisado, repetir adequadamente e comparar é central. Se o K é 7,1 mmol/L em paciente com bloqueio de condução, bradicardia e doença renal, **não** esperar repetição para iniciar estabilização e acionar ajuda.
+
+A distinção operacional é entre confirmar a hipótese laboratorial e tratar a ameaça imediata. Um erro perigoso é presumir pseudohiperpotassemia só porque o paciente está conversando e o ECG não mostra padrão típico.
+
+### 16.2. Passo 1: proteger o coração
+
+Quando há alterações eletrocardiográficas atribuíveis à hipercalemia, arritmia ou peri-parada, sais de **cálcio intravenoso** antagonizam os efeitos da hiperpotassemia sobre o miocárdio. Sua finalidade é estabilizar membrana e ganhar tempo. **Cálcio não reduz a concentração de potássio**, de modo que o tratamento precisa prosseguir com medidas de redistribuição e remoção.
+
+Uma armadilha farmacotécnica grave é confundir **gluconato de cálcio 10%** com **cloreto de cálcio 10%**: o conteúdo de cálcio disponível nas soluções não é equivalente por volume. A UKKA 2023 considera equivalentes, quanto ao cálcio total fornecido, **30 mL de gluconato de cálcio 10%** administrados IV em cerca de **10 minutos** e **10 mL de cloreto de cálcio 10%** em cerca de **5 minutos**, escolhendo o produto conforme situação e acesso; a preferência por cloreto é maior em peri-parada/parada cardíaca, e gluconato costuma ser preferido em outros pacientes com alterações de ECG. As recomendações são de formulações britânicas: **as apresentações disponíveis no Brasil, a concentração efetiva, o acesso venoso e o protocolo institucional exigem verificação antes de prescrever**. Não transportar volumes sem conferir equivalência de cálcio elementar.
+
+Ambos podem causar lesão tecidual por extravasamento e efeitos cardiovasculares se administrados inadequadamente. A monitorização de ECG e pressão é essencial. Se alterações elétricas graves persistirem, reavaliar resposta e necessidade de nova dose conforme protocolo. Isso não substitui insulina-glicose nem elimina K.
+
+**Fonte de checagem:** UKKA 2023, seção de cálcio intravenoso, https://www.ukkidney.org/sites/renal.org/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223_0.pdf ; MHRA, alerta de dose equivalente, https://www.gov.uk/drug-safety-update/calcium-chloride-calcium-gluconate-potential-risk-of-underdosing-with-calcium-gluconate-in-severe-hyperkalaemia.
+
+### 16.3. Passo 2: deslocar potássio para o intracelular
+
+**Insulina com glicose** ativa mecanismos que favorecem passagem de K para dentro das células. A UKKA 2023 recomenda como regime de referência em adultos **10 unidades de insulina solúvel e 25 g de glicose IV**, em serviço monitorizado. Quando a glicemia antes do tratamento é **<7 mmol/L** (aproximadamente 126 mg/dL), a diretriz recomenda considerar infusão adicional de glicose **10% a 50 mL/h por cinco horas**, com monitorização de glicemia. **A dose é um exemplo documental britânico, não prescrição automática para pacientes pediátricos, pessoas de muito baixo peso ou serviços com concentrações diferentes.**
+
+A glicemia exige acompanhamento mesmo quando a pessoa tem diabetes; risco de hipoglicemia tardia aumenta em doença renal avançada, menor reserva de glicose, ausência de diabetes e determinadas combinações terapêuticas. Não é suficiente verificar glicemia imediatamente depois da infusão e presumir segurança durante todo o restante do plantão.
+
+**Salbutamol nebulizado** em dose alta pode complementar o deslocamento de K. A UKKA descreve **10–20 mg nebulizados em adultos** como adjuvante, não substituto da insulina-glicose, com cautela diante de taquiarritmia e intolerância. É um uso diferente da posologia habitual para broncoespasmo; portanto exige indicação, apresentação e monitorização apropriadas.
+
+**Bicarbonato de sódio** não é medida universal para toda hipercalemia. Pode ser considerado em contexto de acidose metabólica significativa, de acordo com diretriz e estado volêmico. Sua administração adiciona sódio e pode afetar cálcio ionizado; em pacientes congestos ou sem acidemia relevante, o benefício não deve ser presumido. A Sociedade Brasileira de Nefrologia descreve sua utilização em acidose importante, particularmente quando há hipercalemia associada, mas requer avaliação do caso e monitorização.
+
+### 16.4. Passo 3: remover K do organismo
+
+A redistribuição induzida por insulina e beta-agonista diminui temporariamente K plasmático, mas a quantidade corporal não foi removida. É necessário identificar **como o potássio sairá**: excreção urinária, ligantes gastrointestinais em contexto apropriado ou diálise. Diuréticos só são úteis quando há função e diurese suficientes; não contar com furosemida para “resolver” K em paciente anúrico.
+
+Ligantes orais de potássio variam em início de ação, disponibilidade e evidência; **nenhum medicamento oral deve atrasar cálcio, insulina-glicose ou diálise necessária diante de instabilidade**. No hospital, doses e elegibilidade de zirconium cyclosilicate ou outros ligantes devem ser conferidas com farmácia e protocolos brasileiros, pois produtos e registro podem diferir das publicações internacionais.
+
+A terapia renal substitutiva deve ser considerada precocemente em hipercalemia grave com LRA/DRC avançada, **especialmente com refratariedade, rebote, oligúria/anúria ou instabilidade elétrica**. Diálise não deve ser adiada indefinidamente por ciclos sucessivos de deslocamento transcelular.
+
+### 16.5. Passo 4: documentar a resposta e evitar rebote
+
+A UKKA e fluxos clínicos relacionados orientam rechecagem seriada de K, frequentemente em **1, 2, 4, 6 e 24 horas** após tratamento de hipercalemia grave, adaptando à situação clínica. Após insulina, acompanhar glicemia de forma regular durante horas; os episódios de hipoglicemia podem ocorrer depois da primeira hora. Repetir ECG em alterações iniciais e após cálcio quando indicado. Revisar medicações desencadeantes e causa da elevação.
+
+**Quadro de segurança do potássio:**
+
+| Intervenção | O que faz | O que não faz | Monitorização crítica |
+|---|---|---|---|
+| Cálcio IV | Protege o miocárdio temporariamente | Não remove nem desloca K | ECG, acesso venoso, pressão |
+| Insulina + glicose | Desloca K para intracelular | Não elimina K do organismo | Glicemia tardia, K seriado |
+| Salbutamol em dose alta | Desloca K; ajuda como adjuvante | Não é medida única suficiente | Frequência cardíaca, K e efeitos |
+| Bicarbonato em acidemia apropriada | Pode favorecer correção associada à acidose | Não é indicado universalmente | pH, sódio, cálcio, volemia |
+| Ligantes gastrointestinais | Ajudam a eliminar K pelo trato intestinal | Não substituem estabilização imediata | Tolerância e K seriado |
+| Diurético quando excreção viável | Promove eliminação urinária | Não funciona em anúria | Diurese, volemia, função renal |
+| Diálise | Remove K de maneira efetiva | Não corrige sozinho todos os desencadeantes | Hemodinâmica, K antes/depois e causa |
+
+### 16.6. Interações e prevenção secundária
+
+Em pacientes com insuficiência cardíaca ou DRC, inibidores do sistema renina-angiotensina-aldosterona oferecem benefícios comprovados em situações específicas, mas podem elevar K. A resposta à hiperpotassemia não deve ser sempre suspensão definitiva e indiscriminada; é preciso distinguir urgência imediata de reintrodução ou ajuste posterior, revisar AINEs, suplementos, dieta, função renal e outras drogas. O seguimento laboratorial após mudanças é indispensável, especialmente em idosos e pessoas com DRC.
+
+**Pulo do gato:** estabilização elétrica, redistribuição intracelular e eliminação definitiva são **objetivos diferentes**. Confundi-los explica muitas falhas de tratamento.
+
+## 17. Hipopotassemia do adulto: estimar perdas e decidir via de correção
+
+Uma queda do potássio sérico pode refletir perda corporal real, redistribuição para células ou ambos. A apresentação clínica depende de intensidade, duração e vulnerabilidades; um paciente com K 3,1 mmol/L e sem sinais pode ser tratado de modo diferente de uma pessoa com K 3,1 e arritmia sob digoxina. O valor isolado não define toda a urgência.
+
+### 17.1. Procurar perdas digestivas e renais
+
+Diarreia causa perda de potássio e pode acompanhar acidose metabólica hiperclorêmica; vômitos frequentemente se relacionam a alcalose, depleção de cloro e perda renal secundária de potássio. Diuréticos de alça ou tiazídicos, hiperaldosteronismo e tubulopatias podem produzir perda renal. A história medicamentosa é tão importante quanto o exame: perguntar sobre laxantes, diuréticos, corticoterapia, beta-agonistas e insulina em doses relevantes.
+
+A concentração de K urinário ou razão K/creatinina, quando interpretadas conforme função renal e balanço, ajudam a separar excreção inadequada de perdas não renais. **Não usar um único valor de urina** como teste absoluto em paciente recebendo diurético, soluções intravenosas ou com oligúria.
+
+### 17.2. Relação com magnésio
+
+Hipomagnesemia facilita perdas renais de K e pode sustentar hipopotassemia mesmo após reposição. Se a paciente tem valores baixos persistentes, buscar Mg sérico e investigar causas comuns; a correção de Mg pode ser necessária para que o K se mantenha. Essa relação é especialmente importante em alcoolismo, perdas digestivas crônicas, uso de diuréticos e determinadas drogas que afetam túbulos renais.
+
+### 17.3. Reposição: por que a via importa
+
+Para déficit leve a moderado, em pessoa estável e com trato gastrointestinal funcionante, reposição oral pode ser adequada. A via IV fica reservada a cenários com gravidade clínica, arritmia, alterações importantes de ECG, incapacidade de uso oral ou necessidade de correção supervisionada. Soluções concentradas de K são potencialmente fatais se administradas por erro de velocidade ou diluição: **nunca administrar KCl concentrado IV direto**.
+
+Uma tabela final de prescrições deve distinguir apresentação em mEq/mL, diluente, concentração máxima, via periférica ou central, bomba de infusão, condições de monitorização, limite de velocidade e ajustes de função renal; esses valores têm variação por protocolo institucional. Não é responsável publicar um esquema único como “dose padrão segura para qualquer acesso”.
+
+### 17.4. Condições especiais
+
+**Doença renal:** menor depuração exige reduzir ou controlar reposição para evitar hiperpotassemia iatrogênica. **Perda gastrointestinal persistente:** repor somente K sem solucionar perdas produz recorrência. **Cetoacidose diabética:** o K corporal total pode estar depletado apesar de concentração inicial normal ou alta; insulina modifica rapidamente a distribuição do íon. O manejo detalhado de CAD pertence ao tema próprio de endocrinologia, mas o aluno deve reconhecer o risco de hipopotassemia durante o tratamento.
+
+**Alteração cardíaca:** a combinação de hipopotassemia, hipomagnesemia e medicamentos que prolongam QT pode favorecer arritmias. Isso obriga verificar ECG, fatores de risco e reposição segura, não apenas calcular quanto K falta.
+
+## 18. Cálcio em emergência e endocrinologia: localizar o defeito do sistema
+
+A homeostase do cálcio depende de absorção intestinal, troca com o esqueleto, excreção renal, vitamina D ativa e controle pelo **PTH**. No organismo, alterações de PTH provocam respostas que ajudam a localizar o problema: o PTH elevado em hipocalcemia muitas vezes representa compensação; PTH inadequadamente baixo pode sugerir hipoparatireoidismo ou interferência metabólica. Na hipercalcemia, PTH deveria estar suprimido quando a causa independe da paratireoide.
+
+### 18.1. O que interpretar primeiro
+
+Quando cálcio total está alterado, conferir albumina e, nas situações de doença crítica, mudanças de pH ou dúvidas laboratoriais, priorizar cálcio **ionizado** quando disponível e indicado. Valores de referência variam por método. Não existe validade universal de uma fórmula de correção pela albumina em pacientes graves.
+
+O ECG pode registrar prolongamento ou encurtamento de QT, mas a identificação da etiologia exige cálcio ionizado, função renal, fósforo, magnésio, PTH e vitamina D conforme indicação. Um QT longo isolado não significa necessariamente hipocalcemia; medicamentos e hipopotassemia/hipomagnesemia também podem contribuir.
+
+### 18.2. Hipocalcemia aguda grave
+
+Tetania, convulsões, espasmo laríngeo, arritmia ou sintomas importantes associados a cálcio baixo configuram urgência. A orientação da **Society for Endocrinology (2016, com correção editorial em 2019)** considera hipocalcemia aguda grave quando cálcio ajustado <1,9 mmol/L e/ou sintomas relevantes abaixo da referência. Um regime de referência internacional é **10–20 mL de gluconato de cálcio 10% em 50–100 mL de glicose 5%, IV durante dez minutos com ECG**, podendo exigir repetição e infusão de manutenção segundo resposta. **Essa formulação se aplica à reposição de cálcio na hipocalcemia; não confundir com o volume equivalente necessário para antagonizar hiperpotassemia conforme a UKKA.** A checagem de bula brasileira, acesso, concentração efetiva, compatibilidade e monitorização é obrigatória antes de transformar a informação em prescrição.
+
+Além de estabilizar, é necessário tratar a causa. Hipomagnesemia pode comprometer secreção/efeito do PTH; baixa vitamina D, insuficiência renal e estado pós-operatório cervical têm abordagens específicas. Doses de cálcio IV não podem ser repetidas cegamente sem exames, dado o risco de hipercalcemia e extravasamento.
+
+**Fonte:** Society for Endocrinology, https://pmc.ncbi.nlm.nih.gov/articles/PMC5314808/ e corrigendum https://pmc.ncbi.nlm.nih.gov/articles/PMC8117371/.
+
+### 18.3. Hipercalcemia: PTH é bifurcação diagnóstica
+
+Uma pessoa com cálcio elevado persistentemente precisa de avaliação de PTH, com interpretação clínica. **PTH inadequadamente normal/alto diante de hipercalcemia** favorece causas dependentes de PTH, como hiperparatireoidismo primário, após investigar diagnósticos pertinentes; **PTH suprimido** orienta investigação de causas independentes, como malignidade, vitamina D, doenças granulomatosas e outros fatores.
+
+A hipercalcemia importante pode provocar poliúria, desidratação, confusão e disfunção renal, criando ciclo de piora: a perda de água reduz perfusão e excreção renal de cálcio, e o cálcio elevado pode dificultar concentração urinária. Reposição volêmica, quando indicada, exige prudência em insuficiência cardíaca e DRC.
+
+Na **hipercalcemia da malignidade**, a Endocrine Society (2023) recomenda tratamento com bisfosfonato IV ou denosumabe em adultos, junto à abordagem do câncer e hidratação apropriada. Em **hipercalcemia grave >14 mg/dL**, sugere associar **calcitonina** ao antiresortivo na terapia inicial para obter efeito mais rápido, limitando calcitonina a **48–72 horas** em razão de taquifilaxia. Avaliar função renal antes de bisfosfonatos IV e risco de hipocalcemia após antiresortivos. Não extrapolar esse regime para todo paciente com cálcio discretamente alto ou hipercalcemia por outras causas.
+
+**Fonte:** Endocrine Society, https://www.endocrine.org/clinical-practice-guidelines/hypercalcemia.
+
+### 18.4. Quadro comparativo
+
+| Dado | Hipocalcemia relevante | Hipercalcemia relevante |
+|---|---|---|
+| Manifestação neuromuscular | Parestesias, tetania, espasmo, convulsões | Fraqueza, lentidão, alterações cognitivas |
+| Rim | Pode estar ligado à insuficiência renal/vitamina D | Poliúria e desidratação podem piorar função renal |
+| ECG | QT frequentemente prolongado | QT frequentemente encurtado |
+| Diagnóstico etiológico | Ionizado, Mg, PTH, fósforo e vitamina D conforme contexto | Confirmar cálcio; interpretar PTH como bifurcação |
+| Emergência | Cálcio IV monitorizado em caso grave sintomático | Hidratação conforme tolerância e tratamento dirigido à causa |
+| Armadilha | Confundir hipoalbuminemia com ionizado baixo | Tratar apenas com soro sem pesquisar neoplasia/paratireoide |
+
+## 19. Magnésio e fósforo: insuficiência renal, realimentação e arritmias
+
+### 19.1. A deficiência de magnésio atravessa vários diagnósticos
+
+Hipomagnesemia pode se manifestar como tremor, câimbras, parestesias, tetania, convulsões e alterações de ritmo; também sustenta hipopotassemia e hipocalcemia. O magnesio sérico não reflete perfeitamente o estoque corporal total, de modo que a história de perdas crônicas ajuda a interpretar valor aparentemente limítrofe. Alcoolismo, diuréticos, diarreia, determinados antibióticos, quimioterápicos e distúrbios renais estão entre contextos clínicos relevantes.
+
+Em paciente estável com deficiência leve, reposição oral e tratamento da causa podem ser suficientes. Na deficiência grave ou em arritmia, pode ser necessária via IV em serviço monitorizado. **A função renal modifica risco de toxicidade** por acumulação; o uso de magnésio IV exige checagem do sal, dose expressa em gramas/mmol, velocidade e monitorização.
+
+Torsades de pointes é uma arritmia ventricular potencialmente fatal associada a prolongamento de QT; magnésio IV integra medidas de tratamento sob protocolos de emergência, junto a suporte avançado e correção de fatores precipitantes. A presença de potássio e cálcio alterados e fármacos que prolongam QT muda a conduta.
+
+### 19.2. Hipermagnesemia
+
+Hipermagnesemia costuma ocorrer quando há carga excessiva de magnésio associada à diminuição de excreção renal, como em DRC avançada ou uso inadequado de antiácidos/laxantes contendo magnésio. Hiporreflexia, fraqueza, bradicardia, hipotensão e depressão respiratória podem ocorrer em níveis elevados. O manejo envolve interromper aporte, estabilizar respiração e circulação e considerar cálcio IV em toxicidade cardíaca/neuromuscular selecionada, com possibilidade de diálise quando grave e refratária, conforme equipe especialista. É diagnóstico que deve ser lembrado em paciente renal com “fraqueza inexplicada” e consumo crônico de medicamentos contendo Mg.
+
+### 19.3. Fosfato baixo, energia celular e risco de realimentação
+
+O fosfato participa de ATP e vias de energia, 2,3-DPG eritrocitário e integridade muscular. Reduções importantes podem causar fraqueza generalizada, rabdomiólise, alteração de função respiratória e, em quadros extremos, hemólise. Hipofosfatemia pode ocorrer após realimentação, redistribuição induzida por insulina, alcalose respiratória e perdas renais. A severidade depende do valor, ritmo, outras deficiências e estado clínico.
+
+Em correção de hipofosfatemia, a via oral é frequentemente preferida quando o quadro é leve/moderado e há tolerância gastrointestinal. Reposição IV fica para situações graves ou incapacidade de via oral, sob verificação de dose, teor de sódio/potássio da solução, cálcio, função renal e monitorização de fosfato. O risco de precipitação cálcio-fosfato e de hipocalcemia iatrogênica é relevante.
+
+### 19.4. Hiperfosfatemia na doença renal crônica
+
+Na DRC, alterações combinadas de fosfato, cálcio e PTH fazem parte da doença mineral e óssea. A recomendação **KDIGO 2017 CKD-MBD** orienta decisões baseadas em medições **seriadas** de fosfato, cálcio e PTH em conjunto, em vez de reduzir fosfato agressivamente por um único resultado discreto. Na DRC G3a–G5D, o tratamento redutor de fosfato deve ser considerado diante de **hiperfosfatemia progressiva ou persistente**, buscando valores próximos do normal; restringir o uso de quelantes à base de cálcio em adultos quando há risco de sobrecarga. A estratégia envolve dieta individualizada, avaliação de aditivos fosfatados, quelantes conforme indicação e ajuste dialítico em pacientes apropriados.
+
+**Fonte:** https://kdigo.org/guidelines/ckd-mbd/ (diretriz atual de CKD-MBD acessível nesta revisão).
+
+### 19.5. Síndrome de realimentação: mecanismo e critérios diagnósticos
+
+A oferta de calorias, sobretudo carboidratos, aumenta sinalização insulínica e consumo intracelular de fósforo, K e Mg, especialmente em pessoas previamente desnutridas. Pode ocorrer queda súbita dos eletrólitos acompanhada de disfunção respiratória, cardíaca e neurológica. **Prevenir é melhor do que reagir tardiamente.**
+
+O consenso **ASPEN 2020** define graus de síndrome de realimentação por **redução proporcional de fósforo, potássio e/ou magnésio nos cinco dias após reintrodução calórica**: queda de 10–20% (leve), 20–30% (moderada), mais de 30% e/ou disfunção orgânica atribuível (grave), com análise clínica. Isso não significa que qualquer hipofosfatemia de paciente hospitalizado seja síndrome de realimentação; cronologia, risco nutricional e mecanismo importam.
+
+A recomendação **NICE CG32** orienta avaliação de risco em pacientes com baixo IMC, grande perda ponderal, ingesta mínima prolongada e eletrólitos baixos, com início nutricional cauteloso e tiamina, fluidos e eletrólitos monitorados. Em alto risco, a NICE descreve introdução de suporte nutricional em até **10 kcal/kg/dia** e elevação progressiva; em risco extremo, até **5 kcal/kg/dia**, com vigilância intensiva. A ASPEN propõe faixas e estratégias próprias (por exemplo, 10–20 kcal/kg no primeiro dia em adultos sob critérios aplicáveis), destacando que a prescrição precisa ser individualizada. **Não transportar números isolados entre diretrizes sem conhecer a classificação de risco.**
+
+**Fontes:** ASPEN 2020, https://doi.org/10.1002/ncp.10474 ; NICE CG32, https://www.nice.org.uk/guidance/cg32/chapter/Recommendations.
+
+### Quadro de integração K–Mg–fosfato na realimentação
+
+| Situação | Mecanismo possível | Qual é a primeira pergunta? |
+|---|---|---|
+| K reduz após iniciar calorias | Insulina leva K para células; pode haver estoque depletado | Houve desnutrição e início recente de aporte energético? |
+| Mg baixo e K refratário | Perda renal de K facilitada pela deficiência de Mg | Corrigir Mg é parte do plano? A função renal suporta reposição? |
+| Fosfato cai bruscamente | Captação celular para formação de ATP e metabolismo | Existe disfunção muscular/respiratória? A nutrição foi escalada rápido? |
+| Retenção de fósforo em DRC | Excreção renal reduzida | O resultado é persistente? Como estão Ca e PTH? |
+| Arritmia com QT longo | Pode envolver K/Mg/Ca e fármacos | Quais eletrólitos e medicamentos alteram repolarização? |
+
+## 20. Quando terminar um caso de eletrólitos: dez verificações de segurança
+
+1. **Amostra é confiável?** Excluir hemólise, interferência analítica e coletas inadequadas quando pertinente.
+2. **Há ameaça à vida?** Consciência, convulsão, arritmia, insuficiência respiratória ou choque definem prioridade.
+3. **A unidade está correta?** Não misturar mmol/L, mEq/L, mg/dL e mg por ampola; verificar substância.
+4. **Qual problema fisiológico está sendo tratado?** Água/tonicidade, eletricidade, redistribuição ou estoque corporal.
+5. **Há mecanismo associado?** Doença renal, endócrina, gastrointestinal, fármaco ou realimentação.
+6. **A intervenção corrige a causa ou só fornece ponte?** Cálcio na hipercalemia protege miocárdio, mas não elimina K.
+7. **A prescrição coincide com apresentação local?** Um volume em mL de formulação estrangeira não garante igual quantidade de princípio ativo no Brasil.
+8. **Qual efeito adverso é previsível?** Hipoglicemia pós-insulina, sobrecorreção de Na, extravasamento de cálcio ou K, sobrecarga volêmica.
+9. **Qual exame será repetido e quando?** A indicação exige um plano de monitorização e reavaliação.
+10. **Como prevenir recorrência?** Corrigir medicação causal, baixa ingesta, perdas, falha de acesso à água, doença renal ou necessidade de seguimento.
