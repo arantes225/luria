@@ -164,13 +164,9 @@ Em TB sensível, o esquema básico para grande parte dos adultos e adolescentes 
 
 O manejo integra suporte à adesão, rastreamento de contatos, medidas de prevenção respiratória em ambientes assistenciais e notificação compulsória conforme regras nacionais. Ausência de sintomas após semanas de terapia não significa alta precoce. Infecção latente requer indicação individualizada, exclusão prévia de doença ativa e esquemas preventivos previstos nas notas técnicas atuais.
 
-**Caso 1.** Homem de 35 anos com tosse persistente, perda de peso e contato domiciliar com caso de TB. Investigar com amostra respiratória e teste molecular, cultura conforme disponibilidade e avaliação radiológica; orientar redução de exposição conforme avaliação assistencial. **Por que importa:** contato e sintomas aumentam prioridade da investigação.
 
-**Caso 2.** Pessoa vivendo com HIV tem febre, perda ponderal e imagem sem cavitação clássica. Suspeita de TB permanece; ampliar investigação por risco de apresentação paucibacilar/disseminada. **Por que importa:** apresentação radiológica atípica não afasta doença.
 
-**Questão 1.** Qual alternativa define adequadamente infecção latente? A) Doença pulmonar obrigatoriamente transmissível; B) Infecção sem evidência de TB ativa; C) Cultura positiva obrigatória do escarro; D) Condição que sempre exige isolamento hospitalar. **Gabarito B.** A confunde latência com doença, C exige confirmação indevida, D extrapola precaução. **Revisão:** excluir doença ativa antes do tratamento preventivo.
 
-**Questão 2.** TB pulmonar com investigação molecular negativa, mas forte suspeita clínica: A) Sempre descartar TB; B) Ignorar clínica; C) Reavaliar qualidade da amostra, novos testes e diferenciais; D) Declarar infecção latente automaticamente. **Gabarito C.** A/B desconsideram sensibilidade variável e D confunde doença ativa e latência. **Revisão:** teste isolado deve ser interpretado no contexto.
 
 ### 4.2 Tratamento de TB sensível: por que combinar fármacos por meses?
 
@@ -533,6 +529,36 @@ Uma pessoa pode permanecer com bronquiectasias, obstrução crônica, fibrose ou
 
 ## 8. Casos clínicos comentados
 
+### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
+
+**Apresentação:** homem de 35 anos procura unidade básica por tosse há seis semanas, perda de 5 kg, suor noturno e fadiga. Mora com irmão que foi diagnosticado com TB pulmonar bacteriologicamente confirmada. Está alerta, SpO2 96% em ar ambiente, sem hemoptise importante. Radiografia mostra opacidade em ápice direito com possível escavação.
+
+**Hipótese principal:** **tuberculose pulmonar ativa** com possibilidade de transmissão; os diagnósticos diferenciais incluem neoplasia, micobactérias não tuberculosas, abscesso e infecções fúngicas, conforme exposição e evolução.
+
+**Raciocínio:** sintomas subagudos, contato domiciliar e imagem sugestiva elevam probabilidade pré-teste, mas não provam espécie nem padrão de resistência. No SUS, **TRM-TB em amostra respiratória** é método de escolha para investigação inicial em fluxo apropriado; cultura e teste de sensibilidade complementam avaliação e confirmam resultados conforme normas. Identificar história de tratamento anterior e resistência do caso fonte é decisivo para seleção de esquema.
+
+**Exames e interpretação:** orientar coleta de escarro verdadeiro, evitando material apenas salivar; solicitar TRM-TB, cultura/TS no fluxo previsto e testagem HIV ofertada, além de imagem e testes adicionais por risco. Resultado molecular MTB detectado indica agente, mas não demonstra necessariamente resistência a todos os fármacos; resultado negativo tampouco elimina doença quando probabilidade clínica continua elevada.
+
+**Conduta:** avaliação da necessidade de precauções respiratórias e redução de transmissão, iniciar tratamento adequado quando estabelecido o diagnóstico/indicação clínica e organizar seguimento da APS, TDO pactuado quando indicado e **investigação de contatos**. Orientar retorno por hemoptise importante, falta de ar, alteração de consciência ou eventos adversos relevantes. Não fornecer apenas quinolona sucessivamente para “pneumonia arrastada” sem avaliar TB.
+
+**Por que este caso importa:** o diagnóstico de TB une **clínica, microbiologia, segurança terapêutica e vigilância**, e não termina no teste molecular.
+
+### Caso 2 — Tuberculose suspeita em pessoa com HIV e radiografia atípica
+
+**Apresentação:** mulher de 39 anos vivendo com HIV, com interrupção recente de acompanhamento, apresenta febre subaguda, emagrecimento, fadiga e tosse pouco produtiva. CD4 é **72 células/mm³** e a radiografia mostra infiltrados difusos sem cavitação apical clássica. Primeira amostra de escarro escassa teve **TRM-TB não detectado**. Está taquipneica e apresenta SpO2 91% em ar ambiente.
+
+**Hipóteses:** TB pulmonar/disseminada paucibacilar, pneumocistose, pneumonia bacteriana, infecção fúngica e outras doenças oportunistas. As hipóteses podem coexistir. O valor baixo do CD4 aumenta a importância de investigação adicional, não seleciona etiologia isoladamente.
+
+**Raciocínio:** na imunossupressão avançada, resposta granulomatosa e cavitação típicas podem ser menos evidentes e a carga bacilar no escarro pode ser baixa. **TRM negativo não exclui TB ativa**; qualidade e quantidade da amostra importam. O Ministério da Saúde indica **cultura para amostras de pessoas com HIV, independentemente do resultado molecular**, e investigação dirigida a órgãos/sinais de disseminação. Uma hipótese de ILTB não explica automaticamente febre, perda ponderal e hipoxemia com imagem nova.
+
+**Exames e interpretação:** repetir/otimizar amostra respiratória (escarro induzido ou avaliação de broncoscopia conforme risco), cultura e TS, imagem de maior detalhe e outras investigações dirigidas à suspeita de pneumocistose/doença fúngica quando pertinentes. Avaliar gasometria, função renal, hemograma, carga viral/CD4, interações e adesão a antirretrovirais. Considerar testes específicos disponíveis em serviços especializados, incluindo investigação extrapulmonar quando indicada.
+
+**Conduta:** avaliação hospitalar pela hipoxemia e risco de doença oportunista grave; precauções adequadas, suporte respiratório e início de terapia guiada pelo conjunto clínico e pelo resultado dos exames, sem atraso perigoso na suspeita de infecção grave. Coordenar tratamento de TB/HIV e **momento de TARV** segundo forma clínica e PCDT brasileiro; TB meníngea, por exemplo, exige cautela particular. Não presumir que TRM inicial negativo autorize alta.
+
+**Por que este caso importa:** **imunossupressão muda a sensibilidade dos testes e a apresentação radiológica**; diagnóstico exige reavaliar amostras e hipóteses concorrentes.
+
+
+
 ### Caso 3 — Pleural exsudativa com ADA elevada: não dispensar investigação
 
 Homem de 31 anos, subfebril, perda de peso e derrame unilateral. Toracocentese mostra exsudato linfocitário com ADA alta; baciloscopia negativa. **Hipótese:** TB pleural, mas diferencial inclui linfoma, neoplasia e outras pleurites. **Raciocínio:** perfil e epidemiologia aumentam probabilidade, porém ADA não é prova independente de espécie; paucibacilaridade explica baciloscopia negativa. **Exames:** amostra para microbiologia/cultura, investigação de foco pulmonar e biópsia pleural quando indicada. **Conduta:** encaminhar e decidir terapia fundamentada no conjunto clínico e em protocolos, garantindo seguimento. **Por que importa:** testes auxiliares não devem substituir confirmação quando viável.
@@ -576,6 +602,36 @@ Mulher de 38 anos em imunossupressão por doença autoimune convive em domicíli
 
 
 ## 9. Questões autorais comentadas
+
+### Questão 1 — Infecção latente versus tuberculose ativa
+
+Pessoa assintomática foi exposta a contato domiciliar bacilífero e apresenta IGRA positivo, sem sinais de TB ativa após avaliação apropriada. Qual definição é a mais correta?
+
+A) Infecção latente é doença pulmonar obrigatoriamente transmissível.
+
+B) A resposta imune documenta infecção, mas não demonstra por si só doença ativa nem transmissibilidade.
+
+C) IGRA positivo comprova cultura positiva de escarro e exige RHZE em qualquer situação.
+
+D) Pessoa infectada sem doença ativa precisa de isolamento hospitalar em todos os casos.
+
+**Gabarito: B.** O IGRA evidencia **resposta imune**, sendo ferramenta de avaliação de infecção; a distinção de TB ativa depende de investigação clínica/microbiológica conforme indicação. **Alternativa A:** confunde infecção com doença pulmonar em transmissão. **Alternativa C:** IGRA não identifica bacilo viável nem exige esquema RHZE sem doença. **Alternativa D:** precauções respiratórias dependem do risco de transmissão por doença ativa, não de teste imunológico isolado. **Mini-revisão:** excluir TB ativa antes de considerar tratamento preventivo da infecção.
+
+### Questão 2 — TRM negativo com alta suspeita de tuberculose
+
+Pessoa com HIV avançado apresenta febre prolongada, emagrecimento e infiltrado pulmonar novo. O primeiro TRM-TB respiratório é negativo em amostra escassa. Qual a melhor decisão?
+
+A) Excluir tuberculose definitivamente porque um molecular foi negativo.
+
+B) Ignorar quadro clínico e investigar apenas ansiedade.
+
+C) Rever qualidade da amostra, colher cultura e exames complementares pertinentes, e investigar causas alternativas ou coexistentes sem perder gravidade clínica.
+
+D) Declarar infecção latente porque não foi detectado DNA no primeiro material.
+
+**Gabarito: C.** O rendimento do teste depende da carga bacilar e da amostra; cultura faz parte do fluxo brasileiro especialmente em pessoas com HIV. **Alternativa A:** superestima sensibilidade de resultado negativo isolado. **Alternativa B:** negligencia síndrome infecciosa/hipoxemia. **Alternativa D:** infecção latente é diagnóstico clínico distinto e não decorre de TRM negativo. **Mini-revisão:** em TB/HIV avançado, suspeita relevante exige microbiologia ampliada e investigação de pneumocistose/fungos quando indicada.
+
+
 
 ### Questão 3 — Interpretação de imunoteste
 Pessoa sem sintomas tem IGRA positivo e radiografia sem evidência de TB ativa. Qual afirmação é correta?
