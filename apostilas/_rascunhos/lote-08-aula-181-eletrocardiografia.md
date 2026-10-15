@@ -768,3 +768,14 @@ A figura deve ser acompanhada de **fonte/citação e licença CC BY 4.0**, ident
 **Controle da camada visual:** \`apostilas/_rascunhos/lote-08-aula-181-curadoria-ptbxl-imagens.md\`. Script: \`scripts/editorial/render_ptbxl_ecgs.py\`. IDs: \`scripts/editorial/ptbxl-14-ids-review.json\`. Workflow: \`.github/workflows/editorial-ptbxl-500hz.yml\`.
 
 **Gates ainda fechados:** avaliação de cada traçado e legenda por cardiologista; adicionar tiras contínuas de ritmo a partir dos sinais de 500 Hz; verificar necessidade de zoom para ST/QT e traçados com ruído; conferir licenças/atribuição por figura; aprovar Admin, indexar corretamente e testar PWA/desktop. **Nenhuma imagem homologada ou publicada**, sem merge e sem deploy.
+
+
+## 40. Leitura combinada: ECG de 12 derivações e DII contínua de 10 segundos
+
+A camada visual desta apostila agora possui **14 pares de imagens clínicas reais** originadas dos mesmos registros PTB-XL v1.0.3. O ECG de 12 derivações conserva quatro janelas sucessivas de 2,5 segundos para análise de morfologia e topografia; a nova tira DII registra **os dez segundos completos, em 500 Hz e 5.000 amostras originais**, para acompanhar ondas P, RR, extrassístoles e possíveis bloqueios de condução.
+
+**Como estudar:** (1) conferir eixos e qualidade digital; (2) contar QRS e calcular FC; (3) verificar regularidade de RR; (4) procurar P e medir PR em vários ciclos; (5) pesquisar pausas, P não conduzidas, escape e dissociação AV; (6) voltar às 12 derivações para QRS, ST, T, QT e bloqueio de ramo. A presença de condução AV 2:1, isoladamente, não permite classificar Mobitz I/II; uma tira de 10 segundos tampouco substitui Holter quando a arritmia é intermitente.
+
+**Geração real verificada:** GitHub Actions https://github.com/arantes225/luria/actions/runs/38760090485, resultado success. Foram produzidos 14 WebPs DII de 2.400×465 pixels e 70.452–84.012 bytes, abaixo de 120.000 bytes. O conjunto com 14 ECGs completos e 14 tiras DII foi entregue em ZIP de revisão, acompanhado de manifesto com identificação do registro e SHA-256.
+
+**Fonte/licença:** Wagner P et al., PTB-XL 1.0.3, PhysioNet, DOI 10.13026/kfzx-aw45; CC BY 4.0, com atribuição e aviso de alterações. Os códigos SCP são rótulos originais e **não são laudos independentes da LURIA**. A curadoria em apostilas/_rascunhos/lote-08-aula-181-auditoria-tiras-dii-10s.md orienta como verificar os 14 casos. **Zero imagens homologadas, zero publicadas; falta validação de cardiologista, legendas finais, Admin e QA PWA.**
