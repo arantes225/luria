@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <title>Jogos · LURIA</title>
+  <meta name="description" content="Explore jogos médicos da LURIA: Study Rats, Sala de Emergência e novos desafios de raciocínio clínico em breve.">
+  <meta name="theme-color" content="#184888">
+  <link rel="canonical" href="/jogos/">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <style id="luria-games-hub-v1">
+    /* Scoped to this page: preserve the global shell and all other modules. */
+    body[data-page="jogos"] .games-page{display:flex;flex-direction:column;gap:8px;max-width:100%;margin:0;min-width:0;min-height:0;padding-bottom:8px}
+    body[data-page="jogos"] .games-page > *{min-width:0;box-sizing:border-box}
+    body[data-page="jogos"] .games-spotlight{height:126px!important;min-height:126px!important;margin:0!important;padding:20px 28px!important;flex:none;display:flex;align-items:center;justify-content:space-between;gap:14px}
+    body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong{font-size:clamp(27px,2.6vw,33px)!important;font-weight:750!important;letter-spacing:-.04em!important}
+    body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small{display:block;color:rgba(255,255,255,.85)!important;margin-top:9px;font-size:13px!important;font-weight:400;line-height:1.35!important}
+    body[data-page="jogos"] .games-spotlight-fig{width:170px;height:110px;position:relative;flex:none;z-index:2;isolation:isolate}
+    body[data-page="jogos"] .games-spotlight-fig span{position:absolute;width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:32px;border:2px solid #ffffff38;box-shadow:0 12px 24px rgba(5,20,55,.19),inset 0 2px 2px #ffffff48;transform:rotate(-10deg);background:linear-gradient(145deg,#92c8ff,#377ac3)}
+    body[data-page="jogos"] .games-spotlight-fig span:first-child{right:91px;top:19px;transform:rotate(-15deg);background:linear-gradient(145deg,#fff0b9,#edb34e)}
+    body[data-page="jogos"] .games-spotlight-fig span:nth-child(2){right:42px;top:32px;transform:rotate(11deg);background:linear-gradient(145deg,#d5e8ff,#709ddd)}
+    body[data-page="jogos"] .games-spotlight-fig span:nth-child(3){right:4px;top:12px;transform:rotate(16deg);background:linear-gradient(145deg,#b2f4de,#43a997)}
+    body[data-page="jogos"] .games-section-label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 2px 4px}
+    body[data-page="jogos"] .games-section-label h2{margin:0!important;color:var(--color-text-primary,#172033)!important;font-size:14px!important;line-height:1.4!important;font-weight:650!important;letter-spacing:-.015em}
+    body[data-page="jogos"] .games-section-label span{font-size:12px;color:var(--color-text-secondary,#596579)}
+    body[data-page="jogos"] .games-feature-grid{display:grid;grid-template-columns:minmax(0,1.78fr) minmax(270px,.86fr);gap:8px;min-width:0}
+    body[data-page="jogos"] :is(.games-feature,.games-emergency,.games-mini){min-width:0;overflow:hidden;border:1px solid var(--color-border,#e3e7ed);border-radius:15px;background:var(--color-surface,#fff);box-shadow:0 2px 11px rgba(15,35,66,.045);position:relative}
+    body[data-page="jogos"] .games-feature{min-height:302px;display:grid;grid-template-columns:minmax(225px,.82fr) minmax(270px,1fr);gap:3px;align-items:stretch;padding:17px 0 17px 22px}
+    body[data-page="jogos"] .games-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:11px;z-index:2;padding:4px 0}
+    body[data-page="jogos"] .games-kicker{display:inline-flex;align-items:center;gap:7px;color:#184888;background:#e9f0fa;border:1px solid #dbe6f4;border-radius:50px;font-size:10px;line-height:1.2;font-weight:700;letter-spacing:.055em;text-transform:uppercase;padding:6px 9px}
+    body[data-page="jogos"] .games-kicker .games-dot{width:7px;height:7px;border-radius:50%;background:#28896d}
+    body[data-page="jogos"] .games-feature h2{margin:0!important;font-size:clamp(27px,3vw,38px)!important;color:#163c75!important;font-weight:760!important;line-height:1.08!important;letter-spacing:-.045em!important}
+    body[data-page="jogos"] .games-feature p{font-size:13px!important;line-height:1.55!important;color:var(--color-text-secondary,#596579)!important;margin:0!important;max-width:310px}
+    body[data-page="jogos"] .games-features{display:flex;flex-wrap:wrap;gap:6px;margin:1px 0 2px}
+    body[data-page="jogos"] .games-features span{border-radius:8px;padding:6px 8px;font-size:10px;color:#547196;background:#f3f7fc;border:1px solid #e5eef6;white-space:nowrap}
+    body[data-page="jogos"] .games-link{align-self:flex-start;display:inline-flex;gap:8px;align-items:center;justify-content:center;text-decoration:none!important;background:var(--color-primary,#184888);border:1px solid var(--color-primary,#184888);color:#fff!important;padding:11px 16px;border-radius:10px;font-size:12px;font-weight:650;line-height:1.2;min-height:40px;transition:transform .16s,background .16s,box-shadow .16s}
+    body[data-page="jogos"] .games-link:hover{transform:translateY(-2px);background:#123a70;box-shadow:0 8px 18px rgba(24,72,136,.14)}
+    body[data-page="jogos"] .games-link:focus-visible{outline:3px solid #f2b649;outline-offset:3px}
+    body[data-page="jogos"] .games-link svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    body[data-page="jogos"] .games-board-art{display:flex;align-items:center;justify-content:center;position:relative;min-width:0;isolation:isolate;padding:5px 13px 0 0}
+    body[data-page="jogos"] .games-board-art:before{content:"";position:absolute;inset:5% 7% 3% -1%;border-radius:50%;background:radial-gradient(ellipse,#e8f4fa 10%,#e9f3ef 50%,transparent 75%);z-index:-1}
+    body[data-page="jogos"] .games-board-art svg{display:block;width:100%;max-width:485px;height:auto;filter:drop-shadow(0 12px 17px rgba(38,84,94,.12))}
+    body[data-page="jogos"] .games-emergency{min-height:302px;display:flex;flex-direction:column;padding:19px 20px 18px;gap:9px;background:linear-gradient(157deg,#f9fcff,#eef4fb 88%)}
+    body[data-page="jogos"] .games-emergency .games-kicker{align-self:flex-start;background:white;color:#27577f}
+    body[data-page="jogos"] .games-emergency-head{display:flex;gap:12px;align-items:center;min-width:0}
+    body[data-page="jogos"] .games-emergency-icon{display:grid;place-items:center;width:41px;height:41px;flex:none;border-radius:12px;background:#dbe9f7;color:#235886}
+    body[data-page="jogos"] .games-emergency-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    body[data-page="jogos"] .games-emergency h2{font-size:20px!important;line-height:1.17!important;font-weight:710!important;letter-spacing:-.025em!important;margin:0!important;color:#17375f!important}
+    body[data-page="jogos"] .games-emergency p{font-size:12px!important;line-height:1.5!important;color:#5d6e82!important;margin:0!important;max-width:330px}
+    body[data-page="jogos"] .games-monitor{width:100%;height:78px;border-radius:10px;background:#0d2746;position:relative;overflow:hidden;border:4px solid #dde8f2;box-shadow:0 6px 13px rgba(12,53,87,.08);display:flex;align-items:center}
+    body[data-page="jogos"] .games-monitor:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 24px,rgba(255,255,255,.035) 25px),linear-gradient(0deg,transparent 24px,rgba(255,255,255,.035) 25px);background-size:25px 25px}
+    body[data-page="jogos"] .games-monitor svg{width:100%;height:72px;position:relative;z-index:1}
+    body[data-page="jogos"] .games-emergency .games-link{margin-top:auto;background:#fff;color:#184888!important;border-color:#cddded;box-shadow:none}
+    body[data-page="jogos"] .games-emergency .games-link:hover{background:#eaf1fa}
+    body[data-page="jogos"] .games-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;min-width:0}
+    body[data-page="jogos"] .games-mini{min-height:189px;padding:16px 17px 14px;display:flex;flex-direction:column;gap:8px;align-items:flex-start;justify-content:flex-start}
+    body[data-page="jogos"] .games-mini-visual{height:50px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:6px;position:relative}
+    body[data-page="jogos"] .games-mini-icon{width:48px;height:48px;display:grid;place-items:center;flex:none;border-radius:13px;background:var(--mini-soft);color:var(--mini-color)}
+    body[data-page="jogos"] .games-mini-icon svg{height:25px;width:25px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.85}
+    body[data-page="jogos"] .games-mini-status{font-size:10px;font-weight:650;letter-spacing:.015em;color:var(--color-text-secondary,#596579);background:#f3f5f8;border-radius:50px;border:1px solid #e4e9ef;padding:5px 8px;white-space:nowrap}
+    body[data-page="jogos"] .games-mini h3{font-size:18px!important;line-height:1.2!important;font-weight:700!important;letter-spacing:-.025em!important;color:var(--color-text-primary,#172033)!important;margin:0!important}
+    body[data-page="jogos"] .games-mini p{color:var(--color-text-secondary,#596579)!important;font-size:12px!important;line-height:1.5!important;margin:0!important;max-width:390px}
+    body[data-page="jogos"] .games-mini .games-mini-line{width:37px;height:3px;background:var(--mini-color);border-radius:10px;margin-top:auto;opacity:.7}
+    body[data-page="jogos"] .games-mini--flash{--mini-soft:#fff3e4;--mini-color:#c57a1f}
+    body[data-page="jogos"] .games-mini--sequence{--mini-soft:#e8f6f2;--mini-color:#278d79}
+    body[data-page="jogos"] .games-mini--escape{--mini-soft:#f0ecfb;--mini-color:#7560ae}
+    body[data-page="jogos"] .games-footer-note{color:var(--color-text-secondary,#596579);font-size:11px;line-height:1.5;padding:4px 2px 0}
+    @media(min-width:1550px){body[data-page="jogos"] .games-feature{min-height:318px}body[data-page="jogos"] .games-emergency{min-height:318px}body[data-page="jogos"] .games-mini{min-height:205px}}
+    @media(max-width:1130px){body[data-page="jogos"] .games-feature-grid{grid-template-columns:minmax(0,1.3fr) minmax(258px,.9fr)}body[data-page="jogos"] .games-feature{grid-template-columns:minmax(180px,.85fr) minmax(180px,1fr);padding-left:16px;min-height:320px}body[data-page="jogos"] .games-feature h2{font-size:29px!important}body[data-page="jogos"] .games-feature p{font-size:12px!important}body[data-page="jogos"] .games-features{gap:4px}body[data-page="jogos"] .games-features span{font-size:9px}}
+    @media(max-width:850px){body[data-page="jogos"] .games-feature-grid{grid-template-columns:1fr}body[data-page="jogos"] .games-feature{min-height:264px;grid-template-columns:1fr 1fr}body[data-page="jogos"] .games-emergency{min-height:0;display:grid;grid-template-columns:1.2fr 1fr;grid-template-areas:'badge monitor' 'head monitor' 'desc monitor' 'action monitor';align-items:center;gap:8px 14px}body[data-page="jogos"] .games-emergency .games-kicker{grid-area:badge}body[data-page="jogos"] .games-emergency-head{grid-area:head}body[data-page="jogos"] .games-emergency p{grid-area:desc}body[data-page="jogos"] .games-emergency .games-link{grid-area:action;margin-top:0}body[data-page="jogos"] .games-monitor{grid-area:monitor;height:130px}body[data-page="jogos"] .games-mini-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body[data-page="jogos"] .games-mini{min-height:183px}}
+    @media(max-width:600px){body[data-page="jogos"] .games-spotlight{height:111px!important;min-height:111px!important;padding:18px!important}body[data-page="jogos"] .games-spotlight-fig{width:85px;height:80px}body[data-page="jogos"] .games-spotlight-fig span{width:41px;height:41px;font-size:21px;border-radius:12px}body[data-page="jogos"] .games-spotlight-fig span:first-child{right:43px;top:18px}body[data-page="jogos"] .games-spotlight-fig span:nth-child(2){right:20px;top:32px}body[data-page="jogos"] .games-spotlight-fig span:nth-child(3){right:0;top:7px}body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong{font-size:27px!important}body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small{font-size:11px!important;max-width:230px}body[data-page="jogos"] .games-section-label{padding:5px 2px 3px}body[data-page="jogos"] .games-section-label span{font-size:10px}body[data-page="jogos"] .games-feature{display:flex;flex-direction:column-reverse;align-items:stretch;padding:0;gap:0;min-height:0}body[data-page="jogos"] .games-board-art{padding:9px 19px 0;height:154px}body[data-page="jogos"] .games-board-art svg{max-width:325px;height:148px}body[data-page="jogos"] .games-feature-copy{padding:5px 17px 17px;gap:9px;align-items:flex-start}body[data-page="jogos"] .games-feature h2{font-size:29px!important}body[data-page="jogos"] .games-feature p{max-width:none}body[data-page="jogos"] .games-emergency{display:flex;gap:9px;padding:15px}body[data-page="jogos"] .games-monitor{height:80px}body[data-page="jogos"] .games-mini-grid{grid-template-columns:1fr}body[data-page="jogos"] .games-mini{min-height:140px;padding:14px 15px}body[data-page="jogos"] .games-mini-visual{height:44px}body[data-page="jogos"] .games-mini-icon{width:43px;height:43px}body[data-page="jogos"] .games-mini h3{font-size:17px!important}}
+    :root[data-theme="dark"] body[data-page="jogos"] .games-feature h2,:root[data-theme="dark"] body[data-page="jogos"] .games-emergency h2{color:var(--color-text-primary,#f4f8ff)!important}
+    :root[data-theme="dark"] body[data-page="jogos"] .games-emergency{background:var(--color-surface,#0d1b30)}
+    :root[data-theme="dark"] body[data-page="jogos"] .games-kicker{background:var(--color-surface-secondary,#13233a);color:var(--color-primary-text,#93bbf0)}
+    :root[data-theme="dark"] body[data-page="jogos"] .games-features span,:root[data-theme="dark"] body[data-page="jogos"] .games-mini-status{background:#13233a;color:#b8c9d9;border-color:#304358}
+    @media(prefers-reduced-motion:reduce){body[data-page="jogos"] .games-link{transition:none}}
+  </style>
+</head>
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="jogos">
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+  <a class="ui-skip-link" href="#games-main-content">Ir para jogos</a>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main" id="games-main-content" tabindex="-1">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+        <section class="games-page" aria-label="Central Jogos">
+          <header class="luria-page-spotlight games-spotlight" aria-label="Jogos">
+            <div class="luria-page-spotlight-copy">
+              <strong>Jogos</strong>
+              <small>Aprenda medicina jogando. Escolha seu próximo desafio.</small>
+            </div>
+            <div class="games-spotlight-fig" aria-hidden="true"><span>⚡</span><span>🎲</span><span>🐭</span></div>
+          </header>
+          <div class="games-section-label"><h2>Prontos para jogar</h2><span>Comece por uma das experiências disponíveis</span></div>
+          <section class="games-feature-grid" aria-label="Jogos disponíveis">
+            <article class="games-feature" aria-labelledby="game-rats-heading">
+              <div class="games-feature-copy">
+                <span class="games-kicker"><span class="games-dot"></span> Beta demonstrativo</span>
+                <h2 id="game-rats-heading">Study Rats</h2>
+                <p>Uma corrida pelo conhecimento. Acerte as cartas médicas, avance pelo tabuleiro e enfrente as surpresas do caminho.</p>
+                <div class="games-features" aria-label="Características"><span>60 casas</span><span>Casas especiais</span><span>Ratinhos virtuais</span></div>
+                <a class="games-link" href="/jogos/study-rats/">Abrir Study Rats <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+              </div>
+              <div class="games-board-art" aria-hidden="true">
+                <svg viewBox="0 0 480 295" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <defs><linearGradient id="parkground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d2e9d8"/><stop offset="1" stop-color="#96ccb7"/></linearGradient><linearGradient id="tile3d" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fefefe"/><stop offset="1" stop-color="#d9e7f4"/></linearGradient><linearGradient id="lake" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7ad9e8"/><stop offset="1" stop-color="#3c9bc2"/></linearGradient></defs>
+                  <ellipse cx="237" cy="158" rx="217" ry="130" fill="url(#parkground)" stroke="#d2e5d8" stroke-width="10"/>
+                  <path d="M54 207C96 191 94 235 147 227S206 183 253 218s105 7 171-10" fill="none" stroke="url(#lake)" stroke-width="24" stroke-linecap="round" opacity=".8"/>
+                  <path d="M41 101C92 74 154 84 178 110S245 170 295 137s92-48 147-11 M55 190C127 225 147 150 222 165s102 91 209 38" fill="none" stroke="#688e96" stroke-width="39" stroke-linecap="round" opacity=".32" transform="translate(0 6)"/>
+                  <path d="M41 101C92 74 154 84 178 110S245 170 295 137s92-48 147-11 M55 190C127 225 147 150 222 165s102 91 209 38" fill="none" stroke="#fffef5" stroke-width="39" stroke-linecap="round"/>
+                  <g fill="#fff" stroke="#fff" stroke-width="3"><rect x="45" y="82" width="40" height="31" rx="9" transform="rotate(-13 65 98)"/><rect x="94" y="74" width="40" height="31" rx="9" transform="rotate(-3 114 90)"/><rect x="140" y="85" width="40" height="31" rx="9" transform="rotate(15 160 101)"/><rect x="180" y="111" width="40" height="31" rx="9" transform="rotate(31 200 126)"/><rect x="231" y="132" width="40" height="31" rx="9" transform="rotate(0 251 148)"/><rect x="279" y="116" width="40" height="31" rx="9" transform="rotate(-17 299 131)"/><rect x="327" y="96" width="40" height="31" rx="9" transform="rotate(-10 347 111)"/><rect x="375" y="103" width="40" height="31" rx="9" transform="rotate(12 395 118)"/></g>
+                  <g font-family="Inter,system-ui" font-size="14" font-weight="850" text-anchor="middle" fill="white"><rect x="49" y="84" width="32" height="25" rx="7" fill="#4d9ee3"/><text x="65" y="102">1</text><rect x="98" y="78" width="32" height="25" rx="7" fill="#47bca5"/><text x="114" y="96">2</text><rect x="144" y="88" width="32" height="25" rx="7" fill="#eaa94c"/><text x="160" y="106">3</text><rect x="184" y="114" width="32" height="25" rx="7" fill="#e87786"/><text x="200" y="132">4</text><rect x="235" y="135" width="32" height="25" rx="7" fill="#8e80d6"/><text x="251" y="153">5</text><rect x="283" y="119" width="32" height="25" rx="7" fill="#39bbaa"/><text x="299" y="137">6</text><rect x="331" y="99" width="32" height="25" rx="7" fill="#e9aa4f"/><text x="347" y="117">7</text><rect x="379" y="106" width="32" height="25" rx="7" fill="#4d9ee3"/><text x="395" y="124">8</text></g>
+                  <g><path d="M205 85l29-19 33 19v40h-62z" fill="#f8f8ef" stroke="#dae5ee" stroke-width="3"/><path d="M198 85l35-30 38 30" fill="#25689f" stroke="#4b9cd1" stroke-width="9" stroke-linejoin="round"/><rect x="221" y="99" width="16" height="26" fill="#6c9bd0"/><rect x="247" y="101" width="11" height="12" rx="2" fill="#9ed9e9"/><rect x="206" y="122" width="61" height="15" rx="4" fill="#194b82"/><text x="237" y="133" text-anchor="middle" font-size="10" fill="white" font-weight="800">LURIA</text></g>
+                  <g><path d="M320 212l25-18 26 18v30h-51z" fill="#fff7ed" stroke="#dae1ea" stroke-width="3"/><path d="M317 213l29-26 28 26" fill="none" stroke="#54a29b" stroke-width="10" stroke-linejoin="round"/><rect x="337" y="222" width="17" height="20" rx="2" fill="#65b6ba"/><path d="M343 213h5m-2.5-2.5v5" stroke="white" stroke-width="2.5"/></g>
+                  <g fill="#399c77"><circle cx="98" cy="145" r="15"/><circle cx="126" cy="148" r="12"/><circle cx="310" cy="66" r="17"/><circle cx="388" cy="169" r="18"/><circle cx="161" cy="255" r="15"/></g><g fill="#77be79"><circle cx="104" cy="136" r="12"/><circle cx="311" cy="59" r="13"/><circle cx="383" cy="164" r="13"/><circle cx="170" cy="251" r="12"/></g>
+                  <g transform="translate(100 196)"><ellipse cy="24" rx="21" ry="9" fill="#477db7" opacity=".27"/><circle cy="0" r="21" fill="white" stroke="#4e91d3" stroke-width="4"/><circle cx="-13" cy="-15" r="10" fill="#a6c8e0" stroke="#608da7" stroke-width="2"/><circle cx="13" cy="-15" r="10" fill="#a6c8e0" stroke="#608da7" stroke-width="2"/><circle cy="0" r="15" fill="#f3f6f8"/><circle cx="-6" cy="-3" r="2" fill="#203d5e"/><circle cx="6" cy="-3" r="2" fill="#203d5e"/><circle cy="5" r="3.5" fill="#d88592"/></g>
+                  <g transform="translate(348 160)"><ellipse cy="24" rx="21" ry="9" fill="#448e77" opacity=".27"/><circle cy="0" r="21" fill="white" stroke="#45b39c" stroke-width="4"/><circle cx="-13" cy="-15" r="10" fill="#c4a2b2" stroke="#9a7388" stroke-width="2"/><circle cx="13" cy="-15" r="10" fill="#c4a2b2" stroke="#9a7388" stroke-width="2"/><circle cy="0" r="15" fill="#f6e7ed"/><circle cx="-6" cy="-3" r="2" fill="#42354c"/><circle cx="6" cy="-3" r="2" fill="#42354c"/><circle cy="5" r="3.5" fill="#d88592"/></g>
+                  <g transform="translate(241 226)"><circle r="12" fill="#fff" stroke="#71b5d3" stroke-width="4"/><path d="M0 -8v16m-8-8h16" stroke="#438ab8" stroke-width="2"/></g>
+                </svg>
+              </div>
+            </article>
+            <article class="games-emergency" aria-labelledby="game-emergency-heading">
+              <span class="games-kicker"><span class="games-dot"></span> Disponível</span>
+              <div class="games-emergency-head"><span class="games-emergency-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.7 0L12 5.7l-1.1-1.1a5.4 5.4 0 1 0-7.7 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z"/><path d="M4.3 12h4.3l1.5-3.5 3.1 7.2 1.5-3.7h5.1"/></svg></span><h2 id="game-emergency-heading">Sala de Emergência</h2></div>
+              <p>Assuma o plantão, investigue casos e pratique decisões clínicas no simulador da LURIA.</p>
+              <div class="games-monitor" aria-hidden="true"><svg viewBox="0 0 330 75" preserveAspectRatio="none"><path d="M0 41H46L58 29 70 53 89 14 110 61 123 39H170L183 30 195 49 208 38H246L259 26 274 48 288 37H330" fill="none" stroke="#69e9bc" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="13" y="16" fill="#aee5d2" font-size="10" font-weight="800">MONITOR • EMERGÊNCIA</text><text x="292" y="16" fill="#7fb9dc" font-size="10" font-weight="800">98%</text></svg></div>
+              <a class="games-link" href="/plantao/sala-emergencia/">Abrir simulador <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            </article>
+          </section>
+          <div class="games-section-label"><h2>Próximos desafios</h2><span>Novas formas de aprender estão chegando</span></div>
+          <section class="games-mini-grid" aria-label="Jogos em desenvolvimento">
+            <article class="games-mini games-mini--flash" aria-labelledby="game-flash-heading">
+              <div class="games-mini-visual"><span class="games-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 5 13h6l-1 9 9-12h-6l0-8Z"/></svg></span><span class="games-mini-status">Em breve</span></div>
+              <h3 id="game-flash-heading">Plantão Relâmpago</h3>
+              <p>Raciocínio e condutas em poucos segundos. Acerte, crie sequências e supere o relógio.</p><span class="games-mini-line" aria-hidden="true"></span>
+            </article>
+            <article class="games-mini games-mini--sequence" aria-labelledby="game-seq-heading">
+              <div class="games-mini-visual"><span class="games-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="11" height="5" rx="1.5"/><rect x="10" y="11" width="11" height="5" rx="1.5"/><rect x="3" y="19" width="11" height="3" rx="1.5"/><path d="m17 4 3 3-3 3m3-3H15m-8 7-3 3 3 3"/></svg></span><span class="games-mini-status">Em breve</span></div>
+              <h3 id="game-seq-heading">Sequência Salvadora</h3>
+              <p>Organize etapas de protocolos e descubra a ordem correta das condutas clínicas.</p><span class="games-mini-line" aria-hidden="true"></span>
+            </article>
+            <article class="games-mini games-mini--escape" aria-labelledby="game-escape-heading">
+              <div class="games-mini-visual"><span class="games-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M5 16V8a3 3 0 0 1 3-3h5m-1-3 3 3-3 3M8 18h7a4 4 0 0 0 4-4V8"/></svg></span><span class="games-mini-status">Em breve</span></div>
+              <h3 id="game-escape-heading">Escapando do Plantão</h3>
+              <p>Enfrente uma sequência de minicasos, vença as fases e chegue ao fim do plantão.</p><span class="games-mini-line" aria-hidden="true"></span>
+            </article>
+          </section>
+          <div class="games-footer-note">Os jogos em desenvolvimento ainda não estão disponíveis. O Study Rats está em demonstração, com bots simulados e perguntas de exemplo.</div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261013-frame1"></script>
+  <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+</body>
+</html>
