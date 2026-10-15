@@ -11,7 +11,7 @@
 
 | Aula | Tema | Status | Arquivo de trabalho |
 |---:|---|---|---|
-| 41 | Choque circulatório | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
+| 41 | Choque circulatório | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
 | 42 | Princípios de técnica cirúrgica | RASCUNHO_INICIADO | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
 | 43 | Puericultura e prevenção de acidentes | RASCUNHO_INICIADO | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
@@ -45,6 +45,12 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 41 — conversão visual realizada (14/10/2026)
+
+Criado `apostilas/choque-circulatorio/index.html` **somente na branch editorial**. HTML estático com índice responsivo, identidade LURIA, capítulos, quadro dos quatro mecanismos e fluxo inicial autoral, 8 casos, 12 questões comentadas com gabaritos expansíveis, 3 tabelas e ferramentas Grifar/Post-it existentes na plataforma. Verificadas estruturalmente as âncoras e tags. **Não inclui imagens clínicas pendentes.**
+
+A conferência estática está documentada em `apostilas/_rascunhos/lote-03/41-VALIDACAO-HTML.md`. Ainda faltam revisão médica, homologação, curadoria Admin, inspeção em navegador e testes de PWA; portanto a aula 41 não está publicada e **continua fora da contagem de homologadas**.
 
 ## Aprofundamento da aula 41 — 14/10/2026
 
