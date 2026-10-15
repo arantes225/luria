@@ -1,14 +1,14 @@
-# LURIA — Lote 7 · Aula 134
+# LURIA — Tema 134 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)
 # Síndrome dos ovários policísticos — auditoria e bloco adicional de questões
 
 **Status:** COMPLEMENTO EDITORIAL EM RASCUNHO, NÃO INTEGRADO/NÃO PUBLICADO.  
 **Apostila existente preservada:** \`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\`. **Data da revisão:** 14/10/2026.  
-**Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado.
+**Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS/PMOS* (2023, atualização de nomenclatura 2026), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado.
 
 ## 0. Por que não criar novo livro?
 O HTML da LURIA já continha aproximadamente **57,6 mil caracteres de marcação e 31 mil caracteres de texto bruto extraído**, títulos sobre fisiopatologia, clínica, critérios diagnósticos adultos e adolescentes, hiperandrogenismo, AMH/ultrassom, saúde metabólica, anticoncepção, metformina, GLP-1, proteção endometrial e indução ovulatória com letrozol. **Cinco casos clínicos** foram identificados pelo índice. A seção de fixação não mostrou títulos padronizados de questões com alternativas e justificativas; a lacuna é a consolidação por questões de decisão clínica. As contagens de caracteres não equivalem a conteúdo útil validado.
 
-**Terminologia:** o site emprega “Síndrome Ovariana Metabólica Poliendócrina (SOMP)” como adaptação editorial. A denominação médica consagrada em documentos científicos é **Síndrome dos Ovários Policísticos (SOP; PCOS em inglês)**. Recomendo apresentar os dois nomes quando necessário, deixando claro que **“SOMP” é rótulo editorial local**, não um novo diagnóstico com critérios independentes. Evitar alterar automaticamente URLs, títulos ou material já publicado sem revisão.
+**Terminologia (atualização documentada em 15/10/2026):** a nomenclatura internacional **PCOS — polycystic ovary syndrome** passou a ser oficialmente denominada **PMOS — polyendocrine metabolic ovarian syndrome** pelo consenso global anunciado em **12/05/2026** (Monash University, Endocrine Society, ASRM; *The Lancet*, DOI 10.1016/S0140-6736(26)00717-8). A LURIA já utiliza **“Síndrome Ovariana Metabólica Poliendócrina (SOMP)”**, uma tradução/ordenação editorial próxima ao conceito novo. **Não é correto dizer em 2026 que a expressão representa apenas invenção local sem respaldo conceitual internacional**; o acrônimo internacional oficial é **PMOS**, e a equivalência exata em português ainda deve ser padronizada institucionalmente. Preservar **SOP/PCOS** nos sinônimos, busca e contexto de provas brasileiras, explicando que a mudança de nome **não cria doença nova nem altera por si só critérios/condutas**. Evitar alterar automaticamente URLs, títulos e conteúdos publicados sem revisão técnica e SEO.
 
 ## 1. Matriz de validação do livro existente
 1. **Adultas:** após exclusões adequadas, diagnóstico com dois dos três elementos — disfunção ovulatória, hiperandrogenismo clínico/bioquímico, morfologia policística — conforme critérios internacionais. Quando coexistem ciclos irregulares e hiperandrogenismo, **US/AMH não são necessários para confirmar**.
@@ -19,6 +19,42 @@ O HTML da LURIA já continha aproximadamente **57,6 mil caracteres de marcação
 6. **Objetivo terapêutico:** sem desejo gestacional, manejar ciclos, hiperandrogenismo, proteção endometrial, contracepção e metabolismo; com desejo, avaliar casal e outros fatores, induzir ovulação com **letrozol como primeira opção farmacológica** em paciente anovulatória elegível, observando disponibilidade/regras brasileiras e contraindicação em gestação estabelecida.
 7. **Risco de sobretratamento:** ciclos irregulares no início da adolescência podem representar maturação normal; não transformar todo ovário multifolicular em SOP.
 8. **Endométrio:** oligomenorreia prolongada e exposição estrogênica sem oposição podem aumentar risco de hiperplasia; avaliar sangramento anormal, frequência de sangramentos e proteção apropriada, sem prescrever terapia única a todas.
+
+### 1.1. Adolescência: cronologia menstrual aplicável à decisão diagnóstica
+
+A irregularidade dos ciclos não deve ser interpretada com a mesma régua imediatamente após menarca e cinco anos depois. Uma adolescente com irregularidade **não** recebe automaticamente diagnóstico de SOP/PMOS: na adolescência, é necessário demonstrar **irregularidade menstrual persistente adequada à idade ginecológica e hiperandrogenismo**, após excluir imitadores; **ultrassonografia e AMH não servem como critérios diagnósticos nessa fase**.
+
+| Momento em relação à menarca | Padrão que exige investigação, sem equivaler automaticamente a SOP/PMOS |
+|---|---|
+| Até completar 1 ano | Irregularidade isolada costuma integrar maturação puberal; sinais de gravidade, virilização ou outros sintomas exigem avaliação própria |
+| De 1 a menos de 3 anos | Ciclos **menores que 21 dias** ou **maiores que 45 dias** |
+| A partir de 3 anos | Ciclos **menores que 21 dias**, **maiores que 35 dias** ou **menos de 8 ciclos/ano** |
+| A qualquer momento após completar 1 ano de menarca | **Qualquer ciclo isolado acima de 90 dias** merece investigação |
+| Ausência de menarca | **Amenorreia primária aos 15 anos** ou mais de **3 anos após a telarca** |
+
+Os limiares são sinais para investigar disfunção ovulatória; sozinhos **não fecham diagnóstico**, nem substituem avaliação de possibilidade de gestação, tireoide, prolactina, hiperplasia adrenal congênita não clássica e outras etiologias conforme exame. Hirsutismo relevante e hiperandrogenemia confirmada com metodologia adequada têm peso diferente de acne leve isolada ou ovários multifoliculares encontrados incidentalmente.
+
+**Exemplo A — dois anos pós-menarca:** menina de 14 anos, ciclos de 48–60 dias, sem hiperandrogenismo relevante. O intervalo exige investigação, mas **não confirma** SOP/PMOS: um critério é insuficiente; documentar quadro, avaliar causas e seguir longitudinalmente.
+
+**Exemplo B — quatro anos pós-menarca:** adolescente com ciclos de 38–50 dias, hirsutismo clinicamente significativo e outras causas apropriadamente excluídas. A combinação de irregularidade persistente por fase ginecológica e hiperandrogenismo permite discutir diagnóstico por critérios adolescentes **sem solicitar US ou AMH para “fechar” o caso**. A gravidade dos sinais e a confiabilidade dos andrógenos medidos ainda exigem julgamento.
+
+**Exemplo C — 8 meses pós-menarca:** irregularidade leve, sem outros sinais relevantes, frequentemente indica maturação do eixo. Evitar rotular diagnóstico crônico com base exclusiva na ultrassonografia; explicar retorno se houver amenorreia prolongada, hiperandrogenismo progressivo ou sinais sistêmicos.
+
+**Seguimento do estado “em risco”:** a diretriz orienta reavaliar características persistentes até a maturidade reprodutiva, por volta de **8 anos após a menarca**, sem deixar sintomas, saúde mental ou condições metabólicas sem cuidado enquanto o diagnóstico amadurece.
+
+**Fonte primária:** recomendações 1.1.1–1.1.4 e 1.5 da diretriz internacional 2023, https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/ . As faixas foram conferidas na versão em acesso aberto da diretriz. Atualização terminológica 2026 indicada abaixo.
+
+### 1.2. Atualização internacional de nomenclatura — PMOS, PCOS e SOMP
+
+| Nome | Uso editorial recomendado em outubro de 2026 |
+|---|---|
+| **PMOS** (*polyendocrine metabolic ovarian syndrome*) | Nome internacional **novo** anunciado no consenso de 12/05/2026. Deve aparecer na primeira menção e nos metadados/sinônimos. |
+| **SOP** / **PCOS** | Nome tradicional, essencial para recuperar literatura anterior, linguagem clínica brasileira e provas; manter como termo de busca e ensinar equivalência clínica. |
+| **SOMP** (*síndrome ovariana metabólica poliendócrina*) | Tradução usada pela LURIA que comunica o caráter endocrinometabólico. Identificar como formulação em português da plataforma e cotejar com traduções brasileiras oficiais quando disponíveis; **não** chamá-la de doença distinta nem atribuir ao acrônimo SOMP status internacional que pertence a PMOS. |
+
+O consenso global de 2026 estabelece **transição terminológica** para adoção mais ampla até a diretriz prevista para 2028; a base de recomendações de 2023 permanece a referência clínica desta redação, sem transformar mudança de nome em nova classificação diagnóstica.
+
+**Fontes de nomenclatura:** Monash University, `PMOS Guideline & Resources`, https://www.monash.edu/medicine/mchri/pcos/guideline ; Endocrine Society, comunicado de 12/05/2026, https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change ; Teede HJ et al., *Lancet* 2026, DOI 10.1016/S0140-6736(26)00717-8.
 
 ## 2. Oito questões inéditas com comentários por alternativa
 
@@ -91,7 +127,7 @@ D. Fazer histerectomia preventiva a todas.
 - Padronizar como explicar o “fenótipo ovariano”: AMH ou US é **uma** dimensão, nunca duplicada no critério.
 - Adicionar bloco sobre saúde mental, apneia do sono, fertilidade e qualidade de vida sem estigmatizar peso.
 - Checar medicamentos usados no Brasil, efeitos adversos, contraindicações para contraceptivos e metformina, recomendações de GLP-1 e planos pré-concepção, sem prometer que toda medicação aprovada internacionalmente está disponível no SUS.
-- Reavaliar terminologia “SOMP” como nome editorial; nas referências clínicas usar SOP/PCOS.
+- Atualizar terminologia à transição global PCOS → PMOS de maio de 2026; manter SOP/PCOS como sinônimos e SOMP como a forma portuguesa editorial da LURIA, sem apagar nomes anteriores.
 
 ## 4. Integração segura
 **Não sobrescrever o HTML publicado.** Primeiro conferir casos e fixação originais, marcar âncoras e posicionar 8 questões após capítulo pertinente, testar contraste/responsividade e preservar imagens licenciadas. A seção atual tem ~31 mil caracteres de texto bruto, não atingindo a meta nominal de 60 mil **úteis**, mas tamanho não justifica texto inflado; aprofundar diagnóstico diferencial e terapia onde houver valor clínico.
