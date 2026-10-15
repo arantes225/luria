@@ -455,3 +455,317 @@ A DRC associa maior vulnerabilidade a certas infecções, riscos em internação
 
 **Educação do paciente:** reduzir exposição a nefrotoxinas, evitar desidratação/automedicação, manter medidas de PA/glicemia, conhecer sinais de alarme e ter estratégia de acesso quando função piora. Não exigir monitorização impossível de quem vive longe de laboratório; priorizar exames realmente decisivos e coordenação APS–especialista.
 
+## 23. Quando encaminhar à nefrologia e como preparar terapia renal substitutiva
+
+Encaminhamento deve combinar **causa, categoria, progressão, albuminúria, alterações de sedimento, complicações, risco predito e preferência do paciente**, e não aguardar um número único de TFGe. Exemplos de prioridade: TFGe <30 (G4/G5) em muitos fluxos; queda sustentada/rápida; RAC muito elevada; hematúria glomerular com albuminúria; hipertensão resistente; potássio persistentemente anormal; causa genética/estrutural complexa; complicações graves; necessidade de KFRE e planejamento de modalidade. O **PCDT brasileiro 2025** e a organização regional da rede SUS devem determinar encaminhamento e dispensação concretos, sem presumir disponibilidade universal imediata.
+
+### 23.1. Pré-diálise não significa “esperar piorar”
+
+Uma pessoa com DRC G4 progressiva precisa aprender com antecedência sobre modalidades de tratamento, exames pré-transplante, acesso vascular/peritoneal quando aplicável, vacinação, alimentação e apoio social. Planejamento precoce permite evitar início de hemodiálise em urgência por cateter temporário quando isso seria prevenível. Entretanto, **acesso vascular criado cedo demais em paciente de progressão lentíssima também causa ônus**; por isso a decisão depende de trajetória e previsão KFRE, não de TFGe isolada.
+
+**Caminho de cuidado em sequência:** confirmar risco → organizar consultas → oferecer educação de opções → discutir vantagens e limitações de cada modalidade → preparar acesso quando indicação previsível → facilitar avaliação de transplante, inclusive preemptivo em elegíveis → respeitar escolha de tratamento conservador abrangente quando alinhada a objetivos e prognóstico.
+
+### 23.2. Hemodiálise, diálise peritoneal e transplante
+
+**Hemodiálise:** remove solutos e volume por circulação extracorpórea, demanda acesso vascular adequado, sessões e monitorização. Desafios incluem hipotensão intradialítica, acesso, infecções, logística e transporte. **Diálise peritoneal:** utiliza membrana peritoneal e trocas de solução, pode favorecer autonomia domiciliar em perfis elegíveis, mas exige treinamento, técnica estéril, condições de moradia/apoio e vigilância de peritonite. **Transplante renal:** oferece possibilidade de melhores desfechos em candidatos adequados, mas requer avaliação de imunologia, compatibilidade, risco cardiovascular, infecção, câncer e adesão/seguimento; não significa cura definitiva da vulnerabilidade renal.
+
+**Transplante preemptivo** antes de diálise, quando possível e apropriado, evita parte da exposição à diálise; o acesso brasileiro depende de rede, avaliação e legislação. Não orientar que qualquer familiar “deve doar” rim, nem sugerir que impossibilidade de doação familiar impeça avaliação do sistema de transplantes.
+
+### 23.3. Quando começar diálise? A resposta não é um único valor de ureia
+
+A decisão considera **sintomas urêmicos refratários**, pericardite/encefalopatia urêmicas, **hiperpotassemia ou acidose graves refratárias**, sobrecarga volêmica com edema pulmonar resistente a tratamento, deterioração nutricional e funcional associada à uremia, além de preferências e segurança. A TFGe ajuda planejar, mas não substitui avaliação integral. **DRC G5 estável com sintomas controlados não precisa começar diálise automaticamente no dia em que a TFGe atinge 14**; o inverso também é verdadeiro se há complicação urgente em TFGe mais alta.
+
+É necessário distinguir terapia de substituição **aguda para LRA** (apontada na aula 106) de **planejamento crônico**, embora emergências de ambas possam compartilhar manifestações. Paciente com obstrução reversível ou LRA sobre DRC não deve receber diagnóstico de diálise crônica irreversível sem esclarecimento.
+
+## 24. Cuidado conservador abrangente e decisões compartilhadas
+
+**Manejo conservador renal** é tratamento ativo focado em sintomatologia, qualidade de vida, equilíbrio de volume, anemia, prurido, dor, sono, saúde mental, nutrição e prevenção de eventos, **sem iniciar terapia renal substitutiva quando isso corresponde à decisão informada ou ao benefício esperado**. Não confundir cuidado conservador com “abandono” e não usar idade isolada para negar opções. Uma pessoa de 85 anos robusta pode desejar e se beneficiar de terapia renal substitutiva, enquanto outra de mesma idade e fragilidade elevada pode valorizar cuidados em casa com metas diferentes.
+
+A consulta deve explicar benefícios possíveis, carga de sessões e transporte, riscos de internações, incerteza prognóstica e alternativas de conforto. Discutir preferências, diretivas antecipadas quando pertinente e apoio de família por escolha do paciente. **Cuidados paliativos renais** podem coexistir com diálise e transplante: controle de sintomas e suporte existencial não se limitam à fase final.
+
+### 24.1. Prurido, náuseas, dor e fadiga
+
+Prurido urêmico demanda procurar xerose, alterações minerais, medicações, dermatoses e outras causas; hidratação da pele e tratamento renal específico podem ajudar. Analgésicos precisam de escolha cuidadosa por eliminação renal e metabólitos; opioides e gabapentinoides podem acumular. **Não prescrever morfina ou gabapentina em dose usual de adulto saudável para toda DRC G5**, pois risco de sedação/toxicidade depende da função, indicação e esquema.
+
+### 24.2. Fadiga e sofrimento emocional
+
+Fadiga pode envolver anemia, inflamação, sono ruim, depressão, uremia, doença cardiovascular e perda de massa muscular. Corrigir hemoglobina acima do alvo seguro de ESA não é solução universal. Avaliar apoio social, capacidade de manter trabalho/estudo e carga de transporte, sem atribuir todo sofrimento à “falta de adaptação” ao tratamento.
+
+## 25. Populações especiais: idosos, gestantes, crianças e pacientes com comorbidades
+
+### 25.1. Idosos e fragilidade
+
+A TFGe reduzida com envelhecimento exige exame de cronicidade e contexto: há idosos G3aA1 com baixa velocidade de progressão, cuja principal ameaça pode ser evento cardiovascular, queda ou polifarmácia. Isso não invalida o diagnóstico KDIGO se persistente, mas **muda a intensidade de investigação e metas**. Sarcopenia pode superestimar TFGe baseada em creatinina. Pressão alvo agressiva deve ser ponderada contra ortostase. Em paciente com múltiplas doenças e expectativa de vida limitada, reduzir consultas redundantes e priorizar qualidade de vida pode ser medicina melhor, não tratamento inferior.
+
+### 25.2. Gestação e desejo reprodutivo
+
+A gravidez altera filtração e creatinina; **equações convencionais de TFGe não são validadas da mesma forma no estado gestacional**, preferindo interpretação obstétrica e creatinina sérica seriada com protocolos específicos. DRC prévia eleva risco de hipertensão gestacional, pré-eclâmpsia, restrição de crescimento e prematuridade, de acordo com estágio, albuminúria e causa.
+
+**IECA/BRA e certas terapias nefroprotetoras modernas não devem ser mantidos na gestação**, exigindo planejamento terapêutico pré-concepcional. Além de retirada/substituição supervisionada, discutir segurança de doença de base, controle de PA, risco fetal e seguimento de alto risco. **Não recomendar gravidez ou interrupção reprodutiva apenas com base na categoria G**: decisão envolve risco individual, autonomia e equipe multidisciplinar.
+
+### 25.3. Crianças: DRC não é “adulto em tamanho pequeno”
+
+CAKUT e uropatias obstrutivas são causas importantes nas primeiras idades; glomerulopatias passam a ganhar peso em fases posteriores. O diagnóstico considera **creatinina, crescimento, estatura, desenvolvimento, albuminúria/proteinúria, pressão por percentis e causa congênita**. Criança pode ter doença renal de longa data com repercussão no crescimento e anemia antes de sinais urêmicos clássicos do adulto.
+
+**Schwartz** e outras equações pediátricas, avaliação nutricional, distúrbios minerais e possibilidade de transplante preemptivo requerem nefropediatria. A **KDIGO 2026 de anemia** inclui população pediátrica, mas os thresholds e estratégias não devem ser copiados do quadro de adultos sem ver seção por idade. **Aulas relacionadas:** 108 ITU pediátrica/RVU; 113 síndromes nefrótica/nefrítica; 106 LRA.
+
+### 25.4. Rim único, transplante e doença genética
+
+Pessoa com rim único funcional pode ter TFGe preservada e viver bem; monitorar pressão, RAC e função conforme risco, evitando rotulá-la como falência renal inevitável. Após transplante, há vulnerabilidades de imunossupressão, interação medicamentosa, infecção, câncer, doença cardiovascular e disfunção do enxerto; **transplantado é considerado portador de marcador de DRC** para classificação e seguimento, mesmo com boa TFGe.
+
+### 25.5. Diabetes, insuficiência cardíaca e obesidade
+
+Quando DM2 e insuficiência cardíaca coexistem, escolhas cardiorrenais se influenciam; diurese e volume mudam tolerância a IECA/BRA, iSGLT2 e MRA. Risco de hipoglicemia aumenta com redução de depuração de certas medicações; obesidade pode dificultar estimativa de função e nutrição adequada. **Nenhum pacote terapêutico deve ser aplicado automaticamente sem potássio, pressão, função e sintomas.**
+
+## 26. Protocolos práticos e fluxogramas originais
+
+### Fluxograma 1 — rastreamento na Atenção Primária
+
+**Pessoa com fator de risco (DM, HAS, DCV, LRA anterior, família, CAKUT)** → pedir creatinina com TFGe e RAC urinária; quando pertinente sedimento → se normais, seguir periodicidade baseada em risco → se TFGe <60 ou RAC ≥30 ou outro marcador, **excluir situação aguda e repetir em janela adequada para cronicidade**, avaliando gravidade → classificar CGA → investigar causa e risco cardiovascular → iniciar medidas fundamentadas e programar monitorização/nefrologia conforme risco.
+
+**Exceção de segurança:** hematúria ativa com queda rápida de função, oligúria, hipertensão grave, hiperpotassemia importante e edema pulmonar não aguardam confirmação de três meses. A classificação “DRC provável” pode coexistir com urgência médica.
+
+### Fluxograma 2 — acompanhamento de DRC confirmada
+
+Registrar C, G, A e trajetória → revisar PA e glicemia → revisar medicações e nefrotóxicos → escolher IECA/BRA conforme albuminúria e contraindicações → avaliar iSGLT2 e terapias adicionais por limiar e disponibilidade → verificar potássio, creatinina e PA após mudanças → rastrear anemia, DMO, bicarbonato e sintomas na fase apropriada → ajustar frequência → discutir risco KFRE/encaminhamento → plano de seguimento por escrito.
+
+**Dois erros opostos:** nunca prescrever nefroproteção por medo de qualquer aumento inicial da creatinina, e prescrever sem controle de potássio ou sem avaliar gestação/desidratação. A estratégia correta é **elegibilidade + monitorização + acompanhamento**.
+
+### Fluxograma 3 — elevação de creatinina após IECA/BRA
+
+Nova dose ou início → revisar PA, creatinina e K em **2–4 semanas** ou antes conforme risco → incremento discreto estável e K aceitável: geralmente seguir orientação de continuidade → elevação >30% de creatinina em quatro semanas ou sintomas relevantes: pesquisar hipovolemia, AINE, diurético, obstrução/estenose, doença aguda → corrigir fatores, revisar conduta/medicação conforme especialista. **Não confundir uma variação de creatinina com porcentagem da TFGe**, pois não são equivalentes aritmeticamente.
+
+### Fluxograma 4 — anemia com DRC
+
+Hemograma alterado → confirmar anemia e investigar outras causas → ferritina/TSAT e contexto infeccioso → decidir ferro conforme **KDIGO 2026 por modalidade (HD versus não-HD/DP)** → avaliar resposta e sintomas → quando apropriado, considerar ESA sem perseguir Hb de adulto saudável → rastrear pressão e eventos trombóticos → revisar transfusão individualmente. **Uma ferritina elevada não prova ferro disponível, e uma Hb baixa não prova exclusivamente DRC.**
+
+### Fluxograma 5 — preparar substituição de função
+
+DRC G4/G5 ou KFRE alto → educação de opções → avaliação cardiovascular, infecciosa e social → planejar acesso/modalidade e transplantabilidade → monitorar sintomas/complicações → iniciar modalidade quando benefício/necessidade clínica se impõe ou quando plano foi adequadamente definido → oferecer cuidado conservador abrangente como escolha ativa se for o objetivo da pessoa. Evitar início improvisado sem acesso quando progresso previsível permitia planejamento.
+
+## 27. Pérolas de prova, armadilhas e revisão de alta retenção
+
+- **DRC exige ≥3 meses** de lesão ou TFGe <60; creatinina elevada isolada não prova cronicidade.
+- **G1/G2 não são DRC sem marcador de lesão.**
+- **RAC e TFGe devem ser consideradas juntas**; A3 eleva risco mesmo com G preservado.
+- **Não confundir mg/g e mg/mmol.**
+- **CKD-EPI é para adultos**; gestação/LRA e sarcopenia exigem cautela; Schwartz é cenário pediátrico.
+- **CGA inclui causa**, que pode estar indeterminada provisoriamente.
+- **Em G3–G5**, KFRE ajuda encaminhamento e planejamento; não extrapolar modelo automaticamente a G1/G2.
+- **IECA + BRA não é combinação nefroprotetora habitual**; aumenta dano.
+- **Checar creatinina e K após iniciar IECA/BRA em 2–4 semanas.** Elevação >30% em quatro semanas merece avaliação.
+- **Não suspender IECA/BRA só porque TFGe caiu abaixo de 30**, se houver indicação e tolerância.
+- **SGLT2i oferecem benefício também sem DM2** em perfis adequados; TFGe ≥20 e RAC ≥200 são um recorte forte.
+- **SGLT2i em jejum prolongado/doença crítica podem requerer pausa**, por risco de cetose.
+- **Finerenona em DM2 albuminúrico exige potássio normal e monitorização**; não é suplemento renal universal.
+- **Sódio não é sal:** 2 g de sódio ≈5 g de NaCl.
+- **Meta de proteína de 0,8 g/kg/d em G3–G5 não dialítica exige cautela** em desnutridos, idosos e outros grupos.
+- **Anemia KDIGO 2026:** limiares de ferro variam em HD versus não-HD/DP; ESA visa Hb abaixo de 11,5 g/dL em adultos.
+- **PTH discretamente aumentado não significa calcitriol obrigatório** em G3a–G5 sem diálise.
+- **Hiperpotassemia grave e edema pulmonar são emergências**, não temas de retorno anual.
+- **Diálise não começa por creatinina/ureia mágicas.** Sintomas, repercussões e decisão compartilhada importam.
+- **Transplante renal preemptivo** deve ser considerado quando elegível, mas não prometido sem avaliação.
+- **Cuidado conservador é ativo** e pode coexistir com cuidados paliativos desde cedo.
+- **Codex auditará TODOS os lotes**, mas a revisão médica de cada recomendação continua indispensável antes de tornar material prescritivo.
+
+## 28. Casos clínicos comentados com decisões passo a passo
+
+### Caso 1 — A glicemia não era a única pista de nefropatia
+
+**Apresentação:** homem de 58 anos, DM2 há 14 anos, HAS há 10, sem sintomas. TFGe 56 há sete meses, 52 agora; RAC de 480 e depois 520 mg/g em exames separados, potássio 4,4, PA média 150/88. Usa metformina e anti-hipertensivo isolado não bloqueador RAAS. **Hipóteses:** DRC G3aA3 provavelmente relacionada a diabetes/hipertensão após avaliação de causas; risco cardiorrenal relevante. **Raciocínio:** TFGe <60 persistente ≥3 meses e albuminúria A3 confirmada bastam para DRC, ainda que paciente se sinta bem. A albuminúria altera prognóstico e elegibilidade terapêutica; não esperar edema ou oligúria. **Exames:** urina/sedimento para sinais atípicos, histórico ocular/retinopatia, lipídios, HbA1c, creatinina/K e avaliação cardiovascular; ultrassom se indicação etiológica. **Conduta:** confirmar causa e contraindicações, otimizar controle pressórico, IECA ou BRA com monitorização, avaliar SGLT2i segundo critérios e disponibilidade SUS, redução de sal e risco cardiovascular. **Por que importa:** tratar DRC precoce não é esperar “a creatinina subir muito”.
+
+### Caso 2 — Creatinina “normal” na paciente muito frágil
+
+**Apresentação:** mulher de 83 anos, sarcopenia intensa e perda ponderal, creatinina 0,9 mg/dL, laudo de TFGe 63, mas usa múltiplos medicamentos com eliminação renal e apresenta episódios de confusão após aumento de gabapentinoide. **Hipóteses:** superestimativa de função renal pela creatinina em paciente com pouca massa muscular; toxicidade medicamentosa multifatorial. **Raciocínio:** baixa produção de creatinina pode mascarar filtração reduzida. A dose de um fármaco pode exigir outra estimativa/clearance. **Exames:** revisar lista e doses, considerar cistatina C combinada, avaliar cognição e outras causas de delirium, verificar eletrólitos e exame de função. **Conduta:** ajustar fármacos potencialmente acumulados, evitar polifarmácia e desprescrição cega, reavaliar metas pressóricas e nutrição. **Por que importa:** “creatinina bonita” não garante clearance adequado para dose.
+
+### Caso 3 — Aumento de creatinina após IECA não implica suspensão imediata
+
+**Apresentação:** homem de 62 anos com DRC G3bA3, inicia IECA indicado e retorna em três semanas. Creatinina era 1,8 e passou a 2,1 mg/dL (aumento de **16,7%**), K 4,8, PA melhor e sem sintomas. **Hipóteses:** efeito hemodinâmico esperado, mas monitorização ainda necessária. **Raciocínio:** variação relativa (2,1−1,8)/1,8×100 = 16,7%, abaixo do ponto KDIGO de reavaliar aumento >30% em quatro semanas; contexto clínico tolerado. **Exames:** confirmar tendência/adesão, potássio, PA, volemia e novos fármacos. **Conduta:** usualmente manter abordagem e monitorar, considerando dose-alvo tolerada; não abandonar nefroproteção só por pequena elevação. **Por que importa:** um remédio benéfico não deve ser retirado por interpretação errada de hemodinâmica renal.
+
+### Caso 4 — A DRC “estável” que na verdade tinha LRA sobreposta
+
+**Apresentação:** mulher de 67 anos com DRC G3aA2 e creatinina histórica 1,3, agora 3,0 mg/dL após gastroenterite intensa, baixa ingesta, diurético, IECA e uso de AINE por dor. PA 90/56, mucosas secas, oligúria. **Hipóteses:** LRA sobre DRC, por hipovolemia e fatores farmacológicos, com risco de distúrbios eletrolíticos. **Raciocínio:** mudança em dias não é progressão crônica simples; TFGe calculada em creatinina em rápida mudança é pouco confiável. **Exames:** eletrólitos, ECG conforme potássio, urina/sedimento, balanço, revisão de obstrução quando indicado. **Conduta:** avaliação urgente, suporte hemodinâmico individualizado, revisão de fármacos durante doença aguda e monitorização; vincular à aula **106 LRA**. **Por que importa:** paciente com DRC pode recuperar parte substancial da piora aguda.
+
+### Caso 5 — Anemia em hemodiálise com ferro baixo funcional
+
+**Apresentação:** mulher de 54 anos em HD, Hb 9,1 g/dL, ferritina 320 ng/mL, TSAT 18%, cansaço importante, sem hemorragia recente. **Hipóteses:** anemia da DRC com disponibilidade de ferro potencialmente insuficiente, mas necessidade de excluir outras causas e infecção ativa. **Raciocínio:** KDIGO 2026, para G5HD, sugere ferro quando ferritina ≤500 e TSAT ≤30; ambos critérios numéricos estão presentes. Não significa “infundir qualquer formulação imediatamente” sem avaliação de infecção, tolerância e equipe dialítica. **Exames:** hemograma seriado, saturação/ferritina, estado inflamatório e história de sangramento. **Conduta:** discutir ferro IV segundo diretriz da unidade, resposta e eventual ESA/monitorização, evitando elevar Hb acima de alvo seguro. **Por que importa:** ferritina 320 não exclui deficiência de ferro funcional em HD.
+
+### Caso 6 — PTH elevado sem indicação automática de calcitriol
+
+**Apresentação:** homem de 63 anos, DRC G3b não dialítica, PTH ligeiramente acima do limite por duas coletas, fósforo normal, vitamina D nutricional baixa, cálcio normal e ausência de fraturas. **Hipóteses:** adaptação/hiperparatireoidismo secundário inicial, com possível fator corrigível. **Raciocínio:** KDIGO CKD-MBD 2017 orienta olhar tendências e causas modificáveis; não iniciar calcitriol rotineiramente em G3a–G5 não dialítica. **Exames:** rever cálcio, fósforo, PTH seriados, 25(OH)D e nutrição/medicamentos. **Conduta:** corrigir deficiência quando indicada, revisar fósforo alimentar, observar evolução; encaminhar se progressão grave/complicações. **Por que importa:** sobretratamento pode causar hipercalcemia e danos.
+
+### Caso 7 — DRC G5 com escolha compartilhada e sem indicação emergencial
+
+**Apresentação:** mulher de 76 anos, DRC G5 de progressão lenta, TFGe 13, normocalêmica, bicarbonato controlado, sem edema pulmonar, boa funcionalidade, sem sintomas urêmicos importantes e com suporte familiar. Demonstra receio de iniciar HD. **Hipóteses:** falência renal avançada que demanda preparação, não necessariamente diálise urgente naquele encontro. **Raciocínio:** a TFGe abaixo de 15 classifica G5; o início depende de sintomas, complicações e decisão compartilhada. **Exames:** revisar tendência, nutricional, estado de volume, anemia, potássio, acidose, sintomas e risco. **Conduta:** educação sobre HD, DP, transplante quando elegível e cuidado conservador abrangente; planejar acesso/retorno apropriado, respeitando preferências. **Por que importa:** “G5” não é consentimento automático para cateter de urgência.
+
+### Caso 8 — Homem jovem com função preservada e rim policístico
+
+**Apresentação:** homem de 31 anos, pai e avô com rins policísticos, ultrassom compatível com múltiplos cistos bilaterais e critérios clínicos apropriados à história, TFGe 105, RAC 12, PA 128/76. **Hipótese:** DRC estrutural por provável doença policística autossômica dominante, categoria G1A1. **Raciocínio:** lesão estrutural hereditária persistente pode definir DRC mesmo com filtração normal e sem proteinúria. **Exames:** imagem e critérios por idade/risco, história familiar, avaliação especializada de tamanho/volume renal e progressão, aconselhamento genético quando indicado. **Conduta:** nefrologia, acompanhamento de PA/função e avaliação de terapias modificadoras de doença em candidatos apropriados conforme guideline específico/bula; evitar prometer diálise inevitável. **Por que importa:** uma TFGe excelente não nega doença estrutural relevante.
+
+## 29. Questões autorais de cinco alternativas — comentários completos
+
+### Questão 1 — Definição de DRC
+
+Mulher de 39 anos com rins policísticos documentados há vários anos, TFGe 105 mL/min/1,73m² e RAC 15 mg/g. Qual afirmação melhor descreve?
+
+A. Não há DRC porque TFGe é ≥90.  
+B. É obrigatoriamente G5 porque existe doença genética.  
+C. Pode haver DRC por anomalia estrutural persistente, classificada G1A1 se causa confirmada.  
+D. É LRA até repetir creatinina amanhã.  
+E. Só tem DRC se iniciar diálise.
+
+**Gabarito: C.** **A incorreta:** G1 com marcador estrutural pode ser DRC. **B incorreta:** G5 é TFGe <15, não etiologia. **C correta:** critério exige anormalidade persistente com implicação para saúde. **D incorreta:** não há evento agudo definido. **E incorreta:** diálise não é requisito diagnóstico. **Mini-revisão:** CGA envolve causa, TFG e albuminúria.
+
+### Questão 2 — Albuminúria e GFR
+
+Homem de 60 anos com DM2, TFGe 52 persistente e RAC 420 mg/g confirmada. Qual categoria?
+
+A. G2A1.  
+B. G3aA3.  
+C. G3bA2.  
+D. G4A1.  
+E. G5A3.
+
+**Gabarito: B.** **A incorreta:** TFGe <60 e RAC >300. **B correta:** 45–59 é G3a e >300 é A3. **C incorreta:** G3b é 30–44 e A2 30–300. **D incorreta:** G4 é 15–29. **E incorreta:** G5 <15. **Mini-revisão:** classificação depende de duas escalas independentes e da causa.
+
+### Questão 3 — Suspeita de lesão aguda
+
+Pessoa com creatinina habitual 1,5 e atual 3,2 após três dias de vômitos/uso de AINE. Qual o próximo raciocínio?
+
+A. Atribuir exclusivamente à progressão natural da DRC.  
+B. Confirmar necessidade de diálise definitiva só pelo valor.  
+C. Esperar três meses antes de investigar.  
+D. Investigar urgentemente LRA sobre DRC, volume, drogas, eletrólitos e obstrução.  
+E. Prescrever dieta sem sódio como única ação.
+
+**Gabarito: D.** **A incorreta:** mudança aguda exige diferencial. **B incorreta:** indicação de diálise é clínica, e pode haver reversibilidade. **C incorreta:** evolução em dias demanda ação. **D correta:** combina avaliação de LRA e doença prévia. **E incorreta:** não resolve quadro e pode agravar hipovolemia. **Mini-revisão:** DRC não protege de LRA.
+
+### Questão 4 — Monitorização de IECA/BRA
+
+Após iniciar IECA em paciente DRC albuminúrica, qual conduta se aproxima da KDIGO 2024?
+
+A. Monitorar PA, creatinina e potássio dentro de 2–4 semanas, com avaliação se creatinina aumentar >30% em quatro semanas.  
+B. Nunca dosar potássio após iniciar.  
+C. Suspender sempre que creatinina aumentar 5%.  
+D. Associar IECA + BRA como padrão protetor.  
+E. Suspender em todos pacientes assim que TFGe ficar abaixo de 30.
+
+**Gabarito: A.** **A correta:** monitorização e interpretação hemodinâmica são partes do benefício seguro. **B incorreta:** hipercalemia é risco. **C incorreta:** variações discretas não exigem suspensão automática. **D incorreta:** associação aumenta efeitos adversos. **E incorreta:** KDIGO recomenda continuidade em muitos pacientes com TFGe <30 quando tolerado. **Mini-revisão:** risco e benefício dependem de monitorização.
+
+### Questão 5 — Indicações de SGLT2i
+
+Qual paciente se enquadra em recomendação KDIGO 2024 com evidência forte para iSGLT2 em DRC, se não houver contraindicação e a bula permitir?
+
+A. Adulto com TFGe 12 e sem terapia anterior, para início automático.  
+B. Adulto com TFGe 60, RAC 10, sem DM nem insuficiência cardíaca, obrigatoriamente.  
+C. Gestante com DRC e hiperêmese.  
+D. Criança de dois meses com malformação renal.  
+E. Adulto com TFGe 35 e RAC 600 mg/g, independentemente de DM2.
+
+**Gabarito: E.** **A incorreta:** limiar de início recomendado é geralmente TFGe ≥20 na indicação citada. **B incorreta:** não existe indicação universal pelo critério apresentado. **C incorreta:** gestação exige outro manejo. **D incorreta:** não extrapolar indicação de adultos a lactente. **E correta:** TFGe ≥20 e RAC ≥200 em adulto com DRC. **Mini-revisão:** proteção não se restringe a diabetes, mas o limiar importa.
+
+### Questão 6 — Anemia e KDIGO 2026
+
+Paciente em hemodiálise com Hb baixa, ferritina 300 ng/mL e TSAT 20%. A KDIGO 2026 sugere considerar ferro quando?
+
+A. Somente se ferritina <15 ng/mL, sem outras avaliações.  
+B. Apenas após Hb normalizar espontaneamente.  
+C. Em G5HD, ferritina ≤500 e TSAT ≤30 podem preencher critérios, preferindo ferro IV quando indicado e após avaliação de segurança.  
+D. Ferro IV é obrigatório em todo paciente febril.  
+E. ESA deve buscar Hb 14 g/dL em todos.
+
+**Gabarito: C.** **A incorreta:** ignora limiares e modalidades da KDIGO 2026. **B incorreta:** deficiência de ferro pode precisar correção. **C correta:** critérios da modalidade foram reconhecidos. **D incorreta:** infecção e risco exigem avaliação. **E incorreta:** alvo de ESA para adultos é <11,5, não normalização elevada. **Mini-revisão:** anemia na DRC requer ferro/TSAT e causas concorrentes.
+
+### Questão 7 — PTH na DRC
+
+Homem com DRC G3b não dialítica, PTH pouco elevado, fósforo normal e deficiência de vitamina D nutricional. Melhor interpretação?
+
+A. Calcitriol obrigatório imediatamente para todos.  
+B. Avaliar tendência e causas corrigíveis; KDIGO não recomenda calcitriol rotineiro em G3a–G5 não dialítica.  
+C. Suspender todo suplemento alimentar.  
+D. Indicar paratireoidectomia de rotina.  
+E. Diagnosticar falência renal G5 apenas pelo PTH.
+
+**Gabarito: B.** **A incorreta:** eleva risco de hipercalcemia sem benefício universal. **B correta:** seguir tendência e fatores modificáveis. **C incorreta:** conduta sem contexto. **D incorreta:** cirurgia é para casos específicos refratários. **E incorreta:** estágio G é por TFGe. **Mini-revisão:** calcitriol ativo é diferente de corrigir deficiência nutricional de vitamina D.
+
+### Questão 8 — Planejamento por KFRE
+
+Qual afirmação reflete a KDIGO 2024?
+
+A. KFRE de adultos pode ser usado indistintamente em lactentes.  
+B. Risco em cinco anos 3–5% em G3–G5 pode apoiar encaminhamento à nefrologia, junto de critérios clínicos.  
+C. KFRE 3% significa diálise obrigatória em 24 horas.  
+D. Risco predito dispensa olhar hematuria e queda rápida de TFGe.  
+E. KFRE substitui diagnóstico etiológico e RAC.
+
+**Gabarito: B.** **A incorreta:** modelo depende de população validada. **B correta:** KDIGO usa esse intervalo como referência de risco de encaminhamento em G3–G5. **C incorreta:** previsão não é indicação imediata de diálise. **D incorreta:** urgências clínicas prevalecem. **E incorreta:** KFRE usa dados e não determina a causa. **Mini-revisão:** modelos apoiam, não decidem sozinhos.
+
+### Questão 9 — Início de diálise
+
+Paciente G5 estável, TFGe 13, sem hipercalemia refratária, edema pulmonar, acidose importante ou sintomas urêmicos graves. Qual conduta mais adequada?
+
+A. Cateter de diálise e início imediato apenas pela TFGe 13, sem discussão.  
+B. Negar informação sobre transplante por ter G5.  
+C. Orientar que não há risco e não precisa retornar.  
+D. Planejar modalidades e acesso com nefrologia, acompanhar complicações e decidir início por quadro clínico e preferências.  
+E. Suspender todos medicamentos protetores sem avaliar.
+
+**Gabarito: D.** **A incorreta:** TFGe isolada não determina início automático. **B incorreta:** transplante pode ser opção preemptiva em elegíveis. **C incorreta:** falência renal avançada requer seguimento. **D correta:** cuidado planejado e individual. **E incorreta:** manutenção depende de tolerância/indicação. **Mini-revisão:** indicação dialítica é clínica e compartilhada.
+
+### Questão 10 — Velocidade de progressão e cronicidade
+
+Pessoa com TFGe 55 em uma coleta isolada durante febre, RAC 120 mg/g na mesma infecção urinária, sem exames prévios. Qual conclusão é mais correta?
+
+A. DRC G3aA2 definitiva e comprovada no dia.  
+B. Necessita transplante em seis meses por regra universal.  
+C. Exclui DRC porque TFGe >45.  
+D. A febre torna impossível qualquer investigação.  
+E. Há anormalidades que exigem avaliar contexto, repetir após resolução e confirmar persistência ≥3 meses, sem atrasar cuidado se houver sinais graves.
+
+**Gabarito: E.** **A incorreta:** faltou cronicidade e controle de situação aguda. **B incorreta:** prognóstico não se deduz assim. **C incorreta:** G3a pode ser DRC quando persistente. **D incorreta:** a investigação deve reconhecer condição aguda. **E correta:** teste alterado é pista, não definição de curso crônico. **Mini-revisão:** critério temporal evita rotular LRA/alteração transitória como DRC.
+
+## 30. Plano de imagens: dez candidatos clínicos e didáticos para curadoria premium
+
+Nenhuma imagem de terceiros foi incorporada nesta etapa. A consulta de exemplos da **KDIGO** e de páginas clínicas governamentais permite planejar figuras fiéis, mas **figura pública não equivale a licença de uso comercial**. Preferir ilustrações autorais e exames radiológicos desidentificados com autorização de publicação verificável.
+
+| Nº | Candidato visual | Pergunta que ensina | Lugar | Fonte/situação de direitos |
+|---|---|---|---|---|
+| 1 | **Matriz CGA original** G1–G5 × A1–A3, construída com dados textuais das diretrizes | Por que G3aA3 difere de G3aA1? | §7 | Redesenho didático autoral; não copiar arte da KDIGO |
+| 2 | **Anatomia glomerulotubular** com RAAS e SGLT2 | Como IECA/BRA e iSGLT2 reduzem hiperfiltração? | §3,14,15 | Esquema original LURIA |
+| 3 | **Dois casos de ultrassom renal**: rins pequenos/ecogênicos e rim policístico | Qual achado sugere cronicidade? | §4,10 | Exame real a obter com licença e legenda |
+| 4 | **Microscopia urinária**, cilindro hemático/dismorfismo | Quando não chamar de nefropatia diabética? | §4,10 | Atlas laboratorial institucional com direitos explícitos |
+| 5 | **Gráfico TFGe–tempo** com LRA sobre DRC e “dip” hemodinâmico | Como distinguir progressão de variação aguda? | §8,14,15 | Gráfico original com dados fictícios |
+| 6 | **Esquema RAC e GFR em conjunto** de rastreamento à confirmação | Por que creatinina isolada é insuficiente? | §5,26 | Diagrama autoral |
+| 7 | **Linha de decisão KFRE** 5 anos e 2 anos sem confundir risco com diálise | Quando encaminhar e planejar acesso? | §11,23 | Esquema original com notas |
+| 8 | **Anemia da DRC** com EPO/hepcidina/ferritina/TSAT | Por que ferritina pode estar alta com ferro indisponível? | §19 | Esquema original |
+| 9 | **Relação mineral óssea**, rim–fósforo–PTH–calcitriol | Por que não dar calcitriol a todo G3? | §20 | Ilustração original com fisiologia revisada |
+| 10 | **Mapa de modalidades** HD/DP/transplante/cuidado conservador | Como garantir decisão compartilhada? | §23,24 | Diagrama original, sem propaganda de modalidade |
+
+**Fontes visuais identificadas como inspiração NÃO licenciada:** a matriz GFR/albuminúria do site KDIGO 2024; página do governo da província de British Columbia com diagramas de rastreamento e critérios de encaminhamento; ilustração publicada sobre uso de iSGLT2 e DRC em revista. Para produção real, **recriar conceitualmente com autoria própria, não copiar composição ou arte protegida**, checar precisão de códigos/legendas e obter permissão se houver figura clínica real. Converter material permitido para **WebP** de tamanho reduzido preservando detalhes finos; incluir alternativa textual acessível e legenda com informação do achado, sem imagem “só decorativa”.
+
+## 31. Fontes científicas rastreáveis por assunto
+
+1. **Ministério da Saúde / Conitec.** PCDT *Estratégias para Atenuar a Progressão da Doença Renal Crônica*, atualização do anexo 07/02/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/estrategias-para-atenuar-a-progressao-da-doenca-renal-cronica/view. Contexto brasileiro de regulação e cuidado.
+2. **Portaria Conjunta SAES/SECTICS nº 11, setembro de 2024**, aprova PCDT brasileiro. https://bvs.saude.gov.br/bvs/saudelegis/Saes/2024/poc0011_26_09_2024.html. Documento normativo, sujeito a atualizações.
+3. **KDIGO.** Clinical Practice Guideline for the Evaluation and Management of CKD. Kidney International 2024. https://kdigo.org/guidelines/ckd-evaluation-and-management/. Diagnóstico, CGA, risco KFRE, monitorização, IECA/BRA e iSGLT2.
+4. **KDIGO 2024 Executive Summary**, Kidney International 105:684–701. https://kdigo.org/wp-content/uploads/2017/02/KDIGO-2024-CKD-Guideline-Executive-Summary.pdf. Resumo e tabelas com limiares; **direitos de imagem não conferidos**.
+5. **KDIGO, anúncio de 17/03/2026.** Focused update to the 2024 CKD guideline. https://kdigo.org/kdigo-announces-update-to-2024-ckd-guideline/. Atualização em desenvolvimento, não final.
+6. **KDIGO 2026.** Clinical Practice Guideline for Anemia in CKD. Kidney International 2026. https://kdigo.org/guidelines/anemia-in-ckd/. Diagnóstico/tratamento da anemia com novos limiares de ferro.
+7. **KDIGO anúncio 02/01/2026.** https://kdigo.org/kdigo-announces-publication-of-anemia-in-ckd-guideline/. Confirma publicação e substituição da versão de anemia 2012.
+8. **KDIGO 2017.** CKD–Mineral and Bone Disorder guideline. https://kdigo.org/guidelines/ckd-mbd/. PTH/fósforo/cálcio e cautela sobre calcitriol.
+9. **KDIGO 2021.** Clinical Practice Guideline for Management of Blood Pressure in CKD. https://kdigo.org/guidelines/blood-pressure-in-ckd/. Alvo sistólico padronizado quando tolerado.
+10. **Levin A et al.** Executive summary CKD KDIGO 2024. https://doi.org/10.1016/j.kint.2023.10.016. Formulações exatas de IECA/BRA, iSGLT2, KFRE.
+11. **Practical CKD care**, Governo de British Columbia, algoritmo de rastreio e encaminhamento adaptado da KDIGO. https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines/chronic-kidney-disease-diagnosis-maintain. Referência auxiliar, **figuras não incorporadas e licença comercial não verificada**.
+12. **Arquivo privado do acervo:** “02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”, aprox. 19.972 caracteres extraídos, usado apenas como benchmark de cobertura sem reprodução.
+13. **Apostila 106 LURIA** — Lesão renal aguda; arquivo editorial interno preservado, serve de aprofundamento quando há DRC + LRA.
+14. **Apostila 113 LURIA**, prevista no mesmo lote, nefropediatria (síndromes glomerulares); **não existe manuscrito verificado nesta etapa**.
+
+## 32. Auditoria estrutural preliminar — não equivale a liberação clínica
+
+**Cobertura desta rodada:** definição e persistência temporal; epidemiologia e etiologias; fisiopatologia; rastreio e confirmação de albuminúria/TFGe; creatinina/cistatina C; classificação CGA; progressão; avaliação clínica, sedimento/imagem/biópsia; prognóstico KFRE; nefroproteção com controle pressórico, IECA/BRA, SGLT2i, MRA e GLP-1; nutrição e farmacologia; **anemia segundo KDIGO 2026**, CKD-MBD, acidose, hiperpotassemia, edema e uremia; prevenção; encaminhamento; HD/DP/transplante e tratamento conservador; populações especiais; fluxos; oito casos integrados; dez questões com cinco alternativas totalmente explicadas; dez sugestões visuais.
+
+**Pendências a verificar pelo nefrologista e farmacêutico antes da publicação:** revisão da fonte brasileira PCDT integral versus recomendações KDIGO (elegibilidade/dispensação no SUS e fármacos recentes); conferência de todas as recomendações por grau e população; interpretação de TFGe por equação/idade/superfície; limites laboratoriais KDIGO anemia 2026 e contraindicações; pressão padronizada e tolerabilidade; protocolos de diálise, transplante e diálise peritoneal na rede brasileira; validação de toda dose medicamentosa — nenhuma posologia copiada está liberada; inserir exame clínico/laboratorial com licença explícita e diagramas com legenda/alt; revisão independente de casos/gabaritos; QA Markdown/HTML/PWA; checagem cruzada com 106/108/113 para impedir duplicação ou contradição.
+
+**Auditoria geral ao fim de todos os lotes:** exigência do usuário já formalizada em **apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md**. O Codex deverá revisar cobertura da biblioteca inteira, confrontar protocolos/PCDTs e diretrizes, verificar conteúdo e anexos, checar imagens/licenças, apontar erros estruturais e de ciência, propor PRs e reportar bloqueios. **Não antecipar merge ou deploy antes dessa fase.**
+
+**ESTADO ATUAL: MANUSCRITO ORIGINAL, APTO A REVISÃO; NÃO APROVADO PARA USO PRESCRITIVO; NÃO PUBLICADO.**
