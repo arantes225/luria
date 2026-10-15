@@ -44,3 +44,12 @@
 6. Manter PR #37 draft, sem merge ou deploy. Reconciliar branch divergente da main antes de qualquer integração.
 
 **Status:** CONTINUAÇÃO DE REDAÇÃO — não certificar como pronta por contagem ou estrutura.
+
+## Continuação de 15/10/2026 — aprofundamento do tema 018 e QA textual
+- Após a redação inicial, houve três ampliações substantivas **dentro das seções clínicas pertinentes**: (1) fisiologia, triagem, hemólise e leitura de curvas; (2) fototerapia, encefalopatia, investigação da colestase e seguimento; (3) diferenciais, armadilhas de classificação, prematuridade e segurança na transição do cuidado.
+- **Triagem quantitativa reproduzível sobre a versão da branch:** 63.686 caracteres somente em blocos de parágrafos didáticos dos capítulos, **excluindo** casos, questões e referências; supera o piso numérico de 60.000 caracteres, mas a contagem **não comprova sozinha autossuficiência, precisão médica ou ausência de redundância semântica**.
+- JSON analisado em memória a partir da cópia lida de volta do GitHub: 17 capítulos, 17 entradas no índice, correspondência completa SIM, IDs únicos SIM, 5 casos e 10 questões autorais; 0 parágrafos longos literalmente duplicados nessa triagem.
+- Cuidados clínicos: a revisão bibliográfica se fundamenta na AAP 2022 para ≥35 semanas, NASPGHAN/ESPGHAN para colestase, consenso de prematuros <35 semanas e fontes SBP para atresia; protocolos específicos/doses devem passar por revisão independente antes de certificação. Sem gráficos de curvas copiados para dentro do material.
+- **Curadoria visual:** apostilas/lotes/ICTERICIA_NEONATAL_CANDIDATAS_IMAGENS_2026-10-15.md registra dez candidatos com links de origem, função, licença quando verificável e condições; 0 aprovados, 0 inseridos, não houve alteração no Admin.
+- **QA ainda pendente:** revisão independente do mérito científico integral; comparação semântica contra repetições e teste de autossuficiência; cada questão deve ser validada frente aos capítulos; direitos autorais/licenças e eventual consentimento das fotos; funcionamento do renderer em desktop/PWA e integração no catálogo.
+- **Governança:** continua rascunho editorial, sem `index.html`, sem merge/deploy. A branch editorial diverge da `main`, requer reconciliação cuidadosa antes de qualquer publicação.
