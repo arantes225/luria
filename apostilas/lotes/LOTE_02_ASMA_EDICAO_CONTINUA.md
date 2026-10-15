@@ -404,6 +404,46 @@ Após o parto, revisar adesão, privação do sono, dificuldades com dispositivo
 **Fonte:** GINA 2026 Strategy Report, seções de gestação e controle de asma, https://ginasthma.org/2026-gina-strategy-report/ .
 
 
+### 8.3 Asma entre 6 e 11 anos: atualização GINA 2026 e proteção anti-inflamatória desde a etapa inicial
+
+A criança de 6 a 11 anos não deve receber **somente salbutamol ou outro beta-2-agonista de curta ação (SABA)** como estratégia completa de tratamento da asma. A GINA 2026 apresenta opções de alívio contendo corticoide inalatório (CI) desde a etapa inicial e ressalta que a escolha depende da frequência de sintomas, das crises prévias, da função pulmonar e do dispositivo que a família consegue utilizar. Esse tema requer atenção especial porque a **GINA 2026 modificou o tratamento inicial em comparação com 2025**. Uma questão que use a tabela antiga pode ter resposta diferente; identificar a edição citada é parte do raciocínio.
+
+O CI reduz a inflamação e o risco de exacerbações. O SABA relaxa rapidamente a musculatura brônquica, mas não substitui proteção anti-inflamatória. Mesmo quando o aluno diz que a criança “tem asma leve”, é necessário perguntar por atendimento de emergência, corticosteroide sistêmico, internações, limitação de brincadeiras e sintomas noturnos. O risco futuro não pode ser deduzido apenas do número de dias com chiado na última semana.
+
+#### 8.3.1 Decisão inicial por apresentação clínica: quadro didático autoral
+
+| Apresentação de criança com asma confirmada, 6–11 anos | Direção de tratamento apresentada pela GINA 2026 | Cuidado que muda a decisão |
+| --- | --- | --- |
+| Sintomas pouco frequentes, por exemplo até **2 dias/semana** | Na etapa inicial, **CI-formoterol em baixa dose conforme necessidade**, ou **CI associado a SABA conforme necessidade**, em produto combinado ou com CI administrado sempre que o SABA for utilizado | Conferir aprovação por **idade, formulação, dispositivo e país**; não supor que toda combinação comercial no Brasil tenha autorização para essa finalidade |
+| Sintomas em **3–4 dias/semana** | Preferir **CI diário em dose baixa**, com opção de alívio apropriada | Rever adesão, técnica e risco de crise; a escolha não se reduz a número de dias |
+| Sintomas na maioria dos dias, ou despertares noturnos por asma, com ou sem função pulmonar reduzida | Pode exigir **CI de manutenção em dose maior**, **associação CI-LABA** ou **MART com CI-formoterol**, conforme etapa e avaliação | O alívio e a manutenção precisam de **formulações realmente adequadas**; LABA isolado não é tratamento |
+| Apresentação inicial já durante exacerbação | **Tratar primeiro a crise** e iniciar controle anti-inflamatório compatível com o risco após estabilização | Não atrasar oxigenação, broncodilatação e avaliação de gravidade enquanto se decide a etapa futura |
+
+Este é um **quadro de raciocínio original**, não uma cópia nem uma substituição da figura da GINA. “CI-formoterol” significa associação específica com formoterol, broncodilatador de início rápido, nas apresentações apropriadas. **Não** substituir por CI-salmeterol como medicação de resgate; **não** assumir que a quantidade de jatos de uma formulação adulta seja válida na infância. A diretriz possui quadro próprio de doses, etapas e limites diários por dispositivo. Antes de dispensação ou prescrição real, conferir PCDT brasileiro, bula, apresentação, categoria etária e acesso no SUS.
+
+A GINA 2026 apresenta **terapia de alívio anti-inflamatório (AIR)** para a etapa 1 em crianças de 6–11 anos, com opções contendo CI-formoterol ou CI junto do SABA. Nas etapas seguintes, o controle regular com CI continua central; **MART** significa que uma combinação apropriada de CI-formoterol é usada tanto em manutenção quanto no alívio, mas **não** se aplica a qualquer associação CI-LABA. O cuidador precisa entender essas diferenças antes de receber uma receita escrita com siglas.
+
+#### 8.3.2 Quando confirmar a asma e quando questionar o diagnóstico
+
+Na idade escolar, muitas crianças já conseguem realizar espirometria reprodutível. O diagnóstico associa **sintomas respiratórios variáveis** (tosse, sibilância, dispneia e opressão torácica, frequentemente com variação noturna ou após estímulos) e **evidência de limitação variável do fluxo expiratório**, quando documentável. Teste normal entre episódios não exclui asma, especialmente após tratamento com CI; repetir prova em período sintomático ou considerar investigação especializada quando apropriado.
+
+Sinais que pedem outra hipótese incluem tosse produtiva persistente desde a infância, perda ponderal, hipocratismo, infecções repetidas localizadas, sibilância unilateral fixa, estridor inspiratório e dificuldade para engolir. Corpo estranho, bronquiectasias, fibrose cística, alterações congênitas, aspiração e obstrução laríngea podem simular crises asmáticas. A história de sintomas “desde o nascimento” não deve ser automaticamente rotulada como asma atópica.
+
+#### 8.3.3 Avaliação e seguimento centrados em criança e cuidadores
+
+A consulta deve reunir **sintomas, risco de exacerbação, função pulmonar quando factível, fatores ambientais, comorbidades, técnica inalatória e preferência familiar**. Solicitar que a criança ou responsável **demonstre** o dispositivo; não basta ouvir que “sabe usar”. Escolher espaçador e máscara/bocal adequados quando exigidos pela formulação e capacidade de coordenação. Confirmar se a escola conhece o plano escrito de ação e como procurar assistência em crise. Registrar efeitos adversos, crescimento, exposição ao tabaco/vape, rinite e possíveis dificuldades de acesso ao medicamento.
+
+Se o controle não está bom, verificar **adesão, execução, dispositivo, exposições e diagnóstico** antes de subir etapa. Na criança controlada durante cerca de três meses ou mais, a GINA admite avaliar redução supervisionada até a menor intensidade eficaz, com plano de seguimento. **Suspensão abrupta de todo componente anti-inflamatório apenas porque está sem sintomas** pode aumentar risco de exacerbação.
+
+### 8.4 Crianças de 5 anos ou menos: chiado recorrente não autoriza copiar a tabela de escolares
+
+O guia resumido GINA 2026 utilizado para a seção acima se destina a **adultos, adolescentes e crianças de 6–11 anos**. Portanto, **não aplicar diretamente seus degraus de CI-formoterol à criança de 2 ou 4 anos**: a avaliação do pré-escolar exige outra parte do relatório completo, dispositivos dependentes da idade e diferenciação entre episódios virais e asma persistente. A criança com três episódios de sibilância após resfriados pode ter doença de apresentação transitória, asma ou outra condição; o rótulo exige avaliar padrão e gravidade.
+
+Investigar gravidade e sinais de perigo sempre que houver **tiragem intensa, cianose, recusa alimentar ou incapacidade para beber, sonolência, esforço respiratório exaustivo, saturação preocupante ou pouca resposta ao tratamento inicial**. Nesses casos, a decisão é suporte e avaliação urgente, não “testar mais um inalador em casa”. Em menores com sibilância exclusivamente viral, a escolha de controlador e a duração de teste terapêutico devem ser individualizadas, considerando episódios graves, manifestações entre infecções, atopia e disponibilidade de reavaliação.
+
+**Fontes verificadas:** Global Initiative for Asthma, *Summary Guide for Asthma Management and Prevention — 2026*, p. 28–29 e quadros de doses específicos nas p. 44–45, https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf ; GINA 2026 *Strategy Report*, https://ginasthma.org/2026-gina-strategy-report/ . Os documentos GINA são **protegidos por direitos autorais**; os quadros acima são autorais e não autorizam reutilizar as figuras originais. Avaliar compatibilidade com o PCDT brasileiro e normas regulatórias antes da disponibilização.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -444,6 +484,15 @@ Mulher de 33 anos trabalha há quatro anos em panificadora e começou a apresent
 ### Caso 10 — Estridor durante corrida interpretado como asma resistente
 
 Atleta de 22 anos apresenta sensação súbita de fechamento de garganta durante sprints, ruído inspiratório e melhora em minutos após interromper esforço. Usa doses repetidas de salbutamol sem benefício consistente e mantém espirometria normal em repouso. **Hipóteses:** obstrução laríngea induzível por exercício, broncoconstrição relacionada a exercício, asma coexistente e outras causas de dispneia. **Raciocínio:** ruído inspiratório cervical e pico durante esforço sugerem componente laríngeo; uma espirometria normal entre crises não elimina asma. **Exames:** avaliação de função pulmonar, testes de provocação quando indicados e laringoscopia durante sintomas/exercício em centro especializado. **Conduta:** evitar aumento automático de corticosteroide inalatório sem comprovar falha de tratamento; preservar terapias indicadas por asma comprovada e tratar o componente laríngeo de forma específica. **Por que este caso importa:** distinguir duas causas tratáveis reduz eventos adversos e consultas repetidas.
+
+
+### Caso 11 — Asma pouco sintomática em escolar não significa SABA isolado
+
+Menino de 8 anos com asma previamente documentada por sintomas variáveis e resposta funcional, apresenta sibilância em um dia a cada duas semanas. Não usa controlador, recebe salbutamol em crises e teve uma consulta de urgência por exacerbação há nove meses. **Hipótese:** asma com sintomas infrequentes, porém com fator de risco futuro pelo episódio atendido. **Raciocínio:** GINA 2026 recomenda **estratégia contendo CI** mesmo na etapa inicial entre 6–11 anos; “quase não chia” não justifica SABA isolado. **Exames:** revisar espirometria existente, episódios graves, técnica do dispositivo e exposições; repetir função se clinicamente apropriado. **Conduta:** selecionar estratégia anti-inflamatória de manutenção ou de alívio adequada ao perfil, **idade, formulação, bula e PCDT brasileiro**, treinar criança/cuidador, fornecer plano de ação e marcar reavaliação. **Por que importa:** prevenir a próxima crise é diferente de apenas aliviar a última.
+
+### Caso 12 — Pré-escolar com episódios virais não recebe automaticamente MART escolar
+
+Menina de 3 anos apresentou três episódios de sibilância associados a infecções virais, está sem sintomas entre resfriados e tem crescimento adequado. O familiar ouviu falar que crianças podem usar CI-formoterol como resgate e deseja a mesma medicação. **Hipóteses:** sibilância recorrente associada a vírus, possível asma pré-escolar e outros diagnósticos dependendo da evolução. **Raciocínio:** o algoritmo **6–11 anos da GINA 2026 não se aplica automaticamente aos 3 anos**. É necessário investigar frequência e intensidade das crises, internações, sintomas entre infecções, atopia, fatores ambientais e diferenciais. **Exames:** avaliação clínica dirigida; exames adicionais apenas conforme sinais de alerta e suspeitas. **Conduta:** elaborar plano apropriado à idade e ao dispositivo disponível, orientar sinais de gravidade e acompanhamento pediátrico; não extrapolar doses nem associações de escolares. **Por que importa:** evitar uso de medicamento/formulação sem respaldo etário e distinguir sibilância viral de asma persistente.
 
 
 ## 10. Questões autorais comentadas
@@ -557,6 +606,35 @@ A) Obstrução laríngea induzível. B) Pneumonia lobar obrigatória. C) Hipogli
 Gestante com asma previamente bem controlada deseja suspender o CI por medo de prejudicar o feto. Qual resposta é mais adequada?
 A) Suspender todo controlador e usar apenas SABA. B) Manter terapia anti-inflamatória indicada e acompanhar controle, técnica e riscos durante a gestação. C) Não avaliar piora de dispneia porque é fisiológica. D) Indicar corticoide oral contínuo para toda gestante.
 **Gabarito: B.** A manutenção do controle reduz risco de exacerbação e hipoxemia. **A** aumenta risco ao retirar CI; **C** pode perder sinais de embolia, pneumonia ou crise; **D** amplia exposição sistêmica sem indicação. **Mini-revisão:** continuidade de CI apropriado, vigilância e abordagem rápida de crises são fundamentais.
+
+
+### Questão 16 — Atualização GINA 2026 em crianças 6–11 anos
+
+Um menino de 9 anos com asma confirmada apresenta sintomas somente uma vez por semana. Qual alternativa descreve melhor a GINA 2026?
+
+A) Deve receber SABA isolado de maneira exclusiva, pois sintomas são infrequentes.
+
+B) A estratégia inicial deve incluir componente anti-inflamatório, podendo envolver CI-formoterol de baixa dose conforme necessidade ou CI usado junto de SABA, respeitando formulação e autorização etária.
+
+C) Toda criança de 9 anos deve iniciar LABA isolado.
+
+D) O algoritmo para adultos aplica-se sem diferenças de dose, dispositivo ou acesso.
+
+**Gabarito: B.** A GINA 2026 recomenda proteção contendo CI desde a etapa inicial de 6–11 anos. **A** ignora prevenção de exacerbações. **C** propõe monoterapia com LABA inadequada para asma. **D** desconsidera grupos etários e apresentações. **Mini-revisão:** a mudança de 2026 precisa ser interpretada junto à bula/PCDT brasileiro, não autoriza automaticamente qualquer apresentação disponível.
+
+### Questão 17 — Tratamento de escolar e pré-escolar não são iguais
+
+Uma criança de 4 anos chia durante resfriados; a mãe pergunta se deve usar a combinação CI-formoterol da irmã de 10 anos. Qual é o melhor raciocínio?
+
+A) Copiar a dose e o dispositivo da irmã, já que ambas são crianças.
+
+B) Aplicar a classificação de asma do adulto e permitir LABA isolado.
+
+C) Investigar padrão de sibilância, sinais de gravidade e diferenciais, e usar protocolo específico de pré-escolares antes de indicar controlador ou resgate.
+
+D) Não avaliar sinais respiratórios porque chiado viral nunca causa crise importante.
+
+**Gabarito: C.** O guia resumido GINA 2026 citado cobre 6–11 anos, e não serve para transferir doses/formulações a uma criança de 4 anos. **A/B** extrapolam tratamentos sem segurança etária; **D** minimiza risco de exacerbações graves. **Mini-revisão:** a idade muda diagnóstico, modo de administração e evidência para estratégias de alívio.
 
 
 ## Referências essenciais
