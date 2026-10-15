@@ -285,15 +285,243 @@ Pessoas próximas devem reconhecer sinais importantes — voz alterada, falta de
 Os materiais multimodais devem manter consistência: uma apostila que ensina epinefrina imediata não pode conviver com simulador que premia anti-histamínico como primeira medida única. O padrão de conteúdo de maior risco merece revisão cruzada entre referências e aplicações.
 
 
-## 6. Referências para validação e continuidade
+
+## 16. Casos clínicos originais e raciocínio passo a passo
+
+### Caso 1 — Sem urticária, mas com choque após antibiótico
+
+**História:** homem de 56 anos, com pneumonia e necessidade de antibiótico IV, desenvolve cinco minutos após início da infusão dispneia, rouquidão, sibilância e hipotensão de 72/40 mmHg. Pele sem urticária evidente. Um membro da equipe questiona anafilaxia porque não há placas avermelhadas. Outros propõem anti-histamínico IV antes de adrenalina.
+
+**Diagnóstico mais provável:** anafilaxia aguda após exposição medicamentosa, com comprometimento de via aérea e circulação. **Raciocínio:** a associação temporal é forte, mas não confirma qual substância sem investigação posterior; a apresentação envolve sistemas respiratório e circulatório e independe de lesão cutânea. A hipotensão e rouquidão elevam urgência. Não é apropriado aguardar manifestação de urticária nem teste laboratorial.
+
+**Exame e monitorização:** repetir PA, FC, SpO₂, estado mental, voz, estridor, ausculta e perfusão, monitorização cardíaca, avaliação de via aérea difícil e possibilidade de monitorar resposta. Tryptase aguda poderá auxiliar posteriormente se coleta disponível sem atraso, seguida de basal quando indicada.
+
+**Conduta:** **interromper infusão suspeita**, chamar equipe, **administrar adrenalina IM na coxa conforme peso/concentração e teto adulto**, posicionar de modo apropriado, fornecer oxigênio, tratar choque com cristalóide e suporte, preparar manejo de via aérea e reavaliar necessidade de dose repetida. Antihistamínico é adjuvante para sintomas cutâneos após estabilização e não primeira intervenção vital. Documentar agentes realmente administrados e referenciar para avaliação alergológica.
+
+**Por que importa:** a ausência de pele positiva não exclui anafilaxia, e a via IM correta salva tempo enquanto a equipe organiza acesso venoso.
+
+### Caso 2 — Edema de língua por IECA ou anafilaxia?
+
+**História:** mulher de 68 anos em uso de enalapril há três anos procura pronto-socorro com edema progressivo de língua há quatro horas. Nega prurido, urticária, nova alimentação ou medicamentos recentes. A voz torna-se abafada e refere dificuldade de engolir. PA inicialmente preservada, sem broncoespasmo.
+
+**Hipóteses:** angioedema por **bradicinina associado a IECA**, mas deve-se avaliar outras causas e vigiar obstrução de via aérea. **Raciocínio:** história de IECA, ausência de urticária/prurido e edema de mucosa que avança em horas favorecem mecanismo bradicinínico. Isso não impede que o profissional considere anafilaxia se novos dados apontarem exposição imediata ou choque. A ameaça principal pode ser **laríngea**, mesmo com PA normal.
+
+**Exames:** avaliação imediata de progressão e necessidade de via aérea; diagnóstico clínico inicialmente, revisão de fármacos. Estudos complementares de C4/C1-INH só são pertinentes em suspeita de formas hereditárias/adquiridas e não devem atrasar tratamento.
+
+**Conduta:** priorizar proteção de via aérea, equipe capacitada e monitorização. **Suspender IECA e registrar evento**, com plano de seguimento e alternativas terapêuticas; considerar medidas dirigidas a bradicinina conforme disponibilidade e protocolo. Se mecanismo não está claro e sinais de anafilaxia ameaçadora aparecem, tratar adequadamente com epinefrina IM enquanto se investiga. **Por que importa:** evidencia que nem todo angioedema é alérgico e que anti-H1/corticoide isolados não resolvem obstrução iminente.
+
+### Caso 3 — Urticária isolada e risco de superdiagnóstico
+
+**História:** mulher de 29 anos desenvolve placas urticariformes difusas com prurido duas horas após alimento que não costuma ingerir. Está respirando normalmente, sem rouquidão, tosse, sibilância, vômitos importantes, desmaio ou tontura. PA estável, mucosas sem edema progressivo e sem sinal de repercussão sistêmica. As lesões melhoram após anti-H1.
+
+**Hipótese:** urticária aguda relacionada ou não a alimento, sem critérios clínicos atuais de anafilaxia. **Raciocínio:** a extensão da pele não demonstra por si comprometimento de outro órgão. O paciente precisa receber avaliação de progressão e orientação de alarme, mas registrar anafilaxia sem critério pode gerar medo e restrições injustificadas. Uma reação futura após o mesmo gatilho **poderá** ter gravidade diferente, por isso a história será investigada por alergologia conforme indicação.
+
+**Exames:** diagnóstico clínico, sem necessidade automática de dosagem de IgE para grandes painéis inespecíficos. **Conduta:** tratar sintomas cutâneos conforme segurança, observar evolução e orientar sinais de retorno imediato; avaliar necessidade de investigação alergológica e possível plano de emergência segundo risco. **Por que importa:** diferencia anafilaxia verdadeira de urticária extensa e evita tanto subtratamento quanto rotulagem excessiva.
+
+### Caso 4 — Picada de vespa e hipotensão com beta-bloqueador
+
+**História:** homem de 71 anos que usa carvedilol por cardiopatia sofre picada de vespa. Minutos depois apresenta síncope, hipotensão e sibilância, sem urticária exuberante. Recebe adrenalina IM adequada, mas continua hipotenso após intervenção e fluidos segundo avaliação.
+
+**Hipótese:** anafilaxia por veneno de himenóptero, com resposta insuficiente inicial. **Raciocínio:** exposição clara, início abrupto e choque/broncoespasmo sustentam diagnóstico, mesmo com pele pouco acometida. O uso de beta-bloqueador **não é contraindicação para administrar adrenalina IM**. A persistência de choque exige reavaliação de via aérea, dose e necessidade de repetição/escalonamento, incluindo possíveis intervenções especializadas. Não concluir que por ser cardiopata a adrenalina deveria ter sido evitada.
+
+**Exames:** monitorização hemodinâmica e respiratória, ECG, avaliação de causas concorrentes e, após estabilização, triptase basal e investigação de sensibilização/possíveis distúrbios mastocitários conforme especialista. **Conduta:** suporte intensivo, repetir adrenalina IM conforme protocolo e considerar infusão titulada/terapias adicionais sob equipe experiente se refratário; avaliar risco, eventual imunoterapia contra veneno e plano futuro. **Por que importa:** reforça urgência e evita contraindicação imaginária em idoso cardiopata.
+
+### Caso 5 — Hipotensão súbita sob anestesia
+
+**História:** mulher de 42 anos em cirurgia eletiva apresenta hipotensão profunda e aumento de pressão de vias aéreas logo após sequência de administração de antibiótico, bloqueador neuromuscular e antisséptico; pele está coberta por campos, sem rash visualizado. O anestesista suspeita anafilaxia perioperatória.
+
+**Hipóteses:** anafilaxia a medicamento ou agente do ambiente versus outras causas anestésicas/circulatórias, como efeito vasodilatador farmacológico, hemorragia, embolia ou problema de ventilação. **Raciocínio:** a clínica de hipotensão e broncoespasmo é compatível; a ausência de rash visível não exclui reação. A identificação causal definitiva exige reconstrução temporal de todos agentes e testes posteriores, não atribuição automática ao último produto administrado.
+
+**Exames:** monitorização contínua, avaliação de via aérea e circulação, documentação detalhada de horários, triptase aguda e basal quando indicado; testes alergológicos especializados posteriores com agentes plausíveis. **Conduta:** suspender possíveis gatilhos, seguir protocolo anestésico de anafilaxia com adrenalina adequada à situação e experiência, suporte hemodinâmico/ventilatório e investigação diferencial. Após estabilização, planejar cirurgias futuras de modo seguro, documentando o evento e encaminhando para alergologia perioperatória.
+
+**Por que importa:** destaca a importância de agir durante choque e não rotular uma única substância sem investigação, preservando possibilidade de procedimentos futuros.
+
+### Caso 6 — Recorrência de sintomas após resolução
+
+**História:** jovem de 24 anos apresenta anafilaxia após alimento, recebe adrenalina IM rapidamente e melhora de modo sustentado inicialmente. Durante observação, horas depois reaparecem urticária, sibilância e tontura sem nova exposição.
+
+**Hipótese:** **anafilaxia bifásica**, por recorrência depois de intervalo assintomático. **Raciocínio:** a manifestação nova deve ser tratada como episódio de anafilaxia conforme gravidade, e não como “coceira residual”. A necessidade de doses de adrenalina adicionais e a gravidade inicial elevam preocupação e influenciam duração de observação. A definição de reação bifásica exige ausência de nova exposição causal.
+
+**Exames:** reavaliar ABC, monitorização e causas concorrentes. **Conduta:** administrar epinefrina IM de novo se manifestações compatíveis, suporte apropriado, prolongar observação ou internação conforme risco, documentar gatilho provável e orientar plano de ação/autoinjetor onde acessível com treinamento. **Por que importa:** uma melhora inicial não significa alta automática, e anti-histamínicos/corticoides não oferecem prevenção confiável de recorrência.
+
+## 17. Questões originais comentadas — oito cenários
+
+### Questão 1 — Primeiro tratamento
+
+Homem após penicilina IV desenvolve rouquidão, estridor, sibilância e hipotensão. Qual medida farmacológica é de primeira linha, em paralelo ao suporte e remoção do gatilho?
+
+A. Anti-H1 oral.
+B. Corticosteroide oral.
+C. Adrenalina intramuscular na região anterolateral da coxa.
+D. Broncodilatador inalatório isoladamente.
+E. Antibiótico de espectro mais amplo.
+
+**Gabarito C.** Epinefrina IM atua em vias aéreas e circulação e deve ser dada prontamente. **A/B** são lentos e não corrigem colapso. **D** pode ajudar broncoespasmo residual, mas não hipotensão/edema de laringe. **E** ignora a emergência. **Minirrevisão:** tempo até adrenalina importa mais que antipruriginoso.
+
+### Questão 2 — Via e concentração
+
+Sobre o manejo inicial de anafilaxia do adulto com circulação, assinale a correta:
+
+A. Adrenalina em bolo IV na mesma concentração IM é rotineiramente mais segura.
+B. A concentração de adrenalina jamais precisa ser conferida.
+C. Dose IM de 0,01 mg/kg com solução 1 mg/mL, limite usual de 0,5 mg em adultos, é recomendação de diretriz.
+D. Só administrar adrenalina depois da triptase.
+E. A via subcutânea é sempre superior à intramuscular.
+
+**Gabarito C.** Reflete WAO e prática internacional, com conferência de peso e apresentação. **A** cria risco grave por pico IV; **B** ignora evento evitável; **D** atrasa cuidado vital; **E** contraria via recomendada. **Minirrevisão:** não confundir dose de anafilaxia IM com RCP IV/IO.
+
+### Questão 3 — Ausência de pele
+
+Adulto tem broncoespasmo e colapso circulatório cinco minutos após picada de vespa, mas nenhuma urticária. Melhor interpretação:
+
+A. Anafilaxia é impossível sem urticária.
+B. A ausência de lesão cutânea não exclui anafilaxia e não deve atrasar adrenalina IM.
+C. É necessariamente crise de ansiedade.
+D. Apenas anti-H1 tópico deve ser usado.
+E. A cultura de sangue é o exame inicial essencial antes da terapia.
+
+**Gabarito B.** O diagnóstico pode decorrer de manifestações respiratórias/circulatórias após exposição plausível. **A/C** ignoram critérios; **D** é insuficiente; **E** é irrelevante ao reconhecimento imediato. **Minirrevisão:** avaliar via aérea e perfusão mesmo com pele normal.
+
+### Questão 4 — Angioedema por bradicinina
+
+Mulher usa enalapril há anos e desenvolve edema progressivo de língua, sem urticária/prurido. Qual princípio é correto?
+
+A. O fato de usar IECA há anos exclui reação ao fármaco.
+B. Considerar angioedema bradicinínico, priorizando via aérea e revendo IECA.
+C. Todo angioedema responde plenamente a anti-H1.
+D. A ameaça à via aérea desaparece quando PA é normal.
+E. A presença de língua inchada prova anafilaxia por alimento.
+
+**Gabarito B.** IECA pode causar angioedema tardio e a via aérea é prioridade. **A** ignora latência variável; **C** confunde mecanismos; **D** ignora obstrução; **E** infere gatilho sem dados. **Minirrevisão:** urticária ausente e IECA sugerem bradicinina, mas tratar emergência sem atrasos.
+
+### Questão 5 — Medicações adjuvantes
+
+Qual afirmação sobre anti-histamínicos e corticosteroides na anafilaxia está correta?
+
+A. Anti-H1 substitui adrenalina quando há hipotensão.
+B. Corticosteroide impede comprovadamente toda reação bifásica.
+C. Anti-H1 pode aliviar urticária após estabilização, mas não substitui adrenalina; corticoide não deve atrasar terapia inicial.
+D. Broncodilatador isolado corrige edema laríngeo.
+E. Nenhum paciente precisa de avaliação respiratória após tratar pele.
+
+**Gabarito C.** Adjuvantes têm indicações limitadas e não substituem epinefrina. **A/D** não tratam circulação/laringe; **B** exagera evidência; **E** negligencia risco. **Minirrevisão:** tratar manifestações fatais primeiro.
+
+### Questão 6 — Reação bifásica
+
+Após melhora completa da anafilaxia, paciente volta a apresentar sibilância e hipotensão horas depois, sem nova exposição. O mais provável é:
+
+A. Uma reação bifásica, exigindo reavaliação e tratamento imediato conforme gravidade.
+B. Prova de que a primeira adrenalina foi contraindicada.
+C. Apenas ansiedade porque já houve melhora.
+D. Efeito obrigatório de anti-H1.
+E. Uma alergia nova a todo medicamento já utilizado.
+
+**Gabarito A.** Recorrência sem nova exposição pode ser bifásica. **B/C/D/E** não descrevem fisiopatologia nem conduta apropriada. **Minirrevisão:** observação deve ser individualizada ao risco.
+
+### Questão 7 — Anafilaxia perioperatória
+
+Durante anestesia, paciente apresenta hipotensão súbita e broncoespasmo após múltiplos agentes. Qual é a abordagem apropriada?
+
+A. Esperar rash aparecer para agir.
+B. Escolher o último fármaco como culpado definitivo e registrar alergia a toda anestesia.
+C. Tratar anafilaxia provável imediatamente e posteriormente investigar agentes com cronologia e testes especializados.
+D. Prosseguir procedimento sem monitorização.
+E. Usar somente corticoide e observar.
+
+**Gabarito C.** O tratamento é emergencial e identificação de gatilho posterior exige investigação sistemática. **A/D/E** atrasam suporte; **B** cria rótulo inespecífico sem evidência. **Minirrevisão:** documentação de horários salva futura segurança anestésica.
+
+### Questão 8 — Beta-bloqueador e cardiopatia
+
+Homem cardiopata em uso de beta-bloqueador apresenta anafilaxia após vespa. Qual conduta farmacológica inicial é apropriada?
+
+A. Evitar adrenalina IM em qualquer cardiopata.
+B. Administrar epinefrina IM pronta e adequadamente; se refratário, ampliar suporte sob equipe experiente.
+C. Usar apenas anti-histamínico porque beta-bloqueador impede toda resposta.
+D. Dar adrenalina IV em bolo com concentração IM de rotina.
+E. Não tratar até obter ECG sem arritmia.
+
+**Gabarito B.** A razão risco-benefício favorece adrenalina IM também no idoso/cardiopata. **A/C** inventam contraindicação; **D** é perigosa; **E** atrasa tratamento. **Minirrevisão:** beta-bloqueio modifica cuidado de refratariedade, mas não elimina primeira linha.
+
+## 18. Algoritmo LURIA original, seguro e não reproduzido
+
+\`\`\`text
+EXPOSIÇÃO SUSPEITA + SINTOMAS AGUDOS
+   |
+   +--> Edema de língua/laringe, estridor, sibilância, hipoxemia,
+   |    hipotensão, síncope ou padrão multissistêmico compatível?
+   |        |
+   |        +--> SIM: ANAFILAXIA POSSÍVEL/PROVÁVEL
+   |                - interromper gatilho
+   |                - chamar ajuda
+   |                - ADRENALINA IM 1 mg/mL na coxa
+   |                  0,01 mg/kg (máx adulto 0,5 mg)
+   |                - monitorizar ABC, posicionar, O2 e fluidos se indicado
+   |                - repetir IM após 5–15 min se persistente/refratária
+   |                - via aérea/infusão IV por equipe experiente se grave
+   |                - adjuvantes apenas APÓS medidas centrais
+   |                - observação por risco + plano de prevenção
+   |
+   +--> SÓ urticária/prurido, sem sinais sistêmicos ou de risco?
+   |        |
+   |        +--> considerar urticária aguda, tratar sintomas,
+   |             orientar e REAVALIAR se progredir
+   |
+   +--> Angioedema de língua sem prurido/urticária, com IECA?
+            |
+            +--> considerar BRADICININA
+                 proteger via aérea imediatamente
+                 revisar fármaco causador
+                 terapia específica se indicada
+                 tratar anafilaxia se não puder ser excluída
+\`\`\`
+
+O esquema é autoral e resume princípios de segurança; a aplicação real exige protocolo e equipe. **Não usar o fluxograma como prescrição automática por sistema.**
+
+## 19. Plano visual com aprovação centralizada
+
+Nenhuma das imagens abaixo foi obtida/licenciada; são metas de curadoria para o Admin:
+
+| Nº | Alvo visual | Função | Situação |
+|---|---|---|---|
+| 1 | Urticária com pápulas reais | Diferenciar pele de reação sistêmica | PENDENTE |
+| 2 | Angioedema de lábio/língua real | Sinais de risco de via aérea | PENDENTE |
+| 3 | Anatomia da coxa/vasto lateral (original) | Ensinar local de epinefrina IM | PENDENTE |
+| 4 | Ampola de adrenalina com concentração legível | Evitar erro de dose | PENDENTE; sem marca manipulada |
+| 5 | Fluxo receptores alfa e beta adrenérgicos | Racional fisiológico | Diagrama autoral pendente |
+| 6 | Capilares/edema e vasodilatação | Entender choque | Diagrama autoral pendente |
+| 7 | Angioedema histaminérgico versus bradicinínico | Diferenciar mecanismo | Diagrama original pendente |
+| 8 | Diagrama de recorrência bifásica | Ensinar observação individual | Esquema original pendente |
+| 9 | Linha temporal da anafilaxia perioperatória | Investigação de causa | Diagrama autoral pendente |
+| 10 | Exemplo de autoinjetor realmente disponível/licenciado | Treinar uso seguro | Verificar regulação e licença |
+| 11 | Cartão de plano de ação LURIA | Preparação comunitária | Diagrama autoral pendente |
+| 12 | Diagnóstico diferencial de reação cutânea grave | Segurança em SCAR | Imagem clínica licenciada pendente |
+
+Cada candidato real deve conter **URL verificada, titular de direitos, licença comercial, legenda, fonte científica, seção e parecer Admin**. Não publicar fotografias do comparador privado ou reproduzir fluxogramas da WAO/ASBAI sem permissão.
+
+## 20. Matriz de cobertura e pendências
+
+| Competência | Local de ensino | Verificação |
+|---|---|---|
+| Explicar mastócitos, IgE e choque | 1, 8–9 | Questões 1–2, caso 1 |
+| Diagnosticar com/sem pele | 2, 8 | Questão 3, casos 1 e 4 |
+| Administrar epinefrina IM com segurança | 3, 9–10 | Questões 1, 2 e 8 |
+| Reconhecer via aérea e escalonamento | 3, 10 | Casos 1, 2 e 4 |
+| Diferenciar angioedema bradicinínico | 11 | Questão 4, caso 2 |
+| Diferenciar urticária, SJS/TEN e DRESS | 12 | Caso 3 e exercícios adicionais pendentes |
+| Tratar reações alimentares/medicamentosas | 13–14 | Casos 3, 5 e questões 5–7 |
+| Identificar reação bifásica e observar | 4, 14 | Caso 6, questão 6 |
+| Documentar e prevenir novas exposições | 4, 14–15 | Caso 5 |
+| Material de casos/questões | 16–17 | 6 casos, 8 questões comentadas |
+| Revisão de fontes e doses | 6 + referências | Conferência por especialista **PENDENTE** |
+| Imagens licenciadas Admin | 19 | **PENDENTE** |
+| HTML desktop/PWA, teste cego de autossuficiência | Integral | **PENDENTE** |
+
+**PARECER PRELIMINAR:** o conteúdo agora inclui exemplos originais, treinamento de decisão temporal e armadilhas de segurança, porém o benchmarking de Drive é apenas parcial e não há imagens aprovadas, inspeção da aplicação, nem auditoria científica final. A contagem de caracteres deverá ser conferida sem marcação/repetição antes de atingir o gate. O arquivo segue **NÃO CERTIFICADO e NÃO PUBLICADO**.
+
+
+## 21. Referências para validação e continuidade
 
 1. **WORLD ALLERGY ORGANIZATION.** *World Allergy Organization Anaphylaxis Guidance 2020*. *World Allergy Organization Journal*, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/
 2. **GOLDEN, D. B. K. et al.** *Anaphylaxis: a 2023 practice parameter update*. *Annals of Allergy, Asthma & Immunology*, 2024;132:124–176. DOI https://doi.org/10.1016/j.anai.2023.09.015 . PDF integral: https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf
 3. **ASBAI. Departamento Científico de Anafilaxia.** *Autoinjetores de adrenalina no manejo da anafilaxia*. *Esclarecendo*, edição 19, novembro de 2024. https://asbai.org.br/wp-content/uploads/2024/11/ASBAI_Esclarecendo_no-19_novembro-2024_compressed.pdf
 4. **ASBAI/SBP.** *Atualização em alergia alimentar 2025*, para aspectos de anafilaxia alimentar e pediatria, conferindo abrangência, dosagem e indicações no texto original. https://asbairj.org.br/atualizacao-em-alergia-alimentar-2025-asbai-e-sbp/
-
-## 7. Pendências e próximos capítulos necessários
-
-Apostila em construção. Falta explicar mecanismos alternativos de anafilaxia, diferença completa entre angioedema histaminérgico e por bradicinina, critérios e diagnóstico diferencial em bebês/crianças (na futura 203), reações por medicamentos e perioperatórias, alergia alimentar/exercício, componentes de segurança e seguimento, casuística **4 casos completos com raciocínio e exames**, **6 questões comentadas com justificativas de todos os distratores**, organograma de abordagem e matriz de cobertura para teste cego.
-
-**Etapa zero integral do Drive permanece NÃO CONCLUÍDA** (apenas material de choque e vacinação correlatos; nenhum benchmark específico de anafilaxia); não certificar a comparação. Antes de publicar será necessário auditoria de fontes e fármacos, 60 mil caracteres didáticos úteis sem redundância, verificar e submeter 10+ visuais didáticos/clinicamente licenciados para aprovação no Admin, transformar em HTML LURIA responsivo, inspecionar desktop/PWA e validar por médico. **Não publicar/merge/deploy este texto preliminar.**
