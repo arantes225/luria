@@ -13,10 +13,10 @@ A aula 50 já possuía 9.321 caracteres e cobertura inicial de financiamento tri
 
 ## Métricas verificadas no GitHub
 
-- Manuscrito: **76.027 caracteres brutos**, 20 capítulos numerados de 1 a 20 sem lacunas/repetições, mais seção comparativa inicial.
+- Manuscrito: **86.976 caracteres brutos**, 20 capítulos numerados de 1 a 20 sem lacunas/repetições, mais seção comparativa inicial.
 - **Oito casos gerenciais originais** com identificação do problema, raciocínio, dados/cálculos e conduta.
 - **Dezesseis questões** A–D e dezesseis gabaritos com comentários por alternativa e mini-revisão.
-- HTML: **111.841 caracteres**. 21 seções indexadas incluindo comparativo, oito casos, 16 gabaritos expansíveis e oito tabelas.
+- HTML: **124.593 caracteres**. 21 seções indexadas incluindo comparativo, oito casos, 16 gabaritos expansíveis e dez tabelas.
 - Auditoria estática pós-gravação: zero âncoras internas sem destino; zero IDs duplicados; zero desequilíbrios nos elementos \`section\`, \`article\`, \`div\`, \`details\`, \`table\`, \`thead\`, \`tbody\`, \`tr\`, \`td\`, \`th\`, \`nav\`, \`aside\`, \`main\`, \`header\`, \`h2\`, \`h3\`.
 - O HTML possui \`robots=noindex,nofollow\` e referência ao \`apostila-tools.js\`, mas **não houve teste de funcionamento de grifos/post-its nem renderização em navegador**.
 - **Zero imagens de terceiros inseridas**. Lista de doze recursos diagramáticos autorais sugeridos, todos pendentes de aprovação/produção.
@@ -26,7 +26,7 @@ A aula 50 já possuía 9.321 caracteres e cobertura inicial de financiamento tri
 
 - Constituição Federal, art. 198, §2º: União 15% RCL do exercício, estados/municípios com bases tributárias específicas.
 - **LC141 texto consolidado em 2026**, arts. 2º–4º, 6º–11, 14–26, 36–39; inclui LC209/2024, LC227/2026 e LC234/2026 em hipóteses legais delimitadas.
-- Portaria 3.992/2017 e FAQ sobre custeio/investimento; Portaria 3.493/2024 cofinanciamento APS; **Nota Técnica 8/2026**, publicada 02/10/2026.
+- Portaria 3.992/2017, com nomes históricos Custeio/Investimento, e Portaria 828/2020, com blocos vigentes Manutenção/Estruturação; Portaria 3.493/2024 cofinanciamento APS; **Nota Técnica 8/2026**, publicada 02/10/2026.
 - Ministério da Saúde, instrumentos Plano/PAS/RQPC/RAG, SIOPS e FAQ com sanções, incluindo diferenças entre descumprimento de piso e falta de declaração/homologação.
 - Bibliografia com URLs institucionais está no capítulo 19.
 
@@ -41,3 +41,15 @@ A aula 50 já possuía 9.321 caracteres e cobertura inicial de financiamento tri
 7. Revisão final de sobreposição com aula 45 e redação para alunos do zero ao avançado.
 
 **Status: HTML_EDITORIAL_REVISAO_PENDENTE.** A quantidade de caracteres e validação estática não homologam a apostila.
+
+## Complemento normativo e quantitativo — 15/10/2026
+
+Foi detectado e corrigido erro temporal relevante: a Portaria GM/MS nº 828/2020 altera os nomes dos dois blocos introduzidos pela Portaria nº 3.992/2017. Em 2026 os nomes são **Manutenção das ASPS** e **Estruturação da Rede de Serviços Públicos de Saúde**. A redação da seção 10.2, a questão 8, a tabela e a matriz passaram a diferenciar essas denominações de Custeio/Investimento (históricas), bem como reparos/adaptações de reformas/expansões.
+
+Acrescentada **oficina de cinco exercícios completos**, com bases dos pisos de ASPS, exemplo didático de restos a pagar e disponibilidade de caixa segundo LC141 art. 24, finalidade do saldo de Estruturação, efeito do denominador dos indicadores de hipertensão e custo efetivo de referência regional. Incluído quadro adicional de seis pegadinhas quantitativas nas subseções 16.5–16.6.
+
+**Readback verificado no GitHub:** manuscrito 86.976 caracteres, capítulos 1–20, 8 casos, 16 questões/gabaritos; prévia HTML 124.593 caracteres, 21 seções indexadas (inclui comparativo), 10 tabelas, 8 casos e 16 gabaritos expansíveis. Sem âncoras internas quebradas, IDs duplicados ou desequilíbrio nas tags analisadas. O aviso noindex e o script de ferramentas continuam presentes; zero imagens incorporadas.
+
+**Fontes:** Portaria 828/2020: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html ; Portaria consolidada 6/2017: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017_comp.html ; Fundo Nacional de Saúde: https://portalfns.saude.gov.br/sobre-o-fns/ ; LC141: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm .
+
+**Pendências:** validação por contador/gestor de saúde das normas e bases tributárias do exercício, teste independente dos casos e questões, produção de diagramas originais e testes visuais/funcionais no navegador e PWA. Não houve homologação, merge, publicação nem deploy.
