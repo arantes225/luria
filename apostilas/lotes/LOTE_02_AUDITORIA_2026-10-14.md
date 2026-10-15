@@ -463,3 +463,39 @@ Os dois manuscritos foram sincronizados ao \`LOTE_02_INPUT_PREPUBLICACAO.json\`,
 | **Total** | **593.020** | **83** | **120** | **68** |
 
 **Status não alterado:** estes são testes de estrutura e verificação pontual de fontes; não se deve alegar certificação médica ou editorial integral, execução do \`node\` no checkout, dry-run do gerador, validação visual PWA, autorização/licença de imagens ou publicação. **Nenhum merge nem deploy realizado.**
+
+
+## Etapa 19 — diferenciais do pré-escolar e tuberculose zoonótica (15/10/2026)
+
+**Instrução de referência:** \`lead_apostilas\` relido antes de iniciar, com prioridade para aprofundar lacunas reais sem inflar repetições. Foram auditadas as edições contínuas atuais, que já continham GINA 2026 para escolares e nota brasileira 5/2024 para TB pediátrica. A análise identificou dois tópicos ainda sem cobertura suficiente: **bronquiolite versus suspeita de asma abaixo de cinco anos**, e **M. bovis / TB zoonótica**. Não se abriu nova apostila para assuntos complementares destes livros.
+
+### Asma — expansão real, sem aplicar degraus de escolares ao lactente
+
+- \`LOTE_02_ASMA_EDICAO_CONTINUA.md\`: inserção de **8.9 Sibilância no pré-escolar**, distinção entre bronquiolite, episódios virais recorrentes e asma provável; sinais de doença alternativa (corpo estranho, disfagia/aspiração, fibrose cística, cardiopatia e imunodeficiência); ensaio supervisionado **8–12 semanas de CI pediátrico** em crianças com **suspeita selecionada de asma** sob BTS/NICE/SIGN **2024**, que não é protocolo de bronquiolite.
+- Inclusão de **Casos 18–19** e **Questões 23–24** com raciocínio e comentários para todas as alternativas.
+- **Fonte GINA:** *Summary Guide 2026* é específico para adultos, adolescentes e **6–11 anos**; na etapa 1 dos escolares oferece opções contendo CI no alívio. Não copiar doses/dispositivos de escolares em menores de cinco anos. https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf
+- **Fonte independente para menores de cinco anos:** BTS/NICE/SIGN *NG245* (2024), seções 1.3 e 1.9. https://www.nice.org.uk/guidance/ng245/chapter/recommendations . **Bronquiolite típica:** AAP (guideline 2014), https://publications.aap.org/pediatrics/article/134/5/e1474/75848/ ; não recomendar salbutamol ou corticoide sistêmico rotineiramente. **As recomendações são de doenças/populações diferentes e não se contradizem.**
+- **Origem editorial:** redação e casos próprios. PDFs privados de \`Asma\` e \`Crise Asmática\` consultados em etapa zero; nenhuma figura/trecho reproduzido.
+
+### Tuberculose — expansão sobre espécie, resistência e vigilância de zoonoses
+
+- \`LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md\`: inserção de **7.9 Tuberculose zoonótica**, exposição a leite bovino não pasteurizado e animais, doença ganglionar/extrapulmonar, limites do **TRM que detecta complexo MTB mas não diferencia espécies**, cultura/identificação específica, resistência **intrínseca de M. bovis à pirazinamida**, mudança de esquema conforme referência e vigilância Saúde Única.
+- Inclusão de **Casos 20–21** e **Questões 30–31**, com distinção de TB por M. bovis de TB-RR/MDR e das restrições de esquemas adultos BPaL/BPaLM.
+- **Fonte normativa-chave:** Ministério da Saúde, *Nota Informativa 8/2024*, orienta que, após confirmação de M. bovis, pode-se excluir Z, utilizar fármacos individualizados e estender fase de manutenção a **sete meses** se houver mudança para esquema especial; notificação em SINAN e Site-TB conforme fluxo. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/notas-tecnicas-e-informativas/nota-informativa-no-8-2024-cgtm-dathi-svsa-ms
+- Manual brasileiro de TB zoonótica (2023), https://bvsms.saude.gov.br/bvs/publicacoes/manual_orientacoes_vigilancia_tuberculose_zoonotica.pdf ; Guia de Vigilância 6ª ed. (quadro para criança menor de 10 anos, M. bovis e substituição Z/E): https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao . **Tratamento específico depende de médico/farmácia do programa TB; a apostila não é prescrição pronta.**
+- **Cuidados de direitos autorais:** o manual de TB zoonótica declara **CC BY-NC-SA 4.0**, inadequado à importação direta de figuras em produto comercial sem licença apropriada. Texto didático, questões e matrizes originais; **nenhuma imagem ou figura do manual incorporada**.
+
+### Verificação editorial e métricas
+
+| Livro | Markdown bruto | Caracteres aproximados visíveis no JSON | Casos | Questões | Tabelas |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 132.350 | 127.348 | 19 | 24 | 15 |
+| DPOC | 111.611 | 106.963 | 17 | 23 | 10 |
+| Diabetes mellitus | 103.938 | 99.415 | 14 | 23 | 13 |
+| Pneumonia comunitária adulta | 96.147 | 91.723 | 16 | 23 | 12 |
+| Tuberculose | 173.745 | 166.429 | 21 | 31 | 21 |
+| **Total** | **617.791** | **591.878** | **87** | **124** | **71** |
+
+Nesta etapa, **+11.695 caracteres brutos Asma** e **+13.076 Tuberculose** (total 24.771), quatro casos e quatro questões adicionais, com duas tabelas autorais de TB e uma de Asma; integradas aos capítulos adequados em **\`LOTE_02_INPUT_PREPUBLICACAO.json\`**. Verificação programática em memória após a sincronização: cinco slugs, sequência contínua e sem lacunas dos casos/questões, tags de tabela equilibradas, caracteres acima da triagem mínima e **nenhuma imagem** no JSON. \`LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json\` atualizado para **versão 11**.
+
+**Limitações não sanadas:** nenhuma certificação de precisão de todas as doses, restrições gestacionais/pediátricas por fármaco e apresentação, ou autossuficiência sem redundância; comparativo adulto de PAC do Drive ainda pendente; imagens reais exigem curadoria e licença comercial específica, com aprovação pelo Admin; \`node scripts/validate-apostilas-lote-02.cjs\` e \`build-apostilas-batch.cjs --dry-run\` **não foram rodados em checkout completo**; nenhum teste real do renderer ou PWA. **0 livros certificados, 0 publicados, 0 merges e 0 deploys.**
