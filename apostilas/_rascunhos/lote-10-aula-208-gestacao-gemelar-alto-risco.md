@@ -580,3 +580,45 @@ Na MCDA com óbito de um feto, a preocupação é a repercussão vascular no sob
 **NICE NG137**, <https://www.nice.org.uk/guidance/ng137/chapter/Recommendations>. Confirmar sempre a data da recomendação específica, não inferir que toda a orientação tenha sido reescrita na data de consulta.
 
 **Limitação editorial atual:** faltam figuras reais com licença aprovada, revisão de diretrizes nacionais para prematuridade, suplementação materna, procedimentos seletivos e disponibilidade tecnológica. A adição dessas seções não transforma o arquivo em protocolo nacional pronto para uso.
+
+
+## 23. Decisões integradas: os quatro cenários que exigem mudança de nível de cuidado
+
+### 23.1 Monocoriônica com polidrâmnio agudo e dispneia materna
+
+A sequência oligo/polidrâmnio não é apenas um achado ecográfico: polidrâmnio acentuado pode causar distensão rápida do útero, desconforto respiratório, contrações, encurtamento cervical e risco de rotura prematura de membranas. Na triagem, avaliar primeiro saturação, esforço respiratório, sinais de trabalho de parto, pressão arterial e condições maternas. Ultrassonografia deve identificar **qual** saco contém excesso de líquido, bexigas, Dopplers e possível hidropisia, ao mesmo tempo em que se organiza referência à medicina fetal. A palavra “polidrâmnio” sozinha não revela o estágio da síndrome.
+
+Na TTTS com indicação de laser, a equipe precisa explicar que o procedimento trata as anastomoses responsáveis e que há risco residual de prematuridade, recorrência da TTTS, TAPS pós-laser e restrição seletiva de crescimento. O objetivo do cuidado é obter benefício global para os fetos **e** evitar deterioração materna. A redução de líquido por punção pode aliviar sintomas, mas não corrige, por si só, a anatomia vascular causal.
+
+### 23.2 Gestação gemelar com hipertensão: não confundir risco e diagnóstico
+
+Gemelaridade eleva o risco de pré-eclâmpsia, mas nenhuma paciente é diagnosticada apenas por carregar dois fetos. Aplicar critérios de pressão, proteinúria e disfunção de órgãos como na avaliação obstétrica especializada, respeitando características maternas. Alterações de crescimento em somente um dos fetos podem indicar doença placentária e merecem avaliação, mas não equivalem automaticamente a pré-eclâmpsia sem critérios maternos.
+
+Na triagem, cefaleia persistente, escotomas, dor epigástrica, dispneia, alterações de consciência ou hipertensão grave demandam atenção imediata. O seguimento de crescimento e Doppler não pode “substituir” monitorização materna. Do mesmo modo, uma conduta de emergência hipertensiva deve ser executada em paralelo à avaliação de ambos os fetos, não postergada até completar todo o estudo de líquidos.
+
+### 23.3 Monocoriônica com feto estruturalmente anômalo
+
+A existência de um achado estrutural discordante exige identificação confiável de cada feto, avaliação anatômica completa, aconselhamento reprodutivo e genética quando pertinente. A corionicidade altera o risco de intervenções invasivas seletivas porque uma circulação compartilhada pode afetar o feto saudável. Não é correto oferecer a mesma técnica invasiva e o mesmo consentimento de gêmeos dicoriônicos. Planejar a discussão num centro habilitado e fornecer informações sobre incertezas, opções e suporte familiar.
+
+### 23.4 Anemia fetal em monocoriônica: a PSV alta não define automaticamente TAPS
+
+A velocidade sistólica máxima da artéria cerebral média elevada sugere anemia, mas a confirmação de **sequência anemia–policitemia** exige interpretar os dois fetos, o padrão intergemelar, a técnica, a idade gestacional, os líquidos e contexto como laser prévio. Anemia fetal também pode resultar de outras causas, como infecções, hemorragia fetomaterna ou aloimunização — esta última é tema próprio da aula 209. Não chamar de TAPS todo feto com PSV acima de 1,5 MoM sem avaliar o co-gêmeo e as etiologias.
+
+## 24. Quadro de revisão: decisão típica por situação
+
+| Situação | O que identificar imediatamente | O que não concluir sozinho |
+| --- | --- | --- |
+| 12 semanas, sinal T, duas membranas | MCDA provável; documentar corionicidade/amnionicidade | Que duas bolsas equivalem a duas placentas |
+| MCDA 18 semanas assintomática | Garantir rastreio quinzenal desde 16 semanas | Que só precisa de US mensal porque está bem |
+| Oligo/poli e bexiga do doador ausente | TTTS/Quintero II, avaliação de centro de terapia fetal | Que só deve tratar se houver hidropisia |
+| Líquidos semelhantes e ACM discordante | Investigar TAPS e técnica do Doppler | Que ausência de polidrâmnio exclui toda transfusão intergemelar |
+| Um feto menor, UA-AEDF intermitente em MCDA | sFGR tipo III e risco de eventos imprevisíveis | Que fluxo intermitente significa bom prognóstico |
+| MCMA confirmada | Programa especializado com planejamento do nascimento | Que toda gemelar pode seguir até 39 semanas |
+| Óbito de um feto em MCDA | Avaliar imediatamente sobrevivente e riscos vasculares | Que cesárea imediata sempre reverte lesão |
+| Primeiro gêmeo cefálico, DCDA sem complicações | Avaliar via vaginal em serviço experiente | Que o simples número de fetos obriga cesariana |
+
+## 25. Controle de qualidade científico — não confundir recomendação com protocolo local
+
+As janelas de vigilância e parto citadas ao longo da aula representam referências ISUOG, SMFM e NICE e dependem de corionicidade, complicações e infraestrutura. A linguagem “considerar”, quando usada em prematuridade (progesterona/cerclagem em subgrupos selecionados), expressa **incerteza ou condicionalidade de evidência**, não uma ordem de tratamento. É indispensável revisar protocolos brasileiros vigentes antes de fornecer doses, prescrever fármacos ou orientar procedimento.
+
+**Auditoria de questões:** os dez itens anteriores testam classificação anatômica, TTTS, TAPS, sFGR, diferenças de cronograma, parto e óbito único. Faltam ainda avaliações independentes de correção de gabaritos e distratores e conferência da exatidão dos limiares em cada diretriz. **Imagens:** nenhuma licença comercial ou aprovação Admin documentada. **Texto:** ainda não há laudo confirmando 60 mil caracteres didáticos úteis por contagem descontando tabelas, referências e redundâncias; nenhum deploy ou catálogo foram alterados.
