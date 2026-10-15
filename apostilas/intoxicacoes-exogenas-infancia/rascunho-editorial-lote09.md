@@ -200,7 +200,7 @@ O **nomograma de Rumack–Matthew** é apropriado para **ingestão oral aguda ú
 
 Indicar **NAC** quando nível em/ acima da linha, em exposições graves de hora desconhecida ou circunstâncias de alto risco sob toxicologia. Se se estima overdose importante e resultado laboratorial chegar tarde o bastante para atrasar tratamento além de ~8 h, o consenso recomenda iniciar NAC enquanto aguarda. Regimes oral e IV variam; consenso internacional exige **dose adequada ao longo de 20–24 h**, e o tratamento **não deve ser interrompido apenas porque passaram 21 h**: conferir concentração residual de paracetamol, AST/ALT, INR e evolução clínica para definir suspensão.
 
-**Armadilha de segurança:** a formulação NAC IV tem volumes/diluições que precisam ser adaptados ao peso, sobretudo crianças pequenas, evitando sobrecarga hídrica e erro de dez vezes. A infusion pode causar reações não IgE mediadas; tratar reação e reavaliar velocidade, não abandonar antídoto definitivamente sem toxicologia.
+**Armadilha de segurança:** a formulação NAC IV tem volumes/diluições que precisam ser adaptados ao peso, sobretudo crianças pequenas, evitando sobrecarga hídrica e erro de dez vezes. A infusão pode causar reações não IgE mediadas; tratar reação e reavaliar velocidade, não abandonar antídoto definitivamente sem toxicologia.
 
 ### 8.5. Quando considerar UTI/transplante
 
@@ -559,7 +559,7 @@ Tratar toxicidade **sem atrasos** → entrevistar com acolhimento/segurança →
 
 ### Limitações e divergências
 
-As publicações internacionais detalham regimes de antídotos em sistemas de saúde diferentes; a **disponibilidade de octreotida IV, Fab anti-digoxina, fomepizol, hidroxocobalamina, emulação de HIET e recursos de diálise** deve ser verificada em cada serviço brasileiro antes de elaborar prescrição. **O consenso paracetamol EUA/Canadá 2023** é referência técnica, não portaria nacional. **SBP 2025** e **VIGIPEQ/MS** estabelecem prioridades brasileiras em prevenção e notificação. A escolha de um único número de telefone e fluxos locais devem ser rechecadas antes de publicação.
+As publicações internacionais detalham regimes de antídotos em sistemas de saúde diferentes; a **disponibilidade de octreotida IV, Fab anti-digoxina, fomepizol, hidroxocobalamina, execução de protocolos de HIET e recursos de diálise** deve ser verificada em cada serviço brasileiro antes de elaborar prescrição. **O consenso paracetamol EUA/Canadá 2023** é referência técnica, não portaria nacional. **SBP 2025** e **VIGIPEQ/MS** estabelecem prioridades brasileiras em prevenção e notificação. A escolha de um único número de telefone e fluxos locais devem ser rechecadas antes de publicação.
 
 ## 28. Controle editorial desta etapa
 
@@ -1025,7 +1025,7 @@ As 22 questões são originais e apresentam distratores clinicamente plausíveis
 
 **A)** Somente naloxona sem ventilação.
 
-**B)** Suporte ventilatório imediato e naloxona titulada, observando possível ressedaçao.
+**B)** Suporte ventilatório imediato e naloxona titulada, observando possível ressedação.
 
 **C)** Flumazenil como primeira linha.
 
@@ -1124,7 +1124,7 @@ As 22 questões são originais e apresentam distratores clinicamente plausíveis
 
 **Mini-revisão:** A lesão oral não prediz adequadamente toda lesão digestiva.
 
-### Questão 17 — Álcool salicílico e intubação
+### Questão 17 — Salicilatos e intubação
 
 **Enunciado:** Adolescente com salicilismo grave está hiperventilando e apresenta acidose metabólica. Por que a intubação exige cautela?
 
