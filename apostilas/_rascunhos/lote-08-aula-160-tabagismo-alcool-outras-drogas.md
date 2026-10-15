@@ -3,7 +3,7 @@
 **Área:** Medicina Preventiva / Atenção Primária à Saúde  
 **Interfaces:** Medicina de Família, Pneumologia, Cardiologia, Psiquiatria, Urgência, Saúde Coletiva, Obstetrícia e Pediatria  
 **Lote oficial:** 08, aula 160 do currículo ampliado de 260 temas  
-**Versão:** rascunho editorial científico inicial — 14/10/2026  
+**Versão:** rascunho editorial científico ampliado 01 — 14/10/2026  
 **Estado:** **EM DESENVOLVIMENTO — NÃO CERTIFICADO**. Este texto não substitui a revisão médico-farmacológica e não representa uma apostila publicada.  
 **Benchmark efetivamente lido no Drive:** Tabagismo.pdf, resumo de aproximadamente 1.063 caracteres de texto; instituição de origem não comprovada. Este documento só guiou a identificação de tópicos ausentes; todo o conteúdo a seguir é de autoria própria.
 
@@ -66,6 +66,29 @@ No tabagismo, perguntar o número de cigarros por dia, o intervalo entre acordar
 
 **Exemplo:** paciente diz “só bebo sábado”, mas consome grande volume, dirige depois e já apresentou trauma. A periodicidade semanal não neutraliza o risco agudo.
 
+### Interpretação aprofundada do rastreio na APS
+
+**O risco do rastreio positivo é perder o paciente na tradução do escore para o diagnóstico.** A pontuação deve abrir diálogo clínico, e não substituí-lo. O mesmo resultado pode surgir de padrões distintos: ingestão concentrada nos fins de semana, consumo diário menor, uso associado a sedativos ou consequências diferentes do mesmo volume. É necessário relacionar os itens assinalados a impactos concretos e à segurança imediata.
+
+No AUDIT completo, o profissional investiga quantidade, frequência, episódios intensos, perda de controle e consequências. Valores de corte são orientadores e podem depender da população, idade, sexo e validação local. Em geral, escores mais altos sustentam avaliação ampliada; uma pontuação baixa não deve encerrar a investigação diante de uma convulsão por abstinência, gravidez com consumo ou trauma relacionado ao álcool. O AUDIT-C reduz o número de perguntas e favorece o rastreio inicial, mas um resultado positivo deve ser aprofundado.
+
+O ASSIST integra tabaco, álcool, cannabis, cocaína, anfetaminas, inalantes, sedativos, alucinógenos, opioides e outras drogas. Pergunta se houve uso ao longo da vida e, conforme resposta, examina consumo recente, desejo intenso, problemas de saúde e relacionamento, falhas em obrigações, preocupação de terceiros, tentativas de controle e formas injetáveis. Sua utilidade está em mapear **policonsumo** e escolher intensidade de intervenção. O aluno não precisa decorar as perguntas para entender o raciocínio, mas deve saber que a intensidade do aconselhamento cresce com a pontuação e com o risco clínico. O manual da OMS distingue padrões de baixo, moderado e alto risco por pontos de corte que não são idênticos para todas as substâncias; sempre consultar o formulário padronizado antes de pontuar.
+
+O teste de Fagerström não equivale a espirometria, teste de monóxido expirado nem marcador biológico de exposição. A primeira tragada logo após acordar e o consumo diário elevado são indicadores práticos de dependência. Um fumante de poucos cigarros pode necessitar apoio intenso se tiver doença grave, exposição gestacional ou uso concomitante de produtos de nicotina. Ao contrário, uma pessoa que fuma muito mas usa terapia bem tolerada pode precisar de ajuste principalmente dos gatilhos ambientais.
+
+**Interpretação por cenário:** no ambulatório, perguntar por abstinência prévia é parte da prevenção de iatrogenia; na emergência, a prioridade é proteger função respiratória e cardiovascular; em gestantes, não esperar limiar numérico para orientar cessação; em adolescentes, rastreio deve considerar estágio de desenvolvimento, escola, violência e confidencialidade; em pacientes internados, o período sem acesso a uma substância pode precipitar sintomas que parecem delirium por outras causas.
+
+**O que documentar?** Registrar relato em linguagem neutra, padrão de consumo, instrumento e resultado (se utilizado), sinais de risco, hipóteses diferenciais, intervenção realizada, objetivos definidos, encaminhamentos, pessoa de referência quando autorizada e retorno previsto. Evitar a anotação isolada “etilista/crackeiro”, pois é insuficiente clinicamente e estigmatizante.
+
+### Três exemplos para interpretar instrumentos sem automatismo
+
+**Situação A:** mulher de 24 anos relata duas grandes festas mensais com consumo até perda de memória, mas não bebe no resto da semana. A pesquisa identifica risco agudo importante por intoxicação, sexualidade desprotegida, trauma e violência. A ausência de consumo diário não permite tranquilização automática nem identifica, por si só, dependência física.
+
+**Situação B:** homem de 66 anos relata pequena quantidade diária de álcool e uso prescrito de clonazepam para dormir. A pergunta não é somente quantas doses bebe; é se a combinação aumenta sedação, quedas, déficit de memória e depressão respiratória. Revisão terapêutica, função hepática, fragilidade e risco de retirada de sedativos integram a decisão.
+
+**Situação C:** adolescente usa cigarro eletrônico na escola e diz “não fumo”. É necessário perguntar especificamente por nicotina, cartuchos e frequência de uso; o rótulo comercial não muda a presença de exposição.
+
+
 ## 6. Entrevista motivacional e intervenção breve
 
 O profissional não precisa convencer o paciente à força. A técnica motivacional se apoia em empatia, perguntas abertas, escuta reflexiva, validação da autonomia e exploração da ambivalência. O objetivo é criar espaço para que a própria pessoa articule razões e possibilidades de mudança. Uma resposta moralizante pode encerrar o vínculo e aumentar subnotificação.
@@ -111,6 +134,27 @@ No **SUS**, o PCDT nacional de origem de 2020 contempla aconselhamento estrutura
 **Princípio operacional:** farmacoterapia é adjuvante do cuidado comportamental; não se deve prescrever automaticamente com base apenas no Fagerström. Avaliar contraindicações, idade, gestação, comorbidades, interações, preferências e disponibilidade local. Esquemas e duração devem ser conferidos na versão aplicável do PCDT e na bula antes da prescrição. Em particular, **bupropiona exige cuidado em pacientes com epilepsia, história de convulsões, transtornos alimentares ou redução abrupta de ingestão pesada de álcool/benzodiazepínicos**.
 
 Para estudantes, vale diferenciar três perguntas: qual tratamento tem eficácia clínica? Qual é recomendado no PCDT brasileiro? Qual está efetivamente disponível naquele estabelecimento? As respostas podem não ser idênticas. O plano de seguimento é decisivo porque efeitos adversos, fissura e situações sociais frequentemente exigem ajuste.
+
+### Farmacologia clínica aplicada: escolhendo entre TRN, bupropiona e alternativas
+
+A escolha começa com uma **formulação clínica do problema**. Se o principal obstáculo são desejos intensos repetidos ao longo do dia, apoio comportamental associado a uma forma de nicotina de liberação rápida pode ser útil quando indicado. Se a pessoa acorda com abstinência e fuma imediatamente, o componente basal de dependência merece atenção; o adesivo promove exposição mais estável. Em usuários com fissura basal e picos de desejo, a combinação de duas formas de TRN é estratégia possível em protocolos adequados, mediante avaliação individual.
+
+**Adesivo:** administrar em pele limpa e íntegra, variando o local conforme orientação; avaliar irritação e adesão. Pesquisar qual produto o paciente recebe, pois concentração, tempo de uso e recomendações de aplicação podem variar. Sintomas como náusea, palpitação ou tontura exigem reconsiderar dose e exposição concomitante. Sonhos vívidos e insônia podem justificar ajuste de horário conforme tipo de adesivo e orientação do serviço.
+
+**Goma:** a técnica correta não corresponde a mascar continuamente como chiclete comum. Mastigar lentamente, interromper e posicionar a goma entre gengiva e bochecha quando surgir formigamento ajuda a liberar nicotina e reduzir irritação gastrointestinal; retomar o ciclo conforme instruções. Bebidas ácidas próximas ao uso podem prejudicar absorção pela mucosa oral. Avaliar saúde dental, próteses e capacidade de seguir a técnica. **Pastilhas** dissolvem na boca segundo recomendação do fabricante; não mastigá-las ou engoli-las imediatamente como comprimidos convencionais.
+
+**Bupropiona:** deve ser prescrita após revisão de história convulsiva, transtornos alimentares, outros medicamentos que reduzam limiar convulsivo, alterações hepáticas/renais, gestação, pressão arterial, possível transtorno bipolar e risco de retirada abrupta de álcool ou sedativos. Pode contribuir para cessação antes mesmo de a pessoa estar completamente abstinente; entretanto, o dia de parada e as titulações precisam seguir protocolo e prescrição individual. Insônia e boca seca são reações frequentes, e a dose não deve ser aumentada empiricamente para compensar fissura.
+
+**Vareniclina e citisina:** o mecanismo de agonismo parcial nicotínico ajuda a reduzir sintomas de retirada e o reforço de fumar. Não são equivalentes à TRN e exigem atenção a disponibilidade, regulação, ajustes de dose e efeitos adversos. A OMS recomenda essas opções com base em evidência internacional, mas o aluno deve separar eficácia demonstrada de financiamento e padronização no SUS brasileiro. Nunca anunciar que todas estão disponíveis em qualquer UBS.
+
+### Por que não se deve prescrever por algoritmo rígido
+
+Uma pessoa com tabagismo e epilepsia não recebe o mesmo plano farmacológico de um adulto sem comorbidade. Da mesma forma, alguém com cardiopatia em descompensação recente ou gestante exige avaliação específica. Combinação com álcool, transtorno bipolar não identificado, história de náuseas graves com TRN e baixa adesão podem modificar a escolha. O raciocínio correto reúne **benefício esperado × contraindicações × preferências × viabilidade de acompanhamento**.
+
+### Recaída no primeiro mês: roteiro de reavaliação
+
+Na consulta após um lapso, não reiniciar do zero como punição. Perguntar em qual situação ocorreu, quanto fumou, o que ajudou nos dias anteriores, quais sinais de abstinência permanecem, se houve efeito adverso ou uso incorreto da medicação e o que precisa mudar. Reforçar avanços mensuráveis, corrigir técnica e ajustar plano. Em alguns casos, ampliar intervenções comportamentais intensivas é mais útil que trocar automaticamente o medicamento.
+
 
 ## 9. Tabagismo em situações especiais
 
@@ -172,6 +216,31 @@ Sonolência, fala arrastada e ataxia são comuns; associação com álcool e opi
 
 Solventes e inalantes podem produzir intoxicação aguda com arritmias, hipóxia e lesões sistêmicas; o histórico pode ser subnotificado por vergonha ou receio de consequências. Poliuso modifica a apresentação: um agente estimulante pode mascarar sedação até seu efeito diminuir, e um agente sedativo pode comprometer ventilação mesmo na presença de agitação.
 
+### 12.1. Transtornos por uso de opioides e continuidade após overdose
+
+Embora opioides possam ser prescritos legitimamente para dor, seu uso também pode tornar-se problemático quando há perda de controle ou consumo de fonte não supervisionada. Na consulta inicial distinguir paciente com dor crônica em tratamento monitorizado, pessoa com transtorno por uso de opioides e paciente intoxicado: as necessidades são diferentes. O diagnóstico não deve ser feito apenas pela existência de tolerância sob uso terapêutico. Considerar depressão respiratória, interação com álcool/benzodiazepínicos, comorbidades infecciosas em uso injetável e condições sociais.
+
+A reversão aguda da intoxicação, quando necessária, salva vidas, mas não é tratamento longitudinal do transtorno. Após estabilização, oferecer avaliação de risco, intervenções psicossociais, discussão sobre tratamentos específicos disponíveis e conexão efetiva com serviço de saúde que possa acompanhar. Encaminhamento sem comunicação com a rede tende a se perder. O preparo para alta inclui avaliar segurança clínica, risco de nova exposição, rede de apoio e oportunidade de retorno.
+
+### 12.2. Sedativos e a diferença entre dependência fisiológica e transtorno por uso
+
+Benzodiazepínicos podem ser utilizados por indicação terapêutica; exposição prolongada pode produzir adaptação com tolerância e sintomas de retirada, sem que exista necessariamente comportamento compulsivo. O médico deve avaliar indicação atual, duração, dose, quedas, alterações cognitivas, uso simultâneo de opioides, álcool, outros hipnóticos e contexto psicossocial. Em uma pessoa com dependência fisiológica, a suspensão abrupta pode ser mais perigosa do que um plano gradual e supervisionado.
+
+Quando há necessidade de redução, construir cronograma individual, informar possíveis sintomas, acompanhar sono, ansiedade, tremores e segurança, e tratar a condição original com opções apropriadas. A estratégia deve ser reajustada em pacientes com epilepsia, história de abstinência grave, poliuso e comorbidades. O papel do generalista é reconhecer risco, não improvisar antídoto ou interromper medicamentos à força.
+
+### 12.3. Alucinógenos e substâncias sintéticas: limite do reconhecimento clínico
+
+A clínica de substâncias comercializadas como “drogas de festa” é heterogênea. Algumas podem produzir alterações perceptivas, ansiedade intensa e desorganização temporária; outras se comportam predominantemente como estimulantes, sedativos ou substâncias serotoninérgicas. O nome referido por acompanhante pode não corresponder à composição. Avaliar temperatura, agitação, rigidez, clônus, arritmia, hipoglicemia, trauma e ingestões associadas. Hipertermia, convulsões e depressão respiratória impõem atendimento de urgência, não observação casual em ambiente inseguro.
+
+**Pista de prova:** toxíndrome orienta reconhecimento inicial, mas quadros mistos e drogas sintéticas nem sempre se encaixam em padrões clássicos. O diagnóstico diferencial com sepse, delirium, lesões cerebrais, hipoglicemia e distúrbios eletrolíticos deve permanecer aberto.
+
+### 12.4. Transtornos psiquiátricos coexistentes
+
+Há associação bidirecional entre transtornos mentais e uso de substâncias. Insônia pode ser consequência do uso, abstinência, depressão, mania ou problema independente; sintomas psicóticos podem aparecer em intoxicação, abstinência ou transtorno primário. Registrar início temporal, mudanças durante períodos sem consumo, antecedentes familiares, internações e tratamentos prévios. A avaliação de risco suicida é indispensável diante de desesperança, perdas recentes, intoxicação, impulsividade ou acesso a meios letais.
+
+Evitar o falso dilema “tratar a dependência primeiro, depois a saúde mental”: cuidados integrados e medidas de segurança podem precisar ocorrer simultaneamente. A equipe multiprofissional pode elaborar metas realistas, revisar interações medicamentosas e integrar suporte social, mantendo avaliação clínica da substância e do adoecimento mental.
+
+
 ## 13. Urgências relacionadas a substâncias: raciocínio ABCDE
 
 Independentemente da substância referida, o atendimento começa por ventilação, circulação, glicose, temperatura, trauma e nível de consciência. História de “uso de drogas” não exclui AVC, hipoglicemia, sepse ou traumatismo craniano. Procurar pistas de toxíndromes, mas não retardar estabilização. A segurança da equipe deve ser garantida sem práticas coercitivas desnecessárias.
@@ -207,6 +276,23 @@ O seguimento deve perguntar por benefício, eventos adversos, crises, consumo re
 ### Algoritmo C — parar álcool em pessoa que consome diariamente
 
 **Desejo de reduzir/parar** → investigar ingestão recente, abstinências anteriores, convulsões, comorbidade, suporte → **risco de abstinência grave?** Se sim, desintoxicação sob observação/ambiente protegido. Se não, elaborar plano de mudança com reavaliação próxima → tratamento longitudinal e RAPS quando indicado.
+
+### Plano longitudinal: o que acompanhar de maneira mensurável
+
+No **retorno de uma a duas semanas** após uma decisão de cessar tabaco, procurar sintomas de abstinência, técnica e adesão a medicações quando usadas, número de dias sem fumar, gatilhos principais, suporte, peso e humor. O acompanhamento posterior deve se ajustar à evolução, não ser abandonado após a primeira melhora.
+
+No **álcool**, o retorno precisa verificar se houve retirada abrupta, tremores, convulsões, ingestão de risco, episódios de violência, sintomas depressivos e suporte. A melhoria pode ser percebida como aumento de dias sem consumo, desaparecimento de uso matinal, procura por ajuda, regularidade de sono, participação familiar e retomada de atividades; nenhuma dessas medidas substitui avaliação de gravidade. Quando coexistirem hepatopatia, pancreatite ou cardiopatia, acompanhar complicações orgânicas e tratamentos específicos.
+
+Em **outras drogas**, registrar a capacidade de evitar episódios de intoxicação, reduzir ambientes de risco, procurar serviços, aderir a tratamentos de comorbidades e manter seguimento. Em caso de uso injetável, avaliar risco de infecções transmissíveis e indicar testagem/vacinação/prevenção conforme protocolos, sem pressupor essa via com base em aparência física.
+
+### Comunicação clínica e enfrentamento do estigma
+
+Substituir “nega drogas” por uma descrição mais precisa do que foi perguntado e relatado. Evitar palavras depreciativas e usar “pessoa com transtorno por uso de álcool” em vez de rótulos. Não confrontar relatos contraditórios como se a consulta fosse interrogatório; explorar contexto, lembrar a finalidade de segurança e perguntar novamente quando a relação de confiança permitir. Registrar a limitação das informações, sem preencher lacunas com inferências.
+
+### Triagem de destino
+
+**Pode seguir em APS com plano inicial:** paciente consciente, estável, sem sinais de intoxicação grave ou abstinência de alto risco, com oportunidade de retorno e suporte apropriado. **Precisa de apoio especializado compartilhado:** padrão persistente com prejuízo importante, múltiplas recaídas, comorbidade psiquiátrica ou vulnerabilidade significativa. **Precisa de urgência:** rebaixamento, hipoventilação, convulsão, delirium, instabilidade autonômica importante, dor torácica sugestiva de isquemia, hipertermia, comportamento suicida iminente ou trauma relevante.
+
 
 ## 16. Casos clínicos comentados
 
@@ -362,7 +448,10 @@ D) Determinar internação prolongada em todos os casos.
 4. World Health Organization. **The Alcohol, Smoking and Substance Involvement Screening Test (ASSIST): manual for use in primary care**, 2010. https://www.who.int/publications/i/item/978924159938-2
 5. Ministério da Saúde. **Rede de Atenção Psicossocial (RAPS)**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps
 6. Ministério da Saúde. **Centros de Atenção Psicossocial**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps/caps
-7. Ministério da Saúde. **Leitos de Saúde Mental em Hospitais Gerais**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/leito-de-saude-mental-em-hospitais-gerais/leito-de-saude-mental-em-hospitais-gerais
+7. National Institute for Health and Care Excellence (NICE). **Alcohol-use disorders: diagnosis, assessment and management of harmful drinking and alcohol dependence** (CG115). https://www.nice.org.uk/guidance/cg115/chapter/Recommendations
+8. NICE. **Alcohol-use disorders: diagnosis and management of physical complications** (CG100). https://www.nice.org.uk/guidance/cg100/chapter/recommendations
+9. WHO. **Mental Health Gap Action Programme (mhGAP) guideline**, terceira edição, 2023. https://www.who.int/publications/i/item/9789240084278
+10. Ministério da Saúde. **Leitos de Saúde Mental em Hospitais Gerais**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/leito-de-saude-mental-em-hospitais-gerais/leito-de-saude-mental-em-hospitais-gerais
 
 ## 21. Camada visual a selecionar, sem incorporação prematura
 
