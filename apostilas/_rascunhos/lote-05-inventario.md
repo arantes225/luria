@@ -8,7 +8,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 094 | GO | Rotura prematura de membranas | Pasta existente `amniorrexe-prematura/`; preservar e auditar |
 | 095 | Preventiva | Sensibilidade, especificidade e valores preditivos | Não identificada pasta temática homônima; buscar conteúdo integrado |
 | 096 | Clínica | Distúrbios hidroeletrolíticos | Manuscrito ampliado em `_rascunhos/lote-05-096-disturbios-hidroeletroliticos.md` (**98.569 caracteres brutos Markdown**); 24 capítulos numerados + etapa zero, 10 casos clínicos e 14 questões autorais; ainda em revisão farmacológica e sem publicação; benchmarks do Drive parcialmente equivalentes |
-| 097 | Cirurgia | Pancreatite aguda cirúrgica | Não identificada pasta homônima; auditar antes de criar |
+| 097 | Cirurgia | Pancreatite aguda cirúrgica | Manuscrito original criado em `_rascunhos/lote-05-097-pancreatite-aguda.md` (**70.518 caracteres brutos Markdown**, cerca de 60,5 mil de prosa estimada); 28 blocos numerados, 9 casos e 10 questões; benchmarking Drive confirmado e fontes atualizadas; revisão científica/editorial independente pendente |
 | 098 | Pediatria | Crupe e epiglotite | Não identificada pasta homônima; auditar antes de criar |
 | 099 | GO | Trabalho de parto prematuro | `trabalho-parto-prematuro/index.html` é apenas o contêiner (~3,1 mil caracteres); conteúdo médico já existe em `content.json` (~71,1 mil caracteres brutos). Preservar e auditar utilidade real |
 | 100 | Preventiva | Testes diagnósticos e curvas ROC | Sem pasta homônima identificada; avaliar complementaridade com nº 095 |
@@ -98,3 +98,23 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 - **Auditoria de arquivo após salvar:** 98.569 caracteres brutos Markdown; ~84.906 caracteres após retirada simplificada de títulos, tabelas, símbolos e endereços (estimativa de texto corrente, **não medição de conteúdo didático útil**); seções numeradas 0–24 sem lacuna; 10 casos identificados; 14 questões de cinco alternativas comentadas. Não certifica qualidade clínica.
 - **Gates pendentes:** verificar bulas brasileiras e disponibilidade de cada sal/concentração/medicamento; conciliar protocolos locais; resolver redundâncias; revisão clínica independente; imagens pelo Admin; converter Markdown para content.json após aprovação; testes, matriz de autossuficiência e inspeção desktop/PWA.
 - **Status:** RASCUNHO AVANÇADO — NÃO APROVADO / NÃO PUBLICADO. Não interpretar doses de guias estrangeiros como prescrição automática no Brasil.
+
+
+## Checkpoint 097 — pancreatite aguda (14/10/2026)
+
+**Verificação de existência:** inspeção da listagem de `apostilas/` não encontrou diretório próprio de pancreatite aguda; por prudência não se declara que nenhum conteúdo relacionado exista em outras apostilas. A página `amniorrexe-prematura/index.html` foi inspecionada como modelo visual e não sofreu modificação.
+
+**Etapa zero concluída:** foram efetivamente lidos no Google Drive os PDFs *09 - ABDOME AGUDO INFLAMATORIO - PANCREATITE AGUDA.pdf* (~6,7k caracteres de texto extraído), *01 - ABDOME AGUDO - INTRODUCAO.pdf* e *07 - ABDOME AGUDO INFLAMATORIO - COLEDOCOLITIASE.pdf*. Autoria institucional do primeiro não verificável no arquivo; marca de redistribuição **não comprova relação com Estratégia MED**. A avaliação identificou conceitos desatualizados ou simplificados no material comparativo (jejum prolongado genérico, generalização de cirurgia/antibióticos, BISAP com sinal de BUN invertido, critérios Atlanta de grave imprecisos). **Não foram copiados trechos ou ilustrações desses PDFs**.
+
+**Diretrizes e fontes de atualização:**
+- ACG 2024: https://pubmed.ncbi.nlm.nih.gov/38857482/ (manejo e investigações).
+- Atlanta revisada, consenso 2012 publicado 2013: https://gut.bmj.com/content/62/1/102 (gravidade e coleções).
+- WATERFALL 2022: https://pubmed.ncbi.nlm.nih.gov/36103415/ (hidração agressiva vs moderada e sobrecarga).
+- AGA 2019/2020: https://pubmed.ncbi.nlm.nih.gov/31479658/ (necrose infectada, drenagem, step-up).
+- Artigo 2026 em periódico brasileiro *Arquivos de Gastroenterologia* sobre lama biliar e microlitíase: https://www.scielo.br/j/ag/a/VzKJwZBQfs5GZj3rbqBxzvN/abstract/?lang=pt (revisão narrativa; não é protocolo nacional).
+
+**Produção confirmada no GitHub:** arquivo `apostilas/_rascunhos/lote-05-097-pancreatite-aguda.md`, 70.518 caracteres brutos; aproximadamente 60.510 caracteres após retirada mecânica de Markdown, cabeçalhos, URLs e linhas de tabelas. **Essa estimativa não atesta 60.000 caracteres didáticos úteis, nem ausência de repetição.** Sequência dos títulos de capítulo 0 a 27 sem salto, nove casos explicitamente identificados, dez questões originais com cinco alternativas, gabarito e comentários. Doze imagens propostas para curadoria futura no Admin; nenhuma imagem criada/inserida.
+
+**Divergências científicas documentadas:** jejum de rotina substituído por alimentação precoce quando tolerada; fluidos moderados e reavaliação (sem confundir com privação de ressuscitação em choque); CPRE de rotina não recomendada sem colangite; colecistectomia na mesma internação na biliar leve; necrose estéril não requer antibiótico profilático de rotina; classificação grave pela falência orgânica persistente >48 h, não por qualquer coleção.
+
+**Pendências antes de publicar:** auditoria de repetição/estrutura; checagem de indicações e parâmetros com diretrizes brasileiras e protocolos locais; revisão clínica por especialista em cirurgia do aparelho digestivo/gastroenterologia e farmacêutica quando relevante; questões respondidas de modo independente com âncoras; curadoria de exames reais licenciados e aprovação de imagens via Admin; migração para o formato do site e testes desktop/PWA. **Não publicar o manuscrito como protocolo clínico validado.**
