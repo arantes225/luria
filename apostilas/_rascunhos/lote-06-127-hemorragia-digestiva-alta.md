@@ -245,3 +245,260 @@ Dieulafoy pode gerar hemorragia volumosa por vaso submucoso de grande calibre so
 
 Tumor gástrico/esofágico friável pode causar sangramento crônico ou maciço. A hemostasia com pó tópico pode ser ponte, mas o controle duradouro requer estadiamento, oncologia, cirurgia ou radiologia conforme doença. Lesão ulcerada gástrica suspeita precisa de biópsia quando seguro, e úlcera que não cicatriza apesar de tratamento adequado deve ser reavaliada. **Resultado histológico negativo isolado em amostra superficial** não encerra investigação quando aparência permanece suspeita.
 
+
+
+## 13. Hemorragia digestiva varicosa: reconhecer ramo de hipertensão portal imediatamente
+
+### 13.1 Quando suspeitar antes da EDA
+
+Paciente com cirrose conhecida ou suspeita, trombocitopenia/esplenomegalia, ascite, icterícia, circulação colateral, sangramento varicoso prévio ou sinais de hipertensão portal pode apresentar **hematêmese abundante** e instabilidade. Varizes esofagogástricas se formam por desvio de fluxo portossistêmico e dilatação vascular; sua ruptura é potencialmente fatal. Um cirrótico também pode sangrar por úlcera, mas a **suspeita clínica de fonte varicosa é suficiente para iniciar tratamento vasoativo e antibiótico**, sem esperar EDA para confirmar. O benefício envolve redução de fluxo/pressão varicosos e prevenção de infecções que agravam prognóstico/ressangramento.
+
+Não utilizar um exame de INR elevado como prova de que sangramento é causado por "falta de coagulação"; o problema portal é hemodinâmico. Trombocitopenia pode decorrer de hiperesplenismo, mas também de infecção e outras causas. O clínico deve integrar história de hepatite B/C, álcool, doença hepática metabólica, esquistossomose e trombose portal, lembrando que hipertensão portal não cirrótica pode causar varizes sem sinais clássicos de insuficiência hepatocelular.
+
+### 13.2 Estabilizar sem supertransfundir
+
+Abordagem ABC, monitorização, acessos venosos, tipagem e provas, vigilância de via aérea, transfusão restritiva em paciente elegível e controle de infecções. **Transfusão excessiva** pode aumentar pressão portal; contudo, doente com choque hemorrágico requer reposição proporcional à perda e perfusão. Corrigir INR cirrótico com plasma sem indicação clara pode causar sobrecarga e piorar pressão portal. Se usa anticoagulante por causa vascular específica, reversão seletiva é pergunta diferente que exige avaliar ameaça à vida e trombose.
+
+A doença renal, insuficiência respiratória, encefalopatia e aspiração elevam risco de complicações. EDA sob sedação em paciente não reanimado pode precipitar colapso; planejar via aérea com anestesia/UTI quando há sangue abundante e comprometimento da proteção.
+
+### 13.3 Vasoativo esplâncnico desde a suspeita
+
+**Octreotida**, **terlipressina** ou **somatostatina** são opções conforme disponibilidade e protocolo. Um esquema didático frequente para octreotida é **50 microgramas IV em bolus**, seguido de **50 microgramas/h de infusão contínua** durante 2–5 dias, com avaliação especializada e protocolos locais; a terlipressina tem regimes diferentes e contraindicações, incluindo risco de isquemia e eventos respiratórios. Não converter a lista em prescrição indiferenciada: monitorizar frequência cardíaca, pressão, perfusão, sódio, função renal e risco individual.
+
+A ideia é iniciar **antes da endoscopia** no sangramento varicoso suspeito e associar terapia endoscópica. A droga não substitui ligadura ou tratamento de varizes gástricas quando existe indicação. Se a EDA demonstra úlcera não varicosa e nenhuma razão para manter agente esplâncnico, revisar sua continuidade.
+
+### 13.4 Antibiótico profilático não é “opcional porque não há febre”
+
+A cirrose com HDA, especialmente descompensada, aumenta translocação e risco de infecção, que pode precipitar ressangramento e falência orgânica. Antibiótico profilático é recomendado em apresentações varicosas de risco conforme diretriz; **ceftriaxona 1 g IV a cada 24 horas** é esquema usado em muitos serviços, ponderando resistência local, alergia, gravidade, colonização e recursos. O Baveno VIII 2026 enfatiza **individualização da necessidade/duração** conforme risco infeccioso e severidade, sem supor que todos os doentes devem receber exatamente os mesmos dias.
+
+Não usar antibiótico profilático apenas por HDA não varicosa de paciente não cirrótico. Em pessoa com febre e ascite, investigar **peritonite bacteriana espontânea** com paracentese apropriada, em vez de achar que “ceftriaxona profilática” encerra toda investigação de infecção.
+
+### 13.5 Endoscopia e controle da fonte portal
+
+Após reanimação, EDA costuma ser realizada **em até 12 horas** em suspeita de HDA varicosa conforme diretrizes especializadas, idealmente por equipe com capacidade de hemostasia. **Varizes esofágicas**: ligadura elástica endoscópica é técnica principal para controle. **Varizes gástricas**: a topografia (GOV1, GOV2, IGV1/2), fluxo/colaterais e expertise definem possibilidade de cianoacrilato, terapias guiadas por ecoendoscopia, TIPS ou técnicas de obliteração, incluindo BRTO em centros específicos. Não aplicar ligadura esofágica rotineira a variz gástrica fundal complexa.
+
+**Hemorragia sem controle** apesar de vasoativo e endoscopia requer resgate especializado; tamponamento por balão ou stent esofágico autoexpansível pode funcionar como **ponte curta** até TIPS/cuidado definitivo, devido a risco de aspiração, necrose e perfuração. Não enviar paciente com balão para casa nem manter indefinidamente sem plano.
+
+## 14. Varizes gástricas, portal hipertensiva e TIPS: escolher pela anatomia
+
+### 14.1 Classificação topográfica para prova
+
+**GOV1** acompanha continuidade de varizes esofágicas pela pequena curvatura; **GOV2** estende-se para fundo gástrico; **IGV1** são varizes isoladas fundais; **IGV2** em outras áreas gástricas. As varizes fundais têm manejo mais complexo que varizes esofágicas, e podem associar-se a **shunts gastrorrenais**. A escolha entre endoscopia com cola, técnicas guiadas por ecoendoscopia, TIPS e **BRTO** exige mapeamento vascular e experiência.
+
+### 14.2 Pré-emptive TIPS e TIPS de resgate
+
+O **TIPS** cria derivação portossistêmica intra-hepática, reduzindo gradiente portal e risco de sangramento em condições apropriadas. **TIPS preemptivo** em pacientes de alto risco após HDA varicosa pode ser considerado **até 72 horas, idealmente nas primeiras 24 horas**, conforme consenso Baveno VIII e critérios especializados, e **não para todo doente com varizes**. Critérios clássicos incluem **Child-Pugh C 10–13** ou **Child-Pugh B com sangramento ativo na endoscopia** em contextos definidos; a confirmação de elegibilidade e contraindicações deve seguir diretriz de 2026, função cardíaca, infecção, encefalopatia e anatomia.
+
+O **TIPS de resgate** é opção após falha de tratamento inicial, podendo ter maior risco em doentes muito graves. O plano exige avaliar risco de **encefalopatia hepática, insuficiência cardíaca, disfunção hepática terminal e trombose/anatomia portal**. Em hipertensão portal não cirrótica, o mecanismo e a indicação de TIPS diferem e devem ser discutidos por especialista.
+
+### 14.3 Profilaxia primária e secundária: objetivos distintos
+
+**Primária:** na cirrose compensada com **hipertensão portal clinicamente significativa**, NSBB, frequentemente **carvedilol** em pessoa elegível, reduz risco de primeira descompensação, indo além de simplesmente prevenir sangramento. Ligadura endoscópica é alternativa para varizes de risco quando NSBB não é possível, mas não reproduz todos os efeitos sistêmicos. O consenso **Baveno VIII 2026** revisou estratificação não invasiva de CSPH, detalhada na apostila 126.
+
+**Secundária:** depois de HDA varicosa esofágica, terapia com **NSBB + sessões seriadas de ligadura** é padrão em muitos cenários, salvo contraindicação ou seleção para TIPS. Hipotensão, AKI, choque, sepse e hipoperfusão podem tornar o NSBB temporariamente inadequado. Não iniciar ou manter carvedilol automaticamente no paciente que acabou de sofrer choque hemorrágico sem reavaliar perfusão.
+
+### 14.4 Gastropatia hipertensiva portal versus varizes
+
+Gastropatia portal pode causar sangramento difuso e anemia ferropriva, com mosaico endoscópico e pontos rubros. Ao contrário da variz rompida, nem sempre há vaso focal passível de ligadura. Redução de pressão portal e controle de anemia podem ser centrais; casos graves exigem terapias especializadas. **GAVE** pode coexistir mas não responde igualmente ao NSBB; não confundi-las pelo fato de ocorrerem em cirróticos.
+
+## 15. Antitrombóticos, antiagregantes e hemorragia: equilíbrio fino
+
+### 15.1 Varfarina e DOACs
+
+A decisão sobre suspender temporariamente, reverter e retomar depende de gravidade, fármaco, última dose, função renal, risco trombótico (válvula mecânica, tromboembolismo recente, FA de alto risco), disponibilidade de reversores e hemostasia obtida. **Hemorragia ameaçadora à vida** sob anticoagulação pode demandar estratégia de reversão específica, como complexo protrombínico de quatro fatores/vitamina K para varfarina conforme contexto, ou antídotos seletivos para DOACs quando indicados e disponíveis. Não dar vitamina K a alguém usando apixabana como se revertesse farmacologicamente seu efeito.
+
+**Endoscopia terapêutica não deve ser adiada de forma indefinida** só para normalizar um teste; pacientes instáveis precisam de hemostasia e reversão/ressuscitação em paralelo. Alguns DOACs dependem fortemente da função renal; concentrar-se apenas no INR pode ser enganoso. Em doença hepática crônica, INR basal alterado não é medida direta de atividade de anticoagulante oral.
+
+### 15.2 Quando retomar anticoagulação
+
+Retardar demais pode provocar AVC/embolia; reiniciar cedo demais sem hemostasia pode causar ressangramento. A ESGE 2026 recomenda que, em úlcera hemorrágica que exige anticoagulação crônica, a retomada ocorra **tão cedo quanto clinicamente indicado** conforme risco tromboembólico, evitando prazo rígido universal. A orientação ESGE 2021 frequentemente cita preferência por retomada dentro ou logo após sete dias, mas a atualização 2026 flexibiliza conforme indicação/risco. **Não copiar o prazo anterior como regra absoluta de 2026**. Planejar em conjunto com cardiologia/hematologia/endoscopia.
+
+### 15.3 AAS em prevenção secundária e dupla antiagregação
+
+Paciente com stent coronariano recente, síndrome coronariana aguda ou AVC isquêmico prévio tem risco de evento trombótico ao suspender antiagregante. Em **AAS isolado para prevenção secundária**, ESGE 2021 recomenda não interromper rotineiramente e reiniciar cedo se suspensão foi necessária. Em **dupla antiagregação**, manter/retomar componentes e a necessidade de IBP envolvem alto risco de trombose de stent e requerem coordenação com cardiologia. Não recomendar “suspender ambos por 30 dias” automaticamente; também não manter sem revisão em hemorragia exsanguinante.
+
+### 15.4 Profilaxia primária não tem prioridade igual
+
+AAS sem forte indicação de prevenção primária pode frequentemente ser descontinuado após sangramento importante; isso não é igual a AAS após IAM. Perguntar sempre **por que o paciente utiliza** o fármaco. Evitar um algoritmo baseado só na presença da medicação na lista; o benefício que ela oferece define parte do risco de suspensão.
+
+## 16. Hemorragia pós-operatória, anastomoses e anatomia alterada
+
+Após cirurgia bariátrica, gastrectomia, derivação intestinal ou reconstruções, o tubo digestivo muda e a localização do sangramento pode ser difícil para EDA convencional. **Úlcera marginal** em anastomose, erosão de grampos, fístula ou isquemia podem sangrar. Em bypass gástrico, segmentos excluídos podem não ser facilmente acessíveis por EDA padrão, exigindo enteroscopia, abordagem laparoscópica/transgástrica ou radiologia conforme centro. Não presumir que EDA normal exclui fonte em estômago excluído.
+
+Em sangramento pós-operatório precoce, avaliar integridade anastomótica, queda de hemoglobina, drenos e possibilidade de hemorragia intraluminal versus intraperitoneal. Se paciente está hipotenso com abdome distendido e pouca exteriorização digestiva, pensar em sangramento **extradigestivo abdominal** e complicações de cirurgia, não apenas sangramento por úlcera mucosa. A definição do procedimento prévio e da anatomia em laudo operatório pode ser mais importante que qualquer escore de HDA.
+
+## 17. HDA no idoso, gestante e pessoas com comorbidades
+
+### 17.1 Idoso frágil
+
+A associação de AINEs, antiagregantes, anticoagulantes, DRC, insuficiência cardíaca e reserva fisiológica reduzida pode tornar sangramento aparentemente moderado clinicamente grave. FC pode não subir sob betabloqueador, e PA basal elevada pode mascarar queda relativa. Hemoglobina prévia baixa por deficiência de ferro amplifica sintomas de perda aguda. Rever metas de cuidado, capacidade de endoscopia segura e riscos de sedação, sem negar hemostasia a pessoa só pela idade.
+
+### 17.2 Gestação
+
+Hematêmese em gestante pode decorrer de hiperêmese gravídica com laceração de Mallory–Weiss, esofagite e outras causas; mas hemorragia importante continua emergência materna e fetal. Considerar vias aéreas, aspiração, alterações de volemia, hemoglobina, riscos de sedação, segurança de medicamentos e viabilidade fetal; organizar endoscopia com equipe obstétrica/anestésica quando necessária, sem atrasar tratamento vital. Não usar automaticamente todas as doses, drogas vasoativas ou exames de radiação do adulto não gestante.
+
+### 17.3 Doença renal crônica
+
+DRC pode associar-se a disfunção plaquetária, anticoagulação em hemodiálise, anemia basal e lesões vasculares; ajustar sedativos e drogas conforme função renal e avaliar volume com cautela. Em paciente dialítico com melena e hipotensão, não atribuir tudo a "uremia" sem localizar foco. Hemorragia importante pode exigir transfusão com estratégia individual.
+
+### 17.4 Doença cardiovascular e limiar transfusional
+
+Paciente com angina ativa, IAM, estenose aórtica grave ou insuficiência cardíaca pode tolerar mal anemia aguda. A estratégia transfusional restritiva de Hb 7 g/dL não deve ser aplicada automaticamente a todas essas situações sem considerar isquemia e hipoperfusão; volume transfusional também pode agravar congestão. Ressuscitação requer monitorização e equipe experiente.
+
+## 18. Quando a endoscopia não revela a fonte: uma segunda hipótese anatômica
+
+### 18.1 EDA negativa não encerra investigação de sangramento persistente
+
+HDA aparente com endoscopia sem lesão pode refletir sangramento intermitente (Dieulafoy), sangue já eliminado, falha de visualização, sangramento da papila (hemobilia/hemosuccus pancreaticus), fonte além do alcance ou origem oral/nasal. Revisar qualidade da EDA, presença de sangue/coágulos, tempo de exame, história de cirurgia, hemoglobina e sinais vitais. Se estável, nova endoscopia pode esclarecer; se sangramento maciço persiste e endoscopia não alcança/identifica, **angio-TC ou angiografia** podem ser apropriadas conforme cenário.
+
+### 18.2 Hemobilia e hemosuccus pancreaticus
+
+**Hemobilia** é hemorragia para árvore biliar, podendo ocorrer após instrumentação, trauma hepático, tumor ou pseudoaneurisma; pode exteriorizar sangue pela papila. **Hemosuccus pancreaticus** resulta de sangramento pelo ducto pancreático, por vezes associado a pancreatite crônica/pseudoaneurisma arterial e hemorragia intermitente. A tríade de dor abdominal, icterícia e sangramento para hemobilia é clássica, mas pode faltar. Angio-TC e embolização seletiva podem ser fundamentais. Repetir IBP sem investigar vasculatura não resolve pseudoaneurisma.
+
+### 18.3 Fístula aortoentérica
+
+História de prótese aórtica abdominal, dor, sepse inexplicada ou hemorragia digestiva intermitente "sentinela" exige suspeita. A endoscopia pode ver lesão inespecífica ou não alcançar a área; **angio-TC e cirurgia vascular urgente** são essenciais conforme estabilidade. Não dar alta com diagnóstico de "gastrite" após EDA negativa quando há prótese aórtica e sangramento relevante.
+
+### 18.4 Sangramento de delgado e a categoria “origem obscura”
+
+Após EDA e colonoscopia adequadas sem identificar foco, sangramento persistente pode surgir do intestino delgado, frequentemente angioectasias, tumores, úlceras e doença inflamatória. Cápsula endoscópica, enteroscopia e imagem direcionada são opções conforme estabilidade e suspeita. **A ESGE 2026 não recomenda cápsula de vídeo rotineira na avaliação inicial de toda HDA suspeita**, o que não significa que cápsula nunca seja útil no sangramento obscuro após endoscopias convencionais adequadas.
+
+## 19. Angio-TC, embolização transcateter e cirurgia: tratamento além da endoscopia
+
+### 19.1 Quando considerar imagem vascular
+
+Angio-TC pode localizar extravasamento ativo e orientar radiologia/cirurgia quando EDA é inconclusiva ou hemostasia falhou. Sensibilidade depende de sangramento ativo no momento e fluxo de extravasamento; resultado negativo não exclui sangramento intermitente. Em choque com sangramento sem controle, não gastar tempo em imagem que não mudará estratégia e atrasará intervenção disponível; o fluxo depende de recurso e equipe.
+
+### 19.2 TAE após falha de endoscopia
+
+A **ESGE 2026** recomenda considerar **embolização angiográfica transcateter** na úlcera com hemorragia persistente refratária às modalidades endoscópicas, incluindo OTS e hemostático tópico. Em **recorrência após hemostasia inicial**, uma segunda EDA com técnica apropriada é geralmente considerada primeiro; TAE se falhar. Embolização deve tentar identificar vaso causador com preservação de perfusão, lembrando riscos de isquemia/reperfusão, contraste e falha técnica. Uma úlcera duodenal posterior pode envolver território gastroduodenal, mas não assumir o mesmo vaso em todos sem angiografia.
+
+### 19.3 Embolização profilática selecionada, não rotina
+
+A **ESGE 2026** sugere considerar **TAE profilática** em alguns casos de muito alto risco, como paciente inicialmente instável, úlcera posterior duodenal, lesão grande **>2 cm**, ou hemostasia cuja durabilidade é incerta, após discussão especializada. Isso é recomendação seletiva, não indicação de embolizar todas as úlceras Forrest Ia depois de sucesso. O benefício deve ser pesado frente a riscos e capacidade real de radiologia intervencionista.
+
+### 19.4 Cirurgia no ressangramento
+
+Cirurgia é indicada quando TAE não está disponível ou fracassou, ou quando evolução catastrófica exige controle imediato por via operatória. Técnica pode envolver identificação e hemostasia do vaso, sutura, ressecção ou abordagem de doença de base conforme fonte e estabilidade. Cirurgia de emergência em pessoa idosa, desnutrida ou cirrótica tem morbidade significativa; **evitar atraso por tentativas repetidas e ineficazes** de endoscopia onde embolização/cirurgia seria mais adequada.
+
+### 19.5 Não confundir úlcera sangrante com perfuração
+
+Uma úlcera que sangra de vaso exposto em geral exige hemostasia endoscópica e IBP, enquanto úlcera com **peritonite e pneumoperitônio por perfuração livre** demanda avaliação cirúrgica para conter vazamento. Hemorragia e perfuração podem coexistir, mas seus objetivos de controle de fonte não são idênticos. Esse diferencial é central para integração com apostila 122.
+
+## 20. Pós-endoscopia: nutrição, ferro, alta e seguimento
+
+### 20.1 Reintrodução alimentar
+
+A **ESGE 2026 sugere nutrição oral precoce em até 24 horas** após hemostasia endoscópica de úlcera, **quando hemostasia durável foi alcançada** e paciente não apresenta contraindicações como instabilidade, aspiração, necessidade de procedimento iminente ou outras doenças. Não submeter todos a jejum prolongado sem razão; também não oferecer alimentação de imediato a alguém sob sangramento ativo não controlado. Avaliar nível de consciência, náuseas, sedação e orientações da equipe.
+
+### 20.2 Ferro e anemia depois da alta
+
+A ESGE 2026 sugere **iniciar terapia de ferro antes da alta** em úlcera hemorrágica com deficiência de ferro e/ou anemia apropriada. Ferropenia pode persistir com Hb inicialmente aceitável, e anemia pode limitar capacidade funcional semanas depois da hemostasia. Escolher ferro oral ou IV conforme gravidade, tolerância, inflamação, necessidade de recuperação e disponibilidade. Programar hemograma e investigação de causa de anemia que persiste, especialmente suspeita de neoplasia ou angiodisplasia.
+
+### 20.3 Prevenção secundária da úlcera
+
+Revisar *H. pylori*, tratamento e confirmação de erradicação; AINEs e substituições; necessidade de AAS/anticoagulante e IBP protetor; álcool/tabaco; biópsia de úlcera gástrica e seguimento endoscópico de cicatrização quando indicado. Um paciente pode estar livre de melena e ainda ter úlcera maligna ou infecção por H. pylori não resolvida. A alta deve registrar achado, Forrest, técnica de hemostasia, medicação, resultado de biópsia/cultura se pendente e plano de retorno.
+
+### 20.4 Orientações de retorno
+
+Nova hematêmese, síncope, hipotensão, melena acompanhada de fraqueza progressiva, palidez acentuada, dispneia ou dor abdominal intensa exigem reavaliação urgente. Pequena melena residual isolada após hemostasia pode refletir eliminação de sangue antigo, mas piora clínica não deve ser normalizada. Identificar contato para resultado de *H. pylori* e biópsia, agendar tratamento da causa e, em varicosa, ligaduras seriadas e hepatologia/TIPS quando indicado.
+
+## 21. Prognóstico, complicações e sinais de falha
+
+### 21.1 Quem sangra de novo?
+
+Preditores incluem choque inicial, hemoglobina muito baixa, necessidade transfusional alta, úlcera grande/posterior, Forrest de alto risco, hemostasia incerta, anticoagulação, comorbidades e continuação de AINE/*H. pylori*. Em varicosa, Child-Pugh/MELD elevados, sangramento ativo, infecção e falha de terapia combinada aumentam risco. **O prognóstico não é determinado só pela cor do vômito ou tamanho do coágulo**.
+
+### 21.2 Complicações cardiovasculares e respiratórias
+
+Choque hemorrágico pode provocar isquemia miocárdica, injúria renal, encefalopatia hipóxica, acidose e coagulopatia. Aspiração de sangue e conteúdo gástrico pode causar insuficiência respiratória; sedação e intubação têm riscos próprios. Reposição excessiva em cirrótico/IC pode agravar pressão portal ou edema; sub-ressuscitação prolonga choque. A segurança exige monitorização dinâmica, não metas fixas descontextualizadas.
+
+### 21.3 Complicações iatrogênicas
+
+Endoscopia terapêutica pode causar perfuração, lesão térmica, sangramento provocado após mobilizar coágulo, aspiração e eventos sedativos; TAE pode causar isquemia; cirurgia pode produzir infecção, fístula e falência de órgãos. Esses riscos não impedem terapia salva-vidas, mas orientam escolha de técnica, consentimento e seguimento. A ESGE 2026 condiciona manejo de Forrest IIb com remoção de coágulo à **competência de controlar potencial sangramento ativo descoberto**.
+
+### 21.4 Quando encaminhar à UTI
+
+Instabilidade persistente, necessidade de vasopressor/transfusão maciça, alteração importante de consciência/aspiração, insuficiência renal/respiratória, sangramento recorrente sem controle, cirrose muito descompensada e elevado risco de intervenção justificam cuidado intensivo. A localização física da UTI depende da instituição, mas a necessidade de monitorização e suporte avançado deve ser reconhecida.
+
+## 22. Diferenciais que mais causam erro em prova e emergência
+
+| Cenário | Erro comum | Raciocínio adequado |
+| --- | --- | --- |
+| Hematoquezia + choque | “Nunca é HDA” | Considerar HDA maciça além de fonte distal |
+| Melena após hemostasia | “Qualquer fezes preta é ressangramento” | Integrar Hb, PA, pulso e nova perda |
+| Hb normal inicial + choque | “Não precisa transfusão até cair” | Hemoglobina demora a refletir perda aguda |
+| Candidato GBS 0–1 | “Pode ir para casa sem seguimento” | Requer estabilidade e acesso ambulatorial real |
+| Úlcera Forrest IIa | “Sem jato, sem hemostasia” | Vaso visível exige tratamento |
+| Úlcera Forrest IIb | “Nunca remover coágulo” | ESGE 2026 sugere remoção/tratamento se equipe capaz |
+| Adrenalina sozinha | “Hemostasia definitiva” | Associar segunda modalidade em sangramento ativo |
+| EDA não varicosa ≤6h em estável | “Sempre melhora prognóstico” | ESGE 2026 desaconselha rotineiramente |
+| Suspeita varicosa | “Aguardar EDA para octreotida e antibiótico” | Iniciar medidas desde suspeita |
+| INR elevado na cirrose | “Plasma até INR normal” | INR isolado não mede toda hemostasia cirrótica |
+| AAS após IAM | “Suspender definitivamente” | Considerar prevenção secundária e retomada precoce |
+| Falha de 2ª EDA | “Repetir sem parar” | Considerar TAE/cirurgia conforme acesso |
+| Úlcera hemorrágica + pneumoperitônio | “Só clipe e IBP” | Investigar perfuração e controle de fonte |
+| Ferritina baixa após alta | “Sangramento resolveu, sem anemia importante” | Repor ferro e investigar causa/recorrência |
+
+A prova pode substituir “Forrest Ia” por fotografia de vaso em jato e exigir reconhecimento. Fotos endoscópicas precisam ser reais, com fonte e licença aprovadas no Admin; um desenho genérico de úlcera sem o vaso correto pode atrapalhar em vez de ensinar.
+
+## 23. Algoritmo completo para a sala de emergência
+
+**Passo 1 — reconhecer instabilidade.** ABC, risco de aspiração, monitorização, perfusão, acesso vascular, tipagem, hemograma e exames proporcionais. Se choque, iniciar reanimação e controle de sangramento; não aguardar escore.
+
+**Passo 2 — orientar suspeita.** Cirrose/hipertensão portal? Iniciar vasoativo + antibiótico se HDA varicosa provável, em paralelo às medidas gerais. Se quadro mais sugestivo de úlcera não varicosa, considerar IBP IV sem atrasar EDA, além de revisar medicamentos.
+
+**Passo 3 — sangue sem excesso.** Em estáveis, abordagem restritiva com limiar em torno de Hb 7 g/dL é comum conforme ACG; no choque/hemorragia maciça/isquemia decidir por fisiologia e protocolo transfusional, não um número isolado.
+
+**Passo 4 — estratificar quando possível.** GBS para risco pré-endoscópico em paciente sem instabilidade; GBS 0–1 pode permitir manejo ambulatorial quando clinicamente/ logisticamente seguro. Não escolher alta só por pontuação sem avaliar contexto.
+
+**Passo 5 — endoscopia adequada.** Não varicosa, EDA em até 24 h após ressuscitação na maioria; varicosa, EDA mais precoce conforme protocolo e após estabilização. Persistindo instabilidade apesar de reanimação, providenciar controle urgente.
+
+**Passo 6 — terapia por lesão.** Forrest Ia/Ib/IIa → hemostasia; IIb → avaliação para remover coágulo/tratar sob competência ESGE 2026; IIc/III → geralmente sem hemostasia. Variz esofágica → ligadura; variz gástrica → estratégia específica.
+
+**Passo 7 — após o controle.** IBP de alta dose por 72h após hemostasia de úlcera de alto risco; revisar H. pylori/AINE/AAS/anticoagulantes. Em varicosa, completar cuidado portal, profilaxia secundária e considerar TIPS em elegíveis.
+
+**Passo 8 — falha ou ressangramento.** Reavaliar fisiologia, fonte e possibilidade de segunda EDA/OTS. Persistindo úlcera hemorrágica, TAE quando disponível; cirurgia se TAE falha/não existe ou emergência demanda. Varicosa refratária → ponte endoscópica/balão e TIPS resgate conforme centro.
+
+**Passo 9 — alta e continuidade.** Explicar sinais de retorno, ferro se deficiência, biópsia, confirmação de erradicação de H. pylori, controle de risco trombótico e acompanhamento para lesão maligna/portal.
+
+## 24. Perguntas frequentes que confundem prática clínica
+
+### 24.1 É obrigatório colocar sonda nasogástrica para diagnosticar HDA?
+
+**Não.** Aspirado nasogástrico positivo pode apoiar presença de sangue no estômago, mas negativo não exclui fonte duodenal/intermitente e o procedimento pode causar desconforto/trauma. O uso pode ser considerado para descompressão em situações específicas, mas não substitui EDA nem é requisito universal de diagnóstico. Não atrasar hemostasia para tentar "lavar até ficar claro" sem indicação.
+
+### 24.2 Todo paciente com varizes tem HDA varicosa?
+
+Não. Pode ter úlcera péptica, erosão, GAVE ou lesão maligna. Entretanto, diante de cirrótico com hematêmese significativa a probabilidade de fonte varicosa justifica tratamento empírico específico antes da EDA. Após visualização, adaptar tratamento à causa, evitando manter indefinidamente medicações sem indicação.
+
+### 24.3 Endoscopia muito precoce sempre é melhor?
+
+Não. A ESGE 2026 sobre úlcera hemorrágica desaconselha EDA ≤6h ou ≤12h **de rotina** em paciente reanimado/estável, porque estudos não mostram ganho universal de desfecho. Se instabilidade grave persiste apesar de reanimação, a lógica muda e intervenção precoce é necessária. Diretrizes de **HDA varicosa** seguem janelas próprias mais precoces. A pergunta deve sempre identificar síndrome e estabilidade.
+
+### 24.4 A presença de coágulo aderido significa que não devo tocar?
+
+A decisão evoluiu. A ESGE 2026 **sugere tratamento endoscópico de Forrest IIb** em mãos capacitadas, com remoção do coágulo e hemostasia de lesão subjacente quando indicada. É importante discutir disponibilidade, risco de precipitar sangramento e suporte de resgate; o conselho antigo “nunca tratar IIb” está desatualizado.
+
+### 24.5 Toda úlcera precisa de biópsia durante sangramento maciço?
+
+Não. O objetivo urgente é hemostasia. Úlcera **gástrica suspeita** precisa investigação histológica quando segura e seguimento conforme protocolo; biopsiar durante exsanguinação pode agravar sangramento. Úlcera duodenal típica tem risco neoplásico diferente, mas não há proibição absoluta de biópsia se características suspeitas e estabilidade. Confirmar cicatrização/etiologia conforme indicação.
+
+### 24.6 Retornar AAS é sempre perigoso?
+
+Suspensão prolongada de AAS para **prevenção secundária** pode gerar IAM/AVC. A recomendação ESGE 2021 é evitar interrupção rotineira de AAS isolado nessa indicação, ou reiniciar cedo após controle se interrompido; situação difere de uso em prevenção primária. Discuta dupla antiagregação com cardiologia, especialmente após stent recente, ponderando gravidade hemorrágica.
+
+### 24.7 O IBP previne hemorragia varicosa?
+
+**Não diretamente.** A pressão portal e ruptura de colateral são mecanismos hemodinâmicos; IBP não substitui NSBB, ligadura ou TIPS. IBP pode ser indicado por úlcera/esofagite concomitante ou curto contexto pós-procedimento selecionado, mas uso sem indicação continuada em cirrose deve ser revisado.
+
+## 25. Revisão de alto rendimento para ENAMED e residência
+
+**Se perguntarem o local:** HDA é acima do Treitz; hematoquezia pode ser HDA maciça. **Se perguntarem o primeiro cuidado:** estabilização, perfusão, sangue conforme gravidade e equipe capaz de hemostasia, não EDA sem suporte. **Se perguntarem transfusão:** limiar ~7 g/dL para maioria dos estabilizados; choque é exceção de fisiologia. **Se perguntarem escore:** GBS 0–1 é critério de baixo risco em selecionados com seguimento, não alta de hipotenso. **Se perguntarem tempo de EDA:** não varicosa geralmente até 24h após reanimação, varicosa frequentemente até 12h após reanimação; instável persistente exige urgência independentemente da janela.
+
+**Forrest:** Ia jato, Ib sangramento difuso, IIa vaso visível, IIb coágulo aderido, IIc mancha plana, III base limpa. **Ia/Ib/IIa** tratam endoscopicamente; **IIb** é mais intervencionista na ESGE 2026 se expertise; **IIc/III** baixo risco. **Adrenalina isolada** não é método definitivo de úlcera de alto risco. **OTSC/OTS** pode ser primeira linha alternativa em determinados Ia/Ib e útil em ressangramento. **Pó tópico** não é rotina como monoterapia de primeira linha para estigmas de alto risco.
+
+**Depois da EDA ulcerosa:** IBP alta dose por 72h após hemostasia, investigar/erradicar H. pylori, revisar AINEs e antitrombóticos, repor ferro se deficiência e oferecer alimentação precoce após hemostasia durável. **Após falha:** segunda EDA/OTS conforme quadro, depois TAE, cirurgia se indisponível/ineficaz. **Varicosa:** vasoativo e antibiótico desde suspeita, ligadura para esofágicas, estratégia específica para gástricas e TIPS para alto risco/falha.
+
+A grande diferença do aluno que apenas decora é reconhecer **qual sequência salva a vida daquele paciente**. O tratamento correto é modular: risco → suporte → método de hemostasia → prevenção de recidiva, sempre com revisão da fonte.
+
