@@ -1,6 +1,6 @@
 # LURIA — Apostila 230: Osteoporose, sarcopenia e fragilidade
 
-**Lote 11 · Clínica Médica / Geriatria integrada · Manuscrito autoral v0.1 · 15/10/2026**
+**Lote 11 · Clínica Médica / Geriatria integrada · Manuscrito autoral ampliado v0.2 · 15/10/2026**
 
 > **STATUS EDITORIAL: MANUSCRITO EM DESENVOLVIMENTO — NÃO PUBLICAR.** Conteúdo preparado em branch isolada. Não está certificado quanto a ≥60.000 caracteres *didáticos úteis*, revisão médica independente, consistência farmacológica de cada medicamento/bula, imagens com licença e aprovação no Admin, nem HTML responsivo/PWA. Não associar automaticamente ao catálogo da LURIA.
 
@@ -458,9 +458,335 @@ A tríade forma uma cadeia clínica: perda muscular aumenta chance de cair; osso
 - Fragilidade: Fried = 5 componentes físicos; IVCF-20 = vulnerabilidade multidimensional (0–6, 7–14, 15–40).
 - Exercício de força, ingestão apropriada, prevenção de quedas, mobilização precoce e suporte multidisciplinar conectam os três diagnósticos.
 
-## 24. Casos clínicos e questões — expansão obrigatória na próxima etapa desta mesma aula
+## 24. Casos clínicos originais — raciocínio comentado
 
-**Não considerar o material final até anexar casos originais em cenários diversos, com exames interpretados, conduta e “por que importa”, além de pelo menos seis questões com gabarito e comentário *de cada alternativa*.** A cobertura clínica está inicial, mas esta seção é provisória.
+### Caso 1 — Fratura de quadril com densitometria “quase normal”
+
+**Apresentação.** Mulher de 82 anos, previamente independente para caminhar dentro de casa, cai da própria altura e evolui com dor inguinal direita e impossibilidade de apoiar o pé. Na radiografia, fratura do colo femoral. Um exame densitométrico de três anos antes mostrava T-score de -1,6 no colo femoral.
+
+**Hipótese central:** fratura por fragilidade, indicativa de risco de recorrência e investigação de osteoporose clínica, independentemente do exame antigo.
+
+**Raciocínio passo a passo.** Primeiro, não confundir baixa massa óssea prévia com impossibilidade de fratura osteoporótica. A probabilidade de fratura é modulada por idade, quedas, força, visão, medicamentos, composição óssea e outros fatores. A classificação do PCDT permite reconhecer fratura maior por baixo impacto como critério de inclusão sem DXA. O problema imediato é ortopédico, mas a prevenção secundária não pode ser abandonada após a cirurgia.
+
+**Exames.** Imagem do quadril; radiografias adicionais ou imagem avançada quando persistir suspeita com RX inicial negativo; hemograma, eletrólitos, função renal, cálcio/albumina e demais avaliações perioperatórias guiadas pela equipe. DXA posterior pode ajudar seguimento e estabelecer linha de base, mas não deve atrasar cuidado essencial.
+
+**Conduta.** Analgesia, avaliação de riscos cirúrgicos e ortopedia urgente, prevenção de delirium, mobilização/rehabilitação orientada, revisão das causas da queda, nutrição, diagnóstico e tratamento de osteoporose conforme critérios e segurança. Articular APS e acompanhamento de fratura por fragilidade para que a intervenção não termine na alta.
+
+**Por que importa.** A maior armadilha é considerar que apenas T-score ≤ -2,5 autoriza o diagnóstico e a abordagem. A história de fratura tem força clínica própria.
+
+### Caso 2 — “Densitometria normal” na coluna de paciente com artrose intensa
+
+**Apresentação.** Mulher, 75 anos, com perda de 5 cm de estatura, cifose progressiva e dor dorsal intermitente. DXA reporta T-score lombar de +0,1, colo femoral de -2,8 e quadril total de -2,4. No mapa da coluna, osteófitos e calcificação aórtica aparecem sobre regiões avaliadas.
+
+**Hipótese:** osteoporose densitométrica no colo do fêmur, potencialmente associada a fratura vertebral não reconhecida; leitura da coluna influenciada por artefatos.
+
+**Raciocínio.** A aparência de densidade aumentada por estruturas calcificadas não equivale a resistência vertebral elevada. A diferença entre sítios e a clínica exigem rever imagem de aquisição, vertebras válidas e eventual exclusão segundo ISCD. Perda de estatura expressiva demanda investigação de fraturas vertebrais, inclusive silenciosas. A interpretação não deve usar “o melhor T-score” ou média arbitrária que oculte risco.
+
+**Exames.** Avaliação vertebral por imagem (VFA quando tecnicamente adequado ou radiografia, conforme disponibilidade e indicação), exames dirigidos a causas secundárias, risco de queda, revisão de medicamentos e, quando pertinente, FRAX com dados do colo femoral.
+
+**Conduta.** Considerar terapia farmacológica indicada pela osteoporose densitométrica e risco, com técnica e contraindicações adequadas; orientar exercícios protegendo coluna e tratamento funcional de dor/cifose. Rever seguimento no mesmo serviço de densitometria quando possível.
+
+**Por que importa.** Artrose e calcificações podem mascarar baixa densidade verdadeira; exames complementares devem ser lidos com o paciente, não separadamente da história.
+
+### Caso 3 — Homem de 48 anos com “osteoporose” por laudo isolado
+
+**Apresentação.** Homem, 48 anos, encaminhado após exame solicitado por dor lombar mecânica. DXA mostra Z-score de -2,4, e o laudo inclui T-score de -2,7. Ele não sofreu fratura por fragilidade, mas relata hipogonadismo não tratado e consumo crônico de corticoide em períodos de exacerbação de doença inflamatória.
+
+**Hipótese:** massa óssea abaixo da faixa esperada para idade, com possíveis causas secundárias; osteoporose não pode ser diagnosticada exclusivamente pelo T-score nessa faixa etária.
+
+**Raciocínio.** ISCD orienta Z-score em homens com menos de 50 anos. A combinação de hipogonadismo, glucocorticoides e doença inflamatória é mais importante que transplantar automaticamente a regra de DXA para mulheres pós-menopausa. É preciso caracterizar fraturas, causas, risco futuro e impactos de terapias específicas.
+
+**Exames.** Confirmação de história medicamentosa; função renal, cálcio/fósforo, PTH, vitamina D conforme quadro, testosterona matinal e eixo hormonal quando indicado, e investigação da doença de base. Buscar fratura vertebral se houver sinais de alerta e avaliar risco por instrumentos válidos para idade/contexto.
+
+**Conduta.** Tratar causas corrigíveis com especialistas, fortalecer músculo, adequar nutrição, minimizar glicocorticoide quando clinicamente possível sem prejudicar tratamento da doença inflamatória; decisão de terapia óssea conforme avaliação especializada.
+
+**Por que importa.** A classificação densitométrica exige população correta, e osteoporose do adulto jovem frequentemente requer aprofundamento etiológico.
+
+### Caso 4 — Duas fraturas durante tratamento e indicação de romosozumabe
+
+**Apresentação.** Mulher, 77 anos, pós-menopausa, T-score de -3,2, uma fratura vertebral prévia e duas fraturas incidentes por fragilidade em 18 meses de bisfosfonato oral prescrito. Relata adesão documentada e técnica correta; cálcio e vitamina D adequados, sem causa secundária identificada. Nega infarto ou AVC, mas tem hipertensão controlada.
+
+**Hipótese:** osteoporose grave com falha terapêutica nos critérios assistenciais brasileiros, potencialmente elegível à avaliação especializada para romosozumabe.
+
+**Raciocínio.** No PCDT 2025/2026, romosozumabe não é indicado por T-score isolado. É necessário confirmar mulher pós-menopausa, osteoporose grave e falha com fraturas sob tratamento ou critério alternativo de uma fratura após ≥1 ano associado a redução significativa de DMO >5%, comprovando adesão e excluindo causas secundárias. Neste caso, duas fraturas incidentes e terapia adequada sustentam discussão. A condição cardiovascular deve ser examinada: um infarto ou AVC no ano anterior impediria o início pelo protocolo.
+
+**Exames.** Conferir imagens de fratura, DXAs anteriores comparáveis, cálcio, vitamina D quando aplicável, creatinina e avaliação etiológica. Revisar segurança cardiovascular, medicações e acesso à dispensação.
+
+**Conduta.** Encaminhar para decisão e eventual tratamento, com planejamento explícito de **210 mg SC mensal por 12 meses** se elegível, correção de hipocalcemia e seguimento com bisfosfonato/antirreabsortivo conforme protocolo e segurança. Intensificar prevenção de quedas, reabilitação e alimentação adequada.
+
+**Por que importa.** “Falha terapêutica”, “muito alto risco” e “osteoporose grave” não são expressões intercambiáveis sem critérios; a sequência de tratamento é decisiva.
+
+### Caso 5 — Suspensão de denosumabe sem plano e fraturas vertebrais
+
+**Apresentação.** Mulher, 70 anos, usou denosumabe semestral por quatro anos em assistência privada, com boa resposta de DMO. A última aplicação ocorreu há nove meses, porque mudou de convênio. Evolui com dor intensa aguda na coluna dorsal após levantar pequeno peso, sem trauma maior. Imagem identifica duas fraturas compressivas vertebrais recentes.
+
+**Hipótese:** fraturas por fragilidade em período de interrupção de denosumabe, com possível fenômeno de rebote do turnover, embora outras causas devam ser avaliadas.
+
+**Raciocínio.** Denosumabe não acumula efeito esquelético prolongado como certos bisfosfonatos. Atrasos/cessação não planejada elevam risco de fraturas vertebrais. Isso não prova, em um caso individual, que toda fratura seja causada exclusivamente pela suspensão, mas a relação temporal exige reconhecimento e prevenção de novas lesões.
+
+**Exames.** Imagem para confirmar fratura e excluir compressão neural conforme sintomas; cálcio, vitamina D, função renal e avaliação de outras causas de perda óssea. Revisar datas precisas das aplicações e se houve terapia antirreabsortiva de transição.
+
+**Conduta.** Analgesia, avaliação neurológica e ortopédica conforme red flags, planejamento **especializado e imediato** da retomada ou transição antirreabsortiva segura, evitando nova interrupção. Orientar a paciente e equipe de assistência que não se fazem “férias” de denosumabe sem estratégia.
+
+**Por que importa.** A prescrição inicial de denosumabe já deveria incluir plano de continuidade e saída; evitar efeito rebote é medida de segurança de alto impacto.
+
+### Caso 6 — Idoso com obesidade, perda de força e SARC-F positivo
+
+**Apresentação.** Homem, 81 anos, IMC 31, relata duas quedas e dificuldade para levantar do sofá nos últimos 12 meses. Toma banho com ajuda esporádica. No SARC-F, soma 5 pontos. Dinamometria de mão dominante 22 kg, e teste de cinco levantadas em 20 segundos. BIA feita com protocolo estável sugere massa muscular reduzida; velocidade usual 0,65 m/s.
+
+**Hipóteses:** sarcopenia confirmada e grave nos referenciais EWGSOP2, potencial coexistência de obesidade sarcopênica e vulnerabilidade funcional.
+
+**Raciocínio.** Em homem, preensão <27 kg indica baixa força; levantar em >15 segundos confirma comprometimento funcional; massa muscular reduzida sustenta diagnóstico de sarcopenia, e velocidade ≤0,8 m/s marca baixo desempenho. O IMC elevado não garante reserva muscular adequada. É necessário avaliar outras causas de fraqueza (neuropatia, artrite, cardiopatia, doença endócrina), bem como calibrar interpretação da BIA se houver edema.
+
+**Exames.** Avaliação nutricional e funcional, rastreio de queda, revisão de medicamentos, investigação médica dirigida; DXA óssea se critérios de idade/risco. O escore de SARC-F é triagem, não confirmação por si.
+
+**Conduta.** Exercícios resistidos progressivos e equilíbrio com supervisão, metas funcionais, ajuste de ingestão energética/proteica, tratamento das causas identificadas, revisão de ambiente e reavaliação periódica de força, marcha e quedas.
+
+**Por que importa.** Peso corporal e aparência não devem ser usados para excluir perda de função muscular.
+
+### Caso 7 — IVCF-20 alto após alta por pneumonia
+
+**Apresentação.** Mulher, 86 anos, vive com a filha. Antes da pneumonia, caminhava sozinha e realizava compras simples; após 12 dias de internação, precisa de ajuda para vestir-se, fica insegura ao andar e perdeu apetite. IVCF-20 na APS: 18 pontos. A família pergunta se “ela já virou uma idosa permanentemente incapaz”.
+
+**Hipótese:** vulnerabilidade clínico-funcional alta com declínio pós-hospitalização potencialmente reversível em parte, e risco de sarcopenia e fragilidade.
+
+**Raciocínio.** IVCF-20 ≥15 identifica alto risco e justifica avaliação ampla, mas não demonstra incapacidade irreversível. A condição funcional pré-hospitalização precisa ser reconstruída. Desnutrição, delirium residual, fraqueza por desuso, polifarmácia, depressão, hipotensão e doença ativa podem agravar temporariamente o escore. Fried e IVCF-20 avaliam dimensões diferentes.
+
+**Exames.** Revisão de sinais vitais, medicamentos, cognição e atenção, deglutição/nutrição, força, teste de mobilidade supervisionado, avaliação de causa de anorexia e barreiras ambientais. DXA se risco ósseo justificar, sem transformar a pontuação em diagnóstico de osteoporose.
+
+**Conduta.** Reabilitação de transferências e marcha, suporte nutricional, revisão de fármacos, prevenção de queda, investigação clínica dirigida e plano de reavaliação na APS com participação da família.
+
+**Por que importa.** Fragilidade pode sinalizar oportunidade terapêutica, não sentença de dependência inevitável.
+
+### Caso 8 — Fratura vertebral com sinais neurológicos: urgência disfarçada
+
+**Apresentação.** Homem, 73 anos, em uso prolongado de corticoide, com dor dorsal intensa e colapso vertebral ao RX. Procura pronto atendimento após piora súbita da força das pernas, anestesia em sela e dificuldade de urinar.
+
+**Hipótese:** compressão neurológica aguda associada a fratura/lesão vertebral, com diferencial de tumor, infecção e outras lesões; **emergência**.
+
+**Raciocínio.** A história de risco osteoporótico e o colapso vertebral não explicam automaticamente toda a evolução. Déficit motor, alteração esfincteriana e perda sensitiva exigem avaliação urgente e imagem adequada para localizar compressão. A simples prescrição de analgesia e bisfosfonato perderia janela de tratamento da lesão neurológica.
+
+**Exames.** Avaliação neurológica e esfincteriana emergencial; RM de segmento apropriado ou alternativa emergencial conforme disponibilidade/contraindicação, investigação infecciosa/oncológica quando indicada; avaliação ortopédica/neurocirúrgica imediata.
+
+**Conduta.** Encaminhamento emergencial, analgesia, precauções de coluna e tratamento dirigido à causa e à compressão, com reabilitação futura e manejo da doença óssea. Não atrasar urgência por FRAX nem DXA.
+
+**Por que importa.** Nem todo “colapso por osteoporose” é caso ambulatorial.
+
+### Caso 9 — Menopausa precoce e investigação de perda óssea secundária
+
+**Apresentação.** Mulher, 43 anos, menopausa aos 38 por insuficiência ovariana precoce, IMC 19, fumante, sem fraturas, com Z-score lombar de -2,1. Refere sedentarismo e dieta restritiva por insegurança alimentar. Não usa glicocorticoide.
+
+**Hipótese:** baixa massa óssea para idade com fatores hormonais, nutricionais e ambientais relevantes.
+
+**Raciocínio.** Mulher pré-menopáusica ou em transição atípica requer interpretação conforme estado gonadal e contexto; Z-score sinaliza alteração, mas o histórico hormonal é determinante. Menopausa precoce aumenta exposição a hipoestrogenismo e risco ósseo. A prescrição automática de bisfosfonato de longa duração para uma paciente jovem, sem discutir planejamento reprodutivo, terapia hormonal quando apropriada e causas, pode ser inadequada.
+
+**Exames.** Avaliação de função tireoidiana e metabolismo mineral orientada, histórico hormonal detalhado, ingestão nutricional, riscos vasculares e saúde reprodutiva; revisão da qualidade técnica da DXA.
+
+**Conduta.** Ginecologia/endocrinologia para manejo da insuficiência ovariana e proteção óssea, abordagem de tabagismo, alimentação e exercício. Qualquer farmacoterapia específica requer ponderação de duração, efeitos e futuro reprodutivo.
+
+**Por que importa.** A consulta deve tratar fatores causais e condições de vida, não só comparar um número com -2,5.
+
+### Caso 10 — DRC avançada com PTH elevado
+
+**Apresentação.** Homem, 69 anos, DRC estádio G4, cálcio no limite inferior, fosfato elevado, PTH persistentemente alto e fratura de punho após queda. DXA mostra T-score -2,9 no rádio distal. Recebe proposta de ácido zoledrônico imediato, sem avaliação adicional.
+
+**Hipóteses:** alto risco esquelético com possível distúrbio mineral ósseo da doença renal crônica (DRC-DMO), além de osteoporose concomitante.
+
+**Raciocínio.** A DRC avançada interfere em metabolismo mineral, turnover, risco de hipocalcemia e segurança dos antirreabsortivos. O padrão bioquímico torna imprudente assumir que toda fragilidade seja osteoporose primária isolada. O medicamento IV pode ser inadequado conforme clearance e bula.
+
+**Exames.** Confirmar função renal, cálcio ionizado ou corrigido conforme contexto, fósforo, PTH, fosfatase alcalina, 25-OH vitamina D quando indicado e avaliação nefrológica. Considerar imagem e história de fraturas, e determinar a possibilidade de doença óssea de turnover alterado.
+
+**Conduta.** Articular nefrologia e endocrinologia, corrigir distúrbios tratáveis e escolher terapia individualizada para osso e risco de quedas; não usar esquema padrão de bisfosfonato por reflexo.
+
+**Por que importa.** DRC-DMO exige raciocínio distinto e evita iatrogenia por tratamento ósseo inapropriado.
+
+---
+
+## 28. Questões inéditas de residência — todas as alternativas comentadas
+
+### Questão 1 — Osteoporose clínica e densitometria
+
+Mulher de 79 anos apresenta fratura de quadril após queda da própria altura. DXA anterior mostrava T-score de -1,9. Qual alternativa representa melhor a abordagem inicial da doença óssea?
+
+A. Osteoporose está descartada porque T-score > -2,5.
+B. Fratura de quadril só é osteoporótica quando T-score ≤ -3,0.
+C. A fratura por fragilidade pode definir condição clínica e exigir prevenção secundária mesmo sem DXA atual.
+D. O FRAX é proibido após fratura.
+E. O tratamento deve aguardar cinco anos para haver certeza da osteoporose.
+
+**Gabarito: C.** **A:** incorreta; baixa massa óssea não impede fratura por fragilidade. **B:** incorreta; não existe esse limite obrigatório. **C:** correta; PCDT permite inclusão pela fratura maior por baixo impacto confirmada, e prevenção de novas fraturas é prioridade. **D:** incorreta; FRAX pode ter utilidade de avaliação, embora fratura recente exija juízo próprio. **E:** incorreta; atrasar intervenção representa risco. **Mini-revisão:** densitometria ajuda, mas não monopoliza diagnóstico clínico.
+
+### Questão 2 — Escore em mulher antes da menopausa
+
+Mulher, 35 anos, sem fraturas, tem densitometria com T-score -2,6 e Z-score -1,8. Qual interpretação é preferível?
+
+A. A classificação da OMS por T-score define sozinha osteoporose em qualquer idade.
+B. O Z-score deve ser privilegiado na avaliação de mulheres pré-menopáusicas, e diagnóstico requer contexto clínico.
+C. Sempre iniciar romosozumabe no SUS.
+D. Os escores são medidas de vitamina D circulante.
+E. Não há necessidade de investigar fatores clínicos.
+
+**Gabarito: B.** **A:** extrapola critério de grupo distinto. **B:** segue ISCD; o Z-score orienta interpretação da densidade para idade, sem descartar causas secundárias. **C:** não atende critério brasileiro de acesso e população. **D:** falsifica o conceito da DXA. **E:** despreza etiologias importantes. **Mini-revisão:** T-score em pós-menopausa/homens ≥50; Z-score em pré-menopausa/homens <50.
+
+### Questão 3 — Artefatos em DXA
+
+Idosa com espondiloartrose importante tem T-score lombar -0,1, colo femoral -2,7 e perda de altura de 6 cm. Qual conduta interpretativa é melhor?
+
+A. Usar somente a coluna porque fornece o resultado mais favorável.
+B. A densitometria não pode ser utilizada em nenhuma circunstância.
+C. Revisar artefatos e a qualidade da DXA, valorizar o sítio femoral válido e investigar fratura vertebral.
+D. O resultado de coluna confirma que não há osteoporose.
+E. Prescrever cálcio apenas e suspender investigação.
+
+**Gabarito: C.** **A:** seleção tendenciosa. **B:** inadequada; outros sítios podem ser interpretáveis. **C:** correta porque degeneração pode elevar artificialmente a DMO aparente. **D:** ignora sítio válido e clínica. **E:** não aborda risco. **Mini-revisão:** verificar imagem, regiões de interesse e discordâncias entre sítios.
+
+### Questão 4 — Falha terapêutica do PCDT brasileiro
+
+Uma mulher pós-menopausa, osteoporose grave e tratamento antirreabsortivo por mais de um ano, sofreu uma fratura incidente. DXA em serviço comparável documentou redução superior a 5% no mesmo sítio, com técnica válida, adesão comprovada e causas secundárias excluídas. Segundo PCDT atualizado, qual é a alternativa mais apropriada?
+
+A. Esse cenário nunca pode preencher falha.
+B. Preenche um dos critérios previstos de falha terapêutica e justifica avaliar acesso ao romosozumabe se demais condições forem atendidas.
+C. Basta T-score -2,5 em qualquer mulher para romosozumabe no SUS.
+D. Dar teriparatida como primeira opção obrigatória do PCDT atual.
+E. Ignorar a nova fratura porque o tratamento já começou.
+
+**Gabarito: B.** **A:** contradiz critério explícito. **B:** correta: fratura após pelo menos um ano + redução >5% com adesão e ausência de causa secundária, na população exigida, compõe falha. **C:** desconsidera critérios específicos. **D:** teriparatida foi excluída do PCDT em 2025/2026. **E:** nova fratura exige reavaliar risco e terapia. **Mini-revisão:** distinguir indicação clínica geral e financiamento/dispensação no SUS.
+
+### Questão 5 — Romosozumabe e risco cardiovascular
+
+Mulher de 76 anos, elegível aos critérios osteoporóticos para romosozumabe, sofreu infarto agudo do miocárdio há quatro meses. Qual conduta é coerente com o PCDT?
+
+A. Iniciar normalmente porque está acima de 70 anos.
+B. Iniciar com dose duplicada para acelerar formação óssea.
+C. Não iniciar romosozumabe diante de infarto no ano anterior e discutir alternativa terapêutica especializada.
+D. Não investigar hipocalcemia previamente.
+E. Usar romosozumabe por tempo indeterminado sem sequência.
+
+**Gabarito: C.** **A:** idade não anula risco. **B:** dose duplicada é perigosa e não é esquema do protocolo. **C:** atende alerta cardiovascular do PCDT. **D:** hipocalcemia deve ser corrigida. **E:** esquema é limitado a 12 meses e exige antirreabsortivo sequencial. **Mini-revisão:** segurança cardiovascular e sequência importam tanto quanto T-score.
+
+### Questão 6 — Suspensão de denosumabe
+
+Paciente em uso regular de denosumabe por três anos pergunta se pode parar por 18 meses “para descansar os ossos” porque a DXA melhorou. A melhor resposta é:
+
+A. Sim, denosumabe tem efeito residual prolongado como todos os bisfosfonatos.
+B. Sim, sem qualquer necessidade de reavaliação.
+C. Não interromper ou atrasar sem plano especializado de terapia antirreabsortiva subsequente devido ao risco de fraturas vertebrais de rebote.
+D. Substituir por suplemento isolado sem avaliar risco.
+E. A densitometria normalizada garante risco zero.
+
+**Gabarito: C.** **A:** falso mecanismo de persistência. **B:** ignora rebote. **C:** correta, conforme NOGG. **D:** suplementação não bloqueia, por si, o risco de rebote. **E:** nenhum tratamento elimina todo risco. **Mini-revisão:** “drug holiday” pode ser considerada em alguns bisfosfonatos após reavaliação, não em denosumabe.
+
+### Questão 7 — Preparo para bisfosfonato oral
+
+Uma paciente com osteoporose recebeu alendronato semanal e tem dificuldade de engolir, doença esofágica importante e não consegue manter postura sentada. Qual opção é a mais adequada?
+
+A. Manter alendronato e triturar qualquer formulação sem orientação.
+B. Dobrar dose para compensar absorção ruim.
+C. Reconhecer contraindicações ou importantes barreiras ao uso oral e avaliar alternativa segura, inclusive terapia IV se elegível.
+D. Administrar com leite e outros comprimidos.
+E. Recomendar deitar imediatamente após ingestão.
+
+**Gabarito: C.** **A:** triturar e usar em doença esofágica pode piorar lesões. **B:** inseguro. **C:** correta; reavaliar via, função renal, cálcio e critérios do PCDT. **D:** leite/alimentos interferem na absorção. **E:** decúbito favorece complicação esofágica. **Mini-revisão:** técnica de administração é parte da farmacoterapia.
+
+### Questão 8 — Diagnóstico EWGSOP2
+
+Homem de 80 anos apresenta força de preensão de 24 kg, massa muscular apendicular abaixo do corte validado e velocidade usual de marcha 0,7 m/s. Qual classificação melhor corresponde ao EWGSOP2?
+
+A. Sarcopenia descartada pela falta de tremor.
+B. Sarcopenia confirmada e grave.
+C. Apenas obesidade, independentemente do IMC.
+D. Fraqueza isolada não avaliada.
+E. Apenas osteoporose.
+
+**Gabarito: B.** **A:** tremor não é critério. **B:** força baixa, massa reduzida e desempenho baixo caracterizam sarcopenia confirmada e grave. **C:** obesidade não é diagnosticada por esses testes. **D:** força foi objetivamente medida. **E:** densidade óssea não foi avaliada. **Mini-revisão:** força → massa → desempenho.
+
+### Questão 9 — SARC-F
+
+Mulher de 84 anos tem pontuação 1 no SARC-F, mas cai repetidamente, faz cinco levantadas da cadeira em 19 segundos e apresenta perda muscular ao exame. Qual afirmação é correta?
+
+A. SARC-F baixo exclui com certeza a sarcopenia.
+B. O SARC-F é um exame de densidade óssea.
+C. Deve-se prosseguir avaliação pela suspeita clínica e baixa força, pois o SARC-F pode perder casos.
+D. Todos com SARC-F baixo recebem alta sem exame.
+E. Só há sarcopenia quando IMC <18,5.
+
+**Gabarito: C.** **A:** sensibilidade do questionário é limitada. **B:** não avalia osso. **C:** correta: sintomas e teste funcional prevalecem sobre tranquilização indevida. **D:** ignora riscos. **E:** sarcopenia pode coexistir com obesidade. **Mini-revisão:** instrumento de rastreio nunca substitui avaliação clínica.
+
+### Questão 10 — Critérios de Fried
+
+Paciente idoso apresenta perda ponderal involuntária, exaustão autorreferida e lentidão de marcha; os demais componentes não são positivos. Pelo modelo fenotípico de Fried, a melhor classificação é:
+
+A. Robusto.
+B. Pré-frágil, pois são necessários cinco componentes positivos.
+C. Frágil, pois três dos cinco componentes são positivos.
+D. Osteoporose necessariamente confirmada.
+E. IVCF-20 15 automaticamente.
+
+**Gabarito: C.** **A:** três componentes não são robustez. **B:** pré-fragilidade costuma corresponder a um ou dois. **C:** três ou mais definem fragilidade física. **D:** fragilidade clínica não define densidade óssea. **E:** não há conversão válida de Fried para IVCF-20. **Mini-revisão:** perda de peso, exaustão, baixa atividade, marcha lenta e fraqueza.
+
+### Questão 11 — IVCF-20 na APS
+
+Uma mulher de 83 anos apresenta IVCF-20 de 17 pontos. Qual afirmação é correta?
+
+A. Indica alto risco de vulnerabilidade clínico-funcional, exigindo avaliação dos domínios e plano de cuidado.
+B. Prova demência irreversível.
+C. É equivalente a T-score de -2,5.
+D. A escala não inclui aspectos funcionais e cognitivos.
+E. Indica suspensão automática de todos os tratamentos.
+
+**Gabarito: A.** **A:** 15–40 é estrato alto de vulnerabilidade no instrumento. **B:** escore não determina causa nem irreversibilidade. **C:** escalas medem fenômenos distintos. **D:** atividades e cognição são componentes. **E:** decisões precisam individualização. **Mini-revisão:** 0–6 baixo; 7–14 moderado; 15–40 alto.
+
+### Questão 12 — Fragilidade e perioperatório
+
+Homem de 87 anos, anteriormente independente mas com IVCF-20 alto, apresenta fratura de quadril após queda. Qual conduta é melhor?
+
+A. Recusar toda avaliação cirúrgica por idade e fragilidade.
+B. Adiar indefinidamente tratamento porque há sarcopenia.
+C. Avaliar e tratar urgência ortopédica, otimizar riscos e implementar prevenção de delirium, reabilitação, nutrição e cuidado compartilhado.
+D. Prescrever apenas suplemento e liberar.
+E. Considerar risco zero após cirurgia bem-sucedida.
+
+**Gabarito: C.** **A/B:** fragilidade informa risco e planejamento, não proibição automática de terapia. **C:** correta, abordagem integrada. **D:** não trata fratura nem consequências. **E:** cirurgia não elimina recorrência nem declínio funcional. **Mini-revisão:** tratar evento agudo e prevenir perda funcional/segunda fratura.
+
+### Questão 13 — Osteomalácia versus osteoporose
+
+Paciente apresenta dor óssea difusa, fraqueza proximal, fosfatase alcalina elevada e deficiência importante de vitamina D. A DXA é baixa. Qual alternativa descreve melhor o raciocínio?
+
+A. Osteomalácia é impossível quando T-score é baixo.
+B. É necessário investigar defeito de mineralização e causas nutricionais/metabólicas antes de aplicar farmacoterapia antirreabsortiva indiscriminadamente.
+C. Qualquer hipocalcemia deve ser tratada com denosumabe imediatamente.
+D. A DXA mede diretamente defeitos da matriz não mineralizada e confirma etiologia.
+E. Vitamina D é irrelevante para mineralização óssea.
+
+**Gabarito: B.** **A:** osteomalácia pode cursar com DMO baixa. **B:** correta; diagnosticar e corrigir distúrbio de mineralização é prioridade. **C:** denosumabe pode agravar hipocalcemia, sobretudo em DRC. **D:** DXA não define a causa. **E:** é biologicamente incorreta. **Mini-revisão:** baixa massa óssea é achado, e a etiologia importa.
+
+### Questão 14 — DRC e doença óssea
+
+Homem de 72 anos, DRC G4, hiperfosfatemia e PTH elevado, sofre fratura de baixo impacto. Qual é a melhor conduta?
+
+A. Aplicar zoledronato sem conhecer depuração renal.
+B. Presumir osteoporose primária pura independentemente da bioquímica.
+C. Considerar DRC-distúrbio mineral e ósseo, avaliar causas e segurança com nefrologia antes de selecionar terapia.
+D. Ignorar a fratura porque DRC é contraindicação para investigação óssea.
+E. Solicitar somente SARC-F.
+
+**Gabarito: C.** **A:** risco renal e contraindicações de bula importam. **B:** ignora perfil mineral específico. **C:** correta. **D:** a fratura exige prevenção secundária. **E:** rastreio de força pode ser complementar, mas não resolve alteração mineral. **Mini-revisão:** PTH/cálcio/fósforo, função renal e turnover condicionam tratamento.
+
+## 29. Questões para ensino clínico e ligação com a plataforma
+
+Os objetivos de ensino não se esgotam no gabarito. Cada questão pode ser convertida futuramente em flashcards autorais LURIA com foco em *diferenciar*, *interpretar* e *tomar decisão*. Exemplo de cartões de memória a construir a partir deste material:
+
+- Fratura de baixo impacto com T-score -1,6: qual fator impede exclusão de osteoporose? A **fratura por fragilidade**.
+- PCDT brasileiro atualizado: qual condicionante de acesso ao romosozumabe? Mulher pós-menopausa, osteoporose grave e **falha definida nos critérios do SUS**.
+- O que jamais esquecer após curso de 12 meses de romosozumabe? **Terapia antirreabsortiva sequencial**.
+- Ao parar denosumabe: qual risco específico? **Rebote de turnover e fraturas vertebrais** sem proteção apropriada.
+- EWGSOP2: variável mais importante para o diagnóstico provável? **Força muscular**.
+- IVCF-20 de 17: significa qual faixa? **Alto risco de vulnerabilidade clínico-funcional**.
+- Fried positivo em três componentes? **Fragilidade fenotípica**.
+- Homem de 42 anos com baixa DXA: preferir que escore? **Z-score**.
+
+Este bloco é uma sugestão de reutilização editorial futura, **não** autorização para criar cópias automáticas de cartões em banco de dados nem para contabilizar os exemplos como apostilas adicionais.
+
 
 ## 25. Plano visual, ainda SEM imagem aprovada
 
@@ -498,7 +824,7 @@ Candidatas a buscar e avaliar com licença comercial e aprovação pelo Admin:
 - [x] Confirmação de PCDT atualizado e cuidado com alteração de romosozumabe/teriparatida.
 - [x] Desenvolvimento de fisiopatologia, diagnóstico, diferencial, risco, farmacoterapia, sarcopenia, fragilidade e algoritmos.
 - [ ] Aprofundar capítulos até ≥60.000 **caracteres didáticos úteis**, revisando redundância e lacunas.
-- [ ] Incluir ≥4 casos e ≥6 questões com todas as alternativas comentadas; conferir gabaritos independentemente.
+- [x] Incluídos 10 casos clínicos e 14 questões com alternativas comentadas. **Ainda falta conferência independente de cada gabarito.**
 - [ ] Revisão farmacológica linha a linha com bula, incluindo doses, intervalos, função renal, gestação, interações e alertas.
 - [ ] Comparador externo diretamente equivalente e análise de profundidade/autossuficiência.
 - [ ] ≥10 imagens candidatas reais ou autorais avaliadas, licença comercial documentada, aprovação Admin.
