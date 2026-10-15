@@ -1187,16 +1187,17 @@
       "area": "Medicina de Família e Comunidade",
       "titulo": "Longitudinalidade, coordenação do cuidado e matriciamento",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "MFC-04",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito autoral parcial 27233 caracteres totais, 5 casos, 7 questões. Drive correlato realmente lido, comparação específica incompleta, fontes MS/PNAB/eMulti/RCPD oficiais, sem 60 mil úteis, revisão científica ou homologação."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-255-longitudinalidade-coordenacao-matriciamento.md"
     },
     {
       "id": 256,
@@ -1204,16 +1205,17 @@
       "area": "Medicina de Família e Comunidade",
       "titulo": "Reabilitação comunitária e cuidado de pessoas com deficiência",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "MFC-07",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito autoral parcial 31523 caracteres totais, 5 casos, 7 questões. Drive correlato realmente lido, comparação específica incompleta, fontes MS/PNAB/eMulti/RCPD oficiais, sem 60 mil úteis, revisão científica ou homologação."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-256-reabilitacao-deficiencia-comunidade.md"
     },
     {
       "id": 257,
