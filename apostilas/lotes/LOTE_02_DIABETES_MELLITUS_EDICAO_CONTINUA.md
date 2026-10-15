@@ -566,6 +566,102 @@ Esses valores são **objetivos usuais condicionados**, não autorização para t
 **Fontes desta seção:** ADA, *Standards of Care in Diabetes — 2026*, seções 6 (*Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises*) e 13 (*Older Adults*). https://doi.org/10.2337/dc26-s006 ; https://doi.org/10.2337/dc26-s013 . A interpretação e as metas variam na gestação, infância, internação e alta fragilidade.
 
 
+
+### 8.5 Hiperglicemia hospitalar: por que a meta e o esquema mudam fora do ambulatório
+
+A pessoa internada recebe intervenções que modificam a glicemia de um dia para o outro: infecção, cirurgia, corticosteroides, soluções contendo glicose, nutrição enteral, jejum, lesão renal aguda e redução da mobilidade. Um esquema que funcionava em casa pode tornar-se excessivo ou insuficiente. **Glicemia acima de 140 mg/dL no hospital indica hiperglicemia**, mas não obriga prescrever insulina em todas as medidas isoladas. A ADA 2026 recomenda iniciar ou intensificar tratamento para **hiperglicemia persistente a partir de 180 mg/dL, confirmada em duas ocasiões dentro de 24 horas** na maioria dos pacientes críticos e não críticos; a SBD 2026 também diferencia picos ocasionais e persistência.
+
+A meta terapêutica não deve reproduzir automaticamente o objetivo ambulatorial de HbA1c. Na **enfermaria, para a maioria das pessoas não críticas**, buscar aproximadamente **100–180 mg/dL** quando possível sem hipoglicemia significativa. Na **UTI, para a maioria das pessoas críticas**, a faixa recomendada é **140–180 mg/dL** após iniciar tratamento, com individualização conforme risco e capacidade de monitorização. Metas muito restritas em pessoa gravemente doente podem induzir hipoglicemia iatrogênica sem benefício proporcional. A HbA1c de admissão, quando não existe exame recente, ajuda a diferenciar hiperglicemia de estresse de descontrole crônico, mas anemia, transfusão e outras condições podem comprometer sua interpretação.
+
+| Situação na internação | Interpretação inicial | Princípio de manejo |
+| --- | --- | --- |
+| Glicemia isolada de 160 mg/dL em pessoa sem DM, sob infecção | Hiperglicemia hospitalar, sem prova de persistência | Avaliar evolução, contexto nutricional, HbA1c quando indicada e necessidade de monitorar |
+| Duas glicemias ≥180 mg/dL em 24 horas na enfermaria | Hiperglicemia persistente com necessidade de estratégia estruturada | Rever causas e planejar esquema com componente programado conforme perfil clínico |
+| Pessoa crítica em infusão de vasopressores e glicemias persistentemente altas | Maior variabilidade, perfusão instável, necessidade de controle frequente | Utilizar protocolo institucional de insulina intravenosa quando indicado, monitorando glicose e eletrólitos |
+| Paciente estável comendo regularmente e usando múltiplas doses de insulina | Necessidade basal e relacionada a refeições | Insulina basal + componente prandial e correções individualizadas |
+| Paciente em jejum com DM1 ou deficiência absoluta de insulina | Risco de cetogênese mesmo sem refeições | Manter cobertura basal efetiva ou infusão de insulina conforme protocolo; omitir apenas bolus fixo alimentar enquanto não come |
+
+#### Basal, prandial e correção são componentes diferentes
+
+**Insulina basal** cobre produção hepática de glicose e necessidade contínua de insulina, inclusive durante a noite e o jejum. **Insulina prandial** cobre a entrada de nutrientes após refeições; sua dose deve acompanhar a quantidade de carboidratos, a ingestão real e o esquema institucional. **Insulina de correção** reduz uma glicemia medida acima da faixa-alvo, mas não substitui de maneira sustentada a insulina fisiologicamente necessária. O aluno deve reconhecer o erro de manter apenas uma “escala móvel” reativa em pessoa com hiperglicemia persistente ou DM1, porque o tratamento só começa depois que a glicemia se eleva e não contém componente basal.
+
+No paciente não crítico com alimentação razoavelmente previsível, frequentemente se utiliza **basal-bolus com correções**. Se não há ingestão oral ou ela é errática, a abordagem **basal-plus** (basal + correção, sem bolus alimentar fixo em jejum) costuma ser mais segura; voltar a incluir cobertura nutricional quando a dieta retorna. Em casos leves e muito selecionados de DM2, outras opções podem ser consideradas, mas sempre sob protocolo; **DM1, LADA insulinopênico e diabetes após pancreatectomia exigem reposição basal**. O ajuste de dose depende de peso, uso anterior, função renal, estado nutricional e risco de hipoglicemia — não existe uma prescrição única segura para todas as internações.
+
+**Ponto de segurança:** se houver dieta enteral contínua ou nutrição parenteral, a necessidade insulinêmica acompanha o aporte contínuo de carboidratos. Suspender inadvertidamente a dieta depois de administrar dose nutricional aumenta risco de hipoglicemia. A equipe precisa associar prescrição de insulina, horários da dieta, controle capilar e plano de contingência para interrupção da nutrição.
+
+### 8.6 Plano perioperatório em cinco decisões — da consulta pré-anestésica à alta
+
+#### 1. Antes da cirurgia: identificar riscos, não apenas ler a HbA1c
+
+Confirmar subtipo do diabetes (DM1, LADA, DM2, pós-pancreatectomia), esquema por princípio ativo e horário, hipoglicemias prévias, função renal, história de CAD, uso de bomba/sensor e expectativa de duração do jejum. Em cirurgia eletiva, a ADA e a diretriz conjunta **SBD/SBA/ABESO 2026** recomendam procurar uma **HbA1c abaixo de 8%** nos três meses anteriores quando possível e apropriado. Não se deve considerar esse número uma autorização ou proibição absoluta para qualquer cirurgia: avaliar urgência, benefício, possibilidade de otimização, sintomas metabólicos e risco individual. Na diretriz brasileira, programar procedimentos eletivos preferencialmente cedo reduz tempo de jejum.
+
+#### 2. Ajustar medicações sem confundir classes
+
+| Grupo terapêutico | Questão perioperatória | Direção geral — individualizar conforme SBD/SBA/ABESO 2026 |
+| --- | --- | --- |
+| Metformina | Jejum, instabilidade hemodinâmica, função renal e risco de hipóxia | Em cirurgia eletiva, geralmente considerar uso até a véspera e suspender no dia; reinício depende de ingestão, perfusão e função renal estáveis |
+| Sulfonilureias e glinidas | Estimulam insulina mesmo sem comida, com risco de hipoglicemia | Diretriz brasileira orienta suspender secretagogos 24 horas antes; exceções por meia-vida prolongada requerem prazo próprio |
+| Inibidores SGLT2 (empagliflozina, dapagliflozina etc.) | Jejum e estresse podem provocar **CAD euglicêmica** | Suspender com antecedência de **3–4 dias** antes de cirurgia de grande porte ou procedimento invasivo com redução calórica; cirurgia pequena e outros cenários exigem avaliação individual |
+| Agonistas GLP-1 e coagonistas GIP/GLP-1 | Retardo do esvaziamento gástrico e conteúdo residual, especialmente com vômitos e aumento recente de dose | Diretriz brasileira permite manter esquema estável por mais de 12 semanas e sem risco relevante de aspiração; se há fatores de risco ou titulação, considerar interrupção individualizada (geralmente 1 dia nos de curta ação ou 7 dias nos de longa ação), preparo e avaliação anestésica |
+| Insulina basal | Evita deficiência insulínica durante o jejum, mas pode causar hipoglicemia se superdosada | **Não suspender completamente em DM1/LADA insulinopênico**; avaliar manutenção ou reduções conforme tipo de basal, proporção na dose diária total, função renal e protocolo |
+| Insulina prandial de horário fixo | Foi destinada à refeição que não ocorrerá | Suspender bolus alimentar fixo durante jejum; usar correção sob monitorização quando indicada, mantendo componente basal |
+
+Para iSGLT2, o intervalo usual de **três dias** cobre agentes como empagliflozina, dapagliflozina e canagliflozina; em protocolos internacionais, **ertugliflozina** requer frequentemente **quatro dias**. A recomendação conjunta brasileira é formulada como 3–4 dias no cenário descrito. Em cirurgia emergencial não é possível cumprir antecedência: suspender o agente ao reconhecer o risco e vigiar cetonemia/acidose quando clinicamente indicado. **Glicemia de 160–220 mg/dL não exclui CAD euglicêmica**. O reinício não ocorre automaticamente na primeira refeição: verificar recuperação hemodinâmica, ingestão adequada, resolução de cetose e risco de nova desidratação.
+
+A regra para **GLP-1/GIP-GLP-1** é mais recente e dependente do risco do que antigas instruções de suspender todos os usuários por uma semana. Avaliar sintomas gastrointestinais, escalonamento recente, gastroparesia, dieta e técnica anestésica. Na SBD/SBA/ABESO 2026, há estratégias de preparo alimentar e possibilidade de ultrassonografia gástrica no contexto adequado. Não atribuir segurança à medicação apenas pelo número de dias desde a última dose, nem suspender indiscriminadamente todo paciente bem adaptado. A avaliação é feita com a equipe de anestesia.
+
+#### 3. Durante o jejum: insulina basal preservada, prandial ajustada
+
+Pessoa com DM1 não pode ficar sem insulina efetiva apenas porque fará jejum. A diretriz brasileira ressalta que, em pessoas com deficiência de insulina, o esquema deve manter basal ou insulina intravenosa contínua; se houver interrupção de bomba subcutânea, **um plano alternativo precisa começar antes da retirada**, respeitando sobreposição do início de ação. Em quem utiliza NPH e concentra a maior parte da dose diária na manhã, pode ser apropriada redução expressiva da dose matinal; em usuários de análogos basais, ajustes diferem por tipo e proporção basal. **Não ensinar “metade da basal para todos”**: dose e momento são distintos para NPH, glargina, degludeca e para quem usa somente pequenas doses basais.
+
+A glicemia precisa ser medida de forma programada. A ADA 2026 recomenda monitorar ao menos **a cada 2–4 horas** em jejum perioperatório; a diretriz brasileira recomenda **controle intraoperatório a cada hora** em cirurgias de médio e grande porte. Essas medidas não são incompatíveis: referem-se a cenários e momentos diferentes, e a situação hemodinâmica ou infusão IV pode requerer intervalos ainda menores conforme protocolo. Sensor de glicose pode complementar, mas **não deve ser a única fonte para decisão intraoperatória**, devido a interferências e discrepâncias durante alterações de perfusão.
+
+#### 4. Pós-operatório: ajustar à dieta que realmente foi ingerida
+
+A meta geralmente é **100–180 mg/dL** no contexto perioperatório não crítico, com proteção contra níveis abaixo de 70 mg/dL. Pessoas em UTI têm metas próprias, frequentemente 140–180 mg/dL. Quando ainda há náusea, vômito ou jejum, não reintroduzir dose alimentar fixa esperando uma refeição que não aconteceu. Ao recuperar via oral e estabilidade, reconstruir o esquema de manutenção a partir de alimentação, necessidades atuais e doses do hospital. Se foi usada infusão intravenosa, **administrar insulina basal subcutânea antes de desligar a infusão, com sobreposição de pelo menos duas horas conforme diretriz brasileira**, evitando janela sem ação. Não confundir suspensão da bomba venosa após aplicação com garantia de que qualquer insulina SC já começou a agir em todos os pacientes; coordenar equipe e protocolo institucional.
+
+#### 5. Na alta: prevenir o “apagão” entre hospital e domicílio
+
+Reconciliar medicamentos, explicando quais foram interrompidos temporariamente e **quem autoriza o reinício**. Documentar se o paciente saiu com outra dose de insulina, se recebeu corticosteroide, mudanças na função renal, educação sobre hipoglicemia, insumos e plano de monitorização. Informar sinais de CAD euglicêmica, especialmente se iSGLT2 puder ser reiniciado. A pessoa deve receber lista clara de dispositivos, horários e acesso ao retorno; não apenas uma tabela de alta com fármacos trocados sem treinamento.
+
+### 8.7 O diagnóstico que a glicemia moderada esconde: CAD euglicêmica
+
+Inibidores SGLT2 aumentam a excreção renal de glicose. Sob redução de ingestão calórica, jejum prolongado, infecção, cirurgia ou queda de oferta de insulina, pode ocorrer **elevação relativa de glucagon, lipólise e produção hepática de corpos cetônicos** sem o grau usual de hiperglicemia. A CAD euglicêmica pode apresentar glicemia **abaixo de 200 mg/dL ou não muito elevada**, com **cetonemia importante e acidose metabólica**. A ausência de glicemia de 300 ou 400 mg/dL não permite descartá-la.
+
+**Sinais de alerta:** náuseas, vômitos, dor abdominal, mal-estar importante, taquipneia/respiração profunda e desidratação durante uso recente de iSGLT2 ou suspensão de insulina. Solicitar, conforme gravidade, gasometria (venosa é frequentemente suficiente para o estado ácido-base), eletrólitos com atenção a potássio, cálculo de ânion gap, função renal e **beta-hidroxibutirato no sangue**, preferível à interpretação isolada de cetonúria. Investigar simultaneamente lactato, sepse, jejum prolongado, intoxicações e outras causas de acidose de alto ânion gap.
+
+A abordagem é de **emergência metabólica**, não simplesmente “corrigir com insulina SC e mandar para casa”. Requer interromper iSGLT2, restaurar perfusão e água corporal, controlar eletrólitos e fornecer insulina para inibir cetogênese sob protocolo de CAD. Como a glicose não está tão elevada, pode ser necessário **associar dextrose precocemente** para permitir manter a insulina até resolver a cetose e acidose sem causar hipoglicemia. Potássio sérico baixo antes de insulinização demanda correção específica pelo risco de arritmia; avaliar protocolo institucional e gravidade. A melhora isolada da glicemia não marca resolução de CAD: acompanhar cetonemia e equilíbrio ácido-base.
+
+**Diferença conceitual:** cetose de jejum sem acidose clinicamente significativa, cetoacidose alcoólica e CAD euglicêmica compartilham corpos cetônicos, mas têm história, estado ácido-base e terapêuticas distintas. Um usuário de iSGLT2 com dor abdominal e bicarbonato reduzido não deve ser classificado como “gastroenterite com glicose normal” sem avaliar cetonas.
+
+### 8.8 Hipoglicemia no hospital: tratar, explicar e evitar recorrência
+
+No hospital, **glicose <70 mg/dL** exige intervenção e revisão do plano; abaixo de **54 mg/dL** indica hipoglicemia clinicamente significativa. A classificação de hipoglicemia grave não depende de um número isolado, mas de **alteração que exige ajuda de outra pessoa**. Sintomas autonômicos incluem tremores, palpitações, sudorese e fome; neuroglicopenia produz confusão, comportamento anormal, convulsão e coma. Em idosos ou usuários de betabloqueadores, sinais clássicos podem ser pouco perceptíveis. Efeitos da insulina e de secretagogos podem persistir após uma primeira correção.
+
+**A primeira decisão é clínica:** o paciente está desperto, protege a via aérea e consegue engolir? Se sim, administrar carboidrato de ação rápida conforme protocolo, usualmente em torno de **15 g** para hipoglicemia leve/moderada, medir novamente em **15 minutos** e repetir se necessário; depois garantir alimentação ou suporte compatível com insulina ainda ativa. Se houver rebaixamento, convulsão ou incapacidade de deglutir, **não oferecer líquidos por boca**: requer tratamento parenteral, frequentemente glicose IV e, em alguns cenários, glucagon, com monitorização e investigação da causa. Corrigir hipoglicemia não significa dispensar observação: sulfonilureias prolongadas, insuficiência renal, mudança de dieta e excesso de basal podem produzir recorrência.
+
+| Evento no setor | Por que ocorreu | O que corrigir no processo |
+| --- | --- | --- |
+| Refeição suspensa após bolus prandial | Insulina administrada sem carboidrato planejado | Sincronizar refeição e dose, combinar plano quando dieta for interrompida |
+| Glicemia baixa pela manhã, repetidamente | Basal excessiva para necessidade atual, redução de ingesta ou função renal | Revisar componente basal e fatores associados; não apenas oferecer suco todos os dias |
+| Hipoglicemia após alta dose de sulfonilureia em idoso com DRC | Secretagogo e depuração alterada | Rever indicação, dose, suspensão e necessidade de vigilância prolongada |
+| Paciente com DM1 em jejum e hipoglicemia | Proporção basal ou aporte inadequado | Corrigir glicose e ajustar basal de modo supervisionado, **sem deixar deficiência absoluta de insulina** |
+| Confusão em pessoa hospitalizada sem DM conhecido | Hipoglicemia por doença grave/medicação, além de outros diferenciais | Medir glicose imediatamente, tratar e investigar causa primária |
+
+**Regra de segurança da ADA 2026:** cada episódio abaixo de 70 mg/dL deve ser documentado e levar à revisão do esquema para evitar repetição. A mudança não é necessariamente “suspender toda insulina”: identificar componente responsável, horário, refeições, função renal e tempo de ação do fármaco.
+
+### 8.9 Microalgoritmo de decisão integrado — estudante e serviço
+
+1. **Identifique o fenótipo e o cenário:** DM1/LADA insulinopênico, DM2 ou diabetes pancreatogênico? Paciente crítico ou enfermaria? Cirurgia eletiva ou urgência? Alimenta-se, está em jejum ou recebe dieta contínua?
+2. **Busque risco imediato:** consciência, circulação, hipoglicemia, cetonemia/acidose sugestiva, alteração de potássio e intercorrência infecciosa. Se existe emergência metabólica, acionar protocolo e equipe responsável antes de decidir ajustes ambulatoriais.
+3. **Defina a meta conforme setor:** geralmente 100–180 mg/dL para enfermaria/perioperatório e 140–180 mg/dL para UTI, com individualização e prevenção de hipoglicemia.
+4. **Preserve insulina vital:** nunca deixar paciente com deficiência absoluta sem componente basal efetivo; suspender bolus alimentar fixo enquanto não há refeição, mantendo monitorização e correções conforme protocolo.
+5. **Reconcilie fármacos e dispositivos:** iSGLT2 exige previsão de interrupção e critérios de reinício; GLP-1/GIP-GLP-1 depende do risco de aspiração e fase de escalonamento; bombas e sensores requerem equipe treinada e planos alternativos.
+6. **Reavalie a cada mudança clínica:** início de corticoide, alteração da função renal, interrupção da dieta, pós-operatório e transferência de unidade mudam necessidades de insulina.
+7. **Planeje a alta antes de acontecer:** dose real a ser usada, treinamento, acesso, sinais de hipoglicemia/CAD e retorno. Uma alta segura é parte do tratamento glicêmico.
+
+**Pulo do Gato:** a pergunta mais importante não é “qual número a glicemia mostrou?”, mas **“esta pessoa tem insulina basal suficiente e cobertura coerente com o aporte nutricional e o nível de estresse?”**. A prova frequentemente testa a diferença entre insulina basal e prandial, ou entre um paciente relativamente euglicêmico por ação da gliflozina e outro realmente sem cetoacidose.
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Poliúria, vômitos e respiração profunda em adulto jovem
@@ -658,6 +754,19 @@ Mulher de 39 anos, diagnosticada com diabetes há onze meses, emagrecimento não
 ### Caso 16 — Hiperglicemia leve e estável desde a adolescência
 
 Homem de 24 anos, assintomático, glicemia de jejum entre 112 e 138 mg/dL desde os 15 anos, valores semelhantes em sua mãe e avó, sem obesidade ou sinais de resistência insulínica. HbA1c pouco elevada, sem tendência rápida de progressão, autoanticorpos de ilhotas não detectados. **Hipótese:** diabetes monogênico, especialmente GCK-MODY, entre os diferenciais. **Raciocínio:** estabilidade por anos e três gerações são pistas, mas não confirmam uma variante. **Exames:** confirmar histórico/glicemias, revisar causas de resultados discordantes e encaminhar para avaliação de teste genético apropriado. **Conduta:** não intensificar de maneira reflexa para insulina antes de esclarecer etiologia em pessoa estável; individualizar prevenção, orientação familiar e seguimento após diagnóstico. **Por que importa:** GCK-MODY confirmado costuma ter implicações terapêuticas diferentes de HNF1A/HNF4A-MODY e DM1; gestação é exceção importante e precisa de avaliação própria.
+
+
+### Caso 17 — O jejum perioperatório não autoriza retirar toda a insulina
+
+Homem de 28 anos, DM1 em esquema basal-bolus, agendado para cirurgia abdominal eletiva. Na admissão cirúrgica a equipe sugere suspender todas as doses porque ficará sem alimento desde a madrugada. O paciente não tem sinais de CAD e a glicemia está em torno de 130 mg/dL. **Hipótese:** risco iatrogênico de deficiência absoluta de insulina durante jejum. **Raciocínio:** insulina basal inibe cetogênese e limita produção hepática de glicose mesmo quando não existe refeição; o bolus prandial se relaciona com os carboidratos ingeridos. **Exames:** glicemia monitorada segundo porte e duração do procedimento; checar cetonas se houver sintomas, interrupção de basal ou alteração ácido-base. **Conduta:** assegurar manutenção de cobertura basal SC ajustada ou insulina IV conforme protocolo, omitir doses prandiais fixas para refeições não ingeridas, monitorar e coordenar anestesia/endocrinologia. **Por que importa:** a glicemia aparentemente normal na admissão não protege contra CAD causada por lacuna de insulina basal.
+
+### Caso 18 — Náuseas pós-operatórias, gliflozina e glicemia de 184 mg/dL
+
+Mulher de 57 anos com DM2 utiliza empagliflozina, foi submetida a procedimento após suspensão insuficiente da medicação e apresenta vômitos, dor abdominal, taquipneia e prostração. A glicose capilar é 184 mg/dL; gasometria revela acidose metabólica com aumento do ânion gap, e beta-hidroxibutirato está elevado. **Hipótese:** CAD euglicêmica associada a iSGLT2 e estresse perioperatório. **Raciocínio:** glicosúria farmacológica impede hiperglicemia intensa, mas não a cetogênese; náuseas e acidose não devem ser atribuídas automaticamente à anestesia. **Exames:** gasometria, eletrólitos com potássio, cetonemia seriada, função renal, avaliação de volume e busca de precipitantes. **Conduta:** emergência hospitalar, suspender iSGLT2, reposição volêmica, insulina e dextrose conforme protocolo de CAD com vigilância de potássio; adiar reinício até resolução e ingestão adequada, reavaliando riscos. **Por que importa:** é possível ter CAD grave com glicemia que não acionaria o alarme de uma hiperglicemia extrema.
+
+### Caso 19 — Hipoglicemia repetida após interrupção de dieta enteral
+
+Paciente de 73 anos, internado por infecção, com DM2 insulinizado e DRC, recebia dieta enteral contínua e cobertura nutricional de insulina. A dieta foi interrompida por obstrução de sonda; duas horas depois desenvolve confusão e glicemia de 48 mg/dL. **Hipótese:** hipoglicemia clinicamente significativa por desencontro entre aporte nutricional e insulina administrada, agravado por função renal comprometida. **Raciocínio:** o episódio é neuroglicopênico e requer tratamento imediato; a causa será recorrente se a prescrição e a comunicação entre equipes não forem corrigidas. **Exames:** glicose de controle após tratamento, revisão da função renal e da insulina recebida, observação para repetição. **Conduta:** não ofertar líquido oral a paciente confuso sem capacidade de deglutir; tratar com glicose IV conforme protocolo e proteger via aérea, reorganizar cobertura nutricional e plano para interrupções de dieta. **Por que importa:** tratar uma leitura isolada não previne nova hipoglicemia se a falha de processo permanecer.
 
 ## 10. Questões autorais comentadas
 
@@ -823,6 +932,40 @@ D) O diagnóstico por gene é desnecessário, porque nenhuma forma de MODY muda 
 
 **Gabarito: C.** **A:** não distingue herança monogênica de predisposição familiar poligênica. **B:** GCK tende a produzir hiperglicemia leve e estável, enquanto HNF1A pode apresentar defeito progressivo com resposta a sulfonilureias em casos selecionados. **C:** estabelece probabilidade e confirmação adequadas. **D:** algumas variantes têm implicações farmacológicas e extrapancreáticas relevantes. **Mini-revisão:** MODY não é um tratamento; é grupo heterogêneo de etiologias genéticas.
 
+
+### Questão 26 — Insulina basal em DM1 durante jejum
+
+Adulto com DM1 ficará em jejum para cirurgia eletiva. Qual conduta é mais segura?
+
+A) Suspender insulina basal e prandial até voltar a comer, já que a glicemia de entrada está normal.
+B) Manter cobertura basal efetiva, individualizar ajuste da dose e suspender bolus prandiais fixos para refeições omitidas.
+C) Utilizar exclusivamente escala de correção reativa, sem componente basal.
+D) Trocar automaticamente para sulfonilureia durante o jejum.
+
+**Gabarito: B.** **A:** favorece cetogênese e CAD, mesmo com glicemia inicialmente normal. **B:** preserva necessidade fisiológica basal e evita insulina alimentar sem alimento. **C:** escala isolada não supre insulinopenia absoluta. **D:** secretagogos não substituem insulina no DM1 e podem causar hipoglicemia em jejum. **Mini-revisão:** o ajuste de basal depende de tipo de insulina, proporção na dose total, função renal e protocolo; não existe redução universal segura.
+
+### Questão 27 — iSGLT2 e cetoacidose pós-operatória com glicose não muito elevada
+
+Paciente em uso de dapagliflozina evolui no pós-operatório com dor abdominal, vômitos, respiração profunda, glicemia de 175 mg/dL e acidose metabólica. Qual é a melhor interpretação?
+
+A) A glicemia abaixo de 200 mg/dL exclui CAD.
+B) A principal investigação é apenas hemoglobina glicada, porque o quadro é crônico.
+C) Deve-se avaliar cetonemia e ânion gap imediatamente, pois o uso de iSGLT2 e o jejum podem precipitar CAD euglicêmica.
+D) Manter a gliflozina durante a acidose acelerará a recuperação.
+
+**Gabarito: C.** **A:** a glicosúria farmacológica dissocia glicemia e cetogênese. **B:** HbA1c não esclarece emergência metabólica de início agudo. **C:** identifica a hipótese e a investigação que alteram o manejo de urgência. **D:** o fármaco deve ser suspenso no contexto de suspeita de CAD. **Mini-revisão:** corrigir cetose/acidose, fluidos, eletrólitos e fornecer insulina com dextrose quando necessário são diferentes de tratar apenas uma glicemia alta.
+
+### Questão 28 — Internação, meta glicêmica e dieta interrompida
+
+Homem com DM2 internado por pneumonia recebia dieta enteral contínua e insulina nutricional; a dieta foi interrompida e ele apresentou hipoglicemia. Sobre o cuidado hospitalar, assinale a correta.
+
+A) Em pacientes não críticos, a meta geral obrigatória é 80–110 mg/dL independentemente do risco.
+B) A insulina de correção isolada é a melhor estratégia para toda hiperglicemia persistente.
+C) A equipe deve associar a cobertura insulinêmica à dieta efetivamente recebida, tratar imediatamente hipoglicemia e revisar o plano para evitar recorrência.
+D) Depois de corrigir uma glicemia baixa, nenhuma revisão da prescrição é necessária.
+
+**Gabarito: C.** **A:** metas excessivamente restritas aumentam hipoglicemia; em enfermaria o alvo usual é 100–180 mg/dL quando seguro. **B:** correções isoladas não substituem um esquema programado quando há persistência ou insulinopenia. **C:** une segurança imediata e prevenção por análise de causa. **D:** a ADA 2026 recomenda revisão do plano após glicemia abaixo de 70 mg/dL. **Mini-revisão:** a dose nutricional sem nutrição correspondente pode ser perigosa; priorize comunicação entre enfermagem, nutrição e prescritor.
+
 ## Referências essenciais
 
 1. SBD 2026 — Manejo do DM2. https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/
@@ -832,3 +975,8 @@ D) O diagnóstico por gene é desnecessário, porque nenhuma forma de MODY muda 
 
 5. Sociedade Brasileira de Diabetes — Classificação do diabetes (Diretriz, edição 2026). https://diretriz.diabetes.org.br/classificacao-do-diabetes/
 6. American Diabetes Association — Diagnosis and Classification of Diabetes: Standards of Care in Diabetes 2026. https://doi.org/10.2337/dc26-s002
+
+7. SBD, SBA e ABESO — Rastreamento e controle da hiperglicemia no perioperatório (Diretriz SBD 2026). https://diretriz.diabetes.org.br/rastreamento-e-controle-da-hiperglicemia-no-perioperatorio/
+8. SBD — Manejo da hiperglicemia hospitalar em pacientes não-críticos (Diretriz 2026). https://diretriz.diabetes.org.br/manejo-da-hiperglicemia-hospitalar-em-pacientes-nao-criticos/
+9. SBD — Hiperglicemia hospitalar no paciente crítico (Diretriz 2026). https://diretriz.diabetes.org.br/hiperglicemia-hospitalar-no-paciente-critico/
+10. ADA — Diabetes Care in the Hospital, Standards of Care in Diabetes 2026. https://doi.org/10.2337/dc26-s016
