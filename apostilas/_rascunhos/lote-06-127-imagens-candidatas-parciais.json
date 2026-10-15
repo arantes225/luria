@@ -1,0 +1,116 @@
+{
+  "editorial_status": "CANDIDATAS_NAO_APROVADAS",
+  "source_policy": "Conferir arquivo original, autoria, crédito, licença e ShareAlike (quando CC BY-SA), acurácia visual e ausência de identificação; preparar WebP 100–120 KB somente após escolha e aprovação Admin. NENHUMA figura inserida no livro.",
+  "candidates": [
+    {
+      "id": 1,
+      "topic": "Úlcera gástrica sangrante — endoscopia",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bleeding_gastric_ulcer.png",
+      "author": "Jeremias",
+      "license_as_stated": "CC BY-SA 3.0",
+      "target_chapter": "8–9",
+      "proposed_caption": "Diferenciar sangramento ativo do leito ulceroso; confirmar Forrest exato em revisão endoscópica",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 2,
+      "topic": "Úlcera gástrica com vaso visível",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ulcer_Visible_Vessel.jpg",
+      "author": "Jeremias",
+      "license_as_stated": "CC BY-SA 3.0",
+      "target_chapter": "8",
+      "proposed_caption": "Ilustrar Forrest IIa, sem afirmar localização arterial além do que a imagem demonstra",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 3,
+      "topic": "Úlcera gástrica profunda antral",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Deep_gastric_ulcer.png",
+      "author": "Samir",
+      "license_as_stated": "CC BY-SA 3.0 (também GFDL)",
+      "target_chapter": "8",
+      "proposed_caption": "Mostrar profundidade da úlcera; não classificar como sangrante se não houver estigma",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 4,
+      "topic": "Úlceras do antro gástrico",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastric_Ulcer_Antrum.jpg",
+      "author": "Med_Chaos",
+      "license_as_stated": "Domínio público, conforme Commons",
+      "target_chapter": "8",
+      "proposed_caption": "Comparar múltiplas úlceras não necessariamente com sangramento ativo",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 5,
+      "topic": "Variz esofágica sangrante",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bleeding_esophageal_varices.png",
+      "author": "Jeremias",
+      "license_as_stated": "CC BY-SA 4.0",
+      "target_chapter": "13",
+      "proposed_caption": "Mostrar ruptura varicosa em endoscopia",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 6,
+      "topic": "Variz esofágica com red wale",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Esophageal_varices_-_wale.jpg",
+      "author": "Samir",
+      "license_as_stated": "Domínio público, conforme Commons",
+      "target_chapter": "14",
+      "proposed_caption": "Demonstrar sinal vermelho de risco na variz",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 7,
+      "topic": "Úlceras pós-ligadura elástica",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Esophageal_varices_-_post_banding.jpg",
+      "author": "Samir",
+      "license_as_stated": "Domínio público, conforme Commons",
+      "target_chapter": "14",
+      "proposed_caption": "Mostrar aparência pós-tratamento endoscópico, não confundir com variz ativa",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 8,
+      "topic": "Ligadura elástica endoscópica",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gummibandligatur.jpg",
+      "author": "J. Guntau",
+      "license_as_stated": "Uso livre com modificação/comercial conforme declaração do titular no Commons",
+      "target_chapter": "14",
+      "proposed_caption": "Exemplificar anel elástico; confirmar informações editoriais/qualidade visual",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 9,
+      "topic": "Diagrama anatômico de varizes",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Esophageal-varices-hariadhi.svg",
+      "author": "Hariadhi",
+      "license_as_stated": "CC BY-SA 4.0",
+      "target_chapter": "2,13",
+      "proposed_caption": "Explicar mecanismo portal, sem substituir imagem real de EDA",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    },
+    {
+      "id": 10,
+      "topic": "Diagrama de úlcera gástrica",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastric_Ulcer.png",
+      "author": "BruceBlaus",
+      "license_as_stated": "CC BY-SA 4.0",
+      "target_chapter": "8",
+      "proposed_caption": "Explicar anatomia/camadas; não representar classificação Forrest",
+      "status": "PAGINA_E_LICENCA_LOCALIZADAS_PENDENTE_QUALIDADE_CLINICA_WEBP_ADMIN"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "topic": "Endoscopic Banding for Esophageal Varices.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Endoscopic_Banding_for_Esophageal_Varices.png",
+      "reason": "Arquivo apresenta marca d'água visível; não usar diretamente sem verificar alternativa adequada e direitos"
+    }
+  ],
+  "selected_for_publication": [],
+  "clinical_review": "PENDENTE",
+  "admin_approval": "PENDENTE"
+}
