@@ -509,3 +509,171 @@ Em pessoa com asma, pólipos nasais e reação respiratória a AAS/AINE, pensar 
 
 Ansiedade pode intensificar percepção de dispneia e coexistir com doença respiratória verdadeira. O erro é dizer ao paciente “é só ansiedade” e deixar de investigar broncoconstrição; o outro erro é intensificar CI indefinidamente para um componente predominante de hiperventilação/disfunção respiratória sem evidência de obstrução. A avaliação deve combinar sintomas, padrão, função, contexto e resposta a terapia. Educação e abordagem da saúde mental podem reduzir utilização repetida de urgência quando usadas de forma respeitosa e integrada.
 
+
+
+## 25. Casos de integração clínica avançada
+
+Os quatro casos da seção 10 são vinhetas introdutórias e permanecem preservados. A segunda bateria aprofunda situações que exigem interpretação numérica, comparação normativa e decisão por risco. Os casos são fictícios e didáticos.
+
+### Caso 5 — Criança com resposta broncodilatadora diferente entre duas diretrizes
+
+**Apresentação:** menino de nove anos, com crises de tosse e sibilância após exercício e resfriados, desperta por tosse em média duas vezes por mês. Não fuma, mas vive com familiar fumante. Espirometria tecnicamente aceitável: VEF₁ basal 1,10 L, pós-salbutamol 1,25 L, previsto 1,75 L.
+
+**Raciocínio:** sintomas variáveis são compatíveis com asma, mas é preciso evidência funcional. Ganho absoluto de VEF₁ é 150 mL. Em relação ao basal: 0,15/1,10 × 100 = **13,6%**. Em relação ao previsto: 0,15/1,75 × 100 = **8,6%**. O PCDT Brasil 2026 enuncia resposta pediátrica ≥12% do basal; a GINA 2026, ≥12% do previsto. Os critérios não dão o mesmo resultado neste exemplo. Essa diferença não autoriza escolher números para “provar asma” arbitrariamente: exige verificar qual diretriz/protocolo rege a interpretação, revisar qualidade da manobra e considerar repetição/outros testes.
+
+**Diferenciais:** broncoconstrição induzida pelo exercício, disfunção laríngea, tosse persistente por vias aéreas superiores ou infecção recorrente. Investigar sintomas entre exercícios, padrão noturno e resposta a tratamento, alergia/ambiente e ausculta.
+
+**Conduta e seguimento:** orientar eliminação de fumaça do ambiente, discutir tratamento contendo CI conforme faixa etária, gravidade e disponibilidade nacional, demonstrar inalador/espaçador, registrar controle e reavaliar função/sintomas. Se dúvida diagnóstica persistir, repetir teste em período sintomático ou empregar monitoramento de PFE/avaliação especializada.
+
+**Por que importa:** uma questão numérica pediátrica pode induzir erro se o estudante não souber **qual denominador** corresponde à diretriz citada.
+
+### Caso 6 — Resgate excessivo e “asma leve”
+
+**Apresentação:** mulher de 32 anos afirma ter asma leve porque quase nunca falta ao trabalho. Usa salbutamol diariamente, às vezes em muitas inalações durante corrida e ao dormir. Recebeu prednisona em duas crises no último ano, mas não usa CI. O inalador é o único medicamento que consegue comprar, e sua espirometria anterior está indisponível.
+
+**Raciocínio:** sintomas e uso de SABA sugerem controle inadequado, e necessidade repetida de OCS evidencia risco. Chamar de leve por trabalhar regularmente ignora limitação disfarçada e risco de exacerbação. Além disso, não há confirmação objetiva documentada do diagnóstico. A ausência de controlador não é “falha moral da paciente”, mas barreira de acesso a ser corrigida.
+
+**Exames:** recuperar ou realizar espirometria com broncodilatador quando seguro, avaliar exposições, uso de medicamentos, risco de gravidez e outros diferenciais; obter histórico de dispensações e internações. ACT pode ajudar a acompanhar controle, mas risco futuro precisa ser analisado separadamente.
+
+**Conduta:** instituir esquema contendo CI compatível com PCDT/apresentação disponível — idealmente estratégia anti-inflamatória de alívio quando elegível —, observar técnica, confirmar acesso na rede e entregar plano escrito. Em crises recorrentes, retorno precoce após ajuste e considerar avaliação especializada. **Não** simplesmente aumentar quantidade de SABA.
+
+**Por que importa:** distingue gravidade de sintomas observados, risco futuro e disponibilidade real de tratamento.
+
+### Caso 7 — Exacerbação com tórax silencioso e PaCO₂ “normal”
+
+**Apresentação:** homem de 48 anos chega com dispneia intensa após infecção viral. RR 36, FC 132, usa musculatura acessória e fala apenas palavras. Após tratamento inicial, fica sonolento e o murmúrio vesicular se reduz acentuadamente. Gasometria, obtida por necessidade clínica durante preparação de suporte, mostra PaCO₂ 42 mmHg, pH 7,31 e hipoxemia apesar de oxigênio.
+
+**Interpretação:** não se deve comparar PaCO₂ 42 a uma faixa laboratorial de referência como se fosse tranquilizador. Em paciente que vinha hiperventilando, **normalização ou elevação da PaCO₂ associada à exaustão** sinaliza risco de ventilação alveolar insuficiente. Tórax silencioso pode refletir obstrução crítica do fluxo, não melhora. Acidemia pode ter componentes metabólicos/respiratórios que requerem cálculo e contexto; o reconhecimento é clínico.
+
+**Diferenciais:** pneumotórax (se piora súbita/asimetria), anafilaxia (exposição e repercussão sistêmica), corpo estranho (início abrupto focal), edema pulmonar. A presença de sibilos prévios e gatilho viral favorece asma, mas não descarta lesões associadas.
+
+**Conduta:** emergência/UTI, monitorização e suporte de via aérea por equipe competente, broncodilatador intensivo, ipratrópio, corticoide sistêmico e oxigênio titulado conforme quadro. Magnésio pode ser considerado em gravidade selecionada e falha de resposta. Se ventilação invasiva necessária, considerar aprisionamento aéreo e risco de hipotensão com pressão positiva; não tentar “normalizar CO₂” com frequência respiratória inadequadamente elevada.
+
+**Por que importa:** é prova clássica de mecanismo fisiopatológico: **menos som + pior consciência pode ser piora**, não resposta.
+
+### Caso 8 — Asma ou insuficiência cardíaca no idoso?
+
+**Apresentação:** mulher de 73 anos com história de hipertensão e tabagismo remoto relata falta de ar progressiva, acorda à noite e usa broncodilatador emprestado. Tem edema maleolar, turgência jugular discreta e crepitações basais. Em outros atendimentos recebeu diagnóstico de “bronquite asmática” sem espirometria.
+
+**Hipóteses:** insuficiência cardíaca com congestão, DPOC, asma e coexistência de doenças. Sibilos não são específicos. O padrão progressivo, edema e crepitações fazem cardiopatia ganhar probabilidade; contudo, história de tabagismo e sintomas noturnos não resolvem diagnóstico sem testes.
+
+**Investigação:** avaliação de estabilidade, ECG, radiografia/ultrassonografia conforme indicação, biomarcadores cardíacos quando úteis, ecocardiografia e posterior espirometria após estabilização. Não forçar manobras espirométricas em paciente agudamente descompensada se isso atrasa cuidado. Medicamentos cardiovasculares, função renal e comorbidades mudam manejo.
+
+**Conduta:** tratar a causa aguda mais provável depois de avaliação, evitando séries de salbutamol como único tratamento de edema pulmonar. Se asma concomitante for confirmada, instituir regime contendo CI e coordenar manejo com cardiologia/pneumologia.
+
+**Por que importa:** ensina que “chiado” é sinal físico com diferencial amplo, não diagnóstico de asma.
+
+### Caso 9 — Asma ocupacional: exame normal durante férias
+
+**Apresentação:** enfermeira de 34 anos passou a ter tosse, aperto torácico e chiado em dias de trabalho em setor onde utiliza repetidamente desinfetantes irritantes. Melhora em fins de semana longos e quase desaparece em férias. Espirometria realizada após duas semanas afastada é normal. Não há história relevante de asma na infância.
+
+**Hipótese:** asma ocupacional ou asma agravada pelo trabalho. A temporalidade é forte pista, mas não comprova sensibilização ou causalidade apenas por si só; exposição a irritantes também pode provocar sintomas não asmáticos. Considerar disfunção laríngea, rinite, ansiedade com hiperventilação e doenças respiratórias adquiridas.
+
+**Investigação:** história ocupacional detalhada, produto, ventilação, EPIs e outros colegas afetados; medidas seriadas de PFE em trabalho e folgas com técnica padronizada, testes objetivos/broncorresponsividade e consulta com pneumologia/medicina do trabalho. Documento sem exposição não prova ausência de doença.
+
+**Conduta:** tratamento contendo CI conforme confirmação/risco, redução efetiva/cessação da exposição causal quando possível e avaliação de proteção ocupacional. Não aconselhar abandono do emprego indiscriminadamente sem rede de suporte, mas não manter exposição perigosa indefinidamente enquanto apenas se eleva CI.
+
+**Por que importa:** reconhece relação trabalho-sintoma e necessidade de abordar determinante causal.
+
+### Caso 10 — Fenótipo eosinofílico grave após otimização adequada
+
+**Apresentação:** mulher de 45 anos utiliza esquema de alta intensidade contendo CI-LABA confirmado por observação e retirada regular, tem técnica correta, não fuma e segue tratamento de rinossinusite. Mesmo assim teve duas exacerbações que exigiram OCS no último ano e mantém limitação relevante. Eosinófilos repetidamente elevados fora de cursos de OCS; IgE total não é muito alta; função pulmonar reduzida com variabilidade documentada.
+
+**Hipóteses:** asma grave com inflamação tipo 2 possivelmente eosinofílica, elegível à fenotipagem e avaliação de imunobiológico conforme PCDT 2026. O paciente já passou pela distinção de asma difícil de tratar por barreiras modificáveis; isso não significa indicação automática ou escolha de agente sem documentação.
+
+**Exames e critérios:** confirmar critérios formais de tratamento de alta intensidade e persistência, VEF₁, exacerbações/OCS e contagem de eosinófilos em contexto adequado; avaliar alergia mediada por IgE, comorbidades e infecções/parasitose quando indicadas. PCDT estabelece critérios específicos para omalizumabe, mepolizumabe, benralizumabe e dupilumabe, não intercambiáveis.
+
+**Conduta:** encaminhar serviço habilitado para imunobiológico quando elegível; continuar controle anti-inflamatório e educação, monitorar resposta com metas claras, efeito adverso e redução de cursos sistêmicos. Se houver comorbidade nasal tipo 2, ela ajuda a caracterizar perfil mas não substitui critérios SUS.
+
+**Por que importa:** diferencia **alto risco por uso insuficiente** de **asma grave refratária apesar de uso adequado** e mostra como selecionar terapia-alvo.
+
+## 26. Questões adicionais originais — alternativas e comentários completos
+
+### Questão 7 — Cálculo de resposta pediátrica com denominadores diferentes
+
+Menino de dez anos com história compatível de asma apresenta VEF₁ basal de 1,20 L, pós-broncodilatador de 1,36 L e previsto de 1,80 L. Qual afirmação compara corretamente PCDT brasileiro de 2026 e GINA 2026?
+
+A) Há ganho de 160 mL: 13,3% do basal e 8,9% do previsto, de modo que os limiares pediátricos descritos nas duas fontes podem classificar diferentemente o mesmo teste.  
+B) O ganho é de 16 mL e exclui asma.  
+C) Como existe ganho de 13,3%, o critério GINA de 12% do previsto foi necessariamente cumprido.  
+D) Criança precisa sempre de aumento absoluto de 200 mL além dos 12% em ambas as diretrizes.
+
+**Gabarito: A.** **A — correta:** 160/1200=13,3% e 160/1800=8,9%; o PCDT traz corte relativo ao basal e GINA 2026, relativo ao previsto. **B — incorreta:** erra unidade e cálculo. **C — incorreta:** troca denominadores. **D — incorreta:** introduz exigência de volume típica do critério adulto na pediatria. **Mini-revisão:** em espirometria, quem é o denominador importa tanto quanto o número 12.
+
+### Questão 8 — AIR versus MART
+
+Sobre estratégias de alívio na asma de adultos e adolescentes segundo GINA 2026, assinale a mais correta.
+
+A) AIR é uso de salmeterol isolado para alívio rápido.  
+B) MART utiliza qualquer combinação de CI-LABA como resgate adicional, independentemente do LABA.  
+C) A estratégia preferencial pode usar CI-formoterol em baixa dose como alívio; em etapas de manutenção, a mesma combinação validada pode ser utilizada como controlador e alívio no regime MART.  
+D) SABA isolado é a principal recomendação preventiva para todas as etapas.
+
+**Gabarito: C.** **A — incorreta:** não se usa LABA isolado na asma e salmeterol não é opção de alívio AIR. **B — incorreta:** MART depende de combinação com formoterol e apresentação aprovada. **C — correta:** integra anti-inflamatório ao alívio e oferece manutenção quando necessária. **D — incorreta:** broncodilatador curto isolado não reduz adequadamente risco de inflamação/exacerbação. **Mini-revisão:** saber composição do dispositivo é uma medida concreta de segurança.
+
+### Questão 9 — Atualização pediátrica em 2026
+
+No tratamento de uma criança de oito anos com asma confirmada e sintomas infrequentes, qual interpretação é adequada?
+
+A) Em toda criança dessa idade, é obrigatório SABA isolado sem CI como primeira escolha.  
+B) GINA 2026 inclui opções com alívio anti-inflamatório contendo CI, como CI-formoterol em baixa dose ou CI-SABA quando apropriados, além de CI concomitante com SABA, respeitando apresentação/aprovação local.  
+C) Toda criança com asma deve usar corticoide sistêmico diário por anos.  
+D) O esquema adulto de CI-formoterol e seu número máximo de inalações pode ser copiado sem adaptação.
+
+**Gabarito: B.** **A — incorreta:** a GINA recomenda tratamento com CI e não SABA isolado. **B — correta:** reflete a atualização internacional, com cautela quanto a PCDT brasileiro e dispositivos autorizados. **C — incorreta:** OCS crônico é danoso e excepcional. **D — incorreta:** dose, dispositivo, limites e regras pediátricas diferem. **Mini-revisão:** toda atualização exige separar evidência internacional de disponibilidade regulatória nacional.
+
+### Questão 10 — Exacerbação e sedação
+
+Adulto com asma conhecida chega taquipneico, sonolento e com ausculta quase silenciosa após várias horas de dispneia. A equipe pensa em dar benzodiazepínico para diminuir ansiedade. A alternativa mais segura é:
+
+A) Reduzir vigilância porque ausência de chiado significa melhora.  
+B) Tratar como ameaça à vida, garantir suporte especializado e evitar sedativo de rotina que possa deprimir ventilação.  
+C) Aguardar radiografia antes de toda intervenção broncodilatadora.  
+D) Administrar antibiótico isolado como tratamento do broncoespasmo.
+
+**Gabarito: B.** **A — incorreta:** a redução do fluxo pode produzir tórax silencioso. **B — correta:** sonolência e esforço intenso exigem avaliação de falência ventilatória e suporte imediato; GINA recomenda não usar sedativos como manejo de exacerbação. **C — incorreta:** atrasaria terapia em situação crítica. **D — incorreta:** infecção bacteriana não foi demonstrada e não resolve broncoconstrição. **Mini-revisão:** gravidade respiratória é estimada pelo paciente inteiro, não apenas pelo volume dos sibilos.
+
+### Questão 11 — Corticoide oral após crise
+
+Paciente adulto com exacerbação moderada/grave, sem uso crônico prévio de corticoide sistêmico, recebe prednisolona por cinco dias. Qual afirmação está de acordo com PCDT e GINA 2026?
+
+A) Curta duração de OCS requer obrigatoriamente desmame em todos os casos.  
+B) Corticoide oral sempre substitui necessidade de CI de prevenção.  
+C) Dose de referência em adulto pode ser 40–50 mg/dia por 5–7 dias, geralmente sem redução gradual quando o curso é inferior a duas semanas, considerando contexto clínico.  
+D) O medicamento deve ser mantido até normalizar radiografia, obrigatória em toda crise.
+
+**Gabarito: C.** **A — incorreta:** desmame não é rotineiro para cursos curtos em paciente sem circunstância especial. **B — incorreta:** prevenção com CI permanece essencial. **C — correta:** corresponde a regime de referência com ressalva de uso prévio e risco adrenal. **D — incorreta:** Rx não é rotina, e duração não depende de normalização radiográfica. **Mini-revisão:** curso de resgate não resolve doença de base sozinho.
+
+### Questão 12 — Asma grave e imunobiológico no SUS
+
+Adulto mantém asma não controlada com exacerbações apesar de CI-LABA de alta intensidade, boa adesão e técnica adequada, com eosinofilia persistente e avaliação especializada. Qual é a melhor decisão?
+
+A) Escolher automaticamente omalizumabe por eosinofilia, sem dosar IgE nem confirmar alergia.  
+B) Suspender CI ao iniciar qualquer imunobiológico.  
+C) Realizar fenotipagem e verificar critérios específicos de PCDT 2026 para terapias como mepolizumabe, benralizumabe, dupilumabe ou omalizumabe, considerando idade, exacerbadores, biomarcadores e regras de acesso.  
+D) Prescrever SABA isolado como estratégia definitiva por não haver resposta.
+
+**Gabarito: C.** **A — incorreta:** anti-IgE possui critérios próprios envolvendo sensibilização, IgE/peso. **B — incorreta:** biológico é geralmente adjuvante à terapia com CI. **C — correta:** terapia de precisão exige mecanismo plausível e elegibilidade. **D — incorreta:** agravaria vulnerabilidade. **Mini-revisão:** não confundir biomarcador de fenótipo com autorização de medicamento.
+
+### Questão 13 — Dispneia no esforço sem resposta ao broncodilatador
+
+Atleta de 19 anos relata aperto na garganta e ruído inspiratório durante sprint, iniciando e terminando abruptamente. Espirometrias em repouso normais, pouca melhora com broncodilatador. Qual hipótese concorrente importante?
+
+A) Obstrução laríngea induzível, que exige avaliação dirigida de via aérea alta.  
+B) Asma confirmada sem necessidade de testes.  
+C) Infarto agudo como única hipótese possível em toda pessoa que corre.  
+D) Pneumonia bacteriana crônica com indicação de antibiótico empírico por seis semanas.
+
+**Gabarito: A.** **A — correta:** ruído inspiratório e localização laríngea sugerem disfunção laríngea, que pode coexistir com asma. **B — incorreta:** sintomas não são específicos e resposta insatisfatória exige diferencial. **C — incorreta:** não explica padrão típico e não é hipótese única. **D — incorreta:** não há síndrome infecciosa sustentada. **Mini-revisão:** sibilo expiratório torácico e estridor inspiratório cervical não são equivalentes.
+
+### Questão 14 — Técnica e adesão antes da escalada
+
+Paciente é descrito como “asma refratária” e foi encaminhado para biológico. Durante consulta, utiliza DPI soprando dentro do aparelho antes de aspirar, sem inspirar vigorosamente; admite esquecer metade das doses semanais. Qual conduta deve preceder a classificação definitiva de asma grave?
+
+A) Rotular asma biológica grave e manter erro de técnica.  
+B) Corrigir dispositivo/técnica e adesão, assegurar acesso, confirmar diagnóstico e reavaliar sintomas/risco, mantendo atenção à gravidade das crises anteriores.  
+C) Suspender CI imediatamente.  
+D) Prescrever broncodilatador de longa ação sozinho.
+
+**Gabarito: B.** **A — incorreta:** faltam etapas fundamentais de otimização. **B — correta:** tratamento não administrado corretamente não testa eficácia do fármaco; risco agudo deve ser manejado enquanto se corrige o processo. **C — incorreta:** retirada pode piorar doença. **D — incorreta:** LABA isolado não é esquema seguro para asma. **Mini-revisão:** técnica inalatória precisa ser demonstrada, não apenas perguntada.
+
