@@ -135,6 +135,39 @@ Hemograma e plaquetas, creatinina/eletrólitos, glicemia, gasometria quando indi
 ### 5.4. Imagem e ultrassom à beira leito
 RX, US ou TC conforme foco e estabilidade; não transportar paciente com choque sem equipe/suporte apenas para imagem. POCUS cardiopulmonar pode auxiliar interpretação de função cardíaca, linhas B, congestão e causas concorrentes, se profissional treinado e recurso disponível. **Imagem normal precoce não exclui sepse.**
 
+
+### 5.5. Lactato não é diagnóstico isolado de sepse ou indicação automática de fluidos
+
+A diretriz SSC pediátrica 2026 recomenda mensuração de **lactato sanguíneo** na avaliação inicial de sepse provável e choque suspeito, com evidência de certeza muito baixa. Seu valor representa balanço entre produção, transporte e depuração de lactato: hipoperfusão é uma possibilidade, mas atividade beta-adrenérgica, convulsões, trabalho respiratório, disfunção hepática e amostra inadequada também alteram a concentração.
+
+**Caso contrastivo A:** lactente com TEC 6 segundos, sonolência e redução de diurese, mas lactato de 1,7 mmol/L: o lactato não afasta disfunção perfusional.
+
+**Caso contrastivo B:** escolar após crise convulsiva tônico-clônica com lactato de 5 mmol/L, agora lúcido, bem perfundido e sem foco infeccioso: a elevação não estabelece choque séptico.
+
+Um lactato que diminui durante o atendimento pode acompanhar recuperação, porém não substitui exame de pulsos, perfusão, consciência, respiração e diurese. **Persistência de hiperlactatemia após fluidos não é autorização para mais bolus por padrão**; é preciso avaliar causas adicionais e fluidotolerância.
+
+### 5.6. Culturas que ajudam a decisão
+
+**Hemocultura:** usar técnica asséptica e volume de sangue apropriado para idade/peso. Colher antes do antibiótico, **desde que não haja atraso substancial** quando a criança está em choque. Culturas negativas podem ocorrer com antibiótico prévio e patógenos difíceis de cultivar; contaminação por flora cutânea pode gerar falso diagnóstico de bacteremia.
+
+**Urina:** ITU pode não gerar disúria em lactentes; cultura colhida por saco coletor, especialmente quando positiva, tem risco de contaminação e não substitui amostra apropriada para diagnóstico definitivo. Em quadro grave, não atrasar tratamento crítico pela dificuldade técnica de amostragem.
+
+**LCR:** PL pode ser necessária na suspeita de meningite, mas **instabilidade circulatória/respiratória e convulsões não controladas** demandam estabilização e avaliação de segurança. Antibiótico de infecção invasiva não deve esperar PL se a demora colocaria a criança em risco.
+
+**Pulmão/pleura:** radiografia ou ultrassom conforme clínica; um empiema ou abscesso requer avaliação de controle de foco, não apenas trocar antibiótico.
+
+**Abdome, osso e articulação:** apendicite complicada, coleções profundas, artrite séptica e osteomielite são diagnósticos diferenciais que frequentemente exigem avaliação cirúrgica/ortopédica urgente.
+
+### 5.7. Distinguir exame de órgão, etiologia e desfecho
+
+Plaquetas baixas podem ocorrer por disfunção de coagulação em sepse, dengue e causas hematológicas. Creatinina "dentro do normal" não exclui IRA se subiu rapidamente do basal. AST/ALT elevadas podem refletir hipóxia, infecção viral ou outra hepatopatia. Hipoglicemia, disnatremia e acidose precisam de análise própria, mesmo com hemocultura positiva.
+
+O painel laboratorial não "prova sepse"; cada resultado deve ser vinculado à pergunta que pretende responder: **qual órgão está falhando, qual foco provável, qual tratamento muda desfecho e qual complicação precisa ser monitorada?** Para exames invasivos, ponderar se há indicação e segurança na condição hemodinâmica presente.
+
+### 5.8. Sem biomarcador milagroso para descalonamento
+
+A SSC 2026 sugere **não usar procalcitonina rotineiramente para orientar descalonamento** quando existem programas efetivos de stewardship, com certeza moderada de evidência. Essa recomendação não proíbe seu uso em todo contexto; define que PCT isoladamente não deve substituir microbiologia, localização do foco, resposta clínica e avaliação especializada. Após culturas e susceptibilidades, estreitar o espectro do antimicrobiano quando seguro; sem patógeno identificado, considerar suspensão/estreitamento segundo probabilidade da infecção, risco do hospedeiro e melhora documentada. Antibiótico máximo por tempo indeterminado não é sinônimo de maior segurança.
+
 ## 6. A primeira hora — terapia proporcional ao risco
 
 ### 6.1. Antibiótico: dois relógios
