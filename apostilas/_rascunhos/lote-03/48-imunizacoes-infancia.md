@@ -159,31 +159,199 @@ Estes casos são fictícios, construídos para treinar decisões pediátricas e 
 **Por que importa:** vacinação envolve clínica, epidemiologia, acesso e informação de qualidade.
 
 
-## 11. Seis questões originais comentadas
+## 11. Doze questões originais de residência comentadas
 
-**Q1.** Adolescente tem dose vacinal válida registrada anos antes e esquema incompleto. Conduta geral mais adequada?  
-A) reiniciar qualquer esquema desde o início; B) considerar doses válidas e aplicar resgate pelo calendário atual; C) dispensar imunização futura; D) aplicar todas sem conferir intervalos.  
-**Gabarito B.** A desperdiça doses; B considera validade e resgate; C mantém suscetibilidade; D pode invalidar intervalo e criar risco. **Mini-revisão:** recuperação não significa automaticamente reinício.
+### Questão 1 — Resgate vacinal após atraso
 
-**Q2.** Uma vacina viva deve ser avaliada com maior cautela em qual situação?  
-A) coriza leve; B) imunossupressão grave; C) criança saudável; D) dor local após dose anterior.  
-**Gabarito B.** A e D não são contraindicações universais; C é situação habitual; B pode tornar o produto inadequado. **Mini-revisão:** segurança depende de imunidade e produto.
+Menino de seis anos possui três doses documentadas de determinada série na infância, mas faltam reforços. O atendimento deve começar por:
 
-**Q3.** Em 2026, um quadro do PNI de 2020 é confiável como guia único para pneumonia/poliomielite?  
-A) sim, calendários nunca mudam; B) sim, se tiver cores; C) não, comparar normas atuais e transições; D) basta usar memória de provas.  
-**Gabarito C.** A/B/D não demonstram atualização; C é a postura adequada. **Mini-revisão:** aplicar normas de vacinação exige referência temporal.
+A) reiniciar qualquer esquema do zero porque o intervalo foi longo.  
+B) reconhecer doses válidas e elaborar plano de recuperação por idade, produto e norma vigente.  
+C) dispensar qualquer dose futura porque recebeu ao menos três vacinas.  
+D) administrar todos os produtos no mesmo dia sem verificar intervalos nem contraindicações.
 
-**Q4.** Falta de cicatriz BCG documentada após vacinação válida significa:  
-A) revacinação automática; B) falha vacinal comprovada; C) avaliação segundo norma, sem revacinação automática apenas pela cicatriz; D) necessidade de antibiótico.  
-**Gabarito C.** A/B e D são extrapolações; C contextualiza. **Mini-revisão:** marcas cutâneas não são teste de imunidade universal.
+**Gabarito: B.**
+- **A incorreta:** atraso não invalida automaticamente doses corretamente aplicadas.
+- **B correta:** resgate depende de registro, idade, intervalos, produto e norma.
+- **C incorreta:** três doses não significam calendário integralmente completo.
+- **D incorreta:** coadministração tem critérios e segurança específicos.
+**Mini-revisão:** recuperar não é necessariamente recomeçar.
 
-**Q5.** Qual é um exemplo de contraindicação potencialmente verdadeira?  
-A) resfriado sem gravidade; B) antibiótico oral isolado; C) anafilaxia documentada após dose/componente relevante; D) prematuridade em qualquer idade e condição.  
-**Gabarito C.** A/B/D não são proibições universais; C requer avaliação específica. **Mini-revisão:** triagem de risco evita falsas oportunidades perdidas e eventos graves.
+### Questão 2 — Rotavírus em 2026
 
-**Q6.** A cobertura vacinal global de um município é alta, mas há distrito com muitos não vacinados. Qual afirmação procede?  
-A) não pode ocorrer surto; B) heterogeneidade pode manter suscetibilidade coletiva; C) coberturas locais são irrelevantes; D) todos estão individualmente imunes.  
-**Gabarito B.** A/C/D generalizam indevidamente; B reconhece bolsões de risco. **Mini-revisão:** cobertura e homogeneidade importam.
+Criança de dez meses nunca recebeu rotavírus e **não** possui história de invaginação, imunodeficiência ou outra contraindicação conhecida. Qual afirmação sobre o calendário nacional publicado em 2026 está correta?
+
+A) A primeira dose permanece invariavelmente limitada a 3 meses e 15 dias, conforme quadro PNI 2020.  
+B) A ampliação normativa de 2026 permite avaliar primeira dose até 11 meses e 29 dias, respeitando demais critérios.  
+C) A vacina é injetável e indicada até nove anos sem limite.  
+D) A segunda dose deve ser aplicada obrigatoriamente sete dias após a primeira.
+
+**Gabarito: B.**
+- **A incorreta:** reproduz janela do material histórico, não o portal atual.
+- **B correta:** a idade pode ser elegível no calendário de 2026, mas contraindicações/intervalos seguem obrigatórios.
+- **C incorreta:** trata-se de vacina oral com janelas etárias.
+- **D incorreta:** há intervalo programático usual de 60 dias e mínimo excepcional específico.
+**Mini-revisão:** verificar idade no dia da aplicação, dose anterior e contraindicação como invaginação prévia.
+
+### Questão 3 — Transição pneumocócica
+
+Lactente em transição de 2026 recebe VPC20 aos dois meses. Na unidade há VPC10 para aplicação aos quatro meses. Qual conduta geral se alinha ao comunicado nacional daquele período?
+
+A) considerar a série inválida porque toda dose precisa ser do mesmo produto.  
+B) reiniciar VPC20 imediatamente por conveniência.  
+C) conferir a nota vigente e considerar VPC10 aos quatro meses com reforço de VPC20 aos doze, como previsto na transição nacional.  
+D) abandonar reforço de doze meses porque já recebeu uma dose VPC20.
+
+**Gabarito: C.**
+- **A incorreta:** a estratégia de transição pode usar ambas as formulações.
+- **B incorreta:** reinício automático não é regra e pode gerar doses desnecessárias.
+- **C correta:** corresponde à comunicação oficial de VPC20–VPC10–VPC20 durante coexistência de estoque.
+- **D incorreta:** reforço faz parte do 2+1 indicado.
+**Mini-revisão:** grupos especiais de CRIE podem ter esquema diferente e não devem seguir regra simplificada.
+
+### Questão 4 — Qual é o reforço de pólio em 2026?
+
+No calendário nacional infantil consultado em outubro de 2026, qual imunizante está listado para reforço de poliomielite aos 15 meses?
+
+A) VOP (oral) como única escolha obrigatória da rotina.  
+B) VIP (inativada), segundo calendário vigente.  
+C) vacina tríplice viral.  
+D) vacina meningocócica C.
+
+**Gabarito: B.**
+- **A incorreta:** reflete esquema histórico com VOP, não a página oficial da criança atual.
+- **B correta:** VIP aos 2, 4, 6, 15 meses e reforço de 4 anos no calendário mostrado.
+- **C incorreta:** SCR protege sarampo, caxumba e rubéola.
+- **D incorreta:** meningo C não protege contra pólio.
+**Mini-revisão:** reconhecer a mudança de produto evita aplicar calendário de 2020 em 2026.
+
+### Questão 5 — Meningocócica ACWY no segundo ano
+
+Criança recebeu meningocócica C aos três e cinco meses. Qual é o produto indicado aos doze meses na rotina nacional de 2026?
+
+A) ACWY conjugada.  
+B) somente uma terceira dose de meningocócica C, sem possibilidade de ACWY.  
+C) vacina meningocócica B obrigatória na mesma posição de calendário.  
+D) imunoglobulina antitetânica.
+
+**Gabarito: A.**
+- **A correta:** o portal apresenta ACWY aos 12 meses, cobrindo sorogrupos A, C, W e Y.
+- **B incorreta:** ignora o reforço com outra valência no calendário.
+- **C incorreta:** vacina B não é equivalente à ACWY nem ocupa a indicação mostrada.
+- **D incorreta:** produto de profilaxia antitetânica não é vacina meningocócica.
+**Mini-revisão:** interpretar sorogrupo e idade, sem chamar tudo apenas de “vacina de meningite”.
+
+### Questão 6 — Dose zero de sarampo
+
+Lactente recebeu tríplice viral D0 aos oito meses em campanha de município elegível. Ao completar um ano:
+
+A) está automaticamente liberado da D1 da rotina.  
+B) deve receber a D1 regular conforme PNI e nota aplicável; D0 não substitui automaticamente o calendário.  
+C) está proibido de receber SCR novamente por toda a vida.  
+D) necessita apenas de antibiótico preventivo.
+
+**Gabarito: B.**
+- **A incorreta:** D0 é resposta epidemiológica antecipada.
+- **B correta:** mantém proteção programática conforme idade.
+- **C incorreta:** não há contraindicação geral criada pela D0 válida.
+- **D incorreta:** antibiótico não substitui vacinação contra sarampo.
+**Mini-revisão:** dose extra de bloqueio e dose de rotina são conceitos distintos.
+
+### Questão 7 — Influenza pela primeira vez
+
+Criança de dois anos, nunca vacinada contra influenza, procura UBS no período de vacinação. Qual orientação corresponde à página brasileira de 2026?
+
+A) uma dose única na vida é suficiente.  
+B) duas doses na primeira vacinação, com 30 dias de intervalo, seguidas de vacinação anual quando indicada.  
+C) iniciar somente após os seis anos.  
+D) substituir influenza por SCR porque ambas previnem vírus respiratórios.
+
+**Gabarito: B.**
+- **A incorreta:** formulação anual e primovacinação requerem atenção.
+- **B correta:** descreve esquema inicial dos elegíveis e a vacinação anual.
+- **C incorreta:** indicação de rotina começa a partir de seis meses para faixa menor de seis anos.
+- **D incorreta:** os alvos e efeitos são distintos.
+**Mini-revisão:** perguntar histórico de influenza antes de prescrever “dose anual”.
+
+### Questão 8 — Criança em quimioterapia
+
+Menina de cinco anos em quimioterapia intensiva tem vacinas vivas pendentes. Qual conduta é melhor?
+
+A) aplicar todas imediatamente porque há atraso.  
+B) contraindicar permanentemente qualquer vacina, incluindo todas as inativadas.  
+C) avaliar tipo e grau de imunossupressão e planejar junto a oncologia/CRIE conforme norma por produto.  
+D) utilizar metade de cada dose da vacina viva sem consultar recomendação.
+
+**Gabarito: C.**
+- **A incorreta:** risco de doença vacinal em imunodepressão exige avaliação.
+- **B incorreta:** vacinação é frequentemente importante, mas precisa de timing/esquema específicos.
+- **C correta:** diferencia segurança de vacinas vivas e resposta às inativadas.
+- **D incorreta:** fracionamento improvisado não é esquema aprovado.
+**Mini-revisão:** “imunodeprimido” é categoria clínica heterogênea.
+
+### Questão 9 — Anafilaxia e eventos leves
+
+Após vacina, lactente apresentou febre baixa e dor local autolimitadas. Anos depois, um cuidador relata que “tem alergia a todas as vacinas”. Qual interpretação é adequada?
+
+A) toda febre após vacina é anafilaxia.  
+B) reação local comum não equivale à anafilaxia; avaliar relato, contraindicações reais e atualizar doses elegíveis.  
+C) a criança está automaticamente imunizada contra todos os agentes.  
+D) é obrigatório suspender todas as vacinas por toda a vida.
+
+**Gabarito: B.**
+- **A incorreta:** anafilaxia envolve síndrome clínica sistêmica potencialmente grave.
+- **B correta:** investigação proporcional protege de suspensão desnecessária.
+- **C incorreta:** evento adverso não demonstra proteção.
+- **D incorreta:** requer comprovação de contraindicação ao produto/componente pertinente.
+**Mini-revisão:** classificar EAPV exige análise, e associação temporal não prova causalidade.
+
+### Questão 10 — HPV e dengue na infância tardia
+
+Segundo o calendário brasileiro de 2026 apresentado no portal oficial, qual afirmação está correta?
+
+A) HPV é recomendado somente após o início da atividade sexual.  
+B) A rotina traz HPV4 aos nove anos em esquema de uma dose na faixa geral elegível, e dengue DNG4 aos dez anos em duas doses com intervalo de três meses, conforme critérios.  
+C) dengue e HPV podem ser usadas em qualquer idade sem verificar bula e PNI.  
+D) uma dose de vacina de dengue de qualquer fabricante pode completar qualquer esquema anterior sem avaliação.
+
+**Gabarito: B.**
+- **A incorreta:** vacinação precoce visa proteção antes da exposição.
+- **B correta:** resume as faixas/intervalos do calendário consultado, ressalvadas condições especiais.
+- **C incorreta:** idade e critérios de elegibilidade são relevantes.
+- **D incorreta:** produtos distintos não devem ser intercambiados por suposição.
+**Mini-revisão:** estratégias especiais e imunossupressão podem alterar esquema de rotina.
+
+### Questão 11 — Profilaxia pós-exposição à raiva
+
+Adolescente com calendário vacinal infantil completo sofre mordedura de morcego. Qual conduta inicial é a mais apropriada?
+
+A) nenhuma, pois o calendário infantil inclui obrigatoriamente vacina contra raiva para todos.  
+B) esperar sintomas neurológicos antes de procurar atendimento.  
+C) higienizar a ferida e buscar avaliação urgente para profilaxia antirrábica conforme espécie, contato, história e protocolo atual.  
+D) administrar exclusivamente vacina influenza.
+
+**Gabarito: C.**
+- **A incorreta:** calendário rotineiro não resolve toda profilaxia pós-exposição.
+- **B incorreta:** raiva sintomática é extremamente grave; prevenção é temporal.
+- **C correta:** avalia risco e possibilidade de vacina e imunoglobulina específicas.
+- **D incorreta:** influenza não previne raiva.
+**Mini-revisão:** pós-exposição é algoritmo diferente de vacina rotineira.
+
+### Questão 12 — Cobertura alta e surto
+
+Município informa cobertura de 95%, mas vários bairros têm baixa vacinação e há sarampo em transmissão. Qual hipótese é mais apropriada?
+
+A) cobertura municipal alta impede surtos em qualquer cenário.  
+B) heterogeneidade por território e qualidade de registro podem manter bolsões suscetíveis apesar da média elevada.  
+C) o histórico vacinal individual torna-se irrelevante.  
+D) cobertura é sinônimo de eficácia biológica absoluta de cada vacina.
+
+**Gabarito: B.**
+- **A incorreta:** a média não mostra distribuição territorial.
+- **B correta:** reforça análise de cobertura, homogeneidade e busca ativa.
+- **C incorreta:** doses válidas e contatos importam.
+- **D incorreta:** cobertura e eficácia são medidas distintas.
+**Mini-revisão:** prevenção combina imunização individual e epidemiologia territorial.
 
 
 ## 12. Calendário Nacional da Criança em 2026 — quadro clínico interpretado por idade
