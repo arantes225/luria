@@ -110,3 +110,13 @@ test('does not confuse clinically distinct active substances by substring',()=>{
   const hydromorphone={name:'hidromorfona',active_ingredient:'hidromorfona',data:{}};
   assert.equal(searchScore(hydromorphone,'morfina'),Infinity);
 });
+
+test('distinguishes atropina from somatropina and finds standard clinical aliases',()=>{
+  const atropine={name:'sulfato de atropina',active_ingredient:'sulfato de atropina',data:{synonyms:['atropina']}};
+  const somatropin={name:'somatropina',active_ingredient:'somatropina',data:{}};
+  const tmpSmx={name:'sulfametoxazol + trimetoprima',active_ingredient:'sulfametoxazol + trimetoprima',data:{synonyms:['cotrimoxazol','SMX-TMP']}};
+  assert.ok(Number.isFinite(searchScore(atropine,'atropina')));
+  assert.equal(searchScore(somatropin,'atropina'),Infinity);
+  assert.equal(searchScore(tmpSmx,'cotrimoxazol'),0);
+  assert.equal(searchScore(tmpSmx,'SMX TMP'),0);
+});
