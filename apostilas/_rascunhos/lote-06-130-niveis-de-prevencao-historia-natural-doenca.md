@@ -449,3 +449,84 @@ Se não há informação suficiente para identificar alvo, a resposta correta nu
 
 Responder essas cinco perguntas permite resolver a maioria das questões sem decorar uma lista extensa de exemplos isolados.
 
+
+
+## 25. Vigilância em saúde, surtos e desastres: prevenção não é apenas consulta
+
+### 25.1 Vigilância epidemiológica identifica padrões para agir
+
+Vigilância em saúde envolve coleta, análise, interpretação e uso oportuno de informações para prevenir e controlar agravos. A própria **notificação** é instrumento de vigilância; o nível preventivo depende da intervenção produzida. Detectar precocemente casos de sarampo e investigar contatos pode permitir bloqueio vacinal/profilaxia conforme protocolos e reduzir transmissão. Monitorar tendência de intoxicações ambientais pode orientar remoção da fonte antes de novos casos. Não classificar toda notificação como prevenção secundária automaticamente: ela informa respostas de diferentes níveis.
+
+Num surto de doença transmitida por água, identificar casos e agente etiológico favorece intervenção sobre abastecimento, saneamento e proteção da população. Diagnóstico dos doentes e tratamento oportuno impedem agravamento e podem diminuir transmissão, enquanto corrigir o abastecimento busca evitar novos casos. O modelo é útil se reconhecemos que **ações coletivas e individuais ocorrem simultaneamente**. Esperar conclusão da investigação de todos os casos para corrigir exposição evidente pode ser perigoso.
+
+### 25.2 Proteção coletiva após evento climático
+
+Após enchente, a população pode enfrentar lesões traumáticas, água contaminada, descontinuidade de medicações, sofrimento mental e barreiras de acesso. Intervir em drenagem urbana e ocupação de áreas de alto risco antes de novas enchentes é prevenção **primordial** de condições de exposição; orientar uso de água segura e reduzir contato com agente infeccioso é primária de doenças específicas; identificar precocemente leptospirose sintomática e tratar é detecção/tratamento oportunos da doença instalada; reabilitar sequelas de lesão renal ou incapacidade física tem componente terciário. Evitar prescrever antibiótico indiscriminado a toda população sem indicação pode representar quaternária, sem negar profilaxias específicas eventualmente recomendadas.
+
+Atenção especial deve ser dada à equidade. Famílias desalojadas não têm as mesmas condições de cumprir orientações de higiene, dieta ou conservação de medicamentos; o plano precisa incluir abrigo, insumos, transporte e continuidade de cuidados crônicos. A promoção da saúde articula assistência e determinantes sociais mesmo em emergência.
+
+### 25.3 Medidas de prevenção na segurança do paciente
+
+Higienização de mãos, protocolos para evitar infecção relacionada a cateter e prevenção de quedas hospitalares são frequentemente **primárias das complicações** que ainda não ocorreram. Avaliar paciente para delirium precoce e iniciar manejo dirigido pode buscar detecção/tratamento oportuno da síndrome, enquanto reabilitação pós-fratura ou pós-internação prolongada visa recuperar capacidade funcional. Revisar cateter, fármaco sedativo e exames repetidos sem indicação é quaternária, embora o ambiente seja hospital terciário.
+
+A expressão “prevenção terciária no hospital” é perigosa quando usada sem especificar o alvo. Um hospital de alta complexidade pode realizar política primordial no ambiente de trabalho, vacinação primária, diagnóstico precoce secundário, reabilitação terciária e medidas quaternárias de segurança. A escala de complexidade não determina temporalidade.
+
+## 26. Planejamento de ações: evitar tanto o excesso quanto a falta de prevenção
+
+### 26.1 Equidade e benefício real
+
+Um programa pode ser classificado corretamente como prevenção primária e ainda falhar se não alcança os grupos com maior risco ou se depende de condições ausentes. Vacinas necessitam logística, cadeia de frio e confiança; prevenção de quedas requer ambiente seguro; controle de doenças crônicas exige acesso a medicamentos e alimentos; reabilitação pós-AVC depende de profissionais, transporte e dispositivos de apoio. A avaliação de qualidade precisa medir **cobertura efetiva, eventos evitados, segurança e desigualdades**, não apenas número bruto de intervenções.
+
+A prevenção quaternária também pode liberar recursos destinados a cuidados de alto valor. Não pedir dezenas de exames sem indicação em pacientes de baixo risco pode reduzir custo, ansiedade e procedimentos, enquanto ampliar seguimento de resultados anormais de um rastreamento eficaz diminui perda de oportunidade. Evitar excesso sem ampliar acesso ao necessário seria apenas contenção de despesa, não cuidado integral.
+
+### 26.2 Ação individual, familiar, comunitária e política
+
+No nível individual, conversar sobre cessação do tabaco e oferecer tratamento quando indicado é útil, mas políticas de ambientes livres de fumaça podem proteger mais pessoas simultaneamente. Na família, apoiar cuidador de pessoa acamada e adaptar domicílio ajuda evitar novas lesões e ampliar independência. Na comunidade, participação social identifica prioridades, barreiras e recursos locais; no poder público, saneamento e alimentação escolar influenciam fatores determinantes de longo prazo.
+
+A visão clássica de história natural tende a focalizar o hospedeiro; o planejamento atual precisa considerar sistemas, relações sociais e contextos. Educação em saúde deve evitar culpabilização, discriminação e promessas de que qualquer indivíduo pode controlar completamente seu risco. Prevenção é uma responsabilidade compartilhada, sustentada por políticas e serviços.
+
+### 26.3 Avaliar oportunidade de intervenção antes, durante e depois
+
+Para cada agravo, construir matriz: **antes** da exposição/fator de risco, **antes** dos sintomas, **após** primeiros sintomas e **após** sequelas. Perguntar quais medidas têm evidência, quais barreiras existem e quais danos podem decorrer de intervir demais. Essa matriz pode ser utilizada para hipertensão, câncer, doenças infecciosas, saúde mental, acidentes de trânsito, obesidade e lesões ocupacionais, respeitando a história natural de cada uma.
+
+Não multiplicar programas sem avaliar qualidade. Uma campanha de rastreamento pode aumentar diagnóstico de doença subclínica e não garantir tratamento; outra pode criar resultados falsos positivos. A classificação **secundária** descreve intenção de localizar doença cedo, mas não demonstra automaticamente benefício — esse julgamento pertence à avaliação de evidência, ética e viabilidade.
+
+## 27. Revisão dirigida: como responder questões complexas sem decorar cem exceções
+
+### 27.1 Cenário integrado de um mesmo paciente
+
+Um homem de 62 anos sofreu AVC isquêmico por doença aterosclerótica e chega à UBS após alta. A equipe verifica esquema de antiagregante/estatinas e controle de fatores de risco conforme indicação, organiza reabilitação motora, atualiza vacinação, revisa sedativo que aumenta quedas e oferece avaliação fonoaudiológica de disfagia. Quais níveis estão ocorrendo?
+
+- **Prevenção secundária cardiovascular**: terapias para reduzir recorrência de AVC/novo evento em quem já teve evento.
+- **Prevenção terciária da incapacidade pós-AVC**: fisioterapia, terapia ocupacional, reabilitação da deglutição e adaptação funcional.
+- **Prevenção primária de infecção imunoprevenível**: vacinas para doença-alvo ainda não adquirida.
+- **Prevenção quaternária**: retirar/ajustar sedativo sem benefício e com risco, de maneira segura.
+- **Prevenção primária de aspiração?** Se o paciente ainda não teve pneumonia aspirativa, técnicas seguras de alimentação podem prevenir **primeiro episódio de pneumonia**, mesmo que sejam parte da reabilitação terciária da disfagia. A pergunta determina qual objetivo classificar.
+
+O mesmo atendimento tem muitos níveis simultâneos; não é incoerência. **A classificação correta exige especificar o alvo de cada ato**.
+
+### 27.2 Três enunciados quase iguais, três respostas distintas
+
+1. “Equipe melhora acesso a praças e calçadas para que crianças não desenvolvam sedentarismo estrutural.” → **Primordial** do fator de risco.
+2. “Criança ainda sem hipertensão recebe intervenção efetiva para reduzir risco futuro da doença.” → **Primária** de hipertensão.
+3. “Adulto com HAS sem sintomas identificada em aferição é tratado para evitar progressão.” → **Secundária na história natural da hipertensão**, embora prevenir seu primeiro infarto seja **primária cardiovascular**.
+
+A diferença não está nas palavras “praça”, “aconselhamento” e “medicamento”. Está no estágio da doença-alvo, na intenção e na convenção.
+
+### 27.3 Mapa de relações com as outras apostilas LURIA
+
+**Apostila 120 — MBE:** responde se intervenção é eficaz, qual tamanho do benefício/dano, qual evidência e como interpretar risco e teste. **Apostila 125 — Rastreamento e Quaternária:** aprofunda quando, como e para quem oferecer exame em assintomáticos e como reduzir sobreuso. **Apostila 130 — Níveis de Prevenção e História Natural:** responde em qual momento/interferência temporal e social cada ação se situa, com cautela sobre classificação. Essa divisão curricular permite que os temas se complementem sem duplicar uma apostila de 100 mil caracteres na outra.
+
+### 27.4 Dez proposições verdadeiras para memorizar
+
+1. História natural não é uma sequência obrigatória igual para todos.
+2. Pré-patogênico pode ter fator de risco, mas não doença-alvo instalada.
+3. Primordial age antes ou sobre a instalação de fatores de risco estruturais.
+4. Primária pretende evitar início de doença/agravo.
+5. Secundária é detecção/tratamento precoce de doença já existente.
+6. Terciária limita incapacidades e promove reabilitação.
+7. Quaternária reduz danos de intervenção excessiva em qualquer fase.
+8. Nível de atenção da RAS não determina nível de prevenção.
+9. A mesma pessoa recebe ações de níveis diferentes simultaneamente.
+10. A intenção preventiva não prova eficácia; evidência e adequação são indispensáveis.
+
