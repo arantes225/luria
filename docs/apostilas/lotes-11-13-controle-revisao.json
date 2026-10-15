@@ -1280,7 +1280,7 @@
       "area": "Saúde Coletiva",
       "titulo": "Biossegurança e prevenção de infecções relacionadas à assistência",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SC-12",
       "instrucao": "Biossegurança, infecções nosocomiais (Média) e medidas de prevenção no cuidado.",
       "aulas_medcof": [
@@ -1293,11 +1293,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito inicial 34.278 caracteres totais, 4 casos e 6 questões; benchmark comparativo parcial; sem certificado ≥60k. Fontes principais identificadas; revisão médica, validação dos critérios vigentes e controle de qualidade ainda pendentes."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-260-biosseguranca-iras.md"
     },
     {
       "id": 271,
@@ -1387,7 +1388,7 @@
       "area": "Pediatria",
       "titulo": "Ortopedia pediátrica",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Alta/Diamante",
       "instrucao": "Ortopedia (Alta), ortopedia pediátrica (Diamante), osteomielite e artrite séptica (Alta), trauma ortopédico; manter avaliação neurovascular.",
       "aulas_medcof": [
@@ -1414,11 +1415,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito inicial 29.163 caracteres totais, 4 casos e 6 questões; benchmark do Drive lido; sem certificado ≥60k. Fontes principais identificadas; revisão médica, validação dos critérios vigentes e controle de qualidade ainda pendentes."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-274-ortopedia-pediatrica.md"
     },
     {
       "id": 275,
@@ -1458,7 +1460,7 @@
       "area": "Clínica Médica",
       "titulo": "Diarreia aguda no adulto e colite por Clostridioides difficile",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Baixa/essencial",
       "instrucao": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146.",
       "aulas_medcof": [
@@ -1471,11 +1473,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito inicial 33.808 caracteres totais, 4 casos e 6 questões; benchmark do Drive lido; sem certificado ≥60k. Fontes principais identificadas; revisão médica, validação dos critérios vigentes e controle de qualidade ainda pendentes."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-276-diarreia-aguda-c-difficile.md"
     },
     {
       "id": 279,
