@@ -1339,7 +1339,7 @@
       "area": "Pediatria",
       "titulo": "Fibrose cística",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Alta",
       "instrucao": "Triagem, diagnóstico, manifestações respiratórias/digestivas e seguimento",
       "aulas_medcof": [
@@ -1352,11 +1352,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original inicial ~41,8 mil caracteres totais, cinco casos e sete questões; PCDT 2024 e CFF/ECFS 2024 identificados, benchmark do Drive correlato apenas parcial; sem certificação de ≥60 mil ou revisão clínica."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-272-fibrose-cistica.md"
     },
     {
       "id": 273,
@@ -1364,7 +1365,7 @@
       "area": "Pediatria",
       "titulo": "Imunodeficiências na infância",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Alta",
       "instrucao": "Sinais de suspeita, avaliação inicial, classificação e encaminhamento",
       "aulas_medcof": [
@@ -1377,11 +1378,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original inicial ~38,2 mil caracteres totais, cinco casos e oito questões; IUIS 2024/2025, SBP, CDC 2024; benchmark correlato HIV/pneumonia não é equivalente a erros inatos da imunidade. Sem certificação de 60 mil ou revisão clínica."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-273-imunodeficiencias-infancia.md"
     },
     {
       "id": 274,
@@ -1488,7 +1490,7 @@
       "area": "Ginecologia e Obstetrícia",
       "titulo": "Crescimento fetal reduzido e aumentado",
       "natureza": "apostila_ja_publicada_indexada",
-      "status_producao": "já publicada; revisão não validada",
+      "status_producao": "já publicada; auditoria preliminar — manter página existente",
       "url_existente": "/apostilas/crescimento-intrauterino-reduzido-aumentado/",
       "instrucao": "Apostila JÁ PUBLICADA. Conferir Restrição do Crescimento Intrauterino (Alta), critérios Doppler e manejo. Articular avaliação de vitalidade fetal, sem duplicação.",
       "aulas_medcof": [
@@ -1501,10 +1503,10 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "AUDITORIA_PRELIMINAR",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
+        "observacao": "Livro real examinado: ~77,7 mil caracteres HTML, ~55,9 mil de texto bruto; suspeita de lacuna para 60 mil úteis e de questões de múltipla escolha comentadas. Drive sobre sofrimento fetal apenas correlato; benchmark específico de RCF pendente. Ver relatório LOTE_13_AUDITORIA_PRELIMINAR_279_280.md."
       }
     },
     {
@@ -1513,7 +1515,7 @@
       "area": "Ginecologia e Obstetrícia",
       "titulo": "Alterações fisiológicas da gestação",
       "natureza": "apostila_ja_publicada_indexada",
-      "status_producao": "já publicada; revisão não validada",
+      "status_producao": "já publicada; auditoria preliminar — manter página existente",
       "url_existente": "/apostilas/alteracoes-fisiologicas-da-gestacao/",
       "instrucao": "Apostila JÁ PUBLICADA. Conferir Modificações do Organismo Materno (Alta), por sistema e trimestre, e correlação com sinais de risco. Não criar conteúdo repetido.",
       "aulas_medcof": [
@@ -1526,10 +1528,10 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "AUDITORIA_PRELIMINAR",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
+        "observacao": "Livro real examinado: ~107,6 mil caracteres HTML e ~82,1 mil texto extraído bruto (não certificado útil). Cobertura extensa por sistema, seis autotestes abertos; adaptar formato de questões de prova sem redundância. Drive Modificações Maternas efetivamente lido; ver relatório LOTE_13_AUDITORIA_PRELIMINAR_279_280.md."
       }
     }
   ]
