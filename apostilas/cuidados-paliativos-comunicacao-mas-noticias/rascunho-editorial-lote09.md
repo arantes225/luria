@@ -1042,3 +1042,82 @@ Os exercícios são inéditos, para ENAMED e residência, com situações fictí
 
 **Mini-revisão:** Transição é intervenção clínica e social.
 
+
+
+## 28. Curadoria visual premium — 22 imagens e diagramas candidatos
+
+Neste tema, a visualização é majoritariamente composta por **diagramas clínicos, escalas, quadros e fluxos de decisão**, não fotografias dramáticas de pacientes em sofrimento. As propostas não foram produzidas nem integradas ao PWA nesta etapa. Diagramas deverão ser autorais; se forem utilizados recursos institucionais, confirmar licença e atribuição.
+
+| Nº | Imagem candidata | Função didática e legenda | Proveniência/validação |
+|---|---|---|---|
+| 1 | Modelo de cuidado paliativo integrado | Duas curvas conceituais de terapia modificadora e alívio de sintomas que coexistem | Diagrama original e legenda OMS/PNCP |
+| 2 | Mapa da PNCP-SUS 2026 | Fluxo APS, atenção domiciliar, urgência, SAMU, EMCP e EAACP | Infográfico autoral baseado na portaria 10.181/2026 |
+| 3 | Dor total de Cicely Saunders | Diagrama dos domínios físico, social, emocional e espiritual | Arte própria com atribuição de conceito |
+| 4 | ESAS-r como ficha fictícia | Exemplo didático de escala 0–10 com sintomas e reavaliação | Recriação sem copiar instrumento protegido integralmente |
+| 5 | PPS: domínios, não prognóstico absoluto | Eixo 100–0, exemplos funcionais e ressalvas prognósticas | Gráfico original e fontes de escala |
+| 6 | Trajetórias de doença avançada | Câncer, insuficiência orgânica e fragilidade com incerteza clínica | Gráfico autoral não determinístico |
+| 7 | PAC e DAV | Processo longitudinal, decisões, documentação e revisão | Fluxograma original com CFM 1.995/2012 |
+| 8 | Ortotanásia versus distanásia | Quadro com objetivo, proporcionalidade e manutenção do cuidado | Tabela autoral e norma CFM 1.805/2006 |
+| 9 | SPIKES em seis etapas | Entrevista clínica estruturada com exemplos de perguntas | Infográfico original, atribuição a Baile 2000 |
+| 10 | NURSE — mapa de comunicação | Cinco ações de resposta empática, com frases simples | Card autoral de ensino |
+| 11 | Ask–Tell–Ask | Ciclos de pergunta, informação curta e verificação | Fluxo original |
+| 12 | ESAS e dor por mecanismo | Somática, visceral, neuropática e sintomas que pedem avaliação | Desenho anatômico/esquema original |
+| 13 | Opioide: administração regular e resgate | Linha do tempo conceitual sem prescrição por peso | Gráfico autoral revisado por farmacêutico |
+| 14 | Plano de avaliação de dispneia | Sintoma versus hipoxemia, causas reversíveis, medidas físicas | Fluxo original e dados ilustrativos fictícios |
+| 15 | Delirium hipoativo e hiperativo | Comparação de sinais e precipitantes reversíveis | Ilustração educativa original |
+| 16 | Constipação/fecaloma | Esquema do escape fecal paradoxal e sinais de obstrução | Diagrama anatômico, sem imagem de paciente |
+| 17 | Últimos dias: comunicação com a família | Linha do tempo esquemática, com incerteza e conforto | Gráfico autoral sem estimar data de óbito |
+| 18 | Sedação proporcional | Fluxo de identificação de refratariedade, consentimento e reavaliação | Diagrama próprio revisado por especialista |
+| 19 | Conversa sobre RCP/UTI | Matriz de benefício, ônus e preferências | Tabela original CFM/PNCP |
+| 20 | Alta domiciliar segura | Checklist de cuidador, equipe, medicações, contatos e crise | Infográfico autoral alinhado à PNCP |
+| 21 | Luto e cuidados após óbito | Apoio antes e após morte, necessidades da família | Diagrama original sem imagem alarmista |
+| 22 | Rede pediátrica de apoio | Criança, responsáveis, irmãos, escola, reabilitação e saúde | Ilustração original inclusiva |
+
+### Padrões técnicos e éticos para imagens
+
+- A prioridade é um **recurso que ensine conduta e raciocínio**, não aparência decorativa.
+- Em escalas ESAS e PPS, não produzir ficha “oficial” falsa nem copiar imagem protegida sem licença; usar esquema explicativo e citar a fonte.
+- Em gráficos de prognóstico, indicar **trajetória hipotética**, sem inserir tempos de sobrevida inventados.
+- As figuras de SPIKES, NURSE, ortotanásia e PAC devem mostrar etapas reais, incluindo escuta e documentação.
+- Diagramas farmacológicos não devem trazer dose isolada de opioide/sedativo que possa ser copiada por leigo como prescrição.
+- Não usar foto de paciente real agonizante, familiares em luto ou criança sem consentimento/licença adequada.
+- Diagrama autoral pode ser desenhado em vetor; se convertido a WebP para a LURIA, preservar texto legível e alt text descritivo.
+- Integrar no capítulo pertinente, sem agrupar os 22 desenhos em uma galeria desconectada do texto.
+- Aprovar em Admin cada arquivo com fonte, revisão de especialista e teste desktop/PWA.
+
+## 29. Integração LURIA: flashcards, questões e ensino longitudinal
+
+Esta apostila complementa as aulas 170 (Ética/sigilo/prontuário), 175 (Declaração de óbito), 161 (Sepse), 177 (Complicações pós-operatórias), 179 (Câncer de endométrio) e a base de oncologia. Ela deve ser etiquetada **Preventiva / Bioética / Cuidados Paliativos / Comunicação de más notícias**, com casos de clínica e pediatria cruzados por área, evitando classificar automaticamente cada questão como Oncologia.
+
+**Flashcards essenciais para derivação futura:** conceito OMS/PNCP; início precoce; domínio físico/psicossocial/espiritual; ESAS; PPS; PAC versus DAV; normas CFM 1.805/2006 e 1.995/2012; ortotanásia/distanásia; ONR não é abandono; SPIKES e seus seis passos; NURSE; Ask–Tell–Ask; dor total; morfina e função renal; constipação por opioide; dispneia sem hipóxia; delirium hipoativo; obstrução mecânica e pró-cinético; caquexia; hidratação final; critérios de sedação proporcional; apoio pediátrico; plano de alta domiciliar; luto antecipatório.
+
+**Banco de questões:** manter as 20 questões inéditas e comentários de A–D, com referências da norma aplicável. Se o aluno errar uma questão de DAV, ligar à seção 7; de SPIKES, à seção 9; de dispneia, à seção 12; de sedação, à 18.
+
+## 30. Revisão editorial e limitações
+
+**Cobertura da Aula 180:** introdução, OMS/PNCP-SUS 2026, elegibilidade, sofrimento total, ESAS/PPS, PAC/DAV, ética, SPIKES/NURSE, decisões sobre suporte, dor, dispneia, náuseas, constipação, delirium, caquexia, sedação proporcional, últimos dias, oncologia e doenças não oncológicas, pediatria, atenção domiciliar e luto; **12 casos clínicos estruturados, 20 questões originais comentadas alternativa por alternativa e 22 candidatas visuais**.
+
+### Checklist de auditoria editorial
+
+- [x] Cuidados paliativos não confundidos com terminalidade obrigatória ou abandono.
+- [x] PNCP 2024 e atualização 2026 corretamente identificadas.
+- [x] DAV e PAC distinguidos; CFM 1.995/2012 e 1.805/2006 separados.
+- [x] Comunicação SPIKES e NURSE com perguntas concretas.
+- [x] Decisões proporcionais avaliadas intervenção por intervenção.
+- [x] Sintomas físicos e psicossociais com raciocínio clínico e alternativas.
+- [x] Uso de opioides e sedação apresentado com ressalvas farmacológicas e éticas.
+- [x] Crianças, doenças não oncológicas, APS e atenção domiciliar contempladas.
+- [x] 12 casos e 20 exercícios com justificativas individualizadas.
+- [x] Curadoria planejada de 22 candidatos visuais.
+
+### Pendências indispensáveis para publicação
+
+- [ ] Revisão clínica independente por médico paliativista, bioeticista, psicólogo clínico e farmacêutico hospitalar.
+- [ ] Confirmar disponibilidade SUS de equipe/medicações e procedimentos nas regiões atendidas.
+- [ ] Validar equivalências, doses e rotas de opioides e sedação em protocolo institucional, não usar apostila como prescrição.
+- [ ] Revisar normativas CFM e PNCP na data da publicação, incluindo fluxos de documentação.
+- [ ] Produzir/licenciar, aprovar e comprimir imagens/diagramas (WebP).
+- [ ] Converter rascunho para HTML/content.json nativo, indexar no cronograma e testar desktop/PWA.
+- [ ] Checar links cruzados, acessibilidade de tabelas e desempenho em tela móvel.
+
+**Estado:** preenchimento editorial concluído em formato Markdown, **não publicado como apostila nativa e ainda não certificado para decisão assistencial**.
