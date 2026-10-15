@@ -504,3 +504,126 @@ Uma paciente com mioma FIGO 4, adenomiose e pólipo pode ter sangramento, dor e 
 **Conduta:** tratamento dirigido à adenomiose, desejo reprodutivo e sintomas; não confundir êxito técnico com resolução de toda a síndrome.
 
 **Por que importa:** duas causas estruturais podem coexistir e necessitar estratégias distintas.
+
+
+## 18. Questões originais comentadas para residência
+
+### Questão 1 — FIGO 1 ou 2?
+Ultrassom mostra mioma com projeção submucosa e **65% da lesão no miométrio**. Qual tipo FIGO?
+
+A. 0. B. 1. C. 2. D. 6. E. 7.
+
+**Gabarito: C.** Tipo 2 tem componente intramural ≥50%. A é pediculado totalmente intracavitário; B tem menos da metade intramural; D é predominantemente subseroso; E, pediculado subseroso. **Revisão:** quanto maior penetração, maior complexidade para ressecção histeroscópica.
+
+### Questão 2 — FIGO 3
+Um nódulo está inteiramente no miométrio, encosta no endométrio sem deformar a cavidade e não toca a serosa. Qual é o tipo?
+
+A. 0. B. 1. C. 2. D. 3. E. 7.
+
+**Gabarito: D.** Tipo 3 é intramural em contato com endométrio; A–C projetam-se para a cavidade e E é externo pediculado. **Revisão:** o tipo 3 não é simplesmente um tipo 4 distante da cavidade.
+
+### Questão 3 — Mioma incidental e sangramento
+Uma mulher apresenta anemia e menorragia, mas a única lesão na imagem é mioma subseroso de 1 cm. Qual o melhor passo?
+
+A. Indicar miomectomia obrigatória.  
+B. Avaliar gravidade, gestação quando aplicável, ferro e outras etiologias para SUA.  
+C. Prescrever antibiótico em todo caso.  
+D. Confirmar sarcoma com CA-125.  
+E. Não investigar por ser lesão pequena.
+
+**Gabarito: B.** A superatribui; C não tem indicação universal; D não é teste de sarcoma; E negligencia sintoma e anemia. **Revisão:** uma lesão concomitante nem sempre é a causa.
+
+### Questão 4 — Sangramento pós-menopausa com pólipo
+Paciente de 67 anos com spotting e pólipo endometrial à US. Qual opção melhor?
+
+A. Ultrassom confirma histologia benigna.  
+B. Nada fazer porque o sangramento foi escasso.  
+C. Investigar endométrio e obter histologia conforme via indicada.  
+D. Dosar FSH para definir histologia.  
+E. Tratar apenas deficiência de ferro.
+
+**Gabarito: C.** A/B confundem morfologia e risco; D é irrelevante; E aborda consequência, não a causa. **Revisão:** todo sangramento pós-menopausa deve receber avaliação apropriada.
+
+### Questão 5 — Fertilidade com mioma FIGO 7
+Mulher infértil, cavidade normal, pequeno mioma pediculado subseroso assintomático, parceiro ainda sem investigação. A melhor conduta?
+
+A. Miomectomia de rotina para elevar gravidez.  
+B. Embolização obrigatória.  
+C. Completar investigação reprodutiva e evitar cirurgia só pelo mioma subseroso, cujo benefício fértil não está demonstrado.  
+D. Histerectomia.  
+E. Não investigar outros fatores.
+
+**Gabarito: C.** A/B propõem intervenção sem benefício comprovado; D impede gestação; E ignora infertilidade multifatorial. **Revisão:** a evidência favorece atenção especial à **deformidade cavitária**.
+
+### Questão 6 — Diagnóstico e tratamento da lesão focal
+Paciente com spotting persistente e imagem de lesão intracavitária que requer avaliação direta. Qual procedimento permite visualização e possível retirada/histologia?
+
+A. Colonoscopia. B. Histeroscopia. C. Cistoscopia. D. Cintilografia óssea. E. Dosagem de estradiol.
+
+**Gabarito: B.** Os demais não visualizam diretamente a cavidade uterina para retirar pólipo/mioma apropriado. **Revisão:** histeroscopia é técnica dirigida, distinta de amostragem cega.
+
+### Questão 7 — SIU-LNG
+Sobre dispositivo intrauterino com levonorgestrel e miomas, qual afirmação correta?
+
+A. Remove todos os nódulos.  
+B. Não depende da anatomia cavitária.  
+C. Pode diminuir sangramento se a cavidade comporta inserção/posição, mas não remove pólipo nem mioma.  
+D. É indicado para tentar gestar no mesmo ciclo.  
+E. Dispensa investigação endometrial em risco.
+
+**Gabarito: C.** A confunde sintoma e anatomia; B ignora distorção/expulsão; D contradiz efeito contraceptivo; E negligencia malignidade. **Revisão:** controlar fluxo não é remover tumor.
+
+### Questão 8 — Agonista de GnRH
+Qual característica define corretamente um agonista de GnRH no tratamento de mioma?
+
+A. Pode reduzir temporariamente volume e sangramento, com riscos de hipoestrogenismo e limitação de duração.  
+B. Elimina definitivamente a possibilidade de recorrência.  
+C. Não afeta osso.  
+D. Preserva ovulação regular em uso contínuo supressivo.  
+E. É primeira escolha obrigatória para pólipo cervical.
+
+**Gabarito: A.** B é falso por recrescimento possível; C omite perda de massa óssea; D ignora supressão; E não corresponde à indicação. **Revisão:** costuma ser ponte/estratégia selecionada.
+
+### Questão 9 — Embolização e reprodução
+Mulher com desejo reprodutivo ativo pergunta se embolização e miomectomia são equivalentes para nascimento vivo.
+
+A. Equivalência comprovada para todas as pacientes.  
+B. Efeitos reprodutivos podem ser diferentes/incertos; comparar alternativas individualmente com especialista.  
+C. Embolização é a mesma coisa que polipectomia.  
+D. Embolização é obrigatória em todo mioma ≥3 cm.  
+E. Não exige discutir riscos ovarianos.
+
+**Gabarito: B.** A exagera evidência; C confunde procedimento endovascular com endoscópico; D transforma critério de encaminhamento em obrigação; E omite risco. **Revisão:** preservar útero não garante igual desfecho gestacional.
+
+### Questão 10 — Morcelamento e massa uterina atípica
+Paciente pós-menopáusica com massa heterogênea crescente e sangramento solicita fragmentação eletromecânica sem contenção para retirada. Melhor princípio?
+
+A. Sempre seguro porque miomas são benignos.  
+B. Avaliar risco de doença maligna, alternativas e evitar dispersão potencial de lesão suspeita.  
+C. CA-125 normal exclui malignidade.  
+D. Não é necessário consentimento.  
+E. Sempre realizar curetagem cega como única investigação.
+
+**Gabarito: B.** A ignora risco oculto; C não exclui sarcoma; D viola decisão compartilhada; E pode não diagnosticar massa miometrial. **Revisão:** morcelamento requer seleção e informação claras.
+
+### Questão 11 — Duas doenças no mesmo útero
+Após polipectomia com histologia benigna, spotting desaparece, mas dismenorreia e menorragia persistem; US sugere adenomiose. Qual é a melhor leitura?
+
+A. A cirurgia do pólipo falhou necessariamente.  
+B. É preciso avaliar e tratar a causa remanescente, possivelmente adenomiose.  
+C. Repetir polipectomia sem lesão.  
+D. Retirar todos os miomas inexistentes.  
+E. Ignorar sintomas por histologia benigna.
+
+**Gabarito: B.** A pressupõe etiologia única; C/D indicam cirurgia sem alvo; E desvaloriza problema clínico. **Revisão:** doenças podem coexistir, com respostas terapêuticas distintas.
+
+### Questão 12 — Mioma com obstrução urinária
+Paciente apresenta massa cervical uterina, dificuldade miccional e hidronefrose. Qual prioridade?
+
+A. Só analgésico e retorno anual.  
+B. Avaliar anatomia/função renal e planejar tratamento efetivo com equipe habilitada.  
+C. Esperar surgir sangramento uterino.  
+D. Antibiótico empírico prolongado em toda paciente.  
+E. Histeroscopia obrigatória, independentemente de localização.
+
+**Gabarito: B.** A/C ignoram lesão de órgão; D não trata obstrução mecânica; E não se aplica indiscriminadamente a lesão cervical profunda. **Revisão:** indicação de intervenção não depende apenas de menorragia.
