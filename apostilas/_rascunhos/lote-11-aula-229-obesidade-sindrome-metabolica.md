@@ -315,6 +315,45 @@ Triar deficiências de ferro, B12, folato, vitamina D, ingestão proteica, fator
 ### 7.3 Sinais cirúrgicos de urgência
 Dor abdominal intensa ou progressiva, taquicardia sustentada, febre, vômitos persistentes, incapacidade de ingerir líquidos, sangramento gastrointestinal, síncope e sinais de peritonite após cirurgia demandam **avaliação hospitalar imediata**. Hérnia interna após bypass pode ter sintomas intermitentes e risco de isquemia intestinal; não tranquilizar paciente apenas por exame inicial pouco alterado quando suspeita clínica é relevante.
 
+
+### 7.4 Revisão regulatória de 2026: indicação, equipe e técnicas
+A **Resolução CFM 2.429/2025** deve ser lida em sua **versão consolidada com a alteração feita pela Resolução CFM 2.470/2026**. A modificação atingiu, entre outros elementos, a **composição da equipe médica multiprofissional** que avalia e acompanha o paciente; o texto consolidado nomeia endocrinologista e metabologista, cardiologista, psiquiatra, nutrólogo, nutricionista e psicólogo, com exceção justificada para ausência de determinados especialistas médicos conforme os termos da atualização. Não reproduzir a versão antiga da equipe como se permanecesse integralmente inalterada em 2026.
+
+**Elegibilidade não é autorização automática de operar:** a norma prevê discussão multidisciplinar e avaliação de resposta ao tratamento clínico, contraindicações, capacidade de seguimento, consentimento e recursos hospitalares. Para pacientes com **IMC ≥60 kg/m²**, ressalta preparo estrutural do hospital e equipamentos adequados. O risco de anestesia, via aérea e mobilização deve ser avaliado, não presumido com base apenas no número.
+
+**Técnicas primárias altamente recomendadas pela resolução:** bypass gástrico em Y de Roux e gastrectomia vertical (sleeve). **Técnicas alternativas reconhecidas com indicação principalmente revisional:** duodenal switch com gastrectomia vertical, bypass de anastomose única, gastrectomia vertical com anastomose duodenoileal e gastrectomia vertical com bipartição do trânsito. **Não recomendadas no texto:** banda gástrica ajustável e cirurgia de Scopinaro. Essas categorias regulatórias são distintas das classificações anatômicas históricas apresentadas por resumos antigos.
+
+**Adolescentes:** a norma permite avaliação, a partir de **16 anos**, utilizando critérios aplicáveis a adultos, mas exige maturidade fisiológica/psicológica e decisão compartilhada com suporte familiar. Em circunstâncias excepcionais, admite consideração entre **mais de 14 e menos de 16 anos** com IMC >40 e complicações que representem risco de vida; isso **não equivale** a indicação de rotina. Na pessoa idosa, não estabelecer “idade máxima” universal sem avaliação de fragilidade, cognição, funcionalidade, expectativa de benefício e riscos.
+
+### 7.5 Anatomia da cirurgia e por que as complicações diferem
+No **sleeve**, a maior parte da grande curvatura gástrica é ressecada, formando tubo gástrico. Há alteração hormonal, motilidade e capacidade de ingestão. A anatomia intestinal em geral é preservada, mas ainda podem ocorrer deficiências nutricionais por menor ingestão, intolerância e alteração digestiva. Refluxo de novo ou agravado pode influenciar decisão de técnica e acompanhamento endoscópico conforme cenário.
+
+No **bypass em Y de Roux**, cria-se pequeno reservatório proximal unido ao jejuno, e o trânsito alimentar exclui parte do estômago e do duodeno. O desvio altera sinais enteroendócrinos e acesso aos sítios de absorção de nutrientes. Refluxo pode melhorar em muitos casos, mas há riscos particulares: úlcera marginal, deficiência de ferro/B12, hérnia interna, obstrução, dumping e hipoglicemia pós-prandial. Não dizer que é “somente disabsortivo” ou que o resultado metabólico é simplesmente consequência de redução mecânica do volume.
+
+**Dumping precoce** costuma estar associado à passagem rápida de nutrientes para alças intestinais, com manifestações vasomotoras e gastrointestinais após refeições. **Hipoglicemia pós-bariátrica** pode apresentar sintomas neuroglicopênicos em período pós-prandial mais tardio; investigar glicemia documentada no momento, uso de antidiabéticos e diferenciais. O tratamento inclui ajustes nutricionais específicos e avaliação especializada quando persistente, não apenas rotular todas as tonturas como hipoglicemia.
+
+**Hérnia interna após bypass:** dor abdominal intermitente, por vezes relacionada a refeições, pode preceder obstrução e isquemia. A tomografia deve ser interpretada junto à história; imagem inicial sem obstrução franca não exclui complicação relevante em pessoa com dor recorrente ou progressiva. Dor importante, taquicardia, vômitos persistentes e sinais peritoneais exigem cirurgia/urgência.
+
+### 7.6 Seguimento nutricional: reconhecer sinais e não depender de peso
+O cuidado nutricional depois de cirurgia bariátrica deve ser **longitudinal** e proporcional ao procedimento. Antes da operação, corrigir deficiências quando possível; depois, garantir ingestão proteica, hidratação, suplementação prescrita e monitorização clínica/laboratorial. Fontes como BOMSS 2020 e ASMBS descrevem acompanhamento **durante toda a vida**, com vigilância mais frequente no período inicial. O plano de exames e doses deve ser específico do tipo de cirurgia, riscos e protocolos da equipe.
+
+| Deficiência/complicação | Pistas clínicas e investigação | Consequência de perder o diagnóstico |
+|---|---|---|
+| Ferro | Anemia, fadiga, queda de desempenho; ferritina e parâmetros de ferro com interpretação inflamatória | Anemia persistente e prejuízo funcional |
+| Vitamina B12 | Anemia, parestesias, ataxia, alterações cognitivas; B12 e avaliação funcional se pertinente | Neuropatia ou mielopatia parcialmente irreversível |
+| Tiamina | Vômitos prolongados, baixa ingestão, confusão, ataxia ou sinais oculomotores | **Wernicke é emergência**; reposição parenteral não deve esperar resultados |
+| Folato | Anemia macrocítica e baixa ingestão | Risco hematológico, relevância reprodutiva |
+| Vitamina D/cálcio | Alterações ósseas, fraturas e hiperparatireoidismo secundário | Doença óssea metabólica e fragilidade |
+| Proteína/energia | Fraqueza, perda muscular desproporcional, edema, ingestão insuficiente | Sarcopenia, desnutrição e pior recuperação |
+| Cobre (casos selecionados) | Anemia e mieloneuropatia em pacientes de maior risco | Neuropatia/mielopatia que pode ser subdiagnosticada |
+
+**Sinais pós-operatórios de retorno imediato:** dor abdominal forte/progressiva, vômitos persistentes com incapacidade de manter líquidos, febre ou taquicardia sustentada, sangramento digestivo, falta de ar, alterações neurológicas subagudas ou sinais de desidratação. É erro aconselhar “aguardar adaptação à dieta” diante desses achados.
+
+### 7.7 Cirurgia e medicamentos não são caminhos rivais
+Tanto intervenção farmacológica quanto cirurgia fazem parte de um plano de cuidado da obesidade como condição crônica. O paciente pode necessitar tratamento medicamentoso antes, depois ou em vez da cirurgia. A existência de fármacos potentes **não revoga** critérios cirúrgicos, e cirurgia não elimina necessidade de cuidar de dieta, atividade física, risco cardiovascular, saúde mental e deficiências nutricionais. Em caso de recidiva ponderal pós-cirurgia, reavaliar anatomia, comportamento alimentar, comorbidades, medicamentos e possibilidade de novas estratégias, sem culpabilizar a pessoa.
+
+
+
 ## 8. Algoritmo clínico de manejo
 **Pessoa com excesso de adiposidade ou doença associada →** caracterizar histórico, função e preferência de tratamento. Calcular IMC, medir cintura e pesquisar risco/complicações.
 
