@@ -12,7 +12,7 @@
 | Aula | Tema | Status | Arquivo de trabalho |
 |---:|---|---|---|
 | 41 | Choque circulatório | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
-| 42 | Princípios de técnica cirúrgica | RASCUNHO_INICIADO | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
+| 42 | Princípios de técnica cirúrgica | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
 | 43 | Puericultura e prevenção de acidentes | RASCUNHO_INICIADO | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 45 | Participação e controle social no SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
@@ -45,6 +45,14 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 42 — ampliação clínica, casos e questões (14/10/2026)
+
+O arquivo `apostilas/_rascunhos/lote-03/42-tecnica-cirurgica.md` foi preservado e expandido de 7.038 para **92.340 caracteres brutos** (aproximação automatizada de **78.444 caracteres didáticos**, descontando seção editorial, marcação e URLs; **não** é validação humana). São **24 capítulos numerados, 8 casos clínicos desenvolvidos e 12 questões de múltipla escolha**, cada qual com quatro alternativas comentadas. Acrescentados quadros de instrumental, classes de ferida, fios/agulhas e três ciclos de cuidado, além de fluxos de feridas, sangramento, ISC e falhas de contagem.
+
+Fontes prioritárias verificadas em outubro de 2026: Ministério da Saúde — Cirurgia Segura, Anvisa — modelo de prevenção de ISC, OMS — Checklist de Segurança Cirúrgica e prevenção de ISC, NICE NG125 e EHS/AHS 2022 para fechamento de laparotomia mediana eletiva. Lidos no Drive três materiais adjacentes (retalhos, avaliação pré-anestésica e hérnias), mas **não foi localizada apostila geral diretamente equivalente**, portanto benchmarking de cursinho completo permanece pendente.
+
+**Status correto:** TEXTO_APROFUNDADO_REVISAO_PENDENTE. Falta revisão médico-científica especializada, validação farmacológica por procedimento, curadoria e aprovação Admin das imagens, conversão para HTML, testes PWA e autossuficiência. Não publicar nem homologar; nenhuma alteração ao catálogo público foi efetuada.
 
 ## Aula 41 — conversão visual realizada (14/10/2026)
 
