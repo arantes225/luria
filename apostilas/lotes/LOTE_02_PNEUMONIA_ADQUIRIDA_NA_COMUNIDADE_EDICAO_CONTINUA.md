@@ -415,13 +415,9 @@ Reimagem é razoável quando há **piora ou resposta insuficiente**, infiltrado 
 
 Aspiração e disfagia aumentam probabilidade de pneumonia em pessoas com alterações neurológicas ou de deglutição, mas não justificam cobertura anaeróbia indiscriminada em todo caso. Imunossuprimidos requerem diferencial expandido e protocolos próprios. Gestantes, idosos frágeis e pacientes com doença renal exigem ajuste de estratégia. Prevenção inclui vacinação recomendada, cessação tabágica e cuidado de condições predisponentes.
 
-**Caso 1.** Homem de 42 anos com febre, tosse produtiva, infiltrado lobar e sinais vitais estáveis. Avaliar comorbidades, oxigenação e capacidade de seguimento antes de decidir local de tratamento. **Por que importa:** imagem isolada não define internação.
 
-**Caso 2.** Mulher de 80 anos com confusão nova, frequência respiratória elevada e hipotensão, sem febre alta. Há suspeita de PAC grave ou sepse; estabilizar e investigar, sem esperar manifestações clássicas. **Por que importa:** apresentação atípica no idoso exige atenção à perfusão e consciência.
 
-**Questão 1.** Qual situação mais claramente favorece tratamento hospitalar? A) Consolidação pequena em pessoa estável; B) Hipoxemia significativa e confusão aguda; C) Tosse isolada; D) Febre controlada com antitérmico. **Gabarito B.** Hipoxemia e disfunção neurológica sinalizam gravidade. A, C e D não justificam internação por si. **Revisão:** gravidade é clínica e funcional, não apenas radiológica.
 
-**Questão 2.** Paciente sem melhora e com derrame pleural novo após iniciar terapia. Próxima etapa? A) Repetir indefinidamente o mesmo esquema; B) Considerar complicação pleural e reavaliar; C) Declarar cura; D) Suspender avaliação microbiológica em qualquer circunstância. **Gabarito B.** A posterga diagnóstico, C contradiz evolução e D impede investigação indicada. **Revisão:** falha terapêutica exige busca ativa de complicações.
 
 ### 8.2 Populações especiais com conduta diferente
 
@@ -446,6 +442,36 @@ Ajuste de antibiótico deve levar em conta TFGe e risco nefrotóxico. Em insufic
 Doença pulmonar estrutural favorece colonização e patógenos específicos, além de pior reserva respiratória. Paciente com PAC e DPOC pode ter simultaneamente exacerbação obstrutiva, alterando necessidade de broncodilatadores/corticoide por comorbidade. Pneumonia recorrente no **mesmo lobo** levanta suspeita de obstrução anatômica (tumor, corpo estranho, estenose), justificando imagem e eventual broncoscopia orientada. Não repetir o mesmo antibiótico várias vezes sem procurar causa.
 
 ## 9. Casos clínicos comentados
+
+### Caso 1 — Pneumonia lobar sem critérios imediatos de internação
+
+**Apresentação:** homem de 42 anos, previamente saudável, tem três dias de febre, calafrios, tosse produtiva e dor torácica ventilatório-dependente à direita. Está alerta, PA 122/78 mmHg, FC 92/min, FR 20/min, temperatura 38,1 °C e SpO2 **97% em ar ambiente**. Radiografia evidencia consolidação em lobo inferior direito. Não há história de hospitalização recente nem falha de tratamento.
+
+**Hipótese:** pneumonia adquirida na comunidade (PAC) em adulto sem sinais atuais de gravidade. Vírus respiratórios e agentes bacterianos comunitários permanecem possíveis, com escolha diagnóstica orientada pelo contexto. Dor pleurítica isolada não caracteriza derrame complicado.
+
+**Raciocínio:** é necessário **confirmar a síndrome respiratória**, avaliar fisiologia e só depois estimar local de cuidado. CURB-65 é zero se confusão, ureia elevada, FR ≥30, hipotensão e idade ≥65 estiverem ausentes. O valor zero favorece baixo risco, mas **não garante alta** quando há hipoxemia não contemplada no escore, incapacidade de ingerir líquidos ou insuficiência de suporte social. ATS/IDSA 2019 prefere PSI para apoiar decisão hospitalar quando disponível.
+
+**Exames e interpretação:** radiografia e oximetria já estabelecem contexto; considerar função renal e outros exames conforme comorbidade, desidratação e risco. Cultura de escarro e hemocultura **não são obrigatórias para toda PAC leve ambulatorial**, pois precisam ter possibilidade de alterar manejo. Diferenciar TB, tromboembolismo e insuficiência cardíaca se surgirem pistas clínicas incompatíveis.
+
+**Conduta:** com boa capacidade de via oral, seguimento e sem outros riscos, tratamento ambulatorial pode ser apropriado, incluindo antibioticoterapia **quando PAC bacteriana for provável** e esquema compatível com alergias, epidemiologia e diretriz local. Orientar duração conforme estabilidade, sinais de deterioração, hidratação e data de reavaliação. Não prolongar automaticamente antibiótico pela persistência de uma opacidade que pode regredir mais lentamente que sintomas.
+
+**Por que este caso importa:** a **decisão de alta** exige combinação de risco, oxigenação, função e segurança de seguimento; a consolidação radiológica isolada não define internação.
+
+### Caso 2 — Idosa confusa e hipotensa, mesmo sem febre alta
+
+**Apresentação:** mulher de 80 anos, hipertensa e independente até a semana anterior, inicia fraqueza, falta de ar e redução da alimentação. Chega à urgência com confusão nova, FR **34/min**, PA **84/48 mmHg**, FC 114/min, temperatura 37,6 °C e SpO2 **88% em ar ambiente**. Radiografia evidencia infiltrados bilaterais, mas não se sabe se todos representam infecção.
+
+**Hipóteses:** PAC com **disfunção respiratória e circulatória grave**, possível sepse/choque séptico; considerar também edema cardiogênico, embolia pulmonar ou outra fonte infecciosa, inclusive coexistente.
+
+**Raciocínio:** o idoso pode não montar resposta febril intensa. Confusão e taquipneia indicam risco, e hipotensão exige **avaliação imediata de perfusão e ressuscitação monitorada**. Critério maior de PAC grave ATS/IDSA inclui choque que requer vasopressores, mas não é adequado aguardar a necessidade formal de vasopressor para reconhecer instabilidade. A SpO2 baixa é gravidade adicional não resolvida pela simples conta de CURB-65.
+
+**Exames e interpretação:** oxigenação com avaliação de gasometria se necessário, lactato quando indicado, função renal, eletrólitos, hemograma, microbiologia em cenário grave **sem atrasar antibiótico**, exame cardiopulmonar e imagem dirigida a diferenciais/complicações. Ultrassonografia beira-leito pode ajudar a investigar congestão, função cardíaca ou derrame, conforme equipe habilitada.
+
+**Conduta:** abordagem ABC, oxigênio/suporte ventilatório escalonado conforme trabalho respiratório, monitorização de pressão/perfusão, antimicrobianos empíricos oportunos em quadro de PAC grave/suspeita de sepse e ressuscitação guiada por resposta, evitando excesso indiscriminado de volume em eventual cardiopatia. Considerar UTI e investigação de necessidade de vasopressor ou ventilação invasiva por equipe capacitada. Reavaliar resposta e microbiologia para direcionar terapia.
+
+**Por que este caso importa:** na idosa, **confusão, taquipneia, hipoxemia e hipotensão** podem ser mais importantes que a temperatura; não se deve esperar pneumonia “clássica” para agir.
+
+
 
 ### Caso 3 — Hipoxemia apesar do CURB-65 baixo
 
@@ -498,6 +524,36 @@ Mulher de 54 anos, pneumonia direita com febre inicial e melhora parcial após 4
 
 
 ## 10. Questões autorais comentadas
+
+### Questão 1 — Internação e fisiologia além do escore
+
+Adulto apresenta radiografia compatível com PAC. Qual achado abaixo mais fortemente favorece avaliação e tratamento **hospitalares imediatos**?
+
+A) Consolidação limitada a um segmento em pessoa normoxêmica, estável e com suporte domiciliar.
+
+B) Confusão aguda associada a SpO2 84% em ar ambiente e desconforto respiratório importante.
+
+C) Tosse produtiva isolada sem alteração de sinais vitais.
+
+D) Temperatura de 38 °C com boa ingestão oral, saturação normal e ausência de outros riscos.
+
+**Gabarito: B.** Confusão, hipoxemia e esforço respiratório são manifestações de disfunção potencialmente grave e indicam atendimento hospitalar. **Alternativa A:** extensão radiológica limitada não é critério de internação por si. **Alternativa C:** tosse isolada não traduz gravidade sistêmica. **Alternativa D:** febre moderada isolada não obriga hospitalizar quando há segurança clínica e social. **Mini-revisão:** use escore e julgamento clínico; hipoxemia e suporte necessário não podem ser anulados por CURB-65 baixo.
+
+### Questão 2 — Falha terapêutica e derrame pleural
+
+Mulher internada por PAC recebe antibiótico apropriado e, no terceiro dia, apresenta febre recorrente, dispneia pior e novo derrame pleural **loculado** ao ultrassom. Qual é a atitude mais importante?
+
+A) Repetir indefinidamente o mesmo antibiótico sem reavaliar a pleura.
+
+B) Procurar derrame parapneumônico complicado/empiema e avaliar necessidade de drenagem, microbiologia e controle de foco.
+
+C) Declarar cura porque o esquema empírico inicial era adequado.
+
+D) Suspender toda investigação, pois imagem não deve ser usada na pneumonia.
+
+**Gabarito: B.** Septações e deterioração levantam necessidade de **controle do foco pleural** além da escolha de antimicrobiano. **Alternativa A:** ignora complicação anatômica. **Alternativa C:** confunde adequação empírica inicial com resolução de infecção. **Alternativa D:** exames de imagem são dirigidos a evolução e complicações quando indicados. **Mini-revisão:** piora após tratamento pede revisar etiologia, complicações, diagnósticos concorrentes e suporte orgânico, não apenas espectro antibiótico.
+
+
 
 ### Questão 3 — Estratificação
 Homem de 42 anos, confusão nova, FR 32/min, pressão 118/70, ureia normal, SpO2 89%. No CURB-65, qual pontuação tem?
