@@ -245,6 +245,102 @@ Riscos incluem reações transfusionais, **aloimunização**, hemólise retardad
 ### 5.4 Transplante e terapias emergentes
 **Transplante de células-tronco hematopoéticas** pode possibilitar cura hematológica em candidatos selecionados, com riscos de mortalidade, complicações imunológicas e infertilidade. Terapias celulares e gênicas têm evolução regulatória e disponibilidade específicas, e não devem ser apresentadas como tratamento rotineiro universal no SUS. Sempre distinguir evidência de pesquisa, registro regulatório e incorporação.
 
+
+### 4.2 Roteiro de investigação da microcitose em paciente com suspeita de hemoglobinopatia
+A microcitose aponta hemácias menores que a referência para idade, mas não define etiologia. Comece por idade, história familiar, período gestacional, sangramento, dieta, condições inflamatórias e distribuição étnico-geográfica sem estereótipos. No hemograma, avaliar Hb, **VCM, HCM, RDW e contagem absoluta de eritrócitos**. Um VCM muito baixo com anemia relativamente leve e eritrócitos numerosos sugere traço talassêmico, enquanto ferropenia frequentemente cursa com RDW elevado; ambos são padrões probabilísticos com grande sobreposição.
+
+A primeira comparação laboratorial útil costuma envolver **ferritina** e eventualmente **saturação de transferrina**, interpretadas com proteína C reativa/estado inflamatório quando indicado. Ferritina normal ou alta pode coexistir com deficiência de ferro em contexto inflamatório; portanto, não usar um único número sem contexto. Se deficiência de ferro confirmada, buscar causa; se traço talassêmico suspeito, solicitar cromatografia de alta eficiência (HPLC) ou eletroforese apropriada e considerar testes moleculares.
+
+**HbA₂ aumentada** apoia traço β-talassêmico, mas valores limítrofes ou concomitância de ferropenia/variantes de cadeia δ podem confundir. Na **α-talassemia**, eletroforese adulta pode ser normal. O laboratório não deve emitir “talassemia excluída” apenas por frações HbA/HbA₂/HbF dentro de limites comuns.
+
+### 4.3 Hemoglobinopatia sob transfusão recente: por que o padrão pode enganar
+Após concentrado de hemácias, parte da HbA identificada na análise é de **células transfundidas**, e a porcentagem de HbS pode parecer artificialmente menor. A investigação clínica depende de documento genotípico/triagem neonatal anterior, data da última transfusão e, se necessário, estudo molecular. Em programa transfusional crônico, quantificar HbS **pré-transfusional** possui utilidade terapêutica específica, mas não é idêntico a medir para diagnóstico de genótipo.
+
+Outras interferências incluem idade muito precoce, variantes que migram em posições próximas em certos métodos, e alterações quantitativas de HbF por terapia. Quando o resultado laboratorial for incompatível com história/hemograma, **não corrigir o paciente pelo papel**: confirmar metodologia, comparar exames prévios e discutir com laboratório especializado.
+
+### 4.4 Exames na crise aguda: perguntas específicas
+| Exame | Pergunta que pode responder | O que não prova isoladamente |
+|---|---|---|
+| Hemograma e reticulócitos | Houve queda de Hb? Há resposta medular? Plaquetopenia/sugestão de sequestro? | Não confirma nem exclui crise dolorosa simples |
+| Bilirrubinas, DHL | Intensidade de hemólise e hepatopatia associada | Não distingue todas as causas de dor abdominal |
+| Creatinina/eletrólitos | Desidratação, lesão renal, segurança dos analgésicos | Creatinina “normal” não exclui lesão renal inicial |
+| Hemocultura | Infecção invasiva quando indicada | Negatividade inicial não autoriza atrasar antibiótico |
+| RX de tórax/oximetria | Infiltrado e oxigenação na suspeita de STA | RX normal muito precoce não afasta progressão |
+| TC/RM cerebral | Hemorragia, isquemia, diferenciais de déficit focal | Imagem inicial não autoriza descartar AIT |
+| Tipagem, pesquisa de anticorpos | Planejamento de transfusão e reações | Pesquisa negativa não exclui toda reação hemolítica tardia |
+| Frações de Hb | Genótipo, objetivos de transfusão ou evolução conforme contexto | Pode ser distorcida por transfusão recente |
+
+**Hierarquia assistencial:** diante de déficit focal não se deve aguardar resultado de eletroforese; diante de sepse, não esperar positividade de hemocultura; diante de dor intensa, não aguardar marcador “confirmatório”. A investigação deve ser paralela à estabilização.
+
+### 4.5 Triagem neonatal: separar teste, confirmação e início do cuidado
+A triagem é estratégia populacional para antecipar cuidado e reduzir mortalidade, não um mecanismo que substitui consulta especializada. Um padrão sugestivo de doença falciforme precisa de **confirmação por método apropriado**, orientação familiar e seguimento de imediato conforme fluxo local. A confirmação não deve atrasar profilaxias e avaliações essenciais quando há forte suspeita.
+
+A orientação deve incluir reconhecimento de febre, sinais de sequestro, hidratação, vacinação e como acessar pronto atendimento, com linguagem acessível ao cuidador. É importante distinguir para a família **traço falciforme**, que não requer acompanhamento de doença falciforme da mesma forma, de HbSS/HbSC/HbS-talassemia. A recomendação de aconselhamento e avaliação de pais/parceiros deve respeitar privacidade e decisão individual.
+
+### 5.5 Hidroxicarbamida no PCDT 2024: elegibilidade e segurança de uso
+A hidroxicarbamida induz expressão de HbF e modifica parâmetros hematológicos/inflamatórios relevantes. Seu benefício não decorre de “curar” o alelo HbS, mas de reduzir a polimerização relativa da HbS e a frequência de complicações em perfis selecionados. A meta clínica inclui menos dor/STA e melhor estado geral, e não apenas elevar um marcador.
+
+A atualização brasileira é especialmente importante para pediatria: o Ministério da Saúde incorporou **hidroxicarbamida 100 mg para pessoas com doença falciforme a partir de nove meses** e tomou decisão específica de elegibilidade para crianças **entre 9 e 24 meses, mesmo sem sintomas**, nos genótipos definidos pelo protocolo (SS, Sβ⁰, Sβ⁺ grave e SD Punjab). Portanto, a regra de cursinho antigo “somente acima de três anos com múltiplas crises” **está desatualizada** no contexto do PCDT de 2024.
+
+**Antes de iniciar:** confirmar genótipo/idade/indicação; registrar hemograma e reticulócitos, função renal e hepática conforme protocolo; avaliar gravidez ou planejamento, estado nutricional, tratamentos e infecção aguda; discutir adesão, exames, acesso à formulação e aconselhamento reprodutivo. **Durante o tratamento:** monitorar leucócitos, neutrófilos, plaquetas, reticulócitos/Hb, efeitos adversos, resposta clínica e toxicidade medular. As decisões de titulação/pausa são feitas **por peso, reserva hematológica, função renal e critérios de segurança do PCDT**, não por um esquema fixo aprendido sem acompanhamento.
+
+Em termos didáticos, a dose de partida e o incremento precisam ser consultados na **tabela do protocolo aplicável a idade, genótipo e apresentação**. Registrar aqui uma dose única sem verificar integralmente a tabela do PCDT de 2024 criaria falsa segurança; portanto, na versão atual, **a dose exata permanece pendente de dupla conferência de bula/PCDT antes da certificação**, e não deve ser usada como modelo de prescrição.
+
+**Alerta:** em doente com anemia aguda e reticulocitopenia, diferenciar toxicidade medular da droga, crise aplásica e outras causas; a decisão de suspensão temporária é clínica e monitorizada. A hidroxicarbamida não substitui transfusão indicada por AVC de alto risco ou evento agudo grave, nem vacinação.
+
+### 5.6 Infecção e profilaxia no longo prazo
+Uma criança com doença falciforme de genótipo relevante deve receber prevenção de infecções conforme **PNI/CRIE** e diretrizes aplicáveis, com imunização pneumocócica, meningocócica, Hib, influenza e outras previstas por idade, histórico e condições de risco. **Não transformar uma sequência de vacinas do material antigo em calendário vigente de 2026**, porque valências e esquemas de resgate variam conforme programa nacional e disponibilidade.
+
+A **profilaxia antibiótica com penicilina** integra manejo de crianças com asplenia funcional em perfis definidos pelo protocolo, com idade de início/duração e alternativas por alergia conforme normas. Essa medida não autoriza dispensar avaliação de febre. A família deve saber onde buscar atendimento e informar a doença na triagem, mesmo quando não há crises recentes.
+
+No adulto, avaliar acesso à atualização vacinal e história de infecções, sem pressupor que uma criança vacinada há anos está automaticamente coberta por todo reforço aplicável. Para planejamento de esplenectomia por sequestros recorrentes ou outra indicação, vacinação/profilaxia precisam ser coordenadas com equipe hematológica e diretrizes para asplenia.
+
+### 5.7 Doppler transcraniano: não confundir velocidade, técnica e decisão
+A diretriz ASH 2020 recomenda **rastreamento anual por Doppler transcraniano (DTC/TCD)** em crianças de **2 a 16 anos** com HbSS ou HbS/β⁰ para prevenção primária de AVC. Em populações específicas com outros genótipos e hemólise importante, avaliação pode ser discutida. **Não generalizar a recomendação anual a todos os pacientes HbAS, HbSC ou adultos sem discriminar genótipo**.
+
+No **DTC não imageado**, o limiar clássico de alto risco é velocidade média temporal máxima (TAMMV) próxima/acima de **200 cm/s** nas artérias avaliadas pelos protocolos; o valor exato de decisão e repetição dependem de técnica e das recomendações específicas da diretriz. No DTC **imageado**, os limites numéricos podem ser diferentes — portanto, **não misturar velocidade sistólica máxima, TAMMV e TAMX** como se fossem a mesma medida. Exame limítrofe precisa de repetição e interpretação qualificada, não classificação precipitada.
+
+Para crianças selecionadas com DTC anormal, um programa de transfusões regulares com alvo de **HbS <30%** e controle da hemoglobina reduz risco de AVC. A substituição do programa por hidroxicarbamida só pode ser cogitada em subgrupos criteriosamente selecionados, com tempo suficiente de transfusões e **RM/angio-RM sem vasculopatia ou infartos silenciosos**, conforme critérios dos estudos e recomendações; interromper transfusão simplesmente porque o Doppler normalizou é conduta insegura.
+
+### 5.8 Lesões crônicas: lista de vigilância dirigida
+| Sistema | O que procurar | Conduta/encaminhamento que muda o desfecho |
+|---|---|---|
+| Renal | Albuminúria, redução da capacidade de concentrar urina, hematúria, DRC | Acompanhar função renal e albuminúria conforme idade/risco; nefrologia se progressão |
+| Neurológico | AVC prévio, infarto cerebral silencioso, dificuldades escolares/cognitivas | Rastreamento indicado, avaliação neurocognitiva e neurologia/hematologia |
+| Ocular | Retinopatia proliferativa/alterações visuais | Exame oftalmológico periódico por idade/genótipo/risco e intervenção quando necessária |
+| Pulmonar | AOS, hipoxemia, STA recorrente, suspeita de hipertensão pulmonar | Investigação baseada em sintomas/risco, sem ecocardiograma indiscriminado para todos |
+| Ósseo | Osteonecrose, osteoporose, dor crônica | Exame e imagem dirigidos; ortopedia/reabilitação e saúde óssea |
+| Cardiovascular | Sobrecarga de volume por anemia, disfunção cardíaca | Diagnóstico clínico diferencial; não normalizar dispneia persistente |
+| Hepatobiliar | Litíase biliar, hepatite, sobrecarga de ferro, hepatopatia | Investigar dor/icterícia e risco transfusional |
+| Psicossocial | Dor crônica, depressão, faltas escolares, acesso limitado, transição | Plano multiprofissional e saúde mental com cuidado longitudinal |
+
+**Pérola clínica:** não usar “um eco por ano para todos” ou “uma radiografia de quadril anual para todos” como sinônimos automáticos de boa medicina. A indicação, periodicidade e método devem seguir risco, sintomas e recomendações contemporâneas. Protocolos podem mudar e o resultado do exame precisa levar a uma decisão concreta.
+
+### 5.9 Transição para vida adulta, educação e saúde mental
+A transição de equipe pediátrica a serviço de adultos é momento de perda de seguimento para muitos pacientes. Planejar com antecedência: resumo clínico com genótipo, Hb basal, histórico de AVC/STA/priapismo/sequestro, doenças crônicas, esquema de hidroxicarbamida, transfusões e aloanticorpos, plano de dor e destino do atendimento de urgência. Informações fundamentais devem ser compreendidas também pelo adolescente, com autonomia progressiva.
+
+A dor crônica não deve ser reduzida à contagem de idas ao pronto-socorro. Avaliar sono, funcionalidade, uso de analgésicos, sofrimento emocional, atividade física, expectativa de estudo/trabalho e necessidade de equipe de dor. O acesso a psicologia/psiquiatria, fisioterapia e terapia ocupacional pode fazer parte de cuidado integral.
+
+### 5.10 Gestação na doença falciforme: cuidado obstétrico de alto risco
+A gestação com doença falciforme pode apresentar maior risco de anemia significativa, crise dolorosa, STA, infecção, tromboembolismo e complicações obstétricas, incluindo pré-eclâmpsia e restrição do crescimento fetal. A assistência deve ocorrer em rede obstétrica e hematológica especializada, idealmente iniciada **antes da concepção**, com revisão de medicamentos, função renal/cardiopulmonar, histórico de transfusão e imunização.
+
+A **hidroxicarbamida** costuma requerer suspensão e discussão de alternativas em planejamento/gestação conforme recomendações específicas e risco materno; decisões em gravidez de alto risco exigem avaliação individual. Transfusão profilática universal para toda gestante com doença falciforme não é regra simples: selecionar conforme histórico, genótipo, intercorrências e protocolo do serviço. O risco trombótico, a hidratação e analgesia durante trabalho de parto e puerpério precisam de avaliação obstétrica.
+
+A saúde reprodutiva também inclui parceiros, possibilidade de aconselhamento genético, desejo de fertilidade e segurança contraceptiva. Esclarecer que traço HbAS e doença HbSS têm prognósticos maternos diferentes.
+
+### 5.11 Procedimento cirúrgico e anestesia: antecipar complicações
+Em pacientes com doença falciforme, cirurgia/anestesia pode induzir hipóxia, hipotermia, acidose, desidratação e dor não controlada, fatores que favorecem complicações. O planejamento inclui avaliação cardiopulmonar, fenótipo, Hb basal, tipo de cirurgia, anticoagulação quando indicada, analgesia e monitorização da oxigenação.
+
+A ASH 2020 transfusion support oferece recomendações condicionais para transfusão pré-operatória em cenários selecionados com anestesia geral e maior duração, mas a decisão depende de genótipo, Hb, gravidade, cirurgia, histórico transfusional e riscos de aloimunização/hiper-hemólise. **Não transfundir todos os pacientes com traço HbAS antes de qualquer procedimento**, nem adotar Hb “normal” como alvo universal em HbSS.
+
+### 5.12 Fluxo longitudinal em cinco perguntas
+1. **Qual é o genótipo e o fenótipo real?** HbSS, HbSC e HbS/β-talassemia não são idênticos.
+2. **Como prevenir eventos?** Vacinas, profilaxias, hidroxicarbamida em elegíveis, educação sobre febre/STA/sequestro e DTC quando indicado.
+3. **Quais órgãos devem ser vigiados?** Rim, retina, sistema nervoso, pulmão, ossos e saúde emocional segundo idade/sintomas/risco.
+4. **Quando transfundir?** Definir indicação clínica e alvos, compatibilidade e risco de hiper-hemólise com hemoterapia.
+5. **O que mudou desde a última consulta?** Hb basal, crises, internações, dor crônica, crescimento, função, medicações, acesso e planos reprodutivos.
+
+
 ## 6. Talassemias: falta de síntese de globina, não falta de ferro
 
 ### 6.1 Beta-talassemia
