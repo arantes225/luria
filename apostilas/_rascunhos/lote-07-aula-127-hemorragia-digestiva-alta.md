@@ -159,6 +159,52 @@ O sinal clínico é nova hematêmese/melena com queda hemodinâmica ou de Hb ap�
 ### 7.7. Transição para alta com redução de recidiva
 Revisar medicamentos, tratar *H. pylori*, corrigir anemia/deficiência de ferro e avaliar necessidade futura de antiagregação/anticoagulação. A atualização ESGE 2026 sugere **iniciar ferro antes da alta** em pessoa com sangramento ulceroso e anemia/deficiência de ferro; e **nutrição oral precoce em até 24 h** após hemostasia endoscópica durável em paciente apropriado. Não manter jejum prolongado apenas por hábito quando não há justificativa clínica.
 
+
+### 7.8. A endoscopia precisa controlar o vaso, não somente interromper a imagem de sangramento
+
+No sangramento ulceroso, a **classificação Forrest** representa risco e necessidade de hemostasia, mas não substitui características do vaso e da úlcera. Úlcera duodenal posterior próxima à artéria gastroduodenal, lesão maior que 2 cm, tecido fibrosado, sangramento ativo abundante, instabilidade e comorbidades podem dificultar hemostasia durável. Um vaso calibroso profundamente localizado pode recidivar apesar de cessar a hemorragia logo após adrenalina.
+
+**Injeção de adrenalina** cria vasoconstrição e tamponamento transitório. Em úlcera com sangramento ativo de alto risco, usar adrenalina isolada sem hemostasia definitiva (mecânica/térmica ou técnica atual apropriada) aumenta preocupação com ressangramento. Já **OTS clips** capturam tecido mais espesso e podem ter maior eficácia em lesões selecionadas, mas precisam de expertise e acesso anatômico.
+
+A diretriz ESGE **2026** permite considerar OTS como **monoterapia alternativa inicial** para Forrest Ia/Ib e como opção importante na recidiva. Também atualizou a posição sobre coagulação suave por pinças, hemostáticos tópicos e manejo de coágulo IIb; a presença de técnica moderna **não elimina** avaliação da hemostasia final nem a necessidade de tratar *H. pylori* e suspender AINE.
+
+### 7.9. Forrest IIb: a mudança de 2026 explicada pelo risco do procedimento
+
+O coágulo aderido pode esconder vaso visível ou sangramento ativo. Retirar coágulo em ambiente sem capacidade de tratar o defeito revelado pode gerar hemorragia que não será controlada. Por outro lado, nunca tocar coágulo pode impedir hemostasia de lesão relevante. Por isso ESGE 2026 **sugere tratar endoscopicamente** Forrest IIb, com retirada controlada do coágulo e hemostasia se indicada, **condicionadas à competência e disponibilidade técnica para lidar com eventual sangramento de alto risco**.
+
+**Questão de prova:** o paciente com Forrest IIb não é automaticamente a mesma categoria de IIc (mancha plana) nem Forrest III (base limpa). O dado que decide a estratégia não é só o nome da classificação: centro, visualização, hemostasia acessível e risco clínico importam.
+
+### 7.10. Quando o sangramento volta: resgate estruturado
+
+**Ressangramento** pode ser evidenciado por nova hematêmese/melena associada à instabilidade, queda da hemoglobina além da variação esperada e necessidade transfusional, mas o julgamento clínico exige diferenciar fezes escurecidas por sangue residual de perda ativa. Em recidiva clínica após hemostasia inicial:
+1. Reavaliar via aérea, perfusão, acesso vascular, hemograma/tipagem e reanimação.
+2. Contactar endoscopia terapêutica e equipe de resgate em paralelo.
+3. Em condições apropriadas, **nova tentativa de hemostasia endoscópica**, com possibilidade de OTS clip.
+4. Se falha de métodos endoscópicos, **embolização angiográfica transcateter** (TAE) deve ser considerada quando disponível.
+5. Cirurgia entra se TAE não estiver disponível ou falhar, e conforme instabilidade/anatomia.
+
+A ESGE 2026 também **sugere considerar TAE profilática** em pacientes de alto risco selecionados, como úlcera duodenal posterior, lesão grande, instabilidade inicial e hemostasia considerada pouco durável. Isso **não** equivale a embolização para todos os casos Forrest IIa nem a substituir endoscopia por angiografia como primeira abordagem.
+
+### 7.11. O que acontece depois das primeiras 72 horas?
+
+Depois de hemostasia de lesão ulcerosa com estigmas de alto risco, **IBP em alta dose** por período inicial segundo protocolo reduz recidiva. Mas a alta ainda exige resolver causa e consequências:
+
+- **Testar e tratar *H. pylori*** quando aplicável, com esquema adequado a alergia, exposição prévia e resistência regional. Sangramento agudo/IBP/antibiótico podem reduzir sensibilidade de alguns testes; teste negativo inicial não encerra investigação quando suspeita persiste.
+- **Confirmar erradicação** em tempo e condições apropriados, usando teste validado; não usar sorologia isolada para afirmar cura.
+- **Revisar AINE e AAS** considerando prevenção primária versus secundária cardiovascular.
+- **Reavaliar úlcera gástrica** quando houver risco de malignidade e confirmação de cicatrização/histologia conforme indicação endoscópica.
+- **Investigar ferro/anemia** após a perda sanguínea e organizar reposição e revisão de hemograma.
+- **Permitir nutrição oral precoce em candidatos selecionados:** a ESGE 2026 sugere iniciar alimentação oral em até 24 horas após hemostasia endoscópica durável; não manter jejum por dias automaticamente.
+- **Planejar retorno:** sintomas de ressangramento, resultado de biópsia, plano de antitrombóticos, situação hematológica e exames de confirmação.
+
+A diretriz ESGE 2026 também não alcançou consenso para recomendar de rotina bloqueadores competitivos de potássio (PCAB) no lugar de IBP após hemostasia: não apresentar seu uso como novo padrão universal.
+
+### 7.12. Visualização endoscópica antes do procedimento: o que mudou em 2026?
+
+Em HDA aguda grave com estômago preenchido por sangue/coágulos, um pró-cinético pode melhorar o exame em situações específicas. A ESGE 2026 sugere considerar **metoclopramida intravenosa** em certos pacientes com hemorragia intensa/ativa **quando eritromicina intravenosa não estiver disponível**; dose, contraindicações (incluindo possíveis distúrbios de movimento, prolongamento QT/efeitos adversos) e indicação final dependem do serviço. Não administrar automaticamente a todo paciente com melena sem vômitos.
+
+A ESGE **não recomenda videocápsula ou cápsula telemétrica de sangue como teste rotineiro inicial na suspeita de HDA**, e **não recomenda EDA emergente ≤6 h ou urgente ≤12 h como rotina da úlcera péptica** salvo instabilidade persistente apesar de ressuscitação adequada. A prioridade é estabilizar e preparar endoscopia terapêutica com condições seguras, em vez de competir por minutos sem controle hemodinâmico.
+
 ## 8. HDA varicosa — um caminho farmacológico/endoscópico diferente
 
 ### 8.1. Suspeitar de hipertensão portal e iniciar terapia
