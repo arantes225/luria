@@ -484,3 +484,160 @@ E. Dizer que hemibalismo é apenas tremor muito intenso.
 - [ ] Implementar HTML integrado somente após revisão e testar desktop/PWA, sumário, tabelas, acessibilidade e desempenho.
 - [ ] Reconciliar com o inventário dos 401 temas antes de atribuir ampliação adicional ao lote.
 - [ ] **Manter fora da main e NÃO FAZER DEPLOY até aprovação editorial e clínica.**
+
+
+## 15. Estadiamento, escalas e monitorização longitudinal
+
+### 15.1 Hoehn e Yahr: entender a gravidade sem fetichizar a escala
+
+A escala de Hoehn e Yahr classifica a extensão e o comprometimento motor de modo aproximado: estágio 1 com sinais unilaterais; estágio 2 com envolvimento bilateral sem instabilidade postural significativa; estágio 3 quando há instabilidade postural, mas a pessoa permanece fisicamente independente; estágio 4 com incapacidade grave, ainda capaz de ficar em pé ou caminhar sem assistência contínua; e estágio 5 com dependência de cadeira de rodas ou leito sem ajuda. Algumas versões intermediárias usam estágios 1,5 e 2,5. Sua vantagem é facilitar comunicação longitudinal; seu limite é não captar bem sofrimento não motor, cognição, fadiga, dor, alucinações ou perfil de flutuações.
+
+Dois pacientes no mesmo estágio motor podem ter experiências muito diferentes: uma pessoa no estágio 2 com transtorno grave de sono, depressão e hipotensão pode estar mais limitada que outra no estágio 3 com boa rede de apoio e sintomas não motores controlados. Portanto, **não usar Hoehn e Yahr isoladamente** para decidir elegibilidade terapêutica, incapacidade ou prognóstico individual.
+
+### 15.2 MDS-UPDRS e registros clínicos úteis
+
+A MDS-UPDRS abrange experiências não motoras da vida diária, experiências motoras da vida diária, exame motor e complicações motoras. O registro padronizado permite acompanhar mudança ao longo do tratamento, mas exige treinamento e atenção ao contexto do exame: tempo desde a última dose, estado ON/OFF e outras condições. Relatar escore sem especificar momento do ciclo dopaminérgico pode produzir comparações enganosas.
+
+No atendimento inicial, registrar minimamente: início e lado dos sintomas; exame de bradicinesia, rigidez, tremor, postura e marcha; quedas; independência funcional; peso e deglutição; pressão ortostática se sintomática; cognição e humor; sono e condutas durante sonhos; sintomas urinários/constipação; terapia em uso, dose e **horários exatos**; resposta e eventos adversos. Em cada retorno, comparar com objetivos pactuados — por exemplo, conseguir tomar banho, caminhar até a padaria ou reduzir quedas —, e não apenas “tremor menor”.
+
+### 15.3 Como interpretar o diário motor
+
+O diário motor precisa distinguir ao menos: horário da tomada; hora aproximada de início do benefício; **ON sem discinesia incômoda**; ON com discinesia relevante; OFF; período de sono; refeições e episódios de queda. Se a piora sempre ocorre 30–60 minutos antes da dose seguinte, o padrão orienta suspeita de wearing off. Se o movimento involuntário aparece no auge do efeito da levodopa, discinesia de pico é hipótese. Se houver movimentos dolorosos ao amanhecer, investigar distonia OFF.
+
+Nenhum diário substitui exame, porém reduz decisões baseadas na fotografia de poucos minutos no consultório. Observar resposta também ao tratar constipação, ajustar medicamentos não neurológicos e modificar condições do ambiente. A duração de sintomas deve ser discutida com paciente e cuidador, mas preservar privacidade e autonomia.
+
+## 16. Considerações especiais no curso de vida
+
+### 16.1 Parkinsonismo de início jovem
+
+Início antes da idade habitual pede investigação mais aberta, sobretudo quando há distonia proeminente, história familiar, sinais hepáticos ou psiquiátricos atípicos e deterioração rápida. O diferencial inclui doença de Wilson, variantes genéticas relacionadas ao parkinsonismo, sequelas estruturais, causas tóxicas e medicamentosas, além da própria DP de início jovem.
+
+O diagnóstico de Wilson, quando plausível, merece investigação por abordagem combinada — exame clínico e oftalmológico, testes de metabolismo do cobre e avaliação hepática/genética conforme especialista —, porque reconhecer etiologia tratável altera o desfecho. Um único valor isolado de ceruloplasmina não pode ser tratado como regra absoluta de exclusão nem confirmação.
+
+O paciente jovem também traz preocupações específicas: emprego, parentalidade, dirigir, atividades manuais finas, planejamento reprodutivo e risco cumulativo de flutuações motoras. Não decidir monoterapia por “idade apenas”; considerar função cognitiva, histórico comportamental, trabalho perigoso, sono e necessidade de eficácia rápida. Adiar levodopa quando há incapacidade real pode prejudicar qualidade de vida.
+
+### 16.2 Pessoas idosas frágeis e polifarmácia
+
+A idade avançada se associa com maior vulnerabilidade a hipotensão ortostática, delirium, alucinações, sonolência e quedas. A simplificação do esquema é às vezes mais valiosa que adicionar novo fármaco para cada sintoma. Rever benzodiazepínicos, fármacos anticolinérgicos, antieméticos antidopaminérgicos, hipotensores e interações. Investigar perda ponderal, sarcopenia, disfunção visual e neuropatias, que coexistem e não são necessariamente provocadas pela DP.
+
+Tratamento deve considerar capacidade de manusear caixas, cortar comprimidos, ler rótulos e lembrar horários. A orientação “tomar três vezes ao dia” não é suficiente quando horários e refeições influenciam efeito. Um quadro escrito, com verificação de compreensão, pode prevenir internações decorrentes de erros de administração.
+
+### 16.3 Gestação e amamentação
+
+A doença é pouco comum na gestação, mas pode ocorrer em pacientes com parkinsonismo de início jovem. O PCDT brasileiro de 2025 destaca **levodopa associada a carbidopa/benserazida** como opção recomendada durante a gravidez, enquanto **amantadina é contraindicada** por risco teratogênico; para agonistas dopaminérgicos, inibidores MAO-B/COMT e triexifenidil há insuficiência de dados para recomendar uso gestacional. A avaliação deve ser individualizada com neurologia e obstetrícia e contemplar riscos maternos de interrupção terapêutica. Não extrapolar a segurança na gestação para a lactação; o protocolo recomenda cautela/evitar diversas classes pela falta de dados.
+
+**Situação de prova:** o fato de a maioria dos pacientes com DP serem idosos não torna irrelevante a farmacovigilância reprodutiva. Antes de iniciar ou trocar medicação em mulher em idade fértil, questionar gestação e planejamento, e jamais prometer inocuidade de agente com evidência escassa.
+
+### 16.4 Parkinson e funções críticas — direção e trabalho
+
+A aptidão para dirigir depende de mais do que presença de tremor. Avaliar lentidão de resposta, movimentos dos pés e mãos, impulsividade, visão, hipersonolência, ataques súbitos de sono, episódios OFF, disfunção executiva e atenção. Agonistas dopaminérgicos podem produzir sonolência imprevisível. Se houver sintomas que ponham terceiros em risco, discutir restrição da atividade e avaliação formal conforme legislação e serviços competentes.
+
+No trabalho, avaliar queda, fadiga, manipulação de instrumentos cortantes, turnos noturnos e exigência de dupla tarefa. Adaptações ergonômicas e terapia ocupacional podem preservar autonomia. Evitar interpretar incapacidade somente pelo exame motor realizado em ON no ambulatório, que não reflete necessariamente o pior período do dia.
+
+## 17. Farmacologia aplicada, interações e transições assistenciais
+
+### 17.1 Reconciliação terapêutica no pronto atendimento
+
+Uma lista de medicamentos sem horário não é reconciliação completa em DP. Verificar nome comercial e princípio ativo, fração de cada comprimido, formulação (imediata, prolongada, dispersível), doses, horários, via usual, possibilidade de administração com alimento e eventuais dispositivos. Um esquema “7h, 11h, 15h e 19h” não deve ser convertido automaticamente em “quatro vezes ao dia com os horários-padrão do hospital” se isso alongar os períodos OFF.
+
+Verificar histórico de náuseas, quedas, alucinações, controle de impulsos e pressão baixa antes de propor intensificação. Em internação, perguntar se há cuidador capaz de confirmar o regime domiciliar; registrar incertezas sem inventar dose. A farmácia clínica deve revisar substituições e equivalências, sobretudo em ausência de formulação idêntica.
+
+### 17.2 Cuidados com antagonistas dopaminérgicos
+
+Metoclopramida, certos antipsicóticos e outros fármacos com forte antagonismo dopaminérgico podem agravar parkinsonismo, desencadear distonia, acatisia ou síndrome grave. O contexto muda decisão: uma pessoa em antipsicótico indispensável por transtorno psiquiátrico não deve abandonar o tratamento por orientação improvisada, mas necessita revisão conjunta de segurança. Em pessoas com DP, evitar escolher indiscriminadamente haloperidol para agitação e metoclopramida para náusea sem considerar risco motor.
+
+Quando psicose ocorre em DP, definir se o fenômeno é delirium agudo ou sintoma psiquiátrico persistente, buscar causas reversíveis e reavaliar carga dopaminérgica **de maneira gradual e supervisionada**. Clozapina não pode ser prescrita como solução simples porque exige serviço estruturado para hemograma, avaliação cardiovascular e reações adversas. Potenciais alternativas dependem de disponibilidade e regulamentação vigentes, exigindo checagem específica.
+
+### 17.3 Função renal, fígado e retirada de medicamentos
+
+A amantadina é predominantemente eliminada pelos rins; redução do clearance pode resultar em confusão, mioclonia, alucinação e piora funcional. Pramipexol também necessita atenção especial à função renal e titulação. Rasagilina requer cautela/contraindicação conforme comprometimento hepático de acordo com PCDT e bula. Avaliar creatinina, função renal estimada e alterações clínicas antes de “repetir receita”.
+
+Suspensão abrupta de agonista pode provocar ansiedade, disforia, dor, fadiga e sintomas autonômicos característicos de síndrome de abstinência, além de piora motora. A suspensão abrupta de toda terapia dopaminérgica pode precipitar síndrome parkinsonismo–hiperpirexia. Portanto, a instrução “suspender se tiver efeitos adversos” sem plano é incompleta e potencialmente perigosa.
+
+### 17.4 Quando o paciente não consegue engolir
+
+Antes de oferecer comprimidos triturados ou por sonda, identificar formulação específica; formas de liberação prolongada podem perder mecanismo de liberação ou representar risco. Solicitar avaliação fonoaudiológica se disfagia e farmacêutica para alternativas. O PCDT 2025 comenta utilidade de apresentação dispersível de levodopa/benserazida em disfagia e vias enterais; isso **não permite inferir equivalência 1:1 de qualquer apresentação**. Alimentação enteral contínua, proteínas e gastroparesia podem alterar resposta e requerem acompanhamento.
+
+### 17.5 Diagnóstico diferencial da piora na UTI ou enfermaria
+
+Nem toda rigidez de um paciente sedado é progressão de Parkinson. Considerar síndrome neuroléptica maligna após antagonista dopaminérgico, síndrome parkinsonismo–hiperpirexia por retirada de levodopa, sepse, estado de mal, rabdomiólise, trauma, hemorragia/AVC e efeitos serotoninérgicos quando houver exposições compatíveis. Histórias de medicações, datas, temperatura, CK, disautonomia e evolução são fundamentais; quadros podem coexistir. Uma hipótese diagnóstica isolada nunca justifica atrasar suporte vital.
+
+## 18. Roteiro de consulta em três níveis de atenção
+
+### 18.1 Atenção primária: reconhecer, referir, acompanhar
+
+Na APS, a consulta não precisa completar toda escala MDS-UPDRS, mas deve produzir hipótese clara e segurança assistencial. Documentar síndrome motora, revisar exposição medicamentosa, detectar quedas e disfagia, facilitar encaminhamento e acompanhar prevenção de agravos, comorbidades, imunizações, sono, estado nutricional e suporte familiar. Uma referência ao especialista do tipo “tremor a esclarecer” é menos útil que “bradicinesia com decremento à direita + rigidez direita, sem exposição a bloqueador D2, marcha com redução de balanço do braço, sem quedas precoces”.
+
+No seguimento, perguntar o que mudou na autonomia e quais barreiras impedem adesão: custo, acesso, horário de trabalho, dificuldade de abrir embalagens, confusão de comprimidos e cuidado compartilhado. Evitar prescrever uma “bateria de exames para Parkinson” que não responda hipótese clínica.
+
+### 18.2 Ambulatório de neurologia: diagnóstico dinâmico
+
+Confirmar síndrome, aplicar critérios, mapear red flags, iniciar ou otimizar terapia, monitorar eventos adversos e identificar quem precisa de reabilitação intensiva ou cuidados avançados. Rever periodicamente a hipótese: o aparecimento de oftalmoplegia vertical supranuclear, sinais cerebelares ou falência autonômica grave muda probabilidades. O seguimento deve incluir paciente e cuidador sem reduzir a pessoa ao parecer do acompanhante.
+
+### 18.3 Hospital: preservar horários e identificar risco
+
+Na admissão, registrar terapia dopaminérgica de horário crítico e comunicação em prescrições/procedimentos. Protocolos de jejum, sedação e via alternativa devem ser adaptados às necessidades clínicas e à segurança de administração. Prevenir delirium, lesão por pressão, broncoaspiração, tromboembolismo quando indicado e imobilidade. Em pacientes frágeis, a alta precisa incluir conciliação medicamentosa, orientação escrita, comunicação da terapia de reabilitação e sinais de retorno.
+
+## 19. Casos integradores adicionais
+
+### Caso 9 — Sintomas “vasculares” na ressonância de um idoso
+
+Homem, 76 anos, apresenta bradicinesia, rigidez assimétrica e tremor de repouso unilateral progressivos há três anos, com boa melhora funcional após levodopa. Ressonância relata pequenas hiperintensidades inespecíficas periventriculares, esperadas em muitos idosos hipertensos. Uma segunda opinião informa que “é Parkinson vascular porque a RM tem manchas”.
+
+**Análise:** alterações microvasculares incidentais não demonstram que as lesões causam o parkinsonismo. A assimetria inicial, tremor de repouso e resposta à levodopa tornam DP plausível; coexistência de doença cerebrovascular é possível. **Exames:** a imagem deve ser interpretada pelo padrão, localização, gravidade e relação com quadro clínico, e não por uma palavra do laudo. **Conduta:** continuidade de investigação/seguimento, controle vascular e reabilitação, reavaliando se surgirem red flags. **Por que importa:** evita diagnóstico etiológico pela imagem isolada e perda de benefício terapêutico.
+
+### Caso 10 — Mulher jovem com distonia e alteração hepática
+
+Mulher, 29 anos, apresenta distonia e lentidão progressivas há um ano; familiares percebem alteração da fala. Exames prévios registram transaminases elevadas, sem explicação clara. Um clínico sugere “Parkinson muito precoce” e levodopa sem investigação.
+
+**Análise:** DP de início jovem é possível, mas quadro distônico e alterações hepáticas abrem diferencial de doença de Wilson e outras causas potencialmente tratáveis. **Exames:** história medicamentosa e familiar, exame neurológico completo, avaliação hepática e investigação do metabolismo do cobre conforme protocolo de especialista, com interpretação conjunta dos testes. **Conduta:** referência prioritária para neurologia e hepatologia conforme achados; evitar afirmar exclusão por um único marcador normal. **Por que importa:** um diagnóstico tratável não deve ser perdido por ancoragem em rótulo neurodegenerativo.
+
+## 20. Questões integradoras adicionais
+
+### Questão 9 — Classificação funcional
+Pessoa com DP tem sinais bilaterais e instabilidade postural, mas ainda permanece fisicamente independente para caminhar e vestir-se. Qual escala é adequada para comunicar, de modo aproximado, esse estágio motor?
+
+A. Escore Child-Pugh.
+B. Escala de Hoehn e Yahr, lembrando limitações para sintomas não motores.
+C. Índice de Apgar.
+D. MELD-Na.
+E. Escore de Wells.
+
+**Gabarito: B.** Hoehn e Yahr descreve extensão/gravidade motora e funcional; estágio 3 classicamente inclui instabilidade com independência preservada. A, C, D e E avaliam outros problemas. **Mini revisão:** estadiamento motor não substitui avaliação de cognição, hipotensão, sono e qualidade de vida.
+
+### Questão 10 — Gestação
+Paciente com doença de Parkinson engravida e necessita manter controle funcional. Qual afirmação é consistente com PCDT brasileiro 2025?
+
+A. Amantadina é indicada de rotina na gestação.
+B. Levodopa associada a inibidor periférico pode ser considerada sob supervisão especializada; amantadina é contraindicada.
+C. Todo tratamento dopaminérgico deve ser interrompido imediatamente.
+D. Inibidores COMT são comprovadamente seguros em todas as fases da gestação.
+E. Nenhuma paciente com Parkinson pode engravidar.
+
+**Gabarito: B.** O PCDT reconhece levodopa associada como opção recomendada para gestação e contraindica amantadina; demais classes têm dados limitados. A e D extrapolam segurança; C expõe a piora importante; E é afirmação falsa e estigmatizante. **Mini revisão:** gestação requer discussão multidisciplinar de benefício/risco, não suspensão automática.
+
+### Questão 11 — Reconciliação de medicamentos
+Paciente com DP em uso habitual de levodopa às 7h, 11h, 15h e 19h é internado. A enfermaria programa quatro tomadas às 6h, 12h, 18h e 24h. O que deve ser feito?
+
+A. Aceitar qualquer quatro horários como absolutamente equivalentes.
+B. Prescrever apenas no horário das refeições sem verificar resposta.
+C. Verificar esquema domiciliar e ajustar a programação hospitalar para preservar intervalos críticos.
+D. Suspender levodopa até a alta.
+E. Substituir toda levodopa por metoclopramida.
+
+**Gabarito: C.** Intervalos e horários determinam controle motor. A/B ignoram farmacodinâmica e tolerabilidade; D pode precipitar complicações graves; E antagoniza dopamina. **Mini revisão:** “quatro vezes/dia” não equivale a qualquer grade horária.
+
+### Questão 12 — Tremor e sinais corticais
+Idoso apresenta bradicinesia e rigidez assimétricas acompanhadas de apraxia ideomotora clara e perda sensitiva cortical no mesmo membro. A interpretação mais segura é:
+
+A. Quadro sempre típico de DP idiopática.
+B. Sinais corticais demandam investigação de parkinsonismo atípico, inclusive espectro corticobasal.
+C. Tremor essencial isolado.
+D. Miastenia gravis com déficit cortical primário.
+E. Nenhuma alteração merece investigação.
+
+**Gabarito: B.** Apraxia inequívoca e perda sensitiva cortical são achados incomuns para DP típica e integram exclusões/suspeitas alternativas nos critérios MDS. A ignora sinais; C, D e E não explicam o quadro. **Mini revisão:** localização cortical pode ser mais informativa que a presença inespecífica de rigidez.
+
+## 21. Controle editorial desta ampliação
+
+**Fontes de suporte:** revisão cruzada com Ministério da Saúde, PCDT Parkinson 2025, sobretudo capítulo de populações especiais, administração e monitorização; NICE NG71 (manejo e acompanhamento); critérios MDS 2015. Este incremento aprofundou informação de segurança, avaliação temporal, populações especiais, algoritmos assistenciais, duas vinhetas clínicas e quatro questões originais. Não corrige automaticamente lacunas de licença de imagens, benchmark ausente, revisão humana especializada e testes de acessibilidade/PWA. Seu conteúdo deverá ser reorganizado na edição final para evitar que capítulos adicionais fiquem após as referências, preservando índice lógico sem repetições.
