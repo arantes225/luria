@@ -1086,16 +1086,17 @@
       "area": "Saúde Mental",
       "titulo": "Transtornos alimentares",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SM-11",
       "instrucao": "Transtornos alimentares e diferenciais psiquiátricos em adultos e adolescentes.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original inicial 28.734 caracteres totais, 5 casos e 7 questões; APA 2023 e NICE NG69; benchmark Drive apenas correlato, sem apostila psiquiátrica equivalente. Sem 60 mil caracteres úteis, revisão médica ou QA."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-250-transtornos-alimentares.md"
     },
     {
       "id": 251,
