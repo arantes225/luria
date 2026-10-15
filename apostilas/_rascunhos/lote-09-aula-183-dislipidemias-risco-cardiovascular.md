@@ -229,7 +229,7 @@ Antes de chamar o fármaco de ineficaz, conferir adesão, tolerância, interaç�
 
 A revisão seguinte precisa integrar estes capítulos às seções 1–10, sem repetir conceitos: (a) classificação formal da SBC 2025 por diabetes e doença aterosclerótica com fluxograma autoral; (b) farmacologia com contraindicações verificadas, doses, interações e opções aprovadas no Brasil; (c) comparação quantitativa de estratégias por perfil clínico; (d) interpretação de exames por casos adversariais com resultados discordantes; (e) espectro completo das dislipidemias raras e investigação de HF em cascata; (f) abordagem de saúde pública e decisão compartilhada; (g) banco de casos e questões aplicadas para teste de autossuficiência; (h) referências verificadas, imagens licenciadas via Admin, renderização responsiva.
 
-A consulta à Diretriz Brasileira 2025 permanece prioritária; atenção a versões anteriores que trazem metas de LDL de 50, 70, 100 ou 130 mg/dL em categorias diferentes. A redação da LURIA deve sempre explicitar o ano e a sociedade responsável por uma recomendação. **O rascunho 183 ainda NÃO passou pelo mínimo de 60.000 caracteres úteis e não deve ser publicado.**
+A consulta à Diretriz Brasileira 2025 permanece prioritária; atenção a versões anteriores que trazem metas de LDL de 50, 70, 100 ou 130 mg/dL em categorias diferentes. A redação da LURIA deve sempre explicitar o ano e a sociedade responsável por uma recomendação. **O rascunho 183 deve passar por auditoria dos caracteres didáticos úteis, qualidade, fontes e revisão especializada; não publicar por contagem bruta isolada.**
 
 ## 17. Diagnóstico diferencial do colesterol elevado: reconhecer qual fração está alterada
 
@@ -435,3 +435,76 @@ Estas perguntas são usadas para orientar uma revisão futura cega: um revisor d
 ## 24. Checklist prático para fechamento da apostila
 
 Antes de considerar a seção de dislipidemia pronta, verificar: fisiopatologia ensinada; interpretação de LDL, não-HDL, ApoB e Lp(a); reconhecimento das causas secundárias; categorias e metas SBC 2025; tratamento não farmacológico de impacto; estatina e associação farmacológica; riscos musculares e interações; formas genéticas; hipertrigliceridemia e pancreatite; populações especiais; decisão compartilhada; acompanhamento longitudinal; quatro casos comentados e seis questões com alternativas explicadas; imagens clínicas licenciadas e aprovações; leitura completa da diretriz e benchmark adulto específico; teste de questão independente; revisão desktop e PWA. **O caderno permanece rascunho não certificado enquanto qualquer item essencial estiver pendente.**
+
+## 25. Integração entre quadro clínico, biomarcador e prioridade terapêutica
+
+A efetividade de uma apostila não é demonstrada apenas pelo número de fórmulas ou por quantas medicações aparecem em tabela. O aluno precisa reconhecer **qual dado muda a decisão**. Considere cinco perfis resumidos:
+
+**Perfil I — prevenção primária em pessoa de baixo risco:** há espaço para intervenções de estilo de vida, consideração de preferências e reavaliação. A indicação de estatina depende de risco, magnitude de LDL e persistência acima da meta, não de uma reação alarmista a qualquer colesterol discretamente elevado.
+
+**Perfil II — LDL muito elevado desde jovem:** a duração da exposição importa, pois o risco ao longo da vida não é representado integralmente por alguns escores de dez anos. Pesquisar HF, familiares e causas secundárias antes de concluir que basta recomendar exercício.
+
+**Perfil III — IAM ou AVC aterosclerótico anterior:** a aterosclerose já causou evento. Escolher meta do estrato apropriado, reduzir LDL intensamente e controlar fatores modificáveis; não usar o conceito de “LDL normal para população geral”.
+
+**Perfil IV — diabetes e TG elevado com LDL aparentemente razoável:** investigar LDL, não-HDL, ApoB, história de dano orgânico e risco vascular. A dislipidemia aterogênica pode ter partículas numerosas, de modo que apenas LDL não descreve toda carga.
+
+**Perfil V — TG extremamente elevado e sinais de pancreatite:** risco agudo domina a prioridade inicial; avaliar hospitalização e terapia de pancreatite. Depois, a prevenção de aterosclerose permanece relevante, mas não deve eclipsar urgência atual.
+
+## 26. O que a equipe deve registrar na consulta
+
+Um registro clínico útil deve permitir que outro profissional entenda o raciocínio sem reconstruí-lo do zero. Sugestão autoral de sequência:
+
+**Problema:** dislipidemia com padrão identificado (LDL predominante, TG predominante ou misto), data do exame, jejum quando relevante e medicações em uso.
+
+**Risco:** doença aterosclerótica prévia, diabetes, DRC, tabagismo, hipertensão, idade, histórico familiar e fatores agravantes documentados. Categoria de risco e fonte de classificação identificadas.
+
+**Meta:** alvo LDL-c individual, redução relativa pretendida, meta não-HDL e, quando apropriado, ApoB. Em casos de divergência laboratorial, registrar limitação do método.
+
+**Decisão:** quais medidas não farmacológicas serão priorizadas, medicamentos indicados ou ajustados, motivos da escolha, contraindicações e interação considerada.
+
+**Seguimento:** exame a repetir, horizonte de reavaliação, sinais de alarme, dificuldade de adesão e plano de intensificação caso a meta permaneça distante.
+
+Exemplo de registro sintético em um paciente pós-infarto: “Doença aterosclerótica clínica; prevenção secundária. LDL acima do alvo da categoria individual. Adesão confirmada. Orientação alimentar e cessação do tabagismo reforçadas. Discute-se intensificação LDL-redutora e avaliação de interações. Retorno para resultado e reavaliação de tolerância.” Não inserir dado numérico fictício em prontuário nem registrar que adesão foi confirmada sem ter sido efetivamente investigada.
+
+## 27. Quando encaminhar e quando manejar na atenção primária
+
+A maior parte das dislipidemias habituais pode ser acompanhada em equipe clínica e APS, desde que haja estratificação correta, tratamento disponível, seguimento e capacidade de reconhecer exceções. Encaminhar precocemente ou discutir caso com especialista em lipidologia/cardiologia/endocrinologia é particularmente útil quando há:
+
+- Suspeita de HF grave ou homozigótica, aterosclerose precoce em múltiplos familiares ou necessidade de rastreamento genético.
+- LDL persistentemente muito acima da meta apesar de terapia combinada em dose tolerada e adesão confirmada.
+- TG extremamente altos, pancreatite recorrente, suspeita de síndrome de quilomicronemia familiar ou necessidade de agentes dirigidos raros.
+- Dislipidemia associada a transplante, interações farmacológicas complexas, gravidez com doença lipídica severa, ou condições metabólicas pouco usuais.
+- Eventos cardiovasculares recorrentes apesar de cuidado adequado, exigindo revisão de risco, causas e escolhas terapêuticas.
+
+O encaminhamento não deve suspender ações que a APS pode realizar imediatamente, como orientar tabagismo, otimizar fatores modificáveis e tratar LDL conforme diretriz e competência. Por outro lado, “mandar para especialista” não é suficiente diante de dor abdominal aguda compatível com pancreatite: esse quadro requer abordagem de urgência.
+
+## 28. Tabela transversal para reconhecimento de erros
+
+| Erro frequente | Por que está errado | Pergunta correta |
+|---|---|---|
+| “LDL 80 está normal para qualquer paciente” | Meta depende de categoria e redução percentual | Houve evento aterosclerótico? Qual a meta atual? |
+| “HDL alto cancela LDL alto” | HDL não remove causalidade de ApoB aterogênica | Quantas partículas aterogênicas e qual risco global? |
+| “TG 1400 é só problema para daqui a anos” | Pode existir pancreatite aguda | Há dor, vômitos, precipitantes, instabilidade? |
+| “A pessoa é jovem, então o escore de dez anos resolve tudo” | HF pode criar carga cumulativa antes de evento | LDL é persistentemente alto? Família com eventos precoces? |
+| “Estatina causou toda dor muscular, interromper para sempre” | Dor pode ser multifatorial e há alternativas | Quão graves são os sintomas, qual cronologia e dose? |
+| “Qualquer ômega-3 comprova prevenção de infarto” | Formulações e ensaios não são intercambiáveis | Qual agente específico e qual desfecho demonstrado? |
+| “Prescreveu alta intensidade, então a meta foi alcançada” | Resposta real é variável | LDL de controle? Adesão? Efeito esperado versus observado? |
+| “Todo colesterol alto se trata primeiro só com dieta por seis meses” | Alto risco/aterosclerose exigem terapia oportuna | Há indicação de iniciar fármaco sem retardamento? |
+
+## 29. Integração planejada com o ecossistema LURIA
+
+**Flashcards:** cada cartão deve abordar uma unidade decisória testável, como distinguir LDL-c de ApoB, calcular não-HDL, escolher meta brasileira por risco, reconhecer HF, identificar TG com risco de pancreatite, interpretar resposta e intensidade de estatina. Evitar cartões que apenas perguntem valores sem contexto clínico.
+
+**Questões de prova:** criar cenários com duas alternativas plausíveis e uma pista discriminante real: “pós-infarto sem meta”, “LDL ≥190 em jovem”, “TG >1000 com dor abdominal”, “intolerância possível versus comprovada”, “LDL e ApoB discordantes”. As justificativas devem explicar por que cada distrator está errado, não repetir o gabarito em outras palavras.
+
+**Caderno de erros:** separar erros de cálculo laboratorial, estratificação, escolha de classe farmacológica, manejo de TG e interpretação de segurança. Essa classificação permite revisão específica em vez de repetir toda a apostila sem localizar dificuldade.
+
+**Professor Alex e simulação:** treinar tomada de decisão compartilhada e correção de mensagens inadequadas, como prometer “cura do colesterol” após LDL atingir alvo, atribuir HF à alimentação ou recomendar suplemento equivalente a terapia baseada em eventos.
+
+**Protocolo clínico / Modo Trabalho futuro:** apresentar metas e alertas com ano da diretriz e campos editáveis de risco, não uma prescrição automática disparada apenas pelo resultado do exame. Qualquer recurso de decisão deve exigir verificação de contexto, contraindicações e prescrição por profissional habilitado.
+
+## 30. Fontes, qualidade e limite de conclusão
+
+O eixo numérico de metas foi conferido na publicação integral da **SBC 2025**. As recomendações internacionais ESC/EAS 2025 são comparativas e não autorizam substituição silenciosa das categorias brasileiras. A literatura de ensaios citados pela diretriz deve ser conferida quando se desenvolverem capítulos de comparação quantitativa de estratégias; tabelas desta apostila são expressões originais de conceitos clínicos e não cópias de figuras externas.
+
+A existência de texto suficiente em caracteres é um **filtro quantitativo preliminar**, não garantia de qualidade científica. A aprovação requer revisão de afirmações e dosagens, verificação de referências e métodos, consistência de classificações, controle de repetição, casos resolúveis com o material, seleção de imagens licenciadas e testes de apresentação no desktop e PWA. O estado permanece **RASCUNHO NÃO CERTIFICADO E NÃO PUBLICADO**, até que todas essas etapas estejam completas.
