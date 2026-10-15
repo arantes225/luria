@@ -263,3 +263,456 @@ A avaliação final deverá considerar, **sem inclusão automática**, ao menos 
 | Fontes/imagens/layout | §§20–21 | Licenças, Admin, WebP, QA desktop/PWA e revisão independente |
 
 **Proibição editorial:** não anunciar como apostila pronta enquanto faltar ampliação clínica autossuficiente, exame detalhado das figuras, checagem de referências, extensão útil, revisão de respostas por texto interno e inspeção visual. Preservar livros cardiovasculares existentes e não gerar `index.html` para este rascunho antes da aprovação.
+
+
+---
+
+# SEGUNDA CAMADA EDITORIAL — DA MORFOLOGIA À DECISÃO SEGURA
+**Adição autoral do lote 08, 15/10/2026.** Esta camada preserva os capítulos 1–22. Aprofunda interpretação de traçados completos, ritmos complexos, isquemia não óbvia e erros de decisão. Não certifica a apostila antes de controle de redundância, revisão médica e aprovação de traçados ilustrativos licenciados.
+
+## 23. Laboratório clínico de eletrocardiografia: quando o papel mente
+
+O ECG é um instrumento de medida. A interpretação é tão boa quanto a qualidade da aquisição, a calibração, o posicionamento e a coerência entre eletrodos e anatomia. Um deslocamento precordial de poucos centímetros pode produzir morfologias semelhantes a cardiopatia e disparar investigação desnecessária; um eletrodo invertido pode sugerir um eixo impossível para a história clínica.
+
+### 23.1. Checagem física antes de chamar de doença
+
+**Velocidade:** normalmente 25 mm/s. Cada quadrado pequeno horizontal vale 0,04 s e cada quadrado grande, 0,20 s. Um registro a 50 mm/s dobra a distância horizontal do mesmo intervalo em segundos. **Ganho:** usualmente 10 mm/mV; alterar para 5 ou 20 mm/mV modifica amplitude aparente, não o potencial elétrico real. Um QRS de 10 mm com 10 mm/mV equivale a 1 mV; com 5 mm/mV, a mesma deflexão de 10 mm representa 2 mV. Por isso não se diagnostica hipertrofia por amplitude de papel sem conferir ganho.
+
+**Filtro:** pode reduzir ruído, mas filtros agressivos alteram morfologia e especialmente ST. ECG “limpo” por filtragem não é necessariamente fiel. Em dúvida, repetir com filtro adequado e verificar comparação com traçado bruto quando disponível. Em monitor à beira-leito, o canal de ritmo frequentemente não possui calibração nem fidelidade de ST equivalente à aquisição de 12 derivações.
+
+**Artefato muscular:** tremor, calafrio, Parkinson, contração voluntária, convulsão, ventilação mecânica e eletrodos frouxos podem produzir oscilações rápidas da linha de base ou aparência de taquicardia. Quando há “FV” em monitor, mas o paciente conversa e tem pulso, tratar a incongruência técnica antes de administrar choque. A verificação do paciente não pode aguardar leitura de filtro do monitor.
+
+**Troca de eletrodos de braço direito e esquerdo:** pode inverter P, QRS e T em DI e trocar características de aVR/aVL, produzindo aparente desvio extremo do eixo. Se há P e QRS surpreendentemente negativos em DI e aVR relativamente positivo, avaliar posicionamento antes de diagnosticar dextrocardia. **Dextrocardia verdadeira** pode mostrar progressão precordial anômala em associação com alterações de membros; troca isolada dos braços tende a preservar a progressão usual de V1 a V6.
+
+**V1 e V2 posicionados altos:** o quarto espaço intercostal junto ao esterno é a posição usual. Colocá-los no segundo ou terceiro pode alterar P terminal, progressão de R e ST, simulando padrão de Brugada, bloqueio incompleto ou infarto septal. Se a anamnese não combina com “infarto septal” emitido automaticamente, repetir em local correto e comparar.
+
+**Derivações precordiais alternadas:** trocar V2/V3 ou V4/V5 pode produzir progressão de R que “vai para frente e para trás”, ou suposta onda Q localizada. Progressão de R ruim tem múltiplas causas — técnica, posição, variação anatômica, enfisema, bloqueio de ramo e infarto prévio. Não chamar necrose apenas por ausência de crescimento típico de R.
+
+### 23.2. Exercício técnico com números completos
+
+Um paciente tem intervalo RR de 4 quadrados grandes em 25 mm/s. A frequência média é 300/4 = **75 bpm**. Se um aparelho imprime a 50 mm/s, um RR idêntico em tempo fisiológico ocupa 8 grandes quadrados, e a conta 300/8 seria incorreta: a regra correta para esse novo papel é **600/8 = 75 bpm**. Da mesma forma, intervalo PR de 4 quadradinhos a 25 mm/s é 160 ms, mas a 50 mm/s são 80 ms de papel; não inventar PR curto pela leitura sem velocidade.
+
+**ECG irregular:** a fórmula 300/grandes quadrados descreve apenas um ciclo; para FA, contar QRS em seis segundos e multiplicar por dez dá aproximação útil, ou calcular por média de múltiplos ciclos e duração real do registro. Não diagnosticar taquicardia de 180 bpm apenas por um RR curto de extrassístole seguido de pausa.
+
+### 23.3. Checklist técnico de aceitação de ECG para a biblioteca LURIA
+
+1. Traçado com identificação anonimizada, data e hora (sem dados pessoais).
+2. Doze derivações legíveis, quando o objetivo exige ECG completo; tira isolada só se a pergunta for ritmo e a limitação estiver explícita.
+3. Velocidade e ganho conhecidos.
+4. Sem inversão evidente de cabos, ou apresentada intencionalmente como caso de artefato.
+5. Morfologia compatível entre derivações contíguas e evolução temporal.
+6. Laudo de referência de profissional qualificado e fonte/licença.
+7. Não utilizar traçado sintético como se fosse exame de paciente.
+8. Se houver série temporal, documentar cronologia e intervenções entre registros.
+
+## 24. Diagnóstico de taquicardia de QRS estreito: árvore de decisão com eletrofisiologia
+
+O QRS estreito geralmente indica que os ventrículos são ativados predominantemente pelo sistema His–Purkinje, mas não define o mecanismo atrial. Uma TSV pode ter aberrância e tornar-se larga; uma taquicardia ventricular rara pode ser relativamente estreita. Por isso, o caminho útil é combinar **regularidade + origem da P + relação P/QRS + resposta hemodinâmica + evolução**.
+
+### 24.1. Ritmo regular com QRS estreito
+
+**Taquicardia sinusal:** a P preserva orientação sinusal (em regra positiva em DII e negativa em aVR), antecede o QRS e a frequência varia com demanda simpática. Infecção, hipovolemia, anemia, dor, hipóxia, TEP, sangramento, ansiedade e tireotoxicose são hipóteses frequentes. Tratar a frequência isolada com manobra ou medicamento antiarrítmico sem reconhecer choque hemorrágico é erro grave. A FC pode ser alta no adulto jovem e na criança sem que isso signifique reentrada.
+
+**Taquicardia atrial focal:** P com eixo/morfologia diferente da sinusal, às vezes visível antes do QRS, podendo ter RP longo; a frequência pode acelerar ou reduzir de modo não abrupto. O mecanismo pode ser automatismo aumentado, atividade deflagrada ou microrreentrada. Não é equivalente a TRN apenas porque a FC é 160.
+
+**Taquicardia por reentrada nodal AV (TRNAV/AVNRT):** circuito envolvendo propriedades eletrofisiológicas das vias nodais, usualmente QRS estreito e muito regular, início/terminação abruptos; a ativação atrial retrógrada pode ser quase simultânea ao QRS, ocultando P, ou formar pseudo-r' em V1 ou pseudo-S nas derivações inferiores. A presença de pseudo-r' ajuda, mas sua ausência não exclui TRNAV.
+
+**Taquicardia por reentrada AV com via acessória (TRAV/AVRT) ortodrômica:** desce pelo nó AV/His-Purkinje e retorna ao átrio por via acessória, com QRS geralmente estreito. A P retrógrada pode surgir após o QRS. O **padrão de WPW na fase basal não é obrigatório**: uma via acessória que só conduz retrogradamente pode desencadear reentrada sem onda delta no ECG de repouso.
+
+**Flutter atrial 2:1:** pode parecer taquicardia regular a 150 bpm com P “ausente”. A atividade atrial pode estar em ~300/min, com uma onda F escondida no QRS e outra na T. Procurar serrilhado nas derivações inferiores e V1; um ECG com 150/min fixos não demonstra automaticamente flutter, mas deve levantar a hipótese. Bloqueio AV variável pode tornar o ritmo irregular.
+
+**Taquicardia juncional:** ativação originada na região AV, com P retrógrada negativa em derivações inferiores ou sem P visível; pode ocorrer em contexto medicamentoso, intoxicação, pós-operatório cardíaco ou automatismo juncional. Diferenciar clinicamente de TRNAV/AVRT nem sempre é possível em ECG único.
+
+| Padrão | P visível | Relação temporal | Pistas | Limitação |
+|---|---|---|---|---|
+| Sinusal | Geralmente sim e sinusal | P precede cada QRS | Varia com febre, dor, volume e respiração | Pode ser muito rápida |
+| Atrial focal | Muitas vezes, diferente da sinusal | Pode ter RP longo | P não sinusal, aceleração gradual em alguns casos | Sobreposição com outras TSV |
+| TRNAV típica | Frequentemente escondida | Átrio e ventrículo quase juntos | Pseudo-r' V1 / pseudo-S inferior | Não é sinal obrigatório |
+| TRAV ortodrômica | Retrógrada às vezes discernível | P após QRS, variando | Início abrupto, via acessória pode ser oculta | ECG basal pode ser normal |
+| Flutter 2:1 | Atividade F, não P sinusal | Atrial ~300; ventricular ~150 | Serrilhado e ritmo regular | F pode ficar escondida |
+| Taquicardia juncional | Ausente ou retrógrada | Pode anteceder/coincidir/suceder QRS | Contexto clínico | Às vezes exige estudo eletrofisiológico |
+
+### 24.2. Ritmo irregular com QRS estreito
+
+**Fibrilação atrial (FA):** RR irregularmente irregular e ausência de ondas P sinusais organizadas; baseline pode ter ondulações finas ou grossas. A amplitude da atividade fibrilatória não determina se o paciente deve ser anticoagulado. A FC não precisa estar alta: FA com resposta ventricular lenta aparece em uso de bloqueadores nodais ou doença de condução, entre outros cenários.
+
+**Flutter com condução variável:** RR irregular, mas organização atrial com ondas F pode ser demonstrável. Em alguns registros, a condução alterna 2:1/3:1/4:1, gerando irregularidade sem perda da organização do átrio.
+
+**Taquicardia atrial multifocal:** ao menos **três morfologias distintas de P** na mesma derivação, linha isoelétrica entre ondas e variação de intervalos PP/PR e RR, FC >100/min. Pode ocorrer em doença pulmonar e distúrbios metabólicos, mas não é exclusiva de DPOC. Se frequência atrial é menor, considerar marca-passo atrial migratório, conforme nomenclatura.
+
+**Extrassístoles supraventriculares numerosas:** geram irregularidade aparentemente caótica, mas cada extrassístole costuma ter P prematura diferente e QRS estreito ou aberrante. Se não se examina um trecho longo, pode-se rotular incorretamente FA.
+
+### 24.3. Tratamento guiado por estabilidade — princípios de segurança
+
+Antes de nomear “TSV”, avaliar hipotensão, choque, confusão aguda, isquemia torácica e insuficiência cardíaca aguda **atribuíveis à taquicardia**. Frequência alta em choque séptico pode ser resposta, não causa; cardioversão de taquicardia sinusal não trata infecção. Em **taquiarritmia com pulso que provoca instabilidade**, cardioversão sincronizada é terapia principal quando apropriada e disponível. Em **taquicardia regular estreita estável**, manobras vagais adequadas, adenosina em mecanismos apropriados e outras opções de acordo com diagnóstico podem ser consideradas por equipe treinada. Adenosina é também ferramenta diagnóstica em casos selecionados, pois pode bloquear transitoriamente condução AV e revelar ondas F, mas **não é tratamento universal de flutter/FA**, e exige cautela em pré-excitação e ritmos irregulares.
+
+A cardioversão **não é equivalente à desfibrilação**: sincronização busca entregar energia sobre a onda R, minimizando indução de FV em ritmos organizados com pulso. A diretriz AHA ACLS de 2025 fornece energia e sequência conforme ritmo e equipamento, que não devem ser inferidas de PDF antigo do Drive.
+
+## 25. Taquicardia de QRS largo: presumir gravidade sem exagerar certeza
+
+Um QRS ≥120 ms em taquicardia no adulto levanta possibilidades: taquicardia ventricular (TV), supraventricular com bloqueio de ramo fixo ou funcional, condução por via acessória e ritmo estimulado por dispositivo. Na abordagem de urgência, **uma taquicardia regular de QRS largo de mecanismo incerto deve ser tratada como TV até esclarecimento**, especialmente em cardiopata estrutural. O atalho visa evitar tratamento inadequado com bloqueadores nodais; não afirma que todo QRS largo é TV.
+
+### 25.1. O que aumenta a probabilidade de TV?
+
+**História de IAM, miocardiopatia, cicatriz cirúrgica ou disfunção ventricular** aumenta chance pré-teste de TV. Idade também pesa, mas pessoa jovem pode ter TV idiopática/miocardite e pessoa idosa pode apresentar TSV aberrante. Hemodinâmica estável **não exclui TV**: algumas TVs monomórficas perfundem por tempo prolongado.
+
+**Dissociação AV:** ondas P marcham independentes do QRS; sinal forte de TV, mas nem sempre visível. **Batimento de captura:** P sinusal consegue conduzir normalmente aos ventrículos durante TV, produzindo complexo relativamente estreito. **Batimento de fusão:** ocorre ativação ventricular simultânea por foco ventricular e impulso supraventricular, criando QRS intermediário. A presença de captura/fusão favorece fortemente TV, mas ausência não exclui.
+
+**Concordância precordial:** todos os QRS de V1 a V6 predominantemente positivos ou negativos pode sugerir TV em determinados contextos, mas há exceções. Eixo extremo, QRS muito largo e critérios morfológicos específicos também ajudam. Algoritmos como Brugada e Vereckei foram desenvolvidos para diferenciar TV de TSV aberrante, porém seu desempenho cai em ritmos estimulados, pré-excitação, alterações basais e alguns pacientes; **não usar resultado de escore para atrasar cardioversão de pessoa instável**.
+
+### 25.2. Regularidade e polimorfismo orientam segurança
+
+| Padrão | Exemplos | Risco principal | Conduta de princípio |
+|---|---|---|---|
+| Largo, regular e monomórfico | TV monomórfica, TSV com aberrância, TRAV antidrômica | Instabilidade, degeneração em FV | Monitor, avaliar pulso/estabilidade; tratar como TV se incerto |
+| Largo, irregular com morfologia variável | FA pré-excitada, TV polimórfica, FA com aberrância | FV, choque | **Não presumir FA comum** nem usar bloqueador AV indiscriminadamente |
+| Largo, polimórfico com QT prolongado prévio | Torsades de pointes | Degeneração em FV | Corrigir fatores QT/Mg e choque quando instável |
+| Largo, polimórfico sem QT prolongado | Isquemia aguda, catecolaminas, outras causas | Isquemia/instabilidade | Avaliar isquemia e causas; suporte avançado |
+| Caótico sem QRS organizado e sem pulso | FV | Parada | Desfibrilação/RCP conforme ACLS |
+
+**Adenosina:** a diretriz ACLS permite considerá-la em **taquicardia regular, monomórfica, de QRS largo, estável e de diagnóstico incerto** em condições adequadas. Ela **não deve ser usada** como teste em taquicardia larga **irregular ou polimórfica**, diante de suspeita de pré-excitação com FA ou em instabilidade. Em arritmia ventricular, pode inclusive induzir piora ou atrasar medida definitiva.
+
+### 25.3. TV sustentada, não sustentada e salvas
+
+TV não sustentada é sequência de ao menos três batimentos ventriculares com duração inferior a 30 segundos e término espontâneo. TV sustentada persiste ≥30 segundos **ou exige interrupção antes por instabilidade**. Um episódio de 12 segundos que provoca síncope e precisa de cardioversão não deve ser banalizado como “apenas TV curta”. Avaliação de cardiopatia estrutural, isquemia e eletrólitos é tão importante quanto duração.
+
+### 25.4. Torsades de pointes não é toda TV polimórfica
+
+Torsades designa TV polimórfica em **contexto de repolarização/QT prolongados**, frequentemente com oscilação gradual do eixo/amplitude (“torção das pontas”). Medicamentos que prolongam QT, hipocalemia, hipomagnesemia, bradicardia e síndromes hereditárias aumentam risco. A medida do QT durante o evento é inviável, então revisar ECG basal ou após conversão.
+
+Em episódio sustentado ou com instabilidade, choque **não sincronizado** pode ser necessário. Magnésio IV e correção de potássio/remoção de fármacos que prolongam QT fazem parte de abordagem específica, além de tratar bradicardia/gatilhos selecionados. Uma TV polimórfica associada a IAM agudo **sem QT prolongado** exige prioridade de isquemia/reperfusão e não se resolve apenas com “magnésio para todo polimorfismo”.
+
+## 26. Pré-excitação, WPW e FA pré-excitada: armadilha de alto impacto
+
+Uma **via acessória AV** pode conduzir parte da ativação diretamente do átrio aos ventrículos, evitando atraso fisiológico nodal e produzindo **PR curto, onda delta e QRS mais alargado** em ritmo sinusal quando há pré-excitação manifesta. **Padrão de pré-excitação no ECG** não é sinônimo de síndrome clínica sintomática; síndrome de WPW envolve pré-excitação associada à taquiarritmia clínica, em terminologia usual.
+
+Na **FA com condução anterógrada rápida pela via acessória**, o traçado pode mostrar ritmo **irregular, extremamente rápido, QRS largo de morfologia e duração variáveis**, às vezes alternando graus de pré-excitação. A variabilidade pode ser confundida com TV polimórfica. Esta síndrome tem risco de degenerar em fibrilação ventricular.
+
+**Por que os fármacos mudam?** Em FA habitual, o nó AV filtra parte dos impulsos. Bloquear o nó em pessoa com via acessória que conduz rapidamente pode favorecer passagem de mais impulsos aos ventrículos pela via anômala. A diretriz ACC/AHA/ACCP/HRS 2023 classifica como **prejudicial/contraindicado** em FA pré-excitada o uso de bloqueadores nodais: **verapamil, diltiazem, betabloqueadores, digoxina, adenosina e amiodarona IV**. Este último ponto contradiz esquemas antigos que simplificam “taquicardia larga = amiodarona”.
+
+**Conduta geral:** se instável, cardioversão elétrica imediata segundo protocolo; em pessoa estável com FA pré-excitada, equipes experientes podem selecionar **procainamida ou ibutilida IV** (segundo diretriz e disponibilidade), ou cardioversão apropriada. Avaliar ablação de via acessória após estabilização. Não transformar isso em receita automática: confirmar diagnóstico, drogas disponíveis no Brasil e contexto cardíaco.
+
+**Diferença decisiva:** na TRAV **ortodrômica regular e estreita**, determinadas intervenções nodais podem encerrar o circuito quando corretamente indicadas; na FA **irregular, larga e pré-excitada**, essas mesmas drogas podem ser perigosas. A palavra “WPW” isolada não basta para determinar conduta: **o ritmo presente é que orienta risco**.
+
+## 27. Bradicardia: separar doença do nó, doença AV e resposta fisiológica
+
+A FC <60/min em adulto pode representar sono, condicionamento físico, efeito de medicamentos ou doença do sistema de condução. Em urgência, AHA 2025 destaca bradicardia **tipicamente abaixo de 50/min quando associada a compromisso clínico**, não uma fronteira automática em todo atleta com FC 48. Verificar perfusão, estado mental, pressão, dor isquêmica e insuficiência cardíaca aguda.
+
+### 27.1. Pausas sinusais e bloqueio sinoatrial
+
+O **nó sinusal** pode falhar em gerar impulso, resultando pausa sinusal; bloqueio de saída sinoatrial pode gerar pausa por falha de condução do nó ao átrio. Distinguir pelo fato de a duração de certa pausa ser ou não múltiplo do intervalo sinusal basal pode ajudar em exemplos clássicos, mas variabilidade do ritmo e interferência autonômica tornam o diagnóstico difícil. Uma pausa isolada em sono não equivale à necessidade de marcapasso permanente.
+
+### 27.2. Os bloqueios AV não são equivalentes
+
+**BAV de primeiro grau:** todo P conduz, PR prolongado (tipicamente >200 ms no adulto). Pode ocorrer por tônus vagal, fármacos, miocardite ou doença de condução. Não há batimento bloqueado, portanto o termo “bloqueio” é histórico.
+
+**Mobitz I (Wenckebach):** PR progride e depois uma P não é conduzida, repetindo sequência; costuma ser nodal, sobretudo em indivíduos jovens, mas contexto clínico importa. **Mobitz II:** PR dos batimentos conduzidos permanece essencialmente constante e ocorre P súbita não conduzida, exigindo excluir batimentos atriais prematuros bloqueados e bloqueio 2:1 mal classificado. O Mobitz II verdadeiro sugere doença do sistema His-Purkinje e pode progredir para BAV completo.
+
+**BAV 2:1:** duas P para cada QRS podem impedir observar progressão de PR; **não se pode classificá-lo honestamente em Mobitz I ou II apenas pelo ritmo 2:1**. Largura do QRS, atropina/exercício em ambiente apropriado e estudo especializado podem ajudar localizar nível.
+
+**BAV avançado/alto grau:** duas ou mais P consecutivas não conduzidas, com condução intermitente. **BAV completo:** P e QRS têm ritmos independentes, sem condução AV. QRS pode ser estreito se escape juncional ou largo se escape ventricular; a largura orienta suspeita de localização mas não substitui avaliação. Em BAV completo pode haver FC 40, 30 ou menor e instabilidade hemodinâmica variável.
+
+| Bloqueio | Relação P-QRS | Risco e conduta conceitual |
+|---|---|---|
+| Primeiro grau | Todos conduzem; PR prolongado | Frequentemente observar/investigar causa; sintoma/contexto importam |
+| Mobitz I | PR progride antes de P bloqueada | Muitas vezes nodal, mas não banalizar se sintomático |
+| Mobitz II | PR conduzido constante com P inesperadamente bloqueada | Alto risco de progressão; avaliação urgente e marcapasso conforme cenário |
+| 2:1 | Uma P conduz e outra não | **Não subclassificar** somente pelo ECG 2:1 |
+| Alto grau | Múltiplas P seguidas não conduzidas | Alerta para deterioração e necessidade de suporte |
+| Completo | Atividade atrial independente da ventricular | Avaliar imediatamente sintomas, escape, causas reversíveis e estimulação |
+
+### 27.3. Drogas e causas reversíveis
+
+Betabloqueadores, verapamil/diltiazem, digoxina e alguns antiarrítmicos podem reduzir automatismo ou condução; hipercalemia, hipóxia, IAM inferior, miocardite, doença infiltrativa e Chagas também podem causar bradiarritmias. Uma pessoa com DRC, K alto, bradicardia e bloqueio nodal por medicamentos pode ter interação complexa do tipo BRASH; tratar somente atropina sem avaliar potássio/medicamentos/choque é insuficiente.
+
+**Bradicardia com instabilidade:** suporte de via aérea e perfusão, ECG, glicose/eletrólitos conforme indicação, atropina na dose ACLS adulta adequada quando indicada; se falhar, estimulação transcutânea e/ou infusão de fármacos vasoativos e consulta especializada. AHA 2025 especifica **atropina 1 mg IV**, repetível a cada 3–5 minutos até **3 mg no adulto**. A existência do algoritmo não dispensa procurar causa corrigível, como hipercalemia ou intoxicação. Em BAV de alto grau e paciente que piora, preparar marcapasso pode ser urgente.
+
+### 27.4. Bifascicular e condução na doença de Chagas
+
+O padrão **bloqueio de ramo direito + bloqueio divisional anterossuperior esquerdo** é clássico em cardiopatia chagásica e outras doenças do sistema His–Purkinje. Ele isoladamente **não significa bloqueio AV completo**, mas síncope inexplicada com doença estrutural ou QRS largo exige avaliação de risco e correlação clínica. Não tratar toda combinação de BRD + hemibloqueio como indicação automática de marcapasso sem sintomas/exames e diretrizes de dispositivos.
+
+## 28. Isquemia miocárdica: a série dinâmica é mais importante do que uma fotografia
+
+Um ECG inicial não diagnóstico não exclui oclusão coronariana. Cerca de um em cada dez pacientes que finalmente recebe diagnóstico de IAM com supra pode ter ECG inicial não diagnóstico; dados variam por população. A orientação ACC/AHA 2025 recomenda **ECG em até 10 minutos** na avaliação de suspeita de SCA e repetir ECG diante de sintomas persistentes, recorrência de dor ou deterioração clínica, com troponina de alta sensibilidade e avaliação de risco segundo protocolo.
+
+### 28.1. Derivações e vascularização como aproximação probabilística
+
+| Derivações | Território geralmente representado | Cuidado |
+|---|---|---|
+| DII, DIII, aVF | Inferior | Coronária direita com frequência, mas circunflexa também |
+| V1–V4 | Septal/anterior | Pode envolver DA; anatomia não é fixa |
+| DI, aVL, V5–V6 | Lateral alta/baixa | Diagonal/circunflexa e outras distribuições |
+| V7–V9 | Parede posterior | Pode revelar supra quando ECG padrão só mostra infra V1–V3 |
+| V3R–V4R | Ventrículo direito | Importante em IAM inferior, especialmente hipotensão |
+
+### 28.2. Supra clássico: limiares corretos e limitação
+
+Critérios eletrocardiográficos tradicionais de supra: em duas derivações contíguas, ≥1 mm no ponto J nas derivações diferentes de V2–V3; em V2–V3: **≥2 mm em homens ≥40 anos**, **≥2,5 mm em homens <40** e **≥1,5 mm em mulheres**. Eles são critérios de síndrome, não condição biológica absoluta para oclusão: ECG pode mostrar padrão de oclusão sem atingir limiar clássico. Em paciente com bloqueio de ramo, hipertrofia ou marcapasso, a repolarização secundária exige método próprio.
+
+**Reciprocidade:** infra de ST em derivações opostas ao supra pode reforçar diagnóstico de IAM, mas não está presente em todo infarto e não é único diagnóstico de infra. **Onda T hiperaguda** pode preceder supra e exige interpretação seriada.
+
+### 28.3. IAM posterior: enxergar o espelho
+
+A parede posterior não é diretamente vista nas 12 derivações usuais. Um vetor posterior de lesão pode manifestar **infra horizontal em V1–V3**, frequentemente associado a **R proeminente e T positiva** nessas derivações. Diante de sintomas compatíveis, fazer **V7–V9**; elevação de ST de aproximadamente **≥0,5 mm nas derivações posteriores** é critério frequentemente utilizado, com nuances de sexo/idade e fonte. O limiar menor decorre da maior distância desses eletrodos ao miocárdio. Não encerrar investigação como “SCA sem supra de baixo risco” por ausência de elevação padrão de V1–V6.
+
+**Derivações direitas:** em IAM inferior, sobretudo com hipotensão, pesquisar acometimento de ventrículo direito. O VD depende muito de pré-carga em algumas circunstâncias; **nitratos podem precipitar piora hemodinâmica** e não devem ser dados indiscriminadamente a paciente hipotenso com suspeita de IAM de VD.
+
+### 28.4. De Winter e Wellens não são o mesmo padrão
+
+**Padrão de de Winter:** infradesnivelamento ascendente do ponto J em derivações precordiais anteriores, seguido de **ondas T altas e simétricas**, em cenário típico de dor isquêmica aguda; pode coexistir discreto supra em aVR. Sugere oclusão de DA em subset de casos e deve disparar discussão **urgente de reperfusão invasiva**, mesmo sem critérios clássicos de supra. Diferenciar de hipercalemia, que pode ter distribuição mais difusa e alterações progressivas de P/QRS, e de repolarização normal.
+
+**Padrão de Wellens:** ondas T bipásicas ou profundamente negativas e simétricas sobretudo em V2–V3 (podendo estender-se), com história recente de angina e frequentemente paciente **sem dor no momento do registro**; sugere estenose crítica em território de DA e risco de infarto anterior. Troponina pode não estar muito elevada. **Não provocar isquemia com teste ergométrico de rotina** antes de avaliação cardiológica adequada. Wellens não equivale automaticamente a “IAM com supra”, e as formas bifásicas/profundamente invertidas podem ser nomeadas de modo diferente em materiais didáticos; o raciocínio clínico é mais importante que rótulo tipo A/B.
+
+**Supra transitório:** dor que desaparece e ST normaliza não autoriza desprezar evento; pode significar oclusão/reperfusão espontânea com risco de nova oclusão. Registrar hora de cada traçado e sintomas contemporâneos.
+
+### 28.5. aVR elevado e depressão difusa do ST: indicador de risco, não diagnóstico anatômico definitivo
+
+O padrão de **infra de ST extenso com supra em aVR e/ou V1** pode refletir isquemia subendocárdica global, associada a doença coronariana extensa/tronco esquerdo em determinados casos, mas também ocorrer em **choque, anemia grave, taquicardia intensa e outras situações de desequilíbrio oferta/demanda**. Não é correto afirmar que aVR alto “prova oclusão do tronco”. Na dor torácica persistente com instabilidade, requer avaliação cardíaca urgente; fora desse contexto, investigar mecanismos clínicos.
+
+### 28.6. LBBB, marcapasso e Sgarbossa
+
+No BRE e na estimulação de VD, a alteração secundária de ST/T pode ser esperada em oposição à direção principal do QRS. **BRE novo isoladamente não é prova de IAM**. Os critérios de Sgarbossa consideram alterações **concordantes** de ST em algumas derivações, e a versão **modificada** incorpora desproporção entre supradesnível discordante do ST e profundidade da onda S (razão ST/S) no contexto apropriado; um limiar de magnitude desproporcional próxima de 25% da profundidade de S aparece em estudos de validação. Esses critérios exigem metodologia apropriada e não devem ser reduzidos à fórmula “qualquer supra discordante é oclusão”.
+
+Um **Sgarbossa negativo não exclui SCA**, e a dor persistente em paciente com BRE e troponina dinâmica pode requerer avaliação invasiva apesar de critérios negativos. O modelo é ferramenta de probabilidade de oclusão, não autorização independente para tratar com fibrinolítico.
+
+## 29. Distúrbios eletrolíticos e metabólicos: padrões, limites e prognóstico
+
+### 29.1. Potássio
+
+**Hipercalemia:** em apresentações típicas, ondas T altas, simétricas, de base mais estreita; diminuição de amplitude e desaparecimento de P, PR prolongado, QRS alargado e, em extremos, traçado sinusoidal; bradiarritmias, bloqueios e FV/assistolia podem ocorrer. **A ordem não é obrigatória**. Pessoas com K muito alto podem não ter ECG dramaticamente alterado; outras podem deteriorar com elevações moderadas em contexto de medicamentos, doença renal e velocidade da alteração. **ECG normal não exclui hipercalemia perigosa**.
+
+**Hipocalemia:** T achatada, depressão de ST, onda U proeminente e prolongamento aparente de QU; favorece ectopia e, em certos contextos, torsades, sobretudo se há medicamentos que prolongam repolarização. Medir QT e distinguir U da T pode ser difícil; corrigir K/Mg com monitorização e investigar perda renal/digestiva.
+
+**Caso especial:** paciente em hemodiálise com bradicardia, P pouco visível e QRS largo merece avaliação e terapia emergencial de hipercalemia; não adiar tratamento esperando laudo formal de 12 derivações ou aguardando “sine wave”.
+
+### 29.2. Cálcio e magnésio
+
+**Hipocalcemia:** tende a alongar QT por maior duração do segmento ST; QT muito prolongado eleva risco de arritmia em alguns cenários. **Hipercalcemia:** encurta ST e QT, embora apresentação varie; não chamar hipocalcemia só por QTc longo sem laboratório e fármacos. **Hipomagnesemia:** pode facilitar arritmias, especialmente com hipocalemia e QT longo. O ECG sugere contexto, não substitui dosagem e avaliação renal.
+
+### 29.3. Digoxina, hipotermia e pericardite
+
+**Efeito digitálico** terapêutico pode produzir depressão característica do ST em aspecto côncavo/“escavado” e alteração da T, sem significar necessariamente intoxicação. **Intoxicação digitálica** deve ser suspeitada por contexto, manifestações clínicas e ritmos como taquicardia atrial com bloqueio AV, extrassístoles ventriculares, bradiarritmias e alterações combinadas; o nível sérico deve ser interpretado segundo coleta e função renal.
+
+**Hipotermia:** pode associar bradicardia, prolongamento de intervalos e onda J/Osborn, mas onda J não é exclusiva e não mede sozinha a temperatura. Interferência por tremores também dificulta leitura.
+
+**Pericardite aguda:** dor pleurítica/posicional e alterações de ST difusas (frequentemente concavidade para cima), depressão de PR em algumas derivações, e ausência de padrão regional/recíproco típico em parte dos casos; **não** afirmar que toda pericardite tem ST difuso ou que infra de PR isolado fecha diagnóstico. Miopericardite e infarto agudo podem coexistir ou se confundir. Troponina, eco e avaliação de sintomas são essenciais.
+
+## 30. Padrões elétricos hereditários e de cardiomiopatia que uma apostila premium deve ensinar
+
+### 30.1. Brugada: padrão versus síndrome
+
+O **padrão tipo 1** envolve supra de ST em “coved” em derivações precordiais direitas, particularmente V1–V2, frequentemente mais evidente com eletrodos posicionados em espaços superiores em protocolo. É necessário diferenciar padrão espontâneo, revelação por fármacos e **fenocópias** associadas a febre, distúrbios metabólicos ou outras cardiopatias. Um ECG isolado suspeito não determina sozinho estratificação de morte súbita nem indicação automática de desfibrilador; história de síncope arrítmica, FV, familiares e avaliação especializada importam.
+
+**Febre** pode revelar padrão de Brugada e elevar risco arrítmico em portador suscetível, motivando controle e avaliação médica. Não tratar como simplesmente “supra septal = pericardite”.
+
+### 30.2. QT longo e curto: a medida não é identidade molecular
+
+QTc prolongado pode ser adquirido por medicamentos, hipocalemia, hipomagnesemia, bradicardia, hipotireoidismo ou cardiopatia; pode também refletir síndrome hereditária. ECG repetido, história familiar de morte súbita, síncope desencadeada por exercício, estresse ou ruído, e avaliação de fármacos são essenciais. A **fórmula de Bazett** (QTc = QT / raiz de RR em segundos) é fácil de memorizar, mas **tende a supercorrigir em frequências altas e subcorrigir em baixas**. Fórmulas como Fridericia podem ser mais adequadas em certos cenários. Em QRS largo, o QT inclui despolarização prolongada e pode superestimar distúrbio de repolarização; considerar avaliação do **JT** ou métodos de ajuste específicos com especialista.
+
+**Exercício:** QT medido de 400 ms com RR de 0,64 s resulta em QTc-Bazett = 0,400/0,8 = **0,500 s (500 ms)**; isso não deve ser rotulado em definitivo como síndrome hereditária sem checar medida, frequência, sexo, fármacos e outra correção. Se o algoritmo do aparelho estiver incorreto, medir manualmente em derivação adequada.
+
+### 30.3. Cardiomiopatia hipertrófica e arritmogênica
+
+ECG pode revelar hipertrofia/strain, ondas Q profundas pseudo-infarto, inversões de T ou bloqueios, mas tem sensibilidade/especificidade limitada para afirmar anatomia. **Ecocardiograma e/ou RM** são essenciais quando cardiomiopatia é suspeita. Em cardiomiopatia arritmogênica ventricular, alterações em precordiais direitas e ondas épsilon podem ocorrer, mas a onda épsilon é sinal de baixa sensibilidade e não deve ser buscada como requisito obrigatório. História de síncope ao esforço, TV, familiares e imagem têm maior peso de decisão.
+
+### 30.4. Embolia pulmonar
+
+Taquicardia sinusal é achado inespecífico frequente; BRD transitório, sobrecarga direita, inversão de T em V1–V4, desvio de eixo e clássico **S1Q3T3** podem ocorrer, mas são pouco sensíveis e não excluem nem confirmam TEP. Não mandar anticoagular apenas porque viu S1Q3T3; a probabilidade clínica e os exames diagnósticos apropriados continuam necessários.
+
+## 31. Marcapasso e cardiodesfibrilador: leitura que evita erros no monitor
+
+**Espícula de marcapasso** antecedendo P ou QRS pode indicar estimulação atrial/ventricular; dispositivos bipolares podem produzir espículas de baixa amplitude pouco visíveis, portanto ausência aparente de espícula não exclui estimulação. **Captura elétrica** é ativação cardíaca após estímulo; **captura mecânica** exige pulso/perfusão quando o contexto é emergencial. Uma espícula seguida de QRS não garante circulação adequada, e a perda de captura pode provocar bradicardia grave em paciente dependente.
+
+**Falha de sensibilidade (sensing):** estímulos podem ser emitidos em momentos inadequados se dispositivo não reconhece atividade intrínseca; **falha de captura:** espícula sem despolarização subsequente; **falha de estímulo/saída:** ausência de espícula quando deveria ocorrer. Distinguem-se de pseudofusão/fusão, inibição programada, alterações de programação, bateria e artefatos de monitor. Diagnóstico definitivo requer interrogação do dispositivo.
+
+**Cardiodesfibrilador implantável (CDI):** choques relatados pelo paciente podem corresponder a TV/FV, terapia inapropriada por FA/ruído ou outras condições. ECG de superfície pode estar normal depois do choque; obter avaliação do dispositivo e contexto. Não orientar manipular programação sem equipe habilitada.
+
+## 32. Modelo de interpretação seriada: transformar medidas em conclusão clínica
+
+Uma boa leitura descreve o que está **documentado no traçado** e depois a hipótese clínica; não deve confundir sugestão diagnóstica com prova de doença. Modelo de laudo completo didático:
+
+**Registro 1 — paciente com dispneia:** velocidade 25 mm/s, ganho 10 mm/mV; ritmo sinusal, FC aproximadamente 112/min; eixo QRS normal; PR 160 ms; QRS 90 ms; QTc estimado com método informado; sem supra de ST; T inespecíficas. **Conclusão eletrocardiográfica:** taquicardia sinusal. **Interpretação clínica:** ECG não identifica causa; avaliar sepse, TEP, hipoxemia, anemia, dor, sangramento e desidratação conforme história.
+
+**Registro 2 — dor torácica e alteração dinâmica:** ECG inicial com infra discreto e T positiva nas derivações anteriores. Após 15 minutos de dor intensa, infra de ST progressivo e T hiperagudas, com sintomas persistentes. **Conclusão:** alteração dinâmica de repolarização sugestiva de isquemia; possível padrão de oclusão no contexto. **Conduta da equipe:** ativar investigação/estratégia invasiva urgente conforme protocolo, troponina de alta sensibilidade e ECG seriado. Não esperar uma onda Q “de necrose” para agir.
+
+**Registro 3 — pós-intervenção:** ST normalizado, ritmo idioventricular acelerado transitório, sintomas melhorando. **Conclusão:** pode ocorrer em reperfusão, mas não prova sozinho artéria pérvia nem substitui avaliação clínica/angiográfica e hemodinâmica.
+
+**Registro 4 — divergência com monitor:** tela mostra fibrilação ventricular, paciente está acordado, fala e tem pulso central regular; duas derivações do monitor exibem movimentos incompatíveis. **Conduta:** avaliar artefato e cabos imediatamente. Desfibrilar um paciente consciente por artefato sem corroborar estado clínico é erro grave.
+
+## 33. Casos clínicos adicionais — traçado, hipótese, exame e decisão
+
+### Caso 6 — Taquicardia regular a 150/min sem onda P evidente
+
+Mulher de 58 anos, palpitações há duas horas, PA 122/76 mmHg, consciente e com perfusão preservada. ECG: QRS 85 ms, RR extremamente regular, FC 150/min, ondas discretas serrilhadas inferiores. **Hipóteses:** flutter 2:1, TRNAV, TRAV, taquicardia atrial. **Raciocínio:** frequência ~150 e ondas F sugerem flutter; confirmar padrão em registro longo e derivações, sem confiar apenas em “P ausente”. **Exames:** ECG completo, eletrólitos e avaliação de desencadeantes/tromboembolia conforme cenário. **Conduta:** avaliação de estabilidade, mecanismo, tempo de arritmia e opções de controle de frequência/ritmo sob protocolo; considerar risco tromboembólico. **Por que importa:** duas taquicardias a 150 podem precisar de tratamentos e prevenção muito diferentes.
+
+### Caso 7 — Ritmo irregular, QRS muito largo e pré-excitação
+
+Homem de 24 anos com palpitações abruptas, pré-excitação documentada em ECG antigo, PA 95/60 e tontura; traçado mostra taquicardia extremamente rápida, RR variável e QRS de formas diferentes. **Hipótese:** FA pré-excitada até prova em contrário. **Raciocínio:** a via acessória pode conduzir impulsos atriais rapidamente e gerar FV; irregularidade não é indicação para diltiazem de rotina. **Exames:** ECG/monitor, sinais de perfusão e eletrólitos se não atrasar atendimento. **Conduta:** preparar manejo elétrico conforme instabilidade; não usar bloqueadores do nó AV, inclusive adenosina/amiodarona IV nesse contexto; equipe de emergência/cardiologia. **Por que importa:** aplicação de algoritmo de FA comum pode ser fatal.
+
+### Caso 8 — Taquicardia larga estável em pessoa com cicatriz isquêmica
+
+Homem de 67 anos, IAM antigo, FEVE reduzida, palpitações e PA 116/70; ECG com QRS 170 ms regular a 172/min, dissociação AV e ocasional batimento de fusão. **Hipótese:** TV monomórfica sustentada. **Raciocínio:** cardiopatia estrutural + dissociação/fusão torna TV muito provável. **Exames:** ECG, monitorização, eletrólitos, avaliação de isquemia e perfusão. **Conduta:** preparar cardioversão sincronizada se instabilidade e tratamento avançado de TV estável segundo ACLS/cardiologia, com vigilância por risco de deterioração. **Por que importa:** estabilidade não transforma TV em TSV benigna.
+
+### Caso 9 — Síncope, FC 35/min e BAV de alto grau
+
+Mulher de 73 anos com síncope e pele fria; ECG mostra ondas P regulares a ~85/min e QRS a ~35/min sem relação fixa, QRS largo. **Hipótese:** BAV completo com escape ventricular e instabilidade. **Raciocínio:** dissociação atrioventricular e bradicardia de escape; fármacos e potássio devem ser investigados, sem atrasar suporte. **Exames:** ECG seriado, eletrólitos, troponina se contexto, lista medicamentosa e eco conforme estabilidade. **Conduta:** equipe de emergência, monitor, acesso, medidas ACLS, preparo para estimulação e avaliação definitiva de marcapasso. **Por que importa:** não aguardar nova síncope para reconhecer bloqueio de alto risco.
+
+### Caso 10 — IAM posterior que parecia “infra sem supra”
+
+Homem de 55 anos com dor retroesternal intensa e sudorese. ECG padrão mostra infra horizontal de 1,5 mm em V1–V3, R proeminente e T positiva, sem supra convencional em derivações anteriores. **Hipótese:** oclusão coronariana posterior. **Raciocínio:** o espelho de lesão posterior cria infra anterior. **Exames:** V7–V9, troponina e avaliação clínica; imagens/angiografia conforme protocolo. **Conduta:** ativação de via coronariana urgente, não aguardar que onda Q apareça ou limitar-se ao rótulo de NSTEMI de baixo risco. **Por que importa:** a posição dos eletrodos muda a identificação da oclusão.
+
+### Caso 11 — Bem sem dor, T negativa simétrica anterior
+
+Mulher de 61 anos teve crises de angina noturna, agora sem dor. ECG: inversão profunda, simétrica, de T em V2–V4 e troponina discretamente alterada. **Hipótese:** padrão de Wellens/estenose importante no território da DA, entre diferenciais. **Raciocínio:** a ausência atual de dor não significa baixo risco; reperfusão espontânea pode produzir alterações de T. **Exames:** monitor, troponinas e avaliação coronariana apropriada. **Conduta:** cardiologia urgente, **não** provocar isquemia com teste ergométrico de rotina. **Por que importa:** ECG de alto risco pode aparecer no intervalo assintomático.
+
+### Caso 12 — Choque séptico, aVR elevado e infra difuso
+
+Homem de 70 anos, pneumonia grave, PA 82/48, lactato alto, taquicardia 132/min e ECG com infra de ST generalizado e elevação em aVR. **Hipótese:** isquemia subendocárdica global por desequilíbrio oferta/demanda; doença coronária crítica permanece diferencial. **Raciocínio:** aVR elevado não prova oclusão de tronco; hipoperfusão sistêmica pode gerar padrão semelhante. **Exames:** ECG seriado, troponinas, avaliação cardíaca e séptica. **Conduta:** ressuscitação/controle do foco, monitorização e avaliação de SCA quando clínica/evolução indicar. **Por que importa:** o mesmo padrão elétrico admite mecanismos distintos, com tratamentos de prioridade diferente.
+
+### Caso 13 — Plaqueta? Não: QT prolongado e torsades após fármaco
+
+Mulher de 46 anos em uso de múltiplos fármacos que prolongam QT, potássio baixo, apresenta episódios de síncope; monitor mostra TV polimórfica autolimitada, ECG após conversão com QTc prolongado. **Hipótese:** torsades de pointes induzida por fármacos/eletrólitos. **Raciocínio:** diferenciar TV polimórfica por isquemia da associada a QT longo. **Exames:** eletrólitos, ECG seriado, lista de medicamentos, função renal e investigação cardiológica. **Conduta:** retirar gatilhos, corrigir K/Mg, terapia específica e prontidão para desfibrilar se instabilidade. **Por que importa:** “amiodarona para toda TV” pode piorar repolarização nesse contexto.
+
+### Caso 14 — “Infarto septal” causado por posicionamento
+
+Mulher de 33 anos, sem queixas cardíacas, laudo automático relata “possível infarto septal antigo” devido a QS V1–V2; eletrodos estavam no segundo espaço intercostal. **Hipótese:** falso-padrão por colocação alta de V1–V2. **Raciocínio:** achado técnico em assintomática, sem alterações concordantes e com eletrodos errados, não prova cicatriz. **Exames:** repetir ECG no quarto espaço com localização correta, comparar traçado anterior e avaliar cardiopatia se persistirem alterações relevantes. **Conduta:** corrigir aquisição e laudo, sem iniciar cascata de testes por algoritmo automático isolado. **Por que importa:** evitar diagnóstico falso e ansiedade.
+
+### Caso 15 — Rim crônico, bradicardia, ECG pouco dramático
+
+Homem de 69 anos com doença renal avançada e fraqueza, K 6,8 mEq/L, FC 48/min e ECG sem padrão clássico de T muito alta; PR discretamente alongado. **Hipótese:** hipercalemia clinicamente relevante apesar de traçado pouco típico. **Raciocínio:** sensibilidade de ECG para hipercalemia é limitada; laboratório e contexto exigem ação. **Exames:** confirmar resultado segundo risco de hemólise sem atrasar quando risco alto, função renal e outros eletrólitos. **Conduta:** tratamento de hipercalemia conforme protocolo urgente e avaliação de diálise se indicado, monitorização. **Por que importa:** ECG “normal” não elimina desequilíbrio eletrolítico grave.
+
+### Caso 16 — Marcapasso: espícula sem QRS e tontura
+
+Homem de 79 anos com marcapasso por BAV completo, tontura e hipotensão. Monitor registra espículas ventriculares ocasionais sem QRS subsequente. **Hipótese:** possível falha de captura. **Raciocínio:** estímulo elétrico emitido não gerou despolarização efetiva; pesquisar deslocamento de cabo, bateria/programação, limiar e eletrólitos. **Exames:** ECG completo, monitor, eletrólitos, avaliação de dispositivo e radiografia quando indicada. **Conduta:** suporte de bradicardia/estimulação temporária conforme instabilidade, equipe de eletrofisiologia. **Por que importa:** reconhecer diferença entre espícula e perfusão mecânica.
+
+### Caso 17 — Dor e BRE preexistente
+
+Homem de 64 anos com dor torácica e BRE crônico; ECG atual apresenta elevação de ST concordante em derivação com QRS positivo e alterações dinâmicas comparadas ao exame anterior. **Hipótese:** oclusão coronariana aguda sobre BRE. **Raciocínio:** novo BRE isolado não é prova de IAM, mas mudanças concordantes, sintomas e marcadores aumentam suspeita. **Exames:** ECGs comparativos/seriados, troponina, eco e estratégia invasiva conforme contexto. **Conduta:** cardiologia urgente; avaliar Sgarbossa/modificado com profissional experiente. **Por que importa:** evitar tanto falso-positivo por BRE quanto falso-negativo por chamar tudo de secundário.
+
+## 34. Questões adicionais de raciocínio eletrocardiográfico (Q9–Q24)
+
+**Q9 — Ganho.** Um ECG está em 5 mm/mV, mas o médico aplica critério de hipertrofia baseado em amplitude padrão sem observar calibração. O erro é:  
+A) a amplitude aparente não depende do ganho; B) critérios em mm exigem confirmar ganho; C) todo ECG com ganho baixo indica HVE; D) não há importância para interpretação.  
+**Gabarito B.** A/D ignoram unidade física; C confunde configuração com doença. **Revisão:** 10 mm/mV é padrão usual, mas não universal.
+
+**Q10 — Irregular e estreito.** ECG com RR irregularmente irregular e sem P organizada sugere:  
+A) FA; B) BAV de primeiro grau; C) TRNAV necessariamente; D) TV monomórfica necessariamente.  
+**Gabarito A.** B mantém P regular e todos conduzem; C costuma ser regular; D não explica padrão estreito com ausência de P. **Revisão:** confirmar ausência real de organização atrial em trecho longo.
+
+**Q11 — FC de 150 regular.** ECG estreito, regular, a 150/min, ondas em serrilha nas derivações inferiores. Suspeita principal:  
+A) flutter atrial 2:1; B) fibrilação ventricular; C) assistolia; D) BAV completo.  
+**Gabarito A.** B/C não apresentam QRS regular perfusor, D gera dissociação/bradicardia. **Revisão:** uma onda F pode ficar dentro do QRS.
+
+**Q12 — QRS largo regular e cardiopatia.** Homem com IAM antigo e taquicardia larga regular a 175/min, ainda normotenso. Melhor conduta cognitiva:  
+A) TV deve ser considerada prioritariamente; B) estabilidade exclui TV; C) aplicar diltiazem de rotina; D) tratar como fibrilação ventricular sem avaliar pulso.  
+**Gabarito A.** B é falso; C é perigoso se TV; D confunde ritmo com pulso. **Revisão:** clínica de cardiopatia estrutural muda probabilidade pré-teste.
+
+**Q13 — Captura/fusão.** Em taquicardia larga, um QRS de captura e complexo de fusão favorecem:  
+A) taquicardia ventricular; B) taquicardia sinusal simples; C) erro obrigatório de aquisição; D) assistolia.  
+**Gabarito A.** B/C/D não explicam adequadamente dissociação e ativação combinada. **Revisão:** sinais específicos de TV nem sempre visíveis.
+
+**Q14 — FA e via acessória.** Paciente com WPW e ritmo extremamente rápido, irregular e largo. Qual opção deve ser evitada?  
+A) bloqueio nodal AV com diltiazem; B) preparar suporte elétrico conforme estabilidade; C) avaliar cardioversão; D) procurar especialista.  
+**Gabarito A.** O bloqueio AV pode favorecer condução pela via acessória; B/C/D são medidas de segurança. **Revisão:** ACC/AHA 2023 também contraindica amiodarona IV nesse cenário.
+
+**Q15 — BAV 2:1.** Em traçado com exatamente duas P para cada QRS, qual afirmação é correta?  
+A) é Mobitz II sempre; B) é Mobitz I sempre; C) pode ser impossível subclassificar pela relação 2:1 isolada; D) exclui doença do His-Purkinje.  
+**Gabarito C.** A/B atribuem progressão de PR que não se observa; D falso. **Revisão:** avaliar QRS, contexto e outros registros.
+
+**Q16 — Hemodiálise e T.** Pessoa em diálise tem K 6,7 e T sem padrão clássico. Interpretação:  
+A) exclui hipercalemia; B) ECG pouco alterado não afasta risco eletrolítico; C) não é urgência; D) dá para afirmar hipocalemia.  
+**Gabarito B.** A/C ignoram sensibilidade limitada; D não corresponde ao laboratório. **Revisão:** ECG e potássio não seguem progressão fixa.
+
+**Q17 — Wellens.** Qual conduta seria imprópria na suspeita de padrão de Wellens após angina recente?  
+A) avaliar cardiologia; B) considerar doença crítica da DA; C) solicitar teste ergométrico de rotina sem avaliação de alto risco; D) monitorar quadro.  
+**Gabarito C.** Testar esforço pode precipitar isquemia relevante; A/B/D são apropriadas. **Revisão:** Wellens surge frequentemente fora da dor.
+
+**Q18 — IAM posterior.** Dor intensa, infra em V1–V3 e R altas. Ação diagnóstica:  
+A) colher V7–V9; B) concluir que nunca existe supra; C) descartar SCA; D) realizar apenas espirometria.  
+**Gabarito A.** B/C ignoram lesão posterior; D não testa hipótese coronariana. **Revisão:** parede posterior pode aparecer como imagem espelhada.
+
+**Q19 — aVR.** Supra em aVR com infra difuso:  
+A) demonstra obrigatoriamente oclusão de tronco esquerdo; B) sugere isquemia global em contexto apropriado, mas pode ter diferentes causas; C) sempre artefato; D) indica pericardite em todos.  
+**Gabarito B.** A é excesso de certeza anatômica; C/D ignoram diferenciais. **Revisão:** oferta/demanda pode reproduzir padrão.
+
+**Q20 — BRE.** Homem assintomático apresenta BRE novo em exame de rotina. Qual conclusão é inadequada?  
+A) investigar contexto clínico e cardiopatia; B) novo BRE isolado confirma IAM com supra; C) comparar ECG antigo; D) considerar eco conforme situação.  
+**Gabarito B.** Critério não tem valor diagnóstico isolado de IAM; A/C/D são passos proporcionais. **Revisão:** diretriz SCA 2025 rejeita automatismo “BRE novo = STEMI”.
+
+**Q21 — QT de 400 ms e RR de 0,64 s.** QTc pelo Bazett é:  
+A) 250 ms; B) 400 ms; C) 500 ms; D) 640 ms.  
+**Gabarito C.** Dividir 0,400 por √0,64 =0,8 produz 0,500 s. A/B/D erram fórmula. **Revisão:** corrigir frequência e avaliar limitações em taquicardia.
+
+**Q22 — TV polimórfica.** Em paciente com QTc longo, hipocalemia e episódios de TV polimórfica, pensar em:  
+A) torsades, corrigir gatilhos e considerar magnésio; B) apenas taquicardia sinusal; C) diltiazem obrigatório; D) ignorar medicamentos.  
+**Gabarito A.** B não explica ritmo, C pode ser danoso e não trata causa, D perde causa evitável. **Revisão:** nem toda TV polimórfica tem QT longo, mas torsades tipicamente tem.
+
+**Q23 — Marcapasso.** Espículas sem QRS subsequente em paciente sintomático indicam possível:  
+A) falha de captura; B) FA em todos; C) ritmo sinusal normal; D) BAV primeiro grau isolado.  
+**Gabarito A.** B/C/D não descrevem estímulo sem despolarização. **Revisão:** confirmar sinais/perfusão e interrogar dispositivo.
+
+**Q24 — Artefato.** Monitor mostra aparente FV, mas paciente está orientado, fala e tem pulso. Próximo passo imediato:  
+A) desfibrilar sem olhar pessoa; B) verificar paciente, eletrodos e outra derivação/monitorização; C) concluir morte; D) iniciar anticoagulante.  
+**Gabarito B.** A/C/D ignoram incongruência fisiológica e risco iatrogênico. **Revisão:** ECG é ferramenta que deve representar a pessoa examinada.
+
+## 35. Curadoria de exames reais: prioridades e direitos de uso
+
+**Status: exames visuais ainda NÃO incorporados.** Os quatro PDFs do Drive examinados têm imagens que podem ser didaticamente úteis, mas não oferecem licença de reprodução comercial à LURIA. **Não importar screenshots ou fotografias** desses arquivos. O exame ilustrado deve ser obtido de repositório público com licença específica, de arquivo autoral anonimizado com autorização apropriada ou banco institucional com contrato de uso.
+
+### Matriz de imagem que realmente complementa os capítulos
+
+| ECG candidato | Pergunta que resolve | Fonte-alvo / cautela |
+|---|---|---|
+| ECG 12 derivações sinusal calibrado | Localização de P, PR, QRS e T | Banco institucional de ECG com autorização |
+| Troca RA/LA com ECG normal repetido | Identificar falso eixo/dextrocardia | Par didático com proveniência |
+| V1/V2 altos versus corretos | Evitar falso infarto septal | Registro pareado, metadados de posição |
+| TRNAV documentada | Pseudo-r' e relação RP | Traçado de eletrofisiologia ou arquivo validado |
+| Flutter 2:1 | Distinguir FC 150 de TRNAV | Traçado completo com zoom de linha de base |
+| FA pré-excitada | Padrão largo irregular perigosamente rápido | Série com confirmação especializada |
+| TV monomórfica com captura/fusão | Mostrar dissociação AV | ECG nítido de 12 derivações |
+| BAV 2:1 e BAV completo | Mostrar impossibilidade de subdividir 2:1 | Dois traçados com legenda separada |
+| IAM posterior antes/depois V7–V9 | Mostrar “infra anterior” e supra posterior | Série original, cronologia confirmada |
+| Wellens tipo bifásico e invertido | Diferenciar de Winter e alterações inespecíficas | Traçados com correlação clínica |
+| de Winter e ECG após reperfusão | Reconhecer oclusão sem supra clássico | Série com laudo angiográfico confiável |
+| BRE com Sgarbossa modificado | Aprender proporcionalidade de ST | Derivações/medidas anotadas em autoral |
+| Torsades + ECG sinusal com QTc longo | Relacionar gatilho de repolarização | Traçado e valores, doses/drogas contextualizados |
+| Hipercalemia com ECG pouco típico | Limites de sensibilidade do padrão | Registro com potássio e momento de coleta |
+| Marcapasso com falha de captura | Separar espícula e QRS | ECG com configuração/interrogação |
+| Artefato tremor simulando FV | Evitar choque iatrogênico | Registro com pulso comprovado |
+
+**Metadados obrigatórios de cada imagem aprovada:** título, pergunta didática, fonte original, titular/licença de uso comercial ou autorização escrita, indicação de modificações, legenda, achados validados, derivação/velocidade/ganho se disponíveis, necessidade de anonimização, responsável técnico, data de revisão e caminho WebP. Se a fonte permite apenas uso educacional não comercial ou é material de terceiros disponibilizado sem direitos claros, manter como **candidata recusada**.
+
+**Fontes públicas a investigar individualmente:** PhysioNet (cada conjunto possui licença própria), Wikimedia Commons (licença por arquivo), artigos PMC cuja figura precisa licença específica, documentos oficiais SBC/Ministério da Saúde (acesso público não implica reprodução irrestrita). Nunca atribuir licença “CC” a toda uma base sem examinar registro da figura.
+
+## 36. Referências aplicadas especificamente na segunda camada
+
+1. Samesima N, et al. Sociedade Brasileira de Cardiologia. **Diretriz sobre análise e emissão de laudos eletrocardiográficos — 2022.** Arq Bras Cardiol. 2022;119(4). DOI 10.36660/abc.20220623. https://www.scielo.br/j/abc/a/4QcQvX3T6kZBjNQLzrt5cXj/
+2. Rao SV, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Management of Acute Coronary Syndromes.** J Am Coll Cardiol. 2025. https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009
+3. Wigginton JG, et al. **2025 AHA Guidelines for Adult Advanced Life Support.** Circulation. 2025. DOI 10.1161/CIR.0000000000001376. https://www.ahajournals.org/doi/10.1161/CIR.0000000000001376
+4. American Heart Association. **Adult Bradycardia With a Pulse Algorithm**, 2025. https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Bradycardia-250514.pdf?sc_lang=en
+5. Joglar JA, et al. **2023 ACC/AHA/ACCP/HRS Guideline for Diagnosis and Management of Atrial Fibrillation.** J Am Coll Cardiol. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/
+6. European Society of Cardiology. **2023 ESC Guidelines for management of acute coronary syndromes.** Eur Heart J. 2023;44:3720–3826. https://academic.oup.com/eurheartj/article/44/38/3720/7243210
+
+### Comparativo do Drive examinado nesta rodada
+
+Além dos três benchmarks já registrados na aula-base, foram **abertos e lidos** os arquivos **“03 - TAQUICARDIAS DE QRS LARGO.pdf” (~4,9 mil caracteres)** e **“02 - TAQUIARRITMIA .pdf” (~7,5 mil)**; também reexaminados “06 - ECG SINDROMES CORONARIANAS II.pdf” (~12,7 mil) e “03 - BLOQUEIOS DE RAMO.pdf” (~4,6 mil). A cobertura é útil para listar padrões mas **não basta para certificação** e contém simplificações: tratar todo ritmo largo estável com amiodarona sem excluir FA pré-excitada, generalizar energia de cardioversão de fontes anteriores a 2025, presumir BRE novo como IAM, confundir prova morfológica com risco e estereotipar toda TV polimórfica como torsades. Os textos foram usados **somente para identificar problemas de cobertura**; nenhum conteúdo ou figura foi reproduzido.
+
+## 37. Auditoria editorial incremental — status de trabalho
+
+| Eixo | Estado após a ampliação | Trava |
+|---|---|---|
+| Conteúdo-base | 22 capítulos preservados | Conferir editorialmente redundância ao unir capítulos 23–36 |
+| Técnica e artefatos | Posicionamento, ganho, filtros e exemplos quantitativos | Adicionar pares de ECG real correto/incorreto |
+| Taquicardia estreita/larga | Mecanismos, tabela e tratamento pela estabilidade | Revisão por cardiologista e ACLS 2025 |
+| FA pré-excitada | Bloqueadores AV e antiarrítmicos perigosos explicitados | Revisar disponibilidade brasileira de alternativas |
+| Bradicardia e BAV | Subtipos, 2:1, síncope, Chagas e marcapasso | Revisão eletrofisiológica/dispositivos |
+| SCA e alto risco | Posterior, Wellens, de Winter, aVR, LBBB/Sgarbossa | ECGs reais seriados, validação reperfusão |
+| Eletrólitos e canalopatias | Potássio/cálcio, QT, Brugada, hereditariedade | Revisão de critérios específicos e história familiar |
+| Casos | Acrescentados 12 casos (6–17) | Executar teste de resolução sem textos externos |
+| Questões | Acrescentadas 16 questões (9–24) | Revisão independente dos gabaritos e distractores |
+| Figuras | 16 imagens-exame priorizadas | **Nenhuma licenciada, inserida ou aprovada ainda** |
+| Referências | SBC 2022; ACC/AHA SCA 2025; ACLS 2025; FA 2023 | Confirmar atualização brasileira se surgir |
+| Meta 60 mil caracteres úteis | Pendente teste após contagem e revisão | NÃO certificar apenas porque ultrapassou bruto |
+| HTML, JSON, QA PWA | Não realizados | Não fazer deploy, não fazer merge |
+
+**Conclusão editorial desta camada:** o objetivo foi transformar critérios isolados em decisões e diferenciais com exemplos, sem substituir livros inteiros de cardiologia ou ACLS. Este material é original e serve à curadoria médica, mas **não se converte automaticamente em livro publicado** até obter traçados reais com direitos, revisão cardiológica, checagem de doses e testes em tela.
