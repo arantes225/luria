@@ -1,0 +1,106 @@
+{
+  "status": "CURADORIA_PARCIAL_AGUARDANDO_ADMIN",
+  "license_review": "Páginas de origem e termos de licença localizados; exigir revisão editorial e verificação final de crédito, contexto clínico, arquivo real, conversão WebP de qualidade, proteção de dados, licenças BY-SA e aprovação no Admin antes da inserção.",
+  "candidates": [
+    {
+      "id": "122-C01",
+      "topic": "Pneumoperitônio em radiografia de tórax",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pneumoperitoneum_chest_X-ray.jpg",
+      "creator": "Bill Rhodes",
+      "license": "CC BY 2.0",
+      "section": "9",
+      "caption": "Radiografia mostrando ar livre subdiafragmático compatível com pneumoperitônio; correlacionar com história e peritonite, sem inferir a origem apenas pelo ar.",
+      "note": "Atribuição ao autor e fonte, sem indicação de causa específica não evidenciada.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C02",
+      "topic": "Chilaiditi como pseudopneumoperitônio",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chilaiditi_1.PNG",
+      "creator": "Steven Fruitsmaak",
+      "license": "CC BY-SA 3.0",
+      "section": "9.3",
+      "caption": "Alça colônica interposta entre fígado e hemidiafragma direito, simulando ar livre. Procurar contornos e marcas haustrais.",
+      "note": "Licença ShareAlike; identificar alterações se houver cortes/setas.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C03",
+      "topic": "Pneumoperitônio em CT após deiscência anastomótica",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20-03-Anastomoseninsuffizienz_freie_Luft_-_CT2.png",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0",
+      "section": "21.3",
+      "caption": "TC de pós-operatório com pneumoperitônio associado a insuficiência anastomótica. Não concluir deiscência por gás isoladamente sem evolução e contexto.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C04",
+      "topic": "CT da mesma série mostrando ar livre após deiscência",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20-02-Anastomoseninsuffizienz_freie_Luft_-_CT.png",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0",
+      "section": "24.2",
+      "caption": "Outra janela/corte de TC no mesmo caso de deiscência intestinal; demonstrar achados após cirurgia e a limitação de interpretação isolada.",
+      "note": "Mesmo caso da candidata anterior; decidir na curadoria final se não é redundante.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C05",
+      "topic": "Pneumoperitônio pouco visível em radiografia pós-operatória",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20-01-Bettlunge_freie_Luft_Anastomoseninsuffizienz.png",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0",
+      "section": "9",
+      "caption": "Radiografia de leito do mesmo caso de deiscência, com ar livre pouco aparente; comparar com CT e explicar menor sensibilidade.",
+      "note": "Pertence ao mesmo caso das imagens 20-02/20-03, preferir par comparação a três fotos sem didática distinta.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C06",
+      "topic": "Sinal de Chilaiditi em radiografia contemporânea",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chilaiditi-Syndrom_73M_-_CR_pa_-_001.jpg",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 4.0",
+      "section": "9.3",
+      "caption": "Interposição colônica subdiafragmática, potencial simuladora de pneumoperitônio; correlacionar com haustras e sintomas.",
+      "note": "Alternativa à imagem Chilaiditi_1.PNG, não usar ambas se redundantes.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C07",
+      "topic": "CT de úlcera gástrica perfurada",
+      "source_page": "https://www.ncbi.nlm.nih.gov/books/NBK543792/figure/ch13.Fig13/",
+      "creator": "Heiken JP, Katz DS, Menu Y; capítulo Springer/National Center for Biotechnology Information",
+      "license": "CC BY 4.0 (capítulo de origem, revisar crédito individual da figura)",
+      "section": "15",
+      "caption": "TC coronal: cratera ulcerosa ao longo da pequena curvatura gástrica com espessamento de parede, gás livre e coleção pélvica, conforme descrição da figura original.",
+      "note": "Página indexada indica licença aberta do capítulo; ainda verificar imagem quanto a crédito de terceiros antes de uso.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    }
+  ],
+  "pending": [
+    {
+      "title": "Esquema autoral anatômico de perfuração duodenal anterior e conteúdo peritoneal",
+      "status": "PENDENTE_DE_FONTE_OU_DIAGRAMA_AUTORAL"
+    },
+    {
+      "title": "TC demonstrando gás retroperitoneal em perfuração duodenal/CPRE com fonte e licença confirmadas",
+      "status": "PENDENTE_DE_FONTE_OU_DIAGRAMA_AUTORAL"
+    },
+    {
+      "title": "Fluxograma original de decisão: peritonite/choque, cirurgia versus selada e drenagem",
+      "status": "PENDENTE_DE_FONTE_OU_DIAGRAMA_AUTORAL"
+    },
+    {
+      "title": "TC de diverticulite com abscesso pericólico versus peritonite fecal e classificação didática validada",
+      "status": "PENDENTE_DE_FONTE_OU_DIAGRAMA_AUTORAL"
+    },
+    {
+      "title": "Desenho autoral de opções reparo / ressecção-anastomose / Hartmann",
+      "status": "PENDENTE_DE_FONTE_OU_DIAGRAMA_AUTORAL"
+    }
+  ],
+  "images_inserted": 0,
+  "administrator_approved": 0
+}
