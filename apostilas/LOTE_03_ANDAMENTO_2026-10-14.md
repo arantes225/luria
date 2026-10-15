@@ -17,7 +17,7 @@
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 45 | Participação e controle social no SUS | RASCUNHO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
 | 46 | Asma | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/46-asma.md\` |
-| 47 | Trauma: atendimento inicial e ABCDE | RASCUNHO_INICIADO | \`_rascunhos/lote-03/47-trauma-atendimento-inicial.md\` |
+| 47 | Trauma: atendimento inicial e ABCDE | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/47-trauma-atendimento-inicial.md\` |
 | 48 | Imunizações na infância | RASCUNHO_INICIADO | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
 | 49 | Gestação ectópica | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 50 | Financiamento e gestão do SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/50-financiamento-gestao-sus.md\` |
@@ -45,6 +45,10 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 47 — aprofundamento e auditoria (14/10/2026)
+
+Manuscrito `apostilas/_rascunhos/lote-03/47-trauma-atendimento-inicial.md` ampliado de 17.308 para **93163 caracteres brutos**, com **29 capítulos, 10 casos clínicos, 14 questões comentadas** e matriz de autossuficiência. Diretrizes cotejadas: ACS ATLS 11 (2025), hemorragia europeia 2023, NICE NG39 e protocolos SAMU; benchmarking de dois PDFs do Drive sem reprodução. **Status TEXTO_APROFUNDADO_REVISAO_PENDENTE:** faltam revisão médica, homologação, imagens licenciadas/Admin, conversão HTML e testes PWA. Relatório: `apostilas/_rascunhos/lote-03/47-VALIDACAO-EDITORIAL.md`. Sem merge ou deploy.
 
 ## Aula 46 — aprofundamento e deduplicação de Asma (14/10/2026)
 
