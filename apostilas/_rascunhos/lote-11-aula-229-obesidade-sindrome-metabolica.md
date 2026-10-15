@@ -183,6 +183,44 @@ Automonitoramento pode incluir peso em frequência negociada, registro alimentar
 ### 5.4 Sono, estresse e estigma
 Privação de sono favorece maior ingestão e alterações de autorregulação; tratar AOS melhora saúde além de peso. Perguntar sobre estigma em consultas prévias e adaptar equipamento, cadeiras e instrumentos. Linguagem não acusatória melhora vínculo e capacidade de relatar dificuldades. **Sinal de alerta:** vômitos autoinduzidos, purgação, períodos de compulsão associados a culpa intensa ou restrições extremas exigem avaliação de transtorno alimentar antes de intensificar intervenções voltadas apenas ao peso.
 
+
+### 5.5 Como desenhar um plano alimentar clinicamente seguro
+O plano alimentar começa por identificar **padrões reais de alimentação**, horários, acesso e preferências, sem transformar consulta em moralização da escolha alimentar. Investigam-se compras, refeições em trabalho, porções, bebidas açucaradas, episódios de alimentação por estresse, refeições omitidas e situações de insegurança alimentar. A estratégia deve preservar nutrientes e viabilidade econômica; prescrever cardápio que a pessoa não consegue comprar ou executar não gera adesão duradoura.
+
+A composição dietética deve ser individualizada, sobretudo quando coexistem **diabetes com risco de hipoglicemia**, doença renal, doença hepática avançada, transtornos alimentares, intolerâncias e pós-cirurgia. Proteína adequada e estímulo à musculatura ganham relevância em pessoas idosas ou com redução rápida de peso, especialmente quando utilizam medicamentos de alta potência. Necessidades específicas de ingestão proteica e calorias requerem cálculo clínico e nutricional; **não há proporção de carboidrato/proteína/gordura universal** para todos.
+
+O seguimento é parte do tratamento: avaliar fome, saciedade, disponibilidade de refeições, qualidade proteica, fibra, líquidos e alterações gastrointestinais. Se o medicamento reduz muito o apetite e o paciente passa a fazer apenas uma refeição pobre em proteína, a mudança de peso pode esconder piora nutricional. Quando há vômitos, diarreia e desidratação, priorizar segurança clínica, hidratação e revisão de dose, não elogiar “emagrecimento rápido”.
+
+### 5.6 Prescrição de atividade física adaptada
+A orientação precisa separar **redução do tempo sedentário**, **atividade aeróbica**, **fortalecimento muscular** e **treino de equilíbrio/mobilidade**. Objetivos podem ser construídos progressivamente de acordo com sintomas, capacidade e preferências. A atividade física melhora pressão arterial, sensibilidade insulínica, aptidão cardiorrespiratória, sono, saúde mental e funcionalidade, mesmo quando a balança pouco muda. Isso previne o erro de classificar exercício como “fracasso” caso não gere perda ponderal expressiva.
+
+Para pessoa com osteoartrose, podem ser melhores atividades de baixo impacto combinadas a fisioterapia. Em idoso frágil, força, marcha e prevenção de quedas têm prioridade. Em doença cardiovascular não estabilizada, dispneia em repouso, angina recente ou descompensação cardiopulmonar, é necessário avaliar segurança antes de intensificar treino. O exercício deve ser **prescrito como capacidade funcional e proteção metabólica**, não como punição por ingestão.
+
+### 5.7 Terapia comportamental: transformar intenção em plano verificável
+Concluir “reduza o consumo de ultraprocessados” sem avaliar rotina tem pouca aplicabilidade. O cuidado comportamental organiza metas específicas: por exemplo, preparar duas refeições semanais no domingo, substituir determinada bebida, combinar caminhada curta em dias definidos, providenciar um lanche com proteína para plantão. O progresso é revisto sem julgamento, verificando barreiras e ajustando o plano.
+
+**Entrevista motivacional** explora o que o paciente valoriza, sua prontidão e ambivalência. **Automonitoramento** pode registrar peso, cintura, refeições, fome ou atividade, mas deve ser discutido: pesagem frequente não é adequada para todas as pessoas, sobretudo na presença de transtorno alimentar ou grande ansiedade. Intervenções podem envolver terapeuta, nutricionista, grupo comunitário e família, se autorizados.
+
+A psicoterapia específica ganha importância quando há compulsão, ansiedade marcante, episódio depressivo, dificuldades de imagem corporal ou conflitos associados à alimentação. Nenhuma dessas condições justifica culpabilização ou exclusão automática de tratamento médico apropriado.
+
+### 5.8 Metas e reavaliação: o que medir após 4, 12 e 24 semanas
+Em consulta inicial, registrar dados basais de peso, cintura, PA, frequência cardíaca, glicemia/HbA1c e perfil de risco segundo contexto, além de funcionalidade e sintomas. Nos primeiros meses de mudança terapêutica, acompanhar **efeitos adversos, adesão, disponibilidade do medicamento, qualidade da dieta, hidratação e evolução clínica**, com intervalos individualizados, muitas vezes de poucas semanas na titulação.
+
+Após 12–16 semanas de dose terapêutica adequada, muitas diretrizes propõem reavaliar resposta e segurança. A **regra de suspensão pode variar por medicamento** — como a combinação naltrexona/bupropiona, que possui limiar específico após período em dose de manutenção — e não deve ser extrapolada para toda molécula sem conferir bula e diretriz. Em quem mantém perda de peso, discutir manutenção, riscos de interrupção, custos, metas clínicas e necessidades de apoio; em quem não responde, rever barreiras, causas associadas, dose tolerada e alternativas sem apontar “falta de esforço” como diagnóstico.
+
+### 5.9 Perguntas que detectam complicações durante o emagrecimento
+| Situação | Pergunta útil | Por que altera a conduta |
+|---|---|---|
+| Baixa ingestão | “Consegue comer proteína ao longo do dia?” | Orienta prevenção de desnutrição e perda muscular |
+| Náuseas/vômitos | “Consegue beber água? Há redução de urina?” | Pode indicar desidratação/risco renal |
+| Episódio de dor abdominal | “Dor forte e persistente? Irradia para as costas? Febre?” | Exige investigar complicação pancreatobiliar ou outra urgência |
+| Humor | “Houve piora marcante do humor ou ideação de autolesão?” | Necessita avaliação de segurança e cuidado mental |
+| Hipoglicemia | “Tremor, sudorese ou confusão? Usa insulina ou sulfonilureia?” | Pode exigir ajuste imediato da terapêutica de diabetes |
+| Fraqueza | “Consegue subir escadas e levantar-se como antes?” | Rastreia perda de função muscular |
+| Pós-operatório | “Vômitos, incapacidade de engolir, dor abdominal ou desmaio?” | Levanta suspeita de complicações cirúrgicas/nutricionais |
+
+
+
 ## 6. Tratamento farmacológico: mecanismo, indicação e vigilância
 
 Medicamentos atuam junto ao cuidado nutricional, atividade física, suporte psicossocial e tratamento de comorbidades. Diretrizes e bulas podem usar limiares como IMC ≥30 ou IMC ≥27 com doença relacionada à adiposidade, mas a **decisão brasileira deve respeitar indicação regulatória, registro, contraindicações e avaliação individual**. Não confundir aprovação de molécula para diabetes com aprovação de formulação/dose para obesidade.
