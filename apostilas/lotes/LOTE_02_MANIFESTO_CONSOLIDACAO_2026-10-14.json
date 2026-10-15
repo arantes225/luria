@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 16,
+  "version": 17,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -277,10 +277,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "2d626df44b24cc41bef8d1cdbdb9ef13f9a548c5",
+      "consolidated_sha": "45d63f49de47cbe711235d36132184b4bbd1a408",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 179902,
-      "consolidated_approximate_plain_characters": 172387,
+      "consolidated_raw_characters": 197558,
+      "consolidated_approximate_plain_characters": null,
       "chapter_count": 9,
       "chapters": [
         {
@@ -320,22 +320,25 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 22,
-      "question_count": 32,
+      "case_count": 24,
+      "question_count": 34,
       "source_numbered_chapter_count": 26,
-      "preflight_warnings": [],
+      "preflight_warnings": [
+        "Meningite TB e TB vertebral: revisão clínica independente obrigatória da duração, corticoterapia, sensibilidade, HIV/TARV e critérios nacionais mais recentes.",
+        "Manual do MS é 2ª edição 2019 (site atualizado em 2026): não atribuir reedição científica em 2026; conciliar normas pediátricas 2024/2026."
+      ],
       "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
-      "json_visible_estimate": 172387,
-      "json_table_count": 22
+      "json_visible_estimate": null,
+      "json_table_count": 23
     }
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "616eb216a36ade47378abc1edcafabd4e301c03e",
+  "input_json_sha": "1bb9944ac0f709efe59037cc3797d12b6a6c964f",
   "last_update_scope": [
-    "DPOC: seções 6.6–6.8 com intervenções para enfisema, avaliação especializada, bulectomia/transplante, cuidado paliativo precoce e suporte",
-    "DPOC: casos 19–20 e questões 25–26 originais; benchmark Drive DPOC estável/exacerbada reaberto, fontes GOLD 2026, MS Linha de Cuidado e NICE NG115",
-    "Mantidos cinco livros e nenhum conteúdo publicado/deploy, imagens seguem vazias; registro no manifesto v16"
+    "TB: seções 3.3–3.5 de meningite tuberculosa, segurança de LCR, diagnóstico e duração no Brasil, HIV/TARV, coluna vertebral e pericárdio",
+    "TB: dois casos e duas questões autorais, contraste OMS/MS; benchmark Drive 02 - TUBERCULOSE EXTRA PULMONAR efetivamente consultado",
+    "Pré-publicação; nenhum medicamento de prescrição liberado, nenhuma imagem importada, sem deploy"
   ],
   "last_revision": "2026-10-15"
 }
