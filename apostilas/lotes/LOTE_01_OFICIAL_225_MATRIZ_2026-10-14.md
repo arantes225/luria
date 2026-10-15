@@ -15,7 +15,7 @@ O texto integral de `lead.apostilas.txt` / Prompt Magno foi conferido, assim com
 | 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Não há livro próprio identificado | — | Assistência ao RN inclui exame inicial/termorregulação; distinguir reanimação #8 |
 | 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | Apostila existente robusta, auditoria pendente | `apostilas/pre-natal-baixo-risco/index.html` | 33 seções HTML, ~70 mil caracteres aparentes; evitar duplicação de #9, #14 e #19 |
 | 05 | Medicina Preventiva | Princípios e diretrizes do SUS | Não há livro próprio identificado | — | Princípios e diretrizes do SUS: base conceitual antes das leis |
-| 06 | Clínica Médica | Insuficiência cardíaca | Rascunho aprofundado | `apostilas/insuficiencia-cardiaca/content.json` | 13 seções; SBC 2026, ESC 2026 e descongestão |
+| 06 | Clínica Médica | Insuficiência cardíaca | Rascunho aprofundado | `apostilas/insuficiencia-cardiaca/content.json` | 12 capítulos consolidados; ~68,7 mil caracteres de texto aparente, 9 casos e 12 questões; etiologia brasileira, diagnóstico/terapias, choque, dispositivos e IC avançada; NÃO certificada |
 | 07 | Cirurgia Geral | Cuidados perioperatórios | Rascunho aprofundado | `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` | 14 capítulos integrados, ~93 mil caracteres de texto aparente; Anvisa, antibióticos, TEV, ERAS, analgesia, hemorragia, LRA e complicações; NÃO certificada |
 | 08 | Pediatria | Reanimação neonatal | Não há livro próprio identificado | — | NRP/SBP: reanimação neonatal; evitar misturar conduta de RN vigoroso #3 |
 | 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Parcialmente contemplado em pré-natal | `apostilas/pre-natal-baixo-risco/index.html` | Datação e DUM incerta presentes; verificar se merece módulo separado ou seção consolidada |
@@ -145,3 +145,30 @@ O GitHub confirmou JSON recuperável e interpretável, **13 capítulos / 13 iten
 ### QA de integridade e gates restantes
 Após a consolidação, o GitHub retornou **14 capítulos, índice na mesma ordem, identificadores únicos, 16 tabelas de dimensão coerente, 124 parágrafos e ~92,9 mil caracteres de texto aparente**; zero parágrafos longos literalmente idênticos na checagem automática, zero tipos de bloco inválidos. Existem **6 questões na seção formal**, além de exercícios dentro dos capítulos, e **6 títulos de casos na seção formal**, além de vinhetas distribuídas.
 O tamanho é métrica preliminar de prosa aparente, não comprovação de 60 mil caracteres médicos inteiramente úteis. Falta auditoria médica humana de fármacos/contraindicações, verificação de todas as referências e da redação de perguntas, curadoria final e aprovação de imagens no Admin, testes de renderização desktop/PWA, integração ao currículo e reconciliação da `main`, que continuou avançando no Codex. **Não há `index.html`; livro não está certificado nem publicado. Zero merge, zero deploy.**
+
+## Continuação — Insuficiência Cardíaca (tema 006) em 14/10/2026
+**Arquivo:** `apostilas/insuficiencia-cardiaca/content.json`. **Estado:** rascunho em PR #37, sem página pública `index.html`.
+
+### Auditoria inicial e referências
+- Reabertos benchmarks do Drive `INSUFICIÊNCIA CARDÍACA.pdf` (2.374 caracteres; ênfase em Framingham, antigos limiares FE, NYHA e perfis) e `03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf` (9.765 caracteres; seção predominantemente pediátrica e miocardite). O segundo tem recomendações para crianças que não podem ser extrapoladas a adultos, e afirmações antigas de miocardite que devem ser atualizadas. **Autoria institucional Estratégia MED não demonstrada. Nenhuma figura ou conteúdo copiado.**
+- Fonte brasileira primordial: Simões MV et al., **Diretriz Brasileira de IC — SBC 2026**, publicada em 08/10/2026, Arq Bras Cardiol 123(10):e20260830, DOI [10.36660/abc.20260830](https://journals.cardiol.br/article/diretriz-brasileira-de-insuficiencia-cardiaca-2026/). Complementar: **ESC HF 2026**, [Eur Heart J 47(38)](https://academic.oup.com/eurheartj/article/47/38/5346/8766302). Posologias nacionais de referência: [MS/Conitec PCDT resumido de IC](https://www.gov.br/conitec/pt-br/midias/protocolos/resumidos/PCDTResumidoInsuficinciaCardacafinal.pdf).
+- Diferenciar nomenclatura anterior de ICFElr (41–49%) da ESC 2026 (HFrEF <50%), sem afirmar que qualquer limiar de ensaio ou indicação de dispositivo se modificou automaticamente com o novo nome. SBC 2026 usa e cita fenótipos tradicionais em material e figuras.
+
+### Conteúdo efetivamente preenchido
+1. **Fisiopatologia:** pressões e volumes, mecanismos de congestão, pré-/pós-carga, interação VD/VE, remodelamento, baixo débito e FEVE, com tabela mecanística.
+2. **Fenótipos:** tabela de terminologia ESC/SBC e distinção entre estágios, NYHA e INTERMACS.
+3. **Etiologia:** DAC/isquemia, hipertensão, Chagas, taquicardiomiopatia, cardiotoxicidade, amiloidose, RMC e indicação seletiva de biópsia.
+4. **Diagnóstico:** BNP/NT-proBNP e limitações com obesidade, FA e DRC; eco da diástole e função direita; RX, ECG, POCUS, diferenciais, teste diastólico e ferro.
+5. **Terapia:** classes modificadoras de prognóstico, doses iniciais/target referenciadas, 36h entre IECA e ARNI, betabloqueadores com indicação específica, ARM com K+/eTFG, iSGLT2 e pausa em situações agudas; ICFEp incluindo semaglutida/tirzepatida segundo ESC 2026 **com recorte e limitações de indicação/acesso brasileiro**.
+6. **Descompensação:** Stevenson quente/frio e seco/úmido, perfil vascular hipertensivo versus sobrecarga, VNI e oxigênio conforme hipoxemia, furosemida IV e diurese/natriurese, causas de baixa resposta, choque e suporte vasoativo por UTI, síndrome cardiorrenal e gatilhos.
+7. **Seguimento:** euvolemia na alta, educação, titulação, DRC/fraqueza, prevenção de morte súbita, CDI, TRC, IC avançada, INTERMACS, transplante, dispositivos circulatórios e cuidado paliativo.
+8. **Casos/questões:** quatro novos casos formais completos e seis novas questões com distratores comentados, além da reorganização de dois casos e duas questões do módulo antigo; **9 casos formais e 12 questões formais**.
+9. **Revisão de redundância:** removido o capítulo isolado `abordagem-fenotipos-descongestao-sbc2026` após os conceitos serem expandidos e integrados nos capítulos principais, preservando e reformulando exercícios.
+
+### Imagens e licença
+`apostilas/lotes/IC_CANDIDATAS_IMAGENS_2026-10-14.md`: **13 candidatas**, sendo dez figuras/fluxos específicos da diretriz SBC 2026, uma ecocardiografia licenciada CC BY 4.0 de livro open-access Springer e duas imagens de exame com licenças Commons. **Todas sujeitas a conferência individual de créditos e direitos, pois a licença CC BY geral da diretriz pode coexistir com figuras adaptadas de terceiros.** Nenhuma imagem baixada, convertida, aprovada ou inserida.
+
+### QA estrutural verificado em leitura posterior à gravação
+- JSON válido, **12 seções/12 itens do sumário em ordem**, IDs únicos, **14 tabelas estruturalmente coerentes**, 125 parágrafos; **~68.743 caracteres de texto aparente** após eliminação dos blocos redundantes. **0 ocorrências de parágrafo longo exatamente repetido**, zero blocos de tipo desconhecido/markup executável suspeito detectado.
+- Esse cálculo pode incluir textos de tabelas, casos e questões, de modo que não é certificação definitiva da meta de 60 mil caracteres exclusivamente médicos/didáticos.
+- Gates pendentes: revisão médica especializada linha a linha, revisão de doses, contraindicações e ensaios/efetiva elegibilidade, deduplicação semântica, exames e imagens licenciados aprovados pelo Admin, WebP responsivo, testes reais no desktop e PWA, reconciliação da `main` alterada paralelamente pelo Codex. **Zero merge, zero deploy, zero publicação.**
