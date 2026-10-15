@@ -542,12 +542,43 @@ Em emergências, anotações detalhadas não podem atrasar terapia, mas a equipe
 - Ressuscitar não significa obrigatoriamente encher o paciente de soro.
 - A intervenção causal salva vidas; suporte hemodinâmico compra tempo enquanto ela é realizada.
 
-## Referências prioritárias de partida (verificar versão antes de homologar)
+## Referências primárias verificáveis e divergências de recomendações
 
-- European Society of Intensive Care Medicine. Guideline on circulatory shock and haemodynamic monitoring in adult ICU patients (2025). https://www.esicm.org/esicm-guideline-circulatory-shock-haemodynamic-monitoring/
-- Sinha SS et al. ACC Expert Consensus on Evaluation and Management of Cardiogenic Shock (2025). https://www.jacc.org/doi/10.1016/j.jacc.2025.02.018
-- ACC/AHA et al. Guideline for Management of Acute Coronary Syndromes (2025). https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009
+**Hierarquia editorial:** fontes brasileiras são priorizadas para medicamentos, comunicação com o SUS e rotinas nacionais quando há norma aplicável; consensos internacionais guiam monitorização hemodinâmica e choques cuja evidência ainda não tem diretriz brasileira atual de abrangência equivalente. As datas de publicação são parte da interpretação — recomendações mudam.
 
-## Pendências explícitas
+1. **ASBAI e Sociedade Brasileira de Pediatria.** Atualização em Alergia Alimentar 2025, com abordagem de anafilaxia e adrenalina IM. *Arquivos de Asma, Alergia e Imunologia*, 9(1), 2025. https://aaai-asbai.org.br/article/10.5935/2526-5393.20250003/pdf/aaai-9-1-5-trans1.pdf — Base para dose por peso e concentração da adrenalina no contexto de reação grave; verificar protocolos hospitalares ao prescrever.
+2. **Sociedade Brasileira de Cardiologia.** Atualização da Diretriz de Ressuscitação Cardiopulmonar e Cuidados Cardiovasculares de Emergência, 2019. https://doi.org/10.5935/abc.20190203 — Relevante para atendimento cardiovascular de emergência e anafilaxia; recomendações mais recentes, quando existentes, têm prioridade.
+3. **Surviving Sepsis Campaign.** Prescott H et al. International Guidelines for Management of Sepsis and Septic Shock 2026, *Critical Care Medicine / Intensive Care Medicine*. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 — Fonte primária de rastreio, antibióticos, fluidos, vasopressores, perfusão, corticoides e desescalonamento na sepse.
+4. **ESICM.** Monnet X et al. Guidelines on circulatory shock and hemodynamic monitoring 2025, *Intensive Care Medicine*. https://www.esicm.org/esicm-guideline-circulatory-shock-haemodynamic-monitoring/ — Fonte para avaliação de perfusão seriada, medidas dinâmicas, ecocardiografia e monitorização.
+5. **American College of Cardiology.** Sinha SS et al. Concise Clinical Guidance on Evaluation and Management of Cardiogenic Shock, 2025. https://www.jacc.org/doi/10.1016/j.jacc.2025.02.018 — Fonte para reconhecimento, estratificação e abordagem cardiogênica.
+6. **ACC/AHA.** Guideline for Management of Acute Coronary Syndromes 2025. https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009 — Fundamenta revascularização emergencial de artéria culpada no choque cardiogênico associado à SCA e alerta contra PCI rotineira inicial de vasos não culpados.
+7. **AHA/ACC e sociedades participantes.** Guideline for the Evaluation and Management of Acute Pulmonary Embolism in Adults, 2026. https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005 — Atualiza estratificação e opções de reperfusão no TEP com instabilidade hemodinâmica.
+8. **European guideline on management of major bleeding and coagulopathy following trauma.** 6ª edição, *Critical Care*, 2023. https://doi.org/10.1186/s13054-023-04327-7 — Fundamenta hemostasia, TXA precoce em trauma hemorrágico e cuidados na ressuscitação.
+9. **ILAS — Instituto Latino-Americano de Sepse.** Plataforma educacional com módulo dedicado às atualizações SSCG 2026. https://ilas.eadplataforma.app/courses — Referência brasileira para treinamento e implementação; a existência de curso não foi tratada como validação independente de dose ou conduta específica.
 
-Aprofundar etiologias, critérios e intervenções; inserir algoritmo completo com doses e contraindicações verificadas em protocolos brasileiros e atualizações internacionais; incluir epidemiologia, prognóstico, populações especiais, limitações do POCUS, diferenciais com exemplos adicionais, referências brasileiras, pelo menos dez imagens candidatas de fonte/licença verificadas quando úteis; auditar estilo, precisão e autossuficiência. **Não enviar este arquivo ao gerador de apostilas nem apresentar como caderno final.**
+**Divergência que deve permanecer explícita:** a SSC 2026 sugere **pelo menos 30 mL/kg** nas primeiras três horas para adultos com hipoperfusão induzida por sepse ou choque séptico, sempre individualizando; a orientação ESICM sobre volume de fluidos não usa obrigatoriamente o mesmo enquadramento. Não somar recomendações como se fossem um valor absoluto invariável. A necessidade de fluidos após fase inicial deve resultar de avaliação dinâmica e da tolerância, com atenção à insuficiência cardíaca, edema e choque misto. Em anafilaxia, a dose IM da ASBAI/SBP é por peso, respeitando o teto e a faixa etária; não transportar doses pediátricas de adulto sem conferência.
+
+## Auditoria editorial: cobertura, estado das imagens e pendências
+
+| Núcleo de conteúdo necessário | Seção do manuscrito | Situação desta revisão |
+|---|---|---|
+| Definição, macrocirculação e oferta de O2 | 1 e 7 | Explicação expandida com cálculo, unidade e exemplos |
+| Mecanismos, subtipos e choques mistos | 2, 11–16 | Diferenças causais e terapias analisadas |
+| Sinais de hipoperfusão e interpretação seriada | 3 e 8 | Janelas de perfusão e limitações dos marcadores |
+| Conduta inicial e priorização | 4, 11–16 | Estratégias dirigidas ao mecanismo |
+| POCUS/RUSH e interpretação de exames | 5 e 9 | Janelas, limitações, armadilhas e decisões |
+| Fluidorresponsividade, tolerância e reavaliação | 5 e 10 | Testes dinâmicos, exceções e fases |
+| Doses e intervenções com referência rastreável | 11, 13, 14 | TXA e adrenalina documentados; infusões vasoativas ainda exigem tabelas hospitalares validadas |
+| Populações especiais e prognóstico | 19 | Gestantes, crianças, idosos, comorbidades e reabilitação |
+| Casos com diagnóstico, exames, conduta e razão | 17 | Oito casos; os quatro originais ainda precisam detalhamento para equiparar aos novos |
+| Questões e justificativa de alternativas | 18 | Doze itens; primeira bateria parcialmente sintética, segunda bateria aprofundada |
+| Imagens reais clínicas, licença e WebP | Plano nas seções 9, 16 e referências | **Não concluído:** pré-curadoria, sem imagem incorporada nem aprovação |
+| HTML LURIA com índice/âncoras, PWA e Admin | Integração futura | **Não realizado:** este arquivo é Markdown, não HTML publicado |
+
+### Curadoria visual — resultado da busca nesta etapa
+
+Foram pesquisadas imagens e documentos de ultrassonografia clínica relativos a RUSH, função de VD, B-lines e tamponamento em ACEP Sonoguide, Emory, artigos acadêmicos e bancos de artigos de acesso aberto. Pelo menos dez alvos didáticos permanecem relevantes: (1) VE hipocontrátil, (2) VD dilatado, (3) achatamento septal, (4) derrame pericárdico, (5) colapso diastólico de câmaras, (6) veia cava dilatada, (7) veia cava colabável, (8) linhas B difusas, (9) líquido livre em FAST e (10) lung point/pneumotórax. **Alvos não são imagens já licenciadas.**
+
+Uma fonte potencial com muitas figuras, Rahulkumar et al., *Utility of Point-of-Care Ultrasound in Differentiating Causes of Shock in Resource-Limited Setup* (2019; DOI 10.4103/JETS.JETS_61_18), tem licença **CC BY-NC-SA 4.0**, que restringe uso comercial e, portanto, **não foi aprovada** para reprodução nas apostilas pagas da LURIA. O artigo está disponível em https://pmc.ncbi.nlm.nih.gov/articles/PMC6496999/ e as figuras não foram copiadas. Outras imagens requerem checagem individual de licença e proveniência; nenhuma foi cadastrada como aprovada.
+
+**Pendências obrigatórias para homologar:** revisão médico-científica especializada de condutas/doses e da consistência entre diretrizes; ajuste de farmacologia segundo protocolos hospitalares brasileiros; matriz com âncoras reais após integração HTML; confirmar ao menos dez candidatas reais de imagem com rastreabilidade, fazer curadoria licenciada e colocar na fila Admin; checar figuras já aprovadas no acervo; executar validações de sintaxe, referências, scripts de auditoria, interface desktop/PWA, acessibilidade e leitura crítica de cada questão. **Não divulgar como livro pronto nem executar deploy.**
