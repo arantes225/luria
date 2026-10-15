@@ -167,8 +167,8 @@ A KDIGO recomenda descrever **C** = *cause* (causa), **G** = categoria de filtra
 | Categoria | RAC urinária (mg/g) | Descrição |
 |---|---:|---|
 | A1 | <30 | Normal a discretamente elevada |
-| A2 | 30–300 | Moderadamente elevada |
-| A3 | >300 | Gravemente elevada |
+| A2 | 30–299 | Moderadamente elevada |
+| A3 | ≥300 | Gravemente elevada |
 
 **Lembre-se:** albuminúria precisa ter persistência e explicação; uma RAC de 150 mg/g colhida durante febre/ITU pode regredir e deve ser confirmada. Hematúria glomerular persistente, anomalia estrutural e alterações histológicas podem definir DRC mesmo se RAC A1.
 
