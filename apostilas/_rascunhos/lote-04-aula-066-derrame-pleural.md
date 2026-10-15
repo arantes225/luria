@@ -204,3 +204,253 @@ Light não mede malignidade, necessidade de dreno, urgência, presença de tuber
 
 ---
 **Nota editorial:** este manuscrito NÃO reproduz os PDFs do Drive; as principais recomendações procedimentais e de classificação citadas decorrem da diretriz BTS de 2023 e da revisão de pseudoexsudatos de 2023 (referências finais). O conteúdo ainda será submetido a revisão independente antes de uso assistencial.
+
+
+# 10. Derrame parapneumônico e infecção pleural {#infeccao}
+
+A pneumonia bacteriana pode gerar desde um derrame estéril pequeno, que melhora com tratamento da infecção, até um **derrame parapneumônico complicado** com loculações e necessidade de drenagem; quando se encontra pus no espaço pleural, chamamos **empiema**. Essas entidades representam um espectro e não apenas três rótulos arbitrários. A decisão central é reconhecer **qual paciente precisa de drenagem além de antimicrobiano**.
+
+## 10.1 Fisiopatologia: por que o derrame evolui?
+Na fase inicial, mediadores inflamatórios aumentam permeabilidade pleural e fluido entra no espaço pleural. A progressão pode aumentar consumo local de glicose, produção de ácidos, LDH, neutrófilos e deposição de fibrina. Septações e loculações limitam circulação do líquido e dificultam esvaziamento simples. Em fase tardia, há organização fibrótica e possível restrição da expansão pulmonar. Essa sequência explica por que tratar cedo é diferente de esperar semanas por «efeito do antibiótico» em coleção infectada.
+
+O agente pode não crescer em cultura mesmo em infecção pleural verdadeira. Antimicrobiano prévio, baixo número de microrganismos, anaeróbios e problemas de coleta/transporte diminuem rendimento. Portanto, **cultura negativa não equivale a derrame não infectado**. Enviar amostras também em frascos de hemocultura conforme protocolo aumenta rendimento e é recomendado pela BTS 2023 quando há suspeita de infecção.
+
+## 10.2 Quadro clínico e sinais de alerta
+Pneumonia com febre que persiste, dor pleurítica, calafrios, piora após tratamento inicial, dispneia, leucocitose e coleções septadas deve aumentar suspeita. Alguns idosos, imunossuprimidos ou pacientes com analgesia intensa podem não ter febre, mas manter taquipneia, prostração e sinais inflamatórios. O quadro radiológico nem sempre acompanha linearmente a gravidade: o risco de infecção pleural pode ser importante mesmo com coleção que parece moderada.
+
+Imagem ajuda a caracterizar livre x loculada e a verificar segurança de acesso. No ultrassom, septos, ecos internos e espessamento pleural podem apoiar a suspeita; contudo, achado isolado não determina cultura positiva. TC com contraste pode mostrar espessamento/realce pleural e orientar drenagem em situações difíceis.
+
+## 10.3 Líquido: pus, pH, glicose e LDH
+Se a amostra contém **pus franco**, a infecção pleural está evidenciada e a necessidade de drenagem costuma ser clara, sem aguardar cálculo de Light ou resultado de pH. Na suspeita de derrame parapneumônico sem pus, a BTS 2023 recomenda **medir pH imediatamente** em amostra obtida e processada corretamente. A interpretação recomendada é:
+
+| pH pleural | Categoria e raciocínio | Decisão segundo BTS 2023 |
+| --- | --- | --- |
+| **≤7,20** | Alto risco de derrame parapneumônico complicado/infecção pleural | Indicar drenagem intercostal se houver **volume acessível seguro** ao ultrassom |
+| **>7,20 e <7,40** | Risco intermediário | Medir LDH; considerar dreno se **LDH >900 U/L**, sobretudo com febre persistente, coleção volumosa, glicose baixa, realce na TC ou septações ao US |
+| **≥7,40** | Risco inicialmente baixo | Sem indicação imediata de dreno apenas pelo pH; observar evolução clínica e reavaliar se não melhora |
+
+**Cuidado com os limites:** pH de 7,20 pertence à faixa de maior risco; pH de 7,40 pertence à faixa de menor risco, sem impedir drenagem em cenários especiais, como pus ou forte evidência clínica de infecção com septos. O pH não deve ser usado fora da hipótese correta: artrite reumatoide e neoplasia avançada também podem produzir pH baixo.
+
+Na ausência de medida confiável/rápida de pH, a BTS admite **glicose pleural <3,3 mmol/L (cerca de 60 mg/dL)** como indicador de alta probabilidade de derrame complicado, contextualizando clínica e imagem. Valores como glicose ≤4,0 mmol/L (≈72 mg/dL) são parâmetros adicionais na zona intermediária. Não tratar glicose como teste perfeitamente equivalente ao pH em todas as situações.
+
+## 10.4 Erros pré-analíticos do pH
+O pH é vulnerável ao processo de coleta. **Contaminação por anestésico local** ou por heparina residual pode reduzir a medida; ar residual e demora para análise podem elevá-la. Coletar corretamente em seringa adequada para analisador de gasometria, evitar bolhas e contaminações, e processar prontamente, seguindo laboratório e protocolo. pH medido em papel indicador não substitui metodologia adequada.
+
+**Exemplo:** paciente com febre e coleção septada apresenta pH de 7,48 colhido em frasco aberto e levado tardiamente ao laboratório. Não classificar automaticamente como baixo risco; a técnica inadequada e os achados clínicos exigem reavaliação especializada e, quando indicado e seguro, nova coleta correta.
+
+## 10.5 Antibiótico e drenagem são tratamentos complementares
+O antibiótico deve ser escolhido pelo cenário (adquirido na comunidade ou relacionado à assistência), gravidade, fatores de resistência, alergias, função renal, culturas e diretrizes locais, geralmente contemplando anaeróbios quando pleural infection é suspeita. Exemplos de estratégias hospitalares possíveis, **não prescrições universais**: beta-lactâmico com inibidor de betalactamase em infecção comunitária adequada a seu perfil; cefalosporina associada a agente anti-anaeróbio conforme contexto; cobertura para MRSA/Pseudomonas quando riscos específicos justificarem. Ajustar após microbiologia e evolução. Avaliação clínica diária é crucial.
+
+A drenagem é **controle de foco**, não uma «dose extra» do antibiótico. Um empiema organizado pode não melhorar com antibiótico exclusivo porque o espaço infectado persiste. Não atrasar drenagem segura indicada enquanto se aguarda cultura. Por outro lado, derrame pequeno e livre com pH favorável e melhora clínica pode ser acompanhado sem dreno, com reavaliação.
+
+A duração total de antimicrobiano depende de resposta, drenagem efetiva, microrganismo, condição de base e controle de foco, frequentemente exigindo semanas em infecção pleural; não ensinar um número fixo para todos. A transição de via intravenosa para oral depende de estabilidade, absorção e esquema eficaz. Registrar febre, dispneia, marcadores inflamatórios, radiografia/US quando útil, saída do dreno e reavaliação clínica.
+
+## 10.6 Dreno: calibre e técnica apropriada
+A BTS 2023 favorece drenagem inicial por tubo de **pequeno calibre (≤14 Fr)** em muitos casos de infecção pleural, em local definido por imagem e com técnica e equipe apropriadas. Dreno grande pode trazer mais desconforto sem melhorar desfecho em todos os cenários. A seleção depende do conteúdo, anatomia, viscosidade, disponibilidade e experiência. Isso NÃO se aplica automaticamente a hemotórax traumático com sangramento ativo, que obedece a prioridades próprias.
+
+A inserção não encerra tratamento: monitorar posição, permeabilidade, débito, dor, febre, sinais de complicação e evolução da coleção. Selo d'água, sistema e forma de manejo devem seguir protocolo e equipe especializada. Dreno colocado fora da coleção, obstruído ou com múltiplas loculações pode falhar apesar de antibiótico correto.
+
+## 10.7 Quando o dreno não resolve: tPA + DNase, equipe pleural e cirurgia
+Em coleção infectada com drenagem insuficiente e líquido residual, pode-se considerar terapia intrapleural com **tPA (alteplase) + DNase** conforme protocolo especializado, avaliação de risco hemorrágico e recursos institucionais. O estudo MIST2 utilizou **10 mg tPA + 5 mg DNase, duas vezes ao dia por três dias**, demonstrando benefício da combinação — não se deve extrapolar que cada droga isoladamente é igualmente eficaz. A BTS 2023 considera essa associação quando drenagem inicial cessou e persiste coleção residual.
+
+Não usar esse esquema como simples prescrição de enfermaria sem orientação: há risco de sangramento, dor, contraindicações e necessidade de manejo correto do dreno. Comorbidades, anticoagulação e cirurgia recente influenciam decisão. Alguns centros empregam doses modificadas por risco individual; essas modificações precisam de protocolos e avaliação especializada, não de improviso.
+
+A cirurgia torácica — por exemplo, abordagem videotoracoscópica (VATS) para desbridamento/decorticação, quando apropriado — torna-se importante em falha de drenagem/terapia e doença organizada, conforme aptidão clínica. A estratégia deve ser coordenada entre pneumologia, infectologia, radiologia intervencionista e cirurgia; não esperar «fracassar por muito tempo» em paciente que deteriora.
+
+## 10.8 Avaliação prognóstica
+O escore **RAPID** é instrumento estudado na infecção pleural para estratificação prognóstica: Renal (ureia), Age (idade), Purulence (purulência), Infection source (origem hospitalar/comunitária) e Dietary factors (albumina). É apoio à avaliação de risco e comunicação, **não algoritmo isolado** para substituir drenagem, antibiótico ou decisão cirúrgica. O fato de ausência de pus integrar um domínio do escore mostra como é perigoso usar cada item fora do modelo validado. Se usado, conferir cálculo exato, pontos e população na fonte original.
+
+**Pulo do Gato — infecção:** no paciente com pneumonia + derrame, a pergunta que mais muda a prova é **«precisa drenar?»**, não apenas «é exsudato?». Pus, microbiologia, pH bem coletado, glicose, LDH e imagem respondem conjuntamente.
+
+# 11. Tuberculose pleural: suspeita, confirmação e limites da ADA {#tuberculose}
+
+## 11.1 Mecanismo e apresentação
+A pleurite tuberculosa geralmente envolve resposta inflamatória ao antígeno micobacteriano no espaço pleural, gerando **exsudato frequentemente linfocitário**, habitualmente unilateral. Jovens e adultos podem apresentar febre subaguda, tosse seca, dor pleurítica, emagrecimento e sudorese, mas a apresentação varia com imunidade e epidemiologia. Doença pulmonar ativa concomitante pode não ser óbvia na radiografia simples.
+
+O contexto brasileiro altera probabilidade pré-teste. Contato com TB, sintomas persistentes, moradia coletiva, HIV, tratamento imunossupressor, privação de liberdade e situações de vulnerabilidade aumentam a importância da hipótese. O exame físico e o RX não distinguem TB com segurança de linfoma ou carcinomatose.
+
+## 11.2 Perfil bioquímico típico e exceções
+O líquido costuma ser exsudativo e linfocitário, com ADA elevada em parte dos casos. Na fase muito inicial, pode haver maior proporção de neutrófilos. Imunossupressão, idade e condições concomitantes podem alterar composição. A cifra «linfócitos >75% + ADA >40» é heurística em cenários compatíveis, **não prova patognomônica**, porque ADA também pode aumentar em empiema, algumas neoplasias e outros processos inflamatórios.
+
+Um valor de ADA **≥40 U/L** em exsudato linfocitário pode apoiar TB em contexto de prevalência relevante, mas sensibilidade/especificidade, método laboratorial e chance de falso resultado dependem da população. Valores mais altos elevam plausibilidade em certos cenários, sem substituir microbiologia ou histologia. Resultado baixo pode reduzir probabilidade, mas não descarta TB em todas as populações — especialmente diante de suspeita clínica persistente.
+
+A BTS 2023 orienta considerar ADA como apoio diagnóstico em populações de alta prevalência e, sempre que viável, priorizar **amostragem de tecido pleural para cultura e teste de sensibilidade** na investigação de TB pleural suspeita. Isso permite diagnóstico etiológico e eventual avaliação de resistência.
+
+## 11.3 Testes microbiológicos e material
+Na investigação de TB pleural, conforme recursos, coletar líquido para cultura micobacteriana e teste molecular quando indicado/validado, avaliar amostras respiratórias (escarro espontâneo ou induzido conforme disponibilidade e biossegurança), e considerar **biópsia pleural** guiada por imagem ou toracoscopia quando necessário. A baciloscopia direta do líquido costuma ter baixa sensibilidade na doença paucibacilar; cultura e testes moleculares também podem ser negativos. Um resultado negativo único não exclui TB pleural.
+
+A histologia com **granuloma** apoia diagnóstico no contexto, mas não identifica exclusivamente M. tuberculosis: outras infecções e doenças granulomatosas são diferenciais. Enviar fragmentos para histopatologia **e cultura**, quando indicados, aumenta utilidade e pode contribuir para teste de sensibilidade antimicrobiana. Em pacientes muito graves ou com forte probabilidade clínica, a decisão de tratar antes da confirmação envolve equipe responsável, risco, contexto e coleta prévia possível, sem atraso indevido de cuidado.
+
+## 11.4 Diagnósticos diferenciais prioritários
+**Linfoma:** exsudato linfocitário e sintomas B, com possível citologia pouco conclusiva e necessidade de tecido adequado. **Carcinomatose pleural:** derrame recorrente, nodularidade, câncer conhecido, citologia variável. **Artrite reumatoide e outras causas crônicas:** pH/glicose alterados podem ajudar, mas autoanticorpo positivo isolado não confirma pleurite reumatológica. **Embolia pulmonar:** sintomas agudos e risco trombótico podem coexistir. **Empiema parcialmente tratado:** ADA aumentada possível, sobretudo com neutrofilia, pH baixo e febre.
+
+## 11.5 Tratamento, seguimento e saúde pública
+Tratamento da tuberculose pleural segue protocolos de TB sensível ou resistente conforme investigação, com avaliação de interações, hepatotoxicidade, gestação, HIV e função orgânica. A definição do **esquema e dose** precisa utilizar o manual brasileiro vigente e eventual teste de resistência. Toracocentese terapêutica pode aliviar sintomas em derrames volumosos; drenagem rotineira prolongada não é necessária para todos os casos. Persistência, agravamento, coleção loculada e dúvida etiológica requerem reavaliação.
+
+É necessário registrar notificação, avaliação de contatos e medidas de controle conforme a doença e a possibilidade de TB pulmonar concomitante. **Pleurite isolada não deve ser usada como atalho para dispensar investigação respiratória**. O objetivo é tratar o paciente e reduzir transmissão quando houver doença contagiosa associada.
+
+**Pulo do Gato — TB:** ADA alta **muda a probabilidade**, não equivale a «diagnóstico de certeza»; tecido/cultura podem fornecer confirmação e sensibilidade a drogas. ADA baixa deve ser interpretada à luz do contexto.
+
+# 12. Derrame pleural maligno e neoplasias pleurais {#neoplasia}
+
+## 12.1 O que significa derrame maligno?
+Derrame maligno implica acometimento tumoral do espaço pleural, comprovado por citologia ou tecido quando apropriado. Uma pessoa com câncer **pode ter derrame por outra causa** — IC, tromboembolismo, hipoalbuminemia ou pneumonia, por exemplo. Ao mesmo tempo, citologia negativa **não exclui** origem tumoral. Essa dupla cautela evita tanto excesso de procedimentos quanto falso encerramento diagnóstico.
+
+A neoplasia pode aumentar permeabilidade, prejudicar drenagem linfática e comprometer expansão pulmonar. Muitos líquidos são exsudatos, frequentemente com predominância linfocitária ou mistura celular, mas a aparência pode ser clara ou hemática. Dispneia pode ser importante mesmo quando o câncer é estável em outros sítios.
+
+## 12.2 Como investigar
+A primeira investigação habitualmente integra **TC de tórax**, ultrassom e **citologia de líquido** com volume suficiente. A BTS 2023 recomenda **25 a 50 mL** para citologia inicial e ressalta que o rendimento varia pelo subtipo tumoral. Um resultado negativo deve ser lido com a **probabilidade pré-teste**: paciente com pleura nodular e derrame recorrente não recebe alta da investigação apenas porque o laudo diz «ausência de células malignas na amostra».
+
+Alguns tumores, incluindo certas neoplasias mesoteliais, podem ter baixo rendimento citológico. Quando a suspeita permanece, considerar **biópsia pleural guiada por imagem ou toracoscopia**, escolhidas segundo espessamento, acessibilidade, risco, necessidade de material para imuno-histoquímica/marcadores moleculares e disponibilidade. Biópsia às cegas possui limitações e não deve substituir de rotina métodos direcionados quando disponíveis.
+
+A tomografia negativa para massas ou nódulos não exclui malignidade inicial. PET-CT pode ser considerado em situações selecionadas quando os resultados de tecido são negativos ou a coleta é inviável, sem ser exame obrigatório inicial de todo derrame. O diagnóstico de neoplasia deve ser comunicado com precisão e respeito ao grau de certeza.
+
+## 12.3 Tratamento é, em grande parte, controle de sintomas e recorrência
+A estratégia depende de intensidade da dispneia, **expansibilidade pulmonar**, velocidade de recorrência, condição geral, expectativa de vida, tratamento sistêmico, autonomia e preferências. **Paciente assintomático** com derrame maligno geralmente não precisa de intervenção pleural terapêutica apenas porque há líquido. Essa recomendação evita risco sem benefício percebido.
+
+Em paciente sintomático com dúvida sobre a contribuição do derrame para dispneia ou sobre expansão pulmonar, **toracocentese terapêutica supervisionada** pode ajudar a avaliar melhora dos sintomas e reexpansão. Se a dispneia persiste apesar da retirada segura e adequada, investigar também outras causas: linfangite tumoral, TEP, anemia, doença pulmonar, derrame pericárdico e descondicionamento.
+
+## 12.4 Pleurodese química x cateter pleural de longa permanência
+Para derrame maligno sintomático com pulmão expansível, BTS 2023 e ATS/STS/STR 2018 admitem, como opções iniciais, **pleurodese com talco** ou **cateter pleural tunelizado de longa permanência (IPC)**, discutindo riscos, necessidade de acompanhamento e preferências. Pleurodese visa aderência pleural após retirada do fluido e requer adequada aproximação de superfícies pleurais. IPC permite drenagem domiciliar organizada e reduz certos períodos de internação, mas envolve manutenção do dispositivo e risco de infecção/obstrução.
+
+| Fator | Pleurodese com talco | Cateter pleural tunelizado |
+| --- | --- | --- |
+| Pulmão expande bem? | Favorece efetividade | Não é requisito absoluto |
+| Desejo de evitar tubo semipermanente | Pode ser atrativo | Pode pesar contra |
+| Desejo de manejo ambulatorial | Depende da técnica/estrutura | Frequentemente favorável |
+| Derrame recorrente com pulmão não expansível | Probabilidade de falha maior | Em geral favorecido |
+| Suporte domiciliar e educação | Necessário após qualquer intervenção | Fundamental para drenagem e cuidados |
+| Complicações a explicar | Dor, febre, falha, infecção e riscos do procedimento | Infecção, obstrução, loculações, desconforto e cuidados contínuos |
+
+Essas não são fórmulas rígidas. A decisão deve considerar paciente, local, qualidade de vida e possibilidade de reintervenção. Talco em pasta (slurry por dreno) ou aplicado durante toracoscopia (poudrage) são opções técnicas avaliadas em diretrizes.
+
+## 12.5 Pulmão não expansível: por que a pleurodese pode falhar
+Se o pulmão não reexpande suficientemente após drenagem por restrição pleural, obstrução de via aérea ou outros fatores, as pleuras não se aproximam adequadamente. Pleurodese química tende a ter menor efetividade. Nesses casos, **IPC** costuma ser preferido para alívio sintomático, com abordagem individualizada; cirurgia de decorticação pode ser considerada apenas em pacientes selecionados e avaliados por equipe especializada. Um pneumotórax ex vacuo pós-aspiração pode refletir esse mecanismo e não precisa ser tratado como pneumotórax hipertensivo.
+
+Antes de indicar intervenção definitiva, explicar ao paciente o que se espera de benefício, a possibilidade de recorrência, a manutenção e os sinais de complicações. Perguntar também se a falta de ar é de fato produzida pelo derrame: tratar achado de imagem não garante alívio se a principal causa respiratória for outra.
+
+## 12.6 Cuidados paliativos e objetivo do paciente
+Prognóstico limitado não significa ausência de tratamento. O objetivo pode ser reduzir dispneia, evitar hospitalização e permitir permanência em casa com suporte. Repetidas punções podem ser razoáveis em circunstâncias específicas, como recorrência pouco frequente ou prognóstico muito curto, mas não são necessariamente a melhor estratégia em paciente com recorrência rápida. Integração com oncologia, pneumologia, atenção domiciliar e cuidados paliativos favorece plano realista.
+
+**Pulo do Gato — malignidade:** citologia negativa não fecha investigação; intervenção só deve buscar benefício sintomático ou diagnóstico; **pulmão expansível → discutir IPC vs talco**, **não expansível → IPC frequentemente preferido**.
+
+# 13. Derrame por insuficiência cardíaca e pseudoexsudato congestivo
+
+## 13.1 Reconhecimento clínico
+Na insuficiência cardíaca, aumento das pressões de enchimento e das pressões hidrostáticas contribui para formação de líquido pleural, frequentemente bilateral, por vezes assimétrico. A história de ortopneia, ganho ponderal, edema de membros inferiores, turgência jugular, crepitações e ecocardiograma compatível eleva a probabilidade. O derrame não é obrigatoriamente proporcional à fração de ejeção; IC de fração preservada também pode causar congestão.
+
+Em paciente estável com quadro muito típico, pode-se iniciar **tratamento da congestão** e observar evolução, sem puncionar todos os derrames. Entretanto, febre, dor pleurítica, grande assimetria, ausência de outras evidências de congestão, suspeita de câncer/TB ou persistência apesar de melhora hemodinâmica justificam revisão da hipótese e eventual investigação pleural.
+
+## 13.2 Critérios de Light após diurético
+Um transudato pode virar «exsudato por Light» após concentração relativa de proteínas com diurese. Para distinguir, empregar gradiente albumina sérica − pleural **>1,2 g/dL** como apoio e avaliar NT-proBNP sérico e contexto. Não etiquetar «pseudoexsudato» apenas porque o paciente tem IC: doença concomitante pode gerar exsudato verdadeiro.
+
+**Exercício:** paciente com IC, após diurese, possui proteína sérica 6,2, pleural 3,3 (razão 0,532: exsudato por Light); albumina sérica 3,7 e pleural 2,1 (gradiente 1,6 g/dL: favorece componente hidrostático). A decisão de não investigar malignidade/infecção requer ausência de sinais suspeitos e resposta clínica, não só essa aritmética.
+
+## 13.3 Tratamento e acompanhamento
+Focar no manejo da IC de acordo com hemodinâmica, função renal, eletrólitos, comorbidades e tratamento modificador do prognóstico quando aplicável. Diuréticos e outras medidas corrigem a fisiologia subjacente. O papel da toracocentese terapêutica é complementar em casos selecionados com dispneia importante e líquido acessível, sobretudo quando não há resposta suficiente ou existe outra pergunta diagnóstica.
+
+Reavaliar sintomas e imagem conforme gravidade e evolução. Em derrame persistente unilateral, mesmo com IC confirmada, perguntar se o quadro está realmente explicado. **Um mecanismo comprovado não exclui segundo mecanismo.**
+
+# 14. Hidrotórax hepático, renal e outras condições sistêmicas
+
+## 14.1 Hidrotórax hepático
+Em cirrose/hipertensão portal, líquido pode passar do abdome para espaço pleural através de defeitos diafragmáticos. É mais comum à direita e **pode ocorrer sem ascite volumosa aparente**. Composição frequentemente transudativa, mas infecção do líquido pleural (empiema bacteriano espontâneo ou infecção pleural em contexto de cirrose) e outras doenças precisam ser consideradas diante de febre ou deterioração.
+
+O tratamento prioriza doença hepática e controle de retenção de sódio/água, com avaliação nutricional e opção de **TIPS** ou transplante em casos selecionados. Toracocentese pode aliviar dispneia. **Drenagem torácica contínua convencional em hidrotórax hepático** pode causar perdas de proteína/eletrólitos, infecção e complicações graves e geralmente deve ser evitada como solução rotineira; exceções e estratégias de cateter exigem centro especializado e objetivo bem definido.
+
+**Armadilha:** unilateral direito não significa automaticamente câncer ou pneumonia; pesquisar cirrose mesmo quando o abdome não está distendido.
+
+## 14.2 Síndrome nefrótica e distúrbios renais
+Redução de pressão oncótica e retenção de sódio/água podem contribuir para derrames no contexto de síndrome nefrótica e doença renal. Nem toda hipoalbuminemia isolada é suficiente para explicar grande derrame unilateral; avaliar volume, proteinúria, função renal, IC e outras causas. Pacientes em diálise podem apresentar **pleurite urêmica**, geralmente exsudativa, além de derrames por sobrecarga de volume; não confundir mecanismos.
+
+Corrigir doença renal e balanço de volume, avaliar necessidade de ajuste dialítico e investigar exsudato/achados atípicos de acordo com risco. Derrame pleural recorrente não deve ser tratado indefinidamente com retiradas sem investigar causa se houver sinais de outra doença.
+
+## 14.3 Embolia pulmonar
+TEP pode provocar derrame geralmente pequeno, por vezes hemático e exsudativo, com dor pleurítica. O achado **não confirma nem exclui** TEP. Quando a probabilidade pré-teste e achados clínicos o sustentarem, aplicar algoritmo de investigação de TEP, incluindo estabilidade hemodinâmica, escores e D-dímero quando apropriados, angiotomografia e alternativas conforme contraindicações. A toracocentese não substitui essa avaliação; é reservada para dúvida pleural relevante ou repercussão específica.
+
+A coexistência de TEP e neoplasia é possível e exige cuidado com anticoagulação em procedimentos. Avaliar risco hemorrágico e tempo de intervenção individualmente.
+
+## 14.4 Atelectasia, pós-operatório e medicamentos
+Pequenas coleções podem acompanhar cirurgia abdominal/torácica, inflamação subdiafragmática e atelectasia; a explicação deve ser contextualizada e o curso clínico monitorado. Alguns medicamentos podem causar pleurite ou derrame; relação temporal, exclusão de causas comuns e melhora após suspensão quando apropriada ajudam, sem atribuir causalidade apenas por associação.
+
+# 15. Derrames especiais: sangue, linfa, pâncreas e autoimunidade {#especiais}
+
+## 15.1 Hemotórax e derrame hemorrágico
+**Hemotórax verdadeiro** é definido classicamente por **hematócrito pleural ≥50% do hematócrito sanguíneo periférico**. A diluição ao longo dos dias pode reduzir razão para aproximadamente 25–50%, sem excluir hemotórax se o quadro o sugere. Líquido vermelho não basta: neoplasia, TEP e punção traumática também podem produzir aspecto sanguinolento sem a mesma razão hematimétrica.
+
+A conduta em hemotórax agudo depende de mecanismo, estabilidade, volume, taxa de sangramento e lesões associadas. Hemotórax traumático com instabilidade pode exigir reposição, drenagem e controle cirúrgico/endovascular imediato conforme protocolo de trauma. Hemotórax pequeno, estável e oculto pode ter alternativas de observação em cenários selecionados, sob vigilância especializada; logo, «todo traço de sangue deve receber dreno grande» não é regra universal. Sangue retido pode gerar empiema/fibrotórax e demandar avaliação cirúrgica. Para hemotórax não traumático, investigar anticoagulação, tumor, malformação ou iatrogenia.
+
+### Exemplo hematimétrico
+Hematócrito periférico 36%; líquido pleural 22%. Razão = 22/36 ≈ **0,61**, isto é, 61%, compatível com hemotórax, dependendo de técnica e contexto. Se líquido apresentasse 12%, razão 33%, isso não excluiria hemotórax antigo ou diluído diante de suspeita forte, mas exigiria investigação diferencial.
+
+## 15.2 Quilotórax
+O quilotórax decorre de **linfa rica em quilomícrons** acumulada na pleura por vazamento/obstrução do sistema linfático, como lesão do ducto torácico após cirurgia, trauma, linfoma e outras condições. O líquido pode ser leitoso, mas **pode não ser** se paciente está em jejum ou desnutrido. A composição pode variar inclusive entre exsudato e transudato em situações concomitantes.
+
+Critérios usuais: **triglicerídeos pleurais >110 mg/dL** e colesterol relativamente baixo (frequentemente <200 mg/dL) favorecem quilotórax; **demonstração de quilomícrons** é confirmação bioquímica quando disponível. Se triglicerídeos estão na faixa de cerca de **50–110 mg/dL**, ou abaixo disso em jejum/desnutrição com suspeita forte, eletroforese de lipoproteínas e contexto ajudam. Não fechar diagnóstico pela cor.
+
+O tratamento envolve descobrir e controlar vazamento/causa, avaliar necessidade de drenagem sintomática e perdas nutricionais e imunológicas, suporte nutricional e opções intervencionistas ou cirúrgicas conforme débito e evolução. Dieta com redução de gorduras de cadeia longa e estratégias com triglicerídeos de cadeia média podem ser usadas sob nutrição especializada. **Não existe regra universal «cirurgia após exatamente 14 dias»**, pois débito, trauma, etiologia maligna, reservas nutricionais e recursos influenciam decisão.
+
+## 15.3 Pseudoquilotórax
+Pode parecer leitoso devido ao acúmulo de colesterol em derrame crônico, tradicionalmente associado a TB e artrite reumatoide de longa duração. Triglicerídeos costumam ser baixos e colesterol elevado (>200 mg/dL em critérios clássicos), e cristais de colesterol podem apoiar. Sem quilomícrons, o mecanismo difere do vazamento linfático. Misturar quilotórax e pseudoquilotórax em um único tratamento é erro importante.
+
+## 15.4 Derrame pancreático
+Pancreatite aguda pode gerar pequeno derrame reativo; fístula pancreatopleural, especialmente em pancreatite crônica, pode causar **derrame importante e recorrente**, às vezes maior que os sintomas abdominais. Líquido com **amilase muito elevada** favorece origem pancreática, mas amilase pleural aumentada também pode ocorrer em rotura esofágica e certas neoplasias. Investigar história, lipase, TC abdome e avaliação da anatomia ductal com métodos apropriados; tratamento pode incluir controle da patologia pancreática e abordagem endoscópica/cirúrgica em casos selecionados.
+
+## 15.5 Rotura esofágica
+Dispneia, dor torácica intensa após vômitos vigorosos/procedimento, sepse e derrame pleural podem representar **síndrome de Boerhaave**. É emergência: não esperar apenas amilase pleural para iniciar investigação e controle. TC com protocolo adequado e avaliação cirúrgica urgente são centrais. Líquido pode ter pH baixo, alimento e amilase elevada, mas ausência desses sinais em pequena amostra não exclui perfuração. Quando suspeita relevante, não conduzir como pneumonia simples.
+
+## 15.6 Derrames autoimunes
+Artrite reumatoide pode gerar pleurite com **glicose muito baixa, pH baixo e LDH elevado**, imitando infecção. Lúpus pode causar pleurite exsudativa com quadro sistêmico e apoio de autoanticorpos, incluindo ANA pleural conforme contextos selecionados. A BTS recomenda considerar ANA pleural para apoiar pleurite lúpica, não como teste definitivo isolado. A hipótese precisa ser compatível com clínica, sorologia e exclusão de infecção e câncer.
+
+## 15.7 Urinotórax e outras etiologias raras
+Urinotórax pode resultar de obstrução/trauma do trato urinário e passagem de urina ao espaço pleural. Razão **creatinina pleural/sérica >1** pode apoiar diagnóstico no contexto, mas não é totalmente específica; imagem e história urológica importam. Não solicitar creatinina pleural de rotina a todo derrame; pensar quando houve obstrução ou procedimento urológico e quadro compatível.
+
+# 16. Diferenciais integrados: tabela de pistas e decisões
+
+| Etiologia | Quadro que aumenta probabilidade | Padrão do líquido | Melhor passo quando dúvida persiste |
+| --- | --- | --- | --- |
+| Insuficiência cardíaca | Ortopneia, edema, congestão | Em geral transudato; pseudoexsudato após diurético | Avaliar resposta, NT-proBNP sérico, gradientes e hipóteses concomitantes |
+| Cirrose/hidrotórax hepático | Cirrose, derrame direito ± ascite | Em geral transudato | Avaliar fígado, ascite, sinais de infecção e manejo especializado |
+| Derrame parapneumônico | Pneumonia, febre, dor pleurítica | Exsudato; pH determina risco de complicação | pH bem colhido, cultura, glicose, LDH e segurança de drenagem |
+| Tuberculose pleural | Febre subaguda, dor, epidemiologia | Exsudato frequentemente linfocitário, ADA pode aumentar | Microbiologia, testes respiratórios e tecido/cultura conforme cenário |
+| Malignidade | Derrame recorrente, câncer, pleura nodular | Geralmente exsudato; citologia variável | Citologia adequada, TC e biópsia dirigida se necessário |
+| Tromboembolismo pulmonar | Início agudo, risco trombótico, dor pleurítica | Frequentemente exsudato; ocasionalmente hemático | Aplicar algoritmo de TEP, não «confirmar pela punção» |
+| Artrite reumatoide | Doença articular sistêmica | Exsudato, glicose e pH baixos possíveis | Excluir infecção e câncer, correlacionar reumatologia |
+| Quilotórax | Cirurgia torácica, linfoma, doença linfática | Triglicerídeos altos ou quilomícrons | Investigar trajeto linfático e causa |
+| Hemotórax | Trauma, iatrogenia, anticoagulação, neoplasia | Hematócrito pleural elevado relativo ao periférico | Avaliar estabilidade, fonte e manejo de hemorragia |
+| Fístula pancreática | Pancreatite, grande recorrência | Exsudato com amilase elevada | Anatomia pancreática e manejo especializado |
+
+# 17. Fluxograma diagnóstico textual de alta utilidade {#tratamento}
+
+**ETAPA A — Confirme e estratifique:** suspeita ao exame/RX → US para confirmar e mapear líquido → procure insuficiência respiratória, instabilidade, sepse, trauma/sangramento e causa que demanda ação imediata. **Se emergência, estabilize e envolva a equipe apropriada.**
+
+**ETAPA B — Defina se punciona:** quadro sistêmico típico e sem red flags, com pequeno derrame bilateral → tratar causa e reavaliar. Derrame unilateral novo/inexplicado, atípico, febre, câncer, TB, pneumonia com derrame ou falha de tratamento → considere toracocentese guiada por US se houver janela segura. Se não há acesso seguro, solicite apoio e investigue por outros meios.
+
+**ETAPA C — Colha de modo dirigido:** Light (soro + líquido), contagem/diferencial; adicionar pH, glicose e microbiologia se infecção; citologia 25–50 mL se malignidade; ADA e cultura/tecido se TB; triglicerídeos se suspeita de quilotórax; hematócrito se hemotórax.
+
+**ETAPA D — Classifique sem encerrar a investigação:** transudato coerente com IC/cirrose → terapia da causa e acompanhamento; exsudato ou evolução discordante → investigar infecção, câncer, TB, TEP e condições especiais, guiado por risco.
+
+**ETAPA E — Trate decisões urgentes do líquido:** pus ou forte infecção complicada → antibiótico + drenagem quando indicado e seguro; hemotórax instável → protocolo de trauma/controle de hemorragia; derrame sintomático volumoso → considerar alívio supervisionado; maligno recorrente → IPC ou pleurodese conforme pulmão e preferências; TB → confirmação e tratamento conforme programa; causa sistêmica → corrigir mecanismo principal.
+
+**ETAPA F — Reavalie resultado clínico:** após terapia da causa, deve haver coerência entre melhora de sintomas, exame e imagens. Quando não houver, reveja diagnóstico e risco de doença oculta. **Derrame inexplicado que persiste não se transforma em benigno apenas porque uma amostra foi «negativa».**
+
+# 18. Erros de prova e de plantão mais frequentes
+
+1. **Tratar derrame como diagnóstico etiológico:** é síndrome/achado que exige mecanismo e causa.
+2. **Classificar qualquer líquido sanguinolento como hemotórax:** usar hematócrito relativo ao sangue e contexto.
+3. **Diagnosticar TB pleural só por ADA e linfócitos:** usar probabilidade, cultura, respiração e tecido quando indicado.
+4. **Excluir câncer por citologia negativa única:** sensibilidade varia por histologia, volume e coleta.
+5. **Puncionar todos os derrames de IC:** observar casos típicos e responder à diurese, sem ignorar sinais discordantes.
+6. **Ignorar derrame pequeno da pneumonia febril:** volume não substitui contexto e necessidade de avaliar infecção.
+7. **Drenar apenas por Light:** critérios não indicam dreno; pus, pH, clínica, imagem e segurança é que orientam.
+8. **Usar pH sem avaliar coleta:** anestésico, ar e atraso alteram medida.
+9. **Punção sem US por confiança no RX:** risco evitável de lesão e janela incorreta.
+10. **Drenar rápido/forçar 1,5 L apesar de dor:** limite é teto geral, não meta obrigatória.
+11. **Insistir em talco com pulmão claramente não expansível:** baixa eficácia, considerar cateter.
+12. **Dreno permanente para todo hidrotórax hepático:** pode gerar graves perdas e infecção.
+13. **Diagnosticar quilotórax só por líquido leitoso:** conferir triglicerídeos e quilomícrons quando necessário.
+14. **Esquecer que TEP pode causar derrame:** investigar clinicamente em cenário sugestivo.
+15. **Considerar cultura negativa como exclusão de empiema:** priorizar clínica, pus, pH e drenagem.
+16. **Medir tamanho do derrame pela saturação isolada:** mecânica, adaptação e doenças concomitantes modificam sintomas.
+
+**Nota de segurança:** procedimentos e drogas intrapleurais requerem execução/protocolo de equipe habilitada. O manuscrito orienta raciocínio clínico e estudo, não é autorização para intervenção por pessoa não treinada.
