@@ -397,3 +397,124 @@ E. Solicitar IgE sérica para decidir a urgência.
 **Fonte internacional primária:** GINA, *Strategy Report 2026* (https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf), capítulos 10–12 sobre pré-escolares; e *Summary Guide 2026* (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf), páginas referentes a diagnóstico por variabilidade, tratamento dos 6–11 anos, exacerbação e alta. Nenhum fluxograma, tabela ou imagem da GINA foi reproduzido.
 
 **Pendências que permanecem:** revisar a seleção final de medicamentos e disponibilidade regulatória brasileira, ampliar quadro de CI por apresentação, integrar prevenção de exposições segundo evidência, criar figuras autorais e fila de imagens clínicas licenciadas, revisar doses por especialista e farmacêutico, transformar rascunho em formato de apostila LURIA, assegurar pelo menos 60 mil caracteres didáticos úteis, rodar testes de conteúdo e inspeção desktop/PWA. **Não classificar como aprovada.**
+
+
+## 18. Vigilância longitudinal: transformar controle em decisões mensuráveis
+
+A consulta de acompanhamento da asma pediátrica precisa responder a perguntas diferentes da consulta de emergência. Na primeira, o foco é reduzir risco ao longo de meses e anos; na segunda, salvar oxigenação e ventilação e interromper a crise. Um bom seguimento costura as duas dimensões, evitando que cada atendimento de urgência seja tratado como episódio isolado.
+
+### 18.1. Anamnese orientada para as últimas quatro semanas
+
+Reconstituir os sintomas de modo operacional: quantos dias de desconforto diurno, quantas noites despertou, se precisou abandonar atividades, quantas vezes usou alívio e se houve idas ao pronto atendimento. A criança pode banalizar sintomas porque se acostumou a brincar menos ou evita correr; por isso, pergunte diretamente sobre educação física, passeios, sono e participação em jogos. A família pode responder que “não há falta de ar”, enquanto relata tosse noturna três vezes por semana. A resposta deve ser interpretada como impacto respiratório potencial, não simplesmente como ausência de dispneia.
+
+A ferramenta simplificada de controle sintomático da GINA utiliza quatro dimensões nas últimas quatro semanas — sintomas diurnos frequentes, despertar noturno, uso de SABA de alívio em frequência aumentada e limitação de atividades — mas há uma ressalva importante: a pergunta sobre frequência de SABA não se aplica da mesma forma a uma criança que usa CI-formoterol como alívio. Assim, o prontuário deve registrar *qual tipo de alívio* está sendo usado antes de aplicar qualquer classificação. Uma contagem sem esse detalhe pode produzir controle artificialmente ruim ou artificialmente bom.
+
+### 18.2. Risco de exacerbação e de efeitos adversos
+
+Investigar atendimentos emergenciais, internamentos, necessidade de corticosteroide sistêmico, crise muito grave anterior, função pulmonar baixa, exposição a fumaça e possibilidade de ter interrompido o controlador. Também se devem avaliar questões sociais concretas: custo, disponibilidade de medicamento, transporte até o serviço, uso na escola, quem conhece o plano de ação e compreensão das instruções. Uma criança cuja receita é adequada, mas cujo tratamento não chega à casa, permanece desprotegida.
+
+O risco não é fixo. Uma piora após interrupção do CI revela um fator modificável, enquanto crise grave apesar de técnica adequada e controlador regular pode exigir revisão especializada e pesquisa de fenótipo. Diferenciar os dois evita aumentar doses em uma criança cuja principal barreira é econômica ou operacional.
+
+### 18.3. Crescimento e segurança do corticosteroide inalatório
+
+CI em dose apropriada oferece benefício importante na prevenção de exacerbações, mas a vigilância não pode ignorar efeitos adversos. Registrar crescimento longitudinal, verificar utilização de doses prescritas, pesquisar disfonia e candidíase oral, orientar higiene oral quando indicada e revisar técnica. Evitar a equivalência equivocada entre “CI é corticoide” e “qualquer CI produz os mesmos efeitos de corticoide sistêmico repetido”: vias, biodisponibilidade, dose e frequência importam. Por outro lado, altas doses crônicas e interações medicamentosas requerem avaliação específica.
+
+A decisão de reduzir o controlador após estabilidade prolongada deve considerar o histórico de crises, a estação do ano, riscos ambientais, função pulmonar, capacidade de retorno e entendimento familiar. Não transformar redução de degrau em abandono do acompanhamento.
+
+## 19. Fenótipos e contextos clínicos que costumam ser confundidos
+
+### 19.1. Asma associada a exercício
+
+Dispneia ao correr não equivale automaticamente a asma. Perguntar em que momento começa, se há tosse/sibilos expiratório, quanto tempo dura após cessar o exercício e se melhora com o plano previamente prescrito. Broncoespasmo induzido por exercício tende a se relacionar com variação do fluxo expiratório e costuma ocorrer durante ou após esforço. Dificuldade inspiratória aguda com ruído na garganta, resolução muito rápida ao parar e escassa resposta a broncodilatador sugerem obstrução laríngea induzível. Descondicionamento, ansiedade, anemia e doenças cardíacas também podem causar intolerância ao esforço.
+
+Para uma criança com asma controlada, a meta é participação ativa, não proibição esportiva. Um plano adequado deve permitir reconhecer sintomas, prevenir exposições relevantes, usar tratamento previamente orientado e procurar revisão se o exercício continuar limitado. Dar ao professor de educação física instruções simples, com consentimento familiar, pode ser mais útil do que uma declaração genérica de “liberado”.
+
+### 19.2. Asma variante tosse
+
+Tosse seca persistente pode ser a manifestação predominante de asma, inclusive sem sibilos evidentes; entretanto, atribuir toda tosse crônica à asma cria diagnósticos excessivos. A hipótese ganha sustentação quando a tosse é variável, aparece em contexto de desencadeantes típicos, acompanha marcadores funcionais de hiperresponsividade e melhora com tratamento anti-inflamatório adequadamente acompanhado. Rinite/rinossinusite, gotejamento pós-nasal, tosse pós-viral e causas infecciosas devem entrar no raciocínio quando compatíveis.
+
+Tosse úmida diária, especialmente durante muitas semanas, não é o padrão típico de tosse variante da asma e merece investigação de condições como bronquite bacteriana prolongada, bronquiectasias e problemas de depuração mucociliar. O achado deve mudar a hipótese, em vez de simplesmente provocar aumento de CI.
+
+### 19.3. Asma e rinite alérgica
+
+As vias aéreas superiores e inferiores participam de processos inflamatórios relacionados, mas diagnóstico de rinite não é sinônimo de asma e vice-versa. Congestão nasal, prurido, espirros e rinorreia podem prejudicar sono, adesão ao dispositivo e percepção de dispneia. Investigar rinite é relevante quando o controle da asma parece insuficiente; tratar adequadamente sintomas nasais pode melhorar qualidade de vida. O clínico deve escolher intervenções baseadas em sintomas e evidência, evitando exames indiscriminados para alérgenos sem correlação clínica.
+
+### 19.4. Asma, obesidade e sofrimento psicossocial
+
+Obesidade pode interferir na mecânica torácica, na tolerância ao esforço, na percepção de dispneia e no controle de comorbidades. Isso exige duas perguntas simultâneas: a criança tem asma comprovada? Existem outras causas modificáveis do desconforto? Evitar interpretar qualquer falta de ar relacionada ao excesso de peso como crise asmática. Intervenções sobre alimentação, atividade física e sono devem ser não estigmatizantes e integradas às possibilidades familiares.
+
+Ansiedade, dificuldades escolares e experiências traumáticas também podem afetar sintomas e adesão. O fato de um fator emocional influenciar a queixa não anula doença orgânica; o inverso também é verdadeiro. A responsabilidade do clínico é investigar as duas dimensões sem culpar a criança ou seus cuidadores.
+
+### 19.5. Exacerbação e anafilaxia
+
+Uma criança com asma pode apresentar anafilaxia e broncoespasmo simultaneamente. O erro perigoso é oferecer doses repetidas de salbutamol e perder tempo precioso quando há reação sistêmica com comprometimento respiratório ou circulatório. Investigar exposição recente a alimento, medicamento ou picada, erupção urticariforme, angioedema, sintomas gastrointestinais e sinais de choque. A medicação de primeira linha para anafilaxia é adrenalina conforme protocolo; SABA é adjuvante para broncoespasmo, não tratamento substitutivo da reação sistêmica.
+
+## 20. Administração inalatória: oficina prática e erros que mudam resultado
+
+A escolha da interface precisa ser feita antes de concluir que uma molécula “não funcionou”. A inalação por aerossol pressurizado depende da ativação correta, da distância até vias aéreas, da velocidade inspiratória e da permanência da dose no sistema em tempo suficiente para ser aspirada. Em crianças pequenas, a cooperação é variável; forçar uma máscara mal ajustada enquanto a criança chora pode prejudicar a deposição pulmonar e associar o tratamento a sofrimento, reduzindo adesão futura.
+
+### 20.1. Checklist de demonstração com aerossol pressurizado e espaçador
+
+**Preparar:** verificar nome, apresentação, validade, dose e funcionamento do dispositivo, com limpeza e preparação conforme instrução do fabricante. Confirmar que não se trata de um dispositivo diferente daquele demonstrado em consulta anterior.
+
+**Posicionar:** espaçador adequadamente conectado; máscara ajustada ao rosto nas crianças que precisam dela, ou bocal firmemente entre os lábios nas que conseguem vedá-lo. A vedação inadequada é uma das principais causas de entrega insuficiente.
+
+**Administrar:** acionar uma dose por vez no espaçador, permitindo respirações adequadas conforme o dispositivo e a capacidade da criança. Não presumir que disparar vários jatos de uma vez no reservatório produz a mesma deposição. Respeitar as instruções próprias sobre agitação entre acionamentos e tempo de uso.
+
+**Verificar:** pedir que criança ou cuidador repita o processo sem intervenção, identificar erros concretos e pedir nova demonstração após a correção. Explicar quem fará essa rotina de manhã, à noite ou na escola. O aprendizado que não é testado na consulta pode não se reproduzir em casa.
+
+### 20.2. Como medir adesão sem transformar a consulta em julgamento moral
+
+Perguntas como “você usa a bombinha direitinho, não é?” induzem respostas socialmente desejáveis. Substituir por “em quantos dias da última semana a medicação realmente foi usada?” e “o que costuma atrapalhar?” permite encontrar problemas de custo, medo de efeitos adversos, esquecimento, confusão entre embalagens e mudanças de cuidador. A escolha de um único dispositivo pode reduzir complexidade em algumas estratégias, mas não resolve falta de acesso.
+
+Registrar a medicação que foi efetivamente usada, não apenas aquela prescrita. Se a criança tem uma receita de controlador de seis meses atrás, mas a família informa ter comprado um único inalador que acabou há semanas, a classificação de “asma grave refratária a CI” é prematura.
+
+### 20.3. Educação para crianças maiores
+
+Escolares progressivamente devem aprender a reconhecer seus próprios sintomas, explicar a diferença entre controlador e alívio e pedir ajuda quando necessário. Isso não transfere toda responsabilidade do tratamento para a criança; o suporte dos responsáveis permanece fundamental. Uma boa pergunta de retorno é: “se você acordar à noite com falta de ar, o que fará e para quem avisará?”. A resposta revela se o plano escrito foi compreendido e pode ser executado.
+
+## 21. Integração com a rede de atenção no Brasil
+
+A GINA apresenta recomendações terapêuticas internacionais. No Brasil, a escolha definitiva de medicamento precisa considerar também os protocolos nacionais, a disponibilidade no SUS, o registro na Anvisa e a realidade do serviço onde a criança é acompanhada. Em outubro de 2026, o Ministério da Saúde publica o **PCDT de Asma aprovado pela Portaria Conjunta SAES/SCTIE nº 43, de 24 de março de 2026**, com atualização de anexo informada em setembro de 2026. Esse documento é referência nacional obrigatória para conferência de critérios de acesso, apresentações e caminhos de cuidado; a simples existência do PCDT não comprova que todas as combinações sugeridas pela GINA estejam acessíveis para cada idade em toda rede.
+
+### 21.1. O papel da Atenção Primária
+
+A APS pode identificar padrão clínico compatível, organizar diagnóstico e referência quando necessária, fornecer orientação sobre dispositivos, acompanhar adesão, monitorar crescimento e reconhecer exacerbações que exigem outro nível de assistência. Deve manter informações acessíveis à família e à equipe, especialmente depois de uma crise grave. A continuidade evita que cada consulta reinicie a história da criança sem considerar o que já funcionou ou falhou.
+
+### 21.2. Quando a referência especializada agrega valor
+
+Encaminhamento deve ser considerado em dúvida diagnóstica persistente; recorrência de crises graves ou internações; necessidade de tratamento em degraus elevados; suspeita de fenótipo grave que justifique avaliação para terapia adicional; exames funcionais atípicos; efeitos adversos relevantes; ou suspeita de doenças associadas como discinesia ciliar e fibrose cística. O encaminhamento não significa suspender o tratamento de base enquanto se aguarda vaga. Uma carta de referência de qualidade inclui padrão de sintomas, exames, terapias e apresentações já utilizadas, técnica demonstrada, crises anteriores e principais perguntas clínicas.
+
+### 21.3. Diferença entre diretriz internacional, PCDT e bula
+
+São camadas distintas e complementares:
+- **Diretriz científica internacional:** sintetiza evidência e estratégias clínicas, muitas vezes incluindo usos cuja disponibilidade regional é desigual.
+- **PCDT nacional:** define orientação assistencial e parâmetros do sistema público brasileiro dentro de sua competência e atualização normativa.
+- **Bula e registro regulatório:** delimitam apresentações e autorizações específicas, que podem variar por fabricante e faixa etária.
+
+A apostila final deverá explicitar essas camadas ao construir tabelas de medicamentos. Não é rigoroso apresentar uma posologia internacional como se fosse automaticamente disponível e licenciada em qualquer farmácia brasileira.
+
+## 22. Roteiro editorial de figuras próprias e candidatas de imagem
+
+A etapa visual foi planejada, mas **nenhuma imagem de terceiros foi importada**, nem existe aprovação de licença neste rascunho. A implementação seguirá a fila centralizada do Admin, com pesquisa de autoria, licença e adequação clínica antes da inserção. Ideias didáticas por seção:
+
+1. **Mecanismo:** esquema autoral em corte de via aérea normal versus inflamada, destacando edema, broncoconstrição e muco; útil após fisiopatologia.
+2. **Curva fluxo-volume:** desenho próprio de obstrução e mudança após broncodilatador, sem copiar gráficos protegidos; junto ao diagnóstico funcional.
+3. **Interpretação do VEF1:** quadro gráfico autoral que separa “percentual do previsto” de “percentual pré-broncodilatador”; próximo ao cálculo clínico.
+4. **Critérios do pré-escolar:** árvore própria de decisão dos três requisitos, com saída explícita “suspeita de asma”; próxima ao diagnóstico de até cinco anos.
+5. **Técnica inalatória:** sequência fotográfica ou ilustração licenciada mostrando espaçador e vedação de máscara pediátrica; junto ao treinamento.
+6. **Técnica do bocal:** imagem específica da vedação labial e do disparo único, sem confundir com inalador de pó.
+7. **Mapa de diagnóstico diferencial:** esquema próprio com três colunas — bronquiolite, asma recorrente, corpo estranho — orientado pela cronologia.
+8. **Avaliação de esforço respiratório:** registro clínico licenciado e não identificável de retrações e uso de músculos acessórios; só se houver autorização e privacidade garantidas.
+9. **Exacerbação:** fluxograma decisório autoral distinguindo crise leve, moderada, grave e ameaça à vida, sem replicar desenho da GINA.
+10. **Alta e autocuidado:** modelo autoral de plano escrito de ação com campos para orientações individualizadas, medicamentos prescritos e quando procurar urgência.
+
+**Gate:** para fotografias clínicas, radiografias, imagens de dispositivo ou material didático produzido por terceiros, identificar obra original, autorização/licença para uso comercial e veracidade clínica antes de cadastro. Diagramas próprios também exigem revisão médica. Proibir ilustrações anatômicas de aparência convincente mas conteúdo fisiológico errado.
+
+## 23. Auditoria de autossuficiência — tarefas que precisam ser aprovadas
+
+Não considerar esta apostila pronta apenas porque possui muitos caracteres. Um aluno deve conseguir explicar mecanismos, distinguir os principais diagnósticos, calcular VEF1, selecionar avaliação inicial, reconhecer crise grave, justificar terapia contendo CI por idade e decidir alta e seguimento **sem sair do material**. Para testar essa hipótese, criar uma bateria de questões representativas não redigidas pelos autores do corpo principal e apontar, para cada resposta correta, o parágrafo que a sustenta.
+
+**Lacunas clínicas que impedem publicação neste estágio:** quadro completo de apresentações disponíveis no Brasil e comparação com PCDT 2026; validação independente de todos os esquemas e máximos por idade; avaliação de gravidade pré-escolar por dados observacionais; farmacologia detalhada das combinações aprovadas; diferenciais de tosse e dispneia com exames dirigidos; inclusão de questões mais longas de decisão sequencial; documentação de imagens licenciadas; verificação formal de redundâncias e consistência entre capítulos; revisão por pediatra/pneumologista; e teste visual no site e no PWA.
+
+**Status:** manuscrito avançado, **em revisão**, ainda não aprovado nem integrado à biblioteca pública. O número bruto de caracteres Markdown não equivale automaticamente ao número de caracteres didáticos úteis.
