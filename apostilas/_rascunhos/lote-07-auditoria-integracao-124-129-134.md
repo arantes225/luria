@@ -118,3 +118,12 @@
 
 **Estado verificável:** os HTMLs foram alterados apenas na **branch**, a \`main\` mantém as versões originais. **NÃO HOUVE DEPLOY, MERGE, INTEGRAÇÃO DE IMAGENS, ALTERAÇÃO DE SUPABASE OU CERTIFICAÇÃO CLÍNICA.**
 
+
+
+### 15/10/2026 — ajuste de estilos após auditoria real dos links de CSS
+
+Após a integração estrutural foi detectado que os três HTMLs usam **templates diferentes**: SUA carrega \`apostila-renderer.css\`, Amenorreia carrega \`apostila-luria-book.css\` e SOMP tem CSS local; os três carregam \`education-ui-v2.css\`. Uma tentativa inicial de estilo restrita a \`apostila-luria-book.css\` foi **integralmente revertida**. Foi adicionada uma regra pequena, isolada pelo seletor \`.luria-mcq\`, em \`assets/css/education-ui-v2.css\` (52.875 → 54.749 caracteres), e a classe \`luria-lote07-case\` aos seis casos ampliados na página SUA. Isso corrige \`strong\` inline, alternativas A–D, espaçamento e \`details\` no PWA sem alterar componentes antigos fora do escopo.
+
+Os links dos três HTMLs para o CSS comum foram versionados para \`?v=2-lote07-20261015\` para evitar cache anterior quando uma publicação for autorizada. **Tamanhos HTML definitivos da branch após o ajuste:** SUA **84.839** caracteres; Amenorreia **121.188**; SOMP **66.583** — total **272.610**, ou **+34.038 caracteres brutos HTML** frente aos três originais. O CSS \`apostila-luria-book.css\` foi comparado à \`main\` e voltou ao **mesmo SHA original**.
+
+**Último refetch e verificação estática:** todos os 24 artigos \`luria-mcq\` possuem quatro \`<li>\`, um \`<details>\` ocultador de gabarito, IDs únicos; seis discussões de caso inseridas; tags \`section\`, \`article\`, \`details\` balanceadas nos três arquivos; e a versão de CSS apontada está presente no CSS comum da mesma branch. **Não foi executado browser real, teste visual/PWA, build npm nem revisão independente de farmacoterapia. Sem merge/deploy.**
