@@ -1,6 +1,6 @@
 {
   "status": "CURADORIA_PARCIAL_AGUARDANDO_ADMIN",
-  "license_review": "Páginas de origem e termos de licença localizados; exigir revisão editorial e verificação final de crédito, contexto clínico, arquivo real, conversão WebP de qualidade, proteção de dados, licenças BY-SA e aprovação no Admin antes da inserção.",
+  "license_review": "Páginas de origem e termos de licença localizados; exigir revisão editorial e verificação final de crédito, contexto clínico, arquivo real, conversão WebP de qualidade, proteção de dados, licenças BY-SA e aprovação no Admin antes da inserção. Catálogo ampliado a 10 imagens; há candidatos com o mesmo sinal/mesmo caso, selecionar por independência didática, não por número bruto.",
   "candidates": [
     {
       "id": "122-C01",
@@ -76,6 +76,39 @@
       "section": "15",
       "caption": "TC coronal: cratera ulcerosa ao longo da pequena curvatura gástrica com espessamento de parede, gás livre e coleção pélvica, conforme descrição da figura original.",
       "note": "Página indexada indica licença aberta do capítulo; ainda verificar imagem quanto a crédito de terceiros antes de uso.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C08",
+      "topic": "Sinal de Rigler em grande pneumoperitônio",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rigler_Zeichen_71jm_unklare_Perforation.jpg",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0",
+      "section": "9.2",
+      "caption": "Radiografia de abdome em decúbito dorsal: ar luminal e extraluminal desenha as duas faces da parede intestinal (sinal de Rigler).",
+      "note": "Comparar com imagem de ar subdiafragmático; a causa da perfuração não é determinada só pelo sinal.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C09",
+      "topic": "Sinal de Rigler mais ar sobre o fígado",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Rigler-Zeichen.jpg",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0",
+      "section": "9.2",
+      "caption": "Radiografia com pneumoperitônio e delineamento duplo da parede intestinal, permitindo revisão do sinal de Rigler e localização do ar.",
+      "note": "Possivelmente redundante com Rigler Zeichen; escolher o de maior legibilidade na curadoria final.",
+      "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
+    },
+    {
+      "id": "122-C10",
+      "topic": "Pneumoperitônio pós-operatório ilustrativo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Postoperatives_Pneumoperitoneum_32M_-_CR_-_001.jpg",
+      "creator": "Hellerhoff",
+      "license": "CC BY-SA 3.0 (rever versão e licença na página na aprovação final)",
+      "section": "7",
+      "caption": "Radiografia de pneumoperitônio no contexto pós-operatório; correlacionar com tempo desde cirurgia, sintomas, líquido e evolução para diferenciar ar residual de falha de sutura.",
+      "note": "Classificação de origem não confirma benignidade em todo pós-operatório.",
       "status": "CANDIDATA_NAO_APROVADA_NAO_INCORPORADA"
     }
   ],
