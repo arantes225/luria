@@ -180,3 +180,31 @@ node scripts/build-apostilas-batch.cjs --input apostilas/lotes/LOTE_02_INPUT_PRE
 7. Aprovação editorial explícita antes de merge ou deploy.
 
 **Estado: cinco entradas tecnicamente estruturadas, cinco obras ainda não certificadas, nenhuma publicação.**
+
+
+## Etapa 10 — preenchimento de lacunas clínicas e sincronização do JSON (14/10/2026)
+
+**Escopo:** a partir das edições contínuas do Lote 02, sem editar os rascunhos históricos ou o catálogo, foram identificadas lacunas reais em Asma, DPOC e Diabetes mellitus. Foram reabertos no Drive antes de editar: `Asma.pdf` e `Crise Asmática.pdf`; `DPOC estável.pdf`; `01 - DIABETES - CLASSIFICACAO, FISIOPATOLOGIA E DIAGNOSTICO DO DM.pdf`. Os PDFs de cursinho foram usados exclusivamente como comparação de cobertura; não há autoria institucional Estratégia MED comprovada. A validação clínica priorizou GINA 2026/CDC-NIOSH, Ministério da Saúde (Linha de Cuidado de DPOC) e ADA Standards 2026/consenso ADA-EASD 2024. Não foram reutilizadas imagens, tabelas ou trechos de fontes privadas ou protegidas.
+
+### Adições realizadas na **edição contínua** e no **JSON de pré-publicação**
+
+- **Asma (`asma-bronquica`):** capítulos de asma relacionada ao trabalho (diferença entre ocupacional e agravada pelo trabalho, anamnese e PFE seriado durante e fora da exposição), diagnóstico diferencial com obstrução laríngea induzível e condutas na gestação/puerpério; **casos 9–10 e questões 13–15**. Fonte: GINA 2026, https://ginasthma.org/2026-gina-strategy-report/ ; CDC/NIOSH, https://www.cdc.gov/niosh/asthma/hcp/diagnosing/index.html . Não usar material gráfico da GINA sem licença.
+- **DPOC (`dpoc`):** ODP com critérios fisiológicos em ar ambiente e estabilidade — PaO2 ≤55 mmHg/SaO2 ≤88%; PaO2 56–59 mmHg associada a cor pulmonale/policitemia; separação do encaminhamento com SpO2 <92%; orientação de avaliações repetidas, segurança de oxigênio, mMRC/CAT/BODE e teste de caminhada; **casos 13–14 e questões 17–19**. Fonte: Ministério da Saúde, https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-de-atencao-primaria/planejamento-terapeutico/ . A página mantém aspectos de classificação terapêutica antiga: **não extrapolá-los ao GOLD 2026**.
+- **Diabetes (`diabetes-mellitus`):** critérios 2024 de CAD/EHH, beta-hidroxibutirato, K <3,5 mmol/L antes de iniciar insulina IV, diferenciação entre glicose e resolução da cetose, transição IV→SC, metas ADA 2026 para idosos por estado funcional, plano de dias de doença e interpretação de CGM; **casos 11–12 e questões 17–20**. Fontes: https://doi.org/10.2337/dci24-0032 e https://doi.org/10.2337/dc26-s006 ; https://doi.org/10.2337/dc26-s013 . Detalhes hospitalares são educacionais e continuam dependentes de protocolo.
+
+### Auditoria cruzada de arquivos lidos de volta da branch
+
+| Livro | Edição contínua, caracteres Markdown brutos | Caracteres visíveis aproximados no JSON | Casos | Questões | Tabelas no JSON |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 78.862 | 75.595 | 10 | 15 | 8 |
+| DPOC | 82.949 | 79.369 | 14 | 19 | 6 |
+| Diabetes mellitus | 82.273 | 78.573 | 12 | 20 | 9 |
+| PAC adulto (sem mudança de conteúdo nesta etapa) | 68.748 | 65.321 | 12 | 18 | 8 |
+| Tuberculose (sem mudança de conteúdo nesta etapa) | 84.634 | 80.401 | 10 | 18 | 11 |
+| **Total** | **397.466** | **399.259** | **58** | **90** | **42** |
+
+As contagens são **brutas e heurísticas** (o JSON computa caracteres visíveis aproximados; o Markdown contém formatação e notas). Os cinco livros superam 60.000 caracteres em estimativa de texto, porém nenhum está **certificado** quanto à suficiência pedagógica ou à exatidão integral. Não confundir contagem de texto com aprovação editorial.
+
+**Consistência verificada no JSON:** cinco slugs exclusivos; 48 seções com IDs distintos em cada livro; novas seções e questões de Asma, DPOC e Diabetes presentes tanto no Markdown quanto no `LOTE_02_INPUT_PREPUBLICACAO.json`; 42 tabelas com tags de abertura/fechamento balanceadas; cinco arrays de imagens vazios. Nenhum arquivo `index.html` público novo foi criado. Foi feita validação programática do conteúdo pela leitura de volta do GitHub; **o script Node de preflight e o dry-run do gerador ainda não foram executados no checkout real**.
+
+**Limites ainda abertos:** revisão farmacológica por adulto/criança, gestação e função renal/hepática; revisão médica independente; imagem clínica licenciada e aprovada; referência adulta equivalente de PAC não encontrada no Drive; verificação manual de coerência e possíveis repetições semânticas; testes desktop/PWA; compatibilidade de saída com `content.json` compacto. **Status do lote: NÃO CERTIFICADO e NÃO PUBLICADO.**
