@@ -533,7 +533,7 @@ Dificuldades de transporte, trabalho incompatível com horário da unidade, mora
 
 Uma pessoa pode permanecer com bronquiectasias, obstrução crônica, fibrose ou restrição após cura microbiológica. Tosse residual, dispneia e intolerância ao exercício merecem investigação sem presumir automaticamente recidiva; por outro lado, reaparecimento de febre, emagrecimento ou nova positividade bacteriológica exige avaliação de TB recorrente e resistência. A função pulmonar, reabilitação e vacinação podem fazer parte do cuidado de sequelas. No tratamento resistente, seguir especificamente a recomendação de vigilância após a conclusão, inclusive sintomas de neuropatia e possível recidiva.
 
-### 7.4 Quadro de erros de interpretação que mudam o desfecho
+### 7.3.1 Quadro de erros de interpretação que mudam o desfecho
 
 | Erro | Mecanismo do problema | Raciocínio correto |
 | --- | --- | --- |
@@ -678,6 +678,62 @@ O Ministério da Saúde mantém, para TB **meningoencefálica e osteoarticular**
 **Fontes oficiais confrontadas:** Ministério da Saúde, *Tratamento da TB em crianças* (material de apoio às apresentações dispersíveis, quadros 1 e 2): https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf ; Ministério da Saúde, Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS (p. 1–3; duração abreviada e limites de elegibilidade): https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file . O quadro deste capítulo é uma **síntese textual original**, não reprodução visual do folheto. A prescrição operacional requer conferência da combinação fixa específica e do protocolo vigente da unidade.
 
 
+### 7.8 Tuberculose na gestação e no puerpério: diagnóstico, tratamento e cuidado do recém-nascido
+
+A tuberculose ativa durante a gestação é **doença tratável e não deve aguardar o parto para receber tratamento apropriado**. Atrasar a investigação porque a paciente está grávida pode agravar hipoxemia, desnutrição, transmissão domiciliar e complicações materno-fetais. Sintomas como cansaço e redução do apetite podem se confundir com manifestações gestacionais comuns, mas **tosse persistente, febre, emagrecimento, sudorese noturna ou contato bacilífero** exigem investigação clínica dirigida. A apresentação de TB em gestante vivendo com HIV pode ser paucibacilar ou disseminada.
+
+#### 7.8.1 Roteiro de investigação: a gravidez não torna o escarro dispensável
+
+1. **Definir risco epidemiológico e gravidade:** data dos sintomas, contato com TB, tratamento prévio, exposição em ambientes fechados, perda ponderal, capacidade respiratória, sinais vitais e oxigenação. Tosse, hemoptise, hipoxemia ou sintomas sistêmicos em gestante não devem ser banalizados.
+2. **Colher material apropriado:** TRM-TB em escarro, cultura e teste de sensibilidade nos fluxos do SUS; se o escarro é escasso, discutir indução/coleta alternativa conforme ambiente e segurança. Baciloscopia ou teste molecular negativo **não excluem TB ativa** em toda circunstância, sobretudo doença extrapulmonar ou imunossupressão.
+3. **Realizar imagem quando indicada:** radiografia torácica pode ter papel importante, com técnica e proteção radiológica apropriadas segundo protocolo. O risco de deixar de investigar doença relevante pode superar a baixa exposição da radiografia quando corretamente indicada. Não prometer ausência absoluta de radiação nem proibir exames necessários por causa da gestação.
+4. **Pesquisar coinfecção e outros diagnósticos:** ofertar testagem de HIV, examinar possibilidade de pneumonia comum, tromboembolismo, insuficiência cardíaca e outras infecções conforme quadro. Gestante com comprometimento de consciência ou respiratório precisa de avaliação hospitalar imediata.
+5. **Distinguir doença ativa de infecção latente:** PT/IGRA não substituem investigação de doença sintomática. Em gestante assintomática com contato ou teste imune positivo, a avaliação de tratamento preventivo segue **critérios próprios**, levando em conta tempo gestacional, HIV, risco de progressão e disponibilidade do esquema.
+
+**Armadilha:** radiografia normal ou TRM negativo isolado não tornam seguro chamar a síndrome de “somente ansiedade gestacional” em pessoa com sintomas relevantes, contato epidemiológico forte ou imunodeficiência.
+
+#### 7.8.2 TB ativa sensível: por que o esquema básico não é interrompido automaticamente?
+
+O **Manual de Gestação de Alto Risco do Ministério da Saúde (2022)** orienta para tuberculose sensível elegível o esquema básico **2RHZE/4RH**, com comprimidos de combinação fixa e doses por peso conforme protocolos: fase intensiva de dois meses com **rifampicina, isoniazida, pirazinamida e etambutol**; seguida de quatro meses com **rifampicina e isoniazida**. Não aplicar automaticamente a duração de seis meses a meningite tuberculosa, TB osteoarticular, resistência ou outras formas que exigem esquema específico. O risco de manter TB ativa sem tratamento é clinicamente relevante para mãe e criança.
+
+**Piridoxina:** o mesmo manual recomenda **vitamina B6 50 mg ao dia** durante o tratamento com isoniazida na gestação, para reduzir risco de neurotoxicidade. O aluno precisa saber por que ela entra no plano, mas não deve confundir **piridoxina** com substituição da isoniazida, nem prescrevê-la como solução para sintomas de hepatite ou déficit neurológico novo que requer investigação.
+
+| Decisão | Conduta geral sustentada pelo manual brasileiro | Cuidado indispensável |
+| --- | --- | --- |
+| TB pulmonar sensível sem critério de esquema especial | Considerar 2RHZE/4RH, conforme peso e avaliação do SUS | Resistência, adesão, gestação de alto risco e comorbidades podem mudar o plano |
+| Sintomas de hepatite durante RHZE | Investigar clinicamente e laboratorialmente sem atraso | Não atribuir icterícia à cor alaranjada esperada da rifampicina |
+| Uso de isoniazida durante gestação | Associar piridoxina conforme protocolo nacional | Parestesias ou fraqueza nova não devem ser ignoradas |
+| Coinfecção HIV | Coordenar TB, TARV e pré-natal especializado | Rifampicina interage com antirretrovirais; não dobrar empiricamente toda TARV |
+| Suspeita de TB resistente | Encaminhar com urgência a serviço habilitado e ampliar investigação microbiológica | Regimes curtos BPaL/BPaLM **não** são alternativas automáticas na gestação |
+| Alterações hepáticas prévias, desnutrição, etilismo ou polifarmácia | Individualizar monitorização e avaliar causas concorrentes | A vigilância laboratorial tem de gerar reavaliação e decisão, não ser coleta sem retorno |
+
+O manual de gestação de alto risco sugere **monitorização mais estreita da função hepática, hemograma e crescimento fetal** em cenários apropriados; há recomendação de avaliação seriada de enzimas hepáticas e do crescimento fetal durante acompanhamento de alto risco. A cadência concreta de exames depende de risco basal, trimestre, evolução, recursos e plano conjunto da obstetrícia e do serviço de TB. A existência de uma tabela de doses para adultos **não substitui** adaptação quando há disfunção renal/hepática importante.
+
+#### 7.8.3 Pré-natal, parto e puerpério: transmissão aérea não significa proibir todo contato materno
+
+A principal via de transmissão é a **aérea**, em especial quando há TB pulmonar ou laríngea transmissível. O risco ao recém-nascido depende do estado clínico e microbiológico materno, tempo de tratamento efetivo, proximidade, ventilação e existência de doença congênita ou adquirida. Definir precauções respiratórias com equipe obstétrica, controle de infecção, pediatria e programa de TB; não impor isolamento familiar indefinido nem negar cuidados essenciais sem avaliação.
+
+**Amamentação:** o manual brasileiro considera, em geral, o aleitamento possível sob precauções apropriadas; recomenda medidas respiratórias quando a mãe segue potencialmente transmissível. **Mastite tuberculosa** exige avaliação específica, e a mama comprometida pode representar contraindicação ao aleitamento direto conforme protocolo. Não confundir contraindicação ligada à doença localizada na mama com contraindicação universal de todo aleitamento por uso do esquema básico.
+
+**Parto:** TB isolada não estabelece cesariana obrigatória; o modo de parto decorre de condições obstétricas e gravidade materna. Informar a maternidade com antecedência sobre necessidade de precauções e avaliação neonatal evita que o diagnóstico só seja discutido após a alta.
+
+**Recém-nascido exposto:** criança que coabita com caso índice bacilífero precisa de **avaliação pediátrica própria antes de prevenção**, excluindo doença ativa ou TB congênita quando indicada. O Manual de Controle da TB (2ª edição) descreve fluxo específico de quimioprofilaxia primária para recém-nascido exposto, reavaliação imunológica e decisão sobre BCG; **não aplicar BCG e profilaxia simultaneamente de modo automático sem verificar fluxo vigente da unidade**. Uma avaliação neonatal clínica não substitui investigação de contatos domiciliares, e o calendário deve seguir o PNI atualizado.
+
+#### 7.8.4 O que muda no seguimento e na prova
+
+**Primeira consulta após diagnóstico:** confirmar escarro e resistência; estabelecer esquema, peso/apresentação e piridoxina; aferir gravidade e comorbidades; ofertar HIV; discutir adesão e prevenção de transmissão. **Durante tratamento:** perguntar por náusea importante, anorexia, icterícia, prurido, parestesias, alterações visuais e faltas à medicação; reavaliar peso, exames, microbiologia e crescimento fetal conforme plano. **Ao se aproximar do parto:** articular maternidade, precauções, possibilidade de transmissão e avaliação do recém-nascido; não esperar puerpério para organizar cuidados. **Após alta:** garantir seguimento de mãe e bebê, continuidade da terapia até conclusão e apoio social; evitar interrupção porque a tosse melhorou.
+
+**Pérolas de prova:**
+- A gestação **não transforma TB ativa sensível em doença observacional**: tratar oportunamente é fundamental.
+- Gestante com TB sensível elegível recebe esquema básico nacional; **piridoxina 50 mg/dia** aparece no manual de gestação de alto risco com a isoniazida.
+- **Rifampicina e antirretrovirais** exigem checagem de interações. TB/HIV e gestação são decisões simultâneas, não problemas independentes.
+- **BPaL/BPaLM não é escolha rotineira** para gestantes ou lactantes com TB resistente; a Nota Informativa nº 2/2026 exclui essas populações dos esquemas curtos especificados, exigindo serviço de referência.
+- **Amamentar e avaliar TB no recém-nascido** não são alternativas mutuamente exclusivas: a decisão é individualizada por transmissão, presença de mastite tuberculosa e protocolo de prevenção.
+- O plano precisa considerar **duas pessoas e a rede de cuidado**: paciente, bebê, domicílio, maternidade, APS e programa de TB.
+
+**Fontes normativas:** Ministério da Saúde, *Manual de Gestação de Alto Risco* (2022), capítulo 30.4–30.5, https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf ; Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, 2ª edição, capítulo de prevenção em recém-nascidos e anexo de segurança na gestação, https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view ; Ministério da Saúde, *Tratamento da Tuberculose*, atualização 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Nota Informativa nº 2/2026 para TB resistente, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file . O tratamento preventivo da infecção latente na gestação e do recém-nascido exige confirmação dos protocolos atuais de elegibilidade e de apresentações locais antes da prescrição.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
@@ -777,6 +833,13 @@ Menino de seis anos, 15 kg na primeira consulta, TB pulmonar sensível não grav
 ### Caso 18 — Contato infantil com HIV: prevenção não é tratar doença ativa
 
 Menina de oito anos vivendo com HIV usa terapia antirretroviral e foi exposta ao avô com TB pulmonar. Não apresenta sintomas, mas necessita investigação para excluir doença ativa e avaliar ILTB. A família pergunta se pode iniciar por conta própria “os comprimidos RH que sobraram” de outro parente. **Hipóteses:** exposição com risco de infecção latente; TB ativa deve ser descartada por avaliação clínica/imagem/microbiologia quando indicada. **Raciocínio:** a apresentação dispersível RH 75/50 mg pode existir em prevenção e manutenção de doença ativa, porém **a indicação, número de doses e interações são diferentes**. Rifampicina pode interagir de modo clinicamente importante com determinados antirretrovirais, e a Nota 6/2024 limita o uso de 3RH em diversos esquemas. **Exames:** avaliação clínica completa, exames de infecção e doença conforme protocolo, informações do caso-fonte/resistência, revisão da TARV. **Conduta:** encaminhar decisão de tratamento preventivo ao serviço HIV/TB pediátrico; não administrar sobras de RH, definir esquema e adesão, acompanhar sinais de doença. **Por que importa:** a coincidência dos nomes R e H não torna tratamento preventivo e tratamento da doença ativos intercambiáveis.
+
+
+### Caso 19 — Tuberculose na gestação e preparação do cuidado neonatal
+
+Gestante de 27 anos, com 24 semanas de gravidez, procura pré-natal por tosse há cinco semanas, sudorese noturna e emagrecimento. Mora com pessoa que teve TB pulmonar bacilífera. Radiografia indicada por suspeita clínica mostra infiltrado apical; TRM-TB em escarro detecta Mycobacterium tuberculosis, **sem resistência à rifampicina identificada**. Está hemodinamicamente estável e sem sinais de doença disseminada.
+
+**Hipótese:** TB pulmonar ativa provável, com necessidade de verificar fluxo de cultura/TS, coinfecção HIV e condições obstétricas. **Raciocínio:** a gestação não justifica adiar tratamento de doença ativa; o resultado molecular não garante sensibilidade a todos os fármacos. Avaliar apresentação por peso, risco hepático, sintomas de toxicidade e adesão. **Exames:** cultura e teste de sensibilidade quando previstos, HIV, função hepática e outros exames segundo risco, evolução clínica e avaliação fetal pela obstetrícia. **Conduta:** organizar esquema básico de TB sensível quando confirmado como apropriado, **associando piridoxina 50 mg/dia conforme manual brasileiro**; oferecer TDO pactuado, ventilação e orientações de redução de transmissão, além de planejar avaliação do recém-nascido e cuidados no parto. **Por que importa:** o tratamento da mãe, a proteção do bebê e o controle do ambiente são partes de uma mesma linha de cuidado.
 
 
 ## 9. Questões autorais comentadas
@@ -1022,6 +1085,21 @@ C) Basta ter cicatriz de BCG para não precisar investigar contato ou ILTB.
 D) Uma pessoa com HIV pode sempre usar rifampicina sem verificar TARV.
 
 **Gabarito: B.** O 3RH preventivo tem indicação e calendário distintos do tratamento da doença. **A:** ignora que RHZ é parte da fase inicial da TB ativa. **C:** BCG não exclui infecção nem doença. **D:** interações rifampicina–antirretrovirais podem alterar substancialmente a escolha. **Mini-revisão:** prevenir infecção e tratar doença ativa exigem decisões diferentes mesmo quando compartilham componentes farmacológicos.
+
+
+### Questão 29 — Tuberculose sensível durante a gravidez
+
+Gestante com TB pulmonar ativa sensível, sem critérios de tratamento especial ou contraindicações relevantes, procura a UBS com receio de iniciar medicamentos. De acordo com o Manual de Gestação de Alto Risco do Ministério da Saúde, qual afirmação é mais adequada?
+
+A) Deve aguardar o parto para iniciar terapia antimicobacteriana.
+
+B) O esquema básico RHZE seguido de RH pode ser indicado após avaliação, com piridoxina associada à isoniazida e acompanhamento obstétrico.
+
+C) A gestação exige trocar todo esquema sensível pelo BPaLM.
+
+D) A suspeita de TB no pré-natal torna todos os exames radiológicos proibidos.
+
+**Gabarito: B.** A doença ativa precisa de tratamento oportuno; o manual brasileiro descreve o esquema básico e recomenda piridoxina durante a gestação. **A:** expõe mãe e feto à evolução de doença não tratada. **C:** BPaLM não é alternativa automática e há exclusões expressas para gestantes na nota ministerial de TB-DR de 2026. **D:** exames indicados podem ser realizados com medidas radiológicas adequadas; evitar diagnóstico pode ser mais danoso. **Mini-revisão:** gestação muda a vigilância, mas não elimina tratamento da TB ativa.
 
 
 ## Referências essenciais
