@@ -1,8 +1,8 @@
-# LURIA — 12 imagens candidatas de Arritmias e Fibrilação Atrial
+# LURIA — 16 imagens candidatas de Arritmias e Fibrilação Atrial
 **Data:** 14/10/2026. **Tema 016/225, Lote 1 oficial.** **Apostila:** `apostilas/arritmias-fibrilacao-atrial/content.json`. **PR #37:** aberto em rascunho.
 
 ## Seleção documental inicial
-Esta lista contém **12 obras individuais, não 12 imagens incorporadas ou aprovadas**. Suas páginas de origem no Wikimedia Commons foram localizadas e a licença publicada em cada ficha foi consultada preliminarmente. As licenças e a identidade do autor devem ser **reconferidas individualmente no momento do uso**, inclusive créditos de derivados. Algumas obras representam exatamente o mesmo ECG com formato diferente, e devem ser deduplicadas pela equipe editorial. A curadoria privilegia ECGs reais de FA, flutter, pré-excitação, TV e torsades, essenciais para a leitura clínica.
+Esta lista contém **16 obras individuais, não 16 imagens incorporadas ou aprovadas**. Suas páginas de origem no Wikimedia Commons foram localizadas e a licença publicada em cada ficha foi consultada preliminarmente. As licenças e a identidade do autor devem ser **reconferidas individualmente no momento do uso**, inclusive créditos de derivados. Algumas obras representam exatamente o mesmo ECG com formato diferente, e devem ser deduplicadas pela equipe editorial. A curadoria privilegia ECGs reais de FA, flutter, pré-excitação, TV e torsades, essenciais para a leitura clínica.
 
 | Obra | Origem verificável | Crédito inicial | Licença declarada | Uso didático planejado | Prioridade |
 |---|---|---|---|---|---|
@@ -19,13 +19,20 @@ Esta lista contém **12 obras individuais, não 12 imagens incorporadas ou aprov
 | Holter com flutter e retorno sinusal | [Ver arquivo](https://commons.wikimedia.org/wiki/File:Holter_AtrialFlutter.jpg) | J. Heuser | CC BY-SA 3.0; opção GFDL | Interpretação de arritmia paroxística e documentação dinâmica | Alta |
 | Flutter esquemático curto | [Ver arquivo](https://commons.wikimedia.org/wiki/File:Atrial_Flutter.svg) | Rocuronium Bromide | CC0 1.0 | Ensino básico de ondas F, apenas se não redundante com ECG real | Média |
 
+| BAV total — ECG real de terceiro grau | [Ver arquivo](https://commons.wikimedia.org/wiki/File:CompleteHeartBlock.jpg) | James Heilman, MD | CC BY-SA 3.0, obra própria | Identificar dissociação AV e ritmo de escape | Alta |
+| Bloqueio 2:1 comparado ao Mobitz II no mesmo paciente | [Ver arquivo](https://commons.wikimedia.org/wiki/File:E000738_(CardioNetworks_ECGpedia).jpg) | Michael Rosengarten, MD / CardioNetworks ECGpedia; permissão VRT | CC BY-SA 3.0 (VRT confirmada) | Demonstrar que o 2:1 isolado não distingue Mobitz I de II; inferior identifica PR constante | Muito alta |
+| Wenckebach — gráfico de bloqueio AV | [Ver arquivo](https://commons.wikimedia.org/wiki/File:De-Wenckebach_(CardioNetworks_ECGpedia).png) | CardioNetworks / ECGpedia, licença VRT | CC BY-SA 3.0 (VRT confirmada) | Progressão de PR e falha de condução; comparação com Mobitz II | Alta |
+| Mobitz II — traçado vetorial didático | [Ver arquivo](https://commons.wikimedia.org/wiki/File:2nd_Degree_AV_Block_(Mobitz_II).svg) | Rocuronium Bromide | CC0 1.0 | P não conduzida sem prolongamento progressivo de PR; comparar com traçado real | Média, diagrama e não ECG de paciente |
+## Ampliação de bradicardias — conferência documental
+As quatro candidatas adicionais foram conferidas individualmente nas páginas do Commons no ciclo de 14/10/2026. A imagem CardioNetworks E000738 possui permissão VRT identificada e é a mais didática para explicar a diferença entre BAV 2:1 isolado e Mobitz II demonstrado em outro segmento. A imagem de Wenckebach da mesma instituição também tem permissão VRT. A imagem de bloqueio completo é fotografia de ECG de James Heilman e o Mobitz II vetorial é CC0; ainda exigem revisão eletrocardiográfica e legenda, não foram aprovadas nem incorporadas.
+
 ## Gate obrigatório antes de incorporar
 1. **Validação clínica:** cardiologista/eletrofisiologista deve confirmar diagnóstico do traçado, ganho 10 mm/mV e velocidade, duração de QRS, intervalos RR, ondas P/F e status de pré-excitação. Não presumir que ECG com onda delta em ritmo sinusal representa FA pré-excitada: ele apenas demonstra via acessória manifesta.
 2. **Licença/autoria:** documentar autor e modificações. Obras CC BY-SA exigem atribuição e preservação dos termos para a imagem adaptada. Para ECGs históricos/derivados, verificar autor original e quem vetorizou; não atribuir erroneamente criação clínica apenas ao uploader.
 3. **Material real vs esquema:** marcar no texto quando se trata de diagrama didático ou ECG original, e preferir exames reais nos exercícios de reconhecimento.
 4. **Fidelidade visual:** WebP responsivo após aprovação; alvo de ≤120 kB para ECG, preservando pontos finos da onda delta, ondas F e RR; não cumprir peso em detrimento da escala.
 5. **Privacidade:** nenhum nome, número de prontuário ou informação identificadora de pacientes; remover metadados de geolocalização/EXIF e confirmar que a licença autoral não elimina eventuais direitos de privacidade.
-6. **Fluxo LURIA:** registrar capítulo, legenda original autoral, tamanho, fonte, licença e avaliador no **Admin Aprovar**. Selecionar as melhores (não há obrigação de usar as 12) e testar zoom legível no desktop e PWA.
+6. **Fluxo LURIA:** registrar capítulo, legenda original autoral, tamanho, fonte, licença e avaliador no **Admin Aprovar**. Selecionar as melhores (não há obrigação de usar as 16) e testar zoom legível no desktop e PWA.
 
 ## Propostas de legendas sujeitas à revisão
 - **FA:** 'Observe RR irregularmente irregular e a ausência de ondas P sinusais reprodutíveis; artefato e extrassístoles podem simular.'
@@ -34,4 +41,4 @@ Esta lista contém **12 obras individuais, não 12 imagens incorporadas ou aprov
 - **TV:** 'Considere origem ventricular em QRS largo regular, especialmente com cardiopatia estrutural, antes de administrar bloqueadores nodais.'
 - **Torsades:** 'TV polimórfica de contexto de QT prolongado: em instabilidade, a descarga pode não ser sincronizável.'
 
-**Estado:** 12 candidatas, zero baixadas/convertidas, zero aprovadas, zero inseridas no conteúdo, sem publicação.
+**Estado:** 16 candidatas, zero baixadas/convertidas, zero aprovadas, zero inseridas no conteúdo, sem publicação.
