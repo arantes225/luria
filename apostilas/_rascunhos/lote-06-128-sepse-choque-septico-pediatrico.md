@@ -572,3 +572,166 @@ A recuperação envolve alimentação, sono, força, comportamento, deambulaçã
 
 **Conduta:** suporte hemodinâmico/respiratório, reavaliar atividade antibiótica e **avaliar drenagem pleural** com cirurgia/UTIP/medicina intervencionista conforme tamanho, loculação, gravidade e recursos. A equipe define necessidade de drenagem, fibrinolítico ou procedimento adicional; a recuperação deve incluir reavaliação de função pulmonar e nutrição. **Por que importa:** controlar a fonte pode ser mais importante que ampliar indiscriminadamente o antibiótico.
 
+
+
+## 33. Doze questões autorais comentadas — ENAMED e residência
+
+### Questão 1 — Critérios Phoenix versus SIRS
+
+Criança de cinco anos com infecção suspeita tem disfunção respiratória e cardiovascular suficientes para **Phoenix Sepsis Score = 3**. Qual afirmação está correta?
+
+A) Sepse pediátrica exige somente febre e leucocitose, mesmo sem disfunção.  
+B) Os critérios Phoenix 2024 definem sepse com infecção suspeita e escore ≥2; choque séptico requer ainda ≥1 ponto cardiovascular.  
+C) O escore Phoenix usa apenas PAM 65 mmHg do adulto.  
+D) Antibioticoterapia deve esperar todos os exames para calcular escore.
+
+**Gabarito: B.** **A:** resposta inflamatória inespecífica não substitui disfunção de órgãos. **B:** definição do consenso 2024. **C:** critérios cardiovasculares consideram idade, vasoativos e lactato, não um único corte adulto. **D:** critérios não são barreira para cuidado urgente. **Mini-revisão:** Phoenix define e classifica disfunção; choque clínico pode demandar tratamento antes do cálculo completo.
+
+### Questão 2 — Choque compensado
+
+Lactente com febre, prostração, TEC de cinco segundos, pulsos periféricos finos, oligúria e PA preservada para a idade. Qual interpretação é mais adequada?
+
+A) Hipotensão é obrigatória para reconhecer choque.  
+B) O quadro é compatível com hipoperfusão/choque compensado; avaliação e tratamento são urgentes.  
+C) TEC nunca se altera por perfusão.  
+D) Pressão normal exclui risco de deterioração.
+
+**Gabarito: B.** **A e D:** hipotensão é frequentemente tardia na infância. **B:** perfusão e consciência são fundamentais. **C:** TEC é sinal útil embora influenciado por temperatura e técnica. **Mini-revisão:** o estudante não deve esperar PA cair para reconhecer má perfusão.
+
+### Questão 3 — Antibiótico no choque pediátrico
+
+Em criança com choque séptico suspeito, após reconhecer deterioração e obter acesso, qual conduta corresponde à SSC 2026?
+
+A) Iniciar antibiótico o mais rápido possível, idealmente em até uma hora, sem atrasar por culturas difíceis.  
+B) Esperar obrigatoriamente 72 horas por hemocultura positiva.  
+C) Utilizar antibiótico apenas quando Phoenix atingir 10 pontos.  
+D) Administrar apenas antitérmico até encontrar bactéria.
+
+**Gabarito: A.** **A:** recomendação de tempo para choque. **B:** atraso pode agravar falência orgânica. **C:** Phoenix não substitui julgamento precoce nem exige escore extremo. **D:** antitérmico não trata infecção bacteriana invasiva. **Mini-revisão:** o prazo de até três horas pertence à sepse provável **sem choque**, após avaliação rápida e se suspeita persiste.
+
+### Questão 4 — Volume com disponibilidade de UTI
+
+Criança de **15 kg** com choque séptico em hospital com UTIP recebe indicação de primeiro bolus de **10 mL/kg** e reavaliação. Qual volume corresponde ao bolus?
+
+A) 15 mL.  
+B) 150 mL.  
+C) 600 mL obrigatórios.  
+D) 900 mL de uma única vez.
+
+**Gabarito: B.** **A:** confundiu peso e volume. **B:** 15 × 10 = 150 mL. **C:** 40 mL/kg seria 600 mL, mas não é primeiro bolus obrigatório. **D:** 60 mL/kg seria 900 mL, teto possível de estratégia selecionada, nunca infusão única universal. **Mini-revisão:** bolos de 10–20 mL/kg, reavaliados, podem totalizar **até** 40–60 mL/kg na primeira hora em serviço com UTI, interrompendo na resolução ou sobrecarga.
+
+### Questão 5 — Serviço sem UTI e sem hipotensão
+
+Criança com sepse provável, sem hipotensão, é avaliada em sistema de saúde **sem disponibilidade de UTI**. Segundo SSC 2026, qual estratégia geral de fluido?
+
+A) Bolos automáticos até 60 mL/kg em toda infecção.  
+B) Não administrar bolos de rotina, iniciando fluidos de manutenção e manejo clínico adequado.  
+C) Usar albumina 20% como primeiro bolus obrigatório.  
+D) Infundir 100 mL/kg antes de investigar foco.
+
+**Gabarito: B.** **A e D:** riscos aumentam sem suporte intensivo; a recomendação depende de hipotensão e recursos. **B:** recomendação forte da SSC 2026 nesse cenário. **C:** cristaloide é preferido na reposição inicial quando indicada. **Mini-revisão:** sem UTI **com choque hipotensivo** a recomendação é diferente: considerar até 40 mL/kg em bolos de 10–20 mL/kg com reavaliação.
+
+### Questão 6 — Congestão após bolo
+
+Criança com choque recebe cristaloide e evolui com estertores, hepatomegalia nova e maior necessidade de oxigênio, sem recuperar perfusão. A melhor decisão é:
+
+A) Continuar bolos até atingir 60 mL/kg, independentemente de congestão.  
+B) Interromper novos bolos, reavaliar função cardíaca/tolerância e considerar terapia vasoativa e UTIP.  
+C) Ignorar saturação porque a pressão está baixa.  
+D) Descartar miocardite por existir febre.
+
+**Gabarito: B.** **A:** recomendações exigem cessar fluidos na sobrecarga. **B:** sinais sugerem intolerância; é necessário redirecionar estratégia. **C:** deterioração pulmonar ameaça oxigenação. **D:** miocardite pode ser febril e coexistir com sepse. **Mini-revisão:** fluidorresponsividade e fluidotolerância são perguntas distintas.
+
+### Questão 7 — Vasopressor de primeira linha na SSC 2026
+
+Qual afirmação melhor descreve a evidência para escolha inicial do vasoativo no choque séptico pediátrico?
+
+A) Noradrenalina é obrigatória em todos os bebês, independentemente da função cardíaca.  
+B) Adrenalina deve ser sempre evitada em criança.  
+C) A SSC 2026 considera insuficiente a evidência para preferir universalmente epinefrina ou norepinefrina; a escolha depende de fisiologia e avaliação individual.  
+D) É proibido iniciar vasoativo até haver cateter central.
+
+**Gabarito: C.** **A e B:** preferências absolutas não são sustentadas na atualização de 2026. **C:** expressa a incerteza real e a individualização. **D:** acesso periférico monitorado é opção para evitar atrasos, conforme diretriz. **Mini-revisão:** fenótipo frio/quente ajuda raciocínio, mas não substitui análise hemodinâmica.
+
+### Questão 8 — Púrpura fulminante sem meningismo
+
+Escolar com febre, rápido aparecimento de manchas não branqueáveis, prostração, TEC prolongado e hipotensão, mas sem rigidez de nuca. Qual conduta?
+
+A) Descartar meningococcemia pela ausência de meningismo.  
+B) Tratar como emergência com suspeita de doença meningocócica invasiva, antibiótico ativo imediato e suporte, sem aguardar LP em choque.  
+C) Liberar se teste do copo não for feito.  
+D) Realizar punção lombar obrigatoriamente antes do primeiro antibiótico, mesmo em instabilidade.
+
+**Gabarito: B.** **A:** doença meningocócica pode ocorrer sem meningite clássica. **B:** prioridade é tratamento e suporte de choque. **C:** exame de rash não substitui gravidade. **D:** instabilidade pode tornar LP insegura e atrasar terapêutica. **Mini-revisão:** meningococcemia pode evoluir em horas; notificação e profilaxia dos contatos elegíveis entram após ações emergenciais.
+
+### Questão 9 — Hidrocortisona em choque
+
+Criança com choque séptico recupera estabilidade após fluidos e vasoativo. Qual afirmação é compatível com SSC 2026?
+
+A) Hidrocortisona IV deve ser dada rotineiramente a todos os pacientes estabilizados.  
+B) A diretriz sugere contra hidrocortisona rotineira quando a estabilidade é restaurada; insuficiência adrenal suspeita/documentada é exceção com tratamento específico.  
+C) Lactato alto comprova insuficiência adrenal.  
+D) Corticoide substitui antibiótico quando a cultura é negativa.
+
+**Gabarito: B.** **A:** não é conduta de rotina recomendada. **B:** ressalva a incerteza do choque refratário e a indicação adrenal específica. **C:** lactato é inespecífico. **D:** terapia hormonal não substitui tratamento de infecção. **Mini-revisão:** no choque refratário sem insuficiência adrenal, a evidência não define recomendação universal a favor/contra corticoide.
+
+### Questão 10 — Empiema e controle de fonte
+
+Criança com pneumonia bacteriana recebendo antibiótico sensível desenvolve sepse e coleção pleural purulenta complexa. O próximo passo essencial é:
+
+A) Trocar antibiótico repetidamente sem avaliar a coleção.  
+B) Avaliar drenagem/controle de fonte por equipe especializada junto ao suporte e antibiótico.  
+C) Dar alta porque cultura já mostrou bactéria suscetível.  
+D) Parar suporte respiratório para não "mascarar" a gravidade.
+
+**Gabarito: B.** **A:** antibiótico sozinho pode não controlar foco fechado. **B:** source control complementa terapia sistêmica. **C:** deterioração e coleção exigem reavaliação. **D:** suporte respiratório permanece conforme necessidade. **Mini-revisão:** abscesso, empiema e necrose requerem considerar intervenção anatômica.
+
+### Questão 11 — Lactente jovem sem febre alta
+
+Recém-nascido de 12 dias apresenta hipotermia, apneia, recusa alimentar e perfusão ruim. Qual interpretação está correta?
+
+A) Sepse neonatal exige febre alta.  
+B) O quadro pode representar infecção invasiva/neonatal ou outra emergência; exige avaliação imediata, com protocolo próprio e diferenciais metabólicos/cardíacos.  
+C) Deve receber dose adulta de antibiótico por via oral e voltar para casa.  
+D) Teste de urina por saco positivo dispensa avaliação adicional.
+
+**Gabarito: B.** **A:** recém-nascidos podem manifestar hipotermia. **B:** apresentação grave exige abordagem neonatal urgente. **C:** dose e via são específicas por idade, organismo e função renal. **D:** cultura por saco é contaminável e não substitui investigação. **Mini-revisão:** idade neonatal modifica patógenos, investigação, terapêutica e local de cuidado.
+
+### Questão 12 — Diferencial dengue versus sepse bacteriana
+
+Menina em área com dengue apresenta choque na defervescência, dor abdominal persistente, aumento de hematócrito e queda plaquetária. Qual interpretação é a mais segura?
+
+A) É obrigatoriamente choque séptico bacteriano e deve receber 60 mL/kg sem reavaliar.  
+B) Dengue grave por extravasamento é hipótese importante e requer protocolo hídrico específico e monitorização; coinfecção deve ser considerada conforme contexto.  
+C) A melhora da febre afasta gravidade.  
+D) Plaquetas reduzidas sempre exigem transfusão profilática imediata sem avaliar sangramento.
+
+**Gabarito: B.** **A:** fisiopatologia e algoritmo de dengue não devem ser confundidos com sepse bacteriana. **B:** contempla fase crítica, monitorização e diferencial. **C:** choque pode emergir quando a febre cai. **D:** transfusão deve seguir indicação e contexto, não número isolado. **Mini-revisão:** em áreas endêmicas, epidemiologia muda hipótese, mas não dispensa reanimação e busca de infecção concomitante.
+
+## 34. Referências de evidência e validação (2024–2026)
+
+1. **SCCM / ESICM, Weiss SL et al.** Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children, **2026**. Publicada em 23/03/2026. *Intensive Care Medicine*, 52:937–983. DOI 10.1007/s00134-026-08360-2. https://doi.org/10.1007/s00134-026-08360-2 .
+2. **SCCM — página oficial com recomendações item a item da SSC 2026:** https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in .
+3. **Schlapbach LJ et al.** International Consensus Criteria for Pediatric Sepsis and Septic Shock. *JAMA*. 2024;331:665–674. DOI 10.1001/jama.2024.0179. https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/ .
+4. **Sanchez-Pinto LN et al.** Development and Validation of the Phoenix Criteria for Pediatric Sepsis and Septic Shock. *JAMA*. 2024. DOI 10.1001/jama.2024.0196. https://doi.org/10.1001/jama.2024.0196 .
+5. **SCCM SSC pediátrica 2020:** documento histórico para comparação, **não a atualização mais recente**. https://pmc.ncbi.nlm.nih.gov/articles/PMC7095013/ .
+6. **Ministério da Saúde — publicações de dengue e manejo clínico:** verificar versão vigente e classificação pediátrica no portal oficial, pois o manejo de extravasamento/plasma na dengue difere de sepse bacteriana. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue .
+7. **Ministério da Saúde — saúde da criança e orientações clínicas:** referência institucional e de rede; não atribuir doses de SSC às normas nacionais sem confirmação. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca .
+8. **Sociedade Brasileira de Pediatria (SBP):** documentos e recomendações em emergências e terapia intensiva pediátrica, a verificar em sua versão específica antes de prescrição. https://www.sbp.com.br/ .
+9. **Pediatric Acute Lung Injury Consensus Conference (PALICC-2), 2023:** definições e suporte da síndrome de desconforto respiratório pediátrica; verificar documentos de sociedade aplicáveis no momento de manejar PARDS. https://pubmed.ncbi.nlm.nih.gov/36622521/ .
+
+**Nota bibliográfica:** as diretrizes internacionais descrevem opções e qualidade da evidência, mas não substituem os protocolos e bulários pediátricos brasileiros. Nenhum valor de dose de antimicrobiano ou bomba de vasopressor deve ser transferido ao paciente sem verificação do medicamento, concentração, peso, faixa etária e função renal.
+
+## 35. Auditoria interna e gates
+
+- [x] Auditoria de temas existentes e escopo próprio de Pediatria.
+- [x] Benchmark de materiais do Drive realmente abertos, mas **não equivalente em autoria/abrangência**.
+- [x] Atualização explícita da SSC 2026 e Phoenix 2024.
+- [x] Corpo didático com fisiologia, síndrome, diagnóstico, diferencial, antibiótico, fluido, vasoativos, complicações e populações especiais.
+- [x] Oito casos clínicos e doze questões com análise de todas as alternativas.
+- [ ] Revisão pediátrica/UTIP especializada de todas afirmações e exceções, sobretudo metas de oxigênio, critérios Phoenix completos, neonatos, dengue, fluidos, antibióticos e efeitos de fármacos.
+- [ ] Certificação de ≥60 mil caracteres **instrucionais úteis únicos**, descontando casos/questões/referências e possíveis redundâncias.
+- [ ] Matriz de cobertura das 12 questões sem ler gabaritos.
+- [ ] Planejar imagens/diagramas com licença e submeter exclusivamente ao Admin; não inserir diretamente no HTML.
+- [ ] Produzir entrada JSON e HTML de prévia, executar validadores oficiais e conferir desktop/PWA.
+- [ ] **STATUS RASCUNHO NÃO PUBLICAR — nenhum merge/deploy.**
