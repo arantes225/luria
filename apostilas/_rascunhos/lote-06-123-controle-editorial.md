@@ -63,3 +63,48 @@ A busca encontrou materiais do Drive tematicamente próximos e foi feita **leitu
 - [ ] Não usar melhora da febre após antitérmico para excluir doença bacteriana invasiva.
 - [ ] Não confundir triagem de dengue/arbovirose com antibioticoterapia empírica neonatal.
 - [ ] Revisão médica pediátrica antes da publicação. **Não executar deploy.**
+
+---
+
+## Etapa 2 — apostila produzida, preparação HTML e triagem (14/10/2026)
+
+**Arquivos concluídos nesta etapa editorial, todos sem publicação:**
+- `apostilas/_rascunhos/lote-06-123-febre-sem-sinais-localizatorios.md`: **96.476 caracteres Markdown brutos**, 31 capítulos: 27 didáticos, 8 casos no capítulo 28, 12 questões no capítulo 29, bibliografia e controle.
+- `apostilas/_rascunhos/lote-06-123-build-input-preliminar.json`: entrada para gerador LURIA com **30 seções**, **6 referências externas**, sem imagens incorporadas.
+- `apostilas/_rascunhos/lote-06-123-preview.html`: prévia HTML baseada no template LURIA, com **31 seções incluindo referências**, `noindex,nofollow`; **8 casos**, **12 questões e 12 grupos de alternativas**.
+- O arquivo de fonte e os recursos de prévia permanecem na branch `editorial/lote-06-auditoria-20261014`, sem reescrita de apostila publicada, merge ou deploy.
+
+### Pré-contagem e integridade
+- Corpo didático capítulos 1–27: **65.201 caracteres estimados** após exclusão de URLs e marcas Markdown simples; não conta casos, questões, referências e checklist.
+- **0** links internos ausentes no HTML, **0** IDs repetidos, **0** parágrafos longos literalmente duplicados detectados no corpo.
+- **Limite:** esses testes não demonstram utilidade editorial de todo o texto, ausência de redundância semântica nem aprovação científica. É necessária leitura profissional.
+
+### Matriz de autossuficiência de perguntas (sem consultar gabaritos)
+| Questão | Competência | Capítulos | Termos de apoio encontrados | Resultado |
+| --- | --- | --- | --- | --- |
+| 1 | Cuidado no neonato | 13 | 8–21 ✓; lcr ✓ | Cobertura lexical |
+| 2 | Step-by-Step | 11 | 22–90 ✓; pcr ✓ | Cobertura lexical |
+| 3 | PECARN | 11 | pecarn ✓; 4.000 ✓ | Cobertura lexical |
+| 4 | Urina e risco de LCR | 9, 15 | positiva ✓; marcadores ✓ | Cobertura lexical |
+| 5 | 61–90 dias | 16 | 61–90 ✓; urocultura ✓ | Cobertura lexical |
+| 6 | HSV | 12, 19 | hsv ✓; aciclovir ✓ | Cobertura lexical |
+| 7 | Semáforo NICE | 5 | vermelho ✓; geme ✓ | Cobertura lexical |
+| 8 | Antitérmicos | 23 | antitermicos ✓; convulsoes ✓ | Cobertura lexical |
+| 9 | Vírus e bactéria | 20 | rinovirus ✓; bacteremia ✓ | Cobertura lexical |
+| 10 | Febre pré-escolar | 17 | vacina ✓; hemocultura ✓ | Cobertura lexical |
+| 11 | Cultura de urina | 9 | saco coletor ✓; contaminacao ✓ | Cobertura lexical |
+| 12 | Segurança da alta | 25 | hemoculturas ✓; seguimento ✓ | Cobertura lexical |
+
+**Resultado: 12/12** em triagem lexical. Não equivale à validação de cada alternativa, das recomendações de antibióticos ou do prognóstico.
+
+### Bloqueios de finalização
+- [ ] Revisão de pediatra/neonatologista de cada faixa etária, especialmente diferenças AAP 2021 versus CPS 2026, manejo de LP, HSV, antibióticos, locais e doses, segurança da alta.
+- [ ] Conferir algoritmos com documentos atualizados e corrigendas, incluindo transferibilidade das regras para serviços brasileiros sem PCT/cultura rápida.
+- [ ] Benchmark extenso de origem institucional comprovada, ainda não localizado no Drive.
+- [ ] Deduplicação semântica, ortografia, conforto visual e validação científica.
+- [ ] Curadoria de até 10 figuras/fluxogramas autorais ou com licença verificável e aprovação via Admin, sem inserção direta.
+- [ ] Executar realmente scripts oficiais de build, sintaxe e auditoria de caracteres; **estes testes foram prévios em JavaScript, não a execução do pipeline oficial.**
+- [ ] Inspeção renderizada desktop/PWA, interatividade, responsividade e acessibilidade.
+- [ ] Aprovação editorial/assistencial antes de merge ou deploy.
+
+**Status: rascunho robusto estruturado, não publicado e não certificado clinicamente.**
