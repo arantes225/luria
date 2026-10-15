@@ -8,7 +8,7 @@
 | 182 | Clínica Médica | Ressuscitação cardiopulmonar do adulto e cuidados pós-parada | Rascunho autoral ~80,4 mil caracteres brutos; benchmark realizado; auditoria final pendente | Criar apostila específica; distinguir da emergência pediátrica já existente |
 | 183 | Clínica Médica | Dislipidemias e prevenção do risco cardiovascular | Rascunho autoral expandido ~68,4 mil caracteres brutos; benchmark Drive parcial | Meta quantitativa preliminar atingida; conferir critérios SBC 2025, imagens e revisão científica |
 | 184 | Clínica Médica | Cefaleias e sinais de alarme neurológicos | Rascunho autoral ~100.005 caracteres brutos; 6 casos, 8 questões; etapa zero Drive realizada | Revisão científica, imagens e HTML/PWA pendentes; NÃO CERTIFICADA |
-| 185 | Clínica Médica | Síndromes geriátricas, quedas e polifarmácia | Sem apostila própria no diretório raiz auditado | Articular quedas, delirium, fragilidade e desprescrição |
+| 185 | Clínica Médica | Síndromes geriátricas, quedas e polifarmácia | Rascunho 65.990 caracteres brutos; 4 casos e 6 questões; Drive parcial | Revisão científica, imagens, benchmark integral, HTML/PWA pendentes |
 | 186 | Clínica Médica | Arboviroses: dengue, chikungunya e Zika | Sem apostila própria no diretório raiz auditado | Conferir fluxos MS atualizados e interseções com infectologia |
 | 187 | Clínica Médica | Antibioticoterapia e uso racional de antimicrobianos | Sem apostila própria no diretório raiz auditado | Evitar repetir capítulos de sepse; cobrir PK/PD, stewardship e síndromes |
 | 188 | Clínica Médica | Anafilaxia e reações alérgicas graves | Sem apostila própria no diretório raiz auditado | Distinguir emergência de alergias pediátricas (203) |
