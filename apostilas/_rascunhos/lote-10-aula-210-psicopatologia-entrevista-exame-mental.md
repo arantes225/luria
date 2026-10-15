@@ -437,3 +437,125 @@ Se forem usadas fotografias ou vídeos de pacientes, são necessários consentim
 **Etapa zero:** não foi encontrado benchmark didático integral comparável no Drive; isso deve continuar marcado como lacuna, não “etapa concluída”. **Imagens:** nenhuma candidata real aprovada no Admin. **Publicação:** zero; arquivo Markdown isolado da branch, sem alteração do catálogo/site/SQL/HTML.
 
 **Próximo aprofundamento:** ampliar exemplos de EEM em mania, psicose e delirium, critérios para suspeitar de condição médica, registro neutro em casos graves e rede assistencial brasileira. A próxima aula curricular é **211 — Transtornos depressivos e avaliação do risco de suicídio**; não antecipar detalhamento terapêutico que pertence a ela.
+
+
+## 16. Entrevista em quatro ambientes: ambulatório, enfermaria, urgência e APS
+
+### 16.1 Ambulatório programado
+
+No ambulatório, geralmente existe tempo para reconstruir **linha longitudinal de sintomas**, hipóteses, impacto e preferências da pessoa. O médico deve evitar transformar a consulta em checklist desconectado. Depois da narrativa livre, é útil montar linha temporal de mudanças de humor, sono, energia, memória, uso de substâncias e tratamento anterior. Para um paciente com ansiedade há anos, investigar a **mudança atual** que motivou atendimento diferencia crise transitória de deterioração funcional progressiva.
+
+**Roteiro longitudinal:** sintoma principal → primeira ocorrência → episódios prévios → duração e intensidade → intervalos de recuperação → gatilhos e fatores protetores → prejuízo funcional → exposições médicas e sociais → tentativas de tratamento e respostas → expectativas de cuidado. Perguntar “O que você mais quer conseguir fazer quando isso melhorar?” permite escolher objetivos funcionais, e não apenas reduzir pontuação de questionário.
+
+**EEM no ambulatório:** pode ser completo, mas a ênfase deriva da síndrome. Em depressão, observar humor/afeto, lentificação, conteúdo de desesperança, risco e sinais de mania anterior. Em psicose, forma e conteúdo do pensamento, percepção, orientação/atenção e julgamento. Em queixa de memória, estado de atenção, registro e evocação, funcionamento anterior e informante são decisivos. Não é preciso aplicar testes sem pertinência e sem validação cultural.
+
+### 16.2 Enfermaria clínica
+
+Pacientes internados estão expostos a dor, infecção, hipoxemia, fármacos e privação de sono. Na avaliação de comportamento “estranho”, verificar **sinais vitais, oximetria, glicemia, cronologia e medicamentos** antes de pressupor doença psiquiátrica. O delirium hipoativo pode manifestar-se por recusa alimentar, retraimento e ausência de iniciativa; delirium hiperativo pode cursar com tentativas de sair do leito. Ambos podem flutuar, inclusive ao longo do mesmo dia.
+
+**Exemplo de evolução útil:** “Hoje às 10h estava desperto, mas incapaz de manter atenção por 20 segundos; às 15h identificou local e seguiu comandos simples; equipe relata alternância com agitação noturna”. Isso informa mais que registrar simplesmente “desorientado”, porque documenta **flutuação temporal**.
+
+### 16.3 Serviço de urgência
+
+Na urgência, a primeira triagem é **risco imediato**. Avaliar ambiente seguro, vias aéreas e ventilação quando necessário, glicemia, temperatura, sinais de choque, intoxicação ou abstinência, déficit neurológico e ferimentos. Uma pessoa agitada que não consegue participar de entrevista ainda pode ter hipoglicemia ou encefalite; o EEM é realizado conforme condições, nunca como obstáculo à estabilização.
+
+**Comunicação durante crise:** equipe pequena e coordenada, frases curtas, tom calmo, distância respeitosa, explicação de condutas e oferta de escolhas quando viável. Evitar confrontar delírios ou gritar para “impor autoridade”; não interpretar recusa em conversar como prova de capacidade decisória ausente ou doença específica. Intervenções coercitivas, se inevitáveis diante de risco, exigem proporcionalidade, documentação, supervisão e normativas vigentes, jamais punição.
+
+**Prioridade médica:** pessoa com rebaixamento de consciência, déficit focal, convulsões, rigidez/febre, agitação com instabilidade autonômica, intoxicação grave ou síndrome de abstinência potencialmente perigosa precisa de avaliação clínica urgente e suporte. Internação psiquiátrica ou prescrição só podem ser decididas após avaliação de risco e causas médicas pertinentes.
+
+### 16.4 Atenção primária e longitudinalidade
+
+Na APS, o EEM precisa ser adequado ao tempo, mas **deve documentar fenômenos novos e sinais de perigo**. Acompanhamento longitudinal permite reconhecer início de psicose, depressão, mania, alteração cognitiva ou mudanças relacionadas a condições clínicas. Importam acesso a psicoterapia, CAPS, assistência social, apoio familiar e barreiras reais ao tratamento. O compartilhamento entre serviços deve respeitar necessidade assistencial e sigilo.
+
+Um EEM breve pode registrar aparência, nível de consciência, atenção/orientação, humor/afeto, fala/pensamento, percepção quando pertinente, capacidade de autocuidado e avaliação de segurança — sempre em linguagem observacional, evitando termos como “manipulador”, “histérico” ou “difícil” sem descrição do comportamento e contexto.
+
+## 17. Formulação biopsicossocial e raciocínio de diagnóstico diferencial
+
+### 17.1 Formulação em vez de empilhar rótulos
+
+Depois da descrição fenomenológica, organizar o caso por **fatores predisponentes, precipitantes, perpetuantes e protetores**, conhecidos em algumas abordagens como “4 Ps”. É uma estrutura clínica útil, **não escala validada de risco**, nem substituto de diagnóstico.
+
+**Exemplo:** pessoa com ansiedade incapacitante após mudança de trabalho. Predisponentes: episódios prévios e vulnerabilidade familiar. Precipitante: nova rotina com alta exigência. Perpetuantes: consumo de energéticos, sono ruim, evitação e isolamento. Protetores: vínculo familiar, motivação e acesso a terapia. A formulação orienta plano, mas **não autoriza declarar causalidade definitiva** para cada fator sem evidência individual.
+
+**Diferenciais por mecanismo**:
+- Sintoma de ansiedade com palpitações e tremor → revisar cafeína/estimulantes, tireotoxicose, arritmia, hipoglicemia e doença pulmonar antes de concluir pânico.
+- Humor deprimido e lentificação → revisar hipotireoidismo, anemia, medicamentos, substâncias e história de episódios de energia elevada.
+- Agitação e desorganização súbitas → descartar delirium, intoxicação, abstinência, encefalite, crises epilépticas e alterações metabólicas.
+- Falhas de memória → diferenciar dificuldade de atenção, depressão, sono, audição, medicamento e comprometimento neurocognitivo progressivo.
+- Percepções incomuns → caracterizar vigília, cultura, luto, substâncias e manifestação neurológica.
+
+A presença de doença clínica não torna falsa uma síndrome mental associada; um paciente com doença tiroideana pode também ter ansiedade independente. A hipótese final exige integração da cronologia e resposta ao tratamento, não “um exame normal = é psiquiátrico”.
+
+### 17.2 Diagnóstico sindrômico, nosológico e etiológico
+
+**Sindrômico:** “síndrome confusional aguda”, “síndrome depressiva”, “síndrome psicótica”, “síndrome de excitação”. **Nosológico:** transtorno específico após aplicar critérios, duração e exclusões apropriadas. **Etiológico:** quando há causa demonstrável ou relação causal plausível, como quadro delirante por condição clínica, psicose induzida por substância ou episódio afetivo primário.
+
+O EEM é **transversal**: descreve o paciente hoje. O diagnóstico é frequentemente **longitudinal**: depende de episódios, duração, retorno à linha de base, funcionamento e história obtida de outras fontes. Um estado agudo de euforia pode decorrer de intoxicação e não prova transtorno bipolar. Uma experiência alucinatória isolada não determina esquizofrenia. O objetivo deste livro é impedir que fenômeno seja confundido com doença sem etapas intermediárias.
+
+### 17.3 Testar hipóteses em cada pergunta
+
+Na prática, cada pergunta deve mudar uma probabilidade:
+- “Começou de repente ontem ou vem piorando há meses?” → delirium/causa médica aguda versus quadros insidiosos.
+- “O sono é curto, mas você se sente cansado e quer dormir, ou sente que não precisa dormir?” → insônia versus redução da necessidade de sono.
+- “Você sabe que o pensamento é seu e não quer tê-lo?” → fenômeno obsessivo versus outras crenças.
+- “A voz aconteceu enquanto despertava ou em vigília plena?” → transição sono-vigília versus sintomas em vigília.
+- “Você perdeu o interesse em atividades que antes davam prazer?” → anedonia, sem concluir diagnóstico pela resposta isolada.
+- “O que familiares perceberam sobre sua atenção e autocuidado?” → mudança funcional observável.
+
+Esse formato melhora precisão sem pressionar a pessoa a concordar com um diagnóstico pré-escrito.
+
+## 18. Capacidade decisória, autonomia e segurança
+
+### 18.1 Competência legal e capacidade clínica não são o mesmo
+
+A capacidade de decidir sobre cuidado é **específica à decisão e ao momento**. Em termos clínicos, avaliar se a pessoa consegue **compreender** informação relevante, **apreciar** aplicação à própria situação, **raciocinar** entre opções e **expressar** preferência. Diagnóstico psiquiátrico, recusa do plano médico ou fala pouco usual **não demonstram incapacidade automaticamente**.
+
+**Exemplo:** pessoa com transtorno psicótico pode entender riscos de uma coleta de sangue e consentir validamente, mas estar temporariamente incapaz de decidir uma questão complexa relacionada a crença delirante específica. Inversamente, indivíduo sem diagnóstico psiquiátrico prévio com delirium pode não conseguir compreender orientação no momento. A avaliação deve documentar **qual decisão** foi discutida e **qual dificuldade funcional** impede consentimento válido, se houver.
+
+**Reavaliação:** causas reversíveis de desatenção, intoxicação, dor e falta de comunicação acessível devem ser tratadas sempre que possível antes de conclusão definitiva; decisões urgentes seguem diretrizes e legislação aplicável ao risco e à capacidade naquele momento.
+
+### 18.2 Sigilo, terceiros e relatos colaterais
+
+No início da entrevista, explicar finalidade do registro e limites ético-legais do sigilo. Convocar familiar para reconstruir mudanças quando útil, mas pedir consentimento sempre que viável; distinguir o que **a pessoa disse** do que **outra pessoa relatou**. Em caso de violência, coerção ou ameaça, entrevistar com privacidade e não presumir que acompanhante é fonte neutra.
+
+**Registro clínico:** “A filha relata início súbito de confusão ontem; paciente diz que não percebe mudança” é mais informativo que “família tem razão, paciente nega doença”. A discrepância deve ser examinada, não resolvida por preferência pessoal do médico.
+
+### 18.3 Avaliação de risco sem falsa precisão
+
+Investigar pensamentos de morte/autolesão, intenção, planejamento, comportamento recente, impulsividade, intoxicação, agitação, acesso a meios perigosos, isolamento, capacidade de cuidado e fatores de proteção, sempre em linguagem respeitosa e sem descrições técnicas de métodos. **Nenhuma escala isolada prediz de forma confiável quem terá determinado comportamento**, portanto estratificação de risco não substitui avaliação individual e plano de segurança.
+
+A pergunta direta sobre suicídio, quando pertinente, é parte do cuidado e não precisa ser evitada por medo de “dar ideia”; a resposta deve orientar plano proporcional e acompanhamento. Em risco iminente, não liberar para acompanhamento distante sem suporte; seguir abordagem emergencial e protocolos assistenciais adequados. A aula 211 desenvolverá manejo, avaliação longitudinal e a rede de cuidados.
+
+**Autonomia e risco:** uma pessoa pode ter ideias autolesivas e ainda conseguir consentir em alguns cuidados; capacidade e risco são eixos relacionados, mas não intercambiáveis. Decisões restritivas exigem critérios clínicos/legais específicos e documentação.
+
+## 19. Três exemplos adicionais de registro
+
+### 19.1 Quadro de aceleração afetiva
+
+“Paciente desperto, cooperativo de modo variável, orientado, sem oscilação de atenção evidente. Fala em volume elevado e ritmo muito acelerado, difícil interrupção. Psicomotricidade aumentada, gesticula intensamente e muda de assunto rapidamente. Refere dormir duas a três horas sem cansaço há seis dias e sentir energia incomum. Afeto expansivo e lábil; humor referido eufórico/irritável. Pensamento com taquipsiquismo e fuga de ideias em alguns momentos; conteúdo grandioso, cuja convicção e repercussão precisam de avaliação. Sem percepção anômala confirmada nesta entrevista. Julgamento prejudicado em decisões financeiras relatadas. Investigar substâncias/medicamentos, doença clínica, histórico de episódios e segurança.”
+
+**Comentário:** há elementos de **síndrome de elevação do humor**, não basta registrar “maníaco” sem definir duração, prejuízo, sintomas adicionais e diferenciais.
+
+### 19.2 Quadro psicótico com nível de consciência preservado
+
+“Paciente desperto, atenção mantida durante entrevista e orientado globalmente. Higiene discretamente prejudicada, postura vigilante, fala de ritmo habitual. Relata convicção de estar sendo seguido e interpreta acontecimentos corriqueiros como mensagens dirigidas a si; pouca disposição a considerar explicações alternativas. Descreve vozes em vigília plena sem estímulo auditivo identificado. Afeto ansioso e tenso. Não há evidência clínica de flutuação de consciência nesta observação; investigar estado neurológico, medicamentos, substâncias, alterações de humor, duração e grau de prejuízo. Avaliação de segurança necessária conforme relato e comportamento.”
+
+**Comentário:** evidências de sintomas psicóticos não bastam para declarar esquizofrenia; o diagnóstico depende de etiologia/curso e exclusões.
+
+### 19.3 Quadro delirante em pós-operatório
+
+“Paciente alterna períodos de sonolência e inquietação ao longo da tarde, presta atenção à pergunta por poucos segundos, perde sequência de comandos e erra local em alguns momentos. Há relato de início do quadro após cirurgia, com dor e uso de sedativos; equipe registra febre e alteração de oximetria. Percepções visuais mal definidas em momentos de desatenção. Entrevista prolongada inviável por flutuação. Prioridade: avaliação clínica de infecção, oxigenação, fármacos e outras causas reversíveis, com monitorização.”
+
+**Comentário:** o EEM deve capturar **tempo, alteração da atenção e contexto**, e não resumir o quadro como “alucinações após anestesia”.
+
+## 20. Integração com as demais apostilas de Saúde Mental
+
+Este livro define **vocabulário clínico e método**, não deve virar cópia das aulas seguintes. Na **211**, aprofundar síndrome depressiva, diagnóstico longitudinal, fatores clínicos/medicamentosos e avaliação de risco de suicídio. Na **212**, organizar mania, hipomania, estados mistos, bipolaridade e acompanhamento. Na **213**, diferenciar ansiedade, pânico, TOC e trauma, com particular atenção a obsessão/ruminação. Na **214**, explorar sintomas positivos, negativos e cognitivos dos transtornos psicóticos, sempre distinguindo causas médicas. Na **215**, aplicar EEM em emergência, agitação, delirium, catatonia e segurança medicamentosa. Na **216**, integrar intoxicação, abstinência e dependência no raciocínio de sinais mentais.
+
+**Proposta de flashcards deriváveis:** “Humor ≠ afeto”, “Ilusão ≠ alucinação”, “Delirium hipoativo”, “Circunstancialidade vs tangencialidade”, “Acatisia vs agitação”, “Insight vs capacidade decisória”, “Fuga de ideias vs descarrilamento”, “Diminuição de necessidade de sono vs insônia”. Estes são tópicos para futura integração, **não flashcards já criados no banco**.
+
+## 21. Controle de qualidade após expansão
+
+O texto desenvolve agora entrevista por ambiente, formulação clínica, capacidade decisória, comunicação em crise e exemplos completos de EEM, além dos seis casos/dez questões originais. A qualidade deve ser conferida por revisão médica/psiquiátrica independente; **não utilizar um número de caracteres brutos como certificado da meta de 60 mil úteis**. A ausência de benchmark integral equivalente no Drive permanece marcada; nenhuma imagem foi licenciada ou importada no Admin; nenhuma página do site foi alterada.
+
+**Pendências específicas para certificação:** aprofundar semiologia da memória e afasia versus desorganização com exemplos neurológicos, revisar normativas brasileiras atuais de sigilo e internação, testar se as questões são resolúveis exclusivamente pela apostila e padronizar linguagem clínica com o restante do acervo. A priorização para a próxima rodada é **211 — Transtornos depressivos e avaliação do risco de suicídio** se os gates editoriais da 210 forem julgados suficientemente atendidos após revisão.
