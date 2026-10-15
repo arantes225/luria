@@ -216,3 +216,189 @@ Persecutório (“estão me seguindo e perseguindo sem provas consistentes”), 
 
 **Jamais confrontar ou ridicularizar** a pessoa como técnica de exame; manter conversa sobre sofrimento, segurança e explicações alternativas sem validar como real uma ameaça não comprovada.
 
+
+## 7. Alterações da percepção: ilusão, alucinação e experiências limítrofes
+
+### 7.1. Sensação e percepção
+
+**Sensação** refere-se à captação de estímulos por sistemas sensoriais; **percepção** envolve organização, interpretação e experiência consciente da informação. O cérebro constrói a experiência perceptiva combinando sinais externos, expectativas, memória e estado de alerta. Isso explica por que penumbra, febre, sono e privação sensorial podem gerar experiências incomuns sem que exista um transtorno psicótico crônico.
+
+A pergunta clínica central não é “teve alucinação, sim ou não?”, e sim **modalidade, contexto, horário, vigília, crítica, sofrimento, conteúdo, frequência e risco**. Ver sombra em ambiente escuro por segundos é diferente de ouvir vozes conversando diariamente em plena vigília. Experiências também podem ser relatadas em luto, transtornos neurológicos, estados dissociativos, condições relacionadas ao sono e uso de substâncias.
+
+### 7.2. Ilusão
+
+É **interpretação distorcida de estímulo externo real**. Uma pessoa febril e sonolenta vê um casaco pendurado e percebe momentaneamente uma pessoa ao lado da cama. A informação sensorial existe, mas é interpretada de modo incorreto. Ilusões podem ocorrer em indivíduos saudáveis quando há estímulo ambíguo e fadiga e em delirium, intoxicações e doenças neurológicas. A ocorrência isolada não classifica esquizofrenia.
+
+### 7.3. Alucinação
+
+Experiência semelhante à percepção, mas **sem estímulo externo correspondente**. Pode ser auditiva, visual, tátil, olfatória, gustativa ou de sensação corporal. O termo precisa considerar vivacidade, externalidade e nível de consciência; narrativas subjetivas nem sempre obedecem a divisões rígidas. Uma voz percebida como externa e independente pode ser uma alucinação auditiva; ouvir uma ideia na própria mente pode refletir pensamento intrusivo, dependendo da descrição.
+
+**Auditivas:** podem ocorrer em psicose primária, transtornos do humor com sintomas psicóticos, luto, trauma, transtornos dissociativos ou outras condições. **Visuais:** requerem atenção especial a delirium, intoxicação/abstinência, doença neurológica, deficiência visual e demência com corpos de Lewy, sem exclusividade. **Olfatórias:** podem ocorrer em epilepsia focal e outras causas neurológicas. A investigação depende do início, sinais concomitantes e exame.
+
+### 7.4. Hipnagógicas e hipnopômpicas
+
+Experiências semelhantes a alucinações podem ocorrer **ao adormecer (hipnagógicas)** ou **ao despertar (hipnopômpicas)**, inclusive com paralisia do sono e sem psicose. Perguntar se a experiência ocorre totalmente desperto é decisivo. Se houver sonolência diurna marcante, ataques de sono, cataplexia e paralisia do sono, avaliar distúrbio do sono como narcolepsia.
+
+### 7.5. Pseudoalucinação: limite de um conceito clássico
+
+A distinção clássica entre alucinação percebida “fora da mente” e pseudoalucinação “dentro da mente” tem uso pedagógico histórico, porém fronteiras fenomenológicas e consistência clínica são controversas. Não diagnosticar um transtorno específico só pela localização relatada da voz. Descrever vivacidade, atribuição de origem, voluntariedade, controle e relação com realidade melhora a avaliação mais que aplicar rótulo isolado.
+
+### 7.6. Despersonalização e desrealização
+
+**Despersonalização:** sensação de estar desconectado do próprio corpo, emoções ou experiências, como se observasse a si mesmo de fora. **Desrealização:** ambiente parece irreal, distante ou artificial, apesar de poder reconhecer racionalmente que é real. Podem ocorrer em ansiedade intensa, trauma, dissociação, privação de sono e condições médicas. Frequentemente o **teste de realidade está preservado**, ao contrário de certos fenômenos delirantes.
+
+### 7.7. Sinais de risco nas experiências perceptivas
+
+Vozes com comandos de autoagressão/violência, medo intenso de estar sendo perseguido com comportamento impulsivo, intoxicação aguda ou incapacidade de cuidar de si exigem avaliação imediata da segurança. A existência de voz **não torna alguém automaticamente perigoso**, e conteúdo de comando não leva necessariamente à ação; risco depende de intenção, resposta às vozes, história, acesso a meios, nível de crítica e apoio disponível.
+
+## 8. Consciência, atenção e delirium: emergências clínicas camufladas
+
+### 8.1. Definição operacional
+
+**Delirium** é síndrome de início agudo/subagudo e curso muitas vezes flutuante, marcada por alteração da **atenção e consciência**, frequentemente acompanhada de déficit cognitivo, alteração perceptiva, psicomotora ou de ciclo sono-vigília. É comum em pessoas hospitalizadas de alto risco, especialmente idosas, mas pode ocorrer em jovens com intoxicação, sepse, hipoxemia, distúrbio metabólico ou encefalite.
+
+O diagnóstico exige comparação com estado basal, pesquisa de causa e avaliação clínica; flutuação pode significar pessoa aparentemente normal durante a visita de manhã e muito confusa à noite. O exame pontual não deve impedir investigação se família/equipe relatam mudança marcada nas últimas horas.
+
+### 8.2. Hiperativo, hipoativo e misto
+
+**Hiperativo:** inquietação, agitação, tentativa de retirar sondas, fala desorganizada e às vezes alterações perceptivas. **Hipoativo:** sonolência, lentificação, pouco contato e baixa iniciativa; pode passar despercebido ou ser confundido com depressão/fadiga. **Misto:** alternância de manifestações. **Delirium hipoativo não é benigno** por produzir menos agitação; é síndrome clínica que merece procura ativa.
+
+### 8.3. Causas precipitantes e predisponentes
+
+Entre fatores predisponentes: idade avançada, demência, fragilidade, deficits sensoriais, doença grave e polifarmácia. Desencadeantes incluem infecções, hipoxemia, hipotensão, hipoglicemia, insuficiência renal/hepática, distúrbios eletrolíticos, desidratação, dor, retenção urinária, constipação/fecaloma, privação de sono, cirurgia/anestesia, medicamentos anticolinérgicos/opioides/benzodiazepínicos e abstinência de álcool/sedativos.
+
+**Não atribuir delirium automaticamente a ITU por bacteriúria isolada**. Mesmo paciente idoso com urina alterada pode ter outra causa de alteração mental; examinar febre, sinais sistêmicos, sintomas urinários e hipóteses alternativas evita antibioticoterapia inadequada e atraso de correção de causa real.
+
+### 8.4. Exame inicial de gravidade
+
+Aferir sinais vitais, saturação, glicemia capilar quando indicada, temperatura, perfusão e avaliação neurológica. Se alteração abrupta de linguagem, força, marcha, pupila ou consciência, considerar AVC, crise epiléptica, hematoma, meningite/encefalite e outras urgências. Rever medicações e exposições, possíveis intoxicações e abstinência, ingestão e eliminação. Solicitar exames dirigidos (hemograma, eletrólitos, função renal, gasometria, imagem, culturas etc.) conforme quadro; **não há painel universal que substitua raciocínio**.
+
+### 8.5. Ferramentas 4AT e CAM-ICU
+
+A **NICE CG103, atualização 2023**, recomenda 4AT quando há sinais sugestivos de delirium em hospital e longa permanência, com diagnóstico final por profissional competente. Em **UTI ou recuperação pós-anestésica**, recomenda **CAM-ICU ou ICDSC**. O 4AT inclui dimensões de alerta, orientação/cognição básica, atenção e mudança aguda/flutuação. Não reproduzir o instrumento integral sem verificar licença; utilizá-lo conforme treinamento e acesso autorizado.
+
+O **CAM-ICU** necessita considerar sedação/nível de despertar e tem abordagem adaptada a pacientes críticos; não aplicar a alguém profundamente sedado sem interpretação adequada. Nenhum teste substitui a pesquisa de causa, e teste negativo fora do período de sintomas não encerra suspeita diante de história forte de flutuação.
+
+### 8.6. Delirium versus demência versus depressão
+
+| Aspecto | Delirium | Transtorno neurocognitivo maior (demência) | Síndrome depressiva |
+|---|---|---|---|
+| Instalação | horas a dias | geralmente meses a anos, salvo outras causas | dias a semanas em muitos casos |
+| Curso | **flutuante** | progressivo ou estável com piora crônica | persistente ou episódico |
+| Atenção | frequentemente muito prejudicada | pode estar relativamente preservada no início | variável, com dificuldade subjetiva |
+| Nível de consciência | pode oscilar | geralmente preservado até fases avançadas | usualmente preservado |
+| Testes cognitivos | variam entre momentos | alterações de domínios conforme condição | desempenho pode melhorar com pistas/motivação |
+| Prioridade | **identificar e tratar precipitante** | avaliação longitudinal e funcional | diagnóstico sindrômico e segurança |
+| Coexistência | pode sobrepor-se à demência | aumenta risco de delirium | pode coexistir com ambos |
+
+Não usar termo “pseudodemência” como diagnóstico definitivo de memória alterada na depressão; a avaliação longitudinal deve considerar coexistência com alterações neurodegenerativas.
+
+### 8.7. Manejo inicial: tratar causa e prevenir danos
+
+Monitorar segurança, orientar equipe/família, corrigir hipóxia, hipoglicemia, infecção relevante, dor, retenção/constipação e desidratação, revisar medicamentos e promover sono, iluminação de dia, silêncio à noite, mobilização, óculos/aparelho auditivo e reorientação respeitosa. Evitar contenção física e farmacológica de rotina; medicação para agitação representa **exceção** quando há risco importante e falha de medidas menos restritivas, com avaliação de causa, efeitos adversos, ECG/QT e protocolo. O detalhamento de agentes e doses fica na aula 215.
+
+### 8.8. Quando o delirium muda a avaliação psiquiátrica
+
+Se paciente alterna sonolência, desatenção e alucinações visuais, um diagnóstico de esquizofrenia pela presença de “alucinação” é inadequado. **Primeiro tratar síndrome médica aguda.** Após recuperação, reavaliar sintomas residuais e história anterior. Pode haver psicose prévia com delirium sobreposto; a presença de diagnóstico crônico não justifica ignorar evento novo.
+
+## 9. Síndromes psicopatológicas: a ponte entre exame e diagnóstico
+
+### 9.1. Síndrome depressiva
+
+Conjunto possível de humor deprimido, perda de interesse/prazer, fadiga, alterações de sono e apetite, diminuição de concentração, desesperança, culpa e alterações psicomotoras. A síndrome pode ocorrer em episódio depressivo, transtorno bipolar, luto, doença endócrina, transtornos induzidos por substâncias e doença neurológica. **Não identificar depressão apenas por choro** nem tratá-la sem perguntar por história de hipomania/mania e risco suicida. Critérios completos e tratamento estão na aula 211.
+
+### 9.2. Síndrome maníaca
+
+Humor elevado, expansivo ou irritável com aumento anormal de energia/atividade, diminuição da necessidade de sono, fala pressionada, aceleração de ideias, grandiosidade, distraibilidade e comportamentos de risco podem indicar mania/hipomania conforme duração, repercussão e gravidade. **Dormir pouco por ansiedade e ficar cansado não equivale à diminuição da necessidade de sono**, quando a pessoa sente-se descansada apesar de poucas horas. Diferenciais importantes incluem anfetaminas, corticosteroides, hipertireoidismo e delirium. Diagnóstico de transtorno bipolar e tratamento específico são foco da aula 212.
+
+### 9.3. Síndrome ansiosa
+
+Preocupação persistente difícil de controlar, tensão, hiperalerta, sintomas autonômicos e evitação podem compor síndromes ansiosas. Crises abruptas de medo com palpitações, dispneia e sensação de morte podem ser ataques de pânico, mas **síndrome coronariana, arritmia, TEP, hipoglicemia e tireotoxicose** devem ser considerados quando história e sinais indicarem. Ansiedade é sintoma de múltiplas condições e não exclui doença somática. TOC, TEPT e transtornos ansiosos específicos são aprofundados na aula 213.
+
+### 9.4. Síndrome psicótica
+
+Inclui em diferentes combinações alterações de pensamento, delírios, alucinações em vigília, desorganização e alterações de comportamento. Os sintomas **não são sinônimos de esquizofrenia**. Psicose pode aparecer em mania, depressão grave, substâncias, delirium, epilepsia, encefalites e outras condições. Um primeiro episódio exige avaliação orgânica apropriada e plano de risco; o diagnóstico de esquizofrenia e o manejo longitudinal pertencem à aula 214.
+
+### 9.5. Síndrome catatônica
+
+Alterações psicomotoras marcadas podem incluir estupor, mutismo, negativismo, posturas mantidas, flexibilidade cérea, ecolalia/ecopraxia, agitação sem propósito e outras manifestações. Catatonia pode coexistir com transtornos do humor, psicose, doenças neurológicas e causas medicamentosas/inflamatórias. Há risco de desidratação, trombose, rabdomiólise e disfunção autonômica, especialmente em quadros malignos. Não interpretá-la como “falta de vontade de colaborar”. É indicação de avaliação médica urgente; escalas e tratamento detalhado ficam na aula 215.
+
+### 9.6. Sindrome de uso de substâncias e abstinência
+
+Intoxicação por estimulantes pode produzir paranoia, agitação, taquicardia e pensamento acelerado; abstinência alcoólica/benzodiazepínica pode causar tremor, hiperatividade autonômica, crises convulsivas e delirium. Intoxicação opioide pode reduzir consciência e ventilação; substâncias anticolinérgicas podem causar delirium com sinais autonômicos. História sobre substâncias deve ser feita sem julgamento, buscando tipo, dose, via, último uso, associação e possibilidade de abstinência. Emergências e intervenções ficam nas aulas 215–216.
+
+### 9.7. Sintoma isolado não é diagnóstico
+
+| Sintoma observado | Diagnósticos possíveis, sem ser lista exaustiva | Dado que ajuda a decidir |
+|---|---|---|
+| Fala rápida | mania, ansiedade, estimulantes, traço pessoal | aumento de energia, necessidade de sono, curso e intoxicação |
+| Vozes | psicose, luto, trauma, sono, substâncias, causas neurológicas | vigília, conteúdo, crítica, cronologia e exame físico |
+| Lentificação | depressão, Parkinson, hipotireoidismo, sedação, delirium hipoativo | consciência, rigidez, TSH quando indicado, fármacos |
+| Medo de morrer com palpitações | pânico, arritmia, TEP, hipoglicemia | sinais vitais, ECG, exame e probabilidade clínica |
+| Desorientação | delirium, neurocognição, convulsão, intoxicação | início, flutuação, atenção, neurologia |
+| Intrusões de ferir alguém | obsessão, trauma, intenção violenta em cenários distintos | egodistonia, comportamento, plano e risco |
+| Humor deprimido | episódio depressivo, luto, doença clínica, bipolaridade | duração, prejuízo, mania pregressa e segurança |
+
+## 10. Risco agudo e plano de segurança
+
+### 10.1. Avaliação de ideação suicida
+
+Perguntar de modo direto e compassivo sobre desejo de morrer, ideação, intenção, plano, comportamento preparatório, acesso a meios, tentativas anteriores, intoxicação, psicose, sofrimento atual, desesperança e fatores protetivos. Risco pode variar em horas/dias; **um questionário ou score não prevê com segurança suicídio individual nem substitui julgamento clínico**. A capacidade de permanecer acompanhado e o acesso a ambiente seguro influenciam destino da avaliação.
+
+Em risco imediato, não deixar paciente sozinho sem avaliação e supervisão adequada, reduzir acesso a meios conforme protocolos, acionar emergência/saúde mental e comunicar responsáveis/rede conforme consentimento e exigências de proteção. Não transformar “contrato de não suicídio” em substituto de avaliação ou plano colaborativo; a aula 211 aborda manejo detalhado.
+
+### 10.2. Risco de violência e agitação
+
+Investigar confusão, intoxicação, dor, hipóxia, trauma e ameaças percebidas antes de atribuir comportamento a “personalidade agressiva”. Desescalada verbal, distância segura, equipe coordenada, saída desobstruída e comunicação calma podem reduzir risco. Evitar cercar, humilhar, ameaçar ou discutir delírio como fato. Contenção física/química só quando estritamente indicada, com monitorização, documentação, respeito a legislação e protocolos. Intervenções farmacológicas e avaliação de estado pós-contenção ficam na aula 215.
+
+### 10.3. Capacidade e consentimento sob crise
+
+Capacidade é **específica para a decisão** e pode oscilar; uma pessoa com diagnóstico de esquizofrenia pode decidir adequadamente sobre muitos assuntos, enquanto pessoa sem diagnóstico psiquiátrico pode não ter capacidade durante hipoglicemia/delirium. Avaliar compreensão, apreciação da informação em si, comparação de alternativas e comunicação de escolha, adaptando explicação. A determinação de incapacidade e decisões substitutas seguem normas locais; em emergências, a atuação proporcional para preservar vida e integridade precisa ser documentada.
+
+### 10.4. Vulnerabilidades e sigilo
+
+Em crianças, adolescentes, pessoas com deficiência ou expostas à violência, abordar autonomia progressiva, proteção, risco e limites legais de confidencialidade. Evitar revelar informações íntimas a acompanhante sem necessidade/consentimento. Fazer exame do estado mental com intérprete confiável quando barreira linguística compromete validade, evitando usar exclusivamente acompanhantes envolvidos em suspeita de violência.
+
+## 11. Roteiros de entrevista por contexto assistencial
+
+### 11.1. Atenção Primária (APS)
+
+Na APS, problemas emocionais frequentemente acompanham doenças crônicas, estresse socioeconômico, luto, insônia e uso de substâncias. Primeiro avaliar urgência, contexto e funcionalidade; depois construir história que identifique sofrimento sem medicalizar toda reação humana. Perguntar se sintomas prejudicam sono, escola/trabalho, relações e autocuidado, e oferecer seguimento longitudinal em rede. A escolha do diagnóstico não deve afastar abordagem centrada na pessoa.
+
+### 11.2. Pronto atendimento
+
+O exame deve ser breve, repetível e ligado à decisão de segurança: ABCDE/sinais vitais/glicemia quando pertinente; há mudança aguda de consciência/atenção? risco de intoxicação/abstinência? ideação suicida, risco de violência ou incapacidade de autocuidado? Dor, febre, trauma, déficit focal, rigidez de nuca e medicamentos? Registrar estado inicial e reavaliação após tratar alterações clínicas.
+
+Um paciente “psiquiátrico conhecido” com febre, rigidez e alteração da consciência merece investigação urgente de sepse, síndrome neuroléptica maligna, síndrome serotoninérgica, catatonia maligna e outras emergências conforme exposição e exame, não simples sedação.
+
+### 11.3. Internação clínica e pós-operatório
+
+Ao aparecer alteração aguda de comportamento, procurar delirium, hipoxemia, dor, retenção urinária, infecções, constipação, distúrbios eletrolíticos, doses de fármacos e privação de sono. Perguntar à equipe/família sobre flutuação e linha de base. Aplicar 4AT em ambiente não crítico conforme NICE 2023 ou CAM-ICU/ICDSC na terapia intensiva. Rever se sedativos e anticolinérgicos foram introduzidos recentemente.
+
+### 11.4. Ambulatório de psiquiatria
+
+Entrevista pode aprofundar biografia, trajetória de sintomas, funcionamentos pré-mórbidos, episódios anteriores, tratamentos e resposta, história de trauma conforme escolha, objetivos do paciente e rede. O EEM é repetido ao longo do seguimento, comparando evolução em vez de depender apenas da lembrança retrospectiva. Exames laboratoriais e escalas devem responder a hipóteses e monitorar terapêutica, não substituir relação clínica.
+
+## 12. Exemplo de prontuário integrado de exame mental
+
+**Queixa do paciente:** “Há duas semanas não consigo dormir e estou assustado com o que sinto”.
+
+**Descrição de sinais reais exemplificativos:** paciente chega acompanhado por familiar; acordado, fala compreensível, contato visual intermitente, orientado em identidade e local, confunde dia da semana, atenção alterna entre pergunta e ruídos externos; diz ter começado quadro **há dois dias** após internação por febre, com piora à noite. Relata ter visto “um homem no quarto” em momento de pouca luz; depois, quando iluminado o ambiente, reconheceu um cabide. Fala sem aceleração sustentada, afeto ansioso, sem crenças rigidamente delirantes demonstradas. O acompanhante relata alteração aguda da linha de base e inversão de sono.
+
+**Formulação sindrômica:** alteração aguda e flutuante de atenção e cognição, com ilusão visual e provável delirium. **Não diagnosticar esquizofrenia** a partir de “vi um homem”, porque há estímulo real mal interpretado e síndrome de consciência flutuante. **Conduta:** avaliar sinais vitais, oxigenação, glicemia e causa da febre, medicações, infecção/alterações metabólicas, aplicar instrumento apropriado e garantir segurança; reavaliar com tratamento do precipitante.
+
+**Modelo de registro qualitativo:** “Exame mental às 18h: acordado, porém distrai-se repetidamente; parcialmente desorientado temporalmente; relata ilusão visual transitória no quarto; pensamento com associações compreensíveis, sem delírios sistematizados identificados; humor referido assustado, afeto ansioso; insight parcial sobre alteração do estado mental. Evolução aguda e flutuante referida por familiar. Risco atual: tenta retirar acesso venoso quando confuso, requer ambiente supervisionado. Hipótese prioritária: delirium; investigar precipitantes clínicos.” Documentar fonte e data de cada informação.
+
+### 12.1. Erros de redação a evitar
+
+- “Paciente normal” sem descrever domínios avaliados.
+- “Esquizofrênico” como adjetivo moral ou diagnóstico por uma única alucinação.
+- “Sem risco suicida” porque respondeu não a uma pergunta isolada.
+- “Incapaz” por idade, deficiência ou diagnóstico sem avaliar decisão.
+- “Depressivo” para pessoa com rebaixamento agudo de atenção/consciência.
+- “Manipulador” para queixa de sofrimento sem observações objetivas.
+- “Surtou” sem especificar início, curso, sintomas, risco e causa possível.
+- “Fala incoerente” em pessoa sem intérprete adequado, surda sem recurso de comunicação ou com afasia não avaliada.
+
+O prontuário de qualidade separa fatos e hipóteses, descreve reavaliação e explicita o plano de segurança.
+
