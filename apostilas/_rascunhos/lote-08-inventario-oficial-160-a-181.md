@@ -27,7 +27,7 @@
 | 174 | Massas anexiais e câncer de ovário | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-174-massas-anexiais-cancer-ovario.md` | 45.673 caracteres Markdown, 8 casos e 14 questões; IOTA/O-RADS e ASCO 2025; rascunho não certificado |
 | 175 | Declaração de óbito e indicadores de mortalidade | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-175-declaracao-obito-indicadores.md` (~38,8 mil caracteres totais) | Rascunho com DO, SIM/SINASC, indicadores, Portaria 10.273/2026, 7 casos e 10 questões; revisão jurídica pendente |
 | 176 | Acidente vascular cerebral e crises convulsivas | Sem livro próprio identificado | Criar com fluxos de AVC e estado de mal; verificar elegibilidade terapêutica |
-| 177 | Complicações pós-operatórias | Sem livro próprio identificado | Criar, integrando sem duplicar `cuidados-perioperatorios` e infecção de sítio |
+| 177 | Complicações pós-operatórias | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-177-complicacoes-pos-operatorias.md` (~40 mil caracteres totais) | Texto original: ERAS, hemorragia, ISC, deiscência/fístulas, TEP, 8 casos e 12 questões; revisão cirúrgica pendente |
 | 178 | Intoxicações exógenas na infância | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-178-intoxicacoes-exogenas-infancia.md` (~42,5 mil caracteres totais) | Rascunho com toxíndromes, 8 casos e 12 questões, CIATox/SINAN; doses/revisão toxicológica pendentes |
 | 179 | Câncer de endométrio | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md` | 43.732 caracteres Markdown, 7 casos e 12 questões; ACOG abril/2026, FIGO 2023, ESGO 2025; rascunho não certificado |
 | 180 | Cuidados paliativos e comunicação de más notícias | Sem livro próprio identificado | Criar com comunicação SPIKES, manejo de sintomas e diretivas antecipadas |
@@ -93,3 +93,10 @@ A branch editorial nasceu de um commit anterior ao surgimento de novos rascunhos
 - **Aulas 170 e 171**: descobertas na `main` durante nova checagem, como rascunhos grandes de Ética (~90,7 kB) e Artrites (~111 kB), respectivamente. **Não duplicadas.** Requerem auditoria específica e verificação de sincronização antes de qualquer integração.
 - **Aulas 174 e 179**: os arquivos da etapa anterior foram lidos na branch e confirmados, não apenas assumidos como salvos.
 - **Regra rígida:** contagem de caracteres **totais** de Markdown ≠ certificação de 60 mil caracteres úteis. Não marcar como prontas, não gerar HTML público, não aprovar imagens, não fazer merge ou deploy. Todos os textos adicionais dependem de revisão médica e, quando pertinente, jurídica.
+
+## Continuação adicional — aula 177 (14/10/2026)
+
+- **Aula 177 — Complicações pós-operatórias:** produzido novo rascunho de 39.976 caracteres totais de Markdown, 8 casos e 12 questões. Inclui complicações imediatas/tardias, red flags, hemorragia, ISC, falha anastomótica, fístula, íleo, obstrução, TEV/TEP, pulmão, rim, delirium, feridas, ERAS e alta segura.
+- **Etapa zero cumprida parcialmente:** aberto e lido no Drive `04 - ESTOMAGO - COMPLICACOES AGUDAS POS GASTRECTOMIAS.pdf`, `03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf` e `01 - AVALIACAO PRE-ANESTESICA.pdf`. São comparativos por subtema, não apostila abrangente equivalente. Não se copiaria nenhum material.
+- **Fontes externas consultadas:** OMS prevenção de ISC (2018) e ERAS laparotomia de emergência (2023) e abdominal eletiva (2022). Conferência por CCIH/protocolo SUS continua obrigatória.
+- **Status:** rascunho ainda não autossuficiente, imagens não aprovadas, ausência de homologação; preservar `main` e evitar merge/deploy.
