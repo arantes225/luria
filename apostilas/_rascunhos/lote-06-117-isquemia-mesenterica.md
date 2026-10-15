@@ -1,5 +1,5 @@
 # LURIA · Apostila 117 — Isquemia Mesentérica e Abdome Agudo Vascular
-**Área:** Cirurgia Geral · **Lote 06** · **Status:** primeira etapa de redação original, revisão científica e produção editorial pendentes. **Não publicar.**
+**Área:** Cirurgia Geral · **Lote 06** · **Status:** redação original ampliada em etapas, revisão científica e produção editorial pendentes. **Não publicar.**
 
 > O diagnóstico da isquemia mesentérica aguda é uma corrida contra a perda de intestino viável. Suspeita clínica e angiotomografia imediata importam mais que aguardar a elevação do lactato. Dor desproporcional ao exame é uma pista inicial, mas sua ausência não exclui a doença.
 
@@ -409,6 +409,24 @@ Legendas devem ensinar **o que observar, em qual fase/exame, qual diferencial e 
 
 **História:** homem de 68 anos na UTI com sepse e insuficiência cardíaca, recebendo vasoativos, evolui com distensão, acidose progressiva e aumento da necessidade de vasopressor. AngioTC mostra AMS sem trombo evidente, segmentos intestinais com hiporrealce. **Hipótese:** NOMI. **Raciocínio:** baixa oferta de fluxo e vasoconstrição causam isquemia sem oclusão demonstrada. **Exames:** rever imagem com radiologia, acompanhar perfusão sistêmica, eletrólitos e sinais de perfuração/necrose. **Conduta:** corrigir a causa do choque, otimizar débito e volemia sob monitorização, revisar vasoativos, discutir vasodilatação intra-arterial em centro experiente e explorar cirurgicamente caso peritonite/necrose. **Por que importa:** angioTC sem oclusão arterial visível não descarta isquemia ameaçadora à vida.
 
+
+
+### Caso 5 — Paciente com insuficiência renal: contraste ou intestino?
+
+**História:** homem de 81 anos, insuficiência renal crônica (creatinina basal 2,2 mg/dL), doença arterial periférica e FA, com dor abdominal súbita intensa, vômitos e abdome ainda depressível. O médico cogita aguardar a creatinina melhorar antes de pedir angioTC contrastada. **Hipótese:** IMA oclusiva, possivelmente embolia ou trombose aguda. **Raciocínio:** a chance de lesão intestinal irreversível por atraso excede o risco renal potencial associado ao contraste na emergência; é preciso ponderar e registrar o risco, não negar imagem decisiva automaticamente. **Exames:** angioTC de protocolo arterial e venoso sem atraso evitável, monitorização renal e metabólica, avaliação pré-operatória. **Conduta:** ressuscitação individualizada e definição urgente de reperfusão, com equipe renal e vascular conforme necessidade; medidas para reduzir nefrotoxicidade se possíveis sem sacrificar tempo. **Por que importa:** doença renal não é autorização para deixar de diagnosticar isquemia ameaçadora da vida.
+
+### Caso 6 — Colite isquêmica pós-hipotensão
+
+**História:** mulher de 72 anos em recuperação de episódio de hipovolemia apresenta cólica no quadrante inferior esquerdo, evacuações urgentes e sangue vivo em pequena quantidade. Está estável, sem irritação peritoneal. **Hipótese:** colite isquêmica predominantemente mucosa. **Raciocínio:** quadro colônico com hematoquezia após hipoperfusão, distinto de apresentação típica de oclusão aguda da AMS; ainda é necessário excluir colite infecciosa e outras causas de sangramento. **Exames:** hemograma e bioquímica para gravidade, TC abdominal contrastada quando apropriada, colonoscopia selecionada e cuidadosa se não há perfuração/gangrena. **Conduta:** corrigir fator precipitante, avaliar internação conforme gravidade, hidratação ponderada e acompanhamento de dor, sangramento, febre e exames; cirurgia se peritonite, necrose ou deterioração. **Por que importa:** “colite isquêmica” é espectro, não sinônimo automático de laparotomia nem de doença leve.
+
+### Caso 7 — Medo de comer e perda ponderal progressiva
+
+**História:** homem de 66 anos, tabagista, coronariopata, tem dor epigástrica/mesogástrica cerca de meia hora após as refeições, persistente há cinco meses, com perda de 12 kg. Endoscopia sem explicação satisfatória. Doppler sugere estenose de AMS e angioTC identifica doença aterosclerótica significativa. **Hipótese:** isquemia mesentérica crônica sintomática. **Raciocínio:** a demanda de fluxo pós-prandial supera a capacidade da circulação estenosada; a restrição alimentar decorre da tentativa de evitar dor. **Exames:** correlacionar clínica com anatomia de múltiplos vasos, avaliar estado nutricional e diferenciar outras doenças digestivas. **Conduta:** encaminhar a equipe vascular multidisciplinar para considerar revascularização e tratar fatores cardiovasculares; não aguardar indefinidamente perda de mais peso. **Por que importa:** reconhecer IMC antes de trombose aguda pode evitar emergência potencialmente fatal.
+
+### Caso 8 — Depois da laparotomia: o que significa preservar intestino?
+
+**História:** mulher de 59 anos teve trombose arterial mesentérica revascularizada e segmento jejunal necrosado ressecado; há alças edemaciadas cuja viabilidade ainda é incerta. O paciente está em suporte intensivo. **Hipótese:** isquemia/reperfusão com viabilidade intestinal parcialmente duvidosa, sob risco de necrose adicional e síndrome do intestino curto se houver ressecção excessiva. **Raciocínio:** a cor isolada da serosa no momento cirúrgico não garante toda viabilidade; alças congestas podem recuperar após reperfusão e estabilização. **Exames:** reavaliação clínica, hemodinâmica e laboratorial, exame cirúrgico, Doppler/perfusão complementar quando disponível. **Conduta:** decisão individual de controle de danos, fechamento temporário e second-look em 24–48 h conforme extensão e estabilidade, com preservação máxima de tecido viável; reconstrução do trânsito quando segura, nutrição e reabilitação depois. **Por que importa:** sobrevida e autonomia alimentar dependem tanto da reperfusão quanto de não ressecar desnecessariamente.
+
 ## 29. Doze questões autorais comentadas
 
 ### Questão 1
@@ -471,6 +489,68 @@ D) Toda colite isquêmica implica oclusão embólica da AMS.
 
 **Gabarito: B.** A investigação e endoscopia dependem da gravidade e segurança. **A:** endoscopia em suspeita de necrose/perfuração pode ser perigosa. **C:** sangramento é apresentação possível. **D:** colite isquêmica muitas vezes relaciona-se a hipoperfusão sem embolia da AMS. **Revisão:** considerar território colônico e distinguir extensão da isquemia.
 
+
+
+### Questão 7
+Em uma unidade de emergência, paciente com alta suspeita clínica de isquemia mesentérica tem creatinina elevada. Qual raciocínio é mais adequado?
+
+A) A creatinina elevada proíbe definitivamente angioTC com contraste.  
+B) Deve-se repetir lactato por dois dias antes de qualquer exame vascular.  
+C) AngioTC urgente geralmente permanece indicada, com ponderação dos riscos e medidas de proteção, porque o atraso pode causar necrose intestinal.  
+D) O resultado da creatinina demonstra que a dor é obrigatoriamente renal.
+
+**Gabarito: C.** O risco de perder a janela terapêutica da IMA pode ser muito maior que o risco de contraste, exigindo decisão clínica e protocolo apropriado. **A:** contraindicação absoluta não se aplica genericamente ao risco de emergência. **B:** lactato não exclui doença e aguardar pode causar dano. **D:** creatinina elevada é inespecífica e pode refletir comorbidade/choque. **Revisão:** comparar consequências de atrasar diagnóstico com riscos do contraste na situação concreta.
+
+### Questão 8
+Em paciente com oclusão de AMS por trombo e sem peritonite evidente, qual afirmação melhor representa ESVS 2025?
+
+A) A possibilidade de técnica endovascular deve ser considerada como estratégia inicial em pacientes apropriados, sem excluir necessidade de avaliação intestinal ou cirurgia.  
+B) A intervenção endovascular é proibida em todas as oclusões embólicas.  
+C) A revascularização substitui ressecção de intestino necrosado em qualquer situação.  
+D) A decisão deve ser adiada até aparecer pneumoperitônio.
+
+**Gabarito: A.** Recomendação 37 (IIa/B) da ESVS 2025 considera endovascular como primeira linha em contextos adequados. **B:** embolia é um dos mecanismos contemplados. **C:** necrose/perfuração exigem avaliação e tratamento cirúrgico. **D:** atraso pode tornar dano irreversível. **Revisão:** escolha da técnica depende de viabilidade intestinal, expertise, anatomia e tempo.
+
+### Questão 9
+Na trombose venosa mesentérica aguda sem evento hemorrágico impeditivo, que afirmação sobre duração do tratamento corresponde à ESVS 2025?
+
+A) Um dia de anticoagulação é suficiente para todos.  
+B) Anticoagulação por três a seis meses é recomendada como tratamento inicial; fatores permanentes ou casos idiopáticos podem exigir anticoagulação indefinida.  
+C) Terapia anticoagulante é contraindicada porque a trombose é venosa.  
+D) A duração é definida somente pela velocidade de hemossedimentação.
+
+**Gabarito: B.** A diretriz orienta curso de 3–6 meses (recomendação 52) e anticoagulação indefinida em situações idiopáticas ou fatores permanentes (recomendação 56), considerando risco hemorrágico. **A:** duração insuficiente. **C:** anticoagulação é pilar na trombose venosa. **D:** exame não determina duração. **Revisão:** provocação transitória, persistente, recorrência e sangramento determinam individualização.
+
+### Questão 10
+Mulher idosa com dor abdominal, hematoquezia e TC sugerindo colite isquêmica desenvolve rigidez e pneumoperitônio. Qual próxima medida é prioritária?
+
+A) Colonoscopia com insuflação ampla, independentemente de sinais de perfuração.  
+B) Avaliação cirúrgica imediata com ressuscitação, por possível necrose/perfuração, sem depender de confirmação endoscópica.  
+C) Alta por ser colite isquêmica geralmente autolimitada.  
+D) Preparo intestinal oral volumoso antes de qualquer conduta.
+
+**Gabarito: B.** Peritonite/perfuração mudam apresentação e exigem cirurgia. **A:** endoscopia pode agravar doença complicada. **C:** gravidade atual invalida tranquilização. **D:** pode piorar segurança/atrasar intervenção. **Revisão:** colite isquêmica varia de lesão mucosa reversível a necrose transmural.
+
+### Questão 11
+Paciente com sepse grave em doses altas de vasopressor e suspeita de NOMI é submetido a avaliação. Qual afirmação é correta?
+
+A) A ausência de trombo na AMS exclui lesão intestinal.  
+B) É obrigatório interromper todo vasopressor de forma abrupta, ainda que haja choque persistente.  
+C) O tratamento envolve otimização de perfusão sistêmica e da causa do choque; vasodilatação intra-arterial pode ser considerada em situações selecionadas e cirurgia é indicada diante de intestino inviável.  
+D) A primeira conduta é exclusivamente estatina oral.
+
+**Gabarito: C.** Baixo fluxo e vasoconstrição explicam NOMI, e manejo deve preservar perfusão sistêmica. **A:** trombo não é necessário. **B:** suspensão abrupta pode ser deletéria. **D:** prevenção aterosclerótica não resolve emergência de baixo fluxo. **Revisão:** tratar mecanismo hemodinâmico com equipe intensiva e avaliação cirúrgica.
+
+### Questão 12
+Na laparotomia por isquemia extensa, há segmentos claramente necrosados e outros cuja viabilidade é incerta após reperfusão, com paciente instável. Qual princípio é mais adequado?
+
+A) Ressecar indiscriminadamente todo o delgado para evitar novo procedimento.  
+B) Realizar anastomose primária obrigatória mesmo em choque e tecido de perfusão duvidosa.  
+C) Preservar as alças potencialmente recuperáveis e considerar cirurgia de controle de danos com second-look em 24–48 horas quando apropriado.  
+D) Ignorar o intestino necrótico porque a AMS foi reperfundida.
+
+**Gabarito: C.** O segundo olhar pode evitar perda desnecessária de alças recuperáveis e permitir avaliar resposta após ressuscitação. **A:** arrisca síndrome do intestino curto. **B:** alto risco de deiscência no contexto. **D:** necrose irreversível precisa ser tratada. **Revisão:** reperfusão, resecção seletiva e preservação intestinal são objetivos complementares.
+
 ## 30. Referências científicas e aplicabilidade brasileira
 
 1. **ESVS (2025):** Koelemay MJ et al. Clinical Practice Guidelines on the Management of Diseases of the Mesenteric and Renal Arteries and Veins. European Journal of Vascular and Endovascular Surgery, 2025;70(2):153–218. DOI 10.1016/j.ejvs.2025.06.010. Texto integral aberto: https://ris.utwente.nl/ws/portalfiles/portal/502462657/PIIS1078588425005167.pdf .
@@ -485,7 +565,7 @@ D) Toda colite isquêmica implica oclusão embólica da AMS.
 - [x] Inventário inicial: nenhuma pasta homônima de isquemia mesentérica identificada entre apostilas publicadas do repositório no início do lote 6; confirmar eventuais sobreposições em capítulos de abdome agudo antes de publicar.
 - [x] Benchmark do Drive: apostila **“14 - ABDOME AGUDO VASCULAR.pdf”** (texto efetivamente lido) e **“01 - ABDOME AGUDO - INTRODUCAO.pdf”**; origem editorial não confirmada como Estratégia MED.
 - [x] Estrutura original: anatomia, fisiopatologia, embolia, trombose arterial, NOMI, trombose venosa, IMC e colite isquêmica.
-- [x] Casos clínicos (4) e questões comentadas (6), com raciocínio e alternativas.
+- [x] Casos clínicos (8) e questões comentadas (12), com raciocínio e alternativas.
 - [x] Fontes científicas: WSES 2022 e ESVS 2025 verificadas em texto original.
 - [ ] Expandir e aprofundar os capítulos para **≥60 mil caracteres didáticos úteis** sem repetição, sobretudo tratamento endovascular/cirúrgico, anticoagulação, colite isquêmica, complicações, casos e situações especiais.
 - [ ] Registrar matriz de cobertura com âncoras e teste formal de resolução de questões apenas pelo conteúdo.
