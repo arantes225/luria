@@ -532,3 +532,87 @@ Os cenários são fictícios e voltados ao raciocínio clínico; cada decisão d
 
 **Por que importa:** Procedimentos podem ser paliativos e preservar função.
 
+### Caso 7 — Delirium por retenção urinária
+
+**Apresentação:** Idoso com neoplasia avançada começa a arrancar lençóis e pedir ajuda. Recebeu opioide novo, não urinou em 12 h e está inquieto.
+
+**Hipótese:** Delirium hiperativo com retenção urinária possível.
+
+**Raciocínio:** Sedação imediata sem examinar bexiga pode mascarar causa reversível de sofrimento; também revisar medicação, infecção, dor e constipação.
+
+**Avaliação:** Exame, globo vesical ou ultrassom à beira-leito, glicose/medicações conforme proporcionalidade.
+
+**Conduta:** Aliviar retenção com técnica apropriada, ambiente calmo, reavaliar cognição antes de medicar agitação.
+
+**Por que importa:** Causa simples e tratável pode resolver agitação aparentemente terminal.
+
+### Caso 8 — Constipação após opioide
+
+**Apresentação:** Mulher com metástases ósseas ficou sete dias sem evacuar após introdução de opioide. Tem distensão, desconforto e escape de fezes líquidas.
+
+**Hipótese:** Constipação/possível fecaloma, avaliar obstrução.
+
+**Raciocínio:** Diarreia líquida pode representar escape; a escolha de laxante depende de descartar obstrução mecânica e avaliar peristalse.
+
+**Avaliação:** História de flatos, vômitos e dor, toque/imagem se indicado.
+
+**Conduta:** Tratar fecaloma quando confirmado, revisar prevenção de constipação e orientar cuidador.
+
+**Por que importa:** Constipação deve ser prevista ao prescrever opioide.
+
+### Caso 9 — Família implora por soro nos últimos dias
+
+**Apresentação:** Mulher com falência orgânica terminal, sonolenta, deglutição mínima, edema importante e secreções; família pede dois litros IV ao dia para 'não morrer de sede'.
+
+**Hipótese:** Processo de morte e decisão sobre hidratação assistida.
+
+**Raciocínio:** Infusão pode piorar edema/dispneia e não reverter caquexia. Higiene oral/umedecimento podem aliviar sensação de boca seca; avaliar caso e valores.
+
+**Avaliação:** Sinais de hipovolemia e de sobrecarga, expressão de sede, DAV/objetivos, possibilidades de resposta.
+
+**Conduta:** Explicar prognóstico e benefício/ônus, cuidar da boca, considerar teste de fluido somente se benefício plausível, reavaliar.
+
+**Por que importa:** Não hidratar artificialmente de forma automática não significa abandono.
+
+### Caso 10 — Criança com doença neuromuscular grave
+
+**Apresentação:** Menina de 9 anos com doença progressiva tem disfagia, dor em procedimentos, dificuldades escolares e pais exaustos; ainda realiza reabilitação.
+
+**Hipótese:** Indicação de paliativos pediátricos integrados e apoio familiar.
+
+**Raciocínio:** Não esperar terminalidade para reduzir sofrimento; respeitar assentimento da criança e decisões no melhor interesse. Não copiar posologia adulta.
+
+**Avaliação:** Escalas pediátricas de dor, deglutição, respiração, comunicação, escola, cuidador e dispositivos.
+
+**Conduta:** Equipe pediátrica multiprofissional, sintomas, adaptações, planejamento e suporte de irmãos/educação.
+
+**Por que importa:** O cuidado inclui vida diária e desenvolvimento da criança, não apenas morte.
+
+### Caso 11 — Agitação terminal refratária
+
+**Apresentação:** Paciente com falência multiorgânica irreversível está em últimos dias, com delirium agitado intenso apesar de medidas adequadas e tratamento proporcional dos precipitantes. Família teme sedação.
+
+**Hipótese:** Possível indicação de sedação paliativa proporcional por sintoma refratário.
+
+**Raciocínio:** Sedação só após avaliação de refratariedade, consentimento/DAV e equipe habilitada; finalidade é aliviar sofrimento, não abreviar vida. Morfina não deve ser aumentada só para sedar.
+
+**Avaliação:** Documentar sintomas, medidas prévias, capacidade/representante, prognóstico e decisão, fármacos/monitorização pela equipe.
+
+**Conduta:** Discutir sedação proporcional especializada, manter analgesia e higiene, explicar família, reavaliar conforto.
+
+**Por que importa:** Sedação paliativa não é rotina para toda pessoa em cuidados paliativos.
+
+### Caso 12 — Alta domiciliar sem acesso noturno
+
+**Apresentação:** Homem com ELA e dificuldade de deglutição deseja voltar para casa. Usa via alternativa de medicação e relata crises noturnas de dispneia. Não há cuidador treinado nem acesso a fármaco de resgate.
+
+**Hipótese:** Planejamento de alta inseguro apesar de desejo legítimo de domicílio.
+
+**Raciocínio:** Preferência precisa ser viabilizada com segurança: rede, medicações, contatos, dispositivos, treinamento e plano de urgência. Dar alta apenas com anotação 'paliativo' pode levar a sofrimento evitável.
+
+**Avaliação:** Avaliar cuidador e condições de moradia, cobertura UBS/SAD, telefone/plantão, acesso a medicação/rota e transporte.
+
+**Conduta:** Construir transição com equipe e serviço social, treinar e garantir cobertura ou discutir alternativa temporária segura.
+
+**Por que importa:** Desejo de morrer em casa não dispensa rede concreta e plano de crise.
+
