@@ -193,3 +193,236 @@ Mesmo quando febre e rash cessam, a vigilância não termina antes de avaliar co
 
 **Referências clínicas nucleares desta etapa:** Ministério da Saúde PCDT AIJ (2026); American Heart Association Kawasaki (2024 e erratas 2025); American College of Rheumatology AIJ (2021). A parte sobre vasculite por IgA e febre reumática será desenvolvida na sequência do manuscrito.
 
+
+
+## 5. Vasculite por IgA: a síndrome cutâneo-articular-digestivo-renal
+
+### 5.1. Nomenclatura, epidemiologia e fundamentos
+
+Vasculite por IgA é o nome atual preferido para a condição antes denominada púrpura de Henoch–Schönlein. Trata-se de vasculite de pequenos vasos mediada por imunocomplexos predominantemente contendo IgA1, frequentemente após infecções de vias aéreas superiores. É uma das vasculites sistêmicas mais comuns na infância, mas também ocorre em adultos, nos quais a chance de lesão renal importante pode ser maior. Acomete capilares, vênulas e arteríolas e se apresenta em pele, articulações, trato gastrointestinal e glomérulos.
+
+A IgA é imunoglobulina essencial para imunidade de mucosas. Na doença, alterações na formação, reconhecimento ou depuração de complexos imunes levam a inflamação vascular. Isso explica a associação frequente com estímulos mucosos, mas não significa que se deva tratar todas as crianças com antibióticos: infecção bacteriana atual requer critérios próprios. A doença não decorre simplesmente de “IgA sérica elevada”, e dosagem sérica normal não a exclui.
+
+Em geral, o curso cutâneo pode ser autolimitado, mas **o rim determina grande parte do prognóstico**. Nefrite pode surgir depois do aparecimento da púrpura, inclusive quando lesões cutâneas já regridem. O acompanhamento precisa se basear em urina e pressão arterial repetidas, não somente na percepção familiar de melhora clínica.
+
+### 5.2. Lesão vascular e apresentação clínica
+
+**Púrpura palpável:** erupção eritematosa-purpúrica não desaparece à digitopressão, em especial em membros inferiores, regiões dependentes e nádegas. Pode surgir após urticária, pápulas ou edema; o aspecto varia com estágio da lesão e tonalidade de pele. Em pele mais pigmentada, a alteração de cor pode ser discreta: palpar relevo e examinar distribuição ajudam. Hemorragia dérmica por vasculite produz petéquias e púrpura **sem trombocitopenia como explicação primária**. Plaquetas devem ser contadas porque a principal armadilha é chamar trombocitopenia de vasculite por IgA sem investigar.
+
+**Articulações:** artralgia ou artrite transitória, sobretudo tornozelos e joelhos, pode preceder a púrpura. Há edema periarticular e limitação por dor; sequela articular crônica costuma ser incomum. O padrão não é o mesmo da sinovite persistente e erosiva da AIJ. Edema de mãos, pés, face ou escroto pode ocorrer, particularmente em crianças pequenas.
+
+**Trato gastrointestinal:** dor abdominal cólica, náuseas, vômitos, sangramento digestivo e, em casos complicados, invaginação intestinal ou isquemia. Dor abdominal pode preceder o rash e induzir erro como apendicite, gastrenterite ou abdomen cirúrgico. Dor intensa progressiva, sinais peritoneais, melena/hematoquezia, vômitos persistentes, desidratação e choque exigem investigação e observação hospitalar. **Uso de corticoide não exclui necessidade de diagnóstico cirúrgico** quando há sinais de complicação.
+
+**Rins:** hematúria microscópica, proteinúria, hipertensão e, menos frequentemente, síndrome nefrítica/nefrótica ou perda de função renal. A nefrite pode não causar edema e o débito urinário pode permanecer preservado. O grau de proteinúria e a evolução da função renal importam mais que a intensidade da púrpura para estimar risco futuro.
+
+**Outros órgãos:** dor/inchaço escrotal exige excluir torção testicular; manifestações neurológicas ou pulmonares são raras e potencialmente graves. Não banalizar sinais sistêmicos inexplicados sob o rótulo de “púrpura habitual”.
+
+### 5.3. Diagnóstico: critérios de classificação e decisão clínica
+
+Uma ferramenta de classificação pediátrica frequentemente utilizada exige **púrpura/petéquias com predomínio em membros inferiores, sem trombocitopenia**, acompanhadas de pelo menos um dos seguintes: dor abdominal; artrite/artralgia; envolvimento renal; ou histopatologia compatível com deposição predominante de IgA. Esses critérios foram desenhados para uniformidade de classificação e devem ser interpretados com julgamento clínico, especialmente em apresentações incompletas ou no início do quadro.
+
+Quando o fenótipo é típico, a biópsia de pele não costuma ser obrigatória. Em apresentação atípica, doença progressiva ou incerteza diagnóstica, anatomopatológico e imunofluorescência de pele podem contribuir. Biópsia renal é reservada a critérios específicos, como proteinúria significativa/persistente, redução da função renal ou suspeita de lesão glomerular grave; não se faz biópsia em toda criança com púrpura e urina normal.
+
+A avaliação inicial deve incluir história de infecção e medicações, sinais vitais, **pressão arterial**, hemograma com plaquetas, exame de urina com sedimento e quantificação de proteinúria quando indicada. Creatinina e função renal são úteis especialmente em hipertensão, urina alterada, edema ou manifestações graves. Exames inflamatórios podem estar elevados, mas não definem diagnóstico. Testes adicionais se orientam pelos diferenciais, e não por painéis imunes indiscriminados.
+
+### 5.4. Por que a urina precisa ser medida repetidamente?
+
+Uma urina inicialmente normal é fotografia de um momento. O depósito de complexos IgA e a resposta glomerular podem tornar-se detectáveis mais tarde. Organizar consultas com aferição de pressão, pesquisa de hematúria e proteinúria, quantificação quando presente e avaliação de função renal conforme risco. A frequência é maior nos primeiros meses, adaptada ao protocolo pediátrico e à gravidade. Em presença de nefrite estabelecida, o KDIGO 2025 recomenda acompanhamento nefrológico e monitorização prolongada, com horizonte de anos conforme evolução; vigilância de **pelo menos cinco anos** é considerada em crianças com nefrite, e seguimento mais longo pode ser prudente em casos relevantes.
+
+A relação proteína/creatinina urinária em amostra isolada, quando padronizada por idade e circunstância, é forma prática de quantificar perda proteica sem depender de coleta de 24 horas. A amostra de primeira urina da manhã pode diminuir confusão por proteinúria ortostática em crianças maiores. É essencial interpretar tendências, edema, pressão, eTFG e sedimento urinário conjuntamente. Uma proteína/creatinina isolada elevada durante febre, desidratação ou exercício deve ser confirmada conforme quadro, sem postergar investigação de alterações expressivas.
+
+### 5.5. Tratamento por gravidade
+
+**Forma cutâneo-articular leve:** analgesia, hidratação apropriada, educação da família, repouso relativo por sintomas e seguimento. Anti-inflamatórios não esteroidais podem aliviar manifestações articulares em casos selecionados, porém exigem cautela/evitação diante de insuficiência renal, proteinúria relevante, hemorragia digestiva ou desidratação. Não apresentar AINE como solução universal.
+
+**Dor abdominal intensa:** avaliar complicações e necessidade de internação; ultrassonografia abdominal e avaliação cirúrgica podem ser necessárias. Corticosteroide sistêmico pode ser considerado por especialista em quadros gastrointestinais ou articulares selecionados, após avaliação de causas cirúrgicas. O benefício sobre dor não deve ser confundido com prevenção comprovada de nefrite.
+
+**Nefrite:** intensidade do tratamento depende de proteinúria, pressão, função renal e eventualmente histologia. Inibidores do sistema renina-angiotensina e imunossupressores são considerados em cenários específicos por nefrologia pediátrica. O KDIGO 2025 destaca que **não há evidência para prescrever glicocorticoide apenas com o objetivo de prevenir nefropatia** em criança com vasculite por IgA sem envolvimento renal ou com micro-hematúria isolada. Em nefrite com síndrome nefrótica ou perda rápida de função, avaliação e tratamento especializados são urgentes.
+
+### 5.6. Diagnósticos diferenciais da púrpura
+
+1. **Meningococcemia e sepse:** febre, toxemia, extremidades frias, hipotensão, alterações de consciência, exantema petequial rapidamente progressivo. O perfil clínico de emergência prevalece sobre o rótulo de vasculite.
+2. **Púrpura trombocitopênica imune:** petéquias/equimoses com plaquetopenia, sem padrão articular/abdominal típico. Hemograma e lâmina quando necessários.
+3. **Microangiopatias trombóticas e síndrome hemolítico-urêmica:** anemia hemolítica, plaquetopenia, lesão renal, eventualmente diarreia precedente; demanda avaliação urgente.
+4. **Vasculite medicamentosa e outras vasculites sistêmicas:** relação temporal com fármaco, sinais de órgãos e histologia conforme necessário.
+5. **Doença hematológica/neoplasia:** citopenias, palidez, dor óssea, organomegalias e sinais sistêmicos atípicos; não tratar às cegas com corticoide.
+6. **Endocardite/infeções com fenômenos vasculares:** contexto infeccioso, sopro, hemoculturas e investigação dirigida.
+7. **Lesão traumática e maus-tratos:** distribuição e história incongruentes precisam de abordagem de proteção cuidadosa, sem inferências precipitadas.
+
+### 5.7. O que comunicar na alta?
+
+A família precisa sair sabendo quais sinais exigem retorno imediato: dor abdominal forte, sangue nas fezes, vômitos incoercíveis, redução acentuada de urina, edema relevante, cefaleia com hipertensão, alteração neurológica ou piora do estado geral. Deve existir **data concreta de reavaliação para pressão arterial e urina**, mesmo após cessar o rash. Comunicar que a maioria tem recuperação favorável, mas ausência de lesões de pele não significa cura renal demonstrada.
+
+## 6. Febre reumática: autoimunidade pós-estreptocócica, não vasculite
+
+### 6.1. Por que este capítulo está na apostila 204?
+
+Febre reumática tem relevância endêmica em contextos com barreiras de acesso a diagnóstico e tratamento da infecção estreptocócica. Clinicamente, participa do diagnóstico diferencial de artrite, febre e inflamação sistêmica em idade escolar. Entretanto, não é vasculite por deposição de imunocomplexos como a vasculite por IgA, nem artrite crônica idiopática como a AIJ. A distinção evita confundir mecanismos, necessidade de profilaxia antibiótica e prognóstico cardíaco.
+
+O episódio costuma ocorrer semanas após infecção por estreptococo do grupo A. Artrite e cardite podem manifestar-se após período de latência, quando não há mais dor de garganta. Coréia de Sydenham pode ocorrer ainda mais tarde, por vezes sem outros sinais agudos. Esse comportamento temporal é um dos maiores diferenciais com artrite séptica e Kawasaki.
+
+### 6.2. Fisiopatologia e dano valvar
+
+Proteínas estreptocócicas e antígenos do hospedeiro podem apresentar epítopos com semelhança suficiente para reatividade cruzada. Linfócitos e anticorpos participam da inflamação de articulações, tecido cardíaco e sistema nervoso central. A cardite pode acometer endocárdio/valvas, e o componente clinicamente mais importante de longo prazo é o dano valvar, com insuficiência ou estenose crônica. A doença cardíaca reumática pode provocar insuficiência cardíaca, arritmias, endocardite e necessidade futura de intervenção valvar.
+
+A artrite costuma responder bem a anti-inflamatórios e resolver sem erosões, enquanto a lesão valvar pode deixar sequela. Essa assimetria prognóstica justifica uma regra prática: **alívio articular nunca substitui procura e monitorização de cardite**.
+
+### 6.3. Manifestações maiores e menores nos critérios de Jones
+
+A estrutura clássica integra manifestações **maiores**, manifestações **menores** e evidência de infecção estreptocócica anterior. Entre os critérios maiores figuram cardite clínica ou subclínica, artrite, coréia de Sydenham, eritema marginado e nódulos subcutâneos. A forma exata de contabilização articular e valores de febre/marcadores inflamatórios varia segundo estratificação de risco populacional nas revisões de Jones; por isso, a aplicação tem de utilizar a tabela vigente para população de baixo ou moderado/alto risco.
+
+Manifestações menores incluem febre, artralgia (se não contabilizada como maior), elevação de PCR/VHS e prolongamento de PR no ECG quando não empregado como parte de cardite. **O mesmo achado não pode ser contado duas vezes**, como somar artrite maior com artralgia menor referente ao mesmo episódio.
+
+Na apresentação inaugural típica, dois critérios maiores ou um maior mais dois menores, somados à evidência de infecção prévia por estreptococo, sustentam o diagnóstico quando os demais pressupostos estão atendidos. Exceções importantes incluem apresentação com coréia isolada ou cardite indolente tardia, nas quais sorologia estreptocócica pode já ter normalizado. Diagnosticar não é simplesmente “colocar check em caixas”; exige avaliar epidemiologia, tempo e alternativas.
+
+### 6.4. Como demonstrar infecção estreptocócica prévia?
+
+Podem contribuir cultura ou teste rápido de faringe positivos em contexto apropriado e sorologia com elevação de anticorpos antiestreptocócicos, como antiestreptolisina O (ASLO) e anti-DNase B. **ASLO elevado mostra exposição imunológica, não prova sozinho que a artrite é reumática.** Títulos isolados sofrem influência de prevalência de contato prévio na comunidade, e elevação seriada pode ser mais informativa. O exame deve ser interpretado junto da síndrome clínica.
+
+O fato de a garganta estar normal não afasta evento estreptocócico prévio. Por outro lado, febre e dor articular em criança com teste de faringe positivo podem decorrer de outra doença e colonização faríngea; não se deve saltar diagnóstico sem atender critérios clínicos.
+
+### 6.5. Como procurar cardite clínica e subclínica?
+
+Auscultar sopros novos, ritmo de galope, atrito pericárdico, procurar taquicardia desproporcional à febre, sinais de congestão, dispneia e intolerância ao exercício. **Ecocardiograma com Doppler** deve integrar investigação de suspeita de febre reumática e pode mostrar valvulite sem sopro audível, configurando cardite subclínica conforme critérios padronizados. Diferenciar refluxo fisiológico discreto de regurgitação patológica exige critérios técnicos, espessamento e achados consistentes, não apenas menção inespecífica a “refluxo discreto”.
+
+O ECG é útil para intervalo PR, ritmo e outros achados; radiografia de tórax pode mostrar cardiomegalia/congestão em doença significativa, mas não substitui ecocardiograma. Uma criança com artrite migratória que deixou de apresentar dor após AINE **ainda pode ter lesão cardíaca silenciosa**.
+
+### 6.6. Artrite e coréia: manifestações distintivas
+
+**Artrite reumática:** tipicamente grandes articulações, caráter migratório, início relativamente agudo e resposta ao anti-inflamatório. A inflamação pode desaparecer de um joelho à medida que surge em outro. Em populações de maior risco, monoartrite e apresentações menos clássicas recebem tratamento classificatório específico nas revisões de Jones.
+
+**Coréia de Sydenham:** movimentos involuntários irregulares e rápidos, dificuldades motoras/escolares e labilidade emocional. Pode haver hipotonia, alterações de fala e piora funcional. Diferenciais incluem distúrbios neurológicos, uso de medicamentos e outras doenças autoimunes. Além de investigar cardite, pode ser necessária assistência neurológica, escolar e psicossocial. A apresentação tardia pode tornar difícil demonstrar estreptococcia recente.
+
+**Eritema marginado e nódulos subcutâneos:** são menos frequentes, mas úteis quando presentes e bem reconhecidos. Rash em anéis, fugaz, no tronco/proximidade de membros, sem prurido marcante, e nódulos firmes indolores sobre superfícies extensoras/tendões podem acompanhar cardite.
+
+### 6.7. Tratamento agudo e prevenção secundária
+
+O plano possui componentes diferentes: **erradicação do estreptococo**, controle de inflamação/sintomas, avaliação do coração e **profilaxia secundária prolongada**. A antibioticoterapia para erradicação é indicada conforme protocolos, mesmo se cultura atual negativa, quando o diagnóstico reumático está estabelecido e há necessidade de erradicar potencial colonização. Penicilina benzatina intramuscular é opção habitual; alternativas em alergia precisam ser escolhidas conforme tipo de reação e resistência local.
+
+Para artrite, considerar salicilatos ou outros anti-inflamatórios conforme avaliação clínica e protocolos; para cardite grave/insuficiência cardíaca, tratamento hospitalar dirigido por cardiologia e medidas de suporte. O papel de corticosteroides em cardite deve ser individualizado; não prometer que eliminam risco de valvopatia futura. Coréia grave pode exigir fármacos sintomáticos e avaliação neurológica, além de profilaxia.
+
+**Prevenção de recorrência:** penicilina G benzatina intramuscular em intervalos regulares, historicamente **a cada 21 dias em muitos protocolos brasileiros**, enquanto CDC descreve intervalos de 3–4 semanas, ajustados à realidade epidemiológica e ao protocolo. Não transpor automaticamente uma periodicidade para outra sem justificativa. Duração depende de episódios, presença de cardite, doença valvar residual, risco individual e recomendações nacionais. Em casos com doença valvar importante, pode ser indicada por décadas; alta não significa abandono da profilaxia.
+
+É indispensável registrar peso, alergias, acesso à unidade de saúde, calendário de aplicações e dificuldades de adesão. A principal falha evitável é tratar apenas o primeiro episódio e perder a criança do seguimento.
+
+### 6.8. Comparar febre reumática com artrite pós-estreptocócica não reumática
+
+Artrite reativa pós-estreptocócica pode ocorrer após infecção estreptocócica sem cumprir critérios completos de febre reumática. O padrão articular pode ser mais persistente e menos migratório, e a relação temporal pode diferir. Porém, a distinção não é perfeita e requer avaliação cardiológica. Em suspeita diagnóstica com sinais cardíacos, nunca descartar cardite só porque o padrão articular não é “de livro”. A conduta sobre seguimento e eventual profilaxia deve seguir avaliação especializada/protocolos, reconhecendo incerteza residual.
+
+### 6.9. Duas armadilhas comuns de prova
+
+**Armadilha 1:** “ASLO 800, logo febre reumática.” Errado: sorologia isolada evidencia exposição, não manifestação maior.  
+**Armadilha 2:** “Artrite desapareceu após aspirina, logo problema resolvido.” Errado: cardite pode ser silenciosa e profilaxia prolongada é medida central de prevenção de sequelas.
+
+## 7. Quatro algoritmos clínicos úteis para o pronto atendimento
+
+### Algoritmo A — criança com febre, rash e inflamação sistêmica
+
+1. **Estabilizar primeiro:** ABCDE, perfusão, consciência, sinais de sepse, oxigenação; tratar choque e infecção grave segundo protocolo sem aguardar conclusão reumatológica.
+2. **Cronologia:** quantos dias de febre? sinais mucocutâneos persistem ou apareceram em momentos distintos? exposição/contato viral? fármacos?
+3. **Fenótipo do rash:** púrpura palpável não branqueável em áreas dependentes → pensar em IgAV, mas excluir sepse/trombocitopenia. Exantema polimórfico + boca/conjuntivas/extremidades → Kawasaki.
+4. **Órgãos:** dor abdominal, oligúria, pressão alterada, sopro, disfunção miocárdica e sintomas neurológicos mudam urgência.
+5. **Testes direcionados:** hemograma/plaquetas, PCR/VHS, urina, creatinina, função hepática, culturas quando suspeita infecciosa; ECG/eco se Kawasaki, FR ou disfunção.
+6. **Decisão:** não esperar todos os sinais de Kawasaki em lactente de risco; não dar alta à IgAV sem plano de urina/PA; não esquecer MIS-C/choque tóxico/sepse.
+
+### Algoritmo B — criança com artrite
+
+1. **Existe articulação agudamente quente, dor intensa, limitação passiva e incapacidade de apoiar?** Excluir artrite séptica com urgência.
+2. **Duração ≥6 semanas, sinovite persistente e rigidez:** considerar AIJ após excluir causas secundárias.
+3. **Artrite migratória semanas após faringite/impetigo:** pesquisar FR com critérios de Jones, ECG, eco e evidência estreptocócica.
+4. **Artrite com púrpura típica:** pensar IgAV e pesquisar rim.
+5. **Febre diária + rash evanescente + inflamação muito importante:** AIJ sistêmica, sepse, malignidade e SAM no diferencial; conferir ferritina/plaquetas/fibrinogênio conforme risco.
+6. **Seguimento:** função, dor, escola, crescimento, visão e carga de tratamento têm o mesmo valor prático de marcador sérico.
+
+### Algoritmo C — púrpura não trombocitopênica
+
+1. Excluir doença séptica rapidamente progressiva e sangramento grave.
+2. Hemograma e plaquetas, PA, urina; creatinina e quantificação de proteína se indicado.
+3. Identificar rash típico em membros inferiores, dor abdominal, artralgia, edema e sinais renais.
+4. Dor abdominal intensa ou sinais de oclusão/intussuscepção → imagem/avaliação cirúrgica.
+5. Proteinúria relevante, hipertensão ou alteração de função → nefrologia pediátrica e investigação de nefrite.
+6. Alta de quadro leve apenas com informação escrita de retorno e **calendário de reavaliação renal**.
+
+### Algoritmo D — suspeita de Kawasaki
+
+1. Febre persistente e sinais mucocutâneos → exame minucioso e história dos dias prévios.
+2. Criança com critérios típicos ou suspeita incompleta relevante → avaliação especializada sem atraso; colher marcadores e eco.
+3. Avaliar escores Z coronarianos, função miocárdica e fatores de alto risco.
+4. Se diagnóstico confirmado/provável → IVIG e abordagem anti-inflamatória/antiagregante sob protocolo, ajustando alto risco.
+5. Reavaliar persistência de febre após tratamento e excluir outras causas.
+6. Garantir ecocardiogramas seriados, estratificação do risco coronariano e comunicação sobre vacinas pós-IVIG.
+
+## 8. Quadro-mestre de exames: pedir, interpretar, agir
+
+| Exame | Quando interessa | O que ele diz | O que ele NÃO diz |
+|---|---|---|---|
+| Hemograma + plaquetas | todas as síndromes de febre/rash/artrite conforme gravidade | anemia, leucocitose, citopenias, trombocitose tardia | plaquetas normais iniciais não excluem Kawasaki |
+| PCR e VHS | inflamação, AIJ, Kawasaki, FR | tendência e suporte à atividade | marcador normal não exclui AIJ; elevação não separa autoimune de infecção |
+| Ferritina | AIJ sistêmica e suspeita de SAM | intensidade e tendência da hiperinflamação | elevação isolada não fecha SAM |
+| Urina com sedimento | IgAV sempre e outras condições com risco renal | hematúria, cilindros, proteína | uma urina normal não substitui reavaliação |
+| Proteína/creatinina urinária | proteinúria suspeita/confirmada | quantifica perda, orienta risco | amostra isolada não substitui tendência/contexto |
+| Creatinina/eTFG | doença renal, doença sistêmica, toxicidade | função renal estimada | pode estar normal em nefropatia precoce |
+| FAN | certos fenótipos de AIJ e suspeita de colagenose | associação e estratificação ocular | FAN positivo não é diagnóstico de AIJ/LES |
+| FR e anti-CCP | poliartrite selecionada | estratificam fenótipo | FR negativo não exclui AIJ |
+| ASLO/anti-DNase B | suspeita de febre reumática | contato imunológico com GAS | ASLO alto sozinho não prova FR |
+| Ecocardiograma com Doppler | Kawasaki, FR e disfunção cardíaca | coronárias, valvas, função e escore Z | exame normal precoce não afasta Kawasaki |
+| ECG | FR/Kawasaki e repercussão cardíaca | PR, arritmias e sinais indiretos | não substitui eco |
+| US articular | sinovite/derrame superficial | inflamação e auxílio a procedimentos | não exclui infecção sozinho |
+| US abdominal | IgAV com dor abdominal complicada | invaginação e outras alterações | não substitui reavaliação quando dor progride |
+| Exame oftalmológico em lâmpada de fenda | AIJ conforme risco | identifica uveíte subclínica | olho externamente branco não exclui uveíte |
+
+## 9. Situações especiais e considerações de segurança
+
+### 9.1. Lactentes abaixo de seis meses
+
+Kawasaki nessa idade pode ter febre prolongada e sinais clínicos incompletos, mas complicações coronarianas relevantes. Exigir valorização de febre persistente sem foco e acompanhamento seriado se a suspeita não puder ser encerrada. IgAV é menos típica em lactentes pequenos; pensar amplamente em doença hematológica, infecções e outros diagnósticos. Dose de medicação deve ser aferida por peso e capacidade de monitorização.
+
+### 9.2. Criança imunossuprimida
+
+Febre ou articulação inflamada em paciente com AIJ em uso de metotrexato/biológico pode representar infecção oportunista ou bacteriana, não apenas exacerbação. Suspender ou modificar imunomodulação durante infecções requer plano individualizado com equipe assistente. Conferir vacinas antes de terapia e contraindicações de vacinas vivas durante imunossupressão importante.
+
+### 9.3. Adolescentes
+
+Avaliar autonomia progressiva, adesão, saúde mental, atividade física, menstruação, sexualidade e transição da pediatria para serviço adulto. Metotrexato e alguns imunomoduladores podem ter risco fetal relevante; aconselhamento contraceptivo/reprodutivo deve ser não coercitivo, confidencial dentro da legislação e apropriado à maturidade. A possibilidade de intoxicação e consumo de álcool altera segurança hepática e adesão.
+
+### 9.4. Diferentes fenótipos cutâneos
+
+A visibilidade de eritema e púrpura varia conforme fototipo, temperatura e iluminação. O diagnóstico deve valorizar textura, distribuição, palpação, edema, sintomas sistêmicos e imagens de qualidade em diversidade de peles. Não criar dependência de fotografia única de paciente de pele clara como “padrão obrigatório”.
+
+### 9.5. Falta de acesso a eco e specialist
+
+Quando há suspeita consistente de Kawasaki, cardite reumática, AIJ sistêmica/SAM ou IgAV renal grave, acesso limitado a imagem não autoriza rebaixar gravidade. Priorizar transferência/regulação para centro habilitado, documentando sinais, evolução e exames acessíveis; garantir estabilização e comunicação com serviço de referência. Para casos leves de IgAV, APS pode participar do calendário de PA e urina, desde que exista plano de referência rápida para alterações.
+
+## 10. Complicações e prognóstico: o que muda a vida da criança?
+
+**AIJ:** sinovite persistente pode causar limitação funcional, lesão articular, assimetria de crescimento e alterações mandibulares. Uveíte sem rastreio pode levar a catarata, glaucoma e perda visual. Na AIJ sistêmica, SAM exige reconhecimento precoce. Prognóstico melhora muito com diagnóstico e terapia guiados por alvo, mas depende de fenótipo, resposta e acesso.
+
+**Kawasaki:** aneurismas coronarianos, trombose, estenose e evento isquêmico são complicações-chave. Risco tardio depende do maior diâmetro/escore Z alcançado e da evolução anatômica. Pequena dilatação que normaliza tem risco muito distinto de aneurisma gigante persistente; ambos exigem informação documental clara para não perder histórico cardiovascular na vida adulta.
+
+**IgAV:** maioria dos episódios cutâneos e articulares resolve, mas recidivas existem. Evolução renal mais grave relaciona-se a proteinúria persistente, hipertensão, função reduzida e histologia de risco. Não estimar prognóstico por aparência da pele nem por ausência de dor.
+
+**Febre reumática:** a articulação frequentemente recupera, mas a valva pode acumular dano em recorrências. Profilaxia secundária e acesso estável à rede são intervenções com impacto de longo prazo. Criar plano que seja realisticamente cumprível e integrado ao SUS é parte do tratamento, não mero detalhe administrativo.
+
+## 11. Pérolas de prova — raciocínio sem decoreba
+
+- Kawasaki é diagnóstico **clínico**; não esperar anticorpo específico.
+- Kawasaki **incompleto não significa benigno**; lactente jovem e coronárias alteradas exigem atenção.
+- Escore Z coronariano depende de superfície corporal; valor em milímetros isolado engana.
+- Trombocitose pode surgir na fase subaguda de Kawasaki; hemograma inicial normal não exclui.
+- AAS no Kawasaki é prescrição específica e supervisionada, não antitérmico doméstico rotineiro.
+- AIJ requer artrite persistente, mas suspeita e encaminhamento não precisam esperar seis semanas em quadro grave.
+- FAN ajuda a estratificar risco de uveíte, mas não confirma artrite.
+- Uveíte crônica pode ocorrer **sem olho vermelho**.
+- Metotrexato reumatológico é **semanal**, informação de segurança essencial.
+- Febre intensa e ferritina ascendente, com citopenias e coagulopatia em AIJ sistêmica, lembram SAM.
+- IgAV costuma apresentar púrpura palpável de membros inferiores com plaquetas preservadas.
+- Dor abdominal intensa em IgAV pode esconder invaginação intestinal.
+- Glicocorticoides **não** são estratégia comprovada para prevenir nefrite em IgAV sem lesão renal.
+- Na IgAV, urina e PA devem ser acompanhadas mesmo após sumir a púrpura.
+- Febre reumática não é vasculite e não é sinônimo de artrite séptica.
+- Artrite migratória pós-estreptocócica pede avaliação para cardite, inclusive **subclínica**.
+- ASLO aumentado isoladamente não é critério suficiente para febre reumática.
+- Regressão da artrite não substitui profilaxia secundária em FR confirmada.
+- No Brasil, protocolos de profilaxia podem adotar aplicação de penicilina benzatina a cada 21 dias; sempre conferir protocolo, necessidade e duração individual.
+- Febre + púrpura progressiva + toxemia/choque não é “púrpura da vasculite” até que sepse grave seja adequadamente abordada.
+
