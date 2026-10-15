@@ -38,12 +38,12 @@ def selector():
     return import_script("select_ptbxl_candidates")
 
 
-def make_synthetic_wfdb(root: Path, ecg_id: str, amplitude=0.3, bad_lead=False):
+def make_synthetic_wfdb(root: Path, ecg_id: str, amplitude=0.3, bad_lead=False, resolution=100):
     """Create nonclinical sine wave test record in a WFDB 16-bit container."""
-    folder = root / "records100" / f"{int(ecg_id)//1000*1000:05d}"
+    folder = root / f"records{resolution}" / f"{int(ecg_id)//1000*1000:05d}"
     folder.mkdir(parents=True, exist_ok=True)
-    path = folder / f"{ecg_id}_lr"
-    hz, n = 100, 1000
+    path = folder / f"{ecg_id}_{'lr' if resolution == 100 else 'hr'}"
+    hz, n = resolution, resolution * 10
     ts = np.arange(n) / hz
     mvolts = np.stack(
         [amplitude * np.sin(2*np.pi*(1.2+0.05*i)*ts) for i in range(12)],
@@ -89,13 +89,27 @@ def test_renderer_writes_test_webp_but_no_medical_label(renderer, tmp_path):
     assert result["bytes"] == output.stat().st_size
 
 
-def test_out_of_range_millivolts_fail_closed(renderer, tmp_path):
-    make_synthetic_wfdb(tmp_path, "00004", amplitude=4.6)
+def test_nonfinite_millivolts_fail_closed(renderer, tmp_path):
+    make_synthetic_wfdb(tmp_path, "00004", amplitude=0.4)
     values, fs, leads, _ = renderer.read_record(tmp_path, "00004")
-    with pytest.raises(ValueError, match="3.5 mV"):
-        renderer.render_record(
-            values, fs, leads, tmp_path / "test.webp", 120
-        )
+    values[9, 1] = float('nan')
+    with pytest.raises(ValueError, match="Nonfinite"):
+        renderer.render_record(values, fs, leads, tmp_path / "test.webp", 120)
+
+
+def test_original_500hz_wfdb_and_uniform_scale(renderer, tmp_path):
+    make_synthetic_wfdb(tmp_path, "00005", amplitude=0.6, resolution=500)
+    values, fs, leads, header = renderer.read_record(tmp_path, "00005", resolution=500)
+    assert values.shape == (5000, 12)
+    assert fs == 500 and header.name == "00005_hr.hea"
+    output = tmp_path / "original-500hz-NOT-A-CLINICAL-ECG.webp"
+    result = renderer.render_record(values, fs, leads, output, 120)
+    assert output.exists() and result["bytes"] <= 120 * 1024
+    assert result["uniform_ylim_mv"] >= 2.0
+    with pytest.raises(FileNotFoundError):
+        renderer.read_record(tmp_path, "00005", resolution=100)
+    with pytest.raises(ValueError, match="Resolution"):
+        renderer.read_record(tmp_path, "00005", resolution=123)
 
 
 def test_selector_prefers_human_reviewed_fold_and_omits_personal_id(selector, tmp_path):
