@@ -182,3 +182,153 @@ CA-125 e ultrassonografia transvaginal como rastreamento populacional de mulhere
 
 Medir pressão arterial na APS e manejar risco cardiovascular comprovadamente modificável tem fundamento clínico, mas realizar pacotes indiscriminados de exames de imagem cardiovascular, ecocardiogramas e teste ergométrico em assintomáticos de baixo risco pode criar cascatas. A revisão OMS Europa de 2024 descreve benefícios limitados de certos programas populacionais de rastreamento cardiovascular e a possibilidade de sobrediagnóstico/sobretratamento em contextos estudados. Não concluir por isso que **diagnóstico e tratamento de hipertensão** são dispensáveis; o tipo de programa, o exame, a população e a intervenção subsequente precisam ser diferenciados.
 
+
+
+## 11. Quando a vigilância de alto risco não segue a recomendação populacional
+
+Uma recomendação de rastreamento para população de risco habitual não substitui seguimento de pessoas com **síndromes hereditárias, lesão precursora conhecida, doença inflamatória crônica ou exposição carcinogênica particular**. Na síndrome de Lynch, por exemplo, a estratégia colorretal pode exigir colonoscopias em intervalos e idades diferentes daqueles do FIT bienal proposto para risco médio. Histórico de neoplasia colorretal ou pólipos avançados também muda o protocolo. Para câncer de mama, portadoras de variantes patogênicas em genes de susceptibilidade e certas histórias de radioterapia torácica podem receber combinação de ressonância e mamografia sob acompanhamento especializado.
+
+É incorreto dizer que "o rastreamento começa mais cedo para toda pessoa com um familiar com câncer". O grau de parentesco, número de afetados, idades dos diagnósticos, linhagem familiar e padrão tumoral modificam risco e necessidade de aconselhamento genético. Uma tia-avó com diagnóstico tardio isolado não equivale a múltiplos parentes de primeiro grau com câncer precoce. A coleta de história familiar estruturada na APS ajuda a identificar quem necessita de uma **via de alto risco**, sem submeter pessoas de risco habitual a exames de alta intensidade.
+
+No colo uterino, imunossupressão por HIV ou transplante, tratamento prévio de NIC de alto grau e outros grupos podem requerer intervalos e seguimento diferentes. Após histerectomia total por doença benigna com colo removido e sem história de lesão relevante, o rastreio cervical não segue automaticamente a mesma lógica de uma pessoa com colo intacto; a decisão depende de história histológica e protocolo. A pergunta-chave não é apenas "qual sua idade?", mas "a pessoa se enquadra no programa de risco habitual?"
+
+### 11.1 Descobrir risco alto não é sinônimo de solicitar teste imediatamente
+
+Se história sugere síndrome genética, o caminho pode incluir encaminhamento para genética clínica, revisão de laudos familiares, aconselhamento sobre resultados e consentimento, e então plano de vigilância. Testes genéticos sem probabilidade pré-teste adequada podem identificar variantes de significado incerto que geram ansiedade e intervenções sem indicação. A identificação de risco hereditário verdadeiro pode beneficiar parentes, mas a comunicação exige privacidade, clareza e acesso a acompanhamento.
+
+## 12. Como medir a qualidade de um programa sem confundir volume com benefício
+
+**Cobertura** é proporção da população elegível que recebeu rastreamento no intervalo recomendado; não é simplesmente a quantidade de exames realizados. A mesma pessoa pode fazer quatro exames num período, enquanto outras nunca são alcançadas. **Adesão à investigação** mede quantos com teste positivo concluíram confirmação apropriada em tempo oportuno. **Tempo até tratamento** avalia se o sistema transforma detecção em benefício. **Taxa de positividade** requer interpretação com idade, risco, qualidade de amostra e ponto de corte; não é desejável maximizar positividade sem distinguir falsos positivos.
+
+Outros indicadores incluem proporção de exames inadequados, taxa de reconvocação, complicações, taxas de câncer de intervalo, estágio ao diagnóstico, falsos positivos, sobrediagnóstico estimado, mortalidade específica e desigualdades. Uma queda de mortalidade pode também refletir melhor tratamento e prevenção primária, e não apenas rastreamento; a avaliação deve buscar desenhos que permitam atribuição causal plausível.
+
+### 12.1 O problema dos indicadores intermediários
+
+Detectar mais lesões pequenas parece avanço, mas pode aumentar sobrediagnóstico. Encontrar maior porcentagem de doença em estágio inicial não prova, isoladamente, redução de morte. **Câncer de intervalo** é diagnosticado entre rodadas em quem teve teste anterior negativo; pode refletir sensibilidade limitada, crescimento rápido ou falha operacional. Monitorá-lo ajuda a revisar limiares e intervalos. Porém, reduzir câncer de intervalo à custa de grande aumento de sobretratamento pode não representar melhora líquida, especialmente se mortalidade não muda.
+
+### 12.2 Programa oportunístico versus organizado
+
+Oportunístico: paciente comparece por outro motivo, e profissional lembra de testar. É útil para alcançar algumas pessoas, mas pode reforçar desigualdade e exames repetidos nos usuários mais frequentes. Organizado: usa cadastro populacional, convite ativo, intervalo adequado, registro único, confirmação e monitoramento dos desfechos. A migração do rastreio cervical brasileiro para DNA-HPV primário é oportunidade de organizar a cadeia, não apenas substituir uma lâmina por um tubo de coleta.
+
+No SUS, qualidade depende de regulação, transporte de amostras, laboratório, registro de resultados, agendamento de colposcopia/colonoscopia, anatomopatológico e tratamento. Manter cadastro de exames pendentes sem acompanhamento é problema de segurança. A prevenção quaternária também exige fechar o ciclo de um resultado alterado, evitando exames repetidos porque o primeiro foi extraviado.
+
+## 13. Prevenção quaternária: definição clínica e origem ética
+
+A **prevenção quaternária** é abordagem de cuidado que busca identificar pessoas em risco de intervenção médica excessiva e oferecer alternativas eticamente aceitáveis para proteger contra dano iatrogênico. Não é "quarto exame" nem uma fase fixa após o tratamento terciário; atravessa prevenção primária, secundária, terciária e toda assistência. No centro estão a **proporcionalidade das intervenções**, a comunicação de incerteza, a continuidade do cuidado e a recusa de práticas desnecessárias.
+
+Em uma UBS, prevenção quaternária pode ser: não prescrever antibiótico para infecção viral autolimitada; não tratar bacteriúria assintomática em idoso sem indicação; não solicitar tomografia para cefaleia sem sinais de alarme; evitar marcador tumoral universal sem benefício demonstrado; revisar benzodiazepínico crônico; interromper duplicação medicamentosa; ou evitar rastreamento após expectativa de vida limitada quando danos imediatos superam benefício provável. Cada exemplo tem exceções: uma cefaleia em trovoada exige avaliação urgente, e uma gestante com bacteriúria assintomática pode precisar de terapia. **Raciocínio clínico não é uma lista de “não fazer” descontextualizada.**
+
+### 13.1 Por que a boa intenção pode causar dano
+
+Profissionais muitas vezes recebem recompensa simbólica por "investigar tudo" e temem perder doença grave; pacientes associam número de exames à qualidade da consulta; sistemas podem incentivar produtividade medida por procedimentos. Isso produz *overuse* — uso excessivo de intervenções com baixo benefício líquido. Há também **underuse**, quando cuidado eficaz é negado a pessoas elegíveis. Prevenção quaternária deve combater ambos: reduzir intervenções de baixo valor para liberar atenção, tempo e recursos para tratamentos e exames que de fato beneficiam pessoas.
+
+O conceito dialoga com **medicalização**, **iatrogenia**, **sobrediagnóstico** e **sobrereatamento**, mas não são sinônimos. Medicalização amplia o domínio médico para experiências humanas antes não tratadas como doença; iatrogenia é dano produzido pela assistência; sobrediagnóstico identifica doença biologicamente real que não seria clinicamente relevante. É possível haver exames excessivos sem sobrediagnóstico, por exemplo teste falso positivo que gerou ansiedade e angiografia desnecessária.
+
+### 13.2 A consulta orientada por valores
+
+Perguntar "o que te preocupa?", "o que espera do exame?" e "o que aconteceria se encontrássemos uma alteração que talvez nunca fizesse mal?". Oferecer alternativa de acompanhamento clínico quando apropriada, com sinais de retorno, demonstra cuidado ativo. "Não solicitar hoje" precisa vir acompanhado de explicação sobre probabilidade, sinais de alarme, prazos de reavaliação e participação da pessoa na decisão, e não de negligência.
+
+## 14. Cascata diagnóstica: um exame fora de indicação pode multiplicar intervenções
+
+Considere um check-up de pessoa de 28 anos sem sintomas, fatores de risco nem achados no exame. É solicitado ultrassom de tireoide "para prevenção"; encontra-se nódulo pequeno de baixo risco. Seguem ultrassons frequentes, punção, resultado indeterminado, cirurgia e hipoparatireoidismo pós-operatório. Nem todo caso segue essa evolução, mas a possibilidade ilustra como um teste de baixa utilidade inicial pode gerar **cascata** de consequências. A fase mais eficiente de prevenção quaternária frequentemente ocorre **antes da solicitação do primeiro exame**, quando indicação e decisão são discutidas.
+
+O dano de rastreamento não se encerra no exame índice. Mesmo teste sem radiação pode gerar anticoagulação desnecessária, cirurgia, infecção relacionada a procedimento, incapacidade temporária, falta ao trabalho e sofrimento emocional. Ao propor um novo exame na APS, imaginar a sequência de resultados plausíveis: negativo, positivo verdadeiro, positivo falso, incidentaloma, resultado inconclusivo. Para cada um, perguntar se existe acesso a confirmação e conduta com benefício demonstrado.
+
+### 14.1 Decisão à frente da probabilidade
+
+A ação médica depende de **limiares de decisão**: abaixo de certa probabilidade, não investigar pode ser mais razoável; acima, tratar diretamente pode ser mais eficiente em alguns cenários; entre ambos, um teste pode alterar conduta. Os limiares dependem de gravidade, riscos da intervenção, consequências de falso negativo e valores. Uma doença letal tratável pode justificar investigação com probabilidade pré-teste baixa; um achado indolente com tratamento agressivo exige muito mais cautela. **O objetivo não é testar até restar zero incerteza**, meta impossível.
+
+### 14.2 Documentação de decisões de não rastrear
+
+Registrar que o paciente é assintomático, risco individual, recomendação aplicável, benefícios e danos discutidos, preferência e plano de seguimento. Não criar "termo de recusa" para constranger paciente a aceitar exame de rastreamento; documentação deve ser proporcional e servir à continuidade. Também não apresentar intervalo do programa como proibição de diagnosticar sintomas antes da próxima rodada.
+
+## 15. Desprescrição e polifarmácia: prevenção quaternária no cuidado longitudinal
+
+Desprescrever é revisar e, quando apropriado, reduzir ou suspender medicamentos cuja relação benefício/risco se tornou desfavorável, com monitorização. Em idosos frágeis com polifarmácia, um medicamento iniciado por indicação transitória pode persistir anos sem reavaliação. Duplicação de AINEs, benzodiazepínicos crônicos, IBP sem indicação duradoura e fármacos que aumentam quedas são exemplos de alvos de revisão. Contudo, **suspensão abrupta** de benzodiazepínicos, certos antidepressivos, betabloqueadores e corticoides crônicos pode provocar efeitos de retirada ou descompensação; o plano deve ser individualizado e frequentemente gradual.
+
+Perguntar: qual era a indicação original? Ainda está presente? Qual o benefício esperado no horizonte de vida atual? Houve evento adverso? Existe alternativa não farmacológica? O medicamento tem forte evidência de prevenir evento importante nesta pessoa ou apenas melhora marcador substituto? Há necessidade de exames de monitorização ou interações? Se interrompido, que sintomas precisam ser observados e quando reavaliar?
+
+### 15.1 Prevenção quaternária não é "parar todos os remédios"
+
+Algumas intervenções de alto valor, como anticoagulação em indicação robusta, tratamento de insuficiência cardíaca e vacinas recomendadas, não devem ser suspensas por medo inespecífico de iatrogenia. Desprescrição sem revisão de risco pode ser tão danosa quanto prescrição excessiva. Ao considerar suspender estatina em pessoa com doença aterosclerótica estabelecida ou anticoagulante após tromboembolismo, a diferença entre prevenção primária e secundária, prognóstico, tempo até benefício e risco de recorrência é decisiva.
+
+### 15.2 Quando o paciente pede "todos os exames"
+
+A demanda pode ser expressão de medo, perda familiar recente, sintomas não revelados ou falta de acesso prévio. Responder com negação automática não aborda a preocupação. Investigar contexto, revisar vacinas e rastreamentos recomendados, explicar por que um painel indiscriminado pode produzir mais falsos positivos e propor acompanhamento definido. Uma consulta orientada por prevenção quaternária **não é menos cuidadosa**: frequentemente exige mais explicação e coordenação.
+
+## 16. Incidentalomas e resultados limítrofes: trabalhar com incerteza sem transformar toda alteração em doença
+
+Exames laboratoriais de rotina em painéis amplos aumentam chance de pelo menos um valor fora do intervalo de referência, mesmo em pessoas saudáveis. Um "valor fora do normal" não prova doença: o intervalo frequentemente descreve distribuição de referência, não limiar para tratar. Repetir teste, conferir preparo, horário, variação biológica e pré-teste pode ser mais adequado que iniciar medicação ou pedir imagem invasiva imediatamente. O raciocínio precisa levar em conta a magnitude da alteração e sintomas; valores críticos ou combinações sugestivas de urgência não podem ser ignorados.
+
+**Achados radiológicos incidentais** incluem cistos renais simples, pequenos nódulos pulmonares, lesões suprarrenais e nódulos tireoidianos. Alguns demandam investigação, outros apenas documentação ou nenhum seguimento; critérios dependem de características de imagem, tamanho, fatores de risco, expectativa de vida e recomendações específicas. A prevenção quaternária é aplicar corretamente protocolos de incidentaloma, sem pedir TC serial de toda lesão benigna.
+
+### 16.1 O efeito do limiar de doença
+
+Quando um ponto de corte é reduzido, mais pessoas passam a receber diagnóstico e talvez tratamento. Isso pode ser benéfico se há evidência robusta de redução absoluta de eventos com dano aceitável, mas pode medicalizar pessoas de baixo risco se benefício é pequeno. Pressão arterial, colesterol, densidade mineral óssea e glicemia exigem avaliação de risco global e objetivo clínico, não apenas reclassificação automática por um número. **Risco de doença** e **doença presente** são conceitos distintos; tratar fator de risco comprovado pode ser apropriado, mas exige estimar benefício absoluto.
+
+## 17. Comunicação do risco e tomada de decisão compartilhada
+
+A comunicação ideal traduz estatística para perguntas relevantes: "quantas pessoas como eu realmente são beneficiadas?", "quanto tempo demoraria para aparecer benefício?", "que danos são possíveis?", "o resultado alterado exige o quê?", "posso decidir não fazer?", "quando deveria procurar atendimento mesmo depois de exame normal?". Explicar números absolutos por mesmo denominador e período, reconhecendo imprecisão e diferenças de risco individual.
+
+Evitar **viés de enquadramento**: "reduz mortes em 25%" parece mais impressionante que "de 4 em 1.000 para 3 em 1.000", embora ambos descrevam mesmo efeito fictício. Em material educativo, preferir lado a lado redução relativa e absoluta, número de falso positivo, sobrediagnóstico estimado e horizonte. Dizer "todos deveriam fazer porque o exame é simples" omite etapa confirmatória. O processo de consentimento não é apenas coleta de assinatura; requer oportunidade real de perguntas e recusa sem perda de cuidados.
+
+### 17.1 Aconselhamento de rastreio solicitado fora do protocolo
+
+Uma mulher de 43 anos de risco habitual solicita mamografia: explicar que o **programa populacional do SUS** recomenda 50–74 anos a cada dois anos, enquanto a nota ministerial 626/2025 admite **acesso sob demanda aos 40–49** com aconselhamento, e algumas sociedades recomendam periodicidades diferentes. Discutir vantagens e desvantagens em termos claros, registrar preferência e orientar fluxo disponível. Não dizer "é proibido no SUS antes dos 50"; tampouco apresentar acesso sob demanda como convocação populacional obrigatória aos 40.
+
+Um homem sem sintomas deseja PSA por medo de câncer na família: revisar idade, história familiar, comorbidades, expectativa de vida, benefícios e danos conforme diretriz utilizada e eventual encaminhamento, evitando afirmar falsa unanimidade. A decisão pode diferir de protocolo populacional por risco individual, mas deve explicitar fonte e período de aplicação.
+
+### 17.2 Segurança da negativa e retorno
+
+Quando não indicar rastreamento, oferecer orientações de sinais de alerta e quando buscar avaliação **diagnóstica**. Não prometer que o risco é zero por não fazer exame. Quando oferecer rastreamento, não prometer que negativo garante ausência de doença; procurar atendimento diante de sintomas novos. Uma relação longitudinal bem estruturada evita tanto exames ansiosos repetidos quanto atraso de diagnóstico por falsa tranquilização.
+
+## 18. Implementação de rastreamento organizado em uma UBS: fluxo de trabalho
+
+1. **Definir população elegível** segundo protocolo atual, risco individual e histórico de testes; atualizar cadastro e identificar pessoas sem rastreamento.
+2. **Convidar sem coerção**, explicando benefício, dano, opções e possibilidade de não participar.
+3. **Verificar disponibilidade real** de coleta, laboratório e encaminhamentos; organizar agenda e insumos.
+4. **Realizar teste com qualidade**: identificação correta, coleta/transporte, informação sobre prazo.
+5. **Registrar resultado em sistema rastreável** e comunicar tanto negativos quanto positivos, evitando extravio.
+6. **Encaminhar positivos conforme algoritmo**, sem dar diagnóstico definitivo com base no teste de rastreio isolado.
+7. **Garantir confirmação e tratamento**, com navegação ativa de quem faltou e prioridade de risco.
+8. **Atualizar periodicidade** após resultado final e registrar lesões/tratamentos que mudam seguimento.
+9. **Monitorar indicadores** por território, faixa etária, raça/cor registrada adequadamente, condições de acesso e adesão, sem estigmatizar.
+10. **Reavaliar programa** quando diretrizes, testes e recursos mudam, diminuindo exames fora de indicação.
+
+### 18.1 Ficha de alta utilidade no prontuário
+
+Para cada programa, documentar: data e tipo do último teste, resultado, conduta de seguimento, risco habitual versus alto risco, orientação dada, data estimada do próximo convite, pendências de diagnóstico e contato. No caso de DNA-HPV primário, lembrar que resultado positivo pode exigir triagem adicional, e uma coleta citopatológica antiga não deve ser traduzida sem critério em cinco anos de intervalo para teste molecular ainda não realizado.
+
+### 18.2 Um resultado positivo não localizado é evento de segurança
+
+Quando o laboratório entrega resultado alterado, mas o serviço não consegue contatar a usuária ou encaminhá-la para exame confirmatório, há risco de dano por atraso. O programa precisa ter rotinas de busca ativa, proteção de dados, respeito à confidencialidade e mecanismos de referência/contrarreferência. O objetivo não é punir faltas, mas remover barreiras como horários, transporte, medo, dificuldade de marcação e linguagem técnica.
+
+## 19. Prevenção quaternária na atenção de pessoas idosas, crianças e pessoas com comorbidades
+
+### 19.1 Idoso frágil e horizonte temporal do benefício
+
+Alguns programas de rastreamento oferecem benefício depois de anos; a expectativa de vida funcional, fragilidade, múltiplas comorbidades e preferências podem tornar dano imediato de colonoscopia ou biópsia maior que benefício esperado. Idade por si só não é suficiente para excluir, nem se deve impor rastreamento indefinidamente até o fim da vida. A decisão precisa ser individualizada e revisável, especialmente fora da faixa programática.
+
+### 19.2 Crianças: rastrear risco, não colecionar exames
+
+Puericultura inclui avaliações de crescimento, desenvolvimento, vacinação, visão/audição e outros rastreios com evidência e periodicidade pertinentes. O erro é pedir painéis extensos hormonais/hematológicos para toda criança saudável sem que isso melhore desfechos. Sinais de atraso real de desenvolvimento, baixo crescimento, história familiar relevante ou doença crônica são situações diagnósticas específicas e não devem ser ignoradas sob pretexto de "evitar exame".
+
+### 19.3 Multimorbidade e prevenção centrada na pessoa
+
+Uma pessoa com diabetes, insuficiência cardíaca, doença renal e múltiplos medicamentos pode receber recomendações de várias diretrizes independentes; somadas, podem produzir interações, excesso de exames e carga de tratamento impraticável. A prevenção quaternária implica priorização conjunta: quais intervenções têm benefício absoluto mais alto e prazo mais curto, quais evitam hospitalização, quais agravam efeitos adversos, qual a capacidade de seguimento e o que a pessoa mais valoriza. **Tratamento mínimo não é objetivo**; cuidado suficiente, seguro e coerente é.
+
+## 20. Síntese operativa: perguntas de alto rendimento para prova e consultório
+
+- A pessoa tem **sintomas**? Se sim, pense em investigação diagnóstica, não em um teste de rastreamento aplicado mecanicamente.
+- O teste pertence a um **programa completo** com confirmação e tratamento, ou só gera achados?
+- A população é de **risco habitual** ou precisa de vigilância especializada?
+- A recomendação é do **Ministério da Saúde**, de uma **sociedade médica** ou de diretriz estrangeira? Data e intervalo importam.
+- O resultado negativo muda conduta com segurança? O positivo tem trajeto definido?
+- A doença tem história natural que permite benefício de intervenção na fase assintomática?
+- Há avaliação de redução de mortalidade/morbidade e de danos, não apenas detecção?
+- Qual é o **benefício absoluto** e o horizonte? Quais falsos positivos e consequências?
+- Que barreiras impedem população subatendida de completar o percurso?
+- A pessoa compreendeu riscos e alternativas e teve oportunidade real de recusar?
+
+**Pérolas:** "rastreamento não é diagnóstico", "mais detecção não é sinônimo de menos mortes", "sobrediagnóstico pode ser histologicamente verdadeiro", "falso positivo não é doença", "prevenção quaternária não é omissão", "o SUS atualiza protocolos e implementa gradualmente", "sintomas sempre mudam a via".
+
