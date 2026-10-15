@@ -305,3 +305,35 @@ As sete adições (quatro em DPOC, três em Diabetes) foram convertidas em HTML 
 Conferidos diretamente a partir dos arquivos GitHub após os commits: cinco livros, seções de casos e questões numeradas sequencialmente de 1 até N, **sem entradas antigas inline**, paridade exata entre números dos títulos em Markdown e HTML por livro, IDs de capítulo sem duplicação, tabelas balanceadas e **zero imagens** no JSON. O `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` foi atualizado para **versão 5**. O validador `scripts/validate-apostilas-lote-02.cjs` recebeu verificações de ordem, completude e ausência de casos deslocados para futuras execuções em checkout.
 
 **Limites do parecer:** estes são testes estruturais feitos por leitura de conteúdo no GitHub; o **Node preflight/dry-run não foi executado** no checkout completo. A qualidade médica e farmacológica, direitos das imagens, revisão semântica de repetição e testes desktop/PWA também **não estão certificados**. O conteúdo dos novos casos utiliza **vinhetas clínicas fictícias originais**, não reproduz material de curso; as fontes do Drive foram reabertas como comparativos, com prioridade para diretrizes oficiais na construção da resposta. **5 manuscritos em pré-publicação, 0 certificados, 0 publicados, sem merge/deploy**.
+
+
+## Etapa 14 — revisão de decisões terapêuticas GOLD 2026 e ATS 2025 (15/10/2026)
+
+**Motivação:** ao reler as edições contínuas, a situação de DPOC com uma única exacerbação moderada podia ser interpretada como indicação automática de escalonamento com CI, e a seção de PAC viral tratava a recomendação de 2025 sem explicitar as **quatro condições** distintas por local de cuidado/comorbidade.
+
+**DPOC — alterações reais em `LOTE_02_DPOC_EDICAO_CONTINUA.md`:**
+- Inserido **3.2 ABE inicial não é algoritmo de seguimento**, com tabela de quatro situações; a GOLD 2026 usa ≥1 exacerbação moderada/severa para **grupo E na avaliação inicial** de quem ainda não recebe terapia de manutenção, enquanto decisões de quem já está tratado seguem algoritmo distinto.
+- Acrescentado alerta de que grupo E **não determina automaticamente CI/tripla terapia**; avaliar LABA/LAMA inicial, eosinófilos, técnica, comorbidades e risco de pneumonia, além das regras brasileiras de dispensação.
+- Ajustado o texto do caso 3 para especificar avaliação inicial; novos **Caso 17 e Questão 23** com raciocínio e comentário de todas as alternativas.
+- Fonte primária: GOLD 2026 Report and Pocket Guide, https://goldcopd.org/2026-gold-report-and-pocket-guide/ ; resumo de alterações GOLD 2026 (diferencia INITIAL/FOLLOW-UP), https://goldcopd.org/wp-content/uploads/2025/11/KEY-CHANGES-GOLD-2026-10Nov2025.pdf . **Nenhuma figura da GOLD foi copiada/reproduzida.**
+
+**PAC adulta — alterações reais em `LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md`:**
+- Inseridas **5.5 Teste viral positivo: matriz da ATS 2025 para antibiótico empírico** e **5.6 Ultrassom pulmonar como alternativa diagnóstica condicional**, incluindo três linhas de raciocínio essenciais: (i) ambulatorial sem comorbidades + PAC com evidência clínica/imagem + vírus positivo pode **não receber antibiótico**, de forma condicional; (ii) ambulatorial **com comorbidades** ou internado com PAC **não grave ou grave**: ATS sugere **antibiótico empírico** devido ao risco de coinfecção; (iii) US pulmonar só é alternativa à radiografia com competência e protocolo adequados, não excluindo focos centrais ou diferenciais.
+- Dois casos originais (**15 e 16**) e duas questões (**22 e 23**), mantendo sequência completa; retirada do corpo do aluno uma nota interna sobre inexistência de comparativo adulto no Drive, que permanece documentada **aqui**.
+- Fonte primária: ATS 2025, https://doi.org/10.1164/rccm.202507-1692ST ; comunicado da própria sociedade, https://site.thoracic.org/press-releases/treatment-with-antibiotics-and-steroids-in-adults-with-pneumonia-addressed-in-latest-clinical-practice-guideline . Esta atualização foi feita pela **ATS**, não atribuir endosso automático à IDSA de 2019. Aplicabilidade ao Brasil requer protocolos e epidemiologia locais; as recomendações virais são condicionais e de certeza muito baixa.
+- Benchmark do Drive para PAC permanece **pediátrico**; etapa zero específica de adulto segue **pendente**. Dados do material privado não foram reproduzidos.
+
+### Paridade e métricas após gravação
+
+| Livro | Markdown bruto na edição contínua | Texto visível aproximado no JSON | Casos | Questões | Tabelas |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 78.862 | 75.595 | 10 | 15 | 8 |
+| **DPOC** | **111.611** | **106.963** | **17** | **23** | **10** |
+| Diabetes mellitus | 103.938 | 99.415 | 14 | 23 | 13 |
+| **PAC adulta** | **96.147** | **91.723** | **16** | **23** | **12** |
+| Tuberculose | 106.987 | 102.106 | 12 | 21 | 13 |
+| **Total** | **497.545** | **475.802** | **69** | **105** | **56** |
+
+O `LOTE_02_INPUT_PREPUBLICACAO.json` foi sincronizado e o manifesto atualizado para **v6**; conferidos no momento do salvamento a sequência de casos/questões, fechamento de tabelas e nenhuma imagem não aprovada (`images: []`). **Nenhuma certificação de dose ou de conteúdo útil decorre automaticamente destas contagens.** O script Node de preflight e dry-run do gerador **não foram executados em checkout completo**; ainda faltam revisão clínica/farmacêutica integral, licenças de imagens reais, layout no leitor/PWA e publicação aprovada.
+
+**Estado: 5 edições contínuas em revisão, 0 publicadas, 0 merges e 0 deploys.**
