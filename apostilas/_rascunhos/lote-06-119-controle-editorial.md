@@ -51,3 +51,59 @@
 - [ ] Sem merge ou deploy automático.
 
 **Decisão editorial:** preservar integralmente a apostila original e elaborar cópia de revisão; não marcar como pronta até fechamento dos critérios.
+
+
+---
+
+## Atualização — produção da cópia editorial e QA preliminar (14/10/2026)
+
+### Produção efetivamente realizada
+- Criada e mantida **\`apostilas/_rascunhos/lote-06-119-preview.html\`**, derivada do HTML já publicado, **sem alterar a página original** nem efetuar merge ou deploy.
+- Preservadas as 30 seções originais por ID. Cinco blocos novos foram acrescentados: raciocínio avançado/MEC em comorbidades; início, troca e contracepção de emergência; DIU, implante, esterilização e acesso SUS; casos completos complementares; questões autorais.
+- A numeração dos capítulos foi reconciliada em sequência didática e as âncoras de navegação foram reconstruídas a partir dos IDs persistentes. A seção de referências foi colocada ao final.
+- Foram ampliados **os 5 casos originais** e redigidos **4 casos adicionais**, somando **9 casos clínicos**; os cinco primeiros receberam complementos de hipótese/raciocínio, exame, conduta e significado.
+- Redigidas **10 questões originais** de quatro alternativas cada, com resposta, justificativa de todas as alternativas e mini-revisão.
+- Desenvolvimento autoral adicional inclui: hipertensão por gravidade, diabetes com/sem vasculopatia, LES/anticorpos antifosfolípides, doença falciforme, doença renal, câncer de mama, hepatopatias, anticonvulsivantes e antirretrovirais quando pertinentes, dupla proteção, implantação progressiva no SUS, escolha de analgesia e contraindicações de DIU, fios não visíveis, gravidez com DIU, DMPA e retorno de fertilidade, transição de LARC e direitos reprodutivos.
+- Legislação brasileira existente preservada; o resumo do Drive tinha regras antigas e **não foi transplantado** para a LURIA.
+
+### Pré-auditoria quantitativa e técnica
+| Item | Resultado conferido |
+| --- | --- |
+| HTML original | **77.663 caracteres** |
+| HTML da prévia editorial | **139.436 caracteres** |
+| Seções originais preservadas por ID | **30/30** |
+| Seções totais no artigo da prévia | **35** |
+| Corpo instrucional estimado, excluindo capítulos de casos, questões, revisão, bibliografia, mapa e resumo | **aproximadamente 67.610 caracteres de texto** |
+| Casos com identificação individual | **9 (1–9)** |
+| Questões com alternativas semânticas A–D | **10 (1–10)** |
+| Matriz lexical de autossuficiência | **10/10 objetivos conceituais localizados no corpo didático** |
+| Links de âncora quebrados no preview | **0** |
+| IDs HTML repetidos | **0** |
+| Parágrafos longos literalmente duplicados | **0 detectados** |
+| Novas imagens clínicas embutidas | **0**, respeitando o fluxo do Admin |
+| Indexação da prévia | \`noindex,nofollow\` |
+| Publicação e merge | **Não realizados** |
+
+O total de aproximadamente 67,6 mil caracteres representa **pré-contagem técnica**, incluindo tabelas e conteúdo possivelmente redundante por sentido: não é certificação do piso de 60.000 caracteres únicos úteis. A matriz lexical avalia existência de conceitos centrais das perguntas nos capítulos, não confirma a qualidade científica nem que todas as alternativas estejam plenamente explicadas. A auditoria profissional segue obrigatória.
+
+### Priorização clínica na revisão final
+1. Conferir tabela OMS MEC 2025 versus CDC MEC 2024 para cada condição e método; onde haja divergência, **documentar a fonte**, em vez de amalgamar categorias automaticamente.
+2. Conferir formulações efetivamente registradas no Brasil, sobretudo POP de desogestrel, drospirenona e atrasos de dose, sem aplicar instruções de noretisterona/norgestrel a toda marca.
+3. Verificar segurança e execução das orientações sobre DIU pós-parto, inserção intervalar, analgesia, gestação com DIU e proteção adicional após emergência.
+4. Confirmar a aplicação atual da Lei 9.263/1996, alterada pela Lei 14.443/2022, incluindo casos de idade limítrofe e eventuais decisões judiciais posteriores.
+5. Verificar Portarias 47/48 de 2025 e Notas Técnicas 51/198 de 2026 quanto a população elegível, implantação territorial e disponibilidade local; não inventar cobertura universal.
+6. Revisar os casos e os gabaritos por pediatra/ginecologista ou equipe médica apropriada, inclusive linguagem não coercitiva e confidencialidade.
+7. Fazer revisão semântica e editorial de redundâncias remanescentes, além da triagem literal já feita.
+
+### Curadoria visual pendente
+Buscas futuras devem priorizar, com autoria e licença individual comprovadas: (1) dispositivo DIU de cobre fora do corpo; (2) SIU-LNG e diferença anatômica; (3) implante subdérmico demonstrativo; (4) diagrama de inserção do DIU; (5) modelo de posição e fios do DIU; (6) esquema original de eixo hipotálamo–hipófise–ovário, criado com licença própria; (7) representação original da ação do progestagênio no muco; (8) cartão-resumo MEC sem copiar tabelas protegidas; (9) algoritmo autoral da contracepção de emergência; (10) fluxo autoral de esterilização voluntária e requisitos legais. **Esses itens são temas de imagens candidatas, não arquivos/licenças já aprovados.** Nenhuma imagem foi importada ou publicada.
+
+### Bloqueios ainda vigentes
+- [ ] Benchmark longo equivalente com autoria institucional confirmada no Drive ou registro formal de impossibilidade.
+- [ ] Revisão científica e médica completa, referência por referência, especialmente critérios contraceptivos 2025 e direito brasileiro.
+- [ ] Auditoria semântica de unicidade dos 60 mil caracteres instrutivos.
+- [ ] Curadoria de imagens reais e didáticas com licença verificada; fluxo de aprovação no Admin.
+- [ ] Executar validadores oficiais do repositório e inspeção de renderização desktop/PWA com correção dos defeitos.
+- [ ] Processo separado de autorização para publicação/merge/deploy.
+
+**Decisão:** a apostila 119 está **ampliada e preparada como prévia editorial**, não está finalizada, nem publicada.
