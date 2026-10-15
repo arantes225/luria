@@ -91,3 +91,25 @@ A prévia `apostilas/_rascunhos/lote-06-124-preview.html` foi aprofundada sem mo
 | 12 | Polipectomia | polipo ✓; histeroscopia ✓ | Encontrado |
 
 **Ressalva:** a pré-contagem acima não atesta automaticamente originalidade semântica, ausência de repetição de ideias, aprovação farmacológica ou correção clínica independente. Os validadores oficiais não foram executados e a prévia não foi publicada. Permanecem pendentes revisão ginecológica, curadoria de imagens licenciadas/Admin, conformidade brasileira e inspeção desktop/PWA.
+
+---
+
+## Etapa 4 — aprofundamento diferenciado com checagem de segurança (14/10/2026)
+
+A cópia editorial `apostilas/_rascunhos/lote-06-124-preview.html` recebeu **três novas seções substanciais**, preservando inteiramente o original público, os casos e questões anteriores:
+
+1. **Diagnóstico por cenário:** diferenciar sangramento gestacional/não gestacional antes do PALM-COEIN; padrões clínicos e interpretação de doenças coexistentes; papel diferenciado de US transvaginal, histeroscopia dirigida e histologia; ferritina, coagulopatias e exames hormonais dirigidos.
+2. **Condutas de alto risco:** ressuscitação e contraindicações no sangramento agudo; anticoagulação e risco tromboembólico; sangramento pós-gestação/instrumentação com vascularização anormal e risco de curetagem sem investigação; miomas por localização e fertilidade; reposição de ferro e monitorização.
+3. **Populações especiais e autonomia:** adolescentes com suspeita de von Willebrand, perimenopausa com risco endometrial, impacto funcional e escolha compartilhada preservando intenção reprodutiva.
+
+**Fontes externas explicitadas:** FIGO Systems 1/2 (2023), NICE NG88 e ACOG Committee Opinion 785 sobre adolescente com sangramento intenso, com distinção importante entre recomendações NICE de amostragem endometrial durante histeroscopia e práticas de amostragem ambulatorial em outros contextos — sem extrapolar proibição da Pipelle ao SUS.
+
+**Métricas atuais conferidas**:
+- HTML da cópia editorial: **123.187 caracteres brutos** versus 69.515 do HTML originalmente publicado;
+- **32 seções** no artigo, incluindo todos os **24 IDs originais**;
+- **80.779 caracteres instrucionais estimados** em filtro que exclui capítulos de casos, questões, resumo, mapa, revisão e referências; a contagem não implica unicidade semântica;
+- 8 casos, 12 questões com alternativas A–D, navegação sem âncoras quebradas ou IDs duplicados na triagem;
+- Identificada **uma repetição literal longa** já presente nos blocos-base sobre PALM/COEIN; **deduplicação editorial pendente**, pois excluir texto sem verificar contexto poderia perder explicações úteis;
+- Nenhuma imagem clínica nova inserida; nenhuma publicação/merge/deploy.
+
+**Bloqueios mantidos:** revisão ginecológica dos algoritmos e contraindicações, análise semântica e revisão da numeração original, curadoria de figuras de exame/fluxo com autorização/licença e Admin, execução dos scripts oficiais, teste visual desktop/PWA e aprovação editorial. **A apostila 124 ainda não foi certificada ou publicada.**
