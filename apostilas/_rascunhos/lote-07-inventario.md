@@ -30,7 +30,7 @@
 | 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
 | 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
 | 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (19.276 caracteres; 4 casos, 6 questões); não reproduz 127/132, ainda NÃO autossuficiente |
-| 137 | Doença do refluxo e hérnia hiatal | Rascunho `_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md` (28.968 caracteres; 4 casos, 6 questões), benchmark Drive DRGE lido, ACG/Lyon 2.0/SAGES |
+| 137 | Doença do refluxo e hérnia hiatal | Rascunho `_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md` **AMPLIADO a 80.228 caracteres brutos, 8 casos e 14 questões** (original preservado e aprofundado; ACG/Lyon 2.0/SAGES/AGA/Barrett/Chicago 4.0), pendentes imagens, revisão médica e certificação |
 | 138 | Crises convulsivas e estado de mal epiléptico | Rascunho `_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md` (24.230 caracteres; 4 casos, 6 questões), MS PCDT epilepsia 05/2026, NICE/CHOP; benchmark Drive apenas correlato |
 | 139 | Endometriose | Rascunho `_rascunhos/lote-07-aula-139-endometriose.md` (33.568 caracteres após correção de referência; 5 casos, 8 questões), NICE/ESHRE/FEBRASGO 2026; HTMLs de infertilidade e DIP preservados |
 | 140 | Saúde da criança na APS | Rascunho `_rascunhos/lote-07-aula-140-saude-crianca-aps.md` (35.382 caracteres; 4 casos, 8 questões), PNAISC/Caderneta/MS, dois benchmarks de puericultura lidos |
@@ -123,3 +123,16 @@
 5. Validar HTML, desktop, PWA, integridade de links, acessibilidade e não duplicação; apenas então submeter para publicação.
 
 **Situação do lote após esta rodada:** todos os 20 tópicos 121–140 têm ao menos rascunho ou complemento registrado, mas **zero certificações finais concedidas**, nenhuma integração no site/deploy feita nesta rodada. O cronograma de 180 temas segue como origem; a eventual expansão a 225 depende de tabela de correspondência própria.
+
+
+## 14/10/2026 — aprofundamento prioritário da aula 137 (após cobertura inicial 121–140)
+
+**Arquivo atualizado, relido no GitHub e conferido:** \`apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md\`, **80.228 caracteres brutos**, com **8 casos clínicos** e **14 questões originais com distratores comentados**. A versão anterior tinha 28.968 caracteres brutos/4 casos/6 questões. A nova versão acrescentou 51.260 caracteres brutos por atualização sequencial, conservando o conteúdo existente, e corrigiu uma anotação editorial em Markdown.
+
+**Etapa zero repetida e efetivamente realizada:** reabertos os PDFs do Drive “DOENÇA DO REFLUXO GASTROESOFÁGICO.pdf” (1.647 caracteres, esquema específico mas breve) e “02 - ESTOMAGO 1 DISPEPSIA, FISIOLOGIA GASTRICA E IBPS.pdf” (5.488 caracteres, referência de diferenciais/farmacologia, não DRGE integral). Nenhuma autoria Estratégia MED identificada e nenhum conteúdo privado reproduzido em GitHub. Foi reaberto o próprio rascunho 137, com lacunas expressas, e utilizadas diretrizes ACG GERD 2022, Lyon 2.0 (Gut 2024), AGA de desprescrição de IBP 2022, ACG Barrett 2022, Chicago 4.0, SAGES hiato 2024 e SAGES cirurgia DRGE 2021, efetivamente confrontadas com fonte pública.
+
+**Principais expansões inéditas**: fisiologia da junção/barreira antirrefluxo e depuração noturna, refluxo ácido/fracamente ácido, pirose funcional/hipersensibilidade, EDA com Los Angeles/Prague/Hill, pHmetria interpretada com três laudos-modelo e quatro dias, decisões on/off IBP, classificação Chicago 4.0/avaliação de disfagia e EoE/acalasia, Barrett e estratificação de vigilância por segmento, IBP/desprescrição, fundoplicatura e reparo hiatal de acordo com recomendações condicionais SAGES, incerteza da tela, cirurgia em paraesofágicas, volvo, complicações de cirurgia/reoperação, seguimento, quatro casos adicionais e oito questões adicionais. Foi incluída uma matriz ancorando domínios de aprendizagem aos capítulos/casos/questões.
+
+**Estimativa de conteúdo didático bruto após remover partes estritamente administrativas e bibliográficas:** superior a 70 mil caracteres, incluindo títulos/casos/questões/tabelas, mas **isso NÃO equivale automaticamente a 60 mil caracteres úteis certificados**, pois requer auditoria qualitativa de repetição e autossuficiência. Livro ainda não aprovado para publicação nem revisão farmacológica brasileira completa. Imagens propostas não foram encontradas/licenciadas nem importadas ao Admin.
+
+**Próxima prioridade sugerida:** avançar aula 136 (apenas integradora, curta e ainda dependente de 127/132) e depois 138 (emergência pediátrica, doses a conferir), sem apagar apostilas HTML já publicadas. Nenhum deploy, arquivo HTML publicado, catálogo ou banco de dados alterado.
