@@ -155,3 +155,149 @@ D. Ausência de febre na consulta.
 - Inventariar pelo menos dez imagens candidatas quando justificadas (curvas de espirometria, técnica inalatória, dispositivos), validando licença/uso comercial; **não embutir imagens neste rascunho**, pois publicação visual depende de Admin.
 - Validar extensão didática útil ≥60.000 caracteres, não duplicação, autenticidade das referências, revisão por especialista, renderização e acessibilidade desktop/PWA.
 - **Status:** primeira etapa escrita; NÃO CERTIFICADA; sem `index.html`, sem catálogo, sem deploy.
+
+
+---
+
+# Ampliação editorial 02 — confirmação, revisão terapêutica, situações especiais e consolidação
+
+> **Revisão incremental, outubro de 2026:** conteúdo complementar original elaborado após consulta à página oficial GINA 2026 e ao PCDT brasileiro de asma atualizado em 02/04/2026, com página governamental atualizada em 04/09/2026. Diretrizes não autorizam copiar seus fluxogramas ou figuras para a LURIA. Os parágrafos abaixo descrevem a lógica clínica, sem transcrever quadros proprietários. A conferência linha a linha do PDF retificado do PCDT e das doses por faixa etária permanece obrigatória.
+
+## 12. A consulta diagnóstica como processo: documentar antes de tratar, quando possível
+
+### 12.1 Separar os três problemas da investigação
+
+O clínico encontra, com frequência, um paciente que relata falta de ar ao exercício, tosse à noite e melhora ocasional com broncodilatador. Em vez de começar pela etiqueta diagnóstica, deve formular três perguntas ordenadas. A primeira é se há perigo atual — hipoxemia, dificuldade de falar, uso extremo de musculatura acessória ou alteração de consciência requerem prioridade emergencial. A segunda é se a história tem padrão de sintomas respiratórios variáveis compatíveis com asma. A terceira é se existe demonstração suficiente de limitação expiratória variável, avaliada mediante um exame adequado ao estado clínico, idade, uso de medicamentos e recursos locais.
+
+Quando a pessoa está estável, documentar provas funcionais antes de iniciar controlador pode facilitar confirmação posterior. Porém, não se deve atrasar tratamento necessário em alguém sintomático ou com risco elevado apenas para obter um teste ideal. Nesses casos, registre o grau de certeza, o que foi observado e qual exame deverá ser repetido. Um diagnóstico pode ser provável e demandar cuidado mesmo antes da confirmação completa; isso é diferente de declarar certeza sem evidência.
+
+### 12.2 O exame funcional precisa ser confiável
+
+Espirometria exige instrução clara, esforço expiratório adequado, reprodutibilidade e avaliação da qualidade das manobras. Um VEF1 falsamente baixo pode surgir por técnica ruim; uma relação VEF1/CVF aparentemente preservada pode coexistir com doença episódica fora da janela sintomática. O resultado precisa ser lido como parte da história. Em obstrução, avaliar a resposta broncodilatadora em condições padronizadas pode documentar reversibilidade; o critério numérico deve ser o da referência vigente e faixa etária, sem misturar indiscriminadamente critérios de asma com interpretação das referências ERS/ATS para função pulmonar.
+
+Em pacientes que já recebem corticoide inalatório, a inflamação pode estar controlada o suficiente para reduzir a variabilidade observada. Assim, antes de descartar uma hipótese por exame negativo, pergunte sobre dose, regularidade, dispositivo, tempo de uso e sintomas recentes. Nenhum teste isolado substitui o raciocínio conjunto. A necessidade de broncoprovocação ou medidas seriadas de pico de fluxo decorre da persistência de dúvida em contexto apropriado; não há indicação universal para toda pessoa que tosse.
+
+### 12.3 A tosse isolada exige outro grau de cuidado
+
+A chamada asma variante da tosse pode ocorrer sem chiado perceptível, mas tosse prolongada tem amplo diferencial: efeito adverso de inibidores da ECA, síndrome da tosse das vias aéreas superiores, refluxo em contexto compatível, tabagismo, bronquiectasias, eosinofilia brônquica sem asma, infecções persistentes e causas estruturais. A avaliação deve contemplar sinais de alerta, duração, exposições, medicações e exames direcionados. Um relato de melhora após semanas de tratamento anti-inflamatório pode apoiar a hipótese, mas também não comprova mecanismo isoladamente.
+
+## 13. Plano terapêutico como ciclo de decisões, não escada automática
+
+### 13.1 Primeiro conferir a necessidade real de intensificação
+
+Se a pessoa segue sintomática apesar de prescrição, revise: o dispositivo é acionado corretamente? A inspiração está sincronizada com a liberação do aerossol quando isso é necessário? Há adesão nos dias assintomáticos? O paciente diferencia medicação de manutenção e alívio? Consegue pagar e obter a medicação? Existe exposição domiciliar ao tabaco, vape, umidade, poeira ocupacional ou aerossóis irritantes? Comorbidades estão sendo confundidas com falta de controle da asma?
+
+Um aumento de potência sem essas respostas pode elevar efeitos adversos sem resolver a causa do mau controle. Em pacientes muito sintomáticos, a investigação de comorbidades deve ocorrer sem atrasar cuidados. Acompanhamento deve registrar frequência de exacerbações, impacto nas atividades, função pulmonar e uso de medicação sistêmica, não somente uma pergunta genérica — “está bem?”.
+
+### 13.2 O que significa reliever com ação anti-inflamatória?
+
+O conceito central da GINA contemporânea é que o alívio da broncoconstrição e a prevenção de crises devem se conectar. Uma estratégia que administra corticoide inalatório junto à medicação de alívio em regimes apropriados busca reduzir a lacuna entre a percepção do sintoma e o controle de inflamação. Em certos percursos terapêuticos, a combinação de corticoide inalatório com formoterol é usada tanto na manutenção quanto no alívio. Isso não autoriza que qualquer combinação com broncodilatador de longa duração seja utilizada para crises. A prescrição requer conferir fármaco, dispositivo, concentração, número máximo de inalações, idade e disponibilidade. O leitor não deve extrapolar entre formulações de fabricantes diferentes.
+
+Para o tratamento de manutenção, importa diferenciar resposta imediata subjetiva de redução real de exacerbação. Pacientes podem perceber o SABA como “mais forte” por alívio rápido e evitar o corticoide porque não sentem efeito imediato. Explicar a diferença ajuda a corrigir uso excessivo de resgate. Maior uso de medicação de alívio, independentemente da sensação momentânea de controle, merece reavaliação.
+
+### 13.3 Antes de reduzir etapas
+
+A redução de dose deve ser planejada após período suficiente de estabilidade, com reavaliação de crises prévias, sintomas, exposição, função pulmonar e plano de acompanhamento. Reduzir não significa interromper abruptamente toda estratégia anti-inflamatória em adultos ou adolescentes. O raciocínio é identificar a **menor intensidade eficaz** que mantenha sintomas controlados e reduza riscos, ponderando efeitos adversos, custos e preferências. Documentar o ponto de partida, o intervalo de reavaliação e o que fazer se o controle piorar.
+
+## 14. Exacerbação: uma sequência prática de segurança
+
+### 14.1 Triagem e primeiros minutos
+
+Uma pessoa dispneica precisa ser observada enquanto se conversa. Fala entrecortada, agitação seguida de sonolência, retrações, sudorese, batimento de asa nasal, cianose, hipotensão ou entrada de ar muito reduzida alteram a prioridade. Não espere exame radiológico para reconhecer falência respiratória iminente. Registre sinais vitais, oximetria, possibilidade de medir pico de fluxo sem atraso e necessidade de monitorização; mobilize equipe experiente precocemente.
+
+A hipoxemia deve ser corrigida com oxigênio titulado e reavaliação, evitando tanto subtratamento quanto oferta sem monitorização. Broncodilatador inalatório rápido é componente essencial da abordagem; a administração precisa ser tecnicamente apropriada e repetida segundo resposta e protocolo local. Corticosteroide sistêmico é considerado precocemente quando a gravidade justifica, pois atua sobre o componente inflamatório cuja resolução leva mais tempo que o alívio broncodilatador. Em exacerbação moderada ou grave, anticolinérgico inalatório pode ser adjuvante. Decisões sobre suporte ventilatório, terapia intravenosa ou UTI exigem cenário monitorado e expertise; intubação em asma grave tem riscos hemodinâmicos e ventilatórios relevantes.
+
+### 14.2 Avaliar a resposta, não só repetir a mesma prescrição
+
+Reassessments seriados precisam responder se a fala melhora, o esforço diminui, a ventilação se amplia, saturação e sinais vitais estabilizam e se o nível de consciência permanece preservado. Persistência de hipóxia, fadiga, alteração de consciência ou piora apesar do tratamento é indicação de escalonamento, não de aguardar passivamente. A gasometria pode ser importante em quadros graves: dióxido de carbono que deixa de estar reduzido em um paciente previamente muito taquipneico pode sinalizar fadiga, dependendo do contexto; um número isolado não substitui a tendência clínica.
+
+### 14.3 Alta segura não é apenas melhora do chiado
+
+Antes da alta, confirmar melhora sustentada, acesso a tratamento contendo corticoide inalatório, capacidade de utilizar dispositivo, orientação sobre sinais de retorno e seguimento próximo. Registrar fatores desencadeantes e possibilidade de nova crise. A ida ao pronto-socorro é oportunidade de corrigir diagnóstico, adesão e técnica. Um plano escrito deve distinguir piora leve, persistência de sintomas e emergência, incluindo quando buscar atendimento imediato. O protocolo de alta com doses, limiares de função pulmonar e horários ainda necessita versão conferida contra GINA/PCDT.
+
+## 15. Populações em que a regra geral precisa de adaptação
+
+### 15.1 Gestação
+
+O controle insuficiente e as exacerbações podem expor mãe e feto a hipoxemia e complicações. Evitar suspensão automática de tratamento anti-inflamatório por medo inespecífico de medicamentos; revisar escolhas com diretrizes obstétricas e pneumológicas e ponderar benefício do controle. Dispneia gestacional pode ser fisiológica, mas sibilância, variação de sintomas e sinais de gravidade exigem avaliação. Sintomas agudos não devem ser banalizados como “normais da gravidez”; considerar embolia pulmonar, edema pulmonar, anemia e causas cardiológicas quando a apresentação for atípica.
+
+### 15.2 Crianças
+
+Sibilância viral recorrente na primeira infância não equivale automaticamente a asma persistente. O diagnóstico depende de padrão temporal, história familiar/atopia, frequência de episódios, resposta ao tratamento e exclusão de outras causas, sendo mais complexo quando a criança não consegue realizar espirometria confiável. Em escolares, a avaliação objetiva ganha valor e os esquemas da GINA por faixa etária são distintos dos adultos. Técnica inalatória, espaçador, participação familiar e plano escolar são componentes terapêuticos centrais.
+
+### 15.3 Idosos e pessoas com multimorbidade
+
+Em idosos, diferenciar asma de insuficiência cardíaca, DPOC, doenças intersticiais e obstrução mecânica. Redução de força inspiratória, artrite nas mãos, déficit cognitivo e baixa acuidade visual podem tornar o dispositivo escolhido inadequado, mesmo que o princípio ativo seja apropriado. Perguntar ao paciente como realmente usa o inalador é mais importante do que presumir adesão pela lista de medicações.
+
+### 15.4 Exposição profissional
+
+Asma relacionada ao trabalho pode surgir ou piorar em contato com farinha, isocianatos, produtos de limpeza, poeira orgânica, látex e outros agentes. A pergunta “melhora nos finais de semana ou férias?” é útil, mas não definitiva. Registros de sintomas e pico de fluxo em dias de exposição e afastamento, avaliação ocupacional e medidas de redução de exposição são relevantes. Diagnosticar sem discutir o ambiente de trabalho pode perpetuar a causa e produzir perda funcional.
+
+## 16. Casos adicionais comentados
+
+### Caso 3 — Obstrução laríngea induzida por exercício, não presumir asma
+
+Atleta de 17 anos apresenta dificuldade respiratória abrupta no pico do esforço, ruído inspiratório audível na garganta e recuperação rápida poucos minutos após interromper exercício. Já utilizou broncodilatador sem benefício consistente. Entre episódios, exame físico é normal. **Problema clínico:** os sintomas podem ser interpretados como “asma do exercício”, porém o caráter inspiratório, a localização cervical e a recuperação imediata aumentam suspeita de obstrução laríngea induzida pelo exercício. **Exames e interpretação:** provas funcionais respiratórias podem pesquisar obstrução expiratória variável e comorbidade asmática; laringoscopia provocada em centro especializado pode demonstrar o fenômeno laríngeo. **Conduta:** evitar escalada automática de corticoide inalatório sem confirmação, encaminhar para avaliação especializada e abordagem de técnica respiratória quando apropriada. **Por que importa:** diferentes síndromes relacionadas ao esforço podem coexistir, mas exigem manejo específico.
+
+### Caso 4 — Dispneia grave e tórax silencioso
+
+Homem de 33 anos, com histórico de asma e múltiplas passagens por urgência, chega incapaz de completar frases, suando, com retrações intensas. A ausculta revela murmúrio muito diminuído e quase nenhum sibilo. Após atendimento inicial mostra exaustão crescente. **Hipótese:** exacerbação com ameaça de falência respiratória. **Interpretação:** a baixa intensidade dos sons não significa remissão do broncoespasmo; pode revelar fluxo aéreo criticamente reduzido. **Conduta:** atendimento emergencial monitorado, broncodilatação rápida repetida conforme protocolo, oxigenação titulada, corticosteroide sistêmico indicado e pronto acesso a equipe de suporte avançado; investigar causas associadas sem retardar medidas. **Por que importa:** o erro de interpretar menos chiado como melhora pode ser fatal.
+
+## 17. Questões autorais adicionais
+
+### Questão 3 — Erro de técnica inalatória
+
+Paciente com sintomas recorrentes usa controlador diariamente, porém dispara o aerossol pressurizado muito antes de inspirar e não sabe explicar a função de cada medicamento. O passo mais apropriado, além de avaliar gravidade e risco, é:
+
+A. Duplicar automaticamente todas as doses.  
+B. Suspender toda medicação para testar a hipótese.  
+C. Demonstrar e conferir a técnica, revisar adesão e dispositivo antes de atribuir falha ao fármaco.  
+D. Solicitar tomografia para todos os pacientes nessa situação.
+
+**Gabarito: C.** A eleva tratamento sem corrigir entrega pulmonar; B expõe a risco e prejudica controle; D não tem indicação indiscriminada. **Mini-revisão:** o ciclo de manejo inclui avaliar, ajustar e revisar; técnica e adesão não são detalhes opcionais.
+
+### Questão 4 — Asma relacionada ao trabalho
+
+Trabalhadora de indústria relata tosse, sibilância e aperto torácico que melhoram durante férias e reaparecem após retornar ao setor. Qual informação deve orientar investigação adicional?
+
+A. O padrão temporal com exposição ocupacional e avaliação objetiva seriada, conforme viabilidade.  
+B. Ausência de febre exclui causa ocupacional.  
+C. Toda dispneia no emprego é psicológica.  
+D. A melhora nas férias confirma por si só asma ocupacional.
+
+**Gabarito: A.** A associação temporal exige avaliação dirigida, mas não confirma isoladamente etiologia; B não avalia mecanismo; C é redução indevida; D confunde pista clínica com comprovação causal. **Mini-revisão:** reconhecer exposições modificáveis é parte do diagnóstico.
+
+### Questão 5 — Terapia de alívio
+
+Qual raciocínio representa melhor a estratégia anti-inflamatória contemporânea em adultos e adolescentes com asma?
+
+A. O resgate isolado com SABA controla necessariamente o risco de exacerbação.  
+B. Qualquer associação CI/LABA pode ser usada para alívio imediato.  
+C. É importante oferecer componente anti-inflamatório em estratégia validada e conferir qual combinação é indicada para alívio.  
+D. Nunca é necessário verificar técnica inalatória.
+
+**Gabarito: C.** A confunde alívio agudo com proteção; B ignora farmacologia e evidência específica do dispositivo/formulação; D impede avaliação de entrega efetiva. **Mini-revisão:** nem toda medicação de manutenção pode servir de resgate.
+
+### Questão 6 — Atenção à gestante
+
+Gestante com asma apresenta exacerbações frequentes porque interrompeu controlador por receio de efeitos fetais. Qual princípio deve orientar a consulta?
+
+A. Evitar qualquer tratamento inalatório durante toda a gestação.  
+B. Reavaliar controle, riscos da hipoxemia e adequação da manutenção à luz de recomendações obstétricas e respiratórias.  
+C. Assumir que toda dispneia é fisiológica.  
+D. Preferir broncodilatador isolado sem considerar componente inflamatório.
+
+**Gabarito: B.** A deixa doença descontrolada; C ignora diagnósticos potencialmente graves; D subtrata a inflamação e o risco futuro. **Mini-revisão:** a segurança materno-fetal inclui prevenir hipóxia e crises, não apenas reduzir exposição medicamentosa.
+
+## 18. Teste de autossuficiência — verificação parcial
+
+| Pergunta representativa | Trecho que sustenta a resposta | Resultado |
+|---|---|---|
+| Exame basal normal exclui asma? | Capítulos 4 e 12 | Explicado |
+| Como distinguir sintomas de controle e risco futuro? | Capítulo 5 | Explicado |
+| Por que técnica inalatória antecede escalonamento? | Capítulos 6 e 13 | Explicado |
+| Que sinais indicam crise ameaçadora à vida? | Capítulos 7 e 14 | Explicado |
+| Qual esquema exato prescrever por etapa/idade, dose e máximo diário? | Ainda sem tabela verificada | **Lacuna crítica** |
+| Como usar tratamento biológico por elegibilidade local? | Ainda sem quadro PCDT retificado | **Lacuna crítica** |
+
+**Auditoria provisória:** agora há quatro casos e seis questões com justificativas das alternativas, mas faltam detalhes quantitativos, algoritmo de tratamento por etapa, dispositivos e seleção licenciada de figuras. A meta de caracteres *didáticos úteis* e a autossuficiência seguem **não atendidas/não certificadas**. Nenhuma edição de catálogo nem publicação é autorizada.
