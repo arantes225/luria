@@ -255,3 +255,77 @@ Em **ferida tumoral**, avaliar dor, exsudato, odor, infecção, sangramento e pe
 **Boca seca** pode decorrer de desidratação, respiração bucal, anticolinérgicos e radiação; oferecer umedecimento, higiene oral, reavaliação de fármacos e cuidado de mucosite/candidíase quando presentes. **Secreções respiratórias** em pessoa que não deglute bem podem produzir ruído, nem sempre equivalente a sufocamento; posicionamento, medidas orais e antissecretores selecionados podem ajudar. Aspiração profunda repetida pode causar desconforto.
 
 **Prurido** pode resultar de colestase, uremia, pele seca ou medicamento. Emoliente e tratamento dirigido à causa são frequentemente preferíveis a anti-histamínico sedativo indiscriminado em pessoa idosa com delirium.
+
+## 18. Sedação paliativa proporcional: decisão excepcional
+
+**Sedação paliativa** é redução intencional e proporcional da consciência para aliviar sintoma **refratário** que causa sofrimento intolerável, quando as opções razoáveis não produziram alívio adequado no tempo disponível ou teriam toxicidade desproporcional. A diretriz ESMO a situa como **último recurso**. Não equivale a analgesia habitual, sono natural, coma por doença ou eutanásia.
+
+Sintomas como delirium agitado terminal grave, dispneia intolerável, dor rara refratária ou crises catastróficas podem justificar discussão especializada quando critérios clínicos estão presentes. Sofrimento exclusivamente existencial exige cautela ainda maior, avaliação interdisciplinar e estratégias psicossociais; **não constitui indicação automática de sedação profunda**.
+
+### 18.1. Processo de segurança
+
+1. Descrever sintoma, intensidade e como interfere no conforto.
+2. Verificar causas tratáveis e medidas proporcionais já tentadas.
+3. Confirmar refratariedade verdadeira e prognóstico/contexto em que sedação é considerada.
+4. Avaliar capacidade decisional, consentimento, DAV e representante quando aplicáveis.
+5. Explicar finalidade, profundidade, alternativas, possibilidade de reavaliação e expectativas sem prometer tempo de vida.
+6. Envolver especialista/equipe multiprofissional conforme complexidade e disponibilidade.
+7. Planejar **menor nível de sedação suficiente para aliviar sofrimento** e reavaliação clínica.
+8. Manter medidas integrais: analgesia se dor persistente, higiene, posição, pele e apoio à família.
+9. Registrar decisão, participantes, fármacos prescritos por profissional habilitado, resposta e reavaliação.
+10. Resolver conflitos por discussão ética e segunda opinião quando necessário.
+
+**Midazolam** é frequentemente escolhido em protocolos hospitalares por possibilidade de titulação, mas via, concentração e regime requerem experiência e monitorização; falência de órgãos e tolerância mudam resposta. **Morfina não é medicamento destinado a causar sedação**: pode continuar indicada por dor ou dispneia, porém aumentar dose de opioide apenas para “fazer dormir” não atende aos critérios de sedação proporcional.
+
+### 18.2. Intenção e proporcionalidade
+
+A diferença fundamental é a finalidade de aliviar sofrimento refratário, não causar morte. Nenhuma prescrição deve ser arbitrariamente elevada sob alegação de conforto. Profissionais devem separar sedação produzida acidentalmente por dose inadequada de uma decisão clínica deliberada, comunicada e monitorizada.
+
+## 19. Processo ativo de morte: reconhecer e assistir
+
+Podem surgir sonolência progressiva, menor ingestão e diurese, redução da deglutição, extremidades frias/manchadas, respiração irregular com pausas, alteração do padrão respiratório, secreções e confusão. O conjunto pode indicar últimos dias/horas, mas **nenhum sinal isolado prediz data exata de morte**. Reavaliar se há causa reversível cuja investigação é proporcional a objetivos já discutidos.
+
+### 19.1. Plano do fim de vida
+
+- Comunicar prognóstico com honestidade e incerteza, perguntar quem deseja chamar.
+- Suspender exames frequentes e tratamentos preventivos tardios quando não mudam conforto.
+- Ajustar via dos sintomáticos se a pessoa não consegue engolir.
+- Controlar dor, dispneia, agitação, náusea e secreções com reavaliação.
+- Manter higiene oral, posição confortável, pele e cuidado intestinal/urinário.
+- Reduzir estímulos invasivos sem ganho clínico; preservar privacidade e rituais solicitados.
+- Orientar cuidadores sobre mudanças esperadas sem desconsiderar sofrimento real.
+- Disponibilizar plano de plantão/urgência e cuidado após óbito.
+- Acolher despedidas, medos e perguntas, inclusive dúvidas sobre alimentação.
+
+**Não dizer “vai morrer hoje às 18 horas”** com base em um sinal. Pode-se comunicar faixa de “horas a dias” quando quadro justifica, salientando que se trata de estimativa. Também é incorreto evitar a palavra morte quando familiares precisam compreender gravidade.
+
+### 19.2. Hemorragia, convulsão e dispneia súbita
+
+Algumas crises causam sofrimento intenso e necessitam medidas rápidas de conforto e eventual emergência, por equipe com plano antecipado. Não entregar ao cuidador apenas lista de medicamentos sem explicar sinais, contatos e o que fazer durante crise. Em hemorragia catastrófica, a presença humana, segurança do ambiente e medidas clinicamente indicadas importam tanto quanto a farmacoterapia. O profissional deve pedir ajuda e não abandonar o paciente.
+
+## 20. Diferenças por doença e momento clínico
+
+### 20.1. Câncer e neoplasias avançadas
+
+Cuidados paliativos podem ser integrados desde diagnóstico, durante quimioterapia/radioterapia, controle de náusea, dor neuropática e fadiga, e após recidiva. Problemas particulares incluem dor óssea, feridas neoplásicas, ascite, caquexia, obstrução e perdas funcionais. **Radioterapia paliativa e procedimentos cirúrgicos paliativos são intervenções ativas**, úteis quando reduzem sofrimento.
+
+### 20.2. Insuficiência cardíaca
+
+Congestão, falta de ar, edema, fadiga e internações frequentes geram grande sofrimento. Manter diurético para conforto pode fazer sentido mesmo quando outras drogas de benefício apenas preventivo são reavaliadas. Conversar antecipadamente sobre desativação de choques de **cardiodesfibrilador implantável** na fase terminal quando apropriado e desejado; isso não equivale a “desligar marcapasso” indiscriminadamente. Incluir cardiologia e eletrofisiologia.
+
+### 20.3. DPOC/insuficiência respiratória
+
+Crises frequentes, dispneia, ansiedade e descondicionamento podem exigir reabilitação, broncodilatadores, oxigênio em hipoxemia e VNI conforme benefício. Planejar preferências para ventilação invasiva antes de exacerbação crítica. Uma internação isolada não determina terminalidade, e prognóstico respiratório pode ser incerto.
+
+### 20.4. Insuficiência renal avançada
+
+Diálise pode permanecer proporcional em alguns casos e ser substituída por **tratamento conservador integral** em outros, mediante decisão compartilhada. O tratamento conservador não é “não tratar”: envolve manejo de edema, prurido, dispneia, náusea, anemia e sintomas metabólicos. Revisar doses renais, sobretudo opioides e gabapentinoides.
+
+### 20.5. Demência e doenças neurodegenerativas
+
+Disfagia, infecções, dependência total, comunicação limitada e alterações comportamentais são relevantes. Distinguir preferência previamente expressa, melhor interesse e valor do cuidado oral/alimentação assistida. Sonda alimentar invasiva na demência avançada não demonstra universalmente benefício para conforto/sobrevida e pode causar desconforto; discutir individualmente, sem negar avaliação nutricional. Na ELA, tecnologias de comunicação, VNI e gastrostomia podem manter qualidade de vida e devem ser conversadas precocemente, antes da perda da fala.
+
+### 20.6. Cirrose e HIV avançado
+
+No fígado avançado, encefalopatia, ascite, hemorragia, dor e metabolismo de medicações exigem plano próprio; não usar sedativos/opioides sem avaliar risco de encefalopatia. No HIV, cuidados paliativos podem coexistir com terapia antirretroviral e tratamento de infecções oportunistas quando há benefício; não suspender ARV automaticamente por prognóstico desfavorável.
+
