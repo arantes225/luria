@@ -113,6 +113,17 @@ Avaliar sinais de CSPH por elastografia/plaquetas e achados de colaterais/varize
 
 Na cirrose descompensada com **hipotensão importante (ex.: PAS <90 mmHg), pressão arterial média baixa, HRS-AKI, choque e hipoperfusão**, segurar/reavaliar NSBB conforme protocolo é prudente. Não há motivo para suspender definitivamente todos os NSBB no simples diagnóstico de ascite ou PBE, se hemodinamicamente tolerado; a decisão é individual. Em paciente com ascite refratária, pressão é fator crucial.
 
+
+### 6.3 Atualização Baveno VIII (agosto de 2026): reclassificação não invasiva e prevenção
+
+O consenso **Baveno VIII — Advancing consensus in portal hypertension**, publicado online em **19 de agosto de 2026** no *Journal of Hepatology* (DOI **10.1016/j.jhep.2026.07.030**), sucedeu Baveno VII, com revisão da estratificação não invasiva de hipertensão portal clinicamente significativa (CSPH) e do cuidado preventivo. As recomendações antigas que não foram explicitamente alteradas continuam pertinentes, mas chamar Baveno VII de versão mais recente em outubro de 2026 é incorreto.
+
+Na doença hepática crônica avançada compensada (**cACLD**), a combinação de **rigidez hepática ≤15 kPa** por elastografia transitória e **plaquetas ≥150 × 10⁹/L** pode ajudar a **excluir CSPH** com alto valor preditivo negativo, em populações nas quais os critérios foram validados. Para reconhecer CSPH, o documento enfatiza modelos validados com probabilidade prevista ≥75% ou, em contextos etiológicos apropriados, rigidez hepática **≥25 kPa** — especialmente cirrose/doença avançada viral ou alcoólica e MASLD não obesa. **Não extrapolar esses valores indiscriminadamente** para obesidade importante, colestase, inflamação hepática ativa, congestão, esquistossomose ou hipertensão portal pré-sinusoidal. Rigidez e contagem de plaquetas são **estimativas**, não medidas diretas de HVPG.
+
+A ênfase Baveno VIII está em **prevenir a primeira descompensação**, não apenas prevenir ruptura varicosa. Quando CSPH está comprovada ou suficientemente provável e não há contraindicações hemodinâmicas, **betabloqueador não seletivo, preferencialmente carvedilol em candidatos adequados**, pode reduzir o risco de descompensação. A ligadura endoscópica é útil para prevenir sangramento em situações específicas de varizes de risco quando NSBB não é indicado/tolerado, mas **não reproduz todos os benefícios sistêmicos do NSBB sobre descompensação**. Pacientes com pressão arterial baixa, AKI, choque ou descompensação circulatória exigem individualização antes de iniciar ou manter carvedilol.
+
+**Distinção de prova:** critérios não invasivos para excluir CSPH não são iguais a critérios de triagem de **varizes de alto risco**. O antigo corte Baveno VI de rigidez <20 kPa com plaquetas ≥150 × 10⁹/L para evitar EDA em grupos adequados não equivale ao novo par 15 kPa/150 usado na estratificação de CSPH. As regras respondem a perguntas clínicas diferentes e precisam de validação para população e tecnologia utilizadas.
+
 ## 7. Classificações prognósticas: Child–Pugh, MELD e suas limitações
 
 ### 7.1 Child–Pugh: cinco componentes
@@ -295,6 +306,10 @@ Iniciar **droga vasoativa esplâncnica** (octreotida, terlipressina ou somatosta
 Na falha endoscópica/ressangramento, considerar **TIPS de resgate** em candidatos, com tamponamento por balão ou stent esofágico autoexpansível apenas como **ponte temporária** por risco de necrose, aspiração e perfuração. **TIPS preemptivo/precoce** pode beneficiar subgrupos de alto risco (critérios clássicos de Child C 10–13 ou Child B >7 com sangramento ativo na EDA), com avaliação em centro especializado dentro de cerca de 72h quando indicado. Não transformar em intervenção universal para todo portador de variz.
 
 **Profilaxia secundária** após controle da hemorragia esofágica geralmente combina **betabloqueador não seletivo + ligaduras seriadas**, salvo contraindicação. Em profilaxia primária, NSBB em hipertensão portal clinicamente significativa compensada pode prevenir primeira descompensação; ligadura é opção em varizes de risco quando NSBB não é possível. Em choque/hipotensão, reavaliar NSBB.
+
+
+
+**Atualização de segurança — Baveno VIII (2026):** os critérios contemporâneos de triagem e prevenção foram atualizados; recomendações de TIPS preemptivo continuam reservadas a grupos de alto risco, com equipe especializada, e o consenso de 2026 reforça janela de **até 72 horas, idealmente até 24 horas**, nos elegíveis, sem permitir espera deliberada em hemorragia grave. O uso e duração de antibiótico profilático em sangramento devem ser individualizados por risco de infecção e severidade da cirrose no contexto Baveno VIII; a recomendação AASLD anterior citada acima não deve ser interpretada como duração universal obrigatória.
 
 ## 14. Hidrotórax, síndrome hepatopulmonar e hipertensão portopulmonar
 
@@ -714,7 +729,8 @@ D) Colocar dreno abdominal permanente sem avaliar infecção e perdas.
 
 ## 29. Referências clínicas e distinção entre normas
 
-1. **Baveno VII — Renewing consensus in portal hypertension.** *Journal of Hepatology*, 2022;76(4):959–974. https://pubmed.ncbi.nlm.nih.gov/35120736/ . Parâmetros de hipertensão portal clinicamente significativa e prevenção.
+1. **Baveno VIII Faculty.** *Baveno VIII — Advancing consensus in portal hypertension.* *Journal of Hepatology*, publicado online em 19/08/2026. **DOI 10.1016/j.jhep.2026.07.030.** https://doi.org/10.1016/j.jhep.2026.07.030 . Revisão de CSPH não invasiva, NSBB, prevenção de descompensação e sangramento. Baveno VII permanece referência histórica apenas para orientações que não foram modificadas.
+2. **Baveno VII — Renewing consensus in portal hypertension.** *Journal of Hepatology*, 2022;76(4):959–974. https://pubmed.ncbi.nlm.nih.gov/35120736/ . Parâmetros de hipertensão portal clinicamente significativa e prevenção.
 2. **AASLD Practice Guidance on Risk Stratification and Management of Portal Hypertension and Varices in Cirrhosis**, publicada em 2024. https://doi.org/10.1097/HEP.0000000000000647 . Varizes, NSBB, hemorragia aguda, EDA e TIPS.
 3. **ADQI–ICA Joint Consensus, 2024 — Acute kidney injury in patients with cirrhosis.** *Journal of Hepatology*. https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/ . Revisão importante que elimina necessidade de albumina 48h sistemática para diagnóstico de HRS-AKI.
 4. **EASL Clinical Practice Guidelines on Hepatic Encephalopathy, 2022.** *Journal of Hepatology*, 77:807–824. https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext . Diagnóstico, precipitantes e tratamento.
