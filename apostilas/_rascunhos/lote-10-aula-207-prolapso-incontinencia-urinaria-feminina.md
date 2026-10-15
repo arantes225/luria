@@ -351,3 +351,118 @@ Dor, dispareunia, urgência e sensação de pressão podem coexistir com múscul
 
 **Critérios de retorno imediato:** retenção urinária aguda, febre com dor importante, hematúria significativa, sangramento relevante, piora intensa de dor pélvica, sinais neurológicos novos ou suspeita de lesão/perfuração de órgão. Cada alta deve conter plano claro e acesso a reavaliação.
 
+
+
+## 14. Casos clínicos comentados
+
+### Caso 1 — Perda ao tossir após segunda gestação
+
+**Apresentação:** mulher de 36 anos, duas gestações, relata pequenas perdas de urina ao correr, espirrar ou levantar peso há dois anos. Sem urgência, dor, hematúria ou infecção recente; IMC elevado. Ao exame, perda visível durante tosse com volume vesical adequado, POP-Q sem prolapso significativo; urinálise não sugere infecção.
+
+**Hipótese:** incontinência urinária de esforço não complicada.
+
+**Raciocínio:** (1) sincronia entre aumento de pressão abdominal e perda; (2) ausência de urgência torna OAB isolada menos provável; (3) demonstração ao exame apoia diagnóstico; (4) condições modificáveis e impacto no exercício importam; (5) teste invasivo não é obrigatório antes da primeira linha conservadora e pode não ser necessário antes de cirurgia inicial simples segundo critérios NICE.
+
+**Exames e interpretação:** diário miccional opcional para dimensionar perdas, urinálise inicial, avaliação de força muscular. Não solicitar ressonância, cistoscopia ou urodinâmica de rotina sem indicação que altere conduta.
+
+**Conduta:** TMAP supervisionado por pelo menos três meses, medidas comportamentais e reavaliação; se incômodo persistir, discutir opções cirúrgicas com riscos e preferências.
+
+**Por que importa:** é a paciente índice, na qual história/exame têm alto valor e exames em excesso não melhoram necessariamente resultados.
+
+### Caso 2 — Urgência, frequência e restrição hídrica excessiva
+
+**Apresentação:** mulher de 52 anos precisa correr ao banheiro, perde urina no caminho e urina 12 vezes durante o dia. Passou a beber pouquíssima água para evitar acidentes, mas sente piora de irritação e constipação. Não perde ao tossir. Urinálise negativa para infecção. Diário de três dias mostra micções pequenas e cafeína elevada.
+
+**Hipótese:** síndrome da bexiga hiperativa com incontinência de urgência.
+
+**Raciocínio:** (1) perda é precedida de urgência, não de esforço; (2) diário diferencia volumes e hábitos; (3) restrição hídrica extrema não é terapia adequada; (4) constipação e cafeína são alvos úteis; (5) tratamento começa com treino vesical e hábitos, depois considerar fármacos se resposta insuficiente.
+
+**Exames:** revisar glicemia/medicações quando clínico, urinálise, diário e PVR apenas se risco de retenção. Não exigir urodinâmica para toda OAB idiopática.
+
+**Conduta:** treinamento vesical pelo menos seis semanas, manejo da ingesta, constipação e cafeína, educação; eventual agonista β3 ou antimuscarínico após decisão compartilhada e avaliação de comorbidades.
+
+**Por que importa:** a resposta não é simplesmente “prescrever oxibutinina”, muito menos reduzir água de forma perigosa.
+
+### Caso 3 — Perda mista e expectativa sobre sling
+
+**Apresentação:** mulher de 61 anos relata perda ao rir e também urgência com escapes noturnos. O componente de urgência é o mais incômodo. Exame comprova pequena perda ao esforço; não há prolapso avançado nem infecção.
+
+**Hipótese:** incontinência urinária mista com predomínio de urgência.
+
+**Raciocínio:** (1) duas apresentações coexistem; (2) operar uretra só controla componente de esforço; (3) a paciente prioriza urgência, por isso o plano inicial deve mirá-la; (4) diário miccional e avaliação da possibilidade de disfunção de esvaziamento orientam a necessidade de exames adicionais.
+
+**Exames:** urinálise, diário, PVR se risco; urodinâmica pode ser útil em planejamento cirúrgico complexo/mista predominante de urgência conforme guideline NICE.
+
+**Conduta:** TMAP, treino vesical, medidas comportamentais e possível farmacoterapia de urgência; reavaliar se a perda por esforço residual justifica cirurgia.
+
+**Por que importa:** “tratar a doença que eu sei operar” não é tratamento centrado na paciente.
+
+### Caso 4 — Cistocele avançada mascarando IUE
+
+**Apresentação:** mulher de 68 anos apresenta abaulamento vaginal que precisa reduzir com a mão para urinar, jato fraco e sensação de esvaziamento incompleto. Não referia perda ao esforço. Exame identifica prolapso anterior importante e suporte apical reduzido. Com redução por pessário, jato melhora, mas surge perda ao tossir.
+
+**Hipóteses:** prolapso anterior/apical sintomático com obstrução parcial e **IUE oculta**, demonstrada após redução.
+
+**Raciocínio:** (1) prolapso pode produzir angulação uretral e mascarar perda; (2) redução altera a resistência e revela incontinência; (3) qualquer cirurgia de POP deve contemplar risco urinário pós-operatório; (4) sling simultâneo ou posterior não é decisão automática, e sim discussão de riscos.
+
+**Exames:** documentar POP-Q, PVR, urinálise, pressão/avaliação renal se evidência de repercussão e investigação de esvaziamento conforme planejamento.
+
+**Conduta:** oferecer pessário e/ou cirurgia de POP se desejada; explicar possibilidade de IUE de novo e discutir alternativas concomitantes/sequenciais com equipe.
+
+**Por que importa:** a prova frequentemente pergunta por que paciente “passou a perder urina” após corrigir prolapso.
+
+### Caso 5 — POP-Q escrito como número
+
+**Apresentação:** paciente com sensação de abaulamento ao esforço. Exame: TVL=9 cm, Ba=+2 cm, C=-5 cm, Bp=-2 cm. Sem dor ou dificuldade urinária.
+
+**Hipótese/estadiamento:** prolapso de parede anterior dominante, **estádio III** global.
+
+**Raciocínio:** (1) escolher ponto mais distal: Ba=+2; (2) esse valor é maior que +1, logo não é estádio II; (3) limiar de eversão completa = TVL-2 = 7 cm, e +2 fica abaixo; (4) portanto estádio III; (5) o colo mais alto não muda estádio global, mas importa no planejamento.
+
+**Exames:** documentar demais pontos POP-Q (Aa, Ap, D se aplicável, gh, pb), sintomas e função.
+
+**Conduta:** decidir por incômodo: fisioterapia, pessário ou discussão cirúrgica. Não operar simplesmente porque o exame é estádio III.
+
+**Por que importa:** ensina a calcular estágio e não confundir localização anatômica com demanda por intervenção.
+
+### Caso 6 — Idosa com constipação e carga anticolinérgica
+
+**Apresentação:** mulher de 79 anos com esquecimentos, quedas, constipação e urgência urinária. Usa várias medicações com potencial anticolinérgico. Resíduo pós-miccional é discretamente elevado; não há sintomas de infecção. Solicita “remédio forte”.
+
+**Hipóteses:** OAB coexistindo com fatores comportamentais/medicamentosos e vulnerabilidade a eventos adversos.
+
+**Raciocínio:** (1) tratamento deve considerar risco cognitivo e quedas; (2) intensificar antimuscarínico pode piorar constipação/confusão/esvaziamento; (3) revisar medicações e hábitos, tratar constipação; (4) agonista β3 pode ser opção em pacientes adequadas, mas depende de pressão e interações; (5) observar volume e capacidade de autocuidado.
+
+**Exames:** diário adaptado a cuidador, urinálise, revisão medicamentosa, PVR e função renal conforme risco.
+
+**Conduta:** medidas conservadoras e revisão clínica, escolha de farmacoterapia apenas com avaliação de segurança, metas funcionais realistas e retorno.
+
+**Por que importa:** é possível piorar quadro com tratamento aparentemente “específico” se comorbidades forem ignoradas.
+
+### Caso 7 — Perda contínua após histerectomia
+
+**Apresentação:** mulher de 45 anos apresenta saída constante de urina pela vagina desde cirurgia uterina recente, inclusive ao dormir, sem relação com esforço e sem urgência prévia.
+
+**Hipóteses:** fístula vesicovaginal ou ureterovaginal; outros diagnósticos dependem de avaliação.
+
+**Raciocínio:** (1) perda é contínua e temporalmente relacionada à cirurgia; (2) isso difere dos episódios desencadeados por tosse; (3) exames de imagem/contraste, corante, cistoscopia e avaliação urológica podem ser necessários, conforme suspeita; (4) prescrever antimuscarínico ou sling sem investigar é erro grave.
+
+**Exames:** inspeção ginecológica, urina e testes para fistulização em serviço apropriado.
+
+**Conduta:** encaminhamento rápido a urologia/uroginecologia para diagnóstico e reparo segundo localização/tempo.
+
+**Por que importa:** identificação do padrão de perda evita cirurgia errada.
+
+### Caso 8 — Dor e sangramento após sling sintético
+
+**Apresentação:** mulher de 57 anos operada com sling há dois anos relata novo sangramento vaginal pós-coito, desconforto pélvico e episódios de ITU. Ao exame, área endurecida e pequeno segmento de material exposto na parede vaginal anterior.
+
+**Hipótese:** exposição vaginal de malha após cirurgia de IUE, com necessidade de avaliar infecção, extensão e possível lesão adjacente.
+
+**Raciocínio:** (1) sintomas após implante exigem revisão do procedimento e exame; (2) exposição pode causar sangramento/dor/infecção; (3) retirar material de modo indiscriminado pode reintroduzir IUE ou lesar uretra/bexiga; (4) manejo depende de tamanho, sintomas, infecção e expertise.
+
+**Exames:** história cirúrgica/documentação do implante, exame dirigido; cistoscopia ou imagem se suspeita de perfuração de trato urinário.
+
+**Conduta:** encaminhar equipe especializada para opções de cuidado local versus revisão/remoção parcial ou completa e discutir benefícios/risco de recorrência.
+
+**Por que importa:** malha é tratamento potencialmente eficaz, mas exige consentimento, acompanhamento e manejo qualificado de complicações.
