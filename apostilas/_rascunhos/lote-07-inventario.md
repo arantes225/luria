@@ -29,9 +29,9 @@
 | 133 | Meningites e encefalites | Rascunho `_rascunhos/lote-07-aula-133-meningites-encefalites.md` criado e verificado (24.615 caracteres, 4 casos, 6 questões); OMS 2025/2026 e MS; benchmark correlato de TB/neurosífilis |
 | 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
 | 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
-| 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (19.276 caracteres; 4 casos, 6 questões); não reproduz 127/132, ainda NÃO autossuficiente |
+| 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (61.186 caracteres brutos; 9 casos, 14 questões); não reproduz 127/132, autossuficiência ampliada, ainda sem certificação médica/visual |
 | 137 | Doença do refluxo e hérnia hiatal | Rascunho `_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md` **AMPLIADO a 80.228 caracteres brutos, 8 casos e 14 questões** (original preservado e aprofundado; ACG/Lyon 2.0/SAGES/AGA/Barrett/Chicago 4.0), pendentes imagens, revisão médica e certificação |
-| 138 | Crises convulsivas e estado de mal epiléptico | Rascunho `_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md` (24.230 caracteres; 4 casos, 6 questões), MS PCDT epilepsia 05/2026, NICE/CHOP; benchmark Drive apenas correlato |
+| 138 | Crises convulsivas e estado de mal epiléptico | Rascunho `_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md` (76.435 caracteres brutos; 9 casos, 14 questões), MS PCDT 05/2026, ILAE 2025, NICE/CHOP, ESETT; benchmark Drive apenas correlato |
 | 139 | Endometriose | Rascunho `_rascunhos/lote-07-aula-139-endometriose.md` (33.568 caracteres após correção de referência; 5 casos, 8 questões), NICE/ESHRE/FEBRASGO 2026; HTMLs de infertilidade e DIP preservados |
 | 140 | Saúde da criança na APS | Rascunho `_rascunhos/lote-07-aula-140-saude-crianca-aps.md` (35.382 caracteres; 4 casos, 8 questões), PNAISC/Caderneta/MS, dois benchmarks de puericultura lidos |
 
@@ -135,4 +135,28 @@
 
 **Estimativa de conteúdo didático bruto após remover partes estritamente administrativas e bibliográficas:** superior a 70 mil caracteres, incluindo títulos/casos/questões/tabelas, mas **isso NÃO equivale automaticamente a 60 mil caracteres úteis certificados**, pois requer auditoria qualitativa de repetição e autossuficiência. Livro ainda não aprovado para publicação nem revisão farmacológica brasileira completa. Imagens propostas não foram encontradas/licenciadas nem importadas ao Admin.
 
-**Próxima prioridade sugerida:** avançar aula 136 (apenas integradora, curta e ainda dependente de 127/132) e depois 138 (emergência pediátrica, doses a conferir), sem apagar apostilas HTML já publicadas. Nenhum deploy, arquivo HTML publicado, catálogo ou banco de dados alterado.
+**Nota histórica:** essa prioridade foi executada na rodada seguinte; consultar seção de aprofundamento 136+138 abaixo. Nenhum deploy, arquivo HTML publicado, catálogo ou banco de dados alterado.
+
+
+## 14/10/2026 — aprofundamentos verificados das aulas 136 e 138
+
+**Leituras de verificação GitHub após os commits desta rodada:**
+
+| Aula | Caracteres brutos do Markdown | Casos totais | Questões totais | Desenvolvimento |
+|---|---:|---:|---:|---|
+| 136 Hemorragia digestiva | **61.186** | **9** | **14** | Fisiologia do choque/hemoterapia; endoscopia e tempo por etiologia; HDA varicosa/não varicosa, HDB, CTA/TAE/delgado; anticoagulação; 5 casos adicionais e 8 questões adicionais |
+| 137 DRGE e hérnia hiatal (rodada anterior) | **80.228** | **8** | **14** | Exame funcional, Barrett, cirurgia, pós-operatório, AGA/ACG/Lyon/SAGES |
+| 138 Crises convulsivas/EME | **76.435** | **9** | **14** | ILAE 2025; NICE NG217; CHOP pathway revisado agosto/2026; ESETT; 5 casos e 8 questões novas, investigação, EEG, PCDT MS 2026 |
+
+**Soma dos três arquivos atuais: 217.849 caracteres brutos.** É **soma de Markdown integral**, não contagem de texto didático líquido, nem certificação de ≥60.000 úteis. Foram preservados os textos originais e adicionadas seções originais no mesmo arquivo, sem sobrescrever publicação HTML.
+
+**Pontos científicos auditados externamente nesta rodada:**
+- ILAE 2025 substitui a nomenclatura operacional de 2017, com quatro classes e “consciência” (awareness + responsiveness), além de descritores semiológicos; inclusão expressa na aula 138.
+- ESETT encontrou eficácia global semelhante de levetiracetam, fosfenitoína e valproato em crianças ≥2 anos elegíveis a seu desenho; não implica uso universal sem contraindicações.
+- CHOP pediatric status pathway foi revisado em **agosto de 2026** e seus exemplos de doses são identificados como **institucionais estrangeiros**, não nacionalizados para SUS. NICE NG217 orienta duas doses de benzodiazepínico seguidas de segunda linha IV conforme cenário.
+- ESGE 2026 úlcera péptica (publicado online 13/05/2026) orienta interpretação Forrest IIb, possibilidade de OTS, TAE e timing de EDA sem antecipação automática; houve **erratum em 22/05/2026**, incluído na bibliografia da 136, cujo teor editorial integral ainda precisa de verificação antes de certificação.
+- Baveno VII indica abordagem varicosa específica com fármacos vasoativos, antibiótico, EDA e TIPS em subgrupo.
+
+**Gates NÃO concluídos:** revisão clínica externa de urgências e farmacologia/doses nacionais, reconhecimento de alterações brasileiras de disponibilidade de medicamentos, licenciamento/seleção e aprovação de imagens clínicas reais, auditoria de repetição/autossuficiência, HTML/PWA e testes de integração. **Nenhum deploy, HTML preexistente ou catálogo foi modificado.**
+
+**Próxima prioridade clínica do Lote 7:** expandir/auditar **aula 133 Meningites e encefalites** e **aula 135 PNI 2026** com protocolos brasileiros específicos e checagem das referências temporais; em seguida aprofundar 132 HDB (23k brutos) e 139 Endometriose (34k brutos), mantendo SOP/Amenorreia como complementos aos HTMLs existentes.
