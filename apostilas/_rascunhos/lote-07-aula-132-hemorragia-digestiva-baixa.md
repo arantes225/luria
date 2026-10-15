@@ -394,3 +394,138 @@ Verificar hemoglobina em tendência, comorbidades, anticoagulação, suporte dom
 Triantafyllou K et al. *Endoscopy* 2021;53:850–868. DOI 10.1055/a-1496-8969. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline
 
 **Registro de lacuna:** nenhum benchmark do Drive consultado descreve HDB com essa profundidade. O PDF "01 - ENDOSCOPIA - ULCERA PEPTICA" é apenas contraponto de HDA, e o guia clínico deriva das referências científicas citadas. Não citar autoria do Estratégia MED sem documento original verificado.
+
+
+## 27. Casos clínicos avançados — seis decisões que não cabem no algoritmo curto
+
+### Caso 5 — CTA positiva e sangramento diverticular arterial
+**Apresentação:** homem de 76 anos, hipertenso e com doença renal estável, procura PS após múltiplas evacuações de grande volume de sangue vivo sem dor. PA inicialmente 88/50, taquicardia, hemoglobina 9,6 g/dL com queda em repetição, sem hematêmese. Após ressuscitação inicial mantém nova enterorragia e CTA mostra foco de extravasamento em cólon ascendente.  
+**Hipótese diagnóstica:** HDB arterial ativa, possivelmente diverticular, confirmada topograficamente por CTA; lesão exata pode ser demonstrada por angiografia/colonoscopia posterior.  
+**Raciocínio passo a passo:** (1) hipotensão define gravidade independentemente de Hb; (2) sangramento indolor sugere divertículo/lesão vascular; (3) CTA positiva localiza região e aumenta valor de angiografia terapêutica; (4) colonoscopia sem preparo durante choque poderia ter rendimento inadequado; (5) doença renal exige balancear risco de contraste com necessidade vital de controlar sangramento.  
+**Exames complementares:** hemograma seriado, função renal, tipagem/prova cruzada, coagulação quando pertinente, angio-TC já positiva e eventual arteriografia por equipe treinada.  
+**Conduta:** manter estabilização/transfusão conforme perfusão, acionar radiologia intervencionista para embolização superseletiva quando indicada e disponível, monitorar isquemia/ressangramento e documentar diagnóstico definitivo.  
+**Por que importa:** a CTA pode transformar diagnóstico em caminho terapêutico, mas não substitui ressuscitação.
+
+### Caso 6 — a hemorroida aparente que escondia câncer
+**Apresentação:** mulher de 58 anos relata sangue no papel, episódios de sangue misturado a fezes há quatro meses, emagrecimento de 6 kg e cansaço. Exame anorretal mostra pequenas hemorroidas internas. Hemoglobina 9,2 g/dL, microcitose e deficiência de ferro.  
+**Hipóteses:** hemorragia crônica por tumor colorretal, lesão vascular, doença inflamatória e hemorroidas coexistentes.  
+**Raciocínio:** hemorroidas visíveis explicam parte do sangue, mas **não explicam satisfatoriamente conjunto de anemia ferropriva e perda ponderal**. Ancoragem no achado mais acessível atrasaria diagnóstico oncológico.  
+**Exames:** colonoscopia diagnóstica com biópsia de lesões, avaliação de ferro e outros exames conforme suspeita clínica e achados.  
+**Conduta:** organizar investigação colorretal oportuna, tratar anemia e sintomas, evitar aceitar apenas pomadas anais como plano final. Se massa for confirmada, estadiamento e equipe oncológica/coloproctológica.  
+**Por que importa:** sangramento distal pouco intenso pode indicar doença relevante.
+
+### Caso 7 — colite isquêmica depois de hipotensão
+**Apresentação:** idosa de 81 anos, após episódio de desidratação e hipotensão, desenvolve dor intensa em quadrante esquerdo e evacua fezes líquidas com sangue. Na admissão está relativamente estável, mas permanece sensível à palpação e tem leucocitose.  
+**Hipóteses:** colite isquêmica, colite infecciosa e doença inflamatória; isquemia mesentérica extensa em casos graves.  
+**Raciocínio:** baixa perfusão, dor antes de sangue e aterosclerose são pistas; sinais peritoneais/elevação de lactato/instabilidade sustentada mudam risco de necrose. Colonoscopia pode ajudar em paciente estável selecionado, mas distensão grave/peritonite exige priorizar imagem e equipe cirúrgica.  
+**Exames:** hemograma, lactato e função renal conforme gravidade, TC com contraste quando apropriada, testes infecciosos dirigidos, endoscopia seletiva se seguro.  
+**Conduta:** suporte hemodinâmico, reavaliação abdominal repetida, cirurgia urgente se suspeita de necrose/perfuração, tratamento específico conforme extensão.  
+**Por que importa:** a hemorragia é sinal de sofrimento mucoso, não foco vascular simples a “clipar”.
+
+### Caso 8 — idoso com anticoagulante por FA e stent recente
+**Apresentação:** homem de 74 anos com fibrilação atrial, angioplastia coronária recente e terapia antitrombótica combinada apresenta HDB maior, mas estabiliza após reanimação. A família pede “cortar todos esses remédios para sempre”.  
+**Hipóteses:** sangramento exacerbado por antitrombóticos sobre lesão GI e risco elevado de trombose se suspensão prolongada.  
+**Raciocínio:** anticoagulante aumenta duração do sangramento, mas não substitui pesquisa de lesão. Stent recente pode ter alto risco isquêmico; decisões de reversão/temporização e retorno não devem ser feitas sem definir razão terapêutica.  
+**Exames:** colonoscopia/CTA conforme atividade, Hb seriada, função renal, identificação de drogas e última dose, INR se varfarina, revisão de tipo/data de stent e cardiologia.  
+**Conduta:** obter hemostasia, suspender ou reverter apenas na medida indicada pela gravidade, envolver cardiologia/gastro e criar plano formal de retomada.  
+**Por que importa:** prevenir ressangramento **e** evento trombótico é parte do mesmo cuidado.
+
+### Caso 9 — bebê com sangue nas fezes e dor intermitente
+**Apresentação:** lactente de 8 meses com episódios de choro agudo e flexão de pernas, vômitos, períodos de prostração e eliminação de fezes com muco e sangue. Pais atribuem a alergia à proteína do leite.  
+**Hipóteses:** invaginação intestinal (urgente), outras causas obstrutivas, infecção, proctocolite alérgica conforme contexto.  
+**Raciocínio:** dor em crises, vômitos e prostração associados a sangue não se encaixam em bebê bem com proctocolite alérgica leve típica; invaginação pode evoluir com isquemia/perfuração.  
+**Exames:** avaliação pediátrica de perfusão, US abdominal para intussuscepção, eletrólitos/hidratação conforme gravidade.  
+**Conduta:** manter jejum/ressuscitação apropriados quando necessário, equipe cirúrgica pediátrica e redução por enema terapêutico guiado nos pacientes elegíveis estáveis sem perfuração/peritonite, ou cirurgia conforme gravidade.  
+**Por que importa:** transfusão/CTA e algoritmo Oakland de adulto não atendem essa etiologia pediátrica.
+
+### Caso 10 — duas endoscopias negativas, mas anemia não resolve
+**Apresentação:** homem de 67 anos com anemia ferropriva e sangramento intermitente; EDA/colonoscopia com preparo adequado há três meses sem lesão; refere melena ocasional e recebeu ferro, porém ferritina volta a cair.  
+**Hipóteses:** angiodisplasia do delgado, tumor de intestino delgado, doença inflamatória e perda extraintestinal.  
+**Raciocínio:** exames com bom preparo excluem parte importante de doenças visíveis naquele momento, não todo o intestino. Repetir colonoscopia indefinidamente sem reavaliar qualidade/intervalo pode ser desperdício, enquanto cápsula/enteroscopia/enterografia podem responder questão anatômica nova.  
+**Exames:** revisar exames prévios originais, ferritina/hemograma, cápsula se sem risco de retenção, enterografia ou enteroscopia terapêutica dirigida conforme suspeita.  
+**Conduta:** investigar segmento delgado, corrigir ferro e reavaliar necessidade de hospitalização se sangramento aumentar ou instabilizar.  
+**Por que importa:** anemia persistente não é “funcional” por ausência de fonte na primeira dupla de exames.
+
+## 28. Oito questões adicionais com quatro alternativas comentadas
+
+### Questão 7 — nova recomendação de timing
+Adulto estável internado por HDB maior, mas sem sangramento abundante em curso. A diretriz ACG 2023 favorece:
+A. Colonoscopia obrigatória nas primeiras 60 minutos, mesmo sem preparo.  
+B. Colonoscopia não urgente durante hospitalização, quando indicada, priorizando qualidade de visualização.  
+C. Nenhuma investigação etiológica em idoso.  
+D. Angiografia invasiva automática a todos.
+**Gabarito B.** Colonoscopia <24 h rotineira não demonstrou melhorar resultados importantes na maioria. **A** pressa insegura; **C** negligencia etiologia; **D** não é necessária no estável. **Mini-revisão:** novo timing é uma atualização em relação a regras antigas.
+
+### Questão 8 — score de Oakland
+Pessoa com hemorragia autolimitada, estável e sem sinais adversos apresenta Oakland ≤8. Qual interpretação?
+A. Apoia avaliação de possível alta com investigação ambulatorial, sem substituir julgamento clínico.  
+B. Confirma divertículo como etiologia.  
+C. Exclui neoplasia em qualquer idade.  
+D. Obriga embolização.
+**Gabarito A.** ESGE 2021 considera escore baixo como apoio à decisão de alta em população selecionada. **B/C** confundem risco agudo com diagnóstico. **D** inverte indicação. **Mini-revisão:** score informa risco de intervenção, não origem.
+
+### Questão 9 — hematoquezia e choque
+Pessoa em choque com hematoquezia e Hb 11 g/dL logo após sangramento maciço. Qual raciocínio?
+A. Não há perda relevante porque Hb está acima de 10.  
+B. Só pode haver sangramento hemorroidário.  
+C. Hemoglobina inicial pode subestimar perda; ressuscitar e buscar fonte, incluindo possibilidade de HDA maciça.  
+D. Aguardar cinco dias e repetir hemograma.
+**Gabarito C.** Choque precede queda de Hb por redistribuição. **A/B** ancoragem perigosa. **D** atrasa hemostasia. **Mini-revisão:** perfusão pesa mais que concentração inicial.
+
+### Questão 10 — angio-TC positiva
+CTA em HDB volumosa mostra extravasamento focal no cólon direito. Se há equipe e indicação apropriada, a próxima etapa pode ser:
+A. Radiologia intervencionista e angiografia/embolização dirigidas, mantendo suporte.  
+B. Alta porque a fonte foi localizada.  
+C. Colonoscopia eletiva daqui a seis meses sem monitorização.  
+D. Imunossupressão de rotina.
+**Gabarito A.** CTA orienta terapia vascular. **B/C** ignoram sangramento; **D** não tem nexo. **Mini-revisão:** CTA localiza, angiografia pode tratar.
+
+### Questão 11 — colite e isquemia
+Idosa tem hipotensão transitória seguida de dor abdominal e diarreia sanguinolenta. Qual hipótese deve ser lembrada?
+A. Hemorroida como diagnóstico definitivo.  
+B. Colite isquêmica, com avaliação de gravidade/necrose e diferenciais infecciosos.  
+C. Sangramento diverticular necessariamente indolor mais provável sempre.  
+D. Úlcera duodenal confirmada.
+**Gabarito B.** Contexto de baixo fluxo e dor antes de sangue sugere isquemia. **A/C/D** não integram o perfil. **Mini-revisão:** dor+hipoperfusão e sangue mudam prioridade.
+
+### Questão 12 — estenose aórtica e ectasia vascular
+Homem idoso com estenose aórtica importante e HDB recorrente por angiodisplasia. Qual mecanismo pode contribuir?
+A. Hipervitaminose A obrigatória.  
+B. Hiperprodução de coágulos protetores em todas as pessoas.  
+C. Mutação de HFE como explicação única.  
+D. Defeito adquirido de hemostasia relacionado a multímeros de von Willebrand por cisalhamento, característico da síndrome de Heyde em cenário compatível.
+**Gabarito D.** Associação entre valvopatia e angiodisplasia pode envolver multímeros de alto peso molecular. **A/B/C** não explicam. **Mini-revisão:** Heyde não substitui confirmação endoscópica.
+
+### Questão 13 — dois riscos da dupla antiagregação
+Paciente com stent recente tem HDB maior e usa AAS mais clopidogrel. Qual princípio da ESGE 2021?
+A. Suspender para sempre ambos sem discutir com cardiologia.  
+B. Dobrar imediatamente as duas doses.  
+C. Discutir com cardiologia antes de suspender DAPT indiscriminadamente; manter AAS quando possível, individualizar P2Y12 e retorno após hemostasia.  
+D. Trocar por AINE.
+**Gabarito C.** Segurança cardiovascular é central. **A** risco de trombose; **B/D** não tratam situação. **Mini-revisão:** antitrombóticos exigem plano de retorno.
+
+### Questão 14 — pediatria
+Lactente com dor abdominal em cólicas, vômitos, prostração e sangue/muco nas fezes. A conduta inicial mais segura:
+A. Considerar invaginação intestinal e avaliar urgentemente, incluindo US e cirurgia pediátrica.  
+B. Tratar apenas hemorroida.  
+C. Aplicar automaticamente Oakland de adulto.  
+D. Esperar 14 dias para confirmar alergia alimentar.
+**Gabarito A.** Quadro pode representar obstrução/isquemia intestinal. **B/C/D** atrasam diagnóstico. **Mini-revisão:** HDB pediátrica tem diferenciais próprios.
+
+## 29. Matriz de autossuficiência e revisão final de HDB
+| Competência | Onde foi ensinada | Caso | Questão |
+|---|---|---|---|
+| Reconhecer choque sem Hb baixa | 4–5, 16 e 18 | 2 e 5 | 2 e 9 |
+| Interpretar hematoquezia sem fechar topografia | 1–3, 16–17 | 2 | 2 e 9 |
+| Selecionar colonoscopia vs CTA | 6, 16 e 20 | 1 e 5 | 1, 3, 7 e 10 |
+| Aplicar Oakland com contexto | 19 | 6 | 8 |
+| Diferenciar diverticular de colite | 3, 17 e 21 | 1, 3 e 7 | 4 e 11 |
+| Entender angiodisplasia/Heyde | 17 e 21 | 10 como diferencial | 12 |
+| Interpretar AAS/DOAC/DAPT | 5 e 22 | 4 e 8 | 5 e 13 |
+| Diferenciar pediatria | 23.4 | 9 | 14 |
+| Identificar possível câncer | 7, 21.6 | 6 | 8 (estratificação) |
+| Planejar investigação de delgado | 6, 20 e 24 | 10 | 6 |
+
+**Verificação factual da bibliografia:** ACG, *Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline*. 2023. DOI 10.14309/ajg.0000000000002130. ESGE, *Diagnosis and management of acute lower gastrointestinal bleeding*. 2021. DOI 10.1055/a-1496-8969. Não houve comparação com apostila HDB completa no Drive, portanto **não** atribuir equivalência de benchmark nem certificação final.
+
+**Revisão pendente:** aprofundar hemostasia por ferramentas endoscópicas sob imagens clínicas reais, reconstruir algoritmo em figuras originais, validação com coloproctologia/endoscopia, conferência de reversores/farmacologia disponível no Brasil, revisão profissional de pediatria e aspectos de HDB rara, licenciamento de imagens e testes de prova/HTML/PWA. **RASCUNHO NÃO PUBLICADO.**
