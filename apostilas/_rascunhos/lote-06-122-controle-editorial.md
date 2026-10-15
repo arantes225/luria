@@ -83,3 +83,52 @@ Arquivos preservados em `editorial/lote-06-auditoria-20261014`, **sem alterar ap
 - [ ] Execução **real** dos scripts de build/QA do repositório; as verificações feitas aqui são pré-testes JavaScript e **não** execução de `node scripts/build-apostilas-batch.cjs --dry-run`.
 - [ ] Conferência de renderização desktop/PWA, responsividade, acessibilidade e referências.
 - [ ] Aprovação editorial antes de qualquer merge ou deploy. **Permanece RASCUNHO NÃO PUBLICADO.**
+
+
+---
+
+## Etapa 2 — redação consolidada, preview e auditoria quantitativa
+
+- **Markdown autoral:** \`apostilas/_rascunhos/lote-06-122-perfuracao-de-viscera-oca.md\` — **111.814 caracteres brutos**, **31 capítulos** com 27 de instrução, 8 casos completos (cap. 28), 12 questões A–D (cap. 29), referências (cap. 30) e controles (cap. 31).
+- **Corpo instrucional estimado:** **79.202 caracteres**, após remoção de parte da marcação Markdown e URLs, excluindo casos, questões e bibliografia. Não equivale a verificação de 60 mil **caracteres semanticamente únicos e úteis**.
+- **JSON de entrada preliminar:** \`apostilas/_rascunhos/lote-06-122-build-input-preliminar.json\`, 30 seções (introdução + 27 capítulos + casos + questões), 8 referências, sem imagens.
+- **Preview HTML:** \`apostilas/_rascunhos/lote-06-122-preview.html\` — 31 seções contando bibliografia; 8 casos, 12 questões, 12 listas A–D; \`noindex, nofollow\`; 0 âncoras sem destino, 0 IDs duplicados, zero imagens novas.
+- **Candidatas visuais:** \`apostilas/_rascunhos/lote-06-122-imagens-candidatas-parciais.json\` — **7 imagens** com páginas de fonte, autoria e licenças públicas rastreáveis, além de 5 propostas ainda não produzidas/localizadas. Algumas figuras pertencem ao **mesmo caso radiológico** e devem ser selecionadas por complementaridade, não para cumprir quantidade.
+- Não houve merge, deploy nem alteração de arquivo publicado.
+- Conferência adicional das recomendações: SSC 2026 de controle precoce da fonte (quando necessário, idealmente nas primeiras 6 horas, recomendação condicional de certeza muito baixa, **não janela de espera**); SIS 2024 de limitação de antibiótico após controle adequado; WSES 2020 de restrição ao manejo conservador de úlcera perfurada.
+
+### Matriz de autossuficiência preliminar — doze questões
+
+A matriz pesquisa somente **capítulos instrucionais**, excluindo casos, enunciados e gabaritos. É teste de presença conceitual **lexical**, não avaliação médica completa da suficiência das explicações.
+
+| Questão | Conteúdo | Capítulos-base | Termos no corpo instrucional | Triagem |
+| --- | --- | --- | --- | --- |
+| 1 | RX negativo não exclui perfuração | 9, 10 | pneumoperitonio ✓; nao exclui ✓ | Cobertura localizada |
+| 2 | Sinal de Chilaiditi | 6, 9 | chilaiditi ✓; haustrais ✓ | Cobertura localizada |
+| 3 | Não operatório excepcional na úlcera selada | 14, 15 | nao operatorio ✓; selamento ✓ | Cobertura localizada |
+| 4 | Diverticulite: cirurgia individualizada | 16 | hartmann ✓; anastomose primar ✓ | Cobertura localizada |
+| 5 | Boerhaave versus Mallory-Weiss | 19 | boerhaave ✓; mallory ✓ | Cobertura localizada |
+| 6 | Controle precoce de foco | 12, 23 | 6 horas ✓; controle ✓ | Cobertura localizada |
+| 7 | Duração pós-source control | 13 | quatro dias ✓; fonte ✓ | Cobertura localizada |
+| 8 | Lesão intestinal pós-trauma | 20 | cinto ✓; exame seriado ✓ | Cobertura localizada |
+| 9 | Perfuração endoscópica | 21 | colonoscopia ✓; endoscopico ✓ | Cobertura localizada |
+| 10 | Perfuração por tumor distal | 18 | ceco ✓; obstrucao ✓ | Cobertura localizada |
+| 11 | Pneumoperitônio: limites da interpretação | 2, 7, 9 | pneumoperitonio ✓; nao exclui ✓ | Cobertura localizada |
+| 12 | Deiscência e controle de fonte | 21, 24 | deiscencia ✓; fonte ✓ | Cobertura localizada |
+
+**Resultado lexical: 12/12.** Na primeira versão da triagem, a questão 8 usava o termo no plural “exames seriados”, enquanto o capítulo 20 usava “exame seriado”; a matriz foi corrigida para a formulação equivalente existente, sem declarar uma lacuna científica inexistente. **A revisão humana e a análise de justificativa alternativa por alternativa continuam obrigatórias.**
+
+### Controle de originalidade e imagens
+- Verificação de duplicação literal de parágrafos instrutivos longos não apontou parágrafos idênticos, mas conceitos didáticos podem se repetir por sentido; a deduplicação semântica deve ser concluída por leitura editorial.
+- **Imagens não publicadas:** nenhuma figura foi inserida no texto, JSON ou HTML. A licença verificada na página de Commons não garante, por si, precisão de legenda ou ausência de informação identificadora — verificar tudo antes de enviar ao Admin; cumprir CC BY/CC BY-SA e registrar adaptações.
+- Não divulgar referências privadas do Drive na interface/produção pública.
+
+### Pendências bloqueadoras
+1. Revisão científica e cirúrgica de todos os 31 capítulos, casos e questões, com atualização das diretrizes se necessário.
+2. Certificação da suficiência clínica, da unicidade instrucional e da validade dos itens de prova.
+3. Curadoria de ao menos dez figuras/diagramas **não redundantes**, com créditos, legendas validadas, compressão WebP e aprovação pelo Admin.
+4. **Scripts oficiais do repositório não executados** — preview validado estruturalmente em JS, mas não foi feito dry run formal \`node scripts/build-apostilas-batch.cjs --input ... --dry-run\` nem auditoria automatizada de release.
+5. Revisão visual real de desktop/PWA, navegação por teclado, largura de tabelas, tamanho de imagens e desempenho.
+6. Aprovação editorial explícita antes de mesclar branch ou fazer deploy.
+
+**Parecer: apostila 122 redigida, prévia e matriz inicial prontas. Status permanece RASCUNHO EDITORIAL.**
