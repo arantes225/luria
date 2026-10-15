@@ -377,3 +377,285 @@ A NICE NG225, sobre autoagressão, reforça que **escalas ou rótulos de baixo/m
 **C.** Encaminhar para avaliação urgente conforme gravidade, sem trivializar rash.  
 **D.** Rever regime com prescritor; não reiniciar dose plena sem protocolo.
 
+
+
+## 17. Casos clínicos autorais comentados
+
+### Caso 1 — Mania clássica, não apenas “felicidade excessiva”
+
+**Apresentação:** homem de 28 anos com dez dias de sono reduzido para duas horas por noite sem fadiga, fala pressionada, projetos grandiosos, gastos fora de seu padrão e interrupção das atividades profissionais. A família o levou ao pronto-socorro porque ele está desorganizado e entrou em conflito ao tentar fazer aquisição financeira de grande valor. Exame identifica humor expansivo/irritável, distratibilidade e julgamento comprometido.
+
+**Hipótese:** episódio **maníaco**; suspeita de bipolar I após exclusão de causas médicas/substâncias e avaliação clínica.
+
+**Raciocínio:** (1) humor e energia intensamente aumentados; (2) menor **necessidade** de sono, não insônia comum; (3) duração suficiente e prejuízo acentuado; (4) necessidade de ambiente protegido/possível internação segundo segurança; (5) investigar estimulantes, corticoides, tireotoxicose e outros diferenciais.
+
+**Exames:** EEM, sinais vitais, história de substâncias/medicação, exames laboratoriais orientados (incluindo tireoide, função renal/metabólica se medicação indicada) e avaliação clínica.
+
+**Conduta:** avaliação psiquiátrica urgente, medidas de proteção/ambiente com baixo estímulo, tratamento antimaníaco adequado (antipsicótico e/ou estabilizador conforme equipe e riscos) e posterior plano longitudinal.
+
+**Por que importa:** a gravidade funcional/psicose/hospitalização e duração classificam **mania**, não apenas euforia.
+
+### Caso 2 — Bipolar II escondido atrás de anos de depressão
+
+**Apresentação:** mulher de 35 anos tratada por depressões recorrentes relata dois períodos anteriores de cerca de cinco dias em que dormia pouco, ficava muito ativa, assumia projetos e falava mais; familiares percebiam mudança, mas ela não foi hospitalizada, não teve psicose e conservou funcionamento sem prejuízo intenso. Atualmente tem episódio depressivo maior, com isolamento e anedonia.
+
+**Hipótese:** suspeita de **transtorno bipolar II** (hipomania + episódio depressivo maior, sem mania histórica), a confirmar com duração, observação e exclusões.
+
+**Raciocínio:** (1) depressão isolada não diferencia polaridade; (2) períodos de ativação observável com duração compatível e sem prejuízo intenso sugerem hipomania; (3) mania anterior descartaria diagnóstico de tipo II; (4) não prescrever monoterapia antidepressiva de modo automático; (5) avaliar segurança durante episódio depressivo.
+
+**Exames:** história longitudinal, informante com consentimento, EEM, avaliação de substâncias e sono, clínica direcionada.
+
+**Conduta:** avaliação psiquiátrica para tratamento de depressão bipolar, discutir opções conforme diretrizes (por exemplo, quetiapina como primeira linha em CANMAT para depressão bipolar II, com individualização), psicoterapia e plano de recaída.
+
+**Por que importa:** a hipomania pode ter sido percebida pela pessoa como fase de “produtividade máxima”, escondendo a bipolaridade.
+
+### Caso 3 — A insônia que não era mania
+
+**Apresentação:** paciente de 24 anos começa novo emprego em turnos e dorme quatro horas, sente cansaço extremo, irritabilidade e dificuldade de concentração. Não há humor expansivo, aumento de energia, fala pressionada ou episódios prévios de mudança de comportamento.
+
+**Hipóteses:** privação de sono/transtorno de ritmo circadiano relacionado a turnos, ansiedade ou outros fatores; episódio maníaco não demonstrado.
+
+**Raciocínio:** (1) dormir pouco com exaustão é diferente de menor necessidade de sono; (2) insônia e irritabilidade são inespecíficas; (3) investigar trabalho, estimulantes, ansiedade, depressão e apneia; (4) evitar diagnóstico bipolar por uma palavra isolada.
+
+**Exames:** história de sono/turnos, diário de rotina, clínica direcionada e exame mental. Questionário MDQ positivo em pessoa privada de sono não seria diagnóstico isolado.
+
+**Conduta:** correção de fatores do sono, avaliação clínica e seguimento para detectar mudança sindrômica se surgir.
+
+**Por que importa:** protege de falsos positivos e medicação desnecessária.
+
+### Caso 4 — Tireotoxicose imitando mania
+
+**Apresentação:** mulher de 39 anos refere irritabilidade, inquietação, insônia, palpitações e perda de peso. Ao exame: taquicardia, tremor fino, intolerância ao calor e hiperreflexia. Não se documenta grandeza, fuga de ideias sustentada nem história de episódios periódicos; TSH está suprimido com T4 livre elevado.
+
+**Hipótese:** síndrome de tireotoxicose/hipertireoidismo contribuindo para manifestações neuropsiquiátricas, exigindo investigação etiológica.
+
+**Raciocínio:** (1) sintomas autonômicos e metabólicos são fortes pistas; (2) tireotoxicose pode causar ansiedade e ativação; (3) não encerrar raciocínio em “mania” sem excluir condição clínica; (4) cuidar doença tireoidiana não elimina possibilidade futura de transtorno de humor concomitante, que deve ser reavaliado.
+
+**Exames:** hormônios tireoidianos e exame etiológico conforme endocrinologia, ECG se taquiarritmia, outros exames direcionados.
+
+**Conduta:** manejo da tireotoxicose conforme serviço e reavaliação de sintomas afetivos após controle clínico.
+
+**Por que importa:** **TSH não é exame diagnóstico de bipolaridade**, mas pode revelar imitador tratável quando clínica indica.
+
+### Caso 5 — Lítio, gastroenterite e AINE
+
+**Apresentação:** homem de 51 anos com bipolar I em manutenção com lítio desenvolve gastroenterite, baixa ingesta hídrica e usa AINE por conta própria. Em dois dias apresenta tremor grosso, vômitos, dificuldade para caminhar e confusão. Familiares relatam estabilidade afetiva anterior.
+
+**Hipótese:** **toxicidade por lítio** em contexto de desidratação e interação medicamentosa, além de outros diferenciais de alteração aguda da consciência.
+
+**Raciocínio:** (1) lítio depende de função renal/hidratação; (2) AINE pode elevar exposição; (3) sinais neurológicos associados à doença aguda são alarme; (4) não atribuir a “mania recorrente”; (5) nível sérico e avaliação emergencial são prioritários.
+
+**Exames:** litemia, função renal, eletrólitos, ECG conforme estado e exame clínico.
+
+**Conduta:** avaliação hospitalar urgente, revisão da medicação/interações e tratamento da toxicidade pela equipe, com plano de prevenção pós-recuperação.
+
+**Por que importa:** a eficácia do lítio depende de **educação e monitorização**, não apenas da receita.
+
+### Caso 6 — Paciente com mania e valproato na gestação
+
+**Apresentação:** mulher de 29 anos com bipolar I está estável com divalproato e deseja gestar em quatro meses. Não faz pré-natal/preconcepção e pergunta se deve parar o remédio hoje. Teve internação por mania grave após abandono de tratamento dois anos antes.
+
+**Hipóteses:** necessidade de **planejamento pré-concepcional** especializado, dado risco teratogênico do valproato e risco elevado de recaída ao interromper medicação abruptamente.
+
+**Raciocínio:** (1) valproato apresenta risco fetal relevante; (2) há histórico de mania grave após descontinuação, portanto retirada súbita sem substituição pode ser perigosa; (3) discutir alternativas seguras e estratégia gradual antes da concepção; (4) elaborar plano conjunto psiquiatria–obstetrícia e acompanhamento de puerpério; (5) decisões devem respeitar autonomia e contracepção temporária se escolhida.
+
+**Exames:** revisão da história psiquiátrica, medicamentos, condições clínicas e planejamento reprodutivo, com avaliação pré-concepcional.
+
+**Conduta:** encaminhamento apropriado, discussão informada de riscos/benefícios e ajuste terapêutico por especialista, sem “suspender tudo” de forma automática.
+
+**Por que importa:** gestação e bipolaridade envolvem **riscos de exposição e riscos de recaída**, ambos verdadeiros.
+
+### Caso 7 — A lamotrigina como “resgate” de mania
+
+**Apresentação:** homem de 33 anos chega com oito dias de energia excessiva, fala pressionada, pouca necessidade de sono e prejuízo importante, compatíveis com mania. A equipe propõe iniciar apenas lamotrigina porque “é estabilizador e costuma funcionar em depressão bipolar”.
+
+**Hipótese:** mania aguda com seleção terapêutica inadequada se tratada somente por lamotrigina.
+
+**Raciocínio:** (1) lamotrigina não tem eficácia antimaníaca aguda suficiente para ser recomendada como tratamento da mania; (2) titulação é lenta e pode causar exantema grave; (3) opções antimaníacas com evidência incluem antipsicóticos/lítio/divalproato conforme situação; (4) necessidade de proteção e local de cuidado dependem de gravidade.
+
+**Exames:** EEM, segurança, substâncias, exames para escolha de tratamento e comorbidades.
+
+**Conduta:** reavaliar proposta e adotar tratamento de mania indicado sob acompanhamento, sem confundir papel na depressão/manutenção com emergência.
+
+**Por que importa:** é uma das confusões farmacológicas mais cobradas em prova.
+
+### Caso 8 — Depressão bipolar com sintomas mistos
+
+**Apresentação:** mulher de 31 anos relata tristeza profunda e pensamentos de autodesvalia, mas também insônia com energia acelerada, fala muito rápida, irritabilidade intensa e decisões impulsivas. Faz uso de antidepressivo em monoterapia após diagnóstico anterior de “depressão”. Histórico familiar de bipolaridade e episódios breves de ativação.
+
+**Hipóteses:** episódio afetivo com **características mistas** e suspeita de bipolaridade; gravidade atual exige avaliação de segurança.
+
+**Raciocínio:** (1) tristeza e energia aumentada podem coexistir, não se “anulam”; (2) quadro pode ser mais instável/complexo; (3) monoterapia antidepressiva exige revisão; (4) NICE orienta seguir tratamento de mania em estado misto; (5) risco não se determina por escore numérico isolado.
+
+**Exames:** EEM completo, avaliação de segurança, história de substâncias/medicações e condições clínicas; psicose/catatonia/funcionamento.
+
+**Conduta:** avaliação psiquiátrica urgente se ameaça de segurança ou desorganização, revisão da medicação e escolha de estratégia de estabilização com suporte.
+
+**Por que importa:** **depressão + ativação maniforme** é sinal para revisar polaridade e tratamento.
+
+### Caso 9 — Quetiapina funciona, mas a glicemia piora
+
+**Apresentação:** homem de 46 anos teve boa resposta de mania à quetiapina, mas ganhou peso de forma importante e glicemia/HbA1c aumentaram após meses de acompanhamento. Tem histórico familiar de diabetes e receio de interromper o remédio.
+
+**Hipóteses:** efeito cardiometabólico do tratamento possivelmente contribuindo para risco de diabetes, sem excluir outros fatores.
+
+**Raciocínio:** (1) benefício psiquiátrico é real e importante; (2) risco metabólico também; (3) abandono abrupto pode provocar recaída; (4) discutir ajuste/alternativa e plano para saúde metabólica, em vez de culpar paciente; (5) medir desfechos ao longo do tempo.
+
+**Exames:** peso/BMI, PA, lipídios, HbA1c/glicemia, hábitos e outros fatores de risco.
+
+**Conduta:** decisão compartilhada com psiquiatria e APS, manejo metabólico e eventual revisão de antipsicótico conforme benefício/risco, sem suspender sozinho.
+
+**Por que importa:** bons tratamentos exigem **monitorização que preserva saúde global**.
+
+## 18. Questões originais comentadas
+
+### Questão 1 — Bipolar I
+Qual achado é suficiente para a classificação sindrômica longitudinal de bipolar I, após exclusões necessárias?
+
+A. Um episódio depressivo maior isolado.  
+B. Ao menos um episódio maníaco completo.  
+C. Tristeza e irritabilidade por uma tarde.  
+D. Hipomania sem qualquer episódio depressivo.  
+E. Pontuação alta no MDQ isoladamente.
+
+**Gabarito B.** A não distingue polaridade; C é inespecífica; D não preenche bipolar II sem depressão maior e não define I; E é rastreio. **Revisão:** mania é evento definidor do tipo I.
+
+### Questão 2 — Bipolar II
+O diagnóstico DSM típico de bipolar II exige:
+
+A. Ao menos uma mania com psicose.  
+B. Hipomania e episódio depressivo maior, sem mania prévia.  
+C. Apenas episódios depressivos por 30 dias.  
+D. Quatro mudanças de humor no mesmo dia.  
+E. Exclusivamente histórico familiar.
+
+**Gabarito B.** A seria bipolar I; C é insuficiente; D não é ciclagem rápida; E não estabelece episódios. **Revisão:** bipolar II não significa necessariamente doença leve.
+
+### Questão 3 — Hipomania ou mania?
+Paciente apresenta alteração de humor e energia por cinco dias, necessita internação por grave prejuízo/psicose durante episódio. Melhor classificação?
+
+A. Hipomania porque durou menos de sete dias.  
+B. Mania, pois gravidade/necessidade de internação ou psicose afastam hipomania, independentemente da duração do episódio.  
+C. Distimia.  
+D. Ciclotimia obrigatória.  
+E. Transtorno adaptativo apenas.
+
+**Gabarito B.** A aplica duração de modo cego; C/D/E não correspondem. **Revisão:** mania pode ser classificada com menos de sete dias quando hospitalização é necessária.
+
+### Questão 4 — Redução da necessidade de sono
+Qual relato é mais característico de mania/hipomania, quando associado a outras alterações de humor/energia?
+
+A. Dorme pouco por turno noturno e está exausto.  
+B. Dorme duas horas e mantém energia intensa, fala acelerada e projetos incomuns.  
+C. Acorda cedo por alarme e volta a dormir.  
+D. Cochila após almoço.  
+E. Insônia isolada com fadiga.
+
+**Gabarito B.** A/E indicam privação com cansaço; C/D são padrões normais. **Revisão:** menor **necessidade** de sono não equivale a insônia.
+
+### Questão 5 — Ciclagem rápida
+No transtorno bipolar, ciclagem rápida, na nomenclatura DSM, caracteriza-se por:
+
+A. Humor mudar a cada minuto.  
+B. Quatro ou mais episódios distintos de humor em 12 meses, com separação apropriada.  
+C. Um episódio maníaco de duas semanas.  
+D. Insônia por quatro dias.  
+E. Quatro pensamentos acelerados por consulta.
+
+**Gabarito B.** A/C/D/E confundem flutuação afetiva, duração e número de episódios. **Revisão:** ciclagem exige **episódios**, não mudanças momentâneas.
+
+### Questão 6 — Fármaco não indicado em mania aguda
+Qual fármaco **não deve ser escolhido como agente antimaníaco único para mania aguda**?
+
+A. Lítio. B. Quetiapina. C. Risperidona. D. Lamotrigina. E. Aripiprazol.
+
+**Gabarito D.** Lamotrigina atua mais em depressão bipolar/manutenção, sem eficácia antimaníaca aguda estabelecida; A/B/C/E têm evidência para mania em situações apropriadas. **Revisão:** “estabilizador” não significa eficácia em todo polo.
+
+### Questão 7 — Depressão bipolar I
+Qual princípio de CANMAT/ISBD é correto?
+
+A. ISRS isolado é padrão de primeira linha em bipolar I.  
+B. Antidepressivo em monoterapia não é recomendado como tratamento da depressão bipolar I.  
+C. Lamotrigina é primeira opção de sedação emergencial da mania.  
+D. Todo antipsicótico serve igualmente para depressão bipolar.  
+E. Não é necessário investigar história de mania.
+
+**Gabarito B.** A/E ignoram polaridade; C não é antimaníaco agudo; D confunde evidências de cada fármaco. **Revisão:** a fase bipolar modifica farmacoterapia.
+
+### Questão 8 — Lítio e prevenção de recaída
+Ao iniciar lítio, qual conduta é adequada?
+
+A. Dispensar creatinina e TSH se paciente é jovem.  
+B. Avaliar função renal, tireoidiana, cálcio, outros exames e monitorar níveis séricos conforme protocolo.  
+C. Colher litemia a qualquer horário sem registrar dose.  
+D. Manter dose sem revisão mesmo com vômitos e ataxia.  
+E. Recomendar AINE livre sem alertas.
+
+**Gabarito B.** A omite segurança; C compromete interpretação; D é potencial toxicidade; E ignora interações. **Revisão:** lítio exige acompanhamento longitudinal.
+
+### Questão 9 — Meta sérica de manutenção
+Segundo NICE CG185, alvo habitual inicial de manutenção para pessoa iniciando lítio é:
+
+A. 0,0–0,1 mmol/L.  
+B. **0,6–0,8 mmol/L**, com individualização.  
+C. 3,0–4,0 mmol/L.  
+D. O maior nível que o laboratório consegue medir.  
+E. Um valor independente de coleta e contexto.
+
+**Gabarito B.** A é subterapêutico em geral; C/D são perigosos; E omite horário/condição clínica. **Revisão:** metas variam por fase e paciente; não confundir com objetivo da mania grave ou com idosos vulneráveis.
+
+### Questão 10 — Lítio e AINE
+Paciente com lítio estável inicia ibuprofeno de forma regular sem avisar. Qual preocupação?
+
+A. AINE sempre diminui litemia para zero.  
+B. Pode reduzir depuração renal do lítio e elevar exposição, exigindo avaliação/monitorização.  
+C. Não há interação relevante.  
+D. Elimina necessidade de hidratação.  
+E. Corrige hipotireoidismo pelo lítio.
+
+**Gabarito B.** A/C negam risco; D/E não são verdadeiros. **Revisão:** interações e desidratação estão entre causas preveníveis de toxicidade.
+
+### Questão 11 — Lamotrigina + valproato
+Paciente inicia lamotrigina tomando valproato. Qual precaução é central?
+
+A. Acelerar titulação para dose máxima no primeiro dia.  
+B. Valproato pode elevar exposição à lamotrigina; titulação deve ser especialmente cuidadosa pelo risco de rash grave.  
+C. Não existe interação.  
+D. A associação exclui necessidade de avaliar pele/mucosas.  
+E. Lamotrigina previne todas as toxicidades do valproato.
+
+**Gabarito B.** A/C/D/E ignoram interação e segurança. **Revisão:** prevenir Stevens–Johnson exige titulação apropriada e reconhecimento precoce de sinais cutâneos.
+
+### Questão 12 — Gestação com valproato
+Mulher com bipolar I e uso de valproato planeja gravidez; tem histórico de mania grave após suspensão. Melhor postura?
+
+A. Interromper tudo imediatamente sem plano ou suporte.  
+B. Avaliar com psiquiatria/obstetrícia risco teratogênico, risco de recaída e alternativas antes da concepção.  
+C. Afirmar que valproato não tem efeitos fetais.  
+D. Negar projeto de gravidez por diagnóstico psiquiátrico.  
+E. Aumentar valproato preventivamente em todas.
+
+**Gabarito B.** A aumenta recaída, C nega risco, D viola autonomia, E não é indicação. **Revisão:** cuidado pré-concepcional compartilhado é essencial.
+
+### Questão 13 — Hipertireoidismo versus mania
+Pessoa apresenta insônia, irritabilidade, taquicardia, perda de peso, intolerância ao calor, tremor e TSH suprimido. Qual abordagem?
+
+A. Tratar como mania sem avaliação clínica.  
+B. Investigar e manejar tireotoxicose, reconhecendo que sintomas físicos podem imitar ativação do humor.  
+C. Diagnosticar bipolar I apenas por tremor.  
+D. Dar lítio como substituto universal de antitireoidiano.  
+E. Desconsiderar hormônios tireoidianos.
+
+**Gabarito B.** A/C/E ignoram diferencial orgânico; D não é rotina adequada. **Revisão:** sintomas autonômicos e exames direcionados mudam hipótese.
+
+### Questão 14 — Estado misto
+Paciente tem tristeza intensa e desesperança, mas também fala acelerada, energia aumentada, agitação e irritabilidade. O que importa?
+
+A. Não pode ser transtorno do humor porque sinais opostos se anulam.  
+B. Avaliar episódio misto/características mistas, segurança e estabilização, evitando antidepressivo isolado automático.  
+C. Concluir depressão unipolar leve por PHQ-9 isolado.  
+D. Suspender avaliação médica de substâncias.  
+E. Não investigar ideação de autoagressão.
+
+**Gabarito B.** A ignora estados mistos; C ignora polaridade; D/E retiram medidas de segurança. **Revisão:** coexistência de ativação e sofrimento depressivo exige avaliação especializada.
+
