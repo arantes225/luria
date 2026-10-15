@@ -389,3 +389,118 @@ Uma paciente com mioma FIGO 4, adenomiose e pólipo pode ter sangramento, dor e 
 
 **Identificar sintomas urinários/intestinais → avaliar função renal/hidronefrose se risco → mapear útero e órgãos → discutir opções eficazes para volume, incluindo procedimentos → antecipar dificuldade ureteral e hemorrágica → plano pós-intervenção.**
 
+
+
+## 17. Casos clínicos autorais comentados
+
+### Caso 1 — Mioma de 3 cm com anemia importante
+
+**Apresentação:** mulher de 31 anos, deseja gestar, menstruações intensas e fadiga há um ano. Hb 9,1 g/dL e ferritina baixa. US identifica nódulo de 3 cm que se projeta para dentro da cavidade, com menos da metade embutida no miométrio (FIGO 1).
+
+**Hipótese:** sangramento uterino anormal associado a leiomioma submucoso com deficiência de ferro.
+
+**Raciocínio:** a topografia cavitária torna a lesão plausível como causa do sangramento e possível fator reprodutivo. A dimensão por si só é menos informativa do que sua interface endometrial. É necessário tratar anemia e decidir se a remoção histeroscópica pode melhorar sintomas e anatomia, sem prometer gravidez como consequência necessária.
+
+**Exames:** confirmar classificação por US direcionada/sonohisterografia se dúvida; hemograma, ferritina e avaliação pré-operatória conforme situação. Excluir gravidez quando pertinente.
+
+**Conduta:** reposição de ferro e controle transitório do sangramento, discutir miomectomia histeroscópica por equipe experiente, histologia e seguimento por sintomas e projeto gestacional.
+
+**Por que importa:** mioma relativamente pequeno pode ser clinicamente relevante quando ocupa a cavidade.
+
+### Caso 2 — Um mioma externo não explica todo spotting
+
+**Apresentação:** mulher de 38 anos com mioma subseroso pediculado de 8 cm (FIGO 7), queixa de pressão pélvica e spotting intermenstrual recente. US sugere formação endometrial focal de 1 cm.
+
+**Hipóteses:** mioma responsável por sintomas compressivos, mas o sangramento pode decorrer de pólipo, cervicopatia ou outra causa endometrial.
+
+**Raciocínio:** separar o sintoma mecânico do sangramento. Mioma FIGO 7 geralmente tem efeito cavitário inferior ao submucoso; uma lesão endometrial focal não deve ser ignorada. Antes de escolher cirurgia, deve-se investigar a cavidade e examinar o colo.
+
+**Exames:** exame especular, US direcionada e histeroscopia/sonohisterografia conforme indicação. Considerar amostragem endometrial por risco e persistência.
+
+**Conduta:** investigar e eventualmente remover/histologizar lesão intracavitária; discutir tratamento do mioma externo de acordo com sintomas, segurança e preferência.
+
+**Por que importa:** encontrar mioma não autoriza encerrar diagnóstico etiológico de todo sangramento.
+
+### Caso 3 — Pólipo na pós-menopausa
+
+**Apresentação:** mulher de 64 anos, menopausa há 12 anos, sangramento discreto recorrente. US mostra massa intracavitária focal de 2,1 cm sugestiva de pólipo.
+
+**Hipótese:** pólipo endometrial com risco histológico ainda indefinido.
+
+**Raciocínio:** a aparência de pólipo não garante ausência de lesão pré-neoplásica; sangramento pós-menopausa requer avaliação apropriada, independentemente de ser escasso. Exame de imagem orienta a localização, mas histologia define alterações celulares.
+
+**Exames:** investigação endometrial com amostragem e/ou histeroscopia dirigida conforme protocolo.
+
+**Conduta:** avaliação ginecológica para retirada dirigida e análise histopatológica quando indicado; seguimento definido pelo resultado, não por expectativa prévia de benignidade.
+
+**Por que importa:** o contexto clínico muda o valor preditivo do achado morfológico.
+
+### Caso 4 — Infertilidade e nódulo intramural sem distorção
+
+**Apresentação:** mulher de 34 anos tentando engravidar há 18 meses. US mostra nódulo FIGO 4 de 3 cm e cavidade preservada. Parceiro ainda não fez avaliação e ciclos são irregulares.
+
+**Hipóteses:** infertilidade em investigação, provável contribuição de causas ovulatórias e/ou masculinas; mioma pode ser incidental.
+
+**Raciocínio:** não há evidência para remover indiscriminadamente mioma assintomático sem distorção da cavidade para aumentar fertilidade. Analisar ovulação, sêmen, tubas e fatores da idade. A cirurgia pode causar cicatriz/aderências e atrasar tentativas sem benefício claro.
+
+**Exames:** investigação reprodutiva estruturada, com revisão detalhada da cavidade se necessário.
+
+**Conduta:** completar investigação e definir tratamento por etiologia, discutindo mioma com evidência e não por presença isolada.
+
+**Por que importa:** um achado incidental não deve desviar todo o manejo de infertilidade.
+
+### Caso 5 — FIGO 2 profundo e cirurgia complexa
+
+**Apresentação:** paciente de 29 anos com sangramento excessivo e anemia moderada. Nódulo de 5,5 cm em parede posterior, cerca de 70% intramural, deformando cavidade, com manto miometrial externo delgado. Deseja manter fertilidade.
+
+**Hipótese:** leiomioma submucoso FIGO 2 sintomático, de ressecção potencialmente difícil.
+
+**Raciocínio:** a extensão intramural, proximidade da serosa e dimensão interferem na segurança de histeroscopia. A possibilidade de segundo tempo, via abdominal ou técnica combinada deve ser avaliada antes de escolher procedimento. A anemia precisa ser otimizada e o risco de perfuração discutido.
+
+**Exames:** ultrassonografia especializada e eventual RM conforme mapa e planejamento; hemograma/ferritina.
+
+**Conduta:** discussão com cirurgia ginecológica e reprodução, escolha individual de técnica e preparo clínico, com consentimento sobre ressecção incompleta e reparo uterino.
+
+**Por que importa:** ser “submucoso” não equivale a ser fácil de retirar por histeroscopia.
+
+### Caso 6 — Mioma cervical e hidronefrose
+
+**Apresentação:** mulher de 47 anos com peso pélvico, frequência urinária, constipação e dor lombar. Massa uterina extensa com nódulo cervical/intraligamentar; US mostra dilatação pielocalicial unilateral.
+
+**Hipótese:** compressão ureteral extrínseca por massa uterina; outros mecanismos obstrutivos devem ser excluídos.
+
+**Raciocínio:** a ausência de sangramento não reduz o risco de lesão de órgão. Localização cervical modifica risco cirúrgico de ureter; é necessário mapear anatomia e função renal antes de intervenção definitiva.
+
+**Exames:** creatinina, avaliação urinária e imagem renal/uterina direcionada; avaliação urológica se indicada.
+
+**Conduta:** discussão prioritária de descompressão e tratamento efetivo com equipe ginecológica/urológica; planejar proteção ureteral.
+
+**Por que importa:** compressão é indicação potencial de tratamento independente de sangramento.
+
+### Caso 7 — Massa crescente após menopausa
+
+**Apresentação:** mulher de 58 anos, três anos após menopausa, crescimento aparente de massa uterina com sangramento recente; US mostra nódulo heterogêneo com achados não clássicos. Paciente estável.
+
+**Hipóteses:** lesão uterina que precisa ser caracterizada; malignidade endometrial/mesenquimal é diferencial, não diagnóstico estabelecido.
+
+**Raciocínio:** pós-menopausa e sangramento exigem atenção; exames de imagem não podem excluir com certeza leiomiossarcoma. A escolha de cirurgia deve evitar fragmentação insegura se houver suspeita, após avaliação apropriada.
+
+**Exames:** avaliação endometrial e imagem especializada conforme indicação, exame cervical e outros passos oncológicos.
+
+**Conduta:** encaminhamento para ginecologia/oncoginecologia e discussão de via de retirada segura se necessária.
+
+**Por que importa:** evitar tanto alarmismo (“todos são sarcomas”) como falsa tranquilização.
+
+### Caso 8 — Sintomas persistem após retirada de pólipo
+
+**Apresentação:** mulher de 41 anos retirou pólipo benigno por histeroscopia. Spotting desapareceu, mas fluxo intenso e dismenorreia progressiva continuam. US mostra miométrio heterogêneo e pequenos cistos miometriais.
+
+**Hipótese:** provável adenomiose concomitante.
+
+**Raciocínio:** tratamento da lesão focal resolveu um componente; dor e menorragia remanescentes sugerem doença muscular difusa ou outra causa associada. Repetir polipectomia sem pólipo não faz sentido.
+
+**Exames:** US especializada e avaliação de endometriose/adenomiose conforme queixas; revisar ferro/anemia.
+
+**Conduta:** tratamento dirigido à adenomiose, desejo reprodutivo e sintomas; não confundir êxito técnico com resolução de toda a síndrome.
+
+**Por que importa:** duas causas estruturais podem coexistir e necessitar estratégias distintas.
