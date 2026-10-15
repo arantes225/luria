@@ -1,0 +1,58 @@
+[
+  {
+    "ecg_id": "00057",
+    "learning_goal": "PTB-XL SCP NORM — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00172",
+    "learning_goal": "PTB-XL SCP CRBBB — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00218",
+    "learning_goal": "PTB-XL SCP 1AVB — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00271",
+    "learning_goal": "PTB-XL SCP ASMI — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00449",
+    "learning_goal": "PTB-XL SCP AFLT — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00598",
+    "learning_goal": "PTB-XL SCP CLBBB — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00611",
+    "learning_goal": "PTB-XL SCP SBRAD — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00892",
+    "learning_goal": "PTB-XL SCP STACH — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "00959",
+    "learning_goal": "PTB-XL SCP 3AVB — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "01391",
+    "learning_goal": "PTB-XL SCP IMI — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "02221",
+    "learning_goal": "PTB-XL SCP LNGQT — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "07075",
+    "learning_goal": "PTB-XL SCP SVTAC — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "08215",
+    "learning_goal": "PTB-XL SCP AFIB — CANDIDATO, NÃO HOMOLOGADO"
+  },
+  {
+    "ecg_id": "19164",
+    "learning_goal": "PTB-XL SCP 2AVB — CANDIDATO, NÃO HOMOLOGADO"
+  }
+]
