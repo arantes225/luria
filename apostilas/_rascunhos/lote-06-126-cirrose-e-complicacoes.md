@@ -328,3 +328,164 @@ Avaliar vacinação contra **hepatites A/B**, pneumococo, influenza e COVID-19 c
 
 Cuidados paliativos podem acompanhar terapia ativa e avaliação para transplante, especialmente diante de ascite refratária, dispneia, prurido, dor e sofrimento da família. Paliativo significa alívio de sintomas e escolha informada, não abandono da pessoa.
 
+
+
+## 19. Algoritmo integrado da cirrose: o que fazer na primeira consulta e em cada descompensação
+
+### 19.1 A primeira consulta não termina no diagnóstico de cirrose
+
+Confirmar gravidade, etiologia e necessidades imediatas. Revisar exames de função sintética, plaquetas, sódio, creatinina e imagem; classificar compensação/descompensação e estratificar risco portal por elastografia/plaquetas quando aplicável. Se já houve ascite, sangramento varicoso, EH, LRA ou CHC, documentar episódio e procurar risco de novo evento. Perguntar sobre sinais de infecção, hemorragia oculta, consumo de álcool, suporte familiar, perda muscular e medicamentos de risco.
+
+Planejar em paralelo **tratamento da causa**, profilaxia de complicações portais quando elegível, **US + AFP semestral para CHC** em população de risco apropriada, revisão vacinal/nutricional e referenciamento à hepatologia. Em pessoa com ascite nova, o próximo passo é **paracentese diagnóstica**, não prescrever diurético por telefone e rever daqui a três meses. Em pessoa com plaquetas baixas e hepatopatia compensada, perguntar se a CSPH foi avaliada e se há indicação de NSBB ou endoscopia; não presumir indicação universal de ligadura.
+
+### 19.2 Quatro algoritmos urgentes
+
+**Ascite + descompensação:** avaliar sepse/choque, realizar paracentese oportuna → PMN ≥250? Tratar PBE e considerar albumina por protocolo; PMN <250, cultura positiva e sintomas? Reavaliar bacterascite; sinais de perfuração ou flora polimicrobiana? Investigar peritonite secundária e controle de fonte.
+
+**Creatinina em ascensão:** confirmar LRA pelo delta → avaliar hemodinâmica/perdas/infecção/nefrótoxicos/obstrução → corrigir hipovolemia se presente e reavaliar rapidamente → considerar HRS-AKI conforme ADQI–ICA 2024, sem albumina compulsória por 48h → vasoconstritor + albumina titulada em elegíveis e avaliação transplantadora.
+
+**Confusão em cirrótico:** ABC e glicose → procurar outras causas neurológicas e metabólicas → identificar PBE, sangramento, constipação, diurético, medicações, eletrólitos → tratar precipitação e lactulose titulada; prevenção secundária com rifaximina quando indicada → proteção de via aérea se rebaixamento grave.
+
+**Hematêmese/melena:** perfusão e via aérea → ressuscitação prudente, agente vasoativo e ceftriaxona conforme risco/protocolo → EDA terapêutica precoce → avaliar indicação de TIPS precoce/resgate → planejar profilaxia secundária antes da alta.
+
+### 19.3 Fluxo de alta: a urgência pode voltar
+
+Após cada descompensação, documentar cultura, antibióticos, diuréticos, sintomas, peso, pressão, potássio, creatinina, sódio, esquema de lactulose e risco de sangramento. Marcar reavaliação clínica e laboratorial. A família deve conhecer sinais de retorno: confusão progressiva, febre, dor abdominal, oligúria, dispneia, tontura, hematêmese e melena. Não fazer alta sem orientação de dieta e função das medicações, principalmente se o paciente tem baixa escolaridade ou vive longe de serviço especializado.
+
+## 20. Como diferenciar quatro causas de abdome aumentado no paciente com cirrose
+
+A presença de barriga aumentada costuma ser automaticamente atribuída a ascite, mas a hipótese precisa considerar **obesidade/esteatose, distensão gasosa, organomegalia, massa tumoral, obstrução intestinal e gestação**. O exame físico identifica macicez móvel, piparote em ascite volumosa e edema, porém US é útil quando há dúvida. Além disso, **ascite não significa sempre cirrose**, mesmo se hepatograma está anormal.
+
+### 20.1 Gradiente alto com proteínas baixas
+
+Paciente com ascite, colaterais, plaquetopenia e albumina ascítica baixa, com **GASA 1,6 g/dL e proteína total 1,0 g/dL**, tem mecanismo compatível com hipertensão portal sinusoidal por cirrose. Contudo, a investigação etiológica inclui hepatites, álcool, fatores metabólicos e, quando indicado, causas autoimunes/vasculares. O líquido precisa ser analisado para PMN mesmo se não há febre, quando cenário é de ascite nova ou admissão hospitalar.
+
+### 20.2 Gradiente alto com proteínas altas
+
+Paciente com turgência jugular, edema, hepatomegalia, insuficiência tricúspide e ascite **GASA 1,5 g/dL e proteína 3,4 g/dL** pode ter ascite por congestão cardíaca. Não concluir cirrose apenas pela hipertensão portal; ecocardiograma, BNP em contexto, Doppler e avaliação cardíaca são pertinentes. A proteína do líquido ajuda porque na ascite cardíaca é frequente ser relativamente preservada apesar do gradiente alto.
+
+### 20.3 Gradiente baixo e ascite exsudativa
+
+Na ascite por carcinomatose ou tuberculose peritoneal, GASA pode ser <1,1, mas células e proteínas variam. Citologia ascítica é útil quando neoplasia é suspeita, embora resultado negativo não exclua todas as causas. TB peritoneal pode exigir ADA, culturas específicas e biópsia em casos selecionados. **PMN ≥250 por si não prova PBE em pessoa sem cirrose**: infecção secundária, carcinomatose inflamatória e outras condições precisam ser avaliadas. Não tratar com quinolona crônica toda ascite com leucócitos.
+
+### 20.4 Ascite com anemia, dor ou rápida deterioração
+
+Quando há queda rápida de Hb, distensão dolorosa, hipotensão e procedimentos recentes, considerar **hemoperitônio** e sangramento intra-abdominal. Dor desproporcional, lactato crescente e sinais de peritonite obrigam a considerar **isquemia mesentérica ou perfuração**, não apenas PBE. A circulação de pacientes com cirrose pode ser frágil e as manifestações inespecíficas; integração com urgência cirúrgica salva vidas.
+
+## 21. Interações medicamentosas, efeitos adversos e prevenção de iatrogenias
+
+### 21.1 Diurético é terapia que exige controle
+
+Espironolactona pode provocar hipercalemia e ginecomastia; furosemida pode causar hipocalemia e hipovolemia. Ambas podem precipitar lesão renal e EH quando exageradas. Verificar **peso, PA, eletrólitos, creatinina e sintomas** após ajustes, em especial após paracentese, diarreia ou redução importante de ingesta oral. A combinação 100:40 é uma referência de equilíbrio de potássio, **não dose fixa para todas as pessoas e todos os dias**.
+
+### 21.2 Lactulose é eficaz, mas a dose precisa ser revisada
+
+Evacuação amolecida regular ajuda EH; diarreia aquosa intensa causa perda de água/eletrólitos e pode piorar confusão pela própria LRA. Ensinar paciente/cuidador a titular para alvo de evacuações e reconhecer quando buscar ajuda. **Metronidazol crônico** pode causar neuropatia e **neomicina** é ototóxica/nefrotóxica, reforçando papel preferencial de lactulose e rifaximina segundo elegibilidade.
+
+### 21.3 Betabloqueadores não seletivos
+
+**Carvedilol**, propranolol e nadolol têm perfil hemodinâmico distinto. O benefício de reduzir pressão portal pode se inverter quando pressão sistêmica não sustenta perfusão. Monitorizar PA, frequência, sintomas de tontura, função renal e ascite refratária. **Não prescrever carvedilol de dose hipertensiva alta automaticamente** em cirrótico; em choque, HRS-AKI ou hipotensão importante, reavaliar suspensão temporária. Asma grave, bradicardia e bloqueios de condução podem contraindicar alguns agentes.
+
+### 21.4 AINE, sedativo e anticoagulante
+
+**AINEs** podem reduzir perfusão renal e precipitar retenção de sódio, sangramento gastrointestinal e descompensação; evitar automedicação. Benzodiazepínicos e sedativos podem agravar encefalopatia e aumentar quedas. **Paracetamol em doses individualizadas e moderadas** é frequentemente preferível a AINE em vários cirróticos, mas requer avaliação de álcool ativo, reserva hepática e outros produtos combinados, evitando sobredosagem. Paciente anticoagulado merece decisão especializada que equilibre trombose e sangramento; o INR da cirrose não deve ser confundido com INR terapêutico de varfarina.
+
+### 21.5 Antibióticos e seleção de resistência
+
+Profilaxia prolongada de PBE não é isenta de custos: seleciona Gram-negativos resistentes, aumenta risco de efeitos adversos e pode alterar microbiota. Rever indicação após PBE, necessidade de transplante, culturas do serviço e risco de resistência. O uso de rifaximina para EH tem objetivo diferente de profilaxia de PBE; não declarar os dois antibióticos equivalentes porque ambos atuam no intestino.
+
+## 22. Descompensação por infecção: cirrose, sepse e ACLF
+
+Em cirrose, **disfunção imune associada à doença hepática** predispõe a infecções bacterianas e piora resposta inflamatória. PBE é clássica, mas pneumonia, ITU, celulite, bacteremia e infecções associadas a cateter são possíveis. Febre pode não ocorrer; leucócitos e proteína C reativa podem ter interpretações atípicas. **Delirium e LRA** podem representar a primeira pista de infecção. Investigar foco com história, exame, culturas e paracentese quando indicada, enquanto trata choque com ressuscitação e antibiótico precoce proporcional ao risco.
+
+### 22.1 Diferenciar EH isolada de sepse/ACLF
+
+Confusão em cirrose com PA estável, sem disfunção orgânica nova e constipação isolada pode melhorar após tratamento do gatilho e lactulose. Já paciente com hipotensão, aumento de creatinina, lactato elevado e necessidade de vasopressor apresenta descompensação sistêmica grave; deve ser avaliado por **sepse/ACLF**, com suporte intensivo, antibiótico, pesquisa de foco e eventual transplante. Não dar alta porque o paciente voltou a evacuar. A classificação ACLF varia entre sistemas, portanto declarar critérios usados quando formular prognóstico.
+
+### 22.2 Por que albumina não é cristalóide universal
+
+Albumina tem indicações específicas bem sustentadas, como PBE em esquema por peso e paracentese de grande volume em esquema por litros; pode integrar HRS-AKI com vasoconstritor. Porém, **expansão com albumina indiscriminada em toda sepse do cirrótico** pode causar sobrecarga, especialmente em síndrome respiratória e disfunção cardíaca. Guiar ressuscitação por hemodinâmica, perfusão, resposta e riscos. Um paciente com ascite e edema pode ter hipoperfusão efetiva, mas a solução não é administrar albumina sem reavaliação.
+
+### 22.3 Profilaxia de infecção após sangramento gastrointestinal
+
+A hemorragia digestiva em cirrose aumenta risco de infecção e ressangramento, razão da profilaxia antimicrobiana de curto curso com ceftriaxona em muitos protocolos. **Essa profilaxia não exige PMN ascítico ≥250**, pois é preventiva no contexto de sangramento. Não confundir três cenários: (1) antibiótico **terapêutico** para PBE, (2) profilaxia de curta duração na **HDA**, e (3) profilaxia **secundária** de longo curso após episódio de PBE.
+
+## 23. Complicações menos lembradas: hérnias, disfunção cardíaca, pele e cognição
+
+### 23.1 Hérnias em ascite
+
+Pressão abdominal aumentada e fraqueza da parede favorecem hérnias umbilicais/inguinais. Ascite tensa recorrente pode causar adelgaçamento/ruptura de pele sobre hérnia, com extravasamento de líquido, infecção e emergência conhecida como ruptura de hérnia umbilical em ascite (síndrome de Flood). O manejo envolve proteção, controle de ascite e avaliação cirúrgica, considerando alto risco em cirrose descompensada. Não operar toda hérnia eletivamente sem otimizar ascite e reserva hepática; também não ignorar encarceramento/estrangulamento por “ser cirrótico e arriscado operar”.
+
+### 23.2 Cardiomiopatia cirrótica
+
+Cirrose avançada pode causar resposta contrátil inadequada ao estresse, disfunção diastólica, alterações elétricas e vulnerabilidade a sobrecarga. A avaliação cardiológica é relevante antes de **TIPS** e transplante; fluxo portal aumentado após TIPS pode precipitar insuficiência cardíaca em pacientes predispostos. Não considerar TIPS uma solução mecânica sem impacto cardiovascular. Ecocardiograma, avaliação de pressão pulmonar e risco hemodinâmico são componentes da elegibilidade.
+
+### 23.3 Alteração de sono, cognição mínima e direção
+
+Mesmo sem EH manifesta, pessoas com cirrose podem apresentar déficits cognitivos sutis que prejudicam atenção, memória operacional, equilíbrio e direção. A avaliação pode necessitar testes específicos e contato cuidadoso com cuidador. Não diagnosticar EH mínima apenas por relato de sono ruim ou amônia elevada; apneia do sono, depressão, benzodiazepínicos e privação de sono podem explicar. Decisão sobre dirigir/operar máquinas deve considerar segurança e normas aplicáveis sem abordagem estigmatizante.
+
+### 23.4 Prurido e manifestações cutâneas
+
+Prurido importante sugere colestase intra/extra-hepática e exige investigar etiologia; não atribuir automaticamente a “toxinas da cirrose”. Pele seca, deficiência nutricional, dermatites, doença renal e medicamentos também causam prurido. Eritema palmar, aranhas vasculares e ginecomastia são achados associados ao ambiente hormonal, mas não substituem etiologia laboratorial. Tratamento de prurido colestático depende de causas, ácido biliar, colestiramina ou outras opções em centros adequados, com atenção a interações e absorção de outros fármacos.
+
+## 24. Prognóstico e avaliação do risco em situações que confundem
+
+### 24.1 Cirrose compensada com enzimas normais
+
+Uma pessoa com hepatite C curada, rigidez sugestiva de fibrose avançada, plaquetas 110 mil e US com superfície nodular pode ter cirrose compensada mesmo com AST/ALT normais. Não dar alta definitiva sem avaliação de CSPH/varizes e vigilância do CHC, porque eliminação da causa diminui risco, mas não faz desaparecer instantaneamente arquitetura alterada ou risco neoplásico.
+
+### 24.2 Child A com evento de descompensação
+
+Child–Pugh pode ainda parecer relativamente favorável em pessoa que desenvolveu ascite inicialmente responsiva e preservou bilirrubina/INR. O evento de descompensação, entretanto, muda prognóstico e justifica avaliação especializada. **Não esperar Child C para encaminhar**. MELD baixo também não elimina sintomas incapacitantes, sarcopenia ou risco de evento futuro.
+
+### 24.3 GASA elevado não significa ausência de infecção
+
+Cirrótico com GASA 1,8 e PMN 380 tem hipertensão portal e **suspeita de PBE**; GASA descreve mecanismo de formação de ascite, não esterilidade do líquido. Cultura negativa não altera recomendação se PMN e cenário clínico sustentam PBE. Proteína ascítica baixa aumenta risco de infecção em certos perfis, mas não é critério diagnóstico.
+
+### 24.4 Hiponatremia: mecanismo e riscos da correção
+
+Na cirrose descompensada, **hiponatremia dilucional** decorre de água livre retida por vasopressina em circulação arterial efetiva reduzida. Pode acompanhar ascite refratária e pior prognóstico. O manejo exige analisar gravidade, sintomas neurológicos, volemia, diuréticos e precipitantes. Restrição hídrica é reservada a situações apropriadas, especialmente hiponatremia importante; **correção rápida demais** pode provocar síndrome de desmielinização osmótica, sobretudo com fatores de risco como desnutrição/alcoholismo. Não aplicar regra de “dar solução hipertônica” em toda hiponatremia moderada assintomática.
+
+## 25. Casos de transição entre ambulatório e pronto-socorro
+
+### 25.1 O paciente da APS que descobriu plaquetopenia
+
+Paciente de 56 anos com diabetes/obesidade, sem queixas, plaquetas 118 mil e albumina 4,0, US com discreta nodularidade. A ação não é iniciar diurético nem tratar “plaquetas baixas”; é investigar doença crônica, etiologia metabólica/viral, fibrose e hipertensão portal, enquanto se planeja manejo de peso, diabetes e vigilância de complicações conforme confirmação. Se CSPH for identificada, considerar NSBB de acordo com PA/contraindicações. Reforçar prevenção sem rotular toda plaquetopenia de hiperesplenismo.
+
+### 25.2 O paciente que melhora da HDA e corre risco na alta
+
+Paciente após ligadura de variz, estável, Hb adequada, mas sem plano de NSBB/ligadura futura, sem orientação de álcool, AFP/US ou hepatologia. Embora a hemorragia aguda tenha sido controlada, o risco de ressangramento permanece. O plano correto inclui profilaxia secundária, estratificação prognóstica, tratamento da causa, avaliação do centro transplantador conforme gravidade e orientação de sinais de alarme.
+
+### 25.3 A ascite que não melhora com dose crescente
+
+Paciente com ascite, espironolactona e furosemida aumentadas rapidamente, PA 88/54, sódio 124 e creatinina crescente. A conduta não é dobrar diuréticos: revisar pressão, perfusão, LRA, adesão à dieta, PBE, possibilidade de paracentese terapêutica com albumina e avaliação de refratariedade/transplante. TIPS depende de cardiopatia, encefalopatia e reserva hepática.
+
+### 25.4 Familiar descreve “ele fica muito mais agressivo”
+
+Alteração de personalidade e sono pode refletir EH, mas também abstinência alcoólica, depressão, medicação, hipoglicemia, infecção ou lesão neurológica. Averiguar nível de consciência, segurança, risco de agressão/autolesão, medicações e precipitantes antes de titular lactulose. A comunicação com familiar e equipe tem valor, respeitando autonomia e confidencialidade.
+
+## 26. Síntese de alto rendimento e matriz de decisões
+
+| Pergunta da prova ou da prática | Resposta operacional |
+| --- | --- |
+| Cirrose compensada pode ter AST/ALT normal? | Sim; avaliar plaquetas, US, elastografia e etiologia |
+| Ascite nova ou hospitalização com ascite? | Paracentese diagnóstica quando indicada, mesmo afebril |
+| GASA = 1,7? | Sugere hipertensão portal, não exclui PBE |
+| PMN 320 no líquido? | ≥250: tratar PBE se não há causa secundária cirúrgica |
+| Albumina após 6 L removidos? | Aproximadamente 6–8 g/L segundo protocolo, com atenção à volemia |
+| Albumina na PBE? | Esquema por peso nos dias 1 e 3, quando indicada |
+| Creatinina 0,7 → 1,1 em 48h? | É LRA, mesmo se número final próximo da normalidade laboratorial |
+| 48h obrigatórias de albumina para HRS-AKI? | **Não** após consenso ADQI–ICA 2024 |
+| Confusão com ascite e febre? | Buscar PBE e outros precipitantes antes de atribuir à amônia |
+| Lactulose deve causar diarreia aquosa o dia inteiro? | Não; objetivo usual 2–3 evacuações amolecidas/dia |
+| Hematêmese em cirrótico? | Ressuscitar, vasoativo + antibiótico, EDA precoce |
+| INR alto impede trombose portal? | Não |
+| HCC pode ocorrer após cura de HCV? | Sim, sobretudo em cirrose estabelecida; manter vigilância elegível |
+| Restrição de proteína trata EH? | Não como rotina; prevenir sarcopenia |
+| Todo paciente com ascite refratária recebe TIPS? | Não; avaliar risco cardíaco, encefalopatia e transplante |
+
+### Fechamento clínico integrador
+
+A cirrose é manejada pela interação de **etiologia**, **pressão portal**, **reserva funcional do fígado**, **hemodinâmica renal**, **infecção**, **nutrição** e **possibilidade de transplante**. O paciente pode apresentar em sequência ascite → PBE → lesão renal → encefalopatia e HDA, mas nenhum caminho é inevitável. Reconhecer rapidamente qual mecanismo domina cada descompensação orienta prioridades.
+
+Uma boa evolução exige prevenir novos episódios, não apenas resolver o atual: medir pressão e eletrólitos após diuréticos, encaminhar varizes de risco, pesquisar CHC no intervalo correto, tratar hepatite/álcool/metabolismo, nutrir adequadamente e construir continuidade entre pronto-socorro e ambulatório. No raciocínio de prova, **a presença de “cirrose” no enunciado não substitui a investigação de infecção, sangramento, necrose intestinal, insuficiência cardíaca ou lesão renal intrínseca**.
