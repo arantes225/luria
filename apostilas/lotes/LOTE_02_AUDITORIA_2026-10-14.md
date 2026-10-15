@@ -436,7 +436,7 @@ As novas seis porções de capítulo/casos/questões foram inseridas em `LOTE_02
 | Diabetes | 103.938 | 99.415 | 14 | 23 | 13 |
 | PAC adulta | 96.147 | 91.723 | 16 | 23 | 12 |
 | Tuberculose | **147.888** | **141.410** | **18** | **28** | **18** |
-| **Total** | **571.419** | **547.970** | **81** | **118** | **65** |
+| **Total** | **571.419** | **546.970** | **81** | **118** | **65** |
 
 *Estimativa por remoção de tags/entidades e normalização dos espaços; **não certifica 60 mil caracteres didáticos úteis**. Os arquivos `*_RASCUNHO.md` seguem preservados. O `LOTE_02_INPUT_PREPUBLICACAO.json` e o `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` foram atualizados para refletir a edição; manifesto versão **9**. Tabelas novas no JSON usam HTML estrutural, não imagens externas.
 
