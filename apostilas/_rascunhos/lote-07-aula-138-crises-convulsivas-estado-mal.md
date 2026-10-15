@@ -324,3 +324,267 @@ Isoniazida pode causar convulsões de difícil controle por interferência no me
 
 ### 20.5. Gestação em adolescente
 Convulsão em gestante/puérpera pode representar **eclâmpsia**, mesmo sem antecedente de epilepsia. Sulfato de magnésio é tratamento fundamental dessa emergência obstétrica quando indicada; uma abordagem restrita a anticonvulsivantes de epilepsia sem considerar hipertensão/HELLP e urgência obstétrica pode ser fatal. Avaliar gestação quando pertinente e mobilizar obstetrícia sem atraso.
+
+
+## 21. Classificação ILAE 2025 — atualização obrigatória do vocabulário
+
+A **International League Against Epilepsy** publicou em **23 de abril de 2025** uma revisão operacional da classificação dos tipos de crise (Beniczky et al., *Epilepsia* 2025, DOI 10.1111/epi.18338). A aula original apresentou nomes baseados em 2017 por familiaridade de prova e prática, mas uma apostila LURIA atualizada em 2026 precisa explicitar o que mudou. **A versão de 2025 mantém a arquitetura geral, não transforma tipos de crise em doenças novas e não substitui a classificação de síndromes epilépticas.**
+
+### 21.1. Quatro classes principais, em vez de assumir sempre um início documentado
+1. **Focal:** crise de rede localizada em um hemisfério, com propagação possível; consciência pode estar preservada ou comprometida.
+2. **Generalizada:** crise de redes bilaterais desde o começo, com ausências, tônico-clônicas ou outras apresentações.
+3. **Desconhecida quanto a focal/generalizada:** testemunha/EEG não permitem esclarecer a classe biológica naquele momento.
+4. **Não classificável:** informação ou fenômeno insuficientes para classificar nas opções anteriores.
+
+A palavra inglesa **“onset” foi retirada do nome das classes principais** na atualização de 2025; isso não significa deixar de investigar cronologia ou sinais iniciais. Significa não codificar informação temporária inadequada na própria categoria quando o início não foi observado.
+
+### 21.2. De “awareness” para “consciousness”
+A ILAE 2025 usa **consciência** como classificador das crises focais (e de classe desconhecida, quando aplicável), operacionalizando por dois componentes:
+- **awareness:** vivência subjetiva/recordação e percepção;
+- **responsiveness:** capacidade de responder adequadamente ao ambiente/comandos durante a crise.
+
+Conceito aplicado: paciente pode parecer responsivo automaticamente ou executar gestos reflexos sem consciência plenamente preservada. O inverso também exige avaliação; é impreciso definir alteração de consciência só pela resposta a uma pergunta mal formulada por testemunha ansiosa.
+
+**Como escrever no prontuário:** “crise focal, consciência comprometida, automatismos oroalimentares e confusão pós-ictal” é mais útil que “convulsão parcial complexa” sem descrição. Em estudo histórico ou questão com nomenclatura antiga, explicar correspondências e registrar que a classificação oficial mais recente é de 2025.
+
+### 21.3. Manifestações observáveis e não observáveis
+A dicotomia **motora versus não motora** deixa de ser o eixo principal da versão básica; a ILAE usa **com manifestações observáveis** ou **sem manifestações observáveis** em cenários pertinentes e, na versão ampliada, descreve a sequência cronológica de semiologia. Uma aura epigástrica subjetiva pode ser clinicamente importante mesmo sem gesto visível. Uma ausência pode incluir fenômenos motores discretos, e portanto “não motora” não é definição absoluta.
+
+A revisão reconhece também **mioclonia negativa epiléptica**, perda súbita e breve de contração muscular por fenômeno epiléptico que pode causar queda de cabeça/mão/objeto. Não confundir com fraqueza sustentada ou hipotonia não epiléptica.
+
+### 21.4. Nova classificação, mesma prioridade no PS
+A atualização de 2025 **não modifica** a necessidade de iniciar tratamento de crise convulsiva prolongada a partir de cinco minutos, nem torna EEG obrigatório para começar benzodiazepínico no status convulsivo evidente. As categorias ajudam a escolher investigação e terapia de manutenção; a emergência usa **fenótipo observável, duração e risco sistêmico**.
+
+**Tabela de tradução editorial:**
+
+| Expressão antiga frequente | Como registrar em 2026 | O que não perder |
+|---|---|---|
+| “Parcial simples” | Crise focal com consciência preservada, descritores semiológicos | Sintoma focal ainda é crise mesmo sem perder consciência |
+| “Parcial complexa” | Crise focal com consciência comprometida, descritores | Automatismo e responsividade devem ser descritos |
+| “Crise focal com generalização secundária” | Crise focal evoluindo para tônico-clônica bilateral | É importante documentar primeiro sinal lateralizado |
+| “Crise generalizada de início desconhecido” | Descrever classe desconhecida quanto a focal/generalizada se não houver evidência do início | Não presumir generalizada por abalos bilaterais vistos tardiamente |
+| “Crise não motora” | Registrar manifestação observável/não observável e cronologia, conforme ILAE 2025 | Ausências podem ter componentes motores discretos |
+
+### 21.5. Classificação da síndrome ainda é outra pergunta
+Tipo de crise não equivale a síndrome epiléptica. Duas crianças com tônico-clônica bilateral podem ter causas completamente diferentes: epilepsia genética generalizada, epilepsia focal por displasia cortical, crise aguda sintomática por hiponatremia ou encefalite. A síndrome integra idade de início, desenvolvimento, tipos de crise, EEG, neuroimagem, genética e evolução. Tratamento de manutenção específico para ausências ou crises focais pode piorar certas síndromes quando selecionado sem classificação adequada; daí a importância de neurologia e PCDT.
+
+## 22. Eletroencefalograma, neuroimagem e laboratório: o que cada teste responde?
+
+### 22.1. EEG não é detector perfeito de epilepsia
+O EEG de rotina registra atividade elétrica cortical amostrada por eletrodos no escalpo; tem sensibilidade imperfeita e pode ser normal entre crises, mesmo em epilepsia estabelecida. Descargas epileptiformes aumentam confiança em predisposição, porém alterações inespecíficas não devem ser traduzidas automaticamente como diagnóstico. Uma criança que teve episódio clínico nitidamente epiléptico pode ter EEG normal; outra, sem crises, pode apresentar descargas incidentais que demandam contexto.
+
+A solicitação deve ser baseada em pergunta: **classificar tipo/síndrome**, estimar risco após primeira crise, investigar episódios de ausência ou documentar crise oculta. Pedir EEG apenas para “ver se tem epilepsia” sem história semiológica empobrece a interpretação.
+
+### 22.2. Potencial diagnóstico e limitações
+**EEG de rotina:** minutos a poucas horas, pode mostrar ponta-onda generalizada em ausências ou descargas focais, mas evento não necessariamente ocorre durante exame.
+
+**EEG com privação de sono:** pode aumentar ativação de descargas em grupos selecionados, mas exige segurança da criança e avaliação de risco de precipitar crise.
+
+**Vídeo-EEG prolongado:** captura eventos e permite correlacionar manifestações com atividade eletrográfica, útil para diferenciar crises epilépticas de eventos funcionais/parassonias e para planejamento cirúrgico.
+
+**EEG contínuo em UTI:** indicado em suspeita de status não convulsivo, convulsão refratária, encefalite grave, coma inexplicado e após sedação/relaxamento muscular, conforme protocolo e disponibilidade. O EEG precisa ser interpretado por equipe capacitada; artefatos de movimentação podem imitar crise e drogas anestésicas modificam fundo.
+
+### 22.3. Uma criança está acordando devagar: o que observar?
+Após convulsão tônico-clônica prolongada, sonolência pode resultar de período pós-ictal, benzodiazepínicos, hipoglicemia, lesão cerebral, encefalite ou status não convulsivo. **O tempo de recuperação esperado é influenciado por idade, intensidade da crise e sedativos recebidos**, e não há corte absoluto que isole status. Se não melhora como esperado ou há flutuação/olhar desviado/automatismos, acionar avaliação EEG. Não administrar sucessivas doses de sedativo apenas por inquietação sem checar causa.
+
+### 22.4. Ressonância versus tomografia
+**RM de encéfalo com protocolo de epilepsia** é preferida para identificar malformações do desenvolvimento cortical, esclerose hipocampal e lesões discretas em avaliação eletiva de epilepsia estrutural; interpretação radiológica especializada aumenta rendimento.  
+**TC de emergência** é mais rápida em instabilidade/trauma e suspeita de sangramento/hipertensão intracraniana aguda, mas pode perder pequenas displasias e envolve radiação ionizante. Não realizar TC de rotina em toda convulsão febril simples com recuperação normal.
+
+**Imagem focal de alta prioridade:** déficit neurológico novo persistente, convulsão focal com evolução atípica, sinais de hipertensão intracraniana, trauma grave, oncologia/imunossupressão, cefaleia/sinais progressivos e primeira crise com exame neurológico alterado.
+
+### 22.5. LCR sem atrasar o que salva
+Suspeita de meningite/encefalite exige estratégia integrada. Em criança com status e choque, não realizar LP de imediato; iniciar antibióticos e/ou aciclovir empíricos quando risco clínico exigir, coletando hemocultura se possível sem atraso, e realizar LCR após condições de segurança. A interpretação de leucócitos/proteínas no LCR pode ser influenciada por convulsões, trauma e patologia concomitante; não usar “crise pode elevar células” como explicação universal para pleocitose importante.
+
+**Conexão curricular:** aula 133 aprofunda meningite e encefalite; aula 128, sepse pediátrica. A aula 138 continua responsável por reconhecer/cessar convulsão, e as outras fornecem tratamento causal sem duplicação total.
+
+## 23. Depois da primeira crise não provocada: diagnóstico, risco e decisão de tratar
+
+### 23.1. Uma crise não é automaticamente epilepsia
+Uma crise aguda sintomática por glicose 32 mg/dL ou sódio 116 mEq/L tem tratamento primário da causa. Uma primeira crise não provocada exige estimar risco futuro por história, exame, EEG, imagem e etiologia. A definição operacional da ILAE permite diagnóstico de epilepsia após uma única crise não provocada quando probabilidade de recorrência no horizonte aplicável é comparável à de duas crises não provocadas, **mas isso requer julgamento especializado**, não percentual inventado em pronto atendimento.
+
+### 23.2. O que aumenta preocupação depois do evento?
+- lesão epileptogênica estrutural na RM;
+- descargas epileptiformes no EEG;
+- déficit ou alteração de desenvolvimento prévia;
+- crise focal com sinais de doença de base;
+- quadro sindrômico/genético compatível;
+- antecedente de injúria cerebral relevante.
+
+Nenhum fator isolado determina sempre fármaco de manutenção. A decisão deve considerar dano da próxima crise, exposição a efeitos adversos, qualidade de vida, acesso, adesão e preferências da família. Não criar falso dilema “medicar todo mundo” versus “não tratar até a segunda crise”.
+
+### 23.3. Investigação etiológica organizada
+**Estrutural:** malformações, sequelas hipóxico-isquêmicas, trauma, tumor, AVC, lesão cortical.  
+**Genética:** síndromes com padrão EEG/idade/desenvolvimento e teste genético quando disponível e com indicação.  
+**Infecciosa:** neuroinfecções agudas ou sequelas de infecção anterior.  
+**Metabólica:** distúrbios de glicose/eletrólitos, defeitos hereditários, comprometimento de órgãos.  
+**Imune:** encefalite autoimune ou doença inflamatória.  
+**Desconhecida:** após investigação adequada, nem toda etiologia será identificada; “desconhecida” não equivale a “psicogênica”.
+
+**Investigação em recursos limitados:** história clínica de qualidade, exame, glicemia e avaliação clínica direcionada podem ser mais valiosos do que um painel de testes caros sem hipótese. Encaminhar para EEG/RM conforme risco em rede organizada e definir sinais de alarme no retorno.
+
+### 23.4. A criança e a escola precisam de um plano
+Um plano de ação deve conter descrição do tipo de crise, tempo de resgate, medicamento prescrito e via, quem deve administrar, quando acionar ambulância, contatos familiares e recomendações de segurança. A equipe de escola/creche precisa de treinamento e evitar atitudes perigosas, como colocar objetos na boca ou tentar imobilizar. O plano é personalizado, não um protocolo genérico para toda criança.
+
+## 24. Escolher antiepiléptico de manutenção não é copiar a droga do status
+
+### 24.1. Agudo e crônico têm objetivos diferentes
+O objetivo do **status** é cessar prontamente atividade potencialmente lesiva e manter oxigenação/perfusão; a escolha é condicionada a via parenteral, tempo e segurança aguda. O objetivo da **manutenção** é reduzir frequência de crises recorrentes com mínimos efeitos adversos sobre desenvolvimento, aprendizado, humor, sono e gestação futura.
+
+Exemplo: fenitoína/fosfenitoína pode ser recurso agudo em status, mas isso não significa automaticamente melhor monoterapia a longo prazo em epilepsia de ausências. Em algumas síndromes generalizadas, bloqueadores de canais de sódio podem agravar mioclonias/ausências; portanto identificar síndrome precede troca de fármaco crônico.
+
+### 24.2. Levetiracetam
+Pode ser útil em tipos de crises determinados, tem poucas interações enzimáticas importantes, mas alterações comportamentais/irritabilidade podem limitar uso em criança com sofrimento psíquico ou condições do neurodesenvolvimento. Função renal modifica exposição, e dose de manutenção em mg/kg/dia depende de idade, formulação, função renal e objetivo. Não converter automaticamente carga IV do EME em dose diária de manutenção.
+
+### 24.3. Lamotrigina
+Bloqueia canais de sódio e tem amplo uso em epilepsias selecionadas. **Risco de rash grave**, incluindo reações cutâneas severas, impõe titulação lenta; coadministração com valproato pode elevar níveis e exigir titulação ainda mais cuidadosa. Início rápido em dose cheia porque “funcionou em adulto” é falha importante. Contraceptivos hormonais com estrogênio podem alterar concentração de lamotrigina e exigir avaliação de interação.
+
+### 24.4. Carbamazepina/oxcarbazepina
+Podem ser usadas em epilepsia focal em pacientes selecionados; indução enzimática e interações podem reduzir eficácia de outros medicamentos/contraceptivos. Oxcarbazepina associa-se a **hiponatremia** em alguns pacientes e exige acompanhamento quando risco. Síndromes com ausências ou mioclonias precisam de avaliação de risco de agravamento antes de selecionar bloqueador de canal de sódio.
+
+### 24.5. Valproato na manutenção
+Tem amplo espectro de eficácia em síndromes selecionadas, mas exige vigilância para ganho ponderal, trombocitopenia, efeitos hepáticos/pancreáticos e riscos reprodutivos/teratogênicos. Em suspeita de doença mitocondrial **POLG**, há risco hepático grave. Restrições regulatórias de NICE/MHRA para pessoas abaixo de 55 anos e potencial reprodutivo são específicas do Reino Unido; para Brasil, seguir PCDT/Anvisa e aconselhamento individual. Não apresentar como droga inofensiva universal, nem ignorar situações em que é necessária após avaliação de especialistas.
+
+### 24.6. Abstinência abrupta, interação e adesão
+Omissão de múltiplas doses, redução súbita ou interação farmacológica pode precipitar clusters e status. Perguntar por falta de acesso ao medicamento, sabor ruim, efeitos colaterais, conflito familiar e barreiras financeiras, sem interpretar adesão ruim como “falta de responsabilidade” do cuidador. Ajuste de manutenção deve ser programado e acompanhado; crise recorrente pode exigir revisar diagnóstico original e esquema, não apenas dobrar dose.
+
+## 25. Risco de morte, qualidade de vida e ética do cuidado
+
+### 25.1. SUDEP sem alarmismo
+**Morte súbita inesperada na epilepsia (SUDEP)** é evento raro, porém importante, mais associado a crises tônico-clônicas generalizadas não controladas e outros fatores. O aconselhamento deve ser proporcional à idade e risco, com foco em adesão, controle de crises, plano de emergência e segurança do sono quando pertinente. O objetivo é capacitar a família, não provocar medo incapacitante.
+
+### 25.2. Acidentes e proteção sem proibição absoluta
+Banho, natação, altura, bicicleta e atividade esportiva exigem avaliação de risco pela frequência/controle das crises e supervisão, não exclusão automática de atividade física. Esportes podem contribuir para saúde e desenvolvimento, com medidas apropriadas. Criança não deve ficar sem socialização/escola por ter epilepsia. Se crises não controladas e perda de consciência, riscos de água/altura exigem proteção particular.
+
+### 25.3. Saúde mental e aprendizagem
+Ansiedade, depressão, dificuldades de atenção, estigma e efeitos cognitivos de fármacos podem coexistir. Nem toda dificuldade escolar é causada por epilepsia, e nem toda epilepsia com EEG normal significa queixas “inventadas”. Integrar avaliação escolar e psicossocial ao seguimento, sobretudo após status prolongado e internação intensiva.
+
+### 25.4. Comunicação depois de emergência grave
+A família precisa entender causa provável, incertezas, qual tratamento foi dado, efeitos adversos esperados, sinais de recorrência, acompanhamento e nome das medicações (evitando confusão entre concentração e volume). Na alta, fornecer resumo médico para APS/escola quando apropriado e considerar avaliação de neurodesenvolvimento após EME complicado.
+
+## 26. Casos clínicos adicionais — cinco dimensões de decisão
+
+### Caso 5 — síncope convulsiva que não é epilepsia
+**Apresentação:** adolescente de 15 anos desmaiou após corrida, relatou palpitações e dor torácica minutos antes. Testemunha descreve três abalos breves após queda, recuperação em menos de 20 segundos e orientação logo em seguida. Há tio falecido subitamente aos 27 anos.  
+**Hipóteses:** síncope arrítmica potencialmente grave, com movimentos anóxicos; crise epiléptica no diferencial.  
+**Raciocínio:** esforço, palpitações e história familiar são red flags cardiológicos. Movimentos curtos não tornam epilepsia obrigatória.  
+**Exames:** ECG imediato, monitorização e avaliação cardiológica urgente; exames adicionais conforme risco e estabilidade.  
+**Conduta:** não liberar para exercício intenso sem investigação; não iniciar antiepiléptico crônico apenas por descrição de abalos; suporte/encaminhamento apropriado.  
+**Por que importa:** evita deixar passar causa de morte súbita tratável.
+
+### Caso 6 — espasmos em salvas no lactente
+**Apresentação:** bebê de 7 meses começou a ter episódios de flexão abrupta de tronco/braços, em grupos ao acordar; a família pensava ser refluxo. Nas últimas semanas parou de tentar sentar e de interagir como antes.  
+**Hipóteses:** espasmos epilépticos infantis e síndrome epiléptica grave, etiologia genética/estrutural a investigar.  
+**Raciocínio:** salvas + relação com despertar + regressão são sinais de alto risco; não esperar tônico-clônica generalizada.  
+**Exames:** EEG urgente com sono/vigília quando possível, avaliação neurológica, RM e investigação etiológica dirigida.  
+**Conduta:** encaminhamento neuropediátrico prioritário, tratamento sindrômico específico por equipe especializada, orientação de registrar vídeos quando seguro.  
+**Por que importa:** diagnóstico precoce afeta neurodesenvolvimento.
+
+### Caso 7 — status refratário e ESETT
+**Apresentação:** menino de 6 anos com crise tônico-clônica há 18 minutos. Recebeu duas doses adequadas de benzodiazepínico, oxigenação monitorizada, glicemia normal, ainda convulsiona. História de epilepsia e doença hepática em investigação.  
+**Hipótese:** EME estabelecido resistente à primeira linha.  
+**Raciocínio:** precisa segunda linha sem atraso. Levetiracetam/fosfenitoína/valproato têm eficácia populacional semelhante no ESETT, mas doença hepática pode desfavorecer valproato e demanda avaliação específica.  
+**Exames:** eletrólitos/glicose/renal/hepática e medicações em uso sem atrasar terapia; EEG se persistência/UTI.  
+**Conduta:** equipe aplica antiepiléptico de segunda linha conforme protocolo e contraindicações, prepara resgate intensivo e trata causa desencadeante.  
+**Por que importa:** usa ensaio clínico sem apagar decisão individual.
+
+### Caso 8 — inconsciência persistente após intubação
+**Apresentação:** menina de 10 anos tratada por status convulsivo foi intubada e sedada, recebe bloqueador neuromuscular por indicação respiratória. Movimentos pararam, mas EEG mostra crises eletrográficas recorrentes.  
+**Hipótese:** status não convulsivo persistente.  
+**Raciocínio:** bloqueio motor remove expressão clínica, não atividade cerebral; redução de sedativo pode revelar manifestações, mas aguardar abalos é inseguro.  
+**Exames:** EEG contínuo, avaliação etiológica neurológica/metabólica/infecciosa.  
+**Conduta:** neurologia/PICU adequam antiepilépticos/anestésicos e metas de EEG, monitoram suporte orgânico.  
+**Por que importa:** a meta é controlar crise cerebral, não apenas imobilizar corpo.
+
+### Caso 9 — primeira crise afebril com EEG normal
+**Apresentação:** criança de 9 anos teve episódio noturno focal seguido de tônico-clônica bilateral por cerca de dois minutos, recuperou-se, exame neurológico normal e EEG de rotina sem descargas.  
+**Hipóteses:** primeira crise epiléptica não provocada, origem focal possível; parassonia e outros diferenciais conforme história.  
+**Raciocínio:** EEG normal não descarta epilepsia. Estimar necessidade de RM, EEG adicional e risco de recorrência pelo evento, desenvolvimento e história; não medicar cronicamente nem descartar a priori.  
+**Exames:** anamnese de testemunha e eventualmente vídeo, EEG com sono quando indicado, RM por suspeita focal e avaliação neurológica.  
+**Conduta:** orientar segurança, plano de resgate/retorno e acompanhamento especializado; decisão de manutenção após estratificação.  
+**Por que importa:** ensina a interpretar teste negativo no contexto clínico.
+
+## 27. Oito questões adicionais com comentários das alternativas
+
+### Questão 7 — ILAE 2025
+Segundo ILAE 2025, qual mudança é correta?
+A. Foram abolidas as crises focais. B. A classificação passou a incluir quatro classes principais e usa consciência como classificador em vez de awareness, com descrição da semiologia. C. Toda crise é “motora” ou “não motora” como único eixo. D. Crises neonatais seguem idêntica classificação.  
+**Gabarito B.** A revisão conserva focal/generalizada/desconhecida/não classificável, e usa consciência/descritores. **A** falso. **C** simplifica e ignora substituição de eixo observável/não observável. **D** neonato tem posição específica. **Mini-revisão:** atualizar terminologia de 2017 em aulas de 2026.
+
+### Questão 8 — ESETT
+Criança elegível com estado de mal após benzodiazepínicos. Qual afirmação descreve ESETT?
+A. Levetiracetam foi dez vezes mais eficaz que outros. B. Valproato é obrigatório em POLG. C. Levetiracetam, fosfenitoína e valproato tiveram taxas semelhantes de sucesso nas crianças estudadas, com seleção individual por contraindicações e contexto. D. Antiepilépticos de segunda linha são inúteis.  
+**Gabarito C.** ESETT não mostrou superioridade global e a taxa de sucesso foi da ordem de metade. **A/D** incorretas. **B** perigosa pela hepatotoxicidade no POLG. **Mini-revisão:** ensaio orienta população, paciente seleciona fármaco.
+
+### Questão 9 — episódio durante exercício
+Adolescente com palpitações, perda breve da consciência durante corrida, poucos abalos após queda, recuperação imediata e história familiar de morte súbita. Qual ação prioritária?
+A. Avaliação cardiológica e ECG por suspeita de síncope arrítmica grave. B. Diagnóstico confirmado de epilepsia focal. C. Alta sem investigação. D. Apenas EEG em três anos.  
+**Gabarito A.** Alarme cardiovascular e curso de síncope anóxica. **B** não confirmado. **C/D** negligenciam risco. **Mini-revisão:** síncope pode convulsionar.
+
+### Questão 10 — espasmos do lactente
+Bebê de 8 meses apresenta flexões abruptas em salvas e regressão do desenvolvimento. Melhor abordagem?
+A. Reassegurar sem reavaliação até dois anos. B. Prescrever IBP para todos. C. Considerar cólica sem exame. D. Suspeitar espasmos epilépticos e encaminhar para EEG/neuropediatria urgentemente.  
+**Gabarito D.** Fenótipo específico e risco ao desenvolvimento. **A/B/C** atrasam. **Mini-revisão:** salvas ao despertar são pista.
+
+### Questão 11 — EEG normal
+Criança tem crise focal clinicamente convincente e EEG de rotina normal. Qual afirmação?
+A. Epilepsia está definitivamente excluída. B. EEG intercrítico tem sensibilidade limitada; avaliação clínica e, quando indicado, exames adicionais seguem necessários. C. Necessariamente é crise funcional. D. TC obrigatória a todos os pacientes sem exceção.  
+**Gabarito B.** Amostragem intercrítica pode não registrar descargas. **A/C/D** são conclusões indevidas. **Mini-revisão:** teste negativo não substitui semiologia.
+
+### Questão 12 — hiponatremia
+Adolescente com crise e sódio 117 mEq/L. Qual plano é apropriado?
+A. Apenas anti-inflamatório. B. Diagnosticar epilepsia vitalícia sem exame. C. Tratar emergência metabólica com solução hipertônica e correção cuidadosamente monitorizada conforme protocolo, além de controlar crise. D. Corrigir sódio até 145 mEq/L em uma hora.  
+**Gabarito C.** Sintomas neurológicos da hiponatremia exigem manejo causal; **A/B** omitem mecanismo; **D** acarreta risco de correção excessiva. **Mini-revisão:** crise aguda sintomática ≠ epilepsia.
+
+### Questão 13 — manutenção
+Após status controlado, médica considera valproato de manutenção em menina com suspeita de doença POLG. Qual atitude melhor?
+A. Avaliar riscos e evitar valproato na suspeita/diagnóstico de POLG, discutindo alternativas com neurologia. B. Usar porque foi medicamento citado em ESETT. C. Ignorar função hepática. D. Aplicar dose de carga IV como dose diária crônica.  
+**Gabarito A.** Risco hepatotóxico pode ser grave. **B** interpreta ensaio sem contraindicação. **C/D** perigosas. **Mini-revisão:** tratamento agudo não determina manutenção.
+
+### Questão 14 — EEG na UTI
+Após benzodiazepínicos, antiepiléptico e intubação, criança permanece alterada sem abalos. O EEG mostra crises contínuas. Qual diagnóstico?
+A. Cura das crises porque corpo não se move. B. Sedação fisiológica apenas. C. Síncope postural. D. Estado de mal não convulsivo/eletrográfico, exigindo tratamento dirigido por EEG em equipe especializada.  
+**Gabarito D.** Controle de movimento não equivale a cessação cortical. **A/B/C** não explicam exame. **Mini-revisão:** EEG é ferramenta terapêutica na UTI.
+
+## 28. Matriz de autossuficiência: quais conteúdos sustentam quais decisões?
+
+| Decisão cobrada em prova | Explicação na aula | Caso aplicado | Questão aplicada |
+|---|---|---|---|
+| Distinguir síncope de crise | 16.1–16.3 | 5 | 9 |
+| Classificar evento conforme ILAE 2025 | 17, 21 | 9 | 7 |
+| Reconhecer espasmos infantis | 17.4, 21.5 | 6 | 10 |
+| Iniciar EME em 5 minutos | 18.1–18.3 | 2 e 7 | 1 |
+| Selecionar segunda linha com segurança | 18.5–18.7 | 7 | 8 e 13 |
+| Interpretar evidência ESETT | 18.5–18.6 | 7 | 8 |
+| Diferenciar crise febril de meningite | 19.1–19.5 | 1 | 3 |
+| Tratar causa metabólica | 20.1–20.5 | 4 | 6 e 12 |
+| Diagnosticar status oculto | 18.8, 22.3 | 3 e 8 | 4 e 14 |
+| Interpretar EEG negativo | 22.1–22.2 | 9 | 11 |
+| Escolher investigação de epilepsia | 22–24 | 9 | 11 |
+| Elaborar seguimento de segurança | 23.4–25 | 5 e 9 | discussão longitudinal |
+
+**Autochecagem:** a maioria das perguntas deriva de conteúdo precedente, mas ainda faltam revisão de dose brasileira por faixa, protocolo neonatal formal, imagens reais com licença e verificação por editor/pediatra independente.
+
+## 29. Bibliografia adicionada e limites da comparação
+
+6. **ILAE**. Beniczky S et al. *Updated classification of epileptic seizures: Position paper*. *Epilepsia*. 2025;66(6):1804–1823. DOI 10.1111/epi.18338. https://www.ilae.org/guidelines/definition-and-classification/updated-classification-of-epileptic-seizures-2025
+7. **ESETT**. Kapur J et al. *Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus*. *N Engl J Med*. 2019;381:2103–2113. Análise por idade: *Lancet*. 2020. https://pubmed.ncbi.nlm.nih.gov/32203691/
+8. **CHOP**. *Status Epilepticus Clinical Pathway – ED and ICU*, revisto em agosto/2026. https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway
+9. **NICE NG217**. Seção 7 *Treating status epilepticus, repeated or cluster seizures*, atualização 30/01/2025. https://www.nice.org.uk/guidance/ng217/chapter/treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures
+10. **Ministério da Saúde**. PCDT de Epilepsia, anexo alterado em 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view
+
+**Proveniência:** o único PDF do Drive diretamente acessível para este tema permanece **toxicidade de anestésicos locais**, um recorte de convulsão provocada, não um livro de epileptologia. As doses institucionais são explicitamente CHOP/NICE, não inferidas do PCDT brasileiro. **Nenhuma norma de prescrição do SUS foi inventada.**
+
+## 30. Parecer da segunda rodada de aprofundamento
+- [x] Classificação internacional **ILAE 2025** incluída com correspondência de termos.
+- [x] ESETT revisado, com taxas de sucesso pediátricas e limites de generalização.
+- [x] Diferenciais de síncope, eventos funcionais, espasmos infantis e crises metabólicas.
+- [x] Fases do status com interpretação de doses em mg versus volume e segurança.
+- [x] Investigação pós-crise, EEG e RM, manutenção e seguimento.
+- [x] Cinco casos novos e oito questões adicionais comentadas.
+- [ ] Conferir todas as doses/infusões/contraindicações em protocolo pediátrico brasileiro institucional e apresentar quadro de referência nacional quando disponível.
+- [ ] Conferir versão integral do PCDT MS 2026 e expandir síndromes epilépticas com tratamento por faixa etária.
+- [ ] Obter EEGs, RM, ECG, figuras de primeiros socorros e vídeos educacionais com licença comercial; otimizar WebP e aprovar no Admin.
+- [ ] Revisão profissional de neuropediatria/UTI, especialmente população <2 anos, POLG, valproato e efeitos das terapias de resgate.
+- [ ] Checagem de autossuficiência, clareza editorial e eventual repetição antes de integrar HTML/PWA.
+**Situação:** RASCUNHO APROFUNDADO, NÃO CERTIFICADO E NÃO PUBLICADO.
