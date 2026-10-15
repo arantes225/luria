@@ -244,3 +244,208 @@ Políticas de ambiente alimentar e atividade física podem ter efeito primordial
 | Pessoa pós-AVC, fisioterapia para recuperar marcha | Incapacidade funcional | Terciária |
 | Evitar angiotomografia sem indicação em baixo risco | Iatrogenia | Quaternária |
 
+
+
+## 13. Saúde materna, infância e ciclo de vida: a fase muda o alvo
+
+### 13.1 Antes da concepção
+
+Melhorar acesso a educação, segurança alimentar, condições de trabalho e proteção contra violência durante infância/adolescência de futuras gestantes pode atuar sobre determinantes **primordiais** de agravos maternos. Vacinar pessoa suscetível, reduzir exposição a tabaco e orientar suplementação **antes da concepção** quando indicada são intervenções primárias para determinadas condições materno-fetais. Quando pessoa já gestante está assintomática, o pré-natal inclui detecção precoce de anemia, sífilis, infecções e hipertensão, misturando **prevenção secundária de doença materna** e **primária de complicações fetais ainda inexistentes**.
+
+Essa distinção importa em prova: identificar infecção materna por sífilis com teste na gravidez é diagnóstico precoce de uma doença que já existe na gestante e tratamento para evitar sífilis congênita, que ainda pode não existir no feto. Assim, a mesma consulta integra níveis distintos conforme alvo. Não existe “uma categoria única do pré-natal”.
+
+### 13.2 Profilaxias obstétricas e puerpério
+
+Em gestante com risco de pré-eclâmpsia, estratégias preventivas como uso de AAS em dose e período adequados ou cálcio para grupos indicados devem seguir recomendações obstétricas. A intenção é impedir evento hipertensivo/progressão, não “tratar pré-eclâmpsia já instalada”. Quando doença se manifesta, reconhecimento oportuno, tratamento e interrupção da gestação quando indicado buscam reduzir morbimortalidade; em puérpera com sequelas neurológicas, reabilitação e cuidado funcional têm componente terciário.
+
+Prevenir hemorragia pós-parto por manejo ativo do terceiro período do parto, no momento definido por diretriz, é **primária do evento hemorrágico**; controlar hemorragia já instalada é tratamento urgente da condição presente, que evita incapacidade e óbito. Vacinação materna contra agentes específicos protege gestante e recém-nascido em contextos definidos. O rótulo de prevenção nunca substitui dose, janela, contraindicação e logística reais.
+
+### 13.3 Neonatologia
+
+Triagens neonatais como teste do pezinho, oximetria de pulso para cardiopatia crítica e triagem auditiva têm finalidade de detectar condições **já existentes mas pouco ou nada sintomáticas**, permitindo intervenção precoce: caráter secundário. O conjunto e idade de realização seguem PNTN e protocolos atuais do Brasil; evitar inventar que todo exame genético disponível integra o SUS de imediato. Suporte nutricional, aconselhamento familiar e prevenção de exposição a infecções no recém-nascido podem ser primários para agravos específicos. Reabilitação auditiva de criança com perda auditiva confirmada e impacto funcional pode configurar terciária.
+
+### 13.4 Desenvolvimento infantil e escola
+
+Acompanhamento de crescimento, vacinação e intervenção sobre segurança alimentar e escolar são ações interligadas. O diagnóstico oportuno de atraso de desenvolvimento identificado em vigilância da puericultura tem componente de detecção precoce; intervenção multiprofissional para evitar perda funcional e aumentar participação social pode ser terciária, a depender do quadro e alvo. O **Programa Saúde na Escola (PSE)** pode realizar ações de promoção e prevenção específica, mas não deve ser reduzido a campanhas pontuais de pesagem sem abordagem social e familiar.
+
+## 14. Câncer: lesão precursora, diagnóstico, tratamento e vida após câncer
+
+### 14.1 A longa fase subclínica é oportunidade — mas não em todo tumor
+
+No câncer do colo do útero, a trajetória de infecção persistente por tipos oncogênicos do HPV, alterações precursoras e doença invasiva permite oportunidade de vacinação, rastreamento e tratamento de lesões. A vacina previne infecção/doença-alvo em suscetíveis: **primária**. Testar pessoas assintomáticas elegíveis para DNA-HPV em rastreamento organizado com confirmação/tratamento é **secundária**. Reabilitar efeitos urinários, sexuais e funcionais após terapia de câncer estabelecido tem componente **terciário**. Evitar terapia desnecessária de lesão indolente e repetir exames excessivos é **quaternária**.
+
+Apostila 125 detalha recomendações brasileiras 2025–2026: DNA-HPV primário, critérios populacionais, mamografia e FIT. Na 130, o objetivo é a **localização temporal**, não reproduzir toda a legislação ou números de benefício. O fato de uma doença apresentar fase subclínica não prova que rastreá-la melhora desfecho: também é necessário tratamento antecipado benéfico, risco de falsos positivos e seguimento.
+
+### 14.2 Tratamento de câncer pode misturar níveis de ação
+
+Quimioterapia neoadjuvante em tumor estabelecido é **tratamento** de doença clínica, com objetivo de reduzir extensão e melhorar prognóstico. Alguns materiais didáticos classificam esforços para reduzir complicações e incapacidade da doença clínica como prevenção terciária, mas não é correto dizer que “todo medicamento oncológico é terciário por definição”. Prevenir neutropenia febril com fatores de crescimento em regime de alto risco é prevenção **primária daquela complicação** se ainda não ocorreu; manejo de neutropenia febril estabelecida é terapia do evento. A definição do desfecho torna a classificação intelectualmente honesta.
+
+### 14.3 Sobreviventes de câncer
+
+Após cirurgia e quimioterapia, reabilitação para linfedema, apoio cognitivo, fisioterapia e saúde mental ajudam restaurar funcionalidade, reduzindo incapacidade e sofrimento: **terciária**. Vigilância de recidiva em paciente tratado é seguimento específico; não deve ser confundida com rastreamento populacional de pessoas sem diagnóstico prévio. Imunização de sobrevivente, conforme elegibilidade, continua prevenção primária de outras infecções; não muda de nível por seu histórico de câncer.
+
+## 15. Saúde mental: promoção, detecção precoce e prevenção do dano
+
+Saúde mental demonstra limites do modelo biológico linear: sofrimento, fatores sociais, violência, trabalho, genética e apoio comunitário influenciam trajetórias. **Ambientes escolares seguros, combate ao bullying, redução da violência, proteção social e acesso a redes de apoio** podem ser considerados promoção da saúde e prevenção primordial de riscos psicossociais em determinada população. Educação e medidas baseadas em evidência para evitar início de agravos em grupos suscetíveis podem ter objetivo primário.
+
+Detectar depressão, ansiedade ou psicose incipientes por avaliação clínica estruturada de pessoa que já apresenta sinais e tratar oportunamente pode impedir agravamento e suicídio, configurando detecção e tratamento precoce; **não confundir** isso com aplicação indiscriminada de escalas a toda população sem capacidade de confirmação. Em doença mental crônica com perda funcional, **reabilitação psicossocial, trabalho apoiado, fortalecimento de autonomia e rede comunitária** têm componentes terciários. Rever benzodiazepínicos em uso crônico sem benefício atual e reduzir iatrogenia por polifarmácia é quaternária.
+
+### 15.1 Redução de danos não cabe num único degrau
+
+**Redução de danos** em uso de substâncias foca diminuir consequências negativas, mesmo quando abstinência não é alcançada. Pode prevenir nova infecção por HIV/hepatites (primária dessas infecções), evitar overdose repetida, tratar doença presente, reduzir incapacidade e promover vínculo social. Rotulá-la “terciária” sempre é superficial e pode estigmatizar. A PNAB inclui redução de danos no escopo da APS, e a estratégia se avalia por desfechos de saúde, autonomia e acesso, não por moralização de comportamento.
+
+### 15.2 Suicídio e risco agudo: classificação não substitui segurança
+
+O reconhecimento de ideação suicida com plano, acesso a meios letais ou sinais de emergência exige avaliação imediata e medidas de segurança proporcionais, independentemente da categoria preventiva de uma eventual política de prevenção do suicídio. Intervenções universais, seletivas e indicadas podem atuar em níveis diferentes do modelo de Leavell; não deixar etiqueta epidemiológica atrasar atendimento de risco agudo.
+
+## 16. Saúde do trabalhador: dos riscos do ambiente às sequelas
+
+### 16.1 Prevenção na fonte de exposição
+
+No risco de perda auditiva induzida por ruído, controlar emissão sonora em maquinário, instalar barreiras acústicas, reorganizar turnos e proteger trabalhadores antes de lesão representa prevenção primária da perda auditiva, com dimensão primordial quando a política evita a instalação estrutural do risco. **EPI isolado** pode ser necessário, mas não substitui eliminação/substituição do risco e medidas de engenharia quando viáveis. Exames audiométricos de vigilância ocupacional tentam identificar alteração auditiva subclínica para intervir precocemente: **secundária**. Reabilitação auditiva e adaptação funcional após perda instalada são **terciária**.
+
+### 16.2 Acidente com perfurocortante
+
+Treinamento, dispositivos de segurança, descarte adequado e política de proteção são primários para evitar acidentes/infeções. Após exposição, manejo de PEP conforme protocolo busca evitar estabelecimento de infecção: **primária da doença-alvo**, apesar de ocorrer depois do acidente. Monitoramento laboratorial de infecção detectada e tratamento antecipado são secundários; reabilitação de sequela permanente é terciária. A resposta deve especificar se alvo é **acidente** ou **infecção**, porque podem ter níveis diferentes.
+
+### 16.3 Vigilância e notificação
+
+Notificação de agravo, análise de acidentes e inspeção de ambientes informam políticas e controle coletivo; não podem ser colocadas mecanicamente em um único nível. Uma notificação de lesão já ocorrida é registro/vigilância, enquanto as medidas de prevenção adotadas em seguida podem atuar antes de novos casos (primária/primordial) ou depois de sequelas (terciária). **Notificar não substitui prevenir**, e classificar notificação como prevenção secundária em todos os cenários pode ser errado.
+
+## 17. Vacinação, imunidade e prevenção específica em detalhes
+
+Vacinas apresentam vários mecanismos e objetivos: reduzir aquisição da infecção, manifestações, gravidade e transmissão conforme agente. Classificam-se usualmente como **prevenção primária da doença imunoprevenível**. O fato de vacina ser aplicada em hospital, durante internação ou após exposição não altera automaticamente seu objetivo preventivo. Uma dose pós-exposição pode prevenir doença se a resposta imunológica/ imunoglobulina apropriada ocorre em tempo eficaz.
+
+### 17.1 Prevenção da exposição versus prevenção da doença
+
+Vacina contra raiva após mordedura indicada por protocolo busca prevenir **raiva clínica**, que ainda não surgiu, apesar de exposição ao vírus ser possível. Portanto, é prevenção primária da raiva clínica. Uma pessoa já com raiva manifesta exige atenção de emergência e saúde pública, e não “profilaxia” para curar doença estabelecida. A mesma lógica vale para hepatite B após exposição ocupacional e tétano na profilaxia de feridas, com doses, soros e indicações totalmente dependentes do caso.
+
+### 17.2 O que uma carteira vacinal não mostra automaticamente
+
+Registro de doses não prova imunidade plena de todos os indivíduos, e estratégias variam em imunossuprimidos, gestantes e transplantados. Intervalos, contraindicações e reforços mudam conforme PNI. Uma apostila teórica de níveis não deve inventar calendários de vacina; a referência prática são normas atualizadas do Ministério da Saúde e disponibilidade local. O valor didático aqui é identificar fase e finalidade da intervenção.
+
+### 17.3 Proteção indireta e equidade
+
+Cobertura vacinal elevada pode reduzir circulação de certos agentes e proteger pessoas não imunizadas quando a vacina afeta transmissão. Mas doença, vacina e população definem intensidade da proteção indireta; não afirmar universalmente que "toda vacina gera imunidade de rebanho". Campanhas devem alcançar quem enfrenta barreiras de transporte, documentação e informação, e evitar culpabilizar família sem acesso real ao serviço.
+
+## 18. Prevenção e promoção na rede de atenção: trabalho em equipe
+
+### 18.1 A UBS não é uma sala de triagem que só encaminha
+
+Na APS, enfermeiros, médicos, agentes comunitários, equipes de saúde bucal e outros profissionais podem realizar intervenções de todos os níveis. A consulta é oportunidade para reconhecer risco social, vacinar, diagnosticar doença silenciosa, tratar queixas, coordenar reabilitação, acompanhar doenças crônicas e evitar excesso de prescrição. A longitudinalidade permite avaliar se intervenção ajudou, ajustar planos e não repetir exames por perda de informação.
+
+### 18.2 Cuidado especializado também previne
+
+Clínicas especializadas e hospitais podem impedir novas infecções, quedas, tromboembolismos e úlceras de pressão por medidas efetivas. Esses são exemplos de prevenção **primária da complicação**, mesmo que paciente esteja internado por doença grave. O ambulatório de reabilitação pratica terciária da incapacidade, mas também pode aplicar vacinação primária de infecções em suscetíveis. A palavra "terciário" no setor de assistência indica complexidade/referência, não momento biológico.
+
+### 18.3 Referência e contrarreferência
+
+Descobrir retinopatia diabética em consulta de APS só vira benefício se o paciente obtiver avaliação oftalmológica e tratamento no tempo adequado. Da mesma forma, pessoa com AVC precisa de reabilitação articulada entre alta hospitalar, APS e atenção especializada, com transporte/apoio. Prevenção depende da **rede funcionando**, não da descrição ideal no protocolo. Indicadores de acesso e perda de seguimento ajudam reconhecer falhas de integralidade.
+
+### 18.4 Promoção coletiva requer indicadores específicos
+
+Ações ambientais e comunitárias não se avaliam apenas por consultas médicas. Saneamento, acesso alimentar, segurança viária, cobertura de áreas verdes, participação social e desigualdades refletem condições de risco. Uma palestra sobre atividade física pode ter valor, mas não é substituto de ambiente que permita praticá-la. A PNPS enfatiza intersetorialidade, e a avaliação deve incluir distribuição de benefícios no território.
+
+## 19. Prevenção de eventos cardiovasculares: duas convenções de “primária/secundária”
+
+Na **história natural clássica** de Leavell/Clark, secundária refere-se a detectar doença instalada, muitas vezes silenciosa. Na **cardiologia clínica**, prevenção secundária significa evitar **recorrência de eventos** em pessoa com doença cardiovascular aterosclerótica estabelecida, como infarto ou AVC isquêmico. Isso parece contraditório apenas se confundirmos o desfecho de referência.
+
+Exemplo: pessoa com hipertensão diagnosticada na APS não teve AVC. Iniciar tratamento anti-hipertensivo para evitar primeiro AVC é **prevenção primária de AVC**, mas o diagnóstico e tratamento oportuno da hipertensão pode ser descrito como secundário na trajetória da própria HAS. Após AVC, antiagregação/anticoagulação em indicações específicas para prevenir novo evento costuma ser chamada **prevenção secundária cardiovascular**, enquanto fisioterapia de hemiparesia é **terciária da incapacidade**. O mesmo paciente pode receber ambos.
+
+### 19.1 Cuidado ao escrever questões autorais
+
+Questão ruim: “Um homem hipertenso em uso de losartana realiza qual nível de prevenção?” Sem alvo e fase, não há resposta única. Questão boa: “Em pessoa sem doença aterosclerótica prévia, tratamento pressórico para evitar o primeiro AVC é considerado qual prevenção do evento AVC?” Aqui a resposta é primária cardiovascular. Para classificar história natural da hipertensão, o enunciado deve falar em detecção da HAS ainda assintomática e tratamento precoce.
+
+### 19.2 O termo profilaxia não determina nível
+
+Profilaxia antibiótica perioperatória previne infecção cirúrgica e é prevenção primária da infecção que ainda não ocorreu, apesar de o paciente estar em operação por doença pré-existente. Profilaxia secundária de febre reumática com penicilina previne novas infecções por estreptococo/recorrências de febre reumática em quem já teve episódio, usando nomenclatura clínica própria; também pode impedir lesões valvares. Não reinterpretar arbitrariamente todo termo “secundária” de especialidade pelo modelo histórico, sem explicitar alvo.
+
+## 20. Raciocínio contrafactual e prevenção: o que aconteceria sem intervenção?
+
+A história natural da doença é, conceitualmente, uma pergunta **contrafactual**: como evoluiria a condição se determinada intervenção não ocorresse? Na prática, não observamos simultaneamente as duas trajetórias da mesma pessoa; estudos comparativos e vigilância epidemiológica buscam estimar diferenças. O modelo histórico não garante que uma medida de rastreamento gera benefício — é preciso evidência de que detectar/tratar cedo melhora desfecho. A apostila 120 apresenta os métodos de MBE para estimar efeitos; aqui interessa reconhecer limites do raciocínio temporal.
+
+Uma intervenção pode parecer eficaz por **regressão à média** quando é aplicada no pior momento de sintomas, que tenderiam a melhorar mesmo sem tratamento. Pode haver melhora por curso natural autolimitado de doença viral; atribuir toda recuperação ao antibiótico reforça sobreuso. A prevenção quaternária pede identificar onde a intervenção acrescenta benefício e onde apenas acompanha trajetória espontânea, evitando confundir coincidência temporal com causalidade.
+
+### 20.1 História natural não elimina heterogeneidade
+
+Algumas infecções permanecem assintomáticas e resolvem; outras evoluem para doença grave em grupos vulneráveis. Cânceres de mesma localização têm comportamentos biológicos diferentes; doença renal crônica pode progredir lentamente ou rapidamente. Políticas preventivas precisam de estratificação sem estigmatizar: idade, comorbidades e vulnerabilidade social informam alocação de recursos. Não afirmar que “todo portador de fator de risco terá doença” nem que “sem sintomas não há processo patológico”.
+
+### 20.2 Benefícios em diferentes horizontes
+
+Vacinas podem agir em horizonte de dias a anos dependendo da doença e imunização. Estratégias urbanas de prevenção primordial podem demandar anos para reduzir fatores de risco populacionais. Rastreamento de câncer pode levar tempo até produzir diferenças em mortalidade; reabilitação de AVC pode beneficiar mobilidade em semanas/meses. O horizonte deve combinar com o evento-alvo e a intervenção. Avaliar política preventiva apenas pelo número de consultas do mês pode perder benefícios de longo prazo.
+
+## 21. Intervenções universais, seletivas e indicadas: outro eixo de classificação
+
+Na literatura de prevenção, especialmente saúde mental e saúde pública, distingue-se intervenções **universais** (destinadas à população sem seleção individual por risco), **seletivas** (grupos com risco acima da média) e **indicadas** (pessoas com sinais/prodromos ou risco individual identificável). Esta classificação responde **quem é alvo da intervenção**, não **em que fase da história natural da doença** ela atua.
+
+Campanha escolar de prevenção de violência para todos os alunos é universal. Programa para pessoas expostas a violência doméstica pode ser seletivo. Intervenção individual em pessoa com sintomas iniciais de sofrimento pode ser indicada. Essas categorias podem ter objetivos primários ou secundários conforme se existe doença e que desfecho se evita; não tratá-las como sinônimos diretos da escala Leavell/Clark.
+
+### 21.1 Por que a prova mistura os eixos
+
+Um professor pode chamar “prevenção seletiva” o programa de PrEP para grupos de risco. Isso não muda que, em pessoa sem HIV, a prevenção da infecção é **primária**, enquanto “seletiva” especifica o público. As categorias são complementares. Um programa de rastreamento colorretal organizado por idade/risco atende assintomáticos selecionados por elegibilidade; o nível clássico é **secundário**, mas o programa pode ser populacional em sua faixa-alvo. Explicar ambos os eixos evita contradições aparentes.
+
+## 22. Limitações do modelo de Leavell & Clark no mundo contemporâneo
+
+O modelo surgiu num contexto histórico de enfoque epidemiológico de condições com trajetória relativamente ordenada. Em multimorbidade, doença metabólica contínua, transtornos mentais flutuantes, infecções persistentes e câncer de evolução heterogênea, não há sempre uma fronteira nítida entre suscetibilidade, fase subclínica e doença clínica. Cortes diagnósticos resultam de decisões de risco/benefício e podem mudar com novas evidências. O modelo continua valioso como **mapa didático**, mas não pode servir para impor diagnóstico ou terapia.
+
+Também não captura plenamente **determinantes estruturais** e **poder social** quando aplicado apenas à tríade agente-hospedeiro-ambiente. Promoção da saúde ampliada incorpora direitos, renda, educação, ambiente e participação comunitária. A prevenção primordial complementa o esquema ao intervir sobre condições que produzem fatores de risco antes de eles se distribuírem pela população. A quaternária evidencia que os serviços de saúde podem produzir danos em qualquer fase.
+
+### 22.1 Prescrição como prevenção exige evidência
+
+Uma intervenção pode ser teoricamente primária e ainda ser ineficaz ou danosa. Exemplo: suplementar vitaminas indiscriminadamente em pessoas sem deficiência pode não reduzir eventos cardiovasculares e pode gerar efeitos adversos conforme substância/dose. O nível preventivo descreve **intenção e momento**, não eficácia comprovada. A MBE é necessária para decidir se vale a pena oferecer a medida, e a PNPS ajuda pensar sobre acesso e equidade.
+
+### 22.2 Não converter política em culpa individual
+
+Doenças decorrem de múltiplos determinantes; excesso de classificação individual (“falta de prevenção porque não praticou atividade física”) pode culpar quem vive em condições adversas. Uma política preventiva de qualidade combina acesso universal, intensidade proporcional à vulnerabilidade, segurança e respeito às escolhas. A história natural ajuda localizar oportunidade de intervenção; não atribui responsabilidade moral por adoecer.
+
+## 23. Algoritmo de decisão para questões e atendimento
+
+**Passo 1 — Nomeie doença-alvo e evento a evitar.** “Paciente pós-infarto em fisioterapia” tem vários objetivos, então esclareça se deseja evitar reinfarto ou recuperar funcionalidade.
+
+**Passo 2 — Verifique se o evento/doença já existe.** Não: primordial/primária conforme ação contra fator de risco ou contra doença. Sim, mas fase precoce/subclínica: secundária. Dano/limitação instalada: terciária.
+
+**Passo 3 — A ação previne excesso de cuidado?** Se foco é evitar teste/tratamento desnecessário, há dimensão quaternária. Ela não substitui os outros níveis; pode coexistir com eles.
+
+**Passo 4 — Diferencie nível de atenção.** UBS/hospital descrevem organização da RAS; não determinam momento da intervenção.
+
+**Passo 5 — Identifique rótulos clínicos específicos.** “Prevenção secundária de infarto” significa recorrência de evento em cardiologia; “profilaxia secundária de febre reumática” é convenção própria. Explicite alvo para evitar erro.
+
+**Passo 6 — Verifique eficácia e elegibilidade.** Um rótulo de prevenção não prova benefício. Vacina requer PNI/indicação, rastreio exige faixa/risco/seguimento, remédio demanda avaliação risco/benefício e contraindicações.
+
+**Passo 7 — Adote abordagem de equidade.** Se acesso à medida depende de transporte, renda e acolhimento, organizar rede e remover barreiras pode ser mais importante do que aumentar volume de exames.
+
+### 23.1 Algoritmo visual em texto
+
+Início → **Há doença-alvo instalada?**
+- **Não:** a intervenção busca impedir que fatores de risco surjam estruturalmente? → **primordial**. Busca impedir doença específica em suscetível? → **primária**.
+- **Sim, fase subclínica/inicial:** busca descobrir e tratar cedo? → **secundária**.
+- **Sim, com dano/incapacidade:** busca restaurar função e reduzir sequelas? → **terciária**.
+- **Em qualquer caminho:** medida evita investigação ou tratamento excessivo? → **quaternária transversal**.
+
+Se não há informação suficiente para identificar alvo, a resposta correta numa análise crítica é **especificar a ambiguidade**, não escolher etiqueta ao acaso.
+
+## 24. Quadro-mestre de comparação: dez dimensões que podem ser confundidas
+
+| Conceito | Pergunta que responde | Não confundir com |
+| --- | --- | --- |
+| Período pré-patogênico | Doença iniciou no indivíduo? | Ausência de fator de risco |
+| Fase patogênica subclínica | Processo existe sem sintomas? | Infecção transmissível obrigatória |
+| Prevenção primordial | Como impedir emergência populacional dos riscos? | Toda ação individual saudável |
+| Prevenção primária | Como impedir nova doença/agravo específico? | Todo teste de laboratório |
+| Prevenção secundária | Como detectar/tratar doença existente cedo? | Somente rastreio de câncer |
+| Prevenção terciária | Como limitar incapacidade e restaurar participação? | Hospital terciário da RAS |
+| Prevenção quaternária | Como evitar dano por excesso médico? | Negar cuidado necessário |
+| Promoção da saúde | Como ampliar controle de saúde/determinantes? | Palestra isolada em UBS |
+| Rastreamento | Como identificar doença/lesão em assintomáticos elegíveis? | Diagnóstico de sintomáticos |
+| Atenção primária à saúde | Onde e como se coordena cuidado longitudinal integral? | Prevenção primária biológica |
+
+### 24.1 As cinco perguntas do Pulo do Gato
+
+1. A doença-alvo já existe?
+2. O objetivo é impedir risco, detectar cedo, tratar sequela ou evitar iatrogenia?
+3. O ato acontece em UBS ou hospital — e isso realmente altera a fase? Geralmente não.
+4. Há uma convenção de especialidade sobre primeiro versus novo evento?
+5. A medida tem benefício demonstrado ou apenas boa intenção?
+
+Responder essas cinco perguntas permite resolver a maioria das questões sem decorar uma lista extensa de exemplos isolados.
+
