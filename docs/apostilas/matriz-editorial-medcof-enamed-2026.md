@@ -29,14 +29,26 @@ Atualizado em 15/10/2026. **Planejamento de revisão, não certificação de que
 
 ## Distribuição conservadora
 - **Lotes 1–10:** IDs originais intactos, apenas cards com novas anotações.
-- **Lote 11:** 12 temas originais + 5 novas propostas.
-- **Lote 12:** 12 temas originais + 5 novas propostas.
-- **Lote 13:** 11 temas originais + 6 novas propostas.
-- **Total editorial:** 276 entradas (260 originais + 16 novas propostas). Quantidade não é número de apostilas concluídas.
+- **Lote 11:** 12 temas originais + 5 novas propostas + 1 apostila já publicada indexada.
+- **Lote 12:** 12 temas originais + 5 novas propostas + 1 apostila já publicada indexada.
+- **Lote 13:** 11 temas originais + 6 novas propostas + 2 apostilas já publicadas indexadas.
+- **Total editorial:** 280 entradas (260 originais + 16 novas propostas + 4 apostilas já publicadas, incorporadas ao índice). Quantidade não é número de apostilas concluídas.
+
+
+## Segunda auditoria obrigatória: rastreabilidade 401/401
+
+- O arquivo `docs/apostilas/medcof-401-inventario.json` contém as **401 aulas** extraídas do PDF, com título, área original, categoria Alta/Média/Baixa/Diamante, página e bloco.
+- O arquivo `docs/apostilas/medcof-401-correspondencia.json` aponta **401/401** aulas para pelo menos um tema LURIA; não há entradas sem destino. A conferência semântica editorial foi realizada, com capítulos a validar.
+- O script `assets/js/apostilas-medcof-401.js` fornece **401 aulas à interface**. Cada card mostra `CONFERIR X AULAS MEDCOF VINCULADAS` e, quando expandido, cada título e a classificação original. Se houver instrução de acréscimo, ela aparece acima dos módulos.
+- **360** aulas apontam a temas já incluídos nos 260 originais, **35** a propostas novas #261–276, **6** a quatro apostilas já publicadas #277–280, inseridas no índice sem duplicar arquivos.
+- **0/401** capítulos foram certificados como completos nesta auditoria; essa contagem é intencional e impede interpretar *tema mapeado* como *capítulo pronto*. Precisamos verificar texto, referências e atualidade antes de marcar cada um como concluído.
+- As 16 propostas de produção ficam apenas nos lotes 11–13. As quatro indexadas já existentes são #277 Infertilidade Conjugal; #278 Ciclo Menstrual/Eixo HHO; #279 Crescimento Fetal; #280 Alterações Fisiológicas da Gestação.
+- Um capítulo pode cobrir aulas complementares Diamante/Alta/Média/Baixa. A mesma aula não deve gerar várias apostilas; a correspondência pode indicar referências complementares quando necessário.
+- Todos os arquivos foram alterados apenas em uma branch e abertos em PR rascunho; **nada foi implantado na main**.
 
 ## Como retomar o trabalho com outro chat/Codex
-1. Abrir `assets/js/apostilas-editorial-enamed-2026.js` e localizar o número do card.
+1. Abrir `docs/apostilas/medcof-401-correspondencia.json` para obter o destino exato da aula e `assets/js/apostilas-editorial-enamed-2026.js` para as instruções adicionais do card.
 2. Conferir todos os tópicos da chave `notes[número].instruction` e o texto real da apostila.
 3. Se estiver completo, registrar essa verificação; se incompleto, acrescentar capítulos e fontes, sem conteúdo redundante.
 4. Trabalhar nos novos IDs 261–276 apenas após revisar sobreposição com páginas existentes. O campo `lot` define o lote correto.
-5. Não afirmar que todo o conjunto das 401 aulas está coberto até produzir um checklist assinado por **aula MedCof → tema LURIA → capítulo**. A presente matriz sinaliza 169 cards com orientações explícitas; o mapeamento integral item a item continua sendo uma etapa de controle de qualidade.
+5. **Todas as 401 aulas estão mapeadas a temas**, mas isso não certifica o conteúdo. Registrar a correspondência verificada **aula MedCof → tema LURIA → capítulo real → referências**, com conferência científica antes de marcar como concluído. Há 178 cards com instruções manuais adicionais e 401 módulos indicados diretamente.
