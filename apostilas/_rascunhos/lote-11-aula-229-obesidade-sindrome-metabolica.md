@@ -110,6 +110,63 @@ Expansão/disfunção adipocitária, aumento de ácidos graxos circulantes, alte
 - **Osteoartrose, refluxo, doença venosa, limitação funcional:** justificam metas que valorizem redução de dor e melhora de mobilidade, não só balança.
 - **Aspectos reprodutivos e psicossociais:** distúrbios ovulatórios, infertilidade, depressão, ansiedade e estigma podem interagir de forma bidirecional; aconselhamento deve respeitar autonomia, escolhas contraceptivas e gravidez.
 
+
+### 4.3 Critérios harmonizados de síndrome metabólica: tabela integral e interpretação
+A definição harmonizada proposta por instituições internacionais considera a presença de **três ou mais entre cinco componentes**, sem obrigatoriedade de obesidade central. É uma **classificação de agregação de risco**, não doença única com etiologia exclusiva. Quando for cobrada uma definição histórica que exija cintura aumentada, a questão provavelmente utiliza o critério da **IDF**, e deve mencionar isso. O aluno precisa identificar **qual critério a banca está usando** antes de aplicar números.
+
+| Componente | Limite frequente na definição harmonizada | Observação prática |
+|---|---|---|
+| Triglicerídeos | **≥150 mg/dL**, ou tratamento farmacológico específico para alteração | Colher/interpretar conforme estado de jejum e cenário laboratorial; hipertrigliceridemia muito alta exige manejo próprio por risco pancreático |
+| HDL-colesterol | **<40 mg/dL para homens** ou **<50 mg/dL para mulheres**, ou tratamento farmacológico relacionado | Baixo HDL é marcador de risco; não prescrever fármaco apenas para “subir o HDL” sem indicação clínica baseada em desfechos |
+| Pressão arterial | **Sistólica ≥130 mmHg ou diastólica ≥85 mmHg**, ou tratamento anti-hipertensivo em pessoa com hipertensão | Limite do componente da síndrome não equivale automaticamente ao critério vigente de diagnóstico de hipertensão em cada diretriz |
+| Glicemia de jejum | **≥100 mg/dL**, ou tratamento de hiperglicemia | A presença desse componente não estabelece diagnóstico de DM2; confirmar diabetes com critérios próprios |
+| Cintura abdominal | **Ponto de corte adaptado à população/ancestralidade** | Não inventar um único limite brasileiro universal: diferentes consensos e populações usam números distintos |
+
+**Exemplo resolvido:** mulher com cintura elevada segundo critério adotado, TG 180 mg/dL, HDL 46 mg/dL, PA 124/80 mmHg e glicemia 94 mg/dL possui **três componentes** (cintura, TG e HDL) e atende à definição harmonizada. Se o enunciado não informa o critério/corte da cintura e o valor estiver em zona ambígua, explicitar a limitação em vez de afirmar diagnóstico sem contexto.
+
+**Outro exemplo:** homem com cintura dentro do corte de sua população, TG 180, HDL 36, PA 134/84 e glicemia 96 possui três componentes (TG, HDL e PA), logo pode preencher critério harmonizado **sem obesidade central**. Na definição clássica IDF, que exige cintura aumentada, não preencheria. O valor pedagógico está em saber *por que as respostas divergem* entre critérios.
+
+A síndrome metabólica **não substitui** cálculo de risco cardiovascular e nem elimina necessidade de tratar dislipidemia, hipertensão e DM pelos respectivos consensos. Em pacientes com doença aterosclerótica estabelecida, a prevenção secundária é prioritária independentemente de contagem de componentes.
+
+### 4.4 O elo entre adiposidade, resistência à insulina e doença vascular
+O tecido adiposo visceral hipertrofiado libera ácidos graxos, citocinas e adipocinas em padrões alterados. A **resistência à insulina hepática** favorece produção inadequadamente aumentada de glicose e de lipoproteínas ricas em triglicerídeos, enquanto em músculo há menor captação de glicose. Não é correto afirmar que uma molécula explica sozinha o processo; genética, tipo de tecido, inflamação e contexto alimentar modulam resposta.
+
+A hiperinsulinemia compensatória pode coexistir por anos com glicemia de jejum normal. Em algumas pessoas a capacidade de secreção pancreática torna-se insuficiente para compensar resistência periférica, surgindo pré-diabetes ou diabetes tipo 2. Paralelamente, padrões de lipoproteínas aterogênicas, hipertensão, disfunção endotelial e inflamação metabólica aumentam a probabilidade de eventos cardiovasculares. Daí o erro de tratar “a obesidade” sem examinar pressão arterial e lipídios.
+
+O acúmulo de triglicerídeos hepáticos pode ocorrer antes de elevação persistente de transaminases. A **MASLD** (doença hepática esteatótica associada à disfunção metabólica) requer critérios clínicos/etiológicos atuais: não chamar qualquer esteatose ao ultrassom de doença metabólica sem examinar consumo de álcool, causas virais e outros fatores relevantes. Quando houver suspeita de fibrose, avaliar escores não invasivos adequados ao contexto, incluindo FIB-4 em grupos apropriados, com interpretação por idade e encaminhamento conforme risco.
+
+### 4.5 Hipoventilação da obesidade e apneia obstrutiva do sono
+A **AOS** provoca episódios recorrentes de colapso de via aérea superior durante sono; ronco habitual, pausas observadas, sono fragmentado, fadiga e hipertensão resistente são pistas. Porém ronco não confirma AOS, assim como ausência de sonolência típica não a exclui. Questionários como STOP-Bang ajudam na triagem de risco, mas não substituem método diagnóstico apropriado.
+
+A **síndrome da hipoventilação da obesidade** combina obesidade com hipercapnia diurna (PaCO₂ ≥45 mmHg, à luz do contexto) na ausência de outra explicação principal para hipoventilação. É fundamental distingui-la da AOS isolada, pois hipoventilação pode exigir avaliação gasométrica, suporte ventilatório e cuidados específicos. Bicarbonato sérico elevado pode ser pista em contextos selecionados, não prova diagnóstico. Dispneia, edema, policitemia e sinais de hipertensão pulmonar precisam de avaliação cardiopulmonar.
+
+**Conduta prática:** suspeita de AOS grave ou hipoventilação modifica planejamento anestésico, farmacológico, cirurgia e risco de sedativos/opioides. A perda ponderal é tratamento relevante, mas **não substitui automaticamente CPAP, BiPAP ou outra terapia ventilatória** quando indicada. Acompanhamento do sono deve considerar sintomas e exames, não somente peso.
+
+### 4.6 Pré-diabetes, diabetes e remissão: três ideias diferentes
+**Pré-diabetes** representa alterações glicêmicas abaixo do limiar de diabetes, associadas a maior risco metabólico; intervenções são dirigidas a reduzir risco, não a garantir que a doença jamais ocorrerá. **Controle do diabetes** com HbA1c adequada pode decorrer de farmacoterapia eficaz e não significa remissão. **Remissão de DM2**, quando considerada, exige critérios padronizados de glicemia abaixo do limiar diagnóstico por período definido **sem medicação hipoglicemiante**; verificar o consenso aplicável e condições que prejudiquem interpretação da HbA1c.
+
+Após cirurgia metabólica, não suspender abruptamente todos os fármacos de DM; ajustar insulina, secretagogos e outras terapias de acordo com ingestão, glicemia, função renal e risco de hipoglicemia. Pessoas em tratamento incretínico ou após operação podem apresentar grande redução de necessidade farmacológica; o seguimento evita tanto hipoglicemia quanto recaída hiperglicêmica.
+
+### 4.7 Obesidade e saúde reprodutiva
+A adiposidade pode modificar ovulação, fertilidade, risco gestacional e perfil de fármacos, mas não elimina necessidade de investigação de infertilidade por casal. Antes de farmacoterapia, conversar sobre **intenção de gestação e contracepção**. A terapia antiobesidade não deve ser utilizada para emagrecimento durante gravidez, e determinados medicamentos exigem suspensão antecipada conforme bula. A perda de peso pode modificar fertilidade e planejamento reprodutivo; ao prescrever tirzepatida, avaliar possível impacto do atraso do esvaziamento gástrico na eficácia de contraceptivos orais e seguir orientação específica de produto.
+
+Na pós-menopausa, redistribuição central de gordura e perda muscular podem aumentar risco mesmo com peso relativamente estável. Em mulheres com SOP, tratar peso é uma das estratégias que podem melhorar parâmetros metabólicos/ovulatórios, mas não equivale a curar síndrome ou substituir planejamento reprodutivo.
+
+### 4.8 Quando a síndrome metabólica não deve monopolizar o diagnóstico
+Em paciente com febre, emagrecimento involuntário, dor progressiva, anemia, hepatomegalia focal, hipertensão de instalação abrupta ou insuficiência cardíaca nova, os sinais de alerta **não podem ser tratados apenas como “complicações da obesidade”**. Investigar condições independentes conforme sintomas. A síndrome metabólica é frequentemente presente na população; coexistência não estabelece causalidade de cada achado.
+
+### 4.9 Quadro de decisão por comorbidade
+| Comorbidade | O que documentar antes do tratamento | O que acompanhar |
+|---|---|---|
+| DM2 | HbA1c, medicamentos que causam hipoglicemia, função renal, complicações | Controle glicêmico, hipoglicemia, necessidade de reajuste terapêutico |
+| Doença cardiovascular | Eventos prévios, pressão, lipídios, função e capacidade física | Sintomas e eventos, adesão, metas cardiometabólicas |
+| AOS | Sintomas, teste diagnóstico quando indicado, CPAP e adesão | Sonolência, qualidade de sono, pressão, necessidade de reavaliação |
+| MASLD/MASH | Outras causas hepáticas, risco de fibrose, presença de cirrose | Enzimas, risco de fibrose/complicações e decisão de encaminhar |
+| DRC | TFG, albuminúria, desidratação, uso de diuréticos | Função renal e eletrólitos quando indicados, tolerabilidade |
+| Osteoartrose | Dor, mobilidade, uso de analgésicos e capacidade de exercício | Função e qualidade de vida, não somente peso |
+| Compulsão alimentar/depressão | Frequência de episódios, segurança psíquica, medicamentos e suporte | Sintomas, adesão, qualidade de vida e eventos adversos |
+
+
 ## 5. Manejo clínico não farmacológico
 
 ### 5.1 Abordagem nutricional praticável
