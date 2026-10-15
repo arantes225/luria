@@ -555,6 +555,15 @@ Homem de 61 anos, DM2 sem lesão de órgão, foi internado por PAC com saturaç�
 Mulher de 54 anos, pneumonia direita com febre inicial e melhora parcial após 48 horas de antibiótico adequado, volta a apresentar febre, taquipneia e dor pleurítica. Radiografia mostra derrame aumentado e ultrassom evidencia septações. **Hipóteses:** derrame parapneumônico complicado/empiema, resistência, outros diagnósticos concorrentes. **Raciocínio:** a infecção no espaço pleural pode requerer drenagem; ampliar antibiótico isoladamente não garante controle do foco. **Exames:** ultrassonografia, avaliação de punção/drenagem em serviço capacitado, amostra pleural quando indicada, microbiologia e reavaliação de gravidade. **Conduta:** suporte respiratório, antibiótico ajustado ao contexto e avaliação de drenagem/controle do foco com especialista. **Por que importa:** “falha” pode ser complicação anatômica e não apenas escolha errada de antimicrobiano.
 
 
+### Caso 15 — Teste de influenza positivo no ambulatório
+
+Homem de 28 anos sem comorbidades tem febre, tosse e opacidade focal na radiografia, com teste positivo para influenza. Está lúcido, FR 18/min, SpO2 98% em ar ambiente, tolera líquidos e tem seguimento acessível. **Hipótese:** PAC provavelmente viral, sem evidências atuais de coinfecção bacteriana relevante. **Raciocínio:** a ATS 2025 sugere condicionalmente **não prescrever antibiótico empírico** a ambulatoriais sem comorbidades nessa situação. **Exames:** rever qualidade da imagem e sinais clínicos; investigar outros agentes apenas se alterarem a decisão. **Conduta:** avaliar antiviral específico conforme diretriz, orientar hidratação, sinais de piora e retorno, reavaliando possibilidade de bactéria se evoluir mal. **Por que este caso importa:** reduzir uso desnecessário de antibiótico exige estratificar risco e garantir retorno, não simplesmente confiar no resultado viral.
+
+### Caso 16 — Vírus positivo com PAC e necessidade de internação
+
+Mulher de 76 anos, diabética e portadora de DPOC, tem infiltrados bilaterais, teste positivo para vírus respiratório, FR 31/min, confusão recente e SpO2 86% em ar ambiente. **Hipótese:** PAC grave com insuficiência respiratória; coinfecção bacteriana não excluída. **Raciocínio:** o caso NÃO pertence à população de ambulatoriais sem comorbidades em que a ATS sugere evitar antibiótico; gravidade e vulnerabilidade favorecem considerar tratamento empírico e suporte. **Exames:** avaliação de oxigenação/perfusão, imagem, microbiologia pertinente e disfunção orgânica. **Conduta:** internação e suporte respiratório, antibioticoterapia empírica apropriada e antiviral quando indicado, com revisão diária de microbiologia para descalonamento. **Por que este caso importa:** o mesmo teste viral não gera a mesma decisão em pacientes com riscos distintos.
+
+
 ## 10. Questões autorais comentadas
 
 ### Questão 1 — Internação e fisiologia além do escore
@@ -682,6 +691,35 @@ A) Toda pessoa internada deve completar antibiótico IV mesmo estando estável. 
 Após PAC simples, homem jovem não fumante está assintomático em poucos dias. Qual conduta é mais coerente com ATS/IDSA 2019?
 A) Repetir radiografia semanalmente até normalizar em qualquer paciente. B) Não solicitar imagem de controle rotineira se houve resolução clínica apropriada, salvo indicação específica. C) Solicitar TC sempre após completar antibiótico. D) Presumir neoplasia obrigatória.
 **Gabarito B.** **A/C** expõem a uso desnecessário de exames; **D** exagera probabilidade em caso de baixo risco. **Mini-revisão:** acompanhar o paciente, não apenas a opacidade; risco de câncer, hemoptise e sintomas persistentes alteram decisão.
+
+
+### Questão 22 — PAC viral, mas sem comorbidades
+
+Segundo a ATS 2025, em adulto ambulatorial sem comorbidades, estável, com achados clínicos e de imagem de PAC e vírus respiratório detectado, sem evidência de coinfecção, a melhor resposta é:
+
+A) Antibiótico empírico é obrigatório para todos, independentemente de risco.
+
+B) Pode-se considerar não iniciar antibiótico empírico, com julgamento clínico e plano de reavaliação.
+
+C) Vírus positivo elimina o diagnóstico de pneumonia.
+
+D) Não há necessidade de orientar retorno.
+
+**Gabarito: B.** A ATS sugere essa possibilidade de modo condicional, com evidência muito incerta. **A:** exagera indicação universal. **C:** pneumonia pode ser viral. **D:** a decisão exige acompanhar evolução e detectar sinais de falha. **Mini-revisão:** combinar local de cuidado, comorbidades, gravidade e etiologia.
+
+### Questão 23 — Ultrassom pulmonar na suspeita de PAC
+
+A respeito do ultrassom pulmonar na ATS 2025, é correto afirmar:
+
+A) Substitui automaticamente TC e RX em qualquer situação.
+
+B) Pode ser alternativa à radiografia quando há experiência e protocolo adequados, mas exame sem alterações não exclui infiltrado central.
+
+C) Linhas B identificam obrigatoriamente pneumococo.
+
+D) A qualidade não depende do treinamento do operador.
+
+**Gabarito: B.** A recomendação é condicional, e a ultrassonografia avalia especialmente o pulmão subpleural. **A:** ignora necessidade de investigação de outras causas e lesões centrais. **C:** linhas B não têm especificidade microbiológica. **D:** aquisição e interpretação são dependentes do operador. **Mini-revisão:** usar imagem integrada à clínica, respeitando limitações técnicas.
 
 
 ## Referências essenciais
