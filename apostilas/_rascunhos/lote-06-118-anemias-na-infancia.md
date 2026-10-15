@@ -255,3 +255,192 @@ AHAI ocorre quando anticorpos e/ou complemento participam da destruição das he
 
 Em hemólise grave com sinais de hipóxia tecidual, a transfusão necessária **não deve ser negada apenas por provas de compatibilidade complexas**; a equipe de hemoterapia busca a alternativa mais segura e investiga aloanticorpos, enquanto o clínico estabiliza a criança. A expressão “bolsa menos incompatível” não substitui avaliação imuno-hematológica. Rituximabe e outras medidas são opções em situações selecionadas, não primeira linha automática. O **PCDT brasileiro de AHAI foi atualizado pela Portaria Conjunta SAES/SECTICS/MS nº 7/2025**; aplicação pediátrica exige avaliação de elegibilidade e protocolo atual.
 
+
+## 15. Anemia da inflamação e doença crônica: ferro presente, mas indisponível
+
+### 15.1 O que a hepcidina explica
+
+Durante infecção, inflamação autoimune, doença renal e neoplasias, citocinas inflamatórias — especialmente sinalização por IL-6 — estimulam a produção hepática de hepcidina. Esta se liga à ferroportina e reduz a passagem de ferro dos enterócitos e macrófagos para o plasma. Mesmo com reservas corporais presentes, **menos ferro alcança a medula óssea**; denomina-se deficiência funcional. Além disso, inflamação inibe a eritropoiese, reduz resposta à eritropoetina e pode abreviar sobrevida eritrocitária. O hemograma frequentemente mostra anemia normocítica ou discretamente microcítica, de gravidade variável conforme duração e doença.
+
+Nesse contexto, **ferritina é reagente de fase aguda**. Ferritina normal ou alta não exclui deficiência verdadeira concomitante, e ferro sérico baixo não prova ferropenia por si só. Interpretar PCR, saturação de transferrina, TIBC/transferrina e quadro clínico. A anemia de inflamação pura costuma ter transferrina normal/baixa, enquanto na ferropenia clássica ela tende a subir para captar mais ferro; essa distinção perde nitidez quando várias doenças coexistem.
+
+### 15.2 Quando suspeitar e quando tratar
+
+Doença inflamatória intestinal, artrite idiopática juvenil, doença infecciosa crônica, câncer, doença renal e desnutrição com infecção são exemplos. Uma criança com anemia microcítica e PCR elevada pode ter **anemia de inflamação mais ferropenia**, exigindo correção da causa e avaliação de ferro disponível. Tratar somente a Hb com comprimidos de ferro, ignorando infecção intestinal ou doença sistêmica ativa, pode fracassar. Em inflamação persistente, há situações em que ferro oral é pouco eficaz por hepcidina elevada e o tratamento deve ser conduzido por equipe especializada.
+
+### 15.3 Diferença entre resposta de medula e disponibilidade de ferro
+
+Reticulócitos podem estar baixos/relativamente inadequados, pois EPO e eritropoiese estão suprimidas. A redução de volume corpuscular pode surgir tardiamente. A medição de hemoglobina reticulocitária ou receptor solúvel de transferrina pode ajudar em centros com técnica disponível, mas requer interpretação segundo idade, laboratório e inflamação; nenhum é substituto isolado da história. A normalização de PCR pode alterar ferritina independentemente de ter ocorrido reposição de ferro; por isso observar tendências e evolução da doença.
+
+## 16. Anemia associada à doença renal crônica (DRC)
+
+A produção insuficiente de eritropoetina contribui para anemia hipoproliferativa na doença renal avançada, mas não é o único mecanismo: inflamação, restrição de ferro, hemodiálise, perda sanguínea e deficiência nutricional podem coexistir. A anemia é habitualmente normocítica/normocrômica, com reticulócitos inapropriadamente baixos. Antes de atribuí-la ao rim, correlacionar creatinina/TFG estimada conforme idade e altura, urina, crescimento e doença renal conhecida; avaliar ferritina, saturação de transferrina, B12/folato e outras causas.
+
+O manejo renal inclui tratar causa de DRC, otimizar nutrição e ferro quando adequado; **agentes estimuladores de eritropoiese** podem ser indicados por nefrologia quando a avaliação benefício-risco sustenta, com monitorização de Hb e pressão. Não há objetivo universal de normalizar Hb a valores elevados com EPO: alvos e doses dependem de diretriz, idade, comorbidades e risco de hipertensão/trombose. O SUS dispõe de protocolos para anemia na DRC e reposição de ferro, mas a adequação pediátrica exige consulta à documentação e rede especializada.
+
+Em nefrite ativa, perda de sangue urinária e insuficiência renal podem coexistir; diante de anemia abrupta não inferir exclusivamente falta de EPO. Crianças com má absorção, transplante ou imunossupressão também podem sofrer mielossupressão farmacológica. A simples presença de creatinina elevada e anemia não dispensa avaliação de reticulócitos.
+
+## 17. Anemia megaloblástica por deficiência de vitamina B12 ou folato
+
+### 17.1 Por que a célula fica grande
+
+B12 e folato participam das reações necessárias à síntese de DNA. A maturação nuclear dos precursores eritroides torna-se lenta enquanto o citoplasma continua se desenvolvendo: a **assincronia núcleo-citoplasmática** causa macrocitose e eritropoiese ineficaz. No sangue podem aparecer macro-ovalócitos e neutrófilos hipersegmentados; na medula há alterações megaloblásticas em casos selecionados. A morte intramedular de precursores pode elevar LDH e bilirrubina indireta **sem significar hemólise periférica clássica com reticulocitose**: muitas vezes os reticulócitos são baixos.
+
+### 17.2 Deficiência de B12 em lactentes: pensar na mãe
+
+Recém-nascido amamentado por mãe com deficiência importante de B12, dieta restritiva sem suplementação ou alteração de absorção pode desenvolver deficiência na infância. Manifestações incluem falha de crescimento, hipotonia, apatia, regressão de marcos do desenvolvimento, irritabilidade e alterações neurológicas. Quando déficit neurológico está presente, **não esperar aparecer macrocitose extrema** para investigar. Situações com deficiência simultânea de ferro podem apresentar VCM aparentemente normal, mascarando megaloblastose.
+
+A B12 dietética concentra-se em alimentos de origem animal, mas a ingestão é só parte da história. Há causas congênitas de distúrbios de absorção, transporte e metabolismo (deficiência de fator intrínseco, alterações ileais, doenças hereditárias de cobalamina), além de anemia perniciosa rara em pediatria. Em adolescente com cirurgia intestinal, doença celíaca ou ileíte, má absorção pode ser relevante.
+
+### 17.3 Diagnóstico laboratorial e risco de tratar errado
+
+Dosar B12 e folato conforme suspeita, hemograma, reticulócitos, esfregaço, LDH e bilirrubina, com avaliação de homocisteína e ácido metilmalônico quando disponível e útil: metilmalônico pode elevar-se na deficiência de B12, mas também em disfunção renal e outros cenários, portanto requer interpretação. Medicações interferentes e doenças de base devem ser consideradas.
+
+**Não tratar deficiência de B12 grave apenas com ácido fólico.** O folato pode corrigir a anemia sem tratar lesão neurológica por falta de B12, atrasando diagnóstico. Criança com regressão neurológica, citopenias e dieta de risco precisa de avaliação e reposição de B12 sem atraso, com via e dose orientadas pela causa e equipe clínica. Em distúrbios congênitos de metabolismo de cobalamina, podem ser necessários protocolos especializados e acompanhamento metabólico.
+
+### 17.4 Folato: causas e armadilhas
+
+Deficiência de folato relaciona-se a alimentação inadequada, crescimento acelerado, hemólise crônica, má absorção e medicamentos antifolato. **Anticonvulsivantes, metotrexato e outros agentes** podem interferir, mas suspensões e resgates com ácido folínico dependem do tratamento e protocolo específico. Criança com B12 adequada e deficiência de folato documentada pode ser tratada com reposição oral apropriada, com investigação da causa. Antes da medicação, sempre esclarecer se há deficiência combinada.
+
+## 18. Pancitopenia e medula óssea: sinais de alerta para leucemia ou aplasia
+
+### 18.1 Por que anemia pode ser só a primeira pista
+
+A medula normal produz hemácias, leucócitos e plaquetas. Quando há supressão por vírus, tóxicos, medicamentos, imunidade, infiltração tumoral ou falência medular hereditária, pode surgir **bicitopenia/pancitopenia** e reticulócitos baixos. Criança com palidez + febre persistente + equimoses e dor óssea requer revisão das três séries, esfregaço e exame físico completo. **Leucemia aguda** pode se manifestar inicialmente com anemia e trombocitopenia, com contagem total de leucócitos normal, baixa ou alta; ausência de leucocitose não exclui.
+
+### 18.2 Pistas de doença medular
+
+Dor óssea noturna ou persistente, claudicação, febre, perda de peso, linfonodomegalias, hepatoesplenomegalia, equimoses/petéquias, infecções recorrentes, reticulócitos muito baixos ou blastos são sinais importantes. Na **anemia aplástica**, a medula apresenta hipocelularidade e pode haver pancitopenia com ausência de organomegalias significativas; hipóteses hereditárias como anemia de Fanconi podem acompanhar alterações congênitas, baixa estatura, manchas cutâneas, disfunção renal e maior risco de câncer. A apresentação não precisa conter todos os achados.
+
+### 18.3 Como investigar sem causar atraso ou dano
+
+Hemograma repetido quando necessário, esfregaço avaliado por equipe experiente, reticulócitos, função hepática/renal e avaliação de infecção compõem exames iniciais. A indicação de aspirado e biópsia de medula é da equipe de hematologia quando existem citopenias graves, blastos, suspeita de falência ou infiltração. **Corticoterapia empírica antes de esclarecer suspeita de leucemia** pode alterar achados, interferir em diagnóstico e tratamento; estabilizar a criança e envolver hematopediatria precocemente. Neutropenia febril ou sangramento com plaquetopenia grave são urgências independentes da Hb.
+
+### 18.4 Eritroblastopenia transitória da infância
+
+A chamada **transient erythroblastopenia of childhood (TEC)** costuma afetar crianças pequenas após supressão adquirida da série vermelha, muitas vezes pós-viral. Predomina anemia normocítica com **reticulócitos muito baixos**, enquanto leucócitos e plaquetas podem permanecer preservados. O curso é frequentemente autolimitado, mas o diagnóstico exige excluir leucemia, aplasia constitucional, infecção por parvovírus em contexto especial e anemia de Diamond–Blackfan, especialmente em lactentes menores com características sindrômicas.
+
+### 18.5 Anemia de Diamond–Blackfan e falências congênitas
+
+A anemia de Diamond–Blackfan é uma aplasia pura de série vermelha, frequentemente reconhecida no primeiro ano, com macrocitose, reticulocitopenia e variantes genéticas relacionadas a ribossomopatias, podendo associar malformações craniofaciais, de polegar ou cardíacas. O diagnóstico combina idade, características hematológicas, pesquisa molecular quando disponível e exclusão de outras causas; a terapêutica é especializada (corticoide em idade apropriada, transfusões e eventualmente transplante). Não confundir anemia fisiológica de lactente com anemia congênita persistentemente grave.
+
+## 19. Anemia microangiopática: quando aparecem esquizócitos
+
+### 19.1 Hemólise + plaquetopenia + lesão de órgão
+
+As microangiopatias trombóticas provocam lesão de pequenos vasos e **fragmentação mecânica de hemácias**, formando esquizócitos. A combinação de anemia hemolítica, LDH alto, plaquetopenia e injúria renal aguda exige avaliação imediata, sobretudo na suspeita de **síndrome hemolítico-urêmica (SHU)**. História de diarreia, frequentemente sanguinolenta, com evolução posterior de palidez, oligúria e petéquias orienta SHU associada a toxina Shiga; ausência de diarreia não exclui formas mediadas por complemento ou causas secundárias.
+
+### 19.2 Evitar diagnóstico baseado em um único exame
+
+Coombs direto é tipicamente negativo na hemólise mecânica, mas um resultado isolado não diferencia todas as microangiopatias. Investigar função renal, eletrólitos, hemograma seriado, coagulograma, contexto infeccioso, fezes/testes conforme indicação e complemento em situações selecionadas. **PTT** é mais rara em crianças, mas é emergência hematológica cuja suspeita demanda avaliação urgente e terapias específicas. SHU atípica mediada por complemento pode necessitar bloqueio do complemento conforme confirmação/suspeita e centro especializado.
+
+### 19.3 Manejo da forma associada a toxina Shiga
+
+A prioridade é suporte hídrico/eletrolítico cuidadoso, monitorização renal, pressão e complicações neurológicas, com terapia renal substitutiva e transfusões quando clinicamente necessárias. **Antibióticos e antidiarreicos não devem ser prescritos de rotina indiscriminadamente para diarreia suspeita de STEC**, porque podem ser inadequados; decisões dependem de patógeno e contexto. A criança com oligúria e hipercalemia precisa de cuidado hospitalar urgente, não observação domiciliar apenas por estar afebril.
+
+## 20. Intoxicação por chumbo e causas raras de microcitose
+
+Exposição ambiental a chumbo (tintas antigas, poeira, cerâmicas, atividades ocupacionais familiares, certos remédios/objetos não regulamentados) pode afetar síntese de heme e desenvolvimento neurológico. Quadro inclui dor abdominal, alteração cognitiva/comportamental e anemia microcítica ou normocítica; pontilhado basófilo em esfregaço é pista, não confirmação. A dosagem sanguínea de chumbo e investigação ambiental seguem protocolos de vigilância e toxicologia. Não tratar como ferropriva isolada sem interromper exposição.
+
+**Anemia sideroblástica** compreende doenças adquiridas ou congênitas com utilização inadequada de ferro na síntese de heme e sideroblastos em anel na medula em cenários específicos; alguns casos relacionam-se a variantes genéticas, intoxicações, deficiência de cobre ou medicamentos. É menos frequente que ferropenia. **Anemia ferro-refratária por deficiência de ferro (IRIDA)** pode resultar de variantes em TMPRSS6 com hepcidina inapropriadamente elevada, causando microcitose desde cedo e resposta limitada ao ferro oral. É uma possibilidade após excluir erro de dose, adesão, perda e doença inflamatória; não iniciar painéis genéticos em toda microcitose.
+
+## 21. Anemia por hemorragia: o tempo muda o hemograma
+
+### 21.1 Perda aguda não exige microcitose imediata
+
+No sangramento agudo significativo, Hb e hematócrito podem inicialmente parecer pouco alterados porque sangue total é perdido antes da redistribuição de fluidos. A criança pode ter taquicardia, enchimento capilar lento e choque com Hb inicial próximo do basal; a redução de Hb pode tornar-se mais evidente após reposição hídrica. **O diagnóstico da hemorragia aguda é clínico e contextual; não esperar Hb despencar para controlar sangramento.**
+
+Causas incluem trauma, hemorragia digestiva, complicações cirúrgicas e ginecológicas em adolescentes, epistaxe volumosa ou sangramento por coagulopatia. Reanimação, controle da fonte, acesso venoso, compatibilização e eventual transfusão seguem protocolos pediátricos de urgência. Comparar sinais circulatórios, não apenas índices hematimétricos.
+
+### 21.2 Perda crônica pode manifestar-se como ferropenia
+
+Pequenas perdas repetidas em trato gastrointestinal, menorragia, parasitoses e doenças inflamatórias podem depletar reservas lentamente, levando a ferritina baixa e microcitose. Em criança com ferropenia persistente apesar de dieta adequada, pesquisar origem da perda em vez de repetir ferro indefinidamente. Em adolescente com fluxo menstrual intenso desde menarca, investigar também doença de von Willebrand e outras causas de sangramento, além de questões obstétricas quando pertinentes e com confidencialidade apropriada.
+
+## 22. Transfusão de concentrado de hemácias na infância: princípios e riscos
+
+### 22.1 Indicar por condição clínica, não apenas por uma régua
+
+A decisão transfusional considera Hb, rapidez de queda, instabilidade hemodinâmica, hemorragia ativa, oxigenação, cardiopatia, doença pulmonar, hemólise, doença falciforme, intervenção planejada e resposta às medidas iniciais. Em criança estável e crítica há evidência para estratégias restritivas em contextos específicos; **não aplicar um corte genérico de Hb 7 g/dL como regra universal para neonatos, hemoglobinopatias, choque hemorrágico ou hipoxemia grave**. Os valores do quadro OMS classificam anemia, mas não são limiares transfusionais.
+
+Em hemorragia maciça, priorizar protocolo de reanimação e hemocomponentes apropriados com monitorização de cálcio, temperatura e coagulopatia. Em anemia crônica compensada, transfundir em excesso ou rapidamente pode produzir sobrecarga circulatória. A meta é restaurar oferta de oxigênio com riscos aceitáveis, tratar causa de base e prevenir recorrência.
+
+### 22.2 Segurança pré-transfusional
+
+Confirmar identidade, tipagem ABO/Rh, testes de compatibilidade, histórico de reações/aloanticorpos, necessidade de componentes especiais (leucorreduzidos, irradiados, lavados e/ou fenotipados) conforme patologia e protocolo, além de consentimento quando aplicável. Leucorredução reduz risco de reação febril não hemolítica e aloimunização, mas não substitui indicação individual de irradiação (prevenção de doença do enxerto contra hospedeiro associada à transfusão). Hemácias lavadas são reservadas a determinadas reações alérgicas graves e outras indicações, não para toda criança com alergia comum.
+
+Em hemoglobinopatias com transfusões repetidas, **aloimunização** é preocupação central. O programa de hemoterapia pode selecionar hemácias fenotipadas/compatibilizadas de forma ampliada para reduzir risco. A decisão de transfusão de troca versus simples na doença falciforme é especializada porque Hb elevada demais pode aumentar viscosidade; o objetivo frequentemente envolve redução da fração de HbS, além de corrigir anemia.
+
+### 22.3 Reconhecendo reação transfusional
+
+Febre, calafrios, urticária, dispneia, dor lombar, hipotensão, colúria ou piora respiratória durante transfusão exigem **interromper imediatamente a transfusão**, manter acesso venoso com solução apropriada, verificar identificação/compatibilidade e acionar hemoterapia e suporte clínico. Avaliar hemólise, contaminação bacteriana, anafilaxia, TRALI, TACO e outras reações segundo sinais. Não reiniciar a bolsa por decisão informal após reação potencialmente grave. Documentação e notificação ao serviço de hemovigilância integram cuidado de qualidade.
+
+## 23. Quando encaminhar, internar e agir imediatamente
+
+### 23.1 Estabilidade hemodinâmica e red flags
+
+Encaminhar à urgência quando há alteração de consciência, choque, síncope com hipotensão, dispneia em repouso, insuficiência cardíaca, hemorragia ativa importante, hemoglobinúria aguda, febre em paciente com doença falciforme ou imunossupressão, quadro neurológico agudo, anemia com pancitopenia/plaquetopenia importante, suspeita de microangiopatia ou esplenomegalia aguda sintomática. O risco não se resume ao número de Hb.
+
+Avaliação eletiva por hematopediatria é indicada em anemia não explicada, ausência de resposta apropriada a tratamento confirmado, reticulocitopenia persistente, hemoglobinopatia, doença de membrana eritrocitária, hemólise crônica ou alterações múltiplas de séries. O prazo de encaminhamento depende da gravidade e do contexto, e a criança pode precisar internação enquanto aguarda confirmação.
+
+### 23.2 Quem pode ser acompanhado na APS
+
+Lactente com ferropenia leve/compensada, alimentação de risco identificada e exames coerentes pode receber tratamento com ferro e orientações nutricionais, com reavaliação programada de Hb e ferritina conforme SBP 2026. A APS pode coordenar prevenção, imunização, triagem e retorno, reconhecer falhas de adesão e acompanhar crescimento. O diagnóstico precisa ser revisado se houver piora, Hb não subir ou sinais novos. Em hemoglobinopatias, a APS compartilha cuidado com hemocentro e orienta família sobre sinais de emergência.
+
+## 24. Faixas etárias e situações específicas
+
+**Neonato:** pensar em isoimunização ABO/Rh, hemorragia fetomaterna, infecções congênitas, esferocitose, G6PD, anemia da prematuridade, além de anemia fisiológica. Solicitar grupo sanguíneo materno/neonatal e Coombs quando indicados, bilirrubina e reticulócitos; risco de hiperbilirrubinemia/kernicterus torna a avaliação urgente em certos cenários. **Lactente de 6–24 meses:** ferropenia é prevalente, mas B12 e hemoglobinopatias também importam. **Pré-escolar/escolar:** doenças de membrana, talassemia, infecções, inflamação e patologia medular merecem atenção segundo achados. **Adolescente:** crescimento puberal, menarca com sangramento intenso, dieta restritiva, DII/doença celíaca e causas hereditárias coexistem.
+
+**Prematuros:** a anemia da prematuridade envolve reservas inferiores, flebotomias e resposta de EPO reduzida. O programa preventivo de ferro deve ponderar peso e transfusões recebidas; avaliar desenvolvimento e necessidade de suporte nutricional. **Criança com insuficiência renal:** distinguir deficiência de ferro, inflamação e falta de EPO. **Criança com câncer/quimioterapia:** citopenias por mielotoxicidade, hemorragia e inflamação podem coexistir; transfusões e profilaxias são individualizadas conforme protocolo de oncologia pediátrica.
+
+## 25. Quadro de integração — padrão laboratorial e próximos passos
+
+| Hemograma/achado central | Prioridade diagnóstica | Próxima ação justificável |
+| --- | --- | --- |
+| Lactente microcítico, RDW alto, ferritina baixa | Deficiência de ferro | Tratar ferro elementar na dose terapêutica, alimentação e retorno |
+| Microcitose intensa, hemácias relativamente numerosas, ferritina normal | Talassemia/hemoglobinopatia | HPLC/eletroforese e história familiar; evitar ferro desnecessário |
+| Hb baixa, reticulócitos altos, BT indireta/LDH elevados, TAD negativo | Hemólise não imune | Esferocitose, G6PD, hemoglobinopatias, microangiopatia |
+| Hemólise, esferócitos, TAD positivo | AHAI provável | Confirmar hemólise, gravidade e causas; avaliação hematológica |
+| Hemólise + plaquetas baixas + lesão renal | Microangiopatia/SHU | Avaliação hospitalar urgente, eletrólitos e suporte |
+| Hemoglobina despenca com reticulócitos baixos em falciforme | Crise aplástica / parvovírus | Avaliação urgente e suporte |
+| Anemia + pancitopenia + blastos/dor óssea | Leucemia/infiltração/aplasia | Urgência hematopediátrica |
+| Macrocitose, hipersegmentação e alteração neurológica | B12 ou folato | Investigação e reposição dirigida; não omitir B12 |
+| Criança com DRC e baixa resposta reticulocitária | Falta de EPO/ferro funcional | Avaliar ferro e gravidade renal com nefrologia |
+| Hb cair após transfusão com piora de icterícia | Reação hemolítica tardia | Hemoterapia/hematologia urgente; avaliar hiper-hemólise |
+
+## 26. Prognóstico, saúde pública e acompanhamento longitudinal
+
+Na ferropenia, o prognóstico hematológico costuma ser bom quando há correção da causa e reposição adequada, mas desenvolvimento neurocognitivo e comportamento merecem acompanhamento porque deficiência prolongada em período crítico pode deixar efeitos persistentes. Isso reforça abordagem preventiva com alimentação, profilaxia quando indicada e redução de vulnerabilidade social. A melhora de Hb não garante reposição integral das reservas; acompanhar ferritina e tolerabilidade conforme esquema.
+
+Nas doenças hemolíticas hereditárias, o prognóstico depende de genótipo, gravidade, qualidade do seguimento, prevenção de infecções, acesso a hidroxiureia, rastreamento vascular e manejo de transfusões. Em talassemia dependente de transfusão, o controle de sobrecarga férrica e acompanhamento cardíaco/endócrino são essenciais. Em aplasias e doenças medulares, diagnóstico e encaminhamento precoces podem determinar desfecho. Criança com anemia de etiologia não esclarecida não deve ficar indefinidamente no ciclo “toma ferro e volta” sem raciocínio diagnóstico.
+
+### Plano de seguimento orientado por doença
+
+| Condição | O que acompanhar | Sinal de falha ou gravidade |
+| --- | --- | --- |
+| Ferropriva | Hb após 30–45 dias, alimentação, dose, ferritina/estoques | Hb sem resposta, novos sintomas, perda sanguínea |
+| Traço talassêmico | Orientação familiar, diagnóstico, ferro se deficiência coexistente | Anemia desproporcional ou alteração de crescimento |
+| Talassemia grave | Transfusões, sobrecarga de ferro, crescimento, função cardíaca/hepática | Sobrecarga, arritmia, falha de crescimento |
+| Doença falciforme | Crescimento, infecções, função orgânica, Doppler transcraniano, HU | Febre, dor torácica, hipóxia, AVC, sequestro |
+| Esferocitose/G6PD | Crises hemolíticas, icterícia, anemia, desencadeantes | Hemólise súbita, colúria, choque |
+| AHAI | Hb, reticulócitos, hemólise, toxicidade terapêutica | Instabilidade, queda acelerada ou recaída |
+| DRC/inflamação | TFG, Hb/reticulócitos, ferro, controle de doença | Anemia persistente apesar de correção de fatores |
+| Aplasia/TEC | Reticulócitos, hemograma seriado, evolução clínica | Pancitopenia, sintomas sistêmicos ou ausência de recuperação |
+
+## 27. Pérolas de prova com interpretação, não memorização cega
+
+1. **OMS 2024**: Hb <10,5 g/dL entre 6–23 meses; Hb <11 g/dL entre 24–59 meses. O número muda conforme a idade.
+2. **SBP 2026**: lactente termo saudável pode receber profilaxia 10–12,5 mg/dia em dois ciclos; anemia ferropriva diagnosticada recebe **tratamento**, não profilaxia.
+3. A anemia ferropriva pode ser **normocítica no começo**; VCM normal não exclui ferropenia.
+4. **Ferritina sobe na inflamação**: “normal” em criança com PCR alta não elimina deficiência combinada.
+5. **Reticulócitos percentuais enganam** quando Hb baixa; avaliar resposta absoluta/corrigida.
+6. Microcitose intensa com hemácias preservadas e ferritina normal favorece talassemia, mas não prova isoladamente.
+7. HbF domina no recém-nascido: interpretar teste do pezinho considerando idade e transfusões.
+8. Na **crise aplástica**, reticulócitos caem; no **sequestro esplênico**, em geral se elevam e o baço aumenta agudamente.
+9. **Falciforme com febre** merece atendimento rápido, mesmo se parece bem.
+10. **Esferócito não é sinônimo de esferocitose**: AHAI também forma esferócitos e requer TAD/contexto.
+11. Ensaio de G6PD pode ser falsamente normal durante crise hemolítica.
+12. Deficiência de B12 pode causar sintomas neurológicos importantes mesmo sem VCM extremamente alto.
+13. **Esquizócitos + plaquetopenia + lesão renal** sinalizam possível SHU/microangiopatia, uma urgência.
+14. **Transfusão não é mero reflexo do valor de Hb**; estabilidade, trajetória e causa são decisivos.
+15. AHAI com TAD positivo precisa de **evidência de hemólise**; positividade isolada não fecha doença.
+16. Criança com pancitopenia e dor óssea não deve ser rotulada automaticamente como ferropriva.
