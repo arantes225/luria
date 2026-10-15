@@ -485,6 +485,56 @@ C. Vitamina C/tiamina são terapia comprovada universal para sepse.
 D. SSC 2026 sugere não usar hidrocortisona rotineira após estabilização; insuficiência adrenal conhecida/suspeita é situação específica.
 **Gabarito D.** Corticoide não é padrão em todo choque; **A** generaliza, **B** atrasa tratamento quando insuficiência adrenal real é suspeita e **C** atribui benefício universal sem evidência. **Conceito:** intervenções adjuvantes devem ter indicação e evidência própria.
 
+
+### Questão 9 — Phoenix e limite de uso
+Qual afirmação representa adequadamente os critérios Phoenix 2024?
+A. Foram criados para permitir que antibiótico só seja administrado quando escore ≥2.  
+B. Descrevem infecção com disfunção orgânica nos domínios respiratório, cardiovascular, coagulação e neurológico; não substituem reconhecimento precoce.  
+C. SOFA adulto é idêntico ao Phoenix.  
+D. Toda febre com taquicardia alcança dois pontos.
+**Gabarito: B.** A definição de consenso visa estratificar disfunção. **A:** a conduta não pode esperar pontuação. **C:** adultos/crianças usam sistemas diferentes. **D:** febre e FC não pontuam automaticamente como sepsis score. **Minirrevisão:** classificação prognóstica ≠ triagem da deterioração iminente.
+
+### Questão 10 — lactato normal em criança grave
+Menina febril com perfusão ruim, TEC 6 s, sonolência, oligúria e lactato 1,6 mmol/L. Qual conduta conceitual?
+A. Reavaliar perfusão e manejar possível choque sem descartá-lo pelo lactato.  
+B. Dar alta porque não há hiperlactatemia.  
+C. Solicitar somente PCT para definir se existe choque.  
+D. Esperar hipotensão profunda antes de chamar equipe.
+**Gabarito: A.** Choque pode estar compensado. **B:** teste não tem sensibilidade perfeita. **C:** PCT não é definidora de choque. **D:** atraso arriscado. **Minirrevisão:** resposta clínica e perfusão guiam urgência.
+
+### Questão 11 — fluidos sem UTI
+Criança com sepse provável, sem hipotensão, é atendida em sistema sem leito intensivo disponível. De acordo com SSC pediátrica 2026, qual princípio?
+A. Dar 60 mL/kg compulsoriamente.  
+B. Aplicar pacote adulto de 30 mL/kg e PAM ≥65.  
+C. Não administrar bolus de rotina e iniciar manutenção/monitorização/transferência conforme quadro.  
+D. Suspender antibiótico mesmo se choque aparecer.
+**Gabarito: C.** Diretriz recomenda contra bolus sem hipotensão no sistema sem UTI. **A/B:** extrapolam. **D:** antimicrobiano tem indicação pela síndrome/risco. **Minirrevisão:** recursos locais alteram segurança da expansão volêmica.
+
+### Questão 12 — bolus não é volume obrigatório
+Em hospital com UTI, criança recebe bolus inicial por choque e melhora perfusão, mas desenvolve crepitações e piora da saturação. Melhor conclusão:
+A. Continuar até 60 mL/kg por ser obrigatório.  
+B. Interromper bolus automático, reavaliar sobrecarga/coração e suporte necessário.  
+C. Não examinar pulmão até estabilizar pressão.  
+D. Interpretar crepitações como prova de pneumonia bacteriana.
+**Gabarito: B.** Nova intolerância muda intervenção. **A:** diretriz define máximo condicional. **C:** pulmão é janela de segurança. **D:** congestão pode explicar achado. **Minirrevisão:** repetir avaliação após cada etapa.
+
+### Questão 13 — primeiro vasoativo
+Qual alternativa corresponde à posição SSC pediátrica 2026 sobre iniciar vasoativo no choque séptico?
+A. Norepinefrina é mandatória em toda criança.  
+B. Só pode iniciar após exatamente 40 mL/kg.  
+C. Deve esperar obrigatoriamente acesso central, mesmo que isso atrase.  
+D. Não há evidência suficiente para universalizar epinefrina versus norepinefrina ou um ponto fixo de fluidos; acesso periférico monitorado pode evitar atraso.
+**Gabarito: D.** A diretriz conserva incertezas e sugere acesso periférico apropriado. **A/B/C:** introduzem dogmas não sustentados. **Minirrevisão:** evidência, resposta hemodinâmica e segurança de infusão orientam decisão.
+
+### Questão 14 — suporte pós-sepse
+Criança teve alta após sepse grave e apresenta fraqueza, dificuldades escolares e distúrbios do sono. Melhor conduta:
+A. Avaliar sequelas funcionais, orientar família e individualizar reabilitação/seguimento.  
+B. Afirmar cura integral porque culturas negativaram.  
+C. Dar antibiótico indefinido para tratar fadiga.  
+D. Ignorar função cognitiva e emocional.
+**Gabarito: A.** SSC 2026 valoriza recuperação e morbidade pós-sepse. **B:** ausência de bacteremia não mede função. **C:** sem indicação. **D:** desfechos relevantes. **Minirrevisão:** sobrevivência ≠ recuperação.
+
+
 ## 13. Pérolas LURIA e prevenção de erros
 
 1. Criança hipoperfundida com PA “normal” pode estar em choque; **hipotensão não é requisito de entrada na ressuscitação**.
@@ -542,3 +592,32 @@ D. SSC 2026 sugere não usar hidrocortisona rotineira após estabilização; ins
 - [ ] Imagens reais confiáveis/licenciadas e teste visual desktop/PWA.
 
 **Estado:** rascunho científico original, com diretriz pediátrica de março/2026; NÃO PUBLICADO E NÃO CERTIFICADO.
+
+
+## 15A. Fontes e verificação de outubro/2026
+
+**Benchmark reaberto nesta rodada, antes de editar:** "Sepse neonatal.pdf" (2.032 caracteres extraídos); "01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf" (14.974); "01 - CHOQUE - ABORDAGEM INICIAL.pdf" (7.986); "02 - CHOQUE - TIPOS DE CHOQUE.pdf" (12.229). Nenhum demonstrou autoria Estratégia MED. Os documentos sobre choque trazem **SOFA, PAM ≥65 e bolus de 30 mL/kg para adultos**: foram **explicitamente excluídos do tratamento pediátrico**, preservando apenas conceitos gerais com verificação externa. Os PDFs sobre sepse neonatal e sedação não representam benchmark completo do tema pediátrico.
+
+**Fontes atuais conferidas:**  
+- Weiss SL, Peters MJ, Oczkowski SJ et al. *Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026*. *Intensive Care Medicine* 2026;52:937–983. Publicação 23/03/2026. https://link.springer.com/article/10.1007/s00134-026-08360-2  
+- Society of Critical Care Medicine (SCCM). *Recommendations — Pediatric Sepsis Campaign 2026*, com força e certeza por intervenção. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in  
+- Schlapbach LJ et al. *International Consensus Criteria for Pediatric Sepsis and Septic Shock*. *JAMA*. 2024;331(8):665–674. DOI 10.1001/jama.2024.0179. https://pubmed.ncbi.nlm.nih.gov/38245889/
+
+## 16A. Matriz de cobertura — testar conteúdo sem consulta obrigatória a outra aula
+
+| Competência | Explicação na aula | Caso | Questão |
+|---|---|---|---|
+| Distinguir Phoenix de triagem | §§2, 2.1–2.2 | 5 | 1, 9 |
+| Identificar choque compensado | §§3–4.2 | 1, 5 | 2, 10 |
+| Interpretar lactato/biomarcadores | §§5.1, 5.5–5.8 | 5, 8 | 10 |
+| Decidir estratégia conforme presença de UTI | §§6.2, 6.6 | 2, 7 | 4, 11 |
+| Reavaliar fluidotolerância | §§6.3, 6.7 | 4, 6 | 5, 12 |
+| Conhecer incertezas de vasoativos | §§6.4, 6.8 | 4, 6 | 6, 13 |
+| Procurar e controlar foco | §7 | 3 | 7 |
+| Reconhecer causas não sépticas de choque | §9 | 8 | 10 |
+| Suporte, balanço e sequelas | §§8, 8.1–8.4 | 9 | 14 |
+| Corticoide e terapias adjuntas | §§6.5, 6.10 | 4 | 8 |
+
+**Pendências reais:** revisar dosagens, concentrações, via de acesso, apresentações e máximos por idade/peso com protocolos brasileiros pediátricos; validar alvos de oxigênio/ventilação com especialista e população específica; fontes para dengue grave e neonatologia; figuras/imagens clínicas devidamente licenciadas e revisão independente. Esta matriz é verificação textual interna, não teste externo de autossuficiência ou certificação.
+
+**Estado: RASCUNHO AVANÇADO, NÃO CERTIFICADO/NÃO PUBLICADO.**
