@@ -14,7 +14,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 254 | Saúde mental do adolescente: avaliação e manejo inicial | 68.216 | 31 | Sim | Sim | Rascunho parcial |
 | 255 | Longitudinalidade, coordenação do cuidado e matriciamento | 27.233 | 20 | Sim | Sim | Rascunho parcial |
 | 256 | Reabilitação comunitária e cuidado de pessoas com deficiência | 31.523 | 19 | Sim | Sim | Rascunho parcial |
-| 257 | Planejamento, avaliação e gestão de serviços de saúde | 32.298 | 19 | Rever | Sim | Rascunho parcial |
+| 257 | Planejamento, avaliação e gestão de serviços de saúde | 32.298 | 19 | Sim | Sim | Rascunho parcial |
 | 258 | Avaliação de tecnologias em saúde e custo-efetividade | 31.258 | 20 | Sim | Sim | Rascunho parcial |
 | 259 | Sistemas de Informação em Saúde e qualidade dos dados | 30.563 | 16 | Sim | Sim | Rascunho parcial |
 | 260 | Biossegurança e prevenção de infecções relacionadas à assistência | 34.278 | 21 | Sim | Sim | Rascunho parcial |
