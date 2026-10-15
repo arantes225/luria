@@ -142,6 +142,83 @@ Prevenção inclui vacinação conforme PNI/CRIE e profilaxia antibiótica em fa
 
 **Hiper-hemólise pós-transfusional:** queda paradoxal de Hb após transfusão, às vezes abaixo do nível prévio, pode ser grave; acionar hematologia/transfusão. Transfusões adicionais podem agravar em alguns casos e exigem avaliação especializada de risco e manejo.
 
+
+### 3.7 Algoritmo de triagem de urgência no pronto-socorro
+Toda pessoa com doença falciforme que chega ao pronto-socorro merece acolhimento com reconhecimento de suas **referências basais**: hemoglobina habitual, saturação habitual, fenótipo, história de síndrome torácica aguda ou AVC, transfusões anteriores, aloanticorpos, medicação modificadora de doença e plano analgésico previamente eficaz. A equipe não deve presumir que toda dor se deve a crise vaso-oclusiva nem que paciente pouco expressivo está sem dor.
+
+**Passo 1 — ABCDE e sinais de risco:** rebaixamento de consciência, convulsão, déficit focal, instabilidade hemodinâmica, hipoxemia, dispneia, febre, hipotensão, sinais de choque, priapismo persistente, dor abdominal intensa com esplenomegalia nova, anemia aguda muito sintomática. Abrir protocolos correspondentes imediatamente.
+
+**Passo 2 — dor e sintomas de foco:** caracterizar local, intensidade e mudança em relação a crises anteriores; febre, tosse, dessaturação, dor torácica, trauma, dor articular focal com febre e sinais neurológicos mudam investigação. Uma pessoa pode ter crise dolorosa **e** síndrome torácica, sepse, osteomielite ou evento tromboembólico simultaneamente.
+
+**Passo 3 — exame e testes dirigidos:** oximetria, sinais vitais seriados e avaliação de perfusão. Hemograma com reticulócitos e comparação da Hb basal são fundamentais se suspeita de anemia aguda ou gravidade. Culturas antes de antimicrobiano quando possível e sem atrasar tratamento de sepse, avaliação renal, bilirrubinas, radiografia de tórax quando sintomas respiratórios/hipoxemia, exames neurológicos e imagem cerebral em déficit focal.
+
+**Passo 4 — suporte com segurança:** analgesia precoce em dor importante, hidratação visando euvolemia e oxigênio se hipoxemia. **Não hiper-hidratar**, nem usar transfusão como reflexo para toda dor. Antibiótico empírico e suporte intensivo quando suspeita de infecção invasiva/STA. Acionar hematologia/hemoterapia cedo em eventos graves.
+
+**Passo 5 — decidir destino:** alta apenas se dor e condições de hidratação controladas, sem complicação grave, estabilidade e possibilidade real de reavaliação. Internar para hipoxemia/STA, febre com risco elevado, anemia sintomática importante, comprometimento neurológico, dor refratária, choque ou impossibilidade de cuidado seguro domiciliar.
+
+### 3.8 Analgesia em crise vaso-oclusiva: assistência digna e técnica
+A dor vaso-oclusiva é frequentemente intensa e a avaliação precisa tratar a experiência relatada pelo paciente como dado clínico legítimo. O histórico de opioides utilizados em internações prévias não é, por si, evidência de simulação. Protocolo de analgesia padronizado reduz atrasos e variabilidade. A ASH 2020 recomenda avaliação e primeira analgesia rapidamente — **até uma hora após chegada** ao serviço — com reavaliação a cada 30–60 minutos, ajustando tratamento à resposta e ao histórico de uso prévio.
+
+O esquema pode combinar analgésico não opioide, anti-inflamatório quando função renal/risco hemorrágico permitirem, opioide titulado em dor importante, medidas de conforto e eventual analgesia controlada pelo paciente em cenários apropriados. A escolha exata de fármaco, via e dose depende de idade, comorbidades, sedação prévia e protocolos institucionais. Após opioide, monitorar sedação, frequência respiratória e oxigenação; tanto hipoventilação quanto dor não controlada podem predispor a complicações torácicas.
+
+**Não é necessário soro em alto volume** se o paciente consegue ingestão oral e não está desidratado. Desidratação deve ser corrigida cuidadosamente; expansão excessiva pode contribuir para edema pulmonar ou piora da oxigenação. Não indicar oxigênio de rotina na ausência de hipoxemia, porque não é tratamento de vaso-oclusão por si.
+
+Exigir “prova laboratorial” de crise dolorosa antes da primeira analgesia é erro: marcadores não possuem sensibilidade específica para a presença de dor. Exames dirigidos são fundamentais se houver sinais de complicação ou apresentação diferente do habitual, mas não devem atrasar analgesia.
+
+### 3.9 Síndrome torácica aguda: algoritmo de progressão
+A síndrome torácica aguda exige **novo infiltrado pulmonar**, associado a sintoma(s) como febre, tosse, dor torácica, taquipneia ou hipoxemia, segundo definições utilizadas. Nem toda dor torácica em HbSS é síndrome torácica; inversamente, ausência de infiltrado na primeira radiografia **não exclui evolução nas horas seguintes** se a clínica piorar. Investigar, tratar e repetir avaliação conforme necessidade.
+
+**Mecanismos que podem coexistir:** infecção bacteriana/viral, atelectasia por dor e hipoventilação, microoclusão e embolia gordurosa após infarto medular. Por isso, tratamento é multimodal e geralmente hospitalar: monitorização, antimicrobiano empírico com cobertura adequada a cenário clínico e protocolo local (incluindo germes típicos/atípicos), oxigênio se necessário, analgesia que preserve ventilação, medidas de expansão pulmonar, manejo de volume e discussão transfusional.
+
+**Progressão para gravidade:** queda sustentada da saturação em relação ao basal, necessidade crescente de oxigênio, taquipneia acentuada, trabalho respiratório, comprometimento multilobar, deterioração rápida e instabilidade hemodinâmica justificam ambiente de maior vigilância e consideração precoce de troca eritrocitária. Em apresentação grave, a diretriz ASH 2020 de transfusão favorece **red cell exchange**; em quadro moderado, transfusão simples pode ser adequada quando há anemia relevante e margem de segurança para Hb final, sem transformar um número isolado em regra universal.
+
+**Antivirais:** considerar influenza e outras infecções de acordo com epidemiologia, testes e suspeita clínica; **não prescrever oseltamivir em todos os episódios sem contexto**. Broncodilatador é indicado principalmente quando houver broncoespasmo ou doença obstrutiva coexistente, não automaticamente para todo paciente. O balanço entre analgesia e sedação é decisivo.
+
+### 3.10 Febre e infecção invasiva: por que o limiar de alerta é baixo
+A autoesplenectomia funcional em HbSS pode desenvolver-se cedo e compromete depuração de pneumococos e outros encapsulados. A vacinação, profilaxia com penicilina quando prevista e educação familiar reduziram eventos, mas **não eliminam risco**. Febre — particularmente associada a prostração, taquicardia desproporcional, hipotensão, alteração neurológica ou sintomas respiratórios — demanda avaliação urgente.
+
+A primeira conduta é classificar gravidade, obter acesso venoso se necessário, colher hemocultura e outros exames indicados sem atrasar antimicrobiano, e **iniciar antibioticoterapia parenteral oportunamente conforme protocolo**, com cobertura para patógenos importantes. O perfil local de resistência, idade e alergias modificam escolha. Radiografia de tórax é dirigida por suspeita respiratória; não é obrigatório realizar radiografia sem sintomas em toda febre. Punção lombar só se houver indicação clínica e condições seguras, jamais como rotina indiscriminada.
+
+Decisão sobre alta após primeira dose não se baseia apenas em bom estado geral momentâneo: observar histórico de bacteremia, capacidade de retorno, idade, vacina/profilaxia, achados de exames e risco social. Critérios para manejo ambulatorial de baixo risco devem seguir protocolo do serviço, não a fórmula “ceftriaxona e liberação para todos”.
+
+### 3.11 Sequestro versus aplasia versus hemólise retardada
+| Evidência | Sequestro esplênico | Aplasia transitória | Reação hemolítica transfusional tardia/hiper-hemólise |
+|---|---|---|---|
+| Início | Súbito, pode haver choque | Após quadro viral, palidez/fadiga | Dias após transfusão, às vezes confundido com crise |
+| Baço | Novo aumento significativo, quando ainda há função esplênica | Aumento não é condição definidora | Variável |
+| Reticulócitos | Frequentemente elevados | **Inapropriadamente baixos** | Variáveis; podem cair |
+| Hb | Queda em relação ao basal, potencialmente profunda | Queda significativa pela supressão da produção | Pode cair até **abaixo do nível pré-transfusional** |
+| Pistas extras | Hipovolemia, plaquetopenia possível | Parvovírus B19, contato viral, reticulocitopenia | Icterícia/hemoglobinúria, LDH ascendente, HbA transfundida em queda |
+| Conduta crítica | Estabilização/transfusão cautelosa e avaliação especializada | Suporte e transfusão se anemia grave/sintomática | Hemoterapia urgente; evitar transfusão adicional quando possível em hiper-hemólise |
+ 
+O **sequestro** não ocorre apenas porque o baço é palpável há meses. A característica é mudança aguda no tamanho associada à anemia e instabilidade; pode ocorrer em crianças, em adultos com HbSC ou em outros genótipos com função esplênica preservada. Se houver reperfusão das células sequestradas após transfusão, Hb pode subir além do previsto: monitorar estreitamente.
+
+Na **aplasia**, o parvovírus B19 bloqueia temporariamente produção eritroide; como a sobrevida das hemácias falcizadas é curta, a hemoglobina pode cair rapidamente. Essa lógica explica por que a reticulocitopenia num paciente habitualmente reticulocítico tem maior valor que a Hb isolada.
+
+Na **hiper-hemólise**, transfusões adicionais podem agravar hemólise em certos pacientes. A ASH 2020 recomenda discussão hematológica/hemoterápica urgente, compatibilidade estendida e imunomodulação nos casos selecionados, observando gravidade e evidência limitada; não há protocolo simplista que possa substituir a equipe especializada.
+
+### 3.12 AVC ou AIT: conduta tempo-dependente
+Novo déficit focal, afasia, convulsão com alteração neurológica persistente, cegueira súbita ou síndrome compatível com AIT constituem emergência, **mesmo se o sintoma regredir**. Acionar simultaneamente protocolo de AVC e hematologia/hemoterapia, verificar glicemia, sinais vitais e estabilização de via aérea quando necessário. Realizar imagem cerebral urgente para classificar hemorragia/isquemia e guiar cuidados neurológicos, porém **não atrasar transfusão apropriada** esperando todos os exames de confirmação quando a suspeita é forte.
+
+A ASH 2020 recomenda terapia transfusional prontamente, idealmente em até **2 horas** de apresentação em crianças ou adultos com doença falciforme e déficit neurológico/AIT; **troca eritrocitária** é preferida à simples quando disponível de imediato. Se a troca não puder ocorrer nesse prazo e a Hb for ≤8,5 g/dL, pode ser feita transfusão simples como ponte apropriada enquanto se planeja troca, conforme avaliação hematológica. Esses números pertencem ao contexto da diretriz; não devem ser usados como única regra fora de doença falciforme/AVC.
+
+A trombólise no adulto, se cogitada, exige análise por equipe de AVC dentro dos critérios gerais, não substitui atenção à transfusão. A prevenção secundária após AVC geralmente envolve programa transfusional regular para perfis determinados, com metas especializadas. **Ressonância com infartos silenciosos** também modifica seguimento neurológico e escolar/cognitivo, mesmo sem déficit focal clínico prévio.
+
+### 3.13 Priapismo: separar evento prolongado de episódios breves
+Priapismo isquêmico é ereção dolorosa persistente não relacionada a estímulo sexual e pode produzir lesão tecidual. **Quatro horas ou mais** é limiar clássico de emergência urológica, embora dor intensa e episódios anteriores mereçam avaliação antes desse ponto. Medidas caseiras ou analgesia não substituem descompressão apropriada quando o quadro isquêmico se estabelece.
+
+Conduta em hospital inclui analgesia e urologia imediata; avaliação do tipo de priapismo, aspiração/irrigação intracavernosa e agonista alfa-adrenérgico intracavernoso sob monitorização, segundo protocolo urológico. **Não indicar troca transfusional como primeira intervenção mecânica universal para priapismo isquêmico**: transfusão pode ser considerada em circunstâncias selecionadas com hematologia, mas não deve atrasar tratamento urológico tempo-dependente. A orientação antiga de “resolver até 12 horas” **não é um prazo seguro para aguardar**.
+
+Episódios recorrentes breves (*stuttering*) merecem seguimento urológico/hematológico para prevenção e orientação, sem banalizar risco de disfunção erétil.
+
+### 3.14 Complicações ósseas e abdominais: diferenciais difíceis
+Em dor óssea focal com febre, aumento de volume ou dor muito diferente de crises prévias, considerar **osteomielite**, artrite séptica e fratura. A crise vaso-oclusiva e osteomielite podem produzir febre e reação inflamatória; hemocultura, ultrassonografia e ressonância podem ajudar, conforme contexto. Não excluir infecção exclusivamente por história de crises dolorosas.
+
+Dor em quadril/ombro crônica pode representar **osteonecrose avascular**, que exige imagem apropriada, controle da dor e avaliação ortopédica. Dor abdominal aguda pede investigação de colelitíase/colecistite, crise hepática ou colestática, pancreatite, sepse, evento vascular abdominal e causas cirúrgicas comuns. “É tudo vaso-oclusivo” é uma armadilha de atendimento.
+
+Em presença de icterícia e dor abdominal, distinguir hemólise crônica, litíase biliar por pigmento, hepatite, hepatopatia por sobrecarga de ferro e lesões hepáticas agudas. A interpretação exige transaminases, bilirrubinas fracionadas e imagem conforme suspeita, não apenas bilirrubina total.
+
+
 ## 4. Diagnóstico laboratorial e triagem neonatal
 A triagem neonatal por metodologias adequadas de identificação das hemoglobinas permite diagnóstico precoce. O recém-nascido tem predominância de **HbF**, e padrões como **FA, FAS, FS e FSC** são pistas, não tradução isolada de todos os genótipos em todas as idades. Para classificação definitiva pode ser necessária confirmação por HPLC/eletroforese e, em casos complexos, estudo genético, idealmente após interpretar idade e histórico transfusional. Uma transfusão recente pode modificar proporções encontradas na análise.
 
