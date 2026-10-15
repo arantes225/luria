@@ -52,6 +52,15 @@ A apostila `apostilas/_rascunhos/lote-03/46-asma.md` foi revisada com confronto 
 
 Relatório: `apostilas/_rascunhos/lote-03/46-VALIDACAO-EDITORIAL.md`. Continua sem imagens aprovadas, sem homologação e sem HTML/PWA testado; nenhuma publicação, merge ou deploy.
 
+
+## Aula 46 — ampliação clínica e snapshot de validação (14/10/2026)
+
+O manuscrito `_rascunhos/lote-03/46-asma.md` foi aprofundado a partir de aproximadamente 21.631 caracteres iniciais; o snapshot auditado mais recente contém **100.245 caracteres brutos**, 26 capítulos numerados, 10 casos e 14 questões completas com marcadores de gabarito. A versão pode oscilar devido a **edições concorrentes na branch** — não confiar no número como métrica imutável.
+
+Foram cotejados o **PCDT da Asma do Ministério da Saúde (Portaria Conjunta 43/2026)** e **GINA 2026**, incluindo a importante diferença entre porcentagem do basal versus previsto na resposta broncodilatadora pediátrica, terapia AIR/MART, crise, faixa de 6–11 anos e imunobiológicos com elegibilidade SUS. Benchmark de Drive reaberto para dois resumos de asma e crise (procedência institucional não verificada), sem reprodução. Padrão HTML de Assistência ao Parto consultado como modelo LURIA.
+
+Auditoria separada por segurança contra sobrescrita concorrente: `_rascunhos/lote-03/46-REGISTRO-REVISAO-20261014.md`. **Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** Ainda faltam revisão médica e posológica especializada, diagramas e imagens aprovadas, HTML, teste real PWA, auditoria humana de autossuficiência. Nenhum merge/deploy ou publicação.
+
 ## Aula 45 — aprofundamento de participação e controle social (14/10/2026)
 
 `apostilas/_rascunhos/lote-03/45-controle-social-sus.md` ampliado de **5.092 para 57.952 caracteres brutos** (cerca de **50.100 caracteres de corpo didático estimado**, antes da revisão humana). Foram elaborados **23 capítulos**, **6 casos institucionais comentados**, **10 questões de múltipla escolha com alternativas A-D justificadas**, tabelas de competências, planejamento e prestação de contas, além de exemplos de análise de PAS/RAG e cinco fluxogramas. Conferidos diretamente no GitHub todos os dez gabaritos e alternativas.
