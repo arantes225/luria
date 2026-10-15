@@ -240,3 +240,358 @@ Puerpério é estado protrombótico; febre e dor abdominal/flanco, em especial a
 
 Sepse e hipotensão podem provocar LRA, exigindo cautela especial com aminoglicosídeos, AINEs e contraste; alterações de coagulação podem coexistir com hemorragia puerperal. O manejo deve cruzar **aula 104 (HPP)** quando há sangramento e avaliação de LRA, sem presumir que “creatinina subiu só por antibiótico”. **Adaptação de dose renal deve ser verificada pelo farmacêutico clínico**, principalmente em choque com função em rápida mudança.
 
+## 13. Distinguindo infecção intra-amniótica do trabalho de parto e endometrite após parto
+
+**Infecção intra-amniótica** (termos como corioamnionite clínica ou *Triple I*, dependendo da classificação) é infecção/inflamação relacionada ao líquido, membranas e/ou placenta **antes ou durante o parto**, com critérios próprios de temperatura, sinais associados e investigação. **Endometrite pós-parto** é síndrome infecciosa uterina que se manifesta **após dequitação**. As entidades são relacionadas, mas não têm mesmo momento, espectro de evidência de tratamento e duração pós-parto.
+
+A OMS 2015 recomenda **ampicilina + gentamicina diária** como esquema simples de primeira linha para infecção intra-amniótica em contexto de recomendações condicionais e evidência de certeza muito baixa, e **clindamicina + gentamicina** para endometrite pós-parto; **não inverter os regimes como se a OMS recomendasse todo tratamento de infecção intra-amniótica como endometrite**. Em paciente que recebeu antibiótico durante parto, a necessidade e duração pós-parto depende do quadro persistente, modo de parto, complicações e protocolo institucional.
+
+### 13.1. Quando a febre intraparto continua após a dequitação
+
+Uma paciente tratada para infecção intra-amniótica pode estar afebril e estável depois, sem necessidade automática de muitos dias de terapia; outra pode permanecer febril, uterina dolorosa e com sinais de infecção de ferida ou foco retido. O plano deve reconsiderar diagnóstico, resposta, culturas e foco em vez de copiar esquema prolongado “porque houve corioamnionite”. **Choque séptico intraparto ou pós-parto demanda protocolo de sepse independente do rótulo obstétrico.**
+
+### 13.2. Bolsa rota e múltiplos toques: risco, não condenação inevitável
+
+Ruptura prolongada de membranas e manipulações repetidas aumentam possibilidade de ascensão de bactérias, mas não provam infecção em toda mulher. A assistência deve adotar higiene de mãos, técnica asséptica, reduzir intervenções desnecessárias e reconhecer febre cedo; **não administrar antibiótico em todo parto vaginal fisiológico apenas por ter ocorrido ruptura de bolsa em algum momento**, sem indicação específica.
+
+## 14. Antibióticos e lactação: farmacologia materna e segurança do bebê
+
+Decidir antimicrobiano puerperal exige avaliar efeito em **mãe** e **lactente**. Passagem ao leite varia por molécula, ligação proteica, concentração plasmática, meia-vida, biodisponibilidade oral do lactente e idade neonatal. Risco é diferente em recém-nascido prematuro, com deficiência enzimática, icterícia, doença renal ou diarreia; não declarar “todos antibióticos são seguros” nem “qualquer antibiótico exige interromper amamentação”.
+
+**Princípios:** consultar base farmacológica confiável (LactMed e bulas/protocolos brasileiros), avaliar se há alternativa eficaz e compatível, monitorar diarreia/candidíase/reações quando pertinente e explicar sinais ao cuidador. Em endometrite grave, **não atrasar antibiótico de impacto materno por medo abstrato de lactação**; a mãe estabilizada também precisa de apoio para manter oferta de leite ou extração quando separada do recém-nascido.
+
+### 14.1. Amamentação em mastite e abscesso
+
+Em muitos quadros de mastite, **continuar amamentando é possível e útil**, sem esvaziamento forçado. Se há abscesso drenado, avaliar localização do dreno e possibilidade de contato da boca do bebê com secreção purulenta/lesão, adaptar posição e orientar segundo equipe. Se medicamento ou condição exige suspensão temporária específica, documentar duração, alternativa de alimentação e manutenção da produção quando seguro; não dar ordem genérica “suspender por dez dias”.
+
+### 14.2. Gentamicina em função renal instável
+
+A função renal pós-parto pode estar alterada por HPP, pré-eclâmpsia, sepse ou doença anterior. **Aminoglicosídeos requerem revisão de dose/intervalo e, em perfis apropriados, monitorização de níveis**. Uma terapia corretamente empírica na admissão pode precisar ajuste 12–24 horas depois quando função renal muda; não usar eGFR estática do primeiro exame como verdade imutável em choque.
+
+### 14.3. Resistência antimicrobiana: não confundir profilaxia com tratamento
+
+**Cefazolina profilática** de cesariana e **tratamento empírico de endometrite estabelecida** têm espectro, objetivo e duração distintos. Profilaxia cirúrgica adequada não cobre automaticamente toda flora de infecção polimicrobiana posterior. Da mesma forma, antibiótico por infecção uterina não torna antibiótico preventivo de mastite. Reavaliar antibiótico já em uso para não duplicar classes sem ganho.
+
+## 15. Prevenção de infecção após cesariana: o que realmente tem evidência
+
+A **OMS 2021** atualizou a orientação de profilaxia antibiótica de cesariana, recomendando dose única de primeira geração de cefalosporina ou penicilina conforme protocolo/hipersensibilidade e administração **30–60 minutos antes da incisão de pele**, em vez de esperar clampeamento do cordão. Em pacientes com obesidade importante, procedimento prolongado ou grande sangramento, protocolos podem incluir ajuste de dose/redose conforme farmacocinética e instituição; não traduzir isso como “dar duas doses iguais em toda cesárea”.
+
+**Prevenção completa:** higiene de mãos, técnica estéril, preparo adequado da pele e, quando indicado, antissepsia vaginal antes de cesariana segundo atualização OMS, controle de glicemia e temperatura quando pertinente, técnica cirúrgica e cuidados de ferida após alta. **Aantissepsia é estratégia de prevenção**, não tratamento de infecção estabelecida no leito placentário.
+
+### 15.1. Antissepsia e barreiras locais
+
+Escolher produto com evidência, considerar alergias e mucosa versus pele e seguir instruções de tempo/segurança. Antissépticos como clorexidina podem ter usos e apresentações diferentes; **não aplicar formulação alcoólica em mucosa como se fosse igual à solução aquosa apropriada para procedimento**. Hospitais precisam de protocolo com controle de estoque, treinamento, rastreabilidade e prevenção de queimaduras/lesões.
+
+### 15.2. Ferida pós-cesárea: orientações após alta
+
+Explicar como observar secreção, aumento de eritema, dor progressiva, abertura de pontos, odor, febre, hematoma e sinais sistêmicos. O curativo e momento de troca/remoção devem seguir tipo de cobertura e protocolo; **NICE NG192** observa que não há prova geral de superioridade de um tipo padrão de curativo sobre outro em reduzir infecção, e pode haver indicações de pressão negativa em mulheres com IMC ≥35 kg/m² em cenário apropriado.
+
+**Não pedir fotografia íntima por canal inseguro**; usar avaliação presencial quando há suspeita de infecção profunda, proteger privacidade e evitar atraso de atendimento porque paciente “não consegue enviar imagem nítida”.
+
+## 16. Prevenção após parto vaginal, lacerações e instrumentação
+
+A prevenção começa com assistência adequada, evitando trauma desnecessário, mantendo técnica asséptica e identificando/repairando lesões de modo apropriado. Lacerações obstétricas **de 3º/4º grau** têm risco adicional de contaminação e infecção; profilaxia e cuidados intestinais devem seguir protocolo específico de reparo esfincteriano. Não prescrever antibiótico rotineiro para **toda** pequena laceração de 1º grau sem indicação, nem esquecer avaliação de ferida complexa.
+
+**Remoção manual de placenta**, procedimentos invasivos e parto operatório podem ter indicações de profilaxia **distintas** que variam por atualização de diretrizes; consultar recomendações OMS específicas. A recomendação de profilaxia de cesariana **não pode ser simplesmente copiada** para parto vaginal sem instrumento, que geralmente não exige o mesmo pacote.
+
+### 16.1. Cuidado urinário e cateter
+
+Evitar cateter vesical por mais tempo que necessário, manter sistema fechado quando indicado, técnica correta e reavaliar retenção após retirada. A bacteriúria relacionada a sondagem deve ser interpretada com sintomas e critérios, evitando antibioticoterapia por contaminação/colonização. Dor perineal e edema podem dificultar micção, e bexiga distendida também interfere na avaliação uterina.
+
+## 17. Quando internar, observar ou encaminhar para UTI?
+
+**Internação/avaliação hospitalar:** endometrite com necessidade de terapia IV e monitorização, febre com repercussão sistêmica, dor abdominal importante, vômitos e incapacidade de VO, abscesso/pus profundo, sangramento associado, imunossupressão, comorbidade relevante e ausência de retorno seguro. **Emergência/UTI:** hipotensão, lactato elevado com hipoperfusão, disfunção renal, dessaturação, alteração de consciência, peritonite, suspeita de infecção necrosante, septicemia, choque ou necessidade de vasopressor.
+
+**Mastite inflamatória leve** sem comprometimento geral pode receber suporte ambulatorial e reavaliação adequada; mastite bacteriana estável pode ter antibiótico ambulatorial em esquema apropriado; **abscesso e choque exigem outros ambientes**. Uma classificação por foco **não substitui a classificação por gravidade**.
+
+### 17.1. Critérios de alta da endometrite hospitalizada
+
+Melhora clínica sustentada, afebril por intervalo recomendado no protocolo adotado (OMS/MSD mencionam 24–48h após resolução), dor reduzida, sinais vitais estáveis, ausência de foco não controlado, tolerância a cuidados, suporte em casa e acesso a retorno. Não usar hemograma normal obrigatório quando paciente melhora e não há indicação; não liberar paciente com hipotensão/taquicardia progressiva só porque a temperatura caiu após dipirona.
+
+### 17.2. Retorno planejado faz parte do antibiótico
+
+Definir quem reavalia, quando, por que sinais retorna imediatamente e o que fazer se não há transporte. Em puérpera com bebê internado em UTI neonatal, acolher necessidade de permanecer próxima sem comprometer cuidado materno; coordenar mãe e equipe neonatal.
+
+## 18. Seguimento de sepse materna e redução de danos após alta
+
+A **SMFM #67** recomenda suporte abrangente para sobreviventes de sepse obstétrica, reconhecendo déficits físicos, cognitivos e emocionais. Após choque, pacientes podem ter fraqueza muscular, memória alterada, ansiedade, depressão, trauma de UTI, lactação interrompida por separação e dificuldade para cuidar do bebê. O seguimento precisa abordar **função renal residual, reabilitação, sono, humor, rede de apoio, medicações e risco de trombose**, não apenas “tomou antibiótico, está curada”.
+
+### 18.1. Comunicação com a família
+
+Explicar o que aconteceu em linguagem clara, evolução esperada e lacunas diagnósticas sem culpabilização. Sempre obter consentimento para envolver parceiro/família; há contextos de violência ou privacidade que exigem cuidado. O recém-nascido pode necessitar avaliação de exposição/infecção dependendo do foco materno, mas **não presumir que toda endometrite materna significa sepse neonatal**.
+
+### 18.2. Revisão do cuidado institucional
+
+Casos de sepse materna e infecção de sítio cirúrgico exigem análise de qualidade do hospital, com revisão de profilaxia, tempo de reconhecimento, antibioticoterapia, acesso a imagem e controle de foco, sem reduzir a auditoria a erro individual. Barreiras regionais e atraso na referência podem ser fatores evitáveis. O registro de eventos e indicadores deve respeitar proteção de dados pessoais.
+
+## 19. Antibioticoterapia de endometrite: comparador de guias, não cardápio indiscriminado
+
+| Contexto | Fonte/abordagem | Limite/segurança |
+|---|---|---|
+| Endometrite pós-parto típica hospitalizada | OMS 2015: **clindamicina + gentamicina** (condicional, evidência muito baixa) | Dose depende de peso, função renal, alergia, resistência, serviço |
+| Endometrite sem melhora sob esquema adequado | Revisar foco e espectro, considerar enterococo e outras causas | Não acrescentar ampicilina sem raciocínio e revisão |
+| Sepse de alta probabilidade/choque | SMFM #67: antibiótico **amplo idealmente em 1h**, cultura se não atrasa | Cobrir foco provável, descalonar após microbiologia |
+| Abscesso pélvico/intra-abdominal | Antimicrobiano + avaliação de **drenagem/controle** | Antibiótico isolado não substitui drenagem quando indicada |
+| Infecção necrosante | Antimicrobiano amplo + **desbridamento urgente** | Não atrasar cirurgia por tomografia |
+| Mastite inflamatória | ABM #36: suporte anti-inflamatório/lactação, sem antibiótico obrigatório | Reavaliar se sistêmica/persistente |
+| Mastite bacteriana | Antibiótico dirigido à flora mamária/cutânea e contexto | Não copiar esquema uterino; avaliar abscesso |
+| Infecção intra-amniótica intraparto | OMS 2015: ampicilina + gentamicina como uma opção simples | Distinguir evidência e momento de endometrite pós-parto |
+| Ferida superficial com coleção | Examinar necessidade de abrir/drenar + antibiótico conforme celulite/sistema | Não manter sutura contendo pus sem avaliar drenagem |
+
+**Interpretação:** esta tabela é uma **matriz de decisões e fontes**. Não é formulário de prescrição, tampouco promessa de superioridade absoluta em todos centros brasileiros. **Prescrição efetiva depende de diagnóstico, gravidade, alergia, antibiograma, função renal, lactação e protocolo local validado.**
+
+### 19.1. Protocolo prático de reavaliação de tratamento
+
+Documentar **hora de reconhecimento e primeira dose em choque/alta probabilidade**, culturas e lactato quando indicado, PA/FC/diurese, exame uterino, ferida e mama. A cada turno em internada, avaliar defervescência e tendência, dor, foco, tolerância, efeitos adversos e ajuste renal. Após 48–72h sem melhora, reexaminar e solicitar imagem/controle de foco; **não esperar se paciente piora em seis horas**.
+
+## 20. Algoritmos originais de decisão no pronto atendimento
+
+### Fluxo A — febre na mulher até semanas após o parto
+
+**1.** Triar sinais vitais e disfunção orgânica. **2.** Se choque/sepse provável: antibiótico amplo e reanimação já, cultura/lactato sem atrasar, especialista e busca de controle de foco. **3.** Se estável: identificar dia pós-parto, modalidade de parto, bolsa rota, procedimentos, profilaxia, sintomas urinários/pulmonares/mamários, lóquios, incisões. **4.** Exame dirigido e testes conforme hipótese; EAS/urocultura se provável foco urinário, imagem se coleção/complicação, cultura se falha/sepse. **5.** Definir internação, antibiótico, drenagem, suporte de lactação ou investigação alternativa. **6.** Planejar reavaliação e critérios de retorno.
+
+### Fluxo B — febre + útero doloroso após cesariana
+
+Suspeita de **endometrite** → excluir foco concorrente evidente e reconhecer gravidade → iniciar terapia com cobertura apropriada segundo hospital/OMS em contexto; se choque, via sepse e controle urgente de foco → monitorar melhora → se febre persistente ou piora, pensar restos/abscesso/ferida/tromboflebite/resistência → imagem/exames e procedimento se indicado. **Não exigir cultura de lóquios positiva para tratar**.
+
+### Fluxo C — eritema de ferida que progride
+
+Inspecionar extensão, pus, deiscência, profundidade e estabilidade. **Pequeno foco superficial:** definir cuidados/drenagem e antibiótico conforme achados. **Febre e celulite extensa:** avaliação hospitalar e terapia sistêmica. **Dor desproporcional, bolhas, choque, gás ou sinais de necrose:** cirurgia imediata por suspeita de infecção necrosante; não aguardar TC que atrasa desbridamento. **Não supor integridade fascial pela pele fechada**.
+
+### Fluxo D — mama quente e dolorosa na lactação
+
+Pega/produção/hiperextração/edema e sintomas sistêmicos → inflamação leve: suporte e medidas apropriadas, evitando massagem profunda → persistência/progressão/febre: avaliação de mastite bacteriana e cobertura apropriada → massa/flutuação ou falha: **US e drenagem** quando abscesso → cultura/revisão de antibioticoterapia conforme contexto, com apoio à continuidade de lactação segura. **Não impor bombeamento até “esvaziar tudo”.**
+
+### Fluxo E — choque séptico sem febre
+
+Se a mulher está hipotensa, com lactato elevado/oligúria/confusão e há foco suspeito, **a falta de febre não exclui sepse** → reconhecer e acionar emergência obstétrica/UTI → culturas se sem atraso, antimicrobiano amplo idealmente na primeira hora, cristalóide balanceado com avaliação dinâmica, vasopressor se necessário, busca e controle de foco. **Reavaliar lactato/diurese/PA** e evitar grande volume fixo sem ponderar cardiomiopatia ou edema pulmonar.
+
+## 21. Erros de plantão que o estudante precisa reconhecer
+
+1. **“Febre só no segundo dia, espera completar dois dias.”** Definição clássica não protege paciente grave.
+2. **“Sepse sempre febril.”** Falso; pode ocorrer com disfunção orgânica e foco provável sem febre.
+3. **“Leucócitos 18 mil no primeiro dia fecham endometrite.”** Leucocitose puerperal é inespecífica.
+4. **“Lóquios sem cheiro excluem infecção uterina.”** Falso.
+5. **“Cultura cervical positiva identifica bactéria endometrial.”** Colonização/contaminação são comuns.
+6. **“Toda febre pós-cesárea é endometrite.”** Ver incisão, urina, pulmão, mama, trombose.
+7. **“Antibiótico cura todo abscesso.”** Pode exigir drenagem e controle de foco.
+8. **“Sem melhora em 72h: repetir mesma medicação mais uma semana.”** Reinvestigar fonte e espectro.
+9. **“Hartmann/HPP são causas de febre.”** Categorias de outra complicação não substituem foco infeccioso.
+10. **“Toda mastite é bacteriana.”** Espectro inflamatório não obriga antibiótico em todas.
+11. **“Mastite exige parar amamentação.”** Muitas podem manter amamentação com suporte.
+12. **“Massagem profunda desentope ducto.”** ABM alerta para trauma/edema.
+13. **“Cultura de leite em toda mama cheia.”** Não é rotina universal.
+14. **“Incisão sem pus externo exclui infecção profunda.”** Coleções podem estar abaixo da pele.
+15. **“Dor desproporcional sem crepitação não é fasciíte.”** Sinais tardios não podem atrasar cirurgia.
+16. **“Tromboflebite séptica se prova com heparina.”** Resposta terapêutica é inespecífica; evidência é limitada.
+17. **“OMS 2025 publicou um novo guideline de endometrite.”** Compilação de 2025 preserva recomendação originalmente de 2015.
+18. **“Doses da OMS podem ser copiadas direto para o aplicativo.”** Exige revisão farmacêutica, renal, lactação, peso e resistência.
+19. **“Para cesárea, antibioticoprofilaxia só após clampear cordão.”** OMS 2021 favorece 30–60 min antes da incisão.
+20. **“Sem sinais vitais graves, posso mandar voltar na sexta semana.”** Retorno deve depender de evolução e risco.
+
+## 22. Oito casos clínicos comentados
+
+### Caso 1 — Dor uterina e febre 48 horas após cesárea
+
+**Apresentação:** mulher de 29 anos, cesárea não eletiva após trabalho de parto prolongado e bolsa rota por muitas horas, chega ao segundo dia com febre de 38,8°C, taquicardia 108, dor hipogástrica e útero doloroso à palpação. Incisão sem pus, ausculta pulmonar normal, sem disúria. **Hipótese:** endometrite pós-parto, com avaliação de gravidade e foco concorrente. **Raciocínio:** fatores de risco e sensibilidade uterina apoiam diagnóstico clínico, não sendo necessária cultura transcervical positiva. **Exames:** sinais vitais/diurese seriados, hemograma e função renal quando indicado, urina conforme suspeita, culturas em sepse/gravidade e imagem se suspeita de complicação. **Interpretação:** está hemodinamicamente estável, mas terapia hospitalar apropriada costuma ser necessária. **Conduta:** avaliação obstétrica, antimicrobiano IV com cobertura de flora polimicrobiana segundo protocolo, vigilância de resposta e reavaliação do foco. **Por que importa:** cesárea aumenta probabilidade de endometrite, mas diagnóstico continua clínico e diferenciado de infecção da pele.
+
+### Caso 2 — Hipotensão sem febre na puérpera
+
+**Apresentação:** paciente de 34 anos, sexto dia pós-parto, chega confusa, FC 132, PA 84/50, oligúria e lactato 4,2 mmol/L, temperatura 36,7°C. Refere calafrios prévios, dor abdominal, lóquios discretos e mal-estar progressivo. **Hipóteses:** sepse/choque séptico de origem uterina ou outra, além de choque hemorrágico e causas não infecciosas. **Raciocínio:** disfunção orgânica e hipoperfusão com foco provável exigem reconhecimento mesmo **afebril**, conforme SMFM #67. **Exames:** culturas sem atrasar, hemograma/coagulação, creatinina/eletrólitos, lactato seriado, avaliação uterina/ferida e imagem orientada após estabilização. **Interpretação:** choque é emergência; não aguardar critério histórico de febre puerperal. **Conduta:** reanimação com avaliação dinâmica, antimicrobiano de amplo espectro idealmente na primeira hora, noradrenalina se apropriada, investigação de hemorragia e controle de foco uterino se identificado, UTI/obstetrícia. **Por que importa:** febre ausente não significa infecção ausente.
+
+### Caso 3 — Febre persistente apesar de terapia correta
+
+**Apresentação:** mulher no quinto dia pós-cesárea, em tratamento de endometrite com cobertura adequada havia 72h, ainda com febre 39°C, dor pélvica localizada e PCR que não cai. PA estável, porém mal-estar importante. **Hipóteses:** abscesso pélvico, restos infectados, hematoma infectado, infecção de ferida profunda ou tromboflebite pélvica séptica, além de resistência. **Raciocínio:** terapia antimicrobiana não controla coleção fechada; a persistência após 48–72h exige reavaliação. **Exames:** reexaminar útero/ferida/urina, revisar culturas e antimicrobianos, US/TC conforme hipótese e função renal, radiologia/cirurgia. **Interpretação:** não basta acrescentar antibiótico sem saber o foco. **Conduta:** buscar coleção e drenagem/evacuação quando indicada, revisar cobertura e toxicidade, discutir anticoagulação somente se houver justificativa por trombose/risco e equipe. **Por que importa:** o controle anatômico do foco frequentemente decide cura.
+
+### Caso 4 — Infecção necrosante na incisão
+
+**Apresentação:** puérpera obesa de 31 anos, cesárea há uma semana, dor intensa na ferida muito superior ao eritema observado, taquicardia 128, hipotensão, edema rapidamente expansivo e início de bolhas arroxeadas. **Hipótese:** infecção necrosante de tecidos moles e sepse, até prova em contrário. **Raciocínio:** desproporção dor/lesão e rápida deterioração são sinais precoces; esperar crepitação/TC pode atrasar cirurgia. **Exames:** laboratório de gravidade/culturas conforme tempo, exames de coagulação/renal, mas sem atrasar exploração. **Interpretação:** não é celulite superficial para comprimidos domiciliares. **Conduta:** emergência cirúrgica com exploração/desbridamento, antimicrobianos amplos e suporte intensivo de sepse, controle seriado de foco. **Por que importa:** infecção profunda pode evoluir rápido antes de pus visível na pele.
+
+### Caso 5 — Mastite inflamatória versus antibiótico desnecessário
+
+**Apresentação:** mãe de 25 anos, três dias após parto, mamas bilaterais tensas e doloridas, pega superficial, sem febre persistente nem deterioração; relata bombear a cada hora até “secar” a mama e massagens vigorosas. **Hipótese:** ingurgitamento e mastite/edema inflamatório sem evidência suficiente de infecção bacteriana. **Raciocínio:** ABM #36 descreve espectro e recomenda evitar hiperextração/massagem profunda, que podem agravar edema. **Exames:** observação de mamada, avaliação mamária e transferência de leite, medidas de febre/dor e bem-estar neonatal. **Interpretação:** antibiótico amplo automático não corrige pega nem produção excessiva. **Conduta:** orientação técnica de lactação, medidas anti-inflamatórias/analgesia adequadas, não esvaziar compulsivamente e reavaliar se febre persistente/progressão. **Por que importa:** evita iatrogenia e permite detectar evolução bacteriana quando ocorrer.
+
+### Caso 6 — Abscesso mamário após terapia que não resolveu
+
+**Apresentação:** puérpera de 27 anos, lactação há seis semanas, massa dolorosa em quadrante externo da mama, febre intermitente e piora apesar de dois ciclos de antimicrobiano empírico. Ultrassom mostra coleção definida de 4 cm. **Hipótese:** abscesso mamário relacionado à lactação, com necessidade de controle de foco. **Raciocínio:** coleção organizada pode persistir apesar de antibiótico; repetir fórmula sem drenar perde tempo. **Exames:** US dirigido, cultura do material drenado quando indicado, avaliação de flora/resistência e imunidade. **Interpretação:** tamanho/localização e amamentação exigem planejamento de acesso à coleção e posição mamária. **Conduta:** aspiração guiada por US ou drenagem conforme equipe, antibiótico apropriado e suporte de lactação, observando segurança da região de drenagem. **Por que importa:** abscesso é diagnóstico anatômico e frequentemente exige procedimento.
+
+### Caso 7 — Puerpério, disúria e dor lombar não são endometrite automática
+
+**Apresentação:** mulher de 30 anos, parto vaginal há sete dias, uso de sonda por retenção urinária, febre 38,7°C, disúria, urgência e dor lombar unilateral; útero involuindo sem dor relevante, ferida perineal sem alterações. EAS mostra piúria e cultura colhida adequadamente. **Hipótese:** pielonefrite materna no puerpério, com risco sistêmico. **Raciocínio:** infecção puerperal como problema assistencial não significa foco obrigatoriamente uterino; cateter e sintomas orientam trato urinário. **Exames:** urina e urocultura, função renal, hemoculturas conforme gravidade, imagem se suspeita de obstrução/falha. **Interpretação:** antibiótico adequado ao foco renal precisa atingir parênquima; nitrofurantoína não é tratamento de pielonefrite. **Conduta:** avaliação de sepse/necessidade de internação, antibiótico segundo risco e suscetibilidade, revisão da retenção/sonda e follow-up. **Por que importa:** procurar outros focos evita tratamento uterino indevido.
+
+### Caso 8 — Febre e dor pélvica depois de hemorragia tardia
+
+**Apresentação:** mulher de 36 anos teve parto há 15 dias e passa a apresentar sangramento crescente, dor hipogástrica, febre, útero doloroso e ultrassom que sugere material intracavitário vascularizado, sem choque ainda. **Hipóteses:** restos placentários com infecção/endometrite e risco de HPP secundária; considerar também alterações vasculares e coágulos. **Raciocínio:** sangramento e febre após período de redução dos lóquios demandam avaliar duas frentes, e imagem no pós-parto não é diagnóstico absoluto de restos. **Exames:** hemograma, coagulação, função renal, avaliação obstétrica e US Doppler para caracterizar vascularização e planejar procedimento. **Interpretação:** antibioticoterapia pode não bastar quando há foco retido; instrumentar sem planejar hemostasia pode gerar sangramento. **Conduta:** encaminhamento hospitalar, antimicrobiano quando indicado, preparação de controle de foco e sangramento com equipe; consultar aula **104** para HPP secundária. **Por que importa:** assistência segura integra hemorragia e infecção sem confundir suas técnicas.
+
+## 23. Dez questões de prova autorais, cinco alternativas e comentários completos
+
+### Questão 1 — Diagnóstico da endometrite
+
+Puérpera pós-cesárea há 48h tem febre 38,8°C, dor hipogástrica e útero doloroso, sem foco evidente alternativo. Qual melhor afirmação?
+
+A. É obrigatório ter cultura endometrial positiva para diagnosticar.  
+B. Sem lóquios fétidos, endometrite é impossível.  
+C. O diagnóstico é predominantemente clínico, com exclusão de foco concorrente e avaliação de gravidade.  
+D. A temperatura abaixo de 39°C sempre é fisiológica.  
+E. Antibiótico não pode ser administrado antes de biópsia.
+
+**Gabarito: C.** **A incorreta:** cultura transcervical é frequentemente contaminada e não é exigida. **B incorreta:** odor pode faltar. **C correta:** sintomas e exame orientam conduta. **D incorreta:** valor isolado não exclui infecção. **E incorreta:** biópsia não é requisito de tratamento. **Mini-revisão:** clínica/gravidade prevalecem sobre exames contamináveis.
+
+### Questão 2 — Recomendações OMS de tratamento
+
+Qual alternativa corresponde ao documento OMS sobre endometrite pós-parto e sua certeza?
+
+A. Clindamicina mais gentamicina é opção recomendada condicionalmente, com evidência de certeza muito baixa, e requer adaptação à paciente e hospital.  
+B. A OMS 2025 publicou estudo randomizado que comprova esse esquema superior em toda paciente.  
+C. Antibiótico profilático da cesárea é o tratamento completo de endometrite já estabelecida.  
+D. Ciprofloxacino único é primeira escolha universal para sepse.  
+E. Gentamicina não exige revisar função renal.
+
+**Gabarito: A.** **A correta:** reproduz nível de evidência e limites da recomendação OMS 2015, incorporada em compilação 2025. **B incorreta:** 2025 é compêndio, não nova diretriz de alta certeza. **C incorreta:** profilaxia tem objetivo distinto. **D incorreta:** não há esquema único de sepse. **E incorreta:** aminoglicosídeo tem nefro/ototoxicidade. **Mini-revisão:** fonte, ano e certeza devem acompanhar a recomendação.
+
+### Questão 3 — Sepse sem febre
+
+Puérpera está hipotensa, oligúrica e confusa, com suspeita de foco uterino, mas temperatura 36,6°C. Qual conduta?
+
+A. Excluir sepse por ausência de febre.  
+B. Esperar dois dias de temperatura alta para preencher definição.  
+C. Tratar como apenas ansiedade.  
+D. Investigar e tratar imediatamente possível sepse/choque, apesar de afebril.  
+E. Aguardar colonoscopia.
+
+**Gabarito: D.** **A incorreta:** SMFM #67 recomenda suspeita mesmo sem febre. **B incorreta:** definição histórica não determina urgência. **C incorreta:** disfunção orgânica exige investigação. **D correta:** culturas sem atraso, antibiótico e ressuscitação/controle de foco. **E incorreta:** exame não tem pertinência primária. **Mini-revisão:** suspeita de foco + disfunção orgânica = emergência.
+
+### Questão 4 — Persistência de febre
+
+Após 72 horas de antibiótico adequado para endometrite, puérpera mantém febre e dor pélvica. Qual abordagem?
+
+A. Completar automaticamente 21 dias de mesmo antibiótico sem exame.  
+B. Reexaminar e investigar abscesso, restos, ferida, tromboflebite, resistência e outros focos; controlar foco quando indicado.  
+C. Suspender todos antimicrobianos e dar alta.  
+D. Concluir que mastite é a causa sem examinar mamas.  
+E. Aplicar heparina universal como prova de febre de origem trombótica.
+
+**Gabarito: B.** **A incorreta:** falta resposta exige reavaliação de fonte. **B correta:** 48–72h sem melhora motiva revisão. **C incorreta:** não avalia infecção persistente. **D incorreta:** foco precisa exame. **E incorreta:** anticoagulação empírica universal carece de base e riscos. **Mini-revisão:** antibiótico não substitui controle anatômico.
+
+### Questão 5 — Ferida necrosante
+
+Paciente pós-cesárea tem dor incisional desproporcional, expansão rápida do edema, hipotensão e bolhas, embora pele tenha pouca secreção. Conduta prioritária?
+
+A. Somente foto semanal pelo aplicativo.  
+B. Massagem vigorosa para drenar tecidos.  
+C. Esperar cultura superficial definitiva e só então avaliar cirurgia.  
+D. Sutura imediata sem examinar profundidade.  
+E. Acionar cirurgia urgente para possível infecção necrosante, com suporte de sepse e antibiótico.
+
+**Gabarito: E.** **A incorreta:** doença potencialmente fulminante. **B incorreta:** agrava lesão. **C incorreta:** atraso de controle pode matar. **D incorreta:** fechar foco contaminado é inseguro. **E correta:** cirurgia/controle e tratamento sistêmico concomitantes. **Mini-revisão:** dor desproporcional e choque são red flags.
+
+### Questão 6 — Mastite inflamatória
+
+Puérpera na apojadura tem mamas tensas, pouca febre e bombeia compulsivamente até “esvaziar”. Qual orientação alinhada à ABM #36?
+
+A. Toda mama dolorosa requer clindamicina/gentamicina IV.  
+B. Massagem profunda agressiva reduz sempre risco de abscesso.  
+C. Rever pega e hiperextração, oferecer medidas de conforto/anti-inflamatórias e acompanhar evolução; antibiótico é seletivo.  
+D. Suspender amamentação em todas as dores mamárias.  
+E. Ignorar piora sistêmica porque é lactação.
+
+**Gabarito: C.** **A incorreta:** nem toda inflamação é bacteriana. **B incorreta:** massagem profunda pode piorar edema/trauma. **C correta:** aborda mecanismo e risco de evolução. **D incorreta:** amamentar é possível em muitos casos. **E incorreta:** sinais sistêmicos persistentes exigem avaliação. **Mini-revisão:** mastite é espectro, não rótulo binário automático.
+
+### Questão 7 — Abscesso mamário
+
+Paciente com mastite tratada desenvolve coleção mamária de 4 cm em ultrassom e febre persistente. Qual próximo passo?
+
+A. Avaliar drenagem/aspiração guiada por imagem, antibiótico adequado e suporte de lactação.  
+B. Repetir indiscriminadamente o mesmo antibiótico por meses, sem imagem.  
+C. Proibir qualquer avaliação mamária até desmame.  
+D. Aplicar heparina empírica para “dissolver abscesso”.  
+E. Declarar cura porque não há lóquios fétidos.
+
+**Gabarito: A.** **A correta:** coleção pode exigir procedimento de controle. **B incorreta:** ignora foco. **C incorreta:** lactação não impede diagnóstico/tratamento. **D incorreta:** anticoagulante não drena pus. **E incorreta:** lóquios não têm relação direta com coleção mamária. **Mini-revisão:** abscesso é complicação anatômica.
+
+### Questão 8 — Profilaxia de cesariana
+
+Segundo atualização OMS de 2021, profilaxia antibiótica de cesariana deve ocorrer de modo geral:
+
+A. Apenas depois de clampear o cordão em toda paciente.  
+B. Só se houver febre na gestante.  
+C. Sete dias após alta.  
+D. Antes da incisão, tipicamente 30–60 minutos antes, conforme protocolo e indicação.  
+E. Não é recomendada em cesárea eletiva.
+
+**Gabarito: D.** **A incorreta:** prática superada como regra universal. **B incorreta:** profilaxia não pressupõe infecção. **C incorreta:** timing tardio não previne contaminação inicial. **D correta:** atualização OMS 2021. **E incorreta:** profilaxia é recomendada em cesárea. **Mini-revisão:** prevenir ≠ tratar endometrite instalada.
+
+### Questão 9 — Tromboflebite pélvica séptica
+
+Puérpera continua febril após antibiótico e investigação sem coleção evidente. Qual proposição é correta?
+
+A. Qualquer febre por 48h autoriza heparina como teste diagnóstico definitivo.  
+B. Tromboflebite pélvica séptica entra no diferencial, mas exige avaliação especializada; anticoagulação não é prova universal nem automaticamente indicada.  
+C. TC negativa para trombose volumosa exclui toda patologia.  
+D. A febre só pode vir da mama.  
+E. Suspender toda investigação e dar alta.
+
+**Gabarito: B.** **A incorreta:** resposta a heparina é inespecífica e evidência limitada. **B correta:** diagnóstico é difícil e exige excluir outros focos. **C incorreta:** vasos pequenos podem não aparecer. **D incorreta:** diferencial amplo. **E incorreta:** febre refratária exige revisão. **Mini-revisão:** considerar diagnóstico sem transformar tratamento em teste simplista.
+
+### Questão 10 — Prioridade na sepse materna
+
+Puérpera com choque séptico provável, dor uterina e lactato elevado precisa antimicrobiano. Qual é a melhor abordagem segundo SMFM #67?
+
+A. Esperar urocultura final antes de iniciar.  
+B. Dar somente anti-inflamatório, pois febre é normal.  
+C. Dar grande volume de líquido fixo sem reavaliar pulmão/coração.  
+D. Priorizar analgesia e deixar foco para uma semana.  
+E. Iniciar reanimação, antimicrobiano amplo idealmente em até 1h, culturas sem atraso substancial, buscar controle de foco e reavaliar resposta.
+
+**Gabarito: E.** **A incorreta:** culturas não devem atrasar antimicrobianos na emergência. **B incorreta:** choque exige ação. **C incorreta:** fluidos devem ser reavaliados dinamicamente. **D incorreta:** foco não controlado sustenta sepse. **E correta:** integra reconhecimento, antimicrobiano e controle de foco. **Mini-revisão:** SMFM recomenda abordagem imediata e sistêmica.
+
+## 24. Camada visual: dez candidatos autorais ou de exames verdadeiros
+
+**Nenhuma imagem de terceiros foi incorporada nesta rodada.** Priorizar imagens que ensinem achados difíceis e **não** fotos genéricas de hospital. Fontes devem ter autorização de uso comercial ou licença compatível; imagens do PDF da OMS, SMFM, MSD e ABM **não podem ser copiadas só por estarem públicas**. Exames precisam de anonimização, legenda clínica e autorização editorial.
+
+| Nº | Imagem pretendida | Objetivo | Capítulos | Direitos/produção |
+|---|---|---|---|---|
+| 1 | Fluxograma autoral de febre/sepse puerperal | Diferenciar urgência e triagem sem febre | §1/11/20 | Criar diagrama original |
+| 2 | Ultrassom uterino de endometrite suspeita vs restos | Ensinar limites da imagem no pós-parto | §5/7 | Exame real licenciado |
+| 3 | Doppler de restos intracavitários vascularizados | Diferenciar foco e risco de hemorragia | §7 | Fonte radiológica licenciada e validada por obstetra |
+| 4 | TC de abscesso pélvico pós-parto | Identificar coleção e controle de foco | §7/12 | Fonte radiológica licenciada |
+| 5 | Foto clínica desidentificada de ferida cirúrgica superficial | Distinguir celulite versus coleção | §8 | Consentimento e direito comprovados |
+| 6 | Ilustração original de planos da parede em infecção profunda | Entender fasciíte/deiscência fascial | §8/12 | Desenho LURIA |
+| 7 | US mamário de abscesso | Visualizar coleção versus ingurgitamento | §9 | Arquivo autorizado |
+| 8 | Fluxo autoral espectro ABM inflamatória/bacteriana/abscesso | Evitar antibióticos e massagens indevidas | §9/20 | Criação original, não copiar arte ABM |
+| 9 | Esquema original de reconhecimento/controle de sepse | Antibiótico, perfusão, lactato, foco | §11/20 | Criação própria, com fonte SMFM |
+| 10 | Linha do tempo e comparação OMS 2015/2021, SMFM 2023/2025 | Prevenção versus tratamento, fontes e validade | §0/13/15 | Diagrama autoral com datas verificadas |
+
+**QA visual obrigatório:** conferir foco/anatomia por obstetra/radiologista; fotos de feridas e mama com permissão explícita e dignidade/privacidade; WebP otimizado sem perda do detalhe clínico; alt descritivo e legenda com seta/achado; revisão em tela pequena e PWA.
+
+## 25. Referências verificáveis e aplicação
+
+1. **World Health Organization.** *WHO recommendations for prevention and treatment of maternal peripartum infections.* Geneva; 2015. https://www.who.int/publications/i/item/9789241549363. **Endometrite: clindamicina + gentamicina, recomendação condicional de certeza muito baixa.**
+2. **WHO.** *WHO recommendations on maternal health guidelines approved by Guidelines Review Committee*, 2nd ed. 2025, parte de infecções periparto que republica recomendação 20 de 2015. https://www.ncbi.nlm.nih.gov/books/NBK615643/table/part2.tab65/. **Não rotular como atualização clínica integral de 2025.**
+3. **WHO.** *Recommendation on prophylactic antibiotics for women undergoing caesarean section*. 2021. https://www.ncbi.nlm.nih.gov/books/NBK571489/. **Profilaxia 30–60 minutos antes da incisão e considerações de dose/redose.**
+4. **Society for Maternal-Fetal Medicine.** *Consult Series #67: Maternal sepsis*. 2023, reaffirmed 2025, endorsed by ACOG. https://publications.smfm.org/publications/507-society-for-maternal-fetal-medicine-consult-series-67/. **Sepse sem febre, antibiótico idealmente 1h em choque/alta probabilidade, líquido balanceado/reavaliação, controle urgente de foco.**
+5. **Mitchell KB et al.** *Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum, Revised 2022*. Breastfeeding Medicine. 2022;17:360–376. https://pubmed.ncbi.nlm.nih.gov/35576513/. **Mastite inflamatória, bacteriana, abscesso e lactação.**
+6. **NICE.** *Caesarean birth*, NG192. https://www.nice.org.uk/guidance/NG192/chapter/recommendations. **Cuidados pós-operatórios, ferida e prevenção.**
+7. **MSD Manual Professional.** *Postpartum Endometritis*, rev. 2024. https://www.msdmanuals.com/professional/gynecology-and-obstetrics/postpartum-care-and-associated-disorders/postpartum-endometritis. **Diagnóstico clínico e febre refratária 48–72h.**
+8. **WHO.** *Recommendation on routine antibiotic prophylaxis for women undergoing operative vaginal birth*. 2021. https://www.who.int/publications/i/item/9789240027992. **Diferenciação de prevenção em parto operatório versus parto espontâneo.**
+9. **WHO.** *Recommendations on choice of antiseptic agent and method of application for preoperative skin preparation for caesarean section*. 2021. https://www.who.int/publications/i/item/9789240028036. **Técnica preventiva, não tratamento de foco já infectado.**
+10. **LURIA, apostila 109 — Puerpério normal e patológico**, arquivo editorial preservado. **Só triagem e fisiologia, não detalha antimicrobianos.**
+11. **LURIA, apostila 104 — Hemorragia pós-parto**, arquivo editorial preservado. **Avaliação de HPP secundária e controle hemostático em restos infectados.**
+12. **Benchmark bibliográfico do usuário:** busca em Drive por endometrite, infecção puerperal e sepse não encontrou arquivo integral dedicado; os resultados relativos a HPP não foram reproduzidos.
+
+## 26. Auditoria preliminar e pendências formalizadas para o Codex
+
+**Produção estrutural:** etiologia e risco, microbiologia, sepse puerperal, endometrite e esquemas conforme força da evidência, foco urinário/respiratório, ferida/deiscência/necrosante, mastite e abscesso, infecção intra-amniótica versus pós-parto, prevenção em cesárea/parto operatório, controle de foco, choque/reanimação e lactação. Inclui algoritmos, dez visualizações candidatas, oito casos e dez questões de cinco alternativas com gabarito e comentário de cada opção.
+
+**Auditoria científica independente necessária:**
+- Validar critérios febris específicos brasileiros sem usar a definição histórica como bloqueio de cuidado; comparar protocolos obstétricos do SUS/FEBRASGO e hospitais universitários.
+- Revisar antibioticoterapia de endometrite conforme **CCIH e resistência local**, doses máximas, ajuste de peso/função renal, toxicidade de gentamicina, alergia e lactação; verificar se o bulário LURIA tem todos os fármacos e se não libera prescrição sem revisão.
+- Revisar protocolos de **sepse e choque** (lactato, tempo de terapia, fluidos, vasopressores, controle de foco, suporte e tromboprofilaxia) com obstetrícia, infectologia, intensivista e farmacêutico.
+- Conferir diferenciais de infecção profunda e imagem (US/Doppler/TC/MRI), não atrasar cirurgia quando há suspeita de necrosante, e cuidado para não instrumentar malformação vascular uterina com hemorragia.
+- Auditar segurança da lactação por produto e exposição neonatal; verificar disponibilidade brasileira e contraindicações, incluindo prematuridade.
+- Imagens reais não foram importadas: checar licença, consentimento, qualidade, WebP, legendas e acessibilidade. Revisar clareza, redundâncias, casos e questões e converter ao renderer da LURIA.
+- Linkar tecnicamente às apostilas 104 e 109 sem duplicação, revisar coerência com base do modo Trabalho/protocolos e testar desktop/PWA.
+
+**Controle de versão:** todo o material segue em branch editorial, sem merge ou publicação. A auditoria geral por Codex foi exigida pelo usuário e formalizada em apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md; só executá-la **após concluir os manuscritos de TODOS os lotes**, com matriz de cobertura, ciência, licenças, PWA e correção fundamentada por PR.
+
+**STATUS: MANUSCRITO TÉCNICO DE PRIMEIRA PASSAGEM, NÃO CERTIFICADO PARA PRESCRIÇÃO, NÃO PUBLICADO.**
