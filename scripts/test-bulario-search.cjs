@@ -55,3 +55,49 @@ test('paginates the full catalog, beyond the first thousand entries',async()=>{
   assert.equal(result.data.length,1089);
   assert.deepEqual(calls,[[0,499],[500,999],[1000,1499]]);
 });
+
+const gatingCode=sliceBetween('  function approvedFormulations(data){','  function renderDetail(row){');
+const {approvedFormulations}=new Function(
+  'normalized',
+  gatingCode+'\nreturn {approvedFormulations};',
+)(new Function(searchHelpers+'\nreturn normalized;')());
+
+const fullDose={
+  label:'Comprimido oral 10 mg',
+  dose_text:'Conforme indicação e bula específica',
+  interval_text:'A cada 8 h',
+  route:'VO',
+  duration_text:'Até 5 dias',
+  max_daily_text:'Conforme bula',
+  administration:'Com água',
+  cautions:'Avaliar contraindicações',
+  prescription_type:'Receita simples',
+  source_url:'https://example.org/bula-profissional'
+};
+test('never approves unsourced draft or a generic placeholder, even when fields are populated',()=>{
+  assert.equal(approvedFormulations({
+    status:'clinical_reviewed_needs_leaflet_source',
+    formulations:[fullDose]
+  }).length,0);
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    formulations:[{...fullDose,label:'Apresentação conforme produto/registro vigente'}]
+  }).length,0);
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    formulations:[{...fullDose,source_url:''}]
+  }).length,0);
+});
+test('only source-tied formulations are released; no unrelated dosage is copied',()=>{
+  const checked=approvedFormulations({
+    status:'source_reviewed',
+    formulations:[fullDose,{...fullDose,label:'Solução injetável',source_url:''}]
+  });
+  assert.deepEqual(checked.map(item=>item.label),['Comprimido oral 10 mg']);
+  const one={...fullDose,source_url:''};
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    leaflet_url:'https://example.org/formula-unica',
+    formulations:[one]
+  }).length,1);
+});
