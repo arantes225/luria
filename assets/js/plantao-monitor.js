@@ -98,13 +98,8 @@
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     if (img) {
       img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
-      if (/(?:luria-(?:homem-adulto-v7|mulher-adulta-v5|homem-idoso-v7)-aberto|luria-mulher-idosa-v16-base|gestante_acordada_triste_1300x900_100kb|14-gestante-acordada)\.webp/.test(img.getAttribute('src')||'')) {
-        img.dataset.luriaEyes=unconscious?"closed":"auto";
-        img.dataset.luriaRr=String(vitals.rr??"");
-      } else {
-        delete img.dataset.luriaEyes;
-        delete img.dataset.luriaRr;
-      }
+      img.dataset.luriaEyes=unconscious?"closed":"auto";
+      img.dataset.luriaRr=String(vitals.rr??"");
     }
     const badge = document.getElementById('plantao-consciousness');
     if (badge) {

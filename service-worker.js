@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261016-localized-chest-breath1";
+const CACHE_VERSION = "luria-pwa-native-activities-20261016-original1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -10,6 +10,10 @@ const PLANTAO_MAX_ITEMS = 60;
 const WEEKLY_MAX_ITEMS = 24;
 
 const APP_SHELL = [
+  "/assets/js/luria-personagens-original.js?v=20261016-original1",
+  "/assets/js/plantao-frontal-v1.js?v=20261016-original1",
+  "/assets/js/plantao-monitor.js?v=20261016-original1",
+  "/assets/css/plantao-patient-original.css?v=20261016-original1",
   "/",
   "/index.html",
   "/login/",

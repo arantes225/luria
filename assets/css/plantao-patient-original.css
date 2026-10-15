@@ -1,0 +1,17 @@
+/* Only host sizing: the original patient renderer and bitmap are unchanged. */
+body:not(.luria-case-landscape) #plantao-simulator #plantao-standard-bedside .plantao-scene.luria-original-patient{
+ height:auto!important;min-height:0!important;aspect-ratio:auto!important;
+}
+#plantao-simulator #plantao-standard-bedside .plantao-scene.luria-original-patient>#plantao-patient-image,
+#plantao-simulator #plantao-standard-bedside .plantao-scene.luria-original-patient>#plantao-patient-motion{
+ display:none!important;
+}
+#plantao-simulator #plantao-standard-bedside .plantao-scene>.luria-original-canvas:not([hidden]){
+ display:block!important;position:relative!important;inset:auto!important;
+ width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;
+ flex:none!important;aspect-ratio:auto!important;transform:none!important;animation:none!important;
+ object-fit:contain!important;z-index:0;
+}
+body.luria-case-landscape #plantao-simulator #plantao-standard-bedside .plantao-scene>.luria-original-canvas:not([hidden]){
+ position:absolute!important;inset:0!important;height:100%!important;
+}
