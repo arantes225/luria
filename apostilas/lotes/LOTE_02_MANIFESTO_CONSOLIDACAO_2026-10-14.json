@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 3,
+  "version": 4,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "PRE-PUBLICAÇÃO: material ampliado, não certificado",
+  "status": "PRE-PUBLICAÇÃO — clínica e apresentação ainda sem certificação; não publicar",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -73,7 +73,7 @@
       "question_count": 15,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
+      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
       "json_visible_estimate": 75595,
       "json_table_count": 8
     },
@@ -85,10 +85,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "35577a3a60138107bb313b8149f0fad6e55f61d1",
+      "consolidated_sha": "a856be1009824b12ff71e8d10458a670f05173f2",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 82949,
-      "consolidated_approximate_plain_characters": 79369,
+      "consolidated_raw_characters": 100806,
+      "consolidated_approximate_plain_characters": 96512,
       "chapter_count": 9,
       "chapters": [
         {
@@ -128,13 +128,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 14,
-      "question_count": 19,
+      "case_count": 16,
+      "question_count": 22,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
-      "json_visible_estimate": 79369,
-      "json_table_count": 6
+      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
+      "json_visible_estimate": 96512,
+      "json_table_count": 9
     },
     {
       "id": "DIABETES_MELLITUS",
@@ -144,10 +144,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
       "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
-      "consolidated_sha": "70ab1241790c82d091c05d6587ff26885ee19e48",
+      "consolidated_sha": "04e1b83b6fae601265c61b4d8b7dfd864892b90f",
       "source_raw_characters": 73020,
-      "consolidated_raw_characters": 82273,
-      "consolidated_approximate_plain_characters": 78573,
+      "consolidated_raw_characters": 99173,
+      "consolidated_approximate_plain_characters": 94789,
       "chapter_count": 10,
       "chapters": [
         {
@@ -191,13 +191,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 12,
-      "question_count": 20,
+      "case_count": 14,
+      "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
-      "json_visible_estimate": 78573,
-      "json_table_count": 9
+      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
+      "json_visible_estimate": 94789,
+      "json_table_count": 13
     },
     {
       "id": "PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE",
@@ -258,7 +258,7 @@
       "question_count": 21,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
+      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
       "json_visible_estimate": 79676,
       "json_table_count": 10
     },
@@ -317,16 +317,16 @@
       "question_count": 21,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
+      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
       "json_visible_estimate": 96822,
       "json_table_count": 13
     }
   ],
   "last_expansion": "2026-10-14",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "427747607ea2fb323349333122416d24edea388e",
+  "input_json_sha": "058fd61c8676f2dcb7bad71bb6f4b3d9f0018b9a",
   "last_update_scope": [
-    "PAC: critérios de estabilidade, mudança IV→VO, stewardship, duração, seguimento, imagem de controle, casos 13–14 e questões 19–21",
-    "TB: hepatotoxicidade e monitorização RHZE, função renal/visão, TDO, prevenção, contatos, casos 11–12 e questões 19–21"
+    "DPOC: dispositivos pMDI/DPI/SMI, técnica, adesão e decisão pré-escalonamento, seguimento de exacerbação, dois casos e três questões",
+    "Diabetes: DRD por albuminúria/TFGe, comparação SBD/ADA 2026, retinopatia e pé diabético, dois casos e três questões"
   ]
 }
