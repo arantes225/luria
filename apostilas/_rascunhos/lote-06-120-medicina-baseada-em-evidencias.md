@@ -666,3 +666,160 @@ O aconselhamento deve usar **frequências naturais** (“em 1.000 pessoas, X ben
 **Hipóteses críticas:** eficácia clínica e segurança, comparador SUS, perspectiva, horizonte, utilidades e incerteza de parâmetros. ICER isolado não define adoção e não deve ser confundido com preço do medicamento ou com impacto orçamentário.
 
 **Conduta metodológica:** apresentar certeza das evidências, análises de sensibilidade, equidade, alternativas e condições de implementação à ATS/Conitec. **Por que importa:** uma decisão pública integra saúde, recursos e acesso — não apenas “p<0,05” em um ensaio.
+
+
+## 30. Doze questões autorais comentadas
+
+### Questão 1 — Qual medida o caso-controle permite calcular diretamente?
+Pesquisadores selecionam 200 pessoas com doença rara e 200 sem a doença, recuperando exposição a solvente antes do diagnóstico. Qual medida de associação é a mais típica do desenho?
+
+A) Incidência cumulativa da doença nos expostos e não expostos, usando diretamente os 400 selecionados.  
+B) Odds ratio de exposição entre casos e controles.  
+C) Risco relativo absoluto obtido pela soma das odds.  
+D) Taxa de incidência por pessoa-ano sem ter dados de população-fonte nem tempo.
+
+**Gabarito: B.** **A:** os totais de casos e controles foram fixados artificialmente; não representam denominadores de risco. **B:** o OR é medida natural do desenho, sujeita à validade da amostragem e interpretação. **C:** não existe medida denominada “risco relativo absoluto” obtida assim. **D:** pessoa-tempo não foi coletado. **Mini-revisão:** coorte seleciona por exposição e pode medir incidência; caso-controle clássico seleciona por desfecho, calculando OR.
+
+### Questão 2 — RR e OR não são sinônimos
+Num estudo com 100 expostos e 100 não expostos, 40 expostos e 20 não expostos desenvolvem o evento. Qual par de medidas está correto?
+
+A) RR 2,0 e OR aproximadamente 2,67.  
+B) RR 2,67 e OR 2,0.  
+C) RR 1,0 e OR 1,0.  
+D) RR 0,50 e OR 0,375.
+
+**Gabarito: A.** **A:** riscos 40% e 20% → RR=2; odds 40/60 e 20/80 → OR=(40×80)/(60×20)=2,67. **B:** inverte as medidas. **C:** não há ausência de associação no exemplo. **D:** interpreta direção como protetora sem base. **Mini-revisão:** quando o evento é comum, a odds ratio pode ficar consideravelmente mais distante de 1 que RR.
+
+### Questão 3 — NNT com período explícito
+Em ensaio fictício de dois anos, evento ocorre em 80/1.000 pessoas tratadas e 100/1.000 controles. Quantas pessoas aproximadamente precisam ser tratadas por dois anos para evitar um evento adicional, supondo validade causal do resultado?
+
+A) 5.  
+B) 20.  
+C) 50.  
+D) 500.
+
+**Gabarito: C.** Risco tratado 8%, controle 10%; **RRA = 2 pontos percentuais = 0,02**; NNT=1/0,02=**50 por dois anos**. **A:** confunde efeito relativo e escala. **B:** usa denominador incorreto. **D:** confunde percentuais e probabilidades. **Mini-revisão:** NNT exige benefício absoluto, população, desfecho e tempo. RRR seria 20%, mas não basta para calcular NNT.
+
+### Questão 4 — Prevalência e teste diagnóstico
+Um teste hipotético tem sensibilidade 90% e especificidade 80%. Em 1.000 pessoas com prevalência de 10%, qual valor preditivo positivo?
+
+A) 90%.  
+B) 80%.  
+C) Aproximadamente 33%.  
+D) Aproximadamente 99%.
+
+**Gabarito: C.** Entre 100 doentes, 90 VP; entre 900 não doentes, 180 FP; VPP=90/(90+180)=**33,3%**. **A:** é a sensibilidade, não VPP. **B:** é a especificidade. **D:** está mais perto do VPN no exemplo e não descreve testes positivos. **Mini-revisão:** VPP depende da prevalência e da acurácia do teste; não é uma característica fixa do produto independente da população.
+
+### Questão 5 — Bayes com razão de verossimilhança
+Um teste tem sensibilidade 0,90 e especificidade 0,80. A razão de verossimilhança positiva é:
+
+A) 0,125.  
+B) 4,5.  
+C) 0,90.  
+D) 0,20.
+
+**Gabarito: B.** **LR+ = sensibilidade/(1−especificidade) = 0,90/0,20 = 4,5**. **A:** é LR−=(1−0,90)/0,80. **C:** é sensibilidade. **D:** é taxa de falsos positivos entre não doentes. **Mini-revisão:** converter probabilidades em odds, multiplicar LR e voltar a probabilidade permite atualizar a suspeita clínica.
+
+### Questão 6 — Valor de p e equivalência
+Um ensaio de superioridade mostra p=0,18 para diferença entre duas intervenções. Qual afirmação é adequada?
+
+A) Não há diferença de nenhum tamanho entre os tratamentos, provando equivalência.  
+B) A probabilidade de a hipótese nula ser verdadeira é 18%.  
+C) O resultado não rejeita a hipótese nula pelo limiar convencional de 5%; magnitude e IC são necessários, e isso não prova equivalência.  
+D) O estudo demonstra que a intervenção é perigosa porque p>0,05.
+
+**Gabarito: C.** **A:** equivalência precisa de margem e desenho apropriados. **B:** valor de p não é probabilidade da hipótese nula ser verdadeira. **C:** interpretação correta com premissas. **D:** dano não decorre de não significância. **Mini-revisão:** diferença clinicamente relevante pode existir em estudo impreciso com p>0,05.
+
+### Questão 7 — Confusão por indicação e viés de tempo
+Uma coorte classifica como expostos todos os pacientes que receberam um medicamento em algum momento da internação, apesar de o tratamento geralmente começar no oitavo dia. Morte antes da primeira dose é contada apenas entre não expostos. Esse desenho pode criar:
+
+A) Viés de tempo imortal favorecendo artificialmente o medicamento.  
+B) Randomização por blocos válida.  
+C) Ausência automática de confusão.  
+D) Sensibilidade diagnóstica maior que 100%.
+
+**Gabarito: A.** **A:** a exposição exige sobreviver até início, atribuindo indevidamente período imortal ao grupo tratado. **B:** não existe randomização descrita. **C:** gravidade e indicação podem confundir adicionalmente. **D:** não há análise de acurácia. **Mini-revisão:** alinhar tempo zero, elegibilidade e exposição em coortes, especialmente estudos de tratamento.
+
+### Questão 8 — PRISMA, CONSORT e RoB 2
+Uma revisão sistemática apresenta fluxograma PRISMA completo, mas inclui ensaios com perdas graves e seleção de desfechos. Qual interpretação é correta?
+
+A) PRISMA certifica ausência de viés em todos os estudos incluídos.  
+B) Relato transparente de uma revisão não substitui avaliação de risco de viés dos ensaios por instrumento apropriado, como RoB 2.  
+C) CONSORT 2025 foi criado para medir sensibilidade e especificidade de testes rápidos.  
+D) Checklist STROBE confirma causalidade de estudos ecológicos.
+
+**Gabarito: B.** **A:** PRISMA é diretriz de relato. **B:** é necessário avaliar risco de viés dos estudos e certeza do conjunto da evidência. **C:** CONSORT aborda relato de ensaio randomizado. **D:** STROBE apoia relato observacional, não prova causal. **Mini-revisão:** ferramenta de relato e ferramenta crítica têm objetivos distintos.
+
+### Questão 9 — Interpretação do IC
+Uma metanálise relata RR=0,80, IC95% 0,60–1,05. Qual alternativa melhor reflete o resultado?
+
+A) Benefício está matematicamente comprovado porque RR<1 e todo IC mostra a verdade com probabilidade posterior de 95%.  
+B) O tratamento não funciona, pois o IC cruza 1.  
+C) O resultado é compatível com benefício relevante e pequeno dano relativo, e não exclui ausência de efeito no teste usual; revisar viés, tamanho absoluto e precisão.  
+D) O intervalo de confiança deve ser comparado ao valor nulo 0 para qualquer razão de riscos.
+
+**Gabarito: C.** **A:** estimativa pontual não estabelece certeza causal, e a interpretação frequentista do IC não é probabilidade posterior literal. **B:** não significância não prova ausência de efeito. **C:** descreve a incerteza de forma apropriada. **D:** valor nulo de razão é 1. **Mini-revisão:** para diferença de médias/risco a linha nula é 0; para razões, 1.
+
+### Questão 10 — GRADE em desfechos
+Ensaios de uma intervenção têm IC estreitos para mortalidade, mas registram somente sete casos de hemorragia grave no total. Qual opção reflete GRADE?
+
+A) Uma vez que o desenho é ensaio randomizado, todos os desfechos possuem certeza alta obrigatoriamente.  
+B) A certeza pode diferir por desfecho; eventos hemorrágicos raros podem levar a imprecisão apesar de evidência mais robusta para mortalidade.  
+C) GRADE mede apenas tamanho de amostra, sem considerar viés ou aplicação.  
+D) Uma recomendação forte implica que o estudo avaliou todas as populações do mundo.
+
+**Gabarito: B.** **A:** avaliação é por desfecho e domínios. **B:** poucos eventos podem produzir IC amplos e incerteza de dano. **C:** os domínios incluem viés, inconsciência? Não: **inconsistência**, indireção, imprecisão e viés de publicação. **D:** recomendação integra benefícios, danos, valores e recursos, e não pressupõe universalidade. **Mini-revisão:** certeza de evidência e força da recomendação são conceitos relacionados, mas distintos.
+
+### Questão 11 — Rastreamento e lead-time
+Em um grupo, o câncer é diagnosticado aos 65 anos e a pessoa morre aos 70. Em outro, é diagnosticado por rastreamento aos 60 e a pessoa também morre aos 70. Qual fenômeno é exemplificado?
+
+A) Redução comprovada de mortalidade pelo rastreamento.  
+B) Viés de tempo imortal em comparação de fármacos.  
+C) Viés de antecipação do diagnóstico (*lead-time*): maior sobrevida contada do diagnóstico sem postergar a morte.  
+D) Demonstração de cura.
+
+**Gabarito: C.** **A:** a idade da morte não mudou no exemplo. **B:** tempo imortal é fenômeno distinto de seleção temporal. **C:** sobrevida medida desde diagnóstico aumentou artificialmente. **D:** não houve mudança na evolução fatal. **Mini-revisão:** avaliar mortalidade, qualidade de vida e danos; rastrear mais não garante salvar mais.
+
+### Questão 12 — Avaliação econômica
+O novo tratamento custa R$ 30.000 e gera 3,0 QALYs; padrão custa R$ 20.000 e gera 2,5 QALYs, no mesmo horizonte/modelo. Qual é o ICER incremental do novo?
+
+A) R$ 10.000 por QALY.  
+B) R$ 20.000 por QALY.  
+C) R$ 50.000 por QALY.  
+D) O ICER não pode ser calculado sem p<0,05, mesmo dispondo dos custos e QALYs do modelo.
+
+**Gabarito: B.** Diferença de custo=10.000; de efetividade=0,5 QALY; ICER=10.000/0,5=**R$ 20.000/QALY**. **A:** usa custo incremental sem dividir pelo ganho. **C:** soma valores sem significado. **D:** a análise econômica tem incertezas próprias, mas o ICER pontual é calculável. **Mini-revisão:** para decidir incorporação, considerar evidência, custo-efetividade, impacto orçamentário, equidade e factibilidade.
+
+## 31. Bibliografia metodológica e aplicação brasileira
+
+1. **Ministério da Saúde / Conitec.** Portal de Diretrizes Metodológicas de Avaliação de Tecnologias em Saúde. Reúne manuais brasileiros de revisões sistemáticas, metanálises, GRADE, elaboração de diretrizes, avaliações econômicas e impacto orçamentário. https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas .
+2. **Cochrane.** *Cochrane Handbook for Systematic Reviews of Interventions*, versão 6.5 (2024). https://training.cochrane.org/handbook/current .
+3. **Hopewell S et al.** CONSORT 2025 statement: updated guideline for reporting randomised trials. *BMJ*. 2025;389:e081123. DOI 10.1136/bmj-2024-081123. https://www.bmj.com/content/389/bmj-2024-081123 .
+4. **Page MJ et al.** The PRISMA 2020 statement: updated guideline for reporting systematic reviews. *BMJ*. 2021;372:n71. https://www.equator-network.org/reporting-guidelines/prisma/ .
+5. **von Elm E et al.** The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement. Relato de observacionais. https://www.equator-network.org/reporting-guidelines/strobe/ .
+6. **Cochrane Bias Methods.** *RoB 2: A revised Cochrane risk-of-bias tool for randomized trials*. https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials .
+7. **Centre for Reviews and Dissemination, University of York.** PROSPERO — registro de protocolos de revisões sistemáticas elegíveis. https://www.crd.york.ac.uk/PROSPERO/ .
+8. **GRADE Working Group.** Informações, documentos e fundamentos da avaliação de certeza e recomendações. https://www.gradeworkinggroup.org/ .
+9. **CDC/NIH National Library of Medicine.** PubMed/MEDLINE, busca de literatura biomédica. https://pubmed.ncbi.nlm.nih.gov/ .
+10. **BVS/OPAS.** Biblioteca Virtual em Saúde; DeCS, LILACS e referências regionais. https://bvsalud.org/ .
+11. **EQUATOR Network.** Biblioteca de diretrizes de relato e descrição de escopo. https://www.equator-network.org/ .
+12. **Brasil.** Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018), aplicável ao tratamento de dados pessoais em saúde/pesquisa conforme bases legais e regulamentação. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm .
+
+**Nota de uso:** as referências são recursos originais de metodologia e regulação, não fontes de percentuais dos oito casos e doze questões; tais números foram criados como exercícios, e não como efeitos reais de medicamentos, testes ou programas. O estudante não deve aplicar um NNT ou VPP fictício a paciente real.
+
+## 32. Controle editorial do texto e próximos gates
+
+- [x] Tema nº 120 da sequência do Lote 6; não foi encontrada pasta pública ou rascunho específico no inventário inicial.
+- [x] Material comparativo do Google Drive **“Estudos Epidemiológicos.pdf”** aberto e lido; limitado a resumo de aproximadamente 3 mil caracteres, origem institucional do Estratégia MED não comprovada, sem reprodução de conteúdo.
+- [x] Estrutura científica própria de MBE: PICO, desenhos, riscos, vieses, causalidade, matemática de associação/benefícios, estatística inferencial, diagnóstico, Bayes, revisão sistemática, GRADE, Conitec e ética.
+- [x] **8 casos** fictícios comentados com raciocínio, números, interpretação e decisão.
+- [x] **12 questões** autorais com gabarito, justificativa alternativa por alternativa e mini-revisão.
+- [x] Fontes primárias metodológicas reais: manuais Conitec/Cochrane, PRISMA, CONSORT 2025, STROBE e RoB 2.
+- [ ] Auditoria científica **aritmética** independente e verificação de termos metodológicos; não assumir que ausência de exceções garante correção.
+- [ ] Executar matriz de autossuficiência com capítulo-base para cada questão, sem usar gabarito.
+- [ ] Verificar repetições semânticas e **≥60.000 caracteres didáticos úteis únicos**, excluindo casos, questões e bibliografia da medida principal.
+- [ ] Buscar fonte de benchmark extensa com autoria institucional confirmada, quando acessível; manter a limitação enquanto não houver.
+- [ ] Planejar até 10 figuras/diagramas com fonte e licença verificada, submetendo candidatas ao Admin. Para MBE, preferir **diagramas autorais** e fluxos didáticos aos bancos de imagens genéricas. Não incluir imagens ainda não aprovadas no HTML.
+- [ ] Converter corpo para entrada JSON do gerador e prévia LURIA; executar validadores oficiais e inspeção desktop/PWA.
+- [ ] Revisar editorialmente títulos, clareza, referências e cálculos antes de qualquer merge/deploy.
+- [ ] Manter **status RASCUNHO — NÃO PUBLICAR** até revisão independente.
