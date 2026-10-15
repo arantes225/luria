@@ -8,14 +8,14 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #studyrats-card .friends-ref-current-rat {display:flex!important;align-items:center;gap:8px;width:100px;min-height:64px!important;padding:4px 8px!important;background:color-mix(in srgb,var(--sf-violet) 8%,var(--color-surface));border-radius:12px;}
  #studyrats-card .friends-ref-current-rat>span {display:none;}
  #studyrats-card .studyrats-home-preview-stage {width:80px!important;height:58px!important;min-height:58px!important;overflow:visible!important;}
- #studyrats-home-preview-stage .studyrats-preview-composite {width:72px!important;height:50px!important;transform:scale(1.5)!important;}
+ #studyrats-home-preview-stage .studyrats-preview-composite {width:72px!important;height:50px!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%) scale(1.05)!important;}
  #studyrats-home-preview-stage .studyrats-rat-img {width:72px!important;height:50px!important;}
  #studyrats-card .studyrats-challenge {border-radius:15px;border:1px solid var(--color-border);overflow:hidden;background:var(--color-surface);}
  #studyrats-card .studyrats-challenge-head {padding:14px 16px;background:color-mix(in srgb,var(--sf-violet) 7%,var(--color-surface));}
  #studyrats-card .studyrats-challenge-title strong {font-size:16px!important;}
  #studyrats-card .studyrats-summary {gap:8px;padding:12px 16px;background:var(--color-surface);}
  #studyrats-card .studyrats-summary-item {padding:8px;border:1px solid var(--color-border);border-radius:9px;background:var(--color-surface-elevated);}
- #studyrats-card .studyrats-summary-item strong {font-size:12px!important;}
+ #studyrats-card .studyrats-summary-item strong {font-size:12px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip;overflow-wrap:anywhere;line-height:1.5;}
  #studyrats-card .sr-circuit {padding:16px;background:color-mix(in srgb,var(--sf-teal) 7%,var(--color-surface));border-radius:0;}
  #studyrats-card .sr-circuit-heading {font-size:12px;letter-spacing:.04em;color:var(--sf-teal);display:flex;justify-content:space-between;gap:8px;margin-bottom:14px;}
  #studyrats-card .sr-lanes {gap:10px;}
@@ -84,7 +84,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #studyrats-card .studyrats-race-footer {grid-column:1/-1;background:transparent;padding:12px 18px;}
  @media(max-width:1000px) {#studyrats-card .studyrats-challenge {grid-template-columns:1fr;}#studyrats-card .sr-standings {grid-column:1;flex-direction:row;flex-wrap:wrap;border-left:0;}.sr-standing {flex:1 1 150px;}#studyrats-card .sr-standings::before {width:100%;}#studyrats-card .sr-lane {grid-template-columns:120px minmax(0,1fr);}}
  @media(max-width:760px) {#studyrats-card {grid-row:4;padding:16px!important;}}
- @media(max-width:650px) {#studyrats-card .sr-lane {display:block;min-height:145px;}#studyrats-card .sr-person {padding:10px 12px 0;}#studyrats-card .sr-road {height:110px;margin-inline:65px;}#studyrats-card .sr-circuit {padding:12px;}#studyrats-card .studyrats-summary {gap:12px;}#studyrats-card .friends-ref-studyrats-head {gap:12px;}#studyrats-card .friends-ref-studyrats-titleline h2 {font-size:22px!important;}}
+ @media(max-width:650px) {#studyrats-card .friends-ref-studyrats-actions {display:grid!important;grid-template-columns:84px minmax(0,1fr);width:100%;gap:8px!important;}#studyrats-card .friends-ref-current-rat {grid-column:1;grid-row:1/3;width:84px;min-height:96px!important;box-sizing:border-box;justify-content:center;}#studyrats-card .friends-ref-studyrats-actions>.button {grid-column:2;min-width:0;width:100%;min-height:44px!important;font-size:12px!important;margin:0;}#studyrats-card .sr-lane {display:block;min-height:145px;}#studyrats-card .sr-person {padding:10px 12px 0;}#studyrats-card .sr-road {height:110px;margin-inline:65px;}#studyrats-card .sr-circuit {padding:12px;}#studyrats-card .studyrats-summary {gap:12px;}#studyrats-card .friends-ref-studyrats-head {gap:12px;}#studyrats-card .friends-ref-studyrats-titleline h2 {font-size:22px!important;}}
 
 }
 }

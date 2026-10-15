@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-social-rat-lighting-20261014";
+const CACHE_VERSION = "luria-pwa-social-rat-layout-20261014";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -43,7 +43,7 @@ const APP_SHELL = [
   "/assets/css/social-v4.css?v=9",
   "/assets/css/social-friends.css?v=11",
   "/assets/css/social-groups.css?v=5",
-  "/assets/css/social-rats.css?v=7",
+  "/assets/css/social-rats.css?v=8",
   "/assets/css/social-rooms-design.css?v=12",
   "/assets/css/social-responsive.css?v=4",
   "/assets/js/social-view.js?v=composition2",
