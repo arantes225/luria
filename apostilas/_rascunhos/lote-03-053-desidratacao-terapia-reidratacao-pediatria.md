@@ -201,3 +201,331 @@ A distribuição hídrica, função renal e perdas insensíveis do recém-nascid
 ### 9.5 Choque séptico versus hipovolemia simples
 
 Infecção grave pode causar vasodilatação, extravasamento capilar, miocardite/disfunção de bomba e perfusão inadequada; a apresentação pode coexistir com diarreia, mas reposição exige reavaliação após cada etapa e consideração de antibioticoterapia e suporte vasoativo conforme protocolo. O fato de a criança estar com fezes líquidas não exclui sepse. Monitorar perfusão, respiração, hepatomegalia, crepitações e diurese ajuda detectar falta de resposta ou sobrecarga.
+
+
+## 10. Algoritmos por cenário: como transformar exame em conduta
+
+### 10.1 Criança com diarreia e estado geral preservado
+
+1. Aferir peso e sinais vitais apropriados à idade.
+2. Investigar número de evacuações, vômitos, diurese, capacidade de beber, amamentação e febre.
+3. Avaliar sinais de desidratação e perfusão; se não há déficit clínico, seguir **Plano A**.
+4. Orientar SRO após perdas, leite materno e alimentação habitual, preparo correto e sinais de retorno.
+5. Em criança com fatores de risco (idade baixa, fragilidade social, doenças prévias), adaptar seguimento e considerar observação se cuidador não consegue executar plano.
+6. Registrar orientação e verificar que o cuidador consegue explicar e demonstrar preparo.
+
+**Raciocínio:** oferecer mais líquido antes da desidratação não é mera medida de conforto; interrompe progressão para perda circulante. A frequência de diarreia informa risco, mas não determina sozinha a classificação.
+
+### 10.2 Criança desidratada, alerta e com sede intensa
+
+1. Procurar sinais de choque e causas que mudam protocolo; não iniciar Plano B se há má perfusão importante.
+2. Se há desidratação sem gravidade e a via oral é segura, iniciar SRO na unidade.
+3. Administrar de forma fracionada, com progressão conforme sede/tolerância; avaliar necessidade de 75 mL/kg/4h como referência de protocolo AIDPI/OMS e ajustar à clínica.
+4. Monitorar olhos, mucosas, pulso, tempo de enchimento capilar, comportamento e diurese.
+5. Reavaliar repetidamente. Se melhora, mudar para Plano A; se piora ou não tolera, reconsiderar via nasogástrica/venosa conforme circunstâncias.
+6. Procurar complicações e diagnósticos alternativos se há febre alta, sangue nas fezes, dor focal, letargia ou alterações desproporcionais.
+
+**Raciocínio:** a falha de SRO frequentemente está relacionada à administração inadequada, sem fracionamento ou com volume grande de uma só vez. Uma criança que vomita uma vez após ingestão rápida não necessariamente precisa de acesso IV, mas deve ser reavaliada se não consegue beber de fato.
+
+### 10.3 Criança com má perfusão, letargia e incapacidade de beber
+
+1. Reconhecer risco de choque/desidratação grave, avaliar via aérea, respiração, pulso, perfusão e glicemia.
+2. Acionar equipe capacitada e acesso vascular apropriado sem atrasar encaminhamento urgente.
+3. Iniciar solução isotônica conforme protocolo e etiologia, com reavaliação após cada etapa. Não usar regras únicas para cetoacidose, cardiopatia, desnutrição grave e outras condições especiais.
+4. Monitorar nível de consciência, perfusão, PA, FC, FR, temperatura e diurese; investigar infecção, sangramento, DKA e outros diferenciais.
+5. Em desidratação grave por diarreia sem exceções, seguir Plano C operacional do serviço, com volumes/tempos atualizados por idade e resposta.
+6. Iniciar SRO quando seguro e possível e preparar transição para alimentação e via oral.
+
+**Raciocínio:** a classificação de gravidade depende da perfusão e capacidade de ingerir, não só do número de fraldas. Um paciente com choque não deve permanecer sob esquema domiciliar ou aguardando que sede corrija perda circulante.
+
+## 11. Regras práticas de cálculo sem mecanizar a prescrição
+
+### 11.1 Déficit estimado a partir do peso
+
+Imagine uma criança que antes pesava 14,0 kg e agora pesa 13,3 kg, com diferença temporal compatível com doença aguda sem mudança de massa nutricional significativa. Perda de 0,7 kg representa cerca de 700 mL de água corporal e percentual de 0,7/14,0 × 100 ≈ 5%. Isso ajuda a comunicar magnitude, mas não resolve sozinho qual fluido e ritmo: a criança pode ter disnatremia, hipoperfusão ou novas perdas. Peso atual é essencial para cálculo de doses, mas a confiabilidade do peso basal precisa ser questionada.
+
+Se antes pesava 9,2 kg e agora 8,6 kg, a diferença é 600 g ou 0,6/9,2 × 100 ≈ 6,5%. O cálculo serve para aproximar déficit, especialmente quando a informação é confiável. Se a medida anterior foi feita com roupa ou há grande edema, o resultado pode ser enganoso. Não usar um percentual estimado para ignorar sinais de choque.
+
+### 11.2 Referência de SRO inicial em determinado Plano B
+
+A diretriz AIDPI/OMS frequentemente usa 75 mL/kg como referência inicial em quatro horas para criança com desidratação não grave e indicação de SRO. Para **12 kg**, isso corresponde a 900 mL de volume orientador. Esse número não pretende obrigar a administração fixa independentemente de tolerância, mas fornecer ordem de grandeza e permitir monitorização da oferta. Em documentos brasileiros, a ingestão contínua conforme sede e reavaliação é central. Assim, registrar quanto realmente foi ingerido e como a criança respondeu tem mais valor do que escrever apenas “foi prescrito 900 mL”.
+
+### 11.3 Plano C clássico para desidratação grave por diarreia
+
+**Exemplo exclusivamente didático:** criança de 14 meses com indicação protocolar de 100 mL/kg, sem choque que exija estratégia de ressuscitação distinta e sem condições especiais, pesando 10 kg. Volume total da fase de reidratação: 1.000 mL. No esquema AIDPI para idade ≥1 ano, aproximadamente 300 mL iniciais em 30 minutos e 700 mL subsequentes em 2h30, com reavaliação frequente. Essa referência não constitui prescrição pronta para criança instável ou com hipernatremia. O plano de choque e o documento MS vigente do serviço prevalecem.
+
+Em lactente de 9 meses com 8 kg, esquema clássico equivale a 800 mL, sendo 240 mL em 1 hora e 560 mL em 5 horas, **se** essa estratégia for apropriada após avaliação clínica. A diferença de tempo por idade explica por que calcular 100 mL/kg sem conferir janela etária é insuficiente.
+
+### 11.4 Manutenção não é expansão
+
+Em criança de 18 kg, estimativa Holliday–Segar = 1.000 mL para os primeiros 10 kg + 8×50 = 1.400 mL/dia, cerca de 58 mL/h se dividido uniformemente. Não somar automaticamente 58 mL/h à expansão sem reavaliar volume total, diurese, risco de edema e ingestão oral. De modo semelhante, um lactente com diarreia sem desidratação não exige instalação de soro venoso apenas porque manutenção “deu 800 mL por dia”.
+
+### 11.5 Evitar erro de cálculo por arredondamento e unidades
+
+Os valores em mL/kg resultam de multiplicar peso em quilogramas pelo volume por quilo; não confundir dose por quilograma **por dia** com dose total **em uma hora**. Se uma criança pesa 9 kg, 30 mL/kg são 270 mL — não 30 mL/h. A taxa de infusão depende do tempo de administração, da solução e do controle assistencial. Em sistema eletrônico, o calculador deve exigir unidade, peso, idade e finalidade do volume (expansão, déficit, manutenção, perdas), e apresentar aviso quando houver condição especial.
+
+## 12. Diagnóstico diferencial de criança com pouca urina e mucosas secas
+
+| Diagnóstico | Pistas | Exames quando indicados | Ponto crítico |
+|---|---|---|---|
+| Desidratação por gastroenterite | Diarreia/vômitos, sede, diminuição da diurese | Geralmente clínico; eletrólitos em casos graves | Reidratação é medida principal |
+| Cetoacidose diabética | Poliúria anterior, polidipsia, emagrecimento, respiração profunda | Glicose, cetonas, gasometria/eletrólitos | Precisa protocolo próprio |
+| Choque séptico | Febre/hipotermia, perfusão ruim, prostração, infecção suspeita | Avaliação infecciosa e choque | Requer abordagem imediata de sepse |
+| Insuficiência renal aguda | Oligúria persistente, possível edema, alteração laboratorial | Função renal, eletrólitos, urina | Excesso de fluidos pode agravar sobrecarga |
+| Obstrução intestinal | Vômitos biliosos, distensão, dor importante | Imagem abdominal dirigida | Hidratação não substitui cirurgia |
+| Hipernatremia | Irritabilidade, sede, história de baixa água livre | Sódio, glicose, função renal | Correção de tonicidade precisa controle |
+| Hiponatremia sintomática | Letargia, convulsões, ingestão hipotônica | Sódio, glicose, osmolalidade conforme cenário | Pode demandar salina hipertônica em emergência |
+| Desnutrição aguda grave | Emagrecimento/edema nutricional, antropometria anormal | Avaliação nutricional/metabólica | Protocolos de reidratação diferenciados |
+| Insuficiência cardíaca | Taquipneia, hepatomegalia, edema, dificuldade alimentar | Eco e demais exames conforme suspeita | Bolus indiscriminado pode causar dano |
+| Diabetes insipidus | Poliúria desproporcional, sede intensa, hipernatremia | Sódio, osmolalidade urinária/plasmática | Perda de água livre e etiologia hormonal |
+
+O objetivo da tabela não é fazer exame em todo paciente com diarreia, mas impedir fechamento prematuro de hipótese diante de sinais que fogem do padrão de gastroenterite simples.
+
+## 13. Seis casos clínicos comentados
+
+### Caso 1 — Diarreia sem desidratação: ensinar Plano A de verdade
+
+**Apresentação:** menina de 2 anos, diarreia aquosa há 24 horas, cinco evacuações, um episódio de vômito, sem sangue ou febre importante. Bebe água, mama ocasionalmente, mantém diurese, está ativa. Pulsos e perfusão preservados, sem olhos fundos ou prega lenta.
+
+**Hipótese:** doença diarreica aguda sem desidratação clínica.
+
+**Raciocínio:** número de evacuações sugere risco de perda futura, mas exame atual não demonstra desidratação. É desnecessário instalar acesso intravenoso ou prescrever antibiótico sem sinais específicos. Prevenção e educação são prioridades.
+
+**Exames:** geralmente nenhum laboratorial; avaliar epidemiologia, vacinação e contexto. A investigação etiológica da diarreia fica reservada a situações indicadas (aula 058).
+
+**Conduta:** Plano A, SRO após perdas, manter alimentação e amamentação, orientar sinais de gravidade, preparo e retorno, avaliar zinco conforme recomendação vigente e idade. Demonstrar pequenos goles se há náusea.
+
+**Por que importa:** o primeiro objetivo da reidratação é impedir que criança ainda hidratada desenvolva choque, evitando exames e internações desnecessários.
+
+### Caso 2 — Desidratação sem choque e vômitos durante SRO
+
+**Apresentação:** menino de 17 meses, peso atual 10 kg, diarreia e vômitos por 36 horas. Irritado, com sede intensa, olhos fundos, mucosa seca e diurese reduzida. Perfusão periférica ainda preservada, está desperto e consegue beber. Após beber rapidamente grande copo de SRO, vomita uma vez.
+
+**Hipótese:** desidratação sem gravidade, potencialmente tratável por via oral.
+
+**Raciocínio:** vômito após grande oferta rápida não define falha de SRO. O cotransporte glicose-sódio permite absorção, mas precisa de oferta fracionada. O paciente deve permanecer na unidade, sob observação e reavaliação, sem ser dispensado com apenas orientação vaga.
+
+**Exames:** geralmente exame clínico seriado; eletrólitos se evolução atípica, gravidade ou falha importante. Peso e diurese são úteis.
+
+**Conduta:** Plano B com SRO em pequenos volumes frequentes, aumentando oferta conforme tolerância, reavaliar sinais e perdas. Caso incapacidade persistente de ingerir, piora de perfusão ou alteração mental, escalonar abordagem. Depois de hidratado, Plano A e alimentação habitual.
+
+**Por que importa:** evita acesso venoso desnecessário sem banalizar o risco de progressão.
+
+### Caso 3 — Lactente com desidratação grave e hipoperfusão
+
+**Apresentação:** lactente de 8 meses, 8 kg, diarreia profusa há dois dias, pouca ingestão, sem diurese observada nas últimas horas. Está letárgico, extremidades frias, enchimento capilar prolongado e pulsos periféricos fracos; não consegue mamar adequadamente.
+
+**Hipótese:** desidratação grave com risco de choque hipovolêmico.
+
+**Raciocínio:** incapacidade de ingerir, alteração mental e perfusão ruim excluem manejo domiciliar/Plano B convencional. Necessita avaliação imediata de via aérea, respiração, perfusão, glicemia e acesso, com ressuscitação por equipe habilitada. O cronograma de Plano C é ponto de referência para desidratação grave por diarreia, mas choque requer reavaliação e plano de emergência adequado.
+
+**Exames:** glicemia e eletrólitos/avaliação de função renal segundo gravidade; gasometria em acidose/hipoperfusão importante. Não atrasar reposição de volume adequada.
+
+**Conduta:** iniciar tratamento venoso isotônico urgente conforme protocolo e resposta, monitorizar frequentemente, reavaliar após cada etapa e procurar sepse/diferenciais quando pertinente. Oferecer SRO assim que seguro e planejar transição. Transferir para hospital com suporte pediátrico se unidade não o possui.
+
+**Por que importa:** pressão arterial pode permanecer normal até choque avançado no lactente, e falha de reconhecimento é mais perigosa que erro fino de percentual estimado.
+
+### Caso 4 — Hipernatremia em criança com perda de água livre
+
+**Apresentação:** lactente de 5 meses com febre e ingestão insuficiente, sem diarreia expressiva, perde peso em poucos dias. Está irritável, com mucosas secas, relativamente pouca prega cutânea e sódio sérico de 158 mmol/L. Perfusão encontra-se preservada após avaliação, sem sinais de choque.
+
+**Hipótese:** desidratação hipernatrêmica, com água deficitária proporcionalmente maior.
+
+**Raciocínio:** a ausência de prega acentuada não afasta déficit, pois tonicidade e deslocamentos intracelular/extracelular alteram semiologia. Corrigir rapidamente o sódio como se fosse desidratação isotônica pode provocar mudança osmótica cerebral perigosa. É necessário calcular e acompanhar plano específico, com monitorização seriada de sódio, glicemia e diurese.
+
+**Exames:** eletrólitos seriados, função renal, glicose, avaliação do estado hídrico e, conforme etiologia, exames urinários. Procurar erro de diluição de fórmula, dificuldade de amamentação e outros fatores.
+
+**Conduta:** internação/monitorização conforme gravidade e recursos, correção controlada da tonicidade e déficit, com equipe pediátrica experiente. Se aparecer choque, priorizar perfusão com solução apropriada em abordagem monitorizada antes de definir ritmo de correção de hipernatremia.
+
+**Por que importa:** o tipo de distúrbio eletrolítico determina segurança da velocidade de hidratação.
+
+### Caso 5 — Diabetes inicial confundido com gastroenterite
+
+**Apresentação:** menino de 8 anos, emagrecimento e sede intensa por semanas, urina abundantemente, chega com vômitos, dor abdominal e respiração profunda. Mucosas secas e taquicardia. A família diz “deve ser virose”.
+
+**Hipótese:** cetoacidose diabética até prova em contrário, com desidratação osmótica.
+
+**Raciocínio:** a história de poliúria e polidipsia precedente diferencia de diarreia aguda típica. Respiração profunda pode ser compensação de acidose metabólica, e glicemia deve ser medida logo. Não aplicar Plano C padrão de diarreia nem iniciar insulina sem avaliar potássio e monitorização especializada.
+
+**Exames:** glicemia capilar imediata, cetonas, gasometria e eletrólitos, função renal e investigação de desencadeante conforme apresentação.
+
+**Conduta:** abordagem emergencial de cetoacidose conforme protocolo pediátrico com fluido, insulina e potássio temporizados, suporte e monitorização; investigar edema cerebral e complicações. Encaminhar a unidade capaz de manter segurança.
+
+**Por que importa:** um mesmo sinal — desidratação — exige protocolos radicalmente diferentes conforme causa.
+
+### Caso 6 — Desnutrição grave e edema, uma armadilha de volume
+
+**Apresentação:** criança de 20 meses com emagrecimento importante, edema simétrico de pés, diarreia aquosa e apatia. Mucosas parecem secas e o cuidador relata poucas fraldas molhadas. Não há sinais inequívocos de choque, mas exame é limitado pela desnutrição.
+
+**Hipótese:** desnutrição aguda grave com possível desidratação, eletrolíticos alterados e risco infeccioso.
+
+**Raciocínio:** turgor e olhos podem ser enganosos na desnutrição. Uma expansão rápida e volumosa de solução isotônica como em criança eutrófica com diarreia pode produzir sobrecarga, sobretudo quando não há choque. Protocolos OMS para desnutrição grave com desidratação sem choque são diferentes, frequentemente com soluções adaptadas e ritmos cautelosos.
+
+**Exames:** avaliação nutricional por antropometria e edema, eletrólitos, glicemia e sinais de infecção, conforme necessidade de internação e tratamento.
+
+**Conduta:** equipe experiente em desnutrição grave, avaliação e correção de hipoglicemia/hipotermia e infecção, reidratação conforme protocolo especial, observação de sobrecarga e alimentação terapêutica adequada. Quando choque é identificado, seguir protocolo específico de desnutrição grave.
+
+**Por que importa:** um algoritmo seguro em uma população pode causar dano quando aplicado a outra sem observar fisiologia.
+
+## 14. Dez questões de residência, com justificativa de todas as alternativas
+
+### Questão 1 — Mecanismo da reidratação oral
+
+A SRO é eficaz em grande parte das diarreias secretórias porque:
+
+A. Elimina imediatamente o patógeno causador.
+B. Aproveita cotransporte intestinal de glicose e sódio, favorecendo absorção de água.
+C. Impede mecanicamente todas as evacuações.
+D. Substitui necessidade de avaliar perfusão.
+
+**Gabarito B.** A: não é agente etiológico. C: diarreia pode continuar enquanto hidratação melhora. D: exame clínico é essencial e choque requer cuidado diferente. **Minirrevisão:** SGLT1 auxilia absorção mesmo em diarreia (§1.2).
+
+### Questão 2 — Criança sem desidratação
+
+Criança de 2 anos com diarreia, alerta, diurese preservada, boa perfusão e aceitando líquidos. Plano de manejo correto no MS:
+
+A. Plano A com líquidos/SRO após perdas, alimentação mantida e sinais de alarme.
+B. Plano C imediato para todos.
+C. Antibiótico obrigatório independente de sinais.
+D. Jejum por 48 horas.
+
+**Gabarito A.** B: via venosa sem indicação pode causar dano. C: antibiótico não é universal. D: jejum piora nutrição sem corrigir processo. **Minirrevisão:** Plano A previne desidratação antes de ela existir (§4.1).
+
+### Questão 3 — Criança desidratada e capaz de beber
+
+Criança com sede intensa, olhos fundos e mucosa seca, ainda desperta, sem hipoperfusão importante, consegue beber. Qual opção é adequada?
+
+A. Plano B supervisionado com SRO e reavaliação até desaparecerem sinais.
+B. Suspender todos os líquidos por vomitar uma vez.
+C. Internação em UTI obrigatória sem avaliação.
+D. Somente água pura em grande volume para “diluir” a diarreia.
+
+**Gabarito A.** B: vômito isolado não obriga abandono de SRO. C: intensidade sem choque pode ser tratada na unidade. D: água pura não substitui perdas eletrolíticas adequadamente. **Minirrevisão:** via oral é preferida quando segura, com reavaliação (§4.2).
+
+### Questão 4 — Plano C AIDPI por faixa etária
+
+No esquema de referência AIDPI para desidratação grave por diarreia em criança sem condições especiais, um lactente de oito meses tem distribuição clássica de 100 mL/kg:
+
+A. 30 mL/kg em uma hora, depois 70 mL/kg em cinco horas.
+B. 100 mL/kg em cinco minutos sem monitorização.
+C. 30 mL/kg em 24 horas e depois 70 mL/kg no mês seguinte.
+D. Apenas SRO domiciliar em choque.
+
+**Gabarito A.** B: bolus maciço indiscriminado pode provocar dano. C: não corresponde a reidratação. D: choque requer atendimento urgente. **Minirrevisão:** cronograma por idade não substitui manejo de choque ou comorbidades (§4.3).
+
+### Questão 5 — Volumes de manutenção
+
+Pelo cálculo clássico de Holliday–Segar, a manutenção diária estimada para criança de 15 kg é:
+
+A. 750 mL/dia.
+B. 1.250 mL/dia.
+C. 2.500 mL/dia.
+D. 150 mL/dia.
+
+**Gabarito B.** Primeiros 10 kg = 1.000 mL; cinco kg adicionais ×50 = 250 mL, total 1.250 mL. A, C e D aplicam fórmulas incorretas. **Minirrevisão:** manutenção não equivale a expansão ou reposição de déficit (§6.1).
+
+### Questão 6 — Hipernatremia e reidratação
+
+Criança sem choque apresenta sódio 158 mmol/L após baixa ingestão. A atitude mais segura é:
+
+A. Corrigir sódio indiscriminadamente em minutos com grandes quantidades de água livre.
+B. Planejar correção e monitorização seriada, reconhecendo risco de mudanças osmóticas cerebrais.
+C. Não medir sódio novamente em nenhuma circunstância.
+D. Aplicar o mesmo Plano C de toda diarreia sem avaliação adicional.
+
+**Gabarito B.** A: correção rápida pode causar edema cerebral. C: monitorização é importante. D: disnatremia muda segurança do protocolo. **Minirrevisão:** tonicidade e perfusão são dimensões diferentes (§8).
+
+### Questão 7 — Vômitos e reidratação oral
+
+Criança tolera pequenos goles, mas vomita após ingestão rápida de SRO. Qual conduta faz mais sentido?
+
+A. Recomeçar com pequenos volumes frequentes e reavaliar.
+B. Concluir que todo tratamento oral falhou para sempre.
+C. Administrar refrigerante hiperaçucarado como solução equivalente à SRO.
+D. Suspender aleitamento materno automaticamente.
+
+**Gabarito A.** B: uma tentativa inadequada não define falha. C: composição osmótica/eletrolítica diferente. D: aleitamento deve continuar conforme segurança. **Minirrevisão:** técnica de administração é parte do tratamento (§5).
+
+### Questão 8 — Lactente letárgico e pouca perfusão
+
+Menino de nove meses com diarreia e letargia está frio, com pulsos fracos e sem capacidade de beber. Melhor decisão:
+
+A. Apenas orientação de Plano A e alta.
+B. Plano B domiciliar sem supervisão.
+C. Avaliação emergencial e ressuscitação parenteral conforme protocolo, com reavaliação frequente.
+D. Oferecer apenas comida sólida por 24h.
+
+**Gabarito C.** A/B: risco de choque exige cuidado imediato. D: não restaura circulação. **Minirrevisão:** reconhecer perfusão ruim mesmo se pressão ainda não caiu (§3).
+
+### Questão 9 — Desnutrição aguda grave
+
+Criança com edema nutricional, emagrecimento e suspeita de desidratação, sem choque evidente. A conduta correta envolve:
+
+A. Aplicar grandes volumes de Plano C padrão em todos.
+B. Ignorar perda hídrica porque há edema.
+C. Avaliar e reidratar conforme protocolo específico para desnutrição grave, com atenção a sobrecarga.
+D. Prescrever potássio sem avaliar função renal ou eletrólitos.
+
+**Gabarito C.** A: risco de sobrecarga e composição específica de fluidos. B: edema não exclui déficit. D: distúrbios precisam de avaliação e doses apropriadas. **Minirrevisão:** sinais clínicos e capacidade cardíaca diferem na desnutrição grave (§9.1).
+
+### Questão 10 — Cetoacidose e desidratação
+
+Criança com vômitos, poliúria, polidipsia, perda de peso e respiração profunda exige inicialmente:
+
+A. Investigar hiperglicemia/cetonemia e acidose, seguindo protocolo de cetoacidose se confirmado.
+B. Definir gastroenterite banal e suspender avaliação.
+C. Antibiótico automático por todos os vômitos.
+D. Aplicar SRO como único tratamento independentemente do estado mental.
+
+**Gabarito A.** B: ignora história de diabetes. C: antibiótico depende de infecção. D: DKA exige estratégia metabólica e hídrica distinta. **Minirrevisão:** o diagnóstico etiológico determina ritmo e composição da reposição (§9.2).
+
+## 15. Matrizes de revisão e segurança de prescrição
+
+| Pergunta essencial | Conduta/raciocínio | Se a resposta for ruim |
+|---|---|---|
+| Consegue beber e proteger via aérea? | Considerar SRO quando seguro | Reavaliar via venosa/sonda e urgência |
+| Perfusão adequada? | Avaliar pulsos, enchimento, consciência, FR e PA | Suspeitar de choque e iniciar abordagem de emergência |
+| Qual a causa de perda? | DDA, baixa ingesta, renal, DKA, sepse, queimadura | Não aplicar fórmula indiferenciada |
+| Existe disnatremia importante? | Dosar quando indicado e planejar tonicidade | Evitar correção rápida sem controle |
+| É desnutrido grave ou tem cardiopatia/DRC? | Usar protocolo específico | Evitar sobrecarga e complicações |
+| Qual a via e o volume efetivamente administrado? | Registrar SRO, venoso, alimentação e perdas | Ajustar pela resposta, não apenas pela prescrição |
+| Melhorou após reidratação? | Plano A/alta com segurança quando adequado | Continuar investigação, observação ou internação |
+| Cuidador sabe preparar SRO e reconhecer gravidade? | Demonstração e orientações escritas | Reforçar treinamento ou suporte |
+
+## 16. Camada visual: 10 ideias com destino e indicação
+
+**Candidatas ainda não aprovadas; nenhuma imagem externa foi baixada ou publicada.** Para imagens clínicas e diagramas externos, verificar licença individual, qualidade e adequação, converter a WebP nos limites da LURIA, atribuir fonte e enviar ao Admin.
+
+1. **Exame físico de perfusão em lactente**, foto/ilustração clínica autorizada de enchimento capilar; seção 3.
+2. **Comparação de mucosa/olhos** em estado normal e desidratação, com alerta sobre limitações dos sinais; seção 3.
+3. **Diagrama autoral SGLT1 intestino**, transporte glicose-sódio-água e composição SRO; seção 1.2.
+4. **Esquema de água extracelular/intracelular**, tonicidade normal, hipo e hipernatremia; seções 1 e 8.
+5. **Fluxograma original A/B/C**, decisões por estado de hidratação e capacidade de beber; seção 4.
+6. **Gráfico autoral do Plano B**, oferta fracionada, reassessment e perda contínua; seção 4.
+7. **Quadro de cálculo por idade/peso**, AIDPI Plano C e alerta de choque/contextos especiais; seções 4 e 11.
+8. **Ilustração real de sachê SRO e preparo**, embalagem padronizada com licença/autor confirmado; seção 5.
+9. **Curva hipotética de correção de sódio** mostrando risco de mudança rápida, claramente didática e não dado de paciente; seção 8.
+10. **Tabela visual de manutenção Holliday–Segar e exemplos de volumes**, criada originalmente com acessibilidade; seção 6.
+
+## 17. Referências e auditoria preliminar
+
+- Ministério da Saúde. Doenças diarreicas agudas (DDA): tratamento e Planos A/B/C. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda .
+- Ministério da Saúde. Manejo do paciente com diarreia: avaliação do estado do paciente (atualizado em 10/07/2026). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente .
+- Ministério da Saúde. AIDPI Criança, manual de quadros de procedimentos para 2 meses a 5 anos. https://bvsms.saude.gov.br/bvs/publicacoes/manual_quadros_procedimentos_aidpi_crianca_2meses_5anos.pdf .
+- WHO/UNICEF. The treatment of diarrhoea (2005). https://pmnch.who.int/resources/publications/i/item/the-treatment-of-diarrhoea .
+- WHO. Severe acute malnutrition: dehydration without shock. https://www.who.int/tools/elena/interventions/dehydration-sam .
+- WHO. Diarrhoea: health topic, prevenção e terapêutica. https://www.who.int/health-topics/diarrhoea .
+
+**Auditoria checklist:**
+- [x] Tema 053 distinguido da aula 058 sem copiar conteúdo etiológico completo.
+- [x] Buscas reais no Drive documentadas e PDF correlato lido; **benchmark específico ainda não localizado**.
+- [x] Base fisiológica, diagnóstico, estratégias A/B/C, manutenção e exceções de segurança.
+- [x] Seis casos clínicos comentados e dez questões autorais com justificativa.
+- [x] Planejamento de dez imagens, sem presumir licença nem publicar.
+- [ ] Leitura completa do cartaz técnico MS atualizado em julho de 2026 e reconciliação pontual com tabelas AIDPI; não parametrizar calculadora antes.
+- [ ] Revisão das doses atuais de zinco, antieméticos, dispositivos e manuais de reidratação para neonatos, hipernatremia e desnutrição grave.
+- [ ] Benchmark comparável específico de desidratação infantil, se disponível no acervo privado.
+- [ ] Auditoria de 60 mil caracteres **didáticos úteis**, eliminando tabelas, casos, questões, bibliografia e repetições; sem considerar texto bruto suficiente.
+- [ ] Revisão científica independente, imagens aprovadas, HTML/renderer e testes desktop/PWA.
+
+**Parecer:** RASCUNHO DE ENSINO, ainda não aprovado para decisão clínica autônoma nem publicado. A régua de publicação exige validar volumes e exceções, pois prescrição errada de fluidos pediátricos pode causar dano.
