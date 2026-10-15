@@ -421,7 +421,113 @@ Posicionamento, ventilação, perfusão materna, exposição anatômica e segura
 - Reavaliar e reconhecer complicações é parte da operação, mesmo depois do fechamento.
 
 
-## 22. Casos clínicos originais extensos — em construção
+## 22. Oito casos clínicos integradores com interpretação e conduta
+
+Os casos seguintes são originais e fictícios, criados para demonstrar decisões técnicas e de segurança. Nenhum substitui treinamento cirúrgico supervisionado; as recomendações devem ser compatibilizadas com protocolo institucional e competência da equipe.
+
+### Caso 1 — Laceração contaminada com tecido desvitalizado: fechar ou não fechar?
+
+**Apresentação.** Homem de 36 anos sofre acidente rural e procura serviço após ferimento lacerocontuso de cerca de 8 cm na perna. Há terra, material orgânico, bordas irregulares e áreas de tecido de viabilidade duvidosa. Refere dor local, mas está hemodinamicamente estável. Sensibilidade distal, movimento dos dedos e perfusão precisam ser examinados e registrados. Histórico de vacinação antitetânica é incerto.
+
+**Diagnóstico sindrômico e hipóteses.** Ferida traumática contaminada com risco de infecção, corpo estranho e perda de viabilidade. Diferenciais associados: lesão de tendão, nervo, vaso, fratura aberta, corpo estranho retido e início de infecção profunda. Não é possível avaliar segurança do fechamento apenas pelo comprimento da laceração.
+
+**Exames e avaliação.** Examinar pulso, enchimento capilar, função muscular e sensitiva, profundidade e extensão; imagem para corpo estranho/fratura quando mecanismo e exame justificarem. Exploração e irrigação/desbridamento devem ocorrer em ambiente, técnica e analgesia apropriados; não realizar exploração agressiva às cegas sobre trajeto vascular.
+
+**Interpretação.** A presença de terra, detritos e tecido desvitalizado eleva risco de ISC. Fechar de imediato sob tensão e com material orgânico residual pode aprisionar contaminação. A decisão envolve viabilidade, local, capacidade de limpeza e seguimento, não regra fixa baseada só nas horas transcorridas.
+
+**Conduta.** Controlar hemorragia; avaliar e tratar lesões profundas ou transferir quando necessário; irrigar e remover material estranho/desvitalizado sob técnica adequada; revisar necessidade de profilaxia antitetânica e antimicrobianos conforme cenário; decidir fechamento primário, primário tardio ou segunda intenção com reavaliação documentada. Dar orientações de sinais de infecção e retorno.
+
+**Erro evitável.** “A ferida é de hoje, portanto tem que levar todos os pontos agora.” **Por que importa:** a indicação e o momento de síntese dependem da biologia e do risco de infecção.
+
+### Caso 2 — Sangramento arterial adjacente a nervo durante dissecção
+
+**Apresentação.** Durante cirurgia eletiva em região anatômica com feixe vasculonervoso, surge sangramento pulsátil que reduz visualização. Um integrante sugere clampear amplamente o tecido em bloco para interromper fluxo. A pressão arterial do paciente começa a cair.
+
+**Hipótese.** Lesão vascular operatória com risco de hipoperfusão sistêmica e lesão neurológica por manobra hemostática inadequada. Os diagnósticos concorrentes da hipotensão, como efeito anestésico e perda volêmica, devem ser considerados em paralelo.
+
+**Exames e interpretação.** Avaliar perda estimada, resposta hemodinâmica, hemoglobina/coagulação e exames direcionados conforme magnitude. Mais importante que o exame é recuperar a visão da anatomia. O sangramento pulsátil sugere vaso sob pressão; clampeamento cego pode incluir nervo ou estrutura próxima, convertendo hemorragia em lesão irreversível.
+
+**Conduta.** Comunicar intercorrência, aplicar compressão temporizadora, otimizar aspiração, ampliar exposição e isolar a fonte para hemostasia definitiva por técnica apropriada; pedir ajuda vascular/cirúrgica quando necessário. A anestesia prepara suporte circulatório e hemoterápico proporcional. Não manter procedimento minimamente invasivo se exposição impossibilitar reparo seguro.
+
+**Erro evitável.** Repetir energia monopolar em tecido não identificado junto a nervo. **Por que importa:** hemostasia exige identificação anatômica e controle fisiológico, não gesto rápido isolado.
+
+### Caso 3 — Incisão limpa com prótese, cirurgia prolongada e antibiótico
+
+**Apresentação.** Mulher de 62 anos com obesidade e diabetes programada para cirurgia limpa com implante. Foi feita antibioticoprofilaxia antes da incisão. Durante o procedimento há extensão importante do tempo operatório e perda sanguínea acima da prevista. A equipe propõe manter antibiótico por sete dias para “proteger o implante e o dreno”.
+
+**Hipótese.** Operação com risco aumentado de infecção por duração, paciente e prótese; possível necessidade de **redose intraoperatória** conforme fármaco, meia-vida e perda sanguínea. A indicação de profilaxia para implante é distinta da duração da profilaxia.
+
+**Dados relevantes.** Verificar qual agente foi administrado, dose, horário, tempo de infusão, função renal, alergias e recomendação da CCIH. Documentar glicemia e temperatura, revisar técnica asséptica e integridade da prótese/embalagem. Não decidir redose pela frase genérica “cirurgia passou de duas horas” sem conhecer fármaco.
+
+**Interpretação.** O benefício da profilaxia ocorre quando há concentração tecidual adequada no momento crítico. Prolongá-la após o fechamento, apenas porque existe dreno, não compensa falha de técnica e pode causar dano e resistência.
+
+**Conduta.** Considerar redose durante operação conforme protocolo; completar checklists, controlar glicemia sem hipoglicemia e normotermia, proteger perfusão de bordas, orientar vigilância e cessar profilaxia conforme regra institucional. Se aparecer sinal verdadeiro de ISC, investigar e tratar como infecção, não como simples extensão profilática.
+
+**Erro evitável.** Equiparar prótese e drenagem a sete dias obrigatórios de antibiótico. **Por que importa:** distinguir profilaxia, redose e tratamento antimicrobiano.
+
+### Caso 4 — Ferida fechada sob tensão e bordas isquêmicas
+
+**Apresentação.** Jovem de 24 anos foi submetido à retirada de lesão cutânea no ombro. Após aproximação superficial, as bordas ficam pálidas, com sulcos profundos sob os fios e dor elevada. A área se situa sob grande mobilidade; uma das margens aparenta comprometimento vascular.
+
+**Hipótese.** Estrangulamento por tensão excessiva com risco de necrose, deiscência e cicatriz desfavorável. A cor pode ser influenciada por anestésico vasoconstritor, mas não deve ser ignorada se persiste e há sinais de compressão.
+
+**Exames e interpretação.** Reavaliar perfusão de bordas, espessura do subcutâneo, mobilidade/posição, plano de resistência e necessidade de redistribuir tensão. Não há necessidade de laboratório para diagnosticar uma falha mecânica evidente. Mais pontos na pele podem aumentar compressão e não corrigir lacuna de alívio tensional profundo.
+
+**Conduta.** Rever técnica de coaptação, aliviar suturas inadequadas e planejar fechamento por planos ou estratégia reconstrutiva se aproximação segura não for possível. Em casos especiais, técnicas de retalhos devem ser discutidas com cirurgião habilitado, considerando vascularização e mobilidade.
+
+**Erro evitável.** Acreditar que fio mais grosso sempre dá cicatriz melhor. **Por que importa:** perfusão e distribuição de tensão determinam sucesso muito mais que aparência no dia da cirurgia.
+
+### Caso 5 — Contagem divergente de compressas antes do fechamento
+
+**Apresentação.** Após laparotomia, antes do fechamento de parede, a instrumentadora informa falta de uma compressa em relação ao registro inicial. O cirurgião julga que tudo “deve estar no descarte” e cogita fechar para não atrasar sala. Paciente está estável.
+
+**Hipótese de risco.** Retenção não intencional de corpo estranho, evento cirúrgico evitável. Não existe justificativa para ignorar divergência sem processo adequado de reconciliação. O registro é parte da segurança.
+
+**Investigação.** Recontar segundo protocolo, verificar instrumentos, campo, lixeiras e recipientes apropriados sem contaminar material; avaliar necessidade de imagem de localização e medidas institucionais caso contagem permaneça discordante. Confirmar integridade de itens fragmentados e documentação. O cirurgião, enfermagem e instrumentação participam.
+
+**Conduta.** Interromper fechamento até concluir providências e documentar de modo completo; caso não seja possível localizar, aplicar protocolo de evento e investigação adicional. O procedimento e planejamento pós-operatório devem refletir a situação real.
+
+**Erro evitável.** Interpretar “Sign Out” como etapa opcional quando a equipe está atrasada. **Por que importa:** checagem protege contra eventos graves e não pode ser burlada por conveniência.
+
+### Caso 6 — Coleção profunda no quinto dia após cirurgia
+
+**Apresentação.** Homem de 68 anos, submetido a cirurgia abdominal, chega no quinto dia com febre persistente, taquicardia, dor crescente, secreção purulenta em parte da incisão e distensão abdominal. Existe dreno que está com débito mínimo. A equipe inicialmente imagina “ferida superficial infectada”.
+
+**Hipóteses.** ISC superficial com possibilidade de infecção incisional profunda ou órgão/espaço, abscesso intra-abdominal ou vazamento de anastomose. O dreno com baixo débito não exclui coleção; pode estar obstruído ou fora de posição.
+
+**Exames.** Avaliação urgente da estabilidade, perfusão e sinais de sepse. Hemograma, função renal, lactato e culturas conforme gravidade; imagem abdominal quando muda conduta e paciente está apto, com protocolo apropriado. Inspecionar ferida, dreno e aspecto dos fluidos.
+
+**Interpretação.** Febre, dor progressiva e instabilidade podem indicar foco não controlado. Diagnosticar apenas celulite superficial sem avaliar abdome atrasaria drenagem/cirurgia necessária. Não prescrever apenas antibiótico oral e dispensar exame por existir dreno.
+
+**Conduta.** Acionar equipe cirúrgica, suporte sistêmico proporcional, antibiótico terapêutico quando indicado, e **controle de foco** por drenagem, desbridamento ou reoperação conforme extensão. A classificação ISC superficial/profunda/órgão-espaço será definida pelo comprometimento real e critérios aplicáveis.
+
+**Erro evitável.** Confundir presença de dreno com garantia de inexistência de abscesso. **Por que importa:** complicação técnica requer correção causal e não apenas medicação.
+
+### Caso 7 — Laparoscopia com anatomia insegura e decisão de conversão
+
+**Apresentação.** Paciente de 52 anos submetido a procedimento laparoscópico abdominal, com múltiplas cirurgias prévias e aderências extensas. No curso da dissecção, as referências anatômicas se perdem, a câmera mostra campo com sangramento difuso e há suspeita de lesão de estrutura tubular. A equipe tem opção de conversão a via aberta.
+
+**Hipóteses.** Risco de lesão biliar, intestinal, ureteral ou vascular, variando com procedimento e localização. Não é possível interpretar uma estrutura só por sua aparência tubular sem identificar inserções, relações e outros marcos anatômicos.
+
+**Exames/informações.** Reavaliar imagens disponíveis, prontuário de operações prévias, exposição, resposta do paciente e possibilidade de colangiografia/ultrassom intraoperatório ou consultoria especializada conforme caso. A prioridade é evitar seção de estrutura não identificada.
+
+**Conduta.** Interromper progressão insegura, melhorar exposição e considerar **conversão precoce** caso identificação não seja confiável. Acionar especialista se suspeita de lesão e registrar evento, hipótese e reparo. A decisão deve priorizar segurança, não compromisso com incisão menor.
+
+**Erro evitável.** Insistir na videolaparoscopia para “não perder a vantagem estética” após o campo se tornar inseguro. **Por que importa:** conversão é estratégia de excelência, não fracasso.
+
+### Caso 8 — Deiscência aponeurótica e evisceração após laparotomia
+
+**Apresentação.** Mulher de 71 anos, com obesidade, tosse persistente e diabetes descompensado, procura emergência no oitavo dia pós-laparotomia. Relata saída súbita de líquido serossanguinolento seguida de abertura da ferida e exteriorização de alças. Encontra-se ansiosa, taquicárdica e hipotensa.
+
+**Hipótese.** Deiscência de fechamento musculofascial com evisceração, associada a possível infecção/comprometimento sistêmico. Condições de risco incluem aumento de pressão intra-abdominal, cicatrização deficiente, má perfusão e infecção.
+
+**Exames e interpretação.** O diagnóstico é clínico e urgente; realizar avaliação ABC e perfusional, função renal/eletrólitos/hemograma e exames quando forem úteis sem atrasar correção. Avaliar sinais de sepse, necrose ou lesão visceral. Não tentar reinserir conteúdo à força em leito não preparado.
+
+**Conduta.** Convocar cirurgia imediatamente, proteger vísceras com material adequado e técnica asséptica, minimizar perda de calor e fluido, iniciar ressuscitação conforme necessidade e planejar reexploração/fechamento apropriado. Manejo de infecção e avaliação da viabilidade de tecidos determinam técnica de reparo. Abordagem pode requerer cuidado intensivo.
+
+**Erro evitável.** Tratar como “ponto cutâneo que soltou” e refazer apenas sutura de pele. **Por que importa:** a integridade do fechamento aponeurótico sustenta a parede e a evisceração é emergência real.
+
+
 
 ## 23. Questões de residência comentadas — em construção
 
