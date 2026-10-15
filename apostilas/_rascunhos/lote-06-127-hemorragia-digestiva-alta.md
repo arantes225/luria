@@ -58,7 +58,7 @@ As frequências variam por região, população e uso de anti-inflamatórios. A 
 
 ### 3.2 Mallory–Weiss versus Boerhaave: não confundir
 
-A laceração de **Mallory–Weiss** limita-se à mucosa/serosa conforme lesão, normalmente na junção esofagogástrica e associada a vômitos, podendo causar hematêmese. A **síndrome de Boerhaave** é ruptura **transmural** esofágica, tipicamente com dor torácica intensa, mediastinite, enfisema e derrame pleural após vômitos; pertence ao espectro de perfuração, não é simplesmente “uma Mallory–Weiss maior que sangra”. A investigação e necessidade de controle de vazamento são diferentes.
+A laceração de **Mallory–Weiss** compromete principalmente a mucosa e pode alcançar planos superficiais, sem constituir ruptura transmural, normalmente na junção esofagogástrica e associada a vômitos, podendo causar hematêmese. A **síndrome de Boerhaave** é ruptura **transmural** esofágica, tipicamente com dor torácica intensa, mediastinite, enfisema e derrame pleural após vômitos; pertence ao espectro de perfuração, não é simplesmente “uma Mallory–Weiss maior que sangra”. A investigação e necessidade de controle de vazamento são diferentes.
 
 ### 3.3 Quando o sangue não vem do tubo digestivo
 
