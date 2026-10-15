@@ -422,7 +422,174 @@ E) Exigir exposição humilhante em sala como terapia.
 7. Brasil. **Estatuto da Criança e do Adolescente**, Lei nº 8.069/1990, com alterações posteriores. https://www.planalto.gov.br/ccivil_03/leis/l8069.htm
 8. Brasil. Ministério da Saúde. **Rede de Atenção Psicossocial (RAPS)**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps
 
-## 22. Parecer editorial de saída — não homologado
+## 22. Recusa escolar: compreender função antes de encaminhar
+
+**Recusa escolar é uma apresentação, não um diagnóstico etiológico.** Um adolescente pode faltar porque teme exposição social, é vítima de bullying, precisa cuidar de familiar, vive luto, tem depressão, usa substâncias, sofre violência no trajeto, apresenta dislexia não reconhecida, dor crônica, alteração de sono ou transtorno do neurodesenvolvimento. A estratégia de "mandar voltar imediatamente" sem formular a causa pode agravar risco.
+
+### Como investigar
+Começar com **linha do tempo**: quando começou a faltar, quais disciplinas/dias são piores, o que acontece na noite anterior, houve mudança de escola, professor, grupo de pares, morte, separação, violência ou nova condição clínica? Perguntar diretamente a quem frequenta a escola: adolescente, cuidadores, equipe pedagógica, com comunicação consentida e respeito aos limites de confidencialidade. Verificar se a frequência caiu progressivamente, se o jovem permanece em casa com sofrimento ou se passa o dia em atividades externas de risco. Esse padrão auxilia compreender necessidades, mas **não é prova de intenção ou caráter**.
+
+Examinar presença de sintomas somáticos: cefaleia matinal, náuseas, dor abdominal, falta de ar ou taquicardia podem representar ansiedade, mas exigem avaliação orientada para causas clínicas quando existem sinais de alarme. A ausência de doença física não torna sofrimento "fingimento".
+
+### Diferencial clínico aplicado
+| Manifestação | Hipótese a considerar | Pergunta discriminadora |
+| --- | --- | --- |
+| Sofrimento ao se separar do cuidador | ansiedade de separação | medo específico de dano à figura de vínculo? |
+| Evita falar e ser observado | ansiedade social | receio de humilhação ou avaliação negativa? |
+| Perdeu interesse em tudo, não apenas escola | depressão | existe anedonia também fora da sala de aula? |
+| Faltas após agressões e ameaças | bullying/violência | retorno sem proteção aumentaria risco? |
+| Incapacidade de manter atenção e organização desde infância | TDAH/dificuldades de aprendizagem | sintomas começaram muito antes das faltas? |
+| Deita-se às 4h e não desperta para aula | transtorno de sono/ciclo circadiano | horários, qualidade e oportunidade de sono? |
+| Apresenta medo generalizado com revivência | TEPT/trauma | evento e padrão de evitação/reexperiência? |
+| Falta para cuidar de irmãos e trabalhar | sobrecarga e necessidade social | existem barreiras materiais e suporte possível? |
+
+### Manejo
+Verificar risco de suicídio, violência e desproteção primeiro. Construir plano com o adolescente e a escola, identificando o que tornaria retorno **seguro e viável**. Pode incluir adaptações temporárias, avaliação pedagógica, acesso a psicoterapia, solução de transporte, medida protetiva contra agressor e retorno progressivo clinicamente orientado. A meta não é só "presença na escola", mas participação em condição que não perpetue dano. Monitorar faltas, sintomas físicos, aprendizagem, vínculo com colegas e segurança; se um desses domínios piora, revisar estratégia.
+
+**Erro de prova:** confundir recusa escolar com transtorno opositor em toda circunstância. A mesma falta pode representar ansiedade importante ou perigo real.
+
+## 23. Avaliação de comorbidades e efeito da sobreposição de sintomas
+
+Quadros mentais em adolescentes frequentemente coexistem. Isso exige raciocínio **hierárquico e longitudinal**, evitando atribuir um sintoma inespecífico a todas as hipóteses simultaneamente. Exemplo: insônia pode piorar desatenção, ansiedade, irritabilidade e ideação autolesiva; ao tratar sono, parte dos sintomas melhora, mas depressão com anedonia persistente pode continuar. Outro exemplo: TDAH desde a infância pode produzir repetidas experiências de fracasso escolar e aumentar risco de ansiedade; tratar somente ansiedade sem adaptações para atenção pode manter sofrimento.
+
+### Matriz de sintomas transdiagnósticos
+| Sintoma | Transtorno de humor | Ansiedade/trauma | Neurodesenvolvimento | Causas clínicas/substâncias |
+| --- | --- | --- | --- | --- |
+| Desatenção | depressão; mania | preocupação, hipervigilância | TDAH, TEA + sobrecarga sensorial | sono, epilepsia, anemia, medicamentos |
+| Irritabilidade | depressão, mania | ansiedade, TEPT | frustração por sobrecarga e dificuldade de comunicação | dor, uso/abstinência de substâncias |
+| Isolamento | anedonia, desesperança | ansiedade social, evitação traumática | dificuldades interpessoais ou sensoriais | doença crônica, deficiência de acesso |
+| Agitação | mania, episódio misto | pânico e hipervigilância | hiperatividade | estimulantes, tireotoxicose, intoxicação |
+| Alterações alimentares | depressão, sintomas maníacos | ansiedade, TOC, ARFID | seletividade sensorial | doença gastrointestinal/endócrina |
+| Dificuldade de sono | depressão/mania | ansiedade, TEPT | irregularidade executiva | apneia, telas, trabalho, substâncias |
+
+**Estratégia clínica:** determine quais sintomas surgiram primeiro; quando começaram a atrapalhar; o que persistiu entre crises; qual necessidade é urgente; qual intervenção tem melhor relação benefício-risco e capacidade de implantação no SUS. Listas de diagnósticos sem prioridade produzem polifarmácia e seguimento fragmentado.
+
+## 24. Transtorno obsessivo-compulsivo, tiques e sofrimento sensorial
+
+### TOC em adolescentes
+Obsessões são pensamentos, imagens ou impulsos intrusivos e indesejados que provocam sofrimento; compulsões são comportamentos ou atos mentais repetitivos realizados para reduzir ansiedade ou prevenir evento temido, mesmo quando relação não é realista. Os sintomas podem ocupar horas, prejudicar sono e escola e gerar segredo por vergonha. **Não chamar organização escolar cuidadosa de TOC** se não há sintomas clínicos relevantes.
+
+O adolescente pode procurar atendimento por dermatite de limpeza repetitiva, atraso para escola devido a rituais ou pedido incessante de tranquilização. A equipe deve investigar a função do comportamento: prazer em organizar não é igual a necessidade dolorosa de neutralizar obsessão.
+
+**Diferenciais:** delírio (convicção com crítica ausente ou reduzida), ansiedade generalizada (preocupações ligadas a temas reais com ruminação), TEA (repetição relacionada a interesses/sensorialidade sem necessariamente obsessão intrusiva), transtornos de tique (movimento súbito não intencional repetido, eventualmente precedido de sensação premonitória) e transtorno alimentar (ritual com medo central de engordar).
+
+**Tratamento:** TCC com exposição e prevenção de resposta, adaptada à idade e com participação familiar apropriada, é intervenção central. Em quadros moderados/graves, considerar ISRS com equipe capacitada e seguimento de efeitos/segurança. Não orientar família a reforçar todas as compulsões para eliminar ansiedade a curto prazo: acomodação excessiva pode perpetuar circuito de sintomas. Também não impor exposição abrupta e humilhante fora de terapia.
+
+### Tiques
+Tiques motores ou vocais são movimentos/vocalizações recorrentes, rápidos e não rítmicos; intensidade pode variar por estresse, fadiga e contexto. Podem coexistir com TDAH, TOC e ansiedade. Diagnóstico é clínico e longitudinal; movimentos anormais de início abrupto, déficits neurológicos, convulsão suspeita ou alterações de consciência requerem avaliação neurológica orientada.
+
+Não punir adolescente por tique involuntário. Explicar que suprimir sintomas por esforço em público pode aumentar sofrimento e esforço mental. Intervenção comportamental especializada e outras opções dependem de prejuízo, dor, constrangimento e comorbidades; não medicar todos os tiques leves.
+
+## 25. Exame psicofarmacológico de segurança: antes, durante e depois
+
+O futuro modo Trabalho da LURIA poderá exibir posologia, mas este manuscrito **não é instrumento de prescrição**. A segurança exige indicação, dose, faixa etária, resposta, contraindicações, interações e disponibilidade local confirmadas.
+
+### Antes de prescrever
+**Verificar diagnóstico e alvo clínico.** Perguntar o que se deseja melhorar: reduzir episódios depressivos, diminuir pânico, organizar tarefas, tratar mania ou psicose. Um fármaco sem alvo mensurável é difícil de avaliar e fácil de perpetuar.
+
+**Rever bipolaridade e psicose** antes de antidepressivos; risco cardiovascular e histórico familiar em estimulantes quando pertinente; peso, metabolismo, sintomas motores e prolactina quando relevante em antipsicóticos; gravidez possível, uso de substâncias, outros fármacos e adesão.
+
+**Explicar riscos e tempo de resposta.** ISRS usualmente não produzem benefício integral no primeiro dia; a pessoa e cuidadores adequados precisam reconhecer sinais de piora, efeitos adversos e quando buscar assistência. Estimulantes podem alterar apetite/sono e exigir acompanhamento de crescimento e pressão; antipsicóticos podem alterar peso, glicemia/lipídios e provocar efeitos motores.
+
+### Monitorização por categoria, sem protocolizar doses genéricas
+| Categoria | O que acompanhar | Situação que exige reavaliação rápida |
+| --- | --- | --- |
+| ISRS para depressão/ansiedade | sintomas, função, ativação, agitação, ideação, adesão, interações | nova inquietação intensa, sinais de mania, piora abrupta de segurança |
+| Estimulantes para TDAH | peso/crescimento, apetite, sono, PA, frequência cardíaca, uso indevido e efeitos percebidos na escola | síncope, dor torácica, piora marcante de humor, perda ponderal preocupante |
+| Antipsicóticos | peso, IMC, sinais metabólicos, PA, efeitos extrapiramidais, sedação, prolactina quando indicado | rigidez febril, alteração de consciência, distonia aguda, sedação excessiva |
+| Estabilizadores de humor | monitorização específica do fármaco (renal, hepática, hematológica, níveis séricos quando indicado) | sinais de intoxicação, desidratação relevante, nova alteração de consciência |
+| Benzodiazepínicos | sedação, risco respiratório em associação, efeitos cognitivos, dependência | mistura com outros sedativos/intoxicação e incapacidade de segurança |
+
+### Depois de mudar medicação
+Definir quem acompanha, quando retorna, como comunicar efeito adverso e o que fazer com doses perdidas conforme orientação própria do fármaco. **Não orientar suspensão abrupta de psicofármacos crônicos sem avaliação**, pois podem ocorrer sintomas de retirada ou recaída. Em adolescente de família conflituosa, discutir onde medicação ficará guardada com privacidade e segurança, sem estigmatizar pessoa.
+
+### Diagnóstico não deve ser ajustado ao medicamento
+Melhora com um estimulante não prova TDAH; sedação por antipsicótico não prova bipolaridade; melhora de ansiedade com benzodiazepínico não confirma transtorno de pânico. Resposta terapêutica isolada não substitui critérios e curso longitudinal.
+
+## 26. Entrevista e comunicação nos encontros mais difíceis
+
+### Adolescente que não fala
+Silêncio inicial pode refletir medo de exposição, autismo, vergonha, coerção familiar, depressão, trauma ou ausência de confiança. Oferecer opções: começar por sono/escola, escrever em papel, responder por escala validada acompanhada por diálogo, pausas e linguagem simples. Não interpretar silêncio como "negativa de todos os sintomas". Persistindo preocupação de segurança, a avaliação precisa ser adaptada e proteção organizada.
+
+### Cuidador que exige acesso a toda conversa
+Explicar o valor clínico da consulta reservada e os limites por risco/proteção; ouvir preocupação do cuidador em momento apropriado e valorizar papel de apoio. O objetivo não é criar "segredo contra a família", mas permitir entrevista confiável e participação respeitosa. Se há suspeita de abuso pelo cuidador, não revelar relato sensível sem avaliar proteção e deveres legais.
+
+### Adolescente que pede diagnóstico após ver vídeo
+Validar iniciativa de buscar explicação, perguntar quais sintomas reconhece e que prejuízos sente; depois checar critérios, cronologia e condições alternativas. Vídeos podem ajudar a pessoa a nomear sintomas e também induzir atribuição errônea por descrições amplas. Não ridicularizar nem confirmar diagnósticos em minutos para encerrar consulta.
+
+### Sintoma que desaparece diante do médico
+Mudança de ambiente pode aliviar pânico e ativação autonômica; ainda assim, deve-se perguntar duração/gravidade dos episódios, sinais físicos de risco e contexto. Sintoma ausente na hora não significa que relato é falso.
+
+## 27. Problemas clínicos com grande consequência para a aprendizagem
+
+### A. Adolescente com doença crônica e sofrimento mental
+Diabetes tipo 1, epilepsia, cardiopatia congênita, fibrose cística e doença renal crônica podem trazer carga terapêutica e limitações sociais. A percepção de estigma e privação de pares afeta adesão. Sintomas físicos da doença/medicações podem imitar ansiedade ou depressão. A consulta deve integrar saúde mental **ao manejo da doença de base**, não encaminhar separadamente sem diálogo entre equipes.
+
+No diabetes, omissão de insulina ou monitorização por sofrimento com peso/corpo exige avaliação clínica e psicossocial especializada, atenção a cetose/descompensação e linguagem não acusatória. A condução completa do transtorno alimentar está na #250.
+
+### B. Gravidez na adolescência
+Pode coexistir com depressão, ansiedade, violência, evasão escolar e dificuldades de suporte, mas não pressupor transtorno mental em toda gestante adolescente. A entrevista deve cobrir consentimento/segurança, rede de apoio, acesso ao pré-natal, metas educacionais e saúde mental, preservando direitos. Farmacoterapia deve ser revisada em conjunto com obstetrícia; detalhes da saúde mental perinatal estão na #252.
+
+### C. Adolescente com deficiência
+Uma pessoa com deficiência intelectual, surdez ou condição motora precisa de atendimento acessível; barreiras de comunicação podem fazer ansiedade/ideação não serem investigadas. Usar recursos de comunicação apropriados, ouvir a própria pessoa, apoio à decisão e cuidar de sintomas físicos além do diagnóstico de base. Não concluir "não apresenta depressão porque não verbaliza tristeza".
+
+### D. Experiência de violência sexual
+Além de proteção, buscar necessidades médicas tempo-dependentes e medidas pós-exposição conforme protocolo vigente, atenção ao trauma, documentação objetiva, sigilo e fluxos legais do ECA. A investigação criminal cabe aos órgãos competentes; atendimento médico deve evitar repetição desnecessária de relato e exposição da vítima. A segurança do retorno para casa é tão importante quanto resultado de laboratório.
+
+### E. Crise sem diagnóstico psiquiátrico definido
+O adolescente pode estar em sofrimento intenso com primeiros sintomas ainda inespecíficos. O médico não precisa atribuir rótulo definitivo antes de garantir segurança, registrar hipóteses, organizar acompanhamento e discutir com especialista. **Reconhecer incerteza clínica não é abandonar cuidado.**
+
+## 28. Exercícios de raciocínio adicional
+
+### Caso 7 — Fobia social ou problema de aprendizagem?
+**Apresentação:** estudante de 14 anos evita leitura em voz alta, relata palpitações e choro antes de aulas de português, mas participa normalmente em esportes e conversar com amigos. Desde a alfabetização tem dificuldade relevante de decodificação de palavras e erros persistentes, não avaliados.
+**Hipóteses:** transtorno específico de aprendizagem com sofrimento secundário, ansiedade de desempenho/social e possível coexistência.  
+**Raciocínio:** evitar apenas atividade com dificuldade específica pode indicar vergonha por déficit acadêmico; ansiedade não invalida problema de leitura.  
+**Exames/avaliação:** entrevista sobre cronologia, avaliação educacional/neuropsicológica segundo disponibilidade, visão/audição e avaliação de ansiedade.  
+**Conduta:** suporte pedagógico e adaptação enquanto avalia, psicoterapia se ansiedade incapacitante, envolver adolescente e escola com consentimento.  
+**Por que importa:** tratar apenas ansiedade sem corrigir barreira de aprendizagem mantém sofrimento.
+
+### Caso 8 — Insônia, perda ponderal e irritabilidade
+**Apresentação:** adolescente de 15 anos está há dois meses dormindo pouco, com perda de peso, palpitações, tremor fino e ansiedade, sem anedonia típica.  
+**Hipóteses:** tireotoxicose e outras causas clínicas; ansiedade pode coexistir.  
+**Raciocínio:** taquicardia/tremor/perda de peso associados não permitem concluir apenas transtorno de ansiedade.  
+**Exames:** sinais vitais, exame físico incluindo tireoide e investigação dirigida (TSH/T4L quando pertinente), medicações/substâncias.  
+**Conduta:** tratar/encaminhar doença clínica conforme gravidade e reavaliar sintomas mentais.  
+**Por que importa:** "psiquiatrização" de doença orgânica produz atraso diagnóstico.
+
+### Questão 9
+Jovem de 14 anos evita apresentações após anos de dificuldade de leitura e não apresenta evitação em outras situações sociais. Melhor abordagem:
+A) Confirmar apenas fobia social. B) Investigar transtorno de aprendizagem e ansiedade coexistente, oferecendo adaptação escolar. C) Punir faltas. D) Prescrever sedativo continuamente. E) Excluir avaliação pedagógica porque o problema é emocional.  
+**Gabarito B.** A ignora contexto, C e D podem agravar dano, E não considera dificuldade específica; B examina causa e consequência. **Mini-revisão:** função do comportamento orienta diferencial.
+
+### Questão 10
+Adolescente com tremor, taquicardia, perda de peso e irritabilidade persistente recebe diagnóstico de ansiedade sem exame. O principal erro é:
+A) Considerar hipótese de tireotoxicose. B) Investigar uso de estimulantes. C) Não avaliar causas clínicas que podem imitar sintomas de ansiedade. D) Medir sinais vitais. E) Investigar antecedentes.  
+**Gabarito C.** A/B/D/E fazem parte de avaliação adequada; C nomeia a falha. **Mini-revisão:** semiologia e contexto somático importam mesmo em psiquiatria.
+
+### Questão 11
+Qual das seguintes afirmações sobre efeito de fármaco e diagnóstico é mais correta?
+A) Melhora com estimulante prova TDAH. B) Sedação por antipsicótico confirma mania. C) Melhor resposta a benzodiazepínico define transtorno de pânico. D) Resposta medicamentosa não substitui diagnóstico clínico e história longitudinal. E) Exames físicos nunca são necessários na psiquiatria.  
+**Gabarito D.** A/B/C fazem inferência circular por tratamento, E omite medicina clínica; D separa mecanismo farmacológico de critérios. **Mini-revisão:** evitar diagnóstico por "teste terapêutico" inespecífico.
+
+## 29. Teste de autossuficiência preliminar — pergunta → capítulo
+
+| Pergunta que aluno deve responder sem material externo | Onde o manuscrito ensina | Avaliação preliminar |
+| --- | --- | --- |
+| Como criar espaço confidencial com limites legais? | 3, 12, 26 | conceitos presentes; falta validação jurídico-ética brasileira especializada |
+| Como diferenciar irritabilidade depressiva de mania? | 5, 11, casos 1 e 6 | mecanismo clínico e sinais presentes |
+| Como diferenciar desatenção por TDAH de bullying e sono ruim? | 7, 23, casos 3 e 7 | raciocínio e cronologia presentes |
+| O que fazer depois de autolesão? | 10, fluxo 4, caso 4 | segurança e avaliação; detalhamento brasileiro pendente |
+| Quando sintomas psiquiátricos exigem avaliação orgânica? | 4, 11, casos 5 e 8 | alertas presentes; protocolos de encefalite exigem obra própria |
+| Por que escala isolada não confirma diagnóstico? | 7, 10, 13 | limitações declaradas |
+| Como manejar ansiedade com evitação escolar? | 6 e 22 | abordagem integrada e retorno seguro descritos |
+| Qual papel do ISRS e que monitorar no adolescente? | 5, 6, 14, 25 | princípios presentes; posologia brasileira ainda pendente |
+| Como o plano segue na APS após CAPSi? | 20 | longitudinalidade e transição descritas |
+| Quando privação de sono exige investigação clínica? | 4, 11, 23 | sinais e hipóteses principais presentes |
+
+Este teste é **editorial parcial**, não validação por especialista: ainda requer auditoria de todos os fluxos, casos, diretrizes, perguntas e critérios de publicação.
+
+## 30. Parecer editorial de saída — não homologado
 
 **Trabalho realizado nesta versão:** abordagem original e didática das prioridades de urgência, entrevista HEEADSSS, confidencialidade, desenvolvimento, depressão, ansiedade, TDAH, neurodivergência, substâncias, autolesão, psicose, bipolaridade, saúde física, violência, tratamento por gravidade e RAPS, com **seis casos clínicos comentados**, **oito questões de múltipla escolha com justificativas para alternativas** e **10 pautas visuais com função didática**.
 
