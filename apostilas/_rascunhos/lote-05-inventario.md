@@ -4,7 +4,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 
 | Nº | Área | Tema | Situação inicial no repositório |
 |---|---|---|---|
-| 093 | Pediatria | Asma na infância | Rascunho original iniciado em `_rascunhos/lote-05-093-asma-infancia.md`; não publicado |
+| 093 | Pediatria | Asma na infância | Rascunho avançado em `_rascunhos/lote-05-093-asma-infancia.md` (~73,9 mil caracteres brutos Markdown, ~65,8 mil estimados sem marcação/tabelas); ainda necessita revisão médica e validação formal |
 | 094 | GO | Rotura prematura de membranas | Pasta existente `amniorrexe-prematura/`; preservar e auditar |
 | 095 | Preventiva | Sensibilidade, especificidade e valores preditivos | Não identificada pasta temática homônima; buscar conteúdo integrado |
 | 096 | Clínica | Distúrbios hidroeletrolíticos | Não identificada pasta homônima; auditar antes de criar |
@@ -15,7 +15,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 101 | Clínica | Distúrbios ácido-base | Sem pasta homônima identificada |
 | 102 | Cirurgia | Obstrução intestinal | Sem pasta homônima identificada |
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
-| 104 | GO | Hemorragia pós-parto | Sem pasta homônima identificada; possível relação com `assistencia-ao-parto/`, que deve ser lida antes de decidir |
+| 104 | GO | Hemorragia pós-parto | Rascunho iniciado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~19,3 mil caracteres); `assistencia-ao-parto/` já possui conteúdo parcial sobre HPP e foi inspecionada; preservar e fazer de-para |
 | 105 | Preventiva | Desenhos de estudos epidemiológicos | Sem pasta homônima identificada |
 | 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
@@ -41,3 +41,10 @@ Tema 093: comparação realizada com **Asma.pdf** e **Crise Asmática.pdf** do D
 
 ## Retificação documental de 14/10/2026
 A classificação inicial da apostila 099 com base apenas em `index.html` estava incorreta. Após leitura de `content.json`, a etapa correta é **auditoria de profundidade e atualização**, não criação de novo documento. Para revisão clínica, comparar com o documento FEBRASGO sobre uso racional da tocólise, a recomendação da OMS 2022 sobre corticoterapia antenatal e, separadamente, a recomendação da OMS 2022 sobre tocólise. A consulta comparativa no Drive localizada neste turno é indireta (obstetrícia e sangramento de segunda metade), portanto **a etapa zero do tema 099 ainda está pendente de uma apostila verdadeiramente equivalente**.
+
+
+## Continuação de 14/10/2026 — produção e benchmarks
+- **093 — Asma na infância:** duas fichas do Drive realmente lidas (`Asma.pdf`, `Crise Asmática.pdf`), atualizadas criticamente com GINA 2026; consultados também a revisão nacional no Jornal Brasileiro de Pneumologia (2024) e os metadados de aprovação do PCDT Asma do Ministério da Saúde (Portaria Conjunta SAES/SCTIE nº 43/2026, atualização de anexo em setembro). Rascunho Markdown avançado; contagem simples não certifica autossuficiência nem elegibilidade de medicamentos para uso brasileiro. Sem conteúdo incorporado ao site.
+- **104 — Hemorragia pós-parto:** apostila `04 - HEMORRAGIA POS PARTO.pdf` do Drive aberta e lida; origem institucional não identificada; `assistencia-ao-parto/index.html` da LURIA aberta e avaliada nas referências a HPP. Divergência crítica registrada: limiares tradicionais de 500 mL/1000 mL versus critério precoce OMS/FIGO/ICM 2025 de perda medida ≥300 mL com sinal hemodinâmico anormal ou ≥500 mL. Elaborado rascunho original e autônomo em `_rascunhos/lote-05-104-hemorragia-pos-parto.md`. Revisão adicional baseada no protocolo FEBRASGO Femina 2025 e Position Statement 2024. **Pendente de revisão, extensão e publicação.**
+- **094 — RPMO:** a apostila existente permanece intocada. Busca neste turno não encontrou material diretamente equivalente no Drive; para respeitar Etapa Zero, **não editar até obter benchmark realmente adequado**. Fonte primária FEBRASGO 2024 e protocolo hospitalar 2026 identificados para futura atualização.
+- **095 — Testes diagnósticos:** nenhum material específico de referência educacional localizado nas buscas iniciais no Drive; ainda não iniciada edição médica. Buscar outros termos e pastas antes de iniciar.
