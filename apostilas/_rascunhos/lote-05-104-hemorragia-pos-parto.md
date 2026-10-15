@@ -400,3 +400,254 @@ Após o evento, revisar cronologia, volume perdido, hora de reconhecimento, ativ
 - WHO/FIGO/ICM. *Implementation guide* da diretriz consolidada. 2026. https://www.who.int/publications/i/item/9789240116115
 - FEBRASGO. *Procedimento para tratar hemorragia pós-parto*, fluxograma institucional. https://www.febrasgo.org.br/fluxograma/procedimento-para-tratar-hemorragia-pos-parto/
 - FEBRASGO. *Hemorragia pós-parto*. *Femina*. 2025;53(4):278–289. Referência editorial rastreável no sítio da FEBRASGO.
+
+
+## 17. Casos aprofundados: a urgência exige decisões verificáveis
+
+Os quatro casos introdutórios apresentados antes deste bloco exemplificam identificação inicial, atonia versus trauma, instabilidade com hemoglobina inicial preservada e hemorragia secundária. Os casos seguintes partem de obstáculos adicionais: contraindicações terapêuticas, coagulopatia, ausência de infraestrutura, placenta anormalmente aderida e falha de controle inicial. O objetivo é simular a progressão real do raciocínio, e não oferecer uma única palavra como “gabarito”.
+
+### Caso 5 — Hemorragia por atonia em puérpera com pré-eclâmpsia grave
+
+**Apresentação.** Mulher de 32 anos, submetida a parto vaginal após indução por pré-eclâmpsia com sinais de gravidade. Vinte minutos depois, apresenta perda acumulada de aproximadamente 750 mL e nova perda contínua. FC de 112 bpm, PAS de 145 mmHg, tônus uterino diminuído. Recebeu ocitocina profilática na dequitação.
+
+**Problema inicial.** O fato de existir hipertensão não afasta risco hemorrágico, e a pressão elevada pode esconder deterioração relativa. O útero amolecido e a perda ativa sugerem atonia; entretanto, deve-se procurar trauma, tecido e alteração de coagulação em paralelo. O índice de choque isolado (112/145 = 0,77) está abaixo do limite de alerta usado para muitas pacientes. Nesse caso, a **perda medida ≥500 mL**, por si só, já justifica reconhecimento e resposta.
+
+**Conduta fundamentada.** Ativar equipe e pacote terapêutico, massagem/compressão uterina conforme resposta, ocitocina IV de tratamento sob administração lenta e segura, TXA no tempo recomendado, acesso venoso, quantificação cumulativa, exames e revisão de foco. A hipertensão grave é razão relevante para **evitar metilergometrina** como escalonamento indiscriminado. Selecionar alternativa uterotônica permitida e, se necessário, intervenção, conforme protocolo, sem retardar controle de sangramento.
+
+**Exames.** Hemograma, fibrinogênio e coagulograma ajudam a detectar alterações associadas à doença hipertensiva ou à hemorragia; não se aguarda resultado para iniciar estabilização. Plaquetas baixas podem alterar planejamento anestésico/cirúrgico e necessidade de suporte hemoterápico.
+
+**Por que o caso importa.** Mostra que pressão arterial elevada e índice de choque não alarmante **não excluem HPP** e que um uterotônico habitual tem contraindicação diante de síndrome hipertensiva.
+
+### Caso 6 — Sangramento refratário em paciente com asma
+
+**Apresentação.** Puérpera com antecedente de asma persistente bem documentada apresenta atonia após cesariana. Apesar de ocitocina de tratamento e medidas iniciais apropriadas, persiste perda importante. O plantonista sugere prostaglandina injetável, sem perguntar quais doenças a paciente possui.
+
+**Hipótese e mecanismo.** O problema hemostático é a atonia persistente, mas a segurança da terapia depende das comorbidades. **Carboprost** pode causar broncoespasmo, e sua utilização em quem tem asma demanda evitar a escolha ou seguir restrições específicas do protocolo/bula. Não confundir com misoprostol, outra prostaglandina com perfil e vias de uso distintos.
+
+**Conduta.** Continuar resposta hemodinâmica, correção de fatores, TXA quando indicado, reexaminar quatro T e considerar alternativas farmacológicas e invasivas adequadas. Como o cenário é cesárea, técnicas compressivas e ligaduras podem estar disponíveis imediatamente, mas precisam de avaliação de sangramento e decisão da equipe experiente.
+
+**Exames.** Oxigenação, sinais clínicos de broncoespasmo e exames hemostáticos são acompanhados conforme resposta. Não se presume que uma saturação normal inicialmente afaste risco de choque.
+
+**Por que importa.** A associação “asma + carboprost” testa segurança farmacológica enquanto o problema principal continua sendo um sangramento tempo-dependente.
+
+### Caso 7 — Perda após tentativa de remover placenta invasiva
+
+**Apresentação.** Gestante com duas cesarianas anteriores e placenta prévia em ultrassom chega para parto programado, mas não houve encaminhamento a centro de referência. Durante cesariana, a placenta não se separa adequadamente e há sangramento intenso quando se tenta removê-la.
+
+**Raciocínio.** A combinação cicatriz uterina, placenta prévia e dificuldade de separação indica forte suspeita de **espectro do acretismo placentário**. O problema não é simplesmente “útero preguiçoso” e não se resolve insistindo em uterotônicos. O sangramento pode ser amplificado pela manipulação e pela invasão vascular anormal.
+
+**Conduta.** Interromper manobras inadequadas, acionar equipe experiente, organizar ressuscitação e controle cirúrgico de foco, incluindo possibilidade de histerectomia conforme extensão e estabilidade. Quando o diagnóstico é antenatal, planejar parto em serviço com hemoterapia e competência cirúrgica é medida preventiva essencial. Nesta situação já instalada, a equipe deve priorizar segurança e evitar tentativas sucessivas que aumentem a perda.
+
+**Exames.** Hemograma, fibrinogênio, coagulograma e demais dados seriados orientam ressuscitação; o diagnóstico operatório e a situação hemodinâmica determinam urgência. A ultrassonografia antenatal e sua descrição devem integrar planejamento, mas não atrasam cirurgia de controle quando há hemorragia ativa grave.
+
+**Por que importa.** Saber a palavra “tecido” nos quatro T não basta; é preciso reconhecer acretismo como uma categoria em que a retirada manual pode ser perigosa.
+
+### Caso 8 — Choque com fibrinogênio baixo: qual hemocomponente priorizar?
+
+**Apresentação.** Após HPP progressiva, uma paciente de 29 anos está pálida, confusa, com FC 138 bpm, PAS 82 mmHg, perda estimada superior a 1800 mL e sangramento ainda ativo. Fibrinogênio de **140 mg/dL**; plaquetas 95 mil/μL; coagulograma com alterações leves. A equipe transfunde hemácias conforme necessidade e prepara cirurgia.
+
+**Interpretação.** O fibrinogênio de 140 mg/dL corresponde a 1,4 g/L, abaixo do alvo mínimo de 2 g/L citado pela OMS. Na hemorragia grave em curso, isso aumenta preocupação com capacidade de formar coágulo estável. Não se deve esperar que concentrado de hemácias corrija fibrinogênio. Por outro lado, plaquetas 95 mil/μL, por si sós, não implicam a mesma decisão que trombocitopenia grave com sangramento microvascular.
+
+**Conduta.** Continuar controle urgente de foco e ressuscitação circulatória. Solicitar reposição de fibrinogênio, por crioprecipitado ou concentrado quando disponível, conforme hemoterapia e testes repetidos, buscando concentração ≥2 g/L. O esquema específico de produtos depende da concentração disponível, volume e protocolo do serviço. Corrigir hipotermia, acidemia, hipocalcemia associada à transfusão quando presentes e déficit de outros fatores. A decisão transfusional é reavaliada continuamente, não se encerra depois de “duas bolsas”.
+
+**Exames.** Fibrinogênio seriado, plaquetas, TP/INR, TTPa, gasometria e cálcio ionizado se houver hemorragia grave e grandes volumes. Monitorizar perfusão, temperatura, diurese e evolução da perda.
+
+**Por que importa.** Transforma a meta abstrata de fibrinogênio em cálculo e decisão. Reposição hemostática não substitui hemostasia cirúrgica.
+
+### Caso 9 — Tentar balão onde não há retaguarda é seguro?
+
+**Apresentação.** Em serviço de pequeno porte, mulher apresenta atonia e HPP persistente após tratamento inicial. Há um dispositivo de tamponamento intrauterino disponível, mas a unidade não dispõe de banco de sangue nem cirurgia obstétrica imediata, e não existe transporte de urgência já mobilizado.
+
+**Raciocínio.** Embora balão possa controlar atonia refratária em situações selecionadas, a OMS 2025 condiciona sua recomendação a suporte efetivo de primeira linha, capacidade de cirurgia e hemocomponentes, exclusão razoável de trauma/tecido, equipe treinada e vigilância adequada. Disponibilidade física do dispositivo **não cumpre essas condições**.
+
+**Conduta.** Mobilizar transferência para centro com hemostasia definitiva e suporte hemoterápico, executar medidas iniciais de controle, ressuscitar conforme recursos e considerar manobras temporizadoras adequadas por equipe treinada. O erro seria implantar balão e assumir que a emergência acabou, sem acesso a resgate se o sangramento persistir.
+
+**Por que importa.** Ensina a diferença entre **possuir um dispositivo** e **ter condições de usá-lo com segurança**. Protocolos existem para reduzir risco sistêmico, não apenas para listar procedimentos.
+
+### Caso 10 — Inversão uterina: quando o fundo desaparece à palpação
+
+**Apresentação.** Após o nascimento, ocorre hemorragia e dor intensa. A equipe nota massa que ocupa a vagina, enquanto o fundo uterino não é palpável na posição esperada no abdome. A paciente apresenta taquicardia e hipotensão.
+
+**Hipótese.** Inversão uterina, uma emergência obstétrica distinta de atonia isolada ou laceração vaginal. O quadro pode produzir choque grave e alterações de tônus. A sequência temporal, ausência do fundo habitual e presença de massa são os achados decisivos.
+
+**Conduta.** Acionar ajuda, estabilizar imediatamente e providenciar reposicionamento por profissional experiente conforme protocolo; organizar anestesia e controle hemostático. Não continuar tração do cordão ou perder tempo com interpretações laboratoriais antes da manobra determinante. Após reposicionamento e estabilização, reavaliar contratilidade, perdas e lesões associadas.
+
+**Por que importa.** A lógica “útero flácido = atonia” falha quando a anatomia está alterada; a avaliação física determina a intervenção urgente.
+
+## 18. Questões de residência com todas as alternativas justificadas
+
+### Questão 7 — Diagnóstico precoce sob definição OMS/FIGO/ICM 2025
+
+Paciente no pós-parto imediato apresenta perda acumulada objetivamente medida de 350 mL, FC 112 bpm, PAS 110 mmHg e DBP 74 mmHg. Sem dor torácica ou dispneia, mantém comunicação adequada. Qual é a decisão inicial mais defensável?
+
+A. Aguardar perda ≥500 mL, já que está após parto vaginal.
+B. Iniciar resposta à HPP porque já há perda ≥300 mL acompanhada de alteração hemodinâmica.
+C. Exigir hemoglobina abaixo de 7 g/dL para definir hemorragia.
+D. Repetir as medidas apenas na consulta de puerpério.
+E. Diagnosticar, obrigatoriamente, placenta acreta como foco.
+
+**Gabarito: B.** O índice de choque é 112/110 = 1,02, e FC >100; com perda ≥300 mL, o critério precoce é atendido. **A incorreta:** corte clássico isolado pode atrasar tratamento. **C incorreta:** hemoglobina não é condição necessária para reconhecer HPP. **D incorreta:** o cenário demanda ação imediata. **E incorreta:** nenhum dado demonstra tecido anormalmente aderido. **Síntese:** mensuração objetiva associada à fisiologia reduz atraso diagnóstico.
+
+### Questão 8 — Um uterotônico profilático não equivale a tratamento idêntico
+
+Após parto vaginal sem complicações, a equipe discute profilaxia universal de HPP. Qual afirmativa está alinhada à OMS 2025?
+
+A. Não há indicação de uterotônico profilático na ausência de risco.
+B. Ocitocina profilática deve ser substituída por TXA em todos os partos.
+C. Uma opção profilática recomendada é ocitocina 10 UI IM ou IV conforme contexto, havendo alternativas apropriadas.
+D. Massagem uterina sustentada deve ser feita continuamente em todas as mulheres que receberam ocitocina profilática.
+E. É obrigatório administrar simultaneamente ocitocina, carbetocina e misoprostol para todos os partos.
+
+**Gabarito: C.** A diretriz recomenda uterotônico de qualidade para todos os partos, com **um** dos agentes apropriados, preferindo ocitocina quando opções estão disponíveis. **A incorreta:** risco não identificável existe. **B incorreta:** TXA não substitui uterotônico profilático. **D incorreta:** massagem sustentada rotineira após ocitocina profilática não é recomendada, embora massagem seja usada no tratamento de HPP. **E incorreta:** não se preconiza tríplice associação universal. **Síntese:** contexto preventivo e terapêutico determinam condutas diferentes.
+
+### Questão 9 — Farmacologia e pré-eclâmpsia
+
+Mulher com pré-eclâmpsia grave apresenta atonia e perda persistente apesar de medidas iniciais, sob suporte e monitorização. Qual opção deve ser evitada em razão da comorbidade?
+
+A. Medidas de controle hemostático e avaliação de foco.
+B. Preparar banco de sangue e avaliar necessidade de hemocomponentes.
+C. Manter aferição seriada de sinais vitais.
+D. Usar metilergometrina de forma indiscriminada como escalonamento.
+E. Administrar TXA precoce quando indicado.
+
+**Gabarito: D.** Derivados de ergotamina apresentam contraindicações relacionadas a hipertensão grave e vasoconstrição. **A incorreta** como alternativa a evitar: é conduta indicada. **B incorreta:** antecipar sangue pode salvar vida. **C incorreta:** a tendência hemodinâmica orienta o tratamento. **E incorreta:** TXA integra resposta à HPP conforme recomendações, salvo contraindicação específica. **Síntese:** o diagnóstico de atonia não dispensa avaliar segurança de cada uterotônico.
+
+### Questão 10 — Fibrinogênio durante hemorragia maciça
+
+Puérpera apresenta sangramento obstétrico grave persistente e fibrinogênio de 150 mg/dL. Qual interpretação é a mais apropriada?
+
+A. O valor está acima da meta da OMS e dispensa avaliação hemostática.
+B. O valor indica necessidade obrigatória de plaquetas, independentemente da contagem.
+C. O valor corresponde a 1,5 g/L e está abaixo do alvo ≥2 g/L, justificando considerar reposição direcionada.
+D. O resultado comprova que a causa é exclusivamente atonia.
+E. A correção da concentração elimina a necessidade de buscar o foco da hemorragia.
+
+**Gabarito: C.** 150 mg/dL equivalem a 1,5 g/L. **A incorreta:** está abaixo do alvo da OMS. **B incorreta:** plaquetas são decisão distinta. **D incorreta:** coagulopatia pode coexistir com trauma, tecido ou atonia. **E incorreta:** reposição é adjuvante, não hemostasia de foco. **Síntese:** converter unidades corretamente previne erro clínico e de prova.
+
+### Questão 11 — Balão intrauterino e critérios de segurança
+
+Qual condição torna mais apropriado considerar tamponamento intrauterino por balão na HPP por atonia após parto vaginal?
+
+A. Ausência de equipe para cirurgia, sangue e monitorização após inserção.
+B. Persistência de sangramento após terapia de primeira linha, com disponibilidade imediata de retaguarda cirúrgica, hemocomponentes e equipe treinada.
+C. Laceração cervical sangrante que não foi examinada.
+D. Suspeita de restos placentários importantes não investigada.
+E. Acretismo placentário confirmado, independentemente da anatomia ou estabilidade.
+
+**Gabarito: B.** Reúne indicação clínica e as condições exigidas na recomendação OMS 2025. **A incorreta:** ausência de resgate compromete segurança. **C incorreta:** trauma requer avaliação e correção do foco. **D incorreta:** excluir razoavelmente tecido retido faz parte dos critérios. **E incorreta:** o balão não é solução universal para invasão placentária. **Síntese:** indicação = problema certo + contexto certo + capacidade de tratar falha.
+
+### Questão 12 — TXA: relógio e finalidade
+
+Qual afirmativa descreve melhor o emprego de ácido tranexâmico em HPP primária estabelecida?
+
+A. É uterotônico que substitui ocitocina.
+B. Só pode ser administrado após falha de balão e suturas compressivas.
+C. É recomendado precocemente, dentro de três horas do nascimento, junto às demais medidas.
+D. Deve ser usado preventivamente em todas as mulheres independentemente de protocolo.
+E. Sua dose deve ser repetida automaticamente a cada dez minutos enquanto houver sangramento.
+
+**Gabarito: C.** TXA estabiliza coágulo ao reduzir fibrinólise e faz parte do tratamento precoce. **A incorreta:** não induz contração uterina. **B incorreta:** atraso pode retirar benefício temporal. **D incorreta:** tratamento não é o mesmo que profilaxia universal. **E incorreta:** existe intervalo e indicação específica para uma segunda dose, não repetição arbitrária. **Síntese:** o relógio conta a partir do parto e TXA não substitui controle do foco.
+
+### Questão 13 — Hemoglobina e transfusão
+
+Mulher apresenta hemorragia ativa com FC 140 bpm, PAS 75 mmHg, extremidades frias e alteração de consciência. Hemoglobina colhida logo no início é 10,8 g/dL. Qual conduta interpretativa é mais segura?
+
+A. Excluir choque porque Hb está acima de 7 g/dL.
+B. Encerrar avaliação, pois o valor demonstra estabilidade circulatória.
+C. Repetir somente o hemograma depois de seis horas e então decidir.
+D. Reconhecer que Hb inicial pode estar relativamente preservada na perda aguda; ressuscitar e controlar o foco com avaliação contínua.
+E. Administrar ferro oral isoladamente como tratamento imediato de choque.
+
+**Gabarito: D.** Hb concentração não espelha instantaneamente perda aguda. **A e B incorretas:** ignoram sinais claros de hipoperfusão. **C incorreta:** esperar exame em paciente instável é perigoso. **E incorreta:** ferro não corrige choque ativo. **Síntese:** hemoterapia em HPP grave é decisão clínica e protocolizada, não leitura de número isolado.
+
+### Questão 14 — Intervenção correta para cada uma das quatro causas
+
+Puérpera mantém sangramento volumoso após ocitocina e massagem, mas o útero agora está firme. A placenta foi examinada e parece íntegra. Qual deve ser a investigação prioritária seguinte?
+
+A. Repetir massagem sem outros exames, pois toda hemorragia é atonia.
+B. Procurar lacerações cervicais, vaginais e perineais e outras causas dos quatro T.
+C. Suspender monitorização por melhora de tônus.
+D. Considerar que sangramento com útero firme é sempre fisiológico.
+E. Encaminhar diretamente para alta após oferecer ferro oral.
+
+**Gabarito: B.** Sangramento com útero firme após terapia dirigida ao tônus exige pesquisa de trauma e causas coexistentes. **A incorreta:** reduz o diagnóstico a uma causa já parcialmente tratada. **C incorreta:** sangramento ativo continua ameaçador. **D incorreta:** o exame uterino não garante ausência de hemorragia. **E incorreta:** não há condições para alta. **Síntese:** quatro T formam matriz de busca da origem, não checklist burocrático.
+
+## 19. Questões integradoras sem cálculo: prevenção, causa e resposta
+
+As questões anteriores privilegiam mecanismo, decisão e dosagem; é importante também treinar reconhecimento de padrões. O aluno deve responder três perguntas sucessivas antes de escolher intervenção: **a paciente está instável? de onde vem o sangue? qual medida de controle pode ser executada agora?** Um bom enunciado pode ocultar o nome do problema e oferecer apenas as pistas:
+
+- **Útero amolecido**, dequitação aparentemente completa e sangramento em jato intermitente: pensar em tônus, mas examinar as demais causas se persistir.
+- **Útero contraído**, parto instrumental e hemorragia contínua: investigar trauma genital.
+- **Placenta incompleta**, dificuldade de desprendimento e perda ativa: pensar em tecido, com cuidado para acretismo em cenário de risco.
+- **Sangramento difuso em múltiplas superfícies**, descolamento prematuro da placenta e fibrinogênio reduzido: considerar coagulopatia associada, sem abandonar controle da origem obstétrica.
+- **Massa vaginal após dequitação**, ausência do fundo à palpação e choque: inversão uterina é hipótese prioritária.
+- **Hemorragia progressiva intraoperatória** em mulher com placenta prévia e cesarianas prévias: suspeitar de espectro do acretismo, antecipando equipe e sangue.
+
+Esses padrões não são algoritmos infalíveis: trauma e atonia podem coexistir, sangue pode estar oculto no abdome e um exame laboratorial pode mudar rapidamente. O propósito é gerar hipóteses precoces que orientem atuação segura enquanto se colhem dados adicionais.
+
+## 20. Fluxograma editorial original — HPP desde a sala de parto até a retaguarda
+
+**Situação de entrada: sangramento após o parto ou alteração clínica sugestiva de hemorragia.**
+
+**Etapa 1 — detectar.** Quantifique objetivamente e acompanhe sinais vitais. Use critérios OMS/FIGO/ICM 2025 para ativação precoce: perda acumulada ≥500 mL; ou ≥300 mL com algum sinal hemodinâmico anormal; ou deterioração clínica importante que exija intervenção mesmo antes de se alcançar volume formal. Evite “esperar mais um pouco para ver se continua”.
+
+**Etapa 2 — anunciar e distribuir papéis.** Ative o protocolo HPP e solicite obstetrícia, anestesia, equipe de enfermagem e hemoterapia conforme gravidade. Designe responsáveis por medicamentos, quantificação, acessos, busca do foco e documentação. Mantenha comunicação com a paciente e acompanhante quando a situação permitir.
+
+**Etapa 3 — iniciar medidas simultâneas.** Examine tônus e faça massagem/compressão quando indicada; administre uterotônico de tratamento, TXA no tempo adequado, suporte intravenoso e inspeção do trato genital. Reponha volemia de forma prudente, com monitorização e hemocomponentes quando indicados. Não use ressuscitação apenas com cristalóide por tempo indefinido.
+
+**Etapa 4 — localizar os quatro T.** Verifique se atonia persiste; procure lacerações e hematomas; avalie placenta e possibilidade de restos/acretismo; investigue coagulação, especialmente quando sangramento é difuso ou ocorre em contextos de descolamento placentário, choque prolongado ou transfusão volumosa.
+
+**Etapa 5 — reavaliar rapidamente.** A perda diminuiu de modo sustentado? Há recuperação de consciência, perfusão e sinais vitais? Os dados laboratoriais apontam déficit de fibrinogênio, plaquetas ou outros fatores? Se ainda há hemorragia significativa, escale a intervenção sem esperar esgotamento de todas as possibilidades farmacológicas.
+
+**Etapa 6 — controlar definitivamente.** Escolha procedimento conforme causa e segurança: reparo de trauma, retirada de tecido quando indicada e segura, balão em condições rigorosas, cirurgia compressiva/vascular, embolização em paciente adequada ou histerectomia quando necessário. O tempo e a condição materna determinam urgência.
+
+**Etapa 7 — finalizar atendimento agudo sem perder seguimento.** Confirme estabilidade sustentada e ausência de ressangramento, trate anemia, registre transfusão e procedimentos, oriente sinais de alerta e organize acompanhamento físico e psicológico.
+
+### Erros de sequenciamento que mais prejudicam a paciente
+
+| Erro | Por que é perigoso | Correção operacional |
+|---|---|---|
+| Esperar queda da PAS para “confirmar” HPP | Compensação fisiológica mascara perda | Medir perda e acompanhar FC, perfusão e consciência |
+| Esperar hemoglobina para chamar sangue | Hb inicial pode ser falsamente tranquilizadora | Acionar hemoterapia por estado clínico/protocolo |
+| Dar somente uterotônico e não examinar o canal | Laceração não responde a uterotônico | Corrigir o T responsável, em paralelo à ressuscitação |
+| Infundir litros de cristaloide sem reavaliar | Hemodiluição, edema e atraso de hemostasia | Reavaliar com frequência e antecipar componentes |
+| Colocar balão sem retaguarda | Falha pode evoluir para choque sem resgate | Confirmar condições OMS e organizar cirurgia/sangue |
+| Adiar TXA enquanto testa uterotônicos sucessivos | Perda da janela de benefício | Integrar TXA precoce ao pacote quando indicado |
+| Insistir em preservação uterina a qualquer custo | Choque e coagulopatia podem progredir | Decidir controle definitivo proporcional à gravidade |
+| Encerrar sem acompanhamento | Anemia, trauma e ressangramento podem passar despercebidos | Planejar observação, orientações e seguimento |
+
+## 21. Recursos didáticos, imagens e teste de autossuficiência
+
+O texto de HPP necessita de recursos visuais clinicamente corretos e com autorização de uso. Imagens assistenciais reais não podem ser inseridas automaticamente, mesmo que apareçam em material de sociedades médicas. O plano inicial prevê **candidatas**, não inclusão efetiva no HTML:
+
+1. **Comparação anatômica de útero contraído versus atônico** — figura autoral revisada por obstetra para explicar como a retração miometrial reduz sangramento da implantação placentária.
+2. **Mensuração da perda com coletor calibrado** — fotografia clínica licenciada, mostrando como evitar mistura com líquido amniótico.
+3. **Mapa diagnóstico dos quatro T** — fluxograma autoral integrado aos capítulos de etiologia.
+4. **Sinais clínicos de inversão uterina** — imagem clínica fidedigna, anonimizada e com autorização específica; nunca gerar imagem realista falsa como substituta.
+5. **Trauma do canal de parto** — diagrama anatômico autoral apontando locais de inspeção com iluminação e posicionamento adequados.
+6. **Placenta de implantação invasiva** — imagem ultrassonográfica institucional licenciada, com legenda de achados objetivos e limitações.
+7. **Curva de perda acumulada e alterações hemodinâmicas** — gráfico autoral comparando evolução clínica com limiares da OMS 2025.
+8. **Fluxo de ressuscitação hemostática** — fluxograma autoral com laboratório, hemoterapia e controle de foco.
+9. **Balão de tamponamento intrauterino** — imagem de dispositivo e procedimento apenas com licença adequada, contextualizada com critérios de segurança OMS.
+10. **Suturas compressivas** — esquema anatômico autoral revisado por especialista, sem reproduzir ilustrações protegidas de sociedades.
+11. **Fluxo de transporte inter-hospitalar** — diagrama original destacando medidas temporizadoras e comunicação entre serviços.
+12. **Plano de recuperação** — quadro autoral de vigilância de anemia, retorno e sinais de alarme.
+
+Esses itens só poderão tornar-se candidatas formais à fila do Admin após registro de fonte, licença de uso comercial, legenda, justificativa didática, integridade clínica e método de aprovação. **Nenhum foi publicado neste rascunho.**
+
+### 21.1. Teste de autossuficiência
+
+A versão final deverá ser respondível sem buscar fora da LURIA. Para aprovação editorial, um revisor diferente do redator deve verificar:
+
+1. Consegue definir HPP e explicar por que o limiar de 300 mL + alteração hemodinâmica é distinto de 500 mL isolados?
+2. Consegue explicar tônus uterino normal, atonia e quatro T?
+3. Consegue classificar padrões clínicos sem depender de números laboratoriais imediatos?
+4. Consegue distinguir profilaxia de tratamento e contraindicações de uterotônicos?
+5. Sabe por que TXA deve ser precoce e não substitui controle de foco?
+6. Consegue interpretar fibrinogênio abaixo de 2 g/L, plaquetas e INR sem trocar unidades?
+7. Reconhece quando balão não é seguro por ausência de retaguarda?
+8. Entende quando há necessidade de transfusão urgente mesmo com Hb inicialmente preservada?
+9. Identifica indicações gerais de intervenção cirúrgica e causas que não melhoram com massagem?
+10. Consegue orientar seguimento após HPP, anemia, evento traumático e sangramento secundário?
+
+**Status editorial:** estes testes são um roteiro para auditoria humana e não representam aprovação já obtida. A redação precisa ainda ser checada integralmente contra fontes nacionais e internacionais, além de passar pela deduplicação e pela adaptação ao renderizador da LURIA.
