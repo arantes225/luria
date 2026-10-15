@@ -61,6 +61,21 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
           <p>Preparando o modelo escolhido para sua conta.</p>
           <a href="/dashboard/">Recarregar painel</a>
         </section>
+        <header class="ui-page-header">
+          <div><p class="ui-eyebrow">SEU PAINEL DE ESTUDOS</p><h1>Dashboard educacional</h1><p>Seu próximo passo, seu ritmo, seu progresso.</p></div>
+          <div class="ui-header-streak" aria-label="Sua ofensiva"></div>
+        </header>
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+
+          <div class="page-heading">
+            <span class="eyebrow" data-page-eyebrow></span>
+            <h1 data-page-title></h1>
+          </div>
+        </header>
+
+        <section id="ui-review-summary" class="ui-review-summary" aria-label="Indicadores rápidos"><p id="ui-review-copy" class="ui-visually-hidden" role="status">Aguardando os dados das suas revisões.</p><a class="ui-quick-metric" href="/flashcards/"><span>Flashcards pendentes</span><strong id="ui-review-flashcards">—</strong><small>Revisar flashcards <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/cronograma/"><span>Aulas de hoje concluídas</span><strong id="ui-review-lessons">—</strong><small>Ver cronograma <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/caderno-erros/"><span>Erros ativos</span><strong id="ui-review-errors">—</strong><small>Abrir caderno <span aria-hidden="true">↗</span></small></a></section>
+
         <p id="dashboard-apps-status" class="ui-visually-hidden" role="status"></p>
         <section id="dashboard-apps" class="dashboard-apps" aria-labelledby="dashboard-apps-title" hidden>
           <header class="dashboard-apps-heading"><h1 id="dashboard-apps-title">Seus aplicativos</h1><p>Acesse as ferramentas do LURIA e organize sua rotina de estudos.</p></header>
@@ -155,21 +170,6 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
             </div>
           </section>
         </section>
-
-        <header class="ui-page-header">
-          <div><p class="ui-eyebrow">SEU PAINEL DE ESTUDOS</p><h1>Dashboard educacional</h1><p>Seu próximo passo, seu ritmo, seu progresso.</p></div>
-          <div class="ui-header-streak" aria-label="Sua ofensiva"></div>
-        </header>
-        <header class="topbar">
-          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-
-          <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow></span>
-            <h1 data-page-title></h1>
-          </div>
-        </header>
-
-        <section id="ui-review-summary" class="ui-review-summary" aria-label="Indicadores rápidos"><p id="ui-review-copy" class="ui-visually-hidden" role="status">Aguardando os dados das suas revisões.</p><a class="ui-quick-metric" href="/flashcards/"><span>Flashcards pendentes</span><strong id="ui-review-flashcards">—</strong><small>Revisar flashcards <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/cronograma/"><span>Aulas de hoje concluídas</span><strong id="ui-review-lessons">—</strong><small>Ver cronograma <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/caderno-erros/"><span>Erros ativos</span><strong id="ui-review-errors">—</strong><small>Abrir caderno <span aria-hidden="true">↗</span></small></a></section>
         <div id="dashboard-fallback-shell" hidden><p class="ui-feedback" data-state="warning" role="status">O Dashboard está demorando para carregar. Se a espera continuar, <a href="/dashboard/">tente novamente</a>.</p></div>
       </div>
     </main>

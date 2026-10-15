@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=20261015-unified-actions2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/consolidate-premium.css?v=1">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="consolidar">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -35,34 +36,106 @@
         </header>
 
         <section class="learn-page" aria-label="Consolidar">
-          <section class="luria-page-spotlight" aria-label="Consolidar">
-        <div class="luria-page-spotlight-copy">
-          <strong>Consolidar</strong>
-          <small class="luria-page-spotlight-helper">Revise, pratique e transforme conteúdo em conhecimento utilizável.</small>
-        </div>
-      </section>
+          <section class="luria-page-spotlight" aria-label="Consolidação e Prática">
+            <div class="luria-page-spotlight-copy">
+              <span class="consolidate-hero-eyebrow">
+                <span class="consolidate-hero-eyebrow-dot" aria-hidden="true"></span>
+                Ciclo de Fixação & Retenção
+              </span>
+              <strong>Consolidar Conhecimento</strong>
+              <small class="luria-page-spotlight-helper">Transforme o estudo teórico em retenção de longo prazo e precisão nas provas de Residência Médica.</small>
+              
+              <div class="consolidate-hero-badges" aria-label="Status do sistema">
+                <div class="consolidate-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>Bancos de Residência 2026</span>
+                </div>
+                <div class="consolidate-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  <span>Algoritmo de Retenção Ativo</span>
+                </div>
+                <div class="consolidate-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>Mapeamento de Falhas Clínicas</span>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <div class="learn-grid ui-feature-grid">
             <a class="learn-card ui-feature-card" data-resource="questions" href="/questoes-simulados/">
-              <span class="learn-icon ui-feature-icon"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
-              <h2>Questões e Simulados</h2>
-              <p>Teste o que aprendeu, treine prova e transforme conteúdo em decisão.</p>
-              <span class="learn-cta ui-context-action">Praticar →</span>
-              <span class="learn-card-deco" aria-hidden="true"></span>
+              <div class="consolidate-card-header">
+                <span class="consolidate-card-tag">Treinamento de Prova</span>
+                <span class="consolidate-card-microstat">+15.000 questões</span>
+              </div>
+              <span class="learn-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </span>
+              <h2>Questões & Simulados</h2>
+              <p>Treine com questões de bancas reais comentadas e simulados com tempo cronometrado.</p>
+              
+              <div class="consolidate-card-features">
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Filtros por banca, grande área e tema</span>
+                </div>
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Gabaritos com justificativa médica</span>
+                </div>
+              </div>
+
+              <span class="learn-cta ui-context-action">Praticar Questões <span class="cta-arrow" aria-hidden="true">→</span></span>
             </a>
 
             <a class="learn-card ui-feature-card" data-resource="flashcards" href="/flashcards/">
-              <span class="learn-icon ui-feature-icon"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/></svg></span>
-              <h2>Flashcards</h2>
-              <p>Revise no momento certo, fortaleça a memória e acompanhe sua retenção.</p>
-              <span class="learn-cta ui-context-action">Revisar →</span>
+              <div class="consolidate-card-header">
+                <span class="consolidate-card-tag">Repetição Espaçada</span>
+                <span class="consolidate-card-microstat">Algoritmo FSRS</span>
+              </div>
+              <span class="learn-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </span>
+              <h2>Flashcards Ativos</h2>
+              <p>Fortaleça a memória no momento exato antes do esquecimento com repetição inteligente.</p>
+              
+              <div class="consolidate-card-features">
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Algoritmo inteligente de retenção diária</span>
+                </div>
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Critérios diagnósticos e condutas-chave</span>
+                </div>
+              </div>
+
+              <span class="learn-cta ui-context-action">Revisar Flashcards <span class="cta-arrow" aria-hidden="true">→</span></span>
             </a>
 
             <a class="learn-card ui-feature-card" data-resource="errors" href="/caderno-erros/">
-              <span class="learn-icon ui-feature-icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
-              <h2>Caderno de erros</h2>
-              <p>Volte aos pontos que mais derrubam seu desempenho e corrija padrões.</p>
-              <span class="learn-cta ui-context-action">Revisar erros →</span>
+              <div class="consolidate-card-header">
+                <span class="consolidate-card-tag">Diagnóstico Cognitivo</span>
+                <span class="consolidate-card-microstat">Auditoria Ativa</span>
+              </div>
+              <span class="learn-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </span>
+              <h2>Caderno de Erros</h2>
+              <p>Mapeie padrões de falha: falta de atenção, pegadinha de banca ou lacuna teórica.</p>
+              
+              <div class="consolidate-card-features">
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Classificação do motivo de cada erro</span>
+                </div>
+                <div class="consolidate-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Revisão direcionada dos pontos fracos</span>
+                </div>
+              </div>
+
+              <span class="learn-cta ui-context-action">Auditar Erros <span class="cta-arrow" aria-hidden="true">→</span></span>
             </a>
           </div></section>
       </div>

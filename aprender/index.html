@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=20261015-unified-actions2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
 <link rel="stylesheet" href="/assets/css/learn-reference.css?v=1">
+<link rel="stylesheet" href="/assets/css/learn-premium.css?v=1">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -36,56 +37,145 @@
         </header>
 
         <section class="learn-page" aria-label="Aprender">
-          <section class="luria-page-spotlight" aria-label="Aprender">
-        <div class="luria-page-spotlight-copy">
-          <strong>Aprender</strong>
-          <small class="luria-page-spotlight-helper">Escolha como você quer aprender agora.</small>
-        </div>
-      </section>
+          <section class="luria-page-spotlight" aria-label="Estudos e Aprendizado">
+            <div class="luria-page-spotlight-copy">
+              <span class="learn-hero-eyebrow">
+                <span class="learn-hero-eyebrow-dot" aria-hidden="true"></span>
+                Hub de Aprendizado Clínico
+              </span>
+              <strong>Estudos & Fundamentos Médicos</strong>
+              <small class="luria-page-spotlight-helper">Construa sua base teórica para a Residência Médica com apostilas de alta densidade, anotações pessoais e tutoria com IA.</small>
+              
+              <div class="learn-hero-badges" aria-label="Recursos disponíveis">
+                <div class="learn-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  <span>Apostilas Luria 2026</span>
+                </div>
+                <div class="learn-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  <span>Meu Caderno Sincronizado</span>
+                </div>
+                <div class="learn-badge-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg>
+                  <span>Professor Alex: Tutor IA</span>
+                </div>
+              </div>
+            </div>
+          </section>
 
-          <section class="alex-hero" data-resource="alex" data-admin-only hidden>
+          <!-- Card de Tutoria Inteligente com o Mascote Robô Professor Alex -->
+          <section class="alex-hero" data-resource="alex">
             <div class="alex-visual" aria-hidden="true">
-              <professor-alex-mascot class="alex-character-img" size="180" theme="auto" expression="happy" interactive="false"></professor-alex-mascot>
+              <professor-alex-mascot class="alex-character-img" size="210" theme="auto" expression="happy" interactive="false"></professor-alex-mascot>
             </div>
             <div class="alex-content">
+              <div class="alex-tag-row">
+                <span class="alex-pill-tag">Tutor Inteligente · IA Médica</span>
+                <span class="alex-online-status">
+                  <span class="alex-online-dot" aria-hidden="true"></span>
+                  Disponível agora
+                </span>
+              </div>
               <h2>Professor Alex</h2>
-              <div class="alex-quote">“O que você quer entender hoje?”</div>
+              <div class="alex-quote">“O que você quer entender a fundo hoje, Dr. Luiz?”</div>
+              
               <form class="alex-ask" action="/professor-alex/" method="get">
                 <input class="alex-attach-input" id="alex-home-file" type="file" accept=".pdf,.txt,.md,.doc,.docx">
                 <button class="alex-attach" id="alex-home-attach" type="button" aria-label="Anexar material" title="Anexar material">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.4 11.6-8.9 8.9a6 6 0 0 1-8.5-8.5l9.6-9.6a4 4 0 0 1 5.7 5.7l-9.7 9.7a2 2 0 0 1-2.8-2.8l8.9-8.9"/></svg>
                 </button>
-                <input name="q" type="text" placeholder="Pergunte alguma coisa..." aria-label="Pergunte ao Professor Alex">
+                <input name="q" type="text" placeholder="Tire uma dúvida clínica, peça um caso ou resuma um tema..." aria-label="Pergunte ao Professor Alex">
                 <button class="alex-send" type="submit" aria-label="Enviar pergunta">➤</button>
               </form>
-              <div class="alex-suggestions" aria-label="Sugestões de estudo"><a href="/professor-alex/?q=Explique%20um%20conceito%20com%20exemplos">Entender um conceito <span aria-hidden="true">↗</span></a><a href="/professor-alex/?q=Ajude-me%20a%20organizar%20uma%20revis%C3%A3o">Organizar uma revisão <span aria-hidden="true">↗</span></a></div><div class="alex-entry-actions">
-                <a class="alex-open-tutoring" href="/professor-alex/">Abrir tutoria com o Professor Alex →</a>
-                <span class="alex-file-name" id="alex-home-file-name">Você também pode anexar seu material.</span>
+
+              <div class="alex-suggestions" aria-label="Sugestões de estudo">
+                <a href="/professor-alex/?q=Explique%20um%20conceito%20com%20exemplos">Entender um conceito clínico <span aria-hidden="true">↗</span></a>
+                <a href="/professor-alex/?q=Ajude-me%20a%20organizar%20uma%20revis%C3%A3o">Organizar uma revisão de prova <span aria-hidden="true">↗</span></a>
+                <a href="/professor-alex/?q=Qual%20a%20conduta%20imediata%20em%20emerg%C3%AAncia">Conduta em emergência <span aria-hidden="true">↗</span></a>
+              </div>
+
+              <div class="alex-entry-actions">
+                <a class="alex-open-tutoring" href="/professor-alex/">Abrir tutoria completa com o Professor Alex →</a>
+                <span class="alex-file-name" id="alex-home-file-name">Você também pode anexar um arquivo PDF ou resumo.</span>
               </div>
             </div>
           </section>
 
           <div class="learn-tools">
             <a class="tool-card ui-feature-card" data-resource="apostilas" href="/apostilas/">
-              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
+              <div class="tool-card-header">
+                <span class="tool-card-tag">Conteúdo Estruturado</span>
+                <span class="tool-card-microstat">Todas as Áreas</span>
+              </div>
+              <span class="tool-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </span>
               <h3>Apostilas</h3>
-              <p>Todo o conteúdo LURIA organizado por área.</p>
-              <span class="tool-cta ui-context-action">Explorar biblioteca →</span>
-            <svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><path d="M22 22h37v68H22zM61 22h37v68H61z" fill="var(--color-surface)"/><path d="M27 18h31v65H27zM62 18h31v65H62z"/><path d="m34 33 17 0m-17 12h17m18-12h17m-17 12h17M60 17v73"/></g></svg></a>
+              <p>Todo o conteúdo teórico de Residência organizado por grandes áreas e temas prioritários de prova.</p>
+              
+              <div class="tool-card-features">
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Direcionamento para pegadinhas de bancas</span>
+                </div>
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Esquemas diagnósticos e tabelas clínicas</span>
+                </div>
+              </div>
+
+              <span class="tool-cta ui-context-action">Explorar Biblioteca <span class="cta-arrow" aria-hidden="true">→</span></span>
+            </a>
 
             <a class="tool-card ui-feature-card" data-resource="notes" href="/caderno/">
-              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
-              <h3>Minhas anotações</h3>
-              <p>Seus resumos e materiais pessoais.</p>
-              <span class="tool-cta ui-context-action">Abrir →</span>
-            <svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><rect x="30" y="15" width="62" height="77" rx="8" fill="var(--color-surface)"/><path d="M40 32h35M40 45h26M40 58h20M24 30h12M24 44h12M24 58h12M24 72h12m48-8 10 5-14 25-13 5 1-13 16-22Z"/></g></svg></a>
+              <div class="tool-card-header">
+                <span class="tool-card-tag">Anotações Pessoais</span>
+                <span class="tool-card-microstat">Sincronizado</span>
+              </div>
+              <span class="tool-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg>
+              </span>
+              <h3>Minhas Anotações</h3>
+              <p>Seu espaço de resumos rápidos, pérolas de plantão e esquemas mnemônicos individuais.</p>
+              
+              <div class="tool-card-features">
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Editor com suporte a markdown e tags</span>
+                </div>
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Busca instantânea por assunto</span>
+                </div>
+              </div>
+
+              <span class="tool-cta ui-context-action">Abrir Meu Caderno <span class="cta-arrow" aria-hidden="true">→</span></span>
+            </a>
 
             <a class="tool-card ui-feature-card" data-resource="luriazap" href="/plantao/luriazap/">
-              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg></span>
+              <div class="tool-card-header">
+                <span class="tool-card-tag">Simulação Clínica</span>
+                <span class="tool-card-microstat">Passo a Passo</span>
+              </div>
+              <span class="tool-icon ui-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg>
+              </span>
               <h3>LuriaZap</h3>
-              <p>Estudo guiado, passo a passo.</p>
-              <span class="tool-cta ui-context-action">Começar →</span>
-<svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><path d="M24 23h74v50H59L40 89V73H24V23Z" fill="var(--color-surface)"/><path d="M37 39h48M37 52h33"/><circle cx="88" cy="84" r="13" fill="var(--resource-accent)" stroke="none"/><path d="m83 84 4 4 7-8" stroke="var(--color-surface)"/></g></svg></a>
+              <p>Estudo interativo e guiado em formato de mensagens com tomada de decisão médica.</p>
+              
+              <div class="tool-card-features">
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Casos clínicos em tempo real</span>
+                </div>
+                <div class="tool-feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Feedback imediato em cada conduta</span>
+                </div>
+              </div>
+
+              <span class="tool-cta ui-context-action">Iniciar no LuriaZap <span class="cta-arrow" aria-hidden="true">→</span></span>
+            </a>
           </div></section>
       </div>
     </main>
