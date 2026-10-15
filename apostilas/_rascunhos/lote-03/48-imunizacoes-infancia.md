@@ -74,19 +74,90 @@ Idade e intervalos válidos? → verificar calendário técnico de 2026 e notas 
 Há contraindicação real? → registrar avaliação, individualizar ou referenciar.  
 Aplicar imunizantes elegíveis → registrar lote, dose, via, local e sistema; comunicar calendário de retorno.
 
-## 10. Casos clínicos autorais comentados
+## 10. Oito casos clínicos integradores comentados
 
-### Caso 1 — A criança que chega com esquema antigo
-Lactente de 4 meses iniciou vacinação pneumocócica durante a transição VPC10/VPC20. Familiares questionam por que a segunda dose na unidade tem produto diferente da primeira. **Hipótese:** esquema com diferentes valências segundo transição logística; não necessariamente erro. **Raciocínio:** conferir doses/intervalos, nota vigente e registro. **Exames:** não há exame laboratorial de rotina para decidir vacinação. **Conduta:** seguir indicação e norma atual da sala de vacina, explicar transição e registrar. **Por que importa:** evita “corrigir” um esquema válido com dose extra desnecessária.
+Estes casos são fictícios, construídos para treinar decisões pediátricas e de sala de vacina. O histórico vacinal real, o produto disponível e a norma vigente na data da aplicação devem ser confirmados antes de uma prescrição.
 
-### Caso 2 — Tosse leve e vacina atrasada
-Criança escolar com coriza leve, sem sinais de doença sistêmica, apresenta atraso vacinal. **Hipótese:** doença leve sem impedimento universal para imunização. **Raciocínio:** avaliar febre, gravidade e contraindicações por produto. **Conduta:** conferir calendário e completar doses elegíveis sem adiamento automático. **Importância:** reduz oportunidades perdidas.
+### Caso 1 — VPC20 aos 2 meses e VPC10 aos 4: erro ou transição?
 
-### Caso 3 — Imunodepressão e calendário incompleto
-Criança em quimioterapia com várias doses faltantes, inclusive vacinas vivas. **Hipótese:** indicação de planejamento vacinal especial, não aplicação indiscriminada. **Raciocínio:** tipo e grau de imunossupressão, cronologia terapêutica e risco de doença. **Conduta:** articular especialista/RIE/CRIE; verificar vacinas contraindicadas temporariamente e proteção de contatos. **Importância:** imunização adequada depende de condição biológica, não apenas idade.
+**Apresentação:** lactente de quatro meses recebeu VPC20 aos dois meses, em julho de 2026. Na unidade, encontra-se disponível VPC10 para a segunda dose. A família questiona por que o nome mudou e deseja “começar de novo” com VPC20 quando houver estoque. A criança não possui doença de risco conhecida e o primeiro registro é confiável.
 
-### Caso 4 — Evento alérgico grave anterior
-Pais relatam que criança apresentou urticária generalizada, dispneia e colapso poucos minutos após imunizante anterior, atendida em emergência. **Hipótese:** possível anafilaxia à dose ou componente. **Exames:** investigação alergológica dirigida conforme necessidade. **Conduta:** não repetir a mesma vacina sem avaliação especializada e protocolo de segurança; documentar evento. **Importância:** distingue reação local frequente de contraindicação potencialmente grave.
+**Hipótese:** esquema em período de transição do PNI, não erro necessariamente. **Raciocínio:** a comunicação ministerial de julho de 2026 descreve uma estratégia de VPC20 aos dois meses, VPC10 aos quatro e reforço VPC20 aos doze durante a coexistência de produtos. A consistência precisa ser conferida pela nota operacional que rege o lote/local. Recomeçar série apenas por diferença de valência desperdiçaria dose potencialmente válida e poderia alterar intervalos.
+
+**Exames e avaliação:** nenhum exame laboratorial é rotina para decidir dose; checar Caderneta, datas, produto, histórico pneumocócico e presença de indicação especial para CRIE. **Conduta:** seguir instrução atual da sala de imunização, documentar formulação/lote, explicar a transição e agendar reforço com intervalo válido. Se criança tiver asplenia ou outra doença de alto risco, avaliar o esquema especial.
+
+**Por que importa:** vacinação é uma norma atualizável; uma “mistura de produtos” pode ser aplicação programática correta.
+
+### Caso 2 — Rotavírus aos dez meses e invaginação prévia
+
+**Apresentação:** criança de dez meses nunca recebeu vacina contra rotavírus. A mãe relata internação aos cinco meses por invaginação intestinal confirmada e tratada. O profissional lembra que a janela foi ampliada em 2026 e cogita aplicar primeira dose agora.
+
+**Hipóteses e diferencial:** a idade poderia estar dentro da janela atual do PNI para primeira dose (até 11m29d na página oficial), **mas o antecedente de invaginação é contraindicação**. A elegibilidade precisa cumprir idade **e** segurança do produto.
+
+**Exames e interpretação:** não é necessário fazer ultrassonografia de rotina para “liberar” a vacina apenas porque a criança está assintomática; o antecedente clínico é o dado decisivo. **Conduta:** não administrar rotavírus nesta situação, documentar contraindicação, explicar motivo sem desqualificar família, conferir demais vacinas elegíveis e oferecer orientações de prevenção/atenção à desidratação.
+
+**Por que importa:** ampliação da janela etária **não elimina contraindicações**.
+
+### Caso 3 — Criança com quimioterapia e doses vivas pendentes
+
+**Apresentação:** menina de cinco anos em quimioterapia para leucemia tem carteira incompleta com doses de varicela e febre amarela pendentes. A unidade de vacinação pode aplicá-las no mesmo dia, mas não possui informações sobre esquema oncológico e recuperação imune. Os pais querem reduzir idas ao hospital.
+
+**Hipóteses:** criança sob imunossupressão relevante, com risco maior de doença imunoprevenível e risco potencial com vacinas vivas. **Raciocínio:** simplesmente completar o calendário etário ignorando tratamento seria inseguro; por outro lado, suspender todas as vacinas permanentemente também é incorreto. Vacinas inativadas e vivas têm comportamento distinto, e resposta pode ser reduzida durante quimioterapia.
+
+**Avaliação:** conferir fármacos, fase do tratamento, história vacinal, episódios infecciosos, recomendação oncológica e critérios atuais de CRIE/RIE. **Conduta:** articular vacinação especial com oncologia/CRIE, definir produtos/tempo indicados, revisar proteção dos contatos domiciliares, agendar retorno e documentar decisões. Não prescrever doses vivas por “aparência boa” durante o tratamento.
+
+**Por que importa:** o calendário de rotina é ponto de partida, não receita única para imunodeprimidos.
+
+### Caso 4 — Reação anafilática após vacinação: nem toda reação é igual
+
+**Apresentação:** criança de três anos apresenta urticária generalizada, dificuldade respiratória e hipotensão alguns minutos após vacina. É atendida em emergência com melhora após tratamento específico. Em retorno ambulatorial, a família apresenta documentação parcial e teme todas as demais vacinas.
+
+**Hipótese:** anafilaxia temporalmente associada a imunobiológico, requerendo confirmação e investigação de causalidade/componente. **Diferenciais:** reação vasovagal (pode causar palidez e síncope, sem mesmo padrão de broncoespasmo/urticária), ansiedade, exposição concomitante a alimento/medicamento e outros diagnósticos. A associação temporal é forte sinal, mas investigação determina causalidade.
+
+**Exames/avaliação:** relatório de atendimento, fármaco utilizado, lote, componentes, cronologia, manifestação respiratória e cardiovascular, e encaminhamento quando necessário à alergologia/CRIE. **Conduta:** atendimento emergencial com adrenalina IM durante a reação; notificação EAPV; antes de repetir produto suspeito, avaliação especializada e decisão individualizada sobre proteção futura. Não contraindicar automaticamente todos os imunizantes sem ligação ao componente.
+
+**Por que importa:** diferenciar evento grave verdadeiro de febre e dor local evita tanto nova exposição insegura quanto suspensão desnecessária de proteção.
+
+### Caso 5 — Dose zero de sarampo durante surto e o primeiro aniversário
+
+**Apresentação:** bebê de oito meses recebe SCR em campanha de resposta a risco de sarampo em município incluído por nota de 2026. Aos 12 meses, a família apresenta registro e pergunta se pode dispensar a tríplice viral de rotina porque “tomou há quatro meses”.
+
+**Hipótese:** dose zero aplicada antes da idade rotineira, que não substitui automaticamente D1 e D2 da programação. **Raciocínio:** o objetivo de D0 é proteção imediata em epidemiologia especial, antes da idade do esquema principal. A duração/qualidade da resposta pode diferir quando se vacina antes da idade rotineira, por isso as normas preservam doses subsequentes.
+
+**Avaliação:** verificar se a nota municipal/estadual aplicável realmente incluía a criança e a dose foi válida, confirmar datas e intervalos. **Conduta:** seguir calendário nacional e regras de campanha, incluindo D1 aos 12 meses e D2 aos 15 meses quando elegível; explicar diferença entre D0 e dose regular. Manter vigilância de sintomas e investigação de contatos em caso suspeito, independentemente de carteira.
+
+**Por que importa:** o nome “dose zero” sinaliza proteção adicional, não conclusão precoce do esquema.
+
+### Caso 6 — Criança escolar com coriza e atraso vacinal
+
+**Apresentação:** menino de quatro anos comparece com rinorreia e tosse leve há dois dias, sem febre relevante ou sinais de doença sistêmica. A carteira está atrasada em DTP, VIP e varicela. A família trabalha em turnos e terá dificuldade para retornar na semana seguinte.
+
+**Hipótese:** infecção de vias aéreas leve sem contraindicação universal; risco de oportunidade perdida. **Diferenciais:** se a criança apresentasse doença moderada/grave, prostração, sinais respiratórios preocupantes ou contraindicação específica, a decisão seria outra.
+
+**Avaliação:** exame dirigido, histórico vacinal/documentação, contraindicações por produto, intervalos, idade e disponibilidade. **Conduta:** vacinar os imunizantes elegíveis de acordo com protocolo e intervalo, ou organizar recuperação sem adiamento desnecessário; orientar reação esperada e sinais de gravidade, registrar e marcar retorno. Não “reiniciar série inteira” por atraso simples.
+
+**Por que importa:** regras de contraindicação incorretas ampliam bolsões de suscetibilidade.
+
+### Caso 7 — Exposição a morcego e carteira “completa”
+
+**Apresentação:** adolescente de 12 anos é mordido por morcego durante viagem. A ferida é pequena e ele possui calendário infantil atualizado. A família conclui que não precisa de nada, pois tomou vacinas usuais e tomou banho após o evento.
+
+**Hipótese:** exposição potencial à raiva, com indicação de avaliação imediata de profilaxia pós-exposição independente do calendário rotineiro infantil. **Raciocínio:** vacinação de rotina não inclui imunização universal contra raiva para todas as crianças, e o risco depende de espécie/contato. Ferida pequena não significa risco desprezível.
+
+**Exames/avaliação:** exame da ferida, local/gravidade, data e situação do animal, classificação do contato segundo norma de raiva humana, histórico de vacinação antirrábica quando houver. **Conduta:** higienização apropriada e avaliação urgente em serviço habilitado para decidir vacina e imunoglobulina/soro conforme protocolo; prevenir tétano e infecção bacteriana quando pertinentes, sem substituir profilaxia contra raiva.
+
+**Por que importa:** imunização pós-exposição é um algoritmo por agente e risco, não mera leitura de cartão da rotina.
+
+### Caso 8 — Cobertura de 95% e surto concentrado
+
+**Apresentação:** município com 20 mil crianças registra cobertura de 95% para determinado indicador, mas dois bairros periféricos têm muitos não vacinados e há transmissão de sarampo. A gestão afirma que “95% é suficiente, logo as notificações estão erradas”.
+
+**Hipótese epidemiológica:** cobertura agregada esconde heterogeneidade territorial e grupos suscetíveis. **Investigação:** avaliar denominadores de cada bairro, doses válidas, idade/registro, acesso à UBS, vacinação escolar e dados de vigilância. Cobertura administrativa pode estar distorcida por migração e registros duplicados.
+
+**Conduta:** investigação de casos e contatos, ações de vacinação/bloqueio conforme risco e notas técnicas, busca ativa com planejamento logístico e comunicação clara. O número municipal alto não exclui surto nem substitui análise de distribuição.
+
+**Por que importa:** vacinação envolve clínica, epidemiologia, acesso e informação de qualidade.
+
 
 ## 11. Seis questões originais comentadas
 
