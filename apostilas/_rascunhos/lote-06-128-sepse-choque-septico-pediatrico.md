@@ -265,3 +265,134 @@ Volume em bolos pode piorar edema pulmonar quando ventrículo não consegue lida
 
 Se miocardite fulminante evolui com choque refratário, suporte circulatório mecânico/ECMO pode ser considerado em centros especializados, ponderando prognóstico, contraindicações e recursos. A existência da tecnologia não significa indicação para toda criança com taquicardia febril.
 
+
+
+## 21. Acompanhar a resposta: metas clínicas e tendências
+
+Reavaliação estruturada deve ser repetida depois de cada intervenção relevante. O conjunto de **frequência cardíaca para a idade, pressão, tempo de enchimento capilar, temperatura e pulsos das extremidades, consciência e diurese** fornece um panorama mais robusto que qualquer sinal isolado. Registrar o horário da mudança e o que foi administrado permite reconhecer se a perfusão melhorou ou apenas se a pressão subiu pelo efeito vasoconstritor.
+
+**Tendência de lactato** pode indicar recuperação ou piora metabólica, mas elevação persistente deve ser interpretada junto a perfusão, uso de adrenalina, hipóxia, convulsões e função hepática; não oferecer litros adicionais exclusivamente para "zerar o lactato" quando há edema pulmonar. A SSC 2026 sugere meta de **ScvO₂ ≥70% quando existe acesso venoso central apropriado**, em contexto de equipe capacitada e recomendação condicional de certeza muito baixa. A saturação venosa central normal/alta não garante microcirculação adequada na sepse, assim como valores baixos exigem interpretar hemoglobina, saturação arterial, demanda e débito.
+
+### 21.1 Exame seriado estruturado
+
+| Parâmetro | Melhora esperada | Alerta de falha |
+| --- | --- | --- |
+| TEC | Aproxima-se do esperado, comparando técnica consistente | Mantém-se lento ou piora apesar de tratamento |
+| Consciência | Maior interação, postura, resposta apropriada | Nova sonolência/irritabilidade grave, convulsão |
+| Pulsos e temperatura | Perfusão periférica mais uniforme | Moteamento crescente, extremidades frias ou vasoplegia |
+| Diurese | Reaparece ao longo das horas conforme contexto | Oligúria persistente com congestão/disfunção renal |
+| Pressão | Adequada à idade, sem queda sustentada | Hipotensão ou escalada contínua de vasoativos |
+| Respiração | Menos esforço e oxigênio necessário | Estertores, hepatomegalia, hipóxia ou fadiga após bolos |
+| Lactato | Tendência coerente com recuperação | Sobe associado à má perfusão ou outros fatores |
+
+**Armadilha:** melhora da pressão após noradrenalina não significa necessariamente recuperação do fluxo dos capilares se estado mental, pele e lactato pioram. O inverso também ocorre: a criança pode ter pressão ainda abaixo da meta após bolus, mas com congestão e função ventricular baixa; continuar fluidos sem reavaliar pode agravar o quadro.
+
+### 21.2 POCUS e ecocardiografia funcional
+
+O **POCUS** cardíaco e pulmonar, quando há equipe treinada, pode avaliar contratilidade global, sinais de sobrecarga, função de ventrículo direito, derrame pericárdico, linhas B pulmonares e estimativas de congestão. Diâmetro de veia cava **não é medidor infalível de fluidorresponsividade em crianças**, especialmente em ventilação espontânea, e índices isolados podem ser enganosos. Usar POCUS junto ao exame e registrar qualidade da janela, limitações e hipóteses; não transformar ausência de aparelho em justificativa para atrasar antibiótico/transferência.
+
+## 22. Alterações metabólicas e terapias controversas
+
+Na sepse, acidose metabólica pode refletir lactato, insuficiência renal, hipercloremia após soluções salinas e outros mecanismos. **Bicarbonato de sódio não substitui restabelecer perfusão e ventilação**, e SSC 2026 considera insuficiente a evidência para recomendá-lo rotineiramente em toda acidemia metabólica pediátrica. Indicações específicas de terapia do potássio, intoxicações e condições graves requerem avaliação própria.
+
+Hipocalcemia pode resultar de inflamação e doença crítica; corrigir hipocalcemia sintomática ou relevante à hemodinâmica pode ser apropriado, mas a SSC 2026 não estabeleceu recomendação universal de normalização indiscriminada de cálcio. Reposição excessiva também tem riscos. Distúrbios de glicemia e potássio podem causar arritmias e convulsões e devem ser manejados conforme nível, sintomas e protocolo.
+
+**Vitamina C e tiamina:** a SSC pediátrica 2026 sugere contra suplementação **rotineira** dessas vitaminas como tratamento de choque, mas reposição pode ser apropriada em deficiência suspeita/documentada, como desnutrição grave. Não promover “coquetéis de sepse” com múltiplos fármacos sem demonstração de benefício em crianças. Terapias de hemoperfusão e citocinas têm indicações experimentais/selecionadas e não fazem parte do pacote universal para pronto atendimento.
+
+### 22.1 Hipoglicemia em bebê séptico
+
+Um lactente com doença grave tem reservas de glicogênio limitadas e consumo aumentado; hipoglicemia pode causar alteração de consciência e convulsões. Medir glicose capilar cedo e confirmar/monitorar conforme situação, tratando com protocolo específico da idade. A melhora da glicose pode recuperar responsividade, mas não significa que a infecção foi resolvida. Hiperglicemia de estresse também aparece e deve ser manejada com prudência para evitar hipoglicemia iatrogênica.
+
+## 23. Erros de prescrição e segurança medicamentosa pediátrica
+
+Em sepse pediátrica, muitos erros graves decorrem de **peso errado, unidade errada, diluição não padronizada e confusão entre mcg/kg/min e mg/kg/h**. O peso ideal é medido quando possível, sem atrasar emergências; quando não é possível, usar estimativa validada por idade/comprimento sob protocolo e corrigir posteriormente. A ordem de vasoativo deve registrar concentração, unidade, velocidade de infusão, acesso, monitorização e dupla checagem; nunca escrever apenas "adrenalina a 0,1" sem unidade.
+
+### 23.1 Fármaco, dose, concentração e bomba: quatro verificações
+
+1. Qual agente e indicação clínica?
+2. Qual dose por kg e intervalo **conforme protocolo pediátrico**?
+3. Qual apresentação comercial e diluição final disponível na instituição?
+4. Qual velocidade em mL/h para aquela concentração e bomba, com verificação independente?
+
+Mesmo quando a aritmética está correta, medicamento pode ser inadequado ao foco: nitrofurantoína não trata pielonefrite, por exemplo; antibiótico com penetração insuficiente no SNC pode falhar na meningite. Função renal e variações de volume de distribuição na sepse afetam doses e intervalos. **A tabela de drogas de adulto jamais substitui bulário pediátrico validado.**
+
+### 23.2 Efeitos adversos que parecem deterioração da sepse
+
+Infusão de catecolaminas pode causar taquicardia e alteração de lactato sem necessariamente significar piora infecciosa; aminoglicosídeos podem contribuir para LRA; vancomicina pode ter toxicidades e reações relacionadas à infusão; sedativos podem reduzir pressão e mascarar consciência; bolos de fluidos podem agravar congestão. Diante de nova instabilidade, revisar tempo em relação a medicamentos, linha de infusão, extravasamento e compatibilidade, além de buscar progressão da doença.
+
+### 23.3 Compatibilidade e acesso
+
+Múltiplas drogas em poucas vias intravenosas podem precipitar incompatibilidades. O preparo exige consulta farmacêutica e protocolos, com organização de lúmens quando há acesso central. Se só existe acesso periférico e é preciso iniciar vasoativo urgente, priorizar via segura sob vigilância e adequar acessos tão logo possível, sem interromper antibióticos/ressuscitação. O cuidado de enfermagem com bombas, sítios de punção e identificação de seringas é parte essencial da segurança.
+
+## 24. Choque séptico na UBS ou pronto atendimento sem UTI: plano de transferência
+
+O maior risco em serviço com suporte limitado é **repetir bolos de fluido e aguardar hipotensão progressiva** enquanto se tenta obter exames que não mudam a decisão de transferência. Reconhecer gravidade e comunicar precocemente à regulação/serviço receptor, descrevendo idade, peso, sinais de perfusão, antibióticos, doses de fluidos, resposta e necessidade de suporte. Prevenir hipotermia, corrigir hipoglicemia, monitorizar oxigênio e manter acesso enquanto organiza transporte.
+
+A atualização SSC 2026 distingue explicitamente crianças **sem hipotensão e sem UTI**: não oferecer bolos por rotina; começar manutenção apropriada e tratar a infecção. Quando há **choque hipotensivo** nesse cenário, considerar bolos de 10–20 mL/kg até 40 mL/kg na primeira hora com reavaliação e interromper se melhorar ou congestionar. A transferência requer equipe e recursos proporcionais, não apenas colocar criança em ambulância sem via, oxigênio ou plano se instabilidade importante.
+
+### 24.1 Comunicação SBAR
+
+**S (Situação):** “Criança de 3 anos, 14 kg, suspeita de choque séptico de foco pulmonar, hipoperfusão persistente”.
+
+**B (Background):** “Febre há três dias, doença prévia/antibiótico recente, imunizações, alergias e medicamentos”.
+
+**A (Avaliação):** “PA/FC/FR/SpO₂, consciência, TEC, diurese, glicemia, lactato se coletado, ausculta e sinais de congestão; horários de antibiótico e volume por bolos”.
+
+**R (Recomendação):** “UTIP e possível suporte vasoativo/respiratório; acesso assegurado, recursos do transporte e medidas até a chegada”.
+
+A comunicação estruturada reduz doses repetidas, omissões e atrasos. Ela não substitui prontuário ou contato entre especialistas, mas fornece visão de risco enquanto outras equipes são acionadas.
+
+## 25. Indicadores de qualidade: como aprender com cada caso
+
+Programas hospitalares de melhoria de sepse devem medir tempo de reconhecimento, obtenção de acesso, culturas sem atrasar terapia, **hora de início do antimicrobiano**, reavaliação de perfusão depois de bolos e transferência adequada. A SSC 2026 recomenda que hospitais possuam procedimentos padronizados de cuidado e melhoria de desempenho; contudo, a mesma diretriz considera **evidência insuficiente para recomendar rastreamento sistemático adicional a protocolos clínicos estabelecidos para todos os pacientes agudamente doentes**. Protocolo é ferramenta de suporte, não detector perfeito de sepse.
+
+Auditar proporção de criança com choque reconhecido sem hipotensão, volume total aplicado em cenários sem UTI e ocorrência de edema pulmonar, além de tempo de vasoativo, pode identificar erros evitáveis. Não recompensar “100% de antibiótico em uma hora para todas as febres”, pois isso induz sobretratamento. Indicadores de bom cuidado precisam medir ao mesmo tempo **resposta em choque** e segurança de não medicar infecções autolimitadas.
+
+### 25.1 Debriefing de um evento crítico
+
+Perguntar: a criança já apresentava sinais de hipoperfusão antes de a PA cair? Houve atraso por dificuldade de acesso? O antibiótico estava disponível? A equipe registrou a resposta a cada bolo? Congestão foi identificada? A necessidade de vasoativo foi considerada cedo? Houve reconhecimento do foco para cirurgia/drenagem? Famílias receberam comunicação e participaram do plano pós-alta? O objetivo é melhorar sistema e aprendizagem, sem punição simplista.
+
+## 26. Sobrevivência e cuidado pós-sepse pediátrica
+
+Alta da UTI não significa recuperação completa. Sobreviventes de sepse podem apresentar **fraqueza adquirida, queda de condicionamento, dificuldades escolares, alterações cognitivas/atenção, perturbações do sono, ansiedade, sintomas pós-traumáticos e sobrecarga familiar**, especialmente após longa ventilação/sedação. Avaliar crescimento, alimentação, estado funcional e sintomas psicológicos nas semanas e meses seguintes; encaminhar para reabilitação/seguimento especializado conforme déficits, em coordenação com pediatria e APS.
+
+Famílias precisam entender quais sinais justificam retorno urgente, resultados de cultura ainda pendentes, conclusão do antimicrobiano quando aplicável, dispositivos/drenos, vacinas necessárias e riscos ligados à causa de base. Em crianças com asplenia ou imunossupressão, prevenção secundária inclui imunização e orientações de febre. **Reabilitação não é tratamento opcional "de luxo"** quando há incapacidade funcional real, e deve ser planejada conforme rede.
+
+### 26.1 O que perguntar na primeira consulta após alta
+
+- A criança voltou a correr/brincar, andar e interagir como antes?
+- Teve regressão escolar, problemas de memória/sono ou medo de hospital?
+- Há necessidade de fisioterapia respiratória/motora ou terapia ocupacional?
+- Alimentação, hidratação, crescimento e vacinação estão atualizados?
+- Houve LRA ou dano cardíaco que exige novo laboratório/ecocardiografia?
+- Responsáveis receberam explicações sobre medicações, sinais de alarme e retorno?
+
+## 27. Resumo de alto rendimento — algoritmos e "não confundir"
+
+### 27.1 Algoritmo textual para a sala de emergência
+
+**Infecção plausível + criança com má perfusão/alteração de consciência?** Avaliar ABC, glicose, SpO₂, pressão por idade, pulsos/TEC/diurese e convocar suporte. Se choque suspeito, **antibiótico idealmente em até 1 hora**, culturas apenas se não atrasarem, monitorização e fluidos **dependentes de recursos/hipotensão**, com reavaliação de cada bolo. Se sinais de congestão ou perfusão não recupera, avaliar vasoativo e função cardíaca sem insistir em volume. Buscar controle de foco, otimizar oxigenação, função renal, glicose e acompanhar evolução. Para sepse provável **sem choque**, avaliação rápida e antibiótico até 3 horas se suspeita subsiste.
+
+### 27.2 Tabela final de armadilhas
+
+| Afirmação errada | Correção fundamentada |
+| --- | --- |
+| Sepse infantil = SIRS + febre | Phoenix 2024 exige disfunção orgânica ameaçadora em infecção suspeita |
+| Só há choque quando PA fica baixa | Hipotensão é tardia; perfusão pode estar comprometida antes |
+| Aplicar SOFA adulto e PAM 65 em todo bebê | Critérios de idade e Phoenix mudam classificação |
+| Toda sepse precisa de 60 mL/kg | Volume depende de choque, UTI disponível e resposta a cada bolus |
+| Sem UTI, dar bolo em toda criança febril | SSC 2026 recomenda contra bolos na sepse sem hipotensão nesse cenário |
+| É preciso CVC antes de iniciar vasoativo | Pode iniciar por periférico monitorizado quando atraso seria perigoso |
+| Adrenalina ou noradrenalina é superior em todas | SSC 2026 não tem evidência suficiente para eleger uma única primeira linha |
+| Lactato normal exclui choque | Não exclui; interpretar tendência e perfusão |
+| Cultura negativa exclui sepse bacteriana | Amostra, tempo/antibiótico e patógeno limitam sensibilidade |
+| Procalcitonina isolada decide antibiótico | Não substitui clínica/culturas; diretriz não apoia desescalonamento rotineiro em programa efetivo |
+| Hidrocortisona em toda criança com vasoativo | Não usar de rotina se estabiliza; exceção adrenal |
+| Intubar todo choque refratário sem falência respiratória | Evidência insuficiente para regra universal |
+| Aumentar antibiótico resolve abscesso fechado | Foco pode exigir drenagem/cirurgia |
+| A alta da UTI encerra todo o cuidado | Seguimento funcional, renal, cognitivo e familiar importa |
+
+### 27.3 Metas de aprendizagem para casos e questões
+
+Ao concluir, o aluno deve reconhecer sepse versus infecção localizada, diferenciar choque compensado/descompensado, identificar Phoenix e suas limitações, escolher estratégia de fluidos conforme cenário, interpretar lactato, entender tempo da primeira dose, discutir vasoativo sem regra rígida, identificar necessidade de controle de foco e reconhecer riscos de intubação e sobrecarga. Deve saber **o que depende de equipe especializada** e nunca improvisar doses de vasopressores ou antimicrobianos em crianças fora de protocolo.
+
