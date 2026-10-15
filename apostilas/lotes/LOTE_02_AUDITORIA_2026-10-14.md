@@ -113,3 +113,24 @@ Comparadas afirmações-chave com **GINA 2026 (fonte primária de asma)**, **GOL
 - **PAC com comorbidades:** a estratégia da ATS/IDSA 2019 exige distinguir **beta-lactâmico + macrolídeo/doxiciclina** de beta-lactâmico isolado e de quinolona respiratória seletiva; o quadro novo documenta essa decisão.
 
 **Resultado:** duas lacunas de conteúdo reduzidas, mas **nenhuma das cinco apostilas foi certificada**. O teste de autossuficiência continua parcial. Não há \`content.json\`, incorporação ao catálogo, lote de imagens aprovado, auditoria visual ou deploy.
+
+
+## Etapa 08 — consolidação estrutural dos cinco manuscritos (14/10/2026)
+
+Foram criadas versões novas e **independentes** de leitura contínua, mantendo todos os arquivos históricos `*_RASCUNHO.md` intactos:
+
+| Tema | Nova versão editorial | Capítulos em sequência | Caracteres brutos da versão de leitura | Casos / questões |
+|---|---|---:|---:|---:|
+| Asma | `LOTE_02_ASMA_EDICAO_CONTINUA.md` | 10 | 65.653 | 8 / 12 |
+| DPOC | `LOTE_02_DPOC_EDICAO_CONTINUA.md` | 9 | 71.258 | 12 / 16 |
+| Diabetes mellitus | `LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md` | 10 | 64.223 | 10 / 16 |
+| PAC adulta | `LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md` | 10 | 68.748 | 12 / 18 |
+| Tuberculose | `LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md` | 9 | 84.634 | 10 / 18 |
+
+Os capítulos foram agrupados por lógica didática (fundamentos, quadro clínico/diagnóstico, estratificação, tratamento, exceções, casos e questões) **sem alterar propositalmente as informações médicas**; o texto foi preservado em blocos, mudando a ordem, hierarquia e a localização de casos/questões. Excluíram-se da versão de leitura os capítulos editoriais puros de benchmark, checklist, extensão e autossuficiência; os registros históricos e auditorias continuam no repositório. A bibliografia essencial foi reunida ao final.
+
+Criado `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json`, com fonte/versão de leitura, áreas, títulos, capítulos, SHA, tamanho e contagem de casos/questões por livro. **Validações automatizadas limitadas:** cinco conjuntos de capítulos numerados em sequência, pelo menos quatro casos e seis questões por livro, URLs bibliográficas explícitas, nenhum capítulo de auditoria editorial num índice de aluno. Não foram detectadas repetições exatas ou similaridades textuais altas no teste heurístico de parágrafos realizado; isso **não exclui redundância semântica**.
+
+**Ressalva indispensável:** o tamanho bruto de cada `EDICAO_CONTINUA.md` é menor que o histórico porque capítulos inteiros de metadados e auditoria foram retirados da versão voltada ao aluno. A estimativa de caracteres de texto sem marcação ultrapassou 60 mil nos cinco, mas é só **métrica aproximada**, não aprovação de 60 mil caracteres clínicos didáticos úteis. A revisão final de coesão entre blocos, dose por apresentação, atualidade das condutas, origem de imagens e autossuficiência é manual. Nenhum destes arquivos constitui `books[].sections[].body_html`, `content.json` ou página pública do site.
+
+**Estado:** 5 rascunhos históricos mantidos + 5 edições contínuas independentes + manifesto; **0 certificados, 0 publicados, 0 merges e 0 deploys**.
