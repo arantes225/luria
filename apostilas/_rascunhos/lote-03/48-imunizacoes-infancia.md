@@ -227,6 +227,108 @@ Asplenia, deficiências do complemento, tratamento com inibidores do complemento
 Não confundir meningite bacteriana aguda suspeita com pergunta sobre vacinação: criança febril com petéquias e alteração de consciência precisa de atendimento emergencial e antimicrobiano adequado, não esperar atualização vacinal.
 
 
+
+## 17. Recém-nascido: hepatite B, BCG e proteção antes da alta
+
+### 17.1 Hepatite B ao nascer
+
+A hepatite B pode ser transmitida verticalmente, e a infecção adquirida no início da vida apresenta maior risco de cronificação do que a infecção em muitos adultos. A vacinação neonatal precoce reduz esse risco e integra a rotina nacional. Em recém-nascidos de mãe com infecção por HBV, pode haver indicação de **imunoglobulina específica anti-hepatite B (IGHAHB)** além da vacina; a dose de rotina por si só não deve ser confundida com toda a profilaxia de exposição materna. A equipe da maternidade precisa conferir HBsAg materno, administração e registro, e programar acompanhamento com exames específicos quando indicado.
+
+Não se deve atrasar uma dose elegível apenas porque o bebê aguarda uma triagem sem relação com contraindicação; ao mesmo tempo, imunização de prematuros e recém-nascidos de baixo peso pode exigir regras diferenciadas de esquema/contagem de doses conforme o produto e norma. Documentar vacina já aplicada e imunoglobulina separadamente para que a APS não confunda os dois.
+
+### 17.2 BCG: proteção contra formas graves e contraindicações
+
+A BCG é vacina viva derivada de *Mycobacterium bovis* e protege sobretudo contra formas graves e disseminadas de tuberculose na infância, como meningite tuberculosa e tuberculose miliar. Não impede toda infecção por *M. tuberculosis* e não é teste de que a criança nunca desenvolverá doença pulmonar. Sua via habitual é **intradérmica**, exigindo aplicação por profissional habilitado e técnica adequada.
+
+Condições neonatais como muito baixo peso, doença clínica importante ou imunodeficiência relevante podem requerer adiamento ou contraindicação conforme a norma vigente. Crianças com condições suspeitas de imunodeficiência devem ser avaliadas cuidadosamente porque a vacina contém microrganismo vivo. Em recém-nascido de mãe que vive com HIV, a decisão depende do protocolo atualizado e de informações sobre condição/exposição do bebê; **não usar regra vaga “toda exposição HIV = vacina agora” ou “nunca vacina”** sem consulta técnica.
+
+### 17.3 Cicatriz vacinal é memória cutânea, não teste de soroproteção
+
+Uma pápula/nódulo e lesão local podem evoluir até cicatriz, com variação. **Ausência de cicatriz não demonstra obrigatoriamente vacinação inválida e não indica revacinação automática.** Complicações locais podem incluir linfadenite, abscesso frio e ulceração; eventos disseminados são raros, mas graves especialmente em imunodeficiência. O manejo não deve ser cópia simplista do resumo de cursinho (“qualquer úlcera = isoniazida até fechar”): investigação e tratamento dependem de tipo de reação e recomendações especializadas.
+
+**Mini-caso:** lactente de seis meses tem registro confiável de BCG neonatal, mas não se identifica cicatriz. Sem outra indicação clínica, não se deve pedir dose extra apenas para produzir a marca; avaliar registro e orientação oficial.
+
+## 18. Pentavalente, coqueluche, hepatite A e proteção contra tétano
+
+### 18.1 Pentavalente: cinco alvos em um produto
+
+A pentavalente do PNI reúne componentes contra difteria, tétano e coqueluche (DTP), *Haemophilus influenzae* tipo b e hepatite B. A rotina mostrada para 2026 contempla doses aos **2, 4 e 6 meses**. O componente Hib protege contra apresentações invasivas como meningite/epiglotite, mas a presença do imunizante não exclui doença grave após febre em lactente. O componente hepatite B não significa que a dose ao nascimento deva ser omitida.
+
+**Coqueluche:** pode ser especialmente grave em lactentes com apneia, cianose e tosse paroxística, e a proteção materna por dTpa na gestação tem função preventiva complementar. Contatos vulneráveis, sintomas persistentes e surtos podem exigir avaliação da rede de vigilância e tratamento específico; atualizar vacina de uma criança com suspeita de coqueluche não substitui antibiótico quando indicado.
+
+### 18.2 Reforços de DTP e possíveis eventos adversos
+
+O calendário nacional mostrado em 2026 apresenta **DTP reforço aos 15 meses e aos 4 anos**. Após determinada idade, a composição e indicação mudam para dT ou outros produtos conforme norma; não aplicar indefinidamente DTP de uso infantil a adultos ou adolescentes. Eventos de dor local, febre e irritabilidade são frequentes; eventos graves e contraindicações verdadeiras precisam de avaliação e classificação.
+
+Histórico de evento hipotônico-hiporresponsivo após vacina com componente pertussis demanda avaliação específica e pode alterar encaminhamento/produto, mas **não deve ser tratado por fórmula universal sem consultar a norma**. Encefalopatia temporalmente associada à administração requer investigação e decisão especializada, não atribuição causal automática. Uma família que relata “teve febre alta depois da última vacina” precisa de acolhimento e análise clínica antes de decidir aplicação, não receber recusa irrefletida.
+
+### 18.3 Hepatite A no segundo ano
+
+Hepatite A é transmitida por via fecal-oral e pode produzir surtos, hepatite aguda e complicações em situações específicas. A página nacional da criança indica uma dose de rotina aos **15 meses** no programa apresentado em 2026. Produtos/estratégias de rede privada e grupos especiais podem envolver esquemas diferentes, de modo que a criança que recebeu dose fora da rotina deve ter histórico verificado antes de aplicar outra.
+
+## 19. Febre amarela e tríplice viral: vacinas vivas e saúde pública
+
+### 19.1 Febre amarela: tempo, local e risco-benefício
+
+A febre amarela é arbovirose potencialmente grave prevenível por vacina de vírus vivo atenuado. O calendário rotineiro nacional mostra **primeira dose aos 9 meses e reforço aos 4 anos**, com possibilidade excepcional entre **6 e 8 meses** em cenários de alto risco epidemiológico e após avaliação risco-benefício pela equipe de saúde. Um lactente com seis meses que vai viajar a área com circulação viral demanda consulta a orientação vigente, não simples aplicação da dose de rotina prevista para nove meses.
+
+A proteção requer tempo após vacinação; para viagens o Ministério menciona orientação de vacinação **pelo menos dez dias antes** quando possível. Em imunodeficiência importante, situação gestacional, idade muito baixa e outras contraindicações/precauções, avaliar risco-benefício com a norma. Não prometer proteção imediata no mesmo dia, nem vacinar qualquer prematuro indiscriminadamente em surto sem análise clínica.
+
+### 19.2 Sarampo, caxumba e rubéola: a SCR
+
+A tríplice viral (SCR) usa vírus vivos atenuados para estimular proteção contra três doenças distintas. A rotina da criança em 2026 inclui **D1 aos 12 meses e D2 aos 15 meses**. O controle do sarampo depende de cobertura alta e homogênea; pequenas comunidades suscetíveis podem sustentar transmissão mesmo com média municipal aceitável.
+
+### 19.3 Dose zero em emergência de sarampo
+
+Quando há risco epidemiológico específico, autoridades sanitárias podem orientar **dose zero (D0)** de tríplice viral para lactentes entre **6 e 11 meses e 29 dias** em localidades definidas. A lista de notas técnicas do Ministério de 2026 contém exemplos específicos para municípios de São Paulo/Guarulhos e outras áreas. **D0 não substitui automaticamente D1 aos 12 meses nem D2 aos 15 meses**, pois foi administrada antes da idade da rotina para proteção em risco especial. Verificar campanha/localidade/período, e não estender indiscriminadamente a medida a todo o território.
+
+**Cenário de prova:** bebê de oito meses recebeu SCR D0 durante estratégia de bloqueio. Ao completar 12 meses, não basta concluir “já tomou sarampo, pode pular a dose”: seguir esquema da rotina e nota da campanha.
+
+### 19.4 Varicela e tetraviral
+
+A página nacional da criança de 2026 traz **varicela D1 aos 15 meses e D2 aos 4 anos**, com utilização de tetraviral em situações de indisponibilidade de varicela monovalente conforme regra. A vacina protege contra doença e formas graves, mas não elimina toda possibilidade de varicela. A escolha entre produto monovalente e combinado depende do calendário, idade, estoque, contraindicações e histórico de SCR.
+
+Vacinas vivas exigem atenção a imunossupressão significativa; contato domiciliar de pessoa imunodeprimida tem regras próprias e não equivale automaticamente a contraindicar vacinação do contato imunocompetente. O especialista pode, em muitos casos, **priorizar vacinação dos contatos** para criar barreira contra transmissão, com orientações para circunstâncias específicas como desenvolvimento de erupção pós-vacinal.
+
+## 20. Influenza e covid-19: idade, temporada e produto
+
+### 20.1 Por que reforço e formulação anual podem mudar?
+
+Influenza sofre deriva antigênica, e as formulações são atualizadas conforme vigilância. O calendário brasileiro de 2026 orienta vacinação **anual de crianças de seis meses a menores de seis anos**. Quem recebe influenza pela primeira vez, na faixa etária indicada, necessita **duas doses com intervalo de 30 dias**, conforme instrução oficial, enquanto quem já foi vacinado em temporadas anteriores geralmente recebe uma dose anual. Essa nuance impede que a equipe trate qualquer criança como "uma por ano" sem perguntar histórico.
+
+Influenza não é vacina de vírus vivo injetável na rotina descrita, e alergia a ovo exige avaliação conforme recomendações atualizadas, sem generalizar toda sensibilidade alimentar como contraindicação absoluta.
+
+### 20.2 Covid-19 em 2026: calendário e produto importam
+
+A página oficial da criança apresenta, no exemplo de **Comirnaty**, série de três doses aos **6, 7 e 9 meses**, e recomendações específicas para imunocomprometidos, com reforços conforme faixa etária/norma. Outros produtos, faixas de licenciamento e esquemas de vacinação podem mudar; não é correto dizer que toda vacina covid-19 infantil tem sempre o mesmo número/intervalo. Registrar nome comercial, fabricante, dose, concentração, lote e data é especialmente relevante.
+
+A vacina reduz risco de doença grave, mas não elimina todas as infecções. Uma criança com febre/hipoxemia após imunização precisa de avaliação clínica independentemente de estado vacinal.
+
+### 20.3 Coadministração e doenças leves
+
+Na ausência de restrição específica, várias vacinas podem ser administradas no mesmo encontro em locais anatômicos distintos, de acordo com as regras de produtos e intervalos. Isso reduz oportunidades perdidas, mas não autoriza misturar vacinas na mesma seringa fora de produto licenciado. Para **vacinas vivas parenterais** não administradas no mesmo dia, podem existir intervalos mínimos específicos de separação, exigindo norma atual, enquanto certas vacinas orais/inativadas seguem lógica diferente.
+
+Infecção leve sem comprometimento sistêmico significativo, uso de antibiótico habitual e coriza isolada geralmente **não exigem adiamento automático**. Em doença moderada/grave, considerar postergar para diferenciar sintomas, cuidar da intercorrência e evitar equívocos de vigilância, conforme avaliação médica e protocolo.
+
+## 21. HPV e dengue na transição para a adolescência
+
+### 21.1 HPV: prevenir infecção e câncer futuro
+
+O papilomavírus humano é associado a verrugas anogenitais e a vários cânceres, incluindo colo uterino, ânus, pênis e orofaringe. A vacinação antes da exposição sexual tende a conferir maior benefício preventivo. O calendário brasileiro de 2026 mostrado no portal da criança inclui **HPV4 aos 9 anos**, em **esquema de dose única** da rotina para a faixa etária definida, com resgate até 14 anos e 11 meses e 29 dias; ações para não vacinados mais velhos têm estratégias transitórias conforme norma vigente.
+
+Não reutilizar ficha histórica que exigia automaticamente duas doses de HPV para todos os adolescentes. Imunodeprimidos e algumas condições podem requerer doses adicionais ou esquemas especiais: a opção de dose única **não deve ser extrapolada a qualquer paciente** sem consulta a critérios especiais.
+
+### 21.2 Dengue: idade-alvo, intervalo e produto
+
+O calendário nacional de 2026 inclui vacinação **DNG4 a partir de 10 anos**, com **duas doses separadas por três meses**, e recuperação até 14 anos e 11 meses e 29 dias nas condições informadas. A elegibilidade clínica envolve histórico de reação anafilática, gravidez, imunossupressão, doença febril e outras regras do produto; não administrar simplesmente porque a criança reside em área endêmica sem verificar critérios.
+
+Esquemas de vacinas contra dengue de fabricantes diferentes não são intercambiáveis por suposição. As notas técnicas de 2026 incluem recomendação específica sobre não revacinar com produto de outro fabricante em certos históricos. A vacinação não substitui controle do mosquito e cuidado clínico com sinais de alarme de dengue.
+
+### 21.3 Mensagem prática da puericultura aos nove e dez anos
+
+A família que manteve consultas apenas na primeira infância pode esquecer HPV e dengue por imaginar que o “calendário infantil acaba aos quatro anos”. Na APS, revisar Caderneta da Criança, escola, condição de risco e transição para atenção ao adolescente. Oferecer oportunidade e explicar benefício sem estigmatizar ou associar vacinação contra HPV à suposta vida sexual da criança.
+
+
 ## 12. Planejamento visual e referências
 
 Priorizar reprodução autoral dos esquemas conceituais (calendário dinâmico, tipos de vacina e fluxo de atraso) com **link institucional**, não cópia de infográficos; fotografias de técnica apenas se fonte/licença comercial verificadas e aprovação em fila Admin. Dez candidatas devem ser avaliadas quando relevantes, sem obrigatoriedade de inserção de figuras redundantes.
