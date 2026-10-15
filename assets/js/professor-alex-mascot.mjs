@@ -63,7 +63,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   static observedAttributes=['expression','animation','size','theme','interactive','speaking','intensity'];
   constructor() {
     super();this.attachShadow({mode:'open'});
-    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261014-drag1',import.meta.url).href;
+    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261015-focus-polish1',import.meta.url).href;
     this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Professor Alex: tocar para cumprimentar');
     this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Professor Alex 3D…';
     this.button.append(this.message);this.shadowRoot.append(link,this.button);
