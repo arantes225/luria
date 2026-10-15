@@ -65,3 +65,29 @@ Buscas no Google Drive por “sangramento uterino anormal”, “sangramento ute
 - [ ] Avaliação ginecológica e editorial independente antes de publicação.
 
 **Parecer:** apostila 124 revisada em cópia editorial, preservando base publicada. **Não está cientificamente certificada nem publicada.**
+
+---
+
+## Etapa 3 — aprofundamento e cobertura ampliada (14/10/2026)
+
+A prévia `apostilas/_rascunhos/lote-06-124-preview.html` foi aprofundada sem modificação do arquivo publicado, com novas seções sobre: quantificação clínica e qualidade de vida; hemograma/ferritina e diagnóstico laboratorial; US versus sonohisterografia/histeroscopia/RM; <strong>classificação FIGO de leiomiomas 0–8</strong> e implicações terapêuticas; amostra endometrial insuficiente; reposição de ferro/transfusão por contexto; anticoagulação e trombose; acompanhamento e escolha reprodutiva. A repetição genérica das 12 mini-revisões foi substituída por conclusões específicas por questão.
+
+**Métricas verificadas após ampliação:** HTML de **103.901 caracteres**; **29 seções** no artigo, preservadas as 24 originais; corpo instrucional visível com aproximadamente **63.785 caracteres** após remoção simples da marcação, excluindo casos, questões, resumo, mapa, revisão e referências. **8 casos, 12 questões e 12/12 objetivos com cobertura lexical preliminar**; zero âncoras quebradas e IDs duplicados.
+
+### Cobertura lexical dos objetivos de avaliação
+| Questão | Conteúdo | Termos presentes nos capítulos | Status |
+| --- | --- | --- | --- |
+| 1 | Exclusão de gestação | gestacao ✓; estabilidade ✓ | Encontrado |
+| 2 | Sistemas FIGO | sistema 1 ✓; sistema 2 ✓ | Encontrado |
+| 3 | Mioma e causalidade | subseroso ✓; cavidade ✓ | Encontrado |
+| 4 | Coagulopatia na adolescência | menarca ✓; von willebrand ✓ | Encontrado |
+| 5 | Amostragem do endométrio | endometrial ✓; biópsia ✓ | Encontrado |
+| 6 | Segurança no agudo | hipotensao ✓; ressuscitacao ✓ | Encontrado |
+| 7 | Terapia LNG | siu-lng ✓; distorcao ✓ | Encontrado |
+| 8 | Anticoagulação | anticoagulacao ✓; trombose ✓ | Encontrado |
+| 9 | Ablação e fertilidade | ablação ✓; gestação ✓ | Encontrado |
+| 10 | Malformação vascular | doppler ✓; curetagem ✓ | Encontrado |
+| 11 | Ferro e anemia | ferritina ✓; ferro ✓ | Encontrado |
+| 12 | Polipectomia | polipo ✓; histeroscopia ✓ | Encontrado |
+
+**Ressalva:** a pré-contagem acima não atesta automaticamente originalidade semântica, ausência de repetição de ideias, aprovação farmacológica ou correção clínica independente. Os validadores oficiais não foram executados e a prévia não foi publicada. Permanecem pendentes revisão ginecológica, curadoria de imagens licenciadas/Admin, conformidade brasileira e inspeção desktop/PWA.
