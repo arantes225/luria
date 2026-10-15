@@ -329,3 +329,42 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 - **Sem edição de HTML publicado, sem atualização de Supabase, sem deploy, sem certificação.** O aumento é de caracteres **brutos**, não métrica de conteúdo didático líquido.
 
 **Prioridades próximas:** revisão de integridade/consistência e farmacologia da 121 e 128; integração com QA dos complementos 124/129/134 mapeados em `lote-07-auditoria-integracao-124-129-134.md`; revisão da redundância de 126/127/132/136 sem cortar raciocínio útil; completar validação de imagens/licenças.
+
+
+## 15/10/2026 — revisão de segurança farmacológica 121/128 e fronteiras 136
+
+**Ação efetiva no GitHub, 15/10/2026:** o prompt magno `lead.apostilas.txt` foi consultado antes de qualquer ferramenta. Os rascunhos 121, 128 e 136 foram novamente buscados e editados com controle de SHA, refeitos os *fetches* para confirmar persistência e os resultados abaixo. Permanecem preservados os HTMLs publicados de SUA, Amenorreia e SOP/SOMP. **Sem deploy, sem Supabase e sem certificação.**
+
+| Aula | Tema | Antes nesta rodada | Agora, reaberto e verificado | Incremento bruto | Casos | Questões |
+|---|---|---:|---:|---:|---:|---:|
+| **121** | Infecção do trato urinário e pielonefrite | 85.752 | **97.697** | +11.945 | 6 | 8 |
+| **128** | Sepse e choque séptico pediátrico | 71.368 | **80.245** | +8.877 | 10 | 16 |
+| **136** | Hemorragia digestiva — integração | 61.186 | **67.474** | +6.288 | 9 | 14 |
+| **TOTAL** | Três rascunhos modificados | 218.306 | **245.416** | **+27.110** | 25 | 38 |
+
+### Aula 121 — auditoria de condutas, não mera expansão numérica
+
+**Etapa zero consultada:** documentos do Drive "03 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf" (20.932 caracteres extraídos), "10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf" (6.461), "03 - RESUMO - INFECCOES E GRAVIDEZ.pdf" (16.277) foram lidos; são **correlatos**, não livro abrangente de ITU/Pielonefrite, com autoria Estratégia MED não demonstrada. A pesquisa do Drive não achou benchmark equivalente para prescrição completa. Fontes oficiais utilizadas em paralelo: **EAU Urological Infections (edição 2026), IDSA 2025 cUTI/duração, IDSA 2019 bacteriúria assintomática e Sociedade Brasileira de Pediatria**.
+
+**Novas seções 17.9–17.14:** auditoria de erro por sítio/tecido, nitrofurantoína por apresentação (monoidratada/macrocistais versus macrocistais convencionais), antibióticos inapropriados na pielonefrite/prostatite e na obstrução infectada, critérios e limites de curso curto IDSA 2025, classificação de ITU localizada no homem (não automaticamente sistêmica), farmacovigilância gestante/pediátrica, ficha necessária de apresentação/dose/diluição/ajuste renal e quatro vinhetas de segurança. **Não se declarou que apresentações internacionais são registradas ou disponíveis no Brasil.** Os oito exercícios originais foram preservados. A tabela é de estudo e **não autoriza prescrição clínica**.
+
+### Aula 128 — dose e oxigenação contextualizadas
+
+**Etapa zero relida:** "Sepse neonatal.pdf" (2.032 caracteres extraídos) e "01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf" (14.974). São **parciais e heterogêneos**; a atualização normativa depende da SSC pediátrica **março/2026** e Phoenix **2024**. O resumo de SRI não fornece autorização para doses reais na LURIA.
+
+**Novas seções 6.12–6.14:** checklist de 10 barreiras de erro de prescrição (mg/kg/dia vs dose, mcg/kg/min vs h, bomba/diluição, peso/idade, máximo/renal, serviço), exemplo aritmético **fictício** explicitamente sem correspondência com nenhum fármaco real, recomendações condicionais de alvo de SpO₂ **88–92% após ressuscitação** na SSC 2026 com exceções e cautela de oximetria; segurança de vasopressores periféricos, hidrocortisona e intubação. Adicionados **Caso 10** e **Questões 15–16**, todos comentados, com matriz/seções editoriais existentes preservadas. O apêndice de fontes 15A foi reposicionado antes da auditoria 16 para ordem de leitura correta. **Ausência deliberada de doses clínicas pediátricas não verificadas; não publicar no Modo Trabalho.**
+
+### Aula 136 — fronteiras curriculares verificadas 126/127/132/136
+
+**Foi reaberta e comparada diretamente** às aulas 126, 127 e 132, com foco em: HDA ulcerosa/varicosa, HDB, Forrest IIb, EDA em 12 h varicosa/24 h ulcerosa após ressuscitação, colonoscopia no internamento sem urgência universal <24 h, transfusão, antitrombóticos e TIPS. O conteúdo essencial estava **coerente** entre as quatro nos tópicos consultados. Risco editorial identificado: capítulos técnicos e de fisiologia do choque aparecem tanto na introdução quanto na segunda metade da integradora e nos livros específicos. **Não apagamos conteúdo útil sem auditoria integral.** Criada seção **0A** contendo uma matriz de fronteiras ("qual informação pertence a qual aula"), fluxo de caso com origem incerta e seis achados de potencial redundância para refatoração futura. Foram corrigidos dois caracteres de escape antes de crases Markdown na descrição do acervo.
+
+### Bloqueios para chamar o Lote 7 de concluído
+
+- Revisão médico-científica independente de condutas e farmacologia; confirmar bulas e apresentações disponíveis no Brasil, doses/diluições/infusão/ajustes renais de antibióticos/vasoativos em crianças e gestantes.
+- Confrontar recomendações por população e data e interpretar incertezas declaradas nas diretrizes; **SpO₂ 88–92% é sugestão condicional em criança pós-ressuscitação, não meta universal durante choque ativo.**
+- Revisão efetiva de redundância da 136 preservando casos úteis, sem duplicar quadros de Forrest, varizes e HDB das 127/132.
+- Obter pelo menos dez candidatas de imagem por tema em que houver valor educacional; verificar licença comercial/proveniência, aprovação Admin e peso WebP; nada foi inserido nesta rodada.
+- Realizar teste externo de autossuficiência, revisão editorial de fluxo/navegação, montagem via gerador e QA no desktop/PWA.
+- Prosseguir integração cuidadosa, já mapeada em `lote-07-auditoria-integracao-124-129-134.md`, dos complementos SUA/Amenorreia/SOP **sem sobrescrever HTML publicado**.
+
+**Interpretação dos números:** tamanhos acima são caracteres **brutos de Markdown** (incluem tabelas, notas, referências e metadata); não demonstram sozinhos cumprimento dos 60 mil caracteres **didáticos úteis**.
