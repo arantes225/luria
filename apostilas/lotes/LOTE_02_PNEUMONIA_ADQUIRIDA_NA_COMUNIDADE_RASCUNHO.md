@@ -136,6 +136,57 @@ Testes moleculares para vírus podem alterar isolamento, antiviral e decisão an
 
 **Macrolídeo em monoterapia:** a adequação depende de resistência pneumocócica local; não assumir que azitromicina isolada é sempre suficiente. **Fluoroquinolonas respiratórias:** podem ser alternativas em casos selecionados, mas exigem ponderar tendinopatias, prolongamento de QT, eventos adversos, risco de seleção de resistência e possibilidade de mascarar tuberculose no Brasil. **Antibióticos não tratam influenza, VSR e SARS-CoV-2 diretamente**: verificar indicação de antivirais específicos, tempo desde sintomas e gravidade sem esquecer coinfecção bacteriana quando plausível.
 
+
+### 11.0A Posologia comparativa das diretrizes: quadros de decisão para adultos
+
+**Referências primárias específicas:** SBPT, *Recomendações para o manejo da pneumonia adquirida na comunidade*, 2018, quadros 5–6, e ATS/IDSA, *Diagnosis and Treatment of Adults with Community-acquired Pneumonia*, 2019, tabelas 3–4. Foi realizada comparação explícita com a atualização ATS 2025 para duração. A apostila de pneumonia disponível no Drive nesta rodada é **pediátrica** e, portanto, não foi utilizada para selecionar nenhum dos regimes adultos abaixo. **Não se trata de formulário SUS ou prescrição pronta**: diferenças de resistência, apresentações brasileiras, risco renal, alergias, gravidez e disponibilidade precisam ser confirmadas no local de cuidado.
+
+#### A. Ambulatório, sem comorbidades relevantes, sem risco documentado de MRSA/Pseudomonas
+
+| Opção discutida na ATS/IDSA 2019 | Exemplo adulto sem contraindicações | Quando questionar |
+| --- | --- | --- |
+| Amoxicilina VO | **1 g a cada 8 horas** | Alergia imediata verdadeira a penicilina, impossibilidade VO, patógeno resistente ou hipótese não bacteriana |
+| Doxiciclina VO | **100 mg a cada 12 horas** | Gravidez, contraindicação individual, interações e epidemiologia |
+| Azitromicina em monoterapia | **500 mg no primeiro dia e 250 mg/dia nos dias seguintes**, apenas em região com resistência pneumocócica a macrolídeos **<25%** | Não assumir resistência local baixa sem dados; verificar QT e interações |
+| Claritromicina VO em monoterapia | **500 mg a cada 12 horas** em perfil apropriado de resistência local | Interações pelo metabolismo hepático, QT e função renal |
+
+A SBPT 2018 apresenta, em quadro nacional de ambulatório sem fatores de risco, amoxicilina, amoxicilina/clavulanato e macrolídeos como opções, **diferindo** da restrição mais severa da ATS/IDSA 2019 à monoterapia com macrolídeo quando a resistência local é elevada. Isso não significa que uma orientação brasileira antiga autoriza automaticamente azitromicina para toda pneumonia em 2026. É preciso identificar epidemiologia, referências do serviço e síndrome clínica.
+
+#### B. Ambulatório com comorbidades — não confundir monoterapia de beta-lactâmico com associação
+
+A ATS/IDSA 2019 contempla cardiopatia crônica, doença pulmonar, renal ou hepática, DM, câncer, asplenia e etilismo entre situações que modificam escolha empírica. Uma estratégia é combinar **um beta-lactâmico** com **macrolídeo ou doxiciclina**, conforme contexto. Entre os exemplos:
+
+| Base beta-lactâmica — escolher uma | Associar quando indicado | O que precisa ser conferido |
+| --- | --- | --- |
+| Amoxicilina/clavulanato **500/125 mg VO a cada 8 h** | Azitromicina ou doxiciclina em regime adequado | Função renal, diarréia, hepatopatia e alergia |
+| Amoxicilina/clavulanato **875/125 mg VO a cada 12 h** | Azitromicina ou doxiciclina em regime adequado | Apresentação, esquema de diretriz, segurança |
+| Cefuroxima axetila **500 mg VO a cada 12 h** | Macrolídeo ou doxiciclina conforme etiologia | Alergia beta-lactâmica e ajuste renal |
+| Cefpodoxima **200 mg VO a cada 12 h** | Macrolídeo ou doxiciclina quando apropriado | Disponibilidade brasileira e ajuste renal |
+
+**Exemplo de macrolídeo associado** na ATS/IDSA: azitromicina 500 mg no primeiro dia seguida de 250 mg/dia, ou claritromicina 500 mg a cada 12 horas. **Exemplo de tetraciclina associada:** doxiciclina 100 mg a cada 12 horas. Em alguns pacientes selecionados, a ATS/IDSA também descreve monoterapia com **fluoroquinolona respiratória**, como levofloxacino 750 mg/dia ou moxifloxacino 400 mg/dia, mas essas opções exigem cautela pelos riscos de QT, disglucemia, lesão tendínea, neuropatia e seleção de resistência. No **Brasil**, considerar ainda a possibilidade de mascaramento de tuberculose com fluoroquinolonas em doença subaguda/cavitária.
+
+**Divergência de dose importante:** a tabela de posologia geral da **SBPT 2018** descreve amoxicilina/clavulanato **875/125 mg VO a cada 8 horas** em determinados regimes, enquanto a **ATS/IDSA 2019**, para pacientes ambulatoriais com comorbidades, inclui a apresentação **875/125 mg VO a cada 12 horas**. Essas duas frequências não são equivalentes em exposição total, nem devem ser misturadas sem considerar formulação, indicação, gravidade e protocolo local. O aluno deve reconhecer que a **referência muda a posologia**; a escolha clínica final cabe ao prescritor que dispõe dos dados do paciente e do antibiograma regional. Não converter a divergência em “tanto faz”.
+
+#### C. Internação sem risco específico de microrganismo resistente
+
+| Situação e referência | Exemplos de terapia empírica de internação | Reavaliação |
+| --- | --- | --- |
+| PAC internada não grave, ATS/IDSA 2019 | **Ceftriaxona 1–2 g IV a cada 24 h** + **azitromicina 500 mg/dia**; ou outra combinação beta-lactâmico/macrolídeo validada | Rever saturação, trabalho respiratório, cultura quando indicada, tolerância, possível via oral |
+| Alternativa com beta-lactâmico diferente | **Ampicilina/sulbactam 1,5–3 g IV a cada 6 h** + macrolídeo | Ajustes renais e apresentações institucionais |
+| Outras combinações documentadas | Cefotaxima 1–2 g IV a cada 8 h + macrolídeo, entre opções do guideline | Estabelecer local de cuidado e via |
+| PAC grave internada | Beta-lactâmico + macrolídeo ou beta-lactâmico + fluoroquinolona respiratória em cenário adequado | Tratar precocemente, monitorar órgãos, individualizar fatores de risco resistentes |
+
+A opção para PAC **grave** não deve ser extrapolada de forma indiferente para quem está com choque, disfunção renal avançada, imunossupressão ou colonização prévia por patógenos resistentes. A cobertura para MRSA/Pseudomonas só é acrescida com fatores de risco locais relevantes e deve ser reavaliada com microbiologia e evolução; tratamentos demasiado amplos podem causar nefrotoxicidade e C. difficile, além de selecionar resistência.
+
+#### D. Três erros de prescrição que um aluno precisa saber prevenir
+
+1. **O agente “cobre o germe”, mas não a síndrome completa:** tratar paciente com PAC grave apenas com antibiótico oral sem avaliar insuficiência respiratória e sepse ignora risco de órgão. Da mesma forma, um beta-lactâmico isolado pode não contemplar agentes atípicos no cenário que exige associação.
+2. **A caixa tem o nome parecido, mas a apresentação é diferente:** amoxicilina simples, amoxicilina/clavulanato 500/125 e 875/125 **não** são doses intercambiáveis. Dose, intervalo e ajuste renal pertencem à apresentação escolhida.
+3. **A duração vem de recomendação nova, mas o paciente não cumpre a condição:** a ATS 2025 **sugere** menos de cinco dias (mínimo três) somente na PAC **não grave e estável**, em situações apropriadas; pneumonia grave, abscesso, empiema, necrose e patógenos selecionados não entram automaticamente nesse encurtamento. Rever diretriz brasileira e protocolo assistencial antes de prescrever.
+
+**Fonte para conferência da posologia internacional:** https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/ . **Fonte brasileira, com exemplo de divergência no intervalo de amoxicilina/clavulanato:** https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/ . A atualização ATS 2025 (DOI 10.1164/rccm.202507-1692ST) altera aspectos de duração e corticosteroides, mas não elimina a necessidade de validar antibiótico por local e paciente.
+
+
 ### 11.1 Duração — distinguir 2019 de 2025 e testar estabilidade
 
 A ATS/IDSA 2019 recomendava geralmente **pelo menos cinco dias** de antibiótico, com suspensão guiada pela estabilidade clínica e pela ausência de complicações. A atualização ATS 2025 passou a **sugerir menos de cinco dias, mínimo de três**, **apenas** para PAC não grave em pacientes ambulatoriais ou internados que atingiram estabilidade clínica; o grau de certeza é limitado e requer seguimento e contexto apropriados. Para PAC **grave**, ATS 2025 recomenda **cinco dias ou mais**, e infecções necrosantes, empiema, S. aureus, Legionella e outras complicações podem exigir duração maior e tratamento específico. **Não existe autorização para suspender antibiótico ao terceiro dia de qualquer pneumonia**, nem extrapolação automática dessa recomendação condicional a todo protocolo brasileiro.
