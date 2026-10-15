@@ -12,7 +12,7 @@
 | Aula | Tema | Status | Arquivo de trabalho |
 |---:|---|---|---|
 | 41 | Choque circulatório | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
-| 42 | Princípios de técnica cirúrgica | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
+| 42 | Princípios de técnica cirúrgica | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
 | 43 | Puericultura e prevenção de acidentes | RASCUNHO_INICIADO | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 45 | Participação e controle social no SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
@@ -45,6 +45,10 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 42 — versão HTML editorial e validação estática (14/10/2026)
+
+HTML criado somente na branch `editorial/lote-03-auditoria-20261014`: `apostilas/tecnica-cirurgica/index.html`, com identidade visual do livro de Choque da LURIA, índice desktop/mobile, 25 seções, oito casos, doze questões expansíveis, seis tabelas e ferramentas Grifar/Post-it. Conferência estática: zero âncoras quebradas e zero desequilíbrios nas principais tags. Nenhuma imagem clínica foi incluída. Relatório: `apostilas/_rascunhos/lote-03/42-VALIDACAO-HTML.md`. **Não houve teste visual em navegador, PWA, merge, publicação ou homologação.**
 
 ## Aula 42 — ampliação clínica, casos e questões (14/10/2026)
 
