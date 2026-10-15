@@ -239,5 +239,109 @@ A infecção não deve ser “tratada” por colonização assintomática identi
 
 **Prevenção:** revisar indicação e duração do antibiótico desencadeador, higiene e precauções apropriadas, educação da equipe, evitar múltiplos antibióticos desnecessários e considerar critérios específicos de terapia para recorrência. O manejo é diferente de “diarreia banal”: uso de antidiarreicos que inibem motilidade pode ser perigoso em colite grave, e sinais de desidratação/instabilidade exigem cuidado imediato.
 
----
-**Próximas seções planejadas:** síndromes clínicas representativas, prescrição e ajuste seguro, duração e transição IV→VO, populações especiais, 4+ casos clínicos, 6+ questões comentadas, quadros de decisão, bibliografia completa e plano de imagens. O presente documento é PRIMEIRA CAMADA. **Não certificar antes de 60 mil caracteres úteis, revisão científica, imagens e avaliação por questões independentes.**
+
+## 14. Prescrever por síndrome: cobertura adequada sem “tratar todo resultado”
+
+A escolha inicial de um antibiótico nasce de **síndrome clínica, foco provável, gravidade, agente esperado e circunstâncias individuais**. Uma tabela de “bactéria → antibiótico” ajuda a recordar atividade, mas não responde sozinha sobre duração, penetração, necessidade de procedimento ou benefício de tratar.
+
+### 14.1 Infecção urinária: cistite, pielonefrite e bacteriúria assintomática não são a mesma doença
+
+**Cistite não complicada** costuma apresentar disúria, polaciúria, urgência urinária e desconforto suprapúbico, sem febre sistêmica ou sinais de acometimento renal. Em pessoa apropriada, pode ser tratada com medicamento de espectro relativamente estreito e alta concentração urinária, escolhido conforme fatores locais e contraindicações. **Nitrofurantoína e fosfomicina oral** são exemplos utilizados em contextos selecionados de cistite, mas **não servem para pielonefrite e bacteremia**, por exposição tecidual ou sistêmica inadequada.
+
+**Pielonefrite** sugere infecção do parênquima renal e pode trazer febre, calafrios, dor lombar, náuseas, vômitos e repercussão sistêmica. O manejo requer avaliação de gravidade, vias de uso disponíveis e risco de resistência; a escolha de antibiótico pode ser diferente da de cistite. Gestação, obstrução, imunossupressão, sepse e incapacidade de usar via oral alteram necessidade de internação e investigação. **Obstrução infectada** pode exigir descompressão urológica imediata; antibiótico sem drenagem pode falhar apesar da susceptibilidade.
+
+**Bacteriúria assintomática** é presença de bactérias em urina sem quadro clínico atribuível a infecção urinária. O achado é comum em idosos, diabéticos e usuários de dispositivos. A ausência de sintomas não deve ser compensada pela expressão “urina com cheiro forte”, piúria ou turvação, pois esses achados isolados não confirmam infecção sintomática. Em geral **não tratar**, com exceções importantes como **gestação** e **antes de procedimentos urológicos endoscópicos selecionados que causem trauma de mucosa**. O tratamento de cultura positiva isolada em idoso confuso deve ser evitado quando não há sintomas locais ou sinais sistêmicos de infecção: é necessário procurar outras causas de delirium e seguir a avaliação clínica, sem ignorar sepse verdadeira.
+
+**Armadilha diagnóstica:** uma urocultura com 100 mil UFC/mL não transforma bacteriúria assintomática em pielonefrite. O valor quantitativo apoia interpretação microbiológica, mas **não cria sintomas**.
+
+### 14.2 Pneumonia comunitária: patógeno provável e gravidade
+
+Na pneumonia adquirida na comunidade (PAC), quadro clínico compatível, alteração respiratória e evidência de acometimento pulmonar fundamentam o diagnóstico, com métodos ajustados à situação. Entre agentes estão pneumococo, *Haemophilus influenzae*, vírus respiratórios e patógenos chamados atípicos, entre outros. Uma pneumonia com hipoxemia importante, instabilidade hemodinâmica ou alteração de consciência exige avaliação e tratamento muito diferentes de pessoa estável em consulta ambulatorial.
+
+A seleção empírica depende de **gravidade, idade, comorbidades, exposição recente a antibióticos e risco documentado de MRSA ou Pseudomonas**, além de resistência local. **Não prescrever cobertura antipseudomonas para toda pessoa idosa** nem vancomicina só porque a pneumonia ocorre no hospital; avaliar os fatores específicos do serviço e paciente. Em PAC ambulatorial, espectro muito amplo pode ampliar efeitos adversos sem benefício. A escolha de cefalosporina, penicilina, macrolídeo ou combinação precisa de diretriz sindrômica vigente, não da tabela farmacológica descontextualizada.
+
+**Aspiração:** microaspiração pode ocorrer em diferentes doenças pulmonares. **Cobertura anaeróbia adicional não é automática em toda pneumonia aspirativa**; considerar abscesso pulmonar, empiema, necrose ou outros achados quando pertinentes. Daptomicina, como explicado, não é apropriada para pneumonia alveolar por MRSA.
+
+### 14.3 Infecções de pele e partes moles: purulência muda a estratégia
+
+**Celulite não purulenta** costuma decorrer de estreptococos e, em determinados contextos, MSSA; cobertura empírica deve seguir gravidade e fatores de risco. **Abscesso cutâneo** exige avaliar **incisão e drenagem**, que frequentemente são a medida principal; o uso adicional de antibiótico depende de extensão, sinais sistêmicos, local, imunidade e outros riscos. Uma cultura de pus profundo quando indicada pode orientar terapia; swab superficial nem sempre representa patógeno responsável.
+
+A possibilidade de **infecção necrosante** exige abordagem completamente distinta: dor desproporcional, progressão rápida, instabilidade, bolhas, crepitação, alteração de consciência ou anestesia cutânea em área envolvida são alertas. A prioridade é **avaliação cirúrgica urgente, desbridamento quando indicado e antibióticos adequados**. Não esperar resultado de cultura ou escore para iniciar tratamento de paciente com suspeita de fascite necrosante.
+
+### 14.4 Faringite e sinusite: não transformar virose em tratamento bacteriano
+
+Faringite com tosse, rinorreia e outros sinais virais frequentemente dispensa antibiótico; suspeita de estreptococo do grupo A deve ser avaliada segundo idade, contexto e testes quando indicados. **Exsudato amigdaliano isolado não é prova de infecção por estreptococo**, já que vírus como EBV podem produzir placas.
+
+Na rinossinusite, sintomas nasais por poucos dias e secreção colorida não confirmam etiologia bacteriana. Critérios como persistência sem melhora, piora após melhora inicial e gravidade sistêmica podem aumentar suspeita e orientar decisão, conforme diretriz. Prescrever antibiótico ao primeiro dia de congestão não reduz resistências nem beneficia infecção viral.
+
+### 14.5 Infecção intra-abdominal: antibiótico versus fonte operável
+
+A flora intestinal inclui bactérias entéricas Gram-negativas e anaeróbios, mas sua participação depende da síndrome (colecistite, colangite, diverticulite, apendicite perfurada, peritonite, abscesso). O tratamento envolve **definir necessidade de drenagem, desobstrução ou cirurgia**, além de cobertura adequada à gravidade. Um paciente com **colangite obstrutiva grave** frequentemente precisa de drenagem biliar; continuar trocando cefalosporinas sem aliviar obstrução pode falhar.
+
+Após **controle de foco adequado**, cursos mais curtos podem ser suficientes em muitos quadros intra-abdominais, conforme diagnóstico e diretriz; isso não significa uma única duração fixa para endocardite, bacteremia ou foco não controlado. A persistência de febre deve motivar investigação de abscesso residual e complicações, não somente prolongamento automático do mesmo esquema.
+
+### 14.6 Meningite bacteriana: urgência terapêutica
+
+Suspeita de meningite bacteriana com febre, cefaleia, rigidez meníngea, rebaixamento e/ou outras características exige atuação imediata. O esquema empírico deve cobrir agentes prováveis conforme **idade, gestação, imunossupressão, comorbidades, resistência local e dispositivo neurocirúrgico**. **Listeria monocytogenes**, por exemplo, demanda consideração especial em faixas e grupos de risco; uma cefalosporina isolada não cobre adequadamente Listeria.
+
+Colher hemoculturas e realizar punção lombar quando seguro e oportuno, mas **não atrasar antibiótico indicado** se houver necessidade de imagem ou LP demorada. Em subgrupos selecionados, corticosteroide adjuvante tem momento e indicação específicos em relação ao início do antibiótico. Esta apostila ensina o princípio; a prescrição completa requer protocolo de meningite e avaliação assistencial.
+
+### 14.7 Febre em neutropenia
+
+Febre com neutropenia profunda em paciente oncológico pode representar infecção bacteriana invasiva com progressão rápida, mesmo sem sinais inflamatórios exuberantes. O empirismo deve contemplar risco de **Gram-negativos, incluindo Pseudomonas**, considerando estabilidade, história microbiológica e exposição recente. A evolução e resultado de culturas permitem ajuste. Não adicionar cobertura de MRSA ou antifúngico sistêmico indiscriminadamente sem contexto, mas não atrasar terapia adequada em pessoa de alto risco.
+
+### 14.8 Bacteremia e endocardite
+
+Uma cultura sanguínea positiva deve ser interpretada por agente, número de amostras, quadro e dispositivos. **Bacteremia por *S. aureus*** exige pesquisa de endocardite, foco metastático e confirmação de depuração em cenários apropriados. Endocardite exige regimes e durações específicos e frequentemente exames de imagem e abordagem cirúrgica de válvula/dispositivo em casos selecionados. O princípio da antibioticoterapia **não substitui** avaliação de endocardite ao paciente com sopro novo, embolizações, bacteremia persistente e prótese valvar.
+
+## 15. Duração de tratamento: evitar automatismos de sete, dez ou quatorze dias
+
+A duração deve refletir **doença, agente, resposta, gravidade, controle de foco, imunidade e evidência**. Para algumas infecções com controle adequado, cursos curtos podem ser eficazes; para outras, como endocardite, osteomielite complexa e infecção de prótese, são exigidos regimes prolongados e especializados. A ordem “sete dias para todos” é tão inadequada quanto “quatorze dias porque o paciente esteve grave”.
+
+**Perguntas antes de prolongar:** o foco foi adequadamente drenado? A infecção foi confirmada? Qual a síndrome específica? O paciente está clinicamente estável? Há bacteremia persistente, abscesso não drenado, material protético, imunossupressão, agente particular? O esquema foi ajustado ao antibiograma? O novo exame alterou conduta ou apenas mostra marcador de inflamação ainda elevado?
+
+### 15.1 Contar corretamente dias de tratamento
+
+O “dia um” pode ser início de fármaco ativo, momento de controle do foco ou primeira cultura negativa, dependendo da síndrome e diretriz. Na bacteremia por *S. aureus*, por exemplo, critérios de bacteremia não complicada exigem condições específicas e documentação apropriada; não declarar duração com base apenas em melhora da febre. O registro deve indicar **data de início do tratamento eficaz e critério de fim**, evitando somar dias de antibiótico ineficaz como se fossem exposição curativa.
+
+### 15.2 Biomarcadores não devem ditar tempo isoladamente
+
+PCR sérica, procalcitonina, leucócitos e febre são auxiliares. A decisão de interromper antibiótico se baseia em combinação clínica, microbiológica e controle de foco, podendo usar procalcitonina em cenários selecionados sob protocolo. **PCR ainda elevada após melhora clínica não obriga continuar antibiótico indefinidamente**, pois pode haver inflamação residual ou outro processo. Inversamente, biomarcador baixo não exclui meningite bacteriana ou sepse precoce em doente de alto risco.
+
+## 16. Transição intravenosa para oral (IV→VO)
+
+A via intravenosa pode ser necessária no início de infecções graves, choque, vômitos repetidos, má absorção e necessidade de rápida concentração sérica. Contudo, via IV traz riscos de acesso vascular, custos e necessidade de internação. Após estabilização, a equipe deve revisar **capacidade de absorver oralmente, tolerância, foco, agente e biodisponibilidade**.
+
+**Critérios típicos para considerar VO:** melhora clínica, estabilidade hemodinâmica, capacidade de ingerir/absorver fármaco, ausência de vômitos persistentes e agente oral com espectro e exposição suficientes para o foco, respeitando diretriz. Nem toda infecção permite mudança precoce: endocardite, infecção SNC, bacteremias específicas, abscessos mal controlados e situações especiais requerem seleção cuidadosa.
+
+**Biodisponibilidade oral** varia: linezolida, alguns fluoroquinolonas, TMP-SMX e metronidazol podem atingir boa exposição oral em pacientes apropriados, mas a molécula deve ser escolhida por agente/foco e efeitos adversos. **Nitrofurantoína oral** possui concentração útil na urina, porém não é opção para bacteremia apenas por estar em comprimido. A transição deve preservar atividade real contra isolado e tempo total de tratamento; mudar de via **não reinicia** automaticamente duração.
+
+### 16.1 Como evitar erro na alta
+
+A receita de alta deve registrar nome, dose, horário, data de término, efeitos adversos que exigem retorno, interações e o motivo para prescrição. A administração de ferro, cálcio, antiácidos ou suplementos pode reduzir absorção de **tetraciclinas ou fluoroquinolonas**, com intervalos dependentes do agente. Em pessoa com dificuldade de leitura ou polifarmácia, conferir entendimento com paciente/cuidador. Não deixar o antibiótico “até voltar no ambulatório” quando o curso tem término definido.
+
+## 17. Populações especiais: como a mesma bactéria exige decisões diferentes
+
+### 17.1 Doença renal crônica ou lesão renal aguda
+
+O volume de distribuição e a depuração alteram a exposição. Em DRC estável, pode-se ajustar dose/intervalo segundo função; em lesão renal aguda, a eTFG baseada em creatinina pode atrasar mudanças reais. Antibióticos eliminados predominantemente por rim, como diversos beta-lactâmicos, vancomicina e aminoglicosídeos, requerem dose apropriada para evitar neurotoxicidade, ototoxicidade ou nefrotoxicidade. **Não cortar toda dose de ataque em paciente com sepse por creatinina elevada sem compreender PK/PD.**
+
+### 17.2 Obesidade e baixo peso
+
+A distribuição para tecidos hidrofílicos/lipofílicos e o cálculo por peso total, ideal ou ajustado variam por fármaco. Não usar automaticamente “mg/kg pelo peso total” em toda molécula. Em pessoa idosa com sarcopenia, creatinina sérica aparentemente normal pode ocultar baixa filtração. Dose e monitorização de vancomicina/aminoglicosídeos exigem farmacocinética adequada, com apoio de farmacêutico clínico e protocolo.
+
+### 17.3 Gestação e lactação
+
+Na gestação, alterações de função renal, volume plasmático e proteínas séricas afetam exposição; além disso, riscos fetais dependem de trimestre, agente e indicação. **Infecção invasiva deve ser tratada prontamente com opções adequadas**, sem negar antibiótico por medo genérico, mas há fármacos com riscos reprodutivos importantes. A seleção deve consultar recomendações obstétricas e bula atual. A lactação demanda avaliação de excreção no leite e possíveis efeitos na criança, sem suspender amamentação automaticamente por qualquer antibiótico.
+
+### 17.4 Pediatria
+
+A dose frequentemente depende de **peso, idade, maturidade renal/hepática e infecção**, e neonatos têm intervalos muito diferentes de crianças maiores. Não adaptar dose pediátrica simplesmente dividindo comprimido adulto em frações sem verificar apresentação e concentração. A prevenção de erros exige dupla conferência de unidades (mg/kg/dose versus mg/kg/dia), dose máxima, diluição e bomba de infusão quando necessário.
+
+### 17.5 Idosos e fragilidade
+
+Antibióticos podem induzir confusão, QT prolongado, toxicidade renal e eventos gastrointestinais em idosos, especialmente com múltiplas medicações. **Confusão sem outros sinais de infecção urinária não comprova UTI**; deve-se investigar delirium e causas adicionais, evitando tratar colonização. Por outro lado, idosos podem apresentar infecção grave sem febre alta; a avaliação clínica e perfusão orientam urgência. Ajustes terapêuticos devem preservar eficácia e reduzir iatrogenia.
+
+### 17.6 Imunossuprimidos e transplantados
+
+A imunossupressão modifica espectro provável, cronologia e apresentação. Febre discreta pode corresponder a infecção séria, e interações com imunossupressores podem alterar função renal e níveis de drogas. O tratamento requer avaliação de bactérias, fungos, vírus e patógenos oportunistas segundo defeito imune específico; “cobrir tudo com meropenem” não resolve fungemia, tuberculose ou muitos vírus. A equipe especializada e o laboratório são fundamentais.
