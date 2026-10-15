@@ -31,7 +31,7 @@
 | 178 | Intoxicações exógenas na infância | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-178-intoxicacoes-exogenas-infancia.md` (~42,5 mil caracteres totais) | Rascunho com toxíndromes, 8 casos e 12 questões, CIATox/SINAN; doses/revisão toxicológica pendentes |
 | 179 | Câncer de endométrio | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md` | 43.732 caracteres Markdown, 7 casos e 12 questões; ACOG abril/2026, FIGO 2023, ESGO 2025; rascunho não certificado |
 | 180 | Cuidados paliativos e comunicação de más notícias | `lote-08-aula-180-cuidados-paliativos-comunicacao.md` (38.162 chars) + 2 suplementos concorrentes (`lote-08-aula-180-complemento-02-doenca-nao-oncologica-comunicacao.md` 36.270 chars; `lote-08-aula-180-complemento-02-clinico-2026.md` 56.096 chars) | **Duas ampliações sobrepostas: NÃO somá-las como conteúdo útil**; curar capítulos exclusivos, conferir PNCP Portaria 10.181/2026, 6+8 casos em suplementos, validar com paliativista |
-| 181 | Eletrocardiografia: fundamentos e interpretação sistemática | `apostilas/_rascunhos/lote-08-aula-181-eletrocardiografia.md` (**94.548 caracteres totais Markdown**) | **Expandida na branch, preservados 22 capítulos originais e criadas seções 23–37**: 17 casos e 24 questões; ECGs reais licenciados/revisão cardiológica ainda pendentes; **não certificada** |
+| 181 | Eletrocardiografia: fundamentos e interpretação sistemática | `apostilas/_rascunhos/lote-08-aula-181-eletrocardiografia.md` (**99.244 caracteres brutos**) | **38 seções numeradas**: 17 casos e 24 questões; auditoria SBC/ACC/AHA, licença PTB-XL v1.0.3 identificada e script de preparação de WebP na branch. **Ainda nenhum ECG real incorporado**; validação clínica, execução do script, fontes e QA pendentes |
 
 ## Regras contra duplicação
 1. Câncer de mama (#167 e #169) deve ser **uma única base editorial**, com ênfases curriculares diferentes; não duplicar apostilas iguais.
@@ -142,3 +142,11 @@ A branch editorial nasceu de um commit anterior ao surgimento de novos rascunhos
 - **Diretrizes verificadas:** SBC 2022 de laudos ECG, ACC/AHA 2025 SCA, AHA 2025 ACLS adulto, ACC/AHA 2023 FA e ESC 2023 SCA. Atenção a distinções de disponibilidade brasileira antes de tornar o texto assistencial.
 - **Imagens:** 16 ECGs reais priorizados por necessidade didática, **nenhum incorporado nem aprovado**. Exigir licença comercial por arquivo, anonimização, laudo de referência, conversão WebP e QA Admin, desktop e PWA.
 - **Status:** PR rascunho; `main` preservada; sem merge, deploy ou homologação. A meta editorial permanece texto autossuficiente + dados de ECG reais aprovados + prova de resolução dos casos apenas com a apostila.
+
+
+## 15/10/2026 — continuação visual e revisão científica da aula 181
+
+- **Arquivo 181:** revisitado diretamente na branch. A extensão passou de **94.548 para 99.244 caracteres totais**, com **17 casos** e **24 questões** anteriores preservados. Foram corrigidos erro editorial no título de um caso de torsades, linguagem sobre ganho de ECG e removida estimativa populacional não rastreada. A seção 38 explicita verificação de FA pré-excitada (ACC/AHA 2023), BRE/SCA (ACC/AHA 2025), bradicardia (AHA ACLS 2025), V7–V9 e limitações de ECG inicialmente não diagnóstico.
+- **Fonte visual agora confirmada:** **PTB-XL v1.0.3, PhysioNet**, DOI 10.13026/kfzx-aw45, 21.799 ECGs com 12 derivações e licença **CC BY 4.0**. Não se deve confundir esse conjunto aberto com MIMIC-IV-ECG completo, que possui requisitos de acesso diferentes.
+- **Implementação técnica em branch:** arquivo **scripts/editorial/render_ptbxl_ecgs.py**, que lê arquivos WFDB reais locais e produz WebP + manifesto de licença/proveniência. O download binário dos sinais não foi concluído nesta sessão; **script não testado com sinais reais e zero imagens incorporadas**.
+- **Próximas etapas para esta aula:** obter e validar arquivos PTB-XL originais por fonte autorizada, executar e testar script, selecionar amostras específicas de maior valor didático, obter laudo cardiológico independente, cumprir atribuição, converter/aprovar no Admin e testar telas. **Não publicar até completar**.
