@@ -168,6 +168,7 @@
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
     const d=row.data||{},allFormulations=Array.isArray(d.formulations)?d.formulations:[],formulations=approvedFormulations(d),pendingCount=allFormulations.length-formulations.length,ready=formulations.length>0;
+    let activeFormulationIndex=0;
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
@@ -191,6 +192,7 @@
       const index=Number(tab.dataset.formulationIndex);
       const f=formulations[index];
       if(!f||!activePresentation)return;
+      activeFormulationIndex=index;
       detail.querySelectorAll('.rx-presentation-tab').forEach(item=>item.setAttribute('aria-selected',String(item===tab)));
       activePresentation.innerHTML=formulationCard(f,index);
       bindPresentationCalculator(activePresentation,formulations);
@@ -199,7 +201,7 @@
     if(activePresentation)bindPresentationCalculator(activePresentation,formulations);
     detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.LuriaClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
-      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row,formulations[0]),source:"Bulário LURIA"});
+      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row,formulations[activeFormulationIndex]),source:"Bulário LURIA"});
       if(window.LuriaClinicalBridge?.inPrescriptionFlow?.() && ok){
         const btn=event.currentTarget;
         const old=btn.textContent;
