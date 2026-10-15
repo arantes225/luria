@@ -61,3 +61,28 @@ Os documentos privados do Drive não tiveram links/identificadores publicados ne
 - [ ] Autorização e processo separado para publicação.
 
 **Decisão editorial:** manter a apostila 116 como rascunho até cumprir os requisitos, sem recriar apostilas já existentes do lote nem publicar material não validado.
+
+
+---
+
+## Atualização da etapa 4 — consolidação editorial (14/10/2026)
+
+Foi criado o arquivo **`lote-06-116-sindromes-glomerulares-edicao-consolidada.md`**. O rascunho de 93.035 caracteres permanece preservado como histórico; a nova versão é o texto-base para revisão editorial e eventual conversão para HTML, sem alterar a página pública.
+
+**Ações verificadas:** reorganização dos conteúdos científicos em 24 capítulos de sequência didática, fusão das duas séries de casos em um capítulo (8 casos), fusão das duas séries de exercícios em outro (12 questões), retirada de seções de esboço e controles intermediários, correção da numeração de 55 subtítulos, manutenção das referências e ampliação substantiva das seções de interpretação de RAC/RPC, pesquisa de autoanticorpos e anatomopatologia/biópsia.
+
+**Medição independente do arquivo consolidado:** 91.502 caracteres brutos Markdown; aproximadamente **68.069 caracteres de corpo instrucional** nos capítulos 1–21 depois de remover marcadores Markdown básicos e URLs. Essa medida **não é certificação** de 60 mil caracteres *únicos* e instrutivos porque ainda inclui conteúdo de tabelas e eventuais repetições semânticas; casos, questões e bibliografia final foram excluídos desse subtotal. Nenhum script de auditoria de HTML foi executado, pois a apostila ainda não foi convertida em HTML e não está publicada.
+
+**Verificações científicas específicas:** a KDIGO confirma atualizações de capítulos em 2024 e 2025; foi acrescentada observação sobre o *corrigendum* ANCA 2024 que substituiu a conjunção “e” por “ou” para considerar plasmaférese em três situações de maior gravidade, **sem transformar a consideração em prescrição universal**. A tabela A1/A2/A3 da RAC foi fundamentada na KDIGO 2024 de DRC. O portal Conitec distingue os PCDTs brasileiros adultos (ato 2020) e pediátrico (ato 2018), ainda que a página dos documentos tenha sido atualizada em 2025.
+
+**Revisão de integridade automatizada:** sequência dos 24 títulos, presença dos 8 casos, das 12 questões e dos 55 subtítulos em ordem corrigida. Os testes não verificam raciocínio clínico suficiente nem adequação para prática clínica.
+
+### Próximas pendências — não marcar como finalizada
+
+1. Avaliação semântica e revisão médica capítulo a capítulo para detectar redundâncias remanescentes, indicações farmacológicas imprecisas ou condutas discrepantes entre PCDT e KDIGO.
+2. Benchmark de apostila extensa do Drive com autoria efetivamente confirmada: a busca por Estratégia MED/nefrologia/glomerulopatias **não localizou** referência equivalente nesta etapa; materiais resumidos foram lidos e suas limitações estão registradas.
+3. Revisão detalhada da acessibilidade e do layout, conversão em HTML padronizado, execução de scripts de auditoria e inspeção desktop/PWA.
+4. Curadoria visual; apenas imagens clínicas com procedência e licença efetivamente verificadas poderão ser encaminhadas ao Admin.
+5. Liberação apenas depois da revisão de autossuficiência, inclusive teste das questões com o texto e rastreabilidade das fontes.
+
+**Status permanece revisão parcial:** comprimento estimado acima do piso não significa apostila concluída.
