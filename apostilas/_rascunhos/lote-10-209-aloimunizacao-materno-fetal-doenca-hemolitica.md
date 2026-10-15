@@ -287,3 +287,160 @@ Avisar previamente serviço de neonatologia e banco de sangue, identificar antic
 
 Explicar diferença entre anticorpo materno e doença efetiva no feto/RN; algum DAT positivo pode ocorrer sem anemia grave, e feto com história crítica pode nascer com necessidade de terapia apesar de aspecto inicial relativamente bom. A família deve saber por que são feitas coletas frequentes, fototerapia e observação de anemia tardia. Registrar anticorpos para futuras gestações e necessidade de atenção a transfusões maternas posteriores.
 
+
+## 11. Doença hemolítica do recém-nascido: diagnóstico e tratamento
+
+### 11.1. Por que o risco pode crescer depois do parto?
+
+Durante a vida fetal, a placenta contribui para remoção de bilirrubina. Ao nascer, essa via cessa, e o RN passa a depender de conjugação hepática e eliminação intestinal, ainda imaturas, enquanto anticorpos IgG maternos continuam destruindo hemácias. A concentração de bilirrubina pode subir nas primeiras horas; **icterícia visível antes de 24 horas** é sinal clínico importante de hemólise e exige mensuração/avaliação, mas ausência de coloração evidente não é garantia de segurança.
+
+O neonato pode ter **anemia ao nascimento, hiperbilirrubinemia precoce, ambas ou anemia tardia**. Uma criança submetida a TIU pode ter hemoglobina inicial aparentemente satisfatória e produção endógena de hemácias deprimida, desenvolvendo anemia semanas depois. Por isso, tempo de acompanhamento neonatal precisa ser informado durante a gestação de alto risco.
+
+### 11.2. Exame do RN e laboratório inicial
+
+Avaliar idade gestacional, horas exatas de vida, peso, hidratação, vitalidade, sucção/alimentação, sinais neurológicos, icterícia, palidez, taquicardia, hepatosplenomegalia e possível desconforto respiratório. Investigar história de anticorpo materno, DAT neonatal, grupo ABO/RhD, hemoglobina/hematócrito, reticulócitos, bilirrubina total/frações, albumina e outros exames conforme gravidade.
+
+- **DAT positivo:** indica anticorpo aderido e auxilia na hipótese de hemólise imune, mas não especifica prognóstico sem dados clínicos.
+- **Anemia com reticulocitose:** sugere resposta medular a perda/destruição; entretanto anti-K e efeitos pós-TIU podem reduzir produção, tornando reticulócitos baixos apesar de doença.
+- **Bilirrubina indireta ascendente:** confirma carga de produção/excreção, mas a avaliação de risco usa valor total sérico e contexto.
+- **Icterícia precoce ou aumento rápido:** exige exame sério de causas hemolíticas, infecciosas e outras, não apenas “icterícia fisiológica”.
+
+### 11.3. AAP 2022: para quais recém-nascidos?
+
+A diretriz **AAP 2022** cobre recém-nascidos com **35 semanas ou mais**. Para bebês com menos de 35 semanas, usar **protocolos neonatais próprios**, que possuem limiares/risco diferentes; não utilizar nomograma AAP ≥35 em prematuro extremo. Para ≥35, as decisões são guiadas por **bilirrubina total sérica, idade em horas, idade gestacional e fatores de neurotoxicidade**.
+
+Hemólise isoimune é fator de risco para neurotoxicidade; também importam albumina baixa, sepse e instabilidade clínica recente. A mesma concentração de bilirrubina pode justificar condutas diferentes em RN de 35 semanas com hemólise e RN de 40 semanas sem riscos. **Não existe limiar universal do tipo “fototerapia para todos acima de 12 mg/dL”**.
+
+### 11.4. Bilirrubina sérica versus transcutânea
+
+Bilirrubina transcutânea ajuda em triagem, mas **bilirrubina total sérica (TSB)** é referência definitiva para decidir fototerapia, escalonamento e exsanguíneotransfusão segundo AAP. Em níveis elevados, próximo dos limiares terapêuticos ou sob fototerapia, métodos transcutâneos podem ser menos adequados. A AAP orienta confirmar TSB quando TcB está dentro de **3 mg/dL do limiar de fototerapia** ou é **≥15 mg/dL**, segundo circunstâncias e equipamento.
+
+A área de pele amarela e a progressão cefalocaudal não quantificam bilirrubina com confiabilidade suficiente. Variabilidade por tonalidade de pele, iluminação e observador aumenta a importância de medidas objetivas e acesso a seguimento. Não retardar dosagem por esperar a criança ficar “mais amarela”.
+
+### 11.5. Fototerapia intensiva
+
+A fototerapia converte bilirrubina não conjugada em fotoisômeros excretáveis sem necessidade de conjugação hepática habitual. **Intensidade e espectro apropriados**, área de pele exposta, distância conforme equipamento, temperatura, hidratação/alimentação e vigilância do nível de bilirrubina influenciam eficácia. Monitorizar aumento de peso/perdas, diurese, temperatura e proteção adequada conforme equipamentos.
+
+Fototerapia não substitui hemoterapia para anemia sintomática grave. Uma queda de bilirrubina pode ocorrer mesmo quando hemólise persiste; o plano de monitorização e seguimento pós-fototerapia deve considerar risco de **rebote**, especialmente em doença hemolítica e início muito precoce.
+
+### 11.6. Escalonamento: o que significa “2 mg/dL abaixo”?
+
+Na AAP 2022, o limiar de **escalonamento de cuidado** é **2 mg/dL abaixo do limiar de exsanguíneotransfusão** correspondente àquela idade em horas/idade gestacional/risco. Ao alcançar ou ultrapassar esse nível, é emergência neonatal: acionar neonatologista e serviço com capacidade de exsanguíneotransfusão, iniciar/manter **fototerapia intensiva**, hidratação IV apropriada, exames urgentes e medir TSB **ao menos a cada duas horas** durante a fase de escalonamento.
+
+**Atenção à lógica:** 2 mg/dL é distância relativa **ao limiar de exsanguíneotransfusão**, não um valor absoluto de bilirrubina e não significa que se deve exsanguinotransfundir automaticamente toda criança nessa faixa. Trata-se de preparar intervenção e impedir atraso se valor ultrapassar limite ou houver sinais clínicos graves.
+
+### 11.7. Imunoglobulina intravenosa (IVIG) neonatal: opção seletiva, não panaceia
+
+A AAP 2022 admite **IVIG 0,5 a 1 g/kg em duas horas**, com possibilidade de repetir após 12 horas, como **opção** em doença hemolítica isoimune com **DAT positivo** e TSB que atinge o limiar de escalonamento; o benefício para evitar exsanguíneotransfusão é **incerto** e estudos sugerem associação com enterocolite necrosante. O uso deve ponderar taxa de aumento de bilirrubina, resposta à fototerapia intensiva, acesso a exsanguíneotransfusão e riscos; não constitui terapia rotineira de todo Coombs direto positivo.
+
+É crucial distinguir duas imunoglobulinas diferentes:
+- **Anti-D materna profilática:** prevenção de sensibilização de gestante D-negativa não imune.
+- **IVIG neonatal policlonal:** tratamento **selecionado** da hiperbilirrubinemia isoimune grave, conforme risco e protocolo.
+
+Misturar as duas faz o aluno administrar a intervenção errada ao paciente errado.
+
+### 11.8. Exsanguíneotransfusão
+
+A exsanguíneotransfusão substitui parte do sangue circulante, retirando bilirrubina e anticorpos/hemácias sensibilizadas, em RN com risco grave de neurotoxicidade. **Indicações AAP 2022:** TSB no ou acima do limiar por idade/risco, ou sinais neurológicos de encefalopatia bilirrubínica aguda em fase intermediária/avançada, como hipertonia, arqueamento, retrocolo, opistótono, choro agudo e apneia recorrente. Procedimento exige equipe neonatal experiente, compatibilidade transfusional, monitorização e ambiente apropriado.
+
+Não deve ser tentado sem infraestrutura, nem retardado por acreditar que IVIG “sempre resolve”. Se durante preparação a bilirrubina cai para abaixo do limiar e criança não tem sinais neurológicos relevantes, a equipe pode reavaliar necessidade mantendo fototerapia e medidas seriadas, seguindo norma AAP. O balanço benefício/risco é dinâmico.
+
+### 11.9. Anemia neonatal e transfusão simples
+
+Hemólise pode provocar anemia sintomática com taquicardia, palidez, insuficiência cardíaca ou dificuldade de crescimento. Transfusão de concentrado de hemácias compatível, quando indicada, trata déficit de transporte de oxigênio; não é sinônimo de exsanguíneotransfusão para bilirrubina. A decisão usa Hb/hematócrito, sintomas, idade gestacional, perda sanguínea, reticulócitos e protocolos neonatais. Em criança cuja mãe possui anti-K ou outro aloanticorpo, hemocomponente precisa evitar antígeno correspondente, com orientação de hemoterapia.
+
+### 11.10. Alimentação e alta
+
+Garantir ingesta adequada e vigilância do ganho ponderal. Aleitamento materno pode e deve ser apoiado quando viável; alimentação insuficiente aumenta circulação entero-hepática e risco de hiperbilirrubinemia. Suplementação só deve ser decidida por indicação clínica e acompanhamento, sem culpar a família ou suspender aleitamento desnecessariamente.
+
+O plano de alta deve registrar bilirrubina medida e distância do limiar de fototerapia, idade em horas, fatores de risco, evolução durante internação, orientação de retorno e sinais de alarme: piora da icterícia, sonolência excessiva, sucção fraca, choro agudo, irritabilidade, febre, hipotonia/hipertonia, apneia e palidez marcante. DAT positivo e história de TIU exigem considerar **seguimento hematológico por anemia tardia** mesmo quando hiperbilirrubinemia imediata foi controlada.
+
+## 12. Diferenciais de anemia fetal e icterícia neonatal
+
+### 12.1. Nem todo feto anêmico tem doença Rh
+
+| Causa | Mecanismo | Pistas distintas | Avaliação-chave |
+|---|---|---|---|
+| Aloimunização anti-D/c/K | hemólise e/ou supressão eritroide | anticorpo materno e antígeno fetal compatíveis | PAI/painel, genotipagem, PSV-ACM |
+| **Parvovírus B19** | comprometimento de precursores eritroides | contato infeccioso, sorologia/PCR quando indicado; hidropisia | diagnóstico materno/fetal dirigido, PSV-ACM |
+| Hemorragia feto-materna importante | perda direta de hemácias fetais | redução movimentos, CTG alterada, evento suspeito | testes de hemorragia materna, Hb fetal |
+| TAPS em gêmeos monocoriônicos | microanastomoses com anemia/policitemia | dois fetos com PSV-ACM discordante, líquidos podem ser normais | Doppler **ambos** os fetos |
+| α-talassemia maior ou outras doenças hematológicas | defeito hereditário de hemoglobina/hemácia | história familiar/ancestralidade, genética e hidropisia | genética e hematologia |
+| Anemia fetal por infecção/inflamação e causas raras | mecanismos variáveis | sinais sistêmicos/malformações | investigação especializada |
+
+O Doppler PSV-ACM indica **síndrome de anemia possível**, não etiologia; é a ligação entre PAI materna, antígeno fetal e exames adicionais que sustenta diagnóstico causal.
+
+### 12.2. Nem todo RN ictérico tem doença hemolítica
+
+Icterícia fisiológica, ingestão inadequada de leite, extravasamento sanguíneo (cefalohematoma/equimoses), policitemia, deficiência de G6PD, esferocitose hereditária, infecções, doenças endócrinas e colestase precisam ser diferenciadas. **Icterícia de bilirrubina direta/conjugada elevada não se explica como hiperbilirrubinemia indireta fisiológica**, exigindo avaliação para doença hepatobiliar e outras causas. Hemólise ABO pode cursar com DAT negativo, portanto teste isolado não encerra investigação.
+
+A avaliação de G6PD é especialmente importante em hiperbilirrubinemia inesperadamente grave ou de resposta insuficiente, pois esse mecanismo não requer incompatibilidade RhD. O fato de mãe O e RN A/B possuírem potencial incompatibilidade ABO não prova que ela explique toda icterícia.
+
+### 12.3. Encefalopatia bilirrubínica e deficiência auditiva
+
+Bilirrubina não conjugada livre pode atravessar barreira hematoencefálica e afetar núcleos cerebrais; quadro agudo pode envolver letargia, dificuldade alimentar e alterações de tônus, evoluindo para opistótono, choro agudo, apneia e convulsões. O termo kernicterus costuma se associar a lesão permanente, com possíveis sequelas motoras, visuais, dentárias e auditivas. A prevenção depende de identificar nível/velocidade de aumento e risco antes dos sinais neurológicos avançados. Em RN com doença grave ou procedimento invasivo, acompanhar audição e neurodesenvolvimento conforme indicação.
+
+### 12.4. Anemia tardia pós-TIU e pós-parto
+
+O acompanhamento neonatal não termina quando fototerapia foi retirada. IgG materna pode circular por semanas e, em alguns fenótipos, eritropoiese fetal/neonatal fica temporariamente suprimida. Sinais como palidez, cansaço para mamar, taquicardia e dificuldade de ganho de peso justificam reavaliação. Hemograma e reticulócitos seriados são decididos por neonatologia/hematologia; não esperar bilirrubina muito alta para investigar anemia tardia. Anti-K e TIU prévia reforçam necessidade de plano de acompanhamento.
+
+### 12.5. Prognóstico e próxima gestação
+
+O prognóstico depende de gravidade, idade gestacional, hemoglobina fetal, hidropisia, resposta às TIUs e tempo de nascimento, além de controle neonatal de bilirrubina e anemia. Prevenção eficaz de anti-D impede grande parte dos casos de aloimunização D; uma vez sensibilizada, a mulher pode permanecer com memória imunológica e futuras gestações com fetos antígeno-positivos exigem planejamento pré-concepcional e referência precoce.
+
+Registros de anticorpo devem acompanhar a paciente também fora da obstetrícia: **hemoterapia deve fornecer componentes compatíveis** quando houver necessidade de transfusão futura. A equipe deve orientar história transfusional e disponibilizar documento com especificidades confirmadas quando indicado.
+
+## 13. Fluxogramas práticos originais
+
+### Fluxo A — Pré-natal de mulher RhD-negativa
+
+1. Confirmar **ABO, RhD e PAI**, com coleta e identificação confiáveis.
+2. PAI negativa para anti-D imune → documentar feto D-positivo/desconhecido ou genótipo quando disponível.
+3. Indicar **profilaxia anti-D** antenatal e em eventos sensibilizantes conforme idade gestacional/protocolo; coletar amostra antes da dose de rotina em torno de 28 semanas.
+4. Após parto, determinar RhD do RN e aplicar anti-D à mãe elegível idealmente até 72 horas; avaliar hemorragia feto-materna significativa e dose extra quando indicada.
+5. Registrar lote/data/dose e orientar futuras gestações.
+
+### Fluxo B — PAI positiva
+
+1. **Identificar especificidade** por painel, separando anti-D passivo de anti-D imune.
+2. Avaliar história de feto afetado, transfusões e anticorpos históricos.
+3. Estabelecer se feto é antígeno-positivo, negativo ou desconhecido.
+4. Anti-K: referência precoce; anti-D/c: quantificação/titulação e referência conforme risco/história; outros: individualizar.
+5. Se feto em risco, monitorar por títulos/concentração e **PSV-ACM** quando indicado.
+6. Se anti-D imune, anti-D profilático **não trata** anemia fetal.
+
+### Fluxo C — Suspeita de anemia fetal
+
+1. Conferir Doppler **PSV-ACM em MoM**, técnica e idade gestacional.
+2. Se >1,5 MoM ou hidropisia/sinais graves, referenciar medicina fetal **rapidamente**.
+3. Revisar anticorpo, antígeno fetal, histórico e outras causas de anemia.
+4. Definir **cordocentese com possibilidade de TIU** em centro especializado ou nascimento, conforme idade e risco.
+5. Planejar hemocomponentes compatíveis e neonatologia; monitorar efeitos e novas TIUs.
+6. Não esperar hidropisia para começar vigilância em paciente de risco.
+
+### Fluxo D — RN com mãe sensibilizada
+
+1. Comunicar antes do parto banco de sangue e neonatologia.
+2. Ao nascimento, determinar grupo/RhD, DAT e exames de hemólise conforme risco.
+3. Medir TSB com idade exata em horas, idade gestacional e fatores de neurotoxicidade.
+4. AAP ≥35 semanas: fototerapia conforme nomograma; ao atingir **2 mg/dL abaixo do limiar de exsanguíneotransfusão**, iniciar escalonamento emergencial.
+5. IVIG só como opção selecionada de DAT positivo com doença isoimune grave; exsanguíneotransfusão se limiar/encefalopatia exigir.
+6. Planejar acompanhamento de bilirrubina **e anemia tardia** após alta.
+
+## 14. Quadro de prova e atenção clínica
+
+| Situação | Interpretação correta | Erro clássico |
+|---|---|---|
+| Mãe D−, PAI negativa, 28 semanas | considerar profilaxia conforme protocolo | esperar recém-nascido ficar anêmico para dar anti-D |
+| Mãe D−, anti-D imune | feto em risco se D+, vigiar anemia | achar que mais anti-D cura doença |
+| Mãe D+, anti-K | ainda pode haver anemia fetal grave | dizer que Rh positivo elimina doença hemolítica |
+| PAI com anti-D após profilaxia | investigar possibilidade de anticorpo passivo | classificar sensibilização imune sem histórico |
+| RN DAT positivo pós-profilaxia materna | pode não ter hemólise significativa | fototerapia automática sem TSB |
+| Anti-K em título baixo | risco pode existir; referenciar | esperar atingir 1:16 obrigatoriamente |
+| PSV-ACM >1,5 MoM | suspeita moderada/grave de anemia | assumir que é indicação única de cesariana |
+| Hidropisia fetal com PAI negativa | investigar outras causas | afirmar que todo edema fetal é isoimunização |
+| RN icterícia precoce | dosar bilirrubina, investigar hemólise | usar apenas pele/zona de Kramer |
+| RN ≥35 semanas com TSB próximo a troca | escalonamento pela tabela por horas/risco | aplicar “BT 20 sempre” |
+| RN com DAT positivo e elevação crítica | fototerapia intensiva, possível intervenção | usar IVIG em todo DAT positivo |
+| Pós-TIU com bilirrubina controlada | ainda pode ter anemia tardia | alta sem plano de hemoglobina |
+
