@@ -499,3 +499,38 @@ Os dois manuscritos foram sincronizados ao \`LOTE_02_INPUT_PREPUBLICACAO.json\`,
 Nesta etapa, **+11.695 caracteres brutos Asma** e **+13.076 Tuberculose** (total 24.771), quatro casos e quatro questões adicionais, com duas tabelas autorais de TB e uma de Asma; integradas aos capítulos adequados em **\`LOTE_02_INPUT_PREPUBLICACAO.json\`**. Verificação programática em memória após a sincronização: cinco slugs, sequência contínua e sem lacunas dos casos/questões, tags de tabela equilibradas, caracteres acima da triagem mínima e **nenhuma imagem** no JSON. \`LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json\` atualizado para **versão 11**.
 
 **Limitações não sanadas:** nenhuma certificação de precisão de todas as doses, restrições gestacionais/pediátricas por fármaco e apresentação, ou autossuficiência sem redundância; comparativo adulto de PAC do Drive ainda pendente; imagens reais exigem curadoria e licença comercial específica, com aprovação pelo Admin; \`node scripts/validate-apostilas-lote-02.cjs\` e \`build-apostilas-batch.cjs --dry-run\` **não foram rodados em checkout completo**; nenhum teste real do renderer ou PWA. **0 livros certificados, 0 publicados, 0 merges e 0 deploys.**
+
+
+## Etapa 15 — auditoria corretiva de Asma pré-escolar e TB neonatal (15/10/2026)
+
+**Etapa obrigatória:** antes de executar, foi relido integralmente `lead.apostilas.txt`. Na checagem da branch, constatou-se que outras etapas já tinham preenchido extensamente Asma 6–11 anos, sibilância pré-escolar e TB pediátrica/gestacional; **não** se duplicou esse conteúdo nem se reverteu seu trabalho. Foram reabertos no Drive `Asma.pdf`, `Crise Asmática.pdf`, `02 - INFECTOLOGIA - TUBERCULOSE.pdf` e `02 - TUBERCULOSE EXTRA PULMONAR.pdf`, exclusivamente como comparação temática e sem cópia de material.
+
+### 1. Correção e aprofundamento de Asma (versão de leitura + input JSON)
+
+- O texto inicial da seção **8.9** agora reconhece que o **guia resumido GINA 2026** tem escopo 6–11 anos e mais velhos, mas o **Strategy Report completo** de 2026 contém capítulo específico para **5 anos ou menos**.
+- Incluída **8.9.4**: na faixa ≤5 anos, o SABA inalatório de alívio pode aparecer na etapa 1 em crianças selecionadas com sintomas até duas vezes/semana; **CI diário em dose baixa** passa a ser relevante quando há sintomas acima dessa frequência ao longo do mês ou episódio importante no último ano, com tentativa inicial de **2–3 meses** e reavaliação. Não extrapolar a estratégia **AIR/MART dos escolares** ao pré-escolar.
+- Confronto explícito de fontes: o ensaio **8–12 semanas** da BTS/NICE/SIGN 2024 é próximo, mas não idêntico, à orientação **2–3 meses** da GINA completa 2026. Dispositivo, dose e apresentação precisam ser adequados a idade/país.
+- Incluídos **Caso 20** e **Questão 25**, com análise de indicação de controlador em criança de quatro anos, comentários das alternativas e acompanhamento.
+- Fonte primária: https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf ; guia 6–11 anos: https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Figuras e tabelas com copyright GINA **não foram importadas**.
+
+### 2. Complemento de Tuberculose — RN exposto a caso bacilífero
+
+- Acrescentada **7.8.5**, distinguindo **TB neonatal ativa/congênita** de **contato assintomático com indicação potencial de prevenção primária**, decisão temporal de BCG, investigação de fonte não materna, precauções e amamentação com avaliação de transmissibilidade/mastite.
+- Incluídos **Caso 22** e **Questão 32**. A questão 31 já existia (sobre *M. bovis*); a numeração **32** foi escolhida para preservar a sequência existente.
+- Fontes oficiais: Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil* (2ª edição), capítulo de prevenção do RN; *Registro de investigação e acompanhamento da ILTB/TPT* (2025), https://bvsms.saude.gov.br/bvs/publicacoes/registro_investigacao_acompanhamento_tratamento_tuberculose.pdf ; página *Prevenção*, atualizada em 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao .
+- **Não foi introduzida dose de profilaxia do RN sem reconciliação de apresentação e protocolo neonatal vigente.** Exposição sem doença, suspeita de TB congênita e TB ativa têm condutas diferentes.
+
+### 3. Evidência de sincronização, limites e portões
+
+Ambas as seções clínicas, casos e questões foram inseridas em `LOTE_02_INPUT_PREPUBLICACAO.json` sob os capítulos correspondentes, sem inserir imagens. Os rascunhos históricos não foram apagados. O manifesto `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` está na versão **12**. As métricas atuais do checkout editorial, considerando também conteúdo já presente antes desta rodada, são:
+
+| Livro | Markdown bruto | Casos | Questões | Tabelas HTML |
+| --- | ---: | ---: | ---: | ---: |
+| Asma | 139.599 | 20 | 25 | 16 |
+| DPOC | 111.611 | 17 | 23 | 10 |
+| Diabetes mellitus | 103.938 | 14 | 23 | 13 |
+| PAC adulta | 96.147 | 16 | 23 | 12 |
+| Tuberculose | 179.902 | 22 | 32 | 22 |
+| **Total** | **631.197** | **89** | **126** | **73** |
+
+**Importante:** os valores totais agregam edições de outras rodadas que já constavam na branch; **não** atribuir todo esse crescimento à Etapa 15. Esta etapa acrescentou especificamente uma seção, um caso e uma questão em cada livro Asma e TB, além da correção de fonte da Asma. A referência internacional não substitui a elegibilidade brasileira de AIR/MART nem a norma assistencial da TB. Os testes técnicos do gerador em Node, visualização no leitor desktop/PWA, revisão médica e farmacêutica integral, curadoria de imagens com licença e aprovação Admin permanecem **pendentes**. **Sem merge, publicação ou deploy**.
