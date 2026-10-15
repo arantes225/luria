@@ -86,3 +86,35 @@
 | 134 — SOP/SOMP | 5 perguntas curtas interativas em `#questoes` | 8 | Acrescentar após a lista atual, preservando `fixation-toggle` |
 
 **Resultado do trabalho nesta etapa:** auditoria de estrutura **feita sobre arquivos reais**, com posições de inserção, colisões de IDs, especificação de navegação e limitações científicas registradas. **Nenhuma das três apostilas HTML foi alterada, publicada ou declarada concluída.**
+
+## 15/10/2026 — INTEGRAÇÃO EFETIVAMENTE GRAVADA NA BRANCH EDITORIAL, AINDA NÃO PUBLICADA
+
+**Ref de trabalho:** \`editorial/lote-07-aula-123-cps-2026-20261015\`. Registro criado após leitura do Prompt Magno e do padrão de produção, auditoria do HTML atual e releitura comparativa de fontes do Drive.
+
+### Resultado real (inserção HTML validada por leitura posterior)
+
+| Aula | HTML original (main e branch antes) | HTML após edição da branch | Incremento bruto | Preservação |
+|---|---:|---:|---:|---|
+| 124 — SUA | 69.515 caracteres | **84.715 caracteres** | **+15.200** | 6 casos originais com 6 discussões inseridas no local; 8 MCQs acrescentadas; nova âncora \`#questoes\` e link na sidebar |
+| 129 — Amenorreia | 111.452 | **121.172** | **+9.720** | 5 perguntas rápidas e checkpoints prévios conservados; 8 MCQs inseridas na seção \`#questoes\` já existente |
+| 134 — SOMP/PMOS | 57.605 | **66.567** | **+8.962** | 5 perguntas rápidas com \`fixation-toggle\` e JS preexistente intactos; 8 MCQs inseridas após a lista existente, sem duplicar \`#questoes\` |
+| **Total** | **238.572** | **272.454** | **+33.882** | **24 questões novas, 6 casos enriquecidos** |
+
+**Atenção:** quantidades são caracteres brutos de arquivo HTML, não caracteres didáticos úteis auditados. O rascunho fonte de cada bloco continua íntegro em \`apostilas/_rascunhos/\`; não houve remoção de conteúdo anterior para alcançar métricas de tamanho.
+
+**HTML/UX:** questões autorais de alternativas A–D com comentário e gabarito dentro de \`<details>\` nativos, sem exigir JavaScript adicional; cabeçalho de cada questão com ID individual e \`aria-labelledby\`; correspondência de navegação para SUA. Conferida em cada arquivo: oito questões, quatro alternativas em cada questão, um gabarito consistente por questão, 8 controles de resposta, IDs sem colisão, fechamento balanceado de \`section\`, \`details\` e \`article\`, e conteúdo dos scripts inline preexistentes **inalterado**. As três gravações GitHub foram confirmadas por \`fetch_file\` após escrita. Isto constitui **auditoria estrutural estática**; NÃO é execução de JS/browser, nem teste visual desktop/PWA, nem auditoria total de acessibilidade.
+
+**Etapa zero do novo ciclo, arquivos efetivamente lidos via conector:** “02 - CANCER DE ENDOMETRIO.pdf” (~9.576 caracteres extraídos, comparativo parcial para SUA), “02 - HIPERPROLACTINEMIA.pdf” (~9.236, comparativo parcial para amenorreia) e “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf” (~10.545, comparativo específico porém resumido para SOP/SOMP). Nenhum material foi copiado. Origem institucional Estratégia MED não verificada; os arquivos evidenciam circulação “Medicina livre”, que não identifica necessariamente autor. Comparativos auxiliam auditoria de escopo, **não** validam doses, recomendações ou direitos sobre imagens.
+
+**Fonte normativa especialmente conferida:** Portaria SCTIE/MS nº 101, de 8/01/2026, incorporação condicionada de ácido tranexâmico e DIU-LNG em leiomioma com sangramento uterino intenso no SUS — não confundir incorporação e disponibilidade clínica irrestrita. ASRM 2024 para amenorreia. Nomenclatura PMOS adotada por consenso internacional em maio/2026, associada à atualização terminológica da diretriz 2023, sem alteração das recomendações clínicas nesse ato. Fontes primárias estão vinculadas nas páginas correspondentes.
+
+### GATE ainda não cumprido
+
+- Revisão médica independente de cada alternativa e justificativa, incluindo nuances de indicação SUS e tratamentos locais, antes da fusão na main;
+- Revisão didática de redundância e efetiva autossuficiência dos capítulos, sem inferir qualidade pelo comprimento bruto;
+- Testes de renderização real em desktop, dispositivos móveis/PWA, teclado e leitores de tela;
+- Auditoria de conteúdo e autorização comercial de imagens, com aprovação Admin para novas imagens (nenhuma inserida);
+- Execução do pipeline local (\`check-syntax\`, \`audit-apostilas\`) em ambiente com checkout e dependências — **não executado aqui**.
+
+**Estado verificável:** os HTMLs foram alterados apenas na **branch**, a \`main\` mantém as versões originais. **NÃO HOUVE DEPLOY, MERGE, INTEGRAÇÃO DE IMAGENS, ALTERAÇÃO DE SUPABASE OU CERTIFICAÇÃO CLÍNICA.**
+
