@@ -1,4 +1,5 @@
 name: Editorial PTB-XL 500Hz ECG Review - NO DEPLOY
+# All test records must remain non-clinical fixtures.
 
 on:
   push:
