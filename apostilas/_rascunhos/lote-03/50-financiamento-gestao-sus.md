@@ -437,18 +437,295 @@ Todos os cenários são **fictícios**. Os números foram escolhidos para permit
 
 **Por que importa:** planejar, orçar, prestar serviço e atingir resultado são etapas **relacionadas, porém separadas**.
 
-## 6. Questões originais com comentários
-**Q1.** O financiamento do SUS é: A) apenas federal; B) responsabilidade compartilhada entre entes; C) apenas municipal; D) estritamente privado. **Gabarito B.** A/C omitem responsabilidades; B representa organização interfederativa; D contradiz o financiamento público. **Revisão:** financiamento tripartite.
+## 6. Dezesseis questões de residência comentadas por alternativa
 
-**Q2.** Conselho de Saúde e comissão intergestores são: A) sinônimos; B) conselho participa do controle social e comissão pactua entre gestores; C) tipos de hospital; D) fundos de investimento. **Gabarito B.** A/C/D confundem competências; B as diferencia. **Revisão:** Lei 8.142/1990 e governança.
+### Questão 1 — Piso municipal com recursos próprios
 
-**Q3.** A Portaria GM/MS 3.493/2024 trata de: A) cofinanciamento federal da APS; B) vacinação contra sarampo; C) trauma; D) pneumonias. **Gabarito A.** A descreve o objeto; B/C/D são assuntos distintos. **Revisão:** atualização normativa.
+Município com receita-base de R$ 80 milhões para o art. 7º da LC141 aplicou R$ 11 milhões em ASPS computáveis a partir de suas fontes elegíveis e recebeu mais R$ 5 milhões de repasses fundo a fundo da União. Qual é a interpretação inicial?
 
-**Q4.** Gastos executados garantem bons resultados? A) sim; B) apenas acima de certo valor; C) não, é preciso avaliar serviços e desfechos; D) dispensam auditoria. **Gabarito C.** A/B/D confundem processos e resultados; C integra execução e efeito. **Revisão:** avaliação de políticas.
+A) O piso municipal é R$ 12 milhões; os R$ 11 milhões próprios representam valor inferior ao mínimo, e o repasse federal não substitui automaticamente a aplicação municipal.
+B) O piso é R$ 8 milhões porque municípios aplicam no mínimo 10%.
+C) Todo repasse federal é contado como receita própria para reduzir o piso.
+D) Não há mínimo constitucional para municípios.
 
-**Q5.** Documento especialmente ligado à avaliação anual de gestão: A) RAG; B) prontuário individual; C) receituário; D) ECG. **Gabarito A.** B/C/D são instrumentos clínicos; A registra execução de gestão. **Revisão:** Plano, PAS e RAG.
+**Gabarito: A.**
 
-**Q6.** Para verificar metodologia do componente qualidade em outubro de 2026 deve-se: A) usar slides de 2020; B) consultar Portaria 3.493/2024 e atualizações de 2026; C) supor fórmulas invariáveis; D) ignorar notas técnicas. **Gabarito B.** A/C/D desatualizam norma; B busca vigência. **Revisão:** políticas de financiamento dependem do exercício.
+- **A — correta:** 15% × R$ 80 milhões = R$ 12 milhões; R$ 11 milhões = 13,75% da base no exemplo.
+- **B — incorreta:** percentual municipal não é 10%.
+- **C — incorreta:** fonte federal vinculada não apaga a obrigação de aplicação da receita própria.
+- **D — incorreta:** mínimo municipal é constitucional e regulamentado pela LC141.
+
+**Mini-revisão:** resolver o piso depende de identificar **denominador tributário correto** e **numerador de ASPS elegível da fonte própria**.
+
+### Questão 2 — Piso federal em 2026
+
+Qual referência normativa rege o mínimo federal de ASPS no exercício de 2026?
+
+A) Exatamente 12% do ICMS arrecadado pelos estados.
+B) 15% da receita corrente líquida da União do respectivo exercício, conforme art. 198 da Constituição.
+C) 15% do orçamento de cada município.
+D) Um valor fixo por habitante sem relação com receitas.
+
+**Gabarito: B.**
+
+- **A — incorreta:** não descreve a base da União.
+- **B — correta:** a norma constitucional vigente é a base federal de 15% da RCL.
+- **C — incorreta:** municípios têm base própria.
+- **D — incorreta:** não existe essa substituição universal do piso constitucional.
+
+**Mini-revisão:** texto antigo da LC141 que relaciona regra federal ao empenho anterior e PIB **não deve ser usado isoladamente** para o exercício de 2026.
+
+### Questão 3 — Estado e município: qual percentual é qual?
+
+Estado e município fictícios possuem bases elegíveis de R$ 300 milhões e R$ 60 milhões, respectivamente. Sem legislação local mais exigente, os mínimos são:
+
+A) R$ 45 milhões para estado e R$ 7,2 milhões para município.
+B) R$ 36 milhões para estado e R$ 9 milhões para município.
+C) R$ 30 milhões para estado e R$ 6 milhões para município.
+D) R$ 9 milhões para ambos.
+
+**Gabarito: B.**
+
+- **A — incorreta:** inverte os percentuais de 12% e 15%.
+- **B — correta:** estado 12% × 300 = R$ 36 milhões; município 15% × 60 = R$ 9 milhões.
+- **C — incorreta:** usa 10% para ambos sem fundamento.
+- **D — incorreta:** não considera bases e percentuais distintos.
+
+**Mini-revisão:** em estados, a base exige deduzir parcelas constitucionalmente transferidas aos municípios; em 2026, observar redação atualizada pela LC227.
+
+### Questão 4 — ASPS e aposentadoria
+
+Prefeitura quer computar no mínimo anual R$ 2 milhões em aposentadorias de antigos profissionais da saúde. Qual fundamento deve ser aplicado?
+
+A) Sempre entram, porque antigos profissionais trabalharam no SUS.
+B) Somente entra se o servidor recebeu menos que salário mínimo.
+C) A LC141, art. 4º, exclui aposentadorias e pensões para o cálculo de ASPS.
+D) Passam a contar integralmente após doze meses.
+
+**Gabarito: C.**
+
+- **A — incorreta:** benefício previdenciário não é ASPS computável pelo art. 4º.
+- **B — incorreta:** faixa salarial não cria exceção.
+- **C — correta:** exclusão é expressa.
+- **D — incorreta:** tempo transcorrido não transforma aposentadoria em ASPS.
+
+**Mini-revisão:** pessoal **ativo e vinculado à prestação** pode ser despesa elegível; inativos e pensionistas são distintos.
+
+### Questão 5 — Efeito indireto na saúde
+
+Um prefeito deseja contar construção de avenida e toda limpeza urbana como ASPS porque ambas reduzem acidentes e doenças. Qual análise é correta?
+
+A) Todo benefício indireto à saúde transforma gasto em ASPS.
+B) A LC141 exige acesso universal, compatibilidade com Plano e responsabilidade específica do setor; infraestrutura geral e limpeza urbana estão entre exclusões.
+C) Qualquer gasto planejado pela Prefeitura é ASPS se tiver aprovado na LOA.
+D) Nenhum gasto com saneamento pode entrar, sem exceções.
+
+**Gabarito: B.**
+
+- **A — incorreta:** confunde determinante social com critério contábil-jurídico de ASPS.
+- **B — correta:** representa requisitos do art. 2º e exclusões do art. 4º.
+- **C — incorreta:** LOA não altera natureza jurídica do gasto.
+- **D — incorreta:** art. 3º contém exceções delimitadas para saneamento de domicílios/pequenas comunidades e outras condições.
+
+**Mini-revisão:** *gerar saúde* não significa necessariamente *ser despesa de serviço de saúde para piso*.
+
+### Questão 6 — Empenho de equipamento no fim do exercício
+
+Uma Secretaria empenhou R$ 1 milhão em equipamentos ainda não entregues, sem lastro suficiente de caixa no fechamento. Qual alternativa melhor distingue execução e piso de ASPS?
+
+A) Todo empenho é pagamento e entrega imediata.
+B) Empenho, liquidação e pagamento são momentos diferentes; a LC141 define condições para computar Restos a Pagar e disponibilidade de caixa.
+C) Basta uma nota informal do fornecedor para contabilizar execução física.
+D) Se o dinheiro foi prometido verbalmente, não precisa de lançamento contábil.
+
+**Gabarito: B.**
+
+- **A — incorreta:** confunde as três fases.
+- **B — correta:** a LC141, art. 24, impõe critérios especiais ao mínimo.
+- **C — incorreta:** evidência de entrega e execução exigem documentação idônea.
+- **D — incorreta:** gasto público exige processo regular, dotação e registros.
+
+**Mini-revisão:** restos a pagar **não** são dinheiro livre ou modo de fabricar cumprimento de piso.
+
+### Questão 7 — Repasses fundo a fundo e Portaria 3.992/2017
+
+Qual afirmação é correta?
+
+A) Todo repasse do Fundo Nacional de Saúde exige convênio novo para cada parcela.
+B) Os blocos de custeio/investimento eliminaram qualquer vinculação à finalidade.
+C) Transferência fundo a fundo pode ser regular e automática, e a Portaria 3.992 reorganiza blocos preservando finalidade, programa e Plano/PAS.
+D) Blocos autorizam sempre compra de itens privados fora do SUS.
+
+**Gabarito: C.**
+
+- **A — incorreta:** transferência automática prevista em lei dispensa convênio em hipóteses próprias.
+- **B — incorreta:** simplificação das contas não extingue a vinculação.
+- **C — correta:** reflete Portaria 3.992 e LC141.
+- **D — incorreta:** objeto e critérios ASPS continuam obrigatórios.
+
+**Mini-revisão:** **bloco de financiamento não é cheque em branco**.
+
+### Questão 8 — Bloco de investimento
+
+Uma secretaria informa que todo gasto de investimento é necessariamente despesa de capital, sem exceções. O que o FAQ oficial sobre Portaria 3.992 esclarece?
+
+A) O bloco de investimento pode envolver capital e despesas correntes associadas a reformas de unidades existentes em determinadas condições.
+B) Todo bloco de investimento só serve para salário de médico.
+C) Nenhuma reforma pode ser paga com recurso do SUS.
+D) O nome do bloco dispensa classificação orçamentária.
+
+**Gabarito: A.**
+
+- **A — correta:** o Ministério registra essa nuance sobre classificação e objeto.
+- **B — incorreta:** não descreve destinação do investimento.
+- **C — incorreta:** reformas da rede física podem ser ASPS, conforme regras.
+- **D — incorreta:** natureza orçamentária e ato de repasse precisam ser observados.
+
+**Mini-revisão:** a classificação corrente/capital **não pode ser deduzida apenas** do nome popular do bloco.
+
+### Questão 9 — Componentes de cofinanciamento da APS
+
+Segundo a Portaria 3.493/2024 e orientações oficiais atualizadas, qual alternativa descreve corretamente os três eixos centrais vinculados às eSF/eAP?
+
+A) Incentivo por internação, por cirurgia e por UTI.
+B) Fixo por equipe, vínculo e acompanhamento territorial, e qualidade, com demais componentes e arranjos previstos em norma.
+C) Apenas per capita universal, sem nenhuma consideração de equipe/qualidade.
+D) Apenas prêmio financeiro por pacientes com exames alterados.
+
+**Gabarito: B.**
+
+- **A — incorreta:** não é desenho do financiamento APS.
+- **B — correta:** esses componentes aparecem nas orientações do Ministério, com regras por modalidade.
+- **C — incorreta:** o modelo inclui outros componentes, além de critérios de equipe.
+- **D — incorreta:** não se trata de premiar diagnósticos individuais.
+
+**Mini-revisão:** a Portaria 3.493 possui **seis grandes componentes no conjunto do financiamento APS**, enquanto eSF/eAP são frequentemente ensinadas pelos três eixos principais.
+
+### Questão 10 — Nota Técnica 8/2026
+
+O município vai verificar classificação de desempenho de componentes de vínculo e qualidade para eSF, eSB e eMulti em outubro de 2026. Qual fonte é adequada?
+
+A) Apenas slides de 2020 sobre Previne Brasil.
+B) Nota Técnica nº 8/2026-DEAPS/SAPS/MS, em conjunto com Portaria 3.493 e atos vigentes.
+C) Relatório de atendimento de 2008 sem critérios.
+D) Uma fórmula única criada pelo município sem observar pactuações.
+
+**Gabarito: B.**
+
+- **A — incorreta:** modelos e indicadores foram alterados.
+- **B — correta:** a nota publicada em 02/10/2026 define metodologia quadrimestral pertinente.
+- **C — incorreta:** não comprova a norma de 2026.
+- **D — incorreta:** cálculo de transferência não é escolha arbitrária da gestão local.
+
+**Mini-revisão:** dados do cadastro não substituem desempenho de acompanhamento real nem dispensa de atualizar os indicadores oficiais.
+
+### Questão 11 — Plano, PAS e RAG
+
+Assinale a correspondência correta.
+
+A) Plano plurianual da saúde → objetivos; PAS anual → ações/recursos; RAG anual → resultados da execução.
+B) RAG é documento sobre entrada de ambulância na emergência.
+C) PAS tem vigência obrigatória de dez anos e substitui a LOA.
+D) Conselho de Saúde deve elaborar pessoalmente toda nota fiscal da Prefeitura.
+
+**Gabarito: A.**
+
+- **A — correta:** reproduz distinção dos instrumentos publicados pelo Ministério da Saúde.
+- **B — incorreta:** confunde relatório de gestão com prontuário.
+- **C — incorreta:** a PAS é anual e articula-se ao orçamento.
+- **D — incorreta:** conselho controla e delibera política conforme atribuições, não executa toda contabilidade pública.
+
+**Mini-revisão:** Plano = prioridade; PAS = ação no ano; RDQA/RQPC = execução quadrimestral; RAG = balanço anual.
+
+### Questão 12 — SIOPS não homologado
+
+Município demonstra internamente ter aplicado 17% da base em ASPS, mas não homologa dados no SIOPS no prazo legal. Qual alternativa é correta?
+
+A) O percentual material dispensa declaração e qualquer consequência.
+B) Há obrigação de envio/homologação bimestral; ausência pode gerar medidas administrativas, distintas da infração de gasto insuficiente.
+C) Só a União presta dados no sistema.
+D) SIOPS serve para marcar consulta de dermatologia, não orçamento.
+
+**Gabarito: B.**
+
+- **A — incorreta:** falta de prestação de contas é obrigação autônoma.
+- **B — correta:** LC141 e Decreto 7.827 preveem consequências administrativas e procedimentos de regularização.
+- **C — incorreta:** todos os entes devem prestar informações.
+- **D — incorreta:** SIOPS registra receita e despesa pública em saúde.
+
+**Mini-revisão:** não declarar e declarar gasto insuficiente são dois problemas diferentes.
+
+### Questão 13 — SUS regionalizado
+
+Município pequeno deseja comprar aparelho caro de radioterapia sem equipe especializada, enquanto há referência regional com fila e dificuldade de transporte. Qual decisão melhor considera equidade e eficiência?
+
+A) Comprar equipamento imediatamente, sem avaliação de operação.
+B) Suspender encaminhamentos porque o aparelho não existe no município.
+C) Avaliar demanda, qualidade, custos completos e acesso, pactuar serviços e transporte, e comparar expansão regional com alternativa local.
+D) Ignorar pacientes rurais porque representam parcela pequena da população.
+
+**Gabarito: C.**
+
+- **A — incorreta:** investimento sem funcionamento não garante cuidado.
+- **B — incorreta:** rede regional pode suprir acesso.
+- **C — correta:** regionalização exige capacidade assistencial e logística efetiva.
+- **D — incorreta:** aprofunda inequidade.
+
+**Mini-revisão:** regionalização é organização de acesso, não simples concentração de máquinas.
+
+### Questão 14 — LC227/2026 e base tributária
+
+Ao comparar quadro didático de 2018 com a redação consolidada da LC141 em 2026, que alteração é pertinente?
+
+A) Estados e municípios deixaram de ter percentuais mínimos.
+B) LC227/2026 modificou a redação das bases dos arts. 6º e 7º para contemplar receitas distribuídas relacionadas ao imposto do art. 156-A da Constituição.
+C) A União passou a calcular exclusivamente sobre o IPTU municipal.
+D) Toda transferência privada passou a ser imposto estadual para o piso.
+
+**Gabarito: B.**
+
+- **A — incorreta:** percentuais continuam previstos.
+- **B — correta:** a alteração corresponde à adaptação normativa da reforma tributária.
+- **C — incorreta:** o piso federal usa RCL.
+- **D — incorreta:** receitas devem seguir previsão constitucional/tributária.
+
+**Mini-revisão:** vigência e base de cálculo importam tanto quanto decorar 12% e 15%.
+
+### Questão 15 — LC234/2026 e ASPS
+
+Qual afirmação sobre o art. 3º da LC141 após alterações de 2026 é correta?
+
+A) Qualquer despesa dos Corpos de Bombeiros passou a ser ASPS sem requisitos.
+B) A LC234/2026 introduziu hipótese condicionada de custeio/investimento em atendimento pré-hospitalar por Bombeiros para determinadas emendas, com requisitos e aprovação ministerial; isso não abrange toda a instituição.
+C) A Lei deixou de prever vigilância epidemiológica.
+D) Despesas de aposentadoria dos Bombeiros tornaram-se obrigatoriamente ASPS.
+
+**Gabarito: B.**
+
+- **A — incorreta:** a exceção é delimitada e não genérica.
+- **B — correta:** a alteração trouxe modalidade específica e critérios.
+- **C — incorreta:** vigilância segue no rol de ASPS.
+- **D — incorreta:** exclusões do art. 4º continuam relevantes.
+
+**Mini-revisão:** mudanças legislativas podem incluir exceções **estreitas**, não converter categorias inteiras em ASPS.
+
+### Questão 16 — O que mede qualidade real na APS?
+
+Equipe informa melhora no indicador de acompanhamento de diabetes de 50% para 80%, mas internações por complicações continuam altas em área vulnerável. Qual interpretação é a mais apropriada?
+
+A) O indicador alto prova que toda população está com cuidado adequado.
+B) A melhora do processo é positiva, mas demanda verificar denominadores, acesso, estratificação clínica, insumos, equidade e desfechos.
+C) O município deve excluir pessoas com alto risco do cadastro para elevar o índice.
+D) A equipe não pode avaliar dados assistenciais porque financiamento é tema só de contadores.
+
+**Gabarito: B.**
+
+- **A — incorreta:** indicador é proxy, não garantia de desfecho.
+- **B — correta:** gestão clínica integra estrutura, processo, resultado e equidade.
+- **C — incorreta:** exclusão de vulneráveis viola finalidade do SUS.
+- **D — incorreta:** médico e equipe podem melhorar qualidade e segurança usando dados, respeitando competências.
+
+**Mini-revisão:** **mais pontos administrativos ≠ todos os resultados de saúde desejados**.
 
 ## Referências prioritárias verificáveis
 1. Constituição Federal de 1988, arts. 196–200: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
