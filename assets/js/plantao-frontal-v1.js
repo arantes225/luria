@@ -1,5 +1,5 @@
 (()=>{"use strict";
-const RX=/patient-frontal-(adult-man|adult-woman|baby|boy|elderly-man|elderly-woman|pregnant|girl)-(awake|closed)(-pwa)?\\.webp(?:[?#]|$)/;
+const RX=/patient-frontal-(adult-man|adult-woman|baby|boy|elderly-man|elderly-woman|pregnant|girl)-(awake|closed)(-pwa)?\.webp(?:[?#]|$)/;
 const WEB={
  "adult-man":[[.445,.305,.025,.015,-.08],[.55,.305,.024,.015,.04]],
  "adult-woman":[[.45,.295,.026,.016,-.12],[.55,.295,.024,.015,-.06]],
@@ -30,7 +30,7 @@ document.head.append(style);
 const base=document.getElementById("plantao-patient-image"),scene=base&&base.closest(".plantao-scene");if(!base||!scene)return;
 let canvas=null,ctx=null,timer=0,raf=0,readyKey="",activeKey="",frames=[],eyes=[],anim=null,rendering=false;
 const lidSteps=28,closeMs=145,holdMs=28,openMs=190,totalMs=closeMs+holdMs+openMs;
-function closedPath(src){return src.replace(/-(awake|closed)(-pwa)?\\.webp([?#].*)?$/,(m,state,pwa,tail)=>"-closed"+(pwa||"")+".webp"+(tail||""))}
+function closedPath(src){return src.replace(/-(awake|closed)(-pwa)?\.webp([?#].*)?$/,(m,state,pwa,tail)=>"-closed"+(pwa||"")+".webp"+(tail||""))}
 function image(src){return new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=src;if(im.complete&&im.naturalWidth)resolve(im)})}
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 function sample(pixels,w,h,x,y,k){
@@ -125,6 +125,7 @@ const icons={
  avaliacao:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4M8 10h5M8 13h3"/>',
  suporte:'<path d="M13 2 5.5 13h5.5L10.8 22 18.5 11H13l.1-9Z"/>'
 };
+icons.fisico=icons.exame;
 const make=(path)=>'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+path+'</svg>';
 function paint(){
  const patient=document.querySelector("#plantao-standard-bedside #plantao-pwa-patient-tab>span:first-child");
