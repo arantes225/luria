@@ -278,3 +278,30 @@ As sete adições (quatro em DPOC, três em Diabetes) foram convertidas em HTML 
 **Importante sobre a contagem de casos/questões:** quatro manuscritos (DPOC, Diabetes, PAC e TB) ainda têm **Casos e Questões 1–2 em parágrafos compactos de capítulos anteriores** à seção final de casos/questões; o conteúdo permanece no arquivo e JSON, mas **a organização de leitura não está concluída**. Esse problema foi detectado em auditoria estrutural e deve ser corrigido movendo e ampliando os primeiros dois casos e questões nos próximos passes, sem duplicação.
 
 **Gates pendentes:** contagem de caracteres é aproximação e não certificado científico; doses e medicamentos sem revisão independente integral; paridade Markdown/HTML foi conferida nos novos trechos mas não houve execução Node real do gerador; imagens sem curadoria/licenças; referência equivalente de pneumonia **adulta** no Drive ainda não encontrada; testes PWA/desktop não realizados; nenhuma publicação, merge ou deploy.
+
+
+## Etapa 13 — consolidação de casos e questões iniciais (14/10/2026)
+
+**Pendência saneada:** DPOC, Diabetes, PAC adulta e Tuberculose mantinham **Caso 1, Caso 2, Questão 1 e Questão 2** como pequenos parágrafos inseridos em capítulos teóricos, enquanto suas seções finais iniciavam no número 3. Foram removidos **16 parágrafos compactos**, preservados os rascunhos históricos `*_RASCUNHO.md`, e criados **oito casos completos e oito questões revisadas** nas respectivas seções finais, com sequência numérica 1…N.
+
+### Conteúdo médico refeito e aprofundado
+
+- **DPOC:** suspeita com imagem de hiperinsuflação que requer confirmação por VEF1/CVF pós-broncodilatador; exacerbação com acidose hipercápnica, critérios de VNI e suporte de vias aéreas. As duas questões tratam de confirmação funcional e suporte em exacerbação. Fontes: GOLD 2026, https://goldcopd.org/2026-gold-report-and-pocket-guide/.
+- **Diabetes:** jovem com cetoacidose, hipocalemia e decisão segura de iniciar insulina; adulto com DM2 e risco cardiorrenal persistente apesar da HbA1c próxima da meta. Questões sobre confirmação do diagnóstico em assintomático e tratamento dirigido a desfechos. Fonte: ADA 2026, capítulo 2, https://doi.org/10.2337/dc26-s002 ; consenso de crises de 2024, https://doi.org/10.2337/dci24-0032 ; SBD 2026.
+- **Pneumonia comunitária adulta:** PAC de baixo risco com avaliação fisiológica e viabilidade de tratamento ambulatorial; idosa com confusão, hipoxemia, hipotensão e sepse possível. Questões sobre decisão de internação e derrame parapneumônico complicado. Fonte ATS/IDSA 2019, https://doi.org/10.1164/rccm.201908-1581ST. **Benchmark equivalente de cursinho para PAC adulta ainda ausente no Drive**: não declarar etapa zero plenamente atendida.
+- **Tuberculose:** caso típico de exposição e sintomas com coleta respiratória/TRM/cultura e investigação de contatos; suspeita em HIV com baixa contagem CD4, amostra escassa e teste molecular negativo que não afasta TB. Questões sobre ILTB versus doença ativa e próximo passo após TRM negativo. Fonte Ministério da Saúde, *Diagnóstico* (atualizado março/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico ; PCDT HIV Módulo 2 2024.
+
+### Verificação final de sequência Markdown↔JSON
+
+| Livro | Caracteres brutos edição contínua | Caracteres visíveis aproximados do JSON | Casos de 1 a N | Questões de 1 a N | Tabelas HTML |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 78.862 | 75.595 | 10 | 15 | 8 |
+| DPOC | **105.212** | **100.783** | **16** | **22** | 9 |
+| Diabetes | **103.938** | **99.415** | **14** | **23** | 13 |
+| PAC adulta | **88.830** | **84.740** | **14** | **21** | 10 |
+| Tuberculose | **106.987** | **102.106** | **12** | **21** | 13 |
+| **Total** | **483.829** | **462.639** | **66** | **102** | **53** |
+
+Conferidos diretamente a partir dos arquivos GitHub após os commits: cinco livros, seções de casos e questões numeradas sequencialmente de 1 até N, **sem entradas antigas inline**, paridade exata entre números dos títulos em Markdown e HTML por livro, IDs de capítulo sem duplicação, tabelas balanceadas e **zero imagens** no JSON. O `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` foi atualizado para **versão 5**. O validador `scripts/validate-apostilas-lote-02.cjs` recebeu verificações de ordem, completude e ausência de casos deslocados para futuras execuções em checkout.
+
+**Limites do parecer:** estes são testes estruturais feitos por leitura de conteúdo no GitHub; o **Node preflight/dry-run não foi executado** no checkout completo. A qualidade médica e farmacológica, direitos das imagens, revisão semântica de repetição e testes desktop/PWA também **não estão certificados**. O conteúdo dos novos casos utiliza **vinhetas clínicas fictícias originais**, não reproduz material de curso; as fontes do Drive foram reabertas como comparativos, com prioridade para diretrizes oficiais na construção da resposta. **5 manuscritos em pré-publicação, 0 certificados, 0 publicados, sem merge/deploy**.
