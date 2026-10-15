@@ -191,3 +191,147 @@ A psicoterapia isolada pode ser apropriada em muitos quadros menos graves; combi
 
 Regularidade de horários, redução de álcool quando pertinente, atividade física adaptada, alimentação e fortalecimento de vínculos ajudam a recuperação, mas não são “cura universal por força de vontade”. Abordar doença clínica coexistente, violência, insegurança de moradia, trabalho exaustivo e barreiras de transporte é parte do projeto terapêutico. Ações podem envolver ACS/equipe da APS, CAPS, assistência social e familiares, com consentimento e respeito ao sigilo.
 
+
+## 9. Tratamento farmacológico: por que, quando, qual e como monitorar
+
+### 9.1 Quando considerar antidepressivo
+
+Antidepressivos são tratamento efetivo em depressão moderada/grave ou outros cenários selecionados, idealmente integrados a psicoterapia, seguimento e manejo de condições associadas. A decisão precisa ponderar **sintomas, funcionamento, preferência, histórico de resposta, segurança, interações, gravidez, risco de descontinuação e custo/acesso**, sem apresentar uma classe como “a melhor para todos”.
+
+**Antes de iniciar:** descartar/tratar mania/hipomania, buscar interação medicamentosa e uso de substâncias, discutir tempo provável de resposta (benefício perceptível geralmente após algumas semanas), efeitos adversos iniciais e plano de retorno. A introdução de tratamento não garante melhora imediata, por isso uma pessoa em risco precisa de **suporte desde o primeiro dia**.
+
+**Escolha geral:** ISRS (inibidores seletivos da recaptação da serotonina) são frequentemente primeira opção pela relação eficácia, tolerabilidade e segurança em sobredose relativa a tricíclicos, mas precisam de avaliação individual. IRSN/SNRI (serotonina e noradrenalina), mirtazapina, bupropiona e outras classes podem servir melhor a determinados perfis. Os medicamentos não substituem medidas de segurança em crise, e nenhum é tratamento isolado específico para prevenir autoagressão.
+
+### 9.2 ISRS: mecanismo, diferenças e cuidados
+
+Ao inibir transportador de serotonina, ISRS aumentam sinalização serotoninérgica sináptica. Possíveis efeitos colaterais incluem **náusea, desconforto gastrointestinal, cefaleia, distúrbios do sono, agitação inicial, disfunção sexual, alterações de sangramento e hiponatremia**, especialmente em pessoas idosas suscetíveis. Podem aumentar risco de sangramento quando combinados a AINEs/antiagregantes/anticoagulantes; interações e riscos devem ser avaliados. O risco de **síndrome serotoninérgica** cresce com combinações de agentes serotoninérgicos, particularmente IMAO e outras interações; identificar confusão, hiperatividade autonômica e hiperreflexia/clônus em situações suspeitas.
+
+**Fluoxetina:** meia-vida longa, com persistência de efeitos e interações após suspensão; pode ser ativadora em alguns perfis e inibe CYP2D6. **Sertralina:** opção amplamente utilizada, efeitos gastrointestinais relativamente comuns. **Escitalopram/citalopram:** atenção ao risco de prolongamento de QT em determinados pacientes, dose, interações e comorbidades. **Paroxetina:** pode produzir sintomas de retirada mais pronunciados, efeito anticolinérgico relativo e interações; cautela adicional em idosos e gestação.
+
+A escolha deve ser centrada na pessoa. Uma paciente com insônia importante pode não tolerar medicação excessivamente ativadora; outra com sonolência diurna intensa pode não desejar sedação. **Não usar efeitos colaterais como “regra fixa” sem considerar variabilidade individual**.
+
+### 9.3 IRSN, mirtazapina, bupropiona e tricíclicos
+
+**Venlafaxina/desvenlafaxina/duloxetina:** efeito serotoninérgico e noradrenérgico; podem ser úteis em depressão com certas queixas dolorosas, dependendo da molécula e indicação, mas precisam de avaliação de **pressão arterial**, interações, alterações sexuais e sintomas de retirada, especialmente com venlafaxina. Duloxetina exige atenção à função hepática e ao uso de álcool em contextos de risco.
+
+**Mirtazapina:** antagonismo de receptores adrenérgicos/serotoninérgicos específicos, muitas vezes associada a **sedação e aumento de apetite/peso**; pode ser útil quando esses efeitos seriam aceitáveis/desejáveis, mas não é opção universal. **Bupropiona:** mecanismo noradrenérgico/dopaminérgico e menor incidência de determinados efeitos sexuais que muitos ISRS, porém é relativamente ativadora e possui **risco de convulsão** em pessoas predispostas, com contraindicações importantes como transtornos convulsivos e alguns transtornos alimentares, além de cautelas com álcool/abstinência e medicamentos que diminuam limiar convulsivo.
+
+**Tricíclicos (ex.: amitriptilina, nortriptilina):** podem ser eficazes, mas têm efeitos anticolinérgicos, cardiovasculares, risco de hipotensão ortostática e **maior toxicidade em sobredose**, razão para atenção especial se há risco de autoagressão. O estudante não deve concluir que “antidepressivo barato é automaticamente melhor” sem discutir contraindicações e contexto.
+
+**Inibidores da monoamina oxidase (IMAO):** indicação especializada em casos selecionados, com interações farmacológicas/alimentares e cuidados com troca de medicamentos; não são primeira opção rotineira de APS em depressão comum. Combinar IMAO com ISRS/IRSN ou certos outros fármacos pode causar reações graves; intervalos de suspensão e troca devem seguir bula/serviço especializado.
+
+### 9.4 Exemplos de posologia inicial para estudo — NÃO constituem prescrição individual
+
+Os exemplos a seguir são **doses iniciais adultas de apresentações orais comuns** utilizadas em alguns mercados e guias, com referências de bula; necessidade de ajuste por idade, gestação, função renal/hepática, outras medicações e disponibilidade brasileira **deve ser avaliada caso a caso**.
+
+| Fármaco / via | Referência de início adulto para depressão | Atenção ao seguimento |
+| --- | --- | --- |
+| **Fluoxetina VO** | **20 mg 1×/dia**, geralmente pela manhã | Em pessoas sensíveis, iniciar menor pode ser opção clínica; meia-vida longa, interações, sintomas ativadores; bula DailyMed confirma 20 mg como dose inicial de referência em adultos. |
+| **Sertralina VO** | **50 mg 1×/dia** em depressão maior, conforme bula padrão | Efeitos gastrointestinais, interações e necessidade de incremento gradual. |
+| **Escitalopram VO** | **10 mg 1×/dia** em adultos, conforme bula | Cautela em QT prolongado, interações e ajustes na insuficiência hepática/idosos conforme bula. |
+| **Venlafaxina XR VO** | **75 mg 1×/dia**, podendo iniciar em **37,5 mg por 4–7 dias** em determinados pacientes | Monitorar pressão arterial, tolerabilidade e retirada; bula consultada usa máximo **225 mg/dia** para a formulação XR específica. |
+
+**Não generalizar máximos:** a dose máxima de um fabricante/formulação pode diferir de outra. Por exemplo, a fluoxetina possui em uma bula norte-americana limite de **80 mg/dia**, mas muitos pacientes obtêm resposta em 20 mg e doses altas não devem ser escolhidas sem justificativa. **Não aumentar porque “a depressão é forte” em uma consulta única**; avaliar resposta após intervalo razoável, efeitos colaterais, adesão, transtorno bipolar e segurança.
+
+**Dose não substitui avaliação psiquiátrica:** sintomas psicóticos, história de mania/hipomania, ideação de autoagressão com risco imediato, catatonia, comorbidades complexas e gestação exigem individualização/especialista.
+
+### 9.5 Início, revisão e tempo para resposta
+
+A NICE NG222 orienta revisar efetividade, efeitos adversos, concordância e segurança **entre duas e quatro semanas após início** de tratamento para depressão; em **18–25 anos** ou quando há preocupação de suicídio, após prescrever ou aumentar dose de antidepressivo, revisar **em uma semana** e novamente tão frequentemente quanto necessário, sem ultrapassar quatro semanas para revisão subsequente. Uma pessoa com risco imediato não deve receber receita e retorno tardio; organizar suporte e encaminhamento/avaliação imediata conforme gravidade.
+
+**Primeiras semanas:** náusea, ansiedade ou agitação podem aparecer antes do benefício sustentado. O retorno deve explorar pensamentos de autoagressão, piora, efeitos adversos, adesão e eventual **virada para mania/hipomania**. Ausência de benefício em dois dias não é prova de falha; piora importante ou intolerância exige revisão antes de completar prazo padrão.
+
+**Resposta em 4–6 semanas:** se não há melhora após uso adequado e dose terapêutica, revisar diagnóstico, aderência, substâncias, condições clínicas, fatores sociais e acesso à psicoterapia. Considerar mudança/escalonamento em decisão compartilhada, evitando polifarmácia prematura.
+
+### 9.6 Continuação, manutenção e prevenção de recaída
+
+Após melhora/remissão, **não suspender automaticamente o antidepressivo no primeiro dia sem sintomas**. NICE descreve uso por **pelo menos seis meses, incluindo período após remissão**, com avaliações regulares; em recorrência, gravidade passada e alto risco de recaída, a manutenção pode ser prolongada com revisão periódica. A continuidade de psicoterapia e estratégias de prevenção de recaída também tem benefício.
+
+**Sinais de recaída a ensinar:** insônia ou hipersonia novamente, abandono de autocuidado, isolamento, autocrítica intensa, perda de interesse e retorno de pensamentos de morte. A paciente deve ter plano de contato e retorno antes de novos prejuízos graves.
+
+### 9.7 Suspensão gradual e diferenciação da síndrome de retirada
+
+Parar abruptamente pode causar **tontura, sintomas gripais, alterações sensoriais, agitação, ansiedade, insônia, sonhos vívidos e desconforto gastrointestinal**, sobretudo após uso prolongado de medicações de meia-vida curta. Venlafaxina e paroxetina requerem particular cuidado; fluoxetina tem meia-vida prolongada, mas isso **não autoriza suspensão arbitrária em toda situação**.
+
+Planejar redução progressiva, muitas vezes por **semanas ou meses**, ajustando velocidade a dose, duração, sintomas e preferência, sobretudo nas fases finais de redução. Se sinais de retirada surgem rapidamente após mudança, diferenciar de recaída, reavaliar e adequar plano. O processo deve ser **compartilhado** com quem prescreve; não sugerir retirada sem acompanhamento quando risco clínico é alto.
+
+### 9.8 Hiponatremia, QT, interações e populações especiais
+
+Idosos, usuários de diuréticos e pessoas com risco de distúrbio hidroeletrolítico podem desenvolver **hiponatremia por SIADH** associada a certos antidepressivos, especialmente após início/ajustes. Sintomas incluem confusão, fraqueza, quedas e convulsão em casos graves; checar eletrólitos quando risco/sintomas justificam. Alguns fármacos prolongam QT ou interagem por CYP; revisar ECG e medicamentos em perfis de risco, sem prescrever exames de rotina desnecessários a todos.
+
+**Gestação e lactação:** pesar risco da depressão não tratada (incluindo piora funcional e segurança) e exposição medicamentosa. Não orientar suspensão abrupta porque a pessoa descobriu gravidez; discutir com pré-natal/psiquiatria e bula atual. **Adolescentes:** intervenções psicológicas e seguimento especializado costumam ter centralidade; seleção de fármaco e dose requer critérios próprios, não copiar tabela adulta. **Pessoas idosas:** iniciar com estratégia cautelosa, avaliar queda, medicamentos, hiponatremia e função renal/hepática.
+
+## 10. Avaliação do risco de suicídio: competência transversal e prioridade de segurança
+
+### 10.1 Por que perguntar em toda consulta?
+
+O Ministério da Saúde orienta abordar diretamente ideias de suicídio em pessoas com depressão ao longo do seguimento. A pergunta não deve ser evitada por receio de “dar ideia”. O objetivo é **entender sofrimento e possibilidade atual de dano, criar vínculo, mobilizar ajuda e decidir cuidado proporcional**. A conversa precisa ser respeitosa e livre de julgamento, não um interrogatório moral.
+
+**Etapas clínicas:**
+1. **Acolher** e entender o que precipitou ou intensificou sofrimento.
+2. **Investigar** pensamentos de morte, autoagressão, intenção de agir e urgência percebida; explorar contexto e mudanças recentes de comportamento.
+3. **Levantar histórico** de episódios prévios de autoagressão, atendimentos por crise, internações, tentativas anteriores e outros fatores clínicos relevantes.
+4. **Reconhecer estado atual:** intoxicação, agitação, psicose, impulsividade intensa, desesperança, incapacidade de autocuidado, doença médica aguda e condições que reduzem capacidade de se manter seguro.
+5. **Mobilizar apoio** consentido e identificar pessoas/serviços confiáveis, barreiras de acesso, violência/isolamento e rede disponível.
+6. **Construir plano de segurança** e determinar necessidade de avaliação emergencial ou acompanhamento intensivo, documentando responsáveis e transição.
+
+**Importante:** essas etapas não são escala com pontuação, nem garantem previsão de comportamento futuro. A mesma pessoa pode mudar de necessidade ao longo de horas ou dias; avaliação e plano precisam ser revistos.
+
+### 10.2 “Baixo, médio, alto risco”: por que o estudante precisa atualizar a linguagem?
+
+A NICE **NG225** recomenda **não usar ferramentas/escalas de avaliação para prever suicídio**, nem para decidir quem receberá tratamento/alta, e **não utilizar estratificação global em baixo/médio/alto risco** como preditor. O raciocínio atual enfatiza **formulação de risco**, necessidades, mudanças do estado mental, proteção imediata e continuidade do cuidado.
+
+Isso não quer dizer ignorar gravidade: a equipe deve reconhecer **perigo imediato concreto** e organizar intervenção urgente. A diferença é entre descrever fatos — “pessoa em sofrimento agudo, relata intenção atual de se ferir, está sem suporte e incapaz de seguir plano seguro” — e resumir a situação a “alto risco” sem registrar o que precisa ser feito.
+
+**Atenção a exemplos de prova antigos:** escalas podem aparecer como ferramentas de triagem/registro de sintomas, mas uma classificação numérica **não autoriza alta**, sobretudo após episódio de autoagressão, quando NICE demanda avaliação psicossocial e plano.
+
+### 10.3 Manejo do paciente com perigo imediato
+
+Quando há preocupação significativa quanto à segurança atual, realizar **avaliação urgente por equipe habilitada**, em ambiente protegido, com observação/acolhimento proporcional. Priorizar tratamento de lesão, intoxicação ou doença clínica aguda **simultaneamente** à avaliação psicossocial. Articular UPA/pronto-socorro/hospital geral ou SAMU 192 conforme quadro, com transferência confirmada e passagem de informações. Não deixar a pessoa sozinha durante deslocamentos/espera se há necessidade imediata de supervisão.
+
+No SUS, a Linha de Cuidado da Depressão enfatiza explicar o encaminhamento, chamar suporte adequado, manter acompanhamento até transferência quando necessário, mobilizar rede e **garantir atendimento real**, não apenas entregar papel. Informações a familiares/contatos exigem cuidado com sigilo e justificativa ética; em risco de vida podem existir fundamentos para compartilhamento mínimo necessário.
+
+**Não confundir internação com punição:** ela pode ser necessária quando não há como manter proteção e tratamento de modo ambulatorial seguro, mas deve ser proporcional, legalmente fundamentada e reavaliada. A avaliação de capacidade decisória é específica ao momento/decisão.
+
+### 10.4 Plano colaborativo de segurança
+
+O plano inclui sinais pessoais de piora; estratégias de enfrentamento possíveis em crise; contatos de pessoas confiáveis; locais/serviços de ajuda; formas concretas de **tornar o ambiente mais seguro e diminuir acesso a meios perigosos** de modo colaborativo, sem instruções operacionais de autoagressão; e quem buscar em horário não comercial. Deve ser compreensível à pessoa, revisado com ela e adaptado a sua realidade.
+
+**Não é “contrato de não suicídio”**: pedir promessa verbal ou assinatura de que “não fará nada” não substitui avaliação, acompanhamento e proteção. Quando há risco imediato, plano escrito sozinho não basta. Se a pessoa relata não ter contatos de confiança, o serviço precisa oferecer vias institucionais e seguimento mais próximo, não registrar “orientada a procurar familiar” como se isso tivesse sido possível.
+
+### 10.5 Após episódio de autoagressão
+
+O atendimento deve começar com **cuidado físico** apropriado, avaliação da consciência/intoxicação e de complicações, junto a avaliação psicossocial tão logo a pessoa possa participar. NICE NG225 orienta não atrasar sistematicamente avaliação apenas por nível de álcool, mantendo revisões caso a pessoa ainda não possa participar. Após alta, deve haver plano de cuidado e **pontos de contato efetivos**, com reavaliação precoce conforme gravidade e contexto.
+
+No Brasil, as Linhas de Cuidado do MS lembram **notificação compulsória imediata de violência autoprovocada, inclusive tentativa de suicídio e automutilação**, conforme regulamentação vigente. É responsabilidade institucional consultar formulários/fluxos SINAN aplicáveis em 2026. Notificação **não substitui assistência**, e é distinta de comunicação pública ou divulgação de dados pessoais.
+
+### 10.6 Antidepressivos em pessoas com risco de autoagressão
+
+**Não negar tratamento para depressão por risco de suicídio**, mas adaptar segurança: acompanhar mais de perto, considerar a toxicidade dos medicamentos em sobredose, limitar quantidade dispensada quando indicado, envolver equipe e rede e manter acesso rápido à reavaliação. Tricíclicos têm risco cardiovascular significativamente maior em sobredose do que muitos ISRS; isso é fator de escolha e dispensação.
+
+Em pessoas jovens **18–25 anos** e naquelas com preocupação de autoagressão, reavaliação **em uma semana** após iniciar/aumentar antidepressivo conforme NICE é um ponto de prova e prática. A piora de agitação, inquietação e pensamentos de autoagressão exige contato e revisão, não “esperar mais um mês porque todo ISRS demora”.
+
+### 10.7 Diferenças entre risco e transtorno depressivo
+
+Nem toda pessoa com ideação suicida tem depressão maior; crises podem surgir com intoxicação/abstinência, transtornos psicóticos, trauma, sofrimento agudo e contextos de violência, entre outras situações. Nem toda pessoa com depressão tem ideação suicida. Logo, **diagnóstico psiquiátrico e segurança precisam de avaliação paralela**, sem a falácia “se o PHQ-9 não mostrou depressão grave, não precisa perguntar”.
+
+## 11. Depressão grave, psicose, catatonia e terapias especializadas
+
+### 11.1 Depressão com características psicóticas
+
+Quando ideias delirantes de culpa, ruína, niilismo ou vozes ocorrerem junto com episódio depressivo, avaliar condição como **potencialmente grave**, distinguindo psicose primária, bipolaridade, delirium e efeitos de substâncias. NICE NG222 considera, em serviço especializado, **combinação de antidepressivo e antipsicótico**, como em exemplos com olanzapina/quetiapina, conforme avaliação, e considera psicoterapia e outras intervenções. **Antidepressivo isolado sem revisão especializada pode ser insuficiente**; encaminhar principalmente se prejuízo de alimentação/segurança.
+
+A distinção de crença religiosa/cultural é fundamental: não diagnosticar delírio apenas porque conteúdo parece incomum para o examinador. A atitude clínica é analisar convicção, contexto, impacto e sinais associados.
+
+### 11.2 Catatonia ou recusa alimentar grave
+
+Imobilidade, mutismo, posturas anormais e incapacidade de alimentar-se requerem **avaliação de catatonia e condições médicas**; não tratar como “preguiça depressiva”. Desidratação, trombose, desnutrição e infecção podem ameaçar vida. A decisão sobre tratamento específico pertence a equipe capacitada e rede hospitalar quando necessário.
+
+### 11.3 Eletroconvulsoterapia (ECT)
+
+ECT tem **indicação legítima**, sobretudo em depressão grave com necessidade de resposta rápida (ex.: vida ameaçada por incapacidade de comer/beber), resistência terapêutica ou preferência informada após resposta anterior. É procedimento especializado sob anestesia, com avaliação clínica, consentimento e atenção a possíveis efeitos **cognitivos**, anestésicos e cardiovasculares. **Não é punição nem substituto de consentimento**, e não deve ser apresentada como primeira opção indiscriminada de APS.
+
+### 11.4 Tratamentos avançados
+
+Para depressão resistente, estratégias podem envolver troca por outro antidepressivo, combinação com psicoterapia, potencialização com antipsicótico de segunda geração ou lítio, ECT e tratamentos neuromodulatórios em centros habilitados. Protocolos estrangeiros incluem outras tecnologias como estimulação magnética transcraniana repetitiva e esketamina intranasal em indicações específicas. **Registro, acesso no SUS, requisitos de monitorização e protocolos da Anvisa devem ser verificados separadamente em 2026.** Não prometer disponibilidade universal nem apresentar tratamento avançado como alternativa automática após falha de uma semana.
+
