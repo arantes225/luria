@@ -11,7 +11,7 @@ O texto integral de `lead.apostilas.txt` / Prompt Magno foi conferido, assim com
 | Nº | Área | Tema do cronograma | Situação encontrada | Arquivo principal ou correlato | Lacuna e decisão editorial |
 |---|---|---|---|---|---|
 | 01 | Clínica Médica | Síndromes coronarianas agudas | Rascunho aprofundado | `apostilas/sindromes-coronarianas-agudas/content.json` | 13 seções; ~94,5 mil caracteres de texto aparente; ECG oclusivo, troponina, GRACE/NSTEMI, reperfusão e farmacoinvasiva, choque e complicações; NÃO certificada |
-| 02 | Cirurgia Geral | Avaliação pré-operatória e risco cirúrgico | Rascunho aprofundado | `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json` | 14 seções; SBC/AHA 2024, risco, drogas e MINS |
+| 02 | Cirurgia Geral | Avaliação pré-operatória e risco cirúrgico | Rascunho aprofundado | `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json` | 13 capítulos consolidados, ~90 mil caracteres de texto aparente; risco, DASI/RCRI/AUB-HAS2, pós-stent, anticoagulação/neuraxial, vias aéreas, exames, idosos/DRC/cirrose; NÃO certificada |
 | 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Não há livro próprio identificado | — | Assistência ao RN inclui exame inicial/termorregulação; distinguir reanimação #8 |
 | 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | Apostila existente robusta, auditoria pendente | `apostilas/pre-natal-baixo-risco/index.html` | 33 seções HTML, ~70 mil caracteres aparentes; evitar duplicação de #9, #14 e #19 |
 | 05 | Medicina Preventiva | Princípios e diretrizes do SUS | Não há livro próprio identificado | — | Princípios e diretrizes do SUS: base conceitual antes das leis |
@@ -100,3 +100,26 @@ Após gravação, verificados: 13 índices correspondentes a 13 seções, IDs ú
 - Reconciliar mudanças da `main` (Codex) antes de integrar qualquer arquivo.
 
 **Conclusão provisória:** foi atingida a meta quantitativa de texto aparente, com aprofundamento temático relevante, mas a apostila **não é certificada**. **Nenhum merge e nenhum deploy.**
+
+## Continuação de 14/10/2026 — Avaliação Pré-operatória e Risco Cirúrgico
+**Tema oficial:** 002 (Lote 1 dos 225 temas). **Arquivo:** `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json`. **Escopo:** avaliação pré-operatória integral em adulto submetido a cirurgia não cardíaca; não duplicar o livro `Cuidados Perioperatórios` nº 007.
+
+### Fontes e auditoria de conteúdo original
+- O comparativo do Drive `01 - AVALIACAO PRE-ANESTESICA.pdf` foi novamente aberto e lido (13.747 caracteres extraídos). Ele oferece tópicos de ASA, Lee, exames, via aérea e jejum, mas contém simplificações que **não** foram copiadas: '4 METs obrigatórios para autorizar a operação', percentuais genéricos de mortalidade por ASA e afirmações legais que exigiriam verificação independente. O arquivo exibe crédito `Medicina Livre`, **não** comprova autoria Estratégia MED.
+- Fontes primárias priorizadas: **Gualandro et al. SBC 2024**, Diretriz de Avaliação Cardiovascular Perioperatória, Arq Bras Cardiol 121(9):e20240590, DOI 10.36660/abc.20240590, texto completo em [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/); **AHA/ACC multissocietária 2024**, [JACC](https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013). Para antitrombóticos, [CHEST 2022](https://journal.chestnet.org/article/S0012-3692(22)01359-9/fulltext) e [ASRA 2025](https://rapm.bmj.com/content/early/2025/09/16/rapm-2024-105766); via aérea ASA 2022; jejum ASA 2023; GLP-1 orientação multissocietária ASA 2024; testes seletivos NICE NG45; avaliação de adultos ESAIC 2024.
+- Diferenças de diretrizes foram explicitadas, em particular classificações brasileiras e AHA/ACC de risco cardiovascular, cronologia pós-PCI, algoritmo de medicações vs anestesia neuraxial. A diretriz ESAIC 2024 restringe uso comercial de seus materiais e exige permissão para reutilização; nenhuma imagem/tabela foi extraída para republicação.
+
+### Aprofundamento realizado
+1. **Estratificação cardiovascular:** condições ativas, risco e urgência da cirurgia, DASI e capacidade funcional, RCRI/AUB-HAS2, teste de estresse seletivo, biomarcadores, MINS, stent farmacológico após SCA vs doença crônica, valvopatias e dispositivos implantáveis. Casos e tabelas interpretativas.
+2. **Farmacologia e antitrombóticos:** diferenciação de varfarina, DOAC, ponte com heparina, reinício após hemostasia, janelas próprias ASRA para neuraxial, antiagregação após PCI, diabetes e iSGLT2 3–4 dias antes da eletiva, agonistas GLP-1 com decisão por risco (não suspensão semanal universal), insulina, anti-hipertensivos, IECA/BRA, betabloqueadores. Doses/intervalos do livro são **referências científicas para revisão**, não ordens prescritivas.
+3. **Anestesia, via aérea e exames:** história de via aérea difícil, Mallampati, risco anatômico vs fisiológico, indicações selecionadas de intubação acordada, jejum em pacientes saudáveis vs gastroparesia e obstrução, exames por indicação e investigação de anemia sem rastreio universal.
+4. **Grupos especiais:** fragilidade e delirium do idoso, doença pulmonar e apneia, DRC e diálise, cirrose/hipertensão portal, desnutrição, corticoterapia/imunossupressão, uso crônico de opioides e objetivos de cuidado. Incorporados novos casos e fluxos.
+5. **Coesão:** módulo editorial anterior `risco-drogas-mins-perioperatorio-2026` foi incorporado/desduplicado: mantidos casos, questões e bibliografia relevantes e evitada repetição de capítulos inteiros. Nenhuma página pública criada.
+
+### QA de leitura estrutural
+O GitHub confirmou JSON recuperável e interpretável, **13 capítulos / 13 itens correspondentes de sumário**, IDs únicos, **16 tabelas bem formadas**, 130 parágrafos e aproximadamente **90,3 mil caracteres de texto aparente**. Triagem automática encontrou zero parágrafos longos literalmente idênticos e zero marcação executável suspeita. O volume textual não certifica que todos os caracteres sejam didáticos úteis. Não foram executados testes de navegador/PWA nem revisão independente médico-anestésica.
+
+### Imagens e gate de qualidade
+`apostilas/lotes/PREOP_CANDIDATAS_IMAGENS_2026-10-14.md` contém 12 candidatas rastreadas com fonte, atribuição e licença preliminar (Mallampati, via aérea, ECG, RX, valvopatia e coronariografias). **Nenhuma foi baixada, otimizada, incorporada ou aprovada no Admin.** Antes da aprovação, confirmar qualidade médica, fonte, licença, WebP responsivo e pertinência; descartar as redundantes.
+
+**Pendências bloqueadoras:** avaliação independente de posologias, contraindicações, tempo de suspensão e diretriz brasileira; revisão semântica de redundância e legibilidade; confirmação de todos os links; curadoria visual e autorização Admin; verificação de casos/questões pelo próprio livro; teste real desktop/PWA; conciliação com novos commits do Codex na `main`; criação de `index.html` apenas após certificação. **Status: aprofundada, NÃO certificada, não publicada. Zero merge e zero deploy.**
