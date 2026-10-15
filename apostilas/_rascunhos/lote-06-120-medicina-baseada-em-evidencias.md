@@ -583,3 +583,86 @@ O aconselhamento deve usar **frequências naturais** (“em 1.000 pessoas, X ben
 | Registro na Anvisa | Incorporação ao SUS | Regulação e cobertura/financiamento são atos distintos |
 | Sobrevida desde o diagnóstico | Mortalidade | Diagnóstico precoce pode inflar sobrevida sem alterar morte |
 
+
+
+## 29. Oito casos clínicos e metodológicos comentados
+
+### Caso 1 — A medicação que “reduziu risco em 50%”
+
+**Cenário:** em reunião de equipe de saúde da família, um propagandista informa que tratamento fictício Q reduz infarto em 50%. O artigo compara 800 tratados com 800 controles por dois anos: ocorreram 8 eventos no grupo tratado e 16 no controle. Eventos hemorrágicos significativos ocorreram em 12 tratados e 4 controles. Uma pessoa de baixo risco pergunta se deve iniciar Q.
+
+**Pergunta e desenho:** trata-se de intervenção que exige avaliação da validade do ensaio (alocação, seguimento, comparador, perdas, pré-especificação), além de quantificar benefícios e danos absolutos. Os números isolados não demonstram validade do estudo.
+
+**Cálculo passo a passo:** risco tratado de infarto = 8/800 = **1%**; controle = 16/800 = **2%**. RR = 0,01/0,02 = **0,50**; redução relativa de **50%**. Redução absoluta = 2%−1% = **1 ponto percentual**; NNT = 1/0,01 = **100 por dois anos**. Hemorragia: 12/800 = **1,5%** versus 4/800 = **0,5%**; aumento absoluto = **1 ponto percentual**; NNH = 100 por dois anos. O efeito absoluto fictício seria um infarto evitado e uma hemorragia importante adicional a cada 100 pessoas tratadas, aproximadamente, com incerteza não fornecida no enunciado.
+
+**Interpretação e decisão:** não concluir que benefícios e danos “se anulam” sem avaliar gravidade, tratamentos alternativos, risco basal e IC. Em pessoa de risco basal menor que o do ensaio, o NNT para o mesmo RR tenderia a aumentar. Verificar se o estudo mede mortalidade, incapacidade e eventos adversos relevantes, se houve alocação adequada e se o evento hemorrágico inclui casos graves.
+
+**Conduta metodológica:** apresentar frequências naturais, revisar qualidade do artigo e discutir riscos com paciente. **Por que importa:** a propaganda destaca RRR e silencia magnitude absoluta e risco de dano.
+
+### Caso 2 — D-dímero positivo e probabilidade pré-teste baixa
+
+**Cenário:** médica avalia adultos com suspeita clínica de condição tromboembólica em serviço de baixa prevalência. Para ensinar, usa teste fictício de sensibilidade 90% e especificidade 80% num grupo de 1.000 pessoas com prevalência de doença 10%. O teste veio positivo em paciente de baixo risco; outro médico afirma que “há 90% de chance de embolia, pois sensibilidade é 90%”.
+
+**Pergunta:** qual a probabilidade pós-teste, considerando o cenário didático?
+
+**Cálculo:** 100 doentes → 90 VP e 10 FN; 900 não doentes → 720 VN e 180 FP. VPP = 90/(90+180) = **33,3%**. VPN = 720/(720+10) = **98,6%**. LR+ = 0,90/0,20 = **4,5**; odds pré = 0,10/0,90 = 0,111; odds pós positivo = 0,5 → probabilidade de doença = **1/3**. Um positivo não significa certeza de doença. Esses números **não representam acurácia real do D-dímero nem autorizam protocolo clínico**: foram escolhidos apenas para ensinar Bayes.
+
+**Exame e conduta metodológica:** aplicar algoritmo diagnóstico verdadeiro validado para doença e população em questão, com escores de probabilidade pré-teste e limiares adequados, em vez de extrapolar diretamente este exemplo. **Por que importa:** sensibilidade responde pergunta entre doentes; VPP responde entre positivos, e a prevalência muda a resposta.
+
+### Caso 3 — Microcitose, teste e prevalência: o mesmo exame em populações diferentes
+
+**Cenário:** um teste fictício para determinada condição tem sensibilidade de 95% e especificidade de 90%. Equipe avalia duas populações: clínica A com prevalência de 1% e centro de referência B com prevalência de 20%. Um resultado positivo é tratado como idêntico em ambos.
+
+**Cálculo por 10.000 pessoas:** em A, há 100 doentes → 95 positivos verdadeiros; 9.900 sem doença → 990 positivos falsos. VPP = 95/(95+990) ≈ **8,8%**. Em B, há 2.000 doentes → 1.900 verdadeiros positivos; 8.000 não doentes → 800 falsos positivos. VPP = 1.900/(1.900+800) ≈ **70,4%**.
+
+**Raciocínio:** com mesmas sensibilidade e especificidade hipotéticas, a proporção de positivos que realmente têm doença muda fortemente com prevalência. Mas atenção: em populações reais diferentes, o espectro da doença também pode mudar sensibilidade/especificidade; o cálculo mantém esses valores constantes apenas para isolar o efeito da prevalência.
+
+**Conduta metodológica:** não reproduzir o VPP de estudo terciário na triagem populacional sem recalibração; explicar por que um positivo pode precisar de exame confirmatório em baixa prevalência. **Por que importa:** “teste excelente” não é sinônimo de “diagnóstico confirmado”.
+
+### Caso 4 — Estudo de coorte e “efeito protetor” criado pelo tempo imortal
+
+**Cenário:** um hospital compara mortalidade em pacientes que “algum dia receberam” fármaco R durante internação e pacientes que nunca receberam. O fármaco é iniciado em média no oitavo dia, mas o tempo de seguimento conta desde a admissão. Os que morreram nos primeiros sete dias só aparecem no grupo “nunca recebeu”. Estudo encontra mortalidade menor entre tratados.
+
+**Hipótese crítica:** **viés de tempo imortal** e possível confusão por indicação. Para ser classificado como tratado, o paciente precisou sobreviver até a primeira prescrição, enquanto mortes precoces se acumulam no controle. Isso cria proteção aparente mesmo se R não tiver eficácia.
+
+**Avaliação dos dados:** identificar definição de tempo zero, elegibilidade, momento em que o tratamento começa, eventos antes da exposição, comorbidades e cointervenções. Reanalisar exposição como variável dependente do tempo, ou emular ensaio-alvo com estratégias de tratamento corretamente definidas desde a elegibilidade, conforme pergunta causal.
+
+**Conduta metodológica:** não recomendar R apenas pelo HR favorável do estudo original; procurar ensaios ou observacionais com análise temporal válida. **Por que importa:** ajuste multivariado comum não corrige automaticamente o erro de classificar tempo não exposto como exposto.
+
+### Caso 5 — Ensaio negativo não comprova equivalência
+
+**Cenário:** ensaio de superioridade fictício com 120 participantes compara duas formas de analgesia. Diferença de melhora da dor = −0,8 ponto numa escala de 0–10, IC95% de −2,1 a +0,5; p=0,19. O autor conclui: “Os tratamentos são equivalentes porque p>0,05”.
+
+**Interpretação:** o estudo não rejeitou a hipótese nula de diferença igual a zero pelo teste usado, mas o IC inclui melhora potencialmente grande e piora pequena, conforme direção convencionada. A amostra pode ter sido insuficiente. **Equivalência** precisa de margens bilaterais pré-especificadas e desenho/planejamento próprios; não se demonstra por ausência de significância num teste de superioridade.
+
+**Exames e conduta metodológica:** verificar tamanho amostral, precisão, comparador ativo, aderência, perdas, escala e diferença mínima clinicamente importante; analisar se estudo foi de não inferioridade/equivalência verdadeiro. **Por que importa:** “não foi demonstrada diferença” é diferente de “foi demonstrado que não há diferença relevante”.
+
+### Caso 6 — Um rastreamento que aumentou sobrevida sem reduzir mortalidade
+
+**Cenário:** grupo sem rastreamento recebe diagnóstico de câncer aos 65 anos e morre aos 70. Grupo rastreado é diagnosticado aos 60 e morre aos 70. O estudo reporta “sobrevida após o diagnóstico passou de cinco para dez anos”, anunciando programa eficaz.
+
+**Hipótese crítica:** **viés de antecipação diagnóstica (lead-time)**. O diagnóstico ocorreu cinco anos antes, mas a data da morte não mudou; não há demonstração de prolongamento real de vida nesse exemplo. O rastreamento também pode identificar lesões de evolução lenta (length-time bias) e condições que não causariam doença clínica (sobrediagnóstico).
+
+**Avaliação:** investigar mortalidade específica e geral, qualidade de vida, complicações de tratamento, falsos positivos e números absolutos por participantes convidados ao rastreamento. Avaliar possíveis ganhos reais em ensaios e estudos bem controlados, em faixa etária e contexto apropriados.
+
+**Conduta:** não introduzir programa apenas por aumento de sobrevida desde diagnóstico, detecção precoce ou maior proporção de estágios iniciais. **Por que importa:** detectar antes não é necessariamente prevenir morte; exige desfecho correto.
+
+### Caso 7 — A metanálise cujo resultado bonito esconde estudos diferentes
+
+**Cenário:** revisão inclui seis ensaios de intervenção fictícia S, mas três aplicaram S em prevenção primária de adultos jovens e três em prevenção secundária de idosos de risco alto. Doses e duração variaram. Metanálise de efeitos aleatórios produz RR combinado 0,82, IC95% 0,70–0,97, I² 76%. Autores recomendam S a toda população.
+
+**Hipóteses críticas:** heterogeneidade clínica alta, aplicação indevida a populações diferentes e possível imprecisão de estimativas por subgrupo. O I² sinaliza variabilidade estatística relevante, mas não explica sozinho a fonte. O modelo aleatório não apaga diferenças de risco basal e desfecho. Um RR combinado não fornece NNT comum para riscos tão diferentes.
+
+**Avaliação:** verificar PICO e critérios, risco de viés com ferramenta própria, efeito por estrato pré-especificado, comparadores, sensibilidade e certeza GRADE **por desfecho**. Avaliar intervalo de predição se há dados suficientes e reexaminar sentido de uma síntese única.
+
+**Conduta metodológica:** recomendar apenas quando aplicabilidade, magnitude de benefício absoluto e danos foram avaliados para cada contexto; explicar incerteza e necessidade de novos estudos. **Por que importa:** metanálise não cria validade a partir de estudos incomparáveis.
+
+### Caso 8 — Incorporar ou não uma tecnologia ao SUS
+
+**Cenário:** medicamento hipotético custa R$ 45.000 por paciente/ano, enquanto alternativa custa R$ 15.000. Modelo estima 4,2 QALYs com o novo método e 3,2 QALYs com o padrão, no mesmo horizonte de avaliação. População elegível é ampla; há preocupação com orçamento público e equidade regional.
+
+**Cálculo:** custo incremental = **R$ 30.000**; ganho incremental = **1,0 QALY**; ICER = **R$ 30.000 por QALY adicional**, nos pressupostos do modelo. Isso não informa impacto orçamentário agregado: para 10.000 pacientes elegíveis tratados por um ano, a diferença nominal simples de medicamento, sem descontos nem outros custos, seria **R$ 300 milhões**. Esse cálculo de orçamento é apenas ilustração e não substitui análise orçamentária com taxas de adoção e custos evitados.
+
+**Hipóteses críticas:** eficácia clínica e segurança, comparador SUS, perspectiva, horizonte, utilidades e incerteza de parâmetros. ICER isolado não define adoção e não deve ser confundido com preço do medicamento ou com impacto orçamentário.
+
+**Conduta metodológica:** apresentar certeza das evidências, análises de sensibilidade, equidade, alternativas e condições de implementação à ATS/Conitec. **Por que importa:** uma decisão pública integra saúde, recursos e acesso — não apenas “p<0,05” em um ensaio.
