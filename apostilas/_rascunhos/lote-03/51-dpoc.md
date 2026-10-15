@@ -340,7 +340,65 @@ D) Corticoide inalatório não possui efeitos adversos.
 **Checklist de revisão independente:** verificar coerência dos limiares e do ponto de corte fixo com a idade; não confundir exacerbação com pneumonia ou insuficiência cardíaca; garantir que nenhuma alternativa incorreta seja parcialmente defensável; conferir que oxigênio não é negado na hipoxemia grave; distinguir indicação de VNI e critérios de intubação; conferir que o conteúdo não promove antibiótico universal nem corticosteroide sistêmico crônico; manter referências e data de atualização explícitas.
 
 
-## 22. Curadoria de imagens e referências
+
+## 22. Segurança do tratamento inalatório e interpretação clínica
+
+### 22.1 A escolha do dispositivo é parte da prescrição
+
+O tratamento da DPOC não depende apenas da molécula. Aerossóis pressurizados exigem coordenação entre acionamento e inspiração, frequentemente facilitada por espaçador. Dispositivos de pó seco dependem de fluxo inspiratório adequado e de preparo correto. Dispositivos de névoa suave possuem etapas próprias de utilização. A decisão deve considerar força inspiratória, destreza manual, cognição, visão, custo e disponibilidade.
+
+**Consulta simulada:** pessoa de 74 anos com artrite das mãos afirma usar corretamente o inalador, mas não consegue prepará-lo durante demonstração. Antes de aumentar a dose, o médico deve observar a técnica, escolher um dispositivo viável, ensinar seu uso e programar reavaliação. Falha de entrega do medicamento não equivale a resistência farmacológica.
+
+### 22.2 Benefícios e danos precisam ser avaliados em conjunto
+
+| Classe | Papel clínico | Cuidados relevantes |
+|---|---|---|
+| Broncodilatador beta-2 de curta ação | alívio de sintomas agudos | tremor, palpitações e uso excessivo |
+| Antimuscarínico de curta ação | alívio broncodilatador | boca seca e precauções específicas do produto |
+| LABA | manutenção de broncodilatação | sintomas cardiovasculares em suscetíveis; atenção à asma coexistente |
+| LAMA | manutenção e redução de eventos em perfis apropriados | boca seca e possível retenção urinária |
+| Corticoide inalatório em associação | prevenção de exacerbações em pacientes selecionados | candidíase, disfonia e pneumonia |
+| Corticoide sistêmico | tratamento de exacerbação em curso curto quando indicado | hiperglicemia, efeitos psiquiátricos e toxicidade cumulativa |
+
+A indicação de corticosteroide inalatório não deve ser feita apenas porque a dispneia persiste. É necessário integrar história de exacerbações, eventual asma associada, contagem de eosinófilos e risco de pneumonia. A retirada também exige avaliação individualizada, especialmente se houver asma concomitante.
+
+### 22.3 Gasometria: um exemplo resolvido
+
+Um paciente em exacerbação apresenta pH 7,28, PaCO2 de 68 mmHg e bicarbonato de 31 mEq/L. A combinação de acidemia e PaCO2 elevada caracteriza **acidose respiratória**. O bicarbonato aumentado sugere compensação renal prévia ou componente crônico, mas não elimina a gravidade da acidemia atual. Avaliar estado mental, esforço ventilatório, evolução gasométrica e elegibilidade para ventilação não invasiva, sem atrasar intubação se houver deterioração ou incapacidade de proteger a via aérea.
+
+A saturação periférica não mede PaCO2. Uma SpO2 de 90% sob oxigênio pode coexistir com retenção importante de dióxido de carbono. Por isso, melhorar a oxigenação não prova resolução da insuficiência ventilatória.
+
+### 22.4 Diagnósticos concorrentes durante a exacerbação
+
+Dor pleurítica súbita exige considerar tromboembolismo pulmonar e pneumotórax. Ortopneia, edema periférico e congestão pulmonar apontam para insuficiência cardíaca. Febre e infiltrado focal podem sugerir pneumonia. Dor torácica e alterações eletrocardiográficas levantam hipótese de síndrome coronariana aguda. Essas condições podem coexistir com DPOC; o diagnóstico prévio não deve produzir ancoragem.
+
+### 22.5 Caso clínico adicional
+
+**Caso 11 — Dispneia sem dessaturação.** Mulher de 66 anos com DPOC confirmada, mMRC 3 e SpO2 de 96% em repouso relata incapacidade de subir um lance de escadas. Não houve exacerbação recente. A saturação normal não invalida a dispneia: hiperinsuflação dinâmica, descondicionamento, anemia, doença cardíaca e falha de técnica inalatória são possibilidades. A abordagem inclui avaliação funcional, revisão do tratamento e consideração de reabilitação pulmonar. **Lição:** oxigenação e limitação funcional são dimensões diferentes.
+
+### 22.6 Questões adicionais
+
+**Questão 17.** Um paciente com DPOC permanece sintomático porque não consegue acionar seu inalador. Qual medida é prioritária?
+
+A) Introduzir corticosteroide sistêmico diário.
+B) Verificar técnica, capacidade de utilização e adequação do dispositivo.
+C) Prescrever oxigênio domiciliar sem avaliar hipoxemia.
+D) Concluir que a doença é refratária a toda broncodilatação.
+
+**Gabarito: B.** **A incorreta:** corticosteroide sistêmico crônico não corrige erro de administração e causa danos. **B correta:** o medicamento precisa ser entregue adequadamente às vias aéreas. **C incorreta:** oxigênio prolongado requer critérios específicos. **D incorreta:** falha técnica não comprova resistência farmacológica.
+
+**Questão 18.** Paciente com DPOC apresenta pH 7,28, PaCO2 68 mmHg e bicarbonato 31 mEq/L. Qual interpretação é mais adequada?
+
+A) Alcalose respiratória aguda.
+B) Gasometria normal para qualquer paciente com DPOC.
+C) Acidose respiratória com possível componente crônico compensatório, exigindo avaliação clínica urgente.
+D) Ausência de alteração ventilatória porque o bicarbonato está elevado.
+
+**Gabarito: C.** **A incorreta:** o pH baixo com PaCO2 alta caracteriza acidose respiratória. **B incorreta:** acidemia não é normalizada pelo diagnóstico de DPOC. **C correta:** a elevação de bicarbonato pode sugerir compensação prévia, sem afastar agravamento agudo. **D incorreta:** bicarbonato elevado não anula a retenção de CO2.
+
+**Pendência desta seção:** validar recomendações terapêuticas, doses e acesso pelo texto integral do PCDT brasileiro vigente antes de homologar.
+
+## 23. Curadoria de imagens e referências
 Candidatas: espirometria normal × obstrutiva, curvas fluxo-volume, diagrama autoral de hiperinsuflação, TC de enfisema com fonte verificável, radiografia comparativa de congestão, fotografia de técnica inalatória com licença comercial, demonstração licenciada de VNI, fluxos originais de classificação e escalonamento. **Nenhuma figura inédita deve entrar no HTML antes da aprovação Admin.**
 
 - Ministério da Saúde, PCDT DPOC atualizado 29/01/2026: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view
