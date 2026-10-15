@@ -15,7 +15,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 07 | Cirurgia Geral | Cuidados perioperatórios | Rascunho em `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` — **não publicado, não certificado** |
 | 08 | Pediatria | Reanimação neonatal | Rascunho revisado em `apostilas/reanimacao-neonatal/content.json`: 15 seções, 12 casos, 20 questões, 19 tabelas, ~92.702 caracteres aparentes — **não publicado, não certificado** |
 | 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Rascunho expandido `apostilas/diagnostico-datacao-gestacao/content.json`: 13 seções, 12 casos, 18 questões, ~65.113 caracteres aparentes — **não publicado/não certificado** |
-| 10 | Medicina Preventiva | Lei nº 8.080/1990 | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 10 | Medicina Preventiva | Lei nº 8.080/1990 | Rascunho novo em `apostilas/lei-8080-1990/content.json`: 15 seções, 9 casos, 17 questões, ~59.622 caracteres aparentes; **parcial, não publicado e não certificado** |
 | 11 | Clínica Médica | Hipertensão arterial sistêmica | Rascunho em `apostilas/hipertensao-arterial-sistemica/content.json` — **não publicado, não certificado** |
 | 12 | Cirurgia Geral | Resposta metabólica ao trauma | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 13 | Pediatria | Prematuridade e baixo peso ao nascer | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **10 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 9, 11 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses onze temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
-- Os outros **12 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **11 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 9, 11 e 16, 10) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses onze temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
+- Os outros **11 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
@@ -102,3 +102,11 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 - **Demais melhorias:** quadro por idade gestacional comparando a FiO₂ inicial SBP 2026 e AHA/AAP 2025; interpretação de oximetria na transição; diagnóstico de pneumotórax/escape aéreo pós-VPP; via aérea difícil em hérnia diafragmática congênita e obstrução anatômica; monitorização metabólica, neurológica e térmica; hipotermia terapêutica somente com indicação e estrutura especializadas.
 - **Casos e questões:** cinco novos casos clínicos contextualizados, dez novas questões originais com justificativa por alternativa. Total após atualização: **12 casos, 20 questões, 19 tabelas, 15 seções, ~92.702 caracteres aparentes**. Estrutura JSON/sumário consistente, gabaritos presentes em todas as questões e nenhuma duplicata literal integral de parágrafo encontrada. Auditoria de extensão não garante ausência de redundância semântica ou correção médica integral.
 - **Segurança:** priorizar critérios locais e equipes habilitadas, especialmente em doses/concentrações e técnicas invasivas; requer revisão independente por neonatologista e instrutor PRN-SBP, simulação, imagens licenciadas e Admin, teste PWA/desktop. **Sem index.html, merge ou deploy nesta revisão.**
+
+
+## Continuação de 15/10/2026 — tema 010
+
+- **Lei nº 8.080/1990**: criado novo rascunho `apostilas/lei-8080-1990/content.json`, com estrutura v2 e texto original. Inventário de todos os diretórios da branch confirmou que não havia apostila própria da Lei 8.080. Etapa zero documentada em `apostilas/lotes/TEMA_010_LEI_8080_AUDITORIA_2026-10-15.md`: material `SUS.pdf` do Drive foi lido como benchmark limitado, sem comprovação de autoria de cursinho e sem qualquer reprodução.
+- **Bases primárias**: legislação consolidada Planalto e edição atualizada da Câmara dos Deputados, consultadas em 15/10/2026; atenção a atualizações 2023–2026 e vigência futura em 16/04/2027 dos dispositivos sobre tratamento fora do município.
+- **Conteúdo salvo:** artigos iniciais, campo de atuação, transparência quinzenal de estoques, princípios do art. 7º, direção/gestão federativa, subsistemas, direitos das mulheres, assistência terapêutica/Conitec, setor privado, telessaúde (arts. 26-A a 26-H), recursos humanos, financiamento, planejamento, exemplos e revisão por questões. Auditoria automática: 15 seções, 9 casos, 17 questões e 14 tabelas, ~59.622 caracteres aparentes, 0 parágrafos literalmente repetidos e IDs/índice consistentes.
+- **Pendente:** revisão detalhada de disposições finais (arts. 39–55), ressalvas sobre exceções do art. 19-T, conferência de vigência das normas, revisão jurídica e editorial humana, prova de autossuficiência, teste PWA/desktop. **Não declarar completo; sem index.html, catálogo, merge ou deploy.**
