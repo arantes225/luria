@@ -749,4 +749,91 @@ D) Prescrever pomada e conceder alta se a pele não sangra.
 
 
 
-## 24. Matriz editorial, curadoria visual e referências — em revisão
+## 24. Matriz de cobertura, curadoria visual, referências e auditoria
+
+### 24.1 Registro comparativo — etapa zero parcialmente cumprida
+
+| Elemento | Verificação realizada | Implicação |
+|---|---|---|
+| Biblioteca LURIA publicada | Inspecionada a lista de diretórios em \`apostilas/\` na branch editorial; não foi identificado um livro independente com título de técnica cirúrgica | Criar livro próprio não sobrescreve conteúdo aprovado; há interface com Trauma Inicial, Cirurgia Geral e feridas |
+| Padrão editorial da LURIA | Examinado \`apostilas/assistencia-ao-parto/index.html\`, sobretudo índice, quadros, casos, ferramentas e navegação | Futuro HTML deve reutilizar padrão visual e ferramentas, sem alterar CSS geral às cegas |
+| Drive — referência adjacente 1 | Lido \`12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf\`; tópicos: retalhos randômicos/axiais, reconstructivos e complicações, não técnica geral | Útil só para compreender relação entre vascularização e fechamento de defeitos; nenhum texto/figura reproduzido |
+| Drive — referência adjacente 2 | Lido \`01 - AVALIACAO PRE-ANESTESICA.pdf\`; tópicos: risco, avaliação, classificação ASA, jejum e preparação, com algumas afirmações que precisam atualização | Inspiração para o recorte pré-operatório, mas não para copiar regras antigas de exame e capacidade funcional |
+| Drive — material adjacente 3 | Lido \`HÉRNIAS .pdf\`; tópicos: hernioplastias e acesso aberto/laparoscópico, sem cobertura geral da técnica operatória | Ajuda no ensino de parede/aponeurose, sem justificar incorporar detalhes específicos de hérnia à aula 42 |
+| Limitação | Busca por "técnica cirúrgica", "instrumentação", "fios/suturas" e "fundamentos cirurgia" não revelou apostila de cursinho inteira e diretamente equivalente | Benchmark de material didático equivalente **não está integralmente cumprido**, portanto fica registrado como pendência editorial |
+| Fonte clínica primária | Ministério da Saúde/Anvisa 2025–2026, OMS, NICE e EHS/AHS 2022 | Priorizar normas nacionais para assistência e diretrizes de sociedades para técnicas específicas |
+
+Os materiais do Drive apresentam indícios de compartilhamento informal e direitos de reprodução não confirmados. Não publicar suas URLs/identificadores privados, copiar texto, fotografias ou tabelas, nem reutilizar sua identidade visual em produto comercial. A ausência de fonte didática diretamente equivalente impede homologação automática de benchmarking; não impede manter um **rascunho autoral em revisão** fundamentado nas fontes públicas oficiais descritas abaixo.
+
+### 24.2 Matriz de cobertura didática com capítulos de origem
+
+| Pergunta que o aluno deve conseguir responder | Capítulos desta apostila | Como o conteúdo a demonstra | Pendência de avaliação humana |
+|---|---|---|---|
+| Por que indicar uma operação? | 1, 7, 8 | objetivo, alternativas, risco, consentimento, reserva do paciente | validar casos de contraindicação |
+| Como evitar cirurgia no paciente ou lado errado? | 1, 8, 22 caso 5, 23 Q1/Q11 | Sign In, Time Out, Sign Out e reconciliação | testar checklist em simulado |
+| Como classificar e prevenir ISC? | 2, 9, 15, 19, 23 Q2–Q4/Q10 | classes, flora, preparo, antibioticoprofilaxia, drenagem | rever protocolos por procedimento |
+| Qual instrumental usar e por quê? | 3, 10 | função, preensão, corte, hemostasia e limites | testar reconhecimento com imagens aprovadas |
+| Qual plano de dissecção é seguro? | 4, 7, 11, 22 caso 2/7 | anatomia, exposição, tração e complicações | inspeção especializada |
+| Como controlar sangramento sem lesão iatrogênica? | 4, 12, 18, 22 caso 2, 23 Q5 | compressão, exposição, reparo e coagulopatia | conferir fluxos de transfusão |
+| Como escolher fio, agulha e ponto? | 5, 13, 23 Q6/Q7 | função mecânica, tempo de resistência, tensão e risco de infecção | oficina prática supervisionada |
+| Por que feridas cicatrizam ou falham? | 5, 14–15, 20 | inflamação, proliferação, perfusão e fatores locais | atualizar manejo de cicatrizes complexas |
+| Quando fechar primariamente ou não? | 15, 22 caso 1 | contaminação, viabilidade, perda de tecido e lesões profundas | revisar feridas especiais |
+| Por que/como prevenir deiscência e hérnia? | 17, 22 caso 8, 23 Q8/Q12 | importância da aponeurose, tensão e opções de fechamento | revisar recomendações de situações não eletivas |
+| Quando converter laparoscopia? | 16, 22 caso 7, 23 Q9 | perda de referências, sangramento e risco de lesão | avaliação por videocirurgião |
+| O que fazer com complicação pós-operatória? | 19, 21, 22 caso 6, 23 Q10 | reconhecer, estratificar, investigar foco e tratar causa | testar cenários graves e seguimento |
+| Como adaptar técnica ao paciente? | 20 | criança, idoso, gestante e paciente com comorbidade | revisar recomendações específicas |
+| Qual a decisão diante de falha de contagem? | 8, 10, 21, 22 caso 5, 23 Q11 | reconciliação, comunicação e documento | validar implementação local |
+
+Os capítulos indicados são **marcadores editoriais Markdown**. Ainda não existe uma matriz de âncoras HTML testadas, pois a aula 42 não foi convertida nem publicada no site. Tal teste só poderá ser declarado após integração ao HTML com IDs reais.
+
+### 24.3 Plano de recursos visuais originais e candidatos de imagens médicas
+
+A imagem deve resolver uma pergunta clínica. Estes são **alvos de curadoria**, não fotografias selecionadas/baixadas e nem fontes licenciadas:
+
+| Prioridade | Imagem ou diagrama necessário | Local de inserção | Legenda didática proposta | Status |
+|---:|---|---|---|---|
+| 1 | Fotografia/ilustração licenciada de set básico de bisturi, tesoura, pinças e porta-agulhas | 10 | "A escolha depende de função e fragilidade do tecido" | buscar licença |
+| 2 | Diagrama autoral dos planos de parede abdominal e aponeurose | 7/17 | "Pele fecha cobertura; aponeurose sustenta parede" | criação original |
+| 3 | Comparação com permissão de agulha cortante e cilíndrica | 13 | "Geometria da agulha modifica lesão de tecido" | buscar licença |
+| 4 | Prancha autoral de monofilamento, multifilamento e evolução de resistência | 13/14 | "Resistência do fio deve acompanhar reparo tecidual" | criação original |
+| 5 | Esquema autoral de sutura interrompida, contínua, intradérmica e colchoeiro | 13 | "Diferentes padrões distribuem tensão de maneiras distintas" | criação original |
+| 6 | Fotografia autorizada de borda estrangulada vs coaptação perfundida | 13/22 | "Aparência pálida após ponto apertado sugere isquemia" | buscar consentimento/licença |
+| 7 | Fluxograma autoral de três pausas OMS sem reproduzir arte/brasão | 8 | "Sign In, Time Out e Sign Out são verificações distintas" | criação original |
+| 8 | Esquema autoral de tipos de hemostasia e propagação térmica | 12 | "Hemostasia às cegas pode causar lesão adjacente" | criação original |
+| 9 | Fotografia clínica licenciada de deiscência com proteção ética | 17/22 | "A exteriorização visceral exige urgência cirúrgica" | buscar licença e desidentificação |
+| 10 | Diagrama original decisão de fechamento primário/tardio/segundas intenções | 15/21 | "Fechar só quando tecido e ambiente permitirem" | criação original |
+| 11 | Diagrama original dos mecanismos de ISC superficial/profunda/órgão-espaço | 9/19 | "Profundidade da infecção muda controle de foco" | criação original |
+| 12 | Imagem autorizada de anatomia e acesso laparoscópico (sem instrução procedimental fora de treinamento) | 16 | "Campo visual e referências anatômicas orientam decisão de conversão" | buscar licença |
+
+**Fluxo obrigatório:** verificar a fonte e a licença de cada imagem real; não assumir uso comercial só porque o artigo é de acesso aberto. O documento da OMS de diretrizes de 2018 pode ter licença **CC BY-NC-SA**, de modo que seus infográficos não estão automaticamente liberados para o produto comercial. Diagramas próprios devem ser criados com precisão e aprovados editorialmente. Só após verificação de licença/procedência, os arquivos e metadados podem entrar no manifesto JSON e na fila **Admin → Imagens para aprovação → Apostilas**. Após aprovação, gerar WebP com peso/legibilidade conforme pipeline (a instrução do repositório menciona teto de 110 KiB na aprovação). Nenhuma nova imagem foi inserida em HTML.
+
+### 24.4 Referências brasileiras e internacionais verificáveis
+
+1. **Ministério da Saúde.** Protocolo de Cirurgia Segura — acesso público atualizado no portal em 23/03/2026. https://www.gov.br/saude/pt-br/composicao/saes/seguranca-do-paciente/protocolos-de-seguranca-do-paciente/protocolo-cirurgia-segura.pdf/view
+2. **Anvisa.** Protocolo de Prevenção de Infecção de Sítio Cirúrgico — modelo disponibilizado em 2026 (publicação no portal em 28/01/2026). https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico/protocolo-2-prevecao-de-isc-final.pdf
+3. **Anvisa.** Centro cirúrgico e Sala de Recuperação Pós-Anestésica, materiais de higiene das mãos e preparo cirúrgico atualizados até 2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/higienizacao-das-maos-1/estrategia-multimodal-melhoria-da-higienizacao-das-maos-teste/estrategia-multimodal-melhoria-da-higiene-das-maos/centro-cirurgico-sala-de-recuperacao-pos-anestesica
+4. **Anvisa.** Controle da infecção hospitalar: prevenção é fundamental, 2022 — divulga recomendações de profilaxia, normotermia e tricotomia como material de implementação. https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/controle-da-infeccao-hospitalar-prevencao-e-fundamental
+5. **OMS.** *WHO Guidelines for Safe Surgery: Safe Surgery Saves Lives* (2009). https://www.ncbi.nlm.nih.gov/books/NBK143243/
+6. **OMS.** *Implementation Manual WHO Surgical Safety Checklist* (2009). https://www.who.int/publications/i/item/9789241598590
+7. **OMS.** *Global Guidelines for the Prevention of Surgical Site Infection*, 2ª ed. (2018). https://www.who.int/publications/i/item/9789241550475
+8. **NICE.** NG125: *Surgical site infections: prevention and treatment*, recomendações publicadas em 2019 e atualizações no site. https://www.nice.org.uk/guidance/ng125/chapter/recommendations
+9. **European Hernia Society / American Hernia Society.** Deerenberg EB et al. *Updated guideline for closure of abdominal wall incisions*, *British Journal of Surgery*, 2022;109:1239–1250; DOI 10.1093/bjs/znac302. https://academic.oup.com/bjs/article/109/12/1239/6677383
+10. **Anvisa.** Documentos e protocolos de segurança do paciente, monitoramento de ISC e modelos disponíveis no portal nacional. https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes
+
+**Nota de interpretação:** a estratégia de pequenas tomadas na laparotomia mediana eletiva é sugerida por EHS/AHS com baixa certeza, não ordem aplicável a toda incisão. Há diferenças entre diretrizes para irrigação de ferida e soluções antissépticas antes do fechamento; não fundir recomendações como se houvesse consenso universal. Antibióticos, doses, redoses e ajustes por procedimento devem seguir protocolos brasileiros/CCIH validados no contexto de publicação.
+
+### 24.5 Auditoria final desta etapa — parecer editorial parcial
+
+**Fortalezas efetivamente produzidas:** revisão do rascunho sem descarte das bases úteis; desenvolvimento dos capítulos de planejamento anatômico, segurança, ISC, manipulação de tecidos, instrumentação, dissecção, hemostasia, fios, agulhas, cicatrização, fechamento, laparoscopia, pós-operatório e complicações; oito casos originais desenvolvidos (clássicos, diferenciais, complicações e erros de segurança), doze questões originais de múltipla escolha com justificativas de alternativas e sínteses; quatro fluxos de decisão.
+
+**Gates não cumpridos:**
+- ausente benchmarking de apostila geral equivalente de técnica operatória em Drive; materiais acessados foram **adjacentes**;
+- não há revisão médico-científica especializada conclusiva, nem auditoria farmacológica de profilaxia por procedimento;
+- não há imagens reais selecionadas com licença comercial aprovada, nem criação/validação das figuras autorais propostas;
+- não há HTML/âncoras de navegação testados; não houve auditoria de página em navegador ou PWA;
+- não há validação humana de autossuficiência mediante prova de questões e resposta fundada apenas no próprio texto;
+- não foram executados validadores do repositório sobre um HTML publicado; conteúdo segue em Markdown na branch editorial.
+
+**Conclusão:** texto substancialmente aprofundado e apto à fase **REVISÃO MÉDICA + CURADORIA VISUAL**, mas **NÃO HOMOLOGADO** e **NÃO PUBLICADO**. A contagem de caracteres brutos isoladamente não comprova qualidade ou texto didático útil. Não criar entrada em catálogo, não fazer merge e não realizar deploy.
+
+
