@@ -1,5 +1,5 @@
 # LURIA — Aula 42: princípios de técnica cirúrgica (rascunho não publicado)
-**Lote 03 | 14/10/2026 | Em elaboração, não homologado**
+**Lote 03 | 14/10/2026 | Conteúdo aprofundado em elaboração, não homologado**
 
 ## Auditoria de material comparativo e escopo
 Foi lido no Drive o PDF *12 - CIRURGIA PLASTICA - PRINCIPAIS RETALHOS.pdf*. É referência **adjacente, não equivalente**: seu conteúdo enfatiza classificação vascular, exemplos reconstrutores e complicações de retalhos, mas não abrange a técnica operatória geral, instrumental, hemostasia, dissecção, síntese e segurança cirúrgica. O documento apresenta indicação de compartilhamento informal e não teve autoria original institucional confirmada; nenhuma imagem ou texto foi reproduzido. A LURIA foi conferida em apostila publicada de assistência ao parto quanto a componentes editoriais. Uma comparação integral com apostila didática específica de técnica operatória permanece pendente, portanto não se declara a etapa zero totalmente satisfeita.
@@ -40,7 +40,231 @@ A síntese busca coaptação sem isquemia, eliminação razoável de espaço mor
 
 Essas perguntas são **gatilhos de ensino**, ainda não seis questões de múltipla escolha completas exigidas pelo lead.
 
-## Índice de expansão obrigatório
+
+## 7. Planejamento anatômico, indicação e acesso: a operação começa no raciocínio
+
+### 7.1 Indicação e viabilidade são partes da técnica
+
+Uma operação pode ser tecnicamente perfeita e clinicamente inadequada. A indicação deve explicitar doença-alvo, objetivo — diagnosticar, curar, paliar ou controlar dano —, benefício esperado, possibilidade de alternativas conservadoras e risco de não operar. Em situação eletiva, o cirurgião confirma história, exame, documentação diagnóstica, comorbidades e capacidade de recuperação; no paciente com peritonite ou hemorragia ameaçadora à vida, o preparo ocorre em paralelo à estabilização, sem atraso que comprometa a intervenção.
+
+A explicação ao paciente precisa ser compreensível e proporcional: o que será feito, por que, alternativas, consequências de adiar/recusar, complicações importantes e possibilidade de mudar a estratégia intraoperatória. O consentimento informado não é sinônimo de assinar formulário. Quando ocorre urgência com impossibilidade de consentir, a conduta exige o enquadramento ético e jurídico aplicável; não extrapolar uma regra única a qualquer procedimento.
+
+A operação é planejada a partir de **alvo, trajeto, estruturas de risco e plano de saída**. O alvo é a lesão ou estrutura que precisa ser tratada; o trajeto é o caminho mais seguro para alcançá-lo, evitando lesão desnecessária; o plano de saída inclui hemostasia, reconstrução, fechamento, drenagem seletiva e tratamento de complicações. Em laparotomia por obstrução intestinal, por exemplo, a incisão precisa oferecer exposição suficiente para examinar segmentos relevantes, e não apenas alcançar o ponto que parece alterado pela imagem.
+
+### 7.2 Marcos anatômicos e planos de dissecção
+
+Na incisão de pele, considerar linhas de tensão cutânea, sulcos naturais, circulação regional e distância de estruturas nobres. O benefício estético deve ser ponderado com segurança de exposição e necessidade de ampliar o acesso. Em região cervical, uma cicatriz discreta que compromete visualização de vasos, nervos ou via aérea não representa melhor técnica. No abdome, reoperações podem alterar os planos por aderências; não se presume que a anatomia esteja idêntica ao livro.
+
+**Planos de tecido** podem incluir pele, subcutâneo, fáscias superficial/profunda, aponeuroses, músculos, fáscia transversalis, gordura pré-peritoneal e peritônio, segundo região. Identificar plano não é decorar sequência fixa: cicatriz, inflamação, hematoma, obesidade e tumores podem apagar referências. A dissecção deve ser guiada pela anatomia **observada** e por sua relação com marcos constantes.
+
+A fáscia/aponeurose tem papel central na resistência da parede abdominal. Uma sutura cutânea bonita não compensa falha da aponeurose. O subcutâneo tem menor resistência mecânica e a gordura adiposa é mais vulnerável à necrose por esmagamento e vascularização relativamente limitada. Estruturas nobres precisam ser identificadas ou protegidas antes de usar energia, clampeamento e tração vigorosa.
+
+### 7.3 Exposição, iluminação e ergonomia
+
+A visualização adequada exige equipe, foco de luz, afastamento, aspiração e controle de sangramento. O cirurgião deve conseguir ver a ponta ativa da tesoura, eletrodo ou instrumento sempre que aproxima estrutura crítica. “Dissecação cega” é especialmente arriscada perto de ductos, ureter, vasos e nervos. Tração e contratração tornam planos mais visíveis, mas excesso de tensão pode rasgar vasos frágeis e comprometer perfusão.
+
+A postura também é segurança: mesa em altura adequada, monitor laparoscópico alinhado ao eixo visual, instrumentos organizados e campo sem cabos cruzados reduzem fadiga, movimentos imprevisíveis e lesões ocupacionais. A equipe deve anunciar perda de visão, falha da câmera, cabo energizado e qualquer dificuldade de contar materiais sem receio de interromper o procedimento.
+
+## 8. Preparo pré-operatório e lista de verificação: sequência que modifica eventos
+
+### 8.1 Avaliação proporcional ao risco
+
+Anamnese inclui história de reações anestésicas e alergias, sangramentos, anticoagulantes/antiagregantes, cirurgias prévias, tabagismo, doença cardíaca, respiratória, renal e hepática, apneia do sono, gravidez quando pertinente e possibilidade de dificuldade de via aérea. Exames complementares não são “pacote universal”: devem responder perguntas que possam modificar preparo ou estratégia. ECG e radiografia de tórax em pessoa jovem, assintomática e de baixo risco não são automaticamente úteis.
+
+Estratificação anestésica é atribuição compartilhada com equipe apropriada. A classificação ASA descreve condição sistêmica, mas **não é cálculo isolado de mortalidade** nem dispensa avaliar porte/procedimento e urgência. Capacidade funcional e risco cardiovascular devem ser interpretados segundo diretrizes perioperatórias vigentes; não estabelecer que todo paciente com menos de quatro METs está proibido de operar, como sugerem alguns resumos históricos de cursinho. O estado nutricional, fragilidade, glicemia e função renal devem ser observados porque modificam cicatrização e tolerância.
+
+### 8.2 Três pausas da OMS
+
+O checklist de cirurgia segura tem três momentos: **Sign In**, antes da indução anestésica; **Time Out**, imediatamente antes da incisão; e **Sign Out**, antes da saída da sala. É um dispositivo de comunicação coletiva, não uma planilha burocrática preenchida retrospectivamente.
+
+| Momento | Pergunta de segurança | Exemplos de checagem | Erro que ajuda a prevenir |
+|---|---|---|---|
+| Sign In | O paciente e o plano estão corretos? | identidade, procedimento/local/lateralidade, consentimento, alergias, equipamento anestésico, oxímetro, via aérea difícil e risco hemorrágico | paciente ou sítio errado, risco não comunicado |
+| Time Out | Todos concordam antes de iniciar? | nomes/papéis, operação e lado, imagens indispensáveis, esterilidade, eventos críticos e antibiótico profilático quando indicado | início com preparo incompleto |
+| Sign Out | O que precisa estar seguro antes de sair? | procedimento realizado, contagens, identificação de peças, falhas de equipamento, plano de recuperação | corpo estranho retido, espécime errado, falha na passagem de cuidados |
+
+A verificação da lateralidade não é dispensada porque a incisão é “obviamente do lado certo”. Identificadores devem ser conferidos com documentação e paciente quando possível; marcação tem regras institucionais. Em cirurgia de múltiplos níveis ou dedos, contar/verificar estruturas antes de preparar pode ser crucial. Equipe capaz de identificar divergência deve poder interromper processo para resolução.
+
+### 8.3 Briefing e comunicação em alça fechada
+
+O briefing antecipa momentos críticos, tempo estimado, sangramento, necessidade de reserva de sangue, implantes, conversão de via e posição. Comunicação em alça fechada exige que quem recebe uma ordem a repita e comunique conclusão. Durante intercorrência, comandos genéricos (“alguém pega a pinça”) aumentam conflito; atribuir responsabilidade específica reduz ambiguidades.
+
+O dever de conferir é compartilhado. Não se deve constranger integrante da equipe que identifica contagem incorreta ou problema de esterilização. Uma cultura de segurança reconhece que falhas decorrem também de sistemas — agendamento, reposição de instrumentais, treinamento e pressão por produtividade —, não apenas de falta de atenção individual.
+
+## 9. Infecção do sítio cirúrgico: da fisiopatologia à prevenção em todas as fases
+
+### 9.1 Por que ocorre uma infecção
+
+A infecção de sítio cirúrgico (ISC) resulta de interação entre microrganismos, inóculo, virulência, defesa do hospedeiro, perfusão tecidual, necrose, corpo estranho e condições do procedimento. O mesmo número de bactérias que um tecido vascularizado consegue controlar pode provocar infecção em área desvitalizada com hematoma. Material protético altera o ambiente por oferecer superfície para adesão/biofilme; a prevenção ganha importância adicional.
+
+As ISCs são classificadas em **incisional superficial**, **incisional profunda** e **órgão/espaço** conforme tecidos acometidos e definições da vigilância. Essa classificação tem impacto em investigação e tratamento: supuração superficial limitada pode requerer drenagem local e avaliação, enquanto abscesso intraperitoneal ou coleção profunda exige controle de foco potencialmente cirúrgico/radiológico e avaliação sistêmica. Usar os critérios oficiais de vigilância vigentes para classificação epidemiológica, sem presumir que rubor discreto no segundo dia prove infecção.
+
+### 9.2 Classes de ferida operatória
+
+| Classe | Característica | Exemplo conceitual | Implicação |
+|---|---|---|---|
+| Limpa | sem infecção ou inflamação e sem entrada controlada em tratos colonizados | cirurgia eletiva em pele íntegra, sem abertura de víscera | profilaxia varia por procedimento e implante |
+| Limpa-contaminada | entrada controlada em tratos respiratório, digestivo, genital ou urinário sem contaminação incomum | cirurgia gastrointestinal eletiva sem extravasamento significativo | geralmente considerar profilaxia direcionada |
+| Contaminada | ferida traumática recente, falha maior de técnica estéril ou extravasamento importante | derramamento gastrointestinal intraoperatório | avaliar profilaxia vs tratamento e controle de fonte |
+| Suja/infectada | infecção estabelecida, víscera perfurada ou tecido necrótico infectado | peritonite fecal por perfuração | requer tratamento de infecção e controle do foco |
+
+A classe não determina antibiótico sozinha: importa flora provável, local, duração, alergias, função renal e resistência do hospital. Em ferida suja, o antibiótico é **terapêutico**, ainda que a cirurgia também tenha medidas de prevenção. O papel do procedimento é remover tecido desvitalizado e controlar fonte; antimicrobiano isolado não elimina pus de coleção inacessível.
+
+### 9.3 Preparo da pele e dos pelos
+
+Quando clinicamente possível, orientar banho pré-operatório; higiene reduz sujeira e carga microbiana, mas não torna a pele estéril. **Não realizar tricotomia rotineira**; se pelos interferem no campo ou fixação, usar aparador elétrico próximo do momento da cirurgia, evitando lâmina que provoca microabrasões. Antissepsia da pele íntegra frequentemente favorece soluções alcoólicas de clorexidina conforme OMS/Anvisa, observando contraindicações de mucosas, olhos, ouvidos, neonatos, alergias e risco de ignição. O tempo de secagem do álcool é fundamental antes da eletrocirurgia; incêndio em centro cirúrgico é evento prevenível.
+
+Antissepsia das mãos envolve técnica e produto adequados, seguindo recomendações de controle de infecção, independentemente do uso de luvas. Luvas podem perfurar sem serem percebidas; em determinadas operações a técnica de dupla luva reduz exposição da equipe. Troca de luvas e medidas específicas seguem avaliação de contaminação e normas locais.
+
+### 9.4 Preparo fisiológico e antibioticoprofilaxia
+
+Normotermia, perfusão e glicemia controladas conforme necessidade ajudam resistência do tecido. Hipotermia causa vasoconstrição, aumenta risco de sangramento e pode prejudicar cicatrização. Hiperglicemia significativa se associa a complicações, mas controles excessivamente estritos aumentam risco de hipoglicemia. Não prescrever oxigênio em concentrações máximas por rotina independentemente do estado ventilatório: ajustes cabem à anestesia e fisiologia do paciente.
+
+A profilaxia antimicrobiana, **quando indicada**, visa concentração tecidual adequada no momento da contaminação potencial. O marco operacional clássico é administrar medicamento em tempo adequado antes da incisão, muitas vezes até 60 minutos para agentes com infusão breve, enquanto alguns fármacos exigem início mais precoce pelo tempo de infusão; considerar torniquete e meia-vida. Cirurgia prolongada e perda sanguínea expressiva podem justificar redose intraoperatória de acordo com fármaco e protocolo. **A presença de dreno não é motivo para manter antibiótico profilático indefinidamente**. Protocolos atuais da Anvisa, OMS e NICE orientam não prolongar profilaxia rotineiramente após a operação apenas para “proteger a ferida”.
+
+**Exceções e ressalvas:** alergia à cefalosporina não deve ser presumida sem história, pois a classificação de reação modifica alternativas; escolha de vancomicina não é universal nem isenta de efeitos adversos; microbiologia local e colonização de risco podem alterar esquema. Não publicar tabela de doses de antibióticos específicos nesta aula sem validação por cirurgia, anestesia e CCIH para cada procedimento.
+
+### 9.5 O que não funciona como substituto do básico
+
+Desinfecção das superfícies, esterilização do instrumental e aderência à higiene das mãos são medidas estruturais. Não existe curativo caro, sutura com revestimento especial ou dose pós-operatória “extra” de antibiótico que compense entrada de material contaminado, corpo estranho retido ou tecido desvitalizado. Sutura recoberta por triclosana pode ter indicações e benefícios em determinados contextos, mas não elimina a necessidade de planejamento. Produtos antissépticos aplicados dentro da ferida não devem ser recomendados universalmente; algumas diretrizes limitam essa prática a cenários específicos ou pesquisa.
+
+## 10. Instrumentais e manipulação: reconhecer pelo que fazem e pelo risco que criam
+
+### 10.1 Famílias funcionais
+
+**Diérese:** bisturi, tesouras de Metzenbaum (dissecção delicada) e Mayo (tecidos mais densos, usos gerais apropriados). **Preensão:** anatômica atraumática, denteadas para tecido de maior resistência e pinças de órgãos específicas. **Hemostasia:** mosquito, Kelly, Crile, Rochester e dispositivos de energia/clipes, conforme calibre e situação. **Afastamento:** afastadores manuais e autoestáticos para exposição, com reavaliação da pressão exercida. **Síntese:** porta-agulhas, pinças de apoio e tesoura de fios. **Aspiração:** sistemas que retiram fluidos sem tracionar inadvertidamente tecidos frágeis.
+
+Instrumento deve ser escolhido por **função e tecido**, não pelo nome sozinho. Um clamp hemostático que esmaga o tecido pode ser útil em vaso a ligar e inadequado em nervo, alça intestinal ou ureter. Pinças tipo Babcock são usadas quando se quer preensão relativamente atraumática de estruturas tubulares, desde que aplicadas com pressão apropriada; o instrumento “atraumático” ainda pode lesar se houver força excessiva.
+
+### 10.2 Segurança com lâmina e objetos perfurocortantes
+
+A montagem e troca de lâminas devem seguir técnica institucional de não contato direto com lâmina ativa, preferindo instrumentos adequados. Passagem de lâmina/agula entre profissionais envolve área neutra ou comunicação segura, evitando transferência mão-a-mão sem aviso. O descarte é imediato em recipiente apropriado. Em acidente perfurocortante, agir conforme protocolo ocupacional e profilaxia pós-exposição, sem ocultar ocorrência.
+
+### 10.3 Passagem de instrumental e antecipação de etapas
+
+O instrumentador precisa saber o que está sendo tratado, a sequência provável e riscos: não basta entregar pinça que foi pedida se há falha de esterilidade, incompatibilidade ou objeto incompleto. Todos podem sinalizar problemas. Antes de instrumentação, confirmar integridade, esterilização, indicadores, peças removíveis, cabos e dispositivos de energia. Materiais contados — gazes, compressas, lâminas, agulhas e instrumentos — exigem fluxo próprio de registro e reconciliação.
+
+## 11. Diérese e dissecção: separar tecidos sem perder sua viabilidade
+
+### 11.1 Dissecção cortante, romba e combinada
+
+A dissecação cortante permite controlar direção e profundidade ao seccionar fibras aderidas, especialmente perto de estruturas importantes. A romba utiliza compressão/dilatação cuidadosa de planos naturais. Ambas podem ser perigosas se utilizadas fora de sua indicação: romper tecido inflamado com dedo pode avulsionar vasos e romper víscera; usar tesoura cortante “às cegas” dentro de uma cavidade pode perfurar estrutura não identificada.
+
+**Princípio de segurança:** toda progressão deve ter exposição suficiente, identificação de limites, tração controlada e hemostasia. Em fibrose aderencial, é preferível avançar por pequenos passos reconhecendo a relação entre planos do que forçar um único movimento. O tempo gasto em exposição evita lesões de maior custo.
+
+### 11.2 Reconhecer a textura dos tecidos
+
+Pele possui epiderme, derme e tecido subcutâneo com resistências diferentes; cortar gordura não revela obrigatoriamente fáscia de modo uniforme. A aponeurose costuma apresentar fibras firmes e estrutura resistente; vasos podem estar incorporados no plano, por isso a hemostasia precede seção. O músculo é vascularizado e deve ser respeitado quanto a direção de fibras, inervação e circulação; desinserção ampla pode gerar perda funcional. O peritônio pode aderir a alças em reoperação, e sua abertura exige inspeção/segurança proporcional ao risco.
+
+### 11.3 Lesões inadvertidas
+
+Lesão de alça intestinal, ureter, ducto biliar e vasos pode ser imediata ou reconhecida tardiamente. O objetivo didático é reconhecer quando se perde um plano seguro, quais sinais levantam suspeita de lesão e qual suporte especializado deve ser acionado. Lesão térmica é particularmente traiçoeira porque a necrose pode se manifestar após período de latência. Uma estrutura intacta na inspeção superficial após uso de energia não garante ausência de dano profundo; proximidade, tempo de ativação e geometria da energia importam.
+
+Em qualquer lesão suspeita, comunicar à equipe, interromper progressão desnecessária, controlar sangramento/contaminação, examinar extensão e decidir reparo ou conversão conforme competência e recursos. Omitir no relatório operatório uma lesão reconhecida prejudica segurança pós-operatória.
+
+## 12. Hemostasia: da compressão à decisão de controle definitivo
+
+### 12.1 Hemostasia fisiológica e mecânica
+
+Hemostasia fisiológica combina resposta vascular, adesão/ativação plaquetária, coagulação e fibrinólise. Operativamente, controla-se sangramento por **compressão direta**, exposição, ligadura/sutura, clipes, energia apropriada ou agentes tópicos em contextos selecionados. O método depende de vaso, pressão de fluxo, localização e função da estrutura. Compressão é medida temporizadora excelente, mas não substitui reparo em sangramento arterial de grande calibre.
+
+**Armadilha:** coagular repetidamente sangramento difuso de superfície sem identificar causa pode produzir necrose, aumentar perda sanguínea e não tratar coagulopatia sistêmica. Em hemorragia difusa persistente, avaliar hipotermia, acidose, trombocitopenia, anticoagulantes, consumo de fatores e fibrinólise, paralelamente ao controle cirúrgico.
+
+### 12.2 Ligações e controle vascular
+
+Pinçamento de vaso a ser seccionado deve ser feito sob visualização, identificando tecido incluído no instrumento. Dispositivos de energia têm limites para calibre vascular e proximidade de estruturas; respeitar especificações do fabricante, checagem da integridade do selo e contexto hemodinâmico. Vasos de grande calibre podem demandar sutura vascular, reconstrução ou abordagem especializada, não mera coagulação.
+
+Em sangramento pulsátil próximo a nervo, ureter ou ducto, **não fechar cegamente uma pinça em toda a área**. Comprimir, aspirar, ampliar exposição e isolar fonte com proteção das estruturas circundantes é mais seguro. Evitar prolongar hemorragia apenas para “terminar videolaparoscopia” se há necessidade de converter para acesso aberto.
+
+### 12.3 Energia monopolar, bipolar e selagem vascular
+
+No sistema monopolar, corrente elétrica atravessa tecido e retorna por eletrodo dispersivo conforme equipamento; posicionamento e integridade do circuito importam. Na bipolar convencional, energia circula entre as pontas do instrumento no tecido apreendido, reduzindo dispersão em determinados contextos, mas **não zera lesão térmica adjacente**. Dispositivos de ultrassom geram efeito mecânico/térmico e também têm risco de lesão colateral por aquecimento residual. A equipe deve conhecer modo de ativação, potência, alarmes, compatibilidade, limites de vaso e necessidade de limpar ponta.
+
+Riscos incluem queimaduras, incêndio em ambiente enriquecido de oxigênio/alcohol não evaporado, falha de isolamento e dano tardio a vísceras. Técnica segura: ativar sob visão adequada, evitar energia desnecessária, não tocar tecido nobre com ponta quente, inspecionar adesões e reconhecer mau funcionamento. “Menos sangramento durante a dissecção” não prova ausência de dano térmico.
+
+## 13. Fios, agulhas e padrões de sutura: escolha orientada por tecido e tensão
+
+### 13.1 O objetivo real da síntese
+
+Síntese aproxima tecidos viáveis, favorece cicatrização e restabelece barreiras/função. Busca **coaptação sem estrangulamento**, distribuição adequada de tensão, alinhamento de planos e mínima reação a corpo estranho necessária. Fechamento em múltiplos planos é útil quando cada plano possui função específica, mas suturar gordura de forma excessiva pode criar necrose e novos espaços mortos. É preciso identificar o plano de resistência principal e proteger circulação.
+
+A cicatriz final é influenciada por vascularização, tensão, contaminação, genética, local, radioterapia, estado nutricional e doenças metabólicas, não apenas pela destreza em produzir pontos simétricos.
+
+### 13.2 Absorvível, não absorvível, mono e multifilamentar
+
+| Característica | Vantagem relativa | Limitação | Pergunta clínica |
+|---|---|---|---|
+| Absorvível | não requer retirada; perda de resistência programada | pode perder resistência antes de cicatrização de tecido lento | quanto tempo o tecido precisa de sustentação? |
+| Não absorvível | pode manter resistência prolongada | corpo estranho persistente; retirada cutânea ou reação tardia | existe indicação de sustentação durável? |
+| Monofilamentar | menor capilaridade e arrasto por tecido em geral | memória elástica/nós que requerem técnica adequada | risco de contaminação e necessidade de baixo arrasto? |
+| Multifilamentar | manuseio e segurança de nó frequentemente favoráveis | maior capilaridade e possibilidade de abrigar microrganismos | há contaminação relevante? |
+| Calibre fino | menor trauma e melhor adequação a tecido delicado | menor resistência mecânica | qual tensão real do plano? |
+| Calibre grosso | suporta forças maiores em situações adequadas | maior corpo estranho e trauma | há alternativa de redistribuir tensão? |
+
+Não tratar “Vicryl, PDS, Nylon e Prolene” como sinônimos: composição, tempo de absorção, perfil de resistência e comportamento do nó diferem. O mesmo fio pode ser adequado na derme profunda e inadequado para fechamento sob contaminação ou em mucosa específica, dependendo de tensão/tempo de sustentação. Confirmar embalagem, calibre e disponibilidade institucional.
+
+### 13.3 Agulhas e segurança de passagem
+
+Agulhas cortantes são usadas quando o tecido resistente exige penetração em pele; variantes reversas podem modificar padrão de corte/risco de rasgo. Agulhas cilíndricas/taper separam fibras de tecidos mais delicados sem corte de aresta pronunciada, como determinados tecidos profundos. Há desenhos especiais para vasos e estruturas específicas. A escolha é individualizada por tecido, espessura e finalidade; agulha muito grossa pode abrir trauma desnecessário em víscera delicada.
+
+O porta-agulhas deve apreender a agulha sem danificá-la e permitir rotação controlada. Pressão excessiva pode entortar/quebrar o instrumento ou agulha. Contagens e descarte de agulhas são essenciais; fragmento de agulha perdido é incidente que exige protocolo institucional.
+
+### 13.4 Padrões e indicações
+
+**Ponto simples interrompido:** aproxima bordas, permite ajuste de tensão ponto a ponto e pode facilitar retirada seletiva quando infecção/hematoma localizado. **Contínuo:** distribui fio ao longo do trajeto e pode ser eficiente em planos específicos, mas falha do nó/segmento pode comprometer extensão maior. **Ponto em U/colchoeiro:** ajuda eversão ou controle de tensão em casos selecionados, com risco de estrangular borda se apertado em excesso. **Intradérmico/subcuticular:** útil quando tensão é adequadamente aliviada pelos planos profundos e coaptação cutânea favorece cicatriz discreta. **Suturas aponeuróticas:** exigem tecido de sustentação adequado, distribuição de tensão e escolha de técnica baseada em procedimento, evitando confiar apenas na pele.
+
+Em face, mãos, pé, articulações e regiões expostas há prioridades diferentes: estética, mobilidade, risco de lesão de tendão/vasos/nervos e força de tração. O conteúdo desta aula orienta seleção, não substitui treinamento manual supervisionado.
+
+### 13.5 Nós e falha mecânica
+
+O nó precisa manter aproximação sem esmagamento, com estabilidade conforme material e forças. Monofilamentos podem ter “memória” que exige cuidado; número e configuração de lançadas dependem de material e técnica. Um nó frouxo pode permitir deiscência, enquanto um nó excessivamente apertado causa isquemia. Aumento indiscriminado do volume do nó produz massa de corpo estranho, especialmente no subcutâneo.
+
+**Pulo do Gato:** pele que fica pálida depois de suturada pode indicar tensão e comprometimento microcirculatório. Adicionar mais pontos superficiais não corrige fechamento profundo sob tração ou edema que estrangula bordas. A conduta é reavaliar distribuição de tensão, vascularização e necessidade de outra estratégia de reconstrução.
+
+## 14. Cicatrização: fases, riscos e diferença entre força e aparência
+
+### 14.1 Fases sobrepostas
+
+**Hemostasia:** vasoconstrição inicial e tampão plaquetário, proporcionando matriz para reparo. **Inflamação:** neutrófilos/macrófagos participam de limpeza de detritos e sinalização; inflamação excessiva e infecção prejudicam progressão. **Proliferação:** fibroblastos depositam matriz, ocorre angiogênese, granulação e reepitelização. **Remodelamento:** colágeno se reorganiza por meses; a cicatriz nunca retoma perfeitamente toda a arquitetura original.
+
+As fases se sobrepõem; não existe dia fixo em que uma “desliga” e outra “liga”. Presença de tecido de granulação pode ser sinal de reparo, mas hipergranulação ou secreção purulenta precisam interpretação.
+
+### 14.2 Resistência mecânica se recupera lentamente
+
+A ferida pode parecer fechada externamente e ainda ter baixa resistência à tração. Por isso, deiscência pode ocorrer depois de alguns dias, sobretudo em cirurgia abdominal, especialmente com tosse intensa, aumento de pressão intra-abdominal, infecção ou desnutrição. Tensão de sutura, técnica de fechamento aponeurótico e capacidade biológica do tecido são tão importantes quanto aspecto inicial.
+
+### 14.3 Fatores locais e sistêmicos
+
+Locais: hematoma, seroma, espaço morto, isquemia, corpo estranho, necrose, infecção, contaminação e tensão. Sistêmicos: diabetes descompensado, tabagismo, fragilidade, anemia importante, desnutrição, uso de alguns imunossupressores, radioterapia e perfusão inadequada. É útil separar fatores modificáveis no pré-operatório eletivo de fatores que precisam ser manejados em emergência sem possibilidade de otimização longa.
+
+Cicatriz hipertrófica permanece dentro da ferida original, enquanto queloide tende a ultrapassar seus limites; ambas envolvem resposta fibroproliferativa, mas apresentam evolução e opções terapêuticas diferentes. Local anatômico e história familiar influenciam risco. Uma escolha de acesso com menor tensão pode reduzir risco, mas não existe “fio que impede queloide” universalmente.
+
+## 15. Fechamento de feridas e escolha do tempo: primário, tardio ou secundário
+
+### 15.1 A avaliação precede a escolha do fio
+
+Antes de fechar, avaliar mecanismo, tempo desde o trauma, perfusão, viabilidade, contaminação, presença de corpo estranho e lesões profundas (vasos, nervos, tendões, cápsulas, cavidades). Uma laceração aparentemente superficial sobre dedo pode ocultar lesão tendínea; a avaliação funcional e neurovascular precisa anteceder anestesia local/fechamento quando possível, e suspeita significativa exige encaminhamento adequado. A idade cronológica da ferida isoladamente não define todo risco de infecção: local, mecanismo, paciente e irrigação/desbridamento importam.
+
+**Fechamento primário** aproxima bordas viáveis e limpas com risco controlado. **Fechamento primário tardio** pode ser escolhido quando há risco relevante de infecção/contaminação e se deseja reavaliar tecido após limpeza e controle. **Cicatrização por segunda intenção** é apropriada em algumas perdas de tecido e feridas que não devem ser fechadas sob tensão ou contaminação importante, considerando necessidade de curativo/seguimento. Cobertura por enxerto/retalho é opção quando não há possibilidade de aproximação segura e existem estruturas profundas expostas ou problemas de perfusão.
+
+### 15.2 Irrigação e desbridamento
+
+Irrigar remove material estranho e reduz carga contaminante. Volume/pressão devem ser proporcionais à ferida, anatomia e risco de disseminar detritos; não há um valor universal aplicável a todos os ferimentos. Desbridamento remove tecido inviável, mas precisa preservar tecido perfundido importante, especialmente em dedos, face e regiões com suprimento limítrofe. Não confundir pele escurecida por hematoma com necrose definitiva sem avaliação; evolução pode requerer reexame.
+
+Se houver pus/coleção, drenagem e controle de foco costumam ser centrais. Fechar sob pressão uma ferida infectada pode aumentar abscesso. Em ferimento por mordedura, considerar localização, espécie, profundidade, risco de raiva/tétano e profilaxia específica, além de decisão de fechamento. Lesão penetrante articular/vascular, disfunção neurológica, infecção necrosante e perda extensa de tecido exigem especialista e estruturas adequadas.
+
+### 15.3 Espaço morto e drenagem
+
+Espaço morto é cavidade potencial entre planos que pode acumular sangue/seroma. A redução pela técnica de aproximação e hemostasia pode ser preferível a instalar um dreno desnecessariamente. Dreno pode oferecer saída a fluidos em pacientes/procedimentos selecionados, mas representa corpo estranho e pode obstruir, deslocar ou tornar-se via de contaminação. **Dreno não transforma fechamento inadequado em operação segura**; não substitui hemostasia e não justifica antibiótico até sua retirada.
+
+Drenos abertos e fechados diferem no sistema de coleta e controle da contaminação; dreno aspirativo não deve ficar sob sucção maior que a projetada pelo fabricante. Documentar localização, finalidade, débito, aspecto, permeabilidade e critério de retirada. Uma coleção suspeita no pós-operatório deve ser avaliada mesmo que exista dreno aparentemente funcionando.
+
+
+## 16. Integração clínica e cenários especiais — em aprofundamento
+
+Os capítulos seguintes serão ocupados por intercorrências técnicas, cirurgias minimamente invasivas, casos extensos, questões comentadas, referências e matriz editorial; a etapa anterior do manuscrito não foi suprimida e seu conteúdo foi aprofundado nos capítulos 7–15.
+
+## Lista de lacunas históricas (revisada)
 Anatomia aplicada e planejamento; cirurgia segura; assepsia/antissepsia; instrumentais; diérese; dissecação; hemostasia mecânica/energética; fios e agulhas; padrões de sutura e nós; drenagem; técnicas minimamente invasivas; lesões inadvertidas; cicatrização; complicações; casos; questões comentadas; imagens; referências.
 
 ## Referências iniciais
