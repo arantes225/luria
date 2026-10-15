@@ -1154,6 +1154,8 @@ const PAGE_INFO = {
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
   aprender: { title: "Aprender", eyebrow: "Central de aprendizagem", helper: "Escolha como você quer aprender agora." },
   consolidar: { title: "Consolidar", eyebrow: "Fixação e prática", helper: "Revise, pratique e transforme conteúdo em conhecimento utilizável." },
+  jogos: { title: "Jogos", eyebrow: "Aprender jogando", helper: "Explore desafios e treine medicina de um jeito diferente." },
+  "study-rats": { title: "Study Rats", eyebrow: "Jogos", helper: "Uma corrida médica pelo conhecimento." },
   caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
   professor_alex: { title: "Professor Alex", eyebrow: "Aula guiada", helper: "Aprenda, tire dúvidas e transforme seu material em uma aula." },
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
@@ -1323,6 +1325,7 @@ const LURIA_ICON_PATHS = {
   book: '<path d="M12 6c-2.7-2-5.7-2.5-9-2v15c3.3-.5 6.3 0 9 2 2.7-2 5.7-2.5 9-2V4c-3.3-.5-6.3 0-9 2Zm0 0v15"/>',
   file: '<path d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 0v5h5M8 12h8M8 16h8"/>',
   cards: '<rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/>',
+  games: '<rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.3" fill="currentColor" stroke="none"/><circle cx="16" cy="8" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1.3" fill="currentColor" stroke="none"/>',
   notebook: '<rect x="6" y="2" width="15" height="20" rx="2"/><path d="M10 7h7m-7 4h7m-7 4h5M3 6h5M3 11h5M3 16h5"/>',
   simulation: '<path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/>',
   stethoscope: '<path d="M6 3v7a4 4 0 0 0 8 0V3M4 3h4m4 0h4m-6 11v2a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/>',
@@ -1473,6 +1476,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
 
         <a class="nav-link ${page === "consolidar" ? "active" : ""}" href="/consolidar/">
           <span class="nav-icon">${luriaIcon("cards")}</span><span>Consolidar</span>
+        </a>
+
+        <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
+          <span class="nav-icon">${luriaIcon("games")}</span><span>Jogos</span>
         </a>
 
         <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
