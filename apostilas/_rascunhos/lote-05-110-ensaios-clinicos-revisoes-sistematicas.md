@@ -343,4 +343,375 @@ Analisar diferença de pacientes, gravidade, dose, duração, comparador, adesã
 
 Com poucos estudos, certas aproximações usuais de IC do efeito médio podem ter cobertura inadequada; alternativas como ajustes tipo Hartung–Knapp e análises de sensibilidade podem ser relevantes, conforme contexto e recomendações metodológicas. O aluno não precisa decorar a fórmula do estimador para entender a consequência clínica: **um resultado pooled estreito obtido de três estudos pequenos e heterogêneos não merece confiança automática**.
 
-**PARECER DE PRODUÇÃO PARCIAL:** capítulos 0–17 constituem a base metodológica. Os capítulos seguintes incluirão gráficos, viés de publicação, GRADE, aplicação SUS, exercícios, casos, questões, figuras e auditoria. Não publicar antes da conclusão.
+## 18. Como ler um forest plot e detectar interpretações precipitadas
+
+O forest plot é representação gráfica de estimativas e intervalos de confiança de estudos individuais, e frequentemente um resultado agregado. Em uma comparação binária por RR ou OR, a **linha vertical de ausência de efeito** costuma estar em 1; em diferença de médias ou diferença de riscos, costuma estar em zero. Uma mudança de escala ou definição de evento muda a interpretação de cada lado do gráfico.
+
+**Cada linha:** ponto central para a estimativa, traço horizontal para IC; tamanho de quadrado frequentemente proporcional ao peso. **Diamante final:** ponto agregado e IC da síntese, quando foi considerada adequada. **Pontos que caem dos dois lados da linha** significam efeitos pontuais em direções diferentes; não é correto “tirar média” sem discutir heterogeneidade e diferenças clínicas.
+
+**Exemplo inventado:** três ECRs sobre uma estratégia educativa com RR de readmissão 0,70 (IC 0,50–0,98), 0,90 (0,70–1,15) e 1,08 (0,70–1,66). Se o efeito agregado fosse RR 0,83 com IC 0,70–0,98, não se deve dizer “todos estudos provaram benefício”, porque apenas o primeiro teve intervalo abaixo de 1; o segundo e terceiro incluem benefício e dano. Também não se pode afirmar “efeito 17% absoluto”: a redução relativa estimada seria 17%, com efeito absoluto dependente do risco basal.
+
+### 18.1. Gráfico de floresta com I² alto não manda excluir o estudo discordante
+
+Excluir ensaio por apresentar resultado diferente **após ver que ele “estraga” o agregado** gera risco de seleção. Deve haver motivo metodológico ou clínico justificado antes da análise: população não elegível, mudança substancial no comparador, alto risco de viés, horizonte incompatível ou dados duplicados. Sensibilidade com/sem um estudo pode ajudar a entender fragilidade, desde que todas as escolhas sejam documentadas.
+
+**“O intervalo individual passa por 1” não torna estudo inútil.** Ele informa incerteza. O valor da síntese é integrar estimativas coerentes em pergunta comum, respeitando riscos de viés. A contribuição de um estudo pode ser importante mesmo sem significância isolada.
+
+### 18.2. Resultado combinado estatisticamente significativo, aplicação incerta
+
+Suponha metanálise de dez ensaios de reabilitação hospitalar em centros de alta renda, RR de reinternação 0,82, IC 0,75–0,90. Em municípios brasileiros com estrutura distinta, disponibilidade de profissionais e perfil de risco diverso, talvez o efeito real mude. **Aplicabilidade externa** deve considerar quem implementa, que recursos são necessários e se o comparador do estudo corresponde ao cuidado usual que existe no SUS. Precisão não significa transportabilidade.
+
+## 19. Viés de publicação e resultados faltantes
+
+### 19.1. O problema do estudo invisível
+
+Ensaios com resultados favoráveis podem ser publicados antes e com maior probabilidade que estudos nulos, especialmente se não houver registro ou acesso a relatórios. Há também **viés de relato seletivo dentro de estudo**: protocolo prevê eventos adversos e qualidade de vida, mas artigo relata apenas biomarcadores. O corpo de evidência disponível pode superestimar benefício.
+
+**Redução de risco:** procurar registros, repositórios de resultados, teses, atas, anais relevantes, relatórios regulatórios e estudos em curso; confrontar registro com artigo; justificar exclusões e datas de busca. Não presumir que “buscamos MEDLINE e pronto” seja estratégia abrangente. Uma revisão com 5 ensaios publicados e nenhuma busca por resultados não publicados tem limitação reconhecível, mas não se pode quantificar dano sem análise.
+
+### 19.2. Funnel plot: assimetria não é sinônimo de fraude
+
+O gráfico de funil compara magnitude de efeito e precisão/tamanho, com a expectativa de certa simetria sob premissas. **Assimetria pode refletir viés de publicação, mas também heterogeneidade, diferenças de população, efeito maior em estudos pequenos, qualidade de ensaio e acaso.** Com poucos estudos (por exemplo menos de dez), interpretar assimetria/testes com extrema cautela. O diagnóstico de viés de publicação não é obtido por “achar desenho torto”.
+
+**Egger e outros testes** detectam efeitos de estudos pequenos sob premissas; resultados não demonstram mecanicamente que estudos nulos foram escondidos. Métodos de ajuste (como trim-and-fill) fazem suposições fortes e devem ser apresentados como sensibilidades, não “verdade corrigida”. Declarações de certeza devem incorporar evidência ausente plausível.
+
+### 19.3. Literatura cinzenta não é sinônimo de baixa qualidade
+
+Documentos não publicados em periódicos podem conter protocolos, resultados finais de ensaios, dissertações e informes regulatórios úteis para evitar viés de seleção de resultados. Mas informação de repositórios também exige checar risco de viés, dados completos e duplicação de relatórios. **O objetivo é identificar a evidência, não premiar um formato de arquivo.**
+
+## 20. GRADE: o que significa ter confiança na estimativa?
+
+A **certeza da evidência** representa quão confiante se pode estar de que o efeito estimado corresponde de maneira suficientemente próxima ao efeito verdadeiro para o desfecho e decisão. A Cochrane descreve quatro níveis: **alta, moderada, baixa e muito baixa**. O sistema Core GRADE 2025 refina e esclarece o julgamento; a aula usa a formulação convencional e explicita que fontes e métodos podem evoluir.
+
+**Cinco motivos centrais para rebaixar certeza:**
+
+1. **Risco de viés:** falhas de randomização, perdas, aferição, seletividade.
+2. **Inconsistência:** resultados com direção/magnitude incompatíveis sem explicação convincente.
+3. **Indireção:** população, intervenção, comparador ou desfecho diferem da decisão-alvo.
+4. **Imprecisão:** IC permite benefício importante e dano ou número de informações é insuficiente.
+5. **Viés de publicação/evidência ausente:** resultados disponíveis podem ter sido selecionados.
+
+Evidência de ECR costuma começar em certeza alta na abordagem convencional, mas pode terminar baixa ou muito baixa por falhas graves. Evidência observacional tradicional começa baixa, com possibilidades contextuais de elevar; **Core GRADE 2025 esclarece que certas abordagens de risco de viés para não randomizados requerem explicitar a estrutura escolhida**. Não atribuir certeza alta automaticamente porque são “três ECRs e uma metanálise”.
+
+### 20.1. GRADE se aplica por desfecho e comparação
+
+Uma revisão de medicamento pode ter certeza **alta para melhora de dor** (grande estudo, instrumento validado, pouca perda) e **muito baixa para mortalidade** (raros óbitos, seguimento curto, IC amplo). A pergunta clínica não se encerra com “o artigo é forte”. Para decidir, construir tabela com riscos absolutos, efeito relativo, IC, número de participantes/estudos, certeza e justificativas.
+
+**Exemplo fictício de Summary of Findings:**
+
+| Desfecho (12 meses) | Risco no controle | Efeito relativo | Diferença absoluta estimada | Certeza hipotética |
+|---|---:|---|---|---|
+| Hospitalização | 20 em 100 | RR 0,75 | 5 a menos em 100 | Moderada por indireção |
+| Mortalidade | 4 em 100 | RR 0,90, IC amplo | 0,4 a menos em 100, muito impreciso | Muito baixa por imprecisão/viés |
+| Náusea importante | 3 em 100 | RR 1,8 | 2,4 a mais em 100 | Baixa por poucos eventos |
+
+Esses dados são **hipotéticos**. Mesmo que hospitalização diminua, uma pessoa com alto receio de náusea, baixa capacidade de comparecer ao tratamento ou risco competitivo diferente pode escolher de outra forma. A tabela apresenta informação; a recomendação exige julgamento.
+
+### 20.2. Inconsistência e indireção podem coexistir
+
+Três ensaios de populações muito diferentes podem ter resultados discordantes (inconsistência) e nenhum deles representar o ambulatório brasileiro (indireção). Os domínios são distintos. Não rebaixar duas vezes apenas pelo mesmo problema sem justificativa, mas também não esconder questões separadas porque “o I² foi baixo”.
+
+### 20.3. Imprecisão: atravessar zero é apenas uma parte da história
+
+IC de redução absoluta de -0,5 pp até +8 pp pode incluir pequeno dano e benefício significativo; IC de +0,1 até +0,5 pp pode ser estatisticamente preciso, mas benefício clinicamente modesto. O julgamento de imprecisão depende do limiar de decisão e de que efeitos mudariam a recomendação. **O p não decide sozinho certeza GRADE**.
+
+### 20.4. Certeza da evidência versus força da recomendação
+
+Uma recomendação forte pode depender de riscos de dano, preferências amplamente concordantes e alternativas mesmo quando não há ECR factível em emergência crítica. Uma recomendação condicional pode existir com boa certeza de efeito mas grande variação de valores, custos ou acesso. **Não é correto traduzir “evidência moderada” em “obrigação moderada”** sem discussão de benefícios e danos.
+
+## 21. Metanálise de rede, comparações indiretas e revisões vivas
+
+### 21.1. Quando faltam comparações frente a frente
+
+Metanálise de rede pode estimar A versus C a partir de comparações A versus B e B versus C, e de evidência direta quando disponível. Sua validade depende de **transitividade** (fatores modificadores de efeito semelhantes entre comparações) e de **consistência** entre evidência direta e indireta. A rede não cria ensaio randomizado A versus C onde ele não existiu.
+
+Exemplo: A testado em crianças saudáveis contra placebo, e B testado em idosos graves contra placebo. Comparar A versus B indiretamente pode ser inadequado por diferença de gravidade e idade. Mesmo se a rede produzir ranking de tratamentos, **ranking não prova eficácia clinicamente relevante nem certeza alta**.
+
+### 21.2. Probabilidades de classificação e ranking
+
+Algoritmos podem classificar chance de cada intervenção ser a “melhor” para desfecho. Em rede pequena, com dados imprecisos e muitos nós, um tratamento pode ter alta posição por acaso ou ausência de comparação adequada. **O resultado importante continua sendo efeito absoluto/relativo e certeza**, não apenas o primeiro lugar num ranking SUCRA ou equivalente.
+
+### 21.3. Revisões vivas
+
+Revisão sistemática viva prevê buscas e atualizações frequentes quando evidência surge rapidamente, usando processo transparente de identificação e atualização. A mesma pergunta pode ter conclusão diferente após ensaio grande posterior. É particularmente útil em emergências sanitárias e tecnologia com desenvolvimento rápido; exige governança, versões datadas e capacidade editorial. Uma revisão publicada há cinco anos e nunca atualizada **não é “viva” por ter site que pode ser editado**.
+
+### 21.4. Metanálise de participantes individuais
+
+Síntese de dados de participantes de ECR pode permitir harmonizar desfechos, tratar tempo até evento, avaliar subgrupos com mais robustez e checar qualidade de bases, mas requer acesso, proteção de dados e análise que preserve estrutura dos ensaios. **Juntar todos pacientes num banco e esquecer que foram randomizados dentro de estudos** pode distorcer inferência; usar métodos que respeitem unidades e desenho.
+
+## 22. Estudos de segurança, eventos raros e população excluída do ensaio
+
+O ECR responde melhor quando desfechos podem ser observados com tamanho e duração planejados, mas danos **raros, tardios** e populações excluídas podem escapar. Revisões sistemáticas sobre segurança podem incluir estudos observacionais de boa qualidade e farmacovigilância, avaliados com ferramentas adequadas; isso não torna confundimento irrelevante. Revisões que excluem todos pacientes idosos, gestantes ou pessoas com doença renal do estudo original enfrentam restrição de aplicabilidade.
+
+**Regra dos três, aproximação didática:** se zero eventos são observados entre 100 pessoas expostas, o limite superior aproximado de IC unilateral de 95% para risco de evento raro, sob certas hipóteses, é **3/100 = 3%**, não zero. A regra não substitui métodos exatos nem considera tempo de exposição, dependência ou risco competitivo. Um fármaco pode ter evento de 1/10.000 e nenhum evento em ensaio de 300 participantes.
+
+**Dano e atrito de intervenção:** desfecho “efeitos colaterais leves” pode subestimar descontinuação, hospitalização, incapacidade ou eventos relevantes para o paciente. Quando dois tratamentos têm eficácia parecida, a preferência pode ser determinada por efeitos adversos, facilidade de uso, custos e disponibilidade.
+
+## 23. Do artigo à decisão clínica e ao SUS: efeito absoluto, recursos e equidade
+
+Imaginemos programa de telemonitoramento que reduz visitas não planejadas em grandes centros de pesquisa. Para aplicar em município brasileiro, verificar: há internet/telefone? profissional disponível para responder alertas? custo por pessoa? quem fica excluído por alfabetização digital? há risco de aumentar desigualdades? o “cuidado usual” do ECR corresponde ao local? a tecnologia desloca consultas de grupos que precisam presença física?
+
+**Traduzir resultados em linguagem útil:** “Em 100 pessoas semelhantes às do ensaio acompanhadas por 12 meses, estimamos cinco hospitalizações a menos, com um intervalo que pode incluir redução pequena ou grande, e risco adicional de X quando conhecido.” Esse estilo exige calcular efeito absoluto a partir de risco basal local **sob suposição explícita de transferibilidade da medida relativa**.
+
+**Custo-efetividade:** uma intervenção com eficácia demonstrada pode não ser melhor opção de alocação se custo alto sacrifica alternativas de maior ganho populacional. Avaliação de tecnologia no SUS frequentemente combina evidência com análise econômica, impacto orçamentário e participação social. Não atribuir conclusão da Conitec sem consulta a parecer específico e vigente. **O clínico pode indicar benefício individual e ainda reconhecer necessidade de decisão pública transparente.**
+
+### 23.1. Uma matriz prática de implementação
+
+| Pergunta | ECR/resumo responde sozinho? | O que complementar |
+|---|---|---|
+| A intervenção causa melhora em ambiente do estudo? | Às vezes, após risco de viés | Validade interna e efeito |
+| Qual risco absoluto em minha população? | Nem sempre | Risco basal local e horizonte |
+| Há dano raro/tardio? | Frequentemente não | Farmacovigilância e coortes |
+| É factível no SUS? | Não necessariamente | Estrutura, treinamento, custos |
+| Aumenta desigualdade? | Não necessariamente | Análise por contexto e acesso |
+| Pacientes valorizam desfecho? | Não necessariamente | Preferências e decisão compartilhada |
+
+## 24. Guia de leitura crítica em 12 perguntas práticas
+
+1. **Qual é a decisão clínica concreta?** Se a população do estudo não corresponde ao seu paciente, o artigo pode ser excelente e ainda assim pouco aplicável.
+2. **Quem foi randomizado e quando?** Confirmar que a comparação nasce antes da evolução que define desfecho.
+3. **Como geraram e ocultaram alocação?** “Randomizado” no resumo é insuficiente.
+4. **Quem sabia o tratamento?** Perguntar se isso afeta cointervenção e desfecho subjetivo.
+5. **O controle é pertinente?** Placebo quando existe padrão efetivo pode não responder à decisão.
+6. **O desfecho primário estava predefinido?** Conferir registro e protocolo.
+7. **Quantas pessoas foram perdidas e como analisaram?** Fluxograma é documento clínico-estatístico.
+8. **A diferença é absoluta e clinicamente importante?** Relatar benefício/dano e tempo.
+9. **IC inclui ausência, benefício relevante ou dano?** Não usar p como resposta única.
+10. **Há danos suficientes e tempo de avaliação apropriado?** Raros podem passar invisíveis.
+11. **Se é metanálise, a busca foi reprodutível e estudos compatíveis?** PRISMA não substitui investigação.
+12. **Qual certeza GRADE por desfecho e aplicabilidade local?** Só depois decidir.
+
+**Pulo do Gato:** você não precisa memorizar todos 30 itens CONSORT para notar que o artigo mudou seu desfecho e excluiu 25% das pessoas; é preciso, porém, compreender **por que isso altera a credibilidade** da conclusão. Para escrever uma revisão profissional, as listas completas de relato são obrigatórias e merecem consulta direta.
+
+## 25. Exercícios de raciocínio matemático — quatro contas conferíveis
+
+### Exercício A — risco, redução absoluta e NNT
+
+Ensaio fictício com 1000 pessoas no controle (120 eventos) e 1000 no experimental (80 eventos).  
+Risco controle: 120/1000 = 0,12.  
+Risco experimental: 80/1000 = 0,08.  
+RR = 0,08/0,12 = **0,6667**. RRR = **33,33%**.  
+ARR = 0,12 − 0,08 = **0,04 = 4 pontos percentuais**.  
+NNT = 1/0,04 = **25** pessoas no horizonte observado.
+
+**Leitura:** é correto dizer “redução relativa aproximada de um terço” e “quatro eventos prevenidos por cem pessoas tratadas”, mas é errado dizer “33 pessoas em cada cem terão benefício individual garantido”. O intervalo de confiança não foi calculado neste exemplo; não inferir significância apenas da tabela.
+
+### Exercício B — mesmo RR em dois cenários hipotéticos
+
+Se RR = 0,5 e risco basal é 4%, risco tratado sob hipótese de RR estável = 2%; ARR = 2 pp e NNT = 50. Se risco basal é 40%, tratado = 20%; ARR = 20 pp e NNT = 5. **O mesmo efeito relativo pode gerar benefícios absolutos muito diferentes**. A transposição supõe estabilidade do RR, que deve ser avaliada.
+
+### Exercício C — OR versus RR
+
+Evento em A: 40/100, em B: 20/100.  
+RR de A versus B = 0,4/0,2 = **2,0**.  
+Odds A = 40/60 ≈ 0,6667; odds B = 20/80 = 0,25.  
+OR = 0,6667/0,25 ≈ **2,667**.  
+Não informar “risco 167% maior” usando OR 2,667: isso confunde odds com probabilidade. O risco relativo observado é 2,0 (risco 100% maior), dentro deste exemplo didático.
+
+### Exercício D — margem de não inferioridade
+
+A diferença de cura foi definida como A − B, e a margem como -0,05. Se IC 95% da diferença vai de -0,02 a +0,03, todo o intervalo fica acima da margem negativa, satisfazendo critério estatístico de não inferioridade, se desenho e análise são válidos. Se IC vai de -0,08 a +0,02, não inferioridade não foi demonstrada. **Não inferioridade estatística sem justificativa clínica da margem não garante que A seja escolha adequada.**
+
+## 26. Casos clínico-metodológicos comentados
+
+### Caso 1 — Um ensaio randomizado com alocação previsível
+
+**Apresentação:** um estudo fictício compara duas estratégias de antibioticoterapia, com 400 participantes e mortalidade aos 30 dias como desfecho. Autores relatam “randomização por alternância de dias pares e ímpares”. Recrutadores conheciam próximo braço. **Hipótese de problema:** sequência previsível e falha de ocultação, com possibilidade de seleção de pacientes. **Dados relevantes:** os mais graves foram incluídos preferencialmente no grupo padrão porque médicos aguardaram um dia. **Raciocínio:** ter números aproximadamente iguais em braços não equivale a geração/ocultação aleatória; diferenças de gravidade podem gerar vantagem aparente. **Exames metodológicos:** consultar protocolo e registro; reconstruir sequência, recrutamento, elegibilidade e dados basais. **Interpretação:** alto risco de viés no processo de randomização para os resultados, a depender dos detalhes. **Conduta para leitor:** não tratar estimativa como equivalência causal automática, exigir análise crítica e considerar cautela no GRADE. **Por que importa:** o erro ocorre antes de qualquer análise estatística.
+
+### Caso 2 — O p positivo que não respondeu ao paciente
+
+**Apresentação:** ECR fictício em grande população mostra redução de biomarcador inflamatório de 2 unidades, p<0,001; eventos como internação e morte não foram adequadamente avaliados. **Hipótese:** eficácia demonstrada em desfecho substituto, não prova de benefício clínico. **Dados relevantes:** custo elevado e eventos adversos maiores que placebo em estudo curto. **Raciocínio:** a randomização pode ser válida para biomarcador, mas causalidade para mortalidade requer estimativa própria e validade do substituto. **Exames metodológicos:** conferir MCID, diferença absoluta, estudo de validação do biomarcador e horizonte de danos. **Interpretação:** p pequeno não supera inadequação do desfecho para a decisão. **Conduta:** evitar adotar como estratégia clínica apenas pelo surrogate; aguardar evidência centrada no paciente ou avaliar contexto de risco. **Por que importa:** a estatística responde à pergunta medida, não à pergunta desejada.
+
+### Caso 3 — Não inferioridade erroneamente proclamada
+
+**Apresentação:** tratamento oral A comparado ao padrão B em doença estável, com diferença de cura A−B = -2 pp e IC de -8 a +3 pp; margem de não inferioridade prévia de -5 pp. Autores escrevem “resultados equivalentes, p=0,2”. **Hipótese:** não inferioridade não demonstrada. **Dados:** IC inclui perda de oito pontos percentuais, pior que a margem. **Raciocínio:** um p de superioridade não significativo não testa não inferioridade; o limite inferior deve permanecer acima de -5 pp. **Avaliação:** conferir margem escolhida antes de dados, aderência e ITT/per-protocol. **Conduta editorial:** classificar conclusão como excessiva, discutir incerteza e eventuais ganhos de custo/segurança separadamente. **Por que importa:** paciente pode perder eficácia além do aceitável apesar de ausência de diferença estatisticamente significativa.
+
+### Caso 4 — Perdas seletivas escondidas
+
+**Apresentação:** estudo de intervenção para dor crônica randomizou 150 por braço. No experimental, 45 abandonaram por efeitos adversos e tiveram piora; autores relatam apenas melhora média nos 105 que completaram. No comparador, cinco saíram. **Hipótese:** viés por faltantes e seleção pós-randomização. **Dados relevantes:** fluxograma mostra taxas e motivos assimétricos de abandono, embora resumo diga “análise ITT”. **Raciocínio:** analisar só completadores contraria significado clássico de ITT; imputar último valor sem justificativa também não resolve. **Exames:** registro de desfechos, padrões de faltantes, estratégias de imputação e análises de sensibilidade. **Interpretação:** melhoria aparente pode não persistir quando faltantes são tratados adequadamente. **Conduta do leitor:** avaliar RoB 2, não confiar no rótulo ITT e exigir denominadores por braço. **Por que importa:** a proteção do sorteio se perde quando o seguimento é reconstruído pela resposta ao tratamento.
+
+### Caso 5 — A metanálise precisa, mas clinicamente incompatível
+
+**Apresentação:** revisão fictícia junta oito estudos de “tratamento de pneumonia”: prevenção em adultos saudáveis, terapia pediátrica de resgate, profilaxia em transplantados e cuidado usual em idosos, com doses e desfechos variados. Forest plot apresenta efeito pooled significativo. **Hipótese:** heterogeneidade clínica e indireção invalidam pergunta global. **Dados relevantes:** diferentes PICO e tempos de seguimento, com I² de 20%. **Raciocínio:** I² baixo não prova que intervenções e populações são combináveis; compatibilidade clínica precede estatística. **Avaliação:** reconstruir PICOs, separar perguntas e indicar quando síntese narrativa é mais honesta. **Interpretação:** pooled estatístico não demonstra benefício universal. **Conduta:** não usar agregação como orientação terapêutica única, propor sínteses separadas. **Por que importa:** coerência clínica não é produzida por software.
+
+### Caso 6 — Revisão PRISMA “perfeita” com busca seletiva
+
+**Apresentação:** revisão de medicamento novo tem fluxograma completo e checklist PRISMA, mas só buscou um banco, ignorou registro prospectivo e relatórios não publicados. Quatro estudos publicados foram favoráveis. **Hipótese:** risco de evidência ausente/viés de publicação e falha metodológica da revisão. **Dados relevantes:** registros mencionam ensaios concluídos sem artigo e com desfecho negativo. **Raciocínio:** PRISMA orienta relato, não corrige ausência de busca; AMSTAR 2 avalia fraquezas metodológicas e GRADE discute confiança na evidência. **Avaliação:** ampliar bases, registros, literatura cinzenta e consultar relatórios. **Interpretação:** síntese provavelmente superestima benefício. **Conduta:** reportar limitação crítica, não converter em recomendação forte. **Por que importa:** as fontes invisíveis podem mudar o resultado.
+
+### Caso 7 — Subgrupo que parecia milagroso
+
+**Apresentação:** ECR com efeito geral neutro publicou 18 análises de subgrupo; “homens menores de 50 anos” tiveram p=0,03 e mulheres p=0,09. Não havia hipótese antecipada. **Hipótese:** descoberta espúria por múltiplas comparações e confusão de p-valores. **Raciocínio:** significância em um grupo e ausência em outro não equivalem à interação significativa; com muitas buscas surgem padrões aleatórios. **Avaliação:** teste formal de interação, IC das diferenças, pré-especificação, plausibilidade e replicação. **Interpretação:** resultado exploratório, não prova de eficácia restrita. **Conduta:** não restringir terapêutica por esse achado isolado. **Por que importa:** subgrupos podem transformar estudo negativo em marketing positivo.
+
+### Caso 8 — Aplicar NNT importado no SUS
+
+**Apresentação:** metanálise de ECRs em centros terciários de alta renda mostra RR 0,60 para internação em população de risco basal 30%, com NNT estimado próximo de oito a nove; gestor pretende afirmar mesmo NNT para toda UBS brasileira, onde risco basal estimado é 5%. **Hipótese:** erro na transportabilidade do benefício absoluto. **Raciocínio:** no cenário de 30%, risco tratado sob RR estável seria 18%, ARR 12 pp, NNT ≈8,33 (arredondar para cima: 9); em 5%, tratado 3%, ARR 2 pp, NNT 50. A hipótese de RR invariável também precisa ser avaliada. **Avaliação:** risco basal local, presença de equipe, adesão, custo, populações excluídas e equidade. **Interpretação:** NNT de estudo não é propriedade imutável de fármaco/programa. **Conduta:** estimar efeito absoluto local e combinar evidência com avaliação econômica/implementação. **Por que importa:** o mesmo RR pode justificar decisões distintas sem contradição científica.
+
+## 27. Questões autorais de residência — dez questões com alternativas individualmente comentadas
+
+### Questão 1 — Randomização versus ocultação
+
+Um ECR usa algoritmo genuinamente aleatório, mas o médico que recruta consegue prever a próxima alocação e exclui seletivamente casos graves. Qual problema metodológico principal?
+
+A. Geração de sequência necessariamente não aleatória.  
+B. Falha de ocultação de alocação com potencial viés de seleção.  
+C. Viés de publicação apenas.  
+D. Aumento de heterogeneidade entre estudos.  
+E. Erro de conversão de OR para RR.
+
+**Gabarito: B.** **A incorreta:** o sorteio pode ser tecnicamente aleatório, embora sua proteção tenha sido quebrada. **B correta:** o recrutador modifica quem entra conforme braço futuro. **C incorreta:** não envolve escolha de publicar estudos. **D incorreta:** heterogeneidade de metanálise é outro fenômeno. **E incorreta:** nenhuma medida de efeito foi calculada. **Mini-revisão:** randomização, ocultação e cegamento são mecanismos diferentes.
+
+### Questão 2 — Intenção de tratar
+
+Um ECR randomiza 500 pessoas. Dez por cento deixam de tomar tratamento; os autores excluem todos que não aderiram e chamam isso de ITT. Qual avaliação é melhor?
+
+A. Rótulo ITT é automaticamente correto porque houve randomização.  
+B. A análise por completadores preserva incondicionalmente a comparabilidade criada pelo sorteio.  
+C. A exclusão pós-randomização pode introduzir viés; é necessário explicitar população analisada e estratégia para eventos intercorrentes/faltantes.  
+D. Todo abandono significa intervenção ineficaz.  
+E. Basta mostrar p<0,05 para descartar problema de perdas.
+
+**Gabarito: C.** **A incorreta:** método de análise importa. **B incorreta:** aderência pode estar ligada ao prognóstico. **C correta:** CONSORT 2025 pede transparência dos denominadores e análise; estimandos especificam alvo. **D incorreta:** motivo do abandono varia. **E incorreta:** p não elimina viés. **Mini-revisão:** ITT clássico acompanha alocação, não redefine grupos pelo comportamento observado.
+
+### Questão 3 — NNT
+
+Em ensaio fictício, 20 de 200 participantes do braço A e 40 de 200 do B tiveram evento indesejável. Qual NNT de A versus B no horizonte observado?
+
+A. 2.  
+B. 5.  
+C. 10.  
+D. 20.  
+E. 50.
+
+**Gabarito: C.** **A incorreta:** confunde inverso do RR. **B incorreta:** seria ARR 20 pp, não 10 pp. **C correta:** risco A 10%, risco B 20%, ARR 10 pp, NNT=1/0,1=10. **D incorreta:** resulta de confusão com proporção de eventos no controle. **E incorreta:** corresponderia a ARR 2 pp. **Mini-revisão:** NNT é recíproco da diferença absoluta, não da redução relativa.
+
+### Questão 4 — Não inferioridade
+
+A diferença de cura A menos B tem estimativa de -2 pp e IC 95% de -8 a +3 pp; margem pré-especificada -5 pp. Qual interpretação?
+
+A. A não inferioridade foi demonstrada porque p da superioridade >0,05.  
+B. A equivalência foi demonstrada por intervalos que incluem zero.  
+C. A é superior porque limite superior é positivo.  
+D. Não inferioridade não foi demonstrada, pois intervalo inclui perda pior que -5 pp.  
+E. A é obrigatoriamente mais seguro.
+
+**Gabarito: D.** **A incorreta:** p de superioridade não responde a não inferioridade. **B incorreta:** equivalência exige IC contido em margens bidirecionais. **C incorreta:** CI inclui efeitos negativos. **D correta:** limite inferior -8 cruza margem -5. **E incorreta:** segurança não foi medida. **Mini-revisão:** a margem clínica precisa ser defendida antes da análise.
+
+### Questão 5 — CONSORT e PRISMA
+
+Qual alternativa distingue adequadamente CONSORT 2025 e PRISMA 2020?
+
+A. CONSORT é roteiro de relato de ensaios randomizados; PRISMA é roteiro de relato de revisões sistemáticas, nenhum garantindo baixo risco de viés apenas por cumprimento formal.  
+B. CONSORT avalia certeza GRADE de revisões e PRISMA randomiza pacientes.  
+C. PRISMA é certificado de revisão sem viés de publicação.  
+D. CONSORT 2010 continua versão principal vigente após 2025.  
+E. Ambas são escalas numéricas de qualidade clínica com nota mínima obrigatória.
+
+**Gabarito: A.** **A correta:** CONSORT 2025 tem 30 itens; PRISMA 2020 tem 27 itens, ambos promovem transparência. **B incorreta:** atribui objetos trocados. **C incorreta:** relato pode ser completo e busca insuficiente. **D incorreta:** CONSORT 2025 substitui versão 2010. **E incorreta:** não são notas de qualidade. **Mini-revisão:** relatório, risco de viés, método da revisão e certeza GRADE são camadas distintas.
+
+### Questão 6 — I²
+
+Metanálise de quatro ECRs apresenta I²=0%, mas intervenções, populações e desfechos são muito diferentes. O que se pode concluir?
+
+A. Homogeneidade clínica absoluta comprovada.  
+B. Todos os ensaios têm risco de viés baixo.  
+C. O tratamento funciona em 100% dos pacientes.  
+D. Não há necessidade de olhar protocolos.  
+E. I² baixo não demonstra comparabilidade clínica; poucos estudos e incerteza podem mascarar heterogeneidade relevante.
+
+**Gabarito: E.** **A incorreta:** I² é medida estatística, não equivalência de PICO. **B incorreta:** risco de viés se avalia separadamente. **C incorreta:** estatística não estima resposta individual. **D incorreta:** protocolos são necessários. **E correta:** avaliação clínica precede agregação. **Mini-revisão:** I², tau² e intervalo de predição respondem perguntas diferentes.
+
+### Questão 7 — Subgrupos
+
+Ensaio tem p=0,02 em homens e p=0,10 em mulheres. Sem teste de interação, qual inferência correta?
+
+A. Tratamento só funciona em homens.  
+B. Mulheres respondem sempre na direção oposta.  
+C. A diferença dos p-valores isoladamente não demonstra diferença de efeito entre sexos; usar teste de interação e considerar multiplicidade.  
+D. Não precisa olhar IC nem magnitude.  
+E. Resultado de subgrupo sempre supera desfecho primário.
+
+**Gabarito: C.** **A incorreta:** conclusão não sustentada. **B incorreta:** p não informa direção sozinho. **C correta:** diferença entre significativo e não significativo não é necessariamente significativa. **D incorreta:** IC e efeito são centrais. **E incorreta:** subgrupos exploratórios têm risco de falsos positivos. **Mini-revisão:** testar heterogeneidade de efeito diretamente.
+
+### Questão 8 — Bacteriologia ou estatística? (leitura de efeito)
+
+Estudo compara intervenção A a B e reporta OR=0,50 para hospitalização, evento com prevalência elevada. Qual afirmativa correta?
+
+A. OR=0,50 implica risco de hospitalização exatamente metade do controle, sem precisar saber risco basal.  
+B. OR é razão de chances; pode diferir substancialmente de RR quando evento é frequente.  
+C. OR e HR são medidas idênticas.  
+D. OR=0,50 comprova redução absoluta de 50 pontos percentuais.  
+E. OR dispensa intervalo de confiança.
+
+**Gabarito: B.** **A incorreta:** confunde odds com risco. **B correta:** diferença cresce quando evento é comum. **C incorreta:** HR é medida temporal de hazard. **D incorreta:** efeito absoluto depende das frequências. **E incorreta:** precisão e incerteza são essenciais. **Mini-revisão:** razão, risco, odds e hazard não são sinônimos.
+
+### Questão 9 — Certeza GRADE
+
+Revisão sistemática reúne cinco ECRs, porém todos têm muitas perdas associadas a piora clínica e IC conjunto permite benefício relevante e dano. Qual julgamento é adequado?
+
+A. Certeza necessariamente alta porque há ECR.  
+B. Certeza necessariamente alta porque há metanálise.  
+C. Relato PRISMA completo impede rebaixar certeza.  
+D. Considerar rebaixamento por risco de viés e imprecisão, por desfecho, justificando a decisão GRADE.  
+E. Não se pode julgar certeza sem usar o número de artigos como escore.
+
+**Gabarito: D.** **A incorreta:** desenho define ponto de partida, não conclusão. **B incorreta:** agregação não elimina viés. **C incorreta:** guia de relato não corrige perdas. **D correta:** duas limitações distintas podem reduzir confiança. **E incorreta:** contagem isolada não é GRADE. **Mini-revisão:** GRADE julga estimativas de desfechos, não a aparência do artigo.
+
+### Questão 10 — Viés de publicação
+
+Revisão apresenta checklist PRISMA, mas omite registros de ensaios, teses e resultados negativos conhecidos; publica somente quatro artigos favoráveis. Qual preocupação é mais adequada?
+
+A. Erro de classificação de hipertensão.  
+B. Falha que pode produzir evidência ausente e superestimar benefício, apesar de relato estruturado.  
+C. Confirmação de baixo risco de viés porque houve quatro estudos.  
+D. Certeza alta por definição de revisão sistemática.  
+E. Prova de que nenhum estudo desfavorável foi feito.
+
+**Gabarito: B.** **A incorreta:** não é questão clínica específica. **B correta:** busca seletiva pode distorcer corpo de evidência; revisar registro e ampliar buscas. **C incorreta:** quantidade não substitui seleção. **D incorreta:** título não define certeza. **E incorreta:** ausência na amostra não demonstra inexistência. **Mini-revisão:** PRISMA é transparência; robustez requer busca, método, RoB e GRADE.
+
+## 28. Recursos visuais: dez candidatos para produzir/curar sem direitos presumidos
+
+| Nº | Imagem ou esquema | Conteúdo didático | Ponto da aula | Plano de direitos |
+|---|---|---|---|---|
+| 1 | Fluxograma autoral de PICO até recomendação | Pergunta → ECR → revisão → GRADE → decisão | §1/23 | Criar ilustração original |
+| 2 | Diagrama de randomização e ocultação | Diferença entre sorteio, recrutamento e cegamento | §3 | Criar ilustração original |
+| 3 | Gráfico autoral de risco basal e NNT | Mesmo RR em dois grupos, NNT diferente | §8/25 | Construção vetorial original |
+| 4 | Esquema de margens de não inferioridade e IC | Interpretar limite inferior de margem | §6/25 | Construção original |
+| 5 | Fluxograma CONSORT ilustrativo de ECR fictício | Recrutamento, randomização, perdas e análise | §2/9 | Autoria própria, sem copiar figura oficial |
+| 6 | Fluxograma PRISMA fictício | Registros, relatórios, estudos únicos | §14 | Construção original |
+| 7 | Forest plot original com três ensaios fictícios | Leitura de linha nula, pesos e IC | §18 | Construir a partir de números didáticos, sem usar resultados reais |
+| 8 | Esquema funnel plot simétrico/assimétrico | Limites da interpretação de estudos pequenos | §19 | Construção original |
+| 9 | Matriz visual comparativa CONSORT/PRISMA/RoB2/AMSTAR/GRADE | Objetos distintos de avaliação | §15/20 | Autoria LURIA |
+| 10 | Summary of Findings GRADE com efeito absoluto e certeza | Traduzir evidência para decisão clínica | §20/23 | Autoria LURIA com exemplo fictício |
+
+**Curadoria:** embora vários candidatos sejam diagramas originais, a regra premium exige verificar se imagens reais de literatura são clinicamente mais instrutivas. Para estudo de metodologia, os gráficos autorais com dados transparentes são geralmente superiores a fotografias sem contexto. Se for usada imagem oficial de guideline, conferir licença comercial, atribuição e permissão; página publicamente acessível **não implica** licença para reprodução comercial. Produzir WebP responsivo e imagens legíveis com texto alternativo.
+
+## 29. Referências metodológicas auditáveis
+
+1. Hopewell S, Chan AW, Collins GS et al. **CONSORT 2025 statement: updated guideline for reporting randomised trials.** BMJ. 2025;389:e081123. https://www.bmj.com/content/389/bmj-2024-081123. Especifica 30 itens e relata mudanças frente a 2010.
+2. Hopewell S et al. **CONSORT 2025 explanation and elaboration.** BMJ. 2025;389:e081124. https://www.bmj.com/content/389/bmj-2024-081124. Apoia distinção entre relato e qualidade de condução, documentação de intervenções e perdas.
+3. Chan AW et al. **SPIRIT 2025 statement: updated guideline for protocols of randomised trials.** BMJ. 2025;389:e081477. https://www.bmj.com/content/389/bmj-2024-081477. Diretriz de protocolo com 34 itens.
+4. Page MJ et al. **The PRISMA 2020 statement: an updated guideline for reporting systematic reviews.** BMJ. 2021;372:n71. https://www.bmj.com/content/372/bmj.n71. Checklist e fluxograma de revisões.
+5. **PRISMA Statement**: https://www.prisma-statement.org/prisma-2020. Documentos e explicações.
+6. Higgins JPT et al (eds). **Cochrane Handbook for Systematic Reviews of Interventions**, versão 6.5 (2024) conforme página oficial consultada. https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current. Métodos de busca, síntese, viés e GRADE.
+7. **Cochrane Handbook, Chapter 10: Analysing data and undertaking meta-analyses.** https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10. Heterogeneidade, I², intervalos e agregação.
+8. **Cochrane Handbook, Chapter 14: Completing Summary of Findings tables and grading certainty of evidence.** https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14. Cinco domínios GRADE e quatro níveis.
+9. Shea BJ et al. **AMSTAR 2: a critical appraisal tool for systematic reviews...** BMJ. 2017;358:j4008. https://www.bmj.com/content/358/bmj.j4008. 16 itens e domínios críticos, sem escore simples.
+10. **Core GRADE 1: overview of the Core GRADE approach.** BMJ. 2025. https://www.bmj.com/content/389/bmj-2024-081903. Atualização metodológica da certeza para efeitos de intervenção.
+11. **Core GRADE 2: choosing the target of certainty rating and assessing imprecision.** BMJ. 2025. https://www.bmj.com/content/389/bmj-2024-081904. Interpretação de incerteza e limites de decisão.
+12. **PROSPERO — International prospective register of systematic reviews.** https://www.crd.york.ac.uk/PROSPERO/. Registro prospectivo de revisões.
+13. **RoB 2 — Cochrane risk-of-bias tool for randomized trials.** Manual e recursos em https://www.riskofbias.info/welcome/rob-2-0-tool. Cinco domínios por resultado.
+14. **ROBINS-I — risk of bias in non-randomised studies of interventions.** Ferramentas em https://www.riskofbias.info/welcome/home. Métodos e referência a confirmar na auditoria final.
+15. **Registro Brasileiro de Ensaios Clínicos (ReBEC).** https://ensaiosclinicos.gov.br/. Portal de registro; validar normas aplicáveis ao protocolo específico.
+16. **ClinicalTrials.gov.** https://clinicaltrials.gov/. Consultas de protocolos, resultados e modificações.
+17. **GRADE Working Group.** https://www.gradeworkinggroup.org/. Recursos metodológicos e atualizações.
+18. **Apostila interna 105 — Desenhos de estudos epidemiológicos**, arquivo editorial preservado. Limites curriculares: estudos observacionais versus base experimental; a 110 aprofunda ECR e síntese.
+
+## 30. Auditoria editorial interna — pendências preservadas para o Codex
+
+**Cobertura construída:** fundamentos e hierarquia; PICO; protocolos/registro; CONSORT/SPIRIT; randomização, ocultação e cegamento; paralelos, clusters, crossover, fatorial e pragmático; controle/adesão; superioridade/não inferioridade; alfa/beta e poder; RR/OR/HR/RD/NNT; ITT/per-protocol/estimandos; RoB 2; subgrupos, desfechos e danos; revisão narrativa versus sistemática, busca e PRISMA; AMSTAR 2/ROBINS-I/GRADE; modelos de metanálise, I²/tau²; forest/funnel; publicação seletiva; rede e revisão viva; eventos raros; aplicação ao SUS; quatro exercícios matemáticos; **oito casos comentados, dez questões completas e dez visuais originais candidatos**.
+
+**Pendências:** auditoria metodológica independente das explicações de efeito comum/aleatório, dos exemplos de IC e estimandos; verificação de todas versões de ferramentas e elegibilidade de registro no Brasil; links para referências de fontes reais no HTML; refinamento de explicação sobre certeza em estudos não randomizados segundo Core GRADE 2025; desenho dos dez visuais (não foram incorporados), validação de acessibilidade/legibilidade em PWA; revisão de provas e deduplicação com aulas 105 e futura 115; transformação do manuscrito Markdown em conteúdo LURIA; revisões cruzadas de bibliografia, imagens, direitos, erros de digitação e cálculo.
+
+**Política de release:** nenhum conteúdo desta aula está certificado para publicação. **Depois que TODOS os manuscritos de TODOS os lotes forem criados, o Codex deverá executar a auditoria geral registrada em apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md**, com matriz tema/ID, revisão científica, correção fundamentada, revisão de licenças, verificação de duplicação, testes desktop/PWA, relatórios e PRs. Não fazer merge, deploy ou alterações no banco de produção automaticamente.
+
+**STATUS: RASCUNHO AUTORAL ORIGINAL, EM BRANCH EDITORIAL, NÃO PUBLICADO.**
