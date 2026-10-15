@@ -616,3 +616,114 @@ Os cenários são fictícios e voltados ao raciocínio clínico; cada decisão d
 
 **Por que importa:** Desejo de morrer em casa não dispensa rede concreta e plano de crise.
 
+
+
+## 27. Questões autorais LURIA — gabarito e todas as alternativas comentadas
+
+Os exercícios são inéditos, para ENAMED e residência, com situações fictícias e interpretação por diretrizes brasileiras.
+
+### Questão 1 — Início do cuidado paliativo
+
+**Enunciado:** Paciente com neoplasia em terapia potencialmente curativa apresenta dor intensa e angústia. Qual conduta?
+
+**A)** Paliativo apenas quando houver metástases.
+
+**B)** Integrar cuidado paliativo precoce ao tratamento modificador.
+
+**C)** Suspender oncologia antes de aliviar dor.
+
+**D)** Aguardar seis meses de sobrevida.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É abordagem baseada em necessidades.
+- **Alternativa B:** Tratamentos podem coexistir.
+- **Alternativa C:** Não exige suspender terapia eficaz.
+- **Alternativa D:** Não há prazo mínimo de sobrevida.
+
+**Mini-revisão:** Cuidado paliativo é ativo e simultâneo quando necessário.
+
+### Questão 2 — Política brasileira
+
+**Enunciado:** Qual norma instituiu a PNCP-SUS e qual a atualizou em janeiro de 2026?
+
+**A)** CFM 1.805/2006 e CFM 1.995/2012.
+
+**B)** Portarias GM/MS 3.681/2024 e 10.181/2026.
+
+**C)** Lei 8.080/1990 e Estatuto do Idoso apenas.
+
+**D)** NICE NG31 e ESMO.
+
+**Gabarito: B.**
+
+- **Alternativa A:** São normas de ética médica distintas.
+- **Alternativa B:** É a sequência normativa correta.
+- **Alternativa C:** São marcos legais gerais, não os atos específicos.
+- **Alternativa D:** Não são normas do Ministério da Saúde brasileiro.
+
+**Mini-revisão:** A atualização de 2026 incluiu PAC, DAV e organização da rede.
+
+### Questão 3 — Conceito de sofrimento total
+
+**Enunciado:** Pessoa com câncer e dor lombar preocupada com filhos e perda de emprego. Qual abordagem?
+
+**A)** Tratar só nocicepção e ignorar contexto.
+
+**B)** Avaliar dimensões física, psicológica, social e espiritual segundo preferências.
+
+**C)** Considerar dor inventada porque há ansiedade.
+
+**D)** Impor apoio religioso.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Deixaria sofrimento importante sem cuidado.
+- **Alternativa B:** Integra abordagem multidimensional.
+- **Alternativa C:** Dor e emoção coexistem sem invalidar sofrimento.
+- **Alternativa D:** Espiritualidade requer consentimento.
+
+**Mini-revisão:** Sofrimento total não nega componente físico.
+
+### Questão 4 — ESAS-r versus PPS
+
+**Enunciado:** Qual afirmação diferencia corretamente as escalas?
+
+**A)** ESAS avalia intensidade de sintomas; PPS funcionalidade e desempenho.
+
+**B)** Ambas determinam dia exato do óbito.
+
+**C)** PPS define diagnóstico de depressão.
+
+**D)** ESAS mede apenas saturação de oxigênio.
+
+**Gabarito: A.**
+
+- **Alternativa A:** São funções distintas e complementares.
+- **Alternativa B:** Nenhuma é relógio prognóstico.
+- **Alternativa C:** O escore funcional não substitui psiquiatria.
+- **Alternativa D:** A escala é sintomática.
+
+**Mini-revisão:** Instrumentos apoiam decisão e reavaliação, não substituem clínica.
+
+### Questão 5 — Diretivas antecipadas
+
+**Enunciado:** Paciente deixou preferências expressas antes de perder capacidade. No Brasil, qual referência aborda DAV?
+
+**A)** CFM 1.995/2012.
+
+**B)** CFM 1.805/2006 apenas.
+
+**C)** Manual de BI-RADS.
+
+**D)** Não há qualquer previsão ética.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É norma específica de diretivas antecipadas.
+- **Alternativa B:** Refere limitação proporcional no terminal.
+- **Alternativa C:** É instrumento de mamografia.
+- **Alternativa D:** Existe norma e política pública.
+
+**Mini-revisão:** PAC é processo; DAV registra vontade futura.
+
