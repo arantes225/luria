@@ -1,0 +1,16 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {page,read}=require('./fixtures/frontend.cjs');const wait=()=>new Promise(r=>setTimeout(r,30));
+test('room activity workspace embeds canonical editors, protects rendering and preserves simulator across updates',async t=>{
+ const {w,d,errors}=page(t,'amigos/index.html');const room='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',caseId='bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';let active=null;const calls=[];
+ w.LuriaDialog={confirm:async()=>true};w.LuriaSocial={getState:()=>({room:{id:room},is_admin:true}),command:async(a,p)=>calls.push({a,p}),refreshRoom:async()=>{}};
+ w.supabaseClient={rpc:async(name,args)=>{calls.push(args);return {data:args.p_action==='catalog'?{questions:[],decks:[],cases:[{id:caseId,title:'Caso original',specialty:'Clínica'}]}:active};},channel:()=>({on(){return this;},subscribe(){return this;}}),removeChannel:()=>{}};
+ w.eval(read('assets/js/social-native-activities.js'));w.eval(read('assets/js/social-view.js'));await wait();
+ assert.equal(d.querySelector('.sc-workspace-tabs').nextElementSibling.id,'sc-panel-activity');
+ await w.LuriaNativeActivities.open('questions');d.getElementById('na-create').click();let frame=d.getElementById('room-native-editor');assert.equal(new URL(frame.src).pathname,'/questoes-simulados/');assert.equal(frame.dataset.roomId,room);
+ d.getElementById('na-close-editor').click();await wait();assert.equal(d.getElementById('room-native-editor'),null);
+ await w.LuriaNativeActivities.open('flashcards');d.getElementById('na-create').click();assert.equal(new URL(d.getElementById('room-native-editor').src).pathname,'/flashcards/');
+ active={id:'cccccccc-cccc-4ccc-8ccc-cccccccccccc',kind:'flashcards',active:true,is_admin:true,title:'Deck',ordinal:0,total:1,front:'<script>bad()</script>',back:null,revealed:false,participants:[]};w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();assert.equal(d.querySelector('#na-board script'),null);assert.match(d.getElementById('na-board').textContent,/<script>/);assert.equal(d.getElementById('na-back-image'),null);
+ active={id:'dddddddd-dddd-4ddd-8ddd-dddddddddddd',kind:'simulator',active:true,is_admin:true,title:'Caso',case_id:caseId,participants:[]};w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();d.getElementById('na-play').click();frame=d.getElementById('room-native-simulator');assert.equal(frame.dataset.caseId,caseId);assert.equal(new URL(frame.src).pathname,'/plantao/sala-emergencia/');w.dispatchEvent(new w.Event('luria:room-rendered'));await wait();assert.equal(d.getElementById('room-native-simulator'),frame);
+ w.dispatchEvent(new w.MessageEvent('message',{origin:'https://evil.invalid',source:frame.contentWindow,data:{type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:room}}));await wait();assert(!calls.some(c=>c.p_action==='simulation_join'));
+ w.dispatchEvent(new w.Event('luria:room-exit'));assert.equal(d.querySelector('#na-simulator iframe'),null);assert.equal(d.querySelector('#na-editor iframe'),null);assert.deepEqual(errors,[]);
+});

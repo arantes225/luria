@@ -383,7 +383,7 @@
   try{if(await rpc('is_admin')===true){$('social-admin').hidden=false;await adminSnapshot();}}catch(error){failure(error);}
   socialChannel=window.supabaseClient.channel('social-user:'+owner.id).on('postgres_changes',{event:'*',schema:'public',table:'friendships'},()=>{refreshSocial().catch(failure);window.loadFriends().catch(failure);}).subscribe();
  }
- window.LuriaSocial={init,refreshSocial,refreshHall,updateFriendPresence,enter,leave,block,showProfile,inviteFriend,openCreate,getState:()=>state,command,icon};
+ window.LuriaSocial={init,refreshSocial,refreshHall,updateFriendPresence,enter,leave,block,showProfile,inviteFriend,openCreate,getState:()=>state,refreshRoom,command,icon};
  window.addEventListener('luria:owner-changed',async()=>{if(owner&&window.LuriaLocalOwnerStore?.ownerId!==owner.id){await teardownRoom();if(socialChannel)await window.supabaseClient.removeChannel(socialChannel);for(const c of friendChannels.values())await window.supabaseClient.removeChannel(c);friendChannels.clear();owner=null;for(const id of ['social-rooms','social-messages','social-groups','social-requests','social-suggestions','social-blocks'])$(id).textContent='';$('social-room').hidden=true;$('community-rooms').hidden=false;}});
  if(window.docmapUser)init();else window.addEventListener('docmap:ready',init,{once:true});
 })();

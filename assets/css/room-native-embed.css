@@ -1,0 +1,6 @@
+/* Only an original LURIA module framed by its admitted room gets this class. */
+html.room-native-embed body {min-width:0;min-height:100dvh;height:auto;overflow:auto;background:var(--color-surface);}
+html.room-native-embed :is(.sidebar,.topbar,.menu-overlay,.luria-page-spotlight,professor-alex-mascot,#menu-open) {display:none!important;}
+html.room-native-embed :is(.app,.app-shell,.ui-shell) {display:block!important;grid-template-columns:1fr!important;min-height:100dvh!important;height:auto!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:var(--color-surface)!important;}
+html.room-native-embed main.main {width:100%!important;max-width:none!important;min-height:100dvh!important;height:auto!important;max-height:none!important;padding:16px!important;margin:0!important;border:0!important;border-radius:0!important;overflow:visible!important;box-sizing:border-box;}
+@media(max-width:520px){html.room-native-embed main.main {padding:10px!important;}}
