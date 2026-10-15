@@ -316,6 +316,46 @@ A DPOC não exclui síndrome de apneia obstrutiva do sono. Suspeite diante de ro
 
 Reabilitação pulmonar integra exercícios aeróbios graduais, fortalecimento, educação, conservação de energia e suporte para adesão. O treinamento procura reduzir descondicionamento e percepção de dispneia ao esforço, mesmo quando não ocorre grande aumento do VEF1. O paciente deve aprender a reconhecer dispneia esperada do exercício supervisionado versus dor torácica, tontura, síncope ou dessaturação importante que exige interrupção e avaliação. A prescrição precisa considerar cardiopatia, osteoporose, fragilidade e risco de quedas. Orientar “faça caminhada” sem avaliar limitações, meta e suporte pode ser insuficiente.
 
+
+### 6.3 Oxigenoterapia domiciliar prolongada (ODP): critérios operacionais do SUS
+
+É necessário separar três conceitos que costumam ser confundidos em prova e na prática. **Oxigênio na exacerbação** é suporte imediato para hipoxemia aguda, frequentemente titulado com atenção ao risco de hipercapnia. **Oxigênio ambulatorial para dessaturação durante exercício** é decisão individualizada, sem evidência automática de benefício de sobrevida. **Oxigenoterapia domiciliar prolongada (ODP)**, por sua vez, é tratamento para hipoxemia crônica grave documentada **em condições estáveis**; nesse grupo, a oferta prolongada pode melhorar sobrevida. A indicação de ODP não é determinada pelo VEF1 nem apenas pelo grau de falta de ar.
+
+Na Linha de Cuidado de DPOC do Ministério da Saúde, a avaliação especializada é indicada quando há **SpO2 abaixo de 92% em ar ambiente e fora de crise**, mas essa é uma **porta de encaminhamento, não critério suficiente para instalar oxigênio definitivo**. A rede recomenda duas medições em estabilidade, separadas por aproximadamente três semanas, e análise de gasometria quando apropriada. Para indicação efetiva, os critérios clássicos empregados nacionalmente são:
+
+| Medida obtida em vigília, repouso e ar ambiente, fora de exacerbação | Conduta interpretativa |
+| --- | --- |
+| **PaO2 ≤55 mmHg** ou **SaO2 ≤88%** | Preenche critério fisiológico de hipoxemia crônica grave para avaliar ODP |
+| **PaO2 de 56–59 mmHg** (faixa operacional equivalente aproximada: 55–60 mmHg) com **cor pulmonale/hipertensão pulmonar ou policitemia** | Pode preencher critério com complicação documentada; conferir valores, exames e protocolo do serviço |
+| SpO2 **90–91%** isolada, sem confirmação apropriada | Sugere avaliação adicional, **não** prescrição automática |
+| SpO2 **95%** em repouso com dispneia incapacitante | Investigar hiperinsuflação, descondicionamento, cardiopatia ou outra causa; **não** indicar ODP pelo sintoma isolado |
+| Hipoxemia observada apenas durante a internação aguda | Reavaliar após estabilização; oxigênio temporário não define necessidade vitalícia |
+
+**PaO2, SaO2 e SpO2 não são a mesma medida:** PaO2 é pressão parcial arterial medida na gasometria; SaO2 é saturação arterial medida/analisada; SpO2 é estimativa por oximetria periférica. Alterações de perfusão, pigmentação, movimento, dis-hemoglobinas e condições do equipamento podem interferir na leitura periférica. Em limiar crítico, a gasometria e a avaliação clínica têm valor especial.
+
+**Tempo e reavaliação:** os ensaios clássicos que sustentam benefício de sobrevida utilizaram oxigênio por períodos prolongados, usualmente **mais de 15 horas ao dia**, em hipoxemia crônica grave. O uso noturno isolado por decisão empírica não equivale ao esquema estudado. Estabelecer prescrição de fluxo conforme titulação, interfaces e meta de saturação individual, educação sobre limpeza/manutenção, fontes de energia e segurança. **Tabagismo, chama, fogão e cigarro eletrônico próximos ao oxigênio representam risco de incêndio e queimadura.** É importante tratar a dependência do tabaco de modo ativo e verificar segurança do ambiente; não apenas escrever “não fumar” no pedido.
+
+Após alta por exacerbação, o paciente pode necessitar oxigênio temporariamente, mas a hipoxemia pode diminuir com tratamento. Agendar a reavaliação evita perpetuar equipamento desnecessário; em contrapartida, não retirar suporte indispensável sem confirmar gasometria/saturação em condições adequadas. Pacientes com distúrbios respiratórios do sono, hipoventilação ou hipercapnia persistente exigem avaliação separada da necessidade de VNI; oxigênio isolado não corrige uma ventilação alveolar muito baixa.
+
+**Fonte institucional conferida:** Ministério da Saúde, Linha de Cuidado DPOC, APS/Planejamento terapêutico, seção *Encaminhamento para Atenção Especializada* e *Acompanhamento*. https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-de-atencao-primaria/planejamento-terapeutico/ . A página ainda contém classificações terapêuticas derivadas de GOLD mais antigo; esta seção utiliza dela exclusivamente os critérios operacionais de encaminhamento/oxigenação, e não substitui a classificação GOLD 2026 ou o PCDT atualizado.
+
+### 6.4 DPOC não é apenas VEF1: quantificar dispneia, capacidade funcional e prognóstico
+
+A escala **mMRC** traduz o impacto da dispneia em situações cotidianas. Em **0**, a falta de ar aparece apenas ao exercício intenso; em **1**, ao apressar o passo no plano ou subir pequena ladeira; em **2**, o indivíduo anda mais devagar que pares ou precisa parar no plano no próprio ritmo; em **3**, para após aproximadamente 100 metros ou poucos minutos no plano; em **4**, fica sem ar para sair de casa ou vestir-se. Ela não mede diretamente tosse, sono, fadiga ou autoestima. Um paciente com mMRC 1 pode ter muitos outros sintomas e baixa qualidade de vida.
+
+O **CAT** é um questionário de múltiplos itens que oferece perspectiva mais abrangente da carga da doença. Um escore **≥10** é frequentemente usado como limiar de sintomas relevantes na classificação combinada, mas não define, isoladamente, risco de exacerbação ou necessidade de corticosteroide inalatório. Registre **número, gravidade e tratamento das exacerbações nos últimos 12 meses**: curso ambulatorial de corticoide/antibiótico, atendimento na urgência, internação e necessidade de suporte. Esse histórico alimenta o eixo de risco, diferente da gravidade espirométrica.
+
+A prova de caminhada de seis minutos é ferramenta de avaliação funcional, com distância total, sintomas, frequência cardíaca e oxigenação. Pode contribuir ao encaminhamento para reabilitação e ao seguimento, mas uma queda de SpO2 no teste não é, por si, indicação de oxigênio domiciliar contínuo. Medidas seriadas exigem o mesmo protocolo, condições semelhantes e revisão de comorbidades, sobretudo cardíacas e musculoesqueléticas.
+
+**Índice BODE:** reúne IMC (*Body mass index*), obstrução ao fluxo aéreo pelo VEF1, dispneia (mMRC) e exercício (distância caminhada em seis minutos). Ele demonstra uma ideia importante: duas pessoas com o mesmo VEF1 podem ter prognósticos muito diferentes por perda ponderal, limitação funcional e dispneia. Não converter o BODE em decisão isolada de transplante ou fim de vida; interpretar com trajetória, exacerbações, gasometria, comorbidades e objetivos do paciente.
+
+### 6.5 Do limiar à decisão: exemplos aplicados de oxigênio e funcionalidade
+
+**Exemplo A:** ex-tabagista em estabilidade apresenta duas gasometrias com PaO2 52 e 53 mmHg em ar ambiente, separadas por três semanas. O quadro satisfaz o critério de hipoxemia crônica grave; indicar avaliação e titulação formal de ODP é coerente. **Exemplo B:** paciente com SpO2 91% na segunda manhã após alta por exacerbação não deve receber decisão definitiva de ODP com base nesse único valor: precisa avaliação, suporte conforme necessidade atual e nova medida em estabilidade. **Exemplo C:** paciente mMRC 4, PaO2 73 mmHg e SpO2 95% em repouso tem dispneia muito importante, mas não preenche o critério fisiológico clássico de ODP; investigar hiperinsuflação, IC, anemia e descondicionamento e oferecer reabilitação.
+
+Não confundir **limiar de encaminhamento** com **limiar de tratamento**. No relatório de referência, incluir espirometria com VEF1/CVF pós-BD e VEF1 % previsto, sintomas mMRC/CAT, exacerbações nos últimos doze meses, saturação em repouso/ar ambiente, gasometrias estáveis, comorbidades e medicação/device atual. Esse relatório permite ao pneumologista decidir melhor que uma frase isolada como “DPOC grave, pedir concentrador”.
+
+
 ## 7. Seguimento, comorbidades e populações especiais
 
 ### 7.1 Manejo longitudinal na APS: uma consulta estruturada que cabe no mundo real
@@ -409,6 +449,16 @@ Homem de 71 anos com DPOC confirmada usa LABA/LAMA corretamente, apresenta duas 
 ### Caso 12 — Apneia coexistente em paciente cansado
 
 Paciente de 57 anos com DPOC GOLD 2 está sempre cansado, ronca alto e tem pausas respiratórias testemunhadas. Oximetria basal diurna é relativamente preservada. **Hipótese:** apneia obstrutiva do sono coexistente. **Raciocínio:** a DPOC explica parte da dispneia, mas não encerra avaliação do sono; hipoxemia noturna e eventos cardiovasculares podem decorrer da coexistência. **Conduta:** investigação do sono e cuidado de fatores associados. **Por que importa:** não aumentar broncodilatadores para tratar problema fisiológico diferente.
+
+
+### Caso 13 — Não transformar saturação da alta em prescrição vitalícia
+
+Homem de 72 anos, ex-tabagista, foi internado por exacerbação com pneumonia e recebeu oxigênio suplementar. Quatro dias após melhora, ainda tem SpO2 91% em repouso, mas foi medido usando oxigênio, sem gasometria recente em ar ambiente. Deseja concentrador “para sempre”. **Hipóteses:** hipoxemia transitória pós-exacerbação versus hipoxemia crônica; DPOC coexistente com pneumonia em recuperação. **Raciocínio:** o critério de ODP deve ser avaliado em estabilidade e, quando aplicável, em ar ambiente; uma saturação medida com suplementação não demonstra PaO2 basal. **Investigação:** exame clínico, suporte atual, oxigenação/gasometria com segurança, revisão em estabilidade e outras causas de hipoxemia. **Conduta:** não privar de suporte necessário na alta, mas documentar que a indicação definitiva está pendente e planejar reavaliação. **Por que este caso importa:** evita tanto alta insegura quanto oxigênio vitalício desnecessário.
+
+### Caso 14 — Hipoxemia grave estável e indicação formal
+
+Mulher de 67 anos com DPOC documentada por VEF1/CVF pós-BD 0,48 realiza duas avaliações fora de crise, em ar ambiente e repouso, com PaO2 52 e 54 mmHg em datas diferentes. Relata dispneia moderada e não fuma mais. **Diagnóstico:** hipoxemia crônica grave em DPOC. **Raciocínio:** critério fisiológico de ODP é atingido apesar de não ser obrigatório mMRC 4. **Exames:** gasometrias, parâmetros de oxigenação, avaliação funcional, risco cardiovascular e segurança domiciliar. **Conduta:** encaminhar/prescrever conforme fluxo formal, titular fluxo, orientar uso prolongado, verificar equipamento e programar seguimento. **Por que este caso importa:** a indicação nasce da hipoxemia estável e de critérios validados, não da intensidade subjetiva da dispneia.
+
 
 ## 9. Questões autorais comentadas
 
@@ -511,6 +561,23 @@ A) Toda dispneia exige oxigênio contínuo. B) Critérios são baseados em hipox
 Pessoa com DPOC confirmada apresenta VEF1 35% previsto, mMRC 1, nenhuma exacerbação no ano. Qual conclusão?
 A) Obrigatoriamente grupo E porque o VEF1 é GOLD 3. B) GOLD 3 espirométrico não define sozinho grupo A/B/E. C) Sem doença porque não há exacerbação. D) Deve receber corticosteroide oral contínuo.
 **Gabarito B.** **A** confunde escalas; **C** ignora obstrução documentada; **D** indica tratamento tóxico sem justificativa. **Mini-revisão:** grupo ABE considera sintomas e histórico de exacerbações, separadamente do VEF1 previsto.
+
+
+### Questão 17 — Encaminhamento e indicação de ODP
+Em paciente com DPOC estável, a SpO2 de 91% em ar ambiente:
+A) É critério obrigatório para oxigênio vitalício imediato. B) Justifica avaliação adicional para ODP, mas não substitui confirmação dos critérios de hipoxemia crônica grave. C) Exclui insuficiência respiratória. D) Torna a espirometria desnecessária.
+**Gabarito: B.** A Linha de Cuidado usa saturação abaixo de 92% como sinal para avaliação especializada, com critérios próprios para indicar ODP. **A** confunde triagem com indicação; **C** ignora a possibilidade de hipoxemia relevante; **D** elimina exame diagnóstico de DPOC sem razão. **Mini-revisão:** encaminhar, confirmar, titular e reavaliar são etapas distintas.
+
+### Questão 18 — Faixa intermediária da gasometria
+Pessoa com DPOC fora de exacerbação tem PaO2 58 mmHg em ar ambiente e cor pulmonale documentado. Segundo os critérios clássicos de ODP:
+A) Cor pulmonale é irrelevante. B) A combinação pode preencher indicação de ODP, após confirmação adequada. C) A decisão depende apenas de mMRC 4. D) Oxigênio sempre deve ser administrado em fluxo máximo.
+**Gabarito: B.** A associação de PaO2 na faixa 56–59 e complicação indicada é contemplada na avaliação formal. **A** ignora critério adicional; **C** confunde sintoma com gasometria; **D** desconsidera titulação e retenção de CO2. **Mini-revisão:** PaO2 ≤55 por si ou faixa intermediária com complicação.
+
+### Questão 19 — Três medidas de doença diferentes
+Homem com DPOC apresenta VEF1 38% previsto, mMRC 1, nenhum atendimento por exacerbação no ano, e SpO2 94% em repouso. Qual afirmação é melhor?
+A) A função espirométrica define sozinha necessidade de CI, ODP e grupo E. B) VEF1 identifica grau de obstrução; sintomas/exacerbações e oxigenação são dimensões adicionais avaliadas separadamente. C) SpO2 normal exclui DPOC. D) Uma classificação GOLD 3 determina obrigatoriamente cuidados paliativos exclusivos.
+**Gabarito: B.** **A** soma indevidamente eixos de gravidade; **C** desconsidera espirometria; **D** confunde necessidade eventual de abordagem paliativa integrada com abandono de tratamento ativo. **Mini-revisão:** diagnóstico, carga sintomática, risco e trocas gasosas precisam ser lidos juntos.
+
 
 ## Referências essenciais
 
