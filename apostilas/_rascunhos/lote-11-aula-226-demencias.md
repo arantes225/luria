@@ -354,7 +354,7 @@ A tabela registra **tipos de imagens a buscar**, não arquivos validados e tampo
 10. Fluxograma vetorial **original LURIA** de triagem de delirium × declínio neurocognitivo → §13.
 
 ## 17. Referências científicas prioritárias (originais e verificáveis)
-1. Brasil, Ministério da Saúde / CONITEC. **PCDT da doença de Alzheimer**, portaria conjunta de 27 de novembro de 2025. Portal oficial: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/pcdt-da-doenca-de-alzheimer (verificar rota e última versão oficial antes da publicação).
+1. Brasil, Ministério da Saúde / CONITEC. **PCDT da doença de Alzheimer**, portaria conjunta de 27 de novembro de 2025. Portal oficial: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer (portal oficial conferido em 15/10/2026).
 2. NICE. **Dementia: assessment, management and support for people living with dementia and their carers (NG97)**. https://www.nice.org.uk/guidance/ng97/chapter/Recommendations
 3. Alzheimer's Association. **DETeCD-ADRD clinical practice guideline: diagnostic evaluation of suspected Alzheimer’s disease and related disorders**. https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.14333
 4. McKeith IG et al. **Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium.** Neurology. 2017;89:88–100. https://pmc.ncbi.nlm.nih.gov/articles/PMC5496518/
@@ -368,3 +368,236 @@ A tabela registra **tipos de imagens a buscar**, não arquivos validados e tampo
 - Exercer teste de "leitura do zero" e resolver questões representativas usando somente o conteúdo com **âncoras internas**.
 - Conferir bibliografia por afirmação, rotas dos links, revisão médica de segurança e layout desktop/PWA.
 - Preservar o manuscrito original em branch editorial; **não fundir/deployar como versão final** sem aprovação.
+
+
+---
+
+## 18. Aprofundamento clínico: separar desempenho cognitivo de funcionalidade
+
+### 18.1 O que a perda de uma atividade realmente significa?
+Uma pessoa que parou de cozinhar pode ter déficit de memória para sequências, apraxia, dificuldade executiva para organizar etapas, baixa visão, artrite incapacitante, medo de acidentes ou simplesmente outra pessoa passou a cozinhar para ela. É preciso explorar **por que** a atividade deixou de ser realizada, **desde quando**, com que frequência e se há tentativa de execução com supervisão. Sem essa decomposição, o estudante confunde dependência física ou social com dependência cognitiva.
+
+**Atividades instrumentais de vida diária (AIVD)** incluem administração de dinheiro e medicamentos, compras, transporte, uso de dispositivos e organização da casa. Frequentemente são as primeiras a falhar. **Atividades básicas de vida diária (ABVD)** incluem higiene pessoal, continência, alimentação, mobilidade, banho e vestir-se; sua perda costuma se associar a doença mais avançada, mas também pode decorrer de doença motora, depressão ou fragilidade. Uma escala funcional precisa registrar o nível de ajuda necessário e o papel efetivo do problema cognitivo.
+
+**Exemplo comparado:** um idoso com doença de Parkinson pode pedir ajuda para vestir-se porque apresenta rigidez e tremor, mantendo planejamento e compreensão das etapas. Outro pode movimentar braços normalmente e, ainda assim, colocar roupas em sequência inadequada por apraxia ou déficit executivo. O primeiro tem incapacidade motora; o segundo sugere incapacidade cognitiva. Essa distinção muda classificação e intervenção.
+
+### 18.2 Quando a pessoa não reconhece o próprio déficit
+**Anosognosia** é consciência reduzida do comprometimento. Na doença de Alzheimer, o paciente pode afirmar que não esquece nada enquanto a família relata episódios recorrentes de deixar o fogão ligado. Isso não deve ser tratado como "teimosia" e tampouco autoriza retirar automaticamente o direito à participação nas decisões. Conduza entrevista com perguntas abertas e exemplos concretos, procure concordâncias e discordâncias, documente o relato do informante e estabeleça acordos de segurança proporcionais.
+
+O oposto também existe: a pessoa pode ter queixa intensa, muito sofrimento subjetivo e desempenho relativamente preservado. Avalie depressão, ansiedade, dificuldades de sono, problemas de audição, excesso de responsabilidades e condições dolorosas. Evitar o termo "pseudodemência" como encerramento de diagnóstico: sintomas depressivos podem ser mimetizadores, comorbidade e sinal que antecede uma doença neurocognitiva. O seguimento longitudinal é o instrumento que frequentemente esclarece.
+
+### 18.3 Um atendimento de 20 minutos com valor clínico
+Em consulta com tempo reduzido, priorizar:
+1. Três marcos temporais: última fase de autonomia íntegra, primeira alteração e situação atual.
+2. Pergunta ao informante: "O que ela fazia sozinha há um ano que hoje não consegue mais fazer, apesar de ter condições físicas para tentar?".
+3. Uma triagem cognitiva validada adequada à escolaridade, sem substituir juízo clínico.
+4. Revisão de medicamentos de uso contínuo e recentes, em especial sedativos e anticolinérgicos.
+5. Busca de delirium, déficit focal, marcha atípica e sintomas de segurança.
+6. Planejamento de investigação e retorno documentados, com orientações imediatas de risco.
+
+É preferível essa avaliação ordenada e retorno programado a uma bateria indiscriminada de exames solicitados sem hipótese sindrômica.
+
+## 19. Exame cognitivo por domínios: exemplos e interpretação
+
+| Domínio | Pergunta ou tarefa ilustrativa | O que observar | Falso positivo frequente |
+|---|---|---|---|
+| Atenção | Repetir sequência de números ou tarefa sustentada estruturada | Distração, inconsistência, incapacidade de manter instrução | Hipoacusia, cansaço, delirium |
+| Aprendizagem verbal | Registro imediato e evocação após intervalo | Codificação, esquecimento após atraso, resposta a pistas | Depressão, idioma, déficit auditivo |
+| Linguagem | Nomeação, repetição, compreensão de ordem de múltiplas etapas | Anomia, parafasias, agramatismo | Baixa escolaridade, sotaque/variação linguística |
+| Função executiva | Alternância mental, planejamento de tarefa ou fluência semântica | Lentificação, perseveração, falta de estratégia | Baixa alfabetização, fadiga, ansiedade |
+| Visuoconstrução | Copiar figura e desenhar relógio | Desorganização espacial, negligência, planejamento | Baixa visão, tremor, apraxia motora |
+| Cognição social | Relatos concretos de julgamento e empatia em casa | Mudança desproporcional de comportamento | Conflito familiar sem declínio adquirido |
+
+### 19.1 Escores e escolaridade
+Um escore "normal" não exclui comprometimento inicial, e um escore "baixo" não diagnostica demência em pessoa com baixa alfabetização ou perda sensorial sem adaptação. Selecionar a **versão validada** do instrumento, registrar escolaridade e condições do teste, e evitar importar cortes de outro país ou de outra população como limites absolutos. Diferentes séries de normalização brasileiras para MEEM e MoCA podem trazer cortes divergentes. A interpretação adequada combina história longitudinal, dados do informante, desempenho e função.
+
+Para acompanhar, usar sempre que possível a mesma versão e contexto da avaliação, documentando mudanças de visão, audição, intercorrências médicas, humor e sono. O escore pode cair transitoriamente após hospitalização e delirium; não concluir progressão irreversível sem estabilizar o quadro e reexaminar.
+
+### 19.2 Como reconhecer um perfil amnésico de armazenamento
+Durante entrevista, o indivíduo aprende uma pequena história, mas após intervalo não recorda seus elementos essenciais e não reconhece corretamente respostas entre alternativas plausíveis. Se a atenção estava adequada na fase de aprendizagem, isso fortalece a hipótese de déficit de armazenamento episódico. Em contraste, alguém com doença frontal subcortical pode melhorar substancialmente com pistas, apesar de evocação espontânea muito ruim. Nenhum teste isolado define biomarcador Alzheimer. A utilidade consiste em formular hipótese de rede cerebral comprometida e escolher investigação apropriada.
+
+### 19.3 Atividade cognitiva e estímulo funcional
+Estimulação cognitiva em grupo, atividades significativas e reabilitação ocupacional são distintas de jogos digitais comerciais sem validação. O objetivo da intervenção é melhorar participação e funcionamento, favorecer autonomia compatível com a doença e diminuir sofrimento. O cuidador pode adaptar a casa usando rótulos legíveis, rotina previsível e demonstrações visuais. Evitar treinos extenuantes, infantilização ou exigir desempenho que exponha o paciente à vergonha.
+
+## 20. Raciocínio de neuroimagem: o que deve estar no pedido e no laudo
+
+### 20.1 Um exame, perguntas diferentes
+Na **RM estrutural**, perguntar: há tumor/hematoma/lesão estrutural tratável? Há infartos corticais ou lacunares cuja localização explica déficit? Há microangiopatia de grau relevante? Há micro-hemorragias? Como se distribui a atrofia? Há ventriculomegalia desproporcional à expansão dos sulcos, sugerindo HPN no contexto clínico adequado?
+
+Um laudo que informa "atrofia cerebral difusa e sinais de microangiopatia" pode refletir alterações frequentes com envelhecimento, mas a magnitude, a localização e o quadro funcional determinam sua relevância. **Neuroimagem não substitui história clínica**, e RM sem alterações marcantes não exclui doença neurodegenerativa inicial.
+
+**Atrofia medial temporal** pode apoiar fenótipo amnésico, mas não prova depósito de amiloide. **Atrofia frontotemporal assimétrica** em pessoa com mudança comportamental ou APP torna DLFT mais provável; não exclui etiologia Alzheimer em variante de linguagem. **Lesões subcorticais extensas** em doença vascular costumam acompanhar lentificação executiva; uma única lacuna estratégica pode causar impacto importante sem carga lesional exuberante.
+
+### 20.2 Por que não existe "tomografia normal, logo não há demência"?
+Tomografia é melhor para excluir algumas causas estruturais do que para caracterizar mudanças discretas de volume e doença de pequenos vasos em fases iniciais. Sua utilidade em emergência e para contraindicação de RM não diminui a exigência de correlação clínica. Em caso típico, diagnóstico sindrômico pode ser estabelecido clinicamente, com imagem ajudando na etiologia e segurança. Em apresentações atípicas, avaliação de especialista e testes adicionais podem redefinir hipótese.
+
+### 20.3 Biomarcadores de Alzheimer: três níveis distintos
+**Nível 1 — síndrome:** queixa + avaliação cognitiva e funcional definem que existe comprometimento adquirido. **Nível 2 — hipótese etiológica clínica:** fenótipo, curso, exame e imagem geram "Alzheimer provável", "vascular", "mista" ou outra causa. **Nível 3 — evidência biológica:** testes amiloides e/ou tau em líquor, PET ou estratégias validadas em contexto de especialidade podem modificar a probabilidade de patologia Alzheimer.
+
+Resultado biologicamente positivo não torna irrelevantes delirium, depressão e doença vascular concorrentes; também não prova que toda manifestação presente derive exclusivamente daquela patologia. A indicação de biomarcador cresce quando a apresentação é jovem, atípica, inconclusiva ou há planejamento de tratamento dependente da comprovação biológica.
+
+### 20.4 Hipóteses que exigem imagem prioritária
+Cefaleia ou déficit focal agudo, anticoagulação com queda/trauma, crise convulsiva nova, suspeita de tumor ou infecção e declínio acentuado em dias mudam a prioridade da avaliação. Evitar seguir a ordem eletiva de consultas ao detectar esses sinais. No caso de HPN, a RM é ideal para avaliação morfológica; o encaminhamento deve indicar o predomínio da marcha, tempo de evolução, déficits urinários e achados objetivos, não apenas o nome da tríade.
+
+## 21. Pacientes especiais e situações que exigem raciocínio adicional
+
+### 21.1 Demência de início jovem
+Comprometimento cognitivo antes dos 65 anos merece investigação etiológica mais ampla quando comparado ao fenótipo clássico de idade avançada. Alterações de linguagem e comportamento, doenças metabólicas, inflamatórias, genéticas ou relacionadas a substâncias podem ter peso maior em determinados cenários. Considerar história familiar multigeracional, profissão, exposição a solventes ou álcool, doença autoimune, alterações sistêmicas e sintomas motores. Investigações invasivas ou genéticas exigem aconselhamento e indicação fundamentada.
+
+O impacto social inclui trabalho, filhos dependentes, direção, renda e tomada de decisão patrimonial; o plano deve incluir rede familiar, assistência social e orientação profissional. A idade não prova nem exclui Alzheimer.
+
+### 21.2 Pessoa muito idosa e frágil
+A ponderação de exames e medicamentos inclui carga de tratamento, expectativa de benefício, risco de quedas, bradicardia, síncope, perda de peso, dificuldade de deglutição e preferências do paciente. Uma melhora pequena de pontuação não compensa automaticamente desmaios ou piora nutricional. Em pessoa com dependência avançada, o foco pode se deslocar para conforto, prevenção de sofrimento, apoio ao cuidador e tratamento proporcional.
+
+### 21.3 Deficiência sensorial e barreiras linguísticas
+Paciente com perda auditiva pode responder erroneamente porque não ouviu palavras da lista; uma pessoa com baixa acuidade visual pode falhar em desenhar relógio sem déficit visuoespacial. Providenciar correção auditiva e visual disponível, instruções claras, ambiente com pouco ruído e, quando pertinente, ferramentas adaptadas. Anotar a limitação no prontuário. Testagem em idioma não dominado é inadequada para inferir patologia.
+
+### 21.4 Transtorno de sono, dor e polifarmácia
+Sono fragmentado, privação crônica, apneia, dor persistente e uso de sedativos repercutem em atenção e função executiva. O plano inclui diferenciar fatores corrigíveis de neurodegeneração coexistente e acompanhar após intervenções. A revisão dos medicamentos exige identificar: duplicidade, doses renais, anticolinérgicos, hipnóticos, interações, automedicação, adesão e risco de retirada. **Não interromper benzodiazepínicos, corticosteroides, anticonvulsivantes ou outros fármacos suscetíveis a abstinência de forma abrupta por conta própria.**
+
+### 21.5 Comprometimento cognitivo associado ao HIV
+O diagnóstico depende da situação de tratamento, contexto virológico, apresentações infecciosas/oportunistas e condições concorrentes. Lembrar que quadro agudo febril, focal ou com alteração de consciência em paciente imunossuprimido pode representar infecção do sistema nervoso central, não "demência por HIV". Avaliação neurológica e infecciosa conforme riscos e gravidade pode incluir neuroimagem e líquor quando indicados e seguros.
+
+### 21.6 Sífilis e suspeita de neurossífilis
+Testes treponêmicos podem permanecer reagentes mesmo após tratamento, e a interpretação exige história, titulação não treponêmica, sinais neurológicos e avaliação dirigida. Sífilis sorológica isolada não significa que o déficit cognitivo seja neurossífilis. Seleção de punção liquórica e tratamento depende do quadro e de diretrizes de IST; evitar usar o resultado de teste isolado como atalho etiológico.
+
+## 22. Condições neuropsiquiátricas difíceis: diferenciar sem simplificar
+
+### 22.1 Psicose, delírio e alucinação
+Na psicose de uma doença neurocognitiva, investigar alucinações visuais, crenças falsas de roubo ou ameaça, repercussão emocional e risco. Perguntar se a pessoa está assustada ou tranquila; uma alucinação ocasional sem sofrimento importante pode demandar mais orientação ambiental e monitorização do que antipsicótico. Piora aguda impõe busca de delirium, novos medicamentos, problemas de visão, infecções sintomáticas e privação de sono.
+
+Na DCL, um paciente pode reconhecer que algumas imagens são irreais em momentos de lucidez, mas ter episódios de aparições vívidas; cuidado com antagonismo dopaminérgico. Em doença de Parkinson sob doses crescentes de dopaminérgicos, psicose pode ser relacionada à doença e ao tratamento; alterações da medicação motora exigem equipe familiarizada para evitar comprometimento funcional grave.
+
+### 22.2 Apatia não é necessariamente depressão
+**Apatia:** redução de iniciativa e participação sem relato proporcional de tristeza, culpa ou sofrimento subjetivo. **Depressão:** pode incluir humor deprimido ou anedonia com alterações de sono, apetite, autoestima e ideação autodepreciativa. Ambas podem coexistir com demência e uma terceira condição, delirium hipoativo, pode parecer apatia em entrevista breve. O tratamento depende de síndrome e da intensidade da incapacidade: aumentar estímulo estruturado e atividades significativas na apatia; investigar e manejar transtorno depressivo quando critérios e impacto justificam.
+
+### 22.3 Insônia e inversão sono-vigília
+Primeiro organizar horários, exposição diurna à luz, exercício compatível, evitar cochilos longos se prejudicarem o sono noturno, reduzir ruído noturno e tratar dor, noctúria, apneia e outras causas. Não trocar imediatamente uma noite ruim por hipnótico em idoso vulnerável a quedas. Avaliar agitação noturna nova como possível delirium, especialmente quando há febre, alteração de medicações ou sonolência diurna desproporcional.
+
+### 22.4 Agitação e comunicação
+O comportamento pode ser uma tentativa de comunicar dor, desconforto, medo ou dificuldade para compreender o ambiente. Abordagem útil: anunciar-se, falar com frases curtas, dar tempo de resposta, evitar confronto de memória, oferecer escolhas limitadas, reconhecer emoções e reduzir estímulos. Registrar antecedente-comportamento-consequência permite identificar gatilhos. Contenção física e farmacológica não devem substituir avaliação etiológica ou estratégias ambientais quando houver alternativas seguras.
+
+## 23. Seguimento por cenários e medidas de desfecho
+
+| Cenário | Avaliação longitudinal | Mudança que exige novo plano |
+|---|---|---|
+| CCL estável | Rever memória, função instrumental, sono, humor e exposições; intervalo individualizado | Nova perda funcional, piora rápida, déficit neurológico |
+| Alzheimer leve sob anticolinesterásico | Sintomas gastrointestinais, peso, FC, quedas, adesão, atividades instrumentais e bem-estar | Síncope, bradicardia, perda ponderal significativa, intolerância |
+| Alzheimer moderado/avançado | Alimentação, deglutição, mobilidade, banho, comunicação, objetivos de cuidado e suporte familiar | Aspiração, quedas, dor não comunicada, sobrecarga intensa do cuidador |
+| DCL | Flutuação, sono REM, alucinações, sintomas motores, quedas, hipotensão postural e fármacos | Agravamento motor após neuroléptico, alteração aguda de atenção |
+| Vascular/misto | Novos AVC, prevenção secundária específica, PA, glicemia, marcha e capacidade executiva | Focalidade súbita, piora em degraus, intolerância vascular |
+| DFT | Comportamento, linguagem, nutrição/hiperoralidade, suporte ocupacional e proteção social | Desinibição que exponha a perigo, disfagia, sobrecarga familiar |
+
+### 23.1 Avaliação de resposta terapêutica não é só repetir MEEM
+Defina, no início, dois ou três objetivos observáveis: menos necessidade de lembretes para usar medicação, redução de sofrimento durante atividades, maior participação em refeições, manutenção de marcha segura ou diminuição de alucinações angustiantes. Uma perda numérica pequena no teste durante meses não significa automaticamente "falha" de tratamento de doença progressiva; também não prova eficácia. Compare com curso esperado, relato do paciente/cuidador, efeitos adversos e objetivos.
+
+### 23.2 Quando encaminhar
+Encaminhamento a neurologia/geriatria/psiquiatria especializada é particularmente útil diante de início jovem, progressão rápida, déficit comportamental ou linguagem de início, parkinsonismo associado, alucinações visuais, hipótese de HPN, necessidade de biomarcadores, dúvida etiológica após avaliação inicial ou tratamento mal tolerado. Sinais de AVC, encefalopatia aguda, infecção do SNC ou crise exigem rede de urgência, e não fila ambulatorial convencional.
+
+### 23.3 Alta responsabilidade no aconselhamento
+Não informar à família que determinado paciente "tem seis meses" com base apenas em escore ou RM. O curso é heterogêneo. Comunicação deve separar o que sabemos (síndrome e perdas atuais), o que é provável (etiologia e evolução usual), o que permanece incerto (trajetória individual), quais recursos existem e que sinais justificam contato antes do retorno.
+
+## 24. Casos complementares que testam decisões distintas
+
+### Caso 5 — Linguagem como primeiro sintoma
+Mulher de 59 anos, professora, passa a procurar termos simples durante aulas, usa circunlóquios e tem dificuldade crescente para nomear objetos; familiares não relatam falhas significativas em trajetos conhecidos ou administração de contas. Piora lenta há dois anos, sem sinais focais súbitos. 
+**Problema:** síndrome de linguagem adquirida progressiva, considerando afasia progressiva primária e variantes de Alzheimer ou degeneração frontotemporal. 
+**Diferenciais:** AVC de instalação súbita seria incongruente; perda auditiva e transtorno depressivo podem agravar comunicação, mas não explicam automaticamente parafasias ou perda semântica progressiva.
+**Avaliação:** exame detalhado de nomeação, repetição, compreensão, fluência/gramática, avaliação funcional; RM para topografia e causas alternativas; encaminhar para fonoaudiologia e especialista se necessidade de caracterização e testes adicionais.
+**Conduta:** suporte comunicacional precoce, planejar adaptações ocupacionais e familiares, evitar rotular como Alzheimer típico sem investigar. 
+**Por que importa:** nem todo transtorno neurocognitivo degenerativo começa com memória; determinar o primeiro domínio modifica probabilidade etiológica e aconselhamento.
+
+### Caso 6 — "É só tristeza depois do luto?"
+Homem de 70 anos relata esquecimento e lentificação seis meses após falecimento da parceira. Dorme mal, perdeu interesse por atividades e se acusa de ser incapaz. Filha relata que ele continua pagando contas com segurança, mas está menos disposto a sair de casa. 
+**Problema:** sintomas depressivos clinicamente relevantes com queixa cognitiva; deve-se investigar depressão, ansiedade, sono e neurodegeneração concomitante, sem concluir "pseudodemência" definitiva.
+**Avaliação:** entrevista de humor e risco de autoagressão conforme contexto, medicações, avaliação cognitiva adaptada, informante e função; exames gerais proporcionais.
+**Conduta:** tratar transtorno de humor conforme indicação, suporte psicossocial e retorno para avaliar memória após melhora. Se déficit objetivo e perda funcional persistirem, aprofundar investigação neurocognitiva.
+**Por que importa:** o diagnóstico sindrômico pode mudar após tratar fator reversível, mas o acompanhamento evita perder doença subjacente.
+
+### Caso 7 — Queda em paciente anticoagulado
+Mulher de 81 anos, fibrilação atrial anticoagulada, escorregou em casa três semanas antes. Desde então apresenta cefaleia progressiva, lentificação e novos erros de orientação; marido refere perda de mobilidade. 
+**Problema:** deterioração subaguda com risco de hematoma subdural; não classificar de início como demência degenerativa.
+**Avaliação:** exame de sinais vitais, nível de consciência e focalidade, verificação de medicações e avaliação urgente com imagem craniana, conforme avaliação clínica e protocolos de anticoagulação/trauma.
+**Conduta:** encaminhamento imediato à rede com suporte diagnóstico e eventual neurocirurgia; manejo da anticoagulação apenas pela equipe que avaliar gravidade e achados, considerando risco tromboembólico.
+**Por que importa:** algumas causas estruturais de "demência" são tempo-dependentes e não podem aguardar consulta rotineira.
+
+### Caso 8 — A conta está errada, mas ele lembra da conversa
+Homem de 77 anos com HAS e diabetes, marcha lenta e redução progressiva da capacidade de planejar pagamentos, apesar de recordar bem acontecimentos recentes quando recebe pistas. RM: doença de pequenos vasos relevante e múltiplas lacunas, sem lesão expansiva. 
+**Problema:** síndrome predominantemente executiva com contribuição vascular provável; ainda considerar Alzheimer misto, depressão e fatores sensoriais.
+**Avaliação:** relação entre carga/topografia vascular e história, testes executivos e funcionais, pressão, glicemia, risco de quedas e investigação geral de causas agravantes.
+**Conduta:** controle apropriado de fatores de risco, plano de atividade física adaptada, estratégias para atividades instrumentais, reabilitação e seguimento; anticoagulante ou antiagregante só se houver indicação vascular específica.
+**Por que importa:** comprometimento vascular pode ser insidioso e não exige todos os eventos cerebrais serem reconhecidos como AVC clínico.
+
+## 25. Questões complementares para raciocínio de prova
+
+### Questão 9
+Idoso em consulta possui testes cognitivos alterados, mas não sabe ler e apresenta perda auditiva importante. Qual conduta é mais apropriada?
+A) Diagnosticar demência exclusivamente pelo corte numérico usual do MEEM.
+B) Repetir automaticamente a pontuação sem abordar audição.
+C) Adaptar instrumento às condições validadas, avaliar histórico e função, registrar limitação de teste e utilizar informante.
+D) Solicitar genotipagem APOE como teste confirmatório.
+**Gabarito: C.** O contexto sensorial e educacional pode interferir na interpretação. **A:** o escore isolado não estabelece síndrome. **B:** repetir sem corrigir fonte de erro perpetua viés. **D:** APOE não diagnostica demência de rotina. **Mini revisão:** instrumentos são auxiliares da avaliação cognitivo-funcional, não laudos etiológicos autônomos.
+
+### Questão 10
+Paciente relata episódios de esquecimento, mas ao receber pistas reconhece corretamente conteúdo aprendido, enquanto dificuldade maior é realizar tarefas que exigem alternância e planejamento. O padrão sugere:
+A) Falha executiva de recuperação mais que amnésia de armazenamento pura.
+B) Doença de Alzheimer biologicamente confirmada.
+C) Que não existe comprometimento cognitivo.
+D) Diagnóstico obrigatório de doença priônica.
+**Gabarito: A.** Melhora com pistas em meio a déficit executivo sugere recuperação comprometida; associação não é específica. **B:** pistas não confirmam patologia. **C:** há prejuízo possível em outros domínios. **D:** faltam progressão rápida e dados adicionais. **Mini revisão:** memória é processo dividido em registro, armazenamento e recuperação.
+
+### Questão 11
+Qual estratégia é mais coerente com as recomendações internacionais de sintomas comportamentais em demência?
+A) Antipsicótico para qualquer insônia.
+B) Avaliar fatores clínicos e ambientais, priorizar intervenções psicossociais, reservando antipsicóticos para risco ou sofrimento grave.
+C) Valproato rotineiro para agitação inespecífica.
+D) Contenção física profilática.
+**Gabarito: B.** A intervenção deve considerar causas de sofrimento e segurança. **A:** risco de iatrogenia e falta de indicação. **C:** não recomendação de rotina para agitação, salvo outra condição específica. **D:** restringe autonomia e pode aumentar dano. **Mini revisão:** compreender o comportamento precede sedá-lo.
+
+### Questão 12
+Paciente de 60 anos apresenta alteração de personalidade progressiva e atrofia frontotemporal. A família solicita donepezila para "estimular memória". A melhor resposta é:
+A) Prescrever em toda demência, porque todos os mecanismos são iguais.
+B) Esclarecer que na demência frontotemporal pura inibidores da acetilcolinesterase não são recomendados rotineiramente; individualizar tratamento comportamental e apoio familiar.
+C) Prescrever memantina para a cura da neurodegeneração frontotemporal.
+D) Recusar qualquer avaliação adicional.
+**Gabarito: B.** O tratamento depende de etiologia, não do rótulo "demência". **A:** falso; resposta e riscos diferem. **C:** não há cura por memantina. **D:** diagnóstico, segurança e recursos devem ser desenvolvidos. **Mini revisão:** DFT requer abordagem específica e confirmação clínica da síndrome.
+
+### Questão 13
+Qual afirmação é correta sobre neuroimagem em investigação de demência?
+A) Atrofia hipocampal isolada confirma biologicamente Alzheimer.
+B) RM normal exclui doença neurodegenerativa inicial.
+C) RM pode identificar lesões vasculares, tumor, subdural, hidrocefalia e padrões de atrofia, mas o diagnóstico requer correlação clínica.
+D) PET amiloide é obrigatório para todo paciente da APS com queixa.
+**Gabarito: C.** Estruturas, carga lesional e distribuição orientam hipóteses. **A:** achado não confirma depósito específico de proteína. **B:** doença inicial pode não apresentar imagem estrutural característica. **D:** uso especializado e critérios de elegibilidade, não rastreamento indiscriminado. **Mini revisão:** imagem é componente da investigação etiológica e do diferencial, não substituto de história/funcionalidade.
+
+### Questão 14
+Pessoa de 72 anos apresenta declínio executivo, febre, crise convulsiva focal e mudança de comportamento em três semanas. A abordagem adequada é:
+A) Diagnosticar Alzheimer típico e rever em seis meses.
+B) Solicitar teste genético comercial como único exame.
+C) Investigar urgentemente causas de encefalopatia/subagudas, incluindo infecciosas, autoimunes, epilépticas e estruturais.
+D) Limitar avaliação a escala funcional.
+**Gabarito: C.** Fenótipo, convulsão e febre são alertas que exigem atendimento e investigação imediatos. **A:** evolução e sintomas não correspondem a curso típico. **B:** desproporcional e inseguro. **D:** função não substitui avaliação de urgência. **Mini revisão:** declínio rapidamente progressivo pode ser tratável; tempo de investigação impacta desfecho.
+
+## 26. Checklist final de domínio por perguntas
+
+Antes de marcar como autossuficiente, uma pessoa que estudou somente este documento deve responder: 
+- Qual a diferença **funcional** entre CCL e demência e por que o MEEM sozinho não resolve?
+- Que pistas distinguem delirium hipoativo de progressão neurodegenerativa em idoso?
+- Como memória amnéstica hipocampal difere de falha executiva de evocação?
+- Por que uma tomografia com microangiopatia não diagnostica por si só demência vascular?
+- Quais quatro características nucleares da DCL devem ser lembradas e qual o risco dos antipsicóticos?
+- Como suspeitar de uma doença frontotemporal quando não há queixa importante de memória?
+- Quando investigar HPN e por que a tríade incompleta não exclui?
+- Qual é a abordagem imediata diante de suspeita de Wernicke, e por quê?
+- Quais exames gerais e de imagem costumam integrar a avaliação inicial, e quando individualizar?
+- Quais tratamentos do PCDT brasileiro são apropriados conforme estágios de Alzheimer, incluindo fase grave?
+- Quais causas de declínio cognitivo rapidamente progressivo podem exigir terapias urgentes?
+- Que variáveis de saúde, autonomia e bem-estar devem ser medidas no seguimento, além do escore cognitivo?
+
+**Status:** respostas principais estão distribuídas nos capítulos, mas o documento continua sob revisão científica e editorial. Esta seção não certifica por si mesma 60.000 caracteres úteis, não substitui inspeção de imagens e PWA nem transforma texto preliminar em orientação individualizada para pacientes.
+
+### Notas de revisão de fontes em 15/10/2026
+- A listagem oficial dos PCDTs do Ministério da Saúde registra **Doença de Alzheimer, Portaria Conjunta SAES/SCTIE/MS nº 27, de 27/11/2025, publicada em 28/11/2025**, e também a versão atualizada de Parkinson de 2025. Link de conferência: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/pcdt
+- Página específica oficial **PCDT da Doença de Alzheimer (2025)**: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer
+- NICE NG97 diferencia fármacos por etiologia e recomenda revisão dos antipsicóticos ao menos a cada 6 semanas quando excepcionalmente necessários; conferir indicações específicas e prescrição local: https://www.nice.org.uk/guidance/ng97/chapter/Recommendations
+- A diretriz DETeCD-ADRD de diagnóstico em atenção primária/especializada exige avaliação sindrômica, testes cognitivos validados, painel laboratorial individualizado e RM estrutural ou TC quando necessário; nela, homocisteína e marcadores inflamatórios são recomendados como parte do painel Tier 1, mas a seleção brasileira deve seguir acesso e indicações locais: https://pmc.ncbi.nlm.nih.gov/articles/PMC12173843/
