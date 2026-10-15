@@ -1,0 +1,315 @@
+{
+  "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
+  "version": 1,
+  "created": "2026-10-14",
+  "source_branch": "editorial/apostilas-lote-02-asma-20261014",
+  "status": "RASCUNHO — não aprovado e não publicado",
+  "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
+  "cautions": [
+    "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
+    "Nenhuma seção foi validada visualmente no renderer ou PWA.",
+    "A transformação automática preservou blocos, mas a repetição semântica e o fluxo pedagógico ainda exigem revisão.",
+    "Pneumonia adulta permanece sem benchmark equivalente do Drive; a referência comparada é pediátrica.",
+    "Imagens candidatas não foram verificadas quanto a licença e não foram enviadas ao Admin.",
+    "Não considerar as tabelas prescritivas aptas ao uso assistencial sem revisão clínica e farmacêutica."
+  ],
+  "books": [
+    {
+      "id": "ASMA",
+      "title": "Asma brônquica",
+      "area": "Clínica Médica",
+      "materia": "Pneumologia",
+      "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
+      "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
+      "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
+      "consolidated_sha": "a1aba4baf6caadb20c564340716d2bcc05c77ea1",
+      "source_raw_characters": 74961,
+      "consolidated_raw_characters": 65653,
+      "consolidated_approximate_plain_characters": 64150,
+      "chapter_count": 10,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Fundamentos e fisiopatologia"
+        },
+        {
+          "chapter": 2,
+          "title": "Quadro clínico e diagnósticos diferenciais"
+        },
+        {
+          "chapter": 3,
+          "title": "Diagnóstico e interpretação funcional"
+        },
+        {
+          "chapter": 4,
+          "title": "Controle, gravidade e risco futuro"
+        },
+        {
+          "chapter": 5,
+          "title": "Tratamento controlador e estratégias AIR/MART"
+        },
+        {
+          "chapter": 6,
+          "title": "Exacerbação e emergência"
+        },
+        {
+          "chapter": 7,
+          "title": "Asma grave, biomarcadores e imunobiológicos"
+        },
+        {
+          "chapter": 8,
+          "title": "Populações especiais e comorbidades"
+        },
+        {
+          "chapter": 9,
+          "title": "Casos clínicos comentados"
+        },
+        {
+          "chapter": 10,
+          "title": "Questões autorais comentadas"
+        }
+      ],
+      "case_count": 8,
+      "question_count": 12,
+      "source_numbered_chapter_count": 27,
+      "preflight_warnings": [],
+      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+    },
+    {
+      "id": "DPOC",
+      "title": "DPOC",
+      "area": "Clínica Médica",
+      "materia": "Pneumologia",
+      "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
+      "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
+      "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
+      "consolidated_sha": "7a21ad7f6f53e439757dd9ce1f43c97841d61a12",
+      "source_raw_characters": 78323,
+      "consolidated_raw_characters": 71258,
+      "consolidated_approximate_plain_characters": 69529,
+      "chapter_count": 9,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Fisiologia obstrutiva, enfisema e hiperinsuflação"
+        },
+        {
+          "chapter": 2,
+          "title": "Suspeita clínica, exames e diagnóstico"
+        },
+        {
+          "chapter": 3,
+          "title": "Classificação GOLD 2026 e PCDT brasileiro"
+        },
+        {
+          "chapter": 4,
+          "title": "Tratamento estável e dispositivos inalatórios"
+        },
+        {
+          "chapter": 5,
+          "title": "Exacerbação: diagnóstico, gases, antibióticos e suporte"
+        },
+        {
+          "chapter": 6,
+          "title": "Oxigênio de longa duração, sono e reabilitação"
+        },
+        {
+          "chapter": 7,
+          "title": "Seguimento, comorbidades e populações especiais"
+        },
+        {
+          "chapter": 8,
+          "title": "Casos clínicos comentados"
+        },
+        {
+          "chapter": 9,
+          "title": "Questões autorais comentadas"
+        }
+      ],
+      "case_count": 12,
+      "question_count": 16,
+      "source_numbered_chapter_count": 28,
+      "preflight_warnings": [],
+      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+    },
+    {
+      "id": "DIABETES_MELLITUS",
+      "title": "Diabetes mellitus",
+      "area": "Clínica Médica",
+      "materia": "Endocrinologia",
+      "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
+      "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
+      "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
+      "consolidated_sha": "cdbb953aab8e9808b65cd4eceabf80aef9b6bab8",
+      "source_raw_characters": 73020,
+      "consolidated_raw_characters": 64223,
+      "consolidated_approximate_plain_characters": 62556,
+      "chapter_count": 10,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Homeostase glicêmica e fisiopatologia"
+        },
+        {
+          "chapter": 2,
+          "title": "Critérios diagnósticos e interpretação de testes"
+        },
+        {
+          "chapter": 3,
+          "title": "Classificação diferencial, DM1, DM2 e monogênicos"
+        },
+        {
+          "chapter": 4,
+          "title": "Metas, estilo de vida e farmacoterapia do DM2"
+        },
+        {
+          "chapter": 5,
+          "title": "Insulina no DM1, hipoglicemia e monitorização"
+        },
+        {
+          "chapter": 6,
+          "title": "Emergências: CAD e estado hiperosmolar"
+        },
+        {
+          "chapter": 7,
+          "title": "Complicações crônicas e rastreamento"
+        },
+        {
+          "chapter": 8,
+          "title": "Pessoas idosas, gestação, internação e cirurgia"
+        },
+        {
+          "chapter": 9,
+          "title": "Casos clínicos comentados"
+        },
+        {
+          "chapter": 10,
+          "title": "Questões autorais comentadas"
+        }
+      ],
+      "case_count": 10,
+      "question_count": 16,
+      "source_numbered_chapter_count": 27,
+      "preflight_warnings": [],
+      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+    },
+    {
+      "id": "PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE",
+      "title": "Pneumonia adquirida na comunidade",
+      "area": "Clínica Médica",
+      "materia": "Pneumologia",
+      "source_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
+      "consolidated_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
+      "source_sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
+      "consolidated_sha": "9e35733eb135c3ae7d859735a5b8d1a028a82209",
+      "source_raw_characters": 76752,
+      "consolidated_raw_characters": 68748,
+      "consolidated_approximate_plain_characters": 66797,
+      "chapter_count": 10,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Anatomia respiratória, inflamação e semiologia"
+        },
+        {
+          "chapter": 2,
+          "title": "Etiologia e fatores de risco microbiológicos"
+        },
+        {
+          "chapter": 3,
+          "title": "Diagnóstico e estratificação de gravidade"
+        },
+        {
+          "chapter": 4,
+          "title": "Imagem, microbiologia e diferenciais"
+        },
+        {
+          "chapter": 5,
+          "title": "Antibioticoterapia, duração e corticoide"
+        },
+        {
+          "chapter": 6,
+          "title": "Decisão entre ambulatório, enfermaria e UTI"
+        },
+        {
+          "chapter": 7,
+          "title": "Falha terapêutica, complicações e seguimento"
+        },
+        {
+          "chapter": 8,
+          "title": "Populações especiais e segurança"
+        },
+        {
+          "chapter": 9,
+          "title": "Casos clínicos comentados"
+        },
+        {
+          "chapter": 10,
+          "title": "Questões autorais comentadas"
+        }
+      ],
+      "case_count": 12,
+      "question_count": 18,
+      "source_numbered_chapter_count": 27,
+      "preflight_warnings": [],
+      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+    },
+    {
+      "id": "TUBERCULOSE",
+      "title": "Tuberculose",
+      "area": "Clínica Médica",
+      "materia": "Infectologia",
+      "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
+      "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
+      "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
+      "consolidated_sha": "25d11f77c2ac6479852db96837cbc2024b4fe166",
+      "source_raw_characters": 97368,
+      "consolidated_raw_characters": 84634,
+      "consolidated_approximate_plain_characters": 82276,
+      "chapter_count": 9,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Microbiologia, transmissão e história natural"
+        },
+        {
+          "chapter": 2,
+          "title": "Apresentação clínica e diagnóstico na rede"
+        },
+        {
+          "chapter": 3,
+          "title": "Formas extrapulmonares e emergências"
+        },
+        {
+          "chapter": 4,
+          "title": "Tratamento da TB sensível e acompanhamento"
+        },
+        {
+          "chapter": 5,
+          "title": "Tuberculose drogarresistente: seleção e monitorização"
+        },
+        {
+          "chapter": 6,
+          "title": "Infecção latente e prevenção"
+        },
+        {
+          "chapter": 7,
+          "title": "HIV, populações especiais, vigilância e armadilhas"
+        },
+        {
+          "chapter": 8,
+          "title": "Casos clínicos comentados"
+        },
+        {
+          "chapter": 9,
+          "title": "Questões autorais comentadas"
+        }
+      ],
+      "case_count": 10,
+      "question_count": 18,
+      "source_numbered_chapter_count": 26,
+      "preflight_warnings": [],
+      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+    }
+  ]
+}
