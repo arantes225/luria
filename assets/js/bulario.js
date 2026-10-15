@@ -149,6 +149,10 @@
   // Unverified draft fields must never be transformed into a copyable prescription.
   function approvedFormulations(data){
     const d=data||{},all=Array.isArray(d.formulations)?d.formulations:[];
+    // Do not offer an ambiguous selector with dozens of clinically distinct
+    // dose plans sharing the same label; such rows need editorial review first.
+    const labels=new Set(all.map(f=>normalized(f?.label||'')));
+    if(d.quality_audit?.priority==='P0'&&all.length>=30&&labels.size<=all.length/2)return [];
     const reviewed=['posology_verified','verified','source_reviewed'].includes(d.status);
     if(!reviewed)return [];
     const required=['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'];
