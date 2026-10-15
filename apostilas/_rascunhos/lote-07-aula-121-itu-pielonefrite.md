@@ -255,6 +255,84 @@ Quando urocultura e antibiograma identificarem organismo e sensibilidade, seleci
 **Limite deste quadro:** os exemplos de dose foram extraídos das recomendações internacionais para adultos específicos, não fornecem prescrição completa com ajuste individual. Antes da publicação, acrescentar ficha farmacológica brasileira para cada produto/formulação.
 
 
+
+### 17.9. Auditoria crítica de prescrições: o que é seguro afirmar e o que precisa ser validado
+
+O maior erro na farmácia da ITU é **transportar automaticamente a mesma prescrição entre cenários diferentes**. Para uma escolha correta, quatro elementos devem coincidir: **síndrome anatômica**, **agente e sua sensibilidade**, **exposição do antimicrobiano no tecido relevante** e **paciente** (idade, gestação, filtração renal, contraindicações, medicamentos concomitantes).
+
+| Cenário clínico | Fármaco que NÃO deve ser escolhido por esse motivo | Razão farmacológica / operacional |
+|---|---|---|
+| Cistite típica não complicada de mulher não gestante | Fluoroquinolona como primeira escolha rotineira | Diretriz EAU prioriza outras opções por relação benefício-risco e impacto de resistência |
+| Pielonefrite febril / bacteremia urinária | Nitrofurantoína oral | Níveis urinários elevados **não equivalem** a níveis adequados no parênquima renal ou na corrente sanguínea |
+| Pielonefrite febril / doença renal sistêmica | Fosfomicina trometamol **oral em dose única** | Regime desenhado para cistite localizada, sem comprovação de exposição renal sistêmica apropriada |
+| Suspeita de prostatite aguda | Nitrofurantoína | Penetração prostática inadequada |
+| Gestante com pielonefrite e vômitos | Esquema oral de cistite em monoterapia | Necessidade de avaliação hospitalar e terapia com exposição renal apropriada; a segurança fetal modifica a escolha |
+| Criança pequena / lactente | Dose fixa de adulto reduzida "no olho" | Dose pediátrica depende de peso, idade, função renal e do denominador mg/kg/dose **versus** mg/kg/dia |
+| Idoso com bacteriúria e queda, sem sintomas ou sinais sistêmicos | Antibiótico dirigido ao antibiograma por rotina | Ausência de síndrome de ITU: tratar colonização aumenta eventos adversos e resistência |
+| Obstrução urinária infectada com choque | Apenas antibiótico venoso, sem discutir drenagem | Foco sob pressão permanece; descompressão é parte essencial do tratamento |
+
+**Conferência direta na EAU 2026:** para cistite de mulher adulta não gestante são exemplos de esquemas internacionais: fosfomicina trometamol 3 g VO dose única; nitrofurantoína **monoidratada/macrocistais** 100 mg VO duas vezes por dia por cinco dias; nitrofurantoína **macrocistais convencionais** 50–100 mg VO quatro vezes por dia por cinco dias; sulfametoxazol/trimetoprima 800/160 mg VO duas vezes por dia por três dias **somente em cenário de resistência local apropriada**. Essas linhas não são intercambiáveis e não provam existência da mesma apresentação no comércio brasileiro. A sigla "nitrofurantoína 100 mg" sozinha **não informa liberação, frequência ou regime**. Conferir registro sanitário, bula e formulação disponíveis no serviço; não corrigir forma farmacêutica por memória de marca importada.
+
+**Fosfomicina oral versus intravenosa:** os nomes de princípio ativo podem parecer iguais, mas formulação, biodisponibilidade, indicação e tratamento de doença sistêmica são diferentes. A prescrição de "fosfomicina 3 g em dose única" deve ficar associada à **cistite**, não a urossepses/pielonefrite. Se o serviço dispõe de fosfomicina intravenosa para situações especiais, a avaliação é distinta e exige infectologia/protocolo próprio.
+
+### 17.10. O tratamento curto na IDSA 2025 é condicional, não universal
+
+A IDSA 2025 orienta, em **ITU complicada/pielonefrite que melhora com antimicrobiano efetivo**, considerar duração total de **5–7 dias de fluoroquinolona** ou **sete dias de alternativa não fluoroquinolona**, contra dez a quatorze dias indiscriminados. Para bacteremia gram-negativa com foco urinário controlado e resposta clínica, sugere curso de sete dias em pessoas selecionadas. A contagem começa **no primeiro dia de antibiótico realmente efetivo**, não necessariamente no dia da primeira dose de qualquer fármaco.
+
+**Limitações dos estudos citadas pela própria diretriz:** muitos ensaios excluíram pacientes com cateter urinário de longa permanência, sepse grave, imunossupressão, abscesso urinário, doença renal crônica, prostatite, obstrução completa ou cirurgia urológica. Consequentemente, **não é correto** afirmar que toda urossepses associada a cálculo, transplantado grave ou prostatite obrigatoriamente recebe sete dias. Em homem com ITU febril **e suspeita de prostatite bacteriana aguda**, um curso mais longo, por exemplo 10–14 dias em determinados cenários da diretriz, pode ser necessário, com protocolo e resposta individual.
+
+**Exemplo cronológico:** paciente recebeu dois dias de antibiótico empírico que depois se mostrou **sem atividade** contra o isolado de sangue/urina. No terceiro dia iniciou antibiótico com atividade e exposição adequada, melhorando rapidamente. Contar sete dias a partir da primeira dose inicial inefetiva seria incorreto; o referencial IDSA é o primeiro dia de terapia **efetiva**. O total escolhido deve considerar controle de foco e todos os fatores clínicos.
+
+**Exemplo anatômico:** paciente melhora da febre, mas mantém cálculo obstrutivo e hidronefrose. A melhora transitória não elimina o foco. Não reduzir o cuidado a "qual é o antibiótico de sete dias?": consultar urologia sobre descompressão e intervenção, com terapia ajustada ao contexto.
+
+### 17.11. IDSA 2025 mudou também a classificação clínica — não confundir com EAU
+
+A publicação IDSA 2025 privilegia se a infecção está **confinada à bexiga** ou é **sistêmica/atinge estruturas superiores**, permitindo que algumas mulheres e **alguns homens** com sintomas realmente vesicais e sem sinais sistêmicos sejam classificados como tendo **ITU não complicada** para seus fins. Diabetes, idade, sexo masculino ou alterações urológicas estáveis **não tornam toda ITU automaticamente complicada** pela definição IDSA 2025; alguns fatores exigem vigilância e alteram antibiótico/duração, mesmo com síndrome vesical.
+
+Em contrapartida, febre, calafrios, dor no flanco e sinais sistêmicos, prostatite suspeita, cateter urinário com infecção sintomática, hidronefrose obstrutiva ou sepse mudam a avaliação. A EAU 2026 também diferencia **infecção localizada e sistêmica**, mas mantém contextos e recomendações próprios. **Não misturar critérios EAU de escolha empírica com regras IDSA de duração como se fossem o mesmo estudo.**
+
+**Três pacientes com disúria:**
+1. Jovem não gestante, sem febre/flanco, com urgência e polaciúria, sem corrimento: síndrome localizada provável.
+2. Homem jovem com disúria sem febre, dor perineal ou retenção: avaliar cistite localizada e risco prostático, não rotular automaticamente pielonefrite só pelo sexo; seleção de esquema ainda difere.
+3. Homem com febre, dor perineal, retenção e mal-estar: síndrome sistêmica e possível prostatite; **não** aplicar tratamento vesical curto de três dias.
+
+### 17.12. O que precisa constar numa ficha farmacológica brasileira publicável?
+
+Um quadro internacional de regime é ótimo para prova, mas **não é receita pronta para UBS/PS**. A ficha definitiva por antimicrobiano terá:
+
+1. **Nome genérico e produto/formulação disponível no Brasil**, registro/bula e se a apresentação tem liberação prolongada ou convencional.
+2. **Indicação anatômica**, incluindo se há concentração eficaz para bexiga, rim, próstata e bacteremia.
+3. **População** (adulto, gestante e trimestre, RN, criança, idoso, DRC, transplante).
+4. **Posologia** em unidade sem ambiguidade: mg por dose, intervalo, duração; quando pediátrica, distinguir mg/kg/dia dividido de mg/kg/dose, máximo por dose/dia.
+5. **Ajuste renal**: método de estimar depuração adequado à população, faixas de função renal e necessidade de monitorização. Se uso de antibiótico exige dose de ataque e manutenção distinta, registrar.
+6. **Modo de uso**, via, necessidade de alimentos e, se IV, reconstituição, concentração final, diluente e velocidade de infusão.
+7. **Alergias reais e reações adversas**, incluindo QT, tendão, neurotoxicidade, hipercalemia, mielossupressão, risco renal e G6PD quando pertinente.
+8. **Interações e duplicidade terapêutica**: varfarina, bloqueadores do SRAA, antiarrítmicos, suplementos e fármacos nefrotóxicos.
+9. **Microbiologia**: resistência local, culturas prévias, suspeita ESBL, resultado definitivo e plano de estreitamento.
+10. **Acompanhamento e critérios de falha**: tolerância oral, febre persistente, dor, obstrução, cultura e retorno.
+
+**Bloqueio explícito:** enquanto faltarem fichas brasileiras completas e revisão da terapêutica pediátrica/obstétrica, a apostila será um **material de estudo**, não protocolo de prescrição automatizada do Modo Trabalho da LURIA.
+
+### 17.13. Armadilhas de antibióticos em gestação e na infância
+
+Na **gestação**, evitar generalizações como "nitrofurantoína é segura em todos os trimestres sem ressalvas" ou "qualquer penicilina empírica funcionará"; o agente deve ser ativo e seguro no trimestre, com atenção à deficiência de G6PD e proximidade do parto para nitrofurantoína. TMP-SMX exige ponderação por trimestre e disponibilidade de alternativas. A IDSA 2019 sugere tratar bacteriúria assintomática gestacional por **4–7 dias para a maioria dos regimes**, mas reconhece variação conforme fármaco e que a eficácia da dose única de fosfomicina precisa ser interpretada separadamente, sem inferir que todo antibiótico em dose única serve para essa indicação.
+
+Em **lactentes com febre**, a positividade da urina não dispensa avaliar risco de bacteremia/meningite pela idade. Urinocultura de **saco coletor positivo não confirma ITU**. Se criança tem sepse/choque, escolher esquema sistêmico conforme idade e peso e obter suporte de urgência; não usar apenas antibiótico de cistite por via oral. Imagem depois de ITU febril depende de idade, fatores de risco, evolução e diretriz, e **não** implica uretrocistografia universal após a primeira cistite.
+
+**Reforço da fonte brasileira SBP:** disfunção vesicointestinal e constipação têm papel relevante na recidiva de crianças maiores; tratar comportamento miccional/constipação não é conselho decorativo, mas redução do terreno que favorece infecção recorrente.
+
+### 17.14. Quatro vinhetas de revisão farmacológica aplicada
+
+**Vinheta A — fórmula farmacêutica.** Mulher sem sinais sistêmicos tem indicação de nitrofurantoína por cistite. Prescrição escrita "100 mg 12/12 h" não informa a apresentação. Conferir se é formulação **monoidratada/macrocistais ou liberação prolongada** apropriada; o regime não pode ser imposto a macrocistais convencionais por identidade do princípio ativo.
+
+**Vinheta B — antibiograma e rim.** Mulher tem urocultura com bactéria sensível a nitrofurantoína, mas apresenta febre de 39 °C, calafrios e dor lombar. O antibiótico aparentemente "sensível" não será adequado ao parênquima renal; a síndrome supera a leitura isolada da coluna do antibiograma.
+
+**Vinheta C — falha e foco.** Homem com cálculo impactado, hidronefrose, febre e hipotensão recebe antibiótico IV de amplo espectro e aparenta melhorar após horas. Ele ainda necessita avaliação urgente para **drenagem/descompressão**: terapia antimicrobiana não remove obstrução infectada.
+
+**Vinheta D — função renal/hipercalemia.** Idoso usa bloqueador do receptor de angiotensina e tem função renal comprometida; cogita-se TMP-SMX para ITU. Mesmo que o agente seja ativo, a combinação pode elevar **potássio sérico**, além de exigir ajuste renal. O risco medicamentoso pode mudar a escolha, a dose e a monitorização.
+
+**Fontes desta revisão:** EAU Guidelines on Urological Infections (edição consultada em 15/10/2026), https://uroweb.org/guidelines/urological-infections/chapter/the-guideline ; IDSA 2025 Complicated UTI, https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/ ; IDSA 2019 Bacteriúria Assintomática, https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/ ; Sociedade Brasileira de Pediatria, Infecção urinária na criança, https://www.sbp.com.br/pediatria-para-familias/doencas/infeccao-urinaria-na-crianca/ .
+
 ## 18. Populações especiais: o diagnóstico muda antes da prescrição
 
 ### 18.1. Gestação: adaptação fisiológica, risco e vigilância
