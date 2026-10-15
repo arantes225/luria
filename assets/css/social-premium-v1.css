@@ -1,0 +1,391 @@
+/* LURIA Premium / Social pilot, 15 Oct 2026.
+   Deliberately scoped: NEVER touches the iconic blue frame, shell, sidebar or topbar.
+   Palette follows the four existing identity/appearance combinations. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
+  --lp-radius:20px;
+  --lp-border:color-mix(in srgb,var(--color-primary-text) 10%,var(--color-border));
+  --lp-shadow:0 5px 20px color-mix(in srgb,var(--color-text-primary) 5%,transparent);
+  --lp-hover-shadow:0 11px 28px color-mix(in srgb,var(--color-text-primary) 9%,transparent);
+  --lp-teal-surface:color-mix(in srgb,var(--sf-teal) 8%,var(--color-surface));
+  --lp-violet-surface:color-mix(in srgb,var(--sf-violet) 8%,var(--color-surface));
+  --lp-warm-surface:color-mix(in srgb,var(--sf-warm) 8%,var(--color-surface));
+
+  /* Community navigation is a clear part of the page, not another app toolbar. */
+  &:not(.social-in-room) .community-nav {
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:10px;
+    margin:0 0 18px!important;
+    padding:0!important;
+    border:0!important;
+    background:transparent!important;
+    width:100%!important;
+  }
+  .community-nav a {
+    display:flex!important;
+    align-items:center;
+    justify-content:flex-start;
+    gap:12px;
+    min-width:0;
+    flex:none!important;
+    min-height:62px!important;
+    padding:12px 17px!important;
+    box-sizing:border-box;
+    border:1px solid var(--lp-border)!important;
+    border-radius:16px!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow)!important;
+    color:var(--color-text-secondary)!important;
+    font-size:14px!important;
+    font-weight:550!important;
+    transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+  }
+  .community-nav a::before {
+    content:"";
+    display:block;
+    width:12px;
+    height:12px;
+    flex:none;
+    border-radius:4px;
+    background:var(--color-primary-text);
+    box-shadow:0 0 0 6px var(--color-primary-subtle);
+  }
+  .community-nav a[data-community-tab="groups"]::before {
+    background:var(--sf-violet);
+    box-shadow:0 0 0 6px var(--lp-violet-surface);
+  }
+  .community-nav a[data-community-tab="rooms"]::before {
+    background:var(--sf-teal);
+    box-shadow:0 0 0 6px var(--lp-teal-surface);
+  }
+  .community-nav a[aria-selected="true"] {
+    background:var(--color-primary-subtle)!important;
+    color:var(--color-primary-text)!important;
+    border-color:color-mix(in srgb,var(--color-primary-text) 35%,var(--color-border))!important;
+    box-shadow:0 4px 16px color-mix(in srgb,var(--color-primary-text) 12%,transparent)!important;
+    font-weight:650!important;
+  }
+  .community-nav a:hover {
+    transform:translateY(-2px);
+    border-color:color-mix(in srgb,var(--color-primary-text) 30%,var(--color-border))!important;
+    box-shadow:var(--lp-hover-shadow)!important;
+  }
+
+  /* Friends: typographic hierarchy and generous, bounded surfaces. */
+  #community-friends-panel .social-grid {
+    grid-template-columns:minmax(0,1fr) minmax(245px,270px);
+    gap:16px!important;
+    align-items:start;
+  }
+  #community-friends {
+    padding:22px!important;
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow)!important;
+    min-width:0;
+  }
+  #community-friends .social-card-head {
+    gap:7px 10px!important;
+    margin:0 0 18px!important;
+  }
+  #community-friends .social-card-head h2 {
+    font-size:22px!important;
+    letter-spacing:-.03em;
+    line-height:1.25;
+    font-weight:650!important;
+    color:var(--color-text-primary);
+  }
+  #community-friends .sf-section-copy {
+    font-size:13px!important;
+    line-height:1.55!important;
+    max-width:56ch;
+  }
+  #community-friends #social-friend-count {
+    border:1px solid color-mix(in srgb,var(--sf-teal) 25%,var(--color-border));
+    background:var(--lp-teal-surface)!important;
+    color:var(--sf-teal)!important;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:12px;
+  }
+  #community-friends #friends-ref-add-toggle {
+    min-height:42px!important;
+    padding:0 16px!important;
+    border-radius:12px!important;
+    background:var(--color-primary)!important;
+    color:var(--color-primary-foreground)!important;
+    box-shadow:0 5px 13px color-mix(in srgb,var(--color-primary-text) 15%,transparent);
+    font-size:13px!important;
+    font-weight:600!important;
+  }
+  #community-friends #friends-ref-add-toggle .social-icon {
+    width:17px;
+    height:17px;
+  }
+  #community-friends .sf-search {
+    margin:0 0 16px;
+    gap:7px;
+  }
+  #community-friends .sf-search>span {
+    font-size:12px;
+    font-weight:550;
+  }
+  #community-friends #friends-search {
+    min-height:46px!important;
+    border:1px solid var(--color-border)!important;
+    border-radius:12px!important;
+    background:var(--color-surface-elevated)!important;
+    padding:10px 14px!important;
+    font-size:14px!important;
+    color:var(--color-text-primary)!important;
+  }
+  #community-friends #friends-list {
+    grid-template-columns:repeat(auto-fill,minmax(min(100%,228px),1fr))!important;
+    gap:12px!important;
+  }
+  #community-friends #friends-list .sf-person-card {
+    border:1px solid var(--lp-border)!important;
+    border-radius:17px!important;
+    box-shadow:0 2px 11px color-mix(in srgb,var(--color-text-primary) 4%,transparent)!important;
+    overflow:hidden;
+    padding:0 16px 16px!important;
+    background:var(--color-surface)!important;
+    transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+  }
+  #community-friends #friends-list .sf-person-card:hover {
+    transform:translateY(-2px);
+    box-shadow:var(--lp-hover-shadow)!important;
+    border-color:color-mix(in srgb,var(--sf-teal) 34%,var(--color-border))!important;
+  }
+  #community-friends .sc-person-cover {
+    height:72px;
+    background:var(--lp-teal-surface);
+  }
+  #community-friends #friends-list .sf-person-card:nth-child(even) .sc-person-cover {
+    background:var(--lp-violet-surface);
+  }
+  #community-friends .friend-copy strong {
+    font-size:15px!important;
+    line-height:1.4;
+  }
+  #community-friends [data-friend-presence] {
+    font-size:12px!important;
+  }
+  #community-friends .friends-actions>.button {
+    min-height:40px!important;
+    border-radius:11px!important;
+    font-size:13px!important;
+    font-weight:550!important;
+  }
+  #community-friends .social-add {
+    margin-top:18px!important;
+    padding-top:12px!important;
+    border-top:1px solid var(--color-border)!important;
+  }
+
+  /* Replace the redundant illustrated promo with genuinely useful shortcuts. */
+  .sc-community-note.sc-premium-quicklinks {
+    display:grid!important;
+    grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);
+    gap:14px 20px;
+    align-items:center;
+    min-height:136px!important;
+    padding:20px 22px!important;
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow);
+  }
+  .sc-community-note.sc-premium-quicklinks > div {
+    max-width:none!important;
+    width:100%;
+    min-width:0;
+  }
+  .sc-premium-note-heading .sc-eyebrow {
+    margin:0 0 7px!important;
+    font-size:10px!important;
+    color:var(--sf-teal);
+    letter-spacing:.11em;
+  }
+  .sc-premium-note-heading h2 {
+    max-width:none!important;
+    font-size:20px!important;
+    line-height:1.22!important;
+    letter-spacing:-.03em;
+    margin:0 0 6px!important;
+    color:var(--color-text-primary);
+  }
+  .sc-premium-note-heading p {
+    font-size:12px!important;
+    margin:0!important;
+    line-height:1.5!important;
+  }
+  .sc-premium-link-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+  .sc-premium-link {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:0;
+    min-height:84px;
+    padding:14px;
+    box-sizing:border-box;
+    border:1px solid color-mix(in srgb,var(--sf-violet) 22%,var(--color-border));
+    border-radius:15px;
+    text-decoration:none;
+    background:var(--lp-violet-surface);
+    color:var(--color-text-primary);
+    transition:transform .18s ease,border-color .18s ease;
+  }
+  .sc-premium-link:hover {
+    transform:translateY(-2px);
+    border-color:var(--sf-violet);
+  }
+  .sc-premium-link-rooms {
+    background:var(--lp-teal-surface);
+    border-color:color-mix(in srgb,var(--sf-teal) 22%,var(--color-border));
+  }
+  .sc-premium-link-rooms:hover {border-color:var(--sf-teal);}
+  .sc-premium-link-icon {
+    display:grid;
+    place-items:center;
+    flex:0 0 36px;
+    width:36px;
+    height:36px;
+    border-radius:11px;
+    background:var(--color-surface);
+    color:var(--sf-violet);
+  }
+  .sc-premium-link-rooms .sc-premium-link-icon {color:var(--sf-teal);}
+  .sc-premium-link-icon svg {
+    width:20px;
+    height:20px;
+    stroke:currentColor;
+    fill:none;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  .sc-premium-link-copy {min-width:0;display:grid;gap:4px;}
+  .sc-premium-link-copy strong {font-size:13px;font-weight:650;line-height:1.2;}
+  .sc-premium-link-copy small {font-size:11px;color:var(--color-text-secondary);line-height:1.35;}
+  .sc-premium-link-arrow {margin-left:auto;color:var(--color-text-secondary);font-size:18px;}
+
+  /* Secondary content is visually subordinate, without vanishing. */
+  #community-friends-panel .social-side {gap:12px!important;}
+  #community-friends-panel .social-side>.friends-card {
+    padding:18px!important;
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow)!important;
+  }
+  #community-friends-panel .social-side>.friends-card:nth-child(2) {
+    background:var(--lp-violet-surface)!important;
+  }
+  #community-friends-panel .social-side .social-card-head {
+    margin-bottom:12px!important;
+  }
+  #community-friends-panel .social-side h2 {
+    font-size:15px!important;
+    letter-spacing:-.015em;
+    font-weight:650!important;
+    line-height:1.3;
+  }
+  #community-friends-panel .social-side p {
+    font-size:12px!important;
+    line-height:1.5!important;
+  }
+  #community-friends-panel .social-side :is(.social-row,.inbox-row) {
+    border-radius:11px;
+    min-width:0;
+  }
+  #community-friends-panel .social-side :is(.button,summary) {
+    min-height:38px!important;
+    font-size:12px!important;
+  }
+
+  /* Keep StudyRats distinctive but within the visual language of the app. */
+  #studyrats-card {
+    padding:20px!important;
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow)!important;
+  }
+  #studyrats-card .friends-ref-studyrats-titleline h2 {
+    font-size:22px!important;
+    letter-spacing:-.035em;
+  }
+
+  /* Groups and room discovery share the same card rhythm. No controller changes. */
+  #community-groups-panel>#community-groups {
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--color-surface)!important;
+    box-shadow:var(--lp-shadow);
+    padding:22px!important;
+  }
+  #community-groups>.social-card-head h2,
+  #community-rooms>.social-card-head h2 {
+    font-size:24px!important;
+    line-height:1.2!important;
+    letter-spacing:-.035em;
+    font-weight:650!important;
+  }
+  #community-rooms>.social-card-head {
+    padding:22px!important;
+    border:1px solid var(--lp-border)!important;
+    border-radius:var(--lp-radius)!important;
+    background:var(--lp-teal-surface)!important;
+    box-shadow:var(--lp-shadow);
+  }
+  #social-rooms .sl-room-card {
+    border:1px solid var(--lp-border)!important;
+    border-radius:17px!important;
+    box-shadow:var(--lp-shadow)!important;
+  }
+  #social-rooms .sl-room-card:hover {
+    border-color:color-mix(in srgb,var(--sf-teal) 32%,var(--color-border))!important;
+  }
+
+  :is(.community-nav a,.sc-premium-link,#community-friends button,#community-groups button):focus-visible {
+    outline:3px solid var(--color-focus-ring)!important;
+    outline-offset:3px;
+  }
+  @media(max-width:1200px) {
+    .sc-community-note.sc-premium-quicklinks {grid-template-columns:1fr;}
+  }
+  @media(max-width:960px) {
+    #community-friends-panel .social-grid {grid-template-columns:minmax(0,1fr)!important;}
+    #community-friends-panel .social-side {grid-column:1;grid-row:3;grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  @media(max-width:700px) {
+    &:not(.social-in-room) .community-nav {gap:7px;}
+    .community-nav a {min-height:54px!important;padding:10px 12px!important;font-size:12px!important;gap:9px;}
+    .community-nav a::before {width:9px;height:9px;border-radius:3px;box-shadow:0 0 0 4px var(--color-primary-subtle);}
+    #community-friends {padding:17px!important;}
+    #community-friends .social-card-head h2 {font-size:20px!important;}
+    #community-friends-panel .social-side {grid-template-columns:1fr;}
+    .sc-community-note.sc-premium-quicklinks {padding:18px!important;}
+    .sc-premium-note-heading h2 {font-size:19px!important;}
+    #community-groups-panel>#community-groups,#community-rooms>.social-card-head {padding:17px!important;}
+  }
+  @media(max-width:520px) {
+    #community-friends .social-card-head {grid-template-columns:1fr auto!important;}
+    #community-friends #friends-ref-add-toggle {grid-column:1/-1!important;grid-row:3!important;justify-self:stretch!important;}
+    #community-friends #friends-list {grid-template-columns:1fr!important;}
+    .sc-premium-link-grid {grid-template-columns:1fr;}
+    .sc-premium-link {min-height:66px;}
+    .sc-premium-link-copy small {font-size:12px;}
+  }
+  @media(prefers-reduced-motion:reduce) {
+    .community-nav a,.sc-premium-link,#community-friends #friends-list .sf-person-card {transition:none!important;transform:none!important;}
+  }
+}
+}
