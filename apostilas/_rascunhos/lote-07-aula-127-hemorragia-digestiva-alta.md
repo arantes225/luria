@@ -249,16 +249,6 @@ A decisão de interromper, reverter e reiniciar anticoagulação depende de grav
 
 ESGE 2026 destaca reiniciar anticoagulação em hemorragia ulcerosa assim que clinicamente indicado após controle hemostático, conforme risco tromboembólico; não existe um número de dias que substitua decisão individual em todos os fármacos/pacientes.
 
-## 10. Diagnósticos diferenciais e mimetizadores
-
-- **Epistaxe importante ou hemoptise deglutida:** pode aparecer como sangue em vômito/fezes. História, exame de nasofaringe e sinais respiratórios ajudam.
-- **Suplementos de ferro/bismuto:** escurecem fezes sem sangramento; contexto e características clínicas são fundamentais.
-- **Lesão de intestino delgado/colo:** melena também pode surgir de fonte distal em determinadas circunstâncias; hematochezia pode ser HDA maciça. Persistência após EDA negativa demanda avaliação de outra origem.
-- **Úlcera perfurada:** pode provocar peritonite aguda e pneumoperitônio, que pertence a urgência cirúrgica (aula 122), distinta de HDA isolada.
-- **Fístula aortoentérica:** em pessoa com prótese vascular aórtica e sangramento sentinela, deve ser considerada prontamente e a equipe vascular acionada; EDA pode não identificá-la em todos os casos.
-- **Coagulopatia primária/uso de anticoagulante:** pode potencializar qualquer lesão sem indicar especificamente localização.
-
-
 ### 9.1. O antitrombótico não é uma condição binária: indicação, meia-vida e reversão
 
 Antes de suspender ou reverter terapia antitrombótica, responder: **qual agente? qual dose? quando foi a última dose? por que foi prescrito? qual função renal/hepática? quão grave é o sangramento? houve hemostasia?** Sem isso, "paciente usa anticoagulante" é um rótulo insuficiente.
@@ -289,6 +279,17 @@ A ESGE 2026 sugere iniciar reposição de ferro **antes da alta** em pacientes c
 Em pacientes com hemostasia endoscópica **durável** após sangramento por úlcera péptica, ESGE 2026 sugere considerar **nutrição oral precoce, em até 24 h**. Isso não significa oferecer dieta a paciente em choque, com aspiração, perfuração, suspeita de reintervenção iminente ou lesão cuja conduta exige jejum individualizado. O preparo para nova endoscopia e risco de anestesia também influenciam.
 
 A alta clínica não é o último ato da hemostasia: reconciliar IBP, anticoagulante, antiagregantes e AINE; confirmar se há necessidade de erradicar *H. pylori*, de repetir EDA ou acompanhar lesão gástrica; investigar anemia e consequências da perda; entregar instruções de retorno imediato por hematêmese, síncope, hipotensão, piora da fraqueza e melena abundante recente.
+
+
+## 10. Diagnósticos diferenciais e mimetizadores
+
+- **Epistaxe importante ou hemoptise deglutida:** pode aparecer como sangue em vômito/fezes. História, exame de nasofaringe e sinais respiratórios ajudam.
+- **Suplementos de ferro/bismuto:** escurecem fezes sem sangramento; contexto e características clínicas são fundamentais.
+- **Lesão de intestino delgado/colo:** melena também pode surgir de fonte distal em determinadas circunstâncias; hematochezia pode ser HDA maciça. Persistência após EDA negativa demanda avaliação de outra origem.
+- **Úlcera perfurada:** pode provocar peritonite aguda e pneumoperitônio, que pertence a urgência cirúrgica (aula 122), distinta de HDA isolada.
+- **Fístula aortoentérica:** em pessoa com prótese vascular aórtica e sangramento sentinela, deve ser considerada prontamente e a equipe vascular acionada; EDA pode não identificá-la em todos os casos.
+- **Coagulopatia primária/uso de anticoagulante:** pode potencializar qualquer lesão sem indicar especificamente localização.
+
 
 ### 10.1. Lesão de Dieulafoy e malformações vasculares
 
