@@ -321,7 +321,137 @@ E. AUC alta certifica calibração perfeita.
 
 **Pulo do Gato LURIA:** *AUC informa ordenação global. Ponto de corte define o par sensibilidade/especificidade. Prevalência transforma esses índices em valores preditivos. Calibração verifica probabilidades previstas. Utilidade clínica depende do que acontece após a decisão.*
 
-## 14. Referências verificáveis
+## 14. ROC em doenças raras: por que a curva precisão–revocação acrescenta informação
+
+Uma curva ROC pode parecer promissora com taxa de falso positivo pequena, embora o número absoluto de falsos positivos seja grande quando a doença é rara. Isso acontece porque a ROC utiliza taxas condicionadas à presença ou ausência da condição, sem exibir diretamente quantas pessoas realmente estão doentes entre todos os positivos.
+
+**Exemplo fictício:** considere 10.000 pessoas, das quais apenas 100 têm a condição (prevalência de 1%), e teste com sensibilidade 90% e especificidade 95%:
+
+| Condição | Teste positivo | Teste negativo | Total |
+|---|---:|---:|---:|
+| Doença presente | 90 | 10 | 100 |
+| Doença ausente | 495 | 9.405 | 9.900 |
+| Total | 585 | 9.415 | 10.000 |
+
+Na ROC, o ponto é (FPR=0,05; TPR=0,90). O resultado pode parecer excelente: somente 5% dos não doentes testam positivo. Entretanto, como são 9.900 pessoas sem a doença, o teste gera **495 falsos positivos**, enquanto identifica **90 verdadeiros positivos**. Assim, o VPP é 90/585 ≈ **15,4%**. Isso não significa que o teste não tenha papel em triagem; significa que o programa precisa de caminho de confirmação e balanço de benefícios/danos.
+
+### 14.1. Precisão (precision) e revocação (recall)
+
+A **curva precision–recall (PR)** representa **VPP** (*precision*) em função de **sensibilidade** (*recall*), à medida que se varia o limiar. Seu ponto para o exemplo seria aproximadamente recall=0,90, precision=0,154. Essa curva facilita perceber a proporção de resultados positivos que realmente têm a condição, mas seu perfil **depende da prevalência** da doença no grupo avaliado, ao contrário da formulação algébrica das taxas usadas na ROC com distribuições condicionais fixas.
+
+A **área sob a PR** (AUPRC) precisa ser interpretada com atenção ao nível basal de prevalência, ao método de interpolação e à população. Não é correto comparar numericamente uma AUPRC de 0,7 com uma AUC-ROC de 0,85 como se ambas medissem exatamente o mesmo fenômeno.
+
+**Resumo das curvas:**
+
+| Visualização | Eixos | Principal valor | Limite importante |
+|---|---|---|---|
+| ROC | FPR versus sensibilidade | Discriminação ao variar cortes | Não informa diretamente VPP nem dano da decisão |
+| PR | Sensibilidade versus VPP | Rendimento de positivos, útil para condições raras | Dependente da prevalência do conjunto |
+| Calibração | Risco previsto versus observado | Confiança nas probabilidades informadas | Não mede diretamente dano/benefício da intervenção |
+| Curva de decisão | Benefício líquido versus risco-limiar | Consequências ponderadas de ações | Depende de premissas sobre utilidade e tratamento |
+
+### 14.2. Uma curva não substitui o fluxo assistencial
+
+Ao introduzir teste de triagem com baixo VPP, a instituição deve planejar o que acontecerá com cada positivo: haverá exame confirmatório? Em quanto tempo? A comunicação indicará resultado preliminar ou diagnóstico estabelecido? Quantas pessoas receberão intervenção desnecessária? E os falsos negativos saberão quando retornar? A ausência de um fluxo de confirmação pode transformar bom desempenho estatístico em experiência ruim para pacientes.
+
+## 15. Escolher e validar um corte — como evitar otimismo estatístico
+
+Um estudo que testa dezenas de limiares e escolhe aquele de maior Youden na **mesma amostra** frequentemente relata resultado mais favorável do que obterá em amostra futura. A seleção explora não só o sinal biológico, mas também variações aleatórias dos pacientes disponíveis. Esse fenômeno é chamado de **otimismo de seleção** ou sobreajuste ao limiar.
+
+### 15.1. Desenvolvimento e avaliação respondem perguntas diferentes
+
+**Desenvolvimento:** de onde veio o corte? Foi definido por mecanismo clínico, exigência regulatória, dados exploratórios ou otimização estatística? **Validação:** quando se aplica a regra já fixada, sem mudar o limiar depois de ver as respostas, qual o desempenho entre pacientes novos?
+
+Técnicas de validação interna com reamostragem podem estimar otimismo, mas não equivalem automaticamente à validação externa: diferenças de hospitais, operadores, lotes, estágios da doença e aparelhos podem modificar o desempenho. Em classificadores de imagem, diferentes imagens do mesmo paciente não são necessariamente observações independentes; separar apenas imagens, sem separar pessoas, pode vazar informação.
+
+**Uma AUC extrema obtida com vazamento de dados não é garantia de tecnologia excelente.** Rever separação treino/teste, unidades de análise, padrão de referência e resultados inconclusivos é essencial.
+
+### 15.2. Zona cinzenta e estratégia com dois limiares
+
+Nem sempre a melhor regra é uma única fronteira entre positivo e negativo. Alguns protocolos podem adotar valores baixos para **reduzir suspeita**, valores altos para **sustentar confirmação/ação**, e zona intermediária para **repetir, observar ou usar exame adicional**.
+
+A segurança depende de como o serviço conduz quem fica na zona cinzenta. Um resultado intermediário não deve simplesmente ser comunicado como negativo. A estratégia precisa especificar tempo de reavaliação, risco de espera e acesso ao próximo passo. Em condições urgentes, um intervalo de indeterminação sem plano não é aceitável.
+
+### 15.3. Sensibilidade e especificidade não aumentam juntas apenas por mover o corte
+
+Para **um mesmo conjunto fixo de valores**, sob regra monotônica na direção “maior = positivo”, baixar limiar faz com que mais resultados sejam positivos. Assim, a sensibilidade pode subir (ou ficar igual), enquanto a especificidade pode cair (ou ficar igual). Elevar limiar tem a tendência inversa. Se estudo novo apresenta melhora de ambos os índices, é necessário perguntar se houve **mudança na tecnologia, população, medida, referência ou estratégia**, e não atribuir tudo ao simples ajuste do corte.
+
+### 15.4. Youden versus distância geométrica
+
+Maximizar J = sensibilidade + especificidade − 1 não é necessariamente igual a minimizar a **distância euclidiana até o canto superior esquerdo** da ROC, calculada a partir de FPR e 1−sensibilidade. São critérios matemáticos diferentes, que podem indicar cortes diferentes. Nenhum dos dois contabiliza automaticamente custo de falso negativo ou benefício de tratamento. O corte final deve ser escolhido de modo proporcional à pergunta clínica.
+
+## 16. Quando duas curvas se cruzam
+
+Duas tecnologias podem ter AUC global semelhante, mesmo que uma tenha melhor desempenho com **sensibilidade superior a 95%** e outra com **especificidade superior a 95%**. Se as curvas se cruzam, não há um vencedor obrigatório para toda finalidade. A escolha requer definir **a região de operação importante** para triagem, confirmação ou monitoramento.
+
+A **AUC parcial**, calculada apenas na região relevante do eixo, pode ser útil, mas precisa informar limites e eventual padronização antes de comparar valores. A seleção da faixa depois de examinar o resultado pode produzir viés de relato. Uma diferença estatisticamente significativa de AUC também não comprova melhora de desfechos dos pacientes.
+
+Quando duas modalidades são avaliadas nas **mesmas pessoas**, as medidas são pareadas e sua correlação precisa integrar o método de comparação; com imagens repetidas de um indivíduo, a unidade estatística é uma consideração especialmente importante. Um intervalo de confiança estreito obtido tratando mil imagens de cem pacientes como mil pessoas independentes pode exagerar a precisão.
+
+### 16.1. Modelos para evento futuro exigem atenção adicional
+
+Se um escore estima probabilidade de evento em cinco anos, o horizonte temporal e a perda de seguimento importam. Métodos apropriados para medidas dependentes do tempo podem ser necessários quando há censura. Não se deve avaliar automaticamente toda previsão longitudinal como se fosse teste transversal que identifica um estado conhecido no mesmo momento.
+
+## 17. Camada SUS: um exame só ajuda se o paciente conseguir completar o cuidado
+
+Um teste com AUC elevada pode gerar pouco benefício se a coleta ocorrer tarde, o resultado não chegar ao médico ou os pacientes positivos não tiverem acesso à confirmação. Ao avaliar incorporação de tecnologia, considere fatores que a tabela 2×2 não mede: acessibilidade, distribuição geográfica, qualidade de coleta, custos totais, impacto nas filas e tratamento efetivo.
+
+**Roteiro original para uma unidade de saúde:**
+1. Definir população realmente elegível e por que o teste será pedido.
+2. Registrar limiar, unidade, versão e modo de interpretação.
+3. Identificar quem fará confirmação e em qual prazo.
+4. Planejar destino de negativos com alto risco clínico e resultados inconclusivos.
+5. Monitorar diferenças de desempenho entre cenários de coleta e subgrupos pertinentes.
+6. Medir desfechos assistenciais, e não apenas número de positivos encontrados.
+7. Reavaliar quando houver atualização de equipamento, software ou protocolo.
+
+A **Conitec/Ministério da Saúde** disponibiliza diretrizes metodológicas nacionais para revisão sistemática e metanálise de estudos de acurácia diagnóstica. Elas oferecem referência apropriada para apreciar estudos e apoiar decisões de tecnologias em saúde no contexto brasileiro. Não se deve atribuir a uma diretriz a aprovação de tecnologia específica só porque a publicação explica o método.
+
+## 18. Casos e questões adicionais de alto rendimento
+
+### Caso 5 — ROC promissora, baixo rendimento de positivos
+
+**Apresentação:** gestor recebe demonstração de teste fictício com sensibilidade 90% e especificidade 95% para condição com frequência de 1%. O fornecedor enfatiza a taxa de falso positivo de apenas 5%.
+
+**Dados:** em 10.000 pessoas, 90 positivos verdadeiros, 495 falsos positivos, dez falsos negativos e 9.405 verdadeiros negativos.
+
+**Hipótese de erro:** interpretação inadequada da taxa de falso positivo como proporção de todos os pacientes e não apenas dos não doentes. **Raciocínio:** VPP de 15,4%, apesar de coordenada ROC visualmente atraente.
+
+**Exames/avaliação:** estimar capacidade confirmatória, custos e consequências dos falsos positivos; avaliar aderência ao cenário. **Conduta:** planejar estratégia de confirmação e comunicação como resultado preliminar. **Por que importa:** baixa prevalência torna contagens absolutas essenciais.
+
+### Caso 6 — Corte selecionado depois de olhar o gabarito
+
+**Apresentação:** pesquisador testa quarenta pontos de corte no mesmo conjunto de oitenta doentes e cento e vinte não doentes. Publica o maior Youden observado como se o limiar fosse previamente definido.
+
+**Dados:** nenhum conjunto de validação externo foi usado e não há IC dos índices nesse corte. **Hipótese:** otimismo de seleção e risco de sobreajuste.
+
+**Raciocínio e avaliação:** o ponto pode ter explorado variação própria da amostra; solicitar justificativa do corte, revisão do fluxo e avaliação em pessoas novas. **Conduta:** não adotar o corte em protocolo assistencial sem validação apropriada. **Por que importa:** escolher melhor corte e testar melhor corte nas mesmas pessoas são etapas distintas.
+
+### Questão 7 — ROC e doença rara
+
+Em população fictícia de 10.000 pessoas, 100 têm doença. Um teste com sensibilidade 90% e especificidade 95% gera noventa verdadeiros positivos e 495 falsos positivos. Qual afirmação está correta?
+
+A. VPP é 90%.  
+B. FPR é 95%.  
+C. VPP é aproximadamente 15,4%, exigindo interpretação e confirmação conforme finalidade.  
+D. AUC é necessariamente 0,90.  
+E. Não existem falsos negativos.
+
+**Gabarito: C.** VPP = 90/(90+495) ≈ 15,4%. **A incorreta:** troca sensibilidade por VPP. **B incorreta:** FPR é 1−especificidade = 5%. **D incorreta:** um único ponto de operação não define AUC global. **E incorreta:** existem dez falsos negativos. **Mini-revisão:** distinguir taxas ROC de frequência natural de resultados positivos.
+
+### Questão 8 — Otimismo de ponto de corte
+
+Pesquisador escolhe corte de maior índice de Youden após testar dezenas de limiares e relata seu desempenho exclusivamente na amostra de seleção. A principal limitação é:
+
+A. AUC não pode ser usada em nenhuma pesquisa.  
+B. A seleção e avaliação no mesmo conjunto podem superestimar desempenho; avaliar em dados independentes melhora a confiabilidade.  
+C. O índice de Youden elimina automaticamente viés de seleção.  
+D. A prevalência fica necessariamente igual a zero.  
+E. O ponto mais próximo do canto superior esquerdo é sempre idêntico ao máximo de Youden.
+
+**Gabarito: B.** Selecionar o melhor dos muitos cortes tende a explorar variações da amostra. **A incorreta:** AUC é métrica válida, com limitações. **C incorreta:** Youden não corrige otimismo. **D incorreta:** não há relação. **E incorreta:** critérios geométricos diferem. **Mini-revisão:** desenvolvimento não equivale a validação externa.
+
+## 19. Referências verificáveis
 
 1. Altman DG, Bland JM. *Diagnostic tests 3: receiver operating characteristic plots*. BMJ. 1994;309:188. https://doi.org/10.1136/bmj.309.6948.188.
 2. Fawcett T. *An introduction to ROC analysis*. Pattern Recognition Letters. 2006;27(8):861–874. https://doi.org/10.1016/j.patrec.2005.10.010.
@@ -332,9 +462,9 @@ E. AUC alta certifica calibração perfeita.
 
 Os valores do exemplo de 200 pessoas, suas coordenadas, a área trapezoidal, os casos e os enunciados das questões foram criados pela LURIA como recursos pedagógicos e não representam dados reais de qualquer artigo citado.
 
-## 15. Auditoria editorial e científica ainda necessária
+## 20. Auditoria editorial e científica ainda necessária
 
-**Presentes nesta primeira etapa:** estrutura coerente com a aula 095, raciocínio sobre pontos de corte, contas manuais de três limiares, ROC, aproximação AUC por trapézios, Youden, VPP/VPN em diferentes cortes, distinção de calibração e discriminação, conceito de benefício líquido, comparação de testes, quatro casos clínicos e seis questões comentadas.
+**Presentes nesta primeira etapa:** estrutura coerente com a aula 095, raciocínio sobre pontos de corte, contas manuais de três limiares, ROC, aproximação AUC por trapézios, Youden, VPP/VPN em diferentes cortes, distinção de calibração e discriminação, conceito de benefício líquido, comparação de testes, seis casos clínicos e oito questões comentadas.
 
 **Não verificado independentemente:** cálculos por segunda pessoa; referências completas em padrão editorial; qualidade clínica dos casos; funcionamento no renderer da plataforma; rotas, navegação, acessibilidade, visualização PWA e correspondência com imagens. O texto ainda precisa de aprofundamento metodológico e revisão por profissional familiarizado com epidemiologia clínica. A extensão bruta não equivale a 60 mil caracteres didáticos úteis.
 
