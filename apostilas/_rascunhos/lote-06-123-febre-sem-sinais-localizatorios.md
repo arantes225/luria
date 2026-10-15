@@ -388,3 +388,99 @@ Antibióticos não aliviam infecção viral e podem causar diarreia, alergia, se
 
 Verificar carteira vacinal, incluindo Hib e pneumococo no PNI conforme calendário atual, pode alterar risco e planejamento preventivo. Entretanto, **vacinação incompleta não é indicação automática de antibiótico** em toda criança febril, mas torna importante avaliar o risco de doença invasiva com maior cautela. A oportunidade da consulta pode ser usada para atualizar imunização após resolução do quadro, respeitando contraindicações e recomendações de serviço.
 
+
+
+## 23. Antitérmicos, hidratação e conforto: evitar a febrefobia
+
+O objetivo do antitérmico é **reduzir sofrimento e desconforto**, permitindo sono, hidratação e bem-estar; não é “normalizar 36,5°C” a qualquer custo. O **NICE NG143** recomenda considerar paracetamol ou ibuprofeno quando a criança aparenta desconforto, continuar apenas enquanto necessário, não administrar ambos simultaneamente e só ponderar alternância se o desconforto persiste ou recorre antes da próxima dose. **Antitérmicos não previnem de modo confiável convulsões febris**. Uma febre que desce e retorna é comportamento esperado de muitas doenças, não prova falha terapêutica.
+
+A prescrição deve usar **peso atualizado, formulação realmente disponível, concentração, dose em mg/kg/dose, intervalo e dose máxima**, seguindo bulário pediátrico e protocolo local. Erros são comuns quando o responsável confunde gotas com mililitros, alterna duas marcas com o mesmo princípio ativo ou repete dose mais cedo. O material educacional não deve listar uma concentração única universal, pois há formulações diferentes no Brasil. Em recém-nascidos, antitérmico sem avaliação médica pode mascarar evolução e atrasar investigação; uma febre documentada em menor de três meses precisa de atenção mesmo que tenha sido medicado.
+
+### 23.1 Ibuprofeno não é opção para qualquer febre em qualquer criança
+
+O uso de anti-inflamatórios não esteroidais exige avaliação de **idade, hidratação, função renal, risco gastrointestinal e doença suspeita**. Criança com vômitos/desidratação pode ter maior risco de lesão renal. No Brasil, em suspeita de **dengue**, o Ministério da Saúde orienta **não usar ácido acetilsalicílico nem anti-inflamatórios não esteroidais como ibuprofeno**, pelo risco hemorrágico. Em crianças pequenas e gestantes, seguir orientações específicas para analgesia/antitermia. AAS não deve ser oferecido rotineiramente como antitérmico infantil.
+
+### 23.2 Medidas físicas e hidratação
+
+Oferecer líquidos apropriados à idade e manter amamentação. Vestir a criança de maneira confortável, sem excesso de agasalho nem exposição inadequada ao frio. **Banhos frios, fricção com álcool e compressas agressivas** não são recomendados como forma de “quebrar febre” e podem causar desconforto ou dano. Verificar diurese, mucosas, lágrimas, frequência respiratória e disposição para beber; sinais de desidratação moderada/grave podem justificar observação ou intervenção, sobretudo em lactentes.
+
+Se há vômitos repetidos, recusa persistente de líquidos ou incapacidade do cuidador de administrar medicação de forma segura, o local de cuidado pode mudar mesmo sem foco bacteriano demonstrado. Explicar à família que febre é **sinal**, não doença isolada; prioridade é saber **como a criança está**, e não competir com o termômetro.
+
+## 24. Convulsão febril e outros eventos neurológicos: quando o cenário deixa de ser simples
+
+Convulsão associada a febre pode ocorrer em crianças suscetíveis, tipicamente dos seis meses aos cinco anos, mas **nem toda crise com febre é convulsão febril simples**. A avaliação inicial exige proteção de via aérea, segurança física, duração da crise, glicemia quando indicado e recuperação neurológica. Uma crise generalizada breve, única em 24 horas e com retorno completo ao basal num contexto típico pode corresponder a **convulsão febril simples**; crise prolongada, focal, repetida, alteração persistente de consciência ou idade atípica exige investigação adicional.
+
+Lactente de **18 dias com febre e episódio convulsivo** não deve receber rótulo tranquilizador de “convulsão febril simples” como um pré-escolar; investigar meningite, encefalite, sepse, distúrbios metabólicos e HSV. A ausência de rigidez de nuca não exclui infecção do SNC em neonatos.
+
+Antitérmicos podem aliviar desconforto, mas não constituem prevenção eficaz de recorrência de convulsões febris. A família precisa receber orientações de primeiros socorros: colocar a criança de lado em local seguro, não segurar membros, não colocar objetos na boca e registrar duração; buscar emergência por crise prolongada, respiração anormal ou recuperação incompleta. O tratamento de crise convulsiva em andamento é protocolo distinto de FSSL e depende de tempo e via de acesso.
+
+### 24.1 Cefaleia e sinais de hipertensão intracraniana
+
+Em criança maior, cefaleia intensa associada a febre, fotofobia, rigidez, vômitos persistentes, rebaixamento, convulsão, déficit focal ou púrpura sugere urgência neurológica/infecciosa. Exames de neuroimagem não são necessários antes de toda LP, mas sinais de risco de herniação ou outras contraindicações exigem avaliação especializada; **não atrasar antibioticoterapia vital** enquanto se planeja imagem. Essas decisões dependem de protocolo de meningite e não podem ser reduzidas a “sempre fazer CT antes de punção”.
+
+## 25. Alta segura, safety net e acompanhamento das culturas
+
+A decisão de alta em FSSL precisa de **três camadas**: baixo risco clínico/biomarcadores conforme idade, cuidador capaz e **sistema seguro de reavaliação**. Não é suficiente escrever “retornar se piora” numa receita sem explicar o que constitui piora. O plano deve indicar contato, prazo de revisão, destino de resultados ainda pendentes e via de retorno se a criança parar de mamar, ficar mole, apresentar convulsão, esforço respiratório, urina muito reduzida, manchas que não somem à pressão, dor importante ou febre persistente com deterioração.
+
+Em lactentes de 29–90 dias selecionados para observação ambulatorial, a CPS 2026 descreve revisão em **24–48 horas**, com critérios que variam conforme risco e cultura. O seguimento inclui **monitoramento ativo de hemoculturas/uroculturas**. Se uma hemocultura retorna positiva após alta, a equipe deve procurar família e orientar reavaliação, não confiar que o laudo será visto apenas quando os pais marcarem consulta.
+
+Criança maior, bem-aparente, vacinada e sem achados de alto risco pode ter alta com orientação de observação domiciliar e retorno por piora ou persistência; em febre de cinco dias ou mais, NICE recomenda reavaliação, inclusive para hipóteses inflamatórias. Em lactente muito jovem, o limiar para internação é baixo; políticas sociais, geográficas e recursos laboratoriais fazem parte da decisão clínica.
+
+### 25.1 Checklist de alta
+
+- **Estado atual:** acordada, interativa dentro do esperado, perfusão, ventilação e hidratação adequadas.
+- **Contexto:** idade exata e ausência de critérios para internação obrigatória pelo protocolo escolhido.
+- **Investigação:** urina/culturas/biomarcadores conforme grupo e sem achados de risco pendentes que exijam internação.
+- **Resultado pendente:** profissional responsável designado para revisar culturas e notificar família.
+- **Responsáveis:** entendem alertas, têm telefone/transporte e aceitam retornar se necessário.
+- **Prazos:** retorno agendado quando requerido pela regra e acesso facilitado ao pronto atendimento.
+- **Documentação:** registra decisão compartilhada quando há mais de uma conduta aceitável, sem transferir ao cuidador responsabilidade que pertence ao serviço.
+
+### 25.2 Comunicação que reduz retornos desnecessários sem perder segurança
+
+Explicar que a febre pode oscilar, antitérmico é para conforto e o padrão de comportamento/hidratação importa mais que uma medida isolada. Dizer o que observar nas próximas horas: força da sucção, lágrimas, número de fraldas, esforço para respirar, cor da pele e nível de resposta social. Ensinar a medir temperatura adequadamente e registrar horários/doses de medicamentos para evitar superdosagem.
+
+Orientações verbais devem ser acompanhadas de material escrito em português claro, considerando alfabetização em saúde. Se a família não tem acesso regular a telefone, a recomendação “aguardar chamada do laboratório” não é segura; optar por fluxo presencial/observação conforme situação.
+
+## 26. Fluxograma integrado por idade e risco
+
+### 26.1 Passo a passo no pronto atendimento
+
+1. **Primeiro minuto:** identificar choque, apneia, hipoxemia, convulsão, púrpura preocupante e sinais de meningite. Instável → reanimação, equipe pediátrica, culturas se viável sem atraso, antibiótico/antiviral quando indicado, sem aplicar regra de baixo risco.
+2. **Idade e elegibilidade:** registrar idade em dias, termo/prematuro, hospitalização prévia, imunodeficiência, vacina e comorbidades. Grupos fora das regras validadas precisam de avaliação específica.
+3. **Verificar foco após exame completo:** ausculta, otoscopia, orofaringe, pele, abdome, articulações, genitais, neurologia e hidratação. Se aparece foco, tratar a síndrome identificada e continuar estratificação neonatal quando idade exige.
+4. **0–7 dias:** cuidado neonatal especializado, investigação de IBI/HSV conforme contexto e baixa tolerância a alta sem observação.
+5. **8–21 dias:** seguir AAP neonatal de investigação ampla e internação/antibióticos parenterais no escopo definido.
+6. **22–28 dias:** urina, hemocultura, marcadores e LCR/terapia/hospitalização conforme risco, com limiar baixo para abordagem conservadora.
+7. **29–60 dias:** usar regra/protocolo completo para biomarcadores, urina e decisões de LP, antibiótico e seguimento; condição de alta segura é indispensável.
+8. **61–90 dias:** CPS 2026 recomenda ao menos urina e cultura, com demais exames por risco e algoritmo selecionado.
+9. **≥3 meses:** sem gravidade e vacinação apropriada, evitar exames e antibióticos indiscriminados; pesquisar ITU ou outro foco oculto conforme história/risco.
+10. **Reavaliação:** observar cultura, exames pendentes, evolução clínica e redes de apoio; redefinir risco se surgem sinais ou febre persiste.
+
+### 26.2 Matriz de erros frequentes
+
+| Erro | Por que é incorreto | Correção |
+| --- | --- | --- |
+| “Todo lactente com PCT normal pode ir para casa” | Biomarcador não substitui idade/risco/seguimento | Usar regra completa na população de validação |
+| “Febre de 39,8°C prova bactéria” | Temperatura isolada tem discriminação limitada | Avaliar estado e probabilidades |
+| “Rinovírus positivo exclui bacteremia” | Coinfecção e eliminação viral prolongada | Manter avaliação por idade |
+| “Saco coletor positivo confirma ITU” | Contaminação elevada | Confirmar conforme técnica apropriada |
+| “Sem rigidez de nuca, sem meningite” | Baixa sensibilidade no neonato | Observar idade e sinais neurológicos |
+| “Febre abaixou com antitérmico, então não é grave” | Resposta não diferencia etiologia | Reavaliar perfusão e estado geral |
+| “AAP 8–60 aplica a prematuro de 5 dias” | Fora da população de validação | Protocolo neonatal/comorbidade |
+| “Criança vacinada de 18 meses precisa hemocultura para toda febre” | Risco de bacteremia oculta mudou | Avaliação clínica e exames seletivos |
+| “Ceftriaxona é igual em todo lactente” | Segurança/dose variam com maturidade neonatal | Esquema por idade, risco e protocolo |
+| “Cultura positiva depois da alta fica para consulta de rotina” | Bacteremia oculta requer contato ativo | Sistema de busca ativa de resultados |
+| “Antitérmico previne convulsão febril” | Não há prevenção confiável | Usar para conforto e orientar crise |
+| “Uma semana de febre sem foco é sempre virose” | Persistência modifica diferencial | Reavaliar Kawasaki, MIS-C e outras causas |
+
+## 27. Pérolas clínicas e resumo de alto rendimento
+
+**Febre sem foco é uma descrição após exame, não diagnóstico etiológico.** Para lactentes, idade **em dias** é variável indispensável. **AAP 2021:** 8–21, 22–28, 29–60 dias; diretriz restrita a bem-aparentes, a termo, 8–60 dias. **CPS 2026:** inclui 61–90 dias e amplia discussão de PCT/Step-by-Step/PECARN. **NICE NG143:** semáforo verde/amarelo/vermelho e retorno seguro; não se sobrepõe mecanicamente ao protocolo neonatal AAP.
+
+**ITU** é uma infecção bacteriana oculta importante em lactentes; cultura por saco coletor isolada tem alto risco de contaminação. **Hemocultura** é importante na avaliação de IBI dos pequenos; **LCR** precisa ser considerado especialmente nos primeiros dias ou com marcadores/sinais de alto risco. **Meningite bacteriana** não exige rigidez de nuca em neonato; **HSV** pode não produzir vesículas. **Urina positiva em 29–60 dias** não implica automaticamente meningite, e o risco é refinado por biomarcadores/protocolo.
+
+**PCT e PCR não substituem clínica.** PECARN e Step-by-Step têm cortes próprios e devem ser usados **por inteiro**, em população de validação. **Painel viral positivo não zera risco de IBI**. A criança com mau estado geral **não é “baixo risco”** por laboratório favorável. **Antitérmicos aliviam desconforto**, não diferenciam bactéria de vírus e não previnem de forma confiável convulsão febril. Em dengue suspeita, evitar AAS e AINEs conforme Ministério da Saúde.
+
+**Alta de baixo risco** exige orientações, seguimento, acesso e monitoramento ativo de culturas; sem isso, uma estratégia ambulatorial aparentemente eficiente pode ser insegura. A documentação deve explicitar por que o serviço considerou a criança de baixo risco, qual protocolo foi usado e quem fará a revisão dos resultados pendentes.
+
