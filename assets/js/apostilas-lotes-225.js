@@ -3,7 +3,13 @@ const base=window.LURIA_BASE_SCHEDULES?.medicine||[];
 const editorial=window.LURIA_APOSTILA_EDITORIAL_2026||{notes:{},novas:[],catalogados:[],areas:[],mfcIds:[],crossAreas:{}};
 const medcof=window.LURIA_MEDCOF_401||[];
 const lessonsByItem=new Map();
-for(const lesson of medcof){const id=Number(lesson.primary);if(!lessonsByItem.has(id))lessonsByItem.set(id,[]);lessonsByItem.get(id).push(lesson);}
+// Cada aula pertence a um destino principal; referências secundárias aparecem como complemento, sem duplicar produção.
+for(const lesson of medcof){
+ for(const [id,relation] of [[Number(lesson.primary),"principal"],...(lesson.additional||[]).map(x=>[Number(x),"referencia-cruzada"])]){
+  if(!lessonsByItem.has(id))lessonsByItem.set(id,[]);
+  lessonsByItem.get(id).push({...lesson,relation});
+ }
+}
 const enamedAreas=editorial.areas||[];
 const mfc=new Set(editorial.mfcIds||[]);
 const normArea=(area,number)=>area==="Medicina Preventiva"?(mfc.has(number)?"Medicina de Família e Comunidade":"Saúde Coletiva"):area;
@@ -30,7 +36,7 @@ const style=document.createElement("style");style.textContent=`
 .production-lot-list .theme{font-size:12px;line-height:1.4;font-weight:550}
 .production-lot-list .area{font-size:10px;color:var(--muted)}
 .production-lot-list .pending{font-style:italic;color:var(--muted)}
-.production-lot-list .editorial-flag{font-size:10px;line-height:1.4;border-top:1px solid var(--border);margin-top:5px;padding-top:7px;color:var(--text)}
+.production-lot-list .editorial-flag{font-size:10px;line-height:1.4;border-top:1px solid var(--border);margin-top:5px;padding-top:7px;color:var(--text);white-space:pre-line}
 .production-lot-list .editorial-status{display:block;font-size:9px;letter-spacing:.035em;color:var(--accent);font-weight:650;margin-bottom:3px}
 .production-lot-list .editorial-priority{display:inline-block;font-size:9px;color:var(--muted);margin-top:3px}
 .production-area-tabs{display:flex;flex-wrap:wrap;gap:5px}
@@ -42,6 +48,8 @@ const style=document.createElement("style");style.textContent=`
 .production-lot-list .medcof-coverage ul{list-style:disc;margin:6px 0 0 14px;padding:0;display:grid;gap:5px}
 .production-lot-list .medcof-coverage li{display:list-item;border:0;border-radius:0;padding:0;background:none;font-size:10px;line-height:1.35}
 .production-lot-list .medcof-warning{display:block;font-size:9px;color:var(--muted);margin-top:4px}
+.production-lot-list .editorial-task{border-top:1px solid var(--border);padding-top:6px;font-size:10px;line-height:1.4;color:var(--text)}
+.production-lot-list .editorial-task strong{font-weight:650}
 .production-lot-list .published-book{display:inline-block;margin-top:6px;text-decoration:underline;font-size:10px;color:var(--accent)}
 .production-lot-empty{padding:12px;color:var(--muted);font-size:11px}
 `;document.head.appendChild(style);
@@ -64,26 +72,35 @@ function show(i){
   number.className="number";number.textContent="APOSTILA "+String(item.number).padStart(3,"0")+(item.newTheme?" · NOVA":(item.existingTheme?" · JÁ EXISTENTE":""));
   heading.className="theme"+(item.confirmed?"":" pending");heading.textContent=item.title;
   area.className="area";area.textContent=item.area+(item.provisional?" · "+(item.source||"complemento"):"");
+  li.dataset.apostilaId=String(item.number);
+  li.dataset.lote=String(i+1);
+  li.dataset.revisaoEditorial=item.newTheme?"nova-a-produzir":(item.existingTheme?"ja-publicada-conferir":"conferir-e-complementar-se-ausente");
   li.append(number,heading,area);
   if(item.crossAreas?.length){const cross=document.createElement("span");cross.className="cross-area";cross.textContent="Também contempla: "+item.crossAreas.join(", ");li.append(cross);}
-  if(item.editorial||item.newTheme){
+  const sourceModules=lessonsByItem.get(item.number)||[];
+  const mainModules=sourceModules.filter(x=>x.relation==="principal");
+  if(item.editorial||item.newTheme||item.existingTheme||sourceModules.length){
    const flag=document.createElement("div"),status=document.createElement("span");
    flag.className="editorial-flag";status.className="editorial-status";
-   status.textContent=item.editorialStatus||(item.newTheme?"NOVA APOSTILA · NÃO INICIADA":"CONFERIR / COMPLETAR");
+   status.textContent=item.newTheme?"NOVA APOSTILA · PRODUZIR NOS LOTES FINAIS":
+    item.existingTheme?"JÁ PUBLICADA · CONFERIR/COMPLETAR SEM DUPLICAR":
+    "COMPLEMENTAR NA PRÓXIMA REVISÃO · SE AUSENTE";
    flag.append(status);
-   const desc=document.createElement("span");desc.textContent=item.editorial||"Produzir conteúdo completo de acordo com a matriz ENAMED/MedCof.";flag.append(desc);
-   if(item.priority){const p=document.createElement("span");p.className="editorial-priority";p.textContent="Origem/prioridade MedCof: "+item.priority;flag.append(p);}
+   const desc=document.createElement("span");
+   desc.textContent=item.editorial||(
+    mainModules.length?"Validar os "+mainModules.length+" módulos MedCof vinculados: verificar capítulos, fluxogramas, condutas e referências; acrescentar APENAS o que estiver ausente.":"Conferir correspondências cruzadas sem repetir capítulos.");
+   flag.append(desc);
+   if(item.priority){const p=document.createElement("span");p.className="editorial-priority";p.textContent="Classificação no cronograma MedCof: "+item.priority;flag.append(p);}
    li.append(flag);
   }
   if(item.existingTheme&&item.contentUrl){const a=document.createElement("a");a.href=item.contentUrl;a.className="published-book";a.textContent="Abrir apostila já publicada";li.append(a);}
-  const sourceModules=lessonsByItem.get(item.number)||[];
   if(sourceModules.length){
    const details=document.createElement("details"),summary=document.createElement("summary"),ul=document.createElement("ul"),warning=document.createElement("small");
    details.className="medcof-coverage";
-   summary.textContent="CONFERIR "+sourceModules.length+" AULA"+(sourceModules.length===1?"":"S")+" MEDCOF VINCULADA"+(sourceModules.length===1?"":"S");
+   summary.textContent="PENDÊNCIAS: "+mainModules.length+" AULA"+(mainModules.length===1?"":"S")+" PRINCIPAL"+(mainModules.length===1?"":"IS")+" MEDCOF"+(sourceModules.length>mainModules.length?" + "+(sourceModules.length-mainModules.length)+" REFERÊNCIA(S) CRUZADA(S)":"");
    details.append(summary);
-   for(const module of sourceModules){const line=document.createElement("li");line.textContent="["+module.priority+"] "+module.title+" · PDF p. "+module.page;ul.append(line);}
-   warning.className="medcof-warning";warning.textContent="Vínculo editorial: conferir diagnóstico, manejo, capítulos e referências. Não equivale a conteúdo pronto.";
+   for(const module of sourceModules){const line=document.createElement("li");line.textContent=(module.relation==="principal"?"[VERIFICAR/CORRIGIR] ":"[REFERÊNCIA CRUZADA] ")+"["+module.priority+"] "+module.title+" · PDF p. "+module.page;ul.append(line);}
+   warning.className="medcof-warning";warning.textContent="Handoff obrigatório ao próximo chat: conferir o capítulo real e referências; acrescentar somente lacunas. NÃO marcar como concluído sem auditoria científica.";
    details.append(ul,warning);li.append(details);
   }
   list.append(li);
