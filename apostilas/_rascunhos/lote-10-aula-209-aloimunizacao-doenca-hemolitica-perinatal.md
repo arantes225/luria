@@ -781,3 +781,105 @@ A sequência fisiopatológica de anemia significativa pode ser: hemólise/supres
 
 **Por que importa?** Não há “número mágico” de bilirrubina aplicável a todos os RNs.
 
+
+
+## 17. Roteiros de decisão em ambiente clínico
+
+### 17.1 Gestante RhD-negativa na APS
+
+**1.** Confirmar tipagem materna ABO/RhD e PAI conforme rede. **2.** Conferir carteira de pré-natal, gestações/partos/perdas anteriores, transfusões e aplicações de anti-D. **3.** Se PAI negativa, explicar diferença entre incompatibilidade e sensibilização; decidir genotipagem fetal quando disponível/adequada e profilaxia de rotina. **4.** Investigar sangramentos ou procedimentos desde a última consulta e avaliar doses de anti-D adicionais. **5.** Programar reavaliação de anticorpos na janela apropriada, **preferencialmente antes da dose antenatal**. **6.** Se nascer RN RhD-positivo/indeterminado, garantir profilaxia pós-parto no período recomendado, respeitando investigação de HFM significativa.
+
+**Não cometer:** dar anti-D à gestante já anti-D imune acreditando que irá reduzir anemia fetal; afirmar que toda RhD-negativa tem filho doente; ignorar PAI após ver tipagem; supor que dose das 28 semanas dispensa sempre dose após o parto.
+
+### 17.2 PAI positiva — da especificidade à vigilância
+
+**1. Identificar exatamente o anticorpo.** Anti-D? Anti-c? Anti-K? Mais de um? Anti-D passivo?  
+**2. Procurar gestação anterior afetada.** TIU, morte fetal, transfusão de troca, icterícia grave, anemia neonatal.  
+**3. Determinar antígeno fetal se possível.** cfDNA/citogenética, resultado validado, sem confundir resultado inconclusivo com negativo.  
+**4. Quantificar ou titular** segundo metodologia do laboratório.  
+**5. Estratificar risco específico.** Não usar corte anti-D para anti-K; não negar encaminhamento por título baixo se histórico grave.  
+**6. Organizar Doppler ACM** por medicina fetal quando status fetal e risco justificam, muitas vezes semanal a partir de 16 semanas em subgrupos de alto risco.  
+**7. Antecipar hemoterapia e neonatologia.** A presença de anticorpo pode dificultar compatibilidade de sangue materno/fetal/neonatal.
+
+### 17.3 Suspeita de anemia fetal grave
+
+**Achado:** PSV-ACM >1,5 MoM e/ou sinais ecográficos de anemia/hidropisia no feto em risco. **Ação:** revisar qualidade técnica e contatar centro apto a cordocentese e TIU. Avaliar idade gestacional, risco de procedimento e possibilidade de parto com suporte neonatal. Não solicitar amniocentese seriada para bilirrubina do líquido amniótico como ferramenta primária moderna de anemia — o Doppler ACM substituiu esse método para o rastreio padrão segundo SMFM. Se há hidropisia com PAI negativa, ampliar diferencial.
+
+### 17.4 RN com icterícia precoce e hemólise
+
+**1.** Determinar idade gestacional e **horas exatas de vida**. **2.** Mensurar bilirrubina sérica e aplicar a curva específica para idade/risco, com confirmação quando teste transcutâneo não é suficiente. **3.** Avaliar DAT, história materna, hemograma/reticulócitos e outras causas de hemólise. **4.** Iniciar fototerapia intensiva se alcançar indicação; hidratar e apoiar alimentação. **5.** Se chegar ao limiar de escalonamento ou apresentar sintomas de encefalopatia, iniciar fluxo hospitalar de emergência, preparando sangue/terapia de troca. **6.** Considerar IVIG apenas em contextos selecionados de DHFN isoimune DAT-positiva e hiperbilirrubinemia crítica, conforme AAP; não interromper preparo de exsanguineotransfusão por presumir resposta a IVIG. **7.** Organizar seguimento de anemia tardia e bilirrubina pós-alta.
+
+## 18. Pérolas de prova sem simplificações perigosas
+
+1. **RhD-negativo ≠ sensibilizado.** Precisa avaliar anticorpo anti-D imune, feto e exposição.
+2. **Coombs indireto da mãe** detecta anticorpos circulantes; **DAT/Coombs direto do RN** avalia anticorpos ligados a suas hemácias; nenhum, isoladamente, quantifica dano.
+3. **Aloimunização não exige gestação prévia**, pois transfusão pode sensibilizar.
+4. **Anti-D passivo pode dar PAI positiva:** recuperar histórico de profilaxia antes de concluir.
+5. **Anti-K não segue confortavelmente a regra do 1:16**, pois pode inibir eritropoiese e causar anemia grave em títulos baixos.
+6. **A hemoglobina fetal não é lida em Doppler:** o PSV-ACM é exame de triagem/monitorização, com confirmação quando procedimento especializado é necessário.
+7. **Doppler umbilical não substitui PSV-ACM** para triagem de anemia imune.
+8. **Hidropisia já é sinal tardio e grave**, não critério necessário para considerar anemia.
+9. **Anti-D é profilática na não sensibilizada**: não neutraliza anticorpo imune existente.
+10. **TIU não tem indicação fixa “sempre até 34 semanas”**; risco/benefício, idade, procedimento e consensos evoluíram.
+11. **Anti-K e anti-c importam mesmo em mãe RhD-positiva.**
+12. **ABO pode causar icterícia na primeira gestação**, e DAT negativo não exclui toda hemólise ABO.
+13. **Bilirrubina neonatal depende da idade em horas e de riscos**, não de valor universal memorizado.
+14. **IVIG neonatal não é rotina para todo Coombs direto positivo**, devido à evidência incerta e riscos.
+15. **Anemia tardia pode ocorrer após alta**, especialmente em pacientes com TIU prévia.
+
+## 19. Plano de ilustrações, exames e integração com Admin
+
+São **necessidades visuais planejadas**, e não imagens já adquiridas; cada figura clínica precisa de fonte confiável, direito de uso comercial, ausência de identificação do paciente e conferência médica.
+
+| Figura proposta | Seção | Lição |
+| --- | --- | --- |
+| Diagrama LURIA IgG anti-D atravessando placenta | 2–3 | Distinguir exposição materna, anticorpo e hemólise fetal |
+| Esquema RhD vs anti-c vs anti-K | 2/11 | Especificidade eritrocitária e supressão eritroide |
+| Painel imuno-hematológico fictício/original | 5–6 | PAI positiva, identificação e titulação sem expor dados reais |
+| Traçado Doppler ACM normal | 7 | Velocidade sistólica próxima à origem, referência MoM |
+| Traçado Doppler ACM >1,5 MoM | 7 | Exemplo de anemia fetal suspeita |
+| US de hidropisia com ascite/derrame | 3/8 | Reconhecimento e diferencial |
+| Fotografia ultrassonográfica de cordocentese em TIU | 9 | Local de punção e riscos; material real só com licença/consentimento |
+| Esquema original de prevenção anti-D | 10/17 | PAI, evento sensibilizante, anteparto e pós-parto |
+| Diagrama de teste Kleihauer–Betke | 10.4 | Como quantificar HFM, com limites técnicos |
+| Exemplo de curva de bilirrubina por horas | 13 | Conduta por horas/idade/risco; criar esquema autoral sem copiar gráfico AAP |
+| Fluxograma de escalonamento neonatal | 13/17 | Fototerapia intensiva, exsanguineotransfusão e uso seletivo de IVIG |
+| Esquema de anemia fetal versus neonatal | 3/13 | Placentação da bilirrubina e fisiologia após nascimento |
+
+**Prioridade técnica:** exames reais (Doppler, US) quando houver permissão específica; fluxogramas e esquemas devem ser originais, coerentes com diretriz. O texto de site público e figuras de acesso aberto não significam licença comercial automática. Nenhuma figura desta lista foi ainda incorporada ao repositório/manifesto ou aprovada pelo Admin.
+
+## 20. Bibliografia clínica e referências de aplicação
+
+1. **Gonçalves ER.** Isoimunização — partes 1 e 2. Fluxogramas de Gestação de Alto Risco, FEBRASGO, 2023 (republicados em coletâneas). O endpoint \`https://www.febrasgo.org.br/fluxopdf/assets/pdf/Isoimunizacao.pdf\` estava listado em buscador mas retornou indisponibilidade/erro na consulta direta de 15/10/2026. **Não afirmar download de PDF íntegro a partir deste endereço.** Há material brasileiro correlato em <https://www.febrasgo.org.br/biblioteca/>. Os marcos de 28–34 semanas e pós-parto foram cotejados também com documentos públicos brasileiros citados abaixo.
+2. **Moise KJ Jr, Markham KB, Spinella PC, et al.** A Clinical Practice Guideline for the Management of Pregnancy Alloimmunized to Red Blood Cell Antigens. *JAMA Network Open*. **2025;8(11):e2544649**, publicado em 24/11/2025. DOI [10.1001/jamanetworkopen.2025.44649](https://doi.org/10.1001/jamanetworkopen.2025.44649). Documento com recomendações e graus de certeza, incluindo genotipagem, anti-K, Doppler, TIU e nascimento.
+3. **Regan F, et al.** Guideline for the investigation and management of red cell antibodies in pregnancy: A British Society for Haematology guideline. *Transfusion Medicine*, 2025. DOI [10.1111/tme.13098](https://doi.org/10.1111/tme.13098). Recomendação britânica atualizada de identificação, quantificação, história prévia, anti-D passivo/imune e encaminhamento.
+4. **SMFM.** Clinical Guideline #8: The fetus at risk for anemia—diagnosis and management. *Am J Obstet Gynecol*. 2015. Página original [SMFM](https://publications.smfm.org/publications/586-society-for-maternal-fetal-medicine-clinical-guideline-8/). Fundamental para técnica de PSV-ACM, limiar >1,5 MoM e avaliação antes da TIU; confrontado com a atualização consensual de 2025.
+5. **American Academy of Pediatrics.** Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. *Pediatrics*. 2022;150(3):e2022058859. <https://publications.aap.org/pediatrics/article/150/3/e2022058859/188726/>. Limiares dependem de horas, idade gestacional e riscos; IVIG é opção seletiva. A diretriz aplica-se a **≥35 semanas**, não extrapolar a prematuros menores.
+6. **AAP.** Frequently Asked Questions About the 2022 AAP Guideline. <https://www.aap.org/en/patient-care/hyperbilirubinemia/frequently-asked-questions-about-the-2022-aap-guideline-on-the-management-of-hyperbilirubinemia/>. Explicita incerteza sobre benefício da IVIG e atenção a complicações.
+7. **British Society for Haematology.** BSH guideline for the estimation of fetomaternal haemorrhage, publicada em **12/06/2026**. <https://cms.b-s-h.org.uk/guidelines/guidelines/bsh-guideline-for-the-estimation-of-fetomaternal-haemorrhage>. Métodos AE/citometria e cálculo de dose anti-D adicional.
+8. **Ministério da Saúde, Brasil.** *Gestação de alto risco — manual técnico*, edição histórica de 2012. <https://bvsms.saude.gov.br/bvs/publicacoes/manual_tecnico_gestacao_alto_risco.pdf>. Documento contextual brasileiro, **não afirmar vigência integral em 2026**. Orienta prevenção anti-D após eventos e parto e alerta que aplicação tardia reduz eficácia.
+9. **EBSERH/Maternidade Escola Assis Chateaubriand.** Protocolo “Prevenção de isoimunização/anemia fetal” PRO.MED-OBS.038, emissão em 2020 (revisão prevista 2022). <https://www.gov.br/ebserh-/pt-br/hospitais-universitarios/regiao-nordeste/ch-ufc/acesso-a-informacao/protocolos-e-pops/protocolos-meac/maternidade-escola-assis-chateaubriand/medicina-fetal/prevencao-de-isoimunizacao-anemia-fetal-v1-pro-med-obs.038>. **Institucional e potencialmente desatualizado**, utilizado para confrontar práticas locais, não como norma nacional vigente.
+
+## 21. Matriz de cobertura de qualidade
+
+| Competência | Capítulos | Casos | Questões | Nota |
+| --- | --- | --- | --- | --- |
+| Incompatibilidade versus sensibilização | 2–5 | 1, 2 | 1, 2 | Desenvolvido |
+| Interpretação PAI, passivo/imune e genotipagem | 5–6 | 2–3 | 2–4 | Exige revisão imuno-hematológica |
+| Anti-Kell e anticorpos distintos | 2, 6, 11 | 3, 9 | 3–4, 14 | Desenvolvido; critérios precisam padronização local |
+| PSV-ACM, anemia e hidropisia | 7–8 | 4–5 | 5–6, 9 | Desenvolvido; imagens ainda ausentes |
+| TIU e riscos | 9 | 4 | 5, 14 | Desenvolvido em princípios, requer revisão terapia fetal |
+| Anti-D profilática e HFM | 10 | 1, 2, 6 | 1, 2, 7–8 | Versões locais devem ser conferidas |
+| Diagnóstico neonatal e bilirrubina | 13–14 | 7–8 | 10–11 | AAP ≥35 semanas; versão brasileira pendente |
+| Seguimento de anemia tardia | 13.5 | 9 | 12 | Desenvolvido |
+| Integração de fluxos em cenários reais | 17 | todos | todos | Desenvolvido |
+
+## 22. Autoauditoria — estado real e gates faltantes
+
+- **Produção autoral:** capítulos de mecanismo, antígenos, prevenção, diagnóstico, TIU, neonatologia e decisões clínicas. **9 casos originais** e **14 questões com cinco alternativas comentadas**.
+- **Fonte Drive:** \`02 - DOENCA HEMOLITICA PERINATAL.pdf\` lido, mas **resumo parcial**, não equivalente integral; \`01 - ICTERICIA E COLESTASE NEONATAL.pdf\` lido como apoio para complicações neonatais. Nenhuma autoria Estratégia MED comprovada, nenhuma cópia textual.
+- **Ciência:** BSH 2025, consenso JAMA 2025, SMFM, AAP e documentação brasileira lidos/cotejados. Ainda exige revisão de especialista em medicina fetal, neonatologia e hemoterapia, validação nacional de dose anti-D em cenários de primeiro trimestre, tabelas de títulos/concentração e suporte neonatológico.
+- **Extensão:** caracteres totais do Markdown **não são equivalentes a 60 mil didáticos úteis**; contar após remover Markdown, controles editoriais, bibliografia, questões redundantes e textos de transferência, e depois avaliar cobertura clínica.
+- **Visuais:** 12 necessidades de imagem listadas, **zero** imagens clínicas importadas/licenciadas/aprovadas.
+- **Entrega:** nenhum HTML, PWA, main, banco, catálogo ou deploy foi alterado. O arquivo continua como **rascunho editorial numa branch de isolamento**.
+- **Próximo tema da faixa curricular:** 210 — Psicopatologia, entrevista e exame do estado mental. Antes de criar, buscar materiais já existentes de Saúde Mental/psiquiatria na LURIA e Drive. Evitar duplicar as apostilas específicas de depressão, bipolaridade, ansiedade e psicose previstas para 211–215.
