@@ -52,6 +52,30 @@ for (const book of books) {
         issues.push("tbody_html_desbalanceado:"+s.id);
       if(!b.trim())issues.push("capitulo_vazio:"+s.id);
     }
+
+    // Casos e questões devem aparecer somente nas suas seções finais,
+    // numerados a partir de 1, sem lacunas, repetições nem introdução perdida.
+    const caseChapters=sections.filter(s=>/^Casos clínicos comentados$/i.test(s.title));
+    const questionChapters=sections.filter(s=>/^Questões autorais comentadas$/i.test(s.title));
+    if(caseChapters.length!==1)issues.push("capitulo_de_casos_ausente_ou_duplicado");
+    if(questionChapters.length!==1)issues.push("capitulo_de_questoes_ausente_ou_duplicado");
+    const numbered=(body,kind)=>[...body.matchAll(new RegExp("<h[34]>"+kind+" (\\d+)\\b","g"))].map(x=>Number(x[1]));
+    const isSequence=ns=>ns.length>0&&ns.every((n,i)=>n===i+1);
+    if(caseChapters.length===1){
+      const ns=numbered(caseChapters[0].body_html,"Caso");
+      if(!isSequence(ns)||ns.length<4)issues.push("casos_sem_numeracao_continua");
+    }
+    if(questionChapters.length===1){
+      const ns=numbered(questionChapters[0].body_html,"Questão");
+      if(!isSequence(ns)||ns.length<6)issues.push("questoes_sem_numeracao_continua");
+    }
+    for(const s of sections){
+      if(s===caseChapters[0]||s===questionChapters[0])continue;
+      if(/<h[34]>(?:Caso|Questão) \d+\b/.test(s.body_html)
+          || /<p><strong>(?:Caso|Questão) [12]\.<\/strong>/.test(s.body_html))
+        issues.push("caso_ou_questao_fora_do_capitulo_final:"+s.id);
+    }
+
     if(result.characters<MIN)issues.push("abaixo_60k_triagem");
     if(imageQueueFor(book).length)issues.push("imagem_requer_revisao_admin");
     results.push({slug:book.slug,sections:sections.length,
