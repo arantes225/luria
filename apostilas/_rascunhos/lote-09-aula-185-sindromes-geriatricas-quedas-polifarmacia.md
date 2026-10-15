@@ -362,3 +362,156 @@ E. Manter prescrição imutável porque foi iniciada por outro médico.
 | Finalização | Markdown autoral isolado | 60K úteis, revisão científica, benchmark integral, HTML/PWA |
 
 **COMPLEMENTAR NA PRÓXIMA REVISÃO:** este é rascunho inicial de capítulo clínico, não obra final. Sem benchmark geriátrico equivalente no Drive, a comparação permanece PARCIAL. Não copiar ou parafrasear de perto o resumo de síndromes cognitivas consultado. Expandir cada domínio com conteúdo novo e clinicamente útil, sem repetição artificial. **Não publicar nem certificar sem validações editoriais e de imagem.**
+
+
+## 17. Quedas e fraturas: por que a lesão é consequência de dois processos?
+
+A probabilidade de fratura depende tanto da energia transmitida na queda quanto da resistência óssea. Uma pessoa com osteoporose pode sofrer fratura por baixa energia ao cair da própria altura, enquanto outra sem fragilidade óssea pode ter apenas contusão. Portanto, após uma queda com fratura de quadril, punho, úmero proximal ou vértebra, a avaliação precisa investigar **risco de nova queda e fragilidade esquelética**. Tratar cirurgicamente uma fratura sem identificar osteoporose e fatores ambientais deixa o paciente vulnerável a segundo evento.
+
+### 17.1 Osteoporose e avaliação de risco
+
+Osteoporose é doença esquelética caracterizada por redução da resistência óssea, predispondo a fraturas. O diagnóstico pode usar densitometria e critérios específicos de idade, sexo e história clínica; fratura por fragilidade em local característico pode indicar risco elevado mesmo quando a densitometria não é francamente osteoporótica. Ferramentas de estimativa de risco como FRAX devem ser usadas com informações corretas e limitações reconhecidas: não capturam integralmente frequência de quedas, algumas exposições e nuances de fragilidade.
+
+Na atenção inicial após queda, perguntar por fraturas anteriores, perda de estatura, dor dorsal, uso prolongado de glicocorticoides, desnutrição, álcool, tabagismo e histórico familiar. A prescrição de vitamina D e cálcio exige avaliação de ingestão, deficiência e contraindicações, enquanto medicações antirreabsortivas ou formadoras de osso são selecionadas segundo risco e contexto. **Não confundir reduzir risco de fratura com reduzir frequência de queda:** são alvos complementares.
+
+### 17.2 Fratura de quadril: evento sentinela
+
+Fratura de quadril pode precipitar imobilidade, delirium, internação prolongada, perda de função e maior necessidade de apoio. A abordagem envolve analgesia eficaz sem sedação excessiva, tratamento ortopédico oportuno, prevenção de delirium, reabilitação e planejamento de alta. A avaliação geriátrica também deve considerar anemia, função renal, nutrição, anticoagulantes, risco de tromboembolismo e objetivos funcionais.
+
+A dor mal controlada pode aumentar delirium e reduzir mobilidade; em contrapartida, excesso de opioide pode produzir sonolência e retenção urinária. A resposta não é evitar toda analgesia, mas equilibrar métodos e reavaliar continuamente. Após estabilização, o plano de prevenção secundária de fraturas e quedas deve ser documentado.
+
+### 17.3 Dispositivos de auxílio e ajuste de ambiente
+
+Bengala ou andador apenas ajudam quando **altura, técnica e indicação** são apropriadas. Dispositivo mal ajustado pode piorar equilíbrio ou provocar postura inadequada; treinamento de uso e avaliação por fisioterapia/terapia ocupacional podem evitar isso. O indivíduo que usa bengala em mão inadequada ou a apoia à frente de modo inseguro precisa de orientação prática, não de recomendação genérica “usar apoio”.
+
+No banheiro, barras fixas e superfície antiderrapante podem reduzir risco; no quarto, iluminação e trajeto livre até o banheiro são importantes, especialmente em noctúria. A mudança do ambiente precisa respeitar renda, moradia e autonomia do usuário; sugerir reforma inviável pode não produzir nenhum benefício. Intervenções graduais factíveis, adequadas ao domicílio, devem ser priorizadas.
+
+### 17.4 Quando a queda pode sinalizar emergência neurológica?
+
+Fraqueza focal súbita, alteração de fala, ataxia nova, diplopia, cefaleia abrupta, convulsão ou redução de consciência podem indicar AVC, hemorragia ou outra lesão aguda. Não assumir “instabilidade da idade” diante de déficit lateralizado ou início súbito. Em pessoas sob anticoagulação, trauma craniano merece avaliação conforme regras de segurança e protocolo de imagem, mesmo quando a narrativa inicial parece banal.
+
+## 18. Marcha e equilíbrio: padrões clínicos que refinam hipóteses
+
+A marcha resulta da integração de força muscular, sensibilidade proprioceptiva, visão, sistemas vestibulares, circuitos corticais/subcorticais e função cardiovascular. Uma pessoa pode cair por falha em qualquer componente ou na combinação. Observar **como** o paciente caminha, vira e inicia passos costuma acrescentar informação que a contagem de quedas não revela.
+
+### 18.1 Marcha parkinsoniana
+
+Passos curtos, diminuição de balanço de braços, tronco fletido, hesitação para iniciar movimento, bloqueios e dificuldade de virar podem surgir em parkinsonismo. O quadro pode coexistir com hipotensão ortostática, urgência urinária, distúrbios cognitivos e efeitos de medicamentos dopaminérgicos. Diferenciar Parkinson idiopático de parkinsonismo farmacológico e outras síndromes é importante; o início após antipsicótico ou metoclopramida merece revisão de fármacos. A prevenção de queda inclui reabilitação, tratamento neurológico e atenção a sintomas autonômicos.
+
+### 18.2 Marcha neuropática/sensitiva
+
+Neuropatia periférica pode reduzir propriocepção e sensibilidade plantar, gerando maior dependência da visão para equilíbrio. O paciente piora em ambiente escuro, com pisos irregulares e calçado inadequado. Diabetes, deficiência de B12, álcool, doenças renais e outras condições podem participar. Exame de sensibilidade vibratória/proprioceptiva, reflexos, força e integridade dos pés orienta investigação, sem atribuir toda marcha insegura à “fraqueza normal”.
+
+### 18.3 Marcha vestibular e cerebelar
+
+Vertigem, instabilidade e náusea com determinados movimentos podem sugerir causa vestibular, enquanto marcha atáxica, dismetria e sinais neurológicos centrais levantam hipótese cerebelar. **Ataxia de instalação súbita** exige avaliação urgente de AVC, especialmente de circulação posterior. Em quadro crônico, reabilitação vestibular pode ajudar quando indicada. Não prescrever sedativo vestibular por tempo indefinido sem avaliar efeito sobre equilíbrio e capacidade de compensação.
+
+### 18.4 Hidrocefalia de pressão normal
+
+A tríade clássica envolve **alteração de marcha**, comprometimento cognitivo e sintomas urinários, embora nem todos ocorram simultaneamente. A marcha pode ser lenta, com dificuldade de iniciar passos e de elevar pés. Diagnóstico requer associação de fenótipo, neuroimagem com ventriculomegalia compatível, exclusão de outras causas e testes complementares em pacientes selecionados. Uma dilatação ventricular isolada no laudo não comprova hidrocefalia de pressão normal nem garante resposta à derivação. Encaminhamento especializado pode permitir identificar casos potencialmente tratáveis.
+
+### 18.5 Avaliação de desempenho: interpretar, não decorar somente segundos
+
+O **Timed Up and Go (TUG)** avalia a tarefa de levantar-se, caminhar, virar, retornar e sentar. Tempo aumentado pode apontar limitação funcional, mas pontos de corte variam com população e não devem ser tratados como previsão perfeita de queda. A NICE 2025 explicitamente não recomenda usar instrumento preditivo como substituto da avaliação clínica individual. A velocidade usual de marcha e testes de levantar-se da cadeira também contribuem para entender força e função; seu resultado é mais útil quando orienta intervenção ou monitoriza melhora.
+
+## 19. Nutrição geriátrica, perda de peso e disfagia
+
+Desnutrição pode resultar de baixa renda, isolamento, dificuldade de preparar alimentos, dentição, depressão, doença inflamatória, câncer, disfagia, medicamentos, saciedade precoce e limitação física. Perguntar só “come bem?” muitas vezes não revela quantas refeições são realizadas, quem cozinha, se falta comida ou se a pessoa evita alimentos por dor ao mastigar. **Perda de peso involuntária** é sinal de alerta, não uma consequência irrelevante de idade avançada.
+
+Instrumentos como **Mini Nutritional Assessment** podem estruturar triagem em idosos, e critérios como GLIM organizam avaliação diagnóstica de desnutrição conforme contexto, mas a interpretação requer medidas adequadas. IMC normal não exclui perda muscular importante. Uma pessoa com obesidade pode ter **obesidade sarcopênica**, combinando adiposidade excessiva com força/massa muscular reduzida e importante limitação funcional.
+
+### 19.1 Disfagia e aspiração
+
+Tosse durante alimentação, voz molhada após deglutição, engasgos, perda ponderal e pneumonias recorrentes levantam hipótese de disfagia. AVC, parkinsonismo, demência avançada, doença neuromuscular e problemas dentários são causas possíveis. O manejo exige avaliação fonoaudiológica quando disponível, adequação de textura e técnica conforme risco, medidas posturais e monitorização nutricional. Nem todo caso precisa de restrição permanente da via oral; por outro lado, alimentação forçada durante delirium ou sonolência pode aumentar risco de aspiração.
+
+### 19.2 Proteína, energia e exercício
+
+Oferta proteica suficiente auxilia manutenção muscular, mas as necessidades variam conforme doença renal, catabolismo, desnutrição, tolerância e objetivos. A prescrição deve ser individualizada em conjunto com nutrição, preferindo alimentos acessíveis quando possível. **Suplemento sem plano de mobilidade e avaliação causal** pode aumentar custo sem resolver sarcopenia. Paciente com depressão e isolamento pode precisar mais de apoio social e reabilitação do que de mudar repetidamente o sabor da fórmula nutricional.
+
+### 19.3 Saúde bucal como determinante funcional
+
+Dor dentária, ausência de prótese adequada, xerostomia por anticolinérgicos e dificuldade de mastigação restringem proteínas e alimentos fibrosos. Saúde bucal deve integrar avaliação de perda ponderal e disfagia, evitando reduzir desnutrição a “falta de vontade de comer”.
+
+## 20. Cognição, humor e autonomia: diferentes trajetórias
+
+### 20.1 Comprometimento cognitivo não equivale imediatamente a demência
+
+Queixas de memória podem refletir sono ruim, depressão, baixa escolaridade, perda auditiva, fármacos, delirium e condições neurológicas. Demência (transtorno neurocognitivo maior) envolve declínio em domínios cognitivos suficientemente importante para comprometer independência funcional, sem ser explicado somente por delirium. Comprometimento cognitivo leve caracteriza declínio mensurável que não retira independência básica nas atividades cotidianas, embora possa haver maior esforço ou compensação. A avaliação deve considerar estado prévio e cultura/educação, não apenas uma pontuação sem contexto.
+
+### 20.2 Demência e delirium podem coexistir
+
+Pessoa com demência pode ter piora de atenção e consciência em 24 horas por pneumonia ou sedativo. O médico não deve concluir que “a demência acelerou” antes de procurar delirium, hipoxemia, efeitos farmacológicos e desidratação. O estado basal da cognição é reconstruído com familiar/cuidador e observação em dias anteriores. A identificação e correção de causa aguda podem melhorar significativamente função, embora nem sempre a recuperação seja imediata.
+
+### 20.3 Depressão, apatia e isolamento
+
+Depressão pode manifestar-se como perda de energia, pouca alimentação, insônia, dor inespecífica ou isolamento, não apenas tristeza verbalizada. Rastrear humor e risco suicida quando pertinente, revisar medicações e doenças associadas. A apatia em doença neurodegenerativa pode ter mecanismo diferente de depressão maior, exigindo avaliação individualizada. Em ambos, desvalorizar sintomas como “personalidade de idoso” é erro clínico.
+
+### 20.4 Preservar autonomia com apoio proporcional
+
+Capacidade para determinada decisão não é igual a desempenho em teste cognitivo ou idade. É contextual e pode variar com complexidade, comunicação, delirium e suporte. Pessoas com dificuldades cognitivas podem manter capacidade para escolhas cotidianas e precisar de apoio para outras decisões. O cuidado deve proporcionar informações acessíveis, avaliar compreensão, respeitar preferências e buscar representação legítima quando necessário, evitando paternalismo.
+
+## 21. Transição do hospital para casa: momento de alto risco para iatrogenia
+
+Alta hospitalar representa mudança de equipe, ambiente, rotina e responsáveis por medicamentos. Em idosos com multimorbidade, esse ponto pode introduzir duplicidades, suspensão não intencional de medicamento necessário e confusão entre “remédio de internação” e tratamento permanente. A prescrição deve indicar o que **continuar, iniciar, mudar de dose e suspender**, com justificativa compreensível ao paciente e cuidador.
+
+**Exemplo de risco:** durante internação, hipoglicemia leva à suspensão de sulfonilureia e introdução de outro esquema; ao voltar para casa, a pessoa retoma automaticamente todos os comprimidos da caixa antiga além dos novos e sofre hipoglicemia e queda. A reconciliação deve conferir caixas, receitas e entendimento, não apenas imprimir nova lista.
+
+### 21.1 Planejamento funcional de alta
+
+Perguntar se o paciente sobe degraus, chega ao banheiro, consegue transferir-se da cama, se alimenta e se há cuidador disponível nos horários necessários. Uma alta clinicamente estável pode falhar se o paciente não conseguir buscar água, abrir embalagem ou administrar medicação no horário. Atuação de fisioterapia, terapia ocupacional, enfermagem, serviço social e APS ajuda a reduzir reinternações e preservar autonomia.
+
+### 21.2 Compartilhamento de informação com APS
+
+Resumir diagnóstico, delirium ocorrido, função basal e atual, novas necessidades, alterações de medicação, plano de redução de sedativos, riscos de queda, nutrição e retorno. “Alta após pneumonia” é informação insuficiente quando a pessoa perdeu capacidade de caminhar e passou a precisar de ajuda para banho.
+
+## 22. Prioridade terapêutica quando há multimorbidade
+
+Diretrizes de doença isolada frequentemente pressupõem adesão a vários medicamentos e monitorização regular. Na pessoa com muitas condições, somá-las literalmente pode resultar em dez ou quinze prescrições, interações e objetivos incompatíveis. A decisão deve ponderar **benefício absoluto**, **tempo até benefício**, **risco imediato**, **carga de tratamento** e **objetivos pessoais**.
+
+Uma intervenção que evita evento vascular ao longo de anos pode ter alto valor para pessoa independente com expectativa longa, mas prioridade menor diante de doença avançada com carga de sintomas e horizonte de vida restrito. Em contrapartida, analgésicos adequados, reabilitação, tratamento de dispneia e prevenção de delirium oferecem benefício funcional imediato. Não se trata de negar cuidado pelo envelhecimento: é atribuir pesos proporcionais a metas construídas com a pessoa.
+
+### 22.1 Decisão compartilhada e metas concretas
+
+Exemplos de metas: “voltar a caminhar até a padaria”, “tomar banho sem cair”, “reduzir sonolência diurna”, “manter memória suficiente para conversa” e “evitar internação que não trará benefício funcional”. Registrar metas claras ajuda a avaliar se mudanças de medicação e reabilitação estão efetivamente servindo ao paciente. Pressão arterial e glicemia continuam importantes, mas não são os únicos desfechos.
+
+### 22.2 Quando encaminhar
+
+Quedas recorrentes ou com síncope, perda de função rápida, fragilidade complexa, delirium persistente, suspeita de doença neurodegenerativa atípica, polifarmácia de alto risco sem possibilidade de revisão simples, desnutrição importante ou necessidade de reabilitação intensiva justificam suporte especializado em geriatria, neurologia, cardiologia, fisioterapia, nutrição ou outros, conforme hipótese. O encaminhamento não deve impedir intervenções iniciais factíveis na APS.
+
+## 23. Erros de prova e prática — síntese causal
+
+| Frase incorreta | Qual o erro? | Raciocínio correto |
+|---|---|---|
+| “Caiu porque é velho” | Ignora mecanismo e causas reversíveis | Avaliar síncope, fármacos, marcha, visão, ambiente |
+| “Bastam dez segundos de TUG para prever quem vai cair” | Trata escore como destino | Usar testes para função e intervenção, não previsão infalível |
+| “Vitamina D previne toda queda” | Generaliza evidência | Avaliar indicação óssea/deficiência, exercício e fatores modificáveis |
+| “Idoso quieto após cirurgia está descansando” | Pode mascarar delirium hipoativo | Procurar mudança aguda de atenção e precipitantes |
+| “Creatinina normal prova rim normal” | Pouca massa muscular altera interpretação | Estimar função renal e ajustar fármacos apropriadamente |
+| “Sete medicamentos significa receita errada” | Número não define qualidade | Revisar indicação, segurança, duplicidades e omissões |
+| “Parar benzodiazepínico hoje resolve queda” | Retirada abrupta pode ser perigosa | Planejar redução gradual e alternativas para insônia |
+| “Antipsicótico trata a causa do delirium” | Confunde sedação com correção etiológica | Investigar e tratar causa, ambiente e suporte |
+| “Demência piorou muito em dois dias” | Pode ser delirium superposto | Comparar estado basal e buscar causas agudas |
+| “Fratura cicatrizou, então acabou cuidado” | Não resolve risco ósseo nem risco de queda | Investigar osteoporose, reabilitar e prevenir recorrência |
+
+## 24. Casos integradores suplementares
+
+**Caso A — síncope confundida com queda:** homem de 78 anos relata cair no banheiro sem lembrar de tropeço, após episódios de palpitações. ECG revela alteração de ritmo relevante. A abordagem deve priorizar possível síncope arrítmica e risco cardiovascular, não apenas reabilitação de marcha. Uma queda sem testemunha pode ocultar perda transitória de consciência.
+
+**Caso B — carga anticolinérgica:** mulher de 82 anos começa fármaco para bexiga hiperativa e antialérgico sedativo. Desenvolve constipação, retenção urinária e confusão. A revisão encontra combinação anticolinérgica e vários precipitantes. O manejo depende de avaliação clínica e retirada/troca segura dos agentes responsáveis, não necessariamente de antipsicótico.
+
+**Caso C — alta com duplicidade:** pessoa de 85 anos recebe prescrição de analgésico com nome comercial novo, mas retoma em casa equivalente anterior. Apresenta sedação e hipotensão. A reconciliação revela duplicação de princípio ativo. O caso ilustra por que perguntar apenas “quantos remédios?” é menos útil que conferir cada produto real.
+
+**Caso D — dieta e exercício como prevenção:** mulher de 79 anos, com fraqueza de preensão e marcha lenta, recebe recomendação de repouso por medo de queda, reduz atividade e perde ainda mais independência. A intervenção correta envolve avaliação de risco, treino de força/equilíbrio progressivo e plano nutricional conforme necessidade, preservando mobilidade segura.
+
+## 25. Instrumentos e medidas para revisão posterior
+
+- **Avaliação funcional:** ABVD e AIVD com descrição concreta da ajuda necessária; distinguir não realizar por opção cultural de não conseguir realizar por declínio.
+- **Fragilidade:** Fried com medidas validadas e CFS baseada em estado pré-evento, não quadro de internação aguda.
+- **Sarcopenia:** triagem clínica, força de preensão, levantar-se da cadeira, velocidade de marcha, massa muscular quando indicada; evitar usar uma medida isolada como diagnóstico integral.
+- **Quedas:** relato de eventos do último ano, PA ortostática, exame de marcha/equilíbrio, revisão de fármacos e domicílio; TUG como informação funcional, não previsão absoluta.
+- **Delirium:** 4AT em hospital/longa permanência, CAM-ICU/ICDSC em contexto de UTI/recuperação, com história basal e procura de precipitantes.
+- **Prescrição:** reconciliação real, AGS Beers 2023, STOPP/START v3, avaliação de função renal, contexto e prioridades.
+- **Nutrição:** história alimentar/ponderal, disfagia, exame e ferramentas validadas como MNA quando pertinentes.
+- **Risco ósseo:** fratura por fragilidade, fatores clínicos, densitometria e avaliação de risco apropriada, sem confundir risco de fratura com frequência de quedas.
+
+**Aviso de status:** este complemento acrescenta temas relevantes, mas **não encerra auditoria do lote**. O objetivo de 60 mil caracteres didáticos úteis precisa ser medido após remover marcação e eventuais redundâncias. Antes de integrar ao site, conferir cada critério, doses, interações e referências, realizar comparação editorial equivalente quando acessível, curadoria de imagens com licenças e testes desktop/PWA. Rascunho, sem merge e sem deploy.
