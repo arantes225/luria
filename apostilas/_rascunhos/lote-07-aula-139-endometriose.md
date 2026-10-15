@@ -2,12 +2,12 @@
 # Endometriose: dor pélvica, doença profunda e fertilidade
 
 **Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**.  
-**Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4, março/2026, **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional.
+**Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional.
 
 ## 0. Etapa zero — preservar o que já existe, identificar material comparativo
 **Auditoria LURIA:** não havia diretório independente endometriose na listagem principal de apostilas. O HTML **\`apostilas/infertilidade-conjugal/index.html\`** foi efetivamente aberto e inspecionado; tem aproximadamente 87,7 mil caracteres de HTML, 51,7 mil de texto bruto e cerca de **20 menções a endometriose**, sobretudo como causa de infertilidade, sem substituir livro sobre fisiopatologia, imagem dirigida, dor e cirurgia de doença profunda. A apostila **\`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`** foi aberta; DIP aparece como diferencial de dor e infertilidade, com menções limitadas a endometriose. **Preservar ambos os HTMLs**, não sobrescrever nem criar cópia de infertilidade conjugal.
 
-**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em março/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor.
+**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor.
 
 ## 1. Conceito e os três fenôtipos clínicos
 A endometriose é doença inflamatória crônica estrogênio-dependente caracterizada pela presença de tecido semelhante ao endométrio **fora da cavidade uterina**, associado a resposta inflamatória local e variabilidade de dor/fertilidade. As lesões não são idênticas em tudo ao endométrio eutópico, e a doença pode envolver alterações de imunidade, fibras nervosas e cicatrização.
@@ -109,7 +109,7 @@ Cirurgia pode tratar dor refratária, endometrioma selecionado, doença profunda
 ### 10.1. Por que a infertilidade é multifatorial?
 Inflamação altera meio peritoneal, aderências distorcem relação tubo-ovário, endometriomas e cirurgias reduzem reserva em alguns casos, e fatores masculinos/ovulatórios/idade coexistem. A avaliação deve incluir **casal ou parceiros envolvidos**, tempo de tentativa, idade, reserva/ovulação, permeabilidade tubária quando útil e espermograma quando aplicável. É erro atribuir toda infertilidade à endometriose e ignorar azoospermia do parceiro ou idade reprodutiva.
 
-### 10.2. O que o posicionamento FEBRASGO de março/2026 acrescenta?
+### 10.2. O que o posicionamento FEBRASGO nº 4/2026, publicado em maio acrescenta?
 O documento brasileiro **“Diagnóstico e manejo da infertilidade associada à endometriose”, Position Statement nº4/2026** reforça avaliação clínica estruturada, US transvaginal especializada como primeira linha, RM seletiva para mapeamento e evita **laparoscopia diagnóstica de rotina em mulheres inférteis assintomáticas com imagem normal**. Essas afirmações se referem especificamente ao contexto de infertilidade, não negam cirurgia em dor refratária ou obstrução de órgão.
 
 A estratégia para gestação depende de idade, reserva ovariana, anatomia, outras causas, tratamentos prévios e decisão compartilhada. Procedimentos de reprodução assistida podem ser úteis quando tubas comprometidas, idade avançada ou fatores combinados. Não prometer que cirurgia de endometrioma sempre melhora chances de FIV; avaliar custo sobre reserva e risco cirúrgico.
@@ -218,7 +218,7 @@ A. Dor é necessariamente inventada. B. Todo caso precisa de reoperação imedia
 ## 17. Fontes atuais
 1. ESHRE. *Endometriosis: guideline*. 2022. https://academic.oup.com/hropen/article/2022/2/hoac009/6537540
 2. NICE NG73. *Endometriosis: diagnosis and management*, diagnóstico atualizado em novembro/2024. https://www.nice.org.uk/guidance/ng73/chapter/Recommendations
-3. FEBRASGO. *Diagnóstico e manejo da infertilidade associada à endometriose*, Position Statement nº 4, março/2026. https://www.febrasgo.org.br/images/pec/posicionamentos-febrasgo/2026/marco/FPS---N4---2026---portugues.pdf
+3. Silva Filho AL, Lamaita RM, Podgaec S, et al. FEBRASGO Position Statement nº 4/2026. *Diagnóstico e manejo da infertilidade associada à endometriose*. *Femina*. 2026;54(3):199–214. Publicado em 05/05/2026. DOI: 10.61622/0100-7254543202606. https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/ (página editorial estável; PDF indexado em FEBRASGO não pôde ser aberto diretamente na checagem).
 4. LURIA. \`apostilas/infertilidade-conjugal/index.html\`, livro já existente e preservado.
 5. LURIA. \`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\`, diferencial de dor pélvica revisado.
 
