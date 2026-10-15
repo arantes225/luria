@@ -14,7 +14,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 06 | Clínica Médica | Insuficiência cardíaca | Rascunho em `apostilas/insuficiencia-cardiaca/content.json` — **não publicado, não certificado** |
 | 07 | Cirurgia Geral | Cuidados perioperatórios | Rascunho em `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` — **não publicado, não certificado** |
 | 08 | Pediatria | Reanimação neonatal | Rascunho aprofundado em `apostilas/reanimacao-neonatal/content.json`, 15 seções, 7 casos, 10 questões e ~70.669 caracteres aparentes — **não publicado, não certificado** |
-| 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Rascunho independente `apostilas/diagnostico-datacao-gestacao/content.json`: 13 seções, 8 casos, 12 questões, ~37.674 caracteres aparentes — **parcial, não publicado/não certificado** |
 | 10 | Medicina Preventiva | Lei nº 8.080/1990 | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 11 | Clínica Médica | Hipertensão arterial sistêmica | Rascunho em `apostilas/hipertensao-arterial-sistemica/content.json` — **não publicado, não certificado** |
 | 12 | Cirurgia Geral | Resposta metabólica ao trauma | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **9 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 11 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses dez temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
-- Os outros **13 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **10 rascunhos `content.json` identificados** (aulas 1, 2, 3, 5, 6, 7, 8, 9, 11 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses onze temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
+- Os outros **12 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
@@ -42,7 +42,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Próximas verificações editoriais
 
-1. Auditar o tema 009 (diagnóstico e datação da gestação) e as sobreposições com a apostila 004 de pré-natal. O rascunho 008 ultrapassou a meta de extensão aparente, mas continua pendente de revisão científica humana, certificação e testes de simulação.
+1. Auditar o tema 010 (Lei nº 8.080/1990) e as sobreposições com a apostila 005 de princípios do SUS. O rascunho 008 ultrapassou a meta de extensão aparente, mas continua pendente de revisão científica humana, certificação e testes de simulação.
 2. Rever os seis rascunhos com teste de questões representativas e crítica clínica antes de alterar seu status.
 3. Conciliar diffs entre a `main` (260 temas) e a branch editorial antes de integrar.
 
@@ -78,3 +78,10 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 - Releitura da diretriz SBP junho/2026 (≥34 e <34 semanas) e comparação com AHA/AAP 2025 em fonte primária; páginas 31–34 da SBP ≥34, e 24/32 da SBP <34 foram conferidas, inclusive imagem da tabela de concentração/doses e cuidado para não reproduzi-la. O material antigo do Drive não foi utilizado como fonte terapêutica.
 - Auditoria de saída: 15 seções, 72 subtítulos, 16 tabelas, 7 casos e 10 questões; cerca de 70.669 caracteres aparentes em 78.430 caracteres serializados; IDs do sumário alinhados; parágrafos idênticos não encontrados. **Não certifica autossuficiência nem segurança clínica.** Risco médico exige validação independente de doses e simulação prática.
 - Nada foi publicado; sem alteração do catálogo, merge ou deploy. Pendente curadoria de imagens com licença válida e aprovação no Admin, revisão semântica, teste PWA e revisão final de neonatologista.
+
+
+## Continuação de 15/10/2026 — tema 009
+
+- **Diagnóstico e datação da gestação:** PDFs de benchmarking do Drive efetivamente abertos e lidos: `02 - ASSISTENCIA AO PRE-NATAL.pdf` e `02 - SANGRAMENTO DA PRIMEIRA METADE.pdf` (autoria de cursinho não comprovada). LURIA preexistente `apostilas/pre-natal-baixo-risco/index.html` lida, com DUM, CRL e DPP já presentes. Fronteira definida: o tema 004 mantém acompanhamento longitudinal do pré-natal, e 009 aborda testes, localização, viabilidade, erros de datação, gravidez de localização desconhecida, risco de ectópica e reprodução assistida.
+- **Registro da etapa zero:** `apostilas/lotes/TEMA_009_DIAGNOSTICO_DATACAO_AUDITORIA_2026-10-15.md`. **Novo rascunho original:** `apostilas/diagnostico-datacao-gestacao/content.json`, 13 seções, 35 subtítulos, 8 tabelas, 8 casos e 12 questões com comentários. JSON válido, IDs consistentes; ~37.674 caracteres aparentes; meta de 60 mil úteis ainda não atingida. Autorização de publicação não concedida.
+- Conferência com ACOG/AIUM/SMFM sobre melhor DPP, critérios conservadores de viabilidade e Ministério da Saúde sobre captação precoce. Requer revisão médica, expansão didática não repetitiva, teste de qualidade e PWA, além de fluxo de imagens para o Admin. Nenhum merge/deploy nem catálogo editado.
