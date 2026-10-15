@@ -94,6 +94,33 @@ A SSC 2026 observa insuficiência de evidências para recomendar *novo rastreame
 
 Em hospital de recursos limitados, um protocolo que presume equipamentos de terapia intensiva indisponíveis pode causar dano ao incentivar bolus agressivo sem suporte ventilatório/vasoativo possível. Avaliar disponibilidade e transferência antecipadamente.
 
+
+### 4.1. Triagem em camadas: sinal de perigo, foco e resposta
+
+O primeiro contato com a criança doente exige uma decisão **clínica e temporal**: há sinais de perigo que exigem resposta imediata? Procurar dificuldade respiratória, hipoxemia, rebaixamento de consciência, convulsão, hipotermia, petéquias/púrpura progressivas, perfusão periférica alterada, oligúria, extremidades frias ou comportamento substancialmente diferente do habitual. Não é preciso aguardar o resultado do PCR ou do lactato para reconhecer uma emergência.
+
+**Camada 1 — síndrome:** avaliar via aérea, respiração, circulação, estado neurológico e temperatura.  
+**Camada 2 — etiologia/foco:** procurar pulmão, urina, meninges, pele, osso/articulação, abdome e cateter, de forma proporcional ao quadro.  
+**Camada 3 — trajetória:** repetir sinais vitais e perfusão após intervenções, registrar se a evolução está melhor, estável ou pior.
+
+A SSC pediátrica 2026 não encontrou evidência suficiente para recomendar rastreamento sistemático *adicional* em todos os pacientes, além dos protocolos clínicos já existentes. Entretanto, **recomenda** que os hospitais mantenham programa de melhoria de qualidade e procedimentos padronizados de identificação e tratamento da sepse. "Não adicionar triagem universal por evidência insuficiente" é muito diferente de "não treinar equipes para reconhecer sepse".
+
+### 4.2. Choque compensado: por que a pressão pode enganar?
+
+A relação **débito cardíaco = frequência cardíaca × volume sistólico** ajuda a entender parte da compensação. Crianças, sobretudo as menores, podem aumentar frequência cardíaca e resistência vascular periférica para preservar pressão, embora a perfusão tecidual já esteja diminuindo. Palidez, enchimento capilar prolongado, pulsos fracos, oligúria, alteração de atenção e maior diferença térmica entre tronco e extremidades podem surgir antes da hipotensão.
+
+Não transformar pele "quente" em critério de exclusão: a vasoplegia pode produzir pulsos amplos/pele aquecida, e alguns pacientes apresentam perfis mistos de vasodilatação e depressão miocárdica. O fenótipo evolui durante ressuscitação. Uma PA normal isolada não autoriza alta, e uma PA baixa exige aferição com manguito apropriado, mas não deve atrasar suporte quando há piora.
+
+### 4.3. POCUS e investigação sem interromper ressuscitação
+
+Ultrassom cardíaco/pulmonar pode auxiliar equipes treinadas a identificar disfunção ventricular, derrame pericárdico, congestão pulmonar, derrame pleural ou causas concorrentes de instabilidade. Na diretriz SSC 2026, o emprego é **sugerido quando há capacitação e recursos**; não é requisito para iniciar cuidado. A veia cava inferior muda de calibre com respiração espontânea, ventilação, pressão abdominal e cardiopatia: um diâmetro isolado não prescreve um bolus.
+
+**Modelo de registro de reavaliação:** momento e volume de fluidos administrados; tendência da frequência cardíaca e PA por idade; enchimento capilar; estado mental; saturação/esforço respiratório; pulsos; diurese; sinais de congestão; início de antibiótico/vasoativo; decisão e responsáveis pelo próximo passo. Essa documentação revela a lógica clínica e evita repetir fluidos por inércia.
+
+### 4.4. O cuidador tem uma janela temporal maior que a consulta
+
+Relatos como "não desperta para mamar", "parou de urinar", "fica mole", "não reage como antes" podem antecipar sinais observados na triagem. Considerar condições sociais de acesso e transporte para seguimento. Criança pequena pode parecer bem por minutos e ter evolução variável; confiar só na fotografia do exame, sem perguntar sobre as horas anteriores, reduz segurança.
+
 ## 5. Diagnóstico dirigido — colher o que muda conduta
 
 ### 5.1. Lactato
