@@ -1306,7 +1306,7 @@
       "area": "Pediatria",
       "titulo": "Endocrinologia pediátrica",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Alta/Média",
       "instrucao": "Hiperplasia adrenal congênita, tireoide, crescimento, puberdade e urgências endócrinas",
       "aulas_medcof": [
@@ -1326,11 +1326,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito inicial ~29.109 caracteres totais, quatro casos e seis questões; benchmark Drive crescimento/genética apenas parcial, sem material específico de HAC e tireoide; sem certificado ≥60k."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-271-endocrinologia-pediatrica.md"
     },
     {
       "id": 272,
