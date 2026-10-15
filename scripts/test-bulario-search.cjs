@@ -120,3 +120,21 @@ test('distinguishes atropina from somatropina and finds standard clinical aliase
   assert.equal(searchScore(tmpSmx,'cotrimoxazol'),0);
   assert.equal(searchScore(tmpSmx,'SMX TMP'),0);
 });
+
+test('blocks high-risk ambiguous dose catalogs with many repeated presentation labels',()=>{
+  const forms=Array.from({length:90},(_,i)=>({
+    ...fullDose,
+    label:'Regime '+Math.floor(i/10),
+    dose_text:(i+1)+' mg according to indication'
+  }));
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    quality_audit:{priority:'P0',review_status:'PENDING_CLINICAL_SOURCE_REVIEW'},
+    formulations:forms
+  }).length,0);
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    quality_audit:{priority:'P1',review_status:'PENDING_CLINICAL_SOURCE_REVIEW'},
+    formulations:[fullDose]
+  }).length,1);
+});
