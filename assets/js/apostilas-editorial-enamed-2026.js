@@ -1,7 +1,7 @@
-// LURIA — matriz editorial ENAMED / MedCof 2026.
-// Sinalizar cada item e conferir conteúdo antes de completar. Não duplicar Diamantes.
+// LURIA — matriz editorial ENAMED/MedCof 2026, etapa Lote 11.
+// Marcação editorial não comprova capítulo pronto; conferir conteúdo antes de produzir.
 window.LURIA_APOSTILA_EDITORIAL_2026 = {
-  "version": "2026-10-15-401-traceability",
+  "version": "2026-10-15-lote11-detalhado",
   "base": "Cronograma MedCof 2026: Alta, Média, Baixa e Diamante; matriz Inep ENAMED 7 áreas",
   "instrucoes": "Planejamento editorial, não equivale a apostilas concluídas. Cada nota é item de auditoria: verificar conteúdo antes de acrescentar, manter conteúdo existente e não duplicar módulos Diamante complementares. Cada módulo das 401 aulas do MedCof deve aparecer na lista de módulos do card ao qual foi vinculado. Vinculação no plano NÃO comprova capítulo já completo. Os 4 itens catalogados (#277–280) apontam para apostilas já publicadas, não são novas para produzir.",
   "areas": [
@@ -642,7 +642,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "186": {
       "priority": "Alta",
-      "instruction": "Arboviroses: adulto e pediatria (Alta); diferenciar dengue, chikungunya e Zika.",
+      "instruction": "Revisar arboviroses e diagnósticos diferenciais. AGREGAR capítulo claramente separado 'Síndromes febris agudas e zoonoses': febre maculosa, leptospirose, icterícias febris, sinais de alarme, investigação e conduta. Febre maculosa NÃO é arbovirose e NÃO pertence à apostila de Chagas. Aulas MedCof Alta/Diamante.",
       "status": "CONFERIR / COMPLETAR"
     },
     "187": {
@@ -817,42 +817,62 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "226": {
       "priority": "Diamante/Alta",
-      "instruction": "Demências (Diamante), delirium no idoso (Alta) e avaliação cognitiva estruturada.",
+      "instruction": "Demências (Diamante) e delirium (Alta): diferenciar transtorno neurocognitivo maior, comprometimento cognitivo leve e estado confusional agudo. Avaliação cognitiva, exames dirigidos, causas reversíveis, decisão clínica, cuidado com família e prevenção de delirium.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "227": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "Doença de Parkinson: diagnóstico clínico, sinais motores e não motores, diferenciais de parkinsonismo, terapêutica, complicações motoras, quedas e encaminhamento. Aula MedCof 'Doenças Neuromusculares e Parkinson' É COMPLEMENTAR à #228; NÃO duplicar neuropatias.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "228": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "Neuropatias periféricas e doenças neuromusculares: localizar topograficamente a lesão (neurônio motor, nervo periférico, junção neuromuscular, músculo), fraqueza aguda e progressiva, síndromes radiculares, neuropatias frequentes, miastenia e Guillain-Barré; comparar com o mesmo módulo MedCof compartilhado com #227 sem duplicação.",
       "status": "CONFERIR / COMPLETAR"
     },
     "229": {
       "priority": "Alta",
-      "instruction": "Obesidade no adulto (Alta), síndrome metabólica e cirurgia bariátrica (Alta): critérios e acompanhamento.",
+      "instruction": "Síndrome metabólica e obesidade do adulto (Alta); diagnóstico, risco cardiovascular, manejo longitudinal e farmacoterapia. Cirurgia bariátrica (Alta): indicações, contraindicações, riscos, acompanhamento e deficiências nutricionais. Procedimentos técnicos e complicações operatórias remetem à Cirurgia; não repetir em dois livros.",
       "status": "CONFERIR / COMPLETAR"
     },
     "230": {
       "priority": "Alta",
-      "instruction": "Osteoporose (Alta), sarcopenia e fragilidade, prevenção de fraturas.",
+      "instruction": "Osteoporose (Alta): rastreamento indicado, FRAX, DXA, fraturas por fragilidade, prevenção e tratamento, reavaliação. Sarcopenia e fragilidade geriátrica devem ter avaliação funcional e plano de cuidados próprios, articulando com a #185.",
       "status": "CONFERIR / COMPLETAR"
     },
     "231": {
       "priority": "Alta/Diamante",
-      "instruction": "Anemia falciforme (Alta em pediatria) e talassemias (Diamante), hemólise e complicações.",
+      "instruction": "Hematologia hereditária: doença falciforme, hemólise, crises vaso-oclusivas, síndrome torácica aguda, prevenção de infecções, sobrecarga de ferro e talassemias; diferenças entre investigação do adulto e pediátrica #244; não limitar ao nome 'anemias hereditárias'.",
       "status": "CONFERIR / COMPLETAR"
     },
     "232": {
       "priority": "Alta/Média/Baixa",
-      "instruction": "Coagulação e hemostasia (Alta), hemoterapia (Baixa), distúrbios hemorrágicos pediátricos (Média).",
+      "instruction": "Hemostasia/coagulação (Alta), investigação de sangramentos e trombofilias, indicações e complicações de hemoterapia (Baixa): preservar transfusão, reações transfusionais e compatibilidade. Articular com #151 e #244 sem tornar conteúdo repetido.",
       "status": "CONFERIR / COMPLETAR"
     },
     "233": {
       "priority": "Alta",
-      "instruction": "Emergências oncológicas e cuidados paliativos (Alta); não substituir os temas próprios de neoplasias cirúrgicas.",
+      "instruction": "Oncologia clínica (Alta): avaliação do paciente, emergências oncológicas (neutropenia febril, lise tumoral, compressão medular, hipercalcemia, obstrução de VCS), comunicação, prognóstico e paliativos. Não substituir neoplasias específicas da Cirurgia.",
       "status": "CONFERIR / COMPLETAR"
     },
     "234": {
       "priority": "Alta/Média/Baixa/Diamante",
-      "status": "CONFERIR / COMPLETAR",
-      "instruction": "Doenças negligenciadas (Alta), icterícias febris/febre maculosa (Alta) e Doença de Chagas; articular com hanseníase #235 e arboviroses #186."
+      "instruction": "Doença de Chagas (dentro de doenças negligenciadas): transmissão, fase aguda e crônica, cardiomiopatia e arritmias, manifestações digestivas, diagnóstico, tratamento etiológico e seguimento. Articular com APS e #235. IMPORTANTE: febre maculosa e icterícias febris não devem ser ensinadas como parte de Chagas; seu destino principal foi corrigido para #186.",
+      "status": "CONFERIR / COMPLETAR"
     },
     "235": {
       "priority": "Diamante",
-      "instruction": "Hanseníase e tuberculose na APS (Diamante): prevenção, diagnóstico, tratamento, vigilância.",
+      "instruction": "Hanseníase: formas clínicas e espectro imunológico, exame dermatoneurológico, diagnóstico, tratamento, reações hansênicas, incapacidades, contatos e vigilância. A aula Diamante de TB/Hanseníase na APS é compartilhada; a tuberculose clínica e terapêutica tem núcleo próprio #61.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "236": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "Tumores renais e vesicais: hematúria, massas, investigação por imagem, classificação/estadiamento básico, encaminhamento e princípios terapêuticos. Aula MedCof de uro-oncologia tem referência cruzada com #191; conferir cobertura sem repetir HPB.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "237": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "SÍNDROME COMPARTIMENTAL DE MEMBROS (não confundir com compartimental INTRA-ABDOMINAL da #177): sinais de suspeita, diagnóstico clínico, consequências de isquemia, avaliação seriada, urgência cirúrgica/fasciotomia; lesões tendíneas, musculares e rabdomiólise. Integrar ortopedia/trauma vascular por referências cruzadas, sem deslocar a síndrome abdominal para este card.",
       "status": "CONFERIR / COMPLETAR"
     },
     "238": {
@@ -915,15 +935,30 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "instruction": "Biossegurança, infecções nosocomiais (Média) e medidas de prevenção no cuidado.",
       "status": "CONFERIR / COMPLETAR"
     },
+    "261": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "DOENÇA PULMONAR INTERSTICIAL (Alta): diagnóstico sindrômico, padrões clínicos e de TCAR, prova funcional, causas autoimunes/ocupacionais/fármacos, fibrose pulmonar idiopática e outras DPI, investigação, manejo e critérios de encaminhamento. Produzir de forma autossuficiente, conforme padrão livro-texto LURIA.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "262": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "ESCLEROSE MÚLTIPLA + NEUROMIELITE ÓPTICA (Alta): neuroanatomia e desmielinização, surto vs pseudossurto, exames de RNM e líquor, critérios diagnósticos contemporâneos, diferenciais (NMOSD/MOGAD), tratamento agudo e modificador de doença, gravidez e prognóstico; capítulo completo, não encaixar em AVC.",
+      "status": "CONFERIR / COMPLETAR"
+    },
+    "263": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "INTOXICAÇÕES EXÓGENAS NO ADULTO (Diamante): suporte ABCDE, toxíndromes, ECG/alterações ácido-base, carvão ativado e indicações/contraindicações, antídotos frequentes, síndromes por analgésicos, antidepressivos, álcool, organofosforados, cáusticos, sedativos e drogas estimulantes, observação e critérios de alta; validar fármacos/doses nas fontes atuais.",
+      "status": "CONFERIR / COMPLETAR"
+    },
     "264": {
       "priority": "Alta/Média/Baixa/Diamante",
-      "status": "CONFERIR / COMPLETAR",
-      "instruction": "Além das neoplasias hepatobiliares, incluir NÓDULOS HEPÁTICOS BENIGNOS (Alta), 'fígado para perdidos' (Diamante) e abscesso hepático (Baixa). Não restringir todo conteúdo à oncologia."
+      "instruction": "DOENÇAS HEPATOBILIARES E PANCREÁTICAS (Alta/Média/Diamante/Baixa): organizar em módulos *separados*: (1) anatomia, raciocínio e lesões hepáticas benignas; (2) abscesso hepático e infecções; (3) carcinoma hepatocelular e metástases; (4) adenocarcinoma pancreático, tumores periampulares, lesões císticas e tumores neuroendócrinos; (5) estadiamento/conduta. Não reduzir as aulas não oncológicas a citações dentro da oncologia. Pancreatite aguda/crônica continua no #97.",
+      "status": "CONFERIR / COMPLETAR"
     },
     "265": {
       "priority": "Alta/Média/Baixa/Diamante",
-      "status": "CONFERIR / COMPLETAR",
-      "instruction": "Oncologia torácica: câncer de pulmão (Alta), nódulo pulmonar (Média), mediastino (Média); hemoptise/brônquios quando pertinente, com capítulo clínico #71."
+      "instruction": "ONCOLOGIA TORÁCICA (Alta/Média): nódulo pulmonar e algoritmo de risco; câncer pulmonar, investigação, estadiamento e linhas terapêuticas por histologia/biomarcadores em nível de generalista; mediastino, massas, complicações e indicação cirúrgica. Hemoptise e bronquiectasias pertencem à Pneumologia #71 e entram aqui só como interface diagnóstica.",
+      "status": "CONFERIR / COMPLETAR"
     },
     "270": {
       "priority": "Alta/Média/Baixa/Diamante",
@@ -939,6 +974,11 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "priority": "Alta/Média/Baixa/Diamante",
       "status": "CONFERIR / COMPLETAR",
       "instruction": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146."
+    },
+    "277": {
+      "priority": "ENAMED/MedCof",
+      "instruction": "APOSTILA JÁ EXISTENTE — Infertilidade Conjugal: verificar texto efetivo e referências; integrar investigação do casal, endocrinologia reprodutiva, técnicas de reprodução assistida, aconselhamento e complicações. NÃO criar nova apostila ou copiar capítulos existentes.",
+      "status": "CONFERIR / COMPLETAR"
     }
   },
   "novas": [
@@ -947,7 +987,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Clínica Médica",
       "title": "Doenças pulmonares intersticiais: diagnóstico e manejo",
       "priority": "Alta",
-      "instruction": "Padrões clínico-radiológicos, investigação funcional, causas, fibrose e encaminhamento",
+      "instruction": "DOENÇA PULMONAR INTERSTICIAL (Alta): diagnóstico sindrômico, padrões clínicos e de TCAR, prova funcional, causas autoimunes/ocupacionais/fármacos, fibrose pulmonar idiopática e outras DPI, investigação, manejo e critérios de encaminhamento. Produzir de forma autossuficiente, conforme padrão livro-texto LURIA.",
       "lot": 11
     },
     {
@@ -955,7 +995,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Clínica Médica",
       "title": "Esclerose múltipla e doenças desmielinizantes",
       "priority": "Alta",
-      "instruction": "EM, neuromielite óptica, surtos, diagnósticos diferenciais, RNM e tratamento",
+      "instruction": "ESCLEROSE MÚLTIPLA + NEUROMIELITE ÓPTICA (Alta): neuroanatomia e desmielinização, surto vs pseudossurto, exames de RNM e líquor, critérios diagnósticos contemporâneos, diferenciais (NMOSD/MOGAD), tratamento agudo e modificador de doença, gravidez e prognóstico; capítulo completo, não encaixar em AVC.",
       "lot": 11
     },
     {
@@ -963,15 +1003,15 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Clínica Médica",
       "title": "Intoxicações exógenas no adulto e toxicologia de emergência",
       "priority": "Diamante",
-      "instruction": "Abordagem inicial, toxíndromes, antídotos, descontaminação e casos de urgência",
+      "instruction": "INTOXICAÇÕES EXÓGENAS NO ADULTO (Diamante): suporte ABCDE, toxíndromes, ECG/alterações ácido-base, carvão ativado e indicações/contraindicações, antídotos frequentes, síndromes por analgésicos, antidepressivos, álcool, organofosforados, cáusticos, sedativos e drogas estimulantes, observação e critérios de alta; validar fármacos/doses nas fontes atuais.",
       "lot": 11
     },
     {
       "number": 264,
       "area": "Cirurgia Geral",
-      "title": "Tumores hepatobiliares e pancreáticos",
+      "title": "Doenças hepatobiliares e pancreáticas: lesões, infecções e tumores",
       "priority": "Alta/Média",
-      "instruction": "CHC, tumores benignos hepáticos, pâncreas, neoplasias císticas e tumores neuroendócrinos; unificar módulos",
+      "instruction": "DOENÇAS HEPATOBILIARES E PANCREÁTICAS (Alta/Média/Diamante/Baixa): organizar em módulos *separados*: (1) anatomia, raciocínio e lesões hepáticas benignas; (2) abscesso hepático e infecções; (3) carcinoma hepatocelular e metástases; (4) adenocarcinoma pancreático, tumores periampulares, lesões císticas e tumores neuroendócrinos; (5) estadiamento/conduta. Não reduzir as aulas não oncológicas a citações dentro da oncologia. Pancreatite aguda/crônica continua no #97.",
       "lot": 11
     },
     {
@@ -979,7 +1019,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Cirurgia Geral",
       "title": "Câncer de pulmão e tumores mediastinais",
       "priority": "Alta/Média",
-      "instruction": "Nódulo pulmonar, câncer de pulmão, mediastino, estadiamento e conduta",
+      "instruction": "ONCOLOGIA TORÁCICA (Alta/Média): nódulo pulmonar e algoritmo de risco; câncer pulmonar, investigação, estadiamento e linhas terapêuticas por histologia/biomarcadores em nível de generalista; mediastino, massas, complicações e indicação cirúrgica. Hemoptise e bronquiectasias pertencem à Pneumologia #71 e entram aqui só como interface diagnóstica.",
       "lot": 11
     },
     {
@@ -1019,7 +1059,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Ginecologia e Obstetrícia",
       "title": "Intercorrências clínicas na gestação",
       "priority": "Alta/Média",
-      "instruction": "Cardiopatias na gestação, doenças clínicas maternas, trombofilias e manejo interdisciplinar",
+      "instruction": "Cardiopatias na gravidez (Alta), outras intercorrências (Média), trombofilias na gestação e puerpério (Baixa): organizar por agravo; preservar manejo materno-fetal.",
       "lot": 12
     },
     {
@@ -1051,7 +1091,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Pediatria",
       "title": "Ortopedia pediátrica",
       "priority": "Alta/Diamante",
-      "instruction": "Osteomielite, artrite séptica, deformidades, ortopedia do desenvolvimento e urgências",
+      "instruction": "Ortopedia (Alta), ortopedia pediátrica (Diamante), osteomielite e artrite séptica (Alta), trauma ortopédico; manter avaliação neurovascular.",
       "lot": 13
     },
     {
@@ -1067,7 +1107,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "area": "Clínica Médica",
       "title": "Diarreia aguda no adulto e colite por Clostridioides difficile",
       "priority": "Baixa/essencial",
-      "instruction": "Gastroenterites, desidratação, disenteria, sinais de alarme, testes, tratamento e recorrência de C. difficile",
+      "instruction": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146.",
       "lot": 13
     }
   ],
@@ -1079,7 +1119,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "lot": 11,
       "content_url": "/apostilas/infertilidade-conjugal/",
       "priority": "Alta",
-      "instruction": "Apostila JÁ PUBLICADA. Conferir aulas Infertilidade (Alta) e Técnicas de Reprodução Assistida (Alta), com investigação do casal, FIV, ICSI e complicações. Não criar outra página."
+      "instruction": "APOSTILA JÁ EXISTENTE — Infertilidade Conjugal: verificar texto efetivo e referências; integrar investigação do casal, endocrinologia reprodutiva, técnicas de reprodução assistida, aconselhamento e complicações. NÃO criar nova apostila ou copiar capítulos existentes."
     },
     {
       "number": 278,
