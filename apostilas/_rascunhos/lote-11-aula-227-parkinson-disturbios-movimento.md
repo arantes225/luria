@@ -1,6 +1,6 @@
 # LURIA — Apostila 227: Doença de Parkinson e distúrbios do movimento
 
-**Lote 11 · Clínica Médica · Manuscrito autoral v0.1 · 15/10/2026**
+**Lote 11 · Clínica Médica · Manuscrito autoral expandido v0.2 · 15/10/2026**
 
 > **STATUS EDITORIAL: RASCUNHO EM DESENVOLVIMENTO — NÃO PUBLICAR.** Material independente elaborado para a futura apostila LURIA. Não certificado quanto à meta de 60.000 caracteres didáticos úteis, revisão de especialista, homologação de fármacos, imagens com licença, casos/questões ou responsividade desktop/PWA. Não acrescentar automaticamente ao catálogo.
 
