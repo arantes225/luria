@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 1,
+  "version": 2,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "RASCUNHO — não aprovado e não publicado",
+  "status": "PRE-PUBLICAÇÃO; textos e JSON sincronizados; NÃO CERTIFICADO",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -22,10 +22,10 @@
       "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
       "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
-      "consolidated_sha": "a1aba4baf6caadb20c564340716d2bcc05c77ea1",
+      "consolidated_sha": "9f6ec8d1bf705b679a9e42f65b725c4f83365d10",
       "source_raw_characters": 74961,
-      "consolidated_raw_characters": 65653,
-      "consolidated_approximate_plain_characters": 64150,
+      "consolidated_raw_characters": 78862,
+      "consolidated_approximate_plain_characters": 75595,
       "chapter_count": 10,
       "chapters": [
         {
@@ -69,11 +69,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 8,
-      "question_count": 12,
+      "case_count": 10,
+      "question_count": 15,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "json_visible_estimate": 75595,
+      "json_table_count": 8
     },
     {
       "id": "DPOC",
@@ -83,10 +85,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "7a21ad7f6f53e439757dd9ce1f43c97841d61a12",
+      "consolidated_sha": "35577a3a60138107bb313b8149f0fad6e55f61d1",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 71258,
-      "consolidated_approximate_plain_characters": 69529,
+      "consolidated_raw_characters": 82949,
+      "consolidated_approximate_plain_characters": 79369,
       "chapter_count": 9,
       "chapters": [
         {
@@ -126,11 +128,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 12,
-      "question_count": 16,
+      "case_count": 14,
+      "question_count": 19,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "json_visible_estimate": 79369,
+      "json_table_count": 6
     },
     {
       "id": "DIABETES_MELLITUS",
@@ -140,10 +144,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
       "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
-      "consolidated_sha": "cdbb953aab8e9808b65cd4eceabf80aef9b6bab8",
+      "consolidated_sha": "70ab1241790c82d091c05d6587ff26885ee19e48",
       "source_raw_characters": 73020,
-      "consolidated_raw_characters": 64223,
-      "consolidated_approximate_plain_characters": 62556,
+      "consolidated_raw_characters": 82273,
+      "consolidated_approximate_plain_characters": 78573,
       "chapter_count": 10,
       "chapters": [
         {
@@ -187,11 +191,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 10,
-      "question_count": 16,
+      "case_count": 12,
+      "question_count": 20,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "json_visible_estimate": 78573,
+      "json_table_count": 9
     },
     {
       "id": "PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE",
@@ -204,7 +210,7 @@
       "consolidated_sha": "9e35733eb135c3ae7d859735a5b8d1a028a82209",
       "source_raw_characters": 76752,
       "consolidated_raw_characters": 68748,
-      "consolidated_approximate_plain_characters": 66797,
+      "consolidated_approximate_plain_characters": 65321,
       "chapter_count": 10,
       "chapters": [
         {
@@ -252,7 +258,9 @@
       "question_count": 18,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "json_visible_estimate": 65321,
+      "json_table_count": 8
     },
     {
       "id": "TUBERCULOSE",
@@ -265,7 +273,7 @@
       "consolidated_sha": "25d11f77c2ac6479852db96837cbc2024b4fe166",
       "source_raw_characters": 97368,
       "consolidated_raw_characters": 84634,
-      "consolidated_approximate_plain_characters": 82276,
+      "consolidated_approximate_plain_characters": 80401,
       "chapter_count": 9,
       "chapters": [
         {
@@ -309,7 +317,17 @@
       "question_count": 18,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "análise editorial/clínica humana e transformação para HTML no formato books[].sections[]; nenhuma publicação"
+      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "json_visible_estimate": 80401,
+      "json_table_count": 11
     }
+  ],
+  "last_expansion": "2026-10-14",
+  "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
+  "input_json_sha": "f9d82618904197c0cc83281dfc3205c8b2b4b46a",
+  "last_update_scope": [
+    "Asma ocupacional/diagnóstico diferencial laríngeo/gestação",
+    "DPOC indicação de ODP/funcionalidade",
+    "Diabetes metas geriátricas/critério CAD/EHH/transição insulinoterapia"
   ]
 }
