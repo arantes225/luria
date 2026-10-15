@@ -438,7 +438,241 @@ Para que o ensino não se reduza a uma parede de texto, as seguintes **12 candid
 
 Diagramas autorais devem ser revisados clinicamente. Para resultados de gasometria reais, confirmar licença editorial, anonimização e valor didático. **Apenas o fluxo do Admin poderá aprovar e disponibilizar imagens.**
 
-## 16. Pendências para atingir o padrão final do lead_apostilas
+
+
+## 16. Acidose láctica e perfusão: interpretar o lactato sem simplificações perigosas
+
+O lactato resulta da redução de piruvato e participa do metabolismo normal; sua concentração reflete **produção, utilização e depuração**, não apenas disponibilidade absoluta de oxigênio. Ele pode aumentar em choque e hipoperfusão, mas também por catecolaminas endógenas/exógenas, convulsões, esforço muscular intenso, disfunção hepática, medicamentos e alterações metabólicas. Por isso, lactato elevado é marcador de risco e motivo para avaliação urgente, mas **não é prova isolada de sepse nem de metabolismo exclusivamente anaeróbio**.
+
+A acidose láctica pode se manifestar com AG aumentado, bicarbonato baixo e ventilação compensatória, mas o pH pode ser normal em distúrbios mistos. **Lactato 5 mmol/L com pH 7,40** exige explicação fisiológica; não se descarta dano porque o pH está “normal”.
+
+### 16.1. Perfusão, coleta e tendência
+
+Analisar pressão, FC, perfusão periférica, consciência, diurese, oxigenação e possíveis fontes de choque. Em paciente com convulsão, uma elevação importante de lactato pode ter mecanismo e trajetória diferentes daquela de alguém com choque séptico progressivo. Uma amostra colhida durante garrote prolongado, atraso de processamento ou esforço intenso também pode afetar interpretação. Repetir lactato quando clinicamente indicado permite avaliar tendência, mas **normalização do lactato não substitui identificação e controle da causa**.
+
+A interpretação deve distinguir **nível absoluto**, **variação ao longo do tempo** e **mecanismo**. Se lactato cai enquanto a perfusão melhora após tratamento apropriado, o dado pode ser favorável. Se permanece alto, procurar hipoperfusão persistente, disfunção de depuração, medicamentos, isquemia regional e outras etiologias.
+
+### 16.2. Tratamento não é “corrigir lactato com bicarbonato”
+
+O tratamento da acidose láctica por choque consiste em restaurar circulação adequada, oxigenação e controle da fonte, além de intervenções conforme etiologia. Bicarbonato isolado não produz controle hemodinâmico ou trata uma sepse. A administração de álcalis pode aumentar geração de CO₂, adicionar sódio e alterar cálcio ionizado e potássio. Portanto, só deve ser avaliada em cenários definidos e sob supervisão, não como resposta automática a qualquer pH abaixo de 7,30.
+
+**Exemplo:** pessoa com infecção abdominal grave, PA 78/45 mmHg, lactato 6,4 mmol/L, HCO₃⁻ 13 e PaCO₂ 24. Winter prevista ≈27,5±2, próxima do limite inferior. A prioridade é reconhecer choque e iniciar ressuscitação, antimicrobianos e controle do foco conforme a causa, com monitorização de perfusão. Não basta anunciar “acidose metabólica compensada”.
+
+## 17. Bicarbonato intravenoso e acidemia grave: onde há evidência e onde não há
+
+A prescrição de bicarbonato costuma parecer intuitiva: se o pH está baixo, adicionar base deveria normalizá-lo. Mas o pH é efeito de um processo, e uma intervenção pode produzir consequências sobre sódio, CO₂, potássio e distribuição de líquidos. A discussão precisa identificar **qual acidose**, **qual grau de acidemia**, **qual função renal**, **qual estado circulatório** e **qual desfecho clínico se deseja modificar**.
+
+### 17.1. O estudo BICARICU-2 e a interpretação correta
+
+No estudo multicêntrico randomizado **BICARICU-2**, publicado no *JAMA* em 2025, foram estudados adultos criticamente doentes com **acidemia metabólica grave (pH ≤7,20) e LRA moderada a grave**, em 43 UTIs francesas. A comparação foi entre bicarbonato IV orientado a alvo de pH e manejo sem bicarbonato rotineiro. Entre os **627 pacientes analisados**, a mortalidade em 90 dias foi **62,1% no grupo bicarbonato** e **61,7% no controle** — sem evidência de redução significativa da mortalidade.
+
+Um resultado secundário foi diferente: **terapia renal substitutiva até o dia 28 ocorreu em 35% versus 50%**, menor no grupo tratado com bicarbonato. Isso sugere que a intervenção pode reduzir a necessidade de diálise em determinadas condições, mas não autoriza concluir melhora de sobrevida. O estudo foi aberto, e as decisões de iniciar diálise podiam ser influenciadas pelo próprio aumento do pH, pois acidemia refratária é uma das indicações de terapia renal substitutiva. Também não se pode extrapolar esses resultados para CAD, intoxicação, crianças ou acidose leve sem evidência específica.
+
+**Conclusão de prova:** “bicarbonato IV reduz mortalidade na acidose metabólica grave com LRA” é **afirmação incorreta** à luz do desfecho primário do BICARICU-2. “Pode reduzir uso de terapia renal substitutiva no cenário estudado” é interpretação mais fiel, sem torná-lo terapia obrigatória universal.
+
+**Fonte:** Jung B et al. *Sodium Bicarbonate for Severe Metabolic Acidemia and Acute Kidney Injury: The BICARICU-2 Randomized Clinical Trial*. *JAMA*. 2025;334(22):2000–2010. DOI 10.1001/jama.2025.20231. https://jamanetwork.com/journals/jama/fullarticle/2840824.
+
+### 17.2. Mecanismo dos efeitos adversos previsíveis
+
+O bicarbonato reage com H⁺ para formar H₂CO₃, que gera CO₂ e água. O CO₂ precisa ser eliminado pela ventilação. **Em hipoventilação grave**, administrar grande carga de bicarbonato sem ventilação adequada pode elevar PaCO₂, de modo que a elevação do pH extracelular venha acompanhada de consequências intracelulares complexas. Também pode haver aumento do sódio sérico e da carga de volume, alteração de cálcio ionizado e **queda do potássio** por deslocamento.
+
+Esses efeitos não significam que o bicarbonato nunca possa ser usado. Significam que **o benefício deve ser específico** e o tratamento deve prever monitorização clínica, gasométrica e eletrolítica.
+
+### 17.3. Três cenários que não devem ser misturados
+
+**CAD:** o consenso 2024 desaconselha bicarbonato de rotina; considerar apenas em acidemia muito grave, tipicamente pH <7,0, com protocolo especializado. O problema principal é cetoacidogênese, que exige insulina, fluidos, K e tratamento do desencadeante.
+
+**Acidemia grave com LRA em UTI:** o BICARICU-2 encontrou menor uso de terapia renal substitutiva, mas **não reduziu mortalidade**. A escolha depende de quadro, comorbidades, capacidade ventilatória e balanço de riscos.
+
+**Intoxicação por salicilatos:** bicarbonato pode ter finalidade de alcalinização sérica/urinária para alterar distribuição e eliminação do tóxico, mesmo que o pH não esteja dramaticamente baixo; essa é uma **indicação toxicológica** distinta e não deve ser confundida com “tratar todo AG elevado”.
+
+### 17.4. Quando o rim precisa de suporte extracorpóreo
+
+A terapia renal substitutiva pode ser necessária em acidemia grave **refratária ao tratamento da causa**, sobretudo com lesão renal significativa, hipercalemia ameaçadora, sobrecarga hídrica ou intoxicações dializáveis. O limiar exato envolve protocolo, tendência, sinais clínicos e recursos; não transformar uma creatinina ou um pH isolado em indicação universal, nem adiar tratamento de emergência enquanto se aguarda atingir número arbitrário.
+
+## 18. Intoxicações, osmol gap e riscos de diagnóstico tardio
+
+A associação “AG alto e osmol gap alto” pode sugerir ingestão de álcool tóxico, mas **não representa teste perfeito**. Após exposição recente a etilenoglicol ou metanol, pode haver presença de composto original que eleva osmolalidade sem ainda gerar acidose importante. Com o metabolismo, os ácidos se acumulam e o AG sobe enquanto o osmol gap pode cair. Portanto, **AG normal não exclui exposição inicial** e **osmol gap normal não exclui intoxicação tardia**.
+
+### 18.1. Metanol
+
+Metanol é metabolizado em substâncias tóxicas, especialmente formiato, que pode produzir acidose metabólica de AG elevado e toxicidade visual/neural. História de ingestão, alteração visual, cefaleia, sintomas neurológicos e quadro de acidose devem elevar suspeita. **Conduta conceitual:** estabilização, consulta urgente a centro de toxicologia e avaliação de antídoto que bloqueia álcool desidrogenase e de terapia extracorpórea nos casos indicados. Não esperar confirmação de concentração laboratorial quando a ameaça clínica é alta e a assistência especializada orienta tratamento.
+
+### 18.2. Etilenoglicol
+
+O metabolismo pode gerar ácidos e oxalato, com risco de acidose metabólica, hipocalcemia e lesão renal. A presença de cristais de oxalato de cálcio na urina é pista possível, **não requisito para confirmar**. Em paciente com AG elevado sem explicação, piora renal e história compatível, investigar tóxico e consultar equipe especializada urgentemente. O tratamento pode envolver antídoto e diálise segundo critérios específicos.
+
+### 18.3. Salicilatos e indicação de diálise
+
+Salicilatos são exemplo clássico de **alcalose respiratória associada a acidose metabólica de AG aumentado**. O paciente pode estar hiperventilando intensamente e manter pH quase normal. Em toxicidade grave, decisões são condicionadas por estado neurológico, oxigenação, pH, níveis de salicilato, função renal e resposta terapêutica, entre outros dados.
+
+O grupo internacional **EXTRIP** recomenda terapia extracorpórea em intoxicação grave por salicilatos em situações como **alteração do estado mental, hipoxemia nova que exige oxigênio**, falha do tratamento convencional ou níveis muito elevados; também sugere em acidemia importante (por exemplo, pH ≤7,20, conforme critérios). A hemodiálise intermitente é a modalidade preferencial quando indicada. A concentração sanguínea não deve ser interpretada isoladamente de cronologia e quadro clínico.
+
+**Fonte:** EXTRIP Workgroup, recomendações específicas para salicilatos, https://www.extrip-workgroup.org/salicylates. Não reproduzir as tabelas/figuras protegidas da entidade.
+
+### 18.4. Lactato elevado não resolve a investigação toxicológica
+
+Uma pessoa com acidose de AG aumentado pode ter lactato elevado por choque e também intoxicação; uma causa não exclui outra. Há interferências analíticas em determinados métodos de lactato, que podem gerar discrepância entre aparelhos em intoxicações específicas. O aluno deve reconstruir a cronologia e não fechar diagnóstico apenas pela primeira categoria disponível.
+
+## 19. Gravidez, idosos e ventilação mecânica: a fisiologia altera a referência
+
+### 19.1. Gestação e ventilação
+
+Durante a gravidez, progesterona estimula ventilação, levando a **PaCO₂ fisiologicamente menor** que em adulto não gestante, com compensação renal pela redução de bicarbonato. Uma PaCO₂ de 40 mmHg, comum em não gestante, pode indicar **hipoventilação relativa** para a gestante, sobretudo diante de doença aguda. A interpretação precisa considerar trimestre, oxigenação, clínica e laboratórios de referência, sem transportar mecanicamente faixas de adulto não grávido.
+
+Em gestante com dispneia, taquipneia ou cetose, investigar causas maternas urgentes e repercussão fetal conforme situação; não atribuir a alcalose respiratória e dispneia exclusivamente à fisiologia gestacional antes de avaliar sinais de alarme. A gestação também pode favorecer CAD com glicemias menos elevadas em determinados contextos.
+
+### 19.2. Idoso com DPOC, diuréticos e reserva renal reduzida
+
+Idosos podem acumular fatores de acidose e alcalose ao mesmo tempo: DPOC com retenção crônica de CO₂, diuréticos com perdas de cloro/K, insuficiência renal e hipoperfusão. Uma gasometria pode ser “parcialmente compensada” em termos aritméticos enquanto o paciente está com incapacidade de ventilar e alto risco. O julgamento de gravidade deve se apoiar em estado mental, sinais respiratórios, perfusão e trajetória.
+
+### 19.3. Ventilação mecânica e ajuste de PaCO₂
+
+A PaCO₂ responde à ventilação alveolar, dependente de volume corrente efetivo, frequência, espaço morto e produção de CO₂. Aumentar ventilação minuto pode reduzir PaCO₂, mas **não é apropriado ajustar ventilador apenas para normalizar CO₂ sem considerar lesão pulmonar e mecânica respiratória**. Em ARDS, estratégias de proteção pulmonar podem aceitar hipercapnia permissiva em contextos selecionados, com limites e contraindicações clínicas.
+
+Em paciente com acidose metabólica importante, a hiperventilação espontânea pode ser **compensação crucial**. A indução de sedação/paralisia e intubação sem preparar ventilação que mantenha temporariamente a eliminação de CO₂ pode causar **queda abrupta de pH** e colapso hemodinâmico. Essa é consideração relevante em CAD grave e intoxicação por salicilatos; manejo requer equipe experiente e avaliação em ambiente de emergência.
+
+### 19.4. Baixo pH não significa automaticamente intubação
+
+A necessidade de via aérea avançada depende de proteção, ventilação, oxigenação, consciência, fadiga e trajetória. Uma acidose metabólica grave com compensação respiratória eficaz pode piorar após intubação mal planejada; por outro lado, paciente sonolento e hipoventilando pode precisar de suporte antes de deterioração. A gasometria é dado fisiológico fundamental, mas **não substitui exame e planejamento de ressuscitação**.
+
+## 20. Casos clínicos avançados — do resultado ao plano
+
+### Caso F — Intubação e perda da compensação
+
+**Apresentação:** pessoa de 28 anos com CAD grave, pH 7,12, HCO₃⁻ 5 e PaCO₂ 15, com respiração profunda e rápida. Após medicação sedativa para procedimento, passa a ventilar pouco, com deterioração rápida do pH.
+
+**Raciocínio:** Winter para HCO₃⁻ 5 prediz PaCO₂ ~15,5 ±2. A ventilação inicial era resposta compensatória apropriada; reduzir muito a ventilação aumentaria PaCO₂ e derrubaria pH. **Exames:** gasometrias e eletrólitos seriados, cetonemia, avaliação de perfusão. **Conduta:** equipe experiente decide segurança da via aérea, prepara suporte ventilatório que leve em conta alta demanda de ventilação e trata CAD por protocolo. **Por que importa:** sedar sem reconhecer hiperventilação compensatória pode provocar colapso.
+
+### Caso G — Acidose metabólica com LRA: bicarbonato pode ajudar?
+
+**Apresentação:** homem de 71 anos em UTI, com sepse tratada, LRA moderada a grave, pH 7,16, bicarbonato 12, congestão e balanço hídrico positivo. A equipe debate usar bicarbonato IV para evitar hemodiálise.
+
+**Raciocínio:** BICARICU-2 sugere menor frequência de terapia renal substitutiva com bicarbonato em população específica, mas não redução de mortalidade. **Exames:** tendência de pH/CO₂, potássio, volume, função renal e gatilhos de diálise. **Conduta:** avaliação individual por UTI e nefrologia; corrigir causa e considerar benefícios/risco de carga de sódio e CO₂, não prescrever bicarbonato automaticamente com base só no pH. **Por que importa:** separar efeito em desfecho secundário de benefício de sobrevida.
+
+### Caso H — Salicilato com pH normal
+
+**Apresentação:** mulher de 40 anos com zumbido, vômitos, taquipneia e relato de ingestão excessiva de analgésico. pH 7,43, PaCO₂ 19, HCO₃⁻ 12, AG corrigido 26.
+
+**Raciocínio:** Winter para HCO₃⁻ 12 prevê 26 ±2; PaCO₂ 19 é inferior, caracterizando alcalose respiratória adicional sobre acidose metabólica de AG aumentado. Padrão é clássico em intoxicação por salicilatos, mas requer confirmação clínica/laboratorial e exclusão de causas associadas. **Conduta:** centro de toxicologia, suporte e avaliação de alcalinização/terapia extracorpórea conforme gravidade. **Por que importa:** pH próximo do normal não é sinal de quadro benigno.
+
+### Caso I — Hipoalbuminemia mascara AG
+
+**Apresentação:** homem de 63 anos com cirrose e infecção, albumina 1,8 g/dL, Na 136, Cl 104, HCO₃⁻ 20. AG medido 12.
+
+**Cálculo:** AG corrigido ≈12+2,5×(4−1,8)=17,5. **Raciocínio:** AG não corrigido aparenta normalidade, mas pode haver excesso de ânions não medidos; investigar lactato, perfusão, cetonas e outras causas conforme caso. **Conduta:** não concluir acidose hiperclorêmica pura apenas pelo gap não corrigido; tratar quadro clínico. **Por que importa:** albumina baixa altera o “normal” do AG.
+
+### Caso J — Alcalose pós-hipercápnica na UTI
+
+**Apresentação:** pessoa com DPOC e PaCO₂ cronicamente em 70 mmHg, bicarbonato habitualmente 36 mEq/L, recebe ventilação mecânica; nas horas seguintes a PaCO₂ cai para 39, mas o bicarbonato permanece elevado. pH sobe.
+
+**Raciocínio:** CO₂ cai rápido; rim não excreta imediatamente a reserva adicional de bicarbonato. Uma alcalose pós-hipercápnica pode surgir, com riscos eletrolíticos e de ventilação. **Conduta:** avaliação da ventilação, ajustes seguros conforme fisiologia, correção de K/cloro e monitorização, sem tentar corrigir tudo com medicação isolada. **Por que importa:** intervalo de compensação renal é componente clínico, não apenas cálculo.
+
+## 21. Questões avançadas — respostas explicadas em todas as alternativas
+
+### Questão 7 — Intoxicação por salicilatos
+
+Paciente com suspeita de intoxicação por salicilato tem pH 7,41, HCO₃⁻ 11, PaCO₂ 18 e AG elevado. Qual afirmação é mais adequada?
+
+A. pH normal elimina distúrbios acidobásicos.
+B. Acidose metabólica com alcalose respiratória adicional é hipótese forte.
+C. PaCO₂ 18 é a compensação prevista de Winter.
+D. Hipercapnia é causa de todos os achados.
+E. Não há indicação de procurar centro de toxicologia.
+
+**Gabarito: B.** Winter prevê ~24,5±2, acima do valor medido de 18. **A incorreta:** processos opostos podem normalizar pH. **B correta:** integra a discrepância. **C incorreta:** observado é menor que compensação prevista. **D incorreta:** PaCO₂ está baixa. **E incorreta:** suspeita é tempo-dependente e pode exigir tratamento especializado. **Mini-revisão:** salicilato = pensar na combinação AG elevado + alcalose respiratória.
+
+### Questão 8 — Hiperventilação compensatória
+
+Pessoa em CAD apresenta HCO₃⁻ 6 e PaCO₂ 16. Qual interpretação orienta segurança da via aérea?
+
+A. A ventilação elevada é inútil e pode ser suspensa.
+B. A PaCO₂ é compatível com compensação intensa; redução súbita da ventilação pode piorar acidemia.
+C. A PaCO₂ baixa comprova ausência de acidose metabólica.
+D. Toda CAD exige intubação.
+E. O pH é desnecessário para qualquer decisão.
+
+**Gabarito: B.** Winter prediz 17±2, aproximadamente compatível. **A incorreta:** ventilação é defesa fisiológica. **B correta.** **C incorreta:** HCO₃⁻ está gravemente baixo. **D incorreta:** intubação requer indicação clínica. **E incorreta:** gasometria completa e situação clínica importam. **Mini-revisão:** não abolir compensação respiratória sem plano seguro de ventilação.
+
+### Questão 9 — BICARICU-2
+
+Qual conclusão foi sustentada pelo resultado primário do BICARICU-2?
+
+A. Bicarbonato IV reduziu mortalidade em 90 dias em pacientes com acidemia grave e LRA.
+B. Bicarbonato IV não modificou significativamente mortalidade em 90 dias, embora uso de terapia renal substitutiva tenha sido menor no grupo tratado.
+C. Bicarbonato aboliu a necessidade de diálise em todos.
+D. Bicarbonato é recomendado para toda CAD.
+E. O estudo avaliou somente crianças com alcalose respiratória.
+
+**Gabarito: B.** **A incorreta:** a mortalidade foi 62,1% versus 61,7%. **B correta:** representa desfecho primário e um secundário. **C incorreta:** 35% do grupo ainda recebeu terapia renal substitutiva. **D incorreta:** CAD tem consenso próprio. **E incorreta:** estudo em adultos críticos com acidemia/LRA. **Mini-revisão:** não confundir benefício em desfecho secundário com demonstração de aumento de sobrevida.
+
+### Questão 10 — Gasometria venosa e oxigenação
+
+A equipe colheu sangue venoso de paciente em choque e deseja usar PvO₂ para concluir que a oxigenação arterial está normal. Qual afirmação é mais segura?
+
+A. PvO₂ equivale à PaO₂ em qualquer condição.
+B. Gasometria venosa fornece a mesma avaliação de oxigenação arterial.
+C. Gasometria venosa pode auxiliar em certos parâmetros metabólicos, mas não substitui PaO₂ arterial para avaliação direta da oxigenação.
+D. A gasometria arterial é inútil na doença crítica.
+E. Um único valor de pH venoso decide intubação.
+
+**Gabarito: C.** **A e B incorretas:** oxigenação venosa depende da extração tecidual e fluxo. **C correta.** **D incorreta:** arterial é útil quando há pergunta clínica específica de ventilação/oxigenação. **E incorreta:** intubação depende de clínica e suporte necessário. **Mini-revisão:** antes de usar uma fórmula, confira de que sangue veio o exame.
+
+### Questão 11 — Acidose tubular renal tipo 4
+
+Paciente com diabetes, K 5,9, bicarbonato 17, AG não aumentado e sem diarreia apresenta suspeita de hipoaldosteronismo hiporreninêmico. Qual distúrbio renal é compatível?
+
+A. ATR tipo 4, frequentemente associada a hipercalemia.
+B. ATR tipo 1 obrigatoriamente associada a hipercalemia.
+C. Perda digestiva de cloro como única causa.
+D. Alcalose metabólica por vômitos.
+E. Diagnóstico de CAD por K elevado, sem cetonemia.
+
+**Gabarito: A.** **A correta:** mecanismo por ação deficiente da aldosterona pode elevar K e produzir acidose de AG normal. **B incorreta:** ATR distal clássica associa-se frequentemente a K baixo, dependendo de etiologia. **C incorreta:** não explica quadro de modo suficiente. **D incorreta:** bicarbonato está baixo. **E incorreta:** CAD requer critérios de diabetes, cetose e acidose. **Mini-revisão:** ATR tipo 4 é a forma “hipercalêmica” típica do ensino.
+
+### Questão 12 — Cloro urinário na alcalose metabólica
+
+Pessoa com alcalose metabólica usa diurético de alça em dias alternados. Cloro urinário está alto durante efeito do fármaco, mas baixo após tempo sem uso. Qual interpretação é mais correta?
+
+A. Cloro urinário alto confirma sempre hiperaldosteronismo.
+B. Cloro urinário varia com uso recente de diurético e deve ser relacionado à história e volume.
+C. Cloro urinário baixo confirma toda alcalose por vômitos.
+D. Cloro urinário não tem utilidade diagnóstica.
+E. O cloro urinário decide sozinho a dose de bicarbonato IV.
+
+**Gabarito: B.** **A incorreta:** diuréticos podem produzir cloro elevado. **B correta:** momento da amostra altera o dado. **C incorreta:** não é específico. **D incorreta:** é marcador útil quando contextualizado. **E incorreta:** confunde investigação etiológica com terapêutica. **Mini-revisão:** o resultado urinário depende de timing e medicação.
+
+## 22. Roteiro de autossuficiência: onde buscar a justificativa dentro deste caderno
+
+| Pergunta que o aluno precisa resolver | Âncora didática |
+|---|---|
+| O pH pode estar normal com duas doenças? | Seções 1, 3, 12; casos B/H |
+| Como distinguir acidose respiratória aguda da crônica? | Seções 1, 4 e 9; casos C/J |
+| Como usar Winter para identificar distúrbio misto? | Seções 3, 4, 12; questões 1, 3 e 7 |
+| Como corrigir AG em hipoalbuminemia? | Seção 5; caso I; questão 4 |
+| O que significa delta ratio alto? | Seção 6 |
+| Quando o AG urinário sugere perda digestiva? | Seção 7; caso A |
+| Como investigar alcalose metabólica por cloro urinário? | Seção 8; caso E; questão 12 |
+| Quais são os critérios atuais de CAD? | Seção 11; caso D; questão 6 |
+| Bicarbonato reduz mortalidade na acidemia grave com LRA? | Seção 17; caso G; questão 9 |
+| Qual é o risco de intubar em acidose com hiperventilação? | Seção 19; caso F; questão 8 |
+| Por que salicilatos podem dar pH próximo ao normal? | Seções 12 e 18; caso H; questão 7 |
+| PvO₂ mede oxigenação arterial? | Seção 2; questão 10 |
+
+**Estado deste teste:** matriz elaborada, mas **a validação independente por um segundo revisor não foi realizada**. O aluno pode encontrar as respostas no manuscrito, porém isso não garante que cada seção esteja didaticamente suficiente ou livre de redundância. A revisão editorial deverá desafiar os casos com perguntas inéditas e corrigir lacunas encontradas.
+
+## 23. Referências finais anotadas e divergências deliberadamente registradas
+
+- **Brasil:** Gomes EB, Pereira HCP. *Interpretação de gasometria arterial*. VITTALLE 2021;33:203–218. DOI 10.14295/vittalle.v33i1.11501. https://periodicos.furg.br/vittalle/article/view/11501 — didática e aplicação em português brasileiro.
+- **Raciocínio de gasometria e misturas:** Morikawa MJ, Ganesh PR. *Acid-Base Interpretation: A Practical Approach*. American Family Physician 2025;111:148–155; https://www.aafp.org/afp/2025/0200/acid-base-interpretation.
+- **Compensações e distúrbios mistos:** *Mixed Acid-Base Disturbances: Core Curriculum 2025*. *American Journal of Kidney Diseases*. https://www.sciencedirect.com/science/article/pii/S0272638625009072.
+- **CAD/EHH:** consenso internacional ADA/EASD/JBDS/AACE/DTS 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/ — substitui cortes antigos de >250 mg/dL como definição única de CAD e não recomenda AG como critério primário de resolução se cetonemia estiver disponível.
+- **Acidemia grave com LRA:** Jung et al., BICARICU-2, JAMA 2025;334:2000–2010. https://jamanetwork.com/journals/jama/fullarticle/2840824 — mortalidade primária neutra; terapia renal substitutiva secundária reduzida no grupo bicarbonato.
+- **Salicilatos:** EXTRIP Workgroup, recomendações específicas. https://www.extrip-workgroup.org/salicylates — indicações extracorpóreas condicionadas por clínica, função renal, níveis e gravidade.
+- **Pontos divergentes com PDFs didáticos do Drive:** compensação crônica da hipercapnia, notação de AG, denominadores delta, limiares de cloro urinário e critérios diagnósticos/resolução de CAD. **Não reproduzir desatualizações apenas para manter identidade com cursinho.** A procedência institucional dos PDFs é não confirmada.
+
+
+## 24. Pendências para atingir o padrão final do lead_apostilas
 
 - Ampliar fisiologia renal de secreção ácida/amoniogênese, equilíbrio de eletrólitos e efeitos de alterações rápidas de ventilação.
 - Detalhar acidose láctica, intoxicações específicas e implicações de osmolar gap conforme tempo de ingestão.
