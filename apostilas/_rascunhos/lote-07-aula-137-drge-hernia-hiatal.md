@@ -235,3 +235,205 @@ Cada exame requer fonte, licença para uso comercial e validação clínica; nã
 - [ ] Aferir/autossuficiência e ≥60.000 caracteres didáticos úteis sem repetição.
 - [ ] Revisão clínica formal, geração HTML, testes de sintaxe e responsividade desktop/PWA.
 **Status:** rascunho em produção, não finalizado.
+
+
+---
+
+# APROFUNDAMENTO EDITORIAL — NÚCLEO CLÍNICO AVANÇADO
+**Inserção revisional de 14/10/2026, preservando integralmente o rascunho inicial.** Os capítulos seguintes ampliam os mecanismos, a interpretação de testes e a decisão terapêutica com exemplos. São conteúdo didático LURIA, não transcrição de fonte comparativa. A numeração 17–27 indica continuidade após a primeira versão. A revisão profissional e as imagens licenciadas ainda são obrigatórias.
+
+## 17. Como a anatomia da junção explica os diferentes fenótipos da DRGE
+
+### 17.1. O refluxo depende de forças, não de um “esfíncter aberto” permanente
+O conteúdo gástrico progride normalmente ao duodeno enquanto o esôfago conduz alimento por ondas peristálticas coordenadas. Na transição esofagogástrica há uma diferença pressórica funcional, que varia durante deglutição, inspiração, distensão gástrica e postura. O esfíncter esofágico inferior, a compressão das cruras diafragmáticas e o ângulo de entrada do esôfago no estômago trabalham em conjunto.
+
+Durante a deglutição é **necessário** relaxar o EEI; esse relaxamento permite passagem do bolo e não é patologia. Os relaxamentos transitórios não associados à deglutição permitem eliminação de gás; tornam-se relevantes quando grandes volumes ou maior frequência de episódios fazem conteúdo líquido/gasoso subir, especialmente após refeições. A hérnia deslizante cria separação anatômica entre esfíncter intrínseco e cruras: aquilo que deveria agir como uma barreira única passa a funcionar em duas áreas menos coordenadas.
+
+Uma consequência prática é distinguir tratamento que **reduz acidez** de tratamento que **reconstrói barreira antirrefluxo**. IBP transforma o pH do refluxato, mas o paciente pode continuar regurgitando conteúdo não ácido; fundoplicatura e alguns tratamentos antirrefluxo alteram mecanicamente a barreira, porém podem dificultar eliminação de ar e passagem do bolo. O balanço terapêutico depende de qual mecanismo domina o sintoma, não de uma preferência genérica por comprimido ou cirurgia.
+
+### 17.2. A depuração explica a piora noturna
+A saliva contém bicarbonato e auxilia neutralização do ácido no esôfago. A peristalse desloca refluxato de volta ao estômago. Quando a pessoa adormece, deglutições tornam-se menos frequentes e a força gravitacional diminui; o conteúdo pode permanecer em contato com a mucosa por tempo maior. Por isso, orientações como não fazer grande refeição imediatamente antes de deitar, elevar a cabeceira em caso de refluxo noturno e investigar distúrbios do sono podem ter valor em determinados pacientes.
+
+**Exemplo comparativo:** duas pessoas podem ter número semelhante de episódios de refluxo. A primeira apresenta episódios breves em posição ereta, com boa depuração, e quase não sente sintomas. A segunda, com hérnia e peristalse fraca, mantém exposição ácida noturna longa e desenvolve esofagite. Apenas contar episódios sem examinar duração, posição e sintomas pode confundir gravidade.
+
+### 17.3. Refluxo ácido, fracamente ácido e gasoso
+Na pH-impedanciometria, impedância identifica deslocamento de bolo líquido/gás entre segmentos do esôfago, e sensores de pH classificam seu caráter ácido. Em uso de supressão ácida, o número de refluxos pode não desaparecer, mas a maior parte se torna menos ácida. Isso é esperado e **não equivale a falha bioquímica do IBP**. Se a pessoa sofre regurgitação mecânica de grande volume, medir apenas pH pode subestimar a relação com o refluxo fracamente ácido.
+
+O oposto também importa: a impedância pode detectar muitos eventos de **eructação supragástrica**, em que ar é aspirado rapidamente para o esôfago e expelido sem necessariamente ser refluxo gástrico. Ruminação implica contração abdominal e retorno pós-prandial do conteúdo de modo repetitivo. Esses fenótipos demandam técnica diagnóstica e estratégias comportamentais específicas; operar o hiato sem reconhecê-los pode trazer risco e benefício limitado.
+
+### 17.4. Por que a mucosa dói sem erosão?
+A barreira epitelial pode estar funcionalmente alterada sem ulceração endoscopicamente visível. Microalterações de permeabilidade, sensibilidade neural e processamento central de estímulos fazem com que episódios fisiológicos de refluxo sejam interpretados como dolorosos. Consequentemente, ausência de esofagite não equivale a “sintoma imaginário”; exige diferenciar NERD com exposição patológica, hipersensibilidade ao refluxo e pirose funcional usando evidência objetiva. Tais diagnósticos têm prognósticos e alvos terapêuticos distintos.
+
+## 18. Aprendendo a interpretar exames por perguntas clínicas
+
+### 18.1. Passo anterior ao exame: DRGE está comprovada?
+O estudante deve classificar a condição como **DRGE comprovada** quando há evidência objetiva convincente (por exemplo, esofagite erosiva Los Angeles B–D, estenose péptica típica, Barrett comprovado ou exposição ácida patológica em estudo adequado, com ressalvas técnicas e clínicas). ACG 2022 e Lyon 2.0 têm algumas diferenças de ênfase; Lyon 2.0 trata LA B como evidência conclusiva em contexto apropriado, enquanto diretrizes anteriores eram mais restritivas.
+
+**DRGE não comprovada** ocorre quando o diagnóstico se apoia só em pirose/regurgitação, melhora ao IBP, LA A isolada ou pequena hérnia incidental, sem teste conclusivo. Isso não significa que a doença seja improvável em toda pessoa; significa que o tratamento invasivo e a escalada indefinida de medicamentos precisam de confirmação.
+
+**Exercício de decisão:** paciente teve melhora marcante com omeprazol, mas nenhuma EDA com esofagite significativa e nenhum teste de refluxo. Ele passa a cogitar cirurgia. Qual pergunta falta responder? Se existe refluxo patológico objetivamente demonstrado, com correlação plausível aos sintomas. “Resposta positiva ao omeprazol” não substitui essa confirmação.
+
+### 18.2. O que o endoscopista precisa registrar na EDA?
+Um laudo útil à decisão descreve:
+- presença/ausência de esofagite, com **classificação Los Angeles** e localização;
+- extensão axial da hérnia em centímetros quando mensurável;
+- relação entre pinçamento diafragmático e junção escamocolunar;
+- avaliação endoscópica da válvula gastroesofágica, como Hill, quando apropriado;
+- estenoses, anéis, conteúdo retido, esôfago tortuoso ou dilatado;
+- suspeita de Barrett, com extensão pelas medidas **Prague C & M** (circunferencial/máxima) e biópsias por protocolo;
+- suspeita de EoE, neoplasia, esofagite medicamentosa ou infecciosa;
+- qualidade do exame e medicamentos em uso.
+
+**Laudo insuficiente:** “esofagite discreta e pequena hérnia de hiato” sem tamanho, classificação, biópsias pertinentes, história ou critérios. Não é diagnóstico justificável de tosse crônica por refluxo nem prova pré-operatória suficiente.
+
+### 18.3. Como ler Los Angeles sem memorizar apenas letras
+A unidade de interesse é a **quebra de mucosa**, isto é, descontinuidade real, e sua extensão entre pregas:
+- A: até 5 mm e não contínua entre topo de duas pregas;
+- B: mais de 5 mm, também sem ponte contínua entre topo de duas pregas;
+- C: atravessa topo de pregas e envolve menos de 75% da circunferência;
+- D: envolve pelo menos 75% da circunferência.
+
+Eritema isolado da junção não é automaticamente erosão LA A. Edema, fragilidade e granulação podem ter diagnósticos diferenciais e variabilidade interobservador. Ao estudar imagens, o aluno deve **marcar visualmente o ponto de descontinuidade**, dizer se a lesão alcança outras pregas e estimar área circunferencial, em vez de escolher letra pelo aspecto impressionista da cor vermelha.
+
+### 18.4. Três laudos de pHmetria com raciocínio resolvido
+
+**Laudo A:** estudo sem IBP, 24 h, AET total 10,2%, número de episódios aumentado, episódios em ortostatismo e decúbito, sintomas típicos relacionados. **Interpretação:** exposição ácida patológica, critério objetivo forte de DRGE em paciente com quadro coerente. **Próximo passo:** otimizar tratamento, investigar complicações se necessário e discutir terapias conforme prioridades; não operar automaticamente porque o número é alto.
+
+**Laudo B:** pHmetria prolongada sem IBP por 96 h, AET 2,1%, 2,8%, 3,0% e 2,5%, associação sintomática negativa e EDA normal. **Interpretação:** evidência contra refluxo ácido patológico; reconsiderar hipersensibilidade, pirose funcional, motilidade e doença não esofágica. **Próximo passo:** verificar confiabilidade do registro, retirar uso de IBP sem indicação sustentada e propor manejo adequado de dor/funcionalidade. Não transformar “paciente ainda sente azia” em motivo para fundoplicatura.
+
+**Laudo C:** AET off IBP 5,2%, refluxos 55/dia, sintomas relatados sem associação confiável, EDA LA A e pequena hérnia. **Interpretação:** exame **inconclusivo**; AET entre 4–6% e refluxos em faixa intermediária não confirmam nem excluem com segurança. **Próximo passo:** complementar evidências com monitorização prolongada ou avaliação selecionada de suporte, revisar outras causas e discutir conduta proporcional à gravidade. Não chamar DRGE confirmada por um DeMeester limítrofe de laboratório sem avaliar parâmetros.
+
+**Detalhe técnico:** o escore DeMeester compõe exposições ácidas e é historicamente usado em pHmetria por cateter; seu ponto de corte depende de método/validação. O Lyon 2.0 privilegia **AET e sua consistência temporal** como critério contemporâneo. AET em % não significa porcentagem de alimentos ácidos ingeridos; significa fração do tempo em que o pH esofágico está abaixo do limiar definido.
+
+### 18.5. O que muda na análise por 96 horas?
+Monitorização sem fio prolongada examina variabilidade de dia a dia. Paciente pode ter um dia atípico por horário de refeições, exercício ou sono. Lyon 2.0 sugere que AET **>6% em pelo menos dois dias** é forte evidência de DRGE; valores **<4% em todos os dias** e associação sintomática negativa favorecem exclusão. O resultado que varia entre normal e patológico pode ser inconclusivo e deve ser lido integralmente, não reduzido à média “5%” sem analisar distribuição.
+
+**Exemplo:** AET em 4 dias = 8,5%; 7,2%; 3,0%; 4,1%. Duas jornadas acima de 6% apoiam diagnóstico. Se os valores fossem 8,5%; 3,2%; 2,7%; 2,9%, a primeira jornada isolada não satisfaria exatamente o critério de dois dias e exigiria análise mais cautelosa. A pessoa não “tem e não tem doença” alternadamente; a coleta mede expressão variável de um fenômeno.
+
+### 18.6. Ler impedanciometria sem superinterpretar
+A impedância elétrica cai quando um bolo líquido percorre o segmento e aumenta em presença de gás. O padrão direcional ajuda a distinguir deglutição anterógrada de refluxo retrógrado. Ao revisar exame, verificar se:
+- tempo de análise efetivo e registros de refeições foram corretamente excluídos;
+- o diário de sintomas foi preenchido no momento dos eventos;
+- terapia supressora estava **on** ou **off**, com dose e adesão;
+- contagem de refluxos foi distinguida de eructações supragástricas;
+- sintomas têm associação temporal confiável (índice de sintomas/probabilidade);
+- há parâmetros adicionais de mucosa, como impedância basal noturna, interpretados como apoio, não critério isolado decisivo.
+
+No Lyon 2.0, **<40 episódios de refluxo/dia** é evidência auxiliar contra patologia; **>80 episódios/dia** é auxiliar a favor; **40–80** permanece zona intermediária **quando isoladamente considerado**. Esses limiares não devem ser usados sem AET, contexto e técnica. Em paciente **com DRGE comprovada e sob IBP otimizado**, combinação de **AET >4% e >80 episódios** pode sustentar DRGE refratária acionável; não transferir o critério on IBP para teste off IBP como se fossem iguais.
+
+### 18.7. Associação de sintomas não equivale a causalidade absoluta
+O índice de sintomas (SI) considera proporção de queixas que surgem em associação temporal a refluxos, e a probabilidade de associação (SAP) estima se a relação excede o acaso sob certas premissas. Em pessoa que anotou só um ou dois sintomas durante exame, os índices podem ser estatisticamente frágeis. Se a pessoa relata azia seis horas após almoço e o refluxo mais recente ocorreu à tarde, a mera convivência temporal no mesmo dia não é prova de causa.
+
+Em exposição ácida normal com associação convincente, pensar em **hipersensibilidade ao refluxo**. Em exposição normal, associação negativa e ausência de patologia motora/estrutural, considerar **pirose funcional**. O clínico deve formular diagnóstico positivo, não desacreditar dor. O tratamento pode incluir educação, intervenções comportamentais, redução da hipervigilância somática e neuromoduladores em casos selecionados.
+
+## 19. A investigação da disfagia é uma via clínica separada
+
+### 19.1. Antes de falar em refluxo: localizar o sintoma
+**Disfagia orofaríngea:** engasgo ao iniciar deglutição, voz molhada, tosse imediatamente com líquidos e risco de aspiração; pode exigir avaliação fonoaudiológica/neurológica e via aérea. **Disfagia esofágica:** sensação de bolo preso após engolir, retroesternal ou inferior, associada a sólidos, líquidos ou ambos.
+
+**Progressão sólidos → líquidos:** sugere obstrução mecânica progressiva, incluindo neoplasia ou estenose. **Sólidos e líquidos desde o início:** sugere distúrbio de motilidade como acalasia, embora haja exceções. **Impactação aguda de carne/alimento com incapacidade de manejar saliva:** emergência endoscópica, com atenção à via aérea; não orientar “tomar refrigerante e esperar”.
+
+### 19.2. Por que a EDA vem primeiro?
+A endoscopia permite visualizar anel de Schatzki, estenose, tumor, lesões de esofagite, ulcerações e sinais de EoE. Biópsias específicas podem identificar esofagite eosinofílica mesmo quando mucosa parece pouco alterada. Em pessoa com disfagia, uma EDA normal pode levar a manometria de alta resolução para acalasia/espasmos/disfunções; pHmetria só depois da pergunta certa.
+
+**Exemplo:** jovem com disfagia intermitente a carnes e episódios de impactação, história atópica, mas piroses leves. Atribuir tudo a DRGE e tratar apenas com IBP sem investigação de EoE pode prolongar inflamação e remodelamento/estenose esofágicos.
+
+### 19.3. Acalasia não é “refluxo que não responde”
+Acalasia compromete relaxamento da junção e peristalse. Alimento e saliva podem regurgitar durante a noite; isso parece refluxo, mas o mecanismo é esvaziamento esofágico deficiente, não necessariamente retorno ácido gástrico. A manometria de alta resolução identifica padrões característicos; esofagograma temporizado e endoscopia complementam. **Uma fundoplicatura antirrefluxo isolada em acalasia desconhecida pode aumentar obstrução de saída.**
+
+### 19.4. Chicago 4.0 em linguagem de decisão
+A classificação de Chicago 4.0 organiza motilidade pela pressão de relaxamento integrada (IRP), vigor/latência das contrações e padrões de deglutição. Ela não transforma toda anormalidade em diagnóstico que precise de procedimento. Achados de obstrução da junção esofagogástrica (EGJOO) exigem sintomas apropriados e testes complementares para serem considerados clinicamente relevantes; não indicar miotomia apenas por IRP ligeiramente alto em paciente assintomático.
+
+**Motilidade ineficaz (IEM):** Chicago 4.0 considera o diagnóstico conclusivo com mais de 70% de deglutições ineficazes **ou** pelo menos 50% de peristalses falhadas, entre critérios técnicos. Em laudo limítrofe, avaliar reserva contrátil, depuração do bolo e contexto. Antes de fundoplicatura, reserva motora limitada exige planejamento cuidadoso de sintomas de disfagia pós-operatória; um achado isolado não determina automaticamente qual wrap usar sem considerar quadro completo.
+
+**Ausência de contratilidade:** peristalse falha em todas as deglutições avaliadas; diferenciar de acalasia com relaxamento esfincteriano limítrofe e correlacionar a doenças do tecido conjuntivo, como esclerose sistêmica. Uma pessoa com doença esofágica grave nesse espectro pode apresentar refluxo importante e disfagia, exigindo plano especialmente individualizado.
+
+## 20. Endoscopia de Barrett — do achado incidental à decisão de seguimento
+
+### 20.1. O que constitui Barrett?
+Barrett envolve metaplasia de mucosa esofágica distal em contexto anatômico definido. Diretrizes variam em nuances, mas a ACG 2022 usa extensão de epitélio colunar visível no esôfago e **metaplasia intestinal em biópsias** para firmar diagnóstico. Uma junção escamocolunar irregular mínima (<1 cm) sem lesão visível não deve ser transformada em “Barrett” apenas porque há pequenos prolongamentos. Esse equívoco cria vigilância, ansiedade e custos desnecessários.
+
+Ao encontrar mucosa suspeita, o endoscopista documenta limites pelo sistema Prague: **C** é extensão circunferencial; **M** é extensão máxima. Descrever extensão em centímetros importa porque risco e vigilância variam entre segmento curto e longo.
+
+### 20.2. Quem deve ser selecionado para rastreamento?
+A ACG 2022 sugere considerar **uma endoscopia de rastreio** em pessoas com refluxo crônico e **três ou mais fatores adicionais de risco** para Barrett/adenocarcinoma esofágico, como sexo masculino, idade acima de 50 anos, tabagismo, obesidade, história familiar de Barrett/adenocarcinoma e certos perfis de ancestralidade/epidemiologia. Não é “EDA anual em toda pessoa com azia” nem exame totalmente proibido em mulheres; avaliação individual pode ter sentido diante de múltiplos fatores e história familiar importante.
+
+Em populações brasileiras com diversidade étnica e diferenças de prevalência, recomendações estrangeiras devem ser interpretadas com cautela. Não transformar categorias raciais de um estudo como definição biológica de pessoa nem esquecer acesso e contexto regional.
+
+### 20.3. Da biópsia à vigilância
+**Barrett sem displasia** pode ser acompanhado em intervalos guiados pela extensão: ACG 2022 sugere **cinco anos** para segmento **<3 cm** e **três anos** para **≥3 cm**, supondo exame basal de qualidade e amostragem adequada. Esses intervalos são de diretriz internacional e precisam ser individualizados por risco, comorbidades e acesso. **Displasia indefinida** exige otimizar supressão de ácido e repetir endoscopia em período orientado; **displasia de baixo grau confirmada** requer revisão histológica por patologista experiente e discussão entre ablação endoscópica versus vigilância selecionada. **Displasia de alto grau** ou neoplasia superficial geralmente exige terapia endoscópica de erradicação em centro especializado, não fundoplicatura isolada como tratamento oncológico.
+
+### 20.4. Protocolo de Seattle e viés de amostragem
+A metaplasia/displasia pode ocorrer em focos descontínuos. Biópsias dirigidas de áreas suspeitas e sistemáticas em quatro quadrantes ao longo do segmento, com intervalos padronizados, aumentam chance de detectar displasia. Uma única amostra aleatória que não mostra metaplasia intestinal, em exame pouco documentado, pode ser insuficiente para encerrar hipótese em segmento suspeito de boa extensão; investigar qualidade, extensão e recomendação especializada.
+
+### 20.5. Por que cirurgia antirrefluxo não “cura” Barrett
+Fundoplicatura pode controlar refluxo, mas não substitui vigilância do epitélio metaplásico quando indicada nem tratamento endoscópico de displasia. Mesmo que desapareçam os sintomas, mudanças histológicas e risco residual não podem ser ignorados. O plano precisa separar **controle de ácido/refluxo**, **tratamento de displasia** e **vigilância oncológica**.
+
+**Questão de raciocínio:** pessoa com Barrett de 4 cm sem displasia confirmada, em bom estado, sente pouca azia com IBP. Deve fazer fundoplicatura porque o segmento é “grande”? Não necessariamente. Vigiar pelo protocolo, tratar sintomas/complicações e individualizar indicação cirúrgica por refluxo objetivado e preferências; comprimento de Barrett por si só não obriga cirurgia.
+
+## 21. Farmacologia aplicada: indicar, otimizar e desprescrever IBP com segurança
+
+### 21.1. Por que o horário importa
+A maior parte dos IBPs é pró-fármaco que se acumula em canalículos ácidos de células parietais ativas e inibe a H+/K+ ATPase. A administração antes da refeição aumenta chance de bloquear bombas ativadas após comer. Para fármacos convencionais, orientar **30–60 minutos antes** do desjejum (ou antes de refeições correspondentes se esquema dividido) é mais útil que apenas dizer “um comprimido ao dia a qualquer hora”. Formulações específicas podem ter instruções diferentes de fabricante; respeitar bula/protocolo local.
+
+**Falha aparente por uso incorreto:** pessoa toma IBP somente à noite de maneira errática após sentir piroses intensas. O medicamento não tem o mesmo perfil de alívio imediato de um antiácido. Explicar mecanismo e experimentar regime adequado antes de declarar refratariedade.
+
+### 21.2. Escolher o caminho de supressão
+- **Pirose esporádica sem esofagite relevante:** medidas e alívio intermitente apropriado, conforme avaliação.
+- **Sintomas típicos frequentes sem alarme:** IBP empírico de oito semanas, com reavaliação.
+- **DRGE não erosiva com resposta:** possibilidade de menor dose eficaz, uso intermitente/on-demand em pacientes selecionados e sem complicações.
+- **Esofagite LA C/D ou estenose péptica:** frequentemente manutenção prolongada, ou estratégia invasiva apropriada, porque risco de recorrência importante.
+- **Barrett conhecido:** há indicação de supressão ácida de longo prazo em pacientes adequados; não suspender mecanicamente apenas por “oito semanas acabaram”.
+- **Sintoma isolado de tosse/rouquidão sem refluxo típico:** investigar causas alternativas e evidência de refluxo antes de prolongar IBP.
+
+### 21.3. Usar duas doses ou trocar de molécula?
+Otimização pode envolver rever adesão/horário e, em paciente adequado, intensificar para duas tomadas por tempo definido ou realizar tentativa de outra formulação. Porém dobrar dose repetidamente sem documentar benefício, em pessoa com testes fisiológicos, não é prova de diligência. Se a DRGE está não comprovada e sintomas persistem, o próximo passo frequentemente é teste diagnóstico apropriado, e não terceiro IBP.
+
+### 21.4. Segurança: diferenciar associação de causalidade
+Grandes estudos observacionais relacionaram uso de IBP a pneumonia, doença renal, demência, fraturas, infecções e deficiências nutricionais. Muitos resultados estão sujeitos a **confusão por indicação**: pessoas que usam IBP cronicamente podem ter idade avançada, comorbidades e exposição a outros fármacos que já aumentam risco. Diretrizes ACG explicam que associações observacionais não são prova de causalidade. Isso não torna IBP livre de todos os riscos; significa que decisões devem usar qualidade da evidência e indicação individual.
+
+**Riscos clínicos concretos a reconhecer:** hipersensibilidade medicamentosa, eventos renais raros como nefrite intersticial aguda, possíveis distúrbios de magnésio em susceptíveis, interações farmacológicas e risco de infecção entérica em alguns contextos. Não solicitar automaticamente vitamina B12, densitometria e creatinina em toda pessoa jovem sem fatores de risco somente por IBP, nem abandonar acompanhamento de paciente vulnerável a hipomagnesemia ou doença renal.
+
+**Princípio AGA de 2022:** revisar a indicação do IBP crônico; quem não tem justificativa deve ser candidato a desprescrição. Em esofagite grave/Barrett/estenose, suspensão rotineira não é aconselhável. Reduzir de duas tomadas a uma quando apropriado. Interromper pode causar hipersecreção ácida transitória de rebote, que requer orientação e diferenciação de recidiva verdadeira.
+
+### 21.5. A desprescrição como plano, não abandono
+1. Registrar diagnóstico e **razão** do IBP: DRGE comprovada? Profilaxia de AINE? História de sangramento? Barrett?
+2. Identificar condição que exige manutenção.
+3. Se não houver, pactuar estratégia: redução de dose, uso sob demanda ou suspensão monitorizada conforme preferência e perfil.
+4. Explicar possibilidade de desconforto transitório, medidas de alívio e sinais de retorno precoce.
+5. Definir como avaliar recidiva e quando reinvestigar, ao invés de repetir receita por anos sem revisão.
+
+## 22. Relatórios e decisões: duas matrizes úteis para residência
+
+### 22.1. Matriz exposição ácida × associação de sintomas
+
+| Exposição ácida | Associação sintomática | Interpretação clínica provável | Tendência terapêutica |
+|---|---|---|---|
+| Patológica e exame confiável | Positiva | DRGE objetivamente comprovada com correlação ao sintoma | Supressão ácida, intervenções dirigidas em candidatos |
+| Patológica e exame confiável | Negativa | DRGE pode existir, mas o sintoma **específico** anotado talvez não derive de refluxo | Separar risco mucoso de dor e buscar coexistências |
+| Fisiológica | Positiva convincente | Hipersensibilidade ao refluxo | Educação/abordagem neural e comportamental, eventual supressão individual |
+| Fisiológica | Negativa | Pirose funcional ou outro diferencial em contexto apropriado | Evitar cirurgia antirrefluxo sem evidência |
+| Limítrofe, exame curto ou inconclusivo | Indeterminada | Diagnóstico não resolvido | Rever técnica, teste prolongado/dados auxiliares |
+
+**Exemplo sutil:** pessoa pode ter esofagite erosiva LA C cicatrizada após IBP, mas continuar reclamando de sensação de globo faringolaríngeo. O risco da esofagite exige manejo da DRGE comprovada; isso **não demonstra** que o globo é causado pelo mesmo processo. Duas hipóteses podem ser verdadeiras no mesmo paciente.
+
+### 22.2. Matriz apresentação × destino da consulta
+
+| Apresentação | Prioridade | Não fazer |
+|---|---|---|
+| Pirose típica sem alarme | Tratamento empírico e seguimento | EDA e cirurgia como reflexo automático |
+| Disfagia progressiva / perda ponderal | EDA diagnóstica e avaliação urgente conforme gravidade | Chamar de “azia resistente” por meses |
+| Dor torácica potencialmente cardíaca | Excluir emergência cardíaca | Presumir esofagite pela queimação |
+| Regurgitação persistente com DRGE comprovada | Avaliar anatomia, impedância/terapia invasiva selecionada | Escalada ilimitada de IBP |
+| Sintomas laríngeos isolados | Investigar outras etiologias e comprovação refluxo | Diagnóstico de “refluxo silencioso” sem evidência |
+| Hérnia paraesofágica grande com dispneia/anemia | Mapear anatomia e discutir reparo | Considerar assintomática só por não haver piroses |
+| Hérnia grande com dor aguda e retching | Suspeitar volvo/obstrução, cirurgia urgente | Manter em ambulatório apenas com antiácido |
+| EDA normal + AET normal | Considerar funcional/hipersensibilidade/motilidade | Fundoplicatura por sintoma refratário |
+
+## 23. Referências científicas da ampliação, verificadas em fonte primária
+6. AGA. *Clinical Practice Update on De-Prescribing Proton Pump Inhibitors*. Gastroenterology. 2022. https://gastro.org/clinical-guidance/de-prescribing-proton-pump-inhibitors-ppis/
+7. ACG. *Diagnosis and Management of Barrett’s Esophagus: Updated Guideline*. Am J Gastroenterol. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC10259184/
+8. Yadlapati R et al. *Chicago Classification version 4.0: esophageal motility disorders*. Neurogastroenterol Motil. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8034247/
+9. AGA. *Personalized Approach to Evaluation and Management of GERD: Expert Review*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9838103/
+
+**Nota de proveniência:** o Drive ensinava DRGE em esquema curto, com DeMeester e IBP. As explicações de limiares atuais, amostragem de Barrett e segurança farmacológica acima derivam das diretrizes indicadas, não do PDF. Não houve reprodução de texto/imagem do benchmark.
