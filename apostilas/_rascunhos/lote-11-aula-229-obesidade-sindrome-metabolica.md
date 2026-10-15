@@ -394,6 +394,56 @@ Mulher de 38 anos, dois anos após bypass gástrico em Y de Roux, apresenta dor 
 - **Conduta:** avaliação hospitalar imediata, ressuscitação conforme necessidade e equipe cirúrgica com experiência bariátrica; imagem conforme estabilidade, sem atrasar avaliação cirúrgica quando suspeita de isquemia.
 - **Por que importa:** complicações tardias podem ser graves e exigem reconhecer a cirurgia prévia como dado diagnóstico central.
 
+
+### Caso 5 — Controle glicêmico e redução de hipoglicemia durante perda de peso
+Homem de 59 anos, IMC 36 kg/m², DM2 há 12 anos, utiliza metformina, insulina basal e sulfonilureia. Começou tratamento para obesidade com fármaco incretínico há oito semanas; relata menor ingestão, perda ponderal gradual e episódios de sudorese/tremor antes do almoço, com glicemia capilar de 58 mg/dL em uma ocasião.
+- **Hipótese:** hipoglicemia relacionada ao descompasso entre menor ingestão/melhora glicêmica e fármacos com potencial hipoglicemiante.
+- **Raciocínio:** o incretínico, isoladamente, tende a apresentar menor risco de hipoglicemia, mas a combinação com insulina ou secretagogos modifica essa segurança. Valor de glicemia baixa durante sintomas merece manejo imediato e revisão do esquema.
+- **Avaliação:** perguntar frequência e circunstâncias de hipoglicemia, glicemias seriadas, função renal, atividade física, horários de medicação e refeições; rever HbA1c e metas individualizadas.
+- **Conduta:** orientar tratamento de hipoglicemia conforme protocolo, ajustar cuidadosamente insulina e/ou sulfonilureia e acompanhar de perto. **Não suspender todos os antidiabéticos de uma só vez** sem plano e monitorização.
+- **Por que importa:** o êxito do tratamento de obesidade pode tornar perigoso um esquema antidiabético antes tolerado.
+
+### Caso 6 — Náuseas em caneta para obesidade: quando não é apenas adaptação
+Mulher de 46 anos, IMC 34 kg/m², iniciou titulação de semaglutida, com progressão de dose mais rápida do que havia sido orientado. Chega à unidade por vômitos persistentes, quase nenhuma ingesta hídrica, oligúria e tontura ortostática. Refere dor epigástrica contínua.
+- **Hipóteses:** intolerância gastrointestinal com desidratação/possível lesão renal, pancreatite, complicação biliar e outros diagnósticos abdominais.
+- **Raciocínio:** náusea transitória é frequente; **vômitos com oligúria e dor importante** não devem ser considerados normais. É necessário investigar complicações, não apenas reduzir dose por mensagem.
+- **Exames:** sinais vitais e perfusão, hidratação, creatinina/eletrólitos, avaliação abdominal; lipase e imagem conforme suspeita clínica.
+- **Conduta:** avaliação médica urgente, medidas de suporte, revisar cronograma de titulação e decisão de suspender temporariamente a medicação, conforme diagnóstico. Encaminhar a serviço de maior complexidade em caso de instabilidade ou suspeita de complicação grave.
+- **Por que importa:** desidratação, pancreatite e problemas biliares não podem ser ignorados pelo fato de o paciente estar emagrecendo.
+
+### Caso 7 — IMC 32 e diabetes: cirurgia já pode ser discutida?
+Mulher de 52 anos, IMC 32,4 kg/m², DM2 com controle persistentemente inadequado apesar de tratamento clínico apropriado e apoio multiprofissional. Pergunta se cirurgia só é permitida no Brasil acima de IMC 35. Tem AOS leve e dispõe de rede familiar de apoio.
+- **Hipótese:** paciente potencialmente elegível à **avaliação** cirúrgica segundo a Resolução CFM 2.429/2025, pois a faixa IMC 30–34,9 associada a DM2 integra critérios brasileiros.
+- **Raciocínio:** elegibilidade para discussão não equivale a prescrição cirúrgica. Devem ser considerados histórico de tratamento clínico, riscos, contraindicações, exames, preferência e capacidade de seguimento.
+- **Avaliação:** estado glicêmico e cardiovascular, função renal/hepática, nutrição, transtornos alimentares, saúde mental, anestesia e avaliação de equipe conforme texto consolidado atualizado em 2026.
+- **Conduta:** encaminhar para centro especializado e decisão compartilhada sobre tratamento farmacológico, cirúrgico e seguimento.
+- **Por que importa:** utilizar apenas limiares antigos de IMC exclui inadequadamente pacientes da avaliação, ao mesmo tempo que operar automaticamente também é inadequado.
+
+### Caso 8 — Dor intermitente depois de bypass
+Homem de 38 anos, submetido a bypass gástrico em Y de Roux há dois anos, apresenta dor abdominal em cólica episódica após refeições; hoje a dor tornou-se persistente, associada a vômitos e taquicardia. Não tem febre e o exame inicial demonstra abdome sem rigidez evidente.
+- **Hipóteses:** hérnia interna com risco de obstrução/isquemia, úlcera marginal, obstrução por bridas e outras causas abdominais.
+- **Raciocínio:** no paciente com bypass, anatomia modificada altera apresentação de emergências; um exame sem peritonite no início não afasta complicação grave.
+- **Exames:** avaliação cirúrgica urgente, sinais vitais seriados, laboratório conforme suspeita e tomografia quando indicada e sem atrasar tratamento necessário.
+- **Conduta:** atendimento hospitalar e avaliação por equipe com experiência em cirurgia bariátrica; não indicar alta apenas por melhora transitória da dor.
+- **Por que importa:** a hérnia interna pode comprometer vascularização intestinal, e demora no diagnóstico aumenta morbidade.
+
+### Caso 9 — Perda de peso com piora funcional em idoso
+Mulher de 78 anos, IMC inicial 35,4 kg/m², iniciou terapia antiobesidade com supervisão, mas após quatro meses perdeu bastante peso e passou a ter dificuldade para levantar de cadeira, tontura e baixa ingestão proteica. Não pratica fortalecimento. Familiares elogiam o resultado na balança.
+- **Hipóteses:** perda concomitante de massa/força muscular, baixa ingestão, desidratação ou hipotensão; avaliar outras causas clínicas de fraqueza.
+- **Raciocínio:** composição corporal e função são desfechos essenciais; fragilidade/sarcopenia podem progredir mesmo com melhora de peso.
+- **Avaliação:** força, velocidade de marcha, risco de quedas, ingestão proteica/hídrica, pressão ortostática, medicações e exames orientados pelo quadro.
+- **Conduta:** reavaliar dose/objetivos, plano nutricional, resistência muscular assistida/fisioterapia e comorbidades. Priorizar segurança e independência.
+- **Por que importa:** o alvo não é reduzir peso a qualquer custo; deve-se preservar capacidade funcional e qualidade de vida.
+
+### Caso 10 — Reganho ponderal e seguimento sem culpabilização
+Homem de 43 anos com obesidade desde a adolescência, perdeu 18% do peso com terapia farmacológica e apoio nutricional, mas precisou interromper a medicação por dificuldade de acesso. Nos seis meses seguintes recuperou parte do peso. Refere vergonha de voltar ao serviço.
+- **Hipótese:** recidiva ponderal compatível com curso crônico da obesidade e perda de efeito terapêutico, com determinantes biológicos/ambientais e possível impacto psicossocial.
+- **Raciocínio:** recuperação de peso após interrupção foi observada em estudos de semaglutida e tirzepatida; não é diagnóstico de “fraqueza de vontade”.
+- **Avaliação:** peso/cintura, mudanças de sono/trabalho, adesão alimentar e física, medicações, pressão, lipídios, diabetes, orçamento e saúde emocional.
+- **Conduta:** acolher, revisar opções de manutenção dentro do acesso real, ajustar plano nutricional/atividade e considerar alternativas farmacológicas ou avaliação cirúrgica conforme elegibilidade.
+- **Por que importa:** continuidade do cuidado é parte do tratamento, e o estigma pode afastar o paciente justamente na fase de maior necessidade.
+
+
 ## 10. Questões comentadas de fixação
 
 **1. Em relação ao IMC, é correto afirmar que:**
