@@ -473,7 +473,67 @@ D) Aplicar adrenalina IV em bolus de forma rotineira, sem monitorização, porqu
 **Gabarito: C.** A não trata choque anafilático. B posterga intervenção e usa critério falso. C corresponde à primeira linha segundo ASBAI/SBP 2025, que descreve solução 1 mg/mL, dose ajustada à idade/peso e limite de 0,5 mg para adultos. D expõe a arritmias e erro de dose; via IV requer condições específicas e equipe experiente. **Mini-revisão:** adrenalina IM precoce é medida específica e não substituível por corticoide.
 
 
-## 19. Pulo do Gato e segurança editorial
+
+## 19. Populações especiais, retirada de suporte e seguimento depois do choque
+
+### 19.1 Pessoa idosa: menos reserva e sinais fisiológicos atípicos
+
+Em idosos, a resposta adrenérgica pode ser reduzida por doença do sistema de condução, medicamentos como betabloqueadores ou menor reserva autonômica. A ausência de taquicardia importante não exclui hipovolemia ou infecção grave. Confusão nova, queda funcional, redução de ingesta, hipotermia e oligúria podem aparecer antes de febre exuberante. Polifarmácia muda tanto o risco de choque (diuréticos, anti-hipertensivos e anticoagulantes) quanto a tolerância às intervenções.
+
+Na sepse, o envelhecimento não autoriza automaticamente menos ressuscitação nem um protocolo de “litros para todos”. A SSC 2026 sugere PAM inicial de 60–65 mmHg para pacientes com idade igual ou superior a 65 anos, desde que interpretada com perfusão individual e condições associadas; não é uma ordem para aceitar confusão ou isquemia persistente. Observar função renal, risco de congestão e estado cognitivo basal. A recuperação inclui prevenção de delirium, mobilização, avaliação de deglutição quando pertinente e reconciliação de medicamentos.
+
+### 19.2 Gestação e puerpério: fisiologia e causas próprias
+
+Na gestação, mudanças de volume plasmático, frequência cardíaca, resistência vascular e pressão arterial dificultam extrapolação mecânica dos valores de não gestantes. A hipertensão relativa da paciente pode mascarar queda importante de pressão; alterações anatômicas uterinas influenciam retorno venoso em decúbito e interpretação de ultrassonografia. Em instabilidade, a prioridade é restaurar perfusão materna e buscar causa, com avaliação fetal apropriada à idade gestacional quando viável, sem atrasar manobras críticas.
+
+Hemorragia obstétrica (atonia, lesão de canal, placentação anormal, abortamento complicado, rotura e DPP), embolia pulmonar, sepse puerperal e causas cardíacas devem integrar diferenciais conforme momento gestacional/puerperal. O tratamento definitivo depende de equipe obstétrica, anestésica, hemoterápica e cirúrgica; antibióticos, hemostasia e reposição precisam respeitar contexto. Não aplicar os critérios e doses das diretrizes de sepse de adultos não grávidos como se fossem sempre validados em gestação: usar normativas obstétricas brasileiras e protocolos do serviço.
+
+### 19.3 Crianças e adolescentes: reconhecer compensação antes da hipotensão
+
+Na pediatria, taquicardia e vasoconstrição periférica podem manter a pressão por período prolongado apesar de queda importante do volume circulante. Quando a hipotensão finalmente aparece, a reserva compensatória pode estar se esgotando. Frequência cardíaca e pressão precisam de faixas etárias, e avaliação de perfusão inclui comportamento, choro/contato, pulsos, TEC, diurese e esforço respiratório. Uma criança bradicárdica em cenário de choque pode estar em deterioração peri-parada, dependendo de hipóxia e mecanismo.
+
+A decisão de fluidos, antibioticoterapia, vasoatividade e via aérea segue protocolos pediátricos de sepse/PALS e necessidade por peso, não volumes fixos de adultos. Em desidratação por gastroenterite, o Plano A/B/C brasileiro tem finalidade específica e não deve ser transplantado a todo choque pediátrico. A criança com cardiopatia congênita ou desnutrição grave tem risco acrescido de sobrecarga e demanda revisão do esquema usual.
+
+### 19.4 Insuficiência renal, cirrose e doença cardíaca crônica
+
+Na doença renal crônica avançada, oligúria basal e creatinina alterada limitam interpretação do exame; potássio, acidose e sobrecarga são preocupações centrais. Uma pessoa em diálise pode ter sepse com necessidade de ressuscitação e, ao mesmo tempo, menor tolerância a grandes volumes: decisões exigem perfusão, POCUS e monitorização seriada, não a regra simplista “nunca dar soro em quem dialisa”.
+
+Na cirrose, vasodilatação esplâncnica e alterações da albumina podem produzir pressões baixas e volume arterial efetivo reduzido apesar de ascite e edema. Hemorragia varicosa, peritonite bacteriana espontânea e síndrome hepatorrenal mudam tratamento causal. A SSC 2026 admite albumina suplementar em situações selecionadas após grandes volumes de cristaloide ou na cirrose, mas não recomenda albumina rotineira para todos os pacientes sépticos.
+
+Na insuficiência cardíaca avançada, pacientes podem chegar congestos e hipoperfundidos, e parte da hipotensão pode refletir baixo débito preexistente. Antes de aumentar diurético ou volume, integrar sinais de pressão de enchimento, perfusão periférica, eco, resposta terapêutica e risco de arritmia. O tratamento causal de IAM/valvopatia crítica continua prioritário.
+
+### 19.5 Paciente em ventilação mecânica: coração e pulmão interagem
+
+A ventilação com pressão positiva aumenta pressão intratorácica e pode reduzir retorno venoso; PEEP elevada modifica pré-carga de ventrículos e pode aumentar pós-carga do VD em certas condições. Na hipoxemia grave, o suporte respiratório é necessário, mas ajuste ventilatório deve considerar repercussões hemodinâmicas. Hipotensão após intubação pede avaliação imediata de sedação, volemia, pneumotórax hipertensivo, ventilação seletiva, pressões alveolares, função direita e arritmia.
+
+A hipercapnia importante, quando presente, pode elevar resistência vascular pulmonar e piorar função do VD; hipóxia também produz vasoconstrição pulmonar. Consequentemente, o tratamento de um paciente com TEP ou falência de VD não é simplesmente aumentar pressão de ventilação sem acompanhar repercussão circulatória.
+
+### 19.6 Choque refratário: procurar “o que ainda está faltando”
+
+Define-se pragmaticamente como hipoperfusão/instabilidade persistente apesar de intervenções iniciais apropriadas, embora conceitos e limiares variem por estudo. Antes de acrescentar terceira catecolamina ou “medicação de resgate” experimental, examinar novamente as causas: fonte infecciosa não controlada, hemorragia oculta, tamponamento, pneumotórax, embolia pulmonar, disfunção valvar, hipoxemia, acidose, hipocalcemia, arritmia, crise adrenal, lesão medular e intoxicação.
+
+Um protocolo de reavaliação inclui: conferir pressão por técnica adequada; excluir falha de acesso/infusão; medir ECG, perfusão e gasometria; revisar antibióticos e tempo de controle do foco; repetir eco/POCUS e avaliar débito, VD e congestão; revisar balanço hídrico e hemoderivados; avaliar ultrassom pulmonar e dispositivos. É perigoso presumir que a necessidade de doses crescentes de noradrenalina equivale sempre a piora de vasoplegia; o paciente pode ter desenvolvido cardiomiopatia, tromboembolismo ou pneumotórax.
+
+### 19.7 Desmame de vasopressores, retirada de fluidos e segurança
+
+Quando foco e perfusão melhoram, iniciar desescalonamento cuidadosamente, verificando estabilidade de pressão, consciência, diurese, oxigenação e evolução de lactato. Reduzir vasoativos sem acompanhamento pode precipitar hipotensão recorrente; mantê-los por inércia expõe a isquemia e complicações de acesso. Em choque séptico estabilizado com balanço hídrico amplamente positivo, a SSC 2026 sugere considerar **remoção ativa de fluido após fase aguda**, de modo individualizado, levando em conta função cardiopulmonar e necessidade residual de vasopressor.
+
+O paciente pode apresentar edema importante e ainda precisar de suporte circulatório; balanço negativo precoce não é objetivo obrigatório. Avaliar função renal, débito urinário, eletrólitos e sinais de congestão antes de diuréticos/ultrafiltração.
+
+### 19.8 Recuperação e consequências pós-UTI
+
+Choque grave pode deixar sequelas físicas e cognitivas: fraqueza adquirida na UTI, perda muscular, dificuldades de memória/atenção, transtornos de sono, sofrimento psicológico, lesão renal persistente e limitações funcionais. Em sobreviventes de sepse, reconciliação de medicamentos e plano de seguimento são relevantes, especialmente após internação prolongada, infecção complexa e novo uso de terapias de suporte.
+
+Na alta, documentar diagnóstico e fonte tratada, necessidade de controle adicional, complicações identificadas, medicamentos a manter e retirar, monitorização renal/cardíaca, fisioterapia e reabilitação, sinais de retorno e cuidados com feridas/dispositivos. O acompanhamento de uma pessoa que sobreviveu ao choque cardiogênico precisa incluir tratamento de doença coronária/insuficiência cardíaca; após hemorragia, correção da causa e de anemia; após anafilaxia, orientação sobre desencadeantes e plano de prevenção. Essas necessidades não são substituíveis por uma frase genérica de “retorno se piorar”.
+
+### 19.9 O que registrar no prontuário durante a emergência
+
+O registro deve permitir reconstituir evolução: sinais vitais com horários, perfusão periférica, estado mental e diurese, hipóteses e riscos, horários/doses das intervenções críticas, líquidos e hemoderivados administrados, início de vasopressores e resposta, medicamentos específicos, resultados de exames relevantes, comunicação com equipes e decisão definitiva. Documentar evolução real e razões de mudança de conduta facilita segurança, auditoria e handoff entre plantões.
+
+Em emergências, anotações detalhadas não podem atrasar terapia, mas a equipe pode dividir responsabilidades e registrar horários após estabilização inicial. Quando uma hipótese é descartada, documentar evidência que motivou mudança de raciocínio, evitando permanência de diagnósticos não sustentados no prontuário.
+
+
+## 20. Pulo do Gato e segurança editorial
 
 - Choque é inadequação de perfusão/oxigenação tecidual; não é um valor único de PA.
 - Lactato alto indica alerta, não mecanismo único.
