@@ -17,7 +17,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
 | 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (**102.189 caracteres Markdown** nesta branch); capítulo de hemorragia secundária aprofundado com investigação de lesões vasculares, Doppler e decisões por estabilidade; `assistencia-ao-parto/` preservada; revisão médica, imagens e integração pendentes |
 | 105 | Preventiva | Desenhos de estudos epidemiológicos | Manuscrito original criado em `_rascunhos/lote-05-105-desenhos-estudos-epidemiologicos.md` (**71.583 caracteres Markdown**), 23 capítulos (0–22), dez casos e doze questões comentadas; inclui crítica de benchmark do Drive, desenhos clássicos, amostragem, SUS, RECORD, caso-controle aninhado, tempo zero e vieses de temporalidade; revisão independente e integração pendentes, não publicado |
-| 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
+| 106 | Clínica | Lesão renal aguda | Manuscrito original avançado em `_rascunhos/lote-05-106-lesao-renal-aguda.md` (**73.774 caracteres Markdown**), 23 capítulos, oito casos, dez questões, 10 imagens candidatas (não licenciadas). KDIGO 2012 vs draft 2026, SBN 2025, NICE 2024, complicações e TRS; revisão nefrológica/farmacêutica e integração pendentes; não publicado |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
 | 108 | Pediatria | Infecção urinária na criança | Sem pasta homônima identificada |
 | 109 | GO | Puerpério normal e patológico | Sem pasta homônima identificada; auditar `assistencia-ao-parto/` |
@@ -188,3 +188,16 @@ A aula 100 recebeu capítulo didático próprio para doença rara e interpretaç
 **Escopo curricular preservado:** ensaios e revisões (110) e aprofundamento de confundimento/causalidade (115) permanecem títulos próprios. A aula 105 apresenta os riscos de desenho apenas até o necessário para escolher a arquitetura adequada.
 
 **Status:** RASCUNHO AVANÇADO NÃO PUBLICADO. Faltam revisão por epidemiologista, checagem independente de cálculos e fontes, avaliação de redundâncias, figuras originais licenciadas, adaptação ao renderer, testes acessíveis no desktop/PWA e aprovação editorial. Nenhum merge ou deploy nesta branch.
+
+
+## Checkpoint 106 — Lesão renal aguda (15/10/2026)
+
+**Etapa zero:** a busca textual no repositório por LRA, lesão renal aguda, insuficiência renal aguda, injúria renal aguda e KDIGO não identificou apostila dedicada, em conformidade com inventário prévio. No Drive, foi localizado e aberto o PDF “02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf” (19.972 caracteres extraídos) que contém abordagens de nefropediatria, pRIFLE/KDIGO, LRA pré/intra/pós-renal e DRC. Como os direitos de reprodução não foram confirmados, ele orientou apenas o inventário temático; **sem reprodução**. Preservar aula 111 (DRC) independente.
+
+**Resultado:** criado manuscrito original de 73.774 caracteres brutos em \`apostilas/_rascunhos/lote-05-106-lesao-renal-aguda.md\`, com 23 capítulos numerados, oito casos clínicos comentados, dez questões autorais de cinco alternativas e justificativa integral, fluxos clínicos e dez fontes de imagens candidatas **sem aprovação de direitos ou incorporação**. Anatomia/fisiologia, estadiamento e timing KDIGO, causas pré/intra/pós-renais, investigação pelo sedimento, FENa/FEUreia com limitações, urgências, hipercalemia, sobrecarga, acidose, TRS, populações especiais e seguimento compõem a cobertura.
+
+**Hierarquia de diretrizes conferida:** SBN hospitalar 2025 (DOI 10.1590/2175-8239-JBN-2024-0239pt), SBN terminologia 2022, NICE NG148 atualizada em 2024, KDIGO AKI 2012 e **KDIGO 2026 em revisão pós-consulta pública, ainda não diretriz final publicada** na página oficial em 15/10/2026. Ensaios STARRT-AKI (2020) e BICARICU-2 (JAMA 2025) foram contextualizados: iniciar TRS acelerada sem indicação emergencial clara não demonstrou benefício de mortalidade no STARRT-AKI; bicarbonato não reduziu mortalidade aos 90 dias no BICARICU-2, embora menor uso de TRS tenha sido observado como secundário. As normas para posologia de hipercalemia requerem conferência local, sem transformar manuscrito em protocolo de prescrição.
+
+**Auditoria quantitativa automatizada:** 23 capítulos, 8 casos, 10 questões, 10 entradas de imagens candidatas. Seis contas testadas com resultado correto: creatinina dobrada (1,5/0,75=2), glomerulonefrite com elevação a triplo (2,4/0,8=3), sepse (2,8/1,1≈2,545), FENa ((20×2)/(140×100)×100≈0,286%), oligúria em 8h (140/(80×8)=0,21875 mL/kg/h), limiar urinário (210/(70×6)=0,5). Esses checks não substituem revisão independente do conteúdo e das prescrições.
+
+**Pendências:** revisão nefrológica/farmacêutica e de nefropediatria, revisão integral das afirmações e das fontes, imagem médica original ou comprovadamente autorizada, adaptar ao renderer sem eliminar conteúdo, testar desktop/PWA, validar acessibilidade, deduplicação com aulas 096/101/111, revisão científica final e publicação autorizada. **Não houve merge, deploy ou liberação de material não aprovado.**
