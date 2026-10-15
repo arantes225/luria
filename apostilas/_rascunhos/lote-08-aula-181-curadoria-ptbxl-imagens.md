@@ -58,4 +58,19 @@
 
 Após cada exemplo ser validado, preparar legenda específica ("Qual achado observar?", "Como reconhecer?", "Diagnósticos diferenciais", "Pulo do Gato"), otimizar tamanho/pontos de zoom, preservar fonte e licença e posicionar nos capítulos 3, 5–10, 12–13 e 24–30 conforme contexto. Para padrões que exigem alta resolução, substituir pela fonte \`records500/\` antes de homologação. Os arquivos ainda não fazem parte de \`apostilas/index.html\` ou \`content.json\` e nenhuma aprovação clínica foi presumida.
 
-**Status final da curadoria:** 12 figuras reais **produzidas e auditadas tecnicamente no CI**, mas **0 figuras homologadas e 0 publicadas**.
+**Status da primeira rodada:** 12 figuras reais produzidas e auditadas tecnicamente; foram adicionadas duas candidatas exclusivas na segunda rodada, descritas adiante. **0 homologadas e 0 publicadas**.
+
+## Segunda rodada validada tecnicamente — novos bloqueios de ramo
+
+Uma execução seguinte de CI, **[38692816677](https://github.com/arantes225/luria/actions/runs/38692816677)**, concluiu **success** com os códigos oficiais **CLBBB** e **CRBBB**, conferidos no \`scp_statements.csv\` da versão 1.0.3. Ela produziu 12 WebPs, sendo **dois inéditos** em relação à primeira rodada:
+
+| ECG ID | SCP original | Novo arquivo | Bytes | Legenda provisória, NÃO homologada |
+|---|---|---|---:|---|
+| **00598** | **CLBBB** | \`luria-ecg-ptbxl-00598.webp\` | **111.450** | Padrão anotado como bloqueio completo de ramo esquerdo; exigir revisão de morfologia e largura |
+| **00172** | **CRBBB** | \`luria-ecg-ptbxl-00172.webp\` | **100.820** | Padrão anotado como bloqueio completo de ramo direito; exigir revisão de V1 e derivações laterais |
+
+**Consolidação sem repetição:** os dois runs possuem 12 imagens cada, com 10 imagens comuns e 2 exclusivas do conjunto inicial (anotações ASMI e LNGQT) e 2 exclusivas da segunda execução (CLBBB e CRBBB). A união contém **14 imagens únicas**, **todas com menos de 120 KiB**, sem aprovação clínica e sem integração ao HTML. Ambas as versões do ZIP original foram recuperadas durante a sessão e foi montado um **pacote combinado local de 14 imagens** com manifesto e SHA-256 dos WebPs. O arquivo combinado **não está comitado na branch**, portanto sua disponibilidade depende da cópia entregue na conversa; os artefatos GitHub Actions expiram após sete dias.
+
+**Artefato adicional no Actions:** \`PTBXL-ECG-REVIEW-ONLY\` do run 38692816677, ID **11952304322**. O título do artefato coincide com o da execução anterior, mas os **IDs e os conteúdos são diferentes**; não confundir.
+
+**Contagem real atual desta etapa:** **14 traçados clínicos reais convertidos**, 14 candidatos de validação, **zero aprovados**. A diferença entre dois códigos SCP de um mesmo exame e laudo médico precisa ser respeitada; usar rótulos \`IMI\`/\`ASMI\` como história de infarto anotada e não afirmar SCA aguda.
