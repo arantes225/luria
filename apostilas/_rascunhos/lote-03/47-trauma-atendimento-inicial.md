@@ -71,19 +71,110 @@ A investigação secundária, história AMPLA/AMPLE, exame da cabeça aos pés, 
 
 **Gestante:** a anatomia e a fisiologia mudam; priorizar ressuscitação materna e avaliar bem-estar fetal conforme idade gestacional, articulando obstetrícia. **Criança:** hipotensão pode ser manifestação tardia; sinais precoces de perfusão e dose por peso importam. **Idoso:** reserva reduzida, anticoagulantes, fragilidade e resposta autonômica atípica elevam risco de subtriagem. **Anticoagulado:** identificar fármaco e última dose, considerar reversão em sangramento grave conforme protocolo. **Trauma penetrante:** pequeno ferimento externo pode ocultar lesão profunda; mecanismo e trajeto são críticos.
 
-## 11. Casos clínicos originais comentados
+## 11. Dez casos clínicos originais com raciocínio integral
 
-### Caso 1 — Sangramento que vem antes da intubação
-Homem 28 anos, trauma industrial com amputação traumática parcial de perna, hemorragia pulsátil maciça e resposta verbal preservada. **Diagnóstico sindrômico:** hemorragia externa exsanguinante. **Raciocínio:** a morte pode ocorrer pela perda sanguínea antes de desenvolver-se obstrução da via aérea; aplicar x imediatamente. **Exames:** tipagem, hemograma, gasometria/lactato sem postergar controle e acesso vascular. **Conduta:** compressão/torniquete adequado por equipe, ressuscitação hemostática e cirurgia. **Por que importa:** xABCDE não é mudança estética de sigla; redefine prioridade clínica.
+Os casos são **fictícios** e estruturados como treinamento de priorização clínica. Intervenções invasivas dependem de equipe habilitada, suporte institucional e protocolos vigentes; a discussão não constitui autorização para procedimentos sem treinamento.
 
-### Caso 2 — Deterioração respiratória no trauma torácico
-Paciente após colisão, dispneia intensa, hipotensão, assimetria ventilatória e murmúrio abolido unilateralmente. **Hipótese:** pneumotórax hipertensivo; diferenciais incluem hemotórax maciço e tamponamento. **Exames:** não depender de TC antes da intervenção no instável. **Conduta:** descompressão imediata conforme treinamento, drenagem definitiva e revisão circulatória. **Importância:** lesão potencialmente reversível em minutos.
+### Caso 1 — Hemorragia de extremidade antes da intubação
 
-### Caso 3 — Tomografia que não é prioridade
-Homem 42 anos com trauma fechado de abdome, pele fria, confusão, FC elevada e PA em queda; eFAST com líquido livre. **Hipótese:** hemorragia intra-abdominal grave. **Exames:** eFAST apoia foco, sem exigir confirmação tomográfica quando há instabilidade e necessidade cirúrgica. **Conduta:** protocolo hemorrágico, cirurgia/controle de sangramento, monitorização térmica e metabólica. **Importância:** decisão de intervenção não exige catálogo completo de lesões.
+**Apresentação.** Trabalhador de 28 anos sofre amputação traumática parcial da perna. Chega conversando, ansioso, FC 145 bpm, PA 110/74 mmHg, pele fria e sangramento pulsátil intenso que atravessa curativo improvisado. FR 27 irpm, SpO₂ 98% em ar ambiente. Não há estridor, obstrução ou dificuldade de proteger via aérea.
 
-### Caso 4 — TCE com choque
-Paciente de 69 anos após queda, Glasgow 9 e PAS baixa, sem hemorragia externa aparente. **Hipóteses:** TCE significativo com fonte extracraniana de choque, uso de anticoagulantes ou outras causas. **Exames:** glicemia, avaliação global xABCDE, busca de hemorragia oculta e TC de crânio após estabilização segura. **Conduta:** prevenir hipóxia e hipotensão, garantir via aérea quando indicado e tratar fonte hemorrágica. **Importância:** não atribuir hipotensão rotineiramente a TCE isolado e não aplicar metas permissivas sem considerar perfusão cerebral.
+**Hipótese principal:** hemorragia externa exsanguinante com hipoperfusão compensada. **Diferenciais/lesões associadas:** trauma ósseo/vascular, lesão nervosa, outras fontes ocultas se mecanismo múltiplo. **Interpretação:** a prioridade imediata é impedir perda sanguínea contínua. A pressão ainda preservada não autoriza concluir estabilidade; o fluxo para tecidos pode estar baixo.
+
+**Exames úteis:** tipagem/prova de compatibilidade, hemograma seriado, gasometria/lactato, fibrinogênio/coagulação e cálcio conforme magnitude. Nenhum antecede controle da hemorragia. **Conduta:** aplicar compressão direta e, diante da hemorragia ameaçadora da extremidade sem controle suficiente, torniquete apropriado por equipe treinada com registro da hora; acesso vascular, acionamento de equipe cirúrgica/hemoterapia, aquecimento e reposição hemostática indicada. Reavaliar pulso, perfusão, consciência e sangramento; procurar outras lesões e prevenir hipotermia.
+
+**Por que importa:** xABCDE é uma **prioridade temporal real**; intubar preventivamente um paciente conversando enquanto o sangue continua jorrando pode consumir minutos e induzir colapso hemodinâmico.
+
+### Caso 2 — Pneumotórax hipertensivo após ventilação positiva
+
+**Apresentação.** Homem de 35 anos com trauma torácico contuso chega instável e é intubado por rebaixamento importante. Após início de ventilação, SpO₂ cai de 94% para 79%, PAS de 100 para 65 mmHg, expansão torna-se assimétrica, resistência inspiratória aumenta e murmúrio vesicular fica muito reduzido à direita.
+
+**Hipótese:** pneumotórax hipertensivo precipitado/agravado por pressão positiva. **Diferenciais:** tubo seletivo, obstrução do tubo, hemotórax maciço, broncoespasmo, hipovolemia, mau funcionamento ventilatório. **Raciocínio:** ar sob pressão pleural reduz ventilação e retorno venoso. A descompensação súbita é emergencial; nem radiografia nem TC devem atrasar intervenção em quadro fortemente compatível.
+
+**Exames:** avaliação imediata do tubo/capnografia e ventilador; ultrassonografia pode auxiliar se prontamente disponível sem atraso. **Conduta:** chamar ajuda, verificar rapidamente problemas óbvios da via aérea, descompressão torácica urgente pela técnica apropriada à capacitação e protocolo, drenagem definitiva, rever ventilação, oxigenação e circulação. Persistência de choque exige buscar hemorragia concomitante ou outra lesão obstrutiva.
+
+**Por que importa:** um paciente pode desenvolver uma ameaça do **B** imediatamente após procedimento do **A**, exigindo reiniciar a avaliação.
+
+### Caso 3 — Abdome hemorrágico que não deve fazer turismo pela tomografia
+
+**Apresentação.** Motociclista de 42 anos após colisão, consciente inicialmente, fica pálido, confuso, FC 132 bpm, PAS 82 mmHg, TEC 6 s e dor abdominal. Não há sangramento externo evidente. eFAST sugere líquido livre na loja esplenorrenal e pelve. A equipe considera pedir TC contrastada para caracterizar a lesão.
+
+**Hipótese:** choque hemorrágico por lesão de órgão abdominal, possivelmente baço, com sangramento ativo. **Diferenciais:** fígado, mesentério, pelve/retroperitônio, hemotórax e lesões combinadas. **Raciocínio:** o exame identifica provável compartimento e a instabilidade sugere necessidade de controle de foco imediato. A TC pode definir anatomia, mas o paciente **não responsivo** pode morrer durante transporte/exame.
+
+**Exames:** laboratório e hemoterapia em paralelo, sem atrasar cirurgia; repetir FAST não substitui hemostasia. **Conduta:** ressuscitação hemostática, aquecimento, acionar cirurgia/centro de trauma e proceder a intervenção definitiva conforme condição. Se houver resposta hemodinâmica sustentada que permita TC, estratégia pode mudar; reavaliar continuamente.
+
+**Por que importa:** a decisão certa depende de **estabilidade para imagem e necessidade de intervenção**, não apenas de obter o nome exato do órgão lesionado.
+
+### Caso 4 — TCE importante com hipotensão e anticoagulante
+
+**Apresentação.** Homem de 69 anos cai de escada. GCS E2V2M5 (9), pupilas isocóricas inicialmente, PA 84/52 mmHg e FC 92 bpm. Usa anticoagulante oral por fibrilação atrial. Não apresenta grande hemorragia exteriorizada. Há dor abdominal e hematoma no flanco esquerdo.
+
+**Hipóteses:** TCE relevante e fonte extracraniana de choque hemorrágico; considerar retroperitônio, abdome, tórax, pelve e efeito medicamentoso. **Interpretação:** lesão intracraniana isolada raramente explica choque por perda sanguínea sistêmica no adulto. A pressão baixa aumenta risco de isquemia cerebral secundária. A FC pouco elevada não exclui choque em idoso.
+
+**Exames:** glicemia, gasometria/lactato, hemograma/coagulação, tipagem, eFAST e avaliação de imagem conforme estabilidade; TC craniana quando transporte seguro ou tão logo possível segundo prioridade, e investigação concomitante abdominal. **Conduta:** xABCDE, controle das fontes, suporte de oxigenação/perfusão, discussão de via aérea se proteção/ventilação inadequadas, identificar anticoagulante e considerar reversão em sangramento grave segundo protocolo, acionar neurocirurgia e cirurgia de trauma. Não aplicar hipotensão permissiva que comprometa perfusão cerebral.
+
+**Por que importa:** dois problemas fatais coexistem e tratar um ignorando o outro pode piorar prognóstico.
+
+### Caso 5 — Fratura pélvica e FAST negativo
+
+**Apresentação.** Mulher de 33 anos, atropelamento, dor pélvica intensa, PAS 78 mmHg, FC 136 bpm, extremidades frias, discreto hematoma suprapúbico. eFAST não mostra líquido intraperitoneal. Não existe pneumotórax óbvio. Um colega propõe repetir várias compressões pélvicas para “confirmar instabilidade”.
+
+**Hipótese:** hemorragia retroperitoneal associada à lesão do anel pélvico, podendo coexistir com outras lesões. **Diferenciais:** sangramento abdominal inicial ainda invisível, lesão de tórax e hemorragia de ossos longos. **Interpretação:** FAST negativo não exclui retroperitônio; manobras repetidas podem deslocar coágulos.
+
+**Exames:** resposta hemodinâmica, hemograma/coagulação, cálcio, gasometria; imagem apenas quando permite sem atrasar controle. **Conduta:** estabilizador pélvico apropriado ao nível **dos grandes trocânteres**, não das cristas ilíacas, ressuscitação hemostática e coordenação de cirurgia/ortopedia/radiologia intervencionista para tamponamento/embolização/estabilização conforme fonte, disponibilidade e evolução. Reavaliar xABCDE.
+
+**Por que importa:** um exame negativo de uma cavidade não exclui sangramento em outra, especialmente na pelve.
+
+### Caso 6 — Penetrante cervical com voz mudando
+
+**Apresentação.** Homem de 25 anos sofre ferimento penetrante na região anterior do pescoço. Chega consciente, com rouquidão que progride, dificuldade para engolir, pequeno sangramento externo e enfisema subcutâneo cervical. SpO₂ 96%, mas aparece estridor leve e hematoma em expansão.
+
+**Hipóteses:** lesão laringotraqueal e/ou vascular com ameaça de obstrução de via aérea; possível lesão esofágica associada. **Diferenciais:** trauma isolado superficial ou ar por lesão pulmonar associada, mas piora de voz e hematoma exigem cautela. **Raciocínio:** saturação preservada inicialmente não exclui edema progressivo ou colapso; tentativa não planejada de intubação pode agravar anatomia lesionada.
+
+**Exames:** imagem de pescoço/vasos somente se houver estabilidade e via aérea segura; exame especializado conforme recursos. **Conduta:** equipe experiente de emergência, anestesia/otorrino/cirurgia vascular, plano de via aérea e resgate, controle de hemorragia e preservação cervical quando apropriado; acesso ao tratamento definitivo sem atrasos indevidos. Não remover corpo empalado ou manipular profundamente a ferida às cegas.
+
+**Por que importa:** A pode se perder após minutos de aparente tranquilidade — a melhor intervenção é preparação precoce, não esperar dessaturação.
+
+### Caso 7 — Criança com choque compensado e “pressão bonita”
+
+**Apresentação.** Menina de seis anos, passageira de veículo em colisão. FC 152 bpm, PAS 102 mmHg, FR 30 irpm, TEC 5–6 segundos, palidez e comportamento progressivamente sonolento. Queixa-se de dor abdominal; nenhuma ferida externa sangra significativamente.
+
+**Hipótese:** hipoperfusão possivelmente hemorrágica com PA ainda compensada pela idade. **Diferenciais:** dor/ansiedade, TCE, hipoglicemia e lesões associadas, mas sinais circulatórios são preocupantes. **Raciocínio:** hipotensão pediátrica pode ser tardia; comparar PA com faixa etária, não com limite de adulto.
+
+**Exames:** avaliação abdominal/eFAST por equipe habilitada, glicemia, tipagem e exames seriados conforme necessidade. **Conduta:** xABCDE pediátrico, acessos/hemoterapia conforme peso e protocolo, aquecimento e avaliação cirúrgica em centro com recursos pediátricos, sem aguardar que PAS caia abaixo de um número de adulto. TC apenas com estabilidade suficiente e indicação.
+
+**Por que importa:** reconhecer choque compensado evita que a equipe declare criança estável baseada só na pressão.
+
+### Caso 8 — Gestante no terceiro trimestre após colisão
+
+**Apresentação.** Gestante de 30 semanas chega após acidente automobilístico com dor abdominal e contrações. Está acordada, PAS 106 mmHg, FC 112 bpm e nega sangramento vaginal. Apresenta-se dolorosa em região uterina e relata redução da movimentação fetal após o evento.
+
+**Hipóteses:** trauma materno com risco de descolamento prematuro de placenta, lesão uterina e outras lesões hemorrágicas/torácicas. **Diferenciais:** contrações por irritabilidade uterina sem descolamento, contusão abdominal isolada, hemorragia não obstétrica. **Raciocínio:** ausência de sangramento vaginal não exclui descolamento; fisiologia gestacional pode mascarar perda importante.
+
+**Exames:** xABCDE materno, avaliação laboratorial/imagem conforme suspeita e estabilidade, acompanhamento obstétrico e monitorização fetal conforme idade e condições. **Conduta:** ressuscitação/oxigenação maternas prioritárias, posicionamento que alivie compressão aortocava quando apropriado, equipe obstétrica e observação conforme risco; imagem necessária à vida materna não deve ser negada por gestação.
+
+**Por que importa:** a segurança fetal depende primeiro de perfusão e assistência materna adequadas, sem negligenciar avaliação obstétrica após estabilização.
+
+### Caso 9 — Choque após intubação: o ventilador não é a única explicação
+
+**Apresentação.** Homem de 51 anos com múltiplas fraturas e perda sanguínea moderada aparente desenvolve hipotensão intensa após indução e ventilação com pressão positiva. Ausculta é simétrica, capnografia confirma tubo e o POCUS não demonstra pneumotórax evidente. Pele fria, TEC 6 s e eFAST inicialmente negativo.
+
+**Hipóteses:** efeito hemodinâmico de anestésico associado a hipovolemia/hemorragia oculta, além de possíveis causas obstrutivas ou cardíacas. **Raciocínio:** sedação e pressão intratorácica alteram retorno venoso; um choque compensado pode descompensar. Sem evidência de pneumotórax, não atribuir automaticamente instabilidade a tensão.
+
+**Exames:** revisão rápida da ventilação, perfusão, acesso, pressão, ECG, hemorragia externa, pelve e ossos longos; sangue/gasometria em paralelo. **Conduta:** reavaliar ABC, otimizar perfusão, buscar foco hemorrágico, hemostasia/hemoterapia quando indicada e vasoativo transitório em circunstâncias selecionadas sob equipe experiente, sem mascarar sangramento não controlado. Repetir avaliações dinâmicas conforme necessidade.
+
+**Por que importa:** a interpretação correta requer integrar fisiologia da via aérea com mecanismo de choque, e não tratar apenas números do ventilador.
+
+### Caso 10 — Resposta transitória a transfusão e abdome pouco doloroso
+
+**Apresentação.** Mulher de 47 anos após queda de grande altura, inicialmente PAS 70 mmHg e FC 138 bpm, melhora para PAS 105 após hemoterapia inicial, mas 15 minutos depois retorna a PAS 78, com lactato elevado e maior palidez. Refere pouca dor abdominal por uso de analgésicos e lesão vertebral. FAST primeiro foi negativo, depois identifica pequena lâmina de líquido.
+
+**Hipótese:** sangramento interno em curso e **resposta transitória** à ressuscitação. **Diferenciais:** lesão de pelve/retroperitônio, hemotórax, sangramento abdominal inicialmente não detectado e mecanismo de choque misto. **Raciocínio:** a resposta breve mostra que o fluxo pode ter melhorado temporariamente, mas não que a causa foi resolvida. FAST inicialmente negativo não tranquiliza.
+
+**Exames:** revisão eFAST, fontes de sangramento, perfusão, coagulopatia, cálcio e temperatura; imagem avançada apenas se a condição permite. **Conduta:** protocolo de hemorragia, acionar cirurgiões/intervenção e buscar controle definitivo urgente, com ressuscitação hemostática contínua, reavaliação frequente e transferência para centro resolutivo se necessário.
+
+**Por que importa:** resposta transitória é pista clínica de sangramento persistente, e uma TC que atrasa hemostasia pode ser mais perigosa que a incerteza anatômica provisória.
+
 
 ## 12. Questões originais comentadas
 
