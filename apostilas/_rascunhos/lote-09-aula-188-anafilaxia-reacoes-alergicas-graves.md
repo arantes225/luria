@@ -111,6 +111,180 @@ Reações muito graves ao veneno de himenópteros, anafilaxias recorrentes sem g
 
 **Hipotensão/broncoespasmo durante anestesia geral:** considerar anafilaxia perioperatória, mas diferenciar efeitos farmacológicos, hemorragia e outras causas de choque. O tratamento imediato é de suporte e epinefrina apropriada; depois, documentar agentes e investigar gatilho em centro especializado.
 
+
+## 8. Como reconhecer rapidamente uma emergência sem depender de exames
+
+O reconhecimento da anafilaxia é primordialmente **clínico** e orientado por tempo. Uma exposição plausível seguida de alterações agudas de via aérea, respiração e/ou circulação indica risco imediato; o diagnóstico não pode depender de resultado de IgE, triptase, hemograma ou imagem. Em emergências, a maior parte dos erros graves decorre de **atribuir sibilância a asma isolada, hipotensão a vasovagal ou edema laríngeo a ansiedade**, apesar de contexto alergênico e evolução rápida.
+
+### 8.1 Janela temporal e vínculo causal
+
+Muitas reações aparecem em minutos a poucas horas após a exposição, com variação conforme gatilho, via e co-fatores. Reações alimentares podem surgir após ingestão, e reações a medicamentos parenterais podem manifestar-se rapidamente. Algumas síndromes especiais, como alergia relacionada a alfa-gal, têm **padrão retardado após carne de mamíferos**, exigindo história direcionada quando “nenhum alimento recente” parece explicar episódios noturnos. O atraso de um quadro específico não justifica considerar qualquer sintoma que surgiu muitos dias depois como anafilaxia.
+
+**Perguntar:** qual substância foi utilizada, quantidade aproximada, via, horário exato, exposições anteriores, sintomas iniciais e sua ordem, doses de medicamentos já administradas, melhora ou recidiva e presença de co-fatores como exercício, álcool ou anti-inflamatórios. Em procedimento anestésico, documentar cada droga com horário e eventos em monitor ajuda investigação.
+
+### 8.2 A pele pode estar normal
+
+Urticária e angioedema são frequentes, porém não obrigatórios. Alguns pacientes graves apresentam hipotensão ou broncoespasmo com poucos sinais cutâneos; o exame pode ser dificultado por ambiente cirúrgico, roupa ou coloração de pele. A triagem deve incorporar **sons respiratórios, voz, estridor, SpO₂, PA, pulso, estado mental e perfusão**, não apenas procurar pápulas.
+
+### 8.3 Sintoma respiratório alto versus baixo
+
+**Via aérea alta:** língua e mucosa podem edemaciar, voz ficar rouca, deglutição tornar-se difícil e estridor aparecer por estreitamento laríngeo. **Via aérea baixa:** broncoconstrição causa sibilância, expiração prolongada, sensação de aperto no peito e hipoxemia. Em obstrução grave, pode haver diminuição dos ruídos à ausculta apesar de insuficiência ventilatória iminente — o chamado tórax silencioso. Não esperar o paciente apresentar cianose para reconhecer deterioração.
+
+### 8.4 Sintoma gastrointestinal: quando é relevante?
+
+Vômitos ou cólicas isoladas podem ocorrer em muitas doenças; em anafilaxia, são especialmente relevantes quando **intensos, recorrentes e associados a sinais de outro órgão ou exposição clara**. A definição formal considera contextos e gatilhos para evitar rotular toda intolerância alimentar como anafilaxia. Por outro lado, dor abdominal com urticária generalizada e lipotímia logo após alimento é combinação perigosa, mesmo sem sibilância.
+
+### 8.5 Choque sem hipotensão detectada no primeiro minuto
+
+Hipoperfusão pode preceder pressão baixa franca. Taquicardia, alteração mental, extremidades mal perfundidas, síncope e enchimento capilar lento devem ser analisados junto ao histórico de exposição. Em anafilaxia, há vasodilatação e perda de líquido intravascular para o interstício, de modo que resposta à epinefrina e a fluido pode variar conforme intensidade. A falta de acesso venoso não deve atrasar a dose **intramuscular**.
+
+## 9. Farmacologia da adrenalina: por que a escolha e a via importam
+
+A epinefrina é catecolamina que ativa receptores adrenérgicos, com efeitos dependentes de dose, distribuição e contexto fisiológico. A ação **alfa-1** melhora resistência vascular e reduz extravasamento/edema; efeitos **beta-1** ajudam frequência e contratilidade em circulação comprometida; **beta-2** promovem broncodilatação e podem reduzir liberação de mediadores inflamatórios. O objetivo não é provocar taquicardia por si, mas restaurar **fluxo sanguíneo e ventilação**.
+
+### 9.1 Concentração 1 mg/mL e cálculo da dose IM
+
+Na concentração **1 mg/mL**, o volume em mL equivale numericamente à dose em mg. Assim, dose de **0,01 mg/kg** representa **0,01 mL/kg** dessa solução, limitada ao máximo **adulto 0,5 mg** pela WAO. Exemplo meramente matemático, não receita: adulto de 70 kg teria dose pelo peso 0,7 mg, acima do teto adulto; respeita-se o limite de 0,5 mg, que nessa apresentação corresponde a **0,5 mL**. Crianças têm limites e faixas próprias, sob protocolo pediátrico.
+
+**Não confundir 1 mg/mL (1:1.000) para IM com apresentação diluída de outro contexto.** Erro de concentração/via pode multiplicar inadvertidamente a dose administrada e provocar arritmia ou isquemia. A conferência de ampola, etiqueta, via e dose é obrigatória.
+
+### 9.2 Por que a coxa anterolateral?
+
+A aplicação intramuscular na região anterolateral média da coxa proporciona absorção rápida e é recomendada em diretrizes. Administração **subcutânea** pode apresentar absorção menos favorável, e a **via IV em bolo** não é recomendada como primeira escolha de anafilaxia com circulação preservada. O profissional deve dominar anatomia e técnica; em paciente com roupas espessas, questões de profundidade do dispositivo e segurança precisam ser consideradas conforme autoinjetor ou seringa.
+
+### 9.3 Repetição e reavaliação
+
+Após a primeira dose, reavaliar voz, estridor, SpO₂, esforço ventilatório, PA, perfusão, pulso, consciência e urticária. Se sintomas de anafilaxia persistem ou progridem, **repetir IM em 5–15 minutos** conforme resposta e protocolo. A necessidade de segunda dose não autoriza atrasar suporte ou considerar a reação “controlada porque parou de coçar”. Alguns pacientes necessitam escalonamento para infusão IV monitorizada em contexto de refratariedade.
+
+### 9.4 Epinefrina IV e erro de administração
+
+A via intravenosa entrega o fármaco diretamente à circulação e pode produzir pico abrupto. **Bolus IV inadvertido** com concentração/dose da IM é risco grave de taquiarritmia, hipertensão súbita e isquemia. Quando anafilaxia é refratária, a escolha de infusão IV deve ser reservada a profissionais experientes, com bomba, diluição padronizada, monitorização contínua e protocolo local. **Anafilaxia com circulação e PCR são situações farmacológicas diferentes**; durante PCR aplica-se algoritmo de ressuscitação, não as mesmas doses IM.
+
+### 9.5 Beta-bloqueadores e epinefrina
+
+O paciente em beta-bloqueador pode responder menos a alguns efeitos beta-adrenérgicos, mas isso **não transforma beta-bloqueio em contraindicação para epinefrina IM**. A avaliação inclui gravidade e terapias adicionais possíveis, como glucagon em circunstâncias refratárias com equipe adequada. A atualização de prática 2023 AAAAI/ACAAI também destaca que interromper rotineiramente beta-bloqueador/IECA em pessoa com indicação cardiovascular pode causar mais dano do que benefício, especialmente no planejamento de imunoterapia contra venenos; a decisão é compartilhada e não se confunde com a prioridade da adrenalina na crise.
+
+## 10. Manejo por prioridades clínicas: decisões em tempo real
+
+A abordagem é simultânea e centrada em risco. Não se trata de realizar longa avaliação sequencial antes de agir.
+
+**Reconhecimento:** sintomas agudos compatíveis, exposição plausível, sinais de risco respiratório/circulatório. **Primeira ação terapêutica:** epinefrina IM, interromper agente desencadeante e solicitar equipe de suporte. **Ao mesmo tempo:** avaliar via aérea, respiração e circulação, posicionar paciente, monitorizar e fornecer oxigênio/fluidos conforme indicação. **Reavaliar:** repetir IM se necessário e procurar via aérea ameaçada ou choque persistente. **Depois de estabilizar:** tratar sintomas residuais, registrar evento, considerar exames e plano de prevenção e seguimento.
+
+### 10.1 Via aérea alta com edema progressivo
+
+Rouquidão nova, estridor, disfagia importante e edema de língua devem estimular solicitação precoce de profissional capacitado para via aérea difícil. **A intubação tardia pode ser muito difícil** quando o edema progrediu; em circunstâncias críticas, a equipe deve estar preparada para alternativas de resgate. Entretanto, intubação traumática ou tentativas prolongadas sem plano podem agravar situação. A epinefrina IM não deve ser atrasada durante preparo; suporte de oxigênio e avaliação contínua são fundamentais.
+
+### 10.2 Broncoespasmo persistente
+
+Após epinefrina, se ainda há broncoespasmo, broncodilatador beta-2 inalatório pode ajudar. O fármaco inhalatório **não corrige edema laríngeo nem hipotensão**, portanto não deve ocupar o lugar da adrenalina. Em pessoa com asma, o diagnóstico pode ser misto: uma reação alérgica sistêmica pode exacerbar obstrução brônquica. Um paciente sem urticária com broncoespasmo depois de penicilina também pode estar em anafilaxia.
+
+### 10.3 Choque persistente
+
+Posicionar adequadamente, monitorizar PA/ECG/SpO₂, garantir acesso venoso quando possível e administrar cristaloide de acordo com gravidade, idade e doenças prévias. Os guias descrevem bolus de cristalóide para tratar depleção relativa de volume, mas a titulação requer avaliação de perfusão e risco de congestão; não prosseguir com volumes repetidos sem reavaliar edema pulmonar e função cardíaca. A adrenalina IM permanece intervenção causal central, podendo ser necessária infusão IV especializada se refratário.
+
+### 10.4 Sinais de parada cardiorrespiratória
+
+Se o paciente não responde, não respira normalmente e não possui pulso, **acionar protocolo de PCR e iniciar RCP**. O tratamento deixa de ser apenas anafilaxia com circulação: aplica-se ressuscitação por ritmo e causas reversíveis, incluindo medidas específicas para anafilaxia conforme equipe. Não confundir dose IM da reação alérgica com dose IV/IO do algoritmo de PCR. Após retorno da circulação, prosseguir suporte crítico e investigação causal.
+
+## 11. Angioedema: histamina versus bradicinina
+
+**Angioedema** é edema transitório de derme profunda, subcutâneo ou mucosa, podendo atingir lábios, face, língua, trato gastrointestinal e laringe. Pode acompanhar urticária/anafilaxia mediadas por mastócitos ou ocorrer por mecanismos de **bradicinina**, como angioedema hereditário e angioedema associado a inibidores da ECA.
+
+### 11.1 Histaminérgico
+
+Frequentemente apresenta **urticária e prurido**, desencadeamento por alérgeno e início relativamente rápido. Pode responder a anti-histamínicos em quadros restritos de pele/mucosa, porém **quando anafilaxia está presente, a adrenalina IM é prioritária**. A ausência de resposta a anti-H1 não é prova absoluta de mecanismo alternativo, mas deve motivar reavaliação.
+
+### 11.2 Mediado por bradicinina
+
+Frequentemente **não apresenta urticária nem prurido**, pode desenvolver-se de modo mais lento e durar mais, com acometimento de língua/laringe ou dor abdominal. Inibidores da ECA podem causar angioedema mesmo após meses ou anos de uso sem problemas; o risco não se restringe ao primeiro comprimido. Hereditariedade, episódios recorrentes e antecedentes familiares ajudam a pensar em deficiência/disfunção de inibidor de C1 ou outros subtipos.
+
+**O tratamento de angioedema bradicinínico é diferente do de anafilaxia:** medidas específicas podem envolver fármacos direcionados à bradicinina ou concentrado de C1-inibidor em formas apropriadas, conforme diagnóstico e disponibilidade. Entretanto, quando o mecanismo é incerto e há possível anafilaxia, é razoável tratar imediatamente síndrome alérgica ameaçadora enquanto se protege via aérea. A falta de resposta aos adjuvantes convencionais **não justifica postergar resgate de via aérea**.
+
+### 11.3 Exames e confirmação posterior
+
+Em suspeita de angioedema hereditário, a avaliação especializada pode incluir **C4, nível funcional e antigênico do inibidor de C1**, com testes complementares conforme fenótipo. Não é investigação que deva atrasar manejo de língua/larynx ameaçados. Em angioedema por IECA, a interrupção do agente causal e revisão de alternativas é central, com risco de recorrência e orientação adequada.
+
+### 11.4 Quadro comparativo
+
+| Característica | Histaminérgico | Bradicinínico |
+|---|---|---|
+| Urticária/prurido | Frequentes | Em geral ausentes |
+| Início | Muitas vezes mais rápido | Pode ser mais lento |
+| Duração | Frequentemente menor | Pode durar dias |
+| Gatilhos | Alimentos, fármacos, picadas, idiopático | IECA, angioedema hereditário/adquirido |
+| Resposta a anti-H1 | Pode aliviar sintomas cutâneos | Geralmente limitada |
+| Resposta a epinefrina IM | Primeira linha na anafilaxia | Usualmente limitada; proteger via aérea |
+| Diagnóstico definitivo | Clínico, testes de alergia conforme caso | Histório, fármacos, C4/C1-INH conforme fenótipo |
+
+A tabela não autoriza escolher “não dar adrenalina” em paciente com ameaça circulatória e mecanismo ainda incerto: **estabilizar primeiro**.
+
+## 12. Reações cutâneas medicamentosas graves: nem toda “alergia” é anafilaxia
+
+Há reações agudas imediatas e reações tardias, mediadas por mecanismos diferentes. A distinção altera risco de reexposição e avaliação alergológica.
+
+### 12.1 Urticária aguda e exantema morbiliforme
+
+Urticária consiste em lesões evanescentes pruriginosas que migram e tipicamente duram menos de 24 horas em mesmo local, sem deixar marcas persistentes. Exantema morbiliforme pode ocorrer após infecção viral ou medicação, com distribuição e cronologia próprias. A reação cutânea isolada exige avaliar sinais sistêmicos, temperatura, acometimento de mucosas e sintomas respiratórios, evitando tanto banalização quanto classificação automática de anafilaxia.
+
+### 12.2 Síndrome de Stevens–Johnson e necrólise epidérmica tóxica
+
+**SJS/TEN** são reações cutâneas medicamentosas graves, com necrose epidérmica e desprendimento, frequentemente acometimento de mucosas e doença sistêmica. Dor de pele, erosões mucosas, bolhas, febre e exposição medicamentosa recente exigem avaliação hospitalar urgente e interrupção do provável fármaco causador por equipe apropriada. Não se tratam como urticária simples ou anafilaxia clássica; a prevenção de reexposição é fundamental. A extensão do descolamento diferencia classificações, mas isso não deve atrasar encaminhamento.
+
+### 12.3 DRESS
+
+A reação medicamentosa com eosinofilia e sintomas sistêmicos pode surgir semanas após iniciar fármaco, com febre, exantema, alterações hematológicas e acometimento hepático/renal ou de outros órgãos. Diferente da anafilaxia de instalação imediata, a cronologia é mais tardia e a avaliação inclui gravidade visceral, agente responsável e monitorização prolongada. Não reenviar o paciente para casa com “anti-histamínico” quando há transaminases elevadas, febre e sinais sistêmicos significativos.
+
+### 12.4 AGEP e outras reações
+
+Pustulose exantemática generalizada aguda apresenta pústulas estéreis sobre eritema, frequentemente após medicamentos e acompanhada de febre/neutrofilia. Diferenciar de infecção cutânea, dermatose pustulosa e outras SCAR é relevante para suspender agente e evitar reexposição. O diagnóstico muitas vezes exige dermatologia e exame histopatológico conforme indicação.
+
+### 12.5 Alergia imediata à penicilina versus rótulo de alergia
+
+“Sou alérgico a penicilina” pode significar vômito, reação cutânea inespecífica infantil, urticária imediata ou anafilaxia documentada. A história deve registrar fármaco, dose, via, latência, manifestações, tratamento necessário, reexposições e tolerância posterior. O rótulo mal caracterizado induz uso desnecessário de antibióticos de grande espectro, com custos e risco de resistência. Testes de alergia e desafios supervisionados são realizados por especialistas conforme risco; **não fazer provocação empírica em paciente com história compatível com SJS/TEN, DRESS ou anafilaxia grave sem estrutura**.
+
+## 13. Anafilaxia relacionada a alimentos, medicamentos e insetos
+
+### 13.1 Alimentos
+
+Leite, ovo, amendoim, nozes, frutos do mar, trigo e outros podem desencadear reações, variando por população e sensibilidade. A presença de IgE específica positiva indica **sensibilização**, não necessariamente doença clínica; diagnóstico requer história e, em circunstâncias selecionadas, provocação supervisionada. A quantidade de alimento desencadeante, co-fatores e preparo podem influenciar apresentação. Em adultos, considerar alfa-gal ou alergia dependente de exercício/co-fatores em casos específicos.
+
+### 13.2 Medicamentos
+
+Antibióticos beta-lactâmicos, fármacos anestésicos, anti-inflamatórios, contrastes e biológicos podem produzir reação imediata por diversos mecanismos. Uma reação a AINE pode envolver inibição de COX e alterações de leucotrienos, nem sempre IgE específica ao fármaco isolado. É importante distinguir alergia a molécula individual de intolerância cruzada a um grupo, com avaliação especializada. Contraste iodado não significa “alergia a iodo” como entidade imunológica simples; a documentação deve identificar produto e reação real.
+
+### 13.3 Venenos de himenópteros
+
+Picadas de abelha e vespa podem produzir reações locais grandes, urticária sistêmica e anafilaxia grave. A avaliação pós-reação pode incluir testes de sensibilização a veneno e considerar **imunoterapia com veneno** em pacientes selecionados, que reduz risco de futuras reações sistêmicas conforme diagnóstico. Em reações muito graves com hipotensão e poucos sinais cutâneos, investigar doença mastocitária e triptase basal conforme critérios. A necessidade de carregar autoinjetor e plano de ação depende de risco e acesso local.
+
+### 13.4 Látex e contexto cirúrgico
+
+Durante cirurgias, a identificação do gatilho é complexa porque há múltiplas exposições em curto intervalo. Anotar horários de administração de antibióticos, bloqueadores neuromusculares, anestésicos, soluções, antissépticos e contato com látex ajuda a construir hipóteses. A investigação alergológica antes de nova anestesia é importante, mas **não significa que toda futura cirurgia esteja proibida**; é possível planejar alternativas de agentes e ambiente após avaliação.
+
+## 14. Do episódio agudo à prevenção individual
+
+O paciente que sai da emergência precisa compreender **o que aconteceu, qual gatilho é suspeito, quais sintomas exigem adrenalina, como agir e a quem recorrer**. A alta sem documentação perpetua risco: uma equipe futura pode reexpor a droga responsável ou evitar de modo amplo e desnecessário todos os medicamentos de uma classe.
+
+O registro deve descrever horário, sinais, sistemas acometidos, PA e SpO₂, agente provável, dose e via de adrenalina, repetição, resposta, tratamentos adjuntos, observação e orientação. Encaminhar para alergologia quando indicado, discutir autoinjetor conforme acesso/risco e apresentar **plano escrito de emergência**.
+
+### 14.1 Reação bifásica e tempo de observação
+
+A duração de observação deve considerar gravidade inicial, múltiplas doses de epinefrina, necessidade de suporte ventilatório/circulatório, asma grave, acesso distante a atendimento e possibilidade de recorrência. O conceito de “quatro horas sempre” ou “vinte e quatro horas sempre” é insuficiente; diferentes diretrizes e serviços utilizam critérios de risco. Na reação grave, monitorização mais prolongada ou internação é apropriada; na resolução rápida e sustentada, a decisão exige contextualização.
+
+### 14.2 Prevenção sem medo excessivo
+
+Evitar o agente confirmado ou altamente suspeito até investigação é medida importante, mas proibir uma lista de dezenas de alimentos ou medicamentos sem critérios pode restringir vida e tratamento. Em alergia alimentar, ensinar leitura de rótulos e prevenção de exposição cruzada com orientação especializada. Em alergia medicamentosa, registrar marca e princípio ativo reais, reação e testes, para evitar “alergia a tudo” no prontuário.
+
+### 14.3 Educação de familiares e comunidade
+
+Pessoas próximas devem reconhecer sinais importantes — voz alterada, falta de ar, síncope, hipotensão — e saber o que fazer. Treinamento com dispositivos demonstrativos, quando disponíveis, é mais confiável que apenas entregar bula. A orientação inclui checar validade e disponibilidade do autoinjetor e não assumir que a farmácia local possui produto registrado. O planejamento escolar e ocupacional deve ser adaptado à pessoa.
+
+## 15. Integração com princípios de segurança do LURIA
+
+**Simulador de emergência:** caso de anafilaxia deve pontuar reconhecimento de via aérea e administração de epinefrina IM antes de anti-H1 e corticoide; erro de via/concentração é evento de alto risco. **Bulário:** separar claramente doses de epinefrina para anafilaxia **IM 1 mg/mL** das de ressuscitação **IV/IO em parada**, com alertas visuais e prevenção de confusão. **Flashcards:** incluir diferenciação anafilaxia versus urticária, versus angioedema bradicinínico, dose/volume, repetição, razão fisiológica do tratamento. **Questões:** cobrar prioridade temporal e interpretação de sintomas mesmo sem rash.
+
+Os materiais multimodais devem manter consistência: uma apostila que ensina epinefrina imediata não pode conviver com simulador que premia anti-histamínico como primeira medida única. O padrão de conteúdo de maior risco merece revisão cruzada entre referências e aplicações.
+
+
 ## 6. Referências para validação e continuidade
 
 1. **WORLD ALLERGY ORGANIZATION.** *World Allergy Organization Anaphylaxis Guidance 2020*. *World Allergy Organization Journal*, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/
