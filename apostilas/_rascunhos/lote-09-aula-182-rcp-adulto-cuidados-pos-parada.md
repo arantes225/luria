@@ -459,7 +459,157 @@ E. Suprimir controle da temperatura, pois o ritmo inicial não é conhecido.
 4. HIRSCH, K. G. et al. **Part 11: Post–Cardiac Arrest Care.** *Circulation*, 2025;152(Suppl 2):S673–S718. DOI: [10.1161/CIR.0000000000001375](https://doi.org/10.1161/CIR.0000000000001375).
 5. AMERICAN HEART ASSOCIATION. **2025 CPR/ECC Algorithms.** https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/
 
-## 18. Pendências para liberação — NÃO CERTIFICADO
+## 18. Interpretação do monitor durante PCR: do traçado à decisão
+
+Uma dificuldade frequente em cenários reais é atribuir significado diagnóstico a um traçado visto em poucos segundos, com artefatos de compressão e qualidade variável de contato dos eletrodos. A pergunta correta não é apenas “qual ritmo aparece?”; é “o paciente tem perfusão?” e, na ausência dela, “este ritmo é passível de desfibrilação?”. O monitor sozinho não substitui avaliação clínica. A captação pode exibir interferência por eletrodo solto, cabo rompido, tremores, transporte, equipamento elétrico ou compressões. Antes de classificar “assistolia”, verificar conexões e, se viável sem atraso, outro vetor de derivação. Uma FV fina pode ser confundida com linha isoelétrica; no entanto, procurar obsessivamente uma onda diminuta também pode prolongar pausas, de modo que a checagem deve ser rápida e protocolizada.
+
+### 18.1 FV grosseira, FV fina e taquicardia ventricular sem pulso
+
+A FV não apresenta complexos QRS regulares e organizados. Oscilações de amplitude e frequência variam conforme características cardíacas e tempo de colapso, mas amplitude isolada não é critério suficiente para decidir quando interromper ressuscitação. Em um cenário com fibrilação comprovada, o tratamento fundamental segue sendo choque e compressões. Diferente dela, a TV frequentemente exibe complexos largos organizados em sequência, muitas vezes rápida. A ausência de pulso efetivo, e não a morfologia isolada, determina que a TV pertence ao ramo de **desfibrilação não sincronizada da PCR**. TV com pulso e instabilidade é outra situação: avaliar cardioversão sincronizada e abordagem específica, sem aplicar o fluxo de doses e ciclos da PCR.
+
+O raciocínio evita dois erros simétricos. Primeiro, reconhecer um ritmo organizado no monitor e presumir que o paciente saiu da parada sem verificar pulso: pode ser AESP. Segundo, olhar uma frequência elevada e presumir TVSP em paciente que tem pulso e perfusão, submetendo-o indevidamente à lógica de choque não sincronizado. O correto é correlacionar ritmo com pulso e estado hemodinâmico.
+
+### 18.2 Assistolia verdadeira versus problemas de registro
+
+Uma linha reta pode indicar assistolia, porém também pode resultar de desconexão, ganho inadequado ou seleção de derivação sem sinal. Em segundos, observar impedância/eletrodos, cabos e derivações, mantendo ou retomando compressões. Não transformar esse procedimento em pausa superior ao limite razoável. Confirmado ritmo não chocável e ausência de circulação, seguir RCP e abordagem etiológica, sem choques “de teste”.
+
+### 18.3 Dissociação eletromecânica: AESP e pseudo-AESP
+
+**AESP verdadeira** expressa ausência de contração mecânica eficaz apesar de atividade elétrica detectável; **pseudo-AESP** refere-se a movimento cardíaco ainda presente ao ultrassom, mas circulação insuficiente para gerar pulso detectável clinicamente. A diferença pode ajudar a formular hipóteses, mas não altera a necessidade imediata de compressões em paciente sem circulação efetiva. O ultrassom não deve ser usado para abandonar terapia ou determinar prognóstico isoladamente. Presença de alguma movimentação cardíaca não significa que o paciente esteja perfundindo adequadamente.
+
+Na AESP pode haver QRS estreito ou largo. QRS estreito em contexto de colapso súbito pode levantar hipótese de causa obstrutiva ou hipovolêmica; QRS largo pode reforçar suspeitas metabólicas, tóxicas ou cardíacas, mas nenhum padrão é específico. **A classificação do QRS produz hipóteses, não diagnósticos etiológicos definitivos**. Priorizar informações prévias: insuficiência respiratória antes da parada? Diálise perdida? Trauma? Dor torácica ou sinais de tromboembolismo? Prescrição de medicamentos cardiotóxicos? Essas pistas frequentemente superam leitura sofisticada de um traçado artefatado.
+
+### 18.4 Como agir quando o ritmo muda
+
+Durante ciclos, FV pode converter-se em ritmo organizado; AESP pode degenerar para FV; a assistolia pode apresentar complexos isolados. Mudança de ritmo no monitor justifica avaliação breve no momento adequado, não pausa contínua a cada oscilação. Se persistir ausência de pulso com traçado organizado, seguir ramo não chocável. Se surgir ritmo chocável, desfibrilar. Com RCE, encerrar compressões e iniciar pós-parada. **O algoritmo é dinâmico**, e insistir no ramo em que o paciente entrou, ignorando alterações, é erro de decisão.
+
+## 19. Mecânica da ventilação e interpretação integrada de ETCO₂
+
+O sucesso de uma ventilação com bolsa-máscara depende de abrir via aérea, manter vedação e produzir volume suficiente para movimento torácico sem distender excessivamente pulmões e estômago. Uma elevação mínima do tórax durante ventilação costuma ser alvo melhor que o impulso de apertar a bolsa inteira. A perda de vedação desvia ar para o ambiente e pode levar equipe a aumentar pressão desnecessariamente. Com duas pessoas, uma mantém máscara e posiciona mandíbula, e a outra controla a bolsa. A necessidade de ventilar não justifica interrupções longas de compressões.
+
+A conexão entre ventilação, troca gasosa e fluxo durante PCR merece atenção. O dióxido de carbono é gerado no metabolismo periférico, transportado pela circulação até os pulmões e removido por ventilação. Se a RCP produz fluxo pulmonar muito baixo, o ETCO₂ tende a permanecer reduzido mesmo quando as ventilações são adequadas. Isso não significa necessariamente problema no ventilador: pode refletir baixo fluxo sistêmico. Em contrapartida, aumento sustentado após compressões mais eficazes pode indicar melhora de fluxo, enquanto salto abrupto acompanhado de sinais clínicos pode anunciar RCE.
+
+**O ETCO₂ não é um biomarcador isolado de prognóstico.** Vazamento ao redor do dispositivo, excesso de ventilação, administração de certas medicações e alterações metabólicas afetam leitura. Quando a onda desaparece, examinar circuito, sensor, vedação, via aérea e perfusão. A interpretação deve integrar ritmo, pressão arterial, expansibilidade do tórax, gases e evolução no tempo.
+
+### 19.1 Pressão intratorácica e retorno venoso
+
+A pressão positiva inspira ar, mas também aumenta pressão dentro do tórax. No doente com circulação estável, esse efeito pode ser tolerado; durante PCR, o retorno venoso já é criticamente baixo. Ventilações excessivas reduzem gradiente de retorno e podem prejudicar perfusão coronária, especialmente quando frequentes e volumosas. O objetivo é equilíbrio: não hipoventilar o paciente hipóxico, mas também não tratar todos os casos com ventilação rápida, mesmo diante de ETCO₂ baixo.
+
+### 19.2 Ventilação após RCE: evitar extremos
+
+Uma vez restabelecida circulação, a produção e eliminação de CO₂ mudam rapidamente. Parâmetros que eram apropriados durante compressões precisam ser reavaliados. A PaCO₂ influencia calibre vascular cerebral e pH: hipocapnia pode estreitar vasos cerebrais, ao passo que hipercapnia importante pode elevar pressão intracraniana em certas condições e refletir ventilação insuficiente. A AHA 2025 usa alvo habitual de PaCO₂ em torno de 35–45 mmHg, excetuadas circunstâncias como acidemia grave. A ventilação deve ser titulada por gasometria e capnografia, considerando diferença entre ETCO₂ e PaCO₂ em alterações de espaço morto, choque e doença pulmonar.
+
+Uma gasometria isolada logo após RCE também pode refletir mistura complexa de baixo fluxo prévio, reperfusão, bicarbonato endógeno, acidose láctica e alterações respiratórias. Corrigir cada número precipitadamente pode produzir oscilações prejudiciais. O essencial é rastrear **tendência do pH, bicarbonato, PaCO₂, PaO₂, lactato e perfusão**, com intervenção na causa. Lactato inicialmente elevado após PCR não identifica sozinho uma infecção nem comprova choque séptico.
+
+### 19.3 O que fazer quando a saturação está baixa
+
+Checar confiabilidade do sensor em extremidades frias ou mal perfundidas, observar curva de pulso e correlacionar com gasometria. Procurar broncoaspiração, edema pulmonar, atelectasias, pneumotórax, deslocamento de tubo, obstrução de cânula e insuficiência cardíaca. Oxigênio suplementar pode ser necessário, mas não basta se a ventilação está inadequada ou o pulmão está colapsado. A estratégia de ventilação mecânica após RCE deve respeitar princípios protetores quando pertinente, sem excluir o manejo da etiologia pulmonar específica.
+
+### 19.4 Via aérea difícil e decisão de intubação
+
+A presença de rebaixamento de consciência exige proteção da via aérea quando o paciente não consegue mantê-la, mas o momento e o dispositivo são individualizados. Na PCR, a prioridade é permitir boa ventilação sem sacrificar compressões. Após RCE, avaliar consciência, reflexos, oxigenação, risco de aspiração e necessidade de transportar para procedimentos. Todo plano de via aérea avançada precisa considerar falha de laringoscopia, dessaturação e deterioração circulatória em paciente pós-parada, que pode estar profundamente instável. Organização de equipe, drogas, equipamento de resgate e oxigenação antecedem a tentativa quando possível. A confirmação por capnografia com onda após intubação e ao longo do cuidado reduz risco de posição incorreta ou deslocamento.
+
+## 20. Circulação no período pós-parada: distinguir choque cardiogênico de vasoplegia
+
+A queda de pressão depois do RCE pode refletir diversas combinações: lesão miocárdica por isquemia e desfibrilação, disfunção contrátil transitória, hipovolemia antecedente, sedação, acidose, vasodilatação inflamatória ou obstrução circulatória persistente. As decisões hemodinâmicas precisam levar em conta **mecanismo provável**. Repetir fluidos sem avaliação pode piorar edema pulmonar em coração deprimido; utilizar vasopressor sem corrigir hipovolemia grave pode não restabelecer débito adequado. A mesma PAM pode ocultar diferentes estados de perfusão sistêmica.
+
+### 20.1 Como avaliar a perfusão além da pressão
+
+Estado mental, temperatura e cor cutânea, enchimento capilar, diurese, tendência do lactato e parâmetros ecocardiográficos ajudam a construir diagnóstico hemodinâmico. O pós-RCE frequentemente exige linha arterial e cuidados intensivos para pressões contínuas e titulação. O débito urinário deve ser interpretado considerando função renal basal e exposição a nefrotóxicos, não como variável isolada. A resposta ao tratamento é observada ao longo do tempo, e não somente pela primeira aferição após epinefrina ou volume.
+
+Exame de ultrassom cardiovascular pode avaliar função ventricular esquerda e direita, derrame pericárdico, congestão e causas mecânicas. A disfunção miocárdica pós-parada pode melhorar em horas ou dias, mas isquemia coronária persistente, miocardite e outras cardiopatias exigem identificação específica. Troponina elevada é comum após PCR e não comprova, por si só, oclusão coronária aguda; sua interpretação depende de ECG, cinética, clínica e outros exames.
+
+### 20.2 Choque cardiogênico pós-parada
+
+A diminuição da força contrátil reduz débito mesmo com volemia aceitável. A terapia combina tratamento etiológico, reperfusão quando indicada e suporte hemodinâmico. Drogas vasoativas e inotrópicas devem ser individualizadas por especialistas, com atenção a arritmias, isquemia e demanda de oxigênio miocárdica. O suporte circulatório mecânico pode ser considerado em choque refratário selecionado, mas envolve complicações hemorrágicas e vasculares, necessidade de equipe treinada e benefício incerto em alguns contextos. Não inserir dispositivo invasivo somente porque o paciente teve uma PCR; requer avaliação de reversibilidade, gravidade, causa e estrutura disponível.
+
+### 20.3 Vasoplegia e outras causas de hipotensão
+
+O estado de isquemia–reperfusão pode produzir vasodilatação, com resistência vascular sistêmica reduzida apesar de função ventricular parcialmente preservada. Sepse antecedente, sedativos ou intoxicações podem contribuir. O tratamento difere da falência de bomba predominante, embora mecanismos mistos sejam comuns. A busca por causa inclui temperatura, glicemia, gasometria, culturas quando apropriadas, foco de infecção suspeito, história farmacológica e exames hemodinâmicos. Antibioticoterapia não é uma prescrição automática para todo paciente pós-PCR; seu uso exige avaliação clínica de pneumonia aspirativa, infecção provável ou indicação específica.
+
+### 20.4 Oxigenação e circulação cerebral como eixos integrados
+
+Uma PAM adequada associada a hipocapnia acentuada pode diminuir fluxo cerebral, e uma PaO₂ elevada não corrige falta de pressão de perfusão. O cérebro vulnerável depende da combinação de volume circulante efetivo, pressão, débito, concentração de oxigênio e regulação vascular. Monitorizar esses componentes em conjunto é mais coerente do que buscar valor “perfeito” de apenas uma variável. A reabilitação neurológica começa por evitar novas agressões nas primeiras horas.
+
+## 21. Ressuscitação refratária, transporte, ECPR e limites éticos
+
+Nem toda parada reverte com manobras convencionais, mesmo executadas corretamente. Uma FV refratária repetida, hipocalemia/hipercalemia grave, hipotermia acidental profunda, intoxicação e TEP maciço podem exigir terapias especializadas. O papel da equipe é reconhecer quando existe **uma causa potencialmente reversível tratável apenas em centro com maior capacidade** e quando o transporte prolongado durante compressões comprometeria segurança ou eficácia. Este julgamento requer protocolos regionais claros, comunicação antecipada com serviço receptor e recursos de transporte adequados.
+
+### 21.1 Ressuscitação extracorpórea (ECPR)
+
+ECPR usa suporte extracorpóreo venoarterial em alguns pacientes que permanecem sem circulação espontânea apesar de RCP, procurando oferecer perfusão enquanto se trata causa reversível. Não é tratamento universal: depende de seleção criteriosa, janela temporal, PCR testemunhada, RCP iniciada rapidamente, recursos, etiologia tratável e equipe com experiência em ECMO. Evidências e disponibilidade variam, e a intervenção envolve riscos de sangramento, isquemia de membros e complicações de canulação. A decisão deve ser planejada no nível do sistema de emergência, não improvisada após prolongado tempo sem fluxo e sem critérios de seleção.
+
+Ao estudar ECPR, distinguir **RCE** (circulação restaurada pela função do coração) de **retorno de circulação por suporte mecânico**, quando a bomba extracorpórea produz fluxo sem recuperação imediata de batimento eficaz. Essa precisão semântica explica por que “pressão presente” em ECMO não significa resolução da doença cardíaca ou cerebral de base.
+
+### 21.2 Desfibrilação refratária e técnicas especiais
+
+Em FV/TVSP persistente após tentativas usuais, conferir posicionamento dos eletrodos, contato com pele e energia aplicada antes de supor “resistência biológica ao choque”. Estratégias como mudança de vetor ou desfibrilação sequencial dupla têm sido estudadas, mas a **AHA 2025 não estabelece sua utilidade como terapia padrão**. Não apresentá-las como rotina obrigatória ou substituto de RCP/choque convencional. A expansão a novas tecnologias requer critérios locais, equipamento e treinamento, além de revisão contínua da evidência.
+
+### 21.3 RCP mecânica
+
+Dispositivos mecânicos podem facilitar compressões em circunstâncias especiais, como transporte de alto risco para equipe, ambiente de acesso limitado ou alguns procedimentos, mas não devem ser interpretados como superiores em todo cenário. Instalação pode exigir pausa, mau posicionamento provoca compressões ineficazes e a tecnologia exige monitorização. A decisão equilibra segurança, desempenho e capacidade do serviço. A execução manual de boa qualidade é base suficiente para muitos atendimentos; o equipamento não compensa atraso no reconhecimento ou na desfibrilação.
+
+### 21.4 Critérios para término da reanimação
+
+A decisão de interromper RCP é clínica, ética e normativa. Consideram-se circunstâncias da parada, tempo sem fluxo estimado, qualidade e duração da ressuscitação, ritmos observados, terapias instituídas, causas reversíveis ainda tratáveis, contexto de hipotermia/intoxicação, resposta fisiológica, dispositivos disponíveis, regras validadas e preferências previamente estabelecidas pelo paciente quando conhecidas. Não existe um número único de minutos válido para todos.
+
+Nas equipes pré-hospitalares, há regras validadas de término de ressuscitação para profissionais de BLS e ALS, mas os critérios dependem da estrutura do sistema e devem ser utilizados conforme diretrizes e regulação local. A AHA 2025 enfatiza não usar **um ETCO₂ isolado como justificativa para suspender**. Em paciente adulto intubado após ao menos 20 minutos de ressuscitação avançada, ETCO₂ persistentemente muito baixo pode compor uma avaliação multimodal, mas não é sentença automática. Em não intubados, valores de corte para ETCO₂ **não devem** determinar término.
+
+Também não se deve encerrar RCP simplesmente por assistolia inicial, idade isolada ou ausência precoce de resposta neurológica; cada um pode informar contexto, mas não substituir avaliação sistêmica. Inversamente, persistir sem avaliação de causa e sem objetivos claros pode expor pessoas a medidas não benéficas. A discussão deve respeitar princípios de ética médica, legislação e protocolos institucionais.
+
+### 21.5 Diretivas antecipadas e comunicação
+
+Em pacientes com doenças avançadas ou condições de fim de vida, decisões sobre ressuscitação devem idealmente ter sido discutidas antes da emergência, com documentação e participação apropriada. Diretrizes não equivalem a direito de ignorar autonomia; recusa válida de manobras ou plano terapêutico limitado deve ser tratado conforme legislação aplicável e normas institucionais. Durante atendimento agudo sem informação confiável, a prioridade habitual é cuidado emergencial compatível com a situação. Após evento, a equipe precisa comunicar fatos, incertezas, objetivos realistas e próximos passos de forma clara, preservando confidencialidade.
+
+## 22. Exercícios integradores adicionais e matriz de autossuficiência
+
+### Vinheta aplicada A — Linha quase reta após troca de leito
+
+Na troca de maca, um paciente sem pulso apresenta traçado aparentemente isoelétrico, mas o cabo de monitor está parcialmente solto. A equipe continua RCP, confere conexões na pausa programada e constata FV fina. **Decisão:** a reavaliação elétrica e clínica breve permite desfibrilação de ritmo chocável, sem ter interrompido compressões para uma investigação prolongada. **Conceito ensinado:** ausência de onda na tela não prova ausência de atividade cardíaca se registro está inadequado.
+
+### Vinheta aplicada B — ETCO₂ de 8 mmHg durante RCP
+
+Paciente intubado recebe compressões e ventilação com ETCO₂ de 8 mmHg. Um membro da equipe propõe interromper imediatamente a reanimação. **Decisão:** revisar qualidade das compressões, técnica ventilatória, posicionamento do tubo, causas e contexto clínico. O número pode sugerir fluxo muito baixo, mas não autoriza, sozinho, a interrupção; duração, condições e reversibilidade importam. **Conceito ensinado:** marcador fisiológico auxiliar não se confunde com critério único de futilidade.
+
+### Vinheta aplicada C — Choque cardiogênico após RCE
+
+Após FV revertida, adulto apresenta PAM 54 mmHg, extremidades frias, congestão pulmonar e ecocardiografia com disfunção importante do ventrículo esquerdo. **Decisão:** evitar expansão volêmica automática; avaliar causa isquêmica, iniciar suporte hemodinâmico conforme equipe de UTI e encaminhar para reperfusão se indicada. **Conceito ensinado:** pós-RCE exige tipagem fisiopatológica de choque, não administração indiscriminada de fluidos.
+
+### Vinheta aplicada D — Mioclonias em paciente sedado
+
+Paciente apresenta abalos musculares após RCE, segue sedado e não obedece a comandos. **Decisão:** solicitar EEG prontamente para distinguir fenômenos epilépticos e não epilépticos, tratar crises identificadas, considerar fatores confundidores antes de qualquer prognóstico. Não recomendar supressão farmacológica indiscriminada de mioclonia sem correlação eletroencefalográfica como estratégia de neuroproteção. **Conceito ensinado:** sinal motor precoce não é prova isolada de lesão irreversível.
+
+### Matriz preliminar: onde o aluno deve encontrar as respostas
+
+| Competência verificada | Capítulos com conteúdo-base | Situação |
+|---|---|---|
+| Diferenciar respiração agônica, apneia com pulso e PCR | 2–3, 14 (caso 1), questão 1 | Presente; validar com simulação |
+| Explicar porque a compressão e o retorno torácico produzem fluxo | 1, 3, 19 | Presente; inspecionar diagrama futuro |
+| Diferenciar FV, TVSP, AESP e assistolia, incluindo artefatos | 4–5, 18, questões 2–3 | Presente; incluir traçados clínicos licenciados |
+| Identificar ordem relativa de choque, epinefrina e antiarrítmico | 5, questão 4, caso 1 | Presente; revisar doses com protocolo local |
+| Procurar e tratar as causas reversíveis relevantes | 7–8, caso 2 | Parcial; ampliar algoritmos específicos |
+| Conduzir cuidados pós-RCE, oxigenação e perfusão | 9–10, 19–20, casos 3 e C | Presente; ampliar monitorização e prognóstico |
+| Avaliar temperatura, convulsões, EEG e tempo de prognóstico | 9–10, questão 5, vinheta D | Presente; revisão neurológica especializada pendente |
+| Identificar indicações de reperfusão e suporte circulatório | 9, 20–21, questão 6 | Presente; verificar fluxos regionais |
+| Discutir limites da RCP de maneira ética | 21, vinheta B | Parcial; conferir normas nacionais |
+| Integrar PCR gestacional | 8, caso 4 | Presente; revisar implementação obstétrica institucional |
+
+Esta matriz documenta **existência de explicações**, não demonstra aprovação. O teste de autossuficiência precisa ser aplicado com questões independentes e correção por revisores para verificar se cada resposta é justificável usando apenas a apostila; sempre que uma resposta exigir conhecimento não ensinado, enriquecer a seção correspondente e repetir o teste.
+
+### Perguntas rápidas para autoavaliação oral
+
+**Por que não devo interromper compressões por 30 segundos para palpar pulso?** Porque o pulso é difícil de avaliar durante baixo fluxo, e a parada das compressões reduz rapidamente pressão de perfusão coronariana, comprometendo probabilidade de sucesso. O limite de aproximadamente dez segundos minimiza essa perda.
+
+**Por que o monitor pode mostrar um ritmo “normal” durante AESP?** Porque a despolarização elétrica pode ocorrer sem força contrátil ou sem enchimento suficiente para gerar débito palpável. É necessário confirmar circulação.
+
+**Por que não transfiro automaticamente todas as PCRs com ECPR disponível a longa distância?** Porque resultado depende de tempo sem fluxo, RCP de qualidade, etiologia, seleção e logística. Transporte pode deteriorar assistência, e centro especializado precisa aceitar e executar terapêutica em janela efetiva.
+
+**Por que febre após RCE merece tratamento ativo?** Porque hipertermia aumenta demandas metabólicas e pode agravar lesão cerebral em tecido vulnerável. As recomendações de 2025 continuam exigindo controle deliberado de temperatura no grupo indicado.
+
+**Por que um paciente sedado sem reação ainda não pode ser declarado neurologicamente sem recuperação?** Porque sedativos, hipotermia e instabilidade interferem em exame e testes; prognóstico exige momento adequado, exclusão de confundidores e avaliação multimodal.
+
+
+## 23. Pendências para liberação — NÃO CERTIFICADO
 
 **COMPLEMENTAR NA PRÓXIMA REVISÃO:** ampliar aprofundamento mecanístico e interpretações concretas de monitorização, administração segura de medicações e particularidades do suporte avançado por perfis; detalhar abordagem das causas reversíveis especiais com fontes respectivas; adicionar subcapítulos completos sobre bradi/taquiarritmias peri-parada sem duplicar eletrocardiografia, ECPR e critérios de transferência; expandir casuística e comentários até que o aluno responda questões variadas usando apenas este documento.
 
