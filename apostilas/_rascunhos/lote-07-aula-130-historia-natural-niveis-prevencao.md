@@ -374,6 +374,55 @@ Uma campanha antitabaco tem processos de fiscalização, apoio à cessação e e
 **Conduta:** decisão compartilhada e documentação dos riscos, manutenção de cuidados úteis e plano de retorno para sintomas novos.
 **Por que importa:** não realizar exame também pode ser cuidado baseado em evidências quando o benefício líquido é desfavorável.
 
+
+### Caso 5 — gradiente social e asma em território vulnerável
+**Apresentação:** UBS registra frequentes consultas por crises asmáticas em crianças de uma microárea próxima a corredor de tráfego, com moradias úmidas e queima de lixo; em outro bairro de renda alta as visitas por crise são menores. Gestor propõe aumentar apenas número de nebulizações no pronto atendimento.  
+**Hipóteses:** carga ambiental e social de exacerbações asmáticas, com barreiras de diagnóstico e cuidado; associação geográfica que necessita investigação causal e vigilância.  
+**Raciocínio:** crise já instalada exige tratamento clínico, mas prevenção primordial envolve reduzir exposição estrutural (poluição, moradia) e prevenção primária reduzir riscos em suscetíveis. O acesso a controlador, técnica inalatória e plano de ação pode reduzir exacerbações em quem já tem doença; é parte de controle/terciária dependendo do alvo. A diferença entre bairros não demonstra por si só qual exposição causou cada crise.  
+**Exames/dados:** curva temporal de atendimentos, perfil de idade, padrões de diagnóstico, adesão e técnica, mapas de umidade/poluição com privacidade, participação de famílias, registro de hospitalização/uso de UTI.  
+**Conduta:** cuidado clínico para cada criança + articulação intersetorial e comunitária para ambiente seguro, qualidade do ar e moradia; metas de redução de exposição, crises e iniquidade de acesso.  
+**Por que importa:** ensina que prevenção não é apenas "mais atendimento" e que o território influencia o curso da doença.
+
+### Caso 6 — prevenção secundária do AVC versus terciária no modelo clássico
+**Apresentação:** homem de 64 anos após AVC isquêmico apresenta hemiparesia leve e disfagia, precisa de reabilitação; médico também prescreve controle pressórico, estatina e outras medidas indicadas para evitar novo evento. Questão pede o nível de prevenção da fisioterapia e depois pergunta pela expressão cardiológica "prevenção secundária do AVC".  
+**Hipóteses/conceitos:** duas classificações com **referentes diferentes**.  
+**Raciocínio:** reabilitação de sequela estabelecida é **terciária no modelo clássico**; estratégia para evitar **recorrência de AVC** é frequentemente chamada secundária em neurologia/cardiologia. A prescrição pode ser a mesma em ambos discursos; o rótulo muda porque o desfecho alvo muda.  
+**Exames/dados:** avaliar déficits funcionais, deglutição, controle de fatores de risco e adesão; necessidade de equipe multiprofissional.  
+**Conduta:** reabilitação, prevenção de broncoaspiração, manejo de risco cardiovascular e coordenação da APS com hospital.  
+**Por que importa:** evita perder questão por supor que só existe uma definição universal de "prevenção secundária".
+
+### Caso 7 — incidência baixa não significa programa preventivo ineficaz
+**Apresentação:** município introduz ação intersetorial de saneamento. No mês seguinte os casos notificados de diarreia diminuem, mas muitos bairros têm mudança na disponibilidade de testes e houve período seco. Prefeito atribui 100% da queda às obras.  
+**Hipóteses:** efeito benéfico possível de saneamento, com confusão temporal/viés de detecção e sazonalidade.  
+**Raciocínio:** contagem bruta de casos depende de tamanho populacional, definição, vigilância/diagnóstico e época do ano. É necessário comparar taxas por população, qualidade da água, internações e outros desfechos, com tempo e grupos comparadores adequados.  
+**Exames/dados:** séries históricas estratificadas, população, cobertura/qualidade de água, notificações, hospitalizações e adesão ao monitoramento, território com implementação gradual quando possível.  
+**Conduta:** manter ações tecnicamente justificadas enquanto avalia impacto com metodologia, ajustando vigilância e buscando comunidades excluídas.  
+**Por que importa:** separa monitoramento de atividade e inferência causal.
+
+### Caso 8 — diabetes, risco e múltiplos níveis no mesmo paciente
+**Apresentação:** mulher de 57 anos vive com DM2 há 11 anos, hipertensão, albuminúria incipiente e neuropatia periférica com perda de sensibilidade. No mesmo atendimento, pede orientações para netos adolescentes com sedentarismo, revisão de medicações e curativo de fissura do pé.  
+**Hipóteses/conceitos:** a classificação preventiva depende do **alvo específico**, não da pessoa ou da especialidade.  
+**Raciocínio:** ambiente escolar/urbano que impeça instalação de sedentarismo na geração jovem pode ser primordial; aconselhamento dos netos antes da doença, primário; rastreio apropriado de retinopatia/nefropatia inicial, secundário **das complicações**; prevenção de úlcera neuropática e reabilitação de limitação em diabetes estabelecido, terciário; reduzir medicações sem indicação, quaternário.  
+**Exames/dados:** HbA1c/PA/renal conforme cuidado de DM, avaliação sensibilidade/perfusão dos pés, exame ocular e revisão da farmacoterapia; não transformar todo exame em rastreio de doença inexistente.  
+**Conduta:** cuidado longitudinal centrado em riscos, tratamento de neuropatia/lesão, prevenção de úlcera e reavaliação compartilhada de intervenções sem benefício; apoio escolar/territorial em paralelo.  
+**Por que importa:** mostra por que **um único paciente pode receber todos os níveis** de prevenção na mesma semana.
+
+### Caso 9 — transição epidemiológica no território
+**Apresentação:** município de 40 mil habitantes apresenta aumento de idosos, pressão crescente por tratamento de DM e insuficiência cardíaca, mas também epidemias de dengue e elevado número de mortes por acidentes de motocicleta. A gestão decide extinguir vigilância de arboviroses para "investir só em DCNT porque estamos em transição epidemiológica".  
+**Hipóteses/conceitos:** convivência de doenças crônicas, infecciosas e causas externas — transição não implica substituição completa das causas anteriores.  
+**Raciocínio:** envelhecimento modifica a prevalência de DCNT, mas epidemiologia local pode incluir riscos simultâneos e emergentes. A decisão exige dados por idade, território, gravidade, custos de oportunidade e capacidade de intervenção.  
+**Exames/dados:** séries de mortalidade/idade ajustada, incidência de dengue, hospitalizações por DCNT, acidentes, vulnerabilidades socioambientais.  
+**Conduta:** planejamento integrado de APS, vigilância, urgência, mobilidade e reabilitação; priorização transparente sem supressão de programas essenciais.  
+**Por que importa:** transforma "transição epidemiológica" de expressão decorada em instrumento de planejamento.
+
+### Caso 10 — política antitabaco: benefício pequeno por pessoa, grande na comunidade
+**Apresentação:** gestores querem concentrar toda verba de prevenção do tabagismo nos cem fumantes de maior carga tabágica. Uma equipe argumenta que regular ambientes e publicidade para milhares de adolescentes não fumantes pode evitar mais novos fumantes ao longo do tempo.  
+**Hipóteses/conceitos:** estratégia de alto risco versus estratégia populacional, prevenção primordial versus primária.  
+**Raciocínio:** atuar em quem já fuma é importante, mas impedir instalação de hábito em grande população pode reduzir eventos totais de forma relevante. O **paradoxo da prevenção** afirma que benefício individual modesto pode somar benefício populacional grande.  
+**Exames/dados:** prevalência do tabagismo por idade, início de uso, exposição passiva, taxas de cessação, custos e impactos sociais, longitudinalmente.  
+**Conduta:** combinar política populacional com acesso ao tratamento de cessação, monitorar desigualdades e efeitos não intencionais.  
+**Por que importa:** evita falso dilema e mostra como níveis de prevenção se complementam.
+
 ## 14. Oito questões autorais com comentários
 
 ### Questão 1 — história natural
@@ -440,6 +489,72 @@ C. Prevenção secundária de AVC, no sentido de prevenir recorrência após eve
 D. Prevenção primordial por evitar exposição social inicial.
 **Gabarito C.** Especialidades usam “prevenção secundária” para evitar recorrência de evento já ocorrido, o que não é exatamente o mesmo recorte temporal de Leavell e Clark. **A** não é triagem. **B** apaga diferença terminológica. **D** não corresponde ao cenário. **Revisão:** explicitar doença-alvo e o vocabulário da pergunta.
 
+
+### Questão 9 — história natural não determinista
+O modelo clássico da história natural da doença é corretamente entendido como:
+A. Evolução inevitável da exposição à morte.  
+B. Relação de estados e transições probabilísticas, cujo curso pode ser modificado por fatores/intervenções.  
+C. Sequência exclusiva das doenças infecciosas.  
+D. Calendário sem influência de ambiente ou tratamento.
+**Gabarito B.** Exposição não determina desfecho em toda pessoa. **A:** ignora probabilidades/remissão. **C:** aplica-se também a doenças crônicas, com limites. **D:** ignora mecanismo e intervenções. **Mini-revisão:** suscetibilidade e risco não são destino.
+
+### Questão 10 — paradoxo da prevenção
+Em população com muito mais indivíduos de risco intermediário que alto risco, pode ocorrer:
+A. Número absoluto de eventos maior entre risco intermediário, apesar de menor risco individual.  
+B. Necessariamente todos os eventos no grupo de alto risco.  
+C. Ausência de benefício de qualquer política populacional.  
+D. Impossibilidade de coexistirem abordagens populacional e individual.
+**Gabarito A.** Tamanho populacional importa no total de casos. **B:** não há essa regra. **C:** intervenções populacionais podem mudar distribuição. **D:** são complementares. **Mini-revisão:** não confundir maior taxa de risco e maior número de eventos.
+
+### Questão 11 — gradiente social
+A Lei 8.080/1990, art. 3º, reconhece determinantes como:
+A. Apenas idade e composição genética.  
+B. Exclusivamente exames de laboratório.  
+C. Moradia, saneamento, renda, trabalho, educação e outros fatores sociais/ambientais.  
+D. Apenas número de consultas hospitalares.
+**Gabarito C.** A lei reconhece múltiplos determinantes e condicionantes. **A/B/D:** reducionistas. **Mini-revisão:** saúde reflete organização social/econômica e condições materiais.
+
+### Questão 12 — nível de atenção versus nível de prevenção
+Vacinação de profissional de saúde contra hepatite B realizada em hospital universitário é:
+A. Prevenção terciária porque ocorreu em hospital terciário.  
+B. Prevenção primária para hepatite B, apesar do nível de complexidade do serviço.  
+C. Sempre prevenção secundária porque o profissional é adulto.  
+D. Prevenção quaternária pelo local da aplicação.
+**Gabarito B.** A vacina busca evitar doença. **A/C/D:** confundem local/idade com alvo. **Mini-revisão:** **nível de atenção ≠ nível de prevenção**.
+
+### Questão 13 — "prevenção secundária" cardiovascular
+Paciente após AVC inicia fisioterapia e prevenção de recorrência. No modelo clássico, reabilitação de sequela é:
+A. Primordial.  
+B. Exclusivamente primária.  
+C. Sempre secundária independentemente da definição.  
+D. Terciária, enquanto evitar novo AVC costuma ser chamado secundária em diretrizes cardiovasculares.
+**Gabarito D.** Alvos diferentes explicam o nome. **A/B:** não correspondem. **C:** ignora terminologia. **Mini-revisão:** especificar doença/complicação e referencial.
+
+### Questão 14 — avaliando saneamento
+Uma cidade observou queda de diarreia logo após obra de saneamento. Qual interpretação científica?
+A. A queda isolada prova causalidade 100%.  
+B. Saneamento nunca altera diarreia.  
+C. Investigar sazonalidade, detecção, população, exposição e comparação antes de atribuir todo efeito à intervenção.  
+D. Usar apenas número de palestras como desfecho.
+**Gabarito C.** Efeito plausível deve ser avaliado com métodos adequados. **A:** confundimento temporal. **B:** nega mecanismo estabelecido. **D:** produto não é desfecho. **Mini-revisão:** avaliação de programa ≠ contagem de atividades.
+
+### Questão 15 — transição epidemiológica
+Município envelhece, registra mais DCNT, mas segue com dengue e mortalidade por acidentes. Conclusão mais adequada:
+A. Transição pode coexistir com carga infecciosa e causas externas; planejar múltiplas respostas por território.  
+B. Epidemias necessariamente desapareceram.  
+C. Mortalidade por acidente deixa de ser agravo de saúde pública.  
+D. Vigilância epidemiológica deve ser extinta.
+**Gabarito A.** Não existe substituição completa obrigatória. **B/C/D:** erros de planejamento. **Mini-revisão:** carga múltipla é marca de desigualdade e heterogeneidade.
+
+### Questão 16 — prevenção em diabetes e complicações
+Pessoa com DM2 estabelecido realiza avaliação para detectar retinopatia ainda assintomática e recebe reabilitação de neuropatia incapacitante. É correto:
+A. Tudo é primário porque ocorreu na UBS.  
+B. Retinopatia é sempre terciária porque há DM2.  
+C. Reabilitação é apenas secundária porque há exames.  
+D. Detecção precoce da **complicação** é secundária dessa complicação, e reabilitação de dano instalado é terciária.
+**Gabarito D.** O alvo determina classificação. **A/B/C:** confundem doença principal, local e fase da complicação. **Mini-revisão:** coexistência de níveis no mesmo paciente.
+
+
 ## 15. Pulo do Gato
 
 - A história natural **não** supõe progressão inevitável da exposição à morte.
@@ -486,9 +601,54 @@ A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais d
 - [x] Fontes primárias e comparação parcial do Drive explícitas.
 - [ ] Livro comparativo equivalente no Drive e leitura de fonte brasileira acadêmica abrangente em medicina preventiva.
 - [ ] Ampliar políticas intersetoriais, linha de cuidado baseada em dados brasileiros, conceitos de transição epidemiológica e avaliação de programas preventivos.
-- [ ] Desenvolver volume premium de ≥60 mil caracteres didáticos úteis **somente** com aprofundamento novo; não reproduzir a aula 125.
+- [x] Superado o piso de **60 mil caracteres brutos** com aprofundamento novo em 15/10/2026; **não** equivale a 60 mil caracteres didáticos líquidos validados nem a certificação; manter a diferenciação frente à aula 125.
 - [ ] Selecionar figuras originais e imagens clínicas reais, verificar licença e aprovação.
 - [ ] Revisão médico-editorial e auditagem de bibliografia com edição do livro-texto histórico.
 - [ ] Validação de integração em HTML e experiência de leitura desktop/PWA.
 
 **Parecer:** rascunho de Medicina Preventiva com escopo próprio e relação explícita com aula 125, NÃO PUBLICADO.
+
+## 14A. Matriz de competências — curso próprio distinto da aula 125
+
+| Competência | Capítulo base e ampliação | Exemplo | Questão |
+|---|---|---|---|
+| Desenhar história natural com ramificações | 1, 2.5–2.8 | Tuberculose/DRC | 9 |
+| Causalidade necessária/componente | 2.6 | HPV, tabaco | 9 |
+| Evitar confundir transmissibilidade/incubação | 2.3–2.7 | Sarampo e exposições crônicas | discussão clínica |
+| Diferenciar primordial e primária | 3, 3.1–3.5, 4 | Casos 5 e 10 | 10 |
+| Identificar determinantes sociais e equidade | 3.3–3.5, 11 | Caso 5 | 11 |
+| Separar níveis de atenção e prevenção | 8, 11.1 | Caso 6 | 12 |
+| Explicar secundária cardiovascular e terciária clássica | 6, 11.2 | Caso 6 | 13 |
+| Avaliar política intersetorial | 3.5, 11.8, 12 | Caso 7 | 14 |
+| Aplicar transições e carga múltipla | 11.5 | Caso 9 | 15 |
+| Classificar múltiplos níveis no mesmo paciente | 9.4, 11.7 | Caso 8 | 16 |
+| Coordenar alta e continuidade | 11.3–11.4 | Caso 6 | 13 |
+
+## 17A. Referências e comparação atualizadas nesta rodada
+
+**Etapa zero:** a equipe abriu e releu “SUS.pdf” (2.670 caracteres extraídos) e “Estudos Epidemiológicos.pdf” (3.081) do Drive em 15/10/2026, com autoria institucional do Estratégia MED **não identificada**. São resumos de princípios do SUS e desenhos de estudos, não livro abrangente sobre história natural e prevenção. O rascunho LURIA existente foi auditado antes de inserir mecanismos causais, prevenção populacional, território, transição epidemiológica e linha de cuidado. Não foram reproduzidos textos/ilustrações dos comparativos. A aula 125 foi usada como fronteira: manter rastreamentos, matemática de testes e políticas de detecção específicas **lá**, não repetir aqui.
+
+- Brasil. **Lei nº 8.080, de 19 de setembro de 1990**, art. 3º, com redação da Lei 12.864/2013, determinantes/condicionantes da saúde. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+- Brasil. **Lei nº 8.142, de 28 de dezembro de 1990**, participação da comunidade e transferências de recursos na saúde. https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
+- OMS. **World report on social determinants of health equity.** Publicado 06/05/2025. https://www.who.int/publications/i/item/9789240107588
+- OMS. **Social determinants of health equity — World Report 2025**, página informativa pública. https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity
+- Leavell HR, Clark EG. *Preventive Medicine for the Doctor in His Community*. Referência histórica; edição exata e texto integral ainda precisam de checagem bibliográfica antes de citar páginas específicas.
+- Geoffrey Rose. *The Strategy of Preventive Medicine*. Referência de conceito de prevenção populacional/paradoxo preventivo; conferir edição e páginas exatas antes da publicação.
+
+**Licença de publicação:** o relatório OMS completo usa condições de licença com restrição de uso comercial para reprodução/adaptação; a LURIA **não copiou imagens, gráficos ou tabelas**, apenas usou conceitos e dados de apresentação pública com atribuição.
+
+## 18A. Auditoria após continuação em outubro de 2026
+
+- [x] Ampliados história natural probabilística, remissão/recorrência e temporalidade causal.
+- [x] Causa necessária/componente, fatores estruturais e curso de vida.
+- [x] Estratégia populacional versus alto risco, paradoxo da prevenção, políticas ambientais.
+- [x] Determinantes sociais, equidade territorial e transições demográfica/epidemiológica/nutricional.
+- [x] Diferenciados rigorosamente nível de atenção e nível de prevenção, incluindo prevenção secundária cardiovascular.
+- [x] Construída linha de cuidado, modelo lógico e avaliação de programas.
+- [x] Seis casos novos (5–10), oito questões novas (9–16) e matriz de autossuficiência.
+- [ ] Confirmar relevância/edições completas dos livros clássicos e exemplos oficiais brasileiros com revisão acadêmica independente.
+- [ ] Avaliar fluidez e repetição entre seções originalmente curtas e ampliação, sem converter tudo em blocos extensos para contar caracteres.
+- [ ] Desenvolver diagramas **originais** da história natural/risco populacional/linha de cuidado; verificar licença comercial e aprovar no fluxo de imagens Admin.
+- [ ] Fazer teste independente de questões e de autossuficiência integral; integrar HTML e validar PWA após aprovação.
+**Situação: rascunho com ampliação de conteúdo próprio, NÃO certificado/público.**
+
