@@ -727,3 +727,108 @@ Os exercícios são inéditos, para ENAMED e residência, com situações fictí
 
 **Mini-revisão:** PAC é processo; DAV registra vontade futura.
 
+### Questão 6 — Ortotanásia e eutanásia
+
+**Enunciado:** Paciente em fase terminal tem tratamento desproporcional suspenso com analgesia e suporte familiar mantidos. Como classificar?
+
+**A)** Eutanásia obrigatória.
+
+**B)** Ortotanásia, se respeitados critérios éticos e vontade.
+
+**C)** Abandono de cuidado sempre.
+
+**D)** Distanásia por definição.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A finalidade não é causar morte.
+- **Alternativa B:** Cuidado integral e proporcional se mantêm.
+- **Alternativa C:** Há assistência ativa.
+- **Alternativa D:** Distanásia é obstinação prolongadora.
+
+**Mini-revisão:** CFM 1.805/2006 fundamenta decisão proporcional documentada.
+
+### Questão 7 — Ordem de não reanimar
+
+**Enunciado:** Paciente com plano de não realizar RCP desenvolve retenção urinária dolorosa. A conduta correta é:
+
+**A)** Não avaliar porque há ONR.
+
+**B)** Tratar retenção e dor normalmente conforme objetivos.
+
+**C)** Suspender automaticamente todos os antibióticos.
+
+**D)** Ignorar sofrimento até morte.
+
+**Gabarito: B.**
+
+- **Alternativa A:** ONR se refere à RCP.
+- **Alternativa B:** Conforto é cuidado ativo.
+- **Alternativa C:** São intervenções independentes.
+- **Alternativa D:** Seria abandono.
+
+**Mini-revisão:** Decisão específica não é proibição geral de tratamento.
+
+### Questão 8 — SPIKES — percepção
+
+**Enunciado:** Qual pergunta corresponde à etapa P de SPIKES?
+
+**A)** O que você entendeu dos resultados até aqui?
+
+**B)** Assine a recusa antes de falar.
+
+**C)** O senhor tem seis meses exatos.
+
+**D)** Vamos decidir sem ouvir.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Explora conhecimento e expectativas.
+- **Alternativa B:** Não investiga percepção.
+- **Alternativa C:** É prognóstico sem fundamento.
+- **Alternativa D:** Não é comunicação centrada na pessoa.
+
+**Mini-revisão:** Perception precede fornecer informação nova.
+
+### Questão 9 — SPIKES — reação emocional
+
+**Enunciado:** Paciente começa a chorar após notícia de recidiva. Qual atitude inicial é adequada?
+
+**A)** Falar mais rápido para terminar.
+
+**B)** Pausar, reconhecer emoção e ouvir.
+
+**C)** Mudar de assunto e sair.
+
+**D)** Exigir atitude positiva.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Impede processamento e validação.
+- **Alternativa B:** Acolhimento e silêncio são intervenções.
+- **Alternativa C:** Aumenta abandono.
+- **Alternativa D:** Pode invalidar sofrimento.
+
+**Mini-revisão:** Etapa E requer empatia genuína, não só fórmula.
+
+### Questão 10 — NURSE — explorar
+
+**Enunciado:** Qual alternativa representa E (Explore) do NURSE?
+
+**A)** O que mais preocupa você agora?
+
+**B)** Não pense nisso.
+
+**C)** Eu garanto que ficará bem.
+
+**D)** Tente parar de chorar.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Pergunta aberta que explora emoção/necessidade.
+- **Alternativa B:** Invalida reação.
+- **Alternativa C:** Promessa injustificada.
+- **Alternativa D:** Impõe controle emocional.
+
+**Mini-revisão:** A resposta empática é adaptada ao contexto.
+
