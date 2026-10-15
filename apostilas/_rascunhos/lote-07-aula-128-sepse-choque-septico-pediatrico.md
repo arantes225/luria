@@ -203,6 +203,53 @@ Também **não há recomendação para iniciar vasoativos necessariamente antes 
 ### 6.5. Hidrocortisona e adjuvantes
 SSC 2026 sugere **não** usar hidrocortisona IV rotineiramente se estabilidade é restaurada com fluidos e vasoativos. Em choque refratário, a evidência não permite regra única para corticoide; insuficiência adrenal conhecida/suspeita exige consideração específica de dose de estresse. Vitamina C, tiamina, imunoglobulina IV e outros adjuvantes não devem ser utilizados rotineiramente apenas para “tratar sepse”, salvo indicações próprias como deficiência documentada.
 
+
+### 6.6. Fluidotolerância e capacidade de UTI são critérios da decisão
+
+A recomendação pediátrica de 2026 distingue **local com terapia intensiva disponível** de local sem esse recurso porque a possibilidade de tratar consequências da expansão volêmica muda o balanço risco-benefício. Em local com suporte intensivo, choque persistente pode justificar bolus seriados de **10–20 mL/kg**, até **40–60 mL/kg na primeira hora** em casos apropriados. Isso é **teto condicional**, não volume obrigatório. Em hospital **sem UTI**, sepse sem hipotensão não deve receber bolus rotineiros pela diretriz; quando há choque **hipotensivo**, ela admite até **40 mL/kg** em bolus de 10–20 mL/kg ao longo da primeira hora, com reavaliação contínua.
+
+A criança que teve recuperação perfusional após um primeiro bolus não recebe os demais apenas para "atingir os 60". A criança que desenvolveu estertores, piora respiratória ou sinais de insuficiência cardíaca precisa interrupção e nova estratégia. **Quem determina o próximo bolus é a resposta e tolerância clínica, não a calculadora de volume.**
+
+| Situação | Interpretação | Ação conceitual |
+|---|---|---|
+| Choque + UTI disponível; melhora perfusional após primeiro bolus | Resposta favorável, sem necessidade de chegar ao teto | Reavaliar e manter vigilância |
+| Choque + UTI; perfusão ruim sem congestão | Pode haver necessidade de etapa adicional | Equipe define após reexame e plano de vasoativo |
+| Choque + UTI; hepatomegalia/hipoxemia após expansão | Sinais de possível intolerância | Interromper bolus, procurar disfunção cardíaca/congestão |
+| Sem UTI; sepse e ausência de hipotensão | Evidência contra bolus de rotina | Manutenção, tratamento e transferência/monitorização apropriados |
+| Sem UTI; choque hipotensivo | Cenário específico de bolus cautelosos | Reavaliar cada etapa e organizar suporte/transferência |
+
+### 6.7. Por que a pressão sozinha é um objetivo incompleto?
+
+Uma pressão arterial normal pode coexistir com perfusão regional insuficiente. A SSC 2026 recomenda monitorar **frequência cardíaca, PA, TEC, temperatura das extremidades, qualidade dos pulsos, nível de consciência e diurese**. Para a meta de pressão arterial média por idade, a evidência foi insuficiente para recomendar universalmente o **percentil 5 versus o 50**, por isso não estabelecer "PAM ≥65 para todas as crianças". A saturação venosa central de oxigênio **≥70%**, quando há acesso central e indicação de medir, é alvo *sugerido* com certeza muito baixa; não obriga instalar cateter só para gerar um número.
+
+Exemplo: criança de 4 anos com PA aparentemente aceitável, mas extremidades frias, TEC 6 s e confusão segue com possível choque. A ausência de hipotensão pode representar resposta compensatória ainda em curso. O paciente que apresenta queda de diurese após analgesia/sedação precisa ser reavaliado considerando medicamentos, volume, rim e perfusão.
+
+### 6.8. Vasoativo e via de acesso sem dogmatismo
+
+A SSC 2026 **não definiu escolha universal entre epinefrina e norepinefrina** como primeiro vasoativo pediátrico; também **não fixou se se deve começar antes ou depois de 40 mL/kg** por insuficiência de evidência. A decisão integra padrão de vasoplegia/disfunção cardíaca, avaliação clínica/ecográfica, possibilidade de monitorização e experiência da equipe.
+
+Quando necessário, a diretriz sugere iniciar vasoativo por **acesso venoso periférico apropriado**, em vez de atrasar início até cateter central. Isso depende de bomba infusora, concentração institucional, inspeção do acesso e capacidade de detectar/gerir extravasamento; é ponte supervisionada, não autorização para infusão improvisada.
+
+Para choque em altas doses de catecolaminas, a diretriz sugere discutir **vasopressina adicional ou maior titulação de catecolamina**, sem estabelecer uma sequência única. Adicionar inodilatador a disfunção cardíaca, angiotensina II ou azul de metileno em refratariedade ainda possui lacunas de evidência no pediátrico; não importar protocolos de adultos como regras.
+
+### 6.9. Escolha de fluido e condições especiais
+
+Para ressuscitação inicial, SSC 2026 sugere **cristaloides em vez de albumina**. Em choque que requer bolus, sugere soluções **balanceadas/tamponadas** sobre soro fisiológico 0,9%, mas SF 0,9% permanece opção adequada quando balanceados não estão disponíveis ou quando há indicação clínica específica (por exemplo, alguns distúrbios de sódio ou preocupação com hipertensão intracraniana). A segurança depende de composição, compatibilidade com infusões e disponibilidade.
+
+Em **miocardite ou cardiopatia**, má tolerância pode aparecer cedo. Em **dengue grave**, fases de extravasamento e reabsorção têm algoritmo próprio; a classificação de gravidade e balanço devem seguir manual brasileiro e avaliação clínica. Em **desnutrição grave, queimaduras ou doença renal**, não usar automaticamente os mesmos volumes e intervalos da criança previamente saudável. Em **neonatos**, utilizar referência neonatal específica, respeitando idade pós-concepcional e fatores maternos.
+
+### 6.10. Avaliar criticamente "terapia de resgate" versus intervenção comprovada
+
+A diretriz 2026 sugere **não usar rotineiramente hidrocortisona** em choque que estabiliza com fluidos e vasoativos. Em choque que permanece instável, evidência é insuficiente para formular recomendação definitiva de rotina; insuficiência adrenal comprovada/suspeita requer atenção específica. Também não recomenda de modo geral suplementação de vitaminas C, B1 ou D para tratar sepse na ausência de deficiência. A decisão sobre intubação em choque refratário sem falência respiratória tem incerteza; uma intervenção que altera ventilação e retorno venoso pode precipitar colapso, exigindo planejamento avançado.
+
+**Segurança na oxigenação:** a SSC 2026 publicou uma *sugestão condicional* de saturação-alvo mais conservadora após ressuscitação em determinado contexto de sepse, comparada a oxigenação liberal, e não uma meta genérica para toda emergência pediátrica. **Não retirar oxigênio de criança instável para perseguir alvo numérico sem avaliação intensiva**, especialmente em apneia, deterioração respiratória, anomalia cardíaca ou lesão cerebral. Protocolos locais e supervisão especializada definem alvo individual.
+
+### 6.11. Controle de foco e de escalonamento são processos separados
+
+Em criança com cultura positiva e empiema volumoso, antibiótico ativo pode não bastar se pus persiste em cavidade pleural; equipe deve avaliar drenagem. Em urossepses com obstrução do trato urinário, avaliar descompressão; em apendicite perfurada, controle cirúrgico/intervencionista; em cateter confirmado como fonte, retirada após acesso alternativo adequado e avaliação do agente.
+
+**Descalonamento** significa reduzir espectro/duração quando microbiologia, foco, gravidade e evolução permitem, **não deixar de tratar choque verdadeiro**. A escolha definitiva de antimicrobiano depende do antibiograma institucional, perfil do hospedeiro, função renal, foco e dose pediátrica rigorosamente calculada.
+
 ## 7. O foco importa tanto quanto o antibiótico
 
 ### 7.1. Pneumonia com complicação pleural
