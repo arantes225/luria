@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 4,
+  "version": 5,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "PRE-PUBLICAÇÃO — clínica e apresentação ainda sem certificação; não publicar",
+  "status": "PRE-PUBLICAÇÃO — casos e questões 1–2 reorganizados; NÃO CERTIFICADO",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -73,7 +73,7 @@
       "question_count": 15,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
+      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
       "json_visible_estimate": 75595,
       "json_table_count": 8
     },
@@ -85,10 +85,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "a856be1009824b12ff71e8d10458a670f05173f2",
+      "consolidated_sha": "a62b5d93cdaa0c7b745fe423172f9a7ffde20c57",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 100806,
-      "consolidated_approximate_plain_characters": 96512,
+      "consolidated_raw_characters": 105212,
+      "consolidated_approximate_plain_characters": 100783,
       "chapter_count": 9,
       "chapters": [
         {
@@ -132,8 +132,8 @@
       "question_count": 22,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
-      "json_visible_estimate": 96512,
+      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "json_visible_estimate": 100783,
       "json_table_count": 9
     },
     {
@@ -144,10 +144,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
       "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
-      "consolidated_sha": "04e1b83b6fae601265c61b4d8b7dfd864892b90f",
+      "consolidated_sha": "131883418832ee6f00c011ae35244ee0181d9eaa",
       "source_raw_characters": 73020,
-      "consolidated_raw_characters": 99173,
-      "consolidated_approximate_plain_characters": 94789,
+      "consolidated_raw_characters": 103938,
+      "consolidated_approximate_plain_characters": 99415,
       "chapter_count": 10,
       "chapters": [
         {
@@ -195,8 +195,8 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
-      "json_visible_estimate": 94789,
+      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "json_visible_estimate": 99415,
       "json_table_count": 13
     },
     {
@@ -207,10 +207,10 @@
       "source_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
       "source_sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
-      "consolidated_sha": "a6983b4b82253037c398b383bc4b1d71eeb75a4d",
+      "consolidated_sha": "d9ec66eec1ec43ea8bdb354f50e7f08a8d751023",
       "source_raw_characters": 76752,
-      "consolidated_raw_characters": 83616,
-      "consolidated_approximate_plain_characters": 79676,
+      "consolidated_raw_characters": 88830,
+      "consolidated_approximate_plain_characters": 84740,
       "chapter_count": 10,
       "chapters": [
         {
@@ -258,8 +258,8 @@
       "question_count": 21,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
-      "json_visible_estimate": 79676,
+      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "json_visible_estimate": 84740,
       "json_table_count": 10
     },
     {
@@ -270,10 +270,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "eab6d581bb9aa2fc794ec23813213718956d798a",
+      "consolidated_sha": "4073b87f36f8e6426233a052fe85a73464a4e746",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 101570,
-      "consolidated_approximate_plain_characters": 96822,
+      "consolidated_raw_characters": 106987,
+      "consolidated_approximate_plain_characters": 102106,
       "chapter_count": 9,
       "chapters": [
         {
@@ -317,16 +317,19 @@
       "question_count": 21,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "auditoria clínica detalhada, localização editorial de casos 1–2 em quatro livros, imagens licenciadas e aprovadas, dry-run do gerador, testes desktop/PWA",
-      "json_visible_estimate": 96822,
+      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "json_visible_estimate": 102106,
       "json_table_count": 13
     }
   ],
   "last_expansion": "2026-10-14",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "058fd61c8676f2dcb7bad71bb6f4b3d9f0018b9a",
+  "input_json_sha": "7c90d9cc31a7e079fb6ce6ecfb5c1c1d0cfab4ba",
   "last_update_scope": [
-    "DPOC: dispositivos pMDI/DPI/SMI, técnica, adesão e decisão pré-escalonamento, seguimento de exacerbação, dois casos e três questões",
-    "Diabetes: DRD por albuminúria/TFGe, comparação SBD/ADA 2026, retinopatia e pé diabético, dois casos e três questões"
-  ]
+    "Removidos dos capítulos clínicos de DPOC, Diabetes, PAC e TB os 16 parágrafos compactos de Casos 1–2 e Questões 1–2",
+    "Reescritos os oito casos iniciais e oito questões iniciais, com raciocínio/exames/conduta e comentários individualizados",
+    "Casos e questões numerados sem lacunas nas seções finais dos cinco livros; paridade JSON/Markdown verificada",
+    "Validador Node de pré-publicação expandido para identificar duplicação ou deslocamento de casos/questões"
+  ],
+  "last_revision": "2026-10-14"
 }
