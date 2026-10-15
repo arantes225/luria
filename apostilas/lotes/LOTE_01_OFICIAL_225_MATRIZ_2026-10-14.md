@@ -10,7 +10,7 @@ O texto integral de `lead.apostilas.txt` / Prompt Magno foi conferido, assim com
 ## Inventário curricular oficial (temas 001–023)
 | Nº | Área | Tema do cronograma | Situação encontrada | Arquivo principal ou correlato | Lacuna e decisão editorial |
 |---|---|---|---|---|---|
-| 01 | Clínica Médica | Síndromes coronarianas agudas | Rascunho aprofundado | `apostilas/sindromes-coronarianas-agudas/content.json` | 13 seções; ECG/troponina/reperfusão e segurança antitrombótica 2025 |
+| 01 | Clínica Médica | Síndromes coronarianas agudas | Rascunho aprofundado | `apostilas/sindromes-coronarianas-agudas/content.json` | 13 seções; ~94,5 mil caracteres de texto aparente; ECG oclusivo, troponina, GRACE/NSTEMI, reperfusão e farmacoinvasiva, choque e complicações; NÃO certificada |
 | 02 | Cirurgia Geral | Avaliação pré-operatória e risco cirúrgico | Rascunho aprofundado | `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json` | 14 seções; SBC/AHA 2024, risco, drogas e MINS |
 | 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Não há livro próprio identificado | — | Assistência ao RN inclui exame inicial/termorregulação; distinguir reanimação #8 |
 | 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | Apostila existente robusta, auditoria pendente | `apostilas/pre-natal-baixo-risco/index.html` | 33 seções HTML, ~70 mil caracteres aparentes; evitar duplicação de #9, #14 e #19 |
@@ -68,3 +68,35 @@ Todos foram abertos como `content.json`, possuem sumários correspondentes e cin
 **QA documental feito após save:** JSON analisável; 13 índices = 13 seções; IDs únicos; tipos de blocos válidos; zero parágrafos extensos literalmente repetidos na triagem; 115 parágrafos (inclui original e ampliação); ~74,7 mil caracteres de **texto aparente** (extração de blocos) e 90,8 mil caracteres serializados do JSON. A contagem aparente contém enunciados/legendas e **não certifica automaticamente** a meta de 60.000 caracteres didáticos úteis. Nenhuma imagem foi embutida. Foi feita a incorporação das ampliações dentro dos capítulos correspondentes para diminuir risco de colcha de retalhos.
 **Curadoria visual:** `apostilas/lotes/HAS_CANDIDATAS_IMAGENS_2026-10-14.md` registra onze imagens candidatas com URLs de origem, licenças informadas, autores identificados e papel didático. A aprovação de autoria/licença/qualidade e inserção centralizada no Admin estão pendentes. **Não foram adicionadas imagens clínicas.**
 **Gates que impedem publicação:** revisão científica independente de doses e manejo, validação de correspondência texto-questões/casos, auditoria manual de redundâncias semânticas e autossuficiência, conferência final de licenças e acessibilidade das 11 candidatas, testes reais de renderização/capítulos no desktop e PWA, revisão de ligação ao catálogo. **Status: redação aprofundada, não certificada e sem página `index.html`.**
+
+## Continuação do ciclo — Síndromes Coronarianas Agudas aprofundadas
+**Data:** 14/10/2026. **Tema:** 001 do Lote 1 oficial (225 apostilas). **Caminho:** `apostilas/sindromes-coronarianas-agudas/content.json`. **Status:** rascunho editorial isolado, sem `index.html`.
+
+### Etapa zero — fontes comparativas realmente abertas
+Foram reabertos no Google Drive `01 - IAMCSST.pdf` (~11,7 mil caracteres extraídos) e `02 - RESUMO - SCA SEM SUPRA DE ST.pdf` (~9,8 mil). Eles têm didática orientada a ECG, Sgarbossa, localização, ICP/trombólise e scores HEART/GRACE/TIMI, mas simplificam mecanismo de IAM tipo 1 vs 2, estratégia de cateterismo e detalhes de anticoagulantes. Apresentam identificação 'Medicina Livre, venda proibida', **sem comprovação de autoria institucional Estratégia MED**. Foram usados para benchmarking de abrangência, sem cópia de texto/ilustrações/tabelas/questões.
+
+### Referências primárias efetivamente consultadas
+1. **Brasil/MS, Linha de Cuidado do IAM e Protocolo de SCA**: [manejo inicial na UPA](https://linhasdecuidado.saude.gov.br/portal/infarto-agudo-do-miocardio/unidade-de-pronto-atendimento/manejo-inicial/) e [Portaria/linha de cuidado](https://www.gov.br/saude/pt-br/assuntos/pcdt/l/linha-de-cuidado-do-infarto-agudo-do-miocardio-e-o-protocolo-de-sindromes-coronarianas-agudas.pd/view). O portal apresenta estratégias de tempo no SUS; parte das tabelas deriva de protocolos históricos e, quando diverge de evidência moderna, a discrepância deve ser sinalizada, não copiada sem crítica.
+2. **ACC/AHA/ACEP/NAEMSP/SCAI 2025, Guideline for Management of Patients With Acute Coronary Syndromes**, JACC DOI 10.1016/j.jacc.2024.11.009, [documento técnico](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009), doses de antiplquetários (tabela 7), anticoagulantes (tabela 10), NSTE-ACS (seção 6), reperfusão e choque.
+3. **ESC 2023, Guidelines for Management of Acute Coronary Syndromes**, [European Heart Journal](https://academic.oup.com/eurheartj/article/44/38/3720/7243210): estratégia invasiva no NSTE, equivalente posterior, transferência, fibrinólise, farmacoinvasiva, MINOCA e RM.
+4. Atualização contextual de acesso brasileiro à rede de trombolíticos foi publicada pelo MS em 02/09/2026, mas **não** substitui a diretriz clínica de elegibilidade e segurança.
+
+### Lacunas identificadas e preenchimento efetivo
+- **ECG e troponina:** incluídos critérios de supra com limiares por derivação/sexo/idade, IAM posterior e VD, Wellens e de Winter, BRE/Sgarbossa, diferenciais de supra, troponina dinâmica, IAM tipo 1/2, lesão aguda e DRC.
+- **IAM com supra:** adicionados fluxograma ICP × fibrinólise pelo tempo, transferência, TNK por faixa de peso, precauções para idosos, contraindicações, clopidogrel específico da lise, anticoagulação ajustada a idade/rim, critérios de falha de reperfusão e janela de angiografia 2–24 horas. As doses são referências científicas e exigem revisão independente e protocolo antes de prescrição.
+- **SCA sem supra:** risco imediato vs <24h vs internação, GRACE, pré-tratamento P2Y12, anticoagulantes (incluindo risco de usar fondaparinux isoladamente na ICP), MINOCA, SCAD, DRC, casos e questões.
+- **Complicações:** choque cardiogênico e prioridade de revascularização da culpada, complicações mecânicas (músculo papilar, septo, parede livre), TV/FV/bloqueio AV, trombo de VE, pericardite, alta e reabilitação.
+- Integração efetuada **dentro dos capítulos já existentes** e não como novos livros ou páginas isoladas. A nota editorial do corpo foi atualizada para não dizer erroneamente que ainda era apenas um esqueleto inicial.
+
+### QA estrutural e camadas visuais
+Após gravação, verificados: 13 índices correspondentes a 13 seções, IDs únicos, tipos de bloco aceitos pelo esquema, 13 tabelas coerentes na estrutura, 125 parágrafos, ausência de parágrafos longos literalmente idênticos e aproximadamente **94,5 mil caracteres de texto aparente** (não contagem certificadora de caracteres úteis). O arquivo base mantém cinco casos e seis questões na seção formal, **além** de vinhetas e questões adicionais incorporadas aos capítulos para ensino contextual. São estimativas editoriais obtidas da estrutura, não execução do site.
+**Imagens:** `apostilas/lotes/SCA_CANDIDATAS_IMAGENS_2026-10-14.md` contém 12 candidatas, com páginas do Wikimedia Commons, autores/licenças declarados e uso clínico proposto; **zero inseridas** e zero aprovadas. Fazer inspeção visual, verificar licença e qualidade de todos os ECGs, converter WebP e enviar ao Admin.
+
+### Pendências obrigatórias
+- Revisão independente por cardiologia de cada posologia, contraindicação, corte temporal e população especial; checar diretriz brasileira oficial aplicável.
+- Auditoria editorial semântica contra redundância e validação por questões (todas precisam ser resolvíveis pelo próprio livro).
+- Revisão de curadoria visual, aprovação das licenças, tratamento de imagens de pacientes e legibilidade de ST de pequeno desvio.
+- Validação do renderer/site (desktop/PWA) e de desempenho antes da página pública e integração ao catálogo.
+- Reconciliar mudanças da `main` (Codex) antes de integrar qualquer arquivo.
+
+**Conclusão provisória:** foi atingida a meta quantitativa de texto aparente, com aprofundamento temático relevante, mas a apostila **não é certificada**. **Nenhum merge e nenhum deploy.**
