@@ -129,3 +129,185 @@ Prioridade a curvas fluxo-volume pré/pós-broncodilatador e demonstração de m
 ## Portões ainda abertos
 
 Completar fisiopatologia e farmacologia, critérios de infância, asma ocupacional/grave e tabelas de dose com comprovação no PCDT 2026; expandir estudo dos efeitos adversos e algoritmos SUS; incluir imagem licenciada via fila; desenvolver textos suficientes para ~60 mil caracteres úteis; revisar casos e questões contra todos os trechos do capítulo; rodar scripts de auditoria e inspeção HTML/PWA. **Não publicar, não contar como apostila finalizada.**
+
+
+## 13. Fisiopatologia integrada: da lesão epitelial ao aprisionamento de ar
+
+### 13.1 A inflamação começa na interface com o ambiente
+
+A superfície brônquica é uma fronteira dinâmica entre agentes inalados e sistema imune. Ela não é apenas um tubo passivo: epitélio ciliado, muco, junções celulares, células imunes residentes e terminações nervosas interagem para filtrar partículas e coordenar defesa. Em pessoas suscetíveis, vírus respiratórios, aeroalérgenos, partículas de combustão e exposições ocupacionais podem desencadear ativação imune exacerbada. O epitélio libera sinais como IL-33, IL-25 e TSLP, capazes de ativar células linfoides inatas do grupo 2 (ILC2) e respostas adaptativas. O processo facilita recrutamento eosinofílico e hipersecreção de muco em determinados fenótipos.
+
+Em uma pessoa alérgica, células apresentadoras de antígeno favorecem polarização linfocitária, produção de IL-4/IL-13 e diferenciação de linfócitos B com síntese de IgE. A IgE ligada aos receptores de mastócitos pode reconhecer novamente um alérgeno, desencadeando mediadores vasoativos e broncoconstritores. Histamina, leucotrienos e prostaglandinas participam de broncoconstrição, edema e secreção. A resposta tardia perpetua inflamação; por isso, um broncodilatador que relaxa músculo liso **não encerra o processo**.
+
+No fenótipo eosinofílico, IL-5 auxilia maturação e sobrevivência de eosinófilos, que liberam proteínas tóxicas e mediadores inflamatórios. Porém **não é correto ensinar que toda asma decorre apenas de IgE/eosinófilos**. Existem pacientes com baixos marcadores tipo 2, sintomas desencadeados por irritantes, obesidade e diferentes padrões inflamatórios. Os fenótipos podem variar com idade, tratamento, exacerbações e comorbidades. A relevância prática aparece quando se decide se um biológico dirigido a IgE, IL-5 ou IL-4R é plausível.
+
+### 13.2 Resistência das vias aéreas e ventilação heterogênea
+
+O estreitamento resulta de três componentes com velocidades distintas: contração de músculo liso (rápida, reversível em parte com broncodilatador), edema/infiltrado da parede (horas/dias, responde a anti-inflamatórios) e muco/plugging (pode manter obstrução mesmo após relaxamento muscular). Em doença prolongada, há alterações estruturais da parede e do músculo, deposição de matriz subepitelial, neoangiogênese e hiperplasia de células mucosas. Esse **remodelamento** pode contribuir para limitação persistente do fluxo.
+
+A resistência à passagem de ar se eleva significativamente quando o raio do tubo diminui. A conhecida relação física da quarta potência do raio descreve fluxo laminar em tubo rígido e **não reproduz integralmente bronquíolos humanos**, pois as vias aéreas são ramificadas e deformáveis, e o fluxo pode ser turbulento. O uso didático da relação é lembrar que reduções modestas do calibre podem tornar a obstrução marcante.
+
+### 13.3 Por que a expiração sofre mais?
+
+Durante inspiração, a pressão transpulmonar tende a abrir vias aéreas intratorácicas. Na expiração forçada, pressão pleural positiva aumenta compressão dinâmica das vias, sobretudo quando há estreitamento, perda do suporte radial ou aprisionamento. O paciente precisa de mais tempo para esvaziar os pulmões; se a frequência respiratória sobe e não há tempo expiratório suficiente, ocorre **hiperinsuflação dinâmica**, elevação do volume pulmonar ao final da expiração e geração de **PEEP intrínseca (auto-PEEP)**.
+
+A hiperinsuflação aumenta esforço diafragmático, altera mecânica ventilatória e pode reduzir retorno venoso quando grave, favorecendo hipotensão, especialmente durante ventilação com pressão positiva. O paciente pode aparentar estar “ventilando muito” por taquipneia mas trocar pouco ar fresco, porque parte de cada respiração ocorre sobre pulmões já insuflados. Essa é a razão de fisiologia por trás do cuidado com frequência respiratória e tempo expiratório quando há necessidade de ventilação invasiva.
+
+### 13.4 Trocas gasosas na exacerbação
+
+A obstrução é heterogênea, produzindo regiões com ventilação reduzida em relação à perfusão, isto é, desequilíbrio V/Q. Pode ocorrer hipoxemia. Inicialmente, a hiperventilação global tende a reduzir PaCO₂, e o paciente apresenta alcalose respiratória. À medida que o trabalho respiratório aumenta, a retenção de CO₂ pode aparecer. **PaCO₂ “normal” em pessoa exausta, hipoxêmica e taquipneica não deve ser comemorada como recuperação**: pode representar perda da capacidade de hiperventilar e anunciar falência respiratória.
+
+Gasometria não é exame obrigatório de toda crise; é valiosa na deterioração grave, necessidade de ventilação e suspeita de alteração ácido-base. A decisão de encaminhar à UTI pode ser clínica antes de qualquer resultado gasométrico. Hipoxemia também pode ser produzida por pneumonia, embolia, pneumotórax e edema cardiogênico: evitar atribuí-la à asma por ancoragem.
+
+### 13.5 Hiperresponsividade e gatilhos
+
+Hiperresponsividade é resposta broncoconstritora excessiva a estímulos que provocariam pouco efeito em outros indivíduos. Exercício, riso, ar frio, alérgenos, vírus e irritantes podem desencadear sintomas, mas a presença de “gatilho” não prova diagnóstico. O trabalhador exposto a isocianatos com sintomas ao longo do turno e melhora nas férias exige investigação ocupacional; a criança que chia somente com infecções virais no segundo ano de vida não deve ser rotulada com asma permanente por uma única crise.
+
+**Pulo do Gato:** diferenciar a pergunta “o que contraiu o brônquio hoje?” da pergunta “por que este paciente tem risco de novas crises?”. A primeira leva ao alívio; a segunda orienta terapia anti-inflamatória, exposição e seguimento.
+
+## 14. Epidemiologia, fatores de risco e apresentação heterogênea
+
+### 14.1 Importância clínica e carga de doença
+
+A asma ocorre em todas as idades e constitui causa frequente de sintomas, consultas de urgência, afastamento escolar/laboral e internações potencialmente evitáveis. A magnitude varia por local, idade, método diagnóstico, ambiente e acesso a medicamentos. Não é cientificamente adequado reproduzir uma única prevalência de “20% no Brasil” sem identificar inquérito, idade e ano; prevalência de sintomas respiratórios não equivale exatamente a asma confirmada por avaliação clínica e objetiva.
+
+Mortalidade por asma é prevenível em muitos casos, especialmente com reconhecimento de gravidade, acesso a CI, orientação adequada e tratamento imediato de exacerbações. A ausência de renda, distância do serviço, falta de dispositivo apropriado e necessidade de comprar controlador podem modificar risco tanto quanto predisposições individuais; um esquema farmacologicamente eficaz que o paciente não consegue obter **não é um plano de cuidado eficaz**.
+
+### 14.2 Fatores predisponentes e modificadores
+
+Atopia, história familiar, rinite e dermatite atópica são associados frequentes; exposições a fumaça de tabaco, biomassa, poluição e agentes ocupacionais podem desencadear ou agravar sintomas. Infecções virais, obesidade, refluxo sintomático, apneia obstrutiva do sono, rinossinusite crônica, ansiedade e depressão podem influenciar percepção, inflamação ou capacidade de adesão. Atribuir tosse noturna automaticamente a refluxo e prescrever IBP sem sintomas típicos não é tratamento substituto de asma.
+
+Medicamentos merecem investigação: beta-bloqueadores, sobretudo não seletivos, podem provocar broncoespasmo em suscetíveis; AAS e outros anti-inflamatórios podem desencadear exacerbações em doença respiratória exacerbada por AINEs. Uma prescrição cardiovascular essencial não deve ser suspensa por conta própria — a decisão depende de risco e alternativa com equipe. O paciente pode ter múltiplos gatilhos e o objetivo não é proibir exercício ou vida social, mas permitir atividade segura com doença controlada.
+
+### 14.3 Fenótipos clínicos de interesse
+
+| Apresentação | Pistas | Cuidado para não confundir |
+|---|---|---|
+| Asma alérgica | início mais precoce, rinite/eczema e sensibilização pertinente | teste cutâneo positivo não confirma que todo sintoma seja asma |
+| Asma de início na vida adulta | sintomas após infância, com/sem atopia | investigar ocupação, tabagismo, cardiopatia e outras causas |
+| Asma com tosse predominante | tosse variável e hiperresponsividade brônquica | diferenciar eosinofilia brônquica sem asma, gotejamento pós-nasal, refluxo e IECA |
+| Asma associada a obesidade | dispneia e percepção sintomática intensas, mecânica respiratória alterada | obesidade pode causar dispneia sem broncoconstrição |
+| Asma com obstrução persistente | história típica, dano/remodelamento e alteração espirométrica fixa parcial | considerar coexistência com DPOC e exposição tabágica |
+| Asma relacionada ao trabalho | piora em turnos e melhora em folgas, sensibilizantes ou irritantes | não confundir asma causada pelo trabalho com asma prévia agravada pelo trabalho |
+| Asma grave tipo 2 | exacerbações apesar de alta intensidade otimizada, eosinofilia/FeNO/IgE em contexto | marcador isolado não cumpre critérios de imunobiológico |
+
+## 15. Diagnóstico funcional avançado: interpretar medidas sem decorar um único número
+
+### 15.1 Espirometria: o que é necessário para interpretação válida?
+
+A espirometria mede volumes e fluxos durante manobras padronizadas. O VEF₁ representa volume exalado no primeiro segundo de uma expiração forçada, e a CVF corresponde à capacidade vital forçada. A relação VEF₁/CVF abaixo do limite inferior da normalidade sugere obstrução; valores fixos de 0,70 têm implicações diferentes em jovens e idosos e não devem ser aplicados indistintamente como único critério de asma. Qualidade exige manobras aceitáveis/reprodutíveis, início vigoroso, ausência de tosse que invalide leitura e término adequado. Medição ruim pode simular restrição ou resposta broncodilatadora.
+
+Após broncodilatador, interpretar alteração **absoluta**, **relativa** e técnica. O PCDT 2026 brasileiro enuncia, em adultos, aumento de VEF₁ **ou CVF ≥12% e ≥200 mL** do basal; em crianças, utiliza **VEF₁ ≥12% do basal**. A tabela GINA 2026 descreve, para crianças de 6–17 anos, VEF₁ ≥12% **do valor previsto**, uma diferença de denominador que deve aparecer explicitamente ao comparar documentos. Não afirmar que as duas fórmulas são intercambiáveis nem somar limiares de maneira inventada. A interpretação segue a diretriz adotada, idade, medida e referência; para manejo do SUS, confirmar o PCDT vigente.
+
+### 15.2 Exemplo numérico com adulto
+
+Mulher de 28 anos apresenta VEF₁ pré de 1,82 L e pós de 2,16 L. O ganho absoluto é 340 mL. O relativo ao basal é 340/1820 × 100 ≈ **18,7%**. Se há sintomas variáveis e manobra de boa qualidade, os dois critérios adultos do PCDT são cumpridos. A mesma pessoa com teste normal durante uso de CI pode precisar de histórico documental ou repetição em condições apropriadas para confirmação.
+
+Homem com VEF₁ pré de 3,55 L e pós de 3,92 L ganhou 370 mL, mas relativa ao basal foi 10,4%. Pelo critério ≥12% **e** ≥200 mL do PCDT, a resposta não é positiva nesse teste. Isso não exclui asma: é necessário avaliar sintomas, outras evidências e condições da manobra.
+
+### 15.3 Crianças e denominador de porcentagem
+
+Menino de nove anos tem VEF₁ basal 1,10 L, pós 1,25 L e previsto 1,75 L. Ganho absoluto = 0,15 L. A porcentagem do basal = 13,6%, enquanto a porcentagem do previsto = 8,6%. Neste exemplo, um cálculo poderia atingir o critério pediátrico descrito pelo **PCDT brasileiro (≥12% basal)**, mas não o critério GINA 2026 **(≥12% previsto)**. A diferença é real e deve ser reconhecida, não apagada pela expressão vaga “resposta de 12%”. Reavaliar qualidade e quadro completo, discutir orientação local e considerar testes adicionais quando existe discordância.
+
+### 15.4 Pico de fluxo: variabilidade e limitações
+
+O PFE é medida domiciliar/ambulatorial útil quando espirometria está indisponível, mas depende de esforço, aparelho e técnica. Para monitoramento da variabilidade em período de 1–2 semanas, orientar três manobras a cada período e registrar o melhor valor pela manhã e noite. Calcular diariamente (PFE máximo − PFE mínimo) dividido pela média dos dois, multiplicado por 100. A média das variabilidades diárias é comparada aos critérios. PCDT/GINA indicam média diária **>10% em adultos** e **>13% em crianças** para evidência de variabilidade excessiva.
+
+Exemplo: PFE manhã 360 L/min, noite 450 L/min. Variabilidade diária = 90 / 405 × 100 ≈ **22,2%**. Um único dia não basta para obter média de duas semanas, mas demonstra como realizar conta. Nunca comparar valores obtidos em aparelhos diferentes como se fossem diretamente intercambiáveis sem controle de método.
+
+### 15.5 Quando considerar broncoprovocação?
+
+Se história é fortemente compatível, mas espirometria de repouso e resposta broncodilatadora não demonstram variabilidade, teste de provocação com metacolina, exercício ou outros estímulos pode aumentar sensibilidade em serviço apropriado. O resultado pode ser influenciado por uso de CI, estação/exposição e técnica. Um teste positivo demonstra hiperresponsividade e **não é patognomônico**; um negativo em boas condições torna asma menos provável, mas não substitui avaliação do contexto. Não realizar testes provocativos em paciente com crise grave ou obstrução crítica.
+
+### 15.6 Biomarcadores e alergia: o que acrescentam ao diagnóstico?
+
+FeNO elevado ou eosinofilia sanguínea podem apoiar hipótese de inflamação tipo 2, em contexto de sintomas compatíveis. Níveis baixos não descartam asma. Corticoides reduzem marcadores; infecção, rinite alérgica e atopia sem asma podem elevá-los. Provas alérgicas ajudam identificar sensibilização clinicamente relevante e orientar controle de exposições/imunoterapia em pacientes selecionados, mas um IgE total isolado alto não substitui função pulmonar.
+
+## 16. Diagnósticos diferenciais por cenário clínico
+
+### 16.1 Chiado e dispneia em jovem
+
+Disfunção laríngea induzível frequentemente tem ruído inspiratório predominante, início rápido durante exercício/exposição, sensação de fechamento em garganta e recuperação relativamente rápida; pode coexistir com asma. Avaliação de laringe durante sintomas ou teste provocado em serviço experiente esclarece. Se o ruído é alto no pescoço, há estridor e pouca resposta ao broncodilatador, não continuar escalando CI sem investigar laringe e outras vias aéreas altas.
+
+Corpo estranho aspirado pode produzir sibilância focal e início abrupto após engasgo, inclusive em adulto. Radiografia pode ser normal dependendo do material; broncoscopia e avaliação especializada entram se suspeita for alta. Pneumotórax tende a causar início abrupto, dor pleurítica e assimetria; exame e imagem conforme instabilidade são centrais.
+
+### 16.2 Tosse isolada
+
+Principais hipóteses: asma com predomínio de tosse, rinossinusite/síndrome de tosse das vias aéreas superiores, refluxo com sintomas pertinentes, inibidor da ECA, bronquite eosinofílica não asmática, tuberculose conforme epidemiologia e condições estruturais. **Bronquite eosinofílica não asmática** pode causar tosse crônica e resposta a CI, mas não apresenta tipicamente hiperresponsividade e variabilidade obstrutiva nos mesmos critérios de asma. Resposta sintomática a corticoide isoladamente não confirma asma.
+
+### 16.3 Adulto fumante de longa data
+
+DPOC costuma envolver exposição relevante, sintomas mais progressivos e obstrução persistente após broncodilatador, mas pode apresentar resposta broncodilatadora e exacerbações. Asma também pode desenvolver obstrução fixa. Uma pessoa pode ter **asma + DPOC**, e isso tem implicações terapêuticas: quando há asma verdadeira concomitante, não tratar apenas com broncodilatadores sem CI. A história da infância, variabilidade, eosinofilia, exposições e espirometria seriada ajudam, mas diagnóstico pode demandar pneumologia.
+
+### 16.4 Dispneia com sinais sistêmicos
+
+Insuficiência cardíaca com congestão pode produzir sibilos (“asma cardíaca”), mas acompanha ortopneia, edema, crepitações, alterações em ECG/eco e contexto cardiovascular. Embolia pulmonar pode apresentar dispneia súbita, dor pleurítica, taquicardia e hipoxemia desproporcional; hemoptise ou trombose associada elevam suspeita. Anafilaxia causa início súbito após exposição com repercussão de pele/mucosas, respiração e/ou circulação — **adrenalina imediata é primeira linha quando anafilaxia está presente**, não broncodilatador isolado.
+
+| Padrão apresentado | Pistas favoráveis | Próxima ação |
+|---|---|---|
+| Variável, noturno, gatilhos e melhora com terapia apropriada | asma provável | teste objetivo de fluxo e controle |
+| Inspiratório no pescoço durante exercício | obstrução laríngea induzível | avaliação de via aérea alta/laringe |
+| Súbito após engasgo, sibilo unilateral | corpo estranho | urgência e avaliação dirigida |
+| Tabagismo crônico e obstrução persistente | DPOC ou asma+DPOC | espirometria e história longitudinal |
+| Ortopneia, edema e crepitações | insuficiência cardíaca | ECG, avaliação cardíaca e tratamento causal |
+| Súbito com risco trombótico e dor pleurítica | embolia pulmonar | estratificação e investigação específica |
+| Estridor, síncope/hipotensão após alérgeno | anafilaxia | adrenalina e suporte imediato |
+
+## 17. Controle e gravidade: avaliar o que importa para o futuro
+
+### 17.1 Perguntas das últimas quatro semanas
+
+Perguntar: houve sintomas diurnos em mais de dois dias na semana? Houve despertar noturno por asma? Houve limitação de atividades? **Se o paciente usa SABA como alívio**, precisou dele em mais de dois dias na semana, excluindo uso profilático antes de exercício? A soma de critérios presentes auxilia classificar controle sintomático em bem controlada, parcialmente controlada ou não controlada. Se o tratamento de alívio é **CI-formoterol**, não aplicar automaticamente a pergunta de frequência de SABA como se o paciente utilizasse esse fármaco; a avaliação precisa ser adaptada ao regime.
+
+Ferramentas como ACT e ACQ podem quantificar controle e resposta, mas não substituem análise de riscos. Um paciente com ACT bom e internação recente continua merecendo atenção; a percepção de sintoma pode ser limitada, sobretudo em alguém que reduziu atividade física espontaneamente para não provocar dispneia.
+
+### 17.2 Fatores de risco de exacerbação independentemente do controle
+
+Baixa adesão, técnica incorreta, ausência de CI, excesso de SABA, internação/intubação por asma prévia, exacerbações no último ano, VEF₁ baixo, tabagismo e exposições relevantes, comorbidades não tratadas e barreiras sociais importam. A GINA e o PCDT citam o uso de **≥3 frascos de SABA/ano** como sinal de risco e uso muito alto como marcador ainda mais preocupante; o número deve ser interpretado conforme apresentações e registro farmacêutico, sem tratar três frascos como limiar diagnóstico isolado.
+
+**Exemplo:** paciente sem despertares e que quase não usa resgate após deixar de correr não necessariamente está bem controlado. Perguntar se parou de praticar atividade por medo dos sintomas, conferir função pulmonar e plano de vida. Controle não é apenas reduzir reclamação; é permitir vida usual sem risco excessivo.
+
+### 17.3 Asma difícil de tratar x asma grave
+
+Asma difícil de tratar é aquela que permanece não controlada apesar de prescrição em intensidade intermediária/alta, muitas vezes por **fatores corrigíveis**: má técnica, não adesão, diagnóstico equivocado, tabagismo, poluição ocupacional, rinite, refluxo sintomático, obesidade, depressão e problemas de acesso. **Asma grave** é subgrupo que permanece não controlado apesar de boa adesão, técnica correta e terapêutica de alta intensidade otimizada, ou que piora ao reduzir essa intensidade, após avaliação especializada. O PCDT de 2026 corrige em seu apêndice definição/dose de alta intensidade em relação a versão original, portanto não copiar quadro antigo sem checagem de reedição.
+
+Não se deve encaminhar alguém imediatamente ao biológico com base apenas em muitos sintomas sem confirmar diagnóstico e uso real de terapia; tampouco atrasar avaliação especializada em paciente com UTI prévia, uso recorrente de corticoide oral ou perda funcional importante.
+
+## 18. Farmacologia terapêutica: escolher mecanismo e minimizar dano
+
+### 18.1 Corticoides inalatórios (CI): o eixo da prevenção
+
+Budesonida e beclometasona, entre outros CI, modulam expressão de genes e vias inflamatórias, reduzindo edema, hiperresponsividade e risco de exacerbações. Não são broncodilatadores de resgate isoladamente, mas podem integrar inalador **CI-formoterol** com ação anti-inflamatória de alívio. Em pequenas doses, oferecem grande parcela dos benefícios; doses mais altas elevam efeitos adversos e não compensam automaticamente adesão inadequada. Após inalação, técnica e higiene oral reduzem candidíase e disfonia; com dispositivos pressurizados, espaçador pode melhorar deposição e diminuir efeitos locais.
+
+Efeitos sistêmicos merecem atenção sobretudo com doses altas/prolongadas: supressão adrenal, redução de densidade óssea, alterações cutâneas/metabólicas e efeitos sobre crescimento em crianças podem ocorrer. O risco deve ser equilibrado com o dano muito maior de doença não controlada e múltiplos cursos de corticoide oral. Corticoide inalatório apropriado **não** significa corticoide sistêmico diário.
+
+### 18.2 SABA e LABA: a diferença não é apenas duração
+
+Salbutamol (SABA) relaxa músculo liso brônquico em minutos e é útil em exacerbações agudas; porém uso repetido sem anti-inflamatório não controla a doença e pode aumentar riscos. Efeitos adversos dose-dependentes incluem tremor, palpitação, taquicardia, ansiedade e hipocalemia; em altas doses, lactato pode aumentar por efeito beta-adrenérgico, exigindo contexto antes de concluir falha respiratória. Formoterol é um LABA com início de ação rápido, permitindo uso em **combinação validada com CI** como alívio, respeitando apresentação e dose máxima total. Salmeterol e vilanterol não são resgatadores nesse modelo.
+
+**LABA isolado na asma é inadequado.** Um broncodilatador prolongado pode aliviar sintomas enquanto inflamação permanece descontrolada e risco de evento grave cresce. Quando há indicação de LABA, associá-lo ao CI conforme regime e prescrição. Verificar separadamente se um inalador contém um ou dois princípios ativos antes de orientar a família.
+
+### 18.3 Antagonistas muscarínicos e leucotrienos
+
+Ipratrópio é broncodilatador antimuscarínico de curta duração utilizado como complemento em exacerbações moderadas/graves selecionadas. Tiotrópio e outros LAMA são adjuvantes de manutenção em indicações especializadas, não substitutos de CI. Antagonistas dos receptores de leucotrienos, como montelucaste, podem ter uso em contextos específicos, mas eficácia antiexacerbação costuma ser menor que CI e o fármaco exige discussão de potenciais **efeitos neuropsiquiátricos**. Não prescrever montelucaste como “primeira escolha universal da rinite com asma” ignorando seus riscos.
+
+### 18.4 Corticoide sistêmico: benefício na crise, custo na repetição
+
+Prednisona/prednisolona reduzem inflamação e risco de piora/recaída na exacerbação relevante, especialmente quando iniciados precocemente. O PCDT 2026 e GINA 2026 citam, em adultos/adolescentes com exacerbação importante, **40–50 mg/dia por 5–7 dias**, e em crianças 6–11 anos **1–2 mg/kg/dia (máximo 40 mg) por 3–5 dias**, conforme cenário. Cursos **inferiores a duas semanas geralmente não requerem redução gradual** ao término, mas isso não cobre pacientes sob uso crônico ou risco específico de insuficiência adrenal.
+
+Mesmo cursos curtos têm efeitos: hiperglicemia, alterações de humor/sono, dispepsia e risco infeccioso; repetição aumenta carga sistêmica. A necessidade recorrente de corticoide oral é motivo para revisar diagnóstico, plano anti-inflamatório, técnica e eventualmente encaminhar a especialista, não tornar “dose de emergência mensal” um padrão.
+
+### 18.5 Um quadro de escolhas por propósito
+
+| Classe | Principal efeito | Lugar na estratégia | Armadilha |
+|---|---|---|---|
+| CI | controle inflamatório | base de prevenção e esquemas AIR/MART | considerar “desnecessário” quando sintomas somem |
+| SABA | broncodilatação rápida | crise e alívio em regimes alternativos com CI | monoterapia crônica na asma |
+| CI-formoterol | anti-inflamação + broncodilatação rápida | AIR/MART validado, conforme apresentação e idade | usar qualquer CI-LABA como resgate |
+| CI-LABA não formoterol | manutenção com broncodilatação | controlador em regime alternativo | usá-lo como resgate |
+| Ipratrópio | broncodilatação adicional | crise moderada/grave selecionada | substituir SABA/CI de controle |
+| LAMA | bloqueio muscarínico prolongado | adjuvante em asma selecionada | monoterapia sem CI |
+| LTRA | modulação leucotrieno | opção adicional/contextual | desprezar alerta neuropsiquiátrico |
+| Corticoide oral | anti-inflamação sistêmica | exacerbação importante, reserva em asma grave | recorrência sem prevenção |
+| Biológicos | bloqueio de vias T2 específicas | asma grave elegível | indicar sem fenotipagem/critério SUS |
+
