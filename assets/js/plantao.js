@@ -518,16 +518,16 @@
       item?.title,item?.summary,item?.presentation?.chief_complaint,item?.presentation?.display_title
     ].filter(Boolean).join(" "));
     if(specialty.includes("pedi") || title.includes("crianca") || title.includes("lactente")) {
-      return index%2 ? "/assets/img/plantao/08-menino-acordado.webp" : "/assets/img/plantao/06-menina-acordada.webp";
+      return index%2 ? "/assets/img/plantao/08-menino-acordado.webp" : "/assets/img/plantao/patient-frontal-girl-awake.webp";
     }
     if(specialty.includes("gine") || specialty.includes("obst") || title.includes("gesta")) {
-      return "/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp";
+      return "/assets/img/plantao/patient-frontal-pregnant-awake.webp";
     }
     const age=patientAgeYears(item);
     const sexRaw=normalizeLabel(item?.presentation?.sex||"");
     const female=sexRaw==="f" || sexRaw.startsWith("fem");
     if((Number.isFinite(age) && age>=50) || title.includes("idos") || specialty.includes("geri")) {
-      return female ? "/assets/img/plantao/luria-mulher-idosa-v16-base.webp" : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp";
+      return female ? "/assets/img/plantao/patient-frontal-elderly-woman-awake.webp" : "/assets/img/plantao/patient-frontal-elderly-man-awake.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
       return female ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
@@ -542,12 +542,12 @@
       "luria-mulher-adulta-v5-aberto.webp":{x:43,y:24,scale:2.08},
       "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
       "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
-      "luria-mulher-idosa-v16-base.webp":{x:50,y:23,scale:2.0},
-      "luria-homem-idoso-v7-aberto.webp":{x:50,y:24,scale:2.02},
+      "patient-frontal-elderly-woman-awake.webp":{x:50,y:23,scale:2.0},
+      "patient-frontal-elderly-man-awake.webp":{x:50,y:24,scale:2.02},
       "10-homem-idoso-acordado.webp":{x:50,y:23,scale:2.02},
-      "06-menina-acordada.webp":{x:50,y:25,scale:2.12},
+      "patient-frontal-girl-awake.webp":{x:50,y:25,scale:2.12},
       "08-menino-acordado.webp":{x:50,y:25,scale:2.12},
-      "gestante_acordada_triste_1300x900_100kb.webp":{x:50,y:22,scale:1.95}
+      "patient-frontal-pregnant-awake.webp":{x:50,y:22,scale:1.95}
     };
     return presets[file] || {x:50,y:22,scale:2};
   }
@@ -2801,18 +2801,13 @@
 
   const PWA_PATIENT_IMAGES = {
     baby:{awake:"assets/img/plantao pwa/15-bebe-acordado.webp",closed:"assets/img/plantao pwa/01-bebe-dormindo.webp"},
-    girl:{awake:"assets/img/plantao pwa/10-menina-acordada.webp",closed:"assets/img/plantao pwa/08-menina-olhos-fechados.webp"},
+    girl:{awake:"/assets/img/plantao pwa/patient-frontal-girl-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-girl-closed-pwa.webp"},
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
-    pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
+    pregnant:{awake:"/assets/img/plantao pwa/patient-frontal-pregnant-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-pregnant-closed-pwa.webp"},
     woman:{awake:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"},
     man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
-    elderlyWoman:{
-      awake:"/assets/img/plantao/luria-mulher-idosa-v16-base.webp",
-      closed:"/assets/img/plantao/luria-mulher-idosa-v16-base.webp",
-      blinkHalf:"/assets/img/plantao/luria-mulher-idosa-v16-base.webp",
-      blinkClosed:"/assets/img/plantao/luria-mulher-idosa-v16-base.webp"
-    },
-    elderlyMan:{awake:"/assets/img/plantao/luria-homem-idoso-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-idoso-v7-aberto.webp"}
+    elderlyWoman:{awake:"/assets/img/plantao pwa/patient-frontal-elderly-woman-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-elderly-woman-closed-pwa.webp"},
+    elderlyMan:{awake:"/assets/img/plantao pwa/patient-frontal-elderly-man-awake-pwa.webp",closed:"/assets/img/plantao pwa/patient-frontal-elderly-man-closed-pwa.webp"}
   };
 
   function isStandalonePwa(){
@@ -2865,6 +2860,28 @@
     }
 
     const age=patientAgeYears();
+    const subjectSex=normalizeLabel(state.current?.presentation?.sex||"");
+    const subjectFemale=subjectSex==="f" || subjectSex.startsWith("fem");
+    const subjectText=normalizeLabel([
+      state.current?.title,state.current?.summary,
+      state.current?.presentation?.opening,state.current?.presentation?.chief_complaint
+    ].filter(Boolean).join(" "));
+    const subjectPregnant=/gravidez|gestante|gestacao|eclampsia|pre-eclampsia|trabalho de parto/.test(subjectText)
+      && !/pos-parto|puerper/.test(subjectText);
+    if(subjectPregnant){
+      const pair=isStandalonePwa()?PWA_PATIENT_IMAGES.pregnant:{
+        awake:"/assets/img/plantao/patient-frontal-pregnant-awake.webp",
+        closed:"/assets/img/plantao/patient-frontal-pregnant-closed.webp"
+      };
+      return {patient_image:pair.awake,unconscious_image:pair.closed};
+    }
+    if(subjectFemale && Number.isFinite(age) && age>=2 && age<13){
+      const pair=isStandalonePwa()?PWA_PATIENT_IMAGES.girl:{
+        awake:"/assets/img/plantao/patient-frontal-girl-awake.webp",
+        closed:"/assets/img/plantao/patient-frontal-girl-closed.webp"
+      };
+      return {patient_image:pair.awake,unconscious_image:pair.closed};
+    }
     if(Number.isFinite(age) && age>=50){
       const sexRaw=normalizeLabel(state.current?.presentation?.sex||"");
       const female=sexRaw==="f" || sexRaw.startsWith("fem");
@@ -2881,11 +2898,11 @@
 
       return {
         patient_image:female
-          ? "/assets/img/plantao/luria-mulher-idosa-v16-base.webp"
-          : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp",
+          ? "/assets/img/plantao/patient-frontal-elderly-woman-awake.webp"
+          : "/assets/img/plantao/patient-frontal-elderly-man-awake.webp",
         unconscious_image:female
-          ? "/assets/img/plantao/luria-mulher-idosa-v16-base.webp"
-          : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp"
+          ? "/assets/img/plantao/patient-frontal-elderly-woman-closed.webp"
+          : "/assets/img/plantao/patient-frontal-elderly-man-closed.webp"
       };
     }
 
