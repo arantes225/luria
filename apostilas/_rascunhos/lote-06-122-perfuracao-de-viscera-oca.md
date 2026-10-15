@@ -604,3 +604,264 @@ Não descartar. Rever RX e confirmar com **CT apropriada** para localização; s
 - **Tempo:** SIS 2024 usa até quatro dias após controle adequado em muitos casos; SSC 2026 enfatiza controle precoce do foco em sepse que o exige.
 - **Trauma:** sinal de cinto + CT equívoca pode requerer observação/reimagem.
 - **Alta:** ausência de vazamento/foco, estabilidade, função intestinal e sinais de complicação.
+
+
+## 28. Oito casos clínicos comentados e decisão cirúrgica
+
+### Caso 1 — A pior epigastralgia da vida: úlcera duodenal perfurada
+
+**Apresentação.** Homem de 47 anos chega com dor epigástrica súbita, iniciada há duas horas, descrita como “facada” e que depois se espalhou para todo o abdome. Usou ibuprofeno diariamente nas últimas semanas por lombalgia. Está consciente, PA 108/68, frequência cardíaca 112, temperatura 37,6°C, hipersensibilidade e rigidez involuntária difusa. RX de tórax em pé mostra ar sob o hemidiafragma direito; TC, realizada sem atrasar avaliação cirúrgica, mostra ar e líquido junto ao bulbo duodenal.
+
+**Hipótese e diferenciais.** A apresentação sugere **úlcera duodenal anterior perfurada com peritonite**. Entre diferenciais de dor epigástrica súbita estão pancreatite, isquemia mesentérica, infarto inferior e aneurisma de aorta; pneumoperitônio em contexto compatível aumenta a suspeita de perfuração, mas a origem ainda precisa ser confirmada. Ausência de febre alta não tranquiliza — a inflamação química pode preceder a infecção evidente.
+
+**Exames e interpretação.** Avaliar hemograma, creatinina, eletrólitos, lactato se hipoperfusão, gasometria conforme gravidade, coagulograma e prova cruzada conforme risco. A TC localiza provável fonte; presença de peritonite clínica torna **inapropriada a tentativa rotineira de tratamento conservador**, mesmo que o orifício pareça pequeno. Endoscopia pré-operatória indiscriminada pode agravar insuflação/retardar cirurgia e não é necessária para confirmar peritonite perfurativa típica.
+
+**Conduta.** Jejum, analgesia, hidratação individualizada, proteção contra aspiração quando necessária, antibiótico de cobertura apropriada para foco intra-abdominal, IBP no contexto ulceroso e avaliação cirúrgica **imediata**. Reparo pode consistir em sutura e reforço omental em lesão pequena/tecido viável; se grande/irregular ou há suspeita de neoplasia gástrica, técnica diferente. Após recuperação: investigação de H. pylori, revisar AINE e acompanhamento endoscópico conforme etiologia/sítio.
+
+**Erro clássico.** “Vamos repetir radiografia amanhã para ver se o ar sumiu”; isso confunde marcador de perfuração com controle da fonte. **Por que importa:** peritonite clínica não espera cicatrização espontânea de uma úlcera supostamente pequena.
+
+### Caso 2 — Úlcera selada: quando o não operatório é uma exceção responsável
+
+**Apresentação.** Mulher de 52 anos relata dor epigástrica aguda iniciada há 18 horas, inicialmente forte, hoje discreta. Estável, sem hipotensão, febre ou rigidez; dor localizada leve. TC mostra pequeno pneumoperitônio periduodenal e mínima quantidade de líquido. Estudo adequado com contraste hidrossolúvel não demonstra extravasamento. Cirurgia de urgência, CT, laboratório e reoperação estão disponíveis no hospital.
+
+**Hipótese.** Possível **perfuração ulcerosa selada**, sem peritonite generalizada. A imagem isolada não certifica segurança: a ausência de extravasamento pode depender de técnica e passagem de contraste; o exame físico, a estabilidade e a capacidade de monitorização são igualmente importantes.
+
+**Raciocínio.** A WSES 2020 **não recomenda não operatório rotineiro** em úlcera perfurada. Pode ser ponderado **somente em pessoas extremamente selecionadas** quando há evidência de selamento e ausência de peritonite/sepse, com consentimento, monitorização intensiva e pronta capacidade de operar. “Pneumoperitônio pequeno” e “alto risco cirúrgico” isoladamente não bastam.
+
+**Conduta.** Decisão compartilhada com cirurgião, jejum, acesso, fluidos, IBP, antibiótico quando indicado, parâmetros seriados de dor, sinais vitais, diurese, leucócitos e imagem conforme evolução. Qualquer piora de rigidez, hipotensão, febre, dor ou sinais de vazamento leva a reavaliação operatória imediata. Planejar seguimento da doença ulcerosa e H. pylori se a estratégia for bem-sucedida.
+
+**Erro clássico.** Dar alta após uma única TC sem extravasamento. **Por que importa:** tratamento conservador só é seguro quando existe uma estrutura capaz de identificar e resgatar precocemente a falha.
+
+### Caso 3 — Diverticulite perfurada com sepse: Hartmann ou anastomose?
+
+**Apresentação.** Homem de 70 anos com DPOC, DRC e fragilidade apresenta três dias de dor FIE e febre, seguidos de dor difusa, vômitos e confusão. PA 84/50 apesar de suporte inicial, taquicardia, oligúria e defesa generalizada. TC demonstra inflamação sigmoide, ar livre, líquido difuso e suspeita de contaminação fecal.
+
+**Hipótese.** Diverticulite perfurada com peritonite generalizada e **choque séptico**. A presença de líquido extenso e deterioração indica vazamento/foco, não um abscesso pericólico estável para drenagem isolada.
+
+**Raciocínio.** Antibiótico precisa cobrir Gram-negativos entéricos e anaeróbios, mas o controle de fonte é decisivo. O paciente tem choque, comorbidades e fragilidade — fatores que elevam risco de deiscência; nesse contexto, **ressecção com estoma terminal segundo Hartmann** ou cirurgia em estágios pode ser mais segura. Em paciente distinto — estável, boa perfusão, tecido favorável — ressecção com **anastomose primária ± estoma protetor** poderia ser opção. A classificação de Hinchey orienta gravidade, **não impõe técnica única**.
+
+**Conduta.** Ressuscitação, antibiótico sistêmico tempestivo, norepinefrina se indicada, avaliação cirúrgica/UTI e controle rápido da fonte. A operação resseca segmento doente, trata contaminação e escolhe derivação/reconstrução conforme fisiologia. O pós-operatório exige vigilância para falência orgânica, abscesso e disfunção do estoma.
+
+**Erro clássico.** “Como é Hinchey IV, todos os pacientes devem obrigatoriamente receber Hartmann”; é a instabilidade deste paciente que torna uma anastomose especialmente arriscada. **Por que importa:** a decisão cirúrgica depende do paciente real, não só do número da classificação.
+
+### Caso 4 — Pneumoperitônio depois da colonoscopia
+
+**Apresentação.** Mulher de 59 anos realizou colonoscopia terapêutica com ressecção de pólipo sigmoide; durante o procedimento, a endoscopista reconheceu pequeno defeito de parede, visualizado imediatamente, e conseguiu fechá-lo com clips, com documentação fotográfica. Duas horas depois, a paciente estável apresenta dor leve localizada, sem peritonite, febre ou leucocitose importante. TC mostra ar discreto, sem líquido livre expressivo ou extravasamento.
+
+**Hipótese.** **Perfuração iatrogênica reconhecida e aparentemente controlada por fechamento endoscópico**, sem sinais atuais de falha. Não é situação de cirurgia imediata obrigatória apenas pelo achado de ar.
+
+**Raciocínio.** WSES 2017 admite fechamento endoscópico precoce em defeitos e operadores apropriados. Segurança depende de tamanho, localização, preparo intestinal, estabilidade e monitorização. Mesmo depois de clips, vazamento ou peritonite podem aparecer tardiamente; **um exame normal inicial não elimina acompanhamento**.
+
+**Conduta.** Avaliação conjunta de endoscopia/cirurgia, jejum inicialmente, hidratação, antibiótico de cobertura apropriada à contaminação se indicado, exames seriados, plano de imagem se piora e resgate cirúrgico imediato disponível. Se dor difusa, febre, instabilidade ou vazamento reaparecerem, indicar nova avaliação para cirurgia.
+
+**Erro clássico.** Interpretar todos os pneumoperitônios pós-endoscópicos como benignos ou, no extremo oposto, exigir laparotomia de todos. **Por que importa:** técnica endoscópica de controle de foco é uma opção real, **restrita e monitorizada**.
+
+### Caso 5 — Trauma de cinto com TC duvidosa
+
+**Apresentação.** Homem de 28 anos vítima de colisão de alta energia tem equimose linear abdominal pelo cinto e dor periumbilical discreta. Está estável, consciente, com CT de abdome com contraste mostrando pequeno líquido livre sem lesão de órgão sólido e discreto espessamento mesentérico, sem ar livre. Cinco horas depois evolui com taquicardia, piora de dor e defesa focal.
+
+**Hipótese.** **Lesão intestinal ou mesentérica traumática oculta**, com risco de isquemia/perfuração evolutiva. O padrão de cinto, líquido inexplicado e evolução são sinais relevantes mesmo quando CT inicial não demonstra ar.
+
+**Raciocínio.** A WSES 2022 descreve necessidade de vigilância com exames seriados e reimagem em selecionados de alto risco/CT equívoca. O exame clínico mudou; não é seguro concluir “CT normal, sem lesão” ou fixar que é preciso esperar seis horas completas antes de avaliar cirurgia.
+
+**Conduta.** Reavaliar ABCDE, perfusão, hemoglobina/tendência, exame seriado e novo estudo conforme estabilidade, com cirurgia do trauma acionada. Se surgir peritonite/instabilidade, considerar exploração operatória e reparar/ressecção de lesões encontradas. Na operação, buscar **múltiplas lesões e desvascularização mesentérica**, não apenas o primeiro orifício visível.
+
+**Erro clássico.** Alta do PS com sinal de cinto e líquido sem origem, apoiada num único exame. **Por que importa:** lesão intestinal traumática pode ser **tardia ou inicialmente oculta**.
+
+### Caso 6 — Boerhaave versus Mallory–Weiss
+
+**Apresentação.** Homem de 46 anos após esforço de vômitos violentos por intoxicação alcoólica desenvolve dor torácica súbita intensa irradiada para dorso, dispneia e enfisema cervical discreto. PA 100/60, febril, com derrame pleural esquerdo em RX. Não relata hematêmese abundante.
+
+**Hipótese.** **Perfuração esofágica transmural espontânea (Boerhaave)** com possível mediastinite. A laceração de Mallory–Weiss é mucosa e causa predominantemente sangramento, sem o mesmo padrão de contaminação mediastinal. A tríade de Mackler não precisa estar completa.
+
+**Exames.** CT tórax com protocolo adequado, avaliação de pneumomediastino/derrame, esofagografia hidrossolúvel ou CT esofagografia quando necessário, gasometria/avaliação de sepse, culturas conforme quadro. Considerar também IAM, dissecção, pneumotórax e outras causas de dor torácica crítica.
+
+**Conduta.** Jejum, proteção de via aérea conforme risco, suporte, antibiótico adequado e **acesso urgente à cirurgia torácica/endoscopia avançada** para vedação e drenagem de mediastino/pleura. A técnica varia por extensão/tempo/estabilidade; não é correto obrigar esofagectomia em todo paciente. Se choque, controle do foco não deve depender de longa tentativa diagnóstica repetida.
+
+**Erro clássico.** Fazer EDA eletiva para “confirmar gastrite” sem considerar ruptura transmural e mediastinite. **Por que importa:** a fonte está no esôfago e pode não produzir abdome agudo clássico.
+
+### Caso 7 — Perfuração estercoral em idosa constipada
+
+**Apresentação.** Mulher de 83 anos, restrita ao leito e em uso prolongado de opioides, tem constipação grave há semanas. Hoje apresenta dor abdominal intensa, distensão, febre e hipotensão. TC demonstra fecaloma reto-sigmoide, defeito mural e ar extraluminal com grande quantidade de líquido/fezes na pelve. Exame mostra defesa e sinais de choque.
+
+**Hipótese.** **Perfuração estercoral de sigmoide/reto-sigmoide** por necrose de pressão, causando peritonite fecal. É diferente de cistite, de simples fecaloma e de diverticulite não complicada.
+
+**Exames e diferenciais.** CT identifica fecaloma e área provável de ruptura, mas o cirurgião deve excluir tumor obstrutivo distal, diverticulite ou isquemia e verificar extensão da lesão. A condição clínica impõe suporte imediato, sem esperar normalização de todos os exames.
+
+**Conduta.** Ressuscitação, antibioticoterapia voltada a enterobactérias e anaeróbios, cirurgia de controle de foco para **ressecção de segmento não viável/perfurado**, lavagem e reconstrução/estoma de acordo com estabilidade e tecidos. Desimpactação isolada não basta para peritonite fecal livre. Após recuperação, prevenir constipação, revisar opioides e elaborar cuidados funcionais.
+
+**Erro clássico.** Descrever como “fecaloma simples” e prescrever laxativo quando há ar livre, sepse e falência de parede. **Por que importa:** fatores geriátricos podem produzir lesão cirúrgica devastadora sem história de úlcera/diverticulite.
+
+### Caso 8 — Pós-operatório de colectomia: febre apesar de antibiótico
+
+**Apresentação.** Homem de 65 anos no sexto dia após colectomia com anastomose refere dor abdominal crescente, distensão e febre de 38,7°C. FC 122, oligúria e novo débito fecaloide por dreno. Foi iniciado antibiótico amplo há dois dias, mas a condição piora. TC demonstra coleção ao redor da anastomose e extravasamento de contraste entérico.
+
+**Hipótese.** **Deiscência anastomótica com vazamento e infecção intra-abdominal persistente.** O antibiótico amplo já prescrito não controla material entérico que continua escapando; apenas aumentar o espectro não resolve o mecanismo.
+
+**Raciocínio.** Estabilidade e anatomia determinam drenagem percutânea e abordagem seletiva em coleções contidas, ou **reintervenção operatória** na presença de peritonite, vazamento importante, deterioração ou controle inadequado. A escolha entre reparar, ressecar, derivar e operar por controle de danos depende de condição fisiológica e viabilidade. Cultura orienta desescalonamento após interromper vazamento.
+
+**Conduta.** Acionar cirurgia/UTI, ressuscitar, reavaliar cobertura antimicrobiana, controlar fonte rapidamente e monitorar injúria renal, débito do dreno, nutrição e risco de fístula. Após controle eficaz e melhora, considerar duração de antibiótico proporcional à evidência, em vez de prolongar indefinidamente pela presença de dreno.
+
+**Erro clássico.** “O antibiótico ainda não fez efeito, espere mais cinco dias”. **Por que importa:** em infecção intra-abdominal, falha clínica após antibiótico exige procurar **falha de controle da fonte**, não apenas trocar droga.
+
+## 29. Doze questões autorais comentadas — estilo residência e ENAMED
+
+### Questão 1 — A imagem sem ar livre
+
+Homem de 61 anos com uso frequente de AINEs apresenta dor epigástrica súbita, rigidez involuntária e taquicardia. RX de tórax em pé não mostra pneumoperitônio. Qual alternativa é correta?
+
+A) Ausência de ar subdiafragmático exclui perfuração de víscera oca.  
+B) A perfuração somente existe quando o sinal de Rigler é identificado.  
+C) A suspeita clínica permanece relevante; realizar avaliação cirúrgica imediata e TC se viável e não atrasar conduta urgente.  
+D) Com RX negativo, a melhor conduta é alta com antiácido e revisão em sete dias.
+
+**Gabarito: C.** **A:** RX possui sensibilidade limitada; perfurações pequenas, seladas e retroperitoneais podem não mostrar ar. **B:** Rigler não é obrigatório e pode surgir apenas com quantidade/distribuição adequada de gás. **C:** peritonite clínica manda reavaliar e agir conforme gravidade; TC em estável pode localizar fonte. **D:** alta seria insegura diante de rigidez/taquicardia. **Mini-revisão:** **pneumoperitônio é achado possível, não definição necessária da perfuração**.
+
+### Questão 2 — Sinal de Chilaiditi
+
+Pessoa estável e assintomática realiza radiografia por outro motivo. Observa-se ar sob hemidiafragma direito com marcas haustrais e alça colônica interposta entre fígado e diafragma. Qual hipótese?
+
+A) Sinal de Chilaiditi, que pode simular pneumoperitônio.  
+B) Pneumoperitônio perfurativo obrigatoriamente cirúrgico.  
+C) Sinal de Rigler, definido por haustras entre fígado e diafragma.  
+D) Diagnóstico automático de úlcera duodenal anterior perfurada.
+
+**Gabarito: A.** **A:** a interposição colônica com marcas intraluminais pode mimetizar ar livre. **B:** ausência de clínica e anatomia favorável pedem distinguir falso positivo. **C:** Rigler delineia as duas faces da parede intestinal por gás, não descreve especificamente Chilaiditi. **D:** úlcera depende de contexto clínico e outros achados. **Mini-revisão:** sinal radiológico sem contexto não é indicação universal de cirurgia.
+
+### Questão 3 — Úlcera perfurada e manejo conservador
+
+Mulher de 49 anos tem úlcera duodenal perfurada provável e pneumoperitônio discreto em CT; apresenta abdome rígido, febre e taquicardia. Um colega propõe manejo não operatório porque “ar é pouco”. Qual resposta?
+
+A) Concordar: toda perfuração pequena cicatriza e dispensa cirurgia.  
+B) O tratamento não operatório é rotineiro independentemente de peritonite.  
+C) O quadro com peritonite exige cirurgia; não operatório só é excepcional em paciente selecionado estável, sem peritonite, e com selamento demonstrado.  
+D) Apenas H. pylori precisa ser tratado, pois o buraco é estéril por uma semana.
+
+**Gabarito: C.** **A:** quantidade de ar não garante selamento. **B:** WSES 2020 recomenda contra conservador rotineiro. **C:** peritonite/escape ativo tornam controle operatório prioritário. **D:** a contaminação e inflamação não esperam uma semana e H. pylori é tema de prevenção de recidiva. **Mini-revisão:** seleção para conservação exige **comprovação de selamento, estabilidade e retaguarda cirúrgica**.
+
+### Questão 4 — Diverticulite perfurada e técnica cirúrgica
+
+Paciente de 55 anos, sem comorbidades importantes, é operado por diverticulite com peritonite purulenta; está estável, boa perfusão e tecidos viáveis. Qual afirmação corresponde às diretrizes WSES 2020?
+
+A) Hartmann é obrigatório em todos os Hinchey III e IV, inclusive estáveis.  
+B) Ressecção com anastomose primária, com ou sem estoma de proteção, pode ser considerada em paciente estável e selecionado.  
+C) Lavagem laparoscópica isolada é obrigatória quando há contaminação fecal difusa.  
+D) Não é necessário controlar fonte se o antibiótico cobre anaeróbios.
+
+**Gabarito: B.** **A:** técnica depende de fisiologia, comorbidades e avaliação cirúrgica. **B:** anastomose primária é opção em paciente bem selecionado; Hartmann favorecido em instáveis/frágeis. **C:** lavagem isolada não é solução para peritonite fecal livre; sua indicação é restrita. **D:** vazamento contínuo precisa ser interrompido. **Mini-revisão:** **Hinchey descreve gravidade, não uma operação mandatória única**.
+
+### Questão 5 — Perfuração esofágica
+
+Homem de 43 anos desenvolve dor torácica violenta e dispneia após vômitos intensos; CT mostra pneumomediastino e derrame pleural. Qual diferenciação está correta?
+
+A) Mallory–Weiss é ruptura transmural com mediastinite, e Boerhaave é apenas mucosa.  
+B) Boerhaave é ruptura transmural esofágica, enquanto Mallory–Weiss é laceração mucosa frequentemente com hematêmese.  
+C) Tríade de Mackler completa é obrigatória para suspeitar perfuração.  
+D) Pneumomediastino exclui lesão esofágica e prova pneumonia.
+
+**Gabarito: B.** **A:** troca mecanismos. **B:** perfuração transmural pode gerar mediastinite/empiema e exige equipe especializada. **C:** tríade clássica muitas vezes incompleta. **D:** gás mediastinal pode ter várias causas, incluindo perfuração. **Mini-revisão:** dor pós-vômito sem sangue não exclui Boerhaave.
+
+### Questão 6 — Source control na sepse
+
+Paciente com choque séptico, peritonite e extravasamento livre de conteúdo colônico em CT recebe antibiótico adequado, mas continua hipotenso. Qual princípio prioritário?
+
+A) Repetir antibiótico isolado por 21 dias antes de considerar cirurgia.  
+B) Acionar cirurgia e controle precoce da fonte em paralelo à ressuscitação; SSC 2026 sugere intervenção o quanto antes, idealmente até 6 horas quando exigida, sem justificar espera deliberada.  
+C) Evitar operação em qualquer paciente que esteja séptico.  
+D) Administrar antifúngico universal e dispensar drenagem.
+
+**Gabarito: B.** **A:** vazamento persistente não se resolve apenas por aumentar tempo. **B:** recomendações atuais valorizam controle do foco precoce, individualizando estabilidade/logística. **C:** sepse por perfuração é indicação frequente de intervenção. **D:** antifúngico empírico não é rotina e não substitui operação. **Mini-revisão:** **antibioticoterapia + controle de fonte**, não um ou outro isoladamente.
+
+### Questão 7 — Duração após controle adequado
+
+Adulto com peritonite secundária comunitária recebe ressecção/reparo adequado, sem abscesso residual, melhora clínica e não apresenta imunossupressão importante. Qual afirmação alinha-se à SIS 2024?
+
+A) Antibiótico sempre por 21 dias, mesmo com foco controlado.  
+B) Em muitos pacientes selecionados com infecção intra-abdominal complicada e controle adequado, cerca de quatro dias de antimicrobiano são suficientes.  
+C) Manter antibiótico enquanto qualquer dreno permanecer.  
+D) Suspender antibiótico obrigatório em todos antes de operar, mesmo com peritonite difusa.
+
+**Gabarito: B.** **A:** prolongamento indiscriminado aumenta danos. **B:** SIS 2024 e evidências apoiam cursos curtos após controle adequado, respeitando exceções. **C:** dreno não é indicador de infecção persistente isoladamente. **D:** antibioticoterapia apropriada integra abordagem da peritonite. **Mini-revisão:** **o relógio da antibioticoterapia depende do controle de fonte e da evolução**, não de presença de sutura/dreno.
+
+### Questão 8 — Trauma por cinto e CT equívoca
+
+Homem de 29 anos estável após trauma contuso apresenta sinal de cinto e líquido livre discreto sem lesão de órgão sólido na CT; cinco horas depois tem dor progressiva e defesa abdominal. Qual é a atitude mais segura?
+
+A) Alta obrigatória porque a primeira TC não mostrou ar.  
+B) Observação e reavaliação cirúrgica imediatas, com reimagem conforme situação e intervenção se peritonite.  
+C) Não considerar lesão de delgado sem hematêmese.  
+D) Esperar leucocitose por no mínimo 72 horas antes de reconhecer perfuração.
+
+**Gabarito: B.** **A:** lesões intestinais traumáticas podem ser inicialmente ocultas. **B:** WSES 2022 valoriza exame seriado e reimagem em alto risco; deterioração torna cirurgia prioritária. **C:** hematêmese não é necessária. **D:** marcadores laboratoriais não devem atrasar conduta. **Mini-revisão:** **sinal de cinto + CT duvidosa** exige vigilância clínica, não confiança cega no primeiro laudo.
+
+### Questão 9 — Colonoscopia e fechamento endoscópico
+
+Durante colonoscopia, pequeno defeito colônico é reconhecido de imediato e fechado por equipe experiente. A paciente está estável, sem peritonite, e a CT não mostra líquido livre relevante. Qual opção é adequada?
+
+A) Toda perfuração de colonoscopia exige laparotomia imediata independentemente do quadro.  
+B) Pode ser considerada vigilância rigorosa após fechamento endoscópico adequado, com retaguarda cirúrgica e plano de resgate se deteriorar.  
+C) Alta imediata sem orientação porque os clips impedem vazamento em 100%.  
+D) Não existe papel para cirurgia caso surjam peritonite e sepse.
+
+**Gabarito: B.** **A:** WSES 2017 admite abordagem endoscópica/conservadora em casos selecionados. **B:** estabilidade, tamanho do defeito, preparo intestinal, técnica e acompanhamento definem possibilidade. **C:** falha tardia existe. **D:** piora/peritonite exigem cirurgia. **Mini-revisão:** procedimentos iatrogênicos oferecem às vezes **controle endoscópico precoce**, não conservador irrestrito.
+
+### Questão 10 — Perfuração de obstrução tumoral
+
+Paciente de 76 anos com obstrução de cólon esquerdo por tumor apresenta grande distensão cecal e pneumoperitônio próximo ao ceco. Qual raciocínio está correto?
+
+A) O local do ar prova que não existe neoplasia de cólon distal.  
+B) A perfuração pode ocorrer proximalmente ao tumor por distensão/pressão; cirurgia deve resolver tanto a perfuração quanto obstrução causal.  
+C) Basta suturar ceco e manter tumor obstrutivo sem avaliação.  
+D) Colocação de sonda nasogástrica elimina o risco de peritonite fecal.
+
+**Gabarito: B.** **A:** lesão obstrutiva distal pode produzir perfuração diastática proximal. **B:** mecanismo exige avaliar válvula ileocecal, segmento proximal, tumor e condições cirúrgicas. **C:** não tratar a obstrução perpetua distensão e risco. **D:** SNG não controla escape fecal nem substitui cirurgia. **Mini-revisão:** localizar **mecanismo causal** é tão importante quanto localizar buraco.
+
+### Questão 11 — Rigidez sem ar, ar sem rigidez
+
+Qual proposição descreve melhor o raciocínio em pneumoperitônio?
+
+A) Ar livre sempre significa cirurgia, mesmo em todo pós-operatório assintomático.  
+B) Toda perfuração produz ar visível na radiografia; se RX é negativo não existe lesão.  
+C) Pneumoperitônio pode existir sem perfuração patológica ativa em cenários específicos; perfuração pode existir sem ar detectável, por isso a clínica e a CT quando apropriada são fundamentais.  
+D) Peritonite difusa é descartada se paciente não tem sinal de Jobert.
+
+**Gabarito: C.** **A:** ar residual após laparoscopia/procedimento e outras fontes podem ser benignas. **B:** método tem sensibilidade limitada, especialmente perfuração pequena/retroperitoneal. **C:** a interpretação integra história, sintomas, estado fisiológico e exames. **D:** Jobert não é teste obrigatório nem exclusivo. **Mini-revisão:** sinal radiológico ≠ diagnóstico clínico completo.
+
+### Questão 12 — Falha após operação e antibiótico
+
+No sexto dia após ressecção intestinal, paciente tem febre persistente, taquicardia e novo débito fecaloide por dreno; CT confirma coleção perianastomótica com extravasamento. Qual passo prioritário?
+
+A) Prolongar o mesmo antibiótico por mais três semanas sem reavaliar.  
+B) Tratar como falha de controle da fonte, envolvendo cirurgia e avaliando drenagem ou reintervenção conforme estabilidade e anatomia.  
+C) Suspender todo suporte porque a presença de dreno é suficiente para vedar o vazamento.  
+D) Prescrever apenas probiótico, porque toda febre pós-operatória é de disbiose.
+
+**Gabarito: B.** **A:** antibiótico sozinho pode falhar diante de vazamento ativo. **B:** identificar e controlar defeito/coleção é essencial; técnica depende de gravidade. **C:** dreno não sela anastomose deiscente. **D:** febre com choque/débito fecaloide exige investigação cirúrgica. **Mini-revisão:** **reavaliar anatomia quando há falha clínica**; não confundir duração de antibiótico com correção mecânica da fonte.
+
+## 30. Referências científicas e aplicação brasileira
+
+1. **Tarasconi A et al. (2020).** Perforated and bleeding peptic ulcer: WSES guidelines. *World Journal of Emergency Surgery* 15:3. DOI 10.1186/s13017-019-0283-9. https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/ . Fundamento de diagnóstico e manejo de úlcera perfurada, cirurgia e conservador selecionado.
+2. **Sartelli M et al. (2020).** 2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/ . Abscessos, gás à distância, peritonite, Hartmann versus anastomose.
+3. **WSES (2022).** WSES guidelines on blunt and penetrating bowel injury: diagnosis, investigations, and treatment. *World J Emerg Surg*. https://link.springer.com/article/10.1186/s13017-022-00418-y . Trauma contuso e penetrante, CT e exame seriado.
+4. **WSES (2017).** Guidelines for management of iatrogenic colonoscopy perforation. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/ . Fechamento endoscópico e não operatório selecionado.
+5. **Surgical Infection Society (2024).** The Surgical Infection Society Guidelines on the Management of Intra-Abdominal Infection: 2024 Update. *Surgical Infections*. DOI 10.1089/sur.2024.137. https://journals.sagepub.com/doi/full/10.1089/sur.2024.137 . Controle da fonte, antibióticos e duração.
+6. **Global Alliance for Infections in Surgery (2024).** Intra-abdominal infections survival guide: a position statement. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/ . Controle de foco e cursos antimicrobianos curtos quando bem controlados.
+7. **Prescott HC et al. (2026).** Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2026. *Critical Care Medicine* e *Intensive Care Medicine*, publicado 23 de março de 2026. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Ressuscitação, antibioticoterapia, vasopressores, reconhecimento/controle precoce da fonte.
+8. **WSES guidelines library.** https://www.wses.org.uk/scientific-resources/guidelines . Ponto de checagem de recomendações e versões sobre perfuração e infecções.
+9. **Ministério da Saúde/Anvisa — protocolos locais.** A escolha de antibióticos, fluxo de trauma, imagem, profilaxia e manejo de sepse deve ser adaptada aos serviços brasileiros e comissões de controle de infecção. **Não foi identificada nesta rodada uma diretriz nacional única que substitua todos os protocolos internacionais para perfuração de cada segmento; não atribuir conduta internacional a PCDT nacional inexistente.**
+
+**Cuidado de leitura:** referências do Drive usadas para benchmarking foram abertas antes da redação; seu conteúdo original não foi reproduzido. O arquivo do Drive de abdome agudo perfurativo é um resumo de ~4 mil caracteres e não equivale a um livro-texto extenso. As referências acima sustentam os pontos médicos e devem ser conferidas na revisão técnica final.
+
+## 31. Checklist editorial e de segurança
+
+- [x] Inventário LURIA e leitura real de resumo do Drive e quatro materiais correlatos antes da redação, com limitação de autoria documentada.
+- [x] 27 capítulos instrucionais progressivos, cobrindo fisiopatologia, clínica, exames, etiologias, fonte, cirurgia, exceções e complicações.
+- [x] Oito casos clínicos com apresentação, raciocínio, exames, conduta, erro crítico e relevância.
+- [x] Doze questões A–D com justificativa individual, gabarito e mini-revisão.
+- [x] Bibliografia médica identificável, destacando SSC **2026**, SIS **2024** e WSES.
+- [ ] Auditoria científica profissional de cirurgia, trauma, antibioticoterapia, tempo e anatomia.
+- [ ] Executar matriz de autossuficiência do material (capítulo-base de cada questão), revisar lacunas.
+- [ ] Curadoria de ≥10 imagens médicas candidatas e conferência de licença/anatomia; aprovação via Admin, nunca inserção direta.
+- [ ] Deduplicação semântica e certificação de ≥60 mil caracteres realmente instrucionais e úteis.
+- [ ] JSON de entrada/HTML de prévia, validadores oficiais executados, inspeção de desktop/PWA e acessibilidade.
+- [ ] **Não executar merge/deploy; ainda não está aprovada para publicação.**
