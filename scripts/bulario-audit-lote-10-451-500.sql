@@ -1,0 +1,83 @@
+-- LURIA — Bulário lote 10 (medicamentos 451–500), 15/10/2026.
+-- Triagem documental e de riscos; NÃO revisar, aprovar ou alterar dose, via, fonte ou data.status.
+-- Idempotente: não sobrescreve data.quality_audit já existente.
+WITH items(id,priority,clinical_area,action_required,prescription_copy_blocked) AS (
+ VALUES
+(299,'P1','Pneumologia','Ipratrópio + salbutamol no aerossol Combivent: conferir concentração por acionamento, técnica inalatória, indicação de DPOC/broncoespasmo e limite por idade; não equiparar a nebulização.',false),
+(300,'P1','Otorrino/Pneumologia','Propionato de fluticasona consta apenas como spray nasal 50 mcg/jato em dois volumes. Não confundir com formas pulmonares inalatórias nem com furoato de fluticasona; revisar dose por idade.',false),
+(302,'P0','Otorrino/Dermatologia','Mometasona mistura spray nasal 50 mcg/jato e creme/pomada 0,1% no mesmo medicamento. Separar vias e doses, validar indicação e exposição sistêmica em crianças antes de copiar prescrição.',true),
+(308,'P1','Cardiologia/APS','Candesartana cilexetila em 8/16 mg: verificar titulação por hipertensão/IC, potássio, rim, gestação e formulações pediátricas se disponíveis.',false),
+(310,'P1','Clínica/Oftalmologia','Acetazolamida comprimido 250 mg: revisar ajuste renal, contraindicações, acidose/eletrólitos e dose por glaucoma, mal de altitude e outras indicações.',false),
+(311,'P1','Cardiologia/APS','Valsartana + HCTZ em cinco combinações 80/12,5 a 320/25 mg: validar proporção de cada componente, função renal/eletrólitos e contraindicação na gestação.',false),
+(315,'P1','Cardiologia/APS','Losartana + HCTZ possui formas rotuladas por hipertensão/hipertrofia ventricular; separar dose da associação 50/12,5 e 100/25 de regime clínico e revisar potássio.',false),
+(319,'P1','Cardiologia','Nebivolol 5 mg: revisar diferenças de uso em hipertensão e IC, titulação, bradicardia/bloqueio AV, função hepática e cautela em asma/DPOC.',false),
+(322,'P0','GO/Contracepção','Estradiol valerato + dienogeste em cartela multifásica 28 comprimidos: confirmar sequência das cores/doses e manejo de esquecimento; não tratar como cartela monofásica.',true),
+(323,'P1','Reumatologia/Gastroenterologia','Sulfassalazina 500 mg de liberação retardada: conferir indicação na DII/artrite, titulação, G6PD, toxicidade hematológica/hepática e monitorização.',false),
+(329,'P1','Clínica/Dor','Dipirona + orfenadrina + cafeína (comprimidos/gotas): confirmar dose e proporção de três componentes por forma, risco anticolinérgico e alergias, sem aplicar esquema da dipirona isolada.',false),
+(331,'P1','Psiquiatria','Venlafaxina XR 37,5/75/150 mg: conferir liberação prolongada, retirada/descontinuação, hipertensão, risco serotoninérgico e ajuste renal/hepático.',false),
+(334,'P1','Clínica/Alergia','Prometazina comprimido 25 mg: revisar sedação, risco anticolinérgico, interações e contraindicação/limites etários pediátricos.',false),
+(338,'P1','Psiquiatria/Sono','Zopiclona sem força no rótulo da ficha; confirmar produto, dose por idade/sexo quando relevante, dependência, quedas e comportamentos do sono antes de validar.',false),
+(340,'P1','Psiquiatria','Bromazepam com regimes chamados ambulatório e casos graves, sem concentração explícita no rótulo; revisar dose por apresentação, dependência, suspensão gradual e interações depressoras do SNC.',false),
+(341,'P0','Anestesia','Ropivacaína Naropin com 2/7,5/10 mg/mL agrupadas, e cadastro separado ID 465. Risco de concentração/técnica neuraxial; separar e reconciliar as fichas antes de liberar cópia.',true),
+(343,'P0','Clínica/Dor/Paliativos','Oxicodona de liberação prolongada 10/20/40 mg, referida como histórica: verificar situação de registro/mercado, tolerância opioide, riscos respiratórios e não triturar formulação LP.',true),
+(345,'P0','Oncologia/Metabolismo ósseo','Ácido zoledrônico: somente Aclasta IV 5 mg/100 mL. Não intercambiar com esquemas oncológicos de ácido zoledrônico 4 mg; conferir indicação, creatinina e risco osteonecrose.',true),
+(347,'P1','Endocrinologia/Diabetes','Exenatida Byetta 5/10 mcg por dose: validar esquema e disponibilidade do produto de aplicação frequente, e diferenciar de exenatida de ação prolongada semanal.',false),
+(351,'P1','Gastroenterologia/APS','Loperamida 2 mg: conferir idade, duração, contraindicações em disenteria/colite e risco de cardiotoxicidade em doses excessivas.',false),
+(374,'P0','Infectologia/Cirurgia','Cefoxitina com nove esquemas de infecção, profilaxia cirúrgica e pediatria: revisar dose máxima por faixa etária, tempo pós-incisão, ajuste renal e diluição.',true),
+(382,'P0','Infectologia/Pediatria','Ertapeném possui regimes separados ≥13 anos e 3 meses–12 anos: conferir dose/peso pediátrica, indicação, renal, reconstituição IV versus IM e limitações de cobertura.',false),
+(386,'P0','Infectologia/UTI','Imipenem + cilastatina com quatro esquemas adultos/pediátricos: conferir expressão em mg de imipenem/cilastatina, função renal, convulsões, máximo diário e tempo de infusão.',true),
+(397,'P0','Infectologia/UTI','Polimixina B IV: apresentação em UI por frasco; impedir conversão indevida para mg/colistimetato, verificar função renal, neurotoxicidade, preparo e protocolo institucional.',true),
+(399,'P0','Infectologia/Hospitalar','Teicoplanina inclui sete regimes IV/IM e uma via ORAL para C. difficile, além de dose neonatal. Confirmar se apresentação serve VO, diluição/indicação, carga e monitorização por produto antes de cópia.',true),
+(405,'P1','Cardiologia/APS','Anlodipino 5/10 mg é potencial duplicado clínico da ficha Amlodipino ID 736. Reconciliar grafia/sinônimos, evidência e indicação sem fundir registros e perder auditoria.',false),
+(465,'P0','Anestesia','Ropivacaína em 2/7,5/10 mg/mL e bolsa 2 mg/mL difere entre bloqueios/peridural. Reconciliar com cloridrato de ropivacaína ID 341, evitar selecionar dose para via errada.',true),
+(486,'P1','Endocrinologia/Pediatria','Dulaglutida com monoterapia/associação adulta e esquema pediátrico >10 anos: confirmar indicação autorizada para faixa etária e apresentação da caneta, titulação e eventos GI.',false),
+(503,'P0','GO/Contracepção','Etinilestradiol+levonorgestrel contém duas cartelas com proporções hormonais distintas (250/50 e 150/30 mcg). Não copiar dose de uma para outra; reconciliar ficha da associação inversamente nomeada ID 995.',true),
+(511,'P1','Clínica/Dor','Naproxeno sódico 275/550 mg: verificar equivalência em naproxeno base, dose máxima por indicação, rim, sangramento GI e contraindicações gestacionais.',false),
+(513,'P0','Clínica/Dor','Meloxicam agrupa comprimidos 7,5/15 mg e injetável 15 mg/1,5mL em uma única formulação sem fonte individual por via. Separar VO/IM e validar contraindicações.',true),
+(531,'P0','Infectologia/UTI','Colistimetato de sódio IV/inalatório sem source_url: risco elevado de confusão entre milhões de UI, mg de colistimetato e mg de colistina-base. Validar produto, diluição, função renal e indicação.',true),
+(533,'P0','Endocrinologia','Tirzepatida em canetas 2,5–15 mg, sem source_url; ficha inclui uma dose máxima pediátrica ≥10 anos que exige checagem de aprovação e bula brasileira vigente. Validar dispositivo, titulação e população.',true),
+(535,'P0','Emergência/UTI','Gliconato de cálcio IV 10% sem source_url: revisar mg do sal versus mg de cálcio elementar, mmol/mEq, diluição, infusão, extravasamento e monitorização de ECG.',true),
+(548,'P0','Infectologia/Hospitalar','Ceftarolina IV 600 mg sem source_url: confirmar bula profissional brasileira, diluição/infusão, indicação MRSA, ajuste renal, pediatria e hipersensibilidade.',false),
+(549,'P0','GO/Obstetrícia','Carbetocina 100 mcg/mL sem source_url: confirmar produto e via aprovada (IV/IM), indicação preventiva pós-parto, dose única, condições de armazenamento e contraindicações.',true),
+(567,'P1','Endocrinologia','Fludrocortisona 0,1 mg sem fonte por apresentação: validar indicação de insuficiência adrenal/hipotensão, retenção hidrossalina, potássio e pressão arterial.',false),
+(568,'P0','Neurologia','Lacosamida comprimidos, solução oral e IV reunidos sem fonte individual. Separar concentração em mg/mL, indicação por idade, dose de ataque, risco de prolongamento PR e ajustes renal/hepático.',true),
+(569,'P0','Hematologia/Anticoagulação','Fondaparinux SC combina 2,5 mg profilático e forças terapêuticas 5/7,5/10 mg sem fonte individual. Separar indicação/peso, função renal, sangramento e timing perioperatório.',true),
+(571,'P1','Gastroenterologia/Infectologia','Rifaximina 200/550 mg em mesma formulação sem source_url: separar indicações de diarreia, encefalopatia hepática e SII conforme aprovações brasileiras.',false),
+(574,'P0','Cardiologia/Antiplaquetários','Prasugrel 5/10 mg sem source_url: revisar contraindicação em AVC/AIT prévio, idosos/baixo peso, intervenção coronária e risco hemorrágico.',false),
+(579,'P0','Pediatria/Infectologia','Benzilpenicilina procaína IM com concentração indefinida e sem source_url; diferenciar de penicilina benzatina e cristalina, confirmar esquema de sífilis congênita e logística de doses.',true),
+(590,'P0','Infectologia/UTI','Ceftazidima + avibactam 2g/0,5g IV sem source_url: registrar dose por componentes, indicação de Gram-negativos resistentes, função renal e tempo de infusão.',false),
+(592,'P0','Infectologia/UTI','Anfotericina B DESOXICOLATO IV sem source_url: não intercambiar esquema mg/kg com anfotericina B lipossomal (ID 1), validar eletrólitos, rim, infusão e toxicidade.',true),
+(598,'P1','Cardiologia','Ivabradina 5/7,5 mg sem source_url: conferir uso em ritmo sinusal, frequência cardíaca, indicações de IC, interação CYP3A4 e bradicardia.',false),
+(609,'P0','Emergência/Cardiologia','Nicardipino IV sem source_url nem concentração definida; ficha menciona apresentações orais estrangeiras. Identificar concentração da solução IV, diluição, bomba, titulação e monitorização.',true),
+(613,'P0','Emergência/UTI','Clevidipino 0,5 mg/mL em emulsão lipídica sem source_url: confirmar diluição (se permitida), mg/h, bomba infusora, metabolismo de emulsão/soja/ovo e carga lipídica.',true),
+(623,'P0','Infectologia/Hospitalar','Remdesivir IV 100 mg sem source_url: confirmar registro e indicações atuais, peso/idade e formulação de preparo, função hepática/renal e infusão.',false),
+(624,'P0','Clínica/Infusões','Carboximaltose férrica IV 50 mg/mL sem source_url: conferir dose calculada por peso/Hb, limite por infusão, hipofosfatemia, anafilaxia e observação.',true),
+(659,'P0','Clínica/Dor/Dependência','Metadona inclui comprimidos, solução oral e injetável em uma apresentação sem source_url. Necessário separar vias/concentrações e conversão opioide, QT e risco de acúmulo/overdose.',true)
+), annotated AS (
+ UPDATE public.bulario_drugs d SET data=jsonb_set(d.data,'{quality_audit}',jsonb_build_object(
+  'batch','bul-10-451-500',
+  'screened_at','2026-10-15',
+  'scope','individual_formulation_source_safety_risk_and_duplicate_name_triage',
+  'scientifically_validated',false,
+  'priority',i.priority,
+  'clinical_area',i.clinical_area,
+  'action_required',i.action_required,
+  'prescription_copy_blocked',i.prescription_copy_blocked,
+  'source_review_status','SOURCE_URL_PRESENT_DOES_NOT_IMPLY_CLINICAL_VALIDATION',
+  'review_status','PENDING_CLINICAL_SOURCE_REVIEW',
+  'formulation_count',jsonb_array_length(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END),
+  'missing_source_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE coalesce(f->>'source_url','') NOT LIKE 'http%'),
+  'retailer_or_aggregator_hosted_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE lower(coalesce(f->>'source_url','')) ~ '(consultaremedios[.]com[.]br|saudedireta[.]com[.]br|remediobarato[.]com|bula[.]com[.]br|drogasil[.]com[.]br|vteximg[.]com[.]br|onepharma[.]com[.]br|oncoexpress[.]com[.]br)'),
+  'generic_placeholder_forms',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE coalesce(f->>'label','') ILIKE '%conforme produto%' OR coalesce(f->>'label','') ILIKE '%conforme registro%' OR coalesce(f->>'label','') ILIKE '%conforme mercado%'),
+  'repeated_formulation_label_groups',(SELECT count(*) FROM(SELECT lower(coalesce(f->>'label','')) label FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f GROUP BY 1 HAVING count(*)>1) g),
+  'missing_core_safety_fields',to_jsonb(array_remove(ARRAY[
+    CASE WHEN NOT d.data?'renal_adjustment' THEN 'renal_adjustment' END,
+    CASE WHEN NOT d.data?'hepatic_adjustment' THEN 'hepatic_adjustment' END,
+    CASE WHEN NOT d.data?'contraindications' THEN 'contraindications' END,
+    CASE WHEN NOT d.data?'drug_interactions' THEN 'drug_interactions' END,
+    CASE WHEN NOT d.data?'adverse_reactions' THEN 'adverse_reactions' END
+  ],NULL))
+ ),true)
+ FROM items i WHERE d.id=i.id AND NOT(d.data?'quality_audit') RETURNING d.id
+)
+SELECT count(*) tagged_now,(SELECT count(*) FROM items) expected FROM annotated;
