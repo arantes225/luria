@@ -1,4 +1,4 @@
-# LURIA — Lote 7 · Aula 137
+# LURIA — Tema 137 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)
 # Doença do refluxo gastroesofágico (DRGE) e hérnia hiatal
 
 **Área:** Cirurgia Geral / Gastroenterologia. **Situação:** rascunho autoral em revisão, **não publicado**.  
@@ -371,6 +371,31 @@ Fundoplicatura pode controlar refluxo, mas não substitui vigilância do epitél
 
 **Questão de raciocínio:** pessoa com Barrett de 4 cm sem displasia confirmada, em bom estado, sente pouca azia com IBP. Deve fazer fundoplicatura porque o segmento é “grande”? Não necessariamente. Vigiar pelo protocolo, tratar sintomas/complicações e individualizar indicação cirúrgica por refluxo objetivado e preferências; comprimento de Barrett por si só não obriga cirurgia.
 
+### 20.6. O que a diretriz AGA 2025 acrescentou à vigilância de Barrett
+
+Em **20/10/2025**, a *American Gastroenterological Association* (AGA) publicou diretriz específica de **vigilância do esôfago de Barrett**, posterior à ACG 2022 utilizada nas seções anteriores. É essencial distinguir uma recomendação **condicional** de vigilância personalizada de uma regra rígida “todos fazem EDA anual”. O objetivo é identificar displasia e neoplasia em fase tratável, sem transformar alterações microscópicas de risco muito baixo em procedimentos desnecessários.
+
+| Cenário | Interpretação da AGA 2025 | Decisão didática |
+|---|---|---|
+| Barrett endoscópico e histológico **sem displasia**, segmento reconhecido e exame de qualidade | **Sugere** vigilância endoscópica em comparação a não vigiar, com **evidência de baixa certeza** | Planejar endoscopia de qualidade, considerando expectativa de vida, comorbidades, segmento e preferências |
+| Epitélio colunar **<1 cm** na junção, metaplasia intestinal em biópsia e **sem neoplasia** | **Sugere contra** endoscopias de vigilância rotineiras nesse cenário | Evitar criar “Barrett de 5 mm com EDA anual”; distinguir lesão visível/nódulo que exige investigação por outra razão |
+| Barrett sem displasia, **≥3 cm** | Especialistas no painel usualmente aconselham **EDA aproximadamente a cada 3 anos** | Qualidade do exame, extensão e riscos individuais importam |
+| Barrett sem displasia, segmento **<3 cm** e perfil de menor risco | Intervalo pode ser estendido até **5 anos** | Não reduzir automaticamente o intervalo só pela existência de pirose |
+| Exame de vigilância de Barrett | **Recomenda luz branca de alta definição associada à cromoendoscopia**, além de amostragem estruturada e avaliação dirigida de lesões | Melhorar detecção de alterações discretas sem abandonar biópsias sistemáticas pertinentes |
+| Barrett confirmado sem contraindicação a IBP | **Sugere IBP diário** em vez de ausência de IBP; para prevenção de progressão neoplásica, **sugere IBP em preferência à cirurgia antirrefluxo** | Fundoplicatura pode tratar refluxo em indicação própria, mas **não** equivale a terapia preventiva oncológica |
+
+**Biópsia e anatomia:** se o exame revela *nódulo, ulceração, depressão, lesão elevada focal* ou outra irregularidade suspeita, a prioridade é **caracterizar e biopsiar/ressecá-la adequadamente**, conforme equipe especializada, não esperar o próximo ciclo de vigilância de um Barrett estável. AAGA 2025 não muda a necessidade de confirmação histopatológica e de segunda leitura especializada da **displasia** por patologia gastrointestinal. A amostragem estruturada deve ser interpretada junto à tecnologia de imagem; cromoendoscopia não é licença para colher uma única biópsia ao acaso.
+
+**A decisão de interromper vigilância também é decisão clínica.** Quando idade avançada, comorbidades graves ou expectativa de vida tornam improvável benefício de detectar displasia, discutir suspensão de vigilância com a pessoa é mais apropriado do que repetir endoscopia indefinidamente. Isso **não** significa abandonar investigação diante de disfagia progressiva, sangramento, anemia ou novo sinal de alarme: a indicação diagnóstica por sintoma é distinta da vigilância programada.
+
+**Exemplo de prova 1:** paciente de 64 anos com pequena irregularidade da linha Z de 6 mm, biópsia com metaplasia intestinal e **nenhuma lesão visível**. Rotular “Barrett curto precisa EDA anual” é incorreto; a diretriz AGA 2025 desaconselha vigilância rotineira de segmento colunar <1 cm sem neoplasia.
+
+**Exemplo de prova 2:** mulher de 59 anos com Barrett de 4 cm confirmado, sem displasia e com longa expectativa de vida. Um esquema de vigilância em torno de **3 anos**, exame cuidadoso sob luz branca de alta definição e cromoendoscopia e biópsias adequadas é coerente; operar uma pequena hérnia incidental **não substitui** esse plano.
+
+**Limite de generalização:** a AGA é uma sociedade norte-americana e sua diretriz usa categorias epidemiológicas e recursos endoscópicos específicos. A aplicação brasileira requer adaptação ao acesso do SUS, disponibilidade de endoscopia de qualidade e alinhamento com sociedades e profissionais locais. O resumo original do Drive não ensina esta atualização nem substitui a fonte.
+
+**Referência primária:** Wani S et al. *AGA Clinical Practice Guideline on Surveillance of Barrett’s Esophagus*. *Gastroenterology*. 2025;169(6):1184–1231. Publicação online em **20/10/2025**. DOI **10.1053/j.gastro.2025.09.012**. Resumo e oito recomendações: https://gastro.org/clinical-guidance/surveillance-of-barretts-esophagus/ ; publicação indexada: https://pubmed.ncbi.nlm.nih.gov/41125322/.
+
 ## 21. Farmacologia aplicada: indicar, otimizar e desprescrever IBP com segurança
 
 ### 21.1. Por que o horário importa
@@ -540,7 +565,7 @@ Estabelecer como monitorar **sintoma-alvo**, capacidade de alimentação/degluti
 **Conduta:** discussão multidisciplinar, escolha de abordagem individual após esclarecer dismotilidade e risco; evitar cirurgia rotineira sem conclusão motora.  
 **Por que importa:** demonstra que duas doenças podem coexistir e exigir prioridades diferentes.
 
-## 27. Oito questões adicionais para consolidar as lacunas avançadas
+## 27. Questões adicionais para consolidar as lacunas avançadas (inclui atualização AGA 2025)
 
 ### Questão 7 — suspeita de refluxo sem evidência objetiva
 Pessoa com rouquidão crônica isolada e EDA normal não melhora com IBP. Qual é a abordagem mais adequada?
@@ -556,6 +581,14 @@ A. Tela obrigatória em toda cirurgia. B. Nunca pode ser utilizada. C. Tela só 
 Homem com Barrett de 4 cm com metaplasia intestinal confirmada e sem displasia em exame de qualidade. ACG 2022 sugere, em geral, EDA de vigilância:
 A. Diariamente. B. Em aproximadamente três anos, individualizando. C. Nunca mais. D. A cada três meses por tempo indefinido.  
 **Gabarito B.** Segmento ≥3 cm sem displasia recebe vigilância trienal pela ACG 2022. **A/D** excessivos; **C** ignora risco. **Mini-revisão:** comprimento modifica intervalo.
+
+### Questão 9A — nova vigilância do Barrett: AGA 2025
+Homem de 57 anos realizou EDA por sintomas típicos: linha Z irregular, segmento de mucosa colunar medido em **6 mm**, sem nódulos ou lesões visíveis, biópsia com metaplasia intestinal e sem displasia. Assinale a conduta mais fiel à AGA 2025:
+A. EDA de vigilância semestral para toda metaplasia, independentemente de extensão.  
+B. Encaminhar para fundoplicatura como prevenção oncológica obrigatória.  
+C. Não instituir vigilância periódica rotineira **apenas por esse segmento colunar <1 cm sem neoplasia**; considerar sinais de alarme e diagnósticos concomitantes de forma independente.  
+D. Fazer cirurgia de ressecção esofágica antes da primeira vigilância.  
+**Gabarito C.** A diretriz AGA 2025 sugere **contra** vigilância periódica de epitélio colunar <1 cm com metaplasia intestinal e sem neoplasia. **A** exagera risco e gera exames repetitivos sem benefício comprovado; **B** confunde manejo de refluxo e prevenção de progressão, para a qual a AGA sugere IBP diário em vez de cirurgia; **D** representa tratamento invasivo sem lesão neoplásica. **Mini-revisão:** a conduta é determinada pela anatomia confiável, histologia, qualidade endoscópica e presença de lesão visível, não só pela palavra “metaplasia”.
 
 ### Questão 10 — pHmetria de quatro dias
 AET sem IBP em quatro dias: 7,6%; 7,8%; 3,1%; 2,5%. Qual interpretação favorecida por Lyon 2.0?
@@ -593,12 +626,12 @@ A. Critério definitivo de esofagite infecciosa. B. Achado que sempre indica mio
 | EDA, Los Angeles e disfagia | Seções 5, 19 e 20 | Caso 6; Q5, Q9 |
 | Manometria e risco cirúrgico | Seções 5, 19 e 24 | Caso 8; Q5, Q14 |
 | Farmacoterapia e desprescrição | Seções 7, 21 | Casos 1, 2 e 5; Q1, Q12 |
-| Barrett e vigilância | Seções 7, 20 e 25 | Caso 7; Q9 |
+| Barrett e vigilância, incluindo AGA 2025 | Seções 7, 20 (especialmente 20.6) e 25 | Caso 7; Q9 e Q9A |
 | Fundoplicatura/reparo hiatal | Seções 8, 24, 25 | Casos 3, 4, 8; Q6, Q8, Q11 |
 | Emergência volvo/estrangulamento | Seções 8, 24 | Caso 4; exigirá questão específica adicional |
 | Seguimento e recidiva pós-op | Seção 25 | Q11; ainda requer casos de recidiva |
 
-**Nota de auditoria:** nesta edição existem quatro casos originais + quatro casos adicionais = oito casos. As seis questões originais + oito adicionais = catorze questões autorais. A matriz mostra cobertura, mas **não certifica autossuficiência**: falta auditoria de doses e decisão cirúrgica presencial especializada, além de imagens clínicas reais. A meta nominal de ≥60.000 caracteres didáticos úteis continua sujeita a contagem descontando metadados, questões repetidas, referências e checklist. Não inflar texto apenas para cumprir métrica.
+**Nota de auditoria:** nesta edição existem quatro casos originais + quatro casos adicionais = oito casos. As seis questões originais + oito adicionais e a questão 9A de atualização = quinze questões autorais. A matriz mostra cobertura, mas **não certifica autossuficiência**: falta auditoria de doses e decisão cirúrgica presencial especializada, além de imagens clínicas reais. A meta nominal de ≥60.000 caracteres didáticos úteis continua sujeita a contagem descontando metadados, questões repetidas, referências e checklist. Não inflar texto apenas para cumprir métrica.
 
 ## 29. Revisão editorial final desta rodada (ainda em rascunho)
 - [x] Acrescentadas explicações de mecanismos, três laudos interpretados, pH sem fio por 96 h, esofagite Los Angeles, EDA/hérnia/Barrett, Chicago 4.0, critérios de cirurgia e pós-operatório.
@@ -608,6 +641,7 @@ A. Critério definitivo de esofagite infecciosa. B. Achado que sempre indica mio
 - [x] Adicionados quatro casos e oito questões para testar situações complexas.
 - [ ] Falta benchmark Drive de mesmo nível de profundidade, pois os dois PDFs acessíveis são resumos de DRGE e dispepsia.
 - [ ] Falta protocolo brasileiro auditado, com posologias/apresentações de medicamentos/contraindicações por população.
+- [ ] Conferir adaptação brasileira da AGA Barrett 2025, histopatologia especializada, cromoendoscopia e capacidade local de vigilância antes de publicação.
 - [ ] Falta revisão médica externa, imagens verdadeiras com licença comercial, prova de autossuficiência e integração visual.
 - [ ] Nenhuma edição de HTML nem deploy realizado.
 **Parecer editorial:** rascunho agora substancial e mais próximo de livro-texto, porém **ainda não certificado**.
