@@ -444,3 +444,69 @@ Registros de anticorpo devem acompanhar a paciente também fora da obstetrícia:
 | RN com DAT positivo e elevação crítica | fototerapia intensiva, possível intervenção | usar IVIG em todo DAT positivo |
 | Pós-TIU com bilirrubina controlada | ainda pode ter anemia tardia | alta sem plano de hemoglobina |
 
+
+## 15. Oito casos clínicos comentados
+
+### Caso 1 — Profilaxia de rotina antes da sensibilização
+
+Gestante de 27 anos, G1P0, 28 semanas, tipagem O RhD-negativo e PAI negativa no início do pré-natal. Não relata transfusões, cirurgias ou perdas. Exame materno e fetal de rotina sem intercorrências; não há resultado confiável do RhD fetal. A paciente pergunta: “Se meu bebê parece saudável, por que preciso de uma injeção?”.
+
+**Problema:** risco preventivo de sensibilização anti-D, ainda **sem evidência de aloimunização**. **Mecanismo:** possível passagem assintomática de hemácias fetais D-positivas ao sangue materno pode induzir IgG anti-D persistente, afetando gestações subsequentes. Anti-D profilática reduz sensibilização, não serve para tratar anemia fetal presente.
+
+**Conduta:** conferir PAI atual e colher amostra antes de dose conforme protocolo; oferecer imunoglobulina anti-D na janela antenatal padronizada (habitualmente por volta de 28 semanas), com dose/apresentação local verificada, registrar lote e data. Após parto, determinar RhD do RN e planejar dose materna pós-parto se bebê D-positivo e mãe ainda sem anti-D imune. **Por que importa:** profilaxia materna não depende de sintomas neonatais e a dose antenatal não exclui necessidade da pós-parto.
+
+### Caso 2 — Coombs positivo depois de anti-D não comprova doença
+
+Gestante de 32 anos, RhD-negativa, teve PAI negativa às 27 semanas e recebeu anti-D profilática às 28. Às 31 semanas, exame externo mostra PAI positiva com anticorpo anti-D em nível baixo. A paciente recebe mensagem: “Você está sensibilizada; seu bebê poderá ficar anêmico”.
+
+**Hipótese:** **anti-D passivo** decorrente de profilaxia, desde que não haja evidência prévia de imunização ou concentração incompatível. **Raciocínio:** o exame identifica anticorpos circulantes, mas não determina sua origem. A BSH orienta considerar documentação de dose/data e comparação com amostra pré-profilaxia. Uma conclusão de “aloimunizada” sem histórico provoca ansiedade e intervenções desnecessárias; porém não se pode presumir passividade se não há registro confiável.
+
+**Conduta:** revisar laboratório anterior, forma de identificação e título/concentração, data e dose; discutir com imuno-hematologia se houver dúvida. Não suspender profilaxia pós-parto necessária por falso diagnóstico de imunização ativa. **Por que importa:** o contexto temporal transforma a interpretação de um mesmo teste.
+
+### Caso 3 — RhD positivo não afasta anemia fetal por anti-K
+
+Gestante de 30 anos, grupo A RhD-positivo, recebeu transfusão sanguínea após cirurgia há seis anos. Na primeira consulta obstétrica, PAI detecta **anti-K** em título baixo. No serviço, alguém argumenta que “não tem risco de eritroblastose porque a mãe é Rh positivo”.
+
+**Hipótese:** aloimunização anti-K clinicamente significativa em mulher D-positiva, com possível risco fetal se o feto expressar K. **Raciocínio:** o anti-K pode diminuir produção de hemácias por supressão de precursores eritroides e produzir anemia com títulos menores que outros anticorpos. Não há necessidade de incompatibilidade D para haver doença.
+
+**Conduta:** referência precoce a medicina fetal/hemoterapia já na identificação; avaliar possibilidade de genotipagem fetal antígeno K, histórico transfusional e monitorização individual de Doppler. A BSH 2025 menciona título ≥1:4 para início de Doppler seriado em feto de risco, mas a referência é indicada desde a identificação e a aplicação requer serviço especializado. **Por que importa:** é uma das armadilhas mais frequentes ao estudar exclusivamente anti-D.
+
+### Caso 4 — Título modesto, passado obstétrico grave
+
+Mulher de 36 anos, RhD-negativa, gravidez anterior com feto que desenvolveu hidropisia e precisou de TIU por anti-D, apresenta-se ao pré-natal com 12 semanas. PAI confirma anti-D imune, ainda com concentração relativamente baixa em comparação com o pico da gestação anterior.
+
+**Risco:** recidiva potencialmente grave, possivelmente mais precoce que na primeira gravidez afetada. **Raciocínio:** memória imunológica e histórico de lesão fetal têm alto valor prognóstico; não é seguro esperar ultrapassar “título crítico” geral de laboratório antes de encaminhar.
+
+**Conduta:** referência **precoce à medicina fetal**, idealmente antes de 20 semanas conforme BSH 2025, avaliar antígeno fetal D, tendência de concentração e construir calendário de Doppler/possíveis TIUs. Não administrar imunoglobulina anti-D como tentativa de tratar sensibilização imune existente. **Por que importa:** acompanhamento baseado apenas no título do dia ignora risco biológico acumulado.
+
+### Caso 5 — PSV-ACM elevada e 29 semanas: não automatizar o parto
+
+Gestante de 29 semanas com anti-c clinicamente significativo e feto antígeno-positivo apresenta PSV-ACM **1,66 MoM** em exame com boa técnica. Não há hidropisia, CTG não mostra sinal de comprometimento agudo e mãe está estável. Serviço não realiza transfusão intrauterina.
+
+**Hipótese:** anemia fetal moderada/grave possível; necessita confirmação/planejamento especializado. **Raciocínio:** valor acima de 1,5 MoM aumenta suspeita, mas não é diagnóstico de etiologia nem limiar automático de cesariana. Em 29 semanas, transfusão intrauterina pode permitir maturação adicional e reduzir prematuridade se indicada.
+
+**Conduta:** encaminhamento **urgente** a centro com medicina fetal/hemoterapia, revisar anticorpo e antígeno, Doppler, estimativa de risco e necessidade de cordocentese preparada para TIU. Se deterioração grave exigir parto, equipe obstétrica/neonatal participa. **Por que importa:** um número sozinho não substitui análise de risco entre prematuridade e anemia.
+
+### Caso 6 — Trauma abdominal com RhD negativo e pouca perda visível
+
+Gestante G2P1 RhD-negativa, PAI negativa, 25 semanas, sofre colisão automobilística com impacto abdominal moderado. Não relata sangramento vaginal e está consciente e estável. Feto com batimentos presentes, mas necessita avaliação obstétrica.
+
+**Problema:** trauma é evento potencialmente sensibilizante, mesmo sem sangramento exteriorizado; também exige investigar descolamento, trabalho de parto e comprometimento fetal. **Raciocínio:** hemorragia feto-materna pode ser oculta e volume importante pode exigir profilaxia anti-D superior à dose habitual.
+
+**Conduta:** avaliação materno-fetal conforme trauma obstétrico; registrar RhD/PAI e considerar imunoglobulina anti-D no prazo apropriado por protocolo para gestante elegível, avaliando hemorragia feto-materna e dose adicional quando indicado. A anti-D não substitui monitorização de trauma e não previne complicações mecânicas do acidente. **Por que importa:** ausência de sangue vaginal não exclui sensibilização.
+
+### Caso 7 — Icterícia às dez horas de vida e incompatibilidade ABO
+
+RN de 39 semanas, mãe O RhD-positiva, bebê B RhD-positivo, tem icterícia observada com dez horas de vida. DAT positivo, hemoglobina discretamente reduzida e bilirrubina total sérica em ascensão. Está alerta e mama, sem sinais neurológicos.
+
+**Hipótese:** doença hemolítica ABO possível, a correlacionar com hemólise e outras causas de hiperbilirrubinemia. **Raciocínio:** incompatibilidade ABO pode ocorrer já na primeira gestação e não requer mãe RhD-negativa. Icterícia precoce demanda dosagem/monitorização objetiva. O DAT positivo não define nível de intervenção.
+
+**Conduta:** posicionar **TSB na curva AAP apropriada por horas de vida, idade gestacional e risco de hemólise**, monitorar velocidade de subida, hemoglobina/reticulócitos e ingestão; iniciar fototerapia se limiar específico for alcançado. Não aplicar “fototerapia para todos acima de 12 mg/dL” nem confiar apenas na cor da pele. **Por que importa:** idade em horas e risco de neurotoxicidade são elementos do gabarito.
+
+### Caso 8 — Bilirrubina próxima à troca e erro de usar IVIG como primeira resposta
+
+RN de 36 semanas, DAT positivo por anti-D materno **imune**, desenvolve rápida elevação da TSB apesar de fototerapia. Novo valor atinge **2 mg/dL abaixo** do limiar de exsanguíneotransfusão específico para 36 semanas/idade em horas/fatores de risco. Está sem sinais neurológicos intermediários no momento, mas a curva continua ascendente.
+
+**Problema:** situação de **escalonamento emergencial de cuidado** conforme AAP 2022. **Raciocínio:** esse limiar exige preparação de troca e monitorização intensiva, mas a troca depende do limiar absoluto e/ou encefalopatia. IVIG não é terapia inócua, e o benefício para evitar exsanguíneotransfusão é incerto.
+
+**Conduta:** unidade com neonatologia/hemoterapia e capacidade de troca, fototerapia intensiva, hidratação apropriada, TSB ao menos a cada duas horas, exames de gravidade e tipagem/prova cruzada; discutir IVIG apenas como **opção selecionada** dado DAT positivo e progressão. Exsanguíneotransfusão urgente se atingir limiar ou surgirem sinais neurológicos relevantes. Organizar seguimento de anemia tardia após a estabilização. **Por que importa:** previne a perda de tempo com “uma dose de IVIG e esperar”, enquanto encefalopatia se aproxima.
