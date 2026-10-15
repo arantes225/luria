@@ -320,3 +320,104 @@ Considerar internação em cenário de risco atual que não possa ser manejado c
 
 Uma alta segura exige **plano de seguimento efetivo**, contatos de crise, orientação à família/rede quando apropriado, reavaliação de acesso a meios e condutas de proteção, e encaminhamento à APS/RAPS/psiquiatria/psicoterapia conforme necessidades. Transição pós-internação pode ser período vulnerável; datas e responsáveis precisam estar definidos, evitando recomendações vagas de “procure atendimento se piorar”.
 
+
+## 12. Populações especiais e comorbidades
+
+### 12.1. Adolescentes e jovens adultos
+
+Tristeza persistente, irritabilidade, queda escolar, isolamento, alteração de sono e comportamento de risco podem ser manifestações de depressão em adolescentes. É necessário contextualizar desenvolvimento, conflitos familiares, bullying, violência, substâncias e condições do neurodesenvolvimento, respeitando autonomia progressiva e sigilo conforme normas brasileiras. Ideação suicida deve ser perguntada diretamente, sem pressupor “drama da adolescência”. Terapias e escolhas de antidepressivos exigem protocolos **específicos por idade**, acompanhamento próximo e participação apropriada de responsáveis; as recomendações adultas da NICE NG222 **não devem ser transplantadas** à pediatria.
+
+Em jovens adultos, orientar que alguns pacientes podem experimentar aumento inicial de agitação, impulsividade ou ideação suicida após início/alteração medicamentosa; isso exige contato rápido e monitorização, não abandono do tratamento sem plano. A decisão entre riscos de doença não tratada e riscos terapêuticos deve ser compartilhada.
+
+### 12.2. Gestação e puerpério
+
+Sintomas depressivos podem surgir durante gestação, após parto ou já estar presentes antes da concepção. Alterações de sono e apetite isoladas são comuns na gestação/puerpério e não bastam para diagnosticar transtorno; investigar perda persistente de prazer, desesperança, culpa patológica, prejuízo e segurança. O “baby blues” do pós-parto costuma ser **transitório**, enquanto depressão perinatal pode ter prejuízo sustentado e requer avaliação.
+
+**Psicose pós-parto** com delírios, alucinações, confusão, desorganização, mania ou risco para mãe/bebê é **emergência psiquiátrica**; não deve ser confundida com tristeza leve ou ansiedade comum. Pensamentos intrusivos egodistônicos sobre machucar bebê podem ocorrer em TOC perinatal, exigindo avaliação fenomenológica e risco real, sem concluir intenção violenta automaticamente; já convicções delirantes, comandos com perda de crítica ou comportamento perigoso exigem urgência.
+
+A escolha de psicoterapia, ISRS ou manutenção/troca de tratamento na gestação/lactação deve ponderar gravidade, recaída prévia, benefício materno, exposição fetal/neonatal e orientação obstétrica/pediátrica/psiquiátrica, com farmacologia reprodutiva atualizada. **Não suspender antidepressivo automaticamente ao descobrir gestação**, nem afirmar segurança absoluta de qualquer molécula. Regulação brasileira e fontes perinatais precisam ser conferidas antes da publicação.
+
+### 12.3. Pessoas idosas e fragilidade
+
+Depressão em idoso pode se manifestar por apatia, dor, insônia, queixas cognitivas e abandono de atividades sem tristeza verbal marcante. Investigar isolamento, perda funcional, sintomas neurocognitivos, medicamentos, anemia, hipotireoidismo, quedas e riscos de interação. Delirium com desatenção flutuante requer avaliação médica prioritária; não chamar todo déficit de memória de “pseudodemência” e perder doença neurodegenerativa coexistente.
+
+Antidepressivos podem causar hiponatremia, quedas, eventos hemorrágicos ou efeitos anticolinérgicos/cardiovasculares conforme classe e paciente. Planejar monitorização e considerar comorbidades antes de prescrever; “começar com prudência e revisar” não é negar tratamento por idade.
+
+### 12.4. Doença cardiovascular e renal
+
+Depressão pode coexistir com cardiopatia, insuficiência renal, diabetes e dor crônica e afetar adesão e qualidade de vida. Ao escolher fármaco, considerar QT, pressão arterial, hipotensão ortostática, antitrombóticos, interações e clearance quando relevante. Psicoterapia e reabilitação podem complementar cuidado da doença clínica; **melhora do humor não substitui tratamento de insuficiência cardíaca, doença coronariana ou diabetes**. Em paciente com dor torácica nova, não ancorar em crise de ansiedade/depressão antes de triagem de risco orgânico.
+
+### 12.5. Dependência de álcool e outras substâncias
+
+Uso de álcool pode gerar depressão induzida, piorar episódio independente e elevar risco em momentos de intoxicação e abstinência. Perguntar tipo, quantidade, padrão, último consumo e efeitos sobre sono/impulsividade. Se houver abstinência com tremor, confusão, convulsões ou disfunção autonômica, tratar como emergência clínica. Não exigir abstinência completa prévia para reconhecer sofrimento depressivo e oferecer assistência; integrar abordagem dos dois problemas.
+
+### 12.6. Síndrome psicótica e catatônica associadas à depressão
+
+Delírios de culpa ou ruína, recusa alimentar por convicção delirante e catatonia podem indicar quadro grave. Exigem distinguir causas clínicas, bipolaridade e síndromes psicóticas primárias e podem necessitar internação e tratamento especializado, eventualmente ECT. Antipsicótico pode integrar tratamento de depressão psicótica, mas o plano não é idêntico ao de transtorno esquizofrênico, e a pessoa precisa de reavaliação longitudinal.
+
+## 13. Oito casos clínicos completos — das queixas comuns às emergências
+
+### Caso 1 — Depressão menos grave, preferência por tratamento não farmacológico
+
+Mulher de 29 anos relata seis semanas de perda moderada de prazer, queda de energia, dificuldade de concentração e sono irregular após mudança de cidade. Continua comparecendo ao trabalho e cuidando da alimentação; consegue ter momentos de prazer ao encontrar amigos. Sem episódios de mania/hipomania, substâncias ou doença clínica evidente na avaliação; nega ideação suicida atual e tem apoio próximo. Deseja evitar medicação inicialmente.
+
+**Hipótese:** episódio/síndrome depressiva de **menor gravidade**, após confirmação de critérios diagnósticos, sem sinais de urgência. **Diferenciais:** reação ao estresse, distúrbio de sono, hipotireoidismo/anemia conforme clínica e ansiedade coexistente. **Raciocínio:** sofrimento persistente e prejuízo existem, mas estabilidade funcional e preferência permitem intervenção estruturada de menor intensidade, sem desconsiderar necessidade futura de fármacos.
+
+**Exames:** história e exame, avaliação de risco e função, instrumentos de sintomas para linha de base; exames laboratoriais apenas se hipótese clínica. **Conduta:** psicoeducação, autoajuda guiada/ativação comportamental ou psicoterapia conforme acesso, metas graduais e **revisão em 2–4 semanas** com plano de retorno antecipado. NICE NG222 não recomenda antidepressivo rotineiramente como primeira linha para novo episódio menos grave, salvo escolha informada. **Por que importa:** monitorização ativa não é “não fazer nada” e gravidade não se deduz da simples presença de tristeza.
+
+### Caso 2 — Depressão atual com história esquecida de hipomania
+
+Homem de 34 anos procura APS por perda de interesse, fadiga, sentimento de fracasso e sono aumentado há um mês. Ao perguntar por períodos de energia anormal, relata que, dois anos antes, passou vários dias dormindo muito pouco sem sentir cansaço, falava excessivamente e tomou decisões impulsivas que a família percebeu como mudança marcante; não procurou ajuda, pois considerou fase de “alta produtividade”.
+
+**Hipótese:** episódio depressivo com **forte suspeita de transtorno bipolar**, a confirmar por entrevista longitudinal/especialista. **Raciocínio:** episódios de ativação com **redução da necessidade de sono** e comportamento observável não são explicados pela depressão atual; antidepressivo isolado pode não ser adequado. **Diferenciais:** estimulantes, substâncias, endocrinopatias e efeitos de medicamentos durante período de ativação.
+
+**Exames:** investigar duração e repercussão dos episódios, história familiar e uso de substâncias, segurança atual e sintomas psicóticos; solicitar exames clínicos conforme achados. **Conduta:** avaliar risco presente, encaminhamento oportuno à psiquiatria, evitar conduzir automaticamente como depressão unipolar com monoterapia antidepressiva e elaborar plano de acompanhamento. **Por que importa:** identificação de hipomania muda terapêutica e reduz chances de iatrogenia.
+
+### Caso 3 — Tristeza grave com delírio de culpa e recusa alimentar
+
+Mulher de 58 anos há dois meses perdeu quase todo interesse, emagreceu, fala pouco e passa dias no quarto. Afirma com convicção inabalável que “causou a doença de todos os familiares por ser uma pessoa terrível”, apesar de ausência de fatos correspondentes, e deixa de comer por sentir que merece punição. Há desidratação, prejuízo funcional extremo e pensamentos de morte.
+
+**Hipótese:** episódio depressivo **grave com sintomas psicóticos**, com risco clínico/nutricional e de suicídio. **Diferenciais:** transtorno bipolar, doenças clínicas/neurológicas, delirium ou outras psicose; avaliar consciência e curso. **Raciocínio:** conteúdo de culpa tornou-se convicção delirante, não apenas autocrítica; recusa alimentar gera urgência somática.
+
+**Exames:** estabilidade hemodinâmica, estado nutricional/hidratação, eletrólitos e exames dirigidos, avaliação de risco e da capacidade para decisões específicas; equipe psiquiátrica. **Conduta:** avaliação urgente e possível internação para proteção/estabilização, discutir antidepressivo com antipsicótico e/ou ECT conforme gravidade, preferência/capacidade e protocolo. **Por que importa:** depressão psicótica não é “depressão comum mais intensa”; riscos e resposta terapêutica precisam de equipe especializada.
+
+### Caso 4 — Puerpério, pensamento intrusivo e necessidade de distinguir psicose
+
+Mulher de 30 anos, seis semanas após parto, relata choro, anedonia e sentimentos de inadequação, além de imagens mentais intrusivas e indesejadas de machucar o bebê que lhe causam horror. Refere medo de estar “ficando louca”, mantém crítica, não apresenta vozes ou crenças delirantes, evita ficar sozinha por receio das imagens e pede ajuda. Não relata intenção de agir; exame mostra lucidez, pensamento organizado, sem alteração de atenção.
+
+**Hipóteses:** depressão perinatal com **pensamentos obsessivos egodistônicos**, investigando TOC perinatal e risco real; **psicose pós-parto não é demonstrada pelos dados atuais**, mas deve ser considerada no diferencial se aparecer perda de crítica, desorganização ou delírios. **Raciocínio:** conteúdo da imagem não equivale a intenção, e a vergonha pode dificultar relato; ainda assim segurança materna/infantil deve ser avaliada individualmente.
+
+**Exames:** história psiquiátrica e obstétrica, sono, suporte, funcionalidade, entrevista de risco e capacidade, avaliação de sintomas intrusivos/compulsões, sem presumir que toda queixa é “baby blues”. **Conduta:** acolher sem estigma, articular cuidado obstétrico e saúde mental perinatal, apoiar rede de segurança e discutir psicoterapia/farmacoterapia conforme gravidade e lactação. **Por que importa:** diferenciar obsessão de psicose evita prejuízos à mãe e ao bebê e facilita encaminhamento oportuno.
+
+### Caso 5 — Plano suicida presente, apesar de pontuação modesta em questionário
+
+Paciente de 42 anos procura emergência com desesperança após perdas recentes. Na entrevista relata intenção atual de se matar e plano envolvendo acesso a meio potencialmente letal; não é necessário descrever método. Está orientado e consegue falar calmamente; um questionário rápido não indica depressão muito intensa. Afirma que quer ir embora sozinho antes da avaliação completa.
+
+**Problema prioritário:** **segurança imediata** com risco agudo, independentemente de diagnóstico psiquiátrico final ou escore de depressão. **Raciocínio:** intenção, plano e acesso têm impacto clínico; aparência calma e número baixo não autorizam alta. **Diferenciais:** episódio depressivo, crises relacionadas a substâncias/trauma, transtorno bipolar, outras condições, a investigar após proteção.
+
+**Exames/conduta:** avaliação médica e psicossocial especializada urgente, triagem clínica/intoxicação conforme sinais, proteção proporcional, envolvimento de rede segura conforme limites éticos, decisão sobre cuidado de crise/internação de acordo com segurança e recursos locais; documentação de formulação clínica e plano de continuidade. **Por que importa:** a NICE NG225 proíbe usar escala/estrato baixo/médio/alto para prever suicídio ou decidir alta.
+
+### Caso 6 — Idoso “deprimido” com desatenção de início abrupto
+
+Homem de 76 anos previamente independente desenvolve apatia intensa e alimentação reduzida três dias após internação por pneumonia. Durante consulta perde a linha das perguntas, erra lugar onde está, alterna sonolência com inquietação noturna. Usa sedativo novo e apresenta febre e hipoxemia leve.
+
+**Hipótese:** **delirium hipoativo/misto** por causa clínica e medicamentos, até avaliação completa. **Raciocínio:** mudança aguda e flutuante de atenção/consciência supera a hipótese de episódio depressivo primário de instalação clássica; a demência pode predispor, mas precisa de história basal. **Exames:** sinais vitais, oxigenação, glicemia se pertinente, revisão de fármacos e precipitações, 4AT em enfermaria segundo NICE CG103 e investigação dirigida.
+
+**Conduta:** tratar causa, reorientar, ajustar medicações, garantir segurança e prevenção de quedas, reavaliar sintomas depressivos após resolução. **Por que importa:** diagnóstico errado de depressão pode atrasar tratamento de hipóxia/sepse e promover sedação desnecessária.
+
+### Caso 7 — “Falha ao ISRS” que era interrupção e ausência de seguimento
+
+Mulher de 39 anos com depressão moderada iniciou ISRS há seis semanas, mas parou a medicação por conta própria em alguns dias devido a náuseas e depois retomou irregularmente. Mantém humor deprimido e diz que “nenhum antidepressivo funciona”. Não recebeu retorno estruturado nem psicoterapia. Sem sinais atuais de mania, psicose ou urgência suicida na avaliação.
+
+**Hipótese:** resposta terapêutica ainda **não adequadamente avaliada**, por baixa exposição/adesão e efeitos adversos, antes de caracterizar depressão resistente. **Raciocínio:** ausência de melhora após uso inconsistente não demonstra falha farmacológica real; aumentar dose pode piorar náuseas sem corrigir problema.
+
+**Conduta:** revisar diagnóstico e história bipolar, escutar barreiras/efeitos, discutir ajuste ou troca segura, psicoeducação e terapia psicológica conforme preferências, combinar seguimento próximo e metas funcionais. Considerar medidas de reduzir efeitos adversos sob prescrição, sem recomendar suspensão abrupta. **Por que importa:** o primeiro passo na “depressão resistente” é confirmar se houve tentativa terapêutica adequada.
+
+### Caso 8 — Melhora parcial e pedido de suspender antidepressivo imediatamente
+
+Paciente de 51 anos teve episódio depressivo importante que melhorou significativamente após tratamento e psicoterapia. Está há oito semanas com sintomas residuais mínimos, retorna ao trabalho e pede para suspender fármaco de um dia para outro porque se sente bem. Tem história de dois episódios anteriores e sintomas de retirada em interrupção passada.
+
+**Problema:** planejamento de **continuação/recidiva e retirada segura**, considerando recorrência prévia. **Raciocínio:** alívio inicial não significa que o risco de recaída desapareceu; retirada abrupta pode causar sintomas físicos e emocionais confundidos com retorno da doença.
+
+**Conduta:** discutir benefício de continuidade/manutenção, efeitos adversos, riscos de recaída, preferências e estratégias psicológicas; se decidir interromper, planejar redução gradual individual, revisão de sintomas de retirada e retorno. Registrar plano e reavaliar pelo menos semestralmente quando em manutenção contínua, conforme NICE NG222. **Por que importa:** a fase de manutenção é parte do tratamento, não uma formalidade depois que a pessoa melhora.
+
