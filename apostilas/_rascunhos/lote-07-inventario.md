@@ -28,11 +28,11 @@
 | 132 | Hemorragia digestiva baixa | **APROFUNDADA:** `_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md` (64.495 caracteres BRUTOS, 10 casos, 14 questões), ACG 2023/ESGE 2021; benchmark Drive apenas HDA; revisão médica/imagens pendentes |
 | 133 | Meningites e encefalites | **APROFUNDADA:** `_rascunhos/lote-07-aula-133-meningites-encefalites.md` (81.524 caracteres BRUTOS, 9 casos, 14 questões); OMS 2025/2026, NICE e Nota MS 154/2024; benchmark Drive apenas TB/neurosífilis; revisão médica/terapia nacional pendentes |
 | 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
-| 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
+| 135 | Imunização e PNI | **Rascunho aprofundado** `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` (84.010 caracteres, 8 casos, 14 questões); guia VPC20 de junho/2026 conferido, PNI 2026, VSR, dengue, HPV, ESAVI; não publicado |
 | 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (61.186 caracteres brutos; 9 casos, 14 questões); não reproduz 127/132, autossuficiência ampliada, ainda sem certificação médica/visual |
 | 137 | Doença do refluxo e hérnia hiatal | Rascunho `_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md` **AMPLIADO a 80.228 caracteres brutos, 8 casos e 14 questões** (original preservado e aprofundado; ACG/Lyon 2.0/SAGES/AGA/Barrett/Chicago 4.0), pendentes imagens, revisão médica e certificação |
 | 138 | Crises convulsivas e estado de mal epiléptico | Rascunho `_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md` (76.435 caracteres brutos; 9 casos, 14 questões), MS PCDT 05/2026, ILAE 2025, NICE/CHOP, ESETT; benchmark Drive apenas correlato |
-| 139 | Endometriose | Rascunho `_rascunhos/lote-07-aula-139-endometriose.md` (33.568 caracteres após correção de referência; 5 casos, 8 questões), NICE/ESHRE/FEBRASGO 2026; HTMLs de infertilidade e DIP preservados |
+| 139 | Endometriose | **Rascunho aprofundado** `_rascunhos/lote-07-aula-139-endometriose.md` (76.805 caracteres, 10 casos, 16 questões); ESHRE/NICE/FEBRASGO, mapeamento profundo, cirurgia/fertilidade; HTMLs de infertilidade/DIP preservados |
 | 140 | Saúde da criança na APS | Rascunho `_rascunhos/lote-07-aula-140-saude-crianca-aps.md` (35.382 caracteres; 4 casos, 8 questões), PNAISC/Caderneta/MS, dois benchmarks de puericultura lidos |
 
 ## Próximo ciclo de produção
@@ -101,13 +101,13 @@
 
 **Arquivos no GitHub verificados por leitura individual após a gravação:**
 
-| Aula | Nome em \`apostilas/_rascunhos\` | Caracteres brutos | Casos novos | Questões novas | Observações |
+| Aula | Nome em `apostilas/_rascunhos` | Caracteres brutos | Casos novos | Questões novas | Observações |
 |---|---|---:|---:|---:|---|
-| 136 Hemorragia digestiva | \`lote-07-aula-136-hemorragia-digestiva-integrada.md\` | 19.276 | 4 | 6 | Rascunho integrador, com 127+132 como livros específicos; precisa autossuficiência |
-| 137 DRGE e hérnia hiatal | \`lote-07-aula-137-drge-hernia-hiatal.md\` | 28.968 | 4 | 6 | Drive “Doença do Refluxo Gastroesofágico” lido; ACG/Lyon/SAGES |
-| 138 Convulsões/EME | \`lote-07-aula-138-crises-convulsivas-estado-mal.md\` | 24.230 | 4 | 6 | MS PCDT 2026, NICE/CHOP; benchmark Drive só de causa tóxica, não equivalente |
-| 139 Endometriose | \`lote-07-aula-139-endometriose.md\` | 33.568 | 5 | 8 | ESHRE/NICE; FEBRASGO nº4/2026 publicada maio em Femina; preservar HTMLs de infertilidade e DIP |
-| 140 Saúde da criança APS | \`lote-07-aula-140-saude-crianca-aps.md\` | 35.382 | 4 | 8 | PNAISC/Caderneta; dois resumos de puericultura lidos; vacinação específica na 135 |
+| 136 Hemorragia digestiva | `lote-07-aula-136-hemorragia-digestiva-integrada.md` | 19.276 | 4 | 6 | Rascunho integrador, com 127+132 como livros específicos; precisa autossuficiência |
+| 137 DRGE e hérnia hiatal | `lote-07-aula-137-drge-hernia-hiatal.md` | 28.968 | 4 | 6 | Drive “Doença do Refluxo Gastroesofágico” lido; ACG/Lyon/SAGES |
+| 138 Convulsões/EME | `lote-07-aula-138-crises-convulsivas-estado-mal.md` | 24.230 | 4 | 6 | MS PCDT 2026, NICE/CHOP; benchmark Drive só de causa tóxica, não equivalente |
+| 139 Endometriose | `lote-07-aula-139-endometriose.md` | 33.568 | 5 | 8 | ESHRE/NICE; FEBRASGO nº4/2026 publicada maio em Femina; preservar HTMLs de infertilidade e DIP |
+| 140 Saúde da criança APS | `lote-07-aula-140-saude-crianca-aps.md` | 35.382 | 4 | 8 | PNAISC/Caderneta; dois resumos de puericultura lidos; vacinação específica na 135 |
 
 **Somatório verificado após correção bibliográfica do arquivo 139:** **141.424 caracteres BRUTOS**, **21 casos** e **34 questões comentadas** nos cinco arquivos novos. Não equivale a 141 mil caracteres didáticos líquidos e nenhum arquivo novo deste sublote alcançou 60 mil didáticos úteis. Todos foram salvos como **rascunhos**.
 
@@ -127,7 +127,7 @@
 
 ## 14/10/2026 — aprofundamento prioritário da aula 137 (após cobertura inicial 121–140)
 
-**Arquivo atualizado, relido no GitHub e conferido:** \`apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md\`, **80.228 caracteres brutos**, com **8 casos clínicos** e **14 questões originais com distratores comentados**. A versão anterior tinha 28.968 caracteres brutos/4 casos/6 questões. A nova versão acrescentou 51.260 caracteres brutos por atualização sequencial, conservando o conteúdo existente, e corrigiu uma anotação editorial em Markdown.
+**Arquivo atualizado, relido no GitHub e conferido:** `apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md`, **80.228 caracteres brutos**, com **8 casos clínicos** e **14 questões originais com distratores comentados**. A versão anterior tinha 28.968 caracteres brutos/4 casos/6 questões. A nova versão acrescentou 51.260 caracteres brutos por atualização sequencial, conservando o conteúdo existente, e corrigiu uma anotação editorial em Markdown.
 
 **Etapa zero repetida e efetivamente realizada:** reabertos os PDFs do Drive “DOENÇA DO REFLUXO GASTROESOFÁGICO.pdf” (1.647 caracteres, esquema específico mas breve) e “02 - ESTOMAGO 1 DISPEPSIA, FISIOLOGIA GASTRICA E IBPS.pdf” (5.488 caracteres, referência de diferenciais/farmacologia, não DRGE integral). Nenhuma autoria Estratégia MED identificada e nenhum conteúdo privado reproduzido em GitHub. Foi reaberto o próprio rascunho 137, com lacunas expressas, e utilizadas diretrizes ACG GERD 2022, Lyon 2.0 (Gut 2024), AGA de desprescrição de IBP 2022, ACG Barrett 2022, Chicago 4.0, SAGES hiato 2024 e SAGES cirurgia DRGE 2021, efetivamente confrontadas com fonte pública.
 
@@ -184,3 +184,26 @@
 **Gates ainda NÃO satisfeitos:** revisão médica profissional independente, farmacologia e doses terapêuticas brasileiras pediátricas de meningite, avaliação de antitrombóticos/reversores no SUS, comparação com benchmark Drive equivalente, autorização/licença comercial das imagens, curadoria visual no Admin, testes de autossuficiência clínica e entrega HTML/PWA.
 
 **Nenhuma alteração em HTML de apostilas publicadas, catálogo, banco de dados ou deploy foi feita.** Próxima prioridade: revisar/aprofundar **135 Imunização e PNI 2026** (especialmente calendário completo e grupos especiais) e **139 Endometriose**, sem recriar SOP, Amenorreia ou outros HTMLs de GO já publicados.
+
+
+## 15/10/2026 — aprofundamento estruturado das aulas 135 e 139
+
+**A leitura posterior às gravações no GitHub confirmou ambos os arquivos, seus títulos de casos e questões numerados sem lacunas.** Não houve alterações em HTML publicado.
+
+| Aula | Arquivo | Antes da rodada | Depois | Ampliação nesta rodada | Casos no arquivo | Questões no arquivo |
+|---|---|---:|---:|---:|---:|---:|
+| 135 Imunizações PNI 2026 | `lote-07-aula-135-imunizacoes-pni-2026.md` | 26.287 | **84.010** | **+57.723** | **8** | **14** |
+| 139 Endometriose | `lote-07-aula-139-endometriose.md` | 33.568 | **76.805** | **+43.237** | **10** | **16** |
+| **Total** | Dois arquivos | **59.855** | **160.815** | **+100.960** | **18** | **30** |
+
+As contagens são **caracteres UTF-8 do texto renderizado pelo conector GitHub** (títulos, Markdown, casos, comentários, tabelas, referências e checklist incluídos); **não** significam caracteres didáticos líquidos certificados nem aprovação científica.
+
+**Aula 135:** benchmark Drive “Imunizações” relido e reconhecido explicitamente como **PNI 2020**. Comparação com o calendário MS 2026, sua Instrução Normativa (edição agosto/2026), o calendário de gestantes (atualizado em 13/10/2026) e o **Guia Técnico para Introdução da VPC20**. O quadro da página 11 do PDF foi verificado visualmente: a sequência VPC20 aos 2 meses, VPC10 aos 4 e reforço VPC20 aos 12 é deliberada transição do SUS, não necessariamente contradição de portal. Acrescentadas idades rotavírus, VIP, meningocócica ACWY, esquemas HPV por grupo, duas vacinas dengue/fases SUS, dTpa materna e VSR, distinção nirsevimabe-vacina, CRIE/RIE, rede de frio, ESAVI/e-SUS Notifica, cobertura e microplanejamento, quatro novos casos e oito novas questões.
+
+**Aula 139:** não localizada no Drive apostila equivalente de endometriose. Foram **relidos** os documentos parciais de DIP, Planejamento Familiar e Câncer de Ovário, cujas lacunas foram confrontadas com ESHRE 2022, NICE 2024 e **FEBRASGO nº4/2026** (Femina 05/05/2026). Foram adicionados diferenciais de dismenorreia e adenomiose, avaliação ultrassonográfica especializada, sliding sign, endometrioma/massa suspeita, doença intestinal extramucosa e ureteral, critérios para laparoscopia, escolhas clínicas/cirúrgicas, preservação de reserva ovariana e fertilidade, cinco novos casos e oito novas questões. **Não se copiou texto/imagem de cursinho nem se alterou o HTML original de infertilidade.**
+
+**Portões ainda abertos (ambos):** revisão médica independente; conferência nacional e por fabricante de todas as posologias/intervalos e contraindicações que não foram finalizados; avaliação de autossuficiência por resolução de prova sem material externo; imagens clínicas verdadeiras de licença comercial verificada e aprovação Admin; criação/integração no formato final HTML e testes desktop/PWA. **Não publicar como material certificado** apenas porque a extensão passou de 60k.
+
+**Prioridades seguintes no Lote 7:** auditar e aprofundar 131 Hepatites virais (~26k no inventário anterior), 132 HDB (rever tamanho atual após ampliação anterior), 140 Saúde da Criança APS (~35k), 134 SOP (integrar complemento ao HTML preexistente somente após aprovação), 124 SUA e 129 Amenorreia (complementos separados). Rever o inventário antes de cada ação para não duplicar conteúdos já ampliados.
+
+**Nenhum deploy, migração, edição dos HTMLs publicados ou catálogo ocorreu nesta rodada.**
