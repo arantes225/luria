@@ -485,3 +485,150 @@ Mulher de 34 anos com semanas de alteração afetiva progressiva chega ao pronto
 
 **Por que importa:** um exame do estado mental capaz de identificar catatonia pode prevenir complicações orgânicas graves e terapêutica inadequada.
 
+
+## 14. Doze questões autorais estilo ENAMED e residência — todas as alternativas comentadas
+
+### Questão 1 — Exame do estado mental: humor versus afeto
+
+Uma mulher relata tristeza sustentada nas últimas três semanas e, durante a entrevista, apresenta expressão emocional restrita, porém sorri brevemente ao mencionar o filho. Qual registro diferencia corretamente os fenômenos?
+
+A) Humor é sempre aquilo que o médico observa, e afeto é apenas o que a pessoa relata.  
+B) Humor referido deprimido; afeto de amplitude restrita, mas com alguma reatividade.  
+C) A presença de sorriso descarta síndrome depressiva.  
+D) Afeto restrito prova esquizofrenia.  
+E) Não se deve registrar alterações emocionais porque são subjetivas.
+
+**Gabarito: B.** **A incorreta:** inverte as dimensões; humor é vivência emocional sustentada e afeto descreve expressão observada. **B correta:** separa relato longitudinal de apresentação momentânea e reconhece reatividade parcial. **C incorreta:** expressão não precisa ser uniformemente triste para haver sofrimento clínico. **D incorreta:** afeto restrito é inespecífico. **E incorreta:** dados afetivos são partes essenciais do exame. **Mini revisão:** o EEM é corte transversal que complementa — não substitui — história.
+
+### Questão 2 — Circunstancialidade versus tangencialidade
+
+O examinador pergunta onde o paciente mora. Ele discorre demoradamente sobre a infância, muda para os estudos e descreve seu bairro, mas **ao final responde o endereço**. O padrão é:
+
+A) Circunstancialidade.  
+B) Tangencialidade.  
+C) Mutismo.  
+D) Bloqueio.  
+E) Neologismo.
+
+**Gabarito: A.** **A correta:** excesso de detalhes e desvios, mas **retorno ao objetivo**. **B incorreta:** na tangencialidade não chega à resposta solicitada. **C incorreta:** há fala abundante. **D incorreta:** não há interrupção brusca do pensamento. **E incorreta:** não foram criadas palavras. **Mini revisão:** “circunstancial chega; tangencial não chega”.
+
+### Questão 3 — Delirium ou transtorno neurocognitivo crônico?
+
+Paciente de 82 anos internado por infecção começa subitamente a se desorientar, distrair-se com ruídos, alternar sonolência e agitação e piorar à noite. A prioridade é:
+
+A) Diagnosticar Alzheimer com base no primeiro dia de desorientação.  
+B) Tratar como transtorno delirante persistente, sem exame clínico.  
+C) Avaliar delirium e investigar precipitantes orgânicos, usando ferramenta apropriada.  
+D) Solicitar apenas inventário de depressão e aguardar um mês.  
+E) Sedar continuamente até parar de se movimentar, sem investigar.
+
+**Gabarito: C.** **A incorreta:** demência tipicamente apresenta curso longitudinal; pode coexistir com delirium. **B incorreta:** confunde delírio de conteúdo com delirium de atenção/consciência. **C correta:** instalação aguda, desatenção e flutuação tornam delirium hipótese prioritária. **D incorreta:** atrasa identificação de precipitações reversíveis. **E incorreta:** contenção farmacológica indiscriminada adiciona riscos. **Mini revisão:** a NICE indica 4AT fora da UTI e CAM-ICU/ICDSC em ambientes críticos apropriados.
+
+### Questão 4 — Ilusão versus alucinação
+
+Durante febre e pouca luz, paciente interpreta um cabide real como pessoa. Ao acender a luz reconhece o objeto. O fenômeno é melhor descrito como:
+
+A) Alucinação sem estímulo externo.  
+B) Ilusão, interpretação distorcida de estímulo existente.  
+C) Delírio de grandeza.  
+D) Fuga de ideias.  
+E) Afasia receptiva.
+
+**Gabarito: B.** **A incorreta:** há um estímulo visual real. **B correta:** percepto é construído de maneira errônea a partir do cabide. **C incorreta:** não se trata de crença de grandeza. **D incorreta:** é alteração de curso do pensamento. **E incorreta:** não descreve déficit de compreensão da linguagem. **Mini revisão:** contexto de febre/alteração de atenção também exige considerar delirium, independentemente do nome do fenômeno.
+
+### Questão 5 — Redução da necessidade de sono
+
+Pessoa há cinco dias dorme duas horas por noite, diz estar muito descansada, com energia aumentada, fala pressionada, grandiosidade e gastos impulsivos. Que hipótese sindrômica ganha prioridade?
+
+A) Síndrome maníaca, investigando causas medicamentosas e outras.  
+B) Insônia primária comprovada por dormir pouco.  
+C) Crise de pânico obrigatória.  
+D) Transtorno depressivo sem outros dados.  
+E) Afasia causada por AVC com certeza.
+
+**Gabarito: A.** **A correta:** diminuição da necessidade de sono **com energia preservada/elevada** e comportamento desinibido é padrão de mania. **B incorreta:** insônia costuma causar sensação de cansaço e não explica síndrome completa. **C incorreta:** não é quadro de crises abruptas breves. **D incorreta:** não há síndrome depressiva apresentada. **E incorreta:** não há déficit focal de linguagem súbito. **Mini revisão:** verificar substâncias, corticosteroides, tireoide e episódios anteriores antes de definir etiologia bipolar.
+
+### Questão 6 — Pensamento intrusivo e intenção
+
+Mulher relata imagens involuntárias que considera repugnantes de machucar um familiar, com intenso medo de agir, rituais mentais para neutralizar e ausência de intenção ou plano relatados. A melhor interpretação inicial é:
+
+A) Ideação homicida comprovada apenas pelo conteúdo.  
+B) Obsessão egodistônica possível, avaliando função, compulsões e risco real separadamente.  
+C) Delírio persecutório obrigatório.  
+D) Alucinação visual objetiva por definição.  
+E) Evidência de falta definitiva de capacidade civil.
+
+**Gabarito: B.** **A incorreta:** pensamento intrusivo não equivale automaticamente a intenção. **B correta:** egodistonia, intrusão e neutralização sustentam fenômeno obsessivo, com avaliação clínica individual. **C incorreta:** não há crença fixa persecutória. **D incorreta:** imagem mental não é necessariamente percepção sem estímulo. **E incorreta:** capacidade depende da decisão e avaliação contextual. **Mini revisão:** conteúdo violento isolado não autoriza estigma nem dispensa exame de segurança.
+
+### Questão 7 — Vozes apenas ao adormecer
+
+Jovem ouve alguém chamar seu nome somente na transição para o sono, mantém juízo crítico e funcionamento, sem sintomas em vigília. Qual é a hipótese fenomenológica mais direta?
+
+A) Alucinação hipnagógica associada ao adormecer.  
+B) Delirium persistente.  
+C) Esquizofrenia confirmada.  
+D) Delírio niilista.  
+E) Pensamento circunstancial.
+
+**Gabarito: A.** **A correta:** experiências hipnagógicas ocorrem no adormecimento e podem existir sem psicose. **B incorreta:** não há desatenção aguda flutuante. **C incorreta:** uma voz nesse contexto não satisfaz critérios nem história de esquizofrenia. **D incorreta:** é conteúdo de crença, não fenômeno perceptivo transitório. **E incorreta:** refere-se à forma do pensamento. **Mini revisão:** perguntar “estava completamente acordado?” altera interpretação.
+
+### Questão 8 — Falha súbita de linguagem
+
+Pessoa previamente sem sintomas começa abruptamente a trocar palavras, não nomear objetos e não compreender comandos. O melhor próximo passo é:
+
+A) Registrar “pensamento esquizofrênico” e agendar psiquiatria em um mês.  
+B) Ativar investigação de emergência neurológica, com hipótese de AVC/afasia.  
+C) Tratar como traço de personalidade.  
+D) Presumir que toda linguagem pouco compreensível é delírio.  
+E) Prescrever sedativo antes da avaliação neurológica para facilitar entrevista.
+
+**Gabarito: B.** **A incorreta:** ignora início focal súbito e perde janela de tratamento. **B correta:** suspeita de AVC requer protocolo tempo-dependente e diferenciação de afasia. **C incorreta:** não é característica basal. **D incorreta:** língua, articulação e pensamento são domínios distintos. **E incorreta:** pode obscurecer exame e agravar riscos. **Mini revisão:** início abrupto é variável diagnóstica de alto impacto.
+
+### Questão 9 — Capacidade decisória na presença de transtorno mental
+
+Uma pessoa com diagnóstico prévio de transtorno psicótico está clinicamente estável e consegue compreender riscos/benefícios de exame eletivo, comparar opções e comunicar preferência. É correto afirmar:
+
+A) Todo diagnóstico psiquiátrico retira automaticamente capacidade de qualquer decisão.  
+B) Capacidade é específica à decisão e deve ser avaliada funcionalmente, podendo estar preservada.  
+C) Apenas familiares podem decidir por qualquer pessoa com psicose, mesmo estável.  
+D) Capacidade depende exclusivamente do resultado do exame de orientação temporal.  
+E) Discordar do médico prova incapacidade.
+
+**Gabarito: B.** **A incorreta:** diagnóstico isolado não define competência funcional. **B correta:** compreensão, apreciação, raciocínio e comunicação são dimensões essenciais. **C incorreta:** viola autonomia sem análise legal e clínica. **D incorreta:** orientação não mede todos os domínios. **E incorreta:** decisão discordante pode ser plenamente capaz. **Mini revisão:** paciente com delirium pode ter capacidade flutuante; documentar contexto e reavaliar.
+
+### Questão 10 — Catatonia e segurança
+
+Pessoa em mutismo, mantém posturas incomuns, pouca ingestão hídrica e evolui com febre, rigidez e taquicardia depois de medicação antipsicótica. A conduta inicial mais adequada é:
+
+A) Interpretar como falta de colaboração e dar alta.  
+B) Duplicar automaticamente dose de antipsicótico.  
+C) Avaliar urgentemente catatonia, síndrome neuroléptica maligna e outras causas médicas, estabilizando e prevenindo complicações.  
+D) Fazer apenas teste de memória remoto.  
+E) Aguardar seis meses para confirmar diagnóstico psiquiátrico.
+
+**Gabarito: C.** **A incorreta:** catatonia tem complicações médicas sérias. **B incorreta:** pode agravar síndrome maligna se não investigada. **C correta:** combinação de sinais psicomotores e disfunção autonômica exige urgência clínica. **D incorreta:** não responde a síndrome aguda. **E incorreta:** postergação eleva risco. **Mini revisão:** mutismo não é sinônimo de vontade de não responder; descrever sinais e buscar causa.
+
+### Questão 11 — Ideação suicida e escala de risco
+
+Pessoa com ideação suicida atual, plano e acesso a meio potencialmente letal procura emergência. Um instrumento produz “baixo risco”. Segundo NICE NG225, a interpretação adequada é:
+
+A) Liberar automaticamente por causa do rótulo da escala.  
+B) Classificar como baixo risco definitivo e não perguntar mais.  
+C) Não usar pontuação/estrato como predição individual ou decisão isolada de alta; realizar avaliação psicossocial e plano de segurança.  
+D) Substituir entrevista por um contrato verbal de não suicídio.  
+E) Considerar a avaliação completa apenas se houver tentativa anterior.
+
+**Gabarito: C.** **A incorreta:** instrumento não prediz de forma confiável nem decide alta. **B incorreta:** risco é dinâmico; rótulo não substitui necessidades de cuidado. **C correta:** a NICE recomenda foco em necessidades, proteção imediata e formulação de risco contextual. **D incorreta:** contrato não substitui cuidado e proteção. **E incorreta:** risco agudo pode ocorrer sem tentativa prévia. **Mini revisão:** ouvir o paciente, examinar intenção/plano/acesso e proteger com equipe apropriada.
+
+### Questão 12 — Delirium hipoativo
+
+Após cirurgia, paciente idoso fica quieto, responde devagar, é muito sonolento, perde linha das perguntas e alterna períodos de lucidez com desorientação. Qual afirmação é correta?
+
+A) Ausência de agitação exclui delirium.  
+B) Delirium hipoativo é possível e merece pesquisa de precipitantes médicos.  
+C) Sonolência pós-operatória sempre prova episódio depressivo maior.  
+D) Nenhuma ferramenta pode ser utilizada na UTI.  
+E) O 4AT deve ser usado em UTI em vez de CAM-ICU em toda situação, conforme NICE.
+
+**Gabarito: B.** **A incorreta:** delirium pode ser hipoativo. **B correta:** flutuação e atenção alterada, mesmo com quietude, exigem avaliação. **C incorreta:** consciência/atenção e cronologia favorecem causa clínica. **D incorreta:** CAM-ICU e ICDSC são ferramentas adaptadas a terapia intensiva. **E incorreta:** NICE diferencia instrumentos por cenário assistencial. **Mini revisão:** não confundir baixo nível de atividade com ausência de gravidade.
+
