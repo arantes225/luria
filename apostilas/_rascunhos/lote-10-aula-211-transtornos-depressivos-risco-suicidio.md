@@ -620,3 +620,59 @@ E. Não acompanhar efeitos adversos se humor melhorou.
 
 **Gabarito B.** A aumenta riscos; C não individualiza; D é incorreto; E ignora segurança. **Revisão:** continuação e prevenção de recaída são fases do tratamento.
 
+
+## 14. Camada visual: imagens e esquemas previstos, sem licença presumida
+
+A temática envolve comunicação e segurança: **não usar fotografias estigmatizantes de pessoas chorando, braços feridos ou cenas de autoagressão para decorar material**. Priorizar esquemas autorais e materiais clínicos de valor real, evitando gatilhos visuais desnecessários. Todos os itens são **candidatos**, não mídias já encontradas, licenciadas ou aprovadas.
+
+| Candidato de imagem / infográfico | Onde inserir | Legenda/função |
+| --- | --- | --- |
+| Diagrama original de episódio depressivo por domínios | 3 | Humor/anedonia mais sono, energia, cognição, psicomotricidade, segurança |
+| Esquema de fisiopatologia multifatorial | 2 | Estresse, circuito de recompensa, sono, plasticidade e ambiente |
+| Fluxo original de diagnóstico depressão × bipolaridade | 4/6 | Busca ativa de história de mania/hipomania antes de prescrever |
+| Quadro visual luto versus episódio depressivo | 6 | Sobreposição, diferenciais, coexistência |
+| Fluxo APS de cuidado escalonado adaptado de conceitos, não copiado de figura MS | 7/8 | Menos grave, mais grave, critérios de encaminhamento |
+| Guia comparativo autoral de classes antidepressivas | 9 | Mecanismos, efeitos e cautelas |
+| Linha do tempo de início, revisão e manutenção | 9 | Reavaliação precoce, resposta, remissão, manutenção |
+| Quadro original de sintomas de retirada versus recaída | 9 | Tempo, sintomas somáticos e prevenção |
+| Algoritmo clínico de avaliação de segurança | 10 | Sofrimento → necessidades imediatas → apoio → plano → seguimento |
+| Modelo não sensacionalista de plano de segurança | 10 | Sinais pessoais, rede, acesso a serviços e ambiente protegido |
+| Fluxo clínico de quadro grave com psicose/catatonia | 11 | Urgência e encaminhamento especializado |
+| Tabela visual de metas funcionais | 8/9 | Além de escore: sono, autocuidado, retorno a atividades |
+
+**Direitos autorais e administração:** elaboração gráfica original pela LURIA é preferível. Se buscar imagens externas, verificar licença compatível com uso comercial, créditos, contexto, acessibilidade, consentimento e adequação ética; nenhuma imagem foi inserida em HTML/Admin nesta etapa.
+
+## 15. Referências verificáveis, data e aplicabilidade
+
+1. **Brasil — Ministério da Saúde.** *Linha de Cuidado da Depressão no Adulto: manejo inicial/conduta (APS)*. Página com recomendações para avaliação de risco de suicídio, acolhimento, família/rede, referência e notificação de violência autoprovocada. Disponível em: <https://linhasdecuidado.saude.gov.br/portal/depressao/unidade-de-atencao-primaria/manejo-inicial-conduta/>. **Linha publicada em 2022; confirmar normas de notificação e protocolos locais vigentes em 2026**.
+2. **Brasil — Ministério da Saúde.** *Depressão no adulto — planejamento terapêutico na atenção especializada*. <https://linhasdecuidado.saude.gov.br/portal/depressao/atencao-especializada/planejamento-terapeutico/>. Interação APS–CAPS e PHQ-9 no acompanhamento.
+3. **NICE.** *Depression in adults: treatment and management*. **NG222**, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Fonte principal de cuidado escalonado, tratamento, retorno, segurança ao iniciar medicação, manutenção, retirada e ECT.
+4. **NICE.** *Self-harm: assessment, management and preventing recurrence*. **NG225**, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte para **não usar escalas ou classificação baixo/médio/alto como preditores/critério de alta** e para plano colaborativo de segurança.
+5. **Organização Mundial da Saúde.** *Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders*, **3ª ed. 2023**. <https://www.who.int/publications/i/item/9789240084278>. Manejo em serviços não especializados. A licença da obra é CC BY-NC-SA 3.0 IGO; o texto aqui é original e não reproduz o manual.
+6. **Canadian Network for Mood and Anxiety Treatments (CANMAT).** *2023 Update to CANMAT Clinical Guidelines for Adults with Major Depressive Disorder*, recursos oficiais em <https://www.canmat.org/2025/04/29/major-depressive-disorder-guidelines-related-resources/>. Conferir sempre a referência primária da atualização para detalhes de hierarquia de tratamento.
+7. **DailyMed/NLM.** *Fluoxetine — oral capsule, prescribing information*, seção 2.1 Major Depressive Disorder. <https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1409772-e719-67f5-e053-2995a90ab5b6>. Confirma início de **20 mg/dia em adulto** para a apresentação indicada, com teto de 80 mg/dia; não implica disponibilidade/formulação brasileiras equivalentes.
+8. **DailyMed/NLM.** *Venlafaxine hydrochloride extended-release tablets, prescribing information*. <https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fdaed1c2-dd0a-4bf3-975a-86fe3e7f0c97>. Confirma início de **75 mg/dia** (37,5 mg temporário em alguns pacientes) e dose máxima de **225 mg/dia para aquela apresentação**.
+9. **NICE.** *Bipolar disorder: assessment and management*. **CG185** (2014, com atualizações subsequentes inclusive 2023/2025). <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fonte para diferenciar depressão bipolar antes de monoterapia antidepressiva.
+10. **Yatham LN et al.** *CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence*, texto integral em <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Fonte de precaução com monoterapia antidepressiva na bipolaridade I, aprofundada na aula 212.
+
+**Checagem futura:** confirmar bula Anvisa/Rename e tabelas de apresentação/doses brasileiras específicas antes de incorporar a um sistema de prescrição. O quadro posológico é de referência acadêmica para adultos, não prescrição individualizada.
+
+## 16. Quadro final de memorização clínica
+
+**Suspeita de depressão:** humor deprimido ou anedonia persistentes, outros domínios afetivos/biológicos, prejuízo e duração → avaliar segurança → procurar histórico de hipomania/mania e causas médicas → classificar gravidade e preferências → escolher cuidado escalonado → reavaliar precocemente → monitorar resposta/remissão e planejar manutenção.
+
+**Se há risco atual significativo:** apoiar/acolher, avaliar segurança, condições clínicas e capacidade de autocuidado, envolver equipe/rede apropriada, garantir transferência e seguimento reais. **Nunca dar alta só por escala.**
+
+**Se antidepressivo está em uso:** conferir adesão, dose/tempo, tolerabilidade, alterações do humor, agitação e pensamentos de autoagressão; reavaliar por necessidade, não apenas por calendário fixo. **Não suspender abruptamente** sem considerar síndrome de retirada.
+
+**Se há psicose/catatonia/risco vital:** cuidado especializado urgente; ECT pode ser considerada em depressão grave que exige resposta rápida.
+
+## 17. Autoauditoria e pendências
+
+- **Estrutura:** conceitos, fisiopatologia, diagnóstico com temporalidade/criteriologia, diferenciais, gravidade, psicoterapia, fármacos, segurança, cuidado especializado, **9 casos** e **14 questões originais comentadas**.
+- **Fonte do Drive:** somente resumos de **síndromes cognitivas** e **vigilância epidemiológica** com conteúdos correlatos, não há obra equivalente integral confirmada; logo, etapa zero comparativa **NÃO CERTIFICADA**.
+- **Ciência:** houve confronto externo com Ministério da Saúde, NICE, OMS, CANMAT e bulas norte-americanas de duas apresentações. Requer **revisão clínica independente por psiquiatra**, conferência de critérios CID-11/DSM, atos normativos de notificação em 2026, disponibilidade/formulações de fármacos e ética em pronto-atendimento.
+- **Imagens:** 12 itens candidatos previstos, **nenhuma** imagem médica aprovada/licenciada/inserida.
+- **Contagem:** número bruto de caracteres Markdown não equivale a “60 mil caracteres úteis” após excluir referências/controles, tabelas repetitivas ou elementos não didáticos.
+- **Integridade do site:** nenhuma página HTML/JS, catálogo, Supabase, branch \`main\` ou deploy foram alterados. **Rascunho isolado**, sem conclusão clínica certificada.
+- **Próximo tema oficial do lote:** **212 — Transtorno bipolar e episódios do humor**, após checar fontes e ausência de livro equivalente no Drive. Foco próprio: mania, hipomania, depressão bipolar, mistos, estabilização, lítio, anticonvulsivantes, antipsicóticos e vigilância.
