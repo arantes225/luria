@@ -178,3 +178,212 @@ Atraso pode acarretar necrose, hemorragia, inflamação peritoneal, necessidade 
 
 Não existe limiar clínico universal validado de horas desde o início da dor que garanta perda irreversível ou autorize esperar. A viabilidade depende de intensidade, duração, intermitência e vascularização; o tempo é relevante mas não funciona como regra matemática absoluta. Se suspeita alta, **encaminhamento e exploração oportunos** são a conduta segura. O oposto também vale: ovário com aspecto preocupante após várias horas não deve ser automaticamente ressecado sem tentativa apropriada de preservação.
 
+
+## 8. Gravidez ectópica, gestação de localização desconhecida e dor aguda
+
+### 8.1. O conceito anatômico
+
+Gravidez ectópica é implantação fora da cavidade endometrial. A implantação tubária é a mais frequente, mas existem localizações intersticial, cervical, ovariana, em cicatriz cesariana, abdominal e outras. A condição é tempo-dependente porque crescimento trofoblástico em tecidos não preparados para distensão uterina pode erodir vasos e produzir hemorragia intra-abdominal. A resposta vascular e a reserva circulatória variam: algumas pessoas permanecem surpreendentemente lúcidas com perda importante; outras descompensam abruptamente.
+
+A ectópica deve ser considerada em dor pélvica e β-hCG positivo, inclusive sem atraso menstrual, sem sangramento e com contraceptivo. História de DIP, ectópica prévia, cirurgia tubária, tabagismo e técnicas de reprodução assistida podem aumentar risco, mas grande parte das pessoas com ectópica não relata fator de risco conhecido. A ausência de fator não tem valor de exclusão.
+
+### 8.2. A tríade que é clássica, não obrigatória
+
+Dor abdominal/pélvica, atraso menstrual e sangramento vaginal irregular são a tríade clássica, mas **não precisam estar simultaneamente presentes**. Dor pode ser unilateral, difusa ou pouco localizada. Dor de ombro e irritação peritoneal podem sinalizar sangue intraperitoneal, sobretudo se associadas a síncope ou sinais de hipoperfusão. Uma gestação ectópica rota pode manifestar taquicardia, hipotensão, pele fria, rebaixamento e dor intensa. A primeira conduta é estabilizar e envolver imediatamente equipe cirúrgica/obstétrica.
+
+Atenção à linguagem: “ameaça de aborto” e “gestação de localização desconhecida” não são rótulos equivalentes. Antes de determinar localização, não se deve presumir que sangramento decorre de gestação intrauterina inviável; isso pode retardar uma ectópica.
+
+### 8.3. Integração do ultrassom e dos níveis de β-hCG
+
+Saco intrauterino com vesícula vitelínica ou embrião em cavidade endometrial é evidência mais robusta de gestação intrauterina que uma imagem apenas semelhante a saco. Uma formação líquida central isolada pode ser pseudossaco e não afasta implantação ectópica. Para ectópica tubária, identificação de saco extrauterino com vesícula ou embrião é evidência muito forte; massa tubária complexa separada do ovário e líquido livre geram suspeita, mas precisam ser interpretados com achados globais.
+
+**Gestação de localização desconhecida (GLD):** ultrassom não confirma nem implantação intrauterina nem extrauterina. Há pelo menos três trajetórias possíveis: gestação intrauterina muito precoce, gestação inviável em resolução ou ectópica. Seguimento seguro exige local acessível para retorno, comunicação clara, ultrassom e β-hCG seriados conforme protocolo e orientações escritas de urgência.
+
+A tendência do β-hCG é indicador de evolução trofoblástica, não atestado de localização. Aumento compatível com gestação em desenvolvimento não exclui ectópica; queda de valor pode ocorrer em gestação inviável, mas ectópica ainda pode causar complicações. Não prescrever metotrexato para GLD sem excluir razoavelmente gravidez intrauterina viável e sem avaliação especializada.
+
+### 8.4. Conduta por estabilidade clínica
+
+**Instável, com dor importante ou sinais de sangramento:** ABCDE, ressuscitação e controle cirúrgico urgente; buscar tipagem/prova cruzada e reservar hemoderivados conforme quadro. Ultrassom à beira do leito pode apoiar diagnóstico de líquido livre, desde que não atrase centro cirúrgico. Em forte suspeita de gestação ectópica rota, não aguardar valor absoluto do β-hCG, repetição em 48 horas ou exame de tomografia.
+
+**Estável, localização confirmada:** ginecologia/obstetrícia decide entre conduta cirúrgica, tratamento medicamentoso especializado ou acompanhamento expectante conforme tamanho/localização, sintomas, β-hCG, viabilidade, contraindicações e possibilidade real de seguimento. Metotrexato é medicamento citotóxico com contraindicações e monitorização obrigatórias; não se trata de escolha automática só porque a pessoa está estável. A orientação deve contemplar riscos de rotura durante acompanhamento, retorno emergencial e decisões reprodutivas.
+
+**Estável, localização não confirmada:** classificar como GLD, planejar retorno documentado e reavaliar caso sintomas mudem. Repouso isolado, antibiótico inespecífico ou uma única dosagem de progesterona não substituem investigação da localização.
+
+### 8.5. Gestação heterotópica e situações especiais
+
+Gestação heterotópica é coexistência de implantação intrauterina e ectópica. Rara sem reprodução assistida, mas relevante após transferência embrionária ou indução de ovulação. Se uma gestante com ultrassom mostrando saco intrauterino apresenta dor unilateral grave, massa anexial e hemoperitônio, não encerrar diagnóstico só pela visualização do saco. A fertilidade futura e o desejo reprodutivo precisam entrar na discussão terapêutica, mas não podem retardar tratamento de choque.
+
+## 9. Cistos funcionais, corpo lúteo hemorrágico e hemoperitônio
+
+### 9.1. O que é esperado no ciclo ovulatório
+
+Durante o ciclo, folículos ovarianos crescem por ação gonadotrófica; um folículo dominante pode romper-se e liberar oócito. O remanescente forma corpo lúteo, estrutura ricamente vascularizada e produtora de progesterona. Esse fenômeno pode produzir dor transitória (“dor do meio do ciclo”) e pequeno líquido pélvico. Cistos foliculares e do corpo lúteo podem ser achados funcionais, frequentemente resolvidos espontaneamente. Entretanto, **corpo lúteo altamente vascularizado pode sangrar** e gerar sintomas importantes.
+
+O raciocínio clínico começa pelo risco, não pela etiqueta ultrassonográfica “cisto funcional”. Uma massa cística aparentemente benigna pode torcer; um corpo lúteo pode romper com hemoperitônio; e cisto hemorrágico não explica automaticamente toda síncope ou queda de pressão. Com β-hCG positivo, ectópica precisa ser excluída.
+
+### 9.2. Apresentação típica de ruptura
+
+Ruptura de cisto pode causar dor unilateral súbita, às vezes após relação sexual, atividade física ou sem gatilho identificável. Náuseas, irritação peritoneal e líquido livre podem ocorrer. Em pessoa hemodinamicamente estável, sem sangramento progressivo, tratamento geralmente envolve analgesia, observação apropriada e reavaliação. Em paciente com anticoagulação, coagulopatia, anemia importante ou deterioração clínica, o risco hemorrágico e a necessidade de intervenção aumentam.
+
+**Pergunta-chave:** o ultrassom demonstra apenas um cisto ou demonstra sinais de complicação atual? Um cisto hemorrágico com conteúdo em rede de fibrina/eco interno pode explicar dor, mas não exclui torção concomitante se houver aumento do ovário, edema e episódios clássicos.
+
+### 9.3. Ultrassom do cisto hemorrágico
+
+Cisto hemorrágico típico pode exibir ecos reticulares internos (“teia”), coágulo retrátil com margens particulares e ausência de vascularização **dentro do coágulo**. Pode haver vascularização periférica no corpo lúteo. Massa com componente sólido vascularizado, projeções papilares ou características atípicas merece caracterização apropriada, sobretudo em pós-menopausa. Critérios de imagem para risco tumoral são estudados no caderno sobre massas anexiais; aqui a pergunta é se há hemorragia, torção ou necessidade de cirurgia urgente.
+
+**Líquido livre ecogênico:** favorece material hemático, mas depende de composição e equipamento. Volume significativo associado a instabilidade, hemoglobina em queda ou dor progressiva é mais importante que a classificação isolada do cisto.
+
+### 9.4. Conduta por estabilidade e suspeita
+
+**Estável:** controle de dor/náuseas, observar evolução e hemograma seriado se houver suspeita de sangramento, discutir ultrassom de controle conforme tipo de cisto e contexto clínico, explicar retorno. **Instável ou piora:** acesso venoso, reserva sanguínea conforme necessidade, avaliação cirúrgica e controle de foco. Em cistos hemorrágicos, preservar tecido ovariano quando viável. Evitar ooforectomia como resposta automática a hemorragia de origem cística benigna.
+
+### 9.5. Endometrioma e endometriose no diferencial
+
+Endometriomas podem apresentar ecogenicidade homogênea de baixo nível, frequentemente descrita como “vidro fosco”, e relacionam-se a dismenorreia, dispareunia e infertilidade; contudo, podem coexistir com dor aguda por ruptura, infecção rara, hemorragia ou torção de adnexo. Uma história de dor cíclica crônica não dispensa investigação de quadro súbito que não se parece com crises anteriores. A apostila de endometriose aprofunda epidemiologia, lesões e tratamento de longo prazo; neste caderno, foco é reconhecer **mudança aguda de padrão**.
+
+## 10. Doença inflamatória pélvica como diferencial urgente
+
+### 10.1. Mecanismo: ascensão de infecção do trato inferior
+
+DIP engloba inflamação/infeção do endométrio, tubas e estruturas pélvicas relacionadas, frequentemente polimicrobiana. Pode ocorrer após infecção cervical por *Neisseria gonorrhoeae* e *Chlamydia trachomatis* e envolver anaeróbios e flora vaginal; alterações de barreiras cervicais favorecem ascensão. Nem toda paciente tem corrimento evidente, febre ou cultura positiva. O risco inclui dano tubário, gestação ectópica futura, infertilidade e dor pélvica crônica. A dificuldade é equilibrar **tratamento precoce para evitar sequelas** com a investigação de causas cirúrgicas concorrentes.
+
+### 10.2. Clínica e exame
+
+Dor hipogástrica, dor à mobilização do colo, sensibilidade uterina/anexial, sangramento intermenstrual, dispareunia, secreção endocervical e febre variável constituem pistas. Sintomas costumam desenvolver-se em horas ou dias; formas subclínicas também existem. Se houver dor unilateral súbita intensa com vômitos ou instabilidade, **não rotular automaticamente como DIP**. Torção, ectópica e apendicite ainda precisam de avaliação.
+
+A documentação deve indicar quais elementos sustentam infecção do trato genital superior e quais sinais exigem exclusão cirúrgica. O exame pélvico contribui, mas sua sensibilidade/especificidade são limitadas e dependem de contexto. A ausência de leucocitose não exclui DIP; um teste positivo para IST é evidência de exposição/infeção, mas não demonstra isoladamente se há salpingite ou se ela explica toda a dor.
+
+### 10.3. Critérios brasileiros e limiar de tratamento
+
+O PCDT-IST brasileiro de 2022 descreve critérios **maiores** (dor hipogástrica, dor anexial à palpação, dor à mobilização cervical), **menores** (febre e alterações inflamatórias/cervicais/laboratoriais) e **elaborados** (evidência de endometrite, abscesso em imagem, laparoscopia compatível). Para diagnóstico sindrômico no algoritmo brasileiro, requer três maiores e um menor, ou um elaborado. O CDC orienta limiar clínico mais sensível para iniciar tratamento em mulheres com risco sexual e dor abdominal baixa inexplicada, quando presente sensibilidade cervical, uterina ou anexial. **Esses são modelos de decisão diferentes, não autorizações para deixar de investigar gravidez ectópica.**
+
+Na apostila LURIA específica de cervicites/DIP fica o estudo detalhado de microbiologia, critérios formais e seguimento de IST; o essencial para esta aula é reconhecer risco de sequela e agir sem negligenciar diagnóstico concorrente.
+
+### 10.4. Tratamento empírico e distinção entre protocolos
+
+Para DIP leve/moderada em **paciente não gestante**, com boa tolerância e seguimento assegurado, PCDT-IST 2022 e CDC 2021 incluem esquema ambulatorial com **ceftriaxona 500 mg IM em dose única + doxiciclina 100 mg VO a cada 12 horas por 14 dias + metronidazol 500 mg VO a cada 12 horas por 14 dias**. Essa informação é referencial educativa, não uma prescrição individual; confirmar alergias, interações, protocolo vigente e peso. Doxiciclina é contraindicada na gestação no PCDT e grávidas com suspeita de DIP demandam avaliação hospitalar.
+
+O PCDT brasileiro apresenta esquema hospitalar de **ceftriaxona + doxiciclina + metronidazol** e alternativas como clindamicina/gentamicina ou ampicilina/sulbactam com doxiciclina; a formulação/dose do metronidazol IV brasileiro na tabela de 2022 difere de alguns serviços e do CDC, cujo regime de referência inclui **ceftriaxona 1 g IV/dia, doxiciclina 100 mg a cada 12 horas e metronidazol 500 mg a cada 12 horas**. A equivalência operacional não deve ser presumida; selecionar tabela oficial aplicável, perfil de risco e disponibilidade local. O tratamento deve cobrir gonococo, clamídia e anaeróbios quando indicado.
+
+**Critérios para hospitalização:** gravidez, abscesso tubo-ovariano, quadro grave/peritonite, incapacidade de excluir emergência cirúrgica, náuseas/vômitos com incapacidade de tolerar esquema oral, dificuldade relevante de adesão e ausência de resposta após tratamento inicial apropriado. Reavaliação geralmente é exigida dentro de 48–72 horas na conduta ambulatorial. Deterioração antes disso demanda retorno imediato.
+
+### 10.5. Abscesso tubo-ovariano
+
+Abscesso tubo-ovariano (ATO) representa complicação supurativa, frequentemente com massa complexa e febre/dor variável. Internação, antimicrobianos IV e acompanhamento especializado são fundamentais. Drenagem ou cirurgia não são automáticas em todos os casos; são consideradas em ruptura, peritonite, sepse, deterioração, ausência de melhora ou coleções que necessitam controle de foco. O tempo de observação deve ser ajustado ao risco, tamanho da coleção, resposta ao antibiótico e possibilidade de seguimento.
+
+O ultrassom pode demonstrar massa tubo-ovariana complexa, septações, debris e líquido livre. Dor à mobilização cervical pode estar presente, mas **uma massa complexa não prova ATO**: endometrioma, neoplasia, cisto hemorrágico e torção entram no diferencial.
+
+### 10.6. DIU, parcerias e prevenção
+
+Em usuárias de DIU com DIP, **não há indicação de retirada rotineira imediata** em toda paciente; reavaliar clinicamente, tratar e discutir remoção se não houver melhora ou se a pessoa desejar, idealmente após antibioticoterapia iniciada. Há risco maior relacionado ao período próximo da inserção, mas não se deve afirmar que o dispositivo “produz” infecção por si só. A investigação e manejo de parcerias sexuais e testagem para ISTs fazem parte da prevenção de recorrência e estão detalhados na apostila específica.
+
+## 11. Causas urinárias e gastrointestinais: não reduzir o abdome inferior ao sistema reprodutivo
+
+### 11.1. Apendicite aguda
+
+Apendicite pode começar com dor periumbilical e evoluir para fossa ilíaca direita, mas a localização do apêndice pode modificar o quadro. Apêndice pélvico pode produzir dor hipogástrica, disúria e até sensibilidade aparente do fundo de saco. Anorexia, vômitos e febre variável acrescentam probabilidade, sem serem obrigatórios. Hemograma e PCR auxiliam, porém sua normalidade inicial não exclui inflamação apendicular. Ultrassom pode ajudar; tomografia ou ressonância podem ser necessárias conforme faixa etária/gravidez e recursos.
+
+**Erro perigoso:** paciente com dor em FID e achado incidental de pequeno cisto ovariano recebe alta sem considerar apendicite. Um exame que identifica um achado frequente não o transforma automaticamente na causa da dor. Se há defesa localizada, dor progressiva ou sinais sistêmicos, observar e/ou investigar o trato gastrointestinal. Do mesmo modo, uma TC realizada por apendicite e mostrando ovário aumentado com pedículo suspeito demanda avaliação imediata de torção, não somente “não tem apendicite”.
+
+### 11.2. Urolitíase e infecção urinária
+
+Cólica ureteral pode irradiar de flanco à virilha, com náuseas, inquietação e hematúria; ausência de hemácias na urina não exclui litíase. Pielonefrite costuma apresentar febre, dor lombar e sintomas urinários, mas apresentações não típicas são comuns. **Obstrução urinária infectada é emergência urológica**: antibiótico isolado pode não controlar foco sem drenagem. A ultrassonografia renal/pélvica avalia hidronefrose e algumas pedras; TC sem contraste pode ser indicada em não gestantes selecionadas.
+
+Uma bacteriúria isolada pode ser colonização ou contaminação. Não encerrar avaliação de dor unilateral abrupta clássica de torção apenas porque fita urinária apresenta leucócitos. Reavaliar evolução, intensidade, hematuria verdadeira e imagem.
+
+### 11.3. Diverticulite, doença inflamatória intestinal e causas intestinais
+
+Diverticulite costuma ocorrer em faixa etária mais avançada, com dor em quadrante inferior esquerdo, febre e mudança do trânsito intestinal; localização atípica e cólon redundante tornam quadro variável. Doença inflamatória intestinal ativa pode causar dor, diarreia e manifestações sistêmicas. Obstrução intestinal ou perfuração exigem diagnóstico por sinais de gravidade, vômitos persistentes, distensão, ausência de eliminação e peritonismo. Infecção gastrointestinal inespecífica deve ser diagnóstico de exclusão quando sinais cirúrgicos ou gestacionais estão presentes.
+
+### 11.4. Dor musculoesquelética e referida
+
+Hérnias, dor miofascial do assoalho pélvico, condições da articulação sacroilíaca e neuropatias podem simular doença intrapélvica. O histórico funcional, o exame motor e provocação localizada podem auxiliar após exclusão das urgências. **Não utilizar explicação psicossomática prematura** para dor sem investigação adequada, especialmente diante de mudanças recentes de padrão, sangramento ou perda ponderal.
+
+## 12. Cenários por ciclo de vida e circunstância
+
+### 12.1. Pré-púbere e adolescente
+
+Torção ovariana em menina pré-púbere muitas vezes ocorre sem massa. O ultrassom transabdominal com bexiga convenientemente repleta pode ser útil; conduta depende da urgência clínica e não deve ser postergada por limitações de acesso a exame transvaginal. Orientar familiares sem apagar direitos de privacidade e autonomia progressiva da adolescente. Risco de gestação, IST ou violência deve ser avaliado com entrevista apropriada e protocolos de proteção, evitando pressupostos baseados em aparência ou acompanhante.
+
+### 12.2. Gravidez inicial
+
+A possibilidade de gravidez ectópica modifica rapidamente o algoritmo. Após exclusão de sangramento ameaçador, avaliar localização gestacional, viabilidade e anexos. Ovário gravídico pode estar aumentado por corpo lúteo ou por indução de ovulação; dor súbita com vômitos pode ser torção mesmo com saco intrauterino. Procedimentos ou exames de imagem devem buscar menor risco sem sacrificar diagnóstico oportuno da emergência.
+
+### 12.3. Pós-parto e pós-procedimentos ginecológicos
+
+Dor pélvica importante após parto, abortamento, curetagem ou inserção de dispositivo pode indicar infecção, restos ovulares, hematoma, complicação cirúrgica ou perfuração; as possibilidades dependem de momento e história. Avaliar sangramento, febre, sinais hemodinâmicos, dor progressiva e procedimentos realizados. História recente de cirurgia pélvica também aumenta risco de aderências e complicações abdominais não ginecológicas.
+
+### 12.4. Pós-menopausa
+
+Embora cistos funcionais se tornem menos frequentes, podem ocorrer massas anexiais benignas ou malignas, complicadas por ruptura ou torção. Dor súbita não permite concluir câncer; massa sólida/complexa, ascite, emagrecimento e antecedentes exigem avaliação oncológica. A prioridade no pronto atendimento é estabilizar, reconhecer complicações e organizar diagnóstico adequado, com cuidado para não realizar cirurgia desnecessariamente extensa quando há possibilidade de conduta especializada conservadora.
+
+### 12.5. Uso de anticoagulantes e distúrbios de coagulação
+
+Em anticoagulação terapêutica, pequenos sangramentos foliculares podem ter maior repercussão. Perguntar medicamento, dose, horário, indicação, última ingesta e interação medicamentosa. Avaliar hemoglobina, coagulação conforme droga, função renal e imagem quando indicado. Não administrar “reversor” inespecífico sem considerar risco trombótico e real gravidade do sangramento. Queda de pressão e hemoperitônio precisam de equipe cirúrgica/hematologia, com decisões individualizadas.
+
+### 12.6. Tratamento de reprodução assistida e hiperestimulação
+
+Após indução da ovulação, ovários podem estar grandes, sensíveis e vascularizados. Síndrome de hiperestimulação ovariana pode causar ascite, hemoconcentração, alterações de eletrólitos, risco trombótico e dificuldade respiratória. Torção ou sangramento podem coexistir; a presença de ovários aumentados não reduz suspeita cirúrgica. A diretriz RCOG de hiperestimulação de 2026 reconhece intervenção cirúrgica quando houver suspeita de torção, hemorragia por cisto roto ou ectópica. O manejo precisa de equipe de ginecologia/reprodução e suporte conforme gravidade.
+
+## 13. Fluxogramas textuais originais de decisão
+
+### Fluxo A — Dor aguda com instabilidade
+
+1. Avaliar ABCDE, monitorização, perfusão e sangramento.
+2. Acesso venoso; hemograma, tipagem/prova cruzada e β-hCG conforme possibilidade de gravidez, sem atrasar ressuscitação.
+3. Considerar hemoperitônio por ectópica rota ou cisto hemorrágico, além de hemorragia não ginecológica e sepse.
+4. Solicitar avaliação ginecológica e cirúrgica imediatamente; imagem de beira-leito apenas se não atrasar controle de foco.
+5. Preparar intervenção indicada e hemoterapia conforme necessidade.
+6. Documentar reavaliação e comunicação; confirmar plano definitivo e vigilância pós-intervenção.
+
+### Fluxo B — Dor súbita unilateral, vômitos, paciente estável
+
+1. Testar gravidez e obter sinais vitais seriados.
+2. Ultrassom de pelve com avaliação morfológica, Doppler e atenção a ovário aumentado, edema e pedículo.
+3. Considerar ectópica se β-hCG positivo, cisto roto, cálculo e apendicite.
+4. Se suspeita significativa de torção persistir, **chamar ginecologia cirúrgica para exploração oportuna**, mesmo com Doppler arterial.
+5. Explicar possibilidade de diagnóstico cirúrgico negativo e importância da preservação anexial.
+6. Reavaliar continuamente; melhora transitória não basta para exclusão.
+
+### Fluxo C — Dor subaguda, secreção, febre, sensibilidade pélvica
+
+1. Avaliar gravidez, sepse, peritonismo e urgências cirúrgicas.
+2. Coletar exames para IST quando apropriados; não atrasar terapia em DIP clínica provável.
+3. Confirmar critérios de tratamento ambulatorial **ou** internação por gestação, gravidade, ATO, intolerância oral ou diagnóstico cirúrgico indefinido.
+4. Dar antibiótico conforme PCDT local e contexto, orientar parcerias, abstinência até completar tratamento/resolução e segurança.
+5. Reavaliar em até 48–72 horas; piora exige retorno antes; falha impõe reconsiderar hipótese e imagem/controle de foco.
+6. Planejar prevenção de reinfecção e avaliação reprodutiva se houver complicações.
+
+### Fluxo D — β-hCG positivo, ultrassom sem gestação definida
+
+1. Classificar como **gestação de localização desconhecida**, não ectópica confirmada nem aborto confirmado.
+2. Se instável ou peritonite, agir como emergência e discutir cirurgia.
+3. Se estável, programar β-hCG seriado e reavaliação ultrassonográfica conforme protocolo da gestação inicial.
+4. Informar que número de β-hCG não determina localização; registrar contato, retorno e sinais de hemorragia.
+5. Reavaliar se sintomas aumentarem, independentemente da curva hormonal.
+6. Encerrar seguimento apenas quando diagnóstico e evolução estiverem esclarecidos e houver plano seguro.
+
+### Fluxo E — Dor após ultrassom com cisto hemorrágico provável
+
+1. Confirmar β-hCG compatível com ausência de gestação em risco.
+2. Reavaliar sinais vitais, hemoglobina quando indicado, volume/característica de líquido e peritonismo.
+3. Considerar torção pela clínica e morfologia; não assumir que o cisto explica tudo.
+4. Estável, sem piora ou perda sanguínea: analgesia, observação/alta orientada segundo serviço e retorno.
+5. Sangramento em progressão, queda hemodinâmica ou dor importante: discutir cirurgia; preservar ovário quando viável.
+6. Reclassificar eventual massa atípica e garantir investigação posterior.
+
+## 14. Quadro de contrastes para prova e plantão
+
+| Doença | Dor predominante | β-hCG | Achado-chave | Não esquecer |
+|---|---|---|---|---|
+| Torção anexial | súbita, unilateral, intermitente, vômitos | negativo ou positivo se gestante | ovário aumentado/edemaciado, pedículo torcido | Doppler com fluxo **não exclui**; laparoscopia |
+| Ectópica | variável, com/sem sangramento, pode ter síncope | positivo, nível variável | localização extrauterina ou GLD com suspeita | β-hCG isolado não localiza; choque exige cirurgia |
+| Ruptura de cisto hemorrágico | súbita, unilateral, às vezes pós-coito | usualmente negativo; cisto lúteo na gestação possível | cisto complexo típico, fluido livre | hemoperitônio pode requerer intervenção |
+| DIP | subaguda, hipogástrica, dor cervical | geralmente negativo | secreção/cervicite, sensibilidade, ATO | tratar cedo, excluir ectópica/torção |
+| Apendicite | progressiva, possível migração, FID | negativo ou positivo incidental em gestante | sinais apendiculares, imagem | apêndice pélvico pode simular ginecológica |
+| Urolitíase | cólica em flanco/virilha | não define | hidronefrose/cálculo; hematúria variável | obstrução infectada exige drenagem |
+| Endometriose/dismenorreia | cíclica, recorrente | geralmente negativo | história longitudinal, exame dirigido | quadro novo súbito exige nova investigação |
+| ATO | dor pélvica, febre variável | geralmente negativo | massa tubo-ovariana complexa | internação, ATB e avaliação de controle de foco |
+
+**Dica de semântica clínica:** “mais provável” não significa “seguro para esperar”. Probabilidade orienta escolha inicial do teste, enquanto **risco de perder órgão ou vida** orienta velocidade da intervenção. Uma doença rara com alto dano potencial pode dominar a decisão mesmo quando a explicação mais comum é benigna.
+
