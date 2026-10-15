@@ -421,3 +421,150 @@ Paciente de 51 anos teve episódio depressivo importante que melhorou significat
 
 **Conduta:** discutir benefício de continuidade/manutenção, efeitos adversos, riscos de recaída, preferências e estratégias psicológicas; se decidir interromper, planejar redução gradual individual, revisão de sintomas de retirada e retorno. Registrar plano e reavaliar pelo menos semestralmente quando em manutenção contínua, conforme NICE NG222. **Por que importa:** a fase de manutenção é parte do tratamento, não uma formalidade depois que a pessoa melhora.
 
+
+## 14. Doze questões autorais de residência — cinco alternativas comentadas
+
+### Questão 1 — Sintoma nuclear de depressão
+
+Mulher de 31 anos perdeu interesse em atividades antes agradáveis e sente tristeza persistente há várias semanas, com prejuízo no trabalho. Qual afirmação é mais adequada?
+
+A) A presença de tristeza por um dia já confirma transtorno depressivo.
+B) Anedonia e humor deprimido são sintomas centrais a investigar com duração, prejuízo e diferenciais.
+C) O diagnóstico exige exame laboratorial positivo para serotonina reduzida.
+D) A capacidade de sorrir durante entrevista exclui depressão.
+E) Toda pessoa com sintomas depressivos tem necessariamente transtorno bipolar.
+
+**Gabarito B.** **A incorreta:** reação emocional breve não basta. **B correta:** sintomas centrais precisam ser contextualizados em persistência, funcionamento e outras causas. **C incorreta:** não há biomarcador serotonérgico diagnóstico de rotina. **D incorreta:** afeto observado pode variar. **E incorreta:** bipolaridade é diferencial, não diagnóstico universal. **Mini revisão:** fenômeno sintomático não é igual a síndrome/diagnóstico; o exame longitudinal é essencial.
+
+### Questão 2 — Hipomania esquecida
+
+Homem com anedonia atual lembra episódio anterior de vários dias com aumento anormal de energia, menor necessidade de sono, fala muito rápida e impulsividade percebida por familiares. Melhor atitude?
+
+A) Presumir depressão unipolar e iniciar antidepressivo isolado sem mais perguntas.
+B) Investigar história de mania/hipomania e possibilidade de bipolaridade antes de definir tratamento.
+C) Considerar que dormir pouco e estar descansado prova apenas insônia.
+D) Diagnosticar esquizofrenia pelo aumento de fala.
+E) Ignorar o episódio porque não aconteceu nesta semana.
+
+**Gabarito B.** **A incorreta:** pode ocorrer abordagem terapêutica inadequada em bipolaridade. **B correta:** padrão de ativação altera diagnóstico e planejamento. **C incorreta:** redução de necessidade de sono difere de insônia com cansaço. **D incorreta:** não há síndrome psicótica necessária. **E incorreta:** transtornos episódicos requerem trajetória longitudinal. **Mini revisão:** “pergunte sempre pelo polo elevado”.
+
+### Questão 3 — Depressão menos grave e primeira escolha
+
+Segundo NICE NG222, para pessoa com novo episódio de depressão menos grave, sem risco iminente e que prefere evitar medicamentos, é apropriado:
+
+A) Exigir antidepressivo como primeira linha em todas.
+B) Oferecer intervenções psicológicas/psicossociais estruturadas ou autoajuda guiada conforme preferência e acompanhamento.
+C) Suspender avaliações de segurança porque a depressão é leve.
+D) Proibir qualquer opção de medicamento mesmo se for escolha informada da pessoa.
+E) Prometer recuperação sem necessidade de retorno.
+
+**Gabarito B.** **A incorreta:** NICE não recomenda antidepressivo rotineiramente como primeira linha para menos grave. **B correta:** opções menos intrusivas podem ser primeiras escolhas, com monitorização. **C incorreta:** segurança é avaliada independentemente de gravidade sintomática. **D incorreta:** preferências informadas importam. **E incorreta:** seguimento é parte do cuidado. **Mini revisão:** monitorização ativa costuma incluir revisão em 2–4 semanas, não abandono.
+
+### Questão 4 — Depressão mais grave
+
+Paciente tem anedonia intensa, prejuízo funcional importante e sem risco que imponha internação imediata. Sobre tratamento, a NICE NG222 orienta:
+
+A) Proibir psicoterapia se há depressão grave.
+B) Proibir qualquer antidepressivo se não houver psicose.
+C) Discutir tratamento por gravidade e preferência, incluindo combinação de psicoterapia estruturada com antidepressivo ou outras opções apropriadas.
+D) Prescrever ECT obrigatória em todo episódio depressivo.
+E) Esperar um ano sem plano antes de iniciar intervenção.
+
+**Gabarito C.** **A incorreta:** psicoterapia pode integrar tratamento, inclusive combinado. **B incorreta:** antidepressivos podem ser apropriados em depressão moderada/grave. **C correta:** decisão compartilhada e abordagem proporcional. **D incorreta:** ECT é alternativa especializada em indicações específicas. **E incorreta:** perpetua prejuízo e risco. **Mini revisão:** “mais grave” na NICE abrange moderada e grave, mas número de sintomas não substitui funcionalidade e segurança.
+
+### Questão 5 — Depressão com delírio
+
+Mulher com humor gravemente deprimido acredita de forma fixa, contra evidências, que provocou a doença de familiares e recusa alimentação por culpa. Qual interpretação é mais apropriada?
+
+A) Autocrítica comum sem risco clínico.
+B) Depressão com sintomas psicóticos possível, com avaliação urgente de nutrição, segurança e tratamento especializado.
+C) Manifestações normais e universais de tristeza.
+D) Delirium obrigatoriamente, mesmo com atenção preservada e curso não flutuante.
+E) Apenas transtorno obsessivo-compulsivo confirmado.
+
+**Gabarito B.** **A incorreta:** convicção delirante e recusa alimentar têm repercussão séria. **B correta:** quadro grave requer equipe especializada e possível internação/ECT conforme caso. **C incorreta:** não é reação universal. **D incorreta:** delirium envolve atenção/consciência alteradas e curso agudo/flutuante, que não foram descritos. **E incorreta:** não há intrusões egodistônicas típicas; convicção é fixa. **Mini revisão:** sintomas psicóticos modificam gravidade e plano.
+
+### Questão 6 — Escalas de suicídio
+
+Uma pessoa com ideação suicida atual, planejamento e acesso a meio potencialmente letal recebe classificação “baixo risco” em aplicativo. Qual conduta corresponde à NICE NG225?
+
+A) Dar alta automática pela pontuação.
+B) Deixar paciente sozinho e aguardar pontuação piorar.
+C) Realizar avaliação clínica/psicossocial e plano de segurança, sem usar escore/estrato para prever suicídio ou decidir alta.
+D) Substituir avaliação por assinatura de contrato de não suicídio.
+E) Acreditar que pessoas calmas não estão em risco.
+
+**Gabarito C.** **A incorreta:** pontuações não permitem predição individual confiável. **B incorreta:** pode expor a dano imediato. **C correta:** avaliação focaliza necessidades e proteção. **D incorreta:** contrato não substitui tratamento. **E incorreta:** aparência isolada não define intenção. **Mini revisão:** intenção, plano, acesso, história e suporte são dados clínicos, não sentença preditiva matemática.
+
+### Questão 7 — Monitorização inicial de ISRS
+
+Pessoa inicia antidepressivo e relata náusea, sono alterado e manutenção do humor deprimido após dez dias. Sem risco agudo, mas preocupada por “não ter funcionado”. Melhor orientação geral?
+
+A) Afirmar que não haverá melhora porque dez dias bastam para excluir resposta.
+B) Suspender imediatamente e sem plano por não haver resposta plena.
+C) Revisar adesão e tolerabilidade, orientar que benefício pode demorar semanas e programar monitorização, sobretudo nos primeiros 2–4 semanas e conforme risco.
+D) Associar automaticamente três antidepressivos para acelerar efeito.
+E) Afirmar que não há efeitos adversos possíveis na classe.
+
+**Gabarito C.** **A incorreta:** início é muito curto para julgar resposta plena em muitos casos. **B incorreta:** retirada não planejada pode prejudicar tratamento. **C correta:** segurança, adesão e tempo adequado são centrais. **D incorreta:** combinações elevam risco e precisam de indicação. **E incorreta:** ISRS podem produzir sintomas gastrointestinais, sexuais e de sono. **Mini revisão:** plano deve incluir contato rápido se houver piora significativa ou ativação/ideação suicida.
+
+### Questão 8 — “Depressão resistente” sem uso consistente
+
+Paciente mudou de antidepressivo três vezes em dois meses, mas parou cada um em poucos dias por efeitos adversos, sem dose/duração adequadas e sem reavaliação de bipolaridade. Qual primeiro passo?
+
+A) Declarar depressão definitivamente refratária e abandonar terapias.
+B) Revisar diagnóstico, adesão, dose, duração, tolerabilidade e barreiras antes de nomear resistência.
+C) Iniciar imediatamente associação complexa sem revisão.
+D) Interpretar qualquer efeito adverso como contraindicação de toda psicoterapia.
+E) Suspender seguimento porque mudanças anteriores não funcionaram.
+
+**Gabarito B.** **A incorreta:** não houve tentativas adequadas demonstradas. **B correta:** não resposta exige reconciliação de diagnóstico e exposição terapêutica. **C incorreta:** aumenta risco sem abordar a causa da falha. **D incorreta:** efeitos adversos farmacológicos não impedem psicoterapia. **E incorreta:** continuidade é essencial. **Mini revisão:** falta de acesso e medos de efeitos precisam ser escutados sem culpabilização.
+
+### Questão 9 — Retirada abrupta
+
+Pessoa com episódios prévios de depressão interrompe abruptamente antidepressivo após melhora; dias depois apresenta tontura, náusea, ansiedade e sensações corporais incomuns. O que considerar?
+
+A) Recorrência depressiva comprovada sem avaliação.
+B) Síndrome de descontinuação como possibilidade, diferenciando temporalidade de recaída e planejando redução adequada.
+C) Esquizofrenia de início automático.
+D) Reação impossível, pois antidepressivos não causam sintomas na suspensão.
+E) Necessidade de ECT por qualquer tontura.
+
+**Gabarito B.** **A incorreta:** início e perfil podem ser de retirada. **B correta:** interpretar cronologia e discutir manejo profissional. **C incorreta:** não há síndrome psicótica. **D incorreta:** sintomas de descontinuação são reconhecidos. **E incorreta:** não tem indicação. **Mini revisão:** descontinuar com plano, preferências e monitorização de recaída.
+
+### Questão 10 — Puerpério e pensamentos intrusivos
+
+Puérpera relata pensamentos violentos indesejados que lhe causam intenso medo, sem intenção de agir, mantendo crítica e buscando ajuda. Qual é a melhor interpretação inicial?
+
+A) Comprova intenção de ferir o bebê, sem precisar de entrevista.
+B) Possível fenômeno obsessivo egodistônico, devendo investigar depressão/TOC perinatal, segurança e diferenciar psicose.
+C) Prova de que toda puérpera com medo tem psicose pós-parto.
+D) É sempre normal e dispensa investigar sofrimento.
+E) A ausência de delírios implica ausência de qualquer doença perinatal.
+
+**Gabarito B.** **A incorreta:** conteúdo intrusivo não equivale a intenção. **B correta:** fenomenologia, risco e funcionalidade guiam avaliação. **C incorreta:** psicose exige outra constelação clínica. **D incorreta:** sofrimento e prejuízo merecem cuidado. **E incorreta:** depressão/TOC podem existir sem psicose. **Mini revisão:** quadro psicótico pós-parto com perda de crítica e comportamento perigoso é emergência.
+
+### Questão 11 — Indicação de ECT
+
+Qual situação pode justificar discussão especializada de ECT?
+
+A) Tristeza transitória de um dia, sem prejuízo.
+B) Depressão grave com sintomas psicóticos e recusa alimentar ameaçando condição clínica, sobretudo quando se precisa de resposta rápida.
+C) Toda ansiedade leve antes de prova.
+D) Qualquer insônia isolada sem outros sintomas.
+E) Tratamento universal de escolha para qualquer paciente sem avaliação.
+
+**Gabarito B.** **A incorreta:** não há síndrome grave. **B correta:** ECT pode ser opção com evidência em depressão grave e necessidade de resposta rápida. **C incorreta:** ansiedade situacional não indica ECT. **D incorreta:** insônia isolada não indica. **E incorreta:** requer equipe, consentimento, avaliação de riscos e indicação específica. **Mini revisão:** ECT é intervenção médica especializada sob anestesia, não punição.
+
+### Questão 12 — Depressão no idoso ou delirium?
+
+Homem de 79 anos apresenta apatia e sonolência de início em dois dias após internação por infecção, com desatenção flutuante e confusão noturna. Qual prioridade?
+
+A) Transtorno depressivo maior confirmado pelo isolamento.
+B) Delirium como hipótese prioritária, com busca de precipitantes clínicos e avaliação da atenção.
+C) Demência de Alzheimer confirmada por um dia de desorientação.
+D) Transtorno bipolar porque dorme muito.
+E) Encerrar investigação se o exame cognitivo for normal em um único momento.
+
+**Gabarito B.** **A incorreta:** cronologia/consciência não favorecem episódio depressivo típico. **B correta:** curso agudo e flutuante com desatenção sugere delirium. **C incorreta:** demência tende a curso longitudinal e pode coexistir com delirium. **D incorreta:** não há mania/hipomania. **E incorreta:** flutuação pode mascarar caso em exame isolado. **Mini revisão:** o 4AT no ambiente apropriado auxilia triagem, mas a causa orgânica deve ser investigada.
+
