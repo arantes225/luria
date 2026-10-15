@@ -9,7 +9,7 @@
 | 183 | Clínica Médica | Dislipidemias e prevenção do risco cardiovascular | Rascunho autoral expandido ~68,4 mil caracteres brutos; benchmark Drive parcial | Meta quantitativa preliminar atingida; conferir critérios SBC 2025, imagens e revisão científica |
 | 184 | Clínica Médica | Cefaleias e sinais de alarme neurológicos | Rascunho autoral ~100.005 caracteres brutos; 6 casos, 8 questões; etapa zero Drive realizada | Revisão científica, imagens e HTML/PWA pendentes; NÃO CERTIFICADA |
 | 185 | Clínica Médica | Síndromes geriátricas, quedas e polifarmácia | Rascunho 65.990 caracteres brutos; 4 casos e 6 questões; Drive parcial | Revisão científica, imagens, benchmark integral, HTML/PWA pendentes |
-| 186 | Clínica Médica | Arboviroses: dengue, chikungunya e Zika | Etapa zero Drive e auditoria de divergências concluídas; corpo da apostila NÃO produzido | Conferir integralmente MS dengue 6ª ed. e chikungunya revisão 2026 antes de redigir |
+| 186 | Clínica Médica | Arboviroses: dengue, chikungunya e Zika | Rascunho autoral ~86.724 caracteres brutos; 5 casos, 8 questões; benchmark e manuais MS consultados | Revisão científica, imagens aprovadas e HTML/PWA ainda pendentes — NÃO CERTIFICADO |
 | 187 | Clínica Médica | Antibioticoterapia e uso racional de antimicrobianos | Sem apostila própria no diretório raiz auditado | Evitar repetir capítulos de sepse; cobrir PK/PD, stewardship e síndromes |
 | 188 | Clínica Médica | Anafilaxia e reações alérgicas graves | Sem apostila própria no diretório raiz auditado | Distinguir emergência de alergias pediátricas (203) |
 | 189 | Clínica Médica | Dermatoses frequentes: eczema, urticária, acne e micoses | Sem apostila própria no diretório raiz auditado | Organizar por morfologia e decisões iniciais |
@@ -60,3 +60,10 @@
 
 ### Etapa zero iniciada da aula 186
 O material `06 - ARBOVIROSES.pdf` foi efetivamente aberto no Drive; foram identificadas divergências clínicas e cronológicas importantes com publicações oficiais do Ministério da Saúde. Registro em `apostilas/_rascunhos/lote-09-aula-186-auditoria-pre-producao-arboviroses.md`. Trata-se apenas de preparação e comparação; nenhuma apostila 186 foi publicada ou concluída.
+
+### 15/10/2026 — Aula 186 redigida em rascunho
+- Arquivo: `apostilas/_rascunhos/lote-09-aula-186-arboviroses-dengue-chikungunya-zika.md`, 86.724 caracteres brutos (estimativa simples ~84.738 após retirada de marcação), 30 capítulos principais, 5 casos comentados e 8 questões comentadas. Estimativa não equivale a auditoria formal de caracteres didáticos úteis nem a aprovação científica.
+- Benchmark real: `06 - ARBOVIROSES.pdf` aberto no Drive; resumo de Medicina Livre, usado para cobertura e identificação de inconsistências. Não houve cópia de texto ou figuras.
+- Protocolos oficiais consultados: dengue MS 6a edição (2024, portal atualizado 2026), chikungunya MS 2a edição revisada em julho/2026, Zika e SCZ MS e imunização PNI 2026. Foram inspecionadas páginas representativas dos PDFs originais para validar hidratação e cronologia.
+- Correções: diferenças entre fases clínicas de chikungunya, interpretação temporal de NS1/PCR/IgM, classificação e perfusão na dengue, gestantes, Zika congênita, vacinas e cautela com antiagregantes/anticoagulantes.
+- Pendências: revisar doses/fluxos com equipe médica e manual integral, auditar sobreposições, imagens reais licenciadas e aprovadas no Admin, construir HTML e verificar PWA, executar testes de autossuficiência; sem merge ou deploy.
