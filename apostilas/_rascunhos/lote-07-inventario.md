@@ -291,7 +291,7 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 
 ### 124/129/134 — inspeção real da integração, não edição de HTML
 
-**Novo documento de auditoria:** `_rascunhos/lote-07-auditoria-integracao-124-129-134.md` (**9.865 caracteres; criado e reaberto**) registra blob SHA de cada HTML, âncoras verificadas, conteúdo já existente, local correto para os oito itens de cada complemento e passos de QA.
+**Novo documento de auditoria:** `_rascunhos/lote-07-auditoria-integracao-124-129-134.md` (**9.759 caracteres; criado, ajustado em Markdown e reaberto**) registra blob SHA de cada HTML, âncoras verificadas, conteúdo já existente, local correto para os oito itens de cada complemento e passos de QA.
 
 | Aula | Estado publicado confirmado por leitura do HTML | Complemento | Ação futura sem destruir material existente |
 |---|---|---|---|
