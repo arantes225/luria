@@ -1,7 +1,7 @@
 # LURIA — Apostila 231: Hemoglobinopatias e anemias hereditárias
-**Lote 11 · Clínica Médica · CM-16 · Manuscrito autoral inicial, 15/10/2026**
+**Lote 11 · Clínica Médica · CM-16 · Manuscrito autoral expandido v0.2, 15/10/2026**
 
-> **STATUS: RASCUNHO EM DESENVOLVIMENTO — NÃO PUBLICAR.** Texto parcial, ainda abaixo da meta de 60.000 caracteres didáticos úteis e sem matriz autossuficiente final. Não alterar apostilas já prontas ou publicar imagens não aprovadas.
+> **STATUS: MANUSCRITO EXPANDIDO — NÃO CERTIFICADO, NÃO PUBLICAR.** Ultrapassou a meta numérica de caracteres brutos, mas necessita validação de 60.000 caracteres didaticamente úteis, revisão integral dos dados clínicos e matriz de autossuficiência final. Não alterar apostilas já prontas ou publicar imagens não aprovadas.
 
 ## Etapa zero documentada
 Dois materiais **efetivamente abertos e lidos** no Google Drive: `02 - HEMATO - ANEMIA FALCIFORME.pdf` e `03 - HEMATO - ANEMIA FERROPRIVA, SUPLEMENTACAO DE FERRO E TALASSEMIA.pdf`, em 15/10/2026. As cópias trazem avisos de proibição de venda e identificação de distribuição por terceiros. **Não foi demonstrada autoria institucional Estratégia MED**. Não copiar texto, tabela, esquema, imagens nem números sem confirmação nas fontes primárias atuais; links privados permanecem fora do GitHub público.
@@ -622,16 +622,16 @@ D) A quelação deve ser descontinuada sem avaliar carga de ferro, exames e segu
 ## 11. Matriz e visuais ainda não aprovados
 | Tema | Capítulo | Status |
 |---|---|---|
-| Composição de Hb e genética | §1 | Base escrita |
+| Composição de Hb e genética | §§1–2, expansões §1.1–2.3 | Cobertura expandida; revisar exemplos genéticos e compatibilidade com questões |
 | Fisiopatologia HbS | §2 | Base escrita; precisa figura autoral |
-| Crises e complicações agudas | §3 | Base, ampliar manejo por gravidade |
-| Diagnóstico/triagem | §4 | Base; revisar PNI/triagem brasileira atual |
-| Profilaxia/hidroxicarbamida/transfusão | §5 | **Parcial:** conferir elegibilidade, doses e seguimento PCDT |
-| Talassemias e diferenciais | §§6–8 | Base; ampliar fenótipo por mutação, terapia transfusional e quelação |
-| Populações especiais e gravidez | A desenvolver | **Pendente** |
-| Casos e questões | §§9–10 | 5 casos, 8 questões; ampliar complexidade |
+| Crises e complicações agudas | §3, expansões §3.7–3.14 | Algoritmos de dor, febre, STA, AVC, priapismo, sequestro, aplasia e hiper-hemólise; validar doses por protocolo assistencial |
+| Diagnóstico/triagem | §4, expansões §4.2–4.5 | Fluxo diagnóstico e efeitos de transfusão recente incluídos; confirmar fluxo específico do PNTN e PNI vigente |
+| Profilaxia/hidroxicarbamida/transfusão | §§5, 5.5–5.12 | Elegibilidade PCDT/MS 2024 ampliada e seguimento por órgão; **pendente conferir doses, critérios de pausa e calendário PNI/CRIE** |
+| Talassemias e diferenciais | §§6–8, §§6.3–6.6 e 8.1–8.5 | TDT/NTDT, alvo TIF 2025, RM de ferro, quelação, reações transfusionais; revisar bulas/doses e cenários especiais |
+| Populações especiais e gravidez | §5.10–5.11 e §6.3–6.6 | Cuidado pré-concepcional/gestacional, anestesia e pediatria incluídos; conferência de protocolos de gestante ainda pendente |
+| Casos e questões | §§9–10 | **10 casos e 14 questões originais comentadas**; gabaritos e plausibilidade exigem checagem independente |
 | Figuras e exames reais | A desenvolver | **Nenhuma imagem incluída ou aprovada** |
-| 60.000 úteis, autossuficiência, HTML/PWA | A desenvolver | **NÃO CERTIFICADO** |
+| 60.000 úteis, autossuficiência, HTML/PWA | Manuscrito acima de 90.000 caracteres brutos | **NÃO CERTIFICADO**: número bruto não demonstra 60K úteis, figuras/HTML e QA pendentes |
 
 Candidatas para futura busca com licença e inclusão **somente após aprovação Admin**: (1) microfotografia de drepanócitos no sangue periférico; (2) esquema autoral de polimerização HbS; (3) fluxograma autoral de crise com reticulócitos; (4) RX real de síndrome torácica aguda com licença; (5) RM de infarto cerebral em falciforme; (6) Doppler transcraniano exemplificativo de fonte acadêmica, com escala completa; (7) HPLC/eletroforese anonimizados com padrões de HbS; (8) esfregaço de microcitose em beta-talassemia; (9) RM T2* com quantificação de ferro em fonte licenciada; (10) esquema LURIA de herança HbAS x HbAS; (11) figura de alfa-talassemia por cópias gênicas original; (12) fluxograma de complicações transfusionais original. É proibido reutilizar imagens proprietárias do material comparativo.
 
@@ -642,4 +642,18 @@ Candidatas para futura busca com licença e inclusão **somente após aprovaçã
 4. Thalassaemia International Federation. **Guidelines for the management of transfusion-dependent β-thalassaemia, 5th edition (2025).** https://www.ncbi.nlm.nih.gov/books/NBK614240/
 5. Ministério da Saúde, guia PNI/CRIE atualizado para imunização de pessoas com asplenia funcional: **documento e calendário específicos ainda a conferir**; não publicar como referência concluída.
 
-**Pendências antes de considerar pronto:** aprofundar fisiopatologia e diferenças entre genótipos, tabelas de doses PCDT 2024, critérios transfusionais, monitorização e contraindicações, gestação, genética e aconselhamento, efeitos tardios, prevenção e seguimento nacional. Precisa de mínimo 60.000 caracteres úteis, revisão médica e imagem, teste de autonomia, layout desktop/PWA. **NÃO PUBLICAR.**
+**Pendências antes de considerar pronto:** conferência integral de doses/pausas no PCDT 2024 e bulas, calendário PNI/CRIE vigente, critérios por genótipo e gestação, auditoria de cada gabarito, verificação de licenças e aprovação de imagens no Admin, prova de pelo menos 60.000 caracteres didaticamente úteis e teste de autonomia, revisão médica independente, implementação e inspeção desktop/PWA. **NÃO PUBLICAR.**
+
+
+### Fontes e decisões editoriais da ampliação v0.2 (15/10/2026)
+6. Ministério da Saúde. **Portaria SECTICS/MS nº 2, de 05/03/2024**, incorporação de hidroxiureia para pessoas de 9–24 meses com genótipos previstos, inclusive assintomáticas: https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0002_07_03_2024.html
+7. Ministério da Saúde. **Portaria SECTICS/MS nº 4, de 05/03/2024**, incorporação de hidroxiureia 100 mg para pessoas a partir de 9 meses: https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0004_07_03_2024.html
+8. ASH. **Guidelines 2020: management of acute and chronic pain in sickle cell disease**: https://pmc.ncbi.nlm.nih.gov/articles/PMC7322963/
+9. Thalassaemia International Federation. **TIF Guidelines for the Management of Transfusion-Dependent β-Thalassaemia, 5th edition, 2025** (recomendações sintetizadas em acesso público): https://pmc.ncbi.nlm.nih.gov/articles/PMC11880825/
+10. TIF 2025. **Iron overload and chelation, chapter 3**: https://www.ncbi.nlm.nih.gov/books/NBK614244/
+11. CDC. **Developing a Transfusion Plan, Thalassemia Healthcare Provider Toolkit**: https://www.cdc.gov/thalassemia/hcp/toolkit/developing-a-transfusion-plan.html
+12. CDC Public Health Image Library. **PHIL ID 16217 — microfotografia de drepanócito**, página informa domínio público: https://wwwn.cdc.gov/phil/Details.aspx?pid=16217 . **CANDIDATA, NÃO INTEGRADA:** verificar termos finais de atribuição, qualidade/legibilidade, limite WebP e aprovação Admin antes de utilizar.
+
+**Matriz de segurança comparativa:** os dois PDFs de apoio do Google Drive foram efetivamente relidos em 15/10/2026; são resumos de terceiros, com restrições expressas de circulação, usados **apenas para confrontar a lista de assuntos**, sem copiar redação, diagramas ou imagens. Exemplos de conduta deliberadamente não copiados: hidroxiureia reservada a >3 anos, transfusão como regra em toda STA, broncodilatador empírico universal na STA, transfusão de troca como primeira medida de priapismo e calendário vacinal antigo. A versão LURIA deve conservar interpretação crítica à luz das diretrizes.
+
+**Parecer de produção:** manuscrito com suporte ampliado e capítulos aprofundados, mas **ainda não considerado apostila publicada/autossuficiente/cientificamente certificada**. Necessita dupla conferência clínica e editorial, imagens autorizadas e adaptação HTML/PWA. As referências listadas são suporte à revisão, não comprovam automaticamente cada alegação do texto.
