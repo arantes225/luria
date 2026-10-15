@@ -353,6 +353,122 @@ D) A melhor solução é retirar usuários das cadeiras para acelerar votações
 **Gabarito: C.** **A — incorreta:** presença formal não resolve barreiras práticas. **B — incorreta:** transparência e informação qualificam controle. **C — correta:** participação deve ser possível e informada. **D — incorreta:** exclui justamente o segmento legitimador do controle. **Revisão:** participação tem dimensão institucional e material, não apenas matemática.
 
 
+## 14. Da demanda social à decisão: metodologia de atuação dos conselhos
+
+### 14.1 Definir problema com população, território e evidência
+
+A proposta “precisamos melhorar a saúde da mulher” expressa preocupação legítima, mas não especifica uma intervenção. Uma deliberação operacional deve reunir **problema, público-alvo, território, situação de base, objetivo, responsável, recursos, prazo e indicador de acompanhamento**. A comissão pode propor, por exemplo, reduzir o intervalo mediano entre solicitação e ultrassonografia obstétrica em determinada região, analisando critérios de risco, capacidade de exames e disponibilidade de transporte. O conselho monitora prioridade e execução; a gestão técnica define contratação e fluxos conforme competências.
+
+Dados necessários incluem população atingida, histórico de produção, filas, orçamento, recursos humanos, obstáculos geográficos e relatos da comunidade. A estatística deve ser interpretada com contexto: aumento de “consultas realizadas” pode refletir melhor acesso ou repetição de atendimento desnecessário; queda de internações pode ser positiva ou sinal de barreira de acesso dependendo de outras medidas.
+
+### 14.2 Priorização: risco, equidade e viabilidade
+
+Recursos são finitos, mas universalidade do SUS não significa que toda demanda possa ser atendida simultaneamente sem hierarquização. Critérios transparentes de prioridade podem considerar gravidade, magnitude, evitabilidade, desigualdade, acesso, custo-efetividade, impacto no território e segurança. A participação pode revelar necessidades ignoradas por dados agregados: uma região com população pequena e distância extrema pode precisar de solução específica apesar de representar poucos casos absolutos.
+
+**Exemplo de matriz original:**
+
+| Proposta | Gravidade | Alcance populacional | Desigualdade enfrentada | Recurso necessário | Pergunta de monitoramento |
+|---|---|---|---|---|---|
+| Transporte sanitário rural | alto impacto em casos selecionados | moderado | acesso geográfico | veículos/contratos/gestão | faltas e atrasos em tratamentos essenciais |
+| Acompanhamento de hipertensão na APS | alto potencial preventivo | amplo | acesso contínuo | equipes/insumos/monitoramento | controle de PA, adesão e eventos evitáveis |
+| Ações de saúde mental em escolas | variável por vulnerabilidade | amplo | acesso de adolescentes | rede intersetorial | acesso, encaminhamentos e segurança |
+| Renovação de equipamento pouco utilizado | dependente de indicação | restrito | variável | custo de capital/manutenção | produção útil e impacto assistencial |
+
+A matriz organiza debate, não determina automaticamente a escolha. Nem toda intervenção de alto custo é injustificável, e nem toda ação barata tem impacto suficiente. A decisão deve ser contextualizada e documentada.
+
+### 14.3 Comunicação dos resultados à comunidade
+
+Após deliberação, a comunidade precisa saber o que foi aceito, rejeitado, adiado e por quê. A devolutiva pode ocorrer por mural de UBS, rádio comunitária, encontros territoriais, plataforma digital acessível e relatórios em linguagem comum. O conteúdo deve evitar expor dados pessoais de pacientes e profissionais. Transparência de processos é uma forma de prestação de contas: uma reunião sem ata acessível não permite acompanhar se a proposta virou ação.
+
+## 15. Simulação de análise de PAS e RAG: como o conselheiro interpreta indicadores
+
+### 15.1 Um município fictício
+
+Município de 80 mil habitantes aprova PAS com meta de ampliar acompanhamento de hipertensão de 48% para 65% das pessoas cadastradas com diagnóstico, segundo definição de indicador pactuada. O RAG informa que a cobertura registrada passou para 60%. O conselho deve avaliar se as bases de dados, população de referência e critérios de “acompanhado” se mantiveram estáveis ao longo do período.
+
+O resultado é **melhora de 12 pontos percentuais**, mas inferior à meta de 65% por cinco pontos percentuais. Se houve mudança cadastral ou ampliação de diagnóstico, o denominador pode ter aumentado e afetado percentual sem piora real de produção. É importante examinar território: uma média municipal de 60% pode esconder UBS com 80% e outras com 20%. O conselho pode recomendar plano de correção focal, metas realistas e apoio às equipes mais vulneráveis, sem concluir fraude por diferença simples.
+
+### 15.2 Indicadores de processo, resultado e equidade
+
+**Processo:** percentual de unidades com abastecimento de medicamento, número de equipes treinadas, proporção de gestantes cadastradas com primeira consulta de pré-natal no período de referência. **Resultado:** controle pressórico em grupo acompanhado, internação evitável, tempo de espera, desfecho materno-infantil. **Equidade:** comparar indicadores por território, grupos etários ou outros recortes legalmente e eticamente apropriados, observando qualidade dos denominadores.
+
+Uma gestão pode cumprir meta de número de consultas e não melhorar desfechos porque o cuidado está fragmentado. Outro serviço pode reduzir produção temporariamente ao corrigir duplicidades; não significa piora da assistência. O controle social deve pedir interpretação responsável de dados, com transparência de limitações.
+
+### 15.3 Orçamento executado versus resultados
+
+Executar 95% do orçamento planejado não prova sozinho que serviço é eficaz; gastar menos também não prova economia bem-sucedida. Uma compra barata de insumo inadequado pode causar desperdício. A avaliação exige relacionar despesa a necessidade assistencial, padrões legais, quantidades entregues, preço, qualidade, acesso, funcionamento de equipamentos e resposta à população.
+
+Quando há atraso significativo, o conselho pode solicitar calendário de correção e parecer técnico dos órgãos pertinentes. Auditoria especializada e controle externo têm atribuições próprias; o conselho acompanha, questiona e emite posicionamentos sem assumir função de investigação criminal.
+
+## 16. Conselho local de saúde, APS e participação no território
+
+### 16.1 Por que conselhos locais são relevantes
+
+Uma UBS atende problemas específicos: barreira arquitetônica para pessoas com deficiência, falta de água potável em área rural, dificuldade de agendamento de pré-natal, transporte para vacinação e exposição ambiental. Um conselho local ou fórum territorial pode trazer experiência cotidiana e criar espaços de diálogo, ajudando a equipe a transformar demandas em melhorias. Seu caráter formal e competências dependem da regulamentação municipal; **não presumir que qualquer conselho local tem exatamente o poder deliberativo legal de um Conselho Municipal**.
+
+Em 2026, o Ministério da Saúde divulgou edital de fortalecimento de conselhos locais, incluindo formação e apoio institucional — exemplo concreto de política de valorização territorial, sem alterar automaticamente a estrutura da Lei 8.142.
+
+### 16.2 O papel do profissional de saúde
+
+Médicos, enfermeiros, agentes comunitários, profissionais de odontologia e outros podem participar do controle social conforme regras de representação e trabalho. Na APS, é útil apresentar dados locais e ouvir demandas sem violar sigilo. O profissional não deve prometer recurso que não controla nem usar o colegiado apenas para defender interesse corporativo; participação do trabalhador pode contribuir com condições de trabalho e continuidade do cuidado, mas deve considerar impacto sobre usuários e sistema.
+
+**Exemplo:** moradores pedem extensão de horário da UBS. A equipe apresenta número de atendimentos, turnos, carga de trabalho, segurança e demanda reprimida. O conselho discute prioridades e acompanha pactuação; o gestor planeja recursos humanos e orçamento. A solução pode envolver redistribuição de horários, ampliação de equipe ou transporte, dependendo do problema real.
+
+## 17. Integridade, conflitos de interesse e riscos de captura
+
+### 17.1 Quem representa os usuários?
+
+A legitimidade de cadeira destinada a usuários depende de representação genuína desse segmento e de critérios estabelecidos pelas normas. Quem ocupa cargo de direção na secretaria ou representa prestador contratado pode não ser compatível com a categoria de usuário para fins de composição, a depender do conflito e da regra aplicável. Não resolver a questão apenas pelo fato de a pessoa pessoalmente utilizar o SUS: quase todos podem ser usuários dos serviços, mas os **assentos de representação institucional** têm regras específicas.
+
+### 17.2 Transparência e independência
+
+Conselhos necessitam de apoio administrativo e infraestrutura, mas isso não deveria implicar tutela política que impeça fiscalização. Resolução 453 trata autonomia e recursos para funcionamento; não transformar o colegiado em “setor subordinado que só carimba decisões”. A divulgação de reuniões e relatórios, disponibilização prévia de pautas e possibilidade de voz da comunidade são estratégias de integridade.
+
+Conflitos de interesse podem surgir quando conselheiro defende contrato de prestador do qual depende economicamente. É importante avaliar impedimentos, declaração de interesses, abstenção quando exigida e regras regimentais. Tampouco é aceitável eliminar representação de prestadores prevista em lei: o objetivo é transparência e equilíbrio com paridade dos usuários.
+
+### 17.3 Limites da linguagem e do acesso digital
+
+Documentos financeiros complexos podem excluir pessoas com baixa escolaridade técnica; a resposta é tradução didática, capacitação, tempo de análise e assessoramento, mantendo os dados oficiais para auditoria. Acesso apenas digital também pode excluir comunidades sem conexão; formatos presenciais, impressos e adaptados garantem maior participação. A representatividade não é favor concedido pelo gestor, mas condição de legitimidade da política participativa.
+
+## 18. Fluxogramas integrados para questões e prática
+
+### Fluxo A — dúvida sobre competência de órgão
+
+Identificar qual entidade está atuando → verificar composição e fundamento legal → é colegiado social (Conselho/Conferência) ou instância de gestores (CIT/CIB/CIR)? → localizar natureza: permanente, quadrienal, pactuação, ouvidoria → definir quais decisões/recomendações cabem → encaminhar à autoridade responsável por executar → monitorar.
+
+### Fluxo B — conselho recebe uma proposta
+
+Registrar problema e segmento que apresentou → solicitar dados sobre população e situação → comparar necessidade, risco, equidade e disponibilidade → discutir na comissão/plenário com quórum/regimento → deliberar quando cabível → homologar/publicizar conforme norma → pactuar plano de acompanhamento e indicadores → comunicar resultado à comunidade.
+
+### Fluxo C — prestação de contas insuficiente
+
+Receber PAS/RQPC/RAG e anexos → verificar fontes, recursos, produção e indicadores → comparar metas com execução e limitações → solicitar informações e esclarecimentos quando necessário → discutir publicamente com preservação de dados pessoais → registrar parecer/deliberação com motivação → acompanhar correção, sem substituir órgãos de controle.
+
+### Fluxo D — manifestação de um usuário
+
+Acolher demanda → há urgência assistencial imediata? Se sim, encaminhar a cuidado sem aguardar burocracia → registrar manifestação nos canais adequados → garantir sigilo → encaminhar à gestão competente → acompanhar devolutiva → analisar se há padrão coletivo que justifica agenda do Conselho.
+
+### Fluxo E — conferência propõe novo serviço
+
+Registrar diretriz aprovada → avaliar cenário epidemiológico e rede → incluir proposta em planejamento compatível e discutir orçamento → conselho acompanha instrumentos (Plano, PAS, RAG) → gestor executa segundo atribuições → avaliar acesso, qualidade e equidade → informar comunidade sobre resultados/limitações.
+
+## 19. Pérolas de prova: afirmações parcialmente verdadeiras
+
+**“O conselho controla o dinheiro da saúde.”** Parcialmente. Fiscaliza e controla execução inclusive econômico-financeira, mas não substitui o gestor, ordenador de despesas, licitação ou órgão externo de controle.
+
+**“Conferência é de quatro em quatro anos.”** Sim, como regra da Lei 8.142, mas pode haver convocação extraordinária e conferências temáticas com regras próprias.
+
+**“50% dos assentos para usuários está na Lei 8.142.”** A lei estabelece paridade de usuários em relação aos demais; a repartição 50/25/25 vem explicitamente da norma organizativa do CNS.
+
+**“Comissão Intergestores pactua, logo substitui conselho.”** Falso. Pactuação entre gestores e controle social têm sujeitos e finalidades diferentes.
+
+**“RAG é de quatro em quatro anos porque Plano de Saúde é plurianual.”** Falso. RAG é anual, PAS anual, RQPC quadrimestral, Plano plurianual.
+
+**“Ouvidoria é um conselho individual de cada paciente.”** Falso. É canal de manifestação/encaminhamento e análise agregada, sem confundir funções.
+
+**“Paridade garante democracia automaticamente.”** Falso. É piso institucional necessário, mas acesso a informação, representação legítima e inclusão determinam efetividade.
+
+
 ## Referências jurídicas para checagem/homologação
 - Brasil, Lei nº 8.142, de 28 de dezembro de 1990: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
 - Brasil, Constituição Federal de 1988, arts. 196 e 198: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
