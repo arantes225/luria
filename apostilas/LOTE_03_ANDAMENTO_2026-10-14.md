@@ -13,7 +13,7 @@
 |---:|---|---|---|
 | 41 | Choque circulatório | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
 | 42 | Princípios de técnica cirúrgica | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
-| 43 | Puericultura e prevenção de acidentes | RASCUNHO_INICIADO | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
+| 43 | Puericultura e prevenção de acidentes | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 45 | Participação e controle social no SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
 | 46 | Asma | RASCUNHO_INICIADO | \`_rascunhos/lote-03/46-asma.md\` |
@@ -45,6 +45,14 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 43 — aprofundamento clínico de puericultura (14/10/2026)
+
+Preservado e expandido `_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md`: de 6.430 para **96.021 caracteres brutos**, cerca de **84.038 caracteres aproximados de corpo didático após exclusão simples de marcação/apêndices** (não é verificação humana de autossuficiência); **24 capítulos**, **8 casos originais** e **12 questões de múltipla escolha**, com alternativas comentadas. Foram conferidos diretamente os 12 gabaritos e 12 de cada alternativa A–D. Incluídas matrizes de consulta, curvas, neurodesenvolvimento, prematuridade, alimentação, sono, triagens, violência, acidentes, fluxos e referências.
+
+Benchmark Drive efetivamente lido: `01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf` e `02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf`; não equivalem ao conjunto integral de prevenção de acidentes — etapa comparativa **parcial**. Fonte oficial de referência: Ministério da Saúde (Caderneta, agenda de consultas, Guia Alimentar, M-CHAT-R/F, PNAISC e prevenção de afogamento), norma CONTRAN 819/2021 e OMS. Nenhuma imagem de terceiro incorporada.
+
+**Status:** TEXTO_APROFUNDADO_REVISAO_PENDENTE. Faltam auditoria especializada pediátrica, imagens autorizadas/Admin, versão HTML, testes PWA e revisão humana. Não há homologação, merge ou deploy.
 
 ## Aula 42 — versão HTML editorial e validação estática (14/10/2026)
 
