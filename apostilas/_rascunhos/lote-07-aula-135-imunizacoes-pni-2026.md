@@ -412,3 +412,227 @@ Ela reúne duas dimensões: imunidade alterada pela condição/medicação e cal
 7. **Dengue/Butantan:** faixa regulatória, recomendação e fase logística de campanha são três variáveis diferentes.
 
 Essas pendências são **deliberadamente separadas** para evitar transformar uma apostila de raciocínio de residência em protocolo operacional falsamente completo. Quando a versão final de publicação for produzida, todas serão convertidas em quadros conferidos na fonte primária, com data de validação.
+
+
+## 24. Segurança de vacinas é vigilância ativa, não uma lista de medos
+
+### 24.1. Três perguntas depois de um evento
+Quando alguém adoece depois de receber vacina, distinguir:
+1. **Houve evento médico?** Descrever sinal, sintoma, gravidade, início e evolução de forma objetiva.
+2. **Qual é a relação temporal?** Dose, fabricante, lote, outras vacinas, medicações e período decorrido.
+3. **Há relação causal?** Essa avaliação exige investigação estruturada, evidência científica, explicações alternativas e, às vezes, agrupamento de casos; não decorre apenas da sequência temporal.
+
+**ESAVI** é **Evento Supostamente Atribuível à Vacinação ou Imunização**, ou seja, ocorrência médica indesejada após imunobiológico sem que causalidade esteja necessariamente estabelecida. A definição é intencionalmente ampla, para não perder sinais de segurança. Um infarto no dia após vacinação pode ser coincidência em pessoa com alto risco cardiovascular; uma anafilaxia imediata com manifestações típicas tem plausibilidade causal distinta. O dever do profissional é **cuidar, descrever, notificar quando indicado e permitir investigação**, e não confirmar/descartar causalidade sem método.
+
+### 24.2. Eventos esperados versus sinais inesperados
+Dor local, eritema, edema e febre transitória podem ocorrer de modo previsível em determinados produtos. Eventos graves, inesperados ou que fogem da frequência conhecida merecem investigação. “Evento esperado” não significa que seja impossível grave, e “evento inesperado” não significa que a vacina causou o problema. A avaliação de severidade considera necessidade de internação, risco de vida, incapacidade, óbito e demais parâmetros de vigilância.
+
+**Erro de raciocínio:** criança recebe pentavalente e faz febre leve no mesmo dia; isso é compatível com reatogenicidade e deve ser acompanhado conforme quadro. Mas outra criança com choque, dificuldade respiratória e urticária generalizada minutos após aplicação precisa ser tratada imediatamente por possível anafilaxia, não observada passivamente porque “febre é comum”.
+
+### 24.3. Anafilaxia: identificar rapidamente
+Anafilaxia pode iniciar em minutos, com urticária/angioedema, chiado, estridor, queda de pressão, sintomas digestivos e alteração de perfusão. **Sinais cutâneos podem estar ausentes**, particularmente em apresentações cardiovasculares. A prioridade é **adrenalina intramuscular em face anterolateral de coxa segundo protocolo de emergência e dose por peso**, suporte de via aérea, oxigenação, acesso e monitorização; anti-histamínicos não substituem adrenalina nem tratam obstrução/choque isoladamente.
+
+A sala de vacina precisa de equipe treinada, fluxograma acessível, material de emergência e rota de transporte. Depois de estabilizar, o caso deve ser documentado e avaliado por especialistas para distinguir alergia a componente, evento vasovagal/ansiedade e outras causas, evitando contraindicação indiscriminada a todas as vacinas futuras.
+
+### 24.4. Como diferenciar síncope vasovagal de anafilaxia
+**Síncope vasovagal:** muitas vezes após antecipação ansiosa/dor, palidez, sudorese, bradicardia, hipotensão breve, melhora com posição supina, sem chiado/estridor/urticária sistêmica persistente.  
+**Anafilaxia:** pode ter progressão de comprometimento respiratório/circulatório, manifestações em múltiplos sistemas e não se resolve apenas com deitar; pode ocorrer mesmo sem lesão cutânea.
+
+Se incerteza e sinais graves compatíveis com anafilaxia, tratar como emergência sem atraso. Não usar “foi ansiedade” como diagnóstico prematuro em pessoa com desconforto respiratório objetivo.
+
+### 24.5. Como notificar no Brasil em 2026
+Segundo a página de segurança do Ministério da Saúde:
+- **Profissionais de saúde do SUS ou da rede privada** registram ESAVI no **e-SUS Notifica, módulo ESAVI**.
+- **ESAVI graves:** notificação **compulsória e imediata**; investigação dos casos graves deve começar oportunamente, idealmente dentro de 48 horas da notificação quando possível.
+- **ESAVI não graves e erros de imunização:** são objeto de registro e monitoramento; a FAQ de 2026 distingue notificação espontânea desses eventos.
+- **Cidadãos e detentores de registro:** podem utilizar **VigiMed/Anvisa** nas rotas designadas.
+
+O sistema é de vigilância; a notificação **não significa comprovar nexo causal**. Não deixar de notificar suspeita grave só porque o paciente recebeu vacina em outro município ou rede. Registrar lote, data, produto, dose, via, local, condições de armazenamento, sintomas, evolução, tratamento e outras exposições. A informação permite detectar agrupamentos de erros de manipulação, qualidade ou risco raro.
+
+### 24.6. Erro de imunização não é sinônimo de reação adversa
+A aplicação de produto errado, via errada, dose inadequada, diluente incompatível, vencimento ou quebra de cadeia de frio configura erro de processo, ainda que a pessoa não tenha sintomas. A prioridade é avaliar risco clínico, comunicar com transparência, registrar corretamente, fazer notificação aplicável e implementar análise de causa raiz. Esconder erro por “não causou nada” impede prevenção.
+
+**Exemplo:** frasco de vacina viva liofilizada é diluído com solução que pertence a outro imunobiológico. Não administrar; segregar material, consultar fabricante/manual e registrar quase erro. Se já aplicado, assistência/monitoramento e notificação devem seguir norma para erro de imunização. Não tentar “corrigir” no mesmo momento com dose adicional sem avaliação técnica.
+
+## 25. Rede de frio, preparação e registro: a eficácia depende da operação
+
+### 25.1. Por que temperatura importa?
+Proteínas, antígenos adsorvidos em adjuvantes, organismos vivos atenuados e estruturas de RNA podem perder estabilidade por calor, congelamento indevido ou múltiplas excursões, de modo diferente conforme produto. Muitas vacinas de rotina são armazenadas na faixa **+2°C a +8°C**, mas existem **exceções por fabricante, nível logístico, formulação e etapa**. A regra certa deve ser a do produto e do Manual de Rede de Frio, não “toda vacina aguenta freezer”.
+
+**Congelamento acidental** de formulações adsorvidas pode alterar distribuição do adjuvante e afetar imunogenicidade; retornar frasco à temperatura normal **não garante reversão do dano**. O sistema de temperaturas mínimo/máximo, registros contínuos e alarmes previne perdas e aplicações inválidas.
+
+### 25.2. Procedimento para excursão de temperatura
+Se a câmara de conservação sai da faixa especificada:
+1. Identificar produtos/lotes e a duração/magnitude estimada da excursão, preservando dados do registrador.
+2. **Segregar e identificar “não utilizar — avaliação pendente”**, sem descartar automaticamente.
+3. Notificar responsável técnico/rede de frio e consultar orientações de fabricante/coordenação.
+4. Manter armazenamento seguro enquanto avalia estabilidade.
+5. Liberar, descartar ou adotar medida conforme **parecer técnico formal**, e registrar destino.
+
+Não “salvar o estoque” administrando logo ao público para evitar perda financeira. Inversamente, descartar tudo sem avaliação pode ampliar desabastecimento e desperdício. A decisão precisa da cadeia de autoridade e de evidências do lote.
+
+### 25.3. Frascos multidose e reconstituição
+Nem toda vacina é dose única. Alguns frascos contêm múltiplas doses com prazos de uso pós-abertura específicos; outros, liofilizados, devem ser reconstituídos com diluente **exato** e usados dentro do período e condições indicadas. Uma seringa com volume correto pode conter dose incorreta se a reconstituição foi errada. Técnica asséptica, troca de dispositivos conforme norma e evitar contato da agulha/frasco com superfícies contaminadas são medidas de segurança.
+
+**Pegadinha:** “se sobrou líquido, dá para usar amanhã”. Só é verdadeiro quando produto, bula e normas de conservação pós-abertura permitirem. Em vacina reconstituída de uso imediato, o mesmo raciocínio pode provocar risco infeccioso/ineficácia.
+
+### 25.4. Checagem de identidade e registro é etapa clínica
+Nome completo, data de nascimento, produto, fabricante, lote, validade, dose, via, sítio anatômico, unidade, profissional e data/horário devem ser associados corretamente. Digitalizar registros não substitui checar identidade verbalmente. Se dois irmãos chegam com cartões semelhantes, não utilizar “o do casaco vermelho” como identificador suficiente.
+
+A anotação deve permitir avaliar, meses depois, se uma dose é válida, se houve lote envolvido em sinal de segurança e qual vacina corresponde à próxima dose. O cartão físico e os sistemas digitais complementam o cuidado; não declarar “vacina dada” apenas porque foi agendada.
+
+## 26. Cobertura e microplanejamento: a epidemiologia determina a estratégia
+
+### 26.1. O denominador é tão importante quanto as doses
+**Cobertura vacinal** é, em princípio, número de doses válidas no grupo-alvo dividido pela população-alvo estimada, multiplicado por 100. Erros surgem quando denominador usa população desatualizada, há migração/mudança de residência, doses duplicadas ou erros de registro. Cobertura municipal alta pode esconder **bolsões** por bairro, grupo social, acesso ou idade.
+
+**Exemplo numérico didático:** um território registra 790 crianças com dose final válida de uma vacina entre 1.000 elegíveis. Cobertura = 790/1.000 ×100 = **79%**. O serviço registra 1.100 doses do produto no ano, mas parte é reforço/fora do território: não pode usar 1.100/1.000 para declarar “110% das crianças protegidas” sem analisar método/denominador.
+
+### 26.2. Taxa de abandono do esquema
+Em série de múltiplas doses, diferenças entre quantidade que inicia e quantidade que conclui podem indicar barreiras de acesso, esquecimento, falta de produto ou registro. Exemplo: 900 crianças iniciam e 720 completam dentro da coorte definida. Abandono aproximado = (900−720)/900 ×100 = **20%**, com cautela para mudanças de residência, atraso sem perda definitiva, coortes diferentes e eventuais doses em outro serviço.
+
+A resposta correta a abandono alto não é culpar responsáveis. Avaliar calendário de funcionamento, horário noturno/fim de semana, vínculo com ACS, lembretes, transporte, fila, stockout, barreiras linguísticas, necessidades de pessoas com deficiência e comunicação sobre reações comuns.
+
+### 26.3. Mapear oportunidades perdidas
+Criança comparece à UBS para consulta de dermatite leve, vacinas atrasadas, mas equipe exige “volte outro dia só para vacinar”, apesar de ter sala disponível e sem contraindicação. Essa é oportunidade perdida com custo real de retorno. A Nota Técnica 79/2026 do MS busca reduzir barreiras organizacionais; acolhimento, avaliação integrada e oferta oportunística são estratégias, mantendo segurança e fluxo.
+
+### 26.4. Doses registradas e indicadores em transição pneumocócica
+Na transição VPC10→VPC20, contar somente doses VPC20 pode aparentar cobertura baixa de esquema ainda válido com dose VPC10. A Nota Técnica 69/2026 orienta metodologia de monitoramento da cobertura pneumocócica considerando transição. **Não comparar séries temporais antes/depois da mudança sem ajustar denominadores e nomenclaturas**. Esse tema é tanto de epidemiologia de serviços quanto de imunologia.
+
+### 26.5. Campanha escolar e vacinação extramuros
+Escola facilita alcançar adolescentes para HPV e MenACWY, mas necessita consentimentos/processos compatíveis com diretrizes, equipe, conservação, identificação, privacidade e registro. Vacinação em comunidades rurais, territórios indígenas e serviços itinerantes envolve transporte em rede de frio, programação e diálogo comunitário. Uma estratégia não deve violar direitos nem desqualificar hesitação de pais; comunicação transparente melhora confiança.
+
+## 27. Comunicação clínica: hesitação não se resolve com sermão
+
+### 27.1. Perguntar antes de responder
+Uma família diz: “tenho medo porque a filha ficou febril após a pentavalente”. Pergunte o que ocorreu, quando, duração, sintomas de gravidade e qual preocupação principal. Explique diferença entre reatogenicidade conhecida e contraindicação, informe sinais de alarme e a razão da proteção contra coqueluche/Hib/tétano. **Não afirmar que vacina jamais causa reação**, porque isso mina confiança quando ocorre evento esperado.
+
+### 27.2. Comparar o risco certo
+Benefício de vacina é reduzir risco de doença grave na população elegível; riscos adversos variam por produto, idade e condição clínica. Usar números de estudos de forma honesta, especificando população e desfecho. Exemplo: eficácia para hospitalização não equivale à eficácia contra toda infecção. Na dengue, proteção de produto vivo atenuado não substitui controle vetorial e abordagem de sintomáticos.
+
+### 27.3. Evitar slogans em perguntas técnicas
+“Todas as vacinas vivas são proibidas para todos os imunodeprimidos” é excessivamente amplo. “Toda vacina inativada funciona perfeitamente mesmo em transplante” também é falso. A comunicação adequada explica por que algumas precisam ser adiadas, trocadas ou aplicadas em momento distinto; encaminha ao CRIE/RIE e garante doses de rotina possíveis. Isso é mais convincente do que um comando sem contexto.
+
+## 28. Quatro novos casos clínicos comentados para treinamento de decisão
+
+### Caso 5 — nascimento e prevenção de hepatite B perinatal
+**Apresentação:** recém-nascido a termo de mãe com HBsAg reagente, estável, oito horas de vida. Recebeu vitamina K, mas nenhuma vacina; profissional pretende aguardar pentavalente aos dois meses.  
+**Hipóteses:** exposição perinatal importante ao HBV, risco de infecção crônica.  
+**Raciocínio passo a passo:** o vírus pode ser transmitido durante o parto, e proteção não pode esperar dois meses. A dose monovalente de hepatite B no nascimento e avaliação de imunoglobulina anti-HB seguem protocolo de RN exposto.  
+**Exames/documentos:** HBsAg materno, histórico de vacina/IGHAHB, dados neonatais; planejamento de teste sorológico do RN no seguimento previsto, não como substituto da profilaxia.  
+**Conduta:** aplicar vacina oportunamente e acionar fluxo para IGHAHB em tempo apropriado conforme protocolo, registrar e orientar seguimento.  
+**Por que importa:** identifica cenário em que imunização ativa e passiva são complementares, e o atraso aumenta risco.
+
+### Caso 6 — vacina pneumocócica na transição 2026
+**Apresentação:** bebê saudável de 4 meses recebeu VPC20 aos dois meses, possui registro válido, e o serviço dispõe da VPC10 para a segunda dose. Família acredita que produto de valência menor “anula” a primeira.  
+**Hipótese:** continuidade de esquema transitório do PNI.  
+**Raciocínio:** Guia Técnico MS de junho/2026 descreve explicitamente VPC20 na primeira dose e VPC10 na segunda, com reforço VPC20 aos 12 meses em rotina de transição. Valência não representa multiplicador de dose nem comprova que regime autorizado foi “pior” por haver mudança.  
+**Exames:** nenhum; verificar datas e produto, com intervalo usual de 60 dias.  
+**Conduta:** aplicar dose conforme guia vigente, registrar lote, planejar reforço e explicar transição.  
+**Por que importa:** distingue recomendação nacional de opinião sobre marca/valência.
+
+### Caso 7 — gestante e confusão entre vacinação e anticorpo
+**Apresentação:** gestante com 30 semanas, esquema dT atualizado mas ainda sem dTpa nesta gestação; quer saber como proteger bebê contra coqueluche e VSR.  
+**Hipóteses:** oportunidade de vacinação materna.  
+**Raciocínio:** dT não substitui dTpa gestacional para anticorpos contra coqueluche; PNI 2026 recomenda dTpa desde 20 semanas e vacinação materna contra VSR desde 28. O monoclonal nirsevimabe é outra tecnologia destinada a bebês elegíveis; não é “vacina da mãe”.  
+**Exames:** verificar caderneta pré-natal, alergias/contraindicações e acesso.  
+**Conduta:** avaliar oferta de dTpa e vacina VSR conforme calendário e produto, orientando proteção parcial e continuidade da vacinação do lactente.  
+**Por que importa:** integra obstetrícia, neonatologia e imunologia.
+
+### Caso 8 — ESAVI grave versus síncope
+**Apresentação:** adolescente de 13 anos, minutos após vacina em escola, desenvolve urticária generalizada, dificuldade respiratória, rouquidão, tontura e hipotensão. Um colega desmaiou ao ver a agulha e melhorou deitado em segundos.  
+**Hipóteses:** anafilaxia no primeiro adolescente; síncope vasovagal no segundo, após avaliação clínica.  
+**Raciocínio:** sinais respiratórios e circulatórios progressivos com urticária configuram emergência, não simples “medo de vacina”. O segundo pode ter fenômeno relacionado a estresse, mas exige avaliação de estabilidade.  
+**Exames/monitorização:** via aérea, oximetria, pulso, pressão, resposta terapêutica; investigação alergológica posterior, dados de lote.  
+**Conduta:** tratar imediatamente anafilaxia com adrenalina IM e suporte conforme protocolo, acionar emergência, documentar e notificar ESAVI grave no e-SUS Notifica. Manejar síncope segundo avaliação clínica, sem inferir alergia.  
+**Por que importa:** demonstra por que segurança começa na clínica e termina na vigilância.
+
+## 29. Oito questões autorais adicionais — justificativa de todas as alternativas
+
+### Questão 7 — valência pneumocócica
+Na transição de rotina PNI 2026, o Guia Técnico MS prevê:
+A. VPC10 exclusivamente em todas as doses. B. VPC20 aos dois meses, VPC10 aos quatro e reforço VPC20 aos doze meses, conforme regras de transição. C. VPP23 universal em RN. D. Reinício automático se mudar valência.  
+**Gabarito B.** **B** reproduz o padrão transitório do guia; **A** descreve regime antigo/ignora incorporação; **C** utiliza vacina não indicada universalmente a RN; **D** ignora histórico válido. **Mini-revisão:** transição tem regra explícita; não é troca arbitrária.
+
+### Questão 8 — rotavírus
+Lactente de dez meses não recebeu vacina rotavírus e está clinicamente elegível. Melhor raciocínio segundo portal 2026:
+A. Perdeu janela irreversivelmente aos 3 meses por calendário de 2020. B. Pode receber dose oral sem checar idade. C. Conferir janela ampliada 2026 para primeira dose, contraindicações e intervalo para dose seguinte. D. Aplicar via IM.  
+**Gabarito C.** **C** reflete norma atual e segurança. **A** usa calendário antigo; **B** ignora contraindicação/intervalo; **D** erra via. **Mini-revisão:** primeira até 11m29d no portal 2026, segunda até 23m29d sob regras.
+
+### Questão 9 — anti-VSR
+Qual afirmação correta?
+A. Nirsevimabe é anticorpo monoclonal passivo para bebês elegíveis; vacina materna gera anticorpos na gestante transferidos ao feto. B. Nirsevimabe produz memória B duradoura no bebê idêntica à vacina. C. Vacina de gestante substitui todas as vacinas do lactente. D. VSR é bactéria e tratado profilaticamente por antibiótico.  
+**Gabarito A.** **A** distingue mecanismos. **B** confunde passivo/ativo; **C** exagera escopo; **D** erra etiologia e profilaxia. **Mini-revisão:** duas tecnologias, indicações distintas.
+
+### Questão 10 — HPV
+Jovem de 14 anos imunocompetente sem HPV anterior e adolescente de 14 anos com imunossupressão importante. Qual conduta?
+A. Ambos recebem o mesmo esquema de uma dose em qualquer cenário. B. Nenhuma vacina pode ser dada a imunodeprimido. C. Vacina HPV é viva atenuada e contraindicada universalmente. D. Uma dose é rotina 9–14 anos; imunodeprimidos elegíveis requerem esquema especial de três doses conforme manual/nota.  
+**Gabarito D.** **D** respeita grupos. **A** ignora indicação especial; **B** generaliza; **C** classifica plataforma incorretamente. **Mini-revisão:** a doença/condição modifica número de doses.
+
+### Questão 11 — dengue
+Qual frase interpreta corretamente o SUS em 2026?
+A. Takeda e Butantan podem ser livremente misturadas sem histórico. B. Qdenga/Takeda é estratégia de 10–14 anos em duas doses; Butantan é dose única na estratégia SUS de 15–59 anos com implantação priorizada. C. Butantan dose única está na rotina universal para menores de 10 anos. D. A vacinação dispensa medidas contra mosquitos.  
+**Gabarito B.** **B** distingue faixas e implementação. **A** não respeita fabricantes; **C** não corresponde à indicação; **D** ignora prevenção complementar. **Mini-revisão:** faixa regulatória, estratégia e oferta são diferentes.
+
+### Questão 12 — ESAVI
+Uma criança apresenta doença febril três dias após vacina, com agente infeccioso comunitário identificado e sem quadro compatível com reação típica. Qual princípio?
+A. A vacina necessariamente causou a infecção. B. Temporalidade nunca deve ser registrada. C. ESAVI registra ocorrência após vacinação sem atribuir automaticamente causalidade; investigação avalia explicações alternativas e gravidade. D. Não há sistema de vigilância brasileiro.  
+**Gabarito C.** **C** define vigilância. **A** é falácia temporal; **B** descarta dado útil; **D** falso, existe e-SUS Notifica. **Mini-revisão:** notificar não equivale a confirmar.
+
+### Questão 13 — quebra de cadeia de frio
+Equipe encontra temperatura acima do permitido e não sabe há quanto tempo; há frascos intactos. O que fazer?
+A. Segregar, documentar excursão e consultar rede de frio/responsável técnico antes de liberar/descartar. B. Aplicar rapidamente todos antes de perder dose. C. Guardar em freezer para “compensar o calor”. D. Apagar registro e seguir.  
+**Gabarito A.** **A** mantém segurança e rastreabilidade. **B/C** podem comprometer qualidade; **D** impede análise e vigilância. **Mini-revisão:** produto precisa de avaliação formal.
+
+### Questão 14 — cobertura
+UBS aplicou 1.200 doses do produto no ano, mas há 800 crianças elegíveis e apenas 600 receberam dose final válida. Qual é a cobertura dessa dose?
+A. 150%. B. 100%. C. Não é calculável por doses totais, mas todas foram protegidas. D. 75%, se denominador 800 e numerador 600 são corretos e comparáveis.  
+**Gabarito D.** 600/800 ×100 = **75%**. **A/B** dividem contagem inadequada; **C** reconhece problema mas ignora dados válidos apresentados. **Mini-revisão:** doses totais e indivíduos-alvo não são mesmo indicador.
+
+## 30. Matriz de autossuficiência: do capítulo à resposta
+
+| Decisão clínica/prova | Seções que ensinam | Caso | Questão |
+|---|---|---|---|
+| Distinguir plataforma viva/conjugada/inativada | 1–2, 19.1 | 6 | 1, 7 |
+| Reconhecer HB ao nascer e exposição materna | 18.1 | 5 | discussão do caso 5 |
+| Atualizar polio sem VOP de rotina | 18.4 | caso original | 2 |
+| Interpretar rotavírus 2026 versus 2020 | 18.5 | casos integrados | 8 |
+| Combinar corretamente VPC20/VPC10 da transição | 19.2–19.3 | 1 e 6 | 7 |
+| Diferenciar MenC/MenACWY | 19.5 | caso original | questões originais |
+| dTpa/VSR na gestação | 20.1–20.4 | 7 | 9 |
+| Diferenciar vacina e anticorpo VSR | 20.3–20.4 | 7 | 9 |
+| Aplicar HPV de rotina versus imunodeprimido | 21.1–21.2 | contextual | 10 |
+| Diferenciar produtos dengue/estratégias | 21.2–21.3 | contextual | 11 |
+| Reconhecer evento grave pós-vacina | 24.1–24.5 | 8 | 12 |
+| Não utilizar lote com excursão de temperatura sem avaliação | 25.1–25.2 | cenário de UBS | 13 |
+| Calcular cobertura e abandono | 26.1–26.4 | situação territorial | 14 |
+| Encaminhar grupo especial ao CRIE/RIE | 22 | discussão do caso | 10 |
+
+**Teste editorial:** os conceitos estão disponíveis no próprio capítulo, embora a revisão operacional final exija anexar tabelas integrais de produto/idade/intervalo da Instrução Normativa e revisão profissional. A matriz não certifica autossuficiência por si só.
+
+## 31. Fontes da ampliação e hierarquia normativa
+1. Ministério da Saúde. **Calendário Nacional de Vacinação**, versão pública por ciclo de vida, leitura em 15/10/2026. https://www.gov.br/saude/pt-br/vacinacao/calendario
+2. Ministério da Saúde. **Instrução Normativa que instrui o Calendário Nacional de Vacinação 2026**, atualizada em 27/08/2026. https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view
+3. Ministério da Saúde. **Guia Técnico para Introdução da Vacina Pneumocócica 20-Valente (Conjugada) no PNI**, junho/2026, Seção 4 e Quadro 1 verificados (documento de versão eletrônica preliminar). https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf
+4. Ministério da Saúde. **Nota Técnica 52/2026** e atualização 64/2026, transição de pneumocócica em estratégias especiais; verificar versão mais recente antes de programar RIE. https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026
+5. Ministério da Saúde. **Calendário gestante 2026**, página atualizada em 13/10/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante/view
+6. Ministério da Saúde. **Nota Técnica Conjunta 87/2026**, imunização VSR por nirsevimabe e critérios de elegibilidade. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-87-2026-svsa-saps-saes-sesai-ms.pdf
+7. Ministério da Saúde. **HPV — prevenção e esquemas especiais**, orientação nacional. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv
+8. Ministério da Saúde. **Resgate HPV 15–19 anos até dezembro de 2026**. https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/julho/jovens-de-15-a-19-anos-podem-se-vacinar-contra-o-hpv-ate-dezembro
+9. Ministério da Saúde. **Vacina Butantan dengue e faixa SUS versus registro**, atualizado em abril/2026. https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/para-qual-faixa-etaria-esta
+10. Ministério da Saúde. **ESAVI e e-SUS Notifica**, atualizações 2026. https://www.gov.br/saude/pt-br/vacinacao/esavi
+11. Ministério da Saúde. **Manuais de Rede de Frio, CRIE 6ª edição e Normas e Procedimentos para Vacinação**. https://www.gov.br/saude/pt-br/vacinacao/manuais
+12. Ministério da Saúde. **Nota Técnica 69/2026**, monitoramento da cobertura pneumocócica em transição. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-69-2026-cgici-dpni-svsa-ms.pdf/view
+13. Ministério da Saúde. **Nota Técnica 7/2026**, vigilância da dengue no contexto de expansão vacinal. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-7-2026-cgarb-dedt-svsa-ms.pdf
+
+## 32. Auditoria da ampliação (ainda não publicada)
+- [x] Comparativo específico do Drive **efetivamente relido**, identificado como PNI 2020; fontes atuais são publicações oficiais MS 2026, não a apostila de terceiros.
+- [x] Verificadas idades da rotina infantil, ampliação de janela rotavírus, VIP versus VOP, gestação dTpa/VSR, HPV e dengue.
+- [x] Confirmada no **Quadro 1 do Guia MS** a transição intencional VPC20–VPC10–VPC20; corrigida hipótese anterior de possível inconsistência de portal.
+- [x] Incluídos CRIE/RIE, nirsevimabe, segurança ESAVI, rede de frio, cobertura, abandono e microplanejamento.
+- [x] Acrescentados quatro casos e oito questões comentadas.
+- [ ] Concluir **tabelas operacionais de esquema completo por idade, histórico, doses válidas, vias, volumes, intervalos e especialidade** após leitura exaustiva da IN e manuais; não inferir a partir da página simplificada.
+- [ ] Selecionar imagens reais apenas quando licença comercial, função didática, autoria e consentimento estiverem comprovados; submeter ao Admin.
+- [ ] Revisão por infectologia/pediatria/PNI, conferência normativa na data de publicação, revisão de redundância e teste real de autossuficiência.
+- [ ] Gerar/validar HTML, PWA, acessibilidade e integração à biblioteca após aprovação, sem sobrescrever apostilas existentes.
+**Estado:** RASCUNHO AMPLIADO; extensão nominal não significa certificação clínica/editorial.
