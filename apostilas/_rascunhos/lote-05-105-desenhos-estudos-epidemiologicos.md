@@ -443,7 +443,224 @@ Sugestões de **dez esquemas autorais** a produzir posteriormente, selecionados 
 
 **Nada incluído ainda:** imagens devem ser originais ou autorizadas, acessíveis por legenda, responsivas e otimizadas em SVG/WebP quando aplicável. Um diagrama da STROBE disponível para consulta não é automaticamente autorização para transcrição gráfica no site comercial.
 
-## 16. Referências e rastreabilidade
+## 16. Amostragem, generalização e estimativas: por que o denominador começa antes da análise
+
+Desenhar uma pesquisa epidemiológica exige decidir **quem poderá entrar no estudo** e **como essa entrada se relaciona à população para a qual se pretende responder**. O cálculo correto numa amostra mal construída pode ter pouca utilidade para a população real. Ao planejar um inquérito de saúde, por exemplo, é insuficiente dizer “recrutamos os primeiros mil pacientes”; é preciso distinguir o universo de moradores da área, o cadastro disponível para seleção, os critérios de elegibilidade e as pessoas que realmente responderam.
+
+### 16.1. População-alvo, população acessível e quadro amostral
+
+**População-alvo** é o conjunto para o qual se deseja generalizar — por exemplo, adultos residentes em um estado em determinada época. **População acessível** corresponde àqueles que podem ser alcançados pelo procedimento de coleta. **Quadro amostral** é a lista ou estrutura operacional da qual a seleção é realizada: domicílios, setores censitários, escolas, cadastros ou unidades de serviço. **Amostra estudada** inclui as pessoas selecionadas e efetivamente avaliadas; perdas e recusas precisam ser documentadas.
+
+Se a pesquisa deseja retratar a comunidade inteira, mas amostra apenas pacientes que já visitam determinada UBS, a população acessível pode diferir sistematicamente da população-alvo. Não é obrigatório abandonar o estudo; pode ser mais correto restringir o enunciado do objetivo à população que os dados realmente representam.
+
+### 16.2. Amostragem probabilística e não probabilística
+
+**Amostragem probabilística:** cada unidade elegível possui chance de seleção conhecida ou ao menos definível pelo desenho. Exemplos: aleatória simples, estratificada, sistemática com início aleatório e seleção em conglomerados. Isso possibilita inferências com incerteza amostral calculável sob condições adequadas.
+
+**Amostragem por conveniência:** participantes entram pela disponibilidade (pessoas que aceitaram responder após uma campanha, usuários presentes numa manhã de atendimento). Pode ser útil em estudos pilotos ou em populações específicas, mas não deve ser descrita como “representativa” apenas porque contém muitos participantes.
+
+**Amostragem consecutiva:** todos os elegíveis que chegam em período definido podem ser incluídos, reduzindo escolhas subjetivas do recrutador. Isso ajuda em pesquisas clínicas de um serviço, mas não transforma automaticamente o serviço em amostra probabilística da população geral.
+
+### 16.3. Estratificação e conglomerados: dois mecanismos diferentes
+
+**Estratificar** significa dividir a população em grupos definidos — por exemplo, faixas etárias ou unidades federativas — e selecionar dentro de cada estrato. O objetivo pode ser garantir precisão mínima por grupo, controlar heterogeneidade ou obter estimativas regionais.
+
+**Amostragem em conglomerados** seleciona grupos de unidades — como setores censitários, escolas ou domicílios — e depois seleciona participantes dentro deles. A logística costuma ser mais eficiente, mas pessoas do mesmo conglomerado podem ser semelhantes entre si; essa correlação afeta a incerteza. Por isso, o tamanho nominal de dez mil entrevistas não traduz sozinho o tamanho efetivo de informação quando o desenho é complexo.
+
+**Exemplo brasileiro real, sem reproduzir dados:** a Pesquisa Nacional de Saúde (PNS) do IBGE descreve seleção por unidades primárias de amostragem e domicílios. A publicação de estimativas populacionais requer respeito a pesos, estratos e unidades de seleção conforme os microdados e a documentação metodológica específica da edição. Fonte: https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-%20nacional-de-saude.html.
+
+### 16.4. Por que pesos não são “opcionais” em amostras desiguais?
+
+Num exercício hipotético, um município selecionou 100 moradores de região A (população de 1.000) e 100 de região B (população de 9.000). A prevalência observada foi de 10% em A e de 30% em B. A média simples das duas amostras é 20%, mas não representa automaticamente a cidade, pois as regiões contribuem populações muito diferentes.
+
+Se cada amostra representa corretamente sua região e não há outros ajustes ou perdas, a prevalência municipal ponderada pelas populações é:
+
+- Região A: 1.000 × 0,10 = 100 casos esperados.
+- Região B: 9.000 × 0,30 = 2.700 casos esperados.
+- Total: 2.800 casos em 10.000 moradores → **28%**, e não 20%.
+
+O exemplo é didático. Na análise real, pesos podem incorporar probabilidade de seleção, não resposta e calibração populacional. A variância também deve respeitar estratos e conglomerados. **Ponderar a estimativa sem ajustar seu erro-padrão ao desenho complexo pode gerar intervalos de confiança enganadores.**
+
+### 16.5. Viés de não resposta versus erro aleatório
+
+Se um terço dos convidados se recusa a participar e a recusa está ligada ao desfecho, aumentar o número bruto de convites não garante remoção do viés. Não basta informar “houve 70% de resposta”: é importante verificar distribuição de características conhecidas entre respondentes e não respondentes, explorar procedimentos de ponderação e esclarecer qual população final a amostra representa.
+
+**Pulo do gato:** população-alvo, quadro amostral, população respondente e unidade analítica são conceitos diferentes. Identificar cada uma melhora a interpretação de qualquer medida de frequência.
+
+## 17. Dados rotineiros de saúde no Brasil: pesquisa com prontuários e sistemas de informação
+
+A disponibilidade de sistemas administrativos, prontuários eletrônicos e registros de vigilância transformou a pesquisa. Entretanto, usar dados já existentes não define o desenho nem torna a pesquisa automaticamente “retrospectiva”. O que define a coorte histórica, o transversal ou o ecológico continua sendo a **pergunta, unidade, amostragem e estrutura temporal**.
+
+### 17.1. SINAN, SINASC e SIM respondem perguntas distintas
+
+- **SINAN — Sistema de Informação de Agravos de Notificação:** contém registros de notificações e investigações de agravos, conforme regras de vigilância. Pode apoiar análise de ocorrência notificada e perfis epidemiológicos, mas notificações não são necessariamente equivalentes ao conjunto de todos os casos reais. Fonte institucional: https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinan/sinan.
+- **SINASC — Sistema de Informações sobre Nascidos Vivos:** reúne registros de nascidos vivos e variáveis referentes ao nascimento, permitindo construir indicadores de natalidade e características materno-infantis. Fonte: https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinasc/sistema-de-informacoes-sobre-nascidos-vivos.
+- **SIM — Sistema de Informações sobre Mortalidade:** fonte de informações sobre óbitos, causas e características registradas nas declarações de óbito. Fonte: https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim.
+
+**Uma taxa exige numerador e denominador compatíveis.** O número de notificações no SINAN pode ser usado como numerador de indicador definido, mas requer ponderar duplicidades, subnotificação, mudanças de definição de caso, atraso de notificação e qualidade da confirmação. Para taxa populacional, é preciso o denominador da população correspondente e período coerente.
+
+### 17.2. O mesmo banco serve a desenhos diferentes
+
+**Transversal:** extrair, no período de 2025, proporção de pessoas com dado diagnóstico entre usuários elegíveis que utilizaram certo serviço.
+
+**Coorte histórica:** definir pacientes que iniciaram tratamento em 2022, documentar exposição inicial e acompanhar internações até 2025.
+
+**Caso-controle:** selecionar participantes com evento específico e controles provenientes da mesma população-fonte, recuperar exposições anteriores documentadas.
+
+**Ecológico:** calcular por município taxa de um desfecho e relacioná-la a indicador municipal de acesso a serviços.
+
+**Série temporal:** avaliar incidência notificada por mês antes/depois de determinada mudança, considerando sazonalidade, tendência de registro e eventos concomitantes.
+
+O simples fato de ser “dados secundários” é insuficiente para descrever qualquer desses desenhos. Também não autoriza assumir cobertura universal: um sistema pode representar somente eventos notificados ou pessoas atendidas em rede específica.
+
+### 17.3. Aferição e completude — o dicionário de dados faz parte do método
+
+Pesquisador deve documentar o significado exato de cada variável, versão do sistema, regras de preenchimento e período de cobertura. Mudança de códigos, categorias ou definição de caso pode criar aparente “epidemia” estatística mesmo sem aumento verdadeiro da doença. A variável “sem informação” não é necessariamente equivalente a “não”.
+
+**Dado faltante é informação sobre o processo de coleta**, além de lacuna no cálculo. Se escolaridade não é registrada com igual frequência em todas as regiões, analisar apenas registros completos pode selecionar população peculiar. A estratégia de tratamento de dados ausentes deve ser relatada e, quando necessário, avaliada em análise de sensibilidade.
+
+### 17.4. Vínculo de bases: riqueza e risco de interpretação
+
+Relacionar informações de nascidos vivos e mortalidade, por exemplo, pode permitir acompanhar desfechos de nascimento em estudo de coorte quando o vínculo é válido. Mas registros podem não casar por erros de identificação, migração, duplicidade e diferenças cadastrais. A qualidade do linkage deve ser demonstrada, com atenção às possíveis diferenças entre grupos.
+
+**Exemplo didático:** 10 mil nascimentos elegíveis são identificados; só 9.200 podem ser vinculados de forma confiável a outro registro. Se os 800 restantes não representam perda aleatória, a coorte analisada pode estar enviesada. Não preencher esses 800 automaticamente como “sem desfecho”.
+
+### 17.5. RECORD 2015 e transparência da pesquisa baseada em dados existentes
+
+A extensão **RECORD** complementa a STROBE para estudos observacionais com dados rotineiramente coletados. Seu foco inclui transparência das bases, critérios de seleção, códigos/algoritmos empregados, vínculos entre conjuntos, limpeza, fluxo de participantes e limitações dos registros.
+
+**Comparação prática:**
+- **STROBE:** orienta relato de coorte, caso-controle e transversal de modo geral.
+- **RECORD:** aprofunda pontos de relato quando os dados surgem de atendimentos e processos administrativos não criados para a pergunta da pesquisa.
+- **RECORD-PE:** extensão específica para estudos farmacoepidemiológicos com dados rotineiros, pertinente a análises de efetividade/segurança de medicamentos.
+
+Fonte verificável: Benchimol EI et al. *The RECORD Statement*. *PLoS Medicine*. 2015;12:e1001885. https://doi.org/10.1371/journal.pmed.1001885.
+
+Essas diretrizes são de **relato**, não licenças automáticas de acesso nem comprovação de ausência de viés. As exigências de ética, privacidade e governança de dados dependem da natureza do banco e das normas aplicáveis e devem ser avaliadas em projeto concreto.
+
+## 18. Desenhos aninhados, exposição variável e o começo do tempo em risco
+
+Questões difíceis de residência frequentemente descrevem um desenho clássico acrescido de detalhe metodológico e exigem que o candidato não se guie apenas por palavras-chave. Três noções ajudam a evitar erro: **amostragem por risco**, **definição de tempo zero** e **exposição que varia durante o seguimento**.
+
+### 18.1. Caso-controle aninhado em coorte
+
+Imagine uma coorte de 100 mil pessoas inicialmente em risco. A cada diagnóstico novo de doença, selecionam-se controles entre os participantes que **ainda estão em risco naquele momento**. É um caso-controle aninhado com amostragem por densidade de incidência (risk-set sampling).
+
+Isso pode economizar exames caros armazenados em amostras biológicas: em vez de dosar biomarcador de 100 mil pessoas, dosa-se nos casos e nos controles selecionados em cada momento. A interpretação da associação depende da estrutura de amostragem e análise; sob pressupostos adequados, a razão obtida pode estimar a **razão de taxas de incidência**, sem exigir apenas o mantra “doença rara”.
+
+Um indivíduo escolhido como controle numa ocasião pode tornar-se caso mais adiante. Isso não é incoerência: ele representava o tempo em risco quando o caso anterior surgiu.
+
+### 18.2. Caso-coorte: amostra de referência escolhida no início
+
+No desenho caso-coorte, em geral seleciona-se uma subcoorte no início do seguimento e comparam-se os casos incidentes da coorte original com a amostra inicial, utilizando métodos adequados ao desenho. Diferentemente da amostragem específica por risco a cada novo caso, a subcoorte pode ser reutilizada em análises de vários desfechos.
+
+Uma situação de prova que descreve “amostra aleatória inicial de participantes da coorte, mais todos os casos que ocorreram depois” aponta para **caso-coorte**, não simplesmente para caso-controle convencional. Detalhes de ponderação e métodos de sobrevivência precisam ser especificados em estudo real.
+
+### 18.3. Exposição que aparece após o início não pode ser tratada como se já existisse
+
+Considere paciente que começou a ser acompanhado em janeiro e só iniciou medicamento em junho. Classificar janeiro a maio como “tempo sob tratamento” criaria informação temporal falsa. Em certas análises, isso produz **viés de tempo imortal**, pois o indivíduo necessariamente precisou sobreviver ou não apresentar certo evento até receber o tratamento para integrar o grupo de usuários.
+
+A proteção conceitual é definir:
+- início do seguimento (*tempo zero*);
+- elegibilidade;
+- quando o tratamento foi realmente iniciado;
+- regras de classificação de pessoa-tempo;
+- evento e censura;
+- comparação que poderia ser feita num ensaio hipotético semelhante.
+
+A avaliação causal formal e os métodos para emular ensaio-alvo serão desenvolvidos na aula 115; aqui o fundamental é perceber que a **arquitetura temporal do desenho altera quais comparações podem ser feitas**.
+
+### 18.4. Prevalentes versus novos usuários em coorte farmacológica
+
+Uma coorte que compara usuários crônicos de um medicamento com pacientes que nunca o usaram pode selecionar pessoas que toleraram e sobreviveram ao período inicial de risco. Um desenho de **novos usuários** pode melhorar alinhamento de elegibilidade, linha de base e acompanhamento, embora não elimine confundimento por indicação.
+
+Um aluno que lê “coorte retrospectiva de registros de farmácia” deve perguntar não só qual o RR, mas **quando se inicia o risco e quem foi excluído por já ter apresentado o desfecho antes da classificação**.
+
+### 18.5. Estimandos diferentes geram respostas diferentes
+
+“Risco de ter pelo menos uma internação em dois anos” e “taxa de internações por mil pessoas-ano” não são perguntas equivalentes. A primeira conta indivíduos com evento dentro de horizonte definido; a segunda pode refletir número total de eventos, inclusive repetidos, por tempo de observação. “Mortalidade acumulada” e “razão instantânea de hazards” também são medidas diferentes.
+
+Nenhuma medida pode ser interpretada com responsabilidade sem especificar população, intervalo, unidade e definição de evento. Esses elementos pertencem ao desenho, não são detalhes burocráticos reservados ao estatístico.
+
+## 19. Casos integradores avançados: como o desenho altera o significado clínico
+
+### Caso 7 — Inquérito sem peso que errou a prevalência municipal
+
+**Situação:** município de duas regiões, A com mil moradores e B com nove mil, pesquisou cem pessoas em cada uma. Entre selecionados, 10% tinham a condição em A e 30% em B. Relatório apresentou média simples de 20%.
+
+**Pergunta:** qual estimativa representaria a cidade se as duas amostras fossem representativas de suas regiões e nenhum outro ajuste fosse necessário?
+
+**Raciocínio:** ponderar pelas populações, não dar igual peso a regiões de tamanhos diferentes. Casos esperados A = 100; B = 2.700; total 2.800/10.000 = **28%**. O desenho é **transversal estratificado com alocação amostral desproporcional**. A estimativa depende de pesos apropriados e seu intervalo de confiança depende também do desenho amostral. **Por que importa:** 20% não era um erro aritmético; era a resposta para uma população artificial composta por metade de cada região, não a municipal.
+
+### Caso 8 — SINAN não é sinônimo de todos os doentes
+
+**Situação:** após treinamento de notificadores em município, o número de notificações de determinado agravo sobe de 30 para 60 por mês, sem mudança evidente em internações relacionadas. A gestão afirma que a incidência real necessariamente dobrou.
+
+**Raciocínio:** o SINAN registra notificações conforme definições e processos de vigilância. Ampliação de busca ativa, melhora de preenchimento, mudança de definição e atraso de digitação podem aumentar registros sem aumento proporcional da doença. **Desenho:** descrição de série temporal agregada de notificações, possivelmente com análise ecológica. **Conduta metodológica:** verificar data de ocorrência versus notificação, duplicidades, confirmação, população, procedimentos e dados de outras fontes. **Por que importa:** mudança de intensidade de vigilância pode alterar o numerador observado sem alterar o risco biológico na mesma proporção.
+
+### Caso 9 — Controle que virou caso meses depois
+
+**Situação:** numa coorte, ao ocorrer uma neoplasia em março, uma pessoa sem a doença é sorteada como controle no conjunto ainda em risco. Essa pessoa recebe diagnóstico em novembro. Estudante exclui o participante por ter “sido controle e caso”.
+
+**Raciocínio:** na amostragem por densidade de incidência, o controle representa o grupo em risco na data de março. Nada impede que a mesma pessoa adoeça depois e se torne caso, desde que o protocolo e análise sejam adequados. **Desenho:** caso-controle aninhado em coorte; razão de associação pode estimar razão de taxas sob premissas específicas. **Por que importa:** o tempo define elegibilidade em cada conjunto de risco.
+
+### Caso 10 — O medicamento que parecia protetor por começar tarde
+
+**Situação:** hospital classifica como “tratados” todos os pacientes que receberam certa terapia em qualquer momento dos primeiros 30 dias após alta. Pacientes falecidos na primeira semana entram necessariamente como “não tratados”, pois não sobreviveram até receber terapia.
+
+**Hipótese de erro:** viés de tempo imortal e definição inadequada de início de seguimento. **Análise:** dados observacionais não autorizam concluir que o medicamento evitou mortes sem alinhar elegibilidade, tempo zero, exposição variável, eventos e estratégia comparadora. **Alternativa:** planejar desenho e análise temporal apropriados para novos usuários ou emulação de estratégia-alvo conforme pergunta. **Por que importa:** um resultado aparentemente impressionante pode nascer da exigência implícita de sobreviver para ser chamado de exposto.
+
+## 20. Questões avançadas comentadas: situações de prova e prática
+
+### Questão 9 — Ponderação de prevalência
+
+Um município com duas regiões de 1.000 e 9.000 habitantes amostra 100 moradores de cada região. As prevalências observadas são 10% e 30%. Sob representatividade dentro de cada região e ausência de outros ajustes, qual a estimativa municipal?
+
+A. 10%.  
+B. 20%.  
+C. 28%.  
+D. 30%.  
+E. 40%.
+
+**Gabarito C.** **A incorreta:** usa apenas região A. **B incorreta:** média simples dá peso populacional igual a regiões desiguais. **C correta:** (1.000×0,10+9.000×0,30)/10.000=28%. **D incorreta:** considera apenas B. **E incorreta:** soma percentuais sem denominador. **Mini-revisão:** estratificação com alocação desproporcional exige ponderação para estimar o total.
+
+### Questão 10 — Subcoorte e tempo em risco
+
+Uma coorte acompanha indivíduos inicialmente livres de doença. Para cada caso incidente, seleciona controles que ainda não apresentavam o desfecho na mesma data. Um selecionado como controle adoece meses depois. Assinale a melhor descrição.
+
+A. O estudo deixou de ser observacional.  
+B. É necessariamente erro e a pessoa não pode tornar-se caso.  
+C. É caso-controle aninhado com amostragem por densidade de incidência; é possível tornar-se caso depois.  
+D. É obrigatoriamente transversal.  
+E. Os controles devem ser escolhidos somente entre os que jamais adoecerão.
+
+**Gabarito C.** **A errada:** não houve intervenção atribuída. **B errada:** status de controle é temporal. **C correta:** controles vêm do conjunto em risco a cada caso. **D errada:** há seguimento e incidência. **E errada:** selecionar com conhecimento de futuro pode introduzir viés. **Mini-revisão:** selecionar controles no tempo do caso muda a interpretação do estimador.
+
+### Questão 11 — Uso de registros no SUS
+
+Pesquisa cruza informações de notificações do SINAN com indicadores municipais e relaciona taxas agregadas de notificação a renda média por município. Mesmo que a base original contenha registros individuais, a unidade da análise apresentada é:
+
+A. Individual, pois o SINAN contém pessoas.  
+B. Ecológica, pois o vínculo analítico é entre indicadores municipais.  
+C. Caso-controle, porque há agravos de notificação.  
+D. Experimental, porque o governo coleta dados.  
+E. Coorte, porque existem dados de vários anos.
+
+**Gabarito B.** **A errada:** origem individual não determina unidade final. **B correta:** cada município contribui com indicadores agregados. **C errada:** casos/controles não foram selecionados individualmente. **D errada:** coleta administrativa não é atribuição de exposição. **E errada:** múltiplos anos podem formar série temporal ecológica, não necessariamente coorte de pessoas. **Mini-revisão:** unidade de análise efetiva define o caráter ecológico.
+
+### Questão 12 — Tempo imortal
+
+Em estudo observacional, pacientes são chamados “tratados” se recebem a intervenção em qualquer ponto dos primeiros 30 dias. Aqueles que morrem antes de receber a intervenção são alocados ao grupo “não tratado”, independentemente de elegibilidade inicial. Qual é a principal ameaça?
+
+A. Viés de tempo imortal pela classificação temporal inadequada.  
+B. Falácia ecológica por médias municipais.  
+C. Falta obrigatória de intervalo de confiança da prevalência.  
+D. Erro de unidade de pessoa-tempo inexistente em todas as coortes.  
+E. Não há risco porque o banco é eletrônico.
+
+**Gabarito A.** **A correta:** para pertencer ao grupo tratado, o paciente precisou sobreviver até iniciar terapia; a comparação desconsidera essa assimetria. **B errada:** não há unidade municipal agregada. **C errada:** é outra dimensão do problema. **D errada:** pessoa-tempo pode ser corretamente analisado em coortes, justamente ajudando a corrigir temporalidade. **E errada:** registro eletrônico não elimina viés de desenho. **Mini-revisão:** tempo zero, elegibilidade e início de exposição precisam estar alinhados antes de interpretar qualquer efeito.
+
+## 21. Referências e rastreabilidade
 
 1. CDC. **Principles of Epidemiology in Public Health Practice, Third Edition**, Lesson 1, Section 7, *Analytic Epidemiology*. https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html
 2. CDC. **Field Epidemiology Manual**, *Designing and Conducting Analytic Studies in the Field*. https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html
@@ -451,10 +668,15 @@ Sugestões de **dez esquemas autorais** a produzir posteriormente, selecionados 
 4. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP. **STROBE statement**. *PLoS Med*. 2007;4(10):e296. https://www.equator-network.org/reporting-guidelines/strobe/
 5. Cochrane Handbook for Systematic Reviews of Interventions. **Chapter 25: Assessing risk of bias in a non-randomized study** (atualização do capítulo em 2019; disponível no Handbook v6.5). https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25
 6. **Do Case-Control Studies Always Estimate Odds Ratios?** *Am J Epidemiol*. 2020. https://pubmed.ncbi.nlm.nih.gov/32889542/
+7. Benchimol EI et al. **The RECORD Statement**. *PLoS Med*. 2015;12:e1001885. https://doi.org/10.1371/journal.pmed.1001885
+8. Ministério da Saúde. **SINAN — Sistema de Informação de Agravos de Notificação**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinan/sinan
+9. Ministério da Saúde. **SINASC — Sistema de Informações sobre Nascidos Vivos**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinasc/sistema-de-informacoes-sobre-nascidos-vivos
+10. Ministério da Saúde. **SIM — Sistema de Informações sobre Mortalidade**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim
+11. IBGE. **Pesquisa Nacional de Saúde 2019: documentação e procedimento de amostragem**. https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-%20nacional-de-saude.html
 
 **Benchmark privado:** “Estudos Epidemiológicos.pdf”, encontrado no Google Drive. Autoria institucional não verificada; conteúdo original não reproduzido. Exemplos numéricos e enunciados são criados para esta apostila, e todas as frequências são hipotéticas.
 
-## 17. Auditoria editorial e científica — não liberar antes de concluir
+## 22. Auditoria editorial e científica — não liberar antes de concluir
 
 **Cobertura presente:** conceitos; desenhos descritivos/analíticos; relatos/séries; ecológico; transversal; coorte (incluindo retrospectiva e pessoa-tempo); caso-controle (incluindo exceções de amostragem); análise de surtos; seis casos clínico-epidemiológicos; oito questões comentadas integralmente; fluxos; referências verificáveis.
 
