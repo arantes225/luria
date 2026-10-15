@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 13,
+  "version": 14,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -146,10 +146,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
       "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
-      "consolidated_sha": "131883418832ee6f00c011ae35244ee0181d9eaa",
+      "consolidated_sha": "7b7fe05f2f6390e1794b5cf9852221451cd9f233",
       "source_raw_characters": 73020,
-      "consolidated_raw_characters": 103938,
-      "consolidated_approximate_plain_characters": 99415,
+      "consolidated_raw_characters": 118003,
+      "consolidated_approximate_plain_characters": null,
       "chapter_count": 10,
       "chapters": [
         {
@@ -193,13 +193,15 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 14,
-      "question_count": 23,
+      "case_count": 16,
+      "question_count": 25,
       "source_numbered_chapter_count": 27,
-      "preflight_warnings": [],
+      "preflight_warnings": [
+        "Classificação MODY/LADA exige revisão especializada de genética/autoimunidade e implicações terapêuticas, sem prescrição automática."
+      ],
       "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
-      "json_visible_estimate": 99415,
-      "json_table_count": 13
+      "json_visible_estimate": null,
+      "json_table_count": 14
     },
     {
       "id": "PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE",
@@ -326,11 +328,11 @@
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "e4112d4ffdc570d1e1dce993137f799106828cdc",
+  "input_json_sha": "d39ca844a20d56f306634e91ce0db2857c12f9c9",
   "last_update_scope": [
-    "DPOC: nova subseção 2.4 sobre suspeita e testes para deficiência de alfa-1-antitripsina, método sérico versus genotipagem/fenotipagem e vigilância familiar/hepática",
-    "DPOC: Caso 18 e Questão 24 autorais; sincronização Markdown + JSON; benchmark Drive estável/exacerbação e diretrizes JBP 2024, Alpha-1 Foundation 2016 e GOLD 2026",
-    "Mantidos 5 livros isolados em pré-publicação e nenhuma imagem nova, merge/deploy ou alegação de certificação"
+    "Diabetes: novas seções 3.2–3.5 com LADA/DM1 em adulto, autoanticorpos e peptídeo C, principais MODY e diabetes secundários",
+    "Dois casos e duas questões autorais de classificação; comparativo do Drive aberto e confrontado com SBD Classificação 2026 e ADA 2026; cinco livros preservados",
+    "Sem imagens, indexação, certificação, merge ou deploy"
   ],
   "last_revision": "2026-10-15"
 }
