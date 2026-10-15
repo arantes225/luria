@@ -15,7 +15,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 101 | Clínica | Distúrbios ácido-base | Sem pasta homônima identificada |
 | 102 | Cirurgia | Obstrução intestinal | Sem pasta homônima identificada |
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
-| 104 | GO | Hemorragia pós-parto | Rascunho iniciado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~19,3 mil caracteres); `assistencia-ao-parto/` já possui conteúdo parcial sobre HPP e foi inspecionada; preservar e fazer de-para |
+| 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~81,5 mil caracteres brutos; ~70,9 mil de texto estimado após remoção simples de cabeçalhos/tabelas); `assistencia-ao-parto/` possui cobertura parcial e foi preservada; pendem revisão médica, validação de doses e imagens |
 | 105 | Preventiva | Desenhos de estudos epidemiológicos | Sem pasta homônima identificada |
 | 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
@@ -48,3 +48,30 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 - **104 — Hemorragia pós-parto:** apostila `04 - HEMORRAGIA POS PARTO.pdf` do Drive aberta e lida; origem institucional não identificada; `assistencia-ao-parto/index.html` da LURIA aberta e avaliada nas referências a HPP. Divergência crítica registrada: limiares tradicionais de 500 mL/1000 mL versus critério precoce OMS/FIGO/ICM 2025 de perda medida ≥300 mL com sinal hemodinâmico anormal ou ≥500 mL. Elaborado rascunho original e autônomo em `_rascunhos/lote-05-104-hemorragia-pos-parto.md`. Revisão adicional baseada no protocolo FEBRASGO Femina 2025 e Position Statement 2024. **Pendente de revisão, extensão e publicação.**
 - **094 — RPMO:** a apostila existente permanece intocada. Busca neste turno não encontrou material diretamente equivalente no Drive; para respeitar Etapa Zero, **não editar até obter benchmark realmente adequado**. Fonte primária FEBRASGO 2024 e protocolo hospitalar 2026 identificados para futura atualização.
 - **095 — Testes diagnósticos:** nenhum material específico de referência educacional localizado nas buscas iniciais no Drive; ainda não iniciada edição médica. Buscar outros termos e pastas antes de iniciar.
+
+
+## Checkpoint editorial — 14/10/2026, complemento da apostila 104
+
+**Arquivos reais confirmados:** apostila publicada preexistente \`apostilas/assistencia-ao-parto/index.html\`; novo rascunho \`apostilas/_rascunhos/lote-05-104-hemorragia-pos-parto.md\`. Nenhum conteúdo existente foi sobrescrito.
+
+**Etapa zero concluída para 104:** revisão integral do texto extraído do PDF correlato \`04 - HEMORRAGIA POS PARTO.pdf\`, localizado e aberto no Drive; autoria institucional não confirmada, portanto jamais atribuir ao Estratégia MED. Benchmark comparado com capítulos e trechos de HPP da apostila LURIA de assistência ao parto, com checagem científica independentemente na OMS/FIGO/ICM 2025, no guia de implementação OMS 2026 e nas publicações/fluxograma FEBRASGO.
+
+**Evolução do manuscrito:** 19.310 → 54.662 → **81.511 caracteres Markdown** (contagem de arquivo inteiro); extração aproximada da linguagem corrente sem títulos e linhas de tabela ~70.935 caracteres. Isto é **triagem métrica**, não cálculo auditado de 60 mil caracteres úteis nem prova de qualidade. Há 21 capítulos numerados de desenvolvimento, dez casos com identificadores explícitos (quatro iniciais e seis avançados), seis questões formativas abreviadas e oito novas questões de cinco alternativas comentadas individualmente, recursos didáticos e roteiro de doze imagens candidatas ainda NÃO criadas/avaliadas.
+
+**Conteúdo diferencial acrescentado e baseado em fontes confirmadas:**
+1. Prevenção por uterotônico e condutas não recomendadas na profilaxia segundo OMS 2025.
+2. Reconhecimento objetivo por perda ≥300 mL com alteração hemodinâmica, ou ≥500 mL, sem espera em instabilidade clínica.
+3. Fluxo de resposta coordenado (E-MOTIVE), com definição de tarefas e reavaliação.
+4. Farmacologia clínica dos uterotônicos, interações e contraindicações (ex.: metilergometrina e hipertensão; carboprost e asma).
+5. Interpretação de hemoglobina, fibrinogênio, plaquetas, coagulograma e implicações para reposição/hemoterapia.
+6. Critérios estritos de segurança para balão intrauterino, opções cirúrgicas e temporizadoras.
+7. Cenários especiais: acretismo, inversão uterina, hipertensão, asma, sangramento secundário.
+8. Plano de cuidado após HPP e matriz de teste de autossuficiência.
+
+**Lacunas técnicas que impedem marcar como finalizada:** auditoria de cada dose de oxitócico/hemoderivado em protocolos brasileiros e bulas vigentes; comparação crítica adicional com protocolos assistenciais dos serviços brasileiros; validação da consistência do texto e questões por revisor obstetra independente; seleção e autorização de imagens via Admin; adaptação de Markdown ao renderizador JSON/HTML; testes automáticos do projeto e inspeção desktop/PWA; certificação de cobertura/aprendizado por resolução independente de casos. **Status correto: EM REVISÃO, NÃO PUBLICADA.**
+
+**Referências públicas efetivamente consultadas:** 
+- OMS/FIGO/ICM, diretriz HPP 2025 — https://www.who.int/publications/i/item/9789240115637
+- OMS, guia de implementação HPP 2026 — https://www.who.int/publications/i/item/9789240116115
+- FEBRASGO, fluxo nacional — https://www.febrasgo.org.br/fluxograma/procedimento-para-tratar-hemorragia-pos-parto/
+- FEBRASGO, Femina 2025, protocolos sobre HPP e manejo hemostático (textos oficiais indexados, links editoriais com alterações de hospedagem).
