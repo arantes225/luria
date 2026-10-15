@@ -208,3 +208,35 @@ As contagens são **brutas e heurísticas** (o JSON computa caracteres visíveis
 **Consistência verificada no JSON:** cinco slugs exclusivos; 48 seções com IDs distintos em cada livro; novas seções e questões de Asma, DPOC e Diabetes presentes tanto no Markdown quanto no `LOTE_02_INPUT_PREPUBLICACAO.json`; 42 tabelas com tags de abertura/fechamento balanceadas; cinco arrays de imagens vazios. Nenhum arquivo `index.html` público novo foi criado. Foi feita validação programática do conteúdo pela leitura de volta do GitHub; **o script Node de preflight e o dry-run do gerador ainda não foram executados no checkout real**.
 
 **Limites ainda abertos:** revisão farmacológica por adulto/criança, gestação e função renal/hepática; revisão médica independente; imagem clínica licenciada e aprovada; referência adulta equivalente de PAC não encontrada no Drive; verificação manual de coerência e possíveis repetições semânticas; testes desktop/PWA; compatibilidade de saída com `content.json` compacto. **Status do lote: NÃO CERTIFICADO e NÃO PUBLICADO.**
+
+
+## Etapa 11 — ampliação clínica de PAC adulta e Tuberculose (14/10/2026)
+
+### Revisão do material pré-existente e comparação no Drive
+Antes de editar, foram conferidos `lead_apostilas`, as versões `*_EDICAO_CONTINUA.md`, o input JSON do gerador e os materiais do Drive. Para **pneumonia**, a busca ampliada por `pneumonia` retornou `Pneumonia Comunitária na Pediatria.pdf`, que foi aberto e comparado, mas **não é benchmark adulto equivalente** e **não fundamentou doses/regimes de PAC adulta**. Para **tuberculose**, foram abertos `02 - INFECTOLOGIA - TUBERCULOSE.pdf`, `02 - TUBERCULOSE EXTRA PULMONAR.pdf` e `03 - TRATAMENTO DE TUBERCULOSE E EFEITOS COLATERAIS DO RIPE.pdf`. Nenhuma redação/tabela privada foi incorporada; a comparação serve apenas para identificar temas/armadilhas, e a autoria Estratégia MED não foi confirmada.
+
+### Texto novo efetivamente gravado na branch editorial
+- **PAC adulta:** `LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md` ampliado de **68.748 para 83.616 caracteres Markdown brutos** (**+14.868**). Novas seções **7.3–7.8**: parâmetros de estabilidade, transição IV→VO, descalonamento/uso responsável de antibiótico, diferenças entre ATS/IDSA 2019 e ATS 2025 para duração, radiografia de controle seletiva e plano de alta; **casos clínicos 13–14** e **questões autorais 19–21**.
+- **Tuberculose:** `LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md` ampliado de **84.634 para 101.570 caracteres Markdown brutos** (**+16.936**). Novas seções **4.4–4.5**: toxicidades R/H/Z/E, hepatotoxicidade com limiares clínico-laboratoriais, monitorização visual/neurológica, consulta e TDO; **6.3–6.4**: investigação de contatos, prevenção/BCG e distinção ILTB/TB ativa; **casos 11–12** e **questões 19–21**. O conteúdo de segurança é ilustrativo/educacional e não cria um protocolo de prescrição autônoma.
+
+### Fontes externas conferidas na redação
+- **PAC:** ATS/IDSA 2019, https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/ ; ATS 2025, https://doi.org/10.1164/rccm.202507-1692ST ; IDSA *CAP Clinical Pathway*, https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf .
+- **TB:** Ministério da Saúde, *Tratamento*, atualizado em 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; *Prevenção*, https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao ; *Diagnóstico*, https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico ; CDC *Adverse Events During TB Treatment*, https://www.cdc.gov/tb/hcp/treatment/adverse-events.html ; ATS/CDC/IDSA *Treatment of Drug-Susceptible TB*, https://www.idsociety.org/practice-guideline/treatment-of-drug-susceptible-tb/ .
+
+### JSON sincronizado e controle técnico
+Os blocos clínicos, casos e questões novos foram inseridos nos capítulos correspondentes de `LOTE_02_INPUT_PREPUBLICACAO.json`, sem reconstruir/apagar os blocos preexistentes; o arquivo foi salvo e relido no GitHub. O `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` foi atualizado para **versão 3**, com SHA atual de cada manuscrito, métricas e pendências.
+
+| Livro | Texto Markdown bruto | Texto visível estimado no JSON* | Casos | Questões | Tabelas HTML |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 78.862 | 75.595 | 10 | 15 | 8 |
+| DPOC | 82.949 | 79.369 | 14 | 19 | 6 |
+| Diabetes mellitus | 82.273 | 78.573 | 12 | 20 | 9 |
+| PAC adulta | **83.616** | **79.676** | **14** | **21** | **10** |
+| Tuberculose | **101.570** | **96.822** | **12** | **21** | **13** |
+| **Total** | **429.270** | **410.035** | **62** | **96** | **46** |
+
+* A estimativa numérica não equivale a certificação de conteúdo útil, correção científica ou ausência de redundância semântica.
+
+**Validação programática básica feita no JSON:** cinco livros/48 seções; nomes de seção/IDs preservados; tags de tabelas equilibradas; cada livro acima de 60 mil caracteres estimados; **cinco arrays `images: []`**; nenhuma nova página pública foi gerada. O `node scripts/validate-apostilas-lote-02.cjs` e o `build-apostilas-batch.cjs --dry-run` **não** foram executados em checkout completo, portanto não declarar passagem nesses testes.
+
+**Pendências de aprovação:** fonte de comparação **adulta** ainda ausente para PAC; revisão médica/farmacológica integral e por subgrupos; curadoria/licença de imagens reais e aprovação Admin; revisão de transição entre capítulos e repetição de conceitos; verificação no renderer desktop/PWA e compatibilidade de saída HTML vs `content.json`. Os cinco livros continuam **NÃO CERTIFICADOS, NÃO PUBLICADOS**, sem merge/deploy.
