@@ -207,3 +207,26 @@ As contagens são **caracteres UTF-8 do texto renderizado pelo conector GitHub**
 **Prioridades seguintes no Lote 7:** auditar e aprofundar 131 Hepatites virais (~26k no inventário anterior), 132 HDB (rever tamanho atual após ampliação anterior), 140 Saúde da Criança APS (~35k), 134 SOP (integrar complemento ao HTML preexistente somente após aprovação), 124 SUA e 129 Amenorreia (complementos separados). Rever o inventário antes de cada ação para não duplicar conteúdos já ampliados.
 
 **Nenhum deploy, migração, edição dos HTMLs publicados ou catálogo ocorreu nesta rodada.**
+
+
+## 15/10/2026 — aprofundamento das aulas 140 e 131 (situação verificada)
+
+Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub na sequência, com os marcadores de seção final e as contagens abaixo:
+
+| Aula | Caminho em `apostilas/_rascunhos/` | Tamanho anterior | Tamanho depois | Ampliação nova | Casos no arquivo | Questões comentadas |
+|---|---|---:|---:|---:|---:|---:|
+| 140 — Saúde da criança na APS | `lote-07-aula-140-saude-crianca-aps.md` | 35.382 | **78.186** | **+42.804** | **9** | **16** |
+| 131 — Hepatites virais | `lote-07-aula-131-hepatites-virais.md` | 26.368 | **71.828** | **+45.460** | **9** | **14** |
+| **Total** | 2 rascunhos | **61.750** | **150.014** | **+88.264** | **18** | **30** |
+
+*Todos os números de caracteres se referem ao arquivo Markdown completo, incluindo títulos, conteúdo clínico, tabelas, casos, perguntas, referências e listas editoriais; não são contagens certificadas de caracteres didáticos líquidos.*
+
+**Etapa zero, aula 140:** relidos antes da gravação, no Google Drive, `01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf` (~8.323 caracteres de texto extraído) e `02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf` (~7.919). São documentos efetivamente pertinentes a parte do tema, mas **não equivalem a livro amplo de puericultura e não têm autoria Estratégia MED comprovada**. Foram comparados com o rascunho existente e fontes atuais do Ministério da Saúde: calendário de consultas na primeira infância, Caderneta Digital/Meu SUS Digital (notícia 14/10/2026), Guia Alimentar brasileiro 2019, EAAB e curvas OMS 0–5/5–19 anos. A expansão cobre triagem/gravidade neonatal, icterícia e colestase, antropometria e velocidade, neurodesenvolvimento, alimentação responsiva, anemia, saúde bucal, audição, visão, prevenção de acidentes, obesidade, pressão arterial infantil, adolescência, **cinco novos casos e oito questões novas**.
+
+**Etapa zero, aula 131:** relido no Drive `08 - HEPATITES VIRAIS.pdf` (~14.845 caracteres extraídos) e comparado com o original LURIA. Documento específico do tema, porém de autoria institucional Estratégia MED não demonstrada e com atalhos/simplificações antigos que não foram reproduzidos. Verificadas referências independentes: **PCDT MS hepatite B, anexo 04/07/2024**; **PCDT MS hepatite C, Portaria SCTIE/MS nº39 de 20/07/2026**; OMS HBV 2024; páginas de diagnóstico HBV/HDV do MS. A ampliação aborda estrutura/imunopatogênese A–E, lesão versus função hepática, sorologias HBV e janela, reativação sob imunossupressão, transmissão vertical, HCV-RNA, RVS e segurança de DAA, HDV/HEV, diagnósticos diferenciais, **cinco novos casos e oito questões novas**.
+
+**Controle de duplicação:** aulas 132, 135 e 139 já estavam ampliadas na rodada anterior e não foram recriadas. A nova atualização **substitui a PRIORIDADE HISTÓRICA** de 131 e 140 como apostilas ainda curtas. O inventário anterior continua documentando a progressão por data; a priorização atual parte dos tamanhos verdadeiros, não das contagens antigas.
+
+**Portões de publicação pendentes para ambas:** auditoria de qualidade textual útil/autossuficiência, checagem farmacológica brasileira e diretrizes integrais por dose/faixa/população, revisão médico-editorial independente, imagens clínicas realmente licenciadas e aprovadas pelo Admin, integração HTML, testes PWA/desktop e verificação dos links e da matriz conceito→caso→questão. Nenhuma candidata de imagem foi importada à fila de aprovação. **Não declarar certificação apenas por ultrapassar 60k brutos.**
+
+**Próxima oportunidade de produção de maior valor:** revisar o **inventário completo e a matriz de gaps** de 121–140 antes de ampliar outros temas. Priorizar **complementos ainda não integrados nos HTMLs existentes** (124 SUA, 129 Amenorreia, 134 SOP/SOMP), a aula **125 Rastreamento/Prevenção Quaternária** e a aula **123 Febre sem Sinais Localizatórios**, sem duplicar livros aprovados. Nenhuma alteração em HTML, catálogo, Supabase ou deploy foi realizada.
