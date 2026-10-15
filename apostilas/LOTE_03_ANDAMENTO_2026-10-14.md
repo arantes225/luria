@@ -18,7 +18,7 @@
 | 45 | Participação e controle social no SUS | RASCUNHO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
 | 46 | Asma | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/46-asma.md\` |
 | 47 | Trauma: atendimento inicial e ABCDE | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/47-trauma-atendimento-inicial.md\` |
-| 48 | Imunizações na infância | RASCUNHO_INICIADO | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
+| 48 | Imunizações na infância | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
 | 49 | Gestação ectópica | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 50 | Financiamento e gestão do SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/50-financiamento-gestao-sus.md\` |
 | 51 | DPOC | RASCUNHO_INICIADO | _rascunhos/lote-03/51-dpoc.md |
@@ -45,6 +45,12 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 48 — calendário PNI 2026, texto e prévia HTML (14/10/2026)
+
+Manuscrito `apostilas/_rascunhos/lote-03/48-imunizacoes-infancia.md` expandido de **16.336 para 80.395 caracteres brutos**, **30 capítulos**, **8 casos clínicos completos** e **12 questões de quatro alternativas comentadas**. Inclui calendário brasileiro de 2026, rotavírus, VPC20, VIP, meningo ACWY, BCG, influenza, covid-19, HPV, dengue, CRIE/RIE, pós-exposição, vigilância de EAPV e cadeia de frio. Comparativo Drive `Imunizações .pdf` é PNI 2020, desatualizado e não reproduzido.
+
+HTML editorial `apostilas/imunizacoes-infancia/index.html` salvo apenas na branch, com **31 seções indexadas, 8 casos, 12 questões expansíveis e 4 tabelas**, sem imagens não aprovadas. Auditoria estática após leitura do arquivo: 0 âncoras quebradas, 0 IDs duplicados e 0 desequilíbrios nos elementos estruturais verificados. Relatório: `apostilas/_rascunhos/lote-03/48-VALIDACAO-HTML.md`. **Aguardam revisão clínica de normas por produto/idade, imagens Admin, navegador/PWA e homologação. Sem merge, catálogo ou deploy.**
 
 ## Aula 47 — prévia HTML em branch editorial (14/10/2026)
 
