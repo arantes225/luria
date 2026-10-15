@@ -582,6 +582,44 @@ O seguimento programático deve avaliar **evolução dos sintomas, peso, adesão
 **Fontes brasileiras:** Ministério da Saúde, *Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS*, especialmente quadro da idade/gravidade e critérios de elegibilidade, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@download/file ; Ministério da Saúde, página *Tratamento*, atualizada em 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, capítulo de diagnóstico infantil, https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf . O quadro foi reescrito para uso pedagógico; **não reproduz a diagramação nem imagem do documento ministerial**.
 
 
+### 7.6 Regimes pediátricos: quatro decisões de segurança antes de calcular comprimidos
+
+A **Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS** permite reduzir o tratamento da TB sensível de seis para quatro meses **somente** em crianças e adolescentes bem selecionados. Os critérios dependem de idade, peso, extensão da doença, estado clínico, resultados microbiológicos e suspeita de resistência. **O encurtamento é uma alternativa**, não substituição universal do esquema padrão. Crianças com doença grave, doença extrapulmonar grave ou evolução desfavorável podem precisar de seis ou mais meses de terapia específica. Este capítulo é um roteiro de raciocínio; a prescrição final deve conferir o quadro oficial e apresentação farmacêutica disponível.
+
+**Primeira decisão — idade e peso.** O quadro ministerial separa bebês **com idade ≤3 meses OU peso <4 kg**: nesse grupo, utiliza-se **RHZ individualizado por dois meses seguido de RH por quatro meses**, sem indicação do regime curto. Em crianças **com mais de três meses, menores de dez anos e peso ≥4 kg**, o regime sensível usual utiliza **RHZ** na fase intensiva. Crianças **a partir dos dez anos e adolescentes menores de 16** utilizam **RHZE** na fase intensiva segundo a Nota 5/2024. Não presumir que a chegada ao décimo aniversário seja detalhe irrelevante de prescrição.
+
+**Segunda decisão — doença não grave?** A Nota define perfis como acometimento intratorácico sem obstrução de vias aéreas, doença paucibacilar não cavitária confinada a um lobo, derrame pleural não complicado e determinadas apresentações ganglionares isoladas. Padrão miliar, cavitação importante, obstrução, deterioração clínica, necessidade de internação pela gravidade e meningite são alertas contra encurtamento automático. A ausência de radiografia ou de teste molecular pode ter fluxo próprio para seleção com critérios clínicos, mas não é autorização para presumir que todo quadro é leve.
+
+**Terceira decisão — que dado de microbiologia foi obtido?** O quadro nacional considera, entre os exemplos de doença com baixa carga bacilar, baciloscopia negativa ou resultados de TRM sem MTB detectado, com traços, *very low* ou *low*, sempre dentro da avaliação completa. **Resultado negativo não prova ausência de TB na criança**; é necessário avaliar contato, história, imagem e capacidade de obter amostras. Uma alta carga bacilar ou suspeita de resistência muda a decisão e demanda programa de referência.
+
+**Quarta decisão — apresentação e acompanhamento.** A Nota informa, para crianças **menores de dez anos com peso de 4 a menos de 25 kg**, o uso de combinação fixa **RHZ dispersível** (rifampicina 75 mg + isoniazida 50 mg + pirazinamida 150 mg) na fase intensiva e **RH dispersível** (rifampicina 75 mg + isoniazida 50 mg) na manutenção. Em criança **menor de dez anos com peso ≥25 kg**, prevê doses **individualizadas**, em vez de usar automaticamente a mesma contagem da combinação pediátrica. A partir de dez anos, aplica as apresentações de combinação fixa **RHZE e RH** da faixa correspondente. Essas são **concentrações por comprimido, não quantidades de comprimidos por faixa**. A dose diária precisa de cálculo conforme peso, protocolo e prescrição da equipe, com reavaliação ao ganhar ou perder peso.
+
+| Criança ilustrativa | Pergunta determinante | Desfecho didático |
+| --- | --- | --- |
+| Bebê de **3 meses exatos**, 5 kg, suspeita de TB | Está no grupo **≤3 meses**? | A Nota coloca o bebê no esquema padrão **sem encurtamento**, com avaliação individual |
+| Bebê de 5 meses, **3,8 kg** | Peso está abaixo de 4 kg? | **Não** aplicar os quatro meses, mesmo com idade acima de três meses |
+| Criança de 6 anos, **18 kg**, TB sensível limitada e sem gravidade | É elegível e qual apresentação é prevista? | Considerar tratamento encurtado após avaliação e combinar **RHZ/RH dispersíveis** conforme dose por peso |
+| Criança de 9 anos, **26 kg** | A mesma contagem de comprimidos dispersíveis continua válida? | A Nota prevê **doses individualizadas** para <10 anos com ≥25 kg; conferir a equipe |
+| Adolescente de 11 anos, 30 kg, TB sensível não grave | A fase intensiva utiliza RHZ isolado? | **Não**: para ≥10 anos o documento prevê **RHZE** na fase intensiva, com RH na manutenção |
+| Criança de 7 anos, TB miliar e hipoxemia | O quadro clínico permite encurtar? | **Não** usar quatro meses como padrão; investigar TB grave e necessidade de regime específico |
+
+#### 7.6.1 O que pode ser verificado a cada retorno mensal?
+
+A orientação ministerial prevê consultas **mensais** no regime encurtado. Documentar se a tosse, febre e perda ponderal regrediram, se houve retomada do apetite, como evoluiu o peso e se existem novos sinais clínicos. Reavaliar o peso não é detalhe administrativo: muda a faixa de dose ou o regime de apresentações em determinadas idades. Verificar doses realmente administradas, episódios de vômito, possibilidade de disfagia, reação adversa, acesso à farmácia e suporte da família.
+
+A expectativa de melhora nas primeiras semanas não é regra absoluta que dispense revisão: **ausência de melhora ou recorrência de sintomas** exige investigar adesão, apresentação/dose inadequadas, doença não grave equivocadamente classificada, resistência, coinfecção e diagnósticos alternativos. Ao final do quarto mês, decisão de encerramento exige resposta suficiente. Se evolução for desfavorável, a Nota permite **estender a fase de manutenção para completar seis meses**, após reavaliação; em doença grave ou resistência podem ser necessários outros regimes e tempos. Não encerrar automaticamente só porque passaram 120 dias do calendário.
+
+**Interrupção de tratamento:** registrar fase em que ocorreu, doses recebidas, duração da interrupção, estado clínico e exames antes/depois. Se os sintomas recidivam durante a interrupção, a Nota orienta reavaliação com TRM e cultura, incluindo investigação de resistência. Não instruir a família a simplesmente continuar a cartela antiga até terminar sem plano da unidade.
+
+#### 7.6.2 Criança com HIV: a presença de imunossupressão não é nota de rodapé
+
+A Nota prevê possibilidade de quatro meses em **coinfecção HIV-TB não grave**, mas condiciona a decisão ao grau de imunossupressão, estado da TARV e presença de outras infecções oportunistas. Em criança com HIV, a ausência de cavitação não pode ser confundida com ausência de risco. Avaliar estabilidade, ganho ponderal, adesão, interações com rifampicina e seguimento especializado; ao fim do quarto mês, monitorar recuperação para decidir se a terapia deve continuar até seis meses. Não transpor orientações adultas sobre TARV de forma automática para toda idade pediátrica.
+
+A TB em pessoa menor de dez anos costuma ser paucibacilar: coletar material com método adequado à capacidade da criança, mas evitar atrasar investigação de doença grave por insistir indefinidamente em escarro espontâneo. Escarro induzido ou aspirado gástrico são métodos disponíveis em serviços preparados; a decisão considera risco, invasividade e probabilidade de gerar microbiologia útil. Se há suspeita de meningite, rebaixamento de consciência ou dificuldade respiratória grave, **encaminhamento urgente** prevalece sobre qualquer escore de baixa complexidade.
+
+**Fontes verificadas:** Ministério da Saúde, *Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS*, especialmente páginas 1–3, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file ; Ministério da Saúde, página *Tratamento* (atualizada em 16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Portaria SCTIE/MS nº 43/2019, incorporação das apresentações pediátricas RHZ/RH dispersíveis, https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2019/prt0043_09_09_2019.html . As tabelas acima foram criadas para a apostila, sem reprodução de figuras oficiais.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
@@ -663,6 +701,15 @@ Menino de oito anos, 23 kg, filho de adulto com TB sensível confirmada, apresen
 ### Caso 14 — Suspeita de TB grave em escolar não é candidata a encurtamento automático
 
 Menina de sete anos, com contato domiciliar de TB, inicia febre, tosse, prostração, hipoxemia e radiografia com múltiplos micronódulos difusos sugestivos de padrão miliar. Encontra-se internada com necessidade de suporte de oxigênio. **Hipóteses:** TB disseminada/miliar, além de diagnósticos diferenciais infecciosos. **Raciocínio:** a gravidade clínica e o padrão disseminado **excluem aplicar automaticamente a categoria de TB pulmonar não grave** da Nota 5/2024; é preciso investigação e tratamento dirigidos à forma grave, incluindo pesquisa de comprometimento do SNC se houver sintomas neurológicos. **Exames:** microbiologia conforme amostras possíveis, avaliação de disseminação, testes de sensibilidade, avaliação de órgãos e HIV conforme indicação. **Conduta:** manejo hospitalar com equipe de referência, suporte clínico e regime/duração apropriados à gravidade; não encurtar a quatro meses pela idade. **Por que importa:** a elegibilidade depende de forma clínica, não de ser criança.
+
+
+### Caso 15 — Criança de nove anos acima da faixa de peso dos dispersíveis
+
+Menino de nove anos e cinco meses, **26 kg**, apresenta TB pulmonar sensível não grave, sem cavitação, com imagem confinada a um lobo e sem suspeita de resistência. A família recebe orientação genérica de repetir a mesma quantidade de comprimidos dispersíveis usada em uma criança de 18 kg. **Hipótese:** TB sensível potencialmente elegível a tratamento de quatro meses; risco de erro farmacêutico por apresentação inadequada. **Raciocínio:** o critério de **duração** depende da gravidade e resistência, ao passo que a **formulação/dose** depende também de peso e idade. Pela Nota 5/2024, criança <10 anos com ≥25 kg usa fármacos em doses individualizadas, não mera cópia do número de dispersíveis do colega. **Exames:** documentação de peso, radiografia, bacteriologia disponível, suscetibilidade da fonte e história clínica; avaliar evolução mensal. **Conduta:** confirmar elegibilidade ao regime curto com a equipe do programa e solicitar cálculo farmacêutico individual por peso, com orientação familiar e seguimento; não fornecer posologia por analogia. **Por que este caso importa:** a mesma decisão de **quatro meses** pode exigir prescrições diferentes de **mg/comprimidos**.
+
+### Caso 16 — Bebê de quatro meses com peso abaixo de quatro quilos
+
+Lactente de quatro meses, **3,7 kg**, contato domiciliar de TB, apresenta febre prolongada e dificuldade de ganhar peso, com investigação que sustenta doença ativa. O médico percebe que já passou dos três meses e cogita esquema de quatro meses automaticamente. **Hipóteses:** TB pediátrica ativa, necessidade de excluir doença grave, outras causas de déficit ponderal. **Raciocínio:** o quadro ministerial exclui do encurtamento bebê **≤3 meses OU com peso <4 kg**. Apesar da idade de quatro meses, o peso ainda o coloca na categoria de doses individualizadas e **seis meses** no esquema básico sensível segundo a Nota. **Exames:** avaliação pediátrica e nutricional urgente, exames por apresentação, cultura/microbiologia quando viável e estado do caso fonte; investigação de gravidade. **Conduta:** encaminhar à equipe de TB pediátrica, selecionar regime e doses individualizadas e planejar revisão frequente de peso e resposta; não usar automaticamente a combinação dispersível de uma faixa não aplicável. **Por que este caso importa:** a conjunção lógica **idade OU peso** é decisiva para segurança.
 
 
 ## 9. Questões autorais comentadas
@@ -845,6 +892,35 @@ C) Todas as crianças devem receber automaticamente BPaLM.
 D) A resposta clínica não precisa ser verificada até o último dia da terapia.
 
 **Gabarito: B.** A nota diferencia RHZ em menores de dez e RHZE a partir de dez na fase inicial do esquema sensível. **A:** ignora grupo etário e formulações. **C:** BPaLM é terapia de TB resistente em população elegível, não substitui tratamento pediátrico sensível. **D:** o seguimento mensal identifica eventos adversos, resposta inadequada e necessidade de extensão para seis meses. **Mini-revisão:** a mesma duração total pode conter **fármacos diferentes na fase intensiva** conforme idade.
+
+
+### Questão 24 — Comprimido dispersível e faixa de peso
+
+Segundo a Nota Informativa nº 5/2024 do Ministério da Saúde, criança de nove anos com **26 kg** e TB sensível não grave deve ter qual atenção farmacológica particular?
+
+A) Copiar a quantidade de comprimidos dispersíveis recomendada para qualquer criança de 18 kg.
+
+B) Avaliar doses individualizadas, pois em menor de dez anos com **≥25 kg** a Nota não recomenda simplesmente manter a mesma estratégia de comprimidos dispersíveis por faixa.
+
+C) Usar obrigatoriamente a fase intensiva somente de etambutol.
+
+D) Suspender o tratamento porque mais de 25 kg exclui tuberculose.
+
+**Gabarito: B.** Idade, peso e apresentação devem ser interpretados conjuntamente. **A:** transfere dose de outra faixa; **C:** inventa monoterapia ineficaz; **D:** não tem fundamento clínico. **Mini-revisão:** no documento, crianças <10 anos com 4 a <25 kg usam combinações RHZ/RH dispersíveis; com ≥25 kg as doses são individualizadas, enquanto o adolescente ≥10 anos entra no quadro RHZE/RH.
+
+### Questão 25 — Exclusão do regime de quatro meses
+
+Qual situação **não** se enquadra na alternativa de quatro meses para TB pediátrica sensível não grave definida na Nota 5/2024?
+
+A) Criança de seis anos, 19 kg, lesão pulmonar não cavitária de um lobo, sem gravidade e sem suspeita de resistência.
+
+B) Criança de nove anos, 24 kg, doença ganglionar isolada e leve, com investigação adequada da ausência de outros focos.
+
+C) Lactente de quatro meses, **3,7 kg**, com TB ativa, pois é enquadrado pela restrição de peso.
+
+D) Adolescente de doze anos, com TB pulmonar sensível não grave e acompanhamento disponível.
+
+**Gabarito: C.** O peso abaixo de 4 kg impede a aplicação automática do esquema encurtado, mesmo em bebê com mais de três meses. **A/B/D:** podem ser elegíveis após cumprir critérios completos clínicos, microbiológicos/imagem e de resistência. **Mini-revisão:** antes de encurtar, verificar **idade, peso, gravidade, sítio da doença e resistência**, e reavaliar no quarto mês.
 
 
 ## Referências essenciais
