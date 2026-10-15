@@ -424,3 +424,257 @@ A implementação do FIT colorretal exige colonoscopia de qualidade e prazo de a
 
 Um programa pode ser incorporado por decisão nacional e implementado gradualmente, conforme orçamento e rede. A informação à população deve separar **recomendação** de **disponibilidade local**. Se um exame ainda não chegou à UBS, o usuário precisa de orientação sobre fluxo, não promessa inexistente; se um exame está disponível, deve ser oferecido segundo elegibilidade e consentimento, e não usado para aumentar volume administrativo. Efetividade populacional depende de clínica, regulação, comunicação e confiança.
 
+
+
+## 26. Aplicação integrada: quem deve receber qual conduta na mesma semana
+
+Imagine a agenda de uma UBS com quatro atendimentos consecutivos: pessoa de 52 anos sem sintomas e com mamografia antiga; pessoa de 34 anos com sangramento pós-coital há três meses; homem de 61 anos assintomático com FIT positivo; pessoa idosa acamada com demência avançada e pedido familiar de "todos os exames de câncer". A palavra "prevenção" aparece nas quatro consultas, mas as ações são distintas: rastreio populacional, investigação diagnóstica, confirmação após rastreio e decisão compartilhada sobre provável benefício limitado do rastreamento.
+
+Na primeira consulta, o serviço confere elegibilidade, periodicidade, risco e preferência, oferecendo mamografia conforme recomendação populacional e fluxo local. Na segunda, não se espera próxima rodada de DNA-HPV: é necessário avaliar colo uterino e causa do sangramento, inclusive possibilidade gestacional e lesão visível. Na terceira, o resultado de teste de triagem deve ter encaminhamento para colonoscopia, não simplesmente um segundo FIT para "tirar a dúvida". Na quarta, a análise inclui expectativa de vida, desconforto de procedimentos, condições atuais e objetivos da pessoa/família, sem abandonar diagnóstico de sintomas presentes.
+
+### 26.1 Quadro comparativo de ações
+
+| Situação | Ação correta | Erro a evitar |
+| --- | --- | --- |
+| Assintomática, risco médio, dentro de faixa e prazo | Oferecer rastreamento recomendado com escolha informada | Repetir exame em excesso ou recusar sem motivo |
+| Sintoma novo suspeito | Investigar clinicamente, com exame diagnóstico apropriado | Tratar como participante de rastreio normal |
+| Teste de rastreio positivo | Seguir algoritmo confirmatório e comunicar prazo | Repetir teste até negativar ou anunciar diagnóstico sem confirmação |
+| Risco hereditário muito elevado | Encaminhar a via específica de aconselhamento/vigilância | Aplicar de modo rígido intervalo de população de risco médio |
+| Fragilidade extrema ou preferências incompatíveis com investigação | Avaliar benefício, danos e horizonte; compartilhar decisão | Rastrear por obrigação administrativa, sem tratamento possível |
+
+### 26.2 Como documentar benefício líquido
+
+**Benefício líquido** considera benefício esperado menos danos esperados dentro da distribuição de valores da pessoa ou população. Não existe operação matemática simples que compare, automaticamente, um exame adicional com uma morte evitada; severidade, reversibilidade, tempo até benefício, qualidade de vida e incerteza importam. O médico deve comunicar o que é conhecido e o que não é, indicar fonte e explicar por que a decisão pode mudar com idade, novas doenças, atualização normativa ou preferências.
+
+O pulo do gato de Preventiva não é decorar todos os exames, mas **classificar corretamente o cenário**: assintomático elegível, sintomático que requer diagnóstico, pessoa em seguimento de alto risco ou situação de possível excesso de intervenção. A partir dessa classificação, pesquisar a diretriz e data certas evita erros que nenhuma quantidade de exames resolve.
+
+## 27. Oito casos clínicos de rastreamento e prevenção quaternária
+
+### Caso 1 — A mamografia de uma mulher de 43 anos sem sintomas
+
+**Apresentação:** mulher de 43 anos comparece à UBS para renovação de contraceptivo. Sem nódulos, secreção papilar, história familiar importante ou fatores genéticos conhecidos. Pede mamografia porque viu anúncio dizendo que o SUS "obriga todas a partir de 40 anos". Sem exame prévio recente.
+
+**Pergunta clínica:** trata-se de rastreamento populacional, acesso por demanda ou investigação diagnóstica? **Raciocínio:** a pessoa é assintomática de risco habitual. A nota técnica do MS de 2025 estabelece convite/programa populacional bienal de **50–74 anos**, mas permite acesso sob demanda entre 40–49 após aconselhamento. Algumas sociedades têm regras distintas; não fundi-las nem interpretar acesso como convocação obrigatória.
+
+**Exames:** não pedir ultrassonografia, marcadores tumorais ou ressonância automaticamente. A indicação de mamografia é discutida em relação a benefícios, falsos positivos, seguimento, preferência e oferta real no serviço.
+
+**Conduta:** apresentar a recomendação ministerial e a possibilidade de mamografia por demanda, explicando limites e compartilhando decisão. Manter revisão de riscos e orientações de sintomas. **Por que importa:** protege tanto contra a falsa proibição de acesso antes dos 50 quanto contra a falsa regra de rastreio populacional automático aos 40.
+
+### Caso 2 — Sangramento pós-coital e DNA-HPV negativo anterior
+
+**Apresentação:** pessoa de 36 anos com colo uterino relata sangramento após relações há dois meses. Traz teste molecular DNA-HPV negativo de dois anos antes, feito em programa de rastreamento. Pergunta se deve aguardar três anos para nova coleta.
+
+**Hipótese e interpretação:** há **sintoma atual**, então a situação é investigação diagnóstica, não rastreamento assintomático em intervalo de cinco anos. Um DNA-HPV negativo anterior não exclui toda doença cervical ou outras causas de sangramento, e a análise inclui gestação, cervicite, pólipo, trauma e lesão de colo.
+
+**Exames:** anamnese e exame pélvico/espéculo consentidos, β-hCG conforme possibilidade de gestação, pesquisa de IST conforme risco e avaliação de lesão cervical com encaminhamento indicado. Não simplesmente solicitar "mais DNA-HPV" em vez de examinar.
+
+**Conduta:** organizar avaliação diagnóstica e tratar causa identificada, com prazos e seguimento; explicar que o teste anterior continua sendo informação útil, mas não é autorização para ignorar sintoma. **Por que importa:** distingue a via de rastreamento da via diagnóstica.
+
+### Caso 3 — FIT positivo em homem assintomático de 61 anos
+
+**Apresentação:** homem de 61 anos, sem sangue visível nas fezes, perda de peso ou anemia conhecida, realizou FIT de rastreamento municipal e obteve resultado positivo. Deseja repetir o FIT em um mês porque teme colonoscopia.
+
+**Hipótese e raciocínio:** FIT positivo indica sangue humano fecal detectado pelo método e **necessidade de confirmação**, não câncer diagnosticado. Repetição pode resultar negativa por sangramento intermitente e dar falsa segurança; não é via de encerramento do exame positivo no programa.
+
+**Exames:** encaminhar para colonoscopia conforme protocolo, avaliação de riscos anestésicos e preparo; a colonoscopia identifica lesões, permite biópsia ou retirada de pólipos quando apropriado.
+
+**Conduta:** comunicar de modo não alarmista, avaliar barreiras e organizar agendamento/seguimento até conclusão. **Por que importa:** a efetividade do FIT no SUS em 2026 depende do percurso confirmatório, não somente da coleta.
+
+### Caso 4 — Nódulo tireoidiano encontrado num "check-up total"
+
+**Apresentação:** mulher de 29 anos assintomática fez ultrassom de tireoide por pacote comercial. Descobriu nódulo subcentimétrico sem características de alto risco e solicitou cirurgia imediata para "prevenir câncer". Sem história de radiação cervical ou síndrome genética conhecida.
+
+**Hipótese:** **incidentaloma** de risco aparentemente baixo no contexto fornecido. **Raciocínio:** não existe benefício demonstrado de ultrassonografia tireoidiana universal em pessoas de baixo risco apenas por serem saudáveis. Pequenas alterações podem desencadear punções e operações desnecessárias. Ainda assim, a conduta exata depende de características ecográficas, exame físico, idade, história e sistemas de estratificação, que não estão integralmente informados.
+
+**Exames:** revisar laudo original e fatores de risco antes de escolher necessidade de seguimento; não repetir imagem toda semana nem afirmar que toda lesão é benigna só pelo tamanho.
+
+**Conduta:** aconselhar sobre riscos de sobrediagnóstico e intervenções, aplicar recomendação específica de nódulo se pertinente e combinar acompanhamento proporcional. **Por que importa:** demonstra que a primeira prevenção quaternária teria sido questionar a indicação do ultrassom universal.
+
+### Caso 5 — Mamografia em pessoa muito frágil e expectativa de vida limitada
+
+**Apresentação:** mulher de 83 anos com demência avançada, dependência total e múltiplas hospitalizações recentes recebe convite informal para mamografia. Não há nódulo ou sintoma mamário. Familiar deseja o exame para "não deixar de cuidar".
+
+**Pergunta:** benefício de rastreamento de câncer assintomático pode levar anos, enquanto transporte, compressão, resultado suspeito, biópsia ou tratamento podem gerar dano imediato. Idade isolada não deve determinar cuidado, mas fragilidade, prognóstico, metas e capacidade de tratamento são relevantes.
+
+**Exames:** não pedir automaticamente mamografia como rotina burocrática; se há sintoma mamário novo, a investigação diagnóstica é outra decisão.
+
+**Conduta:** conversar sobre objetivos de conforto, risco e preferências prévias da paciente, evitando intervenções cujo benefício futuro é improvável, sem negar analgesia ou tratamento de queixas existentes. **Por que importa:** prevenção quaternária significa cuidado centrado na pessoa, não abandono.
+
+### Caso 6 — História de Lynch em parente: programa habitual pode ser insuficiente
+
+**Apresentação:** homem de 34 anos relata pai diagnosticado com câncer colorretal aos 39 e tia paterna com câncer endometrial precoce. Está assintomático e pergunta se deve aguardar os 50 anos para FIT do SUS.
+
+**Hipótese:** história familiar sugestiva de predisposição hereditária, a ser esclarecida; **não se pode fechar Lynch apenas pela história**, mas tampouco aplicar automaticamente algoritmo de risco médio.
+
+**Avaliação:** construir heredograma, obter dados anatomopatológicos, confirmar grau de parentesco e idade de início, considerar encaminhamento para genética e coloproctologia/gastroenterologia de risco hereditário.
+
+**Conduta:** orientar via especializada para estratificação e eventual colonoscopia/vigilância em calendário diferente, conforme diagnóstico. **Por que importa:** rastreamento populacional é ponto de partida para risco médio, não teto para grupos de alto risco.
+
+### Caso 7 — Resultado alterado sem seguimento numa UBS
+
+**Apresentação:** auditoria de unidade identifica 120 testes DNA-HPV positivos acumulados ao longo de meses; 35 pessoas não receberam contato e outras aguardam colposcopia sem priorização. A equipe propõe aumentar em 50% o número de coletas para cumprir meta.
+
+**Hipótese organizacional:** falha do percurso de rastreamento entre teste, comunicação, confirmação e possível tratamento. **Raciocínio:** fazer mais exames antes de organizar seguimento pode ampliar ansiedade, perda de casos e sobrecarga do serviço. A oportunidade maior é garantir **navegação** das pessoas com resultado positivo, não aumentar volume indiscriminadamente.
+
+**Exames/indicadores:** identificar elegibilidade, protocolos de triagem de positivos, datas, distribuição de risco, tempo até colposcopia, motivos de falta, capacidade diagnóstica e fluxos de contato seguro.
+
+**Conduta:** plano de busca ativa respeitoso, treinamento de comunicação, regulação e monitoramento de conclusão; depois ampliar oferta conforme capacidade e lacunas de cobertura. **Por que importa:** rastreio organizado é política longitudinal, não campanha de coleta.
+
+### Caso 8 — Mulher assintomática com 12 marcadores alterados no check-up
+
+**Apresentação:** mulher de 46 anos de risco habitual pagou pacote de exames com numerosos marcadores tumorais e hormônios sem indicação clínica. Um marcador está discretamente acima do limite de referência, sem sintomas e com exame físico sem achados. Solicita ressonância de corpo inteiro.
+
+**Hipótese:** alteração laboratorial isolada em rastreamento inespecífico com alta chance de achados não causais; não se pode afirmar etiologia apenas pelo caso. **Raciocínio:** testar muitas variáveis aumenta chance de valores fora do intervalo, e marcadores tumorais não são diagnóstico universal de câncer. O próximo passo não é necessariamente imageamento total.
+
+**Exames:** conferir tipo de marcador, intensidade, referência, fatores biológicos/medicamentos, história familiar e sinais de alarme, com repetição ou avaliação dirigida se justificada. Evitar transformar uma alteração mínima em diagnóstico sem contexto.
+
+**Conduta:** explicar limites do teste, examinar risco clínico, estabelecer plano de reavaliação e oferecer rastreamentos que realmente se aplicam à paciente. **Por que importa:** conter a cascata sem ignorar sinais relevantes é a essência da prevenção quaternária.
+
+## 28. Doze questões autorais comentadas — residência, ENAMED e APS
+
+### Questão 1 — Rastreamento versus investigação diagnóstica
+Mulher de 35 anos relata sangramento pós-coital persistente e pergunta se pode aguardar o próximo DNA-HPV quinquenal. Qual afirmação é mais adequada?
+
+A) Deve aguardar, porque rastreamento negativo anterior exclui toda doença.  
+B) Como há sintoma atual, precisa de avaliação diagnóstica apropriada, independentemente do intervalo do rastreamento.  
+C) Basta repetir DNA-HPV anualmente até os 64 anos em toda pessoa.  
+D) O sintoma confirma automaticamente câncer do colo.
+
+**Gabarito: B.** **A:** rastreio prévio negativo não exclui alterações e doenças futuras ou de outra origem. **B:** sintomas mudam a via para investigação clínica/diagnóstica. **C:** intervalo e teste atuais do programa não são “DNA-HPV anual para todas”. **D:** sangramento pós-coital tem amplo diferencial. **Mini-revisão:** rastreamento se dirige a assintomáticos elegíveis; diagnóstico precoce a pessoas sintomáticas.
+
+### Questão 2 — Rastreamento cervical brasileiro 2026
+Qual esquema descreve o programa brasileiro atualizado para pessoas de risco habitual com colo uterino?
+
+A) DNA-HPV oncogênico como teste primário entre 25 e 64 anos, com intervalo de cinco anos após negativo em condições elegíveis.  
+B) Papanicolau mensal para todas as pessoas com colo uterino.  
+C) Teste de CA-125 a cada cinco anos para prevenir câncer de colo.  
+D) DNA-HPV positivo significa câncer invasivo comprovado e histerectomia imediata.
+
+**Gabarito: A.** **A:** corresponde ao direcionamento do Ministério da Saúde 2025–2026, respeitando exceções. **B:** gera excesso e ignora a atualização. **C:** marcador tumoral não tem essa função. **D:** positivo requer triagem/diagnóstico conforme protocolo, não comprova câncer. **Mini-revisão:** diferenciar teste primário, triagem reflexa e confirmação.
+
+### Questão 3 — Mamografia no SUS após mudança de 2025
+Qual afirmativa distingue corretamente recomendação populacional e acesso individual?
+
+A) Programa populacional exige mamografia mensal desde 40 anos.  
+B) Mulheres de 40–49 estão legalmente proibidas de receber mamografia pelo SUS.  
+C) O MS orienta mamografia populacional bienal dos 50 aos 74 anos e admite acesso sob demanda aos 40–49 com decisão informada.  
+D) Toda mamografia normal exclui doença mamária pelos dez anos seguintes.
+
+**Gabarito: C.** **A:** não é a recomendação oficial do programa. **B:** a nota técnica explicitamente mantém acesso por demanda. **C:** separa política de convite e atendimento individual. **D:** teste negativo não garante ausência futura ou de doença não detectada. **Mini-revisão:** mencionar ano e órgão é parte da resposta.
+
+### Questão 4 — FIT positivo em assintomático
+Homem de 62 anos com FIT de rastreamento positivo deseja repetir o FIT até obter negativo. A melhor conduta é:
+
+A) Repetir FIT semanalmente e encerrar caso negativar.  
+B) Explicar que é triagem positiva e organizar investigação confirmatória, tipicamente colonoscopia, conforme programa.  
+C) Informar diagnóstico definitivo de câncer colorretal sem histologia.  
+D) Esperar aparecimento de hematoquezia antes de seguir.
+
+**Gabarito: B.** **A:** sangramento pode ser intermitente e novo resultado negativo não cancela o positivo anterior. **B:** o percurso confirmatório gera benefício e segurança. **C:** FIT identifica hemoglobina humana fecal, não câncer específico. **D:** rastreamento se dirige a assintomáticos; esperar sintoma perde propósito. **Mini-revisão:** FIT foi incluído no SUS em 2026 para 50–75 anos, com periodicidade bienal no anúncio oficial.
+
+### Questão 5 — Lead-time
+Paciente sem rastreamento é diagnosticado com câncer aos 65 e morre aos 70. Outro é diagnosticado aos 60 e também morre aos 70. Qual interpretação é válida?
+
+A) Mortalidade foi reduzida porque a sobrevida desde o diagnóstico foi maior.  
+B) É exemplo de antecipação do diagnóstico sem adiamento da morte (*lead-time bias*).  
+C) Prova que todos os tumores detectados eram sobrediagnóstico.  
+D) Prova que o exame causou a morte.
+
+**Gabarito: B.** **A:** o desfecho morte ocorreu na mesma idade. **B:** a diferença está na data de diagnóstico. **C:** o exemplo não prova que tumor não causaria sintoma/morte, requisito do sobrediagnóstico. **D:** não há evidência de causalidade nessa direção. **Mini-revisão:** sobrevida desde diagnóstico pode aumentar sem ganho de vida.
+
+### Questão 6 — Sobrediagnóstico versus falso positivo
+Qual afirmativa descreve sobrediagnóstico?
+
+A) Um teste alterado que se revelou inteiramente falso na confirmação.  
+B) Detecção de doença real que nunca produziria sintomas ou morte durante a vida do indivíduo.  
+C) Toda doença detectada antes do sintoma e curada pelo tratamento.  
+D) Ausência de exame em pessoa sem risco.
+
+**Gabarito: B.** **A:** é falso positivo, não sobrediagnóstico. **B:** é a definição essencial. **C:** rastrear doença clinicamente relevante pode trazer benefício, não sobrediagnóstico por definição. **D:** não se relaciona ao conceito. **Mini-revisão:** o sobrediagnóstico é biologicamente verdadeiro, mas clinicamente desnecessário no contrafactual.
+
+### Questão 7 — VPP na baixa prevalência
+Em 10.000 assintomáticos, prevalência de 1%, teste com sensibilidade de 90% e especificidade de 95%. Qual é aproximadamente o VPP?
+
+A) 90%.  
+B) 95%.  
+C) 15%.  
+D) 1%.
+
+**Gabarito: C.** Há 100 doentes, com 90 VP; entre 9.900 não doentes há 495 FP. VPP=90/(90+495)≈**15,4%**. **A:** confunde VPP com sensibilidade. **B:** especificidade não é VPP. **C:** cálculo correto. **D:** é prevalência pré-teste, não pós-positivo. **Mini-revisão:** um teste com boa especificidade ainda pode gerar muitos falsos positivos quando a doença é rara.
+
+### Questão 8 — Pessoa de alto risco hereditário
+Homem de 33 anos tem pai com câncer colorretal aos 39 e vários parentes com tumores relacionados. Pergunta se deve aguardar 50 anos para FIT de risco habitual. Melhor resposta?
+
+A) Sim, nenhuma pessoa abaixo de 50 pode ser avaliada.  
+B) Reforçar história familiar, investigar suspeita de predisposição hereditária e avaliar encaminhamento para protocolo especializado, sem aplicar automaticamente intervalo populacional.  
+C) Realizar teste de marcadores tumorais mensal para diagnóstico definitivo de Lynch.  
+D) Indicar colectomia imediata sem confirmação ou aconselhamento.
+
+**Gabarito: B.** **A:** protocolos de alto risco diferem. **B:** confirma risco sem precipitar diagnóstico genético não demonstrado. **C:** marcadores não diagnosticam síndrome hereditária. **D:** cirurgia sem avaliação é inadequada. **Mini-revisão:** população-alvo de um rastreio importa tanto quanto exame e periodicidade.
+
+### Questão 9 — Prevenção quaternária
+Qual conduta representa prevenção quaternária apropriada?
+
+A) Suspender indiscriminadamente medicamentos de todos os idosos.  
+B) Solicitar CT de corpo inteiro para qualquer pessoa saudável a cada ano.  
+C) Evitar intervenção de baixo benefício e alto potencial de cascata, preservando investigação de sintomas e oferta de rastreios comprovadamente úteis.  
+D) Recusar investigação de nódulo novo porque "exames fazem mal".
+
+**Gabarito: C.** **A:** desprescrição depende de revisão e segurança. **B:** aumenta achados incidentais e potencial de dano. **C:** evita sobreuso sem gerar subuso. **D:** sintoma relevante exige avaliação. **Mini-revisão:** prevenção quaternária é proteção contra iatrogenia e intervenção desproporcional, não omissão.
+
+### Questão 10 — Qualidade programática
+Uma unidade realizou 2.000 testes DNA-HPV, mas tem dezenas de positivos sem comunicação e colposcopia pendente. O melhor indicador/ação imediata é:
+
+A) Duplicar coleta para elevar produtividade, sem resolver positivos.  
+B) Avaliar conclusão da investigação e tratamento dos resultados alterados, corrigindo o trajeto assistencial.  
+C) Registrar todos os positivos como câncer confirmado.  
+D) Cancelar todo cuidado preventivo por falta de colonoscopia.
+
+**Gabarito: B.** **A:** amplia risco sem benefício garantido. **B:** rastreamento é percurso completo. **C:** teste positivo não confirma câncer. **D:** confunde fluxos de rastreio e pode negar atenção útil. **Mini-revisão:** cobertura populacional e seguimento dos positivos são indicadores distintos e complementares.
+
+### Questão 11 — Incidentaloma e cascata
+Mulher de 28 anos sem sintomas faz ultrassom tireoidiano por "check-up" e encontra nódulo pequeno de baixo risco. Qual conduta é mais adequada?
+
+A) Operar imediatamente qualquer nódulo para evitar todo câncer futuro.  
+B) Revisar indicação, estratificar achado e risco, considerando acompanhamento proporcional e danos de intervenções desnecessárias.  
+C) Fazer marcadores tumorais de todos os órgãos.  
+D) Ignorar definitivamente todos os sintomas futuros porque o achado era incidental.
+
+**Gabarito: B.** **A:** tamanho e achado isolados não indicam cirurgia universal. **B:** evita cascata sem negar investigação quando apropriada. **C:** testes inespecíficos podem aumentar falsos positivos. **D:** novos sintomas mudam o quadro. **Mini-revisão:** a cascata começa muitas vezes no exame inicial sem indicação.
+
+### Questão 12 — Uso da recomendação de risco médio
+Uma mulher de 56 anos tem mamografia de rastreamento normal, mas agora palpa nódulo mamário novo. O próximo passo é:
+
+A) Aguardar dois anos porque mamografia normal impede câncer.  
+B) Tratar como situação diagnóstica e avaliar clinicamente o nódulo com imagem/encaminhamento apropriados.  
+C) Dar alta permanente do programa.  
+D) Repetir rastreamento de HPV para investigar a mama.
+
+**Gabarito: B.** **A:** teste negativo não exclui doença nova. **B:** sintoma novo muda indicação e exige avaliação própria. **C:** não há garantia absoluta. **D:** HPV não substitui investigação de nódulo mamário. **Mini-revisão:** rastreamento assintomático e investigação diagnóstica nunca são a mesma via.
+
+## 29. Referências científicas e normas brasileiras utilizadas
+
+1. Ministério da Saúde. **Diretrizes Brasileiras para Rastreamento de Câncer de Colo de Útero — Parte I**, aprovação e atualização em agosto de 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view .
+2. Ministério da Saúde. **Como funciona o rastreamento do câncer no SUS?** FAQ publicada em 28/04/2026, descrevendo DNA-HPV primário, 25–64 anos e 5 anos após negativo. https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do .
+3. Ministério da Saúde / INCA. **Nota Técnica nº 626/2025**, mamografia populacional 50–74 anos bienal e acesso por demanda fora dessa faixa. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus .
+4. Ministério da Saúde / INCA. **SUS inclui teste de alta tecnologia para rastreamento de câncer colorretal** (10/08/2026), FIT para 50–75 anos, bienal. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal .
+5. Ministério da Saúde / INCA. **SUS adota novo exame para detectar câncer de intestino antes dos sintomas** (21/05/2026). https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-adota-novo-exame-para-detectar-cancer-de-intestino-antes-dos-sintomas .
+6. UK National Screening Committee. **Principles of screening**, atualizado em julho de 2025. https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening .
+7. UK National Screening Committee. **Informed choice**, atualizado em julho de 2025. https://www.gov.uk/guidance/principles-of-population-screening/informed-choice .
+8. World Health Organization Regional Office for Europe. **Effectiveness of population-level cardiovascular screening programmes**, segunda edição, 2024. https://www.who.int/europe/publications/i/item/978-92-890-6088-2 .
+9. Organização Mundial da Saúde. **Screening programmes: a short guide. Increase effectiveness, maximize benefits and minimize harm.** Documento de referência conceitual de rastreamento e dano. https://iris.who.int/handle/10665/330829 .
+10. Sociedade e Ministério da Saúde no Brasil podem empregar recomendações diferentes para rastreamentos específicos. **Não confundir diretriz de sociedade, norma do programa SUS e disponibilidade territorial.** Verificar fonte oficial do exame no momento do atendimento.
+
+## 30. Controle editorial e limites de uso
+
+- [x] Inventário de apostilas existentes e material do Drive sem copiar conteúdo privado.
+- [x] Escopo complementar à apostila 120: rastreamento como programa, danos, vieses, SUS 2026 e prevenção quaternária.
+- [x] Separação de investigação diagnóstica versus população assintomática.
+- [x] Atualização de DNA-HPV, mamografia e FIT pelo Ministério da Saúde/INCA.
+- [x] Oito casos clínicos originais e doze questões comentadas.
+- [ ] Revisão técnica independente da interpretação das normas e das exceções de alto risco.
+- [ ] Auditoria quantitativa de ≥60 mil caracteres **instrucionais únicos**, excluindo casos, questões, referências.
+- [ ] Revisão de gramática, deduplicação semântica, gabaritos e autoexplicatividade.
+- [ ] Diagramas autorais/figuras com fonte, licença e aprovação do Admin; não inserir imagens de origem não rastreada.
+- [ ] Preparar JSON do gerador e HTML de prévia; executar validadores oficiais e verificar desktop/PWA.
+- [ ] **RASCUNHO: NÃO PUBLICAR, NÃO FAZER MERGE/DEPLOY.**
