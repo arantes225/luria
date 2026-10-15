@@ -391,6 +391,48 @@ Legendas devem ensinar **o que observar, em qual fase/exame, qual diferencial e 
 **Longo prazo:** investigar FA e aterosclerose, neoplasias e causas trombóticas conforme contexto, monitorar permeabilidade vascular/recorrência, impedir desnutrição após ressecções e acompanhar evolução da IMC. A pessoa aprende o tema quando consegue explicar **por que** duas dores abdominais isquêmicas parecidas demandam tratamentos tão diferentes.
 
 
+
+### 27.1 Como diferenciar lesões vasculares menos comuns sem confundir com a doença aterosclerótica
+
+Nem toda alteração da AMS é embolia ou aterosclerose. **Dissecção isolada da artéria mesentérica superior** pode surgir com dor aguda e imagem de flap intimal, dupla luz ou trombose de falsa luz. A abordagem depende de sinais de isquemia intestinal, comprometimento de fluxo, aneurisma, evolução clínica e estabilidade. Paciente assintomático ou sem sofrimento intestinal pode ser manejado conservadoramente com vigilância em cenários apropriados; dor persistente, progressão, ruptura ou isquemia podem exigir intervenção. Não tratar toda dissecção por trombectomia ou presumir que anticoagulação universal é obrigatória.
+
+**Dissecção aguda de aorta envolvendo ramos viscerais** pode comprometer perfusão mesentérica por obstrução dinâmica da luz verdadeira ou trombose estática do ramo. Dor torácica/dorsal concomitante, pulsos assimétricos e história de doença aórtica orientam busca. A avaliação por angioTC deve incluir extensão aórtica conforme suspeita; o tratamento não se limita à AMS, porque o mecanismo proximal pode precisar de intervenção aórtica em centro especializado.
+
+**Vasculites de vasos médios e grandes**, trombose relacionada a estados pró-coagulantes graves e lesões pós-procedimento também podem reduzir fluxo. Em pessoa mais jovem sem aterosclerose importante, revisar sintomas sistêmicos (febre, perda de peso, fenômenos cutâneos, alterações urinárias ou neurológicas) e exames conforme a hipótese. Testes autoimunes solicitados indiscriminadamente na emergência não substituem a avaliação vascular; a pesquisa etiológica deve ocorrer de maneira coordenada, muitas vezes depois da estabilização.
+
+**Síndrome do ligamento arqueado mediano:** compressão dinâmica do tronco celíaco pode aparecer em imagem inclusive em indivíduos assintomáticos; diagnóstico exige correlação clínica e, quando indicado, exames inspiratórios/expiratórios e exclusão de outras causas. O tratamento costuma focar liberação do ligamento em indivíduos bem selecionados, e não stent como primeira solução enquanto persistir compressão extrínseca. O cenário é distinto da isquemia aguda da AMS e não deve gerar cirurgia em todo achado radiológico.
+
+### 27.2 Interpretando a força das recomendações atuais
+
+O documento ESVS 2025 usa **classes de recomendação e níveis de evidência**, de modo que o aluno não deve traduzir todos os verbos para “obrigatório”. **Classe I** significa recomendação forte pela evidência/consenso disponível, enquanto **IIa** indica conduta a ser considerada e **IIb** estratégia que pode ser considerada em condições selecionadas. A letra A, B ou C expressa qualidade/nível de evidência, e decisões com nível C podem derivar de estudos limitados ou consenso especializado.
+
+Isso é essencial na IMA porque intervenções endovasculares e cirúrgicas são frequentemente comparadas por coortes observacionais sujeitas a **viés de seleção**: pacientes que chegam mais cedo e com intestino provavelmente viável podem ser escolhidos para tratamento endovascular, enquanto casos em choque com peritonite podem ir diretamente à cirurgia aberta. A aparente vantagem em mortalidade de determinada via não prova causalidade simples sem considerar essas diferenças. Por isso ESVS 2025 usa recomendação IIa/B para considerar endovascular como primeira linha na oclusão da AMS, não recomenda “endovascular sempre, inclusive com perfuração”.
+
+Já a WSES 2022 atribui forte importância à angioTC imediata e à cirurgia em peritonite, porque atrasos têm repercussões potencialmente catastróficas. Não se pode interpretar evidência moderada/baixa de ensaios randomizados como permissão para retardar ações quando plausibilidade fisiopatológica, observações e consenso apontam risco grave. Em prova, perguntar **“qual é a prioridade nas próximas horas?”** costuma ser mais útil que decorar percentuais de metanálise.
+
+### 27.3 Sistematização da comunicação entre emergência, radiologia, vascular e cirurgia
+
+Uma passagem de caso eficiente deve conter: **tempo de início; fonte embolígena/aterosclerose/baixo fluxo; estado hemodinâmico; exame abdominal seriado; função renal e lactato (sem usá-lo para excluir); resultado da angioTC arterial e venosa; sinais de viabilidade; antibióticos e anticoagulação já feitos; necessidade de revascularização ou laparotomia.** Dizer apenas “abdome agudo vascular” sem especificar mecanismo e urgência dificulta priorização.
+
+Exemplo de comunicação de alto rendimento: “Paciente de 73 anos com FA, dor súbita há quatro horas, sem defesa no momento, creatinina basal 1,0 e atual 1,3 mg/dL, angioTC com oclusão abrupta de AMS distal à origem, sem pneumoperitônio nem ausência extensa de realce. Equipe ressuscitando, jejum e monitorização. Necessita avaliação vascular imediata para reperfusão, com cirurgia geral acompanhando risco de necrose.” Esse tipo de síntese integra fisiopatologia e conduta sem inventar estabilidade futura.
+
+Em hospital sem radiologia intervencionista, definir transferência precoce para referência quando segura e com apoio de regulação, **sem adiar ressuscitação e avaliação cirúrgica do quadro atual**. Em serviço sem angioTC disponível em tempo oportuno, discutir transferência, exames alternativos e cirurgia conforme gravidade. Um paciente com peritonite franca pode necessitar operação local urgente se deslocamento implicar risco inaceitável; a decisão deve ser colegiada e documentada.
+
+### 27.4 Evolução pós-reperfusão e armadilhas nas primeiras 72 horas
+
+A melhora técnica do fluxo na AMS não encerra o risco. A reperfusão de tecido isquêmico pode causar edema, inflamação e deterioração sistêmica, especialmente após isquemia extensa. Deve-se monitorar abdome seriado, sinais de perfusão, necessidade de vasopressor, diurese, acidose e lactato em trajetória, marcadores inflamatórios, temperatura e sinais de complicações cirúrgicas. Se a dor e o quadro metabólico piorarem, reavaliar o intestino, patência do reparo vascular e diagnósticos alternativos, em vez de assumir que toda piora é resposta inflamatória esperada.
+
+É possível ocorrer **trombose recorrente/reestenose precoce**, falha de reperfusão microvascular, complicações hemorrágicas da anticoagulação, dano intestinal residual e infecção intra-abdominal. Uma angioTC de controle ou angiografia pode ser necessária em cenário selecionado, mas não substitui operação em paciente com peritonite e deterioração. Após cirurgia de controle de danos, revisar programação de second-look, reconstrução de trânsito, fechamento abdominal e metas nutricionais. Documentar o **comprimento e localização do intestino preservado** quando há ressecções é útil para manejo da insuficiência intestinal.
+
+### 27.5 Quatro erros de raciocínio causados por interpretação literal de palavras
+
+**“Padrão-ouro é arteriografia”** pode refletir livros mais antigos, nos quais angiografia invasiva era ferramenta diagnóstica principal. Na prática contemporânea, **angioTC é o exame inicial recomendado** para suspeita de IMA, enquanto arteriografia se integra a terapias endovasculares específicas. **“Toda acidose confirma necrose”** é incorreto: acidose pode ter múltiplas causas no paciente grave, e IMA precoce pode ter lactato normal.
+
+**“Colite isquêmica tem diagnóstico por colonoscopia, logo todo paciente sangrando deve fazer colonoscopia”** também é incorreto: há necessidade de excluir gangrena, perfuração e peritonite antes de insuflar o cólon. **“Angina intestinal melhora com tratamento clínico, portanto só operar se falhar”** pode atrasar revascularização em IMC sintomática com perda ponderal; o tratamento médico cardiovascular acompanha, não necessariamente substitui, a abordagem da estenose hemodinamicamente relevante.
+
+Essas diferenças são especialmente importantes ao comparar materiais de cursinho com diretrizes mais recentes: a fonte comparativa ajuda a identificar temas e macetes que caem, mas **as exceções clínicas e decisões reais precisam ser validadas nas diretrizes atuais**.
+
+
 ## 28. Oito casos clínicos comentados
 
 ### Caso 1 — Embolia arterial por fibrilação atrial
