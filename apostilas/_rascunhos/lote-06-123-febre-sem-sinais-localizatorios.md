@@ -599,3 +599,166 @@ Orientações verbais devem ser acompanhadas de material escrito em português c
 **Conduta:** internação, monitorização, antibióticos empíricos neonatais e **aciclovir intravenoso** conforme protocolo, além de tratamento de convulsão e suporte. Adaptar doses a idade, peso e função renal sob equipe especializada.
 
 **Erro crítico:** usar o rótulo genérico “virose com crise febril” e adiar tratamento antiviral. **Por que importa:** HSV neonatal tem janela estreita de intervenção e pode não ter apresentação clássica.
+
+
+## 29. Doze questões autorais comentadas — residência, internato e ENAMED
+
+### Questão 1 — Lactente de 12 dias bem-aparente
+
+Lactente a termo de 12 dias teve temperatura de 38,2°C aferida em casa, mamou e agora está com 37,4°C na emergência. Exame não identifica foco. Qual a conduta mais segura no escopo da AAP 2021?
+
+A) Dar alta imediata porque está afebril e mamando.  
+B) Solicitar apenas tira urinária; se negativa, afastar todas as IBI.  
+C) Avaliar em ambiente hospitalar com investigação de urina, sangue e LCR, antibioticoterapia parenteral e observação conforme algoritmo de 8–21 dias.  
+D) Classificar como baixo risco pelo Step-by-Step se PCT for <0,5, sem considerar idade.
+
+**Gabarito: C.** **A:** febre documentada continua relevante mesmo após cair e aparência boa não exclui meningite em neonato. **B:** urina negativa não exclui bacteremia nem meningite. **C:** a AAP estratifica 8–21 dias de maneira conservadora, incluindo investigação ampla e internação/terapia. **D:** Step-by-Step de baixo risco requer idade mínima de 22 dias; não serve para neonato de 12 dias. **Mini-revisão:** idade exata em dias é um dado de triagem, não detalhe burocrático.
+
+### Questão 2 — Critérios do Step-by-Step
+
+Qual conjunto reúne critérios usados para classificar baixo risco na abordagem Step-by-Step apresentada pela CPS 2026?
+
+A) Criança de qualquer idade, PCT baixa isolada e resposta ao paracetamol.  
+B) Bom aspecto, 22–90 dias, urina sem leucócitos, PCT <0,5 ng/mL, PCR ≤20 mg/L e ANC ≤10.000/µL.  
+C) Qualquer bebê de 0–7 dias com hemograma normal, sem necessidade de cultura.  
+D) Apenas temperatura menor que 39°C e vacinação materna atualizada.
+
+**Gabarito: B.** **A:** biomarcador isolado e melhora térmica não classificam baixo risco. **B:** inclui idade, exame clínico, urina e os cortes corretos para esta regra. **C:** neonato na primeira semana exige avaliação própria, fora da regra. **D:** não contempla marcadores nem risco de IBI. **Mini-revisão:** Step-by-Step e PECARN têm critérios diferentes; não fazer mistura de cortes.
+
+### Questão 3 — PECARN versus Step-by-Step
+
+Em lactente de idade elegível e bom aspecto, qual combinação laboratorial corresponde à regra PECARN de baixo risco descrita pela CPS 2026?
+
+A) Urina negativa, ANC ≤4.000/µL e PCT ≤0,5 ng/mL.  
+B) PCR isolada ≤20 mg/L sem coleta de urina.  
+C) ANC ≤10.000/µL e febre que cai com antitérmico, sem PCT.  
+D) Cultura urinária positiva por saco coletor, sem outros marcadores.
+
+**Gabarito: A.** **A:** estes três componentes são descritos no quadro PECARN da CPS, aplicados à população apropriada. **B:** PCR sozinha não é a regra. **C:** ANC ≤10.000 faz parte da abordagem Step-by-Step junto a outros itens, não PECARN isolada. **D:** coleta contaminável e ausência de avaliação não classificam IBI. **Mini-revisão:** cortes são ferramentas de probabilidade, não garantia universal de ausência de meningite.
+
+### Questão 4 — EAS positivo aos 48 dias
+
+Lactente de 48 dias, bem-aparente, febre 38,3°C, EAS de cateter com esterase e piúria, PCR e PCT normais, boa hidratação, sem sinais neurológicos. Qual afirmação é mais correta?
+
+A) EAS positivo obriga meningite em todo lactente de 29–60 dias.  
+B) EAS positivo confirma ITU por qualquer método de coleta, dispensando cultura.  
+C) A hipótese de ITU é relevante; a decisão de LP e observação deve considerar marcadores, idade, avaliação completa e protocolo, não somente o EAS.  
+D) A urina positiva permite ignorar hemoculturas previamente coletadas.
+
+**Gabarito: C.** **A:** ITU não equivale a meningite; CPS 2026 diferencia decisão de LP pela avaliação de IBI. **B:** cultura e coleta apropriada importam. **C:** raciocínio integrado preserva segurança e evita LP automática em subgrupos selecionados. **D:** bacteremia concomitante e resultados pendentes continuam relevantes. **Mini-revisão:** boa aparência + baixo risco exigem avaliação completa e seguimento.
+
+### Questão 5 — Febre aos 83 dias
+
+Bebê de 83 dias, a termo, bom aspecto, 38,2°C sem foco, ingesta adequada e família com retorno garantido. Qual abordagem normativa está corretamente descrita?
+
+A) AAP 2021 para lactentes de 8–60 dias inclui diretamente os 83 dias sem adaptação.  
+B) A CPS atualizada em 2026 abrange 61–90 dias e recomenda pelo menos avaliação de urina e urocultura, com outros exames segundo risco/protocolo.  
+C) Depois de 60 dias nunca há meningite bacteriana, então não se faz avaliação.  
+D) É obrigatório tratar todos os bebês de 61–90 dias com ceftriaxona intravenosa, sem avaliação clínica.
+
+**Gabarito: B.** **A:** 83 dias estão fora do escopo AAP 8–60. **B:** a atualização canadense contempla o grupo e permite estratificação apropriada. **C:** risco é menor, mas não zero. **D:** terapia empírica universal seria excessiva em bem-aparentes selecionados. **Mini-revisão:** não converter faixa etária em regra binária de risco zero.
+
+### Questão 6 — HSV neonatal sem vesículas
+
+Lactente de 17 dias tem febre, convulsão, alteração de sucção e transaminases elevadas, mas não apresenta vesículas visíveis. Qual atitude é mais apropriada?
+
+A) Descartar HSV porque não existem lesões vesiculares.  
+B) Classificar como convulsão febril simples e dar alta se a crise terminou.  
+C) Considerar infecção neonatal grave e HSV, investigar de forma urgente e iniciar tratamento empírico adequado, incluindo aciclovir IV quando indicado, sem esperar PCR se doente de alto risco.  
+D) Apenas observar em casa porque a maioria dos quadros febris é viral.
+
+**Gabarito: C.** **A:** HSV neonatal pode ocorrer sem vesículas. **B:** convulsão aos 17 dias com febre é cenário diferente de convulsão febril típica do pré-escolar. **C:** diagnóstico e terapia são tempo-dependentes, e risco neurológico/hepático é relevante. **D:** não é apresentação de baixo risco. **Mini-revisão:** idade neonatal + sinal neurológico supera qualquer regra de triagem de “bom aspecto”.
+
+### Questão 7 — Semáforo de risco NICE
+
+Uma criança de dois anos apresenta febre, pele marmórea, pouca resposta social e gemência. Qual opção é adequada?
+
+A) Classificação de alto risco no sistema NICE, com avaliação emergencial, independentemente da máxima temperatura.  
+B) Baixo risco porque não há tosse nem dor abdominal.  
+C) Categoria verde porque tomou antitérmico.  
+D) Alta com retorno em sete dias se a febre continuar.
+
+**Gabarito: A.** **A:** cor anormal, resposta social comprometida e gemência são sinais vermelhos. **B:** ausência de foco não protege contra sepse. **C:** antitérmico não muda gravidade desses sinais. **D:** abordagem tardia seria insegura. **Mini-revisão:** NICE prioriza sinais de perfusão, estado de alerta e ventilação, não o número do termômetro isolado.
+
+### Questão 8 — Antitérmicos e convulsão febril
+
+Criança previamente saudável de 20 meses tem febre com desconforto, mas sem sinais de risco. Qual orientação é coerente com NICE NG143?
+
+A) Combinar paracetamol e ibuprofeno simultaneamente em toda febre para evitar convulsão.  
+B) Prescrever AAS como primeira linha, pois sua ação antiplaquetária previne epilepsia.  
+C) Utilizar antitérmico para aliviar desconforto quando indicado; ele não previne de modo confiável convulsões febris e não deve ser usado apenas para alcançar temperatura normal.  
+D) Considerar que febre sem queda após antitérmico comprova meningite.
+
+**Gabarito: C.** **A:** uso simultâneo rotineiro não é recomendado e antitérmicos não previnem convulsões febris. **B:** AAS não é antitérmico pediátrico rotineiro e pode causar danos. **C:** foco é conforto e segurança, com dose por peso/idade. **D:** resposta ao antitérmico não diferencia vírus de bactéria. **Mini-revisão:** tratar a criança, não competir com o termômetro.
+
+### Questão 9 — Painel viral positivo no pequeno lactente
+
+Lactente de 35 dias com febre ≥38°C tem teste molecular respiratório positivo para rinovírus e exame inicial sem foco. Qual raciocínio é mais adequado?
+
+A) Todo vírus respiratório detectado descarta bacteremia e ITU.  
+B) A infecção viral reduz em média o risco de algumas IBI, mas não o elimina; investigação inicial segue a idade e a estratificação, com cautela particular para rinovírus.  
+C) Não se deve colher urina em menores de 60 dias se existe qualquer congestão nasal.  
+D) Antibiótico amplo é obrigatório só porque o painel é positivo.
+
+**Gabarito: B.** **A:** coinfecção e eliminação viral prolongada existem. **B:** CPS 2026 destaca risco residual de bacteremia/meningite, inclusive com vírus confirmado. **C:** ITU oculta pode coexistir com sintomas virais. **D:** teste viral isolado não determina necessidade de antibiótico. **Mini-revisão:** foco viral aparente não cancela automaticamente algoritmo para lactente febril.
+
+### Questão 10 — Criança imunizada de 18 meses e febre de 40°C
+
+Criança de 18 meses, vacinada, ativa e hidratada, tem febre de 40°C há um dia, sem sinais vermelhos ou foco após exame completo. Qual afirmação é correta?
+
+A) Temperatura ≥40°C isolada é diagnóstico de bacteremia oculta.  
+B) A vacinação conjugada modificou o risco de bacteremia oculta; exames sanguíneos e antibiótico empírico não são rotineiros apenas pela temperatura numa criança bem-aparente, embora fatores individuais precisem ser avaliados.  
+C) Toda criança com febre sem foco deve ser internada independentemente da idade.  
+D) Se a febre responde ao paracetamol, nenhuma reavaliação futura será necessária.
+
+**Gabarito: B.** **A:** temperatura isolada não confirma bacteremia. **B:** a abordagem contemporânea é seletiva, integrando vacinação, aparência e risco de ITU/outros focos. **C:** há crianças estáveis que podem ser acompanhadas. **D:** resposta ao antitérmico não exclui evolução de doença. **Mini-revisão:** pré-escolar vacinado ≠ neonato febril.
+
+### Questão 11 — Cultura de saco coletor
+
+Lactente de seis semanas com febre sem foco tem cultura de urina positiva colhida por saco adesivo, com crescimento misto, sem EAS adequado. Qual é a interpretação mais responsável?
+
+A) O saco é método ideal para confirmar urocultura em qualquer lactente.  
+B) Crescimento misto comprova pielonefrite bacteriana polimicrobiana.  
+C) Há risco elevado de contaminação; repetir/coletar urina por técnica diagnóstica adequada no contexto de avaliação de lactente febril, sem atrasar tratamento de doente grave.  
+D) O resultado é sempre irrelevante e permite alta sem avaliar febre.
+
+**Gabarito: C.** **A:** saco adesivo tem risco de falso positivo. **B:** crescimento misto pode refletir flora de pele/períneo. **C:** a confirmação com coleta adequada reduz tratamentos inadequados. **D:** a febre do pequeno lactente exige avaliação por idade, independentemente da qualidade da primeira amostra. **Mini-revisão:** método de coleta influencia valor diagnóstico da cultura.
+
+### Questão 12 — Alta e segurança de seguimento
+
+Uma criança de 54 dias, bem-aparente, atende critérios laboratoriais de baixo risco no protocolo local, mas mora em local sem telefone, transporte ou acesso a retorno nas próximas 48 horas. A hemocultura está pendente. Qual decisão melhor incorpora segurança?
+
+A) O risco laboratorial baixo garante que a logística não importa.  
+B) Descartar os resultados da cultura se a febre ceder.  
+C) Considerar observação hospitalar ou estratégia alternativa segura, documentar plano de seguimento e garantir análise ativa da hemocultura antes de escolher alta.  
+D) Dar alta e orientar retorno apenas se completar dez dias de febre.
+
+**Gabarito: C.** **A:** segurança da alta exige seguimento viável. **B:** bacteremia pode ser identificada depois da alta. **C:** rede de apoio e monitoramento de resultados são parte da recomendação, não detalhe social. **D:** esperar dez dias seria inadequado em lactente com piora. **Mini-revisão:** critérios clínicos e biomarcadores só sustentam tratamento ambulatorial com safety net real.
+
+## 30. Fontes científicas principais, datas e contexto brasileiro
+
+1. **Pantell RH et al.; AAP.** *Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old*. **Pediatrics**, 2021;148:e2021052228. https://publications.aap.org/pediatrics/article/148/2/e2021052228/179825/ . Inclui diretrizes para 8–21, 22–28 e 29–60 dias, com corrigenda em novembro de 2021. Aplicabilidade: lactentes a termo, previamente hígidos, bem-aparentes e com febre ≥38°C; atenção às exclusões.
+2. **AAP.** *Infant Fever — Clinical Practice Guideline resources.* https://www.aap.org/en/patient-care/infant-fever/ . Algoritmos de avaliação, cultura, LP, antibióticos e internação para as faixas cobertas.
+3. **Canadian Paediatric Society, Acute Care Committee.** *Management of well-appearing febrile young infants aged ≤90 days.* Publicado em 2023, **atualizado em 27 de maio de 2026**. https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days . Inclui 61–90 dias e descreve PECARN, Step-by-Step, risco de HSV e situações de alta/observação.
+4. **NICE.** *Fever in under 5s: assessment and initial management*, **NG143**. Publicado 07/11/2019, última revisão clínica indicada em 26/11/2021. https://www.nice.org.uk/guidance/NG143/chapter/recommendations . Classificação semáforo e recomendações de antitérmicos, sinais de alerta e safety net.
+5. **NICE.** *Urinary tract infection in under 16s: diagnosis and management*, **NG224**, publicado 27/07/2022, ajustes documentais em 2025. https://www.nice.org.uk/guidance/ng224/chapter/Recommendations . Avaliação de ITU, coleta apropriada e critérios de encaminhamento de lactente menor de três meses.
+6. **Ministério da Saúde do Brasil.** *Dengue: diagnóstico e manejo clínico — adulto e criança*, página oficial atualizada em 10/07/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view . Atenção a arboviroses e contraindicações de anti-inflamatórios na suspeita de dengue.
+7. **Ministério da Saúde, PNI.** Consultar o calendário nacional de vacinação vigente e atualizações oficiais antes de inferir proteção contra sorotipos ou efeitos de cobertura; não atribuir um percentual de risco brasileiro a estudos norte-americanos sem verificação.
+8. **Sociedade Brasileira de Pediatria.** Foram encontrados anais de congressos sobre febre sem foco, mas **não foi identificada na busca desta rodada uma diretriz SBP atual específica** que substitua o protocolo AAP/CPS/NICE. Não inventar “PCDT brasileiro” para esta síndrome.
+
+**Adaptação ao Brasil:** revisar disponibilidade de PCT, cultura, cefotaxima/ceftriaxona e capacidade de seguimento nos serviços. A organização de alta de lactente com hemocultura pendente pode ser inviável em algumas redes; isso deve influenciar local de observação. Dose pediátrica precisa estar coerente com bulário e normativas locais, considerando peso, idade pós-natal/gestacional e função renal. Atualizações internacionais não substituem o atendimento especializado.
+
+## 31. Controle editorial e critérios pendentes
+
+- [x] Etapa zero com busca de conteúdo publicado e rascunhos; não encontrado tema específico preexistente.
+- [x] Fontes internacionais AAP 2021 (com corrigenda), CPS 2026, NICE NG143/NG224 e MS dengue 2026 identificadas.
+- [x] Diferenças de escopo por idade e população documentadas, evitando misturar corte PECARN/Step-by-Step.
+- [x] 27 capítulos instrucionais do início ao avançado: risco, diagnóstico, LCR, cultura, tratamento, segurança e seguimento.
+- [x] 8 casos clínicos completos e originais, incluindo neonatal, febre viral, ITU, Kawasaki, HSV e alta.
+- [x] 12 questões com alternativas A–D, justificativa para todas e mini-revisão.
+- [ ] Avaliação crítica clínica por pediatra/neonatologista (marcadores, antibióticos e doses, contraindicações, elegibilidade e logística).
+- [ ] Auditoria de autossuficiência das perguntas e de pelo menos ~60 mil caracteres **úteis**, sem repetição artificial.
+- [ ] Benchmark temático extenso com autoria confirmada, não disponível no Drive nesta etapa.
+- [ ] Até 10 figuras/fluxogramas de anatomia/coleta e risco, com autoria própria ou licença verificada, curadoria Admin.
+- [ ] Preparar JSON de gerador e HTML de prévia, testes de âncora e sintaxe, auditores oficiais e visual desktop/PWA.
+- [ ] **Não publicar, não fazer merge e não realizar deploy sem revisão independente.**
