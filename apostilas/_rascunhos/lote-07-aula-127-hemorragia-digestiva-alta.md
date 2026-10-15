@@ -258,6 +258,68 @@ ESGE 2026 destaca reiniciar anticoagulação em hemorragia ulcerosa assim que cl
 - **Fístula aortoentérica:** em pessoa com prótese vascular aórtica e sangramento sentinela, deve ser considerada prontamente e a equipe vascular acionada; EDA pode não identificá-la em todos os casos.
 - **Coagulopatia primária/uso de anticoagulante:** pode potencializar qualquer lesão sem indicar especificamente localização.
 
+
+### 9.1. O antitrombótico não é uma condição binária: indicação, meia-vida e reversão
+
+Antes de suspender ou reverter terapia antitrombótica, responder: **qual agente? qual dose? quando foi a última dose? por que foi prescrito? qual função renal/hepática? quão grave é o sangramento? houve hemostasia?** Sem isso, "paciente usa anticoagulante" é um rótulo insuficiente.
+
+| Situação | Risco de suspender sem plano | Questão que muda conduta |
+|---|---|---|
+| AAS por prevenção primária, sem evento cardiovascular prévio | Em geral, menor risco trombótico que prevenção secundária | Ainda há benefício líquido ao reiniciar? |
+| AAS por infarto/AVC isquêmico prévio | Novo evento arterial ao suspender prolongadamente | Como manter/reiniciar rapidamente após controle? |
+| Dupla antiagregação após stent coronário recente | Trombose de stent, muitas vezes grave | Qual fármaco priorizar, intervalo de interrupção e avaliação cardiológica imediata? |
+| Anticoagulante por fibrilação atrial de alto risco | AVC/embolia sistêmica | Quando reiniciar após hemostasia durável? |
+| Anticoagulante por tromboembolismo recente/prótese valvar mecânica | Tromboembolismo e falha valvar conforme contexto | É necessário discutir reversão e reinício urgente com especialista? |
+| Fármaco antitrombótico sem indicação atual confirmada | Sangramento recorrente por terapia desnecessária | Desprescrever após revisão da indicação |
+
+**Reversão:** considerar em hemorragia ameaçadora à vida e cenários específicos, usando protocolo que diferencia antagonistas de vitamina K, inibidores do fator Xa, inibidor direto de trombina e heparinas. Agente de reversão pode aumentar risco trombótico e ter disponibilidade limitada; não utilizar automaticamente para todo episódio estável de melena.
+
+**Reinício:** a ESGE 2026 recomenda retomar anticoagulante assim que clinicamente indicado após sangramento ulceroso, conforme risco tromboembólico, não a mesma data universal para todos. O plano precisa ser documentado em alta com quem é responsável, critérios para reconsiderar e sinais de recorrência.
+
+### 9.2. Anemia e ressangramento: uma hemoglobina não descreve todo o processo
+
+Na hemorragia aguda, perda inicial é de plasma e eritrócitos, e Hb/Ht podem ainda não refletir a perda até redistribuição e infusão de fluidos. Uma Hb inicial de 11 g/dL não exclui hemorragia maciça em hipotenso. Na fase seguinte, a Hb pode cair após hidratação sem que isso prove sangramento persistente. Associar tendência laboratorial a **PA, FC, perfusão, diurese, melena recente, necessidade transfusional e endoscopia**.
+
+Em pessoas com doença cardiovascular isquêmica, limites de transfusão precisam ser individualizados; a estratégia restritiva geral não é ordem de aguardar Hb <7 em pessoa exsanguinante ou com isquemia ativa. Em cirrose com varizes, transfusão liberal pode aumentar pressão portal, mas a prioridade em choque hemorrágico permanece salvar perfusão e controlar origem.
+
+A ESGE 2026 sugere iniciar reposição de ferro **antes da alta** em pacientes com sangramento de úlcera péptica e deficiência de ferro e/ou anemia, após avaliar indicação e tolerância. Não confundir corrigir Hb momentaneamente com recuperar reserva de ferro; planejar hemograma/ferritina conforme evolução.
+
+### 9.3. Reintrodução de alimentação e medicações na alta
+
+Em pacientes com hemostasia endoscópica **durável** após sangramento por úlcera péptica, ESGE 2026 sugere considerar **nutrição oral precoce, em até 24 h**. Isso não significa oferecer dieta a paciente em choque, com aspiração, perfuração, suspeita de reintervenção iminente ou lesão cuja conduta exige jejum individualizado. O preparo para nova endoscopia e risco de anestesia também influenciam.
+
+A alta clínica não é o último ato da hemostasia: reconciliar IBP, anticoagulante, antiagregantes e AINE; confirmar se há necessidade de erradicar *H. pylori*, de repetir EDA ou acompanhar lesão gástrica; investigar anemia e consequências da perda; entregar instruções de retorno imediato por hematêmese, síncope, hipotensão, piora da fraqueza e melena abundante recente.
+
+### 10.1. Lesão de Dieulafoy e malformações vasculares
+
+**Dieulafoy:** vaso submucoso relativamente calibroso que fica exposto por defeito mucoso pequeno, frequentemente no estômago proximal, causando sangramento abrupto/recorrente às vezes volumoso sem úlcera extensa ao redor. A EDA pode não identificar lesão entre episódios, especialmente com grande coágulo. Tratamentos mecânicos ou térmicos endoscópicos frequentemente funcionam; injeção isolada pode não dar hemostasia durável. Não confundir com Forrest Ia de uma úlcera grande: o mecanismo e aspecto anatômico são diferentes.
+
+**Angioectasias:** lesões vasculares mucosas/submucosas, frequentemente relacionadas a idade e comorbidades como doença renal/aórtica em certos contextos; podem causar sangramento oculto recorrente, anemia ferropriva e, às vezes, HDA manifesta. Ablação endoscópica (por exemplo plasma de argônio em seleção) pode ser considerada, mas recorrência é possível e tratamento de anemia é parte do plano.
+
+**GAVE (ectasia vascular antral gástrica):** lesões vasculares no antro, com padrão típico em "melancia" ou forma difusa. Pode coexistir com cirrose, porém **não é simplesmente consequência direta da hipertensão portal** como gastropatia portal: beta-bloqueador ou TIPS não são terapias base de GAVE. Tratamento endoscópico local e suporte de anemia podem ser importantes.
+
+**Gastropatia hipertensiva portal:** padrão de mucosa em mosaico no corpo/fundo em contexto de hipertensão portal, podendo gerar anemia por perdas crônicas; terapêutica pode envolver controle da pressão portal e correção de ferro, conforme gravidade. Distinguir as duas entidades evita TIPS em pessoa cujo sangramento é predominantemente antral vascular.
+
+### 10.2. Laceração de Mallory–Weiss, esofagite e lesões raras
+
+**Mallory–Weiss** é laceração mucosa longitudinal próxima à junção gastroesofágica, tipicamente após vômitos/esforço, com hematêmese. Muitas cessam espontaneamente; sangramento ativo/estigmas de alto risco podem requerer hemostasia endoscópica. O diferencial importante é **Boerhaave**, ruptura transmural com risco de mediastinite, geralmente com dor torácica intensa/enfisema/derrame; não é apenas "uma Mallory–Weiss mais profunda", pois muda urgência e investigação.
+
+**Esofagite erosiva, lesões medicamentosas, tumores, infecções em imunossuprimidos, erosões por sonda** também podem sangrar. A ausência de úlcera duodenal não encerra a investigação se houver mucosa alterada e sangramento. Lesões na ampola/vias biliares (hemobilia) e ducto pancreático (hemosuccus pancreaticus) são raras, mas entram no diferencial em sangramento intermitente com contexto hepatobiliopancreático específico.
+
+### 10.3. HDA após cirurgia bariátrica: localização da anatomia é o primeiro exame conceitual
+
+No **bypass gástrico em Y de Roux**, a EDA usual avalia esôfago, pequena bolsa gástrica e gastrojejunoanastomose, mas **não alcança rotineiramente o estômago excluído e duodeno**. Sangramento de úlcera marginal na gastrojejunoanastomose pode ser visível no trajeto habitual; sangramento de estômago excluído pode necessitar endoscopia assistida por dispositivos, acesso transgástrico, imagem, radiologia intervencionista ou cirurgia conforme gravidade/localização.
+
+No **sleeve/gastrectomia vertical**, a anatomia do tubo gástrico e a linha de grampeamento modificam fontes de hemorragia precoce. **Sangramento intraluminal** pode produzir hematêmese/melena; **sangramento intra-abdominal pós-operatório** pode manifestar-se com taquicardia, hipotensão e queda de Hb, sem exteriorização digestiva. Classificar qual compartimento contém sangue muda caminho de imagem, endoscopia e cirurgia.
+
+**Ponto crucial:** EDA "normal" da bolsa gástrica após bypass não exclui sangramento no estômago excluído. A informação sobre operação, data, técnica, uso de AINE/tabaco e estabilidade tem valor diagnóstico tão grande quanto a primeira hipótese de "gastrite".
+
+### 10.4. Hematochezia com choque — lembrar HDA maciça sem inverter prioridade
+
+Hematoquezia volumosa é frequentemente sugestiva de trato baixo, mas HDA intensa com trânsito rápido pode produzir sangue vermelho via retal. Em choque, iniciar reanimação e avaliação conjunta da fonte superior/inferior considerando melena anterior, hematêmese, ureia elevada, uso de AINE e achados de sonda/EDA conforme plano, sem exigir vômitos de sangue. O inverso também ocorre: fezes muito escurecidas por ferro/bismuto podem simular melena sem sangramento.
+
+A aula 132 cobre especificamente hemorragia baixa, e a 136 integração geral; aqui o objetivo é evitar **perder HDA que exige hemostasia urgente** em pessoa cuja principal queixa é sangue vermelho nas fezes.
+
 ## 11. Exames complementares e interpretação prática
 
 ### 11.1. Hemograma seriado, não um resultado único
