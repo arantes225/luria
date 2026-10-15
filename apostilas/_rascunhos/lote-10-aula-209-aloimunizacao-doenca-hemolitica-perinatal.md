@@ -616,3 +616,168 @@ D. Transfundir plasma como única correção de anemia.
 E. Usar sangue sem testes infecciosos porque o procedimento é intrauterino.
 
 **Gabarito: B.** A/C ignoram Kell; D não repõe eritrócitos; E viola segurança hemoterápica. **Revisão:** **antígeno-negatividade específica** importa além de ABO/RhD.
+
+
+## 15. Algoritmos operacionais e fluxos de segurança
+
+### 15.1 Gestante RhD negativa na primeira consulta
+
+**Passo 1 — conferir tipagem e contexto.** Verificar ABO, RhD, teste indireto de anticorpos, história de transfusão/gestação anterior e qualquer dúvida sobre variante de D. O rastreio deve poder identificar outros anticorpos, não somente anti-D.
+
+**Passo 2 — não sensibilizada por anti-D.** Se o feto pode expressar antígeno D, orientar imunoglobulina anti-D em eventos sensibilizantes e na janela de profilaxia de rotina conforme programa assistencial. Registrar cada dose, data, local e motivo. Um resultado posterior de anti-D deve ser interpretado com esse histórico para distinguir anticorpo passivo.
+
+**Passo 3 — anti-D imune confirmado.** A imunoglobulina anti-D profilática não corrige aloimunização estabelecida. Avaliar antígeno fetal, doença anterior, anticorpos adicionais e necessidade de vigilância da velocidade sistólica máxima da ACM; encaminhar à medicina fetal de alto risco.
+
+**Passo 4 — outro anticorpo clinicamente significativo.** Uma mulher D negativa com anti-K, por exemplo, ainda pode necessitar profilaxia anti-D se não houver anti-D imune. Manejar o anticorpo anti-K em linha paralela, porque a imunoglobulina anti-D não previne a repercussão da anti-K.
+
+**Passo 5 — organizar parto.** Registros de anticorpos e exposição anti-D precisam chegar à maternidade e hemoterapia antes de necessidade transfusional. Após nascimento, verificar D neonatal, profilaxia materna indicada e necessidade de estimativa de hemorragia feto-materna; neonatal deve avaliar anemia e hiperbilirrubinemia independentemente da profilaxia.
+
+### 15.2 Anticorpo irregular positivo: as cinco decisões antes do Doppler
+
+1. **Qual anticorpo?** Anti-D, anti-c, anti-K ou outro. Não aceitar “Coombs 1:16” sem identificação.
+2. **É anticorpo imune verdadeiro ou consequência passiva?** Especialmente anti-D após imunoglobulina recente.
+3. **O feto expressa antígeno alvo?** Histórico paterno quando apropriado, e genotipagem fetal não invasiva validada quando acessível.
+4. **Há gravidez anterior gravemente afetada?** Isso altera encaminhamento mesmo com título baixo.
+5. **Qual mecanismo e vigilância?** Anti-K pode diminuir produção de eritrócitos; anti-D/anti-c produzem hemólise relevante. Doppler ACM monitora repercussão fetal; títulos não são Hb.
+
+### 15.3 Sinal de anemia e escolha entre TIU e parto
+
+A sequência fisiopatológica de anemia significativa pode ser: hemólise/supressão de produção → queda de Hb → menor viscosidade → elevação de PSV-ACM → alto débito cardíaco → cardiomegalia/hidropisia em casos graves. **A PSV acima de 1,5 MoM em feto de risco merece avaliação especializada rápida**, antes que apareça hidropisia. A decisão entre cordocentese com TIU ou nascimento considera idade gestacional, condição fetal, histórico de TIU, capacidade de obter sangue apropriado e UTI neonatal disponível.
+
+**Não automatizar “>34 semanas = parto imediato”.** A SMFM #8 orienta proceder à avaliação invasiva com preparo para transfusão diante de forte risco, *exceto* quando o parto apresentar riscos menores. O consenso de Moise et al. 2025 propõe estender TIUs até final da 35ª semana em centros selecionados, reconhecendo base de evidências limitada. A divergência com protocolos tradicionais **deve ser explicitada**, não escondida em algoritmo único.
+
+### 15.4 Profilaxia após evento sensibilizante
+
+**Gestante não sensibilizada RhD negativa** com sangramento, procedimento invasivo, trauma abdominal, versão cefálica externa, perda gestacional ou outro evento com risco de hemorragia feto-materna: avaliar a necessidade de anti-D conforme idade gestacional e protocolo brasileiro, preferencialmente nas primeiras 72 horas do evento. Se possível sangramento volumoso, envolver hemoterapia para calcular exposição além da dose de referência. Em eventos gestacionais muito precoces, diretrizes internacionais divergem; consultar o protocolo nacional/local vigente e não usar uma regra britânica de baixo risco como regra brasileira universal.
+
+## 16. Duas imunoglobulinas, usos diferentes
+
+**Imunoglobulina anti-D (RhIG)** é profilaxia da sensibilização de mulher RhD negativa que **ainda não produziu anti-D imune**. Sua finalidade é evitar que a gestante monte resposta imune contra o antígeno D após exposição a eritrócitos fetais; não aumenta diretamente hemoglobina do feto já anêmico.
+
+**Imunoglobulina humana inespecífica intravenosa (IVIG) na gestante já aloimunizada:** um consenso publicado por **Moise et al., JAMA Network Open 2025**, considera seu uso em contextos muito selecionados de risco de doença precoce grave, como gravidez anterior com anemia fetal ou perda por DHFN **antes de 24 semanas**, quando se conhece feto antígeno positivo. A recomendação é de **certeza muito baixa**, não substitui terapia fetal quando indicada e requer especialista. **Não confundir com anti-D profilático**, não presumir financiamento/disponibilidade brasileira nem oferecer como tratamento rotineiro de toda gestante com PAI positiva.
+
+**IVIG administrada ao recém-nascido:** outra indicação, restrita pela AAP 2022 a contextos selecionados de hemólise isoimune com DAT positivo e bilirrubina no nível de escalonamento de cuidados, ponderando incerteza de benefício e possível enterocolite necrosante. Portanto, “imunoglobulina” não é uma única decisão que serve à gestante não sensibilizada, à gestante já sensibilizada e ao RN ictérico.
+
+| Produto/estratégia | A quem se dirige | Finalidade | O que NÃO faz |
+| --- | --- | --- | --- |
+| Anti-D profilático materno | RhD negativa **sem anti-D imune**, feto D positivo/desconhecido | Reduz risco de sensibilização | Não desfaz anti-D imune já produzido nem trata anti-K. |
+| IVIG materna em centro especializado | Aloimunização gravíssima precoce, casos muito selecionados | Estratégia adjuvante investigada para postergar anemia/intervenção | Não substitui TIU e não tem recomendação universal de rotina. |
+| TIU fetal | Feto com anemia importante e indicação especializada | Corrige Hb fetal e permite ganhar semanas | Não remove anticorpos maternos; anemia pode voltar. |
+| Fototerapia neonatal | RN com bilirrubina acima de limiar por idade/risco | Favorece excreção de bilirrubina | Não trata diretamente a anemia. |
+| IVIG neonatal selecionada | RN com hemólise isoimune grave e critério AAP | Eventual auxílio contra progressão em condições restritas | Não dispensa fototerapia intensiva/preparo para troca. |
+| Exsanguíneotransfusão | RN com bilirrubina crítica/sinais neurológicos graves | Reduz bilirrubina e hemácias sensibilizadas | Não garante ausência de anemia tardia. |
+
+## 17. Casos clínicos originais — correlação entre diagnóstico, exame e conduta
+
+### Caso 1 — RhD negativa com PAI negativa no início da gravidez
+
+**Apresentação:** gestante de 26 anos, G1, com 11 semanas, tipagem O RhD negativa e pesquisa de anticorpos irregulares negativa. Parceiro de RhD positivo, sem história de transfusão. Procura orientação sobre “vacina do Rh”.
+
+**Hipótese:** gestante **não sensibilizada** em risco potencial de incompatibilidade fetal RhD; não há evidência atual de doença hemolítica.
+
+**Raciocínio:** (1) RhD negativo não significa doente; (2) PAI negativa indica ausência de anticorpo detectado no teste atual; (3) feto pode ser RhD positivo; (4) o objetivo é prevenir resposta imune, não “baixar Coombs”; (5) o plano inclui orientação sobre sangramento, trauma, exames invasivos, rotina de 28 semanas e pós-parto.
+
+**Exames e interpretação:** confirmar exames basais, anotar tipagem, rastreio repetido no momento recomendado pela rede e documentar eventuais eventos sensibilizantes.
+
+**Conduta:** pré-natal com plano de anti-D conforme protocolo brasileiro se elegível; registro em cartão/prontuário, nova avaliação se houver evento; após o parto, avaliar RhD neonatal e necessidade de anti-D materno mesmo que tenha recebido dose durante a gravidez.
+
+**Por que importa?** A prova pode apresentar Rh negativo e tentar induzir tratamento de anemia inexistente; a tarefa aqui é prevenção.
+
+### Caso 2 — PAI positiva depois de anti-D às 28 semanas
+
+**Apresentação:** gestante D negativa, com PAI negativa antes da dose profilática às 28 semanas. Aos 31 semanas, outra coleta mostra anti-D fraco. Sem antecedentes de transfusão e com registro confiável da administração.
+
+**Hipóteses:** anti-D **passivo** pós-imunoglobulina é provável; anti-D imune precisa ser avaliado se resultados evoluírem de modo incompatível.
+
+**Raciocínio:** (1) houve exame negativo antes e dose datada; (2) anticorpo administrado passivamente pode circular e ser detectado; (3) testes sorológicos isolados nem sempre distinguem passivo de imune; (4) não se deve cancelar profilaxia futura necessária com base apenas no novo resultado; (5) também não se pode ignorar concentração inesperadamente crescente.
+
+**Exames:** comparar resultados e metodologias, concentração/título em laboratório e registro de doses; avaliação de especialista se dúvida relevante.
+
+**Conduta:** consultar hemoterapia e seguir protocolo de interpretação de anti-D passivo, com continuidade da estratégia de profilaxia quando ainda indicada até prova de sensibilização imune. Documentar no relatório para maternidade.
+
+**Por que importa?** Evita erros opostos: tratamento fetal desnecessário ou omissão de anti-D para mulher não sensibilizada.
+
+### Caso 3 — Anti-D imune e filho anterior afetado
+
+**Apresentação:** gestante de 30 anos, G3P1A1, com 14 semanas, anti-D imune identificado e antecedente de recém-nascido que precisou de exsanguíneotransfusão. O título atual é relativamente baixo segundo metodologia local.
+
+**Hipótese:** gestação potencialmente de alto risco para DHFN por sensibilização imune prévia, cuja gravidade não pode ser excluída pelo título atual.
+
+**Raciocínio:** (1) anti-D imune está estabelecido; (2) não usar anti-D profilático para “reverter” anticorpo; (3) história de bebê gravemente afetado demanda encaminhamento precoce; (4) determinar se feto expressa D melhora estratificação; (5) planejar Doppler ACM e resgate com centro de terapia fetal.
+
+**Exames:** revisão de títulos no mesmo método, genotipagem fetal conforme disponibilidade, registro de anemia/complicações prévias, US obstétrico e planejamento de PSV-ACM.
+
+**Conduta:** medicina fetal especializada antes de 20 semanas, cronograma de exames por risco, coordenação com hemoterapia/neonatologia.
+
+**Por que importa?** A história obstétrica pode pesar mais que um título aparentemente tranquilizador.
+
+### Caso 4 — Anti-K em baixo título
+
+**Apresentação:** gestante RhD positiva, 18 semanas, pesquisa de anticorpos identifica **anti-K** em título 1:4, sem outros anticorpos conhecidos; transfusão recebida há cinco anos por hemorragia traumática. Feto ainda sem genotipagem K.
+
+**Hipótese:** aloimunização anti-K com possibilidade de feto K positivo, risco de anemia por hemólise e supressão de eritropoiese.
+
+**Raciocínio:** (1) mãe RhD positiva pode ter doença hemolítica por anti-K; (2) título 1:4 não autoriza alta; (3) anti-K pode atingir precursores eritroides; (4) BSH 2025 recomenda encaminhamento desde identificação; (5) genotipagem K fetal deve respeitar técnica e janela apropriadas no laboratório, mantendo vigilância enquanto risco não é descartado.
+
+**Exames:** painel completo de anticorpos, avaliação de status K paterno/fetal quando factível e Doppler PSV-ACM com especialista segundo idade e risco.
+
+**Conduta:** encaminhamento para medicina fetal/hemoterapia, orientar possibilidade de vigilância precoce, não prescrever anti-D por anti-K isolado em mulher D positiva.
+
+**Por que importa?** É a exceção clássica aos cortes genéricos de Coombs.
+
+### Caso 5 — A velocidade sistólica máxima aumentou
+
+**Apresentação:** gestante já aloimunizada com anti-D imune e feto D positivo, 27 semanas, apresenta PSV-ACM **1,63 MoM** em exame de boa qualidade, sem hidropisia. Outro Doppler havia sido normal há uma semana.
+
+**Hipótese:** suspeita de anemia fetal moderada ou grave, ainda sem repercussão hidrópica.
+
+**Raciocínio:** (1) técnica apropriada e MoM elevado sugerem anemia; (2) não esperar ascite/hidropisia; (3) o exame não mede Hb diretamente; (4) idade de 27 semanas pode favorecer TIU se anemia grave; (5) plano exige equipe com sangue fetal compatível, resgate neonatal e avaliação materna.
+
+**Exames:** ultrassom especializado para confirmar medidas/estado cardíaco, revisar trajetória, preparar avaliação sanguínea fetal e TIU conforme decisão.
+
+**Conduta:** contato urgente com centro de terapia fetal, avaliação de cordocentese com possibilidade de TIU; não dar alta para retorno em um mês com justificativa “sem hidropisia”.
+
+**Por que importa?** A intervenção é mais eficaz antes da descompensação fetal.
+
+### Caso 6 — Hidropisia com Coombs materno negativo
+
+**Apresentação:** gestante de 24 semanas com feto apresentando ascite, edema subcutâneo e possível derrame pleural. PAI materna negativa; há história recente de doença viral e movimentos fetais diminuídos.
+
+**Hipóteses:** hidropisia **não imune**, com anemia fetal por parvovírus B19, doença cardíaca, alterações cromossômicas ou outros mecanismos; aloimunização não é a única causa de anemia.
+
+**Raciocínio:** (1) hidropisia é fenótipo de gravidade e não diagnóstico etiológico; (2) PAI negativa reduz probabilidade de causa por anticorpos eritrocitários detectáveis; (3) infecção pode suprimir eritropoiese e produzir anemia; (4) PSV-ACM pode orientar investigação em todas as anemias relevantes, não apenas anti-D; (5) ausência de anticorpos não torna cenário benigno.
+
+**Exames:** ultrassom anatômico/cardíaco e Doppler fetal, sorologia/PCR dirigida, avaliação genética e amostra fetal conforme necessidade e risco.
+
+**Conduta:** avaliação emergente de medicina fetal e tratamento dirigido à causa; preparar intervenção se anemia importante.
+
+**Por que importa?** Ajuda a reconhecer a diferença entre doença imune e síndrome anêmica fetal.
+
+### Caso 7 — Pós-parto com grande hemorragia feto-materna
+
+**Apresentação:** puérpera D negativa, PAI sem anti-D imune, dá à luz RN D positivo. Houve descolamento placentário e suspeita de grande passagem de sangue fetal; recebeu anti-D antenatal. Está dentro das primeiras 24 horas pós-parto.
+
+**Hipótese:** necessidade de **profilaxia pós-parto** e avaliação da quantidade de hemorragia feto-materna, com possível dose adicional.
+
+**Raciocínio:** (1) dose antenatal não elimina indicação puerperal; (2) dose padrão tem capacidade limitada de cobrir hemácias fetais; (3) descolamento pode causar exposição maior; (4) testes quantitativos de FMH orientam complementação; (5) aguardar exame sem administrar qualquer anti-D dentro da janela pode gerar atraso evitável.
+
+**Exames:** tipagem do RN, amostra materna para estimativa de FMH (Kleihauer–Betke ou citometria de fluxo conforme serviço) e orientação hemoterápica.
+
+**Conduta:** anti-D pós-parto idealmente até 72 horas conforme protocolo, com complementação conforme volume de sangue fetal e esquema local; registrar evento.
+
+**Por que importa?** Prevê sensibilização que poderia causar doença grave em gravidez futura.
+
+### Caso 8 — Recém-nascido com icterícia nas primeiras horas
+
+**Apresentação:** RN de 37 semanas, 8 horas de vida, filho de mãe com anti-c clinicamente relevante, apresenta palidez e icterícia precoce; DAT positivo, Hb reduzida e bilirrubina total em elevação rápida.
+
+**Hipótese:** doença hemolítica neonatal por anticorpo materno com anemia e hiperbilirrubinemia significativa.
+
+**Raciocínio:** (1) icterícia antes de 24 horas exige avaliação urgente; (2) usar **curva de bilirrubina total por horas de vida**, idade gestacional e risco; (3) anemia precisa ser avaliada separadamente; (4) DAT positivo apoia hemólise imune, mas não determina sozinho fototerapia/IVIG; (5) terapia escalona conforme bilirrubina e sinais neurológicos.
+
+**Exames:** bilirrubina total seriada, hemograma/reticulócitos, tipagem/DAT, albumina em cenário pertinente, avaliação clínica e planejamento de hemoterapia.
+
+**Conduta:** neonatologia com fototerapia intensiva se ultrapassar limiar específico e escalonamento conforme AAP/serviço; IVIG somente em subgrupos com critérios apropriados; exsanguíneotransfusão se limiar/sinais de encefalopatia; acompanhamento de anemia tardia.
+
+**Por que importa?** Não há “número mágico” de bilirrubina aplicável a todos os RNs.
+
