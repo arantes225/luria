@@ -349,7 +349,230 @@ Nenhuma imagem de terceiro foi importada ou incluída. Candidatas para pesquisa 
 
 Todos os recursos necessitam curadoria, licença para uso editorial/comercial quando terceiros, legendas clínicas corretas e aprovação pelo sistema de Admin, antes de implementação.
 
-## 16. Pendências e fronteiras editoriais
+
+
+## 16. Estrangulamento e isquemia de alça: processo contínuo, não diagnóstico binário simples
+
+É tentador imaginar duas situações independentes: obstrução “benigna” e intestino já necrótico. Na realidade há continuidade fisiopatológica. Obstrução mecânica eleva pressão intraluminal; o retorno venoso pode se comprometer antes do aporte arterial. A congestão gera edema da parede, que eleva ainda mais pressão, reduz perfusão capilar e favorece isquemia. Se a pressão e a torção permanecem, a perfusão arterial também diminui, e pode ocorrer necrose, perda de barreira e translocação bacteriana.
+
+**Alça fechada** acelera esse processo porque existem dois pontos de bloqueio; secreções não têm via de saída, e uma torção mesentérica pode comprimir vasos concomitantemente. Essa é a razão fisiológica pela qual a presença de alça fechada em TC deve acionar avaliação cirúrgica urgente, mesmo que o paciente pareça estável no primeiro contato.
+
+### 16.1. Lactato normal exclui isquemia intestinal?
+
+Não. O lactato pode permanecer dentro da referência em fases iniciais, na isquemia segmentar, ou ser influenciado por produção/depuração e ressuscitação. A combinação de **dor intensa contínua, evolução rápida, peritonite, hipotensão, leucocitose e alterações de TC** orienta risco; **nenhuma variável isolada possui sensibilidade suficiente para garantir viabilidade intestinal**. O uso de analgesia adequada é necessário e não deve ser retido na tentativa de preservar dor “para avaliar”; exame seriado, imagens e tendência clínica continuam essenciais.
+
+### 16.2. Quais achados de TC são mais preocupantes?
+
+A leitura deve procurar transição, espessamento, edema mesentérico, líquido livre, disposição em C/U, vasos convergentes, torção, redução de realce, pneumatoses e gás portal, conforme contexto. **Redução do realce da parede** pode sugerir hipoperfusão e necessidade urgente de avaliação cirúrgica. Pneumatose intestinal pode ter causas diversas e sua gravidade depende do quadro clínico, mas numa pessoa com obstrução e sinais de choque é forte motivo de alarme.
+
+Não transformar TC em árbitro absoluto: cirurgia pode ser indicada com alta suspeita clínica mesmo se o exame é inconclusivo; por outro lado, achados menores sem repercussão precisam de interpretação por especialista. Em paciente com choque, exames não devem atrasar ressuscitação e controle de foco.
+
+### 16.3. Estrangulamento e infecção
+
+Uma alça estrangulada pode progredir para necrose, perfuração e peritonite fecal. Nessas situações, antibioticoterapia com cobertura apropriada integra o cuidado, mas **não restaura irrigação sanguínea nem substitui ressecção/decompressão necessária**. Em obstrução simples sem sinais de infecção, antibiótico profilático rotineiro não é uma intervenção obrigatória antes de decidir cirurgia. A necessidade de antimicrobiano também pode decorrer de profilaxia perioperatória, que segue indicação distinta.
+
+## 17. Volvo de sigmoide e ceco segundo a ASCRS: por que um não é tratado como o outro
+
+A **American Society of Colon and Rectal Surgeons (ASCRS)** publicou diretriz específica em 2021 para volvo de cólon e pseudo-obstrução colônica aguda. Diferentemente do resumo de cursinho, a orientação distingue viabilidade, localização e necessidade de prevenção de recidiva.
+
+### 17.1. Sigmoide sem isquemia
+
+Em paciente com volvo de sigmoide e ausência de sinais de perfuração ou isquemia, **destorção e descompressão endoscópica** é estratégia inicial apropriada em serviços com experiência, com avaliação da mucosa e descompressão conforme capacidade e disponibilidade. Contudo, a descompressão bem-sucedida **não elimina predisposição anatômica**; risco de recorrência é elevado se não há intervenção definitiva. Por isso, discutir colectomia sigmoide durante a mesma internação quando condições permitem é componente importante da estratégia.
+
+Em pessoa com peritonite, isquemia, perfuração ou deterioração importante, atrasar ressecção para insistir repetidamente em endoscopia pode agravar choque e contaminação. O tipo de cirurgia e a decisão entre anastomose primária e estoma dependem da viabilidade, perfusão, comorbidades e contaminação, não exclusivamente do nome da operação.
+
+### 17.2. Ceco
+
+Volvo de ceco afeta cólon direito e pode estar relacionado a mobilidade anormal do ceco. O sucesso da destorção endoscópica é menor, e o risco de não reconhecer isquemia é relevante; **tratamento cirúrgico é geralmente recomendado**. A escolha entre ressecção e cecopexia depende de viabilidade e fatores individuais; ressecção tende a evitar recorrência quando há indicação e segurança. Não copiar automaticamente a estratégia de sigmoide para ceco.
+
+### 17.3. Megacólon chagásico e realidade brasileira
+
+Em regiões do Brasil com doença de Chagas crônica, megacólon pode predispor a constipação e volvo de sigmoide. A presença dessa associação no material didático do Drive é plausível e importante, porém não autoriza presumir que qualquer constipação em pessoa brasileira represente doença de Chagas. História epidemiológica, investigação quando indicada, avaliação de risco e planejamento cirúrgico são necessários.
+
+**Fonte clínica específica:** ASCRS 2021, Alavi K et al., *Diseases of the Colon & Rectum*. 2021;64(9):1046–1057. DOI 10.1097/DCR.0000000000002159. https://pubmed.ncbi.nlm.nih.gov/34016826/ e https://www.ascrsu.com/ascrs/view/ASCRS-Evidence-Based-Guidelines-and-Expert-Consensus/3982019/all/Management_of_Colonic_Volvulus_and_Acute_Colonic_Pseudo_Obstruction__2021_.
+
+## 18. Pseudo-obstrução colônica aguda: algoritmo que evita tratamento automático
+
+Na **síndrome de Ogilvie**, há dilatação colônica sem obstrução mecânica demonstrável, possivelmente associada a disfunção autonômica/entérica. É típica em pacientes hospitalizados com trauma, doenças sistêmicas, imobilidade, alterações eletrolíticas, opioides e fármacos anticolinérgicos. A avaliação inicial exige excluir causas anatômicas de bloqueio, perfuração e isquemia.
+
+### 18.1. Quando medidas conservadoras fazem sentido
+
+Pessoa estável, sem peritonite, com dilatação de grau não ameaçador e sem sinais de isquemia pode ser manejada com:
+- Correção de hipopotassemia e outros distúrbios.
+- Suspensão/redução de medicamentos que pioram motilidade, quando clinicamente possível.
+- Mobilização e suporte clínico.
+- Evitar piorar distensão com alimentações/medicações inadequadas ao contexto.
+- Monitorização clínica, laboratorial e de diâmetro cecal ao longo do tempo.
+
+Isso exige reavaliação formal da resposta. A **duração da distensão**, o grau de dilatação e a condição do paciente alteram a segurança de continuar esperando.
+
+### 18.2. Neostigmina: farmacologia que explica a monitorização
+
+A neostigmina inibe a acetilcolinesterase, aumentando ação colinérgica e motilidade colônica. Pode reverter pseudo-obstrução refratária em casos selecionados. O mesmo mecanismo pode provocar **bradicardia**, broncoconstrição, aumento de secreções e outros efeitos. Portanto, sua administração deve ocorrer **em local monitorizado, com disponibilidade de intervenção para bradicardia e por profissional treinado**, após avaliação de contraindicações como obstrução mecânica não excluída e condições cardiovasculares/respiratórias relevantes.
+
+Não transportar dose de estudo ou resumo estrangeiro sem verificar apresentação brasileira e protocolo do serviço. A sequência correta é confirmar diagnóstico e elegibilidade, preparar monitorização, administrar conforme protocolo e reavaliar resposta. A colonoscopia descompressiva é alternativa em situações específicas, inclusive quando neostigmina é inadequada ou falha, mas também apresenta risco de perfuração.
+
+### 18.3. Diâmetro cecal: alerta, não botão automático de cirurgia
+
+O risco de isquemia e perfuração aumenta com **maior dilatação e maior duração**, mas um único corte de diâmetro não determina intervenção idêntica em todos. Um ceco próximo a 12 cm, especialmente com dilatação progressiva, dor, febre ou sensibilidade focal, eleva preocupação e exige reavaliação da estratégia. A cirurgia passa a ser indicada em perfuração, isquemia ou falha de medidas adequadas com deterioração. Em paciente instável, não aguardar superar um limite fixo para obter avaliação cirúrgica.
+
+**Fonte:** ASCRS 2021, volvo e pseudo-obstrução colônica, referência no capítulo 17.
+
+## 19. Neoplasia colorretal obstrutiva: cirurgia, estoma e stent são decisões diferentes
+
+O tratamento de obstrução por câncer precisa resolver um problema de trânsito e perfusão **sem perder o objetivo oncológico**. É incorreto concluir que toda massa confirmada exige colectomia emergencial com anastomose imediata, pois o contexto de isquemia, sepse, distensão e condição funcional modifica risco de falha anastomótica.
+
+A **ASCRS 2022**, diretriz para câncer de cólon, trata de modo distinto a localização:
+- **Obstrução esquerda com doença potencialmente curável:** descompressão por stent endoscópico ou colostomia derivativa seguida de colectomia em tempo planejado é frequentemente preferida à colectomia de emergência, quando há equipe e anatomia adequadas.
+- **Obstrução à direita/transverso:** colectomia inicial ou descompressão por stent com colectomia subsequente podem ser consideradas em casos selecionados; a viabilidade de anastomose depende da condição clínica.
+- **Perfuração ou ameaça de perfuração:** cirurgia para controle da emergência com princípios oncológicos e baixa tolerância a estratégias arriscadas de anastomose em paciente crítico.
+- **Doença avançada incurável com objetivo paliativo:** prótese ou desvio fecal podem oferecer benefício sintomático selecionado, dependendo do contexto.
+
+**Stent não é universalmente adequado:** dificuldade anatômica, risco de perfuração, disponibilidade de endoscopista terapêutico e condição tumoral limitam a opção. Também não se deve usar a recomendação para esquerda curável como se automaticamente valesse para tumor de reto baixo.
+
+**Fonte:** Vogel JD et al., *ASCRS Clinical Practice Guidelines for the Management of Colon Cancer*. *Dis Colon Rectum*. 2022;65(2):148–177. https://doi.org/10.1097/DCR.0000000000002323.
+
+### 19.1. Por que uma anastomose é mais perigosa em paciente instável?
+
+Perfusão tecidual inadequada, contaminação fecal, vasopressores, edema intestinal e desnutrição elevam risco de deiscência. A preferência por estoma em determinadas circunstâncias não indica “falha cirúrgica”; pode ser estratégia de controle seguro e posterior reconstrução quando apropriada. A técnica final pertence ao julgamento cirúrgico e ao consentimento possível na urgência.
+
+## 20. Obstrução no pós-operatório e reintrodução da alimentação
+
+**Íleo pós-operatório** e **obstrução mecânica precoce** podem compartilhar distensão, vômitos e retardo do trânsito. A cronologia, exame, cirurgia realizada, evolução de dor e TC quando indicada ajudam na distinção. Infecção intra-abdominal, hematoma, hérnia em trocarte, aderência, deiscência e alterações metabólicas são possibilidades dependendo do procedimento.
+
+O cuidado perioperatório busca mobilização segura, analgesia multimodal que reduza uso excessivo de opioides, correção hidroeletrolítica, nutrição conforme tolerância e reconhecimento precoce de complicações. **Não é correto manter jejum prolongado por regra universal depois que a obstrução foi resolvida**, mas a dieta deve responder à viabilidade intestinal, extensão de ressecção, anastomose, risco de aspiração e indicação do cirurgião.
+
+Após ressecção de delgado extenso, podem ocorrer problemas nutricionais e **síndrome do intestino curto**, com necessidade de acompanhamento especializado. Obstrução por Crohn pode exigir manutenção da terapia de base; câncer necessita estadiamento e tratamento oncológico. A alta não deve encerrar a investigação etiológica.
+
+### 20.1. Prevenção de recorrência aderencial
+
+A formação de aderências é resposta cicatricial após insulto peritoneal. Técnicas operatórias atraumáticas, hemostasia cuidadosa, redução de lesão tecidual e barreiras antiaderência em contextos apropriados podem modificar risco, mas não há método que previna completamente recorrência. A escolha laparoscópica pode trazer vantagens em certos procedimentos, mas a evidência varia; não transformar toda laparoscopia em prevenção garantida de bridas.
+
+## 21. Casos integradores avançados
+
+### Caso F — Brida com transição e líquido livre: observar ou operar?
+
+Mulher de 61 anos, duas cirurgias abdominais prévias, apresenta dor em cólica e vômitos há 18 horas, sem peritonite inicial. TC demonstra obstrução do delgado, ponto de transição e quantidade significativa de líquido livre; dor torna-se contínua, FC sobe progressivamente.
+
+**Hipótese:** obstrução mecânica potencialmente complicada. **Raciocínio:** cirurgia prévia sustenta aderência como causa, mas líquido livre e piora clínica elevam risco de sofrimento intestinal. **Conduta:** reavaliação cirúrgica urgente, estabilização e decisão operatória conforme conjunto. **Por que importa:** “é brida” não justifica completar 72 h quando o quadro deteriora.
+
+### Caso G — Obstrução tumoral à esquerda sem perfuração
+
+Homem de 67 anos, perda ponderal e anemia, apresenta distensão, obstipação e dor de evolução progressiva. TC mostra lesão estenosante de sigmoide, sem pneumoperitônio ou isquemia; está hemodinamicamente estável.
+
+**Raciocínio:** etiologia neoplásica provável, mas estratégia pode variar entre stent como ponte, estoma e colectomia conforme disponibilidade, condições locais e avaliação especializada. **Conduta:** internação com cirurgia colorretal, avaliação oncológica e planejamento de descompressão definitiva seguro, conforme diretriz ASCRS. **Por que importa:** cirurgia aberta imediata com anastomose é opção, não obrigação automática.
+
+### Caso H — Distensão colônica e bradicardia: avaliar neostigmina
+
+Paciente de 74 anos após trauma ortopédico apresenta grande distensão cecal, K 2,8, uso de opioide, sem obstrução mecânica em imagem. Tem bradicardia basal importante e doença de condução.
+
+**Hipótese:** Ogilvie, com gatilhos medicamentosos e eletrolíticos. **Raciocínio:** neostigmina é potencialmente útil em casos adequados, mas bradicardia/condução exigem avaliação de contraindicação e monitorização; não pode ser dada automaticamente por um valor de diâmetro. **Conduta:** corrigir K e causas, avaliação multidisciplinar, escolher descompressão apropriada conforme risco. **Por que importa:** saber o fármaco não basta; a segurança determina a escolha.
+
+### Caso I — Volvo cecal: evitar a armadilha do sigmoide
+
+Mulher de 45 anos com início súbito de dor, distensão e vômitos apresenta TC compatível com torção de ceco; há alteração de perfusão suspeita.
+
+**Raciocínio:** diferentemente de sigmoide viável em situação selecionada, volvo de ceco geralmente exige cirurgia. **Conduta:** ressuscitação e avaliação operatória urgente; técnica depende de viabilidade e estabilidade. **Por que importa:** o mesmo termo “volvo” não implica a mesma via terapêutica em todas as localizações.
+
+### Caso J — Íleo biliar em idosa
+
+Mulher de 82 anos com dor abdominal, vômitos e história de doença biliar apresenta obstrução do delgado; TC mostra cálculo ectópico em alça e alterações compatíveis com comunicação biliodigestiva.
+
+**Hipótese:** íleo biliar, uma **obstrução mecânica**, não íleo paralítico. **Conduta:** suporte e avaliação cirúrgica para remoção do fator obstrutivo; decisão sobre fístula e vesícula é individual conforme estabilidade e comorbidades. **Por que importa:** o nome “íleo” pode induzir diagnóstico fisiopatológico errado.
+
+## 22. Questões avançadas com análise das alternativas
+
+### Questão 7 — Observação de bridas
+
+Uma paciente com ASBO sem peritonite ou isquemia está em observação supervisionada. Qual mudança tem maior relevância para suspender o plano conservador?
+
+A. Presença antiga de cicatriz abdominal.
+B. Dor contínua crescente e TC com sinais de sofrimento intestinal.
+C. Ausência de febre na admissão.
+D. Vômito inicial que melhorou após descompressão.
+E. Contraste hidrossolúvel chegando ao cólon.
+
+**Gabarito: B.** **A** é fator etiológico e não indicador de falha por si. **B correta:** aponta perigo para viabilidade. **C** não exclui risco, mas sua ausência isolada não define cirurgia. **D** pode demonstrar resposta inicial. **E** favorece resolução conservadora. **Mini-revisão:** janela de 72 h aplica-se a casos selecionados com vigilância.
+
+### Questão 8 — Obstrução neoplásica esquerda
+
+Homem com obstrução de cólon esquerdo por tumor potencialmente curável, sem perfuração, estável, em centro experiente. Qual alternativa se alinha à ASCRS 2022?
+
+A. Colectomia de emergência com anastomose é obrigatória para todos.
+B. Stent endoscópico ou derivação com colectomia posterior podem ser preferíveis em casos selecionados.
+C. Não é necessário tratar obstrução porque existe câncer.
+D. Proibir qualquer abordagem endoscópica em neoplasia.
+E. Esperar meses por resolução espontânea, independentemente da obstrução.
+
+**Gabarito: B.** **A** universaliza uma estratégia; **B correta:** diretriz considera pontes à cirurgia em localização esquerda selecionada; **C/E** ignoram a urgência; **D** ignora possibilidade de descompressão terapêutica. **Mini-revisão:** viabilidade, localização e recursos mudam a escolha.
+
+### Questão 9 — Ogilvie e neostigmina
+
+Paciente sem obstrução mecânica na TC apresenta dilatação importante do cólon, hipopotassemia e uso de opioides. Tem doença grave de condução cardíaca. Qual afirmação é melhor?
+
+A. Neostigmina IV em qualquer lugar é isenta de risco.
+B. O diagnóstico de Ogilvie não exige excluir obstrução mecânica.
+C. Corrigir causas e avaliar opções de descompressão considerando contraindicações e monitorização é necessário.
+D. Laxantes estimulantes são obrigatórios mesmo se existe dilatação ameaçadora.
+E. O diâmetro cecal, isoladamente, substitui a avaliação clínica.
+
+**Gabarito: C.** **A** ignora bradicardia potencial. **B** inverte etapa diagnóstica. **C correta.** **D** pode ser inadequada. **E** despreza duração e sinais de isquemia. **Mini-revisão:** neostigmina depende de elegibilidade e retaguarda.
+
+### Questão 10 — Critério de risco de isquemia
+
+Em obstrução intestinal, qual afirmação sobre lactato sérico é correta?
+
+A. Lactato normal exclui isquemia inicial.
+B. Lactato elevado significa obrigatoriamente perfuração.
+C. Lactato é dado auxiliar; normalidade não descarta comprometimento vascular de alça.
+D. É o único dado necessário para indicar laparotomia.
+E. Lactato não pode se alterar no choque.
+
+**Gabarito: C.** **A** assume sensibilidade inexistente. **B** confunde perfusão com perfuração. **C correta.** **D** ignora clínica/TC. **E** é falso. **Mini-revisão:** tendência clínica e imagem importam mais que valor isolado.
+
+### Questão 11 — Volvo cecal
+
+Mulher com volvo de ceco na TC e dor progressiva importante. Qual conduta conceitual é preferida?
+
+A. Assumir que destorção colonoscópica tem mesma eficácia que no sigmoide.
+B. Avaliação cirúrgica urgente, considerando viabilidade e técnicas apropriadas.
+C. Usar laxante e dar alta após primeira evacuação.
+D. Esperar confirmação por toque retal obrigatoriamente.
+E. Tratar como íleo pós-operatório sem considerar anatomia.
+
+**Gabarito: B.** **A** ignora diferenças anatômicas e sucesso menor. **B correta.** **C/D/E** adiam ou confundem conduta. **Mini-revisão:** ceco não segue automaticamente algoritmo endoscópico do sigmoide.
+
+### Questão 12 — Íleo biliar
+
+Idosa com dor, vômitos, cálculo ectópico em intestino delgado e achados de fístula biliodigestiva apresenta:
+
+A. Íleo paralítico puro.
+B. Pseudo-obstrução colônica.
+C. Obstrução mecânica por cálculo biliar ectópico.
+D. Síndrome de intestino irritável.
+E. Diagnóstico de cálcio ionizado elevado.
+
+**Gabarito: C.** **A** confunde nomenclatura e mecanismo; **B** não corresponde a bloqueio de delgado por cálculo; **C correta**; **D/E** não explicam imagem. **Mini-revisão:** íleo biliar é causa mecânica de obstrução.
+
+## 23. Matriz de autossuficiência a ser validada por revisor independente
+
+| Pergunta | Capítulo(s) e exercício(s) de suporte |
+|---|---|
+| Como diferenciar mecânica de íleo? | 1, 3, 9; caso E; questão 6 |
+| O que faz uma alça fechada perigosa? | 2, 16; caso F; questões 2, 7 |
+| Quais os limites da TC? | 5, 7; caso D; questão 4 |
+| Quando observar aderências por até 72 h? | 6, 11; casos A/F; questões 2, 3, 7 |
+| Como usar contraste hidrossolúvel na ASBO? | 6; questão 3 |
+| Qual a diferença entre volvo sigmoide e cecal? | 8, 17; casos C/I; questões 5, 11 |
+| Qual opção para obstrução tumoral esquerda? | 8, 19; caso G; questão 8 |
+| Como reconhecer e tratar Ogilvie? | 9, 18; casos E/H; questões 6, 9 |
+| Qual a importância de lactato normal? | 4, 16; questão 10 |
+| O que é íleo biliar? | 10; caso J; questão 12 |
+
+A matriz indica onde estão respostas esperadas, **mas ainda não passou por teste independente de questões inéditas**. Antes de publicação o revisor deve tentar resolver casos sem consultar fontes externas e, quando houver lacuna, corrigi-la no ponto pertinente. O manuscrito também precisa de checagem editorial de redundância entre seções introdutórias e complementos.
+
+
+## 24. Pendências e fronteiras editoriais
 
 O manuscrito inicial aborda os principais síndromes e decisões, mas **ainda não é autossuficiente nem pode ser publicado**. Faltam desenvolvimento de obstrução colônica tumoral e técnicas, evidência específica de volvo e pseudo-obstrução, contraindicações de neostigmina e de endoscopia, desidratação/eletrólitos em profundidade, mais casos e questões, análise de tratamentos após cirurgia e complicações, pesquisa de diretrizes brasileiras verificáveis, revisão por cirurgião, depuração de redundância, teste de 60 mil caracteres didáticos úteis e validação visual desktop/PWA.
 
