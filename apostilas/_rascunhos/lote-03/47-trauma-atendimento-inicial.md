@@ -176,31 +176,260 @@ Os casos são **fictícios** e estruturados como treinamento de priorização cl
 **Por que importa:** resposta transitória é pista clínica de sangramento persistente, e uma TC que atrasa hemostasia pode ser mais perigosa que a incerteza anatômica provisória.
 
 
-## 12. Questões originais comentadas
+## 12. Quatorze questões originais de residência comentadas por alternativa
 
-**Q1.** Trauma com hemorragia arterial externa maciça e paciente conversando. Prioridade inicial?  
-A) TC total do corpo; B) controle imediato da hemorragia; C) exames laboratoriais primeiro; D) avaliar dor como etapa isolada.  
-**Gabarito B.** A e C atrasam tratamento; B operacionaliza o “x” do xABCDE; D não aborda ameaça imediata. **Revisão:** controlar sangramento exsanguinante sem abandonar ABCDE.
+### Questão 1 — A prioridade que mudou com o xABCDE
 
-**Q2.** Paciente instável com suspeita clínica de pneumotórax hipertensivo deve:  
-A) aguardar TC; B) receber drenagem/descompressão urgente conforme técnica apropriada; C) ser observado por 60 min; D) fazer fisioterapia respiratória inicialmente.  
-**Gabarito B.** A/C/D atrasam terapia vital; B aborda causa obstrutiva. **Revisão:** clínica prevalece sobre exame confirmatório quando há ameaça imediata.
+Homem de 26 anos apresenta amputação traumática de perna, hemorragia pulsátil volumosa, fala normalmente e SpO₂ 98%. Qual é a primeira ação crítica?
 
-**Q3.** O eFAST negativo em trauma fechado:  
-A) exclui todas as lesões abdominais; B) permite dispensar exame seriado; C) não exclui lesões retroperitoneais ou de víscera oca; D) descarta sangramento em fratura de pelve.  
-**Gabarito C.** A/B/D exageram capacidade diagnóstica; C reconhece limitações. **Revisão:** interpretar conforme mecanismo e estabilidade.
+A) Solicitar TC de corpo inteiro antes de compressão, pois há mecanismo de alta energia.  
+B) Controlar imediatamente a hemorragia externa, mobilizando equipe para avaliação concomitante do ABCDE.  
+C) Intubar de rotina o paciente que conversa antes de conter o sangue.  
+D) Aguardar hemoglobina para confirmar choque hemorrágico.
 
-**Q4.** No choque hemorrágico grave, a estratégia de dar 1 L de cristalóide em todo paciente, sem avaliação, é:  
-A) universalmente correta; B) mandatória antes de hemoderivados; C) inadequada por desconsiderar individualização e hemostasia; D) substituta de controle cirúrgico.  
-**Gabarito C.** A/B/D negligenciam hemostasia e riscos; C corresponde à ressuscitação orientada por necessidade. **Revisão:** controle da causa é central.
+**Gabarito: B.**
 
-**Q5.** Paciente com TCE importante e hipotensão apresenta risco elevado de:  
-A) lesão cerebral secundária; B) melhor perfusão cerebral; C) ausência de sangramento oculto; D) dispensar oxigenação adequada.  
-**Gabarito A.** B/D contradizem fisiologia; C não decorre de TCE; A destaca perfusão cerebral. **Revisão:** evitar hipóxia/hipotensão no trauma craniano.
+- **A incorreta:** imagem não controla hemorragia exsanguinante.
+- **B correta:** o "x" prioriza perda externa imediata de sangue, sem negligenciar vias aéreas/ventilação.
+- **C incorreta:** intubação sem indicação pode atrasar hemostasia e precipitar instabilidade.
+- **D incorreta:** hemoglobina inicial pode estar preservada apesar de perda importante.
 
-**Q6.** Após solucionar ameaça identificada no B de xABCDE, deve-se:  
-A) terminar sem reavaliar; B) recomeçar avaliação e acompanhar resposta; C) ir obrigatoriamente à tomografia; D) não documentar intervenção.  
-**Gabarito B.** A/C/D ignoram dinâmica e segurança; B confirma eficácia e identifica nova instabilidade. **Revisão:** primária é avaliação iterativa.
+**Mini-revisão:** o ATLS 11 atualizou a sequência para xABCDE, enfatizando situações em que a contenção da hemorragia precede A.
+
+### Questão 2 — Pneumotórax hipertensivo e imagem
+
+Traumatizado sob ventilação positiva apresenta hipotensão súbita, dessaturação, grande assimetria ventilatória e murmúrio abolido unilateralmente. Qual decisão é apropriada?
+
+A) Aguardar TC torácica para confirmar gás pleural antes de qualquer intervenção.  
+B) Sedar mais profundamente e observar por uma hora.  
+C) Tratar imediatamente a suspeita de pneumotórax hipertensivo por equipe capacitada, sem atrasar por imagem, e realizar drenagem definitiva.  
+D) Concluir que o problema é exclusivamente choque hemorrágico porque existe hipotensão.
+
+**Gabarito: C.**
+
+- **A incorreta:** instabilidade e suspeita clínica forte justificam intervenção sem atraso radiológico.
+- **B incorreta:** não resolve mecanismo obstrutivo e pode agravar hemodinâmica.
+- **C correta:** a descompressão é urgente quando há comprometimento circulatório ou respiratório grave.
+- **D incorreta:** obstrução intratorácica prejudica retorno venoso e pode gerar choque.
+
+**Mini-revisão:** diferenciar tensão de tubo seletivo, hemotórax e obstrução de dispositivo, com reavaliação após intervenção.
+
+### Questão 3 — O significado de eFAST negativo
+
+Paciente instável após atropelamento apresenta dor pélvica intensa e eFAST sem líquido abdominal. Qual interpretação é correta?
+
+A) O resultado exclui sangramento retroperitoneal.  
+B) O resultado exclui qualquer fratura instável da pelve.  
+C) Pode haver hemorragia pélvica retroperitoneal importante apesar de eFAST negativo; examinar perfusão e mecanismo, estabilizar pelve quando indicado e organizar controle de foco.  
+D) FAST negativo dispensa reavaliação circulatória.
+
+**Gabarito: C.**
+
+- **A incorreta:** FAST examina principalmente líquido em compartimentos selecionados e não exclui retroperitônio.
+- **B incorreta:** exame ultrassonográfico abdominal não é teste sensível para lesão do anel pélvico.
+- **C correta:** risco hemorrágico de pelve exige estratégia específica mesmo sem hemoperitônio.
+- **D incorreta:** a primária é dinâmica.
+
+**Mini-revisão:** resultado negativo de exame focado não equivale a ausência de trauma grave.
+
+### Questão 4 — Hemoglobina inicial em hemorragia aguda
+
+Homem de 30 anos, após trauma abdominal fechado, apresenta FC 142, PAS 115, TEC de seis segundos e Hb 13,5 g/dL na chegada. Qual opção é a mais apropriada?
+
+A) A hemoglobina descarta sangramento significativo porque está normal.  
+B) A pressão sistólica preservada exclui hipoperfusão.  
+C) A taquicardia e má perfusão exigem investigação de sangramento e reavaliação, independentemente de Hb inicial relativamente normal.  
+D) Apenas volume urinário isolado confirma a fonte de sangramento.
+
+**Gabarito: C.**
+
+- **A incorreta:** perda aguda pode preceder hemodiluição.
+- **B incorreta:** compensação simpática mantém pressão em fases iniciais.
+- **C correta:** integra mecanismos de choque compensado e necessidade de buscar a causa.
+- **D incorreta:** diurese é componente de perfusão, não localiza lesão.
+
+**Mini-revisão:** não confundir concentração de hemoglobina e volume sanguíneo circulante nos minutos iniciais.
+
+### Questão 5 — Tomografia versus controle hemorrágico
+
+Paciente com trauma abdominal, choque progressivo e FAST positivo para líquido intraperitoneal não responde à ressuscitação inicial. Qual abordagem é mais coerente?
+
+A) Encaminhar sempre à TC antes de consultar cirurgia.  
+B) Organizar controle cirúrgico urgente da provável hemorragia, com hemoterapia simultânea, limitando imagem ao que não atrasa tratamento.  
+C) Realizar três FAST negativos para confirmar o primeiro positivo.  
+D) Administrar cristalóide até normalizar PAS, independentemente de tempo e hemostasia.
+
+**Gabarito: B.**
+
+- **A incorreta:** TC pode atrasar intervenção no instável não respondedor.
+- **B correta:** controle de fonte é decisivo para sobrevida.
+- **C incorreta:** repetição de ultrassom não resolve instabilidade com forte suspeita de sangramento.
+- **D incorreta:** reposição sem hemostasia perpetua perda e coagulopatia.
+
+**Mini-revisão:** no paciente responsivo/estável, TC frequentemente é útil; no não respondedor, a prioridade muda.
+
+### Questão 6 — Índice de choque não é oráculo
+
+Pessoa de 71 anos em betabloqueador chega após queda com PAS 90 mmHg, FC 66, extremidades frias e confusão. Qual afirmação é mais segura?
+
+A) A frequência normal exclui choque porque IC = FC/PAS é inferior a um.  
+B) A ausência de taquicardia não exclui hipoperfusão; medicação e idade modificam compensação.  
+C) A hipotensão pode ser atribuída ao TCE isolado sem busca de outras fontes.  
+D) Não existe necessidade de reavaliar após corrigir glicemia.
+
+**Gabarito: B.**
+
+- **A incorreta:** IC pode perder desempenho em pacientes com limitação de resposta cronotrópica.
+- **B correta:** interpretar sinais globais e tendência.
+- **C incorreta:** fonte extracraniana deve ser investigada.
+- **D incorreta:** reavaliação continua em todo trauma grave.
+
+**Mini-revisão:** nenhum sinal isolado substitui exame circulatório seriado.
+
+### Questão 7 — Ácido tranexâmico
+
+Adulto com trauma e hemorragia importante ocorre há 90 minutos; há intervenção hemostática sendo organizada. Qual alternativa se alinha à diretriz europeia 2023?
+
+A) TXA deve ser adiado até terminar o teste viscoelástico.  
+B) TXA não substitui hemostasia, mas pode ser administrado precocemente dentro de três horas, na indicação correta, com esquema protocolar.  
+C) Qualquer trauma leve deve receber TXA uma vez ao dia por duas semanas.  
+D) O efeito do TXA é independente do tempo, sendo equivalentes 90 minutos e 8 horas.
+
+**Gabarito: B.**
+
+- **A incorreta:** a recomendação não exige esperar teste viscoelástico.
+- **B correta:** benefício está associado ao uso precoce em sangramento relevante; diretriz descreve 1 g IV em 10 minutos seguido de 1 g ao longo de 8 horas em adultos, segundo contexto.
+- **C incorreta:** não é indicação indiscriminada ou profilaxia domiciliar.
+- **D incorreta:** a janela de três horas é importante no trauma hemorrágico.
+
+**Mini-revisão:** TXA é antifibrinolítico adjuvante — **não** é tratamento definitivo da hemorragia.
+
+### Questão 8 — Pelvic binder: onde colocar?
+
+Mulher instável após colisão tem suspeita de fratura pélvica com sangramento. Um estabilizador pélvico será aplicado por equipe treinada. Qual posição é a mais apropriada?
+
+A) Ao redor da cintura na altura das cristas ilíacas.  
+B) No nível dos grandes trocânteres femorais, com ajuste segundo técnica/dispositivo.  
+C) Sobre abdome superior, comprimindo rebordo costal.  
+D) Sobre o pescoço, associado a colar cervical.
+
+**Gabarito: B.**
+
+- **A incorreta:** localização excessivamente alta pode reduzir eficácia.
+- **B correta:** a compressão deve atuar no anel pélvico através dos trocânteres.
+- **C incorreta:** não promove estabilização do anel pélvico.
+- **D incorreta:** confunde equipamento e anatomia.
+
+**Mini-revisão:** não manipular/estressar pelve repetidamente para testar instabilidade.
+
+### Questão 9 — Glasgow e intubação
+
+Traumatizado intubado recebe registro de Glasgow “E2V1M4 = 7” sem explicação, embora sedação e bloqueio muscular impeçam avaliar componentes. Qual a correção?
+
+A) Manter soma absoluta e ignorar fármacos e componente não testável.  
+B) Registrar componentes avaliáveis, especificar verbal não testável pela intubação e interpretar limitação por sedação/bloqueio.  
+C) Considerar Glasgow normal porque foi intubado.  
+D) Excluir TCE por não responder a comando enquanto sedado.
+
+**Gabarito: B.**
+
+- **A incorreta:** inventa precisão e prejudica comparação.
+- **B correta:** documenta componentes e circunstâncias de avaliação.
+- **C incorreta:** a necessidade de tubo não define estado neurológico.
+- **D incorreta:** medicações afetam exame, sem descartar lesão.
+
+**Mini-revisão:** comunicação padronizada permite avaliar tendência real, especialmente antes e após sedação.
+
+### Questão 10 — Criança com pressão ainda normal
+
+Menina de seis anos após colisão apresenta FC 155, PAS 105, TEC 6 s, palidez e sonolência progressiva. Qual raciocínio está correto?
+
+A) A PAS acima de 90 garante estabilidade circulatória pediátrica.  
+B) Hipotensão é frequentemente tardia na criança; sinais clínicos sugerem hipoperfusão e exigem intervenção/investigação urgentes.  
+C) Não há indicação de examinar abdome porque não existe sangramento externo.  
+D) A criança deve receber sempre os mesmos volumes de um adulto.
+
+**Gabarito: B.**
+
+- **A incorreta:** corte de adulto não se aplica mecanicamente a todas as idades.
+- **B correta:** criança pode manter pressão apesar de depleção importante.
+- **C incorreta:** sangramento interno deve ser buscado.
+- **D incorreta:** terapia pediátrica é individualizada por peso/idade.
+
+**Mini-revisão:** comportamento, perfusão e pulsos podem alertar antes da hipotensão.
+
+### Questão 11 — TCE e hipotensão permissiva
+
+Homem de 60 anos com suspeita de TCE grave e choque hemorrágico apresenta PAS 78 mmHg. Qual é a melhor interpretação?
+
+A) A hipotensão permissiva deve ser aplicada universalmente independentemente de lesão encefálica.  
+B) TCE grave demanda evitar hipóxia e hipotensão; a estratégia hemodinâmica precisa proteger perfusão cerebral enquanto se controla a fonte.  
+C) Não investigar hemorragia extracraniana se a tomografia mostrar lesão cerebral.  
+D) A pressão arterial isolada é irrelevante em neurotrauma.
+
+**Gabarito: B.**
+
+- **A incorreta:** risco de lesão cerebral secundária contraindica generalização do alvo restritivo.
+- **B correta:** evita piorar perfusão encefálica sem abandonar hemostasia.
+- **C incorreta:** mecanismos coexistem.
+- **D incorreta:** hipotensão está associada a pior prognóstico.
+
+**Mini-revisão:** suporte cerebral e ressuscitação hemorrágica são ações simultâneas.
+
+### Questão 12 — Trauma gestacional sem sangramento vaginal
+
+Gestante de 30 semanas apresenta dor uterina e contrações após colisão, sem sangramento vaginal. Qual conduta conceitual é adequada?
+
+A) Excluir descolamento de placenta pela ausência de exteriorização sanguínea.  
+B) A avaliação fetal substitui a ressuscitação materna.  
+C) Priorizar estabilização materna, procurar lesões traumáticas e obter avaliação obstétrica/monitorização fetal conforme condição e idade gestacional.  
+D) Evitar qualquer imagem radiológica mesmo se houver lesão materna potencialmente fatal.
+
+**Gabarito: C.**
+
+- **A incorreta:** descolamento pode ser oculto.
+- **B incorreta:** perfusão fetal depende de condições maternas adequadas.
+- **C correta:** combina ABC e investigação obstétrica.
+- **D incorreta:** imagem necessária ao atendimento materno não deve ser omitida automaticamente.
+
+**Mini-revisão:** gravidez modifica exame e riscos, não revoga prioridades de suporte vital.
+
+### Questão 13 — Resposta transitória
+
+Paciente hipotenso melhora por alguns minutos após hemoderivados, mas volta a apresentar choque e necessidade de transfusão crescente. Qual inferência é a mais adequada?
+
+A) Houve cura da hemorragia porque a pressão subiu uma vez.  
+B) A resposta transitória sugere problema persistente; buscar controle de foco urgente, mantendo ressuscitação.  
+C) Apenas repetir pressão duas horas depois é suficiente.  
+D) Encerrar avaliação por eFAST se o primeiro for negativo.
+
+**Gabarito: B.**
+
+- **A incorreta:** restauração temporária da pressão não confirma hemostasia.
+- **B correta:** o padrão exige reavaliar sangramento ativo, outras causas e tratamento definitivo.
+- **C incorreta:** deterioração pede ação imediata.
+- **D incorreta:** FAST tem limitações e pode mudar.
+
+**Mini-revisão:** tendência hemodinâmica e resposta sustentada importam mais que valor isolado.
+
+### Questão 14 — Exposição e temperatura
+
+Durante reavaliação de um politraumatizado que recebe transfusão maciça, a equipe mantém o paciente completamente exposto em sala fria após exame inicial. Qual afirmação é correta?
+
+A) Hipotermia não modifica coagulação e é irrelevante na sala de trauma.  
+B) O E inclui pesquisar lesões e prevenir perda de calor, cobrindo/aquecendo paciente e controlando temperatura durante ressuscitação.  
+C) O aquecimento só é indicado depois da cirurgia.  
+D) Quanto mais frio o doente, melhor a atividade plaquetária.
+
+**Gabarito: B.**
+
+- **A incorreta:** hipotermia prejudica coagulação e piora fisiologia do choque.
+- **B correta:** exposição é dirigida e combinada com proteção térmica.
+- **C incorreta:** aquecimento deve começar cedo.
+- **D incorreta:** temperaturas baixas favorecem coagulopatia.
+
+**Mini-revisão:** prevenir hipotermia é tratamento fisiológico, não apenas conforto.
+
 
 ## 13. Proposta de figuras e recursos originais
 
