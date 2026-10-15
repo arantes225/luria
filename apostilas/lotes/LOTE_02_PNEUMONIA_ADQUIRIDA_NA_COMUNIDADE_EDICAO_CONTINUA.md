@@ -185,7 +185,7 @@ Uma reavaliação clínica precoce observa febre, dispneia, frequência respirat
 
 #### A Posologia comparativa das diretrizes: quadros de decisão para adultos
 
-**Referências primárias específicas:** SBPT, *Recomendações para o manejo da pneumonia adquirida na comunidade*, 2018, quadros 5–6, e ATS/IDSA, *Diagnosis and Treatment of Adults with Community-acquired Pneumonia*, 2019, tabelas 3–4. Foi realizada comparação explícita com a atualização ATS 2025 para duração. A apostila de pneumonia disponível no Drive nesta rodada é **pediátrica** e, portanto, não foi utilizada para selecionar nenhum dos regimes adultos abaixo. **Não se trata de formulário SUS ou prescrição pronta**: diferenças de resistência, apresentações brasileiras, risco renal, alergias, gravidez e disponibilidade precisam ser confirmadas no local de cuidado.
+**Referências primárias específicas:** SBPT, *Recomendações para o manejo da pneumonia adquirida na comunidade*, 2018, quadros 5–6, e ATS/IDSA, *Diagnosis and Treatment of Adults with Community-acquired Pneumonia*, 2019, tabelas 3–4. Foi realizada comparação explícita com a atualização ATS 2025 para duração. **Não se trata de formulário SUS ou prescrição pronta**: diferenças de resistência, apresentações brasileiras, risco renal, alergias, gravidez e disponibilidade precisam ser confirmadas no local de cuidado.
 
 #### A. Ambulatório, sem comorbidades relevantes, sem risco documentado de MRSA/Pseudomonas
 
@@ -286,6 +286,38 @@ A ATS 2025 recomenda **não usar corticosteroide sistêmico rotineiramente na PA
 #### Diagnóstico viral e coinfecção
 
 Em adulto ambulatorial com quadro clínico/laboratorial e imagem compatíveis com PAC viral e sem indício de bactéria, a decisão de não prescrever antibiótico pode ser apropriada em casos selecionados de baixo risco. Em paciente internado com PAC grave e vírus detectado, a ATS recomenda ponderar empiricamente antibiótico pela possibilidade de coinfecção, revisando microbiologia e evolução. Não transportar o mesmo raciocínio a todo indivíduo com gripe leve, nem negar tratamento de bactéria provável porque um teste viral foi positivo.
+
+### 5.5 Teste viral positivo: matriz da ATS 2025 para antibiótico empírico
+
+Um teste positivo para influenza, SARS-CoV-2 ou outro vírus identifica um agente respiratório, mas **não exclui coinfecção bacteriana**. A ATS 2025 diferencia quatro cenários de adultos com **evidências clínicas E DE IMAGEM de pneumonia adquirida na comunidade**. As recomendações são **condicionais**, com certeza de evidência muito baixa, e não equivalem a protocolos automáticos de prescrição no SUS.
+
+| Cenário de PAC com teste viral positivo | Recomendação condicional ATS 2025 | Por que? |
+| --- | --- | --- |
+| Ambulatorial **sem comorbidades** e estável | **Sugerir não prescrever antibiótico empírico** após avaliação clínica | Pode reduzir tratamento desnecessário em pessoa de menor risco |
+| Ambulatorial **com comorbidades** | **Sugerir antibiótico empírico** | A preocupação com coinfecção e evolução desfavorável é maior |
+| Internado com PAC **não grave** | **Sugerir antibiótico empírico** | O risco de não tratar infecção bacteriana associada deve ser ponderado |
+| Internado com PAC **grave** | **Sugerir antibiótico empírico** | Hipoxemia/disfunção orgânica mudam a relação risco-benefício |
+
+**A regra não é “vírus positivo = nunca tratar bactéria”.** No paciente ambulatorial estável sem comorbidades, documentar imagem e sinais vitais, disponibilidade de retorno, razões que diminuem a suspeita de bactéria e plano de reavaliação. Em quem precisa de internação, antibiótico iniciado empiricamente deve ser **reavaliado diariamente**, com culturas quando indicadas, evolução e possibilidade de descalonamento precoce. A positividade viral pode coexistir com pneumonia bacteriana; procalcitonina isolada não é teste absoluto de exclusão de infecção bacteriana.
+
+O referencial é especificamente da **ATS 2025**: não atribuir automaticamente endosso da IDSA, que assinou a diretriz conjunta de 2019. Prescrição, indicações de antiviral, isolamento e doses continuam dependentes de características do paciente, protocolo local e disponibilidade. Este quadro não se aplica indiscriminadamente a toda síndrome gripal sem evidências de PAC.
+
+### 5.6 Ultrassom pulmonar como alternativa diagnóstica condicional
+
+A ATS 2025 sugere ultrassom de pulmão como alternativa aceitável à radiografia torácica **em centros com equipe experiente e protocolo apropriado**. A evidência é de baixa certeza e baseada sobretudo em desempenho diagnóstico, não em superioridade comprovada para desfechos clínicos. Ultrassom identifica melhor **consolidações que se estendem à pleura**; pode deixar de mostrar infiltrados centrais.
+
+| Achado no ultrassom | Interpretação possível | Limitação |
+| --- | --- | --- |
+| Consolidação subpleural com broncograma aéreo dinâmico | Sustenta pneumonia em contexto compatível | Outros processos podem consolidar o parênquima |
+| Linhas B focais e pleura irregular | Padrão inflamatório/intersticial possível | Não identifica etiologia específica |
+| Linhas B difusas bilaterais | Considerar edema cardiogênico e outras doenças | Não chamar automaticamente de PAC bilateral |
+| Líquido pleural e septações | Ajuda a reconhecer derrame complicado | Pode exigir punção ou drenagem e controle de foco |
+| Exame sem achados relevantes | Diminui suspeita de lesão subpleural identificável | **Não exclui lesão pulmonar central** |
+
+Para qualidade, documentar regiões examinadas, operador, contexto, limitações e, se disponível, guardar imagens. Obesidade, curativos, drenos, cicatrizes e dificuldade de mobilização prejudicam a janela acústica. Suspeita de embolia pulmonar, neoplasia, doença central ou achado discordante da gravidade pode exigir outras imagens. **US normal não autoriza alta do paciente hipoxêmico ou instável.**
+
+**Fonte:** American Thoracic Society. *Diagnosis and Management of Community-acquired Pneumonia* (2025). DOI 10.1164/rccm.202507-1692ST, questões 1–2. https://doi.org/10.1164/rccm.202507-1692ST .
+
 
 ## 6. Decisão entre ambulatório, enfermaria e UTI
 
