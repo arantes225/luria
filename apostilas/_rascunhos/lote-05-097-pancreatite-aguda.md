@@ -426,3 +426,203 @@ Para exames reais, confirmar origem, licença editorial/comercial e legendar ach
 Este material é **rascunho parcial**, apesar dos capítulos clínicos e recursos de estudo já produzidos. Faltam: capítulo aprofundado de fluidos com evidências de estudos randomizados e contraindicações; revisão completa de etiologias especiais; algoritmo de necrose infectada e comparação de técnicas de drenagem; descrição de complicações hemorrágicas/vasculares e síndrome compartimental; diagnóstico diferencial com mais casos e interpretação de imagem; seis a dez casos adicionais; questões graduadas por dificuldade e prova; verificação de protocolos e fontes brasileiras específicas; revisão bibliográfica linha a linha; imagens clínicas licenciadas; integração e teste visual no site/PWA; **auditoria de 60 mil caracteres úteis sem repetições**, de autossuficiência e revisão médica especializada.
 
 **Status:** não publicado; não corresponde a protocolo de emergência validado nem a prescrição clínica pronta.
+
+
+
+## 20. O que o ensaio WATERFALL realmente demonstrou sobre fluidos
+
+Durante muitos anos, ensinou-se que o caráter inflamatório com perda de líquidos para o terceiro espaço justificava “hidratação vigorosa” quase universal na pancreatite aguda. A fisiologia da hipovolemia continua correta, mas a inferência terapêutica **mais líquido é necessariamente melhor** foi contestada por evidência randomizada. O ensaio multicêntrico **WATERFALL**, publicado no *New England Journal of Medicine* em 2022, comparou estratégias guiadas de reposição agressiva e moderada com Ringer lactato na apresentação inicial da pancreatite.
+
+No braço agressivo, o protocolo de pesquisa utilizou bolus de 20 mL/kg seguidos de 3 mL/kg/h; no moderado, bolus inicial de 10 mL/kg apenas quando havia hipovolemia, ou nenhum bolus na normovolemia, com manutenção inicial de 1,5 mL/kg/h. **Essas doses descrevem o estudo e não são uma receita universal da LURIA.** O tratamento foi reavaliado nos tempos predefinidos conforme a evolução. A análise interina de 249 pacientes levou à interrupção precoce por diferença de segurança.
+
+O achado principal é instrutivo: **sobrecarga volêmica ocorreu em 20,5% no braço agressivo e 6,3% no moderado**; não houve benefício demonstrado no desfecho de pancreatite moderadamente grave/grave, que ocorreu em 22,1% e 17,3%, respectivamente, diferença sem significância estatística. Interrupção precoce limita interpretações sobre subgrupos e não autoriza tratar um paciente em choque com volumes insuficientes. Em pessoas com insuficiência cardíaca, DRC, idosos frágeis e insuficiência respiratória, a vigilância de congestão é especialmente importante.
+
+A ACG 2024 adotou a formulação **hidratação moderadamente agressiva com reavaliação frequente**, deixando evidente que ela não é sinônimo de uma taxa fixa para qualquer organismo. O raciocínio terapêutico correto combina:
+- **Avaliação inicial de perfusão:** pressão, FC, consciência, extremidades, enchimento capilar, diurese e perdas.
+- **Cristaloide apropriado:** RL preferido quando aplicável, ajustado à condição renal, potássio, estado acidobásico e soluções já em curso.
+- **Balanço hídrico dinâmico:** mensurar entradas/saídas, reavaliar BUN e creatinina, hematócrito e congestão.
+- **Resgate de hipoperfusão real:** hipovolemia/choque ainda exige reposição individualizada e, por vezes, avaliação intensiva; evitar a leitura errada “WATERFALL proibiu bolus”.
+- **Interromper ou diminuir a infusão quando não há benefício ou surge dano:** piora de oxigenação, crepitações, congestão, edema importante ou aumento de pressão intra-abdominal exigem reavaliação.
+
+**Pulo do gato:** as estratégias de fluidos não são “agressiva” versus “nenhuma”. A alternativa moderna é **reposição suficiente guiada por resposta**, protegendo a microcirculação sem congestionar pulmão e abdome.
+
+**Fonte:** de-Madaria E, et al. *Aggressive or Moderate Fluid Resuscitation in Acute Pancreatitis*. *N Engl J Med*. 2022;387:989–1000. DOI 10.1056/NEJMoa2202884. https://pubmed.ncbi.nlm.nih.gov/36103415/ .
+
+## 21. O pâncreas necrosado é diferente de uma coleção infectada
+
+A palavra **necrose** descreve tecido desvitalizado; a palavra **infecção** descreve colonização/invasão por microrganismos com repercussões clínicas. Necrose estéril pode produzir febre, leucocitose, elevação de marcadores inflamatórios e sinais de SIRS sem infecção bacteriana documentada. Do mesmo modo, ausência de febre não exclui infecção em pacientes imunossuprimidos ou já sob antibióticos por outra indicação. O diagnóstico depende da integração do tempo, evolução, tomografia e fontes alternativas.
+
+**Achados que elevam suspeita de infecção:** gás em área de necrose, hemoculturas compatíveis, sepse sem foco alternativo convincente e deterioração clínica após período de estabilização. A presença de gás é relativamente específica, mas não ocorre em toda necrose infectada. A punção fina da coleção para cultura **não é necessária na maioria dos pacientes** segundo a AGA, embora situações particulares de dúvida possam exigir decisão especializada.
+
+### 21.1. Antimicrobianos: quando ajudam e quando podem prejudicar
+
+O raciocínio não é “pancreatite grave = antibiótico”. O antibiótico está indicado para **infecções comprovadas ou fortemente suspeitas**, como colangite, pneumonia concomitante, bacteremia relevante ou necrose infectada. Na necrose estéril, a profilaxia antibiótica de rotina não mostrou benefício suficiente para justificar riscos, incluindo seleção de patógenos resistentes e eventos adversos.
+
+Quando necrose infectada é provável, selecionar antimicrobiano **com atividade contra patógenos esperados e penetração adequada no tecido**, conforme antibiograma local, risco de resistência, alergias e função renal. A literatura internacional menciona carbapenêmicos, quinolonas e esquemas com metronidazol como classes possíveis em contextos adequados, mas essa lista **não constitui indicação de escolha automática** nem prescrição pronta. Antifúngicos profiláticos de rotina não são recomendados.
+
+O antibiótico pode estabilizar temporariamente a paciente enquanto a coleção amadurece, porém necessidade de **drenagem para controle de foco** deve ser avaliada conforme evolução. Uma paciente que apresenta choque séptico persistente pode exigir intervenção mais cedo do que aquela clinicamente estável com coleção encapsulada após quatro semanas.
+
+### 21.2. Drenagem, necrosectomia e a lógica de escalonamento
+
+- **Acesso percutâneo:** permite drenar coleções acessíveis por imagem e é alternativa útil em paciente muito instável ou com extensão lateral/pélvica; pode deixar fístula pancreatocutânea em alguns contextos.
+- **Drenagem endoscópica transmural:** depende de proximidade da coleção ao trato digestivo, parede madura e especialista, sendo opção de primeira linha em WON adequada. Pode requerer intervenção direta posterior sobre debris necróticos.
+- **Necrosectomia endoscópica:** remove tecido desvitalizado pela via endoscópica após acesso e seleção apropriados; apresenta riscos próprios e não é equivalente a simples drenagem de líquido.
+- **Debridamento retroperitoneal minimamente invasivo:** alternativa escalonada quando há localização favorável e falha de medidas anteriores.
+- **Cirurgia aberta:** continua tendo papel em casos não controláveis por estratégias menos invasivas ou em emergências associadas. O fato de ser último passo frequente **não significa que deva ser adiada a qualquer custo em paciente com outra indicação cirúrgica urgente**.
+
+### 21.3. Ducto desconectado: por que algumas coleções voltam
+
+A necrose extensa do corpo pancreático pode interromper continuidade do ducto pancreático principal e deixar segmento distal secretor funcional, originando persistência de drenagem e coleções recorrentes. A **síndrome do ducto pancreático desconectado** muda planejamento de stents, drenagem de longo prazo e eventual intervenção cirúrgica. É diagnóstico relevante em WON recorrente ou fístula persistente, e sua abordagem exige equipe pancreatobiliar experiente. Não deve ser presumida em qualquer pseudocisto.
+
+**Fonte clínica:** AGA, *Management of Pancreatic Necrosis*, https://pubmed.ncbi.nlm.nih.gov/31479658/.
+
+## 22. Complicações sistêmicas: a pancreatite compromete mais que o abdome
+
+### 22.1. Insuficiência respiratória
+
+Hipoxemia na pancreatite pode refletir atelectasia por dor e imobilidade, derrame pleural, sobrecarga hídrica ou lesão inflamatória pulmonar/SDRA. O tratamento exige avaliar a causa e o grau de comprometimento: uma paciente com derrame pleural discreto, eupneica, não é equivalente àquela com ventilação prejudicada e necessidade crescente de oxigênio. A monitorização de oxigenação faz parte da gravidade, não é detalhe de enfermaria.
+
+Na hipótese de SDRA, medidas de suporte ventilatório com equipe de UTI seguem práticas de proteção pulmonar e de balanço hídrico apropriadas. Evitar atribuir toda hipoxemia automaticamente a “pancreatite grave” sem considerar pneumonia, tromboembolismo, sobrecarga de fluidos e cardiopatia.
+
+### 22.2. Lesão renal aguda e choque
+
+A diminuição do volume circulante efetivo pode causar hipoperfusão renal. Porém, lesão tubular, sepse, medicamentos, inflamação sistêmica e aumento de pressão intra-abdominal podem perpetuar a disfunção mesmo após fluidos. BUN e creatinina acompanham tendência e auxiliam ajuste terapêutico; não utilizar grande volume de RL indefinidamente quando a paciente segue oligúrica por necrose tubular estabelecida e já mostra congestão.
+
+A indicação de terapia renal substitutiva depende de complicações como hipercalemia refratária, acidose grave refratária, sobrecarga volêmica ameaçadora e manifestações urêmicas, conforme avaliação nefrológica e estado clínico. Não há um número isolado de creatinina que automaticamente decide diálise para todos.
+
+### 22.3. Síndrome compartimental abdominal
+
+Edema intestinal e retroperitoneal, coleções e reposição volumosa podem elevar pressão intra-abdominal e comprometer perfusão renal, função respiratória e retorno venoso. Suspeitar em distensão acentuada com piora de ventilação, hipotensão, oligúria e balanço hídrico muito positivo. A avaliação objetiva de pressão intra-abdominal e estratégias conservadoras fazem parte do manejo; casos refratários com disfunção orgânica podem exigir **descompressão cirúrgica urgente**. Essa é exceção importante à regra de adiar operações pancreáticas: trata-se de intervenção por **compartimento abdominal**, não necrosectomia precoce indiscriminada.
+
+### 22.4. Hemorragia e complicações vasculares
+
+Enzimas, infecção e inflamação local podem favorecer erosão vascular e formação de pseudoaneurismas, especialmente próximos a vasos esplênicos, gastroduodenais e pancreatoduodenais. Sangramento digestivo ou intra-abdominal tardio, queda súbita de hemoglobina e choque exigem avaliação emergencial. Em pacientes estáveis o suficiente para imagem, angiotomografia pode localizar o foco; a embolização endovascular pode oferecer controle eficaz, mas cirurgia pode ser necessária conforme anatomia e disponibilidade.
+
+Trombose de veias esplênica, porta ou mesentérica também pode ocorrer e deve ser interpretada pelo contexto e extensão. Anticoagulação não é decisão automática para qualquer achado incidental: há risco simultâneo de sangramento por necrose, pseudoaneurisma e procedimentos, exigindo estratégia multidisciplinar.
+
+### 22.5. Consequências tardias endócrinas e exócrinas
+
+Perda de tecido pancreático funcional pode produzir **diabetes após pancreatite** e insuficiência exócrina, com esteatorreia, perda ponderal e deficiência de vitaminas lipossolúveis. Em pessoa que sobreviveu a pancreatite necrosante, o seguimento deve investigar sintomas metabólicos e nutricionais e oferecer testes e tratamento adequados. Nem toda diarreia após pancreatite é insuficiência exócrina; considerar dieta, medicações e outras doenças.
+
+## 23. Incertezas e situações clínicas especiais
+
+### 23.1. Hipertrigliceridemia muito elevada
+
+Na pancreatite associada a TG muito alto, o suporte inicial segue os mesmos pilares: estabilização, analgesia e nutrição planejada. O controle metabólico exige corrigir hiperglicemia, reduzir produção/aporte de TG e tratar causas secundárias. **Não afirmar que aférese de lipoproteínas é mandatória em todo caso**; a evidência e o acesso variam, e sua indicação é selecionada por gravidade, resposta, condições como gestação e equipe especializada. Insulina intravenosa pode ser necessária em cetoacidose/hiperglicemia importante, mas não deve ser apresentada como intervenção universal para paciente normoglicêmico sem ponderar evidências e hipoglicemia.
+
+### 23.2. Pancreatite durante gestação
+
+Na gravidez, cálculos biliares e hipertrigliceridemia devem ser lembrados. Investigação e tratamento consideram idade gestacional, imagem sem radiação quando viável, fisiologia materna e repercussão fetal. Não adiar tratamento de colangite ou choque para evitar qualquer procedimento; urgência materna também ameaça o feto. Decisão sobre intervenção endoscópica ou cirúrgica exige obstetrícia e equipe experiente. O material da LURIA deve evitar duplicar de modo integral os capítulos de litíase, vias biliares e urgências obstétricas já existentes, mas pode remeter a eles durante integração.
+
+### 23.3. Crianças e adolescentes
+
+Pancreatite pediátrica tem distribuição etiológica diferente da adulta, incluindo causas genéticas, traumáticas, anatômicas e farmacológicas. Classificação, fluidos e critérios nutricionais precisam de validação pediátrica, e não devem ser reproduzidos automaticamente de estudos feitos em adultos. O presente tema 097 prioriza o adulto, deixando uma seção de diferenças clínicas essenciais e referências para expansão pediátrica futura se a grade curricular justificar.
+
+### 23.4. Idosos e pessoas com insuficiência cardíaca
+
+A apresentação pode ser menos típica, a reserva de órgãos menor e o risco de sobrecarga maior. Dor menos exuberante não implica doença leve. Reposição de fluidos deve considerar ecocardiograma/ultrassom à beira leito quando disponíveis, congestão, balanço e perfusão, evitando fórmulas fixas. Também é preciso revisar risco de medicamentos, delirium, aspiração, imobilidade e alta com apoio domiciliar.
+
+## 24. Casos de maior complexidade para treino do internato
+
+### Caso F — Reposição hídrica com descompensação pulmonar
+
+**Paciente:** homem de 77 anos com insuficiência cardíaca e pancreatite aguda biliar confirmada, inicialmente com PA 112/70 mmHg, FC 94 bpm, creatinina 1,4 mg/dL e sem sinais claros de choque. Recebe infusão de grande volume sem reavaliação. Nas horas seguintes, desenvolve dispneia, crepitações e saturação menor, com balanço muito positivo.
+
+**Raciocínio:** a pancreatite pode causar perda intravascular, mas a insuficiência cardíaca reduz reserva e a reposição em excesso pode precipitar edema pulmonar. O problema não se resolve apenas com “mais soro porque a ureia está alta”. **Investigação:** reavaliar perfusão, sinais de congestão, função renal, oxigenação e causas concorrentes. **Conduta:** interromper progressão cega de fluidos, tratar congestão conforme gravidade e manter suporte dirigido à perfusão, com equipe de emergência/UTI quando necessário. **Por que importa:** o dano da sobrecarga é real e foi demonstrado no WATERFALL.
+
+### Caso G — Necrose com sepse após melhora inicial
+
+**Paciente:** mulher de 59 anos internada há 16 dias por pancreatite necrosante. Após período de estabilidade, apresenta febre, hipotensão e bacteremia, com gás em coleção peripancreática. A tomografia demonstra necrose ainda sem encapsulamento completo.
+
+**Hipótese:** necrose infectada com sepse, embora outras fontes devam ser avaliadas. **Exames:** culturas pertinentes, perfil de disfunção e caracterização da coleção, sem atraso de suporte. **Conduta:** antibiótico com cobertura apropriada e equipe multidisciplinar para decidir controle do foco, inclusive drenagem precoce se instabilidade/refratariedade, sem impor debridamento aberto de rotina. **Pulo do gato:** idealmente aguardar parede madura **não é sinônimo de atrasar controle de infecção que ameaça a vida**.
+
+### Caso H — Microlitíase oculta em “pancreatite idiopática”
+
+**Paciente:** mulher de 43 anos, segundo episódio de pancreatite, sem consumo alcoólico relevante nem TG elevado; US transabdominal não demonstra cálculos e não há colangite. Prontuário rotula caso como idiopático definitivo.
+
+**Raciocínio:** exames iniciais podem não identificar lama biliar/microlitíase. **Investigação:** revisar exames e indicativos de origem biliar; conforme acesso e decisão especializada, utilizar EUS e/ou CP-RM. **Conduta:** evitar CPRE puramente diagnóstica na ausência de indicação terapêutica; selecionar prevenção definitiva quando a origem for estabelecida e pertinente. **Pulo do gato:** o diagnóstico etiológico evolui com a qualidade do método, não apenas com o primeiro ultrassom negativo.
+
+### Caso I — Pseudocisto versus WON
+
+**Paciente:** após cinco semanas de pancreatite grave, TC revela coleção encapsulada de 9 cm com material sólido heterogêneo e componentes líquidos, associada a vômitos e saciedade precoce.
+
+**Hipótese:** WON sintomática, não pseudocisto homogêneo. **Exames:** TC/ressonância para caracterizar conteúdo e relação com órgãos, avaliação nutricional e sinais de infecção. **Conduta:** discutir drenagem/debridamento conforme anatomia e sintomas, de preferência via minimamente invasiva em centro experiente. **Pulo do gato:** conteúdo **sólido necrótico** é mais importante que tamanho para distinguir WON de pseudocisto.
+
+## 25. Questões de prova com integração fisiológica e cirúrgica
+
+### Questão 7 — Fluido em pancreatite
+
+Em pancreatite aguda, qual leitura do estudo WATERFALL é a mais adequada?
+
+A. O estudo demonstrou menor mortalidade com volume agressivo para todos.
+B. A reposição moderada apresentou menor sobrecarga que a agressiva, sem benefício demonstrado de desfecho na estratégia agressiva.
+C. Líquidos IV devem ser evitados em qualquer paciente com pancreatite.
+D. O estudo provou que todo adulto deve receber taxa fixa idêntica de RL independentemente de choque.
+E. O objetivo do estudo foi substituir analgesia por fluidoterapia.
+
+**Gabarito: B.** **A** contradiz o resultado; **B** descreve segurança e ausência de eficácia superior demonstrada; **C** ignora tratamento de hipovolemia; **D** ignora titulação e diferenças clínicas; **E** confunde intervenções. **Mini-revisão:** volume suficiente e reavaliação são mais importantes que “hidratar o máximo possível”.
+
+### Questão 8 — Necrose infectada
+
+Paciente com necrose pancreática apresenta nova sepse e gás na coleção. Qual conduta conceitual está correta?
+
+A. Antibiótico profilático desde o início em toda necrose teria evitado obrigatoriamente infecção.
+B. Considerar necrose infectada, tratar sepse e discutir drenagem/controle de foco apropriados à estabilidade e maturidade da coleção.
+C. Ignorar o foco porque debridamento só pode ocorrer exatamente no dia 28.
+D. Fazer necrosectomia aberta imediata em todos, sem considerar drenagem.
+E. Usar antifúngico profilático universal.
+
+**Gabarito: B.** **A** é afirmação não sustentada; **B** integra infecção e controle de foco; **C** transforma recomendação de adiamento eletivo em regra absoluta perigosa; **D** ignora step-up; **E** ignora ausência de indicação rotineira. **Mini-revisão:** esperar encapsulamento se houver segurança, mas não ignorar choque séptico.
+
+### Questão 9 — Coleção pancreática
+
+Paciente após cinco semanas de pancreatite necrosante apresenta coleção encapsulada com componentes sólidos e líquidos e compressão gástrica. Qual nome é mais adequado?
+
+A. Coleção peripancreática aguda simples, sem necrose.
+B. Pseudocisto puro.
+C. Necrose encapsulada (*walled-off necrosis*).
+D. Cisto congênito de colédoco.
+E. Divertículo duodenal.
+
+**Gabarito: C.** **A** não corresponde à fase temporal; **B** não corresponde ao conteúdo necrótico heterogêneo; **C** integra necrose e parede organizada; **D/E** são diagnósticos anatômicos distintos sem apoio no caso. **Mini-revisão:** tempo + conteúdo definem o nome correto na Atlanta revisada.
+
+### Questão 10 — Quando repetir TC?
+
+Adulto com pancreatite leve diagnosticada por dor e lipase elevada apresenta melhora rápida, sem novas alterações clínicas. Qual indicação de TC contrastada é mais apropriada?
+
+A. TC obrigatória na admissão para confirmar doença.
+B. TC diária até normalização da lipase.
+C. Não é necessária de rotina; reservar para dúvida diagnóstica ou evolução/complicação que justifique.
+D. TC apenas para calcular BISAP.
+E. TC obrigatória para autorizar alimentação oral.
+
+**Gabarito: C.** **A** e **B** usam exame sem pergunta clínica; **C** alinha-se a ACG 2024; **D** confunde escore clínico e imagem; **E** aplica jejum/imagem como condição sem base. **Mini-revisão:** exames devem mudar diagnóstico ou conduta, não servir como ritual.
+
+## 26. Checagem integrada do raciocínio — dez erros que a LURIA não deve perpetuar
+
+| Erro comum | Substituição correta e justificativa |
+|---|---|
+| “Qualquer lipase alta é pancreatite.” | Dois de três critérios e contexto clínico; elevações inespecíficas existem |
+| “Lipase mais alta significa forma mais grave.” | Gravidade vem de falência orgânica persistente e complicações |
+| “TC obrigatória nos primeiros minutos.” | Diagnóstico clínico/enzimático pode bastar; imagem depende da pergunta |
+| “Ringer lactato em grandes volumes é sempre seguro.” | Reposição com reavaliação, evitando congestão e lesão adicional |
+| “O pâncreas deve descansar em jejum por dias.” | Alimentação oral precoce conforme tolerância é preferível na forma leve |
+| “Pancreatite biliar exige CPRE imediata.” | Reservar CPRE precoce principalmente a colangite/obstrução terapêutica indicada |
+| “Qualquer necrose exige antibiótico.” | Necrose estéril não requer profilaxia antimicrobiana de rotina |
+| “Qualquer coleção é pseudocisto.” | Diferenciar APFC, ANC, pseudocisto e WON pela fase e conteúdo |
+| “Necrose é sempre grave na Atlanta.” | Grave é falência orgânica persistente >48 horas |
+| “Necrosectomia aberta é primeira linha.” | Priorizar drenagem/step-up quando indicado e factível |
+
+## 27. Bibliografia comentada e trilha de verificação científica
+
+1. **ACG 2024** — diagnóstico, hidratação moderada, preferência por Ringer lactato, reavaliação, nutrição precoce, CPRE e colecistectomia. DOI 10.14309/ajg.0000000000002645. https://pubmed.ncbi.nlm.nih.gov/38857482/. **Principal guia de manejo do presente manuscrito.**
+2. **WATERFALL 2022** — ensaio randomizado que demonstrou maior sobrecarga volêmica com reposição agressiva, sem melhor desfecho clínico demonstrado. https://pubmed.ncbi.nlm.nih.gov/36103415/.
+3. **Atlanta revisada** — Banks PA et al., *Gut*. 2013;62:102–111. https://gut.bmj.com/content/62/1/102. **Fonte principal para classificação e terminologia de coleções.**
+4. **AGA 2019/2020, necrose** — suporte nutricional, antibióticos somente em infecção, seleção de drenagem e adiamento de debridamento quando possível. https://pubmed.ncbi.nlm.nih.gov/31479658/.
+5. **Arquivos de Gastroenterologia 2026, lama biliar** — revisão narrativa publicada em periódico brasileiro sobre importância de EUS/CPRM e etiologia oculta, sem representar consenso oficial do Brasil. https://www.scielo.br/j/ag/a/VzKJwZBQfs5GZj3rbqBxzvN/abstract/?lang=pt.
+6. **AGA 2018, fase inicial** — evidência e estratégias de nutrição, antimicrobianos e tratamento na primeira janela. https://gastro.org/clinical-guidance/initial-management-of-acute-pancreatitis-ap/.
+7. **Publicações brasileiras específicas ainda a incorporar:** AMB, Projeto Diretrizes, *Terapia nutricional na pancreatite aguda* (confirmar data, autores e vigência antes de aplicar); publicações do CBCD e de centros nacionais especializados sobre cirurgia digestiva/ACERTO, distinguindo diretrizes de revisões narrativas. **Não declarar que já houve validação integral de protocolo brasileiro.**
+
+### Observação editorial
+
+Ainda é necessário uniformizar os capítulos e verificar sobreposições entre itens 1–19 e aprofundamentos 20–26; conferir critérios de elegibilidade de doses/antimicrobianos/procedimentos em protocolos brasileiros e produzir recursos didáticos visuais com curadoria central. Nenhuma numeração de caráter técnico ou bibliografia substitui **revisão clínica independente** e teste de autossuficiência. **Status: rascunho em revisão.**
