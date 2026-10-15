@@ -140,6 +140,38 @@ Antes e durante o tratamento, documentar peso, sinais/sintomas, medicações con
 
 **Tratamento diretamente observado (TDO)** é estratégia organizada de apoio humano à conclusão da terapia, adaptada às circunstâncias da pessoa. Envolver equipe multiprofissional, assistência social e estratégias de busca ativa é parte do tratamento. Vulnerabilidade socioeconômica deve disparar medidas de suporte, não punição, culpa ou abandono do cuidado.
 
+
+### 9.3 Quadro operacional de doses fixas combinadas: adultos com TB sensível
+
+**Fonte primária conferida diretamente:** Ministério da Saúde, *PCDT de Manejo da Infecção pelo HIV em Adultos — Módulo 2: Coinfecções e Infecções Oportunistas*, edição 2024, **Quadro 4, páginas impressas 27–28** (PDF de 137 páginas). A tabela é apresentada para **adultos**; o mesmo documento aponta 2RHZE/4RH como tratamento básico de TB sensível, e o Manual de Recomendações de Controle da Tuberculose confirma as quatro faixas. As informações abaixo foram **reestruturadas e explicadas de forma original**, não são imagem da tabela oficial.
+
+O esquema **2RHZE/4RH** associa uma fase intensiva de dois meses e uma fase de manutenção de quatro meses. A apresentação fixa RHZE possui **150 mg de rifampicina + 75 mg de isoniazida + 400 mg de pirazinamida + 275 mg de etambutol por comprimido**. A manutenção pode usar RH **150/75 mg** ou **300/150 mg**. Para contar comprimidos, é indispensável identificar **a concentração escrita na embalagem**.
+
+| Peso atual do adulto | RHZE 150/75/400/275 mg por dia: fase intensiva de 2 meses | RH 150/75 mg por dia: manutenção de 4 meses | Alternativa equivalente em RH 300/150 mg |
+| --- | ---: | ---: | --- |
+| 20 a 35 kg | **2 comprimidos** | **2 comprimidos** | 1 comprimido de 300/150 |
+| 36 a 50 kg | **3 comprimidos** | **3 comprimidos** | 1 comprimido de 300/150 **mais** 1 de 150/75 |
+| 51 a 70 kg | **4 comprimidos** | **4 comprimidos** | 2 comprimidos de 300/150 |
+| Acima de 70 kg | **5 comprimidos** | **5 comprimidos** | 2 comprimidos de 300/150 **mais** 1 de 150/75 |
+
+**Limites desta tabela:** aplica-se ao quadro de **adultos com TB sensível elegíveis ao esquema básico**, nas apresentações farmacêuticas explicitadas. Não cobre crianças, peso inferior a 20 kg, TB resistente, doença renal/hepática com ajustes, intolerância a fármacos, interações que demandem substituição da rifampicina nem esquemas especiais. Em vez de arredondar dose para baixo sem protocolo, **confirmar peso, faixa, concentração, dispensação e elegibilidade** a cada reavaliação. O esquema de TB meníngea ou osteoarticular sensível tem duração de manutenção diferente, descrita abaixo. A prescrição operacional depende de avaliação médica, farmácia e normas do serviço.
+
+**Por que é perigoso trocar apresentações sem calcular?** Um comprimido de RH **300/150 mg** fornece a mesma quantidade de rifampicina e isoniazida que **dois comprimidos de 150/75 mg**. Se o paciente que precisa de quatro comprimidos 150/75 passar a tomar quatro comprimidos 300/150, a exposição de ambas as drogas será duplicada. Do mesmo modo, quem pesa **exatamente 70 kg** está na faixa de **51 a 70 kg**, enquanto quem pesa 71 kg passa à faixa superior do quadro. Uma tabela de peso não é opcional em prova nem na dispensação.
+
+#### 9.3.1 Exercícios resolvidos de dispensação
+
+**Exercício A — adulto de 34 kg, TB pulmonar sensível:** fase intensiva 2 comprimidos RHZE 150/75/400/275 por dia por dois meses. Isso corresponde, por dia, a 300 mg de rifampicina, 150 mg de isoniazida, 800 mg de pirazinamida e 550 mg de etambutol. Depois, manutenção 2 comprimidos RH 150/75 por dia por quatro meses (ou 1 comprimido RH 300/150 por dia). **Raciocínio:** usar a faixa de 20–35 kg e respeitar a apresentação; não calcular todos os fármacos separadamente quando a combinação fixa é elegível.
+
+**Exercício B — adulto de 49 kg, TB pulmonar sensível:** a faixa é 36–50 kg; correspondem **3 comprimidos RHZE** ao dia na fase intensiva, seguidos de **3 comprimidos RH 150/75** ao dia na manutenção. A alternativa RH 300/150 + RH 150/75 mantém a mesma dose diária dos dois componentes. **Armadilha:** a quantidade de comprimidos da manutenção muda se mudar a concentração, mas a dose total de R e H não muda.
+
+**Exercício C — pessoa de 75 kg com TB sensível:** o quadro do PCDT de HIV/coinfecções 2024 e o Manual do Ministério da Saúde usam **5 comprimidos** na fase RHZE e **5 comprimidos RH 150/75** na manutenção, com alternativa de 2 comprimidos RH 300/150 + 1 RH 150/75. Uma página antiga da Linha de Cuidado do MS, baseada em referência de 2018, apresenta a categoria “acima de 50 kg” com **4 comprimidos**, divergindo do quadro nacional mais completo. **Na edição da LURIA, prevalece a tabela ministerial de quatro faixas confirmada no PCDT 2024 e no Manual**, e a diferença histórica permanece documentada para auditoria. A equipe de referência deve confirmar a orientação operacional mais recente.
+
+#### 9.3.2 Meningoencefálica e osteoarticular sensível: 2RHZE/10RH
+
+O mesmo PCDT do Ministério da Saúde, **Quadro 5 (páginas impressas 28–29)**, orienta em adultos com comprometimento do sistema nervoso central ou TB osteoarticular sensível uma fase intensiva **RHZE de 2 meses**, seguida de **RH por 10 meses**, totalizando **12 meses**. As apresentações e faixas de peso básicas são as mesmas do quadro sensível, mas a **duração não é de 2RHZE/4RH**. A forma meníngea requer avaliação hospitalar e corticosteroide adjuvante segundo protocolo específico; a escolha e redução do corticoide dependem da gravidade e de contraindicações. Uma pessoa com doença neurológica progressiva deve receber investigação e suporte oportunos, não apenas “mais meses de comprimido”.
+
+Essa regra **não se aplica à TB resistente**: um caso com resistência à rifampicina e SNC, por exemplo, não é candidato automático a BPaLM devido às exclusões da Nota nº 2/2026. As duas decisões — local da doença e padrão de resistência — precisam ser avaliadas antes de selecionar regime.
+
 ## 10. TB drogarresistente: o que mudou em outubro de 2026?
 
 Na classificação de resistência, separar **resistência à rifampicina (RR-TB)**, **multirresistência (MDR-TB, envolvendo pelo menos rifampicina e isoniazida)** e padrões adicionais de resistência que condicionam opções terapêuticas. Um teste molecular inicial com marcador de rifampicina exige confirmação/classificação e referência programática; não escolher esquema especial por adivinhação.
@@ -162,6 +194,24 @@ O teste imunológico positivo pode indicar infecção, porém antes de tratament
 O SUS contempla diferentes regimes de tratamento preventivo, incluindo **3HP** (rifapentina e isoniazida, dose **semanal por três meses**, total de 12 doses), **4R** (rifampicina diária por quatro meses) e regimes com isoniazida de maior duração, conforme idade, peso, interações, resistência do caso fonte e notas nacionais. Não há um regime indicado para todos: rifamicinas interagem com antirretrovirais e outros medicamentos; a avaliação de crianças, gestantes e pacientes com hepatopatia é específica. Se houver sintomas sugestivos de TB ativa em contato domiciliar, não iniciar 3HP sem investigar doença.
 
 **Fluxo de contato:** identificar exposição relevante → avaliar sintomas/risco e procurar TB ativa → investigar infecção latente em população elegível por PT/IGRA segundo norma → decidir tratamento preventivo com orientação sobre efeitos adversos e adesão → registrar início, completar doses e acompanhar. **BCG** reduz risco de formas graves em crianças (especialmente miliar e meníngea) e é aplicada conforme calendário; não substitui rastreio de contatos nem garante ausência de TB pulmonar.
+
+
+### 11.1 Regimes preventivos quantificados em adultos: não confundir com RHZE
+
+**Fonte conferida:** Ministério da Saúde, *PCDT para Manejo da Infecção pelo HIV em Adultos — Módulo 2*, **Quadro 3, página impressa 25**, e orientações ministeriais para 3HP. Todos os tratamentos preventivos pressupõem **exclusão apropriada de TB ativa**. Os esquemas abaixo são apresentados como educação médica, não como autorização de prescrição autônoma: identificar elegibilidade, peso, risco de hepatotoxicidade, caso fonte, gestação, imunossupressão e interações com TARV/anticoncepcionais antes de escolher.
+
+| Sigla | Fármacos / exemplo de posologia adulta em quadro oficial | Duração e número de doses | Implicações clínicas |
+| --- | --- | --- | --- |
+| **3HP** | Isoniazida **900 mg** + rifapentina **900 mg**, **uma vez por semana**, adultos ≥30 kg e elegíveis | 12 tomadas semanais em **12 a 15 semanas** | Regime curto; verificar interações medicamentosas e **evitar na gestação** segundo tabela nacional consultada |
+| **4R** | Rifampicina **10 mg/kg/dia**, até **600 mg/dia** em esquema preventivo adulto | 4 meses; 120 doses, admitindo janela operacional nacional | Alternativa em determinados riscos de hepatotoxicidade ou intolerância a H, ressalvadas resistências do caso fonte e interações |
+| **6H** | Isoniazida **5–10 mg/kg/dia**, até **300 mg/dia** | 180 doses diárias, conclusão em 6–9 meses | Curso mais longo; considerar hepatotoxicidade/neuropatia e adesão |
+| **9H** | Isoniazida **5–10 mg/kg/dia**, até **300 mg/dia** | 270 doses diárias, conclusão em 9–12 meses | Outro curso de H, incluindo indicações específicas; monitorar segurança |
+
+**Apresentação de combinação fixa recente:** o MS introduziu comprimido **rifapentina 300 mg + isoniazida 300 mg** para determinadas condições de 3HP, de modo que **três comprimidos** da apresentação podem fornecer a dose semanal adulta de 900 mg de cada fármaco. Não confundir essa apresentação **300/300 mg** com comprimidos isolados de rifapentina 150 mg ou com a dose fixa **RH 300/150 mg** utilizada para tratamento de TB **ativa**. Em crianças, esquemas de prevenção por peso, formas dispersíveis e idade devem ser tratados em tabela específica validada, **não** com a dose adulta.
+
+**Exemplo:** adulto de 58 kg, assintomático, contato de TB sensível e com ILTB diagnosticada após avaliação adequada, pode ter **3HP** como uma das opções elegíveis: H 900 mg + P 900 mg **semanalmente**, não diariamente. A escolha concreta depende de interações e contraindicações; caso o paciente tenha doença ativa, esse esquema não substitui RHZE.
+
+**Armadilha da resistência do caso fonte:** em contato de pessoa com TB resistente a rifampicina ou isoniazida, não prescrever automaticamente 3HP sem considerar o padrão de sensibilidade e o protocolo de tratamento preventivo indicado. Da mesma forma, não associar 3HP a qualquer esquema ARV sem checar interação: rifapentina é indutora enzimática, embora menos persistente que rifampicina em determinadas situações. Em pessoas vivendo com HIV e CD4 muito baixo, o teste imunológico negativo não é exigência automática para dispensar prevenção quando a indicação clínica/programática é atendida; o PCDT de HIV especifica grupos elegíveis.
 
 ## 12. Populações especiais e armadilhas
 
@@ -401,6 +451,15 @@ A coinfecção modifica epidemiologia, apresentação e interpretação dos test
 
 Em HIV avançado com TB disseminada suspeita, amostras de outros sítios, testes de urina específicos quando disponíveis e avaliação de outras infecções oportunistas podem ser necessários. A escolha depende de protocolos atualizados, acesso e gravidade; nenhum teste único resolve todas as apresentações.
 
+
+### 19.1 Início de TARV e interação com rifampicina: regra nacional com exceção
+
+O **PCDT HIV Adultos — Módulo 2 (edição 2024)** recomenda que, em coinfecção TB-HIV **sem meningite tuberculosa**, a TARV seja iniciada **em até sete dias após o início do tratamento da tuberculose**, independentemente da contagem de CD4. O adiamento indefinido aumenta riscos associados à imunossupressão. Para **meningite tuberculosa**, recomenda início **preferencialmente entre a quarta e a sexta semana** de tratamento específico, ponderando risco de síndrome inflamatória de reconstituição imune no sistema nervoso central e condições de seguimento especializado. Esse é o referencial ministerial **efetivamente verificado** neste manuscrito; confirmar publicação posterior antes da edição final.
+
+**Interação central:** a **rifampicina induz enzimas metabolizadoras** e pode diminuir exposição de antirretrovirais. A edição 2024 do PCDT cita tenofovir/lamivudina/dolutegravir como opção preferencial inicial e, ao associar rifampicina, prevê **dolutegravir 50 mg a cada 12 horas**, retornando ao regime habitual somente **duas semanas após o término da rifampicina**, nos casos elegíveis. Isso **não** significa dobrar qualquer antirretroviral indiscriminadamente. Genotipagem, resistência, doença renal, gestação, interações e esquema prévio podem modificar o regime, e a avaliação deve ser feita pela equipe de HIV/TB.
+
+**Contraste com TB-DR:** BPaL/BPaLM não inclui rifampicina, porém bedaquilina, pretomanida, linezolida e moxifloxacino têm interações e toxicidades próprias; **efavirenz** pode reduzir a exposição a determinados componentes, conforme Nota 2/2026. A decisão sobre TARV na TB-DR é coordenada com serviço especializado, não obtida por substituir mecanicamente rifampicina por outra droga.
+
 ## 20. Infecção latente: prevenir adoecimento sem confundir pessoa infectada com doente
 
 ### 20.1 Como interpretar a prova tuberculínica/IGRA
@@ -600,6 +659,13 @@ D. IGRA anual é o único teste de cura.
 8. Ministério da Saúde. **Notificação compulsória / SINAN**, https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/
 
 **Status do manuscrito:** pelo menos **dez casos clínicos** e **dezoito questões comentadas** no conjunto; permanecem pendentes tabelas definitivas de doses RHZE/RH/ILTB conforme faixa de peso e apresentação, situações especiais de TB/HIV, revisão por especialista, análise de redundância e de autossuficiência, direitos das figuras, conversão \`content.json\` e validação desktop/PWA. **Não considerar certificado ou publicado.**
+
+
+### Nota de auditoria de doses — fontes e divergência
+
+As faixas RHZE/RH foram conferidas nas páginas impressas 27–29 do PCDT de HIV/coinfecções (Ministério da Saúde, 2024; URL do PDF: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/PCDT_HIV_Modulo_2_2024_eletrnicoISBN.pdf/@@display-file/file) e comparadas com o Manual de Recomendações para o Controle da Tuberculose (2ª edição). Regimes preventivos foram verificados na página impressa 25 do mesmo PCDT, com atualização de apresentação fixa 3HP do Ministério da Saúde (2025): https://www.gov.br/aids/pt-br/assuntos/noticias/2025/abril/brasil-amplia-prevencao-e-aposta-em-tratamentos-inovadores-para-eliminar-a-tuberculose. A Linha de Cuidado HIV na APS ainda exibe tabela de peso simplificada >50 kg, baseada em material antigo: https://linhasdecuidado.saude.gov.br/portal/hiv/unidade-de-atencao-primaria/planejamento-terapeutico/. Essa divergência foi registrada, não ocultada.
+
+**Limitação**: esse quadro é adequado para formação e revisão de prova em adultos com formulações específicas e documentação disponível em 14/10/2026; ele **não é um módulo de prescrição validado**, não resolve todos os casos de alergia, gestação, peso pediátrico, insuficiência renal/hepática, HIV com TARV atípica, esquemas com rifabutina, resistência ou apresentação indisponível. A implantação clínica requer conferência por farmacêutico e médico do programa TB.
 
 ## Próximas ampliações mandatórias
 Expandir para fisiologia normal, epidemiologia, fisiopatologia completa, critérios diagnósticos quantitativos verificados, algoritmos diferenciados por gravidade e populações, tabelas de doses com fontes primárias atuais, contraindicacões, acompanhamento, prevenção, complicações, casos clássicos/atípicos/emergenciais e questões com justificativa de cada alternativa. Conferir licença das imagens; utilizar somente fila Admin, sem embutir arquivos clínicos não aprovados. Revisar ≥60.000 caracteres didáticos úteis e renderização desktop/PWA antes de qualquer index.html ou catálogo.
