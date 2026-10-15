@@ -454,6 +454,28 @@ O benefício populacional da BCG depende de vacinação oportuna, mas a prevenç
 **Fontes:** Ministério da Saúde, *Prevenção* (16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao ; *Diagnóstico* (16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico . Os fluxos específicos de idade, repetição de PT/IGRA e doses de terapia preventiva devem seguir a norma brasileira vigente e não foram substituídos por um algoritmo universal nesta apostila.
 
 
+### 6.5 Infecção por M. tuberculosis em criança: 3RH preventivo NÃO é RHZ para doença ativa
+
+A **Nota Informativa nº 6/2024 do Ministério da Saúde** incorporou uma opção de tratamento preventivo da infecção latente por tuberculose (ILTB) em crianças menores de dez anos: **rifampicina + isoniazida em comprimido dispersível de dose fixa (RH 75/50 mg)**, quando o paciente é elegível. O documento prevê um regime de **90 doses diárias** a completar dentro de aproximadamente **três a cinco meses**; ele é diferente do regime de **RH na manutenção da TB ativa**, ainda que o nome dos componentes e a concentração do comprimido sejam iguais.
+
+| Pergunta clínica | Tratamento preventivo de ILTB (exemplo 3RH pediátrico) | Tratamento da doença ativa (exemplo 2RHZ/2RH pediátrico elegível) |
+| --- | --- | --- |
+| Existe TB ativa após avaliação apropriada? | **Não**; é preciso excluí-la antes de TPT | **Sim**, estabelecida clínica/microbiologicamente pelo fluxo |
+| Medicamentos na fase inicial | **R + H**, em apresentação RH elegível | **R + H + Z** (<10 anos) na fase intensiva |
+| Finalidade | Evitar progressão de infecção para doença | Tratar micobactérias na doença ativa |
+| Duração citada neste exemplo | **90 doses diárias**, concluídas em janela de 3–5 meses | **2RHZ/2RH** (quatro meses) só em TB sensível não grave e elegível; outros casos, em geral, seis meses ou mais |
+| Exposição a caso-fonte resistente | Muda a elegibilidade e o esquema preventivo | Exige avaliação de sensibilidade e do tratamento de doença |
+| Relação com HIV/TARV | Interações podem **contraindicar a combinação RH em uso preventivo** com certos antirretrovirais | Exige planejamento do tratamento da TB ativa e da TARV, com fluxo próprio |
+
+**Não concluir “se a criança usa dois remédios, deve ter TB latente”**: na fase de manutenção da doença ativa, usa-se RH após fase intensiva adequada. Da mesma forma, não começar RH preventivo apenas porque existe contato domiciliar quando a criança apresenta febre persistente, perda ponderal ou doença radiológica não investigada.
+
+**Interações importantes:** a nota ministerial sobre TPT pediátrico aponta restrições para essa combinação RH quando a criança vive com HIV e utiliza determinados antirretrovirais, incluindo esquemas com **lopinavir/ritonavir, darunavir, raltegravir, dolutegravir ou nevirapina**, entre outros contextos. Isso não significa que a criança não possa receber prevenção: é necessário definir **outra estratégia apropriada** e coordenar com o serviço HIV/TB. A matéria do Ministério da Saúde cita preferência por **isoniazida por nove meses/270 doses** nesses cenários, quando apropriado; o tratamento deve ser determinado por protocolo e situação de resistência da fonte.
+
+**Contraexemplo de prescrição:** criança de oito anos, contato domiciliar de TB pulmonar ativa com resistência documentada à isoniazida. É inadequado escolher automaticamente 3RH como se a infecção tivesse sensibilidade comprovada. A avaliação especializada considera o caso-fonte, teste de contato, possibilidade de doença ativa e prevenção indicada.
+
+**Fonte:** Ministério da Saúde, *Saúde recomenda dose fixa combinada de medicamentos para prevenção da tuberculose em crianças*, 04/07/2024: https://www.gov.br/aids/pt-br/assuntos/noticias/2024/julho/saude-recomenda-dose-fixa-combinada-de-medicamentos-para-prevencao-da-tuberculose-em-criancas . Este quadro distingue **finalidade e esquema**, não constitui autorização para copiar a dosagem de TB ativa e aplicá-la como TPT.
+
+
 ## 7. HIV, populações especiais, vigilância e armadilhas
 
 ### 7.1 Populações especiais e armadilhas
@@ -620,6 +642,42 @@ A TB em pessoa menor de dez anos costuma ser paucibacilar: coletar material com 
 **Fontes verificadas:** Ministério da Saúde, *Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS*, especialmente páginas 1–3, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file ; Ministério da Saúde, página *Tratamento* (atualizada em 16/03/2026), https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Portaria SCTIE/MS nº 43/2019, incorporação das apresentações pediátricas RHZ/RH dispersíveis, https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2019/prt0043_09_09_2019.html . As tabelas acima foram criadas para a apostila, sem reprodução de figuras oficiais.
 
 
+### 7.7 Contagem dos comprimidos dispersíveis em menores de 10 anos: tabela por peso e exame de segurança
+
+Em crianças **menores de dez anos** e com peso de **4 kg a menos de 25 kg**, o Ministério da Saúde disponibiliza apresentações pediátricas dispersíveis, diferentes da dose fixa combinada de adulto. Para TB **sensível e elegível ao esquema etário**, utiliza-se na fase intensiva **RHZ 75/50/150 mg por comprimido** (rifampicina 75 mg, isoniazida 50 mg, pirazinamida 150 mg); na manutenção, **RH 75/50 mg por comprimido**. A quantidade diária depende do peso **medido**, não do peso que constava na primeira consulta.
+
+| Peso medido, criança <10 anos | Comprimidos RHZ **75/50/150 mg** por dia (fase intensiva) | Comprimidos RH **75/50 mg** por dia (manutenção) | Quantidade total de medicamentos na fase intensiva |
+| --- | ---: | ---: | --- |
+| **4–7 kg** | **1** | **1** | R75 + H50 + Z150 mg/dia |
+| **8–11 kg** | **2** | **2** | R150 + H100 + Z300 mg/dia |
+| **12–15 kg** | **3** | **3** | R225 + H150 + Z450 mg/dia |
+| **16–24 kg** | **4** | **4** | R300 + H200 + Z600 mg/dia |
+
+**Essa tabela é para concentração e contagem, não para escolher duração sozinha.** O quadro do Ministério da Saúde sobre apresentação infantil foi elaborado para a **fase intensiva de dois meses e manutenção originalmente de quatro meses** (total de seis). A Nota Informativa nº 5/2024, porém, passou a permitir **apenas nos casos elegíveis de TB sensível não grave** a manutenção por **dois meses** (total quatro), mantendo as **mesmas apresentações pediátricas** segundo faixa de peso. Portanto, primeiro determinar **gravidade e elegibilidade ao regime**, depois a fase, só então o número de comprimidos.
+
+#### 7.7.1 Quatro exemplos que previnem erros de fronteira
+
+**Exemplo A — nove anos, 15 kg, doença sensível não grave:** na fase RHZ, **3 comprimidos por dia** fornecem rifampicina **225 mg**, isoniazida **150 mg** e pirazinamida **450 mg**. A fase RH usa **3 comprimidos** de 75/50 mg por dia. A criança pode ser candidata a 2RHZ/2RH se forem cumpridos critérios clínicos, bacteriológicos/imagem e de sensibilidade. **Quinze quilos ainda são a faixa 12–15**, não 16–24.
+
+**Exemplo B — mesma criança, agora 16 kg:** nova pesagem deve desencadear **reavaliação**; a tabela de 16–24 kg usa **4 comprimidos** dispersíveis por dia. Não manter três apenas por ter iniciado tratamento quando pesava 15 kg; a dose e a apresentação devem ser reconfirmadas pela equipe que dispensa.
+
+**Exemplo C — criança com nove anos e 26 kg:** **não aplicar a faixa 16–24 kg** por ser “a mais próxima”. A Nota 5/2024 determina que crianças <10 anos com peso **≥25 kg** utilizem **doses individualizadas**; requer apresentação e cálculo próprios. A tabela de RHZE adulto não é um atalho para extrapolar comprimidos pediátricos.
+
+**Exemplo D — bebê de dois meses e 4,8 kg:** apesar de ultrapassar 4 kg, **a idade ≤3 meses** impede o esquema de quatro meses na Nota 5/2024; o tratamento deve ser individualizado e em geral segue fase intensiva RHZ de dois meses e manutenção RH de quatro, conforme acompanhamento especializado.
+
+#### 7.7.2 Acompanhamento e preparação: dispersível não é comprimido adulto quebrado
+
+Os comprimidos dispersíveis são preparados segundo as instruções farmacêuticas e do fabricante, em volume e técnica adequados; a dose deve ser **completamente ingerida**, não preparada em grande recipiente do qual a criança só bebe parte. Registrar vômitos próximos à administração e discuti-los com a equipe: não repetir automaticamente a dose sem analisar quanto foi absorvido e as orientações do serviço. O risco de erro é maior quando familiares alternam apresentações pediátricas e adultas, embalagens visualmente semelhantes ou diferentes concentrações.
+
+Consultas mensais devem registrar peso atual, sintomas, adesão, tolerância, microbiologia/imagem quando indicado e **resposta no quarto mês** se houve escolha de regime encurtado. Sinais de hepatotoxicidade, exantema grave, alteração de consciência, comprometimento visual ou piora respiratória requerem avaliação imediata. **Nunca transformar a contagem da tabela em receita para criança com TB resistente, meningite, osteoarticular, baixo peso extremo ou doença hepática/renal grave.**
+
+#### 7.7.3 Curto versus longo em formas graves: o sítio de doença também conta
+
+O Ministério da Saúde mantém, para TB **meningoencefálica e osteoarticular** sensível, esquemas geralmente mais longos; no material programático de crianças <10 anos, as apresentações RHZ/RH podem aparecer com **fase intensiva de dois meses seguida por dez meses de manutenção**. Assim, a **concentração de cada comprimido** pode ser parecida, mas o *total de meses* é determinado pela forma clínica. Quadro neurológico, rebaixamento de consciência ou déficit focal pede investigação e referência urgente, não discussão sobre calendário curto em ambulatório.
+
+**Fontes oficiais confrontadas:** Ministério da Saúde, *Tratamento da TB em crianças* (material de apoio às apresentações dispersíveis, quadros 1 e 2): https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf ; Ministério da Saúde, Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS (p. 1–3; duração abreviada e limites de elegibilidade): https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file . O quadro deste capítulo é uma **síntese textual original**, não reprodução visual do folheto. A prescrição operacional requer conferência da combinação fixa específica e do protocolo vigente da unidade.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
@@ -710,6 +768,15 @@ Menino de nove anos e cinco meses, **26 kg**, apresenta TB pulmonar sensível n�
 ### Caso 16 — Bebê de quatro meses com peso abaixo de quatro quilos
 
 Lactente de quatro meses, **3,7 kg**, contato domiciliar de TB, apresenta febre prolongada e dificuldade de ganhar peso, com investigação que sustenta doença ativa. O médico percebe que já passou dos três meses e cogita esquema de quatro meses automaticamente. **Hipóteses:** TB pediátrica ativa, necessidade de excluir doença grave, outras causas de déficit ponderal. **Raciocínio:** o quadro ministerial exclui do encurtamento bebê **≤3 meses OU com peso <4 kg**. Apesar da idade de quatro meses, o peso ainda o coloca na categoria de doses individualizadas e **seis meses** no esquema básico sensível segundo a Nota. **Exames:** avaliação pediátrica e nutricional urgente, exames por apresentação, cultura/microbiologia quando viável e estado do caso fonte; investigação de gravidade. **Conduta:** encaminhar à equipe de TB pediátrica, selecionar regime e doses individualizadas e planejar revisão frequente de peso e resposta; não usar automaticamente a combinação dispersível de uma faixa não aplicável. **Por que este caso importa:** a conjunção lógica **idade OU peso** é decisiva para segurança.
+
+
+### Caso 17 — A criança ganhou um quilo e mudou a faixa de RHZ
+
+Menino de seis anos, 15 kg na primeira consulta, TB pulmonar sensível não grave com imagem sem cavidade, em 2RHZ/2RH após avaliação por equipe de TB. Usou três comprimidos dispersíveis RHZ 75/50/150 mg por dia durante o primeiro mês; na reavaliação pesa **16,2 kg**. **Hipótese:** necessidade de revisar a contagem de comprimidos pela mudança de faixa ponderal, sem confundir ganho de peso com falha terapêutica. **Raciocínio:** 15 kg pertence a 12–15 kg (**3** comprimidos), enquanto 16,2 kg pertence a 16–24 kg (**4** comprimidos). **Exames:** pesar novamente de modo confiável, revisar embalagem, doses efetivamente ingeridas, tolerância e evolução clínica. **Conduta:** equipe revisa a prescrição e a dispensação segundo peso atual, instrui a família e documenta a transição para RH na fase adequada, mantendo avaliação de duração/segurança. **Por que importa:** peso pediátrico é variável de dose dinâmica e não deve permanecer congelado na primeira visita.
+
+### Caso 18 — Contato infantil com HIV: prevenção não é tratar doença ativa
+
+Menina de oito anos vivendo com HIV usa terapia antirretroviral e foi exposta ao avô com TB pulmonar. Não apresenta sintomas, mas necessita investigação para excluir doença ativa e avaliar ILTB. A família pergunta se pode iniciar por conta própria “os comprimidos RH que sobraram” de outro parente. **Hipóteses:** exposição com risco de infecção latente; TB ativa deve ser descartada por avaliação clínica/imagem/microbiologia quando indicada. **Raciocínio:** a apresentação dispersível RH 75/50 mg pode existir em prevenção e manutenção de doença ativa, porém **a indicação, número de doses e interações são diferentes**. Rifampicina pode interagir de modo clinicamente importante com determinados antirretrovirais, e a Nota 6/2024 limita o uso de 3RH em diversos esquemas. **Exames:** avaliação clínica completa, exames de infecção e doença conforme protocolo, informações do caso-fonte/resistência, revisão da TARV. **Conduta:** encaminhar decisão de tratamento preventivo ao serviço HIV/TB pediátrico; não administrar sobras de RH, definir esquema e adesão, acompanhar sinais de doença. **Por que importa:** a coincidência dos nomes R e H não torna tratamento preventivo e tratamento da doença ativos intercambiáveis.
 
 
 ## 9. Questões autorais comentadas
@@ -921,6 +988,40 @@ C) Lactente de quatro meses, **3,7 kg**, com TB ativa, pois é enquadrado pela r
 D) Adolescente de doze anos, com TB pulmonar sensível não grave e acompanhamento disponível.
 
 **Gabarito: C.** O peso abaixo de 4 kg impede a aplicação automática do esquema encurtado, mesmo em bebê com mais de três meses. **A/B/D:** podem ser elegíveis após cumprir critérios completos clínicos, microbiológicos/imagem e de resistência. **Mini-revisão:** antes de encurtar, verificar **idade, peso, gravidade, sítio da doença e resistência**, e reavaliar no quarto mês.
+
+
+### Questão 26 — Contagem de RHZ por peso
+
+Escolar de sete anos e **15 kg**, TB pulmonar sensível não grave e elegível ao regime, receberá RHZ dispersível **75/50/150 mg** na fase intensiva. Segundo a tabela pediátrica do Ministério da Saúde, qual é a quantidade diária dessa apresentação?
+
+A) Um comprimido.
+B) Dois comprimidos.
+C) **Três comprimidos.**
+D) Cinco comprimidos de RHZE adulto.
+
+**Gabarito: C.** Na faixa de 12–15 kg são três comprimidos de RHZ 75/50/150 mg, totalizando R225/H150/Z450 mg por dia. **A:** corresponde ao grupo 4–7 kg. **B:** corresponde ao grupo 8–11 kg. **D:** confunde formulação pediátrica RHZ com dose fixa combinada adulta RHZE. **Mini-revisão:** verificar simultaneamente idade, peso, gravidade, apresentação e fase.
+
+### Questão 27 — Quando não extrapolar a tabela infantil
+
+Criança de nove anos, **26 kg**, necessita tratamento para tuberculose sensível. Qual conduta está alinhada à Nota Informativa 5/2024?
+
+A) Usar sempre quatro comprimidos dispersíveis porque a criança ainda não tem dez anos.
+B) Avaliar doses **individualizadas** de R/H/Z em apresentações apropriadas, pois ultrapassou a faixa 4–24 kg dos dispersíveis.
+C) Tratar todos os casos de 26 kg por apenas quatro meses sem verificar gravidade.
+D) Usar automaticamente cinco comprimidos do RHZE adulto de qualquer concentração.
+
+**Gabarito: B.** Para <10 anos e ≥25 kg a Nota estabelece necessidade de doses individualizadas; faixa de comprimido dispersível não pode ser extrapolada. **A:** ultrapassa limite de peso do quadro. **C:** duração exige elegibilidade ao encurtamento. **D:** utiliza formulação e número de comprimidos sem conferir idade, concentração e dose. **Mini-revisão:** fronteira de peso pode mudar apresentação e esquema operacional.
+
+### Questão 28 — RH na prevenção e na manutenção
+
+Criança de oito anos, contato de TB sensível e sem doença ativa após avaliação, será considerada para tratamento preventivo de ILTB. Qual afirmação é correta?
+
+A) RH dispersível preventivo é a mesma coisa que 2RHZ/2RH para TB ativa porque ambos têm rifampicina/isoniazida.
+B) Esquema preventivo pediátrico com RH pode envolver 90 doses em 3–5 meses, dependendo de elegibilidade e interações; não inclui fase intensiva RHZ da doença ativa.
+C) Basta ter cicatriz de BCG para não precisar investigar contato ou ILTB.
+D) Uma pessoa com HIV pode sempre usar rifampicina sem verificar TARV.
+
+**Gabarito: B.** O 3RH preventivo tem indicação e calendário distintos do tratamento da doença. **A:** ignora que RHZ é parte da fase inicial da TB ativa. **C:** BCG não exclui infecção nem doença. **D:** interações rifampicina–antirretrovirais podem alterar substancialmente a escolha. **Mini-revisão:** prevenir infecção e tratar doença ativa exigem decisões diferentes mesmo quando compartilham componentes farmacológicos.
 
 
 ## Referências essenciais
