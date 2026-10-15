@@ -223,7 +223,7 @@
         <button type="button" data-luria-study-time="120">2 horas</button>
         <button type="button" data-luria-study-time="999">Completar o dia</button>
       </div>
-      <button type="button" class="dl-primary dl-study-now-start" data-luria-study-start>Estudar agora</button>
+      <button type="button" class="dl-primary dl-study-now-start button primary" data-luria-study-start>Estudar agora</button>
     </section>`;
   }
 
