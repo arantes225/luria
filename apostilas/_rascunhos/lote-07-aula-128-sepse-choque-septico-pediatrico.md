@@ -563,7 +563,7 @@ Criança de três anos, choque séptico por foco abdominal suspeito, recebeu ant
 
 **Hipótese:** choque persistente com possível extravasamento/infiltração do vasoativo. **Raciocínio:** a segurança da via e do sistema de infusão é tão crítica quanto a escolha de droga; uma transferência não pode prosseguir ignorando erro de administração. **Exames:** avaliação hemodinâmica seriada, sítio de punção, integridade da bomba e concentração preparada, lactato quando indicado, pesquisa do foco e da perfusão de extremidades. **Conduta:** acionar imediatamente equipe experiente para controle do acesso/extravasamento conforme protocolo hospitalar, providenciar via segura e continuidade da terapia, rever plano cirúrgico de controle do foco e comunicar fatos, doses e horários ao time receptor. **Por que importa:** “iniciar vasoativo” e “garantir sua administração segura durante mudanças de ambiente” são objetivos distintos.
 
-## 12. Dezesseis questões autorais com comentários completos
+## 12. Vinte e uma questões autorais com comentários completos
 
 ### Questão 1 — Phoenix 2024
 Criança de 5 anos com suspeita de infecção apresenta disfunção respiratória, neurológica e cardiovascular. Qual afirmação sobre novos critérios é correta?
@@ -822,7 +822,7 @@ D. Suspender monitorização de função renal e balanço hídrico após uma pre
 - [x] Fundamentos fisiológicos, sinais por idade, Phoenix 2024 e SSC 2026.
 - [x] Fluidos contextualizados por capacidade de UTI, antibióticos e vasoativos atualizados.
 - [x] Fonte, suporte de órgãos, diferenciais e fluxos.
-- [x] 10 casos clínicos completos, 16 questões com comentários de cada alternativa (conteúdo didático ainda pendente de revisão externa).
+- [x] 13 casos clínicos (10 originais + 3 em 15/10/2026) e 21 questões (16 originais + 5 em 15/10/2026), com comentários; conteúdo ainda pendente de revisão externa.
 - [ ] Benchmark de livro completo especificamente de sepse pediátrica no Drive.
 - [ ] Exames/monitorização por idade, plano avançado de ventilação mecânica e farmacologia detalhada por peso.
 - [ ] Protocolos brasileiros de antibioticoterapia por foco, apresentações e doses máximas de criança, com conferência de função renal e neonatal.
