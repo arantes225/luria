@@ -1,7 +1,7 @@
 # LURIA — Aula 266 | Oncologia de Cabeça e Pescoço
 **Área:** Cirurgia Geral — Cirurgia de Cabeça e Pescoço / Oncologia  
 **Versão:** etapa editorial 01, 15/10/2026  
-**Status:** RASCUNHO PARCIAL. Não publicar, não mesclar. Não atingiu a meta de 60.000 caracteres didáticos e não passou por revisão clínica especializada.  
+**Status:** RASCUNHO PARCIAL. Não publicar, não mesclar. Atingiu volume bruto editorial superior à primeira etapa, mas a contagem de caracteres didáticos úteis, a deduplicação e a revisão clínica especializada ainda não foram certificadas.  
 **Escopo desta etapa:** estrutura curricular, anatomia, epidemiologia causal, sinais de alarme, investigação de lesão oral e massa cervical, HPV, EBV, princípios terapêuticos, cenários e exercícios.  
 **Escopo fora desta etapa:** revisão exaustiva de cada TNM vigente por subsítio; esquemas sistêmicos completos, dosagens, contraindicações específicas; reabilitação reconstrutiva detalhada; 20 imagens licenciadas; auditoria das questões e teste de interface.
 
@@ -291,3 +291,302 @@ Cada candidata deverá ter **arquivo, origem, licença, autor, URL da fonte prim
 
 ### Próxima fase obrigatória
 Aprofundar em capítulos específicos **cavidade oral (profundidade de invasão e manejo cervical)**, **orofaringe HPV+ versus HPV- (TNM e seleção terapia)**, **nasofaringe (EBV, imagem de base do crânio e tratamentos)**, **laringe/hipofaringe (órgão e função)**, **tumores salivares e primário oculto**, **recorrência e imunoterapia por cenário**, **nutrição, odontologia, voz e deglutição**. Consolidar o texto em 60 mil caracteres úteis sem repetição, revisar dados de diretriz, realizar comparativo adicional de autoria confirmada, depois dry-run e validação manual — ainda sem publicar até aprovação.
+
+
+---
+
+# Complemento editorial — etapa 02 | Raciocínio avançado por subsítio
+
+> **Orientação de integração:** este complemento deve ser distribuído, na revisão de montagem, junto aos capítulos anatômicos, diagnósticos e terapêuticos correspondentes. Ele foi mantido nesta seção separada para permitir comparação de versões sem apagar o conteúdo original. Não é capítulo de “enchimento”: cada seção abaixo acrescenta decisões, exceções ou interpretação de exames não desenvolvidas na primeira etapa.
+
+## 16. Cavidade oral: profundidade de invasão, pescoço clinicamente negativo e reconstrução
+### 16.1. Anatomia aplicada à decisão
+Na cavidade oral, os marcos com implicação mais imediata são borda e ventre da língua móvel, assoalho da boca, gengivas, mucosa jugal, trígono retromolar e palato duro. Quando o tumor se aproxima da mandíbula ou do espaço sublingual, a avaliação não deve se limitar ao aspecto superficial visto à inspeção. A presença de fixação, parestesia, limitação de abertura da boca e dificuldade para elevar/protrair a língua sugere possível infiltração de estruturas profundas. Um exame apenas visual pode subestimar extensão: palpar o tumor e registrar sua relação com planos profundos é etapa semiológica de alto valor.
+
+Duas lesões de igual diâmetro superficial podem ter prognósticos e necessidades de tratamento cervical diferentes se uma crescer superficialmente e outra invadir profundamente. Isso leva à distinção essencial entre **espessura tumoral** (grossura total que se mede em relação às superfícies do próprio tumor) e **profundidade de invasão — DOI (depth of invasion)**, definida por referência à membrana basal esperada da mucosa adjacente. Tumor exofítico espesso pode ter DOI menor do que sua espessura total; tumor ulcerado pode ter DOI relevante apesar de pouco relevo. DOI modifica critérios de T em carcinomas da cavidade oral e informa risco de metástase oculta. Não substituir a medida histológica por estimativa visual.
+
+### 16.2. Pescoço N0 não significa ausência de células tumorais
+“Pescoço clinicamente negativo” descreve avaliação sem linfonodos envolvidos detectados pelos métodos usados, mas não exclui micrometástases. A decisão de abordar eletivamente linfonodos regionais pode depender de localização, DOI, classificação T e outros fatores; a equipe avalia a probabilidade de doença oculta, impacto do procedimento e alternativas como radioterapia nodal quando apropriada. Não usar um limiar numérico único de DOI como regra universal sem conferir diretriz, técnica de medida e subsítio.
+
+Uma lesão próxima à linha média pode drenar bilateralmente; tumores laterais podem ter predomínio ipsilateral, mas nenhum desses padrões é absoluto. Por isso, a pergunta correta não é apenas “há linfonodo palpável?”, mas “qual o risco do pescoço ocultamente acometido e qual estratégia oferece melhor controle com morbidade justificável?”.
+
+### 16.3. Margens, peça cirúrgica e anatomopatologia
+O cirurgião busca ressecção oncológica adequada preservando o máximo possível de estruturas funcionais. O patologista deve receber orientação espacial da peça e informações do sítio tumoral, além de avaliar margem do tumor invasivo, eventualmente doença in situ/displasia, DOI, invasão perineural, linfovascular, comprometimento ósseo e estado dos linfonodos. Margem histológica positiva aumenta risco de persistência/recidiva e pode determinar reabordagem ou tratamento adjuvante conforme viabilidade. A distância exata considerada “adequada” varia por contexto, protocolo e método de análise: não ensinar centímetros universais.
+
+**R0, R1 e R2 não são sinônimos de estádio:** R0 representa ressecção sem tumor residual detectável segundo critério utilizado; R1 indica doença residual microscópica; R2, doença macroscópica. Mesmo uma ressecção R0 pode necessitar tratamento complementar quando há outros fatores de risco patológicos.
+
+### 16.4. Conduta clínica pré-cirúrgica
+Documentar dentição, deglutição, fala, nutrição e condição respiratória antes do tratamento. O planejamento reconstrutivo deve acontecer **antes** da ressecção quando há possibilidade de defeito extenso. Reconstruções podem usar fechamento local, retalhos locais/regionais ou retalhos livres microcirúrgicos em serviços preparados. A seleção depende do tamanho e formato do defeito, necessidade de volume e revestimento, envolvimento ósseo e objetivos funcionais. Fechar o defeito anatômico não basta se o resultado impedir deglutição, mobilidade lingual ou fonética adequada.
+
+### 16.5. Exemplo encadeado
+Uma lesão pequena e superficial de borda lateral da língua é biopsiada e confirma CEC. O exame cervical é negativo. A equipe precisa determinar DOI e extensão real, planejar ressecção e discutir necessidade de estratégia cervical, e não declarar automaticamente “estádio inicial = nenhuma avaliação do pescoço”. Após cirurgia, laudo revela invasão perineural, o que reabre discussão de tratamento adjuvante. **A anatomia visível no consultório inicia, mas não encerra, a decisão.**
+
+## 17. Orofaringe: fisiopatologia viral, classificação e escolhas de preservação
+### 17.1. Tonsilas e base da língua
+As criptas tonsilares e o tecido linfoepitelial da base da língua podem abrigar tumores pequenos que se manifestam primeiro por metástase cervical. Lesão primária pequena não implica doença sem importância: o volume ou número de linfonodos, sua lateralidade e características patológicas compõem a gravidade. A examinação precisa combinar inspeção, palpação quando factível, nasofibrolaringoscopia e métodos adicionais guiados pela suspeita.
+
+**O que muda no tumor relacionado ao HPV?** Além da associação com melhor resposta/prognóstico em diversos contextos, muda o sistema de estadiamento usado para a categoria pertinente da orofaringe. O status p16 pode influenciar a interpretação prognóstica e discussão da estratégia, mas não transforma a extensão local e a função em detalhes secundários. Tumor de base de língua com grande comprometimento muscular pode ser um desafio funcional mesmo em paciente biologicamente mais favorável.
+
+### 17.2. Cuidado com três falsas equivalências
+1. **“p16 alto = infecção oral ativa.”** Não necessariamente. A imuno-histoquímica no tumor é uma ferramenta patológica contextual; não é teste de transmissibilidade individual ou cronologia de infecção.
+2. **“HPV associado = cirurgia proibida.”** Falso. Em pacientes selecionados, a cirurgia transoral pode integrar manejo; em outros, a radioterapia ou radioquimioterapia pode oferecer melhor equilíbrio de controle e função.
+3. **“HPV associado = menos tratamento para todos.”** Falso. Protocolos de desintensificação não devem ser reproduzidos fora de critérios validados, especialmente em doença extensa, tabagistas relevantes ou tumores com fatores adversos.
+
+### 17.3. Cirurgia transoral versus radioterapia
+A ressecção por via transoral pode reduzir a necessidade de acessos mais extensos quando há exposição anatômica, capacidade de obter margens e expectativa aceitável de função. Contudo, cirurgia não é necessariamente “menos tóxica” se o laudo final levar à radioterapia ou radioquimioterapia pós-operatória: o paciente pode terminar exposto à morbidade de três modalidades. Ao escolher a intervenção inicial, a equipe pondera risco de margens positivas, doença nodal, extensão extranodal provável, alterações de deglutição, acesso ao serviço e preferências do paciente.
+
+O raciocínio deve comparar **trajetórias completas** e não apenas o primeiro procedimento: cirurgia + avaliação patológica + eventual adjuvância versus radioquimioterapia definitiva + vigilância da resposta + possibilidade de resgate. Não é possível definir superioridade geral de uma rota sem considerar o caso.
+
+### 17.4. Acompanhamento de resposta
+Em estratégias não cirúrgicas, massa residual palpável imediata não equivale automaticamente a tumor viável: inflamação, fibrose e alterações pós-tratamento podem dificultar interpretação. O momento apropriado de reavaliação com exame clínico e imagem, inclusive PET-CT em protocolos selecionados, importa. A decisão de dissecção cervical de resgate não é baseada isoladamente no volume residual precoce sem avaliação do contexto.
+
+## 18. Nasofaringe: raciocínio anatômico e fatores de prognóstico
+### 18.1. A região que “esconde” o tumor
+A nasofaringe fica posteriormente à cavidade nasal e superior ao palato mole. Suas paredes laterais se relacionam aos óstios da tuba auditiva e ao recesso faríngeo, região clinicamente importante para sítios de origem tumoral. A proximidade da base do crânio e de trajetos de nervos cranianos ajuda a entender por que lesões avançadas podem provocar diplopia, alterações sensitivas faciais, cefaleia persistente ou outros déficits neurológicos.
+
+Uma neoplasia pode interferir na ventilação da orelha média, produzindo efusão e diminuição auditiva unilateral. Isso não significa que toda efusão unilateral seja câncer, mas em adulto com persistência e sinais combinados justifica avaliação endoscópica da nasofaringe. A palpação cervical pode detectar metástase antes da visualização do primário.
+
+### 18.2. Avaliação do EBV e interpretação
+A associação entre carcinoma nasofaríngeo não queratinizante e EBV não significa que sorologia positiva isolada prove câncer — exposição prévia ao vírus é frequente na população. Biomarcadores como EBER em tecido tumoral e DNA circulante de EBV podem acrescentar informação diagnóstica/prognóstica em cenários especializados, mas a seleção e interpretação requerem método, prevalência epidemiológica e contexto clínico. Não transformar rastreio de populações endêmicas em recomendação indiscriminada para todo paciente brasileiro.
+
+### 18.3. Quando pedir RM?
+A RM pode ser particularmente útil para extensão em partes moles profundas, base do crânio e estruturas neurais. TC acrescenta informação de osso, tecidos e cadeias cervicais. A avaliação local e sistêmica varia por estádio e diretriz; os exames são complementares, não concorrentes. Paciente com déficit de nervo craniano exige avaliação dirigida e priorização do estadiamento por risco de extensão complexa.
+
+### 18.4. Tratamento e resposta
+A radiossensibilidade e a localização anatômica explicam por que a radioterapia é peça central em diferentes estádios. Quimioterapia concomitante e, em pacientes selecionados, indução são possibilidades em doença de maior risco, conforme protocolo especializado e estado geral. No cenário recorrente/metastático, terapias sistêmicas e imunoterapias podem ser consideradas por acesso e evidência. É essencial separar carcinoma de nasofaringe do grupo mais amplo de CEC orofaríngeo ao discutir biomarcadores, resultados de ensaios e elegibilidade de drogas.
+
+## 19. Laringe: anatomia funcional, rouquidão e critérios da via aérea
+### 19.1. Divisão anatômica e sintoma predominante
+A laringe inclui supraglote, glote e subglote. Lesões glóticas podem alterar a vibração das pregas vocais precocemente, causando disfonia, enquanto lesões supraglóticas podem permanecer com poucos sintomas vocais e se manifestar com deglutição dolorosa, otalgia, sensação de corpo estranho e adenopatia cervical. Tumores subglóticos são menos comuns e podem gerar sintomas obstrutivos.
+
+A mobilidade das pregas vocais deve ser documentada por exame laringoscópico. Limitação ou fixação pode decorrer de invasão local ou outras causas; o mecanismo precisa ser investigado. A endoscopia também avalia secreções, aspiração evidente, edema, extensão mucosa e dificuldades previsíveis de manejo respiratório.
+
+### 19.2. O que é preservação de laringe?
+Há duas ideias diferentes: manter a laringe **anatomicamente presente** e manter uma laringe **funcionalmente útil**. Um tratamento que preserva o órgão, mas deixa aspiração recorrente, dependência alimentar permanente e incapacidade de ventilação adequada, pode ter resultado funcional insatisfatório. Por outro lado, uma cirurgia mais extensa pode oferecer controle oncológico e reconstrução/reabilitação de comunicação adequadas em caso selecionado. Discutir objetivos, capacidade de reabilitação e preferências importa.
+
+Não prescrever “radioquimioterapia para todos” nem “laringectomia para todos”. Lesões iniciais podem receber procedimentos endoscópicos ou radioterapia por critérios específicos; lesões extensas requerem discussão de cirurgia, radioterapia e terapia sistêmica. Destruição cartilaginosa significativa, disfunção laríngea pré-existente e extensão extralaríngea são exemplos de fatores que alteram a escolha.
+
+### 19.3. Estridor: reconhecer urgência
+Estridor é sinal de fluxo turbulento por estreitamento de via aérea alta. Em paciente com massa laríngea ou cervical, ele exige avaliação rápida da ventilação e planejamento em ambiente capaz de intervenção avançada. O risco não é apenas hipoxemia atual: manipulação, mudança de posição e sedação podem converter via aérea parcialmente pérvia em obstrução completa.
+
+No atendimento inicial: avaliar esforço, saturação, voz, capacidade de engolir secreções, ritmo de piora, anatomia externa e disponibilidade de especialista. Evitar procedimentos ou sedação desnecessários por equipe sem preparo. Uma via aérea potencialmente difícil não admite fórmula universal de intubação ou traqueostomia descrita fora do contexto de treinamento especializado.
+
+## 20. Hipofaringe: diagnóstico tardio e consequência nutricional
+A hipofaringe comunica a faringe com o esôfago e se relaciona de perto à entrada laríngea. Inclui seios piriformes, parede posterior e região pós-cricoide. Tumores podem causar sensação de alimento parado, disfagia progressiva, odinofagia, voz abafada, otalgia reflexa e perda ponderal antes de produzir massa facilmente acessível à inspeção comum.
+
+Por essa localização, a avaliação nutricional é parte fundamental do estadiamento funcional: perda rápida de peso, desidratação, aspiração e sarcopenia podem influenciar tolerância a cirurgia, radioquimioterapia e reabilitação. Em paciente que relata episódios repetidos de tosse ao engolir, voz molhada após líquidos ou pneumonias recorrentes, avaliar risco de aspiração em vez de apenas perguntar se consegue ingerir calorias.
+
+A cirurgia pode comprometer a continuidade faringoesofágica e exigir reconstrução. Regimes não cirúrgicos podem preservar anatomia, mas lesar mucosa e musculatura pela toxicidade. O objetivo é sobrevida com deglutição viável e morbidade proporcional, e isso justifica coordenação entre cirurgia, radio-oncologia, oncologia clínica, fonoaudiologia e nutrição.
+
+## 21. Tumores de glândulas salivares: por que não entram no algoritmo genérico de CEC?
+### 21.1. Topografia e tipos
+As glândulas parótidas, submandibulares, sublinguais e salivares menores geram histologias heterogêneas. A lesão parotídea pode ser benigna ou maligna; o risco varia por sinais clínicos, imagem e citopatologia. A presença de **paresia facial associada à massa parotídea**, crescimento rápido, dor intensa persistente, fixação e alterações cutâneas aumenta preocupação, embora ausência desses sinais não exclua câncer.
+
+### 21.2. Histologia importa mais que rótulo genérico
+Carcinoma mucoepidermoide, carcinoma adenoide cístico, carcinoma de células acinares e outros subtipos diferem em grau, invasão perineural, padrão de metástase e prognóstico. O carcinoma adenoide cístico, por exemplo, pode ter propagação perineural relevante e merece atenção à trajetória dos nervos nas imagens e no laudo. Resultado de “neoplasia salivar” sem tipagem e grau suficientes pode não sustentar escolha definitiva.
+
+### 21.3. Diagnóstico sem violar planos cirúrgicos
+Ultrassom e RM/TC são usados conforme localização e extensão; a PAAF é técnica comum de amostragem inicial e pode ser complementada por core ou revisão histológica quando inconclusiva. Biópsia incisional indiscriminada de massa profunda de parótida é inadequada como prática generalizada. A relação com nervo facial, pele, masseter e osso precisa ser considerada antes de acesso cirúrgico.
+
+### 21.4. Tratamento por risco
+Cirurgia constitui tratamento de muitos tumores malignos ressecáveis, mas extensão depende do subtipo, local, grau, volume e relação com o nervo facial. Radioterapia adjuvante pode ser indicada com margens desfavoráveis, alto grau, invasão perineural e outras características de risco. A preservação do nervo facial, quando oncologicamente viável, é objetivo importante, mas envolvimento tumoral efetivo pode impor tratamento de segmento neural. A avaliação de paralisia facial deve ocorrer antes da cirurgia e ser registrada para não atribuir ao procedimento o déficit prévio.
+
+### 21.5. Erros comuns
+Não equiparar qualquer massa de parótida a linfonodo metastático. Não classificar toda tumoração salivar por estadiamento de carcinoma escamoso de mucosa. Não pressupor que paralisia facial seja necessária para tumor salivar maligno. Não extrapolar tratamento sistêmico de CEC de orofaringe para todas as histologias salivares.
+
+## 22. Primário oculto: uma metástase cervical sem origem visível
+### 22.1. Definição operacional
+O diagnóstico de primário oculto em cabeça e pescoço pressupõe neoplasia comprovada em linfonodo e ausência de sítio primário identificado após investigação apropriada. Nem toda linfadenopatia indeterminada é “primário oculto”, e nem toda metástase cervical tem origem na via aerodigestiva superior. Devem ser considerados pele da cabeça/pescoço, tireoide, pulmão e outros sítios conforme localização nodal e citologia.
+
+### 22.2. Sequência racional
+Amostragem nodal permite identificar CEC ou outra linhagem tumoral. Marcadores patológicos contextuais podem sugerir origem orofaríngea associada a HPV ou nasofaríngea associada a EBV, sem que substituam exame anatômico. A equipe examina mucosa com endoscopia e imagens, eventualmente PET-CT e avaliação sob anestesia. Procedimentos como amigdalectomia dirigida e amostragem de base da língua podem ser considerados em casos selecionados e devem ser indicados por equipe habilitada, não por uma regra universal.
+
+### 22.3. O problema de “abrir o pescoço cedo”
+Uma biópsia cervical aberta antes da investigação adequada pode desorganizar planos cirúrgicos, comprometer estratégia de esvaziamento e não resolver a origem primária. Isso não significa que biópsia aberta nunca seja apropriada: significa que deve ser deliberada, após PAAF/imagem e outros passos pertinentes, com intenção diagnóstica clara.
+
+### 22.4. Tratamento
+O tratamento combina controle do pescoço, avaliação de sítios potenciais e radioterapia/estratégias sistêmicas conforme extensão e histologia. Não copiar, como fórmula, “N1 monoterapia e N2–3 combinação” sem avaliar extensão extranodal, número e nível de linfonodos, estado HPV/EBV, tratamento anterior e volumes alvo. O objetivo é evitar tanto omissão de doença mucosa relevante como irradiação excessivamente ampla sem benefício justificado.
+
+## 23. Como interpretar anatomopatologia e decidir adjuvância
+A reunião multidisciplinar deve responder explicitamente se o diagnóstico está confirmado, qual o sítio exato, qual sistema de estadiamento foi empregado e quais fatores adversos foram encontrados. Em lesões mucosas, registrar T e N clínicos pré-tratamento, patológicos se houver cirurgia, margens e fatores de risco. Após tratamento neoadjuvante, indicar a forma apropriada de estadiamento pós-tratamento, sem confundir categorias.
+
+| Achado do laudo | O que indica biologicamente | Por que pode alterar conduta |
+|---|---|---|
+| Margem positiva | Células neoplásicas alcançando limite avaliado | Maior risco de doença residual; discutir reabordagem/adjuvância |
+| Invasão perineural | Células tumorais ao redor ou dentro de estruturas nervosas | Risco de disseminação local e recidiva; avaliar trajeto neural |
+| Invasão linfovascular | Acesso tumoral a pequenos vasos/linfáticos | Sinal de risco de disseminação |
+| Extensão extranodal | Tumor ultrapassando cápsula do linfonodo | Relevância prognóstica e para terapia complementar em contextos definidos |
+| DOI elevado na cavidade oral | Invasão vertical mais profunda do leito mucoso | Relaciona-se à classificação local e ao risco nodal |
+| p16 em CEC de orofaringe | Marcador substituto do estado relacionado ao HPV em cenário validado | Classificação prognóstica particular |
+| EBV no CEC de nasofaringe | Informação etiopatogênica/prognóstica contextual | Pode ajudar caracterização e vigilância especializada |
+| Histologia de glândula salivar de alto grau | Biologia tumoral mais agressiva | Pode ampliar indicação de terapia adjuvante |
+
+**Armadilha editorial:** classificar todos esses fatores como “indicação automática de quimioterapia” é incorreto. A combinação exata de fatores, local e modalidade inicial determina risco e recomendação; muitas situações requerem radioterapia isolada, outras radioquimioterapia, outras somente seguimento após tratamento local adequado.
+
+## 24. Complicações e seguimento em cinco momentos clínicos
+### Momento A — antes do tratamento
+Avaliar dentição, peso, ingestão, massa muscular, deglutição, voz, condições respiratórias e suporte familiar. Identificar tabagismo, consumo de álcool e dificuldades de transporte. O planejamento deve incluir não apenas “qual cirurgia/radio”, mas onde o paciente receberá assistência nutricional, fonoterapia e tratamento de efeitos adversos.
+
+### Momento B — início do tratamento
+Após cirurgia, vigiar via aérea, hematomas, infecção, deiscência, fístula salivar, integridade de retalhos e deglutição conforme procedimento. Em radioquimioterapia, acompanhar dor, mucosite, ingestão, hidratação, pele, audição/neuropatia e função renal quando medicamentos com toxicidade relevante forem usados. Esquemas e frequência de exames são protocolados e individualizados.
+
+### Momento C — toxicidade aguda
+Mucosite e odinofagia podem induzir perda hídrica e calórica rapidamente. A equipe deve distinguir dor controlável com suporte intensivo de incapacidade de alimentação e desidratação que exijam avaliação hospitalar. Febre em paciente imunossuprimido por tratamento sistêmico exige protocolo próprio, não devendo ser confundida com quadro banal.
+
+### Momento D — reabilitação
+Xerostomia afeta proteção dentária, alimentação e comunicação; trismo reduz higiene e mastigação; fibrose cervical limita movimento; perda de tecido ou comprometimento neural podem alterar voz e deglutição. Fonoaudiologia, fisioterapia, odontologia e nutrição não são complementos decorativos da assistência: integram o tratamento de longo prazo.
+
+### Momento E — vigilância de recidiva e segundos primários
+Conduzir revisões seriadas com história, palpação cervical, exame de mucosas e endoscopia conforme sítio. Sintomas novos devem ser valorizados, especialmente dor unilateral persistente, alteração de voz/deglutição, sangramento, massa cervical e perda ponderal. Imagem é indicada segundo achados e protocolo; não substituir exame clínico por PET-CT indiscriminado. Exposições continuadas a tabaco e álcool elevam preocupação com novos tumores primários independentes.
+
+## 25. Comunicação e consentimento: perguntas clínicas que o médico deve fazer
+A escolha entre cirurgia radical, cirurgia de preservação, radioquimioterapia e terapia paliativa não é uma disputa abstrata de “melhor técnica”. O paciente precisa compreender objetivo (cura, controle, alívio), chance de manter fala/deglutição, riscos de traqueostomia ou suporte alimentar, necessidade provável de adjuvância, tempo de tratamento, deslocamentos e caminhos de resgate em caso de falha. É importante perguntar quais funções a pessoa valoriza mais e explicar que a preservação anatômica não garante preservação funcional.
+
+Em consulta difícil, distinguir incerteza legítima de desorganização: quando a melhor estratégia depende de imagem, imunohistoquímica ou patologia final, dizer exatamente quais dados faltam para a decisão. Nunca prometer cura com base em uma foto ou num único marcador. Documentar se há decisão multidisciplinar e quais recomendações alternativas foram discutidas.
+
+## 26. Quatro casos adicionais de integração do raciocínio
+### Caso 5 — Tumor pequeno, infiltração relevante
+Mulher de 58 anos com pequeno nódulo endurecido na superfície inferior da língua móvel, histologia confirmando CEC. O tumor aparenta ser menor que 2 cm, e não existem linfonodos palpáveis. Em exame especializado, suspeita-se de profundidade de invasão relevante.
+
+**Hipótese:** CEC de cavidade oral com necessidade de estadiamento adequado para primário e pescoço.  
+**Raciocínio:** tamanho visível não substitui DOI. Pescoço sem linfonodos clínicos não descarta disseminação microscópica. A equipe deve discutir como estadiar e a possibilidade de tratamento eletivo cervical.  
+**Exames:** revisão anatomopatológica, avaliação da profundidade e imagem de extensão/pescoço conforme caso.  
+**Conduta:** estratégia cirúrgica do primário e cervical segundo risco, com foco em preservação de mobilidade lingual.  
+**Por que importa:** dois tumores de tamanho externo parecido podem demandar caminhos distintos.
+
+### Caso 6 — HPV positivo, decisão multimodal
+Homem de 49 anos com CEC de amígdala e linfonodos cervicais ipsilaterais. O tumor expressa p16 em padrão compatível com classificação pertinente. Ele pergunta se pode deixar de fazer radioterapia porque o “HPV deixa o câncer mais fácil”.
+
+**Hipótese:** CEC de orofaringe relacionado a HPV, estádio dependente de T/N/M específico.  
+**Raciocínio:** p16 modifica classificação, mas a indicação de cirurgia, RT e/ou terapias sistêmicas depende da extensão e do tratamento inicial. Desintensificação fora de critérios validados não é aconselhamento adequado.  
+**Exames:** imagem de extensão e avaliação endoscópica, histologia confirmada, discussão multiprofissional de função.  
+**Conduta:** apresentar opções definitivas e probabilidade de precisar de adjuvância se houver cirurgia.  
+**Por que importa:** confundir prognóstico favorável com ausência de risco compromete o tratamento.
+
+### Caso 7 — Parótida e paralisia facial
+Mulher de 65 anos com crescimento recente de massa parotídea, dor e paresia facial ipsilateral. A massa é firme, sem lesão cutânea evidente.
+
+**Hipótese:** neoplasia salivar maligna, entre outras causas de lesão glandular e neural.  
+**Raciocínio:** déficit facial novo associado a massa glandular é sinal preocupante; a histologia não pode ser presumida como CEC de mucosa.  
+**Exames:** avaliação clínica de nervo facial, imagem direcionada e punção por equipe habilitada, com revisão patológica específica.  
+**Conduta:** encaminhamento célere a cirurgia de cabeça e pescoço, com planejamento de tratamento e eventual reabilitação facial.  
+**Por que importa:** diferenciar tumor salivar de metástase linfonodal muda completamente estratégia.
+
+### Caso 8 — Disfagia e perda de peso
+Homem de 71 anos com disfagia progressiva, otalgia unilateral, redução de 9% do peso corporal em dois meses e lesão suspeita de seio piriforme à endoscopia. Sem estridor no momento.
+
+**Hipótese:** neoplasia de hipofaringe, além de diferenciais inflamatórios e outros tumores.  
+**Raciocínio:** localização explica disfagia/otalgia e torna risco nutricional e de aspiração prioridade.  
+**Exames:** biópsia endoscópica planejada, imagem local/cervical e estadiamento; avaliação nutricional e de deglutição.  
+**Conduta:** equipe multidisciplinar para definir terapêutica e suporte nutricional, reavaliando via aérea continuamente.  
+**Por que importa:** adiar assistência nutricional até o fim do tratamento pode aumentar morbidade.
+
+## 27. Questões de residência originais — bloco adicional
+### Questão 7
+Um carcinoma de borda lateral da língua móvel mede 1,8 cm em superfície. O que mais ajuda a compreender a diferença entre crescimento exofítico e capacidade de invasão profunda?
+A) Apenas idade do paciente. B) DOI avaliada de forma apropriada. C) Tamanho do pescoço. D) Sorologia EBV isolada. E) Sódio sérico.
+**Gabarito: B.** DOI indica componente de invasão vertical e não equivale à espessura total; **A, C e E** não medem invasão local; **D** não é avaliação de tumor oral. **Mini revisão:** na cavidade oral, o componente profundo pode modificar estadiamento e risco nodal.
+
+### Questão 8
+Uma massa parotídea progressiva associada a paresia facial ipsilateral deve:
+A) Ser considerada sialadenite benigna até prova de melhora espontânea.  
+B) Receber incisão e drenagem obrigatória.  
+C) Ser avaliada prontamente por equipe especializada, com imagem e amostragem adequadas.  
+D) Ser estadiada automaticamente como carcinoma de orofaringe relacionado a HPV.  
+E) Receber antibioticoterapia por meses sem reavaliação.
+**Gabarito: C.** O comprometimento do facial é sinal de alerta, mas não fecha a histologia. **A/B/E** podem atrasar ou prejudicar abordagem; **D** confunde sítios e sistemas de estadiamento. **Mini revisão:** tumores salivares constituem grupo histológico heterogêneo.
+
+### Questão 9
+A respeito de p16 em câncer de orofaringe:
+A) É sempre prova de infecção contagiosa atual.  
+B) Não tem qualquer relação com a classificação do tumor.  
+C) É marcador contextual que pode apoiar classificação prognóstica do CEC orofaríngeo.  
+D) Autoriza desintensificação livre de radioquimioterapia.  
+E) É equivalente a EBV.
+**Gabarito: C.** **A** interpreta erroneamente imunohistoquímica; **B** nega seu uso; **D** é conduta insegura; **E** confunde vírus com biologia diferente. **Mini revisão:** biomarcador tumoral tem finalidade e sítio próprios.
+
+### Questão 10
+Em pessoa com neoplasia de laringe, a melhor tradução de “preservação de órgão” é:
+A) Preservar qualquer anatomia independentemente de deglutição e ventilação.  
+B) Considerar controle tumoral e função respiratória, fonatória e deglutitória.  
+C) Evitar sempre toda cirurgia.  
+D) Garantir que RT não produz sequelas.  
+E) Tratar sem participação do paciente.
+**Gabarito: B.** **A/C/D/E** ignoram função, morbidade e decisão compartilhada. **Mini revisão:** desfecho oncológico e desfecho funcional são indissociáveis.
+
+### Questão 11
+Qual afirmação é mais precisa sobre glândulas salivares?
+A) Toda massa de parótida é carcinoma escamoso.  
+B) Todos os subtipos seguem idêntico tratamento sistêmico.  
+C) Histologia, grau, sítio e invasão perineural ajudam a orientar prognóstico e tratamento.  
+D) Disfunção facial nunca ocorre em tumor maligno.  
+E) Não há papel para exame anatomopatológico.
+**Gabarito: C.** Os demais distratores apagam heterogeneidade histológica, sinais de alarme e necessidade de tipagem. **Mini revisão:** não aplicar diretrizes de CEC mucoso indistintamente a tumores salivares.
+
+### Questão 12
+Massa cervical com CEC comprovado, sem lesão primária após avaliação inicial: o passo conceitualmente correto é:
+A) Presumir necessariamente origem tireoidiana.  
+B) Encerrar investigação por ausência de úlcera oral visível.  
+C) Realizar busca dirigida de primário com exame anatômico, endoscopia/imagem e estudos selecionados, antes de definir tratamento.  
+D) Prescrever antifúngico como abordagem definitiva.  
+E) Considerar que PET-CT isolado dispensa histologia.
+**Gabarito: C.** **A** é atribuição arbitrária; **B/D** ignoram o diagnóstico; **E** superestima exame funcional. **Mini revisão:** primário oculto significa doença comprovada com origem ainda não identificada após investigação pertinente.
+
+## 28. Quadro de tomada de decisão em prova e no ambulatório
+| Situação clínica | Ação inicial prioritária | Erro clássico | O que muda a etapa seguinte |
+|---|---|---|---|
+| Úlcera de língua persistente endurecida | Exame completo e biópsia dirigida | Tratar indefinidamente como afta | Histologia, DOI, extensão e pescoço |
+| Adenopatia cervical firme >2 semanas | Exame mucoso + imagem contrastada + PAAF conforme risco | Biópsia aberta precoce | Citologia, localização nodal, busca do primário |
+| Massa cervical cística adulta sem causa infecciosa | Não presumir benignidade | Diagnóstico automático de cisto branquial | Amostragem adequada e investigação HPV relacionada |
+| Efusão unilateral de orelha em adulto com epistaxe | Examinar nasofaringe | Repetir apenas descongestionantes | Endoscopia, biópsia, imagem |
+| Rouquidão persistente com fatores de risco | Visualizar laringe | Repetir sintomáticos indefinidamente | Endoscopia, mobilidade, amostra |
+| Estridor com massa cervical/laríngea | Segurança da via aérea em ambiente adequado | Priorizar PET-CT eletivo | Estabilização e histologia posterior |
+| Massa parotídea com déficit facial | Suspeitar neoplasia relevante | Tratar como linfonodo reacional simples | Imagem e tipagem glandular |
+| Disfagia com perda ponderal/aspiração | Investigar e iniciar suporte nutricional/funcional | Adiar reabilitação até após RT | Histologia, extensão, segurança da alimentação |
+| CEC orofaríngeo p16+ | Estadiar e discutir tratamento de modo específico | “HPV bom = sem necessidade de tratar” | Tumor, linfonodos, risco e prognóstico |
+| Recidiva após terapia | Confirmar doença e reavaliar ressecabilidade/objetivos | Repetir automaticamente o mesmo tratamento | Tratamento prévio, local, função, opções de resgate |
+
+## 29. Perguntas orais estilo banca — justificar, não decorar
+**1. Por que a PAAF costuma anteceder a biópsia aberta no pescoço?**  
+Porque frequentemente estabelece linhagem neoplásica sem dissecção de planos, orienta exames de busca do sítio primário e evita uma operação diagnóstica potencialmente desnecessária ou inadequadamente planejada. Não é uma proibição absoluta de biópsia aberta; é ordenação da investigação por risco e rendimento.
+
+**2. Por que um tumor pequeno de orofaringe pode chegar com grande massa cervical?**  
+Porque a disseminação linfática pode anteceder sintomas locais notáveis; primários em criptas tonsilares/base da língua podem ser discretos, enquanto linfonodos tornam-se palpáveis e podem degenerar cisticamente.
+
+**3. O que distingue DOI de espessura tumoral?**  
+DOI refere-se à extensão invasiva medida a partir do plano esperado da mucosa normal adjacente; espessura se relaciona à extensão total do perfil tumoral e pode incluir crescimento exofítico. A distinção altera entendimento de risco de disseminação em CEC da cavidade oral.
+
+**4. Por que existe associação entre nasofaringe e otite serosa unilateral?**  
+Uma lesão na parede lateral da nasofaringe pode interferir na função da tuba auditiva, produzindo efusão na orelha média. Os sinais combinados (epistaxe, obstrução nasal, adenopatia e alterações de nervos cranianos) tornam a investigação ainda mais necessária.
+
+**5. Por que “salvar a laringe” não é só preservar cartilagens?**  
+Porque uma laringe sem proteção de via aérea, com aspiração importante ou sem voz funcional pode não realizar suas funções fundamentais. O resultado deve incluir respiração, deglutição, fonação, controle tumoral e autonomia.
+
+**6. Por que as DDT brasileiras e fontes internacionais não podem ser fundidas como se fossem uma única norma?**  
+Porque uma diretriz histórica publicada no SUS e uma autorização regulatória nova em outro país podem tratar de populações, acessos e níveis de evidência diferentes. O estudante deve distinguir recomendação clínica de incorporação/financiamento e registrar a vigência de cada documento.
+
+## 30. Banco de microerros para integrar flashcards e caderno de erros
+- Erro: “língua = sempre cavidade oral”. Correção: distinguir língua móvel e base da língua.
+- Erro: “sem cigarro não existe CEC de orofaringe”. Correção: considerar HPV.
+- Erro: “nódulo cervical cístico é benigno”. Correção: pesquisar metástase cística no adulto.
+- Erro: “p16 prova transmissão sexual recente”. Correção: marcador tumoral contextual, não data infecção.
+- Erro: “primário oculto = ausência de câncer”. Correção: câncer metastático comprovado, origem não encontrada.
+- Erro: “linfonodo N0 não precisa nunca de estratégia nodal”. Correção: avaliar risco microscópico.
+- Erro: “DOI e espessura são iguais”. Correção: técnicas e significados diferentes.
+- Erro: “toda parótida maligna é CEC”. Correção: tumores salivares têm histologias diversas.
+- Erro: “EBV positivo em sangue prova carcinoma nasofaríngeo”. Correção: contexto, método e histologia importam.
+- Erro: “órgão preservado = função preservada”. Correção: medir fala, deglutição e aspiração.
+- Erro: “FDA autorizou = SUS incorporou”. Correção: regulação e incorporação independentes.
+- Erro: “rastrear todos assintomáticos e investigar úlcera persistente são a mesma coisa”. Correção: rastreamento e diagnóstico precoce de sintomáticos são estratégias distintas.
+
+## 31. Referências suplementares e trilha científica
+As fontes a seguir acrescentam escopo específico, sem substituir a precedência das fontes brasileiras:
+8. National Cancer Institute. Laryngeal Cancer Treatment, na coleção de tratamentos para profissionais de saúde: https://www.cancer.gov/types/head-and-neck/hp/adult  
+9. National Cancer Institute. Hypopharyngeal Cancer Treatment (PDQ), versão profissional: https://www.cancer.gov/types/head-and-neck/hp/adult/hypopharyngeal-treatment-pdq  
+10. National Cancer Institute. Salivary Gland Cancer Treatment (PDQ), versão profissional: https://www.cancer.gov/types/head-and-neck/hp/adult/salivary-gland-treatment-pdq  
+11. Instituto Nacional de Câncer. Estimativas e fatores de risco em câncer de boca e orofaringe: https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-populacao/
+
+### Auditoria incremental após etapa 02
+**Conteúdo adicionado nesta etapa:** aprofundamento de cavidade oral/DOI, prognóstico e possibilidades terapêuticas de orofaringe, biologia de nasofaringe, laríngeo/hipofaríngeo, histologias salivares, primário oculto, patologia, reabilitação, comunicação, quatro casos adicionais, seis questões originais e matriz de decisões.  
+**Permanecem obrigatórios:** normalização e incorporação desses capítulos nas seções correspondentes sem redundância; revisão do TNM formal aplicável por sítio e edição; detalhamento terapêutico e contraindicações com diretrizes atuais; auditoria de similaridade/editorial; imagens reais com licença adequada e aprovação no Admin; avaliação por especialista; testes de casos/questões usando somente o texto da aula; auditoria automática, desktop/PWA e certificação.  
+**Publicação:** NÃO AUTORIZADA por esta entrega.
