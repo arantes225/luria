@@ -274,3 +274,31 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 **Bloqueios de publicação, ambos:** revisão independente, checagem brasileira integral de farmacologia e antibióticos por faixa/renal para 122, confirmação do texto/edição dos livros históricos para 130, inspeção de redundância, teste de questões externas, curadoria de imagens realmente úteis com licença comercial e aprovação Admin, e validação HTML/PWA. **Não houve deploy, alteração de HTMLs, integração à biblioteca nem envio de imagens ao Admin.**
 
 **Próxima ação orientada por lacuna, não por quantidade:** auditar a aula **126 (Cirrose e complicações)** mesmo já robusta, revisar a integração de complementos da **124 Sangramento Uterino Anormal**, **129 Amenorreia** e **134 SOP/SOMP** preservando os HTMLs pré-existentes, e seguir a matriz 121–140 sem replicar textos de cursos.
+
+
+## 15/10/2026 — atualização da aula 126 e auditoria de integração 124/129/134
+
+**Procedimento efetivo:** `lead.apostilas.txt` foi lido antes das ações. Reabertos os padrões `PRODUCAO_EM_LOTE.md`/`EDITORIAL_STANDARD.md`, a aula 126 e os HTMLs de SUA, Amenorreia e SOP/SOMP. Fontes Drive **efetivamente lidas antes da edição médica** de 126: `04 - GASTRO - ASCITE + PBE.pdf` (7.629 caracteres extraídos); `05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf` (8.159); `06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf` (6.654). Autoria Estratégia MED não demonstrada; material de circulação “Medicina livre” **não comprova autoria dos PDFs**. Os três são benchmarks **parciais** de complicações e não substituem livro completo de cirrose.
+
+### 126 — Cirrose e complicações
+- **Rascunho:** `_rascunhos/lote-07-aula-126-cirrose-complicacoes.md`.
+- **Antes:** 53.172 caracteres, quatro casos e seis questões.
+- **Após alterações e refetch:** **93.840 caracteres brutos**, **nove casos clínicos** e **14 questões de quatro alternativas comentadas**. Diferença: **+40.668 caracteres brutos**.
+- **Novas competências e capítulos:** Baveno VII (CSPH, TE/plaquetas e exceções da obesidade), decisão de carvedilol/EDA; ascite resistente/intratável; albumina em LVP, PBE e HRS com regimes **não intercambiáveis**; TIPS e risco cardíaco/encefalopático; hiponatremia dilucional versus hipovolêmica; bacterascite e peritonite secundária; limites de profilaxia antibiótica PBE e resistência; classificação ADQI–ICA 2024 da IRA/HRS sem exigência universal de albumina por 48h; risco respiratório de terlipressina; ACLF segundo EASL versus AASLD; distúrbios pulmonares e hemostasia.
+- **Benchmark confrontado:** o resumo Drive antigo usava como obrigatório “albumina por dois dias para diagnosticar SHR”; isso **não foi reproduzido**. Atualização verificada na fonte primária ADQI–ICA 2024. O PDF de ascite equiparava GASA a transudato/exsudato, corrigido na LURIA.
+- **Fontes primárias:** Baveno VII 2022, AASLD ascite/PBE 2021, ADQI–ICA 2024, EASL ACLF 2023, AASLD atual de ambulatório; URLs dentro da aula.
+- **Qualidade:** já ultrapassou 60 mil **caracteres brutos**; ainda não há certificação de 60 mil úteis nem teste independente de autossuficiência; revisão médica profissional, doses brasileiras completas, imagens com licença e testes HTML/PWA pendentes. **NÃO DEPLOYADO.**
+
+### 124/129/134 — inspeção real da integração, não edição de HTML
+
+**Novo documento de auditoria:** `_rascunhos/lote-07-auditoria-integracao-124-129-134.md` (**9.865 caracteres; criado e reaberto**) registra blob SHA de cada HTML, âncoras verificadas, conteúdo já existente, local correto para os oito itens de cada complemento e passos de QA.
+
+| Aula | Estado publicado confirmado por leitura do HTML | Complemento | Ação futura sem destruir material existente |
+|---|---|---|---|
+| **124 SUA** | `#casos` com seis casos resumidos; `#revisao` contém revisão em tabela; não há bloco padronizado de MCQs | Oito questões comentadas e extensão dos seis casos | Expandir os seis casos **em seus locais**; adicionar MCQs com âncora única `#questoes` e atualizar índice |
+| **129 Amenorreia** | `#casos` tem minicasos **e checkpoints clínicos adicionais**; `#questoes` já tem cinco perguntas curtas | Oito MCQs comentadas | Preservar os checkpoints e cinco perguntas; **acrescentar** MCQs dentro do mesmo `#questoes`, sem duplicar ID |
+| **134 SOP/SOMP** | Cinco casos de decisão; `#questoes` já possui **cinco itens interativos** com botão `fixation-toggle` e gabarito oculto | Oito MCQs comentadas | Preservar interação existente, criar agrupamento adicional no mesmo bloco `#questoes` |
+
+**Motivo de não publicar automaticamente:** a norma de produção exige comparação e validação científica, renderização e fluxo gerador; editar HTML publicado sem revisar algoritmo de questões e eventos JS arriscaria regressão no PWA, sobretudo durante trabalho simultâneo em Codex. A auditoria já elimina dúvida sobre **onde** integrar e o que preservar.
+
+**Próximas prioridades:** completar verificação médica/editorial das menores ou menos autossuficientes, obter imagens clínicas com licença e aprovação Admin, aplicar as três integrações mediante QA autorizado, e conferir qualidade global das aulas 121–140 antes de chamar o lote “concluído”. A documentação anterior deste inventário contém fotografias históricas de tamanhos: para 126, vale a versão verificada de **93.840 caracteres** desta seção, não o tamanho antigo.
