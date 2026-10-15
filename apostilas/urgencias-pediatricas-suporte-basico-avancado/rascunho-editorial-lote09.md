@@ -571,11 +571,736 @@ Na alta, revisar tratamento, imunizações, dieta/reabilitação, sinais de aler
 - [x] Asma GINA 2026, bronquiolite, anafilaxia, crupe/estridor.
 - [x] Convulsões, hipoglicemia, CAD, gastroenterite, febre do lactente e trauma.
 - [x] Segurança medicamentosa e principais erros de dose.
-- [ ] Casos clínicos completos com cenários de ressuscitação.
-- [ ] Questões autorais com comentários de cada alternativa.
-- [ ] Curadoria de 10+ imagens/diagramas aprováveis.
+- [x] 14 casos clínicos completos com cenários de ressuscitação (seção 33).
+- [x] 20 questões autorais com comentários de cada alternativa (seção 34).
+- [x] Curadoria proposta de 18 imagens/diagramas, aprovação ainda pendente (seção 35).
 - [ ] Revisão de cada dose de medicamento por pediatra emergencista e farmacêutico clínico.
 - [ ] Conferência das atualizações brasileiras de convulsão, bronquiolite, anafilaxia, trauma, ventilação e CAD.
 - [ ] Confirmação de links e licenças de imagens.
 - [ ] Conversão ao formato nativo da LURIA, testes desktop/PWA e cronograma.
 - [ ] Aprovação clínica independente antes de publicação.
+
+
+---
+
+## 33. Casos clínicos comentados: apresentação, diagnóstico, conduta e armadilha
+
+Os casos são fictícios e autorais. A condução de emergências reais exige equipe treinada, disponibilidades locais e execução dos protocolos oficiais de suporte de vida; o objetivo é ensinar prioridades, não substituir certificação PALS.
+
+### Caso 1 — Lactente com bronquiolite e apneias
+
+**Apresentação:** Lactente de seis semanas, nascido a termo, tem coriza há quatro dias, mamadas reduzidas e episódio de pausa respiratória observado pelos pais. Na emergência: FR variável, retrações subcostais, SpO₂ 89% em ar ambiente, FC 165/min, irritabilidade alternando com sonolência.
+
+**Hipótese principal e diferenciais:** Bronquiolite viral com hipoxemia e apneia possível, com risco de falência respiratória. Diferenciais: sepse do lactente, pneumonia, cardiopatia congênita e coqueluche dependendo da história.
+
+**Raciocínio clínico:** A idade é fator de alto risco. Um episódio de apneia pode ser a manifestação que antecipa deterioração; não se deve tranquilizar apenas por poucos sibilos. TAP sugere comprometimento respiratório e, se sonolência progressiva, aparência alterada. A reavaliação do trabalho ventilatório e alimentação indica necessidade de suporte.
+
+**Exames e interpretação:** Monitorização contínua de SpO₂ e apneias, avaliação de perfusão/hidratação, glicemia se alteração de consciência; exames infecciosos conforme idade, febre, sinais sistêmicos e protocolo. RX e painéis virais não são obrigatórios em bronquiolite típica, mas podem ser indicados em apresentações atípicas.
+
+**Conduta e acompanhamento:** Apoio de via aérea, aspiração nasal suave quando pertinente, oxigênio por hipoxemia, hidratação segura e observação hospitalar com capacidade de escalar suporte; acionar equipe pediátrica/UTI se apneias recorrentes ou fadiga. Não usar rotineiramente broncodilatador, corticoide e antibiótico sem indicação.
+
+**Por que este caso importa:** A frequência de apneia e a reserva respiratória do lactente tornam a evolução mais importante que a quantidade de sibilância.
+
+### Caso 2 — PCR não chocável após insuficiência respiratória
+
+**Apresentação:** Criança de três anos com pneumonia grave chega inconsciente, sem respiração normal. Profissional não detecta pulso em dez segundos; monitor mostra assistolia. Equipe dispõe de BVM, desfibrilador e acesso IO.
+
+**Hipótese principal e diferenciais:** Parada cardiorrespiratória pediátrica com ritmo não chocável, provável causa respiratória/hipóxica.
+
+**Raciocínio clínico:** Não há indicação de choque em assistolia. É necessário iniciar compressões eficazes e ventilação, obter acesso e administrar epinefrina cedo. Não deixar intubação prolongada interromper compressões; a causa hipóxica precisa ser corrigida.
+
+**Exames e interpretação:** Monitorização, capnografia quando via aérea avançada, avaliação de ritmo a cada ~2 min, glicose/eletrólitos e causas reversíveis conforme viabilidade; exame crítico não interrompe RCP.
+
+**Conduta e acompanhamento:** RCP 100–120/min, profundidade ≥1/3 do tórax e ventilação apropriada, epinefrina IV/IO 0,01 mg/kg de 0,1 mg/mL com máximo 1 mg e intervalos 3–5 min, tratar hipóxia/infecção e apoiar equipe. Reavaliar ROSC e iniciar cuidados pós-PCR.
+
+**Por que este caso importa:** O ritmo não chocável não recebe descarga; compressão, ventilação e epinefrina são prioritárias.
+
+### Caso 3 — Fibrilação ventricular em adolescente atleta
+
+**Apresentação:** Adolescente de 14 anos colapsa durante treino de futebol. Está inconsciente e sem pulso. Desfibrilador identifica fibrilação ventricular; massa corporal estimada por método institucional em 50 kg.
+
+**Hipótese principal e diferenciais:** PCR com ritmo chocável FV, com investigação posterior de cardiopatia/arrítmia hereditária ou miocardite.
+
+**Raciocínio clínico:** O primeiro objetivo é choque imediato com energia pediátrica por peso sem interromper RCP por muito tempo. O cálculo 2 J/kg para 50 kg corresponde a 100 J no primeiro choque; 4 J/kg corresponde a 200 J no segundo, respeitando capacidades/máximo e algoritmo. Conduzir Hs e Ts e preservar traçado para análise posterior.
+
+**Exames e interpretação:** ECG/monitor durante reanimação, capnografia se via aérea avançada; após ROSC, eletrólitos, ECG 12 derivações, eco, miocardite/tóxicos conforme apresentação e antecedentes familiares.
+
+**Conduta e acompanhamento:** Desfibrilar prontamente, retomar RCP por ciclos, garantir ventilação, acesso IV/IO e fármacos do algoritmo quando refratário; pós-ROSC em UTI, investigação cardíaca e aconselhamento familiar conforme diagnóstico.
+
+**Por que este caso importa:** O choque para FV não é cardioversão sincronizada; a investigação etiológica começa depois de medidas que preservam vida.
+
+### Caso 4 — Bradicardia grave com pulso e hipoxemia
+
+**Apresentação:** Lactente de dez meses em insuficiência respiratória progressiva apresenta FC 54/min, SpO₂ 70% e alteração de consciência, mas pulso central ainda palpável. Equipe considera atropina antes de ventilar.
+
+**Hipótese principal e diferenciais:** Bradicardia sintomática hipóxica com comprometimento cardiopulmonar, pré-PCR.
+
+**Raciocínio clínico:** Em lactentes, a bradicardia costuma ser consequência de hipóxia. A prioridade é abrir via aérea e ventilação com pressão positiva; se frequência permanece <60/min com má perfusão apesar de ventilação, iniciar RCP. Atropina tem papel apenas se vagotonia/bloqueio AV, e não deve substituir suporte respiratório.
+
+**Exames e interpretação:** Monitor, glicemia se possível, capnografia/oximetria, investigação de causa respiratória, distúrbio de eletrólitos/hipotermia, sem atrasar ventilação.
+
+**Conduta e acompanhamento:** BVM eficiente imediatamente e monitorização; RCP se critério após medidas iniciais, epinefrina IV/IO conforme PALS. Preparar via aérea avançada por profissional capacitado e equipe de transporte/UTI.
+
+**Por que este caso importa:** O algoritmo de bradicardia com pulso é desenhado para evitar deterioração até assistolia.
+
+### Caso 5 — TSV em lactente estável versus instável
+
+**Apresentação:** Lactente de sete meses chega com palidez e irritabilidade súbitas; FC 255/min regular, QRS estreito, PA mantida, pulsos palpáveis e sem alteração importante de consciência. Depois de tentativa vagal apropriada, taquicardia persiste.
+
+**Hipótese principal e diferenciais:** Taquicardia supraventricular regular com pulso e, inicialmente, sem comprometimento cardiopulmonar importante.
+
+**Raciocínio clínico:** FC acima de 220 em lactente e início súbito favorecem TSV sobre taquicardia sinusal, mas a decisão depende de ECG/perfusão. Adenosina em acesso de boa qualidade pode reverter; se ocorrer choque/alteração mental, cardioversão sincronizada é prioritária.
+
+**Exames e interpretação:** ECG 12 derivações se não atrasar, tira de ritmo contínua, glicemia/eletrólitos conforme história, avaliação cardíaca após reversão.
+
+**Conduta e acompanhamento:** Manobra vagal segura, adenosina IV/IO 0,1 mg/kg em bolus rápido e flush (máx 6 mg), repetição 0,2 mg/kg (máx 12 mg) quando indicada. Preparar cardioversão 0,5–1 J/kg, aumentando a 2 J/kg se comprometimento/ineficácia, sem retardar estabilização.
+
+**Por que este caso importa:** TAQUICARDIA instável com pulso usa cardioVERSÃO sincronizada; FV/TV sem pulso usa desFIBRILAÇÃO.
+
+### Caso 6 — Choque séptico com UTI disponível
+
+**Apresentação:** Criança de cinco anos com pneumonia bacteriana provável tem febre alta, letargia, taquicardia, perfusão periférica lentificada, oligúria e lactato elevado, mantendo PAS inicialmente normal. Há UTI pediátrica e transporte avançado disponíveis.
+
+**Hipótese principal e diferenciais:** Sepse com disfunção orgânica e choque séptico compensado, ainda sem hipotensão.
+
+**Raciocínio clínico:** Pressão normal não impede reconhecer choque. A SSC 2026 recomenda antibiótico idealmente em ≤1h e bolus de cristaloide de 10–20 mL/kg em sistema com UTI, titulados por perfusão e sinais de sobrecarga, até limite orientador de 40–60 mL/kg no primeiro período. Não dar volume máximo por reflexo nem aguardar culturas se atrasarem terapia.
+
+**Exames e interpretação:** Hemoculturas se não causam atraso, lactato inicial/seriando, hemograma, eletrólitos, função renal, gasometria conforme gravidade, culturas e imagem de foco quando útil.
+
+**Conduta e acompanhamento:** Acesso IV/IO, antibiótico empírico dirigido à epidemiologia local, cristaloides titulados, reavaliação a cada bolus, controle do foco e vasoativo se perfusão inadequada; iniciar por periférico monitorizado se CVC ainda não estiver disponível e houver indicação.
+
+**Por que este caso importa:** Sepse pediátrica 2026 diferencia reanimação por estrutura disponível e promove vasoativo sem atraso desnecessário.
+
+### Caso 7 — Infecção com hipoperfusão em unidade sem UTI
+
+**Apresentação:** Menino de três anos apresenta febre, taquicardia e enchimento capilar prolongado, mas PAS preservada. Unidade rural não dispõe de UTI, intubação ou vasoativos imediatos. Profissional planeja infundir 60 mL/kg rapidamente.
+
+**Hipótese principal e diferenciais:** Sepse provável com hipoperfusão, em sistema sem acesso local à terapia intensiva, sem hipotensão documentada.
+
+**Raciocínio clínico:** O risco de bolus rápido sem suporte intensivo foi incorporado à recomendação de 2026: em sepse sem hipotensão em sistema sem UTI, não fazer bolus fluidos de rotina, iniciando manutenção e cuidando de antibiótico, monitorização e transferência. O estado deve ser reavaliado porque hipotensão ou mudança de disponibilidade alteram algoritmo.
+
+**Exames e interpretação:** Perfusão seriada, PAS com manguito adequado, SpO₂, glicemia, lactato se disponível, investigação de foco sem atrasar transferir.
+
+**Conduta e acompanhamento:** Ativar regulação/transferência urgente, acesso e medidas de suporte, antibiótico oportuno, fluidos de manutenção e monitorização. Reavaliar necessidade de bolus de acordo com hipotensão, sinais de choque, possibilidade de resgate e protocolo atualizado.
+
+**Por que este caso importa:** A existência de UTI no sistema muda o risco-benefício do bolus.
+
+### Caso 8 — Anafilaxia após alimento sem urticária
+
+**Apresentação:** Menino de nove anos come alimento contendo amendoim e minutos depois desenvolve tosse persistente, rouquidão, estridor, tontura e hipotensão. Não apresenta urticária evidente. Equipe administra anti-histamínico e espera resposta.
+
+**Hipótese principal e diferenciais:** Anafilaxia grave com comprometimento respiratório e circulatório, mesmo sem manifestação cutânea.
+
+**Raciocínio clínico:** Ausência de urticária não exclui anafilaxia. Adrenalina IM é tratamento que muda mortalidade; anti-histamínico não reverte edema de via aérea nem choque rapidamente. A preparação da via aérea pode ser difícil devido a edema progressivo.
+
+**Exames e interpretação:** Diagnóstico clínico; monitorização, glicemia se alteração mental, exames após estabilização quando úteis. Dosagem de triptase não deve atrasar epinefrina.
+
+**Conduta e acompanhamento:** Epinefrina IM 0,01 mg/kg de solução 1 mg/mL no vasto lateral, respeitando máximo pediátrico e repetição em 5–15 min conforme evolução; oxigênio, reposição volêmica se choque e suporte avançado. Observação após melhora e plano de prevenção/seguimento.
+
+**Por que este caso importa:** Adrenalina IM deve ser dada primeiro; a concentração não é a mesma da epinefrina IV/IO de PCR.
+
+### Caso 9 — Tórax silencioso em crise de asma
+
+**Apresentação:** Criança de oito anos asmática chega após duas horas de dispneia. Inicialmente sibilava intensamente; agora está sonolenta, fala palavras isoladas e a ausculta é quase silenciosa. SpO₂ 86%, retrações estão menores que antes.
+
+**Hipótese principal e diferenciais:** Exacerbação asmática com falência respiratória iminente; redução do sibilo por baixo fluxo.
+
+**Raciocínio clínico:** A queda do ruído/sinais de esforço após exaustão não representa melhora. Sonolência e hipoxemia são marcadores graves. É necessário iniciar tratamento e chamar equipe de suporte avançado, evitando sedativos de rotina.
+
+**Exames e interpretação:** Avaliação clínica sequencial, SpO₂ e eventualmente gasometria em gravidade/necessidade de ventilação. RX somente se suspeita adicional (pneumotórax, corpo estranho, pneumonia etc.).
+
+**Conduta e acompanhamento:** SABA inalatório/nebulizado repetido, ipratrópio, oxigênio, corticoide sistêmico precoce e considerar magnésio/UTI conforme protocolo; preparar ventilação controlada com estratégia segura por profissional experiente se falência.
+
+**Por que este caso importa:** Ausência de sibilância pode sinalizar obstrução extrema.
+
+### Caso 10 — Convulsão contínua durante cinco minutos
+
+**Apresentação:** Criança de quatro anos apresenta movimentos tônico-clônicos há seis minutos na emergência, sem recuperação. Mãe relata febre há um dia. O acesso venoso não está pronto; SpO₂ caiu e há secreção oral.
+
+**Hipótese principal e diferenciais:** Estado de mal epiléptico convulsivo, possivelmente febril, com risco imediato de hipoxemia e lesão neurológica.
+
+**Raciocínio clínico:** A duração ≥5 min exige tratamento. A falta de acesso não deve impedir benzodiazepina por via intranasal/bucal/IM conforme protocolo. Garantir via aérea e medir glicemia, mas não retardar cessação de convulsão. Investigação de meningite depende de idade, estado após crise e sinais de alarme.
+
+**Exames e interpretação:** Glicemia, eletrólitos se necessário, exame neurológico e foco infeccioso após estabilização; punção lombar/TC apenas por indicações, nunca como pré-requisito para benzodiazepina.
+
+**Conduta e acompanhamento:** Proteção e ventilação, benzodiazepina pela via disponível, monitor de depressão respiratória, segunda linha se crise persiste e UTI em refratariedade. Reavaliar febre, estado neurológico e causa.
+
+**Por que este caso importa:** O relógio de tratamento da convulsão começa aos cinco minutos, não após término de exames.
+
+### Caso 11 — CAD inaugural confundida com pneumonia
+
+**Apresentação:** Menina de 11 anos perde peso e bebe muita água há três semanas. Há dois dias iniciou vômitos e dor abdominal. Na emergência apresenta respiração profunda e rápida, hálito cetônico e taquicardia; SpO₂ 98%, sem crepitações. Glicemia capilar 420 mg/dL, pH 7,12 e cetonas elevadas.
+
+**Hipótese principal e diferenciais:** Cetoacidose diabética moderada/grave com respiração de Kussmaul, não taquipneia por hipoxemia pulmonar.
+
+**Raciocínio clínico:** A taquipneia é compensação da acidose; ventilação invasiva sem necessidade pode agravar riscos. Insulina IV deve começar após reanimação inicial e avaliação de K. Não dar bolus IV de insulina; a glicose pode normalizar antes da acidose, devendo manter insulina com glicose associada.
+
+**Exames e interpretação:** Eletrólitos, gasometria venosa, β-hidroxibutirato, função renal, sódio corrigido, glicemia seriada/horária, ECG e avaliação neurológica repetida.
+
+**Conduta e acompanhamento:** Cristaloide isotônico conforme hemodinâmica e protocolo CAD, avaliar/corrigir K, iniciar insulina regular IV 0,05–0,1 U/kg/h após cerca de uma hora de fluidos sem bolus, acrescentar dextrose quando necessário; observar sinais de lesão cerebral e internar conforme gravidade.
+
+**Por que este caso importa:** O problema imediato não é só açúcar alto: é cetose, acidose, volume, potássio e risco neurológico.
+
+### Caso 12 — Diarreia com choque hipovolêmico
+
+**Apresentação:** Lactente de 15 meses apresenta diarreia intensa e vômitos há 36h. Está letárgico, enchimento capilar de 5 s, mucosas muito secas, oligúria, taquicardia e extremidades frias. Não tem sinal focal respiratório.
+
+**Hipótese principal e diferenciais:** Choque hipovolêmico por desidratação grave, mas sepse e distúrbios metabólicos podem coexistir.
+
+**Raciocínio clínico:** O estado de perfusão exige ressuscitação rápida, não tentativa prolongada de SRO isolada. Deve-se monitorar resposta após cristaloide isotônico e buscar causas alternativas se persistirem sinais de choque.
+
+**Exames e interpretação:** Glicemia imediata, eletrólitos e renal, gasometria conforme gravidade, avaliação de perfusão/diurese e história de perdas, culturas se suspeita de infecção invasiva.
+
+**Conduta e acompanhamento:** Acesso IV/IO, cristaloide isotônico em bolus titulado segundo protocolo, reavaliação clínica, manutenção e correção de perdas/eletrólitos. Após estabilizar, SRO e realimentação conforme tolerância e prevenção.
+
+**Por que este caso importa:** Desidratação leve/moderada e choque desidratativo usam estratégias de hidratação diferentes.
+
+### Caso 13 — Torção testicular e trauma abdominal oculto
+
+**Apresentação:** Adolescente de 13 anos apresenta dor testicular súbita, vômitos e testículo elevado há três horas. Conta também que sofreu queda leve na bicicleta no dia anterior. Equipe quer fazer TC de abdome antes de avaliar escroto.
+
+**Hipótese principal e diferenciais:** Torção testicular até prova contrária, emergência tempo-dependente.
+
+**Raciocínio clínico:** O detalhe de trauma não explica necessariamente dor e posição do testículo; exames não relacionados podem consumir janela de salvamento. O diagnóstico é clínico em alta suspeita e US Doppler só deve ser obtido sem retardar cirurgia.
+
+**Exames e interpretação:** Exame genital e abdominal apropriados, analgesia e avaliação urológica urgente. Doppler em casos selecionados se acesso imediato e não atrasar exploração.
+
+**Conduta e acompanhamento:** Acionar urologia/cirurgia, manter preparação para exploração e destorção/fixação conforme equipe; sem espera por TC de abdome sem indicação.
+
+**Por que este caso importa:** Diante de urgência cirúrgica, um dado distraidor não deve dominar decisões.
+
+### Caso 14 — Queda de consciência após RCP bem-sucedida
+
+**Apresentação:** Menino de seis anos recupera circulação após PCR por afogamento. Apresenta coma, SpO₂ 100% sob FiO₂ alta e PAS no percentil baixo para idade. Um profissional afirma que a TC inicial normal garante recuperação neurológica.
+
+**Hipótese principal e diferenciais:** Síndrome pós-PCR com risco de lesão cerebral hipóxico-isquêmica e instabilidade, requerendo cuidados intensivos.
+
+**Raciocínio clínico:** Oxigênio excessivo não é objetivo; pós-PCR requer normoxia titulada, perfusão adequada, PaCO₂ apropriada, prevenir hipertermia, identificar convulsões e prognóstico multimodal ao longo do tempo.
+
+**Exames e interpretação:** ECG/eco se indicado, gases, glicose, eletrólitos, lactato, temperatura, EEG em avaliação neurológica, exames de imagem conforme quadro; não usar TC normal inicial como prova de prognóstico.
+
+**Conduta e acompanhamento:** UTI pediátrica, titular SpO₂ para 94–98% quando fisiologicamente apropriado, PA >percentil 10, evitar temperatura >37,5 °C, prevenir hipoglicemia e avaliar reabilitação.
+
+**Por que este caso importa:** O maior ganho pós-ROSC vem de evitar segunda lesão, não de interpretar precocemente um exame normal.
+
+
+
+## 34. Questões autorais LURIA — 20 questões com todas as alternativas comentadas
+
+Questões originais de residência/internato no padrão LURIA. Cada item possui justificativa individual de A a D e mini-revisão; não são cópias de questões de provas oficiais.
+
+### Questão 1 — Compressão no lactente — AHA 2025
+
+**Enunciado:** Em PCR de lactente fora da sala de parto, qual técnica de compressão é recomendada nas diretrizes AHA/AAP 2025?
+
+**A)** Somente dois dedos no esterno em todos os casos.
+
+**B)** Base de uma mão ou dois polegares envolvendo o tórax, conforme anatomia/resgatador.
+
+**C)** Compressão abdominal vigorosa.
+
+**D)** Apenas ventilação durante PCR por 10 min.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A técnica de dois dedos deixou de ser recomendada em 2025.
+- **Alternativa B:** As duas técnicas buscam profundidade adequada de 1/3 do tórax.
+- **Alternativa C:** Não é técnica de RCP.
+- **Alternativa D:** Ventilação é crucial, mas não substitui compressões na PCR.
+
+**Mini-revisão:** A atualização de 2025 altera uma orientação clássica cobrada em provas anteriores.
+
+### Questão 2 — Dois socorristas e RCP pediátrica
+
+**Enunciado:** Duas pessoas treinadas atendem criança pré-púbere em PCR, sem via aérea avançada. Qual razão compressão:ventilação?
+
+**A)** 30:2 obrigatoriamente.
+
+**B)** 15:2.
+
+**C)** 3:1 em toda idade.
+
+**D)** 100:1.
+
+**Gabarito: B.**
+
+- **Alternativa A:** 30:2 é usado por socorrista único e em outras condições do algoritmo.
+- **Alternativa B:** É a razão recomendada para dois socorristas pré-púberes sem via aérea avançada.
+- **Alternativa C:** 3:1 pertence ao contexto neonatal de sala de parto quando indicado.
+- **Alternativa D:** Não consta no algoritmo.
+
+**Mini-revisão:** Faixa etária, número de socorristas e via aérea modificam a proporção.
+
+### Questão 3 — FV pediátrica — energia inicial
+
+**Enunciado:** Criança de 20 kg está em FV sem pulso. Energia recomendada para o primeiro choque?
+
+**A)** 2 J/kg = 40 J.
+
+**B)** 4 J/kg = 80 J.
+
+**C)** 0,5 J/kg = 10 J.
+
+**D)** Somente 200 J fixos.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É a carga inicial do algoritmo pediátrico.
+- **Alternativa B:** É tipicamente a carga do segundo choque.
+- **Alternativa C:** Faixa se refere à cardioversão sincronizada inicial de taquiarritmia instável com pulso.
+- **Alternativa D:** Dose fixa ignora peso e máximo conforme algoritmo.
+
+**Mini-revisão:** FV/TVSP usa DESFIBRILAÇÃO; TSV instável com pulso usa CARDIOVERSÃO sincronizada.
+
+### Questão 4 — Assistolia e epinefrina
+
+**Enunciado:** Criança em PCR, monitor mostra assistolia. Qual próximo passo correto?
+
+**A)** Dar choque imediato.
+
+**B)** RCP com ventilação adequada e epinefrina IV/IO precoce.
+
+**C)** Interromper RCP para radiografia.
+
+**D)** Esperar parada evoluir para FV.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Assistolia não é ritmo chocável.
+- **Alternativa B:** É o tratamento indicado e busca corrigir causas reversíveis.
+- **Alternativa C:** Exame atrasa medidas vitais.
+- **Alternativa D:** Não existe razão para aguardar ritmo chocável.
+
+**Mini-revisão:** Em AESP/assistolia, a epinefrina deve ser administrada o mais cedo possível.
+
+### Questão 5 — Adrenalina PCR versus anafilaxia
+
+**Enunciado:** Qual associação é correta no atendimento pediátrico?
+
+**A)** PCR: epinefrina IM 1 mg/mL; anafilaxia: IV 0,1 mg/mL.
+
+**B)** PCR: epinefrina IV/IO 0,01 mg/kg de 0,1 mg/mL; anafilaxia: epinefrina IM 0,01 mg/kg de 1 mg/mL.
+
+**C)** Mesma via e concentração em ambas.
+
+**D)** Anafilaxia deve aguardar anti-histamínico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Inverte vias e concentrações, com risco grave.
+- **Alternativa B:** Doses em mg/kg podem coincidir, mas solução/via são distintas.
+- **Alternativa C:** A troca pode causar erro dez vezes.
+- **Alternativa D:** Epinefrina IM é primeira linha.
+
+**Mini-revisão:** Conferir sempre concentração e via antes de aspirar medicamento.
+
+### Questão 6 — Bradicardia e má perfusão
+
+**Enunciado:** Lactente hipóxico com FC 48/min e pulsos presentes, má perfusão persiste apesar de ventilação apropriada. Qual conduta?
+
+**A)** Iniciar compressões e seguir algoritmo PALS de bradicardia com comprometimento.
+
+**B)** Usar atropina exclusivamente sem corrigir hipóxia.
+
+**C)** Aguardar FC cair a zero.
+
+**D)** Desfibrilar imediatamente o ritmo sinusal.
+
+**Gabarito: A.**
+
+- **Alternativa A:** FC <60 com má perfusão persistente indica RCP.
+- **Alternativa B:** Atropina é para vagal/BAV, não cura hipóxia.
+- **Alternativa C:** A deterioração é iminente.
+- **Alternativa D:** Não há FV/TVSP para desfibrilar.
+
+**Mini-revisão:** A bradicardia hipóxica pediátrica é evento pré-PCR.
+
+### Questão 7 — TSV estável
+
+**Enunciado:** Lactente estável com TSV regular persistente após manobra vagal e acesso IV pronto. Qual dose inicial de adenosina?
+
+**A)** 0,1 mg/kg IV/IO rápida (máx 6 mg), com flush.
+
+**B)** 2 mg/kg IV contínua.
+
+**C)** 0,01 mg/kg IM da solução de adrenalina.
+
+**D)** 0,5–1 J/kg de desfibrilação não sincronizada.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É o primeiro bolus recomendado.
+- **Alternativa B:** Dose/via não correspondem.
+- **Alternativa C:** É outro medicamento.
+- **Alternativa D:** Instabilidade é condição que pode indicar cardioversão sincronizada, não desfibrilação de rotina.
+
+**Mini-revisão:** Na TSV refratária estável, a segunda dose pode ser 0,2 mg/kg (máx 12 mg).
+
+### Questão 8 — Tachyarrhythmia instável com pulso
+
+**Enunciado:** Criança com TSV e sinais de choque persiste taquicárdica. Melhor intervenção elétrica?
+
+**A)** Desfibrilação não sincronizada 2 J/kg como primeira medida elétrica.
+
+**B)** Cardioversão sincronizada 0,5–1 J/kg, aumentando a 2 J/kg se necessário.
+
+**C)** Compressão abdominal.
+
+**D)** Somente manobras vagais prolongadas.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Reservada a PCR chocável.
+- **Alternativa B:** É o algoritmo com pulso e comprometimento.
+- **Alternativa C:** Não trata TSV.
+- **Alternativa D:** Não deve atrasar estabilização.
+
+**Mini-revisão:** A palavra 'pulso' muda a decisão de energia e sincronismo.
+
+### Questão 9 — OVACE lactente 2025
+
+**Enunciado:** Lactente consciente tem OVACE grave. Qual sequência está de acordo com AHA 2025?
+
+**A)** Cinco golpes nas costas alternados com cinco compressões torácicas.
+
+**B)** Compressões abdominais vigorosas.
+
+**C)** Varredura digital às cegas.
+
+**D)** Apenas incentivar tosse ineficaz.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É a nova sequência.
+- **Alternativa B:** Contraindicado no lactente.
+- **Alternativa C:** Pode aprofundar objeto e lesionar.
+- **Alternativa D:** Tosse ineficaz significa obstrução grave.
+
+**Mini-revisão:** Na criança maior, alternam-se cinco golpes nas costas e cinco compressões abdominais.
+
+### Questão 10 — Sepse pediátrica 2026 e local sem UTI
+
+**Enunciado:** Criança com sepse provável, má perfusão, porém sem hipotensão, atendida em unidade sem UTI. Qual orientação da SSC pediátrica 2026?
+
+**A)** Bolus automático de 60 mL/kg.
+
+**B)** Não fazer bolus rotineiro; manutenção, antibiótico conforme avaliação e transferência/monitorização.
+
+**C)** Deixar sem acesso e observação.
+
+**D)** Esperar até ocorrer parada cardíaca.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode aumentar risco em ambiente sem suporte avançado.
+- **Alternativa B:** O contexto de recursos altera recomendação de fluidos.
+- **Alternativa C:** A criança precisa de cuidado estruturado.
+- **Alternativa D:** Hipotensão é sinal tardio.
+
+**Mini-revisão:** Disponibilidade de terapia intensiva faz parte da estratégia de fluidos.
+
+### Questão 11 — Choque séptico com UTI — fluidos
+
+**Enunciado:** Em sistema com UTI, criança com choque séptico recebe bolus de cristaloide e melhora, mas desenvolve crepitações. Como proceder?
+
+**A)** Dar mais 40 mL/kg compulsoriamente.
+
+**B)** Interromper/limitar bolus, reavaliar perfusão, congestão e possível vasoativo.
+
+**C)** Ignorar crepitações porque o limite ainda não chegou.
+
+**D)** Dar diurético a toda criança imediatamente sem reavaliar.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O teto não é obrigação terapêutica.
+- **Alternativa B:** Reavaliação após cada bolus é essencial.
+- **Alternativa C:** Congestão pode representar sobrecarga.
+- **Alternativa D:** Diurese/vasoativos dependem de contexto hemodinâmico.
+
+**Mini-revisão:** A frase 'até 40–60 mL/kg' não significa 'dar 60 mL/kg em todos'.
+
+### Questão 12 — Antibiótico na sepse
+
+**Enunciado:** Criança tem choque séptico provável. Segundo SSC 2026, antibiótico deve ser administrado:
+
+**A)** Somente após todas as culturas ficarem prontas.
+
+**B)** O mais cedo possível, idealmente em até uma hora após reconhecimento.
+
+**C)** Após 48 horas de observação.
+
+**D)** Apenas após normalizar lactato.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Culturas são colhidas sem atraso relevante, mas não devem impedir terapia.
+- **Alternativa B:** É a recomendação prioritária no choque.
+- **Alternativa C:** A espera é perigosa.
+- **Alternativa D:** Lactato é marcador auxiliar e não pré-requisito.
+
+**Mini-revisão:** Em sepse provável sem choque, a diretriz permite avaliação rápida por tempo limitado, com alvo de até três horas se preocupação sustentada.
+
+### Questão 13 — Bronquiolite em lactente
+
+**Enunciado:** Lactente apresenta primeiro episódio de sibilância após IVAS, com retrações leves. Qual manejo inicial é preferível?
+
+**A)** Corticoide sistêmico em todos.
+
+**B)** Suporte, avaliação da oxigenação/alimentação e hidratação conforme necessidade.
+
+**C)** Antibiótico por 14 dias em todos.
+
+**D)** Salbutamol inalatório fixo como tratamento obrigatório.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não é rotina em bronquiolite típica.
+- **Alternativa B:** É base do tratamento.
+- **Alternativa C:** Sem infecção bacteriana não há indicação.
+- **Alternativa D:** Broncodilatador não é rotina no quadro típico.
+
+**Mini-revisão:** Sibilância no lactente não equivale automaticamente a asma.
+
+### Questão 14 — Tórax silencioso
+
+**Enunciado:** Criança asmática deixa de sibilar, mas fica sonolenta e com saturação baixa. Qual interpretação?
+
+**A)** Melhora porque desapareceu o sibilo.
+
+**B)** Possível falência respiratória iminente por fluxo aéreo insuficiente.
+
+**C)** Oximetria não importa.
+
+**D)** É sinal de indicação de sedativo para tranquilizar.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Sem fluxo não há som.
+- **Alternativa B:** Sonolência, hipoxemia e tórax silencioso são sinais graves.
+- **Alternativa C:** Oximetria apoia avaliação.
+- **Alternativa D:** Sedação pode deprimir mais ventilação.
+
+**Mini-revisão:** Ruído respiratório desaparecendo pode ser piora, não melhora.
+
+### Questão 15 — Anafilaxia sem lesão de pele
+
+**Enunciado:** Após alimento, criança tem estridor e hipotensão sem urticária. Primeira linha?
+
+**A)** Anti-histamínico oral isolado.
+
+**B)** Epinefrina IM no vasto lateral da coxa.
+
+**C)** Só corticosteroide venoso.
+
+**D)** Observação passiva por duas horas.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não trata choque nem edema rapidamente.
+- **Alternativa B:** É intervenção tempo-dependente.
+- **Alternativa C:** Corticoide não substitui epinefrina.
+- **Alternativa D:** Atraso aumenta risco.
+
+**Mini-revisão:** Anafilaxia pode ocorrer sem urticária visível.
+
+### Questão 16 — Convulsão prolongada
+
+**Enunciado:** Criança convulsiona continuamente há seis minutos, sem IV. Qual decisão é correta?
+
+**A)** Esperar 30 minutos antes de medicar.
+
+**B)** Tratar como estado de mal e usar benzodiazepina pela via apropriada disponível, monitorando respiração.
+
+**C)** Levar primeiro para TC sem suporte.
+
+**D)** Introduzir objeto entre os dentes.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Tratamento começa a partir de cinco minutos.
+- **Alternativa B:** A via não venosa pode ser decisiva; suporte ABC é simultâneo.
+- **Alternativa C:** Imagem não precede estabilização.
+- **Alternativa D:** Pode causar trauma e não ajuda.
+
+**Mini-revisão:** Crise ≥5 min requer ação para interromper atividade convulsiva.
+
+### Questão 17 — CAD: insulina em bolus
+
+**Enunciado:** Menina com CAD tem glicemia 420, pH 7,1, potássio 2,8 mEq/L. Qual atitude inicial é adequada?
+
+**A)** Bolus IV de insulina regular imediatamente.
+
+**B)** Avaliar e corrigir hipocalemia, iniciar fluidos e somente então insulina IV contínua conforme protocolo.
+
+**C)** Bicarbonato em todas as crianças.
+
+**D)** Suspender controle eletrolítico após glicemia cair.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Bolus de insulina pode precipitar dano e agravar K baixo.
+- **Alternativa B:** K baixo requer atenção antes da insulina.
+- **Alternativa C:** Bicarbonato não é rotina.
+- **Alternativa D:** CAD termina quando resolve cetose/acidose, não somente glicose.
+
+**Mini-revisão:** A ISPAD 2022 recomenda 0,05–0,1 U/kg/h de insulina IV após fluidos, sem bolus.
+
+### Questão 18 — Criança após ROSC
+
+**Enunciado:** Após PCR, criança comatosa está estável, SpO₂ 100% sob oxigênio elevado. Qual objetivo AHA 2025?
+
+**A)** Manter hiperóxia deliberada por dias.
+
+**B)** Titular oxigênio para SpO₂ 94–98% ou alvo apropriado e evitar hipertermia >37,5 °C.
+
+**C)** Usar único exame neurológico imediato para prognóstico final.
+
+**D)** Permitir hipotensão persistente.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Hiperóxia pode ser prejudicial.
+- **Alternativa B:** É parte dos cuidados pós-PCR.
+- **Alternativa C:** Prognóstico exige múltiplas avaliações e tempo.
+- **Alternativa D:** Hipotensão deve ser prevenido/corrigido.
+
+**Mini-revisão:** A estabilização pós-PCR influencia desfecho neurológico.
+
+### Questão 19 — Glicemia e consciência
+
+**Enunciado:** Lactente chega letárgico após jejum e vômitos. Qual medida inicial é indispensável junto ao ABC?
+
+**A)** Verificar glicemia rapidamente e tratar hipoglicemia quando presente.
+
+**B)** Esperar teste genético antes de corrigir açúcar.
+
+**C)** Não monitorar porque criança não tem diabetes.
+
+**D)** Dar bebida por boca mesmo sem reflexo de deglutição.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Hipoglicemia é causa reversível de alteração neurológica.
+- **Alternativa B:** Estudos etiológicos não retardam tratamento.
+- **Alternativa C:** Hipoglicemia pode ocorrer sem diabetes.
+- **Alternativa D:** Há risco de aspiração em alteração de consciência.
+
+**Mini-revisão:** Em alteração mental pediátrica, glicemia é exame simples e tempo-dependente.
+
+### Questão 20 — Febre e meningite
+
+**Enunciado:** Lactente pequeno febril tem rebaixamento de consciência e sinais de choque. Qual é a prioridade?
+
+**A)** Punção lombar imediata sem avaliar estabilidade.
+
+**B)** Reanimação e antimicrobiano apropriado precocemente; culturas/PL quando seguras sem atrasar tratamento.
+
+**C)** Alta porque fontanela não está abaulada.
+
+**D)** Esperar rigidez nucal típica.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode ser perigoso em instabilidade.
+- **Alternativa B:** Suspeita de infecção invasiva exige intervenção imediata.
+- **Alternativa C:** Lactentes podem ter sinais sutis.
+- **Alternativa D:** Rigidez nucal pode estar ausente.
+
+**Mini-revisão:** A ausência de sinais meníngeos clássicos no lactente não exclui meningite.
+
+
+
+## 35. Curadoria visual de alta utilidade — 18 candidatas
+
+O objetivo é ensinar gestos de suporte de vida e interpretação clínica com imagens verificáveis, não decorar a apostila. A lista abaixo descreve **candidatas**, ainda não baixadas, licenciadas ou adicionadas ao site. Serão priorizados diagramas originais de algoritmos e exames reais apenas quando o reconhecimento visual modificar conduta.
+
+| Nº | Item | O que a imagem precisa ensinar | Procedência e validação |
+|---|---|---|---|
+| 1 | TAP — triângulo de avaliação pediátrica | Infográfico original com aparência, trabalho respiratório e circulação da pele | Diagrama LURIA; revisão por pediatra emergencista; sem rosto identificável |
+| 2 | Compressão de lactente — AHA 2025 | Dois esquemas da base de uma mão e dos dois polegares circundando tórax | Desenho autoral com referência AHA/AAP 2025; não reproduzir figura protegida sem licença |
+| 3 | RCP sem/ com via aérea avançada | Tabela 30:2, 15:2 e ventilação 20–30/min, além de pausas mínimas | Fluxo original com delimitação de puberdade e sala de parto |
+| 4 | PCR pediátrica chocável e não chocável | Algoritmo autoral 2 J/kg, 4 J/kg, epinefrina e causas reversíveis | Adaptado em texto, validar sequência fiel à AHA 2025 |
+| 5 | Bradicardia com comprometimento | Fluxograma HR <60 após suporte ventilatório, iniciar RCP, atropina apenas vagal/BAV | Arte autoral validada com AHA 2025 |
+| 6 | Taquiarritmia com pulso | ECG original/esquemático sinusal vs TSV e cardioversão quando instável | Evitar ECG real sem procedência; indicar se o exemplo é fictício |
+| 7 | OVACE em lactentes | Cinco golpes nas costas e cinco compressões torácicas | Ilustração técnica original sem exposição íntima |
+| 8 | OVACE em crianças | Cinco golpes nas costas, cinco compressões abdominais | Ilustração técnica original; validar ângulo e posição das manobras |
+| 9 | Choque séptico SSC 2026 | Matriz com UTI disponível vs indisponível, hipotensão, bolus/reavaliação | Infográfico autoral com DOI e data da diretriz |
+| 10 | Doses de adrenalina comparadas | Duas colunas PCR IV/IO 0,1 mg/mL e anafilaxia IM 1 mg/mL | Diagrama de segurança independente de marcas de produtos |
+| 11 | Asma grave — curva de esforço | Tórax silencioso e alteração mental como piora, não melhora | Esquema de sinais; evitar uso de dados clínicos fictícios como observacionais |
+| 12 | Radiografia de bronquiolite quando indicada | RX real em caso selecionado para explicar limitações do exame | Fonte hospitalar licenciada; RX não é exame rotineiro em bronquiolite típica |
+| 13 | Estado de mal convulsivo | Fluxo ≥5 min, benzodiazepina, segunda linha, refratariedade/UTI | Algoritmo original, revisar vias/doses com protocolo brasileiro |
+| 14 | CAD pediátrica — linha do tempo | Fluidos, potássio, insulina sem bolus, glicose na queda da glicemia, cetose | Diagrama original ISPAD 2022; alertar sobre lesão cerebral |
+| 15 | Gasometria de CAD | Tabela/laboratório fictício com glicose, pH, HCO3, K, cetonas e ânion gap | Dados explicitamente simulados, sem associar a pessoa real |
+| 16 | RM/TC de TCE em pediatria | Imagem real autorizada para discutir indicação vs evitar TC desnecessária | Fonte acadêmica licenciada, radiologista valida legenda |
+| 17 | Cuidados pós-PCR | Checklist de normoxia, PA, temperatura, EEG, reabilitação | Arte original AHA/AAP 2025 |
+| 18 | Triagem farmacológica pediátrica | Checklist mg/kg → dose máxima → concentração → mL → via → dupla checagem | Design original para reduzir erros de dez vezes |
+
+### Critérios técnicos de aprovação
+
+1. Conferir licença de cada figura original AHA, SCCM, GINA, ISPAD ou artigo antes de incorporar; site público não implica reprodução irrestrita. Para algoritmos, gerar arte **original** com citação e sem cópia literal do layout.
+2. Exames de RX, TC, gases e ECG devem ter origem, legenda contextualizada e distinção entre dados reais e simulados.
+3. Não utilizar fotos de pacientes pediátricos identificáveis quando um desenho didático sem identificação ensina a técnica adequadamente.
+4. Adotar WebP e respeitar limites da LURIA para exames, preservando traçados/achados diagnósticos.
+5. Atribuir alt text semântico e legenda contendo diagnóstico diferencial e limitações.
+6. Confirmar em revisão independente que a figura representa a **diretriz 2025/2026**, não esquema antigo reciclado.
+7. Testar responsividade, ampliação, contraste, carregamento PWA e acessibilidade após integração.
+8. Apresentar no Admin para aprovação e não inserir imagens de origem incerta.
+
+## 36. Duplo sistema de segurança: dose, concentração e via
+
+### 36.1. Matriz de conferência de adrenalina
+
+| Aspecto | PCR pediátrica | Anafilaxia pediátrica |
+|---|---|---|
+| Via habitual | IV/IO | IM, face anterolateral da coxa |
+| Dose base | 0,01 mg/kg | 0,01 mg/kg |
+| Concentração do exemplo de protocolo | **0,1 mg/mL** | **1 mg/mL** |
+| Volume para a dose base | 0,1 mL/kg da solução 0,1 mg/mL | 0,01 mL/kg da solução 1 mg/mL |
+| Máximo | 1 mg na PCR | Em geral 0,3 mg em pré-púberes, até 0,5 mg em adolescentes conforme protocolo |
+| Repetição | A cada 3–5 min durante PCR | Reavaliar e considerar repetir em 5–15 min se necessário |
+
+**Exemplo didático sem ser prescrição:** criança de 20 kg tem dose de 0,2 mg de epinefrina por 0,01 mg/kg. Na PCR, com **0,1 mg/mL**, isso corresponde a **2 mL por IV/IO**; na anafilaxia, com **1 mg/mL**, corresponde a **0,2 mL por IM**. A equivalência de mg NÃO autoriza trocar os frascos ou as vias. Conferir sempre rótulo real e protocolo antes de administrar.
+
+### 36.2. Energia elétrica calculada por peso
+
+Para criança de 20 kg: desfibrilação em FV/TVSP inicial **40 J**, segunda **80 J**; se terceiro choque indicado, dose **≥4 J/kg** sujeita a limite do algoritmo (10 J/kg ou dose máxima adulta). Para taquiarritmia **com pulso e comprometimento**, cardioversão sincronizada inicia em **10–20 J** (0,5–1 J/kg), escalando **40 J** (2 J/kg) se necessário. Nunca confundir o tipo de choque pela mera presença de taquicardia no monitor.
+
+### 36.3. Metas de frequência e razão
+
+- Compressões: **100–120/min**, profundidade ≥1/3 do tórax.
+- Sem via aérea avançada, um socorrista: **30:2**.
+- Sem via aérea avançada, dois socorristas pré-púberes: **15:2**.
+- Com via aérea avançada, compressões contínuas e **20–30 ventilações/min**.
+- Paradas neonatal **na sala de parto** seguem diretriz distinta, em que pode ser indicada relação **3:1**, não se misturando aos exemplos anteriores.
+
+## 37. Auditoria final desta fase
+
+**Estrutura:** texto principal em 32 seções, 14 casos completos e comentados, 20 questões autorais corrigidas alternativa por alternativa, 18 candidatas de imagens e quadros específicos de segurança de doses/energia.
+
+### Pontos críticos revisados
+- [x] Distinção de SBV pediátrico, SAV até 18 anos e reanimação neonatal no nascimento.
+- [x] AHA/AAP **2025** para técnica de compressão de lactentes sem dois dedos.
+- [x] AHA/AAP **2025** para OVACE: lactentes dorsais+torácicas e crianças dorsais+abdominais.
+- [x] Razões de compressão, profundidade, ventilação e pausas.
+- [x] PCR chocável versus não chocável e energia por kg.
+- [x] Diferença entre adrenalina IM na anafilaxia e IV/IO na PCR.
+- [x] Bradicardia com má perfusão e papel limitado da atropina.
+- [x] TSV e cardioversão sincronizada quando instável.
+- [x] SSC **2026**: antibiótico ≤1h em choque, ≤3h em sepse sem choque com investigação rápida, fluidos condicionais por acesso à UTI, vasoativo sem esperar CVC.
+- [x] GINA **2026** para asma e ISPAD para CAD sem bolus de insulina.
+- [x] Casos e questões suficientes para consolidar prova/prática.
+- [x] Curadoria visual proposta, não anunciada como implementada.
+
+### Pendências para publicação
+- [ ] Revisão por emergencista pediátrico, intensivista e farmacêutico clínico com verificação de todas as doses.
+- [ ] Conferir fluxos de febre em lactentes pequenos, meningite e antibióticos empíricos com protocolos nacionais/locais e taxas de resistência.
+- [ ] Revisar alvos de oxigênio por síndrome, especialmente a recomendação condicional SSC 2026 versus AHA pós-PCR, evitando extrapolação de um cenário a outro.
+- [ ] Validar contracepções/restrições em gestantes adolescentes somente onde pertinente a emergências.
+- [ ] Validar doses de broncodilatador, magnésio, anticonvulsivantes, glicose e hidrocortisona por idade/peso antes de transformar capítulo em prescrição.
+- [ ] Selecionar e licenciar imagens e produzir diagramas originais, converter em WebP, revisar pelo menos 10 aprovadas.
+- [ ] Converter rascunho para HTML/content.json do renderizador LURIA, com índice e módulos de questões.
+- [ ] Executar testes de desktop/PWA, navegação, alt text e desempenho.
+- [ ] Obter aprovação clínica e documental antes de marcar como apostila publicada.
+
+**Conclusão:** rascunho textual aprofundado para revisão especializada. Um commit confirma persistência do texto, não aprovação assistencial ou publicação da apostila no site.
