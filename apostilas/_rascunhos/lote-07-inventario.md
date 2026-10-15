@@ -368,3 +368,25 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 - Prosseguir integração cuidadosa, já mapeada em `lote-07-auditoria-integracao-124-129-134.md`, dos complementos SUA/Amenorreia/SOP **sem sobrescrever HTML publicado**.
 
 **Interpretação dos números:** tamanhos acima são caracteres **brutos de Markdown** (incluem tabelas, notas, referências e metadata); não demonstram sozinhos cumprimento dos 60 mil caracteres **didáticos úteis**.
+
+
+## 15/10/2026 — continuidade isolada da aula 123 (CPS 2026)
+
+**Branch:** \`editorial/lote-07-aula-123-cps-2026-20261015\`. **Documento alterado:** \`apostilas/_rascunhos/lote-07-aula-123-febre-sem-sinais-localizatorios.md\`. A versão final foi novamente buscada na branch e a seção \`26A\` confirmada.
+
+| Item | Antes da edição | Após edição |
+|---|---:|---:|
+| Caracteres brutos do Markdown (conector GitHub) | 78.900 | **102.027** |
+| Acréscimo documental | — | **23.127 caracteres** |
+| Casos numerados | 10 | **14** |
+| Questões numeradas | 14 | **20** |
+
+**Etapa zero:** foram **relidos** no Drive, antes da intervenção, “Pneumonia Comunitária na Pediatria.pdf” (1.196 caracteres textuais extraídos) e “Sepse neonatal.pdf” (2.032); ambos são resumos curtos e comparativos parciais, **não** livros equivalentes de febre sem sinais localizatórios, e não comprovaram autoria institucional Estratégia MED. A fonte LURIA anterior foi lida e mantida integralmente.
+
+**Novo conteúdo didático incorporado:** confrontação explícita AAP 2021 (8–60 dias) versus Canadian Paediatric Society 2026 (≤90 dias), limites de elegibilidade, termometria retal versus axilar, 61–90 dias, urina inflamatória e necessidade de LCR, febre pós-imunização com janela de 24 horas, teste respiratório positivo/rinovírus, HSV neonatal sem vesículas, punção traumática, segurança da alta. Adicionados casos clínicos **11 a 14** e questões comentadas **15 a 20**, sem remover casos/questões anteriores. Referências primárias e matriz complementar estão na seção 26A da aula.
+
+**Fonte primária mais recente conferida:** Canadian Paediatric Society, documento publicado em 2023 e atualizado em **27/05/2026**; URL oficial pública consta da aula. Comparação com a diretriz AAP 2021 mantida sem misturar faixas etárias e sem transpor doses estrangeiras ao SUS.
+
+**Limitações e gates em aberto:** 102.027 caracteres são **brutos**, não atestam ≥60 mil didáticos úteis nem autossuficiência. Falta revisão médica pediátrica/neonatal independente, confronto integral com protocolos nacionais e doses/diluições registradas no Brasil, benchmark Drive diretamente equivalente, curadoria de imagens com licença comercial e aprovação pelo Admin, transformação e teste de HTML/desktop/PWA, controle de redundância e teste independente de questões. **Não houve deploy, edição de apostilas HTML publicadas, alteração de catálogo nem integração de imagens.** A branch não foi mesclada à \`main\`.
+
+**Próximo passo para o lote 7:** revisar 124/129/134 para integração condicionada, ou complementar a checagem clínica nacional da aula 123. O lote **121–140** segue rascunho, sem certificação editorial de conclusão.
