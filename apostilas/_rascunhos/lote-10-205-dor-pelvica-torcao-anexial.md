@@ -387,3 +387,347 @@ Após indução da ovulação, ovários podem estar grandes, sensíveis e vascul
 
 **Dica de semântica clínica:** “mais provável” não significa “seguro para esperar”. Probabilidade orienta escolha inicial do teste, enquanto **risco de perder órgão ou vida** orienta velocidade da intervenção. Uma doença rara com alto dano potencial pode dominar a decisão mesmo quando a explicação mais comum é benigna.
 
+
+## 15. Casos clínicos comentados — aprender a decidir
+
+### Caso 1 — Adolescente com Doppler preservado e suspeita forte de torção
+
+Uma adolescente de 15 anos procura pronto atendimento com dor súbita em fossa ilíaca direita iniciada há cinco horas, acompanhada de quatro episódios de vômitos. Refere dor semelhante que durou cerca de trinta minutos na semana anterior e cedeu espontaneamente. Afebril, frequência cardíaca de 102 bpm, pressão estável, defesa localizada leve. β-hCG negativo. Ultrassom transabdominal demonstra ovário direito aumentado, com edema estromal, folículos periféricos e discreto líquido livre. O laudo informa **fluxo arterial presente**.
+
+**Hipótese principal:** torção anexial direita, possivelmente intermitente, com chance de recuperação funcional após destorção. **Diferenciais:** apendicite, cisto hemorrágico, cólica ureteral, enterite. A recorrência súbita e o vômito associados à assimetria ovariana reforçam torção.
+
+**Interpretação:** irrigação dupla do ovário e comprometimento venoso inicial explicam Doppler arterial preservado. Um Doppler normal não torna a torção impossível. Ausência de massa também não é impeditiva na adolescência.
+
+**Conduta:** analgesia e antiemético, preparo cirúrgico conforme avaliação, ginecologia cirúrgica imediata e laparoscopia diagnóstica oportuna diante da suspeita clínica elevada. Objetivo operatório: destorcer e preservar o ovário, não realizar ooforectomia com base exclusiva na coloração. Informar família e adolescente sobre indicação e incerteza diagnóstica com consentimento adequado.
+
+**Por que importa:** pergunta clássica de prova tenta usar o Doppler como critério absoluto de exclusão, induzindo atraso e perda ovariana.
+
+### Caso 2 — Dor pélvica, síncope e “atraso pequeno”
+
+Paciente de 29 anos apresenta dor hipogástrica e no ombro direito, seguida de síncope. Relata sangramento vaginal discreto há três dias, confundido com menstruação. FC 128, PA 86/54, extremidades frias. Teste de gravidez positivo. Ultrassom focado demonstra líquido livre abdominal, sem comprovação de saco intrauterino.
+
+**Hipótese principal:** hemoperitônio por gravidez ectópica rota até prova em contrário. **Diferenciais:** hemorragia por corpo lúteo roto, complicação de gestação intrauterina e hemorragias não ginecológicas.
+
+**Raciocínio:** o problema imediato é choque e provável hemorragia interna. Uma dosagem quantitativa de β-hCG pode auxiliar posteriormente, mas **não condiciona** suporte hemodinâmico ou intervenção. Um saco intrauterino não visto no ultrassom à beira do leito não é diagnóstico definitivo isolado de ectópica; neste caso, a instabilidade muda o limiar de ação.
+
+**Conduta:** ressuscitação, tipagem e reserva de sangue, equipe cirúrgica/ginecologia, avaliação para cirurgia urgente e comunicação à paciente/familiares conforme segurança e consentimento possível. Evitar encaminhar para observação de 48 horas.
+
+**Por que importa:** estabilidade e perfusão prevalecem sobre curvas hormonais em paciente sangrando.
+
+### Caso 3 — Gestação desejada e β-hCG positivo sem localização definida
+
+Paciente de 32 anos, com gestação desejada, dor leve unilateral e exame sem sinais peritoneais. β-hCG sérico de 980 UI/L. Ultrassom transvaginal não mostra saco intrauterino nem massa extrauterina definida; pequena quantidade de líquido simples no Douglas. Estável, sem queda de hemoglobina e com acesso confiável a retorno.
+
+**Classificação:** gestação de localização desconhecida, não “ectópica confirmada”. **Diferenciais:** gestação intrauterina precoce, ectópica inicial, gestação não evolutiva.
+
+**Interpretação:** o valor de β-hCG não determina local; gestação pode estar abaixo da detectabilidade por idade gestacional. Tratamento citotóxico sem diagnóstico adequado arrisca danificar gestação intrauterina potencialmente viável.
+
+**Conduta:** seguimento estruturado com nova dosagem quantitativa em intervalo recomendado e ultrassom conforme avaliação especializada, orientação para retorno urgente em piora de dor, sangramento, tontura ou síncope. Disponibilizar contato de serviço para reavaliação e documentar adesão possível ao seguimento.
+
+**Por que importa:** o conceito de GLD impede duas decisões opostas e erradas: tranquilização absoluta e tratamento prematuro de suposta ectópica.
+
+### Caso 4 — Dor súbita após relação sexual e líquido livre
+
+Paciente de 24 anos, não gestante, apresenta dor em fossa ilíaca esquerda após relação sexual, sem febre nem corrimento. Hemodinamicamente estável após analgesia. β-hCG negativo. Ultrassom transvaginal demonstra cisto de corpo lúteo com aspecto hemorrágico e pequena a moderada quantidade de líquido livre. Hemoglobina basal normal e sem piora em observação.
+
+**Hipótese:** ruptura de cisto hemorrágico, sem evidência atual de sangramento clinicamente significativo. **Diferenciais:** torção, ectópica com teste muito precoce em contexto específico, apendicite pélvica, DIP.
+
+**Raciocínio:** a hemorragia folicular/corpo lúteo explica a relação com ovulação, mas um cisto também aumenta susceptibilidade à torção. A dor persistente abrupta com vômitos e ovário aumentado levaria a avaliação cirúrgica, mesmo na presença do cisto.
+
+**Conduta:** analgesia, reavaliação de sinais vitais e intensidade da dor, hemograma seriado quando indicado, observação e alta orientada se evolução segura. Em deterioração, reavaliar sangramento e controle cirúrgico.
+
+**Por que importa:** “cisto encontrado” é uma evidência, não uma prova automática de benignidade clínica.
+
+### Caso 5 — DIP provável, mas um diagnóstico mais urgente precisa ser excluído
+
+Mulher de 23 anos relata três dias de dor hipogástrica progressiva, corrimento e dispareunia. FC 96, T 38 °C, dor à mobilização cervical e anexial bilateral. β-hCG negativo. Exame especular evidencia secreção mucopurulenta. Ultrassom não mostra massa complexa nem líquido livre volumoso.
+
+**Hipótese:** DIP não complicada. **Diferenciais:** ectópica (afastada no momento por teste e contexto adequados), apendicite, torção menos provável pela cronologia, infecção urinária.
+
+**Raciocínio:** múltiplos dados convergem para infecção genital superior; não se deve aguardar teste de clamídia/gonococo se o quadro clínico justificar tratamento empírico. Se surgirem defesa, dor lateral intensa ou peritonite, é obrigatório reconsiderar a hipótese.
+
+**Conduta:** avaliar critérios brasileiros de DIP e risco sexual, teste para IST quando indicado, esquema ambulatorial recomendado pelo PCDT/serviço se critérios de segurança forem satisfeitos; discutir parcerias e prevenção, retorno em 48–72 horas, antes se piorar.
+
+**Por que importa:** tratamento empírico oportuno e vigilância de diagnósticos cirúrgicos são condutas complementares, não concorrentes.
+
+### Caso 6 — Massa complexa, febre e falha de tratamento
+
+Paciente de 37 anos em tratamento de DIP há três dias mantém febre, vômitos e dor progressiva. FC 118, dolorimento hipogástrico e à palpação anexial. Ultrassom revela massa tubo-ovariana multiloculada com conteúdo complexo. β-hCG negativo.
+
+**Hipótese:** abscesso tubo-ovariano. **Diferenciais:** cisto hemorrágico complicado, endometrioma com infecção, apendicite com abscesso pélvico, neoplasia.
+
+**Raciocínio:** febre e massa complexa após falta de resposta ao antibiótico elevam preocupação com coleção e necessidade de controle de foco. Confundir toda massa anexial complexa com tumor ou todo quadro de DIP com caso ambulatorial atrasa a assistência.
+
+**Conduta:** internação, antibióticos de amplo espectro conforme protocolo, avaliação para drenagem ou cirurgia de acordo com instabilidade, ruptura, ausência de resposta, dimensão/complexidade e decisão da equipe. Monitorar sinais vitais, dor, marcadores de inflamação e tolerância oral.
+
+**Por que importa:** reconhecer quando antibioticoterapia isolada deixa de ser suficiente exige acompanhar tendência clínica, não esperar um prazo arbitrário com piora progressiva.
+
+### Caso 7 — Apendicite pélvica simulando problema ginecológico
+
+Paciente de 20 anos com 18 horas de dor inicialmente peri-umbilical, agora em FID, anorexia e febre baixa. Nega corrimento. β-hCG negativo. Exame abdominal com dor localizada e defesa moderada; toque bimanual, quando realizado por indicação e consentimento, revela sensibilidade pélvica inespecífica. US de pelve mostra pequeno cisto simples de 2 cm e ovários de volume habitual.
+
+**Hipótese:** apendicite aguda. **Diferenciais:** torção, cisto roto, DIP, ileíte terminal.
+
+**Raciocínio:** a narrativa migratória e defesa localizada têm peso maior que um pequeno cisto simples incidental. A anatomia do apêndice pélvico explica sintomas ginecológicos falsamente localizatórios.
+
+**Conduta:** avaliação cirúrgica, exames e imagem de abdome apropriada conforme idade, recursos e persistência da suspeita, analgesia e suporte. Evitar alta baseada somente em achado anexial benigno.
+
+**Por que importa:** um resultado positivo irrelevante pode desviar a atenção da hipótese perigosa correta.
+
+### Caso 8 — Indução de ovulação, dor e aumento anexial
+
+Paciente de 34 anos em tratamento de reprodução assistida relata distensão abdominal, náuseas e dor pélvica nova intensa à direita. O ultrassom prévio demonstrou ovários aumentados. FC 110, PA preservada. β-hCG positivo recente, localização ainda sob confirmação. US mostra ovário direito muito aumentado, líquido livre e imagem de pedículo suspeito.
+
+**Hipóteses:** torção em ovário hiperestimulado; coexistem possibilidade de hiperestimulação grave, sangramento de cisto e ectópica/heterotópica. **Raciocínio:** ovários aumentados pela estimulação são móveis e vulneráveis; hemoperitônio e gravidez exigem análise simultânea, sem atribuir tudo a “efeito esperado da fertilização”.
+
+**Conduta:** suporte/monitorização, equipe de reprodução e ginecologia cirúrgica, confirmação anatômica da gestação quando não houver atraso para controle de urgência, avaliação para laparoscopia se torção provável e correção de distúrbios associados.
+
+**Por que importa:** a presença de múltiplos fatores de risco aumenta a necessidade de revisar hipóteses em paralelo e de preservar tecido ovariano.
+
+## 16. Questões autorais estilo residência, com justificativa por alternativa
+
+### Questão 1 — A armadilha do Doppler
+
+Adolescente com dor unilateral abrupta, vômitos e ovário aumentado apresenta Doppler arterial presente. Qual é a conduta mais adequada?
+
+A) Excluir torção ovariana, pois o fluxo arterial preservado afasta isquemia.  
+B) Prescrever antibiótico e dar alta sem retorno, pois existe edema ovariano.  
+C) Solicitar avaliação ginecológica cirúrgica urgente; fluxo arterial não exclui torção.  
+D) Aguardar surgimento de fluxo ausente em exame de controle antes de chamar ginecologia.  
+E) Indicar ooforectomia aberta sem necessidade de exame ou discussão.
+
+**Gabarito: C.** O padrão clínico é compatível com torção e demanda avaliação oportuna; Doppler preservado pode refletir vascularização dupla ou torção parcial/intermitente. **A errada:** fluxo arterial não exclui obstrução venosa/torsão. **B errada:** edema não diagnostica infecção; alta sem segurança é inadequada. **D errada:** atraso deliberado pode prejudicar função. **E errada:** preservação anexial é princípio, e decisão operatória depende de avaliação especializada.
+
+**Mini revisão:** torção é diagnóstico cirúrgico; ultrassom ajuda, mas não “fecha” ou “exclui” com segurança.
+
+### Questão 2 — Gestação não localizada
+
+Pessoa com β-hCG positivo e ultrassom sem saco intrauterino ou ectópico visível, hemodinamicamente estável. Qual afirmação é correta?
+
+A) Trata-se necessariamente de ectópica.  
+B) Se β-hCG for baixo, ectópica torna-se impossível.  
+C) O diagnóstico adequado é gestação de localização desconhecida até nova avaliação.  
+D) Metotrexato deve ser administrado a todas imediatamente.  
+E) A ausência de saco intrauterino é sempre prova de abortamento completo.
+
+**Gabarito: C.** GLD exige seguimento e comunicação de sinais de alerta. **A errada:** gestação intrauterina precoce ou não evolutiva permanecem possíveis. **B errada:** ruptura ectópica pode ocorrer com níveis baixos. **D errada:** metotrexato requer critérios, contraindicações revisadas e exclusão de gestação intrauterina viável. **E errada:** ultrassom isolado não define história e localização.
+
+**Mini revisão:** β-hCG seriado informa tendência, enquanto localização depende de conjunto clínico e ultrassonográfico.
+
+### Questão 3 — Choque em paciente com gravidez positiva
+
+Mulher com síncope, hipotensão, dor intensa e β-hCG positivo. US à beira do leito sugere líquido livre intraperitoneal. Qual prioridade?
+
+A) Aguardar 48 horas para repetir β-hCG.  
+B) Ressuscitação e avaliação cirúrgica imediata por provável hemorragia intra-abdominal.  
+C) Alta com analgésicos por provável dor ovulatória.  
+D) Histeroscopia ambulatorial eletiva.  
+E) Radiografia simples de pelve antes de qualquer intervenção.
+
+**Gabarito: B.** Instabilidade e suspeita de hemorragia exigem suporte e controle de foco. **A errada:** curva seriada serve a pacientes estáveis selecionadas. **C errada:** incompatível com choque. **D errada:** não corrige hemoperitônio. **E errada:** radiografia não responde à ameaça principal e retarda assistência.
+
+**Mini revisão:** estabilidade hemodinâmica define urgência antes da etiologia definitiva.
+
+### Questão 4 — Clínica de DIP
+
+Paciente não gestante com dor baixa, secreção endocervical e dor à mobilização cervical, sem peritonite nem critérios de internação. Qual conduta é mais adequada?
+
+A) Só tratar após teste molecular positivo para gonorreia.  
+B) Iniciar tratamento empírico de DIP conforme protocolo e organizar seguimento precoce.  
+C) Dar antibiótico de dose única para cistite e encerrar investigação.  
+D) Retirar obrigatoriamente todo DIU antes de qualquer dose antimicrobiana.  
+E) Aguardar prova cirúrgica de salpingite em todas as pacientes.
+
+**Gabarito: B.** DIP é frequentemente diagnóstico clínico e tratamento tardio aumenta sequelas; confirmar segurança ambulatorial e continuar investigação diferencial. **A errada:** teste cervical negativo não elimina infecção genital superior. **C errada:** não fornece cobertura adequada. **D errada:** retirada de DIU não é automática. **E errada:** laparoscopia não é condição necessária na maior parte dos casos.
+
+**Mini revisão:** no PCDT-IST brasileiro, há critérios maiores/menores/elaborados; o CDC usa limiar terapêutico mais sensível.
+
+### Questão 5 — Abscesso tubo-ovariano
+
+Paciente com DIP, febre persistente e massa anexial complexa compatível com ATO. Qual ação é prioritária?
+
+A) Alta e retorno em um mês, sem antibiótico.  
+B) Internação, antibióticos adequados e reavaliação de necessidade de drenagem/controle de foco.  
+C) Ooforectomia compulsória em todos os casos.  
+D) Anticoncepcional hormonal como único tratamento agudo.  
+E) Descartar DIP porque o US mostrou massa.
+
+**Gabarito: B.** ATO é complicação que demanda tratamento hospitalar e vigilância. **A errada:** subtrata infecção grave. **C errada:** estratégia cirúrgica é individualizada, preservando fertilidade quando possível. **D errada:** não controla abscesso. **E errada:** a massa é compatível com coleção infecciosa, embora exija diferencial.
+
+**Mini revisão:** antibiótico nem sempre basta quando há ruptura, piora ou falta de resposta.
+
+### Questão 6 — Cisto hemorrágico e estabilidade
+
+Paciente com β-hCG negativo, cisto típico hemorrágico, pouco líquido pélvico e melhora sustentada da dor, estável após observação. Melhor interpretação?
+
+A) Todo cisto hemorrágico deve ser operado no mesmo dia.  
+B) Observação orientada e reavaliação podem ser adequadas, considerando sangramento e torção.  
+C) Toda dor em pessoa jovem é psicogênica se houver cisto.  
+D) A presença de cisto exclui apendicite e torção.  
+E) Hemoglobina normal isolada garante ausência de sangramento futuro.
+
+**Gabarito: B.** Com risco controlado, conduta conservadora pode ser apropriada. **A errada:** cirurgia não é universal. **C errada:** erro de atribuição e estigma. **D errada:** doenças podem coexistir, e cisto aumenta risco de torção. **E errada:** hemoglobina inicial pode atrasar alteração após sangramento.
+
+**Mini revisão:** observação é decisão ativa com reavaliação clínica e instruções de segurança.
+
+### Questão 7 — Exame inicial de imagem
+
+Na maioria das pacientes em idade reprodutiva com dor pélvica aguda e suspeita ginecológica, qual exame costuma ser apropriado inicialmente, após teste de gravidez quando indicado?
+
+A) Radiografia simples de abdome isoladamente.  
+B) Ultrassonografia pélvica, transabdominal e/ou transvaginal, com Doppler conforme contexto.  
+C) PET-CT oncológico.  
+D) Histerossalpingografia de urgência.  
+E) Colonoscopia sem avaliação abdominal.
+
+**Gabarito: B.** US caracteriza anexos, localização gestacional e líquido livre com ausência de radiação ionizante. **A errada:** baixa contribuição para maioria das causas ginecológicas. **C errada:** exame sem papel inicial. **D errada:** investigação de permeabilidade tubária não é exame de urgência. **E errada:** não atende pergunta inicial.
+
+**Mini revisão:** CT ou RM podem ser apropriadas conforme suspeita digestiva/urinária, gravidez e inconclusão do US.
+
+### Questão 8 — Adolescente sem massa ovariana
+
+Menina pré-menarca com dor abrupta e vômitos; US demonstra ovário edemaciado, sem cisto evidente. Qual interpretação é correta?
+
+A) Torção não ocorre antes da menarca.  
+B) A ausência de massa torna torção impossível.  
+C) A hipótese de torção permanece e demanda avaliação cirúrgica segundo risco clínico.  
+D) O toque vaginal obrigatório é a primeira etapa em todas.  
+E) Torção requer história de relações sexuais.
+
+**Gabarito: C.** Torção pode ocorrer em ovários sem massa na infância. **A errada:** idade pré-púbere não exclui. **B errada:** massas são fator de risco, não pré-requisito. **D errada:** exame transvaginal não é rotina na criança. **E errada:** atividade sexual não causa a condição de forma necessária.
+
+**Mini revisão:** a ACOG destaca preservação anexial em adolescentes, evitando ressecção baseada apenas na aparência intraoperatória.
+
+### Questão 9 — Encontrou um cisto, encerrou investigação?
+
+Paciente com dor progressiva em FID, anorexia e defesa localizada, β-hCG negativo. US revela cisto simples ovariano de 2 cm, sem sinais de torção. Melhor ação?
+
+A) Diagnosticar obrigatoriamente ruptura do cisto.  
+B) Não considerar apendicite porque ultrassom encontrou alteração ginecológica.  
+C) Reavaliar apendicite e outras causas abdominais, com avaliação/imagem apropriadas.  
+D) Tratar empiricamente como endometriose sem novas avaliações.  
+E) Encerrar atendimento se hemograma for normal.
+
+**Gabarito: C.** A semiologia é sugestiva de apendicite e cisto pequeno pode ser incidental. **A errada:** não há prova de ruptura. **B errada:** ancoragem diagnóstica. **D errada:** mudança aguda de padrão requer investigação. **E errada:** hemograma normal não exclui apendicite.
+
+**Mini revisão:** evidência ultrassonográfica precisa ter compatibilidade causal com o quadro.
+
+### Questão 10 — Gestação heterotópica
+
+Paciente após reprodução assistida tem saco intrauterino confirmado, dor intensa unilateral e líquido livre complexo. Qual afirmação é correta?
+
+A) Ectópica está completamente excluída.  
+B) Heterotópica deve ser considerada, especialmente após técnicas de reprodução assistida.  
+C) O líquido livre é sempre fisiológico no início da gravidez.  
+D) A ultrassonografia não precisa avaliar anexos após identificar gestação intrauterina.  
+E) Analgesia e retorno em trinta dias bastam, mesmo com piora.
+
+**Gabarito: B.** Heterotópica, embora rara, torna-se mais importante nesse contexto. **A errada:** gestação intrauterina não elimina implantação concomitante. **C errada:** líquido complexo pode representar sangue. **D errada:** sintomas exigem exame de anexos. **E errada:** piora demanda avaliação urgente.
+
+**Mini revisão:** a localização intrauterina confirmada é fortemente tranquilizadora em gravidez espontânea sem outros achados, mas não anula sinais clínicos de hemorragia.
+
+### Questão 11 — Preservação ovariana
+
+Na laparoscopia por torção ovariana, o ovário está escurecido e congesto. Em paciente jovem, sem malignidade suspeita e com estrutura preservável, qual princípio é mais adequado?
+
+A) Remover ovário sempre que houver coloração arroxeada.  
+B) Destorcer e tentar preservar anexos; aparência isolada não determina inviabilidade definitiva.  
+C) Biopsiar ovário sistematicamente para provar necrose.  
+D) Concluir que o pedículo não estava torcido.  
+E) Não registrar consentimento ou riscos reprodutivos.
+
+**Gabarito: B.** Congestão não é sinônimo de necrose irrecuperável. **A errada:** gera perda evitável de tecido ovariano. **C errada:** biópsia de rotina não é padrão de avaliação de viabilidade. **D errada:** cor não refuta torção. **E errada:** planejamento ético e documentação são essenciais.
+
+**Mini revisão:** ACOG recomenda abordagem minimamente invasiva com destorção e conservação sempre que possível.
+
+### Questão 12 — Antibiótico para DIP no Brasil
+
+Considerando pessoa **não gestante**, DIP leve/moderada sem internação e apta a seguimento, qual combinação é condizente com o PCDT-IST 2022?
+
+A) Ceftriaxona IM dose única, doxiciclina 14 dias e metronidazol 14 dias.  
+B) Amoxicilina simples três dias sem avaliação de IST.  
+C) Ciprofloxacino isolado por cinco dias de rotina.  
+D) Doxiciclina isolada dose única.  
+E) Metronidazol isolado durante 24 horas.
+
+**Gabarito: A.** A combinação cobre diferentes agentes envolvidos na DIP e consta do esquema ambulatorial brasileiro, com doses revisadas no capítulo 10. **B errada:** cobertura e duração inadequadas. **C errada:** resistência gonocócica impede uso empírico rotineiro de quinolonas. **D errada:** incompleto. **E errada:** não cobre adequadamente gonococo/clamídia nem infecção polimicrobiana.
+
+**Mini revisão:** a prescrição real depende de alergias, gravidez, tolerância oral e gravidade; piora exige reavaliação.
+
+## 17. Pérolas de prova e erros cognitivos frequentes
+
+1. **Erro de exclusão pelo Doppler:** circulação arterial pode persistir em torção. Reconhecer ovário aumentado, dor súbita e vômitos.
+2. **Erro de exclusão pelo β-hCG baixo:** mesmo valores baixos coexistem com ectópica e, em certos casos, com rotura.
+3. **Erro do saco gestacional presumido:** líquido intrauterino central sem achados inequívocos não confirma gestação intrauterina.
+4. **Erro do cisto incidental:** cisto simples pequeno não justifica obrigatoriamente dor progressiva e defesa por apendicite.
+5. **Erro da DIP “completa”:** a ausência de corrimento ou febre não elimina salpingite; mas dor súbita unilateral grave impõe investigar torção/ectópica.
+6. **Erro da paciente que melhorou:** destorção espontânea transitória pode aliviar a dor e normalizar parcialmente imagem.
+7. **Erro da aparência cirúrgica:** ovário muito escuro pode recuperar função após destorção; preservar quando viável.
+8. **Erro do exame negativo único:** hemoglobina inicial normal não exclui perda sanguínea ativa; PCR normal não afasta toda infecção; ultrassom normal não elimina todas as doenças.
+9. **Erro de misturar condutas internacionais e brasileiras sem rótulo:** o PCDT e o CDC podem divergir em limiares de diagnóstico e apresentações IV. Escrever de qual protocolo veio cada esquema.
+10. **Erro na alta:** sem retorno definido, orientações de alarme e reavaliação, a estratégia “observação domiciliar” pode ser insegura.
+
+## 18. Resumo operacional de uma página
+
+**Dor pélvica aguda = primeiro pensar em vida e órgão.** Instabilidade, peritonismo, síncope, dor que piora, febre sistêmica ou hemorragia indicam ação urgente. Em pessoa que possa estar gestante, β-hCG é exame inicial fundamental; se positivo, investigar localização e repercussão, sem confiar em um valor isolado. Ultrassom pélvico com Doppler contribui para avaliação ginecológica, mas não exclui torção quando mostra fluxo. Torção provável exige chamada cirúrgica oportuna e objetivo de preservar anexos. Cisto hemorrágico estável pode ser observado com reavaliação; hemoperitônio instável exige controle de foco. DIP é diagnóstico clínico de limiar terapêutico baixo, considerando PCDT brasileiro e urgências diferenciais. ATO e gestação com suspeita de DIP merecem atendimento hospitalar. Apendicite, litíase com infecção e outras causas abdominais não desaparecem porque foi encontrado um cisto.
+
+**Na prova:** observe duas informações antes de escolher alternativa: (a) paciente estável ou instável? (b) β-hCG e localização de gestação? Depois procure a pista cuja falha produz maior dano: Doppler “normal” na torção; cisto pequeno na apendicite; ausência de saco na GLD; suposto corrimento como explicação de choque.
+
+**Na prática:** documente a reavaliação e o plano de retorno. O diagnóstico pode evoluir em horas; a comunicação precisa antecipar o que fazer se ocorrer síncope, vômitos persistentes, febre alta, piora da dor, palidez ou sangramento.
+
+## 19. Imagens a pesquisar — apenas candidatas, sem publicação
+
+A seleção visual deverá ser feita pela fila **Admin → Imagens para aprovação → Apostilas** após confirmar procedência, autoria, licença comercial, fidelidade clínica e nitidez. **Nenhuma URL de imagem clínica inédita será embutida neste rascunho.** A lista abaixo é um plano de busca e não são arquivos já aprovados:
+
+| ID de candidata | Seção de destino | Exame ou figura desejada | Pergunta didática e legenda sugerida |
+|---|---|---|---|
+| 205-img-01 | Anatomia | esquema próprio dos ligamentos anexiais | “Ligamento suspensor, artéria ovariana e conexão uterina: por que pode haver Doppler preservado?” |
+| 205-img-02 | Torção | US com ovário aumentado e folículos periféricos | “Edema estromal e assimetria anexial em dor súbita” |
+| 205-img-03 | Torção | US Doppler com pedículo espiralado | “Whirlpool sign: o pedículo torcido, não apenas presença de fluxo” |
+| 205-img-04 | Torção | imagem cirúrgica institucional licenciada de torção | “Congestão não equivale automaticamente a necrose irreversível” |
+| 205-img-05 | Ectópica | US transvaginal com massa tubária separada de ovário | “Implantação extrauterina: sinais diretos e limitações” |
+| 205-img-06 | Ectópica | US de líquido livre complexo no Douglas | “Hemoperitônio provável: combinar com estabilidade e β-hCG” |
+| 205-img-07 | Cisto | US de cisto hemorrágico com trama de fibrina | “Diferenciar coágulo intracístico de nódulo sólido vascularizado” |
+| 205-img-08 | DIP | US de abscesso tubo-ovariano | “Massa complexa e infecção: quando internar e reconsiderar foco” |
+| 205-img-09 | Diferenciais | imagem de apendicite pélvica por US/TC | “O apêndice pélvico pode simular urgência anexial” |
+| 205-img-10 | Fluxo | fluxograma LURIA original de triagem | “Estabilidade → gravidez → ultrassom → conduta e retorno” |
+
+Em caso de indisponibilidade de imagem clínica com licença verificável, usar desenho original claramente didático e não confundi-lo com exame real. Exames de pacientes precisam de direitos de uso e anonimização apropriados; não presumir que todo material científico aberto permite reprodução comercial.
+
+## 20. Referências e rastreabilidade de afirmações
+
+**Fontes oficiais e recomendações clínicas utilizadas:**
+
+1. Brasil. Ministério da Saúde. *Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST)*. Brasília, 2022. Capítulo 10 — DIP. https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf ; quadro de antibióticos p. 144 impressa (PDF p. 145). **Finalidade:** critérios nacionais, tratamento ambulatorial/hospitalar e segurança de seguimento.
+2. Centers for Disease Control and Prevention. *Pelvic Inflammatory Disease (PID): STI Treatment Guidelines*. Diretrizes 2021, versão eletrônica consultada em 15/10/2026. https://www.cdc.gov/std/treatment-guidelines/pid.htm . **Finalidade:** limiar terapêutico sensível, regimes de referência, internação e seguimento.
+3. ACOG. *Adnexal Torsion in Adolescents*. Committee Opinion No. 783, agosto de 2019. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents . **Finalidade:** limites do Doppler, indicação de laparoscopia, preservação anexial.
+4. American College of Radiology. *ACR Appropriateness Criteria — Acute Pelvic Pain in the Reproductive Age Group: 2023 Update*. *J Am Coll Radiol*. 2024;21(6 Suppl):S3–S20. DOI 10.1016/j.jacr.2024.02.014. https://pubmed.ncbi.nlm.nih.gov/38823952/ . **Finalidade:** escolha inicial de ultrassom e critérios para TC/RM.
+5. National Institute for Health and Care Excellence. *Ectopic pregnancy and miscarriage: diagnosis and initial management*. NG126, publicada em 2019, atualização de junho de 2026. https://www.nice.org.uk/guidance/ng126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy . **Finalidade:** diagnóstico ultrassonográfico, GLD e contraindicação lógica do β-hCG isolado para localização.
+6. Royal College of Obstetricians and Gynaecologists. *Diagnosis and Management of Ectopic Pregnancy*. Green-top Guideline 21. https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/diagnosis-and-management-of-ectopic-pregnancy-green-top-guideline-no-21/ . **Finalidade:** categorias de gravidez ectópica e riscos.
+7. Royal College of Obstetricians and Gynaecologists. *The Management of Ovarian Hyperstimulation Syndrome*. Green-top Guideline No. 5, atualização 2026. DOI 10.1111/1471-0528.70195. https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1111/1471-0528.70195 . **Finalidade:** reconhecer cirurgia indicada em torção/hemorragia em síndrome de hiperestimulação.
+
+**Biblioteca interna LURIA, consultada para evitar redundância:** `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html`; `apostilas/massas-anexiais-cancer-ovario/rascunho-editorial-lote09.md`; `apostilas/hemorragias-primeiro-terceiro-trimestre/`. O conteúdo foi usado para mapear funções editoriais, não para copiar parágrafos. A leitura direta integral de todos os arquivos relacionados permanece pendente.
+
+## 21. Matriz de autossuficiência e estado de aprovação
+
+| Competência | Âncora nesta apostila | Situação |
+|---|---|---|
+| Anatomia, perfusão e dor visceral | §§ 2–3 | redigido |
+| Estabilidade e testes fundamentais | §§ 4–6 | redigido |
+| Torção: clínica, Doppler, imagem e laparoscopia | § 7 e caso 1 | redigido; revisar com especialista |
+| Gestação ectópica / GLD | § 8 e casos 2–3 | redigido; revisar interpretação hormonal |
+| Cisto hemorrágico e sangramento | § 9 e caso 4 | redigido |
+| DIP/ATO e divergência PCDT–CDC | § 10 e casos 5–6 | redigido; PCDT 2022 verificado |
+| Causas não ginecológicas e especiais | §§ 11–12 e casos 7–8 | redigido |
+| Fluxogramas e comparação | §§ 13–14 | redigido |
+| Casos clínicos autorais | § 15, oito casos | redigidos |
+| Questões originais comentadas | § 16, doze questões | redigidas |
+| Busca, licença e aprovação de imagens | § 19 | **pendente**; 10 propostas, 0 aprovadas |
+| Benchmark equivalente no Drive para torção | § 0 | **parcial**; só fontes DIP e apendicite |
+| Conferência médica independente de dados/doses | § 20 | **pendente** |
+| Teste de autossuficiência por resolver questões externas | § 21 | **pendente** |
+| Verificação de ≥ 60 mil caracteres didáticos úteis | scripts e revisão humana | **pendente**, não inferir pelo tamanho bruto |
+| Integração HTML e teste desktop/PWA | pipeline do lote | **não realizado** |
+
+**Status: MANUSCRITO EDITORIAL ORIGINAL. NÃO PUBLICAR AUTOMATICAMENTE.** Antes de mover para biblioteca ativa: confrontar fluxos com diretrizes brasileiras vigentes e prática especializada; revisar diferencial de gravidez ectópica em pessoas gestantes; conferir contraindicações e regimes antimicrobianos em diferentes populações; buscar/aprovar imagens por licença; aplicar revisão científica por ginecologista, teste de casos inéditos e auditorias de extensão, sintaxe e responsividade. A regra central é **não produzir texto redundante para alcançar uma metragem artificial**.
+
