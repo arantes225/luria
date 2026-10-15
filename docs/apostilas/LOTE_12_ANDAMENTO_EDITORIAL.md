@@ -10,11 +10,11 @@
 
 ## Ainda pendentes, conforme matriz oficial ENAMED / MedCof
 
-- **#266 — Oncologia de cabeça e pescoço:** ainda a produzir ou verificar reaproveitamento real.
+- **#266 — Oncologia de cabeça e pescoço:** rascunho preexistente do diretório canônico `apostilas/oncologia-cabeca-pescoco/` (16.318 caracteres) foi **aproveitado e aprofundado**, resultando em manuscrito de **75.089 caracteres** em `apostilas/oncologia-cabeca-pescoco/rascunho-editorial-lote12.md`. Contém três núcleos (CEC por sítio, massa cervical, anomalias congênitas), 8 casos e 10 questões autorais comentadas, referências INCA/NCI/AAO-HNS e atualização FDA 2025. Arquivo alternativo foi excluído após verificação de consolidação (commits `70ef096`, `266e66e`). **Ainda rascunho; sem figuras integradas ou revisão médica final**.
 - **#269 — Ultrassonografia obstétrica e medicina fetal:** manuscrito expandido em `apostilas/ultrassonografia-obstetrica-medicina-fetal/rascunho-editorial-lote12.md`, **69.001 caracteres / 483 linhas / 6 casos / 8 questões**. Inclui datagem, planos morfológicos, biometria, placenta/cordão, Doppler e interpretação de RCF, rastreamento genético, medicina fetal, gestações múltiplas e 12 imagens candidatas com status de licença. Commits `b9f39fd` e `247d367`. **EM REVISÃO**, sem imagens integradas e sem validação médica final. Preservar temas publicados de vitalidade, crescimento e pré-natal, bem como #89.
 - **#270 — Intercorrências clínicas na gestação:** manuscrito ampliado em `apostilas/intercorrencias-clinicas-na-gestacao/rascunho-editorial-lote12.md` com **75.205 caracteres / 520 linhas / 8 casos clínicos / 10 questões comentadas**. Inclui cardiopatias (ESC 2025/mWHO 2.0), anticoagulação e TEV, trombofilias/SAF (ACR/EULAR 2023), tireoidopatias (ATA 2026), epilepsia (AAN/AES/SMFM 2024), anemia (OMS 2024), doenças respiratórias, renais e autoimunes; referências, fluxos e matriz de 12 propostas visuais. Commits `689021a` e `bd84e3f`. **RASCUNHO EM REVISÃO:** sem imagens integradas/licenciadas e sem validação médica.
-- **#278 — Ciclo menstrual e eixo hipotálamo–hipófise–ovário:** **JÁ PUBLICADA**; auditar e complementar, nunca recriar.
-- **#238–249:** 12 apostilas originais preservadas; cobertura real ainda requer verificação individual no conteúdo publicado, sem presumir conclusão pela indexação.
+- **#278 — Ciclo menstrual e eixo hipotálamo–hipófise–ovário:** **JÁ PUBLICADA** e **auditada de modo não destrutivo**. HTML de 81.031 caracteres com um `<figure><img>` e cinco perguntas rápidas (não equivalem às questões completas do Prompt Magno); preservar capítulos, ampliar imagens e questões depois de aprovação. Relatório `docs/apostilas/LOTE_12_AUDITORIA_278_SEM_MODIFICAR_20261015.md`. Não foi alterada.
+- **#238–249:** **12/12 manuscritos encontrados no GitHub**, todos em `rascunho-editorial-lote12.md` nos diretórios temáticos, com 17–33 mil caracteres aproximadamente; **0/12 correspondentes publicados** no catálogo Supabase. Não há `index.html` nos 12 diretórios. Auditoria de inventário/lacunas e 4 pontos de diretriz em `docs/apostilas/LOTE_12_AUDITORIA_238_249_20261015.md`. Todos necessitam aprofundamento, imagens licenciadas e revisão científica antes de publicação.
 
 **Origem do plano:** `docs/apostilas/CONTINUAR_PROXIMO_CHAT_LOTES_11_13.md` na branch `audit/enamed-7areas-lotes-finais-20261015`, e `assets/js/apostilas-editorial-enamed-2026.js`.
 
@@ -28,4 +28,4 @@
 
 ## Próxima execução sugerida
 
-Prosseguir com auditoria das 12 apostilas originais #238–249 e completar **#266 — Oncologia de cabeça e pescoço**, sem duplicar qualquer conteúdo existente. Em separado, conferir a apostila publicada #278 e lacunas de #267. Preservar esta branch sem publicação.
+A auditoria inicial #238–249, a consolidação #266 e a conferência não destrutiva #278 foram registradas. **Próxima prioridade de produção:** aprofundar #267 — Endoscopia Digestiva (13.642 caracteres), após isso expandir #249, #246, #247 e #248 pela criticidade das condutas; manter os 12 rascunhos sem publicar e a #278 intacta, até revisão. Nenhum merge ou deploy.
