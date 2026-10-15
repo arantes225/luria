@@ -13,23 +13,23 @@
 | 160 | Abordagem do tabagismo, álcool e outras drogas | Sem livro temático próprio na pasta apostilas/ | Criar livro original; benchmark Tabagismo.pdf do Drive lido em 14/10, cobertura parcial; ampliar abordagem do álcool, outras substâncias e RAPS |
 | 161 | Sepse e choque séptico | `apostilas/sepse-choque-septico/rascunho-editorial-lote09.md` + complementos 02 e **03** | **Complemento 03 produzido nesta branch** (SOFA, SSC 2026, ILAS 2025, 5 casos, 8 questões); falta integrar sem redundâncias |
 | 162 | Nódulos e câncer de tireoide | `apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md` | **Ampliado nesta branch**, preservado original; conferir novos capítulos 3–7, casos/questões e revisão clínica pendente |
-| 163 | Violência e maus-tratos contra crianças e adolescentes | `apostilas/violencia-maus-tratos-criancas-adolescentes/rascunho-editorial-lote09.md` | Revisar com linha de cuidado, ECA, notificação, proteção, diferenciais e segurança |
+| 163 | Violência e maus-tratos contra crianças e adolescentes | `apostilas/violencia-maus-tratos-criancas-adolescentes/rascunho-editorial-lote09.md` (~67 mil caracteres Markdown em main, já existente) | Preservar rascunho com 9 casos e 14 questões; benchmarking específico no Drive pendente, não duplicar |
 | 164 | Câncer do colo do útero | `apostilas/cancer-colo-utero-hpv/content.json` e `index.html` | **Preservar livro existente**; separar lesões precursoras/rastreamento (#159) de manejo oncológico |
 | 165 | Saúde do trabalhador | `apostilas/saude-do-trabalhador/rascunho-editorial-lote09.md` | Reaproveitar rascunho extenso; validar normas, SINAN, nexo e rotinas vigentes |
 | 166 | HIV e infecções oportunistas | `apostilas/hiv-infeccoes-oportunistas/rascunho-editorial-lote09.md` | Reaproveitar rascunho extenso; conferir PCDT atual e esquemas, situações especiais |
 | 167 | Doenças benignas e câncer de mama | `apostilas/cancer-de-mama/index.html` | **Compartilhar e aproveitar o livro central de mama**, incluir interface cirúrgica; não clonar #169 |
 | 168 | Puberdade e adolescência | **Encontrado posteriormente em main**: `apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md` (~89 mil caracteres totais de Markdown, 12 casos, 18 questões) | **Não duplicar**; benchmark do Drive só parcial (puericultura/crescimento), requer revisão científica e integração editorial |
 | 169 | Patologias benignas e câncer de mama | `apostilas/cancer-de-mama/index.html` | **Reaproveitar #167** com objetivos ginecológicos; um conteúdo canônico e indexação curricular dupla, evitando publicação duplicada |
-| 170 | Ética médica, sigilo e prontuário | Sem livro próprio identificado | Criar, base CFM/LGPD/legislação vigente; casos e documentação |
+| 170 | Ética médica, sigilo e prontuário | **Localizado em verificação posterior da main:** `apostilas/etica-medica-sigilo-prontuario/rascunho-editorial-lote09.md` (~90,7 KB) | Não duplicar; revisar com CFM/LGPD e benchmark equivalente do Drive ainda não localizado |
 | 171 | Artrites inflamatórias e doenças autoimunes | Sem livro próprio identificado | Criar com diagnóstico diferencial, red flags, investigação e encaminhamento |
 | 172 | Princípios de oncologia cirúrgica | Sem livro próprio identificado | Criar com estadiamento, R0/R1/R2, decisão multidisciplinar e seguimento |
 | 173 | Urgências pediátricas e suporte básico/avançado | Sem livro próprio identificado | Criar com prioridades ABCDE, deterioração e reanimação por faixas etárias |
-| 174 | Massas anexiais e câncer de ovário | Sem livro próprio identificado | Criar com estratificação ultrassonográfica, referência oncológica e tratamentos |
+| 174 | Massas anexiais e câncer de ovário | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-174-massas-anexiais-cancer-ovario.md` | 45.673 caracteres Markdown, 8 casos e 14 questões; IOTA/O-RADS e ASCO 2025; rascunho não certificado |
 | 175 | Declaração de óbito e indicadores de mortalidade | Sem livro próprio identificado | Criar com exemplos originais de cadeia causal e regras de preenchimento |
 | 176 | Acidente vascular cerebral e crises convulsivas | Sem livro próprio identificado | Criar com fluxos de AVC e estado de mal; verificar elegibilidade terapêutica |
 | 177 | Complicações pós-operatórias | Sem livro próprio identificado | Criar, integrando sem duplicar `cuidados-perioperatorios` e infecção de sítio |
 | 178 | Intoxicações exógenas na infância | Sem livro próprio identificado | Criar com toxíndromes, descontaminação, CIATox e antídotos de referência |
-| 179 | Câncer de endométrio | Sem livro próprio identificado | Criar diagnóstico, estadiamento e tratamento conforme risco |
+| 179 | Câncer de endométrio | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md` | 43.732 caracteres Markdown, 7 casos e 12 questões; ACOG abril/2026, FIGO 2023, ESGO 2025; rascunho não certificado |
 | 180 | Cuidados paliativos e comunicação de más notícias | Sem livro próprio identificado | Criar com comunicação SPIKES, manejo de sintomas e diretivas antecipadas |
 | 181 | Eletrocardiografia: fundamentos e interpretação sistemática | Sem livro próprio identificado | Criar com metodologia ECG, exemplos reais licenciados, arritmias e padrões de isquemia |
 
@@ -67,3 +67,20 @@
 
 A branch editorial nasceu de um commit anterior ao surgimento de novos rascunhos na `main`. Antes de integrar, conferir HEAD atual, reconciliação de arquivos e eventuais alterações simultâneas do Codex. **Não forçar merge da PR e não trocar conteúdo antigo por nova versão menor.**
 
+
+## Continuação — auditoria e produção das aulas 174 e 179 (14/10/2026)
+
+**Materiais abertos no Drive antes da produção (etapa zero cumprida):**
+- “01 - CANCER DE OVARIO.pdf”: material de ~10 mil caracteres, cobre mais oncologia que massas benignas, autoria Estratégia MED não confirmada (marca Medicina Livre). Inspirou apenas escopo de comparação. A LURIA acrescentou diferencial benigno, IOTA/ADNEX/O-RADS, emergência e terapias atuais de forma autoral.
+- “02 - CANCER DE ENDOMETRIO.pdf”: material de ~9,6 mil caracteres, cobre FIGO 2023 e manejo de maneira simplificada, autoria Estratégia MED não confirmada (marca Medicina Livre). A LURIA atualizou especialmente classificação molecular e algoritmo ACOG de abril de 2026, evitando reproduções.
+
+**Arquivos realmente criados nesta branch:**
+- Aula 174: `apostilas/_rascunhos/lote-08-aula-174-massas-anexiais-cancer-ovario.md`. **45.673 caracteres Markdown totais, 21 capítulos, 8 casos, 14 questões**, 14 recursos visuais candidatos. Fontes centrais: ACR O-RADS v2022, IOTA 2026, ASCO 2025 e NCI.
+- Aula 179: `apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md`. **43.732 caracteres Markdown totais, 21 capítulos, 7 casos, 12 questões**, 12 recursos visuais candidatos. Fontes centrais: INCA, FIGO 2023, ESGO–ESTRO–ESP 2025, ACOG abril de 2026 e NCI.
+- **Aulas 163 e 170:** rascunhos extensos encontrados em atualização concorrente de `main`, não recriados, não editados.
+
+**Gates não superados:** extensão útil e não redundante de 60K por aula, completa conferência de referências e fármacos, revisão médica especialista e bibliografia brasileira, investigação de licença/aprovação WebP no Admin, casos e teste de autossuficiência, renderer nativo e QA PWA/desktop. Nenhuma das duas está publicada. A `main` foi preservada.
+
+**Ponto de alta prioridade na revisão do endométrio:** diferenciar o algoritmo ACOG 2018 da atualização de 16/04/2026, que recomenda TVUS + amostragem tecidual inicial na maioria das pacientes com sangramento pós-menopausa. A implementação clínica brasileira depende de protocolos locais e sociedades nacionais; não generalizar sem verificação.
+
+**Pendência de reconciliação:** main recebe produção simultânea em outras branches; atualizar/revisar base de PR antes de eventual integração e não sobrescrever rascunhos recentes.
