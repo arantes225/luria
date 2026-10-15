@@ -332,3 +332,95 @@ Uma pessoa com diabetes, insuficiência cardíaca, doença renal e múltiplos me
 
 **Pérolas:** "rastreamento não é diagnóstico", "mais detecção não é sinônimo de menos mortes", "sobrediagnóstico pode ser histologicamente verdadeiro", "falso positivo não é doença", "prevenção quaternária não é omissão", "o SUS atualiza protocolos e implementa gradualmente", "sintomas sempre mudam a via".
 
+
+
+## 21. Os vieses do rastreamento em profundidade: por que a evidência pode enganar
+
+### 21.1 Viés de voluntário saudável e comparação inadequada
+
+Pessoas que aderem espontaneamente a programas preventivos frequentemente têm melhor acesso à saúde, alimentação, recursos, escolaridade e menor exposição a fatores de risco, além de maior chance de receber tratamentos oportunos. Comparar mortalidade de quem procurou mamografia com quem não procurou pode atribuir ao exame diferenças que decorrem desses fatores. Esse é um exemplo de **seleção/voluntário saudável**. Uma avaliação de programa deve comparar grupos adequados, preferencialmente por desenho randomizado de convite quando eticamente viável ou métodos observacionais robustos, sem esquecer adesão e perdas.
+
+O estudo de rastreamento analisa frequentemente **convite para rastrear**, não o efeito biológico do exame em quem compareceu. A análise por intenção de rastrear preserva comparabilidade na randomização; a diferença entre convidadas e efetivamente rastreadas altera estimativas e interpretação. Reportar apenas "benefício entre as que aderiram" pode superestimar proteção devido a diferenças de estilo de vida. Ao ler notícia de rastreio, perguntar se os grupos tinham risco semelhante antes do exame e se mortalidade/cuidado subsequente foram mensurados por período adequado.
+
+### 21.2 Lead-time, length-time e sobrediagnóstico são fenômenos diferentes
+
+O **lead-time** é antecipação do momento da identificação. **Length-time** é amostragem preferencial de lesões que passam mais tempo detectáveis antes de sintomas. **Sobrediagnóstico** é identificar doença que não causaria sofrimento/morte durante a vida. Eles podem coexistir e todos elevam aparente sobrevida desde diagnóstico, mas não são sinônimos. Um tumor agressivo detectado seis meses antes pode exemplificar lead-time sem sobrediagnóstico; um microcarcinoma que nunca progrediria pode ser sobrediagnóstico mesmo sendo confirmado por patologia.
+
+A avaliação quantitativa de sobrediagnóstico é complexa porque não sabemos, para cada tumor individual, o contrafactual "o que aconteceria sem rastreamento". Estimativas dependem de seguimento prolongado, incidência cumulativa, mortalidade competitiva e tratamentos. Não reportar um percentual isolado sem população, método e período. A comunicação deve admitir incerteza legítima, sem negar o dano potencial nem transformá-lo em profecia individual.
+
+### 21.3 Viés de contaminação e mudança do tratamento
+
+Ensaios históricos de rastreamento podem sofrer **contaminação** quando controles fazem exames fora do protocolo, reduzindo contraste de estratégias. Tratamentos oncológicos melhores ao longo das décadas também modificam benefício incremental de detectar cedo. Um rastreio que melhorava muito desfecho quando terapias eram limitadas pode ter relação benefício/dano distinta após expansão de medicamentos eficazes, embora o inverso também seja possível com tratamentos de lesões precursoras. Diretrizes precisam de revisão periódica; não tratar idade/intervalo como constantes imutáveis.
+
+## 22. Falso positivo, falso negativo e discordância entre exame e clínica
+
+### 22.1 Um resultado indeterminado exige plano, não pânico
+
+Teste inconclusivo pode decorrer de amostra inadequada, interferências analíticas, artefatos de imagem, corte de risco limítrofe ou variação biológica. O plano deve distinguir **repetir amostra**, **fazer teste complementar com maior especificidade**, **acompanhar com intervalo definido** ou **encaminhar à confirmação invasiva**. Não chamar a pessoa de "portadora de câncer" antes da confirmação nem tranquilizar excessivamente se o resultado exige seguimento. A comunicação ideal inclui prazo, motivo, probabilidade e ponto de contato caso não receba agendamento.
+
+Em rastreio cervical por DNA-HPV, resultado positivo precisa de triagem conforme genótipos e protocolo, e a persistência de HPV tem significado diferente de infecção transitória. No câncer de mama, BI-RADS 0 não corresponde a tumor provável — significa exame incompleto e necessidade de complementação. Em rastreio colorretal, FIT positivo não exige repetir FIT até negativar: a via de avaliação geralmente é **colonoscopia confirmatória**, conforme protocolo, porque resultado repetido negativo pode ocorrer sem excluir lesão que sangra intermitentemente.
+
+### 22.2 Nódulo novo apesar de rastreamento negativo
+
+Exame de rastreio normal se refere a uma janela e sensibilidade, não a certificado eterno de saúde. Pessoa com nódulo mamário palpável depois de mamografia normal deve receber avaliação diagnóstica. Sangramento vaginal após menopausa não se resolve com "DNA-HPV negativo no ano passado", pois pode refletir doença endometrial. Hematoquezia persistente ou anemia ferropriva merecem investigação ainda que FIT recente tenha sido negativo. A probabilidade clínica, sinais de alarme e exame físico podem superar o resultado de teste aplicado em situação diferente.
+
+### 22.3 Resultado falso positivo pode afetar relações e trabalho
+
+Rastreios para doenças transmissíveis ou marcadores genéticos podem provocar estigma, medo, conflito familiar e exposição indevida de dados. A confidencialidade da APS e a entrega de resultados em ambiente privado importam tanto quanto a precisão do teste. Não comunicar condição grave por mensagem automática sem confirmação e apoio adequados; serviços precisam de protocolo de comunicação sensível, respeito à LGPD e encaminhamento. O dano psicossocial é consequência real que raramente aparece nas estatísticas de "sensibilidade".
+
+## 23. Quando não fazer rastreamento: quatro tipos de justificativa muito diferentes
+
+### 23.1 Ausência de evidência de benefício
+
+Pode existir teste tecnicamente bom, mas nenhum ensaio convincente mostrar redução de desfechos relevantes na população assintomática em questão. Isso não significa que a doença seja irrelevante. Exemplo clássico: ultrassom de tireoide indiscriminado pode detectar microcarcinomas, mas a detecção não demonstra automaticamente redução de mortalidade proporcional às intervenções. Não confundir ausência de recomendação populacional com proibição de avaliação diagnóstica por sintomas.
+
+### 23.2 Benefício esperado menor que o dano
+
+Um exame pode detectar doença em parte dos pacientes, mas falsos positivos, sobretratamento ou complicações podem produzir saldo desfavorável em grupo de risco muito baixo. Em pessoas de expectativa de vida limitada, benefício que levaria muitos anos para ocorrer pode ser menos relevante que dano imediato. Entretanto, decisões de cuidado paliativo e de prevenção quaternária não eliminam necessidade de tratar sintomas que surgirem — rastrear assintomático e investigar sintomático são contextos diferentes.
+
+### 23.3 Benefício em outro grupo, não neste
+
+Colonoscopia e FIT podem ser úteis em pessoas elegíveis por idade/risco, mas repetir teste em idade muito precoce e sem indicação não herda o mesmo efeito. Da mesma forma, mamografia anual em pessoa de risco genético elevado não é argumento automático para fazê-la em toda mulher de 25 anos. A população dos estudos importa, assim como incidência, capacidade de investigação e exposição cumulativa a dano.
+
+### 23.4 Falha de infraestrutura e oportunidade de melhora do sistema
+
+Um programa pode ter boa evidência, mas sem laboratório, confirmação e tratamento acessíveis sua introdução pode gerar mais ansiedade e atrasos. O correto é planejar implantação da cadeia e **corrigir a infraestrutura**, não concluir que pessoas da região "não precisam ser rastreadas". Prevenção quaternária deve proteger contra promessa enganosa de benefício sem seguimento, e também denunciar suboferta de intervenção comprovadamente útil. Essa dimensão coletiva diferencia cuidado de alto valor de simples contenção de custos.
+
+## 24. Comunicação de decisões difíceis: microcasos e formulações adequadas
+
+### 24.1 Pessoa ansiosa exige mais cuidado, não necessariamente mais exames
+
+Quando uma paciente relata morte recente de familiar por câncer, é tentador solicitar marcadores tumorais e tomografias para tranquilizá-la. Exames sem indicação podem prolongar ansiedade por achados ambíguos. Investigar história familiar completa, sinais atuais, idade e elegibilidade para programas; discutir medo, plano de consultas e sinais de alerta. A resposta deve validar a preocupação sem inventar risco elevado ou prometer garantia. O profissional pode afirmar: "não há exame capaz de descartar todos os cânceres hoje; vamos priorizar os que têm benefício demonstrado para seu risco e garantir avaliação se surgir sintoma".
+
+### 24.2 Paciente com teste positivo precisa de cronograma concreto
+
+Informar: qual alteração foi detectada, o que não significa, qual exame confirmatório está indicado, onde será feito, prazo esperado pelo serviço e quem monitorará o resultado. Repetir informação em linguagem simples e verificar entendimento. Um teste DNA-HPV positivo não autoriza comunicar "você tem câncer"; um FIT positivo não identifica localização nem etiologia do sangramento; BI-RADS 0 indica imagem complementar, não câncer diagnosticado. Não usar números de risco inventados.
+
+### 24.3 Tomada de decisão compartilhada envolve direito de recusar
+
+A pessoa elegível pode recusar exame após conhecer benefícios/danos. Repetir a oferta na periodicidade apropriada e manter acolhimento é diferente de pressionar. É especialmente importante em exames íntimos, pessoas com trauma sexual, disforia de gênero ou experiências anteriores de violência institucional. Alternativas técnicas, comunicação e respeito à privacidade podem melhorar acesso. Uma recusa documentada sem julgamento é parte de autonomia — jamais justificar negação de atendimento a outro problema.
+
+### 24.4 O médico que não sabe o risco absoluto deve admitir limitação
+
+Dizer "esse exame reduz a mortalidade em 30%" sem saber base e horizonte pode induzir decisão enviesada. É preferível explicar qualitativamente com transparência e oferecer recurso público confiável, reconhecendo que efeito absoluto depende de idade/risco. O material da apostila contém números fictícios para ensinar; nunca transplantá-los para o consentimento de um paciente real. A prática clínica exige estimativas atualizadas de diretrizes e ferramentas de decisão adequadas.
+
+## 25. Monitoramento e melhoria da qualidade na rede pública
+
+### 25.1 Pequeno ciclo de auditoria local
+
+Uma unidade pode auditar cem pessoas cadastradas para um programa e registrar: quantas são elegíveis, quantas receberam teste no intervalo, quantas tiveram resultado alterado, quantas concluíram confirmação, tempo mediano até diagnóstico e quantas se perderam. Essas medidas identificam gargalos. Repetir o teste prematuramente em uma paciente já rastreada adequadamente não melhora cobertura; buscar quem nunca compareceu pode produzir impacto maior.
+
+Estratificar cobertura por território e barreiras ajuda equidade, mas requer interpretação cuidadosa: não classificar população como “resistente ao cuidado” quando agenda, transporte, acessibilidade e racismo institucional impedem acesso. A solução pode envolver horário estendido, lembrete, navegação, locais de coleta e retorno confiável. A prevenção quaternária coletiva evita desperdício de testes fora do intervalo e investe em conclusão do trajeto para quem precisa.
+
+### 25.2 Taxas brutas podem enganar
+
+Se um município registra aumento de cânceres in situ após iniciar DNA-HPV, isso pode refletir melhor detecção, maior cobertura, mudanças demográficas ou sobrediagnóstico de algumas lesões, e não prova sozinho piora de incidência invasiva. Da mesma forma, redução de mortalidade específica pode resultar de melhor tratamento e alterações de codificação. Indicadores devem ser comparados ao longo de tempo suficiente, com padronização e avaliação crítica; o objetivo é monitorar **mortalidade, doença invasiva, danos e acesso efetivo**, não só exames realizados.
+
+### 25.3 Novos testes, novas responsabilidades
+
+A implementação do FIT colorretal exige colonoscopia de qualidade e prazo de acesso; sem isso, testes positivos acumulam. O DNA-HPV exige triagem, colposcopia, tratamento de lesões precursoras, registro e seguimento por intervalos longos. Mamografia exige serviços de imagem de qualidade e acesso à biópsia de achados suspeitos. Toda mudança de algoritmo precisa treinar profissionais que atendem resultados negativos/positivos, para evitar tanto atrasos quanto repetição indiscriminada de exames antigos.
+
+### 25.4 O papel da evidência no planejamento e da prudência na execução
+
+Um programa pode ser incorporado por decisão nacional e implementado gradualmente, conforme orçamento e rede. A informação à população deve separar **recomendação** de **disponibilidade local**. Se um exame ainda não chegou à UBS, o usuário precisa de orientação sobre fluxo, não promessa inexistente; se um exame está disponível, deve ser oferecido segundo elegibilidade e consentimento, e não usado para aumentar volume administrativo. Efetividade populacional depende de clínica, regulação, comunicação e confiança.
+
