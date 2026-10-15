@@ -1182,7 +1182,7 @@
         "status": "EM_REDACAO_PARCIAL",
         "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Rascunho original conferido no GitHub, 48299 caracteres de Markdown. OMS 2025, MS, NICE NG134/NG225/NG87; 6 casos, 8 questões; benchmark específico não encontrado. Não certificada meta de 60 mil caracteres didáticos únicos, nem teste de autossuficiência, imagens licenciadas, revisão clínica ou PWA."
+        "observacao": "Manuscrito original ampliado e conferido no GitHub em 15/10/2026: 68.216 caracteres Markdown totais, 8 casos clínicos, 11 questões comentadas, 10 visuais candidatos, matriz de autossuficiência preliminar. OMS 2025, MS, NICE NG134/NG225/NG87. Valor bruto supera 60 mil, mas NÃO certifica 60 mil caracteres DIDÁTICOS ÚTEIS; benchmark específico no Drive, revisão clínica, direitos de imagem, testes e PWA pendentes."
       },
       "rascunho_editorial": "apostilas/_rascunhos/lote-13-254-saude-mental-adolescente.md"
     },
