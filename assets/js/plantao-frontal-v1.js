@@ -18,7 +18,7 @@ function scheduleBlink(){stop();if(!rig||base.dataset.luriaEyes==="closed"||base
 function render(){raf=0;const src=base.getAttribute("src")||"",match=src.match(rx),active=!!match&&match[2]==="awake";scene.classList.toggle("luria-frontal-patient",active);
 if(!active){base.classList.remove("plantao-patient-image-frontal");if(rig)rig.hidden=true;stop();return}
 base.classList.add("plantao-patient-image-frontal");if(!rig){rig=document.createElement("div");rig.className="luria-frontal-rig";rig.setAttribute("aria-hidden","true");overlay=document.createElement("img");overlay.className="luria-frontal-eyelids";overlay.alt="";overlay.draggable=false;rig.append(overlay);scene.append(rig)}
-rig.hidden=false;const isPwa=Boolean(match[3]);rig.style.setProperty("--left-eye",isPwa?"31%":"46%");rig.style.setProperty("--right-eye",isPwa?"68%":"56%");overlay.src=closedPath(base.src);const st=getComputedStyle(base);overlay.style.objectFit=st.objectFit;overlay.style.objectPosition=st.objectPosition;
+rig.hidden=false;const isPwa=Boolean(match[3]);rig.style.setProperty("--left-eye",isPwa?"39%":"46%");rig.style.setProperty("--right-eye",isPwa?"68%":"56%");overlay.src=closedPath(base.src);const st=getComputedStyle(base);overlay.style.objectFit=st.objectFit;overlay.style.objectPosition=st.objectPosition;
 const closed=base.dataset.luriaEyes==="closed";overlay.classList.toggle("plantao-frontal-patient-eyes-closed",closed);if(closed){stop();overlay.style.clipPath="inset(21% 0 71% 0)"}else{overlay.style.clipPath="";if(activeSrc!==src||(!timer&&!animation)){activeSrc=src;scheduleBlink()}}}
 function queue(){if(!raf)raf=requestAnimationFrame(render)}
 new MutationObserver(queue).observe(base,{attributes:true,attributeFilter:["src","data-luria-eyes","data-luria-rr","style"]});
