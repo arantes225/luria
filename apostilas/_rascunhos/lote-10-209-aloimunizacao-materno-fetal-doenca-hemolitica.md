@@ -510,3 +510,149 @@ RN de 36 semanas, DAT positivo por anti-D materno **imune**, desenvolve rápida 
 **Problema:** situação de **escalonamento emergencial de cuidado** conforme AAP 2022. **Raciocínio:** esse limiar exige preparação de troca e monitorização intensiva, mas a troca depende do limiar absoluto e/ou encefalopatia. IVIG não é terapia inócua, e o benefício para evitar exsanguíneotransfusão é incerto.
 
 **Conduta:** unidade com neonatologia/hemoterapia e capacidade de troca, fototerapia intensiva, hidratação apropriada, TSB ao menos a cada duas horas, exames de gravidade e tipagem/prova cruzada; discutir IVIG apenas como **opção selecionada** dado DAT positivo e progressão. Exsanguíneotransfusão urgente se atingir limiar ou surgirem sinais neurológicos relevantes. Organizar seguimento de anemia tardia após a estabilização. **Por que importa:** previne a perda de tempo com “uma dose de IVIG e esperar”, enquanto encefalopatia se aproxima.
+
+## 16. Doze questões autorais comentadas, estilo residência
+
+### Questão 1 — Qual imunoglobulina atravessa a placenta?
+
+A doença hemolítica materno-fetal mediada por aloanticorpos eritrocitários ocorre principalmente porque:
+
+A) IgM materna atravessa livremente placenta e destrói o fígado fetal.  
+B) IgG materna atravessa a placenta e pode reagir contra antígenos nas hemácias fetais.  
+C) A placenta sempre permite mistura total e contínua do sangue da gestante e do feto.  
+D) Anticorpos anti-D são produzidos obrigatoriamente por toda gestante RhD-negativa.  
+E) Anticorpos maternos só produzem efeitos no recém-nascido após nascimento.
+
+**Gabarito B.** **A incorreta:** IgM não atravessa placenta em quantidade clinicamente relevante. **B correta:** IgG é transportada pelo FcRn e pode causar hemólise/alterações eritropoiéticas. **C incorreta:** circulações possuem barreira, com passagem variável de células. **D incorreta:** incompatibilidade não equivale a sensibilização. **E incorreta:** anemia e hidropisia podem ocorrer intraútero. **Mini revisão:** feto sofre sobretudo com **anemia**, neonato também com **hiperbilirrubinemia**.
+
+### Questão 2 — Coombs indireto versus direto
+
+Qual par expressa corretamente os exames no contexto de isoimunização?
+
+A) Indireto materno mede anticorpos circulantes; direto neonatal detecta anticorpos aderidos às hemácias testadas.  
+B) Indireto identifica localização da placenta; direto identifica comprimento cervical.  
+C) Indireto mede só hemoglobina; direto mede só bilirrubina.  
+D) Ambos são idênticos e dispensam painel de identificação de anticorpo.  
+E) Direto neonatal positivo sempre confirma anemia grave e troca sanguínea imediata.
+
+**Gabarito A.** **A correta:** descreve os princípios laboratoriais. **B incorreta:** são testes imuno-hematológicos, não ultrassonográficos. **C incorreta:** Hb e bilirrubina exigem exames próprios. **D incorreta:** PAI positiva precisa de especificidade. **E incorreta:** intensidade depende de Hb, TSB e evolução, além de DAT poder refletir anti-D passivo. **Mini revisão:** interpretar resultado no tempo clínico evita tratamento inadequado.
+
+### Questão 3 — Anti-K: não esperar título alto
+
+Gestante RhD-positiva apresenta anti-K na PAI e feto de antígeno ainda desconhecido. Qual orientação é mais adequada?
+
+A) Não há risco de doença hemolítica se a gestante for RhD-positiva.  
+B) Esperar ocorrer hidropisia para indicar qualquer avaliação.  
+C) Encaminhar precocemente à medicina fetal/hemoterapia e avaliar antígeno fetal.  
+D) Administrar anti-D como tratamento do anti-K.  
+E) Considerar anti-K exclusivamente um anticorpo contra leucócitos.
+
+**Gabarito C.** **A incorreta:** RhD não é único antígeno relevante. **B incorreta:** hidropisia é tardia. **C correta:** anti-K pode comprometer eritropoiese e títulos não preveem completamente gravidade. **D incorreta:** anti-D profilático não trata anti-K. **E incorreta:** Kell pertence a antígenos eritrocitários. **Mini revisão:** BSH 2025 recomenda referência desde a identificação de anti-K.
+
+### Questão 4 — Anti-D materna após parto
+
+Mulher RhD-negativa e sem anti-D imune recebeu imunoglobulina profilática às 28 semanas; nasce RN RhD-positivo. Qual afirmação é correta?
+
+A) A dose antenatal elimina sempre necessidade de pós-parto.  
+B) O RN precisa de anti-D intramuscular como tratamento preventivo.  
+C) A mãe deve ser avaliada para dose pós-parto idealmente até 72 horas, conforme protocolo, e hemorragia feto-materna pode exigir dose adicional.  
+D) Não há indicação porque o parto já aconteceu.  
+E) O Coombs direto do RN é a única variável para indicar dose materna.
+
+**Gabarito C.** **A incorreta:** profilaxia antenatal e pós-parto cobrem riscos distintos. **B incorreta:** imunoglobulina anti-D é aplicada à mãe elegível. **C correta:** RN D-positivo e mãe não sensibilizada justificam prevenção, observando condições de dose. **D incorreta:** parto é evento sensibilizante importante. **E incorreta:** o tipo RhD do RN e status materno são centrais. **Mini revisão:** dose, via e oportunidade dependem do produto e do serviço.
+
+### Questão 5 — Anticorpo detectado após profilaxia
+
+Gestante D-negativa com PAI negativa antes da anti-D apresenta anti-D em baixa concentração quatro semanas após profilaxia documentada. O resultado significa:
+
+A) Certamente doença hemolítica fetal grave.  
+B) Pode representar anti-D passivo, devendo ser interpretado com laboratório, resultado pré-dose e história.  
+C) Prova de erro de tipagem ABO.  
+D) Indicação de cordocentese imediata em todas.  
+E) Condição que proíbe profilaxia pós-parto, sem outras informações.
+
+**Gabarito B.** **A incorreta:** anti-D passivo pode ser detectado sem doença fetal. **B correta:** diferenciação exige cronologia e avaliação de intensidade. **C incorreta:** ABO é outro sistema. **D incorreta:** procedimento invasivo só com indicação fetal. **E incorreta:** negar profilaxia sem definir sensibilização imune pode ser perigoso. **Mini revisão:** uma amostra antes da dose de 28 semanas é valiosa.
+
+### Questão 6 — Gestação anterior gravemente afetada
+
+Paciente com história de feto hidrópico por anti-D e atual concentração de anticorpo ainda baixa procura pré-natal às 13 semanas. Melhor decisão?
+
+A) Esperar atingir 1:16, sem considerar história.  
+B) Encaminhar cedo à medicina fetal para planejar genotipagem e monitorização.  
+C) Administrar anti-D imunoprofilática para neutralizar anticorpo imune.  
+D) Encerrar investigação porque o primeiro trimestre é sempre sem risco.  
+E) Solicitar apenas grupo ABO do parceiro e dispensar investigação fetal.
+
+**Gabarito B.** **A incorreta:** histórico de doença grave modifica limiar de ação. **B correta:** memória imunológica pode causar doença mais precoce; BSH recomenda referência antes de 20 semanas em gestações previamente afetadas. **C incorreta:** profilaxia não reverte sensibilização estabelecida. **D incorreta:** deve-se planejar antes de manifestação tardia. **E incorreta:** antígeno fetal D e hemoterapia importam. **Mini revisão:** nunca tratar título “de hoje” sem história obstétrica.
+
+### Questão 7 — Doppler da ACM
+
+Em gestação com anticorpo clinicamente significativo e feto em risco, o pico de velocidade sistólica da ACM de **1,62 MoM** sugere:
+
+A) Normalidade garantida do hematócrito fetal.  
+B) Anemia fetal moderada/grave possível, exigindo avaliação rápida de medicina fetal.  
+C) Necessariamente hidrocefalia fetal.  
+D) Incompatibilidade ABO materna confirmada.  
+E) Indicação obrigatória de imunoglobulina anti-D ao feto.
+
+**Gabarito B.** **A incorreta:** >1,5 MoM é sinal de risco. **B correta:** associação com anemia e indicação de avaliação especializada. **C incorreta:** medida é de fluxo, não anatomia ventricular. **D incorreta:** não identifica anticorpo específico. **E incorreta:** anti-D profilática não é tratamento fetal. **Mini revisão:** interpretar MoM pela idade gestacional e qualidade técnica.
+
+### Questão 8 — Feto hidrópico
+
+Feto com ascite, derrame pleural e edema cutâneo; PAI materna negativa. Qual é a melhor afirmação?
+
+A) Hidropisia confirma obrigatoriamente doença hemolítica anti-D.  
+B) PAI negativa torna hidropisia impossível.  
+C) Investigar outras etiologias como anemia não imune, infecções, cardiopatias e genética; a hidropisia não é específica de aloimunização.  
+D) A presença de ascite indica fototerapia intrauterina.  
+E) Diagnóstico pode ser dado apenas pela cor do líquido amniótico.
+
+**Gabarito C.** **A incorreta:** há múltiplas causas. **B incorreta:** hidropisia não imune é possível. **C correta:** investigação dirigida e avaliação de anemia/estrutura/coração. **D incorreta:** fototerapia trata bilirrubina neonatal, não hidropisia fetal. **E incorreta:** avaliação depende de ultrassom e investigação causal. **Mini revisão:** hidropisia é síndrome de gravidade, não etiologia.
+
+### Questão 9 — Icterícia às 12 horas de vida
+
+RN de 37 semanas apresenta icterícia com 12 horas, DAT positivo, risco de hemólise. Qual informação é indispensável para definir fototerapia segundo AAP 2022?
+
+A) Apenas zona de Kramer visível no tórax.  
+B) Apenas o grupo ABO materno.  
+C) Bilirrubina total sérica, idade em horas, idade gestacional e fatores de risco para neurotoxicidade.  
+D) Um valor fixo de TSB igual para todos os RN.  
+E) A escolha do teste depende exclusivamente do sexo do RN.
+
+**Gabarito C.** **A incorreta:** avaliação visual não quantifica com segurança. **B incorreta:** grupo isolado não fornece risco total. **C correta:** são variáveis essenciais do nomograma. **D incorreta:** limiares variam. **E incorreta:** não orienta a curva. **Mini revisão:** hemólise é fator de neurotoxicidade e pode diminuir limiares.
+
+### Questão 10 — Quando escalar cuidado neonatal?
+
+Segundo AAP 2022, a etapa emergencial de escalonamento é iniciada quando a TSB:
+
+A) É sempre superior a 5 mg/dL.  
+B) Está a **2 mg/dL abaixo** ou acima do limiar de exsanguíneotransfusão aplicável ao RN.  
+C) É apenas visualmente perceptível em face.  
+D) Está em qualquer valor com DAT positivo, mesmo se muito baixa.  
+E) Está baixa e estável sem fatores de risco.
+
+**Gabarito B.** **A incorreta:** não é valor universal. **B correta:** o limiar de escalonamento é relativo à curva de exsanguíneotransfusão. **C incorreta:** visibilidade não substitui TSB. **D incorreta:** DAT isolado não indica escalonamento. **E incorreta:** não constitui emergência. **Mini revisão:** preparar UTI, fototerapia intensiva, hidratação e TSB seriada; troca ocorre conforme limiar e estado neurológico.
+
+### Questão 11 — IVIG no recém-nascido
+
+Sobre IVIG segundo AAP 2022, qual afirmação é correta?
+
+A) Está indicada para todo RN DAT positivo independentemente de bilirrubina.  
+B) Seu benefício para reduzir exsanguíneotransfusões é perfeitamente estabelecido e sem eventos adversos.  
+C) Pode ser considerada em doença isoimune com DAT positivo que atinge limiar de escalonamento, ponderando benefício incerto e potenciais danos.  
+D) Substitui fototerapia intensiva e torna desnecessária a hemoterapia.  
+E) É a mesma imunoglobulina anti-D aplicada à mãe às 28 semanas.
+
+**Gabarito C.** **A incorreta:** DAT não indica sozinho. **B incorreta:** benefício incerto, associação observacional com enterocolite necrosante. **C correta:** é opção selecionada, não rotina. **D incorreta:** fototerapia e preparo para troca continuam. **E incorreta:** medicamentos/objetivos/pacientes são diferentes. **Mini revisão:** evitar tratar intensificação de cuidado com “IVIG e aguardar”.
+
+### Questão 12 — O RN aparentemente bem após TIU
+
+Recém-nascido de gestação por anti-K recebeu duas transfusões intrauterinas; após nascimento, TSB controlada e boa aparência clínica. Qual cuidado permanece importante?
+
+A) Alta definitiva sem novos exames, pois a bilirrubina caiu.  
+B) Seguimento para possível anemia tardia, com Hb/reticulócitos conforme neonatologia.  
+C) Administrar anti-D materna como tratamento neonatal de anemia por Kell.  
+D) Considerar TIU cura do anticorpo materno.  
+E) Suspender informações de imuno-hematologia do prontuário.
+
+**Gabarito B.** **A incorreta:** supressão eritroide e anticorpos podem persistir. **B correta:** anemia tardia pode surgir mesmo com TSB inicialmente normal. **C incorreta:** anti-D não trata anti-K nem se usa assim em RN. **D incorreta:** TIU fornece células, não apaga memória imune. **E incorreta:** registros são essenciais a transfusões e gestações futuras. **Mini revisão:** cura bioquímica de icterícia não é cura hematológica.
