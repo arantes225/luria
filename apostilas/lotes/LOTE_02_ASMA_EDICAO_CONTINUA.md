@@ -562,7 +562,7 @@ No esquema AIR/MART de 6–11 anos descrito pela GINA 2026, a **necessidade de m
 
 ### 8.9 Sibilância no pré-escolar: bronquiolite, sibilância episódica e suspeita de asma
 
-**Por que este capítulo existe?** A GINA 2026, no guia resumido aqui consultado, apresenta as recomendações detalhadas para crianças **de 6 a 11 anos**, não para lactentes e pré-escolares. Um bebê com primeiro episódio de sibilância durante infecção viral não deve receber automaticamente diagnóstico de asma nem o regime AIR/MART de um escolar. Para o grupo menor de cinco anos, a referência complementar utilizada aqui é a diretriz **BTS/NICE/SIGN 2024 (NG245)** e, para bronquiolite típica, a diretriz da **American Academy of Pediatrics (AAP)**. Trata-se de referências distintas, com contextos próprios: o serviço brasileiro deve conferir orientações da Sociedade Brasileira de Pediatria e protocolos assistenciais locais.
+**Por que este capítulo existe?** O **guia resumido da GINA 2026** descreve adolescentes e escolares **de 6 a 11 anos**, enquanto o **relatório completo da GINA 2026** contém um capítulo independente para crianças **de cinco anos ou menos**. Não copiar o algoritmo AIR/MART do escolar para o pré-escolar. Um bebê com primeiro episódio de sibilância durante infecção viral não deve receber automaticamente diagnóstico de asma. Como complementos para contextos distintos, esta seção também contrapõe a diretriz britânica **BTS/NICE/SIGN 2024 (NG245)** e as recomendações da **American Academy of Pediatrics (AAP)** para bronquiolite típica. Trata-se de referências distintas, com contextos próprios: o serviço brasileiro deve conferir orientações da Sociedade Brasileira de Pediatria e protocolos assistenciais locais.
 
 #### 8.9.1 Três histórias que parecem iguais na triagem, mas exigem raciocínios diferentes
 
@@ -595,6 +595,27 @@ Sibilo **unilateral e persistente** após engasgo obriga pensar em corpo estranh
 **Atenção às diferenças de fonte:** AAP recomenda **não usar salbutamol ou corticosteroides sistêmicos rotineiramente para bronquiolite típica**; BTS/NICE/SIGN admite controlador com CI em **suspeita de asma recorrente** selecionada. Esses enunciados **não se contradizem**: tratam de populações e doenças diferentes. Confundi-los gera prescrição inadequada e distorce questões de residência.
 
 **Fontes primárias da seção:** BTS/NICE/SIGN. *Asthma: diagnosis, monitoring and chronic asthma management* (NG245, 2024), recomendações 1.3 e 1.9: https://www.nice.org.uk/guidance/ng245/chapter/recommendations ; AAP. *Clinical Practice Guideline: Diagnosis, Management, and Prevention of Bronchiolitis*, https://publications.aap.org/pediatrics/article/134/5/e1474/75848/ ; GINA. *Summary Guide 2026*, escopo de 6–11 anos, https://ginasthma.org/2026-gina-summary-guide/ . A diretriz AAP citada é anterior a 2026 e não foi apresentada como revisão nova.
+
+
+#### 8.9.4 Tratamento antes dos seis anos: conferir a GINA completa, não a tabela dos escolares
+
+A **GINA 2026, relatório completo**, distingue alívio de sintomas, necessidade de controlador diário e risco futuro em crianças com asma suspeita ou estabelecida até cinco anos de idade. O raciocínio deve considerar se há tosse/chiado **entre infecções**, quantos episódios exigiram atendimento de urgência, corticosteroide sistêmico ou internação, resposta ao tratamento e existência de outra explicação. Ao contrário do escolar de seis a onze anos, em quem a edição de 2026 incluiu alívio anti-inflamatório em baixa etapa, **o SABA inalatório sob demanda ainda aparece como opção preferida de alívio na etapa 1 em pré-escolares**. Isso **não** significa que toda criança deva permanecer indefinidamente apenas com SABA: uma apresentação mais frequente ou grave requer considerar CI controlador.
+
+| Situação clínica em criança de até cinco anos | Ponto de decisão resumido da GINA 2026 | Limitação de segurança |
+| --- | --- | --- |
+| Episódios pouco frequentes, alívio necessário **no máximo duas vezes por semana**, sem crise grave recente nem sintomas persistentes | SABA inalatório de alívio pode ser suficiente em criança selecionada na **etapa 1**, com revisão | A ausência de sintomas entre episódios não elimina investigação se houve gravidade relevante |
+| Necessidade de alívio **mais de duas vezes por semana ao longo de um mês** | Avaliar ensaio de **corticosteroide inalatório diário em baixa dose**, etapa 2 | Confirmar técnica, dispositivo pediátrico, dose e retorno programado |
+| **Uma ou mais exacerbações importantes no último ano** com urgência, curso de corticoide oral ou internação | Indicação de discutir **CI diário em dose baixa** e estratégias de prevenção | Não depender apenas da frequência semanal de sintomas |
+| Chiado viral intermitente sem sintomas entre resfriados, com respostas insatisfatórias ao SABA | Em casos selecionados, CI intermitente em alta dose pode ser considerado **por profissional experiente** | Risco de eventos adversos; não dar esquema de alta dose para a família iniciar por conta própria |
+| Sintomas não controlados apesar de CI corretamente utilizado | Rever diagnóstico, adesão, técnica, exposições e comorbidades; reavaliar etapas e encaminhamento | **Não** aplicar automaticamente esquema escolar de budesonida-formoterol AIR/MART |
+
+Na etapa 2, a GINA indica inicialmente **CI diário em baixa dose por pelo menos dois a três meses**, com registro objetivo dos sintomas e avaliação do benefício. O texto britânico **BTS/NICE/SIGN 2024** descreve um **ensaio de oito a doze semanas**, em população semelhante; os dois intervalos são compatíveis em ordem de grandeza, mas pertencem a **fontes diferentes** e não devem ser apresentados como uma única prescrição normativa. A escolha da formulação (inalador pressurizado com espaçador/máscara ou bocal conforme desenvolvimento), a habilidade da família para administrar, a técnica e os efeitos adversos são partes do tratamento, não detalhes de acessório.
+
+**Por que a idade muda a decisão?** Crianças menores têm calibre brônquico, mecanismos de sibilância e capacidade de manobra diferentes dos escolares. A primeira bronquiolite aos sete meses não estabelece asma; também não se deve deixar sem proteção anti-inflamatória uma criança de quatro anos com sintomas recorrentes entre viroses e internação prévia. O ensaio de controlador deve ter **objetivo mensurável e data de reavaliação**, evitando terapia permanente por inércia.
+
+**Crescimento e efeitos adversos:** a GINA descreve pequena redução média de velocidade de crescimento em parte das crianças nos primeiros anos de CI, com magnitude dependente da dose, mas também ressalta consequências adversas da asma mal controlada. A decisão é encontrar **a menor dose eficaz**, acompanhar crescimento, técnica e eventos locais e não suspender a terapia necessária por receio inespecífico. Acompanhamento farmacológico pediátrico exige idade, apresentação, equivalência de dose e protocolo nacional específicos.
+
+**Fontes verificadas:** GINA, *Global Strategy for Asthma Management and Prevention, 2026*, capítulo 11 (*Assessment and management, children 5 years and younger*), https://ginasthma.org/2026-gina-strategy-report/ ; BTS/NICE/SIGN NG245 (2024), https://www.nice.org.uk/guidance/ng245/chapter/recommendations ; GINA *Summary Guide 2026*, que contempla 6–11 anos e faixas mais velhas, https://ginasthma.org/2026-gina-summary-guide/ . O quadro foi redigido originalmente, sem reprodução de figuras ou tabelas protegidas da GINA.
 
 
 ## 9. Casos clínicos comentados
@@ -681,6 +702,11 @@ Bebê de sete meses, previamente saudável, tem três dias de rinorreia, tosse e
 ### Caso 19 — Pré-escolar com chiado recorrente e sintomas entre infecções
 
 Menina de quatro anos, com dermatite atópica e mãe asmática, apresentou três crises com necessidade de atendimento em seis meses e continua tossindo à noite e limitando brincadeiras mesmo sem febre/coriza. Não há engasgos, alteração de crescimento ou infecção focal recorrente. **Hipótese:** asma provável na pré-escola, a diferenciar de outras causas de chiado recorrente. **Raciocínio:** sintomas intercrises, atopia e eventos importantes aumentam probabilidade clínica; ausência de espirometria válida não obriga omissão de cuidado. **Exames:** linha de base clínica, técnica de dispositivo, padrão de exposição, reavaliação longitudinal; solicitar exames adicionais por sinais atípicos. **Conduta:** considerar ensaio estruturado de CI pediátrico por 8–12 semanas, em dose/formulação apropriadas e com SABA de alívio conforme referencial e decisão clínica; medir resposta, efeitos e capacidade de adesão, depois reavaliar necessidade e diagnóstico. **Por que este caso importa:** trata risco real sem confundir asma provável com diagnóstico irreversível ou copiar AIR/MART de 6–11 anos.
+
+
+### Caso 20 — Pré-escolar com sintomas frequentes e crise prévia
+
+Menina de quatro anos tem chiado e tosse fora de resfriados, usa SABA três a quatro dias por semana e precisou de urgência com corticosteroide sistêmico há cinco meses. Está estável hoje; a família relata dúvida sobre como montar o espaçador. **Hipóteses:** asma provável em pré-escolar com risco futuro de exacerbação, além de diagnósticos alternativos conforme anamnese/exame. **Raciocínio:** pela GINA 2026 completa, uso de alívio mais de duas vezes por semana e crise relevante recente favorecem **tratamento controlador diário com CI em baixa dose**, após avaliação clínica adequada; não copiar AIR/MART dos escolares. **Exames:** história de atopia, exposições, sinais de aspiração/doença crônica, avaliação de gravidade e crescimento; exames adicionais somente se indicados. **Conduta:** treinamento de dispositivo com família, plano escrito e ensaio monitorado de CI em apresentação adequada à idade, com retorno para avaliar resposta e segurança; orientar sinais de urgência. **Por que importa:** o fato de ter quatro anos não impede considerar anti-inflamatório controlador, mas muda dispositivo, evidência e esquema.
 
 
 ## 10. Questões autorais comentadas
@@ -920,6 +946,21 @@ C) Não reavaliar diagnóstico se o tratamento for iniciado.
 D) Interpretar melhora após tratamento como confirmação absoluta e irreversível de asma.
 
 **Gabarito: B.** O ensaio é opção na suspeita selecionada de asma, com escolha de medicamento adequada à idade, educação e seguimento. **A:** copia dispositivo/dose de idade diferente. **C:** elimina a avaliação da técnica, exposições e alternativas. **D:** resposta é informação clínica, não teste etiológico perfeito. **Mini-revisão:** suspeita, teste programado, revisão e decisão compartilhada formam processo; a GINA resumida 2026 de 6–11 anos não se aplica diretamente aos menores de cinco.
+
+
+### Questão 25 — GINA 2026: criança de quatro anos e necessidade de CI
+
+Criança de quatro anos com suspeita clínica fundamentada de asma apresenta sintomas entre viroses, necessidade de SABA em quatro dias por semana e uma exacerbação com atendimento de urgência no último ano. Qual proposta melhor diferencia essa faixa etária da criança de oito anos?
+
+A) Prescrever automaticamente o esquema AIR/MART de escolares, com a mesma apresentação e limite de inalações.
+
+B) Reavaliar diagnóstico e fatores de risco, considerar controlador diário com CI pediátrico em baixa dose por período de avaliação e manter alívio apropriado à faixa etária.
+
+C) Não considerar CI em nenhum pré-escolar, independentemente de sintomas e internações.
+
+D) Presumir bronquiolite aguda permanente e dispensar seguimento.
+
+**Gabarito: B.** No capítulo de crianças de até cinco anos, a GINA 2026 recomenda discutir CI controlador quando sintomas são frequentes ou há exacerbação relevante, com acompanhamento de resposta. **A** transporta formulação/estratégia de idade diferente. **C** ignora risco e benefício do controlador. **D** confunde bronquiolite viral do lactente com padrão recorrente de possível asma em pré-escolar. **Mini-revisão:** SABA eventual pode ser suficiente em pré-escolares selecionados da etapa 1, mas uso frequente e crise grave exigem rever necessidade de CI.
 
 
 ## Referências essenciais
