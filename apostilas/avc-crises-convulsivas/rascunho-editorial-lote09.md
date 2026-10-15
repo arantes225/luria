@@ -525,7 +525,7 @@ Estabilizar convulsão e glicemia → persistência de déficit focal? manter c�
 4. **Ministério da Saúde. Linha de Cuidado AVC no Adulto.** https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/
 5. **Ministério da Saúde. Linha de Cuidado AVCi <4 horas, trombólise e monitorização.** https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/unidade-hospitalar/avc-isquemico-menor-igual-4horas/
 6. **AHA/ASA. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage.** *Stroke*. DOI https://doi.org/10.1161/STR.0000000000000407 .
-7. **AHA/ASA. 2023 Guideline for Management of Aneurysmal Subarachnoid Hemorrhage.** *Stroke*. Pesquisar DOI/texto específico na revisão editorial.
+7. **AHA/ASA. 2023 Guideline for Management of Aneurysmal Subarachnoid Hemorrhage.** *Stroke*. 2023;54:e314–e370. DOI: https://doi.org/10.1161/STR.0000000000000436 .
 8. **Ministério da Saúde. PCDT Epilepsia**, anexo alterado em **05/05/2026**. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view
 9. **ILAE. A practical clinical definition of epilepsy** (Fisher et al., *Epilepsia* 2014;55:475–482). https://doi.org/10.1111/epi.12550 .
 10. **ILAE. Operational classification of seizure types by the ILAE** (Fisher et al., *Epilepsia* 2017;58:522–530). https://doi.org/10.1111/epi.13670 .
@@ -675,7 +675,7 @@ Cenários autorais fictícios para aprendizagem. Cada conduta terapêutica deve 
 
 ### Caso 9 — Primeira crise generalizada após hiponatremia grave
 
-**Apresentação:** Mulher de 55 anos com início recente de diurético tiazídico apresenta crise tônico-clônica breve e confusão. Na 126? Não: sódio aferido 112 mEq/L, osmolaridade baixa e sem lesão focal.
+**Apresentação:** Mulher de 55 anos com início recente de diurético tiazídico apresenta crise tônico-clônica breve e confusão. O sódio aferido é 112 mEq/L, osmolaridade baixa e sem lesão focal.
 
 **Hipótese e diferenciais:** Crise aguda sintomática por hiponatremia grave, não epilepsia estabelecida por uma crise.
 
