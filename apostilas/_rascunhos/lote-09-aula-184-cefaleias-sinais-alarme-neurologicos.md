@@ -411,3 +411,296 @@ O prognóstico varia. Migrânea episódica pode permanecer estável ou cronifica
 Orientar **atendimento urgente** se houver primeira dor abrupta máxima em segundos/minutos, nova fraqueza ou alteração de linguagem, febre com rigidez ou alteração mental, convulsão, perda visual, piora progressiva rápida, cefaleia nova na gestação/puerpério com sinais de alerta, ou dor ocular com olho vermelho e turvação. Para episódios habituais sem alertas, programar seguimento se a frequência aumentar, a medicação deixar de funcionar ou surgir uso frequente de analgésicos.
 
 **Erro a evitar:** dar alta apenas porque o paciente teve resposta à medicação no serviço. Analgesia pode mascarar temporariamente uma causa secundária; a decisão de alta depende do diagnóstico e da estratificação de risco, além do alívio.
+
+
+## 19. Casos clínicos comentados: raciocínio que muda conduta
+
+### Caso 1 — Jovem com “a pior dor da vida”: a armadilha de tratar e dispensar
+
+**Apresentação:** mulher de 34 anos, previamente saudável, procura emergência por dor de cabeça que alcançou intensidade máxima durante exercício em menos de um minuto. Refere vômito e fotofobia. Está orientada, sem paresia, afebril e com exame neurológico aparentemente normal. Recebeu analgésico domiciliar que reduziu parcialmente a intensidade da dor.
+
+**Hipótese inicial e diferenciais:** cefaleia em trovoada, com **hemorragia subaracnóidea** a excluir prioritariamente. Diferenciais incluem RCVS, dissecção cervical, trombose venosa, hemorragia intraparenquimatosa e cefaleia primária precipitada por esforço, esta última **diagnóstico de exclusão** na primeira apresentação típica de alerta.
+
+**Raciocínio passo a passo:** (1) a pista é a velocidade de instalação, não o grau atual após analgésico; (2) exame normal não exclui HSA; (3) a hipótese de migrânea não é sustentada por crises recorrentes prévias típicas; (4) o tempo desde início orienta a sensibilidade da TC; (5) se TC é negativa, o desfecho da investigação depende da janela temporal, qualidade técnica, suspeita e protocolos; (6) mesmo após descartar HSA, persistência de trovoadas repetidas ou sintomas vasculares pode motivar estudo arterial/venoso.
+
+**Exames e interpretação:** TC sem contraste urgente. Em condições estritas, exame de ótima qualidade lido por profissional experiente nas primeiras seis horas pode fornecer alto valor de exclusão para HSA em paciente neurológica íntegra, mas não é regra irrestrita. Após seis horas, com risco persistente, ampliar a avaliação com punção lombar e/ou via vascular conforme diretriz e decisão clínica. Uma angio-TC que detecta aneurisma incidental pode não provar ruptura, e uma TC sem sangue não exclui automaticamente todas as causas vasculares.
+
+**Conduta:** manter investigação de emergência, avaliação e eventual referência neurovascular; não dar alta baseada apenas em melhora parcial. **Por que este caso importa?** Demonstra como uma pista temporal objetiva pode evitar morte ou sequelas mesmo na ausência de déficits focais.
+
+### Caso 2 — Dor progressiva no puerpério: não ancorar em cefaleia pós-raqui
+
+**Apresentação:** puérpera de 27 anos, cinco dias após cesariana, teve dor de cabeça inicialmente pior em ortostatismo. Ao longo de dois dias, a dor tornou-se contínua, acompanhada de visão turva e uma crise convulsiva focal breve. Está hipertensa na avaliação. Recebeu raquianestesia e relata pouco sono.
+
+**Hipóteses:** pré-eclâmpsia/eclâmpsia pós-parto, **trombose venosa cerebral**, PRES e RCVS; cefaleia pós-punção não explica satisfatoriamente todos os achados e não pode ser usada como diagnóstico excludente. Também considerar outras patologias intracranianas e causas metabólicas.
+
+**Raciocínio:** (1) puerpério é contexto vascular e hipertensivo de risco; (2) cefaleia pós-punção costuma ser claramente ortostática, porém mudança do padrão e sinais neurológicos alteram probabilidades; (3) convulsão, alteração visual e hipertensão são red flags maiores; (4) CVST pode cursar com hipertensão intracraniana e crises; (5) PRES pode acompanhar emergências hipertensivas; (6) atraso de avaliação não é justificável por existir explicação aparentemente simples para a dor inicial.
+
+**Exames:** PA seriada, hemograma/plaquetas, função renal, enzimas hepáticas e investigação obstétrica, além de neuroimagem urgente e estudo venoso (veno-TC/veno-RM) quando suspeita de CVST. RM ajuda em PRES, respeitando estabilidade. TC sem contraste normal isolada não exclui CVST.
+
+**Conduta:** manejo emergencial por equipe obstétrica/neurológica, controle de convulsões e da síndrome hipertensiva quando indicado, investigação vascular e terapia etiológica; tratamento de CVST exige anticoagulação apropriada e consideração de gestação/puerpério. **Por que importa?** Enfatiza ancoragem diagnóstica perigosa: o antecedente de anestesia espinhal não imuniza contra doenças vasculares do puerpério.
+
+### Caso 3 — Migrânea sem aura recorrente, agora com uso excessivo de analgésicos
+
+**Apresentação:** professora de 36 anos relata dor pulsátil por 8–24 horas com náuseas, foto e fonofobia, piora ao subir escadas, repetida por anos. No último semestre, cefaleia ocorre em 20 dias/mês, e usa triptano em 12 dias/mês e ibuprofeno em mais 8–10 dias/mês. Não apresenta febre, déficit focal, mudança abrupta de padrão ou papiledema em avaliação competente. A dor prejudica faltas ao trabalho.
+
+**Hipótese:** migrânea com cronificação e **cefaleia por uso excessivo de medicações agudas**, desde que critérios temporais sejam preenchidos e outras causas excluídas. **Raciocínio:** as crises antigas satisfazem um fenótipo migranoso, mas frequência atual exige diferenciar migrânea crônica de MOH coexistente. O limiar de triptanos é **≥10 dias/mês por mais de três meses**, e sua utilização não se torna inofensiva só porque a pessoa respeita dose máxima por tomada. O risco da medicação se soma à necessidade não atendida de prevenção.
+
+**Exames:** em história estável e exame normal, imagem de rotina pode não ser necessária se não houver alertas. O **diário** fornece informação mais útil: dias de dor, dias migranosos e uso de cada fármaco, preservando retrospecto e resposta futura.
+
+**Conduta:** explicar diagnóstico sem culpabilização, estruturar retirada/redução do fármaco excessivo conforme classe e risco, criar plano de ataque apropriado com limites de uso e iniciar profilaxia individualizada baseada em incapacidade, preferência, comorbidades e disponibilidade. Programar reavaliação de semanas para manejo da retirada e depois da resposta preventiva. Não prescrever opioides como substitutos. **Por que importa?** Ilustra como a ausência de plano preventivo pode transformar um tratamento de alívio em parte de um ciclo de dor.
+
+### Caso 4 — Dor orbitária unilateral: salvas, glaucoma ou dissecção?
+
+**Apresentação:** homem de 43 anos relata episódios de dor orbitária esquerda excruciante, durando 45 minutos, duas vezes ao dia, acompanhados de lacrimejamento e congestão nasal ipsilateral. Durante crises, caminha agitado. No exame intercrítico não há déficit, mas afirma que um episódio recente deixou visão turva e que a pálpebra parece caída. A dor começou há apenas duas semanas.
+
+**Hipótese principal:** cefaleia em salvas; **diferenciais relevantes:** glaucoma agudo se houver olho vermelho, alteração corneana, halos/pressão ocular elevada; dissecção carotídea se houver síndrome de Horner dolorosa persistente, dor cervical e risco vascular; lesões selares/vasculares em primeira apresentação atípica.
+
+**Raciocínio:** (1) duração de 45 minutos, repetição diária, inquietação e sintomas autonômicos são fortes pistas de salvas; (2) a primeira apresentação com possível alteração visual e ptose demanda exame ocular/neurológico competente; (3) não atribuir toda ptose a sinal autonômico sem verificar persistência intercrítica e dor cervical; (4) selecionar imagem conforme riscos e sinais; (5) se salvas for confirmada e secundárias excluídas, a terapia aguda deve ter início rápido, e a prevenção precisa de plano.
+
+**Exames:** acuidade visual, pupilas, motricidade ocular, avaliação ocular e pressão intraocular conforme segurança, exame vascular/neurológico e consideração de RM e angioimagem segundo suspeita. **Conduta:** se a hipótese de salvas permanecer, oxigênio de alto fluxo por máscara não reinalante e/ou triptano subcutâneo/nasal quando apropriado; discutir prevenção com verapamil e ECG de monitorização por equipe habilitada. Se houver alteração ocular ou Horner persistente, priorizar investigação/encaminhamento da causa. **Por que importa?** Ensina a reconhecer um padrão primário muito característico sem descuidar de diagnósticos que ameaçam visão e circulação.
+
+### Caso 5 — Cefaleia temporal de intensidade moderada em mulher de 73 anos
+
+**Apresentação:** mulher de 73 anos, previamente sem cefaleias frequentes, desenvolve dor temporal há duas semanas, fadiga e dor mandibular ao mastigar. Relata episódios de “sombra” transitória na visão direita. À avaliação, não há hemiparesia e o exame ocular não identifica perda visual permanente.
+
+**Hipótese:** arterite de células gigantes com risco de isquemia ocular. **Raciocínio:** idade de início, claudicação mandibular e amaurose transitória têm maior valor discriminante que a intensidade apenas moderada da dor. VHS/PCR e ultrassom/biópsia são úteis, mas não devem atrasar tratamento em suspeita elevada com ameaça ocular.
+
+**Conduta:** avaliação médica urgente, coordenação reumatológica/oftalmológica e início rápido de glicocorticoide no cenário apropriado, com confirmação etiológica e prevenção de complicações. **Por que importa?** Demonstra que red flags não equivalem necessariamente a dor 10/10, e que esperar a confirmação histológica pode resultar em cegueira.
+
+### Caso 6 — Cefaleia ortostática após punção
+
+**Apresentação:** mulher de 30 anos relata dor intensa ao levantar-se dois dias após punção lombar diagnóstica, com alívio nítido minutos após deitar. Não apresenta febre, déficit neurológico ou alteração de consciência; sinais vitais são estáveis.
+
+**Hipótese:** cefaleia pós-punção dural, após avaliar outras causas e revisar a evolução. **Raciocínio:** a relação com postura e procedimento reforça fuga de líquor; o mecanismo é alteração da pressão/volume liquórico com tração de estruturas sensíveis. Persistência grave ou refratariedade pode justificar avaliação para blood patch por anestesiologia. **Conduta:** analgesia adequada, hidratação conforme necessidade, orientações e reavaliação; avaliar intervenção especializada quando dor é importante ou persistente. Se a dor deixar de ser ortostática ou surgirem sinais focais/convulsão, rever imediatamente diagnóstico e pesquisar complicações. **Por que importa?** Ensina que padrão temporal e postural direciona investigação, sem criar uma licença para ignorar mudança clínica.
+
+## 20. Questões autorais comentadas (estilo ENAMED/residência)
+
+### Questão 1 — Cefaleia em trovoada
+
+Mulher de 41 anos, com cefaleia máxima em 30 segundos após esforço, sem déficit focal e com alívio parcial após analgésico. Qual é a conduta prioritária?
+
+A. Classificar como migrânea por presença de náusea.
+B. Fazer diagnóstico de cefaleia tensional porque exame neurológico está normal.
+C. Solicitar TC de crânio sem contraste de urgência e prosseguir investigação de acordo com tempo do início e probabilidade de hemorragia subaracnóidea.
+D. Usar resposta a analgésico como prova de doença primária.
+E. Manter observação domiciliar sem investigação, por ser jovem.
+
+**Gabarito: C.** A rapidez do início exige excluir HSA e outras causas vasculares. **A** confunde manifestação inespecífica com diagnóstico; **B** ignora tempo de início; **D** usa resposta terapêutica sem especificidade; **E** subestima risco em idade jovem. **Minirrevisão:** na trovoada, intensidade máxima em segundos/minuto pesa mais que intensidade atual ou exame normal.
+
+### Questão 2 — Migrânea sem aura
+
+Uma paciente apresenta oito episódios anuais de cefaleia não tratada com duração de 18 horas, unilateral, pulsátil, intensa, piora ao subir escadas e associada a fotofobia e fonofobia. Neurológico normal e sem alertas. Qual afirmação é mais correta?
+
+A. Migrânea está excluída porque não houve vômitos.
+B. O quadro satisfaz critérios clínicos de migrânea sem aura se não houver explicação melhor.
+C. O diagnóstico exige ressonância de encéfalo para toda paciente.
+D. O quadro é cefaleia em salvas porque é unilateral.
+E. A presença de fotofobia isoladamente confirma meningite.
+
+**Gabarito: B.** Há número de ataques, duração, características de dor e foto + fonofobia exigidos pela ICHD-3. **A** erra porque náuseas/vômitos **ou** foto + fonofobia satisfazem critério associado. **C** exige imagem sem sinal de alarme. **D** ignora duração de muitas horas e fenômenos migranosos. **E** confunde sintoma com diagnóstico. **Minirrevisão:** a ICHD-3 não obriga vômitos nem unilateralidade isolada para migrânea.
+
+### Questão 3 — Aura versus evento vascular
+
+Homem de 67 anos, hipertenso, sem histórico de aura, apresenta perda súbita de força em braço direito e dificuldade de fala, seguida de cefaleia. Qual conduta?
+
+A. Afirmar migrânea com aura por haver cefaleia após sintomas.
+B. Iniciar medicação profilática de migrânea e observar por uma semana.
+C. Ativar investigação de evento cerebrovascular agudo.
+D. Excluir AVC porque a cefaleia coexistiu.
+E. Solicitar apenas diário de crises.
+
+**Gabarito: C.** Déficit focal súbito em paciente com fatores vasculares requer investigação urgente, ainda que haja dor. **A/D** tratam coexistência de cefaleia como critério de exclusão de AVC. **B/E** atrasam abordagem tempo-dependente. **Minirrevisão:** aura típica se desenvolve frequentemente de forma gradual e sequencial, mas sinais focais novos exigem excluir AVC.
+
+### Questão 4 — Cefaleia em salvas
+
+Homem de 40 anos apresenta crises de dor orbitária unilateral de 50 minutos, duas vezes ao dia, com lacrimejamento, rinorreia e agitação. Quais terapias de ataque são compatíveis com recomendações?
+
+A. Paracetamol oral como único abortivo específico de primeira linha.
+B. Oxigênio a 100% em alto fluxo por máscara não reinalante e/ou sumatriptano subcutâneo quando apropriado.
+C. Opioides de rotina para todo episódio.
+D. Apenas amitriptilina usada durante a crise.
+E. Hidratação venosa obrigatória em todos os ataques.
+
+**Gabarito: B.** A curta duração e a intensidade favorecem opções com ação rápida. **A/D** têm início ou mecanismo inadequado para abortar crises típicas; **C** acarreta riscos sem justificativa; **E** não é terapia específica. **Minirrevisão:** verapamil é prevenção e requer avaliação/monitorização cardíaca, não abortivo imediato.
+
+### Questão 5 — Uso excessivo de analgésicos
+
+Mulher com migrânea prévia relata dor em 20 dias de cada mês nos últimos quatro meses e uso de sumatriptano em 13 dias/mês. Qual hipótese deve ser considerada?
+
+A. Uso normal e seguro porque menos de 15 dias/mês de triptano.
+B. Cefaleia por uso excessivo de triptano associada à cefaleia prévia.
+C. Enxaqueca em salvas, diagnóstico preferencial.
+D. Não existe cefaleia por uso excessivo se paciente respeita a dose diária máxima.
+E. Não há indicação de rever prevenção.
+
+**Gabarito: B.** A ICHD-3 utiliza **≥10 dias/mês** para triptanos por mais de três meses e cefaleia ≥15 dias/mês. **A** confunde limite de analgésicos simples; **C** descreve outra síndrome; **D** confunde número de dias com dose por tomada; **E** ignora cronificação e incapacidade. **Minirrevisão:** dias de uso e dias de dor devem ser contados separadamente.
+
+### Questão 6 — Cefaleia na emergência
+
+Adulto com migrânea típica confirmada, sem red flags, vômitos repetidos e necessidade de terapia parenteral procura pronto-socorro. Qual conduta corresponde melhor à atualização AHS de 2025?
+
+A. Hidromorfona IV é o tratamento obrigatório de primeira linha.
+B. Proclorperazina IV ou bloqueio do nervo occipital maior são opções com recomendação de nível A para pacientes elegíveis, respeitando segurança e disponibilidade.
+C. Paracetamol IV é a melhor intervenção em qualquer serviço e qualquer paciente.
+D. Bloqueios e antagonistas dopaminérgicos são contraindicados para todos.
+E. Nenhuma terapia parenteral possui evidência.
+
+**Gabarito: B.** AHS 2025 atribuiu nível A às duas opções nos pacientes elegíveis. **A** contraria recomendação de não ofertar hidromorfona IV. **C** generaliza intervenção que não recebeu recomendação favorável no contexto específico. **D** ignora seleção clínica de candidatos e riscos; **E** nega evidência. **Minirrevisão:** diretriz de terapia parenteral no adulto não substitui escolha baseada em história, contraindicações e disponibilidade brasileira.
+
+### Questão 7 — Hipertensão intracraniana idiopática
+
+Mulher de 28 anos com obesidade relata cefaleia diária, zumbido pulsátil e escurecimentos visuais breves, com papiledema confirmado. Qual é a melhor linha de raciocínio?
+
+A. Dar diagnóstico definitivo de HII sem investigação.
+B. Priorizar estudo da pressão intracraniana/visão e excluir massa e trombose venosa com imagem apropriada antes de LP quando indicada.
+C. Prescrever apenas triptano como tratamento definitivo.
+D. Desconsiderar visão porque cefaleia é sintoma principal.
+E. Realizar punção sem considerar contraindicações.
+
+**Gabarito: B.** O fenótipo indica hipertensão intracraniana, mas HII é diagnóstico após excluir causas secundárias e confirmar critérios. **A/E** ignoram segurança diagnóstica. **C/D** negligenciam ameaça visual. **Minirrevisão:** proteger visão é desfecho central em HII.
+
+### Questão 8 — Idoso com nova cefaleia
+
+Mulher de 75 anos apresenta cefaleia nova, claudicação mandibular e perda visual transitória. Qual conduta é prioritária?
+
+A. Reassegurar que cefaleia moderada nunca é secundária.
+B. Suspeitar arterite de células gigantes e iniciar avaliação/tratamento urgente para prevenir perda visual, sem aguardar confirmação quando suspeita alta.
+C. Prescrever triptano e revisar em seis meses.
+D. Excluir arterite porque o exame neurológico motor está normal.
+E. Manter apenas fisioterapia cervical.
+
+**Gabarito: B.** Idade, claudicação mandibular e sintomas visuais sugerem ACG com risco de cegueira. **A/C/E** ignoram urgência; **D** atribui indevido valor de exclusão à força preservada. **Minirrevisão:** complicação visual pode ser irreversível; investigação histológica não deve retardar cuidado urgente quando suspeita é forte.
+
+## 21. Algoritmo clínico original da LURIA: o que fazer em cada ponto decisório
+
+\`\`\`text
+PACIENTE COM CEFALEIA
+  |
+  +--> Começou subitamente, máximo <1 min? Alteração focal/consciência?
+  |       |
+  |       +--> SIM -> EMERGÊNCIA: HSA/AVC/RCVS/CVST/infecção etc.
+  |                     exame, TC ou investigação específica; sem alta por analgesia
+  |
+  +--> Febre, imunossupressão, câncer, idade >50 com dor nova,
+  |    gestação/puerpério, papiledema, progressão, posição/Valsalva?
+  |       |
+  |       +--> SIM -> investigar causa secundária conforme hipótese
+  |
+  +--> Sem alertas, exame compatível, fenótipo recorrente?
+          |
+          +--> 4–72 h, incapacitante, náusea ou foto+fonofobia
+          |       +--> MIGRÂNEA -> tratar crise e estimar necessidade de prevenção
+          |
+          +--> bilateral, aperto, leve/moderada, não piora com atividade
+          |       +--> TIPO TENSÃO -> medidas e analgesia apropriadas
+          |
+          +--> orbital unilateral 15–180 min, sinais autonômicos, agitação
+          |       +--> SALVAS -> terapia de ataque rápida + prevenção especializada
+          |
+          +--> choques faciais segundos, gatilho tátil
+                  +--> NEURALGIA DO TRIGÊMEO -> exames dirigidos
+  |
+  +--> Em qualquer cefaleia recorrente:
+          +--> contar dias de dor e dias de medicação por classe
+          +--> identificar MOH e incapacidade
+          +--> diário, plano de crise, prevenção e acompanhamento
+          +--> reabrir investigação se surgirem red flags
+\`\`\`
+
+O algoritmo é ferramenta pedagógica original e deve virar recurso responsivo próprio da LURIA, sem reprodução de algoritmos protegidos da ICHD, NICE ou material de cursinho.
+
+## 22. Quadro de diferenciais rápidos por alteração clínica
+
+| Apresentação | Diagnósticos importantes | Erro frequente |
+|---|---|---|
+| Início máximo em segundos | HSA, RCVS, dissecção, CVST, apoplexia hipofisária | Chamar de enxaqueca porque há vômitos |
+| Febre + alteração mental | Meningite, encefalite, sepse com encefalopatia | Excluir infecção porque não há rigidez |
+| Cefaleia + perda visual em >50 anos | ACG, isquemia retiniana | Esperar biópsia antes de terapia de emergência |
+| Dor ocular + olho vermelho/halos | Glaucoma agudo | Tratar como salvas sem exame ocular |
+| Puerpério + cefaleia nova + crise convulsiva | CVST, eclâmpsia, PRES, RCVS | Atribuir tudo a cefaleia pós-raqui |
+| Cefaleia ortostática depois de punção | Hipotensão liquórica | Não reevaluar se o padrão mudar |
+| Cefaleia + zumbido pulsátil + papiledema | HII, CVST e outras causas de pressão | Diagnosticar HII sem excluir CVST |
+| Dor unilateral facial em choque ao mastigar | Neuralgia trigeminal, doença dental | Prescrever antibiótico para “sinusite” sem critérios |
+| Dor orbitária + Horner persistente + dor cervical | Dissecção carotídea | Assumir sinal autonômico de salvas |
+| Cefaleia ≥15 dias/mês + triptano ≥10 dias/mês | MOH ± migrânea crônica | Aumentar somente analgésicos |
+
+## 23. Síntese de alto rendimento
+
+1. Cefaleia é problema clínico primeiro de **triagem de risco** e só depois de classificação.
+2. A **velocidade do início** é mais discriminante para HSA do que a intensidade isolada.
+3. Migrânea sem aura envolve recorrência (em geral cinco crises), duração 4–72 h, fenótipo compatível e sintomas associados.
+4. Aura típica frequentemente é **positiva, gradual e reversível**; déficit novo exige considerar AVC.
+5. Cefaleia tensional costuma ser bilateral, em aperto, não piora com rotina e sem náuseas significativas.
+6. Cefaleia em salvas: unilateral orbitária, autonômica, extrema, 15–180 min e inquietação; tratar crise com via rápida.
+7. **Hemicrania paroxística e hemicrania contínua** têm resposta completa à indometacina como característica diagnóstica.
+8. **SUNCT/SUNA** têm ataques curtíssimos neuralgiformes com fenômenos autonômicos.
+9. Neurálgia trigeminal: choque facial de segundos desencadeado por toque/fala/mastigação.
+10. Para MOH, contar **dias de uso**, e não comprimidos; limiar de 10 dias para triptanos e 15 para analgésicos simples, com cefaleia em ≥15 dias/mês.
+11. **Anticoncepcional combinado com estrogênio não deve ser oferecido rotineiramente a quem tem migrânea com aura**, conforme NICE; considerar risco vascular individual e alternativas.
+12. **Topiramato** requer forte cautela reprodutiva; é inadequado para profilaxia migranosa na gestação.
+13. AHS 2024 reconhece terapias CGRP como **uma** primeira linha de prevenção, não a única e não sinônimo de acesso no SUS.
+14. Atualização AHS 2025 favorece proclorperazina IV e bloqueio occipital em pacientes elegíveis com necessidade de terapia parenteral na emergência; desencoraja hidromorfona IV.
+15. Uma **TC normal isolada** não exclui todas as causas secundárias: selecionar imagem vascular/venosa, RM ou líquor segundo hipótese.
+16. Em HII, proteger visão é essencial; em ACG, prevenir cegueira; em HSA, evitar ressangramento; em CVST, tratar trombose venosa.
+17. Dar alta após alívio sintomático só é adequado quando a **investigação do risco está satisfatória**, não por resposta ao analgésico isoladamente.
+18. A prevenção deve ser acompanhada por diário com número de dias de migrânea, dias de medicação e impacto funcional.
+
+## 24. Bibliografia médica real para conferência editorial
+
+1. INTERNATIONAL HEADACHE SOCIETY. **International Classification of Headache Disorders, 3rd edition (ICHD-3).** Classificação geral e capítulos. https://ichd-3.org/
+2. ICHD-3. **Migraine without aura (1.1).** https://ichd-3.org/1-migraine/1-1-migraine-without-aura/
+3. ICHD-3. **Migraine with aura (1.2).** https://ichd-3.org/1-migraine/1-2-migraine-with-aura/
+4. ICHD-3. **Cluster headache (3.1).** https://ichd-3.org/3-trigeminal-autonomic-cephalalgias/3-1-cluster-headache/
+5. ICHD-3. **Medication-overuse headache (8.2).** https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/
+6. NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE. **Headaches in over 12s: diagnosis and management (CG150).** Publicada em 2012, atualizada em 3 jun. 2025. https://www.nice.org.uk/guidance/cg150/chapter/recommendations
+7. AMERICAN COLLEGE OF RADIOLOGY. **ACR Appropriateness Criteria: Headache.** https://acsearch.acr.org/docs/69482/Narrative/
+8. AMERICAN HEART ASSOCIATION/AMERICAN STROKE ASSOCIATION. **2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage.** https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage
+9. SAPOSNIK, G. et al. **Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the American Heart Association.** *Stroke*. 2024;55:e77–e90. DOI: https://doi.org/10.1161/STR.0000000000000456
+10. ROBBLEE, J. et al. **2025 guideline update to acute treatment of migraine for adults in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies.** *Headache*. DOI: https://doi.org/10.1111/head.70016 ; registro PubMed: https://pubmed.ncbi.nlm.nih.gov/41321235/
+11. CHARLES, A. C. et al. **Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine: an American Headache Society position statement update.** *Headache*. 2024;64(4):333–341. DOI: https://doi.org/10.1111/head.14692
+
+**Nota de divergência de fontes:** NICE e AHS operam em jurisdições e sistemas de acesso distintos. As faixas de evidência para terapias parenterais da AHS não substituem contraindicações, disponibilidade brasileira ou a orientação de não retardar investigação secundária. Os critérios diagnósticos da ICHD-3 são usados como terminologia de referência, com apresentação didática própria, sem cópia literal de quadros protegidos.
+
+## 25. Registro visual previsto — curadoria ainda NÃO concluída
+
+Foram consideradas imagens disponíveis online que representam aura visual e seus padrões, inclusive ilustrações com direitos de terceiros **não verificados**. Nenhuma foi inserida no material. O desenho do fluxo de imagem da LURIA exige checagem de procedência, licença compatível com uso comercial, acurácia e aprovação central no Admin. O quadro abaixo constitui **plano de busca**, não inventário de arquivos já licenciados.
+
+| Nº | Alvo visual desejado | Função didática | Critério antes de aprovar |
+|---|---|---|---|
+| 1 | Escotoma cintilante e progressão da aura (sequência) | Diferenciar fenômeno visual cortical de cegueira monocular | Autoria/licença verificadas, legenda que avise ser representação subjetiva |
+| 2 | Traçado de angioimagem de aneurisma cerebral | Relacionar cefaleia em trovoada com doença arterial | Exame real com instituição e uso editorial permitido |
+| 3 | TC com sangue em cisternas subaracnóideas | Reconhecer distribuição de HSA | Confirmação de laudo, anonimização e licença |
+| 4 | Veno-RM/veno-TC com trombose de seio dural | Mostrar que TC simples pode ser insuficiente | Fonte acadêmica rastreável e anotação interpretativa |
+| 5 | Fundo de olho com papiledema | Relacionar HII à ameaça visual | Imagem oftalmológica real licenciada |
+| 6 | Fundo de olho normal em comparação com papiledema | Treinar a diferença morfológica | Condições de técnica semelhantes e fonte clínica |
+| 7 | RM com sinais de hipotensão liquórica | Explicar cefaleia ortostática | Exame documentado e licença |
+| 8 | RM compatível com PRES | Diferenciar síndrome vascular no puerpério | Confirmar diagnóstico e anonimização |
+| 9 | Anatomia do nervo trigêmeo V1/V2/V3 | Entender território de neuralgia | Diagrama autoral ou licença compatível |
+| 10 | Anatomia do reflexo trigêmino-autonômico | Explicar salvas e sinais oculares/nasais | Diagrama autoral, sem copiar projeto gráfico de terceiros |
+| 11 | Curva/infográfico próprio de dias de uso de analgésicos | Ensinar 10 versus 15 dias/mês | Produção vetorial original a partir de critérios clínicos |
+| 12 | Registro visual de campo visual monocular versus hemianópsico | Diferenciar aura cortical de amaurose | Fonte e legenda clínica verificadas |
+
+**Status:** as 12 necessidades visuais foram definidas; ainda falta localizar as imagens candidatas elegíveis, verificar licença uma a uma e importar o manifesto para o Admin. **Não fabricar URL nem licença** para preencher campo vazio; uma figura de anatomia original pode ser criada no padrão LURIA, desde que não seja apresentada como exame clínico real.
+
+## 26. Matriz de cobertura e auditoria editorial
+
+| Competência | Onde a apostila ensina | Teste associado | Situação |
+|---|---|---|---|
+| Distinguir cefaleia primária e secundária | 1–5, 16–17 | Questões 1, 3, 8 | Base desenvolvida; revisão externa pendente |
+| Identificar trovoada e caminho inicial para HSA | 4–5, 16.1, caso 1 | Questão 1 | Desenvolvido; verificar integralmente via diagnóstica local |
+| Interpretar ICHD-3 da migrânea e da aura | 6–7 | Questões 2–3 | Desenvolvido |
+| Diferenciar cefaleia do tipo tensão e salvas | 8–9, 15, caso 4 | Questão 4 | Desenvolvido |
+| Abordar neuralgia trigeminal e outras trigêmino-autonômicas | 9–10, 15 | Caso 4 e quadro diferencial | Desenvolvido; aprofundar manejo refratário |
+| Escolher terapia abortiva com segurança | 11–12 | Questão 6 | Desenvolvido; revisar doses por disponibilidade brasileira |
+| Indicar e selecionar prevenção | 13 | Caso 3 e seguimento | Desenvolvido; checar reprodutibilidade de fármacos |
+| Diagnosticar uso excessivo de medicação | 14, caso 3 | Questão 5 | Desenvolvido |
+| Reconhecer causas secundárias de risco | 16–17, casos 1,2,5,6 | Questões 1,7,8 | Desenvolvido; conferir cada referência primária |
+| Tomar decisão em gestação, puerpério e idoso | 16–17, casos 2,5 | Questões 7–8 | Desenvolvido; validação obstétrica/vascular pendente |
+| Usar imagens apenas autorizadas | 25 | Fila de curadoria | **Não cumprido**; imagens pendentes |
+| Autossuficiência ≥60K sem repetição, HTML/PWA | Documento integral e auditoria futura | Teste editorial + scripts | **Não certificado** |
+
+### Parecer honesto de qualidade
+
+Este rascunho possui cobertura didática dos eixos essenciais e ultrapassará o patamar quantitativo de 60 mil caracteres brutos depois da integração desta seção. Contudo, a certificação editorial exige cálculo **de caracteres didáticos úteis e não redundantes**, auditoria médica de cada indicação/contraindicação e diretriz, conferência dos critérios com ICHD-3, avaliação de condutas brasileiras, curadoria das imagens e teste de resolução por conteúdo interno. A presença de **seis casos originais e oito questões comentadas** reforça o ensino, mas não substitui essas verificações.
+
+**Sem merge, sem deploy e sem publicação.** Todo conteúdo fica na branch editorial do lote 9. O próximo tema do lote é **185 — Síndromes geriátricas, quedas e polifarmácia**, que exige etapa zero própria de Drive antes de qualquer escrita substantiva.
