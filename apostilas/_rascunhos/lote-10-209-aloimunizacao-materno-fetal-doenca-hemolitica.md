@@ -656,3 +656,60 @@ D) Considerar TIU cura do anticorpo materno.
 E) Suspender informações de imuno-hematologia do prontuário.
 
 **Gabarito B.** **A incorreta:** supressão eritroide e anticorpos podem persistir. **B correta:** anemia tardia pode surgir mesmo com TSB inicialmente normal. **C incorreta:** anti-D não trata anti-K nem se usa assim em RN. **D incorreta:** TIU fornece células, não apaga memória imune. **E incorreta:** registros são essenciais a transfusões e gestações futuras. **Mini revisão:** cura bioquímica de icterícia não é cura hematológica.
+
+## 17. Propostas de imagens médicas — 10 candidatas à aprovação
+
+Esta é uma lista de imagens a localizar ou produzir para a **fila Admin → Aprovar imagens → Apostilas**. Não representa uma coleção de arquivos já obtidos, licenciados ou autorizados. Dar preferência a documentos oficiais, sociedades médicas, literatura em acesso aberto com licença comercial explícita e ilustrações originais da LURIA. Não extrair imagens dos PDFs privados de cursinho para republicar. Após aprovação, preparar WebP, legendas com créditos, descrições acessíveis e versão responsiva, obedecendo ao limite técnico de imagens clínicas.
+
+| ID interno | Imagem a pesquisar ou produzir | Finalidade clínica e legenda sugerida |
+|---|---|---|
+| 209-img-01 | Esquema original da membrana eritrocitária com antígenos D, c e K | “Incompatibilidade antigênica não é sinônimo de anticorpo materno já formado” |
+| 209-img-02 | Diagrama autoral da hemorragia feto-materna e transporte placentário de IgG | “IgG cruza a placenta; IgM não participa da mesma forma” |
+| 209-img-03 | Fluxo original de coleta e interpretação da PAI materna | “D-negativa com PAI negativa: profilaxia; anti-D imune: monitorização fetal” |
+| 209-img-04 | Quadro diagramado da prevenção anti-D com janela antenatal/eventos/pós-parto | “Anticorpo profilático é prevenção materna, não terapia da anemia fetal” |
+| 209-img-05 | Doppler clínico licenciado do pico sistólico da artéria cerebral média | “PSV-ACM acima de 1,5 MoM pode indicar anemia moderada/grave” |
+| 209-img-06 | Curva original da PSV-ACM por idade gestacional com linha 1,5 MoM, baseada em dados cuja reutilização seja autorizada | “MoM corrige a mudança fisiológica da velocidade com a idade” |
+| 209-img-07 | Ultrassonografia real e licenciada de hidropisia com ascite e edema fetal | “Hidropisia é síndrome de gravidade; investigar etiologias imunes e não imunes” |
+| 209-img-08 | Esquema autoral de fluxo assistência fetal → cordocentese/TIU → neonatologia | “Transfusão intrauterina trata anemia, não elimina anticorpos maternos” |
+| 209-img-09 | Fotografia institucional licenciada de unidade de fototerapia neonatal | “Fototerapia reduz bilirrubina, sem corrigir necessariamente anemia” |
+| 209-img-10 | Diagrama didático original dos limiares neonatais dependentes de horas e risco, sem reproduzir gráficos protegidos da AAP | “Escalonamento ocorre 2 mg/dL abaixo do limiar individual de exsanguíneotransfusão” |
+
+**Gates visuais:** fonte institucional verificável → licença/autoria → fidelidade ao achado clínico → revisão por médico → aprovação no Admin → compressão WebP e acessibilidade → HTML. Sem esses passos, nenhum novo exame/imagem será publicado. Evitar dados identificáveis de gestante, feto ou recém-nascido.
+
+## 18. Referências científicas e hierarquia de aplicação
+
+1. **Regan F, Veale K, Robinson F, et al. British Society for Haematology.** Guideline for the investigation and management of red cell antibodies in pregnancy. *Transfusion Medicine.* 2025;35(1):3–23. DOI: **10.1111/tme.13098**. https://onlinelibrary.wiley.com/doi/full/10.1111/tme.13098 . Base para anticorpos maternos, investigação da especificidade, rastreamento, anti-D/c/K, fetos previamente afetados, Doppler de ACM e cuidado transfusional. Há **errata** ligada à publicação; o revisor deve conferir versão corrigida antes da aprovação final.
+2. **American Academy of Pediatrics, 2022.** Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. *Pediatrics.* 2022;150(3):e2022058859. DOI **10.1542/peds.2022-058859**. https://publications.aap.org/pediatrics/article/150/3/e2022058859/188726/Clinical-Practice-Guideline-Revision-Management-of . Base para TSB horária, fatores de risco, fototerapia, limiar de escalonamento 2 mg/dL abaixo da troca, IVIG seletiva e exsanguíneotransfusão. **Não se aplica como nomograma a RN com menos de 35 semanas.**
+3. **AAP, 2022.** Technical Report: Diagnosis and Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. *Pediatrics.* 2022;150(3):e2022058865. https://publications.aap.org/pediatrics/article/150/3/e2022058865/188725/Technical-Report-Diagnosis-and-Management-of . Fundamenta restrição do uso rotineiro de IVIG.
+4. **Mari G, Deter RL, Carpenter RL, et al.** Noninvasive diagnosis by Doppler ultrasonography of fetal anemia due to maternal red-cell alloimmunization. *N Engl J Med.* 2000;342:9–14. DOI: **10.1056/NEJM200001063420102**. https://pubmed.ncbi.nlm.nih.gov/10620643/ . Base histórica para PSV-ACM como medida não invasiva de anemia fetal; atualização de indicação deve usar diretriz mais recente.
+5. **Ministério da Saúde.** Gestação de Alto Risco: Manual Técnico, edição brasileira histórica de referência. https://bvsms.saude.gov.br/bvs/publicacoes/manual_tecnico_gestacao_alto_risco.pdf . **Documento histórico:** não apresentado como atualização de 2026; comparar com normas vigentes e protocolos regionais antes de prescrever.
+6. **EBSERH / Maternidade-Escola Assis Chateaubriand.** Protocolo institucional de prevenção de isoimunização/anemia fetal, versão 2020. https://www.gov.br/ebserh-/pt-br/hospitais-universitarios/regiao-nordeste/ch-ufc/acesso-a-informacao/protocolos-e-pops/protocolos-meac/maternidade-escola-assis-chateaubriand/medicina-fetal/prevencao-de-isoimunizacao-anemia-fetal-v1-pro-med-obs.038 . **Institucional e datado**, útil para contexto brasileiro, sem presumir disponibilidade atual de profilaxia antenatal em todos os serviços.
+7. **Royal College of Obstetricians and Gynaecologists.** Green-top Guideline No. 65 (2014), management of women with red cell antibodies during pregnancy. **Arquivada**; utilizada somente para compreender a sucessão normativa, e não como referência principal atual em lugar da BSH 2025.
+
+**Comparadores privados do Drive realmente lidos (não republicar):** “02 - DOENCA HEMOLITICA PERINATAL.pdf” e “01 - ICTERICIA E COLESTASE NEONATAL.pdf”, além de material de pré-natal já examinado. A versão original da LURIA aprofunda, corrige generalizações e distingue fonte externa de decisão brasileira. Não há autorização conhecida para incorporar imagens ou páginas desses PDFs ao repositório.
+
+## 19. Auditoria interna de cobertura e pendências
+
+| Critério do padrão magno | Estado verificável |
+|---|---|
+| Imunologia: antígenos, IgG/IgM, hemorragia feto-materna | texto original produzido |
+| Distinção PAI/Coombs indireto, DAT/Coombs direto | texto produzido, com armadilhas explicadas |
+| Anti-D passivo versus anti-D imune; prevenção | texto produzido; conciliar produtos/doses nacionais |
+| Anti-K, anti-c, títulos e história de feto afetado | texto produzido; confirmar aplicação da errata BSH |
+| Genótipo fetal, antígeno e risco | texto produzido |
+| PSV-ACM, MoM, limitações e hidropisia | texto produzido |
+| Cordocentese, transfusão fetal e parto | texto produzido; revisão de medicina fetal obrigatória |
+| Neonatologia, AAP ≥35 semanas, limiares, IVIG, troca | texto produzido; revisão de neonatologia obrigatória |
+| Diagnósticos diferenciais e quatro fluxogramas | presentes |
+| Casos clínicos comentados | **8 originais** |
+| Questões com cinco alternativas justificadas | **12 originais** |
+| Imagens candidatas | **10 planejadas; zero licenciadas/aprovadas/integradas** |
+| Benchmark específico no Drive | **dois PDFs relevantes realmente abertos** |
+| Conferência especializada independente | **não realizada** |
+| Auditoria quantitativa dos 60 mil caracteres didáticos **úteis** | **não certificada**; tamanho bruto não prova utilidade |
+| Testes HTML, sintaxe, PWA, leitura responsiva | **não executados**; este arquivo é Markdown |
+| Publicação/merge/deploy | **não realizados** |
+
+**Prioridades de correção antes da aprovação:** conferir as diferenças entre títulos/concentrações e horários de PAI por laboratório; protocolos brasileiros mais atuais de anti-D e manejo por faixa gestacional; errata BSH 2025; tecnologias de genotipagem fetal disponíveis; recomendações de prematuros com menos de 35 semanas fora da AAP 2022; fontes e direitos de imagem; revisão de doses/contraindicações por obstetra e neonatologista. Os resultados devem ser testados com questões inéditas e situações de decisão clínica que desafiem ancoragem em números isolados.
+
+**Estado final deste arquivo:** rascunho editorial abrangente e autossuficiente em conteúdo planejado, **ainda não certificado nem publicado**.
