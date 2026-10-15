@@ -240,3 +240,41 @@ Os blocos clínicos, casos e questões novos foram inseridos nos capítulos corr
 **Validação programática básica feita no JSON:** cinco livros/48 seções; nomes de seção/IDs preservados; tags de tabelas equilibradas; cada livro acima de 60 mil caracteres estimados; **cinco arrays `images: []`**; nenhuma nova página pública foi gerada. O `node scripts/validate-apostilas-lote-02.cjs` e o `build-apostilas-batch.cjs --dry-run` **não** foram executados em checkout completo, portanto não declarar passagem nesses testes.
 
 **Pendências de aprovação:** fonte de comparação **adulta** ainda ausente para PAC; revisão médica/farmacológica integral e por subgrupos; curadoria/licença de imagens reais e aprovação Admin; revisão de transição entre capítulos e repetição de conceitos; verificação no renderer desktop/PWA e compatibilidade de saída HTML vs `content.json`. Os cinco livros continuam **NÃO CERTIFICADOS, NÃO PUBLICADOS**, sem merge/deploy.
+
+
+## Etapa 12 — expansão prática de DPOC e Diabetes (14/10/2026)
+
+**Etapa zero:** lido `lead_apostilas` antes de iniciar a rodada. Foram abertos no Drive `DPOC estável.pdf`, `DPOC exacerbada.pdf`, `01 - DIABETES - CLASSIFICACAO, FISIOPATOLOGIA E DIAGNOSTICO DO DM.pdf` e `03 - ANTIDIABETICOS ORAIS E SUBCUTANEOS.pdf` para identificar tópicos da formação médica presentes/ausentes. Como os documentos são resumos privados com recomendações que podem estar desatualizadas, não foram usados para copiar texto, imagem ou determinar conduta. As adições foram redigidas originalmente, com referências verificáveis e limitações declaradas.
+
+### Alterações científicas efetivamente gravadas
+
+**DPOC — `LOTE_02_DPOC_EDICAO_CONTINUA.md`:**
+- Seções **4.5–4.7**, explicando mecanismos de pMDI (spray), DPI (pó seco), SMI (névoa suave), aerocâmara e nebulização; diferenças entre inspiração lenta/profunda e rápida/forte; falhas de preparação, dispositivo vazio, espiração no bocal e força manual; matriz para não escalar terapia antes de confirmar uso, adesão, exposição, diagnóstico concorrente e exacerbações.
+- Seção **7.4**, checklist e raciocínio de retorno após exacerbação e situações que apontam etiologia cardíaca ou outras causas além da obstrução.
+- Casos novos **15 e 16** e questões **20–22**, com comentários de todas as alternativas.
+- Fontes: GOLD 2026, https://goldcopd.org/2026-gold-report-and-pocket-guide/ ; NHLBI/NIH, https://www.nhlbi.nih.gov/resources/how-use-dry-powder-inhaler-fact-sheet ; American Lung Association 2026, https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler .
+- Rascunho de leitura passou de **82.949 a 100.806 caracteres brutos** (acréscimo de **17.857**), mantendo estrutura de nove capítulos.
+
+**Diabetes — `LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md`:**
+- Seções **7.3–7.5**, incluindo estratificação renal **G1–G5 + A1–A3**, RAC + TFGe, confirmação de persistência, diferencial nefropatia não diabética, papel de IECA/BRA, iSGLT2 e risco de hipoglicemia em DRC; rastreamento retiniano, neuropatia, monofilamento e risco IWGDF de úlcera com intervalos de seguimento.
+- **Divergência explicitada:** SBD capítulo DRD disponível na coletânea 2026, mas revisão assinalada em **04/07/2024**, faz recomendação mais abrangente de IECA/BRA em RAC >30 mg/g independentemente de PA; ADA 2026 recomenda na coexistência com hipertensão e albuminúria, e desaconselha IECA/BRA na prevenção primária indiscriminada sem albuminúria. Decisão terapêutica demanda contexto clínico; não alegar que ambas as fontes dizem a mesma coisa.
+- Casos novos **13–14** e questões **21–23**, com explicação das alternativas.
+- Fontes: SBD, https://diretriz.diabetes.org.br/avaliacao-e-tratamento-da-doenca-renal-do-diabetes-2/ ; ADA 2026 seção 12, https://doi.org/10.2337/dc26-S012 ; ADA 2026 seção 10, https://doi.org/10.2337/dc26-S010 .
+- Rascunho de leitura passou de **82.273 a 99.173 caracteres brutos** (acréscimo de **16.900**), mantendo dez capítulos.
+
+### Paridade de publicação controlada e verificada
+
+As sete adições (quatro em DPOC, três em Diabetes) foram convertidas em HTML seguro e sincronizadas **nos capítulos correspondentes** de `LOTE_02_INPUT_PREPUBLICACAO.json`; nenhuma imagem foi adicionada e nenhum `index.html` foi criado.
+
+| Livro | Markdown bruto da edição contínua | Texto visível aproximado do JSON | Casos totais no Markdown | Questões totais no Markdown | Tabelas HTML |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Asma | 78.862 | 75.595 | 10 | 15 | 8 |
+| **DPOC** | **100.806** | **96.512** | **16** | **22** | **9** |
+| **Diabetes** | **99.173** | **94.789** | **14** | **23** | **13** |
+| Pneumonia adulta | 83.616 | 79.676 | 14 | 21 | 10 |
+| Tuberculose | 101.570 | 96.822 | 12 | 21 | 13 |
+| **Total** | **464.027** | **443.394** | **66** | **102** | **53** |
+
+**Importante sobre a contagem de casos/questões:** quatro manuscritos (DPOC, Diabetes, PAC e TB) ainda têm **Casos e Questões 1–2 em parágrafos compactos de capítulos anteriores** à seção final de casos/questões; o conteúdo permanece no arquivo e JSON, mas **a organização de leitura não está concluída**. Esse problema foi detectado em auditoria estrutural e deve ser corrigido movendo e ampliando os primeiros dois casos e questões nos próximos passes, sem duplicação.
+
+**Gates pendentes:** contagem de caracteres é aproximação e não certificado científico; doses e medicamentos sem revisão independente integral; paridade Markdown/HTML foi conferida nos novos trechos mas não houve execução Node real do gerador; imagens sem curadoria/licenças; referência equivalente de pneumonia **adulta** no Drive ainda não encontrada; testes PWA/desktop não realizados; nenhuma publicação, merge ou deploy.
