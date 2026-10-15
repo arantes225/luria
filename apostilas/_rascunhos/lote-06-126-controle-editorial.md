@@ -120,3 +120,54 @@ A matriz verifica se o **corpo da apostila** (sem respostas) contém os conceito
 
 ## Atualização de referência — Baveno VIII (2026)
 Foi identificado e revisado o consenso Baveno VIII, publicado no *Journal of Hepatology* em 19/08/2026, DOI 10.1016/j.jhep.2026.07.030. A redação recebeu a subseção 6.3 sobre critérios contemporâneos não invasivos de CSPH (15 kPa e plaquetas ≥150 para exclusão em populações validadas; modelos com probabilidade ≥75% e ≥25 kPa em etiologias adequadas para identificação) e a ressalva sobre TIPS precoce e individualização dos antibióticos na HDA varicosa. Alterações sincronizadas nos rascunhos MD, JSON e HTML, sem mexer na área publicada. **Revisão independente de hepatologia ainda pendente; diretriz nova não equivale a validação automática do resto do capítulo.**
+
+
+---
+
+## Revisão técnica de 15/10/2026 — Baveno VIII, EASL CHC e sincronização
+
+**Apostila de origem preservada e ampliada:** \`apostilas/_rascunhos/lote-06-126-cirrose-e-complicacoes.md\` (103.470 caracteres brutos; 30 capítulos, oito casos e doze questões). Corpo didático dos capítulos 1 a 26 estimado em **72.424 caracteres**, após filtro básico de URLs/Markdown, excluindo casos, questões e bibliografia. Este número não comprova unicidade semântica ou mérito clínico. A triagem por comparação literal de parágrafos longos não encontrou duplicatas idênticas; permanece revisão humana de repetição conceitual.
+
+### Atualizações médicas com fonte primária
+
+1. **Baveno VIII 2026, capítulo 6:** acrescentados critérios para primeira descompensação e nova descompensação, com definição de recompensação. **Diferença decisiva:** Baveno VIII exige manutenção dos critérios de recompensação **por mais de seis meses**, enquanto Baveno VII histórico usava doze meses; a etiologia precisa estar controlada, ascite e encefalopatia resolvidas **sem terapias específicas** e função hepática melhorada para Child A5/A6.
+2. **Betabloqueadores (Baveno VIII):** carvedilol/NSBB em pacientes apropriados com ascite e varizes; redução ou suspensão quando PAS persistentemente <90 mmHg, PAM <65 mmHg ou HRS-AKI, com reavaliação para reintrodução quando recuperar perfusão. Não recomendar suspensão automática pelo simples diagnóstico de ascite/PBE nem administração em choque.
+3. **Antibioticoprofilaxia:** desestimular uso primário prolongado apenas para evitar progressão inespecífica após primeiro evento de descompensação, sem eliminar indicações próprias de hemorragia varicosa e PBE prévia.
+4. **EASL 2025, capítulo 16:** US semestral para vigilância de CHC; AFP adiciona sensibilidade à custa de especificidade; investigar lesões suspeitas por TC/RM multifásica no grupo aplicável. Cirrose recompensada não equivale a desaparecimento do risco de CHC.
+5. **ADQI–ICA 2024, capítulo 11:** conferida a ausência de requisito sistemático de albumina por 48h para diagnóstico de HRS-AKI; paciente euvolêmico/congestionado não deve receber expansão cega apenas para completar tempo.
+6. **Referência clínica:** Baveno VIII, DOI 10.1016/j.jhep.2026.07.030; ADQI–ICA, DOI 10.1016/j.jhep.2024.03.031; EASL CHC 2025, DOI 10.1016/j.jhep.2024.08.028. Essas fontes internacionais não são equivalentes a um PCDT brasileiro vigente de toda a cirrose.
+
+### Artefatos e integridade
+
+- \`apostilas/_rascunhos/lote-06-126-build-input-preliminar.json\`: **29 seções** (introdução, 26 capítulos didáticos, casos, questões) e **12 referências**, sem imagens clínicas embutidas.
+- \`apostilas/_rascunhos/lote-06-126-preview.html\`: **30 seções** incluindo bibliografia, oito casos, doze questões com alternativas A–D; inspeção textual encontrou **zero âncoras quebradas e zero IDs repetidos**.
+- As subseções **6.4, 6.5, 6.6 e 16.1** foram sincronizadas no Markdown, no JSON e na prévia HTML. Nenhum deploy/merge.
+- \`apostilas/_rascunhos/lote-06-126-imagens-candidatas-plano.json\`: quatro candidatas principais e três alternativas com origem e licença abertas identificadas; outras seis pautas ainda sem fonte; **zero aprovação e zero inserção no site**. A licença é ponto de partida, não avaliação de adequação médica ou autorização para publicar sem atribuir.
+
+### Matriz de autossuficiência preliminar (apenas cobertura lexical)
+
+| Questão | Tema | Capítulo-base |
+| --- | --- | --- |
+| 1 | Definição de cirrose, lesão estrutural versus enzima elevada | 1, 5 |
+| 2 | GASA e proteína ascítica | 8 |
+| 3 | PMN absoluto e limiar de PBE | 10 |
+| 4 | Albumina após paracentese volumosa | 9 |
+| 5 | Diagnóstico atualizado HRS-AKI | 11 |
+| 6 | Lactulose, diarreia e segurança na EH | 12 |
+| 7 | Antibiótico/vasoativo antes de endoscopia na HDA varicosa | 13 |
+| 8 | PBE versus peritonite secundária | 10 |
+| 9 | Profilaxia após PBE versus primária | 10 |
+| 10 | INR na cirrose e risco de trombose | 15 |
+| 11 | CHC após cura de hepatite viral | 16 |
+| 12 | Ascite refratária, TIPS e encefalopatia | 9 e 18 |
+
+A triagem encontrou termos centrais em **12/12** questões nos respectivos capítulos, **sem ler as respostas das questões**. Isso NÃO significa que as justificativas estejam clinicamente perfeitas; é necessário revisar toda alternativa, caso e protocolo farmacológico.
+
+### Pendências que bloqueiam certificação
+1. Revisão por hepatologista de todos os regimens, indicações de carvedilol/albumina/terlipressina, microbiologia, TIPS e CHC, incluindo diferenças de acesso no Brasil.
+2. Revisão de nutrição, transplante/critério nacional, segurança de fármacos, casos clínicos e comentários de alternativas.
+3. Validação de autoria, licença, relevância e eventual compressão WebP das dez pautas de imagem; submissão ao **Admin**, sem inserção direta.
+4. **Execução efetiva ainda pendente** dos scripts \`build-apostilas-batch.cjs --dry-run\`, \`audit-apostilas-60k.mjs\`, \`audit-apostilas-batch.cjs\`, \`check-syntax.cjs\` em checkout apropriado. A matriz e contagem JavaScript aqui não equivalem a rodar o gerador oficial.
+5. Inspeção visual, navegabilidade, tipografia, acessibilidade, impressão e PWA, sem publicação antes da revisão final.
+
+**Parecer:** 126 ampliada e sincronizada, com controle de riscos de interpretação das normas 2026. **RASCUNHO NÃO PUBLICAR.**
