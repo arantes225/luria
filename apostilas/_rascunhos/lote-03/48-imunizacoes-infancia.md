@@ -114,6 +114,119 @@ A) resfriado sem gravidade; B) antibiótico oral isolado; C) anafilaxia document
 A) não pode ocorrer surto; B) heterogeneidade pode manter suscetibilidade coletiva; C) coberturas locais são irrelevantes; D) todos estão individualmente imunes.  
 **Gabarito B.** A/C/D generalizam indevidamente; B reconhece bolsões de risco. **Mini-revisão:** cobertura e homogeneidade importam.
 
+
+## 12. Calendário Nacional da Criança em 2026 — quadro clínico interpretado por idade
+
+### 12.1 O que significa um quadro de vacinação atualizado
+
+O **Calendário Nacional de Vacinação da Criança de 2026** do Ministério da Saúde foi publicado/atualizado em julho, com **Instrução Normativa de 2026** e notas técnicas de operacionalização. A tabela a seguir é um **recorte didático de rotina**, atualizado pelo material institucional consultado em outubro de 2026. **Não substitui a norma integral**: uma criança com doses prévias, comorbidade, mudança de produto, atraso, residência em região de surto ou condição de imunossupressão exige o calendário técnico e a nota em vigor no momento da aplicação.
+
+| Idade do calendário de rotina | Imunizantes principais | Como interpretar na consulta |
+|---|---|---|
+| **Ao nascer** | hepatite B; BCG | proteger precocemente; avaliar condições neonatais e profilaxia específica quando há infecção materna |
+| **2 meses** | pentavalente D1; VIP D1; rotavírus D1; pneumocócica conjugada (VPC20 D1 conforme implantação) | checar janelas da vacina rotavírus e transição pneumocócica |
+| **3 meses** | meningocócica C D1 | não confundir com reforço ACWY do segundo ano |
+| **4 meses** | pentavalente D2; VIP D2; rotavírus D2; pneumocócica conjugada D2 | na fase de transição de 2026, a dose de quatro meses pode ser VPC10, conforme estoque/nota |
+| **5 meses** | meningocócica C D2 | verificar registro e intervalo do esquema |
+| **6 meses** | pentavalente D3; VIP D3; influenza (início da vacinação anual); covid-19 D1 no produto/esquema indicado | influenza de primeira vacinação requer duas doses na situação prevista; covid-19 varia por produto |
+| **7 meses** | covid-19 D2 no esquema Comirnaty indicado | não transportar calendário de outro produto sem verificar norma |
+| **9 meses** | febre amarela D1; covid-19 D3 no esquema Comirnaty | febre amarela antes de nove meses apenas em situações excepcionais com avaliação risco-benefício |
+| **12 meses** | VPC20 reforço; meningocócica ACWY; tríplice viral D1 | VPC20 na transição pode completar VPC20–VPC10–VPC20 |
+| **15 meses** | DTP reforço 1; VIP reforço 1; tríplice viral D2; varicela D1; hepatite A dose de rotina | VOP oral não é o reforço da rotina listado na página oficial atual |
+| **4 anos** | DTP reforço 2; VIP reforço 2; varicela D2; febre amarela reforço | conferir situação anterior para não administrar doses desnecessárias |
+| **9 anos** | HPV4 dose de rotina | resgate conforme idade e estratégia vigente |
+| **10 anos** | dengue DNG4 conforme calendário e faixa etária indicada | duas doses em intervalo de três meses, respeitando produto e contraindicações |
+| **11 anos** | meningocócica ACWY na adolescência | não confundir esta indicação com a dose dos 12 meses |
+
+**Fonte normativa prioritária:** https://www.gov.br/saude/pt-br/vacinacao/calendario e https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view. Para contato clínico, consultar também situação vacinal na Caderneta e normas especiais; o quadro é uma fotografia do calendário de 2026 e pode ser alterado.
+
+### 12.2 O que muda em comparação com fichas antigas de residência
+
+Um resumo de vacinação de **2020** descreve VOP como reforço infantil, pneumocócica conjugada VPC10 sem menção à VPC20, esquemas anteriores de HPV e janelas estreitas de rotavírus. A página nacional vigente **não pode ser reconciliada por memória** com o material antigo. O médico deve dizer qual documento está usando, quando foi atualizado e qual regra se aplica à criança real.
+
+**Pulo do Gato:** as provas podem cobrar tanto o calendário vigente **na data da prova** quanto uma mudança histórica. É correto responder com o contexto temporal explicitado e errado declarar que todas as versões sempre foram iguais.
+
+## 13. Rotavírus: atualização de janela etária, imunologia e contraindicações
+
+### 13.1 Por que a janela de idade importa?
+
+A vacina oral viva atenuada contra rotavírus busca prevenir formas graves de gastroenterite e desidratação, sobretudo nos primeiros anos. A elegibilidade é **limitada por idade** e por condições clínicas. A página oficial de vacinação do Ministério da Saúde em 2026 informa **primeira dose a partir de 1 mês e 15 dias até 11 meses e 29 dias** e **segunda dose a partir de 3 meses e 15 dias até 23 meses e 29 dias**, com **intervalo usual de 60 dias** entre doses, e **30 dias mínimos em situações excepcionais previstas**.
+
+Esses limites diferem de resumos antigos que ensinavam primeira dose apenas até 3 meses e 15 dias e segunda até 7 meses e 29 dias. **O material de Drive explicitamente rotulado PNI 2020 utiliza o esquema histórico e não será reaproveitado como norma de 2026.** É necessário consultar a Instrução Normativa de 2026 e condições particulares quando há dúvida sobre dose já recebida.
+
+### 13.2 Atrasos e esquemas incompletos
+
+Quando a criança chega com atraso, confirmar idade exata em dias/meses, datas anteriores e produto utilizado. Uma dose anterior válida geralmente não obriga reiniciar esquema; contudo, intervalo e idade de início/final são limites específicos. Não administrar vacina oral de rotavírus simplesmente porque “ainda tem menos de cinco anos”, como se não existisse janela máxima.
+
+O processo correto é: idade e registro → contraindicação/precaução → janela etária do produto → intervalo mínimo → dose elegível → orientação/registro e retorno. Se a primeira dose não foi administrada dentro da janela aplicável, não extrapolar as regras de doses seguintes sem consulta ao programa.
+
+### 13.3 Antecedente de invaginação e imunodeficiência
+
+História anterior de **invaginação intestinal** é contraindicação relevante para vacina de rotavírus, e imunodeficiência combinada grave também é contraindicação descrita em referências de imunização; outras condições anatômicas e clínicas exigem apreciação. Dor abdominal paroxística, vômitos, letargia e sangue nas fezes após vacinação não provam causalidade, mas requerem avaliação urgente e notificação quando há suspeita de evento adverso. A associação temporal deve ser investigada, sem banalizar sinais graves nem afirmar que toda gastroenterite pós-vacinal é causada pela vacina.
+
+### 13.4 Vacinação oral e administração
+
+A vacina de rotavírus é administrada **por via oral**, não parenteral. A orientação sobre regurgitação/vômito após aplicação depende da norma de produto e protocolo nacional — **não redosar automaticamente** por iniciativa individual. A vacinação não substitui água segura, higiene, aleitamento, cuidado com contato de diarreia e tratamento adequado quando houver desidratação.
+
+## 14. Doença pneumocócica e a transição VPC10 → VPC20 em 2026
+
+### 14.1 Por que conjugação e valência são importantes?
+
+Streptococcus pneumoniae possui múltiplos sorotipos de cápsula, com distribuição e potencial invasivo variáveis. Vacinas conjugadas ligam polissacarídeos capsulares a proteína carreadora, favorecendo resposta dependente de células T, memória e resposta em lactentes. VPC10, VPC13 e VPC20 cobrem conjuntos diferentes de sorotipos, mas **maior valência não prova automaticamente que cada criança precise de dose extra fora do esquema**. A decisão depende do programa, histórico, idade e condição clínica.
+
+As doenças pneumocócicas invasivas incluem bacteremia, meningite e algumas pneumonias; otite e doença respiratória não invasiva também são relevantes. Vacinação reduz risco, mas não previne todos os sorotipos e todas as pneumonias. Não se pode inferir pela vacinação que uma criança febril com rigidez de nuca não tenha infecção bacteriana.
+
+### 14.2 Implantação nacional em 2026
+
+O Ministério comunicou disponibilidade da **VPC20 no SUS em julho de 2026**, com fase inicial de transição a partir de junho conforme o guia técnico. Durante coexistência de estoques, a comunicação pública do programa descreveu **VPC20 aos 2 meses, VPC10 aos 4 meses e VPC20 como reforço aos 12 meses** na rotina, respeitando **intervalo mínimo de 60 dias** entre D2 e reforço. Após esgotamento de VPC10, o programa prevê uso de VPC20 nas doses de rotina correspondentes.
+
+Essa sequência híbrida tem fundamento logístico e programático; não representa erro de sala de vacina nem “mistura aleatória” de formulações. Ela exige registro detalhado para evitar doses desnecessárias ou aplicação antes do intervalo. Quando a criança tem doses antigas de VPC10, a necessidade de resgate/complemento depende da nota de transição específica e do grupo de risco.
+
+**Fontes:** https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/julho/vacina-pneumo-20-esta-disponivel-no-sus-para-criancas-de-ate-5-anos-e-grupos-especiais e https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf.
+
+### 14.3 Grupos especiais não seguem apenas o quadro de rotina
+
+Crianças com asplenia/anemia falciforme, imunodeficiências, fístula liquórica, implante coclear e outras condições podem ter indicações especiais com conjugadas/polissacarídicas conforme normas da **Rede de Imunobiológicos para Pessoas com Situações Especiais (RIE/CRIE)**. A Nota Técnica nº 52/2026 e notas de atualização abordam VPC20 em estratégias especiais, com esquemas que **não são idênticos** ao 2+1 da rotina.
+
+Não copiar a informação de um grupo especial em outro: a criança imunocompetente com esquema VPC10 completo não recebe automaticamente o mesmo resgate de uma criança asplênica parcialmente vacinada. A abordagem correta consulta indicação clínica, produtos anteriores, idade, intervalos e recomendação específica em vigor.
+
+### 14.4 Um caso numérico de transição
+
+Lactente nasceu em maio de 2026. Registro de VPC20 aos 2 meses, VPC10 aos 4 meses e família pergunta se haverá “terceira primeira dose” por ser vacina diferente. A rotina de transição prevê **reforço com VPC20 aos 12 meses**, com atenção ao intervalo mínimo indicado. Não há razão para reiniciar série apenas por diferença de valência. Se existe imunodeficiência, a decisão passa a ser especial e precisa de consulta ao CRIE/RIE, não apenas à tabela de rotina.
+
+## 15. Poliomielite e o fim do reforço oral de rotina no calendário estudado
+
+### 15.1 A imunização contra pólio exige proteção individual e coletiva
+
+Poliovírus pode produzir desde infecção assintomática até paralisia flácida aguda. A vacinação mantém proteção comunitária e a vigilância de paralisia flácida é crítica para evitar reintrodução e circulação. A VIP, vacina inativada, produz proteção contra doença paralítica sem vírus replicante vacinal, enquanto VOP é oral viva atenuada e tem características epidemiológicas e riscos específicos.
+
+Historicamente, esquemas utilizavam VIP em doses iniciais e VOP em reforços. A página oficial de 2026 para crianças **lista VIP aos 2, 4, 6 e 15 meses e reforço aos 4 anos**, não VOP em 15 meses/4 anos no calendário nacional mostrado. Portanto, copiar calendário PNI 2020 que ensina VOP como reforço **seria erro factual de 2026**.
+
+### 15.2 Como registrar uma carteira com VOP antiga
+
+Uma criança pode possuir doses anteriores de VOP ou combinações históricas legítimas. Não marcar a carteira como inválida automaticamente. Verificar produto, data, idade, dose anterior e norma de recuperação. A transição histórica permite entender a carteira, mas **a conduta atual** depende de instrução técnica vigente.
+
+Se existir suspeita de paralisia flácida, é emergência clínica e de vigilância epidemiológica: avaliação neurológica, suporte, notificação e investigação conforme protocolos, sem pressupor que imunização passada explica/descarta o quadro.
+
+## 16. Meningocócicas C e ACWY: memória por sorogrupo e por idade
+
+### 16.1 Por que o nome da vacina importa?
+
+Neisseria meningitidis possui múltiplos sorogrupos associados a doença invasiva. Vacina meningocócica conjugada C protege contra o sorogrupo C; ACWY amplia proteção contra A, C, W e Y. Nem uma nem outra equivale a vacina contra o sorogrupo B. A escolha no SUS depende da **faixa etária e estratégia programática**, enquanto situações especiais podem requerer produto e esquema específicos.
+
+### 16.2 Esquema da infância no portal nacional de 2026
+
+A vacinação de rotina contempla **meningocócica C aos 3 e 5 meses**, seguida de **meningocócica ACWY aos 12 meses**. Na adolescência, há indicação de ACWY a partir de **11 anos**, com regra de resgate até 14 anos e 11 meses e 29 dias no calendário apresentado. Essas doses não devem ser confundidas ou administradas sem verificar o histórico.
+
+**Exemplo de prova:** criança de 12 meses recebeu doses de C aos 3 e 5 meses; qual produto é mostrado no calendário nacional para o segundo ano? **ACWY**, não simplesmente uma terceira dose de C no esquema de rotina apresentado.
+
+### 16.3 Grupos de risco e surtos
+
+Asplenia, deficiências do complemento, tratamento com inibidores do complemento e outros estados podem mudar indicações, reforços e sorogrupos a cobrir. Um contato de caso de doença meningocócica pode necessitar **quimioprofilaxia pós-exposição** mesmo que vacinado, conforme saúde pública e tipo de contato; a vacina não substitui profilaxia imediata definida para exposição de risco.
+
+Não confundir meningite bacteriana aguda suspeita com pergunta sobre vacinação: criança febril com petéquias e alteração de consciência precisa de atendimento emergencial e antimicrobiano adequado, não esperar atualização vacinal.
+
+
 ## 12. Planejamento visual e referências
 
 Priorizar reprodução autoral dos esquemas conceituais (calendário dinâmico, tipos de vacina e fluxo de atraso) com **link institucional**, não cópia de infográficos; fotografias de técnica apenas se fonte/licença comercial verificadas e aprovação em fila Admin. Dez candidatas devem ser avaliadas quando relevantes, sem obrigatoriedade de inserção de figuras redundantes.
