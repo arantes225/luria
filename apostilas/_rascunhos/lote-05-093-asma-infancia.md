@@ -548,3 +548,39 @@ Não considerar esta apostila pronta apenas porque possui muitos caracteres. Um 
 **Lacunas clínicas que impedem publicação neste estágio:** quadro completo de apresentações disponíveis no Brasil e comparação com PCDT 2026; validação independente de todos os esquemas e máximos por idade; avaliação de gravidade pré-escolar por dados observacionais; farmacologia detalhada das combinações aprovadas; diferenciais de tosse e dispneia com exames dirigidos; inclusão de questões mais longas de decisão sequencial; documentação de imagens licenciadas; verificação formal de redundâncias e consistência entre capítulos; revisão por pediatra/pneumologista; e teste visual no site e no PWA.
 
 **Status:** manuscrito avançado, **em revisão**, ainda não aprovado nem integrado à biblioteca pública. O número bruto de caracteres Markdown não equivale automaticamente ao número de caracteres didáticos úteis.
+
+## 24. Reconciliação farmacológica 2026 — GINA internacional × PCDT brasileiro (complemento editorial)
+
+A diretriz internacional responde à pergunta **“qual estratégia apresenta evidência para esta faixa etária?”**; o PCDT responde também a perguntas de **cobertura assistencial, regulação e apresentações descritas no SUS**. A bula do produto responde à pergunta **“essa formulação e esse dispositivo são autorizados para esta criança?”**. São camadas distintas. A equivalência de princípios ativos não autoriza substituir automaticamente um inalador de uma concentração por outro em esquemas de alívio ou MART.
+
+### 24.1. A concentração não pode desaparecer da recomendação
+
+Na GINA 2026, a formulação de referência para uso como alívio anti-inflamatório com budesonida-formoterol **aos 6–11 anos** corresponde a **80/4,5 microgramas por dose liberada** (100/6 microgramas por dose medida) em DPI ou pMDI, conforme especificação de cada produto. A tabela internacional apresenta, **para aquela formulação**: nos degraus 1–2 com alívio anti-inflamatório isolado, uma inalação quando necessária; no degrau 3 com MART, uma inalação diária de manutenção mais uma quando necessária; no degrau 4, uma inalação duas vezes ao dia mais uma quando necessária. A mesma tabela **não recomenda MART no degrau 5**. A GINA orienta procurar atendimento caso sejam necessárias **mais de oito inalações totais em 24 horas**, contando manutenção e alívio, para a formulação indicada. Necessidade repetida e crescente de medicação já exige avaliação clínica, mesmo antes desse limite.
+
+Esses números **não** são uma receita genérica para qualquer combinação com formoterol. Uma apresentação descrita como **200/6 microgramas por dose medida** não é equivalente, em corticosteroide, à de **100/6 microgramas por dose medida**. Não corrigir essa diferença orientando o cuidador a improvisar frações de cápsula, mudanças de dispositivo, supressão de manutenção ou alterações não previstas em bula.
+
+### 24.2. O que o PCDT 2026 confirma — e o que ainda exige conferência
+
+O PCDT Asma aprovado pela Portaria Conjunta SAES/SCTIE nº 43/2026, em sua versão atualizada em setembro de 2026, **descreve no elenco de medicamentos do protocolo** a associação formoterol + budesonida nas apresentações de **6/200 e 12/400 microgramas** (cápsula ou pó inalante), entre outros medicamentos. No texto de orientação farmacológica, menciona para crianças de 6–11 anos a formulação preferencial de **100/6 microgramas por dose medida (80/4,5 liberados)**. Essa diferença **não demonstra**, por si só, que a apresentação de menor dose conste do elenco fornecido pelo SUS, que esteja comercializada em todos os locais ou que toda marca seja elegível ao mesmo regime. O autor da prescrição deve verificar o produto concreto, sua bula, o acesso regional e a indicação por idade antes de concluir que a estratégia recomendada é executável no serviço.
+
+Outra atualização que merece atenção: a retificação do PCDT em setembro de 2026 corrige, para um critério referente à identificação de asma grave nos 6–11 anos, o limiar de budesonida ou equivalente associado a LABA para **dose superior a 400 microgramas/dia**, e não **igual ou superior a 400 microgramas/dia**. Trata-se de um componente dos critérios do documento, **não** de regra para definir gravidade isoladamente por dose, dispensar avaliação especializada ou intensificar controlador sem revisar técnica e adesão.
+
+### 24.3. Duas decisões clínicas para verificar aprendizado
+
+**Cenário 1 — a prescrição substituída pela farmácia.** Uma criança de nove anos recebeu uma orientação para usar um produto com dose liberada de 80/4,5 microgramas de budesonida-formoterol no regime determinado. Na dispensação foi oferecido um dispositivo cujo rótulo informa 200/6 microgramas de dose medida. O médico não deve escrever “mesma combinação, pode substituir”. Deve conferir dose **medida versus liberada**, tipo de dispositivo, registro e indicação por idade; recalcular com base em fonte específica apenas se houver alternativa formalmente adequada; e ensinar a técnica com o dispositivo de fato entregue. A decisão pode ser selecionar outro regime controlador/alívio compatível, em vez de transpor o MART original.
+
+**Cenário 2 — oito jatos e piora progressiva.** Um escolar em MART de formulação validada passa a precisar de inalações adicionais várias vezes por dia, mantendo limitação para atividade e despertares. A contagem total diária precisa incluir **manutenção + resgate**, mas não deve funcionar como permissão para esperar chegar ao teto. Falta de ar com sinais de gravidade impõe avaliação imediata, independentemente do número; uso crescente sem gravidade imediata pede reavaliação rápida do controle, da adesão, das exposições e da técnica. A criança não deve receber apenas uma receita de reposição de dispositivo.
+
+### 24.4. Validação farmacológica pendente antes da publicação
+
+| Verificação | Evidência mínima a registrar na versão final |
+|---|---|
+| Produto e via | Nome do produto, concentração **medida e liberada**, pMDI/DPI/nebulização, instruções de dispositivo e espaçador quando aplicável |
+| Faixa etária e esquema | Idade autorizada no Brasil, etapa, manutenção, alívio, máximo diário e necessidade de revisão/encaminhamento |
+| Disponibilidade | Distinguir recomendação GINA, lista do PCDT, acesso na rede SUS e apresentações efetivamente comercializadas |
+| Exacerbação | Conferir o salbutamol, o ipratrópio e os corticosteroides sistêmicos **por faixa etária, peso, concentração e via**, inclusive contraindicações |
+| Segurança editorial | Revisão de prescrição por pediatra/pneumologista e farmacêutico; não converter essa matriz em calculadora ou prescrição automática sem checagem |
+
+**Fontes primárias verificadas em 14/10/2026:** [GINA 2026, Summary Guide, tratamento 6–11 anos e tabela de AIR/MART](https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf); [Ministério da Saúde, PCDT Asma 2026 atualizado em 04/09/2026](https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view) e [anexo integral da Portaria Conjunta nº 43/2026](https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/@@download/file). O texto e os exemplos são autorais; não reproduzem os quadros das publicações originais.
+
+**Status desta camada:** reconciliação documental realizada; **não** substitui conferência individual de bulas e disponibilidade, nem aprovação científica independente. A apostila permanece em revisão e fora da biblioteca publicada.
