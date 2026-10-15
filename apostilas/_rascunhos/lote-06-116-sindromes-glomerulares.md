@@ -242,3 +242,147 @@ D) Presumir edema por insuficiência venosa e liberar.
 - KDIGO. Clinical Practice Guideline for Lupus Nephritis (2024): https://kdigo.org/guidelines/lupus-nephritis/
 - KDIGO. Clinical Practice Guideline for ANCA-Associated Vasculitis (2024, incluindo esclarecimentos): https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/
 - KDIGO. Glomerular Diseases guideline hub: https://kdigo.org/guidelines/gd/
+
+
+---
+
+# Ampliação editorial — etapa 3: doenças específicas e terapêutica (14/10/2026)
+
+> Esta ampliação foi elaborada com base em leitura comparativa parcial dos resumos de doenças glomerulares e lúpus disponíveis no Drive, revisão do padrão visual de uma apostila LURIA existente e conferência de documentos KDIGO e PCDT brasileiros. Os resumos do Drive não permitem confirmar cobertura equivalente a um livro-texto de Estratégia MED. Portanto, **não certificar o benchmark completo**. Todo o texto a seguir é original e deve ser submetido a conferência médica antes de publicação.
+
+## 15. Síndrome nefrótica pediátrica: do primeiro episódio às recaídas
+
+### 15.1 Por que a pediatria não é uma cópia dos adultos
+
+O perfil de doenças por trás da síndrome nefrótica muda com a idade. Na infância, especialmente entre os anos pré-escolares, há predomínio de apresentações idiopáticas sensíveis ao corticoide, frequentemente com histologia de lesões mínimas. O diagnóstico inicial é predominantemente clínico e laboratorial; em criança com apresentação típica, não se exige biópsia antes da primeira terapia. Em adultos, a necessidade de biópsia e a probabilidade de nefropatia membranosa, glomeruloesclerose segmentar e focal e causas secundárias são diferentes.
+
+Na consulta inicial, a principal decisão não é escolher uma imunossupressão de longo prazo. É verificar se a criança tem infecção grave, complicações trombóticas, hipovolemia intravascular, hipertensão importante ou injúria renal. A criança pode apresentar ascite tensa, dor abdominal, derrame pleural ou edema escrotal, e essas manifestações podem requerer condutas diferentes. Dor abdominal febril em criança nefrótica não é automaticamente edema intestinal: peritonite bacteriana espontânea precisa ser considerada.
+
+### 15.2 Definições contemporâneas que mudam o gabarito
+
+A diretriz KDIGO 2025 define **proteinúria em faixa nefrótica pediátrica** por relação proteína/creatinina urinária (RPC) de **2 g/g ou maior**, ou proteína urinária de pelo menos 1.000 mg/m²/dia, usando amostra apropriada. O diagnóstico clínico de síndrome nefrótica reúne proteinúria nessa faixa com **albumina sérica abaixo de 3 g/dL**, ou edema quando a albumina não está disponível. A confirmação de remissão completa utiliza, entre outros critérios, RPC até 0,2 g/g ou fita urinária negativa/traços em **três dias consecutivos**, preferindo primeira urina da manhã. Os limiares pediátricos não devem ser substituídos pela excreção absoluta de 3,5 g/dia dos adultos.
+
+A resposta ao glicocorticoide é tão importante quanto a síndrome inicial. **Sensível ao corticoide** é a criança que alcança remissão completa até quatro semanas de esquema padrão. **Resistente ao corticoide** refere-se à ausência de remissão completa em quatro semanas; alguns pacientes com resposta parcial entram em janela confirmatória adicional, e a avaliação especializada é obrigatória. **Dependência** implica recaídas sucessivas durante o corticoide ou até 14 dias após interrompê-lo; **recaída frequente** segue frequência definida conforme o tempo de observação. Essas palavras não são intercambiáveis: guiam investigação genética, biópsia, escolha de poupadores de corticoide e discussão com a família.
+
+| Expressão | Critério de ensino | Implicação clínica |
+| --- | --- | --- |
+| Síndrome nefrótica pediátrica | RPC ≥2 g/g com hipoalbuminemia <3 g/dL ou edema quando albumina indisponível | Iniciar avaliação etiológica e de complicações |
+| Remissão completa | RPC ≤0,2 g/g ou fita negativa/traços por ≥3 dias consecutivos | Indica resposta terapêutica, não cura definitiva |
+| Sensível a esteroide | Remissão completa nas primeiras 4 semanas do tratamento padrão | Geralmente favorece prognóstico renal |
+| Resistente a esteroide | Ausência de remissão completa após quatro semanas de dose diária padrão, com confirmação orientada por especialista | Considerar genética, biópsia e tratamento especializado |
+| Recaída | Retorno de proteinúria nefrótica após remissão | Reavaliar infecções, adesão, complicações e necessidade de novo curso terapêutico |
+
+### 15.3 Primeira crise: indicação, esquema e proteção
+
+Segundo KDIGO 2025, a terapia inicial com prednisona ou prednisolona costuma ter **8 ou 12 semanas**, com fase diária de quatro ou seis semanas seguida de fase em dias alternados por igual período. A dose padrão de início é **2 mg/kg/dia ou 60 mg/m²/dia**, respeitando máximo de **60 mg/dia**; a fase em dias alternados utiliza **1,5 mg/kg ou 40 mg/m²**, máximo de **40 mg por dose**, conforme protocolo de 8 ou 12 semanas. Apresentar as duas alternativas evita ensinar uma duração universal que a diretriz não determina. Em crianças com características atípicas, idade mais avançada, história familiar ou suspeita genética, o caminho pode envolver biópsia/genética antes de tratamentos empíricos.
+
+A escolha prática requer medir altura, peso, superfície corporal quando aplicada, apresentação disponível e plano escrito de retirada. Glucocorticoides podem causar hipertensão, ganho ponderal, alterações de humor, hiperglicemia, efeitos ósseos e susceptibilidade a infecção. A família deve receber orientações sobre edema, febre, dor abdominal, cefaleia, oligúria e monitorização da urina quando indicada. Não se recomenda prolongar automaticamente por meses além do esquema inicial esperando prevenir recaídas: a diretriz atual não sustenta esse prolongamento rotineiro.
+
+**Recaída em criança sensível:** uma estratégia KDIGO 2025 é reiniciar prednisona/prednisolona oral 2 mg/kg/dia (ou 60 mg/m²/dia; máximo 60 mg) até remissão completa mantida por pelo menos três dias; depois passar à dose em dias alternados de 1,5 mg/kg ou 40 mg/m² (máximo 40 mg) por quatro semanas, em conformidade com o especialista e protocolo aplicável. Cada episódio deve ser diferenciado de proteinúria transitória associada a febre sem síndrome nefrótica plenamente recorrente.
+
+### 15.4 O que fazer se as recaídas voltarem ou não houver resposta
+
+Em recaídas pouco frequentes, novos ciclos de corticoide podem ser apropriados, desde que as toxicidades sejam acompanhadas. Em recaídas frequentes ou dependência, o plano deve buscar reduzir exposição cumulativa a esteroides: micofenolato, ciclofosfamida, inibidores de calcineurina e rituximabe são opções segundo perfil, disponibilidade e experiência pediátrica. Não há regra de que toda criança deva receber todos eles em sequência. Comprometimento de crescimento, obesidade, infecções recorrentes e toxicidade já existente podem alterar a escolha.
+
+Na resistência ao corticoide, KDIGO recomenda **ciclosporina ou tacrolimo** como opções de segunda linha inicial em crianças selecionadas; solicitar investigação genética e biópsia conforme perfil, especialmente se síndrome familiar, manifestação sindrômica ou ausência de resposta. Uma forma genética de alteração podocitária frequentemente não responde à mesma imunossupressão que doença idiopática; reconhecer essa possibilidade protege contra terapias ineficazes e tóxicas. Monitorar nível dos inibidores de calcineurina, pressão, função renal e interações, pois podem causar nefrotoxicidade e hipertensão.
+
+### 15.5 Complicações imediatas na infância
+
+A infecção é complicação de alto impacto. Febre com dor abdominal, irritabilidade, prostração ou piora súbita do edema exige avaliação, inclusive de peritonite; edema acentuado pode dificultar identificação de sinais. Tromboembolismo, apesar de menos frequente que certas complicações infecciosas, deve ser considerado em dor assimétrica, dispneia inexplicada ou cefaleia neurológica. Hipovolemia efetiva pode se apresentar com taquicardia, má perfusão, dor abdominal e aumento de creatinina apesar de anasarca; diurese agressiva pode piorá-la.
+
+O seguimento não termina com fita urinária negativa. Registrar evolução ponderoestatural, PA, toxicidade medicamentosa, função renal, calendário vacinal e qualidade de vida familiar. A progressão da criança sensível é muito diferente da criança multirresistente; por isso o termo “síndrome nefrótica infantil” não fornece prognóstico isoladamente.
+
+**Referências nucleares:** KDIGO Nephrotic Syndrome in Children 2025, https://kdigo.org/guidelines/nephrotic-syndrome-in-children/ ; Ministério da Saúde, PCDT Síndrome Nefrótica Primária em Crianças e Adolescentes, https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes/view . Conferir divergências entre atualização internacional e acesso/fluxo nacional antes da publicação.
+
+## 16. Doença de lesões mínimas no adulto
+
+### 16.1 O defeito funcional pode ser mais exuberante que a microscopia óptica
+
+Na doença de lesões mínimas, a disfunção dos podócitos e do diafragma de filtração provoca proteinúria intensa; a microscopia óptica pode ser quase normal, enquanto a eletrônica demonstra apagamento difuso dos pedicelos. Isso explica o nome e a importância de não depender exclusivamente de microscopia óptica para entender a doença. Não se trata de uma glomerulonefrite proliferativa clássica. Em adultos, o quadro pode aparecer abruptamente com edema extenso e albumina muito baixa, às vezes com injúria renal aguda associada.
+
+A etiologia é frequentemente idiopática, mas deve-se perguntar por anti-inflamatórios não esteroidais e por contextos clínicos associados, inclusive neoplasias hematológicas. Investigar sinais sistêmicos e não assumir que um jovem adulto com proteinúria intensa tenha automaticamente doença de lesões mínimas: formas de GESF podem ter apresentação semelhante, e fragmento inadequado de biópsia pode dificultar a distinção, especialmente em lesões focais.
+
+### 16.2 Escolhendo e monitorando o tratamento
+
+Para doença de lesões mínimas comprovada em adulto, a terapêutica de primeira linha frequentemente utiliza glicocorticoides em regime apropriado à diretriz e às comorbidades. A resistência exige reconsiderar diagnóstico, adesão e possibilidade de GESF não amostrada. A duração de alta dose, retirada e alternativas devem seguir protocolo nefrológico com avaliação de resposta; não é correto transpor sem adaptação o esquema pediátrico de 8–12 semanas. Em intolerância, dependência, recaídas frequentes ou toxicidade, existem estratégias com inibidores de calcineurina, ciclofosfamida, micofenolato ou rituximabe, de acordo com subtipo clínico e decisão especializada.
+
+É crucial acompanhar proteinúria em série, albumina, creatinina, volume, pressão, glicemia e efeitos de esteroides. Em cada nova recaída, perguntar se há gatilho, exposição farmacológica ou diagnóstico inicial incorreto. A remissão clínica pode ocorrer em semanas, mas alguns adultos respondem mais lentamente que crianças, o que exige acompanhamento em vez de declarar resistência prematuramente.
+
+### 16.3 Questão diferencial: lesões mínimas versus GESF primária
+
+Ambas podem resultar em síndrome nefrótica com lesão podocitária. A GESF mostra cicatriz em parte dos glomérulos e segmentos acometidos, e a amostragem insuficiente pode não captá-la. Lesões mínimas costuma ter maior probabilidade de sensibilidade a esteroides e prognóstico renal favorável quando responde; GESF primária pode ser mais difícil de tratar e apresenta risco significativo de progressão. Contudo, a histologia precisa ser integrada a história, proteinúria, albumina e genética, e nenhuma imagem isolada traduz toda a patogênese.
+
+## 17. Glomeruloesclerose segmentar e focal (GESF): a histologia não basta
+
+### 17.1 O significado dos dois adjetivos
+
+**Focal** significa que nem todos os glomérulos da amostra estão comprometidos. **Segmentar** significa que apenas parte do tufo de um glomérulo acometido apresenta esclerose. Essa descrição morfológica não esclarece, sozinha, por que os podócitos foram lesados. O processo pode resultar de lesão primária presumivelmente mediada por fator circulante, adaptação a hiperfiltração, variantes genéticas, viroses ou medicamentos. Distinguir os grupos evita expor uma pessoa com GESF adaptativa à toxicidade de imunossupressão sem benefício esperado.
+
+### 17.2 Primária, secundária, genética e causa indeterminada
+
+A **GESF primária** tipicamente combina síndrome nefrótica completa (proteinúria maciça e hipoalbuminemia), apagamento difuso de pedicelos à eletrônica e ausência de causa secundária ou genética identificada. A **GESF secundária** pode acompanhar obesidade importante, redução congênita/adquirida de massa renal, refluxo, nefropatia hipertensiva avançada, HIV e outras agressões; a albumina sérica nem sempre está tão baixa quanto a proteinúria sugere. Em **GESF de causa indeterminada**, não há causa estabelecida, mas faltam componentes da apresentação primária; de acordo com KDIGO, tais pacientes merecem tratamento de suporte e monitoramento, não imunossupressão empírica apenas pelo laudo.
+
+A história familiar, idade de apresentação, proteinúria desde a infância, extrarrenais sindrômicos e resistência terapêutica podem justificar painel genético especializado. Algumas variantes associadas a APOL1 elevam risco de doença renal em pessoas com ancestralidade específica, mas ancestralidade presumida não substitui avaliação clínica e, quando indicado, teste e aconselhamento apropriados. O objetivo da genética é classificar mecanismo, orientar prognóstico e evitar tratamentos desnecessários, não criar estigma.
+
+### 17.3 Tratamento guiado pelo mecanismo
+
+GESF secundária/adaptativa: tratar doença precipitante, pressão, massa corporal quando pertinente, dislipidemia e proteinúria, com bloqueio do SRAA quando seguro. A biópsia com esclerose avançada pode representar dano já estabelecido, e imunossupressão não restaura glomérulos cicatrizados. GESF primária: glucocorticoide costuma ser terapia inicial em candidatos apropriados; inibidores de calcineurina podem ser alternativa por contraindicação a corticoide ou estratégia em resistência conforme KDIGO e serviço especializado. A noção de “resistência a corticoide” em GESF adulta envolve exposição e tempo adequados, não ausência de remissão após poucos dias.
+
+**Erro clássico:** encontrar proteinúria de 4 g/dia em paciente obeso com GESF e afirmar que há doença primária apenas porque ultrapassou 3,5 g/dia. A albumina sérica, o conjunto clínico, apagamento de pedicelos e história são decisivos. **Erro inverso:** descartar causa genética porque não há parentes diagnosticados; penetrância e reconhecimento familiar são imperfeitos.
+
+### 17.4 Seguimento e prognóstico
+
+O principal marcador modificável de prognóstico costuma ser a persistência de proteinúria, sobretudo acompanhada por declínio de TFG. Remissão completa está associada a desfechos melhores, mas até remissão parcial sustentada pode ser clinicamente relevante. Monitorar potássio/creatinina com antiproteinúricos, efeitos de esteroide, toxicidade de calcineurínicos e complicações cardiovasculares. DRC avançada requer integração com planejamento de terapia renal substitutiva. Após transplante, recorrência da GESF primária é preocupação particular e não deve ser extrapolada para todas as formas secundárias ou genéticas.
+
+**Fonte-chave:** KDIGO 2021, FSGS key takeaways, https://kdigo.org/guidelines/gd/ .
+
+## 18. Nefropatia membranosa: autoimunidade podocitária, risco e tempo de resposta
+
+### 18.1 Lesão por depósitos subepiteliais
+
+Na nefropatia membranosa, a resposta imune contra antígenos relacionados ao podócito gera depósitos predominantemente **subepiteliais** e espessamento da membrana basal glomerular. O quadro clínico é frequentemente nefrótico, às vezes detectado como proteinúria persistente antes de ocorrer edema generalizado. Imunofluorescência granular ao longo das paredes capilares e depósitos à microscopia eletrônica sustentam a definição histológica. Há formas primárias, frequentemente associadas a anti-PLA2R, e causas secundárias relacionadas a LES, hepatites, neoplasias, fármacos e outros processos.
+
+### 18.2 Anti-PLA2R e necessidade de biópsia: nuance indispensável
+
+Em adulto com síndrome nefrótica típica e anti-PLA2R positivo, a diretriz KDIGO aceita confirmação de nefropatia membranosa sem biópsia obrigatória em cenários adequados; a biópsia pode continuar útil quando existe queda inesperada de função renal, diabetes concomitante, sedimento atípico ou dúvidas de diagnóstico e prognóstico. Um teste **anti-PLA2R negativo não exclui** nefropatia membranosa nem mesmo doença associada a PLA2R: a expressão tecidual pode revelar positividade, e existem outros antígenos. A investigação de causa secundária continua mesmo diante de biomarcador positivo, considerando idade e risco clínico.
+
+### 18.3 Risco trombótico e anticoagulação
+
+A síndrome nefrótica acentua risco trombótico por vários mecanismos, como perdas urinárias de anticoagulantes naturais, alterações compensatórias da coagulação e hemoconcentração. A nefropatia membranosa é especialmente lembrada nas questões por trombose de veia renal, trombose venosa profunda e embolia pulmonar. Suspeitar de trombose de veia renal diante de dor lombar ou abdominal nova, hematúria e piora renal em paciente nefrótico, mas reconhecer que eventos podem ser silenciosos.
+
+A decisão de anticoagulação profilática **não depende apenas da proteinúria**: considerar albumina sérica, subtipo histológico, fatores trombóticos, imobilidade, risco hemorrágico, função renal e estratégias do serviço. Não prescrever profilaxia como regra a todo paciente com proteinúria nefrótica nem tratar de modo idêntico trombose estabelecida e prevenção primária.
+
+### 18.4 Quando observar e quando imunossuprimir
+
+A abordagem começa com controle volêmico, pressão, proteinúria, risco cardiovascular e acompanhamento; algumas pessoas evoluem com remissão espontânea, sobretudo quando o risco é baixo. A decisão de imunossupressão combina proteinúria persistente, albumina, TFG, velocidade de perda funcional, títulos de anti-PLA2R quando úteis e complicações da síndrome nefrótica. Rituximabe é opção relevante; em cenários de risco mais elevado, esquemas baseados em ciclofosfamida e glicocorticoides ou calcineurínicos podem ser considerados. A escolha não decorre de uma tabela genérica de “primeira linha para toda membranosa”.
+
+**Raciocínio temporal:** redução de anti-PLA2R após imunoterapia pode anteceder queda de proteinúria por meses. Não classificar falha terapêutica apenas porque a proteinúria ainda não desapareceu nas semanas iniciais, se há resposta imunológica e estabilidade clínica. O inverso também existe: anti-PLA2R persistente ou crescente pode indicar atividade mesmo antes de piorar a proteinúria. Repetir marcadores em intervalos definidos pelo risco e plano nefrológico.
+
+**Fonte-chave:** KDIGO 2021, Membranous nephropathy, https://kdigo.org/guidelines/gd/ ; PCDT brasileiro para síndrome nefrótica primária adulta: https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos/view .
+
+## 19. Glomerulonefrite associada a infecção versus glomerulopatia do complemento
+
+### 19.1 A inflamação pode persistir depois de a infecção desaparecer
+
+A GN pós-estreptocócica clássica é um subtipo de GN pós-infecciosa que surge após intervalo de latência, historicamente mais associada a crianças. Pode causar urina escura, hipertensão, edema e queda de função renal; consumo transitório de C3 favorece a hipótese. A pesquisa de evidência de infecção estreptocócica prévia pode recorrer a títulos sorológicos apropriados, interpretados segundo infecção de garganta ou pele e tempo decorrido. Cultura de orofaringe positiva, quando obtida já no período nefrítico, não comprova sozinha causalidade.
+
+Em adultos com diabetes, idade avançada ou comorbidades, a GN relacionada a infecção pode ocorrer **durante infecção ainda ativa**, como endocardite, abscessos ou infecção estafilocócica. Nessa situação, interpretar GN como processo “pós” e administrar imunossupressão antes de procurar foco infeccioso pode agravar o quadro. Tratamento causal demanda controle do foco, antibióticos quando indicados e manejo de hipertensão/volume e função renal.
+
+### 19.2 A cinética do complemento é diagnóstica
+
+A queda de C3 após infecção, seguida de recuperação em semanas, favorece GN pós-infecciosa clássica. Persistência prolongada de hipocomplementemia, proteinúria intensa ou perda funcional sem melhora pede reconsiderar nefrite lúpica, doença associada a imunocomplexos ou glomerulopatia mediada por complemento. Não existe um relógio absoluto para todos os pacientes; avaliar o conjunto e o motivo de eventual biópsia. Em GN com padrão de depósitos dominantes de C3, a avaliação especializada do sistema complemento pode revelar disfunção da via alternativa.
+
+### 19.3 O padrão membranoproliferativo é uma descrição, não uma causa única
+
+A antiga terminologia GN membranoproliferativa I/II/III misturava morfologia e mecanismo. Atualmente é mais útil descrever hipercelularidade e duplicação de membrana basal e separar etiologias por depósitos e complemento. Padrão membranoproliferativo por imunocomplexos pode decorrer de infecções crônicas, autoimunidade e gamopatias monoclonais. Já **glomerulopatia C3** indica deposição predominantemente de C3, englobando glomerulonefrite C3 e doença de depósitos densos, com avaliação de desregulação da via alternativa e variantes adquiridas/genéticas.
+
+O algoritmo inicial inclui investigação de infecção, hepatites, crioglobulinas, gamopatia conforme idade e história, imunologia e análise histológica. O tratamento pode exigir controlar doença primária, otimizar proteção renal e avaliar terapias dirigidas com especialistas em casos selecionados. “GNMP” sem interpretação de imunofluorescência não é justificativa suficiente para regime universal de corticoide.
+
+### 19.4 Endocardite como diagnóstico diferencial de vasculite
+
+Febre persistente, sopro, fenômenos embólicos, hipocomplementemia e sedimento glomerular ativo podem apontar endocardite infecciosa, mesmo com autoanticorpos inespecíficos positivos. Colher hemoculturas conforme protocolo antes de antibióticos, quando não atrasa tratamento necessário, e usar ecocardiograma conforme suspeita. Em alguém com GNRP e febre, excluir uma infecção grave potencialmente reversível é parte essencial de decidir imunossupressão. A prioridade é reconhecer quando infecção e glomerulonefrite coexistem.
+
+## Registro de verificação desta etapa
+
+- Foram acrescentados **cinco blocos etiológicos**: síndrome nefrótica pediátrica, lesões mínimas, GESF, nefropatia membranosa e GN relacionada a infecção/complemento. As recomendações terapêuticas são diferenciadas por diagnóstico e risco; as doses pediátricas acima foram conferidas no KDIGO 2025 e necessitam conciliação com PCDT e padronização brasileira antes de eventual publicação.
+- Pendente aprofundar anti-MBG, vasculites ANCA, IgA/IgAV, nefrite lúpica, nefropatias hereditárias, situações especiais, prognóstico longitudinal, casos comparativos e verificação final. O texto ainda não é uma apostila aprovada.
