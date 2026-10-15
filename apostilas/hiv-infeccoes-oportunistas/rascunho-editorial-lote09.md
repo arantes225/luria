@@ -521,11 +521,590 @@ O PCDT brasileiro (R1–R2) é a fonte primária para esquemas e programas do SU
 - [x] TB, CrAg, PCP, neurotoxoplasmose, CMV, candidíase, histoplasmose, MAC e diarreias.
 - [x] Hepatites, IST, SIRI, neoplasias, populações especiais e ética.
 - [x] Quadros de conduta, prevenção e erros frequentes.
-- [ ] Casos clínicos integrados com comentários aprofundados.
-- [ ] Questões autorais com comentários de cada alternativa.
-- [ ] Curadoria de dez imagens candidatas com fontes/legendas e licenças.
+- [x] Casos clínicos integrados com comentários aprofundados (seção 30).
+- [x] Questões autorais com comentários de cada alternativa (seção 31).
+- [x] Plano de 12 imagens candidatas; aprovação de licenças ainda pendente (seção 32).
 - [ ] Checagem especializada de doses por função renal, gestação e interações.
 - [ ] Auditoria final e transformação para formato content.json usado pelo renderizador LURIA.
 - [ ] Revisão médica independente antes de considerar apta à publicação.
 
 **Este material é rascunho para aprendizado e curadoria. Não confundir conclusão de texto com aprovação clínica ou integração ao site.**
+
+
+---
+
+## 30. Casos clínicos completos: diagnóstico, raciocínio e conduta
+
+Os casos abaixo são **fictícios e autorais**. Cada cenário deve ser interpretado com julgamento clínico, exames e disponibilidade local. Posologias individualizadas devem ser conferidas no PCDT e na prescrição institucional.
+
+### Caso 1 — Diagnóstico recente sem sinais de infecção oportunista
+
+**Apresentação e dados relevantes:** Homem de 27 anos recebe confirmação de HIV após testagem de rotina. Está assintomático, afebril e clinicamente estável. Ainda não sabe CD4 nem carga viral e refere receio de começar medicamento por desconhecer o que ocorrerá no trabalho.
+
+**Hipótese diagnóstica:** Infecção por HIV confirmada; não há sinais no momento de doença definidora de aids ou de meningite que altere a janela inicial de TARV.
+
+**Raciocínio passo a passo:** A ausência de CD4 não justifica esperar semanas. A prioridade é vínculo, avaliação clínica de OI, coleta de exames e início oportuno do regime adequado, com explicação de adesão, sigilo e I=I. Verificar comorbidades, possíveis interações e capacidade de comparecimento.
+
+**Exames, critérios e interpretação:** CD4, carga viral, hemograma, função renal/hepática, glicemia, lipídios e coinfecções conforme PCDT, incluindo sífilis/hepatites, IgG de toxoplasmose e TB. Genotipagem somente se houver indicação específica.
+
+**Conduta e seguimento:** Ofertar TARV no mesmo dia ou em até sete dias, quando não há contraindicação clínica; orientar TDF/3TC/DTG como regime preferencial sob avaliação. Organizar retorno e retirada de medicamentos.
+
+**Por que este caso importa:** Ensina que o cuidado começa antes de chegarem todos os exames e que barreiras sociais exigem ação da equipe, não adiamento indefinido.
+
+### Caso 2 — TB pulmonar e diagnóstico de HIV
+
+**Apresentação e dados relevantes:** Homem de 41 anos com tosse, emagrecimento, febre vespertina e TRM-TB positivo. Testagem confirma HIV e CD4 de 74 células/mm³. Não apresenta rigidez de nuca ou sinais neurológicos e está clinicamente estável após início do esquema para TB.
+
+**Hipótese diagnóstica:** Coinfecção HIV–TB pulmonar ativa, imunossupressão avançada, sem evidência inicial de meningite tuberculosa.
+
+**Raciocínio passo a passo:** É necessário tratar TB imediatamente, avaliar transmissão/isolamento, resistência e interações farmacológicas. No PCDT brasileiro, a introdução da TARV em TB não meníngea deve ocorrer em até sete dias depois do início do tratamento de TB, independentemente do CD4. Rifampicina exige ajuste de DTG.
+
+**Exames, critérios e interpretação:** Monitorar função hepática, renal, adesão e eventual genotipagem pré-tratamento de HIV quando indicada para coinfecção TB-HIV; investigar outras OI e necessidades de profilaxia.
+
+**Conduta e seguimento:** Manter esquema anti-TB apropriado; planejar início de TARV preferencial com ajuste DTG 50 mg a cada 12 h sob rifampicina e manter o ajuste por cerca de 15 dias depois de suspender rifampicina, conforme PCDT. Não esperar resultado de genotipagem para iniciar TARV indicada.
+
+**Por que este caso importa:** Diferencia tratamento de TB não meníngea da exceção da meningite tuberculosa.
+
+### Caso 3 — Cefaleia subaguda com CrAg reagente e hipertensão intracraniana
+
+**Apresentação e dados relevantes:** Mulher de 35 anos, sem TARV, CD4 de 28, procura emergência com cefaleia progressiva, vômitos e turvação visual. CrAg sérico reagente. A punção lombar realizada com segurança revela pressão de abertura elevada e antígeno criptocócico no líquor.
+
+**Hipótese diagnóstica:** Meningite criptocócica com hipertensão intracraniana.
+
+**Raciocínio passo a passo:** CrAg positivo não dispensa investigação liquórica e controle da pressão. O risco vital inicial está associado tanto à infecção fúngica quanto à hipertensão intracraniana. TARV imediatamente no primeiro dia não é estratégia adequada nesse cenário.
+
+**Exames, critérios e interpretação:** LCR com CrAg, micologia/cultura, pressão de abertura documentada e avaliação neurológica; hemograma, função renal, eletrólitos, monitoramento da toxicidade dos antifúngicos.
+
+**Conduta e seguimento:** Iniciar tratamento antifúngico de indução do PCDT e manejar HIC com punções de alívio repetidas quando indicadas. Planejar TARV entre quatro e seis semanas do antifúngico, condicionado a melhora clínica, controle da HIC e avaliação especializada.
+
+**Por que este caso importa:** A medida de pressão e o momento de TARV são tão cobrados quanto o nome do antifúngico.
+
+### Caso 4 — Dispneia progressiva e imagem pouco exuberante
+
+**Apresentação e dados relevantes:** Homem de 38 anos não utiliza TARV, apresenta há 20 dias tosse seca, febre intermitente e dispneia progressiva. CD4 de 86. Saturação em ar ambiente 88%; radiografia mostra infiltrado intersticial discreto, e gasometria revela PaO2 de 62 mmHg.
+
+**Hipótese diagnóstica:** Pneumocistose moderada/grave é hipótese principal; TB, pneumonia bacteriana e outras pneumopatias continuam no diferencial.
+
+**Raciocínio passo a passo:** O conjunto de imunodepressão, sintomas subagudos, tosse seca e hipoxemia apoia tratamento imediato quando suspeita alta. RX pouco exuberante não tranquiliza. PaO2 <70 mmHg preenche critério de corticoide adjuvante segundo o PCDT.
+
+**Exames, critérios e interpretação:** Gasometria e gradiente A-a, TC quando útil, amostra respiratória apropriada para Pneumocystis, testes para TB conforme quadro e função renal/eletrólitos.
+
+**Conduta e seguimento:** Iniciar SMX-TMP na dose de tratamento calculada por trimetoprima e função renal, por 21 dias; associar corticosteroide escalonado pelo critério de hipoxemia; avaliar oxigenação, ventilação e internação. Providenciar TARV segundo estabilidade e protocolo.
+
+**Por que este caso importa:** Pneumocistose não é excluída por ausculta ou RX pouco alterados, e dose terapêutica não equivale a profilaxia.
+
+### Caso 5 — Déficit focal, lesões em anel e dúvida com linfoma
+
+**Apresentação e dados relevantes:** Mulher de 46 anos com CD4 de 54, IgG para Toxoplasma reagente, convulsão focal e hemiparesia. TC contrastada evidencia duas lesões com realce em anel e edema, incluindo região de gânglios da base.
+
+**Hipótese diagnóstica:** Neurotoxoplasmose é provável, mas linfoma SNC, tuberculomas, abscessos e outras lesões expansivas continuam possíveis.
+
+**Raciocínio passo a passo:** Achados são sugestivos, não patognomônicos. No PCDT, tratamento presumido e reavaliação clínica/radiológica em 10–14 dias é abordagem usual, com investigação antecipada se piora. Antes de punção lombar, ponderar risco de herniação por efeito de massa.
+
+**Exames, critérios e interpretação:** TC/RM para caracterização, sorologia toxoplasmose, exames de HIV e investigação de diferenciais; LCR/PCR quando seguro e indicado; avaliação neurológica/neurocirúrgica.
+
+**Conduta e seguimento:** Iniciar terapia dirigida para toxoplasmose conforme PCDT; controlar convulsões, monitorizar edema e lesões. TARV em até sete dias do antiparasitário quando possível, individualizando efeito de massa/hipertensão intracraniana; se ausência de resposta em 10–14 dias, discutir biópsia.
+
+**Por que este caso importa:** Uma lesão em anel não fecha diagnóstico sozinha; a evolução orienta necessidade de confirmação invasiva.
+
+### Caso 6 — Perda visual em imunodepressão avançada
+
+**Apresentação e dados relevantes:** Homem de 49 anos com HIV há oito anos, múltiplas interrupções de TARV, CD4 de 31, procura a UBS referindo visão borrada progressiva e pontos escuros no campo visual direito há cinco dias, sem dor.
+
+**Hipótese diagnóstica:** Retinite por CMV deve ser excluída urgentemente; toxoplasmose ocular, retinite herpética e outros processos são diferenciais.
+
+**Raciocínio passo a passo:** A ausência de dor não indica benignidade. Atraso diagnóstico pode causar cegueira. PCR sanguíneo, mesmo reagente, não substitui identificação oftalmológica das lesões retinianas.
+
+**Exames, critérios e interpretação:** Fundoscopia especializada urgente, revisão de CD4/carga viral e investigação laboratorial conforme achados; função renal e hemograma se antiviral sistêmico planejado.
+
+**Conduta e seguimento:** Encaminhar no mesmo dia ou segundo disponibilidade urgente à oftalmologia, iniciar tratamento específico quando diagnóstico estabelecido, revisar necessidade de terapia sistêmica/intravítrea e organizar TARV e monitoramento de toxicidade.
+
+**Por que este caso importa:** Retinite por CMV é emergência funcional, e fundoscopia é mais importante que solicitar muitos testes séricos.
+
+### Caso 7 — Febre, pancitopenia e hepatoesplenomegalia
+
+**Apresentação e dados relevantes:** Trabalhador rural de 40 anos com HIV recém-confirmado, CD4 de 42, febre prolongada, perda ponderal, anemia, plaquetas reduzidas e hepatoesplenomegalia. A radiografia não mostra padrão típico de TB pulmonar.
+
+**Hipótese diagnóstica:** Histoplasmose disseminada, TB disseminada, leishmaniose visceral, MAC e linfoma devem ser investigados conforme epidemiologia.
+
+**Raciocínio passo a passo:** Uma lista de sintomas “constitucionais” não define etiologia. A origem geográfica e ambiental e o acometimento de órgãos orientam testes. Em quadro grave, a necessidade de estabilização e antifúngico não deve ser adiada indefinidamente por cultura.
+
+**Exames, critérios e interpretação:** Antígenos de Histoplasma quando disponíveis, culturas, exames de imagem e amostras adequadas, hemoculturas para micobactérias, avaliação para leishmaniose e histopatologia em casos selecionados.
+
+**Conduta e seguimento:** Internar se houver disfunção, iniciar terapêutica dirigida de acordo com gravidade, incluindo anfotericina em histoplasmose disseminada grave seguida de itraconazol, conforme protocolo. Planejar TARV quando clinicamente estabilizado, revisar interações.
+
+**Por que este caso importa:** No Brasil, micoses e parasitoses regionais importam tanto quanto os quadros clássicos de apostilas internacionais.
+
+### Caso 8 — Tosse ausente, CD4 baixo e rastreamento de TB e criptococose
+
+**Apresentação e dados relevantes:** Mulher de 50 anos procura serviço para retomar cuidados após interrupção prolongada de TARV. Não tem tosse, cefaleia ou febre. CD4 de 78, perda ponderal discreta, sem meningite prévia.
+
+**Hipótese diagnóstica:** Imunossupressão avançada com alto risco de infecção oportunista subclínica.
+
+**Raciocínio passo a passo:** A ausência de sintomas não dispensa estratégias de rastreio dirigidas pelo CD4. O PCDT indica LF-CrAg em CD4 <200 sem história de meningite criptocócica; LF-LAM assintomático pode ser indicado em CD4 ≤100 no ambulatório ou ≤200 em internação, além de avaliação de TB ativa.
+
+**Exames, critérios e interpretação:** LF-CrAg e LF-LAM conforme disponibilidade/fluxo, triagem de TB, CD4/carga viral, sorologias de OI e avaliação global.
+
+**Conduta e seguimento:** Se CrAg positivo, investigar líquor, mesmo sem sintomas neurológicos, antes de definir fluconazol preemptivo e momento da TARV. Se testes negativos e sem suspeita de meningite, reintroduzir TARV com avaliação de histórico terapêutico e planejar profilaxias.
+
+**Por que este caso importa:** O rastreio de doença oportunista subclínica é parte crucial do manejo do HIV avançado.
+
+### Caso 9 — Diarreia persistente e desidratação
+
+**Apresentação e dados relevantes:** Homem de 36 anos com CD4 de 62 apresenta diarreia aquosa há cinco semanas, cólicas, fadiga e perda de 7 kg. Nega sangue nas fezes e refere interrupção de TARV. Está taquicárdico e com hipotensão postural.
+
+**Hipótese diagnóstica:** Criptosporidiose, cistoisosporíase, outras enteroparasitoses, bactérias, efeito medicamentoso e doença gastrointestinal por CMV entram no diferencial.
+
+**Raciocínio passo a passo:** Antes de atribuir tudo ao HIV, estabilizar hidratação, avaliar eletrólitos e investigar etiologias específicas. Pesquisa comum de parasitas pode não incluir métodos especiais; a escolha de testes deve se orientar por suspeita e laboratório.
+
+**Exames, critérios e interpretação:** Eletrólitos, função renal, hemograma, coprocultura/exames de fezes conforme protocolo, testes especiais para protozoários oportunistas e endoscopia quando sinais de alarme ou falha diagnóstica.
+
+**Conduta e seguimento:** Reposição de líquidos e eletrólitos, nutrição, tratamento etiológico, recuperação de TARV conforme segurança e articulação com assistência para manutenção do vínculo.
+
+**Por que este caso importa:** A principal urgência pode ser o estado volêmico, enquanto a recuperação imunológica ajuda a controlar várias infecções intestinais.
+
+### Caso 10 — Retorno à TARV e piora inflamatória por TB
+
+**Apresentação e dados relevantes:** Homem de 39 anos conclui dez dias de RHZE para TB pulmonar e iniciou TARV há uma semana. Procura com aumento doloroso de linfonodos, febre baixa e piora de imagem torácica, mas está estável e com boa adesão relatada.
+
+**Hipótese diagnóstica:** SIRI paradoxal relacionada à TB é possibilidade, mas falha ou resistência de TB, outra infecção, toxicidade e erro diagnóstico devem ser afastados.
+
+**Raciocínio passo a passo:** A associação temporal favorece SIRI, porém não basta para defini-la. Interromper medicamentos automaticamente pode agravar HIV e TB. Avaliar impacto respiratório, compressão, novos focos e necessidade de investigação microbiológica.
+
+**Exames, critérios e interpretação:** Revisar microbiologia de TB, resistência, adesão e doses, imagem conforme apresentação, exames dirigidos à gravidade e diagnósticos alternativos.
+
+**Conduta e seguimento:** Em SIRI não complicada, geralmente manter TARV e anti-TB, sintomáticos e vigilância; corticoide em casos moderados/graves selecionados sob especialista após exclusão de falha e outras doenças.
+
+**Por que este caso importa:** A cronologia após início de TARV é pista, mas SIRI é diagnóstico de exclusão.
+
+
+## 31. Questões autorais LURIA — com correção de todas as alternativas
+
+As questões são originais para o projeto editorial LURIA. A correção explicita por que cada alternativa está correta ou incorreta e encerra com uma mini-revisão.
+
+### Questão 1 — Início da TARV
+
+**Enunciado:** Adulto assintomático tem HIV confirmado, não dispõe ainda do resultado de CD4 e carga viral. Não há suspeita de infecção oportunista meníngea. Qual é a conduta indicada no PCDT brasileiro?
+
+**A)** Esperar CD4 abaixo de 350.
+
+**B)** Oferecer TARV no mesmo dia ou até sete dias, após avaliação clínica inicial.
+
+**C)** Esperar quatro semanas em todo caso.
+
+**D)** Aguardar genotipagem para todo adulto.
+
+**Gabarito: B.**
+
+- **A:** A indicação de TARV independe do CD4.
+- **B:** O PCDT recomenda início oportuno e vínculo ao cuidado.
+- **C:** Adiar 4 semanas pertence a circunstâncias específicas, não a todos.
+- **D:** Genotipagem pré-tratamento possui indicações selecionadas; não atrasa início recomendado.
+
+**Mini-revisão:** Imediatismo não elimina avaliação clínica, mas resultados laboratoriais basais não devem causar atraso indevido.
+
+### Questão 2 — Esquema preferencial de primeira linha
+
+**Enunciado:** Qual regime é preferencial para adulto sem contraindicações particulares no PCDT Módulo 1 de 2024?
+
+**A)** TDF + 3TC + DTG.
+
+**B)** Monoterapia com lamivudina.
+
+**C)** Somente fluconazol e isoniazida.
+
+**D)** Aciclovir e rifampicina como TARV.
+
+**Gabarito: A.**
+
+- **A:** É a combinação de dois análogos e um inibidor da integrase.
+- **B:** Monoterapia seleciona resistência e não suprime adequadamente HIV.
+- **C:** São medicamentos de OI, não antirretrovirais.
+- **D:** Não compõem TARV.
+
+**Mini-revisão:** A escolha deve ser individualizada se existir doença renal, HBV ativo, interações ou situação especial.
+
+### Questão 3 — CrAg brasileiro
+
+**Enunciado:** O PCDT brasileiro Módulo 1 recomenda rastreio LF-CrAg em pessoa sem meningite criptocócica prévia com qual parâmetro?
+
+**A)** CD4 <200 células/mm³.
+
+**B)** Somente CD4 <25.
+
+**C)** Apenas se houver rigidez de nuca.
+
+**D)** Somente se carga viral indetectável.
+
+**Gabarito: A.**
+
+- **A:** Esse é o limiar descrito na estratégia de rastreio nacional citada.
+- **B:** Critério excessivamente restritivo.
+- **C:** Rastreio é possível mesmo sem sintomas.
+- **D:** A condição de carga viral suprimida não define isoladamente a indicação.
+
+**Mini-revisão:** Não importar automaticamente o corte de CD4 <100 de outras diretrizes.
+
+### Questão 4 — CrAg sérico positivo
+
+**Enunciado:** Pessoa HIV avançado tem LF-CrAg sérico reagente sem cefaleia. Próximo passo importante:
+
+**A)** Ignorar porque não existe cefaleia.
+
+**B)** Investigar meningite criptocócica por punção lombar quando segura e indicada pelo fluxo.
+
+**C)** Tratar HIV apenas com fluconazol 200 mg/dia.
+
+**D)** Fazer tomografia mensal sem exame liquórico.
+
+**Gabarito: B.**
+
+- **A:** Meningite pode ser subclínica.
+- **B:** CrAg positivo requer avaliação liquórica para diferenciar estratégia preemptiva de tratamento de meningite.
+- **C:** Fluconazol isolado não trata HIV e a dose citada não resolve todos os cenários.
+- **D:** Imagem não substitui avaliação liquórica quando indicada.
+
+**Mini-revisão:** O status do LCR muda tratamento e momento da TARV.
+
+### Questão 5 — Meningite criptocócica e TARV
+
+**Enunciado:** HIV novo, CD4 de 20 e meningite criptocócica confirmada. Qual cronograma inicial de TARV é recomendação do PCDT?
+
+**A)** No mesmo momento do primeiro antifúngico para todos.
+
+**B)** Após 4–6 semanas de antifúngico e melhora neurológica/controle de pressão, conforme evolução.
+
+**C)** Somente após um ano.
+
+**D)** Nunca iniciar TARV.
+
+**Gabarito: B.**
+
+- **A:** Início demasiadamente precoce pode aumentar morbimortalidade.
+- **B:** É a exceção descrita no PCDT.
+- **C:** O adiamento não costuma ser tão longo.
+- **D:** A TARV continua essencial depois do período inicial.
+
+**Mini-revisão:** Controlar pressão intracraniana é intervenção vital.
+
+### Questão 6 — TB pulmonar e TARV
+
+**Enunciado:** Paciente com TB pulmonar sensível em tratamento e HIV recém-diagnosticado, sem sinais de meningite. Qual a conduta do PCDT quanto à TARV?
+
+**A)** Aguardar fim dos seis meses de tratamento TB.
+
+**B)** Iniciar em até sete dias após começo de tratamento de TB.
+
+**C)** Aguardar CD4 superar 500.
+
+**D)** Sempre aguardar oito semanas.
+
+**Gabarito: B.**
+
+- **A:** Adiar até terminar TB aumenta risco e não é recomendação.
+- **B:** O PCDT recomenda TARV em até 7 dias, independente de CD4, exceto cenários meníngeos.
+- **C:** TARV não depende de limiar CD4.
+- **D:** A janela não meníngea não é essa no documento consultado.
+
+**Mini-revisão:** Meningite tuberculosa constitui exceção de 4ª–6ª semana.
+
+### Questão 7 — Rifampicina e dolutegravir
+
+**Enunciado:** Paciente com TB-HIV recebe rifampicina e usará DTG. Qual é a conduta indicada no PCDT 2024?
+
+**A)** Suspender definitivamente DTG.
+
+**B)** Ajustar DTG para 50 mg de 12/12 h durante rifampicina e manter ajuste por cerca de duas semanas depois.
+
+**C)** Dobrar TDF e manter DTG usual.
+
+**D)** Adicionar fluconazol para neutralizar a interação.
+
+**Gabarito: B.**
+
+- **A:** Não é necessário suspender quando ajuste é apropriado.
+- **B:** Rifampicina induz metabolismo do DTG; a recomendação é específica.
+- **C:** Aumentar TDF não corrige interação farmacocinética.
+- **D:** Fluconazol não neutraliza a indução.
+
+**Mini-revisão:** Interação exige prescrição individual e acompanhamento de TB e TARV.
+
+### Questão 8 — Pneumocistose e imagem
+
+**Enunciado:** PVHA com CD4 80, hipoxemia, tosse seca e dispneia subaguda tem radiografia quase normal. Qual afirmação é correta?
+
+**A)** RX quase normal exclui PCP.
+
+**B)** A suspeita clínica permanece, TC e pesquisa do agente podem ajudar e o tratamento não deve atrasar em quadro grave.
+
+**C)** Somente CD4 define PCP.
+
+**D)** A primeira opção é isoniazida por 6 meses.
+
+**Gabarito: B.**
+
+- **A:** Radiografia pode ser pouco alterada em PCP.
+- **B:** Quadro clínico e oxigenação orientam gravidade e investigação.
+- **C:** CD4 é fator de risco, não diagnóstico etiológico.
+- **D:** Isoniazida é fármaco de TB/TPT, não terapia de PCP.
+
+**Mini-revisão:** A gasometria pode determinar uso de corticosteroide adjuvante.
+
+### Questão 9 — Corticosteroide na PCP
+
+**Enunciado:** Paciente com pneumocistose apresenta PaO2 de 61 mmHg em ar ambiente. Qual estratégia adicional é pertinente?
+
+**A)** Corticosteroide adjuvante conforme regime recomendado, além de SMX-TMP.
+
+**B)** Apenas corticoide, sem antimicrobiano.
+
+**C)** Interromper oxigênio.
+
+**D)** Não tratar porque gasometria não tem valor.
+
+**Gabarito: A.**
+
+- **A:** PaO2 <70 mmHg atende critério do PCDT.
+- **B:** Corticoide não substitui tratamento anti-Pneumocystis.
+- **C:** Suporte de oxigênio é individualizado pela hipoxemia.
+- **D:** A avaliação gasométrica ajuda a estratificar gravidade.
+
+**Mini-revisão:** Tratamento PCP é 21 dias; profilaxia posterior é outra etapa.
+
+### Questão 10 — Toxoplasmose e lesões cerebrais
+
+**Enunciado:** Em PVHA com CD4 baixo, convulsão, duas lesões cerebrais em anel e IgG Toxoplasma reagente, qual conduta é mais adequada?
+
+**A)** Declarar linfoma com certeza.
+
+**B)** Tratar empiricamente neurotoxoplasmose se quadro compatível, investigando alternativas e reavaliando resposta.
+
+**C)** Descartar toxoplasmose se PCR de LCR vier negativo.
+
+**D)** Prescrever profilaxia em dose baixa para doença ativa.
+
+**Gabarito: B.**
+
+- **A:** Não há evidência de diagnóstico definitivo de linfoma.
+- **B:** A resposta clínico-radiológica após tratamento empírico ajuda a consolidar diagnóstico presuntivo.
+- **C:** PCR negativo não exclui toxoplasmose.
+- **D:** Dose profilática é insuficiente para encefalite ativa.
+
+**Mini-revisão:** Não melhora em 10–14 dias ou suspeita alternativa forte indicam reavaliação/biópsia.
+
+### Questão 11 — Profilaxia primária de PCP
+
+**Enunciado:** Quanto à profilaxia com SMX-TMP para PCP no PCDT Módulo 2, assinale a correta.
+
+**A)** Pode ser indicada em CD4 <200 e outros critérios clínicos definidos.
+
+**B)** Só deve começar após primeira pneumonia por PCP.
+
+**C)** É idêntica em dose e frequência ao tratamento de 21 dias.
+
+**D)** É desnecessária em qualquer paciente que começa TARV no dia.
+
+**Gabarito: A.**
+
+- **A:** É critério central do PCDT, junto de outros.
+- **B:** Profilaxia primária busca evitar primeiro episódio.
+- **C:** Dose profilática é menor que dose de tratamento e regime difere.
+- **D:** O risco persiste durante recuperação imunológica inicial.
+
+**Mini-revisão:** Suspender depende de boa resposta à TARV com recuperação imune sustentada.
+
+### Questão 12 — Toxoplasmose profilaxia
+
+**Enunciado:** Paciente com HIV, CD4 67 e IgG anti-Toxoplasma positivo, sem lesão neurológica. Qual conceito é mais correto?
+
+**A)** IgG reagente exige tratar neurotoxoplasmose por seis semanas em todos.
+
+**B)** Avaliar profilaxia primária para toxoplasmose, distinguindo-a de terapia de doença ativa.
+
+**C)** IgG indica infecção congênita obrigatória.
+
+**D)** Usar apenas aciclovir profilático.
+
+**Gabarito: B.**
+
+- **A:** IgG sugere exposição prévia, não doença cerebral ativa.
+- **B:** Imunodepressão profunda + exposição prévia favorece profilaxia e avaliação de outras OI.
+- **C:** Não é interpretação válida em adulto.
+- **D:** Aciclovir não previne toxoplasmose.
+
+**Mini-revisão:** CD4 <100 e sorologia/risco orientam profilaxia toxo; confirmar posologia brasileira.
+
+### Questão 13 — Retinite por CMV
+
+**Enunciado:** Adulto com CD4 39 e escotoma indolor deve receber qual avaliação inicial?
+
+**A)** Somente PCR sanguíneo e retorno em seis meses.
+
+**B)** Fundoscopia oftalmológica urgente para suspeita de retinite por CMV.
+
+**C)** Apenas colírio antibiótico.
+
+**D)** Reposição de vitamina A, independentemente do diagnóstico.
+
+**Gabarito: B.**
+
+- **A:** PCR no sangue não confirma nem exclui adequadamente retinite.
+- **B:** Lesões retinianas precisam de avaliação ocular especializada rápida.
+- **C:** Colírio isolado não trata retinite oportunista.
+- **D:** Tratamento não dirigido pode atrasar diagnóstico.
+
+**Mini-revisão:** Retinite é emergência funcional pelo risco de perda irreversível da visão.
+
+### Questão 14 — Febre e hepatoesplenomegalia
+
+**Enunciado:** PVHA CD4 40 com febre prolongada, pancitopenia e hepatoesplenomegalia em área endêmica. Qual conjunto diagnóstico é razoável?
+
+**A)** Somente resfriado comum.
+
+**B)** Histoplasmose disseminada, TB disseminada, leishmaniose visceral e linfoma conforme contexto.
+
+**C)** Apenas toxoplasmose ocular.
+
+**D)** Somente hipertensão arterial.
+
+**Gabarito: B.**
+
+- **A:** Infecção banal isolada não explica necessariamente o conjunto grave.
+- **B:** Inclui causas infecciosas e neoplásicas relevantes no Brasil.
+- **C:** Não se ajusta ao padrão sistêmico descrito.
+- **D:** Não explica febre e citopenias.
+
+**Mini-revisão:** A epidemiologia regional muda o diferencial das infecções oportunistas.
+
+### Questão 15 — Diarreia e teste de fezes
+
+**Enunciado:** Pessoa com HIV avançado apresenta diarreia aquosa há 4 semanas e perda ponderal. Qual abordagem é apropriada?
+
+**A)** Assumir ser efeito da TARV mesmo estando sem antirretroviral.
+
+**B)** Avaliar hidratação, eletrólitos, protozoários oportunistas, bactérias, CMV e medicamentos conforme clínica.
+
+**C)** Iniciar apenas antidiarreico sem investigação.
+
+**D)** Descartar causa infecciosa se não houver sangue.
+
+**Gabarito: B.**
+
+- **A:** O enunciado não apoia essa atribuição.
+- **B:** O diferencial é amplo e o risco de desidratação exige intervenção imediata.
+- **C:** A abordagem isolada ignora agente causal e gravidade.
+- **D:** Muitas infecções causam diarreia aquosa sem sangue.
+
+**Mini-revisão:** Testes de fezes comuns podem não pesquisar adequadamente alguns agentes oportunistas.
+
+### Questão 16 — SIRI versus falha de tratamento
+
+**Enunciado:** Após iniciar TARV, paciente tratado para TB apresenta aumento de linfonodos e inflamação, apesar de boa adesão e estabilidade. Qual raciocínio é adequado?
+
+**A)** SIRI é possível após excluir falha, resistência, outra infecção e toxicidade.
+
+**B)** É obrigatório parar TARV imediatamente.
+
+**C)** Sintoma novo prova resistência ao DTG.
+
+**D)** Não é necessário examinar o paciente.
+
+**Gabarito: A.**
+
+- **A:** SIRI é diagnóstico clínico que exige exclusão de alternativas importantes.
+- **B:** Em geral TARV é mantida na SIRI.
+- **C:** A piora não prova resistência viral.
+- **D:** A avaliação da gravidade é central.
+
+**Mini-revisão:** Paradoxal e desmascarada são formas diferentes de SIRI.
+
+### Questão 17 — Indetectável = Intransmissível
+
+**Enunciado:** Qual interpretação é cientificamente adequada para pessoa com HIV e carga viral <200 cópias/mL sustentada por pelo menos seis meses?
+
+**A)** Significa cura e permite suspender ARV.
+
+**B)** No âmbito de transmissão sexual do HIV, supressão sustentada sustenta I=I; mantém-se cuidado e prevenção de outras IST.
+
+**C)** Impede transmissão de toda IST.
+
+**D)** Dispensa testagem e seguimento para sempre.
+
+**Gabarito: B.**
+
+- **A:** Supressão não elimina o reservatório viral.
+- **B:** É o âmbito de evidência e mensagem do PCDT.
+- **C:** Outras IST não são prevenidas por supressão de HIV.
+- **D:** O tratamento e seguimento precisam continuar.
+
+**Mini-revisão:** Usar informação correta sobre I=I diminui estigma e melhora aconselhamento.
+
+### Questão 18 — Genotipagem antes da TARV
+
+**Enunciado:** No adulto com diagnóstico novo e sem condições especiais do PCDT, qual afirmação é correta?
+
+**A)** Genotipagem pré-TARV sempre precisa estar pronta antes do primeiro comprimido.
+
+**B)** Genotipagem tem indicações específicas; não deve retardar TARV indicada quando não disponível.
+
+**C)** É teste de imunidade contra TB.
+
+**D)** Substitui CD4 e carga viral no seguimento.
+
+**Gabarito: B.**
+
+- **A:** Generaliza indicação e provoca atraso.
+- **B:** É a recomendação de uso seletivo do PCDT.
+- **C:** Não pesquisa TB.
+- **D:** Não substitui os marcadores centrais.
+
+**Mini-revisão:** Indicações de genotipagem incluem certas situações especiais, como coinfecção TB-HIV e gestação.
+
+
+## 32. Curadoria das imagens médicas candidatas
+
+O plano prioriza exames reais quando acrescentam conhecimento diagnóstico, e **diagramas originais** quando melhor esclarecem decisões. As sugestões não são imagens já aprovadas nem arquivos efetivamente adicionados ao site.
+
+| Candidata | Objetivo didático | Fonte/condição |
+|---|---|---|
+| 1. Imunopatogênese do HIV | Diagrama do ciclo HIV, CD4, transcriptase reversa, integrase e protease | Ilustração didática original; não representar microscopia não validada |
+| 2. Cronologia de janela diagnóstica | Linha do tempo de marcadores RNA, p24 e anticorpos por tipo de teste | Reconstruir a partir do manual técnico MS, sem números rígidos não validados |
+| 3. Avaliação inicial após diagnóstico | Fluxo CD4, carga viral, rastreio TB/CrAg, coinfecções e TARV | Gráfico original com referência PCDT 2024 |
+| 4. Interações rifampicina-DTG | Quadro de ajuste em TB/HIV e retorno à dose padrão | Arte autoral a validar pela farmácia clínica |
+| 5. Pneumocistose | TC de tórax real mostrando vidro fosco bilateral, de instituição com licença | Solicitar imagem acadêmica aprovada, com legenda e contexto clínico |
+| 6. Tuberculose | RX/TC comparativo com TB típica e apresentações de HIV avançado | Preferir banco didático institucional autorizado |
+| 7. Neurotoxoplasmose | RM/TC real de lesões com realce em anel e edema, com diferenciais | Fonte hospital universitário ou artigo em acesso licenciado |
+| 8. Criptococose | Fluxo CrAg sérico → LCR → manejo de HIC → tratamento → TARV | Diagrama original; sem copiar diretamente figura do MS |
+| 9. Retinite CMV | Retinografia real com achados característicos de retinite | Fonte oftalmológica acadêmica licenciada, sem paciente identificável |
+| 10. Histoplasmose disseminada | Quadro de manifestações hepatoesplênicas e hemograma | Diagrama clínico; evitar foto clínica ambígua |
+| 11. Tabela de profilaxias | Matriz PCP/Toxo/MAC/CMV/CrAg/TB com cortes CD4 brasileiros | Tabela original, revisão do PCDT antes da publicação |
+| 12. SIRI | Esquema temporal de piora paradoxal após início TARV e diferenciais | Diagrama autoral sem atribuir curvas fictícias a pacientes |
+
+### Critérios de seleção e direitos
+
+- Para radiologia e fundo de olho, exigir procedência, qualidade técnica e licença de reutilização; nunca inventar exame real.
+- Priorizar Ministério da Saúde, sociedades científicas, hospital universitário, atlas clínico de acesso autorizado e publicações com autorização editorial.
+- Legendas devem descrever achado verificável, diagnósticos diferenciais e limitações, não apenas o nome da doença.
+- Converter mídia aprovada para WebP com resolução legível e peso compatível com a LURIA; não comprometer nitidez de detalhes diagnósticos.
+- Incluir descrição alternativa, informações de fonte/licença e posição adequada nos capítulos.
+- Testar falhas de carregamento, responsividade e acessibilidade antes de publicação.
+
+## 33. Auditoria final desta fase: limites e próximos passos
+
+**Cobertura realizada:** abordagem inicial, diagnóstico, TARV, coinfecções, TB, criptococose, PCP, neurotoxoplasmose, CMV, histoplasmose, MAC, manifestações digestivas, neoplasias, SIRI, profilaxias, **10 casos**, **18 questões** e **12 propostas de imagem**. Cada questão explica individualmente alternativas corretas e incorretas.
+
+**Pendências obrigatórias antes da publicação:**
+
+- [ ] Conferir dados epidemiológicos atuais se forem incorporadas estatísticas; evitar números sem fonte ou recorte temporal.
+- [ ] Revisão médica independente por infectologista, sobretudo terapêutica antifúngica e antirretroviral.
+- [ ] Conferir atualizações após os PCDTs de 2024 e compatibilidade de apresentações disponíveis no SUS no momento da publicação.
+- [ ] Construir tabelas de dose por peso, função renal, gravidez e interações após validação farmacêutica.
+- [ ] Verificar critérios específicos de imunizações, genotipagem, tratamento preventivo da TB e suspensão de profilaxias.
+- [ ] Selecionar pelo menos 10 imagens candidatas reais ou diagramas com fontes, aprovar licenças e converter para WebP.
+- [ ] Criar content.json no padrão do renderizador sem perder capítulos; validar menu, hiperlinks e PWA.
+- [ ] Conferir correspondência da aula 166 com o cronograma e evitar duplicação com apostilas de infectologia ou pediatria.
+- [ ] Revisar linguagem de risco, comunicação, direitos e privacidade.
+- [ ] Realizar teste “resolver 18 questões usando somente a apostila”, corrigindo lacunas.
+- [ ] Carimbar versão, data de revisão científica e responsável somente após aprovação.
+
+**Conclusão editorial:** conteúdo textual avançado para revisão; **não declarar apostila pronta**, não confundir commit em rascunho Markdown com publicação no site.
