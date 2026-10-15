@@ -190,7 +190,208 @@ Após evento embólico, investigar a fonte (fibrilação atrial/valvopatia/disfu
 7. **Peritonite e necrose:** revascularização isolada não substitui exploração e ressecção do intestino inviável.
 8. IMC sintomática com perda ponderal não deve ser mantida indefinidamente apenas em medidas clínicas à espera de piora.
 
-## 16. Quatro casos clínicos comentados
+
+## 16. Entendendo a angiotomografia como um exame de decisões
+
+### 16.1 O que pedir ao radiologista e por quê
+
+No pedido de angiotomografia de emergência, não basta escrever “TC de abdome por dor”. Informar **suspeita de isquemia mesentérica aguda**, hora aproximada do início, possível origem embólica ou trombótica, presença de peritonite e função renal. Essa comunicação orienta protocolo de aquisição, reconstruções e interpretação. O exame deve incluir fases adequadas para avaliar artérias mesentéricas, sistema venoso portal/mesentérico e realce da parede intestinal. A técnica deve ser ajustada à capacidade do equipamento, sem perdas evitáveis de tempo.
+
+Na **fase arterial**, avaliar luz e óstio da AMS, distância entre origem e ponto de oclusão, placas calcificadas, vasos colaterais, alterações do tronco celíaco e outras artérias. Na **fase venosa**, procurar trombose da veia mesentérica superior, extensão ao sistema porta, congestão de mesentério, edema parietal e repercussões em alças. O exame também avalia outras causas de abdome agudo, como obstrução em alça fechada, pancreatite, perfuração ou doença aórtica. Isto evita “visão de túnel”: nem toda dor em portador de FA será embolia intestinal.
+
+### 16.2 Realce intestinal e relação com viabilidade
+
+A parede saudável apresenta perfusão reconhecível após contraste. **Hiporrealce ou ausência de realce** em segmentos com suspeita clínica elevada indica comprometimento significativo e aumenta preocupação com necrose. Contudo, o significado depende de espessura, distribuição, edema, dilatação, gás intramural, gás portal e sinais de perfuração. Espessamento parietal pode ocorrer em congestão venosa ou reperfusão sem necrose irreversível; adelgaçamento, hiporrealce marcado e sinais sistêmicos graves podem apontar processo mais avançado. Nenhum sinal radiológico isolado substitui julgamento clínico e eventual inspeção cirúrgica.
+
+A extensão de alças comprometidas importa para a estratégia: quanto mais intestino sob risco, maior a urgência de reperfusão e maior a consequência de ressecção excessiva. Por outro lado, “TC mostra algumas alças com edema” não autoriza concluir necrose, particularmente em trombose venosa onde o edema pode ser reversível. O radiologista deve relatar **o vaso e o segmento envolvidos, sinais de viabilidade e complicações**.
+
+### 16.3 Exercício de interpretação com quatro descrições de laudo
+
+**Laudo A:** interrupção abrupta da AMS a alguns centímetros da origem, sem estenose ostial relevante, em paciente com FA e dor súbita. Pensar em embolia. Solicitar discussão vascular e intestinal imediata; não esperar o laudo acrescentar “necrose” para tratar.
+
+**Laudo B:** placa aterosclerótica calcificada na origem da AMS e oclusão curta proximal, com colaterais exuberantes e dor crônica que piorou. Pensar em trombose aguda sobre estenose crônica. A revascularização deve lidar com lesão ostial e anatomia global.
+
+**Laudo C:** veia mesentérica superior sem enchimento com distensão e edema das alças, mas realce preservado e sem peritonite. Pensar em trombose venosa com potencial recuperação sob anticoagulação e vigilância.
+
+**Laudo D:** ausência de oclusão arterial maior, mas hiporrealce segmentar de alças em paciente em choque séptico. Pensar em NOMI; a ausência de trombo na AMS não elimina a urgência.
+
+### 16.4 Quando repetir ou complementar a imagem
+
+A decisão de repetir exame não decorre automaticamente de “angioTC normal”. Se a imagem foi feita com protocolo inadequado, fase ausente ou qualidade técnica comprometida, discutir repetição com radiologia. Em pacientes com venotrombose em tratamento, aumento da dor, sinais peritoneais ou perda de perfusão podem justificar nova imagem ou exploração. Após intervenção endovascular, a confirmação do sucesso técnico e da evolução intestinal varia conforme técnica e estabilidade.
+
+Não pedir novas imagens de modo a atrasar laparotomia quando já há sinais peritoneais decisivos. Ao mesmo tempo, não operar preventivamente toda pessoa estável sem peritonite apenas por um achado de trombose venosa, sem valorar a possibilidade de tratamento conservador monitorado.
+
+## 17. Farmacologia prática e segurança: anticoagulantes, antibióticos e perfusão
+
+### 17.1 Heparina não fracionada versus heparina de baixo peso molecular
+
+**Heparina não fracionada intravenosa (HNF)** é útil em muitos cenários de IMA quando anticoagulação é indicada, especialmente se o paciente pode precisar de cirurgia urgente, tem instabilidade, disfunção renal ou necessidade de reversibilidade rápida. O efeito é titulado com protocolo institucional de TTPa ou anti-Xa e monitorização de plaquetas e sangramento. Exigir avaliação de contraindicações: hemorragia ativa relevante, trombocitopenia grave e história de trombocitopenia induzida por heparina podem modificar escolha. Trombose venosa ou arterial não autoriza prescrição automaticamente idêntica em todos os pacientes.
+
+**Heparina de baixo peso molecular (HBPM)** tem farmacocinética mais previsível e costuma ser opção em trombose venosa no paciente estável, com ponderação de função renal, peso e possibilidade de procedimento. A necessidade de suspensão para cirurgia e risco de sangramento devem ser considerados. Após estabilização e definição da causa, anticoagulante oral ou outra estratégia antitrombótica pode ser selecionada segundo indicação: FA, trombose venosa, stent arterial ou doença aterosclerótica não são a mesma indicação.
+
+### 17.2 Antibiótico precoce não significa antibiótico indefinido
+
+A mucosa isquêmica perde função de barreira e favorece translocação bacteriana. Na IMA com suspeita significativa, WSES 2022 recomenda cobertura antimicrobiana precoce de amplo espectro, com ajuste aos patógenos entéricos prováveis, epidemiologia local, alergias, função renal e gravidade. **Duração** depende de estabilidade, reversão da lesão, contaminação, ressecção e foco infeccioso. Não prescrever antibiótico por semanas sem reavaliação ou cultura quando houver possibilidade de descalonamento. Em colite isquêmica leve sem infecção/gravidade, a necessidade de cobertura sistemática não é a mesma da isquemia de delgado ameaçadora da vida.
+
+### 17.3 Reposição volêmica: a diferença entre ressuscitar e inundar
+
+Isquemia intestinal pode produzir grande sequestro de líquido no terceiro espaço. Fluidoterapia inadequada mantém hipoperfusão; por outro lado, volume excessivo agrava congestão, edema intestinal e pode contribuir para hipertensão intra-abdominal/síndrome compartimental. O objetivo é otimizar perfusão por avaliação repetida: pressão, perfusão periférica, consciência, diurese, sinais de congestão e avaliação hemodinâmica conforme tecnologia disponível. Pacientes com insuficiência cardíaca ou doença renal precisam especial cautela e, muitas vezes, suporte intensivo.
+
+### 17.4 Vasopressores e NOMI: contraindicação simplista
+
+Paciente em choque pode precisar de norepinefrina para preservar circulação sistêmica; falar “vasopressores causam NOMI, então suspenda todos” é uma conduta perigosa. A prioridade é corrigir sepse, hipovolemia, baixo débito e outros fatores de isquemia sistêmica. Após estabilização, ajustar vasoativos na menor dose eficaz e discutir estratégias alternativas quando indicadas. A vasodilatação intra-arterial com papaverina ou prostaglandina é alternativa excepcional, dependente de equipe e monitorização, pois pode causar hipotensão grave.
+
+### 17.5 Analgesia, sedação e nutrição
+
+Analgesia adequada não “mascara” o diagnóstico a ponto de justificar sofrimento desnecessário. O que deve ser preservado é a capacidade de reavaliar a evolução, em intervalos curtos, inclusive em pacientes com sedação ou ventilação. Manter jejum na fase aguda e considerar descompressão nasogástrica quando houver distensão importante/íleo; evitar múltiplas manipulações sem indicação. Após estabilização e confirmação de viabilidade, planejar nutrição enteral sempre que possível; após ressecção extensa, pode ser necessário suporte parenteral e reabilitação intestinal.
+
+## 18. Cirurgia vascular e cirurgia digestiva: técnica a serviço da biologia
+
+### 18.1 Quando o endovascular agrega valor
+
+A terapêutica endovascular pode restaurar fluxo em oclusão emboligênica/trombótica da AMS em centros com recursos e equipe apropriados. Sua atratividade inclui menor agressão inicial em pacientes idosos e com comorbidades, possibilidade de tromboaspiração e angioplastia/stent para lesão ostial. **Mas reperfundir a artéria não comprova que o intestino não esteja necrosado.** Pode ser preciso laparoscopia/laparotomia na mesma etapa, posteriormente ou em estratégia híbrida.
+
+A ESVS 2025 classifica como recomendação IIa/B considerar endovascular como primeira linha em pacientes com oclusão trombótica/embólica de AMS. A palavra **considerar** não equivale a obrigação em todos os perfis. Instabilidade grave, peritonite, oclusão extensa de anatomia desfavorável ou indisponibilidade podem exigir cirurgia aberta imediata ou tratamento híbrido; a estratégia deve minimizar tempo para reperfusão e avaliação do intestino.
+
+### 18.2 Quando a operação aberta é central
+
+Peritonite, necrose evidente, perfuração, contaminação e abdome agudo cirúrgico tornam essencial a exploração. A via frequentemente envolve laparotomia mediana para inspeção ampla do delgado e cólon, eventualmente com avaliação de pulso mesentérico, Doppler e técnicas auxiliares. A cirurgia aberta pode incluir embolectomia arterial, bypass/reconstrução ou técnicas híbridas, dependendo de lesão, local e expertise. A estratégia não é só “abrir e ressecar”: se a perfusão não for restaurada, uma ressecção pode deixar alças remanescentes em risco.
+
+### 18.3 Ressecção e anastomose: quais decisões dependem da perfusão
+
+Intestino irreversivelmente necrosado precisa ser retirado. Entretanto, edema, coloração alterada e ausência temporária de peristalse após reperfusão não provam, isoladamente, irreversibilidade; há limites na avaliação visual da serosa. Em paciente com choque, acidose, vasopressores elevados ou perfusão duvidosa, uma anastomose primária pode ter alto risco de deiscência. A decisão sobre estoma, fechamento temporário e reconstrução diferida depende de extensão de necrose, contaminação e estabilidade.
+
+**Second-look** permite reavaliar alças de viabilidade incerta depois de ressuscitação e reperfusão, frequentemente em 24–48 horas. A decisão de realizar novo procedimento não decorre de uma regra de 48 horas para todo doente: a indicação deve ser orientada por tecido duvidoso, instabilidade, necessidade de reconstrução e risco de progressão. O intervalo de 24–48 horas aparece em WSES 2022 como prática importante em doença extensa.
+
+### 18.4 A relação com a síndrome do intestino curto
+
+A extensão do intestino remanescente e a preservação do cólon/valva ileocecal influenciam absorção, hidratação e prognóstico. Ressecções extensas podem resultar em perda crônica de água, sódio, magnésio, vitaminas, energia e outros nutrientes, bem como desnutrição e dependência de nutrição parenteral. Portanto, **preservar o viável** é objetivo de longo prazo tão importante quanto a sobrevivência imediata.
+
+A equipe de reabilitação intestinal pode ajustar dieta, reposição de eletrólitos, medicações antissecretoras/antidiarreicas em contexto apropriado e nutrição enteral/parenteral. Não concluir que todo paciente com grande ressecção terá impossibilidade definitiva de autonomia alimentar; adaptação intestinal e anatomia residual variam.
+
+## 19. Colite isquêmica em profundidade: espectro, avaliação e alta segurança
+
+### 19.1 Anatomia colônica e vulnerabilidade
+
+Partes do cólon podem ser mais vulneráveis a redução sistêmica de fluxo porque estão em zonas de encontro de territórios arteriais, como regiões próximas à flexura esplênica e junção retossigmoide. A circulação retal também recebe contribuições pélvicas, o que ajuda a compreender diferenças de vulnerabilidade. Contudo, nenhum ponto anatômico é imune, e a **colite direita isolada** pode estar associada a maior gravidade e exigir atenção para isquemia mesentérica de delgado/AMS.
+
+### 19.2 Clínica típica e apresentações alarmantes
+
+Em casos leves, início de dor em cólica seguido de urgência evacuatória e sangramento em poucas horas pode ser a apresentação. A história pode incluir hipotensão transitória, desidratação, episódio de insuficiência cardíaca, cirurgia de aorta ou uso de medicamentos que alteram perfusão. A hematoquezia não quantifica extensão da necrose; pacientes com comprometimento direito ou de delgado podem ter dor importante sem sangramento evidente. Febre, leucocitose acentuada, acidose, choque ou sinais peritoneais sugerem evolução grave.
+
+Diagnósticos diferenciais incluem doença inflamatória intestinal, colite infecciosa, lesão por medicamentos, diverticulite, neoplasia e outras causas de hemorragia digestiva baixa. O diagnóstico deve relacionar padrão clínico, TC e endoscopia com biópsia em cenários apropriados, evitando afirmar que toda mucosa edemaciada é isquêmica.
+
+### 19.3 Por que a colonoscopia não vem sempre primeiro
+
+A TC contrastada pode demonstrar espessamento segmentar, edema e achados de gravidade; adicionalmente ajuda a excluir obstrução e perfuração. A colonoscopia em paciente **hemodinamicamente estável, sem sinais de necrose transmural/perfuração** pode mostrar lesão mucosa compatível e esclarecer extensão, com mínima insuflação e técnicas de segurança. **Se há peritonite, perfuração ou suspeita de gangrena**, não realizar colonoscopia diagnóstica como obrigação: a prioridade é abordagem cirúrgica.
+
+### 19.4 Conduta e seguimento
+
+Em quadro leve selecionado, corrigir baixo fluxo, desidratação e medicamentos precipitantes, com observação clínica e reavaliação conforme gravidade. Casos moderados e graves podem demandar internação, jejum temporário, antibióticos conforme risco infeccioso e monitorização laboratorial. Se houver necrose, perfuração, piora persistente ou falência orgânica, operar. Após resolução, considerar avaliação de estenose colônica quando houver obstrução/sintomas persistentes, e prevenção de novos episódios ao controlar causas de hipoperfusão.
+
+## 20. Isquemia crônica avançada e apresentação aguda sobre crônica
+
+### 20.1 Como história e anatomia predizem risco
+
+Paciente com estenoses importantes pode criar circulação colateral suficiente para manter o intestino em jejum, mas insuficiente para a demanda após refeições. A dor pós-prandial, tipicamente recorrente, produz mudança de hábitos alimentares e perda de peso. Variação individual explica por que alguns pacientes têm estenose severa sem sintomas; por isso a decisão sobre intervenção é clínica e anatômica, não depende apenas de porcentagem de estenose em laudo.
+
+A piora abrupta com dor constante e vômitos em paciente que já evitava comer sugere **trombose aguda sobre doença crônica** e deve ser investigada como emergência. É especialmente perigoso rotular a nova dor apenas como “a mesma dispepsia de sempre”.
+
+### 20.2 Diagnóstico crônico e interpretação de Doppler
+
+O Doppler em jejum avalia velocidades de fluxo e pode sugerir estenoses em AMS e tronco celíaco, mas depende de jejum adequado, qualidade técnica, gases intestinais e experiência do serviço. Conforme ESVS 2025, o Doppler pode ser exame inicial, enquanto **angioTC é importante para confirmação anatômica e planejamento**. Velocidades devem ser interpretadas no contexto do exame, da respiração e de vasos associados; não aplicar um ponto de corte isolado de centro diferente como critério absoluto de intervenção.
+
+### 20.3 Prevenção e decisão de revascularizar
+
+Controle de LDL e risco vascular, cessação de tabagismo e otimização de comorbidades são indispensáveis, mas não substituem avaliação de revascularização em doença verdadeiramente sintomática. A ESVS 2025 recomenda investigação e tratamento em centros com avaliação multidisciplinar e capacidade de cirurgia aberta e endovascular. Em alguns perfis, stents mesentéricos são preferidos à angioplastia isolada, dependendo do tipo de lesão e anatomia. A escolha do dispositivo, antiagregação subsequente e vigilância devem respeitar o procedimento efetivamente realizado.
+
+O paciente com perda de peso acentuada e dor constante merece avaliação urgente em vez de meses de espera por “melhora nutricional” antes de revascularizar. Após intervenção, documentar melhora das refeições e evolução de peso, além de controle aterosclerótico. Em estenose persistente/reestenose, confrontar sintomas com Doppler/angioTC e considerar reintervenção.
+
+## 21. Trombose venosa — decisões sobre etiologia, duração e recorrência
+
+### 21.1 Por que nem toda trombofilia deve ser testada no mesmo dia
+
+No evento agudo, algumas dosagens de anticoagulantes naturais sofrem interferência de trombose, inflamação ou anticoagulantes. Pedir painel amplo indiscriminado durante hospitalização pode gerar resultados difíceis de interpretar. Priorizar identificação de fatores provocadores importantes, como neoplasia, infecção/inflamação abdominal, doença hepática, cirurgia e síndrome mieloproliferativa, conforme a apresentação. Se há trombose recorrente e perdas gestacionais recorrentes, a investigação de síndrome antifosfolípide tem relevância especial.
+
+A ESVS 2025 recomenda investigar condições associadas à trombose venosa mesentérica, incluindo neoplasia abdominal, doença inflamatória, doença mieloproliferativa e hepatopatia, orientando aprofundamento individualizado. A avaliação de trombofilia hereditária pode ser considerada em pacientes selecionados quando sua identificação realmente alterará duração da anticoagulação.
+
+### 21.2 Por quanto tempo anticoagular?
+
+A ESVS 2025 recomenda anticoagulação por pelo menos **3–6 meses** nos pacientes com trombose venosa mesentérica aguda (recomendação 52; escolha específica do agente conforme condições clínicas), e anticoagulação **indefinida** para causa idiopática ou fatores permanentes (recomendação 56). O risco de sangramento pode limitar tratamento e requer decisão individualizada. Para pacientes com doença hepática e hipertensão portal, avaliar varizes, plaquetas e risco hemorrágico específico; não aplicar o mesmo esquema sem avaliação.
+
+**Anticoagulantes diretos** podem ser considerados como alternativa em alguns pacientes após a fase aguda (recomendação 53, ESVS 2025), mas devem ser individualizados conforme função renal/hepática, absorção intestinal, síndrome antifosfolípide e interações. Uma extensa ressecção intestinal com má absorção pode alterar segurança e eficácia de terapia oral, aumentando importância de seguimento especializado.
+
+### 21.3 Fatores provocadores versus causas permanentes
+
+**Provocado transitório:** cirurgia recente, pancreatite aguda ou outro fator resolvido pode levar a discussão de duração limitada, com avaliação de recorrência e sangramento. **Persistente:** neoplasia ativa, certas trombofilias ou doença mieloproliferativa podem justificar terapia mais longa. **Idiopático:** ausência de provocador claro não significa que seja benigno; avaliar risco de recorrência e investigação adequada. A duração final pertence a decisão clínica documentada, não apenas a marcador laboratorial positivo.
+
+### 21.4 O que perguntar antes da alta
+
+O paciente compreende por que está anticoagulado? Houve plano de seguimento e doses? Sabe reconhecer sangramento grave ou novo quadro abdominal? A equipe revisou necessidade de anticoagulação durante futuros procedimentos? Foi planejada investigação da causa de trombose e critérios de controle de imagem? Esses itens ajudam a prevenir recorrência e atrasos diagnósticos.
+
+## 22. Populações especiais e cenários de maior risco
+
+**Idosos:** maior prevalência de FA e aterosclerose, menos reserva funcional e maior risco de insuficiência renal/iatrogenia. A ausência de dor intensa em paciente frágil não exclui IMA; sinais sistêmicos podem dominar. **Pacientes com doença renal:** avaliar risco de contraste, mas priorizar investigação de suspeita de necrose intestinal; ajustar anticoagulação e antimicrobianos à função renal.
+
+**Gestantes e puérperas:** trombose venosa pode ocorrer em estados de hipercoagulabilidade, mas há muitos diferenciais obstétricos para dor. AngioTC ou outra imagem deve ser discutida conforme gravidade e segurança maternofetal; não negar exame capaz de salvar a mãe apenas pelo receio inespecífico da radiação. A escolha de anticoagulação depende de gestação e amamentação, com obstetrícia/hematologia.
+
+**Pacientes imunossuprimidos:** sintomas peritoneais podem ser atenuados, e infecção ou lesão medicamentosa podem coexistir; considerar vigilância intensiva e interpretação ampliada do risco. **Pós-cirurgia cardíaca/vascular:** baixo fluxo, embolia e NOMI podem ocorrer, exigindo atenção a dor abdominal, distensão e alteração hemodinâmica. **Pós-cirurgia bariátrica e abdome operado:** obstrução por hérnia interna, volvo, estrangulamento e trombose venosa entram no diferencial; a isquemia pode ser secundária a obstrução mecânica.
+
+**Pessoas com câncer ou trombofilia:** aumento de risco de trombose venosa requer interpretação do tumor, tratamento em uso e risco de sangramento. **Paciente em anticoagulação crônica:** avaliar adesão, suspensão recente, interações e falha terapêutica; uso prescrito de anticoagulante não exclui IMA de todos os mecanismos.
+
+## 23. Medidas de segurança e erros clínicos que mais custam vidas
+
+### 23.1 Erros no diagnóstico
+
+**Esperar lactato elevado:** mesmo a pessoa com quadro grave pode não ter hiperlactatemia na fase inicial. O valor deve ser interpretado como auxiliar e não triagem exclusiva. **Pedir TC sem contraste e encerrar investigação:** falha em visualizar adequadamente o vaso e a parede. **Confundir melhora transitória da dor com reperfusão:** exige reavaliação e contexto. **Não solicitar fase venosa:** pode perder trombose venosa mesentérica. **Atribuir todo quadro a gastroenterite em portador de FA:** ignora fator de risco alto impacto. **Aguardar peritonite:** perde janela de intervenção.
+
+### 23.2 Erros na escolha de tratamento
+
+**Operar toda trombose venosa imediatamente:** pode produzir ressecção evitável. **Anticoagular e não tratar a oclusão arterial crítica:** preservação de alças pode depender de reperfusão efetiva, não apenas impedir trombos adicionais. **Realizar stent e não avaliar intestino ameaçado:** falha em reconhecer necrose. **Ressecar toda alça congesta sem considerar second-look:** arrisca síndrome do intestino curto. **Interromper vasopressor abruptamente no choque por suspeita de NOMI:** pode reduzir ainda mais perfusão orgânica.
+
+### 23.3 Erros durante acompanhamento
+
+**Alta sem plano de anticoagulação/causa embólica:** aumenta risco de recorrência. **Ignorar perda ponderal crônica:** deixa doença vascular sintomática sem avaliação. **Prescrever nutrição oral plena imediatamente após grande isquemia/reperfusão:** pode ser inseguro sem avaliar viabilidade, íleo e absorção. **Não avaliar necessidade de reabilitação intestinal após ressecções extensas:** contribui para desnutrição e desidratação recorrentes.
+
+## 24. Prognóstico por subtipo e prevenção secundária
+
+A gravidade da IMA aguda decorre tanto de necrose intestinal e sepse quanto de doenças cardiovasculares associadas. O tempo até reperfusão e extensão do intestino ameaçado são decisivos. A existência de intervenção endovascular não garante bom resultado se o paciente chegou com necrose difusa ou choque avançado. O prognóstico também depende do que foi preservado: perda intestinal extensa pode transformar sobrevivência de curto prazo em insuficiência intestinal crônica.
+
+Após **embolia**, procurar e tratar fonte cardíaca e ponderar anticoagulação de longo prazo pela indicação. Após **trombose arterial aterosclerótica**, manejar lipídios, tabagismo, pressão e demais fatores; acompanhar revascularização/stent e aderir ao plano antitrombótico específico. Após **trombose venosa**, prevenir recorrência por anticoagulação apropriada e tratamento da causa. Após **NOMI**, revisar risco de novos episódios de choque/baixo débito e estratégias hemodinâmicas. Na **IMC**, a melhora de dor pós-prandial, ganho ponderal e manutenção de perviedade são objetivos de seguimento.
+
+Em sobreviventes de ressecção extensa, acompanhar número de evacuações, diurese, peso, eletrólitos, micronutrientes, função hepática, hidratação e necessidade de suporte nutricional. A pessoa e familiares precisam compreender sinais que exigem urgência: nova dor súbita, vômitos persistentes, incapacidade de hidratação, sangramento, febre ou colapso circulatório.
+
+## 25. Quadro farmacológico e de conduta por mecanismo
+
+| Mecanismo | Estratégia central | O que NÃO confundir | Quando cirurgia intestinal é mandatória |
+| --- | --- | --- | --- |
+| Embolia arterial AMS | Reperfusão urgente, suporte e antitrombóticos conforme caso | Heparina não substitui revascularização | Peritonite, necrose ou perfuração |
+| Trombose arterial AMS | Revascularização da lesão arterial, suporte e prevenção aterotrombótica | Tratamento da placa pode ser necessário, não só remover trombo | Peritonite, necrose ou perfuração |
+| Venotrombose | Anticoagulação terapêutica e investigação da causa | Não é indicação automática de laparotomia | Necrose/perfuração/peritonite ou deterioração |
+| NOMI | Otimizar fluxo sistêmico, tratar choque; vasodilatação seletiva em alguns casos | Não precisa de trombo visível | Necrose/perfuração/peritonite |
+| IMC estável sintomática | Avaliar revascularização e prevenção cardiovascular | Antiagregante isolado não devolve hiperemia em lesão crítica | Não é automaticamente cirurgia intestinal |
+| Colite isquêmica leve | Suporte e correção de perfusão; vigilância | Colonoscopia não é obrigatória em peritonite | Gangrena, necrose transmural, perfuração ou deterioração grave |
+
+**Princípio:** antibiótico, anticoagulante, cirurgia de vaso e ressecção intestinal são ferramentas de natureza distinta. Podem coexistir numa mesma pessoa, mas não são intercambiáveis.
+
+## 26. Miniatlas textual: que imagem realmente ensina?
+
+A curadoria visual deve priorizar **achados reais e licenciados**: (1) diagrama anatômico das artérias celíaca/AMS/AMI e colaterais; (2) angioTC de embolia AMS com defeito de enchimento distal; (3) oclusão trombótica ostial calcificada; (4) trombose venosa mesentérica na fase venosa; (5) hiporrealce de parede intestinal; (6) pneumatose com gás portal em contexto grave; (7) espessamento/edema de alça por venocongestão; (8) imagem intraoperatória de viabilidade intestinal autorizada; (9) angioTC com doença mesentérica crônica e colaterais; (10) colite isquêmica colonoscópica com licença e consentimento quando necessários.
+
+Legendas devem ensinar **o que observar, em qual fase/exame, qual diferencial e qual consequência de conduta**. Exemplo: “Fase arterial: interrupção abrupta de enchimento na AMS; em conjunto com FA e dor súbita, favorece embolia. A imagem do vaso não substitui avaliação de viabilidade intestinal.” Uma imagem genérica ou não autorizada não deve ser incluída apenas para cumprir quantidade mínima. Sem licença rastreável, manter como candidata e não publicar.
+
+## 27. Revisão estruturada: raciocínio de alta retenção
+
+**Diagnóstico inicial:** mecanismo provável vem da combinação de fatores de risco e cronologia. Dor de início abrupto + FA sugere embolia; antecedentes de angina intestinal e aterosclerose sugerem trombose; choque/UTI indica NOMI; hipercoagulabilidade, inflamação abdominal e dor progressiva elevam trombose venosa. **Confirmar com angioTC**, sem transformar probabilidades em diagnósticos definitivos.
+
+**Gravidade:** a pergunta não é somente “há trombo?”, mas “há necrose, peritonite, perfuração ou perda funcional sistêmica?”. A ausência de lacato elevado não é tranquilizadora se o cenário é sugestivo. A avaliação de perfusão/parede orienta viabilidade, mas decisões finais podem ser cirúrgicas.
+
+**Tratamento:** reperfundir artéria ocluída, anticoagular trombose venosa, corrigir choque na NOMI, considerar cirurgia e ressecção quando há necrose. Endovascular tem papel importante na IMA arterial selecionada; peritonite requer via cirúrgica imediata. Segundo olhar preserva intestino em situações de viabilidade duvidosa.
+
+**Longo prazo:** investigar FA e aterosclerose, neoplasias e causas trombóticas conforme contexto, monitorar permeabilidade vascular/recorrência, impedir desnutrição após ressecções e acompanhar evolução da IMC. A pessoa aprende o tema quando consegue explicar **por que** duas dores abdominais isquêmicas parecidas demandam tratamentos tão diferentes.
+
+
+## 28. Oito casos clínicos comentados
 
 ### Caso 1 — Embolia arterial por fibrilação atrial
 
@@ -208,7 +409,7 @@ Após evento embólico, investigar a fonte (fibrilação atrial/valvopatia/disfu
 
 **História:** homem de 68 anos na UTI com sepse e insuficiência cardíaca, recebendo vasoativos, evolui com distensão, acidose progressiva e aumento da necessidade de vasopressor. AngioTC mostra AMS sem trombo evidente, segmentos intestinais com hiporrealce. **Hipótese:** NOMI. **Raciocínio:** baixa oferta de fluxo e vasoconstrição causam isquemia sem oclusão demonstrada. **Exames:** rever imagem com radiologia, acompanhar perfusão sistêmica, eletrólitos e sinais de perfuração/necrose. **Conduta:** corrigir a causa do choque, otimizar débito e volemia sob monitorização, revisar vasoativos, discutir vasodilatação intra-arterial em centro experiente e explorar cirurgicamente caso peritonite/necrose. **Por que importa:** angioTC sem oclusão arterial visível não descarta isquemia ameaçadora à vida.
 
-## 17. Seis questões autorais comentadas
+## 29. Doze questões autorais comentadas
 
 ### Questão 1
 Homem de 74 anos com fibrilação atrial tem dor abdominal de início súbito muito intensa, abdome pouco doloroso ao toque e lactato de 1,5 mmol/L. Qual próximo exame melhor atende à suspeita?
@@ -270,7 +471,7 @@ D) Toda colite isquêmica implica oclusão embólica da AMS.
 
 **Gabarito: B.** A investigação e endoscopia dependem da gravidade e segurança. **A:** endoscopia em suspeita de necrose/perfuração pode ser perigosa. **C:** sangramento é apresentação possível. **D:** colite isquêmica muitas vezes relaciona-se a hipoperfusão sem embolia da AMS. **Revisão:** considerar território colônico e distinguir extensão da isquemia.
 
-## 18. Referências científicas e aplicabilidade brasileira
+## 30. Referências científicas e aplicabilidade brasileira
 
 1. **ESVS (2025):** Koelemay MJ et al. Clinical Practice Guidelines on the Management of Diseases of the Mesenteric and Renal Arteries and Veins. European Journal of Vascular and Endovascular Surgery, 2025;70(2):153–218. DOI 10.1016/j.ejvs.2025.06.010. Texto integral aberto: https://ris.utwente.nl/ws/portalfiles/portal/502462657/PIIS1078588425005167.pdf .
 2. **WSES (2022):** Bala M et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 17, 54 (2022). DOI 10.1186/s13017-022-00443-x. https://link.springer.com/article/10.1186/s13017-022-00443-x .
@@ -279,7 +480,7 @@ D) Toda colite isquêmica implica oclusão embólica da AMS.
 
 **Contexto brasileiro:** a conduta de emergência depende da rede hospitalar, de disponibilidade de angioTC, sala híbrida/cateterismo e equipes cirúrgica e vascular. Nesta etapa **não foi verificado um PCDT nacional específico de isquemia mesentérica**; por isso não se atribui à SBACV ou ao Ministério da Saúde uma recomendação formal não localizada. A revisão final deve conferir protocolos brasileiros de serviços de referência e eventual documento nacional pertinente, registrando data e autoria. As diretrizes estrangeiras sustentam o núcleo de diagnóstico e tratamento; o material do cursinho do Drive serviu apenas ao planejamento didático, nunca como fonte de imagens/textos ou prescrição.
 
-## 19. Auditoria editorial parcial — o que falta antes da conclusão
+## 31. Auditoria editorial parcial — o que falta antes da conclusão
 
 - [x] Inventário inicial: nenhuma pasta homônima de isquemia mesentérica identificada entre apostilas publicadas do repositório no início do lote 6; confirmar eventuais sobreposições em capítulos de abdome agudo antes de publicar.
 - [x] Benchmark do Drive: apostila **“14 - ABDOME AGUDO VASCULAR.pdf”** (texto efetivamente lido) e **“01 - ABDOME AGUDO - INTRODUCAO.pdf”**; origem editorial não confirmada como Estratégia MED.
