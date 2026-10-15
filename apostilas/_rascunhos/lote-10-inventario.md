@@ -1,6 +1,6 @@
 # LURIA — Lote 10: inventário e plano editorial (apostilas 204–225)
 
-**Data:** 15/10/2026. **Branch:** `editorial/lote-10-apostilas-20261015`. **Situação:** inventário e produção parcial em andamento — **204–210 possuem manuscritos originais não publicados; NÃO significa 22 apostilas prontas nem autoriza publicação**.
+**Data:** 15/10/2026. **Branch:** `editorial/lote-10-apostilas-20261015`. **Situação:** inventário e produção parcial em andamento — **204–211 possuem manuscritos originais não publicados; NÃO significa 22 apostilas prontas nem autoriza publicação**.
 
 **Base:** `assets/js/apostilas-lotes-225.js` e `assets/js/apostilas-editorial-enamed-2026.js`, na branch de auditoria ENAMED. Preservam-se 260 temas originais e os acréscimos próprios dos lotes 11–13. Nenhum tema de lote posterior deve ser antecipado ou sobrescrito.
 
@@ -13,7 +13,8 @@
 - **Aula 208:** `apostilas/_rascunhos/lote-10-208-gestacao-gemelar-alto-risco.md`, 82.028 caracteres Markdown, 9 casos e 13 questões; corionicidade, TTTS, TAPS, sFGR, TRAP e via/momento do parto. **Não publicado**; sem imagens aprovadas, benchmark específico e validação médica.
 - **Aula 209:** `apostilas/_rascunhos/lote-10-209-aloimunizacao-materno-fetal-doenca-hemolitica.md`, 82.524 caracteres Markdown, 8 casos, 12 questões, 10 propostas de imagens. Cobre PAI/Coombs, anti-D/c/K, PSV-ACM, TIU, cuidado neonatal e AAP 2022. **Não publicado:** validação independente e fontes visuais aprovadas pendentes.
 - **Aula 210:** `apostilas/_rascunhos/lote-10-210-psicopatologia-exame-mental.md`, 89.304 caracteres Markdown, 8 casos, 12 questões, cinco fluxos e 10 imagens didáticas candidatas. Abrange entrevista, EEM, pensamento, percepção, delirium e manejo inicial de riscos. **Não publicada:** benchmarking específico do Drive, revisão psiquiátrica, imagem/escala licenciadas e testes pendentes.
-- **211–225:** seguem no planejamento. Não confundir a existência de notas na matriz com manuscritos finalizados.
+- **Aula 211:** `apostilas/_rascunhos/lote-10-211-transtornos-depressivos-risco-suicidio.md`, 80.516 caracteres Markdown, 8 casos, 12 questões, cinco algoritmos e 10 imagens candidatas. Abrange diagnóstico de depressão, bipolaridade no diferencial, risco suicida, psicoterapias, antidepressivos, seguimento e recaída. **Não publicado:** benchmarking específico, conferência brasileira, revisão médica e testes pendentes.
+- **212–225:** seguem no planejamento. Não confundir a existência de notas na matriz com manuscritos finalizados.
 - Extensão acima de 60 mil **brutos** não equivale automaticamente a 60 mil caracteres didáticos úteis; métricas só serão consideradas aprovadas após auditoria qualitativa e scripts do repositório.
 - Nenhuma imagem clínica nova foi embutida ou publicada. Nenhum deploy foi realizado.
 
@@ -28,7 +29,7 @@
 | 208 | Ginecologia e Obstetrícia | Gestação gemelar e acompanhamento de alto risco | Alta — **manuscrito ~79,7 mil caracteres; revisão pendente** |
 | 209 | Ginecologia e Obstetrícia | Aloimunização materno-fetal e doença hemolítica perinatal | Alta — **manuscrito ~82,5 mil caracteres; revisão pendente** |
 | 210 | Saúde Mental | Psicopatologia, entrevista e exame do estado mental | Alta/Média — **manuscrito ~89,3 mil caracteres; revisão pendente** |
-| 211 | Saúde Mental | Transtornos depressivos e avaliação do risco de suicídio | Alta — **planejada, não certificada** |
+| 211 | Saúde Mental | Transtornos depressivos e avaliação do risco de suicídio | Alta — **manuscrito ~80,5 mil caracteres; revisão pendente** |
 | 212 | Saúde Mental | Transtorno bipolar e episódios do humor | Média — **planejada, não certificada** |
 | 213 | Saúde Mental | Transtornos ansiosos, TOC e transtornos relacionados ao trauma | Alta — **planejada, não certificada** |
 | 214 | Saúde Mental | Esquizofrenia e outros transtornos psicóticos | Alta — **planejada, não certificada** |
