@@ -176,3 +176,32 @@ Foram consultadas fontes institucionais públicas **ISUOG Practice Guidelines 20
 **210:** busca por nome de apostila no GitHub main não identificou tema equivalente; buscas do Drive por psicopatologia/entrevista psiquiátrica/EEM não encontraram obra equivalente. Criado texto autoral semiológico sobre entrevista, história, exame do estado mental, percepção, pensamento, humor, delirium, diferenciais orgânicos, avaliação de segurança e documentação. Fontes: WHO ICD-11 CDDR 2024, Merck Manual (atualização 2026), NICE NG225/CG103 e MS/RAPS. **Não copiar/derivar manual CDDR para uso comercial**, licença CC BY-NC-ND 3.0 IGO. Aulas 211–216 continuam reservadas a temas específicos.
 
 **Pontos de integridade:** as contagens acima são do texto Markdown bruto, não de conteúdo útil certificado; casos e questões também requerem revisão clínica. Nenhuma imagem real foi incorporada/aprovada em Admin. HTML/PWA, banco, catálogo e a branch main **não foram modificados** por esta rodada. A próxima apostila curricular a iniciar é **211 — Transtornos depressivos e avaliação do risco de suicídio**, precedida de inventário de materiais existentes e checagem de diretrizes brasileiras.
+
+
+## 15/10/2026 — Continuação: aulas 211 e 212
+
+**Local de trabalho:** branch \`editorial/lote-10-204-225\` no repositório \`arantes225/luria\`; não foram realizados merge, deploy nem modificações nas apostilas publicadas.
+
+| Nº | Caminho editorial | Caracteres Markdown brutos auditados | Casos | Questões | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| **211** — Transtornos depressivos e avaliação do risco de suicídio | \`apostilas/_rascunhos/lote-10-aula-211-transtornos-depressivos-risco-suicidio.md\` | **75.177** | 9 | 14 | Rascunho longo, não certificado |
+| **212** — Transtorno bipolar e episódios do humor | \`apostilas/_rascunhos/lote-10-aula-212-transtorno-bipolar-episodios-humor.md\` | **73.317** | 9 | 14 | Rascunho longo, não certificado |
+
+### Etapa zero / Benchmark da 211
+
+Busca no Drive por depressão, transtornos depressivos, suicídio, bipolar, antidepressivos e psiquiatria; não foi localizado livro integral de depressão. Foram **abertos e lidos** \`Síndromes cognitivas.pdf\` (~2.061 caracteres extraídos; cita depressão como diferencial cognitivo) e \`Vigilância epidemiológica.pdf\` (~2.732; violência autoprovocada/notificação). São fontes **apenas correlatas**, não equivalentes e não comprovadamente Estratégia MED. A pesquisa externa foi construída com **Ministério da Saúde/Linha de Cuidado da Depressão (publicação 2022), NICE NG222, NICE NG225, OMS mhGAP 2023, CANMAT e bulas oficiais**. Especificamente, NICE NG225 contraindica o uso de escalas/estratos fixos como predição de suicídio ou decisão isolada de alta; a abordagem de segurança exige avaliação clínica, plano de cuidado e seguimento efetivo. Doses acadêmicas adultas citadas de fluoxetina, sertralina, escitalopram e venlafaxina XR foram cotejadas com **bulas DailyMed**, com ressalva de formulação/disponibilidade no Brasil.
+
+### Etapa zero / Benchmark da 212
+
+Buscas do Drive por bipolaridade/psiquiatria não encontraram obra integral; foram abertos \`Tireoide Tireotoxicose e hipertireoidismo (1).pdf\` (~2,6 mil; diferencial de ativação/insônia), \`06 - CEFALEIAS TRIGEMINO-AUTONOMICAS.pdf\` (~4,4 mil; menção a lítio em uso diverso) e \`02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf\` (~20 mil; segurança renal geral), todos **parciais e não equivalentes**. Foram comparadas diretrizes **NICE CG185**, **CANMAT/ISBD 2023 Update** e documento brasileiro **PCDT Transtorno Afetivo Bipolar tipo I**.
+
+**Checagem importante de data:** a página do portal do MS sobre o PCDT mostra atualização administrativa **21/01/2025**, mas o **PDF de 36 páginas efetivamente aberto e visualmente conferido foi aprovado pela Portaria nº 315 em 30/03/2016** e descreve busca bibliográfica até setembro/2015. **Não chamar de “PCDT clínico revisado em 2025”** nem presumir vigência farmacológica sem checar atos mais recentes. A aula compara o documento nacional com recomendações internacionais posteriores, sem afirmar automaticamente disponibilidade pelo SUS de todo fármaco citado.
+
+### Gatilhos editoriais ainda pendentes
+
+- **Sem certificação de robustez** apenas pelo tamanho bruto do Markdown: revisar caracteres **didáticos úteis** removendo bibliografia, listas de controle, repetição e Markdown.
+- Revisão médica independente por psiquiatra, dose por apresentação/regulação Anvisa, legislação brasileira e segurança clínica.
+- Imagens: somente mapa de **candidatos editoriais**, nenhuma mídia clínica aprovada no Admin.
+- Confirmar direitos de conteúdo de terceiros. Novos capítulos foram escritos originalmente e não incorporam redação ou figuras de PDFs do Drive.
+- As duas aulas permanecem \`_rascunhos\`; **nenhum HTML, CSS, JS, Supabase, catálogo ou deploy** foi alterado.
+- **Próximo tema curricular:** **213 — Transtornos ansiosos, TOC e transtornos relacionados ao trauma**. Antes de escrever, inventariar fonte de Drive sobre TAG, pânico, fobias, TOC e TEPT (se disponível); não substituir indiscriminadamente tratamento de TOC/TEPT por algoritmo de TAG.
