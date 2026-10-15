@@ -750,3 +750,79 @@ D) Concluir que toda família de baixa renda necessariamente negligencia crianç
 
 **Mini-revisão:** a puericultura cuida da criança em seu território e também deve reconhecer riscos de violência, sofrimento familiar e barreiras de acesso.
 
+
+## 21. Referências clínicas e normas verificáveis
+
+**Bases brasileiras prioritárias (conteúdo clínico normativo e organização do SUS):**
+
+1. Ministério da Saúde. **Caderneta da Criança — Passaporte da Cidadania.** Página institucional com conteúdo da versão física, registro de crescimento, desenvolvimento, vacinas e prevenção de acidentes. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+2. Ministério da Saúde. **Primeira infância — Acompanhamento da Saúde.** Agenda de consultas: primeira semana; 1, 2, 4, 6, 9, 12, 18, 24 e 36 meses, com pelo menos acompanhamento anual depois de dois anos, adaptado ao risco. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/acompanhamento-da-saude
+3. Ministério da Saúde. **Caderneta Digital da Criança, Meu SUS Digital** (página institucional, disponibilizada antes de 2026 e orientações divulgadas em 2026). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca
+4. Ministério da Saúde. **Guia Alimentar para Crianças Brasileiras Menores de 2 Anos** (2019) e página de alimentação saudável. https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes/guia_da_crianca_2019.pdf ; https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/alimentacao-saudavel
+5. Ministério da Saúde. **TEA na Atenção Primária à Saúde** — uso do M-CHAT-R/F como rastreio de risco entre 16 e 30 meses. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo/aps
+6. Ministério da Saúde. **Saúde da Criança** — vigilância do desenvolvimento nos primeiros anos e atenção integral. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca
+7. Ministério da Saúde. **Prevenção e Cultura de Paz**, estratégia de prevenção de violências e acidentes na PNAISC. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/prevencao-e-cultura-de-paz/prevencao-e-cultura-de-paz/
+8. Ministério da Saúde. **Prevenção de Afogamento**, definição e estratégias integradas, incluindo materiais em parceria com Sobrasa. https://www.gov.br/saude/pt-br/composicao/svsa/vigilancia-de-doencas-cronicas-nao-transmissiveis/vigilancia-de-violencias-e-acidentes/prevencao-de-afogamento
+9. Ministério dos Transportes / CONTRAN. **Resolução nº 819/2021** sobre transporte e dispositivos de retenção para crianças, observando regras e alterações aplicáveis. https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao8192021.pdf
+10. Brasil, Portaria de Consolidação GM/MS nº 5/2017, art. 110–111 e atualizações. **Programa Nacional de Suplementação de Ferro**, público-alvo 6–24 meses e outras situações programáticas. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0005_03_10_2017.html
+
+**Referências internacionais complementares, não normativas do SUS:**
+
+11. American Academy of Pediatrics (HealthyChildren). **Preocupação com desenvolvimento**, vigilância em todas as consultas, rastreio geral em 9, 18 e 30 meses e TEA em 18 e 24 meses segundo agenda norte-americana. https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/What-should-I-do-if-I-am-worried-about-my-childs-development.aspx
+12. World Health Organization. **Child Growth Standards**, curvas para 0–5 anos, e **Growth Reference 5–19 years**. https://www.who.int/tools/child-growth-standards ; https://www.who.int/tools/growth-reference-data-for-5to19-years
+
+**Diferenças que não devem ser apagadas no HTML final:** (a) agenda de consultas e agenda de vacinas não são iguais; (b) M-CHAT-R/F na Caderneta é rastreio e não diagnóstico; (c) cronograma norte-americano da AAP é diferente do conjunto operacional brasileiro; (d) a Resolução 819/2021 contém condições/exceções e pode ser alterada, não basta decorar idade; (e) protocolos de suplementação do SUS variam conforme estratégia, região, produtos e atualização.
+
+## 22. Matriz de cobertura e antirrepetição com a aula 48
+
+| Pergunta formativa | Seções que respondem | Teste por casos/questões | Limitações ainda abertas |
+|---|---|---|---|
+| Como organizar retorno por idade e risco? | 1, 5–6, 17 | Q1, casos 1/3 | checar datas e agenda locais |
+| Como medir e interpretar crescimento? | 2, 7, 15 | casos 1/6, Q2/Q3 | inspeção de curvas OMS em imagem |
+| Como distinguir atraso de desenvolvimento? | 3, 8, 15 | caso 2, Q5/Q6 | revisar estratégia de encaminhamento local |
+| Como corrigir idade da prematuridade? | 2, 8, 20 | caso 3, Q4 | seguimento individual de prematuros extremos |
+| Como orientar aleitamento e alimentação? | 5, 9, 17 | caso 1, Q7 | suplementação regional e faixa etária |
+| Como recomendar sono seguro? | 4, 10, 14, 17 | caso 4, Q8 | verificar atualização brasileira específica |
+| Quais exames e triagens valem a pena? | 6, 11, 15 | casos 2/6 | confirmação de programas locais |
+| Quando orientar vacina atrasada? | 5, 12, 17 | tópico de triagem longitudinal | **remissão à aula 48**, sem duplicar calendário |
+| Como reconhecer e tratar risco social/violência? | 13, 16, 18 | caso 7, Q12 | revisão legal e rede territorial |
+| Como prevenir quedas, queimaduras e afogamentos? | 4, 14, 17–18 | casos 4/5, Q8/Q9 | curadoria de imagens e legislação |
+| Como orientar prevenção no trânsito? | 14, 17 | Q10 | rever texto CONTRAN consolidado |
+| Como reagir à intoxicação/engasgo? | 14, 18 | caso 8, Q11 | revisão do protocolo de primeiros socorros por idade |
+| Como usar Caderneta impressa/digital? | 1, 6, 12 | Q1 e roteiro longitudinal | testar interface/vínculo no SUS, sem dados pessoais |
+
+**Deduplicação deliberada:** a aula 43 aborda **verificação da situação vacinal e oportunidade de cuidado**. Não substituir nem duplicar toda a aula 48 (Imunizações na infância), cuja função é detalhar produtos, esquemas, contraindicações, situações especiais e calendários atuais. A aula 53 (Desidratação Pediátrica) trata de manejo técnico A/B/C; aqui, a orientação é reconhecer perda ponderal e desidratação como risco, não reproduzir volumes. A aula 58 (Diarreia Aguda) aborda etiologias e terapia; aqui, a ênfase é alimentação e prevenção longitudinal.
+
+## 23. Curadoria de recursos visuais — pré-manifesto SEM aprovação
+
+A lista a seguir representa **necessidades didáticas e alvos de produção/busca**, e não imagens reais selecionadas ou já liberadas para reutilização comercial. A fila do Admin não foi modificada.
+
+| Prioridade | Visual necessário | Local | Mensagem didática | Status |
+|---|---|---|---|---|
+| 1 | Curva OMS por sexo/idade para peso e estatura, em material licenciado ou diagrama original | 7 | queda de trajetória importa mais que ponto isolado | licencia pendente |
+| 2 | Comparação original de técnica de medida de comprimento supino vs estatura em pé | 7 | método da medida muda leitura | criar |
+| 3 | Infográfico autoral de consultas puericultura SUS | 6 | 1ª semana até consultas anuais | criar |
+| 4 | Mapa autoral de domínios de desenvolvimento | 8 | linguagem, motor, social, cognição e autonomia | criar |
+| 5 | Infográfico autoral da idade corrigida na prematuridade | 8 | 32 semanas + 4 meses cronológicos ≈ 2 meses corrigidos | criar |
+| 6 | Fotografia didática licenciada de espaço de sono seguro, sem paciente identificável | 10/14 | supino, superfície firme, sem objetos soltos | buscar licença |
+| 7 | Diagrama original de alimentação complementar de seis meses | 9 | alimentos reais e textura segura | criar |
+| 8 | Esquema original de barreiras na piscina | 14 | cerca/portão + supervisão adulta | criar |
+| 9 | Fotografia licenciada de cadeirinha instalada corretamente | 14 | ajuste ao tamanho da criança, norma e fabricante | buscar licença |
+| 10 | Diagrama original de cozinha segura e prevenção de escaldaduras | 14 | afastar líquidos quentes e cabos | criar |
+| 11 | Infográfico original de risco de objetos pequenos, pilhas botão e ímãs | 14 | prevenir ingestões perigosas | criar |
+| 12 | Checklist original de proteção familiar e rede social | 13 | investigação sem estigmatização e cuidado integral | criar |
+
+**Regras:** imagens clínicas/externas só podem ser incorporadas após licença compatível com produto comercial, proveniência confiável, pertinência anatômica, avaliação ética e aprovação no Admin. Converter e otimizar para WebP pelo pipeline. Curvas oficiais OMS não devem ser copiadas como arte do PDF de cursinho; se houver licença aplicável, citar a fonte e trabalhar com dados/diretrizes verificáveis. Diagramas e ilustrações originais devem passar pela revisão médica e visual.
+
+## 24. Controle de qualidade e pendências objetivas
+
+**Produzido nesta expansão:**
+- desenvolvimento real das seções de consultas, medida e interpretação de curvas, risco nutricional, neurodesenvolvimento, saúde sensorial, prematuridade, alimentação, sono, triagens, violência, acidentes e comunicação na APS;
+- oito casos clínicos originais com hipóteses, exame, interpretação, conduta, alertas e fechamento didático;
+- doze questões de múltipla escolha, com quatro alternativas e explicações individuais;
+- cinco algoritmos operacionais, comparações e matriz de vínculo curricular;
+- referências primárias brasileiras e distinções de evidência de outros países.
+
+**Não realizado / ainda necessário:** revisão clínico-pediátrica especializada de pontos de rastreio e suplementação; validação jurídica da norma de transporte na data da publicação; leitura de apostila correlata *completa* de acidentes no Drive (não encontrada; material principal de crescimento/obesidade é **parcial** para o tema); seleção e aprovação de imagens reais; criação de diagramas; conversão para HTML seguindo padrão LURIA; inspeção desktop/PWA; teste humano de autossuficiência da apostila; revisão final de linguagem e possíveis redundâncias.
+
+**Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** Meta de extensão útil é uma estimativa de cobertura a ser checada, não homologação médica. Não publicar/mesclar/deployar até conclusão dos gates.
