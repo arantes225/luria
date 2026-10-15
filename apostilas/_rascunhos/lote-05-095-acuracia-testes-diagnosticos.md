@@ -680,6 +680,10 @@ E. “Como o VPN é elevado, todos os resultados positivos devem ser ignorados.�
 3. Mallett S et al. **Interpreting diagnostic accuracy studies for patient care.** *BMJ*. 2012;345:e3999. https://doi.org/10.1136/bmj.e3999
 4. **The spectrum effect in tests for risk prediction, screening, and diagnosis.** *BMJ*. 2016;353:i3139. https://www.bmj.com/content/353/bmj.i3139
 5. McInnes MDF et al. **Preferred Reporting Items for a Systematic Review and Meta-analysis of Diagnostic Test Accuracy Studies: PRISMA-DTA.** *JAMA*. 2018;319:388–396. https://doi.org/10.1001/jama.2017.19163
+6. Whiting PF et al. **QUADAS-3: A Revised Tool for the Quality Assessment of Diagnostic Test Accuracy Studies.** *Ann Intern Med*. 2026;179(4):548–555. https://doi.org/10.7326/ANNALS-25-02104.
+7. Sounderajah V et al. **The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence.** *Nat Med*. 2025;31:3283–3289. Correção de autor registrada em 2026. https://doi.org/10.1038/s41591-025-03953-8.
+8. Ministério da Saúde/Conitec. **Diretrizes metodológicas: elaboração de revisão sistemática e metanálise de estudos de acurácia diagnóstica.** https://www.gov.br/conitec/pt-br/midias/artigos_publicacoes/diretrizes/revisao_sistematica_metanalise_estudos_acuracia_diagnostica.pdf.
+9. Usher-Smith JA, Sharp SJ, Griffin SJ. **The spectrum effect in tests for risk prediction, screening, and diagnosis.** *BMJ*. 2016;353:i3139. https://doi.org/10.1136/bmj.i3139.
 
 O presente texto usa números demonstrativos inventados (descritos como fictícios) e elaboração original. Não se deve atribuir as matrizes numéricas aos estudos citados.
 
@@ -689,6 +693,6 @@ O presente texto usa números demonstrativos inventados (descritos como fictíci
 - **Aprofundar após revisão externa:** comprovação de cálculos de IC em software independente; escolha de estudos nacionais exemplares e impacto no SUS; interoperabilidade com o renderer; revisão pedagógica do percurso da aula 095 para a 100, sem repetir a metodologia ROC.
 - **Revisar:** cada fórmula e exemplo por segundo leitor; clareza na diferença entre população estudada e paciente individual; fontes, ligações, qualidade dos enunciados, acessibilidade das tabelas e coerência com o renderer da LURIA.
 - **Produzir:** dez esquemas visuais candidatos, aprovar arte e direitos, converter/otimizar quando aplicável.
-- **Não concluído:** meta qualitativa de capítulo premium autossuficiente; revisão independente, auditoria de 60 mil caracteres úteis, integração ao site, teste PWA e publicação.
+- **Não concluído:** revisão metodológica independente, contagem objetiva dos caracteres de prosa útil e deduplicação, integração ao site, teste PWA, imagens autorais/legendas e publicação. A extensão bruta atual excede 60 mil caracteres, mas isso não certifica completude nem qualidade clínica.
 
 **STATUS: RASCUNHO ORIGINAL EM ELABORAÇÃO. Não incorporar à biblioteca como versão final sem revisão científica e editorial.**
