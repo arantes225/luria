@@ -569,6 +569,56 @@ A) HbAS equivale a HbSS em manifestações de rotina. B) HbAS é combinação he
 A) Troca de hemácias em vez de apenas transfusão simples, conforme quadro e disponibilidade. B) Nenhum suporte hematológico em qualquer circunstância. C) Alta após antitérmico. D) Oxigênio apenas se saturação normal.
 **Gabarito A.** Troca reduz HbS de modo mais eficaz em casos graves selecionados. **B/C:** ignoram risco respiratório. **D:** oxigênio é indicado em hipoxemia, não por saturação normal. **Revisão:** gravidade clínica e Hb basal orientam estratégia, não regra simplista.
 
+
+### Questão 9 — Hidroxiureia na infância e PCDT
+Uma criança com HbSS foi diagnosticada pelo teste do pezinho e está clinicamente estável aos 10 meses. A família pergunta se hidroxicarbamida só pode ser considerada depois dos três anos e após crises repetidas. Qual resposta é a mais adequada?
+A) Sim, porque a idade mínima atual no SUS é três anos para todos os genótipos.
+B) Não, o PCDT atualizado e as decisões do MS de 2024 contemplam determinados genótipos a partir de nove meses, inclusive crianças sem sintomas nos cenários previstos.
+C) É obrigatório usar hidroxicarbamida sem confirmar genótipo nem monitorar hemograma.
+D) Ela substitui todas as vacinas, profilaxias e medidas de prevenção de AVC.
+**Gabarito: B.** As decisões de 2024 ampliaram possibilidade de acesso para crianças menores em genótipos específicos. **A:** é regra de referência antiga. **C:** exige avaliação de elegibilidade e toxicidade medular. **D:** terapias são complementares. **Revisão:** citar PCDT em vigor, nunca uma tabela de cursinho desatualizada.
+
+### Questão 10 — Dor e manejo imediato
+Pessoa de 24 anos com HbSS e dor intensa típica de crises prévias está normotensa, hidratada, sem febre, dispneia nem hipoxemia. Qual conduta inicial é mais apropriada?
+A) Retardar analgesia até confirmação de HbS por eletroforese.
+B) Iniciar analgesia oportuna e individualizada, verificar sinais de alarme e evitar hiper-hidratação e transfusão automática.
+C) Transfundir até Hb 14 g/dL em todas as crises.
+D) Prescrever oxigênio em alto fluxo por rotina, apesar de saturação adequada.
+**Gabarito: B.** O manejo deve reconhecer dor, oferecer analgesia rápida e procurar complicações. **A:** exames não confirmam intensidade da crise dolorosa. **C:** transfusão simples indiscriminada aumenta risco de viscosidade/reações. **D:** O2 é indicado quando há hipoxemia ou condição específica. **Revisão:** ASH 2020 recomenda analgesia na primeira hora com reavaliações frequentes.
+
+### Questão 11 — DTC e rastreamento de AVC
+Em criança de 9 anos com HbSS e sem AVC prévio, qual afirmação é correta?
+A) DTC anual entre 2 e 16 anos faz parte da prevenção primária do AVC.
+B) O DTC só é útil depois de AVC, para prevenção secundária.
+C) Em exame não imageado, basta usar velocidade sistólica de qualquer artéria e aplicar corte de 200 cm/s sem interpretação.
+D) DTC anormal normaliza obrigatoriamente após uma transfusão e elimina indicação de acompanhamento.
+**Gabarito: A.** Rastreamento por faixa etária/genótipo identifica crianças com alto risco antes do AVC. **B:** perde oportunidade de prevenção. **C:** técnica, velocidade média específica e vasos avaliados importam. **D:** prevenção transfusional costuma exigir programa e monitorização prolongados. **Revisão:** ASH 2020 especifica modalidade e critérios de risco.
+
+### Questão 12 — Hiper-hemólise
+Pessoa com HbSS apresenta urina escura, icterícia e piora de anemia 12 dias após transfusão, com Hb abaixo do nível pré-transfusional. Qual hipótese precisa ser priorizada?
+A) Apenas deficiência de vitamina B12, sem outra investigação.
+B) Hiper-hemólise associada a reação hemolítica transfusional tardia, com avaliação hematológica urgente.
+C) Necessidade obrigatória de repetir transfusão simples imediatamente, sem hemoterapia.
+D) Traço falciforme assintomático.
+**Gabarito: B.** Queda paradoxal de Hb após transfusão e sinais de hemólise apontam DHTR/hiper-hemólise. **A:** não explica relação temporal isoladamente. **C:** nova transfusão pode intensificar hemólise em certos pacientes. **D:** o caso é HbSS. **Revisão:** revisar anticorpos, HbA/HbS, marcadores de hemólise e discutir resgate especializado.
+
+### Questão 13 — Metas transfusionais na TDT
+Menina de 12 anos com beta-talassemia dependente de transfusão está em programa regular, sem doença cardíaca conhecida. Segundo a TIF 2025, qual faixa pré-transfusional costuma orientar o tratamento na maioria dos pacientes?
+A) 4–5 g/dL.
+B) 6–7 g/dL.
+C) 9,5–10,5 g/dL.
+D) 15–17 g/dL.
+**Gabarito: C.** A faixa de 9,5–10,5 g/dL e intervalos tipicamente de 2–5 semanas visam crescimento, capacidade funcional e contenção de eritropoese ineficaz. **A/B:** permitem anemia excessiva para TDT regular. **D:** não corresponde a alvo pré-transfusional. **Revisão:** esse alvo **não é transferível automaticamente** para HbSS.
+
+### Questão 14 — Marcadores de ferro na talassemia
+Adolescente com TDT, ferritina variável e ecocardiograma sem disfunção possui RM cardíaca T2* de 8 ms. A interpretação adequada é:
+A) A função cardíaca preservada exclui sobrecarga miocárdica.
+B) T2* inferior a 10 ms sugere depósito de ferro cardíaco importante e exige atenção hematológica/cardiológica especializada.
+C) A RM do coração mede exclusivamente ferro hepático.
+D) A quelação deve ser descontinuada sem avaliar carga de ferro, exames e segurança.
+**Gabarito: B.** T2* muito reduzido é marcador de risco mesmo antes de disfunção aparente. **A:** função preservada não afasta depósito. **C:** métodos para fígado e coração são diferentes. **D:** estratégia de quelação deve ser orientada por risco e toxicidade. **Revisão:** ferritina é tendência, RM de órgão direciona conduta.
+
+
 ## 11. Matriz e visuais ainda não aprovados
 | Tema | Capítulo | Status |
 |---|---|---|
