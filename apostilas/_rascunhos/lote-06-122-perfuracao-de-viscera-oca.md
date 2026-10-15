@@ -412,6 +412,12 @@ Colisões automobilísticas com **sinal do cinto de segurança**, compressão em
 
 A WSES 2022 recomenda CT contrastada em paciente estável com mecanismo de alto risco, exame seriado se imagem é inespecífica e consideração de **nova CT após cerca de seis horas** em casos equívocos selecionados. Se o paciente evolui com peritonite, febre ou instabilidade, a intervenção não deve esperar um cronômetro. Ar extraluminal isolado é sugestivo, porém nem sempre está presente na fase precoce. Líquido livre sem lesão de órgão sólido em trauma deve levantar suspeita de lesão intestinal/mesentérica, especialmente com mecanismo compatível.
 
+### 20.1.1 Quando a tomografia é equívoca: observação ativa, não simples espera
+
+A **TC equívoca** ocorre quando o exame não evidencia defeito claro da parede, porém mostra sinais indiretos como **líquido livre sem lesão de órgão sólido, espessamento focal de alça, infiltração mesentérica ou hematoma** em mecanismo de risco. Uma **TC inicial negativa** também pode deixar de identificar lesão intestinal precoce. Nessa situação, se o paciente permanece hemodinamicamente estável e sem peritonite, considerar internação/observação sob responsabilidade cirúrgica, com **exames abdominais seriados**, sinais vitais registrados, tendência de dor e reavaliação laboratorial quando clinicamente útil; não dar alta apenas porque o primeiro laudo não descreveu perfuração.
+
+A WSES 2022 recomenda que, em pacientes selecionados com CT equívoca e risco persistente, a **repetição da TC após aproximadamente seis horas** seja considerada, interpretando evolução e mecanismo traumático. Essa referência temporal não equivale a uma obrigação de aguardar: **peritonite progressiva, instabilidade, deterioração metabólica ou piora clínica indicam reavaliação cirúrgica imediata e possível exploração**. Em trauma com lesões distrativas, analgesia intensa ou consciência alterada, o exame físico isolado pode ser menos confiável e exige estratégia ainda mais cautelosa.
+
 ### 20.2 Trauma penetrante
 
 Ferimento por arma branca/projétil pode atravessar vários segmentos, com sangramento e contaminação. A avaliação de instabilidade, peritonite e trajetória determina necessidade de cirurgia imediata versus investigação seletiva em paciente estável. Lesão de parede anterior aparentemente pequena não informa extensão interna. Na operação, é fundamental **inspecionar todo o trajeto e segmentos comprometidos**; reparar uma perfuração e deixar outra inadvertida causa peritonite tardia.
