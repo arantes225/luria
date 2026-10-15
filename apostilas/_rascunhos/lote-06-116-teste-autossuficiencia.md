@@ -35,7 +35,7 @@ O teste busca as premissas conceituais das **12 questões** nos capítulos didá
 1. A questão 11 anterior repetia o tema da questão 5 (indução na nefrite lúpica). Ela foi **substituída por uma situação de glomerulonefrite da endocardite**, abordando uma armadilha de segurança relevante: iniciar imunossupressão sem excluir infecção.
 2. O capítulo pediátrico passou a distinguir as decisões de incorporação do SUS em 2025 do estágio do PCDT, com fontes normativas oficiais.
 3. O bloco anti-MBG/ANCA requer revisão específica da decisão de plasmaférese e avaliação benefício-risco. A errata KDIGO 2024 está citada no capítulo 18.
-4. As alternativas das 11 outras questões ainda estão visualmente agrupadas em um parágrafo no HTML; **falta renderizá-las em lista de opções**, com letras e acessibilidade apropriadas, antes da revisão desktop/PWA.
+4. As 12 questões da prévia HTML foram estruturadas como listas semânticas de alternativas A–D, após converter as 11 opções que estavam agrupadas em parágrafos. A inspeção visual desktop/PWA ainda não foi realizada.
 5. Sem fonte comparativa extensa e de autoria confirmada no Drive para este tema, a etapa zero continua **parcial**. Materiais resumidos correlatos foram efetivamente consultados antes da edição.
 6. Não foi executado o comando local `node scripts/build-apostilas-batch.cjs --input ... --dry-run`; o JSON e a prévia passaram somente por validação estrutural equivalente em JavaScript. Não alegar execução de testes do repositório ou certificação clínica.
 7. Confirmar a documentação de licença, relevância didática e direitos de figuras antes de submetê-las ao Admin; nenhuma imagem clínica foi automaticamente incorporada.
