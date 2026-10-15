@@ -198,3 +198,193 @@ Valores esperados de leucócitos, proteínas e glicose no LCR variam por **idade
 
 Se culturas/Gram estão negativos após antibiótico prévio, isso não prova ausência de meningite bacteriana. Testes moleculares podem ajudar conforme patógeno, mas precisam de interpretação e acesso.
 
+
+
+## 11. Regras preditivas: Step-by-Step, PECARN, AAP e suas fronteiras
+
+### 11.1 Por que “baixo risco” não significa “sem risco”
+
+Regras clínicas buscam identificar lactentes bem-aparentes cujo risco residual de IBI é suficientemente baixo para discutir menor número de procedimentos, observação sem antimicrobiano ou alta com acompanhamento. Não são testes que “comprovam infecção viral”. Uma regra pode ter excelente valor preditivo negativo em uma população de baixa prevalência e ainda deixar pequena probabilidade residual de meningite — importante porque o dano da doença não diagnosticada é alto. Também há riscos em investigação excessiva: punção traumática, falso positivo, internação, antibióticos e eventos adversos. A decisão exige discutir esse equilíbrio com responsáveis, sem retirar a segurança do processo clínico.
+
+A **CPS 2026** descreve regras **PECARN**, **Step-by-Step** e Aronson. Os estudos diferem em população, idade, critérios e definições de desfecho; **não existe um “teste de baixo risco” que seja apenas PCT baixa**. Deve-se aplicar a regra inteira, com coleta e unidades corretas, sem interpolar cortes ou aplicá-la a um bebê que não preenche critérios de inclusão.
+
+### 11.2 PECARN: três critérios combinados
+
+Na regra **PECARN** para lactentes pequenos dentro da população estudada, a classificação de baixo risco de IBI requer, em sua versão descrita pela CPS 2026:
+
+1. Urina negativa para esterase leucocitária, nitrito e piúria importante (no quadro da CPS, ≤5 leucócitos/campo de grande aumento).
+2. **Contagem absoluta de neutrófilos (ANC) ≤4.000/µL.**
+3. **Procalcitonina ≤0,5 ng/mL.**
+
+Somente quando **todos** os critérios relevantes são atendidos e o bebê está bem-aparente no escopo clínico a regra estima baixo risco. A versão do estudo de derivação/validação deve ser conferida no serviço, porque a qualidade de coleta da urina, momento do laboratório e população podem variar. O valor preditivo negativo alto não torna desnecessária avaliação de meningite em um recém-nascido com convulsão ou alteração de consciência; esses pacientes não são candidatos ao “baixo risco” pela regra.
+
+### 11.3 Step-by-Step: idade mínima e marcadores diferentes
+
+A abordagem **Step-by-Step** de baixo risco, na apresentação CPS 2026, requer simultaneamente: **bom aspecto geral; idade de 22–90 dias; EAS sem leucocitúria; PCT <0,5 ng/mL; PCR ≤20 mg/L; e ANC ≤10.000/µL.** O corte da ANC difere do PECARN — não é erro de transcrição, são regras distintas. O corte etário também é parte essencial: um bebê com 12 dias, ainda que PCT 0,1 e PCR 2, **não preenche baixo risco Step-by-Step** por idade.
+
+Os algoritmos AAP 2021 para 8–60 dias são recomendações clínicas organizadas por estrato etário, não uma simples duplicação literal dos critérios de PECARN ou Step-by-Step. Um serviço pode usar AAP para decisões de investigação e empregar biomarcadores conforme acesso, mas precisa manter consistência documental.
+
+### 11.4 Aronson quando PCT não está disponível
+
+A regra Aronson foi criada como alternativa sem PCT, com idade, maior temperatura registrada, ANC e EAS. A CPS 2026 reconhece que o menor poder discriminativo relativo pode justificar **limiar mais baixo para punção lombar e internação** mesmo em crianças classificadas de baixo risco por essa estratégia. Isso não significa que a regra seja inútil; significa que decisões de alto impacto devem considerar limites de sensibilidade e disponibilidade real de biomarcadores.
+
+No Brasil, muitos serviços não dispõem de PCT em tempo útil. A saída responsável não é “inventar um Step-by-Step sem PCT” nem considerar PCR normal como equivalente. Pode-se optar por protocolo local validado com exames acessíveis, maior observação hospitalar ou encaminhamento para avaliação especializada.
+
+### 11.5 Exemplo de prova: três lactentes com a mesma PCT
+
+- **Paciente A:** 18 dias, 38,1°C, PCT 0,2, EAS negativo, bom aspecto → **idade por si só exige abordagem neonatal cautelosa**; não é elegível ao baixo risco Step-by-Step.
+- **Paciente B:** 43 dias, PCT 0,2, PCR 7, ANC 3.000, EAS negativo, bom aspecto → preenche marcadores das regras no exemplo, mas a decisão sobre LP/alta exige ver protocolo completo e condições de acompanhamento.
+- **Paciente C:** 43 dias, PCT 0,2, PCR 7, ANC 3.000, mas oligúria e enchimento capilar de 5 segundos → **não é bem-aparente/estável**; “marcadores bons” não permitem alta como baixo risco.
+
+**Pulo do Gato:** nos lactentes, **idade + aparência + urina + marcadores + LCR quando indicado + seguimento** formam o algoritmo; escolher somente o resultado laboratorial mais conveniente é uso incorreto da evidência.
+
+## 12. Faixa 0–7 dias: fora do protocolo AAP habitual
+
+Recém-nascido na primeira semana com febre ≥38°C ou **hipotermia associada a alterações clínicas**, recusa alimentar, apneia, cianose, distensão, letargia ou instabilidade precisa de **avaliação neonatal urgente**, inclusive sepse de início precoce ou tardio conforme história. Essa faixa é excluída da diretriz AAP 2021 para 8–60 dias. Não reduzir o cuidado à fita de urina ou a uma regra de lactente maior.
+
+A conduta envolve exame completo, monitorização, glicemia quando pertinente, hemocultura, outros exames conforme cenário e avaliação de LCR, em conjunto com equipe neonatal. Ampicilina associada a aminoglicosídeo é um exemplo frequente de esquema empírico de protocolos neonatais em contextos pertinentes; se meningite é suspeita, a cobertura deve atingir LCR e incluir patógenos neonatais. **Não prescrever esquema ou dose neonatal sem considerar idade gestacional, idade pós-natal, peso e função renal.** A atualização CPS 2026 apresenta regimes diferentes para 0–7 e 8–28 dias, ilustrando por que uma dose “pediátrica genérica” pode ser inadequada.
+
+O risco de infecção por **HSV neonatal** é importante em apresentação com vesículas, convulsões, alteração de estado mental, elevação de transaminases, plaquetopenia ou história de exposição, embora não se restrinja a esses achados. Nesses cenários, considerar **aciclovir intravenoso** enquanto testes específicos são realizados, por avaliação especializada. Falta de vesículas não exclui HSV disseminado.
+
+**Erro de alto impacto:** dar alta a neonato febril porque mamou uma vez e a temperatura baixou. A melhora transitória pode ocorrer em infecção invasiva; avaliação especializada e seguimento hospitalar são centrais.
+
+## 13. Faixa 8–21 dias: investigar amplamente mesmo com boa aparência
+
+O grupo de **8–21 dias** é um dos mais preocupantes da diretriz **AAP 2021**. A criança pode interagir, mamar e estar corada, mas ainda existe risco significativo de bacteremia e meningite oculta. A orientação AAP compreende avaliação de **urina (amostra apropriada), hemocultura e LCR**, além de antibióticos parenterais e hospitalização no algoritmo para lactentes de bom aspecto e a termo desse estrato. Não é apropriado descartar risco porque o EAS foi negativo ou porque um painel viral detectou rinovírus.
+
+Coletar EAS e cultura urinária por técnica com baixo risco de contaminação; obter hemocultura antes do primeiro antibiótico quando viável; realizar LP para análise/cultura de LCR, desde que a condição clínica permita, sem atrasar tratamento se houver dificuldade técnica. Se há instabilidade, o manejo de sepse/meningite supera a sequência eletiva de exames.
+
+A CPS 2026 pode permitir algumas escolhas diferenciadas de LP/observação em neonatos selecionados, mas essas recomendações não são intercambiáveis com o fluxograma AAP. Para ensino e segurança, deixar explícito no caso qual protocolo é usado; um pronto atendimento sem laboratório de PCT e sem capacidade de controle de culturas não pode simplesmente replicar estratégia muito seletiva de centro terciário.
+
+### 13.1 Condições para interromper terapia e alta hospitalar
+
+O acompanhamento utiliza evolução clínica e **culturas negativas durante o período recomendado pelo protocolo**, não só ausência de febre em poucas horas. A CPS 2026 descreve intervalos de observação hospitalar que podem chegar a 36 horas de culturas negativas em grupos selecionados de neonatos. Não fixar uma duração universal sem conferir agentes pré-tratados, técnica das culturas, risco de HSV e estabilidade. Orientar responsáveis para retorno por recusa alimentar, piora do choro/alerta, menor diurese ou sinais respiratórios.
+
+## 14. Faixa 22–28 dias: a idade muda risco, mas não apaga o perigo
+
+Lactentes de **22–28 dias** continuam em faixa de elevada vulnerabilidade. O algoritmo AAP 2021 avalia EAS/cultura de urina, hemocultura, **marcadores inflamatórios** e necessidade de LP, antibiótico e hospitalização conforme critérios. Não interpretar a mudança do dia 21 para o 22 como queda abrupta do risco biológico; trata-se de faixas escolhidas para orientar decisões a partir de dados clínicos.
+
+Se marcadores estão elevados, urina sugestiva de infecção ou LCR alterado, a possibilidade de bacteremia/meningite deve ser examinada por equipe pediátrica e hospitalar. Mesmo com biomarcadores tranquilizadores, disponibilidade de coleta e seguimento, informações perinatais e participação dos responsáveis influenciam escolhas; um recém-nascido com barreiras sociais relevantes pode beneficiar-se de observação.
+
+A diretriz CPS 2026 considera, em neonatos de 0–28 dias que preencham baixo risco por estratégia pertinente e depois de investigação inicial, opções como observação hospitalar e diferentes indicações de LP; não transformar isso em “LP proibida se PCT baixa”. O risco deve ser compartilhado com responsáveis em linguagem compreensível, explicando por que a equipe não está tratando “uma febre simples” indiscriminadamente.
+
+### 14.1 Situações que excluem baixo risco independente do hemograma
+
+Rebaixamento de consciência, apneia, hipóxia, má perfusão, convulsão, abaulamento persistente de fontanela, vesículas e suspeita de HSV, letargia acentuada, prematuridade fora da validação, cardiopatia ou imunodeficiência exigem caminho próprio. Em caso de meningite suspeita, tratamento imediato e LCR apropriado são prioridade; **procalcitonina baixa não prevalece sobre sinais neurológicos**.
+
+## 15. Faixa 29–60 dias: usar informação para evitar excessos com segurança
+
+A faixa **29–60 dias** apresenta menor risco médio de IBI que neonato, permitindo que protocolos reconheçam subgrupos bem-aparentes com baixa probabilidade de bacteremia/meningite. Isso não se aplica a crianças toxemiadas, prematuras fora do escopo, com comorbidade relevante ou sem retorno seguro. Em lactente com febre ≥38°C e sem foco, urina e cultura, hemocultura e marcadores são partes importantes da avaliação conforme diretriz.
+
+A **AAP 2021** organiza a decisão de LP de acordo com resultado dos marcadores e outros dados; a **CPS 2026** descreve que a LP pode ser evitada em muitos lactentes bem-aparentes de 29–60 dias classificados de baixo risco com investigação adequada. Essa possibilidade **não significa proibição da LP** ou garantia de ausência de meningite; o cuidado precisa ser proporcional a achados e preferências/condições práticas.
+
+### 15.1 Urina positiva com marcadores normais
+
+Uma cultura de urina coletada corretamente e EAS sugestivo podem indicar ITU. A CPS 2026 ressalta que em **29–60 dias**, o risco de meningite bacteriana não é necessariamente elevado apenas por EAS positivo, e a decisão de LP deve ser guiada por marcadores e avaliação clínica. Se o lactente tem bom aspecto, alimentação adequada, marcadores favoráveis e cuidadores capazes de retornar, alguns protocolos permitem tratamento oral de ITU e alta com revisão em 24–48 horas. Outros casos necessitam antibiótico parenteral/observação por vômitos, mau estado geral, risco social ou resultados.
+
+**Não aplicar** a mesma regra a recém-nascido de 12 dias e não usar urina de saco coletor como única prova microbiológica. Confirmar cultura e assegurar que o resultado final será analisado; crescimento inesperado ou hemocultura positiva exige contato e reavaliação ativa.
+
+### 15.2 Quando considerar internação apesar de “baixo risco”
+
+A alta segura exige avaliação inicial completa, estabilidade, ausência de sinais de alerta, cuidadores capazes, **acesso à reavaliação**, plano de retorno por exames/culturas e possibilidade de retorno imediato. Um hospital com culturas cujo resultado só será conferido três dias depois e sem sistema para contatar a família não pode copiar o mesmo fluxo de alta de centro organizado com resultados e enfermagem de acompanhamento.
+
+## 16. Faixa 61–90 dias: a atualização canadense de 2026
+
+A diretriz AAP de febre em lactentes **termina em 60 dias**. A CPS atualizada em maio de 2026 inclui **61–90 dias** e recomenda, pelo menos, **EAS e urocultura**, com possibilidade de aplicar investigação/estratificação semelhante à de 29–60 dias em situações pertinentes. A menor prevalência de bacteremia/meningite nesse intervalo pode permitir maior seletividade, mas a idade não dispensa busca ativa de foco oculto e avaliação de estado geral.
+
+Se o bebê está bem, atende critérios de baixo risco, não há instabilidade e o seguimento em 24–48h está assegurado, observação/alta podem ser consideradas conforme protocolo. Se sinais de doença invasiva, biomarcadores alterados, infecção urinária complicada, comorbidade ou cuidado domiciliar inseguro, aprofundar investigação e ponderar internação. A CPS descreve risco residual baixo, **não risco nulo**; a orientação não deve ser expandida a prematuros graves nem crianças com complexidade clínica fora dos estudos.
+
+### 16.1 O erro de tratar “menor de três meses” como uma única categoria
+
+A conduta para febre em **15 dias** não pode ser idêntica à de **85 dias** sem justificativa. O extremo inverso também é errado: dizer que qualquer criança que completa 61 dias está automaticamente liberada de coleta urinária ou avaliação bacteriana. A idade altera probabilidade, mas a decisão é combinada com aspecto, exames quando indicados, foco suspeito e capacidade de retorno.
+
+## 17. Crianças de 3 a 36 meses: depois da vacinação conjugada
+
+A criança de 18 meses vacinada, ativa, com febre de 39°C por 24 horas e exame físico sem foco **não pertence ao mesmo grupo de risco que um lactente de 18 dias**. Com vacinação Hib/pneumocócica adequada e bom aspecto, bacteremia oculta é menos frequente que em séries históricas pré-vacina, e a realização rotineira de hemograma, hemocultura e antibiótico intramuscular para toda febre alta pode causar mais dano que benefício.
+
+Entretanto, essa seletividade depende de cobertura vacinal, comorbidades, epidemiologia local e apresentação. Criança **não vacinada ou com vacinação incompleta**, toxemiada, com sintomas progressivos ou seguimento inadequado pode precisar avaliação mais profunda. Febre sem foco em lactentes/meninas pequenas pode merecer **pesquisa de ITU**, mesmo quando criança parece bem, conforme fatores de risco e diretriz local.
+
+### 17.1 Procura de foco em reavaliação
+
+O foco pode emergir depois de 24–72 horas: otite, exantema viral, lesões de estomatite, pneumonia, gastroenterite ou ITU. Orientar retorno se febre persistir e não houver explicação clara. Não usar “é virose” como diagnóstico definitivo que impede reavaliação. Criança com febre durante cinco dias ou mais exige atenção a **Kawasaki** e outros diagnósticos inflamatórios, sobretudo com conjuntivite bilateral não purulenta, alterações orais, edema de extremidades, linfonodo e exantema; a doença pode ser incompleta.
+
+### 17.2 A febre de 39–40°C sozinha justifica antibiótico?
+
+Em criança bem-aparente, previamente saudável e imunizada, **temperatura isolada** não é indicação de ceftriaxona parenteral. O uso de antibiótico requer suspeita bacteriana plausível, diagnóstico focal ou protocolo específico de risco. A resposta ao antitérmico não é teste de etiologia. A escolha de pedir sangue ou urina deve partir do risco clínico, não do desejo de “mostrar serviço” aos pais com exames indiscriminados.
+
+## 18. Crianças maiores: febre ainda sem foco após exame
+
+A capacidade de relatar dor, disúria, tosse, cefaleia e odinofagia cresce com idade, tornando mais fácil localizar infecção no primeiro exame. A FSSL em criança escolar ainda ocorre, geralmente por vírus na fase inicial; a tarefa é verificar sinais de meningite, infecção urinária, pneumonia oculta em cenários apropriados, artrite séptica, osteomielite e outras causas importantes.
+
+Febre persistente além de vários dias com fadiga importante, perda de peso, exantemas atípicos, adenopatias, hepatoesplenomegalia, anemia/pancitopenia ou dor óssea demanda avaliação diferente de uma febre viral comum. Não transformar FSSL aguda em investigação indiscriminada de neoplasia, mas reconhecer **red flags**. História epidemiológica pode orientar dengue, arboviroses, leptospirose e outras infecções relevantes no Brasil dependendo de temporada/local, sempre considerando necessidade de testes e risco de sangramento.
+
+A febre associada a rash petequial preocupante, dor abdominal intensa, rigidez de nuca, hipoperfusão ou confusão exige atendimento de emergência independentemente de idade. Em criança com febre e retorno a creche, sinais de desidratação e capacidade de hidratar são mais úteis para decisões iniciais que a quantidade de dias sem diagnóstico em muitos quadros virais.
+
+## 19. Focos ocultos e diferenciais infecciosos que precisam ser buscados
+
+### 19.1 Infecção do trato urinário
+
+ITU é uma das causas bacterianas mais relevantes de febre sem foco em lactentes; pesquisar urina conforme idade/risco, método de coleta e achados. Sintomas urinários nem sempre estão presentes em bebê. Infecção alta/pielonefrite pode produzir bacteremia e exigir internação no lactente novo ou instável. **Não tratar bacteriúria assintomática ou cultura contaminada** como ITU comprovada; também não excluir ITU só porque a fita de nitrito foi negativa.
+
+### 19.2 Bacteremia oculta
+
+Bacteremia significa presença de bactéria viável na corrente sanguínea, que pode ocorrer sem foco aparente e sem meningite. O risco nos primeiros meses permanece mais alto que no pré-escolar vacinado; hemocultura tem papel nos algoritmos de pequenos lactentes. Uma hemocultura positiva deve ter sistema ativo de revisão, diferenciação de contaminante e encaminhamento. Não prescrever antibioticoterapia por 14 dias a toda cultura que gera dúvida sem identificar espécie/gravidade, mas a possibilidade de patógeno verdadeiro em neonato exige urgência.
+
+### 19.3 Meningite bacteriana
+
+Pequenos lactentes podem apresentar **febre isolada ou sinais muito inespecíficos**, como irritabilidade, pouca sucção, vômitos, convulsões ou apneia. Rigidez de nuca pode faltar. A probabilidade pré-teste depende de idade, marcadores e sinais; punção lombar e terapia dependem de protocolo e estabilidade. Em criança maior, febre com cefaleia, fotofobia, rigidez, rebaixamento ou púrpura pode aumentar suspeita. Se a hipótese é forte, **não adiar antibiótico pela LP** e acionar equipe adequada.
+
+### 19.4 Pneumonia oculta
+
+Pneumonia pode surgir com febre e sem tosse evidente nas primeiras horas, mas a radiografia não deve ser rotina em todas as crianças com FSSL. Taquipneia persistente, hipóxia, retrações, redução focal de murmúrio ou crepitações apoiam investigação. Leucocitose intensa foi usada em algoritmos antigos para CXR seletiva, mas validade atual depende de epidemiologia pós-vacina e estado clínico; não reproduzir corte histórico como regra absoluta.
+
+### 19.5 Infecção osteoarticular
+
+Irritabilidade ao trocar fraldas, pseudoparalisia, claudicação, recusa de apoiar membro e dor à mobilização de quadril/ombro podem revelar artrite séptica ou osteomielite. Essas condições exigem avaliação urgente, imagem/laboratório dirigidos e, em alguns casos, aspiração e drenagem. Um lactente de 45 dias com febre e recusa de mover a perna não tem necessariamente FSSL depois de exame completo: a dor osteoarticular é um sinal localizador.
+
+### 19.6 HSV e outras infecções virais importantes
+
+Em neonato, herpes simples pode causar doença mucocutânea, encefalite ou infecção disseminada, incluindo hepatite, coagulopatia e choque. Ausência de vesículas não exclui infecção. Pesquisa por PCR de HSV em amostras pertinentes e **aciclovir IV** podem ser necessários em paciente de risco, conforme protocolo neonatal. Em criança maior, influenza, adenovírus, enterovírus, SARS-CoV-2 e outros podem produzir febre sem foco inicial; testes virais ajudam em algumas decisões, mas não zeram risco de ITU ou bacteremia no pequeno lactente.
+
+## 20. Painel viral positivo: como usar sem cometer erro de exclusão
+
+O achado de um vírus em PCR nasal reduz em média a probabilidade de algumas infecções bacterianas invasivas em populações estudadas, mas **não exclui infecção bacteriana concomitante**. A CPS 2026 aponta risco não desprezível de bacteremia e meningite mesmo entre lactentes com vírus detectado, sendo especialmente cautelosa com **rinovírus**, que pode ser detectado por eliminação prolongada e mesmo em ausência de sintomas. Por isso, a avaliação inicial deve respeitar idade e risco, mesmo se um vírus foi confirmado.
+
+Não existe regra de que painel respiratório positivo substitua urocultura em recém-nascido ou permita dispensar punção lombar indicada por sinais neurológicos. Em criança de três anos estável com sintomas respiratórios típicos, teste viral pode orientar isolamento/retorno e evitar antibiótico desnecessário; em bebê de 12 dias, a mesma informação entra como dado adicional, não como exclusão de sepse.
+
+**Pulo do Gato:** o diagnóstico de infecção viral e a avaliação de risco de infecção bacteriana são perguntas relacionadas, mas **não idênticas**. Pode haver coinfecção; o risco residual deve ser julgado conforme idade.
+
+## 21. Quadro não infeccioso: quando “sem foco” pede outra hipótese
+
+Febre persistente com conjuntivite bilateral não purulenta, exantema, alterações de lábios/língua, edema/eritema de mãos e pés e linfonodo cervical pode sugerir **doença de Kawasaki**, sobretudo após cinco dias de febre; apresentações incompletas exigem avaliação especializada e ecocardiografia quando indicada. **MIS-C** pode aparecer após infecção por SARS-CoV-2, com febre persistente e manifestações inflamatórias multissistêmicas, dor abdominal, choque e biomarcadores elevados, de acordo com critérios vigentes. Essas síndromes não são “virose prolongada” a ser automaticamente ignorada.
+
+Reações medicamentosas, doenças reumatológicas, neoplasias hematológicas, síndromes autoinflamatórias e febre fabricada são diferenciais menos comuns que exigem história e exames direcionados quando a evolução não acompanha padrão viral autolimitado. O objetivo inicial não é investigar todas essas causas em qualquer criança no primeiro dia, mas reconhecer **tempo de evolução e sinais sistêmicos persistentes** que alteram a pergunta.
+
+**Hipertermia ambiental** em criança exposta a calor extremo, roupa excessiva ou veículo fechado exige raciocínio de dissipação de calor, desidratação e lesão térmica, não uso exclusivo de antitérmico. Em neonato, hipertermia ambiental pode coexistir com infecção verdadeira; o contexto físico e a resposta à correção ambiental ajudam, mas não substituem avaliação se houver outros sinais.
+
+## 22. Antibióticos e antivirais: princípios de segurança, sem automatismos
+
+### 22.1 Quem deve receber antibiótico prontamente
+
+Criança **toxemiada, em choque, com sinais de meningite bacteriana ou risco neonatal importante** exige antibioticoterapia parenteral empírica adequada ao contexto, preferivelmente após coleta de culturas quando viável **sem atrasar tratamento**. A decisão depende de idade, sítio suspeito, flora neonatal, resistência local, necessidade de cobertura para Listeria/GBS/bacilos Gram-negativos e risco de HSV. O atendimento pediátrico hospitalar deve monitorar dose por peso, idade pós-natal/gestacional, função renal, alergias, toxicidade e compatibilidades de infusão.
+
+### 22.2 Regimes conceituais por período
+
+| Faixa e situação | Raciocínio de terapia inicial | Ponto de segurança |
+| --- | --- | --- |
+| 0–28 dias com suspeita de sepse neonatal | Ampicilina com aminoglicosídeo em muitos protocolos; ampliar cobertura de meningite conforme indicação | Conferir idade gestacional, dose e função renal; não usar ceftriaxona livremente em neonato |
+| Lactente 29–60 dias com suspeita de IBI | Cefalosporina parenteral de terceira geração em cenários selecionados, conforme protocolo | LCR/meningite pode exigir outro regime e cobertura; cultura orienta revisão |
+| Suspeita de HSV neonatal | Aciclovir IV associado à investigação adequada, sem esperar PCR em doente grave | Ajuste renal e hidratação/monitorização |
+| Criança maior estável e bem-aparente com FSSL sem evidência bacteriana | **Nenhum antibiótico empírico de rotina** | Orientar reavaliação e sinais de alerta |
+| ITU confirmada sem IBI em lactente selecionado | Agente de penetração urinária/renal apropriada, VO ou IV segundo idade/risco | Não usar antibiótico inadequado ao parênquima se pielonefrite; conferir culturas |
+
+**Ceftriaxona em neonato** exige atenção especial a hiperbilirrubinemia, risco de deslocamento de bilirrubina e incompatibilidade com soluções IV contendo cálcio em faixas neonatais. Um esquema descrito para 29–60 dias não deve ser copiado para bebê de seis dias. O tratamento deve ser revisado com cultura, suscetibilidade e evolução, podendo reduzir espectro e duração quando clinicamente seguro.
+
+### 22.3 Prescrever antibiótico a toda febre alta é um erro
+
+Antibióticos não aliviam infecção viral e podem causar diarreia, alergia, seleção de resistência, candidíase e microbiota alterada. Um lactente bem-aparente de 16 meses com vacinação atualizada e sem sinais vermelhos não precisa ceftriaxona apenas porque temperatura é 40°C. Da mesma forma, não suspender antibiótico indicado em bebê bacterêmico porque febre cedeu: decisão deve seguir síndrome, cultura e protocolo.
+
+### 22.4 Profilaxia e imunização
+
+Verificar carteira vacinal, incluindo Hib e pneumococo no PNI conforme calendário atual, pode alterar risco e planejamento preventivo. Entretanto, **vacinação incompleta não é indicação automática de antibiótico** em toda criança febril, mas torna importante avaliar o risco de doença invasiva com maior cautela. A oportunidade da consulta pode ser usada para atualizar imunização após resolução do quadro, respeitando contraindicações e recomendações de serviço.
+
