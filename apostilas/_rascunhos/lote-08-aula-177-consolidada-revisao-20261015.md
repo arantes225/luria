@@ -326,7 +326,7 @@ Lesão renal aguda (LRA) é mudança rápida de função renal e/ou diurese; no 
 
 **Segundo, o rim está perfundido?** Revisar perda sanguínea, débito de drenos, infecção, vasoplegia, hipotensão, balanço hídrico e congestão. Ausculta pulmonar, edema e avaliação hemodinâmica ajudam a evitar o erro de administrar repetidas cargas de fluidos a paciente congesto. A diurese baixa pode também representar resposta fisiológica transitória, mas persistência, sinais de lesão orgânica e creatinina ascendente exigem reavaliação.
 
-**Terceiro, há agressão tubular/intersticial ou obstrução alta?** Analisar antibióticos, AINEs, contraste em contexto relevante, rabdomiólise, hemólise, sepse e necessidade de exames de urina/imagem. Hidron efrose ou lesão ureteral não deve ser esquecida após cirurgia pélvica complexa.
+**Terceiro, há agressão tubular/intersticial ou obstrução alta?** Analisar antibióticos, AINEs, contraste em contexto relevante, rabdomiólise, hemólise, sepse e necessidade de exames de urina/imagem. Hidronefrose ou lesão ureteral não deve ser esquecida após cirurgia pélvica complexa.
 
 ### O que fazer e o que evitar
 
@@ -490,7 +490,35 @@ Se débito, cor e composição mudam após dieta, correlacionar com reconstruç�
 
 A dor que subitamente se intensifica após estabilidade pode refletir obstrução de alça fechada, vazamento, trombose mesentérica, hematoma ou isquemia. Reavaliar FC, perfusão, distensão, peritonismo, lactato e TC se viável. **Lactato normal não exclui isquemia precoce**, e analgésicos não devem tornar-se motivo para adiar reexame seriado.
 
-# PARTE III — CASOS CLÍNICOS ADICIONAIS DE ALTA UTILIDADE
+# PARTE III — CASOS CLÍNICOS COMENTADOS
+
+## 29. Casos clínicos comentados
+
+### Caso 1 — Taquicardia no 4º DPO de colectomia
+Homem de 62 anos, colectomia com anastomose, 4º dia, frequência 122 bpm, dor abdominal progressiva, débito urinário reduzido e sem febre importante. **Hipóteses:** vazamento anastomótico/peritonite, hemorragia, TEP e outros diferenciais. **Raciocínio:** taquicardia e íleo que piora não devem ser atribuídos automaticamente à dor. **Exames:** hemograma, eletrólitos, lactato, avaliação de perfusão; TC se estável para definir coleção/vazamento. **Conduta:** reanimação, avaliação cirúrgica urgente, antimicrobianos e controle do foco quando houver infecção. **Por que importa:** ausência de febre não exclui deiscência.
+
+### Caso 2 — Queda de pressão após bariátrica
+Mulher de 39 anos, pós-operatório imediato de bypass, taquicardia, hipotensão, palidez e queda de débito urinário, sem hematêmese. **Hipóteses:** hemorragia intra-abdominal, TEP e vazamento precoce. **Raciocínio:** ausência de sangue exteriorizado não exclui sangramento. **Exames:** hemograma seriado, coagulograma, tipagem, gasometria/lactato e imagem conforme estabilidade. **Conduta:** ressuscitação e decisão rápida de hemostasia por equipe operadora; não atrasar cirurgia se choque hemorrágico suspeito. **Por que importa:** Hb inicial pode estar normal.
+
+### Caso 3 — Ferida com pus e febre tardia
+Mulher de 58 anos, 9º dia após laparotomia, dor local e saída de secreção purulenta da incisão, temperatura 38,6 ºC. **Hipóteses:** infecção superficial ou profunda. **Raciocínio:** avaliar extensão, fáscia, coleção, sinais de sepse. **Exames:** exame de ferida, culturas de material representativo conforme necessidade e US/TC se profundidade incerta. **Conduta:** drenagem/abertura quando indicada, curativo e antibiótico conforme gravidade e CCIH. **Por que importa:** antibiótico sozinho pode ser insuficiente.
+
+### Caso 4 — Dispneia súbita e TEP
+Homem de 70 anos, 7º DPO de cirurgia abdominal oncológica, dor torácica pleurítica, dessaturação e FC 115. **Hipóteses:** TEP, pneumonia, edema pulmonar, evento cardíaco. **Raciocínio:** cirurgia e câncer aumentam risco de trombose; D-dímero positivo no pós-operatório não confirma diagnóstico. **Exames:** avaliação hemodinâmica, ECG, imagem torácica e angio-TC se apropriado; ecocardiograma quando instável. **Conduta:** suporte e tratamento da doença conforme confirmação/suspeita de alto risco, ponderando sangramento cirúrgico. **Por que importa:** diagnóstico e terapia são urgentes e multidisciplinares.
+
+### Caso 5 — Oligúria não é sempre insuficiência renal
+Mulher de 73 anos após cirurgia de quadril, 6 horas com pouca diurese, PA normal e desconforto suprapúbico. **Hipóteses:** retenção urinária, obstrução da sonda, hipovolemia ou LRA. **Raciocínio:** não inferir lesão renal intrínseca sem verificar se bexiga está cheia. **Exames:** ultrassom vesical, revisão do cateter, creatinina e eletrólitos conforme evolução. **Conduta:** aliviar retenção se confirmada, acompanhar diurese e investigar causas associadas. **Por que importa:** intervenção simples pode evitar falsa LRA.
+
+### Caso 6 — Delirium hipoativo no idoso
+Homem de 81 anos, antes independente, no 2º DPO torna-se silencioso, desatento e não se alimenta. **Hipóteses:** delirium hipoativo, hipoxemia, dor, medicações, infecção, evento neurológico. **Raciocínio:** ausência de agitação não exclui delirium; a condição flutua e se caracteriza por inatenção. **Exames:** sinais vitais, glicemia, avaliação de medicações, oxigenação, infecção, retenção e exames dirigidos. **Conduta:** tratar desencadeantes e implementar prevenção não farmacológica. **Por que importa:** delirium não é “idade avançada”.
+
+### Caso 7 — Dreno bilioso após gastrectomia
+Homem de 59 anos, quinto dia após gastrectomia subtotal, dreno passa a eliminar líquido bilioso; FC 118, dor discreta e febre. **Hipóteses:** fístula do coto duodenal ou outra fonte biliar. **Raciocínio:** o caráter do dreno modifica suspeita anatômica e precisa de avaliação de coleção/perfusão. **Exames:** imagem direcionada conforme estabilidade, bilirrubina/amilase de dreno selecionadas e exames de infecção. **Conduta:** reanimação, antibiótico se indicação, estratégia de drenagem/endoscopia/cirurgia conforme contaminação e estado. **Por que importa:** plano depende se vazamento está contido.
+
+### Caso 8 — Evisceração da incisão
+Mulher de 66 anos, 8º dia após laparotomia, tosse forte e separação súbita da ferida com exteriorização de alça. **Hipótese:** deiscência fascial completa com evisceração. **Raciocínio:** risco de lesão visceral, contaminação, desidratação e choque. **Conduta:** atendimento emergencial, proteger vísceras com cobertura estéril úmida conforme protocolo e acionar cirurgia; não tentar recolocar alças à beira-leito. **Por que importa:** emergência mecânica exige correção operatória.
+
+### Casos novos (9–16) — avaliação e conduta aplicada
 
 ### Caso 9 — Taquicardia sem febre depois de ressecção colorretal
 
@@ -524,103 +552,9 @@ Homem de 49 anos, nas horas seguintes a tireoidectomia, relata pressão no pesco
 
 Homem de 67 anos, cirurgia ortopédica há cinco dias, recebeu tromboprofilaxia, desenvolve dispneia súbita, taquicardia e dor pleurítica; está normotenso. **Hipóteses:** TEP, pneumonia, pneumotórax, evento cardíaco. **Raciocínio:** profilaxia reduz, mas não zera risco de TEV; D-dímero pode estar elevado pelo próprio ato cirúrgico. **Exames:** ECG, sinais de gravidade, imagem diagnóstica para TEP conforme probabilidade e condição renal. **Conduta:** avaliação urgente, confirmação e anticoagulação se indicada após ponderar risco hemorrágico operatório. **Por que importa:** profilaxia não encerra a investigação.
 
-# PARTE IV — QUESTÕES AUTORAIS ADICIONAIS COM ALTERNATIVAS EXPLICADAS
+# PARTE IV — QUESTÕES AUTORAIS COMENTADAS
 
-**Q13.** No quarto DPO de colectomia, um paciente tem FC 122, dor crescente, ausência de febre e hemoglobina estável. A melhor interpretação é: A) ausência de febre exclui deiscência; B) possível vazamento/coleção ou outras complicações relevantes exigem avaliação imediata; C) apenas ileus fisiológico e alta; D) toda taquicardia prova TEP. **Gabarito B.** A nega apresentação afebril; C banaliza deterioração; D é conclusão etiológica sem investigação. **Revisão:** sinais persistentes e mudança do curso normal importam mais que marcador isolado.
-
-**Q14.** Sobre ISC, a afirmação correta é: A) superficial, profunda e órgão/espaço têm sempre a mesma conduta; B) toda vermelhidão é infecção bacteriana; C) a profundidade define investigação e possibilidade de drenagem/controle do foco; D) antibiótico substitui toda drenagem. **Gabarito C.** A elimina anatomia; B ignora inflamação/dermatite; D desconsidera coleção. **Revisão:** classificar por estrutura comprometida.
-
-**Q15.** Um abscesso intra-abdominal causa sepse após cirurgia. A SSC 2026 sugere: A) antibiótico isolado por 14 dias antes de considerar drenagem; B) controle do foco quando indicado o mais precocemente viável, idealmente até 6 horas da identificação de sepse/choque que precisa de controle; C) cirurgia em 6h para toda febre pós-operatória; D) dispensar antimicrobianos em choque. **Gabarito B.** A atrasa intervenção, C amplia indevidamente indicação e D retira terapia essencial. **Revisão:** a certeza de evidência é muito baixa e o relógio não substitui a indicação específica.
-
-**Q16.** Em paciente com SpO₂ 96% usando oxigênio, sonolência e FR 7 após opioide, a opção correta é: A) ventilação segura está comprovada pela saturação; B) investigar hipoventilação e oferecer suporte de via aérea/ventilação; C) dar alta; D) tratar apenas com antibiótico. **Gabarito B.** A ignora acúmulo de CO₂; C é insegura; D não corrige mecanismo. **Revisão:** oxigenação e ventilação são variáveis distintas.
-
-**Q17.** A paciente tem oligúria após retirada de sonda e distensão suprapúbica. A melhor próxima etapa é: A) furosemida de rotina; B) pesquisar retenção por avaliação vesical; C) diagnosticar necrose tubular sem exames; D) ignorar por uma semana. **Gabarito B.** A pode piorar descompensação; C confunde causa pré-renal/renal/pós-renal; D perde urgência. **Revisão:** obstrução urinária é diferencial imediato.
-
-**Q18.** D-dímero positivo cinco dias após grande cirurgia: A) confirma TEP; B) exclui TEP; C) tem especificidade baixa; necessidade de imagem depende de probabilidade e estabilidade; D) obriga trombólise. **Gabarito C.** A/B são inferências incompatíveis com o teste; D é terapêutica indevida. **Revisão:** cirurgia eleva D-dímero independentemente de TEP.
-
-**Q19.** Paciente dois anos após bypass Roux-en-Y apresenta dor intermitente importante e TC aparentemente normal. A hipótese de hérnia interna: A) está sempre excluída por TC; B) permanece relevante, exigindo revisão especializada se clínica forte; C) nunca ocorre após um ano; D) exige sempre colonoscopia antes de avaliar abdome. **Gabarito B.** A/C são absolutos falsos; D não pesquisa corretamente a complicação. **Revisão:** contexto anatômico e exames podem discordar.
-
-**Q20.** O conceito de MINS implica: A) todo aumento de troponina é IAM tipo 1; B) lesão miocárdica perioperatória pode ocorrer sem dor e requer interpretação clínica; C) sempre decorre de TEP; D) dispensa ECG e avaliação de causas. **Gabarito B.** A confunde lesão com etiologia; C reduz diferencial; D contraria abordagem clínica. **Revisão:** investigar isquemia, oferta/demanda e doença concorrente.
-
-**Q21.** Sobre ERAS após laparotomia de emergência: A) é alta compulsória em 24 horas; B) exige dieta mesmo em obstrução completa; C) combina mobilização, avaliação de dispositivos, tromboprofilaxia e alimentação quando segura conforme contexto; D) permite suspensão universal de medidas preventivas. **Gabarito C.** A/B/D são extrapolações inseguras; C reflete individualização. **Revisão:** ERAS é recuperação estruturada, não cronograma rígido.
-
-**Q22.** Um paciente desenvolve pescoço tenso, aumento de volume e estridor poucas horas após tireoidectomia. A prioridade é: A) TC eletiva e aguardar; B) avaliação e manejo imediato de ameaça à via aérea, acionando cirurgia/anestesia; C) analgésico isolado; D) curativo domiciliar. **Gabarito B.** A atrasa abordagem de compressão; C/D negligenciam risco de asfixia. **Revisão:** hematoma cervical é emergência.
-
-**Q23.** A fístula intestinal de alto débito deve ser tratada: A) apenas com antibiótico; B) corrigindo perdas/eletrólitos, avaliando controle do foco, anatomia, drenagem e nutrição; C) só com antidiarreico sem medir débito; D) sempre com reoperação imediata em qualquer paciente. **Gabarito B.** A/C ignoram fisiologia; D não individualiza estabilidade e controle do foco. **Revisão:** fístula é problema anatômico **e** hidroeletrolítico/nutricional.
-
-**Q24.** Idosa internada fica quieta, desatenta, sonolenta, com flutuação de comportamento após cirurgia. A atitude correta é: A) concluir “dorme por idade”; B) pesquisar delirium hipoativo, fatores precipitantes e intervir no ambiente e causas; C) dar antipsicótico sedativo sem avaliação; D) diagnosticar demência definitiva em uma hora. **Gabarito B.** A ignora mudança aguda; C pode piorar confusão; D confunde temporalidade. **Revisão:** delirium nem sempre é agitado.
-
-# PARTE V — VISUAIS E FONTES PARA CURADORIA
-
-## 29. Matriz técnica de figuras médicas (nenhuma aprovada automaticamente)
-
-A comissão do Admin deve selecionar imagens reais de origem hospitalar/academia com autorização comercial e anonimização; esquemas podem ser desenhados originalmente pela LURIA quando a licença impedir reprodução. Candidatos: (1) TC com líquido livre/sangue após procedimento; (2) angio-TC com extravasamento ativo; (3) TC com coleção junto à anastomose; (4) reconstrução de bypass Y de Roux e espaços de hérnia; (5) TC swirl sign de hérnia interna; (6) radiografia/TC mostrando íleo versus ponto de transição; (7) foto de ISC superficial, paciente não identificável; (8) esquema de ISC profunda e órgão/espaço, do zero; (9) imagem de evisceração em contexto profissional, ou **diagrama** não sensacionalista; (10) US bexiga com retenção; (11) angio-TC TEP; (12) Doppler de TVP proximal; (13) ECG de FA pós-operatória; (14) TC de hematoma cervical; (15) comparação de drenos seroso/bilioso/fecaloide em ambiente anonimizado; (16) fluxograma original de choque com decisão de fonte de sangramento/infecção; (17) visual de delirium hipoativo versus hiperativo; (18) gráfico temporal fictício de FC, lactato e diurese, claramente rotulado como ilustração.
-
-Para cada candidato registrar: **imagem original/URL, detentor do direito, tipo de licença, prova de autorização para uso comercial, eventual atribuição, data, resolução, anonimização, pergunta didática, legenda em português, status de revisão médica, status Admin**. Não reciclar imagem de material privado do Drive. Ao aprovar, produzir WebP responsivo respeitando limite técnico LURIA, com atenção à legibilidade de valores e ao contraste de ECG/TC.
-
-## 30. Referências verificadas para esta ampliação (2026)
-
-1. **ANVISA (Brasil).** Infecção de sítio cirúrgico: página de implementação e recursos; publicada 07/07/2025, atualizada 28/01/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico
-2. **ANVISA.** Modelo de Protocolo 2 — Prevenção de Infecção de Sítio Cirúrgico, arquivo disponibilizado 28/01/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico/protocolo-2-prevecao-de-isc-final.pdf
-3. **ANVISA.** Nota Técnica GVIMS/GGTES/DIRE3/ANVISA 11/2025 — implementação de protocolos de prevenção de infecção em serviços de saúde, com modelo ISC. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/avaliacao-nacional-das-praticas-de-seguranca-do-paciente/copy_of_avaliacao-nacional-das-praticas-de-seguranca-do-paciente
-4. **ANVISA.** PNPCIRAS 2026–2030: programa nacional de controle de IRAS. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude
-5. **CDC/NHSN.** Surgical Site Infection (SSI) Event, Chapter 9, janeiro de 2026. https://www.cdc.gov/nhsn/psc/ssi/index.html
-6. **Surviving Sepsis Campaign.** International Guidelines for Management of Sepsis and Septic Shock, publicação 23/03/2026. *Intensive Care Medicine* 52:863–936. DOI:10.1007/s00134-026-08361-1. https://link.springer.com/article/10.1007/s00134-026-08361-1
-7. **SCCM.** SSC 2026, quadro executivo de recomendações. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
-8. **ERAS Society.** Scott MJ et al. Consensus for Emergency Laparotomy, part 2, intra/postoperative, *World J Surg*. 2023;47:1850–1880. DOI:10.1007/s00268-023-07020-6. https://pmc.ncbi.nlm.nih.gov/articles/PMC10241558/
-9. **WHO.** Global Guidelines for the Prevention of Surgical Site Infection, 2ª edição 2018. https://www.who.int/publications-detail-redirect/9789241550475
-10. **ACC/AHA**. Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery (2024). https://professional.heart.org/en/guidelines-and-statements/guidelines/perioperative-cardiovascular-management-guideline
-11. **KDIGO.** Clinical Practice Guideline for Acute Kidney Injury (2012), conceitos diagnósticos; verificar atualizações vigentes antes de publicação. https://kdigo.org/guidelines/acute-kidney-injury/
-
-## 31. Auditoria didática e científica — bloqueios que persistem
-
-| Critério | Estado |
-|---|---|
-| Rascunho-base | Preservado sem alteração |
-| Conteúdo novo | Casos 9–16, questões 13–24, capítulos 15–28 de aprofundamento |
-| Recomendação de controle do foco | **SSC 2026** incluída, com ressalva de evidência muito baixa |
-| Prevenção de ISC brasileira | Modelo **Anvisa 2026** incluído, sem extrapolar prescrição |
-| Complicações de anastomose | Comparação anatomia, drenagem, imagem e necessidade de intervenção |
-| Cobertura respiratória/renal/cardiovascular | Ampliada com diferenciais e segurança |
-| Benchmark Drive | Três PDFs correlatos abertos e relidos; nenhum geral equivalente |
-| Figuras médicas | 18 candidatos adicionais, **zero aprovações de uso ou Admin** |
-| Fármacos | Não transformar panorama educacional em prescrição; conferência CCIH/cirurgia/anestesia |
-| Revisão especialista | Pendente cirurgia geral, CCIH, anestesiologia e intensivismo |
-| Editor/rendimento | Ainda precisa análise quantitativa de conteúdo didático único e revisão linha a linha |
-| QA | Sem HTML nativo, PWA, testes por usuário, publicação, merge ou deploy |
-
-**Teste editorial final pendente:** checar autossuficiência de cada questão com leitura do capítulo, converter esquemas em componentes visuais, revisar toda a farmacologia segundo bulário LURIA validado e protocolos locais, identificar imagens realmente licenciadas e registrar aprovação no Admin. Mesmo ultrapassando meta de caracteres brutos, **não atestar apostila premium sem esses gates**.
-
-
-# PARTE VI — CASOS E QUESTÕES ORIGINAIS DA VERSÃO BASE (PARA PRESERVAR A LINHA DIDÁTICA)
-
-## 32. Casos clínicos comentados
-
-### Caso 1 — Taquicardia no 4º DPO de colectomia
-Homem de 62 anos, colectomia com anastomose, 4º dia, frequência 122 bpm, dor abdominal progressiva, débito urinário reduzido e sem febre importante. **Hipóteses:** vazamento anastomótico/peritonite, hemorragia, TEP e outros diferenciais. **Raciocínio:** taquicardia e íleo que piora não devem ser atribuídos automaticamente à dor. **Exames:** hemograma, eletrólitos, lactato, avaliação de perfusão; TC se estável para definir coleção/vazamento. **Conduta:** reanimação, avaliação cirúrgica urgente, antimicrobianos e controle do foco quando houver infecção. **Por que importa:** ausência de febre não exclui deiscência.
-
-### Caso 2 — Queda de pressão após bariátrica
-Mulher de 39 anos, pós-operatório imediato de bypass, taquicardia, hipotensão, palidez e queda de débito urinário, sem hematêmese. **Hipóteses:** hemorragia intra-abdominal, TEP e vazamento precoce. **Raciocínio:** ausência de sangue exteriorizado não exclui sangramento. **Exames:** hemograma seriado, coagulograma, tipagem, gasometria/lactato e imagem conforme estabilidade. **Conduta:** ressuscitação e decisão rápida de hemostasia por equipe operadora; não atrasar cirurgia se choque hemorrágico suspeito. **Por que importa:** Hb inicial pode estar normal.
-
-### Caso 3 — Ferida com pus e febre tardia
-Mulher de 58 anos, 9º dia após laparotomia, dor local e saída de secreção purulenta da incisão, temperatura 38,6 ºC. **Hipóteses:** infecção superficial ou profunda. **Raciocínio:** avaliar extensão, fáscia, coleção, sinais de sepse. **Exames:** exame de ferida, culturas de material representativo conforme necessidade e US/TC se profundidade incerta. **Conduta:** drenagem/abertura quando indicada, curativo e antibiótico conforme gravidade e CCIH. **Por que importa:** antibiótico sozinho pode ser insuficiente.
-
-### Caso 4 — Dispneia súbita e TEP
-Homem de 70 anos, 7º DPO de cirurgia abdominal oncológica, dor torácica pleurítica, dessaturação e FC 115. **Hipóteses:** TEP, pneumonia, edema pulmonar, evento cardíaco. **Raciocínio:** cirurgia e câncer aumentam risco de trombose; D-dímero positivo no pós-operatório não confirma diagnóstico. **Exames:** avaliação hemodinâmica, ECG, imagem torácica e angio-TC se apropriado; ecocardiograma quando instável. **Conduta:** suporte e tratamento da doença conforme confirmação/suspeita de alto risco, ponderando sangramento cirúrgico. **Por que importa:** diagnóstico e terapia são urgentes e multidisciplinares.
-
-### Caso 5 — Oligúria não é sempre insuficiência renal
-Mulher de 73 anos após cirurgia de quadril, 6 horas com pouca diurese, PA normal e desconforto suprapúbico. **Hipóteses:** retenção urinária, obstrução da sonda, hipovolemia ou LRA. **Raciocínio:** não inferir lesão renal intrínseca sem verificar se bexiga está cheia. **Exames:** ultrassom vesical, revisão do cateter, creatinina e eletrólitos conforme evolução. **Conduta:** aliviar retenção se confirmada, acompanhar diurese e investigar causas associadas. **Por que importa:** intervenção simples pode evitar falsa LRA.
-
-### Caso 6 — Delirium hipoativo no idoso
-Homem de 81 anos, antes independente, no 2º DPO torna-se silencioso, desatento e não se alimenta. **Hipóteses:** delirium hipoativo, hipoxemia, dor, medicações, infecção, evento neurológico. **Raciocínio:** ausência de agitação não exclui delirium; a condição flutua e se caracteriza por inatenção. **Exames:** sinais vitais, glicemia, avaliação de medicações, oxigenação, infecção, retenção e exames dirigidos. **Conduta:** tratar desencadeantes e implementar prevenção não farmacológica. **Por que importa:** delirium não é “idade avançada”.
-
-### Caso 7 — Dreno bilioso após gastrectomia
-Homem de 59 anos, quinto dia após gastrectomia subtotal, dreno passa a eliminar líquido bilioso; FC 118, dor discreta e febre. **Hipóteses:** fístula do coto duodenal ou outra fonte biliar. **Raciocínio:** o caráter do dreno modifica suspeita anatômica e precisa de avaliação de coleção/perfusão. **Exames:** imagem direcionada conforme estabilidade, bilirrubina/amilase de dreno selecionadas e exames de infecção. **Conduta:** reanimação, antibiótico se indicação, estratégia de drenagem/endoscopia/cirurgia conforme contaminação e estado. **Por que importa:** plano depende se vazamento está contido.
-
-### Caso 8 — Evisceração da incisão
-Mulher de 66 anos, 8º dia após laparotomia, tosse forte e separação súbita da ferida com exteriorização de alça. **Hipótese:** deiscência fascial completa com evisceração. **Raciocínio:** risco de lesão visceral, contaminação, desidratação e choque. **Conduta:** atendimento emergencial, proteger vísceras com cobertura estéril úmida conforme protocolo e acionar cirurgia; não tentar recolocar alças à beira-leito. **Por que importa:** emergência mecânica exige correção operatória.
-
-## 33. Questões autorais comentadas — ENAMED/residência
+## 30. Questões autorais comentadas — ENAMED/residência
 
 **Q1.** Após anastomose colorretal, FC 125 e dor progressiva no 4º DPO, sem febre. Melhor raciocínio: A) afasta vazamento; B) suspeitar deiscência e reavaliar prontamente; C) alta obrigatória; D) antiemético apenas. **Gabarito B.** A ignora ausência de febre em muitos casos; C/D atrasam investigação. **Mini-revisão:** taquicardia persistente é sinal de alarme.
 
@@ -646,7 +580,35 @@ Mulher de 66 anos, 8º dia após laparotomia, tosse forte e separação súbita 
 
 **Q12.** Taquicardia e queda de perfusão logo após cirurgia com Hb inicial normal: A) excluem sangramento; B) podem refletir hemorragia aguda antes da queda de Hb; C) sempre são ansiedade; D) contraindicam exame físico. **Gabarito B.** A/C/D atrasam investigação. **Mini-revisão:** perda sanguínea não é descartada por hemoglobina inicial.
 
-## 34. Pérolas e fluxograma de revisão rápida
+### Questões adicionais (13–24) — integração diagnóstica
+
+**Q13.** No quarto DPO de colectomia, um paciente tem FC 122, dor crescente, ausência de febre e hemoglobina estável. A melhor interpretação é: A) ausência de febre exclui deiscência; B) possível vazamento/coleção ou outras complicações relevantes exigem avaliação imediata; C) apenas ileus fisiológico e alta; D) toda taquicardia prova TEP. **Gabarito B.** A nega apresentação afebril; C banaliza deterioração; D é conclusão etiológica sem investigação. **Revisão:** sinais persistentes e mudança do curso normal importam mais que marcador isolado.
+
+**Q14.** Sobre ISC, a afirmação correta é: A) superficial, profunda e órgão/espaço têm sempre a mesma conduta; B) toda vermelhidão é infecção bacteriana; C) a profundidade define investigação e possibilidade de drenagem/controle do foco; D) antibiótico substitui toda drenagem. **Gabarito C.** A elimina anatomia; B ignora inflamação/dermatite; D desconsidera coleção. **Revisão:** classificar por estrutura comprometida.
+
+**Q15.** Um abscesso intra-abdominal causa sepse após cirurgia. A SSC 2026 sugere: A) antibiótico isolado por 14 dias antes de considerar drenagem; B) controle do foco quando indicado o mais precocemente viável, idealmente até 6 horas da identificação de sepse/choque que precisa de controle; C) cirurgia em 6h para toda febre pós-operatória; D) dispensar antimicrobianos em choque. **Gabarito B.** A atrasa intervenção, C amplia indevidamente indicação e D retira terapia essencial. **Revisão:** a certeza de evidência é muito baixa e o relógio não substitui a indicação específica.
+
+**Q16.** Em paciente com SpO₂ 96% usando oxigênio, sonolência e FR 7 após opioide, a opção correta é: A) ventilação segura está comprovada pela saturação; B) investigar hipoventilação e oferecer suporte de via aérea/ventilação; C) dar alta; D) tratar apenas com antibiótico. **Gabarito B.** A ignora acúmulo de CO₂; C é insegura; D não corrige mecanismo. **Revisão:** oxigenação e ventilação são variáveis distintas.
+
+**Q17.** A paciente tem oligúria após retirada de sonda e distensão suprapúbica. A melhor próxima etapa é: A) furosemida de rotina; B) pesquisar retenção por avaliação vesical; C) diagnosticar necrose tubular sem exames; D) ignorar por uma semana. **Gabarito B.** A pode piorar descompensação; C confunde causa pré-renal/renal/pós-renal; D perde urgência. **Revisão:** obstrução urinária é diferencial imediato.
+
+**Q18.** D-dímero positivo cinco dias após grande cirurgia: A) confirma TEP; B) exclui TEP; C) tem especificidade baixa; necessidade de imagem depende de probabilidade e estabilidade; D) obriga trombólise. **Gabarito C.** A/B são inferências incompatíveis com o teste; D é terapêutica indevida. **Revisão:** cirurgia eleva D-dímero independentemente de TEP.
+
+**Q19.** Paciente dois anos após bypass Roux-en-Y apresenta dor intermitente importante e TC aparentemente normal. A hipótese de hérnia interna: A) está sempre excluída por TC; B) permanece relevante, exigindo revisão especializada se clínica forte; C) nunca ocorre após um ano; D) exige sempre colonoscopia antes de avaliar abdome. **Gabarito B.** A/C são absolutos falsos; D não pesquisa corretamente a complicação. **Revisão:** contexto anatômico e exames podem discordar.
+
+**Q20.** O conceito de MINS implica: A) todo aumento de troponina é IAM tipo 1; B) lesão miocárdica perioperatória pode ocorrer sem dor e requer interpretação clínica; C) sempre decorre de TEP; D) dispensa ECG e avaliação de causas. **Gabarito B.** A confunde lesão com etiologia; C reduz diferencial; D contraria abordagem clínica. **Revisão:** investigar isquemia, oferta/demanda e doença concorrente.
+
+**Q21.** Sobre ERAS após laparotomia de emergência: A) é alta compulsória em 24 horas; B) exige dieta mesmo em obstrução completa; C) combina mobilização, avaliação de dispositivos, tromboprofilaxia e alimentação quando segura conforme contexto; D) permite suspensão universal de medidas preventivas. **Gabarito C.** A/B/D são extrapolações inseguras; C reflete individualização. **Revisão:** ERAS é recuperação estruturada, não cronograma rígido.
+
+**Q22.** Um paciente desenvolve pescoço tenso, aumento de volume e estridor poucas horas após tireoidectomia. A prioridade é: A) TC eletiva e aguardar; B) avaliação e manejo imediato de ameaça à via aérea, acionando cirurgia/anestesia; C) analgésico isolado; D) curativo domiciliar. **Gabarito B.** A atrasa abordagem de compressão; C/D negligenciam risco de asfixia. **Revisão:** hematoma cervical é emergência.
+
+**Q23.** A fístula intestinal de alto débito deve ser tratada: A) apenas com antibiótico; B) corrigindo perdas/eletrólitos, avaliando controle do foco, anatomia, drenagem e nutrição; C) só com antidiarreico sem medir débito; D) sempre com reoperação imediata em qualquer paciente. **Gabarito B.** A/C ignoram fisiologia; D não individualiza estabilidade e controle do foco. **Revisão:** fístula é problema anatômico **e** hidroeletrolítico/nutricional.
+
+**Q24.** Idosa internada fica quieta, desatenta, sonolenta, com flutuação de comportamento após cirurgia. A atitude correta é: A) concluir “dorme por idade”; B) pesquisar delirium hipoativo, fatores precipitantes e intervir no ambiente e causas; C) dar antipsicótico sedativo sem avaliação; D) diagnosticar demência definitiva em uma hora. **Gabarito B.** A ignora mudança aguda; C pode piorar confusão; D confunde temporalidade. **Revisão:** delirium nem sempre é agitado.
+
+# PARTE V — REVISÃO, VISUAIS E FONTES
+
+## 31. Pérolas e fluxograma de revisão rápida
 
 **Primeiros minutos da deterioração:** ABCDE → perfusão e vias respiratórias → revisar operação/dispositivos/medicamentos → examinar ferida e drenagens → causas hemorrágicas, infecciosas, tromboembólicas, cardíacas, neurológicas e mecânicas → estabilização e decisão paralela de imagem/controle de foco → reavaliação seriada.
 
@@ -664,11 +626,19 @@ Mulher de 66 anos, 8º dia após laparotomia, tosse forte e separação súbita 
 - Mobilização precoce e analgesia poupadora de opioides podem reduzir complicações.
 - Disfonia e estridor após cirurgia cervical exigem avaliação da via aérea.
 
-## 35. Imagens candidatas (curadoria pendente)
+## 32. Imagens candidatas (curadoria pendente)
 
 Não inserir imagens sem licença e avaliação clínica. Selecionar pelo menos 10 candidatos reais ou fluxos originais para o Admin: (1) TC hemoperitônio pós-cirúrgico; (2) TC de extravasamento anastomótico e coleção; (3) radiografia de íleo difuso versus obstrução; (4) TC hérnia interna com swirl; (5) US de bexiga distendida pós-anestesia; (6) foto didática de infecção superficial de ferida de banco confiável, não identificável; (7) foto de evisceração de acesso autorizado, preferencialmente esquema no material geral; (8) Doppler venoso de TVP; (9) angio-TC de TEP; (10) ECG de fibrilação atrial pós-operatória; (11) imagem de hematoma cervical compressivo ou esquema; (12) TC de abscesso abdominal; (13) gráfico original de taquicardia e lactato no vazamento; (14) algoritmo original de destino conforme estabilidade. Exigir legenda, fonte primária, licença comercial, peso WebP e revisão antes da publicação.
 
-## 36. Referências rastreáveis
+# PARTE V — VISUAIS E FONTES PARA CURADORIA
+
+## 33. Matriz técnica de figuras médicas (nenhuma aprovada automaticamente)
+
+A comissão do Admin deve selecionar imagens reais de origem hospitalar/academia com autorização comercial e anonimização; esquemas podem ser desenhados originalmente pela LURIA quando a licença impedir reprodução. Candidatos: (1) TC com líquido livre/sangue após procedimento; (2) angio-TC com extravasamento ativo; (3) TC com coleção junto à anastomose; (4) reconstrução de bypass Y de Roux e espaços de hérnia; (5) TC swirl sign de hérnia interna; (6) radiografia/TC mostrando íleo versus ponto de transição; (7) foto de ISC superficial, paciente não identificável; (8) esquema de ISC profunda e órgão/espaço, do zero; (9) imagem de evisceração em contexto profissional, ou **diagrama** não sensacionalista; (10) US bexiga com retenção; (11) angio-TC TEP; (12) Doppler de TVP proximal; (13) ECG de FA pós-operatória; (14) TC de hematoma cervical; (15) comparação de drenos seroso/bilioso/fecaloide em ambiente anonimizado; (16) fluxograma original de choque com decisão de fonte de sangramento/infecção; (17) visual de delirium hipoativo versus hiperativo; (18) gráfico temporal fictício de FC, lactato e diurese, claramente rotulado como ilustração.
+
+Para cada candidato registrar: **imagem original/URL, detentor do direito, tipo de licença, prova de autorização para uso comercial, eventual atribuição, data, resolução, anonimização, pergunta didática, legenda em português, status de revisão médica, status Admin**. Não reciclar imagem de material privado do Drive. Ao aprovar, produzir WebP responsivo respeitando limite técnico LURIA, com atenção à legibilidade de valores e ao contraste de ECG/TC.
+
+## 34. Referências rastreáveis
 
 1. World Health Organization. **Global Guidelines for Prevention of Surgical Site Infection**, 2nd ed., 2018. https://www.who.int/publications-detail-redirect/9789241550475
 2. WHO/NCBI Bookshelf. **Evidence-based recommendations on prevention of SSI**, especialmente timing de profilaxia, normotermia e preparo. https://www.ncbi.nlm.nih.gov/books/NBK536431/
@@ -683,8 +653,41 @@ Não inserir imagens sem licença e avaliação clínica. Selecionar pelo menos 
 - Material comparativo do Drive é específico de gastrectomia/bariátrica e usa números de incidência variáveis, que não devem ser extrapolados para toda cirurgia; não houve reprodução.
 - Os critérios específicos de classificação de ISC por procedimento, tratamento de TEP após cirurgia de alto risco hemorrágico, drenagem endoscópica e decisões de reoperação exigem protocolos especializados. Este texto ensina princípios e sinais, não dá ordem cirúrgica individual.
 
-## 37. Auditoria final desta primeira versão — publicação bloqueada
+## 35. Referências verificadas para esta ampliação (2026)
+
+1. **ANVISA (Brasil).** Infecção de sítio cirúrgico: página de implementação e recursos; publicada 07/07/2025, atualizada 28/01/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico
+2. **ANVISA.** Modelo de Protocolo 2 — Prevenção de Infecção de Sítio Cirúrgico, arquivo disponibilizado 28/01/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico/protocolo-2-prevecao-de-isc-final.pdf
+3. **ANVISA.** Nota Técnica GVIMS/GGTES/DIRE3/ANVISA 11/2025 — implementação de protocolos de prevenção de infecção em serviços de saúde, com modelo ISC. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/avaliacao-nacional-das-praticas-de-seguranca-do-paciente/copy_of_avaliacao-nacional-das-praticas-de-seguranca-do-paciente
+4. **ANVISA.** PNPCIRAS 2026–2030: programa nacional de controle de IRAS. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude
+5. **CDC/NHSN.** Surgical Site Infection (SSI) Event, Chapter 9, janeiro de 2026. https://www.cdc.gov/nhsn/psc/ssi/index.html
+6. **Surviving Sepsis Campaign.** International Guidelines for Management of Sepsis and Septic Shock, publicação 23/03/2026. *Intensive Care Medicine* 52:863–936. DOI:10.1007/s00134-026-08361-1. https://link.springer.com/article/10.1007/s00134-026-08361-1
+7. **SCCM.** SSC 2026, quadro executivo de recomendações. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
+8. **ERAS Society.** Scott MJ et al. Consensus for Emergency Laparotomy, part 2, intra/postoperative, *World J Surg*. 2023;47:1850–1880. DOI:10.1007/s00268-023-07020-6. https://pmc.ncbi.nlm.nih.gov/articles/PMC10241558/
+9. **WHO.** Global Guidelines for the Prevention of Surgical Site Infection, 2ª edição 2018. https://www.who.int/publications-detail-redirect/9789241550475
+10. **ACC/AHA**. Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery (2024). https://professional.heart.org/en/guidelines-and-statements/guidelines/perioperative-cardiovascular-management-guideline
+11. **KDIGO.** Clinical Practice Guideline for Acute Kidney Injury (2012), conceitos diagnósticos; verificar atualizações vigentes antes de publicação. https://kdigo.org/guidelines/acute-kidney-injury/
+
+## 36. Auditoria final desta primeira versão — publicação bloqueada
 
 **Concluído:** inventário, 3 comparativos lidos, conteúdo original com classificação temporal, hemorragia, ISC, deiscência/fístulas, íleo/obstrução, TVP/TEP, rim, pulmão, delirium, ferida, 8 casos e 12 questões, fluxos e candidatos visuais.
 
 **Pendente:** chegar à profundidade de 60 mil caracteres úteis; revisar algoritmos e tratamentos com cirurgia/anestesia/CCIH; confirmar referências brasileiras específicas por complicação, selecionar/aprovar imagens, corrigir eventualmente nomenclaturas; consolidar com outras aulas sem duplicações, converter ao formato LURIA, testar no PWA/desktop e realizar revisão independente. **Não homologar, não publicar, não fazer merge/deploy.**
+
+## 37. Auditoria didática e científica — bloqueios que persistem
+
+| Critério | Estado |
+|---|---|
+| Rascunho-base | Preservado sem alteração |
+| Conteúdo novo | Casos 9–16, questões 13–24, capítulos 15–28 de aprofundamento |
+| Recomendação de controle do foco | **SSC 2026** incluída, com ressalva de evidência muito baixa |
+| Prevenção de ISC brasileira | Modelo **Anvisa 2026** incluído, sem extrapolar prescrição |
+| Complicações de anastomose | Comparação anatomia, drenagem, imagem e necessidade de intervenção |
+| Cobertura respiratória/renal/cardiovascular | Ampliada com diferenciais e segurança |
+| Benchmark Drive | Três PDFs correlatos abertos e relidos; nenhum geral equivalente |
+| Figuras médicas | 18 candidatos adicionais, **zero aprovações de uso ou Admin** |
+| Fármacos | Não transformar panorama educacional em prescrição; conferência CCIH/cirurgia/anestesia |
+| Revisão especialista | Pendente cirurgia geral, CCIH, anestesiologia e intensivismo |
+| Editor/rendimento | Ainda precisa análise quantitativa de conteúdo didático único e revisão linha a linha |
+| QA | Sem HTML nativo, PWA, testes por usuário, publicação, merge ou deploy |
+
+**Teste editorial final pendente:** checar autossuficiência de cada questão com leitura do capítulo, converter esquemas em componentes visuais, revisar toda a farmacologia segundo bulário LURIA validado e protocolos locais, identificar imagens realmente licenciadas e registrar aprovação no Admin. Mesmo ultrapassando meta de caracteres brutos, **não atestar apostila premium sem esses gates**.
