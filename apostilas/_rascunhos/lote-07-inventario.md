@@ -29,11 +29,11 @@
 | 133 | Meningites e encefalites | Rascunho `_rascunhos/lote-07-aula-133-meningites-encefalites.md` criado e verificado (24.615 caracteres, 4 casos, 6 questões); OMS 2025/2026 e MS; benchmark correlato de TB/neurosífilis |
 | 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
 | 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
-| 136 | Hemorragia digestiva | Articular com HDA e HDB das aulas 127/132, evitando terceira apostila redundante |
-| 137 | Doença do refluxo e hérnia hiatal | Diretório específico não identificado |
-| 138 | Crises convulsivas e estado de mal epiléptico | Diretório específico não identificado |
-| 139 | Endometriose | Diretório específico não identificado; checar cobertura nas apostilas de infertilidade e ginecologia |
-| 140 | Saúde da criança na APS | Diretório específico não identificado; integrar AIDPI/puericultura e evitar sobreposição |
+| 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (19.276 caracteres; 4 casos, 6 questões); não reproduz 127/132, ainda NÃO autossuficiente |
+| 137 | Doença do refluxo e hérnia hiatal | Rascunho `_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md` (28.968 caracteres; 4 casos, 6 questões), benchmark Drive DRGE lido, ACG/Lyon 2.0/SAGES |
+| 138 | Crises convulsivas e estado de mal epiléptico | Rascunho `_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md` (24.230 caracteres; 4 casos, 6 questões), MS PCDT epilepsia 05/2026, NICE/CHOP; benchmark Drive apenas correlato |
+| 139 | Endometriose | Rascunho `_rascunhos/lote-07-aula-139-endometriose.md` (33.568 caracteres após correção de referência; 5 casos, 8 questões), NICE/ESHRE/FEBRASGO 2026; HTMLs de infertilidade e DIP preservados |
+| 140 | Saúde da criança na APS | Rascunho `_rascunhos/lote-07-aula-140-saude-crianca-aps.md` (35.382 caracteres; 4 casos, 8 questões), PNAISC/Caderneta/MS, dois benchmarks de puericultura lidos |
 
 ## Próximo ciclo de produção
 1. **121:** expansão clínica substancial concluída em rascunho (6 casos, 8 questões, referências brasileiras e internacionais); PENDENTE: validação brasileira completa de doses por população, benchmark equivalente, imagens e teste de autossuficiência.
@@ -78,11 +78,11 @@
 
 | Aula | Rascunho/complemento | Caracteres BRUTOS | Casos novos no arquivo | Questões comentadas novas |
 |---|---|---:|---:|---:|
-| 131 Hepatites virais | \`lote-07-aula-131-hepatites-virais.md\` | 26.368 | 4 | 6 |
-| 132 Hemorragia digestiva baixa | \`lote-07-aula-132-hemorragia-digestiva-baixa.md\` | 23.046 | 4 | 6 |
-| 133 Meningites e encefalites | \`lote-07-aula-133-meningites-encefalites.md\` | 24.615 | 4 | 6 |
-| 134 SOP | \`lote-07-aula-134-sop-auditoria-questoes.md\` | 11.862 (complemento) | 0 (5 já existentes no HTML) | 8 |
-| 135 Imunizações/PNI | \`lote-07-aula-135-imunizacoes-pni-2026.md\` | 26.287 | 4 | 6 |
+| 131 Hepatites virais | `lote-07-aula-131-hepatites-virais.md` | 26.368 | 4 | 6 |
+| 132 Hemorragia digestiva baixa | `lote-07-aula-132-hemorragia-digestiva-baixa.md` | 23.046 | 4 | 6 |
+| 133 Meningites e encefalites | `lote-07-aula-133-meningites-encefalites.md` | 24.615 | 4 | 6 |
+| 134 SOP | `lote-07-aula-134-sop-auditoria-questoes.md` | 11.862 (complemento) | 0 (5 já existentes no HTML) | 8 |
+| 135 Imunizações/PNI | `lote-07-aula-135-imunizacoes-pni-2026.md` | 26.287 | 4 | 6 |
 
 **Total: 112.178 caracteres brutos** em cinco arquivos novos. Não equivale a material médico validado ou à contagem de caracteres didáticos úteis. Os rascunhos 131/132/133/135 ainda estão abaixo da meta editorial premium de aproximadamente 60 mil caracteres didáticos úteis por aula.
 
@@ -95,3 +95,31 @@
 **Nenhum HTML publicado foi substituído; não houve deploy ou alteração do catálogo.** O complemento da aula 134 está separado da apostila SOMP existente.
 
 **Próximo sublote 136–140:** 136 Hemorragia digestiva (construir revisão integradora, evitando repetir 127/132); 137 DRGE e hérnia hiatal; 138 crises convulsivas e estado de mal epiléptico; 139 endometriose (inventário profundo em GO, preservar o que existir); 140 saúde da criança na APS.
+
+
+## 14/10/2026 — quarto sublote: aulas 136–140
+
+**Arquivos no GitHub verificados por leitura individual após a gravação:**
+
+| Aula | Nome em \`apostilas/_rascunhos\` | Caracteres brutos | Casos novos | Questões novas | Observações |
+|---|---|---:|---:|---:|---|
+| 136 Hemorragia digestiva | \`lote-07-aula-136-hemorragia-digestiva-integrada.md\` | 19.276 | 4 | 6 | Rascunho integrador, com 127+132 como livros específicos; precisa autossuficiência |
+| 137 DRGE e hérnia hiatal | \`lote-07-aula-137-drge-hernia-hiatal.md\` | 28.968 | 4 | 6 | Drive “Doença do Refluxo Gastroesofágico” lido; ACG/Lyon/SAGES |
+| 138 Convulsões/EME | \`lote-07-aula-138-crises-convulsivas-estado-mal.md\` | 24.230 | 4 | 6 | MS PCDT 2026, NICE/CHOP; benchmark Drive só de causa tóxica, não equivalente |
+| 139 Endometriose | \`lote-07-aula-139-endometriose.md\` | 33.568 | 5 | 8 | ESHRE/NICE; FEBRASGO nº4/2026 publicada maio em Femina; preservar HTMLs de infertilidade e DIP |
+| 140 Saúde da criança APS | \`lote-07-aula-140-saude-crianca-aps.md\` | 35.382 | 4 | 8 | PNAISC/Caderneta; dois resumos de puericultura lidos; vacinação específica na 135 |
+
+**Somatório verificado após correção bibliográfica do arquivo 139:** **141.424 caracteres BRUTOS**, **21 casos** e **34 questões comentadas** nos cinco arquivos novos. Não equivale a 141 mil caracteres didáticos líquidos e nenhum arquivo novo deste sublote alcançou 60 mil didáticos úteis. Todos foram salvos como **rascunhos**.
+
+**Etapa zero:** equivalência real foi maior na aula 137 (resumo específico de refluxo) e 140 (crescimento e obesidade pediátricos). Aulas 136, 138 e 139 tinham apenas comparativos parciais no Drive; não presumir equivalência, nem autoria Estratégia MED. Os arquivos anteriores da LURIA foram inspecionados, e nenhum HTML preexistente foi editado ou sobrescrito.
+
+**Atualização médica:** referências atuais de SAGES 2024 para hérnias hiatais, PCDT epilepsia 05/2026, FEBRASGO endometriose/Femina maio/2026 e documentos MS de puericultura foram consideradas. Na checagem posterior, **a URL PDF antiga da FEBRASGO retornou 404**, sendo substituída no arquivo 139 pela **página editorial da revista Femina com DOI verificado**.
+
+**Próximo ciclo: fechar os gaps de QUALIDADE do Lote 7, não produzir “lote 7 concluído” fictício.**
+1. Priorizar as aulas mais curtas/estrategicamente importantes (136 integração, 132 HDB, 138 estado de mal, 133 meningite, 135 PNI, 139 endometriose), expandindo conceitos deficientes e doses nacionais, sem enchimento.
+2. Auditar **todas as vinte aulas 121–140** com a matriz conceito→seção→caso→questão e contagem de texto **útil**; complementos das aulas 124/129/134 NÃO foram integrados em HTML.
+3. Ler fontes nacionais completas e protocolos por droga/dose/faixa etária/fluxos locais, com revisão médica independente.
+4. Localizar/licenciar imagens clínicas reais úteis e colocar candidatas no Admin, somente com proveniência e licença comercial verificadas; as listas em Markdown **não** são candidatos importáveis nem imagens aprovadas.
+5. Validar HTML, desktop, PWA, integridade de links, acessibilidade e não duplicação; apenas então submeter para publicação.
+
+**Situação do lote após esta rodada:** todos os 20 tópicos 121–140 têm ao menos rascunho ou complemento registrado, mas **zero certificações finais concedidas**, nenhuma integração no site/deploy feita nesta rodada. O cronograma de 180 temas segue como origem; a eventual expansão a 225 depende de tabela de correspondência própria.
