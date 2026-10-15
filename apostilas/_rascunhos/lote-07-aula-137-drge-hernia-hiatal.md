@@ -437,3 +437,177 @@ Grandes estudos observacionais relacionaram uso de IBP a pneumonia, doença rena
 9. AGA. *Personalized Approach to Evaluation and Management of GERD: Expert Review*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9838103/
 
 **Nota de proveniência:** o Drive ensinava DRGE em esquema curto, com DeMeester e IBP. As explicações de limiares atuais, amostragem de Barrett e segurança farmacológica acima derivam das diretrizes indicadas, não do PDF. Não houve reprodução de texto/imagem do benchmark.
+
+
+## 24. Cirurgia antirrefluxo e do hiato: construir a indicação antes do procedimento
+
+### 24.1. O que significa indicação cirúrgica robusta?
+A cirurgia antirrefluxo trata um mecanismo mecânico e funcional. Por isso, o candidato ideal não é “quem toma IBP há muitos anos”, mas pessoa cuja **DRGE foi objetivamente demonstrada**, cujos sintomas/complicações justificam intervenção e cuja motilidade/anatomia permitem reconstrução segura. Benefícios potenciais incluem menor regurgitação, cicatrização de esofagite em determinados contextos, redução da necessidade de supressão ácida e melhora da qualidade de vida. Riscos incluem disfagia, distensão gasosa, dificuldade de eructar/vomitar, recidiva e reoperação.
+
+**Exemplo clínico A:** pessoa de 37 anos com exposição ácida esofágica de 11% em pHmetria sem IBP, regurgitação frequente apesar de tratamento corretamente utilizado, hérnia deslizante relevante e motilidade preservada. A hipótese fisiológica é clara: há refluxo objetivado e falha da barreira mecânica, com um sintoma que não depende apenas de acidez. Conversa cirúrgica é razoável.
+
+**Exemplo clínico B:** pessoa de 37 anos com “refluxo” referido, EDA normal, exposição ácida de 2% em todos os dias de monitorização e ausência de correlação com sintomas. Pode sofrer muito, mas **não há alvo de refluxo patológico demonstrado** para cirurgia. Fundoplicatura nesse contexto pode adicionar disfagia sem resolver dor funcional. A indicação deve ser reavaliada.
+
+### 24.2. O preparo cirúrgico responde cinco perguntas
+1. **Qual é a prova de refluxo?** EDA com evidência conclusiva ou monitorização adequada; avaliar se o teste foi realizado off/on IBP de maneira correta.
+2. **Qual é a anatomia do hiato?** Comprimento axial da hérnia, deslocamento de fundo, posição da junção, sinais de esôfago curto, compressão e possível rotação. EDA, esofagograma e TC têm papéis complementares.
+3. **A motilidade tolerará nova resistência de saída?** Manometria de alta resolução para excluir acalasia e ausência de contratilidade relevante, com interpretação conforme sintomas.
+4. **Há outra doença que muda prioridade?** Obesidade grave, gastroparesia, esclerose sistêmica, Barrett com displasia, neoplasia, cirurgia abdominal prévia, condições respiratórias e risco de aspiração.
+5. **Qual benefício interessa mais ao paciente?** Regurgitação, queimação, redução de medicação, qualidade de vida, melhora de anemia compressiva, prevenção de complicação mecânica. Definir resultado esperado e limitações.
+
+Uma pequena hérnia deslizante observada na EDA não torna dispensável demonstrar refluxo em quem tem sintomas atípicos. Já uma hérnia paraesofágica com obstrução ou sintomas compressivos importantes pode exigir reparo por **indicação mecânica**, ainda que pHmetria seja normal. São **dois eixos decisórios** distintos: refluxo e anatomia.
+
+### 24.3. O que faz uma fundoplicatura?
+O cirurgião mobiliza junção esofagogástrica, restaura segmento intra-abdominal adequado, trata defeito hiatal quando presente e cria uma envoltura com o fundo gástrico, total ou parcial, para aumentar resistência à passagem retrógrada do conteúdo. A reconstrução não pretende bloquear toda deglutição ou toda eructação. O grau de resistência depende de anatomia, comprimento, tensão e técnica.
+
+**Nissen (360°):** fundo envolve completamente esôfago distal. Pode oferecer bom controle ácido e regurgitação, mas em alguns pacientes aumenta risco de disfagia ou sintomas de gás. **Toupet posterior (em torno de 270°)** e outras modalidades parciais deixam parte da circunferência livre e podem reduzir disfagia em grupos selecionados. Escolha não deve obedecer à fórmula “todo paciente com peristalse diminuída recebe exatamente X”, pois severidade, reserva contrátil, experiência da equipe e prioridade do paciente variam.
+
+### 24.4. O que a SAGES realmente recomenda?
+A diretriz SAGES de **2021** para DRGE concluiu que, quando uma pessoa com DRGE comprovada é candidata a cirurgia, **fundoplicatura parcial ou completa** podem ser opções mediante decisão compartilhada. A fundoplicatura total pode interessar mais a quem prioriza controle de refluxo; a parcial pode interessar a quem prioriza minimizar disfagia.
+
+A diretriz SAGES de **2024 para hérnias hiatais II–IV** sugere **fundoplicatura concomitante ao reparo**, porém como recomendação **condicional baseada em baixa certeza**; não é equivalência a “todo caso deve receber Nissen completo”. Sobre **tela**, as evidências foram insuficientes para recomendar uso rotineiro **a favor ou contra**. Equipe pode considerar qualidade das cruras, tamanho do defeito, tensão da sutura, histórico de recidiva e tipo de material, explicando benefícios incertos e complicações potenciais. <Nota editorial: não transcrever porcentagens de desfecho se não houver correspondência de população/desenho no artigo original.>
+
+### 24.5. Reparar o hiato não equivale a simplesmente “fechar um buraco”
+A dissecção das cruras e redução de conteúdo herniado são acompanhadas de mobilização do estômago e, em hérnias grandes, do saco herniário. O cirurgião deve avaliar perfusão de órgãos, extensão intra-abdominal funcional de esôfago, tensão do fechamento crural e possibilidade de lesão pleural/vagal. Fechamento excessivamente apertado pode contribuir para disfagia; demasiado frouxo, para recidiva. Hérnias recorrentes são tecnicamente distintas das primárias por fibrose/aderências, possível lesão de estruturas e alteração de comprimento.
+
+**Princípios, não receitas de intraoperatório:** decidir necessidade de prótese, tipo de ponto, gastropexia, abordagem laparoscópica/robótica/aberta e eventual alongamento esofágico depende de anatomia e expertise. Não fazer de uma técnica específica recomendação universal sem dados adequados.
+
+### 24.6. Hérnia paraesofágica: a indicação pode ser respiratória ou hematológica
+Hérnias II–IV não são somente diagnósticos de pirose. Uma hérnia grande pode dificultar acomodação do estômago, causar plenitude pós-prandial, dispneia, microaspiração, saciedade precoce e **lesões de Cameron** — erosões/ulcerações lineares em regiões de compressão diafragmática que podem contribuir para anemia ferropriva. Essas lesões precisam ser reconhecidas na EDA, mas uma pessoa idosa com anemia ainda necessita investigação de outras fontes de perda conforme risco.
+
+**Exemplo:** paciente de 76 anos com hérnia volumosa, anemia ferropriva e cansaço ao caminhar diz não ter azia. Chamá-la de hérnia “assintomática” por ausência de piroses pode negar avaliação de sintomas mecânicos/hematológicos. O raciocínio correto envolve examinar se dispneia/anemia estão plausivelmente relacionadas à hérnia e discutir reparo conforme risco clínico e objetivos.
+
+### 24.7. A hérnia paraesofágica assintomática é dilema verdadeiro
+Para pessoa realmente assintomática, o risco cirúrgico imediato e o risco futuro de obstrução/volvo precisam ser discutidos. A SAGES 2024 não encontrou evidência suficiente para uma regra universal de operar versus observar todos. A decisão compartilhada requer explicar incerteza, reconhecer sintomas sutis e considerar anatomia, idade, aptidão cirúrgica e acesso a atendimento de emergência. A presença de hérnia grande em imagem **não obriga uma operação emergente** se não existe sofrimento de órgão nem quadro obstrutivo.
+
+### 24.8. Volvo gástrico agudo e complicações mecânicas
+Rotação do estômago sobre seu eixo (organoaxial ou mesenteroaxial) pode gerar obstrução, isquemia e perfuração em hérnias volumosas. Dor epigástrica intensa com retching improdutivo e dificuldade de passagem de sonda é apresentação clássica, mas nem todos têm tríade completa. Hipotensão, lactato elevado, leucocitose, peritonite, pneumatoses ou defeito de perfusão na TC sustentam maior risco de isquemia, sem excluir gravidade na ausência deles.
+
+**Sequência:** estabilizar via aérea/ventilação e circulação, suspender via oral, tentar descompressão sob equipe apropriada se indicada, fazer imagem rápida se estabilidade permitir e chamar cirurgia imediatamente. Não atrasar intervenção urgente apenas para obter pHmetria, manometria ou EDA eletiva. Em paciente instável com suspeita de necrose, decisões dependem de exploração e viabilidade tecidual.
+
+## 25. O pós-operatório é capítulo obrigatório, não um rodapé de cirurgia
+
+### 25.1. O que esperar logo após fundoplicatura?
+Disfagia transitória pode ocorrer por edema e adaptação da nova junção, em especial com alimentos sólidos. Planos de alimentação progressiva variam por equipe/procedimento; o aluno deve entender necessidade de hidratação adequada, mastigação lenta e observação de intolerância. **Incapacidade de engolir líquidos, dor torácica progressiva, febre, taquicardia, dispneia ou sinais de sepse não são sintomas “normais de adaptação”** — exigem avaliação de obstrução, perfuração, vazamento ou outra complicação.
+
+### 25.2. Síndrome de gás aprisionado
+A fundoplicatura pode reduzir capacidade de arrotar/vomitar, causar distensão pós-prandial, desconforto e flatulência. Estratégias variam de adaptação alimentar a avaliação técnica se persistente. É erro declarar que persistência de desconforto gasoso prova retorno do refluxo: pode refletir **eficácia mecânica excessiva ou alteração na eliminação de gás**, além de hábitos e fenômenos funcionais.
+
+### 25.3. Disfagia persistente após cirurgia
+Diferenciais: wrap excessivamente apertado/torcido, reparo crural estreito, edema persistente, hérnia recorrente, escorregamento da fundoplicatura, distúrbio motor preexistente não reconhecido, neoplasia ou outras causas. Avaliação pode incluir EDA, esofagograma, manometria e outros estudos conforme suspeita. Dilatação endoscópica pode ter papel em casos selecionados; reoperação depende de mecanismo demonstrado, gravidade e risco. Não empregar repetidamente dilatações sem reavaliar anatomia e diagnóstico.
+
+### 25.4. Recorrência de sintomas não significa necessariamente falha anatômica
+Pirose após fundoplicatura pode ser refluxo recorrente, hipersensibilidade, esvaziamento gástrico alterado, distúrbio motor, medicação ou outra causa. Uma pHmetria off IBP alterada pode apoiar recidiva patológica; imagem pode revelar hérnia recorrente, mas achado pequeno sem sintomas nem refluxo patológico não exige revisão cirúrgica automática. **É possível ter recidiva anatômica sem recidiva clínica e sintomas recorrentes sem recidiva anatômica.**
+
+### 25.5. Hérnia recidivada e decisão de reoperação
+Reoperação do hiato costuma ter aderências, alteração de anatomia e maior complexidade. Perguntar se foi falha crural, migração do wrap, wrap desfeito, esôfago curto, obesidade persistente ou doença motora. A SAGES 2024 considera que **bypass em Y de Roux versus refazer fundoplicatura** pode ser adequado em subgrupos específicos de recidiva, mas não oferece evidência para recomendar conversão universal. A escolha de reconstrução deve considerar IMC, gastroparesia, múltiplas reoperações, dismotilidade e objetivos.
+
+### 25.6. Seguimento após tratamento
+Estabelecer como monitorar **sintoma-alvo**, capacidade de alimentação/deglutição, refluxo documentado e qualidade de vida. Em quem tinha Barrett, manter vigilância conforme anatomia/histologia independente do alívio de piroses. Em pessoa com anemia por lesões relacionadas à hérnia, acompanhar Hb/ferritina e excluir fonte alternativa se queda persistir. Em quem teve cirurgia de grande hérnia, retorno de saciedade precoce, dispneia, vômitos ou anemia pode sinalizar recidiva/complicação.
+
+## 26. Casos clínicos adicionais de raciocínio profundo
+
+### Caso 5 — tosse crônica e erro de atribuição
+**Apresentação:** mulher de 53 anos, ex-tabagista, tosse seca por 10 meses, rouquidão matinal e sem piroses típicas. Já usou dois IBPs por 14 meses sem melhora consistente. EDA mostra hérnia axial de 1 cm e esofagite ausente; radiografia torácica foi normal, sem investigação respiratória estruturada.  
+**Questão clínica:** a hérnia de 1 cm prova “refluxo silencioso” responsável pela tosse?
+**Hipótese:** tosse crônica multifatorial, refluxo ainda não demonstrado; avaliar asma, síndrome de tosse de vias aéreas superiores, doença medicamentosa, hábitos, tabagismo anterior, hipersensibilidade laríngea e outros diferenciais.  
+**Raciocínio passo a passo:** (1) tosse isolada tem baixa especificidade para refluxo; (2) hérnia pequena pode ser incidental; (3) ausência de resposta ao IBP reduz plausibilidade de sintoma exclusivamente mediado por ácido, sem excluir totalmente refluxo; (4) investigação respiratória/otorrinolaringológica dirigida vem antes de procedimento antirrefluxo; (5) pH-impedância off IBP pode ser útil se a associação com refluxo for pergunta clínica relevante.  
+**Exames:** revisão de medicamentos (IECA, por exemplo), espirometria/avaliação pulmonar e vias aéreas superiores, e teste de refluxo se indicado.  
+**Conduta:** não encaminhar diretamente para fundoplicatura; suspender tratamento sem indicação comprovada com plano seguro, investigar causas concorrentes.  
+**Por que importa:** encontrar uma hérnia não autoriza diagnóstico causal para todo sintoma extraesofágico.
+
+### Caso 6 — Los Angeles B e exame objetivo
+**Apresentação:** homem de 46 anos com pirose frequente e regurgitação, EDA mostra erosão de 9 mm que não conecta pregas, classificada LA B. Recebeu IBP e melhorou, mas pergunta se ainda precisa de pHmetria para “provar refluxo”.  
+**Hipótese:** DRGE erosiva objetivamente demonstrada conforme Lyon 2.0, em contexto apropriado.  
+**Raciocínio:** LA B tem maior especificidade para DRGE que LA A; Lyon 2.0 a considera evidência conclusiva, embora outras diretrizes/épocas tenham usado limiares endoscópicos mais estritos. pHmetria pode ser útil se surgirem perguntas terapêuticas específicas, mas não deve ser exigida por automatismo a quem já tem prova convincente.  
+**Exames:** histologia se suspeita de lesão alternativa, EDA adicional apenas se indicação específica; não testar sem pergunta.  
+**Conduta:** otimizar IBP, avaliar sinais de alarme/recidiva, ajustar manutenção conforme gravidade e prioridades.  
+**Por que importa:** aprende a classificar erosões e compreender divergência contextual entre consensos.
+
+### Caso 7 — Barrett e risco de subtratamento
+**Apresentação:** homem de 61 anos com DRGE antiga e obesidade central, EDA de qualidade mostra Barrett Prague C0M2, biópsias adequadas confirmam metaplasia intestinal **sem displasia**. Sintomas controlados com IBP.  
+**Hipótese:** Barrett curto não displásico.  
+**Raciocínio:** segmento <3 cm tem intervalo de vigilância prolongado na ACG 2022, na ausência de outros fatores que modifiquem plano; fundoplicatura não substitui vigilância. Repetir endoscopia anualmente sem indicação aumenta procedimentos sem benefício demonstrado.  
+**Exames:** verificar qualidade do mapeamento e histologia; vigilância aproximadamente **a cada cinco anos** segundo a diretriz ACG 2022, individualizada em sistema de saúde.  
+**Conduta:** manutenção de supressão ácida quando apropriada, estilo de vida, sinais de alarme e plano documentado de vigilância.  
+**Por que importa:** separa alívio sintomático, risco oncológico e periodicidade de exames.
+
+### Caso 8 — cirurgia e exame de motilidade
+**Apresentação:** mulher de 49 anos com refluxo comprovado e regurgitação persistente, deseja fundoplicatura. Relata disfagia a sólidos e líquidos há anos. Manometria revela padrão de ausência de contratilidade, com achado de junção que necessita confirmar ausência de acalasia.  
+**Hipóteses:** DRGE coexistente com distúrbio motor esofágico importante, acalasia ou alteração relacionada a doença sistêmica.  
+**Raciocínio:** fundoplicatura de alta resistência pode piorar incapacidade de deglutição. Antes de operar, distinguir diagnóstico motor e determinar objetivo do tratamento. Uma pHmetria positiva não apaga a outra doença.  
+**Exames:** revisão por motilidade especializada, EDA/esofagograma temporizado e testes adicionais quando apropriados.  
+**Conduta:** discussão multidisciplinar, escolha de abordagem individual após esclarecer dismotilidade e risco; evitar cirurgia rotineira sem conclusão motora.  
+**Por que importa:** demonstra que duas doenças podem coexistir e exigir prioridades diferentes.
+
+## 27. Oito questões adicionais para consolidar as lacunas avançadas
+
+### Questão 7 — suspeita de refluxo sem evidência objetiva
+Pessoa com rouquidão crônica isolada e EDA normal não melhora com IBP. Qual é a abordagem mais adequada?
+A. Fundoplicatura sem testes porque o sintoma é laríngeo. B. Afirmar que toda tosse é causada por refluxo não ácido. C. Investigar outros mecanismos e considerar teste objetivo off IBP se pergunta clínica justificar. D. Manter IBP em dose crescente indefinidamente.  
+**Gabarito C.** Sintoma extraesofágico isolado é pouco específico; diretriz ACG recomenda investigar outras causas. **A/B** atribuem causalidade sem evidência; **D** escalada sem benefício demonstrado. **Mini-revisão:** associação não é diagnóstico.
+
+### Questão 8 — decisão sobre tela
+Paciente com hérnia hiatal tipo III é candidato a correção eletiva. O que diz SAGES 2024 sobre tela?
+A. Tela obrigatória em toda cirurgia. B. Nunca pode ser utilizada. C. Tela só é indicada se há DRGE sem hérnia. D. Não foi possível recomendação universal a favor ou contra; avaliar anatomia e risco individual.  
+**Gabarito D.** Estudos foram inconclusivos. **A/B/C** generalizam sem suporte. **Mini-revisão:** não inventar consenso onde evidência é insuficiente.
+
+### Questão 9 — Barrett não displásico
+Homem com Barrett de 4 cm com metaplasia intestinal confirmada e sem displasia em exame de qualidade. ACG 2022 sugere, em geral, EDA de vigilância:
+A. Diariamente. B. Em aproximadamente três anos, individualizando. C. Nunca mais. D. A cada três meses por tempo indefinido.  
+**Gabarito B.** Segmento ≥3 cm sem displasia recebe vigilância trienal pela ACG 2022. **A/D** excessivos; **C** ignora risco. **Mini-revisão:** comprimento modifica intervalo.
+
+### Questão 10 — pHmetria de quatro dias
+AET sem IBP em quatro dias: 7,6%; 7,8%; 3,1%; 2,5%. Qual interpretação favorecida por Lyon 2.0?
+A. Evidência diagnóstica de DRGE, pois pelo menos dois dias têm AET >6%. B. Teste fisiológico obrigatório. C. Não há interpretação possível de teste prolongado. D. Pirose funcional comprovada em todos os casos.  
+**Gabarito A.** Dois dias acima do limiar sustentam exposição patológica, no contexto técnico apropriado. **B/D** negam critérios; **C** desconsidera monitorização prolongada. **Mini-revisão:** dias discordantes exigem interpretar padrão, não só média.
+
+### Questão 11 — sintoma pós-operatório
+Após fundoplicatura, pessoa apresenta disfagia intensa a líquidos e incapacidade de ingerir água com piora da dor. Qual atitude?
+A. Aguardar meses por ser adaptação universal. B. Orientar apenas comer mais rápido. C. Avaliar prontamente obstrução ou complicação pós-operatória por equipe adequada. D. Dobrar IBP sem exame.  
+**Gabarito C.** Incapacidade de ingerir líquidos e dor progressiva são sinais de alarme. **A/B/D** arriscam desidratação e atraso. **Mini-revisão:** disfagia leve transitória difere de obstrução grave.
+
+### Questão 12 — controle do sintoma e refluxo objetivo
+Paciente com DRGE comprovada apresenta piroses persistentes sob IBP e pH-impedância on IBP sem refluxo significativo correlacionado. Melhor conclusão:
+A. IBP não funciona e cirurgia é inevitável. B. Refluxo não está demonstrado como mecanismo atual do sintoma, pesquisar causas funcionais/motoras coexistentes. C. Exame on IBP é sempre inválido. D. Diagnosticar adenocarcinoma esofágico.  
+**Gabarito B.** A doença objetiva pode existir, mas o sintoma persistente pode ter outra causa. **A/C** generalizam; **D** carece de dados. **Mini-revisão:** controlar doença e compreender sintomas são objetivos diferentes.
+
+### Questão 13 — hérnia paraesofágica sem pirose
+Idosa com grande hérnia paraesofágica, plenitude, dispneia e anemia é considerada “assintomática” por negar queimação. Qual resposta?
+A. Rever sintomas mecânicos/anemia, mapear anatomia e avaliar reparo conforme risco. B. Não investigar porque não há azia. C. Toda anemia é causada pela hérnia sem exclusões. D. Indicar apenas antiácido para aliviar dispneia.  
+**Gabarito A.** Sintomas extra-refluxo podem ser relevantes; anemia tem diferenciais. **B** ignora manifestações; **C** fecha causa sem investigação; **D** não resolve mecanismo. **Mini-revisão:** hérnia hiatal e DRGE não são sinônimos.
+
+### Questão 14 — critérios motores
+Manometria identifica **mais de 70% de deglutições ineficazes**. Qual interpretação básica segundo Chicago 4.0?
+A. Critério definitivo de esofagite infecciosa. B. Achado que sempre indica miotomia. C. Refluxo ácido provado de forma isolada. D. Padrão manométrico conclusivo de motilidade esofágica ineficaz, a correlacionar com sintomas e avaliação cirúrgica.  
+**Gabarito D.** Critério técnico de IEM; não define causa nem cirurgia isoladamente. **A/B/C** confundem funções dos exames. **Mini-revisão:** motilidade e refluxo são eixos diferentes.
+
+## 28. Auditoria pedagógica intermediária — matriz conceitos → evidência interna
+
+| Domínio que aluno deve dominar | Trechos desta apostila | Verificação por aplicação |
+|---|---|---|
+| Fisiologia/barreira antirrefluxo | Seções 2, 17 | Casos 1, 2 e 5; Q1, Q7 |
+| DRGE versus sintoma funcional | Seções 1, 5, 18 e 22 | Casos 2, 5 e 8; Q3, Q12 |
+| Anatomia das hérnias I–IV | Seções 4, 8 e 24 | Casos 3, 4 e 9; Q4, Q8, Q13 |
+| Diagnóstico pHmetria/impedância | Seções 5, 18 e 22 | Laudos A–C; Q2, Q3, Q10 |
+| EDA, Los Angeles e disfagia | Seções 5, 19 e 20 | Caso 6; Q5, Q9 |
+| Manometria e risco cirúrgico | Seções 5, 19 e 24 | Caso 8; Q5, Q14 |
+| Farmacoterapia e desprescrição | Seções 7, 21 | Casos 1, 2 e 5; Q1, Q12 |
+| Barrett e vigilância | Seções 7, 20 e 25 | Caso 7; Q9 |
+| Fundoplicatura/reparo hiatal | Seções 8, 24, 25 | Casos 3, 4, 8; Q6, Q8, Q11 |
+| Emergência volvo/estrangulamento | Seções 8, 24 | Caso 4; exigirá questão específica adicional |
+| Seguimento e recidiva pós-op | Seção 25 | Q11; ainda requer casos de recidiva |
+
+**Nota de auditoria:** nesta edição existem quatro casos originais + quatro casos adicionais = oito casos. As seis questões originais + oito adicionais = catorze questões autorais. A matriz mostra cobertura, mas **não certifica autossuficiência**: falta auditoria de doses e decisão cirúrgica presencial especializada, além de imagens clínicas reais. A meta nominal de ≥60.000 caracteres didáticos úteis continua sujeita a contagem descontando metadados, questões repetidas, referências e checklist. Não inflar texto apenas para cumprir métrica.
+
+## 29. Revisão editorial final desta rodada (ainda em rascunho)
+- [x] Acrescentadas explicações de mecanismos, três laudos interpretados, pH sem fio por 96 h, esofagite Los Angeles, EDA/hérnia/Barrett, Chicago 4.0, critérios de cirurgia e pós-operatório.
+- [x] Diferenciadas DRGE objetivamente comprovada, hipersensibilidade, pirose funcional e sintomas extraesofágicos.
+- [x] Conferidas evidências SAGES sobre fundoplicatura e falta de recomendação universal para tela em hérnias II–IV.
+- [x] Ampliadas recomendações de IBP com AGA/ACG, sem transformar estudos observacionais em causalidade.
+- [x] Adicionados quatro casos e oito questões para testar situações complexas.
+- [ ] Falta benchmark Drive de mesmo nível de profundidade, pois os dois PDFs acessíveis são resumos de DRGE e dispepsia.
+- [ ] Falta protocolo brasileiro auditado, com posologias/apresentações de medicamentos/contraindicações por população.
+- [ ] Falta revisão médica externa, imagens verdadeiras com licença comercial, prova de autossuficiência e integração visual.
+- [ ] Nenhuma edição de HTML nem deploy realizado.
+**Parecer editorial:** rascunho agora substancial e mais próximo de livro-texto, porém **ainda não certificado**.
