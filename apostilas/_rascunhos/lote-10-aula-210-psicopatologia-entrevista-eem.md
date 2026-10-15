@@ -192,3 +192,166 @@ Uma sessão curta não estabelece duração de episódio depressivo/maníaco. Re
 ### 9.3 Conteúdo e segurança
 
 O conteúdo inclui desesperança, culpa, autodepreciação, desejos de morte, ideação de autoagressão, preocupações com dano a terceiros, ideias persecutórias com medo intenso e experiências de comando percebidas. Perguntar diretamente de modo cuidadoso e **sem julgamento** não é equivalente a “colocar uma ideia na cabeça”. Os detalhes de planejamento/possibilidade de agir e acesso a ajuda devem ser avaliados em ambiente clínico com profissional preparado e plano de proteção, sem reduzir decisão a escore isolado. A aula 211 aprofunda segurança e prevenção de suicídio.
+
+
+## 10. Sensopercepção: experiência interna e contato com a realidade
+
+### 10.1 Sensação, percepção, ilusão e alucinação
+
+**Sensação** é processamento de estímulos sensoriais; **percepção** organiza e interpreta informações em objetos/eventos significativos. Uma experiência perceptiva incomum pode aparecer em doenças médicas, substâncias, estados de sono, privação sensorial e transtornos psiquiátricos. Antes de rotular “alucinação psicótica”, investigar circunstâncias e qualidade do fenômeno.
+
+**Ilusão:** interpretação alterada de **estímulo externo real**. Exemplo: em ambiente escuro, pessoa interpreta casaco pendurado como alguém parado. A ilusão pode ocorrer com medo, fadiga, baixa iluminação e delirium. **Alucinação:** percepção com qualidade sensorial **sem estímulo externo correspondente**, como ouvir voz conversando sem fonte identificável. Podem ser auditivas, visuais, táteis, olfativas, gustativas ou somáticas; a modalidade, conteúdo, sofrimento, convicção e curso ajudam na avaliação.
+
+**Experiências hipnagógicas/hipnopômpicas:** imagens ou sons ao adormecer/despertar podem ocorrer sem transtorno psicótico. **Pseudoalucinação** é termo usado em algumas tradições descritivas para experiência perceptiva vivida como interna e com algum reconhecimento; seu uso varia e não deve ser apresentado como categoria diagnóstica universal. A linguagem clínica mais segura é descrever **localização subjetiva, nitidez, controle e insight**, sem confiar apenas no rótulo.
+
+### 10.2 Como entrevistar fenômenos perceptivos
+
+Perguntas abertas: “Já notou ouvir ou ver algo que outras pessoas ao redor não percebem?”; “Isso parece vir de fora ou da sua mente?”; “Acontece quando está acordado, adormecendo ou despertando?”; “Interfere no sono ou na capacidade de fazer suas atividades?”. Se há voz percebida, avaliar conteúdo, sofrimento, relação com experiências traumáticas e risco associado de forma respeitosa.
+
+**Não confirmar crença delirante como fato:** se a pessoa relata vozes acusatórias ou perseguidores invisíveis, reconhecer seu sofrimento e explicar necessidade de investigação, sem endossar etiologia não demonstrada. O compromisso clínico é manter confiança e segurança.
+
+### 10.3 Modalidade orienta diferenciais, mas não determina diagnóstico
+
+Alucinações **visuais** e desorientação/atenção flutuante impõem forte avaliação de delirium ou intoxicação, mas alucinações visuais não são exclusivas de etiologia orgânica. Alucinações auditivas podem ocorrer em diversos transtornos e contextos; não são patognomônicas de esquizofrenia. Sensações táteis de insetos podem surgir em intoxicação/abstinência, neuropatia ou outras condições. Alucinação olfativa breve/estereotipada pode levantar hipóteses neurológicas, como crises focais, conforme história.
+
+**Síndrome confusional aguda sempre tem prioridade clínica**: alteração de atenção aguda/flutuante com infecção, desidratação, hipoxemia, medicação, abstinência ou distúrbio metabólico deve ser investigada como problema médico. Atribuir a “primeiro surto psicótico” sem checar sinais vitais, glicemia, medicação e atenção pode ser grave.
+
+### 10.4 Despersonalização e desrealização
+
+**Despersonalização:** sensação de estranhamento/desconexão da própria experiência, corpo ou emoções. **Desrealização:** sensação de que ambiente parece estranho, artificial ou distante. Em muitas apresentações o **teste de realidade está preservado** (a pessoa reconhece que é uma sensação, não que o ambiente literalmente mudou). Podem ocorrer em ansiedade, trauma, privação de sono e transtornos dissociativos; não são prova isolada de psicose.
+
+## 11. Insight, julgamento e capacidade decisória
+
+### 11.1 Insight não é “concordar com o médico”
+
+**Insight** refere-se ao modo como a pessoa reconhece alterações, consequências e necessidade de ajuda. Ele pode ser parcial e específico: alguém reconhece sofrimento por insônia, mas não entende relação com episódio maniforme; outra pessoa reconhece depressão, mas recusa determinado tratamento por efeitos adversos. **Discordância sobre tratamento não prova ausência de insight.** Registrar dimensões e exemplos, não apenas “insight ausente” sem explicação.
+
+### 11.2 Julgamento é capacidade de ponderar situações reais
+
+**Julgamento** envolve avaliar consequências e tomar decisões coerentes com objetivos e informações. Questões hipotéticas podem ajudar a explorar raciocínio, mas respostas a provérbios ou dilemas simplificados não equivalem a avaliação de capacidade para decisões complexas. É útil perguntar como a pessoa lidou com medicação, pagamentos, risco de violência, transporte ou necessidade de ajuda, ajustando à história e autonomia.
+
+### 11.3 Capacidade de decisão é específica
+
+A pessoa pode ter capacidade para uma decisão e não para outra, e capacidade pode mudar em delirium, intoxicação ou crise. A avaliação clínica usual verifica **compreender** informação relevante, **apreciar** a própria situação e consequências, **raciocinar** sobre opções e **expressar escolha** estável o suficiente para a decisão. Não confundir diagnóstico psiquiátrico com incapacidade automática.
+
+**Exemplo:** uma pessoa com esquizofrenia estável pode entender plenamente cirurgia e consentir, enquanto outra sem diagnóstico psiquiátrico pode estar delirante por sepse e temporariamente incapaz de compreender riscos. Restrições de liberdade, consentimento por representante e internação involuntária dependem de lei brasileira, justificativa clínica e documentação específica, tratadas com equipe e cautela.
+
+## 12. Exame cognitivo básico: como interpretar e registrar
+
+### 12.1 Atenção antes de testar memória
+
+Verificar audição, visão, idioma, escolaridade, dor, fadiga e medicamentos. Em paciente **desatento**, um teste formal de memória pode ser falsamente ruim e é necessário avaliar causas agudas. A aparência de boa fluência social também pode mascarar déficit cognitivo leve, de modo que a avaliação precisa ser contextual.
+
+### 12.2 Registro, evocação e pistas
+
+Pode-se propor breve lista de palavras não relacionadas, verificar repetição e testar evocação após poucos minutos. Um erro de registro é diferente de retenção ruim; pistas semânticas podem ajudar a distinguir dificuldade de recuperação versus aquisição, embora não sejam diagnóstico definitivo. Não informar “memória preservada” por reconhecer familiares, pois isso testa apenas parte da função.
+
+### 12.3 Linguagem, abstração e funções executivas
+
+Nomear objetos, compreender ordens, repetir frase, escrever sentença ou explicar semelhanças entre itens avalia domínios distintos. Avaliar flexibilidade mental, planejamento e sequenciamento por tarefas pertinentes, com atenção a escolaridade e experiência. **Uma pessoa com baixa escolarização formal não deve ser rotulada cognitivamente incapaz por não executar aritmética escolar complexa**.
+
+MoCA, MEEM e outros instrumentos podem ser úteis em populações apropriadas, mas exigem versão validada, treinamento/condições, correção por escolaridade e interpretação clínica. Pontuação isolada não define demência, delirium ou capacidade civil. Em idosos com alteração aguda, aplicar raciocínio de delirium antes de atribuir piora a doença neurodegenerativa.
+
+## 13. Condições clínicas, neurológicas e medicamentosas que imitam doença mental primária
+
+### 13.1 Regra de segurança: queixas psíquicas podem ser manifestações orgânicas
+
+Hipoglicemia, hipóxia, disfunção tireoidiana, alterações eletrolíticas, encefalite, infecção sistêmica, intoxicação, abstinência, crises epilépticas, traumatismo craniano, doenças autoimunes/neurológicas, uso ou retirada de fármacos e complicações gestacionais/puerperais podem manifestar agitação, confusão, humor alterado, ansiedade ou percepção incomum. O alvo da avaliação não é solicitar todos os exames para todas as pessoas, mas reconhecer **pistas de etiologia orgânica**.
+
+**Início abrupto**, alteração de consciência/atenção, febre, convulsão, déficit focal, cefaleia nova intensa, sinais autonômicos, hipoxemia, alteração hemodinâmica, história de substâncias/medicamentos e faixa etária atípica exigem investigação clínica mais ampla. Em emergência, sinais vitais, glicemia capilar e avaliação médica geral podem ter prioridade a perguntas psicodinâmicas longas.
+
+### 13.2 Delirium versus demência versus psicose primária
+
+| Domínio | Delirium | Demência/transtorno neurocognitivo crônico | Psicose primária (exemplo sindrômico) |
+| --- | --- | --- | --- |
+| Início típico | Agudo/subagudo em horas ou dias | Insidioso, meses/anos em muitas etiologias | Variável, geralmente dias–meses |
+| Flutuação em horas | Comum | Menos marcada, exceto condições específicas | Pode variar, mas sem padrão típico de atenção delirante |
+| Atenção | Frequentemente prejudicada | Pode ser preservada em fases iniciais | Pode estar suficientemente preservada apesar de pensamento alterado |
+| Consciência | Pode oscilar | Geralmente estável fora de fase avançada | Frequentemente vigil em quadros sem intoxicação/complicações |
+| Psicose/alucinação | Pode ocorrer, inclusive visual | Pode ocorrer conforme doença | Pode constituir núcleo sindrômico |
+| Prioridade | Buscar e tratar precipitantes clínicos | Avaliação cognitiva/funcional longitudinal | Investigar causas médicas e sintomas psiquiátricos |
+
+**Não são mutuamente exclusivos**: pessoa com demência pode desenvolver delirium; pessoa com psicose crônica pode ter sepse e ficar delirante. O EEM deve ser repetido após estabilização quando sintomas são flutuantes.
+
+### 13.3 Intoxicação, abstinência e efeito adverso
+
+Álcool/sedativos podem prejudicar atenção e vigília; estimulantes podem produzir agitação, insônia, ansiedade e ideias persecutórias; abstinência de álcool/sedativos pode evoluir com tremor, instabilidade autonômica, confusão e convulsões. Acatisia por antipsicótico é confundida com “piora da agitação” se o profissional não pergunta **quando começou em relação à dose**. Síndromes com febre, rigidez e alteração autonômica em usuários de psicotrópicos exigem urgência clínica.
+
+A pessoa não deve ser punida ou humilhada por uso de substância; perguntas objetivas e não punitivas produzem informações melhores. O manejo específico consta da aula 216 e emergências na 215.
+
+### 13.4 Episódios de humor versus reações situacionais
+
+Insônia, tristeza e irritabilidade não estabelecem um episódio depressivo maior ou mania por si só. Investigar **duração, mudança em relação ao basal, energia, necessidade subjetiva de sono, funcionamento, comportamento de risco, sintomas psicóticos e causas médicas**. Para episódios depressivos/maniformes, classificar a síndrome e depois aplicar critérios da CID/DSM apropriados em contexto completo, tarefa aprofundada nas aulas 211–212.
+
+## 14. Segurança clínica e avaliação de autoagressão
+
+### 14.1 O objetivo é formular necessidades e ações, não prever com precisão o futuro
+
+NICE NG225 orienta **não utilizar escalas ou estratos globais “baixo/médio/alto risco” para prever suicídio ou decidir alta/tratamento**. A avaliação deve compreender sofrimento atual, intenção, possibilidade de agir, histórico de autoagressão, contexto, impulsividade/intoxicação, acesso à rede de apoio, capacidade de seguir plano e necessidades de segurança imediatas. **Nenhum escore isolado determina se a pessoa está segura para voltar para casa.**
+
+O médico deve perguntar diretamente sobre **pensamentos de morte, autoagressão e possibilidade de agir**, em linguagem simples e sem julgamentos. Escuta cuidadosa, ambiente privativo e seguimento são essenciais. Não transformar entrevista em interrogatório repetitivo que só busque “sim/não”; explorar fatores de sofrimento, motivos para viver, proteção e barreiras de acesso ao cuidado.
+
+### 14.2 Primeiras medidas quando há perigo iminente
+
+Em pessoa com risco atual significativo de autoagressão ou incapacidade de se manter segura, providenciar **ambiente protegido, observação proporcional, avaliação imediata pela equipe de saúde mental e suporte clínico**, com articulação de rede e responsáveis conforme legislação e consentimento. Evitar deixar pessoa desacompanhada quando a avaliação indica necessidade de supervisão imediata. Medidas restritivas só podem ocorrer dentro de fundamentos clínicos, éticos e legais e quando estritamente necessárias, com reavaliação e documentação.
+
+Avaliar também risco de violência **contra** a pessoa, negligência, violência doméstica ou vulnerabilidade. Ideação de agressão a terceiros deve ser explorada com segurança e profissionalismo, sem confundir pensamento intrusivo indesejado com intenção de agir.
+
+### 14.3 Plano de segurança e continuidade
+
+A avaliação deve desembocar em **ações concretas**: contatos de apoio, acesso oportuno à equipe, identificação de sinais de piora, controle de fatores precipitantes tratáveis, ambiente seguro e seguimento efetivo. A rede de referência e contrarreferência importa tanto quanto a classificação diagnóstica.
+
+**No SUS:** atenção básica acolhe e coordena cuidado; CAPS articula projeto terapêutico singular; UPA/pronto-socorro/SAMU 192 e leitos de hospital geral podem ser necessários em crises, conforme avaliação. O Ministério da Saúde explicita estrutura da Rede de Atenção Psicossocial (RAPS) e papel dos equipamentos em resposta a crises. Encaminhar “ao CAPS” sem garantir acesso e continuidade quando há risco significativo pode falhar em segurança.
+
+## 15. Ética, sigilo, prontuário e comunicação com equipe
+
+### 15.1 Sigilo e entrevista de família
+
+Explicar confidencialidade e limites legais; buscar consentimento para falar com acompanhantes quando possível. Em adolescentes, respeitar desenvolvimento, autonomia progressiva e regras locais de proteção. Solicitar autorização para perguntar sobre violência, uso de substâncias e práticas sexuais quando pertinente, sem banalizar privacidade.
+
+**Documentar fatos clínicos, não apelidos:** “ameaçou abandonar entrevista e se levantou” é mais útil e defensável do que “difícil/manipulador”. Distinguir citações literais relevantes de interpretações do examinador. Se a pessoa não permite responder, escrever “não foi possível explorar neste encontro” e motivo; **não** preencher automaticamente “nega ideação suicida”.
+
+### 15.2 Avaliação longitudinal
+
+Todo EEM depende de momento, estado fisiológico e contexto. Uma pessoa intoxicada pode melhorar cognição após observação; outra em episódio de humor pode mudar após tratamento. Registrar sinais específicos que permitem **comparar evolução** entre turnos/equipes. Um adjetivo vago “melhor” não substitui “mais alerta, consegue manter conversa e reproduz data/local, sem agitação motora importante”.
+
+### 15.3 Comunicação na transição do cuidado
+
+Uma passagem de plantão segura responde: **quem é a pessoa e o que mudou?**; **quais sinais vitais e riscos clínicos?**; **como estava atenção/orientação antes e agora?**; **há risco imediato de autoagressão/incapacidade de autocuidado?**; **quais medicamentos/substâncias e possíveis efeitos?**; **o que foi combinado e quem assume seguimento?**. Uma transição que rotula “psiquiátrico estável” sem dados pode ocultar delirium ou risco não avaliado.
+
+## 16. Modelo completo de EEM para registro clínico
+
+**Exemplo fictício A — adulto em consulta programada:** “Pessoa adulta, vestuário apropriado, higiene adequada; coopera e mantém contato visual intermitente. Alerta e orientada em pessoa, tempo, local e situação. Atenção sustentada durante entrevista. Psicomotricidade sem alterações grosseiras. Fala espontânea, volume habitual, velocidade discretamente lenta. Refere humor triste há semanas. Afeto restrito, congruente e reativo a temas positivos. Pensamento com curso organizado, sem desagregação observável; conteúdo de autodepreciação, sem crenças delirantes exploradas. Nega experiências alucinatórias durante avaliação. Relata dificuldades de concentração; memória formal não testada. Reconhece impacto dos sintomas no trabalho, procura tratamento. Perguntas de segurança exploradas em registro próprio.”
+
+**Exemplo fictício B — idoso com quadro agudo em hospital:** “Pessoa de 79 anos, internada por quadro infeccioso, anteriormente capaz de conversar com coerência segundo acompanhante. Agora sonolenta alternando com inquietação. Desorientação temporal, atenção flutuante, não conclui meses em sequência reversa. Fala pouco organizada em períodos de piora. Relata ver pessoas no quarto sem correspondente externo, com oscilação ao longo do dia. EEM sugere síndrome confusional aguda; avaliação de delirium e causas clínicas em andamento, com sinais vitais, medicações e investigação pertinentes. Capacidade decisória para procedimento complexo não confiavelmente demonstrada no momento.” **Comentário:** não chamar de “esquizofrenia de início tardio” sem investigar delirium.
+
+**Exemplo fictício C — fala acelerada e sono reduzido:** “Pessoa de 30 anos, alerta, orientada, inquieta e com gesticulação ampla. Fala rápida, volumosa e difícil de interromper. Refere pouca necessidade de sono nos últimos cinco dias, com energia aumentada; pensamento acelerado e frequentes mudanças temáticas, mas consegue retornar em alguns momentos. Humor referido elevado; afeto expansivo e por vezes irritável. O conteúdo inclui projetos grandiosos. História, substâncias/medicações, repercussão e risco ainda em avaliação antes de firmar diagnóstico de episódio do humor.” **Comentário:** EEM descreve fenômeno; diagnóstico longitudinal e diferencial virão da história.
+
+## 17. Armadilhas que fazem diferença no internato
+
+1. **Alucinação ≠ esquizofrenia**, pois pode ser fenômeno do sono, substância, doença médica ou outro transtorno.
+2. **Humor é referido; afeto é observado** — relacioná-los é útil, confundi-los empobrece o exame.
+3. **Fala rápida não prova taquipsiquismo sem analisar associações**; taquipsiquismo não prova mania sem contexto.
+4. **Circunstancialidade retorna à pergunta; tangencialidade não necessariamente.**
+5. **Delirium tem mudança aguda e atenção prejudicada/flutuante**, mesmo que coexistam sintomas psicóticos.
+6. **Demência e delirium coexistem**; não aceitar piora aguda como progressão natural sem investigar.
+7. **DAT e Coombs não são temas desta aula** — um lembrete da importância de manter precisão e não misturar módulos.
+8. **Insight não significa obediência** ao plano médico.
+9. **Capacidade não é tudo ou nada**, varia por decisão e momento.
+10. **Escalas de risco não predizem suicídio de modo confiável para alta/tratamento**; avaliação clínica e segurança são indispensáveis.
+11. **Relato de ameaça pode ser verdadeiro**; não chamar perseguição de delírio automaticamente.
+12. **Exame não feito não é exame normal** — documentar limites.
+
+## 18. Matrizes de diagnóstico diferencial por sintomas
+
+| Sintoma dominante | Perguntas que mudam hipótese | Situações de prioridade clínica |
+| --- | --- | --- |
+| Agitação recente | Dor? febre? medicação nova? substâncias? orientação/atenção? | Delirium, intoxicação, abstinência, hipoglicemia |
+| Tristeza/desânimo | Duração? prejuízo? luto? sono/energia? pensamentos de morte? | Segurança, doença clínica, episódio depressivo |
+| Fala acelerada | Sono reduzido com energia? comportamento de risco? estimulantes? | Mania, intoxicação, hipertireoidismo |
+| Vozes percebidas | Fonte externa? vigília? convicção? atenção? sofrimento? | Psicose, delirium, intoxicação, sintomas do sono |
+| Perda de memória | Início agudo? atenção? prejuízo funcional? depressão? | Delirium, doença neurocognitiva, fármacos |
+| Evitação e hipervigilância | Houve ameaça real? trauma? sintomas autonômicos? | Trauma, ansiedade, intoxicação, condições clínicas |
+| Retraimento/mutismo | Catatonia? afasia? depressão grave? nível de consciência? | Emergência neurológica, catatonia, delirium |
+| Pensamento intrusivo | Reconhecido como indesejado? tenta neutralizar? | Obsessão; não confundir com delírio de convicção fixa |
+
