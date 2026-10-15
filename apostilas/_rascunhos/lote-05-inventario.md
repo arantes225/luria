@@ -15,7 +15,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 101 | Clínica | Distúrbios ácido-base | Sem pasta homônima identificada |
 | 102 | Cirurgia | Obstrução intestinal | Sem pasta homônima identificada |
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
-| 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~81,5 mil caracteres brutos; ~70,9 mil de texto estimado após remoção simples de cabeçalhos/tabelas); `assistencia-ao-parto/` possui cobertura parcial e foi preservada; pendem revisão médica, validação de doses e imagens |
+| 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~85,7 mil caracteres brutos; ~74,7 mil de texto estimado após remoção simples de cabeçalhos/tabelas); `assistencia-ao-parto/` possui cobertura parcial e foi preservada; pendem revisão médica, validação de doses e imagens |
 | 105 | Preventiva | Desenhos de estudos epidemiológicos | Sem pasta homônima identificada |
 | 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
@@ -56,7 +56,7 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 
 **Etapa zero concluída para 104:** revisão integral do texto extraído do PDF correlato \`04 - HEMORRAGIA POS PARTO.pdf\`, localizado e aberto no Drive; autoria institucional não confirmada, portanto jamais atribuir ao Estratégia MED. Benchmark comparado com capítulos e trechos de HPP da apostila LURIA de assistência ao parto, com checagem científica independentemente na OMS/FIGO/ICM 2025, no guia de implementação OMS 2026 e nas publicações/fluxograma FEBRASGO.
 
-**Evolução do manuscrito:** 19.310 → 54.662 → **81.511 caracteres Markdown** (contagem de arquivo inteiro); extração aproximada da linguagem corrente sem títulos e linhas de tabela ~70.935 caracteres. Isto é **triagem métrica**, não cálculo auditado de 60 mil caracteres úteis nem prova de qualidade. Há 21 capítulos numerados de desenvolvimento, dez casos com identificadores explícitos (quatro iniciais e seis avançados), seis questões formativas abreviadas e oito novas questões de cinco alternativas comentadas individualmente, recursos didáticos e roteiro de doze imagens candidatas ainda NÃO criadas/avaliadas.
+**Evolução do manuscrito:** 19.310 → 54.662 → 81.511 → **85.742 caracteres Markdown** (contagem de arquivo inteiro); extração aproximada da linguagem corrente sem títulos e linhas de tabela ~74.668 caracteres. Isto é **triagem métrica**, não cálculo auditado de 60 mil caracteres úteis nem prova de qualidade. Há 21 capítulos numerados de desenvolvimento, dez casos com identificadores explícitos (quatro iniciais e seis avançados), 14 questões de cinco alternativas com comentários individuais (as seis questões iniciais foram reconstruídas e oito questões avançadas foram acrescentadas), recursos didáticos e roteiro de doze imagens candidatas ainda NÃO criadas/avaliadas.
 
 **Conteúdo diferencial acrescentado e baseado em fontes confirmadas:**
 1. Prevenção por uterotônico e condutas não recomendadas na profilaxia segundo OMS 2025.
@@ -75,3 +75,5 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 - OMS, guia de implementação HPP 2026 — https://www.who.int/publications/i/item/9789240116115
 - FEBRASGO, fluxo nacional — https://www.febrasgo.org.br/fluxograma/procedimento-para-tratar-hemorragia-pos-parto/
 - FEBRASGO, Femina 2025, protocolos sobre HPP e manejo hemostático (textos oficiais indexados, links editoriais com alterações de hospedagem).
+
+**Revisão de questões no mesmo checkpoint:** substituídas as seis questões originais abreviadas por seis questões completas, com explicação de A–E, referência didática ao conteúdo e mini-revisão; agora são **14 questões** (seis fundamentais e oito avançadas). Contagem de arquivo bruto atual: **85.742 caracteres**, estimativa textual simples sem cabeçalhos e tabelas ~**74.668**. Meta métrica superada em estimativa, **mas não atesta texto didático útil sem repetição**, atualização de todas as doses, autossuficiência nem aprovação humana. Nenhum HTML de produção alterado.
