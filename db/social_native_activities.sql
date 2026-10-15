@@ -32,7 +32,7 @@ declare uid uuid:=auth.uid(); r uuid:=(p_payload->>'room_id')::uuid; a public.st
  admin boolean; ids uuid[]; n integer; users jsonb; all_done boolean; result jsonb; cs public.clinical_case_sessions; list_id uuid; item jsonb; opts jsonb; item_index integer:=0;
 begin
  if uid is null or not private.social_room_member(r) then raise exception 'Participação na sala obrigatória'; end if;
- if octet_length(p_payload::text)>16000 then raise exception 'Requisição muito grande'; end if;
+ if octet_length(p_payload::text)>(case when p_action='create_question_list' then 262144 else 16000 end) then raise exception 'Requisição muito grande'; end if;
  admin:=private.social_room_admin(r);
  if p_action='create_question_list' then
   if not public.has_feature('questions') then raise exception 'Acesso a questões necessário'; end if;
