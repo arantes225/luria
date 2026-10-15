@@ -15,7 +15,7 @@
 
 **Google Drive, efetivamente pesquisado e lido:** buscas por “bipolar”, “transtorno bipolar” e “psiquiatria” não localizaram apostila integral. Foi lido \`Tireoide Tireotoxicose e hipertireoidismo (1).pdf\` (~2,6 mil caracteres), que documenta alterações da tireoide potencialmente confundidas com sintomas de hiperativação, bem como \`06 - CEFALEIAS TRIGEMINO-AUTONOMICAS.pdf\` (~4,4 mil, com menção a lítio em indicação neurológica distinta), e \`02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf\` (~20 mil caracteres, disfunção renal para contexto de segurança do lítio). Esses documentos **não são benchmark do tratamento bipolar**, apenas fontes de diferenciais clínicos/farmacológicos. Não afirmar equivalência nem origem Estratégia MED. **Etapa zero integral incompleta**.
 
-**Referências científicas principais, independentes dos PDFs do Drive:** página institucional do **PCDT Transtorno Afetivo Bipolar do Tipo I** do Ministério da Saúde (portal atualizado em 2025; a data da página **não prova revisão integral do anexo**); NICE **CG185** com emendas e alertas de valproato; CANMAT/ISBD *2023 Update* publicado em 2024; OMS mhGAP 2023. A correspondência de medicamentos com RENAME, regras de aquisição e produtos autorizados no Brasil em 2026 precisa de checagem antes de publicação prescritiva.
+**Referências científicas principais, independentes dos PDFs do Drive:** **PCDT Transtorno Afetivo Bipolar do Tipo I** do Ministério da Saúde: a página do portal informa atualização em 21/01/2025, mas o **PDF efetivamente aberto e conferido é a Portaria SAS/MS nº 315, de 30/03/2016**, com busca de literatura até setembro/2015. Trata-se de **referência nacional histórica cujo conteúdo não pode ser considerado revisão científica de 2025**; NICE **CG185** com emendas e alertas de valproato; CANMAT/ISBD *2023 Update* publicado em 2024; OMS mhGAP 2023. A correspondência de medicamentos com RENAME, regras de aquisição e produtos autorizados no Brasil em 2026 precisa de checagem antes de publicação prescritiva.
 
 ## 1. Objetivos e mapa de raciocínio
 
@@ -659,3 +659,68 @@ E. Não investigar ideação de autoagressão.
 
 **Gabarito B.** A ignora estados mistos; C ignora polaridade; D/E retiram medidas de segurança. **Revisão:** coexistência de ativação e sofrimento depressivo exige avaliação especializada.
 
+
+
+## 19. Referências verificadas e hierarquia normativa
+
+1. **BRASIL. Ministério da Saúde.** Portaria nº 315, de **30 de março de 2016**, e anexo: *Protocolo Clínico e Diretrizes Terapêuticas do Transtorno Afetivo Bipolar do Tipo I*. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/pcdt/t/transtorno-afetivo-bipolar-do-tipo-i/@@download/file>. **O PDF de 36 páginas foi aberto, e a capa explicita 2016.** A página de navegação foi atualizada em **21/01/2025**, mas **isso não indica atualização clínica do anexo**. O texto refere busca da literatura até setembro de 2015, usa CID-10 e se limita sobretudo a bipolar I. Não extrapolar seu rol de medicamentos/custos para afirmar acesso no SUS em 2026 sem verificar atos posteriores.
+2. **NICE.** *Bipolar disorder: assessment and management*, **CG185**, publicada em 2014 com emendas posteriores de 2023 e referências regulatórias atualizadas no texto online em 2025. <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fundamenta diferença entre mania, depressão bipolar, manejo de valproato, manutenção com lítio, exames/litemia, alertas de AINE e lentidão da titulação de lamotrigina.
+3. **Yatham LN, et al.** *The CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence*. *Focus*. 2024. DOI **10.1176/appi.focus.20230009**. Texto integral em: <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Base para hierarquia de fármacos por **mania, depressão bipolar I/II e manutenção**, com precauções sobre antidepressivo em monoterapia no tipo I.
+4. **Organização Mundial da Saúde.** *mhGAP guideline for mental, neurological and substance use disorders*, 3ª edição, 2023. <https://www.who.int/publications/i/item/9789240084278>. Referência para cuidado não especializado, psicoeducação e rede.
+5. **NICE.** *Depression in adults: treatment and management* **NG222**, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Utilizada apenas para diagnóstico diferencial e necessidade de investigar hipomania/mania, não como algoritmo de fármaco para bipolar I.
+6. **NICE.** *Self-harm: assessment, management and preventing recurrence* **NG225**, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte de avaliação psicossocial e não uso de escalas como preditores/decisão única de alta.
+7. **Ministério da Saúde — RAPS.** Rede de Atenção Psicossocial. <https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps>. Estrutura de coordenação APS/CAPS/urgência.
+8. **DailyMed/NLM e bulas Anvisa**: conferir rótulos de lítio, lamotrigina, valproato e antipsicóticos por produto/formulação antes da versão prescritiva. **Esta etapa nacional de bulas, apresentações e custos está pendente**, não é referência integral de doses já auditadas.
+
+**Ponto clínico de incompatibilidade temporal:** a publicação brasileira disponível em 2016 contém escolhas e contexto de financiamento de seu período. As listas CANMAT/ISBD 2023–24 e NICE com emendas posteriores incluem agentes que podem não constar daquele PCDT; a apostila não os apresenta como **automaticamente incorporados ao SUS**. A necessidade de verificar atos normativos posteriores, especialmente para valproato em pessoas com potencial reprodutivo, é explícita.
+
+## 20. Planejamento visual: usar imagens que ensinem e não estigmatizem
+
+Não usar “fotografia de pessoa com transtorno bipolar” como se aparência fizesse diagnóstico. Dar preferência a gráficos autorais e cenários fictícios, com legibilidade, acessibilidade e sem imagens sensacionalistas de crises.
+
+| Candidato | Seção | Legenda/objetivo |
+| --- | --- | --- |
+| Linha do tempo de episódio depressivo, mania e eutimia | 2/3 | Diferenciar polaridade **ao longo do tempo** |
+| Diagrama mania x hipomania com duração/grave prejuízo | 2 | Duração ≠ gravidade; psicose/hospitalização |
+| Quadro Bipolar I x II e ciclotimia | 2 | Reconstrução dos episódios |
+| Gráfico original de **ciclagem rápida** | 2 | Quatro ou mais episódios/ano, não oscilações por hora |
+| Fluxograma de suspeita de mania e diferenciais | 5/6/8 | Tireotoxicose, substâncias e delirium antes de concluir |
+| Esquema do sono/circadiano e recaída | 4/10 | Como redução do sono vira gatilho/sinal |
+| Tabela visual “fármaco × polo” | 8–13 | Lamotrigina não é antimaníaco agudo; opções por fase |
+| Esquema original de **litemia no tempo** | 11 | Coleta, mudança de dose e monitorização |
+| Infográfico de interações com lítio | 11 | AINE, diuréticos, IECA/BRAs, desidratação |
+| Quadro de titulação de lamotrigina *sem valores não aprovados* | 12 | Titular lentamente, risco de rash e interação com valproato |
+| Fluxo de gravidez planejada e risco de recaída | 14 | Valproato, risco fetal e plano pré-concepcional |
+| Esquema de prevenção e sinais prodrômicos | 10/16 | Suporte, sono, adesão e acesso a equipe |
+
+**Status de mídia:** 12 itens conceituais, **zero imagens aprovadas ou inseridas**. Buscar candidatos de origem confiável com licenças de uso comercial, e desenhos originais quando apropriados; checar legendas e aprovação administrativa antes de integrar à página.
+
+## 21. Revisão de alto rendimento
+
+**Diagnóstico:** mais importante que observar euforia na consulta é **provar episódio com mudança de energia, duração, prejuízo, história e exclusões**. Mania define bipolar I; hipomania + depressão maior sem mania compõem bipolar II.
+
+**Fases:** mania trata-se com **agentes antimaníacos**, depressão bipolar exige medicamentos com evidência para **polo depressivo bipolar**, e manutenção depende da polaridade anterior, resposta e efeitos. **Lamotrigina não serve para mania aguda. ISRS isolado não é recomendação de primeira linha para bipolar I depressivo.**
+
+**Lítio:** função renal e tireoide/cálcio, nível sérico, interações e doença aguda. Nova **ataxia/confusão/vômitos** em usuário de lítio exige avaliação urgente.
+
+**Valproato:** eficácia antimaníaca não cancela riscos reprodutivos, hepáticos, hematológicos e metabólicos; decisão especializada e consentimento.
+
+**Segurança:** avaliar suicidabilidade, psicose, perda de autocuidado, intoxicação, sono e contexto, sem usar categoria de risco como prova de alta ou internação automática.
+
+## 22. Matriz de competências, qualidade e pendências
+
+| Competência | Capítulos | Casos | Questões |
+| --- | --- | --- | --- |
+| Diferenciar mania/hipomania/tipo I/II | 2, 5 | 1–3 | 1–5 |
+| Reconhecer causa médica e substâncias | 6 | 3–4 | 4, 13 |
+| Tratar mania e escolher medicamento por polo | 8–9 | 1, 2, 7–8 | 6–7, 14 |
+| Prevenir recaída e manejar manutenção | 10 | 2, 9 | 8–9 |
+| Ajustar lítio e reconhecer toxicidade | 11 | 5 | 8–10 |
+| Evitar rash grave na lamotrigina | 12 | 7 | 6, 11 |
+| Risco reprodutivo e gestação | 12/14 | 6 | 12 |
+| Efeitos metabólicos | 13–14 | 9 | 8 |
+| Avaliar segurança e crises | 7/15/16 | 1, 5, 8 | 7, 14 |
+
+**Parecer editorial provisório:** apostila autoral extensa com **9 casos e 14 questões**, cobertura de fundamentos, diagnóstico, diferenciais, tratamento agudo/longitudinal e situações especiais. **Pendente** de revisão científica por psiquiatra, conferência de versão/impacto do PCDT 2016 no SUS 2026, verificação de doses e registros Anvisa, auditoria de estilo, contagem de caracteres **úteis** (não brutos), imagens clínicas adequadas e aprovação no Admin.
+
+**Status técnico:** branch editorial isolada; nenhuma página publicada, HTML, catálogo, banco, Supabase ou \`main\` modificados; não houve deploy. O próximo tema oficial é **213 — Transtornos ansiosos, TOC e transtornos relacionados ao trauma**.
