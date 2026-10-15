@@ -95,31 +95,127 @@ Após cesariana com hemorragia progressiva, a paciente apresenta palidez, extrem
 ### Caso D — Sangramento na terceira semana
 Puérpera procura atendimento por sangramento que voltou a aumentar após período de melhora, com febre e dor uterina. **Hipóteses:** endometrite e possível material retido, entre outras. **Raciocínio:** não tratar automaticamente como sangramento normal, nem presumir que todos os casos secundários são atonia. **Conduta:** avaliação de gravidade e estabilidade, investigação apropriada, antibioticoterapia e/ou abordagem uterina conforme diagnóstico e protocolos específicos. **Aprendizado:** tempo de início redefine probabilidades e prioridades.
 
-## 8. Questões comentadas — primeira versão
+## 8. Questões comentadas — fundamentos com cinco alternativas analisadas
 
-**Questão 1.** Após parto vaginal, foram coletados 360 mL de sangue. FC = 110 bpm e PAS = 105 mmHg. O que fazer?
-A) Esperar atingir 500 mL. B) Aguardar queda da hemoglobina. C) Iniciar resposta à HPP e pesquisar causa. D) Liberar porque PAS >100 mmHg. E) Usar TXA apenas se ocorrer choque profundo.
-**Resposta: C.** O índice de choque excede 1 e há perda ≥300 mL. A erra pelo uso exclusivo do limite clássico; B, pelo atraso do marcador laboratorial; D, por ignorar tendência e critérios; E, por atrasar componente de tratamento precoce.
+### Questão fundamental 1 — Critério clínico versus corte volumétrico
 
-**Questão 2.** Sangramento ativo com útero firme após parto instrumental sugere primeiro:
-A) Hipotireoidismo. B) Trauma genital. C) Atonia isolada obrigatória. D) Diabetes gestacional. E) Desidratação.
-**Resposta: B.** Inspecionar lesões do canal de parto. C ignora o exame de tônus; as demais hipóteses não explicam diretamente o quadro.
+Mulher no pós-parto vaginal imediato apresenta perda coletada de 360 mL, FC 110 bpm, PAS 105 mmHg e útero flácido. A equipe cogita aguardar até que o volume ultrapasse 500 mL. Qual conduta deve prevalecer?
 
-**Questão 3.** Sobre ácido tranexâmico no tratamento de HPP estabelecida, qual afirmação é correta?
-A) Só pode ser usado após histerectomia. B) Substitui controle de foco. C) Deve ser reservado para sangramento que dura mais de três horas. D) Deve ser considerado precocemente no pacote de resposta, conforme diretriz. E) É uterotônico.
-**Resposta: D.** É antifibrinolítico, não substitui cirurgia, uterotônico ou ressuscitação. Início tardio perde a janela de benefício reconhecida.
+A. Aguardar porque a perda ainda é inferior ao limite tradicional.
+B. Confirmar que a hemoglobina caiu pelo menos 2 g/dL antes de intervir.
+C. Reconhecer precocemente HPP, ativar resposta e identificar a causa.
+D. Dar alta após constatar que a PAS permanece maior que 100 mmHg.
+E. Administrar somente ferro oral e reavaliar em 24 horas.
 
-**Questão 4.** A paciente apresentou útero flácido e sangramento após a dequitação. A categoria etiológica mais provável é:
-A) Trauma. B) Tecido. C) Tônus. D) Trombina. E) Infecção urinária.
-**Resposta: C.** Atonia é falha de contração miometrial; as outras categorias ainda precisam ser consideradas se houver sinais de coexistência ou resposta incompleta.
+**Gabarito: C.** A paciente já perdeu ≥300 mL, tem FC >100 bpm e índice de choque de 110/105, aproximadamente 1,05, satisfazendo critério de intervenção precoce da OMS 2025. O útero flácido aponta para atonia, sem excluir fatores coexistentes.
 
-**Questão 5.** A hemoglobina inicial se mantém próxima do valor pré-parto apesar de hemorragia maciça em curso. Qual alternativa é melhor?
-A) Exclui hipovolemia. B) Invalida sinais de choque. C) Determina alta. D) Pode ocorrer na perda aguda e exige interpretação clínica. E) Dispensa avaliação hemostática.
-**Resposta: D.** Concentrações iniciais não traduzem instantaneamente a magnitude da perda aguda, sobretudo antes da redistribuição de líquidos e da reposição.
+- **A — incorreta:** o limite de 500 mL não é condição única para iniciar tratamento.
+- **B — incorreta:** concentração de Hb pode estar preservada durante a perda aguda.
+- **C — correta:** combina quantificação com fisiologia e resposta imediata.
+- **D — incorreta:** PAS isolada não afasta repercussão circulatória.
+- **E — incorreta:** terapia de anemia não controla hemorragia em curso.
 
-**Questão 6.** Mulher apresenta febre, dor uterina e sangramento importante 15 dias após o parto. A primeira hipótese de trabalho é:
-A) Somente atonia do terceiro período. B) Sangramento fisiológico, sem avaliação. C) Hemorragia puerperal secundária possivelmente infecciosa ou associada a restos. D) Parto obstruído. E) Rotura precoce de membranas.
-**Resposta: C.** O tempo e os sintomas direcionam investigação de causas secundárias. Não presumir benignidade em presença de sinais infecciosos.
+**Mini-revisão:** a decisão de tratar HPP não depende de esperar choque tardio.
+
+### Questão fundamental 2 — Útero firme e perda persistente
+
+Após parto instrumental, o sangramento continua importante, embora o útero esteja firme e a placenta aparentemente íntegra. Qual hipótese merece investigação dirigida imediata?
+
+A. Laceração do canal de parto.
+B. Atonia isolada obrigatória.
+C. Hipotireoidismo.
+D. Diabetes gestacional.
+E. Amenorreia hipotalâmica.
+
+**Gabarito: A.** Com bom tônus uterino, investigar trauma cervical, vaginal ou perineal e hematomas; etiologias podem coexistir.
+
+- **A — correta:** o mecanismo e a cronologia favorecem lesão traumática.
+- **B — incorreta:** boa contração reduz plausibilidade de atonia isolada como explicação suficiente.
+- **C — incorreta:** não explica a hemorragia pós-parto aguda de forma prioritária.
+- **D — incorreta:** antecedente metabólico não substitui inspeção do foco.
+- **E — incorreta:** quadro não tem relação causal plausível com o evento agudo.
+
+**Mini-revisão:** “Tônus, Trauma, Tecido, Trombina” serve para encontrar e tratar a origem.
+
+### Questão fundamental 3 — Ácido tranexâmico
+
+Em paciente com HPP primária estabelecida dentro das primeiras horas após o nascimento, qual afirmação está correta?
+
+A. O TXA só é utilizado depois de histerectomia.
+B. O TXA induz contração uterina e substitui a ocitocina.
+C. O TXA deve ser aguardado até decorridas três horas, para confirmar persistência.
+D. O TXA integra precocemente o tratamento, associado a uterotônico e controle de foco.
+E. O TXA deve ser administrado automaticamente a toda gestante como profilaxia universal.
+
+**Gabarito: D.** O ácido tranexâmico é antifibrinolítico, de administração precoce quando indicado na HPP estabelecida, dentro de três horas do nascimento conforme a OMS.
+
+- **A — incorreta:** sua janela de benefício exige considerar uso precoce.
+- **B — incorreta:** atua sobre fibrinólise, não contração miometrial.
+- **C — incorreta:** três horas é janela máxima para início oportuno, não tempo de espera.
+- **D — correta:** é parte do pacote terapêutico, não substitui outras medidas.
+- **E — incorreta:** tratamento de HPP não equivale a profilaxia universal.
+
+**Mini-revisão:** o relógio do TXA começa no nascimento; controle do foco continua indispensável.
+
+### Questão fundamental 4 — Atonia e quatro T
+
+Puérpera apresenta hemorragia com fundo uterino amolecido à palpação. A causa predominante mais provável corresponde a qual grupo?
+
+A. Trauma.
+B. Tecido.
+C. Tônus.
+D. Trombina.
+E. Infecção urinária.
+
+**Gabarito: C.** O achado aponta falha da retração miometrial que deveria comprimir os vasos do leito placentário.
+
+- **A — incorreta:** trauma pode coexistir, mas não explica primariamente o útero flácido.
+- **B — incorreta:** tecido retido pode predispor à atonia, mas não é demonstrado pelos dados.
+- **C — correta:** atonia corresponde diretamente ao T de tônus.
+- **D — incorreta:** coagulopatia requer evidências específicas.
+- **E — incorreta:** não corresponde a uma das causas principais da HPP primária na situação descrita.
+
+**Mini-revisão:** o achado clínico inicial orienta tratamento imediato; a reavaliação identifica causas associadas.
+
+### Questão fundamental 5 — Hemoglobina e choque
+
+Uma paciente apresenta perda obstétrica volumosa em curso, taquicardia e sinais de hipoperfusão, mas a primeira hemoglobina permanece próxima ao valor pré-parto. Qual afirmação é mais precisa?
+
+A. Hemoglobina inicial exclui hipovolemia se for maior que 10 g/dL.
+B. Não há necessidade de reavaliar perfusão ou resposta clínica.
+C. A paciente deve receber alta e somente ferro oral.
+D. A Hb inicial pode estar relativamente preservada; decisões devem integrar sinais clínicos, perda e exames seriados.
+E. A presença de choque exclui coagulopatia associada.
+
+**Gabarito: D.** Na perda aguda de sangue total, a concentração de Hb pode demorar a refletir magnitude da hemorragia.
+
+- **A — incorreta:** um corte arbitrário não descarta perda aguda importante.
+- **B — incorreta:** perfusão precisa ser reavaliada continuamente.
+- **C — incorreta:** ferro não corrige choque hemorrágico.
+- **D — correta:** integra fisiologia da perda e dinâmica clínica.
+- **E — incorreta:** choque e coagulopatia podem coexistir e se potencializar.
+
+**Mini-revisão:** concentração não é medida direta de volume; reanimar segundo quadro clínico e protocolo.
+
+### Questão fundamental 6 — Sangramento tardio
+
+Quinze dias após o parto, uma mulher apresenta recrudescimento do sangramento, febre e dor uterina. Qual hipótese e abordagem inicial são mais adequadas?
+
+A. Atonia do terceiro período como explicação obrigatória, sem investigação.
+B. Lóquios fisiológicos em qualquer intensidade, com alta sem avaliação.
+C. Hemorragia puerperal secundária, investigando infecção, restos e estabilidade.
+D. Trabalho de parto prematuro.
+E. Rotura de membranas como causa exclusiva do sangramento.
+
+**Gabarito: C.** O tempo após o nascimento e os sinais associados requerem avaliar causas secundárias, incluindo endometrite e retenção de material placentário, além de estabilidade hemodinâmica.
+
+- **A — incorreta:** ignora que a etiologia e a linha temporal diferem da HPP imediata.
+- **B — incorreta:** febre, dor e perda anormal são sinais de alerta.
+- **C — correta:** propõe avaliação de risco e hipóteses plausíveis.
+- **D — incorreta:** a paciente já se encontra no período puerperal.
+- **E — incorreta:** não explica como hipótese prioritária o quadro de duas semanas após o parto.
+
+**Mini-revisão:** HPP secundária demanda raciocínio próprio; não aplicar automaticamente o algoritmo de atonia do terceiro período.
 
 ## 9. Plano de aprofundamento obrigatório
 
