@@ -273,3 +273,334 @@ Defeito **iatrogênico reconhecido imediatamente**, pequeno, tecnicamente acess�
 ### 14.5 A pergunta unificadora
 
 **Há vazamento contínuo ou foco contaminante que precisa ser interrompido?** Se sim, escolher o meio de controle de fonte mais seguro e rápido nas circunstâncias — cirurgia, drenagem ou intervenção endoscópica cuidadosamente selecionada. Se o vazamento já selou e o paciente está estável, não existe peritonite e há vigilância rigorosa, pode existir espaço limitado para tratamento não operatório, dependendo da causa. A obrigação é **reavaliar**, não apenas rotular.
+
+
+## 15. Úlcera péptica perfurada: mecanismo, apresentação e operação
+
+### 15.1 Como a úlcera atravessa a parede
+
+A úlcera péptica é uma perda de substância da mucosa que ultrapassa a muscular da mucosa, resultante de desequilíbrio entre agressão ácido-pepsina e defesa mucosa. **H. pylori**, AINEs e fatores individuais estão entre causas centrais de doença ulcerosa; neoplasia, doença crítica e condições hipersecretoras são diferenciais e modificadores. Quando a lesão se aprofunda através de todas as camadas da parede, ocorre perfuração. Na parede anterior do bulbo duodenal, a comunicação com cavidade peritoneal é clássica, enquanto úlceras posteriores podem envolver estruturas adjacentes ou sangrar por vasos maiores.
+
+O vazamento de ácido gera **peritonite química súbita**, inicialmente capaz de produzir dor em “punhalada” e rigidez. Horas depois, contaminação microbiana e inflamação sistêmica podem dominar o quadro. Se o epíplon ou órgão adjacente sela a lesão, a clínica pode melhorar temporariamente, mas isso não prova resolução anatômica; por outro lado, um paciente com franca contaminação pode desenvolver choque antes da confirmação radiológica.
+
+### 15.2 Sintomas clássicos e atípicos
+
+Dor epigástrica abrupta intensa que se generaliza, piora com movimento e associa-se a náuseas é sugestiva; o paciente pode ficar imóvel na maca. Pode existir história prévia de dispepsia ou AINEs, mas **perfuração pode ser a primeira manifestação** de doença ulcerosa. Em idosos, esteroides, diabéticos e pacientes imunossuprimidos, a dor/defesa podem estar atenuadas e a apresentação pode ser sepse sem descrição típica de “punhalada”.
+
+O exame pode mostrar rigidez involuntária difusa, taquicardia e sinais de hipovolemia. Sinal de Jobert e ar subdiafragmático são pistas clássicas, mas têm sensibilidade variável. A ausência de ar em radiografia simples não exclui perfuração. TC em paciente estável pode encontrar ar livre, líquido periduodenal, espessamento e defeito de parede.
+
+### 15.3 O que a diretriz WSES recomenda
+
+Para suspeita gastroduodenal, a WSES 2020 recomenda **TC** quando viável; RX de tórax/abdome é alternativa inicial quando a TC não está prontamente disponível. Se a imagem não demonstra ar, mas suspeita continua, o contraste hidrossolúvel pode ajudar em situação selecionada. **Peritonite, vazamento ou pneumoperitônio significativo** apontam para intervenção operatória, realizada tão cedo quanto praticável, sobretudo em idosos e apresentações tardias. O tratamento conservador não é prática de rotina e exige selamento documentado, estabilidade e vigilância intensiva.
+
+Pontuações de risco como **Boey** e **PULP** podem apoiar comunicação prognóstica e planejamento, mas não substituem exame, ressuscitação ou decisão de operar. Boey utiliza fatores clássicos como choque pré-operatório, comorbidade grave e atraso na apresentação; a definição exata de atraso e desempenho variam entre estudos. Um paciente com score “baixo” ainda pode necessitar cirurgia imediata.
+
+### 15.4 Reparo e epiplonplastia
+
+Em pequenos defeitos acessíveis com tecido viável e paciente favorável, a operação muitas vezes consiste em **fechamento da perfuração associado ou não a reforço com epíplon**. O chamado **patch de Graham** usa epíplon para cobrir/selar a região; há diferentes técnicas, inclusive reparo com sutura seguido de reforço omental (“Graham modificado”). Não tratar nomes históricos como se fossem única sequência técnica invariável. A escolha depende do tamanho/tecido da perfuração e experiência, e alguns defeitos selecionados podem ser manejados com sutura simples.
+
+Perfuração extensa, bordas friáveis, perda tecidual, obstrução distal, anatomia complexa ou suspeita de câncer gástrico pode exigir procedimento diferente — ressecção, reconstrução, drenagem ou **cirurgia de controle de danos**. A **gastrectomia não é obrigatória só porque houve perfuração** e tampouco toda úlcera de diâmetro acima de corte arbitrário exige mesma operação. O objetivo é vedar vazamento e manter função, respeitando segurança do paciente.
+
+### 15.5 Úlcera gástrica e malignidade
+
+Úlcera gástrica pode ocultar **neoplasia**. O cirurgião avalia morfologia, localização, possibilidade de biópsia quando apropriada e planejamento de seguimento. Não desconsiderar lesão irregular/crônica ao suturar um orifício; tampouco realizar ressecção oncológica extensa em paciente séptico instável apenas para obter espécime definitivo sem ponderar mortalidade operatória. O plano pode incluir controle de fonte inicial e avaliação histológica/endoscópica posterior.
+
+Após recuperação, pesquisar e **erradicar H. pylori** quando presente, revisar AINEs/antiagregantes, indicar supressão ácida conforme etiologia e acompanhar cicatrização, especialmente em úlcera gástrica. A estratégia de erradicação precisa considerar resistência e recomendações brasileiras atuais; não repetir esquemas antigos com claritromicina sem verificar adequação local.
+
+### 15.6 Jejum, dreno e dieta após cirurgia
+
+SNG ou drenagem abdominal não devem ser tratadas como **obrigatórias em toda ulcerorrafia**. A indicação depende de distensão, vômitos, risco de vazamento, tamanho do defeito, contaminação e avaliação do cirurgião. Alimentação pós-operatória pode ser retomada quando há estabilidade e recuperação gastrointestinal adequadas, sem esperar tempo arbitrário em todos. Em operação complexa/duodenal de maior risco, o planejamento nutricional pode exigir acesso enteral distal ou estratégia temporária individualizada.
+
+## 16. Perfuração colônica por diverticulite: de microperfuração a peritonite fecal
+
+### 16.1 Por que divertículos podem perfurar
+
+Na diverticulose colônica, pontos de fraqueza da parede favorecem herniações mucosas/submucosas. A diverticulite envolve inflamação em torno do divertículo e pode gerar microperfuração, inflamação de gordura e abscesso. Muitas crises permanecem localizadas e não representam peritonite generalizada. Quando há ruptura para cavidade, aumenta risco de contaminação purulenta ou fecal. O **sigmoide** é segmento comum da doença diverticular esquerda, mas doença direita existe e pode imitar apendicite.
+
+A apresentação típica começa com dor em fossa ilíaca esquerda, alteração do hábito intestinal, febre e sensibilidade local. Dor que se generaliza rapidamente, defesa difusa, choque ou ar distante com líquido extenso muda a urgência. Em pessoas imunossuprimidas, a progressão pode ser mais silenciosa. No diagnóstico diferencial, neoplasia perfurada e colite isquêmica têm implicações diferentes.
+
+### 16.2 Hinchey: entender, não decorar sem contexto
+
+A classificação **Hinchey original** foi baseada sobretudo em achados operatórios; versões **modificadas por TC** variam entre autores. Resumo tradicional:
+
+| Grau | Descrição habitual | Implicações, sempre individualizadas |
+| --- | --- | --- |
+| I | Abscesso pericólico/localizado | Antibiótico e observação em selecionados, drenagem se necessário |
+| II | Abscesso distante, pélvico/retroperitoneal | Antibiótico, frequentemente drenagem percutânea quando viável |
+| III | Peritonite purulenta generalizada | Em geral controle de fonte operatório |
+| IV | Peritonite fecal generalizada | Controle de fonte cirúrgico urgente; estratégia conforme fisiologia |
+
+**Pericolic gas** sem abscesso volumoso pode ser classificado separadamente em sistemas tomográficos modernos. Por isso, quando prova cita “Hinchey IIA” ou “1A” é necessário saber qual versão foi adotada. Não inferir operação apenas da palavra “perfurada”; avaliar se o conteúdo escapou livremente, se há abscesso drenável, líquido difuso e como o paciente está.
+
+### 16.3 Tratamento do abscesso localizado
+
+Pequenas coleções podem responder a antibiótico e vigilância; abscessos maiores, tecnicamente acessíveis e sem peritonite generalizada podem beneficiar-se de **drenagem percutânea** combinada com antimicrobiano. Limiares de diâmetro variam entre diretrizes e recursos; WSES 2020 discute a separação prática em torno de **4–5 cm**, com qualidade de evidência limitada, enquanto outras sociedades usam limiares distintos. Acessibilidade da coleção, distância de órgãos e estabilidade importam mais que usar um número como regra absoluta.
+
+Fracasso clínico, aumento do abscesso, impossibilidade de drenagem, obstrução ou sepse persistente exigem mudança de estratégia. A investigação deve excluir tumor subjacente, especialmente em quadro complicado ou fatores de risco neoplásicos. O seguimento colônico após recuperação depende de gravidade, exames prévios e recomendação local; não realizar colonoscopia em plena fase inflamatória perfurativa sem indicação específica.
+
+### 16.4 Ressecção com anastomose ou operação de Hartmann?
+
+**Hartmann** consiste, em termos gerais, em ressecção do segmento doente, fechamento do coto retal e colostomia terminal; pode ser apropriada em pacientes **criticamente enfermos, instáveis, com fragilidade/comorbidades importantes** e peritonite difusa. Porém, a WSES 2020 sugere **ressecção com anastomose primária, com ou sem estoma de proteção**, em pacientes **clinicamente estáveis e com boa reserva**, conforme qualidade dos tecidos, extensão da contaminação, risco anastomótico e habilidade da equipe.
+
+Não ensinar “Hinchey IV = Hartmann em 100%”. A decisão envolve choque/vasopressores, hipoalbuminemia, imunossupressão, perfusão, edema de alças, comorbidades, localização e capacidade de acompanhamento. Anastomose sob má perfusão e acidose profunda pode falhar; Hartmann, por sua vez, expõe a estoma com reversão nem sempre realizada. Reconhecer essas escolhas é parte do raciocínio do cirurgião.
+
+### 16.5 Lavagem laparoscópica: não é solução universal
+
+A lavagem peritoneal laparoscópica isolada foi estudada em diverticulite com **peritonite purulenta** em pacientes selecionados. Pode evitar ressecção inicial em alguns casos, mas há preocupações com falha de controle de foco, abscessos/reintervenções e necessidade de selecionar pacientes muito cuidadosamente. **Não é tratamento adequado para peritonite fecal difusa e perfuração livre persistente.** A conduta deve seguir experiência/recursos, estudos e diretrizes, e a técnica nunca substituir avaliação do segmento perfurado.
+
+## 17. Perfuração de delgado: obstrução, isquemia, trauma e Crohn
+
+### 17.1 Obstrução que evolui para necrose
+
+Obstrução mecânica por bridas, hérnia encarcerada, vólvulo ou tumor aumenta pressão intraluminal e pode comprometer retorno venoso; edema de parede agrava perfusão, e casos estrangulados evoluem para necrose. Quando a parede perde integridade, ocorre perfuração e derrame entérico. Dor contínua intensa, febre, leucocitose, lactato elevado em alguns casos, defesa e TC com redução de realce são sinais de alarme. **Lactato normal não exclui isquemia precoce**; a evolução clínica e os sinais tomográficos são centrais.
+
+O tratamento da obstrução simples pode ser conservador em situações selecionadas, mas **peritonite, isquemia, estrangulamento ou perfuração** exigem intervenção urgente. Não atribuir todo pneumoperitônio numa obstrução a “alça distendida sem importância” e manter SNG isoladamente.
+
+### 17.2 Causas inflamatórias/infecciosas específicas
+
+Doença de Crohn transmural pode gerar fístula, abscesso e perfuração, com risco agravado por obstrução e imunossupressão. Tratamento envolve controle infeccioso, drenagem quando possível e, para perfuração livre/peritonite, cirurgia, geralmente ressecando segmento doente conforme situação. Em algumas regiões e condições específicas, infecções como febre tifoide, tuberculose intestinal e outras podem perfurar o íleo; a etiologia muda antibiótico e prevenção, mas **não elimina urgência de controlar contaminação**.
+
+Perfuração por corpo estranho (espinha de peixe, palito ou objeto pontiagudo) pode ser contida e produzir dor focal, abscesso ou peritonite. O paciente nem sempre lembra a ingestão. CT pode revelar corpo hiperdenso e inflamação localizada; o planejamento varia de retirada endoscópica quando acessível a operação quando há perfuração/abscesso não controlado. Não realizar cirurgia exclusivamente porque o laudo mostra material intraluminal, sem integrar local, sintomas e risco.
+
+### 17.3 Reparar ou ressecar?
+
+Um defeito pequeno em tecido viável, bem vascularizado e sem lesão mesentérica extensa pode permitir **reparo primário**, observando possibilidade de estenose do lúmen. Lesão maior, bordas isquêmicas, doença inflamatória extensa ou tumor pode exigir **ressecção segmentar**. A anastomose depende de perfusão, estabilidade, contaminação e necessidade de controle de danos. Em choque grave com alça necrótica e vasopressores, uma anastomose definitiva pode ser insegura; o cirurgião pode interromper continuidade temporariamente ou usar estoma/abdome aberto conforme cenário.
+
+**Pulo do Gato:** suturar um buraco numa alça com perfusão comprometida sem tratar isquemia é receita para deiscência.
+
+## 18. Perfuração de cólon não diverticular: tumor, estercoral e isquêmica
+
+### 18.1 Neoplasia obstrutiva
+
+Câncer de cólon pode perfurar no sítio tumoral ou provocar obstrução distal com distensão e **perfuração diastática do ceco**. A CT mostra massa, espessamento irregular, dilatação proximal e possível ar/líquido. A operação precisa tratar **perfuração e obstrução causal**, ponderando ressecção oncológica apropriada, contaminação e condição fisiológica. Uma anastomose primária pode ser inadequada em choque; uma operação em estágios pode ser necessária para priorizar sobrevivência. Planejamento oncológico completo vem depois de controle da emergência, quando indicado.
+
+### 18.2 Úlcera estercoral
+
+Fezes impactadas aumentam pressão sobre a parede do cólon, especialmente no reto-sigmoide, causando isquemia por pressão, necrose e perfuração. Constipação severa, imobilidade, demência e uso de opioides são fatores. Pode haver grande carga fecal na TC, defeito da parede, espessamento, ar extraluminal e peritonite fecal. A conduta cirúrgica costuma incluir ressecção de tecido inviável, lavagem/controle de contaminação e estratégia segura de reconstrução ou derivação. **Desimpactação simples não resolve a perfuração livre.**
+
+### 18.3 Colite isquêmica e necrose transmural
+
+Isquemia colônica grave pode gerar necrose transmural e perfuração. Dor, diarreia sanguinolenta e fatores vasculares podem preceder piora; em idosos e choque, a apresentação pode ser inespecífica. CT com contraste e avaliação vascular ajudam distinguir de diverticulite e tumor, mas instabilidade com peritonite demanda cirurgia. Ressecar somente parte ostensivamente necrótica sem avaliar perfusão de todo intestino e fator vascular pode deixar lesão progressiva. A decisão pode exigir **second look** quando a viabilidade intestinal é incerta.
+
+### 18.4 Peritonite fecal e escolha de estoma
+
+Em contaminação fecal difusa, o risco de deiscência aumenta com choque, edema, vasopressores e má perfusão. Hartmann, ileostomia ou colostomia derivativa podem ser alternativas quando reconstrução imediata é insegura; entretanto, o simples achado de fezes na cavidade não dita uma técnica única. O cirurgião pondera localização, extensão de ressecção, tecido e situação hemodinâmica. A reversão do estoma exige discussão futura de benefício, risco, função intestinal e preferências.
+
+## 19. Perfuração esofágica e Boerhaave: emergência fora do abdome clássico
+
+### 19.1 Mecanismo e anatomia
+
+A **síndrome de Boerhaave** é ruptura transmural esofágica espontânea tipicamente após aumento abrupto da pressão intraesofágica durante vômitos intensos, frequentemente na parede posterolateral esquerda distal. Diferencia-se da **laceração de Mallory–Weiss**, que não atravessa toda parede e se apresenta sobretudo com sangramento após vômitos. Perfurações esofágicas também podem resultar de endoscopia, dilatação, corpo estranho, trauma e doenças da parede.
+
+O conteúdo esofagogástrico pode contaminar mediastino, pleura e tecidos cervicais. A inflamação pode progredir rapidamente para **mediastinite, derrame pleural infectado, empiema e sepse**, sem pneumoperitônio abdominal. Por isso, dor torácica após vômito não deve ser tratada automaticamente como gastrite ou IAM sem avaliação da possibilidade de ruptura — e IAM/dissecção também devem ser afastados conforme apresentação.
+
+### 19.2 A tríade de Mackler e suas limitações
+
+Vômitos, dor torácica e enfisema subcutâneo constituem a tríade clássica, **mas muitos pacientes não têm todos os três achados**. Podem ocorrer dispneia, febre, odinofagia, disfagia, voz alterada e choque. Radiografia pode mostrar pneumomediastino, derrame pleural (às vezes à esquerda) ou enfisema, mas CT de pescoço/tórax com protocolo de esôfago e esofagografia hidrossolúvel quando apropriada são ferramentas mais informativas.
+
+### 19.3 Manejo individualizado: não declarar que toda ruptura exige esofagectomia
+
+Princípios: jejum, suporte de perfusão, **antibióticos de atividade apropriada**, possível drenagem de mediastino/pleura, controle da perfuração e suporte nutricional. Conforme tamanho, localização, tempo, grau de contaminação e estabilidade, o fechamento pode ser **cirúrgico, endoscópico com clips/stent/terapia a vácuo** em centros habilitados, ou excepcionalmente manejo não operatório em lesões bem contidas e pacientes estáveis. O fato de ser “tardio” não obriga automaticamente a mesma sequência de esofagostomia/gastrostomia para todos.
+
+Uma perfuração com mediastinite extensa ou choque demanda avaliação cirúrgica torácica/urgente e drenagem efetiva. O especialista considera a condição dos tecidos e risco de falha de reparo. A disponibilidade do serviço modifica logística de transferência; tentar endoscopia em ambiente sem habilidade e atrasar controle de foco pode causar dano.
+
+## 20. Perfuração traumática de estômago, intestino e mesentério
+
+### 20.1 Trauma contuso: a lesão que a primeira TC pode não mostrar
+
+Colisões automobilísticas com **sinal do cinto de segurança**, compressão em guidão, queda com desaceleração e esmagamento podem produzir ruptura intestinal ou lesão mesentérica. Mecanismos incluem esmagamento de alça contra coluna, cisalhamento em pontos fixos, aumento de pressão luminal e lesão vascular mesentérica com isquemia secundária. O paciente pode ter outras lesões que mascaram dor abdominal, e exames iniciais podem ser pouco específicos.
+
+A WSES 2022 recomenda CT contrastada em paciente estável com mecanismo de alto risco, exame seriado se imagem é inespecífica e consideração de **nova CT após cerca de seis horas** em casos equívocos selecionados. Se o paciente evolui com peritonite, febre ou instabilidade, a intervenção não deve esperar um cronômetro. Ar extraluminal isolado é sugestivo, porém nem sempre está presente na fase precoce. Líquido livre sem lesão de órgão sólido em trauma deve levantar suspeita de lesão intestinal/mesentérica, especialmente com mecanismo compatível.
+
+### 20.2 Trauma penetrante
+
+Ferimento por arma branca/projétil pode atravessar vários segmentos, com sangramento e contaminação. A avaliação de instabilidade, peritonite e trajetória determina necessidade de cirurgia imediata versus investigação seletiva em paciente estável. Lesão de parede anterior aparentemente pequena não informa extensão interna. Na operação, é fundamental **inspecionar todo o trajeto e segmentos comprometidos**; reparar uma perfuração e deixar outra inadvertida causa peritonite tardia.
+
+### 20.3 Anastomose versus estoma e controle de danos
+
+A escolha depende de grau de lesão (destruição tecidual, desvascularização, múltiplas perfurações), choque, hipotermia, acidose, coagulopatia, contaminação e necessidade de abreviar operação. Em tecido viável e fisiologia favorável, o reparo primário ou ressecção com anastomose pode preservar continuidade intestinal. Em paciente profundamente instável, **damage control surgery** pode priorizar hemostasia/controle de contaminação, fechamento temporário e reoperação programada após ressuscitação. Não fazer anastomose demorada em intestino com perfusão duvidosa apenas para evitar estoma.
+
+### 20.4 Protocolo de antibiótico em trauma
+
+O grau de contaminação e tempo até reparo importam. Um ferimento reparado prontamente com contaminação limitada pode necessitar **profilaxia curta**, distinta de peritonite estabelecida em lesão reconhecida tardiamente. Não manter antibiótico até retirada de todos os drenos por regra. Em perfuração intestinal traumática que se apresenta dias depois com abscesso/septicemia, aplicar princípios de **infecção intra-abdominal complicada** e controle de fonte, não a profilaxia de lesão limpa.
+
+## 21. Perfuração iatrogênica: colonoscopia, EDA, CPRE e pós-operatório
+
+### 21.1 Colonoscopia
+
+A perfuração pode ocorrer por trauma mecânico direto, barotrauma da insuflação ou lesão térmica durante ressecção de pólipo, às vezes reconhecida imediatamente ou após horas/dias. Dor abdominal progressiva, distensão, febre, sangramento, taquicardia ou sinais peritoneais após colonoscopia exigem avaliação urgente. Uma pequena quantidade de ar pós-procedimento com paciente completamente assintomático pode ter interpretação distinta de grande escape associado a líquido e peritonite.
+
+A WSES 2017 admite **fechamento endoscópico precoce** por operador experiente quando defeito e preparo intestinal são favoráveis, com cirurgia disponível. **Tratamento conservador** pode ser usado quando paciente estável, sem sepse, sem líquido livre significativo e com dor localizada, em observação rigorosa; piora, peritonite, perfuração grande ou preparo intestinal insatisfatório são indicações de cirurgia. Não confundir “detectado durante colonoscopia” com “sempre candidato a clipe”.
+
+### 21.2 CPRE e perfuração duodenal
+
+Durante CPRE, lesões podem ocorrer em parede duodenal, região periampular por papilotomia ou canais ductais. Classificações como **Stapfer I–IV** agrupam mecanismo e anatomia; o risco não depende só da presença de ar retroperitoneal, mas da existência de vazamento ativo de conteúdo, coleção, instabilidade e obstrução ductal. Pequenas perfurações periampulares/ductais podem ser abordadas com drenagem endoscópica e tratamento conservador especializado, enquanto grandes defeitos de parede livre ou peritonite exigem cirurgia mais frequentemente.
+
+CT para avaliar ar/líquido retroperitoneal e extravasamento é útil. O tratamento pode envolver jejum, antibiótico proporcional, drenagem biliar e monitorização, com cirurgia quando há foco não controlado. **Tipo de perfuração não é diagnóstico clínico isolado**: operador e cirurgião/endoscopista precisam integrar história do procedimento e imagem.
+
+### 21.3 Anastomose deiscente no pós-operatório
+
+Em paciente recém-operado, taquicardia persistente, dor ou distensão que piora, febre, débito anormal de dreno, íleo prolongado e sepse devem levantar **vazamento anastomótico**. A ausência de grande pneumoperitônio é menos útil porque gás residual pode permanecer no pós-operatório normal, e nem todo vazamento libera ar expressivo. O tempo esperado de ar pós-operatório varia com técnica, volume, intervalo e condição, não deve ser interpretado isoladamente.
+
+TC com contraste adequado identifica coleções e extravasamento; no doente estável com coleção acessível e fístula controlada, pode haver drenagem percutânea e suporte, enquanto peritonite difusa, necrose ou choque exigem nova operação. A escolha de reconstruir, derivar ou interromper anastomose depende de localização e fisiologia. Não somar dias de antibiótico sem investigar **fonte vazando**.
+
+### 21.4 PEG/gastrostomia e procedimentos
+
+Pneumoperitônio pós-gastrostomia pode ser esperado em casos benignos; por outro lado, vazamento de conteúdo gástrico por mau posicionamento, desalojamento precoce ou lesão colônica inadvertida pode causar peritonite. A estabilidade, sintomas, líquido em CT e tempo do trajeto de estoma determinam urgência. **Recolocar às cegas gastrostomia recente em trajeto imaturo pode direcionar conteúdo à cavidade**; procedimento exige avaliação especializada. Em paciente séptico, o foco deve ser controlado independentemente de o ar poder ser explicado pelo procedimento.
+
+## 22. Técnica operatória e segurança: o que o cirurgião busca na cavidade
+
+### 22.1 A pergunta não é “laparoscopia ou laparotomia?”, mas “qual obtém controle seguro?”
+
+Laparoscopia pode oferecer diagnóstico e tratamento com menor incisão, boa visualização e potencial recuperação mais rápida em pacientes estáveis selecionados. Entretanto, instabilidade, distensão marcante, contaminação maciça, múltiplas lesões ou falta de experiência/equipamento podem tornar **laparotomia** mais rápida e segura. Conversão de laparoscopia para laparotomia quando necessário não é “fracasso”; é medida de segurança. Em centro com recursos limitados, transferir por horas um paciente em choque para obter técnica minimamente invasiva pode ser menos adequado que operar com controle de fonte disponível.
+
+### 22.2 Etapas técnicas universais
+
+Identificar fonte, avaliar viabilidade de segmentos, controlar hemorragias se existentes, interromper vazamento, remover tecido necrosado, avaliar necessidade de ressecção ou reparo, controlar contaminação e coleções, proteger anastomose quando necessário e planejar fechamento/ressuscitação. Não há uma receita única de “lavagem de 10 litros e dreno para todos” que resolva qualquer situação. A lavagem/peritoneal toalete deve ser apropriada, evitando disseminação desnecessária e buscando remover material contaminante; **dreno não compensa falha de reparo**.
+
+### 22.3 Avaliar viabilidade de alça
+
+Cor e peristalse podem ser enganadores sob choque/vasopressores. Avaliar perfusão mesentérica, pulsos/fluxo, sangramento da borda, aspecto da parede e disponibilidade de tecnologias como fluorescência com indocianina em centros equipados. Se a viabilidade é muito incerta e a fisiologia do paciente não permite longa operação, considerar ressecção limitada, controle de danos e **second look** em prazo planejado. Anastomose sob acidose profunda e má perfusão aumenta deiscência, mas estoma também produz morbidade; decisão é individualizada.
+
+### 22.4 Dreno e fechamento abdominal
+
+Drenos podem ser úteis em cavidade com coleção, anastomose de alto risco ou necessidade de monitorização específica, mas **uso universal rotineiro** não é sustentado como condição obrigatória para toda perfuração reparada. Dreno fechado e bem posicionado não esteriliza o peritônio. Em paciente com grande edema visceral, necessidade de reabordagem, síndrome compartimental potencial ou instabilidade grave, **abdome aberto temporário** pode ser opção de controle de danos, mas tem riscos de perda hídrica, fístula enteroatmosférica e complicações; objetivo posterior é fechamento fascial tão cedo quanto seguro.
+
+### 22.5 Contaminação, anastomose e ostomia
+
+Anastomose exige **tecido viável, perfusão adequada, baixa tensão, ausência de obstrução distal e condição fisiológica aceitável**. A presença de peritonite não a proíbe em todos os casos, mas aumenta risco no doente instável. Anastomose protegida por ileostomia em casos selecionados reduz consequências de eventual vazamento, sem impedir deiscência totalmente. Operação de Hartmann pode ser segura na emergência grave, mas reversão futura não é trivial e pode nunca ocorrer em pessoas frágeis.
+
+## 23. Abordagem de choque e controle de danos no abdome séptico
+
+### 23.1 O ciclo fisiológico perigoso
+
+Hipoperfusão prolongada causa acidose, coagulopatia e hipotermia, formando círculo de deterioração. Sepse provoca vasoplegia e perda de fluidos; cirurgia longa com vasopressores crescentes pode agravar falência orgânica. A abordagem **damage control** prioriza operação breve para interromper contaminação/hemorragia, ressuscitação em UTI e reoperação quando fisiologia permitir. Isso não equivale a “não corrigir a perfuração”: pelo contrário, o primeiro procedimento precisa obter controle suficiente para interromper disseminação.
+
+### 23.2 Fluidoterapia e vasopressores
+
+Em choque séptico com suspeita intra-abdominal, cristaloide é primeira linha; a SSC 2026 recomenda titulação clínica e suporte hemodinâmico com **norepinefrina** como vasopressor de primeira escolha em vasoplegia relevante. O excesso de fluidos pode produzir edema de alça e dificultar fechamento abdominal; o subtratamento de hipoperfusão também eleva mortalidade. Utilizar parâmetros dinâmicos de responsividade quando disponíveis, reavaliando pressão, diurese, perfusão, lactato e saturação conforme quadro.
+
+### 23.3 Qual o alvo da ressuscitação?
+
+PAM em torno de **≥65 mmHg** é referência inicial frequente para muitos adultos em choque, ajustando doença vascular/idade e resposta; débito urinário e perfusão periférica também importam. Lactato deve ser interpretado com tendência e contexto, não como “ordem para infundir mais litros” sem sinais de responsividade. Em pessoa com dor intensa e sangramento ativo, o choque pode ser misto (séptico e hemorrágico), exigindo identificação e tratamento das duas causas. Terapia intensiva não substitui atuação cirúrgica.
+
+### 23.4 Antifúngico empírico é exceção, não complemento automático
+
+Em perfuração gastroduodenal ou peritonite comunitária, Candida pode ser detectada em algumas amostras, especialmente doença prolongada; isso não comprova benefício de terapia antifúngica em todos. A SSC 2026 sugere **contra antifúngico empírico rotineiro**, admitindo avaliação individual em alto risco de Candida invasiva — imunossupressão, hospitalização e antibióticos prolongados, fontes intra-abdominais específicas. Cultura positiva de amostra estéril intraoperatória em doente grave exige leitura diferente de Candida em swab de dreno mantido há semanas.
+
+## 24. Complicações e vigilância do pós-operatório
+
+### 24.1 Abscesso residual e peritonite persistente
+
+Febre que reaparece, leucocitose, dor focal e íleo prolongado após cirurgia podem refletir **abscesso**. A TC pode localizar coleção passível de drenagem percutânea. Antibiótico precisa ser ativo e a fonte controlada; não tratar coleção grande com pus apenas mudando dose de analgésico. Se ocorre deterioração hemodinâmica, vazamento ou necrose, reoperação pode ser necessária.
+
+### 24.2 Deiscência, fístula e problemas nutricionais
+
+A deiscência de sutura/anastomose provoca escape de conteúdo e infecção intra-abdominal; pode ser localizada em dreno ou livre com peritonite. Fístula enterocutânea resulta de comunicação de alça ao exterior, podendo gerar perda volumosa de água, sódio, potássio, bicarbonato e nutrientes. Controle de sepse, proteção cutânea, reposição hidroeletrolítica e nutrição são partes essenciais antes de considerar reparo definitivo tardio. O tempo de decisão depende da causa, débito, anatomia e estabilidade; tentar fechamento prematuro em cavidade inflamada pode falhar.
+
+### 24.3 Síndrome compartimental abdominal e abdome aberto
+
+Grande reposição de volume e edema de alças, junto a fechamento sob tensão, podem elevar pressão intra-abdominal e comprometer ventilação, retorno venoso, rim e perfusão esplâncnica. Considerar **síndrome compartimental abdominal** em distensão importante, oligúria, dificuldade ventilatória e deterioração hemodinâmica; medir pressão intra-abdominal quando indicado. Descompressão e fechamento temporário são decisões de equipe em casos graves. Não abrir abdome de rotina por qualquer distensão nem fechar sob tensão inaceitável.
+
+### 24.4 Infecção de sítio cirúrgico, hérnia incisional e função intestinal
+
+Contaminação aumenta risco de infecção superficial/profunda do sítio operatório. Medidas de prevenção incluem higiene, antibioticoprofilaxia correta quando aplicável, cuidado de ferida, glicemia controlada e redução de tempo de exposição sem prejuízo do ato. Hérnia incisional pode ocorrer após laparotomia, sobretudo em infecção, obesidade e desnutrição. Estomas podem produzir desidratação (especialmente ileostomia de alto débito), dermatite, retração/prolapso e dificuldades psicossociais; educação e acompanhamento importam tanto quanto técnica inicial.
+
+### 24.5 Desfechos de choque séptico
+
+Mesmo após bom controle, pacientes podem apresentar injúria renal, disfunção muscular, delirium, perda funcional e recuperação prolongada. A alta deve incluir revisão de medicação, nutrição, fisioterapia, ostomia quando pertinente, monitorização de ferida e orientações de retorno. Febre, dor crescente, síncope, vômitos persistentes, falta de evacuação/gases com distensão e descarga purulenta são red flags para reavaliação.
+
+## 25. Populações especiais e cenários de vulnerabilidade
+
+### 25.1 Pessoas idosas e frágeis
+
+A mortalidade operatória e risco de delirium aumentam com fragilidade, reserva fisiológica reduzida, DRC, desnutrição e doença cardíaca. Os sinais clássicos de defesa podem ser mínimos; taquipneia, hipotensão relativa, anorexia, confusão e queda funcional podem dominar apresentação. A avaliação de objetivos do cuidado e consentimento informado deve ocorrer sem retardar intervenção emergencial necessária. Ageísmo não pode levar a negar cirurgia potencialmente benéfica apenas pela idade cronológica; tampouco se deve ignorar risco e vontade da pessoa.
+
+### 25.2 Corticoide, imunobiológicos e neutropenia
+
+Esteroides e imunossupressão podem reduzir febre e dor, e alterar resposta ao processo infeccioso. Em neutropênico, não esperar leucocitose para considerar peritonite. Neutropenia e doença hematológica modificam espectro de agentes, risco hemorrágico e complicações de cicatrização. Discussão com infectologia/hematologia é necessária em casos complexos, mas o foco mecânico de vazamento continua demandando controle quando indicado.
+
+### 25.3 Gestação
+
+Dor abdominal intensa na gestante exige considerar condições obstétricas (descolamento, rotura uterina, gestação ectópica no primeiro trimestre) e cirúrgicas. O útero muda localização anatômica, exame e escolha de imagem. US e RM são úteis quando não há urgência que exija CT, mas **radiação não deve ser razão para deixar de diagnosticar emergência ameaçadora à mãe**, sob ponderação multiprofissional. Ressuscitação, antibiótico apropriado na gestação, monitorização fetal conforme idade gestacional e cirurgia não devem ser adiados se há peritonite/sepse. A estabilidade materna é determinante da perfusão fetal.
+
+### 25.4 Pediatria e neonatologia
+
+Em recém-nascido prematuro, **enterocolite necrosante** pode perfurar intestino, com distensão, intolerância alimentar, sangue nas fezes, instabilidade e achados de pneumatoses/pneumoperitônio. Esse cenário exige manejo neonatal/cirúrgico pediátrico urgente; antibióticos, suporte e drenagem/operatório variam por peso, fisiologia e apresentação. Não aplicar indiscriminadamente técnicas/doses adultas de Graham ou Hartmann. Em crianças maiores, apendicite perfurada e trauma são fontes mais usuais, com algoritmos pediátricos específicos.
+
+### 25.5 Pós-operatório, obesidade e cirurgia bariátrica
+
+Depois de bypass gástrico, úlcera marginal perfurada, obstrução interna e vazamento anastomótico podem apresentar dor atípica; a anatomia rearranjada torna a interpretação de imagem e acesso endoscópico mais complexos. Em obesidade, sinais peritoneais podem ser difíceis e CT geralmente ajuda, mas o atraso por logística pode ser prejudicial. Em quem já teve múltiplas cirurgias, aderências e alteração anatômica tornam dissecção e risco de enterotomia adicional relevantes.
+
+### 25.6 Anticoagulação e coagulopatia
+
+Uso de varfarina ou anticoagulante direto pode aumentar risco hemorrágico operatório; é necessário identificar droga, última dose, função renal e necessidade de reversão emergencial conforme protocolo. Não adiar controle de fonte por aguardar normalização completa quando choque séptico e peritonite ameaçam vida; a equipe deve tratar risco hemorrágico e infeccioso em paralelo. Plaquetopenia por sepse e coagulopatia de consumo exigem monitorização e suporte conforme situação.
+
+## 26. Algoritmo clínico integrado em três cenários
+
+### 26.1 Cenário A: choque + peritonite difusa
+
+**Suspeita alta de perfuração livre/abdome séptico.** Reconhecer instabilidade, acionar cirurgia/anestesia/UTI, jejum, acessos, hemoculturas se não retardarem, antibiótico sistêmico apropriado precocemente, ressuscitação e medidas de suporte. Identificar provável foco com exame e imagem que não atrase operação; se peritonite evidente e quadro crítico, CT não é obrigação absoluta antes da intervenção. **Controle emergencial da fonte**, com técnica definida pela origem e fisiologia. Reavaliar perfusão e falência orgânica durante e após operação.
+
+### 26.2 Cenário B: estável + dor + ar livre em CT
+
+Investigar origem, história de procedimento, líquido/coleção, vazamento, extensão da contaminação e exame peritoneal. Nem todo ar implica operação: considerar **perfuração iatrogênica pequena reconhecida precocemente, úlcera selada comprovadamente, microperfuração diverticular confinada**, sempre com critérios da condição e disponibilidade de observação/intervenção. Se peritonite, extravasamento contínuo, grande defeito ou deterioração: **cirurgia**. O diagnóstico “estável” é momento dinâmico, exigindo reavaliação seriada.
+
+### 26.3 Cenário C: estável + suspeita alta, sem pneumoperitônio
+
+Não descartar. Rever RX e confirmar com **CT apropriada** para localização; se suspeita esofágica, CT tórax/esofagografia; se trauma de alto risco com CT equívoca, observação e eventual repetição em casos selecionados; se sinais de peritonite progressiva, chamar cirurgião e considerar laparoscopia/laparotomia conforme cenário. Pequena perfuração retroperitoneal, selada e perfuração com pouca produção de ar podem escapar à imagem inicial.
+
+### 26.4 Fluxograma textual completo
+
+**Paciente com dor abdominal aguda / pós-procedimento / trauma → verificar sinais vitais e peritonite →**
+- **Instável/choque ou peritonite generalizada:** ressuscitação + antibiótico se foco infeccioso + cirurgia urgente/controle de fonte.
+- **Estável:** história e exame seriado → exames e TC conforme suspeita → identificar sítio, extensão de líquido/gás, vazamento e necrose.
+- **Contaminação difusa/vazamento ativo:** operar, via e técnica conforme foco e risco.
+- **Abscesso localizado acessível:** antibiótico, drenagem percutânea em casos adequados, reavaliação.
+- **Perfuração contida/selada bem documentada e sem peritonite:** decisão muito selecionada por órgão/diretriz; vigilância hospitalar, capacidade de operar, plano de falha.
+- **Controle de fonte obtido:** reavaliar perfusão, cultura, analgesia, dieta, complicações e duração curta de antibiótico em pacientes elegíveis.
+- **Sem melhora:** reabrir diagnóstico; procurar foco residual, falha de reparo, coleção, isquemia, outro diagnóstico.
+
+**Erros fatais a evitar:** esperar TC em choque peritoneal; considerar ausência de ar como exclusão; usar mais antibióticos em lugar de drenagem/reparo; tratar toda diverticulite com ar como Hartmann; não reconhecer Boerhaave; ignorar lesão intestinal traumática com TC inicialmente equívoca.
+
+## 27. Pérolas clínicas, comparações e resumo de prova
+
+### 27.1 Mecanismo → pista → conduta
+
+| Mecanismo | Pista | Conduta-chave |
+| --- | --- | --- |
+| Úlcera duodenal anterior perfurada | Dor epigástrica súbita, rigidez, ar livre | Ressuscitar, antibiótico, cirurgia e reparo/epíplonplastia conforme defeito |
+| Úlcera selada selecionada | Sem peritonite/sepse e selamento demonstrado | Conservador **excepcional** com cirurgia de retaguarda |
+| Diverticulite com abscesso | Dor FIE, coleção contida CT | Antibiótico ± drenagem, conforme tamanho/acesso |
+| Diverticulite Hinchey III/IV | Peritonite purulenta/fecal | Controle operatório; anastomose ou Hartmann conforme fisiologia |
+| Tumor distal e ceco perfurado | Obstrução distal e dilatação proximal | Tratar perfuração **e** obstrução causadora |
+| Boerhaave | Vômito violento, dor torácica, pneumomediastino | CT apropriada, equipe torácica, antibiótico/drenagem/fechamento |
+| Colonoscopia perfurada | Dor após exame, ar extraluminal | Endoscopia precoce em elegíveis; cirurgia em peritonite |
+| Trauma de cinto | Sinal de cinto, líquido sem lesão sólida | CT, exame seriado, reimagem se equívoca; operar se evolução |
+| Perfuração no choque | Vasoplegia, peritonite, falência orgânica | Controle de foco rápido + suporte; damage control se necessário |
+
+### 27.2 Radiologia em dez linhas de raciocínio
+
+1. Ar abaixo do diafragma apoia pneumoperitônio, mas não diz automaticamente qual víscera perfurou.
+2. Radiografia negativa não exclui perfuração.
+3. TC é mais sensível e localiza fontes/coleções em estáveis.
+4. Peritonite e choque exigem decisão cirúrgica que não pode depender de imagem perfeita.
+5. Rigler indica ar desenhando duas faces da alça; Chilaiditi pode simular ar livre.
+6. Ar retroperitoneal sugere locais como duodeno, cólon retroperitoneal e algumas perfurações iatrogênicas.
+7. Vazamento de contraste ajuda a confirmar perfuração ativa, mas ausência depende de técnica adequada.
+8. Pequeno ar pericólico em diverticulite não é o mesmo que peritonite fecal difusa.
+9. Pneumoperitônio após cirurgia recente pode ser benigno; líquido, inflamação, piora e sintomas mudam significado.
+10. Na lesão intestinal traumática, exames seriados/reimagem podem ser mais importantes que um único laudo.
+
+### 27.3 O que se transforma em flashcard
+
+- **Definição:** perfuração transmural com escape extraluminal; pneumoperitônio é um sinal possível, não definição obrigatória.
+- **Clássico:** úlcera anterior do bulbo duodenal e dor súbita “em punhalada”.
+- **Radiologia:** Jobert clínico; Rigler e falciforme radiográficos; Chilaiditi pode simular ar livre.
+- **Boerhaave:** ruptura transmural esofágica após vômito, não Mallory–Weiss.
+- **Diverticulite:** Hinchey III purulenta, IV fecal; Hartmann não é universal.
+- **Conservador:** só na causa e no paciente selecionados, com controle de vazamento/monitorização.
+- **Antibiótico:** Gram-negativos/anaeróbios conforme foco; depois reduzir se cultura/controle permitem.
+- **Tempo:** SIS 2024 usa até quatro dias após controle adequado em muitos casos; SSC 2026 enfatiza controle precoce do foco em sepse que o exige.
+- **Trauma:** sinal de cinto + CT equívoca pode requerer observação/reimagem.
+- **Alta:** ausência de vazamento/foco, estabilidade, função intestinal e sinais de complicação.
