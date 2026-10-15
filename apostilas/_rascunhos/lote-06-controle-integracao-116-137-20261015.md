@@ -8,12 +8,12 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 ## Inventário de existência (sem certificação)
 | Nº | Tema vigente | Localização/atitude de continuidade |
 |---|---|---|
-| 116 | Síndromes glomerulares | Rascunho, controle, input/preview em `editorial/lote-06-auditoria-20261014`; continuar auditoria, não recriar |
-| 117 | Isquemia mesentérica | Rascunho e controle naquela ramificação; revisar |
-| 118 | Anemias na infância | Rascunho e controle naquela ramificação; revisar |
-| 119 | Planejamento reprodutivo e contracepção | Prévia/controle naquela ramificação; comparar com conteúdo LURIA já existente antes de integrar |
-| 120 | Medicina baseada em evidências | Rascunho e controle naquela ramificação; revisar |
-| 121 | Infecção urinária e pielonefrite | Rascunhos paralelos em `main` (arquivo legado lote-07) e na ramificação lote-06; **reconciliar**, não escolher cegamente uma versão |
+| 116 | Síndromes glomerulares | **Edição consolidada e controle copiados para esta ramificação**, sem substituir o original; auditoria clínica/visual permanece pendente |
+| 117 | Isquemia mesentérica | **Rascunho completo e controle copiados para esta ramificação**; não certificado |
+| 118 | Anemias na infância | **Rascunho completo e controle copiados para esta ramificação**; validar doses pediátricas e fontes |
+| 119 | Planejamento reprodutivo e contracepção | **Prévia HTML editorial e controle copiados**; versão publicada já contém regra atual Lei 14.443/2022, não sobrescrever |
+| 120 | Medicina baseada em evidências | **Rascunho completo e controle copiados para esta ramificação**; não certificado |
+| 121 | Infecção urinária e pielonefrite | **Candidato linha-06 preservado e ampliado em 12.5 (109.137 caracteres brutos)**; linha-07 permanece intacta, fusão clínica integral ainda pendente |
 | 122 | Perfuração de víscera oca | Rascunhos paralelos; reconciliar lacunas |
 | 123 | Febre sem sinais localizatórios | Rascunhos paralelos; reconciliar |
 | 124 | Sangramento uterino anormal | Apostila HTML existente preservada; complementos/controle separados em ambos os fluxos; integração apenas aditiva auditada |
@@ -61,3 +61,13 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 - Tema **137**: `lote-07-aula-137-drge-hernia-hiatal.md` alterado de 80.228 para 86.693 caracteres brutos; 8 casos, 15 questões; seção 20.6 e questão 9A novas; sem certificação do número de caracteres úteis.
 - **Registro científico detalhado:** `apostilas/_rascunhos/lote-06-136-137-controle-editorial-cientifico-20261015.md`.
 - **Condição para continuar lote 6:** harmonizar conteúdo de **116–131** (ramificação editorial anterior e rascunhos paralelos na `main`), sem publicar nenhuma versão apenas porque atingiu extensão bruta. Nenhum merge/deploy nesta rodada.
+
+## Continuação de 15/10/2026 — conciliação inicial de 116–131
+
+- Preservados na ramificação editorial os textos longos do **116 consolidado, 117, 118 e 120**, respectivos controles editoriais, mais a **prévia HTML e controle da 119**; os materiais originais na ramificação `editorial/lote-06-auditoria-20261014` permanecem acessíveis e inalterados.
+- **121**: conciliada apenas **uma lacuna identificada** (farmacologia prática) mediante seção original 12.5, casos de checagem e estudo primário de interação medicamentosa. Base 06 com **101.762 → 109.137 caracteres brutos**; linha 07 preservada sem modificação. Manter rótulo **candidato de consolidação, não versão clínica final**.
+- **122–131**: foi feita a comparação de existência, títulos de casos/questões e tamanho entre as duas linhas, detectando conteúdo potencialmente exclusivo em ambas. **Não houve fusão automática** de textos ou descarte de casos.
+- **124, 129**: HTMLs publicados preservados sem mudanças; comparativos com complementos e prévias não equivalem a versões prontas para substituir produção.
+- **Conciliação detalhada:** `apostilas/_rascunhos/lote-06-121-131-matriz-reconciliacao-editorial-20261015.md`. O próximo ciclo de trabalho deve auditar e combinar **122–131**, começando pela aula 122 e usando as duas bases.
+- Etapa Zero específica do tema 121 refeita com leitura integral do resumo comparativo `10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf`, complementada por diretrizes EAU 2026/IDSA 2025/ACOG 2023 e estudo primário sobre hipercalemia por trimetoprima em usuário de IECA/BRA.
+- Nenhum merge/deploy, nenhuma edição em `main`, nenhuma imagem adicionada ou publicada. Nenhuma apostila foi certificada com base em extensão bruta.
