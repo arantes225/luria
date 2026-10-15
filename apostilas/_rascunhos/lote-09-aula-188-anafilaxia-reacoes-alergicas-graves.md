@@ -525,3 +525,44 @@ Cada candidato real deve conter **URL verificada, titular de direitos, licença 
 2. **GOLDEN, D. B. K. et al.** *Anaphylaxis: a 2023 practice parameter update*. *Annals of Allergy, Asthma & Immunology*, 2024;132:124–176. DOI https://doi.org/10.1016/j.anai.2023.09.015 . PDF integral: https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf
 3. **ASBAI. Departamento Científico de Anafilaxia.** *Autoinjetores de adrenalina no manejo da anafilaxia*. *Esclarecendo*, edição 19, novembro de 2024. https://asbai.org.br/wp-content/uploads/2024/11/ASBAI_Esclarecendo_no-19_novembro-2024_compressed.pdf
 4. **ASBAI/SBP.** *Atualização em alergia alimentar 2025*, para aspectos de anafilaxia alimentar e pediatria, conferindo abrangência, dosagem e indicações no texto original. https://asbairj.org.br/atualizacao-em-alergia-alimentar-2025-asbai-e-sbp/
+
+
+## 22. Auditoria de decisões críticas e aprofundamento de cenários especiais
+
+### 22.1 Teste de estresse: “o paciente não tem rash”
+
+Um protocolo de reconhecimento centrado exclusivamente na pele perde casos graves. A avaliação deve comparar **tempo de exposição, queda pressórica, broncoespasmo, rouquidão, dispneia e sintomas digestivos intensos**. Em ambiente perioperatório, a pele pode estar coberta; no idoso, a percepção de prurido pode ser difícil; em pessoa com pele escura, o eritema pode ser menos facilmente percebido. O algoritmo deve manter **via aérea e circulação** como primeiro eixo sem transformar ausência de pápulas em sinal tranquilizador.
+
+### 22.2 Teste de estresse: “já recebi uma dose de adrenalina”
+
+Administrar dose inicial não é sinônimo de resolução. O profissional deve reavaliar **se a dose/via/concentração foram adequadas, tempo decorrido e resposta clínica**, incluindo PA, SpO₂, voz, estridor e perfusão. Se há persistência de anafilaxia, repetir IM no intervalo recomendado e organizar suporte. Caso a pessoa continue com choque após suporte apropriado, discutir terapia **refratária com infusão titulada em ambiente monitorizado**. Não insistir apenas em anti-histamínico e corticosteroide enquanto a pressão segue baixa.
+
+### 22.3 Teste de estresse: “só tenho um acesso venoso e quero usá-lo para adrenalina”
+
+A presença de acesso não transforma via IV na melhor forma de administração inicial. A **epinefrina intramuscular** tem indicação consolidada, eficácia e segurança favoráveis. Aplicar dose IV inadequada em paciente ainda com pulso pode provocar eventos graves. A equipe pode usar acesso para **cristalóide** e outros cuidados enquanto a adrenalina IM é aplicada; a infusão IV de adrenalina pertence ao manejo especializado de refratariedade, com padronização de concentração.
+
+### 22.4 Teste de estresse: “a pessoa é cardiopata e muito idosa”
+
+Cardiopatia e idade aumentam necessidade de monitorização e cautela com fluidos, mas **não anulam a prioridade da adrenalina IM** em anafilaxia. O risco de edema laríngeo, hipóxia e colapso circulatório não tratado costuma superar o risco farmacológico da dose IM apropriada. A ASBAI enfatiza esse ponto. O tratamento de anafilaxia no idoso exige considerar fármacos concomitantes, disfunção cardíaca e risco de sobrecarga, sem substituir o agente de primeira linha.
+
+### 22.5 Teste de estresse: “o problema apareceu durante anestesia”
+
+Quando várias medicações e materiais foram usados, a sequência temporal é central, mas **não há prova causal definitiva pelo último medicamento**. Anotar todas as exposições, lotes quando pertinentes e eventos de monitor, obter triptase conforme protocolo sem atrasar terapia, e orientar testes especializados futuros. O diagnóstico provisório pode ser “anafilaxia perioperatória suspeita” em vez de declarar alergia a toda classe anestésica. Isso mantém segurança nas próximas cirurgias.
+
+### 22.6 Teste de estresse: “a reação passou, posso encerrar cuidado?”
+
+Antes da alta, verificar resolução **completa e durável** de sintomas de via aérea, respiração e circulação, risco de reação bifásica, número de doses necessárias, comorbidades, disponibilidade de serviço e entendimento do plano. A duração da observação deve ser documentada com justificativa de risco. O registro precisa orientar conduta diante de nova exposição e fornecer caminho de investigação para confirmar gatilho.
+
+### 22.7 Diferenciar “refratária”, “persistente” e “bifásica”
+
+**Refratária** enfatiza ausência de resposta adequada a intervenções apropriadas, incluindo doses repetidas de epinefrina e suporte. **Persistente** envolve continuidade de sintomas ao longo do tempo sem resolução verdadeira. **Bifásica** exige melhora/resolução inicial seguida de nova fase sintomática sem reexposição ao agente. Na prática, a classificação auxilia entendimento, mas nenhum termo deve atrasar tratamento emergencial da fase atual.
+
+### 22.8 Por que esses conceitos fazem diferença nas provas?
+
+Questões frequentemente inserem um distrator atraente: **corticoide IM primeiro**, **anti-histamínico IV porque a pele está vermelha**, **salbutamol isolado porque há sibilância**, **adrenalina IV em bolo porque há acesso**, **esperar teste de triptase**, **desconsiderar anafilaxia sem urticária**. O aluno deve identificar que todos ignoram a intervenção capaz de melhorar simultaneamente edema, broncoespasmo e choque: **adrenalina intramuscular precoce**, com via, concentração, dose e posicionamento corretos.
+
+### 22.9 Segurança de tradução para a plataforma
+
+Ao transformar o Markdown em HTML, o capítulo de adrenalina deve ter **tipografia e marcadores que diferenciem dose, concentração e via**, evitando copiar a dose de PCR do bulário. Em páginas mobile/PWA, tabelas devem ser legíveis sem rolagem horizontal oculta, e o algoritmo deve permanecer acessível à navegação por teclado/leitor de tela. Não usar imagens ilustrativas de autoinjetores importadas sem checar se correspondem a dispositivos reais disponíveis no país; representação didática original precisa informar que não substitui treinamento no dispositivo verdadeiro.
+
+Este capítulo de auditoria adiciona cenários discriminantes e critérios de segurança para revisão por médicos, não certifica o rascunho. **Aprovação clínica, imagens, HTML responsivo, comparação integral com material de cursinho e teste de autossuficiência continuam pendentes.**
