@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 17,
+  "version": 18,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -149,9 +149,9 @@
       "source_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
       "source_sha": "a08a9ee6beb568cbec73e15af9d2913a06126b32",
-      "consolidated_sha": "7b7fe05f2f6390e1794b5cf9852221451cd9f233",
+      "consolidated_sha": "fd4a91a05af360a906b9f251499823483fa19785",
       "source_raw_characters": 73020,
-      "consolidated_raw_characters": 118003,
+      "consolidated_raw_characters": 143444,
       "consolidated_approximate_plain_characters": null,
       "chapter_count": 10,
       "chapters": [
@@ -196,15 +196,16 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 16,
-      "question_count": 25,
+      "case_count": 19,
+      "question_count": 28,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [
-        "Classificação MODY/LADA exige revisão especializada de genética/autoimunidade e implicações terapêuticas, sem prescrição automática."
+        "Medicações no perioperatório: SBD/SBA/ABESO 2026 requer interpretação por equipe e protocolo local; diferenças em GLP-1, iSGLT2 e basais devem passar por revisão farmacêutica/ambulatorial antes de uso prescritivo.",
+        "Revisar explicitamente esquemas em pacientes DM1, função renal, nutrição artificial, perioperatório e risco de CAD euglicêmica."
       ],
       "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
       "json_visible_estimate": null,
-      "json_table_count": 14
+      "json_table_count": 17
     },
     {
       "id": "PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE",
@@ -334,11 +335,11 @@
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "1bb9944ac0f709efe59037cc3797d12b6a6c964f",
+  "input_json_sha": "55623512237d1acf7219eab80ed410c066b67f33",
   "last_update_scope": [
-    "TB: seções 3.3–3.5 de meningite tuberculosa, segurança de LCR, diagnóstico e duração no Brasil, HIV/TARV, coluna vertebral e pericárdio",
-    "TB: dois casos e duas questões autorais, contraste OMS/MS; benchmark Drive 02 - TUBERCULOSE EXTRA PULMONAR efetivamente consultado",
-    "Pré-publicação; nenhum medicamento de prescrição liberado, nenhuma imagem importada, sem deploy"
+    "Diabetes: novos tópicos 8.5–8.9, hiperglicemia hospitalar, metas UTI/enfermaria, uso de insulina basal/prandial, cirurgia, GLP-1 e iSGLT2, CAD euglicêmica, hipoglicemia e algoritmo",
+    "Três casos e três questões autorais e quatro fontes oficiais novas, benchmark Drive antidiabéticos orais e subcutâneos, pré-anestésica, CAD/EHH lidos",
+    "Pré-publicação na branch editorial, sem imagens novas, merge ou deploy"
   ],
   "last_revision": "2026-10-15"
 }
