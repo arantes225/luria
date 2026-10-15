@@ -253,3 +253,363 @@ Quando urocultura e antibiograma identificarem organismo e sensibilidade, seleci
 - Carbapenêmicos: reservar conforme sepse/resistência e protocolo, com revisão obrigatória após resultado microbiológico.
 
 **Limite deste quadro:** os exemplos de dose foram extraídos das recomendações internacionais para adultos específicos, não fornecem prescrição completa com ajuste individual. Antes da publicação, acrescentar ficha farmacológica brasileira para cada produto/formulação.
+
+
+## 18. Populações especiais: o diagnóstico muda antes da prescrição
+
+### 18.1. Gestação: adaptação fisiológica, risco e vigilância
+
+A gestação modifica o trato urinário por ação hormonal, aumento do débito renal, alterações da dinâmica vesical e dilatação das vias excretoras, frequentemente mais acentuada à direita. A progesterona reduz o tônus da musculatura lisa, e fatores mecânicos uterinos podem acentuar estase urinária. A glicosúria fisiológica em algumas gestantes, mudanças do ambiente urinário e antecedentes individuais também entram no raciocínio. Esses mecanismos explicam por que bacteriúria silenciosa merece atenção diferente daquela dada a mulher não grávida e por que pielonefrite gestacional tem repercussões maternas e fetais.
+
+**Três categorias que não podem ser misturadas:**
+1. **Bacteriúria assintomática**: crescimento significativo em cultura adequadamente colhida na ausência de sintomas. É uma das situações em que rastreio e tratamento são indicados; urocultura é mais apropriada do que apenas fita reagente, cuja sensibilidade é limitada.
+2. **Cistite gestacional**: disúria, urgência/polaciúria e desconforto baixo, sem evidências de doença sistêmica. Requer antibiótico seguro na gestação e cultura com interpretação contextual.
+3. **Pielonefrite gestacional**: febre, dor lombar, calafrios, vômitos ou sinais sistêmicos. É condição potencialmente grave, associada a sepse, anemia, alterações respiratórias e trabalho de parto prematuro, exigindo **avaliação hospitalar e tratamento inicialmente parenteral** nos protocolos FEBRASGO e Ministério da Saúde.
+
+**Quando rastrear?** A FEBRASGO 2024 orienta rastreamento de bacteriúria assintomática na gestação, com repetição em intervalos definidos no acompanhamento (o protocolo descreve avaliação trimestral). Um protocolo de maternidade universitária federal de 2025 prevê urocultura no primeiro e terceiro trimestre. A mensagem editorial correta é: **existem esquemas institucionais de repetição diferentes**; cumprir o fluxo oficial atualizado da rede local e indicar exatamente qual publicação está sendo seguida. Não transformar divergência operacional em contradição sobre a necessidade de rastrear.
+
+**Coleta e confirmação:** se a amostra apresentar crescimento misto ou sinais de contaminação, avaliar repetição com técnica correta. Resultado de bacteriúria assintomática deve ser distinguido da contaminação do recipiente; a decisão depende de cultura e do contexto obstétrico, não de “leucócitos altos” isolados. A possibilidade de GBS na urina merece interpretação específica segundo diretrizes obstétricas, pois bacteriúria por estreptococo do grupo B tem implicações na profilaxia intraparto mesmo quando contagens e critérios de tratamento antenatal diferem.
+
+**Escolha do antibiótico:** opções para doença baixa podem incluir determinados beta-lactâmicos, nitrofurantoína e fosfomicina, conforme suscetibilidade, trimestre, função renal e contraindicações. Não assumir que todos os antibióticos considerados seguros fora da gestação o são durante toda gravidez. Nitrofurantoína exige atenção ao fim da gestação e à deficiência de G6PD; TMP-SMX demanda cautela por trimestre e disponibilidade de alternativas; fluoroquinolonas e tetraciclinas não são escolhas de rotina. **Pielonefrite não deve receber somente nitrofurantoína/fosfomicina oral**, pois não oferecem exposição renal suficiente.
+
+**Após tratar:** verificar remissão de sintomas, revisar cultura e planejar cultura de controle/repetição segundo protocolo obstétrico. Recorrência pode justificar investigação anatômica e, em alguns cenários, profilaxia individualizada; prescrição prolongada universal não é justificável.
+
+#### Vinheta resolvida de gestação
+Gestante de 18 semanas chega ao pré-natal sem disúria, mas urocultura de jato médio com crescimento significativo de *E. coli* e amostra adequada. É bacteriúria assintomática que merece tratamento por ser gestante, ainda que sem sintomas. A escolha deve seguir antibiograma e segurança fetal, e o seguimento inclui verificação de erradicação conforme protocolo. Se a mesma gestante apresentasse febre de 39 °C, calafrios, lombalgia e vômitos, o caso mudaria para suspeita de pielonefrite, com necessidade de avaliação hospitalar e antibioticoterapia sistêmica.
+
+### 18.2. Crianças: febre sem foco pode ser doença urinária
+
+A idade determina a apresentação. No lactente, febre isolada, recusa alimentar, irritabilidade e vômitos podem indicar ITU; na criança com linguagem desenvolvida, disúria, frequência aumentada, dor abdominal e dor no flanco são mais fáceis de reconhecer. Recém-nascidos podem ter hipotermia ou alteração de comportamento sem febre exuberante. A SBP orienta atenção ao método de coleta e à investigação de anomalias urinárias em perfis selecionados.
+
+**Atenção ao vínculo com a aula 123:** a presença de um exame de urina sugestivo em lactente pequeno febril **não apaga** o algoritmo de investigação de infecção bacteriana invasiva relacionado à idade. Especialmente em recém-nascidos e lactentes jovens, bacteremia/meningite podem coexistir, e a investigação deve seguir critérios pediátricos adequados.
+
+**Coleta confiável:** método de jato médio em crianças continentes; em não continentes, quando se busca cultura diagnóstica, preferir cateterismo ou aspiração suprapúbica conforme idade e serviço. O saco coletor tem alto risco de falso positivo por contaminação. Resultado de cultura precisa ser interpretado juntamente com inflamação urinária e quadro clínico; nem toda cultura positiva na criança significa infecção renal ativa.
+
+**Imagem após ITU febril:** ultrassom de rins e vias urinárias é considerado em muitos algoritmos de crianças pequenas ou ITU febril para pesquisar dilatação, obstrução ou alterações anatômicas; indicação e momento variam por faixa etária, evolução e diretriz. Uretrocistografia miccional não deve ser aplicada indiscriminadamente a toda criança após uma primeira ITU; costuma ser reservada a US alterado, recorrência ou outros fatores de risco definidos. Cintilografia renal pode ser utilizada em contextos de avaliação de parênquima/cicatriz, não como investigação imediata rotineira de toda cistite.
+
+**Refluxo vesicoureteral:** presença de refluxo não equivale a uma indicação automática de antibiótico profilático contínuo para todas as crianças. Graus, anomalias, ITU febril recorrente, disfunção vesicointestinal, constipação e consequências renais importam. O seguimento multidisciplinar pode incluir nefrologia/urologia pediátrica. Tratar constipação, micções disfuncionais e retenção é parte do cuidado preventivo.
+
+**Antibioticoterapia pediátrica:** não copiar dose fixa de adulto nem converter linearmente sem considerar peso, idade, função renal e dose máxima. A escolha varia entre recém-nascido com possível sepse, lactente febril, criança maior estável e criança com refluxo/obstrução. Prescrição pediátrica só deverá ser publicada com revisão da apresentação em mg/mL, mg/kg/dose versus mg/kg/dia, frequência, dose máxima, função renal e vias. A ausência dessa tabela validada mantém o material em revisão.
+
+### 18.3. Homens: próstata, obstrução e resistência
+Em um homem com disúria e polaciúria, a avaliação inclui síndrome urinária localizada, sinais sistêmicos, anomalia do trato, cálculo, retenção e comprometimento prostático. O diagnóstico de cistite estritamente localizada em homem jovem pode ocorrer, mas não deve ser presumido em homem febril. Na presença de febre, calafrios, dor pélvica/perineal ou retenção, considerar prostatite aguda e colher cultura; se houver instabilidade, avaliar internação e abscesso em paciente sem resposta.
+
+**Prostata e medicamentos:** antibiótico que funciona para urina vesical pode não atingir tecido prostático. A nitrofurantoína não é opção para pielonefrite e prostatite. Como a duração pode ser maior em síndrome febril/prostática, diferenciar abordagem EAU de ITU sistêmica masculina e recomendações IDSA 2025 para subgrupos; não apresentar curso curto como verdade universal.
+
+**Reincidências:** episódios repetidos com o mesmo agente podem sugerir foco persistente, inclusive próstata, cálculo ou obstrução. Repetir indefinidamente esquema empírico sem cultura e avaliação anatômica promove falhas e resistência.
+
+### 18.4. Idosos e pessoas em instituições de longa permanência
+Cultura positiva é comum em idosos com alterações de esvaziamento, incontinência ou dispositivos. Delirium, quedas, redução do apetite e urina malcheirosa não bastam isoladamente para atribuir infecção urinária. A IDSA 2019 recomenda observar e procurar outras causas em idosos com bacteriúria assintomática e delirium sem sintomas urinários nem instabilidade/sinais sistêmicos, em vez de tratar automaticamente a cultura.
+
+Em contrapartida, febre, choque ou infecção sistêmica sem fonte clara exigem abordagem imediata e podem justificar cobertura empírica para focos relevantes conforme avaliação. O erro oposto seria ignorar sepse apenas por receio de sobretratamento. O raciocínio adequado diferencia **colonização silenciosa** de **síndrome infecciosa real**, respeitando manifestações atípicas, mas não inventando causalidade.
+
+**Riscos farmacológicos ampliados:** polifarmácia, anticoagulantes, insuficiência renal, desidratação, QT prolongado, alterações glicêmicas e histórico de reações adversas podem tornar esquemas populares inadequados. Corrigir hidratação, revisar medicações, função renal e risco de quedas faz parte do cuidado.
+
+### 18.5. Cateter urinário: prevenção e avaliação de infecção associada
+Antes de solicitar culturas repetidas, perguntar por que a sonda está instalada. A retirada precoce do dispositivo quando não é necessário é intervenção preventiva de alta utilidade. O sistema de drenagem deve permanecer fechado conforme protocolos de controle de infecção; desconexões e manipulações desnecessárias favorecem colonização.
+
+Na suspeita de ITU associada a cateter, procurar sintomas e sinais compatíveis com doença clínica, excluindo outras origens de febre. Em pacientes com sonda crônica, piúria e bacteriúria podem refletir colonização. **Não usar odor, turvação ou piúria isolados como diagnóstico.** Quando é necessário tratar, discutir retirada/troca do cateter conforme duração e viabilidade, cultura apropriada e antibiótico guiado por gravidade e histórico microbiológico. Cultura retirada da bolsa coletora não deve orientar conduta como se fosse urina coletada esterilmente.
+
+### 18.6. Diabetes e imunossupressão
+Diabetes pode se associar a maior risco de determinadas infecções e complicações; entretanto, **bacteriúria assintomática em diabético não costuma justificar tratamento**, conforme IDSA 2019. Um episódio de cistite localizada em pessoa com diabetes estável deve ser classificado pela síndrome, condições anatômicas e gravidade, sem antibiótico de espectro máximo por reflexo.
+
+Em hiperglicemia importante, má perfusão, febre persistente, dor relevante ou falha terapêutica, considerar complicações como abscesso e pielonefrite enfisematosa, particularmente em pacientes diabéticos. Imagem e avaliação cirúrgico-urológica podem ser necessárias. Imunossupressão modifica sinais e risco de resistência, exigindo individualização.
+
+### 18.7. Transplante renal e outras uropatias
+O paciente transplantado pode apresentar apresentação clínica atípica e sinais mascarados por imunossupressão. A interpretação de bacteriúria assintomática depende da janela pós-transplante e de recomendações específicas; a IDSA 2019 desaconselha rastrear/tratar bacteriúria assintomática em transplantados renais **após mais de um mês** do procedimento, mas reconhece incertezas em janelas precoces. O cuidado deve seguir protocolo do centro transplantador, e febre/graft doloroso/disfunção do enxerto exigem investigação especializada urgente.
+
+Em bexiga neurogênica, retenção crônica e sondagem intermitente, achados microbiológicos são comuns; o alvo terapêutico é **infecção sintomática clinicamente significativa**, não esterilização de toda cultura. A avaliação inclui pressão intravesical, resíduo pós-miccional e medidas para reduzir estase.
+
+## 19. Bacteriúria assintomática: uma aula de prevenção quaternária
+
+A definição microbiológica tradicional em urina de jato médio utiliza crescimento significativo (frequentemente ≥10^5 UFC/mL) na ausência de sintomas urinários, com detalhes de confirmação e número de amostras dependendo de sexo e método. **Isso não é uma meta de erradicação bacteriana universal.** A bactéria pode colonizar sem causar dano que supere riscos do tratamento. Expor a pessoa a antimicrobianos pode produzir reações adversas, *Clostridioides difficile*, seleção de resistência e futuras ITUs por microrganismos mais difíceis.
+
+### Quem costuma precisar de rastreio/tratamento?
+1. **Gestantes**, usando urocultura e esquema compatível com gestação.
+2. **Pessoas antes de procedimentos urológicos endoscópicos com lesão de mucosa previsível**, para os quais bacteriúria aumenta risco pós-operatório; preferir cultura e tratamento dirigido/periprocedimento conforme guideline.
+
+### Quem em geral não deve receber antibiótico só porque a cultura está positiva?
+Adultos saudáveis não gestantes, idosos sem síndrome urinária/sistêmica, pessoas com diabetes, sondagem crônica, lesão medular com bacteriúria assintomática e pacientes antes de cirurgias não urológicas eletivas são exemplos listados pela IDSA 2019, ressalvadas exceções específicas e avaliação clínica real. O fato de haver exame “positivo” não substitui anamnese. Um prontuário eletrônico deveria alertar o profissional antes de prescrever antibiótico a paciente sem sintomas.
+
+### Questão de comunicação com o paciente
+“Seu exame identificou bactérias, mas não há sintomas de infecção urinária. Nessa situação, tratar pode trazer efeitos colaterais e resistência sem melhorar sua saúde. Vamos acompanhar os sintomas e procurar outras causas para suas queixas. Gestação e alguns procedimentos urológicos seguem regras diferentes.” Esta explicação diminui expectativa de remédio desnecessário e incentiva retorno por sinais clinicamente relevantes.
+
+## 20. Recorrência, reinfecção e prevenção longitudinal
+
+**Cistite recorrente** corresponde a pelo menos dois episódios em seis meses ou três em doze meses, idealmente com documentação de sintomas e cultura em recidivas. Diferenciar **reinfecção** (novo episódio, às vezes agente diferente) de **persistência/recidiva precoce**, que pode indicar tratamento ineficaz, cálculo, reservatório bacteriano ou anormalidade. Não pedir culturas de controle de rotina a toda mulher assintomática após cistite simples resolvida; mas investigar episódios que retornam rapidamente.
+
+### 20.1. O que perguntar antes de indicar profilaxia?
+- Os episódios foram realmente acompanhados de sintomas? Houve cultura ou diagnóstico apoiado em história clássica?
+- Há relação temporal com atividade sexual, novo produto intravaginal ou mudança hormonal?
+- Há menopausa, ressecamento vaginal, retenção urinária ou prolapsos sintomáticos?
+- Existe constipação importante ou disfunção miccional?
+- Há exposição a antibióticos recentes, ESBL prévio ou falha de tratamento?
+- Há sinal de risco anatômico: cálculos, cirurgia, hematuria persistente, ITU febril de repetição ou queda de função renal?
+
+### 20.2. Medidas comportamentais e escolhas informadas
+Ingesta hídrica apropriada em quem habitualmente bebe pouco pode reduzir recorrência em alguns contextos; não recomendar hiperhidratação indiscriminada em insuficiência cardíaca ou renal. Reduzir manipulações de dispositivos, tratar constipação, evitar espermicidas quando implicados em recorrências e orientar esvaziamento adequado podem ter benefício individual. Higiene extrema, duchas vaginais e antibióticos “preventivos” repetidos sem indicação podem ser contraproducentes.
+
+Em mulheres pós-menopausa com recorrência e síndrome geniturinária, **estrogênio vaginal** pode ser opção eficaz, dependendo de contraindicações, riscos pessoais e decisão compartilhada. Profilaxia antibiótica contínua ou pós-coito é reservada a casos selecionados, com avaliação de resistência, efeitos adversos, duração definida e revisão periódica. Estratégia de autoinício do tratamento pode ser adequada para pessoa bem orientada com episódios prévios claramente documentados, não para febre ou lombalgia sem avaliação.
+
+Produtos como cranberry, D-manose, probióticos e imunoprofilaxias têm evidências e disponibilidades variáveis; não apresentar todos como intervenção de eficácia comprovada equivalente. A EAU 2026 discute essas opções com níveis de evidência distintos e salienta avaliação individualizada.
+
+### 20.3. Quando encaminhar?
+Encaminhamento urológico/nefrológico é mais relevante diante de ITU febril recorrente, suspeita de cálculo/obstrução, bacteriúria persistente associada a alterações anatômicas, disfunção miccional significativa, hematúria persistente, falha repetida após terapia adequada, criança com achado de imagem relevante e transplante renal com suspeita de infecção do enxerto. Consulta de infectologia é útil quando resistência extensa, opções orais limitadas ou complexidade farmacológica.
+
+## 21. Complicações por mecanismo
+
+### 21.1. Abscesso renal e perinéfrico
+A infecção renal persistente pode produzir coleção focal. Pensar quando febre, dor ou inflamação não melhoram sob terapia efetiva, especialmente em diabetes, obstrução e imunossupressão. O tamanho/local da coleção e o estado clínico determinam necessidade de drenagem percutânea ou abordagem cirúrgica, além de antibiótico. A imagem deve ser escolhida com objetivo de responder à presença e localização da coleção.
+
+### 21.2. Pielonefrite enfisematosa
+É infecção necrosante associada a gás no parênquima renal e/ou tecidos adjacentes, historicamente mais observada em diabetes e obstrução, frequentemente causada por enterobactérias. Deve ser distinguida de gás apenas no sistema coletor e de ar introduzido por instrumentação. Exige antimicrobianos sistêmicos, controle metabólico, imagem e avaliação imediata de drenagem/intervenção, conforme extensão e estabilidade.
+
+### 21.3. Injúria renal aguda e disfunção sistêmica
+IRA pode decorrer de sepse/hipoperfusão, obstrução bilateral ou em rim único, nefrotoxicidade medicamentosa e inflamação grave. Monitorar diurese, creatinina e eletrólitos, reconhecendo que creatinina aumenta com atraso em relação à lesão. Em paciente com rim único obstruído, oligúria/anúria exigem urgência maior.
+
+### 21.4. Bacteremia, choque e consequências obstétricas
+A invasão sistêmica pode causar bacteremia e sepse. A urina nem sempre cresce após doses prévias de antibiótico; culturas negativas não excluem doença clínica quando outros elementos sustentam diagnóstico. Na gestação, infecção renal está associada a complicações maternas e obstétricas, exigindo coordenação entre clínica, obstetrícia e urologia se houver obstrução.
+
+### 21.5. Lesão renal pediátrica
+Episódios de pielonefrite podem estar associados a cicatrizes renais em crianças selecionadas, sobretudo com refluxo de alto grau, anomalia e episódios recorrentes, mas nem toda ITU febril produz cicatriz clinicamente relevante. A investigação precisa evitar tanto omissão de anomalia importante quanto imagem invasiva desnecessária em toda criança com cistite.
+
+## 22. Algoritmos de atendimento para revisão rápida
+
+### Algoritmo 1 — disúria em mulher não gestante
+1. **Primeiro:** há febre, calafrio, lombalgia, vômito, hipotensão, gestação, instabilidade ou obstrução possível? Se sim, sair da rota de cistite simples e avaliar ITU sistêmica/complicada.
+2. Se não, confirmar sintomas de trato baixo; perguntar por corrimento, prurido, lesões e risco de IST.
+3. Em história típica e baixo risco, reconhecer cistite provável; decidir se EAS/cultura agrega valor ou se história basta.
+4. Escolher tratamento para bexiga, com resistência local e contraindicações, e explicitar sinais de retorno.
+5. Se sintomas persistirem, piorarem ou recidivarem cedo, solicitar cultura (se não coletada), reavaliar diagnóstico e escolha do fármaco, além de causas não bacterianas.
+
+### Algoritmo 2 — febre, dor no flanco ou suspeita de pielonefrite
+1. Sinais vitais, perfusão, diurese e tolerância oral; pesquisar gravidez, rim único, litíase, sondas, cirurgia, ESBL prévio, diabetes e imunossupressão.
+2. Colher urina tipo 1 e urocultura com antibiograma antes do antimicrobiano quando não houver atraso relevante; solicitar exames sistêmicos conforme gravidade.
+3. Suspeita de obstrução, cálculo ou disfunção renal? Acionar avaliação/imagem urgente e urologia se obstruído.
+4. Instável, vômitos, risco alto ou gestação com pielonefrite: internar/avaliar terapia parenteral e controle de foco.
+5. Estável, baixo risco, acompanhamento garantido: pode receber terapia ambulatorial efetiva, sob cultura e reavaliação em 48–72 h.
+6. Quando cultura retornar, descalonar e ajustar duração conforme resposta e riscos.
+7. Persistência de febre/dor após 48–72 h: rever sensibilidade, aderência, absorção, abscesso, obstrução e diagnóstico diferencial; considerar imagem.
+
+### Algoritmo 3 — cultura positiva sem sintomas
+1. Confirmar qualidade da amostra e ausência de sintomas urinários/sistêmicos atribuíveis.
+2. Há **gestação** ou procedimento urológico endoscópico com lesão de mucosa programado? Sim: avaliar tratamento dirigido e tempo específico.
+3. Caso contrário, na maioria das populações, **não tratar apenas a bacteriúria**; pesquisar outras causas de sintomas inespecíficos e orientar sinais de alarme.
+4. Evitar repetir cultura sem pergunta clínica definida, pois múltiplas coletas podem gerar cascatas terapêuticas desnecessárias.
+
+### Algoritmo 4 — infecção + cálculo obstrutivo
+1. Febre, calafrios ou sepse e imagem com cálculo e dilatação proximal: não classificar como simples cólica renal.
+2. Reanimar e iniciar antibiótico efetivo oportunamente, com coleta de culturas se possível.
+3. Consultar urologia de urgência para drenagem por stent ureteral ou nefrostomia conforme anatomia/serviço.
+4. Monitorar perfusão, diurese, função renal e resposta.
+5. Após recuperação infecciosa, programar tratamento definitivo do cálculo e avaliação de prevenção metabólica quando indicado.
+
+## 23. Casos clínicos comentados — seis cenários que o texto deve permitir resolver
+
+### Caso 1 — cistite aguda esporádica versus vulvovaginite
+**Apresentação:** mulher de 27 anos, não gestante, há 24 horas com disúria e urgência urinária, sem febre, dor lombar, corrimento vaginal ou prurido. Sinais vitais normais e exame sem dor costovertebral. Não tem doença renal conhecida e nunca apresentou ITU.
+**Hipótese principal:** cistite localizada esporádica.
+**Raciocínio:** síndrome de trato baixo típica e ausência de sinais sistêmicos favorecem cistite; ausência de sintomas vaginais reduz probabilidade de vulvovaginite/uretrite como explicação exclusiva. Uma cultura não é obrigatória em todo quadro simples, embora possa ser solicitada conforme contexto e política local. Perguntar sobre possibilidade de gravidez é essencial quando aplicável.
+**Exames:** não solicitar automaticamente hemocultura, tomografia ou função renal sem indicações; EAS e cultura são seletivos neste cenário.
+**Conduta:** tratamento dirigido à bexiga por opção adequada ao contexto local, considerando nitrofurantoína na formulação correta ou fosfomicina, contraindicações e preferência. Orientar hidratação habitual, melhora esperada e retorno por febre, flanco, vômitos, piora ou persistência.
+**Por que importa:** caso ensina a evitar excesso de exames e fluoroquinolona de rotina. Se a mesma paciente tivesse corrimento, o diagnóstico diferencial mudaria consideravelmente.
+
+### Caso 2 — pielonefrite em adulta com cultura em andamento
+**Apresentação:** mulher de 36 anos, febre de 38,9 °C, calafrios, náusea, dor em flanco direito e disúria iniciada dois dias antes. PA 118/74, FC 105, orientada, tolera líquidos em pequenos volumes. Não há gestação conhecida. Punho-percussão direita dolorosa.
+**Hipótese principal:** pielonefrite aguda; necessidade de estratificar gravidade/obstrução e possibilidade de tratamento ambulatorial.
+**Raciocínio:** sintomas sistêmicos e costovertebrais tornam diagnóstico de cistite isolada inadequado. Não escolher nitrofurantoína ou fosfomicina oral em dose única, mesmo que seja o medicamento “mais prescrito para ITU”. Identificar fatores de risco de resistência, avaliar perfusão e verificar possibilidade de gravidez.
+**Exames:** urinálise e urocultura antes do primeiro antibiótico, creatinina e hemograma conforme risco; imagem se houver cálculo, alteração renal, dificuldade diagnóstica ou evolução desfavorável.
+**Conduta:** se baixo risco e boa tolerância oral, pode ser considerada terapia ambulatorial com antibiótico de atividade renal e suscetibilidade provável, reavaliação próxima e ajuste quando cultura chegar. Se houver vômitos persistentes, piora ou sinais sépticos, preferir internação/terapia parenteral.
+**Por que importa:** febre e dor no flanco transformam a síndrome e os requisitos farmacocinéticos.
+
+### Caso 3 — litíase obstrutiva infectada: antibiótico isolado não basta
+**Apresentação:** homem de 53 anos com cálculo ureteral conhecido, febre de 39,3 °C, hipotensão 88/52 mmHg, confusão e oligúria. TC revela dilatação pielocalicial acima de cálculo proximal de ureter.
+**Hipótese principal:** infecção urinária sistêmica/urosepse com obstrução da drenagem.
+**Raciocínio:** existe foco infectado sob pressão; a escolha do antibiótico é indispensável, mas a drenagem precisa ser restaurada. A hipotensão e confusão indicam emergência com disfunção orgânica.
+**Exames:** hemoculturas/urocultura se coletáveis sem atrasar terapia, lactato, função renal, eletrólitos e avaliação de sepse. Imagem já define fator obstrutivo.
+**Conduta:** ressuscitação imediata, antimicrobiano parenteral de ampla probabilidade de atividade conforme epidemiologia/risco e **consulta urológica urgente para descompressão** por cateter ureteral ou nefrostomia. Monitorização hospitalar intensiva conforme resposta. Tratar definitivamente o cálculo após controle da infecção.
+**Por que importa:** uma das mais importantes emergências urológicas cobradas; o “pulo do gato” é reconhecer necessidade de controle do foco.
+
+### Caso 4 — bacteriúria na gestação sem sintoma
+**Apresentação:** gestante de 22 semanas em acompanhamento habitual, sem disúria, febre, lombalgia ou urgência. Urocultura adequada identifica *E. coli* em contagem significativa; antibiograma disponível.
+**Hipótese:** bacteriúria assintomática da gestação.
+**Raciocínio:** a maioria dos adultos não gestantes assintomáticos não deve receber antibiótico só por bacteriúria. Na gestação, há recomendação de rastreamento/tratamento pela associação com progressão e eventos maternos/fetais. Não confundir colonização vaginal e cultura de urina contaminada; confirmar amostra interpretável.
+**Exames:** correlacionar cultura com sintomas, data e protocolo obstétrico. A urina tipo 1 isolada não substitui urocultura para avaliação de bacteriúria.
+**Conduta:** escolher antibiótico seguro para a idade gestacional e ativo contra o isolado, com plano de controle microbiológico conforme diretriz/serviço. Se surgirem febre, dor lombar ou vômitos, encaminhar imediatamente por suspeita de pielonefrite e necessidade de hospitalização.
+**Por que importa:** ilustra exceção clássica às regras de não tratar bacteriúria assintomática.
+
+### Caso 5 — idoso com delirium e cultura positiva
+**Apresentação:** homem de 84 anos residente em instituição, sem febre, sem disúria, sem dor suprapúbica ou lombar. Apresenta sonolência e confusão após introdução de sedativo; urina colhida por rotina mostra piúria e cultura positiva.
+**Hipóteses:** delirium multifatorial/iatrogênico com bacteriúria assintomática; pesquisar outras causas.
+**Raciocínio:** a prevalência de bacteriúria em idosos institucionalizados é alta. Não existe prova de que antibiótico para bactéria urinária silenciosa resolva delirium sem sinais clínicos de ITU; o sedativo recente é explicação plausível que precisa de revisão, mas não pode ser assumida sem exame.
+**Exames:** avaliação de hidratação, medicamentos, retenção, fecaloma, glicemia, eletrólitos, oxigenação, outras infecções e achados neurológicos. Reavaliar caso surjam sinais sistêmicos.
+**Conduta:** não iniciar antibiótico apenas por piúria/cultura, revisar medicação e fatores precipitantes, monitorar e tratar causas reconhecidas. Instabilidade ou febre posterior mudam avaliação.
+**Por que importa:** importante exemplo de prevenção quaternária e uso racional de antibióticos.
+
+### Caso 6 — lactente febril com urina suspeita
+**Apresentação:** lactente de 45 dias, a termo, febre documentada de 38,4 °C, sem tosse e sem foco evidente no exame. Está alerta, mas mais irritado. Urina coletada por saco tem leucócitos e cultura com crescimento misto.
+**Hipóteses:** ITU febril possível, cultura contaminada provável; infecção bacteriana invasiva deve ser estratificada conforme idade.
+**Raciocínio:** um saco coletor com cultura positiva/mista não confirma ITU. A idade de 45 dias exige algoritmo específico de lactente febril (aula 123), não regra de pré-escolar. Exames de sangue e LCR dependem dos critérios da diretriz elegível e marcadores de risco.
+**Exames:** nova urina por método adequado (cateterização ou punção suprapúbica conforme indicação), hemocultura e marcadores segundo protocolo 29–60 dias, análise clínica seriada.
+**Conduta:** avaliação pediátrica, antibioticoterapia e destino de acordo com risco, cultura e possibilidades de seguimento. Não dar alta apenas por boa aparência sem cumprir critérios, nem diagnosticar ITU definitiva com cultura de saco.
+**Por que importa:** conecta dois capítulos e ensina que qualidade da coleta e risco etário são tão importantes quanto a bactéria isolada.
+
+## 24. Questões autorais estilo residência — oito itens com comentário de cada alternativa
+
+### Questão 1 — localização anatômica e escolha do medicamento
+Mulher de 31 anos tem febre, calafrios, dor lombar e vômitos. EAS revela piúria e nitrito positivo. Qual tratamento isolado seria **inadequado** por não atingir exposição renal suficiente?
+A. Nitrofurantoína oral para tratar como cistite simples.  
+B. Antibiótico sistêmico ativo conforme gravidade e sensibilidade.  
+C. Antibioticoterapia intravenosa em paciente com sepse ou vômitos persistentes.  
+D. Tratamento com revisão após cultura e descalonamento quando possível.
+
+**Gabarito A.** Nitrofurantoína alcança altas concentrações na urina, mas não deve ser usada para pielonefrite. **B** descreve a exigência de penetração renal; a seleção ainda precisa ser individualizada. **C** é pertinente se internação/IV for indicada. **D** é conduta de stewardship. **Conceito:** diagnóstico anatômico determina farmacocinética necessária.
+
+### Questão 2 — sepse e obstrução
+Homem de 62 anos tem febre, hipotensão e TC com cálculo ureteral obstrutivo, hidronefrose e sinais de infecção urinária. Qual é a atitude essencial além da ressuscitação e do antibiótico?
+A. Manter apenas alfa-bloqueador por quatro semanas.  
+B. Proibir qualquer drenagem até a urocultura negativar.  
+C. Descompressão urgente da via urinária por urologia.  
+D. Enviar ao ambulatório para litotripsia eletiva sem estabilização.
+
+**Gabarito C.** Infecção com obstrução exige controle do foco; drenagem urgente melhora possibilidade de resolução. **A** pode ter lugar em cálculos selecionados *não infectados*, não na sepse obstrutiva. **B** inverte sequência e perpetua infecção. **D** posterga intervenção que salva órgão/vida. **Conceito:** obstrução infectada é emergência urológica.
+
+### Questão 3 — cultura positiva no idoso
+Idosa institucionalizada apresenta queda sem lesões, está afebril e não tem queixas urinárias ou sinais sistêmicos. Exame de urina feito sem indicação clínica revelou bactérias e leucócitos. Melhor conduta?
+A. Prescrever antibiótico de largo espectro independentemente do exame clínico.  
+B. Avaliar causas de queda e outros problemas e não tratar bacteriúria assintomática isolada.  
+C. Fazer duas semanas de ciprofloxacino para “limpar” urina.  
+D. Interpretar piúria como confirmação de pielonefrite.
+
+**Gabarito B.** Cultura positiva e piúria sem síndrome clínica não provam ITU. **A/C** aumentam dano e resistência. **D** ignora sinais de doença renal/sistêmica. **Conceito:** não tratar exame isolado é ação de segurança, não negligência.
+
+### Questão 4 — gestação
+Gestante sem sintomas realiza urocultura de pré-natal com bacteriúria significativa confirmada. Qual alternativa reflete recomendação usual?
+A. Não considerar achado porque ausência de disúria exclui risco.  
+B. Solicitar TC como primeiro exame de todas as gestantes.  
+C. Tratar somente se houver choque séptico.  
+D. Avaliar tratamento com antibiótico seguro e ativo para a gestação, com plano de seguimento microbiológico.
+
+**Gabarito D.** A bacteriúria assintomática gestacional é exceção relevante ao não tratamento em outras populações. **A/C** ignoram prevenção de progressão. **B** não é procedimento de rotina e expõe a exames desnecessários. **Conceito:** gestação modifica benefício-risco do rastreio.
+
+### Questão 5 — método de coleta pediátrica
+Lactente de 8 meses com febre sem foco faz cultura de urina por saco coletor, com crescimento de duas espécies e baixa contagem. Qual interpretação é mais adequada?
+A. Cultura de saco com crescimento misto comprova pielonefrite.  
+B. A ausência de disúria afasta ITU infantil.  
+C. O resultado pode estar contaminado; cultura diagnóstica deve usar técnica apropriada e ser interpretada com quadro e urinálise.  
+D. A cultura por saco é tão específica quanto punção suprapúbica.
+
+**Gabarito C.** A contaminação é problema relevante no método de saco, e o contexto clínico requer coleta válida. **A/D** superestimam especificidade. **B** desconsidera sinais inespecíficos do lactente. **Conceito:** a qualidade da amostra sustenta o diagnóstico.
+
+### Questão 6 — urocultura e tratamento direcionado
+Mulher de 49 anos internada por pielonefrite respondeu clinicamente à terapia venosa inicial. Urocultura mostra *E. coli* sensível a antibiótico oral com níveis adequados no trato superior. Está hemodinamicamente estável e tolera alimentação. Qual princípio é mais apropriado?
+A. Manter necessariamente o mesmo antibiótico venoso até completar 21 dias.  
+B. Considerar transição para tratamento oral efetivo e descalonamento conforme sensibilidade, resposta e controle de foco.  
+C. Trocar para fosfomicina oral em dose única em qualquer pielonefrite.  
+D. Suspender antibiótico após 24 horas apenas porque não há febre.
+
+**Gabarito B.** IDSA 2025 apoia transição IV–VO em pacientes selecionados, desde que antibiótico atinja sítio e tenha atividade. **A** amplia duração e acesso venoso sem justificativa. **C** ignora exposição renal de fosfomicina oral. **D** não considera duração total efetiva. **Conceito:** via, espectro e duração devem ser reavaliados conforme evolução.
+
+### Questão 7 — uretrite ou cistite?
+Mulher de 23 anos relata ardor urinário associado a corrimento mucopurulento, sangramento após relação e novo parceiro sexual. Sem febre nem lombalgia. Melhor interpretação?
+A. Disúria prova ITU por *E. coli* e dispensa avaliação sexual.  
+B. Corrimento torna pielonefrite o diagnóstico mais provável.  
+C. Solicitar apenas ultrassonografia renal de rotina.  
+D. Considerar cervicite/uretrite por IST e realizar abordagem dirigida, além de avaliar necessidade de urina e teste gestacional.
+
+**Gabarito D.** Sintomas genitais deslocam probabilidade para IST/cervicite, embora infecções possam coexistir. **A** assume agente e desconsidera contexto. **B** não corresponde ao padrão sistêmico. **C** ignora hipótese mais relevante. **Conceito:** disúria é sintoma, não etiologia.
+
+### Questão 8 — recorrência sem febre
+Mulher de 60 anos, pós-menopausa, apresenta quatro episódios de cistite sintomática documentada no último ano, sem febre e sem achado obstrutivo conhecido. Pergunta se precisa de ciprofloxacino todos os dias por tempo indeterminado. Qual resposta é melhor?
+A. Antibioticoprofilaxia ampla é primeira escolha universal.  
+B. Investigar padrão de recorrência, fatores locais, função vesical e opções preventivas, incluindo estrogênio vaginal quando indicado, reservando profilaxia antibiótica a casos selecionados.  
+C. Repetir urocultura semanal até não crescer nenhuma bactéria, mesmo sem sintomas.  
+D. Presumir pielonefrite crônica em toda mulher com recorrência.
+
+**Gabarito B.** A prevenção deve ser individualizada e proporcional; mulheres pós-menopausa podem se beneficiar de estratégias locais. **A** promove resistência. **C** trata colonização e exames isolados. **D** transforma cistite recorrente em doença renal sem evidência. **Conceito:** recorrência exige plano longitudinal e documentação, não exposição antibiótica ilimitada.
+
+## 25. Pulo do Gato LURIA — revisão de alta utilidade
+
+**1. Infecção localizada e sistêmica são síndromes diferentes.** A EAU 2026 enfatiza sinais sistêmicos; “ter bactéria na urina” não define a topografia nem a gravidade. Disúria isolada e febre com dor lombar exigem estratégias terapêuticas distintas.
+
+**2. Bactéria em cultura não obriga tratamento.** Gestantes e pessoas em determinados procedimentos urológicos endoscópicos são exceções clássicas para rastrear/tratar bacteriúria assintomática. Não transformar delirium isolado com cultura positiva em “ITU” sem avaliação clínica.
+
+**3. Se há obstrução e infecção, drene.** Febre + cálculo obstrutivo, especialmente com sinais de choque, exige antibiótico e descompressão urgente; terapia expulsiva isolada é insuficiente.
+
+**4. Cefalosporina não é classe homogênea.** Diferenças de absorção, concentração sistêmica/renal, susceptibilidade e dose impedem substituir arbitrariamente um regime venoso por comprimido apenas porque ambos têm “cef” no nome.
+
+**5. Nitrofurantoína serve à bexiga, não ao parênquima renal.** Fosfomicina trometamol oral em dose única também não é opção de pielonefrite. Essa é uma das mais frequentes armadilhas terapêuticas.
+
+**6. O antibiograma responde só parte da questão.** Sítio da doença, função renal, gestação, risco de resistência e foco persistente determinam eficácia clínica.
+
+**7. O teste precisa de interpretação pré-analítica.** Cultura por saco coletor em lactente, amostra de bolsa de sonda e urina com crescimento misto podem confundir. A coleta é parte da validade diagnóstica.
+
+**8. Antibiótico curto não significa antibiótico insuficiente.** Em paciente selecionado com resposta e controle de foco, diretrizes 2025 apoiam cursos mais curtos; jamais reduzir sem considerar prostatite, abscesso, obstrução e antibiótico ativo.
+
+**9. Falha de resposta exige hipótese nova.** Em 48–72 h de febre/dor persistentes, pensar resistência, retenção, cálculo, abscesso, aderência, absorção, mal diagnóstico e sepse, antes de apenas adicionar mais dias de mesmo remédio.
+
+**10. Em gestante ou pequeno lactente, siga algoritmo próprio.** Um tratamento de cistite adulta não pode ser transcrito a mulher grávida febril ou criança de 45 dias.
+
+## 26. Camada visual — dez candidatas com finalidade clínica (NÃO INCORPORADAS)
+
+Estas candidatas são especificações de busca e aprovação, não imagens encontradas, licenciadas ou publicadas. Não cadastrar URL ou fonte não verificada; toda imagem real deverá passar por revisão de autoria, direitos de uso comercial, fidelidade diagnóstica e fluxo Admin.
+
+| # | Figura planejada | Ponto do capítulo | O que o aluno deve aprender |
+|---|---|---|---|
+| 1 | Anatomia dos ureteres, pelves e junções ureterovesicais | 10.1 | Relacionar estase, refluxo e obstrução com ITU ascendente |
+| 2 | Desenho autoral da barreira urotelial e adesão bacteriana | 10.2 e 11.1 | Diferenciar colonização de invasão e resposta inflamatória |
+| 3 | Fluxograma de amostragem urinária por idade | 14.2 e 18.2 | Entender risco de contaminação em saco coletor |
+| 4 | Fotomicrografia/urocultura de laboratório educativo sob licença válida | 14.2 | Interpretar colônias, culturas mistas e método |
+| 5 | Ultrassonografia real de hidronefrose | 16.3 | Reconhecer dilatação do sistema coletor |
+| 6 | TC real de cálculo ureteral obstrutivo associado a hidronefrose | 16.3 | Localizar obstrução e interpretar urgência |
+| 7 | TC de abscesso renal com legenda anatômica | 21.1 | Distinguir coleção de pielonefrite difusa |
+| 8 | TC de pielonefrite enfisematosa sob licença válida | 21.2 | Identificar gás parenquimatoso e gravidade |
+| 9 | Algoritmo autoral de cistite versus pielonefrite | 22 | Ligar síndrome ao espectro do antibiótico |
+| 10 | Quadro de gestação e idades pediátricas | 18 | Impedir extrapolação de protocolos do adulto |
+
+**Metadados exigidos quando houver candidata real:** título, origem institucional, autor, licença, URL de origem, seção de destino, legenda médica original, motivo pedagógico, estado da revisão jurídica e verificação de que o arquivo admite o uso no site comercial. Imagens não precisam ser inventadas nem copiadas de cursinhos para preencher número.
+
+## 27. Referências rastreáveis, precedência e limites
+
+**Diretrizes brasileiras prioritárias:**
+1. FEBRASGO. *Infecções do trato urinário durante a gravidez*. 3ª ed. São Paulo, 2024. Protocolo FEBRASGO-Obstetrícia nº 9, Comissão Nacional Especializada em Gestação de Alto Risco. Índice institucional FEBRASGO: https://www.febrasgo.org.br/ — conferir texto normativo e política de reprodução antes de incorporar quadros ou imagens.
+2. Sociedade Brasileira de Pediatria, Departamento Científico de Nefrologia. *Infecção urinária: diagnóstico, investigação e prevenção*. Setembro de 2023. Índice com documento: https://www.sbp.com.br/departamentos/nefrologia/documentos-cientificos/
+3. Sociedade Brasileira de Pediatria. *Infecção urinária na criança*. Texto de orientação, atualizado em maio de 2023: https://www.sbp.com.br/pediatria-para-familias/doencas/infeccao-urinaria-na-crianca/
+4. Ministério da Saúde. *Manual de Gestação de Alto Risco*. Edição 2022, capítulos sobre infecções urinárias e pielonefrite. Repositório BVS MS: https://bvsms.saude.gov.br/ — cotejar com protocolo FEBRASGO e regras locais antes de publicar doses obstétricas.
+5. Hospital Universitário da Universidade Federal do Ceará/Ebserh (Maternidade Escola Assis Chateaubriand). Protocolo *Infecção do Trato Urinário*, versão 6, 17/09/2025. Exemplo de rotina institucional de rastreio gestacional que não substitui política nacional.
+
+**Diretrizes internacionais aplicadas explicitamente:**
+6. European Association of Urology (EAU). *Guidelines on Urological Infections*. Edição apresentada em Londres, 2026. Classificação de ITU localizada/sistêmica, cistite, pielonefrite, antimicrobianos e seguimento. https://uroweb.org/guidelines/urological-infections/chapter/the-guideline
+7. Infectious Diseases Society of America (IDSA). *2025 Guideline on Management and Treatment of Complicated Urinary Tract Infections* — seleção empírica, descalonamento, transição IV–VO e duração. https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/
+8. Nicolle LE et al. *Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019 Update by the IDSA*. Clin Infect Dis 2019;68(10):e83–e110. https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/
+
+**Nota sobre referências:** não afirmar que “o Brasil recomenda exatamente a mesma duração” apenas por diretriz IDSA/EAU; selecionar protocolo do serviço para posologia assistencial. O material de benchmark do Drive é **comparação pedagógica**, nunca fonte de recomendações mais forte que diretrizes atuais, nem autorização de copiar seu conteúdo. Informações epidemiológicas sem fonte nacional precisa não foram expressas em taxas fixas.
+
+## 28. Matriz de cobertura e teste de autossuficiência
+
+| Competência clínica | Seções que ensinam | Verificação independente |
+|---|---|---|
+| Distinguir colonização de doença | 11.3, 12, 19 | Caso 5 / Questão 3 |
+| Separar cistite de pielonefrite | 12–13, 17 | Caso 1–2 / Questão 1 |
+| Interpretar EAS sem exagerar nitrito | 14.1 | Discussão de Caso 2 |
+| Escolher coleta/urocultura adequada | 14.2, 18.2 | Caso 6 / Questão 5 |
+| Reconhecer sepse e obstrução | 10.4, 16.3, 22 | Caso 3 / Questão 2 |
+| Selecionar opções de cistite | 17.2 | Caso 1 |
+| Reconhecer alternativas inadequadas em pielonefrite | 17.3–17.4 | Questão 1 |
+| Decidir troca IV→VO e duração | 17.5–17.7 | Questão 6 |
+| Identificar gestação como exceção | 18.1, 19 | Caso 4 / Questão 4 |
+| Reconhecer possíveis ISTs | 15 | Questão 7 |
+| Prevenir recorrência sem abuso | 20 | Questão 8 |
+| Planejar revisão na falha | 16.2, 21, 22 | Algoritmo 2 |
+
+**Lacunas ainda presentes antes de certificação:**
+- [ ] Rever todos os trechos com médico responsável e verificar divergências de diretrizes, especialmente gravidez, homens febris, antibiograma e duração.
+- [ ] Completar doses, formulações e esquemas brasileiros para gestante, criança e paciente com insuficiência renal, sem prescrição automática e sem extrapolar do adulto.
+- [ ] Quantificar caracteres **didáticos líquidos**, excluindo menus, listas de pendência, citações e bibliografia; a mera extensão Markdown não equivale a qualidade.
+- [ ] Cotejar profundidade e capítulos com uma apostila realmente equivalente do Google Drive; os dois materiais abertos foram correlatos mas não equivalentes.
+- [ ] Pesquisar e validar dez imagens candidatas reais ou figuras originais, revisar licenças e enviar ao Admin para aprovação; preservar imagens já aprovadas.
+- [ ] Rodar validações sintáticas e inspeção visual quando texto for convertido/integrado no formato final da LURIA.
+- [ ] Testar resolução de questões externas adicionais apenas pelo material; expandir capítulos onde o teste revelar lacunas.
+- [ ] Confirmar atualização 2026 de todas as fontes e disponibilidade de medicamentos no SUS/local.
+
+**Parecer editorial desta versão:** corpo principal e camada de casos/questões agora substanciais, com raciocínio clínico e fontes explícitas, mas ainda **rascunho em revisão**; não substituir a futura apostila final nem declarar publicação no site.
