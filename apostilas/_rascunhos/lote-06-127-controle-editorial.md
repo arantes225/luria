@@ -35,3 +35,55 @@ Estes resumos não foram identificados como apostila longa oficial Estratégia M
 
 ## Proibições e gates
 Não modificar \`main\`, não realizar deploy/merge, não inserir imagem sem licença/avaliação/Admin. Benchmark extenso institucional não disponível; registrar limitação. Revisão clínica em emergência/endoscopia, validação farmacológica e execução de scripts oficiais são obrigatórias antes da publicação.
+
+---
+
+## Etapa 2 — conteúdo integral e prévia estrutural (15/10/2026)
+
+**Arquivos efetivamente salvos e conferidos na branch editorial:**
+- `apostilas/_rascunhos/lote-06-127-hemorragia-digestiva-alta.md`: **90.335 caracteres brutos**, 29 capítulos numerados. Corpo didático 1–25, casos 26, questões 27, referências 28 e controle 29.
+- `apostilas/_rascunhos/lote-06-127-build-input-preliminar.json`: 28 seções de conteúdo convertidas para HTML (incluindo apresentação, casos e questões), 10 referências, nenhuma imagem embutida, status rascunho.
+- `apostilas/_rascunhos/lote-06-127-preview.html`: **109.081 caracteres HTML** no template LURIA; 29 seções contando bibliografia, `noindex,nofollow`, 8 casos, 12 questões e 12 listas A–D.
+- `apostilas/_rascunhos/lote-06-127-imagens-candidatas-parciais.json`: 10 candidatos de imagens/diagramas com página de origem, autor, termos declarados e finalidade didática; 1 alternativa descartada por marca-d'água.
+
+**Contagem preliminar de conteúdo instrucional:** aproximadamente **61.940 caracteres** nos capítulos 1–25, sem casos, questões, referências ou controle editorial, depois de remover URLs e marcadores Markdown básicos. Isso **não certifica** 60 mil caracteres semanticamente únicos e úteis ou conteúdo médico aprovado.
+
+### Auditoria estrutural
+- 29 capítulos numerados consecutivamente, 8 casos comentados, 12 questões autorais A–D;
+- HTML: 12 conjuntos de alternativas, 0 âncoras quebradas e 0 IDs duplicados;
+- Sem imagens não aprovadas incorporadas;
+- Não foram encontrados parágrafos longos literalmente idênticos na triagem, mas redundância semântica e fluidez ainda precisam revisão.
+- **12/12 questões** têm conceitos centrais identificáveis no corpo didático por matriz lexical previamente definida; o teste não prova qualidade do raciocínio e de cada alternativa.
+
+### Matriz de autossuficiência lexical
+| Questão | Conceito principal | Capítulos de apoio | Resultado |
+| --- | --- | --- | --- |
+| 1 | HDA maciça e hematoquezia | 1–2 | Cobertura preliminar |
+| 2 | Janela EDA NV | 7 | Cobertura preliminar |
+| 3 | Forrest IIa | 8 | Cobertura preliminar |
+| 4 | Forrest IIb e ESGE 2026 | 8–9 | Cobertura preliminar |
+| 5 | Adrenalina não isolada | 9 | Cobertura preliminar |
+| 6 | IBP de alta dose pós-hemostasia | 10 | Cobertura preliminar |
+| 7 | Vasoativo/antibiótico antes da EDA | 13 | Cobertura preliminar |
+| 8 | TAE e cirurgia | 9/19 | Cobertura preliminar |
+| 9 | Retorno de anticoagulação | 15 | Cobertura preliminar |
+| 10 | Mallory–Weiss e Boerhaave | 3/12 | Cobertura preliminar |
+| 11 | Glasgow–Blatchford | 6 | Cobertura preliminar |
+| 12 | Fístula aortoentérica | 3/18 | Cobertura preliminar |
+
+### Curadoria de imagem — status real
+Os 10 candidatos incluem **úlcera sangrante, vaso visível, úlcera profunda, varizes sangrantes, sinais vermelhos de variz, ligadura, úlceras pós-ligadura e diagramas anatômicos**. Foram consultadas páginas de fonte e licenças em Wikimedia Commons, mas **não houve análise visual clínica completa, conversão em WebP, importação ou aprovação no Admin**. O registro **não autoriza publicação automática**. Alguns itens são redundantes; selecionar menos que 10 imagens se isso elevar a qualidade. Respeitar créditos e ShareAlike em CC BY-SA.
+
+### Diferenciação de atualizações
+A **ESGE 2026 para úlcera hemorrágica** revisou parcialmente a ESGE 2021, incluindo Forrest IIb, OTS, hemostáticos, TAE e cuidados pós-endoscópicos. A HDA varicosa segue consensos especializados de ESGE 2022, AASLD e **Baveno VIII de agosto de 2026**, conforme recorte; não apresentar recomendações históricas como "as mais recentes". Verificar **corrigenda da ESGE 2026** antes da liberação, pois foi localizada a existência de errata no PubMed, mas seu conteúdo técnico não foi revisado aqui.
+
+### Gates restantes — não marcar como pronta
+1. Revisão médica independente de emergência, endoscopia e hepatologia: GBS, Forrest, antibióticos, vasopressores, TIPS/TAE, transfusão, anticoagulação, IBP e segurança de procedimentos.
+2. Atualização/verificação da corrigenda ESGE 2026, formulações e disponibilidade no Brasil.
+3. Teste semântico e revisão editorial do texto inteiro; 60k caracteres úteis não se comprovam por contagem simples.
+4. Curadoria clínica das 10 candidatas, licenças, WebP e aprovação Admin, **sem inclusão direta** na prévia.
+5. Execução real de `node scripts/build-apostilas-batch.cjs --input ... --dry-run` e auditores oficiais. **Não rodados** nesta etapa.
+6. Revisão visual desktop/PWA, acessibilidade, impressão, largura de tabelas e desempenho.
+7. Aprovação humana antes de merge/deploy/publicação.
+
+**Parecer: texto-base, casos, questões, JSON, HTML e pauta visual produzidos e conferidos estruturalmente; rascunho clínico/editorial ainda não certificado nem publicado.**
