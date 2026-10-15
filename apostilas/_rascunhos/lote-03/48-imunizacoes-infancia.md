@@ -821,7 +821,7 @@ A qualidade dos dados depende de identificação correta da criança, dose, vaci
 |---|---|---|---|
 | Diferenciar imunização ativa/passiva, vacinas vivas e inativadas | 1–2, 22–23 | casos 3/7, Q8/Q11 | conferir esquemas especiais |
 | Interpretar doses válidas e recuperação de atrasos | 3–4, 9, 12, 25 | caso 6, Q1 | intervalos por produto |
-| Aplicar calendário infantil PNI 2026 | 12, 17–21 | Q3–Q7, Q10 | conferência final linha a linha |
+| Aplicar calendário infantil PNI 2026 | 12, 17–21 | Q3–Q7, Q10, Q15 | conferência final linha a linha |
 | Interpretar janela 2026 do rotavírus | 6, 13 | caso 2, Q2 | contraindicações individuais |
 | Explicar transição VPC10/VPC20 | 5, 14 | caso 1, Q3 | notas de estoque e CRIE |
 | Reconhecer reforços VIP e meningocócica ACWY | 15–16 | Q4/Q5 | histórico anterior |
@@ -833,8 +833,9 @@ A qualidade dos dados depende de identificação correta da criança, dose, vaci
 | Indicar avaliação urgente pós-exposição | 23 | caso 7, Q11 | protocolo específico de cada agente |
 | Proteger cadeia de frio e evitar erro programático | 25 | checklist clínico | norma por fabricante |
 | Interpretar heterogeneidade de cobertura | 26 | caso 8, Q12 | metodologia PNI |
+| Diferenciar vacina materna VSR e nirsevimabe | 22.5 | casos 9/10, Q13/Q14 | conferir elegibilidade e sazonalidade no protocolo 2026 |
 
-A aula 43 de Puericultura ensina a **verificar** vacinas e encaminhar, enquanto esta aula 48 concentra calendário técnico, imunologia, contraindicações, imunizações especiais e pós-exposição. A **homologação exige revisor humano** que responda às 12 questões apenas com este texto, localizando o fundamento de cada alternativa.
+A aula 43 de Puericultura ensina a **verificar** vacinas e encaminhar, enquanto esta aula 48 concentra calendário técnico, imunologia, contraindicações, imunizações especiais e pós-exposição. A **homologação exige revisor humano** que responda às 16 questões apenas com este texto, localizando o fundamento de cada alternativa.
 
 ## 28. Visuais propostos sem aprovação
 
@@ -878,5 +879,9 @@ O PDF comparativo lido no Drive é explicitamente **PNI 2020** e não serve de n
 7. Ministério da Saúde. *Notas Técnicas do PNI — 2026*, conferir vigência/revogação. https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026
 8. Ministério da Saúde. *Nota Técnica nº 52/2026*, VPC20 em estratégias especiais RIE. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-52-2026-cgici-dpni-svsa-ms.pdf/view
 9. Ministério da Saúde. *Caderneta da Criança*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+10. Ministério da Saúde. *Vacina VSR da gestante* (2026), recomendação a partir da 28ª semana. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina
+11. Ministério da Saúde. *Protocolo de Uso do Nirsevimabe*, atualizado em 2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/n/protocolo-de-uso-do-nirsevimabe.pdf/view
+12. Ministério da Saúde. *Guia de proteção contra VSR para prematuros e comorbidades*, 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-de-estrategia-contra-virus-sincicial-para-criancas-prematuras.pdf/view
 
 **Nota:** este é um retrato da situação normativa em outubro de 2026. O PNI pode publicar novas notas e atualizar esquemas. Antes de aplicar uma dose, verificar a norma atual e o produto disponível, particularmente no contexto de resgate, transição, imunossupressão e pós-exposição.
