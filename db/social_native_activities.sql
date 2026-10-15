@@ -29,11 +29,29 @@ revoke all on private.study_room_activity_responses from public,anon,authenticat
 create function private.social_native_activity(p_action text,p_payload jsonb default '{}') returns jsonb
 language plpgsql security definer set search_path='' as $$
 declare uid uuid:=auth.uid(); r uuid:=(p_payload->>'room_id')::uuid; a public.study_room_activities; f public.flashcards;
- admin boolean; ids uuid[]; n integer; users jsonb; all_done boolean; result jsonb; cs public.clinical_case_sessions;
+ admin boolean; ids uuid[]; n integer; users jsonb; all_done boolean; result jsonb; cs public.clinical_case_sessions; list_id uuid; item jsonb; opts jsonb; item_index integer:=0;
 begin
  if uid is null or not private.social_room_member(r) then raise exception 'Participação na sala obrigatória'; end if;
  if octet_length(p_payload::text)>16000 then raise exception 'Requisição muito grande'; end if;
  admin:=private.social_room_admin(r);
+ if p_action='create_question_list' then
+  if not public.has_feature('questions') then raise exception 'Acesso a questões necessário'; end if;
+  perform private.social_rate('native_question_create',10,300);
+  list_id:=(p_payload->>'id')::uuid;
+  if list_id is null or length(trim(coalesce(p_payload->>'title',''))) not between 1 and 160 or jsonb_typeof(p_payload->'items')<>'array' or coalesce(jsonb_array_length(p_payload->'items'),0) not between 1 and 20 then raise exception 'Informe título e de 1 a 20 questões completas'; end if;
+  perform pg_advisory_xact_lock(hashtext(list_id::text),4);
+  if exists(select 1 from public.question_sets where id=list_id and user_id=uid) then return jsonb_build_object('id',list_id); end if;
+  insert into public.question_sets(id,user_id,title,total_questions,status) values(list_id,uid,trim(p_payload->>'title'),jsonb_array_length(p_payload->'items'),'ready');
+  for item in select value from jsonb_array_elements(p_payload->'items') loop
+   opts:=item->'alternatives';item_index:=item_index+1;
+   if length(trim(coalesce(item->>'stem',''))) not between 1 and 8000 or jsonb_typeof(opts)<>'object' or not(opts?'A' and opts?'B') or (select count(*) from jsonb_object_keys(opts)) not between 2 and 5
+    or exists(select 1 from jsonb_each_text(opts) e where e.key not in ('A','B','C','D','E') or length(trim(coalesce(e.value,''))) not between 1 and 2000)
+    or not coalesce(opts?(item->>'answer'),false) or length(coalesce(item->>'comment',''))>8000 or length(coalesce(item->>'reference',''))>1000 then raise exception 'Questão % incompleta: informe enunciado, alternativas e resposta correta',item_index; end if;
+   insert into public.question_items(id,user_id,set_id,question_number,order_index,stem,alternatives,raw_text,official_answer,pulo_do_gato,source_label,area,materia)
+    values(gen_random_uuid(),uid,list_id,item_index,item_index,trim(item->>'stem'),opts,trim(item->>'stem')||E'\n'||(select string_agg(key||') '||value,E'\n' order by key) from jsonb_each_text(opts)),item->>'answer',nullif(item->>'comment',''),nullif(item->>'reference',''),left(p_payload->>'area',160),left(p_payload->>'subject',160));
+  end loop;
+  return jsonb_build_object('id',list_id);
+ end if;
  if p_action='catalog' then
   return jsonb_build_object(
    'decks',(select coalesce(jsonb_agg(to_jsonb(d)),'[]') from (
@@ -86,6 +104,9 @@ begin
     update public.study_room_activities set updated_at=now() where id=a.id;
    else raise exception 'Ação indisponível para este participante ou flashcard'; end if;
    return '{}';
+  elsif p_action='simulation_leave' and a.kind='simulator' then
+   delete from private.study_room_activity_responses where activity_id=a.id and user_id=uid;
+   update public.study_room_activities set updated_at=now() where id=a.id;return '{}';
   elsif p_action='simulation_join' and a.kind='simulator' then
    if not public.has_feature('plantao') then raise exception 'Acesso ao simulador necessário'; end if;
    select * into cs from public.clinical_case_sessions where id=(p_payload->>'clinical_session_id')::uuid and user_id=uid and case_id=a.case_id and started_at>=a.created_at;
@@ -132,7 +153,7 @@ create function private.social_native_image(image_path text) returns boolean lan
 $$;
 revoke all on function private.social_native_image(text) from public,anon;
 grant execute on function private.social_native_image(text) to authenticated;
-create policy room_current_flashcard_image on storage.objects for select to authenticated using(bucket_id='flashcard_images' and private.social_native_image(name));
+create policy room_current_flashcard_image on storage.objects for select to authenticated using(bucket_id='docmap' and private.social_native_image(name));
 create function private.social_guard_native_round() returns trigger language plpgsql security definer set search_path='' as $$
 begin
  if exists(select 1 from public.study_room_activities where room_id=new.room_id and active) then raise exception 'Encerre a atividade atual antes de iniciar questões'; end if;

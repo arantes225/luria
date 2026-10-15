@@ -5137,6 +5137,7 @@
     if(!sessionId || state.session?.status==="completed") return true;
     const {error}=await sb.rpc("discard_clinical_case_session",{p_session_id:sessionId});
     if(error){console.warn("Plantão: não foi possível descartar a sessão incompleta",error);return false;}
+    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:sessionId,case_id:state.session.case_id,status:"discarded"}}));
     state.session=null;
     return true;
   }
