@@ -175,6 +175,210 @@ Infecção grave/persistente + crescimento ruim/ALC baixa ou TREC alterado → *
 
 **Armadilha:** não classificar por microrganismo de modo absoluto. A mesma pneumonia bacteriana pode ocorrer em criança imunocompetente, com aspiração ou doença de anticorpos; a síndrome completa e os dados laboratoriais importam.
 
+
+## 11A. Raciocínio imunológico da APS à referência: o padrão das infecções orienta o primeiro exame
+
+### A criança que adoece muitas vezes versus a criança cuja defesa falha
+
+Crianças pequenas podem apresentar várias infecções virais de vias aéreas superiores ao longo do ano, sobretudo após entrada em creche ou contato com irmãos em idade escolar. A contagem isolada de episódios não estabelece imunodeficiência. O raciocínio começa por perguntar se a criança **recupera integralmente**, cresce de forma adequada, responde a tratamentos habituais, não desenvolve infecções invasivas nem apresenta microrganismos atípicos. Múltiplos episódios leves com crescimento normal podem ser compatíveis com exposição habitual; mesmo assim, orientar sinais de gravidade e reavaliar a história longitudinalmente.
+
+O contraste é a criança com pneumonias bacterianas confirmadas em territórios diferentes, bacteremia, abscesso profundo ou otite complicada repetida que acumula sequelas e necessidade de antibiótico intravenoso. Nesse caso, o número exato de resfriados importa menos do que **gravidade, repetição documentada, local, agente, persistência e dano de órgão**. Também importa a idade do primeiro evento: doença oportunista nos primeiros meses pode revelar defeito T grave, enquanto agamaglobulinemia ligada ao X se torna mais perceptível após queda de anticorpos maternos.
+
+Uma avaliação negativa não deve ser interpretada como exclusão definitiva se a trajetória muda. Criança que crescia bem e passa a perder peso, tem candidíase persistente, diarreia e infecções graves merece investigação mesmo que o histórico anterior fosse tranquilizador. A imunidade se revela ao longo das exposições; um indivíduo com defeito específico pode atravessar a primeira infância sem evento infeccioso muito evidente.
+
+### Fenótipo microbiológico: o germe é uma pista, não o diagnóstico
+
+**Bactérias encapsuladas e infecções sinopulmonares** sugerem investigar produção e função de anticorpos, em especial quando surgem bronquiectasias ou recaída após tratamento adequado. Porém, fibrose cística, discinesia ciliar primária, aspiração, rinossinusite anatômica, tabagismo passivo e doenças respiratórias comuns podem reproduzir parte desse fenótipo. Não interpretar o isolamento de pneumococo como prova de deficiência de IgG.
+
+**Fungos invasivos, abscessos profundos e infecções por agentes catalase-positivos**, quando se repetem, tornam relevantes defeitos de fagócitos. Uma contagem normal de neutrófilos não exclui doença granulomatosa crônica, porque a quantidade de células pode estar preservada enquanto a função oxidativa é inadequada. É essa distinção que justifica o teste DHR, com laboratório especializado, quando a hipótese é forte.
+
+**Candidíase mucocutânea persistente**, sobretudo associada a diarreia e viroses graves em lactente, pode apontar defeito de linfócitos T; mas a forma mucocutânea crônica isolada, com crescimento e outras defesas preservadas, pode decorrer de alterações mais específicas da via IL-17. O mesmo nome do patógeno, portanto, não determina um único defeito. A extensão da infecção, a idade e o conjunto de manifestações são discriminadores melhores.
+
+**Doença meningocócica repetida** merece pesquisa da via terminal do complemento, mesmo em criança que apresentou respostas vacinais aparentemente normais. Deficiência dos componentes terminais C5–C9 e da via alternativa podem estar presentes sem a história típica de pneumonias recorrentes. Uma primeira meningococcemia também exige investigação de risco clínico conforme idade, contexto e histórico familiar; não esperar obrigatoriamente um segundo episódio em quadro sugestivo.
+
+**Micobactéria vacinal disseminada, micobactérias ambientais ou salmonelose invasiva** fazem pensar em defeitos da imunidade antimicobacteriana, incluindo a via IL-12/IFN-γ. O contexto da vacinação BCG é central no Brasil, mas não se deve chamar toda adenite local após BCG de disseminação. A investigação de infecção por BCG ou micobactérias atípicas com órgãos múltiplos demanda infectologia e imunologia urgentes.
+
+### O exame que responde a uma pergunta tem valor superior ao painel indiscriminado
+
+Antes de solicitar dezenas de marcadores, formular uma hipótese provisória: há **baixa quantidade de células, perda de função de células presentes, defeito de proteína solúvel ou desregulação imune**? Hemograma com diferencial e contagens absolutas é o ponto de partida, pois leucograma “normal” pode esconder linfopenia absoluta para a idade. Quantificar IgG, IgA e IgM em suspeita humoral é uma etapa diferente de testar função de produção de anticorpos; respostas quantitativas normais não garantem respostas antígeno-específicas adequadas.
+
+A idade exige atenção especial. A **IgG materna atravessa a placenta**, diminui gradualmente após nascimento e pode gerar interpretação distinta durante a fase de transição para produção própria. A criança prematura pode receber menor quantidade de IgG transplacentária e desenvolver hipogamaglobulinemia transitória, sem que o resultado isolado prove um defeito genético. A IgA amadurece mais lentamente; definir deficiência seletiva persistente de IgA em lactente com uma única medida é erro conceitual.
+
+A **contagem absoluta de linfócitos** deriva do produto do total de leucócitos pelo percentual de linfócitos do diferencial. Exemplo: 5.000 leucócitos/µL × 20% = **1.000 linfócitos/µL**. Esse valor pode assumir significados radicalmente diferentes por faixa etária e situação clínica; compare sempre à referência pediátrica do laboratório, considerando prematuridade e gravidade. Quando existe suspeita de defeito combinado grave, não condicionar citometria T/B/NK à realização de repetidas contagens antes de encaminhar.
+
+### Interpretação operacional de um painel inicial
+
+| Resultado | Hipótese favorecida | Explicação/limitação | Próximo passo |
+| --- | --- | --- | --- |
+| IgG, IgA e IgM muito baixas + linfócitos B CD19 muito reduzidos | Agamaglobulinemia ou defeito de desenvolvimento B | Considerar idade e causas secundárias; ausência de B é discriminadora | Imunologia, genética e discussão de reposição de Ig |
+| IgG baixa persistente + B presentes + resposta vacinal prejudicada | Defeito de produção de anticorpos | Conferir idade, vacinas, intervalo de coleta e perdas proteicas | Investigar defeito específico e exclusões para IDCV |
+| Linfócitos T muito reduzidos/ausentes no lactente | Imunodeficiência combinada grave | Achado urgente, ainda que sem sintomas exuberantes | Encaminhar imediatamente, proteger de vacinas vivas e infecções |
+| Neutrófilos normais + abscessos/fungo invasivo | Defeito funcional de fagócitos | Contagem não mede explosão oxidativa | DHR e avaliação de doença granulomatosa crônica |
+| CH50 baixo/ausente, AH50 baixo/ausente | Componentes comuns/fase terminal ou problema de coleta | Precisa distinguir padrão e pré-analítica | Repetição dirigida e componentes específicos |
+| CH50 baixo/ausente, AH50 preservado | Possível defeito de via clássica | Não identificar componente único sem complementação | Dosar C1/C2/C4 conforme avaliação |
+| AH50 baixo/ausente, CH50 preservado | Possível defeito de via alternativa | Interferem condições de coleta e consumo | Componentes da via alternativa e especialista |
+| Imunoglobulinas normais, mas autoimunidade/citopenias + linfoproliferação | Desregulação imune | EII pode ocorrer sem hipogamaglobulinemia | Avaliação sindrômica, citometria/genética dirigida |
+| IgG baixa + albumina muito baixa/proteinúria | Perda proteica, causa secundária | Repor Ig sem tratar mecanismo da perda pode falhar | Investigar rins/intestino e tratar causa |
+
+**Nota de qualidade:** CH50 e AH50 são testes funcionais de vias do complemento e sofrem influência de coleta/manuseio; padrões orientam a investigação, não substituem a dosagem de componentes. DHR também exige controles e laboratório experiente. O resultado de qualquer ensaio deve ser confrontado com infecção ativa, uso de imunossupressor, transfusões e características do paciente.
+
+## 11B. A imunidade começa a ser medida no período neonatal: TREC e SCID
+
+### O que mede um TREC e por que o teste não substitui diagnóstico
+
+Os **círculos de excisão do receptor de células T (TREC)** são pequenos fragmentos circulares de DNA gerados durante rearranjo do receptor T no desenvolvimento tímico. Podem ser quantificados em sangue seco de triagem neonatal como marcador indireto de produção de linfócitos T recém-formados. Um TREC baixo pode indicar deficiência de produção de T, mas não diagnostica sozinho SCID: prematuridade, outras condições clínicas e alterações tímicas podem afetar o resultado. A confirmação requer contagem de subpopulações linfocitárias e avaliação funcional/imunogenética.
+
+O resultado da triagem depende dos programas efetivamente implantados. **Não afirmar que TREC está universalmente incluído no teste do pezinho do SUS em todo o território brasileiro** sem verificar a cobertura local e o calendário do programa. Se há clínica compatível com SCID, a ausência do teste ou um relatório de triagem aparentemente normal não permite adiar investigação.
+
+A triagem é especialmente valiosa porque o recém-nascido pode estar clinicamente bem, mas em poucas semanas desenvolver diarreia, candidíase, pneumonite ou infecção viral sistêmica. Detectar deficiência grave antes dessas exposições favorece encaminhamento antecipado para terapias definitivas e medidas de prevenção. Não faz sentido esperar que a criança “preencha dez sinais de alerta” em um quadro potencialmente letal.
+
+### Lactente com suspeita forte de SCID: ordem das decisões
+
+1. **Avaliar estabilidade imediatamente.** Se houver hipoxemia, sinais de sepse, distúrbio hidroeletrolítico, desidratação ou déficit nutricional importante, estabilizar e investigar infecções em paralelo.
+2. **Acionar imunologia pediátrica/serviço especializado no mesmo dia.** Hemograma com diferencial e contagem absoluta de linfócitos, citometria T/CD3, CD4, CD8, B/CD19 e NK/CD16/56 são exames que direcionam a investigação. Testes funcionais e genéticos se seguem sem atrasar segurança.
+3. **Não aplicar vacinas vivas enquanto a imunodeficiência T grave não estiver esclarecida.** Isso inclui rotavírus e BCG quando cabíveis; se já recebidas, documentar datas e monitorar complicações conforme especialista.
+4. **Planejar prevenção de infecção sem “isolamento social absoluto” improvisado.** Serviço deve orientar ambientes, contatos sintomáticos, higiene, medidas de proteção em hospital e tratamento oportuno de infecções.
+5. **Alertar hemoterapia e equipe assistente.** Se transfusão for necessária, selecionar hemocomponentes conforme protocolos específicos para SCID, incluindo irradiação e medidas para segurança contra CMV, em diálogo com o serviço de hemoterapia.
+6. **Discutir terapias de suporte e tratamento definitivo.** Imunoglobulina, profilaxia anti-infecciosa e transplante de células-tronco hematopoéticas, ou terapias específicas de alguns subtipos, dependem do fenótipo e do serviço. A decisão não pode ser inferida apenas do valor de TREC.
+
+### T, B e NK: padrão fenotípico que orienta, mas não sentencia o gene
+
+A citometria pode mostrar padrões resumidos como **T−B+NK−**, **T−B−NK+** ou outros. O significado é fisiopatológico: uma falha de sinalização que impede maturação T/NK pode preservar número de B, sem garantir resposta de anticorpos funcional; já defeitos de recombinação de receptores podem comprometer T e B. Os padrões são pistas para seleção de variantes e de terapias, não diagnóstico molecular automático.
+
+Em SCID, linfócitos maternos enxertados e fenótipos “leaky” podem confundir interpretações simplificadas. Uma contagem T que não parece zero não garante função normal; a avaliação especializada pode incluir células T naïve/memória, proliferação linfocitária e quimerismo, conforme hipótese. Esses detalhes ajudam a compreender por que uma criança com linfócitos detectáveis ainda pode ter doença combinada grave.
+
+### Vacinação da família e ambiente domiciliar
+
+Proteger contatos domiciliares com imunizações indicadas pode reduzir exposição do paciente a doenças preveníveis. A decisão sobre certas vacinas vivas em contatos segue recomendações específicas e é diferente da decisão sobre a criança imunodeficiente; não proibir indiscriminadamente vacinação familiar. Orientar o que fazer diante de contatos febris ou erupções, higiene e condutas específicas para vacinas com eliminação de vírus vacinal quando pertinentes. O plano deve ser comunicado pela equipe de referência, e não improvisado pela família.
+
+## 11C. Erros inatos sem infecção recorrente como manifestação dominante
+
+### Autoimunidade e citopenias: não confundir defesa alterada com defesa simplesmente “fraca”
+
+Uma criança com púrpura trombocitopênica, anemia hemolítica autoimune, esplenomegalia, linfonodomegalia crônica e enteropatia pode apresentar **desregulação imune** como manifestação primária de EII. O mecanismo pode envolver falha de tolerância, morte celular programada ou sinalização de vias inflamatórias, apesar de defesa preservada contra muitos agentes comuns. Exemplos relevantes para raciocínio são síndromes de linfoproliferação autoimune, defeitos de CTLA4/LRBA e algumas formas de STAT3 com ganho de função — nomenclatura e investigação requerem serviço especializado.
+
+O achado de **autoimunidade precoce envolvendo mais de um órgão**, especialmente com citopenias recorrentes, enteropatia ou crescimento prejudicado, tem valor maior do que perguntar apenas quantas otites ocorreram. Nesses casos, pedir IgG/IgA/IgM e hemograma pode ser um primeiro passo, mas testes normais não excluem defeito de regulação. A história familiar de autoimunidade/infecções e o padrão sindrômico ajudam a decidir investigação genética.
+
+### Alergia grave, eczema e infecções: diferentes mecanismos sob aparência semelhante
+
+Dermatite atópica comum é frequente; a associação de eczema grave desde lactente, infecções cutâneas importantes, viroses disseminadas, abscessos e/ou falha do crescimento sugere diferencial mais amplo. Defeitos de barreira cutânea podem facilitar colonização sem serem imunodeficiência primária clássica; no outro extremo, alguns EII combinam eczema e vulnerabilidade infecciosa. Em Wiskott-Aldrich, **plaquetas pequenas e reduzidas** ajudam a distinguir o quadro de atopia comum ou trombocitopenia imune isolada.
+
+A **síndrome hiper-IgE** não se diagnostica apenas por IgE elevada; atopia comum também pode elevar IgE de forma marcante. O diagnóstico exige considerar infecções específicas, achados cutâneos, candidíase, anomalias ósseas/dentárias e genótipo conforme a síndrome. Defeitos de **DOCK8** podem cursar com alergia grave e viroses cutâneas disseminadas; formas ligadas a **STAT3** associam fenótipo osteodentário característico. O papel da distinção é identificar quem precisa ser encaminhado além do tratamento habitual de eczema.
+
+### Inflamação estéril e febres recorrentes
+
+Febres periódicas podem resultar de processos infecciosos recorrentes, mas também de síndromes autoinflamatórias com desregulação inata, e não necessariamente de deficiência de anticorpos. Perguntar se os episódios têm intervalo regular, achados inflamatórios semelhantes, dor abdominal/torácica, artralgia/artrite, lesões cutâneas, serosite, marcadores inflamatórios elevados e recuperação completa entre episódios. Infecção deve ser excluída conforme gravidade; exames durante e entre crises podem diferenciar inflamação persistente da episódica.
+
+**Febre familiar do Mediterrâneo**, síndromes relacionadas a criopirina e alterações de vias de inflamassoma são exemplos para compreender que “erro inato da imunidade” vai além do rótulo histórico de “pouca defesa”. Não é necessário transformar a apostila em catálogo de centenas de mutações; a competência essencial é reconhecer padrões sugestivos e encaminhar com dados clínicos, familiares e laboratoriais úteis.
+
+### Predisposição seletiva: uma infecção excepcional pode bastar
+
+Há defeitos que predispõem desproporcionalmente a agentes ou síndromes específicas: encefalite por herpes simples em crianças com alterações de vias de reconhecimento antiviral, infecções micobacterianas disseminadas por distúrbios de IL-12/IFN-γ, candidíase mucocutânea crônica por problemas de resposta IL-17. O aluno deve abandonar a falsa regra de que EII exige “muitas infecções de todos os tipos”.
+
+**Cenário clínico:** adolescente sem pneumonia prévia apresenta segunda meningite bacteriana invasiva; a hipótese de complemento é relevante, embora a criança pareça saudável entre eventos. Outro lactente, igualmente sem histórico recorrente, tem doença disseminada após BCG; a urgência se estabelece pela **qualidade da infecção**, não pela quantidade. Esses exemplos justificam anamnese microbiológica exata e reconhecimento de patógenos incomuns.
+
+## 11D. Vacinas e hemocomponentes: segurança personalizada por mecanismo
+
+### Uma matriz de decisão sem simplificações excessivas
+
+| Defeito/situação | Vacinas não vivas | Vacinas vivas | Pergunta crítica antes de administrar |
+| --- | --- | --- | --- |
+| SCID/suspeita de deficiência T profunda | Segurança biológica geralmente preservada; eficácia pode ser muito baixa | **Contraindicadas** até avaliação definitiva | Há imunidade celular funcional? Houve BCG ou rotavírus? |
+| Defeito humoral grave com reposição de Ig | Pode haver resposta ineficaz; coordenação com equipe | Muitas podem estar contraindicadas ou ter benefício comprometido | Qual defeito, terapia em uso e recomendação CRIE/PNI? |
+| Deficiência seletiva de IgA sem defeito adicional | Em regra indicadas conforme idade | Não presumir proibição universal | Existe alteração T ou outra condição associada? |
+| Defeito isolado de complemento | Indicar imunização adequada, atenção a meningococos | Em geral avaliação semelhante à população sem defeito T, com exceções clínicas | Vacinas meningocócicas/pneumocócicas indicadas foram atualizadas? |
+| Doença granulomatosa crônica | De modo geral manter não vivas | **Evitar vivas bacterianas**; vivas virais dependem da imunidade preservada | O defeito é somente fagocítico ou também envolve T/NK? |
+| 22q11.2 | Indicar conforme risco e calendário | Depende da avaliação imunológica da população T | Citometria/competência T estão adequadas? |
+| Pós-transplante hematopoético | Revacinação sob cronograma específico | Administrar apenas quando critérios de recuperação imunológica forem atendidos | Qual tempo pós-transplante e qual estado imune? |
+
+A tabela é **apoio didático**, não prescrição vacinal individual. Vacinas de microrganismos vivos atenuados oferecem risco de doença vacinal quando há ausência de controle imunológico. Por outro lado, impedir toda vacinação não viva por medo de imunodeficiência pode expor a pneumococo, influenza e outros agentes, justamente em pessoa suscetível. O planejamento brasileiro deve consultar PNI, CRIE e especialistas, pois produtos disponíveis, faixas etárias e indicações mudam.
+
+Na doença granulomatosa crônica, o CDC diferencia **vacinas bacterianas vivas** (como BCG, que demandam restrição) de certas **vacinas virais vivas** que podem ser recomendadas quando não há defeito T/NK associado. Essa nuance combate um erro de prova frequente: “defeito de fagócito proíbe toda vacina viva”. O raciocínio correto depende de compreender o mecanismo — controle intracelular de bactérias e fungos pode ser comprometido sem perda equivalente da defesa antiviral adaptativa.
+
+### Hemoterapia, exposição a CMV e reações transfusionais
+
+Pacientes com defeitos T graves podem desenvolver infecção por citomegalovírus ou doença enxerto contra hospedeiro associada à transfusão quando recebem componentes celulares inadequados. Em suspeita forte de SCID e necessidade de hemotransfusão, avisar hemoterapia previamente e seguir critérios para hemocomponentes irradiados e com mitigação de risco de CMV conforme protocolo; não prescrever um “tipo padrão de bolsa” sem contato com serviço responsável. Em cenários de emergência vital, estabilização continua prioritária, com seleção mais segura possível.
+
+Indivíduos com deficiência de IgA podem ter preocupação com reações transfusionais, especialmente quando existe histórico de anafilaxia e anticorpos anti-IgA. Isso **não significa que toda pessoa com IgA baixa terá anafilaxia**, nem autoriza cancelar transfusão indispensável. Registrar eventos prévios, esclarecer mecanismo e planejar seleção de componentes/medidas preventivas caso a caso com hemoterapia.
+
+## 11E. Terapêutica integral e seguimento centrado no defeito
+
+### Reposição de imunoglobulina: por que funciona em alguns EII
+
+A imunoglobulina humana fornece anticorpos e pode reduzir infecções bacterianas em defeitos humorais relevantes. Seu objetivo não é “fortalecer o corpo” inespecificamente, mas **substituir função ausente ou insuficiente**. O planejamento envolve via intravenosa ou subcutânea, adaptação à logística familiar e avaliação de resposta pelo número de infecções, hospitalizações, uso de antibióticos, qualidade de vida, estado pulmonar e concentrações de IgG quando informativas.
+
+**Dose e intervalo não devem ser copiados automaticamente** de uma condição para outra: dependem de diagnóstico, peso, perdas proteicas, infecções, resposta individual, acesso e protocolo regulatório. Eventos de infusão podem incluir cefaleia, manifestações sistêmicas e, raramente, complicações graves; em pacientes específicos, considerar função renal, risco trombótico e característica da preparação. Uma criança com deficiência isolada de IgA e sem infecções graves geralmente **não necessita reposição rotineira**.
+
+No Brasil existe PCDT de **imunodeficiência primária com predominância de defeitos de anticorpos — imunoglobulina humana**, vinculado à Portaria nº 495/2007. A página do MS está publicada/atualizada no portal, mas a portaria histórica não é automaticamente um guia clínico suficiente para todos os 559 fenótipos descritos pela IUIS. Usar o PCDT para elegibilidade e acesso quando aplicável, e diretrizes especializadas contemporâneas para decisão científica.
+
+### Transplante e terapias de precisão
+
+No **SCID**, transplante de células-tronco hematopoéticas pode restabelecer imunidade e deve ser discutido o mais cedo possível em centro especializado. Tipo de doador, genótipo, presença de infecção, condição clínica, protocolo de condicionamento e suporte influenciam riscos e prognóstico. Alguns defeitos têm tratamento por enzima ou terapia gênica em cenários específicos; transplante tímico pode ser considerado para determinados casos de aplasia tímica. Essas opções não podem ser tratadas como intercambiáveis nem como disponíveis em todo serviço do SUS.
+
+Em EII com **desregulação imunológica**, bloquear uma via inflamatória pode ser necessário mesmo quando há susceptibilidade a infecções. A decisão deve considerar o defeito molecular e o risco infeccioso — o raciocínio não é “nunca imunossuprimir quem tem imunodeficiência”, mas identificar terapias que atuem sobre a fisiopatologia. A regulação de acesso, disponibilidade no Brasil e necessidade de seguimento especializado devem aparecer claramente.
+
+### Plano longitudinal verificável
+
+Todo paciente com EII clinicamente relevante precisa de um **plano de cuidado que sobreviva à consulta**. Esse plano deve identificar diagnóstico (confirmado ou suspeito), contato do centro, sinais de alerta por tipo de infecção, decisões vacinais individualizadas, situação de profilaxia, esquema de reposição e intercorrências previsíveis. Também deve coordenar escola, desenvolvimento, atividade física, saúde mental, prevenção de dano pulmonar e aconselhamento familiar.
+
+Monitoramento de **bronquiectasias** é crítico em defeitos de anticorpos: atrasar tratamento de infecções recorrentes pode permitir lesão estrutural irreversível. Espirometria e imagem devem ser selecionadas por idade e manifestações, evitando tanto tomografias repetidas sem indicação quanto subinvestigação de tosse úmida crônica. Fisioterapia respiratória, avaliação de otorrinolaringologia e tratamento de colonização/doença respiratória crônica podem ser necessários.
+
+### Aconselhamento reprodutivo e familiar
+
+EII podem ter herança autossômica recessiva, autossômica dominante, ligada ao X, mosaicismo ou mutações de novo; o risco de recorrência varia. O médico precisa explicar que resultado genético de significado incerto (**VUS**) não autoriza etiquetar familiares como portadores de doença clínica. Genética de painel pode precisar de análise de segregação, revisão de patogenicidade e fenótipo. Teste familiar pode ter grande valor em SCID e doenças ligadas ao X, mas deve respeitar consentimento e pertinência por idade.
+
+A família de criança com múltiplas internações pode apresentar medo de contato social e vacinação. Educação adequada separa **precaução proporcional ao risco** de restrição indiscriminada de convivência. Também registra quem responde a dúvidas fora da consulta e como o paciente obtém antibiótico/tratamento de urgência, especialmente em regiões distantes de centros terciários.
+
+## 11F. Síntese de raciocínio por cenários e questões de integração
+
+### Cenário 1 — infecções que parecem frequentes, mas não comprovam EII
+
+Criança de três anos iniciou creche há oito meses, apresentou seis episódios de coriza e febre baixa, todos autolimitados, sem internar ou perder peso; exame e curva ponderoestatural são adequados. O raciocínio inicial favorece exposição viral habitual, com orientação preventiva e reavaliação se surgirem episódios graves, febre prolongada, complicações ou perda de crescimento. Pedir painel genético exaustivo, imunoglobulina intravenosa ou antibiótico profilático imediato não se justifica pelos dados fornecidos.
+
+### Cenário 2 — o hemograma aparentemente normal engana
+
+Lactente de quatro meses apresenta candidíase persistente, diarreia, perda ponderal e pneumonite. Leucócitos são 5.000/µL, com 20% de linfócitos: a contagem absoluta é **1.000/µL**, potencialmente inadequada de modo importante para idade e quadro. A suspeita de imunodeficiência combinada grave exige comunicação urgente com equipe especializada, citometria de subpopulações e investigação infecciosa concomitante. “Leucócitos totais normais” não desarma a emergência.
+
+### Cenário 3 — IgA isoladamente baixa aos dois anos
+
+Pré-escolar com otites leves e rinite tem IgA baixa, sem outras alterações disponíveis. Antes de rotular deficiência seletiva permanente de IgA, deve-se avaliar idade, evolução, IgG/IgM, resposta clínica, ambiente e outras causas de sintomas. Uma única IgA baixa em criança pequena não autoriza imunoglobulina crônica ou contraindicação automática a todas as vacinas vivas.
+
+### Cenário 4 — meningococo recorrente, imunoglobulinas normais
+
+Adolescente com duas meningites meningocócicas e IgG/IgM normais merece pesquisa do complemento, incluindo CH50/AH50 e investigação dirigida dos componentes conforme resultados. Respostas humorais aparentemente normais não avaliam função do complemento. Atualização de prevenção antimeningocócica e orientação familiar devem acontecer em paralelo à investigação.
+
+### Cenário 5 — eczema, trombocitopenia e infecção
+
+Lactente masculino com eczema importante, infecções e plaquetas baixas com volume plaquetário pequeno pode ter síndrome de Wiskott-Aldrich. A pergunta-chave é se o problema consiste em plaquetopenia imune comum ou fenótipo sindrômico. A combinação de pistas exige avaliação de imunologia/hematologia e genética, não apenas corticoide para uma suposta púrpura imune isolada.
+
+### Cenário 6 — doença oportunista com IgG normal
+
+Criança com infecção oportunista grave, candidíase persistente e quadro sugestivo de imunodeficiência celular tem imunoglobulinas quantitativas dentro da referência. O próximo passo não é encerrar investigação, mas verificar linfócitos T, função celular e secundarismo. **Normalidade de uma classe de exames não testa todos os braços da imunidade**; esse é o núcleo de raciocínio da especialidade.
+
+### Quadro de verificação de aprendizado
+
+| Pergunta de prova | Onde o aluno deve encontrar a resposta dentro deste livro |
+| --- | --- |
+| Por que linfócito absoluto importa mais que total de leucócitos na suspeita de SCID? | Hemograma no painel inicial; seções 11A e 11B |
+| Por que IgG isolada baixa em lactente não confirma agamaglobulinemia? | Fisiologia de Ig materna, interpretação por idade; seções 7 e 11A |
+| Por que DHR pode ser indicado com neutrófilos numericamente normais? | Defeito funcional de fagócitos; seções 5.7 e 11A |
+| Por que vacinas vivas são decididas pelo mecanismo do defeito? | Seções 9 e 11D |
+| Quando infecções são pouco numerosas, mas merecem investigação urgente? | Seções 3, 10, 11A e 11C |
+| Por que pacientes com EII podem precisar de imunomodulação? | Desregulação imune; seções 8, 11C e 11E |
+| Como não confundir protocolo de reposição de Ig com diagnóstico de todas as EII? | Seção 11E; PCDT brasileiro e critérios IUIS |
+
+### Referências primárias conferidas para a ampliação — 15/10/2026
+
+1. IUIS. **The 2024 update of IUIS phenotypic classification of human inborn errors of immunity.** *Journal of Human Immunity* 2025;1:e20250002. https://doi.org/10.70962/jhi.20250002
+2. IUIS. **Human inborn errors of immunity: 2024 update on the classification.** *Journal of Human Immunity* 2025;1:e20250003. https://doi.org/10.70962/jhi.20250003
+3. CDC. **Altered Immunocompetence — General Best Practice Guidelines for Immunization**, revisão publicada em 26/06/2024. https://www.cdc.gov/vaccines/hcp/imz-best-practices/altered-immunocompetence.html
+4. Sociedade Brasileira de Pediatria. **Sistema Imunológico de Seus Filhos** (conteúdo de orientação sobre erros inatos da imunidade). https://www.sbp.com.br/pediatria-para-familias/cuidados-com-a-saude/sistema-imunologico-de-seus-filhos/
+5. Ministério da Saúde. **PCDT Imunodeficiência Primária com Predominância de Defeitos de Anticorpos — Imunoglobulina Humana**, Portaria 495/2007, página institucional consultada em 15/10/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/i/imunodeficiencia-primaria-com-predominancia-de-defeitos-de-anticorpos-imunoglobulina-humana/view
+6. AAAAI. **Inborn Errors of Immunity Practice Parameter** (2025, listado entre os parâmetros profissionais em 2026). https://www.aaaai.org/allergist-resources/statements-practice-parameters/practice-parameters-guidelines
+
+**Registro ético/editorial:** o documento do Drive *Pneumonia Comunitária na Pediatria* foi lido para comparar a diferenciação clínica de infecção respiratória comum; o resumo *Infecção pelo HIV* foi lido como exemplo de imunodeficiência secundária e contém abordagens antigas que NÃO foram reproduzidas. Os materiais não cobrem integralmente EII e, portanto, a comparação específica completa continua pendente. O texto deste bloco foi redigido originalmente para a LURIA, sem imagens ou tabelas de terceiros. Não foram certificadas adequação de todas as doses, extensão didática útil, imagens, leitura por imunologista ou aprovação para publicação.
+
+
 ## 12. Casos clínicos comentados
 ### Caso 1 — Muitas viroses na creche
 Menino de dois anos teve seis episódios de coriza/febre leve em oito meses na creche, cada um com recuperação completa, crescimento normal, sem pneumonia radiológica, internação, candidíase ou antibiótico IV. **Hipótese principal:** infecções virais recorrentes compatíveis com exposição infantil, sem evidência inicial de EII. **Raciocínio:** frequência sem gravidade/sequela não demonstra falha imunológica. **Exames:** não pedir painel genético/Ig indiscriminadamente; reavaliar se surgirem sinais de alarme. **Conduta:** educação familiar, vacinas e ambiente, observação longitudinal. **Por que importa:** reduzir investigação excessiva e não banalizar futuros sinais de gravidade.
