@@ -390,3 +390,12 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 **Limitações e gates em aberto:** 102.027 caracteres são **brutos**, não atestam ≥60 mil didáticos úteis nem autossuficiência. Falta revisão médica pediátrica/neonatal independente, confronto integral com protocolos nacionais e doses/diluições registradas no Brasil, benchmark Drive diretamente equivalente, curadoria de imagens com licença comercial e aprovação pelo Admin, transformação e teste de HTML/desktop/PWA, controle de redundância e teste independente de questões. **Não houve deploy, edição de apostilas HTML publicadas, alteração de catálogo nem integração de imagens.** A branch não foi mesclada à \`main\`.
 
 **Próximo passo para o lote 7:** revisar 124/129/134 para integração condicionada, ou complementar a checagem clínica nacional da aula 123. O lote **121–140** segue rascunho, sem certificação editorial de conclusão.
+
+
+## 15/10/2026 — integração isolada das aulas 124, 129 e 134
+
+**Ação efetiva:** na branch \`editorial/lote-07-aula-123-cps-2026-20261015\`, foram atualizados os **três HTMLs existentes**, preservando integralmente perguntas rápidas, capítulos, scripts e rotas. Foram incorporadas **8 MCQs em cada uma** (24 ao todo) e aprofundados **6 casos existentes da 124**. Gravados \`+33.882\` caracteres brutos HTML: SUA 69.515→84.715, Amenorreia 111.452→121.172, SOMP/PMOS 57.605→66.567. Os complementos originais continuam em \`_rascunhos\` para rastreabilidade. **Nenhum deploy nem merge na main.**
+
+**Validação estática pós-escrita:** 8 questões × 4 alternativas, 8 gabaritos e controles de \`<details>\` por aula; IDs não duplicados; links internos da nova seção SUA; 6 aprofundamentos da SUA; tags \`section\`, \`article\`, \`details\` balanceadas; scripts inline preexistentes idênticos. Fonte comparativa Drive lida para cada aula: câncer de endométrio (124), hiperprolactinemia (129) e resumo SOP (134); materiais parciais, autoria institucional Estratégia MED não comprovada. Referências externas principais verificadas: Portaria SCTIE/MS 101/2026, ASRM Amenorreia 2024, Consenso PMOS de maio/2026 e diretriz internacional 2023 (atualização terminológica 2026).
+
+**Controle detalhado:** \`apostilas/_rascunhos/lote-07-auditoria-integracao-124-129-134.md\`, seção “INTEGRAÇÃO EFETIVAMENTE GRAVADA”. Auditoria de comprimento útil, revisão científica independente, imagens/autorizações e testes browser/PWA **pendentes**. **Não declarar as três como finalmente certificadas nem publicadas.**
