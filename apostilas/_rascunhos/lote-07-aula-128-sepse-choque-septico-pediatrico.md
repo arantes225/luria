@@ -279,6 +279,39 @@ Petéquias, púrpura, alteração neurológica, convulsão e choque exigem abord
 
 **Nutrição e reabilitação:** após estabilização e conforme segurança enteral, reiniciar nutrição apropriada e reduzir catabolismo. Sobreviventes podem apresentar fraqueza, déficits cognitivos, alteração escolar e repercussões familiares; SSC 2026 enfatiza cuidado de recuperação e reabilitação individualizada, não alta exclusivamente baseada na normalização da PA.
 
+
+### 8.1. O pulmão não é só fonte da infecção: é órgão-alvo
+
+A pneumonia pode ser foco inicial, mas mesmo uma sepse urinária ou abdominal pode desencadear insuficiência respiratória por aumento da permeabilidade alveolocapilar, inflamação e edema. O pulmão pode receber lesão por **infecção primária, lesão sistêmica da sepse e excesso de fluido** simultaneamente. Diferenciar os mecanismos orienta antibiótico, ventilação e balanço.
+
+**Oximetria** depende de perfusão periférica, sinal adequado, cor da pele, movimento e dispositivo. Uma leitura inesperada deve ser conferida, mas não ignorada diante de cianose/esforço respiratório. A radiografia pode ter infiltrados por pneumonia, atelectasia ou edema, exigindo correlação. Ventilação protetora depende de avaliação de intensidade da hipoxemia, complacência, suporte disponível e risco de barotrauma; não copiar ajustes ventilatórios do adulto ou um volume por kg indiscriminadamente. Intubação de criança em choque exige antecipar a redução do retorno venoso e a possibilidade de instabilidade durante sedação/pressão positiva.
+
+**Etomidato:** a diretriz de 2026 sugere contra o uso durante intubação em crianças com sepse ou choque. A escolha dos agentes de indução e bloqueio neuromuscular ainda deve ser validada por anestesia/UTI com faixa etária, situação cardiovascular e perfil de eventos adversos. A tabela privada de sedoanalgesia do Drive não é norma de dose nem autorização para usar fármacos sem preparo.
+
+### 8.2. Rim e sobrecarga: uma segunda fase da ressuscitação
+
+Após a reversão da hipoperfusão inicial, o risco muda. A criança pode acumular água por fluidos de manutenção, medicamentos diluídos, nutrição, transfusões e rins com filtração reduzida. **Balanço positivo persistente** pode agravar oxigenação, edema, cicatrização e função renal. O seguimento exige diurese, peso seriado, exames de eletrólitos/creatinina e balanço real das entradas e saídas.
+
+Uma medida de débito urinário isolada não diferencia automaticamente obstrução, hipovolemia, lesão tubular e retenção decorrente de resposta hormonal; avaliar idade, tempo de coleta, pressão, sedação e terapia. Quando há estabilidade hemodinâmica, planejar restrição de entradas evitáveis e, se indicado, retirada ativa de fluido com equipe de terapia intensiva/nefrologia. **Não iniciar diurético ou ultrafiltração para "corrigir número do balanço" sem considerar perfusão e choque ainda ativo.**
+
+### 8.3. Depois do choque: a recuperação pode durar semanas ou meses
+
+Sobrevivência à sepse pediátrica não garante retorno imediato ao funcionamento anterior. Podem surgir fraqueza muscular, fadiga, dificuldades alimentares, sono alterado, limitações cognitivas, transtornos emocionais, atrasos escolares e efeitos familiares. Crianças que precisaram de ventilação ou imobilização prolongada podem requerer fisioterapia, fonoaudiologia, terapia ocupacional e avaliação funcional.
+
+A SSC 2026 sugere **reabilitação individualizada precoce**, compatível com estabilidade e tolerância, e recomenda como boa prática avaliar risco de morbidade pós-sepse, orientar responsáveis e procurar novas sequelas após alta. Ainda há **evidência insuficiente para recomendar um programa específico de acompanhamento pós-hospitalar para todos**, mas isso não justifica omitir avaliação de queixas/comprometimento funcional.
+
+**Orientação de alta a registrar:** infecção/foco tratado, complicações ocorridas, antibiótico final e culturas relevantes, condição respiratória/renal, necessidade de retorno por sintomas, escolaridade/funcionamento anterior e atual, consultas programadas e telefone para contato. Em criança vulnerável, garantir seguimento territorial e comunicação à APS.
+
+### 8.4. O que um programa de qualidade deve medir?
+
+**Processo:** tempo para reconhecimento clínico, coleta de lactato/culturas quando cabível, administração de antimicrobiano, reavaliação dos fluidos, acesso a vasoativo/transferência e tempo de controle do foco.
+
+**Resultado:** mortalidade ajustada ao risco, disfunção renal/respiratória, tempo de ventilação/UTI, eventos de sobrecarga hídrica, infecção associada à assistência, resistência aos antimicrobianos, readmissões e recuperação funcional.
+
+**Equidade:** atrasos por turno, idade, território de origem e barreiras sociais; população sem acesso oportuno à UTI pode precisar de fluxos de transferência melhores, não de reproduzir indiscriminadamente volumes usados em grandes centros.
+
+**Nota de inferência:** queda do tempo até antibiótico é um processo desejável, mas não demonstra isoladamente benefício causal se perfil de gravidade mudou e houve aumento de tratamento de crianças que não tinham infecção bacteriana; o monitoramento deve avaliar também segurança e precisão diagnóstica.
+
 ## 9. Diagnósticos diferenciais: nem todo choque febril é séptico
 
 | Cenário | Pistas favoráveis | Como isso modifica o plano |
