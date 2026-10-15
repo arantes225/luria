@@ -67,7 +67,7 @@ A tendência de “fazer uma medida e esperar ver se funciona” pode consumir a
 
 ## 5. Tratamento farmacológico: objetivos, cautelas e sequência temporal
 
-**Ocitocina:** uterotônico principal para prevenir e tratar atonia uterina. Para o tratamento da HPP, a OMS 2025 descreve **10 UI intravenosas**, administradas de maneira lenta/diluída, evitando injeção IV rápida por risco de hipotensão, com possibilidade de infusão de manutenção conforme resposta e protocolo. Essa não é necessariamente a mesma preparação utilizada universalmente para profilaxia após o nascimento; distinguir indicação, via, diluição, velocidade e contexto.
+**Ocitocina:** uterotônico principal para prevenir e tratar atonia uterina. Para o tratamento da HPP, a OMS 2025 descreve **10 UI IV como dose inicial usual para tratar HPP**, preferencialmente diluídas e administradas lentamente em 1–2 minutos ou em infusão curta durante 5–10 minutos. Evitar injeção IV rápida, que pode provocar hipotensão. Após o controle inicial, pode ser necessária infusão de manutenção com 10–20 UI diluídas em cristaloide ao longo de aproximadamente 4 horas, titulada ao tônus, à perda sanguínea e ao estado hemodinâmico. A própria OMS reconhece incerteza quanto ao regime ótimo e variações entre protocolos. Essa não é necessariamente a mesma preparação utilizada universalmente para profilaxia após o nascimento; distinguir indicação, via, diluição, velocidade e contexto.
 
 **Outros uterotônicos:** alternativas em falha ou indisponibilidade da ocitocina incluem ergometrina/derivados e prostaglandinas, dependendo do protocolo e das contraindicações. Ergotamínicos não devem ser usados indiscriminadamente em doença hipertensiva grave. A escolha de prostaglandina deve considerar acesso, via de administração, efeitos adversos e a situação clínica. O manuscrito final exigirá tabela nacional por apresentação, contraindicações e regulação.
 
@@ -217,11 +217,11 @@ E. Rotura de membranas como causa exclusiva do sangramento.
 
 **Mini-revisão:** HPP secundária demanda raciocínio próprio; não aplicar automaticamente o algoritmo de atonia do terceiro período.
 
-## 9. Plano de aprofundamento obrigatório
+## 9. Registro da ampliação e instruções de integração
 
-A versão final exige: fisiologia hemostática completa; profilaxia por cenário obstétrico e via de parto; avaliação de perdas com exemplos detalhados; protocolo escrito de ativação do banco de sangue; análise de fibrinogênio, plaquetas e testes viscoelásticos; hemoterapia e ressuscitação hemostática com especialistas; contraindicações de cada uterotônico; controle de foco cirúrgico e não cirúrgico; complicações; ética, comunicação e apoio após evento grave; ≥60 mil caracteres úteis; questões com alternativas completas e casos avançados; imagens originais/terceiros licenciados aprovados no Admin; validação médica e layout desktop/PWA.
+A versão inicial continha conceitos, quatro T, primeira resposta, quatro casos e seis questões. Os capítulos posteriores foram acrescentados para cobrir prevenção, quantificação objetiva, hemoterapia, medicamentos, segurança de procedimentos, recuperação e decisões contextualizadas. **Este registro é controle editorial, não capítulo destinado ao aluno.** Ao integrar a versão final, fundir blocos que ensinam o mesmo conceito em seções próprias, sem apagar exemplos complementares ou aumentar a extensão com repetição.
 
-**Importante:** os números e escolhas clínicas estão aqui para ensino, sujeitos a revisão de protocolo local e dupla checagem antes da integração no site. Este rascunho não se destina ao uso autônomo como ordem médica.
+**Importante:** as doses e escolhas clínicas servem ao ensino e ainda exigem dupla checagem, validação em protocolos brasileiros, revisão independente e inspeção visual antes da publicação.
 
 
 ## 10. Prevenção: reduzir eventos antes de precisar de ressuscitação
@@ -242,7 +242,7 @@ O planejamento precisa abordar acesso a hemocomponentes, instrumentação, possi
 
 ### 10.3. Uterotônico profilático: qual a distinção entre indicação e disponibilidade?
 
-Na recomendação consolidada OMS/FIGO/ICM 2025, **um uterotônico de qualidade assegurada é indicado para prevenção em todos os partos**, com opções estabelecidas: **ocitocina 10 UI IM/IV**, **carbetocina 100 μg IM/IV** ou **misoprostol 400–600 μg por via oral**, conforme contexto, cadeia de frio e recursos. Quando há opções múltiplas, a **ocitocina** é preferencial. Carbetocina termoestável é alternativa relevante em locais onde a manutenção da cadeia de frio de ocitocina não é confiável. Se não houver ocitocina ou carbetocina termoestável adequadas, misoprostol oral pode ser a opção viável. A seleção deve seguir legislação, apresentações e protocolo do serviço.
+Na recomendação consolidada OMS/FIGO/ICM 2025, **um uterotônico de qualidade assegurada é indicado para prevenção em todos os partos**, com opções estabelecidas: **ocitocina 10 UI IM/IV**, **carbetocina 100 μg IM/IV** ou **misoprostol 400–600 μg por via oral**, conforme contexto, cadeia de frio e recursos. Quando há opções múltiplas, a **ocitocina** é preferencial. Carbetocina termoestável é alternativa relevante em locais onde a manutenção da cadeia de frio de ocitocina não é confiável. Se não houver ocitocina ou carbetocina termoestável adequadas, misoprostol oral pode ser a opção viável. **A OMS/FIGO/ICM 2025 não recomenda ergometrina/metilergometrina, associação fixa de ocitocina com ergometrina nem prostaglandinas injetáveis para a profilaxia rotineira da HPP**, diferentemente de alguns protocolos anteriores. Essa recomendação sobre prevenção **não equivale** à lista de alternativas possíveis para o *tratamento de HPP estabelecida*. A seleção deve seguir legislação, apresentações e protocolo do serviço.
 
 O termo **profilaxia** descreve prevenção da hemorragia imediatamente após o nascimento, **antes** da identificação de sangramento patológico. O termo **tratamento** descreve resposta a HPP já diagnosticada. Um medicamento pode aparecer nas duas situações, mas via, dose, velocidade e combinações não devem ser transferidas de uma para outra sem verificação. Em particular, o uso de ácido tranexâmico para **tratamento precoce da HPP estabelecida** não significa indicação automática de ácido tranexâmico profilático a toda paciente.
 
@@ -403,7 +403,7 @@ Plaquetas podem ser indicadas diante de sangramento microvascular com contagem *
 
 ### 14.5. Divergências entre recomendações: como ensinar ao aluno
 
-No Brasil, fluxogramas FEBRASGO descrevem propostas práticas de proporções de hemocomponentes para **choque gravíssimo e transfusão maciça**, como pacotes com concentrado de hemácias, plasma e plaquetas. A OMS 2025 apresenta abordagem progressiva, com prioridade para TXA precoce, avaliação de fibrinogênio e correção guiada por testes quando factível, admitindo esquemas empíricos quando exames atrasam. **Ambas enfatizam que não se deve aguardar o hemograma de rotina para reanimar uma paciente clinicamente instável.**
+No Brasil, fluxogramas FEBRASGO descrevem propostas práticas de proporções de hemocomponentes para **choque gravíssimo e transfusão maciça**, como pacotes com concentrado de hemácias, plasma e plaquetas. A OMS 2025 apresenta abordagem progressiva, com prioridade para TXA precoce, avaliação de fibrinogênio e correção guiada por testes quando factível, admitindo esquemas empíricos quando exames atrasam. **Ressalva para plasma fresco congelado:** a OMS não recomenda sua transfusão empírica precoce antes de resultados hemostáticos e de quatro unidades de concentrado de hemácias; se resultados laboratoriais atrasam em hemorragia maciça, o documento admite a proporção de 1 unidade de plasma para 2 de hemácias. Não se trata de um esquema obrigatório universal, e a transfusão de hemácias/controle do foco em paciente instável não deve esperar esse marco. **Ambas enfatizam que não se deve aguardar o hemograma de rotina para reanimar uma paciente clinicamente instável.**
 
 Não é correto apresentar um conjunto de proporções como se fosse aplicável em qualquer serviço, qualquer quantidade de perda ou qualquer momento. As recomendações variam por cenário de recursos, disponibilidade laboratorial e protocolo institucional. Para prova, conhecer o algoritmo do documento citado pelo enunciado; para assistência, usar protocolo da instituição e apoio do serviço de hemoterapia.
 
@@ -747,3 +747,12 @@ A versão final deverá ser respondível sem buscar fora da LURIA. Para aprovaç
 10. Consegue orientar seguimento após HPP, anemia, evento traumático e sangramento secundário?
 
 **Status editorial:** estes testes são um roteiro para auditoria humana e não representam aprovação já obtida. A redação precisa ainda ser checada integralmente contra fontes nacionais e internacionais, além de passar pela deduplicação e pela adaptação ao renderizador da LURIA.
+
+
+### Nota técnica de reconciliação OMS 2025 × práticas brasileiras
+
+**Profilaxia:** ocitocina 10 UI IM/IV é a primeira escolha na recomendação consolidada da OMS 2025 quando há alternativas; para parto vaginal **com acesso IV pré-existente**, a administração de 10 UI diluídas lentamente por 1–2 minutos é preferível à IM. A OMS não orienta instalar acesso IV **apenas** para a profilaxia. A seleção de fármaco para o terceiro período não deve ser confundida com tratamento de HPP.
+
+**Tratamento:** diante da hemorragia já instalada, a ocitocina IV continua primeira linha **mesmo em quem recebeu ocitocina preventiva**; seguir monitorização e esquema específico de tratamento. A elegibilidade de outros uterotônicos depende de condições clínicas, incluindo hipertensão e asma, além de registro e disponibilidade.
+
+**Referências pontuais da revisão científica:** [OMS 2025: ocitocina no tratamento](https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab28/); [OMS 2025: preferência do uterotônico na prevenção](https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab14/); [OMS 2025: via de ocitocina na prevenção](https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab10/); [OMS 2025: hemoterapia e HPP refratária](https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab45/). As tabelas não foram reproduzidas.
