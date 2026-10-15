@@ -217,3 +217,262 @@ Ruptura posterior do anel pode lesar plexo lombossacro; registrar força, sensib
 
 ---
 
+
+
+## 9. Trauma renal: saber a gravidade sem retirar o rim desnecessariamente
+
+### 9.1 Frequência, mecanismos e manifestações
+O **rim** está entre os órgãos geniturinários mais acometidos em trauma. Contusão renal resulta de impacto de flanco, desaceleração e compressão entre costelas/coluna. Lesão penetrante pode afetar parênquima, pelve renal e pedículo vascular. O grau anatômico não equivale automaticamente à necessidade de nefrectomia. Em paciente estável, muitos traumas renais — inclusive uma parcela de alto grau — são manejados sem cirurgia aberta, desde que haja vigilância, imagem adequada, radiologia intervencionista e capacidade de resgate.
+
+**Manifestações:** dor em flanco, hematoma lombar, fraturas de costelas inferiores, hematúria macro ou microscópica, massa/defesa abdominal, queda de hemoglobina e alterações de perfusão. A **ausência de hematúria não exclui lesões importantes**, como algumas vasculares ou do ureter; o mecanismo e exame físico podem indicar TC mesmo sem alteração urinária.
+
+### 9.2 Quem precisa de imagem renal?
+No paciente **estável** com suspeita de lesão renal, a EAU 2026 recomenda TC multifásica diante de hematúria visível; hematúria microscópica associada a episódio de hipotensão; desaceleração rápida; trauma penetrante relevante; ou sinais como dor/hematoma de flanco, fratura de costela, distensão abdominal e lesões importantes associadas. Não usar apenas a regra “hematúria = TC, sem hematúria = alta”. Avaliar evolução, idade, gravidez, contraindicações, função renal e mecanismos.
+
+Em instabilidade por sangramento, a prioridade é hemostasia e suporte. A TC é inadequada se transportar o paciente compromete controle de choque. FAST pode pesquisar hemoperitônio, mas **não é sensível o suficiente para classificar trauma renal**; ultrassom simples pode ser útil em seguimento ou contextos selecionados, não substitui TC para definir extensão inicial de lesão significativa.
+
+### 9.3 TC e suas fases: cada fase responde a uma pergunta
+A TC em protocolo de trauma com contraste IV pode incluir:
+- **Fase arterial:** identificar lesões de artéria renal/ramificações e extravasamento ativo de contraste.
+- **Fase nefrográfica:** delimitar perfusão e lacerações parenquimatosas, hematomas e áreas de devascularização.
+- **Fase excretora tardia:** demonstrar extravasamento urinário do sistema coletor ou ureter. É especialmente importante quando se suspeita de comunicação com vias excretoras ou TC inicial não caracteriza adequadamente a lesão.
+
+A prática real costuma integrar tomografia de corpo inteiro com protocolos simplificados; nem toda vítima de trauma recebe três aquisições completas. Se houver suspeita de lesão coletora não respondida, a equipe pode acrescentar fase tardia ou exame direcionado. Documentar **rim contralateral**, função geral, vascularização, sistema coletor e lesões de outros órgãos.
+
+### 9.4 AAST renal: interpretar grau à luz da classificação vigente
+A escala da **American Association for the Surgery of Trauma (AAST)** utiliza graus I–V e foi atualizada em 2018. O conceito evolui de **contusão/hematoma superficial ou laceração pouco profunda**, passando por **laceração profunda com envolvimento do sistema coletor e lesões segmentares**, até **rim fragmentado ou comprometimento vascular hilar importante**. Os detalhes anatômicos e vasculares por grau devem ser conferidos no quadro da AAST atualizado, porque versões antigas de livros podem apresentar critérios diferentes.
+
+**Não confundir grau com decisão de explorar:** estabilidade hemodinâmica e sinais de hemorragia persistente são centrais. Lesão grau IV não impõe cirurgia imediata por si só; paciente com lesão classificada menor e sangramento descontrolado pode precisar de intervenção urgente. Não decorar o número sem entender perfusão, extravasamento e lesões associadas.
+
+| Aspecto observado | Significado clínico | Influência possível |
+| --- | --- | --- |
+| Hematoma contido e estável | Hemorragia sem progressão clínica | Observação e exames seriados |
+| Extravasamento vascular ativo focal | Sangramento potencialmente tratável por embolização | Angiografia/embolização em selecionados |
+| Extravasamento urinário, sem sinais de infecção e paciente estável | Comunicação do sistema coletor, nem sempre requer procedimento imediato | Observar com plano; drenar se persistente/sintomático |
+| Hilo avulsionado, perfusão ausente e/ou choque refratário | Lesão vascular crítica | Intervenção emergente conforme recursos |
+| Febre, dor crescente, hematócrito em queda ou novo sangramento | Complicação/hemorragia tardia | Nova imagem e escalonamento |
+
+### 9.5 Tratamento não operatório (TNO): o que ele realmente significa?
+**TNO não é simplesmente “deixar o paciente internado”.** Envolve avaliações hemodinâmicas seriadas, hemoglobina/hematócrito conforme necessidade, controle de dor, diurese, função renal, sinais de infecção e reimagem quando indicada; equipe e recursos precisam permitir intervenção imediata se houver deterioração.
+
+A EAU recomenda manejo não operatório em pacientes estáveis com trauma renal contuso, com monitorização e reimagem conforme risco. Traumas renais penetrantes selecionados também podem receber TNO em centros experientes, desde que trajetória e lesões associadas sejam adequadamente avaliadas. **TNO pode incluir procedimentos minimamente invasivos** — embolização seletiva, stent ureteral, nefrostomia ou drenagem percutânea — sem exigir laparotomia.
+
+### 9.6 Angioembolização renal
+A angiografia terapêutica é relevante em paciente selecionado com sangramento renal arterial ativo, pseudoaneurisma ou fístula arteriovenosa, especialmente se hemodinamicamente estável ou suficientemente estabilizado e não existe outra indicação imediata de laparotomia. A **embolização seletiva** visa hemostasia preservando parênquima funcional. Falha, sangramento difuso ou instabilidade persistente podem exigir cirurgia.
+
+A decisão não se reduz a “há blush = embolizar sempre”: avaliar fonte, extensão, necessidade transfusional, hemodinâmica, acesso à radiologia e demais lesões. Não prolongar espera por angiografia que não está disponível em um paciente exsanguinante.
+
+### 9.7 Extravasamento urinário e urinoma
+Uma laceração envolvendo sistema coletor pode produzir extravasamento urinário perirrenal. **Não é obrigatório colocar duplo J em toda extravasação visualizada**, se paciente estável e assintomático. Intervenção por **stent ureteral, nefrostomia ou drenagem perirrenal** entra quando há vazamento persistente, dor significativa, febre, infecção, obstrução ou coleção sintomática. A conduta deve preservar função e resolver vazamento e complicações.
+
+A prova pode perguntar “grau IV com extravasamento urinário e paciente confortável”: não indicar cirurgia aberta automaticamente. Deve haver plano de monitorização, recursos e retorno se surgirem sintomas.
+
+### 9.8 Reimagem e complicações tardias
+Repetir TC mais cedo em **lesão de alto grau, trauma penetrante** ou deterioração, conforme protocolo e indicação. Febre, queda não explicada de hematócrito, dor de flanco intensa, hematúria tardia e infecção demandam investigar complicação. Nos casos estáveis de graus baixos, uma TC de rotina repetida pode não trazer benefício e aumentar radiação.
+
+Complicações incluem pseudoaneurisma arterial, fístula arteriovenosa, sangramento tardio, urinoma, abscesso, estenose de junção, perda de função renal e **hipertensão renovascular pós-trauma**. Em lesão importante, acompanhamento posteriormente com **pressão arterial, função renal, urina e imagem individualizada** é essencial. A EAU sugere revisão por volta de três meses em grandes lesões e atenção à pressão arterial em longo prazo.
+
+---
+
+## 10. Trauma de ureter: a lesão que pode passar despercebida
+
+### 10.1 Por que o ureter é difícil?
+Por ser retroperitoneal, móvel e parcialmente protegido, trauma externo isolado do ureter é pouco comum; muitas lesões ocorrem em traumas penetrantes com outros órgãos feridos. Em cirurgia abdominal ou pélvica, ligadura, secção, esmagamento, isquemia e lesão térmica podem passar despercebidas, ocasionando diagnóstico tardio. O desafio é reconhecer quando uma coleção, febre, dor e alteração renal posterior ao procedimento representam **extravasamento urinário ou obstrução ureteral**.
+
+A hematúria é **sinal pouco confiável** para lesão ureteral e pode faltar mesmo em lesão completa. Não dispensar investigação porque uma amostra de urina está clara.
+
+### 10.2 Pistas na história e no exame
+Suspeitar diante de ferimentos penetrantes com trajetória atravessando flanco/abdome/pelve, trauma complexo com lesões retroperitoneais ou procedimentos próximos ao trajeto ureteral. Após cirurgia, dor lombar persistente, febre, íleo, drenagem anormal por dreno cirúrgico, urinoma, hidronefrose, aumento de creatinina ou fístulas podem sinalizar problema.
+
+A elevação sérica de creatinina pode não ocorrer com lesão unilateral se rim oposto funciona bem. Uma coleção pode ter creatinina maior que a sérica; a relação entre líquidos e sangue deve ser interpretada considerando circunstância, diluição e outros achados.
+
+### 10.3 Diagnóstico por imagem
+Em paciente estável, **TC urografia com fase excretora tardia** é estratégia principal para suspeita de lesão ureteral; extravasamento tardio de contraste é achado característico. Dilatação discreta, líquido perirrenal, ascite e ausência de enchimento de segmento ureteral podem ser pistas quando extravasamento não é óbvio. Se persistir dúvida, **pielografia retrógrada ou anterógrada** pode confirmar localização e extensão e permitir intervenção concomitante.
+
+Uma TC abdominal em fase portal apenas, sem fase excretora, pode deixar a lesão oculta. Portanto, especificar a **pergunta clínica** no pedido do exame é mais importante que escrever simplesmente “tomografia de abdome”.
+
+### 10.4 Manejo: localização e viabilidade determinam reconstrução
+Em paciente estável com lesão identificada durante cirurgia, reparo precoce pode reduzir sequelas; avaliar **vascularização e viabilidade** da borda ureteral e evitar anastomose sob tensão, com técnica especializada. Em ruptura parcial selecionada, drenagem com stent pode ser suficiente; lesões completas exigem reconstrução ou derivação, com abordagem diferente conforme segmento.
+
+- **Ureter proximal/médio:** quando possível, reaproximar extremidades viáveis por anastomose ureteroureteral sem tensão, normalmente sobre suporte interno segundo técnica urológica.
+- **Ureter distal:** reimplante na bexiga (ureteroneocistostomia), às vezes com mobilização vesical, **psoas hitch** ou retalho de Boari, em casos selecionados.
+- **Lesão extensa:** reconstruções complexas individualizadas e avaliação funcional podem ser necessárias; não é cenário de improviso na sala de emergência.
+- **Politrauma instável:** controle de danos, drenagem/derivação urinária e reconstrução após estabilização podem ser preferíveis.
+- **Descoberta tardia:** tentativa de stent e/ou nefrostomia para drenagem conforme anatomia, infecção, obstrução e recursos; planejamento reconstrutivo posterior se necessário.
+
+### 10.5 Complicações e seguimento
+Estenose ureteral, hidronefrose, infecção, urinoma, fístula, perda da função renal e necessidade de reintervenção são importantes. Seguimento deve incluir sintomas, imagem quando indicada e função renal. Em lesão térmica iatrogênica, tecido aparentemente íntegro pode necrosar tardiamente; suspeita persistente merece investigação mesmo após intraoperatório aparentemente tranquilo.
+
+---
+
+## 11. Trauma vesical: a TC comum não substitui cistografia
+
+### 11.1 Fisiopatologia e apresentação
+Na fratura pélvica, segmentos ósseos deslocados e forças de cisalhamento podem romper a bexiga, frequentemente na localização **extraperitoneal**. Bexiga distendida, exposta a aumento súbito de pressão abdominal, pode romper na **cúpula**, resultando em extravasamento **intraperitoneal**. Algumas lesões podem combinar componentes, e traumatismo penetrante frequentemente envolve outras vísceras.
+
+**Sinais:** hematúria macroscópica é comum; dor hipogástrica, incapacidade de urinar, distensão abdominal, baixo débito, peritonismo tardio, líquido livre e aumento de creatinina por reabsorção peritoneal podem ocorrer. O trauma vesical deve ser diferenciado de lesão uretral, renal e de outras fontes de sangue na urina. Hematúria por si só não localiza a lesão.
+
+### 11.2 Indicações principais de cistografia
+**Fratura pélvica associada à hematúria macroscópica** é indicação forte de cistografia, quando paciente estabilizado. A EAU também destaca **hematúria microscópica + fratura pélvica de alto risco** e outros sinais clínicos que sugerem ruptura. Em paciente com peritonismo, ascite urinária ou lesão penetrante, investigar conforme mecanismo e estabilidade, mesmo sem combinação clássica.
+
+Não há obrigação de cistografia para toda fratura pélvica isolada sem sinais de lesão urinária; isso cria custo e exposição. Entretanto, ausência de hematúria não permite ignorar outros indícios fortes, como feridas penetrantes e sintomas urinários importantes.
+
+### 11.3 Como fazer cistografia e por que a fase passiva falha
+A **cistografia retrógrada** (convencional ou por TC) exige preencher ativamente a bexiga com contraste diluído por acesso urinário adequado e sob equipe/protocolo, tipicamente **300–350 mL em adultos**. A bexiga deve ser distendida para permitir identificação de falha. O simples fechamento de sonda para permitir enchimento passivo durante a fase excretora de TC **não tem sensibilidade suficiente para excluir lesão vesical**. Em crianças, volumes e técnicas não devem ser transplantados automaticamente de adulto.
+
+**Atenção à sequência:** se há **sangue no meato ou suspeita de lesão uretral**, a abordagem uretral deve ser discutida antes de sondagem às cegas; a cistografia pode precisar de estratégia alternativa. Nunca executar “sonda primeiro, depois descubro se a uretra rompeu” por comodidade administrativa.
+
+### 11.4 Como interpretar extravasamento de contraste
+- **Intraperitoneal:** contraste livre em cavidade abdominal, delineando alças/órgãos e recessos; sugere comunicação com o peritônio, tipicamente na cúpula.
+- **Extraperitoneal:** contraste dissemina-se ao redor da bexiga nos espaços perivesicais e tecidos pélvicos, com padrão de extravasamento não livre.
+- **Misto:** características de ambos; planejar conduta conforme componente intraperitoneal e lesões associadas.
+
+Não interpretar pequena coleção adjacente sem preenchimento adequado como diagnóstico definitivo de integridade. Um exame tecnicamente inadequado com bexiga pouco distendida pode ser falsamente negativo.
+
+### 11.5 Conduta em lesão extraperitoneal
+Na **ruptura extraperitoneal não complicada por trauma contuso**, tratamento usual é drenagem vesical contínua por sonda adequada, monitorização e controle de lesões associadas, permitindo cicatrização. Entretanto, **lesão do colo vesical, fragmentos ósseos intravesicais, trauma retal/vaginal associado, lesão complexa ou necessidade de intervenção pélvica concomitante** podem justificar reparo cirúrgico conforme situação.
+
+**Armadilha de prova:** “bexiga extraperitoneal = sempre conservadora” está errado. A palavra decisiva é **não complicada**. O que torna o caso complicado deve constar no enunciado e na avaliação.
+
+### 11.6 Conduta em lesão intraperitoneal
+**Ruptura intraperitoneal por trauma contuso externo** costuma exigir **reparo cirúrgico**, por risco de extravasamento livre de urina, peritonite e sepse. Cirurgia laparoscópica pode ser opção em casos selecionados e estáveis; lesões extensas/associadas podem necessitar abordagem aberta. Inspecionar órgãos associados, proteger ureteres e colo vesical e documentar drenagem/cura.
+
+**Não extrapolar** essa regra a todas as perfurações iatrogênicas pequenas durante procedimento endoscópico: alguns cenários selecionados e sem peritonite/íleo podem receber tratamento conservador sob monitorização especializada. A diferença entre trauma externo contuso e perfuração endoscópica pequena explica a aparente divergência entre regras de livros.
+
+### 11.7 Acompanhamento e retirada da sonda
+É necessário plano de drenagem, observação de infecção, vazamento, dor e recuperação da micção. Cistografia de controle é particularmente importante em lesões **complexas** ou com fatores de risco de cicatrização deficiente; sua indicação/timing em lesões simples e reparos dependem da estratégia e do protocolo especializado. Não prescrever retirada universal em um dia fixo sem conhecer lesão, técnica e evolução. Lesões não cicatrizadas requerem reavaliação e nova imagem.
+
+### 11.8 Quadro comparativo de alta retenção
+| Elemento | Ruptura extraperitoneal | Ruptura intraperitoneal |
+| --- | --- | --- |
+| Associação típica | Fratura pélvica e dano periférico | Bexiga cheia + golpe/pressão súbita |
+| Contraste em cistografia | Espaços perivesicais | Livre na cavidade peritoneal |
+| Manejo mais comum | **Drenagem por sonda se não complicada** | **Reparo cirúrgico em trauma contuso externo** |
+| O que modifica regra? | Colo vesical, osso intravesical, lesão retal/vaginal, outras indicações operatórias | Etiologia iatrogênica endoscópica pequena e criteriosamente selecionada |
+| Armadilha | Dizer que toda extraperitoneal é observação | Dizer que toda perfuração de bexiga é igual |
+
+---
+
+## 12. Trauma uretral: não causar lesão adicional ao tentar monitorar a diurese
+
+### 12.1 Por que a sonda pode ser perigosa?
+A tentativa não orientada de cateterizar uretra traumatizada pode aumentar falsa via, sangramento e dificuldade posterior. O ensino clássico “sangue no meato = **não passar sonda às cegas antes de avaliar**” continua útil para estudantes; entretanto, diretrizes modernas distinguem possibilidades supervisionadas. Em pacientes selecionados, **passagem delicada única por operador experiente**, sob circunstância adequada, ou **alinhamento endoscópico** podem ser considerados. Isso NÃO equivale a liberar tentativas repetidas e forçadas ou a deixar monitorização urinária atrasar controle de choque.
+
+### 12.2 Localização: anterior versus posterior
+**Anterior**, especialmente bulbar, pode ocorrer após queda a cavaleiro (períneo comprimido contra objeto) e instrumentação; também trauma penetrante e fratura peniana associada. **Posterior** pode acompanhar ruptura do anel pélvico e deslocamento da junção bulbomembranosa. A distinção orienta investigação e estratégia de reparo; presença de fratura pélvica não significa que lesão uretral existe obrigatoriamente.
+
+### 12.3 Sinais de suspeita
+- Sangue no meato uretral (**sinal cardinal**, mas não obrigatório).
+- Incapacidade de urinar ou retenção com bexiga distendida.
+- Hematoma perineal, escrotal/peniano ou labial e equimose.
+- Uretrorragia, dor à micção, hematúria, dificuldade de passagem de sonda.
+- Fratura anterior do anel com disrupção pélvica e mecanismos de alto risco.
+
+**Não depender de “próstata alta”:** exame digital não é suficientemente confiável para excluir ou afirmar a ruptura. Sangue retal, ferida retal ou achados perineais podem demandar investigação de lesão intestinal associada; isso é diferente de usar toque como teste uretral.
+
+### 12.4 Exame de escolha no homem: uretrografia retrógrada
+A **uretrografia retrógrada (RUG)** é método padrão inicial para suspeita de lesão uretral masculina em contexto apropriado. O contraste introduzido de forma retrógrada demonstra **extravasamento**, local da lesão e possível passagem para bexiga. A EAU 2026 descreve técnica com aproximadamente 20–30 mL de contraste e projeção oblíqua, executada por equipe treinada. Em fratura pélvica instável, recomenda ajustar o **feixe de imagem**, e não mover imprudentemente o paciente para alcançar posição ideal.
+
+Uma ruptura parcial pode apresentar extravasamento **com enchimento vesical**; lesão completa é sugerida por grande extravasamento sem passagem suficiente para bexiga. Contudo, a distinção apenas pela RUG **nem sempre é confiável**. Cistoscopia flexível pode ajudar a distinguir continuidade, e a investigação adicional é planejada se houver tratamento diferido.
+
+### 12.5 Uretra feminina
+Em mulher com fratura pélvica, sangue genital, dificuldade miccional, hematoma vulvar ou laceração vaginal, examinar sob condições seguras e integrar **cistouretroscopia e vaginoscopia** com avaliação ginecológica/urológica. Técnicas masculinas de uretrografia não se transferem automaticamente à anatomia feminina. Reparação precoce selecionada pode ter impacto importante em continência e prevenção de fístulas, dependendo de estabilidade e lesões associadas.
+
+### 12.6 Desvio urinário inicial
+Se há ruptura importante ou impossibilidade de cateterização segura, a equipe pode estabelecer **drenagem suprapúbica**, frequentemente guiada por ultrassom, ou por visão direta em cirurgia concomitante. A escolha de acesso requer avaliar **bexiga cheia, hematoma pélvico, lesão vesical e anatomia**, além de treinamento. Não perfurar cegamente suprapúbica através de hematoma, alça intestinal ou região sem janela segura.
+
+Na lesão parcial, drenagem uretral ou suprapúbica pode permitir cicatrização; na completa, estratégia de reconstrução e avaliação da continuidade é mais complexa. Priorizar estabilização de vida, depois derivação funcional e plano reconstrutivo.
+
+### 12.7 Realinhamento precoce e uretroplastia diferida
+O **realinhamento endoscópico precoce** pode ser opção para ruptura uretral posterior em paciente estável, com equipe experiente e quando não compete com ações de emergência. Seu propósito é aproximar extremidades, facilitar drenagem e possivelmente reduzir complexidade, mas **não garante ausência de estenose**. Tentativas repetidas após falha podem causar pior dano e devem ser evitadas conforme EAU.
+
+Em lesões completas por fratura pélvica, a **derivação suprapúbica e uretroplastia definitiva diferida** continua estratégia importante em muitos centros. O momento depende da recuperação das lesões associadas, estabilidade óssea, inflamação/fibrose e anatomia; reparo uretral aberto imediato na fase hiperaguda pode ter riscos importantes em homem com ruptura posterior. A diretriz EAU 2026 recomenda **não realizar uretroplastia imediata (<48 h) em lesões uretrais masculinas associadas à fratura pélvica**, devendo-se distinguir de alternativas endoscópicas selecionadas e do trauma penetrante anterior.
+
+### 12.8 Seguimento: estenose, continência e sexualidade
+A recuperação não é medida apenas por retirar sonda. Há risco de **estenose uretral**, infecção, retenção, incontinência e disfunção erétil (pela própria lesão vascular/nervosa e/ou mecanismos associados). Acompanhamento envolve sintomas miccionais, urofluxometria quando pertinente, resíduos, exames anatômicos e função sexual com escuta sensível e sem constrangimento. Algumas sequelas aparecem meses depois e exigem retorno agendado.
+
+---
+
+## 13. Trauma genital e de partes moles: emergências dentro da emergência
+
+### 13.1 Bolsa escrotal e testículo
+Impacto esportivo, colisão e esmagamento podem produzir hematoma escrotal, hematocele, ruptura testicular ou deslocamento. Dor intensa, aumento volumétrico, náusea e equimose são pistas. A **ultrassonografia escrotal com Doppler** é exame relevante para integridade testicular, contorno da túnica, hematoma e perfusão quando paciente estável e não há indicação cirúrgica evidente.
+
+**Ruptura testicular suspeita ou confirmada exige avaliação para exploração cirúrgica precoce**, a fim de preservar tecido viável. Se exame US é inconclusivo e a suspeita clínica importante persiste, não liberar sem seguimento só porque o laudo é incerto. Hematoceles grandes podem exigir exploração, mesmo sem ruptura demonstrada, pelo risco de lesão oculta, compressão e necrose. Hematomas menores e estáveis podem ser observados com analgesia, suporte e retorno conforme avaliação.
+
+### 13.2 Fratura peniana e uretra associada
+Em contexto de ereção, **estalo, dor súbita, detumescência imediata e hematoma** sugerem ruptura da túnica albugínea do corpo cavernoso, uma emergência urológica de reparo. Ultrassom e ressonância podem ajudar em casos incertos, mas não devem atrasar intervenção diante de apresentação clínica típica. Uretrorragia, hematúria ou dificuldade de urinar impõem suspeita de lesão uretral associada; a avaliação pode incluir cistoscopia no intraoperatório.
+
+Diferenciais: lesão de veia dorsal, hematoma de partes moles e “falsa fratura”, que podem causar inchaço sem ruptura da túnica. A distinção é clínica e de imagem em contextos selecionados, sem subestimar apresentação típica.
+
+### 13.3 Lacerações penetrantes e contaminação
+Lesões escrotais/penianas profundas ou por projéteis podem associar dano de túnica, uretra, cordão espermático e testículo. Avaliar hemorragia, viabilidade, contaminação e necessidade de exploração/irrigação/desbridamento por equipe urológica. Profilaxia de tétano e antimicrobianos quando indicados conforme tipo de ferida e protocolo; não dar esquema padronizado para qualquer trauma sem examinar o mecanismo.
+
+### 13.4 Vulva e vagina
+Hematomas vulvares volumosos após trauma, especialmente com fratura pélvica, podem exigir investigação de lesão vaginal/uretral e sangramento ativo. Exame ginecológico individualizado sob analgesia e condições de privacidade e cuidado, quando seguro e indicado. Não atribuir automaticamente ferida genital a agressão sexual sem dados, mas **oferecer avaliação sensível ao contexto**, protegendo autonomia, documentação adequada e protocolos específicos quando suspeita de violência.
+
+---
+
+## 14. Populações e contextos especiais
+
+### 14.1 Crianças
+A maior elasticidade óssea pediátrica pode alterar padrões de fratura e sinais externos, sem afastar lesões viscerais. Em criança estável, indicar imagem considerando mecanismo, sinais de lesão, dose de radiação e benefícios; não aplicar volumes adultos de contraste vesical e nem interpretações de hemoglobina como se fossem iguais em todas as idades. A suspeita de lesão uretral requer avaliação especializada pediátrica, com técnicas e tamanhos adequados. Trauma genital deve preservar fertilidade e função futura quando possível.
+
+### 14.2 Gestação
+A pelve gestante envolve prioridades de ressuscitação **materna**, proteção fetal conforme idade gestacional e colaboração com obstetrícia e anestesia. Binder pode ser indicado para fratura instável, com posicionamento cuidadoso nos trocânteres, monitorando compressão indevida. Exames de imagem necessários para salvar vida não devem ser recusados automaticamente por gestação; selecionar protocolo e proteção adequados. Sinais de descolamento prematuro de placenta ou lesão uterina entram no diferencial de choque/hemorragia.
+
+### 14.3 Idoso e anticoagulação
+Fraturas após queda em paciente frágil podem ocultar sangramento importante, especialmente com anticoagulantes ou antiplaquetários. Sinais fisiológicos de choque podem ser atípicos, e tolerância à perda sanguínea é menor. Revisar medicações, função renal, mecanismos de reversão e riscos de imobilização prolongada; avaliação hemostática e de outras fontes é necessária mesmo se o RX não demonstra grande afastamento.
+
+### 14.4 Rim único ou doença renal prévia
+A função remanescente e a presença de rim contralateral modificam gravidade funcional. Em paciente com rim único, estratégias conservadoras e de reconstrução renal assumem maior importância, mas não justificam tolerar sangramento descontrolado. O diagnóstico deve incluir anatomia vascular e via excretora, com plano específico de seguimento da função renal e pressão arterial.
+
+### 14.5 Hospital sem radiologia intervencionista 24 horas
+O plano hemostático deve ser **executável**: transporte imediato a centro habilitado apenas se a condição permite; controle cirúrgico por equipe capacitada e estabilização podem salvar tempo no choque. Evitar indicar um recurso indisponível como se fosse a única medida possível. Comunicação precoce para transferência assistida é mais segura do que esperar indefinidamente por embolização, mantendo paciente exsanguinante.
+
+---
+
+## 15. Cuidados pós-ressuscitação e complicações
+
+### 15.1 Fase crítica
+Após hemostasia inicial, revisar presença de coagulopatia, hipotermia, acidose, hipocalcemia transfusional, disfunção renal, rabdomiólise, infecção e lesões não diagnosticadas. Paciente sedado pode não relatar dor, parestesia, dificuldade urinária ou perda motora; registros objetivos e reavaliação seriada são indispensáveis.
+
+### 15.2 Tromboembolismo e imobilização
+Trauma pélvico e imobilidade aumentam risco tromboembólico, mas profilaxia farmacológica deve equilibrar sangramento recente e estabilização hemostática, conforme protocolo e equipe. A ausência temporária de profilaxia farmacológica exige plano de reavaliação, não esquecimento. Mobilização e fisioterapia devem respeitar estabilidade mecânica, fixação e lesões associadas.
+
+### 15.3 Infecção e lesões abertas
+Fratura aberta, contaminação perineal e urinoma infectado requerem vigilância de infecção, documentação de culturas quando indicadas, antimicrobianos direcionados e controle de foco. Lesão retal não reconhecida pode levar a sepse grave e comprometer fixações ortopédicas. Infecção de trato urinário em paciente derivado por cateter não é motivo para manter antimicrobiano indefinidamente sem diagnóstico e indicação.
+
+### 15.4 Reabilitação funcional integrada
+O seguimento envolve consolidação óssea, dor persistente, marcha e mobilidade, força e sensibilidade, função urinária e sexual, saúde mental após trauma e reintegração ao trabalho. Pacientes com dano de plexo podem apresentar dor neuropática e sintomas esfincterianos; acompanhamento multidisciplinar antecipa intervenções. Estenose uretral e disfunção erétil podem surgir tardiamente; evitar dar “alta definitiva” apenas quando a fratura consolidou.
+
+---
+
+## 16. Algoritmos por órgão: síntese operacional
+
+### 16.1 Rim
+**Trauma de flanco + estabilidade** → avaliar mecanismo e sinais (hematúria é útil, mas não indispensável) → TC contrastada multifásica/atrasada segundo suspeita → classificar vaso, parênquima e coletor → observar com vigilância na maioria dos estáveis → angioembolização em sangramento focal selecionado → drenagem urinária de vazamento persistente/sintomático → cirurgia se instabilidade/hemorragia não controlada ou lesões associadas exigirem → reavaliar e acompanhar função/pressão arterial.
+
+### 16.2 Ureter
+**Trauma penetrante/pélvico complexo ou lesão iatrogênica suspeita** → não excluir pela ausência de hematúria → TC com excreção tardia se estável → confirmação por pielografia quando indicado → lesão parcial: drenagem/stent selecionados; secção completa: reparo especializado ou desvio por controle de danos no instável → monitorar fístula, obstrução e perda renal.
+
+### 16.3 Bexiga
+**Fratura pélvica + hematúria macroscópica** → investigar com **cistografia retrógrada ativa**, cuidando da uretra → localização do extravasamento: **intraperitoneal traumático contuso → reparo**; **extraperitoneal simples → drenagem vesical**; **extraperitoneal complexa → avaliar reparo** → seguimento de cicatrização, necessidade de cistografia controle e retirada planejada da sonda.
+
+### 16.4 Uretra
+**Sangue no meato, retenção ou hematoma perineal após trauma** → estabilizar paciente, não forçar sonda → uretrografia retrógrada/cistoscopia adequada quando estável → identificar continuidade e segmento → drenagem segura por especialista e eventual realinhamento precoce selecionado ou derivação suprapúbica → uretroplastia diferida em ruptura completa posterior quando indicada → seguir estenose, continência e sexualidade.
+
+### 16.5 O que não pode acontecer
+- Não colocar binder no abdome alto.
+- Não submeter anel suspeito a compressões repetidas.
+- Não declarar FAST negativo como ausência de hemorragia.
+- Não transportar paciente em choque refratário à tomografia por rotina.
+- Não generalizar fratura pélvica = angioembolização em todos.
+- Não rotular grau renal alto = nefrectomia.
+- Não confundir tomografia contrastada em excreção passiva com cistografia adequada.
+- Não colocar sonda uretral às cegas de modo forçado e repetido diante de suspeita de ruptura.
+- Não diagnosticar lesão uretral exclusivamente pelo toque prostático.
+- Não afirmar que toda lesão extraperitoneal de bexiga é simples.
+- Não ignorar lesão retal, vaginal, neurológica e as consequências sexuais.
+- Não considerar retorno tardio como opcional em paciente com lesão de uretra/ureter/renal importante.
+
