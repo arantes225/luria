@@ -1,0 +1,121 @@
+{
+  "book": 131,
+  "editorial_state": "RASCUNHO_NAO_PUBLICAR",
+  "image_policy": "Não incorporar arquivos no HTML ou publicar antes de revisão de licença/autoria, legenda, adequação médica, WebP e aprovação da fila Admin. As referências ao Wikimedia Commons não representam liberação automática para uso comercial; exigir checagem individual. Os cinco diagramas originais ainda não foram desenhados.",
+  "identified_sources": 5,
+  "original_diagram_specs": 5,
+  "approved": 0,
+  "embedded": 0,
+  "candidates": [
+    {
+      "number": 1,
+      "type": "imagem existente candidata",
+      "status": "AGUARDA_APROVACAO_ADMIN",
+      "title": "Estrutura do HBV",
+      "section": 5,
+      "source": "https://commons.wikimedia.org/wiki/File:HBV.png",
+      "creator": "Dr Graham Beards",
+      "license_status": "REVER_NA_PAGINA_ANTES_DE_REUSAR",
+      "why": "Capsídeo e envelope HBsAg",
+      "caption_proposal": "Capsídeo e envelope HBsAg. Diagrama didático; exige revisão científica e atribuição adequada antes de publicação."
+    },
+    {
+      "number": 2,
+      "type": "imagem existente candidata",
+      "status": "AGUARDA_APROVACAO_ADMIN",
+      "title": "Linha temporal sorológica da hepatite B",
+      "section": 11,
+      "source": "https://commons.wikimedia.org/wiki/File:HBV-serology.svg",
+      "creator": "Cao Xuan Kien",
+      "license_status": "DECLARADA_DOMINIO_PUBLICO_CONFERIR_CONTEUDO_CIENTIFICO",
+      "why": "HBsAg, IgM/IgG anti-HBc e anti-HBs por fase; revisar sinalização antiga",
+      "caption_proposal": "HBsAg, IgM/IgG anti-HBc e anti-HBs por fase; revisar sinalização antiga. Diagrama didático; exige revisão científica e atribuição adequada antes de publicação."
+    },
+    {
+      "number": 3,
+      "type": "imagem existente candidata",
+      "status": "AGUARDA_APROVACAO_ADMIN",
+      "title": "Fases do HBV crônico",
+      "section": 12,
+      "source": "https://commons.wikimedia.org/wiki/File:Hepatitis_B_virus_phases_of_chronic_infection.png",
+      "creator": "Conferir ficha do Commons",
+      "license_status": "PENDENTE_DE_VERIFICACAO",
+      "why": "Relacionar HBV-DNA, ALT, HBeAg e risco de fibrose",
+      "caption_proposal": "Relacionar HBV-DNA, ALT, HBeAg e risco de fibrose. Diagrama didático; exige revisão científica e atribuição adequada antes de publicação."
+    },
+    {
+      "number": 4,
+      "type": "imagem existente candidata",
+      "status": "AGUARDA_APROVACAO_ADMIN",
+      "title": "Genoma do HCV",
+      "section": 15,
+      "source": "https://commons.wikimedia.org/wiki/File:HCV_genome.png",
+      "creator": "Conferir ficha do Commons",
+      "license_status": "DECLARADA_DOMINIO_PUBLICO_CONFERIR_CONTEUDO",
+      "why": "Localização dos alvos NS3/4A, NS5A e NS5B",
+      "caption_proposal": "Localização dos alvos NS3/4A, NS5A e NS5B. Diagrama didático; exige revisão científica e atribuição adequada antes de publicação."
+    },
+    {
+      "number": 5,
+      "type": "imagem existente candidata",
+      "status": "AGUARDA_APROVACAO_ADMIN",
+      "title": "Replicação do HCV",
+      "section": 15,
+      "source": "https://commons.wikimedia.org/wiki/File:HepC_replication.png",
+      "creator": "Dr Graham Beards",
+      "license_status": "DECLARADA_DOMINIO_PUBLICO_CONFERIR_CONTEUDO",
+      "why": "Ciclo de replicação e ação dos DAA",
+      "caption_proposal": "Ciclo de replicação e ação dos DAA. Diagrama didático; exige revisão científica e atribuição adequada antes de publicação."
+    },
+    {
+      "number": 6,
+      "type": "diagrama autoral a produzir",
+      "status": "NAO_CRIADO_APROVACAO_ADMIN_PENDENTE",
+      "source": null,
+      "license_status": "AUTORIA_LURIA_A_PRODUZIR",
+      "title": "Matriz HBV de seis padrões sorológicos",
+      "section": 11,
+      "caption": "HBsAg, anti-HBc total e anti-HBs: padrões e quando pesquisar HBV-DNA."
+    },
+    {
+      "number": 7,
+      "type": "diagrama autoral a produzir",
+      "status": "NAO_CRIADO_APROVACAO_ADMIN_PENDENTE",
+      "source": null,
+      "license_status": "AUTORIA_LURIA_A_PRODUZIR",
+      "title": "Árvore do PCDT HCV 2026 na APS",
+      "section": 14,
+      "caption": "HCV-RNA detectável → estratificar APRI/Child → regime de tratamento e encaminhamento."
+    },
+    {
+      "number": 8,
+      "type": "diagrama autoral a produzir",
+      "status": "NAO_CRIADO_APROVACAO_ADMIN_PENDENTE",
+      "source": null,
+      "license_status": "AUTORIA_LURIA_A_PRODUZIR",
+      "title": "Árvore do HBV da gestante ao RN",
+      "section": 13,
+      "caption": "Avaliar HBV-DNA materno, tenofovir quando indicado, vacina e HBIG neonatal."
+    },
+    {
+      "number": 9,
+      "type": "diagrama autoral a produzir",
+      "status": "NAO_CRIADO_APROVACAO_ADMIN_PENDENTE",
+      "source": null,
+      "license_status": "AUTORIA_LURIA_A_PRODUZIR",
+      "title": "Reativação HBV durante rituximabe",
+      "section": 19,
+      "caption": "HBsAg/anti-HBc, classe imunossupressora, profilaxia, monitoramento e seguimento."
+    },
+    {
+      "number": 10,
+      "type": "diagrama autoral a produzir",
+      "status": "NAO_CRIADO_APROVACAO_ADMIN_PENDENTE",
+      "source": null,
+      "license_status": "AUTORIA_LURIA_A_PRODUZIR",
+      "title": "Fluxograma de IHA e centro de transplante",
+      "section": 21,
+      "caption": "INR elevado + encefalopatia = avaliação imediata; etiologia pesquisada em paralelo."
+    }
+  ]
+}
