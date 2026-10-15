@@ -86,3 +86,7 @@ Foi criado o arquivo **`lote-06-116-sindromes-glomerulares-edicao-consolidada.md
 5. Liberação apenas depois da revisão de autossuficiência, inclusive teste das questões com o texto e rastreabilidade das fontes.
 
 **Status permanece revisão parcial:** comprimento estimado acima do piso não significa apostila concluída.
+
+
+### Curadoria visual iniciada
+Criado `apostilas/_rascunhos/lote-06-116-imagens-candidatas-parciais.json` com **2 candidatas** provenientes de artigos científicos cujas páginas declaram licenças Creative Commons com atribuição: (1) padrão *full house* na nefrite lúpica (BMC Nephrology 2012, CC BY 2.0); (2) biópsia da nefropatia membranosa por **microscopia óptica** (Frontiers in Medicine 2020, CC BY). A natureza da Figura 1 de membranosa foi confirmada no artigo para evitar legenda equivocada como microscopia eletrônica. Nenhuma imagem foi inserida no HTML, importada para a fila ou aprovada pelo Admin. Ainda faltam candidatas adicionais, conferência clínica/atribuição por figura, compressão e a aprovação administrativa obrigatória.
