@@ -454,7 +454,7 @@ A glicemia exige acompanhamento mesmo quando a pessoa tem diabetes; risco de hip
 
 **Salbutamol nebulizado** em dose alta pode complementar o deslocamento de K. A UKKA descreve **10–20 mg nebulizados em adultos** como adjuvante, não substituto da insulina-glicose, com cautela diante de taquiarritmia e intolerância. É um uso diferente da posologia habitual para broncoespasmo; portanto exige indicação, apresentação e monitorização apropriadas.
 
-**Bicarbonato de sódio** não é medida universal para toda hipercalemia. Pode ser considerado em contexto de acidose metabólica significativa, de acordo com diretriz e estado volêmico. Sua administração adiciona sódio e pode afetar cálcio ionizado; em pacientes congestos ou sem acidemia relevante, o benefício não deve ser presumido. A Sociedade Brasileira de Nefrologia descreve sua utilização em acidose importante, particularmente quando há hipercalemia associada, mas requer avaliação do caso e monitorização.
+**Bicarbonato de sódio** não é medida universal para toda hipercalemia. Pode ser considerado em contexto de acidose metabólica significativa, de acordo com diretriz e estado volêmico. Sua administração adiciona sódio e pode afetar cálcio ionizado; em pacientes congestos ou sem acidemia relevante, o benefício não deve ser presumido. O **Guia de Assistência Nefrológica Hospitalar da Sociedade Brasileira de Nefrologia (SBN, 30 de abril de 2024)** descreve seu emprego em acidose importante, particularmente quando há hipercalemia associada, mas requer avaliação do caso e monitorização. Fonte brasileira verificada: https://www.sbn.org.br/wp-content/uploads/2024/05/Clique-aqui-para-acessar-a-guia-na-integra.pdf. Não é um guia específico e exaustivo de todos os distúrbios desta apostila.
 
 ### 16.4. Passo 3: remover K do organismo
 
@@ -796,6 +796,10 @@ E. Todo paciente com DRC tem indicação automática de calcitriol em dose alta.
 
 
 ## 24. Auditoria final pendente — critérios de publicação
+
+**Fontes prioritárias desta ampliação:** Sociedade Brasileira de Nefrologia, *Guia de Assistência Nefrológica Hospitalar*, 2024; UK Kidney Association, hiperpotassemia, 2023; diretriz europeia de hiponatremia, 2014; Endocrine Society, hipercalcemia por malignidade, 2023; Sociedade de Endocrinologia, hipocalcemia, 2016 com errata 2019; NICE CG32; ASPEN, realimentação, 2020; KDIGO CKD-MBD, 2017; revisão sistemática de hipernatremia no adulto, 2025. Documentos internacionais usados com aplicabilidade clínica explicitada, e não tratados como bula brasileira.
+
+
 
 Este manuscrito **ainda não** satisfaz o conjunto de requisitos de uma apostila LURIA finalizada. Falta, de forma prioritária:
 
