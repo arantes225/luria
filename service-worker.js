@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261016-bedside-lids2";
+const CACHE_VERSION = "luria-pwa-native-activities-20261016-localized-chest-breath1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
