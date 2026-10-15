@@ -398,7 +398,84 @@ D) Ausência de alteração ventilatória porque o bicarbonato está elevado.
 
 **Pendência desta seção:** validar recomendações terapêuticas, doses e acesso pelo texto integral do PCDT brasileiro vigente antes de homologar.
 
-## 23. Curadoria de imagens e referências
+
+## 23. Organização do atendimento: da suspeita à decisão compartilhada
+
+### 23.1 Primeiro contato na atenção primária
+
+A consulta deve começar pela pergunta clínica: o paciente tem sintomas respiratórios persistentes e exposição relevante? Documentar tosse, expectoração, dispneia, limitação de atividade, tabagismo em maços-ano e exposição à fumaça de biomassa ou poeiras ocupacionais. Perguntar sobre asma prévia, tuberculose, internações respiratórias e familiares com enfisema precoce. O exame físico avalia sinais de obstrução e de outras doenças, mas não confirma sozinho DPOC. Solicitar espirometria com broncodilatador quando disponível e avaliar a qualidade da manobra.
+
+**Exemplo:** mulher de 58 anos que cozinha há décadas em ambiente fechado com lenha e nunca fumou. Apresenta dispneia progressiva e tosse. A ausência de tabagismo não exclui DPOC. A avaliação funcional é necessária, e o manejo inclui redução de exposição ambiental e pesquisa de outras causas.
+
+### 23.2 Confirmou obstrução: quais perguntas vêm depois?
+
+O valor pós-broncodilatador VEF1/CVF abaixo do ponto de corte operacional deve ser interpretado em conjunto com idade, valores de referência e contexto. Depois da confirmação, documentar sintomas com mMRC ou CAT, número de exacerbações e internações recentes, comorbidades e capacidade funcional. O VEF1 ajuda a graduar limitação do fluxo, mas não substitui o histórico de eventos ou a percepção de sintomas.
+
+**Não confundir três dimensões:** intensidade da obstrução espirométrica, carga de sintomas e risco de exacerbações. Uma pessoa pode ter VEF1 bastante reduzido e poucas exacerbações; outra, obstrução menos intensa e múltiplas internações. A escolha do tratamento depende do conjunto e das recomendações aplicáveis.
+
+### 23.3 O que fazer quando a espirometria não está disponível imediatamente?
+
+Não atribuir diagnóstico definitivo de DPOC apenas à tosse e ao tabagismo. Tratar necessidades clínicas presentes, identificar sinais de alarme, manejar tabagismo e exposições e organizar confirmação funcional. Se há dispneia grave ou sinais de insuficiência respiratória, o atendimento urgente não deve esperar a espirometria. Após estabilização, encaminhar para investigação.
+
+### 23.4 Plano terapêutico em quatro camadas
+
+**Camada 1 — reduzir exposições:** cessação do tabagismo, orientação ocupacional e redução de poluentes domésticos. **Camada 2 — prevenir complicações:** imunizações indicadas, atividade física, reabilitação, avaliação nutricional e comorbidades. **Camada 3 — controlar sintomas e eventos:** broncodilatação de manutenção individualizada, resgate quando prescrito, eventual ICS em perfis selecionados, revisão de técnica e adesão. **Camada 4 — acompanhar resultados:** sintomas, exacerbações, internações, capacidade funcional, eventos adversos e necessidade de encaminhamento.
+
+Não é adequado pular diretamente à quarta medicação sem verificar se o dispositivo atual é utilizável, se o diagnóstico é correto e se há causa cardíaca ou anemia para dispneia.
+
+### 23.5 Quando encaminhar à pneumologia
+
+Considerar avaliação especializada quando houver diagnóstico incerto, sintomas persistentes apesar de tratamento bem executado, exacerbações recorrentes, insuficiência respiratória, hipoxemia crônica, suspeita de deficiência de alfa-1 antitripsina, bronquiectasias, doença estrutural relevante, necessidade de VNI domiciliar ou discussão de terapias avançadas. O encaminhamento deve trazer espirometria, tratamentos tentados, técnica revisada, histórico de exacerbações e exames pertinentes.
+
+## 24. Casos de integração diagnóstica e terapêutica
+
+### Caso 12 — Tosse crônica e exposição à biomassa
+
+Mulher de 60 anos, sem tabagismo, trabalhou durante 35 anos em cozinha com fogão a lenha sem ventilação. Refere tosse produtiva e dispneia progressiva. Exame sem sinais de urgência. A hipótese de DPOC é plausível, mas ainda requer espirometria pós-broncodilatador. Também devem ser considerados asma, bronquiectasias e sequelas infecciosas. A conduta envolve confirmação funcional, avaliação de sintomas, orientação para redução da exposição e tratamento conforme resultados. **Por que importa:** DPOC não é sinônimo de doença exclusiva de fumantes.
+
+### Caso 13 — VEF1 não explica sozinho a escolha terapêutica
+
+Homem de 67 anos, ex-tabagista, DPOC confirmada, apresenta VEF1 de 48% do previsto, mMRC 1 e nenhuma exacerbação no último ano. Outro paciente com VEF1 de 63%, mMRC 3 e duas exacerbações tem perfil clínico distinto. A comparação demonstra que a graduação espirométrica não substitui sintomas e eventos na decisão terapêutica. Ambos exigem revisão de exposições, vacinação e técnica inalatória; o segundo demanda atenção particular à prevenção de exacerbações. **Por que importa:** números isolados não equivalem a classificação clínica completa.
+
+## 25. Questões de integração
+
+### Questão 19 — Diagnóstico em não fumante
+
+Uma paciente com exposição prolongada à fumaça de lenha apresenta dispneia crônica e tosse. Qual alternativa é correta?
+
+A) DPOC é impossível sem tabagismo.
+B) A hipótese de DPOC é possível, mas a confirmação requer avaliação funcional, tipicamente espirometria pós-broncodilatador.
+C) A radiografia de tórax confirma obrigatoriamente DPOC.
+D) Não há necessidade de pesquisar diagnósticos diferenciais.
+
+**Gabarito: B.** **A incorreta:** biomassa e exposições ocupacionais também são fatores de risco. **B correta:** exposição e sintomas sustentam suspeita, mas não substituem confirmação funcional. **C incorreta:** imagem não confirma obstrução persistente. **D incorreta:** asma e outras doenças podem produzir sintomas semelhantes. **Mini-revisão:** suspeita clínica + confirmação espirométrica.
+
+### Questão 20 — Avaliação multidimensional
+
+Dois pacientes têm DPOC confirmada e VEF1 semelhante, mas apenas um apresenta exacerbações frequentes e limitação funcional importante. Qual interpretação é correta?
+
+A) O mesmo VEF1 exige tratamento idêntico.
+B) Exacerbações e sintomas não alteram avaliação.
+C) A avaliação deve combinar função pulmonar, sintomas, histórico de exacerbações e comorbidades.
+D) O uso de corticosteroide sistêmico contínuo é obrigatório em ambos.
+
+**Gabarito: C.** **A incorreta:** a doença é heterogênea. **B incorreta:** sintomas e eventos são eixos essenciais. **C correta:** abordagem multidimensional individualiza manejo. **D incorreta:** corticosteroide sistêmico crônico não é rotina de manutenção. **Mini-revisão:** VEF1, sintomas e risco não são sinônimos.
+
+## 26. Quadro final de segurança e atualização
+
+| Situação | Conduta que deve ser evitada | Raciocínio adequado |
+|---|---|---|
+| Suspeita de DPOC | diagnóstico definitivo apenas por tabagismo | espirometria pós-broncodilatador e diferenciais |
+| Dispneia com SpO2 normal | desvalorizar sintomas | avaliar função, esforço e comorbidades |
+| Exacerbação com sonolência | considerar SpO2 como medida de ventilação | avaliar gasometria e suporte ventilatório |
+| Dispneia persistente | acrescentar ICS automaticamente | revisar broncodilatação, dispositivo e causas associadas |
+| Necessidade de oxigênio na pneumonia | prescrever uso vitalício sem reavaliação | verificar hipoxemia crônica após estabilização |
+| Tratamento aparentemente ineficaz | aumentar dose sem observar técnica | demonstração do uso e adequação do dispositivo |
+| DPOC avançada | excluir reabilitação e cuidados paliativos | combinar controle de sintomas, função e objetivos do paciente |
+
+**Nota editorial:** recomendações gerais precisam ser conciliadas com o PCDT brasileiro vigente e com a disponibilidade local; o manuscrito não substitui avaliação clínica nem protocolo assistencial.
+
+## 27. Curadoria de imagens e referências
 Candidatas: espirometria normal × obstrutiva, curvas fluxo-volume, diagrama autoral de hiperinsuflação, TC de enfisema com fonte verificável, radiografia comparativa de congestão, fotografia de técnica inalatória com licença comercial, demonstração licenciada de VNI, fluxos originais de classificação e escalonamento. **Nenhuma figura inédita deve entrar no HTML antes da aprovação Admin.**
 
 - Ministério da Saúde, PCDT DPOC atualizado 29/01/2026: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view
