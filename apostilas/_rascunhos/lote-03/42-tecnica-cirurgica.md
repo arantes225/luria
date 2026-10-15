@@ -260,16 +260,169 @@ Espaço morto é cavidade potencial entre planos que pode acumular sangue/seroma
 Drenos abertos e fechados diferem no sistema de coleta e controle da contaminação; dreno aspirativo não deve ficar sob sucção maior que a projetada pelo fabricante. Documentar localização, finalidade, débito, aspecto, permeabilidade e critério de retirada. Uma coleção suspeita no pós-operatório deve ser avaliada mesmo que exista dreno aparentemente funcionando.
 
 
-## 16. Integração clínica e cenários especiais — em aprofundamento
+## 16. Técnica minimamente invasiva, conversão e segurança de acesso
 
-Os capítulos seguintes serão ocupados por intercorrências técnicas, cirurgias minimamente invasivas, casos extensos, questões comentadas, referências e matriz editorial; a etapa anterior do manuscrito não foi suprimida e seu conteúdo foi aprofundado nos capítulos 7–15.
+### 16.1 Laparoscopia não significa ausência de trauma
 
-## Lista de lacunas históricas (revisada)
-Anatomia aplicada e planejamento; cirurgia segura; assepsia/antissepsia; instrumentais; diérese; dissecação; hemostasia mecânica/energética; fios e agulhas; padrões de sutura e nós; drenagem; técnicas minimamente invasivas; lesões inadvertidas; cicatrização; complicações; casos; questões comentadas; imagens; referências.
+Na laparoscopia, portais proporcionam acesso por instrumentos longos sob visão mediada por câmera. O pneumoperitônio cria espaço de trabalho, mas modifica fisiologia respiratória e hemodinâmica: aumento da pressão abdominal pode dificultar retorno venoso, elevar pressão de via aérea, modificar débito cardíaco e reduzir perfusão em certas condições. A anestesia e cirurgia precisam coordenar volume, ventilação, posição e pressão intra-abdominal. Não supor que uma pessoa cardiopata tolerará automaticamente insuflação do mesmo modo que um adulto saudável.
 
-## Referências iniciais
-- World Health Organization, *WHO Guidelines for Safe Surgery*, 2009, https://www.ncbi.nlm.nih.gov/books/NBK143243/
-- WHO, *Implementation manual WHO Surgical Safety Checklist*, 2009, https://www.who.int/publications/i/item/9789241598590
-- WHO, prevenção de infecção de sítio cirúrgico, https://www.who.int/teams/integrated-health-services/infection-prevention-control/surgical-site-infection
+As vantagens possíveis — incisão menor, dor reduzida em muitos procedimentos e recuperação rápida — dependem de indicação e experiência. Desvantagens e riscos incluem dificuldade de percepção tátil, limitação de ângulos de instrumento, lesão na entrada dos portais, perfuração inadvertida, lesão térmica oculta e exigência de equipamentos funcionantes. Via laparoscópica não é melhor por definição se a equipe perdeu exposição segura ou o paciente ficou instável.
 
-**Pendências:** texto de 60 mil caracteres úteis; referência brasileira detalhada ANVISA; critérios de profilaxia atuais por procedimento; 4 casos extensos; 6 questões completas; matriz de âncoras; revisão por especialista; imagens autorizadas; validação HTML/PWA. Nenhum material publicado foi substituído.
+### 16.2 Acesso inicial é um momento crítico
+
+A entrada pode ocorrer por diferentes métodos e locais, influenciados por cicatrizes, hérnias, distensão intestinal, gestação, biotipo e cirurgia prévia. Nenhum método elimina completamente risco de lesão de vaso ou víscera. A escolha deve ser individualizada por cirurgião experiente e técnica institucional. A presença de aderências após laparotomia, por exemplo, aumenta importância de planejar entrada longe de cicatrizes de risco e adaptar posição.
+
+A verificação de integridade de trocárteres, insuflador, fonte luminosa, cabos e sistema de capnografia faz parte do briefing. Durante operação, uma alteração abrupta de resistência à insuflação, instabilidade circulatória, sangramento inesperado ou distensão anormal demanda interrupção e investigação. Lesão de retroperitônio pode não produzir sangramento inicialmente evidente na câmera.
+
+### 16.3 Triangulação, ergonomia e energia
+
+Distribuir portais para permitir tração e contratração evita que instrumentos disputem o mesmo eixo. Instrumentos cruzados e posicionamento com esforço excessivo reduzem precisão. Na laparoscopia, o cirurgião vê imagem bidimensional ou tridimensional mas não sente mesma textura e profundidade que na cirurgia aberta; é perigoso aplicar força para vencer resistência cuja causa anatômica não foi visualizada.
+
+O sistema monopolar laparoscópico exige particular atenção a falhas de isolamento e acoplamento capacitivo, pois lesão térmica fora do campo visível pode ocorrer. A câmera deve ser limpa sem danificar componentes e a fumaça cirúrgica removida de forma controlada. Clipes e dispositivos de selagem precisam de verificação de fechamento completo e ausência de tração sobre estrutura nobre.
+
+### 16.4 Converter é decisão de segurança, não fracasso
+
+**Conversão da via laparoscópica para aberta** pode ser indicada quando não se consegue exposição/identificação anatômica confiável, há hemorragia de difícil controle, lesão significativa, aderências severas ou limitação técnica que coloca paciente em risco. Adiar conversão por orgulho técnico pode causar dano grave. Registrar o motivo e o momento da decisão no relatório, e conversar com paciente/familiares conforme contexto.
+
+Em cirurgia robótica, a visão e liberdade de movimento podem melhorar tarefas específicas, mas instalação, tempo de acoplamento, ausência de tato e falhas do equipamento exigem plano de desencaixe/conversão. Tecnologia é meio de execução, não justificativa para indicação inexistente.
+
+## 17. Fechamento abdominal, hérnia incisional e deiscência
+
+### 17.1 Qual é a camada essencial para a parede abdominal?
+
+A pele é cobertura, mas a resistência da parede vem principalmente das estruturas musculofasciais e aponeuróticas. Falhas na coaptação aponeurótica podem gerar deiscência precoce ou hérnia incisional tardia. O padrão exato depende da incisão, qualidade do tecido e contaminação; não se pode aplicar técnica de fechamento de incisão mediana eletiva a todas as regiões ou situações de trauma.
+
+As sociedades Europeia e Americana de Hérnia, em diretriz atualizada de 2022, **sugerem sutura contínua com pequenas tomadas (“small bites”) e fio de absorção lenta** no fechamento da laparotomia mediana eletiva, com certeza de evidência baixa e recomendação fraca. A técnica procura distribuir força e minimizar tensionamento local; a diretriz descreve aproximação aponeurótica com tomadas pequenas e regulares, sem incorporar tecido muscular desnecessário. O detalhe numérico dos espaços e proporção fio/ferida deve ser ensinado e treinado conforme protocolo e contexto, não aplicado mecanicamente a qualquer incisão.
+
+### 17.2 Por que ocorre hérnia incisional?
+
+Fatores incluem infecção, obesidade, tabagismo, diabetes, malnutrição, tensão, qualidade de sutura, aumento persistente da pressão intra-abdominal e características de paciente/incisão. Hérnia é defeito de parede com protrusão, nem sempre doloroso. Suspeitar de complicação com dor intensa, encarceramento, obstrução, sinais de sofrimento vascular ou repercussão sistêmica. A prevenção começa no preparo, acesso e fechamento; corrigir todos os fatores de risco nem sempre é possível em emergência.
+
+### 17.3 Deiscência de parede com exteriorização visceral
+
+Exteriorização de alças ou conteúdo abdominal por abertura da parede representa emergência cirúrgica. Prioridades são proteger estruturas expostas com cobertura adequada, evitar desidratação/lesão mecânica dos tecidos, estabilizar paciente, buscar infecção e comunicar cirurgia imediatamente. O ensino não deve orientar reintrodução improvisada de vísceras por equipe sem condições cirúrgicas. Um pequeno extravasamento de secreção serossanguinolenta por incisão recente pode ser pista de falha de planos profundos e exige exame cuidadoso.
+
+A decisão entre novo fechamento, tratamento de infecção, reforço, terapia por pressão negativa ou abdome temporariamente aberto é especializada; fatores como edema visceral, contaminação, síndrome compartimental e reserva do paciente são relevantes.
+
+## 18. Controle de danos cirúrgico e reoperação
+
+### 18.1 Quando a fisiologia limita o reparo definitivo?
+
+Em hemorragia grave, sepse abdominal ou trauma com acidose/hipotermia/coagulopatia, uma operação longa e reconstrutiva pode exceder a reserva do paciente. **Cirurgia de controle de danos** prioriza controlar rapidamente hemorragia e contaminação, limitar tempo operatório e permitir ressuscitação em ambiente intensivo, planejando reoperação quando fisiologicamente possível. Não é “cirurgia incompleta por descuido”: é estratégia deliberada para evitar morte por progressão de choque e falência metabólica.
+
+O momento de retorno depende de recuperação hemodinâmica, correção de coagulopatia, controle de sepse e avaliação de cavidade/tecidos. Não existe relógio único aplicável a todas as situações.
+
+### 18.2 Abdome aberto e fechamento temporário
+
+Pode ser necessário quando há grande edema visceral, necessidade de reexploração, controle insuficiente do foco, preocupação com hipertensão intra-abdominal ou inviabilidade de fechamento sem tensão. Técnicas de fechamento temporário buscam proteger vísceras, permitir drenagem e reduzir perda de domínio; requerem cuidados especializados de fluidos, nutrição, fístula e infecção. Não se deve improvisar material diretamente sobre alças sem técnica apropriada, pois lesão de serosa/fístula é complicação grave.
+
+### 18.3 Conversão de uma intercorrência em plano multidisciplinar
+
+Se há sangramento arterial não controlado, perfuração de órgão nobre ou injúria vascular, ativar ajuda de cirurgia vascular, urologia, coloproctologia ou outra equipe conforme lesão. Paciente não se beneficia de ocultação ou insistência isolada em reparo para o qual a equipe não está preparada. Documentar localização, extensão, tratamento e plano de vigilância é tão importante quanto o ato intraoperatório.
+
+## 19. Pós-operatório: reconhecer normalidade e sinais de alarme
+
+### 19.1 Recuperação imediata
+
+Na recuperação pós-anestésica, prioridades incluem permeabilidade de via aérea, respiração, oxigenação, circulação, consciência, analgesia, temperatura, controle de náuseas e avaliação do sítio. Frequência de verificação depende do estado clínico e protocolo, não apenas tempo desde saída da sala. Sangramento interno pode continuar com curativo externo seco; taquicardia crescente, hipotensão, oligúria e alteração mental exigem investigação.
+
+Dor pós-operatória é esperada em algum grau, mas dor **desproporcional**, súbita ou progressiva pode indicar síndrome compartimental, isquemia, vazamento, hematoma expansivo ou complicação profunda. Analgesia multimodal reduz necessidade de opioides em diversos contextos, mas escolha considera função renal, sangramento, idade, risco respiratório e cirurgia. Sedação excessiva por opioide pode mascarar deterioração.
+
+### 19.2 Avaliação do sítio e do curativo
+
+Revisar sangramento, secreção, aproximação das bordas, edema, calor/rubor, odor, dor e integridade dos planos. No começo da cicatrização pode haver discreta hiperemia local sem infecção; progressão dolorosa, purulência, deiscência e sintomas sistêmicos mudam hipótese. Curativos exigem técnica asséptica e orientações claras de troca e higiene. A diretriz NICE admite banho em condições selecionadas após 48 horas, mas regras de operação/local devem prevalecer.
+
+Não utilizar antimicrobianos tópicos rotineiros em feridas que cicatrizam por primeira intenção apenas para prevenir ISC. Um paciente com infecção verdadeira pode precisar abertura/drenagem, cultura quando indicada, antibiótico terapêutico e avaliação de extensão; “trocar pomada” sem examinar foco é conduta insuficiente.
+
+### 19.3 Drenos, débito e significado
+
+O débito é interpretado por **volume, aspecto, evolução e contexto**. Sangramento progressivo por dreno pode indicar hemostasia insuficiente; líquido bilioso/fecaloide pode sugerir fístula ou lesão de víscera; saída turva e febre podem indicar infecção; ausência abrupta de débito pode ser obstrução, não resolução. Sempre considerar se o dreno está na localização correta e se a coleção tem outro compartimento não drenado.
+
+A retirada não depende de dia pós-operatório fixo, nem do simples fato de antibiótico ter sido administrado; seguir objetivo do dreno e critérios da equipe. Um dreno “preventivo” não exclui fistulização e pode gerar falsa segurança.
+
+### 19.4 Tromboembolismo, ventilação e mobilização
+
+Risco tromboembólico depende de cirurgia, imobilidade, câncer, história prévia, idade, gravidez e fatores individuais. Estratégias mecânicas/farmacológicas de profilaxia são selecionadas conforme risco de trombose e sangramento, não oferecidas de forma automática a todos sem revisão. Mobilização progressiva, controle adequado de dor e medidas respiratórias ajudam recuperação e previnem complicações quando seguras. Tosse e exercício respiratório podem ser difíceis com dor intensa; otimizar analgesia evita hipoventilação.
+
+### 19.5 Quando a alta é segura?
+
+Alta depende de estabilidade clínica, dor/náusea controladas, capacidade de ingerir ou ter plano de nutrição, mobilização compatível, compreensão do cuidado com ferida/dreno, acesso a retorno e ausência de complicação não avaliada. Paciente e cuidador precisam reconhecer sinais de retorno urgente: febre persistente, dor desproporcional, sangramento ativo, abertura da ferida, secreção purulenta importante, dispneia, síncope, distensão progressiva e vômitos persistentes. Em cirurgia de alto risco, o programa de seguimento pode demandar fisioterapia, vigilância de função orgânica, retirada de pontos e revisão de anatomopatológico.
+
+## 20. Situações especiais: tecido e paciente mudam a técnica
+
+### 20.1 Crianças e neonatos
+
+Tecidos pequenos, vascularização e espessura variáveis exigem instrumentos, agulhas e fios compatíveis com a idade e o plano. Hipotermia, perda de fluido, sangramento em pequeno volume absoluto e alterações de glicose podem ser proporcionalmente importantes. Doses de antibiótico e anestésico são individualizadas por peso/idade. Em neonatos, particularidades de antissépticos exigem atenção a pele imatura e riscos de absorção/lesão química. Não copiar tamanho de pinça e fio do adulto.
+
+### 20.2 Pessoas idosas e com fragilidade
+
+Pele fina e frágil pode rasgar sob pinça traumática ou pontos excessivamente apertados. Reserva respiratória/cardíaca reduzida aumenta dano de hipotermia, imobilização, opioides e perda sanguínea. A fragilidade funcional, cognição e suporte domiciliar interferem na indicação e planejamento da alta. Adequar técnica e intensidade terapêutica não significa negar intervenção necessária apenas pela idade cronológica.
+
+### 20.3 Diabetes, desnutrição, obesidade e tabagismo
+
+A perfusão de bordas e risco de infecção podem estar prejudicados. Em pessoa obesa, planos profundos e espaço morto aumentam dificuldade de exposição, e dose/timing de profilaxia precisam considerar recomendações aplicáveis. Desnutrição proteico-calórica reduz substratos de reparo; tabagismo compromete microcirculação e cicatrização; hiperglicemia deve ser manejada com alvos seguros. O problema não é resolvido por escolher “fio mais forte” se a aponeurose é friável e o paciente tem pressão abdominal elevada.
+
+### 20.4 Radioterapia, corticoterapia e imunossupressão
+
+Tecido irradiado frequentemente tem fibrose, vascularização alterada e menor capacidade de cicatrização, exigindo avaliação da viabilidade e, por vezes, estratégias reconstrutivas com tecido bem perfundido. Imunossupressão aumenta risco infeccioso e modifica sinais de inflamação; não ajustar tratamentos de base por regra fixa sem considerar fármaco, doença e equipe assistente.
+
+### 20.5 Gestantes
+
+Posicionamento, ventilação, perfusão materna, exposição anatômica e segurança fetal podem afetar planejamento. Em urgência, a prioridade é tratar doença materna ameaçadora à vida, coordenando obstetrícia/anestesia/cirurgia. Mudança da anatomia com crescimento uterino afeta acesso; decisões de imagem, técnica e medicamentos seguem avaliação específica por idade gestacional e urgência.
+
+## 21. Algoritmos de decisão e síntese de alto rendimento
+
+### Fluxo A — ferida traumática passível de fechamento?
+
+1. Avaliar ABC/estabilidade e sangramento importante; controlar ameaça imediata.
+2. Verificar localização, mecanismo, tempo, profundidade, perfusão e suspeita de lesão nobre; documentar função neurovascular quando indicado.
+3. Identificar contaminação, corpos estranhos e tecido inviável; irrigar/desbridar em ambiente adequado quando pertinente.
+4. Escolher fechamento primário, tardio, segunda intenção ou cobertura especializada conforme viabilidade e risco de infecção.
+5. Distribuir tensão pelos planos adequados, sem estrangular pele; orientar tétano, raiva ou antimicrobianos apenas quando indicados.
+6. Documentar procedimento, avisos, retorno e sinais de complicação.
+
+### Fluxo B — sangramento durante cirurgia
+
+1. Comunicar à equipe e priorizar estabilidade do paciente.
+2. Expor fonte e usar compressão/hemostasia temporária, sem clampear estruturas às cegas.
+3. Reconhecer vaso/órgão e estimar volume perdido, coagulopatia e necessidade transfusional.
+4. Selecionar reparo/ligadura/energia/abordagem especializada conforme anatomia e segurança.
+5. Rever campo, corrigir hipotermia/coagulopatia e reavaliar após intervenção.
+6. Se a segurança do acesso minimamente invasivo não se sustenta, converter quando indicado.
+
+### Fluxo C — suspeita de ISC pós-operatória
+
+1. Examinar perfusão, sinais de sepse, estado geral e extensão da dor.
+2. Distinguir hiperemia leve esperada de secreção purulenta, celulite progressiva e coleção profunda.
+3. Identificar órgão/espaço envolvido por exame e imagem quando muda conduta.
+4. Obter cultura de material pertinente em casos selecionados, sem atrasar terapia urgente.
+5. Realizar controle de foco com abertura/drenagem/desbridamento quando indicado, e antimicrobiano terapêutico orientado por risco e microbiologia.
+6. Reavaliar evolução, revisar hipótese se piora, documentar e acompanhar cicatrização.
+
+### Fluxo D — material perfurocortante ou compressa não contabilizada
+
+1. Interromper progressão até reconciliação adequada do material.
+2. Refazer contagem protocolar e revisão de campo/descartes.
+3. Se persistir divergência, aplicar protocolo institucional de busca e imagem quando indicado.
+4. Documentar intercorrência, investigação e medidas de prevenção.
+5. Nunca omitir ocorrência nem sair da sala com contagem sem justificativa/conduta.
+
+### Resumo de prova em dez conceitos
+
+- Cirurgia segura envolve **indicação, anatomia, técnica e comunicação**, não somente gesto operatório.
+- Sign In / Time Out / Sign Out têm funções distintas e coletivas.
+- Tricotomia com lâmina não é prevenção de ISC; evitar remover pelos sem necessidade.
+- Antibiótico profilático não é tratamento de ferida infectada e não se prolonga automaticamente por dreno.
+- Energia hemostática é útil, mas pode causar lesão térmica tardia.
+- Fio e agulha são selecionados por tecido, tempo de sustentação e tensão.
+- Coaptação com isquemia ou espaço morto aumenta complicações.
+- Fáscia/aponeurose sustentam parede; pele sozinha não evita hérnia incisional.
+- Conversão laparoscópica para aberta pode ser a conduta tecnicamente mais segura.
+- Reavaliar e reconhecer complicações é parte da operação, mesmo depois do fechamento.
+
+
+## 22. Casos clínicos originais extensos — em construção
+
+## 23. Questões de residência comentadas — em construção
+
+## 24. Matriz editorial, curadoria visual e referências — em revisão
