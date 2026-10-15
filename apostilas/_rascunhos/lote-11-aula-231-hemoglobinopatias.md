@@ -20,21 +20,6 @@ A hemoglobina adulta principal, **HbA (α₂β₂)**, contém duas cadeias alfa 
 
 Os genes alfa estão localizados no cromossomo 16, geralmente com **quatro cópias funcionais** no conjunto diploide; genes beta principais, no cromossomo 11, com duas cópias. O número e tipo de alterações condicionam a gravidade. Os resultados "traço", "homozigose" e "dupla heterozigose" representam combinações distintas, com prognóstico e aconselhamento diferentes.
 
-## 2. Doença falciforme: HbS, polimerização, hemólise e vaso-oclusão
-A HbS origina-se de mutação pontual no gene **HBB**, que substitui **ácido glutâmico por valina na posição 6 da cadeia beta** (na numeração clássica da globina madura). Em condições de desoxigenação, HbS pode **polimerizar** e deformar o eritrócito. A repetição de ciclos de falcização e oxigenação danifica membranas, favorece hemólise, adesão celular, inflamação, disfunção endotelial e obstrução microvascular.
-
-A fisiopatologia é mais complexa que "hemácia em foice obstrui um capilar": leucócitos, plaquetas, endotélio, citocinas, alterações da coagulação e consumo de óxido nítrico contribuem. Há dois eixos interdependentes: **vaso-oclusão/isquemia-reperfusão** e **hemólise crônica com disfunção vascular**. A intensidade de manifestações é variável e não corresponde linearmente apenas à concentração de hemoglobina.
-
-**Genótipos clínicos relevantes:**
-- **HbSS:** anemia falciforme clássica, duas variantes HbS.
-- **HbS/β⁰-talassemia:** ausência de produção de HbA a partir do alelo beta talassêmico, frequentemente fenótipo semelhante a HbSS.
-- **HbS/β⁺-talassemia:** produção residual de HbA, gravidade variável.
-- **HbSC:** duas variantes estruturais diferentes; pode ter Hb total relativamente mais alta, mas complicações importantes como retinopatia e fenômenos vaso-oclusivos.
-- **HbAS (traço falciforme):** geralmente sem o mesmo espectro da doença falciforme, mas relevante para aconselhamento reprodutivo e situações clínicas específicas. Não denominar HbAS de anemia falciforme.
-
-HbF inibe polimerização relativa da HbS e é elemento importante de variabilidade de fenótipo e alvo indireto de hidroxicarbamida. Desidratação, hipóxia, infecção, variações térmicas e estresse fisiológico podem precipitar crises em alguns pacientes, mas nem sempre há gatilho identificável.
-
-
 ### 1.1 A mudança ontogenética das hemoglobinas e a clínica pediátrica
 O desenvolvimento humano muda a proporção de cadeias produzidas ao longo da gestação e nos primeiros meses de vida. No feto, a HbF (α₂γ₂) predomina e exerce efeito protetor relativo contra a polimerização da HbS. Após o nascimento, aumenta a produção de cadeia beta e, consequentemente, a proporção de HbA quando há alelos normais ou de HbS quando existe a variante genética. Essa transição explica por que muitos lactentes com HbSS parecem clinicamente bem ao nascer, apesar de o resultado da triagem já demonstrar risco substancial de doença.
 
@@ -72,6 +57,21 @@ O problema oposto também importa: a forma **HbH** resulta habitualmente de trê
 HbAS não determina a combinação de hemólise, vaso-oclusão e asplenia típica da doença falciforme. A maioria dos portadores vive sem manifestações específicas. Há, contudo, situações incomuns nas quais extremos de hipóxia, desidratação, grande altitude ou esforço muito intenso se associam a eventos que exigem investigação; também pode haver hematúria renal ou hipostenúria em alguns portadores. **Não medicalizar a rotina** de toda pessoa HbAS, nem informar que “não há absolutamente qualquer situação de risco”.
 
 O aconselhamento inclui explicação do resultado neonatal, registro em prontuário, avaliação de parceiro reprodutivo se houver planejamento, e orientação que respeita autonomia. A comunicação deve evitar linguagem estigmatizante ou pressupor identidade étnico-racial a partir do genótipo: variantes de globinas ocorrem em populações diversas.
+
+## 2. Doença falciforme: HbS, polimerização, hemólise e vaso-oclusão
+A HbS origina-se de mutação pontual no gene **HBB**, que substitui **ácido glutâmico por valina na posição 6 da cadeia beta** (na numeração clássica da globina madura). Em condições de desoxigenação, HbS pode **polimerizar** e deformar o eritrócito. A repetição de ciclos de falcização e oxigenação danifica membranas, favorece hemólise, adesão celular, inflamação, disfunção endotelial e obstrução microvascular.
+
+A fisiopatologia é mais complexa que "hemácia em foice obstrui um capilar": leucócitos, plaquetas, endotélio, citocinas, alterações da coagulação e consumo de óxido nítrico contribuem. Há dois eixos interdependentes: **vaso-oclusão/isquemia-reperfusão** e **hemólise crônica com disfunção vascular**. A intensidade de manifestações é variável e não corresponde linearmente apenas à concentração de hemoglobina.
+
+**Genótipos clínicos relevantes:**
+- **HbSS:** anemia falciforme clássica, duas variantes HbS.
+- **HbS/β⁰-talassemia:** ausência de produção de HbA a partir do alelo beta talassêmico, frequentemente fenótipo semelhante a HbSS.
+- **HbS/β⁺-talassemia:** produção residual de HbA, gravidade variável.
+- **HbSC:** duas variantes estruturais diferentes; pode ter Hb total relativamente mais alta, mas complicações importantes como retinopatia e fenômenos vaso-oclusivos.
+- **HbAS (traço falciforme):** geralmente sem o mesmo espectro da doença falciforme, mas relevante para aconselhamento reprodutivo e situações clínicas específicas. Não denominar HbAS de anemia falciforme.
+
+HbF inibe polimerização relativa da HbS e é elemento importante de variabilidade de fenótipo e alvo indireto de hidroxicarbamida. Desidratação, hipóxia, infecção, variações térmicas e estresse fisiológico podem precipitar crises em alguns pacientes, mas nem sempre há gatilho identificável.
+
 
 ### 2.1 Por que o processo falciforme causa complicações em órgãos aparentemente desconectados
 A polimerização da HbS desoxigenada aumenta rigidez e altera propriedades reológicas do eritrócito. Hemácias danificadas aderem ao endotélio, interagem com leucócitos/plaquetas e favorecem microvasculatura inflamada. A lesão envolve **obstrução de fluxo, hemólise, vasculopatia e isquemia-reperfusão**, e não necessariamente um trombo macroscópico.
@@ -227,25 +227,6 @@ O hemograma em HbSS frequentemente mostra anemia crônica normocítica ou discre
 ### 4.1 Teste e aconselhamento de familiares
 Quando um casal tem variantes heterozigóticas, o risco reprodutivo depende **das duas hemoglobinas**; não informar risco fixo sem definir cada genótipo. Na combinação HbAS × HbAS, a cada gestação a distribuição mendeliana aproximada é 25% HbAA, 50% HbAS e 25% HbSS, com eventos independentes entre gestações. Outras combinações podem resultar em HbSC ou HbS/β-talassemia. O aconselhamento precisa ser acessível, voluntário e livre de estigma.
 
-## 5. Tratamento longitudinal da doença falciforme
-
-### 5.1 Organização da assistência
-A consulta não se resume a contar crises. Avaliar crescimento, puberdade, dor crônica, saúde mental, fadiga, escola/trabalho, retinopatia, função renal/albuminúria, hipertensão pulmonar e cardíaca em cenários pertinentes, lesões ósseas, úlceras e saúde reprodutiva. As frequências dos exames devem seguir PCDT, idade e fenótipo, evitando rastrear indiscriminadamente com testes sem benefício comprovado.
-
-### 5.2 Hidroxicarbamida (hidroxiureia)
-Indutor de HbF e agente modificador da doença em indicações previstas no PCDT. Pode reduzir episódios dolorosos e síndrome torácica aguda e melhorar parâmetros laboratoriais, mas requer **avaliação hematológica, hemograma e reticulócitos seriados** para toxicidade medular e ajuste de dose, função renal, adesão e aconselhamento reprodutivo. A indicação depende de idade, genótipo, gravidade e protocolo atual; tabelas antigas de "somente acima de três anos" não podem substituir o PCDT 2024.
-
-Evitar adotar dose universal sem cálculo de peso, condição renal, reserva medular e monitorização. A decisão de usar hidroxicarbamida não substitui profilaxia de AVC por transfusão em situações específicas de risco estabelecido.
-
-### 5.3 Transfusão simples, transfusão de troca e acompanhamento
-**Transfusão simples** aumenta massa eritrocitária e capacidade de transporte de oxigênio, mas eleva viscosidade caso a Hb final seja excessiva em paciente com fração HbS relevante. **Troca de hemácias** reduz porcentagem de HbS sem aumentar demasiadamente hematócrito, especialmente útil em complicações neurológicas e pulmonares graves selecionadas.
-
-Riscos incluem reações transfusionais, **aloimunização**, hemólise retardada/hiper-hemólise, sobrecarga de ferro e complicações de acesso vascular. Fenotipagem/genotipagem eritrocitária e compatibilidade estendida conforme serviço de hemoterapia são importantes. A meta HbS <30% em determinadas prevenções cerebrovasculares não é um objetivo generalizado para cada transfusão de qualquer paciente.
-
-### 5.4 Transplante e terapias emergentes
-**Transplante de células-tronco hematopoéticas** pode possibilitar cura hematológica em candidatos selecionados, com riscos de mortalidade, complicações imunológicas e infertilidade. Terapias celulares e gênicas têm evolução regulatória e disponibilidade específicas, e não devem ser apresentadas como tratamento rotineiro universal no SUS. Sempre distinguir evidência de pesquisa, registro regulatório e incorporação.
-
-
 ### 4.2 Roteiro de investigação da microcitose em paciente com suspeita de hemoglobinopatia
 A microcitose aponta hemácias menores que a referência para idade, mas não define etiologia. Comece por idade, história familiar, período gestacional, sangramento, dieta, condições inflamatórias e distribuição étnico-geográfica sem estereótipos. No hemograma, avaliar Hb, **VCM, HCM, RDW e contagem absoluta de eritrócitos**. Um VCM muito baixo com anemia relativamente leve e eritrócitos numerosos sugere traço talassêmico, enquanto ferropenia frequentemente cursa com RDW elevado; ambos são padrões probabilísticos com grande sobreposição.
 
@@ -276,6 +257,25 @@ Outras interferências incluem idade muito precoce, variantes que migram em posi
 A triagem é estratégia populacional para antecipar cuidado e reduzir mortalidade, não um mecanismo que substitui consulta especializada. Um padrão sugestivo de doença falciforme precisa de **confirmação por método apropriado**, orientação familiar e seguimento de imediato conforme fluxo local. A confirmação não deve atrasar profilaxias e avaliações essenciais quando há forte suspeita.
 
 A orientação deve incluir reconhecimento de febre, sinais de sequestro, hidratação, vacinação e como acessar pronto atendimento, com linguagem acessível ao cuidador. É importante distinguir para a família **traço falciforme**, que não requer acompanhamento de doença falciforme da mesma forma, de HbSS/HbSC/HbS-talassemia. A recomendação de aconselhamento e avaliação de pais/parceiros deve respeitar privacidade e decisão individual.
+
+## 5. Tratamento longitudinal da doença falciforme
+
+### 5.1 Organização da assistência
+A consulta não se resume a contar crises. Avaliar crescimento, puberdade, dor crônica, saúde mental, fadiga, escola/trabalho, retinopatia, função renal/albuminúria, hipertensão pulmonar e cardíaca em cenários pertinentes, lesões ósseas, úlceras e saúde reprodutiva. As frequências dos exames devem seguir PCDT, idade e fenótipo, evitando rastrear indiscriminadamente com testes sem benefício comprovado.
+
+### 5.2 Hidroxicarbamida (hidroxiureia)
+Indutor de HbF e agente modificador da doença em indicações previstas no PCDT. Pode reduzir episódios dolorosos e síndrome torácica aguda e melhorar parâmetros laboratoriais, mas requer **avaliação hematológica, hemograma e reticulócitos seriados** para toxicidade medular e ajuste de dose, função renal, adesão e aconselhamento reprodutivo. A indicação depende de idade, genótipo, gravidade e protocolo atual; tabelas antigas de "somente acima de três anos" não podem substituir o PCDT 2024.
+
+Evitar adotar dose universal sem cálculo de peso, condição renal, reserva medular e monitorização. A decisão de usar hidroxicarbamida não substitui profilaxia de AVC por transfusão em situações específicas de risco estabelecido.
+
+### 5.3 Transfusão simples, transfusão de troca e acompanhamento
+**Transfusão simples** aumenta massa eritrocitária e capacidade de transporte de oxigênio, mas eleva viscosidade caso a Hb final seja excessiva em paciente com fração HbS relevante. **Troca de hemácias** reduz porcentagem de HbS sem aumentar demasiadamente hematócrito, especialmente útil em complicações neurológicas e pulmonares graves selecionadas.
+
+Riscos incluem reações transfusionais, **aloimunização**, hemólise retardada/hiper-hemólise, sobrecarga de ferro e complicações de acesso vascular. Fenotipagem/genotipagem eritrocitária e compatibilidade estendida conforme serviço de hemoterapia são importantes. A meta HbS <30% em determinadas prevenções cerebrovasculares não é um objetivo generalizado para cada transfusão de qualquer paciente.
+
+### 5.4 Transplante e terapias emergentes
+**Transplante de células-tronco hematopoéticas** pode possibilitar cura hematológica em candidatos selecionados, com riscos de mortalidade, complicações imunológicas e infertilidade. Terapias celulares e gênicas têm evolução regulatória e disponibilidade específicas, e não devem ser apresentadas como tratamento rotineiro universal no SUS. Sempre distinguir evidência de pesquisa, registro regulatório e incorporação.
+
 
 ### 5.5 Hidroxicarbamida no PCDT 2024: elegibilidade e segurança de uso
 A hidroxicarbamida induz expressão de HbF e modifica parâmetros hematológicos/inflamatórios relevantes. Seu benefício não decorre de “curar” o alelo HbS, mas de reduzir a polimerização relativa da HbS e a frequência de complicações em perfis selecionados. A meta clínica inclui menos dor/STA e melhor estado geral, e não apenas elevar um marcador.
