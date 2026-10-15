@@ -10,7 +10,7 @@ O SUS deve organizar recursos para garantir acesso e continuidade de cuidado. Tr
 É preciso distinguir **origem de recursos**, **instrumento de transferência**, **destinação**, **execução** e **resultados**. Uma unidade pode receber equipamento e continuar sem oferta de exames se o planejamento esquecer manutenção e profissionais. Um município pode apresentar execução orçamentária elevada e desempenho assistencial fraco. Portanto, avaliar política pública exige estrutura, processos, resultados e equidade.
 
 ## 2. Fundos e transferências
-Transferências fundo a fundo seguem condições legais e programáticas. A Portaria GM/MS nº 3.992/2017 alterou regras dos blocos federais de financiamento, contemplando custeio e investimento, com finalidades e vinculações a observar. **Saldo no Fundo de Saúde não é autorização para gastar livremente.** Despesas precisam respeitar regras da fonte, finalidade, legislação orçamentária e planejamento.
+Transferências fundo a fundo seguem condições legais e programáticas. A Portaria 3.992/2017 criou dois blocos chamados Custeio e Investimento, **renomeados para Manutenção e Estruturação pela Portaria 828/2020**. Sua aplicação em 2026 exige observar finalidade, objeto, programação e vinculações legais. **Saldo no Fundo de Saúde não é autorização para gastar livremente.** Despesas precisam respeitar regras da fonte, finalidade, legislação orçamentária e planejamento.
 
 O gestor deve conhecer Plano de Saúde, Programação Anual de Saúde (PAS), Relatório Anual de Gestão (RAG), auditorias e participação dos Conselhos de Saúde. Conselhos e comissões intergestores cumprem funções diferentes: participação/controle social versus pactuação entre gestores.
 
@@ -75,7 +75,7 @@ Todos os cenários são **fictícios**. Os números foram escolhidos para permit
 
 **Diagnóstico:** avaliar Plano/PAS/LOA, projeto de aquisição, fluxo de regulação, contratação, habilitação, manutenção, custo de energia e operação, contrato de garantia, tempo de espera e demanda epidemiológica.
 
-**Interpretação:** a compra de equipamento pode estar formalmente adequada ao bloco e, ainda assim, ser inefetiva na assistência. **Investimento** e **custeio** são necessidades complementares, porém **não fungíveis** sem regra de destinação; recurso do bloco de investimento não pode pagar automaticamente qualquer despesa corrente.
+**Interpretação:** a compra de equipamento pode estar formalmente adequada ao bloco e, ainda assim, ser inefetiva na assistência. **Investimento** e **custeio** são necessidades complementares, porém **não fungíveis** sem regra de destinação; recurso do **Bloco de Estruturação** não pode pagar automaticamente despesa corrente de finalidade alheia à programação.
 
 **Conduta:** elaborar plano de operação sustentável com fonte de custeio compatível, equipe e agenda; avaliar custo por exame e acesso; se não houver capacidade viável, discutir articulação regional sob regras públicas, evitando deixar aparelho ocioso.
 
@@ -269,23 +269,23 @@ D) Blocos autorizam sempre compra de itens privados fora do SUS.
 
 **Mini-revisão:** **bloco de financiamento não é cheque em branco**.
 
-### Questão 8 — Bloco de investimento
+### Questão 8 — Qual é a nomenclatura de 2026?
 
-Uma secretaria informa que todo gasto de investimento é necessariamente despesa de capital, sem exceções. O que o FAQ oficial sobre Portaria 3.992 esclarece?
+Secretaria recebe recursos fundo a fundo e o servidor afirma que os nomes oficiais vigentes seguem sendo Custeio e Investimento, como em 2017. Qual alternativa corrige a orientação?
 
-A) O bloco de investimento pode envolver capital e despesas correntes associadas a reformas de unidades existentes em determinadas condições.
-B) Todo bloco de investimento só serve para salário de médico.
-C) Nenhuma reforma pode ser paga com recurso do SUS.
-D) O nome do bloco dispensa classificação orçamentária.
+A) Os blocos são atualmente **Manutenção e Estruturação**; reparos/adaptações e reformas devem obedecer aos respectivos arts. 5º e 6º da Portaria de Consolidação nº 6/2017, com redação da Portaria 828/2020, além da finalidade do repasse.
+B) O Bloco de Estruturação pode custear irrestritamente pessoal administrativo sem relação com o SUS.
+C) Toda reforma, reparo ou adaptação de imóvel de saúde é proibida por ambos os blocos.
+D) O fato de a transferência ter chegado ao Fundo de Saúde permite utilizar qualquer valor para qualquer serviço municipal.
 
 **Gabarito: A.**
 
-- **A — correta:** o Ministério registra essa nuance sobre classificação e objeto.
-- **B — incorreta:** não descreve destinação do investimento.
-- **C — incorreta:** reformas da rede física podem ser ASPS, conforme regras.
-- **D — incorreta:** natureza orçamentária e ato de repasse precisam ser observados.
+- **A — correta:** a Portaria 828/2020 renomeou os blocos e disciplina manutenção, estruturação, condições de obras e finalidade.
+- **B — incorreta:** as despesas têm restrições; a Estruturação não é autorização de folha irrestrita.
+- **C — incorreta:** reparos/adaptações e reformas podem ser elegíveis em hipóteses diferentes, conforme programa e natureza.
+- **D — incorreta:** a transferência conserva vínculos legais e finalidade pactuada.
 
-**Mini-revisão:** a classificação corrente/capital **não pode ser deduzida apenas** do nome popular do bloco.
+**Mini-revisão:** o nome moderno não dispensa interpretar o ato originário, objeto, natureza orçamentária e critérios de execução.
 
 ### Questão 9 — Componentes de cofinanciamento da APS
 
@@ -549,16 +549,22 @@ O Fundo de Saúde é uma estrutura orçamentária e gestora instituída por lei,
 
 **Fundo a fundo** designa transferência direta entre fundos de saúde dos entes, tipicamente de modo regular e automático conforme modalidade/condições legais; não é convênio obrigatório para cada parcela. Há também transferências voluntárias específicas com instrumentos próprios. A LC141, arts. 18 e 20, disciplina transferências federais e estaduais automáticas, observando critérios e pactuação.
 
-### 10.2 Blocos federais segundo Portaria GM/MS 3.992/2017
+### 10.2 Blocos federais em vigor — Portaria GM/MS 828/2020
 
-A Portaria 3.992/2017 reorganizou a transferência em **Bloco de Custeio das Ações e Serviços Públicos de Saúde** e **Bloco de Investimento na Rede de Serviços Públicos de Saúde**, com contas e controles previstos na Portaria de Consolidação nº 6/2017. A simplificação operacional de contas **não apaga vínculos a programa de trabalho, finalidade, objeto do gasto, Plano e PAS**.
+A **Portaria GM/MS 3.992/2017** introduziu dois blocos, chamados então **Custeio** e **Investimento**. A **Portaria GM/MS 828, de 17 de abril de 2020**, alterou a Portaria de Consolidação nº 6/2017 e determinou a nova nomenclatura, **Manutenção das Ações e Serviços Públicos de Saúde** e **Estruturação da Rede de Serviços Públicos de Saúde**, respectivamente. O art. 2º da Portaria 828 prevê que menções antigas nos atos anteriores sejam lidas, quando couber, como referências aos blocos renomeados. Assim, em **2026 os nomes corretos são Manutenção e Estruturação**.
 
-| Bloco | Natureza predominante | Exemplos | Erro comum |
-|---|---|---|---|
-| Custeio | despesas correntes para operações e serviços | insumos, despesas necessárias a serviços elegíveis, pessoal ativo autorizado | pagar obra de capital qualquer sem regra |
-| Investimento | expansão/reforma e bens/estrutura conforme programação | equipamentos, construção/ampliação e reformas elegíveis | supor que só se admite despesa de capital em qualquer caso |
+| Nome vigente | Nome antigo (2017–2020) | Destinação e cautela |
+|---|---|---|
+| **Bloco de Manutenção das ASPS** | Custeio das ASPS | continuidade dos serviços, funcionamento, insumos, atividades e pessoal legalmente elegível; admite reparos e adaptações nas condições do art. 5º da norma consolidada. Veda construções novas e ampliações de imóveis. |
+| **Bloco de Estruturação da Rede** | Investimento na Rede | equipamentos, novas construções, ampliações e reformas de imóveis usados nas ASPS conforme o ato de origem; não financiar unidades voltadas **exclusivamente** a atividades administrativas, conforme art. 6º. |
 
-O próprio Ministério esclarece em FAQ da Portaria 3.992 que o bloco de investimento pode relacionar-se a despesas classificadas **como capital e, em determinados casos, correntes de reforma de unidades existentes**. Portanto, a máxima “investimento = exclusivamente despesa de capital” é uma simplificação errada. Verificar sempre natureza orçamentária, objeto e programa, e não apenas o nome do bloco.
+**Atenção à diferença reparo versus reforma.** Manutenção pode custear **reparos e adaptações** conforme a natureza da despesa e classificação de serviços de terceiros; Estruturação pode custear **reformas de imóveis existentes** conforme programa/ato do repasse. Decidir pela palavra informal utilizada no orçamento é inseguro: o gestor precisa analisar objeto, classificação contábil, programa, finalidade e contrato. Nem toda despesa corrente é Manutenção, nem toda Estruturação se reduz a capital — uma reforma pode ter natureza corrente conforme classificação aplicável.
+
+**Exemplo:** reparar encanamento sem aumento de área para evitar interrupção de atendimento pode adequar-se à Manutenção. Construir um novo bloco de consultórios não se enquadra na mesma hipótese de reparo e demanda análise de Estruturação. Reforma estrutural de unidade existente segue regras de Estruturação, respeitados o ato de origem e as dotações disponíveis. Conta bancária compartilhada dentro de cada bloco não significa dinheiro livre de programação.
+
+**Fontes primárias:** Portaria GM/MS nº 828/2020 (https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html); Portaria de Consolidação nº 6/2017, versão consolidada (https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017_comp.html); Fundo Nacional de Saúde (https://portalfns.saude.gov.br/sobre-o-fns/).
+
+**Pulo do Gato:** usar nomes **Manutenção/Estruturação** nas respostas sobre a norma vigente, e **Custeio/Investimento** apenas como nomenclatura histórica; preservam-se obrigações de finalidade, programação, classificação e prestação de contas.
 
 ### 10.3 Saldo financeiro: a diferença entre poder e dever
 
@@ -737,7 +743,7 @@ Ao contratar exames ou medicamentos, avaliar preços, qualidade, fornecimento, m
 | Saber o que integra/exclui ASPS | 8 | caso 2, Q4/Q5/Q15 | revisão jurídico-contábil |
 | Compreender PPA, LDO, LOA e orçamento executado | 9 | caso 8, Q6/Q11 | simulação de empenho/RAP |
 | Diferenciar fundo a fundo de convênio | 2, 10 | Q7 | particularidades do instrumento |
-| Diferenciar custeio e investimento | 10 | casos 3/7, Q7/Q8 | confirmar critérios do ato de repasse |
+| Diferenciar os blocos atuais Manutenção/Estruturação dos nomes históricos Custeio/Investimento | 10 | casos 3/7, Q7/Q8 | conferir Portaria 828/2020 e finalidade do repasse |
 | Interpretar componentes APS da Portaria 3.493 | 3, 11 | caso 4, Q9/Q10 | verificar metodologia da NT 8/2026 |
 | Relacionar regionalização e contratos assistenciais | 12, 16 | caso 6, Q13 | exercício de regulação |
 | Construir Plano/PAS/RDQA/RAG com indicadores | 9, 13 | caso 8, Q11 | conferência de prazos e modelo DGMP |
@@ -761,7 +767,7 @@ Não há necessidade de fotografias de pacientes nesta apostila. Os melhores rec
 | 4 | barras de gasto próprio 13,75% versus mínimo municipal 15% | 7 e caso 1 | números fictícios e legenda |
 | 5 | jornada PPA→LDO→LOA→execução→prestação | 9 | temporalidade coerente |
 | 6 | mapa de fases empenho→liquidação→pagamento→RAP | 9 | separar físico/financeiro |
-| 7 | blocos de custeio e investimento com vínculos | 10 | incluir exceção de reforma |
+| 7 | blocos de **Manutenção e Estruturação** com nomes históricos | 10 | distinguir reparos/adaptações de reformas/expansões |
 | 8 | infográfico dos seis componentes APS com zoom nos três eSF/eAP | 11 | não reproduzir figura de Portaria |
 | 9 | gráfico de cadastro 95% versus acompanhamento real 40% | 11 e caso 4 | não confundir indicador assistencial oficial com exemplo |
 | 10 | mapa fictício de rede regional com transporte | 16 | mostrar acesso, não só localização |
@@ -779,7 +785,8 @@ Não há necessidade de fotografias de pacientes nesta apostila. Os melhores rec
 5. **Lei nº 8.080/1990** e **Lei nº 8.142/1990**, organização do SUS, gestão e participação social. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm ; https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
 6. **Ministério da Saúde. Portaria GM/MS nº 3.992/2017**, financiamento em blocos e transferência fundo a fundo, texto e alterações no Portal BVS. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt3992_28_12_2017.html
 7. **Ministério da Saúde. FAQ Portaria 3.992/2017 — despesas correntes e capital**, esclarece que bloco de investimento pode abranger reformas com natureza corrente. https://portaria3992.saude.gov.br/perguntas-frequentes-faq/o-bloco-de-custeio-e-apenas-para-despesas-correntes-e-o-bloco-de-investimento-apenas-para-despesa-de-capital
-8. **Ministério da Saúde. Portaria GM/MS nº 3.493/2024**, metodologia do cofinanciamento federal da APS; normas de consolidação e atualizações. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3493_11_04_2024_comp.html
+8. **Ministério da Saúde. Portaria GM/MS nº 828/2020**, nomenclatura vigente dos blocos e regras de destinação (arts. 3º, 5º e 6º). https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html
+9. **Ministério da Saúde. Portaria GM/MS nº 3.493/2024**, metodologia do cofinanciamento federal da APS; normas de consolidação e atualizações. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3493_11_04_2024_comp.html
 9. **Ministério da Saúde. FAQ de componentes APS**, discrimina o componente fixo, vínculo/acompanhamento, qualidade e componentes adicionais. https://www.gov.br/saude/pt-br/composicao/saps/esf/equipe-saude-da-familia/faq/quais-criterios-sao-considerados-para-repasse-de-incentivo-financeiro-da-uniao-as-esf
 10. **Ministério da Saúde. Nota Técnica nº 8/2026-DEAPS/SAPS/MS**, publicada em **02/10/2026**, metodologia quadrimestral de vínculo/qualidade para equipes especificadas. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view
 11. **Ministério da Saúde. Instrumentos de Planejamento do SUS** (Plano de Saúde, PAS, RQPC e RAG). https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento
