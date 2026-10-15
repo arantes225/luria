@@ -172,3 +172,208 @@ A lamotrigina tem papel especialmente em episódios depressivos bipolares seleci
 
 ECT pode ser considerada por equipe especializada quando há mania severa prolongada/life-threatening ou resistência a tratamento, conforme condição e diretrizes. Requer anestesia, consentimento conforme capacidade e contexto legal e avaliação de riscos. Não é punição, nem técnica de rotina para hipomania leve.
 
+
+
+## 9. Depressão bipolar: diferente da depressão unipolar também no tratamento
+
+### 9.1 Por que a polaridade muda a prescrição?
+
+Na depressão bipolar, a pessoa pode relatar tristeza, anedonia, culpa, lentificação, aumento ou perda de sono, sintomas somáticos e pensamentos de autoagressão — os mesmos domínios do episódio depressivo maior unipolar. A diferenciação está no **histórico de episódios maníacos/hipomaníacos**. O tratamento deve oferecer benefício antidepressivo **sem induzir mudança de polaridade, agitação mista ou ciclagem**, além de favorecer prevenção de futuras recaídas.
+
+**CANMAT/ISBD 2023 Update**, para **depressão bipolar I**, lista como opções de primeira linha **quetiapina, lítio, lamotrigina, cariprazina e lurasidona** conforme esquema e associações especificados. As hierarquias e evidências variam entre agentes; **lurasidona associada a lítio/divalproato** possui indicação em algoritmo, e lurasidona isolada tem dados para certos pacientes. **NICE CG185** apresenta outro algoritmo centrado em quetiapina ou combinação fluoxetina–olanzapina em determinados cenários e considera lítio/lamotrigina conforme estado atual. Apresentar **duas diretrizes como opções contextualizadas**, não somar todos os fármacos.
+
+Para **bipolar II depressivo**, CANMAT/ISBD lista **quetiapina** como primeira linha; lítio, lamotrigina e algumas outras estratégias podem ser alternativas de segunda linha em pacientes selecionados. Isso **não significa** que as recomendações para bipolar I e II sejam intercambiáveis em qualquer país/produto.
+
+### 9.2 Por que antidepressivo isolado não é escolha de rotina em bipolar I?
+
+O antidepressivo em monoterapia pode elevar risco de **virada de polaridade** ou instabilidade de humor em grupos suscetíveis e tem benefício incerto em determinados cenários de bipolaridade. CANMAT/ISBD classifica **antidepressivo isolado como não recomendado** para depressão bipolar I. Em bipolar II, certas diretrizes permitem antidepressivo em contexto selecionado de depressão “pura”, sem sintomas mistos, com supervisão e avaliação de riscos, mas isso não autoriza prescrição automática pelo generalista sem reconstruir episódios.
+
+Se a pessoa estava usando ISRS e desenvolveu **mania**, a equipe precisa reavaliar o papel do antidepressivo e considerar interrupção apropriada, com cuidado de síndrome de retirada e avaliação de saúde mental. Não afirmar que qualquer melhora de energia no antidepressivo equivale a mania: pode ser recuperação do humor; a síndrome exige critérios claros.
+
+### 9.3 Quetiapina e antipsicóticos na depressão bipolar
+
+A quetiapina tem evidência para depressão bipolar e mania, diferenciando-se de certos agentes que são eficazes em mania, mas não demonstraram a mesma eficácia para depressão bipolar em monoterapia (por exemplo, aripiprazol não é recomendado como monoterapia para depressão bipolar I nos critérios CANMAT citados). **Não assumir que qualquer antipsicótico “estabiliza tudo”**.
+
+A quetiapina pode causar sonolência/sedação, hipotensão ortostática, efeitos metabólicos, ganho de peso e alterações de lipídios/glicose. O tratamento requer registro de peso/BMI, pressão, perfil metabólico e vigilância de sedação; riscos variam por dose e comorbidades. Um paciente com diabetes não fica necessariamente impedido de usá-la, mas a escolha deve discutir efeitos e alternativas.
+
+A lurasidona pode apresentar acatisia, náusea e interação medicamentosa; a cariprazina tem perfil farmacológico distinto e pode gerar acatisia. **Verificar registro e acesso real no Brasil** antes de apresentá-las como medicação de rotina SUS. Não usar lista CANMAT de opções como prova de incorporação à RENAME.
+
+### 9.4 Lamotrigina no polo depressivo
+
+Lamotrigina atua principalmente modulando canais de sódio e liberação de neurotransmissores excitatórios. Seu papel é relevante na **prevenção de episódios depressivos** e em certas estratégias de depressão bipolar; a **titulação é lenta** por risco de exantema grave, incluindo **síndrome de Stevens–Johnson/necrólise epidérmica tóxica**, principalmente com subida rápida ou associação com **valproato**. O aumento de dose e eventual reintrodução após período sem uso devem seguir bula e avaliação profissional; não reiniciar automaticamente dose plena após interrupção.
+
+**Lamotrigina não é escolha para aliviar mania grave na emergência.** A rapidez de benefício e o tempo para alcançar doses efetivas precisam ser considerados: numa depressão bipolar grave com risco imediato, a lentidão de titulação pode exigir estratégia complementar de resposta mais rápida.
+
+### 9.5 Lítio e depressão bipolar
+
+O lítio pode ajudar no tratamento de depressão bipolar em certos esquemas e é medicamento de forte papel na **manutenção de bipolaridade**, com evidência de redução de recorrência e associação com menor risco de comportamentos suicidas em estudos/populações; esse benefício **não elimina avaliação individual de segurança nem garante proteção imediata** em crises. Dado que o fármaco tem janela terapêutica relativamente estreita, ajuste deve se apoiar em sintomas, função renal, interações e **litemia**.
+
+## 10. Tratamento de manutenção e prevenção de recaídas
+
+### 10.1 O que se mantém quando sintomas desaparecem?
+
+Remissão de mania/depressão não equivale a cura definitiva da vulnerabilidade a novos episódios. Planejar seguimento em fase eutímica é parte essencial, com metas de **qualidade de vida, sono, prevenção de recaída, proteção funcional, manejo de efeitos adversos e adesão voluntária informada**. A NICE CG185 considera **lítio como primeira linha de longo prazo**, informando à pessoa que é das opções mais eficazes de manutenção, enquanto CANMAT/ISBD também reconhece quetiapina, divalproato, lamotrigina e outras estratégias conforme polaridade anterior e tolerabilidade.
+
+**Escolher pelo padrão de recaída e pela resposta anterior:** paciente com recaídas maníacas graves pode precisar de agente fortemente antimaníaco; predominância depressiva com baixa frequência de mania pode favorecer outras combinações. Se tratamento de fase aguda foi efetivo e tolerado, continuar estratégia muitas vezes é razoável, ajustando no longo prazo.
+
+### 10.2 Psicoeducação: identificar pródromos
+
+**Pródromo maníaco:** redução de sono, projetos em excesso, aumento de fala, irritabilidade, maior uso de substâncias, gastos/impulsividade ou redução de reconhecimento de necessidade de tratamento. **Pródromo depressivo:** isolamento, lentificação, tristeza persistente, ruminação, alterações de sono e redução de autocuidado. Sinais individuais variam; a pessoa e apoiadores consentidos devem ajudar a construir lista de sinais precoces.
+
+**Plano:** identificar quando contatar equipe, ajustar rotina de sono, reduzir substâncias/gatilhos, não mudar medicação por conta própria, intensificar monitorização clínica e discutir suporte para decisões importantes durante episódio. O objetivo não é controlar toda escolha da pessoa, mas evitar perdas funcionais e emergências.
+
+### 10.3 Terapias psicossociais
+
+**Psicoeducação estruturada** apresenta boa evidência para melhorar conhecimento, reconhecimento de sinais precoces e adesão, especialmente como adjuvante ao tratamento farmacológico. **Terapia cognitivo-comportamental** pode ajudar sintomas residuais, depressão e gestão de crenças/comportamentos. **Terapia focada na família** favorece comunicação e manejo de conflitos, com consentimento e sem culpar familiares. **Terapia interpessoal e de ritmo social** busca proteger regularidade de sono/atividade e lidar com mudanças de papel.
+
+Pedir “evitar todo estresse para sempre” é irreal e pode gerar culpa. Negociar estratégias concretas: rotina de sono consistente, plano para viagens/turnos, avisos precoces de recaída, apoio a estudos/trabalho e períodos de licença quando necessários.
+
+### 10.4 Substâncias, obesidade e saúde física
+
+Comorbidades cardiometabólicas, tabagismo, álcool e outras substâncias podem modificar prognóstico e risco das medicações. Monitorização da pressão, peso, glicemia e lipídios acompanha risco intrínseco e iatrogênico, sobretudo em antipsicóticos. Há espaço para atividade física adaptada e programas de cessação tabágica/álcool, integrados à saúde mental. Na abordagem de substâncias, evitar punição ou exclusão de serviços.
+
+### 10.5 Não interromper estabilizador abruptamente
+
+A suspensão rápida de lítio pode aumentar risco de recaída, inclusive mania; quando precisa ser retirado, NICE CG185 recomenda redução **ao menos durante quatro semanas e preferencialmente até três meses**, quando clinicamente viável, com vigilância adicional. Em quadro de **toxicidade do lítio** ou condição aguda, a decisão de suspender é emergencial e segue outro raciocínio — não insistir em redução lenta enquanto paciente está intoxicado.
+
+Se gravidez é planejada, renal piora ou efeitos adversos se acumulam, discutir troca de modo **pré-concepcional e gradual**, sempre considerando prevenção de episódios graves.
+
+## 11. Lítio — fisiologia, prescrição por nível e segurança
+
+### 11.1 Por que há necessidade de monitorização?
+
+Lítio é cátion administrado por via oral, excretado predominantemente por rins, com **estreita distância entre exposição eficaz e exposição tóxica**. Variações de filtração renal, estado hídrico/sódio, doença aguda e interações medicamentosas podem elevar litemia. Ajuste deve considerar **formulação, dose diária, horários, função renal, sintomas e amostra sérica colhida corretamente**, evitando associar uma dose fixa a uma concentração garantida.
+
+Os mecanismos moleculares incluem modulação de sistemas intracelulares de sinalização e neuroplasticidade, não simplesmente “aumento de serotonina”. O benefício preventivo depende de continuidade, adequação de nível, tolerância e acompanhamento.
+
+### 11.2 Antes de iniciar
+
+A NICE CG185 recomenda:
+- peso/BMI e avaliação de comorbidades;
+- **hemograma**, ureia/eletrólitos incluindo **cálcio**, eTFG/função renal;
+- **função tireoidiana**;
+- **ECG** se doença cardiovascular ou fatores de risco;
+- revisar gravidez possível/planejada e contracepção, interações, acesso a monitorização laboratorial;
+- pactuar educação para reconhecer toxicidade, doença aguda e manutenção de hidratação.
+
+Não é seguro prescrever lítio em paciente com doença renal importante sem avaliação adequada nem omitir risco potencial por já ter sido usado antes.
+
+### 11.3 Litemia e interpretação
+
+Na primeira prescrição, NICE orienta **dosar lítio uma semana após início**, novamente **uma semana após cada mudança de dose** e semanalmente até estabilizar. A amostra deve respeitar protocolo para **nível de vale aproximadamente 12 horas após última dose** em esquemas adequados; informar horário e formulação ao laboratório. Uma coleta logo após ingestão pode superestimar nível de manutenção e gerar decisões erradas.
+
+**Faixa de referência de NICE para quem inicia lítio:** **0,6–0,8 mmol/L** como objetivo habitual de manutenção. Em pessoas com recaídas em tratamento ou sintomas residuais importantes, NICE admite testar **0,8–1,0 mmol/L** durante período apropriado, com mais monitorização. Algumas diretrizes usam alvos diferentes em mania aguda/idosos. **Não transportar a meta de mania aguda a uma idosa com função renal reduzida**, nem tratar valor do laboratório de forma isolada sem a situação clínica.
+
+**Monitorização:** litemia a cada **três meses no primeiro ano**; depois a cada **seis meses** em geral, ou a cada três meses em idosos, usuários de interações, litemia elevada, função renal/tireoidiana alterada ou adesão/controle problemáticos. Peso/BMI, ureia/eletrólitos, eTFG, **cálcio e função tireoidiana pelo menos semestralmente** conforme NICE, com maior frequência por condição.
+
+### 11.4 Efeitos adversos e toxicidade
+
+**Comuns:** tremor fino, poliúria/polidipsia (possível defeito de concentração urinária/nefrógeno), náuseas, ganho ponderal em parte dos pacientes, acne/alterações cutâneas e disfunção tireoidiana. **Em uso crônico:** vigiar doença renal crônica, hipotireoidismo e hiperparatireoidismo/hipercalcemia. A decisão de manter depende do benefício, da trajetória renal, idade e alternativas.
+
+**Sinais de toxicidade:** tremor grosso novo ou progressivo, vômitos, diarreia, ataxia, fala arrastada, confusão, sonolência importante e, em quadros graves, convulsão/alteração cardíaca. Suspeita de toxicidade exige **avaliação urgente**, litemia, eletrólitos e função renal conforme equipe; a gravidade clínica não se resume a uma concentração única e pode existir neurotoxicidade com níveis não dramaticamente elevados em subgrupos.
+
+### 11.5 Interações que caem em prova
+
+**AINEs** (como ibuprofeno e naproxeno) podem reduzir depuração renal de lítio e elevar sua concentração; orientar não iniciar indiscriminadamente, especialmente automedicação. **IECA/BRAs**, diuréticos tiazídicos e outros fármacos também podem aumentar níveis ou modificar função renal, requerendo revisão clínica e monitorização. **Desidratação** por gastroenterite, febre ou baixa ingesta pode concentrar lítio e precipitar toxicidade.
+
+Não recomendar “cortar todo sal” de maneira abrupta: mudanças importantes de sódio e hidratação afetam reabsorção renal de lítio. A pessoa deve manter ingesta de líquidos/sódio regular apropriada a sua saúde e buscar orientação se ficar agudamente doente.
+
+**Alerta de continuidade:** se insuficiência renal progride em medidas sucessivas, discutir com nefrologia e especialista em transtorno bipolar. A decisão não é automática por eTFG isolada, mas deve ser informada e segura.
+
+## 12. Anticonvulsivantes com ação sobre humor: indicações distintas
+
+### 12.1 Valproato/divalproato
+
+Valproato eleva disponibilidade de GABA e altera canais/sinalização neuronal, com atividade antimaníaca em cenários clínicos. Efeitos incluem ganho de peso, tremor, sedação, alterações gastrointestinais, **trombocitopenia**, hepatotoxicidade e, raramente, pancreatite, além de alterações endócrino-metabólicas. Solicitar **hemograma/plaquetas e função hepática** antes e ao longo conforme guideline; monitorar concentração em circunstâncias selecionadas de toxicidade, má adesão ou resposta insuficiente, não como teste único de eficácia.
+
+**Risco reprodutivo importante:** uso na gestação associa-se a malformações congênitas e problemas do neurodesenvolvimento; evitar em pessoas que podem engravidar quando alternativas adequadas existem, considerando restrições regulatórias locais e plano pré-concepcional. Também existem alertas regulatórios sobre potenciais riscos associados à exposição **paterna** ao valproato em janela próxima da concepção (MHRA/Reino Unido), com orientações específicas. **Não copiar literalmente a proibição britânica para o Brasil** sem conferir Anvisa/PCDT; mas o risco exige consentimento documentado e decisão especializada.
+
+### 12.2 Lamotrigina e o risco cutâneo
+
+Reforçando: **lamotrigina não é antimaníaca**. Usada em depressão bipolar/manutenção quando apropriada, necessita **titulação lenta**, por risco de exantema grave. O **valproato inibe metabolismo da lamotrigina**, demandando regime de titulação ainda mais cuidadoso e podendo aumentar risco cutâneo. Se surgir exantema importante, lesão de mucosas, febre ou sintomas sistêmicos, orientar avaliação urgente; nunca ignorar rash novo por acreditar que “toda mancha é leve”.
+
+A eficácia de lamotrigina não a torna indicada para resolver insônia/manias em poucas horas: existe latência para alcançar dose terapêutica. Avaliar método contraceptivo, gestação e interações que podem alterar níveis, conforme bula.
+
+### 12.3 Carbamazepina e alternativas
+
+Carbamazepina tem ação em canais de sódio, atividade antimaníaca em alguns pacientes, mas traz **interações por indução enzimática**, potencial de hiponatremia, alterações hematológicas, reações cutâneas graves e risco reprodutivo. Monitorar hemograma, função hepática e sódio conforme risco, interações com contraceptivos e outros psicofármacos. Não posicioná-la como primeira linha universal só por ser disponível em outro contexto do SUS.
+
+**Topiramato/gabapentina:** não são tratamentos de primeira linha estabelecidos para mania bipolar; o fato de um medicamento ser “antiepiléptico” não garante eficácia estabilizadora de humor. CANMAT/ISBD não recomenda topiramato/gabapentina como tratamento padrão de mania.
+
+## 13. Antipsicóticos: eficácia por fase e efeitos adversos
+
+### 13.1 Mecanismos gerais e variabilidade
+
+Antipsicóticos atuam em receptores dopaminérgicos/serotoninérgicos e outros alvos, com eficácia variável sobre mania, psicose, manutenção e **depressão bipolar**. Existem diferenças importantes: **aripiprazol** pode ajudar mania/manutenção, mas não é opção recomendada de monoterapia para depressão bipolar I segundo CANMAT; **quetiapina** possui eficácia nos dois polos em contextos específicos. A aula 215 detalha receptores, sedação, síndrome neuroléptica maligna, distonias e condução de efeitos adversos.
+
+### 13.2 Monitorização do risco cardiometabólico
+
+Antes e durante antipsicóticos, avaliar **peso/BMI, circunferência abdominal quando pertinente, pressão arterial, glicemia/HbA1c e lipídios**, com frequência orientada por fármaco e perfil da pessoa. Vigiar extrapiramidais, acatisia, movimentos tardios, prolactina e QT em agentes/riscos específicos. Ganho de peso importante pode comprometer adesão e saúde cardiometabólica; reconhecer e oferecer alternativas, não culpabilizar paciente.
+
+### 13.3 Tratamento combinado: quando ajuda e quando aumenta danos
+
+Uma mania grave pode responder melhor a combinação de estabilizador e antipsicótico em certos subgrupos, enquanto outras pessoas obtêm controle com monoterapia. Combinar medicações pode aumentar sedação, tremor, alterações metabólicas e interação farmacológica, devendo haver **indicação clara e plano de revisão**. Não associar vários antipsicóticos por inércia sem revisar diagnósticos e resposta.
+
+Após estabilização aguda, reavaliar necessidade e duração de combinação, sobretudo diante de efeitos adversos. Adesão pode melhorar quando o regime é simples e eficaz; uma prescrição tecnicamente completa não é boa se a pessoa não consegue utilizá-la.
+
+## 14. Populações especiais
+
+### 14.1 Gestação e período perinatal
+
+Planejamento **pré-concepcional** é central: discutir risco de recaída sem tratamento e riscos farmacológicos para gestante/feto, com psiquiatria e obstetrícia. **Não interromper estabilizadores abruptamente** ao descobrir gravidez, especialmente em quem teve mania severa ou psicose. O valproato é particularmente problemático na gestação por teratogenicidade/neurodesenvolvimento; lítio pode estar associado a riscos obstétricos/fetais e requer avaliação individual, potencial mudança de farmacocinética na gestação e pós-parto, sem banalizar nem proibir universalmente em qualquer contexto.
+
+**Puerpério** é período de risco elevado de episódio de humor e psicose pós-parto em pessoas com bipolaridade. Redução de sono e mudanças hormonais podem precipitar recaída; a família/rede precisa conhecer **sinais precoces de agitação, insônia quase total, desorganização e crenças incomuns**, que exigem atendimento imediato. Questões sobre aleitamento e fármaco devem ser individualizadas; a prioridade é segurança e estabilidade materna-infantil.
+
+### 14.2 Crianças e adolescentes
+
+Irritabilidade isolada, impulsividade e dificuldades escolares **não equivalem** a transtorno bipolar. Diagnóstico exige episódios claros com alteração de energia/humor e repercussão, além de diferencial com TDAH, trauma, substâncias, neurodesenvolvimento e condições clínicas. Tratamento demanda equipe especializada, consentimento/família e monitorização de efeitos metabólicos/reprodutivos. **Não aplicar automaticamente doses/esquemas adultos a adolescentes.**
+
+### 14.3 Idosos
+
+Bipolaridade no idoso requer atenção a comorbidades, função renal, polifarmácia, quedas, efeitos anticolinérgicos e cognição. Mania de início tardio sem história anterior deve ampliar investigação **clínica e neurológica**; doença cerebrovascular, demência, medicamentos e alterações metabólicas são relevantes. **Lítio em idosos** exige metas e monitorização adaptados a função renal/risco de toxicidade; não usar referência de concentração da mania de adulto jovem de modo mecânico.
+
+### 14.4 Comorbidades clínicas importantes
+
+Na **DRC**, lítio pode tornar-se mais difícil de manejar e exige avaliação nefrológica/psiquiátrica; outros medicamentos também têm ajustes e riscos. Na **doença hepática**, valproato/carbamazepina podem ser menos apropriados. Em **obesidade/diabetes**, avaliar efeito metabólico de antipsicóticos. Em **epilepsia**, revisar anticonvulsivantes, interações e sintomas do humor. Em **uso problemático de substâncias**, cuidado integrado melhora diagnóstico, segurança e adesão.
+
+## 15. Segurança, risco e crise: a polaridade não substitui avaliação
+
+A avaliação de ideação de autoagressão e segurança segue princípios da aula 211, adaptados à história de bipolaridade. Episódios **depressivos** e **mistos**, agitação intensa, impulsividade e intoxicação podem exigir cuidado especial. **Lítio não permite dispensar avaliação clínica de segurança** pelo fato de ter evidência favorável em desfechos longitudinais.
+
+Em mania com psicose/desorganização, risco pode incluir incapacidade de autoproteção, atos impulsivos e falta de alimentação/sono. Manejo de crise demanda rede especializada e, às vezes, internação. Não inferir “perigo a terceiros” apenas por diagnóstico de bipolaridade; avaliar fatos concretos, contexto, consentimento e necessidades.
+
+A NICE NG225, sobre autoagressão, reforça que **escalas ou rótulos de baixo/médio/alto risco não devem predizer comportamento futuro nem ser único critério de alta**. Formule necessidade e plano, com contatos, redução colaborativa de acesso a meios perigosos, rede e transferência efetiva quando urgente.
+
+## 16. Algoritmos de plantão e ambulatório
+
+### 16.1 Fala acelerada + pouca necessidade de sono
+
+**A.** Verificar sinais vitais, atenção/consciência, intoxicação, medicações e sintomas de tireotoxicose.  
+**B.** Confirmar mudança de humor/energia e duração, prejuízo e segurança.  
+**C.** Diferenciar mania de hipomania (psicose ou prejuízo grave → não é hipomania).  
+**D.** Se mania grave, avaliação urgente/hospitalização conforme caso; iniciar tratamento antimaníaco por equipe.  
+**E.** Se hipomania, avaliação oportuna de polaridade, ajuste terapêutico e vigilância de progressão.  
+**F.** Preparar prevenção de recaída e plano de sono/apoio, não só sedação.
+
+### 16.2 Pessoa procura atendimento por depressão
+
+**A.** Confirmar síndrome depressiva e segurança.  
+**B.** Investigar **mania/hipomania prévia** e história familiar, medicações/substâncias, mudanças de energia.  
+**C.** Se bipolaridade provável, evitar antidepressivo em monoterapia de modo reflexo; avaliar tratamentos com evidência na fase depressiva bipolar.  
+**D.** Tratar sono, doenças clínicas e comorbidades e garantir seguimento.  
+**E.** Se emergência psicótica/catatônica ou segurança ameaçada, encaminhar imediatamente.
+
+### 16.3 Paciente em uso de lítio com vômitos, ataxia e confusão
+
+**A.** Suspeitar **toxicidade por lítio** e outras causas médicas.  
+**B.** Solicitar avaliação emergencial com litemia, eletrólitos e função renal, ECG conforme quadro, avaliar hidratação e interações.  
+**C.** A equipe decidirá medidas de suspensão/eliminação e necessidade de suporte intensivo; **não** orientar somente a “diminuir 100 mg” ou aguardar consulta eletiva.  
+**D.** Após estabilização, reconstruir evento (gastroenterite, diurético, AINE) e plano de prevenção.
+
+### 16.4 Depressão bipolar com lamotrigina e novo exantema
+
+**A.** Determinar gravidade, mucosas, febre, dor e sinais sistêmicos.  
+**B.** Suspeitar reação cutânea grave, especialmente se titulação rápida ou associação com valproato.  
+**C.** Encaminhar para avaliação urgente conforme gravidade, sem trivializar rash.  
+**D.** Rever regime com prescritor; não reiniciar dose plena sem protocolo.
+
