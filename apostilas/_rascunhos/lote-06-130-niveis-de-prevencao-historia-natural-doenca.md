@@ -530,3 +530,238 @@ A diferença não está nas palavras “praça”, “aconselhamento” e “med
 9. A mesma pessoa recebe ações de níveis diferentes simultaneamente.
 10. A intenção preventiva não prova eficácia; evidência e adequação são indispensáveis.
 
+
+
+## 28. Oito casos clínicos e coletivos comentados
+
+### Caso 1 — A mesma hipertensão em três momentos e dois sentidos de prevenção
+
+**Apresentação:** homem de 48 anos comparece à UBS por aferição oportunística de PA elevada repetida em diferentes dias. Não tem AVC ou doença coronariana conhecida. Trabalha em turnos longos, relata dificuldade de adquirir alimentos de boa qualidade e mora em bairro sem calçadas seguras. A equipe propõe três medidas: política local para acesso a alimentação e mobilidade, investigação/diagnóstico e tratamento da HAS assintomática, e manejo do risco de primeiro infarto.
+
+**Hipótese/raciocínio:** o problema é **hipertensão possivelmente já presente**, em contexto de determinantes estruturais. A política territorial pode atuar primordialmente sobre fatores de risco populacionais. A identificação de HAS silenciosa e tratamento oportuno relacionam-se à prevenção secundária na história natural da HAS; reduzir primeiro infarto por terapia de risco é prevenção primária cardiovascular.
+
+**Exames e interpretação:** confirmar pressão por técnica adequada e medidas repetidas/MAPA/MRPA quando indicadas, avaliar risco global, função renal e outras comorbidades. Não classificar hipertensão pelo valor isolado em consulta com dor/ansiedade. A definição de HAS segue diretrizes atuais; o caso não fornece números para fechar diagnóstico instantâneo.
+
+**Conduta:** combinar acesso a intervenções viáveis, confirmar diagnóstico, discutir plano terapêutico e ações coletivas; explicar risco sem culpabilizar. **Por que importa:** uma intervenção pode ter classificações diferentes conforme o desfecho, sem contradição.
+
+### Caso 2 — PEP depois de acidente: por que continua sendo prevenção primária da infecção
+
+**Apresentação:** profissional de enfermagem sofre perfuração por agulha usada em paciente com HIV conhecido. Ele procura atendimento logo após acidente, assintomático e sem diagnóstico de HIV. Pergunta se profilaxia pós-exposição já seria prevenção secundária porque houve exposição.
+
+**Hipótese/raciocínio:** a **exposição** já ocorreu, mas a **infecção-alvo** que a PEP pretende evitar ainda não está estabelecida. Logo, a PEP é **primária da aquisição do HIV**, após avaliação de elegibilidade, tempo e contraindicações. O acidente ocupacional em si já ocorreu, e medidas de engenharia/dispositivos para evitar novos acidentes são primárias do evento acidente.
+
+**Exames:** avaliação clínica, testes basais conforme protocolo, situação do paciente-fonte quando disponível, hepatites virais, função renal/hepática conforme esquema e seguimento; não atrasar decisão sobre PEP clinicamente indicada esperando exames não essenciais.
+
+**Conduta:** avaliação e início conforme PCDT e prazo de oportunidade, documentação, prevenção de novas exposições, acompanhamento laboratorial e apoio ao trabalhador. **Por que importa:** “após exposição” não implica “doença já instalada”.
+
+### Caso 3 — Rastreamento de câncer não substitui diagnóstico de sintomas
+
+**Apresentação:** mulher de 39 anos com sangramento pós-coital recorrente e DNA-HPV negativo há dois anos pergunta se precisa de novo exame somente quando completar cinco anos. Outro membro da família, sem sintomas, está elegível a um programa de rastreio.
+
+**Hipóteses:** a primeira pessoa **tem sintoma** e necessita avaliação diagnóstica; a segunda é potencial candidata a intervenção secundária de **rastreamento organizado**. A classificação de ambas não pode ser baseada apenas na palavra “DNA-HPV”.
+
+**Exames/interpretação:** examinar conforme consentimento, avaliar gestação/IST e patologia cervical conforme hipótese, com encaminhamento apropriado. Para assintomático, usar diretriz de rastreio, idade, risco e intervalo, com confirmação após teste alterado.
+
+**Conduta:** investigar o sintoma no tempo adequado e manter programa de rastreio só onde é indicado. **Por que importa:** prevenção secundária inclui detecção precoce, mas rastrear não é sinônimo de investigar doença sintomática.
+
+### Caso 4 — Criança com perda auditiva e diferentes níveis no mesmo itinerário
+
+**Apresentação:** recém-nascido realiza triagem auditiva neonatal e apresenta resultado alterado, sendo encaminhado para confirmação. Meses depois confirma-se perda auditiva permanente e há indicação de intervenção auditiva e fonoaudiologia. A maternidade também executa protocolo de prevenção de infecção, enquanto o município trabalha para reduzir exposição a ruído nas escolas.
+
+**Raciocínio:** triagem de deficiência auditiva **já presente, porém não reconhecida** é secundária da condição. Reabilitação auditiva e de linguagem após perda confirmada pode ter caráter terciário de limitações. Medidas para evitar infecções congênitas/imunopreveníveis quando não ocorreram são primárias. Política de ruído escolar pode evitar risco ambiental estrutural e ser primordial/primária conforme alvo.
+
+**Exames e conduta:** realizar confirmação audiológica por método apropriado e encaminhar equipe especializada, apoio familiar e intervenção precoce quando indicada; não inferir diagnóstico definitivo só por um teste de triagem alterado.
+
+**Por que importa:** a classificação segue fase e alvo, e a continuidade da rede determina benefício.
+
+### Caso 5 — Pós-AVC: prevenção secundária cardiovascular versus reabilitação terciária
+
+**Apresentação:** homem de 67 anos teve AVC isquêmico há duas semanas e apresenta hemiparesia e disfagia. Equipe ajusta antitrombótico conforme etiologia, estatina e controle de risco, inicia fisioterapia e fonoaudiologia, revisa sedativo que aumenta risco de quedas e vacina conforme elegibilidade.
+
+**Hipóteses/raciocínio:** medicamentos para reduzir **recorrência de AVC** são prevenção secundária na nomenclatura cardiovascular. Fisioterapia/fono e adaptações evitam incapacidade adicional: terciária da sequela. Revisão de sedativo desnecessário: quaternária. Vacina para infecção ainda não adquirida: primária. Prevenção de aspiração em quem não teve pneumonia pode ser primária **da pneumonia**, embora decorra de cuidado reabilitador.
+
+**Exames:** avaliação neurológica e de deglutição, risco de quedas, função cognitiva, investigação etiológica e acompanhamento cardiometabólico, conforme equipe. Não iniciar todas as classes antitrombóticas indiscriminadamente sem saber mecanismo do AVC.
+
+**Conduta:** plano integrado de recuperação funcional e redução de recorrência com reavaliação longitudinal. **Por que importa:** uma mesma consulta de hospital/UBS realiza múltiplos níveis sem conflito.
+
+### Caso 6 — Programa municipal com muitas coletas e pouco seguimento
+
+**Apresentação:** município informa 5.000 testes de rastreamento de câncer realizados em um ano, mas 200 positivos permanecem sem diagnóstico confirmatório por mais de seis meses, e mulheres da zona rural têm baixa cobertura. A gestão propõe duplicar exames antes de organizar colposcopia.
+
+**Hipótese:** estratégia secundária planejada está **incompleta**; volume não é benefício. Ações de promoção/equidade podem melhorar acesso estrutural; o rastreio só gera efeito adequado quando a pessoa recebe confirmação e tratamento quando indicado.
+
+**Exames/indicadores:** estimar população elegível, cobertura no intervalo recomendado, índice de duplicação, tempo até resultado, proporção de positivos investigados, perdas de seguimento, acesso rural e capacidade de encaminhamento.
+
+**Conduta:** organizar fluxo de comunicação, regulação, busca ativa sem coerção e tratamento, antes de ampliar capacidade de coletas. **Por que importa:** classificação temporal correta não substitui avaliação de eficiência, danos e equidade.
+
+### Caso 7 — Infecção tuberculosa sem doença ativa: a doença-alvo importa
+
+**Apresentação:** criança assintomática mora com familiar com TB pulmonar contagiosa. Investigação exclui doença ativa e confirma indicação de tratamento preventivo de tuberculose conforme protocolo, após avaliar exposição, idade, condição imunológica e testes pertinentes.
+
+**Raciocínio:** a criança pode já ter infecção pelo bacilo sem TB ativa. O tratamento preventivo visa **evitar evolução para doença ativa**, agindo antes deste agravo; pode ser descrito como prevenção primária da TB ativa apesar de a infecção já existir. Se a pergunta exigisse prevenir **aquisição da infecção**, a intervenção após aquisição já não seria primária desse evento. Ventilação, diagnóstico/tratamento do caso-fonte e medidas de controle de transmissão atuam para evitar novas infecções.
+
+**Exames e conduta:** avaliar sinais de doença ativa e protocolo de contatos vigente, solicitar exames e instituir tratamento preventivo quando elegível; acompanhar aderência e segurança. Não usar apenas nome do teste para classificar nível.
+
+**Por que importa:** condições aninhadas — infecção versus doença — tornam classificações ambíguas se alvo não é especificado.
+
+### Caso 8 — Quaternária não significa negar diagnóstico de doença grave
+
+**Apresentação:** mulher de 54 anos perdeu peso involuntariamente, tem sangue visível nas fezes, cansaço e anemia ferropriva. Outro profissional sugere não solicitar exames porque “prevenção quaternária é evitar colonoscopias”.
+
+**Hipóteses:** sintomas e anemia configuram indicação **diagnóstica**, com diferencial incluindo doença colorretal, gastrointestinal inflamatória e outras causas. O argumento de evitar rastreio em assintomáticos fora de critério não se aplica a esse caso.
+
+**Exames:** avaliação clínica e investigação gastrointestinal conforme urgência, hemograma/ferro e endoscopia/colonoscopia conforme indicação e risco. Um FIT negativo prévio não exclui doença sintomática.
+
+**Conduta:** investigar de forma proporcional e tempestiva, preservando comunicação e segurança. **Por que importa:** prevenção quaternária evita intervenções inúteis, não legitima subdiagnóstico por excesso de cautela.
+
+## 29. Doze questões autorais comentadas
+
+### Questão 1 — Definição de período pré-patogênico
+Em modelo de Leavell & Clark, qual descrição corresponde melhor ao período pré-patogênico de uma doença-alvo?
+
+A) Período em que complicações irreversíveis já exigem reabilitação.  
+B) Etapa anterior à instalação da doença-alvo, na qual fatores de suscetibilidade e ambiente podem interagir.  
+C) Apenas o momento após o primeiro sintoma.  
+D) Fase em que qualquer exame já confirma uma doença manifesta.
+
+**Gabarito: B.** **A:** descreve doença com limitação estabelecida. **B:** a doença-alvo ainda não se instalou, embora riscos existam. **C:** pertence à fase clínica patogênica. **D:** resultados dependem de condição e fase. **Mini-revisão:** pré-patogênico não equivale a ausência de riscos.
+
+### Questão 2 — Primordial versus primária
+Município muda planejamento urbano, alimentação escolar e segurança de calçadas para evitar instalação de obesidade e sedentarismo como riscos na próxima geração. Qual nível é mais característico?
+
+A) Terciário.  
+B) Quaternário exclusivamente.  
+C) Primordial.  
+D) Secundário por rastreamento.
+
+**Gabarito: C.** **A:** não há sequela a reabilitar. **B:** foco não é iatrogenia. **C:** política estrutural visa fatores de risco antes de sua distribuição. **D:** não há teste de doença existente. **Mini-revisão:** primordial olha para emergência populacional do risco; primária protege contra início da doença-alvo.
+
+### Questão 3 — Vacinação no hospital terciário
+Adulto internado em hospital de alta complexidade recebe vacina indicada contra doença que nunca teve. Qual classificação do ato vacinal em relação a essa doença?
+
+A) Terciária, pois ocorreu em hospital terciário.  
+B) Primária, por proteção específica antes do agravo.  
+C) Secundária, pois já está internado.  
+D) Quaternária, porque vacinação é retirada de medicamentos.
+
+**Gabarito: B.** **A e C:** confundem nível de atenção com prevenção. **B:** o objetivo é evitar infecção/agravo futuro. **D:** quaternária diz respeito a excesso e iatrogenia. **Mini-revisão:** local de cuidado não determina nível de prevenção.
+
+### Questão 4 — Detecção precoce de doença assintomática
+Pessoa sem sintomas é diagnosticada com hipertensão em medidas adequadas repetidas e inicia tratamento oportuno para evitar progressão. No modelo clássico da história natural da **hipertensão**, isso se relaciona predominantemente a:
+
+A) Prevenção secundária.  
+B) Prevenção primordial de fatores de risco populacionais.  
+C) Reabilitação terciária de hemiparesia já existente.  
+D) Quaternária por medicamento indiscriminado.
+
+**Gabarito: A.** **A:** doença já está presente, mas foi detectada antes de manifestações/complicações. **B:** atua antes da emergência de fatores de risco. **C:** não existe sequela no enunciado. **D:** tratamento foi indicado após diagnóstico adequado. **Mini-revisão:** se o desfecho perguntado fosse **primeiro infarto**, tratar risco pode ser prevenção primária cardiovascular.
+
+### Questão 5 — Reabilitação após AVC
+Pessoa apresenta hemiparesia e disfunção de deglutição após AVC e recebe fisioterapia, fonoaudiologia e adaptação domiciliar. Qual objetivo predominante dessas medidas?
+
+A) Impedir surgimento de fator de risco genético.  
+B) Detectar AVC subclínico ainda não ocorrido.  
+C) Reduzir incapacidade e restaurar função: prevenção terciária.  
+D) Confirmar infecção por HPV.
+
+**Gabarito: C.** **A:** não se intervém sobre genética nesse cenário. **B:** AVC já ocorreu com sequela. **C:** reabilitação e limitação de incapacidade são centrais. **D:** não pertinente. **Mini-revisão:** prevenção secundária de novo AVC por terapia antitrombótica é conceito clínico simultâneo, mas diferente do objetivo reabilitador.
+
+### Questão 6 — Prevenção quaternária
+Paciente saudável pede tomografia de corpo inteiro anual sem sintoma ou risco específico. Médico esclarece danos potenciais de incidentalomas e oferece acompanhamento e medidas com benefício demonstrado. Qual categoria descreve evitar esse exame desnecessário?
+
+A) Prevenção quaternária.  
+B) Prevenção terciária de lesão incapacitante.  
+C) Prevenção secundária de câncer comprovado.  
+D) Negação obrigatória de todo diagnóstico no futuro.
+
+**Gabarito: A.** **A:** evita dano por intervenção de baixo benefício. **B:** não há sequela. **C:** não há indicação comprovada de rastreio amplo. **D:** quaternária não impede investigação de sintomas. **Mini-revisão:** reduzir overuse sem gerar underuse.
+
+### Questão 7 — PEP após exposição
+Profissional sem HIV recebe PEP indicada pouco após acidente perfurocortante. Em relação à prevenção **da infecção HIV**, qual nível é o mais adequado?
+
+A) Primária, porque busca impedir a infecção apesar de a exposição já ter ocorrido.  
+B) Terciária, porque houve acidente.  
+C) Secundária obrigatória, porque todo evento pós-exposição significa doença instalada.  
+D) Nenhum, pois profilaxia não é prevenção.
+
+**Gabarito: A.** **A:** o alvo é a infecção ainda não estabelecida. **B:** não há incapacidade por HIV. **C:** confunde exposição com infecção. **D:** prevenção específica é finalidade da PEP. **Mini-revisão:** definir o evento-alvo antes de classificar.
+
+### Questão 8 — Tuberculose: infecção latente e doença ativa
+Contato assintomático com infecção tuberculosa é avaliado e recebe terapia preventiva elegível com objetivo de evitar **tuberculose ativa**. Melhor leitura?
+
+A) É obrigatoriamente reabilitação terciária de sequela pulmonar.  
+B) A classificação depende de qual evento se quer evitar; antes da TB ativa, a ação previne a doença ativa mesmo após infecção inicial.  
+C) A pessoa tem TB ativa por definição, sem avaliação adicional.  
+D) A intervenção é rastreamento de câncer.
+
+**Gabarito: B.** **A:** não há sequela. **B:** o desfecho TB ativa ainda não existe, mas infecção pode existir, exigindo especificar alvo. **C:** infecção latente e doença ativa diferem. **D:** não pertinente. **Mini-revisão:** em condições com etapas aninhadas, a resposta sem alvo é ambígua.
+
+### Questão 9 — Níveis de atenção versus níveis de prevenção
+Segundo o conceito de APS e PNAB, qual afirmação é correta?
+
+A) UBS só pode fazer prevenção primária, nunca tratar doença.  
+B) Hospital terciário não pode realizar vacinação.  
+C) APS reúne promoção, prevenção, diagnóstico, tratamento, reabilitação e outros cuidados; níveis de atenção não determinam níveis de prevenção.  
+D) Prevenção terciária significa obrigatoriamente atendimento na UTI.
+
+**Gabarito: C.** **A:** contraria integralidade da APS. **B:** hospital pode vacinar quando indicado. **C:** corresponde ao escopo da PNAB. **D:** terciária descreve função de reduzir incapacidade, não local. **Mini-revisão:** nível da RAS e fase da doença são eixos independentes.
+
+### Questão 10 — Carta de Ottawa
+Qual conjunto expressa áreas de ação da Carta de Ottawa na promoção da saúde?
+
+A) Apenas solicitar exames e prescrever antibióticos.  
+B) Políticas saudáveis, ambientes favoráveis, habilidades pessoais, ação comunitária e reorientação dos serviços.  
+C) Só internação, UTI e centro cirúrgico.  
+D) Apenas aconselhamento individual, excluindo ambiente e participação social.
+
+**Gabarito: B.** **A, C e D:** reduzem promoção a ações assistenciais ou individuais. **B:** contempla as cinco áreas clássicas da Carta de 1986. **Mini-revisão:** promoção amplia controle sobre determinantes de saúde, não é simples palestra.
+
+### Questão 11 — “Secundária” em cardiologia
+Pessoa após infarto usa terapias eficazes para evitar reinfarto e realiza reabilitação funcional. Qual afirmação é correta?
+
+A) Não há diferença entre prevenir novo evento e reabilitar a sequela.  
+B) Em cardiologia, evitar reinfarto é “prevenção secundária cardiovascular”; reabilitação de limitação já instalada é terciária da incapacidade.  
+C) Toda terapia pós-infarto é prevenção primordial.  
+D) A palavra secundária é proibida após surgimento de sintomas.
+
+**Gabarito: B.** **A:** objetivos são distintos. **B:** descreve convenção da especialidade e modelo histórico com alvo explícito. **C:** evento já ocorreu. **D:** ignora uso clínico consolidado. **Mini-revisão:** sempre especificar o desfecho ao classificar.
+
+### Questão 12 — Diagnóstico sintomático versus rastreamento
+Mulher com anemia ferropriva e sangue visível nas fezes recebe proposta de fazer FIT de rastreamento bienal e aguardar, mesmo com sinais atuais. Qual resposta é mais adequada?
+
+A) Trata-se de investigação diagnóstica de sinais de alarme; não se deve usar calendário de rastreio de assintomático como justificativa para adiar avaliação.  
+B) FIT negativo afastaria para sempre câncer e outras causas de sangramento.  
+C) Prevenção quaternária proíbe colonoscopia em todos os pacientes sintomáticos.  
+D) Exame anual de todos os marcadores tumorais substitui endoscopia diagnóstica.
+
+**Gabarito: A.** **A:** sintoma atual exige avaliação clínica dirigida, e o teste de rastreio não substitui investigação. **B:** falsos negativos existem e o teste não é diagnóstico definitivo. **C:** prevenção quaternária protege contra excesso sem negar intervenção indicada. **D:** marcadores indiscriminados não resolvem a questão. **Mini-revisão:** programa populacional de rastreio e investigação diagnóstica usam caminhos diferentes.
+
+## 30. Referências e leituras institucionais
+
+1. **Organização Pan-Americana da Saúde / OMS.** *The Ottawa Charter for Health Promotion*, 21 de novembro de 1986. Marco de promoção da saúde, cinco áreas de ação, intersetorialidade e capacidades coletivas. https://www.paho.org/en/documents/ottawa-charter-health-promotion .
+2. **Organização Mundial da Saúde.** *Health promotion* — visão conceitual atual e determinantes. https://www.who.int/health-topics/health-promotion .
+3. **Brasil, Ministério da Saúde.** Portaria GM/MS nº 2.446/2014 — redefine a Política Nacional de Promoção da Saúde, documento histórico de referência; verificar alterações e consolidação atual. https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html .
+4. **Brasil, Ministério da Saúde.** Portaria de Consolidação nº 2/2017 — políticas nacionais de saúde, incluindo PNPS em seu anexo, sujeita a alterações posteriores. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html .
+5. **Brasil, Ministério da Saúde.** Portaria GM/MS nº 2.436/2017 — Política Nacional de Atenção Básica, definindo APS e ações de promoção, prevenção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html .
+6. **Ministério da Saúde — Portal oficial.** Protocolos clínicos e diretrizes do SUS, a consultar por agravo e ano para PEP, IST/HIV, TB, saúde materna e condições crônicas. https://www.gov.br/saude/pt-br/assuntos/pcdt .
+7. **Organização Mundial da Saúde.** Health Promotion history and global conferences, primeira Conferência de Ottawa 1986. https://www.who.int/teams/health-promotion/enhanced-wellbeing/first-global-conference .
+8. **Apostila LURIA 120 — Medicina Baseada em Evidências** (rascunho do Lote 6): fundamentos de desenho de estudo, risco e efeito, Bayes, GRADE e avaliação crítica. Não reproduzir aqui seus quadros estatísticos.
+9. **Apostila LURIA 125 — Rastreamento e Prevenção Quaternária** (rascunho do Lote 6): organização de rastreios brasileiros 2025–2026, sobre/subdiagnóstico, comunicação de risco e fluxos no SUS. Não duplicar seu conteúdo normativo completo.
+10. **Modelo histórico de Leavell & Clark.** Três níveis clássicos de prevenção e períodos pré-patogênico/patogênico, descritos conceitualmente nesta apostila; referência bibliográfica primária exata de edição/página não localizada nesta etapa, portanto **não foi inventada**.
+
+## 31. Controle editorial de produção
+
+- [x] Antes da produção, consulta a acervo, duplicações curriculares e benchmarks parciais do Drive.
+- [x] Curso histórico pré-patogênico/patogênico com oportunidades de intervenção e limitações.
+- [x] Prevenção primordial, primária, secundária, terciária, quaternária, com exemplos reais e exceções.
+- [x] Diferenciação entre nível de atenção (RAS/APS) e nível de prevenção.
+- [x] Distinção entre prevenção secundária do modelo histórico e prevenção secundária cardiovascular de eventos.
+- [x] Dimensão de promoção da saúde, Carta de Ottawa, PNPS e PNAB, sem reduzi-la a aconselhamento individual.
+- [x] Aplicações em infectologia, DCNT, saúde mental, gestação, infância, trabalho, oncologia, desastres e reabilitação.
+- [x] Oito casos integradores com apresentação, raciocínio, investigação e conduta.
+- [x] Doze questões originais A–D com gabarito e comentários por alternativa.
+- [ ] Revisão científica independente de conceitos, exceções, exemplos e aplicação de políticas brasileiras atualizadas.
+- [ ] Revisão semântica para evitar redundância e certificar caracteres instrucionais realmente únicos.
+- [ ] Candidatas de figuras e fluxos didáticos autorais/licenciados, revisão e aprovação via Admin antes de qualquer inserção.
+- [ ] JSON/HTML preliminar e execução dos auditores oficiais e inspeção desktop/PWA.
+- [ ] **RASCUNHO — NÃO PUBLICAR/FAZER MERGE/DEPLOY.**
