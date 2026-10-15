@@ -780,13 +780,73 @@ Há ameaça imediata não controlada ou choque não responsivo? **Sim** → imag
 Identificar necessidade de cirurgia/intervenção/UTI não disponível → acionar regulação e equipe receptora cedo → iniciar medidas salvadoras compatíveis com capacidade local e evitar exames sem impacto → preparar via aérea/perfusão, aquecimento, analgesia, dispositivos e sangue quando aplicável → passagem estruturada MIST + tendência + horários → transportar com recursos necessários → confirmar entrega e continuidade dos cuidados.
 
 
-## Referências
 
-1. American College of Surgeons (ACS). *ATLS 11* (lançamento 2025). https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
-2. ACS. *Trauma Care Gets Major Upgrade with Launch of ATLS 11*, 16/09/2025. https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/
-3. ACS. *About Advanced Trauma Life Support*. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/about/
-4. ACS. ATLS 11 educational objectives and procedures. https://learning.facs.org/content/atls-11-traditional-25-day-course-english-non-cme
+## 26. Matriz de cobertura e autossuficiência
 
-## Pendências para homologação
+| Competência de aprendizagem | Capítulos de apoio | Caso ou questão de avaliação | Revisão pendente |
+|---|---|---|---|
+| Reconhecer exsanguinação e priorizar x | 1, 3, 14, 16 | caso 1, Q1 | simulação prática |
+| Interpretar choque compensado | 6, 15, 19 | casos 1/7/10, Q4/Q6 | fisiologia e hemoterapia |
+| Distinguir choque hemorrágico/obstrutivo/neurogênico | 5–7, 15, 18–20 | casos 2/4/9, Q2/Q11 | comparar com aula 41 |
+| Planejar via aérea e proteger cervical | 4, 17 | caso 6, Q9 | equipe de anestesia/APH |
+| Reconhecer pneumotórax hipertensivo sem TC | 5, 18 | caso 2, Q2 | procedimentos institucionais |
+| Buscar hemorragia interna | 6, 15, 19, 22 | casos 3/5/10, Q3/Q5 | imagens de eFAST |
+| Interpretar resultado negativo de FAST | 9, 22 | caso 5, Q3 | janela/limitação |
+| Decidir TC versus intervenção | 9, 22, 25 | caso 3, Q5 | simulação da sala |
+| Aplicar binder corretamente | 6, 19 | caso 5, Q8 | diagrama anatômico |
+| Interpretar TXA e ressuscitação hemostática | 6, 15, 19 | caso 10, Q7/Q13 | revisão hemoterapia |
+| Registrar Glasgow, pupilas e fatores confundidores | 7, 20 | caso 4, Q9 | validar componentes |
+| Prevenir lesão cerebral secundária | 7, 20 | caso 4, Q11 | remissão à aula 52 |
+| Adaptar urgência pediátrica | 10, 24 | caso 7, Q10 | revisão pediátrica |
+| Adaptar urgência gestacional | 10, 24 | caso 8, Q12 | revisão obstétrica |
+| Expor mantendo calor | 8, 15, 21 | caso 10, Q14 | protocolos de aquecimento |
+| Comunicar e transferir com segurança | 2, 14, 23, 25 | fluxo F | prática em equipe |
 
-Expandir ressuscitação, acesso à via aérea, contraindicações, pelve/torácico/abdominal/TCE e indicações de transferência; fontes nacionais de APH/SAMU e sociedades; parametrizações e doses vigentes em protocolo; 60 mil caracteres úteis sem repetição; quatro casos ampliados, banco de questões refinado, imagens clínicas aprovadas, matriz de âncoras e teste prático de autossuficiência. Conferir que sigla xABCDE é consistente no site. **Não publicar ainda.**
+**Delimitação de escopo:** a aula 41 aprofunda fisiologia geral do choque; a 52 aprofunda TC/TCE e manejo neurológico; a 57 aprofunda lesões e procedimentos torácicos; a 42 aborda técnica operatória. **Esta aula 47 deve ser autossuficiente para reconhecer, priorizar e estabilizar/encaminhar o politraumatizado**, mas não repetir integralmente o tratado de cada lesão regional.
+
+## 27. Recursos visuais — plano e curadoria sem publicação
+
+O objetivo é usar imagens **como ferramenta diagnóstica**, não como ornamento. Ainda não foram feitos downloads ou envios à aprovação do Admin.
+
+| Nº | Visual a produzir/selecionar | Função didática | Estado |
+|---:|---|---|---|
+| 1 | diagrama autoral da sequência xABCDE | prioridade e reavaliação | original a criar |
+| 2 | mapa anatômico das fontes ocultas de sangramento | reconhecer cavidades e ossos longos | original a criar |
+| 3 | curva autoral choque compensado/descompensado | perfusão com PA preservada | original a criar |
+| 4 | ultrassom real de líquido em Morrison | FAST positivo e limitações | fonte/licença a verificar |
+| 5 | ultrassom real de líquido esplenorrenal | diferenciar hemoperitônio | fonte/licença a verificar |
+| 6 | vídeo real de ausência de lung sliding | sinal possível de pneumotórax, não específico isoladamente | candidato CC BY 2.0 |
+| 7 | vídeo real de lung point | interpretação da transição deslizamento/sem deslizamento | candidato CC BY 2.0 |
+| 8 | RX de pneumotórax hipertensivo | interpretação torácica em imagem | candidato visual, licença não confirmada |
+| 9 | desenho original binder sobre grandes trocânteres | contrastar posição correta e alta demais | original a criar |
+| 10 | RX/TC real de fratura pélvica | reconhecer lesão óssea/risco de sangramento | fonte/licença a verificar |
+| 11 | diagrama original de tamponamento | choque obstrutivo e retorno venoso | original a criar |
+| 12 | quadro original de Glasgow E/V/M | exame neurológico estruturado | original a criar |
+| 13 | fluxograma autoral "TC ou hemostasia?" | decisão por estabilidade | original a criar |
+| 14 | quadro original de coagulopatia/hipotermia/hipocalcemia | prevenir dano da ressuscitação | original a criar |
+
+**Candidatos com licença publicada e proveniência a conferir individualmente:**
+- *Lung point* — Gillman e colaboradores, 2009, vídeo disponível em https://commons.wikimedia.org/wiki/File:Clinician-performed-resuscitative-ultrasonography-for-the-initial-evaluation-and-resuscitation-of-1757-7241-17-34-S7.ogv — página informa **CC BY 2.0**, exige atribuição e revisão antes de extrair fotogramas.
+- *Absent Lung Sliding* — mesmos autores/pesquisa, vídeo em https://commons.wikimedia.org/wiki/File:Clinician-performed-resuscitative-ultrasonography-for-the-initial-evaluation-and-resuscitation-of-1757-7241-17-34-S4.ogv — **CC BY 2.0**, mas ausência de sliding não prova pneumotórax sozinha.
+
+A radiografia de tensão identificada em repositório radiológico vinculado a Radiopaedia **não tem licença comercial comprovada** e não foi inserida. Da mesma forma, a imagem de redes sociais sobre binder não foi reutilizada: será feito diagrama autoral da LURIA. **Não copiar fotografias, tabelas, fluxogramas ou ilustrações do manual ATLS ou dos PDFs de Drive**. Só inserir imagens aprovadas via Admin, com licença/crédito, WebP, legenda e revisão médica.
+
+## 28. Referências e cautelas de aplicação
+
+1. **American College of Surgeons (ACS).** *ATLS 11*, edição lançada em 2025; fundamenta reorganização para xABCDE. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
+2. **ACS.** *Trauma Care Gets Major Upgrade with Launch of ATLS 11*, 16/09/2025; fonte institucional que confirma o x antes de ABCDE. https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/
+3. **Ministério da Saúde — SAMU 192.** *Protocolo de Suporte Avançado de Vida*, arquivo institucional listado em página atualizada em 23/04/2024; o documento possui protocolos de revisão anterior, exigindo checagem local antes de replicar dose e procedimento. https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-avancado-de-vida-1.pdf/view
+4. **Ministério da Saúde — SAMU 192.** *Protocolo de Suporte Básico de Vida*. https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-basico-de-vida-1-2.pdf/view
+5. **Rossaint R et al.** *European guideline on management of major bleeding and coagulopathy following trauma: sixth edition.* *Critical Care*, 2023;27:80. DOI 10.1186/s13054-023-04327-7. https://link.springer.com/article/10.1186/s13054-023-04327-7
+6. **NICE.** NG39 *Major trauma: assessment and initial management*, publicada em 2016; recomendações consultadas em 2026. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations
+7. **Gillman LM et al.** *Clinician performed resuscitative ultrasonography for the initial evaluation and resuscitation of trauma.* *Scand J Trauma Resusc Emerg Med*. 2009;17:34. DOI 10.1186/1757-7241-17-34; relacionado aos vídeos de ultrassom pleural com licença CC BY 2.0 nas páginas identificadas. https://doi.org/10.1186/1757-7241-17-34
+
+**Divergências/limites:** o ATLS 11 é referência de organização, não autorização para reproduzir figuras ou tabelas protegidas; seu conteúdo não deve ser incorporado literalmente a plataforma comercial. A NICE tem recomendações de procedimento e ambiente especializado que precisam de adaptação à habilidade da equipe e sistema brasileiro. A diretriz europeia orienta TXA em hemorragia significativa até três horas após lesão e estabilização pélvica, não TXA indiscriminado. O portal do SAMU serve como ponto de partida brasileiro, mas protocolos estaduais/institucionais, indicação e treinamento devem ser conferidos.
+
+## 29. Parecer editorial e pendências de homologação
+
+**Conteúdo desenvolvido:** prioridades e equipe; fisiologia, sangramento visível/oculto e coagulopatia; via aérea e coluna; emergências torácicas; perfusão e controle hemorrágico; neurologia; imagem pelo risco; exame secundário; transferência; populações especiais; **10 casos clínicos completos** e **14 questões originais com quatro alternativas comentadas e mini-revisão**; seis fluxos clínicos e tabelas.
+
+**Ainda exige:** (1) revisão clínica/hemoterápica/anestésica especializada de doses e manobras; (2) curadoria/licenças e aprovação Admin das figuras; (3) HTML LURIA, índice, navegação, grifo, casos/questões e inspeção desktop/PWA; (4) teste humano de autossuficiência respondendo às 14 questões apenas pelo manuscrito; (5) auditoria de repetição com as aulas 41, 42, 52 e 57; (6) validação final das referências.
+
+**Estado: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** Extensão bruta não é certificação de qualidade médica. Nenhum merge, deploy ou alteração de apostila pública foi realizado.
