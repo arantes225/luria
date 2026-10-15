@@ -160,19 +160,6 @@ D) Manter corticoide sistêmico indefinidamente após qualquer crise.
 
 Prioridade a curvas fluxo-volume pré/pós-broncodilatador e demonstração de manobra adequada, representação original de fisiopatologia da obstrução, desenhos próprios de interpretação de variabilidade de PFE, comparação original de técnicas inalatórias, fluxograma original de conduta em crise e imagem radiológica real apenas quando decisiva para diferenciais. **Não incluir imagem de terceiros no HTML sem autorização comercial, confirmação da fonte e aprovação no Admin.**
 
-## Referências e evidência de verificação
-
-1. Ministério da Saúde. PCDT da Asma, atualizado 02/04/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
-2. GINA. *2026 GINA Summary Guide*, consulta a página oficial em 14/10/2026. https://ginasthma.org/2026-gina-summary-guide/
-3. GINA. *2026 Strategy Report*, acesso orientado pela página oficial, com restrições de reprodução. https://ginasthma.org/
-4. Sociedade Brasileira de Pneumologia e Tisiologia. Portal de consensos e diretrizes — Asma. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/
-5. BTS/NICE/SIGN. Asthma diagnosis, monitoring and chronic management (NG245), recomendações públicas. https://www.nice.org.uk/guidance/ng245/chapter/recommendations
-
-## Portões ainda abertos
-
-Completar fisiopatologia e farmacologia, critérios de infância, asma ocupacional/grave e tabelas de dose com comprovação no PCDT 2026; expandir estudo dos efeitos adversos e algoritmos SUS; incluir imagem licenciada via fila; desenvolver textos suficientes para ~60 mil caracteres úteis; revisar casos e questões contra todos os trechos do capítulo; rodar scripts de auditoria e inspeção HTML/PWA. **Não publicar, não contar como apostila finalizada.**
-
-
 ## 13. Fisiopatologia integrada: da lesão epitelial ao aprisionamento de ar
 
 ### 13.1 A inflamação começa na interface com o ambiente
@@ -727,86 +714,21 @@ D) Prescrever broncodilatador de longa ação sozinho.
 
 **Gabarito: B.** **A — incorreta:** faltam etapas fundamentais de otimização. **B — correta:** tratamento não administrado corretamente não testa eficácia do fármaco; risco agudo deve ser manejado enquanto se corrige o processo. **C — incorreta:** retirada pode piorar doença. **D — incorreta:** LABA isolado não é esquema seguro para asma. **Mini-revisão:** técnica inalatória precisa ser demonstrada, não apenas perguntada.
 
-## 27. Registro editorial de reconciliação da atualização 2026
+## Referências e evidência de verificação
 
-Na revisão interna, consolidaram-se explicações que se repetiam sobre alívio anti-inflamatório, MART, exacerbação e técnica inalatória, preservando os capítulos 19–26 já existentes, os casos e as questões. Em vez de apresentar duas sequências contraditórias de “capítulos 19–23”, a redação complementar específica de pré-escolares foi incorporada à subseção 20.4. Essa deduplicação evita falsa impressão de que existam dois algoritmos terapêuticos oficiais.
+1. Ministério da Saúde. PCDT da Asma, atualizado 02/04/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
+2. GINA. *2026 GINA Summary Guide*, consulta a página oficial em 14/10/2026. https://ginasthma.org/2026-gina-summary-guide/
+3. GINA. *2026 Strategy Report*, acesso orientado pela página oficial, com restrições de reprodução. https://ginasthma.org/
+4. Sociedade Brasileira de Pneumologia e Tisiologia. Portal de consensos e diretrizes — Asma. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/
+5. BTS/NICE/SIGN. Asthma diagnosis, monitoring and chronic management (NG245), recomendações públicas. https://www.nice.org.uk/guidance/ng245/chapter/recommendations
 
-**Conferência normativa necessária antes de homologar:** a página oficial do Ministério da Saúde apresenta PCDT de Asma atualizado em abril de 2026 (Portaria Conjunta SAES/SCTIE nº 43, de 24/03/2026). A GINA publicou estratégia integral em maio e guia resumido em julho de 2026; a atualização da GINA para crianças de 6–11 anos não implica incorporação imediata de toda apresentação farmacêutica no SUS. Conferir diferenças de cálculo de resposta broncodilatadora, idade, dose medida versus administrada, limite diário de CI-formoterol e elegibilidade de biológicos diretamente nas respectivas fontes. Não copiar figuras ou tabelas da GINA para plataforma comercial sem autorização; diagramas da LURIA devem ser próprios.
+## Pendências antes da homologação
 
-**Estado:** manuscrito extenso, com questões/casos para revisão e validação. Não publicar nem aprovar uso clínico de uma tabela de doses sem auditoria farmacológica e checagem de registro/disponibilidade.
+1. Revisão pneumológica e farmacológica especializada do PCDT Asma (Portaria Conjunta SAES/SCTIE nº 43/2026), incluindo doses máximas diárias de CI-formoterol, diferenças entre dose medida e liberada, ajustes por dispositivo/idade, critérios de prescrição do SUS e imunobiológicos.
+2. Conferência ponto a ponto dos critérios espirométricos pediátricos conforme PCDT 2026 e GINA 2026, sem fundir porcentagem relativa ao basal e ao previsto.
+3. Revisão de autossuficiência clínica: avaliar casos, quatorze questões de residência, possíveis inconsistências nas alternativas e exemplos numéricos, e lacunas no ensino de crise grave.
+4. Curadoria e aprovação via Admin de imagens e diagramas úteis; a documentação GINA tem restrições expressas de reprodução e de uso comercial, e suas figuras não serão copiadas.
+5. Conversão para HTML no padrão LURIA com índice, tabelas, casos/questões expansíveis, ferramentas de estudo e testes desktop/PWA. Não colocar link no catálogo público antes de homologar.
+6. Verificação de interoperabilidade com flashcards, simulador e bulário e de duplicação temática com DPOC (aula 51) e temas pediátricos.
 
-
-## 27. Matriz de cobertura e revisão rápida
-
-### 27.1 Dez conceitos que precisam ser dominados
-
-1. História de sintomas variáveis sugere asma, mas a confirmação objetiva da variabilidade do fluxo é desejável quando factível.
-2. Espirometria normal fora da crise ou sob CI não exclui asma.
-3. Interpretação da resposta broncodilatadora deve considerar faixa etária e o denominador utilizado pela diretriz.
-4. SABA alivia broncoconstrição, enquanto o componente contendo CI reduz risco de exacerbações.
-5. AIR é alívio anti-inflamatório; MART envolve a mesma combinação validada de CI-formoterol em manutenção e alívio.
-6. Não utilizar qualquer CI-LABA como resgate, nem LABA isolado no tratamento de asma.
-7. Controle sintomático atual é diferente de risco futuro; crises prévias, OCS e baixo VEF1 continuam relevantes.
-8. Tórax silencioso com sonolência sinaliza ameaça à vida e não melhora clínica.
-9. Asma difícil de tratar não é necessariamente asma grave intrínseca: técnica, acesso e adesão são decisivos.
-10. Imunobiológicos têm critérios específicos de fenótipo, idade, exacerbação e elegibilidade no SUS.
-
-### 27.2 Cobertura curricular e prova de autossuficiência preliminar
-
-| Pergunta clínica | Seções essenciais | Caso/questão representativa | Pendência |
-|---|---|---|---|
-| Como a inflamação causa broncoespasmo e hiperinsuflação? | 1–2, 13–14 | caso 7, Q10 | esquema original V/Q e fluxo |
-| Como confirmar o diagnóstico? | 3–4, 15 | casos 1/5, Q1/Q2/Q7 | curva espirométrica revisada |
-| Como interpretar resposta pediátrica PCDT x GINA? | 15 e 20 | caso 5, Q7/Q9 | dupla checagem pneumopediátrica |
-| O que diferencia asma de DPOC, cardiopatia e laringe? | 4, 16 | casos 4/8, Q13 | revisão de exames |
-| Como avaliar controle e risco? | 5, 17 | casos 2/6, Q5/Q14 | escalas validadas |
-| Quando e como usar AIR/MART? | 6, 18–20 | caso 6, Q3/Q8 | checar produto e idade |
-| Como conduzir exacerbação grave? | 7, 21 | casos 3/7, Q4/Q10/Q11 | protocolo local e doses |
-| Como reconhecer e tratar asma grave? | 2, 5, 22 | caso 10, Q12 | critérios de elegibilidade |
-| Como adaptar à infância e gestação? | 8, 20, 24 | caso 5, Q9 | revisão específica |
-| Como melhorar técnica e seguimento? | 6, 23 | casos 2/6, Q6/Q14 | treinamento com dispositivo |
-
-O manuscrito tem dez casos, sendo quatro vinhetas originais curtas na seção 10 e seis casos completos na seção 25. Os seis itens originais foram aprofundados na seção 11 e outros oito foram adicionados na seção 26. A revisão clínica ainda deve uniformizar as quatro vinhetas introdutórias e exigir que um leitor responda às questões somente pelo texto.
-
-## 28. Plano visual — alvos didáticos ainda não aprovados
-
-| Alvo | Recurso didático | Local |
-|---|---|---|
-| 1 | Curva fluxo-volume original com antes e depois de broncodilatador | 15 |
-| 2 | Gráfico original demonstrando porcentagem do basal x previsto na criança | 15 |
-| 3 | PFE seriado por 14 dias com dados simulados e cálculo | 15 |
-| 4 | Corte transversal brônquico original: edema, músculo e muco | 13 |
-| 5 | Esquema original de aprisionamento aéreo e auto-PEEP | 13/21 |
-| 6 | Demonstração autorizada de pMDI, espaçador e máscara | 23 |
-| 7 | Demonstração autorizada de DPI e erros de execução | 23 |
-| 8 | Fluxo autoral AIR, MART e tratamento alternativo | 19 |
-| 9 | Esquema clínico de exacerbação grave e escalonamento | 21 |
-| 10 | Mapa farmacológico original de CI, SABA, LABA, LAMA e imunobiológicos | 18/22 |
-| 11 | Exemplo radiológico devidamente licenciado de pneumotórax no diferencial | 16 |
-| 12 | Fluxo de alta e prevenção de recaída | 21/23 |
-
-São especificações editoriais, não imagens já produzidas nem candidatas com licença verificada. GINA declara direitos autorais e necessidade de autorização para usos comerciais: não copiar suas figuras ou tabelas. Os PDFs comparativos do Drive tampouco autorizam reprodução comercial. Nenhuma imagem foi integrada, enviada ao Admin ou tratada como aprovada.
-
-## 29. Referências e divergências verificadas em 14/10/2026
-
-1. **Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas de Asma. Portaria Conjunta SAES/SCTIE nº 43 de 24/03/2026, com versão disponibilizada no portal e reedição/correção do critério de asma grave. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
-2. **GINA.** Summary Guide for Asthma Management and Prevention 2026, julho de 2026. https://ginasthma.org/2026-gina-summary-guide/
-3. **GINA.** Global Strategy for Asthma Management and Prevention, 2026. https://ginasthma.org/2026-gina-strategy-report/
-4. **SBPT.** Consensos e diretrizes, incluindo Recomendações para manejo da asma (2020) e asma grave (2021). https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/
-5. **BTS/NICE/SIGN.** NG245: Asthma diagnosis, monitoring and chronic asthma management. https://www.nice.org.uk/guidance/ng245/chapter/recommendations
-
-**Diferença A — broncodilatação na criança:** o PCDT 2026 expressa resposta de VEF1 a partir de 12% do basal; a GINA 2026 utiliza 12% do valor previsto para idade pediátrica. O exemplo numérico da seção 15 ilustra divergência sem escolher arbitrariamente um resultado.
-
-**Diferença B — estratégia em 6–11 anos:** a GINA 2026 amplia opções de alívio com CI e considera CI-formoterol AIR em situações específicas. O PCDT brasileiro publicado anteriormente incorpora recomendações e disponibilidade regulatória próprias. Antes de prescrever no SUS, verificar dispositivo, dose, aprovação e fornecimento.
-
-**Diferença C — asma grave:** o PCDT de 2026 documenta reedição para corrigir definição/intensidade de CI; critérios de imunobiológicos exigem conferência integral por agente e não podem ser extrapolados de biomarcadores isolados.
-
-**Diferença D — prescrições AIR/MART:** o limite diário total se refere a apresentação e dose específicas de budesonida-formoterol descritas no PCDT. Não usar o limite de adultos indiscriminadamente em crianças ou em produtos diferentes.
-
-## 30. Auditoria editorial pendente
-
-**Concluído nesta etapa:** expansão com fisiologia, fenótipo, testes diagnósticos e cálculos, avaliação de controle e risco, tratamento adulto e pediátrico com diferença GINA/PCDT 2026, exacerbação por gravidade, asma grave e biológicos, farmacologia, técnica inalatória, populações especiais; seis casos aprofundados adicionais e oito questões adicionais, além da revisão completa das seis questões iniciais.
-
-**Ainda não concluído:** checagem integral por pneumologista/pediatra das doses e nuances; avaliação humana da qualidade dos casos e questões; validação de acesso e elegibilidade de fármacos no SUS; produção de diagramas originais e imagens licenciadas com revisão pelo Admin; conversão para HTML e teste no navegador real, modos de tema e PWA; revisão de repetições e de autossuficiência com aluno-revisor.
-
-**Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** Manter branch isolada, sem alterar catálogo público, sem homologação, merge nem deploy.
+**Estado correto:** manuscrito extenso e cientificamente orientado por fontes 2026, porém **TEXTO_APROFUNDADO_REVISAO_PENDENTE**. Nenhuma publicação, imagem não licenciada ou homologação foi autorizada.
