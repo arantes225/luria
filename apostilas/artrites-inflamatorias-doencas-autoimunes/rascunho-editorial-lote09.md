@@ -613,10 +613,660 @@ As **normas brasileiras do SUS** (PCDT) são prioritárias para elegibilidade e 
 - [x] LES/nefrite/SAF, SpA/PsA, cristais, Sjögren, esclerose sistêmica, miosites e vasculites.
 - [x] Monitorização, farmacovigilância, gravidez e integração APS.
 - [x] Algoritmos, tabela de síntese e referências verificáveis.
-- [ ] Casos clínicos autorais aprofundados, com sequência e seguimento.
-- [ ] Questões autorais comentadas alternativa por alternativa.
-- [ ] Dez ou mais figuras didáticas candidatas e análise de licenças.
+- [x] 12 casos clínicos aprofundados, com sequência e seguimento (seção 31).
+- [x] 18 questões autorais comentadas por alternativa (seção 32).
+- [x] 18 figuras candidatas planejadas; aprovação de licenças ainda pendente (seção 33).
 - [ ] Revisão independente das doses e da sequência farmacológica pelo PCDT 2026 e reumatologista.
 - [ ] Validação científica, editorial e revisão de links.
 - [ ] Conversão para HTML/content.json nativo e inspeção no PWA.
 - [ ] Publicação apenas após aprovação dos itens anteriores.
+
+
+---
+
+## 31. Casos clínicos comentados — do diagnóstico ao seguimento
+
+Os casos são inteiramente **fictícios e autorais** para ensino de reumatologia. Em cada situação, diferenciar hipótese provável de diagnóstico confirmado e aplicar a gravidade e o contexto do SUS.
+
+### Caso 1 — Poliartrite simétrica e anti-CCP elevado
+
+**Apresentação:** Mulher de 43 anos, tabagista, tem oito semanas de edema e dor bilateral em punhos e MCP/PIP, com rigidez matinal de cerca de 100 minutos e dificuldade para abrir frascos. Exame: sinovite em seis pequenas articulações. Anti-CCP alto e FR positivo, PCR elevada; RX sem erosões.
+
+**Hipótese principal e diferenciais:** Artrite reumatoide de início recente. Diferenciais: artrite viral, LES, artropatia psoriásica e outras causas de poliartrite.
+
+**Raciocínio diagnóstico:** É uma sinovite objetiva persistente, em padrão de pequenas articulações. Os critérios ACR/EULAR 2010 favorecem classificação (4–10 pequenas articulações = 3; sorologia alta = 3; PCR elevada = 1; ≥6 semanas = 1; total 8), desde que não haja outra explicação. RX normal não exclui AR inicial.
+
+**Exames e interpretação:** Hemograma, função renal/hepática, urina, avaliação de hepatites e TB conforme terapia planejada, radiografia de base e eventual US se dúvidas; o exame não precisa esperar erosões.
+
+**Conduta inicial:** Encaminhamento célere para reumatologia, iniciar estratégia com MMCD conforme PCDT 2026, com metotrexato semanal quando elegível e educação sobre folato/monitorização. Mensurar atividade e buscar remissão; abandono do tabagismo e vacinação.
+
+**Seguimento:** Reavaliar sinovite, função, efeitos e exames de monitorização em prazos adequados; escalonar se não alcançar alvo.
+
+**Por que este caso importa:** O diagnóstico precoce evita dano erosivo; a presença de anti-CCP não substitui examinar sinovite e considerar infecção/alternativas.
+
+### Caso 2 — Artrite aguda do joelho com gota e risco infeccioso
+
+**Apresentação:** Homem de 67 anos com diabetes, DRC e febre de 38,4 °C apresenta joelho direito quente, derrame volumoso e incapacidade de apoiar há 24 horas. Uricemia de 9,1 mg/dL. Teve ataques antigos de podagra, mas nunca havia apresentado quadro tão prolongado.
+
+**Hipótese principal e diferenciais:** Artrite séptica até exclusão, com gota no diferencial ou como condição coexistente.
+
+**Raciocínio diagnóstico:** Hiperuricemia e podagra prévia aumentam a plausibilidade de gota, mas febre, diabetes e monoartrite grave tornam a infecção urgente. Cristais podem coexistir com cultura bacteriana positiva. O valor do urato no sangue não diagnostica etiologia do derrame.
+
+**Exames e interpretação:** Artrocentese urgente para Gram/cultura, contagem e diferencial, pesquisa de cristais; hemoculturas se indicadas, hemograma, função renal e avaliação de sepse. Imagem não deve atrasar punção/drenagem.
+
+**Conduta inicial:** Se estável, colher líquido antes de antibiótico quando possível, sem atrasar indevidamente; se séptico/instável, antibióticos sem demora após coletas possíveis, avaliação para lavagem articular. Não aplicar corticoide intra-articular antes de excluir infecção.
+
+**Seguimento:** Monitorar dor, temperatura, culturas, função e necessidade de procedimentos adicionais; quando seguro, discutir tratamento crônico de gota.
+
+**Por que este caso importa:** É um dos erros que mais causam dano: chamar toda articulação dolorosa com ácido úrico alto de gota e perder artrite séptica.
+
+### Caso 3 — Lúpus com proteinúria e lesão renal silenciosa
+
+**Apresentação:** Mulher de 25 anos com fotossensibilidade, artrite de mãos, alopecia e úlceras orais apresenta FAN 1:640, anti-dsDNA reagente e C3/C4 reduzidos. Não refere sintomas urinários. Em rastreio, EAS mostra hematúria dismórfica e relação proteína/creatinina urinária de 0,9 g/g; creatinina em elevação discreta.
+
+**Hipótese principal e diferenciais:** LES com suspeita de nefrite lúpica ativa; outras glomerulopatias devem ser consideradas.
+
+**Raciocínio diagnóstico:** A ausência de edema e de queixa urinária não exclui doença renal. Complemento consumido e anti-dsDNA apoiam atividade, mas a decisão é guiada por sedimento e proteinúria/creatinina. A classificação histológica pode alterar radicalmente o esquema imunossupressor.
+
+**Exames e interpretação:** Repetir/confirmar proteinúria e sedimento, função renal seriada, pressão, albumina e outras sorologias; nefrologia e biópsia renal quando indicada e segura.
+
+**Conduta inicial:** Encaminhar com prioridade a reumatologia e nefrologia, controlar pressão/proteinúria e tratar por classe/gravidade de nefrite conforme protocolos. Manter hidroxicloroquina quando elegível e evitar corticoide como único plano de longo prazo.
+
+**Seguimento:** Monitorar proteinúria, eGFR, sedimento, C3/C4, pressão, toxicidades e adesão; discutir prevenção de gravidez com imunossupressores teratogênicos.
+
+**Por que este caso importa:** O achado em exame de urina pode ser a manifestação mais importante da consulta.
+
+### Caso 4 — Lombalgia noturna de início aos 23 anos
+
+**Apresentação:** Homem de 29 anos tem seis anos de dor lombar de início insidioso, rigidez matinal prolongada, melhora ao fazer exercícios, piora ao repouso e desperta na segunda metade da noite. Teve uveíte anterior unilateral no ano passado. RX de sacroilíacas é inconclusivo; HLA-B27 positivo.
+
+**Hipótese principal e diferenciais:** Espondiloartrite axial, potencialmente não radiográfica; diferenciais mecânicos, infecção e causas metabólicas.
+
+**Raciocínio diagnóstico:** Início jovem, dor inflamatória e uveíte aumentam probabilidade pré-teste. HLA-B27 positivo não fecha o diagnóstico. Uma radiografia inicial normal ou duvidosa não descarta espondiloartrite axial.
+
+**Exames e interpretação:** Exame de mobilidade/enteses, VHS/PCR, revisão oftalmológica, RM sacroilíaca se indicada, e investigação de psoríase/IBD. Interpretar edema ósseo na RM com cuidado, inclusive fatores mecânicos.
+
+**Conduta inicial:** Exercício orientado/fisioterapia, AINE se não contraindicado, encaminhar reumatologia para avaliação de atividade e necessidade de biológico conforme PCDT 2025. Seleção da droga deve considerar histórico de uveíte e doença intestinal.
+
+**Seguimento:** Monitorar função, mobilidade, atividade e eventos oculares; não usar metotrexato como tratamento padrão de doença axial pura.
+
+**Por que este caso importa:** HLA-B27 é uma pista dentro do fenótipo, não uma confirmação isolada.
+
+### Caso 5 — Dedo em salsicha e unhas com pitting
+
+**Apresentação:** Mulher de 39 anos refere dor/edema no quarto dedo inteiro, tendão de Aquiles doloroso, inflamação em DIP e placas discretas no couro cabeludo. Unhas têm pitting e onicólise. FR negativo; não há sinovite simétrica típica de MCP.
+
+**Hipótese principal e diferenciais:** Artrite psoriásica com dactilite e entesite; diferencial com outras espondiloartrites, infecção e gota.
+
+**Raciocínio diagnóstico:** Dactilite, lesões de unha, psoríase e DIP são mais sugestivos de PsA que AR clássica. CASPAR pode ajudar na classificação quando existe doença musculoesquelética inflamatória, mas não deve substituir exclusão de alternativas.
+
+**Exames e interpretação:** Exame de pele, unhas, articulações e enteses, função renal/hepática, imagem/US conforme suspeita e avaliação de uveíte/IBD; investigar infecção focal se monoartrite grave.
+
+**Conduta inicial:** Organizar tratamento por domínio e gravidade, com reumatologia/dermatologia, fisioterapia e MMCD conforme PCDT PsA 2026; evitar anti-IL-17 como escolha automática diante de IBD ativa.
+
+**Seguimento:** Acompanhar articulações, enteses, pele, função, saúde cardiovascular e resposta sistêmica, usando metas compartilhadas.
+
+**Por que este caso importa:** A pele pode ter psoríase quase invisível; observar couro cabeludo e unhas muda o diagnóstico.
+
+### Caso 6 — Fenômeno de Raynaud e nova hipertensão grave
+
+**Apresentação:** Mulher de 48 anos com Raynaud, esclerodactilia e anticorpo anti-RNA polimerase III apresenta cefaleia, PA de 198/112 mmHg, creatinina que duplicou em poucos dias e sinais de anemia hemolítica microangiopática. Recebeu prednisona em dose alta por uma semana para artralgia.
+
+**Hipótese principal e diferenciais:** Crise renal esclerodérmica, com injúria renal aguda e microangiopatia.
+
+**Raciocínio diagnóstico:** A associação entre esclerose sistêmica, hipertensão nova, deterioração renal rápida e dose alta de corticoide é alerta maior. Diferenciais: glomerulonefrite por vasculite, microangiopatia trombótica, emergência hipertensiva por outras causas e nefrotoxicidade.
+
+**Exames e interpretação:** Repetir PA e monitorizar, hemograma/esfregaço, hemólise, função renal, eletrólitos, urina, ECG e avaliação de órgãos; nefrologia urgente. Investigar outras etiologias conforme evolução.
+
+**Conduta inicial:** Internação em serviço capaz de monitorar órgãos, início de inibidor da ECA e titulação conforme protocolo especializado, manejo de insuficiência renal e evitar aumento injustificado de glicocorticoide. Controle da PA em ritmo adequado à emergência.
+
+**Seguimento:** Monitorar PA, creatinina e potássio, necessidade de diálise e recuperação renal prolongada; acompanhamento estreito.
+
+**Por que este caso importa:** É emergência reumatológica que pode ser precipitada/agravada por uso inadequado de altas doses de corticoide.
+
+### Caso 7 — Cefaleia temporal e amaurose transitória
+
+**Apresentação:** Mulher de 73 anos relata nova dor temporal esquerda, sensibilidade de couro cabeludo, dor na mandíbula ao mastigar e episódio de escurecimento visual de cinco minutos. VHS 84 mm/h e PCR elevada.
+
+**Hipótese principal e diferenciais:** Arterite de células gigantes com isquemia ocular iminente.
+
+**Raciocínio diagnóstico:** Maior de 50 anos com cefaleia nova, claudicação mandibular e amaurose transitória é urgência de preservação visual. Uma biópsia de artéria temporal ou ultrassonografia podem confirmar, mas não devem atrasar tratamento em suspeita forte. Considerar causas oftalmológicas/vasculares alternativas simultaneamente.
+
+**Exames e interpretação:** Exame ocular/neurológico urgente, VHS/PCR, hemograma, US da artéria temporal por equipe treinada ou biópsia conforme fluxo, avaliação de grandes vasos se indicada.
+
+**Conduta inicial:** Iniciar glicocorticoide prontamente sob avaliação especializada; perda visual ou ameaça importante pode exigir via/dose distinta. Proteção óssea e investigação de eventos adversos após fase aguda.
+
+**Seguimento:** Revisão visual, sintomas, inflamação, complicações de esteroide e recidivas.
+
+**Por que este caso importa:** Salvar a visão tem prioridade sobre aguardar prova histológica definitiva.
+
+### Caso 8 — Fraqueza proximal, disfagia e sinal de Gottron
+
+**Apresentação:** Homem de 56 anos apresenta dois meses de dificuldade progressiva para subir escadas, levantar da cadeira e pentear cabelos. Há pápulas violáceas sobre MCP/PIP, edema palpebral arroxeado e disfagia a sólidos. CK 3.800 U/L.
+
+**Hipótese principal e diferenciais:** Dermatomiosite com risco de comprometimento de deglutição e associação com neoplasia; diferenciais incluem miopatias medicamentosa/endócrina/necrosante.
+
+**Raciocínio diagnóstico:** Fraqueza objetiva proximal é diferente de mialgia generalizada. Gottron e heliotropo orientam dermatomiosite; disfagia representa risco de aspiração e complicações respiratórias. Em adultos, rastrear neoplasia conforme idade, risco e subtipo.
+
+**Exames e interpretação:** Força, CK e enzimas, hemograma, função renal, autoanticorpos de miosite segundo indicação, avaliação de deglutição, função pulmonar/TCAR, EMG/RM e biópsia muscular quando necessária.
+
+**Conduta inicial:** Avaliação hospitalar se disfagia importante/aspiração ou fraqueza respiratória; reumatologia/neurologia para imunoterapia dirigida e suporte de deglutição/reabilitação. Revisar medicações e iniciar investigação oncológica apropriada.
+
+**Seguimento:** Acompanhar força, CK, deglutição, pulmão, toxicidade medicamentosa e funcionalidade.
+
+**Por que este caso importa:** A complicação vital pode estar na deglutição/respiração, não na intensidade da dor muscular.
+
+### Caso 9 — Púrpura palpável, hemoptise e creatinina crescente
+
+**Apresentação:** Homem de 44 anos tem episódios de sinusite persistente, obstrução nasal com crostas, púrpura em pernas, hemoptise e creatinina de 1,1 para 3,2 mg/dL em um mês. EAS com hematúria glomerular; anti-PR3 positivo.
+
+**Hipótese principal e diferenciais:** Vasculite ANCA com possível granulomatose com poliangiíte, síndrome pulmão–rim. Anti-MBG e infecção seguem diferenciais.
+
+**Raciocínio diagnóstico:** A tríade de vias aéreas superiores, pulmão e glomerulonefrite é altamente sugestiva, mas ANCA não substitui avaliação de órgão, microbiologia e biópsia em contexto apropriado. Hemorragia alveolar e glomerulonefrite rapidamente progressiva podem ameaçar vida e função renal.
+
+**Exames e interpretação:** ABCDE, oximetria/gasometria, hemograma, TC/raio X, função renal, urina, proteinúria, anti-GBM, complemento e culturas conforme quadro, consulta nefrologia/pneumologia e biópsia renal quando segura.
+
+**Conduta inicial:** Internação urgente, suporte respiratório/renal e imunossupressão de indução conforme gravidade/PCDT AAV 2025 e avaliação de infecção. Terapia não deve aguardar relatório ambulatorial de rotina se órgãos estão ameaçados.
+
+**Seguimento:** Atividade clínica e renal, infecções, toxicidade e manutenção terapêutica após indução.
+
+**Por que este caso importa:** Ensina que marcadores laboratoriais são complementares, mas a gravidade é definida pelo órgão ameaçado.
+
+### Caso 10 — Secura ocular, parotidomegalia e perda de peso
+
+**Apresentação:** Mulher de 60 anos com seis anos de olho seco, necessidade de água para engolir alimentos secos e histórico de muitas cáries apresenta aumento unilateral persistente de parótida, adenopatia cervical e perda de peso não intencional.
+
+**Hipótese principal e diferenciais:** Sjögren com possível complicação linfoproliferativa; diferenciar infecção, obstrução salivar e neoplasia primária.
+
+**Raciocínio diagnóstico:** Secura crônica favorece Sjögren, mas parotidomegalia assimétrica persistente e sintomas sistêmicos são red flags para linfoma ou outra doença. Anti-Ro positivo ajudaria a caracterizar autoimunidade, não justificaria ignorar massa.
+
+**Exames e interpretação:** Exame de boca/olho e gânglios, anti-Ro/SSA e função renal conforme hipótese, testes objetivos de secura, US de glândulas, imagem/biopsia da massa se indicada, avaliação hematológica.
+
+**Conduta inicial:** Proteção ocular/dental, encaminhar reumatologia e especialista de glândula salivar/hematologia para exclusão de neoplasia, com cuidados multidisciplinares.
+
+**Seguimento:** Monitorizar lesão, estado nutricional, boca/olho e outras manifestações sistêmicas.
+
+**Por que este caso importa:** Uma doença autoimune estabelecida não impede segundo diagnóstico, inclusive neoplasia.
+
+### Caso 11 — Artrite aguda após febre por chikungunya
+
+**Apresentação:** Mulher de 51 anos teve febre alta e exantema durante surto local de chikungunya há dois meses; agora apresenta edema doloroso em mãos e tornozelos, rigidez matinal e cansaço. FR fracamente positivo, anti-CCP negativo. PCR discretamente elevada.
+
+**Hipótese principal e diferenciais:** Artrite pós-chikungunya persistente, mas AR inicial e outras causas de sinovite permanecem diferenciais.
+
+**Raciocínio diagnóstico:** Relação epidemiológica e temporal favorece arbovirose; FR baixo pode ser inespecífico. O diagnóstico não depende de chamar todo edema pós-viral de AR nem de descartar AR apenas por anti-CCP negativo. Avaliar características de sinovite persistente e evolução.
+
+**Exames e interpretação:** História de arbovirose e documentos laboratoriais quando disponíveis, exame articular serial, hemograma, função renal/hepática e marcadores dirigidos. Excluir infecção articular focal quando indicado.
+
+**Conduta inicial:** Analgesia/anti-inflamatórios seguros quando cabíveis, reabilitação, controle funcional e avaliação especializada se artrite persiste, piora ou assume padrão de AR. Evitar imunossupressão crônica precoce sem definição.
+
+**Seguimento:** Reavaliar sinovite/funcionalidade em semanas; pesquisar erosões, autoanticorpos relevantes ou novos sinais conforme evolução.
+
+**Por que este caso importa:** No Brasil, o contexto epidemiológico evita sobrediagnóstico de AR em poliartrite pós-viral.
+
+### Caso 12 — Mulher planejando gestação com LES controlado
+
+**Apresentação:** Mulher de 29 anos com LES cutâneo-articular está estável com hidroxicloroquina e micofenolato por histórico renal antigo. Deseja engravidar em três meses. Anti-Ro/SSA positivo, sem tromboses anteriores. Acredita que deve suspender todos os remédios ao engravidar.
+
+**Hipótese principal e diferenciais:** Gestação planejada em LES com risco medicamentoso e obstétrico; necessidade de transição terapêutica e avaliação da nefrite prévia.
+
+**Raciocínio diagnóstico:** Micofenolato é teratogênico e precisa de estratégia de suspensão/substituição e intervalo adequado; hidroxicloroquina frequentemente é mantida em gestação segundo diretrizes, reduzindo flares. Anti-Ro demanda avaliação obstétrica especializada, e doença renal ativa aumenta risco. Positividade isolada de anti-Ro não significa bloqueio fetal inevitável.
+
+**Exames e interpretação:** Atividade clínica, pressão, creatinina, sedimento urinário, proteinúria, C3/C4, dsDNA, pesquisa de anticorpos antifosfolípides conforme histórico, revisão completa de medicamentos e avaliação pré-concepcional.
+
+**Conduta inicial:** Contracepção eficaz até revisão/estabilização em regime compatível; acompanhamento reumatologia/nefrologia/obstetrícia alto risco, cuidado com vacinação, aspirina/heparina apenas quando indicadas e monitoramento fetal apropriado.
+
+**Seguimento:** Acompanhar atividade/órgãos ao longo da gestação e puerpério, riscos neonatais, planejamento de lactação com medicações seguras.
+
+**Por que este caso importa:** Uma gestação segura em LES é planejada com controle da doença e ajuste de fármacos; suspensão total por conta própria pode ser perigosa.
+
+
+## 32. Questões autorais LURIA — 18 questões de prova corrigidas por alternativa
+
+Questões inéditas para estudo. Cada alternativa contém justificativa, seguida de mini-revisão. A pontuação de critérios, doses e regulamentações devem ser revalidadas na revisão médica final da versão publicada.
+
+### Questão 1 — Classificação AR 2010
+
+**Enunciado:** Paciente tem sinovite inequívoca em cinco pequenas articulações por oito semanas, anti-CCP em título alto e PCR elevada, sem explicação alternativa. A pontuação ACR/EULAR 2010 é:
+
+**A)** 4 pontos.
+
+**B)** 6 pontos.
+
+**C)** 8 pontos.
+
+**D)** 10 pontos.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Ignora pontos de sorologia e inflamação.
+- **Alternativa B:** Ignora pelo menos dois domínios.
+- **Alternativa C:** 3 (articulações) + 3 (sorologia) + 1 (PCR) + 1 (tempo) = 8.
+- **Alternativa D:** Não somar automaticamente pontuação de FR e anti-CCP duas vezes.
+
+**Mini-revisão:** Classificação exige sinovite clínica e exclusão de etiologia melhor explicada; critérios não substituem diagnóstico.
+
+### Questão 2 — Metotrexato: prevenção de erro fatal
+
+**Enunciado:** Paciente com AR recebe metotrexato em regime reumatológico ambulatorial. Qual orientação é prioritária?
+
+**A)** Tomar comprimido de MTX diariamente por rotina.
+
+**B)** Administrar uma vez por semana, especificar dia e usar folato/monitorização conforme protocolo.
+
+**C)** Dispensar hemograma e provas hepáticas.
+
+**D)** Associar álcool em altas quantidades para reduzir náusea.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Uso diário por erro pode causar mucosite, pancitopenia e morte.
+- **Alternativa B:** Essa é a regra de segurança farmacológica mais importante.
+- **Alternativa C:** MTX exige acompanhamento hematológico, hepático e renal.
+- **Alternativa D:** Álcool pode agravar hepatotoxicidade.
+
+**Mini-revisão:** MTX semanal em AR; diferenciar de outros regimes utilizados em oncologia.
+
+### Questão 3 — FR versus anti-CCP
+
+**Enunciado:** Mulher com dor mecânica de mãos tem FR fracamente positivo, sem tumefação de MCP/PIP e sem rigidez prolongada. Qual interpretação é mais prudente?
+
+**A)** Diagnóstico definitivo de AR.
+
+**B)** FR positivo isolado não confirma AR; examinar síndrome e diferenciais.
+
+**C)** Iniciar biológico sem avaliação.
+
+**D)** A paciente não pode ter nenhuma doença reumatológica.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não existe sinovite demonstrada, e FR pode ser inespecífico.
+- **Alternativa B:** É o raciocínio sustentado pelo PCDT.
+- **Alternativa C:** Imunossupressão sem diagnóstico cria risco.
+- **Alternativa D:** Ausência de AR não elimina OA, tendinopatia ou outras doenças.
+
+**Mini-revisão:** Sinais clínicos precedem interpretação de teste autoimune.
+
+### Questão 4 — Monoartrite febril
+
+**Enunciado:** Idoso com diabetes, joelho quente, febre e ácido úrico alto deve receber inicialmente:
+
+**A)** Corticoide intra-articular sem punção.
+
+**B)** Investigação urgente para artrite séptica com artrocentese e microbiologia, sem atrasar antimicrobianos em sepse.
+
+**C)** Somente alopurinol.
+
+**D)** Alta porque gota explica todos os sinais.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode agravar infecção articular não tratada.
+- **Alternativa B:** É prioridade clínica de órgão/articulação.
+- **Alternativa C:** Redução de urato não trata infecção nem substitui manejo da crise.
+- **Alternativa D:** Cristais e bactéria podem coexistir.
+
+**Mini-revisão:** A contagem celular sinovial e os cristais não excluem infecção por si.
+
+### Questão 5 — LES: critérios EULAR/ACR 2019
+
+**Enunciado:** A respeito dos critérios classificatórios de LES de 2019, assinale a correta:
+
+**A)** FAN isolado em qualquer título é suficiente para LES.
+
+**B)** FAN ≥1:80 ao menos uma vez é critério de entrada, seguido de soma ponderada ≥10 com critério clínico.
+
+**C)** A classificação depende exclusivamente de anti-Sm positivo.
+
+**D)** O escore dispensa excluir outras explicações.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Autoanticorpo isolado não é diagnóstico.
+- **Alternativa B:** Essa é a estrutura geral dos critérios de classificação.
+- **Alternativa C:** Anti-Sm não está presente em todas as pessoas com LES.
+- **Alternativa D:** Itens não devem ser contados se melhor explicados por outra condição.
+
+**Mini-revisão:** Critérios classificatórios não substituem avaliação clínica e de órgão.
+
+### Questão 6 — Nefrite lúpica silenciosa
+
+**Enunciado:** Mulher com LES e anti-dsDNA elevado, assintomática urinária, apresenta proteinúria nova e sedimento ativo. Próximo passo é:
+
+**A)** Esperar edema antes de investigar.
+
+**B)** Avaliar função renal, quantificar proteinúria e encaminhar para possível biópsia e tratamento por classe.
+
+**C)** Apenas repetir FAN.
+
+**D)** Suspender tratamento sem orientação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Nefrite pode ser assintomática.
+- **Alternativa B:** Os achados podem representar lesão glomerular ativa.
+- **Alternativa C:** FAN não informa classe histológica nem substitui urina.
+- **Alternativa D:** Suspensão sem plano pode precipitar atividade.
+
+**Mini-revisão:** Rastrear urina e rim no LES mesmo quando paciente não queixa de sintomas urinários.
+
+### Questão 7 — SAF e anticorpos
+
+**Enunciado:** Paciente apresenta anticoagulante lúpico positivo isolado na vigência de infecção, sem trombose nem evento obstétrico. Qual afirmação é correta?
+
+**A)** Tem SAF comprovada.
+
+**B)** Um resultado isolado não basta; avaliar persistência e critérios clínicos, geralmente repetindo após ≥12 semanas.
+
+**C)** Precisa de anticoagulação plena vitalícia.
+
+**D)** FAN negativo exclui toda SAF.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Faltam critérios clínicos/persistência.
+- **Alternativa B:** Essa é a abordagem diagnóstica adequada.
+- **Alternativa C:** Anticoagulação possui riscos e não é indicada universalmente.
+- **Alternativa D:** SAF pode ocorrer independentemente de LES/FAN.
+
+**Mini-revisão:** Laboratório persistente + contexto clínico são elementos centrais.
+
+### Questão 8 — Espondiloartrite axial
+
+**Enunciado:** Homem de 28 anos com lombalgia noturna que melhora ao exercício e episódio de uveíte. HLA-B27 positivo. Qual afirmação é correta?
+
+**A)** HLA-B27 basta para diagnóstico.
+
+**B)** Suspeita de SpA axial deve ser integrada a clínica e imagem apropriada; HLA-B27 é apenas apoio.
+
+**C)** Exercício é contraindicado.
+
+**D)** Metotrexato é tratamento obrigatório da axial pura.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Muitos HLA-B27 positivos são saudáveis.
+- **Alternativa B:** Fenótipo e exames dirigidos são necessários.
+- **Alternativa C:** Exercício orientado é componente fundamental.
+- **Alternativa D:** MTX não trata de modo consistente doença axial pura.
+
+**Mini-revisão:** Dor inflamatória, uveíte, sacroileíte e risco modificado por HLA-B27.
+
+### Questão 9 — Artrite psoriásica
+
+**Enunciado:** Qual conjunto é mais característico de artrite psoriásica que de AR clássica?
+
+**A)** Dactilite, entesite, acometimento DIP e alterações ungueais.
+
+**B)** Sinovite simétrica MCP e anti-CCP alto apenas.
+
+**C)** Hiperuricemia assintomática isolada.
+
+**D)** Calcificações de cartilagem isoladas.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Esse conjunto favorece PsA.
+- **Alternativa B:** Mais compatível com AR, embora sobreposição fenotípica exista.
+- **Alternativa C:** Não define inflamação autoimune.
+- **Alternativa D:** Sugere CPPD em contexto apropriado.
+
+**Mini-revisão:** Examinar unhas e couro cabeludo mesmo que a psoríase aparente seja mínima.
+
+### Questão 10 — Cristais de urato
+
+**Enunciado:** No líquido sinovial com microscopia polarizada, achado clássico da gota é:
+
+**A)** Cristal romboide fracamente birrefringente positivo.
+
+**B)** Cristal em agulha com birrefringência negativa forte.
+
+**C)** Cultura bacteriana positiva obrigatória.
+
+**D)** Ausência de cristais no ataque típico sempre.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É padrão típico de CPPD.
+- **Alternativa B:** É o achado clássico de urato monossódico.
+- **Alternativa C:** Gota e infecção são condições distintas e podem coexistir.
+- **Alternativa D:** A sensibilidade depende da amostra e leitura.
+
+**Mini-revisão:** Não diagnosticar gota só por urato plasmático elevado.
+
+### Questão 11 — CPPD
+
+**Enunciado:** Paciente idosa com joelho agudamente inflamado tem condrocalcinose e cristais romboides de birrefringência positiva fraca. A principal hipótese é:
+
+**A)** CPPD (pseudogota).
+
+**B)** Artrite reumatoide obrigatoriamente.
+
+**C)** Necrose avascular sem sinovite.
+
+**D)** Espondilite anquilosante.
+
+**Gabarito: A.**
+
+- **Alternativa A:** O cristal e a imagem são compatíveis.
+- **Alternativa B:** AR não explica especificamente esse cristal.
+- **Alternativa C:** Não combina com cristal e derrame inflamatório.
+- **Alternativa D:** Acometimento axial é outro contexto.
+
+**Mini-revisão:** Identificação de CPPD não dispensa cultura se infecção for possível.
+
+### Questão 12 — Crise renal esclerodérmica
+
+**Enunciado:** Paciente com esclerose sistêmica apresenta hipertensão abrupta, piora renal e anemia hemolítica microangiopática após doses altas de prednisona. Melhor hipótese/ação:
+
+**A)** Crise renal esclerodérmica; internação e manejo com IECA sob especialista.
+
+**B)** Apenas aumentar prednisona.
+
+**C)** Alta com analgésico.
+
+**D)** Cistite simples.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É emergência renal e hipertensiva clássica nesse contexto.
+- **Alternativa B:** Corticoide alto aumenta preocupação de crise renal.
+- **Alternativa C:** Pode evoluir para perda renal.
+- **Alternativa D:** Não explica síndrome sistêmica.
+
+**Mini-revisão:** Esclerose sistêmica demanda vigilância de PA, pulmão e rim.
+
+### Questão 13 — Dermatomiosite e neoplasia
+
+**Enunciado:** Adulto apresenta fraqueza proximal objetiva, Gottron, heliotropo e CK elevada. Qual afirmação é correta?
+
+**A)** É fibromialgia típica.
+
+**B)** Dermatomiosite é hipótese; avaliar deglutição, pulmão e risco neoplásico conforme idade/subtipo.
+
+**C)** A CK elevada prova doença de um único subtipo.
+
+**D)** Dificuldade de engolir é irrelevante.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Fibromialgia não costuma causar CK muito elevada e fraqueza inflamatória objetiva.
+- **Alternativa B:** Fenótipo é clássico, com risco de complicações relevantes.
+- **Alternativa C:** CK é inespecífica para subtipo e pode subir por outras causas.
+- **Alternativa D:** Disfagia pode levar a aspiração e hospitalização.
+
+**Mini-revisão:** Uma miosite pode ameaçar respiração/deglutição mesmo com pouca dor.
+
+### Questão 14 — Vasculite pulmão–rim
+
+**Enunciado:** Paciente com hemoptise, hematúria glomerular e creatinina em rápida elevação, anti-PR3 positivo. Conduta:
+
+**A)** Aguardar retorno em três meses.
+
+**B)** Investigar emergencialmente síndrome pulmão–rim, ANCA e outras causas, com nefrologia/reumatologia e eventual biópsia.
+
+**C)** Tratar como lombalgia.
+
+**D)** Excluir infecção por ANCA positivo.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Há risco de falência orgânica.
+- **Alternativa B:** Exige investigação/intervenção rápida.
+- **Alternativa C:** Não corresponde ao quadro.
+- **Alternativa D:** ANCA não exclui infecção e outras etiologias.
+
+**Mini-revisão:** A síndrome clínica determina gravidade; o anticorpo apoia, não substitui.
+
+### Questão 15 — Arterite de células gigantes
+
+**Enunciado:** Mulher de 71 anos com cefaleia temporal nova, claudicação mandibular e perda visual transitória necessita:
+
+**A)** Somente anti-inflamatório e controle em mês.
+
+**B)** Tratamento urgente da suspeita de arterite temporal sem aguardar confirmação se risco visual alto.
+
+**C)** Suspender exames e dispensar investigação.
+
+**D)** Esperar ficar completamente cega para biopsiar.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode perder visão irreversivelmente.
+- **Alternativa B:** Tratamento e investigação avançam em paralelo.
+- **Alternativa C:** Confirmar e pesquisar alternativas continua relevante.
+- **Alternativa D:** O atraso pode ser catastrófico.
+
+**Mini-revisão:** A ameaça ocular é critério de prioridade temporal.
+
+### Questão 16 — Triagem pré-biológico
+
+**Enunciado:** Antes de usar imunobiológico para artrite inflamatória, qual medida é geralmente necessária?
+
+**A)** Ignorar história infecciosa.
+
+**B)** Avaliar TB ativa/latente, hepatites, vacinas e comorbidades conforme fármaco e PCDT.
+
+**C)** Realizar apenas FAN.
+
+**D)** Aplicar vacinas vivas indiscriminadamente após começar imunossupressão.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Aumenta risco de infecções graves.
+- **Alternativa B:** É base de segurança.
+- **Alternativa C:** FAN isolado não avalia infecção ou elegibilidade.
+- **Alternativa D:** Algumas vacinas vivas são contraindicadas durante imunossupressão.
+
+**Mini-revisão:** Medidas preventivas precedem a terapêutica imunossupressora sempre que viável.
+
+### Questão 17 — Hidroxicloroquina no LES
+
+**Enunciado:** Uma mulher de 48 kg com LES pergunta se todas devem receber 400 mg/dia de HCQ. Qual resposta é melhor?
+
+**A)** Sim, peso nunca importa.
+
+**B)** A dose deve ser individualizada pelo peso real, risco de flare e retinotoxicidade, com alvo EULAR em torno de 5 mg/kg/dia.
+
+**C)** Hidroxicloroquina não tem papel no LES.
+
+**D)** Não é preciso avaliar retina.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O risco de toxicidade se relaciona à dose por peso.
+- **Alternativa B:** É a orientação EULAR 2023 com individualização clínica.
+- **Alternativa C:** HCQ é pilar do tratamento da maioria dos pacientes.
+- **Alternativa D:** Monitorização oftalmológica é necessária conforme protocolo.
+
+**Mini-revisão:** Evitar que o esquema fixo supere o alvo por peso em pessoa de baixo peso.
+
+### Questão 18 — Polimialgia versus arterite temporal
+
+**Enunciado:** Pessoa de 74 anos tem rigidez de cinturas e PCR elevada, associadas a cefaleia temporal nova. Próximo passo prioritário:
+
+**A)** Classificar apenas como osteoartrite.
+
+**B)** Investigar urgentemente arterite de células gigantes e sintomas visuais/claudicação.
+
+**C)** Não perguntar sobre visão.
+
+**D)** Prescrever biológico para AR sem avaliação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O padrão não é adequadamente explicado apenas por OA.
+- **Alternativa B:** Polimialgia e GCA se associam; perda visual é risco.
+- **Alternativa C:** Avaliar visão muda urgência.
+- **Alternativa D:** AR não é hipótese principal no conjunto.
+
+**Mini-revisão:** Em polimialgia, perguntar sempre sobre cefaleia nova, mandíbula e visão.
+
+
+## 33. Curadoria visual: 18 candidatos, prioridade diagnóstica
+
+A prioridade é usar imagens reais de ultrassom, radiografia, RM, TC, microscopia e sinais de exame físico que melhoram o diagnóstico diferencial. **Esta é uma lista de candidatos, não imagens obtidas/curadas ou publicadas**. Para cada imagem, verificar procedência, licença, direitos de imagem do paciente, qualidade do laudo e utilidade pedagógica antes de importar ao site.
+
+| Nº | Imagem candidata | Função didática | Fonte/condição |
+|---|---|---|---|
+| 1 | Sinovite de MCP no ultrassom Doppler | Mostra hipertrofia sinovial e vascularização inflamatória; comparar com Doppler sem hiperemia. | Exame real de fonte acadêmica autorizada; legenda não pode confundir sinal inespecífico com AR confirmada. |
+| 2 | Radiografia de mãos na AR estabelecida | Erosões marginais, diminuição de espaço e distribuição típica. | Imagem de serviço acadêmico ou sociedade científica com licença. |
+| 3 | Radiografia comparativa osteoartrite de mãos | Osteófitos e acometimento DIP/PIP versus erosões marginais em AR. | Atlas radiológico autorizado; revisão do diferencial. |
+| 4 | Líquido sinovial: urato em microscopia polarizada | Cristais aciculares com birrefringência negativa forte. | Microscopia real licenciada com orientação do compensador indicada. |
+| 5 | Líquido sinovial: cristais CPPD | Cristais romboides de birrefringência positiva fraca. | Microscopia real licenciada, sem falsear contraste. |
+| 6 | RM de sacroilíacas na SpA axial | Edema ósseo subcondral compatível com sacroileíte em contexto correto. | Exame real e legenda sobre falsos positivos em atletas/pós-parto. |
+| 7 | Dactilite e lesões ungueais psoriásicas | Aspecto clínico de dedo em salsicha e pitting ungueal. | Imagem clínica institucional licenciada, sem dados identificáveis. |
+| 8 | Rash malar e lesão discoide do LES | Contraste de padrões cutâneos, com diferencial dermatológico. | Fotos reais aprovadas em atlas clínico; diversidade de tons de pele. |
+| 9 | Histologia/US de nefrite lúpica | Esquema de classes III/IV/V e correlação com sedimento/proteinúria. | Diagrama autoral em vez de foto microscópica sem legenda adequada. |
+| 10 | Padrões de FAN na imunofluorescência | Exemplos reais de padrões e limitações diagnósticas. | Atlas ICAP ou material institucional com licença/atribuição. |
+| 11 | Capilaroscopia periungueal em esclerose sistêmica | Megacapilares, micro-hemorragias e rarefação. | Imagem real de fonte especializada e revisão de critérios. |
+| 12 | Dermatomiosite: sinal de Gottron | Pápulas em superfícies extensoras de MCP/PIP. | Imagem clínica autorizada; sem rosto ou identidade. |
+| 13 | TCAR em doença intersticial associada a autoimunidade | Padrão de alterações intersticiais com contexto clínico. | TC real com procedência, legenda e exclusão de diagnósticos diferenciais. |
+| 14 | Angioimagem de grandes vasos na arterite de Takayasu | Demonstra estenoses e alteração vascular em regiões pertinentes. | Exame real institucional licenciado. |
+| 15 | Púrpura palpável em vasculite de pequenos vasos | Padrão morfológico e topográfico, com limitações. | Fotografia dermatológica clínica autorizada. |
+| 16 | Hierarquia da abordagem da monoartrite aguda | Derrame → punção → cultura/Gram/cristais → antibiótico/drenagem se sepse. | Fluxograma original LURIA baseado na SANJO. |
+| 17 | Treat-to-target na AR | Linha do tempo de avaliação da atividade, resposta, ajuste e remissão. | Diagrama autoral com referência PCDT AR 2026. |
+| 18 | Quadro de screening pré-biológico | TB, hepatites, vacinas, exames basais, gravidez e comorbidades. | Tabela visual original com checagem farmacêutica. |
+
+### Seleção e integração
+
+1. Selecionar exames autênticos de fonte hospitalar/universitária ou atlas com direito de reprodução, com **legenda interpretativa**, não somente título da doença.
+2. Não assumir que PDF de diretriz ou figura encontrada em site institucional permite reutilização comercial sem verificar licença/autorização.
+3. Em fotos clínicas, exigir consentimento/anonimização e incluir pele de diferentes tonalidades para evitar viés diagnóstico.
+4. Converter imagens aprovadas em WebP com limite de peso correspondente ao tipo de mídia LURIA; manter nitidez de RX, TC, RM e microscopia.
+5. Criar alternativa textual que descreva achados e suas limitações.
+6. Conferir responsive/PWA e garantir ampliação dos exames com legenda acessível.
+7. Registrar autor/origem, licença, data, capítulo, revisão médica e versão de arquivo.
+8. Não criar exames falsamente apresentados como de pacientes reais. Ilustrações diagnósticas originais devem estar identificadas como esquemas.
+9. Não inserir imagem apenas para cumprir quantidade; descartar candidata de qualidade ou licença inadequada.
+10. Após importação, verificar ausência de duplicação entre doenças e correspondência exata com o texto ao lado.
+
+## 34. Auditoria desta fase e pendências de publicação
+
+**Cobertura:** diagnóstico sindrômico, padrões de artrite, exames e autoanticorpos, urgências, AR, LES, nefrite, SAF, SpA, PsA, cristais, artrites pós-virais, Sjögren, esclerose sistêmica, miosites e vasculites; tratamento por alvo, segurança e população especial; **12 casos completos** e **18 questões com 4 alternativas e comentário individual**. O plano visual contém **18 candidatas**, ainda pendentes de curadoria real.
+
+**Pontos de atenção científica antes da publicação:**
+- O PCDT de AR em vigor é o de 2026. Revisar no PDF original as posologias e a sequência exata de MMCD nos anexos terapêuticos antes de escrever prescrições prontas.
+- O tratamento do LES na EULAR 2023 pode diferir do PCDT brasileiro de 2022 na tecnologia incorporada, na disponibilidade e na elegibilidade; manter as fontes separadas.
+- Os critérios ACR/EULAR AR 2010 e LES 2019 são **classificatórios**. A clínica e os diferenciais continuam centrais.
+- Crise renal esclerodérmica, GCA ocular, síndrome pulmão–rim e artrite séptica são emergências que precisam de atendimento imediato.
+- Evitar dose automática de corticoide/biológico em casos fictícios sem peso, função renal, infecção, gestação, órgão envolvido e via disponível.
+- Validar manifestações epidemiológicas regionais (especialmente chikungunya) e diagnósticos infecciosos antes de atribuir toda poliartrite a autoimunidade.
+- A lista de imagens é somente plano; a publicação de exames reais exige licença e aprovação independente.
+
+**Checklist final**
+- [x] Conteúdo principal extenso, coerente e modular.
+- [x] Referências brasileiras e internacionais verificáveis.
+- [x] Casos clínicos comentados acima do mínimo estabelecido.
+- [x] Questões autorais comentadas alternativa por alternativa.
+- [x] Tabelas, diagnósticos diferenciais, fluxos e pérolas.
+- [x] Curadoria planejada para mais de 10 imagens.
+- [ ] Revisão por reumatologista e farmacêutico clínico, especialmente doses e contraindicações.
+- [ ] Conferência atualizada de PCDTs e incorporação de fármacos.
+- [ ] Obtenção, licença, otimização e aprovação das imagens.
+- [ ] Transformação para HTML/content.json conforme padrão nativo da LURIA.
+- [ ] Teste visual e de acessibilidade desktop/PWA.
+- [ ] Validação da integração ao cronograma, às questões e à busca do site.
+
+**Status:** rascunho aprofundado. Ultrapassar meta de caracteres não significa certificação médica, aprovação jurídica/visual ou publicação na plataforma.
