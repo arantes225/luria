@@ -405,6 +405,52 @@ A EDA procura estigmas de sangramento e oferece terapia. Quando a visibilidade e
 **Conduta:** tratar choque, chamar endoscopia e equipe de emergência, investigar HDA/HDB pelo quadro e recursos, não concluir por cor das fezes.
 **Por que importa:** demonstra que a manifestação externa não define a topografia.
 
+
+### Caso 6 — úlcera posterior e ressangramento
+**Apresentação:** homem de 71 anos, usa AINE, apresenta hematêmese e síncope. Após ressuscitação e EDA precoce, identifica-se úlcera duodenal posterior de 2,6 cm com sangramento ativo Forrest Ia; realizada hemostasia endoscópica inicialmente eficaz. Duas horas depois há nova instabilidade e hematêmese.  
+**Hipóteses:** ressangramento ulceroso de alto risco, com provável vaso calibroso.  
+**Raciocínio:** tamanho >2 cm, localização posterior e instabilidade inicial elevam preocupação com durabilidade; não basta dobrar IBP ou repetir adrenalina isolada.  
+**Exames:** reavaliar Hb/plaquetas, perfusão, tipagem, resposta a ressuscitação; EDA terapêutica quando segura; radiologia intervencionista/cirurgia em paralelo.  
+**Interpretação:** falha após primeira hemostasia pode permitir nova terapia endoscópica especializada (inclusive OTS), seguida de TAE se não controlada, ou cirurgia conforme disponibilidade/falha.  
+**Conduta:** reanimar, acionar endoscopia avançada e equipe de resgate; não prolongar atraso se sangramento segue incontrolável.  
+**Por que importa:** liga a anatomia da úlcera à escolha de resgate segundo ESGE 2026.
+
+### Caso 7 — o paciente com stent recente e melena
+**Apresentação:** mulher de 63 anos após síndrome coronariana aguda e angioplastia há três semanas, em uso de AAS e inibidor P2Y12, com melena, lipotimia e úlcera gástrica sangrante tratada endoscopicamente.  
+**Hipóteses:** HDA ulcerosa com risco relevante de recorrência e alto risco de trombose de stent caso antiplaquetários sejam suspensos indevidamente.  
+**Raciocínio:** prevenir ressangramento e prevenir infarto são objetivos simultâneos; suspender os dois agentes sem diálogo cardiológico não é estratégia neutra.  
+**Exames:** Hb e hemodinâmica seriadas, informação do stent/procedimento, risco de novo sangramento e hemostasia endoscópica; investigar *H. pylori* e AINE.  
+**Interpretação:** o antitrombótico precisa ser avaliado pela indicação específica e temporalidade.  
+**Conduta:** tratamento ulceroso e acompanhamento, discussão com cardiologia sobre manutenção/reinício do esquema, plano documentado na alta e ferro quando indicado.  
+**Por que importa:** evita que a regra simplista "suspender tudo que afina sangue" cause evento cardiovascular.
+
+### Caso 8 — melena e anemia após bypass em Y de Roux
+**Apresentação:** homem de 49 anos, bypass gástrico há seis anos, vem com melena recorrente, Hb em queda e EDA convencional sem foco definido na bolsa gástrica/gastrojejunoanastomose.  
+**Hipóteses:** úlcera marginal não identificada, sangramento de estômago excluído/duodeno, lesão de delgado, outras causas.  
+**Raciocínio:** a anatomia do bypass limita o alcance da EDA habitual. Exame negativo em segmento acessível não prova ausência de fonte em segmento excluído.  
+**Exames:** revisar relatório cirúrgico e endoscopia; após estabilização, discutir angio-TC, endoscopia assistida por dispositivos, acesso transgástrico ou métodos especializados conforme sangramento e recursos.  
+**Interpretação:** localização anatômica é fundamental; fluxo endoscópico de estômago íntegro não cobre todos os segmentos.  
+**Conduta:** abordagem multidisciplinar endoscópica, radiológica e cirúrgica com tratamento do foco identificado; não repetir indefinidamente a mesma EDA convencional sem mudar pergunta.  
+**Por que importa:** adapta algoritmo à anatomia pós-operatória.
+
+### Caso 9 — coágulo Forrest IIb e equipe sem dispositivo hemostático
+**Apresentação:** mulher de 74 anos, sangramento por úlcera gástrica, estável após ressuscitação, EDA mostra coágulo aderido Forrest IIb. Endoscopista de plantão está em serviço sem clipagem avançada e sem suporte para tratar hemorragia volumosa se remoção do coágulo revelar vaso arterial.  
+**Hipóteses:** úlcera com estigma intermediário/alto risco, que pode ocultar lesão mais grave.  
+**Raciocínio:** ESGE 2026 sugere tratamento endoscópico do IIb com remoção segura do coágulo e controle subsequente, **condicionado à competência para lidar com sangramento de alto risco**.  
+**Exames:** avaliação de estabilidade, tipagem, análise da endoscopia e risco trombótico/hemorrágico.  
+**Interpretação:** a recomendação não autoriza intervenção insegura onde não há capacidade de resgate.  
+**Conduta:** estabilização, IBP de acordo com protocolo, contato com endoscopia terapêutica/referência e plano de tratamento seguro; monitorar ressangramento.  
+**Por que importa:** integra recomendação científica e realidade assistencial.
+
+### Caso 10 — sangramento por Dieulafoy e EDA inicial negativa
+**Apresentação:** mulher de 66 anos, episódios abruptos de hematêmese, grandes quedas de Hb, EDA inicial limitada por coágulos. Na repetição especializada é identificado ponto de sangramento arterial intenso em mucosa gástrica praticamente normal.  
+**Hipóteses:** lesão de Dieulafoy.  
+**Raciocínio:** vaso submucoso relativamente calibroso pode estar exposto por pequeno defeito, sem a cratera de uma úlcera clássica. Sangramento intermitente reduz sensibilidade de exame feito fora do episódio.  
+**Exames:** endoscopia com visualização adequada e hemostasia, avaliação hemodinâmica/laboratorial, imagem de resgate se falha.  
+**Interpretação:** diferença visual frente a úlcera de Forrest exige reconhecer padrão vascular.  
+**Conduta:** hemostasia endoscópica mecânica/térmica conforme expertise, monitorização e investigação alternativa se recorrência.  
+**Por que importa:** evita chamar todo sangramento arterial gástrico de úlcera comum.
+
 ## 14. Oito questões autorais — alternativas comentadas
 
 ### Questão 1 — timing endoscópico, atualização 2026
