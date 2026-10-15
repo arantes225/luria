@@ -1,7 +1,7 @@
 # LURIA — Aula 51 | DOENÇA PULMONAR OBSTRUTIVA CRÔNICA (DPOC)
 **Lote 03 · Clínica Médica · Manuscrito autoral em elaboração · 14/10/2026**
 
-> **RASCUNHO, NÃO HOMOLOGADO.** Não alcança ainda a meta de 60 mil caracteres úteis nem passou por aprovação médica, curadoria de imagens, testes de questões e inspeção HTML/PWA.
+> **RASCUNHO, NÃO HOMOLOGADO.** Ainda não alcança a meta de 60 mil caracteres úteis nem passou por aprovação médica, curadoria de imagens, testes de questões e inspeção HTML/PWA.
 
 ## 1. Auditoria comparativa antes da produção
 A biblioteca LURIA foi inspecionada em 14/10/2026 no GitHub; não existe diretório específico de DPOC na lista de apostilas publicadas. O padrão editorial foi conferido no livro de Assistência ao Parto. **Materiais efetivamente lidos no Google Drive:** “DPOC estável.pdf” e “DPOC exacerbada.pdf”, com síntese de sintomas, classificação espirométrica, oxigenoterapia, terapia de manutenção, insuficiência ventilatória, VNI e internação. Contêm categorias históricas A/B/C/D e exigem atualização; autoria institucional e licença comercial não foram confirmadas. Nenhum texto ou figura foi reproduzido. **Fontes prioritárias:** PCDT DPOC do Ministério da Saúde atualizado em janeiro de 2026; GOLD 2026, com distinção explícita entre estratégia internacional e critérios de acesso/uso no SUS.
@@ -97,7 +97,85 @@ Mulher com DPOC confirmada, sem exacerbações recentes, mas dispneia persistent
 
 **6.** Dispneia súbita com dor pleurítica em pessoa com DPOC: A) presume-se exacerbação sem investigar; B) considerar TEP/pneumotórax/pneumonia; C) é sempre bronquite; D) não é urgência. **Gabarito B.** A/C/D ancoram indevidamente; B investiga ameaças concorrentes. **Revisão:** piora aguda pede diferencial.
 
-## 14. Curadoria de imagens e referências
+## 14. Integração clínica aprofundada: como raciocinar no consultório e na enfermaria
+
+### 14.1 A espirometria é indispensável, mas não interpreta o paciente sozinha
+
+A suspeita nasce de sintomas respiratórios crônicos e exposições: tabagismo ativo ou pregresso, combustão de biomassa, poeiras, vapores e história de infecções ou desenvolvimento pulmonar prejudicado. A **confirmação funcional exige obstrução persistente após broncodilatador**; a razão VEF1/CVF inferior a 0,70 é critério operacional do GOLD, mas em idosos pode classificar como obstruídos indivíduos próximos ao limite inferior esperado. Sempre integrar idade, qualidade da manobra, limite inferior da normalidade e contexto clínico.
+
+A interpretação exige pelo menos três perguntas: **a curva é tecnicamente aceitável?**; **a obstrução persiste após broncodilatador?**; **a intensidade da redução do VEF1 descreve risco, mas explica integralmente sintomas?** Não. Pacientes com VEF1 semelhante podem apresentar dispneia, capacidade de exercício, hiperinsuflação e frequência de exacerbações muito diferentes. O diagnóstico diferencial inclui asma, bronquiectasias, insuficiência cardíaca, tuberculose prévia, doença intersticial e doenças das vias aéreas centrais. Um teste com reversibilidade broncodilatadora não separa de modo absoluto asma e DPOC: pode haver reversibilidade na DPOC e obstrução persistente na asma.
+
+**Exemplo:** pessoa de 69 anos, 40 maços-ano, tosse e dispneia progressiva, espirometria pré-broncodilatador VEF1/CVF 0,63, após broncodilatador 0,65. Há obstrução persistente pelo ponto de corte fixo. O próximo passo não é prescrever automaticamente terapia tripla: avaliar mMRC/CAT, exacerbações prévias, eosinófilos, comorbidades, técnica inalatória e elegibilidade terapêutica no SUS.
+
+### 14.2 Fenótipos úteis e armadilhas
+
+**Enfisema predominante:** destruição do parênquima e redução de retração elástica, favorecendo aprisionamento de ar; DLCO pode reduzir, sobretudo em enfisema significativo. **Bronquite crônica:** tosse produtiva por três meses ao ano em dois anos consecutivos, depois de excluídas outras causas; é um fenótipo, não sinônimo de DPOC. **Exacerbador frequente:** episódios recorrentes, especialmente com internações, aumentam risco futuro e exigem investigar gatilhos e prevenção. **Eosinofilia periférica:** marcador probabilístico de benefício de corticoide inalatório na prevenção de exacerbações, e não diagnóstico de asma isoladamente.
+
+A coexistência de **asma clinicamente estabelecida** muda a decisão: o paciente precisa de estratégia que inclua corticosteroide inalatório, respeitadas diretrizes para asma, e não monoterapia broncodilatadora que ignore essa doença. Em DPOC sem asma, corticoide inalatório não é indicado apenas por dispneia; seu benefício principal relaciona-se à prevenção de exacerbações em subgrupos e deve ser ponderado contra pneumonia, candidíase e outros efeitos.
+
+### 14.3 Exacerbação: avaliação temporal e gravidade
+
+A exacerbação é piora aguda de dispneia, tosse e/ou expectoração em relação ao basal, frequentemente desencadeada por infecção ou poluição. Entretanto, **pneumonia, embolia pulmonar, edema agudo de pulmão, arritmia, pneumotórax e síndrome coronariana aguda** podem simular ou coexistir com exacerbação. Por isso, febre alta, dor pleurítica, hemoptise, assimetria auscultatória, edema agudo ou dor torácica mudam a investigação.
+
+Na triagem, documentar frequência respiratória, esforço ventilatório, capacidade de falar, estado mental, pressão arterial, saturação e perfusão. Saturação normal não exclui hipercapnia; sonolência e confusão são alertas para insuficiência ventilatória. Gasometria arterial tem maior valor quando há insuficiência respiratória, suspeita de retenção de CO2 ou decisão sobre suporte ventilatório.
+
+A oxigenoterapia em paciente com risco de hipercapnia costuma ser **titulada inicialmente para SpO2 de 88–92%**, com monitoramento e reavaliação gasométrica quando indicado. A justificativa não é “privar o paciente de oxigênio”: é evitar hiperóxia desnecessária, alterações da relação ventilação-perfusão e aumento da retenção de CO2, enquanto se corrige hipoxemia. Se há hipoxemia grave, oxigênio não deve ser omitido por medo de hipercapnia; titula-se e monitora-se adequadamente.
+
+**VNI** é particularmente útil na insuficiência respiratória hipercápnica com acidose respiratória e trabalho ventilatório elevado, quando não há contraindicações e existe equipe capaz de acompanhar resposta. Avaliar consciência, proteção de via aérea, estabilidade hemodinâmica, secreções, tolerância e possibilidade de falha. Deterioração clínica, hipoxemia refratária ou incapacidade de proteger via aérea demandam avaliação imediata para via aérea invasiva. Não atrasar intubação necessária por insistência prolongada em VNI sem resposta.
+
+### 14.4 Antibióticos: decidir por probabilidade bacteriana e gravidade
+
+Nem toda exacerbação exige antibiótico. A decisão considera **aumento de purulência do escarro**, associado a piora de dispneia ou volume de expectoração, e situações de ventilação mecânica ou doença grave, conforme protocolos vigentes. Febre isolada e escarro apenas mais abundante não provam etiologia bacteriana. Escolha e duração dependem de gravidade, alergias, uso prévio de antimicrobianos, risco de patógenos resistentes, epidemiologia local e função renal.
+
+O raciocínio de prescrição deve contemplar também **broncodilatador de curta ação**, curso curto de corticosteroide sistêmico quando indicado, suporte ventilatório, profilaxia de tromboembolismo conforme risco e revisão da terapia de manutenção na alta. Corticosteroide sistêmico prolongado fora da exacerbação **não** é tratamento de manutenção rotineiro da DPOC devido a danos relevantes.
+
+### 14.5 Alta segura: a prevenção começa antes da saída
+
+Após melhora clínica, confirmar que a pessoa entende a diferença entre inalador de **resgate** e de **manutenção**. Demonstrar a técnica do dispositivo real e solicitar retorno demonstrativo; muitos fracassos terapêuticos decorrem de técnica incorreta, adesão precária ou dispositivo inadequado à capacidade inspiratória/manual. Reavaliar tabagismo, vacinação, atividade física, reabilitação pulmonar e plano escrito de reconhecimento de piora. Revisar a necessidade de oxigênio domiciliar **após estabilização**, sem confundir necessidade transitória durante exacerbação com indicação permanente.
+
+Acompanhamento deve incluir sintomas, exacerbações, capacidade funcional, efeitos adversos, comorbidades cardiovasculares e respiratórias, depressão/ansiedade, nutrição e elegibilidade para terapias adicionais. Internação por exacerbação é sinal de alto risco e exige transição de cuidados estruturada.
+
+### 14.6 Matriz de decisão clínica para revisão
+
+| Situação | Erro comum | Conduta conceitual correta |
+|---|---|---|
+| Tosse crônica em tabagista | diagnosticar DPOC sem espirometria | confirmar obstrução pós-broncodilatador e considerar diagnósticos diferenciais |
+| VEF1 baixo, poucos sintomas | assumir mesma terapia de paciente com muitas exacerbações | combinar função pulmonar, sintomas e história de eventos |
+| Dispneia persistente, sem exacerbações | adicionar corticoide inalatório automaticamente | revisar broncodilatação, técnica, adesão e causas alternativas |
+| Eosinófilos elevados e exacerbações | tratar número isoladamente | integrar contagem ao risco, histórico e possibilidade de pneumonia |
+| Exacerbação com dor pleurítica | atribuir tudo à DPOC | pesquisar pneumonia, TEP, pneumotórax e causas cardiovasculares |
+| Paciente sonolento com SpO2 91% | supor ventilação adequada | avaliar hipercapnia, acidose e trabalho ventilatório |
+| Melhora após VNI | dispensar reavaliação | monitorar gasometria, clínica e critérios de falha |
+| Alta sem educação inalatória | apenas entregar receita | demonstrar técnica, plano de ação e seguimento |
+
+### 14.7 Dois casos integradores adicionais
+
+**Caso 5 — “Dispneia refratária” que era técnica inadequada.** Mulher de 67 anos, DPOC confirmada, mMRC 3, sem exacerbações no último ano. Usa dispositivo de pó seco, mas relata que “o medicamento não sai”; durante demonstração, não realiza inspiração suficientemente vigorosa e expira dentro do dispositivo. **Pergunta clínica:** aumentar dose, introduzir corticoide ou corrigir técnica? **Raciocínio:** a primeira intervenção é avaliar adequação do dispositivo, ensinar técnica e, se necessário, selecionar dispositivo compatível com a capacidade da paciente. Também investigar insuficiência cardíaca, anemia, descondicionamento e depressão. **Conduta:** corrigir uso, garantir manutenção broncodilatadora apropriada e reavaliar sintomas antes de escalonar. **Pulo do Gato:** falha do dispositivo não é necessariamente falha farmacológica.
+
+**Caso 6 — Sonolência durante exacerbação.** Homem de 73 anos, DPOC avançada, dispneia e expectoração purulenta, FR 32/min, uso de musculatura acessória, SpO2 84% em ar ambiente, progressiva sonolência. **Pergunta clínica:** saturação isolada define suporte? **Raciocínio:** há hipoxemia e possível insuficiência ventilatória hipercápnica. Administrar oxigênio titulado, monitorar, solicitar gasometria e tratar exacerbação; considerar VNI se acidose respiratória hipercápnica e paciente elegível. Se consciência deteriora e proteção de via aérea é comprometida, preparar suporte invasivo sem demora. **Pulo do Gato:** normalizar a SpO2 não significa normalizar PaCO2 nem corrigir fadiga ventilatória.
+
+### 14.8 Duas questões adicionais com justificativa completa
+
+**Questão 7.** Homem de 64 anos com DPOC confirmada apresenta dispneia mMRC 3, nenhuma exacerbação no último ano e uso irregular de inalador. Qual a primeira medida mais apropriada antes de acrescentar corticoide inalatório?
+
+A) Introduzir corticoide inalatório isolado para tratar a dispneia.
+B) Revisar adesão, técnica inalatória, dispositivo e adequação da broncodilatação de manutenção.
+C) Prescrever corticosteroide sistêmico diário por prazo indeterminado.
+D) Suspender broncodilatadores e indicar apenas oxigênio domiciliar.
+
+**Gabarito: B.** **A incorreta:** corticoide inalatório não é tratamento isolado de escolha para dispneia da DPOC. **B correta:** técnica, adesão e otimização broncodilatadora são essenciais antes de escalonamento. **C incorreta:** corticosteroide sistêmico crônico causa efeitos adversos e não é rotina de manutenção. **D incorreta:** oxigenoterapia prolongada exige critérios de hipoxemia crônica; não substitui broncodilatação. **Revisão:** dispneia e exacerbações são eixos terapêuticos diferentes.
+
+**Questão 8.** Durante exacerbação de DPOC, paciente tem sonolência, esforço respiratório importante e SpO2 90% após oxigênio. Qual interpretação é correta?
+
+A) A saturação de 90% exclui hipercapnia.
+B) A sonolência demonstra que o paciente já pode receber alta.
+C) É necessário avaliar ventilação e acidose, além de oxigenação, e considerar suporte ventilatório apropriado.
+D) Aumentar oxigênio indiscriminadamente sempre corrige a insuficiência ventilatória.
+
+**Gabarito: C.** **A incorreta:** SpO2 não mede CO2. **B incorreta:** alteração mental é sinal de gravidade. **C correta:** gasometria e avaliação clínica orientam VNI ou suporte invasivo, conforme estabilidade e proteção de via aérea. **D incorreta:** oxigênio corrige hipoxemia, não necessariamente hipoventilação, e hiperóxia pode piorar hipercapnia. **Revisão:** distinguir falência de oxigenação de falência ventilatória.
+
+
+## 15. Curadoria de imagens e referências
 Candidatas: espirometria normal × obstrutiva, curvas fluxo-volume, diagrama autoral de hiperinsuflação, TC de enfisema com fonte verificável, radiografia comparativa de congestão, fotografia de técnica inalatória com licença comercial, demonstração licenciada de VNI, fluxos originais de classificação e escalonamento. **Nenhuma figura inédita deve entrar no HTML antes da aprovação Admin.**
 
 - Ministério da Saúde, PCDT DPOC atualizado 29/01/2026: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view
