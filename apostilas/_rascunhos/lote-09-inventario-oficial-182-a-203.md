@@ -5,8 +5,8 @@
 
 | Nº | Área | Tema curricular | Situação em 15/10/2026 | Decisão inicial |
 |---|---|---|---|---|
-| 182 | Clínica Médica | Ressuscitação cardiopulmonar do adulto e cuidados pós-parada | Etapa zero Drive realizada; rascunho em criação | Criar apostila específica; distinguir da emergência pediátrica já existente |
-| 183 | Clínica Médica | Dislipidemias e prevenção do risco cardiovascular | Sem apostila própria no diretório raiz auditado | Verificar sobreposição com cardiologia/APS e prevenção primária antes de criar |
+| 182 | Clínica Médica | Ressuscitação cardiopulmonar do adulto e cuidados pós-parada | Rascunho autoral ~80,4 mil caracteres brutos; benchmark realizado; auditoria final pendente | Criar apostila específica; distinguir da emergência pediátrica já existente |
+| 183 | Clínica Médica | Dislipidemias e prevenção do risco cardiovascular | Rascunho autoral inicial ~14,4 mil caracteres; benchmark Drive parcial | Expandir a 60K úteis e verificar SBC 2025 |
 | 184 | Clínica Médica | Cefaleias e sinais de alarme neurológicos | Sem apostila própria no diretório raiz auditado | Criar após benchmark de neurologia, conferir sinais de alarme |
 | 185 | Clínica Médica | Síndromes geriátricas, quedas e polifarmácia | Sem apostila própria no diretório raiz auditado | Articular quedas, delirium, fragilidade e desprescrição |
 | 186 | Clínica Médica | Arboviroses: dengue, chikungunya e Zika | Sem apostila própria no diretório raiz auditado | Conferir fluxos MS atualizados e interseções com infectologia |
@@ -44,3 +44,9 @@
 4. Antes de qualquer alteração médica em cada novo tema, **pesquisar, abrir e examinar** material comparável no Drive e registrar a comparação; não reutilizar indevidamente o benchmark do tema anterior.
 5. Cruzar temas complementares com o índice dos 401 temas. Quando um tema já for coberto, registrar literalmente **COMPLEMENTAR NA PRÓXIMA REVISÃO** e apontar a apostila existente; não criar duplicata.
 6. Conferir referências oficiais recentes para cada conduta e todo material de imagem pela fila de aprovação do Admin.
+
+## Etapa zero da apostila 183 — registro com limitação
+- Pesquisados no Google Drive: dislipidemia, colesterol, estatinas, risco cardiovascular. Foram **abertos e examinados** `02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf` e `05 - COMPLICACOES CRONICAS DO DM.pdf`. Ambos abordam apenas segmentos do tema, não configuram apostila completa de dislipidemias do adulto; benchmark específico de curso permanece PENDENTE. Não foi confirmada autoria Estratégia MED; não reproduzir conteúdo ou identidade.
+- Conferência científica em fonte primária atual: Rached FH et al., *Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2025*, Arq Bras Cardiol 122(9):e20250640, e atualização ESC/EAS 2025.
+- Criado `apostilas/_rascunhos/lote-09-aula-183-dislipidemias-risco-cardiovascular.md` como **primeira camada** (abaixo de 60K úteis). Ainda faltam farmacologia completa, estratificação formal integral, benchmark específico, imagens licenciadas, revisão científica, provas e HTML/PWA.
+- **COMPLEMENTAR NA PRÓXIMA REVISÃO** antes de publicação; nunca marcar este rascunho como concluído.
