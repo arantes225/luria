@@ -16,7 +16,7 @@
 | 43 | Puericultura e prevenção de acidentes | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 45 | Participação e controle social no SUS | RASCUNHO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
-| 46 | Asma | RASCUNHO_INICIADO | \`_rascunhos/lote-03/46-asma.md\` |
+| 46 | Asma | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/46-asma.md\` |
 | 47 | Trauma: atendimento inicial e ABCDE | RASCUNHO_INICIADO | \`_rascunhos/lote-03/47-trauma-atendimento-inicial.md\` |
 | 48 | Imunizações na infância | RASCUNHO_INICIADO | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
 | 49 | Gestação ectópica | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
@@ -45,6 +45,12 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 46 — aprofundamento e deduplicação de Asma (14/10/2026)
+
+A apostila `apostilas/_rascunhos/lote-03/46-asma.md` foi revisada com confronto das diretrizes PCDT/MS 2026 e GINA 2026. Há **100.245 caracteres brutos**, **26 capítulos**, **10 casos e 14 questões**. Passaram a constar cálculos diagnósticos, abordagem de fenótipos, comparação pediátrica entre diretrizes, tratamento em etapas, crise grave, seguimento e riscos de dispositivos. Foi removida uma duplicação editorial de capítulos 19–23. A conferência estática confirmou sequência de capítulos 1–26 sem repetição.
+
+Relatório: `apostilas/_rascunhos/lote-03/46-VALIDACAO-EDITORIAL.md`. Continua sem imagens aprovadas, sem homologação e sem HTML/PWA testado; nenhuma publicação, merge ou deploy.
 
 ## Aula 45 — aprofundamento de participação e controle social (14/10/2026)
 
