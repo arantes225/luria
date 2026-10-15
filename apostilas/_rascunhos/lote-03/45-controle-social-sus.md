@@ -469,12 +469,50 @@ Registrar diretriz aprovada → avaliar cenário epidemiológico e rede → incl
 **“Paridade garante democracia automaticamente.”** Falso. É piso institucional necessário, mas acesso a informação, representação legítima e inclusão determinam efetividade.
 
 
-## Referências jurídicas para checagem/homologação
-- Brasil, Lei nº 8.142, de 28 de dezembro de 1990: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
-- Brasil, Constituição Federal de 1988, arts. 196 e 198: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
-- Conselho Nacional de Saúde, Resolução 453/2012 (conferir texto e atos posteriores): https://conselho.saude.gov.br/resolucoes/2012/Reso453.pdf
+## 20. Matriz curricular de autossuficiência e limites com a aula 50
 
-## Expansão obrigatória
-Contexto histórico da Reforma Sanitária; princípios constitucionais; conferências extraordinárias; eleição, composição e deliberação dos conselhos; plano municipal e prestação de contas; RAG/PAS e transparência; legislação de transferências interfederativas; ouvidorias e participação territorial; estudos de caso; questões originais completas; tabelas e referências verificadas.
+| Aprendizagem esperada | Onde é ensinada | Avaliação disponível | Pendente |
+|---|---|---|---|
+| Explicar fundamento constitucional da participação | 1 e 4 | Q1, Q10 | revisão jurídico-editorial |
+| Diferenciar Conselho e Conferência | 2 e 5–7 | casos 1–2, Q1–2 | revisar estatutos locais |
+| Interpretar paridade e 50/25/25 | 3, 5–6 | caso 3, Q3–4 | conferir composição conforme atos locais |
+| Distinguir colegiados sociais de CIT/CIB/CIR | 8 | caso 4, Q5 | checar atribuições regionais por norma |
+| Relacionar Plano, PAS, RQPC e RAG | 9 e 15 | caso 5, Q6–7 | análises de cenários com indicadores reais |
+| Analisar relatórios financeiros sem substituir gestor | 9, 11, 15 | caso 5, Q7 | exemplos quantitativos mais complexos |
+| Entender Ouvidoria e canais de manifestação | 10, 18 | Q8 | fluxos específicos vigentes |
+| Avaliar homologação/validade de deliberações | 5–6 e 11 | Q9 | análise de regimentos |
+| Promover representação efetiva com equidade | 14, 16–17 | caso 6, Q10 | políticas inclusivas em casos reais |
+| Reconhecer conflitos de interesse e autonomia | 11, 17 | discussões/caso 6 | ampliar itens avaliativos |
 
-**Status:** rascunho inicial, não homologado. Falta leitura direta de todas as fontes jurídicas vigentes, revisão de eventuais mudanças, mínimo didático previsto no lead, casos e questões completos e inspeção final de qualidade.
+**Fronteira curricular:** a aula **45** responde **como a população participa, delibera, fiscaliza e se faz ouvir**; a aula **50** responde **como o SUS é financiado e gerido, com valores mínimos, fontes, critérios de rateio, normas orçamentárias, blocos e mudanças recentes**. Evitar duplicação da matemática detalhada da LC141 e regras de repasse. Aqui os instrumentos financeiros são tratados pelo papel do conselho, sem dispensar o estudo técnico da aula 50.
+
+## 21. Referências oficiais e leis utilizadas
+
+1. **Brasil. Constituição Federal de 1988**, arts. 196 e 198 (saúde como direito e diretriz de participação comunitária). https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+2. **Brasil. Lei nº 8.080, de 19 de setembro de 1990** (Lei Orgânica da Saúde, organização do SUS). https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+3. **Brasil. Lei nº 8.142, de 28 de dezembro de 1990**, especialmente art. 1º, §1º–5º e art. 4º (Conferências, Conselhos, paridade e requisitos). https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
+4. **Conselho Nacional de Saúde. Resolução nº 453, de 10 de maio de 2012.** Diretrizes de conselhos e composição de representantes, página oficial marcada “Em Vigor” com atualização em 27/02/2026. https://www.gov.br/conselho-nacional-de-saude/pt-br/acesso-a-informacao/atos-normativos/resolucoes/2012/resolucao-no-453.pdf/view
+5. **Brasil. Lei Complementar nº 141, de 13 de janeiro de 2012**, principalmente art. 36 para relatório quadrimestral e relatório de gestão ao conselho. https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm
+6. **Ministério da Saúde. Instrumentos de Planejamento do SUS**, Plano, PAS, RQPC e RAG. https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento
+7. **Ministério da Saúde. Programação Anual de Saúde**, informações e PAS 2026 disponibilizadas no portal. https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas
+8. **Ministério da Saúde. Relatório Anual de Gestão**, documentos e definição do RAG como instrumento de prestação de resultados. https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag
+9. **DigiSUS Gestor Módulo Planejamento (DGMP).** FAQ sobre envio de Plano/PAS aos Conselhos e painel público de instrumentos. https://digisusgmp.saude.gov.br/faq
+10. **Ministério da Saúde. Participação Social**, audiências, consultas, chamamentos e ouvidorias. https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social
+11. **Ministério da Saúde. Como implantar uma Ouvidoria do SUS?**, página institucional atualizada em agosto de 2026. https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvsus/sistema-nacional-de-ouvidorias-do-sus/como-implantar-uma-ouvidoria-do-sus
+12. **Ministério da Saúde. Chamamento Público nº 11/2026**, fortalecimento de Conselhos Locais de Saúde — utilizado apenas como exemplo contemporâneo de ação de incentivo, não como norma geral que substitui Lei 8.142. https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/chamamentos-publicos/2026/chamamento-publico-no-11-2026-se
+
+**Cautelas sobre vigência:** a Resolução 453 consta como em vigor na página oficial pesquisada em outubro de 2026, mas é necessária conferência do texto integral e alterações posteriores antes de homologar qualquer quadro sobre eleição, mandato, quórum e presidência; regimentos locais também importam. A LC141 disciplina controle financeiro, porém procedimentos concretos do DigiSUS e instrumentos normativos devem ser verificados na data de publicação.
+
+## 22. Recursos gráficos planejados e qualidade editorial
+
+**Dez recursos didáticos propostos, não aprovados nem inseridos no HTML:** (1) cronologia original 1986–1988–1990–2012; (2) quadro comparativo Conselho versus Conferência; (3) gráfico de composição 50/25/25; (4) organograma Conselho x CIT/CIB/CIR; (5) fluxograma Plano–PAS–RQPC–RAG; (6) exemplo gráfico fictício de gasto versus produção assistencial; (7) matriz original de priorização territorial; (8) fluxo Ouvidoria–Gestão–Conselho; (9) diagrama de devolutiva comunitária e (10) painel didático de indicadores/controle social.
+
+O tema é **jurídico-institucional e conceitual**, sem necessidade de fotografia clínica de pacientes. A maioria dos visuais será diagrama autoral vetorial ou HTML; não inserir imagens decorativas apenas para atingir dez figuras. Documentos e brasões oficiais também podem ter direitos/regras de uso; preferência por reconstruir didaticamente processos com referências e texto próprios, sem copiar arte alheia.
+
+## 23. Auditoria preliminar — não homologado
+
+**Aprimorado nesta rodada:** o conteúdo deixou de ser memorizações 50/25/25 e trouxe fundamentos constitucionais, leitura operacional da Lei 8.142, distinção entre normas, funcionamento participativo, conferências, conselhos, comissões de pactuação, ouvidorias, LC141, prestação quadrimestral, Plano/PAS/RAG, métodos de priorização, integridade e desigualdade territorial. Seis casos institucionais e dez questões comentadas avaliam os principais conceitos.
+
+**Pendências:** a leitura direta completa da Resolução CNS 453 e eventuais alterações/regimentos locais; revisão jurídica especializada; caso-simulador de deliberação com dados reais anonimizados; auditoria humana de autossuficiência e questões; atingir profundidade premium quando necessário sem repetição; converter a HTML padronizado; testar índice, acessibilidade, mobile/PWA e gerar recursos visuais originais. **Nenhum material publicado foi substituído e nenhuma imagem foi enviada ao Admin.**
+
+**Status:** RASCUNHO_APROFUNDADO_REVISAO_PENDENTE. Mesmo que o manuscrito alcance uma metragem próxima do mínimo, isso não prova cobertura jurídica integral nem homologação.
