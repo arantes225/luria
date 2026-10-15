@@ -1,6 +1,6 @@
 # LURIA — Apostila 232: Coagulopatias, trombofilias e hemoterapia
 
-**Lote 11 · Clínica Médica / Hematologia · Manuscrito autoral v0.1 · 15/10/2026**
+**Lote 11 · Clínica Médica / Hematologia · Manuscrito autoral ampliado v0.2 · 15/10/2026**
 
 > **STATUS EDITORIAL: RASCUNHO NÃO CERTIFICADO — NÃO PUBLICAR.** Este material é ensino médico e não substitui protocolos locais, atuação de hematologista, hemoterapeuta e equipes de emergência. Doses e limiares só podem ser transpostos para prescrição após checagem de bula, peso, indicação, disponibilidade, exames, comorbidades e política institucional. Ainda faltam verificação independente, imagens licenciadas, HTML/PWA e aferição de ≥60 mil caracteres didáticos úteis.
 
@@ -480,57 +480,7 @@ Na dengue, plaquetopenia e hemoconcentração dependem de fase e fisiopatologia.
 | Suspender transfusão apenas se choque | Qualquer **suspeita** de reação exige parar e investigar |
 | TACO e TRALI são a mesma coisa | Mecanismos e manejo distintos; nota MS 225/2026 para TACO |
 
-## 21. Leituras prioritárias e referências públicas
-
-1. MINISTÉRIO DA SAÚDE (BRASIL). **Guia para Uso de Hemocomponentes**, 2ª edição; catálogo oficial, consultado 15/10/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/publicacoes/hemoterapia .
-2. MINISTÉRIO DA SAÚDE (BRASIL). **Nota Técnica Conjunta 225/2026-CGSH/DAET/SAES/MS: prevenção, diagnóstico, notificação e manejo de TACO**, publicada 23/09/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-225-2026-cgsh-daet-saes-ms.pdf/view .
-3. MINISTÉRIO DA SAÚDE (BRASIL). **Regulamentos técnicos específicos da hemoterapia**, incluindo Portaria GM/MS 11.685/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/legislacao/regulamentos-tecnicos-especificos-hemoterapia/ .
-4. CARSON JL et al. **Red Blood Cell Transfusion: 2023 AABB International Guidelines.** JAMA. 2023;330:1892–1902. https://doi.org/10.1001/jama.2023.12914 .
-5. METCALF RA et al. **Platelet Transfusion: 2025 AABB and ICTMG International Clinical Practice Guidelines.** JAMA. 2025;334:606–617. https://doi.org/10.1001/jama.2025.7529 .
-6. SRIVASTAVA A et al. **WFH Guidelines for the Management of Hemophilia**, 3rd ed. Haemophilia. 2020;26(Suppl 6):1–158. https://doi.org/10.1111/hae.14046 .
-7. MINISTÉRIO DA SAÚDE (BRASIL). **Protocolo de uso de emicizumabe para hemofilia A moderada e grave com inibidores**, aprovado em outubro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hemofilia-a-2013-uso-do-emicizumabe-protocolo-de-uso/view .
-8. JAMES PD et al. **ASH ISTH NHF WFH 2021 guidelines on the diagnosis of von Willebrand disease.** Blood Adv. 2021;5:280–300. https://doi.org/10.1182/bloodadvances.2020003265 .
-9. CONNELL NT et al. **ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease.** Blood Adv. 2021;5:301–325. https://doi.org/10.1182/bloodadvances.2020003264 .
-10. MIDDLEDORP S et al. **American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing.** Blood Adv. 2023;7:7101–7138. https://pubmed.ncbi.nlm.nih.gov/37195076/ .
-11. TEKTONIDOU MG et al. **EULAR recommendations for management of antiphospholipid syndrome in adults.** Ann Rheum Dis. 2019;78:1296–1304. https://doi.org/10.1136/annrheumdis-2019-215213 .
-12. ZHENG XL et al. **2025 focused update of the 2020 ISTH guidelines for management of thrombotic thrombocytopenic purpura.** J Thromb Haemost. 2025;23:3711–3732. https://pubmed.ncbi.nlm.nih.gov/40533296/ .
-
-## 22. Curadoria de imagens — propostas, não incorporadas
-
-Nenhuma imagem clínica foi importada, nenhuma licença de terceiros foi presumida. Candidatas obrigatórias à triagem documental, aquisição de direitos ou produção **autoral**:
-1. Diagrama próprio adesão GPIb–VWF e agregação GPIIb/IIIa.
-2. Fluxograma celular de trombina/fibrina/anticoagulantes.
-3. Lâmina periférica de esquizócitos, instituição com licença verificável.
-4. Foto clínica licenciada de petéquias de PTI, com consentimento.
-5. Foto clínica licenciada de hemartrose hemofílica.
-6. Tabela visual interpretativa TP/TTPa/plaquetas.
-7. Fluxograma original teste de mistura e busca de inibidor.
-8. Algoritmo diagnóstico original de DVW por VWF antígeno/atividade.
-9. Esquema original de investigação de trombofilia dirigida pelo impacto clínico.
-10. Fluxograma original para PTT, CIVD e HIT.
-11. Infográfico de compatibilidade ABO por **hemácias versus plasma**.
-12. Fluxo de reação transfusional e comparação TACO/TRALI.
-13. Foto institucional de hemocomponentes com licença e rótulos fictícios.
-14. Ilustração de crioprecipitado e fibrinogênio durante hemorragia maciça.
-
-Para cada imagem, verificar fonte e direitos comerciais, nitidez, pertinência e legenda; converter para WebP com peso limitado conforme padrão LURIA, submetendo à **aprovação no Admin**. Sem aprovação, usar apenas indicação editorial, nunca imagem “placeholder” com licença presumida.
-
-## 23. Pendências bloqueadoras de certificação
-
-- [x] Lote e tema conferidos com inventário; nenhum rascunho #232 existente no caminho visado.
-- [x] Etapa zero do Drive com **quatro fontes complementares efetivamente lidas**; procedência institucional dos resumos não comprovada e não foi transcrito material.
-- [x] Diretrizes oficiais consultadas para hemofilia, DVW, trombofilia, plaquetas, hemácias, PTT e TACO.
-- [x] Núcleo principal escrito com raciocínio sindrômico, fisiopatologia, laboratoriais, manejo e quadros práticos.
-- [ ] Ampliar ainda mais até ≥60.000 **caracteres úteis verificados**, não contagem bruta.
-- [ ] Acrescentar ao menos 8 casos e 12 questões originais plenamente comentadas; validar independentemente gabaritos.
-- [ ] Auditoria farmacológica da integralidade de doses, apresentações e interações via PCDT/bulas.
-- [ ] Conferência de disponibilidade brasileira e rotinas específicas: fator, emicizumabe, caplacizumabe, antídotos e hemoderivados.
-- [ ] Selecionar ≥10 imagens candidatas, verificar licença e submeter ao Admin.
-- [ ] Benchmark externo equivalente com comparação completa e auditoria de coesão de todas as partes.
-- [ ] Revisão médica especializada, checagem dos critérios de cada diretriz em populações especiais, integração HTML e testes desktop/PWA.
-- [ ] Manter **NÃO PUBLICAR — não fazer merge, deploy ou alterar a main**.
-
-## 24. Casos clínicos originais: do laboratório à decisão
+## 21. Casos clínicos originais: do laboratório à decisão
 
 ### Caso 1 — Menorragia desde a adolescência e coagulograma normal
 
@@ -704,7 +654,7 @@ Para cada imagem, verificar fonte e direitos comerciais, nitidez, pertinência e
 
 ---
 
-## 25. Questões autorais comentadas — estilo residência
+## 22. Questões autorais comentadas — estilo residência
 
 ### Questão 1 — Hemostasia e fator von Willebrand
 O sangramento mucoso recorrente, com epistaxe e menorragia, é mais compatível com alteração de qual componente inicial da hemostasia?
@@ -882,15 +832,65 @@ E. Toda cirrose é equivalente a anticoagulação por varfarina.
 
 **Gabarito B.** **A:** transfusão desnecessária pode causar TACO e outros eventos. **B:** correta; hemostasia na cirrose é reequilibrada e complexa. **C:** crio sem indicação não é apropriado. **D:** INR isolado não captura equilíbrio dos fatores. **E:** fisiologia é distinta. **Mini-revisão:** tratar paciente e evento, não “laboratório alterado” isoladamente.
 
-## 26. Fluxos de checagem independente dos casos e questões
+## 23. Fluxos de checagem independente dos casos e questões
 
 Antes de autorizar publicação, conferir com revisor externo: (a) cada caso representa síndrome plausível, com exames temporalmente adequados e nenhum dado contraditório; (b) cada gabarito possui uma única melhor resposta; (c) alternativas erradas são realmente erradas **no cenário**; (d) nenhuma conduta recomenda terapia indiscriminada ou omite urgência; (e) termos traduzidos conservam sentido; (f) se nova norma for publicada após 15/10/2026, revisão das condutas deve anteceder integração.
 
-### 26.1 Ajustes editoriais previstos
+### 23.1 Ajustes editoriais previstos
 
-As seções 24–26 foram acrescentadas após o checklist de pendências na estrutura de trabalho; na integração final devem ficar **antes do plano visual, bibliografia e auditoria final**, mantendo hierarquia de capítulos. A enumeração pode ser reorganizada sem cortar conteúdo. É mais importante que casos e perguntas se relacionem à explicação principal por links internos e chamadas textuais, e não fiquem como bloco desconectado.
+As seções de casos, questões e fluxos já foram reposicionadas antes do plano visual, bibliografia e auditoria final. A integração HTML deverá preservar essa hierarquia, com links internos e chamadas junto às explicações pertinentes. É mais importante que casos e perguntas se relacionem à explicação principal por links internos e chamadas textuais, e não fiquem como bloco desconectado.
 
-### 26.2 Integração com o ecossistema LURIA
+### 23.2 Integração com o ecossistema LURIA
 
 O banco de questões só poderá incorporar as questões após auditoria independente e marcação adequada de dificuldade/área. O Professor Alex poderá explorar mecanismos e perguntas de correção, mas não substituir decisão médica em hemorragia ativa. Simulador de emergência pode reutilizar raciocínio de PTT, HIT e reação transfusional se houver parâmetros clínicos e consequências coerentes, **sem importar automaticamente doses não validadas**.
+
+## 24. Curadoria de imagens — propostas, não incorporadas
+
+Nenhuma imagem clínica foi importada, nenhuma licença de terceiros foi presumida. Candidatas obrigatórias à triagem documental, aquisição de direitos ou produção **autoral**:
+1. Diagrama próprio adesão GPIb–VWF e agregação GPIIb/IIIa.
+2. Fluxograma celular de trombina/fibrina/anticoagulantes.
+3. Lâmina periférica de esquizócitos, instituição com licença verificável.
+4. Foto clínica licenciada de petéquias de PTI, com consentimento.
+5. Foto clínica licenciada de hemartrose hemofílica.
+6. Tabela visual interpretativa TP/TTPa/plaquetas.
+7. Fluxograma original teste de mistura e busca de inibidor.
+8. Algoritmo diagnóstico original de DVW por VWF antígeno/atividade.
+9. Esquema original de investigação de trombofilia dirigida pelo impacto clínico.
+10. Fluxograma original para PTT, CIVD e HIT.
+11. Infográfico de compatibilidade ABO por **hemácias versus plasma**.
+12. Fluxo de reação transfusional e comparação TACO/TRALI.
+13. Foto institucional de hemocomponentes com licença e rótulos fictícios.
+14. Ilustração de crioprecipitado e fibrinogênio durante hemorragia maciça.
+
+Para cada imagem, verificar fonte e direitos comerciais, nitidez, pertinência e legenda; converter para WebP com peso limitado conforme padrão LURIA, submetendo à **aprovação no Admin**. Sem aprovação, usar apenas indicação editorial, nunca imagem “placeholder” com licença presumida.
+
+## 25. Leituras prioritárias e referências públicas
+
+1. MINISTÉRIO DA SAÚDE (BRASIL). **Guia para Uso de Hemocomponentes**, 2ª edição; catálogo oficial, consultado 15/10/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/publicacoes/hemoterapia .
+2. MINISTÉRIO DA SAÚDE (BRASIL). **Nota Técnica Conjunta 225/2026-CGSH/DAET/SAES/MS: prevenção, diagnóstico, notificação e manejo de TACO**, publicada 23/09/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-225-2026-cgsh-daet-saes-ms.pdf/view .
+3. MINISTÉRIO DA SAÚDE (BRASIL). **Regulamentos técnicos específicos da hemoterapia**, incluindo Portaria GM/MS 11.685/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/legislacao/regulamentos-tecnicos-especificos-hemoterapia/ .
+4. CARSON JL et al. **Red Blood Cell Transfusion: 2023 AABB International Guidelines.** JAMA. 2023;330:1892–1902. https://doi.org/10.1001/jama.2023.12914 .
+5. METCALF RA et al. **Platelet Transfusion: 2025 AABB and ICTMG International Clinical Practice Guidelines.** JAMA. 2025;334:606–617. https://doi.org/10.1001/jama.2025.7529 .
+6. SRIVASTAVA A et al. **WFH Guidelines for the Management of Hemophilia**, 3rd ed. Haemophilia. 2020;26(Suppl 6):1–158. https://doi.org/10.1111/hae.14046 .
+7. MINISTÉRIO DA SAÚDE (BRASIL). **Protocolo de uso de emicizumabe para hemofilia A moderada e grave com inibidores**, aprovado em outubro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hemofilia-a-2013-uso-do-emicizumabe-protocolo-de-uso/view .
+8. JAMES PD et al. **ASH ISTH NHF WFH 2021 guidelines on the diagnosis of von Willebrand disease.** Blood Adv. 2021;5:280–300. https://doi.org/10.1182/bloodadvances.2020003265 .
+9. CONNELL NT et al. **ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease.** Blood Adv. 2021;5:301–325. https://doi.org/10.1182/bloodadvances.2020003264 .
+10. MIDDLEDORP S et al. **American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing.** Blood Adv. 2023;7:7101–7138. https://pubmed.ncbi.nlm.nih.gov/37195076/ .
+11. TEKTONIDOU MG et al. **EULAR recommendations for management of antiphospholipid syndrome in adults.** Ann Rheum Dis. 2019;78:1296–1304. https://doi.org/10.1136/annrheumdis-2019-215213 .
+12. ZHENG XL et al. **2025 focused update of the 2020 ISTH guidelines for management of thrombotic thrombocytopenic purpura.** J Thromb Haemost. 2025;23:3711–3732. https://pubmed.ncbi.nlm.nih.gov/40533296/ .
+
+## 26. Pendências bloqueadoras de certificação
+
+- [x] Lote e tema conferidos com inventário; nenhum rascunho #232 existente no caminho visado.
+- [x] Etapa zero do Drive com **quatro fontes complementares efetivamente lidas**; procedência institucional dos resumos não comprovada e não foi transcrito material.
+- [x] Diretrizes oficiais consultadas para hemofilia, DVW, trombofilia, plaquetas, hemácias, PTT e TACO.
+- [x] Núcleo principal escrito com raciocínio sindrômico, fisiopatologia, laboratoriais, manejo e quadros práticos.
+- [ ] Mais de 90 mil caracteres **brutos**, sem auditoria conclusiva de ≥60.000 **caracteres didáticos úteis**; revisar densidade e redundâncias.
+- [x] Incluídos 12 casos e 16 questões comentadas (alternativas A–E); **validação independente de gabaritos ainda pendente**.
+- [ ] Auditoria farmacológica da integralidade de doses, apresentações e interações via PCDT/bulas.
+- [ ] Conferência de disponibilidade brasileira e rotinas específicas: fator, emicizumabe, caplacizumabe, antídotos e hemoderivados.
+- [ ] Selecionar ≥10 imagens candidatas, verificar licença e submeter ao Admin.
+- [ ] Benchmark externo equivalente com comparação completa e auditoria de coesão de todas as partes.
+- [ ] Revisão médica especializada, checagem dos critérios de cada diretriz em populações especiais, integração HTML e testes desktop/PWA.
+- [ ] Manter **NÃO PUBLICAR — não fazer merge, deploy ou alterar a main**.
 
