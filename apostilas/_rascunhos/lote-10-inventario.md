@@ -71,3 +71,28 @@ Materiais **abertos e lidos** em 15/10/2026, todos apenas comparativos **parciai
 [ ] Integração apenas após os gates; nenhum deploy ou catálogo alterado durante rascunho.
 
 > **Instrução para próximos chats:** preservar os arquivos LURIA preexistentes, seguir exatamente a faixa 204–225, registrar acréscimos em capítulo específico de cada arquivo e assinalar permanentemente as incorporações a apostilas anteriores. Não confundir o número 204 com uma nova página já publicada.
+
+## 15/10/2026 — registro de produção efetiva (branch de trabalho, sem publicação)
+
+**Branch de isolamento:** `editorial/lote-10-204-225`. A branch `main`, o site publicado, o catálogo e o banco Supabase **não foram alterados** por esta rodada. Os dois arquivos abaixo foram gravados e verificados no GitHub, sem mesclar:
+
+| Aula | Arquivo produzido | Caracteres brutos no Markdown | Casos originais | Questões originais | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| 204 Kawasaki e vasculites pediátricas | `lote-10-aula-204-vasculites-pediatricas-kawasaki.md` | **65.312** | **6** | **10** | Rascunho longo, pendente de certificação |
+| 205 Dor pélvica aguda e torção | `lote-10-aula-205-dor-pelvica-aguda-torcao-anexial.md` | **68.255** | **8** | **12** | Rascunho longo, pendente de certificação |
+
+**Atenção:** contagens brutas incluem Markdown, questões, casos, bibliografia e controles editoriais. **NÃO comprova mínimo de 60 mil caracteres didáticos úteis**. Nenhum desses textos tem validação científica independente ou imagem clínica licenciada e aprovada. Extensão, completude e publicação são gates diferentes.
+
+**Etapa zero da 205 executada parcialmente:** `Doença Inflamatória Pélvica.pdf` e `02 - ABDOME AGUDO INFLAMATORIO - APENDICITE AGUDA.pdf` abertos e efetivamente lidos no Drive como materiais próximos, **não equivalentes** ao tema principal. Fontes ACOG 2019 e ACR 2023/2024 conferidas para Doppler e imagens. Não atribuir autoria Estratégia MED aos PDFs.
+
+### Aula 206 — pré-auditoria de sobreposição feita na mesma data
+
+**Material LURIA efetivamente reaberto:** `apostilas/sangramento-uterino-anormal/index.html` (~69.515 caracteres do HTML), com estrutura extensa contendo FIGO PALM–COEIN, capítulos de pólipo/leiomioma e métodos de imagem/terapia. **Resultado:** a aula 206 NÃO deve ser uma cópia ou substituição do livro de SUA. Seu núcleo próprio será a **morfologia/impacto reprodutivo e escolha de procedimento por topografia**, com classificação FIGO 0–8 e híbrida, planejamento cirúrgico, histeroscopia, polipectomia, miomectomia, embolização e seguimento, além de variações por gravidez/fertilidade.
+
+**Busca Google Drive realizada:** “mioma”, “mioma uterino”, “miomatose”, “leiomioma”, “pólipo endometrial”, “histeroscopia” e “sangramento uterino”. Nenhuma apostila integral de miomatose foi localizada. **Arquivos lidos parcialmente correlatos:** `02 - CANCER DE ENDOMETRIO.pdf` (diferencial de pólipo, imagem/histeroscopia, não trata miomas) e `02 - SANGRAMENTO DA PRIMEIRA METADE.pdf` (leiomiomatose/polipose como fatores associados a perdas gestacionais, sem diagnóstico/tratamento de miomas). Nenhuma autoria Estratégia MED comprovada. **Benchmark integral pendente**: não certificar etapa zero.
+
+**Fontes independentes inicialmente identificadas:** classificação FIGO de leiomioma 2018, síntese FIGO de diagnóstico e classificação 2025, ACOG Practice Bulletin nº 228 de 2021 (reafirmado em 2025) e NICE NG88 com recomendações sobre histeroscopia/US, miomas e tratamento de sangramento. Necessário confirmar versão de diretriz brasileira aplicável antes da escrita completa.
+
+**Plano de capítulos exclusivos para aula 206 (SEM repetir capítulos já autossuficientes da SUA):** anatomia/fisiopatologia do miométrio e pólipos; FIGO topográfica e como descrever um exame; rastreio de anemia e sintomas compressivos; distinção entre miomas, adenomiose, pólipos e sarcoma; ultrassom, sonohisterografia, histeroscopia e RM; interpretação de achados; opções clínicas e hormonais/antifibrinolíticas por objetivo; indicação de polipectomia/miomectomia e escolha da via; embolização e ablação em pacientes selecionadas; histerectomia e proteção do trato urinário; fertilidade, gravidez, perimenopausa; complicações, seguimento, quatro ou mais casos, seis ou mais questões, imagens autorizadas.
+
+**Pendências comuns a todas as aulas:** revisão especializada de condutas/doses, benchmarking equivalente quando acessível, imagens no Admin, 60k didáticos úteis sem repetição, teste de autossuficiência, HTML e PWA. As aulas 206–225 permanecem **não produzidas**; 206 possui apenas pré-auditoria acima.
