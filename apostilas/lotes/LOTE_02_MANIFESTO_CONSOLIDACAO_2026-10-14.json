@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 5,
+  "version": 6,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "PRE-PUBLICAÇÃO — casos e questões 1–2 reorganizados; NÃO CERTIFICADO",
+  "status": "RASCUNHO DE PREPUBLICAÇÃO NÃO CERTIFICADO — checagem pontual GOLD e ATS aplicada",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -73,7 +73,7 @@
       "question_count": 15,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "next_gate": "Auditoria médica e farmacológica independente, curadoria de imagens, validação real Node, PWA e compatibilidade de publicação; sem merge/deploy",
       "json_visible_estimate": 75595,
       "json_table_count": 8
     },
@@ -85,10 +85,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "a62b5d93cdaa0c7b745fe423172f9a7ffde20c57",
+      "consolidated_sha": "d7ccf8dd1513b7984d8370040f1201f746e045ac",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 105212,
-      "consolidated_approximate_plain_characters": 100783,
+      "consolidated_raw_characters": 111611,
+      "consolidated_approximate_plain_characters": 106963,
       "chapter_count": 9,
       "chapters": [
         {
@@ -128,13 +128,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 16,
-      "question_count": 22,
+      "case_count": 17,
+      "question_count": 23,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
-      "json_visible_estimate": 100783,
-      "json_table_count": 9
+      "next_gate": "Auditoria médica e farmacológica independente, curadoria de imagens, validação real Node, PWA e compatibilidade de publicação; sem merge/deploy",
+      "json_visible_estimate": 106963,
+      "json_table_count": 10
     },
     {
       "id": "DIABETES_MELLITUS",
@@ -195,7 +195,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "next_gate": "Auditoria médica e farmacológica independente, curadoria de imagens, validação real Node, PWA e compatibilidade de publicação; sem merge/deploy",
       "json_visible_estimate": 99415,
       "json_table_count": 13
     },
@@ -207,10 +207,10 @@
       "source_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
       "source_sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
-      "consolidated_sha": "d9ec66eec1ec43ea8bdb354f50e7f08a8d751023",
+      "consolidated_sha": "d0487824789a66f59b7f3c2796f224f3a960bcdc",
       "source_raw_characters": 76752,
-      "consolidated_raw_characters": 88830,
-      "consolidated_approximate_plain_characters": 84740,
+      "consolidated_raw_characters": 96147,
+      "consolidated_approximate_plain_characters": 91723,
       "chapter_count": 10,
       "chapters": [
         {
@@ -254,13 +254,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 14,
-      "question_count": 21,
+      "case_count": 16,
+      "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
-      "json_visible_estimate": 84740,
-      "json_table_count": 10
+      "next_gate": "Auditoria médica e farmacológica independente, curadoria de imagens, validação real Node, PWA e compatibilidade de publicação; sem merge/deploy",
+      "json_visible_estimate": 91723,
+      "json_table_count": 12
     },
     {
       "id": "TUBERCULOSE",
@@ -317,19 +317,19 @@
       "question_count": 21,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "exame editorial médico integral, imagens autorizadas, testes reais do Node e desktop/PWA; não publicar",
+      "next_gate": "Auditoria médica e farmacológica independente, curadoria de imagens, validação real Node, PWA e compatibilidade de publicação; sem merge/deploy",
       "json_visible_estimate": 102106,
       "json_table_count": 13
     }
   ],
   "last_expansion": "2026-10-14",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "7c90d9cc31a7e079fb6ce6ecfb5c1c1d0cfab4ba",
+  "input_json_sha": "90100ec87654b5e4383c4dea2a105c5cda0c615c",
   "last_update_scope": [
-    "Removidos dos capítulos clínicos de DPOC, Diabetes, PAC e TB os 16 parágrafos compactos de Casos 1–2 e Questões 1–2",
-    "Reescritos os oito casos iniciais e oito questões iniciais, com raciocínio/exames/conduta e comentários individualizados",
-    "Casos e questões numerados sem lacunas nas seções finais dos cinco livros; paridade JSON/Markdown verificada",
-    "Validador Node de pré-publicação expandido para identificar duplicação ou deslocamento de casos/questões"
+    "Esclarecido GOLD 2026: grupo E por uma exacerbação moderada na avaliação inicial, distinta de decisão de escalonamento em quem já recebe manutenção; reforçado evitar CI automático",
+    "ATS 2025: introduzida matriz de antibioticoterapia para quatro cenários de PAC com vírus positivo e uso condicional de ultrassonografia pulmonar",
+    "Dois casos e três questões acrescentados e JSON de pré-publicação sincronizado",
+    "Removida da PAC uma anotação interna sobre benchmark do Drive que não pertencia ao texto do aluno"
   ],
-  "last_revision": "2026-10-14"
+  "last_revision": "2026-10-15"
 }
