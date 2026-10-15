@@ -156,6 +156,65 @@ O padrão miliar descreve disseminação hematogênica com numerosos focos, freq
 
 Na TB pericárdica, derrame volumoso ou pericardite constritiva podem comprometer hemodinâmica; tamponamento é emergência. Na forma abdominal, dor, ascite, febre, perda de peso e espessamento peritoneal podem simular carcinomatose. Na forma ganglionar, crescimento de adenopatia no curso do tratamento pode ser reação paradoxal, persistência bacteriana, falha ou outra doença; resposta isolada do tamanho não define resistência. Sempre correlacione com bacteriologia, histologia e evolução clínica.
 
+
+### 3.3 Meningite tuberculosa: investigar e tratar uma emergência que pode ser paucibacilar
+
+#### 3.3.1 Da inflamação das meninges às manifestações neurológicas
+
+A meningoencefalite tuberculosa costuma ter evolução subaguda, mas pode deteriorar-se rapidamente. O problema não consiste apenas na presença do bacilo no líquor: a reação inflamatória, particularmente nas cisternas da base, pode comprometer pares cranianos, obstruir a circulação do líquido cefalorraquidiano e atingir vasos cerebrais, produzindo **hidrocefalia, vasculite e infarto**. Cefaleia progressiva, febre, inapetência, alteração de comportamento, vômitos, rigidez cervical, paresia de nervos cranianos, sonolência e convulsões podem se combinar, mas a ausência de rigidez de nuca não exclui doença, sobretudo em idosos, crianças pequenas e pessoas imunossuprimidas.
+
+A suspeita deve aumentar na pessoa com **meningite subaguda acompanhada de déficit focal, acometimento de pares cranianos ou rebaixamento de consciência**, especialmente se existir exposição epidemiológica ou achados compatíveis com tuberculose em outro sítio. Não exigir que o paciente apresente tosse ou radiografia típica: doença meníngea pode ocorrer sem confirmação respiratória no momento da avaliação. A morte e as sequelas neurológicas podem decorrer de atraso no reconhecimento e de complicações intracranianas, mesmo quando o tratamento antimicobacteriano posteriormente controla a infecção.
+
+#### 3.3.2 Análise do líquor e testes microbiológicos — o que cada resultado demonstra
+
+O líquido cefalorraquidiano frequentemente mostra **hiperproteinorraquia, glicorraquia baixa** e pleocitose com predomínio linfocítico. Essa apresentação é sugestiva, mas não específica: meningite fúngica, sobretudo criptococose no contexto de HIV avançado, infecções bacterianas parcialmente tratadas, doenças inflamatórias e infiltração neoplásica também podem produzir alterações semelhantes. Nas fases iniciais pode existir predominância neutrofílica. Um padrão celular atípico ou exame pouco inflamatório em imunossuprimido não descarta meningoencefalite tuberculosa.
+
+Solicitar exames de LCR conforme disponibilidade e protocolo, incluindo baciloscopia, **teste molecular para o complexo M. tuberculosis**, cultura micobacteriana e testes de sensibilidade quando o material permitir. Em centros que dispõem de testes moleculares mais sensíveis, a estratégia deve seguir os algoritmos laboratoriais vigentes. **Nenhum resultado molecular negativo em amostra única exclui com segurança a doença**, dada a baixa concentração bacilar no LCR. Cultura é lenta, porém relevante para confirmação e resistência. Não confundir teste positivo para complexo MTB com confirmação de sensibilidade a todos os medicamentos: o escopo de resistência detectada depende da plataforma.
+
+| Informação da avaliação | O que acrescenta | O que NÃO permite concluir |
+| --- | --- | --- |
+| Cefaleia subaguda, febre, par craniano acometido e sinais de hipertensão intracraniana | Sugerem inflamação de meninges da base e complicações neurológicas | Não definem etiologia específica sem avaliação complementar |
+| LCR com proteínas elevadas, glicose reduzida e pleocitose | Sustenta síndrome meníngea compatível com TB em contexto adequado | Não diferencia isoladamente TB de criptococose, fungos e neoplasia |
+| Teste molecular positivo em LCR | Evidência microbiológica importante, a interpretar pelo teste empregado | Não informa automaticamente susceptibilidade a todos os fármacos |
+| Teste molecular negativo em LCR | Reduz a probabilidade em grau dependente do método e da amostra | **Não exclui** meningite tuberculosa paucibacilar |
+| Hidrocefalia, infartos ou realce meníngeo basal à imagem | Evidencia complicações e eleva suspeita clínica | Não substitui testes e investigação de diagnósticos concorrentes |
+
+A coleta não deve produzir dano desnecessário: **déficit focal, rebaixamento significativo de consciência, sinais de hipertensão intracraniana ou suspeita de lesão expansiva** exigem avaliação imediata da segurança da punção lombar e da necessidade de neuroimagem prévia. Se houver contraindicação temporária para punção, manter investigação por outras vias e não atrasar assistência hospitalar. A decisão de colher amostra e iniciar terapia deve ser articulada com emergência, infectologia, neurologia e neurocirurgia quando necessário.
+
+#### 3.3.3 Tratamento e duração — por que não copiar os seis meses da TB pulmonar
+
+Para tuberculose sensível meningoencefálica, o **Manual de Recomendações para o Controle da Tuberculose no Brasil (2ª edição, 2019, disponível no portal federal)** apresenta **2RHZE/10RH para pessoas de dez anos ou mais**, com duração total de **doze meses**. Para menores de dez anos, descreve **2RHZ/10RH**, observadas apresentações pediátricas e protocolos vigentes. As tabelas do Manual são a referência brasileira para a estrutura de tratamento dessa forma, mas a escolha final, as apresentações pediátricas, a confirmação de sensibilidade e as eventuais atualizações devem ser verificadas no programa de tuberculose e no serviço de referência. **Regimes de quatro meses destinados a formas pediátricas sensíveis não graves não devem ser extrapolados à meningite tuberculosa.**
+
+O Manual também recomenda **corticosteroide adjuvante** na meningoencefalite tuberculosa. A OMS mantém recomendação de dexametasona ou prednisolona/prednisona, com **redução gradual ao longo de aproximadamente seis a oito semanas**, sob supervisão especializada. O objetivo é modular a inflamação e reduzir risco de desfechos graves; corticosteroide não substitui esquema antituberculose nem autoriza usá-lo indiscriminadamente nas demais apresentações extrapulmonares.
+
+A presença de HIV exige atenção especial. Na tuberculose pulmonar associada a HIV, a recomendação de TARV precoce não pode ser aplicada automaticamente à doença meníngea: a OMS recomenda **adiar o início da TARV por pelo menos quatro semanas e iniciá-la entre quatro e oito semanas após o início do tratamento da meningite tuberculosa**, pelo risco de eventos adversos e inflamação intracraniana com início excessivamente precoce. Essa é uma recomendação internacional; o caso brasileiro requer conciliação com PCDT de HIV, esquema antirretroviral, interações com rifampicina e avaliação especializada. Em meningite no contexto de HIV avançado, **criptococose** deve entrar imediatamente no diagnóstico diferencial, pois a estratégia de corticosteroide e a prioridade terapêutica são distintas. Estudos recentes de corticoterapia em meningite tuberculosa com HIV descrevem incerteza maior de benefício do que em pessoas sem HIV; registrar a divergência das evidências e individualizar com especialistas, sem substituir a conduta do protocolo nacional por regra improvisada.
+
+O acompanhamento hospitalar deve vigiar consciência, pressão intracraniana, convulsões, hidrocefalia, déficit focal, distúrbios de sódio, eventos adversos dos fármacos e, após estabilização, reabilitação neurológica. A revisão do plano não se resume a pedir novo líquor: é necessário documentar trajetória clínica, achados de imagem quando indicados e adesão a um tratamento prolongado.
+
+#### 3.3.4 Fluxo de decisão em cenário real
+
+**Suspeita clínica de meningite subaguda grave → estabilização e avaliação hospitalar urgente → exame neurológico e segurança para punção lombar → coleta microbiológica e investigação de etiologias concorrentes, sem atrasar tratamento em suspeita elevada → regime de TB meníngea e corticosteroide adjuvante conforme protocolo → vigilância de hidrocefalia, infarto e convulsões → seguimento clínico, funcional e programático prolongado.**
+
+A investigação de TB pulmonar concomitante, quando pertinente, contribui para confirmação e vigilância de contatos, mas **não deve atrasar o manejo da complicação neurológica**. A decisão sobre transmissão respiratória e precauções depende da apresentação pulmonar/laríngea, e não do simples fato de haver infecção no sistema nervoso central.
+
+### 3.4 Tuberculose vertebral e risco de compressão medular: um problema de tempo e anatomia
+
+A doença de Pott pode atingir corpos vertebrais, espaço discal e estruturas paravertebrais, ocasionando dor progressiva, deformidade, coleção paravertebral ou abscesso de psoas e, em apresentações avançadas, compressão de raízes ou medula. **Dor lombar persistente com febre baixa ou emagrecimento não é prova de TB**; neoplasia, espondilodiscite piogênica e outras causas seguem no diferencial. Tampouco uma lesão vertebral sem febre exclui infecção.
+
+**Fraqueza progressiva, alteração da marcha, perda de sensibilidade, anestesia em sela, retenção urinária nova ou disfunção esfincteriana** são sinais de alarme. Nessa circunstância, avaliação emergencial e imagem apropriada da coluna, frequentemente **ressonância magnética**, são prioritárias; biópsia percutânea ou cirúrgica, cultura e anatomopatológico podem confirmar etiologia e orientar sensibilidade, mas não devem retardar abordagem de compressão neurológica instável. A necessidade de descompressão, drenagem ou estabilização depende de exame neurológico, instabilidade, extensão de coleções e resposta ao tratamento, com equipe especializada.
+
+O Manual brasileiro apresenta, como estrutura usual para doença osteoarticular sensível em adolescentes e adultos, **2RHZE/10RH**, com possibilidade de tratamento de **seis meses em casos de baixa complexidade, a critério clínico**. Isso não transforma toda lesão vertebral em candidata a esquema abreviado. A resposta deve considerar melhoria de dor/função, estado neurológico, marcadores e evolução radiológica apropriada; uma alteração residual de imagem isolada pode persistir após melhora clínica e não representa necessariamente falha.
+
+**Raciocínio para prova:** meningite e coluna vertebral compartilham a necessidade de reconhecer sequelas neurológicas e duração terapêutica diferenciada, mas **corticosteroide é adjuvante recomendado especificamente na meningite**, não regra automática para toda espondilodiscite.
+
+### 3.5 TB pericárdica e pleural: não importar a corticoterapia da meningite
+
+Na **pericardite tuberculosa**, derrame e espessamento pericárdico podem causar tamponamento, constrição e comprometimento hemodinâmico. Hipotensão, turgência jugular, taquicardia e sinais de choque diante de derrame demandam ecocardiografia e avaliação emergencial; a drenagem segue indicação clínica e não pode ser adiada esperando cultura. A OMS permite **considerar** corticosteroide adjuvante em pericardite tuberculosa, mas a força da recomendação é **condicional, com evidência muito incerta**, diferente da recomendação forte para meningite. Protocolos e cenários com HIV podem diferir; a decisão deve ser individualizada.
+
+Na **pleurite tuberculosa**, o principal é integrar clínica, toracocentese, microbiologia, imagem e, quando indicada, biópsia. Um resultado de ADA elevado aumenta a probabilidade em cenário compatível, mas não autoriza chamá-lo de patognomônico: empiema e algumas doenças hematológicas também podem elevá-lo. Uma dose de corticoide usada na meningite tuberculosa não deve ser transplantada rotineiramente para derrame pleural. A necessidade de drenagem pleural tem relação com repercussão respiratória e características do derrame, não com uso prévio de corticoide.
+
+**Resumo de alto rendimento:** meningite exige prioridade hospitalar, amostras mesmo com baixa sensibilidade individual, esquema mais longo e corticosteroide adjuvante; doença vertebral exige não perder a janela de preservar função neurológica; pericardite pode produzir tamponamento e tem evidência mais fraca para corticosteroide; derrame pleural exige diagnóstico diferencial e não é confirmado por ADA isolada.
+
 ## 4. Tratamento da TB sensível e acompanhamento
 
 ### 4.1 Tratamento e acompanhamento no SUS
@@ -923,6 +982,15 @@ Homem de 46 anos, trabalhador de abatedouro, iniciou RHZE por doença pulmonar c
 Menino de 12 dias, a termo, alimenta-se bem, tem peso adequado e não apresenta febre ou desconforto respiratório. A mãe recebeu diagnóstico bacteriológico de TB pulmonar bacilífera na maternidade. A família quer receber alta após BCG sem outras medidas. **Hipóteses:** RN de contato domiciliar de alto risco, aparentemente sem TB ativa no momento, mas ainda sem avaliação específica. **Raciocínio:** a vacina protege sobretudo contra formas graves infantis, porém não evita toda infecção e não substitui a linha de cuidado neonatal. **Exames:** avaliação pediátrica clínica para afastar doença, documentação da condição materna, investigação de exposição e exames indicados. **Conduta:** articular maternidade, Pediatria e programa de TB para decidir prevenção primária, reavaliação e momento adequado da BCG, mantendo precauções respiratórias conforme transmissibilidade e orientações para amamentação. **Por que este caso importa:** exposição recente, doença ativa e prevenção são decisões diferentes, mesmo em RN assintomático.
 
 
+
+### Caso 23 — Meningite subaguda com teste molecular negativo no líquor
+
+Homem de 34 anos, febre e cefaleia progressivas há dezoito dias, vômitos, diplopia e sonolência. Ao exame, há paresia de nervo craniano e sinais de comprometimento neurológico. Exame de imagem solicitado conforme a avaliação inicial revela hidrocefalia e realce meníngeo basal. LCR, obtido com segurança pela equipe hospitalar, mostra proteínas elevadas, glicose reduzida e pleocitose, mas o primeiro teste molecular para MTB é negativo. **Hipótese:** meningoencefalite tuberculosa permanece altamente plausível; meningite fúngica, especialmente criptococose se houver HIV, e outras infecções/infiltração neoplásica devem ser investigadas. **Raciocínio:** o exame molecular negativo não exclui tuberculose paucibacilar, enquanto a combinação clínica, liquórica e radiológica aponta para síndrome meníngea grave. **Exames:** microbiologia ampliada e cultura do LCR, avaliação para HIV e diagnósticos concorrentes e busca de foco extracraniano quando apropriado. **Conduta:** atendimento hospitalar sem atraso perigoso, discussão imediata de tratamento antituberculose meníngeo e corticosteroide adjuvante conforme protocolo, com avaliação neurocirúrgica de hidrocefalia. **Por que importa:** esperar cultura para agir em suspeita grave pode aumentar sequelas; resultado molecular isolado não anula a síndrome clínica.
+
+### Caso 24 — Dor vertebral e retenção urinária não podem aguardar consulta eletiva
+
+Mulher de 51 anos, lombalgia subaguda há dois meses, emagrecimento, dificuldade progressiva para caminhar e nova retenção urinária. Uma TC prévia indicou lesão destrutiva vertebral com coleção paravertebral. **Hipóteses:** espondilodiscite tuberculosa, infecção bacteriana piogênica ou neoplasia; compressão neurológica é emergência comum às hipóteses. **Raciocínio:** a evolução insidiosa favorece determinadas etiologias, mas a retenção urinária e piora motora são sinais de risco imediato de déficit permanente. **Exames:** avaliação neurológica seriada e ressonância da coluna conforme acesso e estabilidade; amostra tecidual para histologia, cultura e testes moleculares conforme condições. **Conduta:** encaminhamento hospitalar urgente a equipe de coluna/neurocirurgia e infectologia; avaliar necessidade de descompressão e suporte, sem condicionar assistência ao resultado final de cultura. Se TB sensível for confirmada, definir duração e regime conforme protocolo osteoarticular. **Por que importa:** não se deve tratar compressão de medula com simples prescrição ambulatorial e retorno distante.
+
 ## 9. Questões autorais comentadas
 
 ### Questão 1 — Infecção latente versus tuberculose ativa
@@ -1228,9 +1296,37 @@ D) Proibir definitivamente amamentação em qualquer caso de TB pulmonar materna
 **Gabarito: C.** RN exposto requer investigação de doença e prevenção adaptada à idade e à exposição. **A:** BCG não exclui nem previne toda infecção. **B:** confunde TB ativa, que exige tratamento específico, com profilaxia. **D:** transmissão é principalmente aérea; amamentação pode ser mantida em situações apropriadas com precauções, avaliando mastite tuberculosa. **Mini-revisão:** antes de prevenir, excluir doença; antes de vacinar, conferir fluxo do RN exposto.
 
 
+
+### Questão 33 — Líquor negativo na suspeita de meningite tuberculosa
+
+Paciente apresenta cefaleia e febre subagudas, alteração de comportamento, par craniano acometido e LCR inflamatório com hipoglicorraquia. A primeira pesquisa molecular de MTB no LCR foi negativa. Qual afirmação é correta?
+
+A) O resultado negativo exclui tuberculose do sistema nervoso central.
+B) Não se pode iniciar tratamento até a cultura ficar pronta, mesmo diante de deterioração neurológica.
+C) Em forte suspeita clínica, a negatividade isolada não exclui TB meníngea, devendo-se investigar etiologias concorrentes e conduzir o quadro hospitalarmente sem atraso perigoso.
+D) A duração padrão da TB meníngea é sempre igual à da TB pulmonar simples em todas as idades.
+
+**Gabarito: C.** **A:** teste com sensibilidade imperfeita pode ser negativo em doença paucibacilar. **B:** aguardar cultura pode causar dano neurológico; a decisão depende da probabilidade e gravidade. **C:** interpreta síndrome, diagnóstico diferencial, segurança da coleta e oportunidade terapêutica em conjunto. **D:** a forma meningoencefálica possui esquema prolongado no Manual brasileiro. **Mini-revisão:** teste negativo não exclui meningite tuberculosa; clínica, líquor, imagem e gravidade definem a urgência.
+
+### Questão 34 — Esquema de TB osteoarticular e sinal de alarme
+
+Homem de 48 anos com suspeita de espondilodiscite tuberculosa desenvolve fraqueza progressiva de membros inferiores e retenção urinária. Qual conduta é mais apropriada?
+
+A) Prescrever analgésico e reavaliar em seis meses, porque TB osteoarticular é sempre indolente.
+B) Avaliar imediatamente possível compressão neurológica com imagem apropriada e equipe especializada; na TB osteoarticular sensível, o esquema brasileiro usual pode exigir doze meses, com exceções selecionadas.
+C) Iniciar BPaLM automaticamente porque a lesão é extrapulmonar.
+D) Indicar corticosteroide em todos os pacientes por analogia com meningoencefalite tuberculosa, dispensando investigação etiológica.
+
+**Gabarito: B.** **A:** perde a janela de proteção da função neurológica. **B:** integra reconhecimento de compressão com decisão terapêutica adequada à forma e complexidade. **C:** BPaLM tem critérios próprios para TB drogarresistente, e a nota brasileira de 2026 exclui forma osteoarticular desse regime. **D:** não há regra de corticoterapia universal para todas as formas extrapulmonares. **Mini-revisão:** TB vertebral exige avaliação da medula/raízes e da estabilidade da coluna, não somente contagem de meses de antibiótico.
+
 ## Referências essenciais
 
 1. Ministério da Saúde — Manual de Controle da TB, 2ª edição. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view
 2. Ministério da Saúde — Tratamento da TB. https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento
 3. Ministério da Saúde — Nota Informativa 2/2026 TB-DR. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file
 4. OMS — Treatment and Care, Module 4 (2026). https://www.who.int/publications/i/item/9789240125124
+
+5. Ministério da Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil, 2ª edição atualizada (2019), capítulos de tuberculose meningoencefálica e osteoarticular, quadros 21 e 23. https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel/tuberculose/manual-de-recomendacoes-e-controle-da-ttuberculose-no-brasil-2a-ed
+6. OMS. WHO consolidated guidelines on tuberculosis: Module 4, Treatment and Care, 2ª edição (2026). https://www.who.int/publications/i/item/9789240125124
+7. OMS. TB Knowledge Sharing Platform — Tratamento de TB/HIV e adiamento de TARV em meningite tuberculosa. https://tbksp.who.int/es/node/2778
+8. International Tuberculous Meningitis Research Consortium. A clinical practice guideline for tuberculous meningitis (2025). https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/
