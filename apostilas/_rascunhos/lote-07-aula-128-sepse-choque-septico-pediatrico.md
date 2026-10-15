@@ -51,6 +51,27 @@ A proposta Phoenix não se aplica diretamente a recém-nascidos/neonatos com **i
 
 **Implicação para provas:** febre + taquicardia não é sinônimo automático de sepse; e uma criança apática e hipoperfundida não precisa “esperar ficar hipotensa” para ser reconhecida como alto risco.
 
+
+### 2.1. Phoenix: classificação de gravidade versus triagem
+
+O consenso Phoenix (2024) descreve sepse pediátrica como infecção suspeita/confirmada com disfunção de órgãos, usando quatro domínios: **respiração, cardiovascular, coagulação e neurologia**. O limiar de **dois pontos** caracteriza sepse nos critérios; choque séptico requer pelo menos um ponto no componente cardiovascular **em criança que atende à definição de sepse**. Esses critérios foram produzidos para padronizar grupos de pacientes com risco de morte, não para ser teste sensível de todos os casos iniciais.
+
+**Não esperar pontuação Phoenix para iniciar atendimento** de criança hipoperfundida com provável infecção. Da mesma forma, febre e taquicardia podem refletir inflamação sem disfunção orgânica ameaçadora à vida. Idade, ambiente e quadro evolutivo importam. O modelo não foi validado para todos os neonatos prematuros; algoritmos neonatais devem ser usados no grupo específico.
+
+| Pergunta | Resposta adequada |
+|---|---|
+| Febre e frequência cardíaca elevada confirmam sepse? | Não; investigar contexto e disfunção orgânica |
+| PA normal exclui choque no início? | Não; avaliar perfusão e consciência |
+| Phoenix substitui monitorização? | Não; é classificação, não conduta |
+| SOFA adulto e meta universal de PAM ≥65 servem para criança? | Não; utilizar referências pediátricas |
+| Lactato baixo permite descartar choque? | Não; interpretação integrada é necessária |
+
+### 2.2. Causalidade e classificação são duas perguntas distintas
+
+Uma criança pode ter hemocultura negativa e ainda assim apresentar sepse, especialmente se recebeu antibiótico prévio ou tem infecção localizada com resposta sistêmica. Uma hemocultura positiva também não prova isoladamente que todos os sinais clínicos resultam daquele isolado, porque a coleta pode ser contaminada. O raciocínio inclui foco, microbiologia, função orgânica e trajetória clínica.
+
+**Fonte:** Schlapbach LJ et al. International Consensus Criteria for Pediatric Sepsis and Septic Shock. JAMA 2024;331:665–674. DOI:10.1001/jama.2024.0179.
+
 ## 3. Clínica por idade e sinais de perigo
 
 ### Lactentes
