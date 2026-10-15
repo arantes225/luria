@@ -1,0 +1,82 @@
+-- LURIA / Bulário: lote 12 (medicamentos 551–600), 2026-10-15.
+-- Apenas triagem estrutural e de risco; NÃO editar doses, contraindicações, vias ou data.status.
+-- Esta atualização é idempotente e NÃO sobrescreve auditorias de colaboradores.
+WITH to_review(id,priority,clinical_area,action_required,prescription_copy_blocked) AS (
+ VALUES
+(725,'P1','Endocrinologia/Nefrologia','Calcitriol: cápsulas 0,25/0,5 mcg e forma IV agrupadas sem fonte própria; distinguir indicação hipocalcemia/DRC, via, cálculo em microgramas, cálcio/fósforo e hipercalcemia.',false),
+(726,'P1','Pneumologia','Fluticasona furoato + vilanterol Ellipta 100/25 e 200/25 mcg sem fonte: conferir doses por asma/DPOC e idade, dispositivo, não usar como resgate e diferenciar de fluticasona propionato.',false),
+(733,'P0','Endocrinologia','Liotironina T3 oral em microgramas, sem fonte e com dois campos básicos de segurança ausentes: verificar disponibilidade brasileira, indicações restritas, arritmias e não converter automaticamente de levotiroxina.',true),
+(737,'P0','Clínica/Dor','Cetorolaco sublingual 10 mg tem fonte preenchida mas faltam cinco campos de segurança; conferir via, máximo/duração, função renal, risco hemorrágico/gastrointestinal e idade.',true),
+(745,'P0','Pneumologia/Emergência','Salbutamol + ipratrópio com solução e aerossol na mesma forma sem fonte nem cinco campos; validar mcg/jato versus mg/mL, doses pediátricas e manejo de crise.',true),
+(749,'P0','Emergência/Toxicologia','Emulsão lipídica intravenosa 20% sem bula e cinco campos de segurança; distinguir nutrição parenteral de protocolo especializado de toxicidade de anestésico local, dose por peso e monitorização.',true),
+(752,'P0','Clínica/Dor/Anestesia','Nalbufina injetável sem concentração e sem campos de segurança: conferir vias/doses por contexto, depressão respiratória e possível precipitação de abstinência em pacientes dependentes de opioides.',true),
+(766,'P0','Hematologia/Emergência','Ácido aminocaproico agrupa solução oral e injetável sem fonte ou cinco campos de segurança; separar vias, esquema antifibrinolítico, função renal e risco trombótico.',true),
+(773,'P0','Pediatria/Imunizações','Nirsevimabe 50 e 100 mg em seringas tem URL preenchida, mas faltam cinco campos; confirmar indicação por estação/idade/peso e programas brasileiros vigentes, e não confundir com palivizumabe.',true),
+(774,'P0','Pediatria/Imunizações','Palivizumabe sem apresentação específica apesar de URL, sem cinco campos de segurança; conferir concentração, esquema mensal, critérios de elegibilidade e distinção de nirsevimabe.',true),
+(776,'P1','Pediatria/Infectologia','Cefdinir suspensão 125/250 mg por 5 mL e cápsulas 300 mg com URL, sem segurança: verificar disponibilidade brasileira, dose por kg, função renal e beta-lactâmicos.',false),
+(778,'P1','Pediatria/Infectologia','Fenoximetilpenicilina potássica reúne solução em UI/mL e comprimido em UI, com fonte mas sem campos de segurança; rever dose por idade/peso, alergia e aderência.',false),
+(779,'P1','Pediatria/Parasitologia','Pamoato de pirantel em suspensão com concentração indefinida, URL mas sem campos de segurança; converter mg de base versus sal somente após conferir bula, peso/idade e helminto.',false),
+(787,'P1','Pneumologia/Pediatria','Levalbuterol: registro placeholder sem fonte nem cinco campos; verificar autorização/comercialização no Brasil, forma inalatória, concentração e diferença para salbutamol racêmico.',false),
+(788,'P1','Pneumologia/Obstetrícia','Terbutalina com placeholder e sem dados de segurança ou fonte; diferenciar uso broncodilatador do uso obstétrico restrito, apresentação, via, eventos cardiovasculares e indicação.',false),
+(789,'P0','Neonatologia','Citrato de cafeína para apneia da prematuridade: apresentação genérica sem fonte ou cinco campos. Distinguir mg de citrato de cafeína versus cafeína-base, carga/manutenção e via VO/IV.',true),
+(790,'P0','Neonatologia/UTI','Poractante alfa surfactante intratraqueal genérico sem fonte nem segurança; confirmar mg de fosfolipídeos/mL, dose por kg, produto, técnica de administração e suporte ventilatório.',true),
+(791,'P0','Neonatologia/UTI','Beractante surfactante intratraqueal genérico sem fonte nem segurança; revisar concentração e volume por kg específicos, não converter diretamente a partir de poractante alfa.',true),
+(793,'P0','Neonatologia/Cardiologia','Alprostadil (PGE1) para ducto arterioso em cardiopatias congênitas: falta apresentação, fonte e cinco campos; validar concentração, mcg/kg/min, diluição, apneia e monitorização contínua.',true),
+(794,'P0','Neonatologia/Pneumologia','Óxido nítrico medicinal inalatório em unidade ppm, sem fonte e segurança; conferir sistema de fornecimento/dispositivo, indicação HPPN, metemoglobina, NO2 e retirada gradual.',true),
+(796,'P0','Neuropediatria','Vigabatrina sem apresentação/fonte ou cinco campos: revisar tratamento de espasmos epilépticos, risco de constrição de campo visual e monitorização.',true),
+(797,'P1','Neuropediatria','Etossuximida placeholder sem fonte ou cinco campos: confirmar formas e dose pediátrica por peso para crises de ausência, efeitos hematológicos/psiquiátricos.',false),
+(798,'P0','Neurologia/Psiquiatria','Clobazam em apresentação genérica sem fonte ou segurança: checar epilepsia, dose por idade/peso, interações CYP e risco de sedação, tolerância e retirada.',true),
+(803,'P1','Neurologia','Brivaracetam placeholder sem fonte nem segurança: confirmar comprimido/solução/IV se existentes, diferenças de via, faixa etária, efeitos de humor e ajuste hepático.',false),
+(805,'P0','Pediatria/Sedação','Cloral hidratado sem produto/fonte nem cinco campos de segurança: verificar disponibilidade/registro, uso para sedação apenas em ambiente com monitorização, risco respiratório e arritmias.',true),
+(833,'P1','Cardiologia','Olmesartana genérica sem fonte nem cinco campos: confirmar dose/força e ajuste por função renal, contraindicação gestacional e enteropatia tipo sprue.',false),
+(836,'P1','Cardiologia/Nefrologia','Torsemida placeholder sem fonte ou segurança: confirmar apresentações VO/IV brasileiras, mg/mL, titulação, eletrólitos e contexto de insuficiência cardíaca/edema.',false),
+(843,'P1','Cardiologia','Olmesartana + anlodipino associação genérica sem forças ou bula e sem cinco campos: confirmar composição por produto, titulação separada, gestação e edemas.',false),
+(847,'P0','Hematologia/Oncologia','Folinato de cálcio (leucovorina) sem forma, fonte ou cinco campos; conferir dose por protocolo de resgate de metotrexato versus modulação de 5-FU, momento e vias IV/VO.',true),
+(853,'P0','Imunologia/UTI','Imunoglobulina humana normal genérica sem concentração/produto/fonte/segurança; separar IV de SC, mg/kg e g/kg, osmolaridade, risco trombótico/renal e indicação.',true),
+(854,'P0','Imunizações/Neonatologia','Imunoglobulina específica anti-hepatite B sem fonte nem cinco campos: confirmar UI por ampola, dose neonatal, intervalo pós-exposição, local IM e coordenação com vacina.',true),
+(855,'P0','Imunizações/Emergência','Imunoglobulina antitetânica sem fonte ou segurança: confirmar indicação conforme estado vacinal/ferimento, UI da apresentação, dose e uso com toxoide em locais distintos.',true),
+(856,'P0','Imunizações/Emergência','Imunoglobulina antirrábica sem fonte, concentração ou segurança: dose em UI/kg, infiltração na ferida, limite por peso e protocolos de exposição, sem confundir com vacina.',true),
+(861,'P0','Infectologia/Neonatologia','Benzilpenicilina cristalina sem fonte, força ou cinco campos de segurança: distinguir de formas benzatina/procaína, reconstituição IV, dose em UI/kg e sífilis congênita/meningite.',true),
+(873,'P1','Endocrinologia','Alogliptina genérica sem fonte ou segurança: verificar doses por TFGe, risco de pancreatite, contraindicações e alerta de insuficiência cardíaca.',false),
+(900,'P1','Gastroenterologia','Dexlansoprazol placeholder sem fonte ou cinco campos: validar apresentações de liberação retardada, posologia, indicação e contraindicações.',false),
+(911,'P0','Clínica/Dor','Paracetamol + codeína sem força dos componentes ou fonte nem cinco campos: revisar limite diário de paracetamol, risco respiratório da codeína, idade e gestação.',true),
+(921,'P0','Emergência/Pneumologia','Aminofilina com fonte/apresentação ausentes e sem segurança: conferir concentração IV, relação aminofilina/teofilina, janela terapêutica, infusão e risco de arritmia/convulsões.',true),
+(922,'P0','Pneumologia','Teofilina placeholder sem fonte ou cinco campos: confirmar liberação imediata/prolongada, interações CYP, níveis séricos e faixa terapêutica estreita.',true),
+(958,'P1','Infectologia/Hospitalar','Cefoperazona genérica sem fonte ou cinco campos: confirmar registro no Brasil, via/parenteral, espectro, dose, função hepática e risco de sangramento.',false),
+(961,'P0','Infectologia/Tuberculose','Rifabutina sem apresentação, fonte ou segurança: validar indicação TB/MAC, interações com antirretrovirais, ajuste de doses e risco de uveíte.',true),
+(973,'P0','Anestesia/Emergência','Dantroleno no tratamento de hipertermia maligna: ficha totalmente genérica sem fonte ou cinco campos; validar frasco, diluição, dose de ataque em mg/kg, repetição e estoque de emergência.',true),
+(981,'P0','Emergência/Hematologia','Complexo protrombínico de quatro fatores sem apresentação/produto/fonte: dose calculada em UI de fator IX por kg e INR/indicação, risco trombótico e não confundir com plasma.',true),
+(983,'P0','Emergência/Toxicologia','Fomepizol como antídoto de metanol/etilenoglicol sem produto/fonte ou segurança: verificar disponibilidade/registro no Brasil, concentração, manutenção e hemodiálise.',true),
+(984,'P0','Emergência/Toxicologia','Pralidoxima em intoxicação por organofosforados sem produto/fonte ou segurança: validar formulação, preparo, dose conforme peso e associação à atropina quando indicada.',true),
+(985,'P0','Emergência/Toxicologia','Fisostigmina para síndrome anticolinérgica em cenário muito selecionado: sem fonte e segurança; confirmar contraindicações especialmente distúrbios de condução/QRS e intoxicação tricíclica.',true),
+(986,'P0','Emergência/Toxicologia','Deferoxamina para intoxicação grave por ferro: confirmar concentração, via IV/IM/SC conforme produto, limites de infusão, monitorização e condições de uso.',true),
+(1005,'P0','Emergência/UTI','Cloreto de cálcio solução injetável sem fonte/segurança: risco alto de extravasamento e confusão com gluconato de cálcio; verificar cálcio elementar por mL, via, diluição e ECG.',true),
+(1016,'P1','Infectologia/Gastroenterologia','Fidaxomicina em formulação genérica sem fonte nem cinco campos: confirmar disponibilidade brasileira, indicações para C. difficile e diferença frente à vancomicina oral.',false),
+(1054,'P1','Nefrologia','Patiromer sachês sem fonte ou cinco campos: validar dose do pó, indicação em hipercalemia não emergencial, intervalo com outros medicamentos, potássio/magnésio.',false)
+), annotated AS (
+UPDATE public.bulario_drugs d SET data=jsonb_set(d.data,'{quality_audit}',jsonb_build_object(
+ 'batch','bul-12-551-600',
+ 'screened_at','2026-10-15',
+ 'scope','individual_documentary_formulation_source_safety_risk_and_clinical_review_triage',
+ 'scientifically_validated',false,
+ 'priority',r.priority,
+ 'clinical_area',r.clinical_area,
+ 'action_required',r.action_required,
+ 'prescription_copy_blocked',r.prescription_copy_blocked,
+ 'review_status','PENDING_CLINICAL_SOURCE_REVIEW',
+ 'formulation_count',jsonb_array_length(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END),
+ 'missing_source_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE coalesce(f->>'source_url','') NOT LIKE 'http%'),
+ 'retailer_or_aggregator_hosted_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE lower(coalesce(f->>'source_url','')) ~ '(consultaremedios[.]com[.]br|saudedireta[.]com[.]br|remediobarato[.]com|bula[.]com[.]br|drogasil[.]com[.]br|vteximg[.]com[.]br|onepharma[.]com[.]br|oncoexpress[.]com[.]br)'),
+ 'generic_placeholder_forms',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE coalesce(f->>'label','') ILIKE '%conforme produto%' OR coalesce(f->>'label','') ILIKE '%conforme registro%' OR coalesce(f->>'label','') ILIKE '%conforme mercado%'),
+ 'repeated_formulation_label_groups',(SELECT count(*) FROM(SELECT lower(coalesce(f->>'label','')) label FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f GROUP BY 1 HAVING count(*)>1) grouped),
+ 'missing_core_safety_fields',to_jsonb(array_remove(ARRAY[
+  CASE WHEN NOT d.data?'renal_adjustment' THEN 'renal_adjustment' END,
+  CASE WHEN NOT d.data?'hepatic_adjustment' THEN 'hepatic_adjustment' END,
+  CASE WHEN NOT d.data?'contraindications' THEN 'contraindications' END,
+  CASE WHEN NOT d.data?'drug_interactions' THEN 'drug_interactions' END,
+  CASE WHEN NOT d.data?'adverse_reactions' THEN 'adverse_reactions' END
+ ],NULL))
+),true)
+FROM to_review r WHERE d.id=r.id AND NOT(d.data?'quality_audit') RETURNING d.id
+)
+SELECT count(*) tagged_now,(SELECT count(*) FROM to_review) expected FROM annotated;
