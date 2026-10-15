@@ -137,3 +137,263 @@ O seguimento não consiste apenas em repetir a receita. A cada encontro, registr
 **CI-LABA com LABA não formoterol:** a família pergunta se pode usar a combinação de manutenção como medicação de alívio. A resposta é não presumir intercambialidade; esquemas MART dependem de combinação específica com formoterol e doses/limites confirmados para o produto.
 
 **Fonte primária de atualização:** GINA, *Summary Guide 2026*, capítulo “Treatment steps for children 6–11 years” (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf). Este capítulo usa formulação e exemplos autorais, sem transcrever diagramas, escalas ou tabelas da GINA.
+
+
+## 11. Diagnóstico funcional em escolares: como interpretar os números e evitar armadilhas
+
+A confirmação da asma requer duas linhas convergentes de evidência: uma história de sintomas respiratórios variáveis e documentação de variabilidade excessiva do fluxo expiratório. A primeira parte aumenta ou diminui a probabilidade clínica; a segunda procura tornar a hipótese testável. Ambas devem ser avaliadas no contexto da idade, da qualidade técnica do exame e do uso prévio de medicamentos.
+
+**Não basta escrever “espirometria com prova broncodilatadora positiva”.** É necessário saber qual variável foi medida, qual referência foi usada e se o exame é reprodutível. O VEF1 é o volume expirado no primeiro segundo de uma manobra forçada; a CVF representa o volume expirado ao término da manobra, e a relação VEF1/CVF caracteriza o componente obstrutivo quando comparada ao limite inferior de normalidade apropriado. Crianças não são adultos em miniatura: valores de referência e limiares usados na interpretação funcional devem respeitar idade, estatura e populações de referência.
+
+### 11.1. Um exemplo numérico que cai em prova
+
+Uma criança de 9 anos apresenta VEF1 pré-broncodilatador de 1,42 L e pós-broncodilatador de 1,67 L; o valor previsto é 1,95 L. O aumento absoluto é 0,25 L. O aumento em relação ao previsto é 0,25/1,95 = 12,8%. Assim, o resultado satisfaz o critério de aumento do **VEF1 ≥12% do previsto**, adotado para crianças na GINA 2026. Note que seria um erro usar a fórmula de variação relativa ao valor pré-broncodilatador e concluir que essa é a mesma métrica; ela resulta em percentual diferente. Tampouco se deve aplicar às crianças o requisito adulto de aumento de 200 mL. A interpretação final ainda exige qualidade da manobra, consistência com os sintomas e exclusão de outros diagnósticos.
+
+Um segundo aluno tem VEF1 antes de 1,55 L, depois de 1,67 L, com previsto de 2,10 L. A diferença é 0,12 L, equivalente a 5,7% do previsto. Não demonstrou o critério broncodilatador nessa ocasião. **Não significa “asma descartada”**. Durante intervalos assintomáticos, o calibre brônquico pode estar próximo do habitual e não existir espaço fisiológico para demonstrar grande ganho após SABA; medicamentos controladores também atenuam a variabilidade. Repetir testes em momento oportuno e investigar hipóteses alternativas é mais correto do que aceitar ou rejeitar o diagnóstico por um teste isolado.
+
+### 11.2. Se não houver espirometria
+
+O pico de fluxo expiratório (PFE) depende muito de técnica, esforço e do instrumento, mas pode ajudar quando não há espirometria. A GINA 2026 aponta, para crianças, uma resposta broncodilatadora do **PFE ≥15%** como evidência possível de variabilidade, embora menos confiável que VEF1. Também considera variabilidade média diária de PFE **superior a 13% em aproximadamente duas semanas**, desde que mensurada sistematicamente, com o mesmo aparelho e registro correto dos melhores resultados. O PFE é especialmente útil para demonstrar mudança longitudinal, não para substituir toda a avaliação funcional e clínica.
+
+Exemplo didático: o PFE matinal é 220 L/min e o vespertino 280 L/min. A amplitude do dia é 60 L/min, e a média das duas medidas é 250 L/min. A variabilidade relativa daquele dia é 60/250, ou 24%. Esse cálculo sozinho não substitui a média dos dias de observação. Um único dia com variabilidade ampla pode refletir qualidade de execução, infecção viral ou exposição excepcional; procure consistência, contexto e repetição.
+
+### 11.3. Biomarcadores não substituem a função pulmonar
+
+FeNO elevado e eosinofilia sanguínea podem apoiar a presença de inflamação tipo 2 quando há sintomas típicos, mas ambos se elevam em condições que não são asma. Em crianças, a GINA 2026 menciona **FeNO >35 ppb** como achado que pode reforçar a hipótese, não como critério obrigatório universal. Valor inferior não exclui asma, especialmente sob uso de corticosteroide inalatório ou com fenótipos não tipo 2. Testes alérgicos identificam sensibilização; para atribuir importância clínica, correlacionar exposição, temporalidade e sintomas. Uma criança sensibilizada a ácaros não tem automaticamente todos os sintomas causados por ácaros.
+
+### 11.4. Antes e depois do exame: perguntas de segurança
+
+- **A criança consegue realizar uma manobra válida?** Instruções padronizadas, incentivo e avaliação de aceitabilidade são indispensáveis.
+- **Há exacerbação importante em curso?** Não atrasar o tratamento por testes funcionais.
+- **Está usando broncodilatadores ou controlador?** O momento do uso interfere na sensibilidade diagnóstica; suspensões para teste devem ser individualizadas por profissional, sem criar riscos.
+- **Os sintomas são predominantemente inspiratórios?** Pense em obstrução laríngea induzível, especialmente se dispneia durante exercício com rápida recuperação após cessar a atividade.
+- **Há tosse isolada crônica?** Asma variante tosse existe, porém a atribuição automática de toda tosse à asma gera excesso de diagnóstico; procurar rinossinusite, rinite, infecções prolongadas, aspiração e outras causas relevantes.
+
+**Pulo do gato:** *sintomas variáveis* e *fluxo expiratório variável* são fenômenos distintos que devem convergir; teste negativo em criança assintomática não é equivalente a ausência da doença.
+
+## 12. Crianças até 5 anos: raciocínio diagnóstico e terapêutico que não é cópia do escolar
+
+O pré-escolar apresenta vias aéreas de pequeno calibre, alta frequência de infecções virais e capacidade limitada para testes funcionais reprodutíveis. Isso torna frequente a sibilância episódica sem que se possa antecipar quais crianças permanecerão asmáticas mais tarde. O objetivo é reconhecer quem tem uma síndrome compatível com asma, excluir sinais de outra doença, aliviar sofrimento e evitar exacerbações, mantendo avaliação longitudinal que permita revisar o rótulo diagnóstico.
+
+### 12.1. Os três requisitos da GINA 2026
+
+A GINA 2026 permite um diagnóstico clínico estruturado de asma em crianças com até 5 anos quando **três requisitos** se encontram presentes. Em linguagem de decisão:
+
+**Requisito 1 — padrão recorrente confirmado.** Pelo menos dois episódios agudos de sibilância no último ano, ou um episódio acompanhado de sintomas respiratórios sugestivos entre os episódios. Convém confirmar se o som descrito é realmente sibilo expiratório; famílias frequentemente chamam de “chiado” ruídos nasais, secreção ou estridor. Vídeos domésticos de qualidade, exame durante sintomas e descrição orientada ajudam.
+
+**Requisito 2 — não haver explicação alternativa mais provável.** Uma criança com tosse úmida diária há meses, falha de crescimento, estridor recorrente ou achados focais persistentes não deve receber diagnóstico de asma por exclusão preguiçosa. A história e o exame direcionam a necessidade de investigação; não se impõe uma bateria de exames de rotina para todos.
+
+**Requisito 3 — resposta clínica compatível e documentada à terapêutica.** A resposta pode ser observada numa exacerbação após broncodilatador inalatório ou durante um ensaio organizado de terapia controladora diária com CI, associado ao alívio indicado, acompanhado por cerca de dois a três meses. Melhorar durante tratamento é evidência que precisa ser interpretada criticamente: viroses melhoram naturalmente, observações parentais são sujeitas a lembrança seletiva, e a melhora só é significativa quando há sintomas ou episódios suficientes para comparação.
+
+Se apenas um ou dois requisitos são atendidos, faz mais sentido registrar **“suspeita de asma”**, explicar a incerteza à família e acompanhar. Isso é diagnóstico responsável, e não omissão terapêutica. Criança com desconforto respiratório deve ser tratada conforme gravidade independentemente da certeza sobre a doença crônica.
+
+### 12.2. Por que a história clínica precisa ser detalhada
+
+Pergunte se a criança apresenta sinais fora de resfriados, desperta por tosse, interrompe brincadeiras, tosse ao correr ou rir, tem episódios que duram mais de um dia e já precisou de atendimento emergencial. Eczema e rinite podem elevar probabilidade, mas não são prova; histórico familiar de asma aumenta plausibilidade, porém não elimina outras causas. A idade de início importa muito. Sibilância persistente desde o período neonatal, episódios exclusivamente relacionados a alimentação ou engasgo e saturação baixa crônica exigem rota diagnóstica distinta.
+
+**Uma resposta observável é melhor do que uma impressão vaga.** Em vez de “melhorou com bombinha”, registrar se houve redução de retrações, melhora da entrada de ar e da capacidade de brincar ou beber, a janela de observação e a medicação efetivamente administrada. Se a família não consegue recordar a dose, o dispositivo ou a técnica, documentar a incerteza.
+
+### 12.3. Tratamento do pré-escolar com provável asma
+
+Em crianças pequenas, os planos são individualizados segundo controle dos sintomas, gravidade das crises, frequência de episódios e resposta a tratamento anterior. Para quadros com sintomas persistentes ou exacerbações significativas, **CI diário em baixa dose** é o principal tratamento controlador, com reavaliação formal depois de aproximadamente dois a três meses. O objetivo de um ensaio terapêutico não é prolongar medicação automaticamente: é testar hipótese e melhorar desfechos mensuráveis.
+
+O broncodilatador inalatório de curta ação continua sendo recurso de alívio para essa faixa, por dispositivo pressurizado com espaçador e máscara/bocal adequados, conforme prescrição. **Não extrapolar para menores de seis anos o regime CI-formoterol sob demanda que a GINA 2026 descreve para escolares de 6–11 anos**, pois diferenças de evidência, disponibilidade e registro regulatório são relevantes. Se o cuidador usa SABA repetidamente, não basta renovar frascos; revisar necessidade de controlador, segurança e acesso ao serviço.
+
+Antileucotrienos podem ser considerados em situações selecionadas, mas sua eficácia para prevenir exacerbações costuma ser inferior à de CI, e montelucaste exige discussão explícita sobre possíveis efeitos neuropsiquiátricos. Corticosteroide oral **não é tratamento preventivo cotidiano** e não deve ser mantido como atalho diante de técnica inalatória inadequada.
+
+### 12.4. Dispositivo: a prescrição não termina na molécula
+
+Crianças que não conseguem sincronizar acionamento e inspiração precisam de espaçador. Nas pequenas, a vedação da máscara sobre nariz e boca é determinante; fuga de ar pode reduzir intensamente a deposição pulmonar. A equipe deve observar o cuidador acionar uma dose por vez, manter o dispositivo em posição apropriada, permitir inspirações suficientes e repetir após cada acionamento prescrito. Máscara grande, dispositivo mal vedado, ausência de limpeza apropriada e uso de várias doses simultaneamente no espaçador prejudicam o tratamento.
+
+A escolha do inalador de pó depende de fluxo inspiratório suficiente e técnica específica. Não há um único dispositivo ideal para todas as idades; revisar demonstração a cada consulta, sobretudo após troca de marca, apresentação ou cuidador.
+
+### 12.5. Sinais que mudam o percurso
+
+Uma criança pequena com sibilância unilateral que começou abruptamente durante alimentação precisa avaliação de aspiração de corpo estranho. Tosse úmida persistente por muitas semanas direciona investigação de bronquite bacteriana prolongada e outras etiologias. Falha de crescimento, hipoxemia crônica, baqueteamento digital, diarreia crônica ou infecções repetidas exigem considerar fibrose cística, discinesia ciliar, imunodeficiências ou cardiopatias. Uma radiografia simples normal não exclui todas essas causas.
+
+## 13. Exacerbações: do reconhecimento ao destino, por faixa etária
+
+Este é um capítulo de decisão clínica e **não substitui protocolo assistencial, supervisão pediátrica ou verificação da apresentação e concentração local de cada medicamento**. Em emergência real, preservar via aérea, oxigenação, ventilação e perfusão tem prioridade sobre completar qualquer tabela. Doses abaixo representam esquemas de referência identificados em publicações da GINA 2026 e devem ser validados por revisão clínica e farmacêutica antes da publicação no modo Trabalho.
+
+### 13.1. O que procurar na porta do atendimento
+
+Avaliar imediatamente consciência, esforço respiratório, capacidade de falar ou beber, padrão de ventilação, ausculta, saturação, frequência cardíaca, perfusão e possível anafilaxia. Exposição a alimento, medicamento ou picada com urticária, edema de vias aéreas, vômitos ou instabilidade circulatória exige pensar em anafilaxia; **a adrenalina é prioridade nesse cenário**, e broncodilatador não a substitui. Em obstrução brônquica grave, sibilos podem reduzir porque quase não há fluxo: o **tórax silencioso** é sinal de alarme.
+
+Após a primeira avaliação, classificar gravidade, iniciar medidas apropriadas e reavaliar objetivamente. Em crianças escolares, escalas clínicas pediátricas validadas, como o PRAM, podem complementar o julgamento clínico, mas não devem atrasar o início do tratamento. Não atribuir gravidade a um número isolado de frequência respiratória sem observar idade, exaustão e tendência.
+
+### 13.2. Emergência em crianças de 6–11 anos
+
+Para crise leve, quando a criança mantém conversa e atividade com mínimo desconforto, o inalador pressurizado com espaçador é frequentemente preferível à nebulização. Para crise moderada, a GINA 2026 descreve **salbutamol 100 microgramas por acionamento, geralmente 4–6 acionamentos por espaçador**, com reavaliações e repetição conforme resposta. Na apresentação grave, descreve **6–10 acionamentos por espaçador** ou nebulização conforme disponibilidade e capacidade clínica, acompanhados de oxigênio quando indicado, ipratrópio e corticosteroide sistêmico. O espaço de tratamento é uma emergência; a dose é ajustada pela resposta e a via alternativa depende da situação clínica e dos protocolos locais.
+
+A administração via espaçador deve ocorrer **um acionamento por vez**, permitindo inalação apropriada de cada dose. A saturação desejada durante oxigenoterapia em maiores de cinco anos, na orientação geral da GINA 2026, situa-se em **92–95%**, com observação dos fatores que alteram a leitura por oxímetro, como pigmentação da pele, baixa perfusão e altitude. O alvo não pode ser aplicado mecanicamente a condições especiais sem avaliação médica.
+
+**Ipratrópio** funciona como medida adicional em exacerbações moderadas com resposta inadequada e nas graves; é particularmente útil na fase inicial, não sendo justificativa para atrasar corticosteroide ou transferência. **Prednisolona oral** para escolares que necessitam corticosteroide sistêmico: referência GINA 2026 de **1–2 mg/kg/dia, máximo 40 mg por dia, por 3–5 dias**. Corticoide oral não é necessário em toda crise leve, e a decisão é clínica. Cursos breves normalmente não exigem desmame, mas repetição frequente de cursos indica risco elevado e necessidade de otimizar controlador e encaminhamento.
+
+Em sinais de ameaça à vida, colher informação e comunicar equipe enquanto se trata, sem esperar radiografia. Paciente sonolento, cianótico, com incapacidade de falar, hipoxemia ou murmúrio muito reduzido exige monitorização e transferência apropriada; sinais de fadiga ventilatória têm mais peso que a quantidade de sibilos. A necessidade de ventilação invasiva deve ser decidida por equipe experiente, com atenção ao risco de hiperinsuflação dinâmica, hipotensão e barotrauma.
+
+### 13.3. Emergência em crianças de até 5 anos
+
+A GINA 2026 recomenda broncodilatador inalatório de curta ação como abordagem inicial da broncoconstrição no pré-escolar, com **salbutamol por espaçador** ou nebulização quando clinicamente necessária. A referência do documento apresenta, para nebulização, **2,5 mg**, e não 0,25 mg. Essa distinção é crítica: houve correção oficial de erro tipográfico na versão 2025, e copiar materiais antigos pode perpetuar confusão. Em crise moderada/grave, repetir doses supervisionadas conforme gravidade e reavaliar ao longo da primeira hora; falha de resposta, hipoxemia e exaustão exigem escalonamento.
+
+Para exacerbação moderadamente grave ou grave nessa faixa, a GINA 2026 apresenta **prednisolona 1–2 mg/kg/dia**, com **máximo de 20 mg/dia se menor de 2 anos** e **30 mg/dia de 2 a 5 anos**, usualmente por **3–5 dias**. Outra opção indicada no documento é dexametasona, dependendo do cenário e protocolo; não converter de forma aproximada ou intercambiável sem checar dose e apresentação. O corticoide sistêmico tem efeito anti-inflamatório que não substitui a broncodilatação imediata. Administração preventiva de corticosteroides orais pelos responsáveis durante qualquer resfriado não é prática recomendada.
+
+Para crise grave com resposta insuficiente após tratamento inicial, protocolos especializados podem utilizar sulfato de magnésio intravenoso: a GINA 2026 contempla **40–50 mg/kg, máximo 2 g, por infusão lenta**, em crianças com pelo menos 2 anos, após medidas iniciais. Não é uma medicação de uso domiciliar e exige ambiente capaz de monitorar efeitos hemodinâmicos. A escalada não elimina necessidade de reavaliar pneumonia, aspiração, anafilaxia ou complicações.
+
+### 13.4. O que NÃO fazer rotineiramente
+
+**Antibiótico:** a exacerbação asmática por si só não implica infecção bacteriana; indicar apenas com evidência clínica de infecção que o justifique.
+
+**Radiografia ou gasometria:** não devem ser rotina em crise típica que melhora; são úteis quando há sinais focais, suspeita de pneumotórax, corpo estranho, pneumonia, falha terapêutica ou deterioração.
+
+**Sedação:** sedativos podem comprometer a ventilação e retardar o reconhecimento de insuficiência respiratória. Evitar seu uso rotineiro como tentativa de “acalmar o paciente” com dispneia.
+
+**Interpretar queda da frequência respiratória como boa resposta:** piora da consciência e redução de esforço após grande exaustão podem sinalizar falência iminente. A reavaliação integra consciência, entrada de ar, oxigenação e perfusão.
+
+**Dispensar sem plano:** melhora do chiado não corrige o risco futuro se a criança continuar sem controlador anti-inflamatório apropriado, sem técnica correta ou sem acesso à medicação.
+
+### 13.5. Alta, observação ou internação?
+
+A decisão de alta exige melhora sustentada, oxigenação adequada em ar ambiente, redução substancial do trabalho respiratório, intervalo seguro desde a última dose de alívio, cuidador capaz de executar o plano e facilidade razoável de retorno. Para escolares, a GINA 2026 descreve reavaliação após pelo menos 1–2 horas de estabilidade clínica desde o último salbutamol como um dos critérios de consideração de alta; não basta um único valor normal de saturação isolada. Necessidade persistente de broncodilatador muito frequente, hipóxia, retorno rápido de sintomas, alto risco prévio e barreiras importantes para o cuidado domiciliar favorecem observação ou internação.
+
+**Alta exige prevenção secundária:** revisar diagnóstico, adequar tratamento com CI para a idade, demonstrar dispositivo, fornecer instruções escritas, orientar sinais de alerta e marcar reavaliação clínica **em 2–5 dias para crianças**, com seguimento posterior. Não é aceitável que uma criança receba múltiplos cursos de prednisolona por ano sem revisão do tratamento de manutenção.
+
+## 14. Quadros de raciocínio prático
+
+### Quadro A — A idade muda a confirmação diagnóstica
+
+| Pergunta clínica | Até 5 anos | 6–11 anos |
+|---|---|---|
+| Como começar? | Episódios recorrentes de sibilância real, história e exclusão de alternativas | Sintomas respiratórios variáveis, história e exame |
+| Principal modo de confirmação | Três critérios clínicos: recorrência, ausência de alternativa mais provável e resposta terapêutica adequada | Evidência objetiva de variabilidade expiratória, preferencialmente espirométrica |
+| O que faz o teste normal? | Espirometria muitas vezes inviável; acompanhar longitudinalmente | Espirometria normal entre crises não afasta asma |
+| O que evitar? | Diagnosticar qualquer sibilância viral como asma | Aplicar limiares adultos à interpretação pediátrica |
+| Quando encaminhar? | Sinais congênitos/atípicos, falha de crescimento, hipoxemia, sintomas persistentes ou refratários | Dúvida diagnóstica, exacerbações graves ou necessidade de escalada especializada |
+
+### Quadro B — Falha aparente do controlador: roteiro original de auditoria
+
+1. **Reformule a hipótese:** os sintomas são compatíveis com asma e há dados de variabilidade?
+2. **Observe o dispositivo:** a criança realmente deposita o medicamento?
+3. **Reconstrua a rotina:** quem administra, em quais dias e com que acesso?
+4. **Procure moduladores:** fumaça, poluentes, rinite, obesidade e outras doenças pertinentes.
+5. **Documente risco:** internações, visitas ao PS, corticoide oral, função pulmonar e sintomas.
+6. **Só então altere o degrau:** escolha produto, dose, idade autorizada e retorno de monitorização.
+
+### Quadro C — Três hipóteses diante de “chiado” em lactente
+
+| Achado-chave | Bronquiolite | Asma/sibilância recorrente | Corpo estranho |
+|---|---|---|---|
+| Tempo | Em geral durante infecção viral aguda | Episódios recorrentes, por vezes com sintomas entre eles | Início abrupto durante alimentação ou brincadeira |
+| História prévia | Pode ser primeiro episódio, sobretudo no lactente | Padrão temporal repetido; atopia pode coexistir | Episódio de engasgo pode ser lembrado ou não |
+| Ausculta | Sibilos e/ou estertores | Sibilância expiratória difusa, por vezes exame normal entre crises | Possível assimetria ou sibilância focal |
+| Risco de erro | Tratar toda bronquiolite como asma | Etiquetar asma por resposta vaga a uma nebulização | Descartar porque a radiografia é normal |
+| Próximo passo | Avaliar gravidade, hidratação e suporte indicado | Verificar critérios de asma pré-escolar e resposta documentada | Avaliação direcionada, muitas vezes urgente |
+
+## 15. Casos aprofundados: hipótese, evidências, decisão e segurança
+
+### Caso 5 — “O chiado é asma?” no lactente
+
+Menina de 11 meses apresenta quatro dias de coriza, tosse, redução de aceitação alimentar e primeiro episódio de sibilância audível. Frequência respiratória aumentada, retrações leves, estertores finos dispersos e saturação em ar ambiente de 95%. Não há história de sintomas intercrises nem episódios prévios. Os responsáveis dizem que um tio “tem bronquite”.
+
+**Hipótese de trabalho:** bronquiolite viral, com avaliação clínica de hidratação e esforço respiratório. A história de um parente com asma não estabelece recorrência nem resposta terapêutica e, portanto, não satisfaz os critérios diagnósticos da GINA 2026 para asma na criança pequena.
+
+**Exames:** a necessidade de testes depende de hipóteses concorrentes, gravidade ou evolução inesperada; radiografia de tórax não é etapa automática. **Conduta:** suporte conforme necessidade e observação da evolução clínica, com orientação sobre ingestão, sinais de alarme e retorno. **Por que importa:** ensina que o primeiro episódio viral de sibilância em lactente não autoriza rotular uma doença crônica nem prescrever controlador contínuo sem avaliação.
+
+### Caso 6 — Teste broncodilatador interpretado com denominador errado
+
+Menino de 10 anos apresenta episódios de tosse noturna e falta de ar induzida por esforço. VEF1 inicial 1,60 L, pós-broncodilatador 1,86 L, previsto 2,05 L. A criança colabora adequadamente com manobras aceitas.
+
+**Cálculo:** 0,26 L de melhora; 0,26/2,05 = 12,7% do valor previsto. O resultado sustenta variabilidade expiratória relevante junto à história compatível. **Erro comum:** usar 0,26/1,60 e relatar que “o diagnóstico depende de 16%”, sem perceber que a diretriz pediátrica adota percentual do previsto. **Conduta:** documentar confirmação, avaliar controle e risco, escolher tratamento anti-inflamatório conforme idade e contexto. **Por que importa:** a prova costuma apresentar números suficientes para calcular o índice correto sem fornecer interpretação.
+
+### Caso 7 — Criança de 4 anos com suspeita evolutiva
+
+Menino de 4 anos teve três episódios de chiado no último ano, um deles tratado no pronto atendimento. Entre episódios, tosse ao rir e correr, sem febre; exame atual normal. Não apresenta falha de crescimento nem achados focais. Durante episódio documentado em unidade de saúde houve melhora respiratória após SABA.
+
+**Raciocínio:** o quadro preenche as três dimensões clínicas propostas pela GINA 2026: padrão recorrente, ausência de explicação alternativa mais provável após avaliação e resposta documentada. **Decisão:** classificar e orientar manejo adequado ao pré-escolar, avaliar necessidade de CI diário e plano de acompanhamento. **Por que importa:** não depender de espirometria impraticável para todo pré-escolar, mas também não usar “chiado = asma” como atalho.
+
+### Caso 8 — Retorno à urgência após melhora inicial
+
+Menina de 8 anos foi atendida por crise moderada, melhora depois de tratamento supervisionado, mas retorna com dispneia quatro horas após a alta. A família relata que recebeu apenas orientação verbal de repetir broncodilatador, sem revisão de técnica nem tratamento com CI. Havia apresentado duas crises prévias recentes.
+
+**Problema:** não é apenas tratar novamente broncoconstrição: existe falha de prevenção secundária. **Conduta:** reavaliar gravidade e diagnóstico, tratar crise atual, considerar internação/observação conforme resposta e risco, reorganizar estratégia anti-inflamatória, documentar plano escrito e retorno próximo. **Por que importa:** retorno precoce ao PS pode indicar instabilidade fisiológica, controle inadequado e problemas de implementação da alta.
+
+## 16. Questões originais de residência — alternativas integralmente comentadas
+
+### Questão 1 — Diagnóstico funcional
+
+Criança de 9 anos com dispneia induzida por exercício e despertares noturnos faz espirometria válida. O VEF1 passa de 1,30 L para 1,54 L após broncodilatador; o VEF1 previsto é 1,85 L. Qual interpretação é a melhor?
+
+A. O aumento não é significativo, pois não alcançou 200 mL.
+B. A resposta é compatível com variabilidade expiratória, pois supera 12% do VEF1 previsto.
+C. A resposta é positiva somente se houver aumento de 20% do VEF1 inicial.
+D. A asma está excluída porque a CVF não foi fornecida.
+E. Um teste positivo elimina a necessidade de avaliar diagnósticos diferenciais.
+
+**Gabarito: B.** O incremento é 0,24 L; dividido pelo valor previsto (1,85 L), resulta em aproximadamente 13%. **A está errada** porque transfere regra adulto-específica e usa corte absoluto sem contexto pediátrico. **C está errada** por introduzir limiar que não corresponde ao critério usado para a faixa etária. **D está errada** porque a ausência da CVF no enunciado não invalida o raciocínio de variabilidade do VEF1 (embora, na prática, a espirometria deva ser completa e interpretável). **E está errada**: nenhuma prova isolada elimina hipóteses concorrentes. **Mini-revisão:** criança escolar, VEF1 pós-pré como percentual do previsto; correlacionar com clínica.
+
+### Questão 2 — Pré-escolar e critérios clínicos
+
+Menina de 3 anos teve um episódio isolado de sibilância durante infecção viral, nunca apresentou sintomas entre resfriados e a família não observou resposta terapêutica clara. Qual conduta de raciocínio é mais adequada?
+
+A. Confirmar asma definitiva, pois sibilância em criança pequena é patognomônica.
+B. Excluir asma definitivamente, pois ocorreu na vigência de virose.
+C. Registrar hipótese clínica ainda não confirmada e acompanhar recorrência, alternativas e resposta documentável.
+D. Solicitar tomografia torácica para confirmar asma.
+E. Prescrever corticosteroide oral diário como teste diagnóstico.
+
+**Gabarito: C.** O padrão não satisfaz os três requisitos clínicos da GINA 2026. **A está errada** porque a sibilância é inespecífica. **B está errada** porque vírus podem precipitar crises asmáticas. **D está errada** porque imagem não confirma asma e pode expor a exames desnecessários. **E está errada** porque corticoide sistêmico crônico não é instrumento de confirmação e acrescenta risco. **Mini-revisão:** no pré-escolar, confirmar recorrência, afastar outra causa e documentar resposta.
+
+### Questão 3 — Alívio e controle
+
+Menino de 7 anos, com asma confirmada e sintomas pouco frequentes, usa apenas salbutamol de alívio, sem anti-inflamatório. Sobre a prevenção de exacerbações, é correto afirmar:
+
+A. Não se indica CI se os sintomas ocorrem em menos de dois dias na semana.
+B. A broncodilatação isolada corrige o componente inflamatório.
+C. Um esquema contendo CI deve integrar a estratégia terapêutica, com escolha conforme idade, produto e recomendações atuais.
+D. Montelucaste é necessariamente mais efetivo que CI para prevenir crises.
+E. Qualquer combinação CI-LABA pode ser utilizada como MART.
+
+**Gabarito: C.** A GINA 2026 indica estratégia contendo CI para crianças de 6–11 anos. **A está errada** porque sintomas infrequentes não implicam risco nulo. **B está errada** porque SABA atua na musculatura lisa, não trata a inflamação basal. **D está errada** porque antagonistas dos leucotrienos têm limitações e preocupações com efeitos neuropsiquiátricos. **E está errada** porque MART requer combinação CI-formoterol apropriada. **Mini-revisão:** sempre verificar a idade e a combinação farmacológica antes de transportar esquemas entre pacientes.
+
+### Questão 4 — Grave ou “melhorando”?
+
+Criança de 6 anos apresenta piora de dispneia, sonolência, dificuldade para falar e redução acentuada do murmúrio vesicular. Os sibilos ficam menos perceptíveis. Qual interpretação deve orientar a conduta?
+
+A. Melhora inequívoca, pois a sibilância diminuiu.
+B. Quadro compatível com risco de falência ventilatória, exigindo tratamento e avaliação urgente.
+C. Quadro típico de ansiedade sem obstrução.
+D. Esperar radiografia antes de oferecer terapia inalatória.
+E. Dar sedativo para reduzir o esforço respiratório.
+
+**Gabarito: B.** A sonolência com pouca entrada de ar é sinal de ameaça à vida, e sibilos podem desaparecer por fluxo extremamente reduzido. **A está errada** por avaliar um som sem considerar ventilação. **C está errada** porque não explica os achados físicos perigosos. **D está errada** pois testes não podem retardar estabilização. **E está errada** por potencialmente comprometer ainda mais a ventilação. **Mini-revisão:** valorizar estado mental e entrada de ar acima do volume dos sibilos.
+
+### Questão 5 — Prescrição pós-crise
+
+Escolar de 8 anos recebeu tratamento para exacerbação moderada e apresenta melhora sustentada. Qual conjunto de medidas é mais completo antes da alta?
+
+A. Somente receita de SABA e retorno se piorar.
+B. Solicitar radiografia e hemograma de rotina em toda alta.
+C. Iniciar ou ajustar terapia contendo CI, verificar técnica e adesão, orientar plano escrito e programar reavaliação pediátrica próxima.
+D. Manter antibiótico em todos, pois viroses frequentemente precipitam crises.
+E. Proibir atividade física de forma indefinida.
+
+**Gabarito: C.** A alta deve reduzir o risco da próxima exacerbação, não só registrar a melhora de hoje. **A está errada** pela omissão preventiva. **B está errada** por indicar exames sem pergunta clínica. **D está errada** porque exacerbação não é sinônimo de infecção bacteriana. **E está errada** porque bom controle deve permitir vida ativa; intervenções precisam ser individualizadas. **Mini-revisão:** tratamento agudo, controlador, técnica e seguimento fazem parte do mesmo episódio assistencial.
+
+### Questão 6 — Corpo estranho versus asma
+
+Criança de 2 anos apresentou tosse e sibilância poucos minutos após brincar com peças pequenas. Desde então há assimetria persistente da ausculta. Qual é a principal prioridade diagnóstica?
+
+A. Asma alérgica crônica.
+B. Bronquiolite sem necessidade de avaliação adicional.
+C. Aspiração de corpo estranho, que exige avaliação direcionada e possível intervenção.
+D. Refluxo gastroesofágico como diagnóstico definitivo.
+E. Solicitar IgE sérica para decidir a urgência.
+
+**Gabarito: C.** Início súbito e assimetria persistente tornam a aspiração uma hipótese tempo-dependente, inclusive com radiografia eventualmente normal. **A está errada** porque não explica bem o evento abrupto. **B está errada** pela ausência de evolução viral típica. **D está errada** porque refluxo isolado não explica de modo convincente a apresentação focal súbita. **E está errada** porque IgE não responde à pergunta de emergência. **Mini-revisão:** cronologia e focalidade podem ser mais discriminativas que o ruído “sibilo”.
+
+## 17. Registro científico específico desta ampliação
+
+**Fontes brasileiras para contextualização:** Jornal Brasileiro de Pneumologia, *Diagnosis and treatment of asthma in childhood: an overview of guidelines* (2024;50:e20240051; DOI 10.36416/1806-3756/e20240051), e página oficial da SBPT de consensos e diretrizes sobre asma (consultadas em 14/10/2026). A revisão brasileira é uma síntese de diretrizes, não substitui a versão 2026 da GINA e não foi tomada como fonte de decisões novas sem confirmação.
+
+**Fonte internacional primária:** GINA, *Strategy Report 2026* (https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf), capítulos 10–12 sobre pré-escolares; e *Summary Guide 2026* (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf), páginas referentes a diagnóstico por variabilidade, tratamento dos 6–11 anos, exacerbação e alta. Nenhum fluxograma, tabela ou imagem da GINA foi reproduzido.
+
+**Pendências que permanecem:** revisar a seleção final de medicamentos e disponibilidade regulatória brasileira, ampliar quadro de CI por apresentação, integrar prevenção de exposições segundo evidência, criar figuras autorais e fila de imagens clínicas licenciadas, revisar doses por especialista e farmacêutico, transformar rascunho em formato de apostila LURIA, assegurar pelo menos 60 mil caracteres didáticos úteis, rodar testes de conteúdo e inspeção desktop/PWA. **Não classificar como aprovada.**
