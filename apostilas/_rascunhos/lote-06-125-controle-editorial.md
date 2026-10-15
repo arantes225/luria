@@ -41,3 +41,48 @@ Conceitos → princípios de programa → pré-teste e riscos → sobre/subdiagn
 - [ ] Curadoria de até 10 figuras didáticas e aprovação Admin.
 - [ ] JSON, HTML e execução dos validadores oficiais, com inspeção desktop/PWA.
 - [ ] Revisão médica independente antes de qualquer merge/deploy.
+
+---
+
+## Etapa 2 — conteúdo integral, casos, questões e prévia técnica (14/10/2026)
+
+**Produção realizada na branch editorial, sem sobrescrever material público:**
+- `apostilas/_rascunhos/lote-06-125-rastreamento-prevencao-quaternaria.md`: **88.001 caracteres brutos**, 30 capítulos numerados; capítulos 1–26 integram o corpo didático, 27 reúne 8 casos, 28 reúne 12 questões, 29 fontes e 30 controle editorial.
+- `apostilas/_rascunhos/lote-06-125-build-input-preliminar.json`: 29 seções (introdução, corpo, casos e questões), 9 referências e zero imagens clínicas.
+- `apostilas/_rascunhos/lote-06-125-preview.html`: **107.589 caracteres HTML**, 30 seções incluindo bibliografia, `noindex,nofollow`, 8 casos, 12 questões e 12 conjuntos de alternativas.
+- Prévia **não publicada**, sem merge/deploy. Instruções atuais Brasil 2025–2026 citadas no próprio texto.
+
+**Robustez didática:** aproximadamente **62.798 caracteres instrucionais** na filtragem simples de títulos/corpo dos capítulos 1–26, excluindo casos, questões, fontes e seção de controle, URLs e sintaxe Markdown. Isso não comprova sozinho unicidade semântica nem revisão clínica independente. A conferência preliminar não identificou parágrafos instrucionais longos literalmente duplicados.
+
+**Checagem estrutural:** IDs HTML repetidos: 0; links de âncora inexistentes: 0; questões: 12; casos: 8; listas com alternativas A–D: 12. A checagem é textual e não substitui execução do build nem visualização em PWA.
+
+### Matriz lexical de autossuficiência das questões
+Consulta aos **títulos e corpo didático dos capítulos**, sem usar o gabarito do bloco de questões:
+| Questão | Conceito | Capítulo(s) | Termos verificados | Situação |
+| --- | --- | --- | --- | --- |
+| 1 | Rastrear versus diagnosticar | 1, 2 | sintomas; diagnostico | Cobertura preliminar |
+| 2 | DNA-HPV SUS | 6 | dna-hpv; 25 a 64 | Cobertura preliminar |
+| 3 | Mamografia no SUS | 7 | 50; 74; 40 | Cobertura preliminar |
+| 4 | FIT positivo | 8 | fit; colonoscopia | Cobertura preliminar |
+| 5 | Lead-time | 3, 21 | lead-time; morte | Cobertura preliminar |
+| 6 | Sobrediagnóstico | 3 | sobrediagnostico; falso positivo | Cobertura preliminar |
+| 7 | VPP baixo | 4 | sensibilidade; 495 | Cobertura preliminar |
+| 8 | Risco hereditário | 11 | lynch; colonoscopias | Cobertura preliminar |
+| 9 | Prevenção quaternária | 13, 14 | prevencao quaternaria; dano | Cobertura preliminar |
+| 10 | Qualidade do programa | 12, 18 | confirmacao; seguimento | Cobertura preliminar |
+| 11 | Incidentalomas | 14, 16 | incidental; tireoide | Cobertura preliminar |
+| 12 | Sintoma após teste negativo | 1, 22 | nodulo; diagnostico | Cobertura preliminar |
+
+**Resultado 12/12 em triagem lexical**, não certificação do mérito médico ou da explicação de cada alternativa. A primeira passagem considerava apenas o corpo da seção e deixou de identificar “incidentalomas” por corresponder ao **título** do capítulo 16 e a formas derivadas no texto; a busca foi corrigida para abranger título e expressão conceitual, sem editar a informação médica para satisfazer termo.
+
+**Verificações aritméticas:** com sensibilidade 90%, especificidade 95%, prevalência 1% em 10.000 indivíduos, 90 verdadeiros positivos, 495 falsos positivos e VPP = 90/585 = **15,38%**. O exercício de 50 vs 40 mortes em 10.000 implica redução absoluta = **0,1 ponto percentual** e relativa = 20%. Números são deliberadamente fictícios e **não** representam efeito real de programas do SUS.
+
+### Critérios ainda não cumpridos
+- [ ] Auditoria por médico de Preventiva/APS e revisão detalhada de cada norma ministerial 2026, incluindo grupos de alto risco, políticas de transição e oferta territorial.
+- [ ] Deduplicação semântica, controle de utilidade e correção editorial da obra inteira.
+- [ ] Curadoria de até 10 imagens/diagramas autorais ou licenciados e aprovação via Admin, sem uso automático de imagens externas.
+- [ ] Executar **realmente** o script oficial de geração e auditores do repositório (não foram executados aqui).
+- [ ] Testes visuais desktop/PWA, responsividade, navegação, acessibilidade e desempenho.
+- [ ] Aprovação formal antes de publicação/merge/deploy.
+
+**Parecer: apostila 125 integralmente redigida e com prévia técnica; rascunho ainda não certificado ou publicado.**
