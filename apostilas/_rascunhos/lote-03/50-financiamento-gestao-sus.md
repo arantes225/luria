@@ -732,6 +732,70 @@ Listas de espera devem ter critérios de risco, transparência e atualização, 
 
 Ao contratar exames ou medicamentos, avaliar preços, qualidade, fornecimento, manutenção, assistência técnica, condições de armazenagem e capacidade de equipe. O menor preço unitário não garante menor custo total se gera falta, devolução ou infecção por equipamento inadequado. Em toda contratação pública aplicar marcos licitatórios e sanitários vigentes, com assessoria jurídica/controle interno; a aula ensina raciocínio gerencial, não substitui manual de compras governamentais.
 
+### 16.5 Oficina de interpretação financeira: cinco exercícios resolvidos
+
+A interpretação de financiamento torna-se mais sólida quando o estudante **reconstrói o raciocínio do gestor com números**. Todos os dados abaixo são **fictícios** e cuidadosamente simplificados. São exercícios didáticos de interpretação, não representações do SIOPS de um ente real nem fórmulas oficiais para casos complexos. Antes de apurar um exercício efetivo, conferir exercício financeiro, receitas pertencentes à base, destinação, modalidade de repasse, fases da despesa, ajustes contábeis e normas vigentes.
+
+#### Exercício A — percentuais mínimos com três denominadores diferentes
+
+Uma prova apresenta as seguintes informações de um ano hipotético:
+
+| Ente | Base de cálculo **já apurada** segundo a norma | ASPS com recursos computáveis da fonte adequada | Mínimo aplicável |
+|---|---:|---:|---:|
+| União | RCL de R$ 2 bilhões | R$ 350 milhões | 15% da RCL |
+| Estado X | base de impostos/transferências **líquida de deduções legais** de R$ 500 milhões | R$ 55 milhões | 12% da base |
+| Município Y | base de impostos/transferências de R$ 100 milhões | R$ 18 milhões | 15% da base |
+
+**Passo 1 — calcular o mínimo legal:** União R$ 300 milhões; Estado X R$ 60 milhões; Município Y R$ 15 milhões. **Passo 2 — comparar com numerador computável:** União aplicou 17,5% da RCL e excedeu piso em R$ 50 milhões; Estado X aplicou 11%, faltando R$ 5 milhões; Município Y aplicou 18%, excedendo piso em R$ 3 milhões. **Passo 3 — questionar qualidade:** cumprir percentual não significa provar atendimento universal, segurança ou redução de mortalidade evitável. A prova pode pedir tanto cálculo quanto interpretação da política de saúde.
+
+**Onde o aluno erra:** usar RCL como denominador dos três entes, somar toda transferência federal ao numerador municipal ou calcular 12% sobre receita estadual antes de repasses constitucionais que precisam ser deduzidos. A simplificação “base já apurada” é proposital para isolar a matemática; em demonstrações reais, a composição da base é um exercício contábil próprio.
+
+#### Exercício B — restos a pagar: diferença entre empenhar e demonstrar ASPS
+
+Município fictício precisa comprovar R$ 12 milhões de ASPS computáveis. Possui **R$ 10 milhões de despesas liquidadas/pagas elegíveis** e **R$ 3 milhões de despesas empenhadas ainda não liquidadas**, mas há apenas **R$ 1,5 milhão de disponibilidade de caixa vinculada** para suportar esses restos a pagar, segundo hipóteses simplificadas do art. 24 da LC141.
+
+**Passo 1:** não lançar automaticamente os R$ 3 milhões inteiros. **Passo 2:** considerar que o art. 24 admite parte empenhada/não liquidada inscrita em restos a pagar apenas **até o limite da disponibilidade de caixa**: neste exemplo, **R$ 1,5 milhão**. **Passo 3:** soma didática de R$ 10 milhões + R$ 1,5 milhão = **R$ 11,5 milhões**, com déficit de **R$ 500 mil** em relação ao piso do enunciado, antes de outros ajustes legais. **Passo 4:** se o RAP usado para o mínimo for cancelado posteriormente, a disponibilidade vinculada deve ser aplicada em ASPS no prazo do art. 24, sem compensar artificialmente o mínimo do ano subsequente.
+
+**O que esse cálculo não autoriza:** excluir análise de despesas liquidadas ainda não pagas, outros ajustes da legislação, saldos vinculados, fontes de recursos ou critérios dos demonstrativos oficiais. É um **modelo reduzido**, elaborado só para mostrar por que empenho isolado não prova cumprimento de piso.
+
+#### Exercício C — uma conta do Fundo de Saúde tem saldo, mas não necessariamente liberdade de gasto
+
+O Fundo recebeu R$ 800 mil para equipamento diagnóstico e há R$ 240 mil disponíveis após a contratação. Na UBS, faltam insumos de uso contínuo. O prefeito quer usar todo o saldo para compra de reagentes.
+
+**Primeiro passo:** identificar a origem do recurso, bloco e programa de trabalho, o objeto pactuado, limites de remanejamento e condições de saldo. Se o saldo deriva de programa destinado a **Estruturação**, não pode ser redirecionado automaticamente a qualquer despesa de **Manutenção**. **Segundo passo:** conferir se existe possibilidade formal de utilização/remanejamento sob a norma e por autoridades competentes. **Terceiro passo:** procurar fonte regular de Manutenção para os reagentes enquanto se resolve a situação legal do saldo de Estruturação. **Quarto passo:** avaliar se os reagentes atendem equipamento efetivamente instalado, com operador, manutenção e demanda apropriada.
+
+**Por que o saldo alto não significa eficiência?** Recurso parado pode refletir problema de planejamento ou tramitação, mas também reserva legítima para obrigação contratual futura; não se pode classificá-lo automaticamente como desvio. A avaliação exige extrato, empenhos, obrigações, programação e resultados esperados. A Portaria 828/2020 ajusta nomenclatura e destinação dos blocos, sem extinguir suas finalidades.
+
+#### Exercício D — meta de hipertensão e o efeito de mudar o denominador
+
+Uma equipe hipotética acompanhava **450 de 1.000 pessoas hipertensas cadastradas** no início do quadrimestre, isto é, **45%**. Após busca ativa, registrou **630 acompanhadas**, mas validou diagnóstico de outras 200 pessoas no cadastro, totalizando **1.200**. O percentual final é **630/1.200 = 52,5%**, apesar de haver **180 pessoas adicionais acompanhadas**.
+
+**Interpretação:** o aumento em número absoluto foi de 40% (180/450), mas a cobertura percentual elevou-se apenas 7,5 pontos percentuais. Isso pode ocorrer por ampliação de identificação da população necessitada, não necessariamente piora de produtividade. Ainda é necessário investigar estratificação de risco, controle pressórico, abandono e desfechos. Se o indicador federal usa definição técnica diferente de “acompanhado”, os percentuais deste exercício não substituem a fórmula oficial da **Nota Técnica 8/2026**.
+
+**Erro de gestão:** desestimular cadastro correto de pessoas de alto risco apenas para elevar desempenho percentual. Isso afrontaria integralidade/equidade e corromperia o significado clínico do indicador.
+
+#### Exercício E — rede regional: custo nominal versus acesso efetivo
+
+Município A tem oferta local de exame especializado com **custo hipotético de R$ 310 por exame**, capacidade de 60 exames/mês e fila crescente. Uma referência regional propõe valor de R$ 200/exame e capacidade de 120 exames/mês, mas cada viagem custa R$ 90 por paciente, além de tempo do acompanhante e risco de ausência.
+
+Se todas as despesas forem assumidas pelo sistema, o custo direto hipotético regional para cada exame é **R$ 290**; a diferença em relação ao exame local é **R$ 20**, não R$ 110. Se 20% dos pacientes faltam por barreiras logísticas, o custo por **exame efetivamente realizado** pode mudar; a capacidade nominal não prova acesso realizado. Entretanto, o contrato regional pode trazer melhor equipe, laudo mais confiável e maior volume, compensando custo de transporte. Precisam ser avaliados tempo de espera, critérios de risco, disponibilidade de transporte, qualidade diagnóstica e contrarreferência.
+
+**Decisão razoável:** pactuar fluxo que garanta transporte/agenda/laudo e reavaliar dados reais de atendimento, sem concluir automaticamente que qualquer uma das duas ofertas é superior. Comparar apenas preço de tabela pode ocultar custo sistêmico e danos por demora.
+
+### 16.6 Quadro de armadilhas quantitativas
+
+| Indicador isolado | Conclusão precipitada | O que precisa ser verificado |
+|---|---|---|
+| “Aplicamos 18% em saúde” | SUS municipal excelente | composição do numerador/denominador, equidade, acesso e resultados |
+| “Empenhamos tudo” | piso obrigatoriamente cumprido | liquidação, caixa vinculada, restos a pagar e art. 24 |
+| “Sobrou dinheiro em Estruturação” | pode gastar em qualquer custeio | finalidade, programa, objeto e eventual remanejamento formal |
+| “Cobertura de hipertensão aumentou pouco” | equipe não realizou busca ativa | tamanho/qualidade do denominador e pessoas acompanhadas |
+| “Exame regional é R$ 110 mais barato” | regionalização sempre economiza R$ 110 | transporte, absenteísmo, laudo, qualidade e continuidade |
+| “Indicador federal ótimo” | cuidado clínico necessariamente ótimo | risco, desfechos, vulnerabilidades e experiência do usuário |
+
+**Princípio de prova:** diferenciar **taxa, valor absoluto, gasto autorizado, gasto efetivo, serviço entregue e desfecho de saúde**. Cada um responde pergunta diferente. A qualidade da gestão depende de conectá-los, não de escolher o número que produz a melhor aparência.
+
+
 ## 17. Matriz editorial de autossuficiência da aula 50
 
 | Aprendizagem obrigatória | Capítulo onde é explicada | Teste de retenção | Revisão pendente |
