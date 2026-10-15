@@ -248,3 +248,338 @@ A prevalência verdadeira na população é um **parâmetro**; a prevalência me
 
 Quanto menor o efeito que se deseja detectar, geralmente maior o número de participantes necessário. Quanto menor o evento, mais difícil documentar diferenças absolutas pequenas. Ensaio grande pode detectar diferença trivial do ponto de vista clínico; ensaio pequeno pode ter IC compatível tanto com grande benefício quanto com dano importante.
 
+
+
+## 14. Intervalo de confiança, valor de p e relevância clínica
+
+### 14.1 O que o valor de p significa — e o que não significa
+
+Sob um modelo estatístico e uma hipótese nula especificados, o **valor de p** é a probabilidade de obter dados tão ou mais extremos que os observados se a hipótese nula e as premissas forem verdadeiras. **Não** é a probabilidade de a hipótese nula ser verdadeira, nem a chance de o resultado decorrer “apenas do acaso”, nem a probabilidade de o tratamento funcionar para o paciente. O p também depende do tamanho da amostra: com milhões de pessoas, diferença clínica irrisória pode produzir p pequeno; com poucas pessoas, benefício potencialmente relevante pode ter p >0,05 por imprecisão.
+
+Definir antes da análise um limiar alfa de 5% é uma convenção operacional, não uma fronteira ontológica. Resultados p=0,049 e p=0,051 raramente justificam decisões diametralmente opostas quando estimativas e dados são semelhantes. O leitor deve considerar tamanho de efeito, intervalo de confiança, desenho, viés, pré-especificação, relevância do desfecho e coerência com outras evidências.
+
+### 14.2 Interpretação correta do intervalo de confiança
+
+O **intervalo de confiança de 95%** é construído por procedimento que, sob as premissas estatísticas, cobriria o parâmetro verdadeiro em 95% das repetições hipotéticas da amostragem. Não se deve atribuir, em interpretação frequentista estrita, probabilidade de 95% de o parâmetro fixo específico estar dentro do intervalo já calculado. Na prática assistencial, o IC fornece conjunto de valores compatíveis com dados e premissas, sendo muito mais informativo que “significativo/não significativo” isolado.
+
+Exemplo fictício: **RR = 0,80; IC95% 0,60–1,05**. A melhor estimativa indica redução relativa de 20%, mas os dados também são compatíveis com benefício maior e até pequeno aumento de risco. Como o IC inclui **1**, a hipótese de ausência de efeito relativo não é rejeitada no teste bilateral usual de 5%, sem ajustes. Isso **não prova** que o tratamento não funciona. Já para **diferença de médias**, o valor nulo é **0**, não 1. Saber a escala do desfecho é indispensável.
+
+Se a diferença média de dor é −0,4 ponto numa escala de 0 a 10 com IC95% −0,6 a −0,2, pode existir evidência estatística de melhora, mas uma diferença dessa magnitude talvez fique abaixo de um limiar de importância clínica pré-definido. A **diferença mínima clinicamente importante** precisa ser contextualizada e não pode ser inventada pelo leitor após ver resultado.
+
+### 14.3 Multiplicidade e exploração de subgrupos
+
+Se 20 desfechos independentes são testados sob hipóteses nulas verdadeiras com alfa 0,05, o número esperado de falsos positivos é aproximadamente 1, mas isso não significa que “exatamente um resultado é falso”. A chance de ao menos um resultado positivo por acaso aumenta com testes múltiplos. Por isso, planejamento estatístico pode controlar erro familiar ou taxa de descobertas falsas em contextos apropriados. Corrigir mecanicamente todos os testes com Bonferroni pode ser excessivamente conservador em certos desenhos; o problema precisa ser definido pelo objetivo da pesquisa.
+
+Subgrupos escolhidos depois dos resultados merecem cautela, especialmente quando o estudo relata “houve benefício somente em mulheres” sem teste formal de interação e sem plausibilidade. Comparar p=0,03 num grupo com p=0,08 em outro não demonstra diferença entre grupos. O método correto testa interação e avalia incerteza. Em muitas situações, análises exploratórias geram hipóteses para investigação posterior, não recomendações clínicas definitivas.
+
+### 14.4 Relevância clínica, estatística e decisória
+
+Considere três resultados fictícios de redução de internações:
+- Ensaio A: diferença absoluta −0,2 ponto percentual, IC estreito e p<0,001; benefício muito pequeno pode ou não compensar custo alto.
+- Ensaio B: diferença absoluta −5 pontos percentuais, IC de −12 a +1; benefício potencial importante, mas estimativa muito incerta.
+- Ensaio C: redução de 3 pontos percentuais, IC de 1 a 5, com dano hemorrágico significativo de 2 pontos percentuais; pesar trade-offs.
+
+A **decisão** não decorre apenas de ser estatisticamente “positivo”. A interpretação deve integrar valor do desfecho, riscos, risco basal, recursos, equidade e preferências do paciente. Um tratamento com benefício moderado, baixo custo e danos raros pode ser preferível a outro com grande benefício relativo em desfecho substituto, alto custo e importante incerteza de segurança.
+
+## 15. Medidas contínuas, distribuições e escolha do teste
+
+### 15.1 Variáveis e estatísticas descritivas
+
+Variáveis **nominais** têm categorias sem ordem natural (tipo sanguíneo); **ordinais** têm ordem (estágio de doença, escala Likert); **discretas** são contagens; **contínuas** podem assumir valores numéricos em intervalo (pressão arterial, Hb). A escolha da medida de resumo depende da distribuição e da pergunta. **Média** é sensível a valores extremos, **mediana** representa o ponto central da distribuição ordenada, **desvio-padrão** descreve dispersão em torno da média e **intervalo interquartil** contém os 50% centrais entre quartis.
+
+Exemplo fictício: cinco tempos de permanência hospitalar de 2, 3, 4, 5 e 26 dias. A média é **8 dias**, mediana **4 dias**; comunicar apenas média cria impressão enganosa sobre permanência típica. Distribuições muito assimétricas, como custos e duração de internação, frequentemente pedem mediana/IQR, mas a média ainda pode ser relevante para orçamento total. Uma tabela descritiva não substitui modelo analítico.
+
+### 15.2 Testes comuns: o que respondem
+
+| Situação | Técnica frequentemente utilizada | Cuidado principal |
+| --- | --- | --- |
+| Comparar média em dois grupos independentes | Teste t para amostras independentes / Welch | Variância, forma da distribuição e independência |
+| Comparar medidas antes/depois no mesmo sujeito | Teste t pareado | Dependência entre medições |
+| Comparar desfecho ordinal ou não normal em dois grupos | Mann–Whitney em certos objetivos | Não é automaticamente teste de diferença de medianas |
+| Comparar proporções entre grupos | Qui-quadrado ou Fisher | Células com contagens pequenas |
+| Associação linear entre variáveis contínuas | Pearson; Spearman para monotonicidade/ranks | Correlação não é causalidade |
+| Modelar desfecho binário | Regressão logística | Produz OR, não RR diretamente |
+| Modelar tempo até evento | Kaplan–Meier / regressão de Cox | Censura, riscos proporcionais, competitivos |
+| Contagens e taxas | Poisson/negativa binomial conforme dispersão | Superdispersão e pessoa-tempo |
+
+A escolha do teste não é um ritual baseado apenas em “normalidade de Kolmogorov–Smirnov”. O estimando, amostragem, independência, tamanhos de amostra, distribuição dos resíduos e desenho experimental são fundamentais. Em dados pareados, ignorar correspondência pode desperdiçar informação ou gerar erros. Em estudos por conglomerados — escolas, unidades de saúde, hospitais — observações do mesmo cluster se correlacionam e demandam métodos apropriados; aplicar teste individual simples pode produzir IC estreitos demais.
+
+### 15.3 Confusão entre correlação e concordância
+
+Dois aparelhos de medir pressão arterial podem produzir correlação alta e diferir sempre por +15 mmHg. Isso não demonstra **concordância** suficiente para substituição. Correlação mede associação de variação, enquanto avaliação de concordância pode empregar Bland–Altman, coeficiente de correlação intraclasse apropriado e limites clinicamente aceitáveis. Um método novo pode ter AUC elevada e ainda ser mal calibrado para estimar risco absoluto. Em pesquisa diagnóstica, perguntar se a finalidade é ordenar pessoas por risco, prever probabilidades ou substituir uma medição existente.
+
+## 16. Testes diagnósticos: construindo a tabela sem decorar fórmulas
+
+### 16.1 Teste índice, padrão de referência e população adequada
+
+O desempenho de um teste depende de **quem foi testado**, **qual doença-alvo**, **qual limiar do teste**, **qual padrão de referência** e **como o exame foi aplicado**. Um teste avaliado em 100 pacientes com doença avançada e 100 controles totalmente saudáveis pode mostrar acurácia melhor que no pronto-socorro, onde há apresentações precoces e doenças confundidoras. Esse é o **viés de espectro**. Um bom estudo de acurácia recruta participantes com suspeita clínica real e aplica referência adequada, preferencialmente com leitura independente/cega.
+
+Quando o padrão de referência tem erros, o teste índice pode ser avaliado injustamente. Se apenas testes positivos recebem exame confirmatório, há **viés de verificação parcial**; se resultados do teste índice entram no próprio padrão de referência, ocorre **viés de incorporação**. A precisão observada pode estar contaminada pelo desenho.
+
+### 16.2 Tabela 2 × 2 diagnóstica
+
+| | Doença presente | Doença ausente |
+| --- | ---: | ---: |
+| Teste positivo | Verdadeiro positivo (VP) | Falso positivo (FP) |
+| Teste negativo | Falso negativo (FN) | Verdadeiro negativo (VN) |
+
+**Sensibilidade = VP/(VP+FN)**: entre pessoas com a doença, proporção testada positivamente. **Especificidade = VN/(VN+FP)**: entre pessoas sem a doença, proporção testada negativamente. **Valor preditivo positivo (VPP) = VP/(VP+FP)**: entre testes positivos, proporção com doença, nesse cenário. **Valor preditivo negativo (VPN) = VN/(VN+FN)**: entre testes negativos, proporção sem doença.
+
+Sensibilidade e especificidade não são uma propriedade invariável da marca do teste: a doença-alvo, apresentação, limiar e espectro podem modificá-las. VPP e VPN mudam claramente conforme **prevalência/probabilidade pré-teste**, mesmo com sensibilidade/especificidade constantes.
+
+### 16.3 Exemplo completo de acurácia
+
+Em 1.000 pacientes fictícios com suspeita diagnóstica, a prevalência pelo padrão de referência é 10% (100 doentes, 900 sem doença). Um teste possui **sensibilidade 90%** e **especificidade 80%**:
+
+- Doentes: 90 testes positivos (**VP**) e 10 negativos (**FN**).
+- Não doentes: 180 testes positivos (**FP**) e 720 negativos (**VN**).
+
+Cálculos: sensibilidade = 90/100 = **90%**; especificidade = 720/900 = **80%**. **VPP = 90/(90+180) = 90/270 = 33,3%**. **VPN = 720/(720+10) = 720/730 = 98,6%**. Apesar de sensibilidade de 90%, **cerca de dois terços dos testes positivos são falsos positivos nesse cenário**, porque a doença não é frequente e a especificidade deixa 20% de falso positivo entre 900 não doentes.
+
+Essa tabela é núcleo de provas de epidemiologia clínica. Não afirmar que “se o teste tem 90% de sensibilidade, 90% dos positivos têm doença”: isso confunde sensibilidade com VPP.
+
+### 16.4 Probabilidade pré-teste e decisão de investigar
+
+Probabilidade pré-teste nasce de prevalência no cenário, sinais e sintomas, fatores de risco e regras validadas. Em atendimento de baixa prevalência, positivo de teste pouco específico pode não ser suficiente para confirmar diagnóstico; em cenário de alta suspeita, negativo de teste moderadamente sensível talvez não exclua. Por isso protocolos de troponina, D-dímero, testes de gravidez, infecções e investigação de câncer frequentemente combinam **probabilidade clínica + resultado**, às vezes com múltiplos testes sequenciais.
+
+O objetivo não é transformar toda decisão em cálculo complicado, mas compreender por que teste adequado para **exclusão em baixo risco** pode ser insuficiente em **alto risco**. Usar exame com limiar diferente do validado para o contexto invalida extrapolações de acurácia.
+
+## 17. Razões de verossimilhança e teorema de Bayes
+
+### 17.1 Razões de verossimilhança (LR)
+
+**LR+ = sensibilidade/(1−especificidade)**. **LR− = (1−sensibilidade)/especificidade**. Essas razões transformam **odds pré-teste em odds pós-teste**: odds pós = odds pré × LR. Converter probabilidade em odds: p/(1−p). Voltar: odds/(1+odds).
+
+No exemplo anterior, sensibilidade 0,90 e especificidade 0,80: **LR+ = 0,90/0,20 = 4,5** e **LR− = 0,10/0,80 = 0,125**. Para probabilidade pré-teste de 10%, odds pré = 0,10/0,90 ≈ 0,111. Após teste positivo, odds ≈ 0,111×4,5 = 0,50 → probabilidade pós = 0,50/1,50 = **33,3%**, que coincide com VPP da tabela. Após teste negativo, odds ≈ 0,111×0,125 = 0,0139 → probabilidade de doença pós-negativo ≈ **1,37%**.
+
+**Pulo do Gato:** LR+ alto ajuda a confirmar; LR− muito baixo ajuda a excluir, mas a utilidade real depende do risco pré-teste e de limiares de ação. Não usar cortes rígidos de LR como verdades universais.
+
+### 17.2 Sensibilidade versus especificidade e o mnemônico clássico
+
+“**SnNout**”: teste muito sensível, quando negativo, costuma reduzir fortemente probabilidade de doença; “**SpPin**”: teste muito específico, quando positivo, costuma aumentá-la. Os mnemônicos só funcionam com **limiar e contexto adequados**, e quando o teste é suficientemente discriminativo. Sensibilidade elevada sozinha, acompanhada de especificidade quase nula, não é boa estratégia; a LR integra as duas.
+
+Exames de triagem frequentemente priorizam sensibilidade para reduzir falso negativo; exames confirmatórios podem priorizar especificidade, mas essas são escolhas de limiar e consequências, não propriedades exclusivas de “screening” e “diagnóstico”. A comparação correta inclui dano de falso positivo, risco de teste invasivo e custo.
+
+### 17.3 Testes seriados e paralelos
+
+Em **série**, exige-se geralmente que ambos os testes sejam positivos para classificar caso: tende a aumentar especificidade e diminuir sensibilidade comparado a um único teste, dependendo da dependência entre os resultados. Em **paralelo**, basta um positivo: tende a aumentar sensibilidade e diminuir especificidade. Não multiplicar sensibilidades ou especificidades como se exames fossem estatisticamente independentes quando medem mecanismos semelhantes.
+
+A decisão sequencial pode parar quando a probabilidade pós-teste ultrapassa limiar de tratar ou cai abaixo do limiar de não investigar. Entre esses extremos, novo teste pode ser útil. Limiares variam conforme gravidade da doença, toxicidade do tratamento, risco do exame e preferências; não há um limiar universal de probabilidade aplicável a toda condição.
+
+## 18. Curva ROC, AUC, pontos de corte e calibragem
+
+A **curva ROC** representa sensibilidade (eixo y) versus 1−especificidade (x) ao variar o limiar do teste. A **área sob a curva (AUC)** descreve capacidade de discriminação: a probabilidade, numa amostra apropriada, de uma pessoa aleatória com doença receber escore maior que uma pessoa sem doença. Uma AUC de 0,80 indica boa discriminação relativa, mas **não fornece VPP**, sensibilidade no limiar adotado, segurança clínica, calibração ou utilidade decisória diretamente.
+
+Ao reduzir ponto de corte de troponina ou biomarcador, mais pessoas com doença tendem a testar positivo (maior sensibilidade), mas também mais sem doença (menor especificidade). Um limiar escolhido após explorar dados pode ter desempenho otimista e precisar de validação externa. **Teste índice** deve ser comparado com alternativas no mesmo espectro clínico, e não com controles artificiais extremos.
+
+**Calibragem** de modelo prognóstico verifica se riscos previstos correspondem às frequências observadas: se um modelo prevê 20% para 100 pacientes semelhantes, esperar-se-ia aproximadamente 20 eventos em seguimento compatível, com incerteza. AUC alta não garante boa calibração. Em uma mudança de hospital ou população, frequência de doença e manejo podem alterar riscos; modelos de predição exigem validação, eventualmente recalibração e análise de impacto clínico.
+
+**Net benefit** e curvas de decisão procuram avaliar valor de um modelo considerando limiares e trade-off de falso positivo/negativo; usar essas técnicas requer explicitar consequências e hipóteses. Um modelo com ganho pequeno de AUC pode ser clinicamente útil em limiar relevante, enquanto ganho estatístico grande pode não mudar decisões.
+
+## 19. Estudos prognósticos e modelos de predição
+
+### 19.1 Prognóstico não é efeito de tratamento
+
+Um fator prognóstico aumenta ou diminui probabilidade de desfecho independentemente de qual tratamento será dado, dentro de um contexto. Um **modificador de efeito de tratamento** determina se o benefício de uma intervenção difere entre subgrupos. Exemplo: idade pode prever mortalidade, mas isso não prova que determinado fármaco funcione mais ou menos por idade. Separar prognóstico, predição de risco e predição de resposta ao tratamento evita decisões baseadas em subgrupos espúrios.
+
+Modelos prognósticos integram múltiplos preditores para estimar risco de desfecho em horizonte definido. O momento de medição dos preditores precisa preceder a decisão. Variáveis colhidas **depois** da intervenção podem introduzir vazamento de informação (*data leakage*) em modelos que pretendem orientar escolha inicial.
+
+### 19.2 Validação interna e externa
+
+Um modelo pode encaixar-se perfeitamente nos dados usados para treinamento e falhar em pacientes futuros: **sobreajuste/overfitting**. Validação interna por bootstrap ou validação cruzada avalia otimismo dentro da amostra, mas **validação externa** em outros centros, épocas ou populações é fundamental para transportabilidade. Dividir mecanicamente uma amostra pequena em 70/30 pode desperdiçar informação, e a melhor estratégia depende do desenho e tamanho. Medidas de desempenho incluem discriminação, calibragem, erro preditivo e utilidade clínica.
+
+O checklist **TRIPOD** orienta relato de modelos prognósticos; atualizações e extensões para modelos com IA exigem verificar versão e tipo de estudo. Checklist de relato não valida um escore por si. Um algoritmo que usa raça ou CEP como proxies de acesso pode perpetuar desigualdades, mesmo com AUC aparente alta.
+
+## 20. Revisão sistemática: método antes de juntar estudos
+
+### 20.1 Não confundir revisão narrativa, sistemática e metanálise
+
+**Revisão narrativa** integra literatura selecionada por critérios mais flexíveis e pode explicar conceitos, mas é vulnerável à seleção subjetiva de referências. **Revisão sistemática** define pergunta, critérios de elegibilidade, busca reprodutível, seleção, extração, avaliação do risco de viés e síntese transparente. **Metanálise** é a combinação quantitativa de resultados; pode integrar uma revisão sistemática quando estudos são suficientemente compatíveis. Não existe obrigação de realizar metanálise se desenhos, populações, intervenções e desfechos são incomparáveis. Uma metanálise tecnicamente sofisticada pode ser enganosa quando combina estudos inadequados.
+
+Registrar previamente protocolo, critérios e métodos ajuda a identificar mudanças oportunistas. **PROSPERO** é um registro para revisões sistemáticas elegíveis relacionadas à saúde; o registro não garante qualidade e nem todos os tipos de revisão são aceitos. Bases como Cochrane, MEDLINE, Embase, LILACS e registros de ensaios podem ser necessárias, conforme pergunta e recursos.
+
+### 20.2 Seleção em duplicata e transparência
+
+Dois revisores independentes para triagem, extração e risco de viés, com reconciliação de divergências, reduzem erros. A busca deve documentar base, data, estratégia completa e restrições. O fluxograma **PRISMA 2020** apresenta identificação, exclusão, elegibilidade e inclusão, incluindo motivos de exclusão de textos completos. **PRISMA é padrão de relato**, não medida de risco de viés nem promessa de que revisão “teve nível de evidência 1”. O próprio risco de viés é avaliado com instrumentos adequados a cada desenho, como RoB 2 em ensaios.
+
+O revisor deve identificar duplicatas de publicação: o mesmo ensaio pode ter relatório preliminar, artigo final e subanálises. Somá-los como três ensaios independentes conta pacientes repetidamente e estreita IC de forma falsa. Dados não publicados ou protocolos ajudam a detectar desfechos omitidos. Restrições de idioma, acesso fechado, bases ausentes e financiamento podem produzir lacunas.
+
+### 20.3 Síntese narrativa estruturada também é ciência
+
+Quando uma metanálise não é apropriada, uma síntese sem pooling deve organizar efeitos por população, intervenção, risco de viés e desfecho, sem “contagem de votos” simplista baseada apenas em quantos estudos deram p<0,05. Três estudos pequenos “não significativos” podem apontar mesmo efeito relevante, mas ser imprecisos; um estudo grande pode dominar informação. Sintetizar direções, magnitudes, IC e heterogeneidade é mais útil que afirmar “a maioria foi positiva”.
+
+## 21. Metanálise: pesos, heterogeneidade e interpretação
+
+### 21.1 Efeito fixo e efeitos aleatórios
+
+Em modelo de **efeito fixo**, busca-se um efeito subjacente comum aos estudos, e diferenças observadas decorrem essencialmente de variabilidade amostral sob as premissas. Em modelos de **efeitos aleatórios**, admite-se distribuição de efeitos verdadeiros entre estudos e estima-se média dessa distribuição. A escolha não deve ser determinada automaticamente por teste de heterogeneidade; depende de pergunta e justificativa clínica. Efeito aleatório **não cura** estudos enviesados nem torna populações incomparáveis legítimas.
+
+Com variâncias menores, estudos tendem a receber maior peso em combinações por inverso da variância. Um estudo grande pode influenciar bastante a estimativa, mas o peso depende também do modelo e da heterogeneidade. Metanálises de poucos estudos com variância entre estudos mal estimada podem ter IC artificialmente estreitos; considerar métodos estatísticos apropriados e análise de sensibilidade.
+
+### 21.2 Heterogeneidade clínica, metodológica e estatística
+
+Heterogeneidade **clínica** decorre de diferenças em população, gravidade, intervenções, duração e desfechos. **Metodológica** inclui risco de viés, definições e condução. **Estatística** descreve variação de resultados além daquela atribuída ao acaso sob modelo. **I²** representa proporção estimada da variabilidade observada não explicada por erro de amostragem em certo modelo, mas tem grande incerteza, especialmente com poucos estudos, e não mede diretamente magnitude absoluta da variabilidade clínica.
+
+Exemplo: I²=70% pode indicar heterogeneidade importante, mas seu significado depende de número de estudos, variâncias e tamanhos de efeito; I²=0% não prova homogeneidade clínica. Em modelos de efeitos aleatórios, **intervalo de predição** pode ser útil para mostrar extensão plausível de efeitos em novo contexto, quando dados permitem estimá-lo com credibilidade. Sempre perguntar *por que* estudos diferem antes de escolher modelo.
+
+### 21.3 Forest plot: lendo corretamente
+
+Cada estudo aparece com efeito e IC, e o resumo combinado com seu IC. A linha de ausência de efeito é **1** para RR/OR/HR e **0** para diferenças de média/risco. Quando IC cruza linha nula, o resultado individual não atinge significância bilateral usual de 5%, mas ainda contribui informação ao pool. Quadrados maiores costumam representar maior peso; losango sintetiza estimativa e precisão. **Não interpretar “diamante sem cruzar 1” como autorização universal de tratamento**: buscar viés, magnitude absoluta, aplicabilidade, eventos adversos e GRADE.
+
+### 21.4 Viés de publicação e small-study effects
+
+Estudos positivos podem ser publicados mais rapidamente que negativos. Um **funnel plot** assimétrico pode sugerir efeitos de estudos pequenos ou viés de publicação, mas assimetria também decorre de heterogeneidade verdadeira, acaso e problemas metodológicos. Com poucos estudos, métodos de detecção têm baixa capacidade. Não concluir “ausência de viés” porque gráfico parece simétrico; avaliar registros de ensaios, protocolos, perdas de publicações e plausibilidade.
+
+## 22. Comparações indiretas e metanálise em rede
+
+Uma metanálise em rede pode comparar tratamentos A, B e C mesmo que alguns pares não tenham ensaios diretos, por meio de uma rede com comparador comum. A **transitividade** exige que estudos de A vs C e B vs C sejam suficientemente comparáveis em modificadores de efeito: gravidade, dose, tempo de acompanhamento e outros. A **consistência** avalia concordância entre evidência direta e indireta nas partes da rede onde é possível contrastá-las.
+
+Se A foi testado em crianças leves e B em adultos graves, o fato de ambos terem sido comparados com placebo não garante que A vs B seja válido. Rankings probabilísticos podem parecer precisos e sedutores, mas um medicamento classificado em “primeiro” pode ter diferenças absolutas mínimas, baixa certeza e dados escassos. Sempre examinar magnitude dos efeitos, IC, confiança na rede e desfechos individuais, não apenas ordenação.
+
+A Conitec oferece diretrizes metodológicas brasileiras para revisão sistemática e metanálise em rede; são especialmente relevantes em avaliação de tecnologias de saúde com vários tratamentos e ausência de comparações diretas. A escolha de comparador apropriado para o SUS importa: comparar apenas com placebo quando existe terapia padrão no sistema pode ter valor decisório limitado.
+
+## 23. Certeza da evidência e sistema GRADE
+
+### 23.1 O que é avaliado
+
+O sistema **GRADE** distingue **certeza no corpo da evidência para cada desfecho** da **força de uma recomendação clínica**. Categorias de certeza são **alta, moderada, baixa e muito baixa**. É incorreto dar “GRADE alta” a um artigo inteiro por ser randomizado: mortalidade pode ter certeza alta, enquanto eventos adversos raros podem ter baixa certeza por poucos casos e imprecisão. Tampouco “observacional” significa sempre conclusão inaproveitável; condições de magnitude e método podem modificar julgamento.
+
+Cinco domínios clássicos para **rebaixar** certeza de evidência de intervenção são: **risco de viés**, **inconsistência** entre resultados, **indireção** para população/intervenção/comparador/desfecho da pergunta, **imprecisão** dos efeitos e **viés de publicação**. Cada domínio exige julgamento explícito, não soma mecânica de estrelinhas. Em alguns contextos, estudos observacionais podem sustentar elevação da certeza por grande magnitude de efeito, gradiente dose-resposta ou confusão residual plausível que reduziria um efeito observado; aplica-se após avaliação adequada de vieses.
+
+### 23.2 Certeza não determina sozinha a força da recomendação
+
+Uma recomendação forte pode ocorrer quando benefícios claramente superam riscos e custos, valores são relativamente consistentes e implementação é viável, mesmo quando evidência não é “perfeita”. Uma recomendação condicional pode coexistir com alta certeza se preferências variam, danos importam ou custos/capacidade do sistema mudam decisão. A avaliação inclui **magnitude de benefício e dano, certeza, valores e preferências, recursos, equidade, aceitabilidade e factibilidade** (*Evidence-to-Decision*). A linguagem “recomendamos” versus “sugerimos” geralmente comunica forças diferentes, mas é necessário ler sistema adotado.
+
+No SUS, evidência internacional não entra no vazio: a comparação real, custo-efetividade, impacto orçamentário, disponibilidade regional e equidade influenciam a adoção. A incorporação pela Conitec e uma diretriz clínica publicada são decisões institucionais específicas, não equivalentes a uma única classificação GRADE nem promessas de abastecimento imediato.
+
+### 23.3 Exemplo de GRADE por desfecho
+
+Suponha três ensaios grandes de uma intervenção fictícia em hipertensão, com baixa preocupação de viés, efeito semelhante e IC estreito para AVC. A certeza sobre AVC pode ser alta. Porém, se apenas um ensaio relatou sangramento fatal em sete eventos totais, a certeza sobre dano raro pode ser baixa por imprecisão, apesar da mesma intervenção ter benefício comprovado. Não escrever “tratamento possui evidência alta para tudo”; especificar desfechos.
+
+Em outro cenário, ensaios foram feitos exclusivamente em adultos de 40 a 60 anos, mas a decisão é sobre gestantes. Ainda que análise estatística seja robusta, há **indireção** importante; não generalizar sem considerar farmacologia e riscos gestacionais.
+
+## 24. Diretrizes clínicas, checklists e avaliação de risco de viés
+
+### 24.1 Ferramenta certa para a pergunta certa
+
+| Ferramenta | Utilidade principal | NÃO significa |
+| --- | --- | --- |
+| CONSORT 2025 | Transparência do relato de ensaio randomizado | Ausência automática de viés |
+| STROBE | Transparência do relato de estudo observacional | Nota de qualidade causal |
+| PRISMA 2020 | Transparência do relato de revisão sistemática | Certeza elevada da revisão |
+| RoB 2 | Julgamento do risco de viés em ensaios randomizados | Magnitude de efeito ou custo-efetividade |
+| ROBINS-I | Risco de viés em estudos não randomizados de intervenções | Controle garantido de toda confusão |
+| QUADAS-2 | Domínios de viés/aplicabilidade em estudo de acurácia diagnóstica | Sensibilidade/especificidade numéricas |
+| GRADE | Certeza por desfecho e fatores de recomendação | Hierarquia fixa só pelo desenho |
+| AGREE II | Avaliação da qualidade do desenvolvimento e relato de diretrizes clínicas | Prova de que cada recomendação é correta |
+
+Esses instrumentos servem a propósitos diferentes. É possível um estudo reportar cada item CONSORT e ainda ter risco alto de viés por perdas; inversamente, o relato inadequado de certos métodos pode impedir julgar risco de viés, mesmo quando pesquisa foi bem executada. Não “dar pontuação de validade” a um artigo por contar itens STROBE. Ao avaliar diretriz, conferir composição do painel, conflitos de interesse, busca e avaliação sistemática, processo de elaboração das recomendações e atualidade.
+
+### 24.2 Risco de viés conforme RoB 2
+
+Os domínios do RoB 2 incluem processo de randomização; desvios das intervenções pretendidas; dados de desfecho ausentes; mensuração do desfecho; seleção de resultados relatados. O julgamento é **por resultado/desfecho**, não simples carimbo global para “o ensaio”. Categorias incluem risco baixo, algumas preocupações e risco alto. Uma randomização adequada não protege contra perda diferencial de informação, erro sistemático de mensuração ou seleção de desfechos.
+
+**Não confundir risco de viés com imprecisão:** um estudo pequeno pode ser internamente bem conduzido e ainda ter IC larguíssimo. E um estudo gigantesco pode estimar com precisão um efeito enviesado. No GRADE, ambos são domínios distintos de julgamento.
+
+### 24.3 Aplicabilidade e validade externa
+
+Perguntar se pacientes do estudo se assemelham aos da unidade em idade, gravidade, comorbidades, contexto socioeconômico e acesso a acompanhamento. Um teste de alta acurácia num hospital terciário pode produzir VPP e taxas de falso negativo diferentes numa UBS. Um tratamento que exige monitorização semanal onerosa talvez tenha execução inviável em regiões remotas; isso não elimina sua eficácia biológica, mas afeta a decisão de incorporá-lo.
+
+Uma diretriz de outro país pode ser clinicamente informativa, mas deve ser confrontada com **Conitec, PCDTs, protocolos brasileiros e disponibilidade local**. Um método de rastreamento eficaz na população de origem pode produzir mais falsos positivos que benefícios em grupos brasileiros de risco muito baixo.
+
+## 25. Avaliação de tecnologias em saúde e decisão no SUS
+
+### 25.1 Evidência de eficácia não é incorporação
+
+A Avaliação de Tecnologias em Saúde (ATS) integra evidência clínica de benefício e dano com custo, custo-efetividade, impacto orçamentário, ética, organização e equidade. No Brasil, a **Conitec** assessora processos de incorporação de tecnologias no SUS; avaliação pode envolver estudos clínicos, síntese de evidência, análises econômicas, consultas públicas e decisão administrativa. A aprovação regulatória por agência sanitária e a incorporação ao SUS não são atos idênticos. A mesma tecnologia pode ser registrada, não incorporada, ou incorporada com critérios específicos de uso.
+
+### 25.2 Custo-efetividade e ICER
+
+**Razão incremental de custo-efetividade (ICER)** = (custo intervenção − custo comparador)/(efetividade intervenção − efetividade comparador). Exemplo fictício: tratamento A custa R$ 30.000 e produz 3,0 anos de vida ajustados por qualidade (**QALYs**), enquanto B custa R$ 20.000 e produz 2,5 QALYs no mesmo horizonte e modelo. Diferença de custo = R$ 10.000; de efetividade = 0,5 QALY → **ICER = R$ 20.000 por QALY adicional**. O número não responde sozinho “é barato?” ou “o SUS deve adotar?”: depende de perspectiva, horizonte, custos incluídos, parâmetros incertos, orçamento e escolhas sociais.
+
+**Dominância simples:** se A custa menos e produz mais benefício que B, A domina B sob os pressupostos da análise. Se A custa mais e produz menos, é dominado. Quando é mais eficaz e mais caro, um ICER é pertinente. Quando o novo tratamento é menos eficaz e mais barato, a decisão depende de economia obtida versus perda de saúde; não interpretar razão negativa sem olhar quadrante do plano de custo-efetividade.
+
+### 25.3 QALY, DALY e impacto orçamentário
+
+**QALY** combina duração e qualidade de vida em medida ponderada por utilidades: 1 ano com utilidade 1 equivale a 1 QALY; 2 anos com utilidade 0,5 equivalem a 1 QALY, em interpretação simplificada. As utilidades exigem método de mensuração, população e valores éticos transparentes. **DALY** combina anos de vida perdidos por mortalidade prematura e anos vividos com incapacidade ponderada, frequentemente usado para carga de doença. QALY e DALY não são intercambiáveis e não devem ser somados sem metodologia explícita.
+
+**Impacto orçamentário** estima desembolso agregado realista de incorporar tecnologia numa população ao longo de anos, considerando número de elegíveis, adoção, substituição de tratamentos, preços e custos de implementação. Uma tecnologia pode ter ICER favorável e ainda demandar orçamento insustentável quando todos os elegíveis a utilizarem; uma solução relativamente barata para poucos casos raros pode ter impacto orçamentário baixo apesar do alto custo por paciente. A decisão pública precisa incorporar equidade e prioridades, sem pressupor que um único limiar resolve todas as escolhas.
+
+### 25.4 Perspectiva da análise e desconto
+
+Custos relevantes dependem da **perspectiva**: SUS/pagador, hospital, paciente/família ou sociedade. Perda de produtividade pode ser importante na perspectiva social, mas não entra da mesma forma na contabilidade direta do pagador. O **horizonte temporal** deve capturar efeitos e danos relevantes; estudo de um mês pode subestimar consequências de doença crônica. Custos e benefícios futuros podem ser descontados em modelos econômicos segundo diretriz local, com justificativa e sensibilidade para taxa de desconto. Não usar automaticamente taxas ou limiares de outros países sem verificar parâmetros brasileiros.
+
+## 26. Ética, consentimento, transparência e integridade científica
+
+### 26.1 Respeito a participantes e processo de aprovação
+
+Pesquisa envolvendo seres humanos precisa respeitar normas éticas, avaliação institucional conforme enquadramento, consentimento quando aplicável, proporcionalidade de riscos e confidencialidade de dados. No Brasil, o sistema de ética em pesquisa e a regulação aplicável devem ser verificados na versão vigente. **A publicação de um artigo não comprova, por si, que todas as normas éticas foram atendidas**; conferir registro de ensaio, aprovação, consentimento e manejo de dados quando relevantes. Em populações vulneráveis, questões adicionais de assentimento, representação legal e benefícios comunitários importam.
+
+Uso de prontuários e bases de saúde requer proteção de dados, finalidade legítima e conformidade com **LGPD** e regras institucionais. Dados “anonimizados” podem permitir reidentificação quando combinados com informações raras; segurança não se resume a remover nomes. O pesquisador deve planejar quem acessa bases, como resultados agregados serão publicados e se os dados podem ser compartilhados com segurança.
+
+### 26.2 Prerregistro e protocolo
+
+Registrar ensaios clínicos antes da inclusão de participantes e publicar protocolos torna possível comparar desfechos planejados com aqueles apresentados. Exemplo: o protocolo indicou mortalidade como primária, o manuscrito destaca marcador laboratorial secundário e omite mortalidade negativa. A divergência requer explicação transparente, e pode representar **viés de relato seletivo**. Revisões sistemáticas também se beneficiam de registro/protocolo, mas uma inscrição no PROSPERO não funciona como selo de qualidade metodológica.
+
+Planos de análise estatística pré-especificados ajudam a distinguir confirmação de exploração. Uma análise exploratória pode ser valiosa, desde que não seja anunciada como hipótese primária confirmada sem evidência independente. Preprints ampliam circulação rápida e exigem particular cuidado por não necessariamente terem passado por revisão por pares.
+
+### 26.3 Conflitos de interesse e patrocínio
+
+Financiamento industrial não implica que todos os estudos sejam inválidos, assim como financiamento público não garante neutralidade. Importam papel do financiador na escolha de comparador e desfechos, acesso aos dados, liberdade de publicação, vínculos dos autores e transparência do protocolo. Um comparador em dose inferior à prática recomendada pode favorecer indevidamente intervenção nova; selecionar apenas subgrupos de baixo risco pode mascarar danos. O leitor deve relacionar desenho e potenciais incentivos, não rejeitar ou aceitar estudo apenas pelo logotipo do patrocinador.
+
+### 26.4 Retratações, IA e revisão por pares
+
+Artigos podem ser corrigidos ou retratados após publicação por erros, irregularidades ou má conduta. Antes de citar evidência central para recomendação clínica, conferir se há errata, expressão de preocupação ou retração. Ferramentas de IA podem auxiliar busca, triagem e organização, mas podem fabricar referências, números e conclusões, inclusive inventar interpretação de PDF. Referências e cálculos precisam ser verificáveis e reproduzíveis; não citar DOI que não foi efetivamente localizado.
+
+A revisão por pares ajuda, mas não elimina todos os erros; muitos trabalhos importantes evoluem ao longo de replicações e revisões sistemáticas. Transparência em dados, código, análise e relato de resultados negativos permite correção da ciência e preserva confiança pública.
+
+## 27. Aplicação de MBE em rastreamento e prevenção
+
+### 27.1 Diagnosticar mais cedo não equivale a salvar mais vidas
+
+Um programa de rastreamento precisa reduzir mortalidade relevante, complicações ou sofrimento, idealmente em estudos de desfecho final ou com justificativa muito robusta. Detectar tumores menores, aumentar “sobrevida em cinco anos desde o diagnóstico” ou elevar incidência de doença inicial pode acontecer sem mudança na data da morte. O **viés de antecipação do diagnóstico (lead-time)** produz aumento artificial do tempo entre diagnóstico e morte quando a doença é detectada antes. **Viés de duração (length-time)** favorece detecção de doenças de progressão lenta, que permanecem mais tempo na fase pré-clínica detectável.
+
+**Sobrediagnóstico** é diagnóstico de doença que não teria causado sintomas ou morte durante a vida, sem rastreamento. **Sobretratamento** decorre de intervir nesses diagnósticos. Um teste muito sensível pode identificar alterações que jamais se tornariam clinicamente relevantes, aumentando procedimentos e ansiedade. A análise deve comparar benefícios e danos absolutos por pessoas convidadas ao rastreamento, faixa etária e intervalo, não apenas por testes positivos.
+
+### 27.2 Estudos de rastreamento e viés de seleção
+
+A comparação “quem fez mamografia viveu mais que quem não fez” pode refletir comportamento, acesso e nível socioeconômico; pessoas que aderem a rastreamento frequentemente também recebem outros cuidados preventivos. Ensaios por convite e estudos bem planejados ajudam a separar efeitos, mas têm limitações próprias. Não atribuir diretamente toda redução observada de mortalidade a um único teste quando tratamento e fatores populacionais mudaram ao longo do tempo.
+
+Em provas, o desfecho adequado para avaliar rastreamento de câncer costuma ser mortalidade específica ou total e consequências relevantes, não apenas sobrevida medida desde o diagnóstico. Mortalidade específica pode sofrer erro de classificação de causa, enquanto mortalidade total exige amostras maiores; cada medida precisa ser interpretada com seus limites.
+
+### 27.3 Decisão compartilhada e prevenção quaternária
+
+A **prevenção quaternária** procura identificar pessoas sob risco de medicalização excessiva e evitar intervenções desnecessárias, sem negligenciar tratamentos efetivos. Em uma pessoa idosa com fragilidade importante, o benefício de rastreamento com latência de dez anos pode ser inferior a danos imediatos de investigação e tratamento. Em outra de longa expectativa de vida, a relação pode ser favorável. A MBE exige contextualização, não idade cronológica isolada ou tabela aplicada sem diálogo.
+
+O aconselhamento deve usar **frequências naturais** (“em 1.000 pessoas, X beneficiam-se e Y sofrem dano”), pictogramas ou gráficos de risco, sempre com números de origem confiável e horizonte explícito. Aqui, quando usamos valores fictícios, eles servem apenas para aprender a calcular, **nunca para aconselhamento sobre programa real do SUS**.
+
+## 28. Síntese de decisão: algoritmo para ler qualquer artigo em dez perguntas
+
+1. **Pergunta:** qual é a população, intervenção/exposição, comparador e desfecho?
+2. **Desenho:** corresponde à pergunta? Foi escolhido por exposição ou por desfecho?
+3. **Validade:** randomização e ocultação? Comparabilidade? Confusão? Medida e seguimento?
+4. **Estimando:** está claro qual efeito se buscou medir? Há intenção de tratar? Tempo zero?
+5. **Risco basal:** qual frequência de eventos no comparador? A população se parece com a minha?
+6. **Efeito:** RR/OR/HR ou diferença absoluta, com denominadores corretos e horizonte?
+7. **Incerteza:** IC, tamanho amostral, viés, multiplicidade e consistência com outros estudos?
+8. **Relevância:** o desfecho é clínico ou substituto? Há benefício absoluto que vale a pena?
+9. **Danos e custo:** eventos adversos, NNH, acesso, recursos e equidade?
+10. **Decisão:** o que o paciente prefere, qual é a recomendação aplicável e como monitorar resultados?
+
+### Matriz “não confundir”
+
+| Termo A | Termo B | Diferença prática |
+| --- | --- | --- |
+| p<0,05 | Importância clínica | Um pode existir sem o outro |
+| IC que cruza 1 | Prova de ausência de efeito | Reflete compatibilidade com diferentes efeitos |
+| OR | RR | Divergem especialmente quando evento é comum |
+| Sensibilidade | VPP | Entre doentes versus entre testes positivos |
+| Especificidade | VPN | Entre não doentes versus entre testes negativos |
+| AUC | Calibragem | Ordenar riscos versus acertar probabilidades |
+| Revisão sistemática | Metanálise | Método completo versus síntese numérica |
+| PRISMA/CONSORT/STROBE | Ferramenta de risco de viés | Relato transparente não é garantia de validade |
+| Certeza GRADE | Força da recomendação | Certeza por desfecho versus decisão multidimensional |
+| Eficácia | Efetividade | Condições estudadas versus desempenho no mundo real, conforme definição |
+| Registro na Anvisa | Incorporação ao SUS | Regulação e cobertura/financiamento são atos distintos |
+| Sobrevida desde o diagnóstico | Mortalidade | Diagnóstico precoce pode inflar sobrevida sem alterar morte |
+
