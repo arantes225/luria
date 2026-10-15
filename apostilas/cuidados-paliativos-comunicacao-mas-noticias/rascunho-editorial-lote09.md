@@ -197,3 +197,27 @@ Constipação necessita prevenção e manejo. Náuseas, prurido, retenção urin
 ### 11.3. Sinais de alerta que não devem ser atribuídos apenas à dor crônica
 
 Fraqueza progressiva, retenção urinária e dor vertebral em paciente com câncer levantam **compressão medular metastática**, emergência em que RM, corticosteroide selecionado e avaliação neurocirúrgica/radioterápica podem preservar função. Dor óssea focal pode representar fratura patológica; intervenção cirúrgica ou radioterapia pode aliviar sofrimento mesmo em doença avançada.
+
+## 12. Dispneia: avaliar sensação, hipoxemia e objetivos
+
+Dispneia é desconforto respiratório subjetivo, não sinônimo de SpO₂ baixa. Pode haver dispneia importante com saturação normal, e hipoxemia com pouco relato em paciente confuso. Identificar intensidade, frequência/esforço respiratórios, broncoespasmo, congestão, derrame pleural, anemia, pneumonia, tromboembolismo, ansiedade e progressão de doença. Avaliar quais causas ainda possuem intervenções proporcionais.
+
+Medidas não farmacológicas incluem **fluxo de ar suave no rosto, posição sentada, técnicas de respiração e ambiente tranquilo**. Oxigênio é importante na hipoxemia ou quando traz benefício sintomático demonstrável, mas não ajuda universalmente todos os pacientes sem hipóxia. A máscara pode limitar fala e descanso.
+
+Em casos selecionados de dispneia persistente/refratária, **opioides titulados por profissional com monitorização** podem reduzir a sensação de falta de ar; a escolha depende de uso prévio, fragilidade, função renal e comorbidades. Benzodiazepínico tem papel na ansiedade relevante, não é tratamento universal de primeira linha da dispneia, pois pode somar sedação. VNI/alto fluxo podem ser tentados se há objetivo e tolerância, com reavaliação e possibilidade de retirar aparelho desconfortável.
+
+**Exemplo de raciocínio:** paciente com insuficiência cardíaca avançada e dispneia por congestão pode beneficiar-se de diurético mesmo quando outras terapias preventivas de longo prazo deixaram de ser apropriadas. Paciente com derrame maligno sintomático pode receber drenagem paliativa. Evitar “é terminal, não precisa examinar”.
+
+## 13. Náuseas e vômitos por mecanismo
+
+Náuseas em doença avançada podem decorrer de opioides, constipação, gastroparesia, uremia, hipercalcemia, quimioterapia, obstrução intestinal, infecção, hipertensão intracraniana ou ansiedade. **Escolher antiemético pela causa**, ponderando função renal, QTc, efeitos extrapiramidais, sedação e via oral possível.
+
+| Contexto | Evidências clínicas | Abordagem |
+|---|---|---|
+| Gastroparesia/opioide | Plenitude e piora após início de fármaco | Revisão medicamentosa, pró-cinético se motilidade preservada |
+| Constipação/fecaloma | Distensão, dias sem evacuar, diarreia paradoxal | Exame e correção de impactação |
+| Hipercalcemia/uremia | Sede, sonolência, sintomas metabólicos | Exames dirigidos se mudam conduta; tratamento proporcional |
+| Obstrução intestinal maligna | Vômitos persistentes, dor em cólica, sem eliminação de gases | Analgesia, antissecretores, descompressão ou intervenção seletiva |
+| Vestibular | Vertigem e sintomas com movimento | Antiemético específico com atenção à sedação |
+
+**Metoclopramida pode ser prejudicial na obstrução mecânica completa**; seu papel na obstrução parcial é diferente e exige avaliação. Em obstrução maligna, opções incluem medidas farmacológicas, descompressão, eventual stent ou cirurgia em pacientes cuidadosamente escolhidos. Não indicar procedimento de grande porte em carcinomatose extensa sem considerar risco, benefício e desejo do paciente.
