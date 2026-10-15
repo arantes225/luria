@@ -28,8 +28,8 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 | 133 | Meningites e encefalites | Rascunho existente em `main` com arquivo legado lote-07; aprofundar e validar farmacologia por faixa etária |
 | 134 | Síndrome dos ovários policísticos | Apostila HTML existente preservada + complemento de auditoria; sem duplicação |
 | 135 | Imunização e PNI | Rascunho existente em `main`; checar calendário vigente antes de finalização |
-| 136 | Hemorragia digestiva (abordagem integrada) | Rascunho em `main`; deve integrar 127/132, não duplicar apostilas completas |
-| 137 | Doença do refluxo e hérnia hiatal | Rascunho existente em `main`; revisar condutas clínicas/cirúrgicas e figuras |
+| 136 | Hemorragia digestiva (abordagem integrada) | **Revisão focal realizada nesta ramificação**: GBS calculável e preparo de EDA com pró-cinético IV selecionado (ESGE 2026); continua rascunho, sem imagens/aprovação clínica |
+| 137 | Doença do refluxo e hérnia hiatal | **Revisão focal realizada nesta ramificação**: AGA Barrett 2025, tabela de vigilância, questão autoral 9A; continua rascunho, sem imagens/aprovação clínica |
 
 **Leitura do inventário:** há material prévio em todas as 22 posições; isso **não** equivale a 22 apostilas completas, certificadas ou publicadas. Os rascunhos da ramificação lote-06 (116–131) não devem ser tratados como automaticamente integrados à `main`. Os rascunhos de 132–137 estão na `main`, mas permanecem sem certificação clínica/visual.
 
@@ -54,3 +54,10 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 - [ ] Revisar 133–137 individualmente por lacunas e diretrizes atuais; guardar front-matter “legado lote07” até resolver referências cruzadas e renomear com segurança.
 
 **Não integrar, não sobrescrever HTML aprovado, não fazer merge, não fazer deploy.**
+
+## Continuação de 15/10/2026 — auditoria dos dois últimos temas
+
+- Tema **136**: `lote-07-aula-136-hemorragia-digestiva-integrada.md` alterado de 67.474 para 74.466 caracteres brutos; 9 casos, 14 questões; seções 7.1 e 18.7 novas; sem certificação do número de caracteres úteis.
+- Tema **137**: `lote-07-aula-137-drge-hernia-hiatal.md` alterado de 80.228 para 86.693 caracteres brutos; 8 casos, 15 questões; seção 20.6 e questão 9A novas; sem certificação do número de caracteres úteis.
+- **Registro científico detalhado:** `apostilas/_rascunhos/lote-06-136-137-controle-editorial-cientifico-20261015.md`.
+- **Condição para continuar lote 6:** harmonizar conteúdo de **116–131** (ramificação editorial anterior e rascunhos paralelos na `main`), sem publicar nenhuma versão apenas porque atingiu extensão bruta. Nenhum merge/deploy nesta rodada.
