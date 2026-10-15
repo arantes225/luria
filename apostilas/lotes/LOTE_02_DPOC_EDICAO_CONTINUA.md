@@ -200,6 +200,72 @@ Quando há falta de medicamento, evitar simplesmente substituir associação tri
 
 Prednisona/prednisolona sistêmica acelera recuperação em exacerbações moderadas/graves, mas **uso crônico** para estabilizar DPOC geralmente produz toxicidade sem benefício sustentado proporcional: osteoporose, fraqueza muscular, ganho ponderal, hipertensão, infecção, diabetes, fragilidade e supressão adrenal. A Linha de Cuidado nacional descreve curso **prednisona/prednisolona 40 mg/dia por cinco dias** nos cenários indicados de exacerbação, e o PCDT vigente deve ser consultado antes da publicação da prescrição final. Não existe indicação de “tomar corticoide por conta própria a cada chiado” sem plano individual.
 
+
+### 4.5 Escolher o inalador correto: aerossol pressurizado, pó seco ou névoa suave?
+
+No tratamento da DPOC, prescrever a molécula adequada não garante que o fármaco chegue ao pulmão. A eficácia depende da interação entre **dispositivo, força e padrão inspiratório, coordenação, cognição, força manual e técnica**. A GOLD 2026 insiste em avaliação individualizada do dispositivo e em demonstração prática e retreinamento; trocar dispositivo sem orientar o paciente pode reduzir adesão e eficácia.
+
+Um profissional deve fazer **três perguntas antes de prescrever ou trocar o dispositivo**: (1) a pessoa consegue preparar e disparar uma dose com os dedos? (2) consegue inspirar com o fluxo e o padrão exigidos pelo dispositivo? (3) consegue repetir a técnica corretamente diante de um observador, sem depender de uma descrição decorada? Em paciente com artrite avançada, tremor, fraqueza, alteração cognitiva ou baixa acuidade visual, essas perguntas são tão clínicas quanto a escolha de LABA/LAMA.
+
+| Dispositivo | Energia que libera a dose | Inspiração esperada | Erro típico | Estratégia |
+| --- | --- | --- | --- | --- |
+| **pMDI** (spray pressurizado dosimetrado) | Propelente pressurizado + disparo mecânico | **Lenta e profunda**, coordenada ao disparo | Acionar depois de acabar de inspirar, inspirar rápido ou não vedar lábios | Demonstrar e repetir; considerar espaçador adequado |
+| **pMDI + espaçador/aerocâmara** | Spray com retenção transitória na câmara | Lenta e profunda, ou técnica adaptada conforme dispositivo/necessidade | Vários jatos simultâneos no mesmo espaço sem técnica ou máscara mal selada | Um jato por ciclo; verificar câmara, vedação e higiene |
+| **DPI** (inalador de pó seco) | Força inspiratória do paciente dispersa o pó | **Rápida, profunda e forte** a partir do dispositivo | Inspiração fraca, expirar dentro do bocal, cápsula não perfurada ou umidade | Verificar preparação e capacidade inspiratória; trocar se inadequado |
+| **SMI** (inalador de névoa suave) | Mecanismo mecânico produz aerossol de baixa velocidade | Lenta e profunda, com coordenação ainda necessária | Preparação inadequada, acionamento tardio ou manejo complexo | Treinar preparo, disparo e inspiração; avaliar destreza |
+| **Nebulizador** | Energia externa transforma solução em aerossol | Respiração por máscara/bocal conforme equipamento | Solução errada, higienização inadequada ou uso sem indicação | Considerar quando outros dispositivos falham; seguir protocolo e limpeza |
+
+O **pMDI** não deve ser usado com manobra inspiratória forte e abrupta como se fosse pó seco. O **DPI** necessita de fluxo inspiratório capaz de desagregar partículas; no paciente debilitado, após internação ou com doença muito avançada, a força pode ser insuficiente mesmo que consiga “puxar ar”. Por isso, o som de cápsula girando, sensação de pó e melhora subjetiva não substituem uma inspeção da técnica. A capacidade real de usar um DPI pode ser testada com aparelhos específicos quando disponíveis; se há dúvida, avaliar outra apresentação em conjunto com a equipe.
+
+A GOLD 2026 recomenda **minimizar a quantidade de tipos diferentes de inaladores** quando clinicamente possível. Usar um DPI pela manhã e um pMDI de resgate à noite pode ser necessário, mas exige ensinar duas manobras distintas; quanto mais dispositivos e horários sem orientação, maior risco de erro. A preferência e a capacidade do paciente importam, e a troca por questão de estoque ou preço **não deve ocorrer sem educação sobre o novo dispositivo**.
+
+#### 4.5.1 Técnica de spray pressurizado com espaçador — raciocínio passo a passo
+
+1. Confirmar medicamento, dose, validade, contador e se o spray precisa ser agitado/preparado conforme bula. **Nem todos os dispositivos têm as mesmas instruções de agitação.**
+2. Encaixar o spray no espaçador compatível; sentar ou ficar em posição confortável com tronco ereto, mantendo vedação adequada do bocal ou máscara.
+3. Expirar **fora da câmara** antes de colocar os lábios no bocal, quando possível.
+4. Liberar **uma dose** e inspirar lenta e profundamente, respeitando técnica da câmara. Se não consegue inspirar profundamente, alguns dispositivos permitem respirações correntes orientadas.
+5. Sustentar a respiração por tempo confortável, idealmente até cerca de dez segundos quando possível, depois exalar.
+6. Repetir cada dose em novo ciclo conforme prescrição; **não disparar vários jatos de uma vez** na câmara sem orientação específica.
+7. Se houver **corticoide inalatório** na formulação, enxaguar a boca e cuspir depois da dose, reduzindo candidíase/disfonia. A higiene do espaçador segue o fabricante; não improvisar limpeza agressiva que danifique válvulas.
+
+**Pulo do gato:** a aerocâmara ajuda sobretudo quem não coordena perfeitamente o disparo e a inspiração. Não torna irrelevante a vedação da máscara, a preparação da dose nem a necessidade de avaliar resposta. A escolha do bocal/máscara deve respeitar idade e capacidade.
+
+#### 4.5.2 Técnica de pó seco — a inversão que cai em prova
+
+O DPI exige preparar **somente** a dose prescrita e inspirar de maneira **rápida, profunda e firme**. Antes de encaixar o dispositivo, o paciente expira para esvaziar os pulmões — **mas deve fazê-lo longe do bocal**, para não umedecer/aglutinar o pó. Depois, sela os lábios e inspira vigorosamente; pode segurar o ar brevemente e expirar fora do dispositivo. Verificar contador ou resíduo de cápsula conforme o modelo, sem assumir que uma cápsula de DPI é feita para ingestão oral. Armazenar em local seco e seguir instruções específicas.
+
+**Exemplo:** idoso de 79 anos com DPOC deixa cápsula do DPI intacta no interior da câmara porque não consegue perfurar a apresentação. A queixa de piora não significa falha farmacológica do LAMA. É **falha de administração**: reforçar a técnica ou escolher dispositivo compatível pode recuperar efeito sem aumentar dose ou adicionar CI desnecessário.
+
+### 4.6 O algoritmo “verificar antes de escalar”: adesão, técnica, exposição, doença concorrente
+
+O paciente diz: “uso broncodilatador todo dia e continuo ruim”. É tentador aumentar a intensidade farmacológica, mas **a gravidade dos sintomas não informa automaticamente qual erro ocorreu**. Antes do escalonamento, revisar:
+
+1. **O diagnóstico está confirmado?** Há espirometria pós-broncodilatador com obstrução persistente e história coerente? Se houver discrepância, revisar função pulmonar e diferenciais.
+2. **Está usando o produto correto?** Confirmar princípios ativos, dispositivos, apresentação, número de doses ao dia e disponibilidade; uma caixa com cor semelhante pode conter outra concentração.
+3. **Sabe demonstrar?** Pedir ao paciente para mostrar uma aplicação simulada e observar preparação, expiração prévia, vedação, padrão de inspiração, acionamento, retenção e higiene. Usar o método **ensinar–mostrar–pedir que mostre–corrigir**.
+4. **Há exposição contínua?** Tabaco ativo, biomassa, poeira, vapores e outros fatores agravam doença e dificultam melhora sustentada.
+5. **A causa da falta de ar é só DPOC?** Pesquisar IC, arritmia, anemia, descondicionamento, apneia, embolia pulmonar, ansiedade coexistente e câncer quando sinais sugerem. Um VEF1 estável com nova ortopneia e edema exige investigação cardíaca.
+6. **Há exacerbações verdadeiras?** Diferenciar pioras que exigiram corticoide, antibiótico ou internação de flutuação basal de dispneia. O risco de exacerbações é eixo diferente de sintomas e VEF1.
+7. **A pessoa foi encaminhada à reabilitação e cessação do tabaco?** O ganho de capacidade física pode ocorrer sem grande alteração do VEF1, mas depende de treinamento e suporte real.
+
+Somente então revisar esquema de manutenção segundo GOLD 2026 e critérios do PCDT brasileiro. **Não acrescentar CI apenas porque houve dispneia persistente** se não há indicação por exacerbações/eosinófilos ou asma concomitante. Corticosteroide inalatório pode aumentar risco de pneumonia em determinados perfis; já sua ausência em paciente com asma associada verdadeira pode gerar risco. A decisão depende do conjunto.
+
+### 4.7 Tabela de erros de inalação que mudam a decisão terapêutica
+
+| Situação observada | Hipótese operacional | Por que não escalar automaticamente? | Correção inicial |
+| --- | --- | --- | --- |
+| pMDI disparado após o paciente terminar a inspiração | Falha de coordenação | Pouca deposição pulmonar apesar de dose prescrita | Reensinar disparo sincronizado e considerar espaçador |
+| DPI usado com inspiração lenta e fraca | Energia inspiratória insuficiente | O pó pode não ser adequadamente disperso | Treinar manobra ou selecionar outro dispositivo |
+| Paciente expira dentro do DPI antes de inalar | Umidificação/aglutinação do pó | Reduz eficiência e pode obstruir bocal | Expirar longe do dispositivo |
+| Cápsula oral engolida em vez de colocada no DPI | Confusão de apresentação | Ingestão não reproduz via pulmonar | Revisar embalagem e treinar com demonstração |
+| Paciente não sabe identificar contador de doses | Ausência inadvertida de medicamento | “Falha farmacológica” pode ser dispositivo vazio | Ensinar contador e reposição antecipada |
+| CI inalatório sem enxágue posterior | Deposição oral de esteroide | Candidíase/disfonia podem reduzir adesão | Orientar enxágue e cuspir após uso |
+| Dois dispositivos com preparo completamente diferente | Complexidade e erros recorrentes | Aumentar número de dispositivos piora execução | Simplificar tipos quando viável e treinar todos |
+
+**Fontes para verificação e treinamento:** GOLD, *2026 GOLD Report and Pocket Guide*, seção sobre seleção e educação de dispositivos, https://goldcopd.org/2026-gold-report-and-pocket-guide/ . NHLBI/NIH, *How to Use a Dry Powder Inhaler*, https://www.nhlbi.nih.gov/resources/how-use-dry-powder-inhaler-fact-sheet . American Lung Association, *How to Use a Metered-Dose Inhaler* e *MDI with Valved Holding Chamber*, revisados em 2026: https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler ; https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler-chamber-spacer . As instruções reais da **bula do dispositivo específico** prevalecem sobre qualquer roteiro genérico.
+
+
 ## 5. Exacerbação: diagnóstico, gases, antibióticos e suporte
 
 ### 5.1 Exacerbação, hipercapnia e VNI
@@ -408,6 +474,36 @@ DPOC é menos frequente em gestantes do que asma, mas pode ocorrer em pessoas co
 
 Tosse, febre e piora respiratória podem refletir pneumonia bacteriana, tuberculose, fungos ou outros agentes. O uso de corticosteroide inalatório deve ser reavaliado se houver infecções recorrentes; a decisão depende de benefício real na prevenção de exacerbações e risco individual. Pacientes com bronquiectasias têm perfil de infecção e necessidade de culturas diferentes de DPOC sem bronquiectasias. Não aumentar apenas a broncodilatação diante de expectoração muito volumosa e febre recorrente sem investigar.
 
+
+### 7.4 Reavaliação após exacerbação: transformar internação em prevenção
+
+A alta por exacerbação não é o fim da assistência; é uma ocasião de risco de nova agudização. O plano de seguimento deve avaliar **o que desencadeou a crise, qual tratamento funcionou, o que foi acrescentado, a capacidade de usar dispositivos e se o paciente consegue executar o plano em casa**. Falta de oxigênio domiciliar quando indicado, comorbidade cardíaca subdiagnosticada, transporte difícil e ausência de inalador na farmácia são causas reais de reinternação.
+
+O paciente que sofreu insuficiência respiratória hipercápnica pode ter recuperado pH e consciência, mas continuar com limitação funcional e vulnerabilidade ao esforço. Não confundir normalização da gasometria com resolução de perda muscular/descondicionamento ou necessidade de reabilitação. Em quem recebeu oxigênio durante exacerbação, evitar carimbar a indicação de ODP **para sempre** sem avaliação em estabilidade, conforme já discutido no capítulo 6.
+
+#### 7.4.1 Checklist clínico de retorno pós-evento
+
+| Domínio | Pergunta de consulta | Por que registrar |
+| --- | --- | --- |
+| Diagnóstico da exacerbação | Foi infecciosa? Havia pneumonia, TEP ou insuficiência cardíaca? | Evita tratar de novo a causa errada |
+| Esquema de alta | Qual medicação foi acrescentada, mantida ou retirada? | Previne duplicidade de LABA/LAMA e corticosteroide sistêmico prolongado |
+| Técnica e adesão | Consegue demonstrar todos os dispositivos? | Falha técnica pode simular falta de resposta |
+| Sintomas e funcionalidade | mMRC/CAT, atividades de vida diária, esforço | Mostra recuperação e necessidade de reabilitação |
+| Oxigenação | Ainda recebe oxigênio? Qual dispositivo, fluxo e saturação? | Diferencia suporte transitório de possível ODP |
+| Tabagismo e exposições | Houve recaída ou contato com fumaça/biomassa? | Intervenção sobre causa evitável |
+| Vacinação e prevenção | Vacinas conforme calendário/risco nacional | Reduz infecções preveníveis, observando recomendações atuais |
+| Comorbidades | Cardiopatia, apneia do sono, osteoporose, perda ponderal, humor | Alteram prognóstico e adesão |
+| Emergências futuras | A pessoa reconhece sinais de alarme e sabe onde buscar atendimento? | Evita retardar reavaliação quando piorar |
+
+Um plano de ação escrito deve usar linguagem compreensível, com medicamento de manutenção versus alívio, orientações para procurar urgência e data de revisão. **Não oferecer estoque de antibiótico ou prednisona para autotratamento de todas as pioras** sem avaliação e protocolo individual. Se o paciente recebeu corticosteroide sistêmico por cinco dias, confirmar que a prescrição de alta não o transformou involuntariamente em uso contínuo.
+
+#### 7.4.2 Quando um novo sinal exige reavaliar a hipótese
+
+**Novo edema de pernas com ortopneia:** pensar em insuficiência cardíaca, não apenas “DPOC cansada”. **Hemoptise e perda ponderal:** avaliar infecção específica, TB, câncer e outras causas. **Dor pleurítica súbita com taquicardia/hipoxemia desproporcional:** tromboembolismo pulmonar e pneumotórax entram no diferencial. **Sonolência que progride:** investigar hipercapnia, medicações sedativas, distúrbio metabólico e encefalopatia. **Febre sustentada e novo infiltrado:** considerar pneumonia e foco infeccioso, não só broncoespasmo.
+
+Em pacientes com internações repetidas, discutir avaliação especializada de bronquiectasias, deficiência de alfa-1-antitripsina em contexto apropriado, doença cardiovascular, apneia do sono e possibilidade de terapia avançada/reabilitação. Os encaminhamentos são guiados por suspeita clínica, não obrigatórios para todos os pacientes de qualquer idade.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 3 — A mesma história, dois grupos: divergência entre diretrizes
@@ -458,6 +554,16 @@ Homem de 72 anos, ex-tabagista, foi internado por exacerbação com pneumonia e 
 ### Caso 14 — Hipoxemia grave estável e indicação formal
 
 Mulher de 67 anos com DPOC documentada por VEF1/CVF pós-BD 0,48 realiza duas avaliações fora de crise, em ar ambiente e repouso, com PaO2 52 e 54 mmHg em datas diferentes. Relata dispneia moderada e não fuma mais. **Diagnóstico:** hipoxemia crônica grave em DPOC. **Raciocínio:** critério fisiológico de ODP é atingido apesar de não ser obrigatório mMRC 4. **Exames:** gasometrias, parâmetros de oxigenação, avaliação funcional, risco cardiovascular e segurança domiciliar. **Conduta:** encaminhar/prescrever conforme fluxo formal, titular fluxo, orientar uso prolongado, verificar equipamento e programar seguimento. **Por que este caso importa:** a indicação nasce da hipoxemia estável e de critérios validados, não da intensidade subjetiva da dispneia.
+
+
+
+### Caso 15 — A “falha da tripla terapia” era falha de dispositivo
+
+Homem de 77 anos, DPOC confirmada, apresenta piora progressiva de dispneia e relata usar terapia tripla inalatória há dois meses. Não houve nova exacerbação com necessidade de corticoide/antibiótico e eosinófilos estão baixos. Ao demonstrar o uso, ele expele o ar dentro do DPI e inspira lentamente; além disso, dificuldade manual impede perfurar adequadamente a cápsula do dispositivo. **Hipóteses:** subdosagem pulmonar por técnica inadequada, descondicionamento e outros diferenciais de dispneia. **Raciocínio:** o tratamento pode estar bem indicado no papel, mas não está chegando efetivamente ao pulmão. **Exame:** demonstração da técnica, avaliação de destreza/força inspiratória, checagem de dispositivos e doenças concorrentes. **Conduta:** retreinamento ou mudança assistida para dispositivo compatível, revisão do benefício real de CI, reabilitação e reavaliação clínica. **Por que importa:** não concluir resistência farmacológica antes de verificar administração.
+
+### Caso 16 — Nova dispneia após alta e etiologia cardíaca concorrente
+
+Mulher de 70 anos com DPOC, alta há dez dias por exacerbação, mantém dispneia apesar de uso correto de broncodilatadores. Agora relata necessidade de três travesseiros à noite, edema bilateral e ganho de peso rápido. Não há escarro purulento, e o VEF1 prévio não mudou. **Hipóteses:** descompensação cardíaca associada, além de causas pulmonares. **Raciocínio:** ortopneia, edema e ganho rápido de peso não são bem explicados por piora obstrutiva isolada. **Exames:** sinais vitais, perfusão, exame de congestão, ECG, avaliação de função renal, imagem/biomarcadores e ecocardiograma conforme indicação. **Conduta:** avaliação clínica pronta, suporte conforme gravidade, investigação e tratamento dirigido ao componente cardíaco; não repetir prednisona e antibiótico reflexamente. **Por que importa:** tratar o diagnóstico errado gera nova hospitalização.
 
 
 ## 9. Questões autorais comentadas
@@ -577,6 +683,23 @@ A) Cor pulmonale é irrelevante. B) A combinação pode preencher indicação de
 Homem com DPOC apresenta VEF1 38% previsto, mMRC 1, nenhum atendimento por exacerbação no ano, e SpO2 94% em repouso. Qual afirmação é melhor?
 A) A função espirométrica define sozinha necessidade de CI, ODP e grupo E. B) VEF1 identifica grau de obstrução; sintomas/exacerbações e oxigenação são dimensões adicionais avaliadas separadamente. C) SpO2 normal exclui DPOC. D) Uma classificação GOLD 3 determina obrigatoriamente cuidados paliativos exclusivos.
 **Gabarito: B.** **A** soma indevidamente eixos de gravidade; **C** desconsidera espirometria; **D** confunde necessidade eventual de abordagem paliativa integrada com abandono de tratamento ativo. **Mini-revisão:** diagnóstico, carga sintomática, risco e trocas gasosas precisam ser lidos juntos.
+
+
+
+### Questão 20 — Aerossol versus pó seco
+Na orientação de inaladores, qual afirmação é correta?
+A) Todo dispositivo exige inspiração lenta, sem exceções. B) DPI normalmente requer inspiração rápida e profunda; pMDI requer inspiração lenta e coordenada ao disparo. C) O espaçador só funciona se receber vários disparos simultâneos. D) A técnica não interfere na deposição do fármaco.
+**Gabarito B.** **A** apaga diferença física; **C** favorece erro de técnica; **D** ignora a entrega pulmonar. **Mini-revisão:** o dispositivo determina a manobra, e ela deve ser demonstrada presencialmente sempre que possível.
+
+### Questão 21 — Falha aparente do tratamento
+Paciente em LABA/LAMA retorna com dispneia persistente, sem novas exacerbações, mas faz inspiração muito fraca com DPI e não consegue preparar a dose. Conduta inicial mais racional?
+A) Acrescentar CI automaticamente. B) Verificar e corrigir técnica/dispositivo, adesão e diagnósticos concorrentes antes de intensificar fármacos. C) Dobrar todos os medicamentos sem examinar. D) Afirmar que nenhuma intervenção pode ajudar porque VEF1 é baixo.
+**Gabarito B.** **A/C** tratam falha de entrega como necessidade de novo fármaco; **D** ignora reversibilidade de erros técnicos e papel da reabilitação. **Mini-revisão:** sempre verificar “foi inalado?” antes de perguntar “qual droga adicionar?”.
+
+### Questão 22 — Retorno após exacerbação
+Homem após alta por exacerbação retorna com edema, ortopneia e ganho ponderal, sem aumento de secreção. Qual conduta é prioritária?
+A) Tratar obrigatoriamente com mais antibiótico. B) Investigar insuficiência cardíaca e outras causas de dispneia, sem presumir nova exacerbação obstrutiva. C) Manter indefinidamente corticosteroide oral. D) Ignorar edema como achado habitual.
+**Gabarito B.** **A/C** podem produzir danos sem enfrentar a causa; **D** perde sinal clínico importante. **Mini-revisão:** exacerbação de DPOC é diagnóstico clínico, mas concorrentes cardíacos precisam ser buscados.
 
 
 ## Referências essenciais
