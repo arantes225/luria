@@ -488,3 +488,87 @@ A recuperação envolve alimentação, sono, força, comportamento, deambulaçã
 4. Começar **vasoativo e controle de fonte** quando indicados, sem protocolos adultos mecânicos.
 5. Planejar **monitorização, transferência e seguimento**, prevenindo falhas de comunicação.
 
+
+
+## 32. Oito casos clínicos integradores comentados
+
+### Caso 1 — Choque compensado com pressão ainda normal
+
+**Apresentação:** criança fictícia de quatro anos, 16 kg, previamente saudável, tem febre há três dias e tosse. Chega prostrada, respiração rápida, FC 165/min, TEC de cinco segundos, mãos frias, pulsos finos, pouca urina desde manhã, PA 98/60 mmHg e SpO₂ 93% em ar ambiente. Ausculta sugere pneumonia em base direita. O estudante diz que “não há choque porque a pressão é normal”.
+
+**Hipótese:** infecção respiratória com **hipoperfusão sistêmica e choque séptico compensado clinicamente suspeito**. A pressão preservada não exclui falha microcirculatória; taquicardia, TEC lento, oligúria e prostração são o conjunto relevante. Phoenix pode ser aplicado posteriormente conforme dados, mas não se espera o escore para agir.
+
+**Exames:** glicose capilar, lactato, hemograma, função renal/eletrólitos, cultura sanguínea se sem atraso, avaliação de pneumonia por imagem conforme estabilidade e disponibilidade. Monitorizar perfusão, frequência, pressão por idade e diurese.
+
+**Conduta e sequência:** convocar suporte pediátrico, acesso venoso, oxigênio se indicado, antibiótico parenteral dirigido aos patógenos plausíveis **idealmente dentro de uma hora** de reconhecimento de choque. Em serviço com UTI disponível, considerar cristaloide em **10–20 mL/kg por bolo** (160–320 mL para 16 kg), reavaliando imediatamente após cada dose; interromper se congestão ou perfusão normalizada. Se perfusão persistir ruim ou bolos não tolerados, avaliar vasoativo e transferência/UTI. **Por que importa:** hipoperfusão antecede hipotensão, e o tratamento não aguarda colapso.
+
+### Caso 2 — Sepse sem hipotensão em local sem UTI
+
+**Apresentação:** lactente fictício de onze meses com infecção bacteriana provável, febre, taquicardia e irritabilidade; está sem hipotensão, extremidades bem perfundidas, TEC de dois segundos e saturação aceitável. A unidade rural não dispõe de UTI, ventilação mecânica ou infusão vasoativa segura. Profissional sugere 60 mL/kg “porque o protocolo de sepse manda”.
+
+**Hipótese:** infecção potencialmente importante, **sem choque hipotensivo** na avaliação atual, em **contexto sem terapia intensiva**. Gravidade e necessidade de encaminhamento dependem de outros sinais/risco, mas não existe indicação de 60 mL/kg como rotina.
+
+**Exames:** avaliação seriada de pressão/TEC/consciência/respiração e hidratação, glicose, amostras dirigidas e culturas conforme probabilidade, sem atraso de tratamento. Analisar se surgiram disfunções sistêmicas além da febre.
+
+**Conduta:** manter fluidos de **manutenção apropriados** e tratar a infecção/organizar transferência se indicado; **não administrar bolos sem hipotensão** apenas por suspeita de sepse na rede sem UTI, conforme recomendação forte da SSC pediátrica 2026. Se surgir choque hipotensivo, avaliar a recomendação distinta de bolos de 10–20 mL/kg até 40 mL/kg com reavaliação rigorosa e transporte especializado. **Por que importa:** recurso disponível modifica a relação benefício/dano da fluidoterapia.
+
+### Caso 3 — Piora respiratória após fluidos: pense em disfunção miocárdica
+
+**Apresentação:** criança fictícia de oito anos, 24 kg, febre e mal-estar com suspeita inicial de sepse; após bolos de cristaloide apresenta piora da dispneia, SpO₂ em queda, estertores novos e hepatomegalia dolorosa. Taquicardia persiste e a PA está limítrofe. US cardíaco à beira leito realizado por profissional treinado sugere contratilidade ventricular reduzida.
+
+**Hipóteses:** **disfunção miocárdica associada à sepse**, miocardite viral ou choque misto, agravado por fluidos. Não é adequado simplesmente repetir bolos até atingir um volume "obrigatório", porque há sinais de congestão. A resposta à terapia mudou a hipótese fisiológica.
+
+**Exames:** reavaliar gasometria conforme ventilação, glicose/eletrólitos, ECG, troponina/BNP quando úteis, ecocardiograma, função renal, imagem torácica e busca de foco infeccioso. Considerar também insuficiência cardíaca por doença prévia desconhecida.
+
+**Conduta:** **interromper bolos**, otimizar suporte de oxigênio/ventilação, convocar UTIP e cardiologia pediátrica, selecionar vasoativo/inotrópico individualmente, e manter investigação/tratamento infeccioso quando suspeita se sustenta. **Por que importa:** o limite da reposição não é o relógio; é a **resposta da perfusão e a tolerância do coração/pulmões**.
+
+### Caso 4 — Meningococcemia fulminante com púrpura
+
+**Apresentação:** escolar fictício de sete anos, febre de início abrupto, vômitos, mialgia e rápida prostração. Em poucas horas aparecem manchas violáceas não branqueáveis nas pernas, TEC lento, pulsos finos, extremidades frias e hipotensão para idade. Não relata cefaleia intensa e não há rigidez de nuca evidente.
+
+**Hipótese:** **meningococcemia com choque séptico**, até prova contrária; púrpura fulminante e CIVD são possibilidades. A ausência de meningismo não exclui infecção meningocócica invasiva. Diferenciais incluem dengue, outras bacteremias, doenças hematológicas e vasculites, mas não justificam atraso inicial.
+
+**Exames:** lactato, glicose, hemograma/plaquetas, coagulação/fibrinogênio, função renal, hemoculturas se possível sem atraso. A punção lombar **não deve anteceder estabilização nem atrasar antibiótico** em choque; considerar quando segura e necessária.
+
+**Conduta:** atendimento de emergência, via e monitorização, antimicrobiano parenteral ativo contra meningococo **imediatamente**, fluidos/vasoativos conforme perfil hemodinâmico e suporte disponível, vigilância de CIVD e complicações. Após reconhecimento, notificação epidemiológica, medidas de precaução e profilaxia de contatos elegíveis conforme vigilância. **Por que importa:** é emergência de evolução em horas e não exige a tríade clássica de meningite.
+
+### Caso 5 — Recém-nascido hipotérmico com apneia
+
+**Apresentação:** recém-nascido fictício de 12 dias tem episódios de apneia, recusa alimentar, hipotermia de 35,8°C, palidez e perfusão lenta. Não tem febre, tosse nem foco evidente. O responsável pergunta se pode receber apenas antitérmico e alta porque “não parece infecção”.
+
+**Hipóteses:** **sepse neonatal tardia**, infecção invasiva, hipoglicemia, cardiopatia congênita crítica e doença metabólica, entre outras. A idade e hipotermia/apneia exigem avaliação imediata; ausência de febre **não tranquiliza**. O protocolo neonatal específico define exame, internamento, antibiótico e monitorização.
+
+**Exames:** glicose capilar, hemocultura, urina com coleta adequada conforme idade, gasometria/eletrólitos, avaliação infecciosa e líquor quando seguro e indicado; considerar avaliação cardíaca e metabólica conforme achados.
+
+**Conduta:** encaminhamento/emergência neonatal, proteger ventilação, corrigir hipoglicemia se presente, iniciar antimicrobianos empíricos **específicos para o neonato** sem atraso perigoso, com cálculo de doses e intervalos pela idade gestacional/cronológica e função renal. **Por que importa:** lactente muito pequeno pode ter sepse sem febre e não deve receber plano terapêutico de escolar/adulto.
+
+### Caso 6 — Criança neutropênica com bacteremia e cateter central
+
+**Apresentação:** criança fictícia de dez anos em quimioterapia tem febre de 38,4°C, hipotensão, TEC prolongado e cateter venoso central. Já teve isolamento de Gram-negativo multirresistente em internação anterior. Plaquetas baixas e leucócitos reduzidos; não há eritema evidente no local do cateter.
+
+**Hipóteses:** **choque séptico em imunocomprometido**, possível bacteremia associada ao cateter ou outro foco, com risco de patógeno resistente. A ausência de leucocitose e alterações locais não exclui infecção. Tratamento empírico deve considerar culturas antigas, epidemiologia e protocolo de neutropenia febril.
+
+**Exames:** hemoculturas centrais/periféricas conforme protocolo sem atraso, lactato, eletrólitos, glicemia, função renal, plaquetas/coagulação e busca cuidadosa de foco.
+
+**Conduta:** antibiótico sistêmico antipseudomonas e cobertura adicional **conforme risco local/individual**, sem improvisação de agentes; contato com infectologia/oncologia/UTIP e avaliação de necessidade de controle de fonte, inclusive retirada de cateter após assegurar acesso alternativo quando confirmado como foco. **Por que importa:** o risco de resistência e a imunossupressão mudam amplitude do antibiótico e interpretação de exames.
+
+### Caso 7 — Criança com dengue e choque na fase de defervescência
+
+**Apresentação:** menina fictícia de nove anos em área com surto de dengue teve febre alta por três dias, agora a temperatura caiu, mas passou a ter dor abdominal intensa, vômitos, prostração, pulsos finos e TEC prolongado. Laboratório demonstra aumento do hematócrito e redução de plaquetas em relação ao início do quadro; há líquido livre pequeno em ultrassonografia.
+
+**Hipótese:** **dengue grave com extravasamento plasmático e choque** é forte possibilidade, sem excluir outras infecções concomitantes. A piora quando a febre cai é pista epidemiológica importante. A síndrome hemodinâmica tem peculiaridades e precisa do **fluxo de manejo da dengue do Ministério da Saúde**.
+
+**Exames:** monitorização de hematócrito e plaquetas em série, eletrólitos, glicose, avaliação hemodinâmica, testes diagnósticos com janela correta e pesquisa de outros focos quando quadro sugere coinfecção.
+
+**Conduta:** encaminhar a serviço capaz de tratar dengue grave, reposição hídrica titulada conforme algoritmo de dengue e sinais de congestão, vigilância de sangramento e disfunções. **Não importar mecanicamente a meta de 60 mL/kg da sepse bacteriana** e não usar AINEs indiscriminadamente. Se bactéria invasiva é plausível, considerar antibioticoterapia proporcional e oportuna com avaliação especializada. **Por que importa:** a fisiopatologia do choque pode ser diferente apesar da febre e má perfusão.
+
+### Caso 8 — Choque após pneumonia e empiema não drenado
+
+**Apresentação:** criança fictícia de seis anos, 19 kg, foi internada por pneumonia bacteriana e recebeu antibiótico parenteral adequado à cultura. Após melhora inicial, volta a ter febre, piora de esforço respiratório, dor torácica e queda de pressão. Ultrassom torácico mostra coleção pleural complexa, com septações e importante compressão pulmonar.
+
+**Hipótese:** **empiema pleural como foco persistente**, causando sepse e piora ventilatória. A recorrência apesar de antibiótico inicialmente ativo indica investigar fonte inadequadamente controlada, e não apenas declarar “resistência” sem provas.
+
+**Exames:** hemograma, culturas conforme cenário, função renal, lactato/perfusão, US torácico e imagem complementar se necessário e seguro.
+
+**Conduta:** suporte hemodinâmico/respiratório, reavaliar atividade antibiótica e **avaliar drenagem pleural** com cirurgia/UTIP/medicina intervencionista conforme tamanho, loculação, gravidade e recursos. A equipe define necessidade de drenagem, fibrinolítico ou procedimento adicional; a recuperação deve incluir reavaliação de função pulmonar e nutrição. **Por que importa:** controlar a fonte pode ser mais importante que ampliar indiscriminadamente o antibiótico.
+
