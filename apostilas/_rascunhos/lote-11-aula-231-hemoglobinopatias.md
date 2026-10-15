@@ -408,6 +408,54 @@ Cada concentrado de hemácias introduz ferro que não possui rota fisiológica d
 
 A quelação com agentes como deferasirox, deferoxamina ou deferiprona depende de idade, intensidade transfusional, concentração de ferro, função renal/hepática, toxicidade e adesão. Não prescrever a combinação ou dose sem avaliação hematológica especializada. Pacientes com talassemia não dependente de transfusão também podem acumular ferro por maior absorção intestinal e eritropoiese ineficaz.
 
+
+### 8.1 Regime de transfusão regular na beta-talassemia TDT
+A **Thalassaemia International Federation, quinta edição (2025)**, recomenda, em grande parte dos pacientes com TDT, concentrados de hemácias a cada **2–5 semanas**, ajustados para Hb **pré-transfusional de 9,5–10,5 g/dL**. Esse alvo tem finalidade diferente da decisão de transfundir uma anemia aguda: restringir expansão medular, permitir crescimento e reduzir complicações. Em doença cardíaca, hipertensão pulmonar ou hematopoese extramedular importante, pode ser apropriado alvo diferente individualizado (frequentemente maior), sob acompanhamento especializado.
+
+Antes da primeira transfusão regular, registrar tipagem ABO/RhD e fenotipagem/genotipagem eritrocitária estendida quando possível, particularmente **C, c, E, e e Kell**, para reduzir aloimunização. Planejar uso de componentes leucorreduzidos e rastreamento de anticorpos conforme hemoterapia. A cada sessão, revisar Hb anterior, reações prévias, compatibilidade, volume recebido e intercorrências. A meta transfusional não é “normalizar o hemograma por completo” após cada bolsa; **Hb pós-transfusional excessiva também é indesejável**.
+
+**Acompanhamento da eficácia:** crescimento, puberdade, fadiga, desempenho escolar/profissional, tamanho esplênico, sinais de eritropoese extramedular, necessidade anual de sangue, hepatomegalia e manutenção de Hb pré-transfusional no intervalo prescrito. Se a Hb cai mais rápido que o esperado, investigar hiperesplenismo, aloimunização, hemólise, perdas sanguíneas ou alterações do regime.
+
+### 8.2 Quantificar o ferro: ferritina é tendência, RM é órgão
+A cada unidade transfundida, entra ferro não eliminável de maneira regulada pelo organismo. A **ferritina** é marcador seriado conveniente, mas sofre influência de inflamação, doença hepática e outras situações. Não é equivalente à quantidade de ferro em cada órgão e não permite concluir que o coração esteja protegido.
+
+**RM hepática quantificada** avalia concentração de ferro hepático (LIC); **RM cardíaca com T2\*** informa acúmulo de ferro miocárdico e risco de cardiomiopatia. Na interpretação geral de T2\* cardíaco, **valores inferiores a 20 ms** sugerem sobrecarga miocárdica, com maior preocupação clínica quando **inferiores a 10 ms**, sempre mediante protocolo validado e interpretação especializada. Intervalos entre exames dependem de risco, histórico de quelação, idade e resultados prévios. Não extrapolar limiares de RM de fígado para coração.
+
+| Instrumento | O que mede | Limitação | Utilidade clínica |
+|---|---|---|---|
+| Ferritina sérica seriada | Marcador indireto e inflamatório de reservas | Pode subir sem proporcionalidade com ferro de órgão | Tendência longitudinal e triagem de problemas |
+| RM hepática quantitativa | Concentração de ferro no fígado | Técnica/validação e disponibilidade influenciam | Ajustar quelação e avaliar depósito |
+| RM cardíaca T2\* | Ferro miocárdico | Necessita protocolo específico; não confundir com T2 convencional | Reconhecer risco cardíaco antes de insuficiência manifesta |
+| ECG/ecocardiograma | Arritmia e função/estrutura cardíaca | Função normal não afasta ferro cardíaco inicial | Monitorar complicações, não substituir RM de ferro |
+
+**Sinal de alarme:** palpitações, síncope, falta de ar progressiva, edema e taquicardia em paciente com TDT exigem investigação cardiológica. Insuficiência cardíaca por sobrecarga férrica pode ameaçar a vida e demandar intensificação imediata de tratamento.
+
+### 8.3 Quelantes de ferro: comparação didática com vigilância
+| Fármaco | Administração habitual | Riscos importantes | Monitorização que muda conduta |
+|---|---|---|---|
+| **Deferasirox** | Via oral, formulações diversas | Disfunção renal/hepática, alterações gastrointestinais e outras reações | Creatinina/TFG, urina/proteinúria, enzimas hepáticas, tendência de ferro e bula da formulação |
+| **Deferoxamina** | Via parenteral, frequentemente infusão subcutânea prolongada | Reações locais, toxicidade auditiva/ocular e adesão limitada por infusão | Avaliação auditiva/oftalmológica, ferro, crescimento em crianças e condições de uso |
+| **Deferiprona** | Via oral | **Neutropenia/agranulocitose** e outras reações; evento grave exige ação imediata | Hemograma/neutrófilos na periodicidade estabelecida por bula, sinais de febre/infecção e ferro |
+
+A seleção e as combinações dependem de idade, contraindicações, função renal/hepática, gestação, gravidade e localização do depósito, além de possibilidade de adesão. **Doses não são intercambiáveis entre apresentações e marcas**, e o cálculo por peso requer protocolo hematológico. A **deferiprona** exige vigilância particular de neutropenia/agranulocitose: febre, odinofagia ou sinais de infecção durante uso pedem avaliação imediata e hemograma.
+
+Quelação em excesso também pode causar toxicidade, especialmente quando a carga de ferro diminui. Portanto, não manter dose máxima inalterada indefinidamente. Adesão e acesso importam: ferritina persistentemente elevada pode refletir dificuldade de obtenção, toxicidade ou regime inadequado, e não necessariamente descompromisso do paciente.
+
+### 8.4 Reações transfusionais: algoritmo de segurança aplicável a hemoglobinopatias
+Sinais durante ou após infusão de hemocomponente — febre, tremores, urticária, dispneia, hipotensão, dor lombar, urina escura, sangramento ou deterioração clínica — justificam avaliação de reação transfusional.
+
+**Primeira resposta:** interromper imediatamente a transfusão suspeita, manter acesso com solução apropriada, avaliar ABC e sinais vitais, comunicar hemoterapia, conferir identificações de paciente/bolsa, registrar período e sintomas e encaminhar amostras/material conforme protocolo. O diagnóstico diferencial inclui hemólise aguda, reação febril não hemolítica, alergia/anafilaxia, contaminação bacteriana, TRALI e sobrecarga circulatória (TACO).
+
+**TRALI:** insuficiência respiratória aguda temporalmente associada à transfusão, com lesão pulmonar não explicada principalmente por sobrecarga. **TACO:** sobrecarga circulatória com achados de congestão; hipertensão, alterações de balanço hídrico e resposta a diurético podem contribuir. Ambos exigem resposta clínica urgente e análise com hemoterapia.
+
+**Reação hemolítica tardia na doença falciforme:** pode surgir dias após alta, acompanhada de dor, icterícia, hemoglobinúria e redução marcante de Hb. Pode mimetizar vaso-oclusão. Em **hiper-hemólise**, Hb pode cair abaixo do nível pré-transfusional, e hemácias do próprio paciente são destruídas. Evitar transfundir novamente sem coordenação hematológica, salvo anemia com risco de vida, quando utilizar seleção cuidadosa de unidades. Tratamentos imunomoduladores possíveis dependem de gravidade e avaliação especialista.
+
+### 8.5 Por que o programa transfusional em HbSS é diferente do de talassemia
+Na **talassemia TDT**, o objetivo principal do regime é substituir produção eritrocitária inadequada, permitir desenvolvimento e conter eritropoese ineficaz. Na **doença falciforme**, programas crônicos selecionados muitas vezes têm o objetivo de diminuir proporção de HbS e reduzir AVC/vaso-oclusão de alto risco, usando metas como **HbS abaixo de 30%** em situações específicas. A decisão sobre troca versus transfusão simples considera risco de viscosidade e carga de ferro; não transferir automaticamente alvo de Hb pré-transfusional de TDT para HbSS.
+
+O risco de aloimunização ocorre em ambos os grupos e é reduzido por caracterização eritrocitária e hemocomponentes compatíveis. A colaboração estreita com hemoterapia faz parte da segurança; transfusões repetidas não são procedimento trivial apenas porque já se tornaram familiares ao paciente.
+
+
 ## 9. Casos clínicos originais
 
 ### Caso 1 — Criança com febre e HbSS
