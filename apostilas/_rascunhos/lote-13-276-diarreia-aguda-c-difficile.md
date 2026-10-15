@@ -171,6 +171,352 @@ Na gestação, a prioridade mantém hidratação e avaliação de gravidade; ant
 6. Rever antibióticos concomitantes e necessidade de internação; observar resolução clínica, **não repetir para cura**.
 7. Se sintomas reaparecem, confirmar recorrência clínica, pesquisar outras causas e individualizar tratamento.
 
+
+## 11A. Diarreia aguda: transformar sintomas em hipóteses fisiopatológicas úteis
+
+### Definir o episódio, mas não confundir calendário com mecanismo
+
+Diarreia é aumento da frequência de evacuações e/ou diminuição da consistência fecal em relação ao padrão habitual. Na avaliação do adulto, o clínico descreve **número de evacuações não formadas, duração, volume, sangue, muco, urgência, tenesmo, vômitos, febre, dor e hidratação**. Não basta perguntar “teve diarreia?”. Um paciente com três evacuações líquidas em 24 horas após iniciar laxativo exige raciocínio distinto do paciente com quinze evacuações aquosas e choque.
+
+A distinção temporal **aguda até aproximadamente 14 dias**, persistente além de duas semanas e crônica a partir de quatro semanas orienta probabilidade de infecção, distúrbio funcional ou inflamação crônica; entretanto a gravidade aguda não depende do marco temporal. Uma doença grave pode evoluir em poucas horas, e diarreia com sete dias e sangue exige investigação antes de atingir categoria persistente.
+
+A topografia tradicional “diarreia alta” e “diarreia baixa” ajuda a imaginar mecanismos: acometimento predominantemente do delgado favorece grandes volumes, perda hidroeletrolítica e má absorção; colite distal pode produzir evacuações frequentes de pouco volume, tenesmo, muco e sangue. Mas **agentes e síndromes se sobrepõem**, e a aparência não identifica com certeza o patógeno. Doença por *C. difficile*, por exemplo, pode causar colite grave sem sangue visível.
+
+### O que realmente significa “osmótica”, “secretora” e “inflamatória”?
+
+A diarreia **osmótica** aparece quando solutos que não foram absorvidos retêm água na luz intestinal. O mecanismo é observado após ingestão de determinados carboidratos mal absorvidos ou laxantes osmóticos. Pode melhorar com jejum ou remoção do soluto causal. Uma consequência clínica é que a anamnese de alimentos, suplementos, medicamentos, adoçantes e fórmulas é parte da investigação, especialmente se a história se repete.
+
+A diarreia **secretora** resulta de aumento de secreção eletrolítica e/ou redução de absorção de sódio e água pelo epitélio. Certas enterotoxinas estimulam vias intracelulares que abrem canais de secreção; a perda pode continuar mesmo em jejum, sobretudo em síndromes volumosas. A **capacidade de cotransporte sódio-glicose** costuma permanecer funcional em várias infecções secretoras, fundamentando o uso da solução de reidratação oral. Esse detalhe explica por que uma intervenção barata pode salvar vidas mesmo quando antibiótico não está indicado.
+
+A diarreia **inflamatória** decorre de lesão de mucosa, liberação de mediadores, exsudação e menor absorção, podendo causar febre, dor e sangue. O padrão sugere patógenos invasivos, toxina Shiga, colite isquêmica, DII ou outras etiologias — não significa que toda diarreia com muco é Shigella nem que toda apresentação sem sangue é não invasiva. Definições mecanicistas ajudam a orientar testes, não substituem microbiologia.
+
+A **má absorção** pode produzir esteatorreia, flatulência, emagrecimento e sintomas mais prolongados; pensar em *Giardia*, doença celíaca, insuficiência pancreática, ressecção intestinal e outras causas conforme história. **Dismotilidade** pode acompanhar síndrome do intestino irritável, mas diagnóstico funcional não deve ser empregado para primeira diarreia sanguinolenta ou febril sem investigação.
+
+### História epidemiológica: transformar exposições em probabilidades
+
+| Exposição | Hipóteses importantes | Como afeta conduta |
+| --- | --- | --- |
+| Pessoas da família com vômitos/diarreia próximos no tempo | Norovírus e outras gastroenterites contagiosas | Hidratação e prevenção de transmissão; testar surtos conforme vigilância |
+| Carne bovina mal cozida, produto contaminado e sangue nas fezes | STEC entre diferenciais | Pesquisar toxina Shiga; evitar antimicrobiano empírico enquanto hipótese relevante |
+| Aves/carnes mal cozidas, febre, cólica intensa | *Campylobacter*, *Salmonella* | Microbiologia dirigida se grave ou disenteria; antibiótico apenas quando indicado |
+| Água sem tratamento e flatulência/diarreia persistente | *Giardia*, *Cryptosporidium* | Testes antígeno/molecular/parasitológicos dirigidos |
+| Mariscos crus e síndrome aquosa após exposição | *Vibrio* spp., norovírus | Estratificar gravidade e risco de infecção invasiva em hepatopatia |
+| Viagem recente com diarreia incapacitante | Enterotoxigênicas, *Campylobacter* e outros | Avaliar indicação antimicrobiana conforme gravidade/resistência e risco de STEC |
+| Internação ou antibiótico recente, nova diarreia | *C. difficile*, efeitos de fármacos e outras infecções | Critérios clínicos antes de GDH/toxina/NAAT, precaução de contato |
+| Quimioterapia, transplante ou imunodeficiência | Agentes oportunistas e evolução grave | Menor limiar para eletrólitos, culturas, investigação ampliada/internação |
+| Laxante, metformina, magnésio, colchicina | Diarreia medicamentosa | Revisar linha do tempo e necessidade do fármaco; não tratar colonização por CDI |
+
+O **período de incubação** pode sugerir etiologia, mas o horário de uma refeição não prova causalidade. Vômitos horas após alimento podem envolver toxina pré-formada, mas casos agrupados e tipos de preparação exigem investigação epidemiológica se há surto. Evitar afirmar que todo episódio após maionese é *Staphylococcus* ou que todo surto viral tem um único padrão temporal.
+
+### O “gap osmótico fecal”: quando o cálculo ajuda e quando atrapalha
+
+Em diarreia **crônica selecionada** ou quando persiste dúvida entre mecanismos, o gap osmótico fecal aproximado é calculado por **290 − 2 × (Na fecal + K fecal)**, com eletrólitos em mmol/L e hipótese de osmolaridade fecal em torno de 290 mOsm/kg. Valores maiores costumam apoiar presença de osmóis não mensurados e menores podem apoiar mecanismo secretor. O cálculo está sujeito a erros pré-analíticos, diluição, fermentação e contribuição de diversos solutos. **Não é exame rotineiro do paciente com diarreia aguda infecciosa de dois dias**; usá-lo universalmente só prolonga a avaliação sem mudar tratamento.
+
+## 11B. Desidratação e manejo inicial: a fisiologia orienta o volume, a via e a reavaliação
+
+### Perfusão versus hidratação: dois conceitos que se sobrepõem, mas não são iguais
+
+A desidratação é déficit de água e, muitas vezes, eletrólitos corporais; **hipovolemia** refere-se especialmente à redução de volume efetivo circulante. Paciente com diarreia volumosa pode apresentar ambos, com sede, mucosas secas, taquicardia, hipotensão ortostática, oligúria e extremidades frias. Porém, idosos usando betabloqueadores podem não desenvolver taquicardia expressiva; em doença renal ou cardíaca, sinais de congestão coexistem com baixa perfusão eficaz. Nenhum sinal isolado basta.
+
+Avaliar pressão e frequência cardíaca, estado mental, perfusão/capilar, débito urinário, vômitos que impedem ingestão, peso recente quando conhecido e comorbidades. Em **choque ou desidratação grave com alteração do sensório**, indicar reposição IV por cristaloide isotônico e monitorização, reavaliando resposta, lactato/ácido-base se pertinente e função renal. Evitar infundir volumes padronizados sem considerar cardiopatia, DRC e risco de congestão.
+
+**Solução de reidratação oral (SRO)** é preferida quando o paciente está estável e consegue beber. O transportador intestinal SGLT1 acopla absorção de glicose e sódio; água segue gradiente osmótico. Por isso SRO adequada funciona melhor do que ingerir apenas água em perdas volumosas e mais seguramente do que refrigerantes, sucos muito concentrados ou bebidas energéticas com osmolaridade inadequada. Pequenos goles frequentes podem tornar a terapia possível mesmo com náusea.
+
+### Exemplo de cálculo clínico sem criar receita automática
+
+Adulto de 70 kg com sede intensa, boca seca e tontura ortostática, porém sem choque e capaz de ingerir líquidos, pode começar **SRO fracionada com reposição das perdas em curso**, monitorando tolerância e urina. O peso entra na avaliação global, mas não existe regra de “um volume único de SRO para todo adulto com diarreia” que dispense acompanhar frequência das evacuações, vômitos e resposta.
+
+Em paciente com confusão, hipotensão e oligúria, a prioridade é abordagem de choque, acesso IV, eletrólitos/glicose e reposição isotônica com reavaliação seriada. O tempo até normalização de pressão não define sozinho restituição de água total: após estabilizar perfusão, o déficit de manutenção e as perdas continuadas ainda exigem plano individual.
+
+**Hiponatremia** pode ocorrer por perdas e reposição com água hipotônica, secreção de ADH e outros mecanismos; **hipernatremia** pode surgir por perdas de água superiores às de sódio e ingestão insuficiente. A correção de alterações graves precisa considerar cronicidade e risco neurológico, não ser feita pela simples recomendação “tomar muita água”.
+
+### Distúrbios metabólicos comuns e mecanismos
+
+- **Hipocalemia:** perda fecal de potássio e, em alguns casos, ativação de aldosterona por depleção de volume; avaliar risco de arritmia se perdas intensas ou doença cardíaca.
+- **Acidose metabólica por perda de bicarbonato:** frequente em diarreia volumosa; pode coexistir com acidose láctica se choque e hipoperfusão.
+- **Lesão renal pré-renal:** hipovolemia reduz perfusão renal; elevação de creatinina sinaliza gravidade e requer reavaliação de diuréticos, anti-inflamatórios e outros fármacos.
+- **Hiperglicemia/hipoglicemia:** diabetes, jejum, sepse e medicações modificam risco; medir glicemia em paciente confuso/instável.
+- **Hipomagnesemia e outras perdas:** considerar em diarreia prolongada, má absorção e pacientes vulneráveis.
+
+A indicação de internar ou observar inclui choque, instabilidade, desequilíbrio metabólico importante, IRA, vômitos incoercíveis, dor abdominal grave/peritonismo, sangramento relevante, colite fulminante, imunossupressão significativa ou incapacidade social/logística de tratamento seguro. **Idade avançada isolada** não determina internação, mas reduz reserva e deve abaixar limiar de reavaliação.
+
+## 11C. Qual exame fecal realmente muda conduta?
+
+### Não coletar tudo em todos
+
+Em adulto jovem, imunocompetente, sem febre/sangue, com diarreia aquosa de 48 horas e hidratação preservada, testes fecais extensos raramente mudam tratamento. O clínico deve primeiro definir **gravidade, risco de transmissão, possível surto, imunossupressão e sinais de colite invasiva**. Essa triagem racional evita antibióticos induzidos por testes que detectam colonização sem doença.
+
+**Febre importante, sangue/muco, dor abdominal intensa, defesa, sinais de sepse e contexto de exposição especial** justificam microbiologia direcionada a *Salmonella*, *Shigella*, *Campylobacter*, *Yersinia*, STEC e outros agentes conforme IDSA 2017. Métodos moleculares detectam múltiplos alvos rapidamente, mas o valor preditivo depende de sintomas e prevalência; quando necessário, cultura pode permitir antibiograma e vigilância epidemiológica.
+
+**Teste para toxina Shiga/STEC** merece destaque em diarreia com sangue e cólica importante, especialmente se febre discreta ou ausente e exposição epidemiológica. Algumas cepas podem levar à **síndrome hemolítico-urêmica (SHU)** por lesão endotelial e trombótica. A confirmação depende de fezes por método apropriado; risco de SHU exige monitorar hemograma/plaquetas, função renal, eletrólitos e sinais clínicos em casos suspeitos, mesmo antes de insuficiência renal manifesta.
+
+O uso empírico de antibiótico em **STEC O157 e cepas que produzem Shiga toxina 2**, ou quando esse perfil ainda não foi excluído, pode aumentar risco de SHU; diretriz IDSA recomenda evitar. A decisão diferencia essas infecções de shigelose grave, cólera e algumas diarreias do viajante em que antimicrobianos podem ser úteis. **Sangue nas fezes não é autorização universal para antibiótico.**
+
+### O parasitológico convencional não responde a toda pergunta
+
+Em diarreia persistente após água contaminada ou viagem, antígenos/métodos moleculares específicos para *Giardia* e *Cryptosporidium* podem superar simples exame parasitológico isolado para certos agentes. Em imunossuprimidos, ampliar pesquisa conforme quadro para *Cyclospora*, *Cystoisospora*, microsporídios e outros patógenos, em contato com infectologia. Uma amostra negativa, dependendo do método, pode não excluir parasitose de eliminação intermitente.
+
+Coprocultura/ensaio molecular em surto serve também à **vigilância e controle de transmissão**. Na suspeita de alimento comum contaminado em instituição, orientar notificação aos órgãos competentes e preservar informação sobre alimentos e pessoas afetadas, em vez de tratar cada paciente como episódio desvinculado.
+
+### Painel molecular positivo para vários microrganismos
+
+Co-detecções não demonstram que todos os alvos estão causando doença. Alguns ensaios detectam colonização, eliminação residual após infecção ou material genético que persiste quando sintomas já mudaram. A prioridade é identificar **qual resultado é coerente com fenótipo, gravidade, incubação e epidemiologia**. Se o exame retornar uma bactéria que raramente requer antimicrobiano e o adulto está recuperando com hidratação, um resultado positivo não exige tratamento reflexo.
+
+Para decisão farmacológica, cultura e **susceptibilidade local** podem ser necessárias, especialmente em shigelose resistente e doença do viajante; quinolonas enfrentam resistência variável em *Campylobacter* e outros agentes. Não recomendar ciprofloxacino para todo episódio infeccioso “porque cobre intestino”.
+
+## 11D. Antimicrobianos e sintomáticos: terapêutica por síndrome em vez de “diarreia = antibiótico”
+
+### Diarreia aquosa simples e curta
+
+Em paciente sem sinais de invasão, toxemia ou risco especial, hidratação/eletrólitos e alimentação conforme tolerância constituem tratamento principal. Antibiótico empiricamente para todos pode prolongar efeitos adversos, selecionar resistência e predispor à CDI. Probióticos têm evidência heterogênea conforme produto e população e não substituem reposição hídrica; em pacientes imunodeficientes ou com cateteres pode haver riscos específicos.
+
+**Loperamida**, em adulto imunocompetente com diarreia aquosa não febril e sem sangue, pode reduzir frequência e facilitar atividades, se não há íleo, suspeita de colite invasiva ou CDI. Interromper se dor/distensão aumenta. Em **disenteria, febre alta, toxicidade, colite importante ou suspeita de megacólon**, evitar antiperistálticos; diminuir evacuações enquanto conteúdo inflamatório fica retido não representa recuperação.
+
+### Disenteria e viajante
+
+Diarreia com sangue e dor importante exige revisar **STEC**, shigelose, campilobacteriose, salmonelose e colites não infecciosas. Se contexto sugere agente invasivo para o qual antibiótico é recomendado, escolha deve considerar gravidade, idade, alergias, gravidez, origem da infecção e resistência local. Não é correto selecionar fármaco e duração por uma “tríade universal” sem identificar risco de SHU.
+
+Diarreia do viajante **incapacitante** pode justificar tratamento antimicrobiano em condições selecionadas; casos leves geralmente pedem apenas hidratação. Azitromicina pode ser opção em síndromes específicas, inclusive quando resistência às fluoroquinolonas pesa, mas não equivale a primeira linha universal para toda diarreia com febre. O risco de prolongamento de QT, interações e estado clínico precisa ser conferido.
+
+**Cólera com desidratação grave** é cenário epidemiológico especial: reidratação rápida e adequada é a medida que salva vidas; antibiótico em casos selecionados pode reduzir duração da doença e eliminação bacteriana conforme protocolo e sensibilidade. A escolha do medicamento não substitui manejo do choque.
+
+### Salmonella e os diferenciais de tratamento
+
+Na **salmonelose não tifoide não complicada** em adulto imunocompetente, antimicrobianos em geral não são necessários e podem não trazer benefício; doença invasiva, bacteremia, risco de doença vascular, imunossupressão e determinadas condições clínicas mudam a decisão. Febre entérica (*Salmonella Typhi/Paratyphi*) exige avaliação microbiológica e tratamento específico, não pode ser manejada como gastroenterite banal.
+
+**Yersinia** pode imitar apendicite por adenite mesentérica e dor em FID; história epidemiológica e testes dirigidos são úteis. **Campylobacter** também pode cursar com pseudoapendicite e anteceder neuropatia imunomediada (Guillain–Barré), sem que toda infecção leve a essa complicação.
+
+## 11E. *C. difficile*: da disbiose ao diagnóstico correto
+
+### Por que um antibiótico respiratório pode gerar colite semanas depois?
+
+A microbiota intestinal saudável ocupa nichos, metaboliza nutrientes e contribui para resistência à colonização. Antibioticoterapia pode reduzir espécies que reprimem proliferação de *C. difficile*; esporos do patógeno resistem no ambiente e germinam quando condições favorecem. Cepas toxigênicas produzem **toxina A e toxina B**, modificando proteínas reguladoras do citoesqueleto e causando perda de integridade epitelial, inflamação e secreção. Essa cadeia explica por que o alvo principal da prevenção não é apenas “limpar quarto”, mas também **usar antimicrobianos somente quando necessários**.
+
+A infecção ocorre sobretudo em adultos com fatores de risco como antibióticos recentes, hospitalização, idade avançada, CDI prévia, comorbidades e imunossupressão. Porém, doença de início comunitário existe; a ausência de internação não exclui o diagnóstico. O tempo entre exposição e sintomas varia, e o clínico deve investigar antibióticos recentes mesmo após término do curso.
+
+**Colonização ≠ infecção.** Ter gene de toxina detectável em fezes não significa que toxinas estejam causando sintomas; por isso a elegibilidade clínica precede solicitação de exame. Um teste de alta sensibilidade aplicado a fezes formadas ou a paciente usando laxante pode gerar tratamento injustificado. Esse problema é especialmente importante com NAAT/PCR.
+
+### Escolher a amostra correta evita uma cascata de falsos diagnósticos
+
+O critério operacional habitual em adulto é **diarreia nova e sem explicação alternativa evidente, geralmente três ou mais fezes não formadas em 24 horas**. O serviço deve verificar laxantes usados, enteroterapia, outros agentes e duração. Paciente sem diarreia com **íleo/megacólon suspeito** é exceção clínica relevante: ausência de fezes não deve impedir avaliação cirúrgica, TC quando apropriada e discussão de testes alternativos por equipe experiente.
+
+**GDH** detecta antígeno presente em cepas toxigênicas e não toxigênicas; é um teste sensível, não comprovação de doença toxinogênica. **NAAT** detecta gene relacionado à capacidade de produzir toxina, mas não a presença de toxina livre em atividade no intestino. **EIA de toxina A/B** procura toxina livre; tem sensibilidade inferior à de métodos moleculares em algumas situações. Algoritmos multietapas combinam propriedades conforme critérios locais de testagem.
+
+| Combinação | O que significa | O que fazer |
+| --- | --- | --- |
+| GDH− / toxina− | CDI menos provável, ressalvadas limitações | Procurar outras causas e rever quadro |
+| GDH+ / toxina+ | Evidência laboratorial coerente com CDI se sintomas presentes | Estratificar gravidade e tratar |
+| GDH+ / toxina− / NAAT+ | Cepa toxigênica detectada, toxina não demonstrada | Reexaminar sintomas, laxantes, probabilidade pré-teste; colonização é possível |
+| NAAT+ isolado em paciente com diarreia nova típica e elegibilidade rigorosa | Forte evidência a favor em contexto adequado | Correlacionar gravidade e iniciar manejo indicado |
+| NAAT+ em paciente assintomático ou com fezes formadas | Não prova infecção ativa | Não tratar apenas pelo resultado |
+| Teste ainda positivo após cura clínica | Eliminação residual/colonização possível | **Não fazer teste de cura** |
+
+A diretriz IDSA/SHEA recomenda **não repetir teste dentro de sete dias** do mesmo episódio na ausência de mudança clínica relevante e **não testar para cura**. Nova diarreia após recuperação requer investigar recorrência de CDI versus outra causa, não usar só histórico de PCR positivo como diagnóstico.
+
+### Não confundir pseudomembranas com critério indispensável
+
+A **colite pseudomembranosa** é manifestação endoscópica ou histopatológica possível de CDI, mas nem todos os pacientes têm pseudomembranas, e esse padrão não é exclusivo do agente. Endoscopia não é rotina em doente típico com teste apropriado; ela pode ser útil em diagnósticos complexos selecionados, com ponderação de risco de perfuração em colite grave. O essencial em prova é unir **quadro clínico elegível + exame adequado + síndrome de gravidade**, não decorar aparência endoscópica.
+
+## 11F. Estratificação e tratamento da CDI com a atualização moderna
+
+### Não grave, grave e fulminante: o que muda realmente?
+
+O enquadramento histórico considera **leucócitos acima de 15.000/µL ou creatinina ≥1,5 mg/dL** como critérios laboratoriais de maior gravidade, interpretados com limites em doença renal crônica, imunossupressão e desidratação. Paciente com creatinina basal 2,0 mg/dL não deve ser classificado automaticamente sem considerar baseline, enquanto paciente neutropênico pode estar criticamente doente sem leucocitose.
+
+**Fulminância é definida por instabilidade/complicação intestinal:** hipotensão/choque, **íleo** e **megacólon**, eventualmente acompanhados de acidose/lactato elevado e falência orgânica. Em paciente com íleo, redução paradoxal de diarreia pode ser sinal de doença mais grave, não melhora. A conduta é ressuscitação, precauções, antibiótico por via adequada e discussão cirúrgica precoce.
+
+### Primeiro episódio não fulminante
+
+Atualização IDSA/SHEA de **2021** dá preferência condicional à **fidaxomicina** em comparação com um curso-padrão de vancomicina para episódio inicial, sobretudo pelo benefício sobre recorrência, mas ressalva que a implementação depende de recursos. **Vancomicina oral é alternativa adequada**. Regimes de referência para adultos: fidaxomicina **200 mg VO a cada 12 horas por 10 dias** ou vancomicina **125 mg VO quatro vezes ao dia por 10 dias**, após indicação clínica confirmada e checagem de apresentação/acesso.
+
+**Metronidazol oral** deixou de ser a primeira linha habitual em adultos: diretrizes anteriores reservam seu uso a cenários não graves em que vancomicina/fidaxomicina não estão disponíveis. Repetir o antigo resumo “CDI leve = metronidazol; se falhou, vancomicina” como regra atual reproduziria informação obsoleta e potencialmente lesiva.
+
+A disponibilidade e acesso à fidaxomicina **podem variar** entre redes e estabelecimentos; consultar registro sanitário, padronização, dispensação e negociação local em 2026. Não afirmar indisponibilidade absoluta em todo o Brasil, nem tratar recomendação internacional como garantia de acesso no SUS.
+
+### CDI fulminante: via enteral de vancomicina e foco de infecção
+
+Para forma fulminante, IDSA/SHEA 2017 fornece esquema de referência de **vancomicina 500 mg VO ou por sonda a cada seis horas**, associada a **metronidazol 500 mg IV a cada oito horas**, sobretudo quando existe íleo. Quando o trânsito está muito comprometido, pode ser necessária **vancomicina retal** por equipe habilitada e sob protocolo institucional; isso envolve preparação e técnica para uso hospitalar, não prescrição domiciliar simplificada.
+
+A vancomicina **intravenosa isolada não trata adequadamente CDI luminal**, pois a concentração na luz colônica é inadequada. Essa distinção é crucial para evitar erro de via. A presença de megacólon, perfuração, peritonite, choque que progride, lactato elevado e falência orgânica exige **cirurgia geral e terapia intensiva precoces**, com discussão de estratégias cirúrgicas como colectomia subtotal ou ileostomia de derivação/irrigação em serviços selecionados.
+
+O início de antimicrobiano para CDI fulminante **não deve aguardar exame fecal** se a suspeita clínica é muito forte e a confirmação demorará, desde que sejam investigados também outros diagnósticos como isquemia intestinal, obstrução e sepse de origem diferente. Em críticos, a interpretação da tomografia e da necessidade cirúrgica ocorre em paralelo à terapia, não somente depois de vários dias de antibioticoterapia malsucedida.
+
+### O que fazer com o antibiótico que desencadeou CDI?
+
+**Rever e interromper o antibiótico não essencial** é medida-chave para reduzir persistência/recorrência, mas existem condições em que o paciente tem infecção grave concomitante e precisa de terapia sistêmica. Nesses casos, reduzir ao **menor espectro e duração justificáveis**; não retirar cobertura necessária para sepse apenas porque CDI foi detectada. Revisar uso de IBP sem indicação, laxativos e outros fatores potencialmente modificáveis, sem tratar correlação como causalidade comprovada para cada paciente.
+
+### Comparação didática das decisões de CDI
+
+| Cenário | Melhor decisão de princípio | Principal erro |
+| --- | --- | --- |
+| Primeiro episódio não fulminante, recursos permitem | Preferir fidaxomicina ou usar vancomicina VO aceita | Prescrever metronidazol como primeira linha universal |
+| Primeiro episódio não fulminante, fidaxomicina inacessível | Vancomicina oral padrão | Aguardar medicamento inacessível e desidratar paciente |
+| CDI com choque/íleo | Vancomicina enteral em dose para fulminante + metronidazol IV, UTI/cirurgia quando pertinente | Usar só vancomicina IV ou tratar como episódio simples |
+| PCR+ isolado sem diarreia | Avaliar colonização, não tratar reflexamente | Antibioticoterapia por exame positivo sem sintomas |
+| Retorno de diarreia após melhora | Reavaliar recorrência e diferenciais, evitar teste de cura | Repetir PCR até ficar negativo |
+| CDI com múltiplas recorrências | Estratégia especializada incluindo fidaxomicina, vancomicina em desmame/pulsos ou terapia de microbiota selecionada | Repetir mesmo antibiótico sem reavaliar risco e plano |
+
+## 11G. Recorrência de CDI, terapias de microbiota e prevenção
+
+### Por que a recorrência existe mesmo quando o antibiótico mata o patógeno?
+
+A terapia pode controlar crescimento bacteriano, mas a **microbiota colônica permanece perturbada** por algum tempo. Esporos persistentes e nova exposição podem permitir retorno de sintomas. Também há risco de nova infecção por cepa diferente. Isso explica por que preferência por fidaxomicina se apoia não apenas em cura inicial, mas em menor recorrência em populações estudadas.
+
+Recorrência exige sintomas **novos após resolução clínica**, idealmente com confirmação microbiológica apropriada à situação. NAAT persistentemente positivo após tratamento, sem diarreia, não é recaída. Revisar laxativos, constipação com evacuação líquida, DII, diarreia associada a fármacos, intolerância alimentar e outras causas.
+
+A atualização IDSA/SHEA 2021 favorece **fidaxomicina para episódios recorrentes** quando viável, incluindo regimes padrão ou estendidos/pulsados conforme avaliação. Esquema oral de **vancomicina com desmame/pulsos** é alternativa principalmente na primeira recorrência ou em situações específicas. Em múltiplas recorrências, modalidades baseadas em microbiota podem trazer benefício, mas exigem seleção e governança rigorosa.
+
+### Terapia baseada em microbiota: não é um “probiótico mais forte”
+
+Transplante de microbiota fecal (TMF) e produtos derivados procuram restaurar resistência à colonização por ecossistema microbiano. O procedimento envolve risco de **transmissão de patógenos e organismos resistentes**, exigindo triagem de doadores, processamento controlado e seleção clínica. Nunca orientar transplante “caseiro”, autoadministração ou cápsulas compradas de fonte desconhecida.
+
+A diretriz **AGA 2024** sugere uso selecionado dessas terapias após antibioticoterapia padrão em adultos imunocompetentes com CDI recorrente; em imunocomprometimento leve/moderado, considera transplante convencional selecionado; **em imunocomprometimento grave, sugere contra terapias de microbiota para prevenir recorrência**. Em hospitalizados com CDI grave/fulminante refratária, pode haver indicação excepcional de TMF convencional em centros experientes, sem substituir avaliação de cirurgia/choque.
+
+Produtos aprovados em outras jurisdições **não estão automaticamente disponíveis ou aprovados no Brasil**. Cada indicação precisa considerar Anvisa, autorização sanitária, acesso, centro de referência e segurança microbiológica em 2026. Não transformar uma diretriz norte-americana em protocolo brasileiro sem essa checagem.
+
+### Bezlotoxumabe e a diferença entre tratamento e prevenção
+
+**Bezlotoxumabe** é anticorpo monoclonal contra toxina B, usado como **cointervenção** para reduzir risco de recorrência em cenários selecionados, não como substituto da antibioticoterapia que trata episódio ativo. A IDSA/SHEA 2021 sugere-o em recorrência nos últimos seis meses, com evidência de certeza limitada e restrições de acesso. Em pessoas com **insuficiência cardíaca congestiva**, há alerta regulatório relevante: considerar apenas se benefício esperado supera risco. Seu status de fornecimento/registro local exige verificação antes de integrar uma prescrição no SUS.
+
+### Precaução de contato, lavagem das mãos e ambiente
+
+*C. difficile* forma esporos persistentes e pode contaminar superfícies e equipamentos. Em suspeita significativa e CDI confirmada, implementar **precaução de contato** conforme serviço, com luvas/avental, banheiro e equipamentos dedicados quando possível, limpeza adequada e desinfecção esporicida. A atualização CDC consultada em 2026 orienta manter precauções por **pelo menos 48 horas após resolução da diarreia**, ou por mais tempo, inclusive até alta, de acordo com política e cenário.
+
+**Água e sabão** removem esporos mecanicamente e ganham prioridade em surtos/ambientes hiperendêmicos conforme algumas diretrizes. Isso não significa que antisséptico alcoólico deve ser abolido universalmente em todos os momentos de higiene das mãos, pois adesão global às práticas importa. O protocolo institucional define técnica, momentos e precauções adicionais. Higiene do ambiente e **uso racional de antibióticos** são dois pilares inseparáveis.
+
+Não solicitar **teste de cura** para decidir término do isolamento: resolução clínica e política de prevenção são critérios. A confirmação de CDI em paciente transferido deve ser comunicada ao serviço receptor para continuidade de medidas.
+
+## 11H. Complicações, diagnósticos concorrentes e populações especiais
+
+### Síndrome hemolítico-urêmica: o que monitorar na possível STEC
+
+STEC pode causar **microangiopatia trombótica**, com tríade de anemia hemolítica microangiopática, plaquetopenia e lesão renal aguda. Manifestações podem surgir dias após início de diarreia, inclusive quando evacuações estão melhorando. Por isso, paciente com disenteria sugestiva de STEC e oligúria, palidez, equimoses ou alteração neurológica precisa de avaliação hospitalar e hemograma/plaquetas, creatinina, eletrólitos e investigação de hemólise.
+
+A terapêutica é sobretudo **suporte**, com atenção a fluidos, eletrólitos, pressão arterial, anemia e necessidade de diálise; nefrologia é fundamental quando há lesão renal. A prevenção primária de iatrogenia inclui **evitar antimicrobianos e antiperistálticos** em STEC O157/Shiga toxina 2 ou suspeita relevante até esclarecimento, além de reposição hídrica apropriada. Não equiparar essa síndrome a toda insuficiência renal por desidratação: a hemólise e plaquetopenia definem mecanismo diferente.
+
+### Idoso com “diarreia” por fecaloma
+
+Impactação fecal pode permitir escoamento de líquido ao redor da massa, produzindo **diarreia paradoxal**. Paciente acamado ou com constipação habitual pode relatar episódios de pequeno volume e incontinência, sem melhora verdadeira da retenção. História de evacuações prévias, medicações constipantes, distensão, exame abdominal e retal quando indicado ajudam. Dar loperamida a esse quadro pode **agravar impactação**, assim como pedir CDI em toda evacuação líquida sem avaliar laxantes e constipação.
+
+### Colite isquêmica versus CDI
+
+Na colite isquêmica, redução de perfusão colônica pode causar **dor súbita, muitas vezes seguida de sangramento**, especialmente em idoso com fatores vasculares ou após hipotensão. Em isquemia mesentérica grave, dor pode ser desproporcional ao exame inicial. O mecanismo e a prioridade são distintos da CDI: reanimação, imagem vascular/abdome conforme suspeita e avaliação cirúrgica urgente quando grave. Testar toxina de *C. difficile* não substitui avaliação de abdome agudo.
+
+### Doença inflamatória intestinal e infecção sobreposta
+
+Pessoas com DII podem ter exacerbação verdadeira, infecção entérica ou **CDI sobreposta**, a qual piora desfechos. Quando há aumento abrupto da diarreia durante imunossupressão, não aumentar corticoide automaticamente sem avaliar infecções pertinentes. O manejo frequentemente exige gastroenterologia e infectologia, pesando necessidade de tratar inflamação e infecção simultaneamente.
+
+### Gravidez, transplante e imunossupressão
+
+Em **gestantes**, desidratação e perda eletrolítica podem comprometer estado materno; hidratação e investigação de gravidade são prioritárias. Antimicrobianos, antieméticos e exames exigem avaliação do risco materno-fetal conforme patógeno, trimestre e gravidade. A existência de gravidez não converte toda gastroenterite leve em indicação de antibiótico.
+
+No **transplante e na neutropenia**, agentes oportunistas como *Cryptosporidium*, CMV, *Cystoisospora* e enteropatias por medicamento podem ser relevantes. O quadro pode cursar sem febre pronunciada; aceitar exame negativo isolado para excluir infecção persistente pode ser perigoso. Escolher amostras, pesquisa endoscópica ou biópsia exige individualização.
+
+**Diabetes/DRC/insuficiência cardíaca**: reposição de volume e suspensão temporária de determinados medicamentos em doença aguda podem ser necessárias, mas decisões devem equilibrar risco de choque e congestão/complicação metabólica. Documentar orientação explícita ao paciente, sobretudo sobre diuréticos, anti-inflamatórios e antidiabéticos, sem emitir regra indiscriminada que ponha pessoas em risco.
+
+## 11I. Casos integrados adicionais para aprendizado por decisão clínica
+
+### Caso A — diarreia aquosa e a tentação do antibiótico
+
+Mulher de 28 anos apresenta dois dias de diarreia aquosa e vômitos leves, marido com sintomas semelhantes, sem febre, sangue ou sinais de desidratação. **Hipótese principal:** gastroenterite infecciosa provavelmente viral, sem necessidade imediata de etiologia laboratorial. **Conduta:** SRO, alimentação conforme tolerância, higiene e sinais de retorno. **Por que importa:** evitar exames e antibióticos desnecessários é assistência de qualidade, não “falta de tratamento”.
+
+### Caso B — sangue e risco de síndrome hemolítico-urêmica
+
+Homem de 25 anos, cólicas importantes, diarreia com sangue após consumo de carne mal cozida, febre discreta. **Hipóteses:** STEC, *Shigella*, *Campylobacter* e outras colites. **Conduta:** hidratar, solicitar pesquisa de toxina Shiga/enteropatógenos conforme disponibilidade, avaliar função renal/hemograma se quadro relevante e **evitar antibiótico empírico enquanto STEC é hipótese forte**. **Por que importa:** tratar reflexamente a disenteria pode aumentar risco de SHU em infecções por certas cepas.
+
+### Caso C — PCR de CDI positivo com laxante
+
+Idoso hospitalizado recebe laxante por constipação, evacua fezes líquidas uma vez, e uma NAAT para *C. difficile* é positiva. Sem febre nem dor e sem nova diarreia persistente. **Interpretação:** teste aplicado fora de critério clínico pode detectar colonização. **Conduta:** revisar laxante e sintomas, não iniciar vancomicina exclusivamente pelo PCR. **Por que importa:** sensibilidade do teste não elimina necessidade de probabilidade pré-teste.
+
+### Caso D — colite fulminante e ileus paradoxal
+
+Paciente de 73 anos, após cefalosporina, tinha dez dejeções/dia, agora quase não evacua mas apresenta distensão progressiva, hipotensão e lactato elevado. **Hipótese:** CDI fulminante com íleo/megacólon, sem excluir outras emergências abdominais. **Conduta:** UTI/ressuscitação, cirurgia precoce e esquema enteral de vancomicina para fulminante + metronidazol IV segundo diretriz, com estratégia retal se íleo conforme equipe. **Por que importa:** redução das fezes pode indicar piora, não cura.
+
+### Caso E — primeiro episódio não fulminante e escolha de tratamento
+
+Homem de 62 anos, três a seis fezes não formadas por dia após antibiótico, toxina positiva em laboratório e sem sinais de choque/íleo, com função renal preservada. **Hipótese:** CDI não fulminante. **Conduta:** parar antibiótico desnecessário, precauções, hidratar, **fidaxomicina preferida condicionalmente quando acessível ou vancomicina oral como alternativa válida**, monitorar resposta. **Por que importa:** metronidazol já não é a primeira escolha universal.
+
+### Caso F — recorrência verdadeira versus teste de cura
+
+Mulher de 70 anos concluiu tratamento de CDI e ficou assintomática, mas retorna três semanas depois com seis evacuações aquosas/dia e cólica. **Hipótese:** recorrência de CDI entre diferenciais; reavaliar antibióticos, laxantes e outras causas, confirmar conforme critérios. **Conduta:** tratar conforme recorrência e avaliar estratégias para reduzir novo episódio. **Por que importa:** recorrência é evento **clínico**, não simples positividade persistente de NAAT.
+
+### Caso G — CDI recorrente após transplante e risco de microbiota
+
+Pessoa com recente transplante hematopoético, neutropenia e história de CDI recorrente pede transplante fecal diretamente. **Raciocínio:** apesar da associação entre microbiota e recorrência, AGA 2024 sugere **não utilizar terapias baseadas em microbiota para prevenção em imunocomprometimento grave**; há risco de transmissão de infecções. **Conduta:** discussão multidisciplinar e terapias antimicrobianas adequadas, mantendo medidas de segurança.
+
+### Caso H — viagem, antibiótico e efeito sobre resistência
+
+Viajante com diarreia moderada, sem sangue e bem hidratado, demanda ciprofloxacino “para acabar em um dia”. **Raciocínio:** gravidade funcional, destino, resistência e contraindicações definem se antimicrobiano é justificável; nem toda diarreia do viajante merece antibiótico. **Conduta:** SRO, orientação, analgesia/sintomático se elegível, revisar sinais de invasão e propor terapia específica apenas se benefício supera risco.
+
+## 11J. Questões adicionais de residência — todas as alternativas explicadas
+
+**Q-A.** Adulto saudável apresenta 48 horas de diarreia aquosa, afebril, sem sangue ou sinais de desidratação; outras duas pessoas no domicílio tiveram quadro semelhante. Qual abordagem inicial é mais correta?  
+A) Antibiótico para todos; B) TC de abdome universal; C) SRO e orientação de retorno sem microbiologia rotineira; D) Teste de toxina de CDI para toda família; E) Corticoide oral.  
+**Resposta: C.** Hidratação e seguimento são suficientes em provável gastroenterite autolimitada sem alarme. A amplia resistência/reações, B utiliza imagem sem indicação, D testa sem elegibilidade e E não tem alvo terapêutico.
+
+**Q-B.** Homem de 30 anos apresenta dor abdominal intensa e sangue nas fezes após carne mal cozida, sem febre relevante. Qual afirmação é correta?  
+A) Todo sangue exige ciprofloxacino imediato; B) Pesquisar STEC e evitar antibiótico quando é hipótese plausível; C) Loperamida em dose máxima sempre; D) A ausência de febre descarta bactéria; E) Não avaliar rins/plaquetas em qualquer circunstância.  
+**Resposta: B.** STEC deve ser considerado e antimicrobianos podem aumentar risco de SHU em alguns subtipos; A/C são potencialmente danosos, D ignora fenótipo, E despreza complicação renal/hematológica.
+
+**Q-C.** Paciente recebe laxante, produz uma dejeção líquida e NAAT de *C. difficile* é positiva; não há síndrome diarréica nova nem sinais sistêmicos. Conduta?  
+A) Tratar CDI obrigatoriamente; B) Interpretar à luz da elegibilidade clínica e considerar colonização; C) Colectomia imediata; D) Pedir teste de cura diário; E) Vancomicina IV isolada.  
+**Resposta: B.** NAAT detecta material genético, não doença toxinogênica obrigatória; as demais opções ignoram clínica, aplicam intervenção indevida ou via errada.
+
+**Q-D.** Paciente com CDI comprovada não fulminante, sem contraindicação, tem acesso a fidaxomicina e vancomicina oral. Qual orientação corresponde à IDSA/SHEA 2021?  
+A) Metronidazol é primeira linha obrigatória; B) Preferência condicional por fidaxomicina, mantendo vancomicina oral como alternativa aceitável; C) Vancomicina IV é a única opção; D) Corticoide sempre; E) Tratar apenas com loperamida.  
+**Resposta: B.** Atualização 2021 valoriza redução de recorrência com fidaxomicina, mas reconhece restrição de recursos; A está desatualizada, C erra via, D/E não tratam patógeno.
+
+**Q-E.** Idoso com CDI evolui com choque, íleo e distensão; qual esquema/abordagem melhor se alinha à diretriz clássica para fulminância?  
+A) Metronidazol VO isolado; B) Vancomicina IV isolada; C) Vancomicina enteral em dose de fulminância com metronidazol IV, cirurgia/UTI precoces; D) Suspender tratamento por cessar diarreia; E) Probiótico isolado.  
+**Resposta: C.** Íleo pode limitar passagem de antibiótico, exigindo esquema hospitalar e avaliação de fonte; A/B/E são insuficientes, D confunde íleo com recuperação.
+
+**Q-F.** Mulher com CDI resolvida clinicamente retorna para avaliação, sem novas evacuações líquidas. Qual teste é recomendado para confirmar cura?  
+A) PCR diária até negativo; B) Colonoscopia obrigatória; C) Teste de toxina semanal universal; D) Nenhum, porque teste de cura não é recomendado; E) Cintilografia.  
+**Resposta: D.** Materiais microbianos podem persistir após sucesso; acompanhamento é clínico e depende de recorrência de sintomas. A/B/C/E ampliam exames sem benefício.
+
+**Q-G.** Qual paciente apresenta maior contraindicação relativa às terapias de microbiota para prevenir recorrência segundo AGA 2024?  
+A) Adulto imunocompetente com recorrência; B) Adulto com imunossupressão leve; C) Paciente neutropênico após transplante; D) Adulto sem CDI; E) Criança com diarreia viral leve.  
+**Resposta: C.** AGA desaconselha terapias de microbiota no imunocomprometimento grave para prevenção de recorrência; A/B podem ter indicação selecionada, D/E sequer são candidatos pelo quadro.
+
+**Q-H.** Adulto com insuficiência cardíaca apresenta diarreia intensa, hipotensão e hipovolemia; qual estratégia inicial de líquidos é mais correta?  
+A) Não hidratar porque tem insuficiência cardíaca; B) Repor cegamente grandes volumes sem reavaliação; C) Ressuscitação IV isotônica proporcional e reavaliações frequentes de perfusão e congestão; D) Apenas refrigerante; E) Antibiótico substitui líquidos.  
+**Resposta: C.** O coração doente não elimina necessidade de perfusão, mas demanda monitorização para evitar sobrecarga; A/B/D/E negligenciam fisiologia e risco.
+
+### Matriz final: conduta por gravidade e provável síndrome
+
+| Risco atual | Exemplo clínico | Prioridade imediata | Próxima decisão |
+| --- | --- | --- | --- |
+| Baixo | Aquosa curta, sem sangue, hidratação boa | SRO, dieta conforme tolerância, orientação | Observar resolução |
+| Intermediário | Febre ou sangue, dores importantes, mas perfusão mantida | Hidratar, laboratório dirigido | Pesquisar STEC/enteropatógenos e definir terapia |
+| Alto | Hipotensão, IRA, confusão, distensão/peritonismo | Ressuscitar e internar | Excluir sepse/colite grave/isquemia e obter controle de foco |
+| CDI não fulminante confirmada | Diarreia elegível, toxina/algoritmo coerente | Precaução, reidratar, terapia oral apropriada | Monitorar resolução sem teste de cura |
+| CDI fulminante | Choque/íleo/megacólon | UTI, vancomicina enteral + metronidazol IV conforme diretriz, cirurgia | Avaliar resposta/complicações precocemente |
+| Recorrência de CDI | Nova diarreia após melhora e critérios compatíveis | Reavaliar etiologia e fatores modificáveis | Regime anti-recidiva e terapia microbiota selecionada conforme risco |
+
+### Imagens candidatas para curadoria do Admin — não anexadas
+
+1. Esquema autoral da absorção sódio-glicose pelo SGLT1 — mostrar por que SRO funciona, sem reproduzir figura externa.
+2. Fluxograma esquemático de diarreia com sangue e risco STEC — prevenção de antibiótico inadequado.
+3. Micrografia de patógeno entérico em fonte acadêmica com licença comercial clara — ilustrar microbiologia sem prometer diagnóstico pela foto.
+4. Fotografia de lesão colônica pseudomembranosa com licença e autorização verificadas — salientar que não é obrigatória.
+5. Diagrama original GDH + toxina + NAAT — distinguir colonização e infecção.
+6. TC de colite grave/megacólon de banco institucional licenciado — mostrar distensão e complicações.
+7. Histologia de lesão endotelial na SHU em fonte acadêmica licenciada — relação entre STEC e lesão sistêmica.
+8. Quadro visual do mecanismo de ação de fidaxomicina e vancomicina luminal — original, sem uso de imagem de fabricante.
+9. Infográfico autoral de prevenção de transmissão por esporos — precaução de contato, banheiro/equipamento e desinfecção.
+10. Diagrama terapêutico de episódio inicial/recorrência/fulminância — uso de algoritmos de diretriz transformados em arte original após validação.
+
+### Referências comparadas, com diferenças de geração editorial explicitadas
+
+1. IDSA. **Clinical Practice Guidelines for the Diagnosis and Management of Infectious Diarrhea** (2017). https://www.idsociety.org/practice-guideline/infectious-diarrhea
+2. IDSA/SHEA. **Clinical Practice Guideline Update for Management of *Clostridioides difficile* Infection in Adults** (2021). https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/
+3. IDSA/SHEA. **Clinical Practice Guidelines for *Clostridium difficile* Infection in Adults and Children** (2017): recomendações de fulminância, isolamento e esquemas detalhados. https://www.idsociety.org/practice-guideline/clostridium-difficile/
+4. AGA. **Clinical Practice Guideline on Fecal Microbiota-Based Therapies for Select Gastrointestinal Diseases** (2024). https://pubmed.ncbi.nlm.nih.gov/38395525/
+5. CDC. **Clinical Guidance for *C. diff* Infection Prevention in Acute Care Facilities** (consulta em 15/10/2026). https://www.cdc.gov/c-diff/hcp/clinical-guidance/
+6. Comparador do Drive efetivamente lido: *01 — Gastro — Diarreia Aguda + Clostridium*. Estrutura clínica histórica com conceitos úteis, mas esquema “não grave: metronidazol primeiro” está **desatualizado** frente à IDSA/SHEA 2021; não foi reproduzido. Texto/figuras de terceiros não foram reutilizados.
+
+**Situação editorial:** texto original ampliado; não contém mídia externa publicada. Diretrizes de 2017, 2021 e 2024 foram citadas com seus anos reais, sem apresentá-las como lançamento de 2026. Checagem de doses/apresentações, acesso brasileiro aos medicamentos, revisão por infectologista e gastroenterologista, auditoria dos 60.000 caracteres *didáticos úteis* e testes HTML/PWA seguem pendentes. **RASCUNHO_PARCIAL_NAO_PUBLICAR.**
+
 ## 12. Casos clínicos comentados
 ### Caso 1 — Adulto com diarreia aquosa após reunião familiar
 Homem de 29 anos, início há 24 h com cinco dejeções líquidas e dois episódios de vômito. Mais dois familiares adoeceram; sem sangue, febre alta, hipotensão ou dor localizada. Urina preservada e tolera pequenos goles.
