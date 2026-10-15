@@ -529,3 +529,368 @@ Para cada imagem, verificar fonte e direitos comerciais, nitidez, pertinência e
 - [ ] Benchmark externo equivalente com comparação completa e auditoria de coesão de todas as partes.
 - [ ] Revisão médica especializada, checagem dos critérios de cada diretriz em populações especiais, integração HTML e testes desktop/PWA.
 - [ ] Manter **NÃO PUBLICAR — não fazer merge, deploy ou alterar a main**.
+
+## 24. Casos clínicos originais: do laboratório à decisão
+
+### Caso 1 — Menorragia desde a adolescência e coagulograma normal
+
+**Apresentação:** mulher de 27 anos relata menstruações abundantes desde a menarca, episódios frequentes de epistaxe e hemorragia importante após extração de terceiro molar. A mãe também tinha “sangramento forte”. Sem uso de anticoagulante. Hemograma com anemia ferropriva, 280 mil plaquetas/mm³, TP/INR normal, TTPa normal.
+
+**Hipótese principal:** doença de von Willebrand ou disfunção plaquetária hereditária, associada a deficiência de ferro por perdas crônicas.
+
+**Raciocínio:** padrão mucocutâneo com história familiar, início precoce e sangramento procedimental aponta defeito de hemostasia primária. TP/TTPa normais não afastam DVW, porque o FVIII pode permanecer normal. A menorragia também exige investigação ginecológica de etiologias estruturais, mas isso não encerra a investigação hematológica. Avaliação do impacto do sangramento ajuda a priorizar tratamento e prevenção da deficiência de ferro.
+
+**Exames:** hemograma e ferritina; VWF:Ag, atividade plaquetária dependente de VWF e FVIII, com repetição em estado basal se valores limítrofes/discordantes; testes específicos plaquetários se investigação de DVW não explicar. Considerar ferramenta padronizada de história hemorrágica e encaminhamento a serviço especializado.
+
+**Interpretação:** VWF pode subir por estresse, gravidez ou inflamação; uma dosagem normal em cenário de reação de fase aguda não encerra definitivamente o caso. DVW tipo 1 sintomática pode ser confirmada por atividade ou antígeno abaixo de 0,50 UI/mL nas condições clínicas apropriadas, com revisão por hematologista.
+
+**Conduta:** controle do sangramento menstrual em conjunto com ginecologia, reposição de ferro quando indicada, estratégia hemostática individualizada para futuros procedimentos. Desmopressina pode ser útil em subtipo e resposta apropriados; não iniciar sem distinguir DVW 2B/3 e riscos de hiponatremia. Antifibrinolítico em cenários mucosos selecionados e concentrado de VWF se gravidade exigir.
+
+**Por que importa:** uma paciente pode perder sangue por anos e receber apenas “tratamento para anemia” se a equipe interpretar TP/TTPa normais como exclusão de coagulopatia.
+
+### Caso 2 — Hemartrose repetida em menino sem história familiar
+
+**Apresentação:** menino de 4 anos com joelho tumefeito e doloroso após brincadeira habitual, e episódios prévios de sangramento muscular após pequenos traumas. A família nega doença hemorrágica. Plaquetas 250 mil/mm³, TP normal, TTPa prolongado. FVIII atividade <1%, FIX normal.
+
+**Hipótese:** hemofilia A grave.
+
+**Raciocínio:** sangramento profundo/articular típico de deficiência de fator; deficiência de FVIII com FIX preservado confirma padrão. Ausência de familiar afetado não exclui hemofilia por mutação nova, transmissão assintomática ou reconhecimento insuficiente de portadoras.
+
+**Exames:** ensaio de FVIII/IX, investigação de VWF se quadro/resultado pedir, avaliação de inibidor em casos pertinentes, imagem articular orientada quando útil, além de avaliação ortopédica e fisioterápica. TTPa mede parte do processo, não quantifica gravidade clínica nem substitui atividade de fator.
+
+**Conduta:** sangramento articular exige tratamento hemostático conforme plano do centro de hemofilia, analgesia segura e proteção articular, evitando procedimentos invasivos desnecessários e anti-inflamatórios que agravem sangramento. Planejar **profilaxia** para prevenção de artropatia e educação da família sobre emergência e sinais intracranianos.
+
+**Por que importa:** a abordagem deve impedir novo dano articular e não apenas aliviar o episódio atual; a família precisa de plano escrito e acesso oportuno ao fator.
+
+### Caso 3 — Paciente com emicizumabe, trauma craniano e TTPa aparentemente normal
+
+**Apresentação:** adulto jovem com hemofilia A grave e inibidor do FVIII usa emicizumabe profilático. Sofre queda, bate a cabeça e apresenta cefaleia intensa progressiva. Laboratório inicial: TTPa normal ou encurtado; tomografia ainda não realizada.
+
+**Hipótese:** hemorragia intracraniana potencial em paciente com distúrbio hemostático de alto risco, apesar de teste rotineiro pouco informativo.
+
+**Raciocínio:** emicizumabe aproxima FIXa e FX e altera testes baseados em TTPa. **TTPa normal não demonstra normalidade hemostática**, nem exclui hemorragia intracraniana. O tratamento de sangramento com inibidor em uso de emicizumabe exige precaução com aPCC pelo risco de trombose e microangiopatia.
+
+**Exames:** imagem craniana urgente, avaliação neurológica seriada, hemograma, investigação hemostática por métodos adequados ao emicizumabe em contato com centro de hemofilia. Testar inibidor/FVIII por ensaio apropriado quando relevante; não utilizar indiscriminadamente ensaio de coagulação baseado em TTPa como monitor.
+
+**Conduta:** ABCDE, contato imediato com hematologia e neurocirurgia conforme quadro, terapia hemostática segundo plano individual **sem esperar a imagem quando hemorragia grave é fortemente suspeita**. Discutir rFVIIa ou outra estratégia específica em paciente com inibidor; não prescrever complexo protrombínico ativado automaticamente.
+
+**Por que importa:** a evolução laboratorial aparente pode enganar; emicizumabe exige conhecimento das interferências analíticas e terapêuticas.
+
+### Caso 4 — Plaquetopenia, esquizócitos e confusão mental: PTT até prova em contrário
+
+**Apresentação:** mulher de 38 anos com fadiga intensa, cefaleia e confusão iniciadas há dois dias. Plaquetas 14 mil/mm³, Hb 8,3 g/dL, LDH muito elevada, bilirrubina indireta aumentada, haptoglobina reduzida e numerosos esquizócitos. TP 12 segundos e TTPa dentro do normal. Creatinina discretamente elevada.
+
+**Hipótese:** púrpura trombocitopênica trombótica imune (PTT), emergência hematológica.
+
+**Raciocínio:** trombocitopenia + hemólise mecânica com testes de coagulação relativamente preservados favorece microangiopatia. Não precisa ter febre, insuficiência renal intensa ou pêntade completa. **Não é PTI isolada**, porque há anemia hemolítica microangiopática e dano orgânico. CIVD importante frequentemente altera TP/TTPa/fibrinogênio; SHU e outras microangiopatias ficam no diferencial.
+
+**Exames:** hemograma/lâmina, bilirrubina, LDH, haptoglobina, reticulócitos, função renal, troponina/ECG, coagulograma e fibrinogênio; colher amostra para ADAMTS13 e inibidor antes da plasmaférese **sem atrasar tratamento**.
+
+**Conduta:** internação de urgência, centro com troca plasmática terapêutica, corticosteroides e discussão de caplacizumabe/rituximabe conforme protocolo; suporte e monitorização neurológica, cardíaca e renal. Não realizar transfusão profilática de plaquetas só para aumentar a contagem; reservá-la para situações excepcionais de hemorragia crítica/necessidade imediata.
+
+**Por que importa:** um erro de classificação entre PTI e PTT muda completamente o tratamento e pode ser fatal.
+
+### Caso 5 — Plaquetas caem após heparina, apesar de trombose nova
+
+**Apresentação:** homem de 66 anos, internado por cirurgia vascular, em uso de heparina não fracionada há oito dias. Plaquetas caem de 270 mil para 105 mil/mm³, e novo Doppler mostra TVP proximal. Sem sepse e sem hemorragia. A equipe pensa em substituir HNF por enoxaparina porque “a plaqueta não está tão baixa”.
+
+**Hipótese:** trombocitopenia induzida por heparina (HIT) imunológica com trombose.
+
+**Raciocínio:** queda superior a 50%, temporalidade de 5–10 dias e trombose nova elevam escore 4Ts. HIT associa-se mais a eventos trombóticos que a hemorragia. Enoxaparina também é heparina e pode perpetuar ativação imunológica. TP/TTPa ou contagem plaquetária absoluta isolada não determinam diagnóstico.
+
+**Exames:** calcular 4Ts, anticorpos anti-PF4/heparina com interpretação de densidade óptica conforme método, ensaio funcional quando disponível; investigar outras tromboses e monitorar plaquetas.
+
+**Conduta:** suspender todas as fontes de heparina (incluindo lavagens), iniciar anticoagulante **não heparínico** individualizado conforme função renal/hepática e risco hemorrágico, discutir hematologia, escolher anticoagulante de longo prazo conforme recuperação plaquetária e situação clínica. Não iniciar varfarina isoladamente na fase aguda com plaquetas ainda baixas sem plano especializado.
+
+**Por que importa:** na HIT, a plaquetopenia é marcador de uma doença **pró-trombótica**, e a “troca para HBPM” não resolve.
+
+### Caso 6 — Sepse e sangramento em múltiplos sítios
+
+**Apresentação:** paciente de 59 anos em choque séptico por infecção abdominal, com oozing nos acessos, equimoses novas e sangue em dreno. Plaquetas caíram de 180 para 45 mil/mm³, TP/INR e TTPa prolongaram, fibrinogênio diminuiu de 390 para 110 mg/dL e D-dímero está elevado.
+
+**Hipótese:** coagulação intravascular disseminada (CIVD) relacionada à sepse.
+
+**Raciocínio:** a combinação de gatilho sistêmico, consumo progressivo de plaquetas/fatores e sangramento favorece CIVD, distinta da PTT clássica. A diminuição temporal do fibrinogênio pode ser mais reveladora que um número isolado, porque ele pode estar elevado inicialmente como reagente de fase aguda.
+
+**Exames:** coagulograma seriado, fibrinogênio, hemograma/plaquetas, D-dímero, lactato, gasometria, função renal/hepática e avaliação do foco; escore ISTH quando indicado. Verificar trombose/hipoperfusão microvascular e sangramento ativo.
+
+**Conduta:** tratar foco infeccioso e choque, antibioticoterapia/controle de fonte, suporte hemodinâmico, reposição dirigida de fibrinogênio/plasma/plaquetas conforme sangramento e intervenção, evitando transfusão meramente cosmética para normalizar valores. Acionar hemoterapia e unidade intensiva.
+
+**Por que importa:** CIVD não é apenas “laboratório ruim”; é expressão de doença grave cuja causa precisa de tratamento imediato.
+
+### Caso 7 — Jovem com TVP provocada e solicitação de painel completo
+
+**Apresentação:** mulher, 31 anos, sofreu TVP femoropoplítea após cirurgia ortopédica complexa e imobilização prolongada. Sem TEV prévio, sem familiares com eventos e sem intenção atual de usar estrogênio. Está na fase aguda e recebendo anticoagulante direto. Profissional solicita F5 Leiden, F2 G20210A, proteínas C e S, antitrombina e anticoagulante lúpico “para definir três ou seis meses”.
+
+**Hipótese diagnóstica central:** TEV provocado por forte fator transitório cirúrgico; painel de trombofilia provavelmente não acrescenta decisão nesta circunstância.
+
+**Raciocínio:** cirurgia maior/imobilização explicam alto risco transitório; duração depende de localização, fator, evolução e risco de sangramento, não de rastreio universal. DOAC pode interferir em ensaios funcionais; fase aguda pode modificar proteínas anticoagulantes. ASH 2023 não apoia testagem indiscriminada após TEV claramente provocado por cirurgia.
+
+**Exames:** confirmar diagnóstico e extensão por Doppler, avaliação básica de segurança da anticoagulação e seguimento; testes hereditários somente se informação alterar decisão concreta, após consulta especializada.
+
+**Conduta:** anticoagulação conforme diretriz aplicável ao TEV provocado, educação sobre sinais de EP/sangramento, reabilitação/mobilização e avaliação de recorrência antes da alta do acompanhamento. Reconsiderar investigação se surgirem eventos atípicos ou contexto familiar relevante.
+
+**Por que importa:** pedir exames pode parecer “mais completo”, mas frequentemente acrescenta resultado ininterpretável e não melhora cuidado.
+
+### Caso 8 — AVC e SAF triplo-positiva: risco com anticoagulante oral direto
+
+**Apresentação:** mulher de 43 anos com AVC isquêmico sem mecanismo cardioembólico típico e TVP prévia; exames fora de fase infecciosa mostram anticoagulante lúpico, anticardiolipina IgG e anti-β2-glicoproteína I IgG positivos, persistentes 13 semanas depois. Foi iniciada rivaroxabana automaticamente porque teve TEV anteriormente.
+
+**Hipótese:** síndrome antifosfolípide trombótica de alto risco, com manifestação arterial e tripla positividade.
+
+**Raciocínio:** combinação de evento clínico e persistência de anticorpos de alto risco sustenta SAF, após avaliação de outros mecanismos de AVC. Evidência e recomendações EULAR não favorecem rivaroxabana nesse fenótipo devido a recorrência de trombose arterial. Um DOAC não é equivalente a varfarina em todas as indicações.
+
+**Exames:** confirmar datas/metodologia dos anticorpos, avaliar efeitos de anticoagulantes sobre anticoagulante lúpico, causas cardiovasculares, função renal/hepática, risco hemorrágico e interações.
+
+**Conduta:** discutir transição a antagonista da vitamina K/varfarina com alvo individualizado e monitorização de INR sob especialista; abordar tabaco, pressão, lipídios, contracepção e educação sobre anticoagulação. Plano gestacional deve ser discutido antecipadamente.
+
+**Por que importa:** reconhecer SAF triplo-positiva altera **a escolha do anticoagulante**, não somente o rótulo diagnóstico.
+
+### Caso 9 — Reação durante transfusão: hemólise aguda ou sepse?
+
+**Apresentação:** homem, 62 anos, recebe hemácias por anemia sintomática. Poucos minutos depois apresenta febre, tremores, dor lombar intensa, hipotensão e urina avermelhada. Na conferência, percebe-se possível erro de identificação na etiqueta da bolsa.
+
+**Hipóteses:** reação hemolítica transfusional aguda por incompatibilidade, com diferencial de contaminação bacteriana e outras reações graves.
+
+**Raciocínio:** início abrupto, dor lombar, hipotensão e hemoglobinúria sugerem hemólise intravascular. O risco é choque, CIVD e lesão renal. O mecanismo pode ser erro ABO, mas não deve ser presumido sem investigar compatibilidade. Continuar a bolsa agravaria exposição.
+
+**Exames:** rechecagem de identidade, grupo ABO/Rh e prova cruzada, TAD, bilirrubina, LDH, haptoglobina, hemoglobina, urina, função renal, coagulograma, culturas se suspeita de contaminação e avaliação pela hemoterapia.
+
+**Conduta:** **interromper imediatamente a transfusão**, manter acesso venoso com solução apropriada, ABCDE, chamar hemoterapia, suporte de choque, manter bolsa/equipo para investigação, notificar hemovigilância e documentar nova restrição transfusional.
+
+**Por que importa:** conferir a bolsa e a pessoa é uma intervenção de segurança tão importante quanto conhecer fisiopatologia.
+
+### Caso 10 — Dispneia após múltiplas bolsas: TACO versus TRALI
+
+**Apresentação:** mulher de 84 anos com DRC G4 e insuficiência cardíaca recebe duas unidades de hemácias em intervalo curto. Evolui com dispneia, crepitações, hipertensão, edema periférico e radiografia com edema pulmonar. Balanço hídrico positivo.
+
+**Hipótese:** sobrecarga circulatória associada à transfusão (TACO), devendo diferenciar de TRALI e outras causas de insuficiência respiratória.
+
+**Raciocínio:** perfil de risco cardíaco/renal, velocidade/volume e sinais hidrostáticos favorecem TACO. TRALI costuma representar lesão inflamatória, sem que a sobrecarga explique principalmente o quadro. Ambas são graves e exigem interrupção imediata, oxigênio e avaliação; resposta a diurético reforça TACO sem ser teste definitivo.
+
+**Exames:** avaliação clínica e hemodinâmica, oximetria/gasometria se indicado, imagem, ECG, balanço hídrico e marcadores cardíacos conforme cenário; investigação hemoterápica e notificação baseada na Nota Técnica brasileira 225/2026.
+
+**Conduta:** parar transfusão, suporte respiratório, tratar excesso de volume de modo seguro quando presente, avaliar necessidade de unidade intensiva. Antes de transfusões futuras, reconsiderar indicação, velocidade, volume fracionado e monitorização.
+
+**Por que importa:** a transfusão pode desencadear descompensação relevante mesmo quando o hemocomponente foi corretamente compatibilizado.
+
+### Caso 11 — PTT, dengue e a armadilha do “valor de plaquetas”
+
+**Apresentação:** paciente com dengue laboratorialmente confirmada tem plaquetas de 18 mil/mm³ no quinto dia, sem sangramento maior, hemodinamicamente estável e com acompanhamento rigoroso. A equipe propõe plaquetas “porque está abaixo de 20 mil”.
+
+**Hipótese:** trombocitopenia consumptiva associada à dengue, sem indicação de transfusão profilática automática pela contagem isolada.
+
+**Raciocínio:** o quadro de dengue exige avaliar sinais de alarme, hematócrito, perfusão, hidratação e sangramento. A diretriz AABB/ICTMG 2025 recomenda **não transfundir plaquetas profilaticamente** em dengue sem hemorragia maior devido à ausência de benefício demonstrado e aos riscos do componente. Não se deve confundir esse cenário com aplasia medular ou punção lombar.
+
+**Exames:** hemograma/hematócrito seriados e avaliação laboratorial conforme protocolo de dengue e evolução clínica; pesquisa de sangramento conforme sinais e sintomas.
+
+**Conduta:** manejo de dengue conforme protocolos brasileiros, monitorização de gravidade e ressuscitação quando necessária; transfusão apenas por indicação clínica específica e orientação especializada, nunca por “gatilho universal”.
+
+**Por que importa:** a **mesma contagem de plaquetas** pode levar a condutas diferentes conforme mecanismo e risco de sangramento.
+
+### Caso 12 — Cirurgia eletiva e anticoagulante lúpico sem sangramento
+
+**Apresentação:** mulher de 52 anos realiza exames pré-operatórios e apresenta TTPa de 60 s, TP normal, plaquetas 230 mil/mm³. Sem histórico de sangramento em partos, cirurgias ou extrações, mas teve episódio de TVP há anos. Teste de mistura não corrige satisfatoriamente; anticoagulante lúpico é positivo na investigação.
+
+**Hipótese:** prolongamento de TTPa relacionado a inibidor fosfolípide-dependente, que pode sinalizar risco trombótico, sem equivaler a deficiência de fator hemorrágico.
+
+**Raciocínio:** a designação “anticoagulante” refere-se à interferência in vitro, mas pessoas com SAF podem desenvolver tromboses. A equipe deve diferenciar de inibidor adquirido de FVIII, que costuma provocar sangramento intenso; história clínica e atividade de fator ajudam. Um anticoagulante lúpico positivo isolado sem persistência e evento não confirma SAF.
+
+**Exames:** confirmar interferência farmacológica/anticoagulante, repetir avaliação de anticorpos no intervalo recomendado, investigar outros anticorpos antifosfolípides e histórico de TEV; dosar FVIII se história/laboratório suspeitarem inibidor hemorrágico.
+
+**Conduta:** planejamento perioperatório pelo risco de trombose e sangramento reais, e não pela “normalização do TTPa” com plasma. Discutir profilaxia tromboembólica conforme cirurgia e história, com hematologia e anestesia se necessário.
+
+**Por que importa:** exames de coagulação descrevem fenômenos laboratoriais, que podem estar associados a riscos opostos.
+
+---
+
+## 25. Questões autorais comentadas — estilo residência
+
+### Questão 1 — Hemostasia e fator von Willebrand
+O sangramento mucoso recorrente, com epistaxe e menorragia, é mais compatível com alteração de qual componente inicial da hemostasia?
+
+A. Fator XII exclusivamente, que sempre provoca sangramento grave.
+B. Interação entre VWF e receptor plaquetário GPIb-IX-V.
+C. Complexo fibrina–fator XIII sem participação de plaquetas.
+D. Protrombina convertida diretamente por fator VII isolado.
+E. Apenas antitrombina, independentemente de plaquetas.
+
+**Gabarito B.** **A:** deficiência de XII pode prolongar TTPa sem sangramento. **B:** correta, eixo de adesão plaquetária. **C:** fibrina/fator XIII participam da estabilização, não da adesão inicial. **D:** coagulação exige complexo e superfície; a frase é mecanisticamente errada. **E:** antitrombina é anticoagulante natural, não principal receptor de adesão. **Mini-revisão:** GPIb/VWF promove adesão, αIIbβ3–fibrinogênio promove agregação.
+
+### Questão 2 — Interpretação de TP/TTPa
+Paciente sem sangramento tem TTPa prolongado isolado, TP e plaquetas normais e teste de mistura com correção; fator XII baixo. Qual afirmação é mais apropriada?
+
+A. Fator XII baixo obriga transfundir plasma antes de qualquer procedimento.
+B. Trata-se de hemofilia A grave necessariamente.
+C. Deficiência de XII pode prolongar TTPa sem fenótipo hemorrágico relevante.
+D. TP normal exclui anticoagulação farmacológica.
+E. O D-dímero será necessariamente positivo.
+
+**Gabarito C.** **A:** correção de laboratório isolado com PFC não é indicação automática. **B:** hemofilia A depende FVIII, fenótipo e investigação. **C:** correta. **D:** diversos anticoagulantes podem interferir em outros testes, não só TP. **E:** D-dímero não é marcador de XII. **Mini-revisão:** fator XII, pré-calicreína e cininogênio podem alterar TTPa sem sangramento clínico.
+
+### Questão 3 — DVW e desmopressina
+Paciente com DVW tipo 2B confirmada necessita de estratégia para sangramento procedural. Qual afirmação é correta?
+
+A. DDAVP é sempre primeira escolha e não necessita monitorização.
+B. DDAVP é geralmente contraindicada por risco de agravar trombocitopenia; avaliar VWF concentrado e medidas adjuvantes.
+C. DVW 2B é ausência absoluta de VWF.
+D. TP sempre fica muito prolongado.
+E. VWF não participa do transporte de FVIII.
+
+**Gabarito B.** **A:** falso; risco plaquetário em tipo 2B. **B:** correta conforme ASH/ISTH/NHF/WFH 2021. **C:** ausência grave é DVW tipo 3. **D:** TP tende a ser normal. **E:** VWF estabiliza FVIII. **Mini-revisão:** subtipo determina escolha e segurança da terapia.
+
+### Questão 4 — Hemofilia com inibidor e emicizumabe
+Paciente em profilaxia com emicizumabe e inibidor do FVIII sofre trauma craniano. Qual conduta conceitual é adequada?
+
+A. TTPa normal afasta hemorragia.
+B. Adiar avaliação até surgir convulsão.
+C. Avaliação emergencial e terapia hemostática específica; cuidado com aPCC e interferência do emicizumabe em exames.
+D. Usar dose maciça de aPCC em qualquer caso sem hematologia.
+E. Nunca realizar imagem cerebral.
+
+**Gabarito C.** **A:** TTPa pode ser normalizado pelo medicamento sem resolver todos os riscos. **B:** atraso pode ser fatal. **C:** correta. **D:** associação pode gerar trombose e microangiopatia. **E:** imagem urgente é indicada conforme apresentação. **Mini-revisão:** conhecer medicamento modifica interpretação analítica e escolha do tratamento.
+
+### Questão 5 — PTT imune
+Mulher com plaquetas 13 mil/mm³, anemia hemolítica microangiopática, confusão mental e TP/TTPa normais. Melhor conduta?
+
+A. Aguardar resultado de ADAMTS13 por uma semana.
+B. Presumir PTI e apenas observar em casa.
+C. Acionar centro de plasmaférese e tratar PTT presumida sem atraso, coletando ADAMTS13 antes se factível.
+D. Transfundir plaquetas profilaticamente e dar alta.
+E. Corrigir INR com PFC mesmo se normal.
+
+**Gabarito C.** **A:** atrasaria tratamento tempo-dependente. **B:** esquizócitos e hemólise indicam microangiopatia, não PTI isolada. **C:** correta conforme ISTH. **D:** plaquetas profiláticas podem agravar microtrombos. **E:** não há INR alterado a corrigir. **Mini-revisão:** PTT é diagnóstico clínico inicial e emergência.
+
+### Questão 6 — HIT
+Após 8 dias de heparina, plaquetas caem 60% e surge TVP. Melhor interpretação?
+
+A. Queda de plaquetas reduz automaticamente risco de trombose.
+B. Trocar para enoxaparina resolve HIT.
+C. Suspender toda heparina e avaliar anticoagulante não heparínico, após probabilidade clínica adequada.
+D. Transfundir plaquetas como única medida.
+E. Esperar plaquetas menores que 20 mil para investigar.
+
+**Gabarito C.** **A:** HIT é pró-trombótica. **B:** enoxaparina compartilha mecanismo antigênico. **C:** correta. **D:** não trata anticorpo nem trombose. **E:** queda relativa importa, mesmo com valores >100 mil. **Mini-revisão:** escore 4Ts + testes PF4/funcional conforme probabilidade.
+
+### Questão 7 — CIVD versus PTT
+Paciente séptico tem TP/TTPa prolongados, D-dímero alto, plaquetas em queda e fibrinogênio diminuindo. Qual hipótese é mais provável?
+
+A. Deficiência isolada de XII.
+B. CIVD secundária à sepse.
+C. Tremor essencial.
+D. Hemofilia B congênita de início súbito.
+E. DVW tipo 1 assintomática.
+
+**Gabarito B.** **A:** não explica consumo múltiplo. **B:** padrão de coagulação sistêmica e gatilho associado. **C:** não pertence ao sistema hemostático. **D:** não apresenta consumo generalizado pelo padrão clássico. **E:** não justifica coagulopatia disseminada. **Mini-revisão:** fibrinogênio pode estar normal no começo da sepse; observar tendência.
+
+### Questão 8 — Quando pedir teste de trombofilia
+Mulher, 32 anos, TEV provocado por cirurgia maior recente, sem família e sem evento prévio. Qual decisão segue melhor ASH 2023?
+
+A. Painel obrigatório para todo TEV, durante DOAC.
+B. Investigação seletiva somente se resultado puder mudar manejo; não fazer painel rotineiro neste caso.
+C. Testar a população geral antes de toda pílula combinada.
+D. Medir proteína S durante gestação e concluir deficiência hereditária por um resultado baixo.
+E. Pedir fatores de coagulação sem história, pois são livres de interferência.
+
+**Gabarito B.** **A:** testes indiscriminados e durante interferência produzem erros. **B:** correta. **C:** ASH recomenda contra rastreio populacional. **D:** proteína S pode reduzir fisiologicamente. **E:** ensaios de fatores sofrem interferência e não são universais. **Mini-revisão:** a pergunta antes de testar é “o que faço diferente com o resultado?”.
+
+### Questão 9 — SAF trombótica
+Mulher com trombose arterial prévia e SAF triplo-positiva confirmada. A alternativa mais adequada é:
+
+A. Preferir rivaroxabana de rotina, igual em todos os fenotipos.
+B. Considerar antagonista da vitamina K com monitorização, evitando rivaroxabana nesse grupo de alto risco.
+C. Abandonar anticoagulação porque aPL é marcador apenas laboratorial.
+D. Definir SAF por um único teste positivo em qualquer infecção.
+E. Usar apenas vitamina K como anticoagulante.
+
+**Gabarito B.** **A:** evidência de maior recidiva em perfis de alto risco. **B:** correta segundo EULAR. **C:** evento trombótico + anticorpos persistentes demandam estratégia. **D:** persistência ≥12 semanas é fundamental. **E:** vitamina K antagoniza efeito de varfarina, não é anticoagulante. **Mini-revisão:** tripla positividade é sinal de alto risco.
+
+### Questão 10 — Transfusão de hemácias
+Adulto internado, estável, Hb 7,8 g/dL, sem sintomas relevantes nem sangramento ativo, sem contexto cardiovascular especial. Qual decisão é mais alinhada a AABB 2023?
+
+A. Transfundir automaticamente duas bolsas até Hb 10.
+B. Considerar estratégia restritiva, investigar e tratar causa, sem transfusão por número isolado.
+C. Dar plasma porque contém hemoglobina.
+D. Administrar plaquetas para aumentar Hb.
+E. Usar o mesmo gatilho em choque hemorrágico não controlado.
+
+**Gabarito B.** **A:** estratégia liberal indiscriminada traz risco. **B:** correta; Hb <7 costuma orientar consideração no adulto estável. **C/D:** componentes inadequados para reposição eritrocitária. **E:** choque hemorrágico é exceção e depende perfusão/fonte. **Mini-revisão:** “gatilho” é decisão clínica contextualizada, não ordem sem história.
+
+### Questão 11 — Plaquetas e punção lombar
+Adulto trombocitopênico vai realizar punção lombar diagnóstica simples. Qual atualização das diretrizes AABB/ICTMG 2025 merece ser conhecida?
+
+A. Toda punção lombar requer ≥100 mil plaquetas.
+B. A diretriz recomenda limiar transfusional de <20 ×10⁹/L no cenário estudado, com avaliação clínica do risco individual.
+C. Nunca fazer punção lombar se plaquetas <150 mil.
+D. Transfusão de hemácias corrigirá contagem plaquetária.
+E. Não há diferença de risco entre punção lombar e cirurgia intracraniana.
+
+**Gabarito B.** **A:** não é limiar universal atual. **B:** correta; atualizar limiares antigos e observar contexto. **C:** restrição excessiva. **D:** não aumenta plaquetas. **E:** procedimentos e consequências do sangramento diferem. **Mini-revisão:** não transpor limiares entre procedimento, diagnóstico e contexto hemorrágico.
+
+### Questão 12 — Dengue
+Paciente com dengue, plaquetas 17 mil/mm³, sem hemorragia maior, clinicamente estável. Qual alternativa representa a evidência AABB/ICTMG 2025?
+
+A. Transfundir plaquetas profilaticamente em toda dengue se <50 mil.
+B. Evitar transfusão profilática rotineira apenas pela contagem; seguir vigilância e protocolo de dengue.
+C. Dar fator VIII para elevar contagem de plaquetas.
+D. Corrigir INR independentemente do valor.
+E. Proibir qualquer reavaliação clínica após a alta.
+
+**Gabarito B.** **A:** não há benefício demonstrado para profilaxia universal. **B:** correta. **C:** fator VIII não corrige produção/consumo plaquetário por dengue. **D:** coagulograma deve ser interpretado em contexto. **E:** dengue pode piorar nas fases críticas, exige orientação e seguimento. **Mini-revisão:** transfundir significa oferecer benefício clínico esperado, não “corrigir contagem”.
+
+### Questão 13 — Reação transfusional aguda
+Após início de CH, paciente apresenta febre, dor lombar e hipotensão. Qual primeira conduta?
+
+A. Acelerar gotejamento para terminar a bolsa.
+B. Continuar até sair hemoglobinúria.
+C. Interromper imediatamente a transfusão, estabilizar e acionar hemoterapia.
+D. Trocar a bolsa sem comunicar o evento.
+E. Dar alta se temperatura cair com dipirona.
+
+**Gabarito C.** **A/B:** aumentam possível exposição a componente incompatível/contaminado. **C:** correta e tempo-dependente. **D:** impede investigação de erro e hemovigilância. **E:** o quadro pode evoluir para choque e CIVD. **Mini-revisão:** primeiro suspender bolsa, depois investigar causa mantendo suporte.
+
+### Questão 14 — TACO e TRALI
+Idosa com insuficiência cardíaca e DRC desenvolve hipertensão, dispneia e edema pulmonar após transfusão rápida de hemácias. Qual mecanismo é mais provável?
+
+A. TACO por sobrecarga circulatória, a diferenciar de TRALI e insuficiência respiratória por outras causas.
+B. Hemofilia A grave desencadeada pelo concentrado de hemácias.
+C. PTT por perda exclusiva de ADAMTS13.
+D. Tromboembolia pulmonar obrigatoriamente.
+E. Alergia cutânea leve isolada.
+
+**Gabarito A.** **A:** correta, coerente com comorbidades, volume e apresentação. **B/C:** não explicam padrão primário. **D:** é diferencial possível, não certeza obrigatória. **E:** não justifica edema pulmonar com congestão. **Mini-revisão:** nota brasileira de 2026 reforça prevenção, diagnóstico, notificação e manejo de TACO.
+
+### Questão 15 — Plaquetas em PTT versus PTI
+Pacientes A e B têm 12 mil plaquetas/mm³. A tem hemólise microangiopática com esquizócitos e confusão; B tem trombocitopenia isolada crônica e sangramento mucoso moderado. O que é mais correto?
+
+A. Tratar ambos como PTI com plaquetas e alta.
+B. Tratar ambos como PTT com plasmaférese.
+C. O contexto e mecanismo determinam condutas distintas; A exige investigação/tratamento urgente de PTT.
+D. O valor numérico de plaquetas torna história irrelevante.
+E. Excluir doença hemorrágica porque TP/TTPa podem ser normais.
+
+**Gabarito C.** **A:** ignora microangiopatia. **B:** B não tem dados de PTT. **C:** correta. **D:** números isolados não definem etiologia. **E:** hemostasia primária pode estar muito comprometida com coagulograma normal. **Mini-revisão:** tratamento guiado por síndrome, etiologia e sangramento.
+
+### Questão 16 — Plasma na cirrose
+Homem com cirrose sem sangramento, sem procedimento planejado, INR 1,6, plaquetas 120 mil/mm³. Qual abordagem é preferível?
+
+A. Corrigir INR compulsoriamente com PFC para 1,0.
+B. Avaliar riscos e não transfundir PFC apenas para normalizar INR isolado.
+C. Transfundir crioprecipitado sempre, mesmo com fibrinogênio normal.
+D. INR é medida perfeita do risco trombótico na cirrose.
+E. Toda cirrose é equivalente a anticoagulação por varfarina.
+
+**Gabarito B.** **A:** transfusão desnecessária pode causar TACO e outros eventos. **B:** correta; hemostasia na cirrose é reequilibrada e complexa. **C:** crio sem indicação não é apropriado. **D:** INR isolado não captura equilíbrio dos fatores. **E:** fisiologia é distinta. **Mini-revisão:** tratar paciente e evento, não “laboratório alterado” isoladamente.
+
+## 26. Fluxos de checagem independente dos casos e questões
+
+Antes de autorizar publicação, conferir com revisor externo: (a) cada caso representa síndrome plausível, com exames temporalmente adequados e nenhum dado contraditório; (b) cada gabarito possui uma única melhor resposta; (c) alternativas erradas são realmente erradas **no cenário**; (d) nenhuma conduta recomenda terapia indiscriminada ou omite urgência; (e) termos traduzidos conservam sentido; (f) se nova norma for publicada após 15/10/2026, revisão das condutas deve anteceder integração.
+
+### 26.1 Ajustes editoriais previstos
+
+As seções 24–26 foram acrescentadas após o checklist de pendências na estrutura de trabalho; na integração final devem ficar **antes do plano visual, bibliografia e auditoria final**, mantendo hierarquia de capítulos. A enumeração pode ser reorganizada sem cortar conteúdo. É mais importante que casos e perguntas se relacionem à explicação principal por links internos e chamadas textuais, e não fiquem como bloco desconectado.
+
+### 26.2 Integração com o ecossistema LURIA
+
+O banco de questões só poderá incorporar as questões após auditoria independente e marcação adequada de dificuldade/área. O Professor Alex poderá explorar mecanismos e perguntas de correção, mas não substituir decisão médica em hemorragia ativa. Simulador de emergência pode reutilizar raciocínio de PTT, HIT e reação transfusional se houver parâmetros clínicos e consequências coerentes, **sem importar automaticamente doses não validadas**.
+
