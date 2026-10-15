@@ -6,11 +6,12 @@
 - \`NAO_INICIADA\`: ainda sem manuscrito.
 - \`RASCUNHO_INICIADO\`: material parcial em elaboração, sem certificação de completude.
 - \`REVISAO_EXISTENTE\`: material publicado correlato identificado, expansão preliminar preparada à parte.
+- TEXTO_APROFUNDADO_REVISAO_PENDENTE: meta quantitativa preliminar superada; aguardando revisão e integração.
 - \`HOMOLOGADA\`: somente com avaliação científica, autossuficiência, extensão útil, casos, questões, imagens e inspeção final; **nenhuma neste registro**.
 
 | Aula | Tema | Status | Arquivo de trabalho |
 |---:|---|---|---|
-| 41 | Choque circulatório | RASCUNHO_INICIADO | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
+| 41 | Choque circulatório | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/41-choque-circulatorio.md\` |
 | 42 | Princípios de técnica cirúrgica | RASCUNHO_INICIADO | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
 | 43 | Puericultura e prevenção de acidentes | RASCUNHO_INICIADO | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
@@ -44,6 +45,14 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aprofundamento da aula 41 — 14/10/2026
+
+Manuscrito preservado e expandido: 86.877 caracteres brutos, aproximadamente 78.628 caracteres didaticos estimados, 20 capitulos numerados, 8 casos e 12 questoes comentadas, 9 referencias.
+Benchmark reaberto no Google Drive: 01 - CHOQUE - ABORDAGEM INICIAL.pdf (autoria institucional nao confirmada e sem reutilizacao de conteúdo); livro LURIA Assistencia ao Parto consultado como padrao editorial.
+Diretrizes cotejadas: SSC 2026, ESICM 2025, ACC 2025, AHA/ACC para TEP 2026, ASBAI/SBP 2025 e guideline de hemorragia traumatica 2023.
+Imagens: dez alvos clinicos pesquisados. Figuras da pesquisa RUSH de 2019 sob CC BY-NC-SA 4.0 foram excluidas por restricao a uso comercial. Nenhuma imagem aprovada nem publicada.
+**Nao homologada:** pendentes revisao medico-cientifica humana, doses institucionais, imagens licenciadas via Admin, ancoras reais no HTML, testes de autossuficiencia, sintaxe e layout desktop/PWA. Nao houve merge/deploy.
 
 ## Etapa registrada — cinco temas finais iniciados em 14/10/2026
 
