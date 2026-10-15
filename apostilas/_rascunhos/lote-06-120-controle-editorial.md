@@ -35,3 +35,42 @@
 - [ ] Comparação com apostila longa de origem institucional confirmada, se acessível.
 - [ ] Revisão científica independente, verificação de fórmulas/contas, referências e clareza editorial.
 - [ ] Executar de fato os validadores do repositório e conferir desktop/PWA antes de qualquer merge/deploy.
+
+---
+
+## Etapa 2 — redação, cálculo e prévia técnica (14/10/2026)
+
+- **Markdown original:** `apostilas/_rascunhos/lote-06-120-medicina-baseada-em-evidencias.md` — **100.983 caracteres brutos**, 32 capítulos, com 28 de corpo instrucional, 8 casos (capítulo 29), 12 questões (capítulo 30), bibliografia e controle.
+- **Corpo didático pré-contado:** **72.997 caracteres**, capítulos 1–28, após remover URLs e marcas Markdown básicas, sem casos/questões/bibliografia. **Não é certificação de 60 mil caracteres semanticamente únicos e úteis.**
+- **Entrada do gerador:** `apostilas/_rascunhos/lote-06-120-build-input-preliminar.json` — 31 seções, 11 referências, nenhuma figura inserida.
+- **Prévia HTML LURIA:** `apostilas/_rascunhos/lote-06-120-preview.html` — 32 seções contando bibliografia, 8 casos, 12 questões, 12 listas A–D, 0 âncoras internas ausentes, 0 IDs duplicados; com `noindex`. Nenhum arquivo público alterado, nenhum deploy/merge.
+- **Verificação aritmética independente:** RR 2,0; OR 2,67; NNT 34 no exemplo de benefício 10% versus 7%; VPP 33,3%; VPN 98,6%; LR+ 4,5; LR− 0,125; ICER R$ 20.000 por QALY nos exemplos fictícios. Esses cálculos passaram, mas é obrigatória a revisão profissional da interpretação e dos demais números.
+- **Correção de cobertura:** o capítulo 14 recebeu distinção explícita entre equivalência, não inferioridade e valor de p não significativo. Markdown, JSON e HTML foram sincronizados.
+
+### Matriz de autossuficiência preliminar — sem ler gabaritos
+| Questão | Conteúdo | Capítulos | Termos no corpo didático | Situação |
+| --- | --- | --- | --- | --- |
+| 1 | OR e seleção pelo desfecho | 3, 6 | caso-controle ✓; odds ratio ✓ | Cobertura lexical |
+| 2 | Diferença RR/OR | 9 | rr ✓; or ✓; 2,67 ✓ | Cobertura lexical |
+| 3 | NNT/RRA | 10 | nnt ✓; reducao absoluta ✓ | Cobertura lexical |
+| 4 | VPP e prevalência | 16 | vpp ✓; prevalencia ✓ | Cobertura lexical |
+| 5 | LR+ e Bayes | 17 | lr+ ✓; 0,90 ✓ | Cobertura lexical |
+| 6 | p e equivalência | 14 | valor de p ✓; equivalencia ✓ | Cobertura lexical |
+| 7 | Tempo imortal | 5, 11 | tempo imortal ✓; exposicao ✓ | Cobertura lexical |
+| 8 | PRISMA vs RoB 2 | 20, 24 | prisma ✓; rob 2 ✓ | Cobertura lexical |
+| 9 | IC e linha nula | 14 | ic95% ✓; 1 ✓ | Cobertura lexical |
+| 10 | GRADE por desfecho | 23 | grade ✓; imprecisao ✓ | Cobertura lexical |
+| 11 | Lead-time | 27 | lead-time ✓; mortalidade ✓ | Cobertura lexical |
+| 12 | ICER | 25 | icer ✓; qaly ✓ | Cobertura lexical |
+
+**Resultado: 12/12.** A busca por termos confirma apenas presença mínima de conceitos nos capítulos escolhidos. Não é validação científica da questão inteira nem da justificativa de cada alternativa.
+
+### Bloqueios de conclusão
+1. Benchmark extenso de origem institucional comprovada, não localizado nesta rodada no Drive.
+2. Revisão médica e metodológica humana; recálculo das demais estimativas e avaliação de vieses e fontes.
+3. Deduplicação semântica e certificação editorial de caracteres **úteis e únicos**.
+4. Até 10 figuras/diagramas didáticos candidatos com licença/autoria rastreada, submetidos **somente pelo Admin**, sem inclusão direta no HTML.
+5. Execução real de `node scripts/build-apostilas-batch.cjs --input ... --dry-run`, auditores do repositório e inspeção desktop/PWA. **Não foram executados nesta rodada.**
+6. Aprovação editorial antes de merge, deploy ou marcação de “concluída”.
+
+**Parecer: apostila 120 redigida e estruturada para prévia; NÃO PUBLICADA e NÃO CERTIFICADA.**
