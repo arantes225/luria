@@ -422,3 +422,327 @@ O atendimento de idoso não termina ao excluir hematoma. A queda pode decorrer d
 Em gestante, prioridade inicial é preservar oxigenação e perfusão maternas para proteger mãe e feto. A gestação altera volume circulante, via aérea, risco de aspiração e resposta hemodinâmica; manejo de TCE deve considerar posicionamento que reduza compressão aortocava na idade gestacional pertinente. Não negar TC de crânio clinicamente indicada por medo genérico de radiação fetal: a escolha de imagem deve ponderar campo irradiado, benefício diagnóstico e medidas de proteção apropriadas. Após estabilização materna, articular vigilância obstétrica/fetal conforme idade gestacional e mecanismo.
 
 A gestante pode apresentar causas não traumáticas de alteração de consciência, como eclâmpsia, hipoglicemia e doença neurológica aguda, além de TCE. A presença de crise convulsiva após queda não prova que a convulsão seja resultado da queda — ela pode ter precipitado o acidente. História de pródromos, hipertensão, proteinúria, cefaleia antecedente e obstetrícia auxilia o diferencial, mas a emergência requer manejo simultâneo conforme risco.
+
+
+## 16. Seis casos clínicos integrados — do pronto atendimento à neurocirurgia
+
+### Caso 1 — Intervalo lúcido e epidural expansivo
+
+**Apresentação.** Homem de 23 anos cai de bicicleta sem capacete, bate região temporal e fica desorientado por minutos. Chega consciente, Glasgow E4V5M6, PA 128/78, FR 18 e SpO₂ 98%. Relata cefaleia intensa e duas horas depois apresenta vômitos, sonolência e piora para E3V4M5. Pupila direita se torna maior e menos reativa.
+
+**Hipóteses.** Hematoma epidural traumático com efeito de massa progressivo, hematoma subdural ou contusão em expansão. A história de aparente melhora seguida de piora aumenta preocupação, mas não distingue sozinho a lesão; diagnóstico precisa de imagem.
+
+**Raciocínio.** No primeiro exame, Glasgow 15 não exclui sangramento intracraniano. Com mais de um vômito ou queda do Glasgow, critérios NICE exigem TC em até uma hora do achado, após garantir via aérea e transporte. A piora motora/pupilar sinaliza possibilidade de herniação e necessidade de neurocirurgia emergencial. A equipe deve reavaliar A/B/C/D, proteger coluna conforme risco e corrigir hipóxia ou hipotensão.
+
+**Exame.** TC de crânio sem contraste mostra coleção extra-axial biconvexa temporal direita, volume estimado 38 cm³, desvio de linha média e compressão ventricular. A forma sugere epidural; fratura pode coexistir. Exames laboratoriais relevantes são colhidos sem atrasar sala cirúrgica.
+
+**Conduta.** Acionar neurocirurgia imediatamente, organizar via aérea/monitorização, suporte hemodinâmico e evacuação urgente; o volume >30 cm³ cumpre critério cirúrgico BTF. Medidas temporizadoras em herniação iminente são discutidas com especialista enquanto se prepara procedimento.
+
+**Por que importa.** Ensina que exame inicial normal não é garantia de evolução benigna e que padrão temporal orienta vigilância, mas tomografia e deterioração definem intervenção.
+
+### Caso 2 — Subdural agudo no idoso anticoagulado
+
+**Apresentação.** Mulher de 81 anos usa anticoagulante oral por fibrilação atrial, teve queda da própria altura. Glasgow 15, leve cefaleia e edema parietal. A família informa que está “um pouco mais lenta” que o habitual. TC obtida conforme risco mostra hematoma subdural agudo frontoparietal de 12 mm, desvio de 6 mm e discreta compressão ventricular.
+
+**Hipóteses.** Hematoma subdural com risco de progressão em anticoagulação, mesmo com Glasgow inicialmente preservado.
+
+**Raciocínio.** A TC evidencia **espessura >10 mm** e **desvio >5 mm**, critérios cirúrgicos da BTF que independem de Glasgow. A ausência de coma não significa baixo risco. Identificar anticoagulante específico, hora da última dose, função renal, exames apropriados e necessidade de reversão em paralelo à discussão cirúrgica.
+
+**Exames.** Neuroimagem disponível deve ser revisada com neurocirurgia e radiologia, com exames de hemograma, coagulação pertinentes ao agente e eletrólitos; INR isolado não mede todos os DOACs.
+
+**Conduta.** Internar em unidade capacitada, monitorar estado neurológico e hemodinâmica, discutir evacuação urgente e reversão dirigida conforme medicação e protocolo. Não dar alta por o paciente conseguir caminhar ou conversar.
+
+**Por que importa.** Desmonta dois erros: TCE leve não significa TC inocente e critérios anatômicos cirúrgicos não desaparecem diante de Glasgow 15.
+
+### Caso 3 — TCE grave, choque hemorrágico extracraniano e perfusão cerebral
+
+**Apresentação.** Homem de 36 anos politraumatizado por colisão automobilística chega com Glasgow 6, saturação 89% e PAS 78 mmHg. Há deformidade femoral, abdome distendido e sinais de hipoperfusão. Após estabilização inicial e TC segura, encontra-se contusão frontal e edema difuso, sem hematoma expansivo que explique choque sistêmico.
+
+**Hipóteses.** TCE grave associado a hemorragia extracraniana, com risco alto de lesão cerebral secundária por hipóxia e hipotensão. Investigar abdome, pelve e membros, além de causas obstrutivas.
+
+**Raciocínio.** O coma não autoriza esquecer o restante do trauma. Hemorragia intracraniana isolada usualmente não explica hipotensão hemorrágica severa no adulto. A correção da circulação é parte do tratamento neurológico: a queda de PAM reduz PPC, podendo agravar edema/isquemia. A estratégia de hipotensão permissiva não é adequada para simplesmente tolerar PAS 78 no contexto de TCE grave.
+
+**Exames.** Monitorização cardiorrespiratória, coleta de exames de choque, eFAST/TC conforme fisiologia, avaliação de hemorragia abdominal/pélvica e neuroimagem quando seguro. Não atrasar controle de sangramento por tomografia de rotina.
+
+**Conduta.** Equipe de trauma, via aérea protegida com técnica e plano de segurança, oxigenação adequada, ressuscitação hemostática e controle de fonte, avaliação neurocirúrgica e proteção de perfusão cerebral. Considerar monitorização de PIC conforme lesão e evolução em serviço especializado.
+
+**Por que importa.** Demonstra que o “tratamento do cérebro” começa fora do cérebro: circulação e ventilação preservam tecido ainda viável.
+
+### Caso 4 — PIC elevada sem lesão única operável
+
+**Apresentação.** Mulher de 42 anos após acidente de trânsito permanece sedada e ventilada em UTI neurocrítica. TC mostra edema difuso e pequenas contusões, sem grande hematoma para evacuação. Monitor invasivo registra PIC de 28–32 mmHg sustentada, PAM 88 mmHg. Há febre de 38,7 °C e episódios de assincronia ventilatória.
+
+**Hipóteses.** Hipertensão intracraniana no TCE grave com possíveis contribuintes de febre, dor/assincronia, congestão venosa e edema, sem foco cirúrgico único evidente.
+
+**Raciocínio.** A relação PPC = PAM − PIC dá aproximadamente 58–60 mmHg, mas PIC excede limiar de tratamento. Não “resolver” apenas aumentando volume para PAM ainda maior. Procurar fatores reversíveis, avaliar posicionamento, ventilação/PaCO₂, temperatura, sedação e imagem. Reconsiderar drenagem de LCR/terapia hiperosmolar conforme monitorização e protocolo; discutir intervenções avançadas na refratariedade.
+
+**Exames.** Conferir traçados/calibração do monitor, gasometria, eletrólitos/osmolalidade, temperatura, imagem se houver piora ou mudança de exame, avaliação de infecção e perfusão sistêmica. Interpretar a tendência da PIC junto a pupilas, PPC e quadro clínico.
+
+**Conduta.** Correção de gatilhos e protocolo escalonado de HIC por neurointensivismo; não usar hiperventilação intensa prolongada como rotina e não iniciar corticosteroide para edema traumático. Acionar neurocirurgia para discutir necessidade de intervenção se refratária.
+
+**Por que importa.** Ensina a agir sobre mecanismos da PIC, não tratar um número como diagnóstico independente.
+
+### Caso 5 — Lactente com hematoma de couro cabeludo e história inconsistente
+
+**Apresentação.** Lactente de 8 meses chega com hematoma parietal grande, irritabilidade e relato inicial de queda “de pouca altura”. Há versões conflitantes do evento e equimose em outro estágio de evolução. Está responsivo, mas menos interativo que o habitual, segundo cuidador.
+
+**Hipóteses.** Lesão intracraniana, fratura craniana e possível trauma não acidental; outras doenças podem explicar equimoses, mas inconsistências elevam preocupação.
+
+**Raciocínio.** Criança pré-verbal não descreve cefaleia ou amnésia. Na NICE, hematoma/inchaço/laceração >5 cm em menor de um ano é fator de TC urgente; suspeita de trauma não acidental também exige avaliação e imagem conforme diretriz. Na PECARN, grupo <2 anos tem critérios diferentes e não deve ser usado para descartar investigação em possível abuso sem adequada avaliação. A segurança da criança requer comunicação técnica, registro objetivo e protocolos de proteção.
+
+**Exames.** Avaliação pediátrica e neurocirúrgica conforme achados, TC indicada no cenário clínico, exame completo de lesões e investigação especializada de proteção infantil. Outros exames de imagem e laboratoriais seguem suspeitas específicas. Não induzir testemunho nem fazer julgamento prévio com base apenas no comportamento familiar.
+
+**Conduta.** Estabilizar, monitorar, internar/transferir conforme gravidade e rede, envolver equipe de proteção e seguir deveres legais de notificação/encaminhamento. Não mandar para casa sem esclarecer risco e garantir ambiente seguro.
+
+**Por que importa.** Treina segurança e critérios pediátricos sem extrapolar algoritmos adultos, reconhecendo que lesão traumática pode ocorrer sem história confiável.
+
+### Caso 6 — Concussão no esporte com TC normal e sintomas persistentes
+
+**Apresentação.** Adolescente de 15 anos sofre choque de cabeças em jogo de futebol. Não perde consciência, mas relata visão turva, cefaleia e dificuldade de lembrar jogadas. Glasgow 15, exame focal sem déficit, sem sinais que determinem TC urgente na avaliação inicial. Foi retirado do jogo. No dia seguinte está mais lento para ler e sente tontura.
+
+**Hipóteses.** Concussão cerebral, sem evidência imediata de lesão estrutural grave, mas exigindo vigilância e avaliação médica.
+
+**Raciocínio.** Ausência de perda de consciência não exclui concussão, e TC normal (se feita com indicação) não serve para provar ausência de disfunção. Avaliar fatores de TC conforme regra pediátrica aplicável e orientar sinais de alarme. O retorno à atividade escolar pode ocorrer gradualmente em 1–2 dias com adaptações, de acordo com tolerância; isso não libera jogo de contato.
+
+**Exames.** Avaliação de sintomas, orientação e reavaliação clínica; TC apenas quando critérios ou piora sustentarem. Acompanhamento vestibular/cognitivo se sintomas prolongados.
+
+**Conduta.** Repouso relativo inicial, retirada imediata de atividade de risco, retorno gradual à rotina e escola com apoio e liberação médica para progressão esportiva em seis etapas. Novo trauma durante recuperação deve ser evitado. Reavaliar em sintomas persistentes ou crescentes.
+
+**Por que importa.** Diferencia neuroproteção aguda de reabilitação funcional e evita dois extremos: banalizar a concussão ou exigir isolamento absoluto indefinido.
+
+## 17. Questões originais para residência — justificativa das alternativas
+
+### Questão 1 — Critério de TC imediata no adulto
+
+Homem de 32 anos sofre TCE contuso e chega Glasgow 15. Apresenta dois episódios distintos de vômito após o trauma, sem outros achados. Conforme NICE NG232, qual opção melhor descreve a investigação?
+
+A. TC craniana em até uma hora do reconhecimento desse fator.
+B. Não há indicação de TC porque Glasgow é 15.
+C. O critério é somente se ocorrerem quatro vômitos.
+D. Radiografia simples do crânio substitui a TC.
+
+**Gabarito A.** A NICE inclui >1 episódio de vômito na lista de TC em uma hora para ≥16 anos. **B:** Glasgow normal não exclui lesão. **C:** corte inventado. **D:** radiografia não é teste de lesão encefálica clinicamente importante. **Minirrevisão:** critérios urgentes independem de perda de consciência em alguns cenários (§5.1).
+
+### Questão 2 — Adulto idoso com amnésia
+
+Pessoa de 73 anos sofreu queda, apresentou amnésia do evento, recuperou Glasgow 15 e não tem critérios de TC em até uma hora. Apresentou-se duas horas após o trauma. A NICE recomenda:
+
+A. Nunca fazer TC se voltou ao Glasgow 15.
+B. TC em até oito horas desde a lesão quando idade ≥65 e houve amnésia.
+C. Apenas EEG porque tem amnésia.
+D. Aguardar déficit motor aparecer.
+
+**Gabarito B.** Associação de amnésia e idade ≥65 enquadra-se em recomendação de TC em até oito horas, se não houver motivo mais urgente. **A:** ignora risco etário. **C:** EEG não detecta hematoma agudo como a TC. **D:** atraso perigoso. **Minirrevisão:** entender premissas dos subgrupos da NICE (§5.2).
+
+### Questão 3 — Forma de hematoma na TC
+
+Após pancada temporal, TC mostra coleção extra-axial biconvexa limitada por suturas, com desvio de linha média. Qual diagnóstico é mais provável?
+
+A. Hematoma epidural.
+B. Hematoma subdural crônico necessariamente.
+C. Hemorragia intraventricular isolada.
+D. Lesão axonal difusa como única lesão.
+
+**Gabarito A.** Biconvexidade extra-axial favorece epidural. **B:** subdural clássico é crescente, com variação densitométrica conforme tempo. **C:** sangue intraventricular ocupa ventrículos. **D:** lesão axonal pode não produzir massa biconvexa. **Minirrevisão:** forma sugere compartimento, mas risco é definido por efeito de massa e paciente (§6).
+
+### Questão 4 — Critério de epidural operável
+
+Paciente estável com hematoma epidural de 36 cm³ e Glasgow 14. Qual interpretação corresponde à BTF cirúrgica?
+
+A. Volume >30 cm³ constitui indicação de evacuação, mesmo com Glasgow 14.
+B. Não operar nunca porque Glasgow é maior que 8.
+C. Todo epidural inferior a 50 cm³ deve ser tratado em casa.
+D. Apenas administrar corticosteroides.
+
+**Gabarito A.** O volume >30 cm³ é indicação cirúrgica na diretriz. **B:** ignora critério anatômico. **C:** nem volume nem ambiente de observação correspondem à norma. **D:** corticoide não trata hematoma epidural traumático. **Minirrevisão:** não confundir critérios para observação especializada com elegibilidade para alta (§7.1).
+
+### Questão 5 — Critério de subdural agudo
+
+TC mostra subdural de 12 mm de espessura, desvio de 2 mm, Glasgow 15. O que a recomendação cirúrgica BTF afirma?
+
+A. Não pode operar se Glasgow 15.
+B. Espessura >10 mm é critério de evacuação independente do Glasgow.
+C. Só operar se desvio >20 mm.
+D. Deixar sem neurocirurgia porque não há anisocoria.
+
+**Gabarito B.** A diretriz considera espessura >10 mm **ou** desvio >5 mm. **A, C e D:** ignoram o “ou” e a gravidade anatômica. **Minirrevisão:** critérios de evacuação diferem conforme hematoma (§7.2).
+
+### Questão 6 — PIC, PPC e metas
+
+Paciente com TCE grave, PAM 86 mmHg e PIC 28 mmHg. Qual é a PPC aproximada e o raciocínio?
+
+A. PPC 114 mmHg; manter sem reavaliar.
+B. PPC 58 mmHg; a PIC elevada merece avaliação/tratamento e a perfusão também.
+C. PPC 28 mmHg; apenas dar corticoide.
+D. PPC 86 mmHg; o valor de PIC não participa da equação.
+
+**Gabarito B.** PPC ≈ PAM − PIC = 86 − 28 = 58 mmHg. PIC >22 mmHg é limiar de tratamento BTF em TCE grave adulto; a decisão integra clínica e TC. **A:** soma incorreta. **C:** ignora relação e contraindica corticoide. **D:** ignora PIC. **Minirrevisão:** metas não substituem mecanismo da HIC (§8.1).
+
+### Questão 7 — Hiperventilação em TCE
+
+Qual afirmação é correta sobre hiperventilação?
+
+A. Deve ser mantida intensamente por dias em todo TCE para prevenir edema.
+B. Redução sustentada de CO₂ não tem qualquer efeito sobre perfusão cerebral.
+C. Pode servir como ponte temporária diante de herniação iminente, mas hipocapnia excessiva prolongada pode agravar isquemia.
+D. É tratamento específico de fratura craniana linear sem efeito de massa.
+
+**Gabarito C.** Vasoconstrição cerebral por hipocapnia reduz PIC e fluxo, podendo aumentar isquemia. **A:** uso profilático prolongado é inadequado. **B:** ignora fisiologia do CO₂. **D:** sem indicação. **Minirrevisão:** ventilação objetiva eucapnia, salvo resgate específico (§8.6).
+
+### Questão 8 — Corticoide e hipotermia
+
+No TCE grave com edema difuso, qual estratégia é recomendada como regra geral para melhorar prognóstico?
+
+A. Metilprednisolona em doses altas.
+B. Hipotermia profunda profilática precoce em todos.
+C. Evitar hipóxia/hipotensão, tratar febre e controlar HIC por estratégia escalonada.
+D. Infundir grandes volumes hipotônicos para reduzir PIC.
+
+**Gabarito C.** Neuroproteção sistêmica e controle dirigido de HIC são essenciais. **A:** corticoterapia em TCE grave pode elevar mortalidade. **B:** hipotermia profilática precoce de curto prazo não é recomendada de rotina. **D:** soluções hipotônicas podem agravar edema. **Minirrevisão:** diferenciar normotermia de hipotermia induzida (§8.8).
+
+### Questão 9 — Prevenção de convulsão pós-traumática
+
+Qual afirmação corresponde à BTF?
+
+A. Fenitoína profilática comprovadamente evita epilepsia tardia.
+B. Medicação profilática em pacientes selecionados pode reduzir crises precoces de até sete dias, sem comprovação de prevenção de crises tardias.
+C. Toda concussão com TC normal requer profilaxia de anticonvulsivante por um ano.
+D. Nimodipino previne epilepsia tardia na HSA traumática.
+
+**Gabarito B.** A profilaxia precoce não previne epilepsia tardia. **A:** evidência não sustenta. **C:** prescrição indiscriminada não é recomendada. **D:** nimodipino não é anticonvulsivante profilático. **Minirrevisão:** separar tratamento de crise ativa, prevenção precoce e epilepsia (§9).
+
+### Questão 10 — Lactente e TC
+
+Lactente de dez meses chega após trauma contuso com hematoma de 6 cm em couro cabeludo. Qual conduta se alinha à NICE NG232?
+
+A. Hematoma >5 cm em menor de um ano é fator de TC em uma hora.
+B. PECARN adulto define a conduta.
+C. Não há importância porque o lactente não descreve cefaleia.
+D. Qualquer hematoma infantil determina alta imediata.
+
+**Gabarito A.** Tamanho e idade estão na lista de risco NICE pediátrica. **B:** população errada. **C:** desenvolvimento limita sintomas comunicados, não risco. **D:** não condiz com gravidade. **Minirrevisão:** aplicar critérios próprios de <16 anos e considerar PECARN conforme cenário (§§5.4, 12).
+
+### Questão 11 — Retorno ao esporte após concussão
+
+Adolescente com concussão está melhor e deseja voltar ao jogo no dia seguinte. A conduta mais coerente é:
+
+A. Liberar contato sem avaliação porque não houve perda de consciência.
+B. Manter isolamento absoluto em quarto escuro durante 30 dias em todos.
+C. Retorno gradual às atividades e esporte em etapas, com liberação e monitorização de sintomas, sem novo contato prematuro.
+D. Usar TC como único critério de aptidão esportiva.
+
+**Gabarito C.** A recuperação exige processo supervisionado. **A:** perda de consciência não é obrigatória. **B:** repouso prolongado absoluto não é padrão atual. **D:** TC pode estar normal na concussão. **Minirrevisão:** retorno escolar e esportivo são trajetórias distintas (§13).
+
+### Questão 12 — Hemoglobina no TCE
+
+O ensaio HEMOTION de 2024 comparou limiares liberal (Hb ≤10) e restritivo (Hb ≤7) em pacientes críticos com TCE. Qual conclusão está de acordo com a publicação?
+
+A. Demonstrou que transfundir toda pessoa para Hb >10 sempre reduz mortalidade e sequelas.
+B. Não demonstrou redução estatisticamente conclusiva do desfecho neurológico desfavorável em seis meses pela estratégia liberal.
+C. Provou que transfusão está contraindicada no TCE.
+D. Eliminou a necessidade de avaliar hipóxia e choque.
+
+**Gabarito B.** O ensaio não fundamenta meta universal liberal; nuances de resultados secundários e riscos precisam ser ponderadas. **A:** transforma tendência em certeza. **C:** negar transfusão indicada é falso. **D:** negligencia perfusão e transporte de O₂. **Minirrevisão:** transfusão deve integrar contexto clínico, não apenas um corte isolado (§10.3).
+
+## 18. Pérolas e armadilhas: revisão orientada por decisões
+
+| Frase de prova ou plantão | Interpretação correta |
+|---|---|
+| Glasgow 15 exclui sangramento | Falso; considerar sintomas, idade, anticoagulantes, mecanismo |
+| TC normal exclui concussão | Falso; concussão é disfunção clínica |
+| Epidural sempre tem intervalo lúcido | Falso; apresentação é variável |
+| Epidural biconvexo, subdural crescente | Padrão clássico útil, mas não único e insuficiente para conduta |
+| Subdural é sempre mais lento e benigno | Falso; subdural agudo pode ser fatal |
+| TCE grave gera choque hemorrágico sistêmico típico | Isoladamente é incomum; buscar perda extracraniana e outras causas |
+| PIC acima de 22 mmHg em adulto | Limiar de tratamento BTF; integrar duração, exame e TC |
+| PPC alvo em TCE grave adulto | Em geral 60–70 mmHg segundo BTF, individualizando |
+| Criança tem as mesmas metas adultas | Falso; BTF pediátrica propõe PIC <20 e PPC por idade |
+| Corticoide é recomendado em edema traumático | Falso; não usar como neuroproteção no TCE grave |
+| HSA traumática precisa de nimodipino como aneurismática | Falso; não tratar as etiologias como equivalentes |
+| Qualquer alteração na TC obriga operar | Falso; anatomia, efeito de massa e evolução definem decisão |
+| Qualquer TC normal autoriza alta imediata | Falso; persistência de sintomas/Glasgow alterado/supervisão influenciam |
+| Medicar sete dias previne epilepsia tardia | Falso; profilaxia precoce não garante proteção tardia |
+| Dispositivo cerebral não invasivo mede PIC exatamente | Falso; instrumentos indiretos não substituem monitor invasivo indicado |
+
+## 19. Quando internar, observar, transferir ou orientar alta
+
+### 19.1 Internação e observação hospitalar
+
+Admitir/observar quando há nova lesão intracraniana clinicamente importante, Glasgow que não retorna a 15/basal, sintomas preocupantes (vômitos persistentes, cefaleia intensa, crise), indicação de imagem ainda não realizada, intoxicação que impede avaliação confiável, lesões extracranianas relevantes, suspeita de trauma não acidental, fístula liquórica e condições de apoio insuficientes. O tempo e frequência de neuroavaliação dependem de risco e protocolo; piora obriga reavaliar ABC e neurologia e considerar TC imediata.
+
+Em observação, registrar Glasgow por componentes, pupilas, força, frequência respiratória, pressão, saturação e sintomas com horários. Uma pessoa que passa de M6 para M5 ou desenvolve pupila assimétrica deve ser avaliada prontamente, mesmo se escore total parece mudar pouco. Comunicação entre plantões precisa mencionar tendência e gatilhos de escalada.
+
+### 19.2 Acionamento da neurocirurgia
+
+Procurar neurocirurgia precocemente em coma persistente após reanimação, lesão com efeito de massa, fratura aberta/deprimida importante, lesão penetrante, déficit focal progressivo, crise sem recuperação, fístula liquórica e deterioração do Glasgow. Critérios NICE incluem necessidade de discutir casos com coma GCS ≤8 persistente, confusão inexplicada prolongada >4h, piora de Glasgow, sinais focais progressivos, crises sem recuperação, lesões penetrantes e vazamento de LCR. Se a unidade não possui recurso, o tempo até transferência pode definir prognóstico. Uma ligação prévia com resumo estruturado evita retrabalho e atrasos.
+
+### 19.3 Transporte seguro
+
+Antes de remover do local de atendimento, verificar via aérea, segurança de ventilação e capnografia se intubado, pressão/perfusão, acessos, sangue quando necessário, sedação, posição cervical e condições de transporte. Informar ao serviço receptor mecanismo, horários, Glasgow inicial e atual, achados de TC, pupilas, medicamentos e anticoagulantes, intervenções e resposta. Enviar imagens e laudos quando disponíveis, mas não atrasar transferência vital apenas por burocracia de cópias. Preparar plano caso haja descompensação no trajeto.
+
+### 19.4 Alta após TCE sem lesão intracraniana relevante
+
+Exige avaliação médica adequada, resultado de imagem quando indicada, retorno ao basal neurológico, controle suficiente dos sintomas e condição de supervisão/retorno. Paciente deve receber instruções escritas de sinais de deterioração e recomendações de atividades, sono, analgesia e retorno progressivo. Em crianças, orientação aos responsáveis e escola; em atletas, proibição temporária de atividade com risco de nova concussão até liberação. Se família não consegue supervisionar pessoa com alto risco e o serviço não oferece retorno seguro, o plano de alta deve ser revisto.
+
+## 20. Prognóstico e decisão compartilhada
+
+A recuperação depende de idade, comorbidades, Glasgow após ressuscitação, reação pupilar, hipóxia/hipotensão, padrão de TC/RM, tratamentos recebidos e complicações. Entretanto, nenhum número isolado determina com certeza a vida futura ou o nível de autonomia. Escalas de prognóstico agregam informações de populações; são úteis para orientar discussão multidisciplinar, não para justificar suspensão precipitada de suporte em pessoa no início da evolução sem avaliar fatores reversíveis.
+
+O desfecho não se limita à sobrevida. Atenção, memória, linguagem, mobilidade, sono, humor, dor, relações sociais e retorno ao trabalho são componentes centrais. Reabilitação precoce e continuidade com APS, neurologia, neurocirurgia, fisioterapia, terapia ocupacional, fonoaudiologia e saúde mental podem determinar ganho funcional significativo. A família precisa receber informações realistas sobre incerteza, evolução e meios de participação no cuidado.
+
+### 20.1 Morte encefálica: conceito separado de mau prognóstico
+
+Morte encefálica é determinação **legal e clínica específica**, não equivalência de Glasgow 3 ou de TC muito grave. O processo no Brasil é normatizado pelo CFM e legislação correlata, incluindo demonstração de causa irreversível conhecida, ausência de fatores confundidores relevantes, exames clínicos por profissionais habilitados, teste de apneia e exame complementar conforme normatização aplicável. Esse procedimento só pode ocorrer por equipe treinada, com segurança e documentação estritas. O protocolo não começa simplesmente porque há pupilas não reagentes ou um prognóstico ruim.
+
+**Limite editorial:** o resumo privado do Drive contém descrições de morte encefálica e técnicas detalhadas, mas esta apostila NÃO transforma esse assunto em roteiro operacional a partir de material antigo; uma apostila específica, juridicamente atualizada e auditada da legislação CFM, é o local adequado para técnica e critérios completos. O aluno precisa distinguir “coma”, “estado vegetativo”, “distúrbio prolongado da consciência”, “prognóstico neurológico desfavorável” e “morte encefálica” sem tratá-los como sinônimos.
+
+## 21. Camada visual: 10 candidatas com finalidade clínica, sem incorporação automática
+
+Os itens são **candidatos de pesquisa e auditoria**, não comprovação de licença nem autorização de uso. Somente imagens reais com fonte, direitos e interpretação clínica confirmados serão enviadas ao Admin e convertidas em WebP dentro dos limites da LURIA.
+
+1. **TC real de hematoma epidural**, corte axial sem contraste com padrão lentiforme, legenda de compartimento e orientação radiológica. **Candidata com fonte e licença já identificadas:** Wikimedia Commons, “Traumatic acute epidual hematoma.jpg”, autor Jpogi, CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Traumatic_acute_epidual_hematoma.jpg . Ainda precisa de conferência de legibilidade e eventual adequação de recorte.
+2. **TC real de hematoma subdural agudo**, coleção crescente com ou sem desvio, pareada didaticamente com a anterior. Categoria institucional para seleção/licenças: https://commons.wikimedia.org/wiki/Category:CT_images_of_subdural_hematoma . Escolha de ficheiro individual, autor e licença PENDENTES.
+3. **TC de contusão frontal/temporal hemorrágica**, mostrar edema e aumento em série temporal; obtenção de exemplo com licença PENDENTE.
+4. **TC de hemorragia subaracnóidea traumática**, explicar sangue sulcal versus cisternal; categoria Wikimedia Commons https://commons.wikimedia.org/wiki/Category:CT_images_of_subarachnoid_hemorrhage ; validação e licença individuais PENDENTES.
+5. **TC de edema difuso com apagamento cisternal**, ensinar relação com HIC; fonte clínica e licença PENDENTES.
+6. **TC de fratura deprimida em janela óssea**, mostrar por que janela óssea é necessária; fonte/licença PENDENTES.
+7. **RM real de lesão axonal traumática**, sequência SWI/FLAIR ilustrando lesões do corpo caloso e substância branca; fonte/licença PENDENTES.
+8. **Comparação de Glasgow adulto versus pediátrico**, criar figura vetorial própria, autoral, com E/V/M; não copiar tabelas ilustrativas privadas.
+9. **Curva original de Monro–Kellie e relação PPC–PIC**, explicar complacência e ascensão não linear da PIC; criação vetorial autoral.
+10. **Algoritmo autoral de TC adulta e pediátrica**, dois fluxogramas separados inspirados nos critérios clínicos verificados, sem reproduzir o gráfico protegido da NICE ou PECARN. Deve incluir data/versão da diretriz.
+
+Legenda proposta para TC epidural: “TC de crânio sem contraste: coleção extra-axial com morfologia lentiforme, sugestiva de hematoma epidural. Avalie volume, desvio de linha média e situação neurológica antes de decidir conduta.” Crédito autoral e licença devem acompanhar imagem no local de uso.
+
+## 22. Referências completas e trilha de correções
+
+1. NICE. **Head injury: assessment and early management**, NG232, maio de 2023. Disponível em https://www.nice.org.uk/guidance/ng232/chapter/recommendations . Usada para indicação e tempo de TC, TXA no TCE selecionado, observação e transferência.
+2. Brain Trauma Foundation. **Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition**, Neurosurgery, 2017 (publicação inicial online 2016). Página pública https://braintrauma.org/coma/guidelines/severe-tbi . Usada para PIC, PPC, PAS, prevenção de convulsão precoce, corticosteroides e HIC.
+3. Brain Trauma Foundation. **Guidelines for the Surgical Management of Traumatic Brain Injury**, recomendações em https://braintrauma.org/coma/guidelines/surgical . Usada para volume de epidural, espessura/desvio de subdural e contusões com efeito de massa.
+4. American College of Surgeons. **Best Practices Guidelines in Management of TBI** — notícia oficial da revisão de outubro de 2024. https://www.facs.org/media-center/press-releases/2024/american-college-of-surgeons-releases-revised-best-practices-guidelines-in-management-of-traumatic-brain-injury/ . Página institucional confirma publicação; revisão integral do manual é pendente.
+5. Kochanek PM et al. **Guidelines for the Management of Pediatric Severe Traumatic Brain Injury, Third Edition**, Pediatric Critical Care Medicine. 2019;20(3S Suppl 1):S1–S82. DOI 10.1097/PCC.0000000000001735. https://pubmed.ncbi.nlm.nih.gov/30829890/ . Usada para faixa pediátrica de PIC/PPC.
+6. Turgeon AF et al. **Liberal or Restrictive Transfusion Strategy in Patients with Traumatic Brain Injury**, N Engl J Med. 2024;391:722–735. DOI 10.1056/NEJMoa2404360. https://www.nejm.org/doi/full/10.1056/NEJMoa2404360 . Usada para não transformar Hb>10 em meta universal.
+7. Centers for Disease Control and Prevention. **Managing Return to Activities**, julho 2025. https://www.cdc.gov/heads-up/hcp/clinical-guidance/ . Usada para concussão e retorno gradual.
+8. Centers for Disease Control and Prevention. **Returning to School After a Concussion**, agosto 2025. https://www.cdc.gov/heads-up/guidelines/returning-to-school.html .
+9. Conselho Federal de Medicina. **Resolução CFM nº 2.173/2017**, determinação de morte encefálica. https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2017/2173_2017.pdf . Referência normativa de contexto; antes de detalhar testes legais, revisar vigência e todos os requisitos.
+
+**Divergência editorial importante:** a NICE NG232 (2023) admite considerar TXA em dose única de 2 g IV para TCE com GCS ≤12 e sem sangramento extracraniano ativo suspeito, o mais cedo possível até duas horas, inclusive antes de imagem. Isso **não é o mesmo regime nem a mesma população** da estratégia de TXA para trauma com hemorragia extracraniana maior (p. ex., 1 g seguido de 1 g em oito horas até três horas na diretriz de trauma). A escolha deve seguir cenário e protocolo; o texto não prescreve automaticamente TXA em toda concussão ou em qualquer lesão. As evidências, contexto brasileiro e posologia detalhada precisam ser auditados na revisão farmacológica.
+
+## 23. Auditoria científica-editorial — checkpoint de 15/10/2026
+
+- [x] Tema curricular e relação com nº 047 identificados; sem duplicação integral de xABCDE.
+- [x] Benchmark privado de TCE aberto e lido; autoria institucional não presumida.
+- [x] Correções de conceitos antigos sobre imagem, PPC/PIC, corticosteroides, nimodipino e hipotermia.
+- [x] Diferenciais de hematomas com leitura tomográfica e critérios específicos de cirurgia.
+- [x] Quadro de TCE leve/concussão, risco pediátrico e idoso anticoagulado.
+- [x] Seis casos clínicos autorais completos, incluindo TCE grave, epidural, subdural, pediatria e concussão.
+- [x] Doze questões com quatro alternativas, gabarito, explicações e minirrevisão.
+- [x] Planejamento de 10 imagens; 1 fonte/licença candidata explicitamente identificada, as demais pendentes.
+- [ ] Leitura integral da diretriz ACS 2024 e revisão da aplicabilidade a serviços brasileiros, inclusive neurocirurgia e transportes.
+- [ ] Revisão farmacológica por especialista dos critérios de osmoterapia, anticonvulsivantes, reversão de anticoagulantes e TXA.
+- [ ] Checagem de conteúdo **didático útil e original** versus métrica de 60.000 caracteres após retirar títulos, tabelas, casos, questões, referências e repetições.
+- [ ] Conferência do algoritmo completo PECARN, em especial critérios por idade e exclusões, antes de criar calculadora.
+- [ ] Auditoria de fontes brasileiras do SUS/CFM e atualização legal específica de morte encefálica antes de qualquer uso operacional.
+- [ ] Aprovação Admin das imagens clínicas reais, com fonte, licença, WebP e peso.
+- [ ] Conversão para renderer/apostila HTML somente após aprovação; validação desktop/PWA, links, acessibilidade, navegação e aplicação das questões.
+
+**Parecer:** manuscrito autoral substancial e avançado, ainda EM REVISÃO e NÃO PUBLICADO. Tamanho bruto não certifica profundidade autossuficiente nem precisão de todas as doses.
