@@ -8,11 +8,53 @@
 
 ## 0. Etapa zero — comparativos reais
 
-**Acervo LURIA auditado:** os rascunhos específicos das aulas 127 e 132 já existem em \`apostilas/_rascunhos\`; o primeiro aborda HDA varicosa/úlcera, Forrest, endoscopia e TIPS; o segundo cobre divertículos, angiodisplasias, colites, colonoscopia, angio-TC e embolização. Não foi identificado diretório HTML autônomo de hemorragia digestiva geral na listagem principal.
+**Acervo LURIA auditado:** os rascunhos específicos das aulas 127 e 132 já existem em `apostilas/_rascunhos`; o primeiro aborda HDA varicosa/úlcera, Forrest, endoscopia e TIPS; o segundo cobre divertículos, angiodisplasias, colites, colonoscopia, angio-TC e embolização. Não foi identificado diretório HTML autônomo de hemorragia digestiva geral na listagem principal.
 
 **Drive consultado antes da redação:** aberto e lido “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf” (~9.035 caracteres extraídos), com fisiologia gástrica, H. pylori e classificação Forrest. As buscas “hemorragia digestiva” e “sangramento intestinal” não localizaram um volume integrador alto/baixo equivalente; materiais de HDA varicosa e úlcera péptica foram lidos em rodadas anteriores. São **benchmarks parciais, sem comprovação de autoria Estratégia MED**. Não reutilizar figuras nem copiar expressões do resumo. A comparação mostra lacuna de fluxo integrador: a decisão de localizar foco ocorre **após** reconhecer choque, risco de aspiração e risco trombótico.
 
 **Fontes clínicas primárias:** ACG 2021 HDA ulcerosa, ESGE *peptic ulcer bleeding* 2026, ESGE varizes 2022/Baveno VII 2022, ACG HDB 2023 e ESGE HDB 2021. As diferenças entre tempos de EDA (úlcera vs varizes) não devem ser apagadas em fluxograma único.
+
+
+## 0A. Fronteiras curriculares verificadas em 15/10/2026
+
+Esta apostila integradora **não substitui** os livros aprofundados de cirrose, HDA e HDB. A auditoria cruzada das versões do GitHub de 15/10/2026 encontrou coerência essencial nos tempos do procedimento e na prioridade de estabilização, mas também identificou risco de repetição de fisiologia do choque, Forrest, varizes e antitrombóticos. A política editorial correta é **reaproveitar o mínimo explicativo para resolver o caso agudo** e orientar o aprofundamento para a aula correspondente.
+
+| Pergunta clínica específica | Aula de referência com profundidade | O que **fica** na integradora 136 | O que **não** repetir extensamente aqui |
+|---|---|---|---|
+| Qual a descompensação da cirrose? | **126**, cirrose/complicações | Reconhecer varizes, ascite, encefalopatia como pistas e riscos da hemorragia | Toda etiologia da cirrose, PBE, HRS, dose de diurético e elegibilidade completa ao transplante |
+| Como tratar úlcera/varizes e ressangramento alto? | **127**, HDA | Escolher EDA e distinguir relógio varicoso versus ulceroso | Repetir todos detalhes técnicos de OTS/clipes, Forrest, esquemas de IBP e TIPS |
+| Como investigar provável sangramento colorretal? | **132**, HDB | Diferenciar colonoscopia da angio-TC no sangramento ativo e necessidade de preparo | Todas causas de colite, classificação das lesões diverticulares e técnicas de embolização |
+| Onde está a fonte quando ainda não se sabe? | **136**, integrada | **Algoritmo de localização, gravidade, janela do teste e risco cruzado** | Recriar quatro aulas independentes dentro de um único arquivo |
+
+**Hierarquia de urgência coerente nas quatro versões atuais:**
+- Em **choque por sangramento**, suporte e hemostasia caminham juntos; hemoglobina inicialmente "normal" não exclui perda maciça.
+- Se a principal hipótese é **sangramento por úlcera não varicosa e há estabilização**, organizar EDA geralmente **em até 24 h**, sem impor ≤6/≤12 h a todos conforme atualização ESGE 2026.
+- Se há suspeita **de varizes esofagogástricas sangrantes**, o pacote pré-endoscópico inclui vasoativo e antibioticoprofilaxia apropriados, e a EDA é **idealmente em até 12 h após ressuscitação**.
+- Em **HDB com paciente estabilizado**, colonoscopia bem preparada durante internação pode ter mais valor que procedimento obrigatório abaixo de 24 h; se há **sangramento ativo hemodinamicamente significativo**, avaliar angio-TC e via de radiologia intervencionista conforme recurso, sem presumir que a fonte está no cólon.
+- **TIPS** possui perguntas diferentes: controle de ascite refratária em paciente selecionado (aula 126); prevenção pré-emptiva em subgrupo de alto risco de hemorragia varicosa ou resgate após falha (127). O fato de ambos se chamarem TIPS **não significa critério idêntico**.
+- Retorno de **antiagregação/anticoagulação** exige equilibrar hemostasia e trombose, especialmente após stent/AVC, e não pode ser dado pelo atalho "suspender tudo até nunca sangrar".
+
+### 0A.1. Exercício transversal de decisão com fonte incerta
+
+**Apresentação:** homem de 70 anos chega com hematoquezia abundante, sudorese, hipotensão e síncope. Tem antecedente de cirrose, usa AAS após infarto e relata episódios anteriores de melena.  
+**Diferenciais:** fonte colorretal (divertículo, angioectasia), HDA maciça por varizes, úlcera péptica em cirrótico, outras fontes; nem cirrose prova varizes, nem hematoquezia prova cólon.  
+**Etapa 1 — risco:** ABCDE, acesso, tipagem/hemograma seriados e avaliação de choque; decisão transfusional não espera número mágico se há perda ameaçadora à vida.  
+**Etapa 2 — evidência para localização:** melena prévia, sinais de hipertensão portal, uso de AINE/AAS, presença de hematêmese e função renal aumentam/diminuem probabilidades, sem fechar diagnóstico.  
+**Etapa 3 — terapia temporal:** se suspeita relevante de sangramento varicoso, considerar pacote específico antes de EDA conforme protocolo; realizar investigação endoscópica após ressuscitação, e angio-TC/colonoscopia conforme estabilidade, suspeita e exames.  
+**Etapa 4 — fonte definida:** caso se identifique úlcera gástrica, tratar o vaso/estigma e não apenas a pressão portal; se fonte distal persistente, seguir rota de HDB.  
+**Etapa 5 — pós-hemostasia:** revisar AAS de prevenção **secundária cardiovascular**, *H. pylori* se úlcera, risco de ressangramento, anemia e retorno planejado.  
+**Por que este caso importa:** a habilidade própria da 136 é **mudar de algoritmo quando novos dados surgem**, evitando ancoragem e tratamento de varizes imaginárias.
+
+### 0A.2. Achados de sobreposição que exigem revisão editorial posterior
+
+1. Os capítulos iniciais 2/4 já explicam choque e cronograma; os capítulos 15/16/18 os aprofundam. **Unificar introduções quando diagramar**, preservando fisiologia e casos, em vez de repetir a mesma regra em cada abertura.
+2. Há síntese de Forrest no capítulo 19 e detalhamento de Forrest na 127. **Deixar na 136 somente a matriz mínima que altera primeira decisão** e referenciar estudo técnico aprofundado na 127.
+3. As seções sobre TIPS e profilaxia varicosa na 136 são necessárias como caminho de urgência, mas critérios de alta especialização permanecem concentrados nas 126/127.
+4. As decisões de antitrombóticos aparecem nas 127/132/136. Garantir mesma direção clínica, sem impor um único número de dias para pacientes heterogêneos ou suspender dupla antiagregação após stent recente sem equipe.
+5. A nomenclatura "hemorragia digestiva baixa" historicamente inclui tudo distal a Treitz, mas o uso atual frequentemente separa intestino delgado de colorretal. A 136 deve explicitar a variação e ensinar qual exame alcança cada segmento.
+6. **Não eliminar conteúdo útil por correspondência lexical:** repetir "reanimação antes do exame" em um algoritmo de triagem pode ser pedagogicamente necessário; copiar tabelas de Forrest completas e todas as técnicas em três arquivos geralmente não é.
+
+**Status desta análise:** correspondência curricular **verificada textualmente** em arquivos do GitHub; não foi executado teste automático ou humano de redundância linha a linha, nem auditoria independente de farmacologia. É um plano de organização para manter profundidade sem duplicação e **não constitui aprovação clínica para publicação**.
 
 ## 1. Três síndromes clínicas, não três cores de fezes
 
