@@ -16,7 +16,7 @@ import numpy as np
 import pytest
 
 
-SCRIPTS = Path(__file__).resolve().parents[2]
+SCRIPTS = Path(__file__).resolve().parents[1]
 
 
 def import_script(name: str):
