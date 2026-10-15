@@ -426,3 +426,325 @@ Quando há suspeita consistente de Kawasaki, cardite reumática, AIJ sistêmica/
 - No Brasil, protocolos de profilaxia podem adotar aplicação de penicilina benzatina a cada 21 dias; sempre conferir protocolo, necessidade e duração individual.
 - Febre + púrpura progressiva + toxemia/choque não é “púrpura da vasculite” até que sepse grave seja adequadamente abordada.
 
+
+
+## 12. Casos clínicos comentados (oito cenários originais)
+
+### Caso 1 — A menina que manca ao levantar e não reclama de dor intensa
+
+**Apresentação.** Menina de 4 anos chega à APS porque há aproximadamente dois meses caminha com dificuldade ao acordar. Pais notam joelho direito discretamente inchado e períodos em que ela pede colo pela manhã, mas brinca melhor depois de se movimentar. Não houve febre ou trauma. Não há outras alterações sistêmicas.
+
+**Dados relevantes.** Sinovite do joelho com limitação discreta de extensão, sem hiperemia importante nem toxemia; crescimento adequado. Há queixas funcionais persistentes por mais de seis semanas, com padrão não típico de infecção aguda. Hemograma e marcadores inflamatórios podem ser normais em AIJ oligoarticular, portanto um exame “tranquilo” não encerra investigação.
+
+**Hipótese e raciocínio.** Fenótipo inicial de AIJ oligoarticular é plausível. Diferenciais incluem sinovite transitória atípica, trauma não reconhecido, osteomielite subaguda, artrite infecciosa e doença hematológica. A persistência por semanas e a sinovite objetiva favorecem doença inflamatória crônica, mas avaliação de alarme continua necessária.
+
+**Exames.** Hemograma e PCR/VHS podem compor avaliação inicial e segurança; ultrassom pode documentar sinovite e derrame. FAN não confirma AIJ, mas pode ajudar a definir risco oftalmológico. Encaminhar para reumatologia pediátrica; exame oftalmológico em lâmpada de fenda de acordo com risco.
+
+**Conduta.** Não orientar apenas observação indefinida ou manipular corticosteroides por conta própria. Planejar avaliação especializada, analgesia segura, medidas funcionais e definição de terapêutica anti-inflamatória, infiltração ou MMCD conforme atividade e PCDT. Documentar atividade, crescimento e seguimento ocular.
+
+**Por que importa?** A ausência de dor dramática e a normalidade de exames laboratoriais não excluem artrite crônica. A uveíte pode estar presente sem que a criança tenha olho vermelho, razão pela qual rastreio é ativo.
+
+### Caso 2 — AIJ sistêmica ou sepse? A ferritina e a plaqueta mudaram
+
+**Apresentação.** Menino de 9 anos com febre diária e exantema evanescente por quase duas semanas, dor articular migratória, linfonodos discretamente aumentados e hepatomegalia. Durante internação por investigação, torna-se mais prostrado, com sangramento gengival, taquicardia e piora da função hepática.
+
+**Dados relevantes.** Ferritina aumenta rapidamente, plaquetas que estavam altas passam a cair, fibrinogênio diminui e triglicerídeos se elevam. A criança permanece febril, com sinais sistêmicos graves.
+
+**Hipóteses e raciocínio.** AIJ sistêmica associada à síndrome de ativação macrofágica (SAM) é hipótese importante. Entretanto, sepse, infecção viral grave, doença hematológica e outras síndromes hiperinflamatórias precisam ser investigadas simultaneamente. Não se pode chamar de “surto benigno” uma criança com coagulopatia e possível falência orgânica.
+
+**Exames.** Hemograma seriado, perfil hepático, ferritina seriada, fibrinogênio, triglicerídeos, coagulação, função renal e culturas/testes infecciosos quando pertinentes; imagem conforme foco. Aplicar critérios classificatórios de SAM em contexto especializado sem perder tempo de suporte.
+
+**Conduta.** Internação em ambiente com monitorização intensiva conforme gravidade; manejo de circulação, sangramento e órgãos, abordagem precoce de infecção, discussão imediata com reumatologia/UTI pediátrica e imunomodulação específica. Corticosteroide e terapias dirigidas poderão fazer parte do manejo de SAM sob supervisão.
+
+**Por que importa?** A mudança de tendência de plaquetas/fibrinogênio/ferritina é mais preocupante que um valor isolado. SAM pode coexistir com infecção, e ambas podem ser potencialmente fatais.
+
+### Caso 3 — Kawasaki clássico com sinais que surgiram em dias diferentes
+
+**Apresentação.** Menino de 3 anos com febre há seis dias, lábios muito avermelhados e fissurados. Há dois dias teve rash difuso; há três, olhos vermelhos bilaterais sem secreção. No exame atual, mãos e pés edemaciados; linfonodo cervical aumentado. A mãe mostra fotografia do rash, atualmente menos evidente.
+
+**Dados relevantes.** Febre persistente e múltiplos componentes mucocutâneos. PCR elevada, possível anemia inflamatória; plaquetas podem estar normais ou elevadas conforme fase.
+
+**Hipótese e raciocínio.** O conjunto é compatível com Kawasaki clássico. Nenhum exame laboratorial específico confirma sozinho; a cronologia de sinais é determinante. Avaliar diferenciais infecciosos e não infecciosos, mas a suspeita forte obriga agir sem perder a janela terapêutica.
+
+**Exames.** Hemograma, PCR/VHS, bioquímica, ECG se indicado e ecocardiograma para avaliar função cardíaca e coronárias com escore Z. Um eco inicial sem aneurisma não anula diagnóstico quando manifestações típicas estão presentes.
+
+**Conduta.** Internação/avaliação em pediatria e cardiologia; IVIG de 2 g/kg e AAS segundo protocolo específico, avaliação de risco para eventual intensificação de anti-inflamatório, monitorização de resposta e ecocardiograma seriado.
+
+**Por que importa?** Kawasaki é doença do **tempo e dos órgãos**: esperar descamação ou aneurisma já estabelecido significa desperdiçar oportunidade de prevenção.
+
+### Caso 4 — Lactente com febre persistente, mas só dois sinais de Kawasaki
+
+**Apresentação.** Lactente de 4 meses apresenta febre sem foco claro por sete dias. Teve irritabilidade, discretas alterações de lábios, hiperemia conjuntival intermitente e PCR persistentemente elevada. Ausculta cardíaca normal. A equipe inicial considerou que “faltam sinais para Kawasaki”.
+
+**Dados relevantes.** Idade abaixo de seis meses e febre prolongada sem etiologia clara. Não há exantema persistente nem linfonodo cervical evidente. O ecocardiograma demonstra discreta dilatação coronariana expressa por escore Z alterado.
+
+**Hipótese e raciocínio.** Kawasaki incompleto de alto risco é possibilidade relevante. Exames e ecocardiograma ajudam a preencher algoritmo de investigação; o caso não se torna benigno porque faltam quatro sinais clássicos.
+
+**Exames.** Hemograma com plaquetas, PCR/VHS, albumina, ALT, urina, ecocardiografia com diâmetros/escala Z e função; investigação infecciosa dirigida. Repetir ecocardiografia conforme risco.
+
+**Conduta.** Assistência hospitalar, equipe com cardiologia pediátrica e decisão imediata sobre IVIG e intensificação inicial de tratamento anti-inflamatório conforme AHA 2024 e protocolo local. A existência de alterações coronarianas eleva a urgência.
+
+**Por que importa?** A principal pegadinha é usar critério clássico como trava e atrasar o tratamento de um lactente com apresentação incompleta e coronariopatia em formação.
+
+### Caso 5 — Púrpura nas pernas, tornozelos inchados e urina aparentemente normal
+
+**Apresentação.** Menina de 7 anos apresenta manchas púrpuras palpáveis simétricas nas pernas e nádegas três dias após infecção respiratória, com edema de tornozelos e dor para caminhar. Está hidratada, afebril e sem sinais de toxemia. Hemograma sem plaquetopenia; urina inicial sem hematúria/proteinúria.
+
+**Hipótese e raciocínio.** Apresentação típica de vasculite por IgA; a distribuição, púrpura não trombocitopênica e sintomas articulares sustentam classificação. É obrigatório excluir gravidade sistêmica e causas de púrpura não vasculítica, conforme sinais.
+
+**Exames.** Pressão arterial, exame de urina e hemograma já realizados; creatinina conforme avaliação, repetição programada de urina/PA. Não há indicação de biópsia renal por essa apresentação simples e urina inicial normal.
+
+**Conduta.** Analgesia apropriada, orientações escritas de alarmes e agenda de monitorização renal. Não prescrever corticoide apenas para evitar nefropatia. Documentar no prontuário que urina normal neste dia não equivale a encerramento do risco.
+
+**Por que importa?** A armadilha é dar alta definitiva quando desaparecem lesões de pele. Nefrite pode ser tardia e silenciosa.
+
+### Caso 6 — IgAV, dor abdominal desproporcional e sinais obstrutivos
+
+**Apresentação.** Menino de 6 anos com púrpura típica e artralgia retorna após dois dias por cólicas abdominais fortes e repetidas, vômitos e um episódio de sangue nas fezes. Está prostrado, com dor localizada intermitente.
+
+**Hipótese e raciocínio.** Complicação gastrointestinal por vasculite por IgA é provável, com necessidade de excluir invaginação intestinal, isquemia/hemorragia e outras causas cirúrgicas. Não chamar de “dor esperada da vasculite” sem investigar.
+
+**Exames.** Avaliação hemodinâmica, hemograma, eletrólitos/função renal, urina/PA, ultrassom de abdome com profissional capacitado e avaliação cirúrgica pediátrica. Testes e imagem adicionais dependem da estabilidade e resultado.
+
+**Conduta.** Observação/internação e suporte de hidratação/analgesia; intervenção da equipe de cirurgia/radiologia se invaginação ou complicação. Corticoterapia pode ser considerada para manifestações graves selecionadas após investigar urgência cirúrgica, nunca em substituição a ela.
+
+**Por que importa?** O mesmo diagnóstico dermatológico pode comportar quadros que exigem cuidado ambulatorial simples ou hospitalização cirúrgica. A gravidade é funcional e orgânica, não visual.
+
+### Caso 7 — Artrite migratória após faringite: o sopro não é obrigatório
+
+**Apresentação.** Adolescente de 12 anos teve faringite febril há cerca de três semanas, não tratada adequadamente. Evolui com dor e edema em tornozelo direito por poucos dias, depois melhora e passa a ter dor importante em joelho esquerdo. Apresenta febre e PCR elevada. Ausculta sem sopro inequivocamente patológico.
+
+**Dados relevantes.** Antiestreptolisina O elevada e ecocardiograma com valvulite compatível com cardite reumática. A artrite é migratória; achado do Doppler fornece evidência de cardite subclínica quando critérios técnicos são atendidos.
+
+**Hipótese e raciocínio.** Febre reumática aguda é forte hipótese. Aplicar critérios de Jones com estratificação de risco da população e evidência de infecção estreptocócica. Não confundir ASLO elevada com diagnóstico completo: o conjunto é que sustenta a interpretação.
+
+**Exames.** ECG com avaliação de PR, ecocardiografia Doppler, PCR/VHS, sorologia estreptocócica e avaliação de diferencial articular. Se articulação individual tiver quadro séptico, artrite bacteriana permanece urgência a excluir.
+
+**Conduta.** Erradicação do estreptococo conforme protocolo, anti-inflamatório/controle do quadro e plano de profilaxia secundária com penicilina benzatina em intervalo brasileiro aplicável, cardiologia e seguimento valvar. Orientar família sobre consequências da perda de doses.
+
+**Por que importa?** O tratamento da dor termina em dias ou semanas; a responsabilidade com as valvas e com profilaxia pode durar anos.
+
+### Caso 8 — O falso diagnóstico de AIJ: a articulação séptica
+
+**Apresentação.** Menino de 8 anos trazido por dor aguda intensa e incapacidade de apoiar o membro inferior há 24 horas, febre, quadril doloroso a toda movimentação e deterioração do estado geral. Familiares relatam quadro viral na semana anterior; cogitou-se “artrite reativa”.
+
+**Dados relevantes.** Início agudo, limitação extrema, febre e repercussão sistêmica. O quadril não apresenta edema externo visível, o que não diminui suspeita de artrite séptica.
+
+**Hipótese e raciocínio.** Artrite séptica até prova adequada em contrário, com osteomielite associada como possibilidade. AIJ requer cronologia diversa e não explica automaticamente toxicidade aguda.
+
+**Exames.** Avaliação emergencial, hemoculturas se indicadas, hemograma/PCR, ultrassom para derrame e imagem adicional segundo serviço; aspiração diagnóstica/drenagem quando apropriadas. Em sepse ou instabilidade, antibióticos não devem ser retardados para aguardar procedimento.
+
+**Conduta.** Internação, equipe pediátrica e ortopedia, coleta de material quando possível sem atraso indevido, antibiótico empírico e drenagem/controlos conforme protocolo, reabilitação e acompanhamento.
+
+**Por que importa?** A decisão mais segura em reumatologia pediátrica frequentemente é identificar quando o problema **não deve esperar reumatologista**.
+
+## 13. Questões autorais comentadas (12 questões, estilo ENAMED/residência)
+
+### Questão 1 — A criança com uveíte assintomática
+
+Menina de 5 anos, artrite persistente do joelho há oito semanas, rigidez matinal e sem febre. FAN positivo; olhos sem hiperemia. Qual a atitude mais adequada?
+
+A) Confirmar AIJ apenas porque FAN é positivo.  
+B) Dispensar oftalmologia porque não há queixa ocular.  
+C) Encaminhar à reumatologia pediátrica e organizar avaliação oftalmológica em lâmpada de fenda.  
+D) Solicitar ASLO para confirmar AIJ.
+
+**Gabarito: C.** A suspeita é clínica e o risco de uveíte anterior crônica deve ser acompanhado ativamente. **A incorreta:** FAN não confirma AIJ; contextualiza fenótipo/risco ocular. **B incorreta:** uveíte pode ser assintomática. **D incorreta:** ASLO avalia resposta a estreptococo, não define AIJ. **Mini revisão:** artrite por mais de seis semanas em criança, após exclusões, sugere AIJ; rastreio ocular protege visão.
+
+### Questão 2 — SAM na AIJ sistêmica
+
+Criança com suspeita de AIJ sistêmica piora com febre persistente, alterações neurológicas, ferritina muito elevada em ascensão, plaquetas em queda e fibrinogênio reduzido. Qual conduta é mais correta?
+
+A) Alta com antitérmico porque ferritina alta é esperada.  
+B) Considerar síndrome de ativação macrofágica e assegurar avaliação hospitalar urgente, investigando infecção concomitante.  
+C) Iniciar apenas AAS ambulatorial.  
+D) Esperar seis semanas de artrite para investigar.
+
+**Gabarito: B.** SAM é síndrome hiperinflamatória potencialmente fatal. **A incorreta:** evolução clínica e coagulopatia são alarmes. **C incorreta:** AAS não trata SAM. **D incorreta:** critério temporal de AIJ não justifica atraso em falência orgânica. **Mini revisão:** tendências de ferritina, plaquetas, fibrinogênio, transaminases e estado clínico importam.
+
+### Questão 3 — Kawasaki incompleto
+
+Lactente de 4 meses apresenta febre persistente por sete dias, dois sinais mucocutâneos, PCR elevada e aumento de escore Z coronariano no eco. O diagnóstico mais provável é:
+
+A) Kawasaki descartado, pois exige sempre quatro sinais.  
+B) Kawasaki incompleto, que precisa de avaliação e tratamento especializados.  
+C) Vasculite por IgA, mesmo sem púrpura.  
+D) Febre reumática presumida, sem evidência estreptocócica.
+
+**Gabarito: B.** Idade e anormalidade coronariana tornam a hipótese particularmente relevante. **A incorreta:** critérios clássicos não excluem apresentação incompleta. **C incorreta:** distribuição vascular/clinica típica de IgAV não está presente. **D incorreta:** FR tem outra história e critérios. **Mini revisão:** lactentes pequenos estão entre os grupos que exigem maior vigilância em Kawasaki.
+
+### Questão 4 — Imagem em Kawasaki
+
+Qual afirmação sobre ecocardiografia na doença de Kawasaki é correta?
+
+A) Diâmetros coronarianos devem ser avaliados apenas em milímetros, independentemente da superfície corporal.  
+B) Ecocardiograma inicial normal elimina a possibilidade de aneurisma posterior.  
+C) O escore Z normaliza a medida coronariana para o tamanho corporal e deve ser acompanhado de forma seriada quando indicado.  
+D) Troponina normal substitui avaliação de coronárias.
+
+**Gabarito: C.** O escore Z ajuda classificação e comparação longitudinal. **A incorreta:** tamanho corporal modifica referência. **B incorreta:** alterações podem surgir após exame inicial. **D incorreta:** troponina avalia lesão miocárdica, não substitui avaliação anatômica das coronárias. **Mini revisão:** risco a longo prazo depende do envolvimento coronariano, não da duração isolada da febre.
+
+### Questão 5 — Tratamento inicial do Kawasaki
+
+Criança de 3 anos com Kawasaki clássico confirmado, sem contraindicações conhecidas, chega ao hospital no sexto dia de febre. O tratamento de base envolve:
+
+A) Antibiótico oral isolado por sete dias.  
+B) IVIG, com AAS e estratificação de risco sob equipe especializada.  
+C) Apenas corticoide tópico para rash.  
+D) Observação até aparecer descamação periungueal.
+
+**Gabarito: B.** IVIG 2 g/kg em esquema hospitalar é pilar da terapia; uso de AAS e possível intensificação seguem protocolo. **A incorreta:** não é infecção bacteriana tratada dessa forma. **C incorreta:** não protege artérias coronárias. **D incorreta:** espera pode perder janela terapêutica. **Mini revisão:** tratamento precoce visa prevenir lesão vascular, não apenas cessar sintomas.
+
+### Questão 6 — Púrpura típica e plaquetas normais
+
+Menino de 6 anos apresenta púrpura palpável nas pernas, artralgia em tornozelos e dor abdominal leve após infecção respiratória. Hemograma com plaquetas normais. A conduta inicial mais adequada é:
+
+A) Diagnosticar púrpura trombocitopênica imune sem observar o hemograma.  
+B) Considerar IgAV, aferir pressão e avaliar urina, com plano de seguimento renal.  
+C) Iniciar corticoide para prevenir glomerulonefrite em qualquer caso.  
+D) Dispensar revisão porque não há edema.
+
+**Gabarito: B.** É fenótipo de IgAV e rim pode adoecer silenciosamente. **A incorreta:** não há trombocitopenia explicativa. **C incorreta:** não existe benefício demonstrado de corticosteroide para prevenção de nefrite em ausência de lesão renal. **D incorreta:** edema não é requisito de nefrite. **Mini revisão:** IgAV exige PA e urina repetidas.
+
+### Questão 7 — IgAV com dor abdominal grave
+
+Criança com IgAV evolui com cólicas intensas, vômitos e sangue nas fezes. Qual opção priorizar?
+
+A) Tratar como quadro leve sem avaliação adicional.  
+B) Excluir invaginação intestinal e outras complicações gastrointestinais por imagem e equipe apropriada.  
+C) Administrar apenas AINE sem avaliar rim ou sangramento.  
+D) Aguardar um mês para confirmar proteinúria.
+
+**Gabarito: B.** A dor abdominal grave pode sinalizar complicação cirúrgica. **A incorreta:** gravidade clínica mudou. **C incorreta:** AINE pode trazer riscos em sangramento/lesão renal. **D incorreta:** não responde ao problema urgente. **Mini revisão:** reconhecimento de complicações intestinais salva a criança de atraso diagnóstico.
+
+### Questão 8 — Corticosteroide e prevenção da nefrite na IgAV
+
+Criança com IgAV cutânea, urina normal, sem hipertensão e apenas artralgia leve. Qual afirmação está correta?
+
+A) Prednisona profilática universal previne nefropatia futura comprovadamente.  
+B) Nenhum seguimento renal é necessário se a púrpura regredir.  
+C) Não indicar corticosteroide apenas para prevenir nefrite; manter vigilância clínica, PA e urina.  
+D) Biópsia renal deve ser feita em todos os casos.
+
+**Gabarito: C.** Alinha-se ao princípio KDIGO 2025. **A incorreta:** benefício profilático não demonstrado. **B incorreta:** nefropatia pode surgir depois. **D incorreta:** biópsia é por critério de risco/gravidade. **Mini revisão:** tratar manifestações atuais não equivale a prevenir todas as complicações renais.
+
+### Questão 9 — Jones e ASLO
+
+Menino escolar com ASLO aumentado, dor articular inespecífica e sem sinais maiores de febre reumática. É correto concluir que:
+
+A) ASLO elevado confirma febre reumática sozinho.  
+B) ASLO documenta exposição imune, mas diagnóstico requer avaliação criteriosa da síndrome e dos critérios aplicáveis.  
+C) Ecocardiograma é proibido na ausência de sopro.  
+D) Infecção estreptocócica é sempre bacteremia articular.
+
+**Gabarito: B.** Evidência de exposição não estabelece síndrome clínica. **A incorreta:** falta contexto de critérios. **C incorreta:** eco pode revelar cardite subclínica. **D incorreta:** FR é doença imunomediada pós-infecciosa, não artrite bacteriana. **Mini revisão:** critérios de Jones incluem manifestações maiores/menores e evidência estreptocócica, com exceções e estratificação epidemiológica.
+
+### Questão 10 — Artrite migratória e cardite subclínica
+
+Adolescente com artrite migratória, febre, sorologia estreptocócica compatível e ecocardiograma Doppler com valvulite patológica, mesmo sem sopro. A melhor interpretação é:
+
+A) Ausência de sopro exclui cardite.  
+B) Cardite subclínica pode contar como manifestação maior conforme critérios de Jones.  
+C) Apenas AIJ é possível porque a criança apresenta artrite.  
+D) A profilaxia secundária nunca é necessária após desaparecer a artrite.
+
+**Gabarito: B.** O Doppler pode identificar lesão valvar reumática sem ausculta diagnóstica. **A incorreta:** exame auscultatório tem sensibilidade limitada. **C incorreta:** cronologia migratória e estreptococcia apontam outra síndrome. **D incorreta:** profilaxia evita recorrências e sequelas. **Mini revisão:** não reduzir diagnóstico de FR a “artrite reativa”.
+
+### Questão 11 — Tratamento da AIJ e erro de prescrição
+
+Ao revisar receita de adolescente com AIJ, identifica-se metotrexato oral prescrito **todos os dias**, quando a intenção era terapia semanal para doença reumatológica. Qual atitude é adequada?
+
+A) Manter porque dose diária melhora eficácia.  
+B) Alertar imediatamente a equipe prescritoria e corrigir antes da administração; monitorização e segurança são indispensáveis.  
+C) Suspender todos os medicamentos definitivamente sem avaliar.  
+D) Associar AAS e aguardar a próxima consulta para informar.
+
+**Gabarito: B.** Erro de frequência de metotrexato pode causar toxicidade grave. **A incorreta:** é falha crítica de segurança. **C incorreta:** não é plano individualizado e não resolve comunicação. **D incorreta:** adiar correção mantém risco. **Mini revisão:** conciliação de medicamentos inclui dose, via, frequência, indicação e contraindicações.
+
+### Questão 12 — A articulação aguda e muito dolorosa
+
+Criança de 8 anos com febre, quadril muito doloroso e incapacidade de apoiar há um dia. A família sugere AIJ por haver familiar com autoimunidade. O melhor próximo passo é:
+
+A) Tratar imediatamente com corticoide intra-articular, sem coleta, porque tem história familiar.  
+B) Excluir artrite séptica de forma urgente, com investigação, equipe e tratamento hospitalar conforme risco.  
+C) Aguardar seis semanas para ver se cumpre AIJ.  
+D) Dar alta se FAN vier negativo.
+
+**Gabarito: B.** Artrite séptica é tempo-dependente. **A incorreta:** corticoide antes de excluir infecção pode prejudicar diagnóstico e evolução. **C incorreta:** esperar é perigoso. **D incorreta:** FAN não serve como triagem de artrite séptica nem confirmação de AIJ. **Mini revisão:** prioridade é risco e tempo de lesão, não prevalência de doença autoimune na família.
+
+## 14. Exercícios de integração: resolva usando apenas este texto
+
+**Desafio 1.** Quais três achados levam a reconsiderar diagnóstico de IgAV “leve” antes da alta? Resposta: pressão elevada, urina com proteinúria/hematúria significativa e dor abdominal grave (além de deterioração sistêmica), porque sugerem rim ou intestino com gravidade.
+
+**Desafio 2.** Como você explica em uma frase a diferença entre Kawasaki clássico e incompleto para família? Resposta: no incompleto, a criança pode não ter todos os sinais conhecidos, mas ainda pode ter a mesma inflamação das artérias do coração e precisar do mesmo nível de urgência.
+
+**Desafio 3.** O que torna artrite séptica mais urgente que investigação de AIJ em uma criança febril que não apoia o pé? Resposta: a possibilidade de infecção articular destrutiva em horas/dias, com bacteremia, necessidade de drenagem e antibióticos; AIJ é diagnóstico após exclusões.
+
+**Desafio 4.** Por que um exame de sangue para FAN não substitui o exame ocular de AIJ? Resposta: FAN apenas contribui à estratificação de risco; a lesão ocular é detectada pela avaliação oftalmológica e pode ocorrer sem sintoma externo.
+
+**Desafio 5.** Por que febre reumática confirmada continua exigindo acompanhamento depois que dor articular passa? Resposta: há risco de lesão valvar e recorrências após novos contatos com estreptococo, preveníveis por profilaxia secundária e vigilância cardiológica.
+
+## 15. Proposta de dez figuras clínicas a pesquisar e submeter ao Admin
+
+**Status de todas:** indicação editorial, **não é imagem candidata licenciada/selecionada**. Antes de importar, localizar dez imagens reais com origem primária, conferir fidelidade clínica, licença de uso comercial, legibilidade e autorização. Não incorporar URL de mídia diretamente ao HTML sem aprovação do Admin.
+
+1. Fotografia com consentimento de joelho com sinovite pediátrica: mostrar diferenças entre derrame, tumefação e artralgia sem edema, próxima à seção 2.
+2. Esquema original do mecanismo de sinovite, membrana sinovial e placa de crescimento, próximo à seção 1.
+3. Diagrama original dos fenótipos AIJ, atividade e risco oftalmológico, próximo à seção 3.
+4. Exemplo institucional e licenciado de achados em lâmpada de fenda de uveíte anterior: explicar por que não é visível externamente, seção 3.6.
+5. Fotografia clínica validada de língua em framboesa/lábios fissurados de Kawasaki: comparar com escarlatina, seção 4.2.
+6. Fotografia de edema de extremidades ou descamação periungueal de Kawasaki em fase adequada: mostrar cronologia, seção 4.2.
+7. Ecocardiograma de Kawasaki com medida e cálculo de Z escore verificáveis: criar legenda didática destacando superfície corporal, seção 4.4.
+8. Fotografia clínica validada de púrpura palpável de membros inferiores, incluindo variação de fototipo, seção 5.2.
+9. Exemplo esquemático original da cronologia púrpura → alterações urinárias → seguimento renal, seção 5.4.
+10. Ecocardiograma Doppler ilustrando valvulite reumática subclínica, com fonte institucional e critérios técnicos, seção 6.5.
+
+Alternativas não fotográficas especialmente úteis: fluxograma original de Kawasaki incompleto, quadro de acompanhamento de proteinúria, linha temporal dos sinais de febre reumática, matriz de risco de SAM e quadro de contraindicações/prudência com AINE. Nem todo recurso precisa ser fotografia; porém, imagem de exame clínico não deve ser substituída por imagem inventada de aparência diagnóstica.
+
+## 16. Referências científicas verificáveis
+
+1. **Brasil, Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas — Artrite Idiopática Juvenil, página oficial atualizada em **19/05/2026**. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-idiopatica-juvenil/view
+2. **Jone P-N, Tremoulet A, Choueiter N, et al.** Update on Diagnosis and Management of Kawasaki Disease: A Scientific Statement From the American Heart Association. *Circulation*. 2024;150:e481–e500. DOI: **10.1161/CIR.0000000000001295**. https://pubmed.ncbi.nlm.nih.gov/39534969/
+3. **American Heart Association.** Corrigenda da declaração Kawasaki publicada em 2025; conferir antes de reproduzir recomendações detalhadas sobre anticoagulação e antiagregação. DOI: 10.1161/CIR.0000000000001313 e 10.1161/CIR.0000000000001324.
+4. **KDIGO.** Clinical Practice Guideline for the Management of Immunoglobulin A Nephropathy and IgA Vasculitis (IgAV), 2025. https://kdigo.org/guidelines/iga-nephropathy/
+5. **Sociedade Brasileira de Pediatria.** Vasculite por IgA (púrpura de Henoch–Schönlein), Departamento de Reumatologia, atualização 2022. https://www.sbp.com.br/pediatria-para-familias/doencas/vasculite-por-iga-purpura-de-henoch-schonlein/
+6. **Sociedade Brasileira de Pediatria.** Febre reumática, Departamento Científico de Reumatologia, atualização setembro de 2024. https://www.sbp.com.br/pediatria-para-familias/doencas/febre-reumatica/
+7. **Centers for Disease Control and Prevention.** Clinical Guidance for Acute Rheumatic Fever, atualização agosto de 2025. https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/acute-rheumatic-fever.html
+8. **American College of Rheumatology.** 2021 Guideline for the Treatment of Juvenile Idiopathic Arthritis: Therapeutic Approaches for Oligoarthritis, TMJ Arthritis, and Systemic AIJ. *Arthritis Care & Research*. 2022;74:521–537. DOI: 10.1002/acr.24853. https://pmc.ncbi.nlm.nih.gov/articles/PMC10124899/
+9. **Sociedade Brasileira de Cardiologia.** Diretrizes brasileiras para diagnóstico, tratamento e prevenção da febre reumática. *Arquivos Brasileiros de Cardiologia*, documento clássico a interpretar com atualizações posteriores. https://www.scielo.br/j/abc/a/BgMJ45rh8cKSsHpK7bTbjwM/?lang=pt
+10. **International Pediatric Nephrology Association / KDIGO.** Recomendações pediátricas sobre nefrite por vasculite IgA, conforme vínculo e atualizações do guia KDIGO 2025; consultar documentos originais antes de definir esquemas especializados de imunossupressão.
+
+**Observação de método:** A existência da referência não certifica que todas as recomendações específicas estejam resolvidas na versão presente. Em divergência entre diretrizes, indicar população-alvo e adotar protocolo brasileiro vigente quando aplicável. Não inventar níveis de evidência ou fármacos aprovados pelo SUS sem consulta à versão normativa.
+
+## 17. Auditoria interna do manuscrito e pendências antes de aprovar
+
+| Requisito | Situação desta versão |
+|---|---|
+| Definição, fisiologia normal e mecanismo | Redigidos para as quatro síndromes |
+| Síndrome articular e urgência infecciosa | Redigidos; revisar com ortopedia pediátrica |
+| AIJ: fenótipos, diagnóstico, uveíte e SAM | Redigidos; conferir detalhes terapêuticos/doses no PCDT 2026 |
+| Kawasaki típico/incompleto, eco Z, tratamento | Redigidos; conferir doses de AAS, vigilância e erratas AHA |
+| IgAV clínica, diferenciais, rim, seguimento | Redigidos; conferir KDIGO/IPNA e rotinas APS |
+| FR: Jones, cardite subclínica e profilaxia | Redigidos; conferir adaptação brasileira dos intervalos e duração |
+| Diagnósticos diferenciais e tabelas clínicas | Presentes |
+| Algoritmos de conduta | Quatro algoritmos originais textuais |
+| Casos comentados | 8 casos originais |
+| Questões comentadas | 12 questões originais |
+| Imagens clínicas aprovadas | **Não**; lista de dez categorias para pesquisa/validação |
+| Benchmarking pediátrico equivalente no Drive | **Pendente**; PDF de vasculites consultado é indireto |
+| Conferência por médico revisor independente | **Pendente** |
+| Contagem de caracteres úteis sem redundância | **Pendente de auditoria automatizada + humana** |
+| Testes de renderização HTML e PWA | **Não executados**; manuscrito Markdown, sem publicação |
+| Status de publicação | **Rascunho editorial, não final nem certificado** |
+
+### Checklist de revisão científica antes de publicação
+
+- Validar critérios exatos e intervalos da classificação Kawasaki incompleta e do seguimento coronariano na atualização AHA com erratas.
+- Verificar detalhes de tratamento e acesso medicamentoso da AIJ no PCDT MS de maio de 2026, especialmente subtipos, faixa etária e imunização.
+- Conferir diretrizes KDIGO/IPNA 2025 para critérios de nefrite IgA e intervalos de vigilância conforme gravidade.
+- Conferir tabela de Jones com risco populacional, cardite subclínica e critérios de profilaxia secundária brasileiros.
+- Revisar todas as doses, contraindicações e indicações de internação por pediatra/reumatologia e cardiologia pediátrica.
+- Acrescentar imagens reais licenciadas via fila Admin, com descrição de achados em diversas tonalidades de pele.
+- Confrontar texto com questões ENAMED representativas; para qualquer questão não resolúvel com este material, localizar lacuna no capítulo correto e completá-la, sem apêndice redundante.
+- Manter este manuscrito como fonte editorial não publicada até a etapa zero, revisão médica, deduplicação e validação de desktop/PWA estarem concluídas.
+
