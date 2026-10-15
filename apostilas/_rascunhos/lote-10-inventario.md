@@ -96,3 +96,41 @@ Materiais **abertos e lidos** em 15/10/2026, todos apenas comparativos **parciai
 **Plano de capítulos exclusivos para aula 206 (SEM repetir capítulos já autossuficientes da SUA):** anatomia/fisiopatologia do miométrio e pólipos; FIGO topográfica e como descrever um exame; rastreio de anemia e sintomas compressivos; distinção entre miomas, adenomiose, pólipos e sarcoma; ultrassom, sonohisterografia, histeroscopia e RM; interpretação de achados; opções clínicas e hormonais/antifibrinolíticas por objetivo; indicação de polipectomia/miomectomia e escolha da via; embolização e ablação em pacientes selecionadas; histerectomia e proteção do trato urinário; fertilidade, gravidez, perimenopausa; complicações, seguimento, quatro ou mais casos, seis ou mais questões, imagens autorizadas.
 
 **Pendências comuns a todas as aulas:** revisão especializada de condutas/doses, benchmarking equivalente quando acessível, imagens no Admin, 60k didáticos úteis sem repetição, teste de autossuficiência, HTML e PWA. As aulas 206–225 permanecem **não produzidas**; 206 possui apenas pré-auditoria acima.
+
+
+## 15/10/2026 — sequência adicional, aulas 206–208
+
+**Branch de trabalho:** `editorial/lote-10-204-225`. Nenhuma mesclagem na `main`, publicação, alteração no catálogo, no HTML existente ou no Supabase foi realizada.
+
+| Nº | Estado comprovado por leitura GitHub | Caracteres brutos | Casos | Questões |
+| --- | --- | ---: | ---: | ---: |
+| 206 — Miomas, pólipos e patologia uterina benigna | `apostilas/_rascunhos/lote-10-aula-206-miomas-polipos-patologia-uterina-benigna.md` | 70.874 | 8 | 12 |
+| 207 — Prolapso genital e incontinência feminina | `apostilas/_rascunhos/lote-10-aula-207-prolapso-incontinencia-urinaria-feminina.md` | 63.891 | 8 | 14 |
+| 207 — Anexo editorial | `apostilas/_rascunhos/lote-10-aula-207-anexo-editorial.md` | 2.240 | — | — |
+| 208 — Gestação gemelar e alto risco | `apostilas/_rascunhos/lote-10-aula-208-gestacao-gemelar-alto-risco.md` | 43.108 | 6 | 10 |
+
+**Nota de integridade:** os números são **caracteres brutos do Markdown** e não substituem contagem dos 60 mil caracteres **didáticos úteis sem redundâncias** por apostila; 208 ainda não alcança sequer 60 mil brutos. Os arquivos são **rascunhos** sujeitos a revisão técnica e de referências, benchmarking integral do Drive, qualidade de imagens, auditoria e conversão para HTML. Nenhuma certificação final concedida.
+
+### Auditoria 206
+
+Foi examinada a apostila LURIA de **sangramento uterino anormal** (contém capítulos PALM–COEIN de leiomioma, pólipos, adenomiose, avaliação e tratamento). O rascunho 206 foi construído sobre **mapeamento anatômico FIGO, efeitos sobre fertilidade, imagem, risco endometrial, planejamento e alternativas cirúrgicas**, sem sobrescrever o original. Foram abertos PDFs parciais no Drive (`02 - CANCER DE ENDOMETRIO.pdf` e `02 - SANGRAMENTO DA PRIMEIRA METADE.pdf`); nenhum benchmark integral de mioma foi identificado. Fontes externas FIGO 2025, NICE NG88, ACOG e ASRM; doses/normas brasileiras e licenças ainda pendentes.
+
+### Auditoria 207
+
+Foram abertos e lidos os PDFs `01 - INCONTINENCIA URINARIA ESFORCO.pdf` e `09 - UROLOGIA - UND E DISFUNCOES MICCIONAIS .pdf`, mas não há benchmark de **prolapso genital completo**. Conteúdo produziu POP-Q, abordagem clínica de perda por esforço versus urgência, diária miccional, urodinâmica seletiva, fisioterapia, pessário, correções cirúrgicas e complicações de implante. Corrige limitações dos resumos antigos: duloxetina é **SNRI**, não ISRS; urodinâmica não é obrigatória em toda primeira cirurgia de IUE; laser vaginal não é terapia padrão consolidada. Referências em anexo editorial separado e no texto médico, com NICE NG123, AUA/SUFU 2024, EAU 2026 e FEBRASGO 2025.
+
+### Auditoria 208
+
+**Apostilas LURIA efetivamente abertas:** `pre-natal-baixo-risco`, `crescimento-intrauterino-reduzido-aumentado`, `avaliacao-vitalidade-fetal` e `sindromes-hipertensivas-da-gestacao`. Os livros dão bases gerais mas não ensinam corionicidade, TTTS/TAPS, sFGR monocoriônica, MCMA ou planejamento da gemelaridade. **Benchmark parcial do Drive, realmente lido:** `02 - ASSISTENCIA AO PRE-NATAL.pdf` e `Síndromes Hipertensivas na Gestação.pdf` (cita gemelaridade como risco de pré-eclâmpsia); sem livro gemelar equivalente ou autoria Estratégia MED comprovada.
+
+Foram consultadas fontes institucionais públicas **ISUOG Practice Guidelines 2025** (DOI 10.1002/uog.29166), **SMFM Consult 72 2024** (DOI 10.1016/j.ajog.2024.07.017) e **NICE NG137**. O arquivo 208 documenta primeiro trimestre, lambda/T, calendário DCDA/MCDA/MCMA, TTTS–Quintero, TAPS–ACM, sFGR, óbito de um feto e parto; seis casos/dez questões. **Segue incompleto** até desenvolver problemas mais raros (TRAP, gêmeos conjugados), aprofundar vigilância/doença placentária e adaptar normas brasileiras.
+
+### Gates comuns
+
+- Conteúdo autoral, referências primárias verdadeiras, revisão de doses e atualização por sociedades brasileiras.
+- Comparativo de obra adequada do Drive (nenhuma equivalente integral foi encontrada nas aulas 206–208); registrar lacunas de modo explícito.
+- `>=60.000` caracteres **didáticos úteis** após exclusão de metadados/repetição; prova de autossuficiência por questões representativas.
+- Figuras clínicas reais com licença de uso comercial e aprovação pelo Admin. Os planos de imagem nos Markdown não são arquivos aprovados.
+- Testes de sintaxe, HTML responsivo, desktop/PWA e revisão médica independente antes de integração; nenhuma publicação automaticamente autorizada.
+
+**Próximo tema na ordem:** **209 — Aloimunização materno-fetal e doença hemolítica perinatal.** Antes de escrever, verificar sobreposição com pré-natal de baixo risco e com materiais neonatais de icterícia, confirmar normativas atuais de profilaxia anti-D e Doppler ACM para anemia fetal, e pesquisar apostila do Drive correlata (foi localizado `02 - DOENCA HEMOLITICA PERINATAL.pdf` durante a busca da 208, mas AINDA NÃO aberto nesta rodada).
