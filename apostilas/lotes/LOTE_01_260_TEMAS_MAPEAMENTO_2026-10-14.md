@@ -33,7 +33,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **14 rascunhos `content.json` identificados** (aulas 01, 02, 03, 05, 06, 07, 08, 09, 10, 11, 12, 13 e 14 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 04). Nenhum dos 15 temas recebeu certificação editorial e científica final. A existência do arquivo não equivale a publicação.
+- Há **14 rascunhos `content.json` identificados** (aulas 01, 02, 03, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 04). Nenhum dos 15 temas recebeu certificação editorial e científica final. A existência do arquivo não equivale a publicação.
 - Os outros **8 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
