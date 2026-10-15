@@ -335,3 +335,288 @@ ECT tem **indicação legítima**, sobretudo em depressão grave com necessidade
 
 Para depressão resistente, estratégias podem envolver troca por outro antidepressivo, combinação com psicoterapia, potencialização com antipsicótico de segunda geração ou lítio, ECT e tratamentos neuromodulatórios em centros habilitados. Protocolos estrangeiros incluem outras tecnologias como estimulação magnética transcraniana repetitiva e esketamina intranasal em indicações específicas. **Registro, acesso no SUS, requisitos de monitorização e protocolos da Anvisa devem ser verificados separadamente em 2026.** Não prometer disponibilidade universal nem apresentar tratamento avançado como alternativa automática após falha de uma semana.
 
+
+## 12. Casos clínicos autorais comentados
+
+### Caso 1 — A pessoa que procura a UBS por dor e fadiga
+
+**Apresentação:** mulher de 42 anos trabalha em turnos, refere dores difusas, cansaço e falta de concentração há um mês. Passou a faltar ao trabalho e deixou de participar de atividades que antes apreciava. Dorme mal e sente tristeza diária; relata dificuldade de cuidar da rotina. Não refere mania/hipomania em perguntas dirigidas, mas há suspeita de anemia por menstruações intensas.
+
+**Hipóteses:** episódio depressivo a confirmar pelos critérios completos, com possível anemia e privação de sono concomitantes.
+
+**Raciocínio:** sintomas afetivos e de interesse, duração e prejuízo justificam avaliação de depressão; anemia/sono podem contribuir e coexistir. É errado dizer que “tudo é psicológico” sem examinar o organismo, assim como concluir que anemia explicaria anedonia/desesperança sem entrevista. Avaliar segurança em toda consulta, ainda que procura inicial tenha sido “dor”.
+
+**Exames:** EEM, sintomas e exame físico, hemograma/ferritina pela história ginecológica, outros exames direcionados; PHQ-9 pode monitorar, não diagnosticar isoladamente.
+
+**Conduta:** combinar cuidado da síndrome depressiva conforme gravidade e preferência, tratar deficiência de ferro se confirmada, melhorar acesso a psicoterapia/ativação comportamental, estabelecer retorno e sinais de piora.
+
+**Por que importa:** a apresentação somática é comum e exige **raciocínio integrador**, não escolha excludente entre corpo e mente.
+
+### Caso 2 — “Só depressão”, mas há períodos de energia extraordinária
+
+**Apresentação:** homem de 26 anos refere tristeza, apatia, culpa e isolamento há três semanas. Durante anamnese, conta dois períodos anteriores de vários dias com necessidade de sono muito reduzida, aumento marcante de energia, gastos e comportamento fora do habitual, testemunhados pela companheira. Não havia uso de estimulantes nesses períodos.
+
+**Hipótese:** episódio depressivo atual com suspeita de **transtorno bipolar**; investigar duração, gravidade e sinais de mania/hipomania.
+
+**Raciocínio:** um episódio depressivo atual pode cumprir critérios sindrômicos, mas transtorno longitudinal não é necessariamente depressivo unipolar. Histórico de elevação patológica de energia pode reclassificar polaridade, e antidepressivo isolado pode produzir virada/instabilidade em subgrupos.
+
+**Exames:** EEM, história longitudinal e informante com consentimento, avaliação de substâncias, antecedentes familiares e funções clínicas.
+
+**Conduta:** avaliação especializada de bipolaridade, evitar prescrição reflexa de antidepressivo em monoterapia antes de esclarecer; plano de segurança e seguimento.
+
+**Por que importa:** **perguntar por hipomania antes de prescrever** evita erro frequente de prova e iatrogenia.
+
+### Caso 3 — Sintomas menos graves e preferência por psicoterapia
+
+**Apresentação:** mulher de 30 anos, duas semanas de humor deprimido e anedonia leves após estressor ocupacional, mantendo alimentação, higiene e trabalho com dificuldade moderada. Sem sintomas psicóticos nem problema atual de segurança; ela prefere não iniciar medicamento e tem acesso a psicoterapia.
+
+**Hipóteses:** síndrome depressiva menos grave ou transtorno de adaptação, conforme critérios e evolução.
+
+**Raciocínio:** a gravidade funcional e os critérios ainda precisam ser analisados; intervenção de menor intensidade pode atender necessidade. NICE NG222 não recomenda antidepressivo como primeira linha rotineira para depressão menos grave, mas respeita preferência informada. Não é correto dizer que “só medicação funciona” nem que “caso leve não merece cuidado”.
+
+**Exames:** entrevista, PHQ-9 para monitorar evolução se apropriado, avaliação clínica contextual, segurança e fatores de acesso.
+
+**Conduta:** autoajuda guiada, TCC/ativação comportamental ou outra modalidade disponível, agenda de reavaliação em 2–4 semanas ou antes se houver piora.
+
+**Por que importa:** decisão compartilhada evita medicalização automática e negligência simultaneamente.
+
+### Caso 4 — Jovem no início do ISRS, agora mais agitado
+
+**Apresentação:** estudante de 20 anos recebeu antidepressivo após diagnóstico clínico de depressão. Quatro dias após iniciar relata inquietação intensa, piora de ansiedade e reaparecimento de pensamentos de morte. Não tem consulta marcada no curto prazo e mora sozinho.
+
+**Hipóteses:** efeito adverso ativador/acatisia, piora da síndrome ou outra causa, com **necessidade imediata de reavaliar segurança**.
+
+**Raciocínio:** antidepressivo não reduz necessidade de suporte nas primeiras semanas. NICE NG222 enfatiza retorno em **uma semana para 18–25 anos** ou preocupação de suicídio após iniciar/aumentar dose, e reavaliação antes se surgirem sinais importantes. A presença de agitação/ideação torna inadequado dizer “espere quatro semanas até a medicação fazer efeito”.
+
+**Exames:** avaliação clínica de segurança, EEM, sinais de ativação/maniformes, uso de substâncias e análise de medicamentos/dose.
+
+**Conduta:** facilitar avaliação clínica rápida no mesmo dia conforme necessidade, não deixá-lo sem apoio diante de perigo atual, discutir modificação da prescrição com profissional e garantir contatos/seguimento. Se situação ameaçar segurança imediata, encaminhar urgentemente com supervisão apropriada.
+
+**Por que importa:** ensina a diferença entre latência do efeito antidepressivo e **urgência de segurança**.
+
+### Caso 5 — Tratamento “resistente” que nunca foi tomado adequadamente
+
+**Apresentação:** homem de 48 anos rotulado como “depressão resistente” por não melhorar após três “tentativas de antidepressivo”. A revisão identifica que interrompeu cada medicamento em cinco a sete dias por náusea ou medo de dependência, sem comunicação com serviço. Tem álcool em uso excessivo e sono insuficiente.
+
+**Hipóteses:** depressão com **ensaios inadequados**, barreiras de adesão, efeitos adversos e substâncias contribuintes; resistência farmacológica verdadeira ainda não demonstrada.
+
+**Raciocínio:** não resposta exige dose, duração, adesão, diagnóstico e tratamento adequados para ser interpretada. Acolher receios, explicar efeitos iniciais e manejo, escolher tolerabilidade, tratar álcool e sono, retomar psicoterapia/suporte. Não rotular “refratário” nem combinar quatro fármacos sem revisar causas corrigíveis.
+
+**Exames:** história detalhada dos tratamentos, segurança, sintomas atuais, comorbidades e exames clínicos direcionados.
+
+**Conduta:** plano compartilhado de novo ensaio adequado ou psicoterapia conforme indicação, estratégias de tolerabilidade, reavaliação precoce e cuidado de uso de substâncias.
+
+**Por que importa:** o diagnóstico de resistência não é contagem de caixas prescritas.
+
+### Caso 6 — Idosa com isolamento, queda e hiponatremia
+
+**Apresentação:** mulher de 76 anos inicia ISRS por depressão recorrente. Após dez dias apresenta confusão, tontura e queda. Usa diurético tiazídico e ingeriu pouca água por doença gastrointestinal. Familiares relatam alteração aguda do comportamento.
+
+**Hipóteses:** **hiponatremia** e possível delirium, relacionados a condição clínica/medicamentos, além da depressão de base.
+
+**Raciocínio:** confusão aguda exige avaliação médica, não conclusão de “depressão piorou” ou “demência súbita”. ISRS podem contribuir para SIADH/hiponatremia, especialmente em idosos e em associação a certos diuréticos; outras causas precisam de avaliação.
+
+**Exames:** sinais vitais, sódio/eletrólitos, função renal, glicemia, exame de atenção e revisão medicamentosa; investigações adicionais conforme quadro.
+
+**Conduta:** atendimento médico urgente conforme gravidade, correção segura da alteração eletrolítica por equipe habilitada, revisão do tratamento e seguimento psiquiátrico após estabilização.
+
+**Por que importa:** vigilância de efeitos adversos pode prevenir queda, lesão e delirium.
+
+### Caso 7 — Depressão grave com incapacidade de alimentar-se
+
+**Apresentação:** homem de 55 anos apresenta depressão grave com lentificação intensa, culpa delirante e recusa persistente de alimentação e hidratação. Está desidratado, perdeu peso e não consegue participar adequadamente de cuidados cotidianos. A família está exausta e sem capacidade de manter cuidado em casa.
+
+**Hipóteses:** episódio depressivo grave com características psicóticas e ameaça clínica; avaliar também catatonia e causas médicas.
+
+**Raciocínio:** prioridade é a segurança e estabilização clínica. Não basta um ISRS com retorno em seis semanas; há perda do autocuidado com ameaça à vida. NICE NG222 admite **ECT** quando resposta rápida é necessária (por exemplo, não comer/beber) e também estratégias especializadas para depressão psicótica.
+
+**Exames:** estado de hidratação/nutrição, eletrólitos, avaliação psiquiátrica e clínica hospitalar, diferencial de catatonia e consentimento/capacidade.
+
+**Conduta:** encaminhamento hospitalar/especializado, estabilização e decisão compartilhada/fundamentada sobre terapias eficazes e rápidas, incluindo ECT quando indicada.
+
+**Por que importa:** gravidade é medida pela consequência clínica, não somente pela soma de critérios.
+
+### Caso 8 — Autoagressão com pedido de alta imediata
+
+**Apresentação:** mulher de 39 anos procurou emergência após episódio recente de autoagressão e tratamento físico inicial. Relata desesperança, conflito conjugal, isolamento e dificuldade de garantir segurança ao voltar para casa. Diz que prefere “não incomodar ninguém”. Uma escala local produziu resultado descrito como “baixo risco”.
+
+**Hipóteses:** crise de sofrimento/autoagressão que exige **avaliação psicossocial e plano de proteção**, independentemente do rótulo numérico.
+
+**Raciocínio:** NICE NG225 proíbe usar escala de risco isoladamente para prever novos episódios ou decidir alta. Avaliação deve abranger necessidades atuais, capacidade de se manter segura, apoio, violência, fatores precipitantes e acesso efetivo ao cuidado. Tratamento físico e psicossocial são concomitantes.
+
+**Exames:** EEM, avaliação de intoxicação/lesões e comorbidades, história psicossocial e rede com consentimento.
+
+**Conduta:** reavaliar segurança e necessidades, garantir atendimento especializado conforme caso, construir plano colaborativo e definir seguimento antes de alta, não liberar unicamente por “baixa pontuação”; seguir obrigação de notificação de violência autoprovocada no Brasil conforme fluxo vigente.
+
+**Por que importa:** o indicador decisivo é **cuidado seguro e efetivamente acessível**, não classificação simplista.
+
+### Caso 9 — Recidiva após suspensão abrupta
+
+**Apresentação:** mulher de 45 anos vinha em remissão de depressão recorrente por nove meses com tratamento e psicoterapia. Decide interromper venlafaxina XR de um dia para o outro por sentir-se bem. Em poucos dias passa a sentir tontura, sensação elétrica intermitente, náusea e irritabilidade; teme “depressão voltando”.
+
+**Hipóteses:** sintomas de **retirada de antidepressivo** relacionados a suspensão abrupta; avaliar também outros problemas e histórico de recaída.
+
+**Raciocínio:** aparecimento logo após interrupção e sintomas sensoriais/vestibulares sugerem retirada mais que recaída depressiva plena. NICE NG222 destaca risco com venlafaxina/paroxetina e recomenda redução individual, às vezes longa. A retirada não é prova de “dependência no sentido aditivo” nem sinal de falha moral.
+
+**Exames:** anamnese temporal, EEM, sintomas somáticos, segurança, revisão das doses e medicamentos.
+
+**Conduta:** reavaliar com prescritor e estabelecer plano apropriado de redução gradual/ajuste sob acompanhamento; também organizar prevenção de recaída de depressão recorrente.
+
+**Por que importa:** mostra por que suspender bruscamente pode causar sofrimento evitável.
+
+## 13. Questões originais de residência — alternativas comentadas
+
+### Questão 1 — Critérios de episódio depressivo maior
+Qual afirmação corresponde à lógica DSM-5-TR para episódio depressivo maior em adultos?
+
+A. Um dia de tristeza basta para diagnóstico.  
+B. Ao menos cinco sintomas no mesmo período de duas semanas, incluindo humor deprimido e/ou anedonia, com prejuízo/exclusões pertinentes.  
+C. Qualquer PHQ-9 positivo confirma transtorno bipolar.  
+D. Alucinação é obrigatória.  
+E. Somente ideação suicida define gravidade.
+
+**Gabarito B.** A ignora duração; C confunde rastreio e diagnóstico; D não é requisito; E reduz gravidade a um único sintoma. **Revisão:** critérios quantitativos são necessários no DSM, mas contexto e exclusões também.
+
+### Questão 2 — Diferencial com bipolaridade
+Paciente depressivo teve períodos prévios de pouca necessidade de sono, energia anormalmente aumentada, gastos e prejuízo funcional. Melhor passo antes de antidepressivo?
+
+A. Ignorar história porque hoje está triste.  
+B. Investigar mania/hipomania e classificar polaridade, evitando monoterapia antidepressiva automática.  
+C. Prescrever estimulante para recuperar energia.  
+D. Diagnosticar delirium sem avaliar atenção.  
+E. Administrar antidepressivo e nunca revisar humor.
+
+**Gabarito B.** A/E perdem informação longitudinal; C pode piorar quadro; D não corresponde ao dado central. **Revisão:** depressão bipolar precisa de estratégia distinta de unipolar.
+
+### Questão 3 — PHQ-9
+Qual é o papel correto do PHQ-9?
+
+A. Diagnóstico definitivo de qualquer transtorno com escore acima de zero.  
+B. Instrumento de rastreio/quantificação sintomática e monitorização, com avaliação clínica complementar.  
+C. Preditor suficiente de suicídio e critério único para alta.  
+D. Substituto de anamnese de mania.  
+E. Teste de função tireoidiana.
+
+**Gabarito B.** A extrapola escore; C contradiz NG225; D ignora polaridade; E não corresponde ao instrumento. **Revisão:** escore não substitui diagnóstico ou segurança.
+
+### Questão 4 — Menos grave e preferência
+Paciente com depressão menos grave deseja psicoterapia e está funcionalmente estável, sem perigo imediato. Segundo NICE NG222:
+
+A. Antidepressivo deve ser prescrito obrigatoriamente a todos.  
+B. Psicoterapia/autoajuda guiada e intervenções apropriadas são opções de primeira linha; medicação não é rotina obrigatória, respeitando preferência.  
+C. Nunca deve retornar à consulta.  
+D. ECT imediata é padrão.  
+E. Não é doença real.
+
+**Gabarito B.** A ignora preferência/evidência; C negligencia seguimento; D desproporcional; E estigmatiza. **Revisão:** cuidado escalonado deve ser efetivo e escolhido com a pessoa.
+
+### Questão 5 — Início do ISRS
+Mulher de 23 anos inicia antidepressivo com preocupação de suicídio. Qual planejamento é correto?
+
+A. Retorno obrigatório apenas em três meses.  
+B. Revisão de segurança, efeitos adversos e sintomas aproximadamente **uma semana** após início ou aumento de dose, com acesso antes se piorar.  
+C. Não perguntar sobre ideias de morte para evitar influenciar.  
+D. Não considerar agitação inicial como sinal de alerta.  
+E. Prometer melhora total em 24 horas.
+
+**Gabarito B.** A atrasa; C/E são incorretos; D omite risco. **Revisão:** NICE NG222 recomenda reavaliação precoce em 18–25 anos ou preocupação de suicídio.
+
+### Questão 6 — Classe e efeito adverso
+Qual associação está correta?
+
+A. Mirtazapina costuma ser opção sem qualquer sedação ou aumento de apetite.  
+B. Bupropiona é obrigatoriamente segura em epilepsia ativa.  
+C. Tricíclicos podem ter maior toxicidade cardíaca em sobredose, importante ao avaliar segurança.  
+D. Venlafaxina nunca exige redução gradual.  
+E. Fluoxetina tem meia-vida ultracurta.
+
+**Gabarito C.** A ignora sedação/apetite; B omite contraindicações convulsivas; D ignora retirada; E inverte farmacocinética. **Revisão:** escolher medicação envolve interações e riscos, não só eficácia média.
+
+### Questão 7 — Ausência de resposta
+Pessoa não melhorou após “três antidepressivos”, tomados por apenas cinco dias cada. O melhor raciocínio:
+
+A. Diagnosticar depressão resistente definitiva.  
+B. Revisar duração, dose, tolerância, adesão, substâncias e diagnóstico antes de afirmar resistência e escalar combinações.  
+C. Indicar sempre quatro antidepressivos simultâneos.  
+D. Concluir que psicoterapia é inútil.  
+E. Excluir depressão por falta de resposta em cinco dias.
+
+**Gabarito B.** A/C são atalhos inadequados; D/E não seguem evidências. **Revisão:** ensaio adequado é pré-requisito para interpretar não resposta.
+
+### Questão 8 — Retirada da venlafaxina
+Após interrupção brusca de venlafaxina, surgem tonturas e sintomas sensoriais em poucos dias. Qual hipótese?
+
+A. Retirada/descontinuação relacionada ao medicamento, exigindo revisão do plano de redução.  
+B. Comprovação definitiva de dependência química.  
+C. Efeito obrigatório de hipertireoidismo.  
+D. Prova de esquizofrenia.  
+E. Não há possibilidade de sintomas por suspensão.
+
+**Gabarito A.** B estigmatiza/inferência errada; C/D não decorrem do curso; E contraria farmacologia. **Revisão:** redução precisa ser individualizada, por vezes por meses.
+
+### Questão 9 — Segurança e escalas
+Qual uso de escalas é compatível com NICE NG225?
+
+A. Escore isolado como critério para liberar todo paciente.  
+B. Categoria “baixo risco” garante que não haverá suicídio.  
+C. Avaliar necessidades de segurança e formular plano clínico; escalas não predizem nem decidem alta sozinhas.  
+D. Nunca realizar avaliação de autoagressão após atendimento físico.  
+E. Hospitalizar toda pessoa com qualquer pensamento intrusivo sem avaliação.
+
+**Gabarito C.** A/B contrariam diretriz; D omite cuidado psicossocial; E ignora individualização. **Revisão:** descrição concreta de necessidades é mais útil que rótulo preditivo.
+
+### Questão 10 — Início do cuidado em urgência
+Pessoa em depressão grave, sem conseguir alimentar-se e com delírios de culpa e desidratação. Melhor princípio:
+
+A. Apenas autoajuda guiada e retorno em três meses.  
+B. Tratamento urgente em serviço especializado e estabilização clínica; considerar ECT em cenário grave que exige resposta rápida.  
+C. Desconsiderar sinais clínicos se PHQ-9 estiver baixo.  
+D. Prescrever antidepressivo e ignorar incapacidade de autocuidado.  
+E. Esperar que a pessoa concorde com todo quadro antes de pedir avaliação.
+
+**Gabarito B.** A/D postergam urgência; C confunde escala; E desconsidera necessidade de avaliação e capacidade decisória. **Revisão:** ECT pode ser legítima em depressão com ameaça vital, conforme NICE NG222.
+
+### Questão 11 — Notificação no SUS
+Após atendimento por tentativa de suicídio no Brasil, qual atitude é correta?
+
+A. Não notificar porque é evento privado.  
+B. Considerar notificação compulsória imediata de violência autoprovocada conforme fluxo normativo e manter cuidado clínico e sigilo adequado.  
+C. Substituir atendimento por formulário.  
+D. Publicar detalhes no grupo de comunidade.  
+E. Só notificar quando houver óbito.
+
+**Gabarito B.** A/E ignoram vigilância; C deixa pessoa sem cuidado; D viola privacidade. **Revisão:** notificação é obrigação de saúde pública e **não substitui assistência**.
+
+### Questão 12 — Depressão e tireoide
+Paciente apresenta humor deprimido, fadiga e constipação. Exame sugere hipotireoidismo. Melhor conduta:
+
+A. Ignorar tireoide porque depressão é sempre exclusivamente psíquica.  
+B. Investigar clinicamente TSH conforme história, avaliar possibilidade de coexistência e tratar cada condição apropriada.  
+C. Dosar todas as citocinas para confirmar depressão.  
+D. Fechar bipolaridade sem história de hipomania.  
+E. Considerar toda fadiga sinal de câncer.
+
+**Gabarito B.** A não reconhece diferencial; C não é diagnóstico rotineiro; D/E não seguem evidência. **Revisão:** transtornos de humor e doenças clínicas podem coexistir.
+
+### Questão 13 — PHQ-9 e alta
+Pessoa tem PHQ-9 com sintomas melhorados mas relata preocupação imediata de não conseguir manter segurança no domicílio. Qual interpretação?
+
+A. Remissão numérica autoriza alta automática.  
+B. Situação exige avaliação de segurança e plano real de apoio/encaminhamento, independentemente da pontuação.  
+C. A pergunta de segurança não precisa ser feita em remissão.  
+D. Escore sozinho prediz meses seguintes.  
+E. A pessoa deve assinar promessa de segurança como única medida.
+
+**Gabarito B.** A/C/D substituem avaliação por número; E usa contrato como falso substituto de cuidado. **Revisão:** dimensão clínica de segurança é paralela à gravidade dos sintomas.
+
+### Questão 14 — Continuação do antidepressivo
+Após remissão de primeiro episódio depressivo em uso de ISRS bem tolerado, qual atitude é mais adequada em linhas gerais?
+
+A. Suspender no dia seguinte à primeira melhora.  
+B. Discutir manutenção após remissão e reavaliar, em geral por pelo menos seis meses conforme NICE, considerando recorrência e preferência.  
+C. Manter vitaliciamente em todos sem revisão.  
+D. Trocar automaticamente para IMAO.  
+E. Não acompanhar efeitos adversos se humor melhorou.
+
+**Gabarito B.** A aumenta riscos; C não individualiza; D é incorreto; E ignora segurança. **Revisão:** continuação e prevenção de recaída são fases do tratamento.
+
