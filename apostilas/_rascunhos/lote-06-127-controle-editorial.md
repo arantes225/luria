@@ -87,3 +87,40 @@ A **ESGE 2026 para úlcera hemorrágica** revisou parcialmente a ESGE 2021, incl
 7. Aprovação humana antes de merge/deploy/publicação.
 
 **Parecer: texto-base, casos, questões, JSON, HTML e pauta visual produzidos e conferidos estruturalmente; rascunho clínico/editorial ainda não certificado nem publicado.**
+
+
+---
+
+## Revisão estrutural adicional — 15/10/2026
+
+A base documental de comparação foi reaberta: **“01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”** (9.035 caracteres de texto extraído) e **“06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”** (6.654 caracteres). São resumos de abrangência e condutas, não apostilas institucionais extensas de autoria comprovada. O texto existente foi preservado, sem copiar trechos nem imagens.
+
+**Conferências efetuadas:**
+- Rascunho Markdown de **90.335 caracteres**, 29 capítulos, 8 casos e 12 questões.
+- Corpo instrucional estimado em **61.940 caracteres** nos capítulos 1–25, sem casos, questões, referências e controle. A contagem não certifica ausência de repetição semântica.
+- JSON editorial com **28 seções** e **10 referências** vinculadas.
+- Prévia HTML preserva **29 seções**, 8 casos, 12 questões com quatro alternativas, **zero âncoras internas ausentes** e **zero IDs repetidos** na inspeção estrutural.
+- A diretriz ESGE para **úlcera péptica hemorrágica 2026**, DOI 10.1055/a-2863-8314, permanece fonte atual pertinente ao ramo não varicoso; varizes possuem documentos específicos, incluindo **Baveno VIII 2026** e ESGE varicosa 2022.
+- **Existe uma corrigenda formal da ESGE 2026**, DOI 10.1055/a-2881-7411 (PubMed 42173116), mas o texto corretivo integral ainda não foi recuperado ou cotejado nesta rodada: **proibido afirmar que todos os detalhes da ESGE 2026 estão corrigidos** antes de confrontá-la. Inserir esta checagem como gate científico.
+
+### Questões: matriz lexical de autossuficiência (não é revisão clínica)
+| Questão | Competência | Capítulo(s) |
+| --- | --- | --- |
+| 1 | Hematoquezia em choque | 1, 3, 5 |
+| 2 | Tempo de EDA | 7 |
+| 3 | Forrest IIa | 8, 9 |
+| 4 | Forrest IIb | 8, 9 |
+| 5 | Adrenalina não isolada | 9 |
+| 6 | IBP de alta dose | 10 |
+| 7 | HDA varicosa antes EDA | 13 |
+| 8 | Falha de hemostasia | 9, 19 |
+| 9 | Reintrodução antitrombótico | 15 |
+| 10 | Lesão mucosa versus transmural | 12 |
+| 11 | GBS e alta | 6 |
+| 12 | Fístula aortoentérica | 18 |
+
+**Resultado:** cobertura dos termos necessários em **12/12** nos capítulos indicados, sem consultar gabaritos. A triagem não prova precisão de dose, técnica, conduta, risco, alternativas ou fidelidade da diretriz; todos exigem revisão independente de emergência e endoscopia.
+
+**Conduta editorial:** preservar separação entre ramo não varicoso (Forrest, clipes, pinças, IBP, TAE) e varicoso (vasoativos, antibiótico em cirrose, ligadura e TIPS), sem simplesmente repetir capítulos da apostila 126. Nenhum deploy/merge, nenhuma imagem clínica incorporada, nenhuma execução de validador oficial nem inspeção PWA foi realizada nesta rodada.
+
+**Gates mantidos:** corrigenda ESGE 2026, QA de farmacologia e hemostasia endoscópica, matrizes semânticas, imagens e licenças aprovadas no Admin, dry-run oficial e revisão visual. **Status: RASCUNHO NÃO PUBLICAR.**
