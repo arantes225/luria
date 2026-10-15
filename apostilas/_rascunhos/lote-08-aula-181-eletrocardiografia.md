@@ -43,7 +43,7 @@ A direção do vetor elétrico em relação à derivação determina se uma defl
 
 ## 3. Aquisição técnica: onde começam os erros
 
-Na calibração convencional, a velocidade é **25 mm/s**. Cada pequeno quadrado horizontal de 1 mm representa **0,04 s (40 ms)**; cinco quadradinhos representam 0,20 s. Verticalmente, com ganho usual de **10 mm/mV**, cada milímetro representa 0,1 mV e cada quadrado grande de 5 mm corresponde a 0,5 mV. A escala deve constar ou ser verificável no traçado. Se velocidade/gain forem alterados, todas as contas mudam.
+Na calibração convencional, a velocidade é **25 mm/s**. Cada pequeno quadrado horizontal de 1 mm representa **0,04 s (40 ms)**; cinco quadradinhos representam 0,20 s. Verticalmente, com ganho usual de **10 mm/mV**, cada milímetro representa 0,1 mV e cada quadrado grande de 5 mm corresponde a 0,5 mV. A escala deve constar ou ser verificável no traçado. Se velocidade ou ganho forem alterados, as medidas no papel precisam ser recalculadas.
 
 Eletrodos de membros: braço direito (RA), braço esquerdo (LA), perna direita (RL, usualmente referência) e perna esquerda (LL). Precordiais: **V1** no quarto espaço intercostal, borda esternal direita; **V2** no quarto espaço, borda esternal esquerda; **V4** no quinto espaço, linha hemiclavicular; **V3** entre V2 e V4; **V5** na linha axilar anterior ao nível horizontal de V4; **V6** na linha axilar média, no mesmo nível. Não posicionar V1/V2 muito altos ou V4–V6 ao longo de arco em vez de linha horizontal.
 
@@ -152,7 +152,7 @@ Esses limiares são guias para um padrão de ECG em determinado contexto; o doen
 | Condição | Pistas que aumentam a probabilidade | Limite da pista |
 |---|---|---|
 | SCA com oclusão | Dor compatível, alterações territoriais/recíprocas, dinâmica, instabilidade | Supra pode faltar; troponina inicial pode estar normal |
-| Pericardite aguda | Dor pleurítica e posicional, alterações difusas de ST/PR, quadro inflamatório | Pericardite não segue padrões perfeitos; diferenciar de IAM/myopericardite |
+| Pericardite aguda | Dor pleurítica e posicional, alterações difusas de ST/PR, quadro inflamatório | Pericardite não segue padrões perfeitos; diferenciar de IAM/miopericardite |
 | Repolarização precoce | Padrão estável, pessoa sem sintomas de isquemia, morfologia compatível | Não usar rótulo benigno automaticamente na dor torácica |
 | Hipertrofia/bloqueio | Discordâncias secundárias e alterações de QRS | Reduz acurácia dos critérios simples de ST |
 | Hiperpotassemia | Conjunto clínico, alterações de P/QRS/T e evidência laboratorial | ECG normal não exclui elevação perigosa do potássio |
@@ -433,7 +433,7 @@ O padrão **bloqueio de ramo direito + bloqueio divisional anterossuperior esque
 
 ## 28. Isquemia miocárdica: a série dinâmica é mais importante do que uma fotografia
 
-Um ECG inicial não diagnóstico não exclui oclusão coronariana. Cerca de um em cada dez pacientes que finalmente recebe diagnóstico de IAM com supra pode ter ECG inicial não diagnóstico; dados variam por população. A orientação ACC/AHA 2025 recomenda **ECG em até 10 minutos** na avaliação de suspeita de SCA e repetir ECG diante de sintomas persistentes, recorrência de dor ou deterioração clínica, com troponina de alta sensibilidade e avaliação de risco segundo protocolo.
+Um ECG inicial não diagnóstico não exclui oclusão coronariana. A orientação ACC/AHA 2025 recomenda **ECG em até 10 minutos** na avaliação de suspeita de SCA e repetir ECG diante de sintomas persistentes, recorrência de dor ou deterioração clínica, com troponina de alta sensibilidade e avaliação de risco segundo protocolo.
 
 ### 28.1. Derivações e vascularização como aproximação probabilística
 
@@ -716,3 +716,38 @@ Além dos três benchmarks já registrados na aula-base, foram **abertos e lidos
 | HTML, JSON, QA PWA | Não realizados | Não fazer deploy, não fazer merge |
 
 **Conclusão editorial desta camada:** o objetivo foi transformar critérios isolados em decisões e diferenciais com exemplos, sem substituir livros inteiros de cardiologia ou ACLS. Este material é original e serve à curadoria médica, mas **não se converte automaticamente em livro publicado** até obter traçados reais com direitos, revisão cardiológica, checagem de doses e testes em tela.
+
+
+## 38. Rastreabilidade visual dos ECGs: fonte real, licença e correções científicas
+
+A fonte **PTB-XL, versão 1.0.3, do PhysioNet**, foi examinada. Ela contém 21.799 ECGs clínicos de 12 derivações e 10 segundos, com sinais disponíveis a 100 e 500 Hz e metadados com anotações de laudo. A versão consultada declara **Creative Commons Attribution 4.0 (CC BY 4.0)**. O acesso aberto e essa licença permitem avaliar a construção de figuras derivadas, desde que cumpridas atribuição, indicação de adaptações e outras condições da licença.
+
+Foi criado na branch um utilitário editorial: **scripts/editorial/render_ptbxl_ecgs.py**, para renderizar sinais WFDB autênticos de 12 derivações em WebP com manifesto de proveniência. Esse utilitário **não escolhe diagnóstico, não inventa ondas e não certifica o traçado**. A coleta dos arquivos binários originais não foi concluída nesta sessão; portanto **nenhum ECG foi gerado, incorporado ou aprovado**. O script ainda precisa ser executado e testado com os sinais PTB-XL originais por equipe autorizada antes do uso.
+
+### Checklist por figura de ECG real
+
+1. Selecionar o identificador exato de registro, confirmar versão 1.0.3 e conferir integridade dos arquivos WFDB de origem.
+2. Verificar velocidade, ganho, derivação e voltagem; recortes digitais não devem esconder ondas P, ST nem artefatos relevantes.
+3. Usar metadados de classificação e laudo apenas como **pistas**, nunca aceitar automaticamente o rótulo; confirmar com cardiologista. Um ECG anotado como infarto não comprova necessariamente **infarto agudo** no momento da aquisição.
+4. Legendar o achado realmente visível, topografia, diagnósticos diferenciais e limitação da imagem; incluir nome do conjunto, versão, registro, URL de fonte, licença CC BY 4.0 e modificações.
+5. Se o ECG selecionado não mostrar claramente o padrão, substituir a amostra; **não acrescentar elevações de ST, ondas Q ou arritmias fictícias** sobre o sinal de paciente.
+6. Comprimir em WebP para o limite técnico LURIA (alvo até 120 kB para ECG) **sem sacrificar legibilidade clínica**.
+7. Aprovação médica, licença, privacidade, legenda e renderização no PWA/desktop são gates independentes. Não confundir imagem candidata, imagem preparada e imagem aprovada.
+8. Não reutilizar imagens dos PDFs de cursinhos do Drive sem direitos de reprodução comercial comprovados.
+
+**Referência de dados:** Wagner P, Strodthoff N, Bousseljot RD, Samek W, Schaeffter T. PTB-XL v1.0.3. PhysioNet, 2022. DOI: https://doi.org/10.13026/kfzx-aw45 . Fonte original: https://physionet.org/content/ptb-xl/1.0.3/ . Licença: https://creativecommons.org/licenses/by/4.0/ .
+
+### Conferência clínica dirigida por normas primárias — pontos de alto risco
+
+- **FA pré-excitada (seção 26):** diretriz ACC/AHA/ACCP/HRS 2023 considera contraindicados agentes que bloqueiam condução AV, incluindo adenosina, betabloqueadores, verapamil, diltiazem, digoxina e amiodarona IV, devido a risco de deterioração e fibrilação ventricular. Isso se refere **à FA com condução anterógrada pela via acessória**, e não a todo paciente com padrão basal de WPW.
+- **BRE novo (seções 9 e 28):** diretriz SCA 2025 não o considera diagnóstico de IAM isoladamente. A decisão depende de sintomas, mudanças dinâmicas, evidências de isquemia e reperfusão.
+- **Bradicardia (seção 27):** AHA ACLS 2025 confirma atropina inicial de 1 mg IV no adulto com bradicardia sintomática/comprometimento, repetível até dose total de 3 mg. Não tratar FC baixa fisiológica como emergencial.
+- **IAM posterior (seção 28):** SCA 2025 recomenda V7–V9 quando suspeito, especialmente infra de ST isolado ≥0,5 mm em V1–V3; o livro não deve esperar supra anterior clássico para investigar.
+- **Cardioversão 2025:** AHA atualizou algoritmo de energia; ao ensinar opções de choque, conferir o algoritmo de 2025 e o dispositivo, sem reproduzir valores históricos dos resumos do Drive como se fossem atuais.
+- **Retirada de afirmação não rastreada:** a frase com estimativa de proporção fixa de IAM com ECG inicial não diagnóstico foi retirada; mantém-se a afirmação sustentada de que ECG inicialmente normal/não diagnóstico **não exclui SCA**.
+
+**Fontes de conferência:** https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support .
+
+### Gatilhos editoriais ainda abertos
+
+O texto já ultrapassa a métrica bruta de 60 mil caracteres, mas ainda faltam: prova da originalidade útil depois de retirar sobreposições dos capítulos 8–12 e 24–30; ECGs reais aprovados; revisão independente de **17 casos clínicos e 24 questões**; conferência de medicamentos e decisões de cardioversão; integração em HTML/JSON e QA responsivo. **Publicação bloqueada; sem merge e sem deploy.**
