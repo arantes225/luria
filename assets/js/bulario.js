@@ -6,7 +6,7 @@
   let rows=[], protocols=[], selected=null;
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
-  const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
+  const status=row=>row.data?.status==='posology_verified'?2:['verified','source_reviewed'].includes(row.data?.status)?1:0;
   const field=(label,value)=>`<div class="rx-field"><span>${esc(label)}</span><b>${esc(value||'A confirmar')}</b></div>`;
   const multilineField=(label,value)=>{
     const raw=String(value||'A confirmar').trim();
@@ -75,7 +75,7 @@
     const matches=rows.filter(row=>Number.isFinite(searchScore(row,term)));
     matches.sort((a,b)=>searchScore(a,term)-searchScore(b,term)||status(b)-status(a)||a.name.localeCompare(b.name,'pt-BR'));
     count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Fonte vinculada — confirmar posologia</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -167,12 +167,12 @@
   }
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
-    const d=row.data||{},allFormulations=Array.isArray(d.formulations)?d.formulations:[],formulations=approvedFormulations(d),pendingCount=allFormulations.length-formulations.length,ready=formulations.length>0,summary=d.status==='verified';
+    const d=row.data||{},allFormulations=Array.isArray(d.formulations)?d.formulations:[],formulations=approvedFormulations(d),pendingCount=allFormulations.length-formulations.length,ready=formulations.length>0;
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
     const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
-    detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Apresentações com fonte vinculada':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
+    detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Apresentações com fonte vinculada':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
         ${ready?`<button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>`:'<button type="button" class="secondary" disabled aria-label="Ficha sem fonte conferida">Prescrição indisponível • ficha em revisão</button>'}
