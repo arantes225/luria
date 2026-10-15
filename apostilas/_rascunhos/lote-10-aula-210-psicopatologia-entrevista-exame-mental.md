@@ -206,3 +206,234 @@ Tarefas de orientação, evocação, atenção, nomeação e fluência ajudam a 
 
 **Formulação:** apresentação compatível com **síndrome depressiva**, ainda não diagnóstico etiológico definitivo. Investigar duração/critério de episódio, sintomas associados, história de mania/hipomania, causas médicas e segurança antes de estabelecer diagnóstico e plano. Os critérios de transtornos específicos serão abordados na aula 211.
 
+
+
+## 11. Casos clínicos comentados — exame do estado mental como ferramenta, não rótulo
+
+### Caso 1 — A “depressão” que era delirium hipoativo
+
+**Apresentação:** mulher de 78 anos em internação clínica por pneumonia, anteriormente independente, torna-se silenciosa, sonolenta e pouco participativa em dois dias. A família diz que “ela está deprimida por estar no hospital”. Durante entrevista, erra meses ao contrário, não mantém conversa longa e oscila entre clareza e confusão.
+
+**Hipótese:** síndrome confusional aguda (**delirium hipoativo**) sobre condição clínica, a investigar imediatamente.
+
+**Raciocínio:** (1) mudança em horas/dias, e não um curso depressivo típico gradual; (2) atenção e consciência flutuantes; (3) infecção, hipoxemia, sedativos, analgesia, alterações metabólicas e sono hospitalar podem contribuir; (4) a forma hipoativa passa despercebida por não haver agitação; (5) delirium não exclui depressão prévia, mas o risco agudo requer prioridade clínica.
+
+**Exames:** sinais vitais/oxigenação, glicemia, revisão medicamentosa, exame neurológico, avaliação de infecção/metabolismo conforme condição. Ferramenta 4AT/CAM pode apoiar sem substituir avaliação.
+
+**Conduta:** equipe clínica prioriza causas tratáveis, ambiente orientador, comunicação com familiares, mobilização e sono com segurança; evitar sedação indiscriminada. Se risco de agitação/autoextubação, seguir protocolo hospitalar.
+
+**Por que importa?** Idoso quieto e desatento pode estar mais doente do que parece; “não está agitado” não significa ausência de delirium.
+
+### Caso 2 — Pensamento circunstancial ou tangencial?
+
+**Apresentação:** pessoa de 44 anos procurada por dificuldade de comunicação. Ao ser perguntada por que faltou ao trabalho, começa a descrever detalhadamente o ônibus, horário, roupas, colegas, clima e trânsito; após três minutos responde que teve uma crise de enxaqueca.
+
+**Hipótese fenomenológica:** **circunstancialidade** do pensamento: excesso de detalhes com retorno ao objetivo da pergunta.
+
+**Raciocínio:** (1) sequência é longa mas mantém possibilidade de chegar ao ponto; (2) não é fuga de ideias apenas porque fala muito; (3) não é descarrilamento grave se as conexões permanecem compreensíveis; (4) observar se há aceleração, ansiedade, traços de personalidade, contexto cultural e prejuízo; (5) EEM descreve forma sem definir diagnóstico psiquiátrico específico.
+
+**Exames:** história longitudinal e avaliação de sintomas de humor/ansiedade quando pertinente, além de observação em diferentes perguntas.
+
+**Conduta:** redirecionamento respeitoso da entrevista, descrição objetiva em prontuário e avaliação contextual.
+
+**Por que importa?** Diferenciar termos semiológicos reduz falsas classificações de “pensamento desorganizado”.
+
+### Caso 3 — A inquietação após novo antipsicótico
+
+**Apresentação:** homem de 29 anos recebeu ajuste recente de antipsicótico. Desde então não consegue ficar sentado, caminha continuamente, diz sentir inquietação interna intolerável, sem euforia, ideias grandiosas ou aumento real de energia prazerosa. A equipe interpreta como “resistência ao tratamento e agressividade”.
+
+**Hipótese:** **acatisia** associada a medicamento, após excluir outras causas, e não necessariamente mania ou piora psicótica.
+
+**Raciocínio:** (1) temporalidade com fármaco; (2) sofrimento subjetivo com necessidade de movimento; (3) ausência de outros sinais de mania; (4) ajustar entrevista e exame para efeitos extrapiramidais, dor, agitação e intoxicação; (5) rotular como hostilidade pode levar a aumento de dose e piora do quadro.
+
+**Exames:** revisão completa da prescrição e cronologia, EEM motor, sinais vitais e avaliação de outros efeitos adversos; investigação clínica adicional se necessário.
+
+**Conduta:** reavaliação rápida pelo prescritor, plano de segurança e manejo de evento adverso conforme protocolo, evitando escalada automática do agente suspeito.
+
+**Por que importa?** A psicomotricidade exige diagnóstico diferencial farmacológico e risco iatrogênico.
+
+### Caso 4 — O “delírio” que é uma crença culturalmente compartilhada
+
+**Apresentação:** uma paciente de 39 anos descreve experiência religiosa pouco familiar ao entrevistador, relatada por várias pessoas de sua comunidade em rituais específicos. Mantém crítica quanto à diferença entre experiência espiritual e tarefas cotidianas, bom funcionamento e nenhum comportamento perigoso ou mudança abrupta.
+
+**Hipótese:** experiência cultural/religiosa, não evidência suficiente de delírio ou psicose.
+
+**Raciocínio:** (1) incomum para médico não significa patológico; (2) crença é contextualizada e compartilhada; (3) ausência de prejuízo, sofrimento excessivo ou perda acentuada de julgamento; (4) investigar se existem sintomas adicionais, intoxicação ou alteração de consciência, sem impor interpretação própria; (5) EEM precisa ser culturalmente informado.
+
+**Exames:** entrevista contextual com consentimento, funções cognitivas/afetivas conforme queixa; sem painel indiscriminado na ausência de sinais clínicos.
+
+**Conduta:** registrar observação sem rótulo estigmatizante, respeitar autonomia e manter acompanhamento se outros sintomas surgirem.
+
+**Por que importa?** É um teste de cuidado cultural e de limites do conceito de delírio.
+
+### Caso 5 — Obsessão ou convicção delirante?
+
+**Apresentação:** estudante de 23 anos descreve pensamentos repetitivos de contaminação que considera excessivos e indesejados. Tenta neutralizá-los lavando as mãos inúmeras vezes, sabe que o medo pode estar desproporcional mas sente ansiedade se não realiza ritual.
+
+**Hipótese fenomenológica:** **obsessões com comportamentos compulsivos**; avaliação para TOC se critérios longitudinais estiverem presentes.
+
+**Raciocínio:** (1) pensamento intrusivo e não desejado; (2) reconhecimento variável de excesso e busca de neutralização; (3) isso difere de crença fixa sem crítica típica de alguns delírios; (4) grau de insight pode variar no TOC, inclusive casos com insight ausente; (5) diagnóstico requer tempo, prejuízo e diferenciais.
+
+**Exames:** entrevista clínica e avaliação funcional, pesquisa de humor/risco e uso de substâncias conforme indicação.
+
+**Conduta:** encaminhamento/tratamento específico a ser discutido na aula 213; registrar fenômeno e prejuízo sem reduzir o caso a “medo de sujeira”.
+
+**Por que importa?** Saber classificar o fenômeno é mais útil que chamar toda ideia difícil de controlar de delírio.
+
+### Caso 6 — Mutismo, rigidez e piora de sinais vitais
+
+**Apresentação:** paciente de 35 anos com doença mental prévia fica imóvel, não responde verbalmente, mantém posturas desconfortáveis e apresenta rigidez. Evolui com febre e instabilidade autonômica. Recebia antipsicótico recentemente, mas o momento de início de sinais motores ainda não está claro.
+
+**Hipóteses:** **catatonia com sinais graves**, síndrome neuroléptica maligna e outras doenças clínicas/neurológicas importantes no diferencial.
+
+**Raciocínio:** (1) mutismo e posturas sugerem fenômeno catatônico; (2) febre/instabilidade tornam o caso uma **emergência médica**; (3) é preciso investigar exposição medicamentosa, alteração de consciência e sinais neurológicos; (4) catatonia pode ocorrer com diferentes diagnósticos de base e não equivale obrigatoriamente a esquizofrenia; (5) manejo exige equipe experiente e suporte orgânico, não orientação ambulatorial simples.
+
+**Exames:** monitorização, sinais vitais, função renal, CK quando indicada, eletrólitos, exames infecciosos e neurológicos conforme caso, revisão de medicações.
+
+**Conduta:** avaliação urgente hospitalar e equipe de psiquiatria/clínica/neurologia; evitar atrasar estabilização enquanto se procura classificação psiquiátrica definitiva.
+
+**Por que importa?** Reconhece complicação grave que pode ser confundida com “recusa de conversar”.
+
+## 12. Questões originais comentadas — semiologia de residência
+
+### Questão 1 — Alteração aguda de atenção
+
+Paciente idosa apresenta mudança em 24 horas, oscilação de consciência e desatenção importante após infecção. Melhor hipótese sindrômica inicial?
+
+A. Transtorno neurocognitivo maior confirmado.
+B. Delirium.
+C. Transtorno de personalidade.
+D. Simulação obrigatória.
+E. Transtorno delirante primário confirmado.
+
+**Gabarito: B.** A demanda curso e avaliação mais amplos; C/D são inferências sem base; E não explica bem alteração de atenção flutuante. **Revisão:** mudança aguda/flutuante e desatenção são centrais.
+
+### Questão 2 — Alucinação versus ilusão
+
+Pessoa confunde casaco pendurado em quarto escuro com intruso, mas corrige quando acende a luz. O fenômeno é melhor descrito como:
+
+A. Ilusão.
+B. Alucinação sem estímulo.
+C. Delírio persistente.
+D. Obsessão.
+E. Afasia.
+
+**Gabarito: A.** Havia estímulo visual real interpretado de forma equivocada; B pressupõe ausência de estímulo; C é crença, não percepção; D é pensamento intrusivo; E é alteração de linguagem. **Revisão:** definir se havia estímulo real.
+
+### Questão 3 — Humor e afeto
+
+Paciente refere humor deprimido há quatro semanas, mas sorri e demonstra expressão emocional momentânea ao falar do filho. A melhor afirmação:
+
+A. O sorriso descarta qualquer síndrome depressiva.
+B. Humor e afeto são dimensões diferentes; afeto reativo não exclui humor deprimido sustentado.
+C. Afeto é exclusivamente fala do paciente, humor só observação.
+D. O caso demonstra psicose obrigatória.
+E. O diagnóstico é mania.
+
+**Gabarito: B.** A confunde um momento observável com curso; C inverte os conceitos; D/E não são sustentados. **Revisão:** humor é experiência predominante; afeto, expressão.
+
+### Questão 4 — Circunstancialidade
+
+Paciente responde com muitos detalhes, porém finalmente chega à resposta solicitada. Qual termo descreve melhor?
+
+A. Tangencialidade.
+B. Bloqueio.
+C. Circunstancialidade.
+D. Mutismo.
+E. Neologismo.
+
+**Gabarito: C.** A não chega ao objetivo; B interrompe pensamento; D ausência de fala; E criação vocabular peculiar. **Revisão:** na circunstancialidade há retorno ao ponto.
+
+### Questão 5 — Redução da necessidade de sono
+
+Pessoa dorme duas horas por noite por uma semana, refere energia muito aumentada e ausência de cansaço, está acelerada e com projetos expansivos. Qual fenômeno merece investigação?
+
+A. Redução da necessidade de sono em síndrome de elevação do humor.
+B. Insônia isolada com exaustão necessariamente.
+C. Demência irreversível confirmada.
+D. Delirium em qualquer caso.
+E. Luto simples obrigatório.
+
+**Gabarito: A.** B não contempla ausência de fadiga e energia; C/D/E não decorrem do quadro sem dados adicionais. **Revisão:** redução da necessidade de sono difere de insônia.
+
+### Questão 6 — Pensamento intrusivo
+
+Uma pessoa relata pensamentos de contaminação repetitivos, indesejados e reconhecidos como excessivos, acompanhados de lavagem ritualizada. Melhor descrição inicial?
+
+A. Obsessões e possíveis compulsões.
+B. Delírio persecutório comprovado.
+C. Alucinação auditiva.
+D. Afasia.
+E. Delirium hipoativo.
+
+**Gabarito: A.** B ignora caráter intrusivo/insight; C é percepção; D linguagem; E consciência/atenção. **Revisão:** descrever fenômeno antes de concluir transtorno específico.
+
+### Questão 7 — Acatisia
+
+Paciente torna-se incapaz de ficar sentado dias após iniciar antipsicótico, relata inquietação interna intensa. Qual hipótese farmacológica deve ser investigada?
+
+A. Acatisia.
+B. Afasia de Broca.
+C. Demência vascular.
+D. Catalepsia fisiológica.
+E. Falta de colaboração sem avaliação.
+
+**Gabarito: A.** B/C/D são fenômenos diferentes; E negligencia efeito adverso. **Revisão:** temporalidade e inquietação subjetiva importam.
+
+### Questão 8 — Atenção não equivale a orientação
+
+Um paciente sabe nome e cidade, mas tem desatenção flutuante e alteração aguda de consciência. Qual afirmação é correta?
+
+A. Orientação parcial exclui delirium.
+B. Delirium permanece possibilidade importante apesar de orientação preservada em parte.
+C. Há esquizofrenia comprovada.
+D. Não é preciso examinar sinais vitais.
+E. A única causa é privação de sono.
+
+**Gabarito: B.** A reduz síndrome a orientação; C/D/E ignoram exame e etiologias. **Revisão:** atenção e flutuação são elementos-chave.
+
+### Questão 9 — Catatonia grave
+
+Paciente com mutismo, posturas anômalas, febre e instabilidade hemodinâmica apresenta risco principal de:
+
+A. Ser liberado porque não reclama.
+B. Ter síndrome psicomotora grave/complicação médica que requer avaliação hospitalar urgente.
+C. Estar apenas com “timidez” sem necessidade de avaliação.
+D. Ter epilepsia descartada pela ausência de convulsão evidente.
+E. Ter transtorno de ansiedade leve confirmado.
+
+**Gabarito: B.** A/C/E banalizam sinais; D conclui sem investigação neurológica. **Revisão:** febre/rigidez/autonomia exigem urgência, com catatonia e síndrome neuroléptica maligna no diferencial.
+
+### Questão 10 — Validade cultural
+
+Uma crença espiritual incomum para o entrevistador é compartilhada culturalmente, não há prejuízo ou desorganização e a pessoa mantém boa crítica. Qual postura?
+
+A. Diagnosticar delírio automaticamente por divergência cultural.
+B. Considerar contexto cultural, prejuízo e demais sintomas antes de classificar o fenômeno.
+C. Ignorar a pessoa e entrevistar somente familiar.
+D. Prescrever antipsicótico compulsoriamente.
+E. Chamar alucinação toda crença religiosa.
+
+**Gabarito: B.** A/D/E são reducionistas; C desrespeita autonomia e não é necessário na situação descrita. **Revisão:** crença cultural não é critério de psicose isoladamente.
+
+## 13. Figuras e recursos visuais didáticos planejados
+
+Não há nenhuma imagem médica real inserida nem licenciada. Para a semiologia psiquiátrica, priorizar **fluxogramas e esquemas autorais**, evitando fotografias desnecessárias ou potencialmente estigmatizantes. Banco proposto: (1) mapa dos domínios EEM; (2) diferença humor/afeto; (3) forma/curso/conteúdo de pensamento; (4) distinção ilusão/alucinação; (5) fluxograma delirium versus psicose primária; (6) modelo de registro descritivo EEM; (7) esquema de entrevista longitudinal e observação transversal; (8) linha do tempo de episódios afetivos; (9) diferenças cognitivas entre atenção/registro/evocação; (10) triagem de causas clínicas em alteração mental aguda; (11) diferenças de acatisia/agitação/catatonia; (12) circuito de avaliação de risco e encaminhamento da APS para rede especializada.
+
+Se forem usadas fotografias ou vídeos de pacientes, são necessários consentimento e documentação de direitos compatíveis com uso comercial e privacidade. **Não produzir imagens fictícias de quadros estigmatizantes como se fossem fotografias de pacientes reais**, nem reutilizar figuras da OMS sem avaliar licença para uso comercial.
+
+## 14. Referências científicas e notas de licença
+
+1. **World Health Organization.** Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders. Geneva: WHO, 2024. https://www.who.int/publications/i/item/9789240077263. **CC BY-NC-ND 3.0 IGO; não copiar/adaptar conteúdo protegido para produto comercial sem autorização.** Usada como referência de organização diagnóstica e terminologia, não como licença para transcrever critérios.
+2. **World Health Organization.** Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders. 3ª ed., 2023. https://www.who.int/publications/i/item/9789240084278. **Licença CC BY-NC-SA 3.0 IGO** com restrição comercial; utilizada como referência de cuidado baseado em evidências, sem reproduzir formulários.
+3. **OMS/WHO.** ICD-11 International Classification of Diseases. https://icd.who.int/. A implementação nacional e nomenclatura de codificação devem ser confirmadas conforme regras brasileiras atuais.
+4. **American Psychiatric Association.** Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR). Washington DC: APA, 2022. Referência bibliográfica reconhecida, **texto integral não consultado nesta rodada**. Critérios proprietários não devem ser copiados.
+5. **WHO mhGAP Evidence Resource Centre.** https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre. Para consulta de módulos de psicose, humor, autolesão e condições clínicas.
+
+## 15. Auditoria provisória e próxima etapa
+
+**Conteúdo atual:** fundamentos de entrevista, contexto e risco, domínios do EEM, delirium, atenção, percepção, pensamento, humor/afeto, cognição, psicomotricidade, registro de exemplo, **6 casos** e **10 questões comentadas**. Há profundidade semiológica relevante, mas **a apostila ainda está aquém da meta de autossuficiência de 60 mil caracteres úteis**, faltando expandir avaliação de risco e capacidade, documentação, entrevista em emergências, diferenciais específicos e consistência com protocolos brasileiros.
+
+**Etapa zero:** não foi encontrado benchmark didático integral comparável no Drive; isso deve continuar marcado como lacuna, não “etapa concluída”. **Imagens:** nenhuma candidata real aprovada no Admin. **Publicação:** zero; arquivo Markdown isolado da branch, sem alteração do catálogo/site/SQL/HTML.
+
+**Próximo aprofundamento:** ampliar exemplos de EEM em mania, psicose e delirium, critérios para suspeitar de condição médica, registro neutro em casos graves e rede assistencial brasileira. A próxima aula curricular é **211 — Transtornos depressivos e avaliação do risco de suicídio**; não antecipar detalhamento terapêutico que pertence a ela.
