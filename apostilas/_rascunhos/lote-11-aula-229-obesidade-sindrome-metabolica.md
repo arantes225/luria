@@ -470,6 +470,56 @@ A) Hérnia interna e obstrução potencialmente grave. B) Apenas adaptação ao 
 A) Toda recuperação é falta de vontade. B) Tratamento deve terminar assim que o IMC normaliza. C) Mudanças adaptativas de fome e gasto e contexto ambiental tornam seguimento longitudinal importante. D) Treino resistido não agrega em quem perde peso.
 **Gabarito C.** Obesidade é crônica, heterogênea e recidivante. **A:** estigmatiza e ignora mecanismos. **B:** interromper acompanhamento pode aumentar recidiva. **D:** força e massa muscular importam. **Revisão:** eficácia envolve saúde e manutenção, não apenas queda inicial na balança.
 
+
+### Questão 7 — Critério harmonizado de síndrome metabólica
+Homem de 55 anos, IMC 26,5 kg/m², cintura considerada normal para a população correspondente, triglicerídeos 177 mg/dL, HDL 37 mg/dL, PA 133/82 mmHg e glicemia 93 mg/dL. Qual conclusão é correta?
+A) Não possui síndrome metabólica porque não apresenta obesidade central.
+B) Preenche três componentes da definição harmonizada de síndrome metabólica.
+C) A glicemia de 93 mg/dL comprova diabetes tipo 2.
+D) A definição harmonizada exige obrigatoriamente IMC ≥30 kg/m².
+**Gabarito: B.** TG ≥150, HDL <40 em homem e PA sistólica ≥130 perfazem três critérios. **A:** cintura é obrigatória em definições como a IDF antiga, não na harmonização. **C:** valor informado é insuficiente para DM2. **D:** IMC não integra os cinco componentes harmonizados. **Mini revisão:** identificar **nome do critério** e contar componentes antes de interpretar.
+
+### Questão 8 — Indicação de tratamento farmacológico
+Mulher de 45 anos, IMC 28,1 kg/m², hipertensão e pré-diabetes; após avaliação, deseja discutir tratamento medicamentoso para obesidade/sobrepeso de risco. Segundo ABESO 2026, qual afirmação está correta?
+A) Farmacoterapia só é discutida acima de IMC 40.
+B) A diretriz recomenda considerar tratamento farmacológico em IMC ≥27 associado a complicações por adiposidade, juntamente com mudança do estilo de vida.
+C) Modificação de alimentação e atividade física deve ser suspensa quando o medicamento começa.
+D) É obrigatório prescrever sempre o fármaco de maior potência, sem avaliar custo ou contraindicação.
+**Gabarito: B.** A recomendação R4 da ABESO 2026 inclui IMC ≥27 com complicações. **A:** ignora critérios farmacológicos. **C:** medidas comportamentais continuam parte do tratamento. **D:** segurança, comorbidades, preferência e custo influenciam seleção. **Mini revisão:** diretriz clínica deve ser conciliada com **registro específico do produto**.
+
+### Questão 9 — Segurança da tirzepatida
+Paciente com DM2 usa insulina basal e sulfonilureia, iniciando tirzepatida após indicação formal. Qual atitude deve acompanhar a titulação?
+A) Manter as doses prévias sem qualquer monitorização, pois hipoglicemia é impossível.
+B) Monitorar glicemia e reavaliar dose de insulina/secretagogo conforme evolução clínica.
+C) Aumentar diretamente tirzepatida de 2,5 para 15 mg após uma semana.
+D) Associar qualquer caneta manipulada de origem desconhecida para acelerar perda ponderal.
+**Gabarito: B.** Redução de ingesta e melhora do controle glicêmico modificam necessidade de terapia hipoglicemiante. **A:** risco de hipoglicemia aumenta em combinações. **C:** progressão de dose deve ocorrer em etapas, tipicamente após 4 semanas. **D:** produtos irregulares representam risco sanitário. **Mini revisão:** tirzepatida é semanal; após 2,5 mg inicialmente, a bula orienta 5 mg e incrementos posteriores graduais.
+
+### Questão 10 — Critérios brasileiros de cirurgia
+Homem de 52 anos, IMC 32 kg/m², DM2 com controle inadequado após manejo clínico multiprofissional, procura avaliação de cirurgia metabólica. Segundo Resolução CFM 2.429/2025, consolidada com alteração em 2026, a afirmação adequada é:
+A) Não pode ser avaliado porque apenas IMC ≥35 autoriza qualquer encaminhamento.
+B) É automaticamente obrigado a operar, dispensando discussão multidisciplinar.
+C) É potencialmente elegível para avaliação cirúrgica em razão de IMC 30–34,9 associado a DM2.
+D) O CFM recomenda banda gástrica ajustável como procedimento primário de eleição.
+**Gabarito: C.** DM2 está entre as condições específicas para a faixa. **A:** utiliza critérios antigos. **B:** elegibilidade não elimina escolha compartilhada nem avaliação de segurança. **D:** a banda ajustável está entre técnicas não recomendadas pelo CFM. **Mini revisão:** distinguir *critério para avaliação* de *indicação cirúrgica definitiva*.
+
+### Questão 11 — Emergência pós-bariátrica
+Paciente há três anos de bypass em Y de Roux tem dor abdominal episódica pós-prandial, hoje intensa e persistente, com vômitos e taquicardia. Mesmo sem peritonite franca, a melhor conduta é:
+A) Considerar somente intolerância alimentar, orientar retorno em seis meses.
+B) Encaminhar para avaliação hospitalar e cirúrgica urgente, incluindo hipótese de hérnia interna/obstrução.
+C) Prescrever laxante e observar em casa por sete dias obrigatoriamente.
+D) Descartar complicação se hemograma inicial for normal.
+**Gabarito: B.** Hérnia interna pode causar isquemia intestinal com manifestações pouco específicas no início. **A/C:** atrasam investigação. **D:** exames iniciais normais não excluem complicação abdominal grave. **Mini revisão:** anatomia do bypass muda o diferencial de dor abdominal; atenção a recorrência e progressão.
+
+### Questão 12 — Sarcopenia durante tratamento
+Mulher de 76 anos apresenta perda ponderal expressiva com tratamento antiobesidade, mas passou a ter dificuldade para subir escadas e levantar-se da cadeira, com baixa ingestão proteica. Conduta mais apropriada?
+A) Intensificar dose apenas para acelerar redução do IMC.
+B) Ignorar função porque a perda de peso sempre traz benefício.
+C) Reavaliar terapia, consumo nutricional, força, causas clínicas de fraqueza e treino resistido adaptado.
+D) Prescrever jejum prolongado como estratégia obrigatória.
+**Gabarito: C.** A redução de peso precisa preservar função e segurança. **A/B/D:** aumentam risco ou ignoram sarcopenia e desnutrição. **Mini revisão:** funcionalidade, composição corporal e saúde metabólica são desfechos clínicos, não acessórios estéticos.
+
+
 ## 11. Matriz provisória de cobertura e imagens
 | Bloco essencial | Local | Situação |
 |---|---|---|
