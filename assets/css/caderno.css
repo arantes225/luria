@@ -4672,3 +4672,71 @@ body[data-page="caderno"] .notebook-notion-first-connect-copy span{
     flex-direction:column;
   }
 }
+/* Editor: toolbar above the document, readable menus and distinct actions. */
+@layer luria-ui-education {
+html body[data-page="caderno"] .main .note-canvas > #notebook-toolbar {
+  position:sticky!important; top:var(--ui-nav-height,64px)!important;
+  display:flex!important; flex-wrap:wrap!important; gap:6px!important;
+  height:auto!important; min-height:48px!important; width:100%!important;
+  padding:8px!important; overflow:visible!important; z-index:50!important;
+  background:var(--surface)!important; border:1px solid var(--border)!important;
+  border-radius:10px!important; box-shadow:0 4px 16px #00000012;
+}
+html body[data-page="caderno"] .main .note-canvas > #notebook-toolbar .note-type-tools {
+  display:flex!important; flex-wrap:wrap!important; width:auto!important;
+}
+html body[data-page="caderno"] .main #notebook-toolbar .note-type-tools select {
+  width:auto!important; max-width:140px!important; min-width:64px!important;
+  height:36px!important; font-size:13px!important;
+}
+html body[data-page="caderno"] .main #notebook-toolbar .notebook-tool-menu {
+  min-width:190px!important; padding:6px!important;
+  color:var(--text)!important; background:var(--surface)!important;
+  border:1px solid var(--border)!important; box-shadow:0 8px 24px #00000024;
+}
+html body[data-page="caderno"] .main #notebook-toolbar .notebook-tool-menu button {
+  display:flex!important; width:100%!important; height:auto!important; min-height:40px!important;
+  justify-content:flex-start!important; padding:8px 12px!important;
+  font-size:14px!important; line-height:1.4!important; white-space:normal!important;
+  color:var(--text)!important; background:var(--surface)!important;
+}
+html body[data-page="caderno"] .main #notebook-toolbar .notebook-tool-menu button:is(:hover,:focus-visible,.is-selected) {
+  color:var(--text)!important; background:var(--surface-2)!important;
+  outline:2px solid var(--accent); outline-offset:-2px;
+}
+html body[data-page="caderno"] .main .note-actions-card #notebook-inspector-edit {
+  background:#2563eb!important; color:#fff!important; border-color:#2563eb!important;
+  min-height:44px!important; max-height:none!important; height:auto!important;
+  padding:8px 12px!important;
+}
+html body[data-page="caderno"] .main .note-actions-card #notebook-inspector-edit.is-saving-toggle {
+  background:#15803d!important; border-color:#15803d!important;
+}
+html body[data-page="caderno"] .main .note-actions-card #notebook-inspector-edit > span {
+  color:#fff!important; font-size:14px!important; line-height:1.4!important;
+}
+html body[data-page="caderno"] .main .note-actions-card #notebook-inspector-edit svg {
+  stroke:#fff!important; color:#fff!important;
+}
+html body[data-page="caderno"] .main #notebook-inspector-delete,
+html body[data-page="caderno"] .main #notebook-inspector-delete > span {
+  background:#b91c1c!important; color:#fff!important;
+}
+html body[data-ui="v2"][data-page="caderno"] .main .note-editing-panel > .note-info {
+  margin-top:0!important; padding-top:0!important; border-top:0!important;
+}
+#notebook-editor ul.notebook-checklist {list-style:none!important; padding-left:0!important;}
+#notebook-editor ul.notebook-checklist > li {position:relative; padding-left:28px!important; min-height:24px;}
+#notebook-editor .notebook-check {
+  display:inline-flex; align-items:center; justify-content:center; position:absolute;
+  left:0; top:.15em; width:18px; height:18px; border:2px solid var(--accent);
+  border-radius:4px; background:var(--surface); color:var(--text); cursor:pointer;
+}
+#notebook-editor .notebook-check[aria-checked="true"] {background:#15803d; border-color:#15803d; color:white;}
+#notebook-editor .notebook-check[aria-checked="true"]::after {content:'✓'; font:700 14px/1 sans-serif;}
+#notebook-editor .notebook-check:focus-visible {outline:2px solid var(--accent); outline-offset:3px;}
+@media(max-width:600px) {
+  html body[data-page="caderno"] .main .note-canvas > #notebook-toolbar {gap:4px!important; padding:6px!important;}
+  html body[data-page="caderno"] .main #notebook-toolbar .note-type-tools select {max-width:110px!important;}
+}
+}

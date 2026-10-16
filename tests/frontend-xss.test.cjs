@@ -34,6 +34,21 @@ function assertSafe(root){
     if(['src','href'].includes(attribute.name))assert.ok(!/^\s*(javascript|vbscript|data:text\/html):/i.test(attribute.value),attribute.value);
   }
 }
+
+test('Caderno persists bounded font sizes and accessible checklist states without active attributes',t=>{
+  const {w}=notebookFixture(t);
+  const source='<ul class="notebook-checklist"><li><span class="notebook-check" role="checkbox" aria-checked="true" onclick="alert(1)"></span><span style="font-size:24px">Revisar</span></li></ul>';
+  const html=w.sanitizeHtml(source),host=w.document.createElement('div');host.innerHTML=html;
+  assert(host.querySelector('ul.notebook-checklist'));
+  const check=host.querySelector('.notebook-check');
+  assert.equal(check.getAttribute('aria-checked'),'true');
+  assert.equal(check.getAttribute('role'),'checkbox');
+  assert.equal(check.getAttribute('contenteditable'),'false');
+  assert.equal(host.querySelector('span[style]').style.fontSize,'24px');
+  assert.equal(w.sanitizeHtml(html),html);
+  assertSafe(host);
+  assert.doesNotMatch(w.sanitizeHtml('<span style="font-size:999px">Texto</span>'),/font-size/);
+});
 const attack='<img src="https://audit.invalid/hostile" onerror="window.auditExecuted=1"><svg onload="window.auditExecuted=2"></svg><iframe src="https://audit.invalid/frame"></iframe><script>window.auditExecuted=3</script>';
 
 test('URL validation rejects executable, obfuscated, credential and protocol-relative destinations',t=>{

@@ -1778,6 +1778,12 @@ function sanitizeHtml(
       let keepImageAssetId =
         "";
       const notionAttributes = [];
+      if (child.tagName === "UL" && child.classList.contains("notebook-checklist")) keepClass = "notebook-checklist";
+      if (child.tagName === "SPAN" && child.classList.contains("notebook-check")) {
+        keepClass = "notebook-check";
+        notionAttributes.push(["role", "checkbox"], ["tabindex", "0"], ["contenteditable", "false"],
+          ["aria-label", "Concluir item"], ["aria-checked", child.getAttribute("aria-checked") === "true" ? "true" : "false"]);
+      }
       let keepHref = "";
       const keepLinkTarget = child.getAttribute("target") === "_blank" ? "_blank" : "";
       if (notion) {
@@ -1806,6 +1812,8 @@ function sanitizeHtml(
           || "";
 
         const safeStyle = [];
+        const fontSize = child.style.fontSize;
+        if (/^(12|14|16|18|20|24|28|32)px$/.test(fontSize)) safeStyle.push(`font-size: ${fontSize}`);
 
         if (color) {
           safeStyle.push(
@@ -2701,6 +2709,7 @@ function setEditorEnabled(
   [
     "notebook-block-style",
     "notebook-font-family",
+    "notebook-font-size",
     "notebook-align-toggle",
     "notebook-line-spacing",
     "notebook-bold",
@@ -2906,6 +2915,10 @@ function setNotebookEditMode(
     const inspectorEditLabel = inspectorEditButton.querySelector("span");
     if (inspectorEditLabel) inspectorEditLabel.textContent = notebookState.editorEditable ? "Salvar" : "Editar";
     inspectorEditButton.classList.toggle("is-saving-toggle", notebookState.editorEditable);
+    inspectorEditButton.querySelector("svg").innerHTML = notebookState.editorEditable
+      ? '<path d="M5 3h12l4 4v14H3V3h2Z"/><path d="M7 3v6h10V3M7 21v-8h10v8"/>'
+      : '<path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-3L4 17v3Z"/><path d="m13.5 7.5 3 3"/>';
+    document.getElementById("notebook-view-editor")?.classList.toggle("is-editing", notebookState.editorEditable);
   }
 
   if (notebookState.editorEditable) {
@@ -4475,6 +4488,62 @@ function execEditorCommand(
 
 }
 
+
+function applyNotebookFontSize(value) {
+  if (!notebookState.editorEditable || ![12,14,16,18,20,24,28,32].includes(Number(value))) return;
+  restoreSelection();
+  document.execCommand("fontSize", false, "7");
+  document.querySelectorAll('#notebook-editor font[size="7"]').forEach(font => {
+    const span = document.createElement("span");
+    span.style.fontSize = `${value}px`;
+    while (font.firstChild) span.append(font.firstChild);
+    font.replaceWith(span);
+  });
+  saveSelection();
+  scheduleSave();
+}
+
+function syncNotebookChecklist() {
+  document.querySelectorAll("#notebook-editor ul.notebook-checklist > li").forEach(item => {
+    if (item.querySelector(":scope > .notebook-check")) return;
+    const check = document.createElement("span");
+    check.className = "notebook-check";
+    check.setAttribute("role", "checkbox");
+    check.setAttribute("aria-checked", "false");
+    check.setAttribute("aria-label", "Concluir item");
+    check.setAttribute("contenteditable", "false");
+    check.tabIndex = 0;
+    item.prepend(check);
+  });
+}
+
+function applyNotebookList(command) {
+  if (!notebookState.editorEditable) return;
+  restoreSelection();
+  const selection = window.getSelection();
+  const anchor = selection.anchorNode?.nodeType === 1 ? selection.anchorNode : selection.anchorNode?.parentElement;
+  let list = anchor?.closest("ul,ol");
+  if (command === "checklist") {
+    if (list?.matches("ul.notebook-checklist")) {
+      list.classList.remove("notebook-checklist");
+      list.querySelectorAll(".notebook-check").forEach(check => check.remove());
+    } else {
+      if (!list || list.tagName !== "UL") document.execCommand("insertUnorderedList", false, null);
+      const node = window.getSelection().anchorNode;
+      list = (node?.nodeType === 1 ? node : node?.parentElement)?.closest("ul");
+      list?.classList.add("notebook-checklist");
+      syncNotebookChecklist();
+    }
+  } else {
+    if (list?.classList.contains("notebook-checklist")) {
+      list.classList.remove("notebook-checklist");
+      list.querySelectorAll(".notebook-check").forEach(check => check.remove());
+      if (command === "insertOrderedList") document.execCommand(command, false, null);
+    } else document.execCommand(command, false, null);
+  }
+  saveSelection();
+  scheduleSave();
+}
 
 function insertTemplate(
   type = "disease"
@@ -17731,6 +17800,19 @@ function wireEvents() {
     );
 
 
+  document.getElementById("notebook-font-size")?.addEventListener("change", event => applyNotebookFontSize(event.target.value));
+  const toggleCheck = event => {
+    const check = event.target.closest?.(".notebook-check");
+    if (!check || !notebookState.editorEditable) return;
+    if (event.type === "keydown" && ![" ", "Enter"].includes(event.key)) return;
+    event.preventDefault();
+    check.setAttribute("aria-checked", check.getAttribute("aria-checked") === "true" ? "false" : "true");
+    scheduleSave();
+  };
+  document.getElementById("notebook-editor")?.addEventListener("click", toggleCheck);
+  document.getElementById("notebook-editor")?.addEventListener("keydown", toggleCheck);
+  document.getElementById("notebook-editor")?.addEventListener("input", syncNotebookChecklist);
+
   const editor =
     document.getElementById(
       "notebook-editor"
@@ -18539,14 +18621,14 @@ function wireEvents() {
           "click",
           () => {
             const listCommand = button.dataset.listCommand;
-            execEditorCommand(
-              listCommand
-            );
+            applyNotebookList(listCommand);
 
             const listToggle = document.getElementById("notebook-list-toggle");
             let listActive = true;
             try {
-              listActive = document.queryCommandState(listCommand);
+              listActive = listCommand === "checklist"
+                ? Boolean(window.getSelection().anchorNode?.parentElement?.closest("ul.notebook-checklist"))
+                : document.queryCommandState(listCommand);
             } catch {}
             listToggle?.classList.toggle("is-active", listActive);
             listToggle?.setAttribute("aria-pressed", listActive ? "true" : "false");
