@@ -6023,6 +6023,79 @@
     });
   }
 
+
+  let lowResolutionImageRows = [];
+  async function loadLowResolutionImageQueue() {
+    const status = $("admin-low-resolution-status");
+    const host = $("admin-low-resolution-list");
+    if (!host) return;
+    if (status) status.textContent = "Carregando imagens sinalizadas...";
+    const { data, error } = await sb.from("low_resolution_image_review_queue")
+      .select("id,bucket_id,object_name,owner_id,source_page,width,height,size_bytes,review_status,created_at,reviewed_at")
+      .order("created_at", { ascending: false }).limit(200);
+    if (error) {
+      if (status) status.textContent = "Não foi possível carregar a fila de imagens.";
+      console.error("Fila de baixa resolução:", error);
+      return;
+    }
+    lowResolutionImageRows = Array.isArray(data) ? data : [];
+    const pending = lowResolutionImageRows.filter(row => row.review_status === "pending");
+    if (status) status.textContent = pending.length + " imagem(ns) aguardando revisão · " + lowResolutionImageRows.length + " registradas";
+    if (!lowResolutionImageRows.length) {
+      host.innerHTML = '<div class="admin-table-empty">Nenhuma imagem sinalizada.</div>';
+      return;
+    }
+    const cards = [];
+    for (const row of lowResolutionImageRows) {
+      const { data: signed, error: signedError } = await sb.storage.from(row.bucket_id).createSignedUrl(row.object_name, 900);
+      const src = signedError ? "" : signed?.signedUrl || "";
+      cards.push(`
+        <article class="admin-image-review-card">
+          <div class="admin-image-review-preview">${src ? '<img src="' + esc(src) + '" alt="Imagem enviada, ' + Number(row.width) + ' por ' + Number(row.height) + ' pixels">' : '<span>Prévia indisponível</span>'}</div>
+          <div class="admin-image-review-body">
+            <div class="admin-image-review-head">
+              <div><strong>${row.review_status === "pending" ? "Baixa resolução · pendente" : "Baixa resolução · revisada"}</strong>
+              <small>${Number(row.width)} × ${Number(row.height)} px · ${Math.round(Number(row.size_bytes) / 1024)} KB</small></div>
+              <span class="admin-image-review-tag">${row.review_status === "pending" ? "Pendente" : "Revisada"}</span>
+            </div>
+            <div class="admin-image-review-source"><small>Área: ${esc(row.source_page || "/")} · arquivo: ${esc(row.object_name)}</small></div>
+            <div class="admin-image-review-actions">${src ? '<button class="button secondary" type="button" data-lowres-expand="' + Number(row.id) + '">Expandir</button>' : ""}
+              ${row.review_status === "pending" ? '<button class="button primary" type="button" data-lowres-reviewed="' + Number(row.id) + '">Marcar como revisada</button>' : ""}</div>
+          </div>
+        </article>`);
+    }
+    host.innerHTML = cards.join("");
+  }
+
+  function wireLowResolutionImageQueue() {
+    const host = $("admin-low-resolution-list");
+    if (!host || host.dataset.wired === "1") return;
+    host.dataset.wired = "1";
+    host.addEventListener("click", async event => {
+      const expand = event.target.closest("[data-lowres-expand]");
+      if (expand) {
+        const row = lowResolutionImageRows.find(item => Number(item.id) === Number(expand.dataset.lowresExpand));
+        if (!row) return;
+        const { data, error } = await sb.storage.from(row.bucket_id).createSignedUrl(row.object_name, 900);
+        if (error || !data?.signedUrl) return;
+        const modal = ensureAdminImageLightbox();
+        const img = modal.querySelector("img");
+        img.src = data.signedUrl; img.alt = "Imagem enviada para revisão";
+        modal.style.display = "grid";
+        return;
+      }
+      const button = event.target.closest("[data-lowres-reviewed]");
+      if (!button) return;
+      button.disabled = true;
+      const { error } = await sb.from("low_resolution_image_review_queue")
+        .update({ review_status: "reviewed", reviewed_at: new Date().toISOString(), reviewed_by: window.docmapUser?.id || null })
+        .eq("id", Number(button.dataset.lowresReviewed));
+      if (error) { button.disabled = false; console.error(error); return; }
+      await loadLowResolutionImageQueue();
+    });
+    $("admin-images-refresh")?.addEventListener("click", () => loadLowResolutionImageQueue());
+  }
+
   async function startAdminDashboard() {
     const allowed =
       await ensureAdminAccess();
