@@ -690,23 +690,6 @@ Curar **pelo menos dez** recursos de função clínica real, priorizando origina
 
 **Hierarquia e incerteza:** referências RCH constituem protocolos locais do serviço australiano, de datas variadas. Não afirmar que todos receberam atualização em 2026 somente porque a página foi rastreada em 2026. O SUS e o CIATox local orientam antídotos disponíveis, transferência, posologias e protocolos. A rede CIATox do Brasil não é substituível pelo número australiano presente nas diretrizes RCH.
 
-## 38. Parecer editorial preliminar
-
-**Conteúdo presente:** 15 capítulos de base (mais auditoria), novas seções de dose mg/kg e incerteza; diferencial de toxíndromes; ECG em canal de sódio; paracetamol por padrão de exposição; sulfonilureias; ferro; salicilatos; cáusticos/hidrocarbonetos; organofosforados; drogas emergentes; interpretação de exames; observação; prevenção; visualização; casos e questões.
-
-**Gates abertos:**
-- Revisão por **pediatra emergencista e toxicologista clínico** com identificação de protocolos CIATox nacionais, evitando transformar dosagem de antídotos de outro país em prescrição.
-- Substâncias e concentrações comercializadas no Brasil, medicamentos de liberação modificada, antídotos e disponibilidade territorial.
-- Curadoria de imagens reais de fonte confiável: autoria, licença comercial, anonimização, WebP responsivo e aprovação no Admin.
-- Revisar **todas** as questões contra a aula para verificar que cada resposta correta se justifica dentro do conteúdo, sem distrações excessivamente artificiais.
-- Garantir consistência entre capítulos 0–15 e 16–30 e excluir eventuais repetições conceituais.
-- Contagem de texto útil **não é** a soma de caracteres brutos do Markdown; medir separadamente após QA editorial e homologação científica.
-- Renderer nativo, teste desktop e PWA, acessibilidade, desempenho e revisão de sigilo de dados de menores.
-- Revisão legal e de saúde pública sobre notificação SINAN e fluxo de proteção de crianças/adolescentes.
-
-**Status:** rascunho de ensino, **não publicado**, sem imagens aprovadas, sem prescrição operacional automática e sem merge/deploy.
-
-
 ## 36. Fontes de apoio e hierarquia
 
 1. Ministério da Saúde. **Centro de Informação e Assistência Toxicológica (CIATox)**, função e rede. https://www.gov.br/saude/pt-br/composicao/svsa/saude-ambiental/vigipeq/ciatox/ciatox
@@ -728,3 +711,20 @@ Diretrizes australianas são usadas como respaldo pedagógico, **não** como sub
 **Feito:** auditoria de base e busca de comparativo (nenhum livro completo disponível), texto autoral de fundamentos até prevenção, tabela de toxíndromes, algoritmo ABCDE e alta, 8 casos originais, 12 questões comentadas, 14 candidatas visuais e fontes nomeadas.
 
 **Não feito:** 60.000 caracteres úteis certificados; doses e esquemas finais de todos os antídotos; fluxogramas interativos; imagens médicas licenciadas; auditoria independente por pediatra/toxicologista; testes de responsividade PWA; revisão farmacêutica e jurídica de notificação. Portanto **NÃO publicado, NÃO mergeado e NÃO homologado**.
+
+
+## 38. Parecer editorial preliminar
+
+**Conteúdo presente:** 15 capítulos de base (mais auditoria), novas seções de dose mg/kg e incerteza; diferencial de toxíndromes; ECG em canal de sódio; paracetamol por padrão de exposição; sulfonilureias; ferro; salicilatos; cáusticos/hidrocarbonetos; organofosforados; drogas emergentes; interpretação de exames; observação; prevenção; visualização; casos e questões.
+
+**Gates abertos:**
+- Revisão por **pediatra emergencista e toxicologista clínico** com identificação de protocolos CIATox nacionais, evitando transformar dosagem de antídotos de outro país em prescrição.
+- Substâncias e concentrações comercializadas no Brasil, medicamentos de liberação modificada, antídotos e disponibilidade territorial.
+- Curadoria de imagens reais de fonte confiável: autoria, licença comercial, anonimização, WebP responsivo e aprovação no Admin.
+- Revisar **todas** as questões contra a aula para verificar que cada resposta correta se justifica dentro do conteúdo, sem distrações excessivamente artificiais.
+- Garantir consistência entre capítulos 0–15 e 16–30 e excluir eventuais repetições conceituais.
+- Contagem de texto útil **não é** a soma de caracteres brutos do Markdown; medir separadamente após QA editorial e homologação científica.
+- Renderer nativo, teste desktop e PWA, acessibilidade, desempenho e revisão de sigilo de dados de menores.
+- Revisão legal e de saúde pública sobre notificação SINAN e fluxo de proteção de crianças/adolescentes.
+
+**Status:** rascunho de ensino, **não publicado**, sem imagens aprovadas, sem prescrição operacional automática e sem merge/deploy.
