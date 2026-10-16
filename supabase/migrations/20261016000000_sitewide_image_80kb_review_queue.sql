@@ -83,7 +83,7 @@ create policy luria_image_size_cap_insert on storage.objects as restrictive
     bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
     or (
       coalesce(metadata->>'mimetype','') not like 'image/%'
-      and lower(name) !~ '\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
+      and lower(name) !~ '\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
     )
     or (
       coalesce(metadata->>'size','') ~ '^[0-9]+$'
@@ -96,7 +96,7 @@ create policy luria_image_size_cap_update on storage.objects as restrictive
     bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
     or (
       coalesce(metadata->>'mimetype','') not like 'image/%'
-      and lower(name) !~ '\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
+      and lower(name) !~ '\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
     )
     or (
       coalesce(metadata->>'size','') ~ '^[0-9]+$'
@@ -106,7 +106,7 @@ create policy luria_image_size_cap_update on storage.objects as restrictive
     bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
     or (
       coalesce(metadata->>'mimetype','') not like 'image/%'
-      and lower(name) !~ '\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
+      and lower(name) !~ '\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$'
     )
     or (
       coalesce(metadata->>'size','') ~ '^[0-9]+$'
