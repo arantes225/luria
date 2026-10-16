@@ -9,7 +9,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 |---:|---|---:|---:|:---:|:---:|---|
 | 250 | Transtornos alimentares | 64.410 | 27 | Sim | Sim | Rascunho ampliado, parcial |
 | 251 | Transtornos de personalidade e autolesão | 75.036 | 27 | Sim | Sim | Rascunho ampliado, parcial |
-| 252 | Saúde mental no ciclo gravídico-puerperal | 29.822 | 18 | Sim | Sim | Rascunho parcial |
+| 252 | Saúde mental no ciclo gravídico-puerperal | 75.284 | 28 | Sim | Sim | Rascunho ampliado, parcial |
 | 253 | Luto, crises e transtornos de adaptação | 25.841 | 19 | Sim | Sim | Rascunho parcial |
 | 254 | Saúde mental do adolescente: avaliação e manejo inicial | 68.216 | 31 | Sim | Sim | Rascunho parcial |
 | 255 | Longitudinalidade, coordenação do cuidado e matriciamento | 27.233 | 20 | Sim | Sim | Rascunho parcial |
@@ -27,7 +27,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 279 | Crescimento fetal reduzido e aumentado | — (HTML existente) | — | — | — | Auditoria preliminar |
 | 280 | Alterações fisiológicas da gestação | — (HTML existente) | — | — | — | Auditoria preliminar |
 
-**Total bruto dos 17 manuscritos:** 895.824 caracteres. **Média bruta:** 52.696.
+**Total bruto dos 17 manuscritos:** 941.286 caracteres. **Média bruta:** 55.370.
 
 *Os campos Casos? e Questões? refletem busca textual inicial de blocos, não contagem, profundidade ou aprovação científica. Quando constar “Rever”, pode ser diferença de título; conferir manualmente.*
 
@@ -77,3 +77,8 @@ Aprofundado o manuscrito #272 com 23.741 caracteres brutos originais nos blocos 
 - **#250 · Transtornos alimentares:** acréscimo de **35.676 caracteres brutos originais**; total **64.410** e **27 seções H2**. Blocos 13A–13G: distinção formal e fenomenológica entre anorexia típica/atípica, bulimia, compulsão, ARFID, pica/ruminação, fisiopatologia da desnutrição, rastreio de descompensação cardíaca/metabólica, internação sem regra de IMC absoluto, reabilitação e síndrome de realimentação, intervenções psicológicas, farmacologia contextualizada (incluindo contraindicação de bupropiona em anorexia/bulimia), adolescência, atletas, gestação, diabetes, mais seis casos e seis questões. Orientações NICE NG69, APA 2023 e SAHM 2022. **Drive:** reabertos e relidos *Obesidade — Conceitos Gerais + Tratamento Não Farmacológico* e *Síndromes Cognitivas*, somente comparadores parciais, sem reuso de conteúdo.
 - **#251 · Transtornos de personalidade e autolesão:** acréscimo de **46.356 caracteres brutos originais**; total **75.036** e **27 seções H2**. Blocos 10A–10J: CID-11 por gravidade e qualificadores dimensionais, diferencial de borderline com bipolaridade/TEPT/autismo/TDAH, cuidado somático e psicossocial concomitante após autolesão, formulação clínica sem uso de escala para definir alta, plano de segurança colaborativo, psicoterapias DBT/MBT/esquemas, manejo cauteloso de medicações e comorbidades, adolescência/violência/direitos, articulação APS/CAPS/RAPS e oito novos casos/questões. NICE NG225/CG78 e CID-11 2026-01. **Drive:** reabertos *Síndromes Cognitivas* e *SUS*, apenas comparadores parciais.
 - **Estado:** estes documentos permanecem exclusivamente em `apostilas/_rascunhos/`, branch `editorial/lote-13-preenchimento-20261015`. 60.000 caracteres **brutos** não certificam 60.000 caracteres **didáticos úteis**; faltam benchmark específico integral, revisão clínica especializada, auditoria brasileira regulatória e de fármacos, curadoria de imagens com procedência/licenças aprovadas, revisão linguística, teste HTML/PWA e homologação. **0/19 homologadas nesta rodada.** Nenhum deploy, merge ou alteração Supabase foi solicitado/feito.
+
+## Continuidade — 16/10/2026, #252
+
+- **#252 · Saúde mental no ciclo gravídico-puerperal:** adição de **45.462 caracteres brutos originais**, total **75.284**, **28 seções H2**. Blocos 11A–11J: rastreamento no pré-natal e primeiro ano pós-parto, diagnóstico de depressão, bipolaridade, mania, psicose puerperal/urgência, TOC com intrusões ego-distônicas, TEPT obstétrico/luto e violência, cuidados psicofarmacológicos na gestação e lactação, decisão de lítio e risco teratogênico do valproato, coordenação SUS/RAPS, oito novos casos e oito questões. Referências de 2023 **ACOG CPG nº 4 e nº 5**, NICE CG192, portal do Ministério da Saúde. **Benchmark efetivamente relido:** Drive *Assistência ao Pré-Natal*, apenas comparador obstétrico parcial, não fonte psiquiátrica integral. Texto autoral, sem copiar imagem/tabela de cursinho.
+- **Pendente:** comparar livro especializado integral de saúde mental perinatal, revisão por obstetra e psiquiatra, verificação de bula/doses/registro/acesso a psicofármacos no Brasil, atenção às normas locais de proteção e notificação, contagem real de caracteres didáticos úteis, seleção/licença de imagens pelo Admin, revisão de coerência, testes PWA/HTML. Mantido `RASCUNHO_PARCIAL_NAO_PUBLICAR` exclusivamente na branch editorial. Sem deploy/merge/Supabase.
