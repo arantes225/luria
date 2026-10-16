@@ -228,17 +228,205 @@ A ingestão de bateria tipo botão no esôfago é emergência verdadeira, devido
 
 Diante de ingestão cáustica, priorizar via aérea e avaliação de perfuração; não induzir vômito, não neutralizar quimicamente e não realizar lavagem gástrica. A indicação e o momento de endoscopia dependem de estabilidade, tipo de agente, sinais de gravidade e protocolo especializado. Suspeita de perfuração ou instabilidade exige estratégia própria, frequentemente com imagem e cirurgia.
 
+
+### 4.1 O primeiro problema é a via aérea, não o objeto
+
+Crianças podem não relatar ingestão e apresentam sialorreia, recusa alimentar, vômitos, tosse ou dor retroesternal. Em adulto, impactação costuma ocorrer ao comer carne ou pão; paciente pode apontar região cervical quando objeto está distal. **Incapacidade de deglutir a própria saliva**, sialorreia contínua, estridor, dispneia e dificuldade para manejar secreções caracterizam obstrução significativa e risco de aspiração. A distinção entre esôfago obstruído e via aérea obstruída exige exame e pode demandar otorrino/anestesia; não tentar procedimentos cegos que deslocam objeto.
+
+A prioridade é identificar **qual objeto**, **onde está**, **há quanto tempo** e **quais complicações existem**. Bateria, ímãs múltiplos, objeto perfurante, pacote de droga e bolo alimentar são entidades diferentes. Uma moeda é em geral relativamente inerte; uma bateria botão pode provocar necrose por corrente elétrica/hidróxido em contato com mucosa; múltiplos ímãs podem prender alças intestinais entre si, gerando isquemia e perfuração; objetos pontiagudos podem penetrar parede. O manejo não deve ser reduzido à frase “retirar tudo que foi ingerido”.
+
+### 4.2 Imagem: radiografia, TC e limites do que não aparece
+
+Radiografia anteroposterior e lateral de pescoço/tórax/abdome, conforme sintomas, pode localizar objetos radiopacos e ajudar a identificar baterias (sinal de anel duplo/“halo” na projeção AP e aspecto em degrau na lateral). Nem todo objeto é visível: plástico, madeira, alimento e alguns ossos podem ser radiolucentes. **RX negativo não exclui objeto ou impactação** se clínica é sugestiva. A tomografia sem/ com contraste, conforme pergunta e protocolo, é útil se há suspeita de perfuração, complicação mediastinal ou localização incerta de objeto pontiagudo.
+
+Contraste baritado antes de retirada pode aumentar aspiração e atrapalhar visualização endoscópica; diretrizes ESGE não recomendam de rotina em corpo estranho esofágico. Em paciente com sinais de perfuração, a decisão de imagem e contraste deve ser coordenada com cirurgia/endoscopia, não apenas solicitar EDA habitual.
+
+### 4.3 Janela de tempo por objeto (diretriz ESGE 2016, referência de base)
+
+| Objeto e localização | Conduta geral em adulto | Janela de referência |
+|---|---|---|
+| Bateria botão no esôfago | Remoção emergencial, via aérea e avaliação de lesão | Preferivelmente ≤2 h, no máximo ≤6 h como categoria ESGE; **não esperar janela** |
+| Obstrução esofágica completa por alimento | Endoscopia emergencial, risco de aspiração | Preferivelmente ≤2 h, até 6 h na categorização |
+| Objeto pontiagudo no esôfago | Remoção emergencial | Preferivelmente ≤2 h, até 6 h |
+| Outro objeto esofágico sem obstrução completa | Remoção urgente com avaliação do risco | ≤24 h |
+| Alimento impactado, saliva ainda deglutida | Endoscopia urgente, não postergar por “teste farmacológico” | Em geral ≤24 h |
+| Pontiagudo, ímã, bateria ou objeto grande no estômago | Avaliação e extração de acordo com tipo, risco, idade | Em geral urgente ≤24 h para objetos de risco na guideline adulta |
+| Objeto pequeno, rombo no estômago, assintomático | Observação clínica selecionada, instruções de retorno | Depende de tamanho/local e evolução |
+| Pacotes de drogas ingeridos intencionalmente | **Não endoscopar rotineiramente** pelo risco de ruptura | Observação supervisionada; cirurgia se complicação |
+
+**Nuance pediátrica:** tamanho da bateria, idade da criança, tipo de ímã, tempo de exposição e localização alteram risco, seguimento e possibilidade de lesão tardia. A tabela é sobretudo de adulto ESGE, não substitui recomendações pediátricas especializadas NASPGHAN/serviço. Bateria inicialmente gástrica em criança pequena pode ter provocado lesão esofágica enquanto transitava; risco depende de história. Nunca recomendar laxantes ou aguardar espontaneamente em bateria esofágica.
+
+### 4.4 A bateria pode deixar lesão após retirada
+
+Mesmo removida com sucesso, uma bateria que permaneceu no esôfago pode ter causado lesão profunda com necrose, ulceração ou comprometimento de estruturas mediastinais. Entre as complicações estão estenose, perfuração, fístula traqueoesofágica e **fístula aortoesofágica** potencialmente fatal, cuja apresentação pode ser tardia e incluir sangramento sentinela. Após remoção, gravidade endoscópica, localização, idade e tempo de contato podem determinar imagem, observação e equipe torácica/vascular; “retirou a bateria, alta imediata para todos” é simplificação perigosa.
+
+### 4.5 Impactação alimentar e doença subjacente
+
+A impactação é frequentemente consequência de estenose péptica, anel de Schatzki, neoplasia ou **esofagite eosinofílica (EoE)**. A intervenção envolve retirada com acessórios ou empurrar delicadamente o bolo ao estômago em condições adequadas, sem força cega nem “empurrar porque sempre é fácil”. A técnica considera formato do bolo, estenose, fragilidade da mucosa e risco de perfuração.
+
+Após resolução, avaliar mucosa e, se seguro, obter **biópsias para EoE** nos pacientes de risco. Não se deve atribuir um episódio isolado de carne impactada a mastigação inadequada e encerrar sem avaliar patologia estrutural ou inflamatória. A dilatação de estenose pode ser realizada em etapa planejada, mas inflamação ativa, lacerações e risco de perfuração podem orientar adiamento.
+
+**Glucagon IV ou medicação relaxante não deve retardar endoscopia** quando há impactação, especialmente se não maneja secreções; eficácia é variável e efeitos adversos existem. Refrigerantes/efervescentes em obstrução completa podem aumentar aspiração ou perfuração e não são alternativa segura à avaliação hospitalar.
+
+### 4.6 Ingestão de substâncias corrosivas
+
+Ácidos fortes podem causar necrose por coagulação, enquanto álcalis concentrados podem produzir necrose liquefativa com penetração profunda; **essas descrições não permitem inferir segurança pela categoria química**, pois concentração, volume, duração de contato e mistura alteram lesão. Lesões orais ausentes **não excluem** dano esofagogástrico. Estridor, dor intensa, vômitos persistentes, hematêmese, sialorreia, taquicardia, sinais peritoneais ou mediastinais indicam gravidade.
+
+**Não induzir vômito, não neutralizar ácido com base ou vice-versa, não administrar carvão ativado indiscriminadamente, não realizar lavagem gástrica.** A reexposição esofágica e o calor da reação química agravam dano. Proteger via aérea com equipe habilitada quando há edema laríngeo/risco de obstrução. Investigar perfuração e necrose transmural por TC e avaliação cirúrgica em situações suspeitas; a EDA diagnóstica em paciente estável pode ser útil em janela inicial selecionada, mas sua realização e momento não devem ser padronizados cegamente para todos, sobretudo em doença grave/perfuração.
+
+**Consequências tardias:** estenose cicatricial, disfagia, necessidade de dilatação seriada/reconstrução e risco oncológico aumentado em determinados sobreviventes a longo prazo. Seguimento deve ser individualizado. Em ingestão voluntária, avaliação psicossocial é indispensável após estabilização sem transformar emergência em punição.
+
+### 4.7 Perfuração: quando não continuar o exame
+
+Dor torácica intensa, enfisema subcutâneo, febre, dispneia, instabilidade, dor abdominal com defesa, pneumomediastino, pneumoperitônio ou extravasamento de contraste fazem pensar em perfuração. Pode ocorrer por corpo estranho, dilatação, CPRE, ressecção endoscópica, cáustico ou doença de base. **Suspender manobras**, estabilizar, antibióticos de amplo espectro quando indicado, jejum, líquidos e coordenação com cirurgia e endoscopia terapêutica. A equipe define fechamento endoscópico, dreno, stent ou operação conforme dimensão, localização, tempo, contaminação e condição do paciente. A incidência e gravidade variam por procedimento, e “perfuração pequena” não deve ser automaticamente observada sem plano.
+
+
 ## 5. Disfagia e esofagite eosinofílica
 
 Disfagia orofaríngea sugere dificuldade para iniciar deglutição, tosse ou engasgos; disfagia esofágica é percebida após o ato de engolir. Progressão de sólidos para líquidos, emagrecimento, anemia e odinofagia são sinais de alarme. A EDA com biópsias é relevante na investigação de obstrução e doença mucosa; motilidade pode exigir manometria após exclusão de causas estruturais. Esofagite eosinofílica pode apresentar endoscopia aparentemente pouco alterada, tornando as biópsias essenciais quando houver suspeita. Tratamento envolve opções como supressão ácida, corticoide tópico deglutido e terapia dietética individualizada; dilatação trata estreitamento, não a inflamação subjacente.
+
+
+### 5.1 Disfagia orofaríngea e esofágica: primeira bifurcação
+
+A **disfagia orofaríngea** é dificuldade de iniciar a deglutição, com engasgos imediatos, tosse, regurgitação nasal, voz molhada e possível broncoaspiração; causas incluem AVE, doença neuromuscular, alterações estruturais de orofaringe e neoplasias. A prioridade é avaliar segurança de deglutição e nutrição com fonoaudiologia/otorrino e métodos específicos; EDA pode ter papel complementar, mas não substitui avaliação funcional.
+
+A **disfagia esofágica** dá sensação de alimento parado após engolir. Se ocorre inicialmente com sólidos, pensar em obstrução mecânica (anel, estenose, tumor, EoE com estreitamento); progressão rápida de sólidos para líquidos, emagrecimento e anemia elevam preocupação neoplásica. Se líquidos e sólidos estão envolvidos desde o início, distúrbio motor como acalasia é mais provável, mas não exclusivo. Uma percepção cervical não garante que a lesão esteja na faringe; pacientes podem localizar mal origem de obstrução esofágica.
+
+### 5.2 Acalasia, pseudoacalasia, estenose e anel: qual teste confirma?
+
+**Acalasia:** perda da peristalse esofágica e relaxamento inadequado da junção esofagogástrica em graus variáveis, associada à degeneração de plexos neurais entéricos; leva a retenção de alimento, dilatação, regurgitação e disfagia. A EDA avalia obstrução mecânica e malignidade; pode mostrar esôfago dilatado e conteúdo retido, mas exame normal não afasta distúrbio motor. **Manometria esofágica de alta resolução** é fundamental para classificar subtipos e orientar terapia. Esofagograma contrastado cronometrado pode complementar.
+
+**Pseudoacalasia:** neoplasia ou infiltração de junção esofagogástrica que imita alteração motora, mais preocupante em início recente em idoso, perda ponderal acentuada ou dificuldade de passagem do aparelho; requer investigação dirigida, imagem e, em alguns cenários, EUS. **Estenose péptica:** costuma associar-se a refluxo crônico com fibrose distal, progressão gradual de disfagia sólida e melhora conforme tratamento ácido/dilatação. **Anel de Schatzki:** estreitamento anelar da junção, frequentemente associado à disfagia intermitente para sólidos e episódios com carne.
+
+### 5.3 Esofagite eosinofílica — atualização Brasil 2025 + ACG 2025
+
+EoE é doença imuno-mediada relacionada à resposta tipo 2 a antígenos, com infiltração eosinofílica e remodelamento tecidual. Em adultos, apresenta disfagia para sólidos e impactação alimentar, podendo haver história de atopia (asma, dermatite, rinite), mas ausência de atopia não exclui doença. Fenótipos podem ser inflamatórios e **fibroestenóticos**; o tempo de doença não tratada favorece anéis fixos, estreitamentos e bolos impactados.
+
+A EDA pode mostrar **edema com perda de marcas vasculares, anéis, exsudatos, sulcos longitudinais e estenoses** — componentes do escore EREFS. **Endoscopia visualmente normal não afasta EoE**. O diagnóstico envolve sintomas de disfunção esofágica, **≥15 eosinófilos por campo de grande aumento** em biópsia (ou equivalente conforme área de campo) e avaliação de causas alternativas de eosinofilia esofágica.
+
+A diretriz **ACG 2025** recomenda **pelo menos seis biópsias em pelo menos dois níveis** (ex.: distal e médio/proximal), com alvo de áreas visivelmente alteradas e também amostras adequadas quando endoscopia é normal. A **diretriz da Federação Brasileira de Gastroenterologia 2025** também reforça ≥6 fragmentos de segmentos distintos e importância da histologia. Não omitir biópsia depois de impactação quando tecnicamente seguro, pois muitos pacientes não retornam ao ambulatório.
+
+**Tratamento:** opções iniciais incluem IBP, corticoides tópicos deglutidos (budesonida/fluticasona em formulações e técnicas apropriadas) e dieta de eliminação alimentar compartilhada; início por estratégias menos restritivas 1FED/2FED é considerado, com seguimento nutricional. **Dupilumabe** pode ser utilizado em pacientes selecionados refratários/intolerantes conforme disponibilidade e registro. **Dilatação** melhora calibre e disfagia de estenose, mas não substitui tratamento anti-inflamatório. **Resposta clínica não prova remissão histológica**, exigindo monitorização apropriada de sintomas e endoscopia/biópsias conforme equipe.
+
+### 5.4 Esofagite infecciosa, neoplasia e doença do refluxo
+
+Odinofagia predominante, especialmente em imunossuprimidos, sugere esofagite infecciosa: candidíase, HSV ou CMV conforme perfil imunológico e endoscópico. Placas brancas aderentes, úlceras pequenas ou grandes não bastam para confirmar patógeno em todos os casos; biópsia/citologia e contexto clínico orientam tratamento. Estenose e úlcera profunda podem ser causadas por medicamentos (doxiciclina, bisfosfonatos etc.), refluxo grave ou cáusticos. **Neoplasia esofágica** deve ser buscada quando há perda de peso, disfagia progressiva, anemia, dor ou fatores de risco; EDA e biópsia são essenciais.
+
+**DRGE:** sintomas clássicos podem ser tratados empiricamente em pacientes apropriados sem sinais de alarme, mas disfagia e sangramento indicam investigação. Não diagnosticar Barrett apenas por inflamação distal; requer critérios de extensão e histologia conforme diretriz vigente. A EDA oferece evidência de esofagite erosiva, complicações e possíveis diagnósticos alternativos, não mede isoladamente “gravidade do refluxo” em todos os casos.
+
+### 5.5 Quadro de diferenciais
+
+| Padrão | Diagnósticos prováveis | Exame decisivo ou foco |
+|---|---|---|
+| Engasgo/tosse ao iniciar deglutição | Disfagia orofaríngea neurogênica ou estrutural | Avaliação fonoaudiológica, otorrino, métodos funcionais |
+| Sólidos intermitentes, carne impactada | EoE, anel de Schatzki, estenose | EDA e biópsias esofágicas |
+| Sólidos progressivamente, depois líquidos + perda ponderal | Neoplasia/estenose progressiva | EDA com biópsia e estadiamento se câncer |
+| Líquidos e sólidos desde cedo + regurgitação | Acalasia/outro distúrbio motor | EDA para excluir mecânica, manometria |
+| Odinofagia em imunossuprimido | Candida, HSV, CMV, lesão medicamentosa | EDA com amostragem conforme suspeita |
+| Disfagia rapidamente progressiva após cáustico | Estenose cicatricial/perfuração conforme fase | Avaliação especializada com imagem/endoscopia selecionada |
+
 
 ## 6. CPRE, colangite e pancreatobiliar
 
 A CPRE associa riscos, especialmente pancreatite pós-procedimento, sangramento, infecção e perfuração. Seu papel é terapêutico: drenagem de via biliar obstruída, extração de cálculos e tratamento de estenoses selecionadas. Em colangite com disfunção orgânica, iniciar antibióticos e suporte hemodinâmico e providenciar drenagem biliar urgente; a CPRE costuma ser a via preferida quando factível. Em suspeita de coledocolitíase sem alto risco, ultrassonografia, colangiorressonância ou ecoendoscopia podem evitar CPRE diagnóstica desnecessária.
 
+
+### 6.1 Definindo risco de cálculo na via biliar sem indicar CPRE indiscriminada
+
+A ultrassonografia abdominal costuma ser exame inicial de investigação de colestase/dor biliar, mas a ausência de cálculo visível no colédoco não afasta coledocolitíase. Os cálculos podem ser pequenos ou transitoriamente migrar pela papila. A probabilidade é estimada pela combinação de sintomas, exames hepáticos, dilatação ductal, cálculo demonstrado e quadro de colangite.
+
+O guideline **ASGE 2019** separa:
+- **Alto risco:** cálculo no colédoco em US ou imagem seccional; **ou** colangite ascendente; **ou** bilirrubina total >4 mg/dL **E** colédoco dilatado na imagem (geralmente >6 mm com vesícula presente). Pode justificar ir diretamente à CPRE terapêutica após avaliação.
+- **Risco intermediário:** exames hepáticos anormais, idade >55 anos ou dilatação de colédoco **sem** outro critério de alto risco; em geral confirmar com **colangiorressonância (MRCP), ecoendoscopia ou avaliação intraoperatória**, segundo acesso.
+- **Baixo risco:** ausência de preditores relevantes; tratamento da litíase da vesícula conforme indicação, sem CPRE diagnóstica rotineira.
+
+**Erro clássico:** bilirrubina de 5 mg/dL **isolada**, sem dilatação e sem cálculo/colangite, não preenche o critério combinado de alto risco da ASGE. Também não realizar CPRE emergencial em pancreatite aguda biliar **sem** colangite nem obstrução persistente apenas porque o paciente tem pancreatite.
+
+### 6.2 Colangite e drenagem — antídoto contra a falsa segurança dos antibióticos
+
+Colangite resulta de infecção na via biliar associada a comprometimento da drenagem, frequentemente por obstrução. Micro-organismos podem alcançar circulação sistêmica quando pressão ductal sobe, produzindo bacteremia, sepse e choque. A tríade de Charcot (febre, dor no hipocôndrio direito, icterícia) é clássica, mas não aparece em todos os casos. A pêntade de Reynolds acrescenta hipotensão e alteração mental, sugerindo doença grave, mas sua ausência não exclui disfunção orgânica.
+
+A estratificação de gravidade segundo critérios de Tokyo considera inflamação sistêmica, colestase, imagem e falência de órgãos; em paciente com choque séptico e obstrução, o **controle de foco** por drenagem é essencial. Iniciar hemoculturas quando não atrasarem antibiótico, suporte hemodinâmico, oxigênio, fluidos com reavaliação, vasopressor quando indicado, e antimicrobiano que cubra patógenos prováveis conforme risco e padrão local. Sem drenagem, o efeito pode ser insuficiente porque a pressão/obstrução permanecem.
+
+A **ASGE 2021** sugere CPRE em **≤48 h** para colangite em relação a drenagem tardia, preferindo drenagem endoscópica à percutânea quando viável. **Pacientes graves e instáveis podem precisar de drenagem muito antes desse prazo**, conforme estabilização e disponibilidade; a diretriz não manda “esperar 48 h”. Se não for possível extração completa segura num paciente grave, **descompressão por prótese ou dreno** pode ser objetivo inicial suficiente, deixando tratamento definitivo do cálculo para fase mais segura.
+
+### 6.3 Pancreatite pós-CPRE: prevenção de alto rendimento
+
+A canulação da papila e instrumentação do ducto pancreático podem causar edema, obstrução temporária de drenagem e inflamação pancreática; risco aumenta com canulação difícil, manipulação repetida, pancreatite prévia após CPRE e outros fatores. Dor abdominal e hiperamilasemia isolada após procedimento não são necessariamente pancreatite clinicamente relevante: considerar dor típica persistente, elevação enzimática pertinente, internação/prolongamento e critérios reconhecidos.
+
+A **ASGE 2023** recomenda **AINE retal periprocedimento** (p.ex. indometacina 100 mg por via retal em adultos) para pacientes não selecionados e de alto risco, salvo contraindicações, incluindo alergia grave, lesão renal relevante ou sangramento ulceroso recente conforme contexto. A preferência por abordagem guiada por fio em vez de injeção repetida de contraste reduz trauma. **Prótese pancreática profilática** deve ser considerada/recomendada em alto risco com repetido acesso ao ducto pancreático, conforme cenário e experiência. **Hidratação vigorosa com Ringer lactato** pode reduzir risco em pacientes selecionados, mas não deve ser aplicada sem individualização em insuficiência cardíaca, renal ou hepatopatia avançada pelo risco de sobrecarga.
+
+**Quadro de risco-benefício:**
+
+| Intervenção | Benefício potencial | Situação que exige cautela |
+|---|---|---|
+| Indometacina retal | Menor pancreatite pós-CPRE | Doença renal, sangramento ulceroso recente, alergia/contraindicação |
+| Canulação com fio-guia | Menos instrumentação pancreática e contraste indevido | Necessita habilidade e anatomia adequada |
+| Stent pancreático profilático | Reduz pancreatite em certos cenários de alto risco | Migração/obstrução, necessidade de confirmar saída/retirada |
+| Hidratação com Ringer lactato | Proteção contra hipoperfusão pancreática | Insuficiência cardíaca/renal e sobrecarga |
+
+### 6.4 Casos que exigem alternativas à CPRE convencional
+
+**Anatomia alterada:** gastrectomia Billroth II ou bypass gástrico em Y de Roux pode impedir duodenoscópio convencional de alcançar papila; alternativas incluem enteroscopia assistida, abordagem percutânea, cirurgia ou EUS terapêutica em centros capacitados. **Tumor pancreático/estenose distal:** drenagem pode utilizar prótese endoscópica ou EUS em casos apropriados; seleção depende de ressecabilidade, prognóstico e indicação cirúrgica. **Falha de canulação:** insistir traumaticamente aumenta risco; reavaliar estratégia, experiência e alternativas.
+
+**Gravidez:** CPRE pode ser necessária em colangite/obstrução, com redução de radiação e equipe multidisciplinar, não sendo proibida em caráter absoluto; a principal preocupação é evitar procedimento sem benefício claro e proteger mãe/feto. **Crianças:** anatomia, indicação e recursos diferem do adulto. Não ensinar critérios ASGE exclusivamente adultos como regra automática para criança.
+
+### 6.5 Quando a remoção de cálculo não é a última etapa
+
+Após CPRE por coledocolitíase, é necessário decidir **tratamento definitivo da vesícula** quando presente e clinicamente indicado para prevenir novas migrações. Em pancreatite biliar leve, a ASGE recomenda colecistectomia na mesma internação em pacientes aptos, sujeito à situação clínica e disponibilidade; cenários de pancreatite grave/coleções exigem estratégia diferente. O stent colocado durante CPRE pode precisar de troca/remoção programada. Um procedimento tecnicamente bem-sucedido com cálculo retirado, mas sem seguimento do dreno/vesícula, deixa risco de nova obstrução e colangite.
+
+
 ## 7. Preparo e segurança
 
 Confirmar indicação, consentimento, jejum individualizado, alergias, via aérea, risco de sedação, doença cardiopulmonar, gestação e necessidade de acompanhante após sedação. Avaliar antiagregantes e anticoagulantes conforme risco trombótico e risco hemorrágico do procedimento: biópsia diagnóstica e polipectomia complexa não têm o mesmo risco. Nunca suspender dupla antiagregação após stent recente sem discussão com a equipe responsável. Preparo intestinal inadequado reduz detecção de lesões e pode exigir repetição. Riscos incluem aspiração, hipoxemia, perfuração, sangramento e eventos relacionados à sedação; prevenção depende de triagem, monitorização e equipe treinada.
+
+
+### 7.1 Risco pré-procedimento: classificar quem recebe sedação
+
+A avaliação precisa registrar comorbidades cardiopulmonares, síndrome da apneia obstrutiva do sono, obesidade, doença hepática/renal, gravidez, idade, uso crônico de opioides/benzodiazepínicos, alergias, experiência anestésica e **jejum efetivo**. Avaliação de via aérea é especialmente crítica em hematêmese ativa, corpo estranho esofágico com sialorreia, obstrução alta, desnutrição extrema e estenoses que retêm conteúdo. ASA e outras classificações ajudam estimar risco, mas não substituem julgamento, equipe de anestesia e estrutura para resgate de via aérea.
+
+**Sedação não é sinônimo de anestesia geral:** técnicas variam por procedimento e condição, desde sedação mínima/moderada até profunda com suporte avançado. Capnografia e oximetria ajudam reconhecimento precoce de hipoventilação; monitorar pressão, pulso, oxigenação e nível de consciência continuamente conforme risco e protocolo. Equipe deve ter meios de ventilação e ressuscitação.
+
+**Jejum em emergência:** alguns pacientes com corpo estranho e obstrução têm estômago cheio, mesmo após horas sem refeição. A urgência da remoção **não pode ser simplesmente cancelada por jejum incompleto** quando há ameaça grave; o risco de aspiração deve ser gerenciado pela equipe experiente, potencialmente com proteção de via aérea.
+
+### 7.2 Antiplaquetários e anticoagulantes — matriz de decisão BSG/ESGE 2021
+
+O balanço fundamental é **risco de sangramento do procedimento versus risco tromboembólico se a medicação for interrompida**. Endoscopia diagnóstica com biópsia usualmente é **baixo risco hemorrágico**; ressecção de pólipo maior, EMR/ESD, dilatação de estenose e esfinterotomia são **alto risco**, com nuances por técnica/tamanho. AAS usado para prevenção secundária, P2Y12 associado a stent coronariano recente, varfarina de prótese mecânica e DOAC por TEV recente representam situações diferentes.
+
+**BSG/ESGE 2021**: em geral **manter AAS** na maioria dos procedimentos, exceto situações especiais (como ampullectomia) após decisão individual; em procedimentos de baixo risco, podem ser mantidos antagonistas P2Y12 e varfarina com INR na faixa terapêutica, enquanto para DOAC considera-se omitir dose matinal no dia segundo protocolo. Em procedimento de alto risco com **baixo risco trombótico**, considerar pausar P2Y12 **7 dias**, varfarina **5 dias** (verificar INR) e DOAC com última dose **3 dias antes** (ou **5 dias** para dabigatrana quando CrCl ~30–50 mL/min). **Esses intervalos são exemplos de diretriz para determinados regimes e populações, não prescrições automáticas**: agentes, stent, função renal, risco de sangramento e urgência modificam estratégia.
+
+Em **alto risco trombótico**, consultar cardiologista/hematologista antes de suspender P2Y12, e a eventual **ponte com HBPM** em pacientes com varfarina aplica-se só a grupos muito selecionados segundo diretriz e risco, **não** a todos os anticoagulados. Em sangramento ativo grave, a decisão de reversão de anticoagulação se relaciona à gravidade, fármaco e risco de trombose, e não apenas ao desejo de realizar EDA rapidamente. Estabelecer plano de **retomada** depois da hemostasia evita suspensão prolongada e AVC/TEV.
+
+| Procedimento | Risco de sangramento | Risco de interromper fármaco | Conduta conceitual |
+|---|---|---|---|
+| EDA diagnóstica + biópsia | Baixo em geral | Pode ser alto em stent/válvula | Muitas vezes manter antitrombóticos; avaliar detalhes |
+| Polipectomia grande/EMR | Mais elevado | Varia por indicação da terapia | Planejar temporização com cardiologia quando necessário |
+| Esfinterotomia por CPRE | Alto | Varia | Distinguir drenagem apenas de corte papilar; plano especializado |
+| EDA de hemostasia em sangramento ativo | Alto risco clínico, mas é terapia de emergência | Suspensão/reversão podem ser complexas | **Não adiar hemostasia potencialmente salvadora por burocracia**, coordenar reversão e controle |
+| Dilatação de estenose esofágica | Relevante pelo risco de perfuração/sangramento | Varia | Consentimento e ajuste fármaco conforme risco |
+
+### 7.3 Consentimento informado não é apenas assinatura
+
+Explicar finalidade, opções, riscos (perfuração, hemorragia, aspiração, reação sedativa, infecção quando aplicável), eventual falha diagnóstica e possibilidade de intervenção não prevista. Em emergência com paciente incapaz, seguir critérios legais/assistenciais para decisão e registrar justificativa. Endoscopia diagnóstica ambulatorial com sedação requer acompanhante responsável e recomendações sobre direção, álcool e decisões de risco pelo período orientado pela equipe. Gestação, doença neurológica, incapacidade cognitiva e vulnerabilidade demandam comunicação adaptada sem suprimir autonomia.
+
+### 7.4 Limpeza e prevenção de infecções
+
+Endoscópios reutilizáveis exigem limpeza, desinfecção de alto nível, rastreabilidade de reprocessamento, armazenamento e manuseio segundo normas de serviço e fabricante. Duodenoscópios possuem geometrias complexas, relacionadas a risco de falhas de reprocessamento e transmissão de micro-organismos resistentes. A qualidade não é apenas reconhecer a lesão na tela: envolve checklist do equipamento, processo e equipe de enfermagem.
+
+**Antibioticoprofilaxia** não é universal para EDA/colonoscopia simples. Indicações dependem de procedimento e cenário: hemorragia varicosa em cirrose, determinados procedimentos de drenagem incompleta, condições de imunossupressão e outras situações são específicas. Não prescrever ceftriaxona a todo paciente submetido a gastroscopia e não omitir antibioticoprofilaxia no cirrótico com sangramento varicoso.
+
+### 7.5 Qualidade do laudo — o que o clínico precisa receber
+
+Um laudo útil contém indicação, procedimento realizado e extensão atingida, qualidade da visualização/preparo, sedação/intercorrências, achados por segmento e medidas/localização, biópsias e recipientes etiquetados, intervenções e materiais utilizados, complicações, impressão diagnóstica e **plano concreto de seguimento**. Em HDA, descrever Forrest, tamanho/localização de úlcera, técnica e resultado da hemostasia; em colonoscopia, preparo, alcance cecal, tamanho/forma/localização/padrão de remoção de pólipos; em EoE, EREFS e quantidade/localização de biópsias; em CPRE, indicação, canulação, extração/drenagem, próteses colocadas e **necessidade de retirada/troca**.
+
+Um laudo de EDA que diz só “gastrite enantematosa leve” sem contexto, amostragem ou pergunta clínica resolvida pode ter pouca utilidade; não convertê-lo em diagnóstico definitivo de gastrite por *H. pylori*. O relatório de patologia frequentemente chega em outro momento, de modo que comunicação de resultados, sistema de rastreamento e retorno são parte do processo.
+
+### 7.6 Complicações e sinais pós-procedimento
+
+**Após EDA/colonoscopia:** dor intensa progressiva, defesa abdominal, febre, pneumoperitônio, hematêmese/hematoquezia abundante, dispneia ou alteração de consciência exigem reavaliação urgente. Desconforto leve por insuflação pode ser esperado, mas não se deve atribuir peritonite à “gás do exame”. **Após CPRE:** dor epigástrica persistente com irradiação e vômitos sugere pancreatite; febre/icterícia crescente podem indicar colangite ou drenagem inadequada; hematêmese/melena podem refletir sangramento pós-esfinterotomia. Perforação retroperitoneal pode ter sinais inicialmente discretos.
+
+Na resposta inicial, estabilizar, coletar exames direcionados e solicitar imagem/avaliação cirúrgica quando indicada. Em ressecção de pólipo grande, pode ocorrer **síndrome pós-polipectomia** por lesão térmica transmural sem perfuração livre; diferenciar de perfuração exige clínica/imagem e seguimento. A alta deve incluir sinais de alarme escritos e contato para retorno.
+
 
 ## 8. Quatro casos clínicos comentados
 
