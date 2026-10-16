@@ -97,7 +97,8 @@ window.supabaseClient = window.supabase.createClient(
   const imageExtensions = /\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$/i;
 
   async function prepareImage(file) {
-    if (!file?.type?.startsWith("image/")) return { file, width: null, height: null };
+    const isImage = Boolean(file && (file.type?.startsWith("image/") || imageExtensions.test(file.name || "")));
+    if (!isImage) return { file, width: null, height: null };
     let bitmap;
     try { bitmap = await createImageBitmap(file); }
     catch { if (file.size > CAP) throw new Error("Não foi possível preparar esta imagem para até 80 KB."); return { file, width: null, height: null }; }
