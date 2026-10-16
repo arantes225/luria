@@ -626,6 +626,26 @@ Rapaz de 13 anos procura atendimento por febre, dor pleurítica, dispneia e derr
 **Por que importa:** ensina a classificar gravidade pleural, não apenas identificar a localização anatômica.
 
 
+### Caso 11 — Contato de sete anos com IGRA indeterminado
+
+Menina de sete anos, sem sintomas, mora com adulto recentemente diagnosticado com tuberculose pulmonar. Exame físico, avaliação nutricional e investigação dirigida não evidenciam doença ativa. A equipe colheu IGRA, cujo laudo veio **indeterminado**. O cuidador considera que “indeterminado significa negativo”.
+
+**Problema:** um teste indeterminado pode refletir aspectos da técnica, transporte ou resposta imune e não é igual a um resultado não reagente. No entanto, a Nota MS nº 2/2022 traz regra operacional específica: **crianças contatos de TB ativa de 2 a menos de 10 anos com IGRA indeterminado devem ser consideradas como ILTB provável**, após afastar tuberculose-doença, devido ao risco elevado e à dificuldade de repetir a coleta.
+
+**Raciocínio:** a conduta programática deriva da faixa etária e do risco de contato, não da suposta certeza biológica do teste. Em pessoa vivendo com HIV ou candidata a transplante, a mesma nota orienta avaliar repetição do resultado indeterminado em vez de aplicar indiscriminadamente a regra da criança contato.
+
+**Conduta:** confirmar adequação do algoritmo, manter avaliação clínica e definir tratamento preventivo conforme elegibilidade e interações. Documentar exposição e acompanhamento do caso fonte. **Por que importa:** diferencia “indeterminado analítico” de “decisão de tratar alto risco”.
+
+### Caso 12 — Tuberculose não grave em local sem radiografia
+
+Menino de oito anos com tosse de evolução lenta, perda ponderal leve e contato domiciliar comprovado com fonte pulmonar sensível. Na unidade não há radiografia, mas há acesso à coleta e TRM-TB; exame molecular veio com resultado de baixa carga. A criança não tem desconforto respiratório ou critérios clínicos de internação, e o exame não sugere compressão de vias aéreas.
+
+**Problema:** a ausência de radiografia impede usar critérios de imagem, mas não obriga automaticamente seis meses. A **Situação 2** da Nota MS 5/2024 contempla decisões quando RX está indisponível e há dados bacteriológicos compatíveis, respeitando sintomas leves, classificação da doença e ausência de suspeita de resistência.
+
+**Raciocínio:** “sem RX” difere de “RX normal” e de “RX sem cavitação”; nenhum desses achados pode ser presumido. A equipe deve documentar recursos indisponíveis, tentar obter imagem quando viável sem atrasos prejudiciais, analisar a história da fonte e garantir revisão mensal. Um teste com baixa carga, sozinho, não demonstra ausência de complicações.
+
+**Conduta:** registrar critérios de elegibilidade e plano de seguimento, solicitar avaliação de referência se a classificação não for suficientemente segura e reavaliar a duração diante de resposta inadequada. **Por que importa:** aplica a diretriz nacional a cenários reais com limitações diagnósticas sem transformar falta de exame em prova negativa.
+
 ## 23. Questões autorais com comentário de cada alternativa
 
 ### Questão 1 — Resultado molecular negativo
