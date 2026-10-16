@@ -94,16 +94,25 @@ window.supabaseClient = window.supabase.createClient(
   if (!client?.storage || client.storage.__luriaImageGuard) return;
   const CAP = 80 * 1024;
   const originalFrom = client.storage.from.bind(client.storage);
-  const imageExtensions = /\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$/i;
+  const imageExtensions = [".avif", ".gif", ".jpg", ".jpeg", ".png", ".svg", ".webp", ".bmp", ".tif", ".tiff"];
 
   async function prepareImage(file) {
-    const isImage = Boolean(file && (file.type?.startsWith("image/") || imageExtensions.test(file.name || "")));
+    const lowerName = String(file?.name || "").toLowerCase();
+    const isImage = Boolean(file && (file.type?.startsWith("image/") || imageExtensions.some(ext => lowerName.endsWith(ext))));
     if (!isImage) return { file, width: null, height: null };
     let bitmap;
     try { bitmap = await createImageBitmap(file); }
     catch { if (file.size > CAP) throw new Error("Não foi possível preparar esta imagem para até 80 KB."); return { file, width: null, height: null }; }
     const originalWidth = bitmap.width, originalHeight = bitmap.height;
-    const candidates = [];
+    if (file.size <= CAP) {
+      bitmap.close?.();
+      return { file, width: originalWidth, height: originalHeight };
+    }
+    if (file.type === "image/gif" || file.type === "image/svg+xml") {
+      bitmap.close?.();
+      throw new Error("GIFs animados e SVGs acima de 80 KB precisam ser reduzidos antes do envio para preservar o formato.");
+    }
+    let best = null;
     const maxDimension = Math.min(1600, Math.max(originalWidth, originalHeight));
     const scales = [1, .85, .7, .55, .42, .3, .22, .16, .12];
     for (const scaleFactor of scales) {
@@ -118,13 +127,18 @@ window.supabaseClient = window.supabase.createClient(
       context.drawImage(bitmap, 0, 0, width, height);
       for (const quality of [.86, .76, .66, .56, .46, .36, .28]) {
         const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/webp", quality));
-        if (blob) candidates.push({ blob, width, height });
+        if (blob && blob.size <= CAP) {
+          best = { blob, width, height };
+          break;
+        }
       }
+      if (best) break;
     }
     bitmap.close?.();
-    const best = candidates.find(item => item.blob.size <= CAP);
     if (!best) throw new Error("Não foi possível reduzir a imagem para até 80 KB. Tente uma imagem mais simples.");
-    const base = String(file.name || "imagem").replace(/\\.[^.]+$/, "");
+    const originalName = String(file.name || "imagem");
+    const dot = originalName.lastIndexOf(".");
+    const base = dot > 0 ? originalName.slice(0, dot) : originalName;
     const optimized = new File([best.blob], base + ".webp", { type: "image/webp", lastModified: Date.now() });
     return { file: optimized, width: best.width, height: best.height };
   }
