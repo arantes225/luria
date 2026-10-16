@@ -441,6 +441,103 @@ Reimagem é razoável quando há **piora ou resposta insuficiente**, infiltrado 
 **Fontes clínicas deste aprofundamento:** IDSA, *Community-Acquired Pneumonia Clinical Pathway* (2023), https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf ; ATS/IDSA, *Diagnosis and Treatment of Adults with Community-acquired Pneumonia* (2019), https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/ ; ATS, *Diagnosis and Management of CAP* (2025), https://doi.org/10.1164/rccm.202507-1692ST .
 
 
+
+### 7.9 Derrame parapneumônico: interpretar líquido pleural antes de dizer que o antibiótico falhou
+
+Pneumonia pode inflamar a pleura e causar acúmulo de líquido. Três situações devem ser distinguidas: **derrame parapneumônico simples**, que pode regredir com a antibioticoterapia adequada; **derrame parapneumônico complicado**, no qual a inflamação ou a infecção do espaço pleural torna provável a necessidade de drenagem; e **empiema**, definido pelo encontro de pus no espaço pleural. A coleção pode atravessar fases exsudativa, fibrinopurulenta (com septações) e de organização; esse continuum explica por que apenas ampliar o antibiótico pode falhar se houver líquido infectado não drenado.
+
+A suspeita clínica costuma surgir com **febre persistente ou recorrente**, dor pleurítica, dispneia desproporcional, piora da oxigenação ou redução localizada do murmúrio vesicular. A radiografia sugere derrame; o **ultrassom pleural** confirma, dimensiona, identifica septações e pode orientar uma punção mais segura. Tomografia contrastada pode ser útil quando a anatomia é difícil ou há dúvida sobre abscesso pulmonar, neoplasia, pleurite complexa e extensão do processo. **Não existe regra de que qualquer pequena lâmina de líquido precisa ser puncionada**: o valor esperado do procedimento e a segurança dependem de tamanho, imagem, evolução e suspeita de infecção. Uma coleção mínima sem janela segura não deve ser abordada às cegas.
+
+#### 7.9.1 O líquido pleural não é apenas um resultado de “exsudato”
+
+Na suspeita de infecção pleural, podem ser solicitados conforme contexto celularidade, proteínas, LDH, glicose, pH, Gram e culturas; as amostras devem ser colhidas de maneira apropriada e, quando possível, encaminhadas para meios convencionais e frascos de hemocultura, conforme protocolos laboratoriais. A classificação transudato/exsudato ajuda no diagnóstico diferencial, mas **não decide sozinha se é necessário drenar**. Bactérias, metabolismo celular e inflamação pleural podem consumir glicose, elevar LDH e reduzir pH.
+
+A diretriz **BTS 2023** fornece uma matriz operacional para adultos com derrame parapneumônico e suspeita de infecção em que a aspiração não revela pus franco:
+
+| Resultado e contexto | Interpretação | Próximo passo típico |
+| --- | --- | --- |
+| **Pus franco** na aspiração | Empiema; a aparência do material estabelece a necessidade de controle de foco | Discutir **drenagem pleural** e antimicrobianos, com equipe e ultrassom |
+| **pH pleural ≤7,20** | Alto risco de derrame complicado ou infecção pleural | **Inserir dreno** quando há volume acessível com segurança por ultrassom |
+| **pH >7,20 e <7,40** | Risco intermediário; nenhum valor isolado resolve | Verificar **LDH** e dados adicionais; LDH pleural **>900 UI/L** favorece considerar drenagem se houver febre persistente, coleção volumosa, septações, realce pleural ou glicose baixa |
+| **pH ≥7,40** | Baixo risco de infecção pleural complicada imediata | Não drenar automaticamente apenas pelo derrame; acompanhar evolução e reavaliar |
+| **pH indisponível**, glicose pleural **<3,3 mmol/L** (aproximadamente **60 mg/dL**) | Possível marcador substituto de alto risco, considerando contexto | Reforçar necessidade de avaliação especializada e eventual drenagem; excluir mimetizadores |
+
+**Interpretação crítica:** o limiar de pH é uma ferramenta de decisão clínica em contexto de **suspeita de infecção pleural**, não um mecanismo automático para puncionar qualquer derrame. Derrames reumatoides e algumas neoplasias também podem cursar com pH baixo, e a situação clínica pode exigir controle de foco por sinais de infecção mesmo quando determinado marcador não está francamente alterado. A drenagem pressupõe uma janela segura e equipe qualificada. Na faixa intermediária, a BTS considera também **glicose pleural abaixo de 4,0 mmol/L (aproximadamente 72 mg/dL)** como fator que reforça suspeita, junto a LDH e imagem; esse marcador não deve ser confundido com o limite de **3,3 mmol/L** usado quando o pH não está disponível.
+
+O pH deve ser colhido e analisado com técnica adequada, idealmente em sistema de gasometria conforme protocolo do laboratório. **Contaminação por anestésico local ou heparina pode produzir redução artificial do pH**, enquanto demora na análise pode alterá-lo em outra direção. Enviar líquido em frasco genérico e interpretar um valor duvidoso sem examinar coleta é fonte evitável de erro. O laboratório deve informar método, acondicionamento e limitações; um valor em discordância marcada com a imagem e a evolução exige revisão, não prescrição cega.
+
+#### 7.9.2 Quando e como controlar o foco
+
+Empiema ou derrame complicado não é apenas “pneumonia mais forte”: a **infecção em cavidade pleural** exige eliminar a coleção infectada quando há indicação. A BTS 2023 recomenda para drenagem inicial de infecção pleural, quando apropriada, **dreno de pequeno calibre (até 14 French)**. Maior calibre não significa automaticamente maior sucesso e pode aumentar dor. Drenagem deve ser planejada com imagem e observação clínica de saída, reexpansão, febre, oxigenação e coleções residuais.
+
+Se o dreno deixa uma coleção infectada residual, considerar reavaliação do posicionamento e da anatomia, além da equipe de pneumologia/cirurgia torácica. A diretriz sugere **tPA associado a DNase intrapleural em situações selecionadas** quando a drenagem inicial parou e ainda existe coleção. **Não é terapia rotineira de qualquer derrame** e exige avaliação de risco hemorrágico, contraindicações, capacidade de monitorização e consentimento; usar tPA ou DNase isoladamente não tem a mesma recomendação. Cirurgia por videotoracoscopia pode ser necessária diante de drenagem inadequada, organização pleural ou evolução desfavorável. **Não presumir que cirurgia imediata substitui drenagem convencional como primeira escolha em todo paciente.**
+
+A antibioticoterapia de **infecção pleural estabelecida** inclui atenção a anaeróbios e fatores epidemiológicos; pode exigir **semanas**, com ajuste a microbiologia, drenagem e resposta, diferentemente da PAC não grave estável candidata a duração menor que cinco dias pela ATS 2025. A diretriz BTS descreve com frequência um curso de **aproximadamente 2–6 semanas**, mas reconhece ausência de ensaio robusto que defina uma duração única; não transformar essa faixa em uma regra de receita sem considerar evolução e supervisão especializada. O contexto de aquisição comunitária ou hospitalar e o risco de microrganismos resistentes mudam a escolha do antimicrobiano.
+
+**Pulo do Gato:** “estou há três dias com ceftriaxona e ainda tenho febre” não significa obrigatoriamente necessidade de meropeném. Se há pus pleural ou derrame complicado não drenado, pode estar faltando **controle de foco**, não espectro.
+
+### 7.10 Aspiração não é diagnóstico de pneumonia bacteriana: três mecanismos diferentes
+
+Todo ser humano pode microaspirar secreções durante o sono, e nem toda aspiração gera infecção. O erro frequente é chamar de pneumonia bacteriana qualquer opacidade que apareceu após vômito e, então, acrescentar cobertura anaeróbia sem avaliar o mecanismo. Três cenários precisam ser separados.
+
+**Pneumonite química por aspiração** ocorre quando conteúdo gástrico irritante provoca lesão inflamatória alveolar, às vezes com início abrupto de tosse, broncoespasmo, dispneia e hipoxemia após episódio presenciado de aspiração. Pode melhorar consideravelmente com medidas de suporte nas primeiras **24–48 horas**. Não existe necessidade automática de antibiótico profilático se não houver evidência de infecção bacteriana; entretanto, o paciente grave exige suporte e reavaliação, pois a evolução pode revelar infecção secundária ou diagnóstico concomitante. A história de aspiração também não exclui sepse ou pneumonia já presente antes do evento.
+
+**Pneumonia por aspiração** é infecção pulmonar associada à entrada de secreção orofaríngea contendo microrganismos em pessoa com comprometimento de proteção de vias aéreas, deglutição, consciência ou higiene oral. Idosos frágeis, pessoas após AVC, portadores de doença neurológica, usuários de sedativos e pacientes com distúrbios esofágicos merecem avaliação dos mecanismos de aspiração. Não é correto atribuir toda pneumonia do idoso exclusivamente à aspiração; o diagnóstico integra sintomas, evolução, achados e fatores de risco.
+
+**Abscesso pulmonar e infecção pleuropulmonar relacionada à aspiração** constituem complicações que exigem outra avaliação: cavitação com nível hidroaéreo ou necrose, escarro fétido (quando presente), febre prolongada e empiema podem motivar cobertura com atividade anaeróbia, investigação microbiológica e controle de foco. **A ATS/IDSA 2019 sugere não adicionar cobertura anaeróbia de rotina à terapia empírica de PAC por mera suspeita de aspiração, a menos que haja suspeita de abscesso pulmonar ou empiema**. A recomendação não impede ajustar a cobertura em infecção pleural confirmada nem desconsidera epidemiologia local e microbiologia.
+
+| Pista à beira-leito | Pneumonite química | Pneumonia infecciosa relacionada à aspiração | Abscesso / empiema |
+| --- | --- | --- | --- |
+| Tempo desde a aspiração | Frequentemente início súbito, após evento reconhecido | Pode ser insidioso ou resultar de microaspirações recorrentes | Frequentemente quadro prolongado, febre persistente ou piora após tratamento |
+| Mecanismo predominante | Inflamação por conteúdo gástrico | Inoculação bacteriana em pessoa suscetível | Necrose do parênquima ou infecção de espaço pleural |
+| Antibiótico | Não rotineiro apenas por aspiração, se cenário compatível com lesão química e rápida melhora | PAC bacteriana provável exige avaliação para antibiótico adequado | Terapia orientada ao foco, incluindo anaeróbios conforme contexto; avaliar drenagem pleural quando houver indicação |
+| Medida preventiva | Proteger via aérea, posicionamento e reduzir risco em novo evento | Avaliar deglutição, alimentação, higiene oral, sedação e condições neurológicas | Corrigir causas de aspiração, completar avaliação de coleção e programar seguimento |
+
+**Cuidado com cronologia:** piora hemodinâmica ou ventilatória após aspiração pode requerer terapia intensiva independentemente da etiologia. A diferenciação “química versus infecciosa” não deve servir para atrasar tratamento de sepse. De outro lado, um infiltrado novo imediatamente após sedação em paciente que melhora e não desenvolve sinais persistentes de infecção não é justificativa isolada para antibioticoterapia prolongada.
+
+### 7.11 A pneumonia não melhora: algoritmo anatômico, microbiológico e diagnóstico
+
+Se a pessoa mantém **febre, hipoxemia crescente, hipotensão, delirium ou taquipneia importante após tratamento**, a pergunta deve deixar de ser apenas “qual antibiótico trocar?”. A evolução pode refletir gravidade basal, falta de absorção, patógeno resistente, necrose, empiema ou **doença que não era PAC**. A avaliação utiliza gravidade atual e velocidade de deterioração: falência respiratória ou choque exigem suporte imediato enquanto a etiologia é redefinida.
+
+#### Primeiro: o paciente deteriorou-se ou apenas não recuperou todos os sintomas?
+
+Uma tosse residual, fadiga ou opacidade radiológica persistente isolada nas primeiras semanas pode fazer parte da recuperação. Uma pessoa que permanece taquipneica, hipotensa, com febre recorrente e necessidade crescente de oxigênio **não está estável**. O curso antibiótico abreviado proposto pela ATS 2025 destina-se a adultos **não graves e estáveis**, e não a pacientes com doença complicada. O exame deve identificar consumo de oxigênio, consciência, perfusão, ingestão e capacidade funcional — não apenas registrar “PCR caiu”.
+
+#### Segundo: procurar complicação que exige outra ação além de antibiótico
+
+Rever exame torácico e dados de imagem. **Nova dor pleurítica com derrame** exige pensar em derrame complicado, empiema, tromboembolismo e outras causas. **Cavitação ou consolidação necrosante** exige investigação de abscesso e patógenos específicos, incluindo *Staphylococcus aureus* em contextos apropriados, além de embolia séptica e neoplasia. **Hemoptise, emagrecimento prolongado e evolução subaguda** ampliam o diferencial para tuberculose e tumor obstrutivo. Um infiltrado recorrente no mesmo lobo pode ser sinal de obstrução brônquica ou aspiração focal, não resistência bacteriana inexplicável.
+
+| Evolução observada | Diagnósticos concorrentes prioritários | Exame/decisão potencialmente útil |
+| --- | --- | --- |
+| Febre e dor pleurítica + derrame novo/maior | Derrame complicado, empiema, tromboembolismo | US pleural, análise de líquido quando segura/indicada; angiotomografia conforme probabilidade de TEP |
+| Febre persistente com cavidade nova | Abscesso, pneumonia necrosante, TB, fungos, neoplasia | TC conforme contexto, culturas, epidemiologia e consulta especializada |
+| Dispneia súbita, dor pleurítica e taquicardia desproporcional | TEP, pneumotórax, evento cardíaco | Reavaliar probabilidade clínica e exames direcionados |
+| Piora da saturação e congestão periférica | Insuficiência cardíaca e sobrecarga hídrica | Exame físico, ECG, ultrassom/eco e avaliação volêmica |
+| Opacidade repetida no mesmo território | Lesão obstrutiva, corpo estranho, aspiração focal | TC, eventual broncoscopia e investigação de malignidade |
+| Síndrome consumptiva, tosse crônica e evolução atípica | Tuberculose e outras infecções subagudas | Testes apropriados para TB e precauções conforme risco; evitar antimicrobiano que mascare diagnóstico |
+
+#### Terceiro: verificar exposição antibiótica e evidência de resistência
+
+Checar exatamente o que foi prescrito e recebido (dose, via, intervalo, função renal/hepática, absorção, adesão). Uma pessoa que vomitou todas as doses orais ou cuja prescrição foi interrompida por falta de medicamento não apresentou verdadeira falência de um esquema bem administrado. Rever **hemoculturas e amostras respiratórias quando obtidas com indicação e qualidade**, fatores locais validados para MRSA e *Pseudomonas aeruginosa*, hospitalização e antibióticos IV recentes, doença estrutural e epidemiologia. **O antigo rótulo “pneumonia associada aos cuidados de saúde (HCAP)” não autoriza isoladamente cobertura de amplo espectro** segundo ATS/IDSA 2019.
+
+#### Quarto: reavaliar com uma nova hipótese explícita
+
+No prontuário, registrar se a principal hipótese agora é **complicação pleural**, **agente inadequadamente coberto**, **falha de administração**, **doença de base decompensada** ou **diagnóstico alternativo**; nomear qual exame/conduta poderá mudá-la. A troca automática de cefalosporina por carbapenêmico em todos os pacientes febris gera efeitos adversos, seleção de resistência e pode atrasar drenagem de pus. A consulta multidisciplinar e a revisão de imagem são especialmente importantes em deterioração ou persistência após abordagem adequada.
+
+### 7.12 Duração e alta depois de pneumonia complicada: por que a exceção muda o plano
+
+O objetivo da antibioticoterapia não é completar um número arbitrário de dias, e sim tratar o foco provável com duração suficiente para o **cenário correto**. A ATS 2025 sugere condicionalmente curso **inferior a cinco dias, mínimo de três dias**, para alguns adultos com PAC **não grave**, estáveis e sem fatores que enfraqueçam essa recomendação. Não generalizar a uma pessoa com cavitação, empiema, bacteremia com indicação particular, pneumonia grave ou infecção extrapulmonar.
+
+**Empiema:** drenagem e antibioticoterapia guiada por aquisição comunitária/hospitalar, culturas e evolução; a BTS reconhece que muitos serviços utilizam **aproximadamente duas a seis semanas** de antibiótico e que a duração ótima permanece incerta. A decisão sobre via oral, retirada do dreno e alta depende de resposta, controle de coleção residual, estabilidade clínica e possibilidade real de seguimento.
+
+**Abscesso pulmonar / necrose:** frequentemente exige duração superior à de PAC simples, escolha de agente adequada ao cenário e reavaliação de obstrução, bactérias específicas, TB e imunodeficiência. Nem toda cavitação exige drenagem imediata; contudo, falta de melhora, coleção extensa, complicação pleural ou dúvida de diagnóstico pedem consulta especializada. Não fixar uma dose ou duração única sem microbiologia, imagem, estado imune e resposta.
+
+**Pneumonite química de resolução rápida:** em paciente que aspirou conteúdo gástrico, melhora rapidamente e não sustenta evidência de infecção, prolongar antibiótico como se fosse empiema é um erro de mecanismo. Observar clinicamente e investigar fatores de aspiração e capacidade de proteção da via aérea.
+
+**Alta pós-complicação — cinco perguntas:** (1) havia pus/coleção que precisava de drenagem, e isso foi resolvido? (2) há sinais de estabilidade respiratória/hemodinâmica? (3) qual regime foi realmente administrado, com duração e seguimento claros? (4) há plano de reavaliação para recorrência, imagem ou patologia obstrutiva? (5) paciente/família sabem reconhecer dispneia crescente, febre recorrente, dor pleurítica importante, confusão ou sangue no escarro?
+
+**Resumo em 30 segundos:** derrame simples não exige dreno universal; **pus ou pH ≤7,2 em contexto apropriado** favorecem drenagem quando existe janela segura; **pH 7,2–7,4** exige integração com LDH, glicose e imagem; aspiração química pode melhorar sem antibiótico; a suspeita de aspiração por si só não implica cobertura anaeróbia rotineira; **empiema e abscesso não entram na estratégia de três dias da PAC não grave**.
+
 ## 8. Populações especiais e segurança
 
 ### 8.1 Populações e segurança
@@ -563,6 +660,19 @@ Homem de 28 anos sem comorbidades tem febre, tosse e opacidade focal na radiogra
 
 Mulher de 76 anos, diabética e portadora de DPOC, tem infiltrados bilaterais, teste positivo para vírus respiratório, FR 31/min, confusão recente e SpO2 86% em ar ambiente. **Hipótese:** PAC grave com insuficiência respiratória; coinfecção bacteriana não excluída. **Raciocínio:** o caso NÃO pertence à população de ambulatoriais sem comorbidades em que a ATS sugere evitar antibiótico; gravidade e vulnerabilidade favorecem considerar tratamento empírico e suporte. **Exames:** avaliação de oxigenação/perfusão, imagem, microbiologia pertinente e disfunção orgânica. **Conduta:** internação e suporte respiratório, antibioticoterapia empírica apropriada e antiviral quando indicado, com revisão diária de microbiologia para descalonamento. **Por que este caso importa:** o mesmo teste viral não gera a mesma decisão em pacientes com riscos distintos.
 
+
+
+### Caso 17 — Derrame pleural que não respondeu à “troca de antibiótico”
+
+Mulher de 59 anos com PAC hospitalizada há quatro dias, ainda com febre e dor pleurítica direita, necessitando oxigênio. Ultrassom demonstra derrame pleural moderado com septações e janela acessível para punção. Na toracocentese guiada, o líquido não é francamente purulento, mas o pH analisado corretamente é 7,12, com glicose reduzida. **Hipótese:** derrame parapneumônico complicado. **Raciocínio:** o pH ≤7,20 associado à síndrome infecciosa, coleção acessível e sinais de organização aponta necessidade de controle de foco; apenas escalonar antibiótico pode deixar líquido infectado persistente. **Exames:** Gram/culturas e análise do líquido, ultrassom para planejamento e dados séricos dirigidos; acompanhar evolução e, se necessário, imagens adicionais. **Conduta:** discutir drenagem pleural guiada, antibioticoterapia apropriada e reavaliação com pneumologia/cirurgia torácica. **Por que importa:** a pergunta de prova frequentemente descreve “febre apesar de ceftriaxona” quando a resposta decisiva é drenar, não escolher automaticamente um carbapenêmico.
+
+### Caso 18 — Aspiração presenciada durante sedação não significa antibiótico por dez dias
+
+Homem de 42 anos, sem imunodeficiência conhecida, apresenta vômito e aspiração presenciada em procedimento sob sedação. Desenvolve tosse, desconforto respiratório e infiltrado dependente poucas horas depois. Recebe suporte, não há choque e sua oxigenação melhora rapidamente ao longo de 24–36 horas, sem evidências persistentes de infecção. **Hipótese:** pneumonite química por aspiração, a confirmar pela evolução. **Raciocínio:** o evento presenciado seguido de início abrupto e melhora rápida favorece lesão inflamatória química, distinta de uma pneumonia bacteriana estabelecida. **Avaliação:** sinais vitais seriados, oxigenação e eventual reavaliação de imagem e microbiologia se houver deterioração ou febre persistente. **Conduta:** suporte respiratório conforme necessidade, evitar antibiótico profilático automático quando o quadro permanece coerente com pneumonite isolada; vigiar infecção secundária e investigar fatores de risco de nova aspiração. **Por que importa:** aspiração é um mecanismo, não um antibiograma; decidir pela evolução clínica evita tratamento desnecessário.
+
+### Caso 19 — Cavitação depois de um quadro interpretado como PAC simples
+
+Homem de 66 anos, tabagista, com febre persistente, perda ponderal e expectoração há três semanas. Após curso inicial de antibiótico sem melhora significativa, TC evidencia cavitação pulmonar espessa próxima a região de consolidação. Há relato de tosse anterior ao episódio febril e hemoptise ocasional. **Hipóteses:** abscesso ou pneumonia necrosante, mas também tuberculose, malignidade cavitada e outras infecções. **Raciocínio:** evolução prolongada, hemoptise e tabagismo impedem assumir que a cavidade é apenas uma PAC bacteriana com dose insuficiente. **Exames:** microbiologia e testes para TB conforme epidemiologia e precauções, avaliação de TC para obstrução, culturas conforme indicação e eventual broncoscopia discutida com especialista. **Conduta:** reavaliar gravidade e cobertura, tratar complicação confirmada, encaminhar para investigação do diagnóstico alternativo e controle de foco quando apropriado; não aplicar curso antibiótico mínimo de três dias. **Por que importa:** “pneumonia que não cura” pode ser doença diferente desde o início.
 
 ## 10. Questões autorais comentadas
 
@@ -722,9 +832,46 @@ D) A qualidade não depende do treinamento do operador.
 **Gabarito: B.** A recomendação é condicional, e a ultrassonografia avalia especialmente o pulmão subpleural. **A:** ignora necessidade de investigação de outras causas e lesões centrais. **C:** linhas B não têm especificidade microbiológica. **D:** aquisição e interpretação são dependentes do operador. **Mini-revisão:** usar imagem integrada à clínica, respeitando limitações técnicas.
 
 
+
+### Questão 24 — Interpretação do pH no derrame parapneumônico
+
+Adulto internado por PAC apresenta febre persistente, derrame pleural acessível e líquido não purulento ao aspecto, com pH 7,15 colhido adequadamente. Qual conduta é mais apropriada?
+
+A) Considerar derrame simples, pois ausência de pus exclui infecção pleural.
+B) Reconhecer alto risco de derrame complicado e discutir drenagem pleural, além de antibioticoterapia.
+C) Encerrar investigação: pH 7,15 confirma tuberculose pleural.
+D) Trocar automaticamente todo antibiótico por carbapenêmico, sem investigar controle de foco.
+
+**Gabarito: B.** **A:** líquido não purulento ainda pode representar infecção pleural complicada. **B:** pH ≤7,20 em contexto clínico e com janela de drenagem segura favorece dreno segundo BTS 2023. **C:** pH baixo não identifica etiologia específica; há mimetizadores. **D:** empiema/derrame complicado pode exigir drenagem, e antibioticoterapia deve ser dirigida por contexto. **Mini-revisão:** usar pH, glicose, LDH e ultrassom em conjunto, sem transformar limiar em prescrição automática fora do cenário correto.
+
+### Questão 25 — Aspiração, pneumonite química e anaeróbios
+
+Paciente jovem aspirou conteúdo gástrico durante sedação, desenvolveu desconforto respiratório imediato e melhorou em 24 horas com suporte, sem sinais persistentes de infecção. Sobre a conduta, assinale a mais adequada.
+
+A) Toda aspiração exige antibiótico profilático e cobertura anaeróbia prolongada.
+B) A pneumonite química pode melhorar com suporte; suspeita de aspiração por si só não justifica cobertura anaeróbia extra de rotina.
+C) Pneumonite e pneumonia infecciosa são conceitos intercambiáveis.
+D) O uso de antibiótico é definido exclusivamente pela localização do infiltrado radiológico.
+
+**Gabarito: B.** **A:** ignora mecanismo químico e riscos de antibioticoterapia desnecessária. **B:** está alinhada à distinção fisiopatológica e à recomendação ATS/IDSA para aspiração sem abscesso ou empiema. **C:** inflamação química e infecção bacteriana têm causas e trajetórias diferentes. **D:** a imagem não define sozinha infecção ou escolha de antimicrobiano. **Mini-revisão:** a deterioração clínica ou a persistência de sinais infecciosos exige reavaliar e eventualmente tratar coinfecção, não “proibir antibiótico” em toda aspiração.
+
+### Questão 26 — Falha terapêutica e duração em pneumonia complicada
+
+Paciente teve inicialmente PAC grave e evoluiu com coleção pleural loculada e pus na toracocentese. Qual frase está correta?
+
+A) A ATS 2025 recomenda tratar toda PAC com três dias, inclusive empiema.
+B) Empiema constitui complicação que exige avaliar drenagem e antibioticoterapia com duração distinta da PAC não grave estável.
+C) O primeiro passo obrigatório é manter somente o mesmo antibiótico e nunca considerar imagem ou procedimento.
+D) A ausência de febre em um dia garante cura e dispensa avaliação da coleção.
+
+**Gabarito: B.** **A:** o curso curto de 3–4 dias é sugestão condicional para grupos selecionados de PAC não grave estável, não empiema. **B:** reconhece a necessidade de controle de foco e duração individualizada, frequentemente em semanas, segundo BTS. **C:** persistência de coleção pode exigir intervenção. **D:** estabilidade depende de oxigenação, perfusão, função e controle de complicações. **Mini-revisão:** o manejo de infecção pleural é diferente do de pneumonia sem complicação; a pergunta correta é se o foco está controlado.
+
 ## Referências essenciais
 
 1. SBPT — Recomendações brasileiras de PAC (2018). https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/
 2. ATS/IDSA — Pneumonia adquirida na comunidade em adultos (2019). https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/
 3. ATS — Diagnosis and Management of CAP (2025). https://doi.org/10.1164/rccm.202507-1692ST
 4. SBPT — Consensos e diretrizes. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/
+
+5. BTS — Guideline for Pleural Disease 2023 (pleural infection, pH and drainage). https://doi.org/10.1136/thorax-2022-219784
+6. ATS/IDSA — Diagnosis and Treatment of Adults with CAP 2019 (aspiration and anaerobic coverage). https://doi.org/10.1164/rccm.201908-1581ST
