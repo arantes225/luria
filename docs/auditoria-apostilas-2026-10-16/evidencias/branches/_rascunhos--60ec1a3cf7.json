@@ -1,0 +1,114 @@
+{
+  "sha": "60ec1a3cf7510828a3dcb3d1ad2ec0fc8e0dbdc0",
+  "path": "apostilas/_rascunhos/lote-06-123-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--60ec1a3cf7",
+  "title": "Lote 06 — Tema 123: Febre sem Sinais Localizatórios na Criança",
+  "format": ".md",
+  "chars_estimated": 11439,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — Tema 123: Febre sem Sinais Localizatórios na Criança"
+    },
+    {
+      "title": "Inventário e preservação"
+    },
+    {
+      "title": "Material comparativo do Drive"
+    },
+    {
+      "title": "Fontes externas identificadas e verificadas"
+    },
+    {
+      "title": "Padrões científicos e armadilhas"
+    },
+    {
+      "title": "Escopo editorial a produzir"
+    },
+    {
+      "title": "Etapa zero ampliada — leitura efetiva e acesso a documentos (14/10/2026)"
+    },
+    {
+      "title": "Bloqueios específicos"
+    },
+    {
+      "title": "Etapa 2 — apostila produzida, preparação HTML e triagem (14/10/2026)"
+    },
+    {
+      "title": "Pré-contagem e integridade"
+    },
+    {
+      "title": "Matriz de autossuficiência de perguntas (sem consultar gabaritos)"
+    },
+    {
+      "title": "Bloqueios de finalização"
+    }
+  ],
+  "reference_entries": [
+    "1. **AAP, Clinical Practice Guideline 2021**, *Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old*, \\`Pediatrics\\` 148(2):e2021052228. https://publications.aap.org/pediatrics/article/148/2/e2021052228/179825/ ; a diretriz teve corrigenda em novembro de 2021. Aplica-se a **lactentes nascidos a termo, de bom aspecto, 8–60 dias e febre ≥38°C**, com exclusões explícitas, e usa estratos **8–21, 22–28 e 29–60 dias**.",
+    "2. **Canadian Paediatric Society (CPS)**, *Management of well-appearing febrile young infants aged ≤90 days*, publicado 2023, **atualizado em 27/05/2026**: https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days . Fornece estratificação e abordagem de **61–90 dias**, biomarcadores e condições de alta/observação, em população especificada.",
+    "3. **NICE NG143**, *Fever in under 5s: assessment and initial management*, publicado 2019, atualizado **26/11/2021**: https://www.nice.org.uk/guidance/NG143/chapter/recommendations . Sistema de semáforo verde/amarelo/vermelho, sinais vitais, sinais de doença grave e orientação de segurança/retorno.",
+    "4. **NICE NG224**, *Urinary tract infection in under 16s*, publicado 27/07/2022, ajustes de links em 2025: https://www.nice.org.uk/guidance/ng224/chapter/Recommendations . Regras de coleta urinária, suspeita de ITU em menores de três meses e restrição da interpretação de saco coletor.",
+    "5. **American Academy of Pediatrics**, página de implantação da diretriz 2021: https://www.aap.org/en/patient-care/infant-fever/ . Foco em comparação de uso de UA, cultura sanguínea, marcadores inflamatórios, LCR, observação e antibióticos nos três estratos.",
+    "6. **SBP, publicações de congresso** sobre FSSL identificadas em busca pública, mas casos isolados **não equivalem a guideline**. Não será atribuída diretriz nacional 2025/2026 da SBP sem verificação documental.",
+    "- AAP 2021 **não** se aplica indistintamente a 0–7 dias, 61–90 dias, prematuros, crianças toxemiadas, com doença de base ou sinais de infecção focal. Esses grupos exigem protocolos específicos.",
+    "- Não tratar febre isolada como diagnóstico de sepse, nem inferir ausência de infecção bacteriana invasiva apenas pela boa aparência em neonatos.",
+    "- **A idade deve ser em dias**, não “até dois meses” sem precisão. AAP usa 8–21 / 22–28 / 29–60; CPS se estende até 90.",
+    "- Urina de **saco coletor adesivo** pode contaminar; cultura positiva sem amostra confirmatória adequada não deve ser considerada diagnóstico definitivo.",
+    "- Hemograma e PCR isolados não definem risco; procalcitonina e algoritmos validados dependem de corte e população.",
+    "- Resposta ao antitérmico não exclui doença bacteriana grave. Prescrever antibiótico a todas as crianças febris bem-aparentes causa dano e resistência.",
+    "- Condições de alta requerem bom aspecto, ausência de risco significativo, seguimento em 24–48h quando recomendado, responsáveis aptos, telefone/transporte e retorno rápido.",
+    "1. Definição febre/FSSL e duração; separar febre de origem indeterminada prolongada.",
+    "2. Diagnóstico sindrômico e risco por faixa etária (0–7, 8–21, 22–28, 29–60, 61–90 dias, 3–36 meses e maiores).",
+    "3. Anamnese, exame, semáforo NICE, sinais de emergência e identificação de foco oculto.",
+    "4. Biomarcadores, culturas, exames de urina, radiografia de tórax seletiva, LCR e hemocultura.",
+    "5. Algoritmos de AAP/CPS, Rochester, Philadelphia, Boston, Step-by-Step, PECARN com limites e evidência.",
+    "6. Diagnósticos diferenciais, vírus, ITU, bacteremia, meningite, infecção osteoarticular, Kawasaki/MIS-C e outras doenças.",
+    "7. Antibiótico conforme idade/local/protocolo hospitalar; atenção a contraindicações neonatais e suspeita de HSV.",
+    "8. Reavaliação, comunicação, antitérmico como conforto e retorno seguro.",
+    "9. ≥8 casos e ≥12 questões originais comentadas; revisão independente e conteúdo útil de ~60k+ chars.",
+    "10. Prévia JSON/HTML, curadoria visual/fluxogramas e aprovação Admin, sem deploy até validação.",
+    "**Status final desta etapa zero:** fontes científicas confirmadas, limitação de benchmark registrada, produção de conteúdo autorizada apenas na branch editorial.",
+    "---",
+    "- **Sepse neonatal.pdf**: 2.032 caracteres extraídos; apresenta risco materno/neonatal, instabilidade térmica, hemocultura e antibiótico neonatal, porém não cobre estratificação de febre em lactente nas primeiras 8–60 semanas nem o manejo atual por marcadores de risco. Algumas regras sobre profilaxia e coleta são antigas; **não transplantar**.",
+    "- **01 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf**: 31.078 caracteres, combina síndrome nefrítica/nefrótica e refluxo vesicoureteral, incluindo ITU febril; não equivale a FSSL geral.",
+    "- **01 - ICTERICIA E COLESTASE NEONATAL.pdf**: 14.963 caracteres, inclui fisiologia e patologias do recém-nascido, mas não cobre algoritmo de lactente febril.",
+    "**Nenhum é benchmark pleno, comparável em profundidade, do tema exato ou de instituição Estratégia MED comprovada.** Os URLs/IDs privados não devem entrar no repositório.",
+    "**Fonte brasileira adicional realmente examinada:** Sociedade Brasileira de Pediatria, *Manejo da Febre Aguda*, de 05/10/2021, PDF institucional de 14 páginas. https://www.sbp.com.br/fileadmin/user_upload/23229c-DC_Manejo_da_febre_aguda.pdf . Contém termorregulação, abordagem de febre sem foco, comunicação/antitérmicos. A SBP anunciou um documento de **15/05/2025**, *Abordagem da Febre Aguda em Pediatria e Reflexões sobre a Febre nas Arboviroses*, mas a página do PDF integral direciona a login: **não foi possível conferir integralmente suas recomendações**, portanto não atribuiremos regras esp"
+  ],
+  "external_urls": [
+    "https://publications.aap.org/pediatrics/article/148/2/e2021052228/179825/",
+    "https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days",
+    "https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng224/chapter/Recommendations",
+    "https://www.aap.org/en/patient-care/infant-fever/",
+    "https://www.sbp.com.br/fileadmin/user_upload/23229c-DC_Manejo_da_febre_aguda.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A busca encontrou materiais do Drive tematicamente próximos e foi feita **leitura efetiva** antes da redação do tema 123: - **Sepse neonatal.pdf**: 2.032 caracteres extraídos; apresenta risco materno/neonatal, instabilidade térmica, hemocultura e antibiótico neonatal, porém não cobre estratificação de febre em lactente nas primeiras 8–60 semanas nem o manejo atual por marcadores de risco. Algumas regras sobre profilaxia e coleta são antigas; **não transplantar**. - **01 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf**: 31.078 caracteres, combina síndrome nefrítica/nefrótica e refluxo vesicoureteral, incluindo ITU febril; não equivale a FSSL"
+    },
+    {
+      "text": "**Fonte brasileira adicional realmente examinada:** Sociedade Brasileira de Pediatria, *Manejo da Febre Aguda*, de 05/10/2021, PDF institucional de 14 páginas. https://www.sbp.com.br/fileadmin/user_upload/23229c-DC_Manejo_da_febre_aguda.pdf . Contém termorregulação, abordagem de febre sem foco, comunicação/antitérmicos. A SBP anunciou um documento de **15/05/2025**, *Abordagem da Febre Aguda em Pediatria e Reflexões sobre a Febre nas Arboviroses*, mas a página do PDF integral direciona a login: **não foi possível conferir integralmente suas recomendações**, portanto não atribuiremos regras específicas ao conteúdo não lido. - AAP 2021 para **8"
+    },
+    {
+      "text": "**Resultado: 12/12** em triagem lexical. Não equivale à validação de cada alternativa, das recomendações de antibióticos ou do prognóstico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

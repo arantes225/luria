@@ -1,0 +1,130 @@
+{
+  "sha": "ab47168f21c2cdbf35df32e92aaed2293cfcbd02",
+  "path": "apostilas/lei-8080-1990/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "lei-8080-1990--ab47168f21",
+  "title": "Lei nº 8.080/1990 — Lei Orgânica da Saúde",
+  "format": ".json",
+  "chars_estimated": 62488,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Lei nº 8.080/1990: como estudar a Lei Orgânica da Saúde atualizada"
+    },
+    {
+      "id": "arts1a4",
+      "title": "1. Arts. 1º a 4º — âmbito da lei, direito à saúde e constituição do SUS"
+    },
+    {
+      "id": "arts5e6",
+      "title": "2. Arts. 5º e 6º — objetivos, campos de atuação e alterações recentes"
+    },
+    {
+      "id": "arts6a7",
+      "title": "3. Art. 6º-A e art. 7º — transparência de estoques e literalidade dos princípios"
+    },
+    {
+      "id": "organizacao",
+      "title": "4. Arts. 8º a 14-B — direção única, organização e pactuação"
+    },
+    {
+      "id": "competencias",
+      "title": "5. Arts. 15 a 18 — competências comuns e específicas da União, estados e municípios"
+    },
+    {
+      "id": "subsistemas",
+      "title": "6. Subsistemas e direitos específicos — arts. 19-A a 19-J"
+    },
+    {
+      "id": "terapeutica",
+      "title": "7. Arts. 19-M a 19-U — PCDT, medicamentos, incorporação e Conitec"
+    },
+    {
+      "id": "iniciativa",
+      "title": "8. Arts. 20 a 26 — livre iniciativa, complementaridade e contrato"
+    },
+    {
+      "id": "telessaude",
+      "title": "9. Arts. 26-A a 26-H — telessaúde, consentimento e responsabilidade digital"
+    },
+    {
+      "id": "recursos",
+      "title": "10. Arts. 27 a 38 — formação de profissionais, financiamento e planejamento"
+    },
+    {
+      "id": "finais",
+      "title": "11. Disposições finais: arts. 39 a 55 e transparência das filas"
+    },
+    {
+      "id": "vigencia",
+      "title": "9. Leis modificadoras de 2023–2026 e normas ainda sem vigência"
+    },
+    {
+      "id": "casos",
+      "title": "10. Casos aplicados: interpretação de normas e deveres"
+    },
+    {
+      "id": "questoes",
+      "title": "11. Questões autorais de residência: literalidade e aplicação"
+    },
+    {
+      "id": "referencias",
+      "title": "12. Referências oficiais, fronteiras e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"12. Referências oficiais, fronteiras e pendências\"]",
+    "[\"3\",\"Fontes primárias usadas no desenvolvimento\"]",
+    "[\"o\",[\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/leis/l8080.htm\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Presidência da República. Lei nº 8.080, de 19 de setembro de 1990, redação consolidada consultada em 15/10/2026.</a>\",\"<a href=\\\"https://www2.camara.leg.br/legin/fed/lei/1990/lei-8080-19-setembro-1990-365093-normaatualizada-pl.html\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Câmara dos Deputados. Lei nº 8.080/1990, norma atualizada com notas das leis modificadoras.</a>\",\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm\\\" target=\\\"_blank\\\" rel=\\\"",
+    "[\"3\",\"Matriz de cobertura e fronteiras curriculares\"]",
+    "[\"t\",[\"Competência\",\"Onde está ensinada\",\"Prova de compreensão esperada\"],[[\"Âmbito legal e determinantes\",\"1\",\"Reconhecer regulação de serviços privados e dever público\"],[\"Objetivos/atribuições e alterações 2023–2026\",\"2\",\"Diferenciar sanitária, epidemiológica, trabalhador, bucal, CEIS\"],[\"Art. 6º-A e literalidade do art. 7º\",\"3\",\"Identificar periodicidade e igualdade versus equidade\"],[\"Gestão/direção/pactuação\",\"4–5\",\"Distinguir CIB/CIT, órgão de direção e executor\"],[\"Subsistemas e direitos de pacientes\",\"6\",\"Aplicar direito a acompanhante e saúde indígena\"],[\"PCDT/Conitec\",\"7\",\"Separar r",
+    "[\"p\",\"<strong>Comparativo documental:</strong> `SUS.pdf` acessado no Google Drive do usuário (material de 2.670 caracteres extraídos, autoria institucional não confirmada). Serviu para identificar assuntos de maior incidência didática, mas não forneceu fundamento suficiente para atualização normativa. O texto principal foi redigido originalmente com base no Planalto e Câmara; nenhuma ilustração, quadro ou texto do material de estudo foi reproduzido.\"]",
+    "[\"p\",\"<strong>Estado editorial em 15/10/2026:</strong> primeiro rascunho autoral, ainda insuficiente para exigência de autossuficiência e extensão desejada de 60 mil caracteres úteis. Antes de certificar: leitura sistemática de artigos não desenvolvidos (financiamento, recursos humanos, planejamento e disposições finais), atualização das alterações com vigência futura, revisão jurídica especializada, conferência das respostas de residência, inspeção PWA e curadoria de imagens/diagramas se houver licença. Não foi criado index.html, nem houve atualização de catálogo, merge ou deploy.\"]",
+    "[\"p\",\"<strong>Aprofundamento de 15/10/2026:</strong> incorporados os arts. 26-A a 26-H (telessaúde, consentimento, autonomia e confidencialidade) e os arts. 27–38 (formação profissional, fundos, recursos, planejamento e orçamento). Conferidos no texto consolidado publicado pela Câmara dos Deputados e no Planalto. Ainda faltam estudo sistemático dos arts. 39–55, inspeção em PWA e revisão jurídico-científica humana; o livro permanece em rascunho sem publicação.\"]"
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8080-19-setembro-1990-365093-normaatualizada-pl.html",
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "arts5e6",
+      "text": "As alterações de 2023 passaram a contemplar explicitamente políticas de informação, assistência toxicológica e logística de antídotos e medicamentos para intoxicações. A abordagem jurídica envolve prevenção, diagnóstico e tratamento de intoxicações agudas e crônicas por substâncias químicas, medicamentos, toxinas de animais e plantas. Um município com exposição ambiental em massa precisa integrar resposta clínica, vigilância, serviços de referência, estoques de antídotos e comunicação pública. A lei cria obrigação de organização de políticas, não autoriza deduzir que qualquer UBS terá todos os antídotos em estoque."
+    },
+    {
+      "section": "terapeutica",
+      "text": "A assistência terapêutica integral prevista na lei envolve medicamentos e procedimentos conforme protocolos clínicos e diretrizes terapêuticas, bem como tabelas e regras de oferta aplicáveis. O PCDT não é somente lista de medicamentos: define diagnóstico, critérios clínicos, alternativas, posologias, monitorização, troca por falha/intolerância e avaliação de resultados. O cuidado precisa conciliar prescrição individualizada, segurança, disponibilidade e normas públicas de incorporação, sem presumir que qualquer prescrição gera direito administrativo automático a qualquer produto."
+    },
+    {
+      "section": "terapeutica",
+      "text": "A redação consolidada do art. 19-T contém vedações relativas a tecnologias experimentais ou sem autorização sanitária, mas prevê exceções legais restritas em hipóteses específicas, incluindo utilização fora da indicação registrada quando houver recomendação da Conitec, evidência correspondente e padronização em protocolo do Ministério da Saúde. É incorreto afirmar que qualquer prescrição off-label será financiada, assim como é excessivo dizer que nunca existe hipótese legal excepcional. A aplicação exige leitura da norma e do protocolo atualizados."
+    },
+    {
+      "section": "casos",
+      "text": "<strong>Apresentação:</strong> mulher de 22 anos solicita presença de pessoa maior de idade durante exame em clínica, e é informada de que acompanhante só existe durante o trabalho de parto. <strong>Hipótese:</strong> leitura desatualizada e restritiva do art. 19-J. <strong>Raciocínio:</strong> a Lei 14.737/2023 ampliou garantias para consultas, exames e procedimentos, com regras específicas e exceções legais. <strong>Providência:</strong> orientar direito vigente e organizar cuidado com privacidade, segurança e informação, avaliando especificidades em procedimentos sob sedação. <strong>Por que importa:</strong> conhecer modificação legislati"
+    },
+    {
+      "section": "casos",
+      "text": "<strong>Apresentação:</strong> questão datada de outubro de 2026 exige aplicar literalmente os novos arts. 19-X a 19-Z previstos na Lei 15.390/2026 como se estivessem em vigor. <strong>Hipótese jurídica:</strong> anacronismo na análise da vigência. <strong>Raciocínio:</strong> a lei modificadora previu início de vigência em 16 de abril de 2027 para dispositivos correspondentes. <strong>Providência:</strong> identificar norma temporal e separar fluxos de referência/TFD existentes de novas obrigações futuras. <strong>Por que importa:</strong> a data do enunciado integra o fato jurídico, assim como idade do paciente integra um diagnóstico."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

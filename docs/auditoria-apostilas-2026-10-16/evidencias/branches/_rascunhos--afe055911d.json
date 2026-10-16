@@ -1,0 +1,387 @@
+{
+  "sha": "afe055911d337cde21d99a71f282ad16ca1207c2",
+  "path": "apostilas/_rascunhos/lote-05-103-tuberculose-infancia.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--afe055911d",
+  "title": "LURIA — Lote 5 · Apostila 103: Tuberculose na infância",
+  "format": ".md",
+  "chars_estimated": 110762,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 5 · Apostila 103: Tuberculose na infância"
+    },
+    {
+      "title": "Etapa zero — auditoria de fonte, originalidade e cobertura"
+    },
+    {
+      "title": "0. Como estudar e quais decisões precisam ficar claras"
+    },
+    {
+      "title": "1. Conceito e linguagem clínica fundamental"
+    },
+    {
+      "title": "2. Por que a tuberculose pediátrica não é apenas uma versão menor da doença adulta"
+    },
+    {
+      "title": "2.1. Sequência fisiopatológica da infecção à doença"
+    },
+    {
+      "title": "2.2. Doença primária, latência e reativação"
+    },
+    {
+      "title": "3. Epidemiologia, determinantes e a investigação que não pode faltar"
+    },
+    {
+      "title": "4. Quadro clínico: apresentar-se de forma típica, atípica e grave"
+    },
+    {
+      "title": "4.1. Alertas de emergência"
+    },
+    {
+      "title": "5. Formas anatômicas da doença"
+    },
+    {
+      "title": "6. Consulta inicial — uma sequência segura e reprodutível"
+    },
+    {
+      "title": "7. Diagnóstico microbiológico e coleta pediátrica"
+    },
+    {
+      "title": "7.1. Que amostra escolher?"
+    },
+    {
+      "title": "7.2. Como interpretar combinações de resultados"
+    },
+    {
+      "title": "7.3. Escolha de amostra e rendimento conforme apresentação"
+    },
+    {
+      "title": "7.4. Histopatologia: achados sugestivos não são assinaturas de espécie"
+    },
+    {
+      "title": "8. Radiografia e outros métodos de imagem: perguntas que ensinam"
+    },
+    {
+      "title": "9. PPD e IGRA: o que medem e, sobretudo, o que não medem"
+    },
+    {
+      "title": "10. Sistema brasileiro de pontuação clínica: tabela integral, interpretação e armadilhas"
+    },
+    {
+      "title": "10.1. Os cinco eixos de pontuação"
+    },
+    {
+      "title": "10.2. IGRA no lugar da PT: leitura restrita ao contexto nacional"
+    },
+    {
+      "title": "10.3. Erro tipográfico potencial em quadro secundário"
+    },
+    {
+      "title": "10.4. Três cálculos passo a passo"
+    },
+    {
+      "title": "10.5. Erros de aplicação e segurança"
+    },
+    {
+      "title": "11. Diferenciais que precisam permanecer no diagnóstico"
+    },
+    {
+      "title": "12. Classificação de gravidade: a decisão que determina quatro versus seis meses"
+    },
+    {
+      "title": "12.1. Matriz decisória da Nota Informativa MS nº 5/2024"
+    },
+    {
+      "title": "12.2. Fenótipos elegíveis e não elegíveis: mapa de exclusões"
+    },
+    {
+      "title": "12.3. Como acompanhar um regime escolhido de quatro meses"
+    },
+    {
+      "title": "13. Tratamento da TB ativa sensível: tabela-mestra de raciocínio"
+    },
+    {
+      "title": "13.1. Por que combinar medicamentos?"
+    },
+    {
+      "title": "13.2. Quando estender um tratamento inicialmente encurtado?"
+    },
+    {
+      "title": "14. Farmacoterapia pediátrica: idade, apresentação, faixas de peso e segurança"
+    },
+    {
+      "title": "14.1. Tratamento da TB ativa sensível com peso de 4 a menos de 25 kg e idade <10 anos"
+    },
+    {
+      "title": "14.2. Crianças menores de dez anos e peso ≥25 kg: doses individualizadas"
+    },
+    {
+      "title": "14.3. Recém-nascidos, idade ≤3 meses ou peso <4 kg"
+    },
+    {
+      "title": "14.4. Adolescente a partir de 10 anos"
+    },
+    {
+      "title": "14.5. Administração, tolerância e registro de adesão"
+    },
+    {
+      "title": "14.6. Farmacologia e eventos adversos interpretados pela clínica"
+    },
+    {
+      "title": "14.7. TB e HIV: interações não devem ser resolvidas pela suspensão arbitrária da TARV"
+    },
+    {
+      "title": "15. Meningite tuberculosa: alto risco de atraso diagnóstico"
+    },
+    {
+      "title": "15.1. Sinais de evolução neurológica e cuidados após o tratamento"
+    },
+    {
+      "title": "16. Tuberculose miliar e outras apresentações especiais"
+    },
+    {
+      "title": "17. Infecção latente: separar prevenção de tratamento curativo"
+    },
+    {
+      "title": "17.1. Qual esquema preventivo é indicado?"
+    },
+    {
+      "title": "17.2. Tabela original para 3RH pediátrico com dispersíveis RH 75/50"
+    },
+    {
+      "title": "17.3. Contato recente: janela imunológica e retestagem"
+    },
+    {
+      "title": "17.4. Manejo do recém-nascido exposto a fonte bacilífera"
+    },
+    {
+      "title": "17.5. Contato de tuberculose resistente"
+    },
+    {
+      "title": "17.6. HIV, imunossupressão e prevenção"
+    },
+    {
+      "title": "18. Vacinação BCG, aleitamento e medidas de prevenção"
+    },
+    {
+      "title": "19. Seguimento — como reconhecer resposta e falha"
+    },
+    {
+      "title": "19.1. Acompanhamento apoiado: tratamento diretamente observado (TDO)"
+    },
+    {
+      "title": "20. Tuberculose resistente em crianças e adolescentes: atualização brasileira de outubro de 2026"
+    },
+    {
+      "title": "20.1. O regime BPaLM de 2026 **não é universal em pediatria**"
+    },
+    {
+      "title": "20.2. Crianças <14 anos com TB DR"
+    },
+    {
+      "title": "20.3. Caso de fronteira: adolescente de 14 anos com meningite resistente"
+    },
+    {
+      "title": "21. Algoritmos textuais de decisão"
+    },
+    {
+      "title": "21.1. Criança com contato conhecido"
+    },
+    {
+      "title": "21.2. Criança sintomática sem fonte identificada"
+    },
+    {
+      "title": "21.3. Tuberculose-doença confirmada/provável"
+    },
+    {
+      "title": "22. Casos clínicos autorais comentados"
+    },
+    {
+      "title": "Caso 1 — Pré-escolar com provável doença intratorácica"
+    },
+    {
+      "title": "Caso 2 — Lactente exposto, sem doença aparente"
+    },
+    {
+      "title": "Caso 3 — Criança com meningite progressiva"
+    },
+    {
+      "title": "Caso 4 — Adolescente com imagem cavitária"
+    },
+    {
+      "title": "Caso 5 — Contato com teste imunológico positivo e radiografia sem alteração"
+    },
+    {
+      "title": "Caso 6 — Falha aparente após dois meses"
+    },
+    {
+      "title": "Caso 7 — Aplicação real do escore, sem TRM positivo"
+    },
+    {
+      "title": "Caso 8 — Adolescente com resistência à rifampicina e doença do SNC"
+    },
+    {
+      "title": "Caso 9 — Linfonodo cervical de evolução lenta"
+    },
+    {
+      "title": "Caso 10 — Adolescente e derrame pleural complicado"
+    },
+    {
+      "title": "Caso 11 — Contato de sete anos com IGRA indeterminado"
+    },
+    {
+      "title": "Caso 12 — Tuberculose não grave em local sem radiografia"
+    },
+    {
+      "title": "23. Questões autorais com comentário de cada alternativa"
+    },
+    {
+      "title": "Questão 1 — Resultado molecular negativo"
+    },
+    {
+      "title": "Questão 2 — Elegibilidade para quatro meses"
+    },
+    {
+      "title": "Questão 3 — PT positiva"
+    },
+    {
+      "title": "Questão 4 — Regime do adolescente"
+    },
+    {
+      "title": "Questão 5 — Manejo neonatal"
+    },
+    {
+      "title": "Questão 6 — Evolução inadequada no esquema encurtado"
+    },
+    {
+      "title": "Questão 7 — Meningite com alta suspeita clínica"
+    },
+    {
+      "title": "Questão 8 — Criança em tratamento sem melhora"
+    },
+    {
+      "title": "Questão 9 — Somatório do escore brasileiro"
+    },
+    {
+      "title": "Questão 10 — Quatro meses e a forma grave"
+    },
+    {
+      "title": "Questão 11 — Dose preventiva 3RH e administração"
+    },
+    {
+      "title": "Questão 12 — Atualização TB resistente 2026"
+    },
+    {
+      "title": "Questão 13 — Investigação de linfadenopatia"
+    },
+    {
+      "title": "Questão 14 — Teste molecular negativo e suspeita clínica"
+    },
+    {
+      "title": "Questão 15 — Forma pleural e gravidade"
+    },
+    {
+      "title": "Questão 16 — Resultado indeterminado do IGRA na criança contato"
+    },
+    {
+      "title": "Questão 17 — Tratamento preventivo interrompido"
+    },
+    {
+      "title": "Questão 18 — Regime curto sem RX disponível"
+    },
+    {
+      "title": "24. Pérolas de prova e erros de conduta"
+    },
+    {
+      "title": "25. Roteiro de imagens clínicas — apenas candidatas, nenhuma incorporada"
+    },
+    {
+      "title": "26. Referências primárias e comparação de diretrizes"
+    },
+    {
+      "title": "27. Auditoria da etapa e próximos aprofundamentos obrigatórios"
+    }
+  ],
+  "reference_entries": [
+    "1. **BRASIL. Ministério da Saúde.** Manual de Recomendações para o Controle da Tuberculose no Brasil. 2ª ed. Brasília, 2019, portal atualizado em 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "2. **BRASIL. Ministério da Saúde.** Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS: tratamento encurtado da TB sensível não grave em crianças e adolescentes, 2024. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf",
+    "3. **BRASIL. Ministério da Saúde.** Nota Informativa nº 6/2024-CGTM/DATHI/SVSA/MS: comprimidos dispersíveis RH e 3RH para tratamento preventivo pediátrico, 2024. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-6-2024-dispersiveis-rifampicina-e-isoniazida.pdf",
+    "4. **BRASIL. Ministério da Saúde.** Nota Informativa nº 15/2024-CGTM/DATHI/SVSA/MS: recomendações para tratamento preventivo/ILTB, 2024. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/estudos-e-notas-informativas/2024/nota-informativa-no-15-2024-cgtm-dathi-svsa-ms.pdf/view",
+    "5. **BRASIL. Ministério da Saúde.** Tratamento de tuberculose em crianças — folder para equipes de saúde, 2023. https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf",
+    "6. **BRASIL. Ministério da Saúde.** Diagnóstico da tuberculose — página técnica, atualização indicada em 2026. https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "7. **WHO.** Consolidated guidelines on tuberculosis, module 5: management of tuberculosis in children and adolescents. Geneva, 2022. https://www.who.int/publications-detail-redirect/9789240046764",
+    "8. **WHO.** Operational handbook on tuberculosis, module 5: management of tuberculosis in children and adolescents. Geneva, 2022. https://www.who.int/publications/i/item/9789240046832",
+    "9. **WHO.** Consolidated guidelines on tuberculosis, module 4: treatment and care, 2nd edition. 25 September 2026. https://www.who.int/publications/i/item/9789240125124",
+    "10. **WHO.** Operational handbook on tuberculosis, module 3: diagnosis. 2025. https://www.who.int/publications/i/item/9789240110991",
+    "11. **BRASIL. Ministério da Saúde.** Nota Informativa nº 2/2022-CGDR/DCCI/SVS/MS: interpretação do IGRA para ILTB e fluxos de contatos pediátricos, 2022. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf",
+    "12. **Sociedade Brasileira de Pediatria (SBP).** Departamento Científico de Pneumologia. Tuberculose na infância no Brasil: atualização. Documento Científico nº 40, 23 abr. 2026. PDF integral **efetivamente aberto e comparado em 15/10/2026**: https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf",
+    "13. **BRASIL. Ministério da Saúde.** Nota Informativa nº 2/2026-CGTM/DATHI/SVSA/MS: diagnóstico e tratamento da TB drogarresistente com BPaL/BPaLM, out. 2026. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf",
+    "**Histórico da primeira etapa (15/10/2026):** estudo comparativo de dois documentos do Drive; elaboração da estrutura original; primeiras versões com seis casos e oito questões. **Esses números eram do checkpoint inicial, não representam o manuscrito atual.**",
+    "**Checkpoint adicional 15/10/2026 — revisão dirigida:** escore MS 2019 reconstituído com valores negativos; divergências de sinais entre a tabela oficial e a SBP 2026 registradas; inclusão contextual do IGRA indeterminado conforme Nota MS 2/2022; faixas pediátricas de RHZ/RH e cálculos conferidos; 3RH expandido com preparo e critérios de conclusão; incorporada Nota MS 2/2026 com BPaL/BPaLM e exclusões por idade e sítio; documento SBP 2026 integral efetivamente lido; dois casos e quatro questões acrescentados. **O texto ainda exige revisão independente, aferição de dose em consulta clínica e au",
+    "**Ainda impeditivo para certificar/publicar:**",
+    "- Concluída checagem do escore histórico (MS 2019) e comparação com SBP 2026; **ainda precisa parecer técnico sobre divergências documentais (<25/≤25; erros de sinal da tabela SBP) antes de uso clínico automatizado**.",
+    "- Auditoria farmacológica de **todos os fármacos e apresentações por peso**, doses máximas, manejo de eventos adversos, insuficiência hepática, HIV e outras comorbidades; acrescentar tabela completa RHZ/RH pediátrica conferida.",
+    "- Consulta à Nota MS 6/2024 e documento SBP 2026 realizada para ILTB e manejo neonatal; **confirmar eventuais alterações pós-abril/2026**, farmacologia dos RN e implementação da política de TDO no serviço.",
+    "- **SBP 2026 integral aberto e contrastado nesta etapa**; permanece revisão aprofundada dos pontos novos da OMS de setembro de 2026 e aplicabilidade ao SUS.",
+    "- Aprofundar sistematicamente TB extrapulmonar, histopatologia, cultura e métodos em amostras alternativas, TB resistente, cuidados psicossociais, educação do cuidador e populações especiais.",
+    "- Aumentar a cobertura de casos e questões em subtemas de resistência, HIV, adolescência, neurotuberculose, miliar e diagnóstico diferencial.",
+    "- Certificar piso de **60.000 caracteres didáticos úteis** (não confundir contagem Markdown bruta com conteúdo lecionável), revisar redundâncias e testar autossuficiência com questões resolvíveis só com o texto.",
+    "- Curadoria de pelo menos dez imagens candidatas com **fonte e licença verificadas**, aprovação no Admin, integração e inspeção visual.",
+    "- Revisão independente pediátrica/infectológica, testes do build, acessibilidade e responsividade. **Não fazer merge/deploy** antes da aprovação.",
+    "**Checkpoint 15/10/2026 — continuação:** revisão de amostras diagnósticas, apresentação ganglionar/pleural, meningite e seguimento; retirada da tabela de doses individualizadas ≥25 kg ainda não validada; inclusão de casos 9–10, questões 13–15 e modalidade de TDO. **Persistem pendências impeditivas de publicação:** reconciliação farmacológica para ≥25 kg, parecer pediátrico/infectológico independente, revisão integral OMS 2026, imagens com licença e aprovação pelo Admin, integração e QA em desktop/PWA. Nenhum deploy autorizado.",
+    "**Checkpoint 16/10/2026 — auditoria de segurança e autonomia:** corrigido erro de classificação ponderal (11,7 kg não está na faixa 12–15 kg), reavaliada a indicação 4R em situações excepcionais citadas pela própria Nota MS 6/2024, inserida matriz das três situações de elegibilidade do regime encurtado com ou sem disponibilidade de exames (Nota MS 5/2024). Acrescidos casos de IGRA indeterminado e indisponibilidade de RX, e três questões correlatas. Revisão direta do quadro de escore na fonte MS 2019 (pp. 77–78) e comparação com a tabela da SBP 2026; divergências registradas. **12 casos, 18 que"
+  ],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_recomendacoes_controle_tuberculose_brasil_2_ed.pdf.",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf",
+    "https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-6-2024-dispersiveis-rifampicina-e-isoniazida.pdf;",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2022/ni_02-2022_recomendacoesigra_assistencia.pdf;",
+    "https://www.sbp.com.br/wp-content/uploads/2026/04/25225c-DocCient-Tuberculose-na-inf-no-BR_atualizacao.pdf.",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-6-2024-dispersiveis-rifampicina-e-isoniazida.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/estudos-e-notas-informativas/2024/nota-informativa-no-15-2024-cgtm-dathi-svsa-ms.pdf/view",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "https://www.who.int/publications-detail-redirect/9789240046764",
+    "https://www.who.int/publications/i/item/9789240046832",
+    "https://www.who.int/publications/i/item/9789240125124",
+    "https://www.who.int/publications/i/item/9789240110991"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Eixo | Benchmark do Drive | Objetivo original LURIA | Estado | | --- | --- | --- | --- | | Fisiopatologia | Resumo de transmissão, primoinfecção e doença | Ensinar da inalação ao granuloma, progressão e risco infantil | Elaborado neste rascunho | | Reconhecimento | Tríade clínica e formas | Separar doença em criança pequena, escolar e adolescente, com alertas | Elaborado | | Diagnóstico | Escore e exames em tópicos | Entender valor, limitação, coleta e testes negativos | Elaborado; validar tabelas oficiais | | Imagem | Exemplos de RX sem autorização | Ensinar raciocínio radiográfico; selecionar somente imagens licenciadas via Admin | Texto "
+    },
+    {
+      "text": "**Hierarquia documental:** recomendações do Ministério da Saúde e regras do SUS → literatura e consensos pediátricos nacionais → OMS e evidência internacional recente → benchmarking didático sem função normativa. A Nota Informativa 5/2024 detalha o regime encurtado em idade, gravidade e testes. A Nota Informativa 6/2024 introduz comprimidos pediátricos RH e esquema 3RH para infecção latente. A OMS lançou diretrizes consolidadas de tratamento e cuidados, 2ª edição, em 25/09/2026. A atualização SBP de 23/04/2026 foi identificada por página pública, mas seu texto integral ainda carece de comparação linha a linha."
+    },
+    {
+      "text": "Tuberculose na criança exige raciocínio diferente da tuberculose bacilífera clássica do adulto. Um exame microbiológico negativo não encerra a investigação de um lactente exposto; um teste imunológico positivo não prova doença ativa; e um diagnóstico clínico bem fundamentado pode justificar tratamento mesmo sem isolamento do bacilo. Em contrapartida, atribuir toda tosse prolongada à tuberculose, sem avaliar as demais hipóteses, expõe a criança a atrasos diagnósticos e medicamentos desnecessários."
+    },
+    {
+      "text": "Tuberculose é doença infecciosa provocada principalmente por Mycobacterium tuberculosis, integrante do complexo M. tuberculosis. Sua característica é a possibilidade de persistência intracelular e de resposta imunológica granulomatosa. A transmissão habitual da tuberculose humana ocorre pela inalação de aerossóis contendo bacilos eliminados por pessoas com doença pulmonar ou laríngea transmissível. Não se trata de infecção transmitida por compartilhar pratos, apertar as mãos ou encostar em superfícies; recomendações de isolamento e ventilação incidem sobre a via aérea e a infectividade da fonte."
+    },
+    {
+      "text": "Os três termos não são intercambiáveis. A prova tuberculínica ou IGRA responde, em linhas gerais, à memória imunológica contra antígenos micobacterianos; não informa isoladamente se bacilos ativos estão produzindo lesões. A cultura ou teste molecular em amostra apropriada procura diretamente o agente e, se positiva, altera a confiança diagnóstica. O diagnóstico clínico integrado reúne dados independentes que podem sustentar doença ativa apesar dos testes diretos negativos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

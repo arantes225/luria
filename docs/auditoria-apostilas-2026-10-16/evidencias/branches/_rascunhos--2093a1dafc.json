@@ -1,0 +1,366 @@
+{
+  "sha": "2093a1dafcfac0ee5afa472cf1b1dbac858dbf85",
+  "path": "apostilas/_rascunhos/lote-07-aula-130-historia-natural-niveis-prevencao.md",
+  "branches": [
+    "origin/editorial/lote-07-aula-123-cps-2026-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2093a1dafc",
+  "title": "LURIA — LOTE 07 | AULA 130",
+  "format": ".md",
+  "chars_estimated": 81281,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — LOTE 07 | AULA 130"
+    },
+    {
+      "title": "História natural da doença e níveis de prevenção — da exposição ao cuidado longitudinal"
+    },
+    {
+      "title": "0. Etapa zero — inventário e comparação"
+    },
+    {
+      "title": "1. Por que estudar história natural antes de memorizar exames?"
+    },
+    {
+      "title": "2. Modelo histórico de Leavell e Clark: a sequência"
+    },
+    {
+      "title": "2.1. Período pré-patogênico"
+    },
+    {
+      "title": "2.2. Período patogênico"
+    },
+    {
+      "title": "2.3. Incubação e latência"
+    },
+    {
+      "title": "2.4. Transmissão e curso clínico não são a mesma linha temporal"
+    },
+    {
+      "title": "2.5. História natural não é uma sentença: estados, transições e desfechos concorrentes"
+    },
+    {
+      "title": "2.6. Causa necessária, causa suficiente e componentes causais"
+    },
+    {
+      "title": "2.7. Exposição, período de indução e período de latência"
+    },
+    {
+      "title": "2.8. O contrafactual da prevenção"
+    },
+    {
+      "title": "3. Prevenção primordial: agir antes de os fatores de risco se normalizarem"
+    },
+    {
+      "title": "3.1. O paradoxo da prevenção de Geoffrey Rose"
+    },
+    {
+      "title": "3.2. Produzir saúde antes do consultório: políticas que alteram risco"
+    },
+    {
+      "title": "3.3. Gradiente social e determinação estrutural"
+    },
+    {
+      "title": "3.4. Doença em uma pessoa, risco coletivo no bairro"
+    },
+    {
+      "title": "3.5. Intersetorialidade com responsabilidade definida"
+    },
+    {
+      "title": "4. Prevenção primária — antes da doença"
+    },
+    {
+      "title": "4.1. Promoção da saúde ≠ “mandar o paciente se cuidar”"
+    },
+    {
+      "title": "4.2. Proteção específica"
+    },
+    {
+      "title": "5. Prevenção secundária — detectar e tratar antes de consequências graves"
+    },
+    {
+      "title": "5.1. Atenção à cadeia de cuidado"
+    },
+    {
+      "title": "5.2. Agilidade de diagnóstico sintomático"
+    },
+    {
+      "title": "6. Prevenção terciária — reduzir dano de doença estabelecida"
+    },
+    {
+      "title": "6.1. Reabilitar não significa apenas fisioterapia"
+    },
+    {
+      "title": "6.2. Prevenção terciária e redução de reinternações"
+    },
+    {
+      "title": "7. Prevenção quaternária — a obrigação de evitar dano atravessa as três anteriores"
+    },
+    {
+      "title": "8. Comparações que evitam confusão de prova"
+    },
+    {
+      "title": "9. Modelos de prevenção: doença como evento e doença como processo"
+    },
+    {
+      "title": "9.1. Exposição → probabilidade, não certeza"
+    },
+    {
+      "title": "9.2. Multicausalidade e determinação social"
+    },
+    {
+      "title": "9.3. Doença, adoecimento e necessidade sentida"
+    },
+    {
+      "title": "9.4. Prevenção como processo contínuo"
+    },
+    {
+      "title": "10. História natural aplicada a três condições"
+    },
+    {
+      "title": "10.1. Diabetes tipo 2"
+    },
+    {
+      "title": "10.2. Câncer do colo do útero"
+    },
+    {
+      "title": "10.3. AVC"
+    },
+    {
+      "title": "11. Linha de cuidado no SUS: organização sem confundir conceitos"
+    },
+    {
+      "title": "11.1. Níveis de atenção não são níveis de prevenção: quadro de classificação com quatro exemplos"
+    },
+    {
+      "title": "11.2. Por que prevenção secundária cardiovascular não é a mesma coisa que o esquema clássico?"
+    },
+    {
+      "title": "11.3. O sistema precisa acompanhar o paciente entre etapas"
+    },
+    {
+      "title": "11.4. Controle social e dever do SUS além da clínica"
+    },
+    {
+      "title": "11.5. A transição demográfica, epidemiológica e nutricional"
+    },
+    {
+      "title": "11.6. Exposoma, curso da vida e janelas críticas"
+    },
+    {
+      "title": "11.7. Um território pode precisar de ações de níveis diferentes para a mesma doença"
+    },
+    {
+      "title": "11.8. Planejar intervenção usando modelo lógico"
+    },
+    {
+      "title": "12. Indicadores para avaliar se uma ação preventiva realmente funciona"
+    },
+    {
+      "title": "13. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — a UBS e o risco de diabetes"
+    },
+    {
+      "title": "Caso 2 — HPV e história natural"
+    },
+    {
+      "title": "Caso 3 — AVC: classificação variável conforme alvo"
+    },
+    {
+      "title": "Caso 4 — exame de baixo valor em pessoa assintomática"
+    },
+    {
+      "title": "Caso 5 — gradiente social e asma em território vulnerável"
+    },
+    {
+      "title": "Caso 6 — prevenção secundária do AVC versus terciária no modelo clássico"
+    },
+    {
+      "title": "Caso 7 — incidência baixa não significa programa preventivo ineficaz"
+    },
+    {
+      "title": "Caso 8 — diabetes, risco e múltiplos níveis no mesmo paciente"
+    },
+    {
+      "title": "Caso 9 — transição epidemiológica no território"
+    },
+    {
+      "title": "Caso 10 — política antitabaco: benefício pequeno por pessoa, grande na comunidade"
+    },
+    {
+      "title": "14. Oito questões autorais com comentários"
+    },
+    {
+      "title": "Questão 1 — história natural"
+    },
+    {
+      "title": "Questão 2 — prevenção primordial"
+    },
+    {
+      "title": "Questão 3 — vacina"
+    },
+    {
+      "title": "Questão 4 — rastreamento de doença assintomática"
+    },
+    {
+      "title": "Questão 5 — doença existente e reabilitação"
+    },
+    {
+      "title": "Questão 6 — prevenção quaternária"
+    },
+    {
+      "title": "Questão 7 — nível de atenção x prevenção"
+    },
+    {
+      "title": "Questão 8 — “prevenção secundária de AVC”"
+    },
+    {
+      "title": "Questão 9 — história natural não determinista"
+    },
+    {
+      "title": "Questão 10 — paradoxo da prevenção"
+    },
+    {
+      "title": "Questão 11 — gradiente social"
+    },
+    {
+      "title": "Questão 12 — nível de atenção versus nível de prevenção"
+    },
+    {
+      "title": "Questão 13 — \"prevenção secundária\" cardiovascular"
+    },
+    {
+      "title": "Questão 14 — avaliando saneamento"
+    },
+    {
+      "title": "Questão 15 — transição epidemiológica"
+    },
+    {
+      "title": "Questão 16 — prevenção em diabetes e complicações"
+    },
+    {
+      "title": "15. Pulo do Gato"
+    },
+    {
+      "title": "16. Camada visual proposta — sem imagens licenciadas/aprovadas"
+    },
+    {
+      "title": "17. Referências"
+    },
+    {
+      "title": "18. Pendências de qualidade para aprovação"
+    },
+    {
+      "title": "14A. Matriz de competências — curso próprio distinto da aula 125"
+    },
+    {
+      "title": "17A. Referências e comparação atualizadas nesta rodada"
+    },
+    {
+      "title": "18A. Auditoria após continuação em outubro de 2026"
+    },
+    {
+      "title": "18B. Auditoria metodológica aplicada — não confundir história natural, risco e desenho de estudo"
+    },
+    {
+      "title": "18B.1. Cinco erros de interpretação que alteram decisões preventivas"
+    },
+    {
+      "title": "18B.2. Um roteiro para avaliar a qualidade de uma intervenção em saúde coletiva"
+    },
+    {
+      "title": "Caso 11 — campanha territorial e inferência causal"
+    },
+    {
+      "title": "Caso 12 — uma coorte e a interpretação errada de risco"
+    },
+    {
+      "title": "Questão 17 — história natural e desenho de estudo"
+    },
+    {
+      "title": "Questão 18 — interpretação de risco absoluto"
+    },
+    {
+      "title": "Questão 19 — prevenção e terminologia"
+    },
+    {
+      "title": "Questão 20 — avaliação de intervenção territorial"
+    },
+    {
+      "title": "18B.3. Fonte comparativa efetivamente aberta e limites"
+    }
+  ],
+  "reference_entries": [
+    "- Leavell HR, Clark EG. *Preventive Medicine for the Doctor in His Community: An Epidemiologic Approach.* Obra histórica que fundamenta modelo de níveis de prevenção; conferir edição exata na bibliografia definitiva.",
+    "- Martins C, Godycki-Cwirko M, Heleno B, Brodersen J. **Quaternary prevention: reviewing the concept.** *Eur J Gen Pract.* 2018;24:106–111. https://pmc.ncbi.nlm.nih.gov/articles/PMC5795741/",
+    "- WONCA — conceito histórico de prevenção quaternária, discutido criticamente na revisão acima.",
+    "- Ministério da Saúde. Portal de PCDT e políticas de atenção integral do SUS. https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "- USPSTF. **Grade Definitions** — avaliação de benefício líquido como exemplo metodológico, não substitui diretrizes brasileiras. https://www.uspreventiveservicestaskforce.org/uspstf/about-uspstf/methods-and-processes/grade-definitions/",
+    "- LURIA. Aula 125, *Rastreamento e prevenção quaternária* — material interno autoral correlato; sem repetição de procedimentos ou calendários.",
+    "- [x] Modelo histórico, determinantes sociais, fases naturais, prevenção primordial/primária/secundária/terciária/quaternária.",
+    "- [x] Distinção nível de atenção × nível de prevenção e terminologias especializadas.",
+    "- [x] Quatro casos clínicos de prova e vida real com raciocínio.",
+    "- [x] Oito questões comentadas por alternativa.",
+    "- [x] Fontes primárias e comparação parcial do Drive explícitas.",
+    "- [ ] Livro comparativo equivalente no Drive e leitura de fonte brasileira acadêmica abrangente em medicina preventiva.",
+    "- [ ] Ampliar políticas intersetoriais, linha de cuidado baseada em dados brasileiros, conceitos de transição epidemiológica e avaliação de programas preventivos.",
+    "- [x] Superado o piso de **60 mil caracteres brutos** com aprofundamento novo em 15/10/2026; **não** equivale a 60 mil caracteres didáticos líquidos validados nem a certificação; manter a diferenciação frente à aula 125.",
+    "- [ ] Selecionar figuras originais e imagens clínicas reais, verificar licença e aprovação.",
+    "- [ ] Revisão médico-editorial e auditagem de bibliografia com edição do livro-texto histórico.",
+    "- [ ] Validação de integração em HTML e experiência de leitura desktop/PWA.",
+    "**Parecer:** rascunho de Medicina Preventiva com escopo próprio e relação explícita com aula 125, NÃO PUBLICADO.",
+    "**Etapa zero:** a equipe abriu e releu “SUS.pdf” (2.670 caracteres extraídos) e “Estudos Epidemiológicos.pdf” (3.081) do Drive em 15/10/2026, com autoria institucional do Estratégia MED **não identificada**. São resumos de princípios do SUS e desenhos de estudos, não livro abrangente sobre história natural e prevenção. O rascunho LURIA existente foi auditado antes de inserir mecanismos causais, prevenção populacional, território, transição epidemiológica e linha de cuidado. Não foram reproduzidos textos/ilustrações dos comparativos. A aula 125 foi usada como fronteira: manter rastreamentos, ma",
+    "- Brasil. **Lei nº 8.080, de 19 de setembro de 1990**, art. 3º, com redação da Lei 12.864/2013, determinantes/condicionantes da saúde. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "- Brasil. **Lei nº 8.142, de 28 de dezembro de 1990**, participação da comunidade e transferências de recursos na saúde. https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "- OMS. **World report on social determinants of health equity.** Publicado 06/05/2025. https://www.who.int/publications/i/item/9789240107588",
+    "- OMS. **Social determinants of health equity — World Report 2025**, página informativa pública. https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity",
+    "- Leavell HR, Clark EG. *Preventive Medicine for the Doctor in His Community*. Referência histórica; edição exata e texto integral ainda precisam de checagem bibliográfica antes de citar páginas específicas.",
+    "- Geoffrey Rose. *The Strategy of Preventive Medicine*. Referência de conceito de prevenção populacional/paradoxo preventivo; conferir edição e páginas exatas antes da publicação.",
+    "**Licença de publicação:** o relatório OMS completo usa condições de licença com restrição de uso comercial para reprodução/adaptação; a LURIA **não copiou imagens, gráficos ou tabelas**, apenas usou conceitos e dados de apresentação pública com atribuição.",
+    "- [x] Ampliados história natural probabilística, remissão/recorrência e temporalidade causal.",
+    "- [x] Causa necessária/componente, fatores estruturais e curso de vida.",
+    "- [x] Estratégia populacional versus alto risco, paradoxo da prevenção, políticas ambientais.",
+    "- [x] Determinantes sociais, equidade territorial e transições demográfica/epidemiológica/nutricional."
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5795741/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "https://www.uspreventiveservicestaskforce.org/uspstf/about-uspstf/methods-and-processes/grade-definitions/",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www.who.int/publications/i/item/9789240107588",
+    "https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Medicina Preventiva / Saúde Coletiva / Atenção Primária **Situação:** RASCUNHO ORIGINAL EM REVISÃO, NÃO PUBLICADO. **Data:** 14/10/2026. Fonte curricular: cronograma LURIA, aula 130. **Recorte editorial:** esta aula explica **história natural da doença, períodos pré-patogênico/patogênico, níveis de prevenção, doença versus experiência de adoecimento e organização de cuidado longitudinal**. A aula **125** já detalha rastreamento, acurácia, sobrediagnóstico e prevenção quaternária — não duplicar aqui o tratado desses temas. A aula 85/90/95/100 do cronograma cobrirá medidas epidemiológicas e desempenho dos testes em profundidade."
+    },
+    {
+      "text": "A prevenção secundária intervém após início biológico da doença, idealmente antes de manifestações graves, por **detecção precoce e tratamento oportuno**. Exemplos clássicos incluem programas adequados de rastreamento em pessoas assintomáticas e diagnóstico precoce em contextos organizados. Entretanto, a expressão “diagnóstico precoce” pode abranger avaliação rápida de sintomas iniciais, que não é exatamente rastreamento populacional; a finalidade ainda é reduzir morbidade com tratamento oportuno."
+    },
+    {
+      "text": "**Triagem/rastreamento:** teste oferecido a pessoas sem sinais/sintomas da doença-alvo dentro de critérios de elegibilidade. **Diagnóstico de caso suspeito:** investigação desencadeada por manifestação clínica, independentemente da idade de um programa de rastreamento."
+    },
+    {
+      "text": "Como demonstrar valor? É preciso comparar desfechos relevantes entre pessoas elegíveis que recebem estratégia de detecção/tratamento e aquelas com cuidado alternativo, considerando danos e tempo até benefício. Aumentar diagnósticos iniciais sem reduzir sequelas ou mortalidade pode representar sobrediagnóstico e viés de antecipação — mecanismos aprofundados na aula 125."
+    },
+    {
+      "text": "Exemplos: - antes da doença, evitar vitaminas, antibióticos ou exames sem indicação; - em rastreamento, evitar testar população na qual falso positivo e sobrediagnóstico superam benefício; - na doença crônica, reduzir polifarmácia e suspender medicamento cujo risco excede benefício; - no fim de vida, ajustar metas terapêuticas aos valores e prognóstico, sem abandonar alívio e cuidados úteis."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,297 @@
+{
+  "sha": "aa100cc16d2dc9d26a8aa128db7637b0c84d7d67",
+  "path": "apostilas/endoscopia-digestiva-urgencias-endoscopicas/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "endoscopia-digestiva-urgencias-endoscopicas--aa100cc16d",
+  "title": "LURIA — Endoscopia digestiva e urgências endoscópicas",
+  "format": ".md",
+  "chars_estimated": 89198,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Endoscopia digestiva e urgências endoscópicas"
+    },
+    {
+      "title": "Em 30 segundos: dez decisões que não podem ser erradas"
+    },
+    {
+      "title": "1. O que a endoscopia resolve — e o que não resolve"
+    },
+    {
+      "title": "1.1 Anatomia do tubo digestivo e alcance de cada técnica"
+    },
+    {
+      "title": "1.2 Modalidades e principais perguntas respondidas"
+    },
+    {
+      "title": "1.3 Fisiologia do sangramento e por que o exame deve ser feito no momento certo"
+    },
+    {
+      "title": "1.4 Indicação não é garantia de benefício"
+    },
+    {
+      "title": "1.5 Termos que aparecem no laudo"
+    },
+    {
+      "title": "2. Abordagem inicial do sangramento digestivo"
+    },
+    {
+      "title": "2.1 Estratificação"
+    },
+    {
+      "title": "2.2 Sangramento não varicoso"
+    },
+    {
+      "title": "2.3 Sangramento por hipertensão portal"
+    },
+    {
+      "title": "2.4 HDA — estratégia em fases e cuidado com a cronologia de decisões"
+    },
+    {
+      "title": "2.5 Transfusão: limiar restritivo não é um reflexo absoluto"
+    },
+    {
+      "title": "2.6 Classificação de Forrest: tabela completa, estigma e escolha"
+    },
+    {
+      "title": "2.7 Hemostasia endoscópica: mecanismo e limitações"
+    },
+    {
+      "title": "2.8 IBP, H. pylori e prevenção de nova hemorragia"
+    },
+    {
+      "title": "2.9 A atualização ESGE 2026 — quadro de diferenças para revisar sem memorizar recomendações superadas"
+    },
+    {
+      "title": "2.10 Sangramento varicoso: sinais e condutas distintas"
+    },
+    {
+      "title": "2.11 Balão, stent esofágico e TIPS: por que são tratamentos diferentes?"
+    },
+    {
+      "title": "2.12 Diferencial HDA não varicosa: onde a técnica muda"
+    },
+    {
+      "title": "2.13 Sangramento recorrente e “falha” da primeira EDA"
+    },
+    {
+      "title": "3. Hemorragia digestiva baixa"
+    },
+    {
+      "title": "3.1 Hematoquezia: mais de uma origem possível"
+    },
+    {
+      "title": "3.2 Estratificação clínica e sequência de exames"
+    },
+    {
+      "title": "3.3 Hemorragia diverticular e seus diferenciais"
+    },
+    {
+      "title": "3.4 Angiodisplasias, colite, neoplasia e sangramento pós-polipectomia"
+    },
+    {
+      "title": "3.5 Preparo intestinal é parte da qualidade, não “detalhe logístico”"
+    },
+    {
+      "title": "3.6 Exames quando EDA e colonoscopia são negativos"
+    },
+    {
+      "title": "3.7 Tabela rápida de escolha inicial"
+    },
+    {
+      "title": "4. Corpos estranhos, impactação alimentar e lesão cáustica"
+    },
+    {
+      "title": "4.1 O primeiro problema é a via aérea, não o objeto"
+    },
+    {
+      "title": "4.2 Imagem: radiografia, TC e limites do que não aparece"
+    },
+    {
+      "title": "4.3 Janela de tempo por objeto (diretriz ESGE 2016, referência de base)"
+    },
+    {
+      "title": "4.4 A bateria pode deixar lesão após retirada"
+    },
+    {
+      "title": "4.5 Impactação alimentar e doença subjacente"
+    },
+    {
+      "title": "4.6 Ingestão de substâncias corrosivas"
+    },
+    {
+      "title": "4.7 Perfuração: quando não continuar o exame"
+    },
+    {
+      "title": "5. Disfagia e esofagite eosinofílica"
+    },
+    {
+      "title": "5.1 Disfagia orofaríngea e esofágica: primeira bifurcação"
+    },
+    {
+      "title": "5.2 Acalasia, pseudoacalasia, estenose e anel: qual teste confirma?"
+    },
+    {
+      "title": "5.3 Esofagite eosinofílica — atualização Brasil 2025 + ACG 2025"
+    },
+    {
+      "title": "5.4 Esofagite infecciosa, neoplasia e doença do refluxo"
+    },
+    {
+      "title": "5.5 Quadro de diferenciais"
+    },
+    {
+      "title": "6. CPRE, colangite e pancreatobiliar"
+    },
+    {
+      "title": "6.1 Definindo risco de cálculo na via biliar sem indicar CPRE indiscriminada"
+    },
+    {
+      "title": "6.2 Colangite e drenagem — antídoto contra a falsa segurança dos antibióticos"
+    },
+    {
+      "title": "6.3 Pancreatite pós-CPRE: prevenção de alto rendimento"
+    },
+    {
+      "title": "6.4 Casos que exigem alternativas à CPRE convencional"
+    },
+    {
+      "title": "6.5 Quando a remoção de cálculo não é a última etapa"
+    },
+    {
+      "title": "7. Preparo e segurança"
+    },
+    {
+      "title": "7.1 Risco pré-procedimento: classificar quem recebe sedação"
+    },
+    {
+      "title": "7.2 Antiplaquetários e anticoagulantes — matriz de decisão BSG/ESGE 2021"
+    },
+    {
+      "title": "7.3 Consentimento informado não é apenas assinatura"
+    },
+    {
+      "title": "7.4 Limpeza e prevenção de infecções"
+    },
+    {
+      "title": "7.5 Qualidade do laudo — o que o clínico precisa receber"
+    },
+    {
+      "title": "7.6 Complicações e sinais pós-procedimento"
+    },
+    {
+      "title": "8. Casos clínicos comentados — dez situações"
+    },
+    {
+      "title": "Casos adicionais — decisões que complementam os quatro originais"
+    },
+    {
+      "title": "9. Questões de fixação — doze questões autorais"
+    },
+    {
+      "title": "Questões adicionais com correção integral por alternativa"
+    },
+    {
+      "title": "9A. Curadoria inicial de imagens reais para a etapa visual"
+    },
+    {
+      "title": "10. Referências-base para verificação editorial"
+    },
+    {
+      "title": "10A. Fontes verificadas e trilha de atualização (complemento às referências-base)"
+    },
+    {
+      "title": "11. Pendências obrigatórias antes de aprovação"
+    }
+  ],
+  "reference_entries": [
+    "- Laine L et al. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol*. 2021.",
+    "- Gralnek IM et al. ESGE Guideline: Nonvariceal upper gastrointestinal hemorrhage. *Endoscopy*. 2021.",
+    "- de Franchis R et al. Baveno VII — Renewing consensus in portal hypertension. *J Hepatol*. 2022.",
+    "- ASGE/ESGE: recomendações para ingestão de corpos estranhos e impactação alimentar — conferir versão e população aplicável.",
+    "- ACG: guideline de hemorragia digestiva baixa — conferir versão vigente na revisão final.",
+    "- Tokyo Guidelines: manejo de colangite aguda — conferir atualizações e critérios de gravidade.",
+    "1. **Gralnek IM et al.** Endoscopic diagnosis and management of peptic ulcer bleeding: ESGE Guideline — Update **2026**. *Endoscopy.* 2026;58:899–924. doi:10.1055/a-2863-8314. https://pubmed.ncbi.nlm.nih.gov/42127996/ — atualizado para Forrest IIb, OTS clip, hemostatic powder, TAE, ferro e nutrição precoce. **Há errata:** doi:10.1055/a-2881-7411.",
+    "2. **Laine L et al.** ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol.* 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/ — GBS baixo risco, transfusão restritiva, endoscopia ≤24h, hemostasia.",
+    "3. **Gralnek IM et al.** ESGE Guideline Nonvariceal Upper Gastrointestinal Hemorrhage, atualização 2021. https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021/ — conceitos preservados e parcialmente substituídos por ESGE 2026 para úlcera.",
+    "4. **de Franchis R et al.** Baveno VII: Renewing consensus in portal hypertension. *J Hepatol.* 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/ — fármacos vasoativos, antibiótico, EDA ≤12h, TIPS seletivo.",
+    "5. **Sengupta N et al.** ACG Clinical Guideline: Management of Patients With Acute Lower Gastrointestinal Bleeding (update). *Am J Gastroenterol.* 2023. https://pubmed.ncbi.nlm.nih.gov/36735555/ — CTA em sangramento intenso, colonoscopia não urgente para maioria.",
+    "6. **Birk M et al.** Removal of foreign bodies in the upper gastrointestinal tract in adults: ESGE Clinical Guideline. *Endoscopy.* 2016. https://pubmed.ncbi.nlm.nih.gov/26862844/ — remoção emergencial/urgente por tipo/local.",
+    "7. **ASGE Standards of Practice.** Management of ingested foreign bodies and food impactions. https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions — risco de bateria, ímã, obstrução e investigação após bolo.",
+    "8. **Dellon ES et al.** ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis. *Am J Gastroenterol.* 2025;120:31–59. doi:10.14309/ajg.0000000000003194. https://gi.org/journals-publications/ebgi/eluri_feb2025/ — ≥6 biópsias, ≥2 níveis, EREFS, opções terapêuticas.",
+    "9. **Federação Brasileira de Gastroenterologia.** FBG Clinical Guideline: Diagnosis and Treatment of Eosinophilic Esophagitis in Adults and Adolescents, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12560844/ — fonte nacional para diagnóstico e tratamento.",
+    "10. **ASGE.** Guideline on role of endoscopy in evaluation/management of choledocholithiasis, 2019. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis — critérios alto/intermediário/baixo risco.",
+    "11. **ASGE.** Guideline on management of cholangitis. 2021. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-management-of-cholangitis — drenagem e tempo conforme gravidade.",
+    "12. **ASGE.** Guideline on post-ERCP pancreatitis prevention strategies. 2023. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-post-ercp-pancreatitis-prevention-strategies-summary-and-recommendations — AINE retal, fio-guia, stent, hidratação.",
+    "13. **Veitch AM et al.** BSG/ESGE guideline update: Endoscopy in patients on antiplatelet or anticoagulant therapy. *Gut.* 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8390296/ — risco de procedimentos, prazo de suspensão e reintrodução; **não usar guideline superada de 2016** para intervalos.",
+    "14. **Chey WD et al.** ACG Clinical Guideline: Treatment of *Helicobacter pylori* Infection. *Am J Gastroenterol.* 2024. https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/ — teste de cura e precauções com PPI/antibióticos.",
+    "15. **World Gastroenterology Organisation** e **sociedades brasileiras**: localizar protocolos operacionais nacionais de hemorragia digestiva, endoscopia e segurança, especialmente em rede SUS, antes de publicação; **não incluídos como “revisados” sem conferir documento integral.**",
+    "**Diferenças que não podem ser ocultadas:** a ESGE 2026 de úlcera não substitui Baveno VII de varizes; ACG 2023 de hemorragia baixa não exige colonoscopia ≤24h em todos; a ASGE para corpo estranho inclui crianças em alguns materiais, enquanto ESGE 2016 é especificamente adulta; os intervalos de antitrombóticos de 2021 substituem orientações de 2016 e dependem de risco. Revisão por especialista ainda é pendência editorial.",
+    "- Meta de profundidade textual superada; agora auditar **conteúdo útil**, redundância, nuance clínica e consistência científica com diretrizes e realidade SUS, não aumentar apenas para inflar tamanho.",
+    "- Validar recomendações contra diretrizes atuais e protocolos brasileiros; incluir doses somente após checagem.",
+    "- Construir tabelas completas de indicação/contraindicação, manejo de antitrombóticos, estigmas e timing.",
+    "- Foram identificados 13 candidatos visuais em páginas de origem e 10+ com declaração de licença aberta, mas **falta auditoria visual individual, aprovação editorial e incorporação**. Não usar arquivo/imagem sem licença e autoria comprovadas.",
+    "- Revisar os quatro casos e seis questões por médico responsável.",
+    "- Converter para layout LURIA e testar responsividade sem deploy nesta etapa."
+  ],
+  "external_urls": [
+    "https://commons.wikimedia.org/wiki/File:Bleeding_gastric_ulcer.png",
+    "https://commons.wikimedia.org/wiki/File:Ulcer_Visible_Vessel.jpg",
+    "https://commons.wikimedia.org/wiki/File:Deep_gastric_ulcer.png",
+    "https://commons.wikimedia.org/wiki/File:Gastric_ulcer_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gastric_antral_vascular_ectasia_(before_and_after",
+    "https://commons.wikimedia.org/wiki/File:Endoscopic_retrograde_cholangiopancreatography_(ERCP",
+    "https://commons.wikimedia.org/wiki/File:ERCP_stone.jpg",
+    "https://commons.wikimedia.org/wiki/File:Diagram_showing_an_endoscopic_retrograde_cholangio_pancreatography_(ERCP",
+    "https://commons.wikimedia.org/wiki/File:Esophageal-varices-hariadhi.svg",
+    "https://commons.wikimedia.org/wiki/File:Endomucosal_resection_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Polyp.jpeg",
+    "https://commons.wikimedia.org/wiki/File:Gastric_ulcer_3.jpg",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9139956/",
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "https://pubmed.ncbi.nlm.nih.gov/36735555/",
+    "https://pubmed.ncbi.nlm.nih.gov/26862844/",
+    "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions",
+    "https://gi.org/journals-publications/ebgi/eluri_feb2025/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12560844/",
+    "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis",
+    "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-management-of-cholangitis",
+    "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-post-ercp-pancreatitis-prevention-strategies-summary-and-recommendations",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8390296/",
+    "https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A **CPRE/ERCP** usa duodenoscópio para canular a papila maior e intervir no sistema pancreatobiliar com auxílio de radioscopia, esfinterotomia, balões, próteses e outros acessórios. Diferentemente de colangiorressonância e EUS, expõe o paciente a risco considerável de pancreatite, além de sangramento, colangite e perfuração. Seu papel atual é predominantemente **terapêutico**, ou diagnóstico somente quando informação/intervenção não puder ser obtida com alternativas e contexto justifique. Isso evita a ideia errada de que “todo paciente com bilirrubina alta deve fazer CPRE”."
+    },
+    {
+      "text": "| Procedimento | Indicação ou pergunta frequente | Capacidade terapêutica | Limitação/risco central | |---|---|---|---| | EDA diagnóstica | Disfagia, sangramento alto, anemia com suspeita digestiva, lesão gástrica, suspeita de doença celíaca com biópsia | Biópsia, dilatação, hemostasia | Via aérea/sedação, perfuração, amostragem inadequada | | Colonoscopia | Sangramento baixo, pesquisa de neoplasia colorretal, colite, diarreia crônica selecionada | Polipectomia, hemostasia, descompressão | Preparo, risco de perfuração e sangramento | | EUS | Pancreatobiliar de risco intermediário, lesão subepitelial, estadiamento selecionado | PAAF/FNB, drena"
+    },
+    {
+      "text": "Toda endoscopia depende de uma pergunta, probabilidade pré-teste e condição de segurança. Há contextos em que imagem ou observação estruturada são melhores: suspeita de perfuração, choque não estabilizado, paciente sem proteção de via aérea, colangite com instabilidade exigindo suporte antes de sedação e pancreatite biliar sem obstrução atual. Também é necessário reconhecer o uso indevido de EDA rotineira como exame “de check-up” em jovens assintomáticos de baixo risco. A investigação de câncer gástrico, pólipos ou Barrett depende de recomendações para faixa etária, risco e rede de atenção; evitar extrapolar programas estrangeiros sem adaptaç"
+    },
+    {
+      "text": "**Erosão** é defeito mucoso superficial; **úlcera** alcança planos mais profundos da mucosa, podendo comprometer vasos e gerar cicatrizes. **Eritema/enantema** é descrição macroscópica inespecífica e não determina gastrite etiológica nem gravidade histológica. **Lesão subepitelial** é protusão com mucosa preservada e requer discernir compressão extrínseca, GIST, lipoma, pâncreas ectópico e outros diagnósticos. **Pólipo** é projeção de mucosa ou submucosa para luz e não equivale a neoplasia maligna. **Estenose** é estreitamento; precisa de correlação com sintomas, anatomia e risco de perfuração para indicação de dilatação."
+    },
+    {
+      "text": "**Pré-EDA de lesão ulcerosa suspeita:** em sangramento significativo, IBP IV pode ser considerado antes do exame sem atrasá-lo. Quando grande quantidade de sangue/coágulos impede visualização, pró-cinético IV em paciente selecionado pode ajudar; a atualização **ESGE 2026** sugere metoclopramida IV quando eritromicina IV estiver indisponível, em hemorragia grave/ativa selecionada. Uso requer avaliar contraindicações, QT, interações e efeitos neurológicos. Lavagem nasogástrica de rotina não oferece benefício universal; não impô-la como pré-requisito."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

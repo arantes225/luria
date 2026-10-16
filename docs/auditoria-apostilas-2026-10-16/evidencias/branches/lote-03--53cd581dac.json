@@ -1,0 +1,39 @@
+{
+  "sha": "53cd581dacab3304d6fb83e8cc332cbda5a5dc4d",
+  "path": "apostilas/_rascunhos/lote-03/47-VALIDACAO-EDITORIAL.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--53cd581dac",
+  "title": "Aula 47 — Auditoria editorial preliminar (14/10/2026)",
+  "format": ".md",
+  "chars_estimated": 1658,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Aula 47 — Auditoria editorial preliminar (14/10/2026)"
+    },
+    {
+      "title": "Verificação de cobertura"
+    },
+    {
+      "title": "Pendências de homologação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

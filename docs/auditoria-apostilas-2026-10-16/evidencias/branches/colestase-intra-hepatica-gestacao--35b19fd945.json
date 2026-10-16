@@ -1,0 +1,115 @@
+{
+  "sha": "35b19fd945dbffeb75f0cae8e33496f4b93fdd99",
+  "path": "apostilas/colestase-intra-hepatica-gestacao/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "colestase-intra-hepatica-gestacao--35b19fd945",
+  "title": "LURIA — Apostila 248: Colestase intra-hepática da gestação",
+  "format": ".md",
+  "chars_estimated": 17785,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 248: Colestase intra-hepática da gestação"
+    },
+    {
+      "title": "1. Introdução e relevância obstétrica"
+    },
+    {
+      "title": "2. Fisiopatologia aplicada"
+    },
+    {
+      "title": "3. Epidemiologia e fatores de risco"
+    },
+    {
+      "title": "4. Quadro clínico e sinais de alarme"
+    },
+    {
+      "title": "5. Diagnóstico e a divergência das diretrizes"
+    },
+    {
+      "title": "5.1 Definições e valores relevantes"
+    },
+    {
+      "title": "5.2 O que cada exame responde"
+    },
+    {
+      "title": "6. Diagnósticos diferenciais importantes"
+    },
+    {
+      "title": "7. Tratamento materno"
+    },
+    {
+      "title": "8. Vigilância fetal e decisão sobre parto"
+    },
+    {
+      "title": "8.1 Ponto de corte de alto risco segundo SMFM"
+    },
+    {
+      "title": "8.2 RCOG e diferenças de recomendação"
+    },
+    {
+      "title": "9. Puerpério e futuras gestações"
+    },
+    {
+      "title": "10. Algoritmo clínico"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "12. Seis questões LURIA comentadas"
+    },
+    {
+      "title": "13. Plano visual editorial (não baixado)"
+    },
+    {
+      "title": "14. Referências científicas verificáveis"
+    },
+    {
+      "title": "15. Auditoria final provisória"
+    }
+  ],
+  "reference_entries": [
+    "1. SMFM. **Society for Maternal-Fetal Medicine Consult Series #53: Intrahepatic cholestasis of pregnancy**. Am J Obstet Gynecol. 2021;224(2):B2–B9. Reafirmada 2024. https://publications.smfm.org/publications/374-society-for-maternal-fetal-medicine-consult-series-53/",
+    "2. Girling J et al. **Intrahepatic cholestasis of pregnancy**. RCOG Green-top Guideline #43. BJOG. 2022;129:e95–e114. doi:10.1111/1471-0528.17206. https://doi.org/10.1111/1471-0528.17206",
+    "3. RCOG. **Intrahepatic cholestasis of pregnancy (Green-top Guideline No. 43)**. https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/intrahepatic-cholestasis-of-pregnancy-green-top-guideline-no-43",
+    "**Coberto:** definição, fisiopatologia, clínica, diagnóstico e divergências 10/19 μmol/L, estratificação RCOG, manejo UDCA, timing SMFM, vigilância, puerpério, 4 casos, 6 questões, 12 visuais candidatos.  ",
+    "**Lacunas obrigatórias antes de finalizar:** validação frente protocolos FEBRASGO/SUS atualizados; tabela detalhada comparativa do timing RCOG e SMFM, revisão de dose UDCA, evidência randomizada de eficácia fetal, investigação hepatológica de alterações persistentes, recorrência e aconselhamento reprodutivo, casos atípicos, imagens licenciadas, revisão por pares e expansão a padrão premium ≥60 mil caracteres úteis se necessário. **NÃO CONSIDERAR PRONTA.**"
+  ],
+  "external_urls": [
+    "https://publications.smfm.org/publications/374-society-for-maternal-fetal-medicine-consult-series-53/",
+    "https://doi.org/10.1111/1471-0528.17206",
+    "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/intrahepatic-cholestasis-of-pregnancy-green-top-guideline-no-43"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia · **Lote 12**. **Estado:** manuscrito clínico em produção, não aprovado para uso público. **Guidelines-base:** SMFM Consult #53 (2021, reafirmada em 2024, endossada ACOG) e RCOG Green-top #43 (2022). **Alerta editorial:** diretrizes divergem em limiar bioquímico para diagnóstico, classificação e timing do parto; ensinar a divergência sem criar falsa norma universal. Atualizar à realidade Febrasgo/protocolo hospitalar antes de publicar."
+    },
+    {
+      "text": "A avaliação combina clínica, bioquímica, exclusão de outros diagnósticos e planejamento do parto. **A gravidade fetal não é inferida pela intensidade subjetiva do prurido ou pelo valor isolado de TGO/TGP**, mas principalmente pelo **pico de ácidos biliares**, contexto obstétrico e comorbidades. Testes fetais de vigilância não eliminam todo risco de óbito intrauterino."
+    },
+    {
+      "text": "A bile é produzida nos hepatócitos e drenada pelos canalículos. Na gestação, a interação entre aumento de hormônios esteroides, susceptibilidade genética e transportadores hepatobiliares pode reduzir a excreção de ácidos biliares. Variantes em genes como ABCB4 e ABCB11 podem contribuir em determinadas pacientes, mas **teste genético não é obrigatório para diagnóstico inicial**. A elevação dos ácidos biliares circulantes associa-se a prurido e risco fetal que se acentua nos níveis mais altos."
+    },
+    {
+      "text": "A incidência varia entre regiões geográficas e ancestrais populacionais e conforme método diagnóstico; não usar uma única proporção como prevalência nacional uniforme. História pessoal de CIG em gestação anterior, história familiar, gravidez múltipla e algumas hepatopatias prévias aumentam suspeita. Recorrência é comum e pode ocorrer em nova gestação com manifestação clínica ou níveis diferentes. Prurido precoce ou muito grave e alterações bioquímicas persistentes após o parto justificam investigação de hepatopatia subjacente."
+    },
+    {
+      "text": "- **RCOG Green-top 43 (2022):** considera CIG quando prurido em pele com aparência normal acompanha **pico aleatório de ácidos biliares ≥19 μmol/L**, após avaliação adequada. Classifica **leve 19–39**, **moderada 40–99** e **grave ≥100 μmol/L**. - **SMFM Consult #53 (reafirmada 2024):** recomenda dosar ácidos biliares totais e transaminases com suspeita; em sua discussão diagnóstica, níveis acima do limite laboratorial e contexto clínico são usados, com referências históricas a **>10 μmol/L**; ressalta limitações de padronização do teste. Para **timing do parto**, separa <100 versus ≥100 μmol/L e individualiza menores níveis."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

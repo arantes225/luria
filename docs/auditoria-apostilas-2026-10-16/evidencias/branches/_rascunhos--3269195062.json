@@ -1,0 +1,199 @@
+{
+  "sha": "3269195062b5a9ffa03d6b97405433a21c4f82fd",
+  "path": "apostilas/_rascunhos/lote-06-128-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--3269195062",
+  "title": "Sepse e Choque Séptico Pediátrico",
+  "format": ".json",
+  "chars_estimated": 81963,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes-de-leitura",
+      "title": "Orientações e apresentação"
+    },
+    {
+      "id": "cap-01-sepse-pediatrica-infeccao-com-disfuncao-organica-",
+      "title": "1. Sepse pediátrica: infecção com disfunção orgânica ameaçadora à vida"
+    },
+    {
+      "id": "cap-02-fisiopatologia-do-endotelio-ao-choque-compensado",
+      "title": "2. Fisiopatologia: do endotélio ao choque compensado"
+    },
+    {
+      "id": "cap-03-criterios-phoenix-2024-definicao-atual-sem-atraso",
+      "title": "3. Critérios Phoenix 2024: definição atual sem atraso terapêutico"
+    },
+    {
+      "id": "cap-04-focos-e-microrganismos-idade-vacinacao-e-disposit",
+      "title": "4. Focos e microrganismos: idade, vacinação e dispositivos importam"
+    },
+    {
+      "id": "cap-05-exame-e-diferenciais-choque-nao-e-necessariamente",
+      "title": "5. Exame e diferenciais: choque não é necessariamente séptico"
+    },
+    {
+      "id": "cap-06-exames-iniciais-medir-sem-atrasar-decisoes-vitais",
+      "title": "6. Exames iniciais: medir sem atrasar decisões vitais"
+    },
+    {
+      "id": "cap-07-abordagem-da-primeira-hora-sequencia-paralela",
+      "title": "7. Abordagem da primeira hora — sequência paralela"
+    },
+    {
+      "id": "cap-08-ressuscitacao-volemica-a-recomendacao-depende-do-",
+      "title": "8. Ressuscitação volêmica: a recomendação depende do sistema de saúde"
+    },
+    {
+      "id": "cap-09-vasoativos-o-que-mudou-na-atualizacao-de-2026",
+      "title": "9. Vasoativos: o que mudou na atualização de 2026"
+    },
+    {
+      "id": "cap-10-antibiotico-empirico-cobrir-o-provavel-e-revisar-",
+      "title": "10. Antibiótico empírico: cobrir o provável e revisar no tempo certo"
+    },
+    {
+      "id": "cap-11-controle-da-fonte-antibiotico-nao-drena-abscesso",
+      "title": "11. Controle da fonte: antibiótico não drena abscesso"
+    },
+    {
+      "id": "cap-12-disfuncao-respiratoria-pards-e-intubacao-segura-n",
+      "title": "12. Disfunção respiratória, PARDS e intubação segura no choque"
+    },
+    {
+      "id": "cap-13-disfuncao-renal-e-balanco-hidrico-apos-a-reanimac",
+      "title": "13. Disfunção renal e balanço hídrico após a reanimação"
+    },
+    {
+      "id": "cap-14-coagulopatia-plaquetas-e-purpura-fulminante",
+      "title": "14. Coagulopatia, plaquetas e púrpura fulminante"
+    },
+    {
+      "id": "cap-15-disfuncao-neurologica-encefalopatia-meningite-e-c",
+      "title": "15. Disfunção neurológica: encefalopatia, meningite e convulsão"
+    },
+    {
+      "id": "cap-16-corticoide-quando-a-hidrocortisona-e-indicada-e-q",
+      "title": "16. Corticoide: quando a hidrocortisona é indicada — e quando não é"
+    },
+    {
+      "id": "cap-17-imunossupressao-oncologia-e-infeccao-relacionada-",
+      "title": "17. Imunossupressão, oncologia e infecção relacionada a dispositivos"
+    },
+    {
+      "id": "cap-18-lactentes-jovens-e-sepse-neonatal-quais-regras-mu",
+      "title": "18. Lactentes jovens e sepse neonatal: quais regras mudam"
+    },
+    {
+      "id": "cap-19-crianca-com-dengue-e-choque-diferencial-indispens",
+      "title": "19. Criança com dengue e choque: diferencial indispensável no Brasil"
+    },
+    {
+      "id": "cap-20-miocardite-e-choque-cardiogenico-misto-quando-o-v",
+      "title": "20. Miocardite e choque cardiogênico misto: quando o volume agrava"
+    },
+    {
+      "id": "cap-21-acompanhar-a-resposta-metas-clinicas-e-tendencias",
+      "title": "21. Acompanhar a resposta: metas clínicas e tendências"
+    },
+    {
+      "id": "cap-22-alteracoes-metabolicas-e-terapias-controversas",
+      "title": "22. Alterações metabólicas e terapias controversas"
+    },
+    {
+      "id": "cap-23-erros-de-prescricao-e-seguranca-medicamentosa-ped",
+      "title": "23. Erros de prescrição e segurança medicamentosa pediátrica"
+    },
+    {
+      "id": "cap-24-choque-septico-na-ubs-ou-pronto-atendimento-sem-u",
+      "title": "24. Choque séptico na UBS ou pronto atendimento sem UTI: plano de transferência"
+    },
+    {
+      "id": "cap-25-indicadores-de-qualidade-como-aprender-com-cada-c",
+      "title": "25. Indicadores de qualidade: como aprender com cada caso"
+    },
+    {
+      "id": "cap-26-sobrevivencia-e-cuidado-pos-sepse-pediatrica",
+      "title": "26. Sobrevivência e cuidado pós-sepse pediátrica"
+    },
+    {
+      "id": "cap-27-resumo-de-alto-rendimento-algoritmos-e-nao-confun",
+      "title": "27. Resumo de alto rendimento — algoritmos e \"não confundir\""
+    },
+    {
+      "id": "cap-28-cinco-sindromes-infecciosas-de-apresentacao-disti",
+      "title": "28. Cinco síndromes infecciosas de apresentação distinta: decidir pelo foco"
+    },
+    {
+      "id": "cap-29-diagnostico-diferencial-na-crianca-sem-hipotensao",
+      "title": "29. Diagnóstico diferencial na criança sem hipotensão, mas muito doente"
+    },
+    {
+      "id": "cap-30-calculos-de-seguranca-que-o-aluno-deve-dominar",
+      "title": "30. Cálculos de segurança que o aluno deve dominar"
+    },
+    {
+      "id": "cap-31-protocolo-de-retorno-clinico-e-falhas-da-primeira",
+      "title": "31. Protocolo de retorno clínico e falhas da primeira abordagem"
+    },
+    {
+      "id": "cap-32-oito-casos-clinicos-integradores-comentados",
+      "title": "32. Oito casos clínicos integradores comentados"
+    },
+    {
+      "id": "cap-33-doze-questoes-autorais-comentadas-enamed-e-reside",
+      "title": "33. Doze questões autorais comentadas — ENAMED e residência"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"SSC 2026 pediátrica — SCCM, recomendações item a item\",\"url\":\"https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in\"}",
+    "{\"label\":\"Weiss et al. 2026 — SSC em crianças, DOI 10.1007/s00134-026-08360-2\",\"url\":\"https://doi.org/10.1007/s00134-026-08360-2\"}",
+    "{\"label\":\"Schlapbach et al. 2024 — Phoenix Sepsis Criteria\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/\"}",
+    "{\"label\":\"Sanchez-Pinto et al. — validação do Phoenix 2024\",\"url\":\"https://doi.org/10.1001/jama.2024.0196\"}",
+    "{\"label\":\"SSC pediátrica 2020 — referência histórica de comparação\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7095013/\"}",
+    "{\"label\":\"Ministério da Saúde — Dengue\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue\"}",
+    "{\"label\":\"Ministério da Saúde — Saúde da Criança\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca\"}",
+    "{\"label\":\"Sociedade Brasileira de Pediatria — publicações\",\"url\":\"https://www.sbp.com.br/\"}"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/",
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in",
+    "https://doi.org/10.1007/s00134-026-08360-2",
+    "https://doi.org/10.1001/jama.2024.0196",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7095013/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "https://www.sbp.com.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Pulo do Gato: não transpor SOFA adulto, PAM ≥65 mmHg e bolo universal de 30 mL/kg para lactentes/crianças. A diretriz pediátrica mais atual é de março de 2026 e diferencia suporte disponível, presença de hipotensão e resposta aos fluidos."
+    },
+    {
+      "text": "A SSC 2026 recomenda lactato sanguíneo como parte da avaliação inicial de crianças com sepse provável ou choque suspeito. O exame pode ajudar a acompanhar perfusão e evolução, mas elevação ocorre também por estímulo adrenérgico, convulsão, hipoxemia, doenças metabólicas e alterações de depuração. Lactato normal não exclui sepse ou choque compensado. Tendência associada ao exame da criança vale mais que tratar um limiar isolado."
+    },
+    {
+      "text": "Hemograma/plaquetas, eletrólitos, glicose, creatinina, gasometria quando indicada, coagulação, função hepática e biomarcadores conforme cenário documentam disfunção e guiam suporte. Coletar hemoculturas antes de antibiótico se isso não atrasar substancialmente o início, e culturas dirigidas (urina, secreção, líquor, drenagem) quando seguras e pertinentes. A punção lombar pode ser essencial para investigação de meningite, mas não deve retardar antibiótico em criança grave; avaliar contraindicações e estabilização primeiro."
+    },
+    {
+      "text": "A SSC 2026 recomenda começar antimicrobianos imediatamente, idealmente até uma hora em choque, enquanto permite breve avaliação estruturada em suspeita de sepse sem choque até três horas, se a preocupação persiste. Isso procura equilibrar risco de atraso de infecção grave contra dano por antibióticos em febres sem doença bacteriana invasiva. Não criar cronômetro para toda criança com febre e boa perfusão; não utilizar uma janela de investigação de três horas em paciente hipotenso."
+    },
+    {
+      "text": "Sem UTI disponível e sem hipotensão: em criança com sepse a SSC 2026 recomenda contra bolos de fluido, mantendo terapia de manutenção e intervenção no foco. É recomendação forte de evidência alta. Sem UTI, com choque hipotensivo: pode-se considerar até 40 mL/kg em bolos de 10–20 mL/kg na primeira hora, sempre com reavaliação e interrupção se congestão/choque revertido. O risco de um bolo excessivo cresce em serviço incapaz de oferecer ventilação/vasopressores."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

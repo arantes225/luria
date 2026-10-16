@@ -1,0 +1,124 @@
+{
+  "sha": "4b73de2f5d4252718c294ba4c239117d66c6e8a9",
+  "path": "apostilas/_rascunhos/lote-03/58-diarreia-aguda.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--4b73de2f5d",
+  "title": "LURIA — AULA 58 | DIARREIA AGUDA: RACIONAL ETIOLÓGICO, HIDRATAÇÃO E DECISÃO TERAPÊUTICA",
+  "format": ".md",
+  "chars_estimated": 21895,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — AULA 58 | DIARREIA AGUDA: RACIONAL ETIOLÓGICO, HIDRATAÇÃO E DECISÃO TERAPÊUTICA"
+    },
+    {
+      "title": "0. Comparativo prévio e delimitação didática"
+    },
+    {
+      "title": "1. Diarreia: o que define a síndrome?"
+    },
+    {
+      "title": "2. Etiologias: agentes, incubação e apresentação"
+    },
+    {
+      "title": "3. Clínica e gravidade: quem não pode receber alta imediata?"
+    },
+    {
+      "title": "4. Avaliação do estado de hidratação e Planos A, B, C"
+    },
+    {
+      "title": "5. Quando solicitar exames?"
+    },
+    {
+      "title": "6. Antibióticos: quando ajudam e quando prejudicam"
+    },
+    {
+      "title": "7. Diarreia associada a antibióticos e C. difficile"
+    },
+    {
+      "title": "8. Alimentação, probióticos, antidiarreicos e antieméticos"
+    },
+    {
+      "title": "9. Complicações e prognóstico"
+    },
+    {
+      "title": "10. Vigilância de surtos — ponte para a aula 60"
+    },
+    {
+      "title": "11. Algoritmo de abordagem clínica"
+    },
+    {
+      "title": "12. Quatro casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — Lactente que ainda está hidratado"
+    },
+    {
+      "title": "Caso 2 — Diarreia sanguinolenta, pouca febre e oligúria"
+    },
+    {
+      "title": "Caso 3 — Diarreia após antibiótico e internação"
+    },
+    {
+      "title": "Caso 4 — Várias pessoas adoeceram após almoço"
+    },
+    {
+      "title": "13. Questões originais com justificativa por alternativa"
+    },
+    {
+      "title": "14. Imagens e esquemas propostos — ainda não aprovados"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Pendências para homologação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. Doenças Diarreicas Agudas: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+    "2. Ministério da Saúde. Manejo do paciente com diarreia: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente",
+    "3. Ministério da Saúde. Vigilância Epidemiológica das DDA (MDDA/Sivep-DDA): https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica",
+    "4. IDSA/SHEA. Focused Update on Management of Clostridioides difficile Infection in Adults (2021): https://www.idsociety.org/practice-guideline/clostridioides-difficile/",
+    "5. Infectious Diseases Society of America. Clinical Practice Guidelines for the Diagnosis and Management of Infectious Diarrhea (2017): https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica",
+    "https://www.idsociety.org/practice-guideline/clostridioides-difficile/",
+    "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **RASCUNHO NÃO HOMOLOGADO.** Inclui adultos e crianças com ênfase na abordagem inicial, e deve ser aprofundado e revisado por equipe médica antes de uso como protocolo. A aula 53 aprofunda cálculos de reidratação pediátrica; a 58 aborda mecanismos e etiologias, diagnóstico diferencial, antimicrobianos selecionados e prevenção. Não copiar desnecessariamente algoritmos integrais entre capítulos."
+    },
+    {
+      "text": "**Drive efetivamente lido:** \\`01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf\\`. Material de gastroenterologia com classificação por tempo/topografia, mecanismos osmótico/secretório/inflamatório, etiologias, exames e tratamento, além de *C. difficile*. Tem distribuição informal e direitos de reprodução não confirmados. Não copiar redação, quadros ou imagens. **Problemas de atualização a corrigir:** uso amplo de antibióticos para diarreia febril sem critérios, recomendação genérica de antidiarreicos e esquema de *C. difficile* com metronidazol como primeira linha para casos não graves, que não reflete preferências de diretrizes atuais para doe"
+    },
+    {
+      "text": "**Fontes oficiais:** Ministério da Saúde, página das Doenças Diarreicas Agudas; cartaz/folha \\`Manejo do paciente com diarreia\\` (Planos A/B/C; atualizado no portal 2026); CDC e diretrizes clínicas IDSA/SHEA para *C. difficile* como referência internacional, sem presumir incorporação ou acesso no SUS. O texto abaixo diferencia recomendações nacionais operacionais e raciocínio baseado em evidência."
+    },
+    {
+      "text": "| Mecanismo | Fisiologia | Exemplo e pista | |---|---|---| | Secretório | aumento da secreção de eletrólitos/água, redução de absorção | perdas volumosas e persistência apesar do jejum em alguns quadros | | Osmótico | solutos pouco absorvíveis mantêm água no lúmen | intolerância transitória a açúcar ou medicação osmótica; melhora em jejum | | Inflamatório/exsudativo | dano de mucosa, sangue, muco e resposta inflamatória | disenteria por patógenos invasores ou colite não infecciosa | | Malabsortivo | absorção prejudicada por lesão ou deficiência digestiva | esteatorreia e sintomas prolongados em situações específicas | | Motilidade alterada | "
+    },
+    {
+      "text": "Em criança, a aula 53 apresenta detalhes de volumes. No **Plano A**, manter alimentação habitual e leite materno. O Ministério recomenda zinco em crianças com diarreia por período definido, conforme idade/dose do protocolo. No **Plano B**, pequenas ofertas frequentes podem ser mais eficazes que tentar dar grande volume de uma vez; antiemético selecionado pode ajudar quando vômito persistente impede SRO, com avaliação de contraindicações. No **Plano C**, reavaliar sinais vitais e diurese e evitar aplicar protocolo diarreico indiscriminadamente em hipernatremia grave, cardiopatia, desnutrição grave, doença renal ou outras causas complexas de ch"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

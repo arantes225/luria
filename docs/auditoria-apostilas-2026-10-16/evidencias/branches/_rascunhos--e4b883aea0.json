@@ -1,0 +1,322 @@
+{
+  "sha": "e4b883aea0dc34eeda772f908dd699379b55ef63",
+  "path": "apostilas/_rascunhos/lote-03-050-financiamento-gestao-sus.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--e4b883aea0",
+  "title": "LURIA — Apostila 050: Financiamento, planejamento e gestão do SUS",
+  "format": ".md",
+  "chars_estimated": 67028,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 050: Financiamento, planejamento e gestão do SUS"
+    },
+    {
+      "title": "0. Etapa zero: comparação curricular e fontes rastreáveis"
+    },
+    {
+      "title": "1. O mapa geral: direito constitucional, recursos, serviços e controle"
+    },
+    {
+      "title": "1.1 O que significa financiamento tripartite?"
+    },
+    {
+      "title": "1.2 Financiamento não é sinônimo de modelo de pagamento"
+    },
+    {
+      "title": "2. Constituição e piso mínimo de investimento em saúde"
+    },
+    {
+      "title": "2.1 Três regras que caem em prova"
+    },
+    {
+      "title": "2.2 Um exemplo numérico — compreender antes de decorar"
+    },
+    {
+      "title": "2.3 Orçamento mínimo não significa disponibilidade irrestrita"
+    },
+    {
+      "title": "3. LC 141/2012 — o que conta como ações e serviços públicos de saúde (ASPS)?"
+    },
+    {
+      "title": "3.1 Despesas que podem integrar o cálculo, respeitados os requisitos"
+    },
+    {
+      "title": "3.2 Despesas que não devem ser usadas para completar o piso"
+    },
+    {
+      "title": "3.3 O conceito de finalidade importa mais que o título da nota fiscal"
+    },
+    {
+      "title": "4. Fundo de Saúde, transferência e vinculação: o caminho do dinheiro"
+    },
+    {
+      "title": "4.1 Os dois blocos vigentes — evitar nomes antigos na prova de 2026"
+    },
+    {
+      "title": "4.2 Custeio, investimento e execução — três conceitos distintos"
+    },
+    {
+      "title": "4.3 Duas situações que não se confundem"
+    },
+    {
+      "title": "5. Gestão descentralizada com pactuação interfederativa"
+    },
+    {
+      "title": "5.1 Exemplificando regionalização pelo cuidado"
+    },
+    {
+      "title": "5.2 Responsabilidades gerais e limites"
+    },
+    {
+      "title": "6. Planejamento: Plano de Saúde, PAS, RQPC e RAG"
+    },
+    {
+      "title": "6.1 De indicador de mortalidade à decisão orçamentária"
+    },
+    {
+      "title": "6.2 Planejamento ascendente, regional e integrado"
+    },
+    {
+      "title": "7. Controle social: conselho, conferência e participação"
+    },
+    {
+      "title": "7.1 Um orçamento é aprovado; o conselho já perdeu importância?"
+    },
+    {
+      "title": "7.2 Participação deliberativa exige informação compreensível"
+    },
+    {
+      "title": "8. SIOPS: transparência bimestral e cumprimento dos mínimos"
+    },
+    {
+      "title": "9. Atenção Primária: como compreender a metodologia de cofinanciamento de 2024–2026"
+    },
+    {
+      "title": "9.1 Por que existe componente fixo?"
+    },
+    {
+      "title": "9.2 Vínculo e acompanhamento territorial"
+    },
+    {
+      "title": "9.3 Componente de qualidade"
+    },
+    {
+      "title": "9.4 Portaria GM/MS nº 10.994/2026: a transição que muda a resposta em prova"
+    },
+    {
+      "title": "9.5 Regra de prova: o que não confundir"
+    },
+    {
+      "title": "10. Financiamento da atenção especializada e dos serviços — não reduzir SUS à APS"
+    },
+    {
+      "title": "10.1 Contratualização e complementaridade"
+    },
+    {
+      "title": "11. Financiamento, equidade e avaliação econômica"
+    },
+    {
+      "title": "11.1 Eficiência técnica e alocativa"
+    },
+    {
+      "title": "11.2 Um exemplo sem matemática excessiva"
+    },
+    {
+      "title": "12. Governança, transparência e integridade"
+    },
+    {
+      "title": "12.1 Falha de dado versus falha de serviço"
+    },
+    {
+      "title": "12.2 Uma boa prestação de contas responde perguntas de saúde"
+    },
+    {
+      "title": "13. A linguagem do orçamento público — PPA, LDO, LOA e execução"
+    },
+    {
+      "title": "13.1 Da intenção à despesa: dotação não é medicamento na prateleira"
+    },
+    {
+      "title": "13.2 Restos a pagar: por que duas contas podem parecer contraditórias"
+    },
+    {
+      "title": "13.3 Equipe financeira e equipe clínica precisam conversar"
+    },
+    {
+      "title": "14. Transferências e vinculações — como raciocinar por território"
+    },
+    {
+      "title": "14.1 Um município que precisa de hemodiálise"
+    },
+    {
+      "title": "14.2 Estrutura sem manutenção é uma falsa expansão de acesso"
+    },
+    {
+      "title": "14.3 Repasse territorial e saúde de populações vulneráveis"
+    },
+    {
+      "title": "15. Atenção Primária com dados de qualidade — casos de indicador e pagamento"
+    },
+    {
+      "title": "15.1 Quatro pacientes com o mesmo diagnóstico, registros diferentes"
+    },
+    {
+      "title": "15.2 Denominador e população adscrita"
+    },
+    {
+      "title": "15.3 Indicador de processo versus de desfecho"
+    },
+    {
+      "title": "15.4 A Portaria 10.994/2026 e o efeito de “faixa protegida”"
+    },
+    {
+      "title": "16. Como avaliar contratos e financiamento sem comprometer autonomia clínica"
+    },
+    {
+      "title": "16.1 Risco de fraudes e distorções"
+    },
+    {
+      "title": "16.2 Financiamento de tecnologias novas"
+    },
+    {
+      "title": "17. Casos comentados — financiamento e gestão em situações de prova"
+    },
+    {
+      "title": "Caso 1 — Município com piso de saúde aparentemente cumprido"
+    },
+    {
+      "title": "Caso 2 — UBS recebe verba para estruturação, mas falta medicação"
+    },
+    {
+      "title": "Caso 3 — APS com melhora de cadastro e queda de acompanhamento"
+    },
+    {
+      "title": "Caso 4 — Dois municípios, um único serviço oncológico especializado"
+    },
+    {
+      "title": "Caso 5 — Período de transição do cofinanciamento em 2026"
+    },
+    {
+      "title": "Caso 6 — Gasto integral executado, demanda sem atendimento"
+    },
+    {
+      "title": "18. Dez questões autorais com comentário de todas as alternativas"
+    },
+    {
+      "title": "Questão 1 — Piso federal"
+    },
+    {
+      "title": "Questão 2 — Despesa elegível"
+    },
+    {
+      "title": "Questão 3 — Blocos de repasse"
+    },
+    {
+      "title": "Questão 4 — Gestão e pactuação"
+    },
+    {
+      "title": "Questão 5 — Planejamento"
+    },
+    {
+      "title": "Questão 6 — SIOPS"
+    },
+    {
+      "title": "Questão 7 — Cofinanciamento APS"
+    },
+    {
+      "title": "Questão 8 — Transição 2026"
+    },
+    {
+      "title": "Questão 9 — Regionalização"
+    },
+    {
+      "title": "Questão 10 — Efetividade financeira e clínica"
+    },
+    {
+      "title": "19. Resumo integrado para revisão de residência"
+    },
+    {
+      "title": "20. Matriz preliminar de autossuficiência e auditoria de saída"
+    }
+  ],
+  "reference_entries": [
+    "**Benchmark realmente aberto no Google Drive:** “SUS.pdf”, ficha-resumo de aproximadamente 2.670 caracteres extraídos, com princípios doutrinários e organizativos, municipalização, regionalização, níveis de atenção, Lei 8.142/1990, participação, CIT e CIB. É material de autoria institucional **não comprovada como Estratégia MED** (o corpo menciona pessoa física). Nenhum dos termos pesquisados “financiamento”, “SIOPS”, “Lei 141”, “fundo de saúde” e “planejamento SUS” retornou apostila específica acessível no Drive. Portanto o benchmark **é apenas correlato e incompleto**; esta etapa NÃO pode se",
+    "**Modelo LURIA inspecionado no desenvolvimento do lote:** apostilas/cancer-de-mama/index.html, com organização em capítulos, navegação própria, tabelas, fluxos, casos e leitura responsiva. Este texto é novo e não altera aquela obra.",
+    "**Fontes primárias públicas efetivamente consultadas (revisão de vigência em outubro de 2026):**",
+    "1. Constituição Federal de 1988, art. 196–200 (atualização constitucional): https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+    "2. Lei Complementar 141/2012, redação vigente incluindo alterações de 2024 e 2026: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+    "3. Decreto nº 7.508/2011, planejamento e comissões intergestores: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm",
+    "4. Ministério da Saúde, Portaria GM/MS nº 3.493/2024 e FAQ de financiamento: https://www.gov.br/saude/pt-br/composicao/saps/esf/faq-novo-modelo-de-cofinanciamento-federal-da-aps",
+    "5. Ministério da Saúde, Portaria GM/MS nº 10.994, de 13/05/2026, regras transitórias do cofinanciamento APS: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10994_14_05_2026.html",
+    "6. Ministério da Saúde, Nota Técnica nº 8/2026-DEAPS/SAPS/MS, publicada em 02/10/2026, metodologia quadrimestral de desempenho de eSF/eSB/eMulti: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view",
+    "7. Ministério da Saúde, SIOPS e transparência: https://www.gov.br/saude/pt-br/acesso-a-informacao/siops",
+    "8. Ministério da Saúde, instrumentos de planejamento do SUS: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "9. Ministério da Saúde, RAG e PAS: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag e https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas",
+    "10. Portaria GM/MS nº 828/2020, blocos de **Manutenção** e **Estruturação**: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html",
+    "11. Lei nº 8.080/1990 e Lei nº 8.142/1990, consultar textos legais consolidados antes de fechamento: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm e https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "**Escopo que falta para benchmark equivalente:** documento específico de economia e financiamento do SUS, com comparação de pisos de recursos, ASPS, fundos de saúde, alocação e cofinanciamento atualizado. Enquanto ele não estiver disponível, a conclusão é limitada a pesquisa de fontes primárias e material didático autoral preliminar.",
+    "- **Quem tem dever de garantir?** O Estado, por suas esferas federativas, conforme Constituição e legislação sanitária.",
+    "- **Quem arrecada e deve aplicar?** União, estados, Distrito Federal e municípios, cada qual com bases de cálculo e mínimos constitucionais/legais.",
+    "- **Quem decide prioridades?** Gestores articulados com instâncias de pactuação, planos de saúde e participação social, observando normas e necessidades locais.",
+    "- **Por onde o dinheiro circula?** Orçamento público, fundos de saúde, transferências regulares e automáticas, programas de trabalho e execução identificável.",
+    "- **Como demonstrar resultado e legalidade?** Plano de Saúde, PAS, relatórios quadrimestrais, RAG, SIOPS, conselhos, controle interno/externo e transparência.",
+    "**Financiamento** responde de onde vêm os recursos e quais mecanismos de custeio/investimento os distribuem. **Pagamento ao prestador** é a forma de remunerar hospital, equipe ou serviço; pode envolver orçamento global, produção assistencial, incentivo por desempenho ou contratos específicos. **Alocação** designa a escolha de quais territórios, linhas de cuidado ou serviços recebem os recursos. **Execução** é realizar despesa autorizada, sujeita a regras. **Avaliação** pergunta o que foi alcançado em saúde e a que custo, incorporando equidade e qualidade.",
+    "**O piso de aplicação é uma obrigação mínima, não teto para gasto.** Estados e municípios podem investir acima do mínimo; alguns diplomas estaduais/municipais estabelecem percentual maior. Recursos extraordinários com vinculação específica não substituem automaticamente valores próprios mínimos. O cálculo é sobre bases legalmente definidas, não sobre “toda receita do governo” indiscriminadamente.",
+    "**Exemplo:** construir uma nova UBS para atendimento público pode ser investimento elegível na rede física; construir via urbana em direção à UBS pode melhorar acesso, mas não se torna investimento elegível só porque beneficia usuários do serviço. **Exemplo 2:** pagar enfermeiros de equipe pública em atendimento clínico é diferente de incluir vencimentos de aposentados no mínimo de saúde.",
+    "1. **Bloco de Manutenção das Ações e Serviços Públicos de Saúde:** favorece continuidade da prestação dos serviços, funcionamento e despesas admitidas na modalidade, observando objetivos e vinculações.",
+    "2. **Bloco de Estruturação da Rede de Serviços Públicos de Saúde:** relacionado à ampliação da estrutura e investimentos definidos, como equipamentos e obras de expansão ou construção elegíveis, respeitando finalidade e norma.",
+    "**Custeio** refere-se a despesas para funcionamento/manutenção de atividades como insumos e serviços; **investimento** amplia ou estrutura patrimônio/capacidade, como obras e equipamentos, conforme classificação e finalidade. O nome do bloco não dispensa análise do objeto concreto e restrições da transferência. **Execução** envolve processo de licitação/contratação, controle e pagamento para entregar o serviço. Um município pode receber em bloco apropriado e ainda executar irregularmente se comprar bem sem licitação exigível ou sem vinculação adequada.",
+    "**Situação A:** pequena UBS tem problema elétrico que impede funcionamento. A manutenção da instalação, quando enquadrada em despesas admissíveis, pode estar relacionada à continuidade da oferta, distinta de obra que amplia capacidade da rede. **Situação B:** município projeta UBS adicional em território descoberto. A construção, após planejamento, costuma ser natureza de estruturação/investimento. Em ambos, a decisão exige conferir origem e ato de repasse; não basta classificar pela aparência física da obra.",
+    "- **CIT — Comissão Intergestores Tripartite:** âmbito nacional, envolvendo Ministério da Saúde, representação dos gestores estaduais e municipais.",
+    "- **CIB — Comissão Intergestores Bipartite:** âmbito estadual, pactuação entre estado e gestores municipais.",
+    "- **CIR — Comissão Intergestores Regional:** âmbito de região de saúde, com articulação das decisões regionais e observância das diretrizes da CIB."
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm",
+    "https://www.gov.br/saude/pt-br/composicao/saps/esf/faq-novo-modelo-de-cofinanciamento-federal-da-aps",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10994_14_05_2026.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/siops",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Mulher de 63 anos com infarto com supradesnivelamento chega a uma UBS em cidade sem hemodinâmica. A UBS realiza reconhecimento/estabilização e aciona rede; hospital local pode oferecer recursos iniciais, mas a estratégia de reperfusão depende da rede e tempos disponíveis. A decisão de manter ambulância regulada, transporte, centro de referência e prontuário transferível é gestão regional. Se cada município tentasse montar serviço de alta complexidade isolado, a escala inadequada poderia reduzir qualidade e ampliar custos. Não é a complexidade tecnológica que define valor da APS: acesso, longitudinalidade e coordenação são competências própria"
+    },
+    {
+      "text": "| Instrumento | Horizonte | Finalidade | Pergunta central | |---|---|---|---| | Plano de Saúde | Geralmente 4 anos | Diretrizes, objetivos, metas e indicadores de política | O que pretendemos transformar? | | Programação Anual de Saúde (PAS) | Um ano | Anualizar ações, metas e previsão de recursos | O que faremos e financiaremos neste exercício? | | Relatório Quadrimestral de Prestação de Contas (RQPC/RDQA conforme esfera) | Quadrimestral | Acompanhar execução e demonstrar resultados parciais | O que ocorreu em cada período? | | Relatório Anual de Gestão (RAG) | Anual | Demonstrar execução da PAS, resultados e redirecionamentos | O que entreg"
+    },
+    {
+      "text": "O Plano de Saúde organiza compromissos de médio prazo; a PAS transforma objetivos em ações e recursos anuais; relatórios acompanham execução e permitem correção; RAG fecha avaliação anual. Não é adequado elaborar primeiro orçamento de ação desconectada do plano e depois inventar meta para justificar despesa. O planejamento precisa considerar diagnóstico de situação, perfil demográfico, indicadores epidemiológicos, capacidade instalada, participação social e necessidades da região."
+    },
+    {
+      "text": "Planejamento ascendente parte de diagnóstico de necessidades locais e pactuação progressiva, não se resume a diretriz pronta enviada de Brasília. O Decreto 7.508 prevê articulação do planejamento municipal, estadual e nacional e relevância do mapa da saúde. Região de Saúde precisa considerar possibilidades de atendimento e fluxos entre municípios. Consórcios e cooperação podem otimizar acesso, mas demandam instrumentos legais e controle."
+    },
+    {
+      "text": "Uma região avalia ampliar rastreamento e tratamento oportuno de hipertensão ou comprar equipamento diagnóstico sofisticado com baixa utilização projetada. Avaliar prevalência, morbidade evitável, número de pessoas beneficiadas, capacidade de acompanhamento, custo de manutenção e acesso territorial ajuda a decidir. O equipamento pode ser necessário em centro de referência, mas sua compra não é automaticamente melhor do que estratégias de APS — tampouco a APS substitui tratamento especializado. O planejamento deve identificar complementaridade entre níveis de atenção."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

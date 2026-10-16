@@ -1,0 +1,714 @@
+{
+  "key": "cervicites-doenca-inflamatoria-pelvica",
+  "kind": "apostila-html",
+  "path": "apostilas/cervicites-doenca-inflamatoria-pelvica/index.html",
+  "html_path": "apostilas/cervicites-doenca-inflamatoria-pelvica/index.html",
+  "title": "Cervicites e Doença Inflamatória Pélvica",
+  "source_sha256": "c4f2864f2ba28f0801a699139bfc3b135012982b3016268710c4f0bccb8db8be",
+  "html_sha256": "c4f2864f2ba28f0801a699139bfc3b135012982b3016268710c4f0bccb8db8be",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Fisiopatologia em camadas",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Barreiras normais",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Chlamydia trachomatis",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Neisseria gonorrhoeae",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Mycoplasma genitalium",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Ascensão para DIP",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Cervicite: reconhecer o colo inflamado",
+      "section": "cervicite"
+    },
+    {
+      "tag": "H3",
+      "title": "Como diferenciar na prática",
+      "section": "cervicite"
+    },
+    {
+      "tag": "H2",
+      "title": "3. História, exame e diagnóstico",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "História dirigida",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Exame",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Tratamento da cervicite",
+      "section": "tratamento-cervicite"
+    },
+    {
+      "tag": "H2",
+      "title": "5. DIP: espectro e apresentação",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que doença leve ainda pode deixar sequela?",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Microrganismos além de clamídia e gonococo",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Fitz-Hugh–Curtis",
+      "section": "dip"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Critérios diagnósticos e exames na DIP",
+      "section": "criterios"
+    },
+    {
+      "tag": "H3",
+      "title": "Brasil",
+      "section": "criterios"
+    },
+    {
+      "tag": "H3",
+      "title": "CDC",
+      "section": "criterios"
+    },
+    {
+      "tag": "H3",
+      "title": "Imagem",
+      "section": "criterios"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando o exame “normal” ainda não tranquiliza",
+      "section": "criterios"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Tratamento da DIP",
+      "section": "tratamento-dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Ambulatorial",
+      "section": "tratamento-dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando internar",
+      "section": "tratamento-dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Parenteral",
+      "section": "tratamento-dip"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Complicações e controle de foco",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Abscesso tubo-ovariano",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando pensar em drenagem ou cirurgia",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que o abscesso é mais perigoso",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Sequelas",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Situações especiais: por que a conduta muda",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "DIU",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Alergia a penicilina/cefalosporina",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescentes",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Abscesso tubo-ovariano",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Mycoplasma genitalium",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Resumo operacional",
+      "section": "especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Seguimento, parcerias e prevenção",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H3",
+      "title": "Falha terapêutica: roteiro prático",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "Casos de decisão clínica: da cervicite ao controle de foco",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — Cervicite com mucopus, mas sem dor pélvica",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — Dor pélvica discreta, afebril, ultrassom normal",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — Dor unilateral intensa e teste de gravidez positivo",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — Massa anexial complexa e febre: abscesso tubo-ovariano",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — DIU e DIP: retirar no diagnóstico?",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — Retorno após 72 horas: a paciente piorou",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 7 — Parceiro assintomático e risco de reinfecção",
+      "section": "casos-decisoes-urgencia-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Aprofundamento: infecção ascendente, diagnóstico subclínico e falha terapêutica",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "NAAT positivo no colo não descreve toda a pelve",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "DIP subclínica e endometrite",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Abscesso tubo-ovariano",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Falha após 72 horas: organize as hipóteses",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Parceiros e reinfecção",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "section": "editorial-depth-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H3",
+      "title": "Cervicite por etiologia",
+      "section": "editorial-depth-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H3",
+      "title": "DIP e sequelas",
+      "section": "editorial-depth-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Cervicite e doença inflamatória pélvica — a infecção em camadas, do epitélio à tuba",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.1 Clamídia: como uma infecção discreta pode lesar as tubas",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.2 Gonococo: inflamação endocervical e implicações de resistência",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.3 Mycoplasma genitalium e o problema da infecção persistente",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.4 Por que a DIP é um diagnóstico clínico de limiar baixo",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.5 Por que o tratamento da DIP cobre múltiplos microrganismos",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.6 Abscesso tubo-ovariano: quando a infecção vira problema anatômico",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.7 As 72 horas de seguimento e o significado da resposta clínica",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.8 Dois casos para não confundir cervicite e DIP",
+      "section": "cervicite-dip-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "section": "capitulos-livro-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H3",
+      "title": "Clamídia, gonococo e Mycoplasma",
+      "section": "capitulos-livro-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H3",
+      "title": "DIP como diagnóstico clínico",
+      "section": "capitulos-livro-cervicites-doenca-inflamatoria-pelvica"
+    },
+    {
+      "tag": "H3",
+      "title": "Internação e seguimento",
+      "section": "capitulos-livro-cervicites-doenca-inflamatoria-pelvica"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1102
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 908
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "1. Fisiopatologia em camadas",
+      "chars": 2633
+    },
+    {
+      "id": "cervicite",
+      "title": "2. Cervicite: reconhecer o colo inflamado",
+      "chars": 3213
+    },
+    {
+      "id": "diagnostico",
+      "title": "3. História, exame e diagnóstico",
+      "chars": 1930
+    },
+    {
+      "id": "tratamento-cervicite",
+      "title": "4. Tratamento da cervicite",
+      "chars": 1362
+    },
+    {
+      "id": "dip",
+      "title": "5. DIP: espectro e apresentação",
+      "chars": 1592
+    },
+    {
+      "id": "criterios",
+      "title": "6. Critérios diagnósticos e exames na DIP",
+      "chars": 2075
+    },
+    {
+      "id": "tratamento-dip",
+      "title": "7. Tratamento da DIP",
+      "chars": 1416
+    },
+    {
+      "id": "complicacoes",
+      "title": "8. Complicações e controle de foco",
+      "chars": 2125
+    },
+    {
+      "id": "especiais",
+      "title": "9. Situações especiais: por que a conduta muda",
+      "chars": 7029
+    },
+    {
+      "id": "seguimento",
+      "title": "10. Seguimento, parcerias e prevenção",
+      "chars": 1312
+    },
+    {
+      "id": "casos-decisoes-urgencia-2026",
+      "title": "Casos de decisão clínica: da cervicite ao controle de foco",
+      "chars": 7277
+    },
+    {
+      "id": "revisao",
+      "title": "11. Revisão de alto rendimento",
+      "chars": 969
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "12. Aprofundamento: infecção ascendente, diagnóstico subclínico e falha terapêutica",
+      "chars": 3405
+    },
+    {
+      "id": "editorial-depth-cervicites-doenca-inflamatoria-pelvica",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 789
+    },
+    {
+      "id": "cervicite-dip-40k",
+      "title": "13. Cervicite e doença inflamatória pélvica — a infecção em camadas, do epitélio à tuba",
+      "chars": 10654
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 655
+    },
+    {
+      "id": "capitulos-livro-cervicites-doenca-inflamatoria-pelvica",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 892
+    }
+  ],
+  "references": [
+    "Brasil. Ministério da Saúde. PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis. Anexo alterado em 04/07/2024; página oficial atualizada em 22/01/2025.",
+    "CDC. Urethritis and Cervicitis — STI Treatment Guidelines.",
+    "CDC. Pelvic Inflammatory Disease — STI Treatment Guidelines.",
+    "CDC. Chlamydial Infections — STI Treatment Guidelines.",
+    "CDC. Gonococcal Infections Among Adolescents and Adults — STI Treatment Guidelines.",
+    "CDC. Mycoplasma genitalium — STI Treatment Guidelines.",
+    "Protocolo Brasileiro para Infecções Sexualmente Transmissíveis 2020: doença inflamatória pélvica. Epidemiologia e Serviços de Saúde, 2021."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "CDC, Public Health Image Library, registro 19141 ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=19141",
+      "in_references": false
+    },
+    {
+      "label": "CDC, Public Health Image Library, registro 18956 ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=18956",
+      "in_references": false
+    },
+    {
+      "label": "CDC, Public Health Image Library, registro 17367 ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=17367",
+      "in_references": false
+    },
+    {
+      "label": "PCDT de IST, anexo atualizado em 2024",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+      "in_references": false
+    },
+    {
+      "label": "Pelvic Inflammatory Disease — STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "in_references": false
+    },
+    {
+      "label": "Selected Practice Recommendations 2024 — DIU e DIP",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html",
+      "in_references": false
+    },
+    {
+      "label": "CDC — DIP, seguimento e reavaliação",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "in_references": false
+    },
+    {
+      "label": "Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "in_references": false
+    },
+    {
+      "label": "Pelvic Inflammatory Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "in_references": false
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/19141/19141_lores.jpg",
+      "alt": "Cervicite mucopurulenta",
+      "section": "cervicite",
+      "caption": "Cervicite mucopurulenta. Observe eritema periorificial e exsudato purulento. A aparência não identifica isoladamente o agente. Fonte: CDC, Public Health Image Library, registro 19141 ↗; crédito: CDC / Dr. Wiesner. Imagem histórica de domínio público, com atribuição da origem.",
+      "decorative": false
+    },
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/18956/18956_lores.jpg",
+      "alt": "Colo uterino normal: comparação",
+      "section": "diagnostico",
+      "caption": "Colo uterino normal: comparação. Compare aspectos habituais do colo com o exsudato e o eritema da cervicite. Fonte: CDC, Public Health Image Library, registro 18956 ↗; crédito: CDC / N. J. Fiumara, MD. Imagem histórica de domínio público, com atribuição da origem.",
+      "decorative": false
+    },
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/17367/17367_lores.jpg",
+      "alt": "Abscesso tubo-ovariano: aspecto intraoperatório",
+      "section": "complicacoes",
+      "caption": "Abscesso tubo-ovariano: aspecto intraoperatório. Imagem operatória de uma complicação potencialmente grave da DIP; correlacionar com clínica e ultrassonografia. Fonte: CDC, Public Health Image Library, registro 17367 ↗; crédito: CDC / Dr. Curran. Imagem histórica de domínio público, com atribuição da origem.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 10,
+  "paragraphs": 106,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "mycoplasma genitalium",
+      "sections": [
+        "fisiopatologia",
+        "especiais"
+      ]
+    },
+    {
+      "title": "abscesso tubo-ovariano",
+      "sections": [
+        "complicacoes",
+        "especiais",
+        "aprofundamento-2026"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 19,
+      "status": "approved",
+      "section": "cervicite",
+      "source_license": "Domínio público; atribuir CDC e fonte",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/19141/19141_lores.jpg"
+    },
+    {
+      "id": 21,
+      "status": "approved",
+      "section": "cervicite",
+      "source_license": "Domínio público; atribuir CDC",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/19142/19142_lores.jpg"
+    },
+    {
+      "id": 22,
+      "status": "approved",
+      "section": "cervicite",
+      "source_license": "CDC; conferir termos de uso na página",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/6495/6495_lores.jpg"
+    },
+    {
+      "id": 23,
+      "status": "approved",
+      "section": "diagnostico",
+      "source_license": "Domínio público; atribuir CDC",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/18956/18956_lores.jpg"
+    },
+    {
+      "id": 29,
+      "status": "approved",
+      "section": "complicacoes",
+      "source_license": "Domínio público; atribuir CDC e fonte",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/17367/17367_lores.jpg"
+    },
+    {
+      "id": 30,
+      "status": "approved",
+      "section": "complicacoes",
+      "source_license": "Domínio público; atribuir CDC e fonte",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/17605/17605_lores.jpg"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "tratamento-cervicite",
+      "text": "A estratégia depende do risco, disponibilidade de testes e garantia de retorno. No PCDT brasileiro, a abordagem sindrômica de cervicite com cobertura para gonococo/clamídia utiliza ceftriaxona 500 mg IM dose única + azitromicina 1 g VO dose única. No CDC, o esquema recomendado para cervicite é doxiciclina 100 mg VO 12/12 h por 7 dias, acrescentando cobertura para gonococo quando indicada.",
+      "pattern": 0
+    },
+    {
+      "section": "tratamento-dip",
+      "text": "O CDC apresenta ceftriaxona 1 g IV 24/24 h + doxiciclina 100 mg 12/12 h + metronidazol 500 mg 12/12 h. O PCDT brasileiro disponibilizado traz tabela própria; na internação, seguir protocolo institucional e não misturar doses de diretrizes diferentes.",
+      "pattern": 0
+    },
+    {
+      "section": "especiais",
+      "text": "Por que muda? O DIU frequentemente é culpado pelo quadro, mas o risco adicional de DIP relacionado à inserção se concentra principalmente nas primeiras 3 semanas. Depois disso, o simples fato de portar DIU não significa infecção persistente causada pelo dispositivo.",
+      "pattern": 0
+    },
+    {
+      "section": "especiais",
+      "text": "Como conduzir: não rastrear universalmente assintomáticas. Testar mulheres com cervicite recorrente e considerar teste na DIP persistente/recorrente. Se M. genitalium for detectado em contexto de DIP, o CDC cita moxifloxacino 400 mg VO 1x/dia por 14 dias como regime eficaz contra o agente.",
+      "pattern": 0
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "O agente não possui parede celular, portanto penicilinas e cefalosporinas são ineficazes. Outro problema é a seleção rápida de resistência a macrolídeos: azitromicina 1 g isolada pode selecionar resistência e não deve ser usada como tratamento específico. Quando há disponibilidade, estratégias guiadas por teste de resistência são preferíveis.",
+      "pattern": 1
+    },
+    {
+      "section": "cervicite",
+      "text": "Os dois achados que mais sustentam cervicite ao exame são exsudato purulento ou mucopurulento saindo do canal endocervical e sangramento endocervical facilmente provocado ao contato suave. Nenhum deles identifica o agente sozinho, e a paciente pode estar assintomática. Por isso, o exame visual deve sempre ser integrado à história sexual, à presença de dor pélvica, aos testes etiológicos e à pesquisa de diagnósticos concorrentes.",
+      "pattern": 1
+    },
+    {
+      "section": "tratamento-cervicite",
+      "text": "A estratégia depende do risco, disponibilidade de testes e garantia de retorno. No PCDT brasileiro, a abordagem sindrômica de cervicite com cobertura para gonococo/clamídia utiliza ceftriaxona 500 mg IM dose única + azitromicina 1 g VO dose única. No CDC, o esquema recomendado para cervicite é doxiciclina 100 mg VO 12/12 h por 7 dias, acrescentando cobertura para gonococo quando indicada.",
+      "pattern": 1
+    },
+    {
+      "section": "dip",
+      "text": "DIP inclui combinações de endometrite, salpingite, abscesso tubo-ovariano e peritonite pélvica. Aproximadamente metade dos casos agudos em estudos citados pelo CDC apresenta teste positivo para clamídia ou gonococo; isso reforça sua natureza polimicrobiana e explica por que um NAAT cervical negativo não exclui doença superior.",
+      "pattern": 1
+    },
+    {
+      "section": "mapa-mental",
+      "text": "Cervicite e DIP não usam o mesmo esquema. Na DIP ambulatorial: ceftriaxona + doxiciclina + metronidazol.",
+      "pattern": 2
+    },
+    {
+      "section": "tratamento-dip",
+      "text": "Brasil e CDC convergem nesse núcleo terapêutico. O metronidazol amplia cobertura anaeróbia e trata vaginose coexistente; não deve ser apresentado como componente “opcional de rotina” na DIP.",
+      "pattern": 2
+    },
+    {
+      "section": "tratamento-dip",
+      "text": "O CDC apresenta ceftriaxona 1 g IV 24/24 h + doxiciclina 100 mg 12/12 h + metronidazol 500 mg 12/12 h. O PCDT brasileiro disponibilizado traz tabela própria; na internação, seguir protocolo institucional e não misturar doses de diretrizes diferentes.",
+      "pattern": 2
+    },
+    {
+      "section": "casos-decisoes-urgencia-2026",
+      "text": "Brasil × CDC: para diagnóstico sindrômico formal, o PCDT brasileiro lista três critérios maiores associados a um menor, ou critério elaborado; porém a decisão segura de tratar não deve transformar uma regra classificatória em atraso diante de forte suspeita clínica. Em qualquer abordagem, excluir gestação ectópica, apendicite, torção e outras urgências compatíveis. O exame cervical negativo para clamídia ou gonococo não exclui infecção do trato genital superior. Quando elegível para tratamento ambulatorial, o núcleo terapêutico estudado é ceftriaxona, doxiciclina e metronidazol pelo tempo definido, com reavaliação organizada.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "resumo-prova",
+      "text": "Cervicite é inflamação do colo uterino, caracterizada principalmente por exsudato endocervical purulento/mucopurulento e/ou sangramento facilmente provocado. DIP é um espectro de infecção/inflamação do trato genital superior que pode envolver endométrio, tubas, ovários e peritônio. O ponto decisivo é reconhecer cedo quando a doença deixou de ser apenas cervical."
+    },
+    {
+      "section": "mapa-mental",
+      "text": "Use este mapa para separar infecção do trato inferior de doença ascendente e decidir quando o raciocínio deve migrar de cervicite para DIP."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 3
+  }
+}

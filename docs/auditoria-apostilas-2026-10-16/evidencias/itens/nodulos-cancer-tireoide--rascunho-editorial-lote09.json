@@ -1,0 +1,167 @@
+{
+  "key": "nodulos-cancer-tireoide--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 162 | Nódulos e câncer de tireoide",
+  "source_sha256": "b7bcb8d87582d848b66dee68190b97ba419844b22de216a191343d14db98a363",
+  "chars_estimated": 11415,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 162 | Nódulos e câncer de tireoide",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "1. Objetivos",
+      "level": 2
+    },
+    {
+      "line": 9,
+      "title": "2. Fundamentos e epidemiologia",
+      "level": 2
+    },
+    {
+      "line": 14,
+      "title": "3. História, exame e sinais de alarme",
+      "level": 2
+    },
+    {
+      "line": 19,
+      "title": "4. Ultrassonografia e ACR TI-RADS",
+      "level": 2
+    },
+    {
+      "line": 32,
+      "title": "5. Citopatologia Bethesda e decisões",
+      "level": 2
+    },
+    {
+      "line": 41,
+      "title": "6. Neoplasias e conduta",
+      "level": 2
+    },
+    {
+      "line": 44,
+      "title": "Cirurgia conforme ATA 2025 (carcinoma diferenciado)",
+      "level": 3
+    },
+    {
+      "line": 49,
+      "title": "Terapia complementar e seguimento",
+      "level": 3
+    },
+    {
+      "line": 52,
+      "title": "7. Populações especiais",
+      "level": 2
+    },
+    {
+      "line": 55,
+      "title": "8. Algoritmo LURIA",
+      "level": 2
+    },
+    {
+      "line": 58,
+      "title": "9. Quatro casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 67,
+      "title": "10. Seis questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 80,
+      "title": "11. Referências centrais",
+      "level": 2
+    },
+    {
+      "line": 87,
+      "title": "12. Controle editorial / pendências",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. INCA. **Câncer da tireoide — versão para profissionais de saúde.** https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/tireoide/versao-para-profissionais-de-saude",
+    "2. Ringel MD et al. **2025 American Thyroid Association Management Guidelines for Adult Patients with Differentiated Thyroid Cancer.** Thyroid. 2025;35(8):841–985. https://pmc.ncbi.nlm.nih.gov/articles/PMC13090833/",
+    "3. American Thyroid Association. **2025 ATA differentiated thyroid cancer guidelines: extent of surgery.** https://www.thyroid.org/patient-thyroid-information/ct-for-patients/december-2025/vol-18-issue-12-p-4-5/",
+    "4. Tessler FN et al. **ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper.** J Am Coll Radiol. 2017;14:587–595. https://doi.org/10.1016/j.jacr.2017.01.046",
+    "5. Ali SZ et al. **The 2023 Bethesda System for Reporting Thyroid Cytopathology.** Thyroid. 2023;33:1039–1044. https://doi.org/10.1089/thy.2023.0141"
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/tireoide/versao-para-profissionais-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090833/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.thyroid.org/patient-thyroid-information/ct-for-patients/december-2025/vol-18-issue-12-p-4-5/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jacr.2017.01.046",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1089/thy.2023.0141",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 1,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Caso 2 (nódulo quente):** homem de 57 anos, palpitações, TSH suprimido e nódulo de 2 cm. Investigar tireotoxicose e autonomia funcional antes de seguir fluxo de PAAF orientado apenas por tamanho. *Por que importa:* altera diagnóstico diferencial e tratamento.",
+      "pattern": 0
+    },
+    {
+      "text": "**Caso 3 (Bethesda IV):** mulher de 49 anos, nódulo sólido de 2,7 cm e citologia neoplasia folicular. Não rotular de carcinoma folicular sem avaliação histológica da invasão. Discutir lobectomia diagnóstica ou testes moleculares se pertinentes. *Por que importa:* distinção clássica entre citologia e histologia.",
+      "pattern": 0
+    },
+    {
+      "text": "**Caso 4 (papilífero localizado):** paciente de 33 anos, carcinoma papilífero unilateral de 1,5 cm, intratireoidiano, sem linfonodos ou metástases. Pela ATA 2025, lobectomia é a cirurgia inicial recomendada salvo indicação contrária individual. *Por que importa:* nem todo câncer exige tireoidectomia total.",
+      "pattern": 0
+    },
+    {
+      "text": "TSH é exame funcional inicial. Se estiver suprimido, considerar avaliação do hipertireoidismo e **cintilografia** para determinar se há nódulo hiperfuncionante, quando não contraindicada. Nódulo comprovadamente hiperfuncionante tem baixa probabilidade de câncer e em geral não exige PAAF de rotina, mas o contexto clínico e ultrassonográfico importa. TSH normal ou alto conduz à estratificação predominantemente ultrassonográfica. Tireoglobulina sérica **não diferencia** adequadamente nódulo benigno e maligno na avaliação inicial.",
+      "pattern": 1
+    },
+    {
+      "text": "Os limiares não devem substituir julgamento clínico em pacientes com linfonodos suspeitos, invasão, alto risco ou sintomas relevantes. Critérios e intervalos de seguimento devem ser aplicados conforme relatório ACR e contexto individual; crescimento, isoladamente, não comprova câncer.",
+      "pattern": 1
+    },
+    {
+      "text": "- I: avaliar repetição guiada por ultrassom, considerando padrão de suspeição. - II: acompanhar por risco ultrassonográfico e clínica; discordância forte pode exigir reavaliação. - III: repetir PAAF, eventual análise molecular ou considerar cirurgia de acordo com risco. - IV: discutir cirurgia diagnóstica versus testes adicionais; **a PAAF não demonstra invasão capsular/vascular**, necessária ao diagnóstico histológico de carcinoma folicular. - V e VI: encaminhar para definição de extensão tumoral e planejamento especializado; malignidade não determina automaticamente tireoidectomia total.",
+      "pattern": 1
+    },
+    {
+      "text": "**Caso 4 (papilífero localizado):** paciente de 33 anos, carcinoma papilífero unilateral de 1,5 cm, intratireoidiano, sem linfonodos ou metástases. Pela ATA 2025, lobectomia é a cirurgia inicial recomendada salvo indicação contrária individual. *Por que importa:* nem todo câncer exige tireoidectomia total.",
+      "pattern": 2
+    },
+    {
+      "text": "**Q5.** Carcinoma papilífero de 1,4 cm unilateral, cN0M0, sem extensão: A) total obrigatória B) lobectomia inicial recomendada C) apenas radioiodo D) dissecção cervical radical rotineira. **B.** ATA 2025 favorece lobectomia; outras opções implicam excesso ou tratamento inadequado. *Conceito:* cirurgia guiada por risco.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Folículos tireoidianos produzem T4/T3; células parafoliculares, calcitonina. Tumores papilíferos e foliculares vêm de células foliculares; medulares, de células C; anaplásicos são agressivos e indiferenciados. O papilífero comumente dissemina-se a linfonodos cervicais; o folicular pode disseminar-se hematogenamente."
+    },
+    {
+      "text": "TSH é exame funcional inicial. Se estiver suprimido, considerar avaliação do hipertireoidismo e **cintilografia** para determinar se há nódulo hiperfuncionante, quando não contraindicada. Nódulo comprovadamente hiperfuncionante tem baixa probabilidade de câncer e em geral não exige PAAF de rotina, mas o contexto clínico e ultrassonográfico importa. TSH normal ou alto conduz à estratificação predominantemente ultrassonográfica. Tireoglobulina sérica **não diferencia** adequadamente nódulo benigno e maligno na avaliação inicial."
+    }
+  ]
+}

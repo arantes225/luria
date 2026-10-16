@@ -1,0 +1,154 @@
+{
+  "sha": "c16c44d1b0b3357a5f518f499e6c410b902c78d5",
+  "path": "apostilas/_rascunhos/lote-08-aula-174-complemento-02-conduta-e-casos.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--c16c44d1b0",
+  "title": "LURIA | Aula 174 — Complemento 02: manejo das massas anexiais benignas e indeterminadas",
+  "format": ".md",
+  "chars_estimated": 25878,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 174 — Complemento 02: manejo das massas anexiais benignas e indeterminadas"
+    },
+    {
+      "title": "0. Escopo, confronto e razão da ampliação"
+    },
+    {
+      "title": "A pergunta clínica correta"
+    },
+    {
+      "title": "1. Cisto verdadeiramente simples: qualificar antes de escolher intervalo"
+    },
+    {
+      "title": "SRU 2019 versus ACR O-RADS US v2022: fontes relacionadas, mas não idênticas"
+    },
+    {
+      "title": "Exemplo de raciocínio com o mesmo tamanho"
+    },
+    {
+      "title": "2. Achados de padrão benigno que não são cistos simples"
+    },
+    {
+      "title": "Cisto hemorrágico típico"
+    },
+    {
+      "title": "Endometrioma"
+    },
+    {
+      "title": "Teratoma cístico maduro"
+    },
+    {
+      "title": "Cisto paraovariano, hidrossalpinge e cisto de inclusão peritoneal"
+    },
+    {
+      "title": "3. Laudo que permite decidir: checklist do examinador e do solicitante"
+    },
+    {
+      "title": "O-RADS e IOTA não são sinônimos"
+    },
+    {
+      "title": "4. Quando o algoritmo da massa incidental deve ser interrompido"
+    },
+    {
+      "title": "5. Cirurgia conservadora, preservação de fertilidade e decisão compartilhada"
+    },
+    {
+      "title": "6. Quatro casos adicionais para completar lacunas de manejo"
+    },
+    {
+      "title": "Caso 9 — O mesmo cisto, três caminhos"
+    },
+    {
+      "title": "Caso 10 — “Cisto hemorrágico” novo oito anos após menopausa"
+    },
+    {
+      "title": "Caso 11 — Endometrioma e decisão de fertilidade"
+    },
+    {
+      "title": "Caso 12 — Doppler “normal” com suspeita de torção"
+    },
+    {
+      "title": "7. Seis questões extras comentadas (autoria LURIA)"
+    },
+    {
+      "title": "8. Algoritmo de uso na prática — sem “tamanho mágico”"
+    },
+    {
+      "title": "9. Camada visual candidata — NÃO INSERIR NO HTML ANTES DO ADMIN"
+    },
+    {
+      "title": "10. Fontes rastreáveis desta ampliação e limites"
+    }
+  ],
+  "reference_entries": [
+    "**Não fundir os dois sistemas em uma tabela prescritiva única.** As faixas do SRU são resultado de consenso para achados incidentais, enquanto O-RADS agrega categorias e manejo padronizado por léxico específico. Um serviço deve adotar e documentar a tabela de referência efetivamente utilizada. Quando a descrição não suporta enquadramento seguro, um exame melhor é mais importante que uma data de controle decorada. A decisão clínica pode divergir da vigilância radiológica por sintomas, alto risco hereditário, gestação, preferência informada e acesso a exame qualificado.",
+    "- **Cisto A:** 4,2 cm, menacme, bem visualizado, anecoico, sem sintomas ou sinais suspeitos. Na tabela SRU, costuma bastar registro sem US de seguimento rotineiro. O-RADS v2022 também o classifica no espectro quase certamente benigno caso cumpra todos os critérios.",
+    "- **Cisto B:** 4,2 cm, pós-menopausa, mesma morfologia, risco habitual. Tamanho isolado continua longe de confirmar câncer. A comparação SRU/ACR deve ser declarada, e vigilância ultrassonográfica pode ser indicada dependendo da tabela e da caracterização.",
+    "- **Cisto C:** 4,2 cm, menacme, dor súbita com vômitos. O valor do tamanho para seguimento **não resolve** a suspeita de torção; priorizar avaliação urgente.",
+    "- **Cisto D:** 4,2 cm, laudo menciona “cisto provavelmente simples”, mas não visualiza parede posterior. A pergunta passa a ser **como completar a caracterização**, não quando “deixar voltar em um ano”.",
+    "**Exemplo de laudo insuficiente:** “Cisto de ovário complexo de 6 cm. Correlacionar.” Não informa se há papilas, septos, solidificação, fluxo ou indicação de avaliação adicional; o correto é pedir caracterização mais completa.",
+    "**Exemplo didático original, ainda sem imagem real:** “Massa unilocular anexial direita, 4,1 cm, anecoica, parede fina e regular, sem componente sólido, sem vascularização interna identificada; parede integralmente visualizada, ovário contralateral habitual, sem líquido livre significativo.” Este é um modelo de *descrição*, não um laudo de pessoa real. A interpretação final depende de sintomas e menopausa. Nunca criar casos fictícios e rotulá-los como “ultrassom real aprovado”.",
+    "**Torção anexial.** Dor unilateral súbita, por vezes intermitente, com náuseas/vômitos, merece consideração imediata. Doppler com fluxo arterial presente **não exclui** torção por irrigação dupla e torção intermitente. Em adolescente, o ACOG enfatiza avaliação cirúrgica oportuna quando a suspeita é relevante, com destorção e preservação ovariana sempre que tecnicamente possível. A aparência escurecida do ovário isoladamente não autoriza ooforectomia automática. Teste de gestação conforme idade e exposição e reavaliação cirúrgica não devem ser atrasados para cumprir uma tabela de O-RADS.",
+    "**Gestação ectópica.** Massa anexial em pessoa potencialmente gestante, sobretudo com dor/sangramento, exige teste de gravidez. US inconclusivo e β-hCG isolado não devem levar a diagnóstico definitivo precipitado; estabilidade hemodinâmica e seguimento protocolado importam. Suspeita de ectópica rota/choque prioriza ressuscitação e cirurgia urgente.",
+    "**Abscesso tubo-ovariano.** Febre, dor pélvica, sinais de peritonite, corrimento ou fatores de risco infeccioso podem acompanhar coleção anexial complexa. A decisão é pela gravidade séptica e resposta terapêutica, com suporte, antimicrobianos protocolados e possível drenagem/cirurgia em falha ou complicação. Não usar CA-125 elevado como justificativa para ignorar infecção.",
+    "**Hemorragia/ruptura.** A existência de cisto típico na véspera não impede hemoperitônio. Pressão, frequência, perfusão, hemoglobina seriada quando indicada e evolução clínica orientam necessidade de intervenção. Reavaliar causas não ginecológicas quando dor não combina com imagem.",
+    "**Apresentação:** paciente de 26 anos, assintomática, US transvaginal incidental descreve cisto simples de 4,3 cm, plenamente visualizado. Outra paciente de 64 anos apresenta o mesmo tamanho e morfologia; uma terceira de 26 anos tem dor aguda unilateral e vômitos.",
+    "**Hipótese e interpretação:** nas duas primeiras, a aparência é muito favorável à benignidade, mas a regra de seguimento depende de menopausa, protocolo e qualidade da imagem. Na primeira, SRU e O-RADS geralmente dispensam controle rotineiro. Na segunda, é necessário aplicar especificamente recomendações pós-menopausa do sistema adotado e contexto clínico. Na terceira, urgência por possível torção supera o manejo incidental.",
+    "**Conduta e por que importa:** documentar sistema, esclarecer sinais de alarme e respeitar avaliação clínica. **O mesmo número de centímetros não corresponde à mesma decisão.**",
+    "**Apresentação:** mulher de 63 anos, menopausa há oito anos, sem sangramento vaginal, US informa lesão heterogênea com ecos internos e sugere “cisto hemorrágico funcional”.",
+    "**Hipótese e raciocínio:** o rótulo não combina com fisiologia ovulatória pós-menopausa tardia. É necessário revisar imagem e usar descritores objetivos: área sólida? papila? perfusão interna? padrão de sangue versus endometrioma versus neoplasia? CA-125 pode complementar avaliação especializada, sem confirmar diagnóstico.",
+    "**Conduta:** solicitar revisão especializada e/ou RM adequada, estratificar risco e encaminhar conforme achados; não acompanhar como se fosse sangramento de corpo lúteo. **O motivo é que a certeza radiológica não pode ser maior que a plausibilidade clínica.**",
+    "**Apresentação:** mulher de 33 anos, infertilidade, endometrioma unilateral típico de 4,8 cm, dor leve controlada, sem papilas nem vascularização suspeita, planejamento de reprodução assistida.",
+    "**Raciocínio:** remover um endometrioma pode reduzir reserva ovariana; a evidência ESHRE não favorece cirurgia rotineira apenas para melhorar nascidos vivos antes da reprodução assistida. Diagnóstico, dor, acesso a folículos, outras causas de infertilidade e reserva ovariana devem ser avaliados.",
+    "**Conduta:** decidir conjuntamente com reprodução humana/ginecologia; observar ou operar por indicação específica, após explicar benefícios e riscos. **A pergunta não é “todo cisto acima de 4 cm opera?”, mas “qual benefício individual se busca com a cirurgia?”.**",
+    "**Apresentação:** adolescente de 15 anos com dor pélvica unilateral abrupta, vômitos e ovário aumentado com folículos periféricos; US apresenta algum fluxo arterial.",
+    "**Hipótese:** torção anexial permanece plausível apesar do Doppler; não há teste isolado seguro para excluí-la. Diferenciar ectópica quando possível, apendicite, cálculo e outras emergências, sem protelar cirurgia em suspeita relevante.",
+    "**Conduta:** analgesia, suporte, avaliação cirúrgica imediata; se torção confirmada, priorizar destorção/preservação quando viável. **Por que importa:** tratar “Doppler positivo = não torceu” como regra causa perda ovariana evitável.",
+    "**Q15.** Paciente de 29 anos sem sintomas tem cisto de 4 cm perfeitamente simples e visível ao US, sem risco hereditário conhecido. Qual atitude melhor representa o consenso SRU 2019?  ",
+    "**Gabarito C.** *A* expõe a intervenção desnecessária; *B* confunde marcador inespecífico com prova de benignidade; *D* não acrescenta à morfologia já adequadamente caracterizada. **Minirrevisão:** o SRU separa “descrever” de “seguir” e orienta não transformar cisto simples pequeno em doença.",
+    "**Q16.** Em massa de 6 cm, o ultrassom não conseguiu visualizar toda a parede, mas o laudo conclui “cisto simples”. Melhor próximo passo?  ",
+    "**Gabarito B.** *A* e *C* fabricam certeza; *D* converte tamanho em indicação absoluta. **Minirrevisão:** informação ausente não é achado negativo.",
+    "**Q17.** Mulher na pós-menopausa tardia apresenta lesão descrita como “cisto hemorrágico funcional”. Qual erro principal?  ",
+    "**Gabarito D.** As alternativas A–C são possíveis métodos de esclarecimento, não erros. **Minirrevisão:** padrão hemorrágico novo após menopausa tardia precisa ser reavaliado pelo léxico, não aceito automaticamente como funcional.",
+    "**Q18.** Sobre endometrioma típico em mulher com reprodução assistida planejada:  "
+  ],
+  "external_urls": [
+    "https://cs.acr.org/-/media/ACR/Files/RADS/O-RADS/US-v2022/O-RADS--US-v2022-Assessment-Categories.pdf",
+    "https://pubs.rsna.org/doi/10.1148/radiol.230685",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019191354",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents",
+    "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Qualidade da imagem é parte do diagnóstico.** Em cistos grandes, a sonda transvaginal pode não demonstrar toda a parede; completar pela via abdominal e, se continuar indeterminado, consultar radiologista experiente e considerar RM. Não é apropriado registrar “O-RADS 2” apenas porque não se viu nódulo, se a limitação técnica impediu procurar o nódulo. Nesse caso, a dúvida precisa constar do laudo e orientar complemento."
+    },
+    {
+      "text": "| Pergunta | SRU 2019 — cisto simples bem caracterizado, assintomático, risco habitual | O-RADS US v2022 — estratificação por descrição ultrassonográfica | |---|---|---| | Premenopausa, até 3 cm | Achado fisiológico; em geral sem seguimento | Folículo fisiológico até 3 cm pode ser O-RADS 1 | | Premenopausa, acima de 3 até 5 cm | Descrever; em geral sem controle | Cisto simples >3–5 cm usualmente O-RADS 2, sem controle na tabela geral | | Premenopausa, acima de 5 cm | SRU propõe limiar para acompanhamento situado em >5–7 cm conforme caracterização | Para cisto simples >5 e <10 cm, tabela ACR indica seguimento US em 12 meses, com ressalvas | | "
+    },
+    {
+      "text": "Em pessoa em idade reprodutiva, o padrão homogêneo de ecos finos, semelhante a “vidro fosco”, pode sugerir endometrioma quando não há nódulos sólidos suspeitos. A conduta combina dor, infertilidade, idade, tamanho, mudança morfológica e reserva ovariana. **Não indicar cistectomia exclusivamente por existência do diagnóstico em toda paciente.** A cirurgia pode aliviar sintomas e melhorar anatomia em situações selecionadas, mas também retirar tecido ovariano saudável e reduzir reserva, sobretudo em doença bilateral ou intervenção repetida."
+    },
+    {
+      "text": "Na paciente que considera reprodução assistida, a diretriz ESHRE 2022 **não recomenda cirurgia rotineira prévia do endometrioma apenas para aumentar nascimento vivo**; outras indicações, como dor ou dificuldade de acesso a folículos, devem ser discutidas separadamente. Essa recomendação não equivale a proibir tratamento cirúrgico de massa suspeita. Antes de operar, documentar objetivos (analgesia, segurança diagnóstica, tratamento de massa atípica ou fertilidade) e explicar alternativas."
+    },
+    {
+      "text": "Um endometrioma diagnosticado *pela primeira vez* após menopausa não recebe a mesma tranquilidade diagnóstica que uma lesão típica estável em menacme. O O-RADS v2022 recomenda confirmar o diagnóstico com exame especializado, RM ou US em 2–3 meses; se não for retirado e permanecer típico, considerar vigilância em 12 e 24 meses segundo diretriz. Surgimento de papila/área vascularizada, alteração de aspecto ou sintomas progressivos invalida mera observação automática."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

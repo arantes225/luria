@@ -1,0 +1,364 @@
+{
+  "sha": "8bda22e02366a84bfc625adcca5e19f89ae0d893",
+  "path": "apostilas/_rascunhos/lote-11-aula-226-demencias.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--8bda22e023",
+  "title": "LURIA — Apostila 226: Demências e comprometimento cognitivo",
+  "format": ".md",
+  "chars_estimated": 78614,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 226: Demências e comprometimento cognitivo"
+    },
+    {
+      "title": "Controle editorial prévio: etapa zero"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. A síndrome antes do nome da doença"
+    },
+    {
+      "title": "1.1 O que significa comprometimento cognitivo?"
+    },
+    {
+      "title": "1.2 Delirium não é demência"
+    },
+    {
+      "title": "1.3 Declínio subjetivo e avaliações falsamente tranquilizadoras"
+    },
+    {
+      "title": "2. Bases de neuroanatomia funcional que ajudam a localizar"
+    },
+    {
+      "title": "2.1 Memória: registro, armazenamento e recuperação"
+    },
+    {
+      "title": "2.2 Função executiva em uma tarefa cotidiana"
+    },
+    {
+      "title": "3. Epidemiologia, riscos e prevenção"
+    },
+    {
+      "title": "4. História clínica: reconstruir a trajetória, não apenas o escore"
+    },
+    {
+      "title": "4.1 Sete perguntas que alteram o diagnóstico"
+    },
+    {
+      "title": "4.2 Instrumentos de triagem e suas limitações"
+    },
+    {
+      "title": "4.3 Exame físico e neurológico deliberado"
+    },
+    {
+      "title": "5. Investigação inicial com propósito"
+    },
+    {
+      "title": "5.1 Quando e quais exames?"
+    },
+    {
+      "title": "5.2 Sinais de alerta que modificam a urgência"
+    },
+    {
+      "title": "6. Doença de Alzheimer: raciocínio clínico e bases neuropatológicas"
+    },
+    {
+      "title": "6.1 A evolução funcional importa mais do que uma nota isolada"
+    },
+    {
+      "title": "7. Comprometimento cognitivo vascular e demência mista"
+    },
+    {
+      "title": "8. Corpos de Lewy e demência associada à doença de Parkinson"
+    },
+    {
+      "title": "9. Degeneração frontotemporal: quando o comportamento ou a linguagem precede a memória"
+    },
+    {
+      "title": "10. Causas tratáveis, mimetizadores e comorbidades"
+    },
+    {
+      "title": "10.1 Hidrocefalia de pressão normal não é uma tríade obrigatória"
+    },
+    {
+      "title": "10.2 Encefalopatia de Wernicke é emergência"
+    },
+    {
+      "title": "11. Declínio cognitivo rapidamente progressivo"
+    },
+    {
+      "title": "12. Tratamento integrado: objetivos realistas e decisão compartilhada"
+    },
+    {
+      "title": "12.1 Farmacoterapia sintomática na doença de Alzheimer — atenção ao PCDT Brasil 2025"
+    },
+    {
+      "title": "12.2 Sintomas comportamentais e psicológicos"
+    },
+    {
+      "title": "12.3 Segurança em casa e assistência longitudinal"
+    },
+    {
+      "title": "13. Fluxograma original de decisão"
+    },
+    {
+      "title": "14. Casos clínicos originais e comentados"
+    },
+    {
+      "title": "Caso 1 — \"A demência piorou de ontem para hoje\""
+    },
+    {
+      "title": "Caso 2 — \"O exame quase normal, mas as contas não fecham\""
+    },
+    {
+      "title": "Caso 3 — \"Ela vê crianças na sala e às vezes parece ausente\""
+    },
+    {
+      "title": "Caso 4 — \"Cai muito e não consegue iniciar os passos\""
+    },
+    {
+      "title": "15. Questões inéditas de prova comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "16. Matriz provisória de autossuficiência e auditoria"
+    },
+    {
+      "title": "16.1 Proposta de fila de imagens (NÃO APROVADAS)"
+    },
+    {
+      "title": "17. Referências científicas prioritárias (originais e verificáveis)"
+    },
+    {
+      "title": "Pendências antes de transformar em HTML publicado"
+    },
+    {
+      "title": "18. Aprofundamento clínico: separar desempenho cognitivo de funcionalidade"
+    },
+    {
+      "title": "18.1 O que a perda de uma atividade realmente significa?"
+    },
+    {
+      "title": "18.2 Quando a pessoa não reconhece o próprio déficit"
+    },
+    {
+      "title": "18.3 Um atendimento de 20 minutos com valor clínico"
+    },
+    {
+      "title": "19. Exame cognitivo por domínios: exemplos e interpretação"
+    },
+    {
+      "title": "19.1 Escores e escolaridade"
+    },
+    {
+      "title": "19.2 Como reconhecer um perfil amnésico de armazenamento"
+    },
+    {
+      "title": "19.3 Atividade cognitiva e estímulo funcional"
+    },
+    {
+      "title": "20. Raciocínio de neuroimagem: o que deve estar no pedido e no laudo"
+    },
+    {
+      "title": "20.1 Um exame, perguntas diferentes"
+    },
+    {
+      "title": "20.2 Por que não existe \"tomografia normal, logo não há demência\"?"
+    },
+    {
+      "title": "20.3 Biomarcadores de Alzheimer: três níveis distintos"
+    },
+    {
+      "title": "20.4 Hipóteses que exigem imagem prioritária"
+    },
+    {
+      "title": "21. Pacientes especiais e situações que exigem raciocínio adicional"
+    },
+    {
+      "title": "21.1 Demência de início jovem"
+    },
+    {
+      "title": "21.2 Pessoa muito idosa e frágil"
+    },
+    {
+      "title": "21.3 Deficiência sensorial e barreiras linguísticas"
+    },
+    {
+      "title": "21.4 Transtorno de sono, dor e polifarmácia"
+    },
+    {
+      "title": "21.5 Comprometimento cognitivo associado ao HIV"
+    },
+    {
+      "title": "21.6 Sífilis e suspeita de neurossífilis"
+    },
+    {
+      "title": "22. Condições neuropsiquiátricas difíceis: diferenciar sem simplificar"
+    },
+    {
+      "title": "22.1 Psicose, delírio e alucinação"
+    },
+    {
+      "title": "22.2 Apatia não é necessariamente depressão"
+    },
+    {
+      "title": "22.3 Insônia e inversão sono-vigília"
+    },
+    {
+      "title": "22.4 Agitação e comunicação"
+    },
+    {
+      "title": "23. Seguimento por cenários e medidas de desfecho"
+    },
+    {
+      "title": "23.1 Avaliação de resposta terapêutica não é só repetir MEEM"
+    },
+    {
+      "title": "23.2 Quando encaminhar"
+    },
+    {
+      "title": "23.3 Alta responsabilidade no aconselhamento"
+    },
+    {
+      "title": "24. Casos complementares que testam decisões distintas"
+    },
+    {
+      "title": "Caso 5 — Linguagem como primeiro sintoma"
+    },
+    {
+      "title": "Caso 6 — \"É só tristeza depois do luto?\""
+    },
+    {
+      "title": "Caso 7 — Queda em paciente anticoagulado"
+    },
+    {
+      "title": "Caso 8 — A conta está errada, mas ele lembra da conversa"
+    },
+    {
+      "title": "25. Questões complementares para raciocínio de prova"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "Questão 13"
+    },
+    {
+      "title": "Questão 14"
+    },
+    {
+      "title": "26. Checklist final de domínio por perguntas"
+    },
+    {
+      "title": "Notas de revisão de fontes em 15/10/2026"
+    }
+  ],
+  "reference_entries": [
+    "1. Brasil, Ministério da Saúde / CONITEC. **PCDT da doença de Alzheimer**, portaria conjunta de 27 de novembro de 2025. Portal oficial: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer (portal oficial conferido em 15/10/2026).",
+    "2. NICE. **Dementia: assessment, management and support for people living with dementia and their carers (NG97)**. https://www.nice.org.uk/guidance/ng97/chapter/Recommendations",
+    "3. Alzheimer's Association. **DETeCD-ADRD clinical practice guideline: diagnostic evaluation of suspected Alzheimer’s disease and related disorders**. https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.14333",
+    "4. McKeith IG et al. **Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium.** Neurology. 2017;89:88–100. https://pmc.ncbi.nlm.nih.gov/articles/PMC5496518/",
+    "5. American Academy of Neurology. **Practice guideline update summary: Mild cognitive impairment.** Neurology. 2018;90:126–135. https://www.neurology.org/doi/10.1212/WNL.0000000000004826",
+    "6. Livingston G et al. **Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission.** Lancet. 2024. https://doi.org/10.1016/S0140-6736(24)01296-0",
+    "- Expandir capítulos para pelo menos **60.000 caracteres verdadeiramente didáticos**, sem inflar.",
+    "- Conferir integralmente PCDT, doses, contraindicações, formulações e critérios e adicionar referências brasileiras para síndromes não Alzheimer.",
+    "- Construir figuras originais e selecionar imagens clínicas reais com licença **comprovada**, somente via Admin.",
+    "- Exercer teste de \"leitura do zero\" e resolver questões representativas usando somente o conteúdo com **âncoras internas**.",
+    "- Conferir bibliografia por afirmação, rotas dos links, revisão médica de segurança e layout desktop/PWA.",
+    "- Preservar o manuscrito original em branch editorial; **não fundir/deployar como versão final** sem aprovação.",
+    "---",
+    "**Atividades instrumentais de vida diária (AIVD)** incluem administração de dinheiro e medicamentos, compras, transporte, uso de dispositivos e organização da casa. Frequentemente são as primeiras a falhar. **Atividades básicas de vida diária (ABVD)** incluem higiene pessoal, continência, alimentação, mobilidade, banho e vestir-se; sua perda costuma se associar a doença mais avançada, mas também pode decorrer de doença motora, depressão ou fragilidade. Uma escala funcional precisa registrar o nível de ajuda necessário e o papel efetivo do problema cognitivo.",
+    "**Exemplo comparado:** um idoso com doença de Parkinson pode pedir ajuda para vestir-se porque apresenta rigidez e tremor, mantendo planejamento e compreensão das etapas. Outro pode movimentar braços normalmente e, ainda assim, colocar roupas em sequência inadequada por apraxia ou déficit executivo. O primeiro tem incapacidade motora; o segundo sugere incapacidade cognitiva. Essa distinção muda classificação e intervenção.",
+    "**Anosognosia** é consciência reduzida do comprometimento. Na doença de Alzheimer, o paciente pode afirmar que não esquece nada enquanto a família relata episódios recorrentes de deixar o fogão ligado. Isso não deve ser tratado como \"teimosia\" e tampouco autoriza retirar automaticamente o direito à participação nas decisões. Conduza entrevista com perguntas abertas e exemplos concretos, procure concordâncias e discordâncias, documente o relato do informante e estabeleça acordos de segurança proporcionais.",
+    "1. Três marcos temporais: última fase de autonomia íntegra, primeira alteração e situação atual.",
+    "2. Pergunta ao informante: \"O que ela fazia sozinha há um ano que hoje não consegue mais fazer, apesar de ter condições físicas para tentar?\".",
+    "3. Uma triagem cognitiva validada adequada à escolaridade, sem substituir juízo clínico.",
+    "4. Revisão de medicamentos de uso contínuo e recentes, em especial sedativos e anticolinérgicos.",
+    "5. Busca de delirium, déficit focal, marcha atípica e sintomas de segurança.",
+    "6. Planejamento de investigação e retorno documentados, com orientações imediatas de risco.",
+    "**Atrofia medial temporal** pode apoiar fenótipo amnésico, mas não prova depósito de amiloide. **Atrofia frontotemporal assimétrica** em pessoa com mudança comportamental ou APP torna DLFT mais provável; não exclui etiologia Alzheimer em variante de linguagem. **Lesões subcorticais extensas** em doença vascular costumam acompanhar lentificação executiva; uma única lacuna estratégica pode causar impacto importante sem carga lesional exuberante.",
+    "**Nível 1 — síndrome:** queixa + avaliação cognitiva e funcional definem que existe comprometimento adquirido. **Nível 2 — hipótese etiológica clínica:** fenótipo, curso, exame e imagem geram \"Alzheimer provável\", \"vascular\", \"mista\" ou outra causa. **Nível 3 — evidência biológica:** testes amiloides e/ou tau em líquor, PET ou estratégias validadas em contexto de especialidade podem modificar a probabilidade de patologia Alzheimer.",
+    "**Apatia:** redução de iniciativa e participação sem relato proporcional de tristeza, culpa ou sofrimento subjetivo. **Depressão:** pode incluir humor deprimido ou anedonia com alterações de sono, apetite, autoestima e ideação autodepreciativa. Ambas podem coexistir com demência e uma terceira condição, delirium hipoativo, pode parecer apatia em entrevista breve. O tratamento depende de síndrome e da intensidade da incapacidade: aumentar estímulo estruturado e atividades significativas na apatia; investigar e manejar transtorno depressivo quando critérios e impacto justificam.",
+    "**Problema:** síndrome de linguagem adquirida progressiva, considerando afasia progressiva primária e variantes de Alzheimer ou degeneração frontotemporal. ",
+    "**Diferenciais:** AVC de instalação súbita seria incongruente; perda auditiva e transtorno depressivo podem agravar comunicação, mas não explicam automaticamente parafasias ou perda semântica progressiva.",
+    "**Avaliação:** exame detalhado de nomeação, repetição, compreensão, fluência/gramática, avaliação funcional; RM para topografia e causas alternativas; encaminhar para fonoaudiologia e especialista se necessidade de caracterização e testes adicionais.",
+    "**Conduta:** suporte comunicacional precoce, planejar adaptações ocupacionais e familiares, evitar rotular como Alzheimer típico sem investigar. ",
+    "**Por que importa:** nem todo transtorno neurocognitivo degenerativo começa com memória; determinar o primeiro domínio modifica probabilidade etiológica e aconselhamento."
+  ],
+  "external_urls": [
+    "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer",
+    "https://www.nice.org.uk/guidance/ng97/chapter/Recommendations",
+    "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.14333",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5496518/",
+    "https://www.neurology.org/doi/10.1212/WNL.0000000000004826",
+    "https://doi.org/10.1016/S0140-6736(24",
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/pcdt",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12173843/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**MoCA**: acrescenta demanda executiva, visuoespacial, atenção, memória e abstração, podendo reconhecer perfis que passam despercebidos no MEEM. A interpretação depende de instrumento validado, treinamento e adequação à escolaridade. Não confunda pontuação de triagem com diagnóstico etiológico, e não assuma ponto de corte universal para o Brasil."
+    },
+    {
+      "text": "A **RM de encéfalo** é preferível quando acessível e indicada para avaliar atrofia regional, infartos, microangiopatia, hematoma subdural, hidrocefalia, neoplasia ou outra alteração estrutural. **TC de crânio** é alternativa quando RM está contraindicada ou indisponível, e é frequentemente o exame imediato em urgências. A ausência de atrofia hipocampal relevante não exclui Alzheimer inicial; atrofia difusa em um laudo, por si só, não faz diagnóstico."
+    },
+    {
+      "text": "Na dimensão biológica, há acúmulo de peptídeos **beta-amiloides** em placas e de proteína **tau hiperfosforilada** em emaranhados neurofibrilares, associando-se a degeneração sináptica e neuronal. A distribuição não é uniforme; por isso podem ocorrer **variantes não amnésticas**, como atrofia cortical posterior com sintomatologia visuoespacial, afasia logopênica e síndrome executiva predominante. Um diagnóstico clínico provável e uma confirmação neuropatológica/biológica não são afirmações intercambiáveis."
+    },
+    {
+      "text": "Hipertensão, diabetes, tabagismo, fibrilação atrial e dislipidemia orientam risco e prevenção secundária conforme diretrizes próprias. Controle de fatores vasculares é central, mas não é sinônimo de prescrever antiagregante indiscriminadamente: decisão sobre aspirina, anticoagulação e demais fármacos depende da **indicação vascular real**, etiologia do evento e risco hemorrágico. Não prescrever donepezila para todo comprometimento vascular puro por analogia automática com Alzheimer; avaliar componentes mistos e recomendações específicas."
+    },
+    {
+      "text": "Inibidores da acetilcolinesterase, especialmente rivastigmina em cenários apropriados e com avaliação individual, podem aliviar manifestações cognitivas/comportamentais em sinucleinopatias. A titulação, contraindicações cardíacas e tolerabilidade devem ser avaliadas; não iniciar farmacoterapia complexa de parkinsonismo/psicose sem analisar repercussões motoras e alucinações."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

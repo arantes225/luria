@@ -1,0 +1,453 @@
+{
+  "sha": "6a4139d9d82cf634110377740a459b76d46c3f28",
+  "path": "apostilas/_rascunhos/lote-05-111-doenca-renal-cronica.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--6a4139d9d8",
+  "title": "LURIA — Apostila 111 | Doença renal crônica (DRC)",
+  "format": ".md",
+  "chars_estimated": 91010,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 111 | Doença renal crônica (DRC)"
+    },
+    {
+      "title": "0. Etapa zero: inventário, deduplicação e evidência consultada"
+    },
+    {
+      "title": "1. Definição clínica: tempo, função e lesão"
+    },
+    {
+      "title": "1.1. DRC versus LRA versus doença renal aguda (AKD)"
+    },
+    {
+      "title": "1.2. Explicar “perda de função” ao paciente"
+    },
+    {
+      "title": "2. Epidemiologia e importância populacional no Brasil"
+    },
+    {
+      "title": "3. Fisiopatologia — por que perde néfrons e por que o processo progride"
+    },
+    {
+      "title": "3.1. Hiperfiltração adaptativa vira mecanismo de progressão"
+    },
+    {
+      "title": "3.2. Albuminúria como marcador e mediador parcial"
+    },
+    {
+      "title": "3.3. Fibrose é via final comum, não diagnóstico etiológico"
+    },
+    {
+      "title": "3.4. Risco cardiovascular independente"
+    },
+    {
+      "title": "4. Etiologias: mapa clínico para não chamar tudo de “rim de diabetes”"
+    },
+    {
+      "title": "4.1. Diabetes"
+    },
+    {
+      "title": "4.2. Hipertensão e doença vascular"
+    },
+    {
+      "title": "4.3. Glomerulopatias"
+    },
+    {
+      "title": "4.4. Tubulointersticiais e tóxicas"
+    },
+    {
+      "title": "4.5. Hereditárias e estruturais"
+    },
+    {
+      "title": "4.6. Doença renal sem etiologia imediatamente reconhecida"
+    },
+    {
+      "title": "5. Quem rastrear? Não testar tudo em todo mundo, não ignorar os grupos de risco"
+    },
+    {
+      "title": "5.1. Qual coleta de RAC?"
+    },
+    {
+      "title": "5.2. Albuminúria e proteinúria total não são iguais"
+    },
+    {
+      "title": "6. Estimando filtração: creatinina não é TFG medida"
+    },
+    {
+      "title": "6.1. Cistatina C melhora certas estimativas, não vira padrão-ouro"
+    },
+    {
+      "title": "6.2. Como reconhecer TFGe implausível?"
+    },
+    {
+      "title": "6.3. Em crianças a fórmula muda"
+    },
+    {
+      "title": "7. Classificação CGA — causa, GFR e albuminúria"
+    },
+    {
+      "title": "7.1. Categoria G"
+    },
+    {
+      "title": "7.2. Categoria A"
+    },
+    {
+      "title": "7.3. Exemplos de classificação completa"
+    },
+    {
+      "title": "7.4. Mapa de calor de risco não é autorização automática de receita"
+    },
+    {
+      "title": "8. Confirmando cronicidade e velocidade de progressão"
+    },
+    {
+      "title": "8.1. Por que não calcular declínio anual com duas amostras em uma semana?"
+    },
+    {
+      "title": "9. Exame clínico completo: DRC é sistêmica"
+    },
+    {
+      "title": "9.1. DRC não pode ocultar doença aguda"
+    },
+    {
+      "title": "10. Investigação etiológica: quando pedir o quê"
+    },
+    {
+      "title": "11. Avaliando risco de falência renal: KFRE e decisões temporais"
+    },
+    {
+      "title": "11.1. Como comunicar risco"
+    },
+    {
+      "title": "11.2. Frequência de exames e visitas"
+    },
+    {
+      "title": "12. Tratamento global: desacelerar o rim e proteger o coração"
+    },
+    {
+      "title": "12.1. Mudanças de comportamento sem culpabilização"
+    },
+    {
+      "title": "12.2. Não restringir tudo preventivamente"
+    },
+    {
+      "title": "13. Pressão arterial: medida padronizada e alvo individual"
+    },
+    {
+      "title": "13.1. Pressão e albuminúria como alvo de avaliação repetida"
+    },
+    {
+      "title": "14. IECA e BRA — benefício real exige monitorização real"
+    },
+    {
+      "title": "14.1. Creatinina sobe após IECA/BRA — e agora?"
+    },
+    {
+      "title": "14.2. Potássio, gravidez e tolerância"
+    },
+    {
+      "title": "15. Inibidores SGLT2: nefroproteção além do efeito glicêmico"
+    },
+    {
+      "title": "15.1. Queda inicial de TFGe e segurança clínica"
+    },
+    {
+      "title": "15.2. Quando o tratamento atravessa TFGe 20?"
+    },
+    {
+      "title": "15.3. Atualização focal KDIGO não é guia já publicado"
+    },
+    {
+      "title": "16. Antagonistas mineralocorticoides e agonistas GLP-1"
+    },
+    {
+      "title": "16.1. Finerenona e MRA não esteroidais"
+    },
+    {
+      "title": "16.2. Agonistas GLP-1 de longa ação"
+    },
+    {
+      "title": "16.3. Diabetes e metas individualizadas"
+    },
+    {
+      "title": "17. Nutrição e estilo de vida: equilíbrio entre progressão e fragilidade"
+    },
+    {
+      "title": "17.1. Sódio"
+    },
+    {
+      "title": "17.2. Proteínas"
+    },
+    {
+      "title": "17.3. Potássio e fósforo na dieta"
+    },
+    {
+      "title": "17.4. Movimento, tabaco e obesidade"
+    },
+    {
+      "title": "18. Farmacologia e segurança: a função renal muda dose e toxicidade"
+    },
+    {
+      "title": "18.1. AINEs — por que o uso intermitente pode ser problema"
+    },
+    {
+      "title": "18.2. Contraste: não banalizar, não proibir exames salvadores"
+    },
+    {
+      "title": "18.3. Clearance de Cockcroft-Gault e TFGe normalizada por superfície"
+    },
+    {
+      "title": "18.4. “Sick day rules” precisam de contexto, não uma lista universal"
+    },
+    {
+      "title": "19. Anemia da DRC: utilizar KDIGO 2026, não recomendações antigas por inércia"
+    },
+    {
+      "title": "19.1. Primeiros exames"
+    },
+    {
+      "title": "19.2. Critérios de ferro do guideline 2026 variam por modalidade"
+    },
+    {
+      "title": "19.3. EPO/ESA, HIF-PHI e meta de hemoglobina"
+    },
+    {
+      "title": "19.4. Transfusão em DRC"
+    },
+    {
+      "title": "20. DRC–distúrbio mineral e ósseo: cálcio, fósforo, PTH e calcificação vascular"
+    },
+    {
+      "title": "20.1. Interpretar tendência, não número único"
+    },
+    {
+      "title": "20.2. Calcitriol não é vitamina para toda DRC"
+    },
+    {
+      "title": "20.3. Fósforo e quelantes"
+    },
+    {
+      "title": "20.4. Diálise, PTH e osso"
+    },
+    {
+      "title": "21. Acidose metabólica, potássio e sobrecarga: três complicações com cronologia diferente"
+    },
+    {
+      "title": "21.1. Acidose metabólica da DRC"
+    },
+    {
+      "title": "21.2. Hiperpotassemia"
+    },
+    {
+      "title": "21.3. Sobrecarga de volume"
+    },
+    {
+      "title": "21.4. Sintomas urêmicos e nutrição"
+    },
+    {
+      "title": "22. Infecção, imunização e aspectos preventivos da DRC"
+    },
+    {
+      "title": "23. Quando encaminhar à nefrologia e como preparar terapia renal substitutiva"
+    },
+    {
+      "title": "23.1. Pré-diálise não significa “esperar piorar”"
+    },
+    {
+      "title": "23.2. Hemodiálise, diálise peritoneal e transplante"
+    },
+    {
+      "title": "23.3. Quando começar diálise? A resposta não é um único valor de ureia"
+    },
+    {
+      "title": "24. Cuidado conservador abrangente e decisões compartilhadas"
+    },
+    {
+      "title": "24.1. Prurido, náuseas, dor e fadiga"
+    },
+    {
+      "title": "24.2. Fadiga e sofrimento emocional"
+    },
+    {
+      "title": "25. Populações especiais: idosos, gestantes, crianças e pacientes com comorbidades"
+    },
+    {
+      "title": "25.1. Idosos e fragilidade"
+    },
+    {
+      "title": "25.2. Gestação e desejo reprodutivo"
+    },
+    {
+      "title": "25.3. Crianças: DRC não é “adulto em tamanho pequeno”"
+    },
+    {
+      "title": "25.4. Rim único, transplante e doença genética"
+    },
+    {
+      "title": "25.5. Diabetes, insuficiência cardíaca e obesidade"
+    },
+    {
+      "title": "26. Protocolos práticos e fluxogramas originais"
+    },
+    {
+      "title": "Fluxograma 1 — rastreamento na Atenção Primária"
+    },
+    {
+      "title": "Fluxograma 2 — acompanhamento de DRC confirmada"
+    },
+    {
+      "title": "Fluxograma 3 — elevação de creatinina após IECA/BRA"
+    },
+    {
+      "title": "Fluxograma 4 — anemia com DRC"
+    },
+    {
+      "title": "Fluxograma 5 — preparar substituição de função"
+    },
+    {
+      "title": "27. Pérolas de prova, armadilhas e revisão de alta retenção"
+    },
+    {
+      "title": "28. Casos clínicos comentados com decisões passo a passo"
+    },
+    {
+      "title": "Caso 1 — A glicemia não era a única pista de nefropatia"
+    },
+    {
+      "title": "Caso 2 — Creatinina “normal” na paciente muito frágil"
+    },
+    {
+      "title": "Caso 3 — Aumento de creatinina após IECA não implica suspensão imediata"
+    },
+    {
+      "title": "Caso 4 — A DRC “estável” que na verdade tinha LRA sobreposta"
+    },
+    {
+      "title": "Caso 5 — Anemia em hemodiálise com ferro baixo funcional"
+    },
+    {
+      "title": "Caso 6 — PTH elevado sem indicação automática de calcitriol"
+    },
+    {
+      "title": "Caso 7 — DRC G5 com escolha compartilhada e sem indicação emergencial"
+    },
+    {
+      "title": "Caso 8 — Homem jovem com função preservada e rim policístico"
+    },
+    {
+      "title": "29. Questões autorais de cinco alternativas — comentários completos"
+    },
+    {
+      "title": "Questão 1 — Definição de DRC"
+    },
+    {
+      "title": "Questão 2 — Albuminúria e GFR"
+    },
+    {
+      "title": "Questão 3 — Suspeita de lesão aguda"
+    },
+    {
+      "title": "Questão 4 — Monitorização de IECA/BRA"
+    },
+    {
+      "title": "Questão 5 — Indicações de SGLT2i"
+    },
+    {
+      "title": "Questão 6 — Anemia e KDIGO 2026"
+    },
+    {
+      "title": "Questão 7 — PTH na DRC"
+    },
+    {
+      "title": "Questão 8 — Planejamento por KFRE"
+    },
+    {
+      "title": "Questão 9 — Início de diálise"
+    },
+    {
+      "title": "Questão 10 — Velocidade de progressão e cronicidade"
+    },
+    {
+      "title": "30. Plano de imagens: dez candidatos clínicos e didáticos para curadoria premium"
+    },
+    {
+      "title": "31. Fontes científicas rastreáveis por assunto"
+    },
+    {
+      "title": "32. Auditoria estrutural preliminar — não equivale a liberação clínica"
+    }
+  ],
+  "reference_entries": [
+    "1. **Ministério da Saúde / Conitec.** PCDT *Estratégias para Atenuar a Progressão da Doença Renal Crônica*, atualização do anexo 07/02/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/estrategias-para-atenuar-a-progressao-da-doenca-renal-cronica/view. Contexto brasileiro de regulação e cuidado.",
+    "2. **Portaria Conjunta SAES/SECTICS nº 11, setembro de 2024**, aprova PCDT brasileiro. https://bvs.saude.gov.br/bvs/saudelegis/Saes/2024/poc0011_26_09_2024.html. Documento normativo, sujeito a atualizações.",
+    "3. **KDIGO.** Clinical Practice Guideline for the Evaluation and Management of CKD. Kidney International 2024. https://kdigo.org/guidelines/ckd-evaluation-and-management/. Diagnóstico, CGA, risco KFRE, monitorização, IECA/BRA e iSGLT2.",
+    "4. **KDIGO 2024 Executive Summary**, Kidney International 105:684–701. https://kdigo.org/wp-content/uploads/2017/02/KDIGO-2024-CKD-Guideline-Executive-Summary.pdf. Resumo e tabelas com limiares; **direitos de imagem não conferidos**.",
+    "5. **KDIGO, anúncio de 17/03/2026.** Focused update to the 2024 CKD guideline. https://kdigo.org/kdigo-announces-update-to-2024-ckd-guideline/. Atualização em desenvolvimento, não final.",
+    "6. **KDIGO 2026.** Clinical Practice Guideline for Anemia in CKD. Kidney International 2026. https://kdigo.org/guidelines/anemia-in-ckd/. Diagnóstico/tratamento da anemia com novos limiares de ferro.",
+    "7. **KDIGO anúncio 02/01/2026.** https://kdigo.org/kdigo-announces-publication-of-anemia-in-ckd-guideline/. Confirma publicação e substituição da versão de anemia 2012.",
+    "8. **KDIGO 2017.** CKD–Mineral and Bone Disorder guideline. https://kdigo.org/guidelines/ckd-mbd/. PTH/fósforo/cálcio e cautela sobre calcitriol.",
+    "9. **KDIGO 2021.** Clinical Practice Guideline for Management of Blood Pressure in CKD. https://kdigo.org/guidelines/blood-pressure-in-ckd/. Alvo sistólico padronizado quando tolerado.",
+    "10. **Levin A et al.** Executive summary CKD KDIGO 2024. https://doi.org/10.1016/j.kint.2023.10.016. Formulações exatas de IECA/BRA, iSGLT2, KFRE.",
+    "11. **Practical CKD care**, Governo de British Columbia, algoritmo de rastreio e encaminhamento adaptado da KDIGO. https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines/chronic-kidney-disease-diagnosis-maintain. Referência auxiliar, **figuras não incorporadas e licença comercial não verificada**.",
+    "12. **Arquivo privado do acervo:** “02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”, aprox. 19.972 caracteres extraídos, usado apenas como benchmark de cobertura sem reprodução.",
+    "13. **Apostila 106 LURIA** — Lesão renal aguda; arquivo editorial interno preservado, serve de aprofundamento quando há DRC + LRA.",
+    "14. **Apostila 113 LURIA**, prevista no mesmo lote, nefropediatria (síndromes glomerulares); **não existe manuscrito verificado nesta etapa**.",
+    "**Cobertura desta rodada:** definição e persistência temporal; epidemiologia e etiologias; fisiopatologia; rastreio e confirmação de albuminúria/TFGe; creatinina/cistatina C; classificação CGA; progressão; avaliação clínica, sedimento/imagem/biópsia; prognóstico KFRE; nefroproteção com controle pressórico, IECA/BRA, SGLT2i, MRA e GLP-1; nutrição e farmacologia; **anemia segundo KDIGO 2026**, CKD-MBD, acidose, hiperpotassemia, edema e uremia; prevenção; encaminhamento; HD/DP/transplante e tratamento conservador; populações especiais; fluxos; oito casos integrados; dez questões com cinco alterna",
+    "**Pendências a verificar pelo nefrologista e farmacêutico antes da publicação:** revisão da fonte brasileira PCDT integral versus recomendações KDIGO (elegibilidade/dispensação no SUS e fármacos recentes); conferência de todas as recomendações por grau e população; interpretação de TFGe por equação/idade/superfície; limites laboratoriais KDIGO anemia 2026 e contraindicações; pressão padronizada e tolerabilidade; protocolos de diálise, transplante e diálise peritoneal na rede brasileira; validação de toda dose medicamentosa — nenhuma posologia copiada está liberada; inserir exame clínico/labora",
+    "**Auditoria geral ao fim de todos os lotes:** exigência do usuário já formalizada em **apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md**. O Codex deverá revisar cobertura da biblioteca inteira, confrontar protocolos/PCDTs e diretrizes, verificar conteúdo e anexos, checar imagens/licenças, apontar erros estruturais e de ciência, propor PRs e reportar bloqueios. **Não antecipar merge ou deploy antes dessa fase.**",
+    "**ESTADO ATUAL: MANUSCRITO ORIGINAL, APTO A REVISÃO; NÃO APROVADO PARA USO PRESCRITIVO; NÃO PUBLICADO.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/estrategias-para-atenuar-a-progressao-da-doenca-renal-cronica/view.",
+    "https://kdigo.org/guidelines/ckd-evaluation-and-management/;",
+    "https://kdigo.org/kdigo-announces-update-to-2024-ckd-guideline/.",
+    "https://kdigo.org/guidelines/anemia-in-ckd/.",
+    "https://kdigo.org/guidelines/ckd-mbd/,",
+    "https://kdigo.org/guidelines/blood-pressure-in-ckd/.",
+    "https://bvs.saude.gov.br/bvs/saudelegis/Saes/2024/poc0011_26_09_2024.html.",
+    "https://kdigo.org/guidelines/ckd-evaluation-and-management/.",
+    "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-2024-CKD-Guideline-Executive-Summary.pdf.",
+    "https://kdigo.org/kdigo-announces-publication-of-anemia-in-ckd-guideline/.",
+    "https://kdigo.org/guidelines/ckd-mbd/.",
+    "https://doi.org/10.1016/j.kint.2023.10.016.",
+    "https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines/chronic-kidney-disease-diagnosis-maintain."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Identidade desta aula:** a doença renal crônica é um diagnóstico de duração, causa e prognóstico — não um número de creatinina. O cuidado que protege o rim também precisa proteger o coração, preservar capacidade funcional, corrigir complicações, planejar terapia renal substitutiva quando apropriado e respeitar acesso real no SUS. Doses específicas, ajustes de formulações, elegibilidade no sistema brasileiro e condutas invasivas demandam validação clínica e farmacêutica independente antes de integração ao modo Trabalho."
+    },
+    {
+      "text": "**Diagnóstico de existência:** antes da criação deste arquivo não havia manuscrito dedicado identificado para a aula 111 na branch editorial. A **apostila 106 — Lesão renal aguda (LRA)**, já concluída como rascunho, deve permanecer intacta e ser vinculada nesta 111 quando discutirmos LRA sobreposta à DRC. A futura **113 — Síndrome nefrótica e síndrome nefrítica**, de Pediatria, deve aprofundar nefropatias glomerulares e mecanismos sindrômicos em crianças; não é duplicada aqui."
+    },
+    {
+      "text": "**Fontes normativas prioritárias verificadas em 15/10/2026:** - **Ministério da Saúde / Conitec**, *PCDT Estratégias para Atenuar a Progressão da Doença Renal Crônica*, anexo com atualização de 07/02/2025, https://www.gov.br/saude/pt-br/assuntos/pcdt/e/estrategias-para-atenuar-a-progressao-da-doenca-renal-cronica/view. O documento brasileiro de referência é relevante para rede, elegibilidade, tratamento e seguimento; a validação de cada fármaco incorporado ao SUS deve consultar o PCDT integral, portarias e listas vigentes antes de prometer disponibilidade. - **KDIGO 2024**, *Clinical Practice Guideline for the Evaluation and Management of Chr"
+    },
+    {
+      "text": "**Doença renal crônica** é alteração estrutural ou funcional renal **persistente por pelo menos três meses**, com implicações para saúde, definida por **TFG <60 mL/min/1,73 m² e/ou marcadores de dano renal**, após avaliação da cronicidade. O marcador de dano pode incluir **albuminúria persistente (RAC ≥30 mg/g)**, sedimento urinário patológico de origem renal, distúrbios tubulares, anormalidades histológicas, achados estruturais por imagem e antecedente de transplante renal. Um paciente pode ter DRC com TFGe 95 se há albuminúria persistente por nefropatia diabética ou rim policístico comprovado."
+    },
+    {
+      "text": "A duração importa: creatinina 2,5 mg/dL medida hoje pode refletir LRA de dias, DRC prévia, ou LRA sobre DRC. O diagnóstico de DRC não nasce automaticamente do valor. Exames antigos, tendência de creatinina, imagens (rins menores/córtex afinado podem apoiar cronicidade), histórico de diabetes/hipertensão, urina e distúrbios associados ajudam. **Rim de tamanho normal não exclui DRC**: diabetes, amiloidose, doença policística e certas glomerulopatias podem preservar/aumentar volume renal."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

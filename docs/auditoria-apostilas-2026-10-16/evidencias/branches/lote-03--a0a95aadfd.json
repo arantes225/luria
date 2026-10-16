@@ -1,0 +1,46 @@
+{
+  "sha": "a0a95aadfd7ab74dffade3c16370669538126566",
+  "path": "apostilas/_rascunhos/lote-03/41-VALIDACAO-HTML.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--a0a95aadfd",
+  "title": "Aula 41 — validação estática preliminar do HTML (14/10/2026)",
+  "format": ".md",
+  "chars_estimated": 3220,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Aula 41 — validação estática preliminar do HTML (14/10/2026)"
+    },
+    {
+      "title": "Auditoria automática desta etapa"
+    },
+    {
+      "title": "Conteúdo preservado e recursos editoriais"
+    },
+    {
+      "title": "Pendências antes de publicação/homologação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "1. Revisão médico-científica especializada das recomendações SSC 2026, ESICM 2025, ACC/AHA 2025/2026 e doses conforme protocolos brasileiros vigentes. 2. Analisar possíveis inconsistências ou simplificações em cálculos, indicações farmacológicas, rotinas de choque hemorrágico e critérios de reperfusão. 3. Achar dez imagens candidatas reais com licença comercial comprovada quando forem necessárias; aprovar apenas as melhores pelo Admin, gerar WebP e inserir legenda com fonte. 4. Testes visuais com navegador na aplicação real: tema claro/escuro/rosa, viewport desktop/mobile, rolagem lateral de tabelas, sidebar, grifos, post-its e cabeçalho. 5. "
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

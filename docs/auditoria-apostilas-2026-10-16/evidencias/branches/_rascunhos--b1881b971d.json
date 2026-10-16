@@ -1,0 +1,94 @@
+{
+  "sha": "b1881b971d9a143018629d177c3ece05bdd7338f",
+  "path": "apostilas/_rascunhos/lote-06-120-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b1881b971d",
+  "title": "Lote 06 · Tema 120 — Medicina Baseada em Evidências (MBE)",
+  "format": ".md",
+  "chars_estimated": 7452,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 · Tema 120 — Medicina Baseada em Evidências (MBE)"
+    },
+    {
+      "title": "Etapa zero realizada antes da escrita"
+    },
+    {
+      "title": "Diretrizes e referências científicas checadas externamente"
+    },
+    {
+      "title": "Plano de conteúdos não redundantes"
+    },
+    {
+      "title": "Critérios bloqueadores"
+    },
+    {
+      "title": "Etapa 2 — redação, cálculo e prévia técnica (14/10/2026)"
+    },
+    {
+      "title": "Matriz de autossuficiência preliminar — sem ler gabaritos"
+    },
+    {
+      "title": "Bloqueios de conclusão"
+    }
+  ],
+  "reference_entries": [
+    "1. **Conitec/Ministério da Saúde:** portal oficial de Diretrizes Metodológicas, com manuais de revisão sistemática, metanálise, estudos diagnósticos, GRADE, avaliação econômica e diretrizes clínicas. https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "2. **Cochrane Handbook** versão 6.5 (2024): métodos de revisão sistemática, risco de viés, síntese e heterogeneidade. https://training.cochrane.org/handbook/current",
+    "3. **PRISMA 2020** (publicação original em 2021): checklist de relato para revisões sistemáticas; **não ferramenta de classificação de risco de viés**. https://www.equator-network.org/reporting-guidelines/prisma/",
+    "4. **CONSORT 2025:** 30 itens essenciais e fluxograma de participantes para relato transparente de ensaios randomizados, substituindo a versão de 2010. https://www.bmj.com/content/389/bmj-2024-081123",
+    "5. **STROBE:** relatos observacionais de coorte, caso-controle e transversais; não é ferramenta de aferição de qualidade metodológica. https://www.equator-network.org/reporting-guidelines/strobe/",
+    "6. **RoB 2 Cochrane:** avaliação de risco de viés em ensaios randomizados. https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials",
+    "7. **PROSPERO:** registro prospectivo de revisões sistemáticas elegíveis em saúde. https://www.crd.york.ac.uk/PROSPERO/",
+    "1. Pergunta estruturada PICO/PECO/PIRD, implementação e decisão compartilhada.",
+    "2. Ensaios randomizados, coorte, caso-controle, transversais, ecológicos, séries, pesquisa qualitativa.",
+    "3. Medidas de frequência e associação, interpretação de RRA/RRR/NNT/NNH, RR/OR/HR, intervalos de confiança.",
+    "4. Testes diagnósticos, Bayes, razões de verossimilhança, prevalência, ROC, viés de espectro.",
+    "5. Inferência estatística, distribuição, amostragem, erro alfa/beta, poder, hipóteses, multiplicidade, p e IC.",
+    "6. Tipos de viés, confusão, causalidade, vieses de tempo imortal, perdas, intenção de tratar, desfechos substitutos.",
+    "7. Revisão sistemática, metanálise, modelos de efeito, heterogeneidade, certeza GRADE e força de recomendação.",
+    "8. Leitura crítica de diretrizes, Conitec, ATS, avaliação econômica básica, ética e integridade.",
+    "9. Casos e questões autorais com números verificáveis e explicação das alternativas.",
+    "10. Gerador JSON/HTML LURIA, imagens candidatas licenciadas via Admin; não publicar sem revisões e validadores.",
+    "- [ ] Produzir corpo instrucional próximo ou superior a 60 mil caracteres úteis sem repetições.",
+    "- [ ] 8 casos e 12 questões comentadas, análise quantitativa correta e matriz de autossuficiência.",
+    "- [ ] 10 candidatas de figuras/diagramas com licença e finalidade didática conferidas quando aplicável, sem inserção direta.",
+    "- [ ] Comparação com apostila longa de origem institucional confirmada, se acessível.",
+    "- [ ] Revisão científica independente, verificação de fórmulas/contas, referências e clareza editorial.",
+    "- [ ] Executar de fato os validadores do repositório e conferir desktop/PWA antes de qualquer merge/deploy.",
+    "---",
+    "- **Markdown original:** `apostilas/_rascunhos/lote-06-120-medicina-baseada-em-evidencias.md` — **100.983 caracteres brutos**, 32 capítulos, com 28 de corpo instrucional, 8 casos (capítulo 29), 12 questões (capítulo 30), bibliografia e controle.",
+    "- **Corpo didático pré-contado:** **72.997 caracteres**, capítulos 1–28, após remover URLs e marcas Markdown básicas, sem casos/questões/bibliografia. **Não é certificação de 60 mil caracteres semanticamente únicos e úteis.**",
+    "- **Entrada do gerador:** `apostilas/_rascunhos/lote-06-120-build-input-preliminar.json` — 31 seções, 11 referências, nenhuma figura inserida.",
+    "- **Prévia HTML LURIA:** `apostilas/_rascunhos/lote-06-120-preview.html` — 32 seções contando bibliografia, 8 casos, 12 questões, 12 listas A–D, 0 âncoras internas ausentes, 0 IDs duplicados; com `noindex`. Nenhum arquivo público alterado, nenhum deploy/merge.",
+    "- **Verificação aritmética independente:** RR 2,0; OR 2,67; NNT 34 no exemplo de benefício 10% versus 7%; VPP 33,3%; VPN 98,6%; LR+ 4,5; LR− 0,125; ICER R$ 20.000 por QALY nos exemplos fictícios. Esses cálculos passaram, mas é obrigatória a revisão profissional da interpretação e dos demais números.",
+    "- **Correção de cobertura:** o capítulo 14 recebeu distinção explícita entre equivalência, não inferioridade e valor de p não significativo. Markdown, JSON e HTML foram sincronizados."
+  ],
+  "external_urls": [
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "https://training.cochrane.org/handbook/current",
+    "https://www.equator-network.org/reporting-guidelines/prisma/",
+    "https://www.bmj.com/content/389/bmj-2024-081123",
+    "https://www.equator-network.org/reporting-guidelines/strobe/",
+    "https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials",
+    "https://www.crd.york.ac.uk/PROSPERO/"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

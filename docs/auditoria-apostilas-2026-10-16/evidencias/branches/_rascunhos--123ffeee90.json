@@ -1,0 +1,213 @@
+{
+  "sha": "123ffeee90b692a2b8e8b560fb024828c7990632",
+  "path": "apostilas/_rascunhos/lote-07-aula-139-endometriose.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--123ffeee90",
+  "title": "LURIA — Lote 7 · Aula 139",
+  "format": ".md",
+  "chars_estimated": 32476,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 139"
+    },
+    {
+      "title": "Endometriose: dor pélvica, doença profunda e fertilidade"
+    },
+    {
+      "title": "0. Etapa zero — preservar o que já existe, identificar material comparativo"
+    },
+    {
+      "title": "1. Conceito e os três fenôtipos clínicos"
+    },
+    {
+      "title": "2. Fisiopatologia: da menstruação retrógrada à sensibilização nervosa"
+    },
+    {
+      "title": "2.1. Menstruação retrógrada não explica tudo"
+    },
+    {
+      "title": "2.2. Dor neuropática e sensibilização central"
+    },
+    {
+      "title": "3. Epidemiologia e fatores de risco: evitar a falsa precisão"
+    },
+    {
+      "title": "4. Manifestações clínicas: a dor tem padrão temporal, mas não obrigação de ser cíclica"
+    },
+    {
+      "title": "5. Anamnese dirigida e exame"
+    },
+    {
+      "title": "6. Diagnóstico contemporâneo: não exigir cirurgia para começar a cuidar"
+    },
+    {
+      "title": "6.1. Ultrassonografia"
+    },
+    {
+      "title": "6.2. Ressonância magnética"
+    },
+    {
+      "title": "6.3. CA-125 e outros biomarcadores"
+    },
+    {
+      "title": "6.4. Laparoscopia"
+    },
+    {
+      "title": "7. Classificação anatômica e por objetivo terapêutico"
+    },
+    {
+      "title": "8. Tratamento clínico: controlar dor sem criar infertilidade iatrogênica"
+    },
+    {
+      "title": "8.1. Abordagem inicial compartilhada"
+    },
+    {
+      "title": "8.2. Terapia hormonal"
+    },
+    {
+      "title": "8.3. Dor persistente e componente nociplástico"
+    },
+    {
+      "title": "9. Cirurgia: indicação não é sinônimo de diagnóstico"
+    },
+    {
+      "title": "10. Infertilidade associada à endometriose — FEBRASGO 2026"
+    },
+    {
+      "title": "10.1. Por que a infertilidade é multifatorial?"
+    },
+    {
+      "title": "10.2. O que o posicionamento FEBRASGO nº 4/2026, publicado em maio acrescenta?"
+    },
+    {
+      "title": "11. Diferenciais por sintoma"
+    },
+    {
+      "title": "12. Algoritmos assistenciais"
+    },
+    {
+      "title": "13. Cinco casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — adolescente com “cólicas normais”"
+    },
+    {
+      "title": "Caso 2 — endometriose intestinal profunda"
+    },
+    {
+      "title": "Caso 3 — infertilidade e endometrioma bilateral"
+    },
+    {
+      "title": "Caso 4 — obstrução ureteral silenciosa"
+    },
+    {
+      "title": "Caso 5 — dor persistente após laparoscopia"
+    },
+    {
+      "title": "14. Oito questões autorais com comentários por alternativa"
+    },
+    {
+      "title": "Questão 1 — diagnóstico e imagem"
+    },
+    {
+      "title": "Questão 2 — CA-125"
+    },
+    {
+      "title": "Questão 3 — laparoscopia"
+    },
+    {
+      "title": "Questão 4 — endometrioma e FIV"
+    },
+    {
+      "title": "Questão 5 — infiltração ureteral"
+    },
+    {
+      "title": "Questão 6 — controle de dor sem gravidez atual"
+    },
+    {
+      "title": "Questão 7 — risco de infertilidade"
+    },
+    {
+      "title": "Questão 8 — dor e anatomia"
+    },
+    {
+      "title": "15. Pulo do Gato LURIA — alta retenção"
+    },
+    {
+      "title": "16. Esquemas visuais e imagens clínicas candidatas (nenhuma incorporada)"
+    },
+    {
+      "title": "17. Fontes atuais"
+    },
+    {
+      "title": "18. Checklist"
+    }
+  ],
+  "reference_entries": [
+    "1. ESHRE. *Endometriosis: guideline*. 2022. https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+    "2. NICE NG73. *Endometriosis: diagnosis and management*, diagnóstico atualizado em novembro/2024. https://www.nice.org.uk/guidance/ng73/chapter/Recommendations",
+    "3. Silva Filho AL, Lamaita RM, Podgaec S, et al. FEBRASGO Position Statement nº 4/2026. *Diagnóstico e manejo da infertilidade associada à endometriose*. *Femina*. 2026;54(3):199–214. Publicado em 05/05/2026. DOI: 10.61622/0100-7254543202606. https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/ (página editorial estável; PDF indexado em FEBRASGO não pôde ser aberto diretamente na checagem).",
+    "4. LURIA. \\`apostilas/infertilidade-conjugal/index.html\\`, livro já existente e preservado.",
+    "5. LURIA. \\`apostilas/cervicites-doenca-inflamatoria-pelvica/index.html\\`, diferencial de dor pélvica revisado.",
+    "- [x] Inventário do HTML, comparação Drive parcial, fontes 2022/2024/2026.",
+    "- [x] Mecanismos, fenótipos, diagnóstico por imagem, classificação, terapia clínica/cirúrgica, infertilidade e cuidado longitudinal.",
+    "- [x] Cinco casos e oito questões autorais comentadas por alternativa.",
+    "- [ ] Livro de comparação equivalente do Drive não foi localizado; não declarar etapa zero integralmente concluída.",
+    "- [ ] Aprofundar diretrizes FEBRASGO para dor, esquemas farmacológicos por produto brasileiro/risco, técnicas cirúrgicas e impacto reprodutivo.",
+    "- [ ] Desenvolver discussão completa de adolescência, endometriose extrapélvica, gestação, menopausa e cuidados pós-operatórios.",
+    "- [ ] Atingir 60 mil caracteres didáticos úteis sem repetição e testar autossuficiência.",
+    "- [ ] Imagens reais licenciadas, figuras originais, revisão médico-editorial, integração no HTML/PWA e auditoria.",
+    "**Situação:** RASCUNHO, NÃO PUBLICAR antes de todos os gates."
+  ],
+  "external_urls": [
+    "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+    "https://www.nice.org.uk/guidance/ng73/chapter/Recommendations",
+    "https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**. **Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional."
+    },
+    {
+      "text": "**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento"
+    },
+    {
+      "text": "**Três apresentações anatômicas principais:** 1. **Endometriose peritoneal superficial:** implantes na superfície peritoneal, frequentemente invisíveis ao ultrassom e à RM convencionais. 2. **Endometrioma ovariano:** cisto relacionado a endometriose, frequentemente com conteúdo hemático crônico e achado ultrassonográfico típico, embora diagnóstico diferencial com outras massas seja essencial. 3. **Endometriose profunda (DE/DIE):** lesões infiltrativas abaixo da superfície peritoneal, capazes de envolver ligamentos uterossacros, septo retovaginal, intestino, bexiga e ureter, além de espaços pélvicos. A extensão anatômica precisa ser mapeada pa"
+    },
+    {
+      "text": "Não há evidência para dizer que “só mulheres que nunca engravidaram têm endometriose” ou que gravidez **cura definitivamente** a condição. Alterações hormonais gestacionais podem modificar temporariamente sintomas, porém doença pode persistir/recorrer e não se deve recomendar gestação como tratamento."
+    },
+    {
+      "text": "**B — US normal e dor persistente:** não excluir endometriose superficial → revisar aderência/diagnósticos diferenciais e possíveis comorbidades → tratamento empírico/encaminhamento → considerar RM especializada ou laparoscopia seletiva se falha e indicação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

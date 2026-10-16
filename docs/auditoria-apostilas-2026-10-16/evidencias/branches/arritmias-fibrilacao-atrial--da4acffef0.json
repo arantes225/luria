@@ -1,0 +1,132 @@
+{
+  "sha": "da4acffef051416110dd986039dfbf6ed58a17d7",
+  "path": "apostilas/arritmias-fibrilacao-atrial/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "arritmias-fibrilacao-atrial--da4acffef0",
+  "title": "Arritmias e Fibrilação Atrial",
+  "format": ".json",
+  "chars_estimated": 113958,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "panorama",
+      "title": "Arritmias e Fibrilação Atrial — pensar primeiro na estabilidade"
+    },
+    {
+      "id": "fisiologia",
+      "title": "1. Eletrofisiologia: automatismo, condução e reentrada"
+    },
+    {
+      "id": "ecg",
+      "title": "2. ECG sistemático: regular, irregular, QRS estreito ou largo"
+    },
+    {
+      "id": "instabilidade",
+      "title": "3. Abordagem de taquicardia com pulso e sem pulso"
+    },
+    {
+      "id": "fa-definicao",
+      "title": "4. Fibrilação atrial: definição, classificação e carga"
+    },
+    {
+      "id": "riscos",
+      "title": "5. Prevenção de AVC: CHA₂DS₂-VA e sangramento"
+    },
+    {
+      "id": "fc-ritmo",
+      "title": "6. Controlar frequência, controlar ritmo ou combinar estratégias"
+    },
+    {
+      "id": "cardioversao",
+      "title": "7. Cardioversão e risco tromboembólico: planejar antes e depois"
+    },
+    {
+      "id": "ablacao",
+      "title": "8. Ablação por cateter, dispositivos e manejo de recorrência"
+    },
+    {
+      "id": "taqui-geral",
+      "title": "9. Outras taquiarritmias que entram no diferencial da FA"
+    },
+    {
+      "id": "bradicardia-bav",
+      "title": "10. Bradiarritmias, bloqueios AV e marca-passo — da leitura do ECG à decisão de segurança"
+    },
+    {
+      "id": "especiais",
+      "title": "11. Situações especiais: gestação, doença valvar, rim e doença coronariana"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos integradores — 11 casos"
+    },
+    {
+      "id": "questoes",
+      "title": "13. Questões autorais — 24 comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências verificáveis e limites editoriais"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências verificáveis e limites editoriais\"]",
+    "[\"o\",[\"<a href=\\\"https://pmc.ncbi.nlm.nih.gov/articles/PMC13400077/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial — 2025. SBC/SOBRAC. Arq Bras Cardiol 122(9):e20250618.</a>\",\"<a href=\\\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/atrial-fibrillation/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">ESC/EACTS Guidelines for the management of atrial fibrillation — 2024. AF-CARE.</a>\",\"<a href=\\\"https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer",
+    "[\"p\",\"<strong>Estado editorial em 14/10/2026:</strong> a apostila integra eletrofisiologia, ECG e diferenciais de taquiarritmia, ACLS AHA 2025, prevenção de AVC e doses de ACOD segundo SBC/SOBRAC 2025, controle de frequência/ritmo, cardioversão com comparação SBC/ESC/ACC, ablação, populações especiais e, nesta etapa, bradicardias, doença do nó sinusal, BAV, síncope e marca-passo com SBC 2023/ACLS 2025. O capítulo de bradicardia acrescenta quatro vinhetas clínicas ao longo do texto e a seção formal agora reúne 24 questões comentadas. Continuam obrigatórios revisão independente de doses/contrain",
+    "[\"p\",\"Fonte clínica conferida para este capítulo: Cintra FD et al. Diretriz Brasileira de Fibrilação Atrial (SBC/SOBRAC), 2025, seção 7 e Quadro 7, disponível em https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt. Referência comparativa reaberta no Drive: '02 - TAQUIARRITMIA .pdf', útil para ECG e apresentação, mas insuficiente para anticoagulação pericardioversão.\"]",
+    "[\"p\",\"<strong>Referências nucleares para o aprofundamento:</strong> Cintra FD et al. SBC/SOBRAC, Diretriz Brasileira de Fibrilação Atrial 2025, Arq Bras Cardiol. 122(9):e20250618. DOI 10.36660/abc.20250618, https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt ; 2024 ESC AF Guidelines, https://academic.oup.com/eurheartj/article/45/36/3314/7738779 ; 2023 ACC/AHA/ACCP/HRS FA, https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/ ; AHA 2025 Adult Advanced Life Support, https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support . O comparativo do Drive "
+  ],
+  "external_urls": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/",
+    "https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt",
+    "https://academic.oup.com/eurheartj/article/45/36/3314/7738779",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10389103/",
+    "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf",
+    "https://academic.oup.com/europace/article/24/1/71/6358627",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11095842/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13400077/",
+    "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/atrial-fibrillation/",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017",
+    "https://socesp.org.br/revista/edicoes/revista-socesp-v36-n1-2026-36-1/atualizacoes-no-manejo-da-fibrilacao-atrial-implicacoes-praticas-da-diretriz-brasileira-de-2025-1116/",
+    "https://www.scielo.br/j/abc/a/jWrKHyPRYYh7dXZR94nJcGp/?lang=pt."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "fisiologia",
+      "text": "O nó AV tem condução decremental: quanto mais cedo chegam os impulsos atriais, menor tende a ser a velocidade de passagem em várias condições. Esse filtro protege ventrículos durante FA rápida. Já a via acessória manifesta pode conduzir impulsos do átrio diretamente ao ventrículo, burlando o nó AV e tornando possível resposta ventricular muito rápida na FA pré-excitada. Administrar droga que freia exclusivamente o nó AV nessa situação pode favorecer condução pela via acessória e precipitar fibrilação ventricular. É uma diferença causal fundamental, não apenas uma contraindicação para decorar."
+    },
+    {
+      "section": "ecg",
+      "text": "FA com condução por via acessória pode produzir QRS de largura e morfologia variáveis e frequência ventricular extremamente elevada. Bloquear nó AV com adenosina, verapamil, diltiazem, betabloqueador ou digoxina pode favorecer condução pela via acessória e degeneração em fibrilação ventricular. Também se evita amiodarona intravenosa na FA pré-excitada conforme recomendações modernas. Paciente instável requer cardioversão elétrica sincronizada quando possível; em estável, a escolha de antiarrítmico apropriado e avaliação especializada dependem de protocolo e disponibilidade."
+    },
+    {
+      "section": "ecg",
+      "text": "Em QRS largo regular e cardiopatia estrutural, a probabilidade de TV aumenta. Dissociação atrioventricular, batimentos de captura e de fusão, concordância precordial e eixo extremo apoiam TV, mas sua ausência não exclui. O diagnóstico final pode exigir comparação de ECG basal, critérios especializados e avaliação por cardiologia. Em pessoa instável com taquiarritmia ventricular com pulso, a decisão de cardioversão não deve esperar escore de Brugada do ECG; em sem pulso, entra no algoritmo de PCR. A identificação de ondas P discretas nunca justifica atraso no choque indicado."
+    },
+    {
+      "section": "instabilidade",
+      "text": "O algoritmo de cardioversão elétrica da AHA 2025 indica energia inicial de referência em equipamento bifásico para adultos: FA 200 J; flutter atrial 200 J; taquicardia regular de QRS estreito 100 J; TV monomórfica com pulso 100 J. Em TV polimórfica utiliza-se descarga não sincronizada em energia de desfibrilação. Considerar recomendações do fabricante, monitor e protocolo local; o equipamento pode requerer escalonamento após falha e nova sincronização. Esses números não devem ser copiados para criança ou cardioversão pediátrica, que utiliza esquemas por peso e circunstância. Materiais anteriores citavam para flutter energia menor; a diretriz "
+    },
+    {
+      "section": "instabilidade",
+      "text": "Em taquicardia regular estreita com pulso e estabilidade, manobras vagais podem ser seguidas de adenosina conforme algoritmo. AHA 2025 descreve 6 mg IV em bolo rápido, seguido de flush de solução salina; se necessário, 12 mg IV como segunda dose. A necessidade de conexão próxima ao acesso, administração rápida e registro contínuo do ECG decorre da meia-vida de segundos. Atenção a broncoespasmo, transplante cardíaco, interações com dipiridamol e outros contextos que modificam dose/segurança conforme protocolo. A sensação transitória de desconforto torácico pode ocorrer e deve ser explicada quando o paciente está consciente."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

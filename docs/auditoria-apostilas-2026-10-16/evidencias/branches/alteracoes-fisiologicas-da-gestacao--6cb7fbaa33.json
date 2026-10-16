@@ -1,0 +1,490 @@
+{
+  "sha": "6cb7fbaa33203b9e7f86009396c1fc0c638b8825",
+  "path": "apostilas/alteracoes-fisiologicas-da-gestacao/index.html",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "alteracoes-fisiologicas-da-gestacao--6cb7fbaa33",
+  "title": "Alterações fisiológicas da gestação",
+  "format": ".html",
+  "chars_estimated": 92208,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "1. A lógica da adaptação materna"
+    },
+    {
+      "title": "Circulação uteroplacentária"
+    },
+    {
+      "title": "Por que a adaptação começa antes de o útero crescer?"
+    },
+    {
+      "title": "Como raciocinar: mecanismo, compensação, sintoma e alerta"
+    },
+    {
+      "title": "O papel da placenta como órgão endócrino e vascular"
+    },
+    {
+      "title": "Placenta: duas circulações próximas, sem mistura sanguínea habitual"
+    },
+    {
+      "title": "2. O que predomina em cada trimestre"
+    },
+    {
+      "title": "Primeiras semanas: a adaptação é principalmente hormonal"
+    },
+    {
+      "title": "Segundo trimestre: expansão de volume e hiperfiltração"
+    },
+    {
+      "title": "Final da gravidez e parto: aumentam as repercussões mecânicas"
+    },
+    {
+      "title": "Puerpério: a adaptação não termina com a expulsão da placenta"
+    },
+    {
+      "title": "3. Sistema cardiovascular"
+    },
+    {
+      "title": "Vasodilatação vem antes da expansão de volume"
+    },
+    {
+      "title": "Débito cardíaco, FC e volume sistólico"
+    },
+    {
+      "title": "Pressão arterial"
+    },
+    {
+      "title": "Exame físico: esperado × alerta"
+    },
+    {
+      "title": "Síndrome hipotensiva supina"
+    },
+    {
+      "title": "Por que o débito cardíaco aumenta?"
+    },
+    {
+      "title": "Compressão aortocaval e síndrome hipotensiva supina"
+    },
+    {
+      "title": "Por que edema dependente não é diagnóstico de pré-eclâmpsia?"
+    },
+    {
+      "title": "Interpretação da pressão arterial e sinais de alarme"
+    },
+    {
+      "title": "4. Sistema hematológico"
+    },
+    {
+      "title": "Hemodiluição"
+    },
+    {
+      "title": "Leucócitos"
+    },
+    {
+      "title": "Plaquetas"
+    },
+    {
+      "title": "Hipercoagulabilidade"
+    },
+    {
+      "title": "Hemodiluição: anemia fisiológica não é desculpa para ignorar ferropenia"
+    },
+    {
+      "title": "Leucocitose, neutrofilia e período periparto"
+    },
+    {
+      "title": "Trombocitopenia gestacional versus doença"
+    },
+    {
+      "title": "Hemostasia: por que trombose e sangramento são preocupações simultâneas?"
+    },
+    {
+      "title": "Hepcidina: como a placenta recebe ferro sem “criar” ferro"
+    },
+    {
+      "title": "5. Sistema respiratório"
+    },
+    {
+      "title": "Dispneia fisiológica"
+    },
+    {
+      "title": "Via aérea e anestesia"
+    },
+    {
+      "title": "Qual é o distúrbio acidobásico esperado?"
+    },
+    {
+      "title": "Trocas gasosas, capacidade residual funcional e reserva respiratória"
+    },
+    {
+      "title": "Vias aéreas na gestação: rinite, edema e intubação"
+    },
+    {
+      "title": "Diferença entre dispneia fisiológica, asma, TEP e edema pulmonar"
+    },
+    {
+      "title": "Troca de oxigênio materno-fetal: efeito Bohr duplo"
+    },
+    {
+      "title": "6. Sistema renal e urinário"
+    },
+    {
+      "title": "Dilatação pielocalicial/ureteral"
+    },
+    {
+      "title": "ITU"
+    },
+    {
+      "title": "Hiperfiltração e creatinina: o que significa um valor “normal”?"
+    },
+    {
+      "title": "Alterações dos ureteres e dilatação fisiológica"
+    },
+    {
+      "title": "Polaciúria, glicosúria e bacteriúria: três coisas diferentes"
+    },
+    {
+      "title": "Por que a gestante é mais vulnerável à pielonefrite?"
+    },
+    {
+      "title": "O “osmostato” é reajustado na gravidez"
+    },
+    {
+      "title": "7. Sistema gastrointestinal e hepático"
+    },
+    {
+      "title": "Progesterona e efeito mecânico"
+    },
+    {
+      "title": "Náuseas × hiperêmese"
+    },
+    {
+      "title": "Fígado"
+    },
+    {
+      "title": "Por que a gestante apresenta pirose e constipação?"
+    },
+    {
+      "title": "Náuseas e vômitos comuns versus hiperêmese gravídica"
+    },
+    {
+      "title": "Vesícula biliar, bile e enzimas hepáticas"
+    },
+    {
+      "title": "O prurido que parece dermatológico, mas pode ser hepatobiliar"
+    },
+    {
+      "title": "8. Sistema endócrino e metabolismo"
+    },
+    {
+      "title": "Metabolismo da glicose"
+    },
+    {
+      "title": "Tireoide"
+    },
+    {
+      "title": "Cortisol/SRAA"
+    },
+    {
+      "title": "Lipídios"
+    },
+    {
+      "title": "Metabolismo em duas fases: armazenamento e resistência insulínica"
+    },
+    {
+      "title": "Tireoide: por que T4 total e TSH podem mudar em sentidos diferentes?"
+    },
+    {
+      "title": "Cortisol e eixo adrenal: concentração total não é atividade livre"
+    },
+    {
+      "title": "SRAA e sede: por que aumenta o volume sem haver hipertensão fisiológica?"
+    },
+    {
+      "title": "Lipídios: hipertrigliceridemia adaptativa versus pancreatite"
+    },
+    {
+      "title": "Eixo hipofisário e lactação: produção não é ejeção"
+    },
+    {
+      "title": "9. Sistema imunológico"
+    },
+    {
+      "title": "Tolerância materno-fetal não é ausência de defesa imune"
+    },
+    {
+      "title": "Infecções e vacinas: o que muda na prática?"
+    },
+    {
+      "title": "Interface materno-fetal: que célula faz o quê?"
+    },
+    {
+      "title": "10. Sistema musculoesquelético"
+    },
+    {
+      "title": "Centro de gravidade, bacia e dor lombopélvica"
+    },
+    {
+      "title": "Diástase abdominal, parede pélvica e retorno após o parto"
+    },
+    {
+      "title": "Carência de cálcio e adaptações ósseas: o que é esperado?"
+    },
+    {
+      "title": "11. Sistema neurológico e sono"
+    },
+    {
+      "title": "Sono e fadiga: hormônios, respiração e posição"
+    },
+    {
+      "title": "Parestesias e síndrome do túnel do carpo"
+    },
+    {
+      "title": "Cefaleia fisiológica? O risco está na evolução"
+    },
+    {
+      "title": "12. Pele, anexos e mamas"
+    },
+    {
+      "title": "Por que aparecem melasma, linha nigra e estrias?"
+    },
+    {
+      "title": "Mama, glândulas de Montgomery e colostro"
+    },
+    {
+      "title": "Dermatoses específicas da gestação e colestase: reconhecer a diferença"
+    },
+    {
+      "title": "Leitura funcional da mama antes e depois do parto"
+    },
+    {
+      "title": "12A. Adaptações do útero, colo, vagina e vulva"
+    },
+    {
+      "title": "Útero antes da gravidez: o que precisa ser entendido"
+    },
+    {
+      "title": "Crescimento uterino e avaliação clínica: posição, altura e limites"
+    },
+    {
+      "title": "Colo uterino: amolecimento, muco protetor e amadurecimento"
+    },
+    {
+      "title": "Vagina e vulva: vascularização, microbiota e secreções"
+    },
+    {
+      "title": "Sinais clássicos de gravidez: úteis para a prova, insuficientes para confirmar"
+    },
+    {
+      "title": "Fisiológico ou patológico? Comparação aplicada"
+    },
+    {
+      "title": "Casos comentados — aplicação imediata"
+    },
+    {
+      "title": "Autoteste do capítulo"
+    },
+    {
+      "title": "13. Laboratório: o que muda e o que isso significa"
+    },
+    {
+      "title": "Comparar com a fisiologia da gestação"
+    },
+    {
+      "title": "Interpretação por tendência, trimestre e contexto clínico"
+    },
+    {
+      "title": "Hemograma e ferritina"
+    },
+    {
+      "title": "Rim, urina e equilíbrio ácido-base"
+    },
+    {
+      "title": "Tireoide, fígado e metabolismo"
+    },
+    {
+      "title": "Não confunda valores de referência com limiares de intervenção"
+    },
+    {
+      "title": "14. Implicações em urgência, cirurgia e anestesia"
+    },
+    {
+      "title": "Primeiro princípio: não confundir fisiologia com estabilidade clínica"
+    },
+    {
+      "title": "Posição e hemodinâmica em procedimentos"
+    },
+    {
+      "title": "Ventilação e via aérea: menos tempo de segurança"
+    },
+    {
+      "title": "Hemorragia: adaptação de volume não afasta gravidade"
+    },
+    {
+      "title": "Puerpério: janela hemodinâmica de risco"
+    },
+    {
+      "title": "15. Farmacocinética na gestação"
+    },
+    {
+      "title": "Absorção: nem toda mudança gastrointestinal altera igual todos os remédios"
+    },
+    {
+      "title": "Distribuição: água corporal e ligação a proteínas"
+    },
+    {
+      "title": "Metabolismo e eliminação renal"
+    },
+    {
+      "title": "Placenta, segurança fetal e momento de exposição"
+    },
+    {
+      "title": "Exemplo de interpretação farmacocinética"
+    },
+    {
+      "title": "Concentração total e fração livre: exercício de interpretação"
+    },
+    {
+      "title": "16. Fisiológico × doença: quadro de decisão"
+    },
+    {
+      "title": "Regra prática"
+    },
+    {
+      "title": "Como distinguir adaptação de doença na anamnese?"
+    },
+    {
+      "title": "Quando a falta de ar é doença?"
+    },
+    {
+      "title": "Quando o edema não é apenas dependente?"
+    },
+    {
+      "title": "Polaciúria sem infecção versus infecção urinária"
+    },
+    {
+      "title": "Laboratório: três exemplos em que o número engana"
+    },
+    {
+      "title": "Antes de classificar como fisiológico: roteiro de segurança"
+    },
+    {
+      "title": "17. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — Dispneia aos esforços: por que nem tudo é tromboembolismo?"
+    },
+    {
+      "title": "Caso 2 — Creatinina de 1,0 mg/dL: laboratório normal, paciente anormal?"
+    },
+    {
+      "title": "Caso 3 — Plaquetas de 128 mil: quando o diagnóstico muda?"
+    },
+    {
+      "title": "Caso 4 — PaCO₂ de 40 mmHg: por que “normal” pode ser perigoso?"
+    },
+    {
+      "title": "Caso 5 — Hipotensão durante ultrassonografia"
+    },
+    {
+      "title": "Caso 6 — Prurido sem lesões primárias"
+    },
+    {
+      "title": "Caso 7 — Hemoglobina 10,7 g/dL no segundo trimestre"
+    },
+    {
+      "title": "Caso 8 — TSH de 3,2 no primeiro trimestre"
+    },
+    {
+      "title": "Caso 9 — Polaciúria fisiológica ou infecção?"
+    },
+    {
+      "title": "Caso 10 — Dispneia no puerpério: a gestação já terminou"
+    },
+    {
+      "title": "Fixação ativa: tente responder antes de abrir"
+    },
+    {
+      "title": "18. Revisão de alto rendimento"
+    },
+    {
+      "title": "19. Autoteste clínico — aprender sem consultar outra apostila"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "Brasil. Ministério da Saúde. Atenção ao pré-natal de baixo risco e materiais de pré-natal/puerpério.",
+    "FEBRASGO. Diretrizes e recomendações em obstetrícia.",
+    "Soma-Pillay P, et al. Physiological changes in pregnancy. Cardiovasc J Afr.",
+    "Costantine MM. Physiologic and pharmacokinetic changes in pregnancy.",
+    "Collins HE, et al. Guidelines for assessing maternal cardiovascular physiology during pregnancy and postpartum. Am J Physiol Heart Circ Physiol. 2024.",
+    "Natural Physiological Changes During Pregnancy. Review, 2024.",
+    "Merck Manual Professional. Physiology of Pregnancy.",
+    "NICE. Antenatal care.",
+    "WHO. Recommendations on antenatal care for a positive pregnancy experience.",
+    "Large-scale pregnancy/postpartum laboratory dynamics study, 2025.",
+    "OMS (2024). Guideline on haemoglobin cutoffs to define anaemia in individuals and populations.",
+    "Understanding hepcidin for iron management in pregnancy (2025).",
+    "Blood Flow and Respiratory Gas Exchange in the Human Placenta at Term (2022/2023).",
+    "Osmoregulation, secretion and metabolism of vasopressin during pregnancy (1995).",
+    "OMS. The physiological basis of breastfeeding.",
+    "Merck Manual Professional, Physiology of Pregnancy (revisado em 2024). Alterações hemodinâmicas, respiratórias, hematológicas e renais.",
+    "OMS. Guideline on haemoglobin cutoffs to define anaemia in individuals and populations. 2024. Critérios de Hb por trimestre."
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov;",
+    "https://www.merckmanuals.com/professional/gynecology-and-obstetrics/approach-to-the-pregnant-woman-and-prenatal-care/evaluation-of-the-obstetric-patient",
+    "https://openstax.org/books/maternal-newborn-nursing/pages/10-1-physiologic-changes-due-to-pregnancy",
+    "https://www.ncbi.nlm.nih.gov/books/NBK615334/table/ch9.tab4/",
+    "https://www.acog.org/giving/programs/quality-and-safety/resources",
+    "https://www.who.int/publications-detail-redirect/9789240088542",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11999002/",
+    "https://pubmed.ncbi.nlm.nih.gov/36527666/",
+    "https://pubmed.ncbi.nlm.nih.gov/7858729/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK148970/",
+    "https://www.merckmanuals.com/professional/gynecology-and-obstetrics/approach-to-the-pregnant-woman-and-prenatal-care/physiology-of-pregnancy"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Vasodilatação, elevação da pressão venosa nos membros inferiores, menor pressão oncótica relativa por hemodiluição e compressão pélvica favorecem edema bilateral gradual, especialmente ao fim do dia. Edema isolado, mesmo importante, não faz parte dos critérios diagnósticos contemporâneos de pré-eclâmpsia. A investigação muda diante de hipertensão, cefaleia persistente, alterações visuais, dor epigástrica, dispneia, piora renal ou alterações laboratoriais."
+    },
+    {
+      "text": "A pressão pode cair discretamente no início e na metade da gestação, mas hipertensão sustentada a partir de 140/90 mmHg merece avaliação, enquanto níveis de 160/110 mmHg ou mais configuram hipertensão grave e requerem atendimento urgente. A decisão não se baseia apenas no número: sintomas, proteinúria quando pertinente, plaquetas, creatinina, transaminases e avaliação fetal ajudam a definir a síndrome. Hipertensão não deve ser interpretada como consequência normal da expansão volêmica."
+    },
+    {
+      "text": "A diretriz da OMS de 2024 define anemia em gestantes por hemoglobina abaixo de 11,0 g/dL no primeiro e terceiro trimestres e abaixo de 10,5 g/dL no segundo trimestre. Esses cortes são úteis em provas, mas não substituem investigação etiológica. Uma gestante no segundo trimestre com Hb 10,7 g/dL pode estar acima do corte diagnóstico e ainda assim ter reservas de ferro esgotadas; por outro lado, queda progressiva acentuada de Hb ou sintomas desproporcionais requerem avaliação independentemente da etiqueta de “fisiológica”."
+    },
+    {
+      "text": "É comum haver discreta redução progressiva da contagem plaquetária por hemodiluição, maior consumo periférico e mudanças de turnover. Trombocitopenia gestacional costuma ser incidental, leve, de início mais tardio, sem sangramento ou outras citopenias e com resolução após o parto. Entretanto, é um diagnóstico de exclusão: contagem inferior a 100.000/µL, queda rápida, surgimento precoce, história de sangramento ou associação com hipertensão, hemólise e lesão hepática deve fazer buscar outras etiologias."
+    },
+    {
+      "text": "No diferencial entram pré-eclâmpsia com sinais de gravidade, HELLP, púrpura trombocitopênica imune, microangiopatias trombóticas, sepse, fármacos e doenças hematológicas. Cada uma tem dinâmica e repercussões próprias. Uma contagem de 128.000/µL em gestante de 36 semanas, normotensa e assintomática pode ser compatível com trombocitopenia gestacional; a mesma contagem com dor epigástrica, hipertensão e elevação de transaminases obriga a mudar de hipótese."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

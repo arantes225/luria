@@ -1,0 +1,118 @@
+{
+  "sha": "62985af469ba7e6ef6ab43a62588bd0cc93b86d8",
+  "path": "apostilas/malformacoes-sindromes-geneticas/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "malformacoes-sindromes-geneticas--62985af469",
+  "title": "LURIA — Apostila 241: Malformações congênitas, síndromes genéticas e avaliação inicial",
+  "format": ".md",
+  "chars_estimated": 21358,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 241: Malformações congênitas, síndromes genéticas e avaliação inicial"
+    },
+    {
+      "title": "1. Definições e perspectiva clínica"
+    },
+    {
+      "title": "2. Embriologia e mecanismos"
+    },
+    {
+      "title": "3. O exame clínico que identifica pistas"
+    },
+    {
+      "title": "4. Diagnóstico: o que cada exame oferece"
+    },
+    {
+      "title": "4.1 Interpretação de variantes"
+    },
+    {
+      "title": "5. Trissomia 21 (síndrome de Down)"
+    },
+    {
+      "title": "6. Trissomias 18/13 e cromossomopatias sexuais"
+    },
+    {
+      "title": "7. Microdeleções e síndromes comuns para prova"
+    },
+    {
+      "title": "8. Defeitos de tubo neural e outras malformações do SNC"
+    },
+    {
+      "title": "9. Defeitos de parede abdominal e trato gastrointestinal"
+    },
+    {
+      "title": "10. Defeitos cardíacos, renais e de membros: integração"
+    },
+    {
+      "title": "11. Diferenças do desenvolvimento sexual (DDS)"
+    },
+    {
+      "title": "12. Triagem neonatal e saúde pública no Brasil"
+    },
+    {
+      "title": "13. Aconselhamento familiar e seguimento"
+    },
+    {
+      "title": "14. Algoritmo de manejo"
+    },
+    {
+      "title": "15. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "16. Seis questões autorais comentadas"
+    },
+    {
+      "title": "17. Matriz de imagens (a pesquisar e licenciar)"
+    },
+    {
+      "title": "18. Referências primárias verificáveis"
+    },
+    {
+      "title": "19. Auditoria de completude pendente"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Anomalias Congênitas**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/anomalias-congenitas",
+    "2. Ministério da Saúde. **Triagem Neonatal**. https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal",
+    "3. Manickam K et al. **Exome and genome sequencing for pediatric patients with congenital anomalies or intellectual disability: ACMG evidence-based clinical guideline**. Genet Med. 2021;23:2029–2037. doi:10.1038/s41436-021-01242-6. https://pubmed.ncbi.nlm.nih.gov/34211152/",
+    "4. ACMG. **Addendum: Yield of additional genetic testing after chromosomal microarray**. Genet Med. 2025. doi:10.1016/j.gim.2024.101335. https://www.gimjournal.org/article/S1098-3600%2824%2900269-7/fulltext"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/anomalias-congenitas",
+    "https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal",
+    "https://pubmed.ncbi.nlm.nih.gov/34211152/",
+    "https://www.gimjournal.org/article/S1098-3600%2824%2900269-7/fulltext"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A **ACMG 2021 recomenda fortemente considerar sequenciamento de exoma ou genoma como teste de primeira ou segunda linha** em crianças com anomalias congênitas iniciadas antes de um ano, atraso do desenvolvimento ou deficiência intelectual. Isto **não significa** que toda criança com anomalia isolada banal precisa de exoma, nem que microarray está obsoleto: a escolha considera fenótipo, acesso, custos, aconselhamento, resultados familiares e capacidade interpretativa."
+    },
+    {
+      "text": "Variantes podem ser patogênicas, provavelmente patogênicas, de significado incerto (VUS), provavelmente benignas ou benignas, conforme critérios. **VUS não é diagnóstico definitivo e não deve orientar intervenções irreversíveis sem evidências adicionais.** Resultados secundários/incidentes necessitam discussão pré-teste sobre consentimento, implicações familiares e privacidade. Resultado negativo não exclui causa genética: limitações técnicas, variantes não detectadas e conhecimento evolutivo justificam reanálise quando apropriado."
+    },
+    {
+      "text": "**Conduta neonatal:** avaliação cardíaca por ecocardiografia conforme protocolo, triagem auditiva/visual, exame de tireoide, alimentação/deglutição, desenvolvimento e orientações de acompanhamento. A função global depende de suporte clínico, terapia e ambiente; não predizer habilidades individuais por diagnóstico genético isolado."
+    },
+    {
+      "text": "**Trissomia 18:** frequentemente restrição de crescimento, deformidades de mãos/pés, alterações cardíacas e múltiplas malformações, com morbimortalidade significativa; há heterogeneidade conforme mosaicismo e quadro. **Trissomia 13:** malformações de linha média/SNC/face, cardiopatias e polidactilia podem ocorrer, com prognóstico variável. **Síndrome de Turner (45,X e variantes):** baixa estatura, disgenesia gonadal, anomalias cardíacas/renais, linfedema neonatal e risco de atraso puberal. Em meninas com baixa estatura sem causa clara, Turner pode ocorrer sem sinais dismórficos marcantes. **Klinefelter (47,XXY):** pode manifestar-se com alter"
+    },
+    {
+      "text": "| Síndrome | Mecanismo comum | Pistas clínicas | Vigilância clínica | |---|---|---|---| | Deleção 22q11.2 | CNV | Cardiopatia conotruncal, palato, hipocalcemia, imunodeficiência | Cálcio, imunologia, cardiologia, desenvolvimento | | Williams | Deleção 7q11.23 | Estenose supravalvar aórtica, hipercalcemia em alguns, perfil neurocognitivo | Cardiologia/pressão e desenvolvimento | | Prader-Willi | Falha de expressão paterna 15q11-q13 | Hipotonia neonatal, sucção fraca, hiperfagia mais tarde | Nutrição/endocrinologia, diagnóstico metilação | | Angelman | Falha de expressão materna UBE3A em SNC | Atraso importante, epilepsia, ataxia, padrão compor"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

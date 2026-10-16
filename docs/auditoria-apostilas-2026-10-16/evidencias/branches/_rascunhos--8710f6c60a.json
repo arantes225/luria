@@ -1,0 +1,202 @@
+{
+  "sha": "8710f6c60a3dac730af865b6321275970543943a",
+  "path": "apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--8710f6c60a",
+  "title": "LURIA — Lote 7 · Aula 137",
+  "format": ".md",
+  "chars_estimated": 27658,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 137"
+    },
+    {
+      "title": "Doença do refluxo gastroesofágico (DRGE) e hérnia hiatal"
+    },
+    {
+      "title": "0. Etapa zero — comparação e lacunas"
+    },
+    {
+      "title": "1. Definição clínica, do mecanismo ao sofrimento"
+    },
+    {
+      "title": "2. Anatomia e defesa antirrefluxo"
+    },
+    {
+      "title": "3. Fatores de risco e história dirigida"
+    },
+    {
+      "title": "4. Quatro tipos de hérnia hiatal"
+    },
+    {
+      "title": "5. Diagnóstico: quando a clínica basta e quando o teste muda o plano"
+    },
+    {
+      "title": "5.1. Teste terapêutico com IBP"
+    },
+    {
+      "title": "5.2. Endoscopia digestiva alta"
+    },
+    {
+      "title": "5.3. pHmetria e impedanciometria — dois cenários distintos"
+    },
+    {
+      "title": "5.4. Sensibilidade ao refluxo e pirose funcional"
+    },
+    {
+      "title": "5.5. Manometria"
+    },
+    {
+      "title": "5.6. Radiografia contrastada/esofagograma"
+    },
+    {
+      "title": "6. Diagnósticos diferenciais que mudam a decisão"
+    },
+    {
+      "title": "7. Tratamento clínico por mecanismos"
+    },
+    {
+      "title": "7.1. Medidas comportamentais úteis"
+    },
+    {
+      "title": "7.2. IBP — uso correto"
+    },
+    {
+      "title": "7.3. Antiácidos, alginatos, antagonistas H2 e procinéticos"
+    },
+    {
+      "title": "7.4. Complicações"
+    },
+    {
+      "title": "8. Indicações cirúrgicas: confirmar antes de operar"
+    },
+    {
+      "title": "8.1. Hérnia paraesofágica assintomática"
+    },
+    {
+      "title": "8.2. Volvo gástrico e estrangulamento"
+    },
+    {
+      "title": "9. Populações especiais"
+    },
+    {
+      "title": "10. Algoritmos práticos"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — DRGE típica sem sinais de alarme"
+    },
+    {
+      "title": "Caso 2 — pirose persistente e teste normal"
+    },
+    {
+      "title": "Caso 3 — hérnia hiatal tipo III com anemia e dispneia"
+    },
+    {
+      "title": "Caso 4 — retching, dor e volvo"
+    },
+    {
+      "title": "12. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — abordagem inicial"
+    },
+    {
+      "title": "Questão 2 — pHmetria"
+    },
+    {
+      "title": "Questão 3 — teste on/off IBP"
+    },
+    {
+      "title": "Questão 4 — hérnia tipo II"
+    },
+    {
+      "title": "Questão 5 — manometria"
+    },
+    {
+      "title": "Questão 6 — hérnia e tela"
+    },
+    {
+      "title": "13. Pérolas para prova e prática"
+    },
+    {
+      "title": "14. Camada de imagens candidatas (não incorporadas)"
+    },
+    {
+      "title": "15. Referências"
+    },
+    {
+      "title": "16. Auditoria parcial"
+    }
+  ],
+  "reference_entries": [
+    "1. Katz PO et al. ACG Clinical Guideline: Diagnosis and Management of GERD. *Am J Gastroenterol*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/",
+    "2. Gyawali CP et al. Lyon Consensus 2.0. *Gut*. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10846564/",
+    "3. SAGES. Guidelines for Surgical Treatment of Hiatal Hernias. 2024. https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-hiatal-hernias/",
+    "4. SAGES. Guidelines for Surgical Treatment of GERD. 2021. https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-gastroesophageal-reflux-gerd/",
+    "5. SAGES. Multi-Society Consensus Conference and Guideline on Treatment of GERD. 2022. https://www.sages.org/publications/guidelines/multi-society-consensus-conference-and-guideline-on-the-treatment-of-gerd/",
+    "- [x] Leitura do PDF correlato no Drive (mapa curto) e comparação com LURIA padronizada.",
+    "- [x] Fisiologia, clínica, critérios, testes on/off IBP, hérnias, manejo, cirurgia, 4 casos e 6 questões comentadas.",
+    "- [ ] Aprofundar epidemiologia brasileira, estudo funcional esofágico, Barrett por risco, técnicas cirúrgicas e complicações de reoperação.",
+    "- [ ] Validar doses completas/ajuste e acesso brasileiro, fontes nacionais e consensos brasileiros.",
+    "- [ ] Selecionar exames/imagens reais com licença e aprovação Admin.",
+    "- [ ] Aferir/autossuficiência e ≥60.000 caracteres didáticos úteis sem repetição.",
+    "- [ ] Revisão clínica formal, geração HTML, testes de sintaxe e responsividade desktop/PWA.",
+    "**Status:** rascunho em produção, não finalizado."
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10846564/",
+    "https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-hiatal-hernias/",
+    "https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-gastroesophageal-reflux-gerd/",
+    "https://www.sages.org/publications/guidelines/multi-society-consensus-conference-and-guideline-on-the-treatment-of-gerd/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Apostila LURIA de referência visual auditada:** \\`apostilas/infertilidade-conjugal/index.html\\` já contém índice hierárquico, resumos rápidos, mecanismos, clínica, diagnóstico e casos; o HTML não será alterado e foi usado apenas como referência da profundidade e da organização, sem importar seus estilos para Markdown."
+    },
+    {
+      "text": "Se sintomas persistem: primeiro verificar diagnóstico, **horário do IBP** (normalmente 30–60 minutos antes da refeição para fármacos convencionais), uso contínuo, dose e outros problemas. Escalar doses sem revisar aderência e sem avaliar diagnósticos alternativos é erro frequente."
+    },
+    {
+      "text": "Lyon 2.0 reforça evidências endoscópicas conclusivas de DRGE, incluindo esofagite LA B, C, D em condições apropriadas, estenose péptica e Barrett de segmento longo, com particularidades de diagnóstico e técnica. Não equiparar LA A isolada e pequena hérnia incidental a confirmação incontestável de causa para tosse crônica."
+    },
+    {
+      "text": "**Falha ao IBP:** revisar horário, aderência, dose e probabilidade de diagnóstico; considerar tentativa otimizada em casos selecionados e investigação objetiva. A pessoa com tosse isolada e sem sintomas típicos não deve ser submetida automaticamente a meses de IBP empírico; ACG recomenda avaliação de causas alternativas e testes conforme apresentação."
+    },
+    {
+      "text": "**Fundoplicatura Nissen (360°):** constrói envoltório completo; maior pressão de barreira em casos adequados, mas pode causar disfagia, incapacidade de arrotar/vomitar e distensão gasosa. **Fundoplicatura parcial (p. ex., Toupet 270°):** pode reduzir disfagia em alguns perfis, especialmente com motilidade reduzida, mas escolha depende de anatomia e experiência. Não declarar uma técnica superior para todos. **Reparo hiatal:** redução do estômago, dissecção do saco quando pertinente, aproximação dos pilares e avaliação de necessidade de fundoplicatura. Uso rotineiro de **tela** em reparo de hérnia hiatal tipo II–IV tem evidência insuficiente pa"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,110 @@
+{
+  "sha": "d61cdd720bedd382a518acfb9b4dd88292fecb69",
+  "path": "apostilas/sepse-choque-septico/complemento-editorial-03-lote08.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "sepse-choque-septico--d61cdd720b",
+  "title": "LURIA — Aula 161 | Sepse e choque séptico",
+  "format": ".md",
+  "chars_estimated": 20389,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 161 | Sepse e choque séptico"
+    },
+    {
+      "title": "Complemento editorial 03 — raciocínio avançado e prevenção de erros"
+    },
+    {
+      "title": "Registro obrigatório da etapa zero — realizado parcialmente"
+    },
+    {
+      "title": "Lacunas identificadas no acervo LURIA"
+    },
+    {
+      "title": "1. SOFA: aprender a pontuar e interpretar a mudança"
+    },
+    {
+      "title": "SOFA não é triagem universal"
+    },
+    {
+      "title": "2. Perfusão: por que lactato e pressão não contam toda a história"
+    },
+    {
+      "title": "3. Hipovolemia, cardiogênico e obstrutivo podem coexistir com infecção"
+    },
+    {
+      "title": "4. SSC 2026: o que efetivamente mudou na tomada de decisão"
+    },
+    {
+      "title": "5. Antibiótico certo, exposição certa, tempo certo"
+    },
+    {
+      "title": "6. Controle do foco: decisões concretas"
+    },
+    {
+      "title": "7. Complicações de órgãos e o plano que costuma faltar"
+    },
+    {
+      "title": "8. Epidemiologia brasileira: por que o dado do ILAS não deve ser generalizado"
+    },
+    {
+      "title": "9. Síndrome pós-sepse e transição após a alta"
+    },
+    {
+      "title": "10. Novos casos clínicos comentados"
+    },
+    {
+      "title": "11. Oito questões autorais adicionais, comentadas"
+    },
+    {
+      "title": "12. Recursos visuais planejados, não aprovados"
+    },
+    {
+      "title": "13. Referências e auditoria"
+    }
+  ],
+  "reference_entries": [
+    "1. Prescott HC et al. **Surviving Sepsis Campaign 2026.** Critical Care Medicine, março 2026. DOI 10.1097/CCM.0000000000007075. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "2. Prescott HC et al. **Surviving Sepsis Campaign 2026.** Intensive Care Medicine. 2026;52:863–936. https://doi.org/10.1007/s00134-026-08361-1",
+    "3. ILAS. **Relatório Nacional 2025.** Publicado em fevereiro de 2026; amostra de hospitais do programa, não representativa de todos os hospitais brasileiros. https://ilas.org.br/wp-content/uploads/2026/02/Relatorio-Nacional-ILAS-2025-1.pdf",
+    "4. ILAS. **Protocolo clínico de 2018.** Documento histórico para comparativo de implantação, não substitui SSC 2026. https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf",
+    "**Auditoria:** preservados os dois rascunhos anteriores; ampliados SOFA numérico, comparações, perfusão, novas recomendações, pós-sepse, cinco casos e oito questões. **Pendentes:** consolidação sem repetição, revisão de doses/antimicrobianos por equipe assistencial e CCIH, referências por afirmação, imagens licenciadas e aprovadas, teste de autossuficiência, alcance de 60 mil caracteres úteis, validação editorial e renderização desktop/PWA. **Não gerar index.html e não publicar esta apostila.**"
+  ],
+  "external_urls": [
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "https://doi.org/10.1007/s00134-026-08361-1",
+    "https://ilas.org.br/wp-content/uploads/2026/02/Relatorio-Nacional-ILAS-2025-1.pdf",
+    "https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Exemplo 2:** paciente com cirrose mantém bilirrubina basal 3 mg/dL e plaquetas 90 mil; apresenta infecção urinária sem piora orgânica demonstrável. O valor basal do SOFA já é elevado. Não rotular a presença de sepse grave apenas somando alterações crônicas; pesquisar variação e evolução clínica."
+    },
+    {
+      "text": "A SSC 2026 recomenda, em hospital, **NEWS/NEWS2, MEWS ou SIRS em preferência ao qSOFA quando se utiliza uma única ferramenta de rastreamento**. Isso não transforma SIRS em definição de sepse. Ferramentas de rastreamento buscam sensibilidade; SOFA e julgamento clínico ajudam a caracterizar disfunção. qSOFA negativo não afasta risco quando há hipoxemia, hipoperfusão ou queda de plaquetas."
+    },
+    {
+      "text": "Na **hipoperfusão induzida por sepse ou choque**, a recomendação de cristaloides de pelo menos **30 mL/kg nas primeiras três horas** é **condicional**, com certeza baixa e exigência de reavaliação. Não transformar a conta em ordem fixa sem examinar cardiopatia, função renal, congestão e resposta. Em obesidade com IMC acima de 30 kg/m², a diretriz menciona o peso ajustado ou ideal na estimativa."
+    },
+    {
+      "text": "Para choque muito instável, vasopressores podem começar durante ressuscitação de volume, sem aguardar bolus excessivos; início periférico monitorizado pode evitar atrasos durante obtenção de acesso central. **Noradrenalina** permanece primeira linha. A meta de PAM usual em adultos é ~65 mmHg, individualizada pela perfusão; em pacientes de 65 anos ou mais a diretriz sugere faixa inicial de **60–65 mmHg** em vez de perseguir pressões mais altas rotineiramente."
+    },
+    {
+      "text": "Em choque com doses crescentes de noradrenalina, considerar **vasopressina** como adjuvante; se persistir PAM inadequada apesar de ambas, considerar adrenalina segundo diretriz e estado clínico. **Terlipressina não é tratamento rotineiro recomendado do choque séptico**. Escalonar sem procurar foco, déficit de volume residual, disfunção miocárdica ou problema de infusão é erro."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

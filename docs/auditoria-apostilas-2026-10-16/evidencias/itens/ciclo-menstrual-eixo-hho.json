@@ -1,0 +1,873 @@
+{
+  "key": "ciclo-menstrual-eixo-hho",
+  "kind": "apostila-html",
+  "path": "apostilas/ciclo-menstrual-eixo-hho/index.html",
+  "html_path": "apostilas/ciclo-menstrual-eixo-hho/index.html",
+  "title": "Ciclo Menstrual e Eixo HHO",
+  "source_sha256": "b1b270f73905c87a11df9deb5f7ffaff4267af140bae1222065acfd4131b1a3a",
+  "html_sha256": "b1b270f73905c87a11df9deb5f7ffaff4267af140bae1222065acfd4131b1a3a",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos fundamentais e o que é um ciclo normal",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Arquitetura do eixo hipotálamo-hipófise-ovário",
+      "section": "eixo"
+    },
+    {
+      "tag": "H3",
+      "title": "2.1 GnRH: por que precisa ser pulsátil?",
+      "section": "eixo"
+    },
+    {
+      "tag": "H3",
+      "title": "2.2 Kisspeptina e neurônios KNDy",
+      "section": "eixo"
+    },
+    {
+      "tag": "H3",
+      "title": "2.3 O eixo também “ouve” o estado metabólico",
+      "section": "eixo"
+    },
+    {
+      "tag": "H3",
+      "title": "2.4 Feedback negativo e positivo",
+      "section": "eixo"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Esteroidogênese: modelo das duas células–duas gonadotrofinas",
+      "section": "esteroidogenese"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Foliculogênese: do folículo primordial ao dominante",
+      "section": "foliculogenese"
+    },
+    {
+      "tag": "H3",
+      "title": "4.1 AMH e reserva folicular",
+      "section": "foliculogenese"
+    },
+    {
+      "tag": "H3",
+      "title": "4.2 A janela de FSH",
+      "section": "foliculogenese"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Fase folicular: a parte variável do ciclo",
+      "section": "folicular"
+    },
+    {
+      "tag": "H3",
+      "title": "5.1 Sequência hormonal",
+      "section": "folicular"
+    },
+    {
+      "tag": "H3",
+      "title": "5.2 O que o estradiol faz fora do ovário?",
+      "section": "folicular"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Ovulação: o que realmente acontece",
+      "section": "ovulacao"
+    },
+    {
+      "tag": "H3",
+      "title": "6.1 Surto de LH",
+      "section": "ovulacao"
+    },
+    {
+      "tag": "H3",
+      "title": "6.2 Efeitos do LH",
+      "section": "ovulacao"
+    },
+    {
+      "tag": "H3",
+      "title": "6.3 Oócito e meiose",
+      "section": "ovulacao"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Fase lútea: corpo lúteo e progesterona",
+      "section": "lutea"
+    },
+    {
+      "tag": "H3",
+      "title": "7.1 Efeitos da progesterona",
+      "section": "lutea"
+    },
+    {
+      "tag": "H3",
+      "title": "7.2 Por que a fase lútea é mais constante?",
+      "section": "lutea"
+    },
+    {
+      "tag": "H3",
+      "title": "7.3 Luteólise",
+      "section": "lutea"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Ciclo endometrial: proliferativo, secretor e menstrual",
+      "section": "endometrio"
+    },
+    {
+      "tag": "H3",
+      "title": "8.1 Menstruação não é simples “falta de hormônio”",
+      "section": "endometrio"
+    },
+    {
+      "tag": "H3",
+      "title": "8.2 Decidualização",
+      "section": "endometrio"
+    },
+    {
+      "tag": "H2",
+      "title": "9. O que muda se ocorrer fecundação e implantação?",
+      "section": "gestacao"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Janela fértil e sinais de ovulação",
+      "section": "fertilidade"
+    },
+    {
+      "tag": "H2",
+      "title": "Janela fértil na prática: não confundir estimativa, predição e confirmação",
+      "section": "janela-fertil-casos-aplicados"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — ciclo de 35 dias e progesterona no dia 21",
+      "section": "janela-fertil-casos-aplicados"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — teste de LH positivo: a ovulação está comprovada?",
+      "section": "janela-fertil-casos-aplicados"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — tentativas de concepção sem infertilidade conhecida",
+      "section": "janela-fertil-casos-aplicados"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Exames hormonais: quando pedir e como interpretar",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "11.1 Não existe “painel hormonal obrigatório no D3–D5” para toda paciente",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "11.2 Padrões de localização da disfunção",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "O dia da coleta faz parte do resultado",
+      "section": "exames"
+    },
+    {
+      "tag": "H2",
+      "title": "O mesmo eixo em três fases da vida: adolescência, lactação e transição menopausal",
+      "section": "ciclo-adolescencia-lactacao-perimenopausa"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescência: sangramento menstrual não significa necessariamente ovulação",
+      "section": "ciclo-adolescencia-lactacao-perimenopausa"
+    },
+    {
+      "tag": "H3",
+      "title": "Lactação: sucção, prolactina e menor atividade gonadotrófica",
+      "section": "ciclo-adolescencia-lactacao-perimenopausa"
+    },
+    {
+      "tag": "H3",
+      "title": "Perimenopausa: não é apenas “FSH alto e estradiol baixo”",
+      "section": "ciclo-adolescencia-lactacao-perimenopausa"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Quando o eixo falha: aplicações clínicas sem misturar fisiologia",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H3",
+      "title": "12.1 Amenorreia secundária: raciocínio inicial",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H3",
+      "title": "12.2 Amenorreia hipotalâmica funcional",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H3",
+      "title": "12.3 Insuficiência ovariana primária",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H3",
+      "title": "12.4 PMOS/SOP",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H3",
+      "title": "12.5 Hiperprolactinemia",
+      "section": "disfuncoes"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Casos clínicos comentados",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — atleta com amenorreia",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — “progesterona baixa no D21”",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — ciclos longos e hiperandrogenismo",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — amenorreia com FSH alto",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Revisão de prova: armadilhas que mais derrubam",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Questões rápidas",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Aprofundamento neuroendócrino e integração clínica",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "GnRH, frequência de pulsos e seletividade gonadotrófica",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Inibinas, ativina e follistatina",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Seleção do folículo dominante",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Corpo lúteo e implantação",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Como o eixo traduz energia, estresse e doença",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Falhas em cada nível do eixo",
+      "section": "editorial-depth-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Janela fértil e marcadores",
+      "section": "editorial-depth-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Integração avançada da fisiologia do ciclo menstrual: do pulso de GnRH ao endométrio",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.1 O hipotálamo produz um sinal temporal, não apenas uma concentração",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.2 FSH e LH não fazem a mesma coisa no folículo ovariano\"), No modelo das duas células e duas gonadotrofinas, o LH estimula principalmente células da teca a produzirem precursores androgênicos, enquanto o FSH atua nas células da granulosa, promovendo diferenciação e atividade de aromatase, que converte androgênios em estrogênios. É uma simplificação útil para explicar cooperação celular, embora a expressão de receptores mude conforme a maturação folicular. A produção de estradiol depende, assim, tanto de fornecimento de substratos quanto da capacidade de conversão local. Não é correto afirmar que o ovário simplesmente 'libera estrogênio' sem reconhecer a ação coordenada dessas populações celulares.\"), Durante a fase folicular, uma elevação de FSH recruta e sustenta o crescimento de folículos antrais. Com o avanço do desenvolvimento, a granulosa produz estradiol e inibina B, que ajudam a reduzir FSH por feedback. O folículo dominante adquire características que lhe permitem continuar crescendo em um ambiente no qual a concentração de FSH já diminui. Outros folículos em desenvolvimento podem sofrer atresia. Essa seleção fisiológica explica por que geralmente apenas um folículo completa o processo ovulatório em ciclos espontâneos, embora existam variações e ovulações múltiplas.\"), A inibina B participa especialmente da modulação do FSH na fase folicular, enquanto a inibina A aparece com maior relevância na fase lútea. O AMH é produzido por folículos em fases precoces de crescimento e se relaciona à população de folículos em desenvolvimento. Sua dosagem pode ser útil em contextos específicos de reserva ovariana e planejamento de tratamentos de reprodução assistida, mas não equivale a medir diretamente a chance individual de gravidez espontânea naquele mês. Idade, qualidade oocitária, ovulação, fatores tubários e sêmen também participam da fertilidade.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.3 Por que um estradiol elevado pode inverter o feedback\"), Durante boa parte do ciclo, o estradiol exerce feedback predominantemente negativo sobre partes do eixo hipotálamo-hipófise-ovário, contribuindo para controle da secreção gonadotrófica. Próximo à ovulação, porém, concentração suficientemente elevada e sustentada de estradiol em contexto fisiológico apropriado modifica a resposta de circuitos regulatórios e favorece o feedback positivo. Isso culmina no surto de LH, evento fundamental para desencadear etapas finais da maturação do oócito, modificar a parede folicular e iniciar a ovulação.\"), A ovulação não acontece porque LH 'empurra' mecanicamente o oócito para fora do ovário. A estimulação desencadeia uma cascata de mudanças bioquímicas e estruturais: retomada da meiose, alterações nas células do cúmulo, ativação de mediadores semelhantes aos processos inflamatórios e remodelamento da parede folicular. O complexo oócito-cúmulo é liberado após ruptura focal do folículo. A tuba uterina, sobretudo pelas fímbrias e movimentos ciliares e musculares, participa da captação do oócito, mas sua eficiência não é perfeita. Essa compreensão ajuda a contextualizar causas de infertilidade mesmo em mulheres com ciclos ovulatórios regulares.\"), O oócito primário permanece interrompido em prófase da primeira divisão meiótica por longo período desde a vida fetal. Próximo à ovulação, ele completa a primeira divisão, formando o oócito secundário e o primeiro corpúsculo polar. Em seguida inicia a segunda divisão, que fica interrompida até que ocorra fecundação. Esse detalhe embriológico mostra que o oócito não realiza uma sequência meiótica inteira de modo independente do ambiente hormonal e do encontro com o espermatozoide.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.4 O corpo lúteo é uma glândula transitória, não apenas 'o folículo depois da ovulação'\"), Após a liberação do oócito, células remanescentes do folículo passam por luteinização e reorganização vascular para formar o corpo lúteo. A estrutura produz progesterona e também estradiol, preparando o endométrio para implantação e modulando contratilidade uterina, muco cervical e outras respostas sistêmicas. A progesterona transforma glândulas e estroma endometriais em padrão secretor e favorece condições de receptividade em momento apropriado. Quando não ocorre gestação, o corpo lúteo regride, reduzindo produção hormonal.\"), Se ocorrer implantação e produção embrionária de hCG, o corpo lúteo recebe estímulo que sustenta secreção hormonal durante o início da gravidez até que a produção placentária adquira papel suficiente. Essa transição não ocorre instantaneamente. O hCG é estruturalmente relacionado ao LH e interage com seu receptor, razão pela qual consegue manter a função luteínica. A relação entre ovulação, implantação e hCG explica por que um teste de gravidez pode ser negativo imediatamente após a relação sexual e positivo apenas após o processo de implantação e produção hormonal em quantidade detectável.\"), A queda de progesterona no final de um ciclo não gestacional desestabiliza o endométrio previamente secretor. Mediadores inflamatórios e proteolíticos, alterações vasculares e reparação do tecido se combinam para produzir menstruação. O processo não se resume a 'parar de produzir hormônio': envolve ativação de respostas locais de descamação, hemostasia e regeneração. Um endométrio exposto a estrogênio sem fase lútea adequada pode sangrar de forma diferente, irregular e prolongada, fornecendo o elo entre anovulação e sangramento uterino anormal.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.5 Temperatura basal, muco cervical e janela fértil: o que cada sinal significa\"), O muco cervical muda com o ambiente hormonal. Sob maior influência estrogênica, tende a tornar-se mais abundante, claro e elástico, facilitando a passagem e a sobrevivência dos espermatozoides em período periovulatório. Com predominância progestagênica, torna-se relativamente mais espesso e menos permeável. A observação do muco pode indicar proximidade do período fértil, mas depende de interpretação, pode ser afetada por infecções e medicamentos e não demonstra certeza sobre o momento exato da ovulação.\"), A progesterona possui efeito termogênico central, podendo elevar discretamente a temperatura basal após a ovulação. Isso torna o método útil principalmente como evidência retrospectiva de mudança de fase, mas pouco eficaz para prever com exatidão o dia da ovulação no ciclo atual. Testes urinários de LH podem identificar a elevação que precede a ovulação, embora resultado positivo não garanta ruptura folicular em toda circunstância. Nenhum método isolado elimina incerteza de fertilidade, particularmente em ciclos irregulares.\"), A janela fértil decorre do tempo de sobrevivência de espermatozoides no trato reprodutivo feminino e da viabilidade relativamente curta do oócito após a ovulação. Portanto, relações sexuais nos dias anteriores à ovulação podem resultar em fecundação mesmo sem coincidirem com o momento de liberação do oócito. A contagem fixa a partir do dia 14 é uma simplificação inadequada, especialmente quando a duração do ciclo varia. É mais seguro ensinar a fisiologia do período fértil do que apresentar um calendário universal como se fosse exato.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.6 Por que medir progesterona no 'dia 21' pode ser um erro\"), A progesterona sérica é utilizada em determinados contextos para apoiar a confirmação de ovulação, mas a coleta precisa ser relacionada à provável fase lútea. Em ciclos de 28 dias, o dia 21 pode corresponder aproximadamente a um intervalo médio do período pós-ovulatório; porém, em ciclo de 35 dias, uma coleta fixa no dia 21 pode ocorrer antes da ovulação ou próximo dela. Uma concentração baixa nesse dia, portanto, não confirma ausência de ovulação nem deficiência luteínica. A interpretação correta considera duração habitual do ciclo, variabilidade e data esperada da próxima menstruação.\"), Também é relevante reconhecer que a progesterona é liberada de modo pulsátil, com variações importantes ao longo do dia. Uma dosagem isolada não quantifica de maneira completa a função do corpo lúteo ou a 'qualidade' endometrial. Se a pergunta clínica é infertilidade, a análise costuma envolver história reprodutiva, padrão de ciclos, fatores masculinos, tubários e ovulatórios; não se deve resumir uma avaliação complexa ao resultado de um único hormônio.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.7 Interpretar FSH, LH, prolactina e estradiol conforme o nível da falha\"), Quando a produção ovariana de esteroides cai por perda de função folicular, a redução do feedback negativo pode elevar FSH, especialmente em insuficiência ovariana primária. Quando o problema principal é hipotalâmico ou hipofisário, FSH e LH podem estar baixos ou inadequadamente normais diante do hipoestrogenismo. A diferença é a lógica fisiológica da resposta: o sistema está tentando estimular um ovário pouco responsivo ou o sinal central de estímulo está insuficiente? Essa pergunta é mais útil que comparar números isolados sem considerar contexto e momento da coleta.\"), A hiperprolactinemia também pode alterar o eixo ao reduzir atividade pulsátil de GnRH, interferindo na ovulação. Contudo, nem toda elevação discreta de prolactina indica prolactinoma. Estresse da punção, medicamentos, alterações tireoidianas e outras causas devem ser consideradas na investigação. Do mesmo modo, LH relativamente elevado em certos contextos não é critério isolado capaz de confirmar síndrome dos ovários policísticos. O diagnóstico dessa síndrome envolve quadro clínico, critérios aceitos, exclusão de condições semelhantes e particularidades da faixa etária.\"), É inadequado estabelecer interpretações permanentes de hormônios apenas a partir de valores de referência genéricos do laboratório. A idade, o dia do ciclo, uso de contraceptivos hormonais, gestação, lactação, doenças sistêmicas e métodos analíticos alteram resultados. A dosagem hormonal tem valor quando responde uma pergunta clínica concreta; exames em excesso podem produzir achados ocasionais sem utilidade e conduzir a diagnósticos equivocados.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.8 Integração em dois casos fisiológicos\"), Caso A — ciclos de 35 dias e progesterona baixa no dia 21: uma mulher com menstruações relativamente regulares a cada 35 dias deseja engravidar. A dosagem de progesterona realizada no 21º dia é baixa. Uma interpretação precipitada seria rotular deficiência de fase lútea. A abordagem fisiológica reconhece que, se a ovulação ocorreu mais tarde que em um ciclo de 28 dias, a amostra pode ter sido colhida antes do aumento típico de progesterona. Deve-se avaliar data provável de ovulação e alinhar coleta à fase correta, evitando conclusão baseada em calendário fixo.\"), Caso B — amenorreia após grande perda de peso: uma estudante apresenta ausência menstrual após meses de restrição alimentar e atividade física excessiva. A redução do estímulo hipotalâmico pode produzir queda da frequência pulsátil de GnRH e gonadotrofinas inadequadamente baixas ou normais, resultando em anovulação e hipoestrogenismo. A investigação deve excluir gravidez e outras causas, considerar saúde óssea, disponibilidade energética e contexto psicossocial. O tratamento não consiste em fornecer um hormônio isoladamente sem abordar o mecanismo de base, quando esse for o diagnóstico.\"), Conclusão integradora: o eixo reprodutivo não é um relógio mecânico com valores fixos todos os meses. É um sistema de retroalimentação dinâmico que integra desenvolvimento folicular, ambiente metabólico, estímulos centrais e resposta endometrial. Entender os mecanismos permite interpretar irregularidade menstrual, infertilidade, sintomas de hipoestrogenismo e resultados laboratoriais sem transformar referências populacionais em verdades absolutas para cada paciente.\"), Referências de apoio: FIGO Menstrual Disorders Committee, terminologia e sistemas de classificação de sangramento; Endocrine Society, diretrizes de amenorreia hipotalâmica funcional; tratados de fisiologia reprodutiva e endocrinologia ginecológica. Seguir critérios e protocolos atualizados da FEBRASGO para diagnósticos específicos.\"),",
+      "section": "hho-integracao-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências selecionadas",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Pulso de GnRH e feedback em vez de memorização",
+      "section": "luria-livro-etiologias-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Endométrio e muco em paralelo",
+      "section": "luria-livro-etiologias-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Como investigar uma falha de ciclo",
+      "section": "luria-livro-etiologias-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio por entidade clínica",
+      "section": "capitulos-livro-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Pulsatilidade e foliculogênese",
+      "section": "capitulos-livro-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Endométrio e ovulação",
+      "section": "capitulos-livro-ciclo-menstrual-eixo-hho"
+    },
+    {
+      "tag": "H3",
+      "title": "Aplicação às doenças",
+      "section": "capitulos-livro-ciclo-menstrual-eixo-hho"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1971
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos fundamentais e o que é um ciclo normal",
+      "chars": 1260
+    },
+    {
+      "id": "eixo",
+      "title": "2. Arquitetura do eixo hipotálamo-hipófise-ovário",
+      "chars": 3172
+    },
+    {
+      "id": "esteroidogenese",
+      "title": "3. Esteroidogênese: modelo das duas células–duas gonadotrofinas",
+      "chars": 949
+    },
+    {
+      "id": "foliculogenese",
+      "title": "4. Foliculogênese: do folículo primordial ao dominante",
+      "chars": 1489
+    },
+    {
+      "id": "folicular",
+      "title": "5. Fase folicular: a parte variável do ciclo",
+      "chars": 986
+    },
+    {
+      "id": "ovulacao",
+      "title": "6. Ovulação: o que realmente acontece",
+      "chars": 1303
+    },
+    {
+      "id": "lutea",
+      "title": "7. Fase lútea: corpo lúteo e progesterona",
+      "chars": 1134
+    },
+    {
+      "id": "endometrio",
+      "title": "8. Ciclo endometrial: proliferativo, secretor e menstrual",
+      "chars": 1251
+    },
+    {
+      "id": "gestacao",
+      "title": "9. O que muda se ocorrer fecundação e implantação?",
+      "chars": 531
+    },
+    {
+      "id": "fertilidade",
+      "title": "10. Janela fértil e sinais de ovulação",
+      "chars": 684
+    },
+    {
+      "id": "janela-fertil-casos-aplicados",
+      "title": "Janela fértil na prática: não confundir estimativa, predição e confirmação",
+      "chars": 3640
+    },
+    {
+      "id": "exames",
+      "title": "11. Exames hormonais: quando pedir e como interpretar",
+      "chars": 3120
+    },
+    {
+      "id": "ciclo-adolescencia-lactacao-perimenopausa",
+      "title": "O mesmo eixo em três fases da vida: adolescência, lactação e transição menopausal",
+      "chars": 5365
+    },
+    {
+      "id": "disfuncoes",
+      "title": "12. Quando o eixo falha: aplicações clínicas sem misturar fisiologia",
+      "chars": 2273
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos clínicos comentados",
+      "chars": 1512
+    },
+    {
+      "id": "revisao",
+      "title": "14. Revisão de prova: armadilhas que mais derrubam",
+      "chars": 1315
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "15. Aprofundamento neuroendócrino e integração clínica",
+      "chars": 2762
+    },
+    {
+      "id": "editorial-depth-ciclo-menstrual-eixo-hho",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 611
+    },
+    {
+      "id": "hho-integracao-40k",
+      "title": "16. Integração avançada da fisiologia do ciclo menstrual: do pulso de GnRH ao endométrio",
+      "chars": 14658
+    },
+    {
+      "id": "referencias",
+      "title": "Referências selecionadas",
+      "chars": 637
+    },
+    {
+      "id": "luria-livro-etiologias-ciclo-menstrual-eixo-hho",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 1694
+    },
+    {
+      "id": "capitulos-livro-ciclo-menstrual-eixo-hho",
+      "title": "Raciocínio por entidade clínica",
+      "chars": 926
+    }
+  ],
+  "references": [
+    "FEBRASGO. Amenorreia secundária: algoritmo diagnóstico. Femina. 2025.",
+    "ASRM. Current evaluation of amenorrhea: a committee opinion. Fertility and Sterility. 2024.",
+    "Endocrine Society. Functional Hypothalamic Amenorrhea Clinical Practice Guideline.",
+    "International Evidence-based Guideline for PCOS/PMOS, 2023 update.",
+    "Endotext. The Normal Menstrual Cycle and the Control of Ovulation.",
+    "NCBI Bookshelf. Physiology, Menstrual Cycle. Updated 2024.",
+    "Munro MG et al. FIGO systems for normal and abnormal uterine bleeding: 2018 revisions.",
+    "ACOG. Menstruation in Girls and Adolescents: Using the Menstrual Cycle as a Vital Sign."
+  ],
+  "reference_links": [
+    {
+      "label": "FEBRASGO. Amenorreia secundária: algoritmo diagnóstico. Femina. 2025.",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZn2ZdeZ2025.pdf",
+      "in_references": true
+    },
+    {
+      "label": "ASRM. Current evaluation of amenorrhea: a committee opinion. Fertility and Sterility. 2024.",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+      "in_references": true
+    },
+    {
+      "label": "Endocrine Society. Functional Hypothalamic Amenorrhea Clinical Practice Guideline.",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/hypothalamic-amenorrhea",
+      "in_references": true
+    },
+    {
+      "label": "International Evidence-based Guideline for PCOS/PMOS, 2023 update.",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-from-the-2023-international-evidence-based-guideline-for-the-assessment-and-management-of-polycystic-ovary-syndrome/",
+      "in_references": true
+    },
+    {
+      "label": "Endotext. The Normal Menstrual Cycle and the Control of Ovulation.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK279054/",
+      "in_references": true
+    },
+    {
+      "label": "NCBI Bookshelf. Physiology, Menstrual Cycle. Updated 2024.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK500020/",
+      "in_references": true
+    },
+    {
+      "label": "Munro MG et al. FIGO systems for normal and abnormal uterine bleeding: 2018 revisions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30198563/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Menstruation in Girls and Adolescents: Using the Menstrual Cycle as a Vital Sign.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://commons.wikimedia.org/wiki/File:MenstrualCycle2_pt.svg",
+      "in_references": false
+    },
+    {
+      "label": "Isometrik; tradução/adaptação por Polyethylen, Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:MenstrualCycle2_pt.svg",
+      "in_references": false
+    },
+    {
+      "label": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "in_references": false
+    },
+    {
+      "label": "ASRM, Optimizing Natural Fertility, 2022",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/optimizing-natural-fertility-a-committee-opinion-2021/",
+      "in_references": false
+    },
+    {
+      "label": "ASRM, Current Evaluation of Amenorrhea, 2024",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+      "in_references": false
+    },
+    {
+      "label": "ASRM — avaliação da ovulação e fertilidade",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+      "in_references": false
+    },
+    {
+      "label": "ACOG, Menstrual Cycle as a Vital Sign, 2015",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign",
+      "in_references": false
+    },
+    {
+      "label": "CDC, Lactational Amenorrhea Method, 2025",
+      "url": "https://www.cdc.gov/contraception/hcp/usmec/lactational-amenorrhea-method.html",
+      "in_references": false
+    },
+    {
+      "label": "FSRH, Contraception for Women Aged Over 40 Years",
+      "url": "https://www.fsrh.org/Common/Uploaded%20files/documents/fsrh-guideline-contraception-for-women-aged-over-40-years.pdf",
+      "in_references": false
+    },
+    {
+      "label": "FEBRASGO. Amenorreia secundária: algoritmo diagnóstico. Femina. 2025.",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZn2ZdeZ2025.pdf",
+      "in_references": true
+    },
+    {
+      "label": "ASRM. Current evaluation of amenorrhea: a committee opinion. Fertility and Sterility. 2024.",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+      "in_references": true
+    },
+    {
+      "label": "Endocrine Society. Functional Hypothalamic Amenorrhea Clinical Practice Guideline.",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/hypothalamic-amenorrhea",
+      "in_references": true
+    },
+    {
+      "label": "International Evidence-based Guideline for PCOS/PMOS, 2023 update.",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-from-the-2023-international-evidence-based-guideline-for-the-assessment-and-management-of-polycystic-ovary-syndrome/",
+      "in_references": true
+    },
+    {
+      "label": "Endotext. The Normal Menstrual Cycle and the Control of Ovulation.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK279054/",
+      "in_references": true
+    },
+    {
+      "label": "NCBI Bookshelf. Physiology, Menstrual Cycle. Updated 2024.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK500020/",
+      "in_references": true
+    },
+    {
+      "label": "Munro MG et al. FIGO systems for normal and abnormal uterine bleeding: 2018 revisions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30198563/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Menstruation in Girls and Adolescents: Using the Menstrual Cycle as a Vital Sign.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MenstrualCycle2_pt.svg/960px-MenstrualCycle2_pt.svg.png",
+      "alt": "Diagrama científico em português mostrando a variação relativa de FSH, LH, estrogênio, progesterona, temperatura basal, desenvolvimento folicular, ovulação e mudanças endometriais ao longo de um ciclo menstrual ilustrativo.",
+      "section": "eixo",
+      "caption": "Ciclo ovariano, hormonal e endometrial — diagrama real publicado em português. Observe o surto de LH próximo à ovulação, a elevação de progesterona na fase lútea e a resposta endometrial. É um modelo esquemático de ciclo, não prova de que a ovulação ocorra invariavelmente no dia 14. Imagem de Isometrik; tradução/adaptação por Polyethylen, Wikimedia Commons, CC BY-SA 3.0. A LURIA reproduz a imagem sem alterações; ampliar pelo link da origem.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 4,
+  "paragraphs": 98,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [
+    {
+      "tag": "H3",
+      "title": "16.2 FSH e LH não fazem a mesma coisa no folículo ovariano\"), No modelo das duas células e duas gonadotrofinas, o LH estimula principalmente células da teca a produzirem precursores androgênicos, enquanto o FSH atua nas células da granulosa",
+      "section": "hho-integracao-40k",
+      "full_length": 1884
+    },
+    {
+      "tag": "H3",
+      "title": "16.3 Por que um estradiol elevado pode inverter o feedback\"), Durante boa parte do ciclo, o estradiol exerce feedback predominantemente negativo sobre partes do eixo hipotálamo-hipófise-ovário, contribuindo para controle da secreção gonadot",
+      "section": "hho-integracao-40k",
+      "full_length": 1746
+    },
+    {
+      "tag": "H3",
+      "title": "16.4 O corpo lúteo é uma glândula transitória, não apenas 'o folículo depois da ovulação'\"), Após a liberação do oócito, células remanescentes do folículo passam por luteinização e reorganização vascular para formar o corpo lúteo. A estrutu",
+      "section": "hho-integracao-40k",
+      "full_length": 1781
+    },
+    {
+      "tag": "H3",
+      "title": "16.5 Temperatura basal, muco cervical e janela fértil: o que cada sinal significa\"), O muco cervical muda com o ambiente hormonal. Sob maior influência estrogênica, tende a tornar-se mais abundante, claro e elástico, facilitando a passagem ",
+      "section": "hho-integracao-40k",
+      "full_length": 1673
+    },
+    {
+      "tag": "H3",
+      "title": "16.6 Por que medir progesterona no 'dia 21' pode ser um erro\"), A progesterona sérica é utilizada em determinados contextos para apoiar a confirmação de ovulação, mas a coleta precisa ser relacionada à provável fase lútea. Em ciclos de 28 d",
+      "section": "hho-integracao-40k",
+      "full_length": 1121
+    },
+    {
+      "tag": "H3",
+      "title": "16.7 Interpretar FSH, LH, prolactina e estradiol conforme o nível da falha\"), Quando a produção ovariana de esteroides cai por perda de função folicular, a redução do feedback negativo pode elevar FSH, especialmente em insuficiência ovarian",
+      "section": "hho-integracao-40k",
+      "full_length": 1690
+    },
+    {
+      "tag": "H3",
+      "title": "16.8 Integração em dois casos fisiológicos\"), Caso A — ciclos de 35 dias e progesterona baixa no dia 21: uma mulher com menstruações relativamente regulares a cada 35 dias deseja engravidar. A dosagem de progesterona realizada no 21º dia é ",
+      "section": "hho-integracao-40k",
+      "full_length": 2023
+    }
+  ],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 120,
+      "status": "approved",
+      "section": "conceitos",
+      "source_license": "Domínio público",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-ciclo-menstrual-pt.webp"
+    },
+    {
+      "id": 125,
+      "status": "approved",
+      "section": "foliculogenese",
+      "source_license": "Domínio público",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-foliculo-humano-real.webp"
+    },
+    {
+      "id": 128,
+      "status": "approved",
+      "section": "lutea",
+      "source_license": "CC BY-SA 2.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-corpo-luteo-real.webp"
+    },
+    {
+      "id": 142,
+      "status": "approved",
+      "section": "esteroidogenese",
+      "source_license": "CC BY 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-hpo-axis-original.webp"
+    },
+    {
+      "id": 148,
+      "status": "approved",
+      "section": "ovulacao",
+      "source_license": "CC BY-SA 4.0 — atribuição e compartilhamento pela mesma licença",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Positive_fern_test.jpg/500px-Positive_fern_test.jpg"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "conceitos",
+      "text": "O valor “28 dias” é uma média histórica e útil para esquemas didáticos, não uma exigência fisiológica. Para adultas entre 18 e 45 anos, a FIGO define frequência menstrual normal entre 24 e 38 dias. Em adolescentes, especialmente nos primeiros anos após a menarca, há maior variabilidade; a ACOG considera tipicamente 21–45 dias.",
+      "pattern": 0
+    },
+    {
+      "section": "janela-fertil-casos-aplicados",
+      "text": "Mulher de 30 anos em tentativa de gestação relata teste urinário de LH positivo, seguido de menstruação na data esperada. O teste identifica uma descarga hormonal, não necessariamente a saída do oócito; portanto não confirma ovulação isoladamente. A interpretação depende da história de ciclos, de eventual hiperandrogenismo, da existência de tratamentos de indução e, quando pertinente, de progesterona na fase lútea ou ultrassonografia seriada.",
+      "pattern": 0
+    },
+    {
+      "section": "janela-fertil-casos-aplicados",
+      "text": "Casal sem fator de infertilidade identificado deseja escolher um único dia do mês para ter relações. Essa estratégia pode perder a janela real. Para pessoas em busca de gestação, relações a cada um ou dois dias durante a janela fértil oferecem boa probabilidade; intervalos regulares de dois a três dias ao longo do ciclo frequentemente são uma alternativa prática. Não orientar procedimentos pós-coito ou posições sexuais especiais: não demonstraram benefício sobre as chances de concepção. A avaliação de infertilidade pode ser indicada após 12 meses de tentativas sem concepção, ou após seis meses quando a mulher tem 35 anos ou mais, e antes disso diante de fatores de risco conhecidos.",
+      "pattern": 0
+    },
+    {
+      "section": "ciclo-adolescencia-lactacao-perimenopausa",
+      "text": "Adolescente de 15 anos teve menarca há 18 meses e apresenta intervalo de 105 dias desde o último sangramento. A irregularidade pode resultar de ciclos anovulatórios fisiológicos, mas ultrapassou o intervalo em que simplesmente tranquilizar é adequado. Avaliar gravidez quando pertinente, história de alimentação/exercício, hiperandrogenismo, sinais de doença sistêmica e padrão de sangramento; exames conforme achados. Não prescrever automaticamente um anticoncepcional apenas para encobrir o sinal clínico sem investigar.",
+      "pattern": 0
+    },
+    {
+      "section": "eixo",
+      "text": "A frequência dos pulsos não é fixa ao longo do ciclo. Em termos fisiológicos, pulsos relativamente mais rápidos favorecem LH e pulsos mais lentos favorecem FSH, mas essa relação é modulada por esteroides ovarianos e não deve ser memorizada como uma regra matemática rígida.",
+      "pattern": 1
+    },
+    {
+      "section": "foliculogenese",
+      "text": "O hormônio antimülleriano é produzido principalmente por células da granulosa de folículos pré-antrais e pequenos antrais. Ele se correlaciona com o pool de folículos em crescimento e pode ser usado como marcador de reserva ovariana, mas não mede qualidade oocitária e não deve ser interpretado isoladamente como “teste de fertilidade”.",
+      "pattern": 1
+    },
+    {
+      "section": "ciclo-adolescencia-lactacao-perimenopausa",
+      "text": "Limite de segurança: atribuir automaticamente tudo à imaturidade é um erro. Intervalo de 90 dias sem menstruar, mesmo uma única vez, sangramento por mais de sete dias ou saturação rápida de absorventes merece avaliação. Considerar gestação quando aplicável, anemia, distúrbios hemorrágicos, disfunção tireoidiana, SOP quando os critérios maturacionais são atendidos e transtornos alimentares. Critérios de ovários policísticos do adulto não devem ser transferidos integralmente para adolescência.",
+      "pattern": 1
+    },
+    {
+      "section": "ciclo-adolescencia-lactacao-perimenopausa",
+      "text": "O método da amenorreia lactacional (MAL/LAM) é uma estratégia contraceptiva somente quando três condições coexistem: menos de seis meses pós-parto, ausência de retorno menstrual e amamentação exclusiva ou quase exclusiva com mamadas suficientemente frequentes. O CDC usa como referência intervalos máximos de aproximadamente quatro horas de dia e seis horas à noite. Quando uma condição deixa de ser atendida, aconselhar outro método se não houver desejo de gestação. Lactação não protege contra ISTs.",
+      "pattern": 1
+    },
+    {
+      "section": "conceitos",
+      "text": "O valor “28 dias” é uma média histórica e útil para esquemas didáticos, não uma exigência fisiológica. Para adultas entre 18 e 45 anos, a FIGO define frequência menstrual normal entre 24 e 38 dias. Em adolescentes, especialmente nos primeiros anos após a menarca, há maior variabilidade; a ACOG considera tipicamente 21–45 dias.",
+      "pattern": 2
+    },
+    {
+      "section": "foliculogenese",
+      "text": "No fim da fase lútea anterior, a queda de estradiol, progesterona e inibina A libera a hipófise do feedback negativo. O FSH começa a subir e abre uma janela de recrutamento para uma coorte de folículos antrais. À medida que esses folículos produzem estradiol e inibina B, o FSH volta a cair.",
+      "pattern": 2
+    },
+    {
+      "section": "lutea",
+      "text": "Após a ruptura folicular, as células remanescentes se reorganizam no corpo lúteo. Granulosa-luteínicas e teca-luteínicas tornam-se intensamente esteroidogênicas. A progesterona passa a ser o principal hormônio da fase, acompanhada por estradiol e inibina A.",
+      "pattern": 2
+    },
+    {
+      "section": "lutea",
+      "text": "Na ausência de gestação, o suporte de LH não é suficiente para manter indefinidamente o corpo lúteo. A esteroidogênese cai, o corpo lúteo regride para corpo albicans e a queda de progesterona/estradiol desencadeia a menstruação e libera o FSH para o ciclo seguinte.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceitos",
+      "text": "O ciclo menstrual é a expressão clínica de um sistema neuroendócrino que prepara periodicamente o ovário para liberar um oócito e o endométrio para receber um embrião. O dia 1 é o primeiro dia de fluxo menstrual verdadeiro, e o comprimento do ciclo é contado até o dia anterior à menstruação seguinte."
+    },
+    {
+      "section": "conceitos",
+      "text": "O valor “28 dias” é uma média histórica e útil para esquemas didáticos, não uma exigência fisiológica. Para adultas entre 18 e 45 anos, a FIGO define frequência menstrual normal entre 24 e 38 dias. Em adolescentes, especialmente nos primeiros anos após a menarca, há maior variabilidade; a ACOG considera tipicamente 21–45 dias."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 120,
+        "section": "conceitos",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-ciclo-menstrual-pt.webp",
+        "source_only": false
+      },
+      {
+        "id": 142,
+        "section": "esteroidogenese",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-hpo-axis-original.webp",
+        "source_only": false
+      },
+      {
+        "id": 125,
+        "section": "foliculogenese",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-foliculo-humano-real.webp",
+        "source_only": false
+      },
+      {
+        "id": 148,
+        "section": "ovulacao",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Positive_fern_test.jpg/500px-Positive_fern_test.jpg",
+        "source_only": false
+      },
+      {
+        "id": 128,
+        "section": "lutea",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-ciclo-menstrual-eixo-hho/hho-corpo-luteo-real.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 6
+  }
+}

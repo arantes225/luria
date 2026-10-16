@@ -1,0 +1,159 @@
+{
+  "sha": "9295179c0e161d2119d21b3d217866545f1f1ca2",
+  "path": "apostilas/_rascunhos/lote-08-aula-180-complemento-02-doenca-nao-oncologica-comunicacao.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--9295179c0e",
+  "title": "LURIA — Aula 180 | Complemento editorial 02",
+  "format": ".md",
+  "chars_estimated": 34982,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 180 | Complemento editorial 02"
+    },
+    {
+      "title": "Cuidados paliativos integrados: sofrimento complexo, doença não oncológica, decisões e comunicação aplicada"
+    },
+    {
+      "title": "A. Benchmark e fundamentos desta ampliação"
+    },
+    {
+      "title": "B. Doença não oncológica: reconhecer a necessidade antes da fase terminal"
+    },
+    {
+      "title": "B1. Insuficiência cardíaca avançada"
+    },
+    {
+      "title": "B2. DPOC e insuficiência respiratória crônica"
+    },
+    {
+      "title": "B3. Demência avançada"
+    },
+    {
+      "title": "B4. Doença renal crônica avançada"
+    },
+    {
+      "title": "B5. Cirrose, doença neurológica e doenças raras"
+    },
+    {
+      "title": "C. Avaliação sistemática de sintomas sem perder a singularidade"
+    },
+    {
+      "title": "C1. Pergunte pelo sofrimento em múltiplos domínios"
+    },
+    {
+      "title": "C2. Dor nociceptiva, neuropática e mista"
+    },
+    {
+      "title": "C3. Opioides: monitorizar eficácia e toxicidade"
+    },
+    {
+      "title": "D. Manejo da dispneia de difícil controle e limites de suporte"
+    },
+    {
+      "title": "E. Náusea, constipação, secreções e intestino"
+    },
+    {
+      "title": "F. Delirium e sofrimento existencial: antes de sedação, avaliar o reversível"
+    },
+    {
+      "title": "G. Planejamento antecipado e diretivas: procedimento clínico, não formulário vazio"
+    },
+    {
+      "title": "Reunião de objetivos — roteiro baseado em valores"
+    },
+    {
+      "title": "Quando a família discorda"
+    },
+    {
+      "title": "H. Ortotanásia e sedação paliativa: comparar sem confundir"
+    },
+    {
+      "title": "I. Comunicação de más notícias: três conversas que exigem habilidades diferentes"
+    },
+    {
+      "title": "I1. Primeira notícia de progressão de câncer"
+    },
+    {
+      "title": "I2. Conversa urgente de UTI sobre intervenção desproporcional"
+    },
+    {
+      "title": "I3. Notícia de morte após tentativa de reanimação"
+    },
+    {
+      "title": "J. Luto, cuidador e rede territorial"
+    },
+    {
+      "title": "K. Cuidados paliativos pediátricos e perinatais"
+    },
+    {
+      "title": "L. Casos clínicos adicionais"
+    },
+    {
+      "title": "Caso 7 — DPOC grave e preferência por não intubar"
+    },
+    {
+      "title": "Caso 8 — Dor refratária ou neuropatia não reconhecida?"
+    },
+    {
+      "title": "Caso 9 — Demência e “pedido de sonda”"
+    },
+    {
+      "title": "Caso 10 — Delirium por fecaloma antes de sedação"
+    },
+    {
+      "title": "Caso 11 — Diretiva antecipada e filho discordante"
+    },
+    {
+      "title": "Caso 12 — Insuficiência renal e acúmulo de opioides"
+    },
+    {
+      "title": "M. Questões autorais adicionais"
+    },
+    {
+      "title": "N. Fluxo operacional: consulta, comunicação e seguimento na rede"
+    },
+    {
+      "title": "O. Visuais planejados e estado de revisão"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "https://www.inca.gov.br/publicacoes/manuais/cuidados-paliativos-oncologicos-controle-da-dor"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Caso hipotético:** homem de 79 anos, fração de ejeção reduzida, três hospitalizações no semestre, dispneia em repouso e medo de morrer sufocado. A equipe investiga congestão reversível e trata-a, mas também define plano de alívio de dispneia, discute com o paciente seus objetivos e oferece apoio familiar. Benefício e ônus de UTI, inotrópicos prolongados, dispositivos e ressuscitação devem ser individualizados. Não prometer que diurético elimina todo sofrimento nem que cuidado paliativo substitui cardiologia."
+    },
+    {
+      "text": "| Domínio | Perguntas úteis | Exemplos de intervenção | |---|---|---| | Dor física | Local, intensidade, padrão e impacto no sono/movimento | Diagnóstico mecanístico, analgesia, procedimentos quando úteis | | Dispneia | Em repouso, com atividade, medo de asfixia, alívio obtido | Tratar causas reversíveis, posicionar, suporte respiratório indicado, alívio de refratária | | Náusea/constipação | Horário, ingestão, evacuação, medicações, distensão | Corrigir causas, ajustar opioides, laxante/antiemético por mecanismo | | Humor/cognição | Medo, tristeza, desejo de morrer, confusão, insônia | Escuta, apoio psicossocial, avaliar delirium e segurança"
+    },
+    {
+      "text": "**Constipação induzida por opioides é previsível**, frequentemente exigindo plano preventivo de laxantes, ingestão conforme tolerância e avaliação de fecaloma/obstrução. Não recomendar laxante estimulante ou osmótico indiscriminadamente em obstrução mecânica completa suspeita. Em caso de dor persistente com dose alta e neurotoxicidade (mioclonias, alucinações, sonolência desproporcional), considerar metabólitos acumulados, desidratação, disfunção renal e necessidade de rotação sob equipe experiente."
+    },
+    {
+      "text": "Delirium pode se manifestar como agitação, alucinações, retraimento, sonolência ou inversão sono-vigília. O diagnóstico pede **alteração aguda/flutuante de atenção e cognição** em relação ao basal. Fatores reversíveis incluem infecção, hipóxia, retenção urinária, fecaloma, dor, distúrbios metabólicos e toxicidade farmacológica. A família pode relatar que “ele está diferente de ontem”, informação preciosa mesmo se exame laboratorial não mostra grande alteração."
+    },
+    {
+      "text": "A abordagem inclui reorientação, controle de ruído, ajuste de medicações que precipitam confusão, correção de causas e manejo da segurança. Antipsicóticos não substituem o diagnóstico de delirium; o uso deve ser avaliado pelo perfil da agitação e potencial de benefício/efeitos adversos. Em delirium refratário com sofrimento intenso no processo ativo de morrer, pode-se considerar sedação proporcional seguindo critérios rigorosos, mas a decisão não se baseia apenas em “paciente incomoda a enfermaria”."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

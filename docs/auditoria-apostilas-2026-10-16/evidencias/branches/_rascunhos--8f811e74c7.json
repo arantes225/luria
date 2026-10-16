@@ -1,0 +1,298 @@
+{
+  "sha": "8f811e74c753d363b65a090c95bf103be3d08ae1",
+  "path": "apostilas/_rascunhos/lote-13-271-endocrinologia-pediatrica.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--8f811e74c7",
+  "title": "LURIA — Lote 13 · Apostila 271",
+  "format": ".md",
+  "chars_estimated": 69407,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 271"
+    },
+    {
+      "title": "Endocrinologia pediátrica: crescimento, tireoide, adrenais e puberdade"
+    },
+    {
+      "title": "1. O sistema endócrino na criança: princípios"
+    },
+    {
+      "title": "2. Crescimento normal e avaliação antropométrica"
+    },
+    {
+      "title": "Como coletar e interpretar"
+    },
+    {
+      "title": "Crescimento deficiente — raciocínio etiológico"
+    },
+    {
+      "title": "3. Hiperplasia adrenal congênita (HAC): fisiologia"
+    },
+    {
+      "title": "Triagem e confirmação"
+    },
+    {
+      "title": "Crise adrenal e perda salina"
+    },
+    {
+      "title": "4. Hipotireoidismo congênito e adquirido"
+    },
+    {
+      "title": "Quadro clínico por fase de vida"
+    },
+    {
+      "title": "Tratamento e acompanhamento"
+    },
+    {
+      "title": "5. Puberdade normal e seus eixos"
+    },
+    {
+      "title": "Puberdade precoce"
+    },
+    {
+      "title": "Puberdade atrasada"
+    },
+    {
+      "title": "6. Abordagem comparativa: quadro prático"
+    },
+    {
+      "title": "7. Fluxogramas aplicados"
+    },
+    {
+      "title": "A — RN com triagem alterada"
+    },
+    {
+      "title": "B — Criança de baixa estatura"
+    },
+    {
+      "title": "C — Caracteres sexuais precoces"
+    },
+    {
+      "title": "7A. O primeiro desafio: interpretar uma curva de crescimento antes de pedir hormônios"
+    },
+    {
+      "title": "Técnica antropométrica: um centímetro errado pode fabricar uma doença"
+    },
+    {
+      "title": "Altura-alvo, desvio do alvo e idade óssea"
+    },
+    {
+      "title": "Peso e estatura juntos indicam caminhos causais diferentes"
+    },
+    {
+      "title": "IGF-1, IGFBP-3, GH e quando encaminhar"
+    },
+    {
+      "title": "Matriz de investigação inicial racional"
+    },
+    {
+      "title": "7B. Hiperplasia adrenal congênita: da via esteroidal à ressuscitação neonatal"
+    },
+    {
+      "title": "Um mapa de esteroidogênese para raciocinar, não apenas decorar enzimas"
+    },
+    {
+      "title": "Triagem neonatal e o “falso positivo” que não pode encobrir uma crise real"
+    },
+    {
+      "title": "Choque hipovolêmico, hipoglicemia e hipercalemia na crise adrenal"
+    },
+    {
+      "title": "Manutenção e educação familiar: prevenir iatrogenia e nova crise"
+    },
+    {
+      "title": "7C. Hipotireoidismo congênito: raciocínio laboratorial e neurodesenvolvimento"
+    },
+    {
+      "title": "Primário, central e transitoriamente alterado: três histórias fisiológicas diferentes"
+    },
+    {
+      "title": "Triagem alterada: o tempo faz parte do tratamento"
+    },
+    {
+      "title": "TSH e T4 livre não respondem na mesma velocidade"
+    },
+    {
+      "title": "Quando confirmar permanência ou transitoriedade"
+    },
+    {
+      "title": "Hipotireoidismo adquirido e autoimunidade"
+    },
+    {
+      "title": "7D. Puberdade precoce: abordagem atualizada pela diretriz de junho de 2026"
+    },
+    {
+      "title": "A sequência clínica diferencia eixo HPG ativado de variantes incompletas"
+    },
+    {
+      "title": "Quando observar e quando investigar prontamente"
+    },
+    {
+      "title": "Exames em etapas: LH ultrasensível antes de testes dinâmicos"
+    },
+    {
+      "title": "Ressonância magnética de SNC sem excesso nem omissão"
+    },
+    {
+      "title": "Quando usar agonista de GnRH e como avaliar resposta"
+    },
+    {
+      "title": "Fluxo original de tomada de decisão"
+    },
+    {
+      "title": "7E. Puberdade tardia, diferenciais do atraso e situações especiais"
+    },
+    {
+      "title": "Determinar primeiro se a criança iniciou puberdade"
+    },
+    {
+      "title": "Ler LH e FSH sem ignorar o estágio maturacional"
+    },
+    {
+      "title": "Acompanhamento e segurança da indução puberal"
+    },
+    {
+      "title": "7F. Casos integrados adicionais para validar o raciocínio da apostila"
+    },
+    {
+      "title": "Caso A — Crescimento e ganho ponderal discrepantes"
+    },
+    {
+      "title": "Caso B — Crise perdedora de sal que parece gastroenterite"
+    },
+    {
+      "title": "Caso C — Triagem tireoidiana normal, mas T4 livre baixo"
+    },
+    {
+      "title": "Caso D — Telarca pouco progressiva em menina de 7,5 anos"
+    },
+    {
+      "title": "Caso E — Puberdade precoce com cefaleia e alteração visual"
+    },
+    {
+      "title": "Caso F — Atleta adolescente com atraso puberal e baixo peso"
+    },
+    {
+      "title": "Questões autorais de revisão das novas decisões"
+    },
+    {
+      "title": "Fontes verificadas para a expansão — consulta em 15/10/2026"
+    },
+    {
+      "title": "Registro comparativo e limites deste bloco"
+    },
+    {
+      "title": "8. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Lactente com desidratação e distúrbios eletrolíticos"
+    },
+    {
+      "title": "Caso 2 — Teste do pezinho positivo para hipotireoidismo"
+    },
+    {
+      "title": "Caso 3 — Ganho de peso com queda de velocidade de crescimento"
+    },
+    {
+      "title": "Caso 4 — Puberdade em progressão acelerada"
+    },
+    {
+      "title": "9. Questões autorais comentadas"
+    },
+    {
+      "title": "10. Tratamento longitudinal e prevenção de danos"
+    },
+    {
+      "title": "Complicações que provas exploram"
+    },
+    {
+      "title": "11. Fila editorial de imagens (somente candidatos, sem publicação)"
+    },
+    {
+      "title": "12. Fontes científicas institucionais"
+    },
+    {
+      "title": "13. Auditoria preliminar — NÃO CONCLUÍDA"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **PCDT Hiperplasia Adrenal Congênita** (página do programa). https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hiperplasia-adrenal-congenita/view",
+    "2. Ministério da Saúde. **PCDT Hipotireoidismo Congênito**, Portaria Conjunta 05/2021, página vigente consultada. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hipotireoidismo-congenito/view",
+    "3. Endocrine Society. **Congenital Adrenal Hyperplasia Due to Steroid 21-Hydroxylase Deficiency: Clinical Practice Guideline**, 2018. https://doi.org/10.1210/jc.2018-01865",
+    "4. Endocrine Society. **Primary Adrenal Insufficiency: Clinical Practice Guideline** (gestão de crise adrenal pediátrica e hidrocortisona IV, 2016). https://www.endocrine.org/clinical-practice-guidelines/primary-adrenal-insufficiency",
+    "5. ENDO-ERN/ESPE. **Congenital Hypothyroidism: A 2020–2021 Consensus Guidelines Update**, 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8001676/",
+    "6. Pediatric Endocrine Society. **Child with Suspected Short Stature** (critérios de referência e exames úteis). https://pedsendo.org/clinical-resource/child-with-suspected-short-stature/",
+    "7. Endocrine Society. **Central Precocious Puberty: An Endocrine Society Clinical Practice Guideline**, publicada em **13/06/2026**, co-patrocínio de entidades internacionais e brasileiras. https://www.endocrine.org/clinical-practice-guidelines/central-precocious-puberty",
+    "8. Sociedade Brasileira de Triagem Neonatal e Erros Inatos do Metabolismo. **Hiperplasia Adrenal Congênita — triagem neonatal**. https://www.sbteim.org.br/hiperplasia-adrenal.aspx",
+    "**Q1.** RN de 14 dias com choque, hiponatremia e hipercalemia, sem alteração genital aparente. O diagnóstico que não pode ser esquecido é:  ",
+    "**Gabarito B.** A deficiência de aldosterona explica Na baixo e K alto, e cortisol deficiente piora choque. A/C/D/E não justificam emergência neonatal de perda salina. **Revisão:** o fenótipo genital masculino pode não denunciar HAC.",
+    "**Q2.** Sobre triagem neonatal de HAC, marque a correta:  ",
+    "**Gabarito C.** Triagem pode ter falsos positivos e requer confirmação; A ignora prematuridade, B não é conduta, D e E são perigosas. **Revisão:** tratar crise suspeita sem aguardar confirmação.",
+    "**Q3.** Teste neonatal com TSH muito aumentado e T4 livre sérico baixo. Qual prioridade?  ",
+    "**Gabarito B.** A prevenção de deficiência cognitiva requer levotiroxina precoce. A/E perdem janela; C/D não substituem hormônio. **Revisão:** hipotireoidismo congênito costuma ser assintomático inicialmente.",
+    "**Q4.** Criança com baixa estatura e suspeita de deficiência de GH. Que afirmação é verdadeira?  ",
+    "**Gabarito B.** GH tem secreção pulsátil; IGF-1 e testes especializados são interpretados por idade/puberdade. A/C/D/E simplificam de forma insegura. **Revisão:** tempo e curva são “exame longitudinal”.",
+    "**Q5.** Menina de 7 anos com telarca progressiva, VC acelerada e IO avançada. Melhor próximo passo?  ",
+    "**Gabarito B.** Progressão e maturação óssea adiantada exigem análise hormonal e clínica; as demais negligenciam risco. **Revisão:** “idade menor que 8” abre investigação, não fecha etiologia.",
+    "**Q6.** Paciente com HAC clássica bem controlada apresenta vômitos, febre alta e desidratação. Qual princípio terapêutico é correto?  ",
+    "**Gabarito C.** Doenças que aumentam demanda de cortisol podem precipitar crise; família deve seguir plano escrito e procurar serviço se não tolera via oral. A/B/E expõem a risco; D confunde intercorrência grave com exercício usual. **Revisão:** educação e kit de emergência reduzem dano.",
+    "- HAC: choque hipovolêmico por perda de sal, hipoglicemia, hipercalemia com arritmia, puberdade precoce periférica/idade óssea avançada, infertilidade e baixa estatura sob controle inadequado.",
+    "- Hipotireoidismo congênito: prejuízo neurocognitivo e atraso de crescimento se terapia atrasada/ineficaz.",
+    "- Hipotireoidismo adquirido: piora escolar, constipação, baixa VC e atraso puberal.",
+    "- Deficiência de GH: baixa estatura progressiva e alterações metabólicas em contextos selecionados.",
+    "- Puberdade precoce: maturação óssea e fechamento prematuro de placas, impacto emocional.",
+    "- Atraso puberal: baixa autoestima, perda de mineralização óssea em certas etiologias e necessidade de investigação de doença hipofisária ou gonadal.",
+    "1. Curvas OMS com fonte oficial e licença para reutilização.",
+    "2. Diagrama original da placa fisária com GH/IGF-1, tireoide e esteroides.",
+    "3. Algoritmo próprio de investigação de baixa estatura/velocidade.",
+    "4. Eixo hipotálamo-hipófise-adrenal e via 21-hidroxilase autoral."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hiperplasia-adrenal-congenita/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hipotireoidismo-congenito/view",
+    "https://doi.org/10.1210/jc.2018-01865",
+    "https://www.endocrine.org/clinical-practice-guidelines/primary-adrenal-insufficiency",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8001676/",
+    "https://pedsendo.org/clinical-resource/child-with-suspected-short-stature/",
+    "https://www.endocrine.org/clinical-practice-guidelines/central-precocious-puberty",
+    "https://www.sbteim.org.br/hiperplasia-adrenal.aspx",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hiperplasia-adrenal-congenita",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hipotireoidismo-congenito-primario/hipotireoidismo-congenito-primario",
+    "https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal",
+    "https://academic.oup.com/jcem/article/103/11/4043/5107759",
+    "https://www.who.int/tools/child-growth-standards",
+    "https://www.sbp.com.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Grande princípio:** diagnóstico endócrino depende de **padrão longitudinal**, não de um valor isolado. Baixa estatura com velocidade preservada, peso estável e pai/mãe baixos difere de criança que cai de percentil, perde velocidade de crescimento e ganha peso desproporcionalmente. A segunda exige investigação."
+    },
+    {
+      "text": "**Dose de estresse:** a Endocrine Society recomenda aumentar glicocorticoide em doença febril relevante, gastroenterite com desidratação, cirurgia importante e trauma maior; não aumentar automaticamente por todo estresse emocional/atividade física usual. Famílias devem ter plano escrito, identificação de insuficiência adrenal e orientação prática para medicação injetável de emergência."
+    },
+    {
+      "text": "**Armadilha:** “TSH normal exclui hipotireoidismo” é falso quando há doença central. Também é errado prescrever hormônio tireoidiano por “crescimento lento” sem diagnóstico."
+    },
+    {
+      "text": "**Ganho ponderal relativo com desaceleração de altura:** considerar hipotireoidismo, hipercortisolismo/uso de glicocorticoides, deficiência de GH e causas de maturação/hipotálamo. Obesidade nutricional comum pode acompanhar crescimento linear normal ou acelerado, por isso o paradoxo “ganhou peso, mas não cresceu” merece exame completo, sem afirmar que é diagnóstico específico de endocrinopatia."
+    },
+    {
+      "text": "GH é secretado em pulsos, sobretudo relacionados ao sono, tornando **GH basal aleatório** pouco adequado para rastrear deficiência. O IGF-1 integra parte da atividade do eixo, mas é baixo por faixa etária, atraso puberal, desnutrição, doença inflamatória e insuficiência hepática. Um IGF-1 baixo em criança que perdeu peso e apresenta diarreia pode ser **efeito de desnutrição**, não defeito hipofisário. IGFBP-3 e testes dinâmicos podem ajudar conforme avaliação especializada; resultados de estímulo variam por método, protocolo, fase puberal e critérios diagnósticos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

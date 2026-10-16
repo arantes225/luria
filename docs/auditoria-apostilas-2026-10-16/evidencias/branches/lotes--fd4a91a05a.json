@@ -1,0 +1,368 @@
+{
+  "sha": "fd4a91a05af360a906b9f251499823483fa19785",
+  "path": "apostilas/lotes/LOTE_02_DIABETES_MELLITUS_EDICAO_CONTINUA.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--fd4a91a05a",
+  "title": "LURIA — Diabetes mellitus: classificação, diagnóstico e manejo",
+  "format": ".md",
+  "chars_estimated": 138227,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Diabetes mellitus: classificação, diagnóstico e manejo"
+    },
+    {
+      "title": "Percurso de aprendizagem"
+    },
+    {
+      "title": "1. Homeostase glicêmica e fisiopatologia"
+    },
+    {
+      "title": "1.1 Fisiologia: da glicemia ao risco cardiorrenal"
+    },
+    {
+      "title": "1.2 Fundamentos metabólicos antes de classificar a doença"
+    },
+    {
+      "title": "1.3 Deficiência insulínica, resistência insulínica e os subtipos que mudam conduta"
+    },
+    {
+      "title": "2. Critérios diagnósticos e interpretação de testes"
+    },
+    {
+      "title": "2.1 Diagnóstico e confirmação"
+    },
+    {
+      "title": "2.2 Confirmação diagnóstica e armadilhas de exames"
+    },
+    {
+      "title": "2.3 Diagnóstico: história, testes e interpretação numérica"
+    },
+    {
+      "title": "3. Classificação diferencial, DM1, DM2 e monogênicos"
+    },
+    {
+      "title": "3.1 Diferenciais de subtipo: por que a classificação muda a segurança"
+    },
+    {
+      "title": "3.2 Diabetes autoimune de início no adulto (LADA): o tempo de evolução não anula a autoimunidade"
+    },
+    {
+      "title": "3.3 Diabetes monogênico: reconhecer quando um diagnóstico molecular muda o tratamento"
+    },
+    {
+      "title": "3.4 Outras causas: pensar além de “tipo 1 versus tipo 2”"
+    },
+    {
+      "title": "3.5 Algoritmo de raciocínio diagnóstico por subtipo"
+    },
+    {
+      "title": "4. Metas, estilo de vida e farmacoterapia do DM2"
+    },
+    {
+      "title": "4.1 Objetivos terapêuticos: além da HbA1c"
+    },
+    {
+      "title": "4.2 Metas individualizadas e decisão terapêutica em cinco eixos"
+    },
+    {
+      "title": "4.3 Autocuidado, alimentação e exercício: não é um capítulo decorativo"
+    },
+    {
+      "title": "4.4 Escolha inicial no DM2 segundo SBD 2026 e realidade do SUS"
+    },
+    {
+      "title": "5. Insulina no DM1, hipoglicemia e monitorização"
+    },
+    {
+      "title": "5.1 Insulinoterapia no DM1 — pensar em secreção basal e prandial"
+    },
+    {
+      "title": "5.2 Tratamento de hipoglicemia: primeiro a consciência, depois o número"
+    },
+    {
+      "title": "5.3 Monitorização contínua da glicose, tempo no alvo e médias enganosas"
+    },
+    {
+      "title": "6. Emergências: CAD e estado hiperosmolar"
+    },
+    {
+      "title": "6.1 Complicações agudas e crônicas"
+    },
+    {
+      "title": "6.2 Emergências hiperglicêmicas: critérios revisados e raciocínio com eletrólitos"
+    },
+    {
+      "title": "6.3 CAD e EHH — a sequência que salva vidas, com limites da receita escolar"
+    },
+    {
+      "title": "6.4 Critérios diagnósticos da CAD e do EHH: atualização internacional integrada"
+    },
+    {
+      "title": "6.5 Reposição de potássio: o risco da primeira dose de insulina"
+    },
+    {
+      "title": "6.6 Quando a CAD terminou? Critérios bioquímicos e transição"
+    },
+    {
+      "title": "7. Complicações crônicas e rastreamento"
+    },
+    {
+      "title": "7.1 Complicações crônicas: rastrear antes dos sintomas"
+    },
+    {
+      "title": "7.2 Rastreamento de complicações por órgão"
+    },
+    {
+      "title": "7.3 Rastrear doença renal do diabetes: dois exames complementares e três decisões distintas"
+    },
+    {
+      "title": "7.4 Terapia renal protetora: distinguir controle glicêmico, pressão e desfechos"
+    },
+    {
+      "title": "7.5 Retina e pés: a periodicidade muda conforme tipo de diabetes e risco"
+    },
+    {
+      "title": "8. Pessoas idosas, gestação, internação e cirurgia"
+    },
+    {
+      "title": "8.1 Saúde da pessoa idosa, internação, gestação e transições de cuidado"
+    },
+    {
+      "title": "8.2 Metas glicêmicas do adulto idoso: três perfis de saúde distintos"
+    },
+    {
+      "title": "8.3 Dias de doença: um plano de ação para febre, vômito e jejum"
+    },
+    {
+      "title": "8.4 Interpretação de CGM em uma consulta de dez minutos"
+    },
+    {
+      "title": "8.5 Hiperglicemia hospitalar: por que a meta e o esquema mudam fora do ambulatório"
+    },
+    {
+      "title": "8.6 Plano perioperatório em cinco decisões — da consulta pré-anestésica à alta"
+    },
+    {
+      "title": "8.7 O diagnóstico que a glicemia moderada esconde: CAD euglicêmica"
+    },
+    {
+      "title": "8.8 Hipoglicemia no hospital: tratar, explicar e evitar recorrência"
+    },
+    {
+      "title": "8.9 Microalgoritmo de decisão integrado — estudante e serviço"
+    },
+    {
+      "title": "9. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Poliúria, vômitos e respiração profunda em adulto jovem"
+    },
+    {
+      "title": "Caso 2 — HbA1c perto da meta, mas risco cardiorrenal elevado"
+    },
+    {
+      "title": "Caso 3 — CAD euglicêmica associada a SGLT2"
+    },
+    {
+      "title": "Caso 4 — Diabetes ou erro de HbA1c?"
+    },
+    {
+      "title": "Caso 5 — Risco cardiorrenal com HbA1c no alvo"
+    },
+    {
+      "title": "Caso 6 — Distribuição basal/prandial"
+    },
+    {
+      "title": "Caso 7 — Anemia hemolítica e HbA1c falsamente tranquilizadora"
+    },
+    {
+      "title": "Caso 8 — Pós-cirurgia com CAD euglicêmica"
+    },
+    {
+      "title": "Caso 9 — Monitorização contínua revela risco oculto"
+    },
+    {
+      "title": "Caso 10 — Lesão de pé com neuropatia"
+    },
+    {
+      "title": "Caso 11 — Idosa independente versus idosa frágil"
+    },
+    {
+      "title": "Caso 12 — CAD com glicose não extrema"
+    },
+    {
+      "title": "Caso 13 — Um paciente com albuminúria e TFGe preservada"
+    },
+    {
+      "title": "Caso 14 — Úlcera pequena, perda de sensibilidade e circulação deficiente"
+    },
+    {
+      "title": "Caso 15 — Adulto tratado como DM2 com perda rápida da reserva insulínica"
+    },
+    {
+      "title": "Caso 16 — Hiperglicemia leve e estável desde a adolescência"
+    },
+    {
+      "title": "Caso 17 — O jejum perioperatório não autoriza retirar toda a insulina"
+    },
+    {
+      "title": "Caso 18 — Náuseas pós-operatórias, gliflozina e glicemia de 184 mg/dL"
+    },
+    {
+      "title": "Caso 19 — Hipoglicemia repetida após interrupção de dieta enteral"
+    },
+    {
+      "title": "10. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Confirmação da hiperglicemia em pessoa assintomática"
+    },
+    {
+      "title": "Questão 2 — Proteção cardiorrenal além da HbA1c"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "Questão 13"
+    },
+    {
+      "title": "Questão 14"
+    },
+    {
+      "title": "Questão 15"
+    },
+    {
+      "title": "Questão 16"
+    },
+    {
+      "title": "Questão 17 — Diagnóstico de CAD atualizado"
+    },
+    {
+      "title": "Questão 18 — Eletrólitos na emergência"
+    },
+    {
+      "title": "Questão 19 — Metas no idoso frágil"
+    },
+    {
+      "title": "Questão 20 — Sobreposição na transição IV/SC"
+    },
+    {
+      "title": "Questão 21 — Dois marcadores renais"
+    },
+    {
+      "title": "Questão 22 — Rastreio de retina"
+    },
+    {
+      "title": "Questão 23 — Pé de alto risco"
+    },
+    {
+      "title": "Questão 24 — Adulto com diabetes e suspeita de autoimunidade"
+    },
+    {
+      "title": "Questão 25 — MODY: por que subtipar?"
+    },
+    {
+      "title": "Questão 26 — Insulina basal em DM1 durante jejum"
+    },
+    {
+      "title": "Questão 27 — iSGLT2 e cetoacidose pós-operatória com glicose não muito elevada"
+    },
+    {
+      "title": "Questão 28 — Internação, meta glicêmica e dieta interrompida"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "1. SBD 2026 — Manejo do DM2. https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
+    "2. SBD — Insulinoterapia no DM1. https://diretriz.diabetes.org.br/insulinoterapia-no-diabetes-mellitus-tipo-1-dm1/",
+    "3. Ministério da Saúde — PCDT DM2. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-2.pdf/view",
+    "4. ADA/EASD — Hyperglycemic Crises (2024). https://doi.org/10.2337/dci24-0032",
+    "5. Sociedade Brasileira de Diabetes — Classificação do diabetes (Diretriz, edição 2026). https://diretriz.diabetes.org.br/classificacao-do-diabetes/",
+    "6. American Diabetes Association — Diagnosis and Classification of Diabetes: Standards of Care in Diabetes 2026. https://doi.org/10.2337/dc26-s002",
+    "7. SBD, SBA e ABESO — Rastreamento e controle da hiperglicemia no perioperatório (Diretriz SBD 2026). https://diretriz.diabetes.org.br/rastreamento-e-controle-da-hiperglicemia-no-perioperatorio/",
+    "8. SBD — Manejo da hiperglicemia hospitalar em pacientes não-críticos (Diretriz 2026). https://diretriz.diabetes.org.br/manejo-da-hiperglicemia-hospitalar-em-pacientes-nao-criticos/",
+    "9. SBD — Hiperglicemia hospitalar no paciente crítico (Diretriz 2026). https://diretriz.diabetes.org.br/hiperglicemia-hospitalar-no-paciente-critico/",
+    "10. ADA — Diabetes Care in the Hospital, Standards of Care in Diabetes 2026. https://doi.org/10.2337/dc26-s016"
+  ],
+  "external_urls": [
+    "https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A",
+    "https://diretriz.diabetes.org.br/avaliacao-e-tratamento-da-doenca-renal-do-diabetes-2/",
+    "https://diabetesjournals.org/care/article/49/Supplement_1/S261/163919/12-Retinopathy-Neuropathy-and-Foot-Care-Standards",
+    "https://diabetesjournals.org/care/article/49/Supplement_1/S216/163933/10-Cardiovascular-Disease-and-Risk-Management",
+    "https://doi.org/10.2337/dc26-s006",
+    "https://doi.org/10.2337/dc26-s013",
+    "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
+    "https://diretriz.diabetes.org.br/insulinoterapia-no-diabetes-mellitus-tipo-1-dm1/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-2.pdf/view",
+    "https://doi.org/10.2337/dci24-0032",
+    "https://diretriz.diabetes.org.br/classificacao-do-diabetes/",
+    "https://doi.org/10.2337/dc26-s002",
+    "https://diretriz.diabetes.org.br/rastreamento-e-controle-da-hiperglicemia-no-perioperatorio/",
+    "https://diretriz.diabetes.org.br/manejo-da-hiperglicemia-hospitalar-em-pacientes-nao-criticos/",
+    "https://diretriz.diabetes.org.br/hiperglicemia-hospitalar-no-paciente-critico/",
+    "https://doi.org/10.2337/dc26-s016"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Comece pelos fundamentos e critérios diagnósticos; avance para decisões terapêuticas e avaliação de risco. Use os casos e questões de consolidação após estudar o corpo clínico. As fontes ao final permitem conferir normas e atualizações."
+    },
+    {
+      "text": "O peptídeo C é secretado junto à insulina endógena e ajuda a inferir produção pancreática. Sua interpretação muda se o paciente está hiperglicêmico, hipoglicêmico, descompensado, usando insulina exógena, com insuficiência renal ou com diabetes recém-diagnosticado. Um valor isolado normal no início não afasta DM1 com secreção residual. Autoanticorpos como anti-GAD, IA-2 e ZnT8 podem apoiar diagnóstico autoimune em contextos de dúvida, sem exigir painel a toda pessoa com DM2 típico."
+    },
+    {
+      "text": "A avaliação pode usar glicemia de jejum, teste oral de tolerância à glicose com 75 g, HbA1c em condições apropriadas, ou glicemia casual acompanhada de sintomas inequívocos. Valores diagnósticos habitualmente ensinados em adultos incluem glicemia de jejum ≥126 mg/dL, HbA1c ≥6,5%, glicemia de 2 horas no TOTG ≥200 mg/dL ou glicemia casual ≥200 mg/dL com sintomas clássicos/crise hiperglicêmica. Na ausência de hiperglicemia inequívoca, é necessário confirmar por nova medida conforme critérios diagnósticos. HbA1c pode ser pouco confiável diante de alterações na vida das hemácias, anemia, hemoglobinopatias, hemólise ou condições clínicas específica"
+    },
+    {
+      "text": "| Exame no adulto não gestante | Valor usado comumente para diagnóstico | Observação que impede erro | | --- | --- | --- | | Glicemia plasmática de jejum | ≥126 mg/dL | Jejum correto e confirmação quando não há hiperglicemia inequívoca | | HbA1c por método padronizado | ≥6,5% | Pode ser inadequada em hemólise, anemia significativa, hemoglobinopatias, hemotransfusão, certas doenças renais e gestação | | TOTG 75 g, amostra de 2 h | ≥200 mg/dL | Exige preparo, tempo correto e interpretação do contexto | | Glicemia casual | ≥200 mg/dL **com sintomas clássicos ou crise** | A combinação clínica pode permitir diagnóstico sem esperar repetição se hip"
+    },
+    {
+      "text": "**Cuidado com o uso de glicose capilar em diagnóstico formal.** Glicosímetros são fundamentais para acompanhamento e urgências, mas as regras diagnósticas usuais foram validadas principalmente com amostras e métodos laboratoriais específicos. Uma glicemia capilar muito elevada com sintomas orienta urgência e coleta adequada; não substitui automaticamente a metodologia requerida para diagnóstico longitudinal."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

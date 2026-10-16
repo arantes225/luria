@@ -1,0 +1,416 @@
+{
+  "sha": "015520c02f6def6ebb85ebbd0e75e4431e0803c4",
+  "path": "apostilas/_rascunhos/aula-266-oncologia-cabeca-pescoco-etapa01.md",
+  "branches": [
+    "origin/editorial/apostila-266-oncologia-cabeca-pescoco-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--015520c02f",
+  "title": "LURIA — Aula 266 | Oncologia de Cabeça e Pescoço",
+  "format": ".md",
+  "chars_estimated": 77016,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 266 | Oncologia de Cabeça e Pescoço"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "Mapa mental — primeiro organizar, depois memorizar"
+    },
+    {
+      "title": "1. Delimitação: o que chamamos de câncer de cabeça e pescoço?"
+    },
+    {
+      "title": "1.1. Por que a região é funcionalmente delicada?"
+    },
+    {
+      "title": "1.2. Linfonodos e disseminação"
+    },
+    {
+      "title": "2. Fatores de risco e fisiopatologia"
+    },
+    {
+      "title": "2.1. Tabaco e álcool"
+    },
+    {
+      "title": "2.2. HPV de alto risco"
+    },
+    {
+      "title": "2.3. EBV na nasofaringe"
+    },
+    {
+      "title": "2.4. Fatores modificadores"
+    },
+    {
+      "title": "3. Quadro clínico orientado pela anatomia"
+    },
+    {
+      "title": "4. Abordagem inicial da lesão oral suspeita"
+    },
+    {
+      "title": "5. Massa cervical no adulto — algoritmo que precisa estar decorado com lógica"
+    },
+    {
+      "title": "5.1. Reconhecimento do risco"
+    },
+    {
+      "title": "5.2. Sequência prática"
+    },
+    {
+      "title": "5.3. Diagnóstico diferencial da massa cervical"
+    },
+    {
+      "title": "6. Diagnóstico histológico, imagem e estadiamento"
+    },
+    {
+      "title": "7. Fundamentos do tratamento por subsítio"
+    },
+    {
+      "title": "7.1. Cavidade oral"
+    },
+    {
+      "title": "7.2. Orofaringe"
+    },
+    {
+      "title": "7.3. Nasofaringe"
+    },
+    {
+      "title": "7.4. Hipofaringe e laringe"
+    },
+    {
+      "title": "7.5. Tratamento sistêmico e novas evidências"
+    },
+    {
+      "title": "8. Segurança clínica e complicações"
+    },
+    {
+      "title": "9. Pérolas de prova — diferenciais que evitam erro"
+    },
+    {
+      "title": "10. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Úlcera lateral de língua"
+    },
+    {
+      "title": "Caso 2 — Massa lateral cística"
+    },
+    {
+      "title": "Caso 3 — Disfonia com estridor"
+    },
+    {
+      "title": "Caso 4 — Otite unilateral com linfonodo"
+    },
+    {
+      "title": "11. Seis questões originais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "12. Camada visual — candidatos para pesquisa/licença/aprovação no Admin"
+    },
+    {
+      "title": "13. Referências primárias verificáveis — base da etapa"
+    },
+    {
+      "title": "14. Registro comparativo da etapa zero (sem expor link privado no repositório)"
+    },
+    {
+      "title": "15. Matriz de cobertura — auditoria honesta desta fase"
+    },
+    {
+      "title": "Próxima fase obrigatória"
+    },
+    {
+      "title": "Complemento editorial — etapa 02 | Raciocínio avançado por subsítio"
+    },
+    {
+      "title": "16. Cavidade oral: profundidade de invasão, pescoço clinicamente negativo e reconstrução"
+    },
+    {
+      "title": "16.1. Anatomia aplicada à decisão"
+    },
+    {
+      "title": "16.2. Pescoço N0 não significa ausência de células tumorais"
+    },
+    {
+      "title": "16.3. Margens, peça cirúrgica e anatomopatologia"
+    },
+    {
+      "title": "16.4. Conduta clínica pré-cirúrgica"
+    },
+    {
+      "title": "16.5. Exemplo encadeado"
+    },
+    {
+      "title": "17. Orofaringe: fisiopatologia viral, classificação e escolhas de preservação"
+    },
+    {
+      "title": "17.1. Tonsilas e base da língua"
+    },
+    {
+      "title": "17.2. Cuidado com três falsas equivalências"
+    },
+    {
+      "title": "17.3. Cirurgia transoral versus radioterapia"
+    },
+    {
+      "title": "17.4. Acompanhamento de resposta"
+    },
+    {
+      "title": "18. Nasofaringe: raciocínio anatômico e fatores de prognóstico"
+    },
+    {
+      "title": "18.1. A região que “esconde” o tumor"
+    },
+    {
+      "title": "18.2. Avaliação do EBV e interpretação"
+    },
+    {
+      "title": "18.3. Quando pedir RM?"
+    },
+    {
+      "title": "18.4. Tratamento e resposta"
+    },
+    {
+      "title": "19. Laringe: anatomia funcional, rouquidão e critérios da via aérea"
+    },
+    {
+      "title": "19.1. Divisão anatômica e sintoma predominante"
+    },
+    {
+      "title": "19.2. O que é preservação de laringe?"
+    },
+    {
+      "title": "19.3. Estridor: reconhecer urgência"
+    },
+    {
+      "title": "20. Hipofaringe: diagnóstico tardio e consequência nutricional"
+    },
+    {
+      "title": "21. Tumores de glândulas salivares: por que não entram no algoritmo genérico de CEC?"
+    },
+    {
+      "title": "21.1. Topografia e tipos"
+    },
+    {
+      "title": "21.2. Histologia importa mais que rótulo genérico"
+    },
+    {
+      "title": "21.3. Diagnóstico sem violar planos cirúrgicos"
+    },
+    {
+      "title": "21.4. Tratamento por risco"
+    },
+    {
+      "title": "21.5. Erros comuns"
+    },
+    {
+      "title": "22. Primário oculto: uma metástase cervical sem origem visível"
+    },
+    {
+      "title": "22.1. Definição operacional"
+    },
+    {
+      "title": "22.2. Sequência racional"
+    },
+    {
+      "title": "22.3. O problema de “abrir o pescoço cedo”"
+    },
+    {
+      "title": "22.4. Tratamento"
+    },
+    {
+      "title": "23. Como interpretar anatomopatologia e decidir adjuvância"
+    },
+    {
+      "title": "24. Complicações e seguimento em cinco momentos clínicos"
+    },
+    {
+      "title": "Momento A — antes do tratamento"
+    },
+    {
+      "title": "Momento B — início do tratamento"
+    },
+    {
+      "title": "Momento C — toxicidade aguda"
+    },
+    {
+      "title": "Momento D — reabilitação"
+    },
+    {
+      "title": "Momento E — vigilância de recidiva e segundos primários"
+    },
+    {
+      "title": "25. Comunicação e consentimento: perguntas clínicas que o médico deve fazer"
+    },
+    {
+      "title": "26. Quatro casos adicionais de integração do raciocínio"
+    },
+    {
+      "title": "Caso 5 — Tumor pequeno, infiltração relevante"
+    },
+    {
+      "title": "Caso 6 — HPV positivo, decisão multimodal"
+    },
+    {
+      "title": "Caso 7 — Parótida e paralisia facial"
+    },
+    {
+      "title": "Caso 8 — Disfagia e perda de peso"
+    },
+    {
+      "title": "27. Questões de residência originais — bloco adicional"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "28. Quadro de tomada de decisão em prova e no ambulatório"
+    },
+    {
+      "title": "29. Perguntas orais estilo banca — justificar, não decorar"
+    },
+    {
+      "title": "30. Banco de microerros para integrar flashcards e caderno de erros"
+    },
+    {
+      "title": "31. Referências suplementares e trilha científica"
+    },
+    {
+      "title": "Auditoria incremental após etapa 02"
+    },
+    {
+      "title": "32. Auditoria científica dirigida — correções antes da publicação"
+    },
+    {
+      "title": "32.1. Não misturar versões de TNM"
+    },
+    {
+      "title": "32.2. Cuidado com o termo “HPV positivo”"
+    },
+    {
+      "title": "32.3. Cuidado com as promessas de rastreamento"
+    },
+    {
+      "title": "32.4. Cuidado com disponibilidade terapêutica"
+    },
+    {
+      "title": "32.5. Revisão dos fluxos urgentes"
+    },
+    {
+      "title": "33. Revisão ativa — questões de integração"
+    },
+    {
+      "title": "34. Checklist de liberação editorial"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. Diretrizes Diagnósticas e Terapêuticas do Câncer de Cabeça e Pescoço. Página oficial (conteúdo normativo nacional, de base histórica): https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-cabeca-e-pescoco/view  ",
+    "2. INCA. Câncer de boca: versão para profissionais de saúde. Regras de sinais/sintomas e detecção precoce: https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-profissionais-de-saude  ",
+    "3. AAO-HNSF. Pynnonen MA et al. Clinical Practice Guideline: Evaluation of the Neck Mass in Adults. 2017. DOI: https://doi.org/10.1177/0194599817722550  ",
+    "4. National Cancer Institute. Oropharyngeal Cancer Treatment (PDQ), versão profissionais: https://www.cancer.gov/types/head-and-neck/hp/adult/oropharyngeal-treatment-pdq  ",
+    "5. National Cancer Institute. Nasopharyngeal Carcinoma Treatment (PDQ), versão profissionais: https://www.cancer.gov/types/head-and-neck/hp/adult/nasopharyngeal-treatment-pdq  ",
+    "6. National Cancer Institute. Lip and Oral Cavity Cancer Treatment (PDQ), versão profissionais: https://www.cancer.gov/types/head-and-neck/hp/adult/lip-mouth-treatment-pdq  ",
+    "7. FDA. June 12, 2025 approval of neoadjuvant/adjuvant pembrolizumab in selected locally advanced resectable HNSCC: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck",
+    "**Hierarquia editorial:** priorizar fontes brasileiras para SUS/diagnóstico precoce e disponibilidade de terapias; usar diretrizes internacionais especializadas para situações não detalhadas ou com evidência mais recente; divergências devem ser registradas e não ocultadas. As DDT nacionais identificadas têm base de evidência anterior à aprovação recente de pembrolizumabe. Não apresentar atualizações FDA como incorporação no SUS.",
+    "- **Material secundário aberto:** apostila do Drive intitulada “Câncer de nasofaringe, orofaringe e primário oculto”; autoria editorial institucional não pôde ser confirmada. Texto foi lido para comparação de **tópicos e estrutura**, não copiado ou adaptado por paráfrase próxima. Não inserir excertos/imagens daquela fonte.",
+    "- **LURIA aberta para coerência:** “Princípios de Oncologia Cirúrgica”, rascunho no diretório do acervo; verificados objetivos, distinção de histologia e estadiamento, biópsia, benefício funcional e padrão de casos.",
+    "- **Diferenças para esta aula:** maior ênfase na anatomia por subsítio, massa cervical cística, HPV/p16, EBV, via aérea, distinção rastreamento/diagnóstico, padrão terapêutico e reabilitação.",
+    "- **Integridade:** texto produzido é uma redação nova, sem aproveitamento de figuras/tabelas protegidas do Drive. O material comparativo não tem autoria institucional confirmada e, portanto, a etapa zero **não está certificada integralmente** conforme a regra de prioridade por referência identificada.",
+    "---",
+    "**R0, R1 e R2 não são sinônimos de estádio:** R0 representa ressecção sem tumor residual detectável segundo critério utilizado; R1 indica doença residual microscópica; R2, doença macroscópica. Mesmo uma ressecção R0 pode necessitar tratamento complementar quando há outros fatores de risco patológicos.",
+    "**O que muda no tumor relacionado ao HPV?** Além da associação com melhor resposta/prognóstico em diversos contextos, muda o sistema de estadiamento usado para a categoria pertinente da orofaringe. O status p16 pode influenciar a interpretação prognóstica e discussão da estratégia, mas não transforma a extensão local e a função em detalhes secundários. Tumor de base de língua com grande comprometimento muscular pode ser um desafio funcional mesmo em paciente biologicamente mais favorável.",
+    "1. **“p16 alto = infecção oral ativa.”** Não necessariamente. A imuno-histoquímica no tumor é uma ferramenta patológica contextual; não é teste de transmissibilidade individual ou cronologia de infecção.",
+    "2. **“HPV associado = cirurgia proibida.”** Falso. Em pacientes selecionados, a cirurgia transoral pode integrar manejo; em outros, a radioterapia ou radioquimioterapia pode oferecer melhor equilíbrio de controle e função.",
+    "3. **“HPV associado = menos tratamento para todos.”** Falso. Protocolos de desintensificação não devem ser reproduzidos fora de critérios validados, especialmente em doença extensa, tabagistas relevantes ou tumores com fatores adversos.",
+    "**Armadilha editorial:** classificar todos esses fatores como “indicação automática de quimioterapia” é incorreto. A combinação exata de fatores, local e modalidade inicial determina risco e recomendação; muitas situações requerem radioterapia isolada, outras radioquimioterapia, outras somente seguimento após tratamento local adequado.",
+    "**Hipótese:** CEC de cavidade oral com necessidade de estadiamento adequado para primário e pescoço.  ",
+    "**Raciocínio:** tamanho visível não substitui DOI. Pescoço sem linfonodos clínicos não descarta disseminação microscópica. A equipe deve discutir como estadiar e a possibilidade de tratamento eletivo cervical.  ",
+    "**Exames:** revisão anatomopatológica, avaliação da profundidade e imagem de extensão/pescoço conforme caso.  ",
+    "**Conduta:** estratégia cirúrgica do primário e cervical segundo risco, com foco em preservação de mobilidade lingual.  ",
+    "**Por que importa:** dois tumores de tamanho externo parecido podem demandar caminhos distintos.",
+    "**Hipótese:** CEC de orofaringe relacionado a HPV, estádio dependente de T/N/M específico.  ",
+    "**Raciocínio:** p16 modifica classificação, mas a indicação de cirurgia, RT e/ou terapias sistêmicas depende da extensão e do tratamento inicial. Desintensificação fora de critérios validados não é aconselhamento adequado.  ",
+    "**Exames:** imagem de extensão e avaliação endoscópica, histologia confirmada, discussão multiprofissional de função.  ",
+    "**Conduta:** apresentar opções definitivas e probabilidade de precisar de adjuvância se houver cirurgia.  ",
+    "**Por que importa:** confundir prognóstico favorável com ausência de risco compromete o tratamento.",
+    "**Hipótese:** neoplasia salivar maligna, entre outras causas de lesão glandular e neural.  "
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-cabeca-e-pescoco/view",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-profissionais-de-saude",
+    "https://doi.org/10.1177/0194599817722550",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/oropharyngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/nasopharyngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/lip-mouth-treatment-pdq",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/hypopharyngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/salivary-gland-treatment-pdq",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-populacao/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Não confundir detecção precoce com rastreamento:** o INCA recomenda investigação oportuna de sinais e sintomas suspeitos e não estabelece rastreamento populacional de rotina para todos os assintomáticos como estratégia comprovada. A abordagem sintomática não depende de pertencer a uma faixa etária ou grupo de rastreamento."
+    },
+    {
+      "text": "**Risco nutricional:** disfagia, dor, mucosite, sarcopenia e perda de peso diminuem reserva funcional. O suporte nutricional e a fonoterapia devem entrar cedo no plano, antes e durante tratamentos que comprometam deglutição. Avaliar odontologia antes de radioterapia conforme recomendações locais, devido a risco de complicações orais tardias. Considerar suporte psicológico e cessação de tabaco/álcool."
+    },
+    {
+      "text": "**Hipótese:** neoplasia epitelial maligna da cavidade oral, especialmente CEC. **Raciocínio:** persistência, endurecimento e progressão superam a hipótese de úlcera traumática comum. A ausência de linfonodomegalia palpável não exclui disseminação microscópica. **Exames:** biópsia da lesão por especialista; avaliação anatômica e cervical, incluindo método de imagem/estadiamento conforme achados; análise da profundidade de invasão no material apropriado. **Conduta:** encaminhamento prioritário à equipe de cabeça e pescoço; discutir ressecção e estratégia cervical se CEC for confirmado. Cessar tabaco/álcool e iniciar avaliação nutricional e buca"
+    },
+    {
+      "text": "**Hipótese:** metástase nodal cística de tumor de orofaringe, inclusive associado a HPV, entre os diferenciais prioritários. **Raciocínio:** a aparência cística não demonstra benignidade; alguns primários tonsilares ou da base da língua são pequenos e pouco visíveis. **Exames:** avaliação especializada, TC ou RM contrastada conforme indicação, PAAF dirigida (eventualmente com marcadores contextuais) e exame endoscópico de via aerodigestiva. Se não conclusivo, aprofundar investigação em vez de alta. **Conduta:** completar diagnóstico e estadiamento antes de considerar ressecção aberta da massa. **Por que importa:** rotular automaticamente “cis"
+    },
+    {
+      "text": "1. Diagrama original dos compartimentos da faringe, com marcos anatômicos. 2. Fotografia anatômica de língua móvel versus base da língua. 3. Esquema dos limites de cavidade oral e orofaringe. 4. Mapa dos níveis ganglionares cervicais I–VI. 5. Ilustração da cadeia cervical e vias de drenagem por subsítio. 6. Fotografia clínica de CEC de borda lateral da língua, com consentimento/licença. 7. Fotografia clínica de leucoplasia com diagnóstico diferencial explícito. 8. Fotografia clínica de eritroplasia e indicação de biópsia. 9. Imagem de lesão amigdalar de orofaringe, com anatomopatologia confirmatória. 10. Foto endoscópica de lesão de base de l"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

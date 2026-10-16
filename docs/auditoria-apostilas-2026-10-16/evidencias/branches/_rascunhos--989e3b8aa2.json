@@ -1,0 +1,180 @@
+{
+  "sha": "989e3b8aa27127a82cf874c8bad304e01c0d954c",
+  "path": "apostilas/_rascunhos/lote-06-121-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--989e3b8aa2",
+  "title": "Infecção Urinária e Pielonefrite",
+  "format": ".json",
+  "chars_estimated": 92585,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "introducao",
+      "title": "Apresentação e orientações"
+    },
+    {
+      "id": "cap-01-visao-geral-a-mesma-urocultura-positiva-pode-exigir-c",
+      "title": "1. Visão geral: a mesma urocultura positiva pode exigir condutas opostas"
+    },
+    {
+      "id": "cap-02-anatomia-barreiras-e-fisiopatologia-da-ascensao-bacte",
+      "title": "2. Anatomia, barreiras e fisiopatologia da ascensão bacteriana"
+    },
+    {
+      "id": "cap-03-epidemiologia-e-fatores-de-risco-que-mudam-a-probabil",
+      "title": "3. Epidemiologia e fatores de risco que mudam a probabilidade"
+    },
+    {
+      "id": "cap-04-classificar-corretamente-localizada-sistemica-e-com-f",
+      "title": "4. Classificar corretamente: localizada, sistêmica e com fatores complicadores"
+    },
+    {
+      "id": "cap-05-como-reconhecer-cistite-na-consulta-de-aps",
+      "title": "5. Como reconhecer cistite na consulta de APS"
+    },
+    {
+      "id": "cap-06-pielonefrite-sindrome-clinica-nao-sinonimo-de-cultura",
+      "title": "6. Pielonefrite: síndrome clínica, não sinônimo de “cultura alta”"
+    },
+    {
+      "id": "cap-07-bacteriuria-assintomatica-quando-nao-tratar-e-a-boa-m",
+      "title": "7. Bacteriúria assintomática: quando NÃO tratar é a boa medicina"
+    },
+    {
+      "id": "cap-08-urina-tipo-i-piuria-nitrito-e-urocultura-interpretar-",
+      "title": "8. Urina tipo I, piúria, nitrito e urocultura: interpretar com método"
+    },
+    {
+      "id": "cap-09-quando-pedir-exames-de-sangue-e-hemoculturas",
+      "title": "9. Quando pedir exames de sangue e hemoculturas"
+    },
+    {
+      "id": "cap-10-imagem-do-trato-urinario-selecionar-pelo-risco-nao-po",
+      "title": "10. Imagem do trato urinário: selecionar pelo risco, não por rotina"
+    },
+    {
+      "id": "cap-11-tratamento-de-cistite-nao-complicada-eficacia-com-men",
+      "title": "11. Tratamento de cistite não complicada: eficácia com menor dano ecológico"
+    },
+    {
+      "id": "cap-12-pielonefrite-e-itu-sistemica-antibiotico-tem-que-cheg",
+      "title": "12. Pielonefrite e ITU sistêmica: antibiótico tem que chegar ao foco"
+    },
+    {
+      "id": "cap-13-quanto-tempo-tratar-e-como-interpretar-as-diretrizes-",
+      "title": "13. Quanto tempo tratar e como interpretar as diretrizes de 2025–2026"
+    },
+    {
+      "id": "cap-14-pielonefrite-obstrutiva-o-ponto-de-decisao-que-salva-",
+      "title": "14. Pielonefrite obstrutiva: o ponto de decisão que salva vidas"
+    },
+    {
+      "id": "cap-15-bacterias-resistentes-usar-antibiograma-sem-esquecer-",
+      "title": "15. Bactérias resistentes: usar antibiograma sem esquecer farmacologia"
+    },
+    {
+      "id": "cap-16-itu-em-homens-e-prostatite-bacteriana",
+      "title": "16. ITU em homens e prostatite bacteriana"
+    },
+    {
+      "id": "cap-17-gestacao-bacteriuria-assintomatica-cistite-e-pielonef",
+      "title": "17. Gestação: bacteriúria assintomática, cistite e pielonefrite"
+    },
+    {
+      "id": "cap-18-idosos-delirium-e-longas-permanencias-evitar-dano-por",
+      "title": "18. Idosos, delirium e longas permanências: evitar dano por excesso de antibiótico"
+    },
+    {
+      "id": "cap-19-itu-associada-a-cateter-e-dispositivos-urologicos",
+      "title": "19. ITU associada a cateter e dispositivos urológicos"
+    },
+    {
+      "id": "cap-20-infeccoes-fungicas-urinarias-o-que-muda-em-2026",
+      "title": "20. Infecções fúngicas urinárias: o que muda em 2026"
+    },
+    {
+      "id": "cap-21-itu-recorrente-na-mulher-diferenciar-reinfeccao-e-per",
+      "title": "21. ITU recorrente na mulher: diferenciar reinfecção e persistência"
+    },
+    {
+      "id": "cap-22-diabetes-imunossupressao-e-transplante-risco-sem-auto",
+      "title": "22. Diabetes, imunossupressão e transplante: risco sem automatismo"
+    },
+    {
+      "id": "cap-23-pediatria-visao-essencial-sem-duplicar-apostila-espec",
+      "title": "23. Pediatria: visão essencial, sem duplicar apostila especializada"
+    },
+    {
+      "id": "cap-24-complicacoes-abscesso-necrose-enfisema-e-dano-renal",
+      "title": "24. Complicações: abscesso, necrose, enfisema e dano renal"
+    },
+    {
+      "id": "cap-25-prevencao-e-seguimento-na-aps-e-no-hospital",
+      "title": "25. Prevenção e seguimento na APS e no hospital"
+    },
+    {
+      "id": "cap-26-algoritmo-de-conduta-e-erros-de-alto-impacto",
+      "title": "26. Algoritmo de conduta e erros de alto impacto"
+    },
+    {
+      "id": "cap-27-oito-casos-clinicos-comentados",
+      "title": "27. Oito casos clínicos comentados"
+    },
+    {
+      "id": "cap-28-doze-questoes-autorais-comentadas",
+      "title": "28. Doze questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"EAU Urological Infections Guidelines (2026)\",\"url\":\"https://uroweb.org/guidelines/urological-infections/chapter/the-guideline\"}",
+    "{\"label\":\"EAU: resumo de atualizações 2026\",\"url\":\"https://uroweb.org/guidelines/urological-infections/summary-of-changes/2026\"}",
+    "{\"label\":\"IDSA 2025: seleção de antimicrobianos em ITU complicada\",\"url\":\"https://www.idsociety.org/~/link/bc125f1fa47a47b7913b884cd368e8a0.aspx\"}",
+    "{\"label\":\"IDSA 2025: duração de tratamento em cUTI\",\"url\":\"https://academic.oup.com/cid/article/82/Supplement_3/i79/8384478\"}",
+    "{\"label\":\"IDSA: orientação para gram-negativos resistentes (2024)\",\"url\":\"https://doi.org/10.1093/cid/ciae403\"}",
+    "{\"label\":\"IDSA: bacteriúria assintomática (2019)\",\"url\":\"https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/\"}",
+    "{\"label\":\"ACOG 2023: UTI na gestação\",\"url\":\"https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals\"}",
+    "{\"label\":\"NICE NG224: ITU em menores de 16 anos\",\"url\":\"https://www.nice.org.uk/guidance/ng224/chapter/Recommendations\"}"
+  ],
+  "external_urls": [
+    "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+    "https://uroweb.org/guidelines/urological-infections/summary-of-changes/2026",
+    "https://www.idsociety.org/~/link/bc125f1fa47a47b7913b884cd368e8a0.aspx",
+    "https://academic.oup.com/cid/article/82/Supplement_3/i79/8384478",
+    "https://doi.org/10.1093/cid/ciae403",
+    "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+    "https://www.nice.org.uk/guidance/ng224/chapter/Recommendations"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A regra mais importante da apostila é não confundir tratamento de infecção com tratamento de um resultado de exame. Outra regra vital: antibiótico não substitui drenagem em sistema coletor infectado e obstruído. O paciente com cálculo obstrutivo, febre e hidronefrose pode evoluir rapidamente para choque, mesmo após primeira dose de antibiótico potente. O raciocínio correto une diagnóstico, ressuscitação, antibiótico sistêmico e controle da fonte."
+    },
+    {
+      "text": "Cistite é muito comum em mulheres, sobretudo na vida sexual ativa, podendo ocorrer recorrência. História prévia de ITU, relações sexuais recentes, espermicidas, mudança de parceiro e história materna podem aumentar risco; não transformar relação sexual em requisito diagnóstico nem sinal de promiscuidade. Após menopausa, alterações estrogênicas, atrofia geniturinária, microbiota e disfunções de esvaziamento contribuem. Em homens, ITU febril exige avaliar próstata, obstrução e risco de complicações, não presumindo a mesma fisiologia da cistite em mulher jovem."
+    },
+    {
+      "text": "Em mulher adulta não gestante sem fatores de risco, disúria + frequência/urgência + ausência de corrimento ou irritação vaginal tornam cistite provável. O exame físico pode ser pouco expressivo, com discreta dor suprapúbica. Pequena hematúria pode ocorrer na cistite, mas hematúria persistente após resolução merece investigação de outras causas. Febre alta, calafrios, náuseas intensas ou dor no flanco mudam a avaliação para pielonefrite ou outro diagnóstico sistêmico."
+    },
+    {
+      "text": "Urina tipo I ajuda se diagnóstico é incerto, mas leucocitúria não prova infecção e ausência de nitrito não afasta. Após tratamento bem-sucedido em adulta não gestante assintomática, cultura de controle rotineira não é indicada. Cultura coletada depois de começar antibiótico pode ter sensibilidade reduzida; quando a suspeita é sistêmica, procurar colher antes da primeira dose, sem atrasar terapia de sepse."
+    },
+    {
+      "text": "Não prescrever antibióticos em repetição automática por “ardor” sem revisar hipótese. Recidiva em poucos dias pode representar resistência, diagnóstico alternativo, retenção urinária, cálculo infectado ou alteração anatômica."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,317 @@
+{
+  "sha": "1c29b448681df91399db596475ffbe25feccfff9",
+  "path": "apostilas/_rascunhos/lote-10-aula-209-aloimunizacao-doenca-hemolitica-perinatal.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1c29b44868",
+  "title": "LURIA — Lote 10 · Apostila 209",
+  "format": ".md",
+  "chars_estimated": 81763,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 10 · Apostila 209"
+    },
+    {
+      "title": "Aloimunização materno-fetal e doença hemolítica perinatal"
+    },
+    {
+      "title": "0. Etapa zero: o que já existe e o que foi realmente consultado"
+    },
+    {
+      "title": "1. Objetivos de aprendizagem"
+    },
+    {
+      "title": "2. Definição: três conceitos que não são sinônimos"
+    },
+    {
+      "title": "2.1 Antígenos e nomenclatura sem erros"
+    },
+    {
+      "title": "2.2 IgM, IgG e memória imunológica"
+    },
+    {
+      "title": "3. Fisiopatologia: do sangue incompatível à hidropisia"
+    },
+    {
+      "title": "3.1 Como ocorre a exposição materna"
+    },
+    {
+      "title": "3.2 Por que o feto desenvolve anemia"
+    },
+    {
+      "title": "3.3 Bilirrubina: o que muda ao nascer"
+    },
+    {
+      "title": "4. Epidemiologia e por que a profilaxia anti-D mudou a doença"
+    },
+    {
+      "title": "5. Rastreio na primeira consulta: três perguntas sequenciais"
+    },
+    {
+      "title": "5.1 “Coombs indireto positivo” não é diagnóstico completo"
+    },
+    {
+      "title": "5.2 Tipagem paterna, genótipo e limitações"
+    },
+    {
+      "title": "5.3 Como organizar o risco"
+    },
+    {
+      "title": "6. Seguimento sorológico: títulos são um gatilho, não medidor direto de hemoglobina fetal"
+    },
+    {
+      "title": "6.1 Título e concentração: qual é a diferença?"
+    },
+    {
+      "title": "6.2 Frequência de pesquisa de anticorpos"
+    },
+    {
+      "title": "7. Doppler da artéria cerebral média (ACM): fisiologia e interpretação"
+    },
+    {
+      "title": "7.1 Por que a velocidade aumenta na anemia?"
+    },
+    {
+      "title": "7.2 Técnica correta"
+    },
+    {
+      "title": "7.3 Quando começar e com que frequência?"
+    },
+    {
+      "title": "7.4 Limitações que exigem reconhecer incerteza"
+    },
+    {
+      "title": "8. Hidropisia e diferencial de anemia fetal"
+    },
+    {
+      "title": "9. Transfusão intrauterina (TIU/IUT): o que é, para quem e o que pode acontecer"
+    },
+    {
+      "title": "9.1 Objetivo e janela terapêutica"
+    },
+    {
+      "title": "9.2 Como o procedimento funciona, em princípios"
+    },
+    {
+      "title": "9.3 Complicações da TIU"
+    },
+    {
+      "title": "9.4 Por que a transfusão pode precisar ser repetida?"
+    },
+    {
+      "title": "10. Prevenção: imunoglobulina anti-D na gestante NÃO sensibilizada"
+    },
+    {
+      "title": "10.1 Quem é candidata?"
+    },
+    {
+      "title": "10.2 Quando aplicar?"
+    },
+    {
+      "title": "10.3 Por que a anti-D previne sensibilização?"
+    },
+    {
+      "title": "10.4 Dose e hemorragia fetomaterna volumosa"
+    },
+    {
+      "title": "10.5 Eventos que exigem raciocínio, não reflexo"
+    },
+    {
+      "title": "11. Anti-Kell, anti-c, anti-D e outras especificidades: comparação que muda conduta"
+    },
+    {
+      "title": "11.1 Por que anti-K pede encaminhamento precoce?"
+    },
+    {
+      "title": "11.2 História obstétrica prévia supera títulos isolados"
+    },
+    {
+      "title": "12. Planejamento de nascimento: quando nascer é mais seguro do que transfundir?"
+    },
+    {
+      "title": "12.1 Preparação hemoterápica e neonatal"
+    },
+    {
+      "title": "13. Doença hemolítica neonatal: avaliação desde as primeiras horas"
+    },
+    {
+      "title": "13.1 Quais dados são necessários após o nascimento?"
+    },
+    {
+      "title": "13.2 Icterícia precoce e anemia"
+    },
+    {
+      "title": "13.3 Fototerapia: decisão por curvas, não por número decorado"
+    },
+    {
+      "title": "13.4 Escalonamento, IVIG e exsanguineotransfusão"
+    },
+    {
+      "title": "13.5 Anemia neonatal tardia"
+    },
+    {
+      "title": "14. Diferenciais — o que não é aloimunização eritrocitária"
+    },
+    {
+      "title": "15. Casos clínicos autorais com raciocínio completo"
+    },
+    {
+      "title": "Caso 1 — RhD-negativa, sem anticorpos, 28 semanas"
+    },
+    {
+      "title": "Caso 2 — Anti-D detectado após profilaxia: passivo ou imune?"
+    },
+    {
+      "title": "Caso 3 — Anti-Kell com título baixo"
+    },
+    {
+      "title": "Caso 4 — PSV-ACM elevada sem hidropisia"
+    },
+    {
+      "title": "Caso 5 — Hidropisia com PAI negativa"
+    },
+    {
+      "title": "Caso 6 — Sangramento após trauma e dose prévia de anti-D"
+    },
+    {
+      "title": "Caso 7 — O recém-nascido com icterícia às oito horas"
+    },
+    {
+      "title": "Caso 8 — Bilirrubina sobe apesar de fototerapia"
+    },
+    {
+      "title": "Caso 9 — Anemia tardia após transfusões fetais"
+    },
+    {
+      "title": "16. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — incompatibilidade versus sensibilização"
+    },
+    {
+      "title": "Questão 2 — anti-D depois da dose"
+    },
+    {
+      "title": "Questão 3 — sistema Kell"
+    },
+    {
+      "title": "Questão 4 — qual anticorpo importa?"
+    },
+    {
+      "title": "Questão 5 — Doppler ACM"
+    },
+    {
+      "title": "Questão 6 — qual Doppler?"
+    },
+    {
+      "title": "Questão 7 — pós-parto"
+    },
+    {
+      "title": "Questão 8 — evento sensibilizante extra"
+    },
+    {
+      "title": "Questão 9 — hidropisia com PAI negativa"
+    },
+    {
+      "title": "Questão 10 — icterícia de oito horas"
+    },
+    {
+      "title": "Questão 11 — IVIG no recém-nascido"
+    },
+    {
+      "title": "Questão 12 — anemia tardia"
+    },
+    {
+      "title": "Questão 13 — anti-D imune e profilaxia"
+    },
+    {
+      "title": "Questão 14 — sangue para TIU"
+    },
+    {
+      "title": "17. Algoritmos operacionais e fluxos de segurança"
+    },
+    {
+      "title": "15.1 Gestante RhD negativa na primeira consulta"
+    },
+    {
+      "title": "15.2 Anticorpo irregular positivo: as cinco decisões antes do Doppler"
+    },
+    {
+      "title": "15.3 Sinal de anemia e escolha entre TIU e parto"
+    },
+    {
+      "title": "15.4 Profilaxia após evento sensibilizante"
+    },
+    {
+      "title": "18. Três usos distintos de imunoglobulinas: prevenção e tratamento"
+    },
+    {
+      "title": "19. Casos de aprofundamento não cobertos pelo conjunto inicial"
+    },
+    {
+      "title": "Caso 10 — Anti-D imune e filho anterior afetado"
+    },
+    {
+      "title": "Caso 11 — Pós-parto com grande hemorragia feto-materna"
+    },
+    {
+      "title": "20. Quadro comparativo de recomendações e atualização de novembro de 2025"
+    },
+    {
+      "title": "20.1 A armadilha da recomendação de IVIG materna"
+    },
+    {
+      "title": "20.2 A armadilha do exame sorológico positivo após profilaxia"
+    },
+    {
+      "title": "21. Banco de imagens médicas — plano de aquisição, ainda NÃO aprovado"
+    },
+    {
+      "title": "22. Bibliografia primária verificável e grau de aplicabilidade"
+    },
+    {
+      "title": "23. Auditoria pedagógica provisória e encaminhamento"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf.",
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/tme.13098.",
+    "https://onlinelibrary.wiley.com/doi/10.1111/tme.70013.",
+    "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2841768.",
+    "https://publications.smfm.org/publications/586-society-for-maternal-fetal-medicine-clinical-guideline-8/.",
+    "https://publications.aap.org/pediatrics/article/150/3/e2022058859/188938.",
+    "https://publications.aap.org/pediatrics/article/150/3/e2022058865/188725."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Referências primárias externas conferidas para orientar a atualização:** FEBRASGO, Fluxograma de Isoimunização (2023); British Society for Haematology (BSH), investigação e manejo de anticorpos na gravidez (2025); Moise et al., consenso de aloimunização, *JAMA Network Open* 2025; SMFM Clinical Guideline #8, anemia fetal (2015); AAP, hiperbilirrubinemia em ≥35 semanas (2022); BSH 2026 sobre quantificação de hemorragia fetomaterna. O documento RCOG Green-top 65 de 2014 está listado como **arquivado**; utilizá-lo apenas para contexto histórico, não como única fonte normativa vigente. A disponibilidade de exames e procedimentos no Brasil exige "
+    },
+    {
+      "text": "O consenso JAMA Network Open 2025 recomenda genotipagem de antígeno fetal por cfDNA após **10 semanas** para RhD, RhC, Rhc, RhE, Kell e Fy em gestações já aloimunizadas, respeitando validação do método e interpretação de resultados inconclusivos. **Disponibilidade real no Brasil depende de laboratório/rede**, e um resultado inconclusivo não deve ser tratado como antígeno negativo."
+    },
+    {
+      "text": "A BSH 2025 recomenda, nas mulheres com **anti-D ou anti-c imune**, análise pelo menos a cada quatro semanas até 28 semanas e depois **quinzenal** até o parto, com adaptação quando vigilância fetal especializada já está estabelecida. O anti-K merece rastreio e acompanhamento específico, com encaminhamento precoce. Gestantes sem anticorpos clinicamente significativos são rastreadas no início e na janela de 28 semanas conforme protocolo; isso **não significa solicitar Coombs mensal para toda gestante RhD-negativa sem qualquer contexto** como regra universal internacional."
+    },
+    {
+      "text": "No consenso Moise et al. 2025, nos fetos antígeno-positivos ou desconhecidos com anticorpos significativos e título crítico, recomenda-se Doppler **semanal desde 16 semanas**, com exceções e estratificação. Histórico de feto/neonato gravemente afetado e anti-Kell podem levar a vigilância ainda mais precoce/individualizada. O ponto é que esperar hidropisia para começar Doppler é erro: hidropisia já é manifestação tardia de anemia grave."
+    },
+    {
+      "text": "O desempenho do Doppler varia com idade gestacional e tende a gerar **mais resultados falso-positivos tardiamente**, especialmente além de cerca de 35 semanas. **Depois de transfusão intrauterina**, as propriedades do sangue, a dinâmica fetal e as equações de previsão podem mudar; equipes especializadas usam Doppler e projeções de queda de hemoglobina para programar próxima transfusão, sem tratar o mesmo limiar como teste infalível. Em hidropisia de outra causa, PSV pode se alterar sem hemólise imune."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

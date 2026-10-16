@@ -1,0 +1,169 @@
+{
+  "sha": "792f772da6c9b034e80fb15469059f91bb5ca436",
+  "path": "apostilas/_rascunhos/lote-13-259-sistemas-informacao-saude.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--792f772da6",
+  "title": "LURIA · Lote 13 · Apostila 259",
+  "format": ".md",
+  "chars_estimated": 29066,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Lote 13 · Apostila 259"
+    },
+    {
+      "title": "Sistemas de Informação em Saúde e qualidade dos dados"
+    },
+    {
+      "title": "Etapa zero — material realmente consultado"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Por que sistemas de informação são instrumentos clínicos?"
+    },
+    {
+      "title": "2. Arquitetura dos sistemas: quem registra e para quê?"
+    },
+    {
+      "title": "SIM — Sistema de Informações sobre Mortalidade"
+    },
+    {
+      "title": "SINASC — Sistema de Informações sobre Nascidos Vivos"
+    },
+    {
+      "title": "SINAN — Sistema de Informação de Agravos de Notificação"
+    },
+    {
+      "title": "SIH/SUS — Sistema de Informações Hospitalares"
+    },
+    {
+      "title": "SIA/SUS — Sistema de Informações Ambulatoriais"
+    },
+    {
+      "title": "CNES — Cadastro Nacional de Estabelecimentos de Saúde"
+    },
+    {
+      "title": "SI-PNI e sistemas de imunização"
+    },
+    {
+      "title": "APS: SIAB histórico, SISAB e Siaps"
+    },
+    {
+      "title": "RNDS e interoperabilidade"
+    },
+    {
+      "title": "3. Quadro rápido: pergunta certa → fonte inicial"
+    },
+    {
+      "title": "4. Da ficha ao indicador: o ciclo de qualidade"
+    },
+    {
+      "title": "Dimensões da qualidade"
+    },
+    {
+      "title": "Denominadores, taxas e proporções"
+    },
+    {
+      "title": "5. Viés e confundimento no uso de bancos administrativos"
+    },
+    {
+      "title": "6. Vinculação de bancos: possibilidades e riscos"
+    },
+    {
+      "title": "7. Privacidade, LGPD e segurança"
+    },
+    {
+      "title": "8. Painéis e indicadores: como ler sem cair em armadilhas"
+    },
+    {
+      "title": "Alertas para prova"
+    },
+    {
+      "title": "9. Fluxogramas autorais"
+    },
+    {
+      "title": "A. Investigar aumento inesperado de doença notificada"
+    },
+    {
+      "title": "B. Escolher sistema para responder pergunta de gestão"
+    },
+    {
+      "title": "C. Corrigir ficha incompleta"
+    },
+    {
+      "title": "10. Casos clínico-epidemiológicos comentados"
+    },
+    {
+      "title": "Caso 1 — Morte infantil e denominador"
+    },
+    {
+      "title": "Caso 2 — \"Surto\" que era mais testagem"
+    },
+    {
+      "title": "Caso 3 — Produção SIH versus indivíduos"
+    },
+    {
+      "title": "Caso 4 — Cobertura vacinal acima de 100%"
+    },
+    {
+      "title": "Caso 5 — Mudança de versão na APS"
+    },
+    {
+      "title": "11. Questões autorais, com comentário por alternativa"
+    },
+    {
+      "title": "12. Imagens didáticas candidatas — apenas pauta para Admin"
+    },
+    {
+      "title": "13. Referências oficiais verificadas e controle editorial"
+    },
+    {
+      "title": "Auditoria honesta desta versão"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. DataSUS — competências, sistemas e interoperabilidade: https://www.gov.br/saude/pt-br/composicao/seidigi/datasus/datasus",
+    "2. Ministério da Saúde. Sistemas de Informação em Saúde da MAC: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/programacao-regulacao-controle-e-financiamento-da-mac/sistemas-de-informacao-em-saude",
+    "3. Ministério da Saúde. Notificação Compulsória e lista atualizada pela Portaria GM/MS 10.175/2026: https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "4. Ministério da Saúde. Normativas para e-SUS APS e validação Siaps, 23/12/2025: https://www.gov.br/saude/pt-br/assuntos/noticias/2025/dezembro/ministerio-da-saude-publica-normativas-que-orientam-atualizacao-do-e-sus-aps-e-reforcam-qualidade-dos-dados-da-atencao-primaria",
+    "5. Lei nº 13.709/2018 — LGPD: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "6. Ministério da Saúde. Boletins epidemiológicos e sistemas oficiais — consultar versões pertinentes ao agravo no Portal da Vigilância: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z",
+    "- **Produzido:** capítulos originais em sequência lógica, 5 casos completos, 7 questões comentadas, matrizes e fluxos, 10 pautas de imagens e fontes atuais.",
+    "- **Cobertura forte:** utilidade de SIM/SINASC/SINAN/SIH/SIA/CNES; normas Siaps; qualidade, viés, denominadores, uso/privacidade.",
+    "- **Lacunas para ≥60k úteis e autossuficiência:** dicionários completos de variáveis por sistema; fluxo de notificações compulsórias e prazos específicos da lista 2026 por agravo; linkage e dados federados com exemplos em profundidade; análise de sensibilidade e séries temporais; indicadores adicionais (mortalidade materna, letalidade, internação evitável); interoperabilidade FHIR/terminologias; legislação/instituições e segurança; mais exercícios; verificação de licença das dez imagens; revisão por especialista e teste PWA.",
+    "- **Etapa zero:** satisfeita **parcialmente** por material de vigilância do Drive lido, sem equivalente completo de saúde digital.",
+    "- **Status técnico:** RASCUNHO_PARCIAL_NAO_PUBLICAR. Não converter em HTML, não certificar meta por contagem de Markdown."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/composicao/seidigi/datasus/datasus",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/programacao-regulacao-controle-e-financiamento-da-mac/sistemas-de-informacao-em-saude",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "https://www.gov.br/saude/pt-br/assuntos/noticias/2025/dezembro/ministerio-da-saude-publica-normativas-que-orientam-atualizacao-do-e-sus-aps-e-reforcam-qualidade-dos-dados-da-atencao-primaria",
+    "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Um **dado** é valor observado (idade, diagnóstico, data). Torna-se **informação** quando recebe definição, verificação e contexto (número de casos novos em determinado território e período). Um **indicador** combina informação com regra reprodutível (taxa de mortalidade infantil por mil nascidos vivos), permitindo monitoramento. Por fim, a **decisão** combina indicador, necessidade e viabilidade: uma taxa alta pode direcionar investigação, mas não demonstra por si só qual intervenção será eficaz."
+    },
+    {
+      "text": "**4.** Cobertura vacinal de 105% pode indicar: A) Imunidade biológica acima de 100%. B) Denominador inadequado, duplicidade ou vacinação de não residentes. C) Falha obrigatória da vacina. D) Erro ético em vacinar. E) Diagnóstico de epidemia. **Gabarito B.** A é impossibilidade interpretativa; C/D/E não são decorrência; B reconhece problema de numerador/denominador. **Mini-revisão:** conferir unidade dose/pessoa, população-alvo e residência."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

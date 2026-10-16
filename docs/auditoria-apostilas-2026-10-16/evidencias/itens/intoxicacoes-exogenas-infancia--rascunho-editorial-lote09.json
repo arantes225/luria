@@ -1,0 +1,855 @@
+{
+  "key": "intoxicacoes-exogenas-infancia--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/intoxicacoes-exogenas-infancia/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 178 | Intoxicações exógenas na infância",
+  "source_sha256": "3143d0ef244bdc87740c297149f842f74b6fb6e2feb5e176e924fa42b6f2a48b",
+  "chars_estimated": 96314,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 178 | Intoxicações exógenas na infância",
+      "level": 1
+    },
+    {
+      "line": 13,
+      "title": "1. Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "2. Conceitos fundamentais: exposição, dose e toxíndrome",
+      "level": 2
+    },
+    {
+      "line": 38,
+      "title": "2.1. Vulnerabilidade pediátrica",
+      "level": 3
+    },
+    {
+      "line": 44,
+      "title": "2.2. Exposição aguda e repetida",
+      "level": 3
+    },
+    {
+      "line": 48,
+      "title": "2.3. Agente identificado versus desconhecido",
+      "level": 3
+    },
+    {
+      "line": 52,
+      "title": "3. Primeiro atendimento: não perder tempo com medidas domiciliares",
+      "level": 2
+    },
+    {
+      "line": 58,
+      "title": "3.1. Segurança da equipe e da cena",
+      "level": 3
+    },
+    {
+      "line": 62,
+      "title": "3.2. ABCDE toxicológico",
+      "level": 3
+    },
+    {
+      "line": 76,
+      "title": "4. História toxicológica: as sete perguntas que mudam conduta",
+      "level": 2
+    },
+    {
+      "line": 88,
+      "title": "4.1. Estimar pior cenário plausível",
+      "level": 3
+    },
+    {
+      "line": 92,
+      "title": "4.2. Histórico de medicações familiares",
+      "level": 3
+    },
+    {
+      "line": 96,
+      "title": "4.3. Adolescentes e intenção",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "5. Toxíndromes clássicas — quadro principal",
+      "level": 2
+    },
+    {
+      "line": 113,
+      "title": "5.1. Organofosforado e mnemônico SLUDGE/DUMBELS",
+      "level": 3
+    },
+    {
+      "line": 117,
+      "title": "5.2. Sedação mista",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "6. Exames: pedir o que realmente altera decisão",
+      "level": 2
+    },
+    {
+      "line": 123,
+      "title": "6.1. Exames quase universais na criança sintomática",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "6.2. ECG toxicológico",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "6.3. Ânion gap, acidose e osmolaridade",
+      "level": 3
+    },
+    {
+      "line": 145,
+      "title": "6.4. Concentrações séricas de agentes específicos",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "7. Descontaminação: o que NÃO fazer",
+      "level": 2
+    },
+    {
+      "line": 153,
+      "title": "7.1. Não induzir vômitos nem neutralizar cáusticos",
+      "level": 3
+    },
+    {
+      "line": 157,
+      "title": "7.2. Carvão ativado — raro, seletivo e não universal",
+      "level": 3
+    },
+    {
+      "line": 165,
+      "title": "7.3. Lavagem gástrica",
+      "level": 3
+    },
+    {
+      "line": 169,
+      "title": "7.4. Irrigação intestinal total",
+      "level": 3
+    },
+    {
+      "line": 173,
+      "title": "7.5. Dérmica e ocular",
+      "level": 3
+    },
+    {
+      "line": 177,
+      "title": "8. Intoxicação por paracetamol (acetaminofeno)",
+      "level": 2
+    },
+    {
+      "line": 181,
+      "title": "8.1. Reconstruir dose",
+      "level": 3
+    },
+    {
+      "line": 187,
+      "title": "8.2. Estágios clínicos",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "8.3. Rumack–Matthew: QUANDO utilizar",
+      "level": 3
+    },
+    {
+      "line": 199,
+      "title": "8.4. Antídoto e monitorização",
+      "level": 3
+    },
+    {
+      "line": 205,
+      "title": "8.5. Quando considerar UTI/transplante",
+      "level": 3
+    },
+    {
+      "line": 209,
+      "title": "9. Salicilatos: alcalose respiratória + acidose metabólica",
+      "level": 2
+    },
+    {
+      "line": 213,
+      "title": "9.1. Razões da gravidade",
+      "level": 3
+    },
+    {
+      "line": 217,
+      "title": "9.2. Avaliação",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "9.3. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "10. Ferro: cálculo pelo ferro elementar",
+      "level": 2
+    },
+    {
+      "line": 231,
+      "title": "10.1. Faixas didáticas de risco (RCH)",
+      "level": 3
+    },
+    {
+      "line": 240,
+      "title": "10.2. Fases clínicas",
+      "level": 3
+    },
+    {
+      "line": 246,
+      "title": "10.3. Exames e manejo",
+      "level": 3
+    },
+    {
+      "line": 252,
+      "title": "11. Medicamentos cardiovasculares e hipoglicemiantes: pouca quantidade pode ser grave",
+      "level": 2
+    },
+    {
+      "line": 254,
+      "title": "11.1. Sulfonilureias",
+      "level": 3
+    },
+    {
+      "line": 258,
+      "title": "11.2. Betabloqueadores",
+      "level": 3
+    },
+    {
+      "line": 262,
+      "title": "11.3. Bloqueadores de canal de cálcio",
+      "level": 3
+    },
+    {
+      "line": 266,
+      "title": "11.4. Clonidina",
+      "level": 3
+    },
+    {
+      "line": 270,
+      "title": "11.5. Digoxina",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "12. Psicofármacos e antiepilépticos",
+      "level": 2
+    },
+    {
+      "line": 276,
+      "title": "12.1. Antidepressivos tricíclicos",
+      "level": 3
+    },
+    {
+      "line": 282,
+      "title": "12.2. Antidepressivos ISRS/IRSN e síndrome serotoninérgica",
+      "level": 3
+    },
+    {
+      "line": 286,
+      "title": "12.3. Antipsicóticos",
+      "level": 3
+    },
+    {
+      "line": 290,
+      "title": "12.4. Benzodiazepínicos",
+      "level": 3
+    },
+    {
+      "line": 294,
+      "title": "12.5. Carbamazepina, valproato e fenobarbital",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "13. Opioides: ventilação antes e durante naloxona",
+      "level": 2
+    },
+    {
+      "line": 306,
+      "title": "14. Produtos de limpeza, cáusticos e hidrocarbonetos",
+      "level": 2
+    },
+    {
+      "line": 308,
+      "title": "14.1. Cáusticos ácidos e álcalis",
+      "level": 3
+    },
+    {
+      "line": 314,
+      "title": "14.2. Hipoclorito, amônia e mistura de produtos",
+      "level": 3
+    },
+    {
+      "line": 318,
+      "title": "14.3. Hidrocarbonetos e derivados de petróleo",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "14.4. Óleos essenciais",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "15. Pesticidas: organofosforados, carbamatos e outros",
+      "level": 2
+    },
+    {
+      "line": 330,
+      "title": "15.1. Organofosforados/carbamatos",
+      "level": 3
+    },
+    {
+      "line": 338,
+      "title": "15.2. Piretroides e raticidas",
+      "level": 3
+    },
+    {
+      "line": 342,
+      "title": "15.3. Saúde coletiva",
+      "level": 3
+    },
+    {
+      "line": 346,
+      "title": "16. Gases tóxicos: monóxido de carbono e cianeto",
+      "level": 2
+    },
+    {
+      "line": 348,
+      "title": "16.1. Monóxido de carbono (CO)",
+      "level": 3
+    },
+    {
+      "line": 354,
+      "title": "16.2. Cianeto",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "17. Metais e exposições ambientais crônicas",
+      "level": 2
+    },
+    {
+      "line": 360,
+      "title": "17.1. Chumbo",
+      "level": 3
+    },
+    {
+      "line": 364,
+      "title": "17.2. Mercúrio e arsênio",
+      "level": 3
+    },
+    {
+      "line": 368,
+      "title": "17.3. Ingestão de pilha botão e ímãs — emergência correlata",
+      "level": 3
+    },
+    {
+      "line": 374,
+      "title": "18. Exposições dermatológicas e oftalmológicas",
+      "level": 2
+    },
+    {
+      "line": 380,
+      "title": "19. Convulsões e coma tóxico — diferenciar e tratar",
+      "level": 2
+    },
+    {
+      "line": 388,
+      "title": "20. Critérios de observação, internação e transferência",
+      "level": 2
+    },
+    {
+      "line": 390,
+      "title": "20.1. Internação ou observação monitorizada",
+      "level": 3
+    },
+    {
+      "line": 396,
+      "title": "20.2. UTI e referência de maior complexidade",
+      "level": 3
+    },
+    {
+      "line": 402,
+      "title": "20.3. Alta segura",
+      "level": 3
+    },
+    {
+      "line": 406,
+      "title": "21. Prevenção primária e segurança domiciliar",
+      "level": 2
+    },
+    {
+      "line": 421,
+      "title": "21.1. Educação de cuidadores na APS",
+      "level": 3
+    },
+    {
+      "line": 425,
+      "title": "22. Notificação compulsória e vigilância no Brasil",
+      "level": 2
+    },
+    {
+      "line": 433,
+      "title": "23. Principais antídotos: relacionar mecanismo e risco",
+      "level": 2
+    },
+    {
+      "line": 457,
+      "title": "24. Algoritmos LURIA — raciocínio passo a passo",
+      "level": 2
+    },
+    {
+      "line": 459,
+      "title": "Fluxo A — Criança com suspeita de ingestão",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "Fluxo B — Criança sonolenta com respiração lenta",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "Fluxo C — Suposta overdose de paracetamol",
+      "level": 3
+    },
+    {
+      "line": 468,
+      "title": "Fluxo D — Dor/vômitos após ferro",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "Fluxo E — Produto corrosivo",
+      "level": 3
+    },
+    {
+      "line": 474,
+      "title": "Fluxo F — Agitação/convulsão com pele úmida ou seca",
+      "level": 3
+    },
+    {
+      "line": 477,
+      "title": "Fluxo G — Pesticida com secreções intensas",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "Fluxo H — Intoxicação intencional em adolescente",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "25. Pérolas de prova e erros perigosos",
+      "level": 2
+    },
+    {
+      "line": 524,
+      "title": "26. Síntese clínica: sinais e prioridades",
+      "level": 2
+    },
+    {
+      "line": 539,
+      "title": "27. Bibliografia e referências verificáveis",
+      "level": 2
+    },
+    {
+      "line": 560,
+      "title": "Limitações e divergências",
+      "level": 3
+    },
+    {
+      "line": 564,
+      "title": "28. Controle editorial desta etapa",
+      "level": 2
+    },
+    {
+      "line": 585,
+      "title": "29. Casos clínicos toxicológicos integradores — raciocínio, exames, conduta e prevenção",
+      "level": 2
+    },
+    {
+      "line": 589,
+      "title": "Caso 1 — Lactente ingeriu medicamento da avó: hipoglicemia recorrente",
+      "level": 3
+    },
+    {
+      "line": 603,
+      "title": "Caso 2 — Gotas de paracetamol: dose máxima plausível e nomograma",
+      "level": 3
+    },
+    {
+      "line": 617,
+      "title": "Caso 3 — Paracetamol repetido por dois cuidadores: nomograma inválido",
+      "level": 3
+    },
+    {
+      "line": 631,
+      "title": "Caso 4 — Suplemento de ferro com aparente melhora",
+      "level": 3
+    },
+    {
+      "line": 645,
+      "title": "Caso 5 — Querosene em garrafa de refrigerante: tosse após ingestão",
+      "level": 3
+    },
+    {
+      "line": 659,
+      "title": "Caso 6 — Soda cáustica: ausência de queimadura oral",
+      "level": 3
+    },
+    {
+      "line": 673,
+      "title": "Caso 7 — Pesticida rural: secreções e insuficiência respiratória",
+      "level": 3
+    },
+    {
+      "line": 687,
+      "title": "Caso 8 — Coma e miose após adesivo opioide",
+      "level": 3
+    },
+    {
+      "line": 701,
+      "title": "Caso 9 — Tricíclico com convulsão e QRS alargado",
+      "level": 3
+    },
+    {
+      "line": 715,
+      "title": "Caso 10 — Hiperventilação e acidose em ingestão de salicilato",
+      "level": 3
+    },
+    {
+      "line": 729,
+      "title": "Caso 11 — Gerador elétrico em garagem: vários membros com cefaleia",
+      "level": 3
+    },
+    {
+      "line": 743,
+      "title": "Caso 12 — Pilha botão impactada no esôfago",
+      "level": 3
+    },
+    {
+      "line": 757,
+      "title": "Caso 13 — Síndrome serotoninérgica após associação de medicações",
+      "level": 3
+    },
+    {
+      "line": 771,
+      "title": "Caso 14 — Adolescente com ingestão intencional e exames iniciais normais",
+      "level": 3
+    },
+    {
+      "line": 787,
+      "title": "30. Questões autorais LURIA — alternativas comentadas individualmente",
+      "level": 2
+    },
+    {
+      "line": 791,
+      "title": "Questão 1 — Dose em mg/kg",
+      "level": 3
+    },
+    {
+      "line": 812,
+      "title": "Questão 2 — Primeiro atendimento",
+      "level": 3
+    },
+    {
+      "line": 833,
+      "title": "Questão 3 — Carvão ativado e hidrocarboneto",
+      "level": 3
+    },
+    {
+      "line": 854,
+      "title": "Questão 4 — Toxíndrome anticolinérgica",
+      "level": 3
+    },
+    {
+      "line": 875,
+      "title": "Questão 5 — Toxíndrome colinérgica e órgão-alvo",
+      "level": 3
+    },
+    {
+      "line": 896,
+      "title": "Questão 6 — Paracetamol e horário",
+      "level": 3
+    },
+    {
+      "line": 917,
+      "title": "Questão 7 — Paracetamol repetido",
+      "level": 3
+    },
+    {
+      "line": 938,
+      "title": "Questão 8 — Interromper NAC",
+      "level": 3
+    },
+    {
+      "line": 959,
+      "title": "Questão 9 — Ferro elementar",
+      "level": 3
+    },
+    {
+      "line": 980,
+      "title": "Questão 10 — Latência da intoxicação por ferro",
+      "level": 3
+    },
+    {
+      "line": 1001,
+      "title": "Questão 11 — Sulfonilureia e glicose",
+      "level": 3
+    },
+    {
+      "line": 1022,
+      "title": "Questão 12 — Opioide e naloxona",
+      "level": 3
+    },
+    {
+      "line": 1043,
+      "title": "Questão 13 — Tricíclico e ECG",
+      "level": 3
+    },
+    {
+      "line": 1064,
+      "title": "Questão 14 — Serotoninérgica versus anticolinérgica",
+      "level": 3
+    },
+    {
+      "line": 1085,
+      "title": "Questão 15 — CO com SpO₂ normal",
+      "level": 3
+    },
+    {
+      "line": 1106,
+      "title": "Questão 16 — Cáustico e aparência da boca",
+      "level": 3
+    },
+    {
+      "line": 1127,
+      "title": "Questão 17 — Salicilatos e intubação",
+      "level": 3
+    },
+    {
+      "line": 1148,
+      "title": "Questão 18 — Pilha botão esofágica",
+      "level": 3
+    },
+    {
+      "line": 1169,
+      "title": "Questão 19 — Notificação no Brasil",
+      "level": 3
+    },
+    {
+      "line": 1190,
+      "title": "Questão 20 — Intoxicação intencional sem sintomas",
+      "level": 3
+    },
+    {
+      "line": 1211,
+      "title": "Questão 21 — Flumazenil",
+      "level": 3
+    },
+    {
+      "line": 1232,
+      "title": "Questão 22 — Chumbinho",
+      "level": 3
+    },
+    {
+      "line": 1255,
+      "title": "31. Curadoria premium de imagens clínicas, exames e diagramas — 22 candidatas",
+      "level": 2
+    },
+    {
+      "line": 1284,
+      "title": "Critérios visuais para PWA/desktop",
+      "level": 3
+    },
+    {
+      "line": 1294,
+      "title": "32. Auditoria final e integração curricular",
+      "level": 2
+    },
+    {
+      "line": 1298,
+      "title": "Conferências internas",
+      "level": 3
+    },
+    {
+      "line": 1315,
+      "title": "Pendências para publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **Sociedade Brasileira de Pediatria. Intoxicações Agudas na Infância.** Departamento Científico de Toxicologia e Saúde Ambiental, atualizado setembro de 2025. https://www.sbp.com.br/pediatria-para-familias/cuidados-com-a-saude/intoxicacoes-agudas-na-infancia/",
+    "2. **SBP. Intoxicações Exógenas — Segurança e Prevenção.** Divulgação do CIATox 0800 722 6001 e orientações domiciliares. https://www.sbp.com.br/pediatria-para-familias/seguranca-e-prevencao/intoxicacoes-exogenas/",
+    "3. **Ministério da Saúde. VIGIPEQ — Vigilância de populações expostas a substâncias e contaminantes químicos; ficha de intoxicação exógena.** https://www.gov.br/saude/pt-br/composicao/svsa/saude-ambiental/vigipeq",
+    "4. **Ministério da Saúde. Notificação Compulsória e SINAN.** Lista atualizada pela Portaria GM/MS nº 10.175/2026, de 23/01/2026. https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "5. **Royal Children's Hospital Melbourne. Poisoning — Acute Guidelines for Initial Management**, índice e abordagem pediátrica de toxíndromes, descontaminação, antídotos e eliminação. https://www.rch.org.au/clinicalguide/guideline_index/Poisoning_initial_management/",
+    "6. **RCH. Use of Activated Charcoal in Poisonings.** Contraindicações e seleção pediátrica. https://www.rch.org.au/clinicalguide/guideline_index/Use_of_Activated_Charcoal_in_Poisonings/",
+    "7. **AACT/EAPCCT. Position statement on single-dose activated charcoal.** *Clin Toxicol.* Documento histórico de evidência/limitações: https://pubmed.ncbi.nlm.nih.gov/9482427/",
+    "8. **Dart RC et al. Management of Acetaminophen Poisoning in the US and Canada: A Consensus Statement.** *JAMA Network Open*. 2023;6:e2327739. DOI https://doi.org/10.1001/jamanetworkopen.2023.27739",
+    "9. **RCH. Iron poisoning**, dose de ferro elementar, fases, lavagem intestinal e desferroxamina. https://www.rch.org.au/clinicalguide/guideline_index/iron_poisoning/",
+    "10. **RCH. Salicylates poisoning**, acidose/respiração/diálise. https://www.rch.org.au/clinicalguide/guideline_index/Salicylates_Posioning/",
+    "11. **RCH. Tricyclic antidepressant poisoning**, ECG QRS, bicarbonato, suporte. https://www.rch.org.au/clinicalguide/guideline_index/Tricyclic_Antidepressant_%28TCA%29_Poisoning/",
+    "12. **RCH. Hydrocarbon poisoning**, pneumonite por aspiração e proibição de carvão. https://www.rch.org.au/clinicalguide/guideline_index/Hydrocarbon_poisoning/",
+    "13. **RCH. Oral hypoglycaemic poisoning**, sulfonilureias, hipoglicemia recorrente e octreotida. https://www.rch.org.au/clinicalguide/guideline_index/Oral_Hypoglycaemic_Poisoning/",
+    "14. **RCH. Foreign body ingestion**, botão e ímãs, emergência digestiva correlata. https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/",
+    "15. **RCH. Essential oil poisoning**, óleos essenciais e suporte respiratório. https://www.rch.org.au/clinicalguide/guideline_index/Essential_Oil_Poisoning/",
+    "16. **AHA/AAP. Pediatric Basic and Advanced Life Support Guidelines 2025**, suporte de ABC/PCR pediátrico e assistência a hipoxemia/choque. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "17. **WHO. Preventing child poisoning** e documentos de segurança ambiental infantil, conferir edições por tema. https://www.who.int/health-topics/poisoning",
+    "18. **Ministério da Saúde. CIATox estaduais e redes de urgência**: utilizar os centros regionais por meio das orientações da vigilância local além do número nacional informado pela SBP.",
+    "As publicações internacionais detalham regimes de antídotos em sistemas de saúde diferentes; a **disponibilidade de octreotida IV, Fab anti-digoxina, fomepizol, hidroxocobalamina, execução de protocolos de HIET e recursos de diálise** deve ser verificada em cada serviço brasileiro antes de elaborar prescrição. **O consenso paracetamol EUA/Canadá 2023** é referência técnica, não portaria nacional. **SBP 2025** e **VIGIPEQ/MS** estabelecem prioridades brasileiras em prevenção e notificação. A escolha de um único número de telefone e fluxos locais devem ser rechecadas antes de publicação."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.sbp.com.br/pediatria-para-familias/cuidados-com-a-saude/intoxicacoes-agudas-na-infancia/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/pediatria-para-familias/seguranca-e-prevencao/intoxicacoes-exogenas/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-ambiental/vigipeq",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Poisoning_initial_management/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Use_of_Activated_Charcoal_in_Poisonings/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9482427/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1001/jamanetworkopen.2023.27739",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/iron_poisoning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Salicylates_Posioning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Tricyclic_Antidepressant_%28TCA%29_Poisoning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Hydrocarbon_poisoning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Oral_Hypoglycaemic_Poisoning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Essential_Oil_Poisoning/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/health-topics/poisoning",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Dados SBP (publicação setembro/2025):** no SINAN de 2022 foram registrados **177.766 casos de intoxicação exógena** entre todas as idades, com **32,6%** na faixa de 0–19 anos segundo a publicação; medicamentos corresponderam a 63,8% das notificações pediátricas citadas, produtos de limpeza/químicos a 7,2%. Essas estimativas descrevem **casos notificados no período histórico**, não necessariamente incidência brasileira de 2026 ou ranking completo de todos os agentes por idade.",
+      "pattern": 0
+    },
+    {
+      "text": "**Cálculo de dose:** mg ingeridos = unidades × mg/unidade; mg/kg = dose máxima estimada / peso. Exemplo: criança 12 kg, há possibilidade de até 8 comprimidos de 250 mg terem desaparecido: máximo estimado 2.000 mg, equivalente a cerca de 167 mg/kg — isso **não prova ingestão real**, mas orienta avaliação com CIATox.",
+      "pattern": 0
+    },
+    {
+      "text": "**Carvão NÃO adsorve adequadamente:** ferro, lítio, potássio e outros metais, álcool e álcoois tóxicos, hidrocarbonetos e substâncias cáusticas. Não “dar carvão só para fazer alguma coisa” em criança de 2 anos que ingeriu querosene.",
+      "pattern": 0
+    },
+    {
+      "text": "**AVISO DE SEGURANÇA:** material educacional para treinamento de profissionais supervisionados. Não deve ser utilizado como instrução de automedicação, procedimento doméstico ou prescrição independente. Em exposição real, chamar serviço de emergência conforme gravidade e CIATox. A escolha de antídotos, doses e diluições é condicionada a avaliação médica, peso aferido/estimado validamente, via aérea, farmacologia, disponibilidade e monitorização. Algumas drogas e quantidades perigosas variam por apresentação, liberação prolongada, coingestão e função orgânica.",
+      "pattern": 1
+    },
+    {
+      "text": "1. Reconhecer exposição versus intoxicação e diferenciar risco toxicológico de sintoma inespecífico. 2. Estabilizar crianças segundo ABCDE/PALS e identificar quadros de risco iminente. 3. Obter história toxicológica válida e calcular a **maior dose possível** por massa corporal, com cautela diante de relato impreciso. 4. Distinguir toxíndromes opioide, simpaticomimética, anticolinérgica, colinérgica, sedativo-hipnótica e serotoninérgica. 5. Indicar exames essenciais e dirigidos, inclusive glicemia, gasometria/ânion gap, eletrólitos, ECG e concentrações específicas. 6. Explicar quando descontaminação gastrointestinal é prejudicial e quando pode ser considerada sob supervisão. 7. Conduzir intoxicações por paracetamol, salicilato, ferro, psicotrópicos, opioides, sulfonilureias, produtos de limpeza, hidrocarbonetos, pesticidas, monóxido de carbono e substâncias do cotidiano. 8. Conhecer antídotos principais, situações em que são contraindicados e critérios de contato toxicológico urgente. 9. Prevenir lesão secundária por aspiração, hipotensão, hipoglicemia, hipertermia e arritmia. 10. Identificar ingestões intencionais em adolescentes e organizar abordagem psicossocial sem julgamento. 11. Registrar e notificar intoxicações exógenas ao SINAN conforme normas brasileiras. 12. Orientar prevenção, guarda de medicamentos, retorno e sinais de alarme.",
+      "pattern": 1
+    },
+    {
+      "text": "**Aguda única conhecida:** substância, quantidade e horário relativamente definidos, permitindo uso de certas janelas e nomogramas (paracetamol em circunstâncias específicas). **Exposição repetida/supraterapêutica:** várias doses acima das recomendações em 24–72 h ou mais; níveis isolados podem não informar risco da mesma forma que no evento único. **Crônica:** exposição ambiental/ocupacional, incluindo chumbo e pesticidas, com manifestações sutis e necessidade de saúde coletiva.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria · Emergência · Toxicologia Clínica · Saúde Coletiva e Segurança Infantil **Lote 09 — Aula 178/180 | Versão editorial: 15/10/2026** **Estado:** rascunho médico-científico autoral para revisão independente; ainda não há imagens aprovadas nem integração no aplicativo.",
+      "pattern": 2
+    },
+    {
+      "text": "**Bases nacionais:** Sociedade Brasileira de Pediatria (SBP), *Intoxicações Agudas na Infância* (setembro/2025); SBP, orientações de segurança e prevenção; Ministério da Saúde, VIGIPEQ/SINAN (notificação compulsória de intoxicação exógena), lista atualizada em janeiro/2026. **Bases complementares internacionais:** RCH Melbourne, guias pediátricos de toxicologia e intoxicações específicas; consenso EUA/Canadá para paracetamol (JAMA Network Open, 2023). Adotar procedimentos e apresentações disponíveis no Brasil, sob apoio do CIATox.",
+      "pattern": 2
+    },
+    {
+      "text": "**Dados SBP (publicação setembro/2025):** no SINAN de 2022 foram registrados **177.766 casos de intoxicação exógena** entre todas as idades, com **32,6%** na faixa de 0–19 anos segundo a publicação; medicamentos corresponderam a 63,8% das notificações pediátricas citadas, produtos de limpeza/químicos a 7,2%. Essas estimativas descrevem **casos notificados no período histórico**, não necessariamente incidência brasileira de 2026 ou ranking completo de todos os agentes por idade.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria · Emergência · Toxicologia Clínica · Saúde Coletiva e Segurança Infantil **Lote 09 — Aula 178/180 | Versão editorial: 15/10/2026** **Estado:** rascunho médico-científico autoral para revisão independente; ainda não há imagens aprovadas nem integração no aplicativo."
+    },
+    {
+      "text": "**Bases nacionais:** Sociedade Brasileira de Pediatria (SBP), *Intoxicações Agudas na Infância* (setembro/2025); SBP, orientações de segurança e prevenção; Ministério da Saúde, VIGIPEQ/SINAN (notificação compulsória de intoxicação exógena), lista atualizada em janeiro/2026. **Bases complementares internacionais:** RCH Melbourne, guias pediátricos de toxicologia e intoxicações específicas; consenso EUA/Canadá para paracetamol (JAMA Network Open, 2023). Adotar procedimentos e apresentações disponíveis no Brasil, sob apoio do CIATox."
+    }
+  ]
+}

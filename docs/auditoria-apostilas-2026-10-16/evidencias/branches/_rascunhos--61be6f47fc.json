@@ -1,0 +1,315 @@
+{
+  "sha": "61be6f47fcbe3e1eac8532f89ea0e532287db1a5",
+  "path": "apostilas/_rascunhos/lote-03-051-dpoc.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--61be6f47fc",
+  "title": "LURIA — Apostila 051: Doença pulmonar obstrutiva crônica (DPOC)",
+  "format": ".md",
+  "chars_estimated": 68134,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 051: Doença pulmonar obstrutiva crônica (DPOC)"
+    },
+    {
+      "title": "0. Etapa zero — comparação obrigatória realmente executada"
+    },
+    {
+      "title": "1. O que é DPOC e por que causa incapacidade progressiva"
+    },
+    {
+      "title": "1.1 Anatomia funcional"
+    },
+    {
+      "title": "1.2 Hiperinsuflação dinâmica e suas consequências"
+    },
+    {
+      "title": "2. Quem desenvolve DPOC? Exposição, predisposição e história natural"
+    },
+    {
+      "title": "2.1 O que significa tabagismo em maços-ano?"
+    },
+    {
+      "title": "2.2 Heterogeneidade clínica"
+    },
+    {
+      "title": "3. Apresentação clínica: da tosse discreta à insuficiência respiratória"
+    },
+    {
+      "title": "3.1 Questionários de sintomas: mMRC e CAT/CAAT"
+    },
+    {
+      "title": "3.2 Hipoxemia versus hipercapnia"
+    },
+    {
+      "title": "4. Diagnóstico: espirometria pós-broncodilatador é indispensável"
+    },
+    {
+      "title": "4.1 Obstrução, restrição e padrões mistos"
+    },
+    {
+      "title": "4.2 Estadiamento espirométrico GOLD 1–4"
+    },
+    {
+      "title": "4.3 Quando pedir mais exames?"
+    },
+    {
+      "title": "5. Diferenciais: por que falta de ar não significa DPOC"
+    },
+    {
+      "title": "6. Classificação de sintomas e risco no GOLD 2026 — A, B e E"
+    },
+    {
+      "title": "6.1 Exacerbação moderada e grave"
+    },
+    {
+      "title": "6.2 Escalas explicadas em caso curto"
+    },
+    {
+      "title": "7. Tratamento não farmacológico: mudanças que realmente importam"
+    },
+    {
+      "title": "7.1 Cessação do tabagismo"
+    },
+    {
+      "title": "7.2 Vacinação"
+    },
+    {
+      "title": "7.3 Reabilitação pulmonar e atividade física"
+    },
+    {
+      "title": "7.4 Técnica inalatória e adesão"
+    },
+    {
+      "title": "7.5 Nutrição, fragilidade e comorbidades"
+    },
+    {
+      "title": "8. Broncodilatadores: mecanismo, benefício e escolha"
+    },
+    {
+      "title": "8.1 Qual fármaco para qual objetivo?"
+    },
+    {
+      "title": "8.2 Como escolher a terapia inicial na GOLD 2026?"
+    },
+    {
+      "title": "8.3 Corticoide inalatório não é broncodilatador"
+    },
+    {
+      "title": "8.4 O que fazer quando tratamento parece falhar?"
+    },
+    {
+      "title": "8.5 Tratamentos adicionais selecionados"
+    },
+    {
+      "title": "9. Oxigenoterapia crônica: hipoxemia, critérios e benefício"
+    },
+    {
+      "title": "9.1 Segurança domiciliar"
+    },
+    {
+      "title": "9.2 Oxigenoterapia não é o mesmo que ventilação domiciliar"
+    },
+    {
+      "title": "10. Exacerbação da DPOC: definição e mecanismos"
+    },
+    {
+      "title": "10.1 Reconhecimento de gravidade em minutos"
+    },
+    {
+      "title": "10.2 Exames dirigidos"
+    },
+    {
+      "title": "11. Exacerbação: sequência prática de tratamento"
+    },
+    {
+      "title": "11.1 Início simultâneo — oxigênio titulado e broncodilatação"
+    },
+    {
+      "title": "11.2 Corticosteroide sistêmico: curto e direcionado"
+    },
+    {
+      "title": "11.3 Antibiótico não é para toda crise"
+    },
+    {
+      "title": "11.4 Ventilação não invasiva em acidose hipercápnica"
+    },
+    {
+      "title": "11.5 Quando internar ou encaminhar à UTI?"
+    },
+    {
+      "title": "12. Distúrbios ácido-base e ventilação em pessoa com DPOC"
+    },
+    {
+      "title": "13. A alta da exacerbação é início de prevenção secundária"
+    },
+    {
+      "title": "13.1 Alta segura em seis perguntas"
+    },
+    {
+      "title": "14. Diagnóstico diferencial da exacerbação — exemplos de não ancoragem"
+    },
+    {
+      "title": "15. Prognóstico e seguimento longitudinal"
+    },
+    {
+      "title": "15.1 Risco cardiovascular e DPOC"
+    },
+    {
+      "title": "15.2 Prevenção e saúde pública"
+    },
+    {
+      "title": "16. Quadro clínico de decisão: aprender DPOC por fenótipos"
+    },
+    {
+      "title": "16.1 Pessoa que tosse todos os dias, mas ainda trabalha normalmente"
+    },
+    {
+      "title": "16.2 Pessoa com enfisema predominante e grande dispneia"
+    },
+    {
+      "title": "16.3 Pessoa com bronquite crônica e exacerbações recorrentes"
+    },
+    {
+      "title": "16.4 Pessoa com traços de asma coexistente"
+    },
+    {
+      "title": "16.5 Pessoa com doença cardiovascular e dispneia"
+    },
+    {
+      "title": "17. Avaliação da resposta terapêutica — três ciclos de decisão"
+    },
+    {
+      "title": "17.1 Dispneia persistente em LABA"
+    },
+    {
+      "title": "17.2 Exacerbação em LABA/LAMA com eosinófilos elevados"
+    },
+    {
+      "title": "17.3 Exacerbação em terapia tripla apesar de boa técnica"
+    },
+    {
+      "title": "17.4 Descalonamento por pneumonia recorrente"
+    },
+    {
+      "title": "18. Interpretação de espirometria por exemplos reais de prova"
+    },
+    {
+      "title": "18.1 O que um laudo precisa mostrar?"
+    },
+    {
+      "title": "18.2 Exemplo A — obstrução persistente e doença sintomática"
+    },
+    {
+      "title": "18.3 Exemplo B — razão pós-BD normal e história tabágica"
+    },
+    {
+      "title": "18.4 Exemplo C — VEF1 baixo com razão preservada"
+    },
+    {
+      "title": "18.5 Exemplo D — discrepância entre função e sintoma"
+    },
+    {
+      "title": "19. Casos clínicos completos"
+    },
+    {
+      "title": "Caso clínico 1 — Suspeita de DPOC que exige espirometria"
+    },
+    {
+      "title": "Caso clínico 2 — GOLD 2 não significa grupo B automaticamente"
+    },
+    {
+      "title": "Caso clínico 3 — Exacerbação com acidose e necessidade de VNI"
+    },
+    {
+      "title": "Caso clínico 4 — Exacerbação aparente que era insuficiência cardíaca"
+    },
+    {
+      "title": "Caso clínico 5 — Exacerbações apesar de dupla broncodilatação"
+    },
+    {
+      "title": "Caso clínico 6 — Oxigênio domiciliar solicitado sem hipoxemia estável"
+    },
+    {
+      "title": "20. Questões autorais de residência — justificativas para todas as alternativas"
+    },
+    {
+      "title": "Questão 1 — Diagnóstico objetivo"
+    },
+    {
+      "title": "Questão 2 — Estadiamento e grupo terapêutico"
+    },
+    {
+      "title": "Questão 3 — Tratamento inicial do grupo B"
+    },
+    {
+      "title": "Questão 4 — Corticoide inalatório"
+    },
+    {
+      "title": "Questão 5 — Acidose hipercápnica"
+    },
+    {
+      "title": "Questão 6 — Antibióticos na exacerbação"
+    },
+    {
+      "title": "Questão 7 — Oxigenoterapia prolongada"
+    },
+    {
+      "title": "Questão 8 — Diferencial de exacerbação"
+    },
+    {
+      "title": "Questão 9 — Erro de técnica"
+    },
+    {
+      "title": "Questão 10 — Alta de exacerbação"
+    },
+    {
+      "title": "21. Tabela de pérolas e armadilhas comuns"
+    },
+    {
+      "title": "22. Imagens clínicas candidatas para aprovação no Admin"
+    },
+    {
+      "title": "23. Matriz de rastreabilidade e auditoria editorial"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://bvs.saude.gov.br/bvs/saudelegis/Saes/2025/poc0029_28_11_2025.html",
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13109179/",
+    "https://link.springer.com/article/10.1007/s40265-026-02303-3"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Referência LURIA de layout já inspecionada:** apostilas/cancer-de-mama/index.html, organização em capítulos, esquema diagnóstico, casos e responsividade; preservada."
+    },
+    {
+      "text": "**Fontes clínicas públicas identificadas e confrontadas:** 1. Ministério da Saúde, Portaria Conjunta SAES/SCTIE nº 29, de 27/11/2025, aprovação do PCDT de DPOC — https://bvs.saude.gov.br/bvs/saudelegis/Saes/2025/poc0029_28_11_2025.html . A portaria identifica aprovação do PCDT; leitura integral de anexos/fluxos farmacêuticos nacionais ainda PENDENTE. 2. Global Initiative for Chronic Obstructive Lung Disease, GOLD 2026 Report and Pocket Guide — https://goldcopd.org/2026-gold-report-and-pocket-guide/ . Disponibilidade de PDF completo por ferramenta de leitura foi limitada pelo tamanho; princípios de diagnóstico/classificação foram confirmados e"
+    },
+    {
+      "text": "A deficiência hereditária de alfa-1 antitripsina merece avaliação específica, sobretudo em início precoce, enfisema desproporcional à exposição, história familiar e doença hepática associada. A GOLD recomenda testar para deficiência de alfa-1 antitripsina em pessoas com DPOC conforme disponibilidade/protocolo. A doença não deve ser excluída em não fumante com exposição à biomassa e sintomas típicos; também não deve ser diagnosticada pelo rótulo “ex-tabagista com dispneia” sem função pulmonar."
+    },
+    {
+      "text": "A carga tabágica convencional em maços-ano é número de maços de 20 cigarros fumados por dia multiplicado pelo número de anos. Uma pessoa que fuma um maço ao dia durante 25 anos acumula 25 maços-ano; meia carteira ao dia por 20 anos, 10 maços-ano. O cálculo é útil para história, mas não considera igualmente padrão de tragada, biomassa, cessação e susceptibilidade individual, e não identifica por si só existência de obstrução."
+    },
+    {
+      "text": "O questionário não estabelece diagnóstico sem espirometria. Serve para medir sintomas e acompanhar melhora com tratamento e reabilitação. Deixar claro qual escala foi aplicada, valor e data. Comparar um escore CAT de 2024 e CAAT de 2026 exige conferir equivalência e método, sem assumir que mudança de sigla altera automaticamente o comportamento do paciente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,188 @@
+{
+  "sha": "5e99558a5fdd6447d616e7c6a71f0cc2457ebdbd",
+  "path": "apostilas/_rascunhos/lote-06-126-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--5e99558a5f",
+  "title": "Cirrose e Complicações",
+  "format": ".json",
+  "chars_estimated": 92849,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "introducao",
+      "title": "Apresentação e orientações"
+    },
+    {
+      "id": "cap-01-o-que-e-cirrose-doenca-arquitetural-nao-apenas-enzima",
+      "title": "1. O que é cirrose — doença arquitetural, não apenas enzima alterada"
+    },
+    {
+      "id": "cap-02-fisiopatologia-integrada-do-dano-cronico-a-circulacao",
+      "title": "2. Fisiopatologia integrada: do dano crônico à circulação hiperdinâmica"
+    },
+    {
+      "id": "cap-03-etiologias-e-raciocinio-causal-tratar-o-figado-e-a-ca",
+      "title": "3. Etiologias e raciocínio causal: tratar o fígado e a causa"
+    },
+    {
+      "id": "cap-04-como-o-paciente-se-apresenta-sinais-compensados-e-des",
+      "title": "4. Como o paciente se apresenta: sinais compensados e descompensados"
+    },
+    {
+      "id": "cap-05-diagnostico-da-cirrose-e-avaliacao-inicial-em-ambulat",
+      "title": "5. Diagnóstico da cirrose e avaliação inicial em ambulatório e hospital"
+    },
+    {
+      "id": "cap-06-hipertensao-portal-do-gradiente-a-prevencao-de-descom",
+      "title": "6. Hipertensão portal: do gradiente à prevenção de descompensação"
+    },
+    {
+      "id": "cap-07-classificacoes-prognosticas-child-pugh-meld-e-suas-li",
+      "title": "7. Classificações prognósticas: Child–Pugh, MELD e suas limitações"
+    },
+    {
+      "id": "cap-08-ascite-diagnostico-comeca-com-paracentese-nao-com-diu",
+      "title": "8. Ascite: diagnóstico começa com paracentese, não com diurético automático"
+    },
+    {
+      "id": "cap-09-tratamento-da-ascite-sodio-diureticos-paracentese-e-r",
+      "title": "9. Tratamento da ascite: sódio, diuréticos, paracentese e refratariedade"
+    },
+    {
+      "id": "cap-10-peritonite-bacteriana-espontanea-diagnostico-que-nao-",
+      "title": "10. Peritonite bacteriana espontânea: diagnóstico que não depende de febre"
+    },
+    {
+      "id": "cap-11-lesao-renal-aguda-e-sindrome-hepatorrenal-consenso-ad",
+      "title": "11. Lesão renal aguda e síndrome hepatorrenal: consenso ADQI–ICA 2024"
+    },
+    {
+      "id": "cap-12-encefalopatia-hepatica-raciocinio-clinico-gatilhos-e-",
+      "title": "12. Encefalopatia hepática: raciocínio clínico, gatilhos e nutrição"
+    },
+    {
+      "id": "cap-13-hemorragia-digestiva-varicosa-estabilizacao-e-endosco",
+      "title": "13. Hemorragia digestiva varicosa: estabilização e endoscopia precoce"
+    },
+    {
+      "id": "cap-14-hidrotorax-sindrome-hepatopulmonar-e-hipertensao-port",
+      "title": "14. Hidrotórax, síndrome hepatopulmonar e hipertensão portopulmonar"
+    },
+    {
+      "id": "cap-15-trombose-portal-plaquetopenia-e-o-mito-da-autoanticoa",
+      "title": "15. Trombose portal, plaquetopenia e o mito da “autoanticoagulação”"
+    },
+    {
+      "id": "cap-16-carcinoma-hepatocelular-e-vigilancia-sem-perder-o-seg",
+      "title": "16. Carcinoma hepatocelular e vigilância sem perder o seguimento"
+    },
+    {
+      "id": "cap-17-nutricao-prevencao-e-vacinacao-no-cuidado-longitudina",
+      "title": "17. Nutrição, prevenção e vacinação no cuidado longitudinal"
+    },
+    {
+      "id": "cap-18-transplante-hepatico-e-metas-de-cuidado",
+      "title": "18. Transplante hepático e metas de cuidado"
+    },
+    {
+      "id": "cap-19-algoritmo-integrado-da-cirrose-o-que-fazer-na-primeir",
+      "title": "19. Algoritmo integrado da cirrose: o que fazer na primeira consulta e em cada descompensação"
+    },
+    {
+      "id": "cap-20-como-diferenciar-quatro-causas-de-abdome-aumentado-no",
+      "title": "20. Como diferenciar quatro causas de abdome aumentado no paciente com cirrose"
+    },
+    {
+      "id": "cap-21-interacoes-medicamentosas-efeitos-adversos-e-prevenca",
+      "title": "21. Interações medicamentosas, efeitos adversos e prevenção de iatrogenias"
+    },
+    {
+      "id": "cap-22-descompensacao-por-infeccao-cirrose-sepse-e-aclf",
+      "title": "22. Descompensação por infecção: cirrose, sepse e ACLF"
+    },
+    {
+      "id": "cap-23-complicacoes-menos-lembradas-hernias-disfuncao-cardia",
+      "title": "23. Complicações menos lembradas: hérnias, disfunção cardíaca, pele e cognição"
+    },
+    {
+      "id": "cap-24-prognostico-e-avaliacao-do-risco-em-situacoes-que-con",
+      "title": "24. Prognóstico e avaliação do risco em situações que confundem"
+    },
+    {
+      "id": "cap-25-casos-de-transicao-entre-ambulatorio-e-pronto-socorro",
+      "title": "25. Casos de transição entre ambulatório e pronto-socorro"
+    },
+    {
+      "id": "cap-26-sintese-de-alto-rendimento-e-matriz-de-decisoes",
+      "title": "26. Síntese de alto rendimento e matriz de decisões"
+    },
+    {
+      "id": "cap-27-oito-casos-clinicos-integradores-comentados",
+      "title": "27. Oito casos clínicos integradores comentados"
+    },
+    {
+      "id": "cap-28-doze-questoes-autorais-comentadas-cirrose-e-complicac",
+      "title": "28. Doze questões autorais comentadas — cirrose e complicações"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"Baveno VIII (2026) — consenso atualizado de hipertensão portal\",\"url\":\"https://doi.org/10.1016/j.jhep.2026.07.030\"}",
+    "{\"label\":\"Baveno VII (2022): hipertensão portal e descompensação\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/35120736/\"}",
+    "{\"label\":\"AASLD (2024): estratificação de hipertensão portal e varizes\",\"url\":\"https://doi.org/10.1097/HEP.0000000000000647\"}",
+    "{\"label\":\"ADQI–ICA (2024): LRA e HRS-AKI na cirrose\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/\"}",
+    "{\"label\":\"EASL (2022): encefalopatia hepática\",\"url\":\"https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext\"}",
+    "{\"label\":\"AASLD (2024): cirrose no ambulatório e vigilância CHC\",\"url\":\"https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis\"}",
+    "{\"label\":\"AASLD: uso de albumina na cirrose\",\"url\":\"https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis\"}",
+    "{\"label\":\"Sociedade Brasileira de Hepatologia: consensos e diretrizes\",\"url\":\"https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/\"}",
+    "{\"label\":\"IMIP 2025: protocolo institucional de complicações da cirrose\",\"url\":\"https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf\"}",
+    "{\"label\":\"AASLD 2023: carcinoma hepatocelular\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/\"}",
+    "{\"label\":\"AASLD 2026: ascite, PBE e síndrome hepatorrenal\",\"url\":\"https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management\"}",
+    "{\"label\":\"EASL 2025 — manejo e vigilância de carcinoma hepatocelular\",\"url\":\"https://www.journal-of-hepatology.eu/article/S0168-8278%2824%2902508-X/fulltext\"}"
+  ],
+  "external_urls": [
+    "https://doi.org/10.1016/j.jhep.2026.07.030",
+    "https://pubmed.ncbi.nlm.nih.gov/35120736/",
+    "https://doi.org/10.1097/HEP.0000000000000647",
+    "https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/",
+    "https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext",
+    "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+    "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis",
+    "https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/",
+    "https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/",
+    "https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management",
+    "https://www.journal-of-hepatology.eu/article/S0168-8278%2824%2902508-X/fulltext"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "RASCUNHO EDITORIAL — NÃO PUBLICAR. Conteúdo acadêmico autoral, não prescrição para paciente específico. Uso de diuréticos, albumina, vasopressores, antibióticos e procedimentos depende de contexto clínico, recomendações atualizadas, supervisão e disponibilidade institucional. As faixas de doses são referências de protocolos, não ordens automáticas. A sequência editorial privilegia primeiro reconhecer descompensação e tratar a ameaça imediata, depois estabelecer etiologia, prognóstico e plano de cuidado."
+    },
+    {
+      "text": "Cirrose hepática é estágio de remodelamento crônico e difuso do fígado, com fibrose avançada, nódulos regenerativos e desorganização vascular que elevam a resistência ao fluxo sanguíneo portal e comprometem funções hepáticas. Nem toda pessoa com cirrose apresenta icterícia, ascite ou aminotransferases elevadas; o diagnóstico pode surgir em avaliação de plaquetopenia, esplenomegalia, imagem nodular ou rastreamento de carcinoma hepatocelular (CHC)."
+    },
+    {
+      "text": "Em compensados, pode não haver sintomas; cansaço inespecífico, esplenomegalia e plaquetopenia são pistas. Na descompensação, surgem distensão abdominal progressiva, edema, icterícia, sangramento gastrointestinal, inversão sono-vigília, confusão, queda de funcionalidade ou infecção. O exame pode revelar circulação colateral abdominal, eritema palmar, telangiectasias, ginecomastia, atrofia muscular e edema. Esses sinais não são diagnósticos isolados: por exemplo, eritema palmar também aparece na gestação e em outras condições."
+    },
+    {
+      "text": "Avalia contorno nodular, heterogeneidade, tamanho hepático, esplenomegalia, ascite, colaterais, fluxo portal/hepático e lesões focais. Em doença avançada, o diagnóstico pode ser muito sugestivo, mas US normal não exclui fibrose avançada. Doppler ajuda a investigar trombose de veia porta e síndromes vasculares, mas interpretação depende de técnica e contexto. Lesão focal suspeita requer protocolo específico de CHC, não biópsia indiscriminada antes de imagem multiphasic quando há critérios."
+    },
+    {
+      "text": "Esses pontos de corte não são universais para todos os pacientes, inclusive obesidade grave, congestão cardíaca, etiologias não validadas e cirrose já descompensada. Escores de fibrose como FIB-4 podem ser úteis na triagem metabólica, porém resultados intermediários exigem avaliação adicional; não equivalem a diagnóstico de cirrose por si."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

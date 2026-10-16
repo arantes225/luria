@@ -1,0 +1,291 @@
+{
+  "sha": "3055d1da13778769e7523a2cd48dd3629d33dcf2",
+  "path": "apostilas/_rascunhos/lote-10-aula-210-psicopatologia-entrevista-exame-mental.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--3055d1da13",
+  "title": "LURIA — Lote 10 · Apostila 210",
+  "format": ".md",
+  "chars_estimated": 58022,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 10 · Apostila 210"
+    },
+    {
+      "title": "Psicopatologia, entrevista psiquiátrica e exame do estado mental"
+    },
+    {
+      "title": "0. Inventário de acervo e limites do benchmark"
+    },
+    {
+      "title": "1. Objetivos de aprendizagem"
+    },
+    {
+      "title": "2. Entrevista psiquiátrica: método clínico, não interrogatório"
+    },
+    {
+      "title": "2.1 Primeiro contato e vínculo"
+    },
+    {
+      "title": "2.2 Onde começa a semiologia"
+    },
+    {
+      "title": "2.3 História da doença atual"
+    },
+    {
+      "title": "2.4 Antecedentes e contexto"
+    },
+    {
+      "title": "2.5 Informante e fonte colateral"
+    },
+    {
+      "title": "3. Exame do estado mental: matriz de observação e perguntas"
+    },
+    {
+      "title": "4. Consciência, atenção e orientação: a tríade que identifica urgência clínica"
+    },
+    {
+      "title": "4.1 Nível versus conteúdo da consciência"
+    },
+    {
+      "title": "4.2 Atenção: manter, alternar e dividir"
+    },
+    {
+      "title": "4.3 Orientação não é inteligência"
+    },
+    {
+      "title": "5. Percepção: distinguir estímulo, interpretação e vivência"
+    },
+    {
+      "title": "5.1 Ilusão e alucinação"
+    },
+    {
+      "title": "5.2 Despersonalização e desrealização"
+    },
+    {
+      "title": "6. Pensamento: separar forma, curso e conteúdo"
+    },
+    {
+      "title": "6.1 Forma/curso"
+    },
+    {
+      "title": "6.2 Conteúdo"
+    },
+    {
+      "title": "6.3 Juízo de realidade, insight e julgamento não são sinônimos"
+    },
+    {
+      "title": "7. Humor, afeto e psicomotricidade"
+    },
+    {
+      "title": "7.1 Humor versus afeto"
+    },
+    {
+      "title": "7.2 Psicomotricidade"
+    },
+    {
+      "title": "8. Cognição e linguagem: avaliação proporcional"
+    },
+    {
+      "title": "8.1 Memória não é função unitária"
+    },
+    {
+      "title": "8.2 Testes breves e limites"
+    },
+    {
+      "title": "9. Hipóteses sindrômicas e diagnósticos diferenciais iniciais"
+    },
+    {
+      "title": "10. Exemplo de registro completo do EEM"
+    },
+    {
+      "title": "11. Casos clínicos comentados — exame do estado mental como ferramenta, não rótulo"
+    },
+    {
+      "title": "Caso 1 — A “depressão” que era delirium hipoativo"
+    },
+    {
+      "title": "Caso 2 — Pensamento circunstancial ou tangencial?"
+    },
+    {
+      "title": "Caso 3 — A inquietação após novo antipsicótico"
+    },
+    {
+      "title": "Caso 4 — O “delírio” que é uma crença culturalmente compartilhada"
+    },
+    {
+      "title": "Caso 5 — Obsessão ou convicção delirante?"
+    },
+    {
+      "title": "Caso 6 — Mutismo, rigidez e piora de sinais vitais"
+    },
+    {
+      "title": "12. Questões originais comentadas — semiologia de residência"
+    },
+    {
+      "title": "Questão 1 — Alteração aguda de atenção"
+    },
+    {
+      "title": "Questão 2 — Alucinação versus ilusão"
+    },
+    {
+      "title": "Questão 3 — Humor e afeto"
+    },
+    {
+      "title": "Questão 4 — Circunstancialidade"
+    },
+    {
+      "title": "Questão 5 — Redução da necessidade de sono"
+    },
+    {
+      "title": "Questão 6 — Pensamento intrusivo"
+    },
+    {
+      "title": "Questão 7 — Acatisia"
+    },
+    {
+      "title": "Questão 8 — Atenção não equivale a orientação"
+    },
+    {
+      "title": "Questão 9 — Catatonia grave"
+    },
+    {
+      "title": "Questão 10 — Validade cultural"
+    },
+    {
+      "title": "13. Figuras e recursos visuais didáticos planejados"
+    },
+    {
+      "title": "14. Referências científicas e notas de licença"
+    },
+    {
+      "title": "15. Auditoria provisória e próxima etapa"
+    },
+    {
+      "title": "16. Entrevista em quatro ambientes: ambulatório, enfermaria, urgência e APS"
+    },
+    {
+      "title": "16.1 Ambulatório programado"
+    },
+    {
+      "title": "16.2 Enfermaria clínica"
+    },
+    {
+      "title": "16.3 Serviço de urgência"
+    },
+    {
+      "title": "16.4 Atenção primária e longitudinalidade"
+    },
+    {
+      "title": "17. Formulação biopsicossocial e raciocínio de diagnóstico diferencial"
+    },
+    {
+      "title": "17.1 Formulação em vez de empilhar rótulos"
+    },
+    {
+      "title": "17.2 Diagnóstico sindrômico, nosológico e etiológico"
+    },
+    {
+      "title": "17.3 Testar hipóteses em cada pergunta"
+    },
+    {
+      "title": "18. Capacidade decisória, autonomia e segurança"
+    },
+    {
+      "title": "18.1 Competência legal e capacidade clínica não são o mesmo"
+    },
+    {
+      "title": "18.2 Sigilo, terceiros e relatos colaterais"
+    },
+    {
+      "title": "18.3 Avaliação de risco sem falsa precisão"
+    },
+    {
+      "title": "19. Três exemplos adicionais de registro"
+    },
+    {
+      "title": "19.1 Quadro de aceleração afetiva"
+    },
+    {
+      "title": "19.2 Quadro psicótico com nível de consciência preservado"
+    },
+    {
+      "title": "19.3 Quadro delirante em pós-operatório"
+    },
+    {
+      "title": "20. Integração com as demais apostilas de Saúde Mental"
+    },
+    {
+      "title": "21. Controle de qualidade após expansão"
+    }
+  ],
+  "reference_entries": [
+    "1. **World Health Organization.** Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders. Geneva: WHO, 2024. https://www.who.int/publications/i/item/9789240077263. **CC BY-NC-ND 3.0 IGO; não copiar/adaptar conteúdo protegido para produto comercial sem autorização.** Usada como referência de organização diagnóstica e terminologia, não como licença para transcrever critérios.",
+    "2. **World Health Organization.** Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders. 3ª ed., 2023. https://www.who.int/publications/i/item/9789240084278. **Licença CC BY-NC-SA 3.0 IGO** com restrição comercial; utilizada como referência de cuidado baseado em evidências, sem reproduzir formulários.",
+    "3. **OMS/WHO.** ICD-11 International Classification of Diseases. https://icd.who.int/. A implementação nacional e nomenclatura de codificação devem ser confirmadas conforme regras brasileiras atuais.",
+    "4. **American Psychiatric Association.** Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR). Washington DC: APA, 2022. Referência bibliográfica reconhecida, **texto integral não consultado nesta rodada**. Critérios proprietários não devem ser copiados.",
+    "5. **WHO mhGAP Evidence Resource Centre.** https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre. Para consulta de módulos de psicose, humor, autolesão e condições clínicas.",
+    "**Conteúdo atual:** fundamentos de entrevista, contexto e risco, domínios do EEM, delirium, atenção, percepção, pensamento, humor/afeto, cognição, psicomotricidade, registro de exemplo, **6 casos** e **10 questões comentadas**. Há profundidade semiológica relevante, mas **a apostila ainda está aquém da meta de autossuficiência de 60 mil caracteres úteis**, faltando expandir avaliação de risco e capacidade, documentação, entrevista em emergências, diferenciais específicos e consistência com protocolos brasileiros.",
+    "**Etapa zero:** não foi encontrado benchmark didático integral comparável no Drive; isso deve continuar marcado como lacuna, não “etapa concluída”. **Imagens:** nenhuma candidata real aprovada no Admin. **Publicação:** zero; arquivo Markdown isolado da branch, sem alteração do catálogo/site/SQL/HTML.",
+    "**Próximo aprofundamento:** ampliar exemplos de EEM em mania, psicose e delirium, critérios para suspeitar de condição médica, registro neutro em casos graves e rede assistencial brasileira. A próxima aula curricular é **211 — Transtornos depressivos e avaliação do risco de suicídio**; não antecipar detalhamento terapêutico que pertence a ela.",
+    "**Roteiro longitudinal:** sintoma principal → primeira ocorrência → episódios prévios → duração e intensidade → intervalos de recuperação → gatilhos e fatores protetores → prejuízo funcional → exposições médicas e sociais → tentativas de tratamento e respostas → expectativas de cuidado. Perguntar “O que você mais quer conseguir fazer quando isso melhorar?” permite escolher objetivos funcionais, e não apenas reduzir pontuação de questionário.",
+    "**EEM no ambulatório:** pode ser completo, mas a ênfase deriva da síndrome. Em depressão, observar humor/afeto, lentificação, conteúdo de desesperança, risco e sinais de mania anterior. Em psicose, forma e conteúdo do pensamento, percepção, orientação/atenção e julgamento. Em queixa de memória, estado de atenção, registro e evocação, funcionamento anterior e informante são decisivos. Não é preciso aplicar testes sem pertinência e sem validação cultural.",
+    "**Exemplo de evolução útil:** “Hoje às 10h estava desperto, mas incapaz de manter atenção por 20 segundos; às 15h identificou local e seguiu comandos simples; equipe relata alternância com agitação noturna”. Isso informa mais que registrar simplesmente “desorientado”, porque documenta **flutuação temporal**.",
+    "**Comunicação durante crise:** equipe pequena e coordenada, frases curtas, tom calmo, distância respeitosa, explicação de condutas e oferta de escolhas quando viável. Evitar confrontar delírios ou gritar para “impor autoridade”; não interpretar recusa em conversar como prova de capacidade decisória ausente ou doença específica. Intervenções coercitivas, se inevitáveis diante de risco, exigem proporcionalidade, documentação, supervisão e normativas vigentes, jamais punição.",
+    "**Prioridade médica:** pessoa com rebaixamento de consciência, déficit focal, convulsões, rigidez/febre, agitação com instabilidade autonômica, intoxicação grave ou síndrome de abstinência potencialmente perigosa precisa de avaliação clínica urgente e suporte. Internação psiquiátrica ou prescrição só podem ser decididas após avaliação de risco e causas médicas pertinentes.",
+    "**Exemplo:** pessoa com ansiedade incapacitante após mudança de trabalho. Predisponentes: episódios prévios e vulnerabilidade familiar. Precipitante: nova rotina com alta exigência. Perpetuantes: consumo de energéticos, sono ruim, evitação e isolamento. Protetores: vínculo familiar, motivação e acesso a terapia. A formulação orienta plano, mas **não autoriza declarar causalidade definitiva** para cada fator sem evidência individual.",
+    "**Diferenciais por mecanismo**:",
+    "- Sintoma de ansiedade com palpitações e tremor → revisar cafeína/estimulantes, tireotoxicose, arritmia, hipoglicemia e doença pulmonar antes de concluir pânico.",
+    "- Humor deprimido e lentificação → revisar hipotireoidismo, anemia, medicamentos, substâncias e história de episódios de energia elevada.",
+    "- Agitação e desorganização súbitas → descartar delirium, intoxicação, abstinência, encefalite, crises epilépticas e alterações metabólicas.",
+    "- Falhas de memória → diferenciar dificuldade de atenção, depressão, sono, audição, medicamento e comprometimento neurocognitivo progressivo.",
+    "- Percepções incomuns → caracterizar vigília, cultura, luto, substâncias e manifestação neurológica.",
+    "**Sindrômico:** “síndrome confusional aguda”, “síndrome depressiva”, “síndrome psicótica”, “síndrome de excitação”. **Nosológico:** transtorno específico após aplicar critérios, duração e exclusões apropriadas. **Etiológico:** quando há causa demonstrável ou relação causal plausível, como quadro delirante por condição clínica, psicose induzida por substância ou episódio afetivo primário.",
+    "- “Começou de repente ontem ou vem piorando há meses?” → delirium/causa médica aguda versus quadros insidiosos.",
+    "- “O sono é curto, mas você se sente cansado e quer dormir, ou sente que não precisa dormir?” → insônia versus redução da necessidade de sono.",
+    "- “Você sabe que o pensamento é seu e não quer tê-lo?” → fenômeno obsessivo versus outras crenças.",
+    "- “A voz aconteceu enquanto despertava ou em vigília plena?” → transição sono-vigília versus sintomas em vigília.",
+    "- “Você perdeu o interesse em atividades que antes davam prazer?” → anedonia, sem concluir diagnóstico pela resposta isolada.",
+    "- “O que familiares perceberam sobre sua atenção e autocuidado?” → mudança funcional observável.",
+    "**Exemplo:** pessoa com transtorno psicótico pode entender riscos de uma coleta de sangue e consentir validamente, mas estar temporariamente incapaz de decidir uma questão complexa relacionada a crença delirante específica. Inversamente, indivíduo sem diagnóstico psiquiátrico prévio com delirium pode não conseguir compreender orientação no momento. A avaliação deve documentar **qual decisão** foi discutida e **qual dificuldade funcional** impede consentimento válido, se houver.",
+    "**Reavaliação:** causas reversíveis de desatenção, intoxicação, dor e falta de comunicação acessível devem ser tratadas sempre que possível antes de conclusão definitiva; decisões urgentes seguem diretrizes e legislação aplicável ao risco e à capacidade naquele momento.",
+    "**Registro clínico:** “A filha relata início súbito de confusão ontem; paciente diz que não percebe mudança” é mais informativo que “família tem razão, paciente nega doença”. A discrepância deve ser examinada, não resolvida por preferência pessoal do médico."
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240077263.",
+    "https://www.who.int/publications/i/item/9789240084278.",
+    "https://icd.who.int/.",
+    "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Ao final, o aluno deve conseguir: 1. Conduzir entrevista psiquiátrica estruturada, centrada na pessoa e adaptada à urgência. 2. Diferenciar **queixa**, relato subjetivo, fenômeno psicopatológico e hipótese sindrômica. 3. Descrever tecnicamente os principais domínios do exame do estado mental (EEM). 4. Distinguir **humor** (experiência afetiva mais persistente) de **afeto** (expressão observável na entrevista). 5. Distinguir **forma/curso** de pensamento de **conteúdo** e de alterações sensoperceptivas. 6. Reconhecer **delirium** e outras causas médicas de alteração psíquica aguda antes de rotular condição psiquiátrica primária. 7. Identificar"
+    },
+    {
+      "text": "**Nível de consciência** é grau de vigília/reatividade, influenciado por sistemas de ativação cerebral e condições metabólicas. Sonolência, obnubilação, estupor e coma exigem avaliação clínica; não são diagnósticos psiquiátricos primários por si. **Conteúdo da consciência** envolve integração da experiência e percepção de si/ambiente; alterações de vivência devem ser descritas sem confundir com rebaixamento quantitativo."
+    },
+    {
+      "text": "**Ilusão:** percepção distorcida de **um estímulo existente** (ex.: confunde um casaco pendurado com pessoa em ambiente escuro). **Alucinação:** experiência perceptiva **sem estímulo externo correspondente**, com qualidades fenomenológicas que podem parecer reais. Podem ser auditivas, visuais, táteis, olfativas ou gustativas; a modalidade e o contexto ajudam no diagnóstico diferencial."
+    },
+    {
+      "text": "**Teste pelo contexto:** se a pessoa acredita que está sendo vigiada, perguntar em que se baseia, como chegou à conclusão, como responde a alternativas e como isso muda comportamento. Não usar discordância política, religiosa ou cultural como diagnóstico de delírio."
+    },
+    {
+      "text": "**Juízo de realidade:** capacidade de distinguir experiência interna, hipótese e fatos externos, em contexto. **Insight/crítica:** reconhecimento de sintomas, consequências e necessidade de ajuda; pode ser parcial e flutuar. **Julgamento:** capacidade de decidir na prática, avaliar consequências e escolher ações. Uma pessoa pode saber que possui transtorno bipolar (insight) e ainda fazer decisões impulsivas em mania (julgamento prejudicado); outra pode não concordar com rótulo diagnóstico e manter plena capacidade decisória para cuidados específicos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

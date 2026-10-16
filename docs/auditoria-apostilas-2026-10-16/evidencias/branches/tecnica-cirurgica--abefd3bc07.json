@@ -1,0 +1,382 @@
+{
+  "sha": "abefd3bc07cf9a531ae6a144bf7599572ebb603b",
+  "path": "apostilas/tecnica-cirurgica/index.html",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "tecnica-cirurgica--abefd3bc07",
+  "title": "Princípios de Técnica Cirúrgica",
+  "format": ".html",
+  "chars_estimated": 92467,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Visão rápida: técnica operatória segura"
+    },
+    {
+      "title": "Apresentação editorial"
+    },
+    {
+      "title": "Auditoria de material comparativo e escopo"
+    },
+    {
+      "title": "1. Por que a técnica cirúrgica é uma disciplina de segurança"
+    },
+    {
+      "title": "2. Assepsia, antissepsia e prevenção de infecção"
+    },
+    {
+      "title": "3. Instrumental: a função determina a escolha"
+    },
+    {
+      "title": "4. Diérese e hemostasia — raciocínio por plano"
+    },
+    {
+      "title": "5. Sutura e cicatrização"
+    },
+    {
+      "title": "6. Perguntas originais para ampliação"
+    },
+    {
+      "title": "7. Planejamento anatômico, indicação e acesso: a operação começa no raciocínio"
+    },
+    {
+      "title": "7.1 Indicação e viabilidade são partes da técnica"
+    },
+    {
+      "title": "7.2 Marcos anatômicos e planos de dissecção"
+    },
+    {
+      "title": "7.3 Exposição, iluminação e ergonomia"
+    },
+    {
+      "title": "8. Preparo pré-operatório e lista de verificação: sequência que modifica eventos"
+    },
+    {
+      "title": "8.1 Avaliação proporcional ao risco"
+    },
+    {
+      "title": "8.2 Três pausas da OMS"
+    },
+    {
+      "title": "8.3 Briefing e comunicação em alça fechada"
+    },
+    {
+      "title": "9. Infecção do sítio cirúrgico: da fisiopatologia à prevenção em todas as fases"
+    },
+    {
+      "title": "9.1 Por que ocorre uma infecção"
+    },
+    {
+      "title": "9.2 Classes de ferida operatória"
+    },
+    {
+      "title": "9.3 Preparo da pele e dos pelos"
+    },
+    {
+      "title": "9.4 Preparo fisiológico e antibioticoprofilaxia"
+    },
+    {
+      "title": "9.5 O que não funciona como substituto do básico"
+    },
+    {
+      "title": "10. Instrumentais e manipulação: reconhecer pelo que fazem e pelo risco que criam"
+    },
+    {
+      "title": "10.1 Famílias funcionais"
+    },
+    {
+      "title": "10.2 Segurança com lâmina e objetos perfurocortantes"
+    },
+    {
+      "title": "10.3 Passagem de instrumental e antecipação de etapas"
+    },
+    {
+      "title": "11. Diérese e dissecção: separar tecidos sem perder sua viabilidade"
+    },
+    {
+      "title": "11.1 Dissecção cortante, romba e combinada"
+    },
+    {
+      "title": "11.2 Reconhecer a textura dos tecidos"
+    },
+    {
+      "title": "11.3 Lesões inadvertidas"
+    },
+    {
+      "title": "12. Hemostasia: da compressão à decisão de controle definitivo"
+    },
+    {
+      "title": "12.1 Hemostasia fisiológica e mecânica"
+    },
+    {
+      "title": "12.2 Ligações e controle vascular"
+    },
+    {
+      "title": "12.3 Energia monopolar, bipolar e selagem vascular"
+    },
+    {
+      "title": "13. Fios, agulhas e padrões de sutura: escolha orientada por tecido e tensão"
+    },
+    {
+      "title": "13.1 O objetivo real da síntese"
+    },
+    {
+      "title": "13.2 Absorvível, não absorvível, mono e multifilamentar"
+    },
+    {
+      "title": "13.3 Agulhas e segurança de passagem"
+    },
+    {
+      "title": "13.4 Padrões e indicações"
+    },
+    {
+      "title": "13.5 Nós e falha mecânica"
+    },
+    {
+      "title": "14. Cicatrização: fases, riscos e diferença entre força e aparência"
+    },
+    {
+      "title": "14.1 Fases sobrepostas"
+    },
+    {
+      "title": "14.2 Resistência mecânica se recupera lentamente"
+    },
+    {
+      "title": "14.3 Fatores locais e sistêmicos"
+    },
+    {
+      "title": "15. Fechamento de feridas e escolha do tempo: primário, tardio ou secundário"
+    },
+    {
+      "title": "15.1 A avaliação precede a escolha do fio"
+    },
+    {
+      "title": "15.2 Irrigação e desbridamento"
+    },
+    {
+      "title": "15.3 Espaço morto e drenagem"
+    },
+    {
+      "title": "16. Técnica minimamente invasiva, conversão e segurança de acesso"
+    },
+    {
+      "title": "16.1 Laparoscopia não significa ausência de trauma"
+    },
+    {
+      "title": "16.2 Acesso inicial é um momento crítico"
+    },
+    {
+      "title": "16.3 Triangulação, ergonomia e energia"
+    },
+    {
+      "title": "16.4 Converter é decisão de segurança, não fracasso"
+    },
+    {
+      "title": "17. Fechamento abdominal, hérnia incisional e deiscência"
+    },
+    {
+      "title": "17.1 Qual é a camada essencial para a parede abdominal?"
+    },
+    {
+      "title": "17.2 Por que ocorre hérnia incisional?"
+    },
+    {
+      "title": "17.3 Deiscência de parede com exteriorização visceral"
+    },
+    {
+      "title": "18. Controle de danos cirúrgico e reoperação"
+    },
+    {
+      "title": "18.1 Quando a fisiologia limita o reparo definitivo?"
+    },
+    {
+      "title": "18.2 Abdome aberto e fechamento temporário"
+    },
+    {
+      "title": "18.3 Conversão de uma intercorrência em plano multidisciplinar"
+    },
+    {
+      "title": "19. Pós-operatório: reconhecer normalidade e sinais de alarme"
+    },
+    {
+      "title": "19.1 Recuperação imediata"
+    },
+    {
+      "title": "19.2 Avaliação do sítio e do curativo"
+    },
+    {
+      "title": "19.3 Drenos, débito e significado"
+    },
+    {
+      "title": "19.4 Tromboembolismo, ventilação e mobilização"
+    },
+    {
+      "title": "19.5 Quando a alta é segura?"
+    },
+    {
+      "title": "20. Situações especiais: tecido e paciente mudam a técnica"
+    },
+    {
+      "title": "20.1 Crianças e neonatos"
+    },
+    {
+      "title": "20.2 Pessoas idosas e com fragilidade"
+    },
+    {
+      "title": "20.3 Diabetes, desnutrição, obesidade e tabagismo"
+    },
+    {
+      "title": "20.4 Radioterapia, corticoterapia e imunossupressão"
+    },
+    {
+      "title": "20.5 Gestantes"
+    },
+    {
+      "title": "21. Algoritmos de decisão e síntese de alto rendimento"
+    },
+    {
+      "title": "Fluxo A — ferida traumática passível de fechamento?"
+    },
+    {
+      "title": "Fluxo B — sangramento durante cirurgia"
+    },
+    {
+      "title": "Fluxo C — suspeita de ISC pós-operatória"
+    },
+    {
+      "title": "Fluxo D — material perfurocortante ou compressa não contabilizada"
+    },
+    {
+      "title": "Resumo de prova em dez conceitos"
+    },
+    {
+      "title": "22. Oito casos clínicos integradores com interpretação e conduta"
+    },
+    {
+      "title": "Caso 1 — Laceração contaminada com tecido desvitalizado: fechar ou não fechar?"
+    },
+    {
+      "title": "Caso 2 — Sangramento arterial adjacente a nervo durante dissecção"
+    },
+    {
+      "title": "Caso 3 — Incisão limpa com prótese, cirurgia prolongada e antibiótico"
+    },
+    {
+      "title": "Caso 4 — Ferida fechada sob tensão e bordas isquêmicas"
+    },
+    {
+      "title": "Caso 5 — Contagem divergente de compressas antes do fechamento"
+    },
+    {
+      "title": "Caso 6 — Coleção profunda no quinto dia após cirurgia"
+    },
+    {
+      "title": "Caso 7 — Laparoscopia com anatomia insegura e decisão de conversão"
+    },
+    {
+      "title": "Caso 8 — Deiscência aponeurótica e evisceração após laparotomia"
+    },
+    {
+      "title": "23. Doze questões originais de residência, com todas as alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — A pausa cirúrgica não é mera formalidade"
+    },
+    {
+      "title": "Questão 2 — Tricotomia na prevenção de ISC"
+    },
+    {
+      "title": "Questão 3 — Profilaxia antimicrobiana, redose e dreno"
+    },
+    {
+      "title": "Questão 4 — Classificação de ferida operatória"
+    },
+    {
+      "title": "Questão 5 — Hemostasia perto de nervo"
+    },
+    {
+      "title": "Questão 6 — Fio ideal para cada tecido"
+    },
+    {
+      "title": "Questão 7 — Bordas pálidas após sutura"
+    },
+    {
+      "title": "Questão 8 — Fechamento aponeurótico mediano eletivo"
+    },
+    {
+      "title": "Questão 9 — Quando converter uma laparoscopia?"
+    },
+    {
+      "title": "Questão 10 — Febre no pós-operatório com dreno"
+    },
+    {
+      "title": "Questão 11 — Divergência de compressa no Sign Out"
+    },
+    {
+      "title": "Questão 12 — Deiscência de parede com exteriorização visceral"
+    },
+    {
+      "title": "24. Matriz de cobertura, curadoria visual, referências e auditoria"
+    },
+    {
+      "title": "24.1 Registro comparativo — etapa zero parcialmente cumprida"
+    },
+    {
+      "title": "24.2 Matriz de cobertura didática com capítulos de origem"
+    },
+    {
+      "title": "24.3 Plano de recursos visuais originais e candidatos de imagens médicas"
+    },
+    {
+      "title": "24.4 Referências brasileiras e internacionais verificáveis"
+    },
+    {
+      "title": "24.5 Auditoria final desta etapa — parecer editorial parcial"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://www.gov.br/saude/pt-br/composicao/saes/seguranca-do-paciente/protocolos-de-seguranca-do-paciente/protocolo-cirurgia-segura.pdf/view",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico/protocolo-2-prevecao-de-isc-final.pdf",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/higienizacao-das-maos-1/estrategia-multimodal-melhoria-da-higienizacao-das-maos-teste/estrategia-multimodal-melhoria-da-higiene-das-maos/centro-cirurgico-sala-de-recuperacao-pos-anestesica",
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/controle-da-infeccao-hospitalar-prevencao-e-fundamental",
+    "https://www.ncbi.nlm.nih.gov/books/NBK143243/",
+    "https://www.who.int/publications/i/item/9789241598590",
+    "https://www.who.int/publications/i/item/9789241550475",
+    "https://www.nice.org.uk/guidance/ng125/chapter/recommendations",
+    "https://academic.oup.com/bjs/article/109/12/1239/6677383",
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Quando clinicamente possível, orientar banho pré-operatório; higiene reduz sujeira e carga microbiana, mas não torna a pele estéril. Não realizar tricotomia rotineira; se pelos interferem no campo ou fixação, usar aparador elétrico próximo do momento da cirurgia, evitando lâmina que provoca microabrasões. Antissepsia da pele íntegra frequentemente favorece soluções alcoólicas de clorexidina conforme OMS/Anvisa, observando contraindicações de mucosas, olhos, ouvidos, neonatos, alergias e risco de ignição. O tempo de secagem do álcool é fundamental antes da eletrocirurgia; incêndio em centro cirúrgico é evento prevenível."
+    },
+    {
+      "text": "Antissepsia das mãos envolve técnica e produto adequados, seguindo recomendações de controle de infecção, independentemente do uso de luvas. Luvas podem perfurar sem serem percebidas; em determinadas operações a técnica de dupla luva reduz exposição da equipe. Troca de luvas e medidas específicas seguem avaliação de contaminação e normas locais."
+    },
+    {
+      "text": "Desinfecção das superfícies, esterilização do instrumental e aderência à higiene das mãos são medidas estruturais. Não existe curativo caro, sutura com revestimento especial ou dose pós-operatória “extra” de antibiótico que compense entrada de material contaminado, corpo estranho retido ou tecido desvitalizado. Sutura recoberta por triclosana pode ter indicações e benefícios em determinados contextos, mas não elimina a necessidade de planejamento. Produtos antissépticos aplicados dentro da ferida não devem ser recomendados universalmente; algumas diretrizes limitam essa prática a cenários específicos ou pesquisa."
+    },
+    {
+      "text": "As sociedades Europeia e Americana de Hérnia, em diretriz atualizada de 2022, sugerem sutura contínua com pequenas tomadas (“small bites”) e fio de absorção lenta no fechamento da laparotomia mediana eletiva, com certeza de evidência baixa e recomendação fraca. A técnica procura distribuir força e minimizar tensionamento local; a diretriz descreve aproximação aponeurótica com tomadas pequenas e regulares, sem incorporar tecido muscular desnecessário. O detalhe numérico dos espaços e proporção fio/ferida deve ser ensinado e treinado conforme protocolo e contexto, não aplicado mecanicamente a qualquer incisão."
+    },
+    {
+      "text": "A perfusão de bordas e risco de infecção podem estar prejudicados. Em pessoa obesa, planos profundos e espaço morto aumentam dificuldade de exposição, e dose/timing de profilaxia precisam considerar recomendações aplicáveis. Desnutrição proteico-calórica reduz substratos de reparo; tabagismo compromete microcirculação e cicatrização; hiperglicemia deve ser manejada com alvos seguros. O problema não é resolvido por escolher “fio mais forte” se a aponeurose é friável e o paciente tem pressão abdominal elevada."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

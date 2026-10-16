@@ -1,0 +1,215 @@
+{
+  "sha": "67d7163044fa020778e00a7ebed108a173317702",
+  "path": "apostilas/_rascunhos/lote-08-aula-178-intoxicacoes-exogenas-infancia.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--67d7163044",
+  "title": "LURIA | Aula 178 — Intoxicações exógenas na infância",
+  "format": ".md",
+  "chars_estimated": 40675,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 178 — Intoxicações exógenas na infância"
+    },
+    {
+      "title": "0. Auditoria, benchmarks e referências de atualização"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "1. Conceitos, epidemiologia e determinantes"
+    },
+    {
+      "title": "2. A primeira hora: estabilização precede identificação exata"
+    },
+    {
+      "title": "ABCDE pediátrico para possível intoxicação"
+    },
+    {
+      "title": "Ingestão desconhecida e criança inconsciente"
+    },
+    {
+      "title": "3. Classificação por toxíndromes"
+    },
+    {
+      "title": "Toxidrome serotoninérgica não equivale a síndrome neuroléptica maligna"
+    },
+    {
+      "title": "4. Exames complementares: escolher pela hipótese"
+    },
+    {
+      "title": "Anamnese quantitativa: três cálculos"
+    },
+    {
+      "title": "5. Descontaminação: o que nunca fazer por rotina"
+    },
+    {
+      "title": "6. Paracetamol: criança assintomática não exclui risco hepático"
+    },
+    {
+      "title": "7. Ferro e outros metais: reconhecer o que carvão não resolve"
+    },
+    {
+      "title": "8. Salicilatos e acidose: cuidado com a hiperventilação compensatória"
+    },
+    {
+      "title": "9. Hipoglicemiantes, medicamentos cardiovasculares e “um comprimido perigoso”"
+    },
+    {
+      "title": "10. Antidepressivos tricíclicos e medicamentos psicoativos"
+    },
+    {
+      "title": "11. Produtos domésticos, saneantes e cáusticos"
+    },
+    {
+      "title": "12. Agrotóxicos e inseticidas: intoxicação colinérgica versus outros mecanismos"
+    },
+    {
+      "title": "13. Prevenção, notificação e papel do CIATox"
+    },
+    {
+      "title": "Prevenção por camada"
+    },
+    {
+      "title": "14. Quando internar, observar ou dar alta?"
+    },
+    {
+      "title": "Passagem de plantão toxicológica estruturada"
+    },
+    {
+      "title": "15. Algoritmos LURIA"
+    },
+    {
+      "title": "Fluxo A — criança exposta em casa"
+    },
+    {
+      "title": "Fluxo B — urgência hospitalar"
+    },
+    {
+      "title": "Fluxo C — suspeita de paracetamol"
+    },
+    {
+      "title": "Fluxo D — cáusticos/hidrocarbonetos"
+    },
+    {
+      "title": "16. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — “Parecia um xarope inocente”"
+    },
+    {
+      "title": "Caso 2 — Um comprimido de hipoglicemiante"
+    },
+    {
+      "title": "Caso 3 — Querosene transferido para garrafa"
+    },
+    {
+      "title": "Caso 4 — Inseticida e broncorreia"
+    },
+    {
+      "title": "Caso 5 — Cáustico sem lesão aparente na boca"
+    },
+    {
+      "title": "Caso 6 — Antidepressivo e QRS largo"
+    },
+    {
+      "title": "Caso 7 — Náusea, zumbido e respiração profunda"
+    },
+    {
+      "title": "Caso 8 — Ferro de pré-natal em mãos pequenas"
+    },
+    {
+      "title": "17. Questões autorais comentadas"
+    },
+    {
+      "title": "18. Pérolas de emergência e erros proibidos"
+    },
+    {
+      "title": "19. Imagens candidatas — não incorporadas"
+    },
+    {
+      "title": "20. Fontes de apoio e hierarquia"
+    },
+    {
+      "title": "Limites e revisões antes da publicação"
+    },
+    {
+      "title": "21. Auditoria da versão 01 — publicação bloqueada"
+    }
+  ],
+  "reference_entries": [
+    "**Acervo LURIA:** na revisão das pastas de apostilas, não foi identificado livro exclusivo de intoxicações exógenas pediátricas. Existem conteúdos relacionados de sepse pediátrica, urgências e fármacos; manter interfaces sem duplicação.",
+    "**Drive:** buscas por “intoxicações”, “toxicologia” e “envenenamento” não recuperaram apostila temática equivalente; os resultados para “mortalidade” incluíam TCE grave, emergência pediátrica e vigilância, sem sistemática de intoxicação. **Benchmark institucional específico não realizado por indisponibilidade**, fato registrado explicitamente. A produção é autoral e usa fontes primárias: Ministério da Saúde/CIATox, Diretrizes brasileiras de agrotóxicos (anexo alterado em 2024), SINAN intoxicação exógena (atualização em 2026) e Royal Children's Hospital Melbourne (diretrizes clínicas de toxicol",
+    "1. Reconhecer intoxicação, exposição sem intoxicação, lesão por cáustico e envenenamento, sem confundir com reação alérgica e efeitos colaterais.",
+    "2. Fazer abordagem ABCDE com monitorização e glicemia em criança com possível intoxicação.",
+    "3. Caracterizar substância, concentração, massa corporal, número de unidades disponíveis e tempo da exposição.",
+    "4. Reconhecer toxíndromes colinérgica, anticolinérgica, simpaticomimética, opioide e sedativa-hipnótica.",
+    "5. Solicitar exames guiados pela toxina e pelo quadro, sem exigir painel toxicológico universal.",
+    "6. Saber quando **não** fazer carvão, lavagem, indução de vômitos ou neutralização.",
+    "7. Reconhecer padrões importantes: paracetamol, salicilatos, ferro, sulfonilureias, clonidina, opioides, antidepressivos tricíclicos, anticonvulsivantes, produtos de limpeza, hidrocarbonetos, inseticidas e plantas.",
+    "8. Formular observação e alta segura, incluindo prevenção de novas exposições e atenção à violência/ingestão intencional em adolescentes.",
+    "9. Aplicar orientação de CIATox e notificação de intoxicação no SINAN quando cabível.",
+    "10. Resolver casos e questões com raciocínio pediátrico e comunicação com responsáveis.",
+    "**Exposição** é contato por ingestão, inalação, pele, olhos ou injeção. **Intoxicação** é síndrome clínica produzida por efeito tóxico de agente químico, medicamento, planta, produto doméstico ou outras substâncias. Exposição não significa sempre intoxicação: a dose, via, tempo e características do agente determinam risco. Em geral, intoxicações acidentais em crianças pequenas acontecem no ambiente doméstico e podem envolver frascos de remédios, produtos de limpeza, cosméticos, nicotina líquida e pesticidas. Em adolescentes, considerar autointoxicação intencional, substâncias recreativas e ass",
+    "- **Dose em mg/kg**, não apenas quantidade absoluta.",
+    "- Formulação (liberação imediata, prolongada, concentração da solução, associação de princípios ativos).",
+    "- Tempo desde a exposição e possibilidade de absorção tardia.",
+    "- Via (oral, ocular, dérmica, inalatória), integridade de pele e condições de ventilação.",
+    "- Idade, peso e comorbidades; reserva fisiológica e metabolismo hepático/renal.",
+    "- Mistura de medicamentos, álcool e drogas.",
+    "- Sintomas, parâmetros vitais, ECG e exames específicos.",
+    "- Tratamento inicial já realizado (carvão, lavagem, xarope ou “antídotos caseiros”) e seus riscos.",
+    "**Alerta:** embalagens de adulto não têm a mesma margem de segurança para uma criança de 10 kg. Alguns comprimidos de medicamento cardiovascular ou hipoglicemiante representam alto risco com uma unidade. Por isso a avaliação telefônica de uma ingestão “pequena” deve basear-se em princípio ativo e concentração, não em impressão do acompanhante.",
+    "**A — Via aérea:** verificar responsividade, ruídos, secreções, vômitos, queimaduras orofaríngeas e capacidade de proteção. Rebaixamento e vômitos elevam risco de broncoaspiração. Em cáusticos, edema de via aérea pode piorar; avaliação por equipe experiente.",
+    "**B — Respiração:** frequência e padrão respiratório, oximetria, ausculta, cianose, broncorreia/broncoespasmo, apneia e sinais de fadiga. Hipoventilação em sedativos/opioides precisa de suporte ventilatório, não apenas antagonista.",
+    "**C — Circulação:** pulsos, perfusão, PA, FC, ECG se substância cardiotóxica, acesso e tratamento de choque/arritmia conforme protocolo. Bloqueadores de canais de cálcio, beta-bloqueadores e antidepressivos tricíclicos podem causar distúrbios graves de condução/hemodinâmica.",
+    "**D — Neurológico:** glicemia capilar imediata se alteração de consciência/convulsão, pupilas, Glasgow pediátrico, rigidez, clônus, reflexos e convulsões. Hipoglicemia pode acompanhar sulfonilureias e outras exposições.",
+    "**E — Exposição/ambiente:** retirar roupas contaminadas quando seguro, lavar pele e olhos conforme agente, medir temperatura; prevenir hipotermia. Observar queimaduras químicas, odores, resíduos e sinais de trauma, mantendo segurança da equipe.",
+    "**Mínimo de história após estabilização:** “o quê, quanto, quando, como, quem viu e o que foi feito?”. Registrar nome comercial e princípio ativo, concentração, número de comprimidos faltantes, peso aproximado, momento, sintomas iniciais e tempo decorrido. Solicitar que responsáveis tragam embalagem **sem atrasar transporte**. Não orientar provar ou cheirar a substância.",
+    "**Diferença fina de prova:** anticolinérgica e simpaticomimética podem ter midríase, taquicardia, agitação e hipertermia, porém a pele **seca** e a retenção urinária favorecem anticolinérgicos, enquanto **sudorese** favorece simpaticomiméticos. Organofosforados frequentemente têm broncorreia/broncoespasmo que ameaçam vida, mas a FC não precisa estar lenta.",
+    "**Toxicidade serotoninérgica** pode ocorrer após associação ou excesso de fármacos serotoninérgicos, com agitação, hipertermia, hiperreflexia e **clônus**; é potencialmente rápida. **Síndrome neuroléptica maligna** decorre de bloqueio dopaminérgico ou retirada de agentes dopaminérgicos, tipicamente com rigidez e evolução distinta. A diferenciação não depende de um único sinal; suporte, suspensão de agentes e avaliação especializada são essenciais."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/composicao/svsa/saude-ambiental/vigipeq/ciatox/ciatox",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos/ciatox",
+    "https://portalsinan.saude.gov.br/intoxicacao-exogena",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diagnostico-e-tratamento-de-intoxicacoes-por-agrotoxicos-capitulo-1/view",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Poisoning_initial_management/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Use_of_Activated_Charcoal_in_Poisonings/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/paracetamol_poisoning/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Iron_poisoning/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Sulfonylurea_poisoning/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Drive:** buscas por “intoxicações”, “toxicologia” e “envenenamento” não recuperaram apostila temática equivalente; os resultados para “mortalidade” incluíam TCE grave, emergência pediátrica e vigilância, sem sistemática de intoxicação. **Benchmark institucional específico não realizado por indisponibilidade**, fato registrado explicitamente. A produção é autoral e usa fontes primárias: Ministério da Saúde/CIATox, Diretrizes brasileiras de agrotóxicos (anexo alterado em 2024), SINAN intoxicação exógena (atualização em 2026) e Royal Children's Hospital Melbourne (diretrizes clínicas de toxicologia pediátrica). As recomendações internacionais "
+    },
+    {
+      "text": "1. Criança 12 kg, frasco de solução 100 mg/mL e 4 mL ingeridos: 400 mg / 12 kg = **33,3 mg/kg**. A interpretação depende do **princípio ativo**, não do número isolado. 2. Criança 20 kg, 5 comprimidos de 500 mg potencialmente ausentes: 2.500 mg / 20 kg = **125 mg/kg**. A incerteza da ingestão e a indicação de dosagem/tratamento são específicas da substância. 3. Criança 8 kg, acompanhante só diz “tomou uma colher”. Sem saber se foi colher de chá, sopa, seringa e concentração, **não é possível estimar dose confiável**. A prioridade é obter embalagem e contatar CIATox."
+    },
+    {
+      "text": "**Carvão ativado** adsorve certas moléculas no trato gastrointestinal, mas tem papel **muito limitado na pediatria**, com risco de aspiração grave. Diretriz do Royal Children's Hospital recomenda discutir com centro de intoxicações/toxicologista e considerar apenas em exposições potencialmente graves, com chegada precoce e via aérea protegida. Pode ser avaliado em algumas ingestões até cerca de 1–2 horas, conforme agente/forma e protocolo, mas não é tratamento obrigatório por ter passado menos de uma hora."
+    },
+    {
+      "text": "Outros pesticidas, como piretroides, herbicidas bipiridílicos e produtos comerciais combinados, **não** devem ser tratados automaticamente pelo mesmo protocolo. Orientações nacionais de diagnóstico e tratamento de intoxicações por agrotóxicos, capítulos específicos aprovados em 2024, precisam ser selecionadas conforme agente."
+    },
+    {
+      "text": "Criança de 3 anos, 13 kg, encontrada com frasco de paracetamol aberto; responsável não sabe a quantidade nem o horário exato e a criança está assintomática. **Hipótese:** exposição potencialmente tóxica a paracetamol, quantidade/tempo desconhecidos. **Raciocínio:** ausência de sintomas iniciais não exclui hepatotoxicidade; dose em mg/kg depende de concentração e volume faltante. **Exames:** dosagem de paracetamol no tempo adequado, AST/ALT e outros conforme horário; nomograma agudo apenas se critérios se aplicam. **Conduta:** avaliação em serviço e contato CIATox, NAC conforme risco/tempo/disponibilidade do exame. **Importância:** não aguarda"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

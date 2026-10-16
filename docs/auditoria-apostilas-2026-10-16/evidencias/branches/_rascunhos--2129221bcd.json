@@ -1,0 +1,262 @@
+{
+  "sha": "2129221bcd73057c6b7bf2ae4e2bac19c4ecaa5d",
+  "path": "apostilas/_rascunhos/lote-03-057-trauma-toracico.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2129221bcd",
+  "title": "LURIA — Apostila 057 | Trauma torácico: reconhecimento, diagnóstico e tratamento",
+  "format": ".md",
+  "chars_estimated": 53382,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 057 | Trauma torácico: reconhecimento, diagnóstico e tratamento"
+    },
+    {
+      "title": "0. Etapa zero — auditoria e benchmarking real"
+    },
+    {
+      "title": "1. Em 30 segundos"
+    },
+    {
+      "title": "2. Anatomia e fisiologia do tórax aplicada à emergência"
+    },
+    {
+      "title": "2.1 Mecânica da parede e tórax instável"
+    },
+    {
+      "title": "2.2 Oxigenação, ventilação e perfusão não são equivalentes"
+    },
+    {
+      "title": "3. Mecanismos e apresentação — prever lesão sem se prender ao estereótipo"
+    },
+    {
+      "title": "4. Reavaliação torácica orientada por xABCDE"
+    },
+    {
+      "title": "4.1 Inspeção, palpação, ausculta e percussão"
+    },
+    {
+      "title": "4.2 Oxigênio e assistência ventilatória"
+    },
+    {
+      "title": "4.3 Choque no trauma torácico"
+    },
+    {
+      "title": "5. Pneumotórax hipertensivo: fisiologia, sinais e tratamento definitivo"
+    },
+    {
+      "title": "5.1 Como julgar resposta?"
+    },
+    {
+      "title": "5.2 O que não confundir com tensão?"
+    },
+    {
+      "title": "6. Pneumotórax aberto: comunicação da pleura com o meio externo"
+    },
+    {
+      "title": "7. Pneumotórax simples, pequeno e oculto"
+    },
+    {
+      "title": "7.1 Por que a radiografia pode ser falsamente normal?"
+    },
+    {
+      "title": "7.2 Pequeno pneumotórax e ventilação mecânica"
+    },
+    {
+      "title": "8. Hemotórax: perda de sangue, compressão pulmonar e hemostasia"
+    },
+    {
+      "title": "8.1 O que é hemotórax maciço?"
+    },
+    {
+      "title": "8.2 A drenagem mede apenas o que saiu"
+    },
+    {
+      "title": "8.3 Hemotórax retido"
+    },
+    {
+      "title": "8.4 Dreno tubular ou pigtail?"
+    },
+    {
+      "title": "9. Tamponamento cardíaco traumático"
+    },
+    {
+      "title": "9.1 Tamponamento versus pneumotórax hipertensivo"
+    },
+    {
+      "title": "10. Contusão pulmonar: edema/hemorragia alveolar e deterioração tardia"
+    },
+    {
+      "title": "11. Fraturas de costelas, esterno e tórax instável"
+    },
+    {
+      "title": "11.1 Fixação cirúrgica das costelas"
+    },
+    {
+      "title": "12. Lesão de aorta torácica por desaceleração"
+    },
+    {
+      "title": "13. Lesões traqueobrônquicas, esofágicas e pneumomediastino"
+    },
+    {
+      "title": "14. Trauma cardíaco contuso, ECG e troponina"
+    },
+    {
+      "title": "15. Lesões diafragmáticas e transição toracoabdominal"
+    },
+    {
+      "title": "16. Toracotomia de reanimação e de urgência: distinção conceitual"
+    },
+    {
+      "title": "17. Procedimentos pleurais e controle de qualidade: o que o aluno precisa entender"
+    },
+    {
+      "title": "17.1 Entender o funcionamento do selo d'água e aspiração"
+    },
+    {
+      "title": "17.2 Monitorização após o dreno"
+    },
+    {
+      "title": "17.3 Quando remover o dreno?"
+    },
+    {
+      "title": "17.4 Complicações"
+    },
+    {
+      "title": "18. Critérios de internação, observação, alta e transferência"
+    },
+    {
+      "title": "18.1 Particularidades de pacientes idosos"
+    },
+    {
+      "title": "18.2 Particularidades pediátricas"
+    },
+    {
+      "title": "18.3 Gestantes com trauma torácico"
+    },
+    {
+      "title": "19. Seis casos clínicos originais — decisões por fisiologia"
+    },
+    {
+      "title": "Caso 1 — Hipotensão abrupta depois da intubação"
+    },
+    {
+      "title": "Caso 2 — Pneumotórax pequeno oculto e paciente estável"
+    },
+    {
+      "title": "Caso 3 — Hemotórax maciço com choque e sangramento ativo"
+    },
+    {
+      "title": "Caso 4 — Dor costal grave e deterioração respiratória no idoso"
+    },
+    {
+      "title": "Caso 5 — Desaceleração e lesão de aorta com RX discreto"
+    },
+    {
+      "title": "Caso 6 — Ferimento toracoabdominal sem pneumotórax na radiografia"
+    },
+    {
+      "title": "20. Dez questões de residência comentadas"
+    },
+    {
+      "title": "Questão 1 — Tensão no politraumatizado"
+    },
+    {
+      "title": "Questão 2 — Pneumotórax pequeno"
+    },
+    {
+      "title": "Questão 3 — Pequeno hemotórax"
+    },
+    {
+      "title": "Questão 4 — Débito hemorrágico"
+    },
+    {
+      "title": "Questão 5 — Hemotórax retido"
+    },
+    {
+      "title": "Questão 6 — Tamponamento"
+    },
+    {
+      "title": "Questão 7 — Contusão pulmonar"
+    },
+    {
+      "title": "Questão 8 — Fraturas e cirurgia"
+    },
+    {
+      "title": "Questão 9 — Traumatismo de aorta"
+    },
+    {
+      "title": "Questão 10 — Transição toracoabdominal"
+    },
+    {
+      "title": "21. Pérolas e matriz de diferenciais"
+    },
+    {
+      "title": "22. Camada visual — planejamento de 12 candidatas, sem incorporação"
+    },
+    {
+      "title": "23. Referências de fechamento e auditoria"
+    },
+    {
+      "title": "Auditoria editorial — NÃO certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. Coccolini F et al. Thoracic trauma WSES–AAST guidelines. World J Emerg Surg. 2025;20:78. DOI 10.1186/s13017-025-00651-1. https://link.springer.com/article/10.1186/s13017-025-00651-1",
+    "2. NICE. Major trauma: assessment and initial management. NG39. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+    "3. Patel NJ et al. Management of simple and retained hemothorax: EAST guideline. Am J Surg. 2021;221:873–884. DOI 10.1016/j.amjsurg.2020.11.032. https://pubmed.ncbi.nlm.nih.gov/33487403/",
+    "4. EAST. Hemothorax and occult pneumothorax management. 2011; historical comparison, inferior priority to 2025 WSES in small collection selection. https://www.east.org/mobile/practice-management-guideline/trauma/77",
+    "5. ACS. ATLS 11. 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "- [x] Benchmark de três documentos do Drive realmente aberto e examinado; origens registradas, sem pressupor Estratégia MED.",
+    "- [x] Matriz de correção de regras absolutas antigas confrontada com diretriz 2025.",
+    "- [x] Mecanismos, ameaças imediatas, lesões pleurais, grandes vasos, diafragma, costelas, bronquios e coração.",
+    "- [x] Seis casos clínicos completos com hipótese, decisão e conduta.",
+    "- [x] Dez questões originais de quatro alternativas, com justificativa.",
+    "- [x] Planejamento de doze recursos de imagem.",
+    "- [ ] Auditoria de profundidade didática **≥60K caracteres instrutivos efetivamente úteis**, retirando marcadores, repetição, questões, casos e referências.",
+    "- [ ] Checagem de doses, procedimentos invasivos e diretrizes brasileiras de trauma por especialista; confirmar acesso a equipes e protocolos brasileiros.",
+    "- [ ] Gerar algoritmo clínico e esquemas vetoriais com fidelidade clínica, aprovar imagens no Admin.",
+    "- [ ] Testar autossuficiência por questões, corrigir lacunas internas e validar desktop/PWA no renderer.",
+    "- [ ] Nunca publicar/mesclar sem revisão científica e autorização editorial.",
+    "**Situação:** rascunho avançado, não certificado e não publicado; links externos servem para rastreabilidade, não substituem ensino presente na aula."
+  ],
+  "external_urls": [
+    "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+    "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+    "https://pubmed.ncbi.nlm.nih.gov/33487403/",
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "https://www.east.org/mobile/practice-management-guideline/trauma/77"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes primárias externas verificadas:** 1. Coccolini F et al. **Thoracic trauma WSES–AAST guidelines**, World Journal of Emergency Surgery, 2025;20:78, publicação 15/10/2025, DOI 10.1186/s13017-025-00651-1. https://link.springer.com/article/10.1186/s13017-025-00651-1 . Conteúdo HTML integral consultado, em especial diagnóstico, pleura, fixação costal e aorta. 2. NICE **NG39**, *Major trauma: assessment and initial management*, https://www.nice.org.uk/guidance/ng39/chapter/Recommendations (descompressão quando há instabilidade/comprometimento respiratório importante, eFAST, selo e imagem). 3. EAST, **Management of simple and retained hemoth"
+    },
+    {
+      "text": "**Matriz de correções do benchmark:** | Resumo privado | Por que não transplantar diretamente | Conteúdo original desta aula | |---|---|---| | “Todo pneumotórax traumático drena” | WSES–AAST 2025 permite observação de pequenos pneumotórax ≤2 cm, em doentes estáveis, por pelo menos 24h | Decisão por fisiologia, tamanho e recursos | | “Todo hemotórax deve ser drenado” | WSES 2025 permite manejo conservador de hemotórax <300 mL estável | Diferenciar observação, tubo e sangramento volumoso | | Pneumotórax hipertensivo exige turgência jugular/desvio traqueal | Sinais clássicos podem faltar ou ser tardios, especialmente em choque hemorrágico | Diag"
+    },
+    {
+      "text": "O mecanismo envolve entrada contínua de ar no espaço pleural e drenagem insuficiente desse ar, elevando pressão, comprimindo pulmão e estruturas mediastinais e impedindo enchimento venoso. Surge dispneia progressiva, hipoxemia, taquicardia, hipotensão/choque e murmúrio vesicular assimétrico; ventilação positiva pode acelerar quadro. **Diagnóstico é clínico no paciente instável**. Não aguardar radiografia ou TC se há forte suspeita com hemodinâmica comprometida ou falência respiratória."
+    },
+    {
+      "text": "Ferimento da parede torácica que permite fluxo de ar pode competir com via aérea fisiológica e prejudicar ventilação, sobretudo se abertura importante. A equipe deve proteger lesão e reduzir ingresso de ar, monitorando se curativo passa a funcionar como válvula que impede saída e precipita tensão. A NICE recomenda **cobertura oclusiva simples com vigilância**; muitos protocolos de trauma utilizam selo torácico ventilado, se disponível, com reavaliação e possibilidade de descompressão. O curativo clássico em três bordas existe na história do ATLS, mas não substitui julgamento da equipe nem resolve todas as situações."
+    },
+    {
+      "text": "**WSES–AAST 2025:** pneumotórax traumático **≤2 cm** em paciente estável pode ser manejado conservadoramente com **observação por pelo menos 24 horas**. Trata-se de recomendação de baixo nível de evidência para pacientes selecionados; não autoriza alta imediata por ter “só um centímetro”. Paciente hipoxêmico, deteriorando, ventilado com necessidade crescente ou sem possibilidade de reavaliação pode precisar drenagem mesmo com coleção relativamente pequena."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

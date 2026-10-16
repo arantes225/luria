@@ -1,0 +1,8 @@
+"use strict";
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),folder=path.join(root,'docs/auditoria-apostilas-2026-10-16/evidencias');
+const items=JSON.parse(fs.readFileSync(path.join(folder,'inventario-atual.json'),'utf8')).items.filter(i=>i.kind==='apostila-html');
+const sha=s=>crypto.createHash('sha256').update(s.replace(/\r\n/g,'\n')).digest('hex');
+const results=[];let index=0;
+async function worker(){while(index<items.length){const i=items[index++];const sourceFiles=[i.path];const html='apostilas/'+i.key+'/index.html';if(i.path!==html)sourceFiles.push(html);for(const source of sourceFiles){const url='https://www.resibulando.online/'+source.replace(/index\.html$/,'');try{const r=await fetch(url,{signal:AbortSignal.timeout(15000)}),body=await r.text(),local=fs.readFileSync(path.join(root,source),'utf8');results.push({key:i.key,path:source,url,http_status:r.status,content_type:r.headers.get('content-type'),same_as_git_snapshot:r.ok&&sha(local)===sha(body),remote_sha256:sha(body),local_sha256:sha(local),remote_bytes:Buffer.byteLength(body),scope:'Comparação de arquivos servidos; não executa JavaScript nem autenticação do aluno.'});}catch(e){results.push({key:i.key,path:source,url,http_status:null,error:e.message,same_as_git_snapshot:null});}}}}
+(async()=>{await Promise.all(Array.from({length:4},worker));fs.writeFileSync(path.join(folder,'paginas-publicas.json'),JSON.stringify({checked_at:new Date().toISOString(),results},null,2)+'\n');console.log(JSON.stringify({files:results.length,matches:results.filter(r=>r.same_as_git_snapshot).length,different:results.filter(r=>r.same_as_git_snapshot===false).length,errors:results.filter(r=>r.http_status===null).length}));})();

@@ -1,0 +1,808 @@
+{
+  "key": "urgencias-pediatricas-suporte-basico-avancado--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/urgencias-pediatricas-suporte-basico-avancado/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida",
+  "source_sha256": "5c2e172174012e49128f42050fa7014a350dfd1f75bbac55141c1cb182c15cd5",
+  "chars_estimated": 99426,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida",
+      "level": 1
+    },
+    {
+      "line": 12,
+      "title": "1. Competências e delimitação de faixa etária",
+      "level": 2
+    },
+    {
+      "line": 20,
+      "title": "2. Epidemiologia e oportunidade de prevenir PCR",
+      "level": 2
+    },
+    {
+      "line": 26,
+      "title": "2.1. Riscos de deterioração",
+      "level": 3
+    },
+    {
+      "line": 37,
+      "title": "3. A avaliação pediátrica começa antes dos aparelhos",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "3.1. Triângulo de avaliação pediátrica (TAP)",
+      "level": 3
+    },
+    {
+      "line": 58,
+      "title": "3.2. Avaliação primária ABCDE",
+      "level": 3
+    },
+    {
+      "line": 72,
+      "title": "4. Sinais vitais, peso e particularidades das faixas etárias",
+      "level": 2
+    },
+    {
+      "line": 80,
+      "title": "Erros de dose por dez vezes",
+      "level": 3
+    },
+    {
+      "line": 84,
+      "title": "5. Desconforto versus falência respiratória",
+      "level": 2
+    },
+    {
+      "line": 90,
+      "title": "5.1. Oxigenoterapia com propósito",
+      "level": 3
+    },
+    {
+      "line": 94,
+      "title": "5.2. Bolsa-válvula-máscara (BVM)",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "5.3. Vias aéreas avançadas",
+      "level": 3
+    },
+    {
+      "line": 106,
+      "title": "6. Suporte básico de vida pediátrico (SBV/BLS) — AHA/AAP 2025",
+      "level": 2
+    },
+    {
+      "line": 108,
+      "title": "6.1. Reconhecer PCR e chamar ajuda",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "6.2. Componentes de RCP de qualidade",
+      "level": 3
+    },
+    {
+      "line": 123,
+      "title": "6.3. Mudança obrigatória: técnica do lactente",
+      "level": 3
+    },
+    {
+      "line": 131,
+      "title": "6.4. Ventilação é central",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "6.5. Após desfibrilação",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "7. Obstrução de via aérea por corpo estranho (OVACE) — atualização AHA 2025",
+      "level": 2
+    },
+    {
+      "line": 143,
+      "title": "Lactente consciente com OVACE grave",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "Criança maior consciente com OVACE grave",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "Inconsciente",
+      "level": 3
+    },
+    {
+      "line": 154,
+      "title": "8. Parada cardiorrespiratória pediátrica (PALS 2025) — ritmos e decisões",
+      "level": 2
+    },
+    {
+      "line": 158,
+      "title": "8.1. Ritmos chocáveis FV/TVSP",
+      "level": 3
+    },
+    {
+      "line": 169,
+      "title": "8.2. Ritmos não chocáveis: assistolia/AESP",
+      "level": 3
+    },
+    {
+      "line": 176,
+      "title": "8.3. Hs e Ts (causas reversíveis)",
+      "level": 3
+    },
+    {
+      "line": 180,
+      "title": "8.4. Capnografia e qualidade",
+      "level": 3
+    },
+    {
+      "line": 184,
+      "title": "9. Bradicardia com pulso — não espere desaparecer o pulso",
+      "level": 2
+    },
+    {
+      "line": 194,
+      "title": "10. Taquiarritmia com pulso — diferenciar sinusais e supraventriculares",
+      "level": 2
+    },
+    {
+      "line": 198,
+      "title": "10.1. Estável e provável TSV regular",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "10.2. Instável",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "10.3. QRS largo",
+      "level": 3
+    },
+    {
+      "line": 209,
+      "title": "11. Pós-parada (ROSC): o cuidado que preserva cérebro e órgãos",
+      "level": 2
+    },
+    {
+      "line": 225,
+      "title": "12. Choque pediátrico — reconhecer perfusão antes de hipotensão",
+      "level": 2
+    },
+    {
+      "line": 229,
+      "title": "12.1. Choque compensado x descompensado",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "12.2. Fenótipos",
+      "level": 3
+    },
+    {
+      "line": 244,
+      "title": "12.3. O que reavaliar após qualquer intervenção",
+      "level": 3
+    },
+    {
+      "line": 248,
+      "title": "13. Sepse e choque séptico pediátricos — SSC 2026",
+      "level": 2
+    },
+    {
+      "line": 254,
+      "title": "13.1. Primeira hora quando há suspeita de choque",
+      "level": 3
+    },
+    {
+      "line": 263,
+      "title": "13.2. Sepse sem choque",
+      "level": 3
+    },
+    {
+      "line": 266,
+      "title": "13.3. Fluidos: **contexto de UTI modifica a recomendação**",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "13.4. Vasoativos",
+      "level": 3
+    },
+    {
+      "line": 278,
+      "title": "13.5. Corticoides, ventilação e particularidades",
+      "level": 3
+    },
+    {
+      "line": 282,
+      "title": "13.6. Fonte, culturas e descalonamento",
+      "level": 3
+    },
+    {
+      "line": 286,
+      "title": "14. Anafilaxia pediátrica — adrenalina IM não espera urticária",
+      "level": 2
+    },
+    {
+      "line": 296,
+      "title": "15. Asma aguda na criança — GINA 2026",
+      "level": 2
+    },
+    {
+      "line": 302,
+      "title": "15.1. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "15.2. Alta segura",
+      "level": 3
+    },
+    {
+      "line": 317,
+      "title": "16. Bronquiolite viral aguda — suporte é tratamento",
+      "level": 2
+    },
+    {
+      "line": 327,
+      "title": "17. Laringite viral (crupe), epiglotite e estridor",
+      "level": 2
+    },
+    {
+      "line": 335,
+      "title": "18. Convulsão prolongada e estado de mal epiléptico",
+      "level": 2
+    },
+    {
+      "line": 339,
+      "title": "18.1. Fluxo inicial",
+      "level": 3
+    },
+    {
+      "line": 348,
+      "title": "18.2. Convulsão febril versus meningite",
+      "level": 3
+    },
+    {
+      "line": 354,
+      "title": "19. Hipoglicemia e crises metabólicas",
+      "level": 2
+    },
+    {
+      "line": 362,
+      "title": "20. Cetoacidose diabética pediátrica (CAD) — tratamento da acidose sem dano cerebral",
+      "level": 2
+    },
+    {
+      "line": 368,
+      "title": "20.1. Etapas de tratamento",
+      "level": 3
+    },
+    {
+      "line": 380,
+      "title": "20.2. Erros clássicos",
+      "level": 3
+    },
+    {
+      "line": 383,
+      "title": "21. Desidratação e gastroenterite aguda",
+      "level": 2
+    },
+    {
+      "line": 391,
+      "title": "22. Febre, meningite e sepse no lactente",
+      "level": 2
+    },
+    {
+      "line": 397,
+      "title": "22.1. Punção lombar com segurança",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "23. Trauma pediátrico — criança não é adulto pequeno",
+      "level": 2
+    },
+    {
+      "line": 409,
+      "title": "23.1. TCE",
+      "level": 3
+    },
+    {
+      "line": 415,
+      "title": "23.2. Trauma torácico e abdominal",
+      "level": 3
+    },
+    {
+      "line": 419,
+      "title": "23.3. Violência e maus-tratos",
+      "level": 3
+    },
+    {
+      "line": 423,
+      "title": "24. Queimaduras, afogamento e exposição ambiental",
+      "level": 2
+    },
+    {
+      "line": 425,
+      "title": "Queimaduras",
+      "level": 3
+    },
+    {
+      "line": 428,
+      "title": "Afogamento",
+      "level": 3
+    },
+    {
+      "line": 431,
+      "title": "Hipertermia, hipotermia e intoxicações",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "25. Erros inatos, crises endócrinas e síndromes raras que não podem passar",
+      "level": 2
+    },
+    {
+      "line": 442,
+      "title": "26. Segurança na prescrição pediátrica e preparação da equipe",
+      "level": 2
+    },
+    {
+      "line": 458,
+      "title": "26.1. Tabela de diferenças de medicamentos tempo-dependentes",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "27. Fluxogramas textuais LURIA",
+      "level": 2
+    },
+    {
+      "line": 477,
+      "title": "A. Criança não responsiva",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "B. Criança bradicárdica com pulso",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "C. Criança taquicárdica",
+      "level": 3
+    },
+    {
+      "line": 486,
+      "title": "D. Criança com sepse possível",
+      "level": 3
+    },
+    {
+      "line": 489,
+      "title": "E. Lactente com bronquiolite",
+      "level": 3
+    },
+    {
+      "line": 492,
+      "title": "F. Criança com crise convulsiva >5 min",
+      "level": 3
+    },
+    {
+      "line": 495,
+      "title": "28. Prática interprofissional e passagem de cuidados",
+      "level": 2
+    },
+    {
+      "line": 503,
+      "title": "29. Complicações, prognóstico e pós-alta",
+      "level": 2
+    },
+    {
+      "line": 511,
+      "title": "30. Armadilhas de prova: trinta erros a evitar",
+      "level": 2
+    },
+    {
+      "line": 544,
+      "title": "31. Referências primárias e verificação por data",
+      "level": 2
+    },
+    {
+      "line": 565,
+      "title": "32. Estado editorial e pendências",
+      "level": 2
+    },
+    {
+      "line": 586,
+      "title": "33. Casos clínicos comentados: apresentação, diagnóstico, conduta e armadilha",
+      "level": 2
+    },
+    {
+      "line": 590,
+      "title": "Caso 1 — Lactente com bronquiolite e apneias",
+      "level": 3
+    },
+    {
+      "line": 604,
+      "title": "Caso 2 — PCR não chocável após insuficiência respiratória",
+      "level": 3
+    },
+    {
+      "line": 618,
+      "title": "Caso 3 — Fibrilação ventricular em adolescente atleta",
+      "level": 3
+    },
+    {
+      "line": 632,
+      "title": "Caso 4 — Bradicardia grave com pulso e hipoxemia",
+      "level": 3
+    },
+    {
+      "line": 646,
+      "title": "Caso 5 — TSV em lactente estável versus instável",
+      "level": 3
+    },
+    {
+      "line": 660,
+      "title": "Caso 6 — Choque séptico com UTI disponível",
+      "level": 3
+    },
+    {
+      "line": 674,
+      "title": "Caso 7 — Infecção com hipoperfusão em unidade sem UTI",
+      "level": 3
+    },
+    {
+      "line": 688,
+      "title": "Caso 8 — Anafilaxia após alimento sem urticária",
+      "level": 3
+    },
+    {
+      "line": 702,
+      "title": "Caso 9 — Tórax silencioso em crise de asma",
+      "level": 3
+    },
+    {
+      "line": 716,
+      "title": "Caso 10 — Convulsão contínua durante cinco minutos",
+      "level": 3
+    },
+    {
+      "line": 730,
+      "title": "Caso 11 — CAD inaugural confundida com pneumonia",
+      "level": 3
+    },
+    {
+      "line": 744,
+      "title": "Caso 12 — Diarreia com choque hipovolêmico",
+      "level": 3
+    },
+    {
+      "line": 758,
+      "title": "Caso 13 — Torção testicular e trauma abdominal oculto",
+      "level": 3
+    },
+    {
+      "line": 772,
+      "title": "Caso 14 — Queda de consciência após RCP bem-sucedida",
+      "level": 3
+    },
+    {
+      "line": 788,
+      "title": "34. Questões autorais LURIA — 20 questões com todas as alternativas comentadas",
+      "level": 2
+    },
+    {
+      "line": 792,
+      "title": "Questão 1 — Compressão no lactente — AHA 2025",
+      "level": 3
+    },
+    {
+      "line": 813,
+      "title": "Questão 2 — Dois socorristas e RCP pediátrica",
+      "level": 3
+    },
+    {
+      "line": 834,
+      "title": "Questão 3 — FV pediátrica — energia inicial",
+      "level": 3
+    },
+    {
+      "line": 855,
+      "title": "Questão 4 — Assistolia e epinefrina",
+      "level": 3
+    },
+    {
+      "line": 876,
+      "title": "Questão 5 — Adrenalina PCR versus anafilaxia",
+      "level": 3
+    },
+    {
+      "line": 897,
+      "title": "Questão 6 — Bradicardia e má perfusão",
+      "level": 3
+    },
+    {
+      "line": 918,
+      "title": "Questão 7 — TSV estável",
+      "level": 3
+    },
+    {
+      "line": 939,
+      "title": "Questão 8 — Tachyarrhythmia instável com pulso",
+      "level": 3
+    },
+    {
+      "line": 960,
+      "title": "Questão 9 — OVACE lactente 2025",
+      "level": 3
+    },
+    {
+      "line": 981,
+      "title": "Questão 10 — Sepse pediátrica 2026 e local sem UTI",
+      "level": 3
+    },
+    {
+      "line": 1002,
+      "title": "Questão 11 — Choque séptico com UTI — fluidos",
+      "level": 3
+    },
+    {
+      "line": 1023,
+      "title": "Questão 12 — Antibiótico na sepse",
+      "level": 3
+    },
+    {
+      "line": 1044,
+      "title": "Questão 13 — Bronquiolite em lactente",
+      "level": 3
+    },
+    {
+      "line": 1065,
+      "title": "Questão 14 — Tórax silencioso",
+      "level": 3
+    },
+    {
+      "line": 1086,
+      "title": "Questão 15 — Anafilaxia sem lesão de pele",
+      "level": 3
+    },
+    {
+      "line": 1107,
+      "title": "Questão 16 — Convulsão prolongada",
+      "level": 3
+    },
+    {
+      "line": 1128,
+      "title": "Questão 17 — CAD: insulina em bolus",
+      "level": 3
+    },
+    {
+      "line": 1149,
+      "title": "Questão 18 — Criança após ROSC",
+      "level": 3
+    },
+    {
+      "line": 1170,
+      "title": "Questão 19 — Glicemia e consciência",
+      "level": 3
+    },
+    {
+      "line": 1191,
+      "title": "Questão 20 — Febre e meningite",
+      "level": 3
+    },
+    {
+      "line": 1214,
+      "title": "35. Curadoria visual de alta utilidade — 18 candidatas",
+      "level": 2
+    },
+    {
+      "line": 1239,
+      "title": "Critérios técnicos de aprovação",
+      "level": 3
+    },
+    {
+      "line": 1250,
+      "title": "36. Duplo sistema de segurança: dose, concentração e via",
+      "level": 2
+    },
+    {
+      "line": 1252,
+      "title": "36.1. Matriz de conferência de adrenalina",
+      "level": 3
+    },
+    {
+      "line": 1265,
+      "title": "36.2. Energia elétrica calculada por peso",
+      "level": 3
+    },
+    {
+      "line": 1269,
+      "title": "36.3. Metas de frequência e razão",
+      "level": 3
+    },
+    {
+      "line": 1277,
+      "title": "37. Auditoria final desta fase",
+      "level": 2
+    },
+    {
+      "line": 1281,
+      "title": "Pontos críticos revisados",
+      "level": 3
+    },
+    {
+      "line": 1295,
+      "title": "Pendências para publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **AHA/AAP. Pediatric Basic Life Support. 2025 Guidelines.** Publicadas em 23/10/2025, periódico *Pediatrics* 2026; mudanças de técnica de compressão no lactente, OVACE e ventilação. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+    "2. **AHA/AAP. Pediatric Advanced Life Support. 2025 Guidelines.** Drogas, choques, arritmias, ROSC, ressuscitação de choque. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "3. **AHA. Algorithms 2025.** Versões oficiais de PCR, bradicardia, taquiarritmia e SBV pediátricos. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "4. **AHA. Pediatric Cardiac Arrest Algorithm (2025).** https://cpr.heart.org/en/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-CA-250123.pdf",
+    "5. **AHA. Pediatric Bradycardia With a Pulse Algorithm (2025).** https://cpr.heart.org/en/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-Bradycardia-250121.pdf",
+    "6. **AHA. Pediatric Tachyarrhythmia With a Pulse Algorithm (2025).** https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-Tachyarrhythmia-250117.pdf",
+    "7. **Surviving Sepsis Campaign. 2026 pediatric guidelines.** Weiss SL et al. *Intensive Care Medicine*. 2026;52:937–983, publicada 23/03/2026. https://doi.org/10.1007/s00134-026-08360-2",
+    "8. **SCCM. SSC Pediatric 2026 — resumo das recomendações.** https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+    "9. **GINA 2026 Strategy Report** e *Summary Guide*, incluindo crianças pequenas e 6–11 anos; verificar quadro de crise conforme idade. https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+    "10. **GINA 2026 Summary Guide:** https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+    "11. **ISPAD Clinical Practice Consensus Guidelines 2022: DKA and HHS.** https://www.ispad.org/static/6dd62eae-c8cb-4b4a-84e1efc768505746/Ch11PediatricDiabetes.pdf",
+    "12. **Anaphylaxis: 2023 practice parameter update (AAAAI/ACAAI).** https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf",
+    "13. **AAP. Epinephrine for First-aid Management of Anaphylaxis.** *Pediatrics* 2017;139:e20164006. https://publications.aap.org/pediatrics/article/139/3/e20164006/53753/Epinephrine-for-First-aid-Management-of",
+    "14. **AHA/AAP. Neonatal Resuscitation 2025**, para diferenciar sala de parto de urgência pediátrica. https://doi.org/10.1542/peds.2025-074352",
+    "15. **Ministério da Saúde / SBP**, protocolos específicos e fluxos de urgência/atenção a criança, a confirmar na revisão de publicação. https://www.gov.br/saude/pt-br ; https://www.sbp.com.br/",
+    "16. **SAMU 192 / rede de urgência**, documentos e fluxos de transferência municipais/estaduais devem ser incorporados por instituição, sem assumir cobertura idêntica em todo o Brasil.",
+    "**Hierarquia e divergências:** priorizar a regulamentação brasileira, SBP e protocolo da instituição para operação/medicamentos disponíveis; quando o algoritmo internacional AHA 2025 introduzir mudança, declarar explicitamente. A SSC pediátrica 2026 é diferente da SSC 2020 e da diretriz adulta; não fundir doses ou metas de oxigênio de populações distintas."
+  ],
+  "external_links": [
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cpr.heart.org/en/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-CA-250123.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cpr.heart.org/en/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-Bradycardia-250121.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-PALS-Tachyarrhythmia-250117.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1007/s00134-026-08360-2",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ispad.org/static/6dd62eae-c8cb-4b4a-84e1efc768505746/Ch11PediatricDiabetes.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://publications.aap.org/pediatrics/article/139/3/e20164006/53753/Epinephrine-for-First-aid-Management-of",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1542/peds.2025-074352",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Aplicabilidade:** o suporte básico de vida pediátrico AHA/AAP se refere a lactentes e crianças **até sinais de puberdade**, excluindo reanimação neonatal na sala de parto. O PALS aborda crianças e adolescentes **até 18 anos** na abordagem avançada, sem incorporar a transição neonatal ao nascer. Na sala de parto, seguir protocolo neonatal específico (NRP/PRN-SBP). Um recém-nascido em adaptação pós-natal utiliza outra sequência (ventilação prioritária, relação 3:1 quando indicada) e NÃO deve ser tratado mecanicamente como criança de cinco anos.",
+      "pattern": 0
+    },
+    {
+      "text": "O limite de hipotensão sistólica frequentemente usado em PALS: lactentes entre 1 mês e 1 ano, PAS <70 mmHg; crianças de 1 a 10 anos, PAS <70 + 2×idade em anos; acima de 10 anos, PAS <90 mmHg. Esses valores são **cortes de alerta de hipotensão**, não alvos universais de ressuscitação nem forma exclusiva de diagnosticar choque. Na sepse, a perfusão e disfunção orgânica podem estar alteradas sem hipotensão.",
+      "pattern": 0
+    },
+    {
+      "text": "Os principais mecanismos são troca entre mg e mL, uso equivocado de concentrações 1 mg/mL e 0,1 mg/mL de adrenalina, calculadora configurada com unidade errada, peso em libras tratado como kg e ausência de máximo por dose. Em reanimação, um profissional define droga/dose, outro prepara e terceiro, quando disponível, confirma rótulo e administração.",
+      "pattern": 0
+    },
+    {
+      "text": "**Aplicabilidade:** o suporte básico de vida pediátrico AHA/AAP se refere a lactentes e crianças **até sinais de puberdade**, excluindo reanimação neonatal na sala de parto. O PALS aborda crianças e adolescentes **até 18 anos** na abordagem avançada, sem incorporar a transição neonatal ao nascer. Na sala de parto, seguir protocolo neonatal específico (NRP/PRN-SBP). Um recém-nascido em adaptação pós-natal utiliza outra sequência (ventilação prioritária, relação 3:1 quando indicada) e NÃO deve ser tratado mecanicamente como criança de cinco anos.",
+      "pattern": 1
+    },
+    {
+      "text": "**C — Circulation (circulação):** FC, pulsos centrais/periféricos, tempo de enchimento capilar, pressão com manguito correto, temperatura periférica, estado mental, diurese, pele e perdas. PA normal não exclui choque. Acesso IV; se falha/atraso em criança crítica, IO conforme protocolo de emergência.",
+      "pattern": 1
+    },
+    {
+      "text": "O limite de hipotensão sistólica frequentemente usado em PALS: lactentes entre 1 mês e 1 ano, PAS <70 mmHg; crianças de 1 a 10 anos, PAS <70 + 2×idade em anos; acima de 10 anos, PAS <90 mmHg. Esses valores são **cortes de alerta de hipotensão**, não alvos universais de ressuscitação nem forma exclusiva de diagnosticar choque. Na sepse, a perfusão e disfunção orgânica podem estar alteradas sem hipotensão.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria · Emergência · Terapia Intensiva · Sala de Emergência **Lote 09, aula 173/180 — redação de 14/10/2026** **Estado:** rascunho editorial de estudo, sem revisão clínica independente, sem publicação no renderizador LURIA. **Fontes prioritárias verificadas:** AHA/AAP 2025 Pediatric BLS/PALS; Surviving Sepsis Campaign **pediátrica 2026** (23/03/2026); GINA **2026**; ISPAD 2022 para cetoacidose; diretrizes de anafilaxia e materiais do Ministério da Saúde/SBP conforme condição.",
+      "pattern": 2
+    },
+    {
+      "text": "A AHA 2025 enfatiza que a PCR pediátrica frequentemente decorre de **insuficiência respiratória e choque progressivos**. Isso modifica organização: triagem rápida, reavaliações programadas, disponibilidade de equipe de resposta, equipamentos por tamanho, acesso IO, treinamento em ventilação com bolsa-máscara e encaminhamento precoce para cuidados intensivos.",
+      "pattern": 2
+    },
+    {
+      "text": "Administrar oxigênio a hipoxêmicos e situações críticas, titulando para objetivo da condição. O alvo em cuidado pós-PCR AHA 2025 (quando houver monitorização confiável) é **SpO₂ 94–98%**, ou alvo apropriado para cardiopatia basal. Em **sepse pediátrica após ressuscitação**, a SSC 2026 trouxe recomendação condicional de alvo conservador **88–92%** comparado a >94% em determinadas condições; esse resultado não deve ser automaticamente imposto a bronquiolite, asma, trauma, PCR ou paciente com saturação-alvo especial. Aplicar por protocolo especializado e contexto clínico.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria · Emergência · Terapia Intensiva · Sala de Emergência **Lote 09, aula 173/180 — redação de 14/10/2026** **Estado:** rascunho editorial de estudo, sem revisão clínica independente, sem publicação no renderizador LURIA. **Fontes prioritárias verificadas:** AHA/AAP 2025 Pediatric BLS/PALS; Surviving Sepsis Campaign **pediátrica 2026** (23/03/2026); GINA **2026**; ISPAD 2022 para cetoacidose; diretrizes de anafilaxia e materiais do Ministério da Saúde/SBP conforme condição."
+    },
+    {
+      "text": "**Aviso de segurança clínica:** protocolos e doses neste material destinam-se a profissionais treinados e estudantes supervisionados. Em atendimento real, conferir peso atual ou estimado por método validado, concentração do produto, via, máxima por dose, bomba, alergias, comorbidades e protocolo do serviço. Doses para anafilaxia **não** são intercambiáveis com adrenalina de PCR. Não prescrever usando este rascunho como fonte única."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "sha": "eb9c2ad76d27eaeb7f3fc1bd3a67931541a0e391",
+  "path": "apostilas/_rascunhos/lote-06-136-137-controle-editorial-cientifico-20261015.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--eb9c2ad76d",
+  "title": "LURIA — Lote 6 (grade de 260) · Continuação 136 e 137 · 15/10/2026",
+  "format": ".md",
+  "chars_estimated": 9287,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 6 (grade de 260) · Continuação 136 e 137 · 15/10/2026"
+    },
+    {
+      "title": "1. Inventário prévio e prevenção de duplicações"
+    },
+    {
+      "title": "2. Benchmark Google Drive realmente aberto e lido (ETAPA ZERO)"
+    },
+    {
+      "title": "3. Apostila 136 — lacunas pontuais e solução original"
+    },
+    {
+      "title": "4. Apostila 137 — atualização posterior à biblioteca anterior"
+    },
+    {
+      "title": "5. Auditoria técnica limitada à edição de Markdown"
+    },
+    {
+      "title": "6. Curadoria de imagens — descobertas e bloqueios"
+    },
+    {
+      "title": "7. Gate de conclusão ainda bloqueado"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/",
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://pubmed.ncbi.nlm.nih.gov/41125322/",
+    "https://gastro.org/clinical-guidance/surveillance-of-barretts-esophagus/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9139956/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Autoria institucional:** não há evidência verificada de que esses PDFs sejam do **Estratégia MED**. Alguns mostram identificação de coleções particulares ou marca d'água `Medicina Livre`. Não atribuir ao Estratégia MED, não copiar textos/imagens/tabelas, não interpretar sínteses antigas como recomendações atuais. O benchmark completo institucional exigido pelo `EDITORIAL_STANDARD.md` permanece **parcial**, bloqueando certificação."
+    },
+    {
+      "text": "**Diretrizes anteriores preservadas:** Lyon 2.0 para AET >6% e casos limítrofes; SAGES 2024 sem recomendação universal para tela; ACG 2022 para DRGE e Barrett. Nenhum conteúdo antigo foi apagado arbitrariamente e o HTML original da plataforma não foi alterado."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,340 @@
+{
+  "sha": "6de6532695e32ad59dd4b49df8a796c82eff7bc4",
+  "path": "apostilas/_rascunhos/lote-08-aula-180-consolidada-curada-20261015.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--6de6532695",
+  "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias — versão consolidada de revisão",
+  "format": ".md",
+  "chars_estimated": 86525,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias — versão consolidada de revisão"
+    },
+    {
+      "title": "Como foi feita esta consolidação"
+    },
+    {
+      "title": "Parte I — Fundamentos e clínica inicial"
+    },
+    {
+      "title": "0. Etapa zero: inventário, fonte comparativa e enquadramento nacional"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. O que é cuidado paliativo?"
+    },
+    {
+      "title": "2. Sofrimento total: por que a morfina sozinha pode não resolver?"
+    },
+    {
+      "title": "3. Identificar necessidades precocemente — sem “prever o dia da morte”"
+    },
+    {
+      "title": "PPS, ECOG e fragilidade — conceitos diferentes"
+    },
+    {
+      "title": "4. Tomada de decisão compartilhada e objetivos de cuidado"
+    },
+    {
+      "title": "5. Diretivas antecipadas de vontade e capacidade decisória"
+    },
+    {
+      "title": "6. Ortotanásia, distanásia, eutanásia e sedação paliativa"
+    },
+    {
+      "title": "Ética da intenção e proporcionalidade"
+    },
+    {
+      "title": "7. Comunicação de más notícias — SPIKES aplicado, não decorado"
+    },
+    {
+      "title": "Exemplo de conversa: diagnóstico de câncer avançado"
+    },
+    {
+      "title": "8. Comunicação de prognóstico, urgência e notícia de morte"
+    },
+    {
+      "title": "9. Controle de dor: mecanismo, tipo e plano de resposta"
+    },
+    {
+      "title": "Opioides — benefícios e riscos"
+    },
+    {
+      "title": "10. Dispneia: tratar sofrimento mesmo sem hipoxemia"
+    },
+    {
+      "title": "11. Náuseas, vômitos, constipação e obstrução intestinal"
+    },
+    {
+      "title": "12. Delirium, ansiedade, depressão e sofrimento existencial"
+    },
+    {
+      "title": "13. Nutrição, hidratação e medidas invasivas no fim da vida"
+    },
+    {
+      "title": "14. Processo ativo de morrer: reconhecer, planejar e cuidar"
+    },
+    {
+      "title": "15. Plano de cuidado antecipado e rede SUS"
+    },
+    {
+      "title": "Parte II — Aplicações clínicas e atualização de 2026"
+    },
+    {
+      "title": "16. Ferramentas para avaliação de necessidades, não para prever data exata de morte"
+    },
+    {
+      "title": "Análise do padrão de declínio"
+    },
+    {
+      "title": "Reconhecer sinais de declínio potencialmente reversível"
+    },
+    {
+      "title": "17. PAC e DAV segundo a Portaria 10.181/2026 — diferenças fundamentais"
+    },
+    {
+      "title": "Como documentar uma conversa de PAC"
+    },
+    {
+      "title": "Exemplo de registro clínico autoral"
+    },
+    {
+      "title": "Situação ética difícil: familiar discorda da DAV"
+    },
+    {
+      "title": "18. Paliativos não oncológicos: insuficiência cardíaca, DPOC, doença renal e demência"
+    },
+    {
+      "title": "Insuficiência cardíaca avançada"
+    },
+    {
+      "title": "Doença pulmonar obstrutiva crônica e outras insuficiências respiratórias"
+    },
+    {
+      "title": "Doença renal avançada"
+    },
+    {
+      "title": "Demência avançada, fragilidade e doenças neurológicas"
+    },
+    {
+      "title": "19. Avaliação integral da dor — além da escala numérica"
+    },
+    {
+      "title": "Características que sempre precisam de registro"
+    },
+    {
+      "title": "Opioides: escolha, titulação e segurança"
+    },
+    {
+      "title": "Quando dor expressa outra emergência"
+    },
+    {
+      "title": "20. Dispneia, secreções e sintomas respiratórios no fim da vida"
+    },
+    {
+      "title": "21. Sintomas digestivos, obstrução intestinal e alimentação"
+    },
+    {
+      "title": "22. Delirium e sofrimento neuropsiquiátrico: não sedar antes de avaliar"
+    },
+    {
+      "title": "23. Sedação paliativa proporcional: avaliação de refratariedade, intenção e monitorização"
+    },
+    {
+      "title": "Matriz antes de sedar"
+    },
+    {
+      "title": "24. Vias alternativas, domicílio e plano de crise 24/7"
+    },
+    {
+      "title": "Modelo de plano de crise domiciliar"
+    },
+    {
+      "title": "Desospitalização segura"
+    },
+    {
+      "title": "25. Crianças, adolescentes e neonatos: cuidado paliativo não é só miniaturizar o adulto"
+    },
+    {
+      "title": "26. Comunicação avançada: prognóstico, conflito, esperança e notícia de morte"
+    },
+    {
+      "title": "Perguntas úteis antes de explicar prognóstico"
+    },
+    {
+      "title": "Prognóstico em cenários, com incerteza honesta"
+    },
+    {
+      "title": "Conflito familiar sobre intubação"
+    },
+    {
+      "title": "Comunicar notícia de óbito"
+    },
+    {
+      "title": "27. Checklist de revisão de medicamentos em tempo de vida limitado"
+    },
+    {
+      "title": "Plano de reconciliação"
+    },
+    {
+      "title": "Ampliação seletiva — cirrose, ELA e doença neuromuscular"
+    },
+    {
+      "title": "28. Três conversas que mudam a conduta — exemplos didáticos originais"
+    },
+    {
+      "title": "I1. Primeira notícia de progressão de câncer"
+    },
+    {
+      "title": "I2. Conversa urgente de UTI sobre intervenção desproporcional"
+    },
+    {
+      "title": "I3. Notícia de morte após tentativa de reanimação"
+    },
+    {
+      "title": "29. Luto, sobrecarga de cuidado e suporte territorial"
+    },
+    {
+      "title": "Parte III — Casos clínicos comentados"
+    },
+    {
+      "title": "30. Casos didáticos sem duplicação deliberada"
+    },
+    {
+      "title": "Caso 1 — Ainda em quimioterapia, já com necessidade paliativa"
+    },
+    {
+      "title": "Caso 2 — Dispneia sem hipoxemia"
+    },
+    {
+      "title": "Caso 3 — Diretiva antecipada em paciente incapaz"
+    },
+    {
+      "title": "Caso 4 — Delirium antes de sedação"
+    },
+    {
+      "title": "Caso 5 — Comunicação de recidiva"
+    },
+    {
+      "title": "Caso 6 — Decisão sobre RCP em falência multiorgânica irreversível"
+    },
+    {
+      "title": "Caso 7 — CDI em insuficiência cardíaca terminal"
+    },
+    {
+      "title": "Caso 8 — Diálise e escolha informada"
+    },
+    {
+      "title": "Caso 9 — Dispneia refratária e saturação preservada"
+    },
+    {
+      "title": "Caso 10 — Criança com doença neurodegenerativa"
+    },
+    {
+      "title": "Caso 11 — Desprescrição sem descontinuação abrupta"
+    },
+    {
+      "title": "Caso 12 — Obstrução intestinal maligna com vômitos"
+    },
+    {
+      "title": "Caso 13 — DPOC grave e preferência por não intubar"
+    },
+    {
+      "title": "Caso 14 — Dor refratária ou neuropatia não reconhecida?"
+    },
+    {
+      "title": "Caso 15 — Diretiva antecipada e filho discordante"
+    },
+    {
+      "title": "Caso 16 — Insuficiência renal e acúmulo de opioides"
+    },
+    {
+      "title": "Parte IV — Questões autorais comentadas"
+    },
+    {
+      "title": "31. Questões selecionadas e comentadas"
+    },
+    {
+      "title": "Parte V — Revisão, visuais e referências"
+    },
+    {
+      "title": "32. Síntese de alto rendimento"
+    },
+    {
+      "title": "33. Visualização e ensino: matriz de 14 recursos, não aprovados"
+    },
+    {
+      "title": "34. Referências e hierarquia de evidência"
+    },
+    {
+      "title": "35. Auditoria desta versão consolidada — STATUS NÃO CONCLUÍDO"
+    }
+  ],
+  "reference_entries": [
+    "- Cuidado paliativo = alívio e apoio **desde o diagnóstico de doença grave**, conforme necessidade, inclusive junto a terapia modificadora.",
+    "- Dor total = física, emocional, social e espiritual; pontuar sintoma não substitui avaliação.",
+    "- Objetivos de cuidado são específicos, revisitáveis e baseados em valores da pessoa.",
+    "- DAV (CFM 1.995/2012) e PAC precisam de registro e contextualização.",
+    "- Ortotanásia com manutenção de conforto ≠ eutanásia; distanásia é obstinação de tratamento desproporcional.",
+    "- Sedação paliativa proporcional exige sintoma verdadeiramente refratário, consentimento/representação e revisão especializada.",
+    "- SPIKES organiza entrevista, mas empatia e comunicação não são checklists mecânicos.",
+    "- Morfina e opioides têm papel no tratamento de dor/dispneia, mas precisam de titulação e vigilância; constipação deve ser prevenida.",
+    "- Falta de oxigenação e sensação de dispneia não são a mesma coisa.",
+    "- Delirium pode ser por causas tratáveis; não sedar por reflexo.",
+    "- Limitação de procedimento não suspende cuidado ativo.",
+    "- Rede SUS PNCP inclui APS e domicílio, não somente hospital terciário.",
+    "1. Brasil. **Portaria GM/MS nº 3.681/2024**. Institui PNCP no SUS. https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "2. Brasil. **Portaria GM/MS nº 10.181, de 26 de janeiro de 2026**. Atualiza PNCP, PAC, DAV, EMCP, EAACP e rede assistencial. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+    "3. Ministério da Saúde. **Legislação de cuidados paliativos** (inclui Portaria SAES/MS 4.288, 22/06/2026, referente ao CNES). https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao/legislacao",
+    "4. CFM. **Resolução nº 1.805/2006**. Limitação ou suspensão proporcional de tratamentos em fase terminal com manutenção de cuidado integral. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "5. CFM. **Resolução nº 1.995/2012**. Diretivas antecipadas de vontade. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "6. Surges SM et al. **Revised European Association for Palliative Care recommended framework on palliative sedation**. *Palliative Medicine*. 2024;38(2):213-228. DOI:10.1177/02692163231220225. https://pubmed.ncbi.nlm.nih.gov/38297460/",
+    "7. Ministério da Saúde. **Linha de cuidado e diretrizes assistenciais de cuidados paliativos**. https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/publicacoes/linha-de-cuidado-e-diretrizes-assistenciais-cuidados-paliativos.pdf",
+    "8. Baile WF et al. SPIKES—A six-step protocol for delivering bad news: application to the patient with cancer. *The Oncologist*. 2000;5(4):302–311. DOI:10.1634/theoncologist.5-4-302. Verificar pertinência antes da versão final.",
+    "**Pendências prioritárias:** revisão médico-bioética e de doses por paliativista; conferir interpretação da PNCP, critérios de sedação e limites de autonomia em casos complexos; eliminar qualquer redundância residual, testar resolução de questões pelo texto, conferir links e licença de diagramas, converter ao renderer nativo e testar no PWA.",
+    "**Cautela assistencial:** este material é para revisão educacional de graduação e residência. Discussões de analgesia, opioides, sedação, VNI, diálise, alimentação artificial e limitação de suporte exigem avaliação individual e protocolos institucionais."
+  ],
+  "external_urls": [
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao/legislacao",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "https://pubmed.ncbi.nlm.nih.gov/38297460/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/publicacoes/linha-de-cuidado-e-diretrizes-assistenciais-cuidados-paliativos.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- **Fonte canônica mantida:** rascunho 01 de 14/10/2026, nos fundamentos, semiologia, raciocínio de sintomas, comunicação, casos 1–6 e questões 1–8. - **Complemento 02B selecionado:** capítulos de escalas e avaliação, política MS 2026/PAC e DAV, condições não oncológicas, farmacologia clínica, sintomas, sedação, vias alternativas, educação familiar, desprescrição e estudos de caso novos. - **Complemento 02A selecionado pontualmente:** seção própria de cirrose/ELA/doenças neuromusculares; diálogos práticos de notícias difíceis; luto/cuidador; quatro casos não idênticos aos escolhidos do 02B. - **Seções e exercícios não somados:** foram excluíd"
+    },
+    {
+      "text": "A decisão deve explorar: 1. Entendimento do diagnóstico e do curso da doença. 2. Valores: autonomia, lucidez, ausência de dor, tempo com familiares, possibilidade de voltar para casa. 3. Objetivos terapêuticos: recuperar função, prolongar vida, controlar sintomas, reduzir internações. 4. Opções e limites: ventilação invasiva, RCP, antibioticoterapia, diálise, transfusões, alimentação artificial, cirurgia, sedação. 5. Probabilidade de benefício **neste cenário**, riscos, efeitos colaterais e alternativas. 6. Quem deve participar, respeitando consentimento/confidencialidade. 7. Registro claro no prontuário, reavaliação se estado ou preferências"
+    },
+    {
+      "text": "**Comunicação de morte inesperada:** garantir que a informação foi confirmada; reunir familiar em lugar reservado, identificar relação e suporte, utilizar termos claros (“morreu”, quando apropriado), evitar rodeios, permitir reação e explicar próximos passos práticos com sensibilidade. Não relatar diagnóstico ou causa incerta como comprovada. Em óbito materno, fetal/neonatal ou de criança, considerar apoio especializado e orientações específicas de luto."
+    },
+    {
+      "text": "**Analgesia multimodal** combina medidas não farmacológicas, analgésicos não opioides quando adequados, opioides em dor intensa selecionada e adjuvantes conforme mecanismo. Não usar AINE indiscriminadamente em insuficiência renal, sangramento, plaquetopenia ou risco gastrointestinal. Avaliar contraindicações de paracetamol e função hepática."
+    },
+    {
+      "text": "A **etiologia da náusea** orienta tratamento: constipação, opioides, obstrução, gastroparesia, hipercalcemia, insuficiência renal/hepática, vestibulopatia, hipertensão intracraniana, quimioterapia ou ansiedade. Antieméticos possuem alvos diferentes (dopaminérgico, serotoninérgico, histamínico e pró-cinético); o uso empírico repetido sem diagnóstico pode não resolver a causa e provocar efeitos adversos como sedação ou prolongamento QT."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,343 @@
+{
+  "sha": "dcce66b73771bf7b519e417d62283df0443247cf",
+  "path": "apostilas/_rascunhos/lote-11-aula-227-parkinson-disturbios-movimento.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--dcce66b737",
+  "title": "LURIA — Apostila 227: Doença de Parkinson e distúrbios do movimento",
+  "format": ".md",
+  "chars_estimated": 73024,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 227: Doença de Parkinson e distúrbios do movimento"
+    },
+    {
+      "title": "0. Etapa zero — inventário, benchmark e limites de escopo"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Fundamentos: do movimento normal ao distúrbio do movimento"
+    },
+    {
+      "title": "1.1 Vocabulário fenomenológico"
+    },
+    {
+      "title": "1.2 História e exame dirigidos"
+    },
+    {
+      "title": "2. Parkinsonismo e doença de Parkinson: relação essencial"
+    },
+    {
+      "title": "2.1 Sintomas motores"
+    },
+    {
+      "title": "2.2 Sintomas não motores: rastrear ativamente"
+    },
+    {
+      "title": "2.3 Critérios MDS: uso operacional"
+    },
+    {
+      "title": "3. Principais diagnósticos diferenciais"
+    },
+    {
+      "title": "3.1 Induzido por medicamentos"
+    },
+    {
+      "title": "3.2 Parkinsonismo atípico"
+    },
+    {
+      "title": "3.3 Exames complementares: pedir com pergunta definida"
+    },
+    {
+      "title": "4. Abordagem terapêutica integral"
+    },
+    {
+      "title": "4.1 Decisões compartilhadas e metas"
+    },
+    {
+      "title": "4.2 Levodopa e inibidores periféricos da descarboxilase"
+    },
+    {
+      "title": "4.3 Outras classes farmacológicas"
+    },
+    {
+      "title": "4.4 Tratamento não farmacológico"
+    },
+    {
+      "title": "4.5 Flutuação motora, wearing off e on-off"
+    },
+    {
+      "title": "4.6 Discinesias"
+    },
+    {
+      "title": "4.7 Terapias avançadas"
+    },
+    {
+      "title": "5. Sintomas não motores e cenários de segurança"
+    },
+    {
+      "title": "5.1 Hipotensão ortostática"
+    },
+    {
+      "title": "5.2 Psicose e alucinações"
+    },
+    {
+      "title": "5.3 Cognição, depressão e sono"
+    },
+    {
+      "title": "5.4 Deglutição, nutrição e cuidados paliativos"
+    },
+    {
+      "title": "5.5 Urgências e internação"
+    },
+    {
+      "title": "6. Outros distúrbios do movimento: diagnóstico pelo padrão"
+    },
+    {
+      "title": "6.1 Tremor essencial e seus diferenciais"
+    },
+    {
+      "title": "6.2 Distonia"
+    },
+    {
+      "title": "6.3 Coreia, hemibalismo e discinesias tardias"
+    },
+    {
+      "title": "6.4 Tiques, mioclonias e asterixis"
+    },
+    {
+      "title": "6.5 Distúrbio funcional do movimento"
+    },
+    {
+      "title": "7. Algoritmos clínicos operacionais"
+    },
+    {
+      "title": "A — Pessoa com tremor na APS"
+    },
+    {
+      "title": "B — Suspeita de DP"
+    },
+    {
+      "title": "C — Paciente em DP com piora súbita"
+    },
+    {
+      "title": "8. Quadros de prova e armadilhas"
+    },
+    {
+      "title": "9. Casos clínicos originais comentados"
+    },
+    {
+      "title": "Caso 1 — Lentidão unilateral sem tremor manifesto"
+    },
+    {
+      "title": "Caso 2 — Tremor bilateral ao servir café"
+    },
+    {
+      "title": "Caso 3 — Quedas precoces e dificuldade de olhar para baixo"
+    },
+    {
+      "title": "Caso 4 — Piora febril após suspensão da medicação"
+    },
+    {
+      "title": "Caso 5 — Comprar compulsivo depois de mudar a terapia"
+    },
+    {
+      "title": "Caso 6 — Alucinação aguda no idoso com Parkinson"
+    },
+    {
+      "title": "Caso 7 — Distonia aguda após antiemético"
+    },
+    {
+      "title": "Caso 8 — Hemicoreia de início súbito e hiperglicemia"
+    },
+    {
+      "title": "10. Questões originais de residência com comentários"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "11. Revisão final de alta retenção"
+    },
+    {
+      "title": "12. Propostas de imagens para triagem editorial — nenhuma aprovada"
+    },
+    {
+      "title": "13. Referências primárias e leitura recomendada"
+    },
+    {
+      "title": "14. Pendências bloqueadoras de certificação"
+    },
+    {
+      "title": "15. Estadiamento, escalas e monitorização longitudinal"
+    },
+    {
+      "title": "15.1 Hoehn e Yahr: entender a gravidade sem fetichizar a escala"
+    },
+    {
+      "title": "15.2 MDS-UPDRS e registros clínicos úteis"
+    },
+    {
+      "title": "15.3 Como interpretar o diário motor"
+    },
+    {
+      "title": "16. Considerações especiais no curso de vida"
+    },
+    {
+      "title": "16.1 Parkinsonismo de início jovem"
+    },
+    {
+      "title": "16.2 Pessoas idosas frágeis e polifarmácia"
+    },
+    {
+      "title": "16.3 Gestação e amamentação"
+    },
+    {
+      "title": "16.4 Parkinson e funções críticas — direção e trabalho"
+    },
+    {
+      "title": "17. Farmacologia aplicada, interações e transições assistenciais"
+    },
+    {
+      "title": "17.1 Reconciliação terapêutica no pronto atendimento"
+    },
+    {
+      "title": "17.2 Cuidados com antagonistas dopaminérgicos"
+    },
+    {
+      "title": "17.3 Função renal, fígado e retirada de medicamentos"
+    },
+    {
+      "title": "17.4 Quando o paciente não consegue engolir"
+    },
+    {
+      "title": "17.5 Diagnóstico diferencial da piora na UTI ou enfermaria"
+    },
+    {
+      "title": "18. Roteiro de consulta em três níveis de atenção"
+    },
+    {
+      "title": "18.1 Atenção primária: reconhecer, referir, acompanhar"
+    },
+    {
+      "title": "18.2 Ambulatório de neurologia: diagnóstico dinâmico"
+    },
+    {
+      "title": "18.3 Hospital: preservar horários e identificar risco"
+    },
+    {
+      "title": "19. Casos integradores adicionais"
+    },
+    {
+      "title": "Caso 9 — Sintomas “vasculares” na ressonância de um idoso"
+    },
+    {
+      "title": "Caso 10 — Mulher jovem com distonia e alteração hepática"
+    },
+    {
+      "title": "20. Questões integradoras adicionais"
+    },
+    {
+      "title": "Questão 9 — Classificação funcional"
+    },
+    {
+      "title": "Questão 10 — Gestação"
+    },
+    {
+      "title": "Questão 11 — Reconciliação de medicamentos"
+    },
+    {
+      "title": "Questão 12 — Tremor e sinais corticais"
+    },
+    {
+      "title": "21. Controle editorial desta ampliação"
+    }
+  ],
+  "reference_entries": [
+    "1. BRASIL. Ministério da Saúde. **Portaria Conjunta SAES/SECTICS nº 16, de 1º de agosto de 2025.** Aprova o PCDT da Doença de Parkinson. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-de-parkinson/view — PDF integral vinculado na página.",
+    "2. POSTUMA, R. B. et al. **MDS clinical diagnostic criteria for Parkinson's disease.** Movement Disorders. 2015;30(12):1591–1601. https://doi.org/10.1002/mds.26424.",
+    "3. NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE. **Parkinson's disease in adults: diagnosis and management.** NG71. https://www.nice.org.uk/guidance/ng71/chapter/Recommendations.",
+    "4. BHATIA, K. P. et al. **Consensus Statement on the Classification of Tremors.** Movement Disorders. 2018;33(1):75–87. https://doi.org/10.1002/mds.27121.",
+    "5. ALBANESE, A. et al. **Definition and Classification of Dystonia.** Movement Disorders. 2025;40(7):1248–1259. https://doi.org/10.1002/mds.30220.",
+    "6. ZESIEWICZ, T. A. et al. **Evidence-based guideline update: treatment of essential tremor.** Neurology. 2011;77(19):1752–1755. https://doi.org/10.1212/WNL.0b013e318236f0fd.",
+    "- [ ] Expandir capítulos até ≥60.000 **caracteres didáticos úteis** sem repetição e documentar matriz de cobertura.",
+    "- [ ] Encontrar e **ler de fato** benchmark equivalente no Drive, ou documentar formalmente indisponibilidade e adotar comparador público apropriado após pesquisa.",
+    "- [ ] Auditar cada dose/esquema contra PCDT **e bula profissional atual**, incluindo ajuste renal, interações e suspensão de agonistas/MAO-B.",
+    "- [ ] Checar critérios MDS e suas exclusões linha por linha, sem converter critério de pesquisa em diagnóstico automático.",
+    "- [ ] Validar algoritmos de urgência por neurologista e revisar todas as 8 questões e 8 casos de forma independente.",
+    "- [ ] Avaliar ≥10 imagens candidatas, provar licença compatível com uso comercial e submeter aprovação no Admin.",
+    "- [ ] Implementar HTML integrado somente após revisão e testar desktop/PWA, sumário, tabelas, acessibilidade e desempenho.",
+    "- [ ] Reconciliar com o inventário dos 401 temas antes de atribuir ampliação adicional ao lote.",
+    "- [ ] **Manter fora da main e NÃO FAZER DEPLOY até aprovação editorial e clínica.**",
+    "**Situação de prova:** o fato de a maioria dos pacientes com DP serem idosos não torna irrelevante a farmacovigilância reprodutiva. Antes de iniciar ou trocar medicação em mulher em idade fértil, questionar gestação e planejamento, e jamais prometer inocuidade de agente com evidência escassa.",
+    "**Análise:** alterações microvasculares incidentais não demonstram que as lesões causam o parkinsonismo. A assimetria inicial, tremor de repouso e resposta à levodopa tornam DP plausível; coexistência de doença cerebrovascular é possível. **Exames:** a imagem deve ser interpretada pelo padrão, localização, gravidade e relação com quadro clínico, e não por uma palavra do laudo. **Conduta:** continuidade de investigação/seguimento, controle vascular e reabilitação, reavaliando se surgirem red flags. **Por que importa:** evita diagnóstico etiológico pela imagem isolada e perda de benefício terapê",
+    "**Análise:** DP de início jovem é possível, mas quadro distônico e alterações hepáticas abrem diferencial de doença de Wilson e outras causas potencialmente tratáveis. **Exames:** história medicamentosa e familiar, exame neurológico completo, avaliação hepática e investigação do metabolismo do cobre conforme protocolo de especialista, com interpretação conjunta dos testes. **Conduta:** referência prioritária para neurologia e hepatologia conforme achados; evitar afirmar exclusão por um único marcador normal. **Por que importa:** um diagnóstico tratável não deve ser perdido por ancoragem em rót",
+    "**Gabarito: B.** Hoehn e Yahr descreve extensão/gravidade motora e funcional; estágio 3 classicamente inclui instabilidade com independência preservada. A, C, D e E avaliam outros problemas. **Mini revisão:** estadiamento motor não substitui avaliação de cognição, hipotensão, sono e qualidade de vida.",
+    "**Gabarito: B.** O PCDT reconhece levodopa associada como opção recomendada para gestação e contraindica amantadina; demais classes têm dados limitados. A e D extrapolam segurança; C expõe a piora importante; E é afirmação falsa e estigmatizante. **Mini revisão:** gestação requer discussão multidisciplinar de benefício/risco, não suspensão automática.",
+    "**Gabarito: C.** Intervalos e horários determinam controle motor. A/B ignoram farmacodinâmica e tolerabilidade; D pode precipitar complicações graves; E antagoniza dopamina. **Mini revisão:** “quatro vezes/dia” não equivale a qualquer grade horária.",
+    "**Gabarito: B.** Apraxia inequívoca e perda sensitiva cortical são achados incomuns para DP típica e integram exclusões/suspeitas alternativas nos critérios MDS. A ignora sinais; C, D e E não explicam o quadro. **Mini revisão:** localização cortical pode ser mais informativa que a presença inespecífica de rigidez.",
+    "**Fontes de suporte:** revisão cruzada com Ministério da Saúde, PCDT Parkinson 2025, sobretudo capítulo de populações especiais, administração e monitorização; NICE NG71 (manejo e acompanhamento); critérios MDS 2015. Este incremento aprofundou informação de segurança, avaliação temporal, populações especiais, algoritmos assistenciais, duas vinhetas clínicas e quatro questões originais. Não corrige automaticamente lacunas de licença de imagens, benchmark ausente, revisão humana especializada e testes de acessibilidade/PWA. Seu conteúdo deverá ser reorganizado na edição final para evitar que cap"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-de-parkinson/view",
+    "https://doi.org/10.1002/mds.26424.",
+    "https://www.nice.org.uk/guidance/ng71/chapter/Recommendations.",
+    "https://doi.org/10.1002/mds.27121.",
+    "https://doi.org/10.1002/mds.30220.",
+    "https://doi.org/10.1212/WNL.0b013e318236f0fd."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Base primária lida:** Ministério da Saúde, PCDT Doença de Parkinson, Portaria Conjunta SAES/SECTICS nº 16, de 1º/08/2025 (portal revisado em 18/09/2025), incluindo definição, critérios diagnósticos, terapias e tabelas de posologia; NICE NG71, recomendações de diagnóstico, tratamento e seguimento; Postuma e colaboradores, critérios MDS 2015; Bhatia e colaboradores, consenso MDS de tremores 2018; Albanese e colaboradores, consenso MDS de distonia 2025; AAN, tratamento do tremor essencial 2011. Os links públicos aparecem ao final. Recomendações sobre distúrbios do movimento não cobertos pelo PCDT devem ser distinguidas de políticas assistencia"
+    },
+    {
+      "text": "**Bradicinesia:** é o núcleo diagnóstico. Micrografia progressiva durante uma linha escrita, redução de expressão facial, diminuição do piscar espontâneo, hipofonia e lentidão ao abotoar roupas podem antecipar queixas explícitas. Uma pessoa pode parecer “deprimida” ou “fraca” quando na verdade existe síndrome hipocinética."
+    },
+    {
+      "text": "| Hipótese | Pista clínica | Armadilha e conduta | |---|---|---| | **DP idiopática** | Início assimétrico, bradicinesia com decremento, rigidez ou tremor de repouso, resposta dopaminérgica consistente | Tremor pode faltar; não exigir tremor e rigidez simultaneamente | | **Parkinsonismo induzido por fármacos** | Relação temporal com bloqueadores D2 ou depletores de dopamina; frequentemente relativamente simétrico | Pode desmascarar DP subjacente; nunca suspender antipsicótico essencial sem coordenação | | **Paralisia supranuclear progressiva (PSP)** | Quedas precoces, lentificação sacádica vertical, limitação do olhar vertical, rigidez axial, "
+    },
+    {
+      "text": "**Diagnóstico da DP é essencialmente clínico.** Não existe hemograma, dosagem sérica de dopamina ou EEG que confirme Parkinson. Neuroimagem estrutural (RM preferencial conforme cenário) ajuda quando há atipias, curso rápido, sinais focais, suspeita vascular, lesão expansiva, hidrocefalia ou parkinsonismo de início incomum."
+    },
+    {
+      "text": "O tratamento sintomático visa mobilidade, independência, segurança, sono, deglutição e qualidade de vida. A escolha deve considerar idade, cognição, sono, comorbidades, risco de quedas, ocupação, custo e acesso no Brasil, preferência do paciente, efeitos adversos e carga de tomadas diárias. Não há benefício demonstrado em negar levodopa a um paciente funcionalmente limitado por receio genérico de “gastar a medicação”. Segundo NICE NG71, quando sintomas motores prejudicam qualidade de vida, **oferecer levodopa** é estratégia recomendada. O PCDT brasileiro de 2025 a inclui entre as opções principais, sobretudo em idade avançada e comprometiment"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

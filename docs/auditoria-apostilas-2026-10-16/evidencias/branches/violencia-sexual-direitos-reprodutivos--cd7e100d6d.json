@@ -1,0 +1,132 @@
+{
+  "sha": "cd7e100d6d11792eb033b877c9fb5b1995e3d571",
+  "path": "apostilas/violencia-sexual-direitos-reprodutivos/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "violencia-sexual-direitos-reprodutivos--cd7e100d6d",
+  "title": "LURIA — Apostila 249: Violência sexual e direitos reprodutivos na assistência à saúde",
+  "format": ".md",
+  "chars_estimated": 21026,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 249: Violência sexual e direitos reprodutivos na assistência à saúde"
+    },
+    {
+      "title": "1. Introdução: urgência clínica, proteção e direitos"
+    },
+    {
+      "title": "2. Fundamentos da escuta qualificada"
+    },
+    {
+      "title": "3. Atendimento clínico inicial: prioridades"
+    },
+    {
+      "title": "3.1 Segurança e estabilização"
+    },
+    {
+      "title": "3.2 História, exame e coleta"
+    },
+    {
+      "title": "4. Profilaxia HIV: PEP como urgência de tempo"
+    },
+    {
+      "title": "5. Hepatite B, outras IST e HPV"
+    },
+    {
+      "title": "6. Contracepção de emergência"
+    },
+    {
+      "title": "7. Direitos reprodutivos e interrupção gestacional prevista em lei no Brasil"
+    },
+    {
+      "title": "8. Notificação compulsória, sigilo e comunicação: distinções essenciais"
+    },
+    {
+      "title": "9. Populações e situações especiais"
+    },
+    {
+      "title": "10. Saúde mental e seguimento longitudinal"
+    },
+    {
+      "title": "11. Fluxograma do atendimento"
+    },
+    {
+      "title": "12. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Atendimento precoce sem BO"
+    },
+    {
+      "title": "Caso 2 — Chegada no quarto dia"
+    },
+    {
+      "title": "Caso 3 — Adolescente em risco continuado"
+    },
+    {
+      "title": "Caso 4 — Gravidez após violência"
+    },
+    {
+      "title": "13. Seis questões autorais comentadas"
+    },
+    {
+      "title": "14. Plano visual editorial, sem incorporar fotografias traumáticas"
+    },
+    {
+      "title": "15. Referências verificadas"
+    },
+    {
+      "title": "16. Auditoria provisória e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Violência sexual — Saúde da Mulher**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+    "2. Ministério da Saúde. **PEP — Profilaxia Pós-Exposição ao HIV**. https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada/pep-profilaxia-pos-exposicao-ao-hiv/pep",
+    "3. Ministério da Saúde. **Profilaxia Pós-Exposição**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+    "4. Ministério da Saúde. **Interrupção gestacional prevista em lei**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/interrupcao-gestacional-prevista-em-lei",
+    "5. Ministério da Saúde. **VIVA/SINAN — Vigilância contínua**. https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan",
+    "6. Ministério da Saúde. **Guia prático de cuidado à mulher em situação de violência (2025)**. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/guia-pratico-de-cuidado-a-mulher-em-situacao-de-violencia.pdf/@@download/file",
+    "7. Ministério da Saúde. **DIU de cobre**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/contracepcao/diu-de-cobre",
+    "**Conteúdo inicial entregue:** acolhimento, consentimento, tratamento inicial, PEP, HBV/IST, contracepção, legislação no Brasil, notificação 24h, grupos vulneráveis, seguimento, 4 casos, 6 questões e 12 recursos visuais.",
+    "**Obrigatório antes de publicação:** auditoria normativa por jurista/serviço especializado e revisão médica; detalhes da Lei nº 12.845/2013 e proteção da criança, tabela operacional de medicamentos PCDT 2025/2026 com dosagens específicas por idade/gestação, esquema de testagem por janela, critérios de uso de imunoglobulina HBV, preparo da equipe de escuta/coleta, fluxos locais de referência, exemplos de documentação e controle de acesso LGPD, mais conteúdo clínico útil até meta premium. **NÃO APROVAR, NÃO PUBLICAR.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+    "https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada/pep-profilaxia-pos-exposicao-ao-hiv/pep",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/interrupcao-gestacional-prevista-em-lei",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/guia-pratico-de-cuidado-a-mulher-em-situacao-de-violencia.pdf/@@download/file",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/contracepcao/diu-de-cobre"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Checar vacinação e imunidade para hepatite B; oferecer **vacina** e, quando indicada, **imunoglobulina anti-hepatite B**, seguindo condições de exposição, estado da fonte e recomendações brasileiras. A PEP imunológica não segue necessariamente a mesma janela temporal do HIV. O site do Ministério da Saúde orienta avaliação ideal nas primeiras 24 horas, podendo alcançar até 14 dias para imunoprofilaxia após exposição sexual em situações específicas. Não usar esse prazo como motivo para esperar."
+    },
+    {
+      "text": "O Ministério da Saúde prevê oferta de **vacinação contra HPV para pessoas de 9 a 45 anos** vítimas de violência sexual que ainda não estejam vacinadas, com indicação e calendário conforme programa e idade. Educação, prevenção de novas exposições, rastreamento de câncer cervical quando indicado e seguimento na APS devem acompanhar cuidados imediatos."
+    },
+    {
+      "text": "A decisão sobre DIU deve considerar risco de IST, trauma, consentimento, disponibilidade de equipe, contraindicações e contexto individual; não impor procedimento invasivo à sobrevivente. O uso de contracepção de emergência **não constitui aborto**, atua antes do estabelecimento de gestação. A oportunidade de contracepção regular depois é tema de decisão compartilhada, não exigência para receber atendimento."
+    },
+    {
+      "text": "Se já existe gestação decorrente do episódio, orientar acesso a diagnóstico, pré-natal ou serviço de interrupção gestacional prevista em lei, conforme escolha e hipóteses legais. Teste de gravidez inicial negativo não exclui gestação resultante de exposição recente; programar teste posterior na janela adequada."
+    },
+    {
+      "text": "**Pessoas com deficiência:** oferecer recursos de comunicação, acessibilidade e apoios à decisão; nunca presumir incapacidade apenas pelo diagnóstico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

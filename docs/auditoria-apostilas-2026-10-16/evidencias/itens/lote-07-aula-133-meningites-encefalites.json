@@ -1,0 +1,642 @@
+{
+  "key": "lote-07-aula-133-meningites-encefalites",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-133-meningites-encefalites.md",
+  "title": "LURIA — Lote 7 · Aula 133",
+  "source_sha256": "10dacd5dd14dab116f35c0a511c459381adade91555e9571f26b0019484bf2c1",
+  "chars_estimated": 77807,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 133",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Meningites e encefalites na infância: uma emergência sindrômica",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "0. Inventário e comparação efetiva",
+      "level": 2
+    },
+    {
+      "line": 11,
+      "title": "1. O que separa meningite, encefalite e sepse?",
+      "level": 2
+    },
+    {
+      "line": 16,
+      "title": "2. Anatomia e fisiopatologia",
+      "level": 2
+    },
+    {
+      "line": 21,
+      "title": "3. Etiologia por idade e imunidade",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "4. Apresentações clínicas e sinais de gravidade",
+      "level": 2
+    },
+    {
+      "line": 38,
+      "title": "5. O passo a passo da primeira hora",
+      "level": 2
+    },
+    {
+      "line": 49,
+      "title": "6. Punção lombar: quando e como interpretar",
+      "level": 2
+    },
+    {
+      "line": 51,
+      "title": "6.1. Antes de punção, responder",
+      "level": 3
+    },
+    {
+      "line": 54,
+      "title": "6.2. LCR básico e interpretação",
+      "level": 3
+    },
+    {
+      "line": 67,
+      "title": "6.3. Resultado microbiológico",
+      "level": 3
+    },
+    {
+      "line": 70,
+      "title": "7. Tratamento farmacológico — princípios seguros",
+      "level": 2
+    },
+    {
+      "line": 84,
+      "title": "8. Condutas de vigilância e quimioprofilaxia",
+      "level": 2
+    },
+    {
+      "line": 87,
+      "title": "9. Complicações e prognóstico",
+      "level": 2
+    },
+    {
+      "line": 92,
+      "title": "10. Diferenciais que podem simular meningite",
+      "level": 2
+    },
+    {
+      "line": 102,
+      "title": "11. Algoritmos",
+      "level": 2
+    },
+    {
+      "line": 108,
+      "title": "12. Quatro casos comentados",
+      "level": 2
+    },
+    {
+      "line": 110,
+      "title": "Caso 1 — lactente sem rigidez de nuca",
+      "level": 3
+    },
+    {
+      "line": 118,
+      "title": "Caso 2 — adolescente com púrpura",
+      "level": 3
+    },
+    {
+      "line": 126,
+      "title": "Caso 3 — encefalite temporal",
+      "level": 3
+    },
+    {
+      "line": 134,
+      "title": "Caso 4 — meningite tuberculosa subaguda",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "13. Seis questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 144,
+      "title": "Questão 1 — decisão temporal",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "Questão 2 — LCR",
+      "level": 3
+    },
+    {
+      "line": 154,
+      "title": "Questão 3 — neonato",
+      "level": 3
+    },
+    {
+      "line": 159,
+      "title": "Questão 4 — encefalite",
+      "level": 3
+    },
+    {
+      "line": 164,
+      "title": "Questão 5 — contatos",
+      "level": 3
+    },
+    {
+      "line": 169,
+      "title": "Questão 6 — PCR HSV negativo precoce",
+      "level": 3
+    },
+    {
+      "line": 174,
+      "title": "14. Pérolas e pontos de prova",
+      "level": 2
+    },
+    {
+      "line": 185,
+      "title": "15. Plano visual — sem imagem clínica obtida",
+      "level": 2
+    },
+    {
+      "line": 189,
+      "title": "16. Referências",
+      "level": 2
+    },
+    {
+      "line": 197,
+      "title": "17. Checklist pendente",
+      "level": 2
+    },
+    {
+      "line": 210,
+      "title": "CAMADA DE APROFUNDAMENTO LURIA — RACIOCÍNIO E TESTES DE MENINGITE",
+      "level": 1
+    },
+    {
+      "line": 213,
+      "title": "18. Da anatomia meníngea à doença invasiva: por que o caso piora tão rápido?",
+      "level": 2
+    },
+    {
+      "line": 215,
+      "title": "18.1. O SNC possui compartimentos com respostas diferentes",
+      "level": 3
+    },
+    {
+      "line": 220,
+      "title": "18.2. A cápsula bacteriana é relevante em duas disciplinas",
+      "level": 3
+    },
+    {
+      "line": 225,
+      "title": "18.3. O edema cerebral não é uma coisa só",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "18.4. Citocinas, inflamação e corticoide",
+      "level": 3
+    },
+    {
+      "line": 238,
+      "title": "19. Reconhecimento clínico baseado em faixa etária e fenótipo de invasividade",
+      "level": 2
+    },
+    {
+      "line": 240,
+      "title": "19.1. O valor limitado da tríade",
+      "level": 3
+    },
+    {
+      "line": 245,
+      "title": "19.2. A definição brasileira de caso suspeito tem finalidade de vigilância",
+      "level": 3
+    },
+    {
+      "line": 250,
+      "title": "19.3. Neonato e lactente jovem",
+      "level": 3
+    },
+    {
+      "line": 255,
+      "title": "19.4. Criança maior e adolescente",
+      "level": 3
+    },
+    {
+      "line": 260,
+      "title": "19.5. Pontos do exame físico que efetivamente mudam decisão",
+      "level": 3
+    },
+    {
+      "line": 271,
+      "title": "20. Punção lombar: um procedimento que responde perguntas, mas não antecede a vida",
+      "level": 2
+    },
+    {
+      "line": 273,
+      "title": "20.1. As decisões devem acontecer em paralelo",
+      "level": 3
+    },
+    {
+      "line": 280,
+      "title": "20.2. Quando pensar em imagem antes da LP?",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "20.3. Escolher os tubos de LCR com propósito",
+      "level": 3
+    },
+    {
+      "line": 290,
+      "title": "20.4. Por que o LCR muda conforme tempo?",
+      "level": 3
+    },
+    {
+      "line": 305,
+      "title": "20.5. Interpretar um laudo numérico sem decorar só corte",
+      "level": 3
+    },
+    {
+      "line": 310,
+      "title": "20.6. Cultura, PCR e teste negativo",
+      "level": 3
+    },
+    {
+      "line": 315,
+      "title": "20.7. LCR neonatal — evitar extrapolação",
+      "level": 3
+    },
+    {
+      "line": 318,
+      "title": "21. Antimicrobianos: matriz de raciocínio, sem falsa “receita pediátrica universal”",
+      "level": 2
+    },
+    {
+      "line": 320,
+      "title": "21.1. Por que a primeira hora importa mais que o nome completo do microrganismo?",
+      "level": 3
+    },
+    {
+      "line": 323,
+      "title": "21.2. Escolha empírica por situação",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "21.3. Por que o antibiótico precisa penetrar no LCR?",
+      "level": 3
+    },
+    {
+      "line": 339,
+      "title": "21.4. Após identificação do patógeno",
+      "level": 3
+    },
+    {
+      "line": 350,
+      "title": "21.5. Dexametasona: quando considerar e quando reavaliar",
+      "level": 3
+    },
+    {
+      "line": 353,
+      "title": "21.6. Alergia: qual reação e qual risco?",
+      "level": 3
+    },
+    {
+      "line": 356,
+      "title": "21.7. Resposta insuficiente: voltar ao diagnóstico e à fonte",
+      "level": 3
+    },
+    {
+      "line": 359,
+      "title": "22. Encefalites — reconhecer quando a pergunta clínica mudou",
+      "level": 2
+    },
+    {
+      "line": 361,
+      "title": "22.1. A diferença sindrômica",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "22.2. HSV: por que tratar antes da PCR",
+      "level": 3
+    },
+    {
+      "line": 371,
+      "title": "22.3. RM e EEG de encefalite",
+      "level": 3
+    },
+    {
+      "line": 376,
+      "title": "22.4. Enterovírus: quando a evolução costuma ser benigna",
+      "level": 3
+    },
+    {
+      "line": 379,
+      "title": "22.5. Arboviroses no Brasil",
+      "level": 3
+    },
+    {
+      "line": 382,
+      "title": "22.6. ADEM e encefalite autoimune",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "22.7. Meningite tuberculosa e criptococose — por que não cabem no pacote bacteriano comum",
+      "level": 3
+    },
+    {
+      "line": 392,
+      "title": "23. Complicações: agir para prevenir sequela e não apenas reduzir febre",
+      "level": 2
+    },
+    {
+      "line": 394,
+      "title": "23.1. Complicações neurológicas imediatas",
+      "level": 3
+    },
+    {
+      "line": 404,
+      "title": "23.2. Perda auditiva: a sequela invisível",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "23.3. Seguimento do neurodesenvolvimento",
+      "level": 3
+    },
+    {
+      "line": 414,
+      "title": "23.4. Cuidadores e escola",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "24. Contrastes clínicos: quatro cenários para treinar decisão",
+      "level": 2
+    },
+    {
+      "line": 427,
+      "title": "25. Vigilância brasileira: como não errar quimioprofilaxia meningocócica e Hib",
+      "level": 2
+    },
+    {
+      "line": 429,
+      "title": "25.1. O texto normativo que precisa ser citado com data",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "25.2. Como identificar um contato próximo segundo MS 154/2024?",
+      "level": 3
+    },
+    {
+      "line": 446,
+      "title": "25.3. Profilaxia meningocócica — esquema da NOTA TÉCNICA 154/2024",
+      "level": 3
+    },
+    {
+      "line": 464,
+      "title": "25.4. Hib não segue os mesmos critérios de meningococo",
+      "level": 3
+    },
+    {
+      "line": 481,
+      "title": "25.5. Vigilância de surto e escola",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "25.6. Prevenção primária não substitui profilaxia de exposição",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "26. Tabelas de decisão em exames, sem depender de um único número",
+      "level": 2
+    },
+    {
+      "line": 493,
+      "title": "26.1. A matriz que conecta clínica → LCR → etiologia provável → risco",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "26.2. Quando o Gram e a cultura não concordam",
+      "level": 3
+    },
+    {
+      "line": 509,
+      "title": "26.3. Recuperação clínica versus normalização laboratorial",
+      "level": 3
+    },
+    {
+      "line": 512,
+      "title": "27. Casos clínicos adicionais — decisões que mais geram erro",
+      "level": 2
+    },
+    {
+      "line": 514,
+      "title": "Caso 5 — meningococcemia sem meningismo",
+      "level": 3
+    },
+    {
+      "line": 522,
+      "title": "Caso 6 — alteração do LCR após antibiótico",
+      "level": 3
+    },
+    {
+      "line": 530,
+      "title": "Caso 7 — contato meningocócico gestante",
+      "level": 3
+    },
+    {
+      "line": 538,
+      "title": "Caso 8 — encefalite com PCR HSV inicial negativo",
+      "level": 3
+    },
+    {
+      "line": 546,
+      "title": "Caso 9 — meningite pneumocócica e perda auditiva",
+      "level": 3
+    },
+    {
+      "line": 554,
+      "title": "28. Oito questões adicionais com justificativa de cada alternativa",
+      "level": 2
+    },
+    {
+      "line": 556,
+      "title": "Questão 7 — interpretação da nota MS",
+      "level": 3
+    },
+    {
+      "line": 564,
+      "title": "Questão 8 — quimioprofilaxia meningocócica",
+      "level": 3
+    },
+    {
+      "line": 572,
+      "title": "Questão 9 — gestação em contato de meningococo",
+      "level": 3
+    },
+    {
+      "line": 580,
+      "title": "Questão 10 — meningite sem agente",
+      "level": 3
+    },
+    {
+      "line": 588,
+      "title": "Questão 11 — LP no paciente instável",
+      "level": 3
+    },
+    {
+      "line": 596,
+      "title": "Questão 12 — LCR atípico",
+      "level": 3
+    },
+    {
+      "line": 604,
+      "title": "Questão 13 — encefalite HSV",
+      "level": 3
+    },
+    {
+      "line": 612,
+      "title": "Questão 14 — seguimento",
+      "level": 3
+    },
+    {
+      "line": 620,
+      "title": "29. Matriz de cobertura do conteúdo ampliado",
+      "level": 2
+    },
+    {
+      "line": 635,
+      "title": "30. Fontes adicionadas e divergências declaradas",
+      "level": 2
+    },
+    {
+      "line": 647,
+      "title": "31. Checklist pós-ampliação",
+      "level": 2
+    }
+  ],
+  "references": [
+    "- WHO. *Guidelines on meningitis diagnosis, treatment and care*. 2025. https://www.who.int/publications/i/item/9789240108042",
+    "- WHO. *Practical manual on meningitis diagnosis, treatment and care*. 26/05/2026. https://www.who.int/publications/i/item/9789240121027",
+    "- NICE NG240. *Meningitis (bacterial) and meningococcal disease*. 2024. https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+    "- Ministério da Saúde. *Guia de Vigilância em Saúde*, 6ª ed., seção de meningites. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/guia-de-vigilancia-em-saude-6o-edicao",
+    "- Ministério da Saúde. *Notas técnicas — Meningite*, revisões 2024–2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "- IDSA. *Management of Encephalitis*, 2008 (base histórica de diagnóstico HSV; revisão de atualização pendente). https://academic.oup.com/cid/article/47/3/303/313455"
+  ],
+  "external_links": [
+    {
+      "url": "https://www.who.int/publications/i/item/9789240108042",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240121027",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/guia-de-vigilancia-em-saude-6o-edicao",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://academic.oup.com/cid/article/47/3/303/313455",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614844/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas/nota-tecnica-conjunta-no-154-2024-dpni-svsa-ms",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/situacao-epidemiologica/situacao-epidemiologica",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng195/chapter/Meningitis-babies-with-early-onset-or-late-onset-infection-in-neonatal-units",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 7,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "OMS 2025 admite vancomicina em regiões de maior prevalência de resistência de pneumococo, sem declarar um esquema idêntico a toda população. A NICE 2024 especifica ceftriaxona de referência e amoxicilina adicionais para Listeria por fatores de risco, incluindo idades mais altas, gestação/imunossupressão; **a extrapolação de risco >60 anos obviamente não descreve o paciente pediátrico usual**. O objetivo da tabela é decisão fisiopatológica e microbiológica, não substituir dosagem por peso/idade.",
+      "pattern": 0
+    },
+    {
+      "text": "**Cenário B:** 15 anos, dor muscular intensa, taquicardia, extremidades frias e petequias evolutivas, sem cefaleia. → **Doença meningocócica invasiva e choque**; ressuscitar e tratar antes de LP, notificar e avaliar contatos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Cenário C:** 12 anos, comportamento alterado, febre, convulsão focal, RM temporal/EEG alterado. → **Encefalite HSV possível**, aciclovir empiricamente indicado junto à investigação; PCR inicial negativo não dispensa reavaliação.",
+      "pattern": 0
+    },
+    {
+      "text": "**Ponto-chave:** a punção pode ser diagnóstica, mas **tratamento é tempo-dependente** e deve iniciar quando a punção atrasará ou for temporariamente contraindicada.",
+      "pattern": 1
+    },
+    {
+      "text": "**Não diagnosticar meningite apenas por “proteína elevada”,** particularmente em neonato com valores de referência próprios. A contaminação sanguínea de punção traumática interfere em hemácias e contagens, mas não autoriza excluir meningite em paciente de alto risco por correção simplista. Contagens devem ser avaliadas com laboratório e especialista.",
+      "pattern": 1
+    },
+    {
+      "text": "**Dexametasona:** NICE NG240 (2024) recomenda considerar/dar dexametasona IV em pessoas acima de 3 meses com forte suspeita ou confirmação de meningite bacteriana, preferencialmente antes/junto ao primeiro antibiótico; em lactentes de 28 dias a 3 meses, buscar orientação especializada. Seguir agente, idade e diretrizes nacionais. Se o antibiótico já é necessário, **não o atrasar pela dexametasona**. Para meningococcemia sem meningite, corticoide de rotina não é a recomendação NICE, salvo outras indicações hemodinâmicas.",
+      "pattern": 1
+    },
+    {
+      "text": "No Google Drive a pesquisa por meningite/encefalite não localizou tratado completo. Foram **abertos e lidos** “02 - TUBERCULOSE EXTRA PULMONAR.pdf” (~3,9 mil caracteres), com quadro de meningite tuberculosa subaguda, vasculite basal, sinais de pares cranianos e hidrocefalia, e “05 - NEUROSSIFILIS.pdf” (~3,5 mil caracteres), descrevendo acometimento neurológico por sífilis. São **benchmarks parciais**, não equivalem a meningite bacteriana/encefalite pediátrica e não comprovam autoria Estratégia MED. Não copiar imagens nem porcentagens sem verificação. A diretriz OMS de 2026 e o MS, separadamente identificados, orientam a construção original.",
+      "pattern": 2
+    },
+    {
+      "text": "**A vacina muda risco, não o elimina.** Mesmo criança com calendário em dia pode ter doença invasiva por sorotipos não cobertos ou agentes diferentes. A aula 135 descreve PNI; não criar tabela etiológica que trate PNI 2020 como política de 2026.",
+      "pattern": 2
+    },
+    {
+      "text": "**Dexametasona:** NICE NG240 (2024) recomenda considerar/dar dexametasona IV em pessoas acima de 3 meses com forte suspeita ou confirmação de meningite bacteriana, preferencialmente antes/junto ao primeiro antibiótico; em lactentes de 28 dias a 3 meses, buscar orientação especializada. Seguir agente, idade e diretrizes nacionais. Se o antibiótico já é necessário, **não o atrasar pela dexametasona**. Para meningococcemia sem meningite, corticoide de rotina não é a recomendação NICE, salvo outras indicações hemodinâmicas.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "No Google Drive a pesquisa por meningite/encefalite não localizou tratado completo. Foram **abertos e lidos** “02 - TUBERCULOSE EXTRA PULMONAR.pdf” (~3,9 mil caracteres), com quadro de meningite tuberculosa subaguda, vasculite basal, sinais de pares cranianos e hidrocefalia, e “05 - NEUROSSIFILIS.pdf” (~3,5 mil caracteres), descrevendo acometimento neurológico por sífilis. São **benchmarks parciais**, não equivalem a meningite bacteriana/encefalite pediátrica e não comprovam autoria Estratégia MED. Não copiar imagens nem porcentagens sem verificação. A diretriz OMS de 2026 e o MS, separadamente identificados, orientam a construção original."
+    },
+    {
+      "text": "Meningite bacteriana aguda é **emergência tempo-dependente**: reconhecer risco vital e iniciar antibiótico após culturas viáveis se estas não atrasarem tratamento. Encefalite herpética é outra emergência tratável em que **aciclovir IV empírico precoce** pode ser crucial. Uma criança não precisa apresentar todos os sinais clássicos para ter doença grave."
+    }
+  ]
+}

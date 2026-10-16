@@ -1,0 +1,147 @@
+{
+  "sha": "7c03348c6fa21766c8f42ffa094c893afea08e3a",
+  "path": "apostilas/atencao-primaria-saude-atributos/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "atencao-primaria-saude-atributos--7c03348c6f",
+  "title": "Atenção Primária à Saúde e seus Atributos",
+  "format": ".json",
+  "chars_estimated": 85888,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Atenção Primária à Saúde: primeiro contato, vínculo e responsabilidade territorial"
+    },
+    {
+      "id": "marcos",
+      "title": "1. Origens, modelos e a posição da APS no SUS"
+    },
+    {
+      "id": "starfield",
+      "title": "2. Mapa conceitual: quatro atributos essenciais e três derivados"
+    },
+    {
+      "id": "primeiro",
+      "title": "3. Primeiro contato: acesso, acessibilidade e utilização"
+    },
+    {
+      "id": "longitudinal",
+      "title": "4. Longitudinalidade: fonte regular de cuidado, confiança e tempo"
+    },
+    {
+      "id": "integral",
+      "title": "5. Integralidade: escopo amplo sem perder critérios clínicos"
+    },
+    {
+      "id": "coordenacao",
+      "title": "6. Coordenação do cuidado: referência, contrarreferência e comunicação"
+    },
+    {
+      "id": "derivados",
+      "title": "7. Orientação familiar, comunitária e competência cultural"
+    },
+    {
+      "id": "territorio",
+      "title": "8. Territorialização, adscrição, cadastro e diagnóstico situacional"
+    },
+    {
+      "id": "esf",
+      "title": "9. Estratégia Saúde da Família, equipes e trabalho interprofissional"
+    },
+    {
+      "id": "acolhimento",
+      "title": "10. Acolhimento, classificação de risco e acesso à demanda aguda"
+    },
+    {
+      "id": "clinica",
+      "title": "11. Clínica centrada na pessoa, multimorbidade e prevenção quaternária"
+    },
+    {
+      "id": "vigilancia",
+      "title": "12. Vigilância em saúde, linhas de cuidado e ações intersetoriais"
+    },
+    {
+      "id": "ras",
+      "title": "13. Redes de Atenção, referência, regulação e continuidade pós-alta"
+    },
+    {
+      "id": "equidade",
+      "title": "14. Equidade, populações vulnerabilizadas e cuidado sem discriminação"
+    },
+    {
+      "id": "qualidade",
+      "title": "15. Avaliação da APS: PCATool, indicadores e melhoria contínua"
+    },
+    {
+      "id": "casos",
+      "title": "16. Seis casos clínicos integradores de APS"
+    },
+    {
+      "id": "questoes",
+      "title": "17. Questões autorais com alternativas comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "18. Referências primárias e controle de qualidade editorial"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"18. Referências primárias e controle de qualidade editorial\"]",
+    "[\"p\",\"<strong>Brasil, Ministério da Saúde.</strong> Política Nacional de Atenção Básica (PNAB), Portaria nº 2.436, de 21 de setembro de 2017: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html . Utilizar versão consolidada e normativos posteriores onde houver alteração.\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> PCATool-Brasil 2020: Manual do Instrumento de Avaliação da Atenção Primária à Saúde: https://bvsms.saude.gov.br/bvs/publicacoes/instrumento_avaliacao_atencao_primaria_saude.pdf . As versões possuem componentes e validação próprios; documentos gráficos não foram reproduzidos.\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Carteira de Serviços da Atenção Primária à Saúde (CaSAPS), versão profissionais e gestores: https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/cartazes-e-cartilhas/casaps_versao_profissionais_saude_gestores_completa.pdf/view .\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Organização de equipes multiprofissionais na APS (eMulti): https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/emulti ; Portaria GM/MS nº 635, de 22 de maio de 2023.\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Portaria GM/MS nº 3.493, de 10 de abril de 2024, cofinanciamento federal da APS: https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3493_11_04_2024.html .\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Nota Técnica nº 8/2026-DEAPS/SAPS/MS, publicada em 2 de outubro de 2026, metodologia quadrimestral de vínculo/qualidade: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view .\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Base Conceitual do e-SUS APS, orientações sobre atributos e registro: https://sisaps.saude.gov.br/sistemas/esusaps/docs/manual/antigo/PEC/PEC_00_base_conceitual/ .\"]",
+    "[\"p\",\"<strong>Oliveira MAC, Pereira IC.</strong> Atributos essenciais da Atenção Primária e a Estratégia Saúde da Família. Rev Bras Enferm. 2013;66(spe):158–164. Obra indexada na Biblioteca Virtual em Saúde do Ministério da Saúde: https://bvsms.saude.gov.br/atencao-primaria-a-saude-4/ .\"]",
+    "[\"p\",\"<strong>Status editorial:</strong> rascunho de ensino autoral e isolado, sujeito à revisão de legislação consolidada e especificidades municipais, validação de autossuficiência, QA de questões e referências, auditoria semântica, revisão de imagens/diagramas e teste de renderer desktop/PWA. Não criar index.html nem incluir catálogo até certificação, conforme normas da LURIA.\"]"
+  ],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/instrumento_avaliacao_atencao_primaria_saude.pdf",
+    "https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/cartazes-e-cartilhas/casaps_versao_profissionais_saude_gestores_completa.pdf/view",
+    "https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/emulti",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3493_11_04_2024.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view",
+    "https://sisaps.saude.gov.br/sistemas/esusaps/docs/manual/antigo/PEC/PEC_00_base_conceitual/",
+    "https://bvsms.saude.gov.br/atencao-primaria-a-saude-4/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "marcos",
+      "text": "Modelos fragmentados, centrados em procedimentos e serviços especializados, tendem a acompanhar doenças de forma descontínua: o mesmo paciente repete história em diversos pontos, realiza exames duplicados e recebe recomendações conflitantes. A APS propõe uma fonte regular de atenção que identifica problemas novos, acompanha condições crônicas e coordena a contribuição de outros serviços. Isso não implica suprimir a atenção especializada, e sim integrá-la à história e às preferências de quem recebe cuidados."
+    },
+    {
+      "section": "marcos",
+      "text": "O art. 2º da PNAB de 2017 abrange ações individuais, familiares e coletivas de promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância. Sua definição impede duas simplificações: APS não é exclusivamente prevenção, e cuidado paliativo não pertence apenas ao hospital. O trabalho ocorre por equipe multiprofissional para população sob responsabilidade sanitária em território definido, com avaliação contínua de necessidades."
+    },
+    {
+      "section": "marcos",
+      "text": "O profissional de APS reconhece doenças e usa evidência para tratá-las, mas a decisão sobre aquela doença ocorre dentro da experiência de uma pessoa e da situação de uma população. Um caso de tuberculose envolve diagnóstico e tratamento clínico, vínculo com pessoa que enfrentará meses de terapia e vigilância de contatos no território. Esses três níveis não competem. A organização orientada apenas por especialidades tende a separar assuntos; a APS combina a atenção à pessoa e ao coletivo."
+    },
+    {
+      "section": "marcos",
+      "text": "A participação social formal do SUS também não deve ser automaticamente renomeada como orientação comunitária. Conselhos e conferências possuem disciplina legal própria. Orientação comunitária é atributo assistencial que pode ocorrer por escuta, diagnóstico territorial e planejamento conjunto. A presença de conselho local fortalece participação, mas não comprova por si só que a equipe reconhece necessidades epidemiológicas da população."
+    },
+    {
+      "section": "starfield",
+      "text": "Orientação familiar considera relações, estrutura, recursos e riscos familiares como elementos relevantes da saúde. Orientação comunitária parte de diagnóstico territorial e participação da população na definição de prioridades. Competência cultural demanda comunicação e serviços adequados às formas de viver, crenças, línguas e experiências, sem estereotipar pessoas. Em algumas versões brasileiras do PCATool, a competência cultural não integrou os escores validados; isso é uma particularidade de mensuração, não negação do atributo conceitual."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

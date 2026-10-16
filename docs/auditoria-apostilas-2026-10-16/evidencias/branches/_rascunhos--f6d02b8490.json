@@ -1,0 +1,429 @@
+{
+  "sha": "f6d02b84909dba5e910b579cd5888d79b0d74e35",
+  "path": "apostilas/_rascunhos/lote-06-130-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f6d02b8490",
+  "title": "Níveis de Prevenção e História Natural da Doença",
+  "format": ".html",
+  "chars_estimated": 88305,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Apresentação e orientações"
+    },
+    {
+      "title": "1. Por que os níveis de prevenção importam no consultório e na prova"
+    },
+    {
+      "title": "1.1 O erro estrutural: nível de prevenção versus nível de atenção"
+    },
+    {
+      "title": "2. História natural da doença: o modelo Leavell & Clark como mapa temporal"
+    },
+    {
+      "title": "2.1 Linha do tempo sem ambiguidade"
+    },
+    {
+      "title": "2.2 Pré-patogênico não significa ausência de risco"
+    },
+    {
+      "title": "2.3 Patogênico subclínico não é sinônimo de contágio"
+    },
+    {
+      "title": "2.4 Horizontes e desfechos"
+    },
+    {
+      "title": "3. Tríade agente–hospedeiro–ambiente e determinação social"
+    },
+    {
+      "title": "3.1 Exemplo: tuberculose"
+    },
+    {
+      "title": "3.2 Exemplo: lesão por pressão"
+    },
+    {
+      "title": "3.3 Por que agente nem sempre é uma entidade única"
+    },
+    {
+      "title": "4. Prevenção primordial: impedir que os fatores de risco se consolidem"
+    },
+    {
+      "title": "4.1 Diferenciar primordial e primária na mesma cidade"
+    },
+    {
+      "title": "4.2 Ambiente alimentar e determinantes"
+    },
+    {
+      "title": "5. Prevenção primária clássica: promoção da saúde e proteção específica"
+    },
+    {
+      "title": "5.1 Promoção da saúde é mais ampla que aconselhamento comportamental"
+    },
+    {
+      "title": "5.2 Proteção específica: exemplos com mecanismos"
+    },
+    {
+      "title": "5.3 Prevenção primária não é só individual"
+    },
+    {
+      "title": "6. Prevenção secundária: detectar doença existente antes do dano maior"
+    },
+    {
+      "title": "6.1 Detecção não garante benefício"
+    },
+    {
+      "title": "6.2 Exames em pessoas sem sintomas: classificar a pergunta"
+    },
+    {
+      "title": "6.3 Início de sintomas também cabe no diagnóstico oportuno"
+    },
+    {
+      "title": "7. Prevenção terciária: reduzir incapacidade e restaurar funcionalidade"
+    },
+    {
+      "title": "7.1 Limitação da incapacidade versus reabilitação"
+    },
+    {
+      "title": "7.2 Cronicidade e múltiplos níveis no mesmo paciente"
+    },
+    {
+      "title": "7.3 Cuidado paliativo e terciária: relação sem simplismo"
+    },
+    {
+      "title": "8. Prevenção quaternária: evitar que a assistência se torne novo fator de risco"
+    },
+    {
+      "title": "8.1 Sobrediagnóstico, excesso de diagnóstico e diagnóstico errado"
+    },
+    {
+      "title": "9. A pergunta correta para classificar intervenções ambíguas"
+    },
+    {
+      "title": "9.1 Dez armadilhas resolvidas em tabela"
+    },
+    {
+      "title": "10. Promoção da saúde no SUS: PNPS, Ottawa, PNAB e território"
+    },
+    {
+      "title": "10.1 A educação em saúde não pode culpar a vítima"
+    },
+    {
+      "title": "10.2 Participação social e equidade"
+    },
+    {
+      "title": "11. Prevenção em doenças infecciosas: do contato à sequela"
+    },
+    {
+      "title": "11.1 Três tempos no mesmo agente"
+    },
+    {
+      "title": "11.2 Hepatites e vacinação"
+    },
+    {
+      "title": "11.3 Tuberculose: infecção versus doença"
+    },
+    {
+      "title": "11.4 Profilaxia pós-exposição"
+    },
+    {
+      "title": "12. Doenças crônicas: diabetes, hipertensão, obesidade e doença cardiovascular"
+    },
+    {
+      "title": "12.1 Diabetes tipo 2 como percurso"
+    },
+    {
+      "title": "12.2 Hipertensão e risco cardiovascular"
+    },
+    {
+      "title": "12.3 Obesidade não se resolve apenas com campanha"
+    },
+    {
+      "title": "12.4 O alvo muda a resposta — tabela"
+    },
+    {
+      "title": "13. Saúde materna, infância e ciclo de vida: a fase muda o alvo"
+    },
+    {
+      "title": "13.1 Antes da concepção"
+    },
+    {
+      "title": "13.2 Profilaxias obstétricas e puerpério"
+    },
+    {
+      "title": "13.3 Neonatologia"
+    },
+    {
+      "title": "13.4 Desenvolvimento infantil e escola"
+    },
+    {
+      "title": "14. Câncer: lesão precursora, diagnóstico, tratamento e vida após câncer"
+    },
+    {
+      "title": "14.1 A longa fase subclínica é oportunidade — mas não em todo tumor"
+    },
+    {
+      "title": "14.2 Tratamento de câncer pode misturar níveis de ação"
+    },
+    {
+      "title": "14.3 Sobreviventes de câncer"
+    },
+    {
+      "title": "15. Saúde mental: promoção, detecção precoce e prevenção do dano"
+    },
+    {
+      "title": "15.1 Redução de danos não cabe num único degrau"
+    },
+    {
+      "title": "15.2 Suicídio e risco agudo: classificação não substitui segurança"
+    },
+    {
+      "title": "16. Saúde do trabalhador: dos riscos do ambiente às sequelas"
+    },
+    {
+      "title": "16.1 Prevenção na fonte de exposição"
+    },
+    {
+      "title": "16.2 Acidente com perfurocortante"
+    },
+    {
+      "title": "16.3 Vigilância e notificação"
+    },
+    {
+      "title": "17. Vacinação, imunidade e prevenção específica em detalhes"
+    },
+    {
+      "title": "17.1 Prevenção da exposição versus prevenção da doença"
+    },
+    {
+      "title": "17.2 O que uma carteira vacinal não mostra automaticamente"
+    },
+    {
+      "title": "17.3 Proteção indireta e equidade"
+    },
+    {
+      "title": "18. Prevenção e promoção na rede de atenção: trabalho em equipe"
+    },
+    {
+      "title": "18.1 A UBS não é uma sala de triagem que só encaminha"
+    },
+    {
+      "title": "18.2 Cuidado especializado também previne"
+    },
+    {
+      "title": "18.3 Referência e contrarreferência"
+    },
+    {
+      "title": "18.4 Promoção coletiva requer indicadores específicos"
+    },
+    {
+      "title": "19. Prevenção de eventos cardiovasculares: duas convenções de “primária/secundária”"
+    },
+    {
+      "title": "19.1 Cuidado ao escrever questões autorais"
+    },
+    {
+      "title": "19.2 O termo profilaxia não determina nível"
+    },
+    {
+      "title": "20. Raciocínio contrafactual e prevenção: o que aconteceria sem intervenção?"
+    },
+    {
+      "title": "20.1 História natural não elimina heterogeneidade"
+    },
+    {
+      "title": "20.2 Benefícios em diferentes horizontes"
+    },
+    {
+      "title": "21. Intervenções universais, seletivas e indicadas: outro eixo de classificação"
+    },
+    {
+      "title": "21.1 Por que a prova mistura os eixos"
+    },
+    {
+      "title": "22. Limitações do modelo de Leavell & Clark no mundo contemporâneo"
+    },
+    {
+      "title": "22.1 Prescrição como prevenção exige evidência"
+    },
+    {
+      "title": "22.2 Não converter política em culpa individual"
+    },
+    {
+      "title": "23. Algoritmo de decisão para questões e atendimento"
+    },
+    {
+      "title": "23.1 Algoritmo visual em texto"
+    },
+    {
+      "title": "24. Quadro-mestre de comparação: dez dimensões que podem ser confundidas"
+    },
+    {
+      "title": "24.1 As cinco perguntas do Pulo do Gato"
+    },
+    {
+      "title": "25. Vigilância em saúde, surtos e desastres: prevenção não é apenas consulta"
+    },
+    {
+      "title": "25.1 Vigilância epidemiológica identifica padrões para agir"
+    },
+    {
+      "title": "25.2 Proteção coletiva após evento climático"
+    },
+    {
+      "title": "25.3 Medidas de prevenção na segurança do paciente"
+    },
+    {
+      "title": "26. Planejamento de ações: evitar tanto o excesso quanto a falta de prevenção"
+    },
+    {
+      "title": "26.1 Equidade e benefício real"
+    },
+    {
+      "title": "26.2 Ação individual, familiar, comunitária e política"
+    },
+    {
+      "title": "26.3 Avaliar oportunidade de intervenção antes, durante e depois"
+    },
+    {
+      "title": "27. Revisão dirigida: como responder questões complexas sem decorar cem exceções"
+    },
+    {
+      "title": "27.1 Cenário integrado de um mesmo paciente"
+    },
+    {
+      "title": "27.2 Três enunciados quase iguais, três respostas distintas"
+    },
+    {
+      "title": "27.3 Mapa de relações com as outras apostilas LURIA"
+    },
+    {
+      "title": "27.4 Dez proposições verdadeiras para memorizar"
+    },
+    {
+      "title": "28. Oito casos clínicos e coletivos comentados"
+    },
+    {
+      "title": "Caso 1 — A mesma hipertensão em três momentos e dois sentidos de prevenção"
+    },
+    {
+      "title": "Caso 2 — PEP depois de acidente: por que continua sendo prevenção primária da infecção"
+    },
+    {
+      "title": "Caso 3 — Rastreamento de câncer não substitui diagnóstico de sintomas"
+    },
+    {
+      "title": "Caso 4 — Criança com perda auditiva e diferentes níveis no mesmo itinerário"
+    },
+    {
+      "title": "Caso 5 — Pós-AVC: prevenção secundária cardiovascular versus reabilitação terciária"
+    },
+    {
+      "title": "Caso 6 — Programa municipal com muitas coletas e pouco seguimento"
+    },
+    {
+      "title": "Caso 7 — Infecção tuberculosa sem doença ativa: a doença-alvo importa"
+    },
+    {
+      "title": "Caso 8 — Quaternária não significa negar diagnóstico de doença grave"
+    },
+    {
+      "title": "29. Doze questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Definição de período pré-patogênico"
+    },
+    {
+      "title": "Questão 2 — Primordial versus primária"
+    },
+    {
+      "title": "Questão 3 — Vacinação no hospital terciário"
+    },
+    {
+      "title": "Questão 4 — Detecção precoce de doença assintomática"
+    },
+    {
+      "title": "Questão 5 — Reabilitação após AVC"
+    },
+    {
+      "title": "Questão 6 — Prevenção quaternária"
+    },
+    {
+      "title": "Questão 7 — PEP após exposição"
+    },
+    {
+      "title": "Questão 8 — Tuberculose: infecção latente e doença ativa"
+    },
+    {
+      "title": "Questão 9 — Níveis de atenção versus níveis de prevenção"
+    },
+    {
+      "title": "Questão 10 — Carta de Ottawa"
+    },
+    {
+      "title": "Questão 11 — “Secundária” em cardiologia"
+    },
+    {
+      "title": "Questão 12 — Diagnóstico sintomático versus rastreamento"
+    },
+    {
+      "title": "Referências institucionais"
+    }
+  ],
+  "reference_entries": [
+    "OMS/OPAS — Carta de Ottawa para promoção da saúde (1986)",
+    "OMS — Conceitos e determinantes da promoção da saúde",
+    "Brasil — Portaria GM/MS nº 2.446/2014 (PNPS)",
+    "Brasil — Portaria de Consolidação nº 2/2017",
+    "Brasil — Portaria GM/MS nº 2.436/2017 (PNAB)",
+    "Ministério da Saúde — PCDTs vigentes por agravo",
+    "OMS — Conferências de promoção da saúde"
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov",
+    "https://wwwn.cdc.gov;",
+    "https://www.paho.org/en/documents/ottawa-charter-health-promotion",
+    "https://www.who.int/health-topics/health-promotion",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "https://www.who.int/teams/health-promotion/enhanced-wellbeing/first-global-conference"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A Portaria GM/MS nº 2.436/2017 define a Atenção Básica como conjunto de ações individuais, familiares e coletivas incluindo promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância. Portanto, restringir UBS a “ações preventivas sem tratamento” ou hospital a “reabilitação” contradiz a própria ideia de rede integrada."
+    },
+    {
+      "text": "No modelo clássico, prevenção secundária combina diagnóstico precoce e tratamento oportuno em doença-alvo já iniciada, muitas vezes durante fase subclínica ou início de manifestações. O objetivo é impedir progressão, complicações ou óbito. Em populações assintomáticas, isso pode ocorrer via rastreamento de doença com história natural adequada e percurso de cuidado comprovadamente benéfico. Em pessoas com sintomas, significa reconhecer sinais precoces e tratar antes que a condição se agrave."
+    },
+    {
+      "text": "Rastreamento não é sinônimo de todo diagnóstico precoce. Rastrear câncer de colo uterino em pessoa assintomática elegível é ato de prevenção secundária; investigar sangramento pós-coital é atendimento diagnóstico de pessoa sintomática, também pode buscar evitar evolução e dano, mas não é programa de rastreamento. A apostila 125 aprofunda teste, faixas brasileiras 2026, vieses e quaternária; aqui o essencial é identificar a fase da história natural."
+    },
+    {
+      "text": "Uma pessoa com tosse persistente, febre e hemoptise precisa de investigação de tuberculose ativa. Não se trata de rastreamento de assintomático, e sim de diagnóstico precoce com tratamento que pode evitar transmissão e sequelas. Uma mulher com sangramento vaginal anormal requer investigação de sua etiologia, mesmo se fez citologia ou DNA-HPV negativo recente. O critério temporal é estar após início da doença-alvo, mas antes de dano mais grave, conforme modelo."
+    },
+    {
+      "text": "A prevenção quaternária reduz risco de medicalização e intervenção excessiva, incluindo exames desnecessários, diagnóstico de condições sem relevância clínica, procedimentos e medicamentos com mais dano que benefício. Ela é transversal: pode ser aplicada em pessoa saudável convidada a rastreamento ou em paciente grave com polifarmácia. Não se restringe a “quarto período” da história natural; a representação em linha do tempo é imperfeita, pois a iatrogenia pode começar antes mesmo de a doença existir."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

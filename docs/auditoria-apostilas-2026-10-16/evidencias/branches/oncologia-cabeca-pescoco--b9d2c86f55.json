@@ -1,0 +1,377 @@
+{
+  "sha": "b9d2c86f55efa1774e4c718ca82deb937fb897be",
+  "path": "apostilas/oncologia-cabeca-pescoco/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "oncologia-cabeca-pescoco--b9d2c86f55",
+  "title": "LURIA — Oncologia de Cabeça e Pescoço: CEC, massas cervicais e anomalias congênitas",
+  "format": ".md",
+  "chars_estimated": 71470,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Oncologia de Cabeça e Pescoço: CEC, massas cervicais e anomalias congênitas"
+    },
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Objetivos de aprendizagem e mapa mental"
+    },
+    {
+      "title": "1. Anatomia funcional que muda diagnóstico e tratamento"
+    },
+    {
+      "title": "1.1 Boca NÃO é sinônimo de orofaringe"
+    },
+    {
+      "title": "1.2 Ligação entre localização e sintoma"
+    },
+    {
+      "title": "1.3 Anatomia linfonodal cervical: mapa para o raciocínio"
+    },
+    {
+      "title": "1.4 Nervos e vasos que explicam sintomas e riscos"
+    },
+    {
+      "title": "2. Epidemiologia e etiologia: as exposições são específicas"
+    },
+    {
+      "title": "2.1 CEC relacionado a tabaco e álcool"
+    },
+    {
+      "title": "2.2 Campo de cancerização"
+    },
+    {
+      "title": "2.3 HPV e orofaringe"
+    },
+    {
+      "title": "2.4 EBV e nasofaringe"
+    },
+    {
+      "title": "2.5 Fatores que NÃO devem virar regras absolutas"
+    },
+    {
+      "title": "3. Patologia e fisiopatologia do carcinoma espinocelular"
+    },
+    {
+      "title": "3.1 Da mucosa alterada à doença invasiva"
+    },
+    {
+      "title": "3.2 Por que os linfonodos são tão importantes"
+    },
+    {
+      "title": "3.3 Sítio, padrão de invasão e margem"
+    },
+    {
+      "title": "4. Apresentação clínica e exame físico sistemático"
+    },
+    {
+      "title": "4.1 História clínica oncológica"
+    },
+    {
+      "title": "4.2 Exame da cavidade oral"
+    },
+    {
+      "title": "4.3 Exame cervical"
+    },
+    {
+      "title": "4.4 Avaliação endoscópica"
+    },
+    {
+      "title": "4.5 Alarmes e decisão de urgência"
+    },
+    {
+      "title": "5. Massa cervical no adulto — algoritmo seguro"
+    },
+    {
+      "title": "5.1 Regra central"
+    },
+    {
+      "title": "5.2 Etapas do atendimento"
+    },
+    {
+      "title": "5.3 Por que não começar com biópsia aberta?"
+    },
+    {
+      "title": "5.4 Massa cística no adulto não é tranquilizadora"
+    },
+    {
+      "title": "5.5 Exame da mucosa, PAAF e investigação viral"
+    },
+    {
+      "title": "5.6 Diferenciais essenciais no adulto"
+    },
+    {
+      "title": "6. Massas cervicais pediátricas e anomalias congênitas"
+    },
+    {
+      "title": "6.1 Embriologia do ducto tireoglosso"
+    },
+    {
+      "title": "6.2 Anomalias dos arcos/fendas branquiais"
+    },
+    {
+      "title": "6.3 Malformações linfáticas e venosas"
+    },
+    {
+      "title": "6.4 Cistos dermoides, rânulas, tireoide e outras massas"
+    },
+    {
+      "title": "6.5 Massas por inflamação/infeção na infância"
+    },
+    {
+      "title": "6.6 Comparativo de grande rendimento"
+    },
+    {
+      "title": "7. Diagnóstico oncológico: como escolher exames com propósito"
+    },
+    {
+      "title": "7.1 Confirmar tecido — biópsia de lesão e PAAF de linfonodo não são concorrentes"
+    },
+    {
+      "title": "7.2 Endoscopia e inspeção sistêmica"
+    },
+    {
+      "title": "7.3 TC com contraste, RM e PET-CT"
+    },
+    {
+      "title": "7.4 Biomarcadores e anatomopatológico"
+    },
+    {
+      "title": "8. Estadiamento por TNM sem confundir sistemas"
+    },
+    {
+      "title": "8.1 O que é TNM"
+    },
+    {
+      "title": "8.2 Cavidade oral: profundidade de invasão (DOI)"
+    },
+    {
+      "title": "8.3 Orofaringe p16 positiva versus negativa"
+    },
+    {
+      "title": "8.4 ENE e linfonodos"
+    },
+    {
+      "title": "8.5 Laringe: a função glótica importa"
+    },
+    {
+      "title": "8.6 Nasofaringe"
+    },
+    {
+      "title": "8.7 Ressecabilidade, operabilidade e intenção de tratamento"
+    },
+    {
+      "title": "9. Tratamento de CEC por sítio: não memorizar regra única"
+    },
+    {
+      "title": "9.1 Organização do cuidado: equipe multidisciplinar"
+    },
+    {
+      "title": "9.2 Cavidade oral — cirurgia como eixo em muitos cenários"
+    },
+    {
+      "title": "9.3 Laringe — preservação de órgão não significa preservar função a qualquer custo"
+    },
+    {
+      "title": "9.4 Orofaringe — HPV importa no prognóstico, mas não simplifica tudo"
+    },
+    {
+      "title": "9.5 Nasofaringe — predomínio de radioterapia e tratamento sistêmico"
+    },
+    {
+      "title": "9.6 Hipofaringe"
+    },
+    {
+      "title": "9.7 Tumor primário oculto (CEC metastático cervical, primário não localizado)"
+    },
+    {
+      "title": "9.8 Tumor cutâneo, salivar e tireoide: interface, não misturar tipos"
+    },
+    {
+      "title": "10. Tratamento do pescoço, margens e reconstrução"
+    },
+    {
+      "title": "10.1 Por que o pescoço é tratado quando a boca parece ter tumor pequeno?"
+    },
+    {
+      "title": "10.2 Modalidades de esvaziamento cervical"
+    },
+    {
+      "title": "10.3 Reconstrução por retalhos"
+    },
+    {
+      "title": "10.4 Radioterapia complementar e radioquimioterapia"
+    },
+    {
+      "title": "11. Terapia sistêmica, imunoterapia e atualização de 2025"
+    },
+    {
+      "title": "11.1 Quimioterapia e sensibilização à radioterapia"
+    },
+    {
+      "title": "11.2 Recidiva/metástase"
+    },
+    {
+      "title": "11.3 Terapia perioperatória aprovada pela FDA em 2025"
+    },
+    {
+      "title": "11.4 Por que não detalhar dose oncológica sem contexto?"
+    },
+    {
+      "title": "12. Assistência inicial e suporte ao paciente oncológico"
+    },
+    {
+      "title": "12.1 Via aérea"
+    },
+    {
+      "title": "12.2 Nutrição, deglutição e prevenção de aspiração"
+    },
+    {
+      "title": "12.3 Odontologia e xerostomia"
+    },
+    {
+      "title": "12.4 Sintomas pós-tratamento"
+    },
+    {
+      "title": "12.5 Cessação de tabaco e álcool"
+    },
+    {
+      "title": "13. Prognóstico, seguimento e qualidade de vida"
+    },
+    {
+      "title": "13.1 Prognóstico é multidimensional"
+    },
+    {
+      "title": "13.2 Seguimento depois de tratamento curativo"
+    },
+    {
+      "title": "13.3 Aconselhamento do paciente"
+    },
+    {
+      "title": "14. Fluxogramas de raciocínio para provas e assistência"
+    },
+    {
+      "title": "Fluxo 1 — ferida oral suspeita"
+    },
+    {
+      "title": "Fluxo 2 — nódulo cervical no adulto"
+    },
+    {
+      "title": "Fluxo 3 — massa cervical em criança"
+    },
+    {
+      "title": "Fluxo 4 — rouquidão e dificuldade respiratória"
+    },
+    {
+      "title": "15. Casos clínicos comentados LURIA"
+    },
+    {
+      "title": "Caso 1 — úlcera lateral de língua que não melhora"
+    },
+    {
+      "title": "Caso 2 — jovem com “cisto branquial” lateral recém-identificado"
+    },
+    {
+      "title": "Caso 3 — rouquidão progressiva e lesão de corda vocal"
+    },
+    {
+      "title": "Caso 4 — otite serosa unilateral no adulto"
+    },
+    {
+      "title": "Caso 5 — criança com massa mediana móvel"
+    },
+    {
+      "title": "Caso 6 — massa parotídea e paresia facial"
+    },
+    {
+      "title": "Caso 7 — linfonodo com CEC, primário não identificado"
+    },
+    {
+      "title": "Caso 8 — tumor laríngeo com estridor"
+    },
+    {
+      "title": "16. Questões autorais LURIA — comentário de todas as alternativas"
+    },
+    {
+      "title": "17. Matriz de 12 recursos visuais para curadoria — pendente de licença e integração"
+    },
+    {
+      "title": "18. Referências-base checadas em páginas públicas oficiais"
+    },
+    {
+      "title": "19. Auditoria inicial e pendências para aprovação"
+    }
+  ],
+  "reference_entries": [
+    "1. **Instituto Nacional de Câncer (INCA).** Câncer de boca — versão para profissionais de saúde, com orientação de diagnóstico precoce. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-profissionais-de-saude",
+    "2. **INCA.** Câncer de laringe — versão para profissionais de saúde. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/laringe/versao-para-profissionais-de-saude",
+    "3. **INCA.** Diagnóstico precoce é fundamental para o controle do câncer de cabeça e pescoço. 2024. https://www.gov.br/inca/pt-br/canais-de-atendimento/imprensa/releases/2024/diagnostico-precoce-e-fundamental-para-o-controle-do-cancer-de-cabeca-e-pescoco",
+    "4. **AAO-HNS.** Clinical Practice Guideline: Evaluation of the Neck Mass in Adults. 2017. https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/evaluation-of-the-neck-mass-in-adults/",
+    "5. **Pynnonen MA et al.** Clinical Practice Guideline: Evaluation of the Neck Mass in Adults. *Otolaryngology–Head and Neck Surgery*. 2017. https://doi.org/10.1177/0194599817722550",
+    "6. **NCI.** Head and Neck Cancers: Overview/Fact Sheet. https://www.cancer.gov/types/head-and-neck/head-neck-fact-sheet",
+    "7. **NCI.** Oropharyngeal Cancer Treatment (PDQ) — Health Professional. https://www.cancer.gov/types/head-and-neck/hp/adult/oropharyngeal-treatment-pdq",
+    "8. **NCI.** Nasopharyngeal Carcinoma Treatment (PDQ) — Health Professional. https://www.cancer.gov/types/head-and-neck/hp/adult/nasopharyngeal-treatment-pdq",
+    "9. **NCI.** Laryngeal Cancer Treatment (PDQ) — Health Professional. https://www.cancer.gov/types/head-and-neck/hp/adult/laryngeal-treatment-pdq",
+    "10. **NCI.** Metastatic Squamous Neck Cancer with Occult Primary Treatment (PDQ). https://www.cancer.gov/types/head-and-neck/hp/adult/metastatic-squamous-neck-treatment-pdq",
+    "11. **NCI.** Salivary Gland Cancer Treatment (PDQ) — Health Professional. https://www.cancer.gov/types/head-and-neck/hp/adult/salivary-gland-treatment-pdq",
+    "12. **FDA.** FDA approves neoadjuvant and adjuvant pembrolizumab for resectable locally advanced HNSCC. 12 jun. 2025. https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck",
+    "13. **Meier JD, Grimmer JF.** Evaluation and Management of Neck Masses in Children. *Am Fam Physician*. 2014. https://www.aafp.org/afp/2014/0301/p353",
+    "14. **Evaluation and Management of Pediatric Neck Masses: An Otolaryngology Perspective.** *Otolaryngology–Head and Neck Surgery* / revisão acadêmica de acesso aberto. https://pmc.ncbi.nlm.nih.gov/articles/PMC7140292/",
+    "15. **Diagnostic Approach to Congenital Cystic Masses of the Neck from a Clinical and Pathological Perspective.** Revisão de acesso aberto. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8395831/",
+    "16. **Diagnostic imaging of benign and malignant neck masses in children — pictorial review.** Revisão de imagem de acesso aberto. https://pmc.ncbi.nlm.nih.gov/articles/PMC5130564/",
+    "**Já executado:** auditoria de existência em Supabase/branch, escopo curricular, anatomia, epidemiologia, patologia, clínica, algoritmo de massa cervical, anomalias congênitas, investigação, TNM conceitual, princípios de tratamento por sítio, cirurgia/neck dissection/reconstrução, imunoterapia 2025, urgências, reabilitação, casos e questões comentadas.",
+    "**Pendências de profundidade:** aprofundar comparativo de TNM por sítio com tabelas revisadas contra a versão formal vigente; acrescentar fisiopatologia e prognóstico orientados por subsite; explicar em detalhe indicação de RT/CRT por risco patológico e toxicidades; complementar fluxos de abscesso/linfoma/tireoide; curadoria de ≥10 imagens reais candidatas com licença e integração; revisão especialista e correções. Essas etapas não devem ser ocultadas por metrificação de caracteres.",
+    "**Pendências técnicas:** não há imagens licenciadas inseridas, ainda não existe arquivo HTML no layout final, referências nacionais para protocolos de tratamento e acesso no SUS precisam ser confirmadas. Não alterar apostilas existentes nem publicar sem validação.",
+    "**Estado:** **MANUSCRITO INICIAL — NÃO APROVADO PARA PUBLICAÇÃO**, somente em branch editorial. Sem merge e sem deploy."
+  ],
+  "external_urls": [
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/boca/versao-para-profissionais-de-saude",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/laringe/versao-para-profissionais-de-saude",
+    "https://www.gov.br/inca/pt-br/canais-de-atendimento/imprensa/releases/2024/diagnostico-precoce-e-fundamental-para-o-controle-do-cancer-de-cabeca-e-pescoco",
+    "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/evaluation-of-the-neck-mass-in-adults/",
+    "https://doi.org/10.1177/0194599817722550",
+    "https://www.cancer.gov/types/head-and-neck/head-neck-fact-sheet",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/oropharyngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/nasopharyngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/laryngeal-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/metastatic-squamous-neck-treatment-pdq",
+    "https://www.cancer.gov/types/head-and-neck/hp/adult/salivary-gland-treatment-pdq",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck",
+    "https://www.aafp.org/afp/2014/0301/p353",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7140292/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8395831/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5130564/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Matriz curricular LURIA–MedCof (15/10/2026):** [Alta] Carcinoma espinocelular de cabeça e pescoço; [Média] Diferenciais das massas cervicais; [Baixa] Anomalias congênitas cervicofaciais. **Diagnóstico prévio:** não encontrada apostila com este título entre as 18 publicadas no Supabase da produção; encontrado rascunho inicial já existente em `apostilas/oncologia-cabeca-pescoco/`; preservado como base de revisão. O PDF de estudo localizado no Drive abrange sobretudo nasofaringe, orofaringe e tumor primário oculto; foi consultado apenas para mapear tópicos, **não** copiado. O texto abaixo é redação autoral sustentada principalmente por INCA, N"
+    },
+    {
+      "text": "No adulto, uma massa cervical persistente por **≥2 semanas** sem infecção evidente ou de duração incerta pode sinalizar câncer. Se for de alto risco: exame minucioso da mucosa, avaliação por especialista, TC/RM contrastada quando indicada e **punção aspirativa por agulha fina (PAAF)** em preferência à biópsia aberta inicial; massa cística **não significa** cisto branquial benigno. A confirmação de CEC em lesão acessível requer histologia por biópsia. A escolha entre cirurgia, radioterapia, radioquimioterapia e terapias sistêmicas é multidisciplinar, varia por **sítio, TNM, HPV/EBV, função e possibilidade de ressecção**. Depois, deglutição, vo"
+    },
+    {
+      "text": "A infecção persistente por HPV de alto risco, especialmente tipo 16, participa da carcinogênese de **orofaringe**. As proteínas virais E6 e E7 interferem em vias de supressão tumoral, contribuindo para proliferação celular e inibição da apoptose. Em casos compatíveis, a imunohistoquímica de **p16** é usada como marcador substituto para HPV-mediado, mas sua interpretação deve seguir recomendações para o sítio e o tipo de amostra. **p16 positivo fora da orofaringe não prova automaticamente carcinoma HPV-mediado**."
+    },
+    {
+      "text": "Carcinoma não queratinizante de nasofaringe possui associação importante com **vírus Epstein–Barr**, com variação geográfica e histológica. A investigação pode incluir EBER por hibridização *in situ* e/ou outros testes conforme laboratório, além de DNA de EBV plasmático em certos cenários especializados. Mesmo com EBV envolvido, o diagnóstico oncológico depende de tecido e avaliação anatômica; sorologia inespecífica não substitui biópsia. A abordagem terapêutica difere de uma lesão de língua oral porque a anatomia nasofaríngea é difícil para ressecção primária e a radioterapia integra o padrão de manejo."
+    },
+    {
+      "text": "- Não fumante também desenvolve carcinoma de cavidade oral/laringe. - Ter HPV não significa apresentar câncer; rastreamento e prevenção são questões diferentes de diagnosticar tumor já existente. - Nódulo cervical indolor não é necessariamente benigno. - A relação causal de EBV com nasofaringe não implica que todo nódulo cervical EBV positivo tenha origem nasofaríngea sem investigação adequada. - Câncer tireoidiano e câncer de glândula salivar **não** pertencem à mesma categoria biológica de CEC mucoso e exigem algoritmos próprios. - Dados de incidência variam por ano, sítio e fonte. Não memorizar números desatualizados; priorizar risco e dia"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

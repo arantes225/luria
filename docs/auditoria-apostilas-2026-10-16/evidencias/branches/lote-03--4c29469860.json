@@ -1,0 +1,53 @@
+{
+  "sha": "4c29469860777a125eaef9930c6f8cb8a311bd94",
+  "path": "apostilas/_rascunhos/lote-03/50-VALIDACAO-EDITORIAL.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--4c29469860",
+  "title": "LURIA — Aula 50 | Auditoria jurídico-editorial e HTML preliminar",
+  "format": ".md",
+  "chars_estimated": 5734,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 50 | Auditoria jurídico-editorial e HTML preliminar"
+    },
+    {
+      "title": "Diagnóstico inicial e base comparativa"
+    },
+    {
+      "title": "Métricas verificadas no GitHub"
+    },
+    {
+      "title": "Autoridades verificadas em outubro de 2026"
+    },
+    {
+      "title": "Gaps para homologação"
+    },
+    {
+      "title": "Complemento normativo e quantitativo — 15/10/2026"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017_comp.html",
+    "https://portalfns.saude.gov.br/sobre-o-fns/",
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

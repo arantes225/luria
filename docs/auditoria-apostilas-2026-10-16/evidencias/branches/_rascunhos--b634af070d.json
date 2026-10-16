@@ -1,0 +1,443 @@
+{
+  "sha": "b634af070da823089268c029f4f3652c35601110",
+  "path": "apostilas/_rascunhos/lote-04-aula-066-derrame-pleural.md",
+  "branches": [
+    "origin/editorial/lote-04-aula66-derrame-pleural-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b634af070d",
+  "title": "LURIA — Lote 04 · Aula 066 — Derrame Pleural",
+  "format": ".md",
+  "chars_estimated": 98629,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 04 · Aula 066 — Derrame Pleural"
+    },
+    {
+      "title": "Clínica Médica | Manuscrito didático original para residência, ENAMED, internato e prática supervisionada"
+    },
+    {
+      "title": "0. Auditoria inicial, benchmark comparativo e decisão curricular"
+    },
+    {
+      "title": "0.1 O que foi efetivamente inspecionado na LURIA"
+    },
+    {
+      "title": "0.2 Comparação obrigatória de materiais disponíveis no Drive (15/10/2026)"
+    },
+    {
+      "title": "0.3 Matriz curricular de conteúdo obrigatório"
+    },
+    {
+      "title": "1. Introdução: derrame pleural é um achado, não um diagnóstico etiológico {#conceitos}"
+    },
+    {
+      "title": "1.1 Objetivos de aprendizagem"
+    },
+    {
+      "title": "2. Anatomia, fisiologia e mecanismos do líquido pleural"
+    },
+    {
+      "title": "2.1 Pleuras e espaço potencial"
+    },
+    {
+      "title": "2.2 Quatro vias causais que simplificam a prática"
+    },
+    {
+      "title": "2.3 Por que alguns derrames são bilaterais e outros unilaterais?"
+    },
+    {
+      "title": "3. Epidemiologia, fatores de risco e probabilidade pré-teste"
+    },
+    {
+      "title": "4. Quadro clínico, exame físico e reconhecimento de risco {#clinica}"
+    },
+    {
+      "title": "4.1 Sintomas cardinais"
+    },
+    {
+      "title": "4.2 Sinais semiológicos"
+    },
+    {
+      "title": "4.3 Instabilidade e urgência"
+    },
+    {
+      "title": "5. Métodos de imagem: o que cada exame responde {#imagem}"
+    },
+    {
+      "title": "5.1 Radiografia"
+    },
+    {
+      "title": "5.2 Ultrassonografia torácica"
+    },
+    {
+      "title": "5.3 Tomografia computadorizada"
+    },
+    {
+      "title": "6. A primeira decisão: observar, tratar a causa ou puncionar?"
+    },
+    {
+      "title": "6.1 Quando a toracocentese diagnóstica costuma agregar valor"
+    },
+    {
+      "title": "6.2 Perguntas antes da punção"
+    },
+    {
+      "title": "7. Toracocentese diagnóstica e terapêutica: fundamentos de segurança {#puncao}"
+    },
+    {
+      "title": "7.1 Preparação"
+    },
+    {
+      "title": "7.2 Aspiração diagnóstica e envio"
+    },
+    {
+      "title": "7.3 Aspiração terapêutica"
+    },
+    {
+      "title": "7.4 Complicações"
+    },
+    {
+      "title": "8. Análise inicial do líquido pleural: perguntas antes de números {#bioquimica}"
+    },
+    {
+      "title": "8.1 Células do líquido e o erro do «diagnóstico pelo percentual»"
+    },
+    {
+      "title": "8.2 O que não confundir com classificação"
+    },
+    {
+      "title": "9. Critérios de Light: aprenda a calcular e saiba onde falham {#light}"
+    },
+    {
+      "title": "Exemplo numérico resolvido"
+    },
+    {
+      "title": "9.1 Exemplo de transudato"
+    },
+    {
+      "title": "9.2 Pseudoexsudato após diurético"
+    },
+    {
+      "title": "9.3 Quando os critérios de Light não respondem à pergunta"
+    },
+    {
+      "title": "10. Derrame parapneumônico e infecção pleural {#infeccao}"
+    },
+    {
+      "title": "10.1 Fisiopatologia: por que o derrame evolui?"
+    },
+    {
+      "title": "10.2 Quadro clínico e sinais de alerta"
+    },
+    {
+      "title": "10.3 Líquido: pus, pH, glicose e LDH"
+    },
+    {
+      "title": "10.4 Erros pré-analíticos do pH"
+    },
+    {
+      "title": "10.5 Antibiótico e drenagem são tratamentos complementares"
+    },
+    {
+      "title": "10.6 Dreno: calibre e técnica apropriada"
+    },
+    {
+      "title": "10.7 Quando o dreno não resolve: tPA + DNase, equipe pleural e cirurgia"
+    },
+    {
+      "title": "10.8 Avaliação prognóstica"
+    },
+    {
+      "title": "11. Tuberculose pleural: suspeita, confirmação e limites da ADA {#tuberculose}"
+    },
+    {
+      "title": "11.1 Mecanismo e apresentação"
+    },
+    {
+      "title": "11.2 Perfil bioquímico típico e exceções"
+    },
+    {
+      "title": "11.3 Testes microbiológicos e material"
+    },
+    {
+      "title": "11.4 Diagnósticos diferenciais prioritários"
+    },
+    {
+      "title": "11.5 Tratamento, seguimento e saúde pública"
+    },
+    {
+      "title": "12. Derrame pleural maligno e neoplasias pleurais {#neoplasia}"
+    },
+    {
+      "title": "12.1 O que significa derrame maligno?"
+    },
+    {
+      "title": "12.2 Como investigar"
+    },
+    {
+      "title": "12.3 Tratamento é, em grande parte, controle de sintomas e recorrência"
+    },
+    {
+      "title": "12.4 Pleurodese química x cateter pleural de longa permanência"
+    },
+    {
+      "title": "12.5 Pulmão não expansível: por que a pleurodese pode falhar"
+    },
+    {
+      "title": "12.6 Cuidados paliativos e objetivo do paciente"
+    },
+    {
+      "title": "13. Derrame por insuficiência cardíaca e pseudoexsudato congestivo"
+    },
+    {
+      "title": "13.1 Reconhecimento clínico"
+    },
+    {
+      "title": "13.2 Critérios de Light após diurético"
+    },
+    {
+      "title": "13.3 Tratamento e acompanhamento"
+    },
+    {
+      "title": "14. Hidrotórax hepático, renal e outras condições sistêmicas"
+    },
+    {
+      "title": "14.1 Hidrotórax hepático"
+    },
+    {
+      "title": "14.2 Síndrome nefrótica e distúrbios renais"
+    },
+    {
+      "title": "14.3 Embolia pulmonar"
+    },
+    {
+      "title": "14.4 Atelectasia, pós-operatório e medicamentos"
+    },
+    {
+      "title": "15. Derrames especiais: sangue, linfa, pâncreas e autoimunidade {#especiais}"
+    },
+    {
+      "title": "15.1 Hemotórax e derrame hemorrágico"
+    },
+    {
+      "title": "Exemplo hematimétrico"
+    },
+    {
+      "title": "15.2 Quilotórax"
+    },
+    {
+      "title": "15.3 Pseudoquilotórax"
+    },
+    {
+      "title": "15.4 Derrame pancreático"
+    },
+    {
+      "title": "15.5 Rotura esofágica"
+    },
+    {
+      "title": "15.6 Derrames autoimunes"
+    },
+    {
+      "title": "15.7 Urinotórax e outras etiologias raras"
+    },
+    {
+      "title": "16. Diferenciais integrados: tabela de pistas e decisões"
+    },
+    {
+      "title": "17. Fluxograma diagnóstico textual de alta utilidade {#tratamento}"
+    },
+    {
+      "title": "18. Erros de prova e de plantão mais frequentes"
+    },
+    {
+      "title": "19. Casos clínicos comentados: do diagnóstico ao seguimento {#casos}"
+    },
+    {
+      "title": "Caso 1 — Transudato congestivo sem punção inicial"
+    },
+    {
+      "title": "Caso 2 — Pseudoexsudato após diurético: Light não é o fim"
+    },
+    {
+      "title": "Caso 3 — Derrame parapneumônico complicado pelo pH"
+    },
+    {
+      "title": "Caso 4 — Zona cinzenta do pH e LDH: decisão contextual"
+    },
+    {
+      "title": "Caso 5 — Tuberculose pleural provável, mas não confirmada por ADA"
+    },
+    {
+      "title": "Caso 6 — Citologia negativa com pleura nodular"
+    },
+    {
+      "title": "Caso 7 — Câncer, derrame sintomático e pulmão não expansível"
+    },
+    {
+      "title": "Caso 8 — Derrame leitoso após cirurgia e perda de linfa"
+    },
+    {
+      "title": "Caso 9 — Hemotórax diluído e queda de hemoglobina"
+    },
+    {
+      "title": "Caso 10 — Hidrotórax hepático não é indicação automática de dreno contínuo"
+    },
+    {
+      "title": "Caso 11 — Derrame pequeno com dispneia súbita: olhe além do líquido"
+    },
+    {
+      "title": "Caso 12 — Empiema sem crescimento microbiológico"
+    },
+    {
+      "title": "20. Questões autorais de residência — respostas justificadas por alternativa {#questoes}"
+    },
+    {
+      "title": "Questão 1 — Classificação pelos critérios de Light"
+    },
+    {
+      "title": "Questão 2 — Gradiente de albumina"
+    },
+    {
+      "title": "Questão 3 — Pneumonia e pH 7,15"
+    },
+    {
+      "title": "Questão 4 — Zona intermediária"
+    },
+    {
+      "title": "Questão 5 — Amostra de pH inadequada"
+    },
+    {
+      "title": "Questão 6 — Tuberculose e ADA"
+    },
+    {
+      "title": "Questão 7 — Citologia negativa"
+    },
+    {
+      "title": "Questão 8 — Derrame maligno assintomático"
+    },
+    {
+      "title": "Questão 9 — Pulmão não expansível"
+    },
+    {
+      "title": "Questão 10 — Quilotórax versus pseudoquilotórax"
+    },
+    {
+      "title": "Questão 11 — Hemotórax"
+    },
+    {
+      "title": "Questão 12 — Hidrotórax hepático"
+    },
+    {
+      "title": "Questão 13 — Punção segura e limite de volume"
+    },
+    {
+      "title": "Questão 14 — Infecção pleural com pus"
+    },
+    {
+      "title": "Questão 15 — Dispneia desproporcional"
+    },
+    {
+      "title": "Questão 16 — Terapia intrapleural da infecção"
+    },
+    {
+      "title": "21. Revisão de alta retenção: síntese final"
+    },
+    {
+      "title": "22. Imagens, esquemas e seleção para aprovação no Admin"
+    },
+    {
+      "title": "Páginas de origem com licença explicitamente consultadas"
+    },
+    {
+      "title": "23. Referências médicas verificáveis e escopo de utilização"
+    },
+    {
+      "title": "24. Auditoria interna preliminar e rastreabilidade"
+    },
+    {
+      "title": "24.1 Gate de ciência e segurança"
+    },
+    {
+      "title": "24.2 Estado de publicação"
+    }
+  ],
+  "reference_entries": [
+    "1. **British Thoracic Society.** BTS Guideline for Pleural Disease. *Thorax*. 2023;78(Suppl 3). Abrange derrame unilateral não esclarecido, infecção pleural, neoplasia pleural, amostras e exames. https://thorax.bmj.com/content/early/2023/08/08/thorax-2023-220304",
+    "2. **British Thoracic Society.** BTS Clinical Statement on Pleural Procedures. *Thorax*. 2023;78(Suppl 3):s43. Base da orientação por US, coleta, limite geral 1,5 L, sintomas de parada e radiografia pós-punção. https://thorax.bmj.com/content/78/Suppl_3/s43",
+    "3. **British Thoracic Society.** Pleural Disease Clinical Guidelines — documento institucional e apêndices. https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease/",
+    "4. **Feller-Kopman DJ et al.** Management of Malignant Pleural Effusions: An Official ATS/STS/STR Clinical Practice Guideline. *American Journal of Respiratory and Critical Care Medicine*. 2018;198(7):839–849. DOI 10.1164/rccm.201807-1415ST. https://pubmed.ncbi.nlm.nih.gov/30272503/",
+    "5. **Rahman NM et al.** Intrapleural Use of Tissue Plasminogen Activator and DNase in Pleural Infection. *N Engl J Med*. 2011. DOI 10.1056/NEJMoa1012740. https://www.nejm.org/doi/full/10.1056/NEJMoa1012740",
+    "6. **Ministério da Saúde (Brasil).** Manual de Recomendações para o Controle da Tuberculose no Brasil, 2ª edição atualizada (2019), disponibilizada no portal do MS. A revisão da página em 2026 não equivale a nova edição do manual. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "7. **Ministério da Saúde (Brasil).** Manual de Recomendações para Diagnóstico Laboratorial de Tuberculose e Micobactérias não Tuberculosas. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-para-diagnostico-laboratorial-de-tuberculose-e-micobacterias-nao-tuberculosas-de-interesse-em-saude-publica-no-brasil.pdf/view",
+    "8. **Sociedade Brasileira de Pneumologia e Tisiologia.** III Diretrizes para Tuberculose da SBPT. *J Bras Pneumol*. Referência nacional histórica sobre ADA e biópsia, a aplicar em conjunto com orientação atual. https://www.scielo.br/j/jbpneu/a/qkP39xrRffZ3YY897pWFxVJ/",
+    "9. **A practical approach to pseudoexudative pleural effusions.** *Respiratory Medicine*. 2023. DOI 10.1016/j.rmed.2023.107279. Apoio ao gradiente de albumina/Light em paciente diurético. https://pubmed.ncbi.nlm.nih.gov/37172787/",
+    "10. **Chylothorax: pathophysiology, diagnosis, and management — a comprehensive review.** 2024; revisão de quilomícrons, triglicerídeos, colesterol e causas não traumáticas. https://pmc.ncbi.nlm.nih.gov/articles/PMC10944732/",
+    "11. **Non-traumatic chylothorax: diagnostic and therapeutic strategies.** *Breathe*. 2022;18(2). European Respiratory Society. https://publications.ersnet.org/content/breathe/18/2/210163",
+    "12. **Hemothorax: A Review of the Literature.** Revisão de critérios hematimétricos e diluição. https://pmc.ncbi.nlm.nih.gov/articles/PMC7799890/",
+    "13. **From diagnosis to therapy: the acute traumatic hemothorax — an orientation for young surgeons.** 2024. Revisão de critérios e manejo de hemotórax traumático. https://pmc.ncbi.nlm.nih.gov/articles/PMC10949117/",
+    "14. **BTS Guideline for Pleural Disease, Appendix 1: clinical pathways/decision trees.** Material complementar da diretriz de 2023; orientar construção de fluxograma **autoral** sem reproduzir o diagrama. https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/bts-guideline-for-pleural-disease-appendix-1-clinical-pathwaysdecision-trees/",
+    "- Não declarar a amostragem do Drive como benchmark de uma apostila geral equivalente: foram PDFs **parciais** de TB extrapulmonar, trauma e IC.",
+    "- Revisar decisões antimicrobianas, exames e contraindicações no contexto brasileiro atual antes de uso assistencial; esta é orientação de estudo, não prescrição individual.",
+    "- Distinguir rigorosamente «pH ≤7,2 indica dreno quando há janela segura no contexto de infecção» de «qualquer pH baixo sempre manda drenar», que seria incorreto.",
+    "- Não tratar ADA isolada como confirmação de tuberculose e não extrapolar a sensibilidade de uma cultura/método a todos os pacientes.",
+    "- Confirmar planos de manejo domiciliar do IPC, integração com serviço pleural e escolhas compartilhadas de cuidado.",
+    "- Revisar licenças das imagens e exigir aprovação no Admin, otimização WebP e conformidade com CSS/PWA.",
+    "- Submeter exemplos numéricos e questões a **verificação médica independente**; o texto foi desenvolvido com base em diretrizes identificadas, mas não constitui certificação médica.",
+    "- O volume de caracteres brutos, inclusive referências e tabelas, deve ser separado da quantidade de **texto didático útil**, auditada sem repetição ou enchimento.",
+    "**Somente arquivo Markdown de rascunho em branch editorial isolada.** Não há publicação em `apostilas/<tema>/index.html`, não há merge, deploy ou envio de imagens à fila administrativa. A etapa de edição clínica poderá ser concluída apenas com benchmark mais próximo, revisão independente, imagens autorizadas e teste de autossuficiência conforme `apostilas/EDITORIAL_STANDARD.md` e `apostilas/PRODUCAO_EM_LOTE.md`.",
+    "**Próxima posição da produção do Lote 04:** aula 067 — Trauma pélvico e geniturinário — após concluir a revisão de qualidade e documentação desta aula."
+  ],
+  "external_urls": [
+    "https://commons.wikimedia.org/wiki/File:Bilateral_Pleural_Effusion.jpg",
+    "https://commons.wikimedia.org/wiki/File:Effusionhalf.PNG",
+    "https://commons.wikimedia.org/wiki/File:LargePleuralEffusionLatPlain.png",
+    "https://commons.wikimedia.org/wiki/File:14-01-Erguss_im_Liegen.png",
+    "https://commons.wikimedia.org/wiki/File:Pleural_effusion.jpg",
+    "https://commons.wikimedia.org/wiki/File:Effusion.png",
+    "https://thorax.bmj.com/content/early/2023/08/08/thorax-2023-220304",
+    "https://thorax.bmj.com/content/78/Suppl_3/s43",
+    "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease/",
+    "https://pubmed.ncbi.nlm.nih.gov/30272503/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMoa1012740",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-para-diagnostico-laboratorial-de-tuberculose-e-micobacterias-nao-tuberculosas-de-interesse-em-saude-publica-no-brasil.pdf/view",
+    "https://www.scielo.br/j/jbpneu/a/qkP39xrRffZ3YY897pWFxVJ/",
+    "https://pubmed.ncbi.nlm.nih.gov/37172787/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10944732/",
+    "https://publications.ersnet.org/content/breathe/18/2/210163",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7799890/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10949117/",
+    "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/bts-guideline-for-pleural-disease-appendix-1-clinical-pathwaysdecision-trees/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Caso-condutor:** pessoa de 66 anos tem falta de ar crescente, macicez na base do hemitórax direito e redução do murmúrio vesicular. Antes de pedir «um dreno», é preciso checar saturação, esforço respiratório, febre, dor pleurítica, choque, cardiopatia, neoplasia, exposição a TB, doença hepática, medicações e tempo de início. Ultrassom pode confirmar líquido, estimar segurança da punção e sugerir septações. A história e o líquido, quando indicado, orientam o restante."
+    },
+    {
+      "text": "É possível haver **mais de um mecanismo** em uma mesma pessoa: paciente com IC pode desenvolver pneumonia e exsudato verdadeiro sobre congestão. Assim, um diagnóstico prévio não deve bloquear reavaliação diante de febre persistente, assimetria importante, dor pleurítica ou não resposta ao tratamento esperado."
+    },
+    {
+      "text": "Em pleurite infecciosa, espessamento/realce pleural pode apoiar diagnóstico; não basta isoladamente para decidir se todo derrame deve ser drenado. Na avaliação de derrame unilateral persistente sem causa clara, TC é instrumento complementar, não substituto do líquido ou de biópsia quando indicada."
+    },
+    {
+      "text": "--- **Nota editorial:** este manuscrito NÃO reproduz os PDFs do Drive; as principais recomendações procedimentais e de classificação citadas decorrem da diretriz BTS de 2023 e da revisão de pseudoexsudatos de 2023 (referências finais). O conteúdo ainda será submetido a revisão independente antes de uso assistencial."
+    },
+    {
+      "text": "O agente pode não crescer em cultura mesmo em infecção pleural verdadeira. Antimicrobiano prévio, baixo número de microrganismos, anaeróbios e problemas de coleta/transporte diminuem rendimento. Portanto, **cultura negativa não equivale a derrame não infectado**. Enviar amostras também em frascos de hemocultura conforme protocolo aumenta rendimento e é recomendado pela BTS 2023 quando há suspeita de infecção."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

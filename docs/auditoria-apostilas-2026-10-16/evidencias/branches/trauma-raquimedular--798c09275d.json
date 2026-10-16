@@ -1,0 +1,148 @@
+{
+  "sha": "798c09275dd48880899f4b4501fdbc33867cd482",
+  "path": "apostilas/trauma-raquimedular/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "trauma-raquimedular--798c09275d",
+  "title": "LURIA · Apostila 238 — Trauma raquimedular e avaliação neurológica inicial",
+  "format": ".md",
+  "chars_estimated": 31065,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 238 — Trauma raquimedular e avaliação neurológica inicial"
+    },
+    {
+      "title": "1. O problema clínico: duas lesões distintas que podem coexistir"
+    },
+    {
+      "title": "2. Anatomia aplicada à localização"
+    },
+    {
+      "title": "3. Fisiopatologia: agressão primária e secundária"
+    },
+    {
+      "title": "4. Padrões clínicos e síndromes neurológicas"
+    },
+    {
+      "title": "4.1 Choque medular não é choque neurogênico"
+    },
+    {
+      "title": "5. Abordagem inicial: ABCDE com proteção espinhal"
+    },
+    {
+      "title": "6. Quando suspeitar de lesão e pedir imagem"
+    },
+    {
+      "title": "6.1 Interpretando cenários frequentes"
+    },
+    {
+      "title": "7. Exame neurológico estruturado e classificação ISNCSCI/AIS"
+    },
+    {
+      "title": "7.1 Componentes"
+    },
+    {
+      "title": "7.2 AIS (American Spinal Injury Association Impairment Scale)"
+    },
+    {
+      "title": "8. Investigação dos diagnósticos diferenciais"
+    },
+    {
+      "title": "9. Tratamento agudo: o que muda prognóstico"
+    },
+    {
+      "title": "9.1 Prevenção da hipóxia e da hipotensão"
+    },
+    {
+      "title": "9.2 Tratamento cirúrgico"
+    },
+    {
+      "title": "9.3 Corticoide em altas doses"
+    },
+    {
+      "title": "9.4 Complicações e suporte integral"
+    },
+    {
+      "title": "10. Fluxograma prático de conduta"
+    },
+    {
+      "title": "11. Complicações, prognóstico e populações especiais"
+    },
+    {
+      "title": "12. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Colisão e tetraparesia aguda"
+    },
+    {
+      "title": "Caso 2 — Queda da própria altura com mãos fracas"
+    },
+    {
+      "title": "Caso 3 — Hipotensão e bradicardia após queda"
+    },
+    {
+      "title": "Caso 4 — Dor lombar e retenção urinária"
+    },
+    {
+      "title": "13. Seis questões originais LURIA comentadas"
+    },
+    {
+      "title": "14. Pérolas LURIA de prova e plantão"
+    },
+    {
+      "title": "15. Plano visual editorial (candidatas a localizar, conferir direitos e otimizar)"
+    },
+    {
+      "title": "16. Referências científicas verificadas (acesso em 15/10/2026)"
+    },
+    {
+      "title": "17. Auditoria editorial de honestidade"
+    }
+  ],
+  "reference_entries": [
+    "1. NICE. *Spinal injury: assessment and initial management*. Guideline NG41. https://www.nice.org.uk/guidance/ng41/chapter/Recommendations — critérios de avaliação, segurança de movimento, TC/RM e recomendação de não usar metilprednisolona.",
+    "2. Kwon BK et al. *A Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on Hemodynamic Management*. Global Spine J. 2024;14(3 Suppl):187S–211S. doi:10.1177/21925682231202348. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964888/ — sugestão de PAM 75–80 a 90–95 mmHg por 3–7 dias; evidência muito baixa.",
+    "3. Fehlings MG et al. *An Update of a Clinical Practice Guideline for the Management of Patients With Acute Spinal Cord Injury: Recommendations on the Role and Timing of Decompressive Surgery*. Global Spine J. 2024;14(3 Suppl):174S–186S. doi:10.1177/21925682231181883. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964895/ — cirurgia precoce em até 24 horas quando aplicável.",
+    "4. AO Spine/Praxis Spinal Cord Institute. *A Clinical Practice Guideline on the Timing of Surgical Decompression and Hemodynamic Management of Acute Spinal Cord Injury: Introduction, Rationale, and Scope*. Global Spine J. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10964894/ — AIS e integração das recomendações.",
+    "**Entregue neste estágio:** introdução, bases anatômicas, fisiopatologia, sinais e síndromes, diagnóstico diferencial, TC/RM, AIS, conduta inicial, suporte hemodinâmico atualizado, cirurgia, complicações, 4 casos, 6 questões e matriz de imagens.",
+    "**Ainda pendente antes de declarar a apostila completa:** aprofundar avaliação segmentar ISNCSCI com tabelas motoras/sensitivas completas e exemplos de cálculo; discutir classificação AO Spine de lesões vertebrais e indicações específicas; ampliar cenários de imagem e contraindicações; incorporar atualização/referências brasileiras (trauma, reabilitação e rede SUS); aprofundar prevenção de complicações e seguimento por fases; obter imagens licenciadas; revisão independente de factualidade e estilo; elevar profundidade sem texto artificialmente inflado; preparar versão HTML/PWA apenas após apro",
+    "**Decisão:** continuar a expansão clínica e visual neste mesmo manuscrito. **NÃO PUBLICAR**, **NÃO MARCAR COMO 60K**, **NÃO APROVAR AUTOMATICAMENTE**."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng41/chapter/Recommendations",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10964888/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10964895/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10964894/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A associação de bradicardia e hipotensão aumenta a suspeita de perda simpática, mas não constitui teste diagnóstico definitivo."
+    },
+    {
+      "text": "Evitar hipóxia, hipercapnia significativa e hipotensão. A diretriz AO Spine/Praxis 2024 **sugere** aumentar a pressão arterial média a pelo menos **75–80 mmHg**, sem aumentá-la ativamente além de **90–95 mmHg**, durante **3 a 7 dias** após lesão medular aguda em adultos. A qualidade de evidência para esses limites é **muito baixa** e a força da recomendação é **fraca**; individualizar conforme sangramento, cardiopatia e capacidade de monitorização. O limite superior não exige tratar hipertensão espontânea: aplica-se à *elevação ativa* com fluidos/vasopressores."
+    },
+    {
+      "text": "Solicitar avaliação precoce da equipe de coluna/neurocirurgia para compressão medular, instabilidade, desalinhamento e piora neurológica. Diretriz AO Spine/Praxis 2024 recomenda oferecer **descompressão precoce em até 24 horas** como opção a adultos com lesão medular aguda, independentemente do nível ou gravidade, quando indicada e factível. Não se deve interpretá-la como obrigação de operar todo paciente com trauma de coluna: decisão depende de compressão/instabilidade, estado sistêmico, anatomia, risco e planejamento cirúrgico. Também não há base suficiente para determinar vantagem universal de janelas 'ultraprecoces' específicas."
+    },
+    {
+      "text": "**Não usar metilprednisolona rotineiramente para neuroproteção** na fase aguda. A NICE NG41 recomenda não administrá-la para esse objetivo, diante de falta de benefício clínico consistente e possíveis efeitos adversos. Alguns protocolos históricos diferem; a apostila precisa explicitar a controvérsia quando pertinente, sem apresentar uma dose antiga como tratamento padrão."
+    },
+    {
+      "text": "Homem de 25 anos sofre colisão automobilística, mantém olhos abertos e responde, mas não move os membros inferiores e apresenta fraqueza importante nos superiores. Refere parestesias bilaterais. PA 105/65 mmHg, FC 82/min, SpO₂ 97%. Há dor cervical mediana."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

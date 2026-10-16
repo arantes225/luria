@@ -1,0 +1,137 @@
+{
+  "sha": "3c5c6c252c8cfebe8e37408df2e9dd0cd1f5d05e",
+  "path": "apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "cuidados-perioperatorios-prevencao-complicacoes--3c5c6c252c",
+  "title": "Cuidados Perioperatórios e Prevenção de Complicações",
+  "format": ".json",
+  "chars_estimated": 119381,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Cuidados perioperatórios e prevenção de complicações: o cuidado continua após a incisão"
+    },
+    {
+      "id": "seguranca",
+      "title": "1. Cirurgia segura: identificação, time-out e comunicação"
+    },
+    {
+      "id": "infecçao",
+      "title": "2. Infecção do sítio cirúrgico: prevenir antes de tratar"
+    },
+    {
+      "id": "hemodinamica",
+      "title": "3. Volume, perfusão, hemorragia e prevenção de LRA"
+    },
+    {
+      "id": "respiratorio",
+      "title": "4. Recuperação anestésica, via aérea e complicações pulmonares"
+    },
+    {
+      "id": "trombo",
+      "title": "5. Profilaxia de tromboembolismo venoso: duas balanças simultâneas"
+    },
+    {
+      "id": "dor",
+      "title": "6. Dor aguda, náuseas e íleo: analgesia multimodal com objetivos claros"
+    },
+    {
+      "id": "nutricao",
+      "title": "7. Recuperação intensificada (ERAS): alimentar e mobilizar com segurança"
+    },
+    {
+      "id": "ferida",
+      "title": "8. Feridas, drenos, cateteres e vigilância da anastomose"
+    },
+    {
+      "id": "pos",
+      "title": "9. Raciocínio diário do pós-operatório: o que perguntar primeiro"
+    },
+    {
+      "id": "alta",
+      "title": "10. Alta hospitalar e seguimento: evitar a segunda complicação"
+    },
+    {
+      "id": "casos",
+      "title": "11. Cinco casos clínicos integradores comentados"
+    },
+    {
+      "id": "questoes",
+      "title": "12. Questões comentadas de residência"
+    },
+    {
+      "id": "referencias",
+      "title": "13. Referências rastreáveis e lacunas da versão atual"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"13. Referências rastreáveis e lacunas da versão atual\"]",
+    "[\"o\",[\"<a href=\\\"https://www.who.int/publications/i/item/9789241550475\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">OMS. Global Guidelines for Prevention of Surgical Site Infection, 2ª edição, 2018.</a>\",\"<a href=\\\"https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">OMS. WHO Surgical Safety Checklist, 19 itens.</a>\",\"<a href=\\\"https://www.nice.org.uk/guidance/ng89/chapter/Recommendations\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">NICE NG8",
+    "[\"p\",\"<strong>Benchmark comparativo:</strong> o arquivo do Drive '03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf' foi aberto, com foco em fístula, sangramento, hérnia interna e eventos metabólicos após cirurgia bariátrica. Ele NÃO é diretriz geral de pós-operatório e teve uso apenas para identificar uma vinheta de alerta de taquicardia; o texto, as tabelas e imagens do PDF não foram reproduzidos. A autoria institucional do PDF não foi comprovada.\"]",
+    "[\"p\",\"<strong>Estado editorial em 14/10/2026:</strong> os capítulos foram aprofundados com Anvisa/Ebserh (profilaxia), NICE/Caprini/ASRA (TEV), ERAS 2025 e consensos de NVPO (analgesia, recuperação intestinal), AABB 2023/KDIGO (hemorragia e LRA), IDSA 2024 (infecção abdominal). O módulo separado de ISC foi consolidado no capítulo original; foram mantidos seus casos, questões e sinais clínicos úteis. Ainda faltam auditoria de 60 mil caracteres <em>úteis</em> e de redundância semântica, verificação de doses por CCIH/bulário e anestesia, testes reais de layout/PWA, curadoria de imagens com licenç",
+    "[\"p\",\"Fontes oficiais: ANVISA, portal de Infecção de Sítio Cirúrgico (atualizado em 28/01/2026), https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico ; ANVISA, controle da infecção hospitalar e medidas de prevenção (2022), https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/controle-da-infeccao-hospitalar-prevencao-e-fundamental ; OMS, Global Guidelines for SSI, 2018. O comparativo do Drive '03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf' foi lido apenas para veri",
+    "[\"p\",\"<strong>Expansão editorial de 14/10/2026:</strong> aprofundadas recuperação respiratória, fisiologia de ventilação/oxigenação, ERAS funcional e tolerância alimentar, drenos/fístulas, deterioração na enfermaria, delirium hipoativo e alta segura; incluídos três casos e seis questões autorais complementares. Fundamentação adicional: ESAIC 2023/2024 (delirium), WHO/CDC (antibioticoprofilaxia e drenos), e ERAS Society 2025 (aplicação por procedimento). O arquivo permanece <strong>rascunho</strong>, sem renderização/catálogo; ainda requer aferição de caracteres didáticos úteis, revisão de coer"
+  ],
+  "external_urls": [
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico/protocolo-2-prevecao-de-isc-final.pdf",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PRT_UVS_121_Prevencao_infeccao_sitio_cirurgico_V04.pdf",
+    "https://academic.oup.com/ajhp/article/70/3/195/5112717",
+    "https://www.ncbi.nlm.nih.gov/books/NBK536431/",
+    "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/.",
+    "https://pubmed.ncbi.nlm.nih.gov/37824153/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3877708/",
+    "https://pubmed.ncbi.nlm.nih.gov/40783294/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/.",
+    "https://www.nice.org.uk/guidance/ng89/chapter/Recommendations",
+    "https://www.ncbi.nlm.nih.gov/books/NBK616080/",
+    "https://rapm.bmj.com/content/50/1/1",
+    "https://doi.org/10.1213/ANE.0000000000004833",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10241558/",
+    "https://www.who.int/publications/i/item/9789241550475",
+    "https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources",
+    "https://www.surgjournal.com/article/S0039-6060(25",
+    "https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10763721/",
+    "https://pubmed.ncbi.nlm.nih.gov/28467526/",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico",
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/controle-da-infeccao-hospitalar-prevencao-e-fundamental"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "Esta apostila se concentra nos princípios transversais do perioperatório de cirurgias gerais e do aparelho digestivo, relacionando-os a outras especialidades sem copiar protocolos exclusivos. A avaliação pré-operatória e estratificação cardiovascular aprofundada são tema de outra apostila LURIA; aqui o aluno aprende a transformar os riscos identificados em ações diárias. Para prevenção de infecção, considerar diretrizes da OMS e protocolos nacionais da CCIH; para tromboembolismo, risco individual e procedimentos; para recuperação, os princípios ERAS, especialmente a diretriz colorretal de 2025, sem presumir que todas as especialidades compart"
+    },
+    {
+      "section": "infecçao",
+      "text": "Antibioticoprofilaxia é administração de antimicrobiano <strong>antes da contaminação cirúrgica prevista</strong> para alcançar concentrações teciduais adequadas no momento da incisão. Não é tratamento de infecção já instalada. A OMS recomenda que a profilaxia, quando indicada para o procedimento, seja administrada antes da incisão, dentro dos <strong>120 minutos</strong> anteriores e considerando a farmacocinética. Para cefazolina e muitos agentes de meia-vida curta, protocolos costumam preferir administração dentro de 60 minutos antes da incisão; vancomicina e outros agentes de infusão prolongada exigem início mais precoce para completar in"
+    },
+    {
+      "section": "infecçao",
+      "text": "A indicação de cefazolina exige flora esperada e avaliação de alergia. 'Sou alérgico a penicilina' pode significar desde diarreia até anafilaxia verdadeira; a história precisa ser qualificada, e protocolos modernos evitam trocar cefazolina automaticamente por vancomicina em qualquer relato remoto de reação leve. Quando há reação imediata grave a betalactâmicos ou outra contraindicação específica, escolher alternativa recomendada para aquele procedimento e microbiologia. Vancomicina isoladamente não cobre todos os patógenos relevantes em cirurgia de cólon; carbapenêmico profilático de rotina aumenta pressão de seleção sem justificar benefício "
+    },
+    {
+      "section": "infecçao",
+      "text": "A IDSA atualizou em 2024 a avaliação do risco, diagnóstico por imagem e culturas para infecções intra-abdominais complicadas. Em pacientes com infecção complicada submetidos a procedimento de controle de foco, a diretriz sugere obter cultura de fluido intra-abdominal para orientar ajustes. A atualização de 2024 não é uma nova tabela completa de todos os tratamentos antibióticos; não atribuir a ela uma duração de tratamento que o documento não avaliou. Estudos e diretrizes anteriores, como STOP-IT, apoiam cursos curtos após controle de foco adequado em casos selecionados, porém persistência de instabilidade, foco não controlado ou imunossupres"
+    },
+    {
+      "section": "infecçao",
+      "text": "A preparação da pele deve usar antisséptico apropriado ao procedimento e à área, respeitando tempo de ação e secagem, sobretudo quando soluções alcoólicas estão presentes e haverá eletrocautério. A remoção de pelos não é recomendada de rotina; quando estritamente necessária para a técnica, aparar com equipamento adequado, evitando lâmina que produz microtrauma. Higiene de mãos e técnica asséptica são medidas permanentes, não atividades que ocorrem só na montagem inicial do campo. A contagem de compressas/instrumentos, a rotulagem de espécimes e o time-out também pertencem à prevenção de dano e não competem com a antibioticoprofilaxia."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

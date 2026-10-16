@@ -1,0 +1,639 @@
+{
+  "key": "violencia-maus-tratos-criancas-adolescentes--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/violencia-maus-tratos-criancas-adolescentes/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 163 — Violência e maus-tratos contra crianças e adolescentes",
+  "source_sha256": "f2f25832563167d42446148549ddd7c92256c8e57c83e21852d9229574b74644",
+  "chars_estimated": 64494,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 163 — Violência e maus-tratos contra crianças e adolescentes",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Por que este tema importa",
+      "level": 2
+    },
+    {
+      "line": 25,
+      "title": "2. Conceitos e classificações",
+      "level": 2
+    },
+    {
+      "line": 45,
+      "title": "3. Epidemiologia e contexto brasileiro",
+      "level": 2
+    },
+    {
+      "line": 53,
+      "title": "4. Fundamentos do raciocínio clínico",
+      "level": 2
+    },
+    {
+      "line": 64,
+      "title": "Regra TEN-4-FACESp",
+      "level": 3
+    },
+    {
+      "line": 70,
+      "title": "5. Sinais de alerta por apresentação",
+      "level": 2
+    },
+    {
+      "line": 85,
+      "title": "6. Entrevista e acolhimento sem revitimização",
+      "level": 2
+    },
+    {
+      "line": 104,
+      "title": "7. Exame físico e documentação",
+      "level": 2
+    },
+    {
+      "line": 114,
+      "title": "8. Investigação complementar na suspeita de violência física",
+      "level": 2
+    },
+    {
+      "line": 118,
+      "title": "Equimoses",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "Fraturas",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "Trauma craniano",
+      "level": 3
+    },
+    {
+      "line": 127,
+      "title": "Trauma abdominal",
+      "level": 3
+    },
+    {
+      "line": 130,
+      "title": "Principais diagnósticos diferenciais",
+      "level": 3
+    },
+    {
+      "line": 133,
+      "title": "9. Violência sexual: urgência clínica e proteção",
+      "level": 2
+    },
+    {
+      "line": 137,
+      "title": "Tempo desde a exposição",
+      "level": 3
+    },
+    {
+      "line": 145,
+      "title": "Particularidades da idade",
+      "level": 3
+    },
+    {
+      "line": 148,
+      "title": "Acompanhamento",
+      "level": 3
+    },
+    {
+      "line": 151,
+      "title": "10. Violência psicológica, negligência e violência digital",
+      "level": 2
+    },
+    {
+      "line": 153,
+      "title": "Violência psicológica",
+      "level": 3
+    },
+    {
+      "line": 156,
+      "title": "Negligência",
+      "level": 3
+    },
+    {
+      "line": 159,
+      "title": "Ambiente digital",
+      "level": 3
+    },
+    {
+      "line": 162,
+      "title": "11. Autolesão, ideação suicida e bullying",
+      "level": 2
+    },
+    {
+      "line": 170,
+      "title": "12. Como decidir o destino seguro",
+      "level": 2
+    },
+    {
+      "line": 185,
+      "title": "Fluxograma de conduta para UBS e emergência",
+      "level": 3
+    },
+    {
+      "line": 196,
+      "title": "13. Marco legal brasileiro de alta importância em prova",
+      "level": 2
+    },
+    {
+      "line": 198,
+      "title": "ECA — Lei 8.069/1990",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "Lei 13.431/2017",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "Lei 14.344/2022 — Lei Henry Borel",
+      "level": 3
+    },
+    {
+      "line": 207,
+      "title": "VIVA/SINAN",
+      "level": 3
+    },
+    {
+      "line": 210,
+      "title": "Regra operacional que evita erro",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "14. Ética, sigilo e prontuário",
+      "level": 2
+    },
+    {
+      "line": 219,
+      "title": "15. Complicações e prognóstico",
+      "level": 2
+    },
+    {
+      "line": 225,
+      "title": "16. Casos clínicos LURIA comentados",
+      "level": 2
+    },
+    {
+      "line": 227,
+      "title": "Caso 1 — Equimose em lactente sem mobilidade",
+      "level": 3
+    },
+    {
+      "line": 238,
+      "title": "Caso 2 — Adolescente com relato espontâneo de violência sexual",
+      "level": 3
+    },
+    {
+      "line": 247,
+      "title": "Caso 3 — Fratura em criança de pouca mobilidade",
+      "level": 3
+    },
+    {
+      "line": 256,
+      "title": "Caso 4 — Desnutrição, ausências e vulnerabilidade social",
+      "level": 3
+    },
+    {
+      "line": 265,
+      "title": "Caso 5 — Adolescente com autolesão e bullying digital",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "17. Oito questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 276,
+      "title": "Questão 1 — Comunicação ao Conselho Tutelar",
+      "level": 3
+    },
+    {
+      "line": 286,
+      "title": "Questão 2 — Notificação versus comunicação",
+      "level": 3
+    },
+    {
+      "line": 296,
+      "title": "Questão 3 — Equimose sentinela",
+      "level": 3
+    },
+    {
+      "line": 306,
+      "title": "Questão 4 — Escuta especializada",
+      "level": 3
+    },
+    {
+      "line": 316,
+      "title": "Questão 5 — Profilaxia após violência sexual",
+      "level": 3
+    },
+    {
+      "line": 326,
+      "title": "Questão 6 — Fraturas e diagnóstico diferencial",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "Questão 7 — Pobreza e negligência",
+      "level": 3
+    },
+    {
+      "line": 346,
+      "title": "Questão 8 — Notificação imediata",
+      "level": 3
+    },
+    {
+      "line": 356,
+      "title": "18. Resumo de alto rendimento — o que guardar para a prova",
+      "level": 2
+    },
+    {
+      "line": 373,
+      "title": "19. Recursos visuais planejados e governança de imagens",
+      "level": 2
+    },
+    {
+      "line": 389,
+      "title": "20. Referências fundamentais e aplicação",
+      "level": 2
+    },
+    {
+      "line": 406,
+      "title": "21. Auditoria editorial — pendências antes de publicação",
+      "level": 2
+    },
+    {
+      "line": 429,
+      "title": "22. Aprofundamento clínico: padrões de lesões por idade e desenvolvimento",
+      "level": 2
+    },
+    {
+      "line": 433,
+      "title": "22.1. Lactente sem mobilidade independente",
+      "level": 3
+    },
+    {
+      "line": 446,
+      "title": "22.2. Criança no início da marcha",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "22.3. Pré-escolar e escolar",
+      "level": 3
+    },
+    {
+      "line": 452,
+      "title": "22.4. Adolescente",
+      "level": 3
+    },
+    {
+      "line": 455,
+      "title": "22.5. Por que a coloração da equimose não resolve a cronologia?",
+      "level": 3
+    },
+    {
+      "line": 458,
+      "title": "23. Avaliação sistemática de fraturas e trauma oculto",
+      "level": 2
+    },
+    {
+      "line": 460,
+      "title": "23.1. Quando a radiografia muda a conduta",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "23.2. Diferenciais de fratura",
+      "level": 3
+    },
+    {
+      "line": 478,
+      "title": "23.3. Lesão abdominal não evidente",
+      "level": 3
+    },
+    {
+      "line": 481,
+      "title": "23.4. Suspeita de traumatismo craniano",
+      "level": 3
+    },
+    {
+      "line": 484,
+      "title": "24. Cuidado diante de revelação espontânea: exercício de técnica de entrevista",
+      "level": 2
+    },
+    {
+      "line": 503,
+      "title": "24.1. Se o acompanhante interfere na conversa",
+      "level": 3
+    },
+    {
+      "line": 506,
+      "title": "24.2. Se a criança não quer falar",
+      "level": 3
+    },
+    {
+      "line": 509,
+      "title": "24.3. Se há deficiência ou dificuldade de comunicação",
+      "level": 3
+    },
+    {
+      "line": 512,
+      "title": "25. Tomada de decisão clínica em violência sexual: perguntas fundamentais",
+      "level": 2
+    },
+    {
+      "line": 516,
+      "title": "25.1. Perguntas que mudam a conduta assistencial",
+      "level": 3
+    },
+    {
+      "line": 528,
+      "title": "25.2. A janela de 72 horas e seu significado",
+      "level": 3
+    },
+    {
+      "line": 531,
+      "title": "25.3. Exames e seguimento",
+      "level": 3
+    },
+    {
+      "line": 534,
+      "title": "25.4. Proteção à saúde mental",
+      "level": 3
+    },
+    {
+      "line": 537,
+      "title": "26. Interfaces com atenção primária, escola e assistência social",
+      "level": 2
+    },
+    {
+      "line": 539,
+      "title": "26.1. Papel da APS",
+      "level": 3
+    },
+    {
+      "line": 542,
+      "title": "26.2. Articulação com a assistência social",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "26.3. Relação com escola",
+      "level": 3
+    },
+    {
+      "line": 548,
+      "title": "26.4. Comunicação entre serviços",
+      "level": 3
+    },
+    {
+      "line": 562,
+      "title": "27. Situações especiais que exigem raciocínio diferente",
+      "level": 2
+    },
+    {
+      "line": 564,
+      "title": "27.1. Crianças com deficiência",
+      "level": 3
+    },
+    {
+      "line": 567,
+      "title": "27.2. Adolescente em relacionamento afetivo",
+      "level": 3
+    },
+    {
+      "line": 570,
+      "title": "27.3. Criança com doença crônica",
+      "level": 3
+    },
+    {
+      "line": 573,
+      "title": "27.4. Crianças indígenas, migrantes e outras populações com barreiras de acesso",
+      "level": 3
+    },
+    {
+      "line": 576,
+      "title": "27.5. Gestação na adolescência",
+      "level": 3
+    },
+    {
+      "line": 579,
+      "title": "28. Checklist de segurança da alta hospitalar",
+      "level": 2
+    },
+    {
+      "line": 596,
+      "title": "29. Comunicação e prevenção para familiares não agressores",
+      "level": 2
+    },
+    {
+      "line": 608,
+      "title": "30. Casos adicionais de integração entre diagnóstico e proteção",
+      "level": 2
+    },
+    {
+      "line": 610,
+      "title": "Caso 6 — Sintomas neurológicos sem lesões externas",
+      "level": 3
+    },
+    {
+      "line": 617,
+      "title": "Caso 7 — Abuso revelado fora da janela de profilaxia",
+      "level": 3
+    },
+    {
+      "line": 624,
+      "title": "Caso 8 — Lesões cutâneas em criança com coagulopatia",
+      "level": 3
+    },
+    {
+      "line": 631,
+      "title": "Caso 9 — Adolescente com ameaça de divulgação de imagens íntimas",
+      "level": 3
+    },
+    {
+      "line": 638,
+      "title": "31. Questões avançadas adicionais",
+      "level": 2
+    },
+    {
+      "line": 640,
+      "title": "Questão 9 — Estudo radiográfico do esqueleto",
+      "level": 3
+    },
+    {
+      "line": 650,
+      "title": "Questão 10 — Lesão genital ausente",
+      "level": 3
+    },
+    {
+      "line": 660,
+      "title": "Questão 11 — Responsabilidade após atendimento",
+      "level": 3
+    },
+    {
+      "line": 670,
+      "title": "Questão 12 — Trauma versus fragilidade óssea",
+      "level": 3
+    },
+    {
+      "line": 680,
+      "title": "Questão 13 — Relação entre notificação e consentimento",
+      "level": 3
+    },
+    {
+      "line": 690,
+      "title": "Questão 14 — Acolhimento e depoimento especial",
+      "level": 3
+    },
+    {
+      "line": 700,
+      "title": "32. Auditoria adicional após aprofundamento",
+      "level": 2
+    },
+    {
+      "line": 704,
+      "title": "Verificações finais indispensáveis",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **Brasil. Ministério da Saúde.** *Linha de cuidado para a atenção integral à saúde de crianças, adolescentes e suas famílias em situação de violências*. 1ª edição atualizada (2014). Guia de organização da assistência e cuidado em rede. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/publicacoes/linha-de-cuidado-para-a-atencao-integral-a-saude-de-criancas-adolescentes-e-suas-familias-em-situacao-de-violencias-orientacao-para-gestores-e-profissionais-de-saude/view",
+    "2. **Brasil. Ministério da Saúde.** *Prevenção de violências e intervenção para o cuidado*. Fluxo de acolhimento, notificação e seguimento. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/mais-programas/prevencao-de-violencias-e-intervencao-para-o-cuidado",
+    "3. **Brasil. Ministério da Saúde.** *VIVA/SINAN — Vigilância Contínua*. Notificação e modalidades imediatas. https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan",
+    "4. **Brasil. Ministério da Saúde.** *Profilaxia Pós-Exposição (PEP)*. Janelas e seguimento. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+    "5. **Brasil.** Lei 8.069/1990 (Estatuto da Criança e do Adolescente), texto compilado, art. 13 e dispositivos relacionados. https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+    "6. **Brasil.** Lei 13.431/2017. Sistema de garantia de direitos, escuta especializada e depoimento especial. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13431.htm",
+    "7. **Brasil.** Lei 14.344/2022 (Lei Henry Borel). https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14344.htm",
+    "8. **Sociedade Brasileira de Pediatria.** *Critérios diagnósticos da violência física ou trauma intencional contra crianças e adolescentes*. 2024. https://www.sbp.com.br/criterios-diagnosticos-da-violencia-fisica-ou-trauma-intencional-contra-criancas-e-adolescentes/",
+    "9. **Sociedade Brasileira de Pediatria.** *Documentos científicos — Combate às violências*. Coleção para atualização clínica. https://www.sbp.com.br/departamentos/combate-as-violencias/documentos-cientificos/",
+    "10. **American Academy of Pediatrics.** *The Evaluation of Suspected Child Physical Abuse*. Pediatrics. 2015;135:e1337–e1354; reafirmado em 2026. https://doi.org/10.1542/peds.2015-0356",
+    "11. **Pierce MC et al.** *Validation of a Clinical Decision Rule to Predict Abuse in Young Children Based on Bruising Characteristics*. JAMA Network Open. 2021;4:e215832. https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2778559",
+    "12. **American Academy of Pediatrics.** *Evaluating Young Children With Fractures for Child Abuse*. Pediatrics, 2025. https://doi.org/10.1542/peds.2024-070074",
+    "> **Controle de evidência:** as orientações brasileiras de notificação, PEP e proteção foram priorizadas. Evidência internacional foi utilizada para sinais clínicos e investigação de lesões, sem transplantar normas legais dos EUA para o Brasil."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/publicacoes/linha-de-cuidado-para-a-atencao-integral-a-saude-de-criancas-adolescentes-e-suas-familias-em-situacao-de-violencias-orientacao-para-gestores-e-profissionais-de-saude/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/mais-programas/prevencao-de-violencias-e-intervencao-para-o-cuidado",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13431.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14344.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/criterios-diagnosticos-da-violencia-fisica-ou-trauma-intencional-contra-criancas-e-adolescentes/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/departamentos/combate-as-violencias/documentos-cientificos/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1542/peds.2015-0356",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2778559",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1542/peds.2024-070074",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 2,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Área:** Pediatria • Interfaces: Medicina Preventiva, Medicina Legal, Urgência, Psiquiatria e Medicina de Família **Lote:** 09 — aula 163 do cronograma LURIA **Versão:** rascunho editorial científico 01 — 14/10/2026 **Estado:** em desenvolvimento; não publicado nem validado como material final. **Recorte:** assistência clínica e proteção no Brasil; envolve menores de 18 anos.",
+      "pattern": 0
+    },
+    {
+      "text": "Dados notificados representam apenas parcela da ocorrência real; subnotificação, medo, dependência econômica e dificuldade de acesso afetam a interpretação. Em comunicado de 02/10/2026, a SBP destacou média aproximada de 196 notificações diárias de violência física em pessoas de zero a 19 anos em 2023 e chamou atenção para o predomínio de agressões dentro do domicílio em crianças mais novas. Essa faixa etária (0–19 anos) **não equivale exatamente ao recorte legal de crianças e adolescentes até 17 anos**; os números não devem ser transplantados sem essa ressalva.",
+      "pattern": 0
+    },
+    {
+      "text": "É uma ferramenta de triagem de padrão de equimoses validada em crianças **menores de 4 anos que apresentam equimoses**. Componentes incluem tronco, orelha e pescoço (TEN), regiões da face e cavidade oral descritas na regra (FACES), qualquer equimose em lactente de até 4,99 meses e equimoses com padrão de objeto. Sensibilidade e especificidade aproximadas no estudo de validação foram 95,6% e 87,1%.",
+      "pattern": 0
+    },
+    {
+      "text": "A Sociedade Brasileira de Pediatria publicou em 2024 documento sobre critérios diagnósticos de violência física e, em outubro de 2026, reforçou a relevância da identificação da violência intrafamiliar. O Ministério da Saúde estabelece uma linha de cuidado que começa no acolhimento e alcança atendimento, notificação e seguimento em rede.",
+      "pattern": 1
+    },
+    {
+      "text": "O profissional precisa responder a seis perguntas: 1. Há emergência clínica ou trauma que exige estabilização imediata? 2. Há indícios de violência, negligência ou situação de exploração? 3. Que diagnósticos alternativos explicam os achados? 4. A criança estará segura ao sair do serviço? 5. Quais comunicações e encaminhamentos legais são obrigatórios? 6. Quem acompanhará a saúde física e mental depois da alta?",
+      "pattern": 1
+    },
+    {
+      "text": "**Violência sexual:** atos ou interações de natureza sexual envolvendo criança/adolescente, com ou sem contato físico, exploração sexual e modalidades mediadas por tecnologia. A inexistência de lesão genital visível não exclui violência sexual; atrasos na revelação são frequentes.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria • Interfaces: Medicina Preventiva, Medicina Legal, Urgência, Psiquiatria e Medicina de Família **Lote:** 09 — aula 163 do cronograma LURIA **Versão:** rascunho editorial científico 01 — 14/10/2026 **Estado:** em desenvolvimento; não publicado nem validado como material final. **Recorte:** assistência clínica e proteção no Brasil; envolve menores de 18 anos.",
+      "pattern": 2
+    },
+    {
+      "text": "A Sociedade Brasileira de Pediatria publicou em 2024 documento sobre critérios diagnósticos de violência física e, em outubro de 2026, reforçou a relevância da identificação da violência intrafamiliar. O Ministério da Saúde estabelece uma linha de cuidado que começa no acolhimento e alcança atendimento, notificação e seguimento em rede.",
+      "pattern": 2
+    },
+    {
+      "text": "Dados notificados representam apenas parcela da ocorrência real; subnotificação, medo, dependência econômica e dificuldade de acesso afetam a interpretação. Em comunicado de 02/10/2026, a SBP destacou média aproximada de 196 notificações diárias de violência física em pessoas de zero a 19 anos em 2023 e chamou atenção para o predomínio de agressões dentro do domicílio em crianças mais novas. Essa faixa etária (0–19 anos) **não equivale exatamente ao recorte legal de crianças e adolescentes até 17 anos**; os números não devem ser transplantados sem essa ressalva.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria • Interfaces: Medicina Preventiva, Medicina Legal, Urgência, Psiquiatria e Medicina de Família **Lote:** 09 — aula 163 do cronograma LURIA **Versão:** rascunho editorial científico 01 — 14/10/2026 **Estado:** em desenvolvimento; não publicado nem validado como material final. **Recorte:** assistência clínica e proteção no Brasil; envolve menores de 18 anos."
+    },
+    {
+      "text": "Violência contra crianças e adolescentes é um problema clínico, de saúde pública e de violação de direitos. Pode provocar lesões agudas, incapacidade, sofrimento psicológico, atraso de desenvolvimento, alterações comportamentais e consequências duradouras. A apresentação raramente chega com a queixa explícita “sofri violência”: o serviço pode receber uma criança por equimose, dor abdominal, atraso escolar, alteração do sono, infecções sexualmente transmissíveis ou lesão grave com relato incompatível."
+    }
+  ]
+}

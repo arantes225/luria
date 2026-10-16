@@ -1,0 +1,126 @@
+{
+  "sha": "58a914f8adadf880cbd7a403d957e2e19c50555c",
+  "path": "apostilas/resposta-metabolica-ao-trauma/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "resposta-metabolica-ao-trauma--58a914f8ad",
+  "title": "Resposta Metabólica ao Trauma",
+  "format": ".json",
+  "chars_estimated": 66885,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Resposta metabólica ao trauma: da agressão tecidual ao cuidado integral"
+    },
+    {
+      "id": "fases",
+      "title": "1. Conceitos fundamentais: estresse cirúrgico, ebb e flow"
+    },
+    {
+      "id": "hormonios",
+      "title": "2. Resposta neuroendócrina: simpático, cortisol, ADH e SRAA"
+    },
+    {
+      "id": "inflamacao",
+      "title": "3. Imunidade inata, DAMPs, citocinas e fase aguda"
+    },
+    {
+      "id": "substratos",
+      "title": "4. Glicose, lipídios, proteínas e balanço nitrogenado no trauma"
+    },
+    {
+      "id": "perfusao",
+      "title": "5. Perfusão, metabolismo anaeróbio e interpretação de lactato/base deficit"
+    },
+    {
+      "id": "endotelio",
+      "title": "6. Endotélio, glicocálix, coagulopatia e disfunção de órgãos"
+    },
+    {
+      "id": "organos",
+      "title": "7. Consequências sistêmicas: pulmão, rim, intestino, cérebro e músculo"
+    },
+    {
+      "id": "avaliacao",
+      "title": "8. Avaliação e estratificação: do trauma anatômico ao fenótipo metabólico"
+    },
+    {
+      "id": "nutricao",
+      "title": "9. Nutrição no trauma: quando começar, qual via e como evitar dano"
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Populações especiais e padrões metabólicos que modificam conduta"
+    },
+    {
+      "id": "algoritmo",
+      "title": "11. Algoritmo integrado e prognóstico: reconhecer a mudança de fase"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos integradores: mecanismos e decisões"
+    },
+    {
+      "id": "questoes",
+      "title": "13. Questões autorais de alto rendimento — comentários completos"
+    },
+    {
+      "id": "referencias",
+      "title": "14. Referências, matriz de autossuficiência e registro editorial"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"14. Referências, matriz de autossuficiência e registro editorial\"]",
+    "[\"3\",\"Referências científicas verificáveis\"]",
+    "[\"o\",[\"<a href=\\\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. doi:10.1186/s13054-023-04327-7.</a>\",\"<a href=\\\"https://www.clinicalnutritionjournal.com/article/S0261-5614%2823%2900230-3/fulltext\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">ESPEN. Practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clinical Nutrition, 2023.</a>\",\"<a href=\\\"https://www.clin",
+    "[\"3\",\"Matriz de competências internas\"]",
+    "[\"t\",[\"Eixo\",\"Capítulo\",\"Capacidade de prova/aplicação\"],[[\"Definição e fases ebb/flow\",\"Visão e 1\",\"Não confundir cronologia histórica com fases rígidas\"],[\"Hormônios e mecanismos\",\"2\",\"Explicar cortisol, catecolaminas, ADH/SRAA sem prescrever fármacos por reflexo\"],[\"Inflamação estéril versus infecção\",\"3\",\"Interpretar PCR e leucocitose em contexto temporal\"],[\"Carboidratos, proteínas e lipídios\",\"4\",\"Entender hiperglicemia, proteólise e balanço nitrogenado\"],[\"Perfusão, lactato e base deficit\",\"5\",\"Reconhecer hipoperfusão sem depender de Hb/PA isoladas\"],[\"Glicocálix e coagulopatia\",\"6\",\"Co",
+    "[\"p\",\"<strong>Comparação documental:</strong> foram lidos no Google Drive do usuário os PDFs '01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf', '01 - CHOQUE - ABORDAGEM INICIAL.pdf' e '01 - TRAUMA REVISAO ABCDE.pdf'. Nenhum tinha autoria institucional de Estratégia MED confirmada ou desenvolvimento abrangente específico de resposta metabólica. O material foi usado apenas como benchmark de escopo e identificação de lacunas; nenhum texto, imagem ou tabela foi copiado. Etapa zero e limitação documentadas no controle editorial do Lote 1.\"]",
+    "[\"p\",\"<strong>Estado editorial:</strong> rascunho autoral da aula 012; não revisado clinicamente por especialista independente, nem testado quanto à capacidade real de resolver conjunto representativo de questões de residência. Verificar particularidades brasileiras de suporte metabólico e nutrição; garantir ausência de redundância semântica com apostila 007 e temas 017/022, curadoria eventual de imagens pelo Admin e responsividade desktop/PWA. Sem HTML/index, nova publicação, merge ou deploy.\"]"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/",
+    "https://www.clinicalnutritionjournal.com/article/S0261-5614%2823%2900230-3/fulltext",
+    "https://www.clinicalnutritionjournal.com/article/S0261-5614%2825%2900243-2/fulltext",
+    "https://pubmed.ncbi.nlm.nih.gov/40957230/",
+    "https://www.espen.org/guidelines-home/espen-guidelines",
+    "https://www.braspenjournal.org/article/doi/10.37111/braspenj.diretrizDOENTEGRAVE"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "A pergunta central do médico é dupla: <strong>qual resposta fisiológica esperada estou observando?</strong> e <strong>quando ela se tornou sinal de hipoperfusão, infecção, falência metabólica ou lesão secundária tratável?</strong> Glicose de 190 mg/dL pode refletir resistência à insulina do estresse ou diabetes subjacente; lactato de 4 mmol/L pode sinalizar choque hemorrágico, mas também catecolaminas, convulsão, falência hepática ou outros mecanismos. A tendência e o contexto valem mais que a rotulagem automática de qualquer número."
+    },
+    {
+      "section": "fases",
+      "text": "Não existe corte universal em 24 ou 48 horas. A ebb pode dominar horas iniciais e persistir enquanto houver choque; características de flow podem coexistir precocemente com resposta adrenérgica. Pessoas submetidas a cirurgia de pequena agressão podem ter mudanças discretas; vítimas de queimadura extensa, infecção secundária ou operações repetidas podem permanecer catabólicas por semanas. O modelo fornece organização conceitual, não critério diagnóstico validado para todos."
+    },
+    {
+      "section": "inflamacao",
+      "text": "Febre leve e leucocitose próximas a uma operação podem acompanhar inflamação estéril. Febre persistente associada a novo choque, piora de oxigenação, secreção purulenta, dor abdominal progressiva ou disfunção orgânica impõe investigação de complicação. O tempo isolado não estabelece diagnóstico: uma pessoa idosa pode ter infecção grave sem febre. Em vez de tratar PCR como doença, reavaliar achados objetivos e buscar foco quando indicado."
+    },
+    {
+      "section": "substratos",
+      "text": "O diagnóstico de hiperglicemia do estresse exige interpretação clínica, não um limite isolado que dispense investigar diabetes. HbA1c ajuda a avaliar exposição glicêmica prévia quando sua interpretação é válida, porém sangramento, transfusão e condições hematológicas podem distorcer resultado. Ao iniciar dieta, vasopressores, glicocorticoides ou nutrição parenteral, as doses de insulina e a necessidade de monitorização podem mudar. Uma correção agressiva para valores normoglicêmicos de pessoa saudável aumenta hipoglicemia e não é meta apropriada por padrão em trauma grave."
+    },
+    {
+      "section": "perfusao",
+      "text": "Lactato integra metabolismo intermediário normal e pode se elevar por hipóxia celular, ativação β-adrenérgica de glicólise aeróbia, convulsões, exercício, uso de catecolaminas, fármacos, deficiência de tiamina e menor depuração hepática. Em trauma com hipotensão, extremidades frias, alteração mental e sangramento suspeito, a hipoperfusão é prioritária; entretanto, reconhecer causas adicionais melhora interpretação da persistência após hemostasia. A diretriz europeia de trauma, sexta edição (2023), recomenda lactato seriado como auxílio à estimativa da gravidade da hemorragia e da hipoperfusão, não como exame etiológico exclusivo."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

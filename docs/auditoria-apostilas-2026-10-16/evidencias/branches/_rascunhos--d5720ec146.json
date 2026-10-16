@@ -1,0 +1,356 @@
+{
+  "sha": "d5720ec146ced531411da3ad08d70985e5f1c021",
+  "path": "apostilas/_rascunhos/lote-05-112-diverticulite-aguda.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d5720ec146",
+  "title": "LURIA — Apostila 112: Diverticulite aguda",
+  "format": ".md",
+  "chars_estimated": 74394,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 112: Diverticulite aguda"
+    },
+    {
+      "title": "0. Etapa zero, inventário e compromisso científico"
+    },
+    {
+      "title": "1. Doença diverticular: o que realmente está inflamado?"
+    },
+    {
+      "title": "1.1. Por que sigmoide é clássico no Ocidente?"
+    },
+    {
+      "title": "1.2. Diverticulose não evolui inevitavelmente para diverticulite"
+    },
+    {
+      "title": "1.3. Epidemiologia e modificadores de risco"
+    },
+    {
+      "title": "2. Fisiopatologia da crise: microperfuração, resposta inflamatória e controle de foco"
+    },
+    {
+      "title": "2.1. Inflamação não significa sempre infecção que necessita antibiótico"
+    },
+    {
+      "title": "2.2. De onde vem o risco de perfuração?"
+    },
+    {
+      "title": "3. História e semiologia: não fazer diagnóstico apenas pelo quadrante"
+    },
+    {
+      "title": "3.1. Sinais que alteram categoria de risco imediatamente"
+    },
+    {
+      "title": "3.2. O velho “tríade dor, febre e leucocitose” é fraco para exclusão"
+    },
+    {
+      "title": "4. Diagnósticos diferenciais por mecanismo e pista discriminativa"
+    },
+    {
+      "title": "5. Exames iniciais: o hemograma não classifica Hinchey"
+    },
+    {
+      "title": "6. Tomografia: o exame que transforma suspeita em mapa anatômico"
+    },
+    {
+      "title": "6.1. Interpretação em cinco perguntas"
+    },
+    {
+      "title": "6.2. US e RM"
+    },
+    {
+      "title": "6.3. Contraste em paciente de risco"
+    },
+    {
+      "title": "7. Classificação: Hinchey original e modificada não são a mesma tabela"
+    },
+    {
+      "title": "7.1. Conduta não pode ser deduzida por número sem fisiologia"
+    },
+    {
+      "title": "8. WSES 2020: classificação tomográfica, não equivalência literal a Hinchey"
+    },
+    {
+      "title": "8.1. Não são equivalentes absolutos"
+    },
+    {
+      "title": "8.2. Peritonite não é achado radiológico isolado"
+    },
+    {
+      "title": "9. Não complicada, complicada e “alto risco” — três dimensões separadas"
+    },
+    {
+      "title": "9.1. Quadro comparativo que evita erro de prova"
+    },
+    {
+      "title": "10. Manejo inicial na emergência: pensar ABC antes de classificar Hinchey"
+    },
+    {
+      "title": "11. Diverticulite não complicada: quando observação é tratamento correto"
+    },
+    {
+      "title": "11.1. Ensaios e força de recomendação"
+    },
+    {
+      "title": "11.2. Retorno orientado: a alta precisa vir com plano"
+    },
+    {
+      "title": "12. Antibioticoterapia quando indicada: espectro, duração e descalonamento"
+    },
+    {
+      "title": "12.1. Antibiótico também pode causar dano"
+    },
+    {
+      "title": "13. Abscesso diverticular: o tamanho orienta, não governa sozinho"
+    },
+    {
+      "title": "13.1. Por que diretrizes diferem entre 3 cm e 4–5 cm?"
+    },
+    {
+      "title": "13.2. A janela importa tanto quanto a medida"
+    },
+    {
+      "title": "13.3. Quando reimaginá-lo?"
+    },
+    {
+      "title": "13.4. Após resolução do abscesso"
+    },
+    {
+      "title": "14. Gás extraluminal, microperfuração e peritonite"
+    },
+    {
+      "title": "14.1. Peritonite purulenta vs fecal"
+    },
+    {
+      "title": "14.2. Lavagem laparoscópica isolada não é rotina universal"
+    },
+    {
+      "title": "15. Cirurgia de urgência: controlar foco, escolher técnica conforme fisiologia"
+    },
+    {
+      "title": "15.1. Ressecção do sigmoide e anastomose primária"
+    },
+    {
+      "title": "15.2. Cirurgia de Hartmann"
+    },
+    {
+      "title": "15.3. Controle de danos"
+    },
+    {
+      "title": "15.4. Via laparoscópica ou aberta"
+    },
+    {
+      "title": "16. Fístulas, estenose e obstrução: consequências crônicas de episódios inflamatórios"
+    },
+    {
+      "title": "16.1. Fístula colovesical"
+    },
+    {
+      "title": "16.2. Fístulas colo-vaginal e coloentérica"
+    },
+    {
+      "title": "16.3. Estenose pós-inflamatória"
+    },
+    {
+      "title": "16.4. Sangramento diverticular continua sendo outra síndrome"
+    },
+    {
+      "title": "17. Cirurgia eletiva: decisão de risco e qualidade de vida, não contagem automática"
+    },
+    {
+      "title": "17.1. O objetivo não é operar para “tirar todos os divertículos”"
+    },
+    {
+      "title": "17.2. Dor crônica após cirurgia"
+    },
+    {
+      "title": "18. Colonoscopia após diverticulite: quando, para quem e por quê?"
+    },
+    {
+      "title": "18.1. Sinais de alarme que elevam suspeita oncológica"
+    },
+    {
+      "title": "18.2. Por que 6–8 semanas é mais adequado que 3?"
+    },
+    {
+      "title": "19. Prevenção de recorrência: desmontando mitos alimentares"
+    },
+    {
+      "title": "19.1. Recorrência não significa falha moral ou indicação cirúrgica automática"
+    },
+    {
+      "title": "20. Imunossuprimidos, idosos e gestantes"
+    },
+    {
+      "title": "20.1. Imunossupressão"
+    },
+    {
+      "title": "20.2. Idoso frágil"
+    },
+    {
+      "title": "20.3. Gestantes"
+    },
+    {
+      "title": "20.4. Doença renal, anticoagulação e doença cardiovascular"
+    },
+    {
+      "title": "21. Abordagem clínica de follow-up pós-alta e falha terapêutica"
+    },
+    {
+      "title": "22. Aplicação ao SUS e realidade do serviço: a diretriz não é o mesmo que recurso disponível"
+    },
+    {
+      "title": "23. Algoritmos de decisão: do primeiro contato ao controle de foco"
+    },
+    {
+      "title": "Fluxo A — paciente com dor em FIE"
+    },
+    {
+      "title": "Fluxo B — TC mostra não complicada"
+    },
+    {
+      "title": "Fluxo C — TC mostra abscesso"
+    },
+    {
+      "title": "Fluxo D — peritonite generalizada / choque"
+    },
+    {
+      "title": "Fluxo E — após melhora"
+    },
+    {
+      "title": "24. Pérolas cirúrgicas e pegadinhas de residência"
+    },
+    {
+      "title": "25. Oito casos clínico-cirúrgicos comentados"
+    },
+    {
+      "title": "Caso 1 — A primeira crise não complicada que não precisa de antibiótico obrigatório"
+    },
+    {
+      "title": "Caso 2 — Abscesso de 3,5 cm: a divergência entre guidelines"
+    },
+    {
+      "title": "Caso 3 — Abscesso pélvico grande com janela segura"
+    },
+    {
+      "title": "Caso 4 — Perfuração e choque: não atrasar controle de foco"
+    },
+    {
+      "title": "Caso 5 — Pneumatúria meses após diverticulite"
+    },
+    {
+      "title": "Caso 6 — A colonoscopia do passado não substitui raciocínio atual"
+    },
+    {
+      "title": "Caso 7 — O paciente imunossuprimido cuja TC parece leve"
+    },
+    {
+      "title": "Caso 8 — Dor pélvica, estenose e risco de câncer"
+    },
+    {
+      "title": "26. Dez questões autorais completas, com justificativa individual das alternativas"
+    },
+    {
+      "title": "Questão 1 — Diverticulose versus diverticulite"
+    },
+    {
+      "title": "Questão 2 — TC em diverticulite"
+    },
+    {
+      "title": "Questão 3 — Sem antibiótico?"
+    },
+    {
+      "title": "Questão 4 — Abscesso e limiares"
+    },
+    {
+      "title": "Questão 5 — Hinchey"
+    },
+    {
+      "title": "Questão 6 — Hartmann e anastomose"
+    },
+    {
+      "title": "Questão 7 — Fístula colovesical"
+    },
+    {
+      "title": "Questão 8 — Colonoscopia pós-crise"
+    },
+    {
+      "title": "Questão 9 — Cirurgia eletiva"
+    },
+    {
+      "title": "Questão 10 — Paciente em risco"
+    },
+    {
+      "title": "27. Camada visual: dez candidatos para imagem médica real ou diagrama original"
+    },
+    {
+      "title": "28. Referências reais com propósito explícito"
+    },
+    {
+      "title": "29. Auditoria científica e editorial preliminar — não publicar ainda"
+    }
+  ],
+  "reference_entries": [
+    "1. **American Society of Colon and Rectal Surgeons (ASCRS).** *The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Treatment of Left-Sided Colonic Diverticulitis*. 2020. https://www.ascrsu.com/ascrs/view/ASCRS-Toolkit/2851063/all/Treatment_of_Left_Sided_Colonic_Diverticulitis__2020_ . Diagnóstico, abscessos, cirurgias eletivas e de urgência, antibioticoterapia seletiva.",
+    "2. **World Society of Emergency Surgery (WSES).** Sartelli M et al. *2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting*. World Journal of Emergency Surgery. 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/ . Classificação tomográfica, abscesso pequeno e grande, foco, cirurgia.",
+    "3. **American College of Physicians (ACP).** Qaseem A et al. *Diagnosis and Management of Acute Left-Sided Colonic Diverticulitis*. Ann Intern Med. 2022;175:399–415. https://doi.org/10.7326/M21-2710 . TC quando incerteza; ambulatorial e sem antibiótico em selecionados.",
+    "4. **ACP.** *Colonoscopy for Diagnostic Evaluation and Interventions to Prevent Recurrence After Acute Left-Sided Colonic Diverticulitis*. Ann Intern Med. 2022;175:416–431. https://pubmed.ncbi.nlm.nih.gov/35038270/ . Rastreio pós-crise e decisões de prevenção.",
+    "5. **American Gastroenterological Association (AGA).** Peery AF et al. *AGA Clinical Practice Update on Medical Management of Colonic Diverticulitis*. Gastroenterology. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC7878331/ . Colonoscopia, seguimento, casos leves e fatores de risco.",
+    "6. **NICE NG147.** *Diverticular disease: diagnosis and management.* https://www.nice.org.uk/guidance/ng147/chapter/Recommendations . TC para abscesso, drenagem quando >3 cm, transição de antibiótico IV/VO e decisões cirúrgicas.",
+    "7. **European Society of Coloproctology.** Schultz JK et al. *Guidelines for management of diverticular disease of the colon*. Colorectal Disease. 2020. https://onlinelibrary.wiley.com/doi/10.1111/codi.15140 . Definições de não complicada e complicada.",
+    "8. **Umbrella review de guidelines para abscessos.** 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10488020/ . Destaca ausência de corte de diâmetro universal e diferenças de diretrizes.",
+    "9. **Apostila LURIA 102 — Obstrução intestinal.** Manuscrito privado preservado na branch editorial (sem nova cópia); consultar para obstrução/estenose.",
+    "10. **Documento do acervo privado:** “10 - ABDOME AGUDO INFLAMATORIO - DIVERTICULITE AGUDA.pdf”, aproximadamente 6.088 caracteres, consultado só como benchmark, **sem reprodução ou autorização comercial**.",
+    "**Cobertura:** diverticulose versus diverticulite/sangramento; anatomia e fisiopatologia; epidemiologia, riscos, manifestações clássicas/atípicas; diferenciais abdominais e urinários; exames e TC; Hinchey original e modificada versus WSES; não complicada sem antibiótico em selecionados; indicação antibiótica em risco e complicação; abscesso com divergência ASCRS/NICE 3 cm versus WSES 4–5 cm; drenagem e falha; peritonite, cirurgia de urgência e reconstrução individualizada; fístulas/estenoses; colonoscopia pós-crise e diferenças de diretriz; prevenção e SUS; cinco fluxos, oito casos clínico-cir",
+    "**Pendências obrigatórias antes de liberar:** revisão independente de cirurgia colorretal, radiologia e infectologia; atualização das fontes mais novas até a data real de publicação; revisar todos os esquemas antibióticos em bulário nacional (nenhum pronto); checar nomenclatura exata de WSES em sua versão oficial e limites entre abscesso/pericólico/ar distante, além de indicação de Hartmann versus anastomose por evidência; imagens reais de TC com licença comercial e legenda, revisão de cada questão e caso; deduplicar cirurgia da 102, revisar qualidade textual e converter ao renderer das aposti",
+    "**Auditoria geral futura pelo Codex:** documento já salvo em apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md e obrigatório depois que TODOS os lotes estiverem escritos. O Codex deve auditar ciência, qualidade, duplicações, imagens, licenças, links, acessibilidade e integração por PR, sem publicação automática.",
+    "**ESTADO: MANUSCRITO ORIGINAL EDITORIAL; NÃO APROVADO E NÃO PUBLICADO.**"
+  ],
+  "external_urls": [
+    "https://www.ascrsu.com/ascrs/view/ASCRS-Toolkit/2851063/all/Treatment_of_Left_Sided_Colonic_Diverticulitis__2020_",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/",
+    "https://doi.org/10.7326/M21-2710",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7878331/",
+    "https://www.nice.org.uk/guidance/ng147/chapter/Recommendations",
+    "https://onlinelibrary.wiley.com/doi/10.1111/codi.15140",
+    "https://pubmed.ncbi.nlm.nih.gov/35038270/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10488020/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes principais:** 1. **ASCRS 2020**, *Treatment of Left-Sided Colonic Diverticulitis*, https://www.ascrsu.com/ascrs/view/ASCRS-Toolkit/2851063/all/Treatment_of_Left_Sided_Colonic_Diverticulitis__2020_ . Inclui diagnóstico por TC, antibioticoterapia seletiva, abscesso >3 cm e individualização da cirurgia eletiva. 2. **WSES 2020**, *Management of acute colonic diverticulitis in emergency setting*, https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/ . Propõe classificação por TC, abscessos pequenos versus grandes frequentemente com referência de 4–5 cm e decisões cirúrgicas conforme estabilidade. 3. **ACP 2022**, *Diagnosis and Management of "
+    },
+    {
+      "text": "**Nota de método:** a presença de diretriz internacional não prova que determinado antibiótico esteja disponível ou seja sensível na rede brasileira. O **antibiograma local, estabilidade, alergia, função renal, gravidade, cirurgia e disponibilidade de radiologia intervencionista** determinam condutas. Não serão incorporadas receitas de dose única sem revisão farmacêutica. Não transformar recomendação fraca em regra absoluta."
+    },
+    {
+      "text": "**Diverticulose:** presença de divertículos, com ou sem sintomas. **Diverticulite:** inflamação de segmento diverticular e tecidos adjacentes, podendo cursar de espessamento/estrias da gordura a microperfuração bloqueada, abscesso e peritonite generalizada. **Hemorragia diverticular:** sangramento de vaso associado ao divertículo, habitualmente apresentação de hematoquezia **sem processo inflamatório predominante**. **Doença diverticular sintomática não complicada (SUDD):** sintomas crônicos em cólon com divertículos, sem critérios de diverticulite aguda; seu diagnóstico exige excluir outras causas."
+    },
+    {
+      "text": "A ausência de febre não afasta diverticulite; leucocitose pode surgir em inúmeras doenças. A acurácia de diagnóstico puramente clínico é limitada, sobretudo no primeiro episódio e em apresentações atípicas. **A TC pode confirmar inflamação e detectar complicação que muda toda a estratégia**. Um paciente com dor aparentemente moderada pode ter abscesso localizado, e outro com muita dor pode ter colite sem diverticulite."
+    },
+    {
+      "text": "| Diagnóstico | Pistas que aproximam | O que ajuda a distinguir | |---|---|---| | **Câncer de cólon** | Idade, mudança persistente do hábito intestinal, anemia ferropriva, perda ponderal; pode inflamar/obstruir | TC pode sugerir massa; colonoscopia/biópsia após fase aguda quando indicada | | **Colite isquêmica** | Dor + diarreia sanguinolenta, hipotensão/vasculopatia, distribuição segmentar | Contexto vascular, TC, endoscopia quando segura | | **Doença inflamatória intestinal** | Episódios recorrentes, diarreia crônica, manifestações extraintestinais | Colonoscopia/histologia e imagem após estabilização | | **Apendicite** | Dor FID, migração,"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

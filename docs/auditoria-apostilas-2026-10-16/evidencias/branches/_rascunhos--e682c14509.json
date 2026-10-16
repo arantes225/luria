@@ -1,0 +1,170 @@
+{
+  "sha": "e682c145092042d17cc0a7370468480e4f85a829",
+  "path": "apostilas/_rascunhos/lote-06-116-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--e682c14509",
+  "title": "Síndromes Glomerulares",
+  "format": ".json",
+  "chars_estimated": 88410,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "como-estudar",
+      "title": "Como estudar este caderno"
+    },
+    {
+      "id": "cap-01-anatomia-e-fisiologia-da-barreira-glomerular",
+      "title": "1. Anatomia e fisiologia da barreira glomerular"
+    },
+    {
+      "id": "cap-02-reconhecimento-das-sindromes-glomerulares",
+      "title": "2. Reconhecimento das síndromes glomerulares"
+    },
+    {
+      "id": "cap-03-historia-exame-fisico-edema-hematuria-e-proteinuria",
+      "title": "3. História, exame físico, edema, hematúria e proteinúria"
+    },
+    {
+      "id": "cap-04-avaliacao-inicial-e-reconhecimento-de-urgencias",
+      "title": "4. Avaliação inicial e reconhecimento de urgências"
+    },
+    {
+      "id": "cap-05-imunologia-e-exames-complementares-escolher-e-interpret",
+      "title": "5. Imunologia e exames complementares: escolher e interpretar"
+    },
+    {
+      "id": "cap-06-biopsia-renal-e-anatomopatologia-clinica",
+      "title": "6. Biópsia renal e anatomopatologia clínica"
+    },
+    {
+      "id": "cap-07-diagnosticos-diferenciais-de-alto-impacto",
+      "title": "7. Diagnósticos diferenciais de alto impacto"
+    },
+    {
+      "id": "cap-08-tratamento-de-suporte-e-seguranca-renal",
+      "title": "8. Tratamento de suporte e segurança renal"
+    },
+    {
+      "id": "cap-09-sindrome-nefrotica-na-infancia",
+      "title": "9. Síndrome nefrótica na infância"
+    },
+    {
+      "id": "cap-10-doenca-de-lesoes-minimas-no-adulto",
+      "title": "10. Doença de lesões mínimas no adulto"
+    },
+    {
+      "id": "cap-11-glomeruloesclerose-segmentar-e-focal-gesf",
+      "title": "11. Glomeruloesclerose segmentar e focal (GESF)"
+    },
+    {
+      "id": "cap-12-nefropatia-membranosa",
+      "title": "12. Nefropatia membranosa"
+    },
+    {
+      "id": "cap-13-glomerulonefrite-associada-a-infeccao-e-glomerulopatia-",
+      "title": "13. Glomerulonefrite associada a infecção e glomerulopatia C3"
+    },
+    {
+      "id": "cap-14-nefropatia-por-iga-e-vasculite-por-iga",
+      "title": "14. Nefropatia por IgA e vasculite por IgA"
+    },
+    {
+      "id": "cap-15-nefrite-lupica",
+      "title": "15. Nefrite lúpica"
+    },
+    {
+      "id": "cap-16-glomerulonefrite-rapidamente-progressiva-gnrp",
+      "title": "16. Glomerulonefrite rapidamente progressiva (GNRP)"
+    },
+    {
+      "id": "cap-17-doenca-anti-membrana-basal-glomerular",
+      "title": "17. Doença anti-membrana basal glomerular"
+    },
+    {
+      "id": "cap-18-vasculites-associadas-a-anca",
+      "title": "18. Vasculites associadas a ANCA"
+    },
+    {
+      "id": "cap-19-doencas-hereditarias-e-causas-sistemicas",
+      "title": "19. Doenças hereditárias e causas sistêmicas"
+    },
+    {
+      "id": "cap-20-prognostico-seguimento-e-cuidado-longitudinal",
+      "title": "20. Prognóstico, seguimento e cuidado longitudinal"
+    },
+    {
+      "id": "cap-21-vinhetas-de-interpretacao-laboratorial",
+      "title": "21. Vinhetas de interpretação laboratorial"
+    },
+    {
+      "id": "cap-22-oito-casos-clinicos-comentados",
+      "title": "22. Oito casos clínicos comentados"
+    },
+    {
+      "id": "cap-23-doze-questoes-originais-comentadas",
+      "title": "23. Doze questões originais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"Ministério da Saúde — PCDT Síndrome Nefrótica Primária em Adultos (Portaria 08/2020)\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos/view\"}",
+    "{\"label\":\"Ministério da Saúde — PCDT Síndrome Nefrótica Primária em Crianças e Adolescentes\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes/view\"}",
+    "{\"label\":\"Conitec — Portal de PCDTs e normas vigentes\",\"url\":\"https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/pcdt\"}",
+    "{\"label\":\"Portaria SECTICS/MS nº 77/2025 — rituximabe em síndrome nefrótica pediátrica\",\"url\":\"https://bvs.saude.gov.br/bvs/saudelegis/sctie/2025/prt0077_01_10_2025.html\"}",
+    "{\"label\":\"Conitec — Incorporação de micofenolato em síndrome nefrótica pediátrica (2025)\",\"url\":\"https://www.gov.br/conitec/pt-br/assuntos/noticias/2025/outubro/novos-medicamentos-passam-a-integrar-o-tratamento-da-sindrome-nefrotica-primaria-em-criancas-e-adolescentes-no-sus\"}",
+    "{\"label\":\"KDIGO — Glomerular Diseases Guidelines (2021 e atualizações)\",\"url\":\"https://kdigo.org/guidelines/gd/\"}",
+    "{\"label\":\"KDIGO — Nephrotic Syndrome in Children 2025\",\"url\":\"https://kdigo.org/guidelines/nephrotic-syndrome-in-children/\"}",
+    "{\"label\":\"KDIGO — IgA Nephropathy and IgA Vasculitis 2025\",\"url\":\"https://kdigo.org/guidelines/iga-nephropathy/\"}",
+    "{\"label\":\"KDIGO — Lupus Nephritis 2024\",\"url\":\"https://kdigo.org/guidelines/lupus-nephritis/\"}",
+    "{\"label\":\"KDIGO — ANCA-associated Vasculitis 2024\",\"url\":\"https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/\"}",
+    "{\"label\":\"KDIGO — Evaluation and Management of CKD 2024\",\"url\":\"https://kdigo.org/guidelines/ckd-evaluation-and-management/\"}"
+  ],
+  "external_urls": [
+    "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7474711/",
+    "https://kdigo.org/guidelines/gd/",
+    "https://bvs.saude.gov.br/bvs/saudelegis/sctie/2025/prt0077_01_10_2025.html",
+    "https://www.gov.br/conitec/pt-br/assuntos/noticias/2025/outubro/novos-medicamentos-passam-a-integrar-o-tratamento-da-sindrome-nefrotica-primaria-em-criancas-e-adolescentes-no-sus",
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/pcdt",
+    "https://kdigo.org/guidelines/nephrotic-syndrome-in-children/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos/view",
+    "https://kdigo.org/guidelines/lupus-nephritis/.",
+    "https://kdigo.org/guidelines/gd/.",
+    "https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/.",
+    "https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/",
+    "https://kdigo.org/guidelines/iga-nephropathy/",
+    "https://kdigo.org/guidelines/lupus-nephritis/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O roteiro parte da barreira de filtração, segue para a identificação das síndromes e a interpretação de exames, e só então entra nas principais doenças. Em cada condição, diferencie o fenótipo clínico (nefrítico, nefrótico, rapidamente progressivo), a causa (imune, infecciosa, hereditária ou adaptativa), a gravidade atual e a atividade potencialmente reversível. Esses quatro eixos impedem dois erros frequentes: chamar proteinúria de diagnóstico histológico e decidir imunossupressão sem reconhecer mecanismos e infecções."
+    },
+    {
+      "text": "A relação albumina/creatinina urinária (RAC ou ACR) mede albumina em relação à creatinina e costuma ser informada em mg/g. A relação proteína/creatinina urinária (RPC ou PCR) mede proteínas totais, muitas vezes em g/g, mas o laboratório também pode apresentar mg/g. Antes de interpretar o número, leia sempre qual analito foi medido e a unidade, pois RAC 300 mg/g não é o mesmo que RPC 300 g/g. O aumento da RAC é particularmente útil para classificar risco renal; já a RPC pode captar proteínas não albumínicas e é frequentemente útil na quantificação de proteinúria glomerular."
+    },
+    {
+      "text": "Na nomenclatura da doença renal crônica KDIGO 2024, a albuminúria persistente é classificada em A1 (RAC menor que 30 mg/g), A2 (30–299 mg/g) e A3 (300 mg/g ou mais). Essas classes representam grau de albuminúria, e não substituem a classificação de causa e TFG. Um paciente em A3 não apresenta necessariamente síndrome nefrótica: a faixa nefrótica de proteína total em adultos é classicamente excreção acima de aproximadamente 3,5 g/dia, enquanto a síndrome clínica combina proteinúria importante, hipoalbuminemia e frequentemente edema. A albuminúria persistente por período superior a três meses pode integrar definição de doença renal crônica mesm"
+    },
+    {
+      "text": "Um conjunto de testes só acrescenta informação quando nasce de uma pergunta clínica. Hematúria com consumo de C3, recente piodermite e melhora gradual favorece GN associada a infecção; títulos de ANCA pedidos sem manifestações sugestivas podem confundir ao gerar achados incidentais. Sedimento nefrítico com perda rápida de TFG e hemorragia pulmonar eleva a urgência para ANCA MPO/PR3 e anti-MBG, enquanto a biópsia ajuda a determinar mecanismo. Proteinúria nefrótica em adulto com fenótipo membranoso justifica avaliação de PLA2R e pesquisa orientada de causas secundárias. A interpretação de ANA positivo depende de título, manifestações sistêmicas"
+    },
+    {
+      "text": "A expressão crescente glomerular descreve proliferação celular e acúmulo de componentes no espaço de Bowman em resposta a injúria intensa da parede capilar. Não é diagnóstico etiológico por si só. A imunofluorescência permite três grandes pistas: deposição linear de IgG na doença anti-MBG; depósitos granulares em processos por imunocomplexos, como lúpus e IgA; e pouca ou nenhuma deposição imune nas vasculites pauci-imunes, muitas vezes associadas a ANCA. Na prática, há apresentações sobrepostas, inclusive ANCA associado a anti-MBG."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

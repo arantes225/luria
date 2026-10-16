@@ -1,0 +1,343 @@
+{
+  "sha": "43251477c992bc3b33f4920557346639a9f8f5c0",
+  "path": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--43251477c9",
+  "title": "Asma brônquica / Doença pulmonar obstrutiva crônica / Diabetes mellitus: classificação, diagnóstico e manejo / Pneumonia adquirida na comunidade no adulto / Tuberculose: doença ativa, resistência e prevenção",
+  "format": ".json",
+  "chars_estimated": 719021,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "capitulo-1",
+      "title": "Fundamentos e fisiopatologia"
+    },
+    {
+      "id": "capitulo-2",
+      "title": "Quadro clínico e diagnósticos diferenciais"
+    },
+    {
+      "id": "capitulo-3",
+      "title": "Diagnóstico e interpretação funcional"
+    },
+    {
+      "id": "capitulo-4",
+      "title": "Controle, gravidade e risco futuro"
+    },
+    {
+      "id": "capitulo-5",
+      "title": "Tratamento controlador e estratégias AIR/MART"
+    },
+    {
+      "id": "capitulo-6",
+      "title": "Exacerbação e emergência"
+    },
+    {
+      "id": "capitulo-7",
+      "title": "Asma grave, biomarcadores e imunobiológicos"
+    },
+    {
+      "id": "capitulo-8",
+      "title": "Populações especiais e comorbidades"
+    },
+    {
+      "id": "capitulo-9",
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "id": "capitulo-10",
+      "title": "Questões autorais comentadas"
+    },
+    {
+      "id": "capitulo-1",
+      "title": "Fisiologia obstrutiva, enfisema e hiperinsuflação"
+    },
+    {
+      "id": "capitulo-2",
+      "title": "Suspeita clínica, exames e diagnóstico"
+    },
+    {
+      "id": "capitulo-3",
+      "title": "Classificação GOLD 2026 e PCDT brasileiro"
+    },
+    {
+      "id": "capitulo-4",
+      "title": "Tratamento estável e dispositivos inalatórios"
+    },
+    {
+      "id": "capitulo-5",
+      "title": "Exacerbação: diagnóstico, gases, antibióticos e suporte"
+    },
+    {
+      "id": "capitulo-6",
+      "title": "Oxigênio de longa duração, sono e reabilitação"
+    },
+    {
+      "id": "capitulo-7",
+      "title": "Seguimento, comorbidades e populações especiais"
+    },
+    {
+      "id": "capitulo-8",
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "id": "capitulo-9",
+      "title": "Questões autorais comentadas"
+    },
+    {
+      "id": "capitulo-1",
+      "title": "Homeostase glicêmica e fisiopatologia"
+    },
+    {
+      "id": "capitulo-2",
+      "title": "Critérios diagnósticos e interpretação de testes"
+    },
+    {
+      "id": "capitulo-3",
+      "title": "Classificação diferencial, DM1, DM2 e monogênicos"
+    },
+    {
+      "id": "capitulo-4",
+      "title": "Metas, estilo de vida e farmacoterapia do DM2"
+    },
+    {
+      "id": "capitulo-5",
+      "title": "Insulina no DM1, hipoglicemia e monitorização"
+    },
+    {
+      "id": "capitulo-6",
+      "title": "Emergências: CAD e estado hiperosmolar"
+    },
+    {
+      "id": "capitulo-7",
+      "title": "Complicações crônicas e rastreamento"
+    },
+    {
+      "id": "capitulo-8",
+      "title": "Pessoas idosas, gestação, internação e cirurgia"
+    },
+    {
+      "id": "capitulo-9",
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "id": "capitulo-10",
+      "title": "Questões autorais comentadas"
+    },
+    {
+      "id": "capitulo-1",
+      "title": "Anatomia respiratória, inflamação e semiologia"
+    },
+    {
+      "id": "capitulo-2",
+      "title": "Etiologia e fatores de risco microbiológicos"
+    },
+    {
+      "id": "capitulo-3",
+      "title": "Diagnóstico e estratificação de gravidade"
+    },
+    {
+      "id": "capitulo-4",
+      "title": "Imagem, microbiologia e diferenciais"
+    },
+    {
+      "id": "capitulo-5",
+      "title": "Antibioticoterapia, duração e corticoide"
+    },
+    {
+      "id": "capitulo-6",
+      "title": "Decisão entre ambulatório, enfermaria e UTI"
+    },
+    {
+      "id": "capitulo-7",
+      "title": "Falha terapêutica, complicações e seguimento"
+    },
+    {
+      "id": "capitulo-8",
+      "title": "Populações especiais e segurança"
+    },
+    {
+      "id": "capitulo-9",
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "id": "capitulo-10",
+      "title": "Questões autorais comentadas"
+    },
+    {
+      "id": "capitulo-1",
+      "title": "Microbiologia, transmissão e história natural"
+    },
+    {
+      "id": "capitulo-2",
+      "title": "Apresentação clínica e diagnóstico na rede"
+    },
+    {
+      "id": "capitulo-3",
+      "title": "Formas extrapulmonares e emergências"
+    },
+    {
+      "id": "capitulo-4",
+      "title": "Tratamento da TB sensível e acompanhamento"
+    },
+    {
+      "id": "capitulo-5",
+      "title": "Tuberculose drogarresistente: seleção e monitorização"
+    },
+    {
+      "id": "capitulo-6",
+      "title": "Infecção latente e prevenção"
+    },
+    {
+      "id": "capitulo-7",
+      "title": "HIV, populações especiais, vigilância e armadilhas"
+    },
+    {
+      "id": "capitulo-8",
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "id": "capitulo-9",
+      "title": "Questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"GINA Strategy Report 2026\",\"url\":\"https://ginasthma.org/2026-gina-strategy-report/\"}",
+    "{\"label\":\"GINA Summary Guide 2026\",\"url\":\"https://ginasthma.org/2026-gina-summary-guide/\"}",
+    "{\"label\":\"PCDT Asma — Ministério da Saúde\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view\"}",
+    "{\"label\":\"SBPT — Diretrizes\",\"url\":\"https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/\"}",
+    "{\"label\":\"GINA — Difficult-to-Treat & Severe Asthma Guide, v7.0, 2026\",\"url\":\"https://ginasthma.org/wp-content/uploads/2026/06/GINA-Severe-Asthma-Guide-2026-WEB-WMS.pdf\"}",
+    "{\"label\":\"GOLD 2026\",\"url\":\"https://goldcopd.org/2026-gold-report-and-pocket-guide/\"}",
+    "{\"label\":\"PCDT DPOC — Ministério da Saúde\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view\"}",
+    "{\"label\":\"SBPT — Atualização PCDT DPOC\",\"url\":\"https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/\"}",
+    "{\"label\":\"Linha de Cuidado DPOC — Ministério da Saúde\",\"url\":\"https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/\"}",
+    "{\"label\":\"Feitosa et al. — Recomendações para diagnóstico/tratamento da DAAT (J Bras Pneumol, 2024)\",\"url\":\"https://doi.org/10.36416/1806-3756/e20240235\"}",
+    "{\"label\":\"Sandhaus et al. — Diagnóstico e manejo da DAAT no adulto (2016)\",\"url\":\"https://doi.org/10.15326/jcopdf.3.3.2015.0182\"}",
+    "{\"label\":\"Ministério da Saúde — Linha de Cuidado DPOC, Atenção Especializada\",\"url\":\"https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/atencao-especializada/planejamento-terapeutico/\"}",
+    "{\"label\":\"NICE NG115 — COPD, volume reduction and transplantation\",\"url\":\"https://www.nice.org.uk/guidance/ng115/chapter/Recommendations\"}",
+    "{\"label\":\"Diretriz SBD 2026 — DM2\",\"url\":\"https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/\"}",
+    "{\"label\":\"SBD — Insulinoterapia DM1\",\"url\":\"https://diretriz.diabetes.org.br/insulinoterapia-no-diabetes-mellitus-tipo-1-dm1/\"}",
+    "{\"label\":\"PCDT DM2 — Ministério da Saúde\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-2.pdf/view\"}",
+    "{\"label\":\"Consenso crises hiperglicêmicas ADA/EASD\",\"url\":\"https://doi.org/10.2337/dci24-0032\"}",
+    "{\"label\":\"Sociedade Brasileira de Diabetes — Classificação do diabetes (Ed. 2026)\",\"url\":\"https://diretriz.diabetes.org.br/classificacao-do-diabetes/\"}",
+    "{\"label\":\"American Diabetes Association — Diagnosis and Classification of Diabetes 2026\",\"url\":\"https://doi.org/10.2337/dc26-s002\"}",
+    "{\"label\":\"SBD, SBA e ABESO — Rastreamento e controle da hiperglicemia no perioperatório (Diretriz SBD 2026)\",\"url\":\"https://diretriz.diabetes.org.br/rastreamento-e-controle-da-hiperglicemia-no-perioperatorio/\"}",
+    "{\"label\":\"SBD — Manejo da hiperglicemia hospitalar em pacientes não-críticos (Diretriz 2026)\",\"url\":\"https://diretriz.diabetes.org.br/manejo-da-hiperglicemia-hospitalar-em-pacientes-nao-criticos/\"}",
+    "{\"label\":\"SBD — Hiperglicemia hospitalar no paciente crítico (Diretriz 2026)\",\"url\":\"https://diretriz.diabetes.org.br/hiperglicemia-hospitalar-no-paciente-critico/\"}",
+    "{\"label\":\"ADA — Diabetes Care in the Hospital, Standards of Care in Diabetes 2026\",\"url\":\"https://doi.org/10.2337/dc26-s016\"}",
+    "{\"label\":\"SBPT — PAC 2018\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/\"}",
+    "{\"label\":\"ATS/IDSA — PAC 2019\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/\"}",
+    "{\"label\":\"ATS — PAC 2025\",\"url\":\"https://doi.org/10.1164/rccm.202507-1692ST\"}",
+    "{\"label\":\"SBPT — Diretrizes\",\"url\":\"https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/\"}",
+    "{\"label\":\"BTS — Guideline for Pleural Disease 2023 (pleural infection, pH and drainage)\",\"url\":\"https://doi.org/10.1136/thorax-2022-219784\"}",
+    "{\"label\":\"ATS/IDSA — Diagnosis and Treatment of Adults with CAP 2019 (aspiration and anaerobic coverage)\",\"url\":\"https://doi.org/10.1164/rccm.201908-1581ST\"}",
+    "{\"label\":\"Manual TB — Ministério da Saúde\",\"url\":\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view\"}",
+    "{\"label\":\"Tratamento TB — Ministério da Saúde\",\"url\":\"https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento\"}",
+    "{\"label\":\"Nota 2/2026 TB-DR — Ministério da Saúde\",\"url\":\"https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file\"}",
+    "{\"label\":\"OMS — Treatment and Care 2026\",\"url\":\"https://www.who.int/publications/i/item/9789240125124\"}",
+    "{\"label\":\"Ministério da Saúde — Manual de Recomendações para Controle de Tuberculose no Brasil, 2ª ed. (2019), pp. 106–109\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel/tuberculose/manual-de-recomendacoes-e-controle-da-ttuberculose-no-brasil-2a-ed\"}",
+    "{\"label\":\"WHO — HIV/TB treatment and ART timing in tuberculous meningitis\",\"url\":\"https://tbksp.who.int/es/node/2778\"}",
+    "{\"label\":\"International Tuberculous Meningitis Research Consortium — Clinical practice guideline 2025\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/\"}"
+  ],
+  "external_urls": [
+    "https://www.cdc.gov/niosh/asthma/hcp/diagnosing/index.html",
+    "https://www.cdc.gov/niosh/bulletin/2026/asthma.html",
+    "https://ginasthma.org/2026-gina-strategy-report/",
+    "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+    "https://www.nice.org.uk/guidance/ng245/chapter/recommendations",
+    "https://publications.aap.org/pediatrics/article/134/5/e1474/75848/",
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "https://ginasthma.org/wp-content/uploads/2026/06/GINA-Severe-Asthma-Guide-2026-WEB-WMS.pdf",
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "https://www.nhlbi.nih.gov/resources/how-use-dry-powder-inhaler-fact-sheet",
+    "https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler",
+    "https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler-chamber-spacer",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view",
+    "https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/",
+    "https://doi.org/10.36416/1806-3756/e20240235",
+    "https://doi.org/10.15326/jcopdf.3.3.2015.0182",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/atencao-especializada/planejamento-terapeutico/",
+    "https://www.nice.org.uk/guidance/ng115/chapter/Recommendations",
+    "https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A",
+    "https://diretriz.diabetes.org.br/avaliacao-e-tratamento-da-doenca-renal-do-diabetes-2/",
+    "https://diabetesjournals.org/care/article/49/Supplement_1/S261/163919/12-Retinopathy-Neuropathy-and-Foot-Care-Standards",
+    "https://diabetesjournals.org/care/article/49/Supplement_1/S216/163933/10-Cardiovascular-Disease-and-Risk-Management",
+    "https://doi.org/10.2337/dc26-s006",
+    "https://doi.org/10.2337/dc26-s013",
+    "https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/",
+    "https://diretriz.diabetes.org.br/insulinoterapia-no-diabetes-mellitus-tipo-1-dm1/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-2.pdf/view",
+    "https://doi.org/10.2337/dci24-0032",
+    "https://diretriz.diabetes.org.br/classificacao-do-diabetes/",
+    "https://doi.org/10.2337/dc26-s002",
+    "https://diretriz.diabetes.org.br/rastreamento-e-controle-da-hiperglicemia-no-perioperatorio/",
+    "https://diretriz.diabetes.org.br/manejo-da-hiperglicemia-hospitalar-em-pacientes-nao-criticos/",
+    "https://diretriz.diabetes.org.br/hiperglicemia-hospitalar-no-paciente-critico/",
+    "https://doi.org/10.2337/dc26-s016",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/",
+    "https://doi.org/10.1164/rccm.202507-1692ST",
+    "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf",
+    "https://doi.org/10.1136/thorax-2022-219784",
+    "https://doi.org/10.1164/rccm.201908-1581ST",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "https://www.cdc.gov/tb/hcp/treatment/adverse-events.html",
+    "https://www.idsociety.org/practice-guideline/treatment-of-drug-susceptible-tb/",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "https://www.gov.br/aids/pt-br/assuntos/noticias/2024/julho/saude-recomenda-dose-fixa-combinada-de-medicamentos-para-prevencao-da-tuberculose-em-criancas",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@download/file",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2019/prt0043_09_09_2019.html",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_orientacoes_vigilancia_tuberculose_zoonotica.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/notas-tecnicas-e-informativas/nota-informativa-no-8-2024-cgtm-dathi-svsa-ms",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2020/manual-de-recomendacoes-para-o-controle-da-tuberculose-no-brasil",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/registro_investigacao_acompanhamento_tratamento_tuberculose.pdf",
+    "https://www.who.int/publications/i/item/9789240125124",
+    "https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel/tuberculose/manual-de-recomendacoes-e-controle-da-ttuberculose-no-brasil-2a-ed",
+    "https://tbksp.who.int/es/node/2778",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O diagnóstico é uma construção de probabilidades: padrão clínico sugestivo combinado, sempre que possível, com comprovação objetiva de variabilidade da função pulmonar. O tratamento deve simultaneamente aliviar sintomas e reduzir risco de exacerbação, perda funcional e exposição a corticoide sistêmico."
+    },
+    {
+      "text": "Conduta: otimizar tratamento contendo CI, evitar exposição capaz de provocar crise grave, orientar proteção e discutir redução/cessação da exposição nociva com avaliação especializada. Não instruir o paciente a se expor deliberadamente para “provar a asma”. Uma mudança de emprego tem impacto social: documentar resultados, respeitar autonomia, discutir direitos de sigilo e encaminhar ao CEREST ou equipe de Medicina do Trabalho conforme rede local. O empregador não deve receber diagnóstico confidencial sem base legal ou autorização adequada."
+    },
+    {
+      "text": "Na obstrução laríngea durante exercício, a falta de ar pode atingir seu auge durante esforço intenso e melhorar rapidamente após cessá-lo; na broncoconstrição induzida por exercício, os sintomas podem surgir ou piorar após terminar a atividade. Esse padrão temporal é pista, não confirmação. A laringoscopia realizada durante sintomas ou provocação apropriada em serviço experiente pode evidenciar obstrução. Espirometria normal fora do episódio não afasta nem asma intermitente nem obstrução laríngea. Uma alça inspiratória achatada pode sugerir obstrução variável extratorácica, mas ausência do sinal em repouso não exclui o diagnóstico."
+    },
+    {
+      "text": "Espirometria basal normal ou ausência de resposta broncodilatadora em uma única ocasião não excluem asma. O paciente pode estar assintomático, usando controlador, longe de uma exposição ou com obstrução mínima naquele momento. Se a suspeita permanece elevada, recupere história temporal, técnica e medicações utilizadas, considere repetição quando sintomático e testes adicionais supervisionados. Por outro lado, não se deve registrar diagnóstico definitivo somente com base em resposta percebida ao tratamento."
+    },
+    {
+      "text": "Quando a pessoa está estável, documentar provas funcionais antes de iniciar controlador pode facilitar confirmação posterior. Porém, não se deve atrasar tratamento necessário em alguém sintomático ou com risco elevado apenas para obter um teste ideal. Nesses casos, registre o grau de certeza, o que foi observado e qual exame deverá ser repetido. Um diagnóstico pode ser provável e demandar cuidado mesmo antes da confirmação completa; isso é diferente de declarar certeza sem evidência."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

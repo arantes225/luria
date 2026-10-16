@@ -1,0 +1,662 @@
+{
+  "key": "hiv-infeccoes-oportunistas--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/hiv-infeccoes-oportunistas/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 166 | HIV, aids e infecções oportunistas",
+  "source_sha256": "f50e44ae4f41f0bc0958d12c1e57245558dbe69d31202c92ad1da1f1ced8d0f2",
+  "chars_estimated": 83007,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 166 | HIV, aids e infecções oportunistas",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "1. Em 90 segundos: os princípios que não podem faltar",
+      "level": 2
+    },
+    {
+      "line": 21,
+      "title": "2. Terminologia e fisiopatologia básica",
+      "level": 2
+    },
+    {
+      "line": 31,
+      "title": "2.1. Relação orientadora entre CD4 e agravos",
+      "level": 3
+    },
+    {
+      "line": 43,
+      "title": "3. Epidemiologia e importância sanitária no Brasil",
+      "level": 2
+    },
+    {
+      "line": 49,
+      "title": "3.1. Conceito de prevenção combinada",
+      "level": 3
+    },
+    {
+      "line": 53,
+      "title": "3.2. Direitos e comunicação",
+      "level": 3
+    },
+    {
+      "line": 57,
+      "title": "4. Transmissão e prevenção",
+      "level": 2
+    },
+    {
+      "line": 61,
+      "title": "4.1. I=I de forma precisa",
+      "level": 3
+    },
+    {
+      "line": 65,
+      "title": "4.2. PEP",
+      "level": 3
+    },
+    {
+      "line": 69,
+      "title": "4.3. PrEP",
+      "level": 3
+    },
+    {
+      "line": 73,
+      "title": "5. Diagnóstico da infecção pelo HIV",
+      "level": 2
+    },
+    {
+      "line": 79,
+      "title": "5.1. Quando suspeitar de infecção aguda",
+      "level": 3
+    },
+    {
+      "line": 83,
+      "title": "5.2. Primeiro resultado reagente: o que fazer?",
+      "level": 3
+    },
+    {
+      "line": 92,
+      "title": "5.3. Diagnóstico tardio e apresentações não específicas",
+      "level": 3
+    },
+    {
+      "line": 96,
+      "title": "6. Avaliação inicial após diagnóstico confirmado",
+      "level": 2
+    },
+    {
+      "line": 98,
+      "title": "6.1. História e exame",
+      "level": 3
+    },
+    {
+      "line": 104,
+      "title": "6.2. Exames basais orientados pelo PCDT",
+      "level": 3
+    },
+    {
+      "line": 115,
+      "title": "7. Início e escolha da TARV",
+      "level": 2
+    },
+    {
+      "line": 117,
+      "title": "7.1. Quem deve tratar?",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "7.2. Esquema preferencial do SUS, conforme PCDT Módulo 1",
+      "level": 3
+    },
+    {
+      "line": 133,
+      "title": "7.3. Interações que aparecem no plantão",
+      "level": 3
+    },
+    {
+      "line": 143,
+      "title": "7.4. Gestação e adolescência",
+      "level": 3
+    },
+    {
+      "line": 147,
+      "title": "8. Acompanhamento e interpretação da carga viral",
+      "level": 2
+    },
+    {
+      "line": 151,
+      "title": "8.1. A pessoa não atingiu supressão",
+      "level": 3
+    },
+    {
+      "line": 157,
+      "title": "8.2. Toxicidade e comorbidades",
+      "level": 3
+    },
+    {
+      "line": 161,
+      "title": "8.3. Retenção no cuidado",
+      "level": 3
+    },
+    {
+      "line": 165,
+      "title": "9. Doença avançada pelo HIV: triagem imediata antes da TARV",
+      "level": 2
+    },
+    {
+      "line": 169,
+      "title": "Quadro orientador",
+      "level": 3
+    },
+    {
+      "line": 183,
+      "title": "10. Tuberculose e HIV: coinfecção mais importante na prática brasileira",
+      "level": 2
+    },
+    {
+      "line": 187,
+      "title": "10.1. Rastreio em todas as consultas",
+      "level": 3
+    },
+    {
+      "line": 191,
+      "title": "10.2. LF-LAM",
+      "level": 3
+    },
+    {
+      "line": 200,
+      "title": "10.3. Tratamento da TB ativa",
+      "level": 3
+    },
+    {
+      "line": 208,
+      "title": "10.4. Tratamento preventivo da TB (TPT)",
+      "level": 3
+    },
+    {
+      "line": 214,
+      "title": "11. Criptococose e meningite criptocócica",
+      "level": 2
+    },
+    {
+      "line": 218,
+      "title": "11.1. Rastreio de antígeno no protocolo brasileiro",
+      "level": 3
+    },
+    {
+      "line": 224,
+      "title": "11.2. Diagnóstico da meningite",
+      "level": 3
+    },
+    {
+      "line": 230,
+      "title": "11.3. Tratamento em fases",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "11.4. Antígeno positivo, sem meningite demonstrada",
+      "level": 3
+    },
+    {
+      "line": 245,
+      "title": "12. Pneumocistose (Pneumocystis jirovecii)",
+      "level": 2
+    },
+    {
+      "line": 249,
+      "title": "12.1. Diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 255,
+      "title": "12.2. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 261,
+      "title": "12.3. Profilaxia",
+      "level": 3
+    },
+    {
+      "line": 267,
+      "title": "13. Neurotoxoplasmose",
+      "level": 2
+    },
+    {
+      "line": 271,
+      "title": "13.1. Diferenciais essenciais",
+      "level": 3
+    },
+    {
+      "line": 277,
+      "title": "13.2. Tratamento e prova terapêutica",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "13.3. TARV e profilaxia",
+      "level": 3
+    },
+    {
+      "line": 291,
+      "title": "14. Retinite por citomegalovírus (CMV)",
+      "level": 2
+    },
+    {
+      "line": 301,
+      "title": "15. Candidíase oral, esofágica e outras manifestações mucosas",
+      "level": 2
+    },
+    {
+      "line": 307,
+      "title": "Erros comuns",
+      "level": 3
+    },
+    {
+      "line": 314,
+      "title": "16. Histoplasmose disseminada e micoses endêmicas",
+      "level": 2
+    },
+    {
+      "line": 320,
+      "title": "16.1. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 326,
+      "title": "16.2. Diferenciais brasileiros adicionais",
+      "level": 3
+    },
+    {
+      "line": 330,
+      "title": "17. MAC e micobactérias não tuberculosas",
+      "level": 2
+    },
+    {
+      "line": 338,
+      "title": "18. Diarreia crônica em HIV avançado",
+      "level": 2
+    },
+    {
+      "line": 348,
+      "title": "Algoritmo",
+      "level": 3
+    },
+    {
+      "line": 352,
+      "title": "19. Neoplasias associadas a HIV",
+      "level": 2
+    },
+    {
+      "line": 363,
+      "title": "20. Hepatites B e C: coinfecções",
+      "level": 2
+    },
+    {
+      "line": 371,
+      "title": "21. Sífilis, neurossífilis e outras IST",
+      "level": 2
+    },
+    {
+      "line": 377,
+      "title": "22. Síndrome inflamatória de reconstituição imune (SIRI/IRIS)",
+      "level": 2
+    },
+    {
+      "line": 385,
+      "title": "22.1. Conduta",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "22.2. Por que certas meningites são exceção ao início rápido?",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "23. Profilaxias primárias e secundárias: tabela de decisão",
+      "level": 2
+    },
+    {
+      "line": 409,
+      "title": "23.1. Vacinação em PVHA",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "23.2. Contato com TB",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "24. Algoritmos clínicos LURIA",
+      "level": 2
+    },
+    {
+      "line": 419,
+      "title": "Algoritmo A — Novo diagnóstico de HIV",
+      "level": 3
+    },
+    {
+      "line": 427,
+      "title": "Algoritmo B — Dispneia em PVHA",
+      "level": 3
+    },
+    {
+      "line": 431,
+      "title": "Algoritmo C — Cefaleia em HIV avançado",
+      "level": 3
+    },
+    {
+      "line": 435,
+      "title": "Algoritmo D — Quando pensar em falha de TARV",
+      "level": 3
+    },
+    {
+      "line": 439,
+      "title": "25. Populações especiais, segurança clínica e prognóstico",
+      "level": 2
+    },
+    {
+      "line": 455,
+      "title": "26. Ética, sigilo, linguagem e vínculo",
+      "level": 2
+    },
+    {
+      "line": 463,
+      "title": "27. Erros recorrentes em provas e plantões",
+      "level": 2
+    },
+    {
+      "line": 490,
+      "title": "28. Referências e hierarquia editorial",
+      "level": 2
+    },
+    {
+      "line": 512,
+      "title": "Aplicabilidade e divergências",
+      "level": 3
+    },
+    {
+      "line": 516,
+      "title": "29. Checklist de produção em andamento",
+      "level": 2
+    },
+    {
+      "line": 536,
+      "title": "30. Casos clínicos completos: diagnóstico, raciocínio e conduta",
+      "level": 2
+    },
+    {
+      "line": 540,
+      "title": "Caso 1 — Diagnóstico recente sem sinais de infecção oportunista",
+      "level": 3
+    },
+    {
+      "line": 554,
+      "title": "Caso 2 — TB pulmonar e diagnóstico de HIV",
+      "level": 3
+    },
+    {
+      "line": 568,
+      "title": "Caso 3 — Cefaleia subaguda com CrAg reagente e hipertensão intracraniana",
+      "level": 3
+    },
+    {
+      "line": 582,
+      "title": "Caso 4 — Dispneia progressiva e imagem pouco exuberante",
+      "level": 3
+    },
+    {
+      "line": 596,
+      "title": "Caso 5 — Déficit focal, lesões em anel e dúvida com linfoma",
+      "level": 3
+    },
+    {
+      "line": 610,
+      "title": "Caso 6 — Perda visual em imunodepressão avançada",
+      "level": 3
+    },
+    {
+      "line": 624,
+      "title": "Caso 7 — Febre, pancitopenia e hepatoesplenomegalia",
+      "level": 3
+    },
+    {
+      "line": 638,
+      "title": "Caso 8 — Tosse ausente, CD4 baixo e rastreamento de TB e criptococose",
+      "level": 3
+    },
+    {
+      "line": 652,
+      "title": "Caso 9 — Diarreia persistente e desidratação",
+      "level": 3
+    },
+    {
+      "line": 666,
+      "title": "Caso 10 — Retorno à TARV e piora inflamatória por TB",
+      "level": 3
+    },
+    {
+      "line": 681,
+      "title": "31. Questões autorais LURIA — com correção de todas as alternativas",
+      "level": 2
+    },
+    {
+      "line": 685,
+      "title": "Questão 1 — Início da TARV",
+      "level": 3
+    },
+    {
+      "line": 706,
+      "title": "Questão 2 — Esquema preferencial de primeira linha",
+      "level": 3
+    },
+    {
+      "line": 727,
+      "title": "Questão 3 — CrAg brasileiro",
+      "level": 3
+    },
+    {
+      "line": 748,
+      "title": "Questão 4 — CrAg sérico positivo",
+      "level": 3
+    },
+    {
+      "line": 769,
+      "title": "Questão 5 — Meningite criptocócica e TARV",
+      "level": 3
+    },
+    {
+      "line": 790,
+      "title": "Questão 6 — TB pulmonar e TARV",
+      "level": 3
+    },
+    {
+      "line": 811,
+      "title": "Questão 7 — Rifampicina e dolutegravir",
+      "level": 3
+    },
+    {
+      "line": 832,
+      "title": "Questão 8 — Pneumocistose e imagem",
+      "level": 3
+    },
+    {
+      "line": 853,
+      "title": "Questão 9 — Corticosteroide na PCP",
+      "level": 3
+    },
+    {
+      "line": 874,
+      "title": "Questão 10 — Toxoplasmose e lesões cerebrais",
+      "level": 3
+    },
+    {
+      "line": 895,
+      "title": "Questão 11 — Profilaxia primária de PCP",
+      "level": 3
+    },
+    {
+      "line": 916,
+      "title": "Questão 12 — Toxoplasmose profilaxia",
+      "level": 3
+    },
+    {
+      "line": 937,
+      "title": "Questão 13 — Retinite por CMV",
+      "level": 3
+    },
+    {
+      "line": 958,
+      "title": "Questão 14 — Febre e hepatoesplenomegalia",
+      "level": 3
+    },
+    {
+      "line": 979,
+      "title": "Questão 15 — Diarreia e teste de fezes",
+      "level": 3
+    },
+    {
+      "line": 1000,
+      "title": "Questão 16 — SIRI versus falha de tratamento",
+      "level": 3
+    },
+    {
+      "line": 1021,
+      "title": "Questão 17 — Indetectável = Intransmissível",
+      "level": 3
+    },
+    {
+      "line": 1042,
+      "title": "Questão 18 — Genotipagem antes da TARV",
+      "level": 3
+    },
+    {
+      "line": 1064,
+      "title": "32. Curadoria das imagens médicas candidatas",
+      "level": 2
+    },
+    {
+      "line": 1083,
+      "title": "Critérios de seleção e direitos",
+      "level": 3
+    },
+    {
+      "line": 1092,
+      "title": "33. Auditoria final desta fase: limites e próximos passos",
+      "level": 2
+    }
+  ],
+  "references": [
+    "**[R1] Brasil, Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Adultos — **Módulo 1: Tratamento**. Brasília, 2024. PDF oficial: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf/@@display-file/file",
+    "**[R2] Brasil, Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Adultos — **Módulo 2: Coinfecções e Infecções Oportunistas**. Brasília, 2024. PDF oficial BVS: https://bvsms.saude.gov.br/bvs/publicacoes/pcdt_manejo_hiv_adultos_modulo2.pdf",
+    "**[R3] Ministério da Saúde.** Diretório de PCDTs do DATHI, atualização de página em julho de 2026. https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts",
+    "**[R4] Ministério da Saúde.** Diagnóstico de HIV — informações de testagem, atualização de página 2025. https://www.gov.br/aids/pt-br/assuntos/hiv-aids/diagnostico",
+    "**[R5] Ministério da Saúde.** Tratamento da infecção pelo HIV — informações de acesso e prevenção, atualização de página 2026. https://www.gov.br/aids/pt-br/assuntos/hiv-aids/tratamento",
+    "**[R6] Ministério da Saúde.** Tuberculose — tratamento, página atualizada em março de 2026. https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "**[R7] Ministério da Saúde.** PCDT de PrEP oral à infecção pelo HIV, listagem 2025. Disponível em: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts",
+    "**[R8] Ministério da Saúde.** PCDT para profilaxia pós-exposição de risco à infecção pelo HIV, IST e hepatites virais (versão vigente na listagem oficial). Disponível em: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts",
+    "**[R9] NIH/CDC/HIVMA.** Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents With HIV — complemento internacional, não substitui PCDT brasileiro. https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections",
+    "**[R10] Sociedade Brasileira de Infectologia.** Publicações e atualizações científicas, a serem avaliadas quanto à versão e aplicabilidade. https://infectologia.org.br/",
+    "O PCDT brasileiro (R1–R2) é a fonte primária para esquemas e programas do SUS. Diretrizes internacionais podem usar cortes diferentes de CD4, intervalos de profilaxia ou recomendações farmacológicas; não importar uma regra internacional sem identificá-la. A prescrição de medicamentos para coinfecções exige revisão dos capítulos próprios do PCDT e da situação clínica."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf/@@display-file/file",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/pcdt_manejo_hiv_adultos_modulo2.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/aids/pt-br/assuntos/hiv-aids/diagnostico",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/aids/pt-br/assuntos/hiv-aids/tratamento",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://infectologia.org.br/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Rifampicina:** induz metabolismo de DTG, exigindo ajuste; o PCDT para TB-HIV recomenda **DTG 50 mg a cada 12 horas** durante uso de rifampicina, mantendo o ajuste por cerca de duas semanas após a interrupção da rifampicina antes de retornar à dose usual. Não extrapolar essa estratégia a qualquer interação sem consulta.",
+      "pattern": 0
+    },
+    {
+      "text": "O PCDT brasileiro recomenda **sulfametoxazol + trimetoprima (SMX-TMP)** como primeira linha, com dose baseada no componente trimetoprima **15–20 mg/kg/dia**, dividida, por **21 dias**, ajustando função renal, gravidade e via. Quadros graves podem exigir via intravenosa e suporte respiratório. Verificar hipercalemia, nefrotoxicidade, citopenias e reações de hipersensibilidade.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação e dados relevantes:** Homem de 27 anos recebe confirmação de HIV após testagem de rotina. Está assintomático, afebril e clinicamente estável. Ainda não sabe CD4 nem carga viral e refere receio de começar medicamento por desconhecer o que ocorrerá no trabalho.",
+      "pattern": 0
+    },
+    {
+      "text": "**Clínica Médica · Infectologia · Medicina Preventiva · Urgência e Emergência** **Lote 09 — Aula 166/180 · Revisão editorial inicial em 14/10/2026** **Referências-base:** Ministério da Saúde, PCDT HIV em adultos, Módulo 1 — Tratamento (edição 2024) e Módulo 2 — Coinfecções e Infecções Oportunistas (edição 2024); instrumentos oficiais de diagnóstico do HIV, tuberculose e prevenção combinada.",
+      "pattern": 1
+    },
+    {
+      "text": "O Ministério da Saúde recomenda **TARV para todas as pessoas com HIV, independentemente da contagem de CD4**, preferencialmente no mesmo dia ou em até sete dias após o diagnóstico, quando não há situação clínica que exija abordagem especial. O esquema preferencial em adultos, no PCDT de 2024, é **tenofovir disoproxil fumarato (TDF) + lamivudina (3TC) + dolutegravir (DTG)**. Contraindicações e exceções exigem escolha individualizada.",
+      "pattern": 1
+    },
+    {
+      "text": "O vírus da imunodeficiência humana é um retrovírus de RNA; a transcriptase reversa sintetiza DNA proviral, a integrase favorece sua inserção no material genético celular e a protease participa da maturação viral. Os alvos farmacológicos correspondem às etapas do ciclo: inibidores de transcriptase reversa, de integrase, de protease e de entrada/fusão, conforme fármaco. Há HIV-1 e HIV-2; HIV-1 é o principal responsável pela epidemia global. O diagnóstico de infecção deve seguir o algoritmo válido e distinguir situações de teste reagente, indeterminado e confirmado.",
+      "pattern": 1
+    },
+    {
+      "text": "**Clínica Médica · Infectologia · Medicina Preventiva · Urgência e Emergência** **Lote 09 — Aula 166/180 · Revisão editorial inicial em 14/10/2026** **Referências-base:** Ministério da Saúde, PCDT HIV em adultos, Módulo 1 — Tratamento (edição 2024) e Módulo 2 — Coinfecções e Infecções Oportunistas (edição 2024); instrumentos oficiais de diagnóstico do HIV, tuberculose e prevenção combinada.",
+      "pattern": 2
+    },
+    {
+      "text": "O Ministério da Saúde recomenda **TARV para todas as pessoas com HIV, independentemente da contagem de CD4**, preferencialmente no mesmo dia ou em até sete dias após o diagnóstico, quando não há situação clínica que exija abordagem especial. O esquema preferencial em adultos, no PCDT de 2024, é **tenofovir disoproxil fumarato (TDF) + lamivudina (3TC) + dolutegravir (DTG)**. Contraindicações e exceções exigem escolha individualizada.",
+      "pattern": 2
+    },
+    {
+      "text": "**Todos os adultos vivendo com HIV**, sem esperar queda de CD4. A TARV reduz progressão, morbimortalidade e transmissão sexual quando há supressão sustentada. O PCDT 2024 recomenda início no mesmo dia ou até sete dias da confirmação na maioria dos cenários.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Clínica Médica · Infectologia · Medicina Preventiva · Urgência e Emergência** **Lote 09 — Aula 166/180 · Revisão editorial inicial em 14/10/2026** **Referências-base:** Ministério da Saúde, PCDT HIV em adultos, Módulo 1 — Tratamento (edição 2024) e Módulo 2 — Coinfecções e Infecções Oportunistas (edição 2024); instrumentos oficiais de diagnóstico do HIV, tuberculose e prevenção combinada."
+    },
+    {
+      "text": "O HIV infecta células do sistema imune, sobretudo linfócitos T-CD4+, e pode produzir imunodeficiência progressiva quando há replicação viral sem controle. A **infecção por HIV não é sinônimo de aids**: esta designa doença avançada caracterizada por critérios clínicos e/ou imunológicos definidos em vigilância e assistência. Testagem precoce, início oportuno de terapia antirretroviral (TARV) e retenção no cuidado são determinantes fundamentais do prognóstico."
+    }
+  ]
+}

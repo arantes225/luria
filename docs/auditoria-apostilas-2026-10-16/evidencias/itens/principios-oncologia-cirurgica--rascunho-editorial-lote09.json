@@ -1,0 +1,761 @@
+{
+  "key": "principios-oncologia-cirurgica--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/principios-oncologia-cirurgica/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 172 — Princípios de oncologia cirúrgica",
+  "source_sha256": "f965af599a1f894e6738cf56f91acd534837146aec264411884649ef2b41c5a7",
+  "chars_estimated": 91115,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 172 — Princípios de oncologia cirúrgica",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Objetivos práticos",
+      "level": 2
+    },
+    {
+      "line": 27,
+      "title": "2. O que é oncologia cirúrgica",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "3. Bases biológicas: como o tumor cresce, invade e se dissemina",
+      "level": 2
+    },
+    {
+      "line": 46,
+      "title": "3.1. Rotas de disseminação",
+      "level": 3
+    },
+    {
+      "line": 57,
+      "title": "3.2. Carcinoma, sarcoma, linfoma, melanoma e tumor germinativo",
+      "level": 3
+    },
+    {
+      "line": 63,
+      "title": "4. História, sinais de alarme e avaliação da massa",
+      "level": 2
+    },
+    {
+      "line": 67,
+      "title": "4.1. Exame dirigido",
+      "level": 3
+    },
+    {
+      "line": 77,
+      "title": "5. Biópsia — planejamento é parte do tratamento",
+      "level": 2
+    },
+    {
+      "line": 81,
+      "title": "5.1. Métodos e aplicações",
+      "level": 3
+    },
+    {
+      "line": 95,
+      "title": "5.2. Sarcoma de partes moles: “não violar a futura cirurgia”",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "5.3. Discordância radiopatológica",
+      "level": 3
+    },
+    {
+      "line": 105,
+      "title": "5.4. Antes da biópsia",
+      "level": 3
+    },
+    {
+      "line": 109,
+      "title": "6. Anatomopatologia, grau histológico e biomarcadores",
+      "level": 2
+    },
+    {
+      "line": 113,
+      "title": "6.1. Histologia e grau não são estádio",
+      "level": 3
+    },
+    {
+      "line": 117,
+      "title": "6.2. Patologia após neoadjuvância",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "6.3. Integração com a clínica",
+      "level": 3
+    },
+    {
+      "line": 125,
+      "title": "7. Estadiamento oncológico — TNM e sistemas próprios",
+      "level": 2
+    },
+    {
+      "line": 131,
+      "title": "7.1. Local, regional e distante",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "7.2. Outros sistemas",
+      "level": 3
+    },
+    {
+      "line": 143,
+      "title": "7.3. Por que estágio muda a operação",
+      "level": 3
+    },
+    {
+      "line": 147,
+      "title": "8. Estadiamento por imagem: pedir o que muda a conduta",
+      "level": 2
+    },
+    {
+      "line": 159,
+      "title": "Reestadiamento após tratamento neoadjuvante",
+      "level": 3
+    },
+    {
+      "line": 163,
+      "title": "9. Ressecabilidade, operabilidade e benefício clínico",
+      "level": 2
+    },
+    {
+      "line": 177,
+      "title": "10. Margens cirúrgicas: R0, R1 e R2",
+      "level": 2
+    },
+    {
+      "line": 179,
+      "title": "10.1. Classificação do resíduo tumoral",
+      "level": 3
+    },
+    {
+      "line": 187,
+      "title": "10.2. Técnicas que protegem margem e anatomia",
+      "level": 3
+    },
+    {
+      "line": 195,
+      "title": "10.3. R0 não equivale a cura garantida",
+      "level": 3
+    },
+    {
+      "line": 199,
+      "title": "10.4. R1 e R2 intencionais versus inesperados",
+      "level": 3
+    },
+    {
+      "line": 203,
+      "title": "11. Planejamento dos linfonodos: sentinela, amostragem e esvaziamento",
+      "level": 2
+    },
+    {
+      "line": 207,
+      "title": "11.1. Linfonodo sentinela",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "11.2. Linfonodo suspeito antes de tratar",
+      "level": 3
+    },
+    {
+      "line": 217,
+      "title": "11.3. Dissecções por órgão",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "12. Cirurgia curativa: modalidades e princípios",
+      "level": 2
+    },
+    {
+      "line": 223,
+      "title": "Excisão local",
+      "level": 3
+    },
+    {
+      "line": 226,
+      "title": "Ressecção segmentar ou radical",
+      "level": 3
+    },
+    {
+      "line": 229,
+      "title": "Ressecção multivisceral em bloco",
+      "level": 3
+    },
+    {
+      "line": 232,
+      "title": "Preservação de órgão",
+      "level": 3
+    },
+    {
+      "line": 235,
+      "title": "13. Neoadjuvância e adjuvância: ordem e finalidade",
+      "level": 2
+    },
+    {
+      "line": 239,
+      "title": "Como decidir",
+      "level": 3
+    },
+    {
+      "line": 253,
+      "title": "14. Multidisciplinaridade e discussão em tumor board",
+      "level": 2
+    },
+    {
+      "line": 268,
+      "title": "15. Pré-operatório oncológico: risco, reserva e capacidade funcional",
+      "level": 2
+    },
+    {
+      "line": 272,
+      "title": "15.1. ECOG, ASA e fragilidade não são a mesma coisa",
+      "level": 3
+    },
+    {
+      "line": 280,
+      "title": "15.2. Capacidade cardiopulmonar e risco anestésico",
+      "level": 3
+    },
+    {
+      "line": 284,
+      "title": "15.3. Anemia e transfusão",
+      "level": 3
+    },
+    {
+      "line": 288,
+      "title": "16. Nutrição, sarcopenia e preabilitação",
+      "level": 2
+    },
+    {
+      "line": 296,
+      "title": "16.1. O que é ERAS?",
+      "level": 3
+    },
+    {
+      "line": 300,
+      "title": "17. Segurança cirúrgica e prevenção de eventos adversos",
+      "level": 2
+    },
+    {
+      "line": 304,
+      "title": "17.1. Checklist oncológico ampliado",
+      "level": 3
+    },
+    {
+      "line": 318,
+      "title": "17.2. Profilaxia antibiótica",
+      "level": 3
+    },
+    {
+      "line": 322,
+      "title": "17.3. Tromboprofilaxia",
+      "level": 3
+    },
+    {
+      "line": 326,
+      "title": "18. Técnica operatória: evitar ruptura tumoral e preservar função",
+      "level": 2
+    },
+    {
+      "line": 334,
+      "title": "18.1. Morcelação e extração",
+      "level": 3
+    },
+    {
+      "line": 338,
+      "title": "19. Peça cirúrgica: orientação para patologia e relatório operatório",
+      "level": 2
+    },
+    {
+      "line": 342,
+      "title": "Informações fundamentais",
+      "level": 3
+    },
+    {
+      "line": 354,
+      "title": "19.1. Congelação não substitui histologia final",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "20. Cirurgia oncológica de mama, tireoide, colorretal e pele — princípios comparativos",
+      "level": 2
+    },
+    {
+      "line": 374,
+      "title": "21. Emergências oncológicas cirúrgicas",
+      "level": 2
+    },
+    {
+      "line": 376,
+      "title": "21.1. Obstrução intestinal maligna",
+      "level": 3
+    },
+    {
+      "line": 382,
+      "title": "21.2. Perfuração de tumor e peritonite",
+      "level": 3
+    },
+    {
+      "line": 386,
+      "title": "21.3. Hemorragia tumoral",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "21.4. Compressão medular, hipertensão intracraniana, síndrome de veia cava",
+      "level": 3
+    },
+    {
+      "line": 394,
+      "title": "22. Complicações pós-operatórias: reconhecer e classificar",
+      "level": 2
+    },
+    {
+      "line": 400,
+      "title": "Classificação de Clavien–Dindo",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "Vazamento de anastomose",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "23. Nutrição e retorno funcional após cirurgia oncológica",
+      "level": 2
+    },
+    {
+      "line": 425,
+      "title": "24. Cirurgia em doença metastática e oligometástases",
+      "level": 2
+    },
+    {
+      "line": 429,
+      "title": "Perguntas antes de metastasectomia",
+      "level": 3
+    },
+    {
+      "line": 441,
+      "title": "25. Cirurgia paliativa: o desfecho pode ser alívio, não cura",
+      "level": 2
+    },
+    {
+      "line": 449,
+      "title": "26. Decisão compartilhada, consentimento e comunicação",
+      "level": 2
+    },
+    {
+      "line": 457,
+      "title": "Discussão de tumor incurável",
+      "level": 3
+    },
+    {
+      "line": 460,
+      "title": "27. Reconstrução e cirurgia preservadora de função",
+      "level": 2
+    },
+    {
+      "line": 466,
+      "title": "Cirurgia conservadora não significa cirurgia inadequada",
+      "level": 3
+    },
+    {
+      "line": 470,
+      "title": "28. Vigilância, recidiva e seguimento pós-tratamento",
+      "level": 2
+    },
+    {
+      "line": 485,
+      "title": "29. Integração assistencial no SUS",
+      "level": 2
+    },
+    {
+      "line": 493,
+      "title": "30. Fluxos de decisão LURIA",
+      "level": 2
+    },
+    {
+      "line": 495,
+      "title": "Fluxo A — Massa suspeita sem diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 499,
+      "title": "Fluxo B — Tumor confirmado",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "Fluxo C — Margem positiva pós-cirurgia",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "Fluxo D — Câncer metastático com sintoma obstrutivo",
+      "level": 3
+    },
+    {
+      "line": 511,
+      "title": "Fluxo E — Idoso frágil com tumor localizado",
+      "level": 3
+    },
+    {
+      "line": 515,
+      "title": "31. Armadilhas frequentes de prova",
+      "level": 2
+    },
+    {
+      "line": 544,
+      "title": "32. Quadro de revisão final",
+      "level": 2
+    },
+    {
+      "line": 561,
+      "title": "33. Referências verificáveis e aplicação ao Brasil",
+      "level": 2
+    },
+    {
+      "line": 580,
+      "title": "34. Checklist parcial de produção",
+      "level": 2
+    },
+    {
+      "line": 602,
+      "title": "35. Casos clínicos de decisão oncológica — raciocínio completo",
+      "level": 2
+    },
+    {
+      "line": 606,
+      "title": "Caso 1 — Massa profunda de coxa — suspeita de sarcoma",
+      "level": 3
+    },
+    {
+      "line": 622,
+      "title": "Caso 2 — Tumor de cólon confirmado e anemia por sangramento",
+      "level": 3
+    },
+    {
+      "line": 638,
+      "title": "Caso 3 — Câncer de reto com margem circunferencial ameaçada",
+      "level": 3
+    },
+    {
+      "line": 654,
+      "title": "Caso 4 — GIST gástrico junto à cárdia",
+      "level": 3
+    },
+    {
+      "line": 670,
+      "title": "Caso 5 — Melanoma cutâneo: biópsia e Breslow",
+      "level": 3
+    },
+    {
+      "line": 686,
+      "title": "Caso 6 — Mama HER2 positiva — resposta à neoadjuvância",
+      "level": 3
+    },
+    {
+      "line": 702,
+      "title": "Caso 7 — Metástases hepáticas limitadas de câncer colorretal",
+      "level": 3
+    },
+    {
+      "line": 718,
+      "title": "Caso 8 — Carcinoma metastático com obstrução intestinal",
+      "level": 3
+    },
+    {
+      "line": 734,
+      "title": "Caso 9 — Cirurgia em paciente idoso com sarcopenia",
+      "level": 3
+    },
+    {
+      "line": 750,
+      "title": "Caso 10 — Hematoma ou sangramento após cirurgia oncológica",
+      "level": 3
+    },
+    {
+      "line": 766,
+      "title": "Caso 11 — Câncer de pulmão com funcionalidade respiratória limitada",
+      "level": 3
+    },
+    {
+      "line": 782,
+      "title": "Caso 12 — Margem microscópica positiva e plano adjuvante",
+      "level": 3
+    },
+    {
+      "line": 799,
+      "title": "36. Questões autorais de cirurgia oncológica — 18 gabaritos discutidos",
+      "level": 2
+    },
+    {
+      "line": 803,
+      "title": "Questão 1 — Definição de R0",
+      "level": 3
+    },
+    {
+      "line": 824,
+      "title": "Questão 2 — Definição de R1 e R2",
+      "level": 3
+    },
+    {
+      "line": 845,
+      "title": "Questão 3 — Biópsia de sarcoma",
+      "level": 3
+    },
+    {
+      "line": 866,
+      "title": "Questão 4 — Ressecabilidade versus operabilidade",
+      "level": 3
+    },
+    {
+      "line": 887,
+      "title": "Questão 5 — Linfonodo sentinela",
+      "level": 3
+    },
+    {
+      "line": 908,
+      "title": "Questão 6 — GIST e linfonodos",
+      "level": 3
+    },
+    {
+      "line": 929,
+      "title": "Questão 7 — TNM clínico e patológico",
+      "level": 3
+    },
+    {
+      "line": 950,
+      "title": "Questão 8 — Grau versus estádio",
+      "level": 3
+    },
+    {
+      "line": 971,
+      "title": "Questão 9 — Neoadjuvância",
+      "level": 3
+    },
+    {
+      "line": 992,
+      "title": "Questão 10 — Resposta radiológica completa",
+      "level": 3
+    },
+    {
+      "line": 1013,
+      "title": "Questão 11 — Invasão contígua",
+      "level": 3
+    },
+    {
+      "line": 1034,
+      "title": "Questão 12 — Avaliação do idoso frágil",
+      "level": 3
+    },
+    {
+      "line": 1055,
+      "title": "Questão 13 — ERAS e nutrição",
+      "level": 3
+    },
+    {
+      "line": 1076,
+      "title": "Questão 14 — Cirurgia paliativa",
+      "level": 3
+    },
+    {
+      "line": 1097,
+      "title": "Questão 15 — Complicações Clavien–Dindo",
+      "level": 3
+    },
+    {
+      "line": 1118,
+      "title": "Questão 16 — Segurança cirúrgica OMS",
+      "level": 3
+    },
+    {
+      "line": 1139,
+      "title": "Questão 17 — Hemorragia pós-operatória",
+      "level": 3
+    },
+    {
+      "line": 1160,
+      "title": "Questão 18 — Metastasectomia hepática",
+      "level": 3
+    },
+    {
+      "line": 1182,
+      "title": "37. Curadoria de imagens premium — 18 candidatas",
+      "level": 2
+    },
+    {
+      "line": 1207,
+      "title": "Regras para integração das imagens",
+      "level": 3
+    },
+    {
+      "line": 1218,
+      "title": "38. Auditoria da Aula 172 e trabalho restante",
+      "level": 2
+    },
+    {
+      "line": 1222,
+      "title": "Riscos de desatualização e limites",
+      "level": 3
+    },
+    {
+      "line": 1231,
+      "title": "Checklist de publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **INCA. Cirurgia no tratamento do câncer.** Definição, papel curativo e paliativo. https://www.gov.br/inca/pt-br/assuntos/cancer/tratamento/cirurgia",
+    "2. **Ministério da Saúde. Portal PCDT/DDT.** Diferença entre protocolos e diretrizes oncológicas. https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "3. **Conitec. Diretrizes Diagnósticas e Terapêuticas — DDT.** Página atualizada em setembro de 2026. https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+    "4. **INCA. Tratamento do câncer de mama — profissionais.** Ressecção conservadora/mastectomia, axila, biologia tumoral e reconstrução. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento",
+    "5. **INCA. Câncer de pulmão — versão para profissionais.** Histologia, estadiamento, cirurgia e radioterapia. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/pulmao/versao-para-profissionais-de-saude",
+    "6. **National Cancer Institute. Sentinel Lymph Node Biopsy Fact Sheet.** Indicações e limitações. https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet",
+    "7. **ESPEN. Guideline on clinical nutrition in surgery — Update 2025.** *Clinical Nutrition*, 53 (2025), 222–261. DOI https://doi.org/10.1016/j.clnu.2025.08.029",
+    "8. **ERAS Society. Guidelines.** Diretrizes de recuperação aprimorada por especialidade. https://www.erassociety.org/Guidelines",
+    "9. **ERAS Society. Guidelines for perioperative care in elective colorectal surgery — 2025.** https://www.surgjournal.com/article/S0039-6060(25)00249-1/fulltext",
+    "10. **World Health Organization. Surgical Safety Checklist.** https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources",
+    "11. **Brasil. Lei nº 12.732/2012.** Início de tratamento de câncer no SUS. https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12732.htm",
+    "12. **Brasil. Lei nº 13.896/2019.** Exames para esclarecimento diagnóstico de suspeita de neoplasia maligna. https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13896.htm",
+    "13. **Ministério da Saúde. Informações nacionais e atualizações oncológicas.** https://www.gov.br/saude/pt-br/assuntos/pcdt/c",
+    "14. **Ministério da Saúde / Conitec. Atualizações de PCDTs em oncologia — consultas públicas de agosto de 2026.** https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/agosto/conitec-abre-consultas-publicas-para-novos-protocolos-de-tratamento-oncologico-no-sus",
+    "**Nota editorial de atualidade:** consultas públicas divulgadas em agosto de 2026 para diferentes PCDTs oncológicos **não são versões finais automaticamente vigentes**. Conferir a publicação formal de cada PCDT/DDT antes de recomendar um regime específico ou citar disponibilidade farmacológica no SUS."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tratamento/cirurgia",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/pulmao/versao-para-profissionais-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.clnu.2025.08.029",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.erassociety.org/Guidelines",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.surgjournal.com/article/S0039-6060(25",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12732.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13896.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/agosto/conitec-abre-consultas-publicas-para-novos-protocolos-de-tratamento-oncologico-no-sus",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 7,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Apresentação:** Homem de 49 anos apresenta massa de 9 cm na face medial da coxa, profunda, progressivamente crescente e pouco dolorosa. Cirurgião de ambulatório propõe 'tirar como lipoma' sem imagem prévia.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Mulher de 66 anos apresenta anemia ferropriva, colonoscopia com massa em cólon direito e biópsia revelando adenocarcinoma invasivo. Está estável, sem obstrução, com capacidade funcional preservada.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Homem de 57 anos apresenta sangramento retal e alteração do hábito intestinal. Colonoscopia confirma adenocarcinoma de reto médio. RM pélvica de alta resolução mostra tumor localmente avançado próximo à fáscia mesorretal, com linfonodos regionais suspeitos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Área:** Cirurgia Geral — Oncologia Cirúrgica **Currículo:** Lote 09, aula 172/180 **Versão editorial:** 14 de outubro de 2026 **Escopo:** tomada de decisão, diagnóstico e estadiamento oncológico, ressecabilidade, cirurgia curativa e paliativa, margens, linfonodos, planejamento multimodal, segurança perioperatória e seguimento. **Status:** RASCUNHO editorial — não validado por cirurgião oncológico nem publicado. Doses de fármacos oncológicos, margens em centímetros e esquemas por tipo tumoral dependem de diretrizes específicas e atualização contínua.",
+      "pattern": 1
+    },
+    {
+      "text": "**Carcinomas** derivam de epitélios, podendo expressar padrões glandulares ou escamosos. **Sarcomas** são neoplasias mesenquimais; seu manejo de biópsia e margens difere bastante. **Linfomas** frequentemente são tratados sistemicamente e não devem receber ressecção mutilante como estratégia padrão, embora a biópsia cirúrgica possa ser diagnóstica. **Melanoma** requer diagnóstico histológico com medida de Breslow e decisão de excisão e linfonodo sentinela específica. **Tumores germinativos** têm respostas particulares à quimioterapia e papel cirúrgico por órgão/estádio.",
+      "pattern": 1
+    },
+    {
+      "text": "O diagnóstico de “massa maligna” sem tipagem adequada é insuficiente para escolher a operação. O anatomopatológico é o ponto de partida para terapia dirigida.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Cirurgia Geral — Oncologia Cirúrgica **Currículo:** Lote 09, aula 172/180 **Versão editorial:** 14 de outubro de 2026 **Escopo:** tomada de decisão, diagnóstico e estadiamento oncológico, ressecabilidade, cirurgia curativa e paliativa, margens, linfonodos, planejamento multimodal, segurança perioperatória e seguimento. **Status:** RASCUNHO editorial — não validado por cirurgião oncológico nem publicado. Doses de fármacos oncológicos, margens em centímetros e esquemas por tipo tumoral dependem de diretrizes específicas e atualização contínua.",
+      "pattern": 2
+    },
+    {
+      "text": "Estadiamento **FIGO** em neoplasias ginecológicas, **Breslow** como marcador central no melanoma cutâneo, **Ann Arbor/Lugano** em linfomas, **Gleason/ISUP** como grau em próstata, e critérios de sarcoma dependem de sítio, tamanho, grau e extensão. Esses sistemas servem a perguntas diferentes. A aula geral ensina lógica; detalhes específicos pertencem às apostilas por tumor.",
+      "pattern": 2
+    },
+    {
+      "text": "A diretriz **ESPEN 2025 para nutrição em cirurgia** reforça integrar terapia nutricional ao manejo global, evitar jejuns prolongados desnecessários, iniciar nutrição precocemente em risco nutricional e estimular alimentação e mobilização pós-operatórias conforme segurança. A recomendação não implica que todo paciente precise de dieta imunomoduladora cara; as intervenções dependem de risco e cirurgia.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Cirurgia Geral — Oncologia Cirúrgica **Currículo:** Lote 09, aula 172/180 **Versão editorial:** 14 de outubro de 2026 **Escopo:** tomada de decisão, diagnóstico e estadiamento oncológico, ressecabilidade, cirurgia curativa e paliativa, margens, linfonodos, planejamento multimodal, segurança perioperatória e seguimento. **Status:** RASCUNHO editorial — não validado por cirurgião oncológico nem publicado. Doses de fármacos oncológicos, margens em centímetros e esquemas por tipo tumoral dependem de diretrizes específicas e atualização contínua."
+    },
+    {
+      "text": "Ao fim da aula, o aluno deve: 1. Diferenciar cirurgia diagnóstica, estadiadora, curativa, redutora, profilática, reconstrutiva e paliativa. 2. Entender oncogênese, invasão local e disseminação linfática, hematogênica e transcelômica. 3. Formular investigação de massa suspeita e escolher biópsia sem prejudicar cirurgia definitiva. 4. Distinguir histologia, grau, TNM, estádio clínico e patológico, ressecabilidade e risco biológico. 5. Interpretar **R0, R1, R2**, margens circunferenciais e limites de extensão de cirurgia. 6. Entender papel da linfadenectomia e da biópsia de linfonodo sentinela em tumores selecionados. 7. Reconhecer oportunidades de neoadjuvância, adjuvância, quimiorradioterapia e terapia sistêmica. 8. Avaliar função, fragilidade, nutrição, sarcopenia, risco anestésico e preabilitação antes de grandes procedimentos. 9. Planejar cuidados perioperatórios, segurança e complicações precoces/tardias. 10. Discutir indicação cirúrgica em metástase, recidiva, carcinomatose e obstrução, evitando procedimentos sem benefício proporcional. 11. Organizar seguimento, reabilitação, vigilância de recorrência e comunicação de objetivos. 12. Resolver casos e questões de prova valorizando a sequência de decisões, não só nomes de operações."
+    }
+  ]
+}

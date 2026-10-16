@@ -1,0 +1,617 @@
+{
+  "key": "etica-medica-sigilo-prontuario--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/etica-medica-sigilo-prontuario/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 170 | Ética médica, sigilo profissional e prontuário",
+  "source_sha256": "7d227e60cf87ed472938d21ae756efcc9558bda766faeb2c23f5efd2e9888a3e",
+  "chars_estimated": 83242,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 170 | Ética médica, sigilo profissional e prontuário",
+      "level": 1
+    },
+    {
+      "line": 12,
+      "title": "1. Por que este tema aparece tanto em provas e no plantão",
+      "level": 2
+    },
+    {
+      "line": 25,
+      "title": "2. Princípios de bioética que orientam decisões",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "Dilema clínico versus regra profissional",
+      "level": 3
+    },
+    {
+      "line": 43,
+      "title": "3. Marco ético e legal brasileiro: o que cada norma regula",
+      "level": 2
+    },
+    {
+      "line": 61,
+      "title": "4. Código de Ética Médica: artigos que caem em prova",
+      "level": 2
+    },
+    {
+      "line": 65,
+      "title": "Artigo 73: sigilo profissional",
+      "level": 3
+    },
+    {
+      "line": 71,
+      "title": "Artigo 74: sigilo de menor com discernimento",
+      "level": 3
+    },
+    {
+      "line": 77,
+      "title": "Artigos de prontuário e documentação",
+      "level": 3
+    },
+    {
+      "line": 83,
+      "title": "Publicidade, imagens e redes sociais",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "5. Quem possui o prontuário e quem tem acesso?",
+      "level": 2
+    },
+    {
+      "line": 95,
+      "title": "Matriz de acesso — quem pode ver o quê?",
+      "level": 3
+    },
+    {
+      "line": 111,
+      "title": "6. O que é prontuário médico segundo CFM 1.638/2002?",
+      "level": 2
+    },
+    {
+      "line": 115,
+      "title": "Funções",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "Conteúdo mínimo que deve aparecer",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "7. Evolução clínica: como escrever com precisão, brevidade e integridade",
+      "level": 2
+    },
+    {
+      "line": 154,
+      "title": "Diagnóstico versus hipótese",
+      "level": 3
+    },
+    {
+      "line": 158,
+      "title": "Evolução por cópia e cola",
+      "level": 3
+    },
+    {
+      "line": 162,
+      "title": "8. Correções, adendos e integridade documental",
+      "level": 2
+    },
+    {
+      "line": 176,
+      "title": "Exemplo de adendo",
+      "level": 3
+    },
+    {
+      "line": 182,
+      "title": "9. Consentimento e decisão compartilhada",
+      "level": 2
+    },
+    {
+      "line": 188,
+      "title": "Avaliação prática de capacidade",
+      "level": 3
+    },
+    {
+      "line": 198,
+      "title": "Recusa informada",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "10. Sigilo médico na prática: regra, exceções e minimização",
+      "level": 2
+    },
+    {
+      "line": 208,
+      "title": "Situações recorrentes",
+      "level": 3
+    },
+    {
+      "line": 222,
+      "title": "Fluxo de decisão",
+      "level": 3
+    },
+    {
+      "line": 232,
+      "title": "11. Adolescentes, privacidade e proteção",
+      "level": 2
+    },
+    {
+      "line": 244,
+      "title": "12. Pacientes incapazes, acompanhantes e responsáveis",
+      "level": 2
+    },
+    {
+      "line": 252,
+      "title": "13. Fim de vida, comunicação de prognóstico e cuidados paliativos",
+      "level": 2
+    },
+    {
+      "line": 262,
+      "title": "14. Prontuário eletrônico, assinatura e autenticação",
+      "level": 2
+    },
+    {
+      "line": 279,
+      "title": "Compartilhar login",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "Inteligência artificial na redação clínica",
+      "level": 3
+    },
+    {
+      "line": 287,
+      "title": "15. LGPD na assistência: dados sensíveis e bases legais",
+      "level": 2
+    },
+    {
+      "line": 291,
+      "title": "Conceitos essenciais",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "Bases e exemplos",
+      "level": 3
+    },
+    {
+      "line": 319,
+      "title": "Direitos do titular",
+      "level": 3
+    },
+    {
+      "line": 323,
+      "title": "16. Incidentes de segurança em dados de saúde",
+      "level": 2
+    },
+    {
+      "line": 331,
+      "title": "Exemplo de resposta a e-mail enviado ao destinatário errado",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "17. Digitalização, guarda e descarte: lei de 2018 e Parecer CFM de 2026",
+      "level": 2
+    },
+    {
+      "line": 351,
+      "title": "Perguntas antes de eliminar qualquer registro",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "18. Telemedicina, teleconsulta e prescrição eletrônica",
+      "level": 2
+    },
+    {
+      "line": 369,
+      "title": "Consentimento em telemedicina",
+      "level": 3
+    },
+    {
+      "line": 373,
+      "title": "Receitas e atestados digitais",
+      "level": 3
+    },
+    {
+      "line": 377,
+      "title": "Tecnologia como ferramenta, não substituto de responsabilidade",
+      "level": 3
+    },
+    {
+      "line": 381,
+      "title": "19. Ensino, pesquisa e publicação de casos",
+      "level": 2
+    },
+    {
+      "line": 385,
+      "title": "Fotografias e vídeos clínicos",
+      "level": 3
+    },
+    {
+      "line": 391,
+      "title": "Caso fictício versus caso real",
+      "level": 3
+    },
+    {
+      "line": 395,
+      "title": "20. Relação com colegas, equipe, auditoria e instituição",
+      "level": 2
+    },
+    {
+      "line": 405,
+      "title": "21. Responsabilidade civil, penal, ética e administrativa",
+      "level": 2
+    },
+    {
+      "line": 421,
+      "title": "22. Situações de prova: tabelas de decisão rápida",
+      "level": 2
+    },
+    {
+      "line": 438,
+      "title": "23. Checklist de integridade do prontuário para plantão",
+      "level": 2
+    },
+    {
+      "line": 454,
+      "title": "24. Erros frequentes e pérolas de prova",
+      "level": 2
+    },
+    {
+      "line": 477,
+      "title": "25. Referências prioritárias, URLs e observações",
+      "level": 2
+    },
+    {
+      "line": 497,
+      "title": "26. Limitações e auditoria editorial inicial",
+      "level": 2
+    },
+    {
+      "line": 521,
+      "title": "27. Casos clínico-éticos LURIA — diagnóstico do dilema, raciocínio e providências",
+      "level": 2
+    },
+    {
+      "line": 525,
+      "title": "Caso 1 — O marido exige o teste de HIV",
+      "level": 3
+    },
+    {
+      "line": 537,
+      "title": "Caso 2 — Adolescente pede aconselhamento contraceptivo",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "Caso 3 — Polícia pede prontuário por mensagem",
+      "level": 3
+    },
+    {
+      "line": 561,
+      "title": "Caso 4 — Enfermeira descobre que uma pessoa famosa foi internada",
+      "level": 3
+    },
+    {
+      "line": 573,
+      "title": "Caso 5 — Erro de alergia no prontuário já assinado",
+      "level": 3
+    },
+    {
+      "line": 585,
+      "title": "Caso 6 — Pedido de cópia pela própria paciente",
+      "level": 3
+    },
+    {
+      "line": 597,
+      "title": "Caso 7 — Estudante fotografa ECG e rosto em grupo de estudos",
+      "level": 3
+    },
+    {
+      "line": 609,
+      "title": "Caso 8 — Delirium e consentimento para procedimento de emergência",
+      "level": 3
+    },
+    {
+      "line": 621,
+      "title": "Caso 9 — Adolescente revela violência por responsável",
+      "level": 3
+    },
+    {
+      "line": 633,
+      "title": "Caso 10 — Vazamento de laudos por e-mail",
+      "level": 3
+    },
+    {
+      "line": 645,
+      "title": "Caso 11 — Prontuários de clínica fechada há 21 anos",
+      "level": 3
+    },
+    {
+      "line": 657,
+      "title": "Caso 12 — IA gera prontuário com falsa administração de medicamento",
+      "level": 3
+    },
+    {
+      "line": 671,
+      "title": "28. Questões autorais de residência e ENAMED — comentários por alternativa",
+      "level": 2
+    },
+    {
+      "line": 675,
+      "title": "Questão 1 — Segredo profissional de adulto capaz",
+      "level": 3
+    },
+    {
+      "line": 696,
+      "title": "Questão 2 — Adolescente e confidencialidade",
+      "level": 3
+    },
+    {
+      "line": 717,
+      "title": "Questão 3 — Suspeita de maus-tratos",
+      "level": 3
+    },
+    {
+      "line": 738,
+      "title": "Questão 4 — Prontuário e titularidade",
+      "level": 3
+    },
+    {
+      "line": 759,
+      "title": "Questão 5 — Documento no CFM 1.638/2002",
+      "level": 3
+    },
+    {
+      "line": 780,
+      "title": "Questão 6 — Erro já registrado",
+      "level": 3
+    },
+    {
+      "line": 801,
+      "title": "Questão 7 — Capacidade e consentimento",
+      "level": 3
+    },
+    {
+      "line": 822,
+      "title": "Questão 8 — Dados sensíveis e LGPD",
+      "level": 3
+    },
+    {
+      "line": 843,
+      "title": "Questão 9 — Bases legais além de consentimento",
+      "level": 3
+    },
+    {
+      "line": 864,
+      "title": "Questão 10 — Pedido policial informal",
+      "level": 3
+    },
+    {
+      "line": 885,
+      "title": "Questão 11 — Consulta por telemedicina",
+      "level": 3
+    },
+    {
+      "line": 906,
+      "title": "Questão 12 — Prontuário e IA generativa",
+      "level": 3
+    },
+    {
+      "line": 927,
+      "title": "Questão 13 — Descarte após 20 anos",
+      "level": 3
+    },
+    {
+      "line": 948,
+      "title": "Questão 14 — Incidente de dados e prazo ANPD",
+      "level": 3
+    },
+    {
+      "line": 969,
+      "title": "Questão 15 — Uso de imagens para aula",
+      "level": 3
+    },
+    {
+      "line": 990,
+      "title": "Questão 16 — Notificação compulsória",
+      "level": 3
+    },
+    {
+      "line": 1011,
+      "title": "Questão 17 — Vazamento e investigação interna",
+      "level": 3
+    },
+    {
+      "line": 1032,
+      "title": "Questão 18 — Revisão de prontuário no hospital",
+      "level": 3
+    },
+    {
+      "line": 1055,
+      "title": "29. Curadoria visual — catorze diagramas e quadros candidatos",
+      "level": 2
+    },
+    {
+      "line": 1076,
+      "title": "Regras de produção gráfica",
+      "level": 3
+    },
+    {
+      "line": 1087,
+      "title": "30. Integração da aula 170 com a LURIA e segurança digital",
+      "level": 2
+    },
+    {
+      "line": 1091,
+      "title": "Regras de design para o conteúdo didático",
+      "level": 3
+    },
+    {
+      "line": 1102,
+      "title": "31. Auditoria consolidada e pendências",
+      "level": 2
+    },
+    {
+      "line": 1106,
+      "title": "Conferência antes de publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **CFM — Resolução nº 2.217/2018.** Código de Ética Médica, com retificações. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+    "2. **CFM — Resolução nº 1.638/2002.** Prontuário médico e Comissão de Revisão. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2002/1638",
+    "3. **CFM — Resolução nº 1.821/2007.** Digitalização de prontuários e sistemas informatizados. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2007/1821",
+    "4. **CFM — Resolução nº 2.314/2022.** Telemedicina. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2022/2314",
+    "5. **CFM — Parecer nº 19/2026.** Descarte de prontuários após 20 anos, divulgado em 05/06/2026. https://portal.cfm.org.br/noticias/cfm-esclarece-regras-para-descarte-de-prontuarios-medicos-apos-20-anos/",
+    "6. **Brasil — Lei nº 13.787/2018.** Digitalização e utilização de sistemas informatizados de prontuários. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm",
+    "7. **Brasil — Lei nº 13.709/2018 (LGPD)**, texto consolidado. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "8. **Ministério da Saúde — LGPD e dados de saúde.** https://www.gov.br/saude/pt-br/acesso-a-informacao/lgpd",
+    "9. **ANPD — Comunicação de Incidentes de Segurança.** Resolução CD/ANPD 15/2024; prazo de três dias úteis. https://www.gov.br/anpd/pt-br/canais_atendimento/agente-de-tratamento/comunicado-de-incidente-de-seguranca-cis",
+    "10. **Brasil — Código Penal, art. 154.** Violação do segredo profissional. https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+    "11. **Brasil — ECA, Lei nº 8.069/1990.** https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+    "12. **CFM — Resolução nº 1.995/2012.** Diretivas antecipadas de vontade. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "13. **CFM — Resolução nº 2.336/2023.** Publicidade médica. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2023/2336",
+    "14. **Ministério da Saúde — Manual LGPD para APS/e-SUS.** https://sisaps.saude.gov.br/sistemas/esusaps/docs/manual/LGPD/",
+    "15. **ANPD — Perguntas frequentes.** Direitos, bases legais, tratamento de dados sensíveis. https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-frequentes",
+    "**Sobre referências e atualização:** a fonte principal é o texto das normas, não notícias secundárias. A notícia do CFM de junho/2026 facilita localizar a interpretação sobre descarte, mas a versão formal do parecer deve ser anexada na auditoria jurídica. Um link funcional hoje não garante vigência futura: comparar normas/retificações antes de publicação."
+  ],
+  "external_links": [
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2002/1638",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2007/1821",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2022/2314",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://portal.cfm.org.br/noticias/cfm-esclarece-regras-para-descarte-de-prontuarios-medicos-apos-20-anos/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/lgpd",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/anpd/pt-br/canais_atendimento/agente-de-tratamento/comunicado-de-incidente-de-seguranca-cis",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2023/2336",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/manual/LGPD/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-frequentes",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Cenário de prova:** adolescente de 16 anos pede orientação contraceptiva sem os pais. Recusa automática e divulgação indiscriminada aos responsáveis podem violar princípios de cuidado/confidencialidade. Avaliar discernimento, privacidade, risco de coerção/violência e normas específicas. Se houver suspeita de abuso, medidas de proteção e comunicação podem ser legalmente obrigatórias.",
+      "pattern": 0
+    },
+    {
+      "text": "**Parecer CFM nº 19/2026**, divulgado em 05/06/2026, esclarece que prontuários podem ser descartados **após 20 anos do último registro**, mesmo que não tenham sido digitalizados, desde que observados requisitos adequados de segurança, sigilo e rastreabilidade, e ressalvas legais relevantes. Não há obrigação universal de comunicar previamente pacientes/famílias ou Conselhos sobre cada eliminação; o parecer recomenda, por cautela, comunicação quando viável.",
+      "pattern": 0
+    },
+    {
+      "text": "**Não simplificar essa norma em “todo prontuário deve ser destruído depois de 20 anos”.** Prazo mínimo, possibilidade de eliminação e obrigação de eliminar são conceitos distintos. Verificar exigências adicionais de instituição pública/arquivo, demandas judiciais em curso, situação especial de menor, interesse histórico-científico e normas locais antes de descarte. Digitalização válida exige condições técnicas e de integridade; simples escaneamento em nuvem sem política não assegura requisitos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Autonomia:** capacidade e direito de participar das decisões, após receber informações adequadas. Não se confunde com obrigação de concordar com o médico nem com abandono terapêutico. Avaliar capacidade de compreensão e decisão para o ato específico, sem usar diagnóstico psiquiátrico, deficiência ou idade como prova automática de incapacidade.",
+      "pattern": 1
+    },
+    {
+      "text": "**Veracidade e integridade do registro:** os fatos observados e comunicados devem ser descritos fielmente, com data, horário, identificação profissional e separação entre diagnóstico estabelecido e hipótese.",
+      "pattern": 1
+    },
+    {
+      "text": "Os quatro princípios ajudam a compreender dilemas, mas não substituem normas expressas. Por exemplo, um familiar pode alegar beneficência (“vou cuidar melhor se souber todo o diagnóstico”), mas isso não lhe dá automaticamente direito ao prontuário completo de adulto capaz que não autorizou acesso. A equipe deve avaliar consentimento e finalidades, e documentar o que foi compartilhado legitimamente.",
+      "pattern": 1
+    },
+    {
+      "text": "**Medicina Preventiva · Bioética · Medicina Legal · Saúde Digital · Segurança do Paciente** **Lote 09 | Aula 170 de 180 | Rascunho editorial — 14/10/2026**",
+      "pattern": 2
+    },
+    {
+      "text": "**Base documental prioritária:** Código de Ética Médica (Resolução CFM nº 2.217/2018 e retificações), Resoluções CFM nº 1.638/2002, nº 1.821/2007 e nº 2.314/2022; Parecer CFM nº 19/2026; Lei nº 13.787/2018; Lei Geral de Proteção de Dados; LGPD/ANPD; ECA e normas sanitárias de notificação.",
+      "pattern": 2
+    },
+    {
+      "text": "A **Resolução CD/ANPD nº 15/2024** exige que o **controlador** comunique à ANPD e aos titulares incidentes que possam acarretar **risco ou dano relevante**, em regra em **três dias úteis** contados do conhecimento, ressalvadas disposições específicas. Esse prazo não significa que todo acesso suspeito deva ser comunicado indistintamente: é necessário classificar incidente, impacto e aplicabilidade. O registro interno de incidentes é exigido segundo a regulamentação.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Medicina Preventiva · Bioética · Medicina Legal · Saúde Digital · Segurança do Paciente** **Lote 09 | Aula 170 de 180 | Rascunho editorial — 14/10/2026**"
+    },
+    {
+      "text": "**Base documental prioritária:** Código de Ética Médica (Resolução CFM nº 2.217/2018 e retificações), Resoluções CFM nº 1.638/2002, nº 1.821/2007 e nº 2.314/2022; Parecer CFM nº 19/2026; Lei nº 13.787/2018; Lei Geral de Proteção de Dados; LGPD/ANPD; ECA e normas sanitárias de notificação."
+    }
+  ]
+}

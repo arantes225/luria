@@ -1,0 +1,135 @@
+{
+  "sha": "76107893d12b1b006d12b854efbd0a1238a1c340",
+  "path": "apostilas/ictericia-neonatal/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "ictericia-neonatal--76107893d1",
+  "title": "Icterícia Neonatal",
+  "format": ".json",
+  "chars_estimated": 84298,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Icterícia neonatal: reconhecer, medir, estratificar e agir"
+    },
+    {
+      "id": "metabolismo",
+      "title": "1. Metabolismo da bilirrubina e fisiologia neonatal"
+    },
+    {
+      "id": "medicao",
+      "title": "2. Avaliação clínica, bilirrubina transcutânea e sérica"
+    },
+    {
+      "id": "risco",
+      "title": "3. Fatores de risco: hiperbilirrubinemia versus neurotoxicidade"
+    },
+    {
+      "id": "classificacao",
+      "title": "4. Apresentações fisiológica, precoce, persistente e patológica"
+    },
+    {
+      "id": "hemolise",
+      "title": "5. Hemólise: incompatibilidade ABO, Rh e causas não imunes"
+    },
+    {
+      "id": "aleitamento",
+      "title": "6. Icterícia associada à alimentação: ingesta subótima versus leite materno"
+    },
+    {
+      "id": "curvas",
+      "title": "7. Interpretar o nomograma sem usar números fixos"
+    },
+    {
+      "id": "fototerapia",
+      "title": "8. Fototerapia: mecanismo, prescrição e monitorização"
+    },
+    {
+      "id": "escalada",
+      "title": "9. Hiperbilirrubinemia grave, encefalopatia e exsanguineotransfusão"
+    },
+    {
+      "id": "colestase",
+      "title": "10. Bilirrubina direta, colestase e atresia biliar"
+    },
+    {
+      "id": "pretermo",
+      "title": "11. Icterícia no recém-nascido abaixo de 35 semanas"
+    },
+    {
+      "id": "alta",
+      "title": "12. Alta, prevenção, família e seguimento"
+    },
+    {
+      "id": "algoritmo",
+      "title": "13. Algoritmo de decisão e erros frequentes"
+    },
+    {
+      "id": "casos",
+      "title": "14. Casos clínicos integradores comentados"
+    },
+    {
+      "id": "questoes",
+      "title": "15. Questões autorais comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "16. Referências primárias e controle de qualidade"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"16. Referências primárias e controle de qualidade\"]",
+    "[\"p\",\"<strong>American Academy of Pediatrics — Kemper AR et al.</strong> Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. Pediatrics. 2022;150(3):e2022058859. DOI: 10.1542/peds.2022-058859. https://doi.org/10.1542/peds.2022-058859\"]",
+    "[\"p\",\"<strong>AAP — Hyperbilirubinemia FAQ e página de implementação.</strong> https://www.aap.org/en/patient-care/hyperbilirubinemia/ e https://www.aap.org/en/patient-care/hyperbilirubinemia/frequently-asked-questions-about-the-2022-aap-guideline-on-the-management-of-hyperbilirubinemia/ . A página de AAP informa vigência da diretriz de 2022 até agosto de 2027.\"]",
+    "[\"p\",\"<strong>Fawaz R et al., NASPGHAN/ESPGHAN.</strong> Guideline for the Evaluation of Cholestatic Jaundice in Infants. J Pediatr Gastroenterol Nutr. 2017;64(1):154–168. DOI 10.1097/MPG.0000000000001334. https://doi.org/10.1097/MPG.0000000000001334\"]",
+    "[\"p\",\"<strong>Maisels MJ, Watchko JF, Bhutani VK, Stevenson DK.</strong> An approach to the management of hyperbilirubinemia in the preterm infant less than 35 weeks of gestation. J Perinatol. 2012;32:660–664. DOI 10.1038/jp.2012.71. Recomendações de consenso com evidência limitada. https://doi.org/10.1038/jp.2012.71\"]",
+    "[\"p\",\"<strong>Sociedade Brasileira de Pediatria, Departamento Científico de Hepatologia.</strong> Atresia de vias biliares, material de atualização 2024; Atresia Biliar, atualização institucional 29/07/2025. https://www.sbp.com.br/atresia-biliar/ e https://www.sbp.com.br/pediatria-para-familias/doencas/atresia-de-vias-biliares/\"]",
+    "[\"p\",\"<strong>Status editorial:</strong> versão inicial autoral de ensino, em branch isolada, sem certificação médica integral. As curvas AAP não foram reproduzidas nem convertidas em números fixos; consultar diretamente algoritmos/figuras oficiais para decisões e adequar a protocolos locais. Não usar o texto como prescrição automática. Faltam auditoria aprofundada para densidade mínima de 60.000 caracteres úteis, seleção/validação de figuras licenciadas, revisão médica especializada, verificação de referências brasileiras complementares e testes no renderer desktop/PWA.\"]"
+  ],
+  "external_urls": [
+    "https://doi.org/10.1542/peds.2022-058859",
+    "https://www.aap.org/en/patient-care/hyperbilirubinemia/",
+    "https://www.aap.org/en/patient-care/hyperbilirubinemia/frequently-asked-questions-about-the-2022-aap-guideline-on-the-management-of-hyperbilirubinemia/",
+    "https://doi.org/10.1097/MPG.0000000000001334",
+    "https://doi.org/10.1038/jp.2012.71",
+    "https://www.sbp.com.br/atresia-biliar/",
+    "https://www.sbp.com.br/pediatria-para-familias/doencas/atresia-de-vias-biliares/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "Icterícia neonatal é a coloração amarelada de pele e escleras produzida pelo acúmulo de bilirrubina. É um sinal, não um diagnóstico etiológico. A maior parte dos recém-nascidos apresenta algum grau de elevação da bilirrubina, pois o balanço entre produção, captação, conjugação e eliminação ainda está em amadurecimento. Entretanto, a mesma aparência pode representar uma adaptação fisiológica, hemólise acelerada, baixa oferta de leite, hepatopatia, infecção ou doença obstrutiva potencialmente grave."
+    },
+    {
+      "section": "visao",
+      "text": "Este caderno desenvolve de modo integrado a fisiologia, as causas, a investigação, a interpretação das curvas terapêuticas, a fototerapia, a escalada para exsanguineotransfusão, a colestase e a orientação de alta. A diretriz AAP 2022 aplica-se aos nascidos com <strong>35 semanas ou mais</strong>; os menores de 35 semanas necessitam de protocolo específico da unidade neonatal. Não transplantar as curvas de uma população à outra."
+    },
+    {
+      "section": "visao",
+      "text": "O estudante deve aprender a formular a pergunta de decisão antes de listar nomes diagnósticos. Se a criança tem 8 horas, é urgente dosar BT e investigar hemólise; se tem 72 horas, o problema envolve curva, alimentação e seguimento; se tem 4 semanas e fezes claras, a prioridade é fracionamento e excluir atresia. Essas apresentações não se resolvem por uma definição única de 'icterícia patológica', pois os mecanismos, exames e consequências são diferentes."
+    },
+    {
+      "section": "medicao",
+      "text": "A bilirrubina transcutânea (TcB) é instrumento não invasivo útil para rastreamento. A bilirrubina sérica total (TSB/BT) é o padrão para definir limiar de fototerapia, escalada e exsanguineotransfusão. Na AAP 2022, dosar TSB se a TcB estiver a até 3 mg/dL abaixo do limiar de fototerapia para aquela criança ou se a TcB for igual ou superior a 15 mg/dL. A TcB tem limitações durante e após fototerapia, dependendo da técnica, pele e aparelho; preferir amostra sérica quando a decisão terapêutica depende de pequena diferença."
+    },
+    {
+      "section": "medicao",
+      "text": "A AAP recomenda dosagem de TcB ou TSB entre 24 e 48 horas de vida, ou antes da alta se a saída for anterior; icterícia antes das 24 horas requer avaliação imediata. O resultado só tem significado clínico com horário da coleta e curva apropriada. Anotar valor, unidade, horas de vida, IG, fatores de risco de neurotoxicidade e distância em mg/dL até o limiar; não registrar apenas 'BT normal' ou 'Bhutani alto'."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

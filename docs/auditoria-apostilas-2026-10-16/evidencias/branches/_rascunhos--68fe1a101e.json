@@ -1,0 +1,468 @@
+{
+  "sha": "68fe1a101ea8113f1213e6f29bc72cdc1e6f9910",
+  "path": "apostilas/_rascunhos/lote-04-aula-067-trauma-pelvico-geniturinario.md",
+  "branches": [
+    "origin/editorial/lote-04-aula067-trauma-pelvico-geniturinario-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--68fe1a101e",
+  "title": "LURIA | Lote 04 — Aula 067",
+  "format": ".md",
+  "chars_estimated": 91855,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 04 — Aula 067"
+    },
+    {
+      "title": "Trauma pélvico e geniturinário: do choque hemorrágico à reconstrução funcional"
+    },
+    {
+      "title": "0. Auditoria editorial e etapa zero comparativa"
+    },
+    {
+      "title": "0.1 Resultado da conferência do acervo LURIA"
+    },
+    {
+      "title": "0.2 Materiais do Google Drive encontrados, abertos e lidos em 15/10/2026"
+    },
+    {
+      "title": "0.3 Bases científicas atuais para a produção"
+    },
+    {
+      "title": "0.4 Índice de ensino planejado e fronteira curricular"
+    },
+    {
+      "title": "1. Introdução clínica: uma fratura do anel pélvico pode matar antes de chegar à TC"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "2. Anatomia aplicada: o que cada estrutura explica"
+    },
+    {
+      "title": "2.1 O anel pélvico"
+    },
+    {
+      "title": "2.2 Retroperitônio e a lógica do FAST"
+    },
+    {
+      "title": "2.3 Trato urinário inferior: reservatório e condução"
+    },
+    {
+      "title": "2.4 Rim e ureter"
+    },
+    {
+      "title": "3. Epidemiologia, mecanismos de trauma e risco"
+    },
+    {
+      "title": "3.1 Trauma de alta energia"
+    },
+    {
+      "title": "3.2 Três mecanismos mecânicos fundamentais"
+    },
+    {
+      "title": "3.3 A fisiologia pode ser pior que a imagem"
+    },
+    {
+      "title": "4. Classificações: o que são e como mudam conduta"
+    },
+    {
+      "title": "4.1 Young–Burgess e a pergunta sobre direção da energia"
+    },
+    {
+      "title": "4.2 Tile: estabilidade do anel"
+    },
+    {
+      "title": "4.3 WSES: unir estabilidade anatômica e hemodinâmica"
+    },
+    {
+      "title": "5. Atendimento inicial integrado ao ABCDE"
+    },
+    {
+      "title": "5.1 A prioridade não é “diagnosticar tudo”; é evitar morrer antes do diagnóstico"
+    },
+    {
+      "title": "5.2 Exame físico: não “abrir e fechar a bacia” repetidamente"
+    },
+    {
+      "title": "5.3 Binder: quando, onde, por quanto tempo"
+    },
+    {
+      "title": "5.4 Ressuscitação hemostática"
+    },
+    {
+      "title": "5.5 FAST negativo e choque: a pelve continua sangrando"
+    },
+    {
+      "title": "5.6 Escolha de imagem no politrauma pélvico"
+    },
+    {
+      "title": "6. Controle da hemorragia pélvica: anatomia e recursos"
+    },
+    {
+      "title": "6.1 De onde vem o sangue?"
+    },
+    {
+      "title": "6.2 Reduzir movimento e criar contraforça"
+    },
+    {
+      "title": "6.3 Tamponamento pélvico pré-peritoneal (packing)"
+    },
+    {
+      "title": "6.4 Angiografia e angioembolização"
+    },
+    {
+      "title": "6.5 REBOA e ponte para hemostasia"
+    },
+    {
+      "title": "6.6 Matriz de decisão em choque"
+    },
+    {
+      "title": "7. Fratura pélvica aberta e lesões associadas: urgências frequentemente omitidas"
+    },
+    {
+      "title": "7.1 Ferida perineal, retal ou vaginal"
+    },
+    {
+      "title": "7.2 Lesão retal e a importância de não confiar em exame isolado"
+    },
+    {
+      "title": "7.3 Lesões neurológicas e ortopédicas"
+    },
+    {
+      "title": "8. Algoritmo do primeiro atendimento pélvico — revisão para sala de emergência"
+    },
+    {
+      "title": "9. Trauma renal: saber a gravidade sem retirar o rim desnecessariamente"
+    },
+    {
+      "title": "9.1 Frequência, mecanismos e manifestações"
+    },
+    {
+      "title": "9.2 Quem precisa de imagem renal?"
+    },
+    {
+      "title": "9.3 TC e suas fases: cada fase responde a uma pergunta"
+    },
+    {
+      "title": "9.4 AAST renal: interpretar grau à luz da classificação vigente"
+    },
+    {
+      "title": "9.5 Tratamento não operatório (TNO): o que ele realmente significa?"
+    },
+    {
+      "title": "9.6 Angioembolização renal"
+    },
+    {
+      "title": "9.7 Extravasamento urinário e urinoma"
+    },
+    {
+      "title": "9.8 Reimagem e complicações tardias"
+    },
+    {
+      "title": "10. Trauma de ureter: a lesão que pode passar despercebida"
+    },
+    {
+      "title": "10.1 Por que o ureter é difícil?"
+    },
+    {
+      "title": "10.2 Pistas na história e no exame"
+    },
+    {
+      "title": "10.3 Diagnóstico por imagem"
+    },
+    {
+      "title": "10.4 Manejo: localização e viabilidade determinam reconstrução"
+    },
+    {
+      "title": "10.5 Complicações e seguimento"
+    },
+    {
+      "title": "11. Trauma vesical: a TC comum não substitui cistografia"
+    },
+    {
+      "title": "11.1 Fisiopatologia e apresentação"
+    },
+    {
+      "title": "11.2 Indicações principais de cistografia"
+    },
+    {
+      "title": "11.3 Como fazer cistografia e por que a fase passiva falha"
+    },
+    {
+      "title": "11.4 Como interpretar extravasamento de contraste"
+    },
+    {
+      "title": "11.5 Conduta em lesão extraperitoneal"
+    },
+    {
+      "title": "11.6 Conduta em lesão intraperitoneal"
+    },
+    {
+      "title": "11.7 Acompanhamento e retirada da sonda"
+    },
+    {
+      "title": "11.8 Quadro comparativo de alta retenção"
+    },
+    {
+      "title": "12. Trauma uretral: não causar lesão adicional ao tentar monitorar a diurese"
+    },
+    {
+      "title": "12.1 Por que a sonda pode ser perigosa?"
+    },
+    {
+      "title": "12.2 Localização: anterior versus posterior"
+    },
+    {
+      "title": "12.3 Sinais de suspeita"
+    },
+    {
+      "title": "12.4 Exame de escolha no homem: uretrografia retrógrada"
+    },
+    {
+      "title": "12.5 Uretra feminina"
+    },
+    {
+      "title": "12.6 Desvio urinário inicial"
+    },
+    {
+      "title": "12.7 Realinhamento precoce e uretroplastia diferida"
+    },
+    {
+      "title": "12.8 Seguimento: estenose, continência e sexualidade"
+    },
+    {
+      "title": "13. Trauma genital e de partes moles: emergências dentro da emergência"
+    },
+    {
+      "title": "13.1 Bolsa escrotal e testículo"
+    },
+    {
+      "title": "13.2 Fratura peniana e uretra associada"
+    },
+    {
+      "title": "13.3 Lacerações penetrantes e contaminação"
+    },
+    {
+      "title": "13.4 Vulva e vagina"
+    },
+    {
+      "title": "14. Populações e contextos especiais"
+    },
+    {
+      "title": "14.1 Crianças"
+    },
+    {
+      "title": "14.2 Gestação"
+    },
+    {
+      "title": "14.3 Idoso e anticoagulação"
+    },
+    {
+      "title": "14.4 Rim único ou doença renal prévia"
+    },
+    {
+      "title": "14.5 Hospital sem radiologia intervencionista 24 horas"
+    },
+    {
+      "title": "15. Cuidados pós-ressuscitação e complicações"
+    },
+    {
+      "title": "15.1 Fase crítica"
+    },
+    {
+      "title": "15.2 Tromboembolismo e imobilização"
+    },
+    {
+      "title": "15.3 Infecção e lesões abertas"
+    },
+    {
+      "title": "15.4 Reabilitação funcional integrada"
+    },
+    {
+      "title": "16. Algoritmos por órgão: síntese operacional"
+    },
+    {
+      "title": "16.1 Rim"
+    },
+    {
+      "title": "16.2 Ureter"
+    },
+    {
+      "title": "16.3 Bexiga"
+    },
+    {
+      "title": "16.4 Uretra"
+    },
+    {
+      "title": "16.5 O que não pode acontecer"
+    },
+    {
+      "title": "17. Casos clínicos comentados: decisões que mudam desfechos"
+    },
+    {
+      "title": "Caso 1 — Choque após colisão e FAST negativo"
+    },
+    {
+      "title": "Caso 2 — Fratura aberta com hematoma perineal discreto"
+    },
+    {
+      "title": "Caso 3 — Binder colocado alto, sobre as cristas"
+    },
+    {
+      "title": "Caso 4 — Trauma renal de alto grau, porém estável"
+    },
+    {
+      "title": "Caso 5 — Lesão vascular renal sem hematúria"
+    },
+    {
+      "title": "Caso 6 — Extravasamento urinário após procedimento pélvico"
+    },
+    {
+      "title": "Caso 7 — Fratura pélvica e hematúria macroscópica"
+    },
+    {
+      "title": "Caso 8 — Perfuração intraperitoneal de bexiga por trauma contuso"
+    },
+    {
+      "title": "Caso 9 — Ruptura extraperitoneal complexa"
+    },
+    {
+      "title": "Caso 10 — Sangue no meato, retenção e uretra posterior"
+    },
+    {
+      "title": "Caso 11 — Trauma a cavaleiro e uretra anterior"
+    },
+    {
+      "title": "Caso 12 — Fratura peniana, hematúria e risco uretral"
+    },
+    {
+      "title": "18. Questões autorais comentadas — primeira bateria"
+    },
+    {
+      "title": "Questão 1 — A decisão sobre TC"
+    },
+    {
+      "title": "Questão 2 — Posição correta do binder"
+    },
+    {
+      "title": "Questão 3 — Classificação WSES"
+    },
+    {
+      "title": "Questão 4 — Packing e angioembolização"
+    },
+    {
+      "title": "Questão 5 — Hematúria e trauma renal"
+    },
+    {
+      "title": "Questão 6 — Alto grau renal em estável"
+    },
+    {
+      "title": "Questão 7 — Ureter sem hematúria"
+    },
+    {
+      "title": "Questão 8 — Fratura e hematúria"
+    },
+    {
+      "title": "Questão 9 — Técnica correta da cistografia"
+    },
+    {
+      "title": "Questão 10 — Ruptura vesical traumática intraperitoneal"
+    },
+    {
+      "title": "Questão 11 — Quando “extra = sonda” falha?"
+    },
+    {
+      "title": "Questão 12 — Uretra antes da sonda"
+    },
+    {
+      "title": "Questão 13 — Trauma a cavaleiro"
+    },
+    {
+      "title": "Questão 14 — Testículo após trauma"
+    },
+    {
+      "title": "Questão 15 — Seguimento da lesão renal"
+    },
+    {
+      "title": "Questão 16 — Manejo da uretra posterior"
+    },
+    {
+      "title": "19. Recursos visuais: inventário editorial e aprovação centralizada"
+    },
+    {
+      "title": "20. Referências científicas primárias e complementares"
+    },
+    {
+      "title": "20.1 Nota de aplicabilidade no Brasil"
+    },
+    {
+      "title": "21. Auditoria preliminar e pendências"
+    },
+    {
+      "title": "21.1 Roteiro de revisão para não certificar automaticamente"
+    }
+  ],
+  "reference_entries": [
+    "1. **European Association of Urology (EAU).** Urological Trauma Guidelines, edição 2026. Capítulos sobre rim, ureter, bexiga, uretra e genitais; base para indicação de TC renal, cistografia retrógrada, uretrografia e tratamento por órgão. https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines",
+    "2. **European Association of Urology.** Urological Trauma Guidelines: Summary of Changes, 2026. Reconhecer reestruturação da edição, não equivaler mudança editorial a alteração automática da evidência clínica. https://uroweb.org/guidelines/urological-trauma/summary-of-changes",
+    "3. **Coccolini F, Stahel PF, Montori G, et al.** Pelvic trauma: WSES classification and guidelines. *World Journal of Emergency Surgery.* 2017;12:5. DOI: 10.1186/s13017-017-0117-6. https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
+    "4. **Spahn DR et al.** The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. *Critical Care*. 2023. https://link.springer.com/article/10.1186/s13054-023-04327-7",
+    "5. **Morey AF, Broghammer JA, Hollowell CMP, McKibben MJ, Souter L.** Urotrauma Guideline 2020: AUA Guideline. *J Urol.* 2021. DOI: 10.1097/JU.0000000000001408. https://www.auajournals.org/doi/10.1097/JU.0000000000001408",
+    "6. **Morey AF et al.** Urotrauma: AUA Guideline (texto original detalhado em acesso aberto). *Journal of Urology.* 2014. https://pmc.ncbi.nlm.nih.gov/articles/PMC4104146/",
+    "7. **EAU.** EAU Guidelines on Paediatric Urology, edição vigente, para checagem posterior das particularidades pediátricas — **não substitui a leitura necessária da seção específica antes de aprovar doses, volumes ou critérios em crianças**. https://uroweb.org/guidelines/paediatric-urology",
+    "8. **AAST.** Organ Injury Scaling — trauma renal, revisão de 2018; **consultar quadro anatômico oficial ou reprodução autorizada durante auditoria para transcrição precisa da graduação**. https://www.aast.org/resources-detail/injury-scoring-scale",
+    "- Verificar se a classificação AAST renal apresentada pela equipe está de acordo com a escala anatômica revisada em 2018 e que referências históricas usam outra versão.",
+    "- Revisar nuances sobre **tentativa única e delicada de cateter uretral por experiente** em selecionados versus ensino de evitar cateter às cegas diante de sangue no meato; não transformar prudência em proibição absoluta sem exceções.",
+    "- Confirmar indicação e técnica de **cistografia retrograda ativa**, incluindo possibilidade de estudo em pacientes com lesão uretral.",
+    "- Conferir diferenças entre **trauma vesical contuso externo intraperitoneal** e pequenos acidentes iatrogênicos endoscópicos.",
+    "- Revisar escolha e tempo de intervenção para hemorragia pélvica conforme **resposta à ressuscitação e logística**; evitar atribuir qualquer hipotensão à pelve.",
+    "- Confirmar indicações e contraindicações de tranexâmico e correção de coagulopatia no protocolo brasileiro antes de publicar doses.",
+    "- Avaliar de modo específico pediatria, gestantes, idosos e pacientes anticoagulados.",
+    "- Realizar auditoria contra questões reais representativas de residência/ENAMED; ajustar lacunas no capítulo correspondente.",
+    "- Inserir imagens reais somente após verificar fonte, licença comercial, fidelidade e aprovação no Admin.",
+    "- Verificar visualização e navegação no formato LURIA em desktop e PWA, sem alterar arquivos já publicados.",
+    "**Situação final desta rodada:** conteúdo em branch editorial isolada, sob revisão; **não houve merge, deploy, edição de apostilas anteriores, aprovação de imagens ou alteração no Supabase**. O crescimento de caracteres não implica conclusão automática."
+  ],
+  "external_urls": [
+    "https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
+    "https://link.springer.com/article/10.1186/s13054-023-04327-7",
+    "https://www.auajournals.org/doi/10.1097/JU.0000000000001408",
+    "https://uroweb.org/guidelines/urological-trauma/summary-of-changes",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4104146/",
+    "https://uroweb.org/guidelines/paediatric-urology",
+    "https://www.aast.org/resources-detail/injury-scoring-scale"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "1. **08 - TRAUMA - TRAUMA ABDOMINAL ESPECÍFICO .pdf** — cerca de 14 mil caracteres extraídos; explora trauma de órgãos sólidos e retroperitônio, e traz um resumo curto de lesão renal, ureteral e vesical. Pontos de atenção: tratamento não operatório condicionado a recursos, estabilidade e vigilância, e diferenciação entre lesão vesical intra/extraperitoneal. Lacunas para esta aula: classificação do anel pélvico, estabilização, hemorragia pélvica, diagnóstico da uretra, cistografia técnica, via excretora renal e seguimento. 2. **13 - UROLOGIA - PS - TRAUMA DE URETRA E ESTENOSE DE URETRA .pdf** — cerca de 4,4 mil caracteres, cobre anatomia uretr"
+    },
+    {
+      "text": "Imagine um motociclista de 32 anos após colisão de alta energia. Frequência cardíaca de 132, pressão 84/52, pele fria, FAST negativo e equimose perineal. Seria perigoso tranquilizar-se pelo FAST ou encaminhá-lo rotineiramente à TC. O retroperitônio pode acumular sangue sem produzir líquido livre intraperitoneal detectável. A equipe deve identificar outras fontes de hemorragia e implementar estabilização pélvica e controle hemostático conforme mecanismo, achados e disponibilidade do centro."
+    },
+    {
+      "text": "A EAU recomenda manejo não operatório em pacientes estáveis com trauma renal contuso, com monitorização e reimagem conforme risco. Traumas renais penetrantes selecionados também podem receber TNO em centros experientes, desde que trajetória e lesões associadas sejam adequadamente avaliadas. **TNO pode incluir procedimentos minimamente invasivos** — embolização seletiva, stent ureteral, nefrostomia ou drenagem percutânea — sem exigir laparotomia."
+    },
+    {
+      "text": "Não interpretar pequena coleção adjacente sem preenchimento adequado como diagnóstico definitivo de integridade. Um exame tecnicamente inadequado com bexiga pouco distendida pode ser falsamente negativo."
+    },
+    {
+      "text": "Em lesões completas por fratura pélvica, a **derivação suprapúbica e uretroplastia definitiva diferida** continua estratégia importante em muitos centros. O momento depende da recuperação das lesões associadas, estabilidade óssea, inflamação/fibrose e anatomia; reparo uretral aberto imediato na fase hiperaguda pode ter riscos importantes em homem com ruptura posterior. A diretriz EAU 2026 recomenda **não realizar uretroplastia imediata (<48 h) em lesões uretrais masculinas associadas à fratura pélvica**, devendo-se distinguir de alternativas endoscópicas selecionadas e do trauma penetrante anterior."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,149 @@
+{
+  "sha": "b814e6b755afabad16409a8e097d1e86efd2758a",
+  "path": "apostilas/aneurisma-aorta-emergencias-vasculares/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "aneurisma-aorta-emergencias-vasculares--b814e6b755",
+  "title": "LURIA · Apostila 240 — Aneurisma da aorta e emergências vasculares",
+  "format": ".md",
+  "chars_estimated": 26114,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 240 — Aneurisma da aorta e emergências vasculares"
+    },
+    {
+      "title": "1. Por que estudar a aorta como síndrome clínica"
+    },
+    {
+      "title": "2. Anatomia, hemodinâmica e risco de ruptura"
+    },
+    {
+      "title": "3. Aneurisma aórtico abdominal (AAA): epidemiologia e detecção"
+    },
+    {
+      "title": "3.1 Quadro clínico"
+    },
+    {
+      "title": "3.2 Exame e imagem"
+    },
+    {
+      "title": "4. AAA pequeno: o que acompanhar"
+    },
+    {
+      "title": "4.1 Critérios de reparo eletivo"
+    },
+    {
+      "title": "4.2 EVAR versus reparo aberto"
+    },
+    {
+      "title": "5. AAA roto: atendimento de emergência"
+    },
+    {
+      "title": "6. Síndrome aórtica aguda: dissecção, hematoma e úlcera"
+    },
+    {
+      "title": "6.1 Classificação Stanford"
+    },
+    {
+      "title": "6.2 Fisiologia do controle anti-impulso"
+    },
+    {
+      "title": "6.3 Exames"
+    },
+    {
+      "title": "7. Aneurisma torácico crônico"
+    },
+    {
+      "title": "8. Diagnósticos diferenciais de dor torácica/abdominal intensa"
+    },
+    {
+      "title": "9. Complicações e seguimento após reparo"
+    },
+    {
+      "title": "10. Algoritmos de decisão"
+    },
+    {
+      "title": "10.1 Aneurisma detectado ao acaso"
+    },
+    {
+      "title": "10.2 Dor súbita com suspeita de dissecção"
+    },
+    {
+      "title": "10.3 Suspeita de AAA roto"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — AAA assintomático de 4,4 cm"
+    },
+    {
+      "title": "Caso 2 — Mulher com AAA 5,1 cm"
+    },
+    {
+      "title": "Caso 3 — Dor lombar, síncope e choque"
+    },
+    {
+      "title": "Caso 4 — Dor torácica súbita, sopro novo e déficit de pulso"
+    },
+    {
+      "title": "12. Seis questões LURIA autorais comentadas"
+    },
+    {
+      "title": "13. Pérolas para prova e prática"
+    },
+    {
+      "title": "14. Matriz visual para curadoria posterior"
+    },
+    {
+      "title": "15. Referências verificadas, 15/10/2026"
+    },
+    {
+      "title": "16. Auditoria do manuscrito e lacunas remanescentes"
+    }
+  ],
+  "reference_entries": [
+    "1. Isselbacher EM et al. *2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease*. J Am Coll Cardiol. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC10784847/ — diretriz de anatomia, rastreamento, AAA, dissecção e intervenção.",
+    "2. American College of Cardiology. *2022 ACC/AHA Aortic Disease Guideline Key Perspectives: Part 2 of 2*. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2022/11/01/12/21/2022-guideline-on-aortic-disease-2-gl-ad — resumo de limiares/seguimento.",
+    "3. Wanhainen A et al. *European Society for Vascular Surgery (ESVS) 2024 Clinical Practice Guidelines on the Management of Abdominal Aorto-Iliac Artery Aneurysms*. Eur J Vasc Endovasc Surg. 2024. doi:10.1016/j.ejvs.2023.11.002. https://pubmed.ncbi.nlm.nih.gov/38307694/ — aneurisma, ruptura, EVAR e complicações.",
+    "4. American Heart Association. *2022 Guideline for the Diagnosis and Management of Aortic Disease — Top Things to Know*. https://professional.heart.org/en/science-news/2022-guideline-for-the-diagnosis-and-management-of-aortic-disease/top-things-to-know",
+    "**Para completar antes de publicar:** classificação anatômica detalhada Crawford/DeBakey, aortite e aneurisma infeccioso, comorbidades perioperatórias e critérios de fragilidade, árvores de decisão com indicativos detalhados para EVAR e cirurgia aberta, diretrizes brasileiras atuais/caminhos SUS, aortopatias hereditárias por variante genética, detalhes de malperfusão e monitorização de pós-operatório, seguimento específico por tipo de enxerto, imagens licenciadas e auditoria de contrapontos ESVS versus ACC/AHA. Este texto **não alcançou** ainda o tamanho premium do Prompt Magno e não está apro"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10784847/",
+    "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2022/11/01/12/21/2022-guideline-on-aortic-disease-2-gl-ad",
+    "https://pubmed.ncbi.nlm.nih.gov/38307694/",
+    "https://professional.heart.org/en/science-news/2022-guideline-for-the-diagnosis-and-management-of-aortic-disease/top-things-to-know"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O AAA muitas vezes é descoberto incidentalmente em ultrassonografia ou TC realizada por outra razão. Em grupos de risco, rastreamento ultrassonográfico pode identificar aneurismas antes da ruptura. A ACC/AHA 2022 recomenda rastreio com US em **homens ≥65 anos que já fumaram** e em **pessoas ≥65 anos com parente de primeiro grau com AAA**; considera razoável rastreamento em mulheres ≥65 anos com tabagismo prévio, entre outras nuances. A recomendação deve ser adaptada à diretriz e oferta locais do SUS; não afirmar que o rastreio é programa populacional universal brasileiro."
+    },
+    {
+      "text": "| Diâmetro (ACC/AHA 2022) | Intervalo de vigilância por US sugerido | |---|---| | 3,0–3,9 cm | Aproximadamente a cada 3 anos | | 4,0–4,9 cm em homens / 4,0–4,4 cm em mulheres | Aproximadamente anual | | ≥5,0 cm em homens / ≥4,5 cm em mulheres, ainda sem indicação operatória | Aproximadamente a cada 6 meses, conforme avaliação especializada |"
+    },
+    {
+      "text": "A tabela representa recomendações ACC/AHA e pressupõe paciente estável, assintomático e em acompanhamento; não autoriza espaçar visitas se crescimento rápido, dor, anatomia especial ou circunstância de alto risco. É importante controlar tabagismo, pressão e risco cardiovascular geral, além de discutir estatinas quando há aterosclerose aórtica e outras indicações. Não existe medicamento comprovado que 'dissolva' AAA."
+    },
+    {
+      "text": "Para **AAA infrarrenal esporádico**, ACC/AHA 2022 recomenda reparo em **homens com diâmetro ≥5,5 cm** e **mulheres com diâmetro ≥5,0 cm**, e também quando existem **sintomas atribuíveis ao aneurisma**. Morfologia sacular, crescimento rápido e fatores individuais podem alterar indicação. A decisão final exige especialista e análise do risco cirúrgico versus risco natural de ruptura."
+    },
+    {
+      "text": "**Passo 1 — Reconhecer:** suspeita clínica alta em dor abdominal/lombar aguda + síncope/hipotensão, mesmo sem massa palpável. **Passo 2 — Chamar ajuda cedo:** equipe vascular/anestésica, hemoterapia, cirurgia, sala híbrida/centro cirúrgico conforme rede. Não esperar hemoglobina cair para reconhecer hemorragia, pois o exame inicial pode ser normal. **Passo 3 — ABCDE:** proteção de via aérea quando necessária, monitorização contínua, acessos calibrosos, tipagem/prova cruzada, correção da coagulopatia e preparo para transfusão conforme cenário. **Passo 4 — Hemodinâmica:** evitar hipertensão e administração indiscriminada de grandes volumes de cr"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

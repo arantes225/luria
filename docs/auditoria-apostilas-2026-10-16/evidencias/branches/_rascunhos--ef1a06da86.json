@@ -1,0 +1,347 @@
+{
+  "sha": "ef1a06da8681f61491c1556040000d5f7873c144",
+  "path": "apostilas/_rascunhos/lote-10-206-miomas-polipos-patologia-uterina-benigna.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ef1a06da86",
+  "title": "LURIA | Apostila 206 — Miomas, pólipos e patologia uterina benigna",
+  "format": ".md",
+  "chars_estimated": 68800,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 206 — Miomas, pólipos e patologia uterina benigna"
+    },
+    {
+      "title": "0. Etapa zero: comparação e reutilização responsável"
+    },
+    {
+      "title": "1. Objetivos clínicos e perguntas que decidem conduta"
+    },
+    {
+      "title": "2. Anatomia e fisiologia indispensáveis"
+    },
+    {
+      "title": "2.1. Organização do útero"
+    },
+    {
+      "title": "2.2. Endométrio durante o ciclo"
+    },
+    {
+      "title": "2.3. Hormônios e crescimento miomatoso"
+    },
+    {
+      "title": "3. Leiomiomas uterinos: definição, epidemiologia e relevância"
+    },
+    {
+      "title": "3.1. O que são miomas?"
+    },
+    {
+      "title": "3.2. Por que sangram?"
+    },
+    {
+      "title": "3.3. Por que comprimem?"
+    },
+    {
+      "title": "3.4. Sintomas e evolução"
+    },
+    {
+      "title": "4. Classificação FIGO dos leiomiomas: a linguagem que muda o tratamento"
+    },
+    {
+      "title": "4.1. A relação com a cavidade é o princípio organizador"
+    },
+    {
+      "title": "4.2. Por que tipo importa mais que volume sozinho?"
+    },
+    {
+      "title": "4.3. O que é STEP-W?"
+    },
+    {
+      "title": "5. Diagnóstico dos miomas: da história à imagem útil"
+    },
+    {
+      "title": "5.1. Anamnese dirigida"
+    },
+    {
+      "title": "5.2. Exame físico"
+    },
+    {
+      "title": "5.3. Exames laboratoriais"
+    },
+    {
+      "title": "5.4. Ultrassom transvaginal e transabdominal"
+    },
+    {
+      "title": "5.5. Histerossonografia e histeroscopia"
+    },
+    {
+      "title": "6. Pólipos endometriais e endocervicais"
+    },
+    {
+      "title": "6.1. Conceito"
+    },
+    {
+      "title": "6.2. Quadro clínico e fatores associados"
+    },
+    {
+      "title": "6.3. Diagnóstico por imagem e visão direta"
+    },
+    {
+      "title": "6.4. Tratamento e decisões individualizadas"
+    },
+    {
+      "title": "6.5. Diagnósticos diferenciais"
+    },
+    {
+      "title": "6.6. O que nunca atribuir automaticamente a pólipo"
+    },
+    {
+      "title": "7. Adenomiose: patologia uterina benigna que não é mioma"
+    },
+    {
+      "title": "7.1. Conceito e fisiopatologia"
+    },
+    {
+      "title": "7.2. Apresentação clínica"
+    },
+    {
+      "title": "7.3. Ultrassom e ressonância"
+    },
+    {
+      "title": "7.4. Tratamento"
+    },
+    {
+      "title": "7.5. Quadro diferencial: adenomiose versus leiomioma"
+    },
+    {
+      "title": "8. Sangramento uterino anormal: investigação e primeiro manejo"
+    },
+    {
+      "title": "8.1. Não começar pela imagem antes da estabilidade"
+    },
+    {
+      "title": "8.2. Descrição do sangramento importa"
+    },
+    {
+      "title": "8.3. Laboratório e avaliação do ferro"
+    },
+    {
+      "title": "8.4. Quando investigar endométrio?"
+    },
+    {
+      "title": "8.5. Controle farmacológico não hormonal"
+    },
+    {
+      "title": "8.6. Controle hormonal do sangramento"
+    },
+    {
+      "title": "9. Cirurgia e procedimentos em miomas: escolher pela anatomia e objetivo"
+    },
+    {
+      "title": "9.1. Observação ativa"
+    },
+    {
+      "title": "9.2. Miomectomia: preservação uterina com riscos reais"
+    },
+    {
+      "title": "9.3. Miomectomia histeroscópica e técnicas em etapas"
+    },
+    {
+      "title": "9.4. Histerectomia"
+    },
+    {
+      "title": "9.5. Embolização de artérias uterinas (EAU)"
+    },
+    {
+      "title": "9.6. Técnicas ablativas e novas tecnologias"
+    },
+    {
+      "title": "9.7. Morcelação e risco de malignidade não reconhecida"
+    },
+    {
+      "title": "10. Miomas e fertilidade: o que a evidência permite dizer"
+    },
+    {
+      "title": "10.1. Mecanismos possíveis"
+    },
+    {
+      "title": "10.2. O problema da indicação automática de cirurgia"
+    },
+    {
+      "title": "10.3. Gravidez com mioma"
+    },
+    {
+      "title": "11. Diferenças cruciais: leiomioma, hiperplasia e malignidade"
+    },
+    {
+      "title": "11.1. Mioma não é sinônimo de risco elevado de câncer"
+    },
+    {
+      "title": "11.2. Endométrio pode adoecer independentemente do miométrio"
+    },
+    {
+      "title": "11.3. Sangramento pós-menopausa muda a prioridade"
+    },
+    {
+      "title": "11.4. Não extrapolar marcadores oncológicos"
+    },
+    {
+      "title": "12. Conduta por cenário: matriz de decisão terapêutica"
+    },
+    {
+      "title": "12.1. Fluxograma de primeira consulta por SUA"
+    },
+    {
+      "title": "12.2. Fluxograma para mulher que deseja gestação"
+    },
+    {
+      "title": "12.3. Fluxograma para sangramento pós-menopausa"
+    },
+    {
+      "title": "13. Complicações, prevenção e seguimento"
+    },
+    {
+      "title": "13.1. Anemia ferropriva e impacto funcional"
+    },
+    {
+      "title": "13.2. Complicações compressivas"
+    },
+    {
+      "title": "13.3. Dor aguda por degeneração e torção pediculada"
+    },
+    {
+      "title": "13.4. Sinéquias intrauterinas após procedimentos"
+    },
+    {
+      "title": "13.5. Recorrência e plano longitudinal"
+    },
+    {
+      "title": "14. Casos clínicos comentados — localização e objetivos mudam a resposta"
+    },
+    {
+      "title": "Caso 1 — Mioma pequeno, sangramento importante"
+    },
+    {
+      "title": "Caso 2 — Mioma volumoso, mas assintomático"
+    },
+    {
+      "title": "Caso 3 — Pólipo e sangramento pós-menopausa"
+    },
+    {
+      "title": "Caso 4 — Útero globoso, dismenorreia e menorragia"
+    },
+    {
+      "title": "Caso 5 — Infertilidade, miomas variados e risco de cirurgia desnecessária"
+    },
+    {
+      "title": "Caso 6 — Anemia profunda e fluxo intenso"
+    },
+    {
+      "title": "Caso 7 — Suspeita de mioma pediculado torcido"
+    },
+    {
+      "title": "Caso 8 — Tamoxifeno, pólipo e irregularidade endometrial"
+    },
+    {
+      "title": "15. Questões autorais de residência — cinco alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — FIGO e cavidade"
+    },
+    {
+      "title": "Questão 2 — Mioma FIGO 3"
+    },
+    {
+      "title": "Questão 3 — Mioma incidental"
+    },
+    {
+      "title": "Questão 4 — Pólipo pós-menopausa"
+    },
+    {
+      "title": "Questão 5 — Adenomiose"
+    },
+    {
+      "title": "Questão 6 — Sangramento intenso, paciente hipotensa"
+    },
+    {
+      "title": "Questão 7 — Fertilidade"
+    },
+    {
+      "title": "Questão 8 — Investigação de lesão intracavitária"
+    },
+    {
+      "title": "Questão 9 — SIU-LNG e anatomia"
+    },
+    {
+      "title": "Questão 10 — Sarcoma versus mioma"
+    },
+    {
+      "title": "Questão 11 — Embolização versus miomectomia"
+    },
+    {
+      "title": "Questão 12 — Pólipo cervical versus endometrial"
+    },
+    {
+      "title": "16. Pérolas e armadilhas ENAMED"
+    },
+    {
+      "title": "17. Quadro final de revisão para prova e vida real"
+    },
+    {
+      "title": "18. Imagens candidatas para fila Admin (sem publicação automática)"
+    },
+    {
+      "title": "19. Referências públicas reais para esta etapa"
+    },
+    {
+      "title": "20. Auditoria editorial, completude e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. ACOG. *Management of Symptomatic Uterine Leiomyomas*. Practice Bulletin 228. Obstet Gynecol. 2021;137:e100–e115. DOI: 10.1097/AOG.0000000000004401. Reafirmado 2025. https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas . **Abrangência:** modalidades clínicas e cirúrgicas, preservação uterina, sintomas.",
+    "2. National Institute for Health and Care Excellence. *Heavy menstrual bleeding: assessment and management*. NG88. https://www.nice.org.uk/guidance/ng88/chapter/recommendations . **Abrangência:** histeroscopia e US direcionados, tratamento não hormonal/hormonal e encaminhamento.",
+    "3. FIGO — Leiomyoma Classification Systems. https://www.figofibroids.org/leiomyoma-classification-systems . **Abrangência:** classificação 0–8, miomas híbridos, STEP-W e relação endometrial/serosa.",
+    "4. ACOG PB 228 Summary. PubMed PMID 34011880, DOI 10.1097/AOG.0000000000004403. https://pubmed.ncbi.nlm.nih.gov/34011880/ . **Abrangência:** resumo acessível de decisão sobre leiomiomas.",
+    "5. Febrasgo. Programa de certificação em Endoscopia Ginecológica 2024, incluindo escopo de histeroscopia em miomas, pólipos, SUA e malformações. https://www.febrasgo.org.br/images/arquivos/certificacao_de_atuacao/2024/Edital_Endoscopia_Ginecologica_VF.pdf . **Limite:** documento de escopo/formação, não diretriz terapêutica e não utilizado para inventar doses.",
+    "**Observação científica:** as referências citadas não são todas brasileiras e não certificam acesso ou cobertura assistencial nacional para terapias recentes. Reconciliação com recomendações/consensos brasileiros e disponibilidade local é exigência antes da liberação.",
+    "**Nunca considerar o texto como pronto apenas por ter muitos caracteres.** Para liberação, confrontar a matriz de cobertura com questões clínicas inéditas, revisar atualização das diretrizes, cotejar com materiais LURIA existentes para evitar repetição, conferir referências nacionais, registrar fontes visuais e executar auditorias `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json`, `node scripts/check-syntax.cjs` em ambiente com o repositório disponível."
+  ],
+  "external_urls": [
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas",
+    "https://www.nice.org.uk/guidance/ng88/chapter/recommendations",
+    "https://www.figofibroids.org/leiomyoma-classification-systems",
+    "https://pubmed.ncbi.nlm.nih.gov/34011880/",
+    "https://www.febrasgo.org.br/images/arquivos/certificacao_de_atuacao/2024/Edital_Endoscopia_Ginecologica_VF.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Google Drive (15/10/2026):** buscas por “mioma”, “miomatose” e “miomas” não retornaram apostila equivalente acessível. Foi aberto o PDF “02 - CANCER DE ENDOMETRIO.pdf”, da pasta medcof, de aproximadamente 9,6 mil caracteres extraíveis. Esse arquivo aborda sangramento uterino anormal, investigação de espessamento endometrial, histeroscopia e biópsia, relacionando parcialmente os diagnósticos de pólipos e hiperplasia; **não é um comparador integral de miomas ou patologia uterina benigna**. Autoria institucional não confirmada por metadados; preservar direitos autorais e não reproduzir tabelas, imagens ou texto. **Benchmarking específico conti"
+    },
+    {
+      "text": "**Guias primários públicos:** ACOG Practice Bulletin 228, *Management of Symptomatic Uterine Leiomyomas* (2021, reafirmado 2025); FIGO *Leiomyoma Classification Systems* (categorias 0–8 e híbridas); NICE NG88 *Heavy menstrual bleeding: assessment and management* (recomendações de ultrassom, histeroscopia e decisões clínicas). Esses guias são referência técnica, com necessidade de verificar disponibilidade e normativas brasileiras antes de prescrever/indicar procedimentos no SUS."
+    },
+    {
+      "text": "Miomas são muito comuns e grande parte é assintomática. A prevalência aumenta com a idade reprodutiva e varia conforme métodos diagnósticos/populações; fatores familiares, ascendência, metabolismo e perfil reprodutivo podem se associar à ocorrência. A prevalência populacional elevada torna o **achado incidental** frequente. Assim, em um exame por dor pélvica, o mioma visível pode ou não ser a causa."
+    },
+    {
+      "text": "**Alertas:** sangramento muito intenso com tontura/síncope, anemia sintomática, dor intensa súbita com febre ou defesa (considerar degeneração complicada, torção de mioma pediculado e outros diagnósticos), obstrução urinária, massa atípica e sangramento pós-menopausa."
+    },
+    {
+      "text": "Sangramento intermenstrual persistente e pós-menopausa demandam avaliação específica de pólipos/hiperplasia/câncer independentemente de existir mioma visível. A paciente pode ter dois diagnósticos concomitantes, e não basta escolher o primeiro no laudo."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

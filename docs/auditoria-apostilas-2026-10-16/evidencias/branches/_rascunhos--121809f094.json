@@ -1,0 +1,63 @@
+{
+  "sha": "121809f09437ed3c4fd592301ec4c68988e151ae",
+  "path": "apostilas/_rascunhos/lote-06-122-controle-reconciliacao-20261016.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--121809f094",
+  "title": "LURIA — Lote 6 · Tema 122 · Controle de reconciliação e revisão científico-editorial",
+  "format": ".md",
+  "chars_estimated": 8563,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 6 · Tema 122 · Controle de reconciliação e revisão científico-editorial"
+    },
+    {
+      "title": "1. O que foi comparado antes de editar"
+    },
+    {
+      "title": "2. Etapa Zero — benchmarking externo realmente lido ANTES da edição"
+    },
+    {
+      "title": "3. Diretrizes primárias confrontadas e decisões"
+    },
+    {
+      "title": "4. Conteúdo novo incorporado ao Markdown principal"
+    },
+    {
+      "title": "5. Curadoria visual e licença: catalogar sem publicar"
+    },
+    {
+      "title": "6. Portões de publicação bloqueados"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8896237/",
+    "https://journals.sagepub.com/doi/full/10.1089/sur.2024.137",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Fonte verificada | Conteúdo utilizado | Limitação interpretativa | |---|---|---| | WSES 2020: `https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/` | Úlcera perfurada, operação/ressuscitação, tratamento não operatório somente em caso excepcional com selamento confirmado e monitorização | Não basta “pneumoperitônio pequeno” isoladamente para indicar conservador | | WSES 2020: `https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/` | Diverticulite com gás distante sem fluido difuso: não operatório apenas em **selecionados** com seguimento estreito; peritonite requer intervenção | Não atribuir “Hartmann obrigatório” a todos os Hinchey IV ou peritoni"
+    },
+    {
+      "text": "- [x] Etapa Zero com leitura real de três PDFs comparáveis e explicitação de limites. - [x] Confronto da LURIA linha 06 e linha 07, preservação da base e acréscimo focal. - [x] Fontes internacionais principais verificadas quanto aos pontos acrescentados. - [x] 10 casos/14 questões com incremento original e rascunho salvo fora de `main`. - [x] Manifesto com dez **fontes de imagem**, incluindo correção de licença C10. - [ ] Benchmarks extensos de qualidade equivalente com autoria institucional comprovada (prioridade Estratégia MED, se acessível). - [ ] Revisão de cirurgia de emergência/anestesia/infectologia para diagnóstico e farmacoterapia, d"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

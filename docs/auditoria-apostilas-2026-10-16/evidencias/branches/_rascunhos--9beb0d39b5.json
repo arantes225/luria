@@ -1,0 +1,55 @@
+{
+  "sha": "9beb0d39b543c63f65dd33f45c40ff468a94d74a",
+  "path": "apostilas/_rascunhos/lote-06-controle-integracao-116-137-20261015.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--9beb0d39b5",
+  "title": "LURIA — Lote 6 · continuidade e conciliação de produção (15/10/2026)",
+  "format": ".md",
+  "chars_estimated": 11313,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 6 · continuidade e conciliação de produção (15/10/2026)"
+    },
+    {
+      "title": "Escopo confirmado"
+    },
+    {
+      "title": "Inventário de existência (sem certificação)"
+    },
+    {
+      "title": "Tema 132 — registro comparativo obrigatório, feito antes da edição"
+    },
+    {
+      "title": "Gate de saída e próximas decisões"
+    },
+    {
+      "title": "Continuação de 15/10/2026 — auditoria dos dois últimos temas"
+    },
+    {
+      "title": "Continuação de 15/10/2026 — conciliação inicial de 116–131"
+    },
+    {
+      "title": "Continuação de 16/10/2026 — apostila 122"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/."
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,46 @@
+{
+  "sha": "5949275e61580af9d7206033a18665d6a92f4838",
+  "path": "apostilas/_rascunhos/lote-03/46-VALIDACAO-EDITORIAL.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--5949275e61",
+  "title": "LURIA — Aula 46 | Auditoria editorial preliminar",
+  "format": ".md",
+  "chars_estimated": 3142,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 46 | Auditoria editorial preliminar"
+    },
+    {
+      "title": "Métricas verificadas no GitHub"
+    },
+    {
+      "title": "Alterações desta rodada"
+    },
+    {
+      "title": "Pendências formais para homologação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- Fisiologia e diagnóstico foram aprofundados, incluindo VEF1/CVF, responsividade, cálculos de PFE, diferencial com DPOC, disfunção laríngea, cardiopatia, asma ocupacional e riscos independentes dos sintomas. - Diferenciadas as opções terapêuticas por faixa etária, AIR/MART e demais esquemas contendo CI, assim como os critérios normativos do SUS e recomendações internacionais sem incorporação automática. - Abordadas exacerbações leves a ameaçadoras à vida, oximetria, gasometria, resposta à broncodilatação, corticoide sistêmico, escolha de dispositivo, auto-PEEP, critérios de observação/internação, alta e acompanhamento. - **Deduplicação de ca"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

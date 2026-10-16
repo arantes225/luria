@@ -1,0 +1,426 @@
+{
+  "sha": "7e52eaedebcaacc11c9e447152a3cc2cc684ff3b",
+  "path": "apostilas/_rascunhos/lote-05-110-ensaios-clinicos-revisoes-sistematicas.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--7e52eaedeb",
+  "title": "LURIA — Apostila 110: Ensaios clínicos, revisões sistemáticas e metanálise",
+  "format": ".md",
+  "chars_estimated": 82733,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 110: Ensaios clínicos, revisões sistemáticas e metanálise"
+    },
+    {
+      "title": "0. Etapa zero — recorte curricular e proveniência das referências"
+    },
+    {
+      "title": "1. Por que conduzir ensaio clínico se já existe estudo de coorte?"
+    },
+    {
+      "title": "1.1. Hierarquia de evidências: ferramenta, não religião"
+    },
+    {
+      "title": "1.2. A estrutura PICO como contrato operacional"
+    },
+    {
+      "title": "2. O ECR começa antes da inclusão: registro, protocolo e plano analítico"
+    },
+    {
+      "title": "2.1. Desfecho primário deve existir antes da primeira análise"
+    },
+    {
+      "title": "2.2. Comitês, segurança e ética"
+    },
+    {
+      "title": "3. Randomização: sequência aleatória, ocultação e cegamento são três coisas diferentes"
+    },
+    {
+      "title": "3.1. Exemplo do sorteio perfeito, execução imperfeita"
+    },
+    {
+      "title": "3.2. Diferenças basais após randomização"
+    },
+    {
+      "title": "4. Desenhos experimentais: paralelo, cluster, crossover, fatorial e pragmático"
+    },
+    {
+      "title": "4.1. Paralelo individual"
+    },
+    {
+      "title": "4.2. Cluster"
+    },
+    {
+      "title": "4.3. Crossover"
+    },
+    {
+      "title": "4.4. Fatorial"
+    },
+    {
+      "title": "4.5. Pragmático e explicativo"
+    },
+    {
+      "title": "4.6. Ensaios adaptativos e plataforma"
+    },
+    {
+      "title": "5. Comparador e equivalência clínica: placebo não é sinônimo de controle adequado"
+    },
+    {
+      "title": "5.1. Supervisão, contaminação e aderência"
+    },
+    {
+      "title": "6. Superioridade, não inferioridade e equivalência — três perguntas distintas"
+    },
+    {
+      "title": "6.1. Leitura de intervalo em não inferioridade"
+    },
+    {
+      "title": "6.2. O risco especial de erro por baixa aderência"
+    },
+    {
+      "title": "7. Amostra, poder, alfa, beta e diferença clinicamente importante"
+    },
+    {
+      "title": "7.1. P pequeno não mede grandeza"
+    },
+    {
+      "title": "7.2. Intervalo e compatibilidade"
+    },
+    {
+      "title": "8. Do desfecho relativo ao benefício absoluto: RR, OR, RD, ARR, NNT e NNH"
+    },
+    {
+      "title": "8.1. Tabela 2x2 fictícia"
+    },
+    {
+      "title": "8.2. Por que NNT não é constante universal?"
+    },
+    {
+      "title": "8.3. Aritmética simples com efeito negativo e zero"
+    },
+    {
+      "title": "8.4. HR não é risco relativo simples"
+    },
+    {
+      "title": "9. O que analisar: intenção de tratar, per-protocol, as-treated e estimandos"
+    },
+    {
+      "title": "9.1. Estimando: definir qual pergunta a análise responde"
+    },
+    {
+      "title": "9.2. Ausência de dados é questão causal e estatística"
+    },
+    {
+      "title": "10. Risco de viés em ECR: RoB 2 não é escala de qualidade global"
+    },
+    {
+      "title": "10.1. Relato bom versus método bom"
+    },
+    {
+      "title": "10.2. Financiamento, conflito e interpretação"
+    },
+    {
+      "title": "11. Desfechos, segurança e interpretação de subgrupos"
+    },
+    {
+      "title": "11.1. Desfechos que realmente importam"
+    },
+    {
+      "title": "11.2. Eventos adversos não são anexo decorativo"
+    },
+    {
+      "title": "11.3. Subgrupos: evidência de interação, não dois p-valores"
+    },
+    {
+      "title": "11.4. Análises interinas e parada precoce"
+    },
+    {
+      "title": "12. Revisão narrativa, sistemática, metanálise e diretriz clínica"
+    },
+    {
+      "title": "12.1. Quando NÃO combinar estudos"
+    },
+    {
+      "title": "13. Protocolo da revisão: PICO, busca, elegibilidade e decisão de síntese"
+    },
+    {
+      "title": "13.1. Busca reproduzível"
+    },
+    {
+      "title": "13.2. Seleção duplicada e motivos de exclusão"
+    },
+    {
+      "title": "13.3. Desfechos “mais bonitos” não substituem os prespecificados"
+    },
+    {
+      "title": "14. PRISMA 2020: um fluxograma não substitui busca boa"
+    },
+    {
+      "title": "15. AMSTAR 2, ROBINS-I e RoB 2 — não confundir unidades de avaliação"
+    },
+    {
+      "title": "15.1. Quadro de perguntas úteis"
+    },
+    {
+      "title": "16. Medidas de síntese: não agrupar RR, OR, HR e médias como se fossem intercambiáveis"
+    },
+    {
+      "title": "17. Metanálise de efeito comum e efeito aleatório"
+    },
+    {
+      "title": "17.1. Pesos e precisão"
+    },
+    {
+      "title": "17.2. I² e tau² são diferentes"
+    },
+    {
+      "title": "17.3. Explorar heterogeneidade antes de clicar “random effects”"
+    },
+    {
+      "title": "17.4. Estudos pequenos e método de efeito aleatório"
+    },
+    {
+      "title": "18. Como ler um forest plot e detectar interpretações precipitadas"
+    },
+    {
+      "title": "18.1. Gráfico de floresta com I² alto não manda excluir o estudo discordante"
+    },
+    {
+      "title": "18.2. Resultado combinado estatisticamente significativo, aplicação incerta"
+    },
+    {
+      "title": "19. Viés de publicação e resultados faltantes"
+    },
+    {
+      "title": "19.1. O problema do estudo invisível"
+    },
+    {
+      "title": "19.2. Funnel plot: assimetria não é sinônimo de fraude"
+    },
+    {
+      "title": "19.3. Literatura cinzenta não é sinônimo de baixa qualidade"
+    },
+    {
+      "title": "20. GRADE: o que significa ter confiança na estimativa?"
+    },
+    {
+      "title": "20.1. GRADE se aplica por desfecho e comparação"
+    },
+    {
+      "title": "20.2. Inconsistência e indireção podem coexistir"
+    },
+    {
+      "title": "20.3. Imprecisão: atravessar zero é apenas uma parte da história"
+    },
+    {
+      "title": "20.4. Certeza da evidência versus força da recomendação"
+    },
+    {
+      "title": "21. Metanálise de rede, comparações indiretas e revisões vivas"
+    },
+    {
+      "title": "21.1. Quando faltam comparações frente a frente"
+    },
+    {
+      "title": "21.2. Probabilidades de classificação e ranking"
+    },
+    {
+      "title": "21.3. Revisões vivas"
+    },
+    {
+      "title": "21.4. Metanálise de participantes individuais"
+    },
+    {
+      "title": "22. Estudos de segurança, eventos raros e população excluída do ensaio"
+    },
+    {
+      "title": "23. Do artigo à decisão clínica e ao SUS: efeito absoluto, recursos e equidade"
+    },
+    {
+      "title": "23.1. Uma matriz prática de implementação"
+    },
+    {
+      "title": "24. Guia de leitura crítica em 12 perguntas práticas"
+    },
+    {
+      "title": "25. Exercícios de raciocínio matemático — quatro contas conferíveis"
+    },
+    {
+      "title": "Exercício A — risco, redução absoluta e NNT"
+    },
+    {
+      "title": "Exercício B — mesmo RR em dois cenários hipotéticos"
+    },
+    {
+      "title": "Exercício C — OR versus RR"
+    },
+    {
+      "title": "Exercício D — margem de não inferioridade"
+    },
+    {
+      "title": "26. Casos clínico-metodológicos comentados"
+    },
+    {
+      "title": "Caso 1 — Um ensaio randomizado com alocação previsível"
+    },
+    {
+      "title": "Caso 2 — O p positivo que não respondeu ao paciente"
+    },
+    {
+      "title": "Caso 3 — Não inferioridade erroneamente proclamada"
+    },
+    {
+      "title": "Caso 4 — Perdas seletivas escondidas"
+    },
+    {
+      "title": "Caso 5 — A metanálise precisa, mas clinicamente incompatível"
+    },
+    {
+      "title": "Caso 6 — Revisão PRISMA “perfeita” com busca seletiva"
+    },
+    {
+      "title": "Caso 7 — Subgrupo que parecia milagroso"
+    },
+    {
+      "title": "Caso 8 — Aplicar NNT importado no SUS"
+    },
+    {
+      "title": "27. Questões autorais de residência — dez questões com alternativas individualmente comentadas"
+    },
+    {
+      "title": "Questão 1 — Randomização versus ocultação"
+    },
+    {
+      "title": "Questão 2 — Intenção de tratar"
+    },
+    {
+      "title": "Questão 3 — NNT"
+    },
+    {
+      "title": "Questão 4 — Não inferioridade"
+    },
+    {
+      "title": "Questão 5 — CONSORT e PRISMA"
+    },
+    {
+      "title": "Questão 6 — I²"
+    },
+    {
+      "title": "Questão 7 — Subgrupos"
+    },
+    {
+      "title": "Questão 8 — Bacteriologia ou estatística? (leitura de efeito)"
+    },
+    {
+      "title": "Questão 9 — Certeza GRADE"
+    },
+    {
+      "title": "Questão 10 — Viés de publicação"
+    },
+    {
+      "title": "28. Recursos visuais: dez candidatos para produzir/curar sem direitos presumidos"
+    },
+    {
+      "title": "29. Referências metodológicas auditáveis"
+    },
+    {
+      "title": "30. Auditoria editorial interna — pendências preservadas para o Codex"
+    }
+  ],
+  "reference_entries": [
+    "**Inventário:** antes da produção desta aula 110 não havia arquivo dedicado no caminho editorial. A aula **105 — Desenhos de estudos epidemiológicos** já desenvolve coortes, estudos caso-controle, transversal, ecológico, questões de temporalidade e base de classificações. É preservada integralmente. A aula **115 — Vieses, confundimento e causalidade** aprofundará DAGs, controle de confundidores, collider bias, mediação e inferência causal em desenhos diversos; a aula 110 cobre as manifestações práticas desses problemas em ECR e síntese de evidências sem duplicar seu escopo.",
+    "**Benchmark privado:** a busca no Drive pelo termo ensaio clínico recuperou apenas o PDF geral “Estudos Epidemiológicos.pdf” e documentos clínicos indiretos; não apareceu uma aula equivalente dedicada a ECR, revisão sistemática e metanálise. Não se reutilizaram textos de terceiros cuja licença comercial não foi comprovada.",
+    "**Evidência e fontes públicas identificadas em outubro de 2026:**",
+    "- **CONSORT 2025:** atualiza a diretriz de *relato de ensaios randomizados*, publicada em abril de 2025, com 30 itens essenciais e fluxograma; substitui CONSORT 2010 no uso corrente. https://www.bmj.com/content/389/bmj-2024-081123",
+    "- **SPIRIT 2025:** diretriz de relato de *protocolos* de ensaios randomizados, 34 itens. https://www.bmj.com/content/389/bmj-2024-081477",
+    "- **PRISMA 2020:** diretriz de relato de revisões sistemáticas, 27 itens, e fluxos documentais. https://www.prisma-statement.org/prisma-2020",
+    "- **Cochrane Handbook, versão 6.5 (2024)** segundo página de versão corrente consultada. https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current",
+    "- **AMSTAR 2:** avaliação crítica de revisões de intervenções, 16 itens e domínios críticos, **não é pontuação aditiva simples**. https://www.bmj.com/content/358/bmj.j4008",
+    "- **Core GRADE 2025:** atualização do raciocínio sobre certeza na estimativa do efeito para desfechos específicos. https://www.bmj.com/content/389/bmj-2024-081903",
+    "- **PROSPERO:** registro prospectivo internacional de revisões em saúde. https://www.crd.york.ac.uk/PROSPERO/",
+    "**Os números clínicos usados nos exercícios são fictícios e didáticos**, sem representação de resultados de ensaios históricos ou eficácia real de fármacos. Reporte transparente, qualidade metodológica, ausência de viés, certeza da evidência e importância clínica são propriedades distintas.",
+    "**Pergunta típica:** em pessoas hospitalizadas com uma doença, tratamento A reduz mortalidade em comparação a cuidado usual? Uma coorte pode mostrar mortalidade menor no grupo que recebeu A porque a equipe escolheu esse tratamento para pessoas menos graves. A randomização protege o contraste inicial contra essa preferência clínica — desde que tenha sido realizada e ocultada adequadamente e o seguimento não destrua sua utilidade.",
+    "**P (população):** quem é elegível, comorbidades, faixa etária, gravidade, estágio e cenário. **I (intervenção):** dose, duração, início, cointervenções, equipe e tecnologia necessária. **C (comparador):** placebo, intervenção ativa, não intervenção ou cuidado usual explicitado. **O (desfechos):** resultados centrados no paciente (mortalidade, incapacidade, sintomas, qualidade de vida) e danos; separar marcadores substitutos de benefício clínico. Adicionar **T** quando a janela temporal é crucial.",
+    "**Registro prospectivo:** antes do recrutamento, em registro aceito pelo contexto, por exemplo ClinicalTrials.gov ou plataforma apropriada na rede internacional de registros. A plataforma brasileira **ReBEC** é relevante para estudos submetidos a requisitos brasileiros; confirmar obrigação e trâmite da instituição e legislação. Registro facilita comparar desfechos prometidos com desfechos relatados. Um estudo registrado apenas após ver resultados demanda escrutínio adicional; registro por si só não elimina fraude ou seletividade.",
+    "**Boa prática didática:** criar tabela “registro/protocolo → artigo → suplemento → dados” e marcar desfechos omitidos/adicionados, análise alterada, subgrupos não previstos e tempo de acompanhamento realmente observado.",
+    "**Geração da sequência:** selecionar alocação usando processo genuinamente aleatório, idealmente informatizado e reprodutível sob governança. Alternância A/B, números pares de prontuário, dia da semana e ordem de chegada **não são randomização** no sentido metodológico rigoroso, pois são previsíveis.",
+    "**Ocultação da alocação:** proteger a sequência de quem recruta e decide elegibilidade **até a pessoa ser definitivamente incluída**. Central eletrônica ou farmácia independente com mecanismo idôneo podem ajudar. Envelopes só são adequados se forem opacos, sequenciais, invioláveis e operados corretamente. Uma sequência aleatória conhecida antecipadamente por recrutador permite excluir ou atrasar pessoas conforme braço seguinte, gerando viés de seleção.",
+    "**Cegamento:** impedir que participantes, equipes, avaliadores ou analistas saibam o braço **após randomização**. Atua sobre comportamento, cointervenções, avaliação subjetiva e decisões de saída. Nem sempre é factível: cirurgia versus fisioterapia pode ser evidente a quem recebe intervenção. Mesmo assim, cegamento de avaliador ou desfecho objetivo e protocolo simétrico pode reduzir vieses.",
+    "**Estratificação** (ex.: centro ou gravidade) pode reduzir desequilíbrio em características importantes, mas exige método correto. **Blocos** mantêm proporção entre braços; blocos pequenos de tamanho fixo podem se tornar previsíveis se houver conhecimento do andamento, razão para ocultação rigorosa e eventualmente tamanhos variáveis.",
+    "**Pulo do Gato:** randomizar **atribuição** de tratamento é diferente de obrigar **recebimento e adesão**; muitas decisões de SUS envolvem o efeito de **oferecer** uma tecnologia no mundo real.",
+    "**Intervenções complexas:** treinamento de equipe, adesão de profissionais e fidelity da intervenção são fundamentais. Uma estratégia de educação na APS que não foi efetivamente implementada em metade das unidades pode falhar por execução, não por ausência de eficácia biológica.",
+    "**Superioridade:** testar se A é melhor que B para um desfecho definido, normalmente H0 de igualdade e análise baseada em estimativa/IC. Um resultado não significativo **não prova equivalência** nem ausência de efeito; pode refletir amostra insuficiente.",
+    "**Não inferioridade:** verificar se o desempenho de A **não é pior que B além de margem clinicamente aceitável** predefinida. A margem Δ deve ser justificada por efeito histórico do comparador, contexto de benefício/dano e diferença absoluta clinicamente aceitável. Uma inovação pode valer pequena perda de eficácia se reduz toxicidade, custo ou facilita acesso, mas essa avaliação não autoriza escolher margem excessiva só para facilitar êxito.",
+    "**Equivalência:** testar se diferença entre A e B está inteiramente dentro de margem bidirecional (-Δ, +Δ), em desenho e análise adequados. Não é “p maior que 0,05”.",
+    "**Alfa (erro tipo I):** risco de rejeitar H0 verdadeira sob plano de teste, geralmente 5% em exemplos. **Beta (erro tipo II):** risco de não rejeitar H0 falsa sob diferença alternativa específica; **poder** = 1 − beta. Um estudo com poder planejado de 80% significa que, se a diferença assumida for verdadeira e premissas valerem, teria cerca de 80% de probabilidade de gerar resultado que cumpre critério de teste. Não significa “80% de probabilidade de hipótese ser verdadeira” nem “os resultados têm 80% de precisão”.",
+    "**Parâmetros de cálculo:** efeito esperado, variância/taxa de eventos no controle, nível alfa, poder, razão de alocação, perdas previstas, clusterização quando relevante e tipo de teste. Efeitos previstos superotimistas produzem estudos subdimensionados. O **MCID** ou diferença minimamente importante para paciente deve entrar na escolha de efeito-alvo quando justificável, sem transformar limiar único em consenso absoluto.",
+    "**Teste unilateral/bilateral:** não usar unilateral apenas por conveniência para reduzir amostra quando dano no sentido oposto seria clinicamente relevante. Protocolos de não inferioridade usam lógica específica de margem e intervalo; reportar lado do teste e equivalência da inferência.",
+    "**Risco relativo RR = 0,10 / 0,20 = 0,50**: risco observado de evento no braço A foi metade daquele no B. **Redução relativa do risco (RRR) = 1 − RR = 0,50 = 50%**. **Redução absoluta do risco ARR = 0,20 − 0,10 = 0,10 = 10 pontos percentuais.** **NNT = 1/ARR = 10** pessoas tratadas no horizonte do estudo para prevenir, em média, um evento adicional em relação ao comparador. Esses valores são estimativas de exemplo, não garantia para indivíduo.",
+    "**NNH:** número necessário para causar um dano adicional relativo a comparador, usando **aumento absoluto de risco** no horizonte especificado. Exemplo: dano em 8% versus 3% → ARI = 5 pp → NNH = 20. Benefício e dano devem ser apresentados por desfecho, severidade e duração; um NNT menor que NNH não implica automaticamente melhor decisão, porque gravidade e preferências diferem.",
+    "**Intervalo do NNT:** a transformação recíproca do intervalo de redução absoluta pode atravessar zero, produzindo intervalos descontinuados envolvendo benefício infinito e dano. Não inventar IC simétrico de NNT a partir de erro-padrão da estimativa pontual; métodos e apresentação exigem cuidado."
+  ],
+  "external_urls": [
+    "https://www.bmj.com/content/389/bmj-2024-081123",
+    "https://www.bmj.com/content/389/bmj-2024-081477",
+    "https://www.prisma-statement.org/prisma-2020",
+    "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current",
+    "https://www.bmj.com/content/358/bmj.j4008",
+    "https://www.bmj.com/content/389/bmj-2024-081903",
+    "https://www.crd.york.ac.uk/PROSPERO/",
+    "https://www.bmj.com/content/389/bmj-2024-081123.",
+    "https://www.bmj.com/content/389/bmj-2024-081124.",
+    "https://www.bmj.com/content/389/bmj-2024-081477.",
+    "https://www.bmj.com/content/372/bmj.n71.",
+    "https://www.prisma-statement.org/prisma-2020.",
+    "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current.",
+    "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10.",
+    "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14.",
+    "https://www.bmj.com/content/358/bmj.j4008.",
+    "https://www.bmj.com/content/389/bmj-2024-081903.",
+    "https://www.bmj.com/content/389/bmj-2024-081904.",
+    "https://www.crd.york.ac.uk/PROSPERO/.",
+    "https://www.riskofbias.info/welcome/rob-2-0-tool.",
+    "https://www.riskofbias.info/welcome/home.",
+    "https://ensaiosclinicos.gov.br/.",
+    "https://clinicaltrials.gov/.",
+    "https://www.gradeworkinggroup.org/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A certeza **GRADE é por desfecho**, não uma nota fixa do artigo. A recomendação clínica também incorpora magnitude absoluta, dano, custo, preferências, equidade e viabilidade. O aluno que decora apenas “ECR é nível 1” pode deixar de perceber resultados não transportáveis para SUS ou populações excluídas do estudo."
+    },
+    {
+      "text": "O **SPIRIT 2025** organiza 34 elementos essenciais de protocolo e recomenda transparência do desenho. A **CONSORT 2025** organiza 30 elementos de relatório de resultados, incluindo fluxo, registro, protocolo, dados compartilháveis, análise de danos e diferenças entre intervenção planejada e aplicada. Nenhuma lista garante execução correta: **um artigo pode relatar honestamente um ensaio metodologicamente fraco**."
+    },
+    {
+      "text": "Como o mecanismo é aleatório, algumas características diferirão por acaso, especialmente em amostras pequenas. Usar testes de significância para provar “igualdade basal” não é recomendado como principal garantia de randomização. Examinar relevância clínica das diferenças, adequação do processo e ajustes pré-especificados. Uma diferença importante não comprova fraude automaticamente, mas solicita investigação, particularmente se acompanhada de falhas de ocultação."
+    },
+    {
+      "text": "**Diretriz clínica:** utiliza revisão, certeza da evidência, benefícios/danos, valores, custo, recursos, equidade e avaliação de implementação para formular recomendações. Não é sinônimo de revisão sistemática nem simples votação de especialistas. **Revisão rápida:** adapta prazos e alguns métodos de revisão, com transparência das simplificações e impacto possível nas conclusões."
+    },
+    {
+      "text": "A diretriz **PRISMA 2020** recomenda relatar de modo transparente o racional, pergunta, critérios, fontes, estratégia de busca, seleção, extração, risco de viés, síntese, certeza e limitações da revisão, incluindo **fluxograma de identificação e seleção**. O checklist principal possui 27 itens, além de detalhamentos e extensões quando apropriados."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

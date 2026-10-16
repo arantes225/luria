@@ -1,0 +1,288 @@
+{
+  "sha": "c19c864813bdda9a962e4285e5e46eaaafb5ea2e",
+  "path": "apostilas/cirurgia-cardiovascular-para-o-generalista/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "cirurgia-cardiovascular-para-o-generalista--c19c864813",
+  "title": "LURIA — Cirurgia cardiovascular para o generalista",
+  "format": ".md",
+  "chars_estimated": 66342,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Cirurgia cardiovascular para o generalista"
+    },
+    {
+      "title": "1. Introdução: o que é e quando pensar em cirurgia cardiovascular"
+    },
+    {
+      "title": "2. Bases anatômicas e fisiopatológicas para a decisão"
+    },
+    {
+      "title": "2.1 Irrigação coronariana e território em risco"
+    },
+    {
+      "title": "2.2 Princípios de mecânica valvar"
+    },
+    {
+      "title": "2.3 Princípios da parede aórtica"
+    },
+    {
+      "title": "3. Avaliação inicial e classificação da urgência"
+    },
+    {
+      "title": "3.1 Anamnese útil"
+    },
+    {
+      "title": "3.2 Exames por finalidade"
+    },
+    {
+      "title": "4. Cirurgia de revascularização do miocárdio — CABG/CRM"
+    },
+    {
+      "title": "4.1 Objetivos e técnica"
+    },
+    {
+      "title": "4.2 Quando a cirurgia pode ser preferida à intervenção percutânea?"
+    },
+    {
+      "title": "4.3 Diferenças práticas entre CABG e PCI"
+    },
+    {
+      "title": "4.4 Preparação e riscos específicos"
+    },
+    {
+      "title": "5. Cirurgia e intervenção nas doenças valvares"
+    },
+    {
+      "title": "5.1 Princípios da indicação"
+    },
+    {
+      "title": "5.2 Estenose aórtica"
+    },
+    {
+      "title": "5.3 Insuficiência aórtica"
+    },
+    {
+      "title": "5.4 Insuficiência mitral"
+    },
+    {
+      "title": "5.5 Estenose mitral e valvas direitas"
+    },
+    {
+      "title": "5.6 Escolha da prótese valvar"
+    },
+    {
+      "title": "6. Doenças da aorta: interface com cirurgia e terapia endovascular"
+    },
+    {
+      "title": "7. Avaliação multidisciplinar, riscos e consentimento"
+    },
+    {
+      "title": "8. Pós-operatório cardiovascular: vigilância de alta utilidade"
+    },
+    {
+      "title": "9. Tabelas de decisão rápida"
+    },
+    {
+      "title": "9.1 Técnica e principal compromisso"
+    },
+    {
+      "title": "9.2 Erros que mudam o desfecho"
+    },
+    {
+      "title": "10. Algoritmo textual para o generalista"
+    },
+    {
+      "title": "10A. Aprofundamento da indicação cirúrgica nas valvopatias"
+    },
+    {
+      "title": "10A.1 Interpretação de medidas valvares discordantes"
+    },
+    {
+      "title": "10A.2 Marcadores de intervenção em regurgitação mitral primária"
+    },
+    {
+      "title": "10A.3 Endocardite infecciosa: quando não basta antibiótico"
+    },
+    {
+      "title": "10A.4 Insuficiência tricúspide e repercussão sistêmica"
+    },
+    {
+      "title": "10B. Escolha detalhada da revascularização coronária"
+    },
+    {
+      "title": "10B.1 Doença estável versus coronariopatia aguda"
+    },
+    {
+      "title": "10B.2 Características que ampliam ou reduzem a atratividade da CABG"
+    },
+    {
+      "title": "10B.3 Enxertos, complicações e prognóstico"
+    },
+    {
+      "title": "10C. Estratégia antitrombótica no perioperatório cardiovascular"
+    },
+    {
+      "title": "10C.1 Aspirina e inibidores P2Y12 na CRM"
+    },
+    {
+      "title": "10C.2 Anticoagulantes e próteses"
+    },
+    {
+      "title": "10C.3 Situações com múltiplas indicações"
+    },
+    {
+      "title": "10D. Complicações mecânicas e cenários especiais"
+    },
+    {
+      "title": "10D.1 Após infarto agudo do miocárdio"
+    },
+    {
+      "title": "10D.2 Cirurgia combinada e doença multivalvar"
+    },
+    {
+      "title": "10D.3 Idosos, fragilidade e planejamento de longo prazo"
+    },
+    {
+      "title": "10D.4 Doença renal, pulmão e cirurgia prévia"
+    },
+    {
+      "title": "10E. Fluxos de encaminhamento e documentação clínica"
+    },
+    {
+      "title": "Modelo de raciocínio a registrar no prontuário"
+    },
+    {
+      "title": "10F. Complicações tardias e prognóstico"
+    },
+    {
+      "title": "10F.1 Após revascularização"
+    },
+    {
+      "title": "10F.2 Após tratamento valvar"
+    },
+    {
+      "title": "10F.3 Após reparo aórtico"
+    },
+    {
+      "title": "10F.4 Prognóstico não é igual a ausência de procedimento"
+    },
+    {
+      "title": "10G. Casuística curta — pontos de decisão"
+    },
+    {
+      "title": "10H. Referências adicionais e auditoria técnica desta ampliação"
+    },
+    {
+      "title": "11. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Doença coronária multiarterial com diabetes"
+    },
+    {
+      "title": "Caso 2 — Estenose aórtica grave em idosa"
+    },
+    {
+      "title": "Caso 3 — Insuficiência mitral aguda após IAM"
+    },
+    {
+      "title": "Caso 4 — Dor torácica abrupta e regurgitação aórtica"
+    },
+    {
+      "title": "Caso 5 — Sopro importante em paciente sem queixa aparente"
+    },
+    {
+      "title": "Caso 6 — Paciente com prótese mecânica e receita inadequada"
+    },
+    {
+      "title": "12. Questões autorais LURIA — estilo residência"
+    },
+    {
+      "title": "13. Revisão de alto rendimento"
+    },
+    {
+      "title": "14. Propostas de recursos visuais — NÃO INCORPORAR SEM LICENÇA"
+    },
+    {
+      "title": "15. Referências verificadas para a revisão médica final"
+    },
+    {
+      "title": "16. Auditoria inicial e pendências para alcançar o padrão premium"
+    }
+  ],
+  "reference_entries": [
+    "1. **ESC.** 2023 ESC Guidelines for the management of endocarditis — resumo de pontos-chave: https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/08/29/20/49/2023-esc-guidelines-for-endocarditis-esc-2023",
+    "2. **EACTS.** 2024 EACTS Guidelines on perioperative medication in adult cardiac surgery. *European Journal of Cardio-Thoracic Surgery*, 2024: https://doi.org/10.1093/ejcts/ezae355",
+    "3. **ESC/EACTS.** Antithrombotic therapy after coronary artery bypass graft surgery: clinical consensus statement, publicação 2025: https://academic.oup.com/eurheartj/article/47/20/2419/8242428",
+    "4. **ESC/EACTS.** 2025 guideline de valvopatias — seções sobre regurgitação mitral primária e estenose aórtica: https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+    "**Controle científico:** limiares e recomendações indicados neste aprofundamento foram associados às fontes acima e devem passar por revisão de equivalência às diretrizes brasileiras e aos protocolos do serviço. O texto é material de ensino, não prescrição médica individualizada.",
+    "**Apresentação:** homem de 62 anos, diabetes tipo 2, angina aos esforços, teste funcional indicativo de isquemia significativa. Coronariografia mostra doença multiarterial importante, inclusive descendente anterior; função ventricular preservada. **Hipótese:** cardiopatia isquêmica crônica sintomática com anatomia de alto risco. **Raciocínio:** a angina requer tratamento clínico e prevenção, mas diabetes associado a doença multiarterial com LAD é cenário em que CABG pode oferecer vantagem em paciente cirurgicamente elegível. **Exames:** revisar anatomia, ecocardiograma, função renal, risco ope",
+    "**Apresentação:** mulher de 78 anos com dispneia progressiva e síncope aos esforços; ecocardiograma confirma estenose aórtica grave e função ventricular aceitável. **Hipótese:** estenose aórtica grave sintomática. **Raciocínio:** sintomas compatíveis e gravidade confirmada tornam necessária avaliação prioritária de intervenção. **Exames:** revisar Doppler, anatomia da valva, aorta, acesso vascular, coronárias conforme indicação, fragilidade e estimativa de prognóstico. **Conduta:** avaliação em Heart Valve Centre; TAVI pode ser favorecida quando a anatomia é adequada, mas não será escolhida ap",
+    "**Apresentação:** paciente de 67 anos, dias após IAM, desenvolve edema agudo pulmonar, hipotensão e novo sopro sistólico discreto. **Hipótese:** complicação mecânica — ruptura de músculo papilar e regurgitação mitral aguda. **Raciocínio:** o volume regurgitante surge abruptamente, sem acomodação atrial; o sopro pode não ser exuberante. **Exames:** ecocardiograma urgente, suporte hemodinâmico, revisão da coronariografia. **Conduta:** estabilização em ambiente crítico, acionamento imediato da cirurgia cardíaca e equipe de hemodinâmica; correção cirúrgica frequentemente urgente. **Por que importa",
+    "**Apresentação:** mulher de 59 anos com hipertensão, dor torácica dilacerante irradiada ao dorso, hipotensão e sinais de insuficiência aórtica aguda. **Hipótese:** síndrome aórtica aguda com provável envolvimento ascendente. **Raciocínio:** dissecção tipo A pode comprometer raiz, valva e perfusão coronária, exigindo reparo de emergência. **Exames:** angiotomografia urgente se estável e disponível; ecocardiografia transesofágica em cenários selecionados. **Conduta:** analgesia, medidas hemodinâmicas compatíveis com perfusão e avaliação cirúrgica emergencial; não administrar anticoagulação empír",
+    "**Apresentação:** homem de 48 anos com regurgitação mitral degenerativa grave ao ecocardiograma, “assintomático”, mas deixou de praticar esporte; crescimento de cavidades no seguimento. **Hipótese:** insuficiência mitral primária com repercussão progressiva. **Raciocínio:** ausência de verbalização de sintomas não exclui perda de capacidade funcional. **Exames:** eco seriado padronizado, função e dimensões ventriculares, anatomia valvar e avaliação de esforço quando apropriado. **Conduta:** encaminhar precocemente a centro experiente em reparo, mesmo sem edema ou internação. **Por que importa:",
+    "**Apresentação:** mulher de 54 anos após substituição mitral por prótese mecânica recebe prescrição de anticoagulante oral direto por dificuldade de controlar INR. **Hipótese:** risco de trombose protética por esquema inadequado. **Raciocínio:** próteses mecânicas exigem antagonista da vitamina K; não há equivalência terapêutica comprovada com DOAC. **Exames:** revisar modelo da prótese, indicação, valores recentes de INR, adesão, interações e sintomas de disfunção valvar. **Conduta:** corrigir o plano com cardiologista/equipe de anticoagulação e orientar monitorização; sinais de obstrução pro",
+    "**Questão 1.** Homem de 60 anos, diabetes, doença multiarterial incluindo descendente anterior e bom perfil cirúrgico. Qual estratégia merece preferência na discussão multidisciplinar? A) CABG; B) nenhuma terapia antiaterosclerótica; C) PCI obrigatória em qualquer anatomia; D) tratamento exclusivo com nitrato, mesmo com indicação prognóstica de revascularização.  ",
+    "**Gabarito: A.** **A correta:** CABG é preferida em perfis selecionados, considerando risco e anatomia. **B incorreta:** prevenção secundária é indispensável. **C incorreta:** PCI pode ser alternativa, mas não universal. **D incorreta:** melhora de angina não substitui decisão prognóstica. **Revisão:** risco e extensão coronária definem o benefício da técnica.",
+    "**Questão 2.** Mulher de 80 anos com estenose aórtica grave sintomática e anatomia adequada. Conforme a diretriz ESC/EACTS 2025, a modalidade a ser fortemente considerada é: A) observação sem reavaliação; B) TAVI; C) apenas diurético como tratamento definitivo; D) anticoagulante como substituto de intervenção.  ",
+    "**Gabarito: B.** **A incorreta:** quadro grave sintomático exige avaliação de intervenção. **B correta:** TAVI é opção recomendada em elegíveis com idade ≥70 e valva tricúspide, segundo essa diretriz. **C incorreta:** fármacos não corrigem obstrução. **D incorreta:** não trata estenose. **Revisão:** confirmar anatomia, acesso, prognóstico e preferências.",
+    "**Questão 3.** A respeito de insuficiência mitral, é correto afirmar: A) a primária e a secundária têm o mesmo mecanismo; B) a secundária dispensa tratamento de insuficiência cardíaca; C) reparo durável é preferível à substituição em muitos casos degenerativos apropriados; D) todo caso grave deve ser submetido a TEER.  ",
+    "**Gabarito: C.** **A incorreta:** mecanismos são diferentes. **B incorreta:** terapia da doença de base é fundamental. **C correta:** preservar aparelho mitral com reparo durável pode oferecer vantagem. **D incorreta:** seleção para TEER depende de critérios. **Revisão:** mecanismo anatomofuncional precede escolha terapêutica.",
+    "**Questão 4.** Paciente com dissecção aguda envolvendo a aorta ascendente e sem contraindicação absoluta apresenta risco elevado de morte. A conduta esperada é: A) avaliação eletiva em seis meses; B) intervenção cirúrgica emergencial; C) apenas analgésico oral e alta; D) trombólise rotineira.  ",
+    "**Gabarito: B.** **A incorreta:** adia uma emergência. **B correta:** Stanford A exige equipe cirúrgica urgente. **C incorreta:** ignora complicações fatais. **D incorreta:** pode agravar sangramento. **Revisão:** localização anatômica altera decisão.",
+    "**Questão 5.** Paciente com prótese mitral mecânica precisa de anticoagulação crônica. Qual princípio é correto? A) DOAC sempre substitui varfarina; B) não precisa anticoagulação; C) antagonista da vitamina K com monitorização apropriada; D) somente aspirina em qualquer circunstância.  ",
+    "**Gabarito: C.** **A incorreta:** DOAC é contraindicado/inadequado em próteses mecânicas. **B incorreta:** risco tromboembólico relevante. **C correta:** VKA com alvo de INR apropriado ao tipo/posição e fatores clínicos. **D incorreta:** antiagregação não substitui anticoagulação. **Revisão:** a escolha protética define compromissos de longo prazo.",
+    "**Questão 6.** Após CABG, paciente tem taquiarritmia supraventricular irregular, hipoxemia e hipocalemia. A melhor abordagem inicial é: A) ignorar a arritmia; B) avaliar estabilidade e corrigir precipitantes enquanto define controle de ritmo/frequência; C) anticoagular automaticamente todos sem avaliar sangramento; D) supor falha de enxerto como causa única.  ",
+    "**Gabarito: B.** **A incorreta:** pode haver repercussão hemodinâmica. **B correta:** abordagem contextual e monitorada. **C incorreta:** período pós-operatório modifica balanço entre embolia e sangramento. **D incorreta:** múltiplos mecanismos são possíveis. **Revisão:** fibrilação atrial pós-operatória exige avaliação individualizada.",
+    "**Questão 7.** Sobre aneurisma de raiz/ascendente esporádico assintomático, qual afirmação é mais correta? A) todo aneurisma torácico opera com 4 cm; B) nenhum opera antes de 6 cm; C) o limiar de 5,5 cm é referência clássica, com possibilidade de indicação mais precoce em cenários selecionados; D) tamanho e crescimento não interferem na decisão.  ",
+    "**Gabarito: C.** **A incorreta:** depende de localização e risco. **B incorreta:** ignora limiares e situações especiais. **C correta:** considera diretriz ACC/AHA 2022 e modulação por equipe experiente, genética, crescimento e dimensões corporais. **D incorreta:** são elementos fundamentais. **Revisão:** decisões aórticas não aceitam regra única.",
+    "**Questão 8.** Em paciente de 72 anos com IAM recente, choque e suspeita de ruptura de músculo papilar, o exame prioritário para identificar a complicação mecânica é: A) ecocardiograma urgente; B) densitometria; C) teste ergométrico; D) Holter ambulatorial em 30 dias.  ",
+    "**Gabarito: A.** **A correta:** identifica regurgitação grave e alteração estrutural. **B/C/D incorretas:** não esclarecem ameaça mecânica imediata e podem atrasar tratamento. **Revisão:** novo choque após IAM exige investigar causa mecânica além de isquemia.",
+    "1. **Coronária:** identificar tronco, multiarterialidade, diabetes, função ventricular e anatomia antes de escolher PCI ou CABG.",
+    "2. **Estenose aórtica:** gravidade + sintomas/repercussão exigem avaliação de intervenção; a escolha SAVR/TAVI inclui idade, risco, anatomia, durabilidade e Heart Team.",
+    "3. **Mitral:** diferenciar regurgitação primária de secundária; reparo da primária quando durável, otimização de IC na secundária."
+  ],
+  "external_urls": [
+    "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/08/29/20/49/2023-esc-guidelines-for-endocarditis-esc-2023",
+    "https://doi.org/10.1093/ejcts/ezae355",
+    "https://academic.oup.com/eurheartj/article/47/20/2419/8242428",
+    "https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+    "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2021.09.005",
+    "https://doi.org/10.1093/eurheartj/ehae177",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+    "https://doi.org/10.1161/CIR.0000000000001106",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Registro editorial em 15/10/2026:** manuscrito inicial produzido a partir do mapa de cobertura MedCof/ENAMED do Lote 12, comparação de material de apoio do Drive e consulta a recomendações atuais (referências ao final). Ainda exige aprofundamento, auditoria médica individual, curadoria de imagens e revisão final antes de publicação."
+    },
+    {
+      "text": "**ECG:** avaliação inicial de isquemia, ritmo e alterações de condução; não define anatomia coronária ou grau de valvopatia. **Troponina:** marcador de lesão miocárdica em cenários apropriados; elevação isolada não estabelece IAM sem evidência de isquemia. **Ecocardiograma transtorácico:** exame central para função ventricular, pressões estimadas e lesões valvares. **Ecocardiografia transesofágica:** esclarece anatomia valvar, endocardite e situações específicas de aorta/procedimento. **Coronariografia/angio-TC coronária:** definem anatomia em contextos distintos. **Testes funcionais:** identificam isquemia e repercussão quando adequados. **A"
+    },
+    {
+      "text": "Em IAM com supra, não esperar uma reunião eletiva para iniciar reperfusão: prioridade é o protocolo de emergência, geralmente angioplastia primária quando disponível no tempo indicado. Cirurgia de urgência é uma opção em falha ou impossibilidade de PCI com miocárdio extenso em risco e anatomia operável. Não aplicar de forma indiscriminada recomendações da doença estável ao choque cardiogênico."
+    },
+    {
+      "text": "O ecocardiograma deve ser interpretado integrando imagens, Doppler, fluxo e condição hemodinâmica. Uma medida isolada discordante não autoriza cirurgia ou exclusão do diagnóstico. Em situações difíceis, repetir medidas em laboratório experiente e usar modalidades adicionais, inclusive TC e ecocardiograma de estresse quando indicados."
+    },
+    {
+      "text": "Na estenose aórtica clássica de alto gradiente, parâmetros habitualmente associados a gravidade incluem velocidade máxima transvalvar ≥4,0 m/s, gradiente médio ≥40 mmHg e área valvar aórtica ≤1,0 cm²; discordâncias exigem investigação de fluxo, pressão, qualidade de medida e calcificação. A tríade sintomática de angina, síncope e insuficiência cardíaca sinaliza grande relevância clínica, mas o paciente pode ter cansaço, redução de capacidade funcional ou outras apresentações."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

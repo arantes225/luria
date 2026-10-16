@@ -1,0 +1,57 @@
+{
+  "sha": "99a806f712cc5f23b35bd23a28defa4aec24e89e",
+  "path": "apostilas/_rascunhos/lote-06-129-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--99a806f712",
+  "title": "Lote 06 — Tema 129: Amenorreia",
+  "format": ".md",
+  "chars_estimated": 5551,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — Tema 129: Amenorreia"
+    },
+    {
+      "title": "Etapa zero: inventário"
+    },
+    {
+      "title": "Benchmark do Drive efetivamente aberto e lido"
+    },
+    {
+      "title": "Diretrizes públicas conferidas"
+    },
+    {
+      "title": "Escopo e mudança efetiva"
+    },
+    {
+      "title": "QA estrutural executado nesta etapa"
+    },
+    {
+      "title": "Gates pendentes"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+    "https://academic.oup.com/ejendo/article/190/6/G53/7674241",
+    "https://www.endocrine.org/clinical-practice-guidelines/hypothalamic-amenorrhea",
+    "https://www.nature.com/articles/s41574-023-00886-5"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

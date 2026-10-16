@@ -1,0 +1,388 @@
+{
+  "sha": "45d63f49de47cbe711235d36132184b4bbd1a408",
+  "path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--45d63f49de",
+  "title": "LURIA — Tuberculose: doença ativa, resistência e prevenção",
+  "format": ".md",
+  "chars_estimated": 188146,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tuberculose: doença ativa, resistência e prevenção"
+    },
+    {
+      "title": "Percurso de aprendizagem"
+    },
+    {
+      "title": "1. Microbiologia, transmissão e história natural"
+    },
+    {
+      "title": "1.1 Microbiologia e transmissão"
+    },
+    {
+      "title": "1.2 Fisiopatologia e história natural que explicam o diagnóstico"
+    },
+    {
+      "title": "2. Apresentação clínica e diagnóstico na rede"
+    },
+    {
+      "title": "2.1 Apresentação clínica e busca ativa"
+    },
+    {
+      "title": "2.2 Confirmação microbiológica e imagem"
+    },
+    {
+      "title": "2.3 Roteiro diagnóstico na APS e nos serviços de urgência"
+    },
+    {
+      "title": "2.4 Da suspeita ao tratamento: uma linha de cuidado sem saltos lógicos"
+    },
+    {
+      "title": "3. Formas extrapulmonares e emergências"
+    },
+    {
+      "title": "3.1 Tuberculose extrapulmonar — como pensar por órgão"
+    },
+    {
+      "title": "3.2 Formas extrapulmonares e emergência: o órgão decide o tempo"
+    },
+    {
+      "title": "3.3 Meningite tuberculosa: investigar e tratar uma emergência que pode ser paucibacilar"
+    },
+    {
+      "title": "3.4 Tuberculose vertebral e risco de compressão medular: um problema de tempo e anatomia"
+    },
+    {
+      "title": "3.5 TB pericárdica e pleural: não importar a corticoterapia da meningite"
+    },
+    {
+      "title": "4. Tratamento da TB sensível e acompanhamento"
+    },
+    {
+      "title": "4.1 Tratamento e acompanhamento no SUS"
+    },
+    {
+      "title": "4.2 Tratamento de TB sensível: por que combinar fármacos por meses?"
+    },
+    {
+      "title": "4.3 Acompanhamento da TB sensível: por que a consulta mensal importa"
+    },
+    {
+      "title": "4.4 Segurança no tratamento básico: hepatotoxicidade, neuropatia e visão"
+    },
+    {
+      "title": "4.5 Consulta de seguimento: o que documentar em cada retorno"
+    },
+    {
+      "title": "5. Tuberculose drogarresistente: seleção e monitorização"
+    },
+    {
+      "title": "5.1 TB drogarresistente: o que mudou em outubro de 2026?"
+    },
+    {
+      "title": "5.2 TB drogarresistente no SUS: correção normativa completa de outubro de 2026"
+    },
+    {
+      "title": "6. Infecção latente e prevenção"
+    },
+    {
+      "title": "6.1 Infecção latente e investigação de contatos: prevenção não é tratamento de doença ativa"
+    },
+    {
+      "title": "6.2 Infecção latente: prevenir adoecimento sem confundir pessoa infectada com doente"
+    },
+    {
+      "title": "6.3 Investigação de contatos na APS: uma linha do tempo clínica"
+    },
+    {
+      "title": "6.4 BCG: proteção importante, porém não esterilizante"
+    },
+    {
+      "title": "6.5 Infecção por M. tuberculosis em criança: 3RH preventivo NÃO é RHZ para doença ativa"
+    },
+    {
+      "title": "7. HIV, populações especiais, vigilância e armadilhas"
+    },
+    {
+      "title": "7.1 Populações especiais e armadilhas"
+    },
+    {
+      "title": "7.2 TB em pessoas com HIV: duas doenças, múltiplos tempos terapêuticos"
+    },
+    {
+      "title": "7.3 Vigilância e seguimento territorial: o cuidado não termina no consultório"
+    },
+    {
+      "title": "7.3.1 Quadro de erros de interpretação que mudam o desfecho"
+    },
+    {
+      "title": "7.4 TB pediátrica no SUS: diagnosticar sem exigir baciloscopia positiva"
+    },
+    {
+      "title": "7.5 Quatro ou seis meses? Critérios brasileiros para tuberculose sensível não grave em crianças e adolescentes"
+    },
+    {
+      "title": "7.6 Regimes pediátricos: quatro decisões de segurança antes de calcular comprimidos"
+    },
+    {
+      "title": "7.7 Contagem dos comprimidos dispersíveis em menores de 10 anos: tabela por peso e exame de segurança"
+    },
+    {
+      "title": "7.8 Tuberculose na gestação e no puerpério: diagnóstico, tratamento e cuidado do recém-nascido"
+    },
+    {
+      "title": "7.9 Tuberculose zoonótica: quando suspeitar de *Mycobacterium bovis* e por que o esquema muda"
+    },
+    {
+      "title": "8. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção"
+    },
+    {
+      "title": "Caso 2 — Tuberculose suspeita em pessoa com HIV e radiografia atípica"
+    },
+    {
+      "title": "Caso 3 — Pleural exsudativa com ADA elevada: não dispensar investigação"
+    },
+    {
+      "title": "Caso 4 — Meningite subaguda com teste molecular negativo"
+    },
+    {
+      "title": "Caso 5 — Rifampicina resistente no TRM"
+    },
+    {
+      "title": "Caso 6 — Contato sem sintomas e teste positivo"
+    },
+    {
+      "title": "Caso 7 — Cultura após molecular positivo"
+    },
+    {
+      "title": "Caso 8 — Resistente, mas acometimento do SNC"
+    },
+    {
+      "title": "Caso 9 — Interrupção prolongada do BPaL e suspeita de resistência adicional"
+    },
+    {
+      "title": "Caso 10 — Contato imunodeprimido com IGRA negativo"
+    },
+    {
+      "title": "Caso 11 — Hepatite medicamentosa durante o RHZE"
+    },
+    {
+      "title": "Caso 12 — Contato imunodeprimido com teste inicial negativo"
+    },
+    {
+      "title": "Caso 13 — TB pulmonar sensível não grave em escolar: seis meses são sempre necessários?"
+    },
+    {
+      "title": "Caso 14 — Suspeita de TB grave em escolar não é candidata a encurtamento automático"
+    },
+    {
+      "title": "Caso 15 — Criança de nove anos acima da faixa de peso dos dispersíveis"
+    },
+    {
+      "title": "Caso 16 — Bebê de quatro meses com peso abaixo de quatro quilos"
+    },
+    {
+      "title": "Caso 17 — A criança ganhou um quilo e mudou a faixa de RHZ"
+    },
+    {
+      "title": "Caso 18 — Contato infantil com HIV: prevenção não é tratar doença ativa"
+    },
+    {
+      "title": "Caso 19 — Tuberculose na gestação e preparação do cuidado neonatal"
+    },
+    {
+      "title": "Caso 20 — Adenite em adolescente com exposição a derivados não pasteurizados"
+    },
+    {
+      "title": "Caso 21 — *M. bovis* identificado durante tratamento inicialmente convencional"
+    },
+    {
+      "title": "Caso 22 — Recém-nascido exposto, mas sem sinais de doença ativa"
+    },
+    {
+      "title": "Caso 23 — Meningite subaguda com teste molecular negativo no líquor"
+    },
+    {
+      "title": "Caso 24 — Dor vertebral e retenção urinária não podem aguardar consulta eletiva"
+    },
+    {
+      "title": "9. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Infecção latente versus tuberculose ativa"
+    },
+    {
+      "title": "Questão 2 — TRM negativo com alta suspeita de tuberculose"
+    },
+    {
+      "title": "Questão 3 — Interpretação de imunoteste"
+    },
+    {
+      "title": "Questão 4 — Meningite"
+    },
+    {
+      "title": "Questão 5 — Tratamento básico"
+    },
+    {
+      "title": "Questão 6 — Resistência"
+    },
+    {
+      "title": "Questão 7 — Profilaxia"
+    },
+    {
+      "title": "Questão 8 — Esquema novo do SUS"
+    },
+    {
+      "title": "Questão 9 — Efeito adverso ocular"
+    },
+    {
+      "title": "Questão 10 — Epidemiologia"
+    },
+    {
+      "title": "Questão 11 — TRM e cultura"
+    },
+    {
+      "title": "Questão 12 — O segundo mês"
+    },
+    {
+      "title": "Questão 13 — Contraindicação de BPaLM"
+    },
+    {
+      "title": "Questão 14 — BPaL ou BPaLM"
+    },
+    {
+      "title": "Questão 15 — Efeito da linezolida"
+    },
+    {
+      "title": "Questão 16 — IGRA e diagnóstico de doença"
+    },
+    {
+      "title": "Questão 17 — Tratamento preventivo"
+    },
+    {
+      "title": "Questão 18 — Seguimento pós TB-DR"
+    },
+    {
+      "title": "Questão 19 — Hepatotoxicidade por RHZE"
+    },
+    {
+      "title": "Questão 20 — TDO e adesão"
+    },
+    {
+      "title": "Questão 21 — Vacinação BCG"
+    },
+    {
+      "title": "Questão 22 — Tratamento encurtado da TB pediátrica"
+    },
+    {
+      "title": "Questão 23 — Composição da fase intensiva por idade"
+    },
+    {
+      "title": "Questão 24 — Comprimido dispersível e faixa de peso"
+    },
+    {
+      "title": "Questão 25 — Exclusão do regime de quatro meses"
+    },
+    {
+      "title": "Questão 26 — Contagem de RHZ por peso"
+    },
+    {
+      "title": "Questão 27 — Quando não extrapolar a tabela infantil"
+    },
+    {
+      "title": "Questão 28 — RH na prevenção e na manutenção"
+    },
+    {
+      "title": "Questão 29 — Tuberculose sensível durante a gravidez"
+    },
+    {
+      "title": "Questão 30 — Complexo MTB e espécie"
+    },
+    {
+      "title": "Questão 31 — Resistência natural de *M. bovis*"
+    },
+    {
+      "title": "Questão 32 — RN coabitante de caso-fonte bacilífero"
+    },
+    {
+      "title": "Questão 33 — Líquor negativo na suspeita de meningite tuberculosa"
+    },
+    {
+      "title": "Questão 34 — Esquema de TB osteoarticular e sinal de alarme"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde — Manual de Controle da TB, 2ª edição. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "2. Ministério da Saúde — Tratamento da TB. https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "3. Ministério da Saúde — Nota Informativa 2/2026 TB-DR. https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file",
+    "4. OMS — Treatment and Care, Module 4 (2026). https://www.who.int/publications/i/item/9789240125124",
+    "5. Ministério da Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil, 2ª edição atualizada (2019), capítulos de tuberculose meningoencefálica e osteoarticular, quadros 21 e 23. https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel/tuberculose/manual-de-recomendacoes-e-controle-da-ttuberculose-no-brasil-2a-ed",
+    "6. OMS. WHO consolidated guidelines on tuberculosis: Module 4, Treatment and Care, 2ª edição (2026). https://www.who.int/publications/i/item/9789240125124",
+    "7. OMS. TB Knowledge Sharing Platform — Tratamento de TB/HIV e adiamento de TARV em meningite tuberculosa. https://tbksp.who.int/es/node/2778",
+    "8. International Tuberculous Meningitis Research Consortium. A clinical practice guideline for tuberculous meningitis (2025). https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/"
+  ],
+  "external_urls": [
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "https://www.cdc.gov/tb/hcp/treatment/adverse-events.html",
+    "https://www.idsociety.org/practice-guideline/treatment-of-drug-susceptible-tb/",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "https://www.gov.br/aids/pt-br/assuntos/noticias/2024/julho/saude-recomenda-dose-fixa-combinada-de-medicamentos-para-prevencao-da-tuberculose-em-criancas",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@download/file",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@display-file/file",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2019/prt0043_09_09_2019.html",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2023/folder-de-mesa_tratamento_tb_criancas_eletronico.pdf",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2020/manual-de-recomendacoes-para-o-controle-da-tuberculose-no-brasil",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/registro_investigacao_acompanhamento_tratamento_tuberculose.pdf",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_orientacoes_vigilancia_tuberculose_zoonotica.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/notas-tecnicas-e-informativas/nota-informativa-no-8-2024-cgtm-dathi-svsa-ms",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao",
+    "https://www.who.int/publications/i/item/9789240125124",
+    "https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel/tuberculose/manual-de-recomendacoes-e-controle-da-ttuberculose-no-brasil-2a-ed",
+    "https://tbksp.who.int/es/node/2778",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Comece pelos fundamentos e critérios diagnósticos; avance para decisões terapêuticas e avaliação de risco. Use os casos e questões de consolidação após estudar o corpo clínico. As fontes ao final permitem conferir normas e atualizações."
+    },
+    {
+      "text": "TB pleural pode cursar com dor e derrame, TB ganglionar com adenomegalia persistente, TB meníngea com cefaleia progressiva e sinais neurológicos, e TB disseminada com manifestações multissistêmicas. O diagnóstico de TB extrapulmonar depende de amostra apropriada do órgão, exames microbiológicos, histopatologia e contexto clínico. Uma prova de infecção latente positiva não comprova doença ativa no órgão."
+    },
+    {
+      "text": "**Armadilha de alta relevância:** o Ministério da Saúde recomenda cultura quando o diagnóstico inicial foi realizado por baciloscopia; quando o TRM resultou “MTB detectado”; em crianças, HIV, extrapulmonar e retratamento independentemente do resultado inicial; se baciloscopia do 2º mês for positiva; ou se houver suspeita de resistência/falha. Essa lista evita tanto uso indiscriminado quanto a omissão de exame importante. A cultura precisa de logística e seguimento; não basta solicitá-la se ninguém revisará o resultado."
+    },
+    {
+      "text": "Uma pessoa com quadro subagudo, contato recente e imagem sugestiva pode ter testes negativos por carga bacilar reduzida ou amostra inadequada. Nesse cenário, construir avaliação temporal: repetir material quando apropriado, procurar forma extrapulmonar, considerar diagnósticos alternativos (neoplasia, fungos, bronquiectasias, micobacterioses não tuberculosas, pneumonia necrosante) e avaliar indicação de tratamento fundamentado em contexto específico. Essa abordagem é particularmente importante em meningite: espera prolongada por cultura, quando há alta suspeita e gravidade, pode resultar em sequelas irreversíveis."
+    },
+    {
+      "text": "Cefaleia progressiva, febre, vômitos, alteração comportamental, sinais meníngeos, pares cranianos, convulsões ou déficit focal podem surgir em dias ou semanas. A inflamação basal causa vasculite, infartos e hidrocefalia. LCR pode apresentar pleocitose predominantemente linfocítica, proteínas elevadas e glicose reduzida, mas alterações variam com fase e imunidade. **Negatividade inicial de teste no LCR não exclui meningite TB.** Quando suspeita clínica é alta, tratar a emergência em ambiente hospitalar, coletar amostras sem atraso perigoso e realizar neuroimagem nos cenários indicados. A OMS recomenda corticosteroide adjuvante no tratamento de"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

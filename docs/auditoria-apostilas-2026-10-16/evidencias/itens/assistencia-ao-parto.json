@@ -1,0 +1,722 @@
+{
+  "key": "assistencia-ao-parto",
+  "kind": "apostila-html",
+  "path": "apostilas/assistencia-ao-parto/index.html",
+  "html_path": "apostilas/assistencia-ao-parto/index.html",
+  "title": "Assistência ao Parto",
+  "source_sha256": "663312f775ff5beb2e75c50398a59ea444ca00a017dd6c8011912643b5f66562",
+  "html_sha256": "663312f775ff5beb2e75c50398a59ea444ca00a017dd6c8011912643b5f66562",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Resumo de prova / Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H4",
+      "title": "Pontos essenciais",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Admissão",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Vigilância",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Partograma",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Terceiro período",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceito e definição",
+      "section": "conceito"
+    },
+    {
+      "tag": "H3",
+      "title": "Trabalho de parto",
+      "section": "conceito"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiologia, estática fetal e mecanismos do parto",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.1 Situação fetal: qual é a relação entre o eixo do feto e o eixo materno?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.2 Apresentação fetal: qual parte do feto está voltada para a entrada da pelve?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.3 Atitude fetal: o feto está fletido ou estendido?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.4 Ponto de referência: qual parte anatômica usamos para “dar nome” à posição?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.5 Posição e variedade de posição: para que lado o ponto de referência está olhando?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H4",
+      "title": "Como reconhecer no toque vaginal?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.6 Encaixamento e estação: a cabeça já entrou de verdade na pelve?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.7 Mecanismos do parto cefálico de vértice, passo a passo",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.8 Afinal, “para que lado ele roda”?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.9 Restituição: por que a cabeça “desvira” depois que nasce?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "2.10 Assinclitismo: a sutura sagital precisa estar exatamente no meio?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Admissão e avaliação inicial: como traduzir o exame obstétrico",
+      "section": "admissao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.1 Avaliação materna",
+      "section": "admissao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.2 Avaliação fetal abdominal: o que eu quero descobrir?",
+      "section": "admissao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.3 Ausculta fetal: onde procurar os batimentos?",
+      "section": "admissao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.4 Toque vaginal: o que cada item significa?",
+      "section": "admissao"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Vigilância intraparto: o que observar e por quê",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.1 Dinâmica uterina: o que é uma contração “adequada”?",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.2 Frequência cardíaca fetal: o que exatamente estou tentando descobrir?",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H4",
+      "title": "Na ausculta/monitorização, pense sempre em quatro perguntas",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.3 Desacelerações: por que “precoce”, “variável” e “tardia” têm nomes diferentes?",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.4 Se a FCF muda, o que devo procurar primeiro?",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.5 Vigilância materna: não esqueça que há duas pessoas em trabalho de parto",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.6 Membranas e líquido amniótico",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H3",
+      "title": "4.7 Exame vaginal: para que serve e por que não deve ser repetido sem motivo?",
+      "section": "vigilancia"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Partograma e WHO Labour Care Guide: como realmente ler",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.1 Antes de tudo: qual é a diferença entre partograma clássico e Labour Care Guide?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.2 Partogramas reais: reconheça os instrumentos clássicos",
+      "section": "partograma"
+    },
+    {
+      "tag": "H4",
+      "title": "Como ler os modelos clássicos da imagem",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.3 Por que a regra de “1 cm por hora” caiu?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.4 O que deve entrar no raciocínio do gráfico?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.5 Como ler a curva de dilatação sem decorar desenho?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.6 Linha de alerta e linha de ação: por que ainda preciso saber?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.7 O que significa “parada de dilatação” ou “parada de descida”?",
+      "section": "partograma"
+    },
+    {
+      "tag": "H3",
+      "title": "5.8 Os 3 P da distócia: a forma mais simples de organizar o raciocínio",
+      "section": "partograma"
+    },
+    {
+      "tag": "H4",
+      "title": "Exemplo de raciocínio",
+      "section": "partograma"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Manejo da dor",
+      "section": "dor"
+    },
+    {
+      "tag": "H3",
+      "title": "Métodos não farmacológicos",
+      "section": "dor"
+    },
+    {
+      "tag": "H3",
+      "title": "Métodos farmacológicos",
+      "section": "dor"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Períodos do parto: do início ao pós-parto imediato",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.1 Primeiro período: dilatação",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.2 Segundo período: expulsivo",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.3 Período passivo e fase de puxos",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.4 Coroamento e desprendimento cefálico",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.5 Terceiro período: dequitação placentária",
+      "section": "periodos"
+    },
+    {
+      "tag": "H4",
+      "title": "Elementos centrais do terceiro período",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.6 Sinais de separação placentária",
+      "section": "periodos"
+    },
+    {
+      "tag": "H3",
+      "title": "7.7 Quarto período: primeiras horas pós-parto",
+      "section": "periodos"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Complicações e desvios da evolução normal",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.1 Progressão lenta ou parada",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.2 Occípito-posterior persistente",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.3 Alteração do bem-estar fetal",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.4 Prolapso de cordão: por que é uma emergência?",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.5 Distócia de ombro",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H4",
+      "title": "Princípios iniciais",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.6 Hemorragia pós-parto: pense nos 4 T",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "8.7 Práticas que não devem virar rotina automática",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Condutas práticas: como raciocinar à beira-leito",
+      "section": "condutas"
+    },
+    {
+      "tag": "H3",
+      "title": "9.1 Checklist mental de admissão",
+      "section": "condutas"
+    },
+    {
+      "tag": "H3",
+      "title": "9.2 Se a dilatação está lenta",
+      "section": "condutas"
+    },
+    {
+      "tag": "H3",
+      "title": "9.3 Se a cabeça não desce",
+      "section": "condutas"
+    },
+    {
+      "tag": "H3",
+      "title": "9.4 Se o traçado fetal preocupa",
+      "section": "condutas"
+    },
+    {
+      "tag": "H3",
+      "title": "9.5 Como falar com a paciente",
+      "section": "condutas"
+    },
+    {
+      "tag": "H2",
+      "title": "Questões de fixação",
+      "section": "questoes"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Aprofundamento: decisões intraparto, distócias e segurança materno-fetal",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Progressão lenta: antes de diagnosticar distócia",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Ocítocina: medicamento de alto risco",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Monitorização fetal: interpretar mecanismo, não apenas “categoria”",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Parto operatório vaginal",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Trauma perineal e terceiro período",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Cesárea intraparto: indicação é falha do processo, não “demora” isolada",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Exercício de acompanhamento: um exame só não mostra progressão",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Distocias não são todas iguais",
+      "section": "editorial-depth-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Terceiro período e hemorragia",
+      "section": "editorial-depth-assistencia-ao-parto"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências prioritárias",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Distocia da progressão: quando agir",
+      "section": "luria-livro-etiologias-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Distocia de ombro: sequência e segurança",
+      "section": "luria-livro-etiologias-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Hemorragia pós-parto: as quatro causas",
+      "section": "luria-livro-etiologias-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Assistência respeitosa e vigilância",
+      "section": "luria-livro-etiologias-assistencia-ao-parto"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio por entidade clínica",
+      "section": "capitulos-livro-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Distocia da progressão",
+      "section": "capitulos-livro-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Distocia de ombro",
+      "section": "capitulos-livro-assistencia-ao-parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Hemorragia pós-parto",
+      "section": "capitulos-livro-assistencia-ao-parto"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Resumo de prova / Em 30 segundos",
+      "chars": 1096
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 337
+    },
+    {
+      "id": "conceito",
+      "title": "1. Conceito e definição",
+      "chars": 572
+    },
+    {
+      "id": "fisiologia",
+      "title": "2. Fisiologia, estática fetal e mecanismos do parto",
+      "chars": 9926
+    },
+    {
+      "id": "admissao",
+      "title": "3. Admissão e avaliação inicial: como traduzir o exame obstétrico",
+      "chars": 3464
+    },
+    {
+      "id": "vigilancia",
+      "title": "4. Vigilância intraparto: o que observar e por quê",
+      "chars": 5187
+    },
+    {
+      "id": "partograma",
+      "title": "5. Partograma e WHO Labour Care Guide: como realmente ler",
+      "chars": 7066
+    },
+    {
+      "id": "dor",
+      "title": "6. Manejo da dor",
+      "chars": 371
+    },
+    {
+      "id": "periodos",
+      "title": "7. Períodos do parto: do início ao pós-parto imediato",
+      "chars": 3061
+    },
+    {
+      "id": "complicacoes",
+      "title": "8. Complicações e desvios da evolução normal",
+      "chars": 2408
+    },
+    {
+      "id": "condutas",
+      "title": "9. Condutas práticas: como raciocinar à beira-leito",
+      "chars": 1953
+    },
+    {
+      "id": "questoes",
+      "title": "Questões de fixação",
+      "chars": 1954
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "10. Aprofundamento: decisões intraparto, distócias e segurança materno-fetal",
+      "chars": 3982
+    },
+    {
+      "id": "editorial-depth-assistencia-ao-parto",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 711
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 1310
+    },
+    {
+      "id": "luria-livro-etiologias-assistencia-ao-parto",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2456
+    },
+    {
+      "id": "capitulos-livro-assistencia-ao-parto",
+      "title": "Raciocínio por entidade clínica",
+      "chars": 1055
+    }
+  ],
+  "references": [
+    "Ministério da Saúde / CONITEC. Diretrizes Nacionais de Assistência ao Parto Normal. Portaria SAS/MS nº 353/2017; documento oficial mantido no portal do Ministério da Saúde, com página atualizada em 2025.",
+    "World Health Organization. WHO recommendations: intrapartum care for a positive childbirth experience. 2018.",
+    "World Health Organization. WHO Labour Care Guide: user’s manual (2021) e pacote de implementação atualizado (2025).",
+    "ACOG. First and Second Stage Labor Management. Clinical Practice Guideline No. 8, 2024. Critérios contemporâneos de fase ativa, progressão e parada.",
+    "World Health Organization. Recomendações para prevenção de hemorragia pós-parto e clampeamento tardio do cordão.",
+    "FEBRASGO. Protocolos e publicações de assistência ao parto e monitorização fetal intraparto.",
+    "ANVISA. RDC nº 36/2008 e normativas correlatas para serviços de atenção obstétrica e neonatal, incluindo avaliação seriada de dinâmica uterina, altura da apresentação, variedade de posição, membranas, líquido amniótico, dilatação e apagamento cervical.",
+    "Nota editorial: documentos nacionais tradicionais podem conservar elementos do partograma clássico; nos pontos de divergência sobre velocidade de dilatação e gatilhos de intervenção, esta apostila explicita a evolução da recomendação internacional."
+  ],
+  "reference_links": [
+    {
+      "label": "ACOG. First and Second Stage Labor Management. Clinical Practice Guideline No. 8, 2024.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "ACOG, Clinical Practice Guideline nº 8, 2024",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+      "in_references": false
+    },
+    {
+      "label": "OMS, Labour Care Guide",
+      "url": "https://www.who.int/publications/i/item/9789240017566",
+      "in_references": false
+    },
+    {
+      "label": "",
+      "url": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1186%2Fs12884-016-1213-4/MediaObjects/12884_2016_1213_Fig1_HTML.gif",
+      "in_references": false
+    },
+    {
+      "label": "Bedwell e colaboradores, Figura 1, BMC Pregnancy and Childbirth (2017)",
+      "url": "https://link.springer.com/article/10.1186/s12884-016-1213-4/figures/1",
+      "in_references": false
+    },
+    {
+      "label": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "in_references": false
+    },
+    {
+      "label": "Ampliar imagem ↗",
+      "url": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1186%2Fs12884-016-1213-4/MediaObjects/12884_2016_1213_Fig1_HTML.gif",
+      "in_references": false
+    },
+    {
+      "label": "OMS — WHO Labour Care Guide, manual do usuário",
+      "url": "https://www.who.int/publications/i/item/9789240017566",
+      "in_references": false
+    },
+    {
+      "label": "ACOG. First and Second Stage Labor Management. Clinical Practice Guideline No. 8, 2024.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Cephalic_presentation.svg",
+      "alt": "Esquema de apresentação cefálica fetal em relação à pelve materna",
+      "section": "fisiologia",
+      "caption": "Apresentação cefálica. Use a figura para visualizar a diferença entre “a cabeça estar para baixo” e a orientação específica da cabeça dentro da pelve. Fonte: Mikael Häggström, Wikimedia Commons, domínio público.",
+      "decorative": false
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Cephalic_presentations_overview.png",
+      "alt": "Variedades de posição cefálica vistas pela pelve materna, incluindo posições occípito-anteriores, transversas e posteriores",
+      "section": "fisiologia",
+      "caption": "Variedades de posição na apresentação cefálica. O que muda entre os quadros é a orientação do occipício em relação à pelve materna. Compare especialmente as posições anteriores, transversas e posteriores. Fonte: Mikael Häggström, Wikimedia Commons, domínio público.",
+      "decorative": false
+    },
+    {
+      "src": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1186%2Fs12884-016-1213-4/MediaObjects/12884_2016_1213_Fig1_HTML.gif",
+      "alt": "Dois partogramas clássicos completos em branco, lado a lado: OMS 1994 com fase latente e ativa e OMS 2000 modificado, com grades para batimentos cardíacos fetais, dilatação, descida, contrações e sinais maternos.",
+      "section": "partograma",
+      "caption": "Instrumentos clássicos reais — OMS 1994 e 2000. Comparação reproduzida de Bedwell e colaboradores, Figura 1, BMC Pregnancy and Childbirth (2017). Licença da publicação: CC BY 4.0. Imagem apresentada sem modificações; não corresponde ao WHO Labour Care Guide contemporâneo. Ampliar imagem ↗",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 12,
+  "paragraphs": 80,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "vigilancia",
+      "text": "A FCF funciona como uma janela indireta para a resposta fetal ao trabalho de parto. Em gestantes de risco habitual, a ausculta intermitente é uma estratégia recomendada; em situações de maior risco ou diante de achados anormais, pode ser necessário ampliar a monitorização.",
+      "pattern": 1
+    },
+    {
+      "section": "partograma",
+      "text": "ACOG 2024: considera 6 cm o início da fase ativa para manejo de distócia. Com pelo menos 6 cm e membranas rotas, a parada pode ser diagnosticada após 4 horas sem mudança cervical com atividade uterina adequada ou 6 horas sem mudança com atividade inadequada sob ocitocina, desde que a situação clínica permita observação. Isso não é recomendação de esperar diante de sofrimento fetal, sangramento grave ou outra urgência.",
+      "pattern": 1
+    },
+    {
+      "section": "partograma",
+      "text": "Como interpretar: no modelo de 1994, a fase latente também era representada; no modelo modificado de 2000, o registro do gráfico de dilatação é feito a partir da fase ativa. As linhas de alerta e ação são marcos históricos de vigilância e reavaliação, não indicações automáticas de ocitocina ou cesárea. A avaliação atual do tempo de progressão deve observar a recomendação vigente, as condições materno-fetais e o instrumento adotado pelo serviço.",
+      "pattern": 1
+    },
+    {
+      "section": "partograma",
+      "text": "Porque a progressão normal é mais variável do que se imaginava. Mulheres saudáveis podem avançar mais lentamente sem que isso, isoladamente, represente distócia. A OMS não recomenda usar a velocidade de 1 cm/h como gatilho único para intervenção.",
+      "pattern": 1
+    },
+    {
+      "section": "partograma",
+      "text": "ACOG 2024: considera 6 cm o início da fase ativa para manejo de distócia. Com pelo menos 6 cm e membranas rotas, a parada pode ser diagnosticada após 4 horas sem mudança cervical com atividade uterina adequada ou 6 horas sem mudança com atividade inadequada sob ocitocina, desde que a situação clínica permita observação. Isso não é recomendação de esperar diante de sofrimento fetal, sangramento grave ou outra urgência.",
+      "pattern": 2
+    },
+    {
+      "section": "partograma",
+      "text": "Aplicação: indique qual guideline fundamenta sua resposta; avalie membranas, dinâmica, posição fetal e condições materno-fetais antes de declarar parada. Fonte: ACOG, Clinical Practice Guideline nº 8, 2024 e OMS, Labour Care Guide.",
+      "pattern": 2
+    },
+    {
+      "section": "luria-livro-etiologias-assistencia-ao-parto",
+      "text": "Atonia uterina corresponde a falha de contração do miométrio e requer massagem, uterotônicos e escalonamento conforme protocolos. Trauma engloba lacerações, hematomas e rotura, mesmo com útero contraído. Tecido inclui retenção placentária e acretismo; trombina abrange coagulopatia. Quantificar a perda, verificar choque e mobilizar hemoderivados precocemente quando necessário; o fibrinogênio é particularmente relevante na hemorragia obstétrica. A revisão FEBRASGO 2025 recomenda abordagem hemostática protocolizada e medidas de gestão do sangue.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceito",
+      "text": "O cuidado intraparto busca acompanhar um processo fisiológico com vigilância adequada, identificação precoce de desvios e intervenções apenas quando indicadas, preservando segurança, autonomia e experiência positiva de parto."
+    },
+    {
+      "section": "fisiologia",
+      "text": "Antes de decorar os movimentos do parto, é preciso entender como o feto está orientado dentro do útero e da pelve materna. Em obstetrícia, palavras como situação, apresentação, atitude, posição e variedade de posição não são sinônimos: cada uma responde a uma pergunta diferente."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 3
+  }
+}

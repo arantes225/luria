@@ -1,0 +1,465 @@
+{
+  "key": "lote-05-093-asma-infancia",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-05-093-asma-infancia.md",
+  "title": "LURIA — Apostila 093: Asma na infância",
+  "source_sha256": "6a79b8841bab6d1bafbe12ea5f35c97bb50f7e0a64815eec3d4f7eb4f0d9fa1c",
+  "chars_estimated": 77419,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Apostila 093: Asma na infância",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "0. Etapa zero — benchmarking obrigatório",
+      "level": 2
+    },
+    {
+      "line": 13,
+      "title": "Matriz inicial de cobertura e lacunas",
+      "level": 3
+    },
+    {
+      "line": 25,
+      "title": "1. O que é asma — começando pelo mecanismo",
+      "level": 2
+    },
+    {
+      "line": 34,
+      "title": "2. Suspeita clínica e raciocínio diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 43,
+      "title": "3. Diagnósticos diferenciais que mudam a conduta",
+      "level": 2
+    },
+    {
+      "line": 50,
+      "title": "4. Princípios contemporâneos do tratamento controlador",
+      "level": 2
+    },
+    {
+      "line": 59,
+      "title": "5. Exacerbação — estrutura de decisão inicial",
+      "level": 2
+    },
+    {
+      "line": 68,
+      "title": "6. Educação, prevenção e seguimento",
+      "level": 2
+    },
+    {
+      "line": 75,
+      "title": "7. Casos clínicos — elaboração inicial",
+      "level": 2
+    },
+    {
+      "line": 84,
+      "title": "8. Questões formativas comentadas — versão inicial",
+      "level": 2
+    },
+    {
+      "line": 92,
+      "title": "9. Revisão obrigatória antes de integrar ao site",
+      "level": 2
+    },
+    {
+      "line": 102,
+      "title": "Fontes de referência clínica",
+      "level": 3
+    },
+    {
+      "line": 109,
+      "title": "10. Tratamento por degraus para escolares de 6 a 11 anos — aprofundamento baseado na GINA 2026",
+      "level": 2
+    },
+    {
+      "line": 113,
+      "title": "Degrau 1: sintoma intermitente não é ausência de inflamação",
+      "level": 3
+    },
+    {
+      "line": 118,
+      "title": "Degrau 2: controle regular",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "Degraus 3 e 4: quando a intensificação realmente se justifica",
+      "level": 3
+    },
+    {
+      "line": 126,
+      "title": "Degrau 5: asma grave é diagnóstico de exclusão operacional",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "Reavaliação longitudinal e redução de degrau",
+      "level": 3
+    },
+    {
+      "line": 132,
+      "title": "Microcasos de aplicação",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "11. Diagnóstico funcional em escolares: como interpretar os números e evitar armadilhas",
+      "level": 2
+    },
+    {
+      "line": 148,
+      "title": "11.1. Um exemplo numérico que cai em prova",
+      "level": 3
+    },
+    {
+      "line": 154,
+      "title": "11.2. Se não houver espirometria",
+      "level": 3
+    },
+    {
+      "line": 160,
+      "title": "11.3. Biomarcadores não substituem a função pulmonar",
+      "level": 3
+    },
+    {
+      "line": 164,
+      "title": "11.4. Antes e depois do exame: perguntas de segurança",
+      "level": 3
+    },
+    {
+      "line": 174,
+      "title": "12. Crianças até 5 anos: raciocínio diagnóstico e terapêutico que não é cópia do escolar",
+      "level": 2
+    },
+    {
+      "line": 178,
+      "title": "12.1. Os três requisitos da GINA 2026",
+      "level": 3
+    },
+    {
+      "line": 191,
+      "title": "12.1.1. Como documentar a confirmação sem inventar certeza",
+      "level": 3
+    },
+    {
+      "line": 205,
+      "title": "12.2. Por que a história clínica precisa ser detalhada",
+      "level": 3
+    },
+    {
+      "line": 211,
+      "title": "12.3. Tratamento do pré-escolar com provável asma",
+      "level": 3
+    },
+    {
+      "line": 219,
+      "title": "12.4. Dispositivo: a prescrição não termina na molécula",
+      "level": 3
+    },
+    {
+      "line": 225,
+      "title": "12.5. Sinais que mudam o percurso",
+      "level": 3
+    },
+    {
+      "line": 229,
+      "title": "13. Exacerbações: do reconhecimento ao destino, por faixa etária",
+      "level": 2
+    },
+    {
+      "line": 233,
+      "title": "13.1. O que procurar na porta do atendimento",
+      "level": 3
+    },
+    {
+      "line": 240,
+      "title": "13.1.1. Gravidade não se decide por um único sinal",
+      "level": 3
+    },
+    {
+      "line": 254,
+      "title": "13.2. Emergência em crianças de 6–11 anos",
+      "level": 3
+    },
+    {
+      "line": 264,
+      "title": "13.3. Emergência em crianças de até 5 anos",
+      "level": 3
+    },
+    {
+      "line": 272,
+      "title": "13.4. O que NÃO fazer rotineiramente",
+      "level": 3
+    },
+    {
+      "line": 284,
+      "title": "13.5. Alta, observação ou internação?",
+      "level": 3
+    },
+    {
+      "line": 290,
+      "title": "14. Quadros de raciocínio prático",
+      "level": 2
+    },
+    {
+      "line": 292,
+      "title": "Quadro A — A idade muda a confirmação diagnóstica",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "Quadro B — Falha aparente do controlador: roteiro original de auditoria",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "Quadro C — Três hipóteses diante de “chiado” em lactente",
+      "level": 3
+    },
+    {
+      "line": 321,
+      "title": "15. Casos aprofundados: hipótese, evidências, decisão e segurança",
+      "level": 2
+    },
+    {
+      "line": 323,
+      "title": "Caso 5 — “O chiado é asma?” no lactente",
+      "level": 3
+    },
+    {
+      "line": 331,
+      "title": "Caso 6 — Teste broncodilatador interpretado com denominador errado",
+      "level": 3
+    },
+    {
+      "line": 337,
+      "title": "Caso 7 — Criança de 4 anos com suspeita evolutiva",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "Caso 8 — Retorno à urgência após melhora inicial",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "16. Questões originais de residência — alternativas integralmente comentadas",
+      "level": 2
+    },
+    {
+      "line": 351,
+      "title": "Questão 1 — Diagnóstico funcional",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "Questão 2 — Pré-escolar e critérios clínicos",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "Questão 3 — Alívio e controle",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "Questão 4 — Grave ou “melhorando”?",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "Questão 5 — Prescrição pós-crise",
+      "level": 3
+    },
+    {
+      "line": 411,
+      "title": "Questão 6 — Corpo estranho versus asma",
+      "level": 3
+    },
+    {
+      "line": 423,
+      "title": "17. Registro científico específico desta ampliação",
+      "level": 2
+    },
+    {
+      "line": 432,
+      "title": "18. Vigilância longitudinal: transformar controle em decisões mensuráveis",
+      "level": 2
+    },
+    {
+      "line": 436,
+      "title": "18.1. Anamnese orientada para as últimas quatro semanas",
+      "level": 3
+    },
+    {
+      "line": 442,
+      "title": "18.2. Risco de exacerbação e de efeitos adversos",
+      "level": 3
+    },
+    {
+      "line": 448,
+      "title": "18.3. Crescimento e segurança do corticosteroide inalatório",
+      "level": 3
+    },
+    {
+      "line": 454,
+      "title": "19. Fenótipos e contextos clínicos que costumam ser confundidos",
+      "level": 2
+    },
+    {
+      "line": 456,
+      "title": "19.1. Asma associada a exercício",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "19.2. Asma variante tosse",
+      "level": 3
+    },
+    {
+      "line": 468,
+      "title": "19.3. Asma e rinite alérgica",
+      "level": 3
+    },
+    {
+      "line": 472,
+      "title": "19.4. Asma, obesidade e sofrimento psicossocial",
+      "level": 3
+    },
+    {
+      "line": 478,
+      "title": "19.5. Exacerbação e anafilaxia",
+      "level": 3
+    },
+    {
+      "line": 482,
+      "title": "20. Administração inalatória: oficina prática e erros que mudam resultado",
+      "level": 2
+    },
+    {
+      "line": 486,
+      "title": "20.1. Checklist de demonstração com aerossol pressurizado e espaçador",
+      "level": 3
+    },
+    {
+      "line": 496,
+      "title": "20.2. Como medir adesão sem transformar a consulta em julgamento moral",
+      "level": 3
+    },
+    {
+      "line": 502,
+      "title": "20.3. Educação para crianças maiores",
+      "level": 3
+    },
+    {
+      "line": 506,
+      "title": "21. Integração com a rede de atenção no Brasil",
+      "level": 2
+    },
+    {
+      "line": 510,
+      "title": "21.1. O papel da Atenção Primária",
+      "level": 3
+    },
+    {
+      "line": 514,
+      "title": "21.2. Quando a referência especializada agrega valor",
+      "level": 3
+    },
+    {
+      "line": 518,
+      "title": "21.3. Diferença entre diretriz internacional, PCDT e bula",
+      "level": 3
+    },
+    {
+      "line": 527,
+      "title": "22. Roteiro editorial de figuras próprias e candidatas de imagem",
+      "level": 2
+    },
+    {
+      "line": 544,
+      "title": "23. Auditoria de autossuficiência — tarefas que precisam ser aprovadas",
+      "level": 2
+    }
+  ],
+  "references": [],
+  "external_links": [
+    {
+      "url": "https://ginasthma.org/reports/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ginasthma.org/2026-gina-summary-guide/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 3,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui.",
+      "pattern": 0
+    },
+    {
+      "text": "Na **faixa de 6–11 anos**, a GINA 2026 prevê, no primeiro degrau, medicação de alívio com componente de corticosteroide inalatório: combinações de CI-formoterol em baixa dose conforme a apresentação apropriada ou CI administrado em conjunto com beta-2-agonista de curta ação, em dispositivo combinado ou separado. Nos degraus seguintes, o tratamento de manutenção contém corticosteroide inalatório diariamente. Nos degraus 3–4, esquemas com CI-LABA ou terapia de manutenção e alívio com CI-formoterol (MART) são possibilidades para crianças selecionadas; **apenas combinações com formoterol** servem para o modelo MART. As doses e os limites de inalações são dependentes de idade, produto e dispositivo. Antes de prescrever, conferir registro e apresentações comercializadas no Brasil, bula, protocolos locais e capítulo de dosagens validado.",
+      "pattern": 0
+    },
+    {
+      "text": "Para idade **≤5 anos**, não extrapolar automaticamente as opções e evidências de 6–11 anos: a avaliação diagnóstica, as apresentações aprovadas e a escolha do controlador seguem orientações etárias próprias. O desenvolvimento detalhado dessa faixa etária está pendente no manuscrito.",
+      "pattern": 0
+    },
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui.",
+      "pattern": 1
+    },
+    {
+      "text": "Na inflamação do tipo 2, citocinas e células efetoras como eosinófilos, mastócitos e linfócitos participam de hiperresponsividade, edema e secreção. Entretanto, nem toda criança asmática apresenta o mesmo padrão biológico; usar 'asma alérgica' como sinônimo de toda asma levaria a diagnósticos e decisões incorretos. Além dos desencadeantes alérgicos, infecções respiratórias virais, exposição a fumaça, poluentes e exercício podem precipitar sintomas. As exposições precisam ser contextualizadas com sintomas, sazonalidade e ambiente familiar.",
+      "pattern": 1
+    },
+    {
+      "text": "A doença apresenta duas dimensões distintas: **controle atual**, relativo à frequência e repercussão dos sintomas, e **risco futuro**, relativo a exacerbações, limitação funcional persistente e efeitos adversos do tratamento. Uma criança que refere poucos sintomas mas teve internação por crise grave no último ano não deve ser classificada simplesmente como 'sem risco'. O manejo deve atingir as duas dimensões.",
+      "pattern": 1
+    },
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui.",
+      "pattern": 2
+    },
+    {
+      "text": "Na **faixa de 6–11 anos**, a GINA 2026 prevê, no primeiro degrau, medicação de alívio com componente de corticosteroide inalatório: combinações de CI-formoterol em baixa dose conforme a apresentação apropriada ou CI administrado em conjunto com beta-2-agonista de curta ação, em dispositivo combinado ou separado. Nos degraus seguintes, o tratamento de manutenção contém corticosteroide inalatório diariamente. Nos degraus 3–4, esquemas com CI-LABA ou terapia de manutenção e alívio com CI-formoterol (MART) são possibilidades para crianças selecionadas; **apenas combinações com formoterol** servem para o modelo MART. As doses e os limites de inalações são dependentes de idade, produto e dispositivo. Antes de prescrever, conferir registro e apresentações comercializadas no Brasil, bula, protocolos locais e capítulo de dosagens validado.",
+      "pattern": 2
+    },
+    {
+      "text": "**Este capítulo complementa a seção 4 e não constitui prescrição pronta.** Ao contrário de guias antigos, que frequentemente tratavam o salbutamol isolado como opção suficiente para casos leves, a GINA 2026 estabelece uma estratégia anti-inflamatória desde o primeiro degrau. A justificativa é dupla: o broncodilatador alivia a contração da musculatura lisa, mas não corrige a inflamação; além disso, episódios pouco frequentes de sintomas não garantem risco nulo de exacerbação grave. Ao planejar a prescrição, o profissional precisa distinguir a recomendação internacional da disponibilidade, autorização por idade e apresentação aprovada no Brasil.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui."
+    },
+    {
+      "text": "**Modelo LURIA inspecionado:** `apostilas/amniorrexe-prematura/index.html` para orientação de identidade visual, navegação, sequência didática, recursos de raciocínio e leitura no PWA. O HTML da apostila pré-existente não foi alterado."
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "sha": "af147c9bdfa96bf10aa83dd98bb596069196224d",
+  "path": "apostilas/_rascunhos/lote-06-122-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--af147c9bdf",
+  "title": "Perfuração de Víscera Oca",
+  "format": ".json",
+  "chars_estimated": 102298,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes-de-leitura",
+      "title": "Orientações de leitura"
+    },
+    {
+      "id": "cap-01-a-urgencia-que-muda-tudo-perfuracao-peritonite-e-",
+      "title": "1. A urgência que muda tudo: perfuração, peritonite e controle da fonte"
+    },
+    {
+      "id": "cap-02-conceitos-anatomicos-e-fisiologicos-indispensavei",
+      "title": "2. Conceitos anatômicos e fisiológicos indispensáveis"
+    },
+    {
+      "id": "cap-03-epidemiologia-e-principais-etiologias-por-segment",
+      "title": "3. Epidemiologia e principais etiologias por segmento"
+    },
+    {
+      "id": "cap-04-fisiopatologia-clinica-da-dor-visceral-a-rigidez-",
+      "title": "4. Fisiopatologia clínica: da dor visceral à rigidez abdominal"
+    },
+    {
+      "id": "cap-05-historia-clinica-dirigida-oito-perguntas-de-alto-",
+      "title": "5. História clínica dirigida: oito perguntas de alto rendimento"
+    },
+    {
+      "id": "cap-06-exame-fisico-reconhecer-gravidade-sem-depender-de",
+      "title": "6. Exame físico: reconhecer gravidade sem depender de uma única manobra"
+    },
+    {
+      "id": "cap-07-diagnosticos-diferenciais-e-armadilhas-cirurgicas",
+      "title": "7. Diagnósticos diferenciais e armadilhas cirúrgicas"
+    },
+    {
+      "id": "cap-08-investigacao-laboratorial-o-que-acrescenta-e-o-qu",
+      "title": "8. Investigação laboratorial: o que acrescenta e o que não decide"
+    },
+    {
+      "id": "cap-09-radiografia-do-torax-e-abdome-achar-ar-entender-s",
+      "title": "9. Radiografia do tórax e abdome: achar ar, entender suas limitações"
+    },
+    {
+      "id": "cap-10-tomografia-computadorizada-o-exame-que-localiza-a",
+      "title": "10. Tomografia computadorizada: o exame que localiza a fonte em estáveis"
+    },
+    {
+      "id": "cap-11-us-fast-e-exames-especiais-papel-delimitado",
+      "title": "11. US, FAST e exames especiais: papel delimitado"
+    },
+    {
+      "id": "cap-12-ressuscitacao-e-primeiros-cuidados-o-que-fazer-an",
+      "title": "12. Ressuscitação e primeiros cuidados: o que fazer ANTES e DURANTE a decisão cirúrgica"
+    },
+    {
+      "id": "cap-13-antibioticoterapia-escolher-pelo-foco-nao-mais-am",
+      "title": "13. Antibioticoterapia: escolher pelo foco, não “mais amplo para todos”"
+    },
+    {
+      "id": "cap-14-como-decidir-cirurgia-imediata-conservador-ou-end",
+      "title": "14. Como decidir cirurgia imediata, conservador ou endoscopia"
+    },
+    {
+      "id": "cap-15-ulcera-peptica-perfurada-mecanismo-apresentacao-e",
+      "title": "15. Úlcera péptica perfurada: mecanismo, apresentação e operação"
+    },
+    {
+      "id": "cap-16-perfuracao-colonica-por-diverticulite-de-microper",
+      "title": "16. Perfuração colônica por diverticulite: de microperfuração a peritonite fecal"
+    },
+    {
+      "id": "cap-17-perfuracao-de-delgado-obstrucao-isquemia-trauma-e",
+      "title": "17. Perfuração de delgado: obstrução, isquemia, trauma e Crohn"
+    },
+    {
+      "id": "cap-18-perfuracao-de-colon-nao-diverticular-tumor-esterc",
+      "title": "18. Perfuração de cólon não diverticular: tumor, estercoral e isquêmica"
+    },
+    {
+      "id": "cap-19-perfuracao-esofagica-e-boerhaave-emergencia-fora-",
+      "title": "19. Perfuração esofágica e Boerhaave: emergência fora do abdome clássico"
+    },
+    {
+      "id": "cap-20-perfuracao-traumatica-de-estomago-intestino-e-mes",
+      "title": "20. Perfuração traumática de estômago, intestino e mesentério"
+    },
+    {
+      "id": "cap-21-perfuracao-iatrogenica-colonoscopia-eda-cpre-e-po",
+      "title": "21. Perfuração iatrogênica: colonoscopia, EDA, CPRE e pós-operatório"
+    },
+    {
+      "id": "cap-22-tecnica-operatoria-e-seguranca-o-que-o-cirurgiao-",
+      "title": "22. Técnica operatória e segurança: o que o cirurgião busca na cavidade"
+    },
+    {
+      "id": "cap-23-abordagem-de-choque-e-controle-de-danos-no-abdome",
+      "title": "23. Abordagem de choque e controle de danos no abdome séptico"
+    },
+    {
+      "id": "cap-24-complicacoes-e-vigilancia-do-pos-operatorio",
+      "title": "24. Complicações e vigilância do pós-operatório"
+    },
+    {
+      "id": "cap-25-populacoes-especiais-e-cenarios-de-vulnerabilidad",
+      "title": "25. Populações especiais e cenários de vulnerabilidade"
+    },
+    {
+      "id": "cap-26-algoritmo-clinico-integrado-em-tres-cenarios",
+      "title": "26. Algoritmo clínico integrado em três cenários"
+    },
+    {
+      "id": "cap-27-perolas-clinicas-comparacoes-e-resumo-de-prova",
+      "title": "27. Pérolas clínicas, comparações e resumo de prova"
+    },
+    {
+      "id": "cap-28-oito-casos-clinicos-comentados-e-decisao-cirurgic",
+      "title": "28. Oito casos clínicos comentados e decisão cirúrgica"
+    },
+    {
+      "id": "cap-29-doze-questoes-autorais-comentadas-estilo-residenc",
+      "title": "29. Doze questões autorais comentadas — estilo residência e ENAMED"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"WSES 2020 — Perforated and bleeding peptic ulcer\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/\"}",
+    "{\"label\":\"WSES 2020 — Diverticulite aguda na emergência\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/\"}",
+    "{\"label\":\"WSES 2022 — Lesão intestinal traumática contusa e penetrante\",\"url\":\"https://link.springer.com/article/10.1186/s13017-022-00418-y\"}",
+    "{\"label\":\"WSES 2017 — Perfuração iatrogênica na colonoscopia\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/\"}",
+    "{\"label\":\"Surgical Infection Society 2024 — Infecção intra-abdominal\",\"url\":\"https://journals.sagepub.com/doi/full/10.1089/sur.2024.137\"}",
+    "{\"label\":\"Global Alliance for Infections in Surgery 2024 — Intra-abdominal infections survival guide\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/\"}",
+    "{\"label\":\"Surviving Sepsis Campaign 2026 — Diretrizes internacionais para sepse\",\"url\":\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\"}",
+    "{\"label\":\"WSES — Repositório de diretrizes de cirurgia de emergência\",\"url\":\"https://www.wses.org.uk/scientific-resources/guidelines\"}"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/",
+    "https://link.springer.com/article/10.1186/s13017-022-00418-y",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/",
+    "https://journals.sagepub.com/doi/full/10.1089/sur.2024.137",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "https://www.wses.org.uk/scientific-resources/guidelines"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A regra de atendimento é separar diagnóstico anatômico de gravidade fisiológica. Uma pessoa hipotensa e com rigidez difusa precisa de ressuscitação, antibiótico quando indicado e avaliação cirúrgica imediata; não esperar um exame “ideal” se isso retardar o controle da fonte. Um paciente estável com pequena coleção adjacente ao cólon por perfuração contida pode, em condições específicas, ser tratado com antibiótico e drenagem percutânea ou observação rigorosa. O mesmo rótulo “perfuração intestinal” não pode levar automaticamente a Hartmann, epiplonplastia ou laparotomia indiscriminada."
+    },
+    {
+      "text": "Diverticulite e perfuração colônica associam-se a idade, diverticulose, alterações da parede, constipação, imunossupressão e, em alguns subgrupos, uso de AINEs. Lesão traumática relaciona-se a desaceleração, compressão por cinto, penetrantes e contusão de mesentério. Após colonoscopia, polipectomia/EMR, diverticulose e manobras difíceis elevam risco de perfuração. A principal utilidade desses fatores é ajustar a suspeita e o limiar de investigação, não definir diagnóstico isolado."
+    },
+    {
+      "text": "No exame, inspeção de cicatrizes, hérnias inguinais, estomas e locais de procedimento pode localizar fatores causais. Palpação focal de FID/FIE ajuda a reconhecer peritonite localizada. O toque retal ou exame pélvico são indicados quando informação mudará conduta (sangue, massa, abscesso pélvico, diagnóstico ginecológico), respeitando consentimento e conforto; não são testes universais de perfuração."
+    },
+    {
+      "text": "Uso de opioides, idade avançada, neuropatia diabética, alteração cognitiva, trauma medular, sedação ou imunossupressão diminuem confiabilidade do exame. Diante de deterioração hemodinâmica com dor aparentemente pequena, repita exame e use imagem/avaliação cirúrgica proporcionais. Em traumático com lesões distrativas, pacientes intoxicados ou sedados podem não descrever dor. A recomendação WSES 2022 valoriza exames seriados e CT repetida em achados equívocos."
+    },
+    {
+      "text": "A leucocitose pode estar ausente cedo, na neutropenia e em sepse avançada. Elevação de PCR é inespecífica; esperar PCR alta para operar é erro. Lactato elevado sugere hipoperfusão/gravidade, mas lactato normal não exclui isquemia, perfuração inicial nem sepse. Creatinina ajuda a estimar lesão renal e planejar contraste/dose de antibióticos, porém risco de atraso em diagnóstico de emergência pode superar risco de contraste, sob avaliação individual."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

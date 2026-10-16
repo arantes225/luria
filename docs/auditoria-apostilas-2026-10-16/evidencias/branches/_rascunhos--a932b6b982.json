@@ -1,0 +1,184 @@
+{
+  "sha": "a932b6b982cc560a79a35d1fdf2ab107aa0f7f75",
+  "path": "apostilas/_rascunhos/lote-13-257-planejamento-gestao-servicos-saude.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--a932b6b982",
+  "title": "LURIA — Lote 13 · Apostila 257",
+  "format": ".md",
+  "chars_estimated": 30572,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 257"
+    },
+    {
+      "title": "Planejamento, avaliação e gestão dos serviços de saúde"
+    },
+    {
+      "title": "Etapa zero e benchmark"
+    },
+    {
+      "title": "Competências a desenvolver"
+    },
+    {
+      "title": "1. Gestão é uma intervenção em saúde"
+    },
+    {
+      "title": "2. Quem governa o quê no SUS?"
+    },
+    {
+      "title": "3. Rede de Atenção à Saúde (RAS) — circulação de pessoas, não só prédios"
+    },
+    {
+      "title": "Três problemas de rede que não podem ser confundidos"
+    },
+    {
+      "title": "4. Diagnóstico situacional: antes de propor uma solução"
+    },
+    {
+      "title": "Perguntas do diagnóstico situacional"
+    },
+    {
+      "title": "5. Instrumentos formais de planejamento do SUS"
+    },
+    {
+      "title": "Planejamento estratégico situacional: problema antes da solução"
+    },
+    {
+      "title": "6. Financiamento, orçamento e capacidade"
+    },
+    {
+      "title": "Painel simplificado de capacidade"
+    },
+    {
+      "title": "7. Regulação assistencial: fila não é apenas ordem cronológica"
+    },
+    {
+      "title": "Manejo de fila de exame de imagem"
+    },
+    {
+      "title": "8. Avaliação dos serviços — estrutura, processo e resultado"
+    },
+    {
+      "title": "Dimensões indispensáveis"
+    },
+    {
+      "title": "9. Saúde suplementar, setor privado e complementariedade"
+    },
+    {
+      "title": "Exemplo"
+    },
+    {
+      "title": "10. Judicialização: direito, evidência, acesso e decisões difíceis"
+    },
+    {
+      "title": "Comunicação clínica de pedido"
+    },
+    {
+      "title": "11. Segurança, melhoria contínua e implementação"
+    },
+    {
+      "title": "Gestão de crise"
+    },
+    {
+      "title": "12. Algoritmos práticos"
+    },
+    {
+      "title": "A. Transformar problema em ação"
+    },
+    {
+      "title": "B. Uma fila de cirurgia eletiva cresceu"
+    },
+    {
+      "title": "C. Prestação de contas"
+    },
+    {
+      "title": "13. Casos de prova e prática, comentados"
+    },
+    {
+      "title": "Caso 1 — Município com filas de mamografia"
+    },
+    {
+      "title": "Caso 2 — Mortalidade hospitalar aparentemente pior"
+    },
+    {
+      "title": "Caso 3 — Meta anual e relatório de gestão"
+    },
+    {
+      "title": "Caso 4 — Plano de saúde negou exame"
+    },
+    {
+      "title": "Caso 5 — Medicamento não incorporado e pedido judicial"
+    },
+    {
+      "title": "14. Questões autorais comentadas"
+    },
+    {
+      "title": "15. Imagens candidatas para aprovação do Admin"
+    },
+    {
+      "title": "16. Referências institucionais e auditáveis"
+    },
+    {
+      "title": "17. Auditoria de conteúdo e pendências"
+    }
+  ],
+  "reference_entries": [
+    "- Brasil. Constituição de 1988, artigos 196–200 e legislação correlata: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "- Brasil. Lei nº 8.080/1990: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "- Brasil. Lei nº 8.142/1990: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "- Ministério da Saúde. Gestão do SUS: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/gestao-do-sus",
+    "- Ministério da Saúde. Instrumentos de planejamento: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "- Ministério da Saúde. Plano Nacional de Saúde 2024–2027 (revisado em 2025): https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pns",
+    "- Ministério da Saúde. Programação Anual de Saúde — PAS 2026: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas",
+    "- Ministério da Saúde. Relatório Anual de Gestão e arquivos 2025: https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag",
+    "- Agência Nacional de Saúde Suplementar. Cobertura assistencial e Rol: https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos/cobertura-assistencial",
+    "- Agência Nacional de Saúde Suplementar. Atualização do Rol: https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos",
+    "**Produção atual:** explicação dos princípios e estrutura, pactuação, rede, planejamento, indicadores, regulação, cobertura suplementar, judicialização, 5 casos, 7 questões, 3 algoritmos e 10 propostas de visuais. **Régua científica:** fontes oficiais do MS e ANS verificadas, sem transposição literal de material do Drive.",
+    "**Pendências para encerramento:** detalhar legislação vigente da judicialização de medicamentos por temas STF e CNJ sem erro de competência; jurisprudência atual não pode ser presumida; fortalecer governança regional, fluxo de financiamento e instrumentos interfederativos; aprofundar indicadores assistenciais e auditoria de qualidade com exemplos calculados; conhecer nova política de atenção especializada 2026; benchmark mais abrangente de planejamento; atingir ≥60 mil caracteres únicos; revisar casos por especialista, curadoria de imagens e PWA. **Piso não alcançado — conteúdo ainda é rascunh",
+    "**Status:** RASCUNHO_PARCIAL_NAO_PUBLICAR."
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/gestao-do-sus",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pns",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag",
+    "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos/cobertura-assistencial",
+    "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Princípios doutrinários do SUS — **universalidade, integralidade e equidade** — orientam decisões. Universalidade garante direito de acesso; integralidade exige cuidado articulado em promoção, prevenção, diagnóstico, tratamento e reabilitação; equidade direciona atenção proporcional às necessidades e vulnerabilidades. **Equidade não é privilégio arbitrário**: priorização exige critérios clínicos, transparência, revisão e proteção contra discriminação."
+    },
+    {
+      "text": "Exemplo: município com \"muitas internações por insuficiência cardíaca\" pode ter envelhecimento, subdiagnóstico na APS, dificuldade de obter medicamento, insuficiência de ambulatório, falha de aderência ou perfil de hospital de referência regional. Sem separar por residência e avaliar séries, aumentar leitos isoladamente pode tratar o desfecho sem enfrentar a causa."
+    },
+    {
+      "text": "| Instrumento | Para quê serve | Pergunta típica | | --- | --- | --- | | Plano de Saúde (4 anos) | definir estratégia, diretrizes, objetivos e metas plurianuais | \"Onde queremos chegar?\" | | PAS (anual) | traduzir metas e ações para exercício e recursos | \"O que faremos neste ano, com qual programação?\" | | RQPC (quadrimestral) | monitorar execução e recursos periodicamente | \"O plano está acontecendo neste quadrimestre?\" | | RAG (anual) | avaliar resultados, demonstrar execução e orientar correções | \"O que fizemos, com que resultados e explicações?\" |"
+    },
+    {
+      "text": "**Capacidade instalada** descreve salas, leitos e equipamentos disponíveis; **capacidade operacional** depende de equipes, insumos, turnos e fluxos. Uma unidade com dez consultórios mas dois médicos por turno não tem automaticamente dez agendas completas. Profissional escalado sem insumo laboratorial também não produz diagnóstico final oportuno."
+    },
+    {
+      "text": "O risco oposto também existe: \"prioridade\" excessiva sem critérios objetivos torna toda fila urgente e piora acesso de quem mais precisa. Diagnóstico e regulação são atos distintos que exigem comunicação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,438 @@
+{
+  "sha": "5f5a268d160102aa63520703fb1f27ea01ccd8d4",
+  "path": "apostilas/_rascunhos/lote-06-120-medicina-baseada-em-evidencias.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--5f5a268d16",
+  "title": "LURIA — Apostila 120: Medicina Baseada em Evidências",
+  "format": ".md",
+  "chars_estimated": 97288,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 120: Medicina Baseada em Evidências"
+    },
+    {
+      "title": "1. O que realmente significa praticar medicina baseada em evidências"
+    },
+    {
+      "title": "Exemplo introdutório: “reduziu eventos em 50%”"
+    },
+    {
+      "title": "2. Transformando problema assistencial em pergunta respondível"
+    },
+    {
+      "title": "2.1 PICO e PECO"
+    },
+    {
+      "title": "2.2 Desfechos que importam ao paciente"
+    },
+    {
+      "title": "2.3 Estrutura da pergunta e busca"
+    },
+    {
+      "title": "3. Desenhos de estudos: escolher pelo tipo de pergunta"
+    },
+    {
+      "title": "3.1 Classificação sem atalhos errados"
+    },
+    {
+      "title": "3.2 Seleção pela exposição ou pelo desfecho"
+    },
+    {
+      "title": "3.3 Quadro de decisão"
+    },
+    {
+      "title": "4. Ensaio clínico randomizado: como proteger comparabilidade"
+    },
+    {
+      "title": "4.1 Randomização, ocultação e cegamento não são sinônimos"
+    },
+    {
+      "title": "4.2 Intenção de tratar, por protocolo e estimando"
+    },
+    {
+      "title": "4.3 Desfechos, comparadores e aplicabilidade"
+    },
+    {
+      "title": "4.4 Principais erros em ensaios"
+    },
+    {
+      "title": "5. Estudos de coorte: risco, temporalidade e confusão"
+    },
+    {
+      "title": "5.1 Coorte concorrente e histórica"
+    },
+    {
+      "title": "5.2 Exposição como variável fixa ou dependente do tempo"
+    },
+    {
+      "title": "5.3 Qualidade da medida e perdas"
+    },
+    {
+      "title": "6. Caso-controle: quando começa pelo desfecho"
+    },
+    {
+      "title": "6.1 Por que é eficiente para desfechos raros"
+    },
+    {
+      "title": "6.2 Viés de lembrança e aferição diferencial"
+    },
+    {
+      "title": "7. Estudo transversal e ecológico: prevalência e nível de análise"
+    },
+    {
+      "title": "7.1 Prevalência não é incidência"
+    },
+    {
+      "title": "7.2 Falácia ecológica e séries temporais"
+    },
+    {
+      "title": "8. Medidas de frequência: incidência, prevalência e pessoa-tempo"
+    },
+    {
+      "title": "8.1 Incidência cumulativa (risco)"
+    },
+    {
+      "title": "8.2 Prevalência"
+    },
+    {
+      "title": "8.3 Risco absoluto, taxa e prevalência: tabela de revisão"
+    },
+    {
+      "title": "9. Risco relativo, odds ratio e razão de riscos instantâneos"
+    },
+    {
+      "title": "9.1 Tabela de quatro casas (2 × 2)"
+    },
+    {
+      "title": "9.2 Exemplo de RR e OR: divergência quando o evento é comum"
+    },
+    {
+      "title": "9.3 Hazard ratio e modelos de sobrevivência"
+    },
+    {
+      "title": "10. Redução absoluta, redução relativa, NNT e NNH"
+    },
+    {
+      "title": "10.1 Cálculos em cenário fictício de benefício"
+    },
+    {
+      "title": "10.2 Número necessário para causar dano"
+    },
+    {
+      "title": "10.3 Quando o mesmo RR oferece benefícios diferentes"
+    },
+    {
+      "title": "11. Confusão, viés e modificação de efeito"
+    },
+    {
+      "title": "11.1 Três conceitos fundamentais"
+    },
+    {
+      "title": "11.2 Vieses que aparecem nas provas"
+    },
+    {
+      "title": "11.3 Modificação de efeito e paradoxo de Simpson"
+    },
+    {
+      "title": "12. Causalidade: associação não é efeito causal"
+    },
+    {
+      "title": "13. Erros aleatórios, amostragem e tamanho de amostra"
+    },
+    {
+      "title": "13.1 Parâmetro, estimativa e incerteza"
+    },
+    {
+      "title": "13.2 Erros alfa e beta"
+    },
+    {
+      "title": "14. Intervalo de confiança, valor de p e relevância clínica"
+    },
+    {
+      "title": "14.1 O que o valor de p significa — e o que não significa"
+    },
+    {
+      "title": "14.2 Interpretação correta do intervalo de confiança"
+    },
+    {
+      "title": "14.3 Multiplicidade e exploração de subgrupos"
+    },
+    {
+      "title": "14.4 Relevância clínica, estatística e decisória"
+    },
+    {
+      "title": "15. Medidas contínuas, distribuições e escolha do teste"
+    },
+    {
+      "title": "15.1 Variáveis e estatísticas descritivas"
+    },
+    {
+      "title": "15.2 Testes comuns: o que respondem"
+    },
+    {
+      "title": "15.3 Confusão entre correlação e concordância"
+    },
+    {
+      "title": "16. Testes diagnósticos: construindo a tabela sem decorar fórmulas"
+    },
+    {
+      "title": "16.1 Teste índice, padrão de referência e população adequada"
+    },
+    {
+      "title": "16.2 Tabela 2 × 2 diagnóstica"
+    },
+    {
+      "title": "16.3 Exemplo completo de acurácia"
+    },
+    {
+      "title": "16.4 Probabilidade pré-teste e decisão de investigar"
+    },
+    {
+      "title": "17. Razões de verossimilhança e teorema de Bayes"
+    },
+    {
+      "title": "17.1 Razões de verossimilhança (LR)"
+    },
+    {
+      "title": "17.2 Sensibilidade versus especificidade e o mnemônico clássico"
+    },
+    {
+      "title": "17.3 Testes seriados e paralelos"
+    },
+    {
+      "title": "18. Curva ROC, AUC, pontos de corte e calibragem"
+    },
+    {
+      "title": "19. Estudos prognósticos e modelos de predição"
+    },
+    {
+      "title": "19.1 Prognóstico não é efeito de tratamento"
+    },
+    {
+      "title": "19.2 Validação interna e externa"
+    },
+    {
+      "title": "20. Revisão sistemática: método antes de juntar estudos"
+    },
+    {
+      "title": "20.1 Não confundir revisão narrativa, sistemática e metanálise"
+    },
+    {
+      "title": "20.2 Seleção em duplicata e transparência"
+    },
+    {
+      "title": "20.3 Síntese narrativa estruturada também é ciência"
+    },
+    {
+      "title": "21. Metanálise: pesos, heterogeneidade e interpretação"
+    },
+    {
+      "title": "21.1 Efeito fixo e efeitos aleatórios"
+    },
+    {
+      "title": "21.2 Heterogeneidade clínica, metodológica e estatística"
+    },
+    {
+      "title": "21.3 Forest plot: lendo corretamente"
+    },
+    {
+      "title": "21.4 Viés de publicação e small-study effects"
+    },
+    {
+      "title": "22. Comparações indiretas e metanálise em rede"
+    },
+    {
+      "title": "23. Certeza da evidência e sistema GRADE"
+    },
+    {
+      "title": "23.1 O que é avaliado"
+    },
+    {
+      "title": "23.2 Certeza não determina sozinha a força da recomendação"
+    },
+    {
+      "title": "23.3 Exemplo de GRADE por desfecho"
+    },
+    {
+      "title": "24. Diretrizes clínicas, checklists e avaliação de risco de viés"
+    },
+    {
+      "title": "24.1 Ferramenta certa para a pergunta certa"
+    },
+    {
+      "title": "24.2 Risco de viés conforme RoB 2"
+    },
+    {
+      "title": "24.3 Aplicabilidade e validade externa"
+    },
+    {
+      "title": "25. Avaliação de tecnologias em saúde e decisão no SUS"
+    },
+    {
+      "title": "25.1 Evidência de eficácia não é incorporação"
+    },
+    {
+      "title": "25.2 Custo-efetividade e ICER"
+    },
+    {
+      "title": "25.3 QALY, DALY e impacto orçamentário"
+    },
+    {
+      "title": "25.4 Perspectiva da análise e desconto"
+    },
+    {
+      "title": "26. Ética, consentimento, transparência e integridade científica"
+    },
+    {
+      "title": "26.1 Respeito a participantes e processo de aprovação"
+    },
+    {
+      "title": "26.2 Prerregistro e protocolo"
+    },
+    {
+      "title": "26.3 Conflitos de interesse e patrocínio"
+    },
+    {
+      "title": "26.4 Retratações, IA e revisão por pares"
+    },
+    {
+      "title": "27. Aplicação de MBE em rastreamento e prevenção"
+    },
+    {
+      "title": "27.1 Diagnosticar mais cedo não equivale a salvar mais vidas"
+    },
+    {
+      "title": "27.2 Estudos de rastreamento e viés de seleção"
+    },
+    {
+      "title": "27.3 Decisão compartilhada e prevenção quaternária"
+    },
+    {
+      "title": "28. Síntese de decisão: algoritmo para ler qualquer artigo em dez perguntas"
+    },
+    {
+      "title": "Matriz “não confundir”"
+    },
+    {
+      "title": "29. Oito casos clínicos e metodológicos comentados"
+    },
+    {
+      "title": "Caso 1 — A medicação que “reduziu risco em 50%”"
+    },
+    {
+      "title": "Caso 2 — D-dímero positivo e probabilidade pré-teste baixa"
+    },
+    {
+      "title": "Caso 3 — Microcitose, teste e prevalência: o mesmo exame em populações diferentes"
+    },
+    {
+      "title": "Caso 4 — Estudo de coorte e “efeito protetor” criado pelo tempo imortal"
+    },
+    {
+      "title": "Caso 5 — Ensaio negativo não comprova equivalência"
+    },
+    {
+      "title": "Caso 6 — Um rastreamento que aumentou sobrevida sem reduzir mortalidade"
+    },
+    {
+      "title": "Caso 7 — A metanálise cujo resultado bonito esconde estudos diferentes"
+    },
+    {
+      "title": "Caso 8 — Incorporar ou não uma tecnologia ao SUS"
+    },
+    {
+      "title": "30. Doze questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Qual medida o caso-controle permite calcular diretamente?"
+    },
+    {
+      "title": "Questão 2 — RR e OR não são sinônimos"
+    },
+    {
+      "title": "Questão 3 — NNT com período explícito"
+    },
+    {
+      "title": "Questão 4 — Prevalência e teste diagnóstico"
+    },
+    {
+      "title": "Questão 5 — Bayes com razão de verossimilhança"
+    },
+    {
+      "title": "Questão 6 — Valor de p e equivalência"
+    },
+    {
+      "title": "Questão 7 — Confusão por indicação e viés de tempo"
+    },
+    {
+      "title": "Questão 8 — PRISMA, CONSORT e RoB 2"
+    },
+    {
+      "title": "Questão 9 — Interpretação do IC"
+    },
+    {
+      "title": "Questão 10 — GRADE em desfechos"
+    },
+    {
+      "title": "Questão 11 — Rastreamento e lead-time"
+    },
+    {
+      "title": "Questão 12 — Avaliação econômica"
+    },
+    {
+      "title": "31. Bibliografia metodológica e aplicação brasileira"
+    },
+    {
+      "title": "32. Controle editorial do texto e próximos gates"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "https://training.cochrane.org/handbook/current",
+    "https://www.bmj.com/content/389/bmj-2024-081123",
+    "https://www.equator-network.org/reporting-guidelines/prisma/",
+    "https://www.equator-network.org/reporting-guidelines/strobe/",
+    "https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials",
+    "https://www.crd.york.ac.uk/PROSPERO/",
+    "https://www.gradeworkinggroup.org/",
+    "https://pubmed.ncbi.nlm.nih.gov/",
+    "https://bvsalud.org/",
+    "https://www.equator-network.org/",
+    "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Uma decisão bem formulada percorre cinco operações: **formular pergunta clínica**, **buscar evidência**, **avaliar validade e relevância**, **aplicar em parceria com o paciente** e **avaliar o resultado**. Isso não se limita à terapêutica. Perguntas de diagnóstico, prognóstico, prevenção, rastreamento, etiologia e organização de serviços requerem desenhos de pesquisa e medidas próprias. É uma fonte central de questões de residência e da prática diária, porque artigos frequentemente trazem números corretos acompanhados de interpretações erradas."
+    },
+    {
+      "text": "Para diagnóstico, separar **população e cenário, teste índice, padrão de referência e doença-alvo**. A pergunta “Um teste rápido identifica embolia pulmonar em pessoas de baixo risco?” só fica inteligível quando se esclarece o padrão de referência, o limiar do exame e o contexto clínico. Para prognóstico, descrever momento zero, população de início, fator prognóstico, evento e horizonte temporal. Para rastreamento, perguntar se uma **estratégia** reduz desfechos relevantes, não apenas se um teste detecta lesões."
+    },
+    {
+      "text": "**Prospectivo** e **retrospectivo** descrevem em geral a relação entre o momento do planejamento/coleta e a ocorrência dos fatos, não determinam sozinhos o desenho. Uma **coorte histórica** pode ser retrospectiva quanto à coleta de registros: identifica participantes por exposição anterior e compara ocorrência subsequente do desfecho nos registros. Um **caso-controle aninhado em coorte prospectiva** pode usar amostras coletadas antes do diagnóstico. Portanto, a regra “coorte sempre prospectiva; caso-controle sempre retrospectivo” é didaticamente insuficiente."
+    },
+    {
+      "text": "- **Seleção:** casos e controles vêm de populações diferentes; participantes mais saudáveis têm maior chance de aderir/ser incluídos; voluntários podem não representar o universo. - **Informação:** medida de exposição ou desfecho difere entre grupos; entrevistador conhece diagnóstico e pergunta de modo diferente; teste é interpretado sabendo do padrão. - **Recordação:** pessoas com doença lembram e relatam exposição passada de maneira distinta. - **Verificação:** somente testes índices positivos recebem padrão-ouro, exagerando medidas de acurácia. - **Tempo imortal:** sobrevivência necessária até exposição é indevidamente creditada à interven"
+    },
+    {
+      "text": "Subgrupos escolhidos depois dos resultados merecem cautela, especialmente quando o estudo relata “houve benefício somente em mulheres” sem teste formal de interação e sem plausibilidade. Comparar p=0,03 num grupo com p=0,08 em outro não demonstra diferença entre grupos. O método correto testa interação e avalia incerteza. Em muitas situações, análises exploratórias geram hipóteses para investigação posterior, não recomendações clínicas definitivas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

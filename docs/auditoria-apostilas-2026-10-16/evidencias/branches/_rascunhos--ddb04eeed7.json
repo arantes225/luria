@@ -1,0 +1,400 @@
+{
+  "sha": "ddb04eeed74d58aa30466c8676bc785911e124e7",
+  "path": "apostilas/_rascunhos/lote-04-aula-065-vigilancia-sanitaria.md",
+  "branches": [
+    "origin/editorial/lote-04-aula65-vigilancia-sanitaria-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ddb04eeed7",
+  "title": "LURIA • Lote 04 • Aula 065 — Vigilância Sanitária",
+  "format": ".md",
+  "chars_estimated": 75226,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA • Lote 04 • Aula 065 — Vigilância Sanitária"
+    },
+    {
+      "title": "Manuscrito editorial original | Medicina Preventiva e Saúde Coletiva"
+    },
+    {
+      "title": "0. Auditoria editorial, benchmark e plano de lacunas"
+    },
+    {
+      "title": "0.1 Conferência do acervo LURIA"
+    },
+    {
+      "title": "0.2 Etapa zero de benchmarking no Drive"
+    },
+    {
+      "title": "0.3 Fronteira com outras apostilas"
+    },
+    {
+      "title": "1. Introdução: por que a vigilância sanitária importa para o médico"
+    },
+    {
+      "title": "1.1 Exemplo clínico de abertura"
+    },
+    {
+      "title": "1.2 Objetivos de aprendizado"
+    },
+    {
+      "title": "2. Arquitetura normativa e competências"
+    },
+    {
+      "title": "2.1 Constituição e SUS"
+    },
+    {
+      "title": "2.2 Lei nº 9.782/1999: Anvisa e SNVS"
+    },
+    {
+      "title": "2.3 Lei nº 6.437/1977"
+    },
+    {
+      "title": "2.4 Regulamentos técnicos e atualização normativa"
+    },
+    {
+      "title": "3. O risco sanitário como princípio organizador"
+    },
+    {
+      "title": "3.1 Perigo, risco, dano e vulnerabilidade"
+    },
+    {
+      "title": "3.2 Risco individual, coletivo e sistêmico"
+    },
+    {
+      "title": "3.3 Etapas de gerenciamento de risco"
+    },
+    {
+      "title": "4. Instrumentos da vigilância sanitária"
+    },
+    {
+      "title": "4.1 Regulação e normalização"
+    },
+    {
+      "title": "4.2 Licenciamento e autorização"
+    },
+    {
+      "title": "4.3 Inspeção"
+    },
+    {
+      "title": "4.4 Fiscalização, medidas cautelares e sanções"
+    },
+    {
+      "title": "4.5 Comunicação de riscos"
+    },
+    {
+      "title": "5. Produtos sob vigilância sanitária"
+    },
+    {
+      "title": "5.1 Medicamentos e vacinas"
+    },
+    {
+      "title": "5.2 Produtos para saúde e dispositivos médicos"
+    },
+    {
+      "title": "5.3 Alimentos"
+    },
+    {
+      "title": "5.4 Cosméticos, saneantes e outros produtos"
+    },
+    {
+      "title": "6. Vigilância sanitária em serviços de saúde"
+    },
+    {
+      "title": "6.1 Estrutura, processos e resultados"
+    },
+    {
+      "title": "6.2 Segurança do paciente e eventos adversos"
+    },
+    {
+      "title": "6.3 Prevenção e controle de infecções"
+    },
+    {
+      "title": "6.4 Resíduos de serviços de saúde"
+    },
+    {
+      "title": "6.5 Esterilização, limpeza e cadeia de processamento"
+    },
+    {
+      "title": "7. Como investigar um problema sanitário na prática"
+    },
+    {
+      "title": "7.1 Algoritmo geral do médico diante de suspeita de risco sanitário"
+    },
+    {
+      "title": "7.2 Três armadilhas recorrentes"
+    },
+    {
+      "title": "8. Quadro integrado de comparação"
+    },
+    {
+      "title": "9. Casos clínico-sanitários comentados"
+    },
+    {
+      "title": "Caso 1 — Solução injetável com partículas"
+    },
+    {
+      "title": "Caso 2 — Gastroenterite em participantes de um evento"
+    },
+    {
+      "title": "Caso 3 — Falha no processamento de instrumentos"
+    },
+    {
+      "title": "Caso 4 — Descarte inseguro em unidade de atenção primária"
+    },
+    {
+      "title": "10. Questões autorais comentadas — primeira bateria"
+    },
+    {
+      "title": "Questão 1 — Definição legal"
+    },
+    {
+      "title": "Questão 2 — Competências institucionais"
+    },
+    {
+      "title": "Questão 3 — Defeito sem dano"
+    },
+    {
+      "title": "Questão 4 — Processo administrativo"
+    },
+    {
+      "title": "Questão 5 — Resíduos em saúde"
+    },
+    {
+      "title": "Questão 6 — Integração das vigilâncias"
+    },
+    {
+      "title": "11. Revisão de alto rendimento"
+    },
+    {
+      "title": "12. Recursos visuais a desenvolver no fluxo Admin (nenhum incorporado)"
+    },
+    {
+      "title": "13. Referências oficiais efetivamente verificadas em 15/10/2026"
+    },
+    {
+      "title": "14. Auditoria parcial de saída e próximos blocos"
+    },
+    {
+      "title": "15. Sistemas e fluxos de notificação: escolher o canal correto"
+    },
+    {
+      "title": "15.1 Farmacovigilância: efeito suspeito durante o uso de medicamento"
+    },
+    {
+      "title": "15.2 Queixa técnica: irregularidade do produto"
+    },
+    {
+      "title": "15.3 Tecnovigilância: dispositivos e produtos para saúde"
+    },
+    {
+      "title": "15.4 Incidentes relacionados à assistência à saúde"
+    },
+    {
+      "title": "15.5 Notificação compulsória epidemiológica não equivale a notificações sanitárias"
+    },
+    {
+      "title": "16. Segurança do paciente: da identificação do risco à melhoria do sistema"
+    },
+    {
+      "title": "16.1 Definições relevantes"
+    },
+    {
+      "title": "16.2 Barreiras de prevenção"
+    },
+    {
+      "title": "16.3 Plano integrado 2026–2030"
+    },
+    {
+      "title": "16.4 Gestão de incidentes sem exposição de dados pessoais"
+    },
+    {
+      "title": "17. Processamento de produtos para saúde: passo a passo"
+    },
+    {
+      "title": "17.1 O que é processar?"
+    },
+    {
+      "title": "17.2 Classificação do artigo: crítico, semicrítico e não crítico"
+    },
+    {
+      "title": "17.3 Fluxo físico e prevenção de contaminação cruzada"
+    },
+    {
+      "title": "17.4 Validação, monitoramento e rastreabilidade"
+    },
+    {
+      "title": "17.5 Reprocessamento e risco jurídico-assistencial"
+    },
+    {
+      "title": "18. Alimentos e proteção contra doenças transmitidas por alimentos"
+    },
+    {
+      "title": "18.1 Falhas frequentes de segurança de alimentos"
+    },
+    {
+      "title": "18.2 Raciocínio temporal nos surtos"
+    },
+    {
+      "title": "18.3 Medidas no ponto de produção"
+    },
+    {
+      "title": "18.4 Exercício integrador"
+    },
+    {
+      "title": "19. Produtos para saúde e tecnologias: segurança após a comercialização"
+    },
+    {
+      "title": "19.1 Por que a autorização prévia não encerra a vigilância?"
+    },
+    {
+      "title": "19.2 Rastreabilidade e cadeia de distribuição"
+    },
+    {
+      "title": "19.3 Recolhimento e suspensão de uso"
+    },
+    {
+      "title": "19.4 Monitorização e inteligência de dados"
+    },
+    {
+      "title": "20. Inspeção sanitária e processo administrativo: estudo prático"
+    },
+    {
+      "title": "20.1 Preparação da inspeção"
+    },
+    {
+      "title": "20.2 Identificação de não conformidade"
+    },
+    {
+      "title": "20.3 Cautela e intervenção"
+    },
+    {
+      "title": "20.4 Processo sancionatório"
+    },
+    {
+      "title": "20.5 Pós-inspeção e verificação"
+    },
+    {
+      "title": "21. Indicadores, auditoria e melhoria contínua"
+    },
+    {
+      "title": "21.1 Estrutura, processo e resultado revisados"
+    },
+    {
+      "title": "21.2 Denominadores e comparações"
+    },
+    {
+      "title": "21.3 Ciclo de melhoria"
+    },
+    {
+      "title": "22. Novos casos de integração avançada"
+    },
+    {
+      "title": "Caso 5 — Incidente que chegou ao paciente sem dano"
+    },
+    {
+      "title": "Caso 6 — Consultório e Núcleo de Segurança do Paciente"
+    },
+    {
+      "title": "Caso 7 — Endoscópio processado inadequadamente"
+    },
+    {
+      "title": "Caso 8 — Alerta de recolhimento de implante"
+    },
+    {
+      "title": "23. Questões autorais avançadas — segunda bateria"
+    },
+    {
+      "title": "Questão 7 — Farmacovigilância ou queixa técnica?"
+    },
+    {
+      "title": "Questão 8 — Escopo do NSP"
+    },
+    {
+      "title": "Questão 9 — Produtos críticos e não críticos"
+    },
+    {
+      "title": "Questão 10 — Interpretação de indicador"
+    },
+    {
+      "title": "Questão 11 — Processamento de endoscópios"
+    },
+    {
+      "title": "Questão 12 — Risco e processo"
+    },
+    {
+      "title": "24. Checklist de execução e integração editorial"
+    },
+    {
+      "title": "Referências oficiais complementares verificadas em 15/10/2026"
+    }
+  ],
+  "reference_entries": [
+    "1. BRASIL. Lei nº 8.080, de 19 de setembro de 1990, texto compilado, art. 6º, § 1º. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "2. BRASIL. Lei nº 9.782, de 26 de janeiro de 1999, texto compilado. https://www.planalto.gov.br/ccivil_03/leis/l9782compilado.htm",
+    "3. BRASIL. Lei nº 6.437, de 20 de agosto de 1977, texto compilado. https://www.planalto.gov.br/ccivil_03/leis/l6437compilado.htm",
+    "4. ANVISA. Sistema Nacional de Vigilância Sanitária, página institucional publicada em 30/09/2026. https://www.gov.br/anvisa/pt-br/assuntos/snvs/sistema-nacional-de-vigilancia-sanitaria-1",
+    "5. ANVISA. Fiscalização, página institucional atualizada em 02/10/2026. https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao",
+    "6. ANVISA. Serviços de saúde: vigilância e controle de riscos. https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores/2017-2020/temas/servicosdesaude",
+    "7. MINISTÉRIO DA SAÚDE / ANVISA. RDC nº 63, de 25 de novembro de 2011, Boas Práticas para Funcionamento de Serviços de Saúde. https://bvs.saude.gov.br/bvs/saudelegis/anvisa/2011/rdc0063_25_11_2011.html",
+    "8. ANVISA. Gerenciamento de resíduos de serviços de saúde e RDC nº 222/2018. https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2018/confira-nova-regra-sobre-residuos-de-servicos-de-saude",
+    "9. ANVISA. Plano Integrado para Gestão Sanitária da Segurança do Paciente em Serviços de Saúde 2026–2030, aprovado pela Portaria nº 80/2026. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/plano-integrado",
+    "**Já presente neste manuscrito:** definição, mapa institucional, bases legais, diferenciação das vigilâncias, instrumentos de regulação e fiscalização, gerenciamento de risco, produtos, serviços, segurança do paciente, RSS, algoritmo assistencial-sanitário, quatro casos com raciocínio, seis questões comentadas, quadro comparativo e fontes oficiais.",
+    "**Ainda obrigatório antes da certificação premium:** aprofundar capítulos de controle de alimentos, dispositivos e medicamentos; tornar autossuficiente o processo administrativo em cada fase; acrescentar jurisprudência/regulação apenas quando necessária e conferida; detalhar os fluxos de notificações sanitárias atuais sem confundir portais; checar normas específicas vigentes; ampliar exemplos, matrizes e exercícios de alta dificuldade; atingir 60.000 caracteres DIDÁTICOS úteis sem enchimento; fazer teste de autossuficiência questão-a-questão; realizar revisão médica e jurídica independente; re",
+    "**Bloqueio de certificação:** material do Drive consultado era correlato, não equivalente; ainda falta benchmark de apostila realmente específica de vigilância sanitária. **Não afirmar etapa zero integralmente cumprida.** Nenhuma imagem de terceiro foi reutilizada. Nenhum deploy, merge ou publicação foi executado.",
+    "- **Temporalidade:** a reação teve início depois da exposição em intervalo biologicamente plausível?",
+    "- **Especificidade e alternativas:** existe doença de base, infecção, outro fármaco ou condição que explique a manifestação?",
+    "- **Descontinuação e reexposição:** houve melhora após suspensão? Reexposição pode ser eticamente inadequada e não é exigível para «provar» um evento.",
+    "- **Plausibilidade farmacológica:** há mecanismo conhecido ou sinal emergente?",
+    "- **Gravidade:** necessidade de hospitalização, ameaça à vida, incapacidade ou morte aumenta prioridade de avaliação, sem que um único critério transforme a suspeita em certeza causal.",
+    "**Pergunta de prova:** a notícia «o frasco vazou antes do uso» representa evento adverso medicamentoso? Em regra, não. Trata-se, sobretudo, de suspeita de desvio de qualidade/queixa técnica, cuja análise pode mostrar risco clínico potencial. Se o vazamento acarretou subdose e dano em paciente, também haverá dimensão assistencial que deve ser tratada e notificada pelos meios pertinentes.",
+    "**Atenção ao escopo:** a Anvisa esclarece que consultórios individualizados, laboratórios clínicos, serviços móveis e atenção domiciliar estão excluídos do escopo da RDC nº 36/2013 para estruturação obrigatória do NSP; isso não afasta outras exigências de boas práticas e segurança aplicáveis. Da mesma forma, nem toda instituição chamada «de saúde» em linguagem informal possui exatamente os mesmos deveres administrativos: consultar norma específica.",
+    "**Incidente de segurança** é evento ou circunstância que poderia resultar ou resultou em dano desnecessário associado ao cuidado. **Quase erro** (near miss) é um incidente interceptado antes de alcançar o paciente. **Incidente sem dano** alcança o paciente, mas não gera dano discernível. **Evento adverso** é incidente que resulta em dano. Essas categorias permitem desenhar mecanismos de aprendizado que não dependam exclusivamente de mortes ou lesões graves.",
+    "**Exemplo de anticoagulante:** a prescrição correta é uma barreira; revisão de função renal e peso é outra; identificação do medicamento e dose pela equipe também; acompanhamento clínico e laboratorial completa o ciclo. Se um erro ocorrer, mapear em que ponto cada barreira falhou, quais pressões do sistema contribuíram e se houve opção segura acessível aos profissionais.",
+    "- **Crítico:** entra em tecido estéril ou sistema vascular e, sendo produto processável, demanda esterilização após limpeza e demais etapas.",
+    "- **Semicrítico:** contato com mucosas ou pele não íntegra; demanda no mínimo nível de desinfecção conforme classe e regra específica.",
+    "- **Não crítico:** contato com pele íntegra; a limpeza é exigência mínima, podendo haver medidas adicionais conforme risco e utilização.",
+    "- Controle insuficiente de temperatura de ingredientes e preparações.",
+    "- Contaminação cruzada entre alimento cru e alimento pronto.",
+    "- Higienização deficiente de equipamentos, superfícies e mãos.",
+    "- Água fora de condições de potabilidade.",
+    "- Manipulação por pessoas sem condições adequadas para a atividade, conforme recomendações e regras.",
+    "- Rastreabilidade precária de fornecedores e lotes."
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l9782compilado.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l6437compilado.htm",
+    "https://www.gov.br/anvisa/pt-br/assuntos/snvs/sistema-nacional-de-vigilancia-sanitaria-1",
+    "https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao",
+    "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores/2017-2020/temas/servicosdesaude",
+    "https://bvs.saude.gov.br/bvs/saudelegis/anvisa/2011/rdc0063_25_11_2011.html",
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2018/confira-nova-regra-sobre-residuos-de-servicos-de-saude",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/plano-integrado",
+    "https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/notificacoes/vigimed/medicamentos-e-vacinas",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/notificacoes/notificacao-de-incidentes-eventos-adversos-nao-infecciosos-relacionados-a-assistencia-a-saude/servicos-de-saude",
+    "https://www.gov.br/anvisa/pt-br/acessoainformacao/perguntasfrequentes/servicos-de-saude/nucleos-de-seguranca-do-paciente",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/seguranca-do-paciente",
+    "https://bvs.saude.gov.br/bvs/saudelegis/anvisa/2012/rdc0015_15_03_2012.html",
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/alimentos/manuais-guias-e-orientacoes/cartilha-boas-praticas-para-servicos-de-alimentacao.pdf",
+    "https://www.gov.br/anvisa/pt-br/acessoainformacao/dadosabertos/informacoes-analiticas/tecnovigilancia"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A decisão de reintervenção depende do balanço entre risco do dispositivo e risco da intervenção. A equipe assistencial deve utilizar orientações técnicas verificadas, comunicação responsável e decisão individualizada. Medidas administrativas e recomendações clínicas são conexas, mas não equivalentes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

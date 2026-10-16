@@ -1,0 +1,360 @@
+{
+  "sha": "4a6bd19ec3e5b9f4a74fda79e759cf23f8b7a837",
+  "path": "apostilas/_rascunhos/lote-05-105-desenhos-estudos-epidemiologicos.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--4a6bd19ec3",
+  "title": "LURIA — Apostila 105: Desenhos de estudos epidemiológicos",
+  "format": ".md",
+  "chars_estimated": 67810,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 105: Desenhos de estudos epidemiológicos"
+    },
+    {
+      "title": "0. Etapa zero: inventário e referência de comparação"
+    },
+    {
+      "title": "1. Uma pergunta clínica pode exigir desenhos de pesquisa diferentes"
+    },
+    {
+      "title": "2. Eixos de classificação: não confundir perguntas diferentes"
+    },
+    {
+      "title": "2.1. Observacional versus experimental"
+    },
+    {
+      "title": "2.2. Descritivo versus analítico"
+    },
+    {
+      "title": "2.3. Unidade individual versus agregada"
+    },
+    {
+      "title": "2.4. Momento dos registros versus tempo epidemiológico"
+    },
+    {
+      "title": "3. Estudos de relato de caso e série de casos"
+    },
+    {
+      "title": "4. Estudos ecológicos: unidade de análise e falácia ecológica"
+    },
+    {
+      "title": "4.1. Exemplo simples — bairros e hipertensão"
+    },
+    {
+      "title": "4.2. Ecológico transversal, temporal e espaço-temporal"
+    },
+    {
+      "title": "4.3. Confusões que caem em prova"
+    },
+    {
+      "title": "5. Estudos transversais: o retrato e a armadilha temporal"
+    },
+    {
+      "title": "5.1. Transversal descritivo e analítico"
+    },
+    {
+      "title": "5.2. Prevalência depende de ocorrência e duração"
+    },
+    {
+      "title": "5.3. População e representatividade"
+    },
+    {
+      "title": "5.4. Transversal repetido não é uma coorte individual"
+    },
+    {
+      "title": "6. Estudos de coorte: acompanhar ocorrência segundo exposição"
+    },
+    {
+      "title": "6.1. Por que a coorte pode estimar incidência?"
+    },
+    {
+      "title": "6.2. Pessoa-tempo e taxa de incidência"
+    },
+    {
+      "title": "6.3. Coorte prospectiva versus retrospectiva: o calendário não muda o desenho"
+    },
+    {
+      "title": "6.4. Censura, perdas e o denominador correto"
+    },
+    {
+      "title": "6.5. Riscos concorrentes e desfechos repetidos"
+    },
+    {
+      "title": "6.6. Vantagens e limitações"
+    },
+    {
+      "title": "7. Caso-controle: começar pelos casos e perguntar pela exposição"
+    },
+    {
+      "title": "7.1. A escolha dos controles é mais importante que a conveniência"
+    },
+    {
+      "title": "7.2. Exemplo 2×2 e odds ratio"
+    },
+    {
+      "title": "7.3. Por que não se calcula incidência pelos 200 casos e 200 controles?"
+    },
+    {
+      "title": "7.4. A aproximação de OR e RR — e suas exceções importantes"
+    },
+    {
+      "title": "7.5. Casos incidentes versus prevalentes"
+    },
+    {
+      "title": "7.6. Pareamento e análise"
+    },
+    {
+      "title": "7.7. Quando o caso-controle não é a melhor escolha"
+    },
+    {
+      "title": "8. Coorte, caso-controle, transversal e ecológico: comparação por decisão"
+    },
+    {
+      "title": "9. Seleção do desenho pela pergunta — cinco fluxos originais"
+    },
+    {
+      "title": "10. Situações de campo e aplicações no SUS"
+    },
+    {
+      "title": "10.1. Investigação de surto em evento fechado"
+    },
+    {
+      "title": "10.2. Doença rara em hospital de referência"
+    },
+    {
+      "title": "10.3. Planejamento territorial da APS"
+    },
+    {
+      "title": "10.4. Monitoramento de mortalidade por município"
+    },
+    {
+      "title": "10.5. Avaliação de serviço por registros históricos"
+    },
+    {
+      "title": "11. Casos clínico-epidemiológicos comentados"
+    },
+    {
+      "title": "Caso 1 — O surto da festa"
+    },
+    {
+      "title": "Caso 2 — Estudo rápido de doença rara"
+    },
+    {
+      "title": "Caso 3 — Prevalência que virou “risco” no relatório"
+    },
+    {
+      "title": "Caso 4 — O mapa que culpou uma pessoa"
+    },
+    {
+      "title": "Caso 5 — Coorte de prontuário, não caso-controle"
+    },
+    {
+      "title": "Caso 6 — Taxa versus risco em tempo desigual"
+    },
+    {
+      "title": "12. Questões autorais de residência — cinco alternativas integralmente comentadas"
+    },
+    {
+      "title": "Questão 1 — Qual é a unidade?"
+    },
+    {
+      "title": "Questão 2 — Reconstrução histórica"
+    },
+    {
+      "title": "Questão 3 — Medida de associação do caso-controle"
+    },
+    {
+      "title": "Questão 4 — Prevalência ou incidência?"
+    },
+    {
+      "title": "Questão 5 — Pessoa-tempo"
+    },
+    {
+      "title": "Questão 6 — Surto em grupo identificado"
+    },
+    {
+      "title": "Questão 7 — Falácia ecológica"
+    },
+    {
+      "title": "Questão 8 — Interpretar RP"
+    },
+    {
+      "title": "13. Segurança na leitura crítica: antes de confiar na estimativa"
+    },
+    {
+      "title": "14. Pulo do Gato — cinco frases que organizam o tema"
+    },
+    {
+      "title": "15. Recursos didáticos e imagem — plano de curadoria, sem arte licenciada"
+    },
+    {
+      "title": "16. Amostragem, generalização e estimativas: por que o denominador começa antes da análise"
+    },
+    {
+      "title": "16.1. População-alvo, população acessível e quadro amostral"
+    },
+    {
+      "title": "16.2. Amostragem probabilística e não probabilística"
+    },
+    {
+      "title": "16.3. Estratificação e conglomerados: dois mecanismos diferentes"
+    },
+    {
+      "title": "16.4. Por que pesos não são “opcionais” em amostras desiguais?"
+    },
+    {
+      "title": "16.5. Viés de não resposta versus erro aleatório"
+    },
+    {
+      "title": "17. Dados rotineiros de saúde no Brasil: pesquisa com prontuários e sistemas de informação"
+    },
+    {
+      "title": "17.1. SINAN, SINASC e SIM respondem perguntas distintas"
+    },
+    {
+      "title": "17.2. O mesmo banco serve a desenhos diferentes"
+    },
+    {
+      "title": "17.3. Aferição e completude — o dicionário de dados faz parte do método"
+    },
+    {
+      "title": "17.4. Vínculo de bases: riqueza e risco de interpretação"
+    },
+    {
+      "title": "17.5. RECORD 2015 e transparência da pesquisa baseada em dados existentes"
+    },
+    {
+      "title": "18. Desenhos aninhados, exposição variável e o começo do tempo em risco"
+    },
+    {
+      "title": "18.1. Caso-controle aninhado em coorte"
+    },
+    {
+      "title": "18.2. Caso-coorte: amostra de referência escolhida no início"
+    },
+    {
+      "title": "18.3. Exposição que aparece após o início não pode ser tratada como se já existisse"
+    },
+    {
+      "title": "18.4. Prevalentes versus novos usuários em coorte farmacológica"
+    },
+    {
+      "title": "18.5. Estimandos diferentes geram respostas diferentes"
+    },
+    {
+      "title": "19. Casos integradores avançados: como o desenho altera o significado clínico"
+    },
+    {
+      "title": "Caso 7 — Inquérito sem peso que errou a prevalência municipal"
+    },
+    {
+      "title": "Caso 8 — SINAN não é sinônimo de todos os doentes"
+    },
+    {
+      "title": "Caso 9 — Controle que virou caso meses depois"
+    },
+    {
+      "title": "Caso 10 — O medicamento que parecia protetor por começar tarde"
+    },
+    {
+      "title": "20. Questões avançadas comentadas: situações de prova e prática"
+    },
+    {
+      "title": "Questão 9 — Ponderação de prevalência"
+    },
+    {
+      "title": "Questão 10 — Subcoorte e tempo em risco"
+    },
+    {
+      "title": "Questão 11 — Uso de registros no SUS"
+    },
+    {
+      "title": "Questão 12 — Tempo imortal"
+    },
+    {
+      "title": "21. Referências e rastreabilidade"
+    },
+    {
+      "title": "22. Auditoria editorial e científica — não liberar antes de concluir"
+    }
+  ],
+  "reference_entries": [
+    "1. CDC. **Principles of Epidemiology in Public Health Practice, Third Edition**, Lesson 1, Section 7, *Analytic Epidemiology*. https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html",
+    "2. CDC. **Field Epidemiology Manual**, *Designing and Conducting Analytic Studies in the Field*. https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+    "3. CDC. **Field Epidemiology Manual**, *Analyzing and Interpreting Data*. https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html",
+    "4. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP. **STROBE statement**. *PLoS Med*. 2007;4(10):e296. https://www.equator-network.org/reporting-guidelines/strobe/",
+    "5. Cochrane Handbook for Systematic Reviews of Interventions. **Chapter 25: Assessing risk of bias in a non-randomized study** (atualização do capítulo em 2019; disponível no Handbook v6.5). https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25",
+    "6. **Do Case-Control Studies Always Estimate Odds Ratios?** *Am J Epidemiol*. 2020. https://pubmed.ncbi.nlm.nih.gov/32889542/",
+    "7. Benchimol EI et al. **The RECORD Statement**. *PLoS Med*. 2015;12:e1001885. https://doi.org/10.1371/journal.pmed.1001885",
+    "8. Ministério da Saúde. **SINAN — Sistema de Informação de Agravos de Notificação**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinan/sinan",
+    "9. Ministério da Saúde. **SINASC — Sistema de Informações sobre Nascidos Vivos**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinasc/sistema-de-informacoes-sobre-nascidos-vivos",
+    "10. Ministério da Saúde. **SIM — Sistema de Informações sobre Mortalidade**. https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim",
+    "11. IBGE. **Pesquisa Nacional de Saúde 2019: documentação e procedimento de amostragem**. https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-%20nacional-de-saude.html",
+    "**Benchmark privado:** “Estudos Epidemiológicos.pdf”, encontrado no Google Drive. Autoria institucional não verificada; conteúdo original não reproduzido. Exemplos numéricos e enunciados são criados para esta apostila, e todas as frequências são hipotéticas.",
+    "**Cobertura presente:** conceitos; desenhos descritivos/analíticos; relatos/séries; ecológico; transversal; coorte (incluindo retrospectiva e pessoa-tempo); caso-controle (incluindo exceções de amostragem); análise de surtos; seis casos clínico-epidemiológicos; oito questões comentadas integralmente; fluxos; referências verificáveis.",
+    "**Pendências obrigatórias:** validação independente dos exemplos e das distinções de medidas de associação; extensão didática para robustez premium sem enchimento; detalhamento de amostragem, viés em pesquisa secundária, desenho aninhado e aspectos éticos; seis casos adicionais se justificável; referências brasileiras de metodologia e aplicações ao SUS; figuras autorais e licenças; renderer, acessibilidade, responsividade, PWA; revisão por epidemiologista; verificação documental final.",
+    "**Status: RASCUNHO ORIGINAL EM REVISÃO. Não realizar merge, deploy nem publicação com base apenas nesta extensão textual.**"
+  ],
+  "external_urls": [
+    "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html",
+    "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+    "https://www.equator-network.org/reporting-guidelines/strobe/",
+    "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25",
+    "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-%20nacional-de-saude.html.",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinan/sinan.",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinasc/sistema-de-informacoes-sobre-nascidos-vivos.",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim.",
+    "https://doi.org/10.1371/journal.pmed.1001885.",
+    "https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html",
+    "https://pubmed.ncbi.nlm.nih.gov/32889542/",
+    "https://doi.org/10.1371/journal.pmed.1001885",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinan/sinan",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sinasc/sistema-de-informacoes-sobre-nascidos-vivos",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim",
+    "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-%20nacional-de-saude.html"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Relato de caso descreve um acontecimento individual relevante: apresentação incomum, reação adversa suspeita, percurso diagnóstico difícil ou resposta inesperada. Uma série de casos reúne ocorrências que compartilham característica clínica. O interesse principal é **gerar hipóteses**, ensinar sinais de alerta e documentar fenômenos raros."
+    },
+    {
+      "text": "Uma equipe relaciona a porcentagem de domicílios com renda baixa em cada bairro com a prevalência agregada de hipertensão. Os bairros com maior privação apresentam maior prevalência. A hipótese de desigualdade em saúde é plausível, mas os dados **não mostram quais pessoas dentro de cada bairro têm baixa renda e hipertensão simultaneamente**. Idade, acesso ao diagnóstico, migração, composição populacional e subnotificação podem explicar parte do padrão."
+    },
+    {
+      "text": "Casos devem representar uma **população-fonte** definida. Controles, por sua vez, devem refletir a distribuição de exposição que existiria nessa população-fonte caso os indivíduos não tivessem se tornado casos. Não basta escolher qualquer pessoa “sem diagnóstico”. Um controle selecionado por estar internado com condição associada à mesma exposição pode distorcer a comparação."
+    },
+    {
+      "text": "Casos **incidentes** são novos diagnósticos no período definido e ajudam a reduzir seleção associada à duração/sobrevida. Casos **prevalentes** podem super-representar indivíduos que sobrevivem ou permanecem sintomáticos por mais tempo. Se exposição afeta tanto surgimento quanto sobrevivência com a condição, estudar apenas sobreviventes pode distorcer associação."
+    },
+    {
+      "text": "Em 2026, pesquisadores identificam todos os trabalhadores de uma fábrica em 2015, classificam exposição ocorrida naquela data e avaliam diagnósticos registrados até 2025. O desenho principal é:"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

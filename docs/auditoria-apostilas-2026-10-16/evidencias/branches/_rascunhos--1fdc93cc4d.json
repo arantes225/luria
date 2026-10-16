@@ -1,0 +1,234 @@
+{
+  "sha": "1fdc93cc4d9d9685926a7f8a052817ab1cfba231",
+  "path": "apostilas/_rascunhos/lote-07-aula-123-febre-sem-sinais-localizatorios.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015",
+    "origin/editorial/lote04-aula64-placenta-dpp-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1fdc93cc4d",
+  "title": "LURIA | Lote 7 — Aula 123",
+  "format": ".md",
+  "chars_estimated": 31856,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 7 — Aula 123"
+    },
+    {
+      "title": "Febre sem sinais localizatórios na infância"
+    },
+    {
+      "title": "Etapa zero — comparação efetivamente realizada"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Primeiro princípio: febre é resposta, não diagnóstico"
+    },
+    {
+      "title": "2. Fisiologia do risco — por que a idade é tão importante?"
+    },
+    {
+      "title": "2.1. Resposta imune do lactente pequeno"
+    },
+    {
+      "title": "2.2. Infecções escondidas"
+    },
+    {
+      "title": "2.3. Papel das vacinas"
+    },
+    {
+      "title": "3. O que realmente significa “boa aparência”?"
+    },
+    {
+      "title": "4. Faixas etárias: o eixo do algoritmo"
+    },
+    {
+      "title": "5. Anamnese de alto rendimento"
+    },
+    {
+      "title": "6. Exame físico sistemático: buscar foco antes de solicitar exames"
+    },
+    {
+      "title": "7. Investigação laboratorial e microbiológica"
+    },
+    {
+      "title": "7.1. Urina: o foco bacteriano oculto mais importante"
+    },
+    {
+      "title": "7.2. Hemocultura e marcadores"
+    },
+    {
+      "title": "7.3. Punção lombar (LCR)"
+    },
+    {
+      "title": "7.4. Imagem"
+    },
+    {
+      "title": "7.5. Testes virais"
+    },
+    {
+      "title": "8. Tratamento e destino conforme risco"
+    },
+    {
+      "title": "8.1. Criança com aparência ruim ou sinais de perigo"
+    },
+    {
+      "title": "8.2. Bem-aparentado de 8–21 dias"
+    },
+    {
+      "title": "8.3. Bem-aparentado de 22–28 dias"
+    },
+    {
+      "title": "8.4. Bem-aparentado de 29–60 dias"
+    },
+    {
+      "title": "8.5. Criança maior estável"
+    },
+    {
+      "title": "9. Situações que exigem cuidado especial"
+    },
+    {
+      "title": "Febre após vacina"
+    },
+    {
+      "title": "Dengue e outras arboviroses"
+    },
+    {
+      "title": "Febre prolongada"
+    },
+    {
+      "title": "Criança com doença crônica ou imunodeficiência"
+    },
+    {
+      "title": "10. Diagnósticos diferenciais conforme tempo e evolução"
+    },
+    {
+      "title": "11. Fluxograma textual para atendimento e reavaliação"
+    },
+    {
+      "title": "12. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — neonato aparentemente saudável"
+    },
+    {
+      "title": "Caso 2 — 48 dias, urina suspeita"
+    },
+    {
+      "title": "Caso 3 — febre após vacina em criança maior"
+    },
+    {
+      "title": "Caso 4 — petéquias e perfusão ruim"
+    },
+    {
+      "title": "13. Seis questões autorais com comentários completos"
+    },
+    {
+      "title": "Questão 1 — faixa etária"
+    },
+    {
+      "title": "Questão 2 — cultura de urina"
+    },
+    {
+      "title": "Questão 3 — lactente 29–60 dias"
+    },
+    {
+      "title": "Questão 4 — criança doente"
+    },
+    {
+      "title": "Questão 5 — antibióticos"
+    },
+    {
+      "title": "Questão 6 — vacinação e dengue"
+    },
+    {
+      "title": "14. Pérolas práticas para provas e ambulatório"
+    },
+    {
+      "title": "15. Plano de imagens e recursos originais — SEM IMAGENS INCORPORADAS"
+    },
+    {
+      "title": "16. Fontes clínicas com escopo explicitado"
+    },
+    {
+      "title": "17. Checklist de aprovação pendente"
+    }
+  ],
+  "reference_entries": [
+    "1. Sociedade Brasileira de Pediatria, Departamentos Científicos de Pediatria Ambulatorial e Infectologia. **Manejo da Febre Aguda** (comunicação oficial sobre o documento científico de 2021 e definição de FSSL). https://www.sbp.com.br/orientacoes-sobre-manejo-da-febre-e-tema-de-novo-documento-cientifico-da-sbp/",
+    "2. Ministério da Saúde. **Atenção Integrada às Doenças Prevalentes na Infância (AIDPI)**, orientações brasileiras de avaliação da criança e sinais gerais de perigo na APS. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/aidpi",
+    "3. Pantell RH, Roberts KB, Adams WG, et al. **Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old.** Pediatrics. 2021;148:e2021052228. https://doi.org/10.1542/peds.2021-052228",
+    "4. American Academy of Pediatrics. **Infant Fever — Clinical Practice Guideline**, portal oficial de síntese e algoritmos. https://www.aap.org/en/patient-care/infant-fever/",
+    "5. Ministério da Saúde. **DTP** (orientação de efeitos adversos e necessidade de investigar febre de evolução atípica após vacinação). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtp/dtp/",
+    "- [x] Fisiologia e distinção entre febre e hipertermia.",
+    "- [x] Faixas etárias e limites do algoritmo AAP.",
+    "- [x] Investigação de urina, sangue e LCR com interpretação clínica.",
+    "- [x] Sinais de gravidade, diferenciais, fluxos e retorno.",
+    "- [x] 4 casos clínicos comentados, 6 questões com todas as alternativas.",
+    "- [x] Fontes nacionais e internacionais identificadas.",
+    "- [ ] Apostila comparativa especificamente de FSSL no Drive.",
+    "- [ ] Fontes brasileiras adicionais de ITU pediátrica, sepse e dengue atualizadas.",
+    "- [ ] Tabelas farmacológicas completas com dose, via, limite, função renal e efeitos adversos por faixa etária.",
+    "- [ ] Desenvolvimento autossuficiente ≥60.000 caracteres úteis sem repetição.",
+    "- [ ] Matrizes de cobertura por âncora, validação com questões inéditas e auditoria científica profissional.",
+    "- [ ] Imagens clínicas licenciadas/aprovadas e testes de tela/PWA.",
+    "**Estado final: APENAS RASCUNHO; não integrar à biblioteca pública ainda.**"
+  ],
+  "external_urls": [
+    "https://www.sbp.com.br/orientacoes-sobre-manejo-da-febre-e-tema-de-novo-documento-cientifico-da-sbp/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/aidpi",
+    "https://doi.org/10.1542/peds.2021-052228",
+    "https://www.aap.org/en/patient-care/infant-fever/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtp/dtp/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Pesquisados no Google Drive materiais de febre, febre sem foco e pediatria. **Não foi identificado um caderno de FSSL diretamente equivalente.** Foi aberto e lido “Pneumonia Comunitária na Pediatria.pdf” (resumo de ~1,2 mil caracteres sobre febre, taquipneia, hipoxemia, consolidação e critérios de internação); material de autoria nominal Maysa Mismetti, **sem comprovação de que seja Estratégia MED**. Também foi lido “Imunizações .pdf” (resumo do PNI 2020, ~2,9 mil caracteres), usado somente como contraste para lembrar que **calendário vacinal antigo não pode ser considerado protocolo atual**. Esses arquivos são comparativos **parciais**, não "
+    },
+    {
+      "text": "**FSSL**, segundo a comunicação da SBP sobre manejo da febre, designa febre com duração inferior a sete dias, sem causa identificável na história e no exame. Depois de alguns dias, o “sem foco” pode tornar-se exantema, otite, síndrome respiratória, ITU ou outro diagnóstico. Reavaliar é parte do raciocínio, não indicação de falha inicial por si só."
+    },
+    {
+      "text": "| Diagnóstico | Quando lembrar | Pistas de investigação | |---|---|---| | Virose sem foco inicial | Criança maior, boa aparência, evolução curta | Surgimento posterior de sintomas respiratórios/exantema, contato e exame | | ITU febril | Lactente sem sintomas específicos ou criança com sintomas urinários | Urina com técnica apropriada e urocultura interpretada clinicamente | | Bacteremia/sepse | Lactente pequeno e/ou má aparência | Sinais de hipoperfusão, culturas, exames e manejo por idade | | Meningite/encefalite | Letargia, irritabilidade intensa, convulsão, sinais neurológicos | LCR e avaliação do SNC quando indicado | | Pneumonia | Taquip"
+    },
+    {
+      "text": "**Gabarito B.** A AAP para 8–21 dias recomenda avaliação bacteriana abrangente e tratamento hospitalar por risco relativo elevado. **A** confunde boa aparência com baixo risco suficiente. **C** ignora os alvos principais de infecção oculta e não é rotina sem sinais respiratórios. **D** posterga diagnóstico e tratamento. **Minirrevisão:** febre ≥38 °C em lactente muito jovem tem significado diferente de febre no pré-escolar."
+    },
+    {
+      "text": "**Gabarito C.** A coleta de saco pode contaminar amostra e induzir tratamento desnecessário. **A/B** atribuem especificidade inadequada ao método. **D** desconsidera manifestações inespecíficas no lactente. **Minirrevisão:** qualidade pré-analítica é parte do diagnóstico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

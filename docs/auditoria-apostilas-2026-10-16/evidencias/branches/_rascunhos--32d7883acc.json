@@ -1,0 +1,319 @@
+{
+  "sha": "32d7883acc77e5c89d3594b504418ac1f914c5a4",
+  "path": "apostilas/_rascunhos/lote-11-aula-231-hemoglobinopatias.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--32d7883acc",
+  "title": "LURIA — Apostila 231: Hemoglobinopatias e anemias hereditárias",
+  "format": ".md",
+  "chars_estimated": 91541,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 231: Hemoglobinopatias e anemias hereditárias"
+    },
+    {
+      "title": "Etapa zero documentada"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "1. Hemoglobina normal e genética das globinas"
+    },
+    {
+      "title": "1.1 A mudança ontogenética das hemoglobinas e a clínica pediátrica"
+    },
+    {
+      "title": "1.2 Três processos hematológicos que precisam ser separados"
+    },
+    {
+      "title": "1.3 Genótipo, fenótipo e aconselhamento"
+    },
+    {
+      "title": "1.4 Alfa-talassemia em cis e em trans: por que duas deleções não são sempre iguais"
+    },
+    {
+      "title": "1.5 Traço falciforme não é sinônimo de doença, mas exige informação precisa"
+    },
+    {
+      "title": "2. Doença falciforme: HbS, polimerização, hemólise e vaso-oclusão"
+    },
+    {
+      "title": "2.1 Por que o processo falciforme causa complicações em órgãos aparentemente desconectados"
+    },
+    {
+      "title": "2.2 Hemoglobina basal, viscosidade e a cautela transfusional"
+    },
+    {
+      "title": "2.3 Hemólise laboratorial e diagnóstico diferencial de queda da hemoglobina"
+    },
+    {
+      "title": "3. Manifestações clínicas: organizar por mecanismo e idade"
+    },
+    {
+      "title": "3.1 Dor vaso-oclusiva"
+    },
+    {
+      "title": "3.2 Síndrome torácica aguda (STA)"
+    },
+    {
+      "title": "3.3 Sequestro esplênico versus crise aplásica"
+    },
+    {
+      "title": "3.4 AVC e manifestações neurológicas"
+    },
+    {
+      "title": "3.5 Infecções graves e asplenia funcional"
+    },
+    {
+      "title": "3.6 Outras urgências"
+    },
+    {
+      "title": "3.7 Algoritmo de triagem de urgência no pronto-socorro"
+    },
+    {
+      "title": "3.8 Analgesia em crise vaso-oclusiva: assistência digna e técnica"
+    },
+    {
+      "title": "3.9 Síndrome torácica aguda: algoritmo de progressão"
+    },
+    {
+      "title": "3.10 Febre e infecção invasiva: por que o limiar de alerta é baixo"
+    },
+    {
+      "title": "3.11 Sequestro versus aplasia versus hemólise retardada"
+    },
+    {
+      "title": "3.12 AVC ou AIT: conduta tempo-dependente"
+    },
+    {
+      "title": "3.13 Priapismo: separar evento prolongado de episódios breves"
+    },
+    {
+      "title": "3.14 Complicações ósseas e abdominais: diferenciais difíceis"
+    },
+    {
+      "title": "4. Diagnóstico laboratorial e triagem neonatal"
+    },
+    {
+      "title": "4.1 Teste e aconselhamento de familiares"
+    },
+    {
+      "title": "4.2 Roteiro de investigação da microcitose em paciente com suspeita de hemoglobinopatia"
+    },
+    {
+      "title": "4.3 Hemoglobinopatia sob transfusão recente: por que o padrão pode enganar"
+    },
+    {
+      "title": "4.4 Exames na crise aguda: perguntas específicas"
+    },
+    {
+      "title": "4.5 Triagem neonatal: separar teste, confirmação e início do cuidado"
+    },
+    {
+      "title": "5. Tratamento longitudinal da doença falciforme"
+    },
+    {
+      "title": "5.1 Organização da assistência"
+    },
+    {
+      "title": "5.2 Hidroxicarbamida (hidroxiureia)"
+    },
+    {
+      "title": "5.3 Transfusão simples, transfusão de troca e acompanhamento"
+    },
+    {
+      "title": "5.4 Transplante e terapias emergentes"
+    },
+    {
+      "title": "5.5 Hidroxicarbamida no PCDT 2024: elegibilidade e segurança de uso"
+    },
+    {
+      "title": "5.6 Infecção e profilaxia no longo prazo"
+    },
+    {
+      "title": "5.7 Doppler transcraniano: não confundir velocidade, técnica e decisão"
+    },
+    {
+      "title": "5.8 Lesões crônicas: lista de vigilância dirigida"
+    },
+    {
+      "title": "5.9 Transição para vida adulta, educação e saúde mental"
+    },
+    {
+      "title": "5.10 Gestação na doença falciforme: cuidado obstétrico de alto risco"
+    },
+    {
+      "title": "5.11 Procedimento cirúrgico e anestesia: antecipar complicações"
+    },
+    {
+      "title": "5.12 Fluxo longitudinal em cinco perguntas"
+    },
+    {
+      "title": "6. Talassemias: falta de síntese de globina, não falta de ferro"
+    },
+    {
+      "title": "6.1 Beta-talassemia"
+    },
+    {
+      "title": "6.2 Alfa-talassemia"
+    },
+    {
+      "title": "6.3 Classificação contemporânea: TDT e NTDT"
+    },
+    {
+      "title": "6.4 Como reconhecer o fenótipo na prática"
+    },
+    {
+      "title": "6.5 Alfa-talassemias de gravidade variável"
+    },
+    {
+      "title": "6.6 Complicações por eritropoese ineficaz"
+    },
+    {
+      "title": "7. Talassemia versus deficiência de ferro: diferenciais práticos"
+    },
+    {
+      "title": "8. Transfusão dependente e sobrecarga de ferro"
+    },
+    {
+      "title": "8.1 Regime de transfusão regular na beta-talassemia TDT"
+    },
+    {
+      "title": "8.2 Quantificar o ferro: ferritina é tendência, RM é órgão"
+    },
+    {
+      "title": "8.3 Quelantes de ferro: comparação didática com vigilância"
+    },
+    {
+      "title": "8.4 Reações transfusionais: algoritmo de segurança aplicável a hemoglobinopatias"
+    },
+    {
+      "title": "8.5 Por que o programa transfusional em HbSS é diferente do de talassemia"
+    },
+    {
+      "title": "9. Casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — Criança com febre e HbSS"
+    },
+    {
+      "title": "Caso 2 — Queda de Hb: qual crise?"
+    },
+    {
+      "title": "Caso 3 — Crise falciforme e hipóxia"
+    },
+    {
+      "title": "Caso 4 — Microcitose não é ferropriva até prova em contrário"
+    },
+    {
+      "title": "Caso 5 — Criança com HbSS e déficit focal súbito"
+    },
+    {
+      "title": "Caso 6 — Recém-nascido com FAS e mãe com dúvidas"
+    },
+    {
+      "title": "Caso 7 — Anemia após transfusão com piora paradoxal"
+    },
+    {
+      "title": "Caso 8 — Talassemia não dependente de transfusão e déficit progressivo"
+    },
+    {
+      "title": "Caso 9 — DTC anormal em criança sem sintomas neurológicos"
+    },
+    {
+      "title": "Caso 10 — Adolescente com talassemia TDT e risco cardíaco oculto"
+    },
+    {
+      "title": "10. Questões comentadas"
+    },
+    {
+      "title": "Questão 9 — Hidroxiureia na infância e PCDT"
+    },
+    {
+      "title": "Questão 10 — Dor e manejo imediato"
+    },
+    {
+      "title": "Questão 11 — DTC e rastreamento de AVC"
+    },
+    {
+      "title": "Questão 12 — Hiper-hemólise"
+    },
+    {
+      "title": "Questão 13 — Metas transfusionais na TDT"
+    },
+    {
+      "title": "Questão 14 — Marcadores de ferro na talassemia"
+    },
+    {
+      "title": "11. Matriz e visuais ainda não aprovados"
+    },
+    {
+      "title": "12. Referências verificáveis"
+    },
+    {
+      "title": "Fontes e decisões editoriais da ampliação v0.2 (15/10/2026)"
+    }
+  ],
+  "reference_entries": [
+    "1. Brasil, Ministério da Saúde. **PCDT da Doença Falciforme, aprovado pela Portaria Conjunta SAES/SECTICS nº 16, 01/11/2024 (publicado em 22/11/2024)**. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view",
+    "2. American Society of Hematology. **ASH 2020 guidelines: cerebrovascular disease in sickle cell disease.** https://pmc.ncbi.nlm.nih.gov/articles/PMC7189278/",
+    "3. American Society of Hematology. **ASH 2020 guidelines: transfusion support.** https://pmc.ncbi.nlm.nih.gov/articles/PMC6988392/",
+    "4. Thalassaemia International Federation. **Guidelines for the management of transfusion-dependent β-thalassaemia, 5th edition (2025).** https://www.ncbi.nlm.nih.gov/books/NBK614240/",
+    "5. Ministério da Saúde, guia PNI/CRIE atualizado para imunização de pessoas com asplenia funcional: **documento e calendário específicos ainda a conferir**; não publicar como referência concluída.",
+    "**Pendências antes de considerar pronto:** conferência integral de doses/pausas no PCDT 2024 e bulas, calendário PNI/CRIE vigente, critérios por genótipo e gestação, auditoria de cada gabarito, verificação de licenças e aprovação de imagens no Admin, prova de pelo menos 60.000 caracteres didaticamente úteis e teste de autonomia, revisão médica independente, implementação e inspeção desktop/PWA. **NÃO PUBLICAR.**",
+    "6. Ministério da Saúde. **Portaria SECTICS/MS nº 2, de 05/03/2024**, incorporação de hidroxiureia para pessoas de 9–24 meses com genótipos previstos, inclusive assintomáticas: https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0002_07_03_2024.html",
+    "7. Ministério da Saúde. **Portaria SECTICS/MS nº 4, de 05/03/2024**, incorporação de hidroxiureia 100 mg para pessoas a partir de 9 meses: https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0004_07_03_2024.html",
+    "8. ASH. **Guidelines 2020: management of acute and chronic pain in sickle cell disease**: https://pmc.ncbi.nlm.nih.gov/articles/PMC7322963/",
+    "9. Thalassaemia International Federation. **TIF Guidelines for the Management of Transfusion-Dependent β-Thalassaemia, 5th edition, 2025** (recomendações sintetizadas em acesso público): https://pmc.ncbi.nlm.nih.gov/articles/PMC11880825/",
+    "10. TIF 2025. **Iron overload and chelation, chapter 3**: https://www.ncbi.nlm.nih.gov/books/NBK614244/",
+    "11. CDC. **Developing a Transfusion Plan, Thalassemia Healthcare Provider Toolkit**: https://www.cdc.gov/thalassemia/hcp/toolkit/developing-a-transfusion-plan.html",
+    "12. CDC Public Health Image Library. **PHIL ID 16217 — microfotografia de drepanócito**, página informa domínio público: https://wwwn.cdc.gov/phil/Details.aspx?pid=16217 . **CANDIDATA, NÃO INTEGRADA:** verificar termos finais de atribuição, qualidade/legibilidade, limite WebP e aprovação Admin antes de utilizar.",
+    "**Matriz de segurança comparativa:** os dois PDFs de apoio do Google Drive foram efetivamente relidos em 15/10/2026; são resumos de terceiros, com restrições expressas de circulação, usados **apenas para confrontar a lista de assuntos**, sem copiar redação, diagramas ou imagens. Exemplos de conduta deliberadamente não copiados: hidroxiureia reservada a >3 anos, transfusão como regra em toda STA, broncodilatador empírico universal na STA, transfusão de troca como primeira medida de priapismo e calendário vacinal antigo. A versão LURIA deve conservar interpretação crítica à luz das diretrizes.",
+    "**Parecer de produção:** manuscrito com suporte ampliado e capítulos aprofundados, mas **ainda não considerado apostila publicada/autossuficiente/cientificamente certificada**. Necessita dupla conferência clínica e editorial, imagens autorizadas e adaptação HTML/PWA. As referências listadas são suporte à revisão, não comprovam automaticamente cada alegação do texto."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7189278/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6988392/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK614240/",
+    "https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0002_07_03_2024.html",
+    "https://bvs.saude.gov.br/bvs/saudelegis/sctie/2024/prt0004_07_03_2024.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7322963/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11880825/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK614244/",
+    "https://www.cdc.gov/thalassemia/hcp/toolkit/developing-a-transfusion-plan.html",
+    "https://wwwn.cdc.gov/phil/Details.aspx?pid=16217"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O primeiro resume mecanismo HbS, genótipos, crises vaso-oclusivas, sequestro esplênico, síndrome torácica aguda, AVC, priapismo, profilaxia e hidroxiureia. O segundo apresenta talassemias alfa/beta, triagem neonatal, transfusão e quelação, mas mistura anemia ferropriva pediátrica, que deve permanecer assunto correlato e não duplicado. Parte dos esquemas transfusionais e recomendações do material comparativo são simplificações e **não podem ser transferidos automaticamente**. O padrão visual interno foi inspecionado na apostila LURIA `apostilas/cancer-de-mama/index.html`."
+    },
+    {
+      "text": "O problema oposto também importa: a forma **HbH** resulta habitualmente de três genes alfa comprometidos, com produção de tetrâmeros β₄ após o período fetal. A gravidade varia segundo deleção ou variantes não delecionais. Assim, saber contar cópias auxilia compreensão inicial, mas não substitui diagnóstico molecular quando prognóstico e risco gestacional estão em jogo."
+    },
+    {
+      "text": "Em HbSS e HbS/β⁰ pediátricos, o **Doppler transcraniano** é estratégia de triagem de risco entre 2 e 16 anos nos cenários e critérios previstos em diretrizes. Velocidades elevadas indicam risco e podem justificar programa transfusional para prevenção primária. Metas e critérios devem ser consultados no protocolo exato, com operadores qualificados; um laudo isolado fora da técnica correta não deve ser convertido automaticamente em indicação de transfusão crônica."
+    },
+    {
+      "text": "Na **hiper-hemólise**, transfusões adicionais podem agravar hemólise em certos pacientes. A ASH 2020 recomenda discussão hematológica/hemoterápica urgente, compatibilidade estendida e imunomodulação nos casos selecionados, observando gravidade e evidência limitada; não há protocolo simplista que possa substituir a equipe especializada."
+    },
+    {
+      "text": "A ASH 2020 recomenda terapia transfusional prontamente, idealmente em até **2 horas** de apresentação em crianças ou adultos com doença falciforme e déficit neurológico/AIT; **troca eritrocitária** é preferida à simples quando disponível de imediato. Se a troca não puder ocorrer nesse prazo e a Hb for ≤8,5 g/dL, pode ser feita transfusão simples como ponte apropriada enquanto se planeja troca, conforme avaliação hematológica. Esses números pertencem ao contexto da diretriz; não devem ser usados como única regra fora de doença falciforme/AVC."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

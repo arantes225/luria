@@ -1,0 +1,362 @@
+{
+  "sha": "215cc7183a128b7d65dd877a40bc56195c5e1660",
+  "path": "apostilas/cancer-de-mama/index.html",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014",
+    "origin/editorial/apostilas-lote-02-asma-20261014",
+    "origin/editorial/inventario-225-piloto",
+    "origin/editorial/lote-03-auditoria-20261014",
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote04-aula64-placenta-dpp-20261014"
+  ],
+  "in_main": false,
+  "key": "cancer-de-mama--215cc7183a",
+  "title": "Câncer de mama",
+  "format": ".html",
+  "chars_estimated": 61276,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Visão geral e mapa clínico"
+    },
+    {
+      "title": "Anatomia, histologia e progressão"
+    },
+    {
+      "title": "O que a lâmina histológica responde?"
+    },
+    {
+      "title": "Fatores de risco e prevenção"
+    },
+    {
+      "title": "Não modificáveis"
+    },
+    {
+      "title": "Modificáveis ou parcialmente modificáveis"
+    },
+    {
+      "title": "Quando suspeitar de predisposição hereditária?"
+    },
+    {
+      "title": "Patologias benignas da mama e lesões de alto risco"
+    },
+    {
+      "title": "1. Classificação que realmente importa"
+    },
+    {
+      "title": "2. Nódulo palpável: abordagem por idade e concordância"
+    },
+    {
+      "title": "3. Fibroadenoma"
+    },
+    {
+      "title": "4. Cistos: simples, complicados e císticos com componente sólido"
+    },
+    {
+      "title": "5. Alterações fibrocísticas e mastalgia"
+    },
+    {
+      "title": "6. Descarga papilar: fisiológica, galactorreia e descarga patológica"
+    },
+    {
+      "title": "7. Papiloma intraductal e ectasia ductal"
+    },
+    {
+      "title": "8. Mastite puerperal, abscesso e mastite não puerperal"
+    },
+    {
+      "title": "9. Galactocele e necrose gordurosa"
+    },
+    {
+      "title": "10. Tumor filoide: não chamar de “fibroadenoma grande”"
+    },
+    {
+      "title": "11. Lesões de alto risco: HDA, HLA, cicatriz radial e LCIS"
+    },
+    {
+      "title": "12. BI-RADS aplicado às lesões benignas"
+    },
+    {
+      "title": "13. Sinais de alarme: quando parar de chamar de “benigno”"
+    },
+    {
+      "title": "Manifestações clínicas e exame físico"
+    },
+    {
+      "title": "Três situações que não podem ser banalizadas"
+    },
+    {
+      "title": "Rastreamento no Brasil"
+    },
+    {
+      "title": "Investigação por imagem: qual exame pedir?"
+    },
+    {
+      "title": "O que reconhecer na imagem?"
+    },
+    {
+      "title": "BI-RADS: interpretação e conduta"
+    },
+    {
+      "title": "Biópsia e concordância tripla"
+    },
+    {
+      "title": "HER2 equívoco"
+    },
+    {
+      "title": "Concordância: quando um resultado benigno não encerra a investigação"
+    },
+    {
+      "title": "Concordância clínica, imagem e biópsia: como evitar atrasos diagnósticos"
+    },
+    {
+      "title": "Caso 1 — nódulo palpável com mamografia anterior negativa"
+    },
+    {
+      "title": "Caso 2 — microcalcificações suspeitas, mas ultrassom sem massa"
+    },
+    {
+      "title": "Caso 3 — BI-RADS 5 e biópsia “benigna”"
+    },
+    {
+      "title": "Caso 4 — saída de sangue espontânea pelo mamilo"
+    },
+    {
+      "title": "Caso 5 — nódulo persistente na gestação ou lactação"
+    },
+    {
+      "title": "Caso 6 — BI-RADS 3 sob seguimento e mudança do quadro"
+    },
+    {
+      "title": "Autoteste integrado — resposta orientada pela lógica"
+    },
+    {
+      "title": "Tipos histológicos e perfis moleculares"
+    },
+    {
+      "title": "Estadiamento TNM e avaliação sistêmica"
+    },
+    {
+      "title": "Tratamento: mapa de decisão"
+    },
+    {
+      "title": "Cirurgia conservadora, mastectomia e oncoplastia"
+    },
+    {
+      "title": "Cirurgia conservadora"
+    },
+    {
+      "title": "Mastectomia e técnicas poupadoras"
+    },
+    {
+      "title": "Oncoplastia e reconstrução mamária"
+    },
+    {
+      "title": "Margens"
+    },
+    {
+      "title": "Axila e linfonodo sentinela"
+    },
+    {
+      "title": "Tratamento sistêmico por perfil"
+    },
+    {
+      "title": "RH positivo / HER2 negativo"
+    },
+    {
+      "title": "HER2 positivo"
+    },
+    {
+      "title": "Triplo-negativo"
+    },
+    {
+      "title": "Neoadjuvância, adjuvância e resposta patológica"
+    },
+    {
+      "title": "Radioterapia"
+    },
+    {
+      "title": "Situações especiais"
+    },
+    {
+      "title": "Gestação"
+    },
+    {
+      "title": "Lactação"
+    },
+    {
+      "title": "Homens"
+    },
+    {
+      "title": "Idosas e pacientes frágeis"
+    },
+    {
+      "title": "Doença metastática"
+    },
+    {
+      "title": "Seguimento, reabilitação e cuidados paliativos"
+    },
+    {
+      "title": "O seguimento tem objetivos distintos"
+    },
+    {
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "title": "Erros frequentes e revisão final"
+    },
+    {
+      "title": "Aprofundamento integrador — da lesão mamária à estratégia oncológica individualizada"
+    },
+    {
+      "title": "1. A unidade ductolobular terminal e a heterogeneidade das neoplasias"
+    },
+    {
+      "title": "2. O papel dos receptores hormonais e do HER2 na decisão terapêutica"
+    },
+    {
+      "title": "3. Concordância clínico-radiológica-patológica: o raciocínio para não perder um câncer"
+    },
+    {
+      "title": "4. Por que o rastreamento não substitui a investigação de sintomas"
+    },
+    {
+      "title": "5. Cirurgia conservadora, margens e radioterapia como tratamento coordenado"
+    },
+    {
+      "title": "6. Avaliação axilar e linfonodo sentinela: estadiar com menor morbidade"
+    },
+    {
+      "title": "7. Neoadjuvância e resposta patológica: por que tratar antes de operar?"
+    },
+    {
+      "title": "8. Caso integrador comentado: duas mulheres com nódulos semelhantes"
+    },
+    {
+      "title": "Referências e imagens para curadoria"
+    },
+    {
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "title": "Benigno, lesão de risco e malignidade"
+    },
+    {
+      "title": "Subtipos e tratamento"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Nódulo palpável: discordância tripla"
+    },
+    {
+      "title": "Patologias benignas que exigem decisões diferentes"
+    },
+    {
+      "title": "Da patologia ao tratamento oncológico"
+    },
+    {
+      "title": "Rastreamento e risco familiar"
+    },
+    {
+      "title": "Raciocínio por entidade clínica"
+    },
+    {
+      "title": "Tríplice concordância"
+    },
+    {
+      "title": "Lesões benignas e alto risco"
+    },
+    {
+      "title": "Subtipos e tratamento"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://thumb.wikimedia.org;",
+    "https://sxdsfklllilhdyuamvvg.supabase.co;",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf",
+    "https://cbr.org.br/wp-content/uploads/2025/01/Nota-tecnica-da-Comissao-Nacional-de-Mamografia-sobre-o-rastreamento-do-Cancer-de-Mama-no-Brasil.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/@@download/file",
+    "https://commons.wikimedia.org/wiki/File:Mammogram_microcalcifications_in_carcinoma_in_situ,_MLO,_details.png",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png/960px-Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png",
+    "https://creativecommons.org/licenses/by-sa/3.0/",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+    "https://acsearch.acr.org/docs/69495/Narrative",
+    "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+    "https://commons.wikimedia.org/wiki/File:Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg/960px-Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+    "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/exame-clinico-mamas/",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento/",
+    "https://commons.wikimedia.org/wiki/Category:Mammography",
+    "https://www.mdpi.com/2075-4418/15/13/1687"
+  ],
+  "embedded_images": [
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/01-progressao.svg",
+      "alt": "Progressão de epitélio mamário normal para carcinoma in situ e invasivo"
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/02-birads.svg",
+      "alt": "Categorias BI-RADS e condutas correspondentes"
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/03-investigacao.svg",
+      "alt": "Fluxo de investigação de um nódulo mamário suspeito"
+    },
+    {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png/960px-Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png",
+      "alt": "Mamografia real na incidência mediolateral oblíqua: múltiplas microcalcificações agrupadas em caso de carcinoma ductal in situ, imagem clínica original de Jmarchn"
+    },
+    {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg/960px-Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+      "alt": "Fotomicrografia verdadeira em hematoxilina e eosina de carcinoma invasivo da mama: agrupamentos tumorais infiltram tecido adiposo no campo esquerdo e detalhe celular em maior aumento no direito"
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/05-tratamento.svg",
+      "alt": "Etapas do tratamento do câncer de mama"
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/06-tumor-axila.svg",
+      "alt": "Decisões na avaliação da axila e linfonodo sentinela"
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/04-perfis.svg",
+      "alt": "Comparação entre perfis hormonais HER2 positivo e triplo-negativo"
+    }
+  ],
+  "samples": [
+    {
+      "text": "Da suspeita ao diagnóstico, cirurgia oncológica, terapias sistêmicas e reabilitação. Raciocínio orientado à prática clínica e às provas de Medicina."
+    },
+    {
+      "text": "Os principais sítios de metástase são osso, fígado, pulmões e sistema nervoso central. A maioria dos casos não é explicada por uma variante hereditária de alta penetrância; ausência de história familiar não afasta o diagnóstico."
+    },
+    {
+      "text": "Diagnóstico em idade jovem, câncer bilateral ou múltiplos primários, câncer de mama masculino, triplo-negativo em contexto sugestivo e agregação familiar de mama, ovário, pâncreas ou próstata justificam avaliação de risco e, quando indicado, aconselhamento genético. Critérios e acesso dependem do protocolo vigente."
+    },
+    {
+      "text": "Uma grande parte das queixas mamárias é benigna, mas o raciocínio não deve começar com “parece benigno”. O caminho seguro é queixa → história e exame → imagem apropriada → concordância clínica-radiológica → biópsia quando indicada. Massa nova, descarga papilar patológica, retração, alteração cutânea ou inflamação persistente não devem ser encerradas apenas porque um diagnóstico benigno é possível."
+    },
+    {
+      "text": "Não se recomenda “ordenhar” o mamilo repetidamente para acompanhar secreção: a própria manipulação perpetua descarga. Citologia da secreção tem baixa sensibilidade e não substitui imagem/biópsia quando há indicação."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

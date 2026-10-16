@@ -1,0 +1,177 @@
+{
+  "sha": "98b62cd745f6abc43c0191c6f9080a77d6187543",
+  "path": "apostilas/_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--98b62cd745",
+  "title": "LURIA — Lote 7 · Aula 138",
+  "format": ".md",
+  "chars_estimated": 22971,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 138"
+    },
+    {
+      "title": "Crises convulsivas e estado de mal epiléptico — Pediatria e Emergência"
+    },
+    {
+      "title": "0. Auditoria anterior à redação"
+    },
+    {
+      "title": "1. Definir corretamente crise, epilepsia e estado de mal"
+    },
+    {
+      "title": "1.1. Classificação clínica simplificada"
+    },
+    {
+      "title": "2. Fisiopatologia da crise prolongada"
+    },
+    {
+      "title": "3. Primeiros socorros seguros"
+    },
+    {
+      "title": "4. Reconhecimento do estado de mal"
+    },
+    {
+      "title": "5. Avaliação inicial: causas reversíveis não podem esperar"
+    },
+    {
+      "title": "6. Crises febris: não banalizar nem superinvestigar"
+    },
+    {
+      "title": "7. Algoritmo de EME pediátrico por tempo"
+    },
+    {
+      "title": "Fase 0–5 minutos: estabilizar e preparar"
+    },
+    {
+      "title": "Fase ≥5 minutos: benzodiazepínico como primeira linha"
+    },
+    {
+      "title": "Persistência apesar de benzodiazepínicos: segunda linha"
+    },
+    {
+      "title": "Estado refratário"
+    },
+    {
+      "title": "8. Diagnóstico e investigação após estabilização"
+    },
+    {
+      "title": "9. Continuidade de tratamento: epilepsia não é igual a EME"
+    },
+    {
+      "title": "10. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — crise febril simples"
+    },
+    {
+      "title": "Caso 2 — status sem acesso venoso"
+    },
+    {
+      "title": "Caso 3 — status refratário com paralisia"
+    },
+    {
+      "title": "Caso 4 — crise por distúrbio eletrolítico"
+    },
+    {
+      "title": "11. Seis questões autorais com comentários"
+    },
+    {
+      "title": "Questão 1 — tempo de EME"
+    },
+    {
+      "title": "Questão 2 — status após benzodiazepínico"
+    },
+    {
+      "title": "Questão 3 — crise febril"
+    },
+    {
+      "title": "Questão 4 — status oculto"
+    },
+    {
+      "title": "Questão 5 — valproato e POLG"
+    },
+    {
+      "title": "Questão 6 — causa reversível"
+    },
+    {
+      "title": "12. Pérolas LURIA e resumo"
+    },
+    {
+      "title": "13. Imagens e materiais visuais a curar (NENHUM incorporado)"
+    },
+    {
+      "title": "14. Referências"
+    },
+    {
+      "title": "15. Pendências antes de certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **PCDT de Epilepsia**, anexo alterado em 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "2. NICE NG217. Epilepsies in children, young people and adults, seção de status, atualizada 30/01/2025. https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "3. American Epilepsy Society. Treatment of Convulsive Status Epilepticus, guideline clássico 2016. https://cms.aesnet.org/clinical-care/clinical-guidance/guideline-prolonged-seizures/guideline-for-treatment-of-prolonged-seizures-in-children-and-adults",
+    "4. Children's Hospital of Philadelphia. Status Epilepticus Clinical Pathway, ED/ICU, versão disponível em 2026. https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+    "5. NHS Greater Glasgow and Clyde. Status Epilepticus Management, pediatric guidance, revisão 05/05/2026. https://www.clinicalguidelines.scot.nhs.uk/ggc-paediatric-guidelines/ggc-paediatric-guidelines/emergency-medicine/status-epilepticus-management/",
+    "- [x] Raciocínio fisiopatológico, diferenciais, abordagem imediata e temporal, convulsão febril, estado refratário, 4 casos e 6 questões.",
+    "- [x] Benchmark de Drive próximo aberto/lido; ausência de fonte realmente equivalente explicitada.",
+    "- [ ] Doses brasileiras por apresentação, peso, idade, via, tempo de infusão, contraindicação e ajuste renal/hepático revisadas por farmacologia e pediatria.",
+    "- [ ] Aprofundar epilepsias específicas, segurança EEG, crise neonatal, PCDT integral e plano pré-hospitalar local.",
+    "- [ ] Material didático ≥60.000 caracteres úteis sem repetição, teste de autossuficiência.",
+    "- [ ] Imagens clínicas reais/traçados licenciados e aprovação Admin, revisão médica e testes site/PWA.",
+    "**Status:** rascunho incompleto, não publicar."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "https://cms.aesnet.org/clinical-care/clinical-guidance/guideline-prolonged-seizures/guideline-for-treatment-of-prolonged-seizures-in-children-and-adults",
+    "https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+    "https://www.clinicalguidelines.scot.nhs.uk/ggc-paediatric-guidelines/ggc-paediatric-guidelines/emergency-medicine/status-epilepticus-management/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Epilepsia** não significa obrigatoriamente “teve uma convulsão”: diagnóstico pressupõe tendência duradoura a crises não provocadas, definida por dois eventos não provocados separados por >24 h, ou uma crise com risco de recorrência comparável, ou síndrome epiléptica específica, conforme critérios ILAE em contexto clínico. A avaliação etiológica é importante para evitar rótulo em pessoa com crise exclusivamente por hipoglicemia ou toxina reversível."
+    },
+    {
+      "text": "**Crise aguda sintomática:** decorre de insulto agudo, como hiponatremia, hipoglicemia, encefalite, trauma, intoxicação ou AVC. **Crise febril:** ocorre em faixa etária típica, associada à febre sem infecção SNC/metabólica aguda, com critérios próprios. **Síncope convulsiva:** hipoperfusão cerebral pode produzir movimentos breves e confundir diagnóstico, exigindo história de prodromos, recuperação e exame cardiovascular."
+    },
+    {
+      "text": "A maioria das crises breves cessa espontaneamente; isso não elimina avaliação da primeira convulsão. Uma criança já com diagnóstico e plano de resgate deve seguir instruções escritas individualizadas, incluindo quando administrar midazolam/diazepam e quando acionar serviço."
+    },
+    {
+      "text": "**Típica simples:** criança de aproximadamente **6 meses a 5 anos** com febre e crise generalizada **<15 min**, evento único nas 24 h, com recuperação, sem evidência de infecção do SNC e sem déficit neurológico focal. **Complexa:** focal, duração ≥15 min ou recorrência dentro de 24 h; exige avaliação mais individualizada. **Status febril:** crise febril prolongada ≥30 min na definição específica histórica, embora **tratamento emergencial comece aos 5 min**."
+    },
+    {
+      "text": "Padrões de crise focal/complexa, déficit pós-ictal prolongado, desenvolvimento atípico ou nova crise exigem diagnóstico diferencial próprio e eventual neurologia. Em menor de seis meses, não rotular automaticamente como “convulsão febril simples” sem investigar etiologias mais preocupantes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

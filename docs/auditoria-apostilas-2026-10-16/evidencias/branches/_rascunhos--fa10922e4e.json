@@ -1,0 +1,93 @@
+{
+  "sha": "fa10922e4e3f1a9248d84570e51f1578b65485e1",
+  "path": "apostilas/_rascunhos/lote-06-130-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--fa10922e4e",
+  "title": "Lote 6 — Tema 130: Níveis de Prevenção e História Natural da Doença",
+  "format": ".md",
+  "chars_estimated": 7307,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 6 — Tema 130: Níveis de Prevenção e História Natural da Doença"
+    },
+    {
+      "title": "Inventário e preservação"
+    },
+    {
+      "title": "Benchmark realmente lido ANTES da produção"
+    },
+    {
+      "title": "Fontes primárias oficiais identificadas"
+    },
+    {
+      "title": "Índice planejado"
+    },
+    {
+      "title": "Bloqueios"
+    },
+    {
+      "title": "Etapa 2 — Texto final do rascunho e verificações estruturais (15/10/2026)"
+    },
+    {
+      "title": "Matriz lexical de autossuficiência — 12 questões"
+    },
+    {
+      "title": "Pendências para certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. **OMS/OPAS, Carta de Ottawa (1986)** — promoção da saúde, políticas saudáveis, ambientes favoráveis, ação comunitária, competências pessoais e reorientação dos serviços. https://www.paho.org/en/documents/ottawa-charter-health-promotion .",
+    "2. **OMS, Health promotion** — promoção da saúde e determinantes. https://www.who.int/health-topics/health-promotion .",
+    "3. **Brasil, Portaria nº 2.446/2014** — redefine Política Nacional de Promoção da Saúde (PNPS); documento de referência histórica/regulatória. https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html .",
+    "4. **Brasil, Portaria de Consolidação nº 2/2017, Anexo I** — políticas nacionais, incluindo PNPS, verificar redação vigente e alterações. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html .",
+    "5. **Brasil, Portaria GM/MS nº 2.436/2017 (PNAB)** — APS engloba promoção, prevenção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html .",
+    "6. **Modelo histórico Leavell & Clark (décadas de 1950/1960)** — construção didática da história natural e três níveis clássicos; conceitos autorais explicativos sem atribuir edição/página de livro não localizada.",
+    "- [ ] Corpo didático profundo, meta 60 mil caracteres úteis; nenhuma repetição artificial.",
+    "- [ ] 8 casos completos e 12 questões comentadas, exemplos genuinamente distintos das 120/125.",
+    "- [ ] QA científico independente e fontes brasileiras atualizadas por cenário.",
+    "- [ ] Figuras/diagramas autorais ou licenciados com aprovação Admin antes de inclusão, 10 pautas quando pertinentes.",
+    "- [ ] JSON, HTML, validadores oficiais e inspeção desktop/PWA em ambiente apropriado.",
+    "- [ ] Não publicar/mesclar/implantar.",
+    "---",
+    "- **Markdown:** `apostilas/_rascunhos/lote-06-130-niveis-de-prevencao-historia-natural-doenca.md` com 94.213 caracteres brutos, 31 capítulos, oito casos e doze questões. O corpo didático (capítulos 1–27) possui aproximadamente **68.982 caracteres** após remoção simples de URLs e marcação Markdown, excluindo casos, questões e referências. A contagem não prova unicidade semântica nem revisão médica.",
+    "- **JSON:** `apostilas/_rascunhos/lote-06-130-build-input-preliminar.json`, 30 seções de conteúdo e 7 referências, imagens novas não inseridas.",
+    "- **HTML:** `apostilas/_rascunhos/lote-06-130-preview.html` com 31 seções incluindo bibliografia, 8 casos, 12 questões, 12 listas de alternativas A–D e `noindex,nofollow`.",
+    "- **Navegação interna:** 0 âncoras ausentes e 0 IDs duplicados.",
+    "- **Verificação científica de escopo:** o texto distingue explicitamente história natural/níveis de prevenção, níveis da RAS, promoção da saúde/PNPS/PNAB e convenções específicas de cardiologia. Fontes oficiais brasileiras e da OMS identificadas, mas sem validação independente.",
+    "**Resultado: 12/12 com cobertura lexical preliminar.** A primeira passagem identificou dois trechos que mereciam explicitação didática: **suscetibilidade** na fase pré-patogênica (cap. 2) e a diferença entre **reabilitação** e prevenção de recorrência cardiovascular (cap. 19). As três versões foram sincronizadas após a correção.",
+    "1. Revisão médica independente por docente de Preventiva/Saúde Coletiva, validando classificações ambíguas e interpretação da política brasileira.",
+    "2. Comparação com material extenso de autoria comprovada (Drive disponível apenas com resumos parciais).",
+    "3. Auditoria de originalidade semântica e eliminação de eventual sobreposição excessiva com apostilas 120 e 125.",
+    "4. Curadoria/produção de diagramas originais e, quando houver imagens externas, verificação individual de licença/autoria, compressão WebP e aprovação via Admin. Nenhuma figura publicada.",
+    "5. Execução **real** do builder e auditores do repositório, que não foi feita neste turno; checagem estrutural não substitui `node scripts/build-apostilas-batch.cjs --dry-run`.",
+    "6. Testes de visualização desktop/PWA, acessibilidade e desempenho; aprovação antes de merge ou deploy.",
+    "**Parecer:** rascunho completo com prévia técnica e 12/12 conceitos presentes nos capítulos; **NÃO PUBLICAR/NÃO CERTIFICADO**."
+  ],
+  "external_urls": [
+    "https://www.paho.org/en/documents/ottawa-charter-health-promotion",
+    "https://www.who.int/health-topics/health-promotion",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Questão | Competência | Capítulos | Termos buscados | Resultado | | --- | --- | --- | --- | --- | | 1 | Suscetibilidade pré-patogênica | 2 | pre-patogenico; suscetibilidade | Cobertura preliminar | | 2 | Prevenção primordial | 4 | primordial; fatores de risco | Cobertura preliminar | | 3 | Vacina em hospital | 5, 18 | vacin; hospital | Cobertura preliminar | | 4 | Diagnóstico de HAS | 6, 12 | hipertensao; secundaria | Cobertura preliminar | | 5 | Reabilitação terciária | 7 | reabilitacao; incapacidade | Cobertura preliminar | | 6 | Quaternária | 8 | quaternaria; exames | Cobertura preliminar | | 7 | PEP | 11, 17 | pos-exposicao; infeccao | "
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

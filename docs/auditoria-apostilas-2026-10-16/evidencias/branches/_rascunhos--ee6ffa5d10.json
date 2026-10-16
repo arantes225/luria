@@ -1,0 +1,49 @@
+{
+  "sha": "ee6ffa5d109a6fe3d3fd4fa267edae297a6bfde6",
+  "path": "apostilas/_rascunhos/lote-06-135-controle-cientifico-20261015.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ee6ffa5d10",
+  "title": "LURIA — Tema 135 · Imunizações e PNI — auditoria focal de 15/10/2026",
+  "format": ".md",
+  "chars_estimated": 2991,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tema 135 · Imunizações e PNI — auditoria focal de 15/10/2026"
+    },
+    {
+      "title": "Existência e comparador obrigatório"
+    },
+    {
+      "title": "Fonte normativa independente confirmada"
+    },
+    {
+      "title": "Correção editorial aplicada"
+    },
+    {
+      "title": "Pendências obrigatórias para certificação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/setembro/sus-alcanca-mais-de-1-milhao-de-criancas-vacinadas-com-nova-vacina-contra-doencas-pneumococicas/"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,865 @@
+{
+  "key": "planejamento-reprodutivo-contracepcao",
+  "kind": "apostila-html",
+  "path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+  "html_path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+  "title": "Planejamento Reprodutivo e Contracepção",
+  "source_sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf",
+  "html_sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Princípios do planejamento reprodutivo",
+      "section": "principios"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Eficácia, uso típico e mecanismo",
+      "section": "eficacia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Critérios Médicos de Elegibilidade — OMS 2025",
+      "section": "mec"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Pílula anticoncepcional combinada",
+      "section": "combinados"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "combinados"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "combinados"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Adesivo contraceptivo combinado",
+      "section": "adesivo"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "adesivo"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "adesivo"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Anel vaginal combinado",
+      "section": "anel"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "anel"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "anel"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Anticoncepcional injetável combinado",
+      "section": "injetavel-combinado"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "injetavel-combinado"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "injetavel-combinado"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Pílula apenas de progestagênio (minipílula)",
+      "section": "pop"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "pop"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "pop"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Injetável trimestral de medroxiprogesterona (DMPA)",
+      "section": "dmpa"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "dmpa"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "dmpa"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Implante subdérmico de etonogestrel",
+      "section": "implante"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "implante"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "implante"
+    },
+    {
+      "tag": "H2",
+      "title": "11. DIU de cobre: dispositivo, ação e acompanhamento",
+      "section": "diu-cobre"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "diu-cobre"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "diu-cobre"
+    },
+    {
+      "tag": "H2",
+      "title": "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre",
+      "section": "siu-lng"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "siu-lng"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "siu-lng"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Preservativos externo e interno",
+      "section": "preservativos"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "preservativos"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "preservativos"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Diafragma e espermicidas",
+      "section": "barreira"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "barreira"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "barreira"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Métodos comportamentais e reconhecimento da fertilidade",
+      "section": "comportamentais"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "comportamentais"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "comportamentais"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Métodos definitivos: laqueadura e vasectomia",
+      "section": "definitivos"
+    },
+    {
+      "tag": "H3",
+      "title": "O que é e como funciona",
+      "section": "definitivos"
+    },
+    {
+      "tag": "H3",
+      "title": "Uso real, vantagens, limitações e segurança",
+      "section": "definitivos"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Contracepção de emergência",
+      "section": "emergencia"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Início rápido, troca e razoável certeza de não gravidez",
+      "section": "inicio"
+    },
+    {
+      "tag": "H3",
+      "title": "Início rápido e proteção adicional: transforme a tabela em decisão",
+      "section": "inicio"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Puerpério, lactação e pós-aborto",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Situações especiais",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescência",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Obesidade",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Enxaqueca",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Epilepsia e indutores enzimáticos",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Câncer de mama",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Endometriose/adenomiose/sangramento intenso",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Esterilização voluntária no Brasil",
+      "section": "esterilizacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Vasectomia",
+      "section": "esterilizacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Laqueadura",
+      "section": "esterilizacao"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Falhas, sangramento, efeitos adversos e interações",
+      "section": "falhas"
+    },
+    {
+      "tag": "H3",
+      "title": "Sangramento irregular",
+      "section": "falhas"
+    },
+    {
+      "tag": "H3",
+      "title": "Dor com DIU",
+      "section": "falhas"
+    },
+    {
+      "tag": "H3",
+      "title": "Interações",
+      "section": "falhas"
+    },
+    {
+      "tag": "H3",
+      "title": "ACHES",
+      "section": "falhas"
+    },
+    {
+      "tag": "H3",
+      "title": "Como corrigir a repetição genérica",
+      "section": "falhas"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Decisões integradas: emergência, início, DIU e segurança",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.1 Ulipristal versus levonorgestrel: o anticoncepcional do dia seguinte muda o início do método regular",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.2 Um DIU na mesma consulta com teste para IST: quando é seguro?",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.3 Enxaqueca com aura e desejo de amenorreia",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.4 Pós-parto imediato: momento do DIU e risco de expulsão",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.5 Pedido de laqueadura durante o pré-natal",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "15.6 Método regular esquecido ou iniciando no meio do ciclo",
+      "section": "decisoes-avancadas-contracepcao-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — enxaqueca com aura",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — puérpera lactante",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — relação desprotegida há 96 horas",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — sangramento no implante",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — esterilização no parto",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "section": "editorial-depth-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "Métodos combinados: segurança antes da prescrição",
+      "section": "editorial-depth-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "DIU de cobre, SIU-LNG e implante",
+      "section": "editorial-depth-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "Emergência, puerpério e esterilização",
+      "section": "editorial-depth-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "section": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "Elegibilidade não é eficácia: como decidir método",
+      "section": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "Contracepção de emergência: a sequência muda a escolha",
+      "section": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao"
+    },
+    {
+      "tag": "H3",
+      "title": "Pós-parto e LARC: aconselhamento realista",
+      "section": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1695
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 644
+    },
+    {
+      "id": "principios",
+      "title": "1. Princípios do planejamento reprodutivo",
+      "chars": 934
+    },
+    {
+      "id": "eficacia",
+      "title": "2. Eficácia, uso típico e mecanismo",
+      "chars": 1459
+    },
+    {
+      "id": "mec",
+      "title": "3. Critérios Médicos de Elegibilidade — OMS 2025",
+      "chars": 1164
+    },
+    {
+      "id": "combinados",
+      "title": "4. Pílula anticoncepcional combinada",
+      "chars": 1235
+    },
+    {
+      "id": "adesivo",
+      "title": "5. Adesivo contraceptivo combinado",
+      "chars": 898
+    },
+    {
+      "id": "anel",
+      "title": "6. Anel vaginal combinado",
+      "chars": 747
+    },
+    {
+      "id": "injetavel-combinado",
+      "title": "7. Anticoncepcional injetável combinado",
+      "chars": 730
+    },
+    {
+      "id": "pop",
+      "title": "8. Pílula apenas de progestagênio (minipílula)",
+      "chars": 820
+    },
+    {
+      "id": "dmpa",
+      "title": "9. Injetável trimestral de medroxiprogesterona (DMPA)",
+      "chars": 810
+    },
+    {
+      "id": "implante",
+      "title": "10. Implante subdérmico de etonogestrel",
+      "chars": 1183
+    },
+    {
+      "id": "diu-cobre",
+      "title": "11. DIU de cobre: dispositivo, ação e acompanhamento",
+      "chars": 1249
+    },
+    {
+      "id": "siu-lng",
+      "title": "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre",
+      "chars": 1254
+    },
+    {
+      "id": "preservativos",
+      "title": "13. Preservativos externo e interno",
+      "chars": 1150
+    },
+    {
+      "id": "barreira",
+      "title": "14. Diafragma e espermicidas",
+      "chars": 959
+    },
+    {
+      "id": "comportamentais",
+      "title": "15. Métodos comportamentais e reconhecimento da fertilidade",
+      "chars": 1025
+    },
+    {
+      "id": "definitivos",
+      "title": "16. Métodos definitivos: laqueadura e vasectomia",
+      "chars": 838
+    },
+    {
+      "id": "emergencia",
+      "title": "7. Contracepção de emergência",
+      "chars": 945
+    },
+    {
+      "id": "inicio",
+      "title": "8. Início rápido, troca e razoável certeza de não gravidez",
+      "chars": 1636
+    },
+    {
+      "id": "puerperio",
+      "title": "9. Puerpério, lactação e pós-aborto",
+      "chars": 732
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Situações especiais",
+      "chars": 1010
+    },
+    {
+      "id": "esterilizacao",
+      "title": "11. Esterilização voluntária no Brasil",
+      "chars": 986
+    },
+    {
+      "id": "falhas",
+      "title": "12. Falhas, sangramento, efeitos adversos e interações",
+      "chars": 1425
+    },
+    {
+      "id": "decisoes-avancadas-contracepcao-2026",
+      "title": "15. Decisões integradas: emergência, início, DIU e segurança",
+      "chars": 9441
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos clínicos integradores",
+      "chars": 1265
+    },
+    {
+      "id": "revisao",
+      "title": "14. Revisão de alto rendimento",
+      "chars": 1319
+    },
+    {
+      "id": "editorial-depth-planejamento-reprodutivo-contracepcao",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 1150
+    },
+    {
+      "id": "referencias",
+      "title": "Referências",
+      "chars": 870
+    },
+    {
+      "id": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "chars": 1852
+    }
+  ],
+  "references": [
+    "World Health Organization. Medical eligibility criteria for contraceptive use. 6th ed. Geneva: WHO; 2025.",
+    "World Health Organization. Selected practice recommendations for contraceptive use. 4th ed. Geneva: WHO; 2025.",
+    "World Health Organization. WHO guidelines on expanding contraceptive options. Geneva: WHO; 2026.",
+    "World Health Organization. Intrauterine devices (IUDs): fact sheet. Atualizado em 2026.",
+    "Ministério da Saúde. Saúde Sexual e Reprodutiva — Contracepção. Brasil.",
+    "Ministério da Saúde. DIU de cobre. Brasil.",
+    "Ministério da Saúde. Nota Técnica Conjunta nº 198/2026 — orientações sobre acesso ao implante de etonogestrel no SUS.",
+    "Ministério da Saúde. Portarias SECTICS/MS nº 47 e 48/2025 — ampliação/incorporação do implante de etonogestrel.",
+    "Brasil. Lei nº 9.263/1996, alterada pela Lei nº 14.443/2022 — planejamento familiar e esterilização voluntária."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "CDC U.S. SPR 2024",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/when-contraceptive-methods.html",
+      "in_references": false
+    },
+    {
+      "label": "OMS, MEC 6ª ed., 2025",
+      "url": "https://www.who.int/publications/i/item/9789240115583",
+      "in_references": false
+    },
+    {
+      "label": "OMS, SPR 4ª ed., 2025",
+      "url": "https://www.who.int/publications/i/item/9789240115606",
+      "in_references": false
+    },
+    {
+      "label": "CDC, contracepção de emergência, 2024",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html",
+      "in_references": false
+    },
+    {
+      "label": "CDC, DIU e IST, 2024",
+      "url": "https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde, aplicação da Lei 14.443/2022",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/sei_ms-0033574409-nota-tecnica-laqueadura-vasectomia.pdf",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 4,
+  "paragraphs": 85,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "o que e e como funciona",
+      "sections": [
+        "combinados",
+        "adesivo",
+        "anel",
+        "injetavel-combinado",
+        "pop",
+        "dmpa",
+        "implante",
+        "diu-cobre",
+        "siu-lng",
+        "preservativos",
+        "barreira",
+        "comportamentais",
+        "definitivos"
+      ]
+    },
+    {
+      "title": "uso real, vantagens, limitacoes e seguranca",
+      "sections": [
+        "combinados",
+        "adesivo",
+        "anel",
+        "injetavel-combinado",
+        "pop",
+        "dmpa",
+        "implante",
+        "diu-cobre",
+        "siu-lng",
+        "preservativos",
+        "barreira",
+        "comportamentais",
+        "definitivos"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 361,
+      "status": "approved",
+      "section": "diu-cobre",
+      "source_license": "CC BY-SA 4.0 — atribuição, link da licença e indicação de alterações",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-01.webp"
+    },
+    {
+      "id": 363,
+      "status": "approved",
+      "section": "siu-lng",
+      "source_license": "CC BY-SA 4.0 — atribuição, link da licença e indicação de alterações",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-03.webp"
+    },
+    {
+      "id": 365,
+      "status": "approved",
+      "section": "combinados",
+      "source_license": "CC BY-SA 3.0 — atribuição, link da licença e indicação de alterações",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Birth%20control%20pills.jpg"
+    },
+    {
+      "id": 366,
+      "status": "approved",
+      "section": "adesivo",
+      "source_license": "CC BY-SA 3.0 ou CC BY 2.5 — atribuição obrigatória",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Contraceptivepatch.jpg"
+    },
+    {
+      "id": 367,
+      "status": "approved",
+      "section": "anel",
+      "source_license": "Domínio público (dedicação do autor)",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/NuvaRing%20in%20hand.jpg"
+    },
+    {
+      "id": 368,
+      "status": "approved",
+      "section": "barreira",
+      "source_license": "CC BY-SA 4.0 — atribuição, link da licença e indicação de alterações",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-08.webp"
+    },
+    {
+      "id": 369,
+      "status": "approved",
+      "section": "preservativos",
+      "source_license": "Domínio público (dedicação da autora)",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-09.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "combinados",
+      "text": "Antes de prescrever, pesquisar enxaqueca com aura, tabagismo a partir de 35 anos, hipertensão, tromboembolismo, história de AVC, câncer de mama atual, hepatopatias relevantes e uso de medicamentos que interagem. Aferir pressão arterial; exames laboratoriais de rotina não são exigidos para todas as pessoas saudáveis. Náusea, mastalgia, cefaleia e sangramento de escape podem ocorrer, especialmente no início. Benefícios não contraceptivos podem incluir melhora de dismenorreia, acne e sangramento menstrual intenso. Esquecimento de comprimidos requer orientação específica conforme número de doses, semana da cartela e formulação, com contracepção de emergência quando indicada.",
+      "pattern": 0
+    },
+    {
+      "section": "dmpa",
+      "text": "O DMPA é um progestagênio de depósito que inibe a ovulação por várias semanas; formulações intramusculares e subcutâneas têm esquemas próprios, geralmente com reaplicação aproximadamente a cada 13 semanas. Ao contrário de um DIU ou implante, atrasos na aplicação podem abrir uma janela de falha.",
+      "pattern": 0
+    },
+    {
+      "section": "inicio",
+      "text": "Na dúvida sobre gravidez, alguns métodos podem ser iniciados com teste de seguimento em 2–4 semanas, desde que a avaliação clínica e a diretriz permitam. Registrar data de início, método de apoio, contracepção de emergência quando pertinente e o que fazer se houver esquecimento. Fonte: CDC U.S. SPR 2024.",
+      "pattern": 0
+    },
+    {
+      "section": "puerperio",
+      "text": "DIU pode ser inserido imediatamente após a placenta em cenários apropriados ou mais tarde; entre 48 horas e 4 semanas há maior restrição em diretrizes tradicionais. Inserção pós-parto imediata aumenta risco de expulsão, mas melhora acesso.",
+      "pattern": 0
+    },
+    {
+      "section": "principios",
+      "text": "Antes de prescrever, responda a quatro perguntas: há contraindicação? qual eficácia é desejada? qual padrão de uso e sangramento é aceitável? existe necessidade de proteção contra IST? Exames laboratoriais rotineiros, ultrassom, coagulograma e “painel hormonal” não são pré-requisitos universais.",
+      "pattern": 1
+    },
+    {
+      "section": "adesivo",
+      "text": "A aplicação deve ocorrer em pele íntegra e limpa, nos locais recomendados pelo fabricante, evitando as mamas. Verificar aderência e o tempo em que ficou descolado; o manejo depende da duração do descolamento. É necessário avaliar as mesmas contraindicações ao estrogênio da pílula combinada. Algumas formulações podem ter eficácia reduzida em determinadas faixas de peso ou IMC: conferir a bula específica. Efeitos adversos incluem irritação local, náusea, mastalgia e sangramento irregular.",
+      "pattern": 1
+    },
+    {
+      "section": "anel",
+      "text": "Ensinar a inserção e a retirada, o que fazer diante de expulsão, esquecimento de reinserção ou atraso na troca, seguindo a bula. Não é método de barreira e não protege de IST. Compartilha as contraindicações ao estrogênio e os riscos tromboembólicos dos demais combinados; dúvidas sobre uso durante relações, corrimento ou desconforto devem ser abordadas de forma prática.",
+      "pattern": 1
+    },
+    {
+      "section": "pop",
+      "text": "É opção importante para quem tem contraindicação ao estrogênio e para muitos cenários de lactação, considerando elegibilidade e momento pós-parto. Explicar horários, atrasos, vômitos e diarreia prolongada, além de possível sangramento irregular ou amenorreia. Interações com indutores enzimáticos podem comprometer eficácia; avaliar medicações concomitantes e método alternativo.",
+      "pattern": 1
+    },
+    {
+      "section": "injetavel-combinado",
+      "text": "O injetável combinado contém estrogênio e progestagênio e é administrado em intervalos regulares, frequentemente mensais, conforme o produto. Inibe a ovulação; não é equivalente ao depósito trimestral de medroxiprogesterona, que contém somente progestagênio.",
+      "pattern": 2
+    },
+    {
+      "section": "inicio",
+      "text": "Na dúvida sobre gravidez, alguns métodos podem ser iniciados com teste de seguimento em 2–4 semanas, desde que a avaliação clínica e a diretriz permitam. Registrar data de início, método de apoio, contracepção de emergência quando pertinente e o que fazer se houver esquecimento. Fonte: CDC U.S. SPR 2024.",
+      "pattern": 2
+    },
+    {
+      "section": "decisoes-avancadas-contracepcao-2026",
+      "text": "Escolher contracepção exige responder a quatro perguntas na ordem certa: existe exposição com possibilidade de gestação? Qual método é seguro com as comorbidades presentes? Quando a proteção começa? Qual acompanhamento ou mudança de plano será necessária? A elegibilidade da OMS (MEC, 6ª edição, 2025) e as recomendações de prática (SPR, 4ª edição, 2025) respondem a perguntas diferentes. O MEC classifica segurança clínica; o SPR explica início, continuidade e situações de uso. A comparação a seguir ensina a aplicar os dois, sem confundir disponibilidade de produtos nos Estados Unidos com registro e oferta no Brasil.",
+      "pattern": 2
+    },
+    {
+      "section": "decisoes-avancadas-contracepcao-2026",
+      "text": "Paciente de 22 anos relata relação sem proteção há quatro dias e quer começar pílula combinada hoje. Após avaliar risco de gestação já existente, elegibilidade e disponibilidade, a decisão sobre início depende da estratégia de contracepção de emergência. Levonorgestrel de emergência permite iniciar ou retomar método hormonal imediatamente, com método de apoio conforme a apresentação, em geral preservativo por sete dias. Ulipristal atua como modulador do receptor de progesterona e pode ter a ação comprometida quando um progestagênio é iniciado muito cedo: a recomendação CDC 2024 é aguardar ao menos cinco dias para iniciar o método hormonal após ulipristal; usar proteção de barreira durante a espera e por sete dias após iniciar o método (ou até a menstruação, conforme orientado).",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "mapa-mental",
+      "text": "Aplicar MEC: risco cardiovascular, câncer de mama, doença hepática, puerpério, interações e outras condições."
+    },
+    {
+      "section": "mapa-mental",
+      "text": "Rotina, privacidade, desejo de amenorreia, tolerância a sangramento irregular e necessidade de discrição importam."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 365,
+        "section": "combinados",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Birth%20control%20pills.jpg",
+        "source_only": false
+      },
+      {
+        "id": 366,
+        "section": "adesivo",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Contraceptivepatch.jpg",
+        "source_only": false
+      },
+      {
+        "id": 367,
+        "section": "anel",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/NuvaRing%20in%20hand.jpg",
+        "source_only": false
+      },
+      {
+        "id": 361,
+        "section": "diu-cobre",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-01.webp",
+        "source_only": false
+      },
+      {
+        "id": 363,
+        "section": "siu-lng",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-03.webp",
+        "source_only": false
+      },
+      {
+        "id": 369,
+        "section": "preservativos",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-09.webp",
+        "source_only": false
+      },
+      {
+        "id": 368,
+        "section": "barreira",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-planejamento-reprodutivo-contracepcao/contracepcao-real-08.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 7
+  }
+}

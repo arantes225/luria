@@ -1,0 +1,554 @@
+{
+  "key": "lote-07-aula-128-sepse-choque-septico-pediatrico",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-128-sepse-choque-septico-pediatrico.md",
+  "title": "LURIA — LOTE 07 | AULA 128",
+  "source_sha256": "f82046c7586e4eecefea4b7664f5a04a30c417f9337c114313d82f8c783a1317",
+  "chars_estimated": 77275,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — LOTE 07 | AULA 128",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Sepse e choque séptico pediátrico — reconhecimento e ressuscitação conforme 2026",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "0. Antes de escrever: auditoria de sobreposição e referências de Drive",
+      "level": 2
+    },
+    {
+      "line": 17,
+      "title": "1. Entender a resposta à infecção no desenvolvimento infantil",
+      "level": 2
+    },
+    {
+      "line": 23,
+      "title": "1.1. Da inflamação à disfunção orgânica",
+      "level": 3
+    },
+    {
+      "line": 28,
+      "title": "1.2. Quatro compartimentos de disfunção",
+      "level": 3
+    },
+    {
+      "line": 36,
+      "title": "2. Definição contemporânea: Phoenix 2024 e diretriz 2026",
+      "level": 2
+    },
+    {
+      "line": 55,
+      "title": "2.1. Phoenix: classificação de gravidade versus triagem",
+      "level": 3
+    },
+    {
+      "line": 69,
+      "title": "2.2. Causalidade e classificação são duas perguntas distintas",
+      "level": 3
+    },
+    {
+      "line": 75,
+      "title": "3. Clínica por idade e sinais de perigo",
+      "level": 2
+    },
+    {
+      "line": 77,
+      "title": "Lactentes",
+      "level": 3
+    },
+    {
+      "line": 80,
+      "title": "Pré-escolares",
+      "level": 3
+    },
+    {
+      "line": 83,
+      "title": "Escolares e adolescentes",
+      "level": 3
+    },
+    {
+      "line": 86,
+      "title": "Exame imediato",
+      "level": 3
+    },
+    {
+      "line": 91,
+      "title": "4. Reconhecimento precoce é uma decisão clínica, não um “rastreamento mágico”",
+      "level": 2
+    },
+    {
+      "line": 98,
+      "title": "4.1. Triagem em camadas: sinal de perigo, foco e resposta",
+      "level": 3
+    },
+    {
+      "line": 108,
+      "title": "4.2. Choque compensado: por que a pressão pode enganar?",
+      "level": 3
+    },
+    {
+      "line": 114,
+      "title": "4.3. POCUS e investigação sem interromper ressuscitação",
+      "level": 3
+    },
+    {
+      "line": 120,
+      "title": "4.4. O cuidador tem uma janela temporal maior que a consulta",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "5. Diagnóstico dirigido — colher o que muda conduta",
+      "level": 2
+    },
+    {
+      "line": 126,
+      "title": "5.1. Lactato",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "5.2. Culturas e antimicrobianos",
+      "level": 3
+    },
+    {
+      "line": 132,
+      "title": "5.3. Laboratórios de órgãos",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "5.4. Imagem e ultrassom à beira leito",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "5.5. Lactato não é diagnóstico isolado de sepse ou indicação automática de fluidos",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "5.6. Culturas que ajudam a decisão",
+      "level": 3
+    },
+    {
+      "line": 161,
+      "title": "5.7. Distinguir exame de órgão, etiologia e desfecho",
+      "level": 3
+    },
+    {
+      "line": 167,
+      "title": "5.8. Sem biomarcador milagroso para descalonamento",
+      "level": 3
+    },
+    {
+      "line": 171,
+      "title": "6. A primeira hora — terapia proporcional ao risco",
+      "level": 2
+    },
+    {
+      "line": 173,
+      "title": "6.1. Antibiótico: dois relógios",
+      "level": 3
+    },
+    {
+      "line": 180,
+      "title": "6.2. Bolus: depende da estrutura do sistema de saúde",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "6.3. Reavaliar após cada bolus",
+      "level": 3
+    },
+    {
+      "line": 196,
+      "title": "6.4. Vasoativos: nova precisão da diretriz 2026",
+      "level": 3
+    },
+    {
+      "line": 203,
+      "title": "6.5. Hidrocortisona e adjuvantes",
+      "level": 3
+    },
+    {
+      "line": 207,
+      "title": "6.6. Fluidotolerância e capacidade de UTI são critérios da decisão",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "6.7. Por que a pressão sozinha é um objetivo incompleto?",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "6.8. Vasoativo e via de acesso sem dogmatismo",
+      "level": 3
+    },
+    {
+      "line": 235,
+      "title": "6.9. Escolha de fluido e condições especiais",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "6.10. Avaliar criticamente \"terapia de resgate\" versus intervenção comprovada",
+      "level": 3
+    },
+    {
+      "line": 247,
+      "title": "6.11. Controle de foco e de escalonamento são processos separados",
+      "level": 3
+    },
+    {
+      "line": 254,
+      "title": "6.12. Segurança da prescrição pediátrica: verificar o denominador antes do medicamento",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "6.13. A recomendação de oxigênio de 2026 tem população e momento definidos",
+      "level": 3
+    },
+    {
+      "line": 288,
+      "title": "6.14. Complicações e segurança de terapias adjuntas",
+      "level": 3
+    },
+    {
+      "line": 300,
+      "title": "7. O foco importa tanto quanto o antibiótico",
+      "level": 2
+    },
+    {
+      "line": 302,
+      "title": "7.1. Pneumonia com complicação pleural",
+      "level": 3
+    },
+    {
+      "line": 305,
+      "title": "7.2. Abdome agudo",
+      "level": 3
+    },
+    {
+      "line": 308,
+      "title": "7.3. ITU obstrutiva",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "7.4. Cateter contaminado e infecção da corrente sanguínea",
+      "level": 3
+    },
+    {
+      "line": 314,
+      "title": "7.5. Meningite e meningococcemia",
+      "level": 3
+    },
+    {
+      "line": 317,
+      "title": "8. Suporte orgânico nas horas e dias seguintes",
+      "level": 2
+    },
+    {
+      "line": 330,
+      "title": "8.1. O pulmão não é só fonte da infecção: é órgão-alvo",
+      "level": 3
+    },
+    {
+      "line": 338,
+      "title": "8.2. Rim e sobrecarga: uma segunda fase da ressuscitação",
+      "level": 3
+    },
+    {
+      "line": 344,
+      "title": "8.3. Depois do choque: a recuperação pode durar semanas ou meses",
+      "level": 3
+    },
+    {
+      "line": 352,
+      "title": "8.4. O que um programa de qualidade deve medir?",
+      "level": 3
+    },
+    {
+      "line": 362,
+      "title": "9. Diagnósticos diferenciais: nem todo choque febril é séptico",
+      "level": 2
+    },
+    {
+      "line": 377,
+      "title": "10. Algoritmo textual de emergência pediátrica LURIA",
+      "level": 2
+    },
+    {
+      "line": 390,
+      "title": "11. Casos clínicos integradores comentados",
+      "level": 2
+    },
+    {
+      "line": 392,
+      "title": "Caso 1 — criança normotensa com perfusão ruim",
+      "level": 3
+    },
+    {
+      "line": 400,
+      "title": "Caso 2 — gastroenterite em hospital sem UTI",
+      "level": 3
+    },
+    {
+      "line": 408,
+      "title": "Caso 3 — meningococcemia e choque",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "Caso 4 — choque refratário e excesso de bolus",
+      "level": 3
+    },
+    {
+      "line": 425,
+      "title": "Caso 5 — lactato normal e choque compensado",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "Caso 6 — excesso de volume após melhora da perfusão",
+      "level": 3
+    },
+    {
+      "line": 443,
+      "title": "Caso 7 — choque infeccioso em hospital sem UTI",
+      "level": 3
+    },
+    {
+      "line": 452,
+      "title": "Caso 8 — choque séptico ou miocardite?",
+      "level": 3
+    },
+    {
+      "line": 461,
+      "title": "Caso 9 — recuperação pós-sepse e necessidade de seguimento",
+      "level": 3
+    },
+    {
+      "line": 470,
+      "title": "Caso 10 — alvo de oxigênio interpretado fora da janela adequada",
+      "level": 3
+    },
+    {
+      "line": 478,
+      "title": "12. Dezesseis questões autorais com comentários completos",
+      "level": 2
+    },
+    {
+      "line": 480,
+      "title": "Questão 1 — Phoenix 2024",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "Questão 2 — choque antes da hipotensão",
+      "level": 3
+    },
+    {
+      "line": 496,
+      "title": "Questão 3 — antibiótico em choque",
+      "level": 3
+    },
+    {
+      "line": 504,
+      "title": "Questão 4 — cenário sem UTI",
+      "level": 3
+    },
+    {
+      "line": 512,
+      "title": "Questão 5 — fluidos em local com UTI",
+      "level": 3
+    },
+    {
+      "line": 520,
+      "title": "Questão 6 — vasoativos 2026",
+      "level": 3
+    },
+    {
+      "line": 528,
+      "title": "Questão 7 — source control",
+      "level": 3
+    },
+    {
+      "line": 536,
+      "title": "Questão 8 — corticoide",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "Questão 9 — Phoenix e limite de uso",
+      "level": 3
+    },
+    {
+      "line": 553,
+      "title": "Questão 10 — lactato normal em criança grave",
+      "level": 3
+    },
+    {
+      "line": 561,
+      "title": "Questão 11 — fluidos sem UTI",
+      "level": 3
+    },
+    {
+      "line": 569,
+      "title": "Questão 12 — bolus não é volume obrigatório",
+      "level": 3
+    },
+    {
+      "line": 577,
+      "title": "Questão 13 — primeiro vasoativo",
+      "level": 3
+    },
+    {
+      "line": 585,
+      "title": "Questão 14 — suporte pós-sepse",
+      "level": 3
+    },
+    {
+      "line": 595,
+      "title": "Questão 15 — oxigênio após ressuscitação",
+      "level": 3
+    },
+    {
+      "line": 603,
+      "title": "Questão 16 — conferência de unidade e dose",
+      "level": 3
+    },
+    {
+      "line": 611,
+      "title": "13. Pérolas LURIA e prevenção de erros",
+      "level": 2
+    },
+    {
+      "line": 628,
+      "title": "14. Imagens médicas e esquemas candidatos — ainda sem licença/incorporação",
+      "level": 2
+    },
+    {
+      "line": 644,
+      "title": "15. Referências e grau de atualização",
+      "level": 2
+    },
+    {
+      "line": 652,
+      "title": "15A. Fontes e verificação de outubro/2026",
+      "level": 2
+    },
+    {
+      "line": 662,
+      "title": "16. Auditoria editorial e lacunas de certificação",
+      "level": 2
+    },
+    {
+      "line": 680,
+      "title": "16A. Matriz de cobertura — testar conteúdo sem consulta obrigatória a outra aula",
+      "level": 2
+    }
+  ],
+  "references": [
+    "**Auditoria na LURIA:** em “apostilas/sepse-choque-septico/” já existem os rascunhos “rascunho-editorial-lote09.md” e “complemento-editorial-02-lote09.md”, ambos de **sepse no adulto (aula 161)**, que descrevem SOFA, qSOFA, lactato e protocolos de adulto. Eles foram lidos. A segunda versão afirma explicitamente que particularidades pediátricas pertencem a outro capítulo. **Não alterar esses arquivos e não copiar SOFA adulto para uma criança.** Este livro trata apenas do universo pediátrico; sepse neonatal e prematuridade têm ainda algoritmos próprios.",
+    "**Pesquisa e leitura no Drive:** não foi localizado título equivalente de “sepse pediátrica e choque séptico” com abordagem integral. Foram abertos “Sepse neonatal.pdf” (~2 mil caracteres), que lista fatores materno-neonatais e agentes do período neonatal, e “01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf” (~15 mil caracteres), que aborda analgesia, sedação, intubação e ventilação/risco de eventos adversos. Ambos são **referências parciais**. A autoria institucional Estratégia MED não foi comprovada. O material neonatal tem critérios e esquemas que não podem ser extrapolados para qualquer criança de três anos; o resumo de sedoanalgesia não é diretriz específica de sepse. Os PDFs não são fonte de doses nem figuras reproduzíveis.",
+    "**Matriz de lacunas identificadas no conteúdo correlato da LURIA:** ausência de classificação pediátrica Phoenix, diferenças de protocolos entre serviços com e sem leitos intensivos, contextualização da hipotensão tardia, limites dos bolus de cristalóide, atualização de 2026 sobre início precoce de drogas vasoativas e incerteza sobre epinefrina versus norepinefrina, princípios de controle de foco e seguimento funcional.",
+    "1. Weiss SL et al. **Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026.** *Intensive Care Medicine* 2026;52:937–983, publicada 23/03/2026. DOI 10.1007/s00134-026-08360-2. https://link.springer.com/article/10.1007/s00134-026-08360-2",
+    "2. Society of Critical Care Medicine. **Surviving Sepsis Campaign Pediatric Guidelines**, quadro oficial filtrável das recomendações 2026, com força e grau de evidência. https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+    "3. Schlapbach LJ, Watson RS, Sorce LR, et al. **International Consensus Criteria for Pediatric Sepsis and Septic Shock.** *JAMA* 2024;331(8):665–674. DOI 10.1001/jama.2024.0179. https://jamanetwork.com/journals/jama/fullarticle/2814297",
+    "4. Sociedade Brasileira de Pediatria. Documentos científicos e departamentos de infectologia e terapia intensiva pediátrica: verificar versões institucionais específicas antes de citar doses nacionais. https://www.sbp.com.br/",
+    "**Referência de comparação, não atual para tratamento:** SSC Pediatric Guidelines 2020, cuja atualização em 2026 modifica vários itens. Não usar esquema de 2020 como se fosse o mais recente."
+  ],
+  "external_links": [
+    {
+      "url": "https://link.springer.com/article/10.1007/s00134-026-08360-2",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2814297",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38245889/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "O consenso internacional publicado no *JAMA* em 2024 propôs identificar sepse pediátrica em menores de 18 anos com infecção suspeita ou confirmada e **Phoenix Sepsis Score ≥2**, composto por disfunção de sistemas respiratório, cardiovascular, coagulação e neurológico. **Choque séptico** é sepse com **pelo menos um ponto no componente cardiovascular**. Os critérios permitem classificação epidemiológica/prognóstica padronizada, mas **não se deve esperar completar escore para iniciar ressuscitação na criança criticamente enferma**.",
+      "pattern": 0
+    },
+    {
+      "text": "A proposta Phoenix não se aplica diretamente a recém-nascidos/neonatos com **idade pós-concepcional inferior a 37 semanas**. Neonatos e recém-nascidos de risco exigem diretrizes específicas da neonatologia. O termo “sepse grave” de critérios antigos SIRS como categoria distinta deixou de ser preferido na conceituação Phoenix, pois sepse já corresponde a disfunção orgânica ameaçadora à vida.",
+      "pattern": 0
+    },
+    {
+      "text": "**Caso contrastivo A:** lactente com TEC 6 segundos, sonolência e redução de diurese, mas lactato de 1,7 mmol/L: o lactato não afasta disfunção perfusional.",
+      "pattern": 0
+    },
+    {
+      "text": "O sistema cardiovascular pediátrico frequentemente preserva pressão arterial até fases mais avançadas do choque, utilizando vasoconstrição periférica e aumento da frequência cardíaca. Por isso, **hipotensão é sinal grave, mas sua ausência não exclui choque**. A reanimação deve considerar pulso periférico, enchimento capilar, estado mental, temperatura das extremidades, diurese, saturação e resposta às medidas iniciadas.",
+      "pattern": 1
+    },
+    {
+      "text": "A SSC 2026 observa insuficiência de evidências para recomendar *novo rastreamento universal sistemático* em toda criança agudamente doente **além dos protocolos clínicos já estabelecidos**. Entretanto, recomenda programas institucionais de melhoria de desempenho com procedimentos operacionais padronizados para sepse. A frase “não recomendar screening adicional por falta de evidência” não significa “não triagem”: significa valorizar reconhecimento clínico, treinamento, protocolos executáveis, medição de qualidade e redução de atrasos evitáveis.",
+      "pattern": 1
+    },
+    {
+      "text": "A SSC pediátrica 2026 não encontrou evidência suficiente para recomendar rastreamento sistemático *adicional* em todos os pacientes, além dos protocolos clínicos já existentes. Entretanto, **recomenda** que os hospitais mantenham programa de melhoria de qualidade e procedimentos padronizados de identificação e tratamento da sepse. \"Não adicionar triagem universal por evidência insuficiente\" é muito diferente de \"não treinar equipes para reconhecer sepse\".",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria / Emergência / Terapia Intensiva **Situação:** rascunho clínico-editorial em revisão, NÃO PUBLICADO. **Atualização científica de referência:** *Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026* (publicadas em 23/03/2026); *Phoenix Sepsis Criteria* 2024. **Público:** internato, provas de residência, pronto atendimento e equipe de urgências. **Cuidado:** este material não substitui protocolo pediátrico do hospital, cálculos de dose por peso, capacitação em reanimação ou supervisão especializada.",
+      "pattern": 2
+    },
+    {
+      "text": "**Matriz de lacunas identificadas no conteúdo correlato da LURIA:** ausência de classificação pediátrica Phoenix, diferenças de protocolos entre serviços com e sem leitos intensivos, contextualização da hipotensão tardia, limites dos bolus de cristalóide, atualização de 2026 sobre início precoce de drogas vasoativas e incerteza sobre epinefrina versus norepinefrina, princípios de controle de foco e seguimento funcional.",
+      "pattern": 2
+    },
+    {
+      "text": "O consenso internacional publicado no *JAMA* em 2024 propôs identificar sepse pediátrica em menores de 18 anos com infecção suspeita ou confirmada e **Phoenix Sepsis Score ≥2**, composto por disfunção de sistemas respiratório, cardiovascular, coagulação e neurológico. **Choque séptico** é sepse com **pelo menos um ponto no componente cardiovascular**. Os critérios permitem classificação epidemiológica/prognóstica padronizada, mas **não se deve esperar completar escore para iniciar ressuscitação na criança criticamente enferma**.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria / Emergência / Terapia Intensiva **Situação:** rascunho clínico-editorial em revisão, NÃO PUBLICADO. **Atualização científica de referência:** *Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026* (publicadas em 23/03/2026); *Phoenix Sepsis Criteria* 2024. **Público:** internato, provas de residência, pronto atendimento e equipe de urgências. **Cuidado:** este material não substitui protocolo pediátrico do hospital, cálculos de dose por peso, capacitação em reanimação ou supervisão especializada."
+    },
+    {
+      "text": "**Auditoria na LURIA:** em “apostilas/sepse-choque-septico/” já existem os rascunhos “rascunho-editorial-lote09.md” e “complemento-editorial-02-lote09.md”, ambos de **sepse no adulto (aula 161)**, que descrevem SOFA, qSOFA, lactato e protocolos de adulto. Eles foram lidos. A segunda versão afirma explicitamente que particularidades pediátricas pertencem a outro capítulo. **Não alterar esses arquivos e não copiar SOFA adulto para uma criança.** Este livro trata apenas do universo pediátrico; sepse neonatal e prematuridade têm ainda algoritmos próprios."
+    }
+  ]
+}

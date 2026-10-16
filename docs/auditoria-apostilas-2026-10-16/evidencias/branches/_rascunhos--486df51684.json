@@ -1,0 +1,369 @@
+{
+  "sha": "486df51684196ace7954360a8c4634b31fc39724",
+  "path": "apostilas/_rascunhos/lote-11-aula-230-osteoporose-sarcopenia-fragilidade.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--486df51684",
+  "title": "LURIA — Apostila 230: Osteoporose, sarcopenia e fragilidade",
+  "format": ".md",
+  "chars_estimated": 88521,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 230: Osteoporose, sarcopenia e fragilidade"
+    },
+    {
+      "title": "Etapa zero — inventário, fontes e limites da revisão"
+    },
+    {
+      "title": "Matriz de cobertura e de não duplicação"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "PARTE I — OSTEOPOROSE: DO OSSO À PREVENÇÃO DE FRATURAS"
+    },
+    {
+      "title": "1. Por que a osteoporose importa?"
+    },
+    {
+      "title": "2. Fisiologia da remodelação e fisiopatologia da perda óssea"
+    },
+    {
+      "title": "2.1 O papel da unidade músculo–osso"
+    },
+    {
+      "title": "2.2 Ganho de massa óssea e determinantes de longo prazo"
+    },
+    {
+      "title": "3. Epidemiologia, risco e história clínica orientada"
+    },
+    {
+      "title": "3.1 Fatores para perguntar na primeira consulta"
+    },
+    {
+      "title": "4. Diagnóstico clínico: reconhecer fratura por fragilidade"
+    },
+    {
+      "title": "5. Densitometria óssea: executar, interpretar e não errar"
+    },
+    {
+      "title": "5.1 T-score versus Z-score"
+    },
+    {
+      "title": "5.2 Artefatos que tornam a DXA enganosa"
+    },
+    {
+      "title": "5.3 Quem deve fazer DXA"
+    },
+    {
+      "title": "6. FRAX Brasil e estratificação de risco"
+    },
+    {
+      "title": "6.1 Estratificação do PCDT 2025/2026"
+    },
+    {
+      "title": "7. Investigação de causas secundárias de osteoporose"
+    },
+    {
+      "title": "7.1 Exames iniciais e perguntas que respondem"
+    },
+    {
+      "title": "7.2 Glucocorticoides e medicamentos"
+    },
+    {
+      "title": "7.3 Hiperparatireoidismo e doença renal"
+    },
+    {
+      "title": "8. Manejo não farmacológico e prevenção de quedas"
+    },
+    {
+      "title": "8.1 Exercício com supervisão proporcional ao risco"
+    },
+    {
+      "title": "8.2 Nutrição, cálcio e vitamina D"
+    },
+    {
+      "title": "8.3 Quedas: intervenção multifatorial e individualizada"
+    },
+    {
+      "title": "9. Farmacoterapia: escolher pelo risco e pelo sistema de saúde"
+    },
+    {
+      "title": "9.1 Bisfosfonatos"
+    },
+    {
+      "title": "9.2 Denosumabe: indicação e perigo da interrupção"
+    },
+    {
+      "title": "9.3 Romosozumabe: alto risco e transição obrigatória"
+    },
+    {
+      "title": "9.4 Teriparatida e outros agentes: separar evidência de acesso"
+    },
+    {
+      "title": "9.5 Comparação prática dos fármacos"
+    },
+    {
+      "title": "10. Falha terapêutica, monitoramento e prevenção secundária"
+    },
+    {
+      "title": "11. Manejo imediato da fratura osteoporótica"
+    },
+    {
+      "title": "PARTE II — SARCOPENIA: FORÇA, MÚSCULO E CAPACIDADE FUNCIONAL"
+    },
+    {
+      "title": "12. Definição moderna e a armadilha de medir só massa muscular"
+    },
+    {
+      "title": "12.1 Mecanismos de perda de músculo"
+    },
+    {
+      "title": "12.2 Obesidade sarcopênica"
+    },
+    {
+      "title": "13. Diagnóstico estruturado da sarcopenia: sequência EWGSOP2"
+    },
+    {
+      "title": "13.1 Encontrar casos de risco"
+    },
+    {
+      "title": "13.2 Testar força"
+    },
+    {
+      "title": "13.3 Confirmar quantidade/qualidade muscular"
+    },
+    {
+      "title": "13.4 Determinar gravidade por desempenho"
+    },
+    {
+      "title": "13.5 Algoritmo operacional"
+    },
+    {
+      "title": "14. Diagnósticos diferenciais de perda funcional muscular"
+    },
+    {
+      "title": "15. Tratamento da sarcopenia: funcionalidade antes do número"
+    },
+    {
+      "title": "15.1 Treinamento de força e equilíbrio"
+    },
+    {
+      "title": "15.2 Nutrição individualizada"
+    },
+    {
+      "title": "15.3 Reabilitação após internação"
+    },
+    {
+      "title": "PARTE III — FRAGILIDADE E CUIDADO INTEGRADO"
+    },
+    {
+      "title": "16. Fragilidade clínica: vulnerabilidade não é idade cronológica"
+    },
+    {
+      "title": "16.1 Modelo fenotípico de Fried"
+    },
+    {
+      "title": "16.2 Modelo multidimensional e IVCF-20 na APS brasileira"
+    },
+    {
+      "title": "16.3 Clinical Frailty Scale e interpretação contextual"
+    },
+    {
+      "title": "17. Avaliação geriátrica ampla orientada ao problema"
+    },
+    {
+      "title": "17.1 Polifarmácia e cascata iatrogênica"
+    },
+    {
+      "title": "17.2 Fragilidade no perioperatório e na internação"
+    },
+    {
+      "title": "18. Integração: osteoporose + sarcopenia + fragilidade"
+    },
+    {
+      "title": "PARTE IV — ALGORITMOS, DIFERENCIAIS E APLICAÇÃO CLÍNICA"
+    },
+    {
+      "title": "19. Algoritmo A — pessoa com fratura por baixo impacto"
+    },
+    {
+      "title": "20. Algoritmo B — DXA baixa sem fratura prévia"
+    },
+    {
+      "title": "21. Algoritmo C — idoso com redução de força e quedas"
+    },
+    {
+      "title": "22. Principais armadilhas da residência e do internato"
+    },
+    {
+      "title": "23. Resumo clínico de alta retenção"
+    },
+    {
+      "title": "24. Casos clínicos originais — raciocínio comentado"
+    },
+    {
+      "title": "Caso 1 — Fratura de quadril com densitometria “quase normal”"
+    },
+    {
+      "title": "Caso 2 — “Densitometria normal” na coluna de paciente com artrose intensa"
+    },
+    {
+      "title": "Caso 3 — Homem de 48 anos com “osteoporose” por laudo isolado"
+    },
+    {
+      "title": "Caso 4 — Duas fraturas durante tratamento e indicação de romosozumabe"
+    },
+    {
+      "title": "Caso 5 — Suspensão de denosumabe sem plano e fraturas vertebrais"
+    },
+    {
+      "title": "Caso 6 — Idoso com obesidade, perda de força e SARC-F positivo"
+    },
+    {
+      "title": "Caso 7 — IVCF-20 alto após alta por pneumonia"
+    },
+    {
+      "title": "Caso 8 — Fratura vertebral com sinais neurológicos: urgência disfarçada"
+    },
+    {
+      "title": "Caso 9 — Menopausa precoce e investigação de perda óssea secundária"
+    },
+    {
+      "title": "Caso 10 — DRC avançada com PTH elevado"
+    },
+    {
+      "title": "25. Questões inéditas de residência — todas as alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — Osteoporose clínica e densitometria"
+    },
+    {
+      "title": "Questão 2 — Escore em mulher antes da menopausa"
+    },
+    {
+      "title": "Questão 3 — Artefatos em DXA"
+    },
+    {
+      "title": "Questão 4 — Falha terapêutica do PCDT brasileiro"
+    },
+    {
+      "title": "Questão 5 — Romosozumabe e risco cardiovascular"
+    },
+    {
+      "title": "Questão 6 — Suspensão de denosumabe"
+    },
+    {
+      "title": "Questão 7 — Preparo para bisfosfonato oral"
+    },
+    {
+      "title": "Questão 8 — Diagnóstico EWGSOP2"
+    },
+    {
+      "title": "Questão 9 — SARC-F"
+    },
+    {
+      "title": "Questão 10 — Critérios de Fried"
+    },
+    {
+      "title": "Questão 11 — IVCF-20 na APS"
+    },
+    {
+      "title": "Questão 12 — Fragilidade e perioperatório"
+    },
+    {
+      "title": "Questão 13 — Osteomalácia versus osteoporose"
+    },
+    {
+      "title": "Questão 14 — DRC e doença óssea"
+    },
+    {
+      "title": "26. Questões para ensino clínico e ligação com a plataforma"
+    },
+    {
+      "title": "27. Plano visual, ainda SEM imagem aprovada"
+    },
+    {
+      "title": "28. Referências bibliográficas — verificáveis"
+    },
+    {
+      "title": "29. Auditoria técnica inicial e bloqueadores"
+    }
+  ],
+  "reference_entries": [
+    "**Acervo interno:** inventário do lote 11 confirma o tema n.º 230 como pendente. Para evitar duplicações, esta aula fica responsável pelo eixo integrado saúde óssea–função muscular–vulnerabilidade clínico-funcional. A menopausa deve conservar seu conteúdo ginecológico próprio; hiperparatireoidismo e doença renal crônica têm tratamento etiológico em aulas específicas; traumatologia mantém redução/fixação de fraturas; obesidade, aulas relacionadas às alterações metabólicas. São necessárias referências cruzadas, não novas cópias de todas essas apostilas.",
+    "**Busca e leitura real no Google Drive (15/10/2026):** pesquisas por “OSTEOPOROSE”, “SARCOPENIA”, “GERIATRIA”, “FRAGILIDADE” e “FRATURA” identificaram documentos relacionados, mas **nenhuma apostila equivalente abrangendo as três síndromes**. Foram lidos, como comparação temática parcial, “17 - CABECA E PESCOCO - PARATIREOIDE II - HIPERPARATIREOIDISMO PRIMARIO..pdf” (7.469 caracteres extraídos), “Menopausa e Climatério.pdf” (1.603 caracteres) e “04 - TRAUMATOLOGIA .pdf” (7.769 caracteres). São materiais de terceiros com restrições indicadas de circulação e finalidade independente. **Não foram ",
+    "**Fontes clínicas primárias conferidas para o texto:** Brasil, Ministério da Saúde, PCDT Osteoporose (Portaria Conjunta SAES/SECTICS 22 de 22/10/2025, anexo atualizado em 29/01/2026); NOGG 2024; ISCD Official Positions 2023; EWGSOP2 (2019); diretriz de fragilidade ICFSR (2019); Ministério da Saúde, IVCF-20 em e-SUS APS; recomendações ESPEN de proteína e exercício; diretriz de nutrição sarcopenia/fragilidade 2025 publicada em janeiro de 2026. Referências verificáveis ao final. Dados de disponibilidade no SUS são distintos de opções farmacológicas disponíveis na prática privada.",
+    "---",
+    "**Não confundir:** a palavra fragilidade aparece em dois contextos. “Fratura por fragilidade” descreve fratura diante de trauma mínimo; “síndrome de fragilidade” é estado de vulnerabilidade fisiológica multidimensional. As entidades se relacionam, mas nenhuma implica necessariamente a outra.",
+    "**Esclerostina**, produzida por osteócitos, inibe a sinalização Wnt e a formação óssea. O romosozumabe neutraliza essa proteína, produzindo efeito predominantemente formador com componente antirreabsortivo. **PTH intermitente** tem comportamento anabólico diferente da exposição cronicamente elevada ao PTH, que pode favorecer reabsorção, como ocorre no hiperparatireoidismo. Essa distinção evita a ideia incorreta de que “todo PTH enfraquece” ou “todo PTH fortalece”.",
+    "- Fraturas anteriores: sítio, idade, mecanismo, radiografia, tratamento, perda funcional e quedas no último ano.",
+    "- História parental de fratura de quadril, história familiar de doença óssea, altura na juventude e perda atual de estatura.",
+    "- Menopausa precoce, ooforectomia, amenorreia, hipogonadismo masculino, gestação/lactação quando pertinentes.",
+    "- Corticoide sistêmico (dose e duração), terapia de privação androgênica, inibidores de aromatase, antiepilépticos, drogas que provocam quedas ou aceleram perda óssea.",
+    "- Artrite reumatoide, doença celíaca, doença inflamatória intestinal, tireotoxicose, hiperparatireoidismo, DRC, hepatopatia, neoplasias, desnutrição e procedimentos bariátricos.",
+    "- Tabagismo, álcool, exposição solar em contexto clínico apropriado, dieta, baixa ingestão de cálcio e atividade física reduzida.",
+    "- Visão, equilíbrio, hipotensão postural, polifarmácia, marcha, medo de cair, ambiente doméstico e suporte.",
+    "**Armadilha:** a lista de riscos é uma ferramenta para construir hipóteses, não autorização para solicitar indiscriminadamente cortisol, marcadores de neoplasia, cobre, exames genéticos e painéis hormonais em todos os pacientes.",
+    "**Fratura vertebral:** pode se apresentar com dor dorsal/lombar aguda após movimento banal, cifose progressiva ou perda de estatura; muitos casos são assintomáticos. Quando há dor intensa nova, déficit neurológico, febre, trauma significativo ou suspeita neoplásica, a investigação urgente deve considerar compressão medular, infecção e outras condições, não apenas osteoporose simples.",
+    "**T-score** compara o valor medido ao de população jovem de referência. Em mulheres na pós-menopausa e homens com idade ≥50 anos, o diagnóstico densitométrico usa T-score:",
+    "- ≥ -1,0: densidade na faixa de referência.",
+    "- Entre -1,0 e acima de -2,5: **baixa massa óssea** (“osteopenia”).",
+    "- ≤ -2,5: **osteoporose densitométrica**, nos sítios válidos.",
+    "**Z-score** compara com indivíduos de sexo/idade similares. Em mulheres antes da menopausa e homens com menos de 50 anos, preferir Z-score; ≤ -2,0 significa “abaixo do esperado para a idade”, **não** autoriza rotular osteoporose apenas com a DXA. Em uma pessoa de 35 anos, fratura, endocrinopatia, medicamento e contexto etiológico são decisivos. A transição menopausal tem particularidades segundo ISCD.",
+    "**Sítios válidos:** coluna L1–L4 em projeção PA/AP conforme equipamento, colo femoral e quadril total; em situações específicas, 1/3 distal do rádio. Não usar região de Ward, trocânter isolado ou a pior vértebra individual para definir diagnóstico. O PCDT explicita terço do rádio em sua classificação e indicação.",
+    "**O FRAX não sabe tudo:** não quantifica adequadamente número/recência de fraturas em sua entrada simples, propensão a quedas, dose cumulativa de corticoide em todos os cenários ou gravidade de fragilidade clínica; tem limitações em populações específicas e pessoas já em tratamento. Uma probabilidade relativamente baixa não anula indicação decorrente de fratura recente de quadril. **Não criar um único corte percentual “universal brasileiro”** sem verificar a calculadora e a política local.",
+    "**Importante:** “alto risco” não é sinônimo de “ter o mesmo medicamento para todos”; a seleção no SUS segue critérios específicos adicionais. **Fragilidade no PCDT para critérios de acesso** é definida de modo operacional e difere de Fried/IVCF-20; as três classificações não são intercambiáveis.",
+    "**Quadro clínico de osteomalácia:** dor óssea difusa, fraqueza proximal, risco de pseudofraturas e alterações de fosfato, vitamina D, FA ou PTH conforme causa. DXA baixa pode coexistir, mas uma prescrição de bisfosfonato antes de identificar importante distúrbio de mineralização ou hipocalcemia pode gerar riscos. **Mieloma múltiplo** entra no diferencial se anemia, dor óssea, disfunção renal, hipercalcemia, proteína monoclonal ou lesões líticas sustentarem suspeita; não é justificativa para rastreio indiscriminado de neoplasia.",
+    "**Atualização crítica Brasil:** o PCDT regido pela Portaria Conjunta nº 22/2025, anexo alterado em 29/01/2026, inclui romosozumabe com critérios assistenciais específicos para mulheres na pós-menopausa com **osteoporose grave e falha terapêutica**; a atualização registrou **exclusão da teriparatida do protocolo do SUS**. Isso **não** significa que teriparatida jamais seja opção clínica no setor privado ou que romosozumabe possa ser fornecido para qualquer paciente com T-score < -2,5. Não apresentar medicamentos de mercado como automaticamente incorporados ao SUS.",
+    "**Antes de iniciar:** corrigir hipocalcemia, avaliar disfagia/esôfago, habilidade de seguir instruções, depuração renal, condição odontológica quando apropriado e risco de gravidez. O PCDT indica que alendronato não é recomendado com clearance de creatinina inferior a 35 mL/min, embora limite de classe varie por produto. Não usar “TFG 30” como regra universal para todos. Eventos: sintomas esofágicos e gastrintestinais; raramente osteonecrose de mandíbula e fratura atípica de fêmur em uso prolongado. Esses riscos devem ser discutidos de forma proporcional ao benefício para prevenção de fraturas",
+    "**Ácido zoledrônico, 5 mg IV uma vez ao ano:** opção prevista no PCDT em intolerância, barreiras de deglutição ou problemas de absorção de bisfosfonato oral e conforme critérios de acesso. Checar função renal, cálcio, vitamina D e hidratação, além das contraindicações de bula antes da infusão; reação de fase aguda com mialgia/febre pode ocorrer na primeira administração. **Não confundir a dose anual de osteoporose com esquemas oncológicos de zoledronato**, que têm indicações e intervalos próprios.",
+    "**Pamidronato** tem papel subsidiário no PCDT em indisponibilidade ou contraindicação ao zoledronato; não ensinar como “preferencial” nem extrapolar esquema de hipercalcemia maligna para osteoporose.",
+    "---",
+    "**Sarcopenia primária** é aquela ligada predominantemente ao envelhecimento sem outra causa evidente; **secundária** decorre de inatividade, doença sistêmica ou nutrição insuficiente. A classificação serve para procurar alvos tratáveis. O termo **sarcopenia aguda** é usado quando a perda aparece em curto prazo, como durante doença crítica; distinguir de quadro crônico influencia metas e urgência de reabilitação."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file.",
+    "https://www.nogg.org.uk/full-guideline.",
+    "https://iscd.org/official-positions-2023/.",
+    "https://doi.org/10.1093/ageing/afy169.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800406/.",
+    "https://sisaps.saude.gov.br/sistemas/esusaps/docs/versoes/versao_5_3/",
+    "https://sisaps.saude.gov.br/sistemas/esusaps/docs/manual/TERRITORIO/territorio_04/.",
+    "https://pubmed.ncbi.nlm.nih.gov/24814383/.",
+    "https://doi.org/10.1111/ggi.70275."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes clínicas primárias conferidas para o texto:** Brasil, Ministério da Saúde, PCDT Osteoporose (Portaria Conjunta SAES/SECTICS 22 de 22/10/2025, anexo atualizado em 29/01/2026); NOGG 2024; ISCD Official Positions 2023; EWGSOP2 (2019); diretriz de fragilidade ICFSR (2019); Ministério da Saúde, IVCF-20 em e-SUS APS; recomendações ESPEN de proteína e exercício; diretriz de nutrição sarcopenia/fragilidade 2025 publicada em janeiro de 2026. Referências verificáveis ao final. Dados de disponibilidade no SUS são distintos de opções farmacológicas disponíveis na prática privada."
+    },
+    {
+      "text": "O pico de massa óssea é construído na infância, adolescência e início da idade adulta, modulado por genética, atividade física, estado nutricional, hormônios sexuais, doenças crônicas e medicamentos. Pessoas com amenorreia prolongada, doenças inflamatórias ou restrição alimentar podem chegar à maturidade com reserva óssea menor. Na velhice, o estoque existente e a velocidade de perda importam. Essa visão de curso de vida explica por que prevenção não começa somente aos 65 anos."
+    },
+    {
+      "text": "No PCDT brasileiro vigente, a presença de fraturas maiores por baixo impacto comprovadas por imagem pode preencher critério assistencial sem necessidade de densitometria prévia. Se há fratura por fragilidade, **não atrasar investigação e prevenção secundária aguardando DXA** quando o tratamento é clinicamente indicado e não há contraindicação. Esse princípio é essencial em serviços com acesso limitado."
+    },
+    {
+      "text": "A absorciometria por dupla energia de raios X (DXA) mede densidade mineral óssea areal, usualmente em coluna lombar anteroposterior e quadril, produzindo resultados em g/cm² e escores padronizados. Ela não mede diretamente porosidade, qualidade do colágeno ou todas as dimensões da microarquitetura. A DXA é útil para diagnóstico em grupos adequados, estratificação de risco e seguimento se houver comparabilidade técnica."
+    },
+    {
+      "text": "**T-score** compara o valor medido ao de população jovem de referência. Em mulheres na pós-menopausa e homens com idade ≥50 anos, o diagnóstico densitométrico usa T-score: - ≥ -1,0: densidade na faixa de referência. - Entre -1,0 e acima de -2,5: **baixa massa óssea** (“osteopenia”). - ≤ -2,5: **osteoporose densitométrica**, nos sítios válidos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,192 @@
+{
+  "sha": "7c3dde73b54225e011c7c70d75b3534bdb126ee4",
+  "path": "apostilas/_rascunhos/lote-08-aula-174-massas-anexiais-cancer-ovario.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--7c3dde73b5",
+  "title": "LURIA | Aula 174 — Massas anexiais e câncer de ovário",
+  "format": ".md",
+  "chars_estimated": 43560,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 174 — Massas anexiais e câncer de ovário"
+    },
+    {
+      "title": "Etapa zero — inventário, material comparativo e atualização"
+    },
+    {
+      "title": "Competências esperadas"
+    },
+    {
+      "title": "1. Anatomia e definição: massa anexial não é sinônimo de tumor de ovário"
+    },
+    {
+      "title": "2. Epidemiologia e risco: quais dados alteram probabilidade?"
+    },
+    {
+      "title": "3. Sinais e sintomas: quando procurar uma emergência?"
+    },
+    {
+      "title": "Perguntas clínicas que não podem faltar"
+    },
+    {
+      "title": "4. Ultrassonografia: o exame inicial de escolha na maioria dos casos"
+    },
+    {
+      "title": "5. IOTA: das características isoladas ao raciocínio probabilístico"
+    },
+    {
+      "title": "Simple Rules: reconhecer critérios benignos e suspeitos"
+    },
+    {
+      "title": "6. O-RADS US v2022: comunicar risco e próximo passo"
+    },
+    {
+      "title": "RM pélvica: quando acrescenta valor"
+    },
+    {
+      "title": "7. Marcadores tumorais: nenhum substitui imagem ou histologia"
+    },
+    {
+      "title": "8. Diferenciais: abordagem por idade e urgência"
+    },
+    {
+      "title": "9. Patologia oncológica: origens celulares e consequências"
+    },
+    {
+      "title": "10. Exames de extensão e suspeita de carcinoma epitelial"
+    },
+    {
+      "title": "11. Cirurgia oncológica: por que operar antes ou depois da quimioterapia?"
+    },
+    {
+      "title": "Citorredução primária"
+    },
+    {
+      "title": "Neoadjuvância e cirurgia de intervalo"
+    },
+    {
+      "title": "Estadiamento e linfonodos"
+    },
+    {
+      "title": "12. BRCA, HRD, PARP e manutenção: por que testar cedo?"
+    },
+    {
+      "title": "13. Populações especiais e preservação da fertilidade"
+    },
+    {
+      "title": "14. Complicações, prognóstico e seguimento"
+    },
+    {
+      "title": "15. Algoritmos LURIA"
+    },
+    {
+      "title": "Fluxo A — Massa anexial encontrada incidentalmente"
+    },
+    {
+      "title": "Fluxo B — Suspeita de câncer ovariano epitelial avançado"
+    },
+    {
+      "title": "Fluxo C — Dor pélvica aguda"
+    },
+    {
+      "title": "16. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Cisto simples incidental em menacme"
+    },
+    {
+      "title": "Caso 2 — Dor aguda, fluxo arterial preservado"
+    },
+    {
+      "title": "Caso 3 — Endometrioma e desejo de gravidez"
+    },
+    {
+      "title": "Caso 4 — Pós-menopausa com lesão suspeita"
+    },
+    {
+      "title": "Caso 5 — Marcador elevado não é câncer"
+    },
+    {
+      "title": "Caso 6 — Carcinoma avançado e baixa chance de cirurgia completa"
+    },
+    {
+      "title": "Caso 7 — Massa em adolescente e AFP elevada"
+    },
+    {
+      "title": "Caso 8 — Abscesso tubo-ovariano e choque"
+    },
+    {
+      "title": "17. Questões autorais comentadas — provas de residência"
+    },
+    {
+      "title": "18. Revisão rápida: armadilhas úteis"
+    },
+    {
+      "title": "19. Imagens e visuais a curar para aprovação editorial"
+    },
+    {
+      "title": "20. Referências médicas e rastreabilidade"
+    },
+    {
+      "title": "Limitações e divergências declaradas"
+    },
+    {
+      "title": "21. Auditoria desta versão — NÃO CONCLUÍDA"
+    }
+  ],
+  "reference_entries": [
+    "1. American College of Radiology. **O-RADS US v2022**, avaliação e manejo de massas anexiais. https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS",
+    "2. Andreotti RF, et al. **O-RADS US v2022: An Update from the ACR Committee.** Radiology. 2023. DOI: 10.1148/radiol.230685. https://pubs.rsna.org/radiology/doi/10.1148/radiol.230685",
+    "3. ESGO/ISUOG/IOTA/ESGE. **Consensus Statement on preoperative diagnosis of ovarian tumors.** Ultrasound Obstet Gynecol. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8273689/",
+    "4. ISUOG/IOTA Group. **Updated Consensus Opinion on terms, definitions and measurements of adnexal tumors.** 08/04/2026. https://www.isuog.org/resource/updated-consensus-opinion-on-the-terms-definitions-and-measurements-to-describe-the-sonographic-features-of-adnexal-tumors-from-the-international-ovarian-tumor-analysis-iota-group.html",
+    "5. Gaillard S, et al. **ASCO Guideline Update: Neoadjuvant Chemotherapy for Newly Diagnosed Advanced Ovarian Cancer.** J Clin Oncol. 2025;43:868–891. DOI: 10.1200/JCO-24-02589. https://ascopubs.org/doi/10.1200/JCO-24-02589",
+    "6. National Cancer Institute. **Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment (PDQ).** https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+    "7. ACOG. **Evaluation and Management of Adnexal Masses.** Practice Bulletin 174 (2016, reafirmado 2025). https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2016/11/evaluation-and-management-of-adnexal-masses",
+    "- Benchmark do Drive contém abreviações e generalizações sobre CA-125, biópsia e cirurgia, não reaproveitadas como regras universais.",
+    "- ACR 2022 e IOTA 2026 refinam terminologia e condutas; intervalos de acompanhamento devem ser consultados na tabela completa, não inferidos só da categoria.",
+    "- Indicação e acesso a BRCA/HRD, manutenção e tratamento neoadjuvante precisam ser revisados conforme regulamentação brasileira, centro e protocolo do SUS/convênio.",
+    "- Este texto serve de base didática autoral, não substitui prescrição/consentimento/decisão clínica no caso individual.",
+    "**Próximos passos editoriais obrigatórios antes de certificar:** ampliar a matriz O-RADS com exemplos de tamanho por estado menopausal, revisar manejo de cistos benignos e endometriomas, expandir FIGO e técnicas de preservação ovariana, completar seguimento e terapias por histologia, aprovar imagens reais, validar cada dose e tratamento oncológico por fonte nacional, converter ao formato nativo e testar compreensão de casos com o próprio texto."
+  ],
+  "external_urls": [
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS",
+    "https://pubs.rsna.org/radiology/doi/10.1148/radiol.230685",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8273689/",
+    "https://www.isuog.org/resource/updated-consensus-opinion-on-the-terms-definitions-and-measurements-to-describe-the-sonographic-features-of-adnexal-tumors-from-the-international-ovarian-tumor-analysis-iota-group.html",
+    "https://ascopubs.org/doi/10.1200/JCO-24-02589",
+    "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2016/11/evaluation-and-management-of-adnexal-masses"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Lesão cística** contém predominantemente líquido; **sólida** tem tecido; **mista** reúne componentes. Septos, papilas e vascularização mudam estimativa de risco. O ultrassom descreve morfologia e comportamento; não é diagnóstico histológico definitivo de malignidade."
+    },
+    {
+      "text": "**Dor e atraso menstrual/sangramento genital** demandam teste de gravidez em toda pessoa com potencial de gestação, inclusive se usa contraceptivo. Gravidez ectópica pode simular cisto anexial; ruptura com choque é urgência. **Febre, dor pélvica, leucocitose e massa complexa** sugerem abscesso tubo-ovariano entre diagnósticos; avaliar risco de sepse/peritonite e condutas de antibioticoterapia e drenagem conforme estado clínico."
+    },
+    {
+      "text": "**CA-125:** útil em determinados cenários de risco de câncer epitelial, planejamento e seguimento, mas não é diagnóstico específico. Pode elevar-se em endometriose, menstruação, gravidez, doença inflamatória pélvica, miomas, cirrose, ascite de outras causas e tumores não ovarianos. Valor normal não exclui câncer em estágio inicial ou em determinados subtipos. Não estabelecer que “qualquer CA-125 acima de 35 é câncer” ou “acima de 200 é prova de malignidade” em qualquer faixa etária."
+    },
+    {
+      "text": "| Cenário | Marcadores úteis em contexto | Erro a evitar | |---|---|---| | Massa suspeita epitelial em pós-menopausa | CA-125 como informação adicional, junto de US/TC | Concluir diagnóstico pelo CA-125 isolado | | Tumor em adolescente | AFP, β-hCG, LDH conforme imagem e suspeita | Achar que todo tumor jovem é epitelial | | Sinais de hiperestrogenismo e massa sólida | Inibina/AMH/estradiol em suspeita específica | Usar estradiol isolado como confirmação | | Massa mucinosa volumosa | CEA/CA19-9 e avaliação GI quando indicada | Supor primário ovariano sem investigar secundário | | Seguimento após carcinoma epitelial | CA-125 se era informativo "
+    },
+    {
+      "text": "**ASCO 2025:** em estágio III–IV suspeito, toda paciente deve ser avaliada por oncoginecologia e exames de extensão. Se a citorredução completa inicial for improvável ou o risco perioperatório for alto, recomenda-se **quimioterapia neoadjuvante** em vez de cirurgia imediata. **Antes da neoadjuvância, obter confirmação histológica de carcinoma invasivo**, pois tuberculose peritoneal, tumores gastrointestinais e outras entidades podem simular câncer de ovário."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

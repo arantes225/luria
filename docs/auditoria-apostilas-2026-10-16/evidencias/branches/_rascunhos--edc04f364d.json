@@ -1,0 +1,163 @@
+{
+  "sha": "edc04f364d0d9afd1ba09ffef36ad5c8a2361f38",
+  "path": "apostilas/_rascunhos/lote-08-aula-176-complemento-02-etiologia-prevencao.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--edc04f364d",
+  "title": "LURIA — Aula 176 | Complemento editorial 02",
+  "format": ".md",
+  "chars_estimated": 20903,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 176 | Complemento editorial 02"
+    },
+    {
+      "title": "AVC: etiologia, prevenção secundária, armadilhas de imagem e crises neurológicas associadas"
+    },
+    {
+      "title": "A. Da imagem vascular à decisão etiológica"
+    },
+    {
+      "title": "A1. Anatomia aplicada à imagem: defeito clínico e vaso provável"
+    },
+    {
+      "title": "A2. Conflitos frequentes entre horários e elegibilidade"
+    },
+    {
+      "title": "B. Classificação etiológica: a base da prevenção secundária"
+    },
+    {
+      "title": "B1. As categorias TOAST em linguagem clínica"
+    },
+    {
+      "title": "B2. Fibrilação atrial, infarto e decisão de anticoagulação"
+    },
+    {
+      "title": "B3. Antiagregação simples versus dupla"
+    },
+    {
+      "title": "B4. Doença carotídea e intervenções"
+    },
+    {
+      "title": "C. Neuroimagem comentada: achados e contradições"
+    },
+    {
+      "title": "C1. TC inicial aparentemente normal, RM posteriormente positiva"
+    },
+    {
+      "title": "C2. Imagem no AVC posterior"
+    },
+    {
+      "title": "C3. Transformação hemorrágica do infarto"
+    },
+    {
+      "title": "C4. HSA e pseudocefaleias primárias"
+    },
+    {
+      "title": "D. O que fazer nas primeiras 72 horas"
+    },
+    {
+      "title": "D1. Deglutição, aspiração, hidratação e glicose"
+    },
+    {
+      "title": "D2. Quando edema é mais perigoso que o tamanho visível"
+    },
+    {
+      "title": "D3. Mobilização e cuidado preventivo"
+    },
+    {
+      "title": "E. Crises após lesão vascular: um novo mapa diferencial"
+    },
+    {
+      "title": "E1. Crise aguda sintomática versus epilepsia pós-AVC"
+    },
+    {
+      "title": "E2. Todd versus isquemia persistente: decisão prática"
+    },
+    {
+      "title": "E3. Estado de mal não convulsivo após crise e coma"
+    },
+    {
+      "title": "F. Caso clínico avançado e discussão de dados"
+    },
+    {
+      "title": "Caso 7 — Duas fontes potenciais de êmbolo"
+    },
+    {
+      "title": "Caso 8 — Candidato à reabilitação com NIHSS baixo"
+    },
+    {
+      "title": "Caso 9 — Encefalopatia após aparente controle da crise"
+    },
+    {
+      "title": "Caso 10 — AVC isquêmico grande que piora depois de 48h"
+    },
+    {
+      "title": "Caso 11 — AIT de alto risco ou evento funcional?"
+    },
+    {
+      "title": "G. Questões autorais adicionais para teste de autossuficiência"
+    },
+    {
+      "title": "H. Materiais visuais adicionais e fluxos para futura integração"
+    },
+    {
+      "title": "I. Referências e auditoria específica deste complemento"
+    }
+  ],
+  "reference_entries": [
+    "**Q9.** A classificação TOAST ajuda a orientar: A) apenas localização do edema; B) etiologia do AVC e prevenção secundária; C) intensidade da febre; D) necessidade de cefalexina. **Gabarito B.** A não define mecanismo; C/D não têm pertinência vascular. **Revisão:** FA, aterosclerose e pequenos vasos pedem estratégias diferentes.",
+    "**Q10.** Sobre DAPT AAS + clopidogrel após AVC: A) é obrigatória por anos para todos; B) pode ser útil por janela curta em AVC minor não cardioembólico/AIT de alto risco selecionado; C) é sempre preferida à anticoagulação em FA; D) deve começar durante alteplase. **Gabarito B.** A aumenta sangramento; C ignora cardioembolia; D aumenta risco hemorrágico. **Revisão:** duração e mecanismo importam.",
+    "**Q11.** Em AVC de circulação posterior, NIHSS baixo: A) exclui lesão grave; B) pode subestimar déficit de tronco/cerebelo; C) elimina necessidade de angioimagem; D) prova ansiedade. **Gabarito B.** A/C/D negligenciam vertigem central, ataxia e oclusão basilar. **Revisão:** topografia é crucial.",
+    "**Q12.** Uma TC simples normal nas primeiras 90 min: A) descarta isquemia cerebral; B) exige diagnóstico de síncope; C) não descarta AVC hiperagudo; D) confirma tumor. **Gabarito C.** A é falso por sensibilidade precoce; B/D não seguem. **Revisão:** excluir hemorragia e analisar clínica.",
+    "**Q13.** Após AVC isquêmico em pessoa com FA, início de anticoagulante: A) sempre na sala de emergência antes da imagem; B) depende de tamanho do infarto, sangramento e risco, em avaliação especializada; C) nunca é indicado; D) precisa sempre de duas semanas fixas. **Gabarito B.** A/C/D são regras absolutas falsas. **Revisão:** ponderar embolia versus hemorragia.",
+    "**Q14.** Paciente com hematoma lobar em TC e sem crise não deve receber automaticamente: A) monitorização neurológica; B) tratamento de coagulopatia; C) anticonvulsivante profilático universal sem indicação; D) avaliação de PA. **Gabarito C.** A/B/D são relevantes conforme caso; C não melhora desfechos na ausência de crise demonstrada. **Revisão:** profilaxia de status não é universal.",
+    "**Q15.** Em oclusão de artéria basilar até 24 horas: A) trombectomia é sempre impossível; B) pode ser recomendada em paciente com características clínicas/imagens apropriadas; C) trombolítico é obrigatório sem TC; D) anticoagulação empírica substitui todo tratamento. **Gabarito B.** A contraria diretriz 2026; C e D são inseguros. **Revisão:** janela e imagem determinam elegibilidade.",
+    "**Q16.** Crise focal seguida de hemiparesia: A) elimina hipótese de AVC; B) permite nomear Todd sem avaliação; C) demanda investigar AVC e pós-ictal conforme cenário; D) contraindica sempre qualquer reperfusão. **Gabarito C.** A/B/D são absolutismos incorretos. **Revisão:** duas patologias podem coexistir.",
+    "**Somente candidatos ao Admin**, sem imagens incorporadas: angio-TC de dissecção vertebral licenciada; duas RM DWI positivas com TC hiperaguda normal, com data/hora verificadas; exemplos ASPECTS 3 versus 8; ECG de FA com correlação de infartos múltiplos; TC de edema maligno com desvio; gráfico original de variação NIHSS e mRS; fluxograma original TOAST → prevenção; EEG de estado não convulsivo licenciado; mapa original de vasos posteriores e estrutura de tronco; tabela original de antiagregação curta x anticoagulação conforme etiologia. Cada visual deve receber legenda com pergunta didática e ",
+    "1. Prabhakaran S, et al. AHA/ASA. **Guideline for the Early Management of Acute Ischemic Stroke**, publicado em janeiro/2026. https://www.ahajournals.org/doi/10.1161/STR.0000000000000513",
+    "2. Ministério da Saúde. **PCDT Acidente Vascular Cerebral Isquêmico Agudo**, 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view",
+    "3. Greenberg SM, et al. **2022 Guideline for Management of Spontaneous Intracerebral Hemorrhage**. https://www.ahajournals.org/doi/10.1161/STR.0000000000000407",
+    "4. Ministério da Saúde. **PCDT Epilepsia**, atualização 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "5. NICE. **NG217 Epilepsies: Chapter 7, Status Epilepticus**, revisto em 2025. https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "**Registro editorial:** conteúdo novo voltado a TOAST, prevenção secundária, imagem vascular detalhada, edema e reabilitação; 5 casos adicionais e 8 questões novas. Permanece **PENDENTE** a consolidação antirredundância com rascunho 01, validação das referências por especialista, protocolos farmacológicos brasileiros, imagens aprovadas e teste de capacidade de resolver todas as questões utilizando somente a apostila. A metragem somada de Markdown não é medida certificada de 60 mil caracteres didáticos únicos. **Não mergear, não publicar.**"
+  ],
+  "external_urls": [
+    "https://www.ahajournals.org/doi/10.1161/STR.0000000000000513",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view",
+    "https://www.ahajournals.org/doi/10.1161/STR.0000000000000407",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**2026, AHA/ASA:** em pessoas adultas elegíveis dentro de 4,5 h, tenecteplase 0,25 mg/kg (máximo 25 mg) ou alteplase 0,9 mg/kg são alternativas recomendadas, nunca juntas. O PCDT brasileiro de AVC publicado em 2025 deve ser confrontado separadamente quanto a medicamentos incorporados, forma de uso e acesso SUS. Os algoritmos de janela estendida dependem de seleção por imagem, não só de horário. A distinção entre diretriz e disponibilidade nacional deve aparecer na versão final."
+    },
+    {
+      "text": "Artéria basilar ocluída pode manifestar-se por diplopia, disartria, ataxia, disfagia e diminuição de consciência. A TC simples na fossa posterior tem limitações por artefatos ósseos e dimensão das lesões; **angioimagem** adquire importância quando clínica sugere vaso grande posterior. AHA 2026 recomenda EVT para certos pacientes com oclusão basilar até 24 h, especialmente NIHSS ≥10 e PC-ASPECTS favorável, mas não estabelece indicação automática sem seleção."
+    },
+    {
+      "text": "Evitar hipoglicemia e hiperglicemia significativa, mas a AHA 2026 **não recomenda alvo IV intensivo de 80–130 mg/dL** para melhorar desfechos em AVC isquêmico, devido ao risco de hipoglicemia. Uma insulina em bomba não é sinônimo de “proteção cerebral”."
+    },
+    {
+      "text": "Uma crise durante período agudo de um AVC pode refletir irritação cortical transitória. Uma crise não provocada tardia, meses após lesão cortical, pode representar rede epileptogênica persistente. A decisão de tratamento prolongado deve diferenciar risco de recorrência, EEG, corticalidade, eventos prévios e tolerabilidade de medicamentos. **Não oferecer antiepiléptico profilático de rotina a todo paciente com AVC sem crise**, especialmente quando a recomendação para hemorragia intracerebral desaconselha profilaxia na ausência de evidência de crises."
+    },
+    {
+      "text": "**Q12.** Uma TC simples normal nas primeiras 90 min: A) descarta isquemia cerebral; B) exige diagnóstico de síncope; C) não descarta AVC hiperagudo; D) confirma tumor. **Gabarito C.** A é falso por sensibilidade precoce; B/D não seguem. **Revisão:** excluir hemorragia e analisar clínica."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

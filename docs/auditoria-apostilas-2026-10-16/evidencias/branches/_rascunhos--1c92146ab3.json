@@ -1,0 +1,306 @@
+{
+  "sha": "1c92146ab32ce5faec645fc52874835f584f37e5",
+  "path": "apostilas/_rascunhos/lote-11-aula-229-obesidade-sindrome-metabolica.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1c92146ab3",
+  "title": "LURIA — Apostila 229: Obesidade e síndrome metabólica no adulto",
+  "format": ".md",
+  "chars_estimated": 83328,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 229: Obesidade e síndrome metabólica no adulto"
+    },
+    {
+      "title": "Etapa zero comparativa e escopo"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "1. Obesidade como doença crônica, heterogênea e recidivante"
+    },
+    {
+      "title": "1.1 Classificação por IMC em adultos"
+    },
+    {
+      "title": "1.2 Adiposidade visceral, ectópica e risco"
+    },
+    {
+      "title": "2. Fisiologia da regulação do apetite e do peso"
+    },
+    {
+      "title": "2.1 Hipotálamo e vias orexígenas/anorexígenas"
+    },
+    {
+      "title": "2.2 Por que a perda ponderal tende a estabilizar?"
+    },
+    {
+      "title": "2.3 Genética não é determinismo simples"
+    },
+    {
+      "title": "3. História, diagnóstico e caracterização do risco"
+    },
+    {
+      "title": "3.1 A consulta centrada no risco: o que investigar antes de escolher tratamento"
+    },
+    {
+      "title": "3.2 Exame físico além do IMC"
+    },
+    {
+      "title": "3.3 Exames iniciais: seleção com propósito"
+    },
+    {
+      "title": "3.4 Diagnóstico diferencial de aparente ganho de peso"
+    },
+    {
+      "title": "3.5 Meta terapêutica deve ser clínica, não exclusivamente estética"
+    },
+    {
+      "title": "3.6 Critérios de investigação e encaminhamento"
+    },
+    {
+      "title": "4. Síndrome metabólica e fisiopatologia integrada"
+    },
+    {
+      "title": "4.1 A via fisiopatológica"
+    },
+    {
+      "title": "4.2 Comorbidades prioritárias"
+    },
+    {
+      "title": "4.3 Critérios harmonizados de síndrome metabólica: tabela integral e interpretação"
+    },
+    {
+      "title": "4.4 O elo entre adiposidade, resistência à insulina e doença vascular"
+    },
+    {
+      "title": "4.5 Hipoventilação da obesidade e apneia obstrutiva do sono"
+    },
+    {
+      "title": "4.6 Pré-diabetes, diabetes e remissão: três ideias diferentes"
+    },
+    {
+      "title": "4.7 Obesidade e saúde reprodutiva"
+    },
+    {
+      "title": "4.8 Quando a síndrome metabólica não deve monopolizar o diagnóstico"
+    },
+    {
+      "title": "4.9 Quadro de decisão por comorbidade"
+    },
+    {
+      "title": "5. Manejo clínico não farmacológico"
+    },
+    {
+      "title": "5.1 Abordagem nutricional praticável"
+    },
+    {
+      "title": "5.2 Exercício, sedentarismo e preservação muscular"
+    },
+    {
+      "title": "5.3 Intervenção comportamental sem moralização"
+    },
+    {
+      "title": "5.4 Sono, estresse e estigma"
+    },
+    {
+      "title": "5.5 Como desenhar um plano alimentar clinicamente seguro"
+    },
+    {
+      "title": "5.6 Prescrição de atividade física adaptada"
+    },
+    {
+      "title": "5.7 Terapia comportamental: transformar intenção em plano verificável"
+    },
+    {
+      "title": "5.8 Metas e reavaliação: o que medir após 4, 12 e 24 semanas"
+    },
+    {
+      "title": "5.9 Perguntas que detectam complicações durante o emagrecimento"
+    },
+    {
+      "title": "6. Tratamento farmacológico: mecanismo, indicação e vigilância"
+    },
+    {
+      "title": "6.1 Titulação e acompanhamento"
+    },
+    {
+      "title": "6.2 Recuperação de peso após interrupção"
+    },
+    {
+      "title": "6.3 Farmacoterapia no Brasil em 2026: molécula, apresentação e alvo de tratamento"
+    },
+    {
+      "title": "6.4 Como escolher considerando o perfil do paciente"
+    },
+    {
+      "title": "6.5 Efeitos adversos gastrointestinal e conduta escalonada"
+    },
+    {
+      "title": "6.6 Segurança regulatória e cadeia de custódia"
+    },
+    {
+      "title": "6.7 Gravidez, amamentação e planejamento familiar"
+    },
+    {
+      "title": "6.8 Evitar “potência” como único fator"
+    },
+    {
+      "title": "7. Cirurgia metabólica/bariátrica — critérios brasileiros 2025"
+    },
+    {
+      "title": "7.1 Principais procedimentos, decisão individual e efeitos metabólicos"
+    },
+    {
+      "title": "7.2 Preparação pré-operatória e seguimento"
+    },
+    {
+      "title": "7.3 Sinais cirúrgicos de urgência"
+    },
+    {
+      "title": "7.4 Revisão regulatória de 2026: indicação, equipe e técnicas"
+    },
+    {
+      "title": "7.5 Anatomia da cirurgia e por que as complicações diferem"
+    },
+    {
+      "title": "7.6 Seguimento nutricional: reconhecer sinais e não depender de peso"
+    },
+    {
+      "title": "7.7 Cirurgia e medicamentos não são caminhos rivais"
+    },
+    {
+      "title": "8. Algoritmo clínico de manejo"
+    },
+    {
+      "title": "9. Casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — IMC não conta a história inteira"
+    },
+    {
+      "title": "Caso 2 — Terapia incretínica e vômitos"
+    },
+    {
+      "title": "Caso 3 — Quem pode ser encaminhado para cirurgia?"
+    },
+    {
+      "title": "Caso 4 — Dor abdominal após bypass"
+    },
+    {
+      "title": "Caso 5 — Controle glicêmico e redução de hipoglicemia durante perda de peso"
+    },
+    {
+      "title": "Caso 6 — Náuseas em caneta para obesidade: quando não é apenas adaptação"
+    },
+    {
+      "title": "Caso 7 — IMC 32 e diabetes: cirurgia já pode ser discutida?"
+    },
+    {
+      "title": "Caso 8 — Dor intermitente depois de bypass"
+    },
+    {
+      "title": "Caso 9 — Perda de peso com piora funcional em idoso"
+    },
+    {
+      "title": "Caso 10 — Reganho ponderal e seguimento sem culpabilização"
+    },
+    {
+      "title": "10. Questões comentadas de fixação"
+    },
+    {
+      "title": "Questão 7 — Critério harmonizado de síndrome metabólica"
+    },
+    {
+      "title": "Questão 8 — Indicação de tratamento farmacológico"
+    },
+    {
+      "title": "Questão 9 — Segurança da tirzepatida"
+    },
+    {
+      "title": "Questão 10 — Critérios brasileiros de cirurgia"
+    },
+    {
+      "title": "Questão 11 — Emergência pós-bariátrica"
+    },
+    {
+      "title": "Questão 12 — Sarcopenia durante tratamento"
+    },
+    {
+      "title": "11. Matriz provisória de cobertura e imagens"
+    },
+    {
+      "title": "12. Referências priorizadas e verificáveis"
+    },
+    {
+      "title": "12.1 Atualizações oficiais consultadas nesta ampliação (15/10/2026)"
+    }
+  ],
+  "reference_entries": [
+    "1. ABESO. **Diretrizes e posicionamentos**, incluindo diretriz farmacológica 2026 e orientação nutricional 2025: https://abeso.org.br/diretrizes/",
+    "2. CFM. **Resolução nº 2.429/2025**, cirurgia bariátrica e metabólica: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2025/2429",
+    "3. Organização Mundial da Saúde. **WHO issues global guideline on GLP-1 medicines in treating obesity**, 01/12/2025: https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-glp-1-medicines-in-treating-obesity/",
+    "4. Obesity Canada et al. **Pharmacotherapy for obesity management in adults: 2025 clinical practice guideline update**: https://pmc.ncbi.nlm.nih.gov/articles/PMC12350384/",
+    "5. Brasil, Ministério da Saúde: documentos de manejo de doenças crônicas e da atenção primária, a selecionar por tópico exato em auditoria; não usar citação genérica como substituto de suporte factual.",
+    "**Auditoria editorial (15/10/2026):** rascunho ampliado, com critérios harmonizados, cenários gestação/idosos, revisão de fármacos e regulação brasileira, pós-bariátrica e 10 casos/12 questões. Ainda faltam checagem farmacológica individual por bula atual, conferência de fonte para cada alegação relevante, imagens licenciadas via Admin, validação manual de ≥60K caracteres didáticos úteis, teste das questões e inspeção visual desktop/PWA. **Não marcar como completo, não publicar e não integrar automaticamente.**",
+    "6. ABESO. **Diretriz Brasileira de Tratamento Farmacológico da Obesidade, 5ª edição, 2026** (documento integral, recomendações R1–R32): https://abeso.org.br/wp-content/uploads/2026/03/Diretrizes-ABESO_completo_20260320.pdf",
+    "7. CFM. **Resolução 2.429/2025 — versão consolidada com alteração pela Resolução 2.470/2026**: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2025/2429_2025.pdf",
+    "8. ANVISA. **Mounjaro (tirzepatida): inclusão de indicação para controle crônico do peso em adultos, 09/06/2025** (inclui esquema de escalonamento): https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/novos-medicamentos-e-indicacoes/mounjaro-r-tirzepatida-nova-indicacao",
+    "9. ANVISA. **Agonistas GLP-1: prescrição e dispensação com retenção de receita, 2025**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita",
+    "10. Novo Nordisk Brasil. **Bula brasileira de Wegovy, semaglutida**, com apresentações e titulação; conferir revisão vigente da bula profissional: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf",
+    "11. Novo Nordisk Brasil. **Comunicado 04/05/2026 sobre aprovação de Wegovy 7,2 mg no Brasil**: https://www.novonordisk.com.br/noticias-e-imprensa/busca-noticias/com-media-de-21-de-perda-de-peso-nova-dosagem-de-wegovy-e-aprovada-pela-anvisa-no-brasil.html",
+    "12. World Health Organization. **Guideline on the use and indications of GLP-1 therapies for the treatment of obesity in adults, 2025**, recomendações condicionais: https://doi.org/10.1001/jama.2025.24288",
+    "13. Endotext / NCBI. **Metabolic Syndrome**, critérios da definição harmonizada e limitações de cortes de cintura: https://www.ncbi.nlm.nih.gov/books/NBK278936/",
+    "14. British Obesity and Metabolic Surgery Society. **2020 update on biochemical monitoring and micronutrient replacement after bariatric surgery**: https://pmc.ncbi.nlm.nih.gov/articles/PMC7583474/",
+    "15. ANVISA. **Apreensão de produtos irregulares e lotes de Mounjaro Kwikpen, 2026**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apreende-produtos-irregulares-e-lotes-de-mounjaro-kwikpen",
+    "**Nota metodológica:** resumos de cursinho do Drive foram usados exclusivamente para comparar tópicos, sem reprodução de redação, diagramas ou imagens protegidas. As referências oficiais acima sustentam itens específicos, mas o manuscrito ainda exige conferência integral por parágrafo e revisão médica final antes de integrar à LURIA."
+  ],
+  "external_urls": [
+    "https://abeso.org.br/diretrizes/",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2025/2429",
+    "https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-glp-1-medicines-in-treating-obesity/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12350384/",
+    "https://abeso.org.br/wp-content/uploads/2026/03/Diretrizes-ABESO_completo_20260320.pdf",
+    "https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2025/2429_2025.pdf",
+    "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/novos-medicamentos-e-indicacoes/mounjaro-r-tirzepatida-nova-indicacao",
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita",
+    "https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf",
+    "https://www.novonordisk.com.br/noticias-e-imprensa/busca-noticias/com-media-de-21-de-perda-de-peso-nova-dosagem-de-wegovy-e-aprovada-pela-anvisa-no-brasil.html",
+    "https://doi.org/10.1001/jama.2025.24288",
+    "https://www.ncbi.nlm.nih.gov/books/NBK278936/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7583474/",
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apreende-produtos-irregulares-e-lotes-de-mounjaro-kwikpen"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Fontes clínicas de atualização: ABESO, **Diretriz Brasileira de Tratamento Farmacológico da Obesidade 2026**; ABESO, Posicionamento sobre Tratamento Nutricional 2025; OMS, **guideline GLP-1 para obesidade em adultos, dezembro de 2025**; CFM **Resolução 2.429/2025**. Medicamentos, doses, contraindicações, limites de prescrição e acesso no Brasil devem ser conferidos individualmente antes de publicação."
+    },
+    {
+      "text": "Examinar sinais de **resistência à insulina** (acantose nigricans), hipercortisolismo quando sugerido pela história, obesidade com hipoventilação, edema, alterações dermatológicas, insuficiência venosa, osteoartrose, hérnias e estigmas de cirrose. Circunferência cervical aumentada, ronco e sonolência diurna motivam avaliação de AOS, mas o diagnóstico exige método adequado quando indicado. Antes de programar atividade física, verificar doença cardiovascular descompensada, limitações ortopédicas e risco de quedas."
+    },
+    {
+      "text": "O acesso a farmacoterapia e cirurgia depende de avaliação individual, regulação, disponibilidade e capacidade de seguimento. Uma recomendação de diretriz **não cria automaticamente cobertura pelo SUS ou pelo plano**. O material deve manter essa distinção explícita ao descrever as opções."
+    },
+    {
+      "text": "| Componente | Limite frequente na definição harmonizada | Observação prática | |---|---|---| | Triglicerídeos | **≥150 mg/dL**, ou tratamento farmacológico específico para alteração | Colher/interpretar conforme estado de jejum e cenário laboratorial; hipertrigliceridemia muito alta exige manejo próprio por risco pancreático | | HDL-colesterol | **<40 mg/dL para homens** ou **<50 mg/dL para mulheres**, ou tratamento farmacológico relacionado | Baixo HDL é marcador de risco; não prescrever fármaco apenas para “subir o HDL” sem indicação clínica baseada em desfechos | | Pressão arterial | **Sistólica ≥130 mmHg ou diastólica ≥85 mmHg**, ou trat"
+    },
+    {
+      "text": "**Exemplo resolvido:** mulher com cintura elevada segundo critério adotado, TG 180 mg/dL, HDL 46 mg/dL, PA 124/80 mmHg e glicemia 94 mg/dL possui **três componentes** (cintura, TG e HDL) e atende à definição harmonizada. Se o enunciado não informa o critério/corte da cintura e o valor estiver em zona ambígua, explicitar a limitação em vez de afirmar diagnóstico sem contexto."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

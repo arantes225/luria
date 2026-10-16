@@ -1,0 +1,715 @@
+{
+  "key": "massas-anexiais-cancer-ovario--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/massas-anexiais-cancer-ovario/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 174 | Massas anexiais e câncer de ovário",
+  "source_sha256": "71d0f76781f6ad559a5b7775ce4ff199f43d3a4b745bfd37f1ae7f59d9dcb9d0",
+  "chars_estimated": 95838,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 174 | Massas anexiais e câncer de ovário",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 26,
+      "title": "2. O que é massa anexial?",
+      "level": 2
+    },
+    {
+      "line": 34,
+      "title": "2.1. A probabilidade pré-teste importa",
+      "level": 3
+    },
+    {
+      "line": 40,
+      "title": "2.2. Adnexo não é sinônimo de ovário",
+      "level": 3
+    },
+    {
+      "line": 44,
+      "title": "3. Anatomia e fisiologia necessárias para raciocínio",
+      "level": 2
+    },
+    {
+      "line": 52,
+      "title": "3.1. Fisiopatologia da carcinogênese",
+      "level": 3
+    },
+    {
+      "line": 58,
+      "title": "4. Fatores de risco e proteção — sem determinismo",
+      "level": 2
+    },
+    {
+      "line": 75,
+      "title": "5. Anamnese e exame: o que muda a prioridade",
+      "level": 2
+    },
+    {
+      "line": 92,
+      "title": "6. Três emergências que simulam massa anexial",
+      "level": 2
+    },
+    {
+      "line": 94,
+      "title": "6.1. Gestação ectópica",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "6.2. Torção anexial",
+      "level": 3
+    },
+    {
+      "line": 108,
+      "title": "6.3. Doença inflamatória pélvica e abscesso tubo-ovariano (ATO)",
+      "level": 3
+    },
+    {
+      "line": 116,
+      "title": "7. Ultrassonografia transvaginal com Doppler: primeiro exame estruturante",
+      "level": 2
+    },
+    {
+      "line": 133,
+      "title": "7.1. Aspectos ultrassonográficos frequentes",
+      "level": 3
+    },
+    {
+      "line": 147,
+      "title": "7.2. Limitações do Doppler",
+      "level": 3
+    },
+    {
+      "line": 151,
+      "title": "7.3. Quando pedir RM?",
+      "level": 3
+    },
+    {
+      "line": 155,
+      "title": "7.4. Quando pedir TC?",
+      "level": 3
+    },
+    {
+      "line": 159,
+      "title": "8. O-RADS US v2022 e regras IOTA",
+      "level": 2
+    },
+    {
+      "line": 161,
+      "title": "8.1. O que a categoria informa?",
+      "level": 3
+    },
+    {
+      "line": 178,
+      "title": "8.2. IOTA Simple Rules",
+      "level": 3
+    },
+    {
+      "line": 194,
+      "title": "8.3. RMI (Risk of Malignancy Index)",
+      "level": 3
+    },
+    {
+      "line": 198,
+      "title": "9. Marcadores tumorais — um exame isolado não decide a operação",
+      "level": 2
+    },
+    {
+      "line": 219,
+      "title": "10. Lesões benignas comuns — identificação e manejo",
+      "level": 2
+    },
+    {
+      "line": 221,
+      "title": "10.1. Cistos funcionais: folicular e corpo lúteo",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "10.2. Endometrioma",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "10.3. Teratoma cístico maduro (dermoide)",
+      "level": 3
+    },
+    {
+      "line": 237,
+      "title": "10.4. Cistadenoma seroso/mucinoso",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "10.5. Fibroma ovariano e síndrome de Meigs",
+      "level": 3
+    },
+    {
+      "line": 245,
+      "title": "10.6. Hidrossalpinge e cisto paraovariano",
+      "level": 3
+    },
+    {
+      "line": 249,
+      "title": "11. Massas anexiais em adolescentes e gestantes",
+      "level": 2
+    },
+    {
+      "line": 251,
+      "title": "11.1. Adolescência",
+      "level": 3
+    },
+    {
+      "line": 257,
+      "title": "11.2. Gestação",
+      "level": 3
+    },
+    {
+      "line": 265,
+      "title": "11.3. Perimenopausa e pós-menopausa",
+      "level": 3
+    },
+    {
+      "line": 269,
+      "title": "12. Tumor borderline: zona intermediária real, não “câncer fraco”",
+      "level": 2
+    },
+    {
+      "line": 277,
+      "title": "13. Câncer de ovário, tuba uterina e peritônio primário — subtipos",
+      "level": 2
+    },
+    {
+      "line": 279,
+      "title": "13.1. Câncer epitelial",
+      "level": 3
+    },
+    {
+      "line": 290,
+      "title": "13.2. Tumores de células germinativas",
+      "level": 3
+    },
+    {
+      "line": 294,
+      "title": "13.3. Tumores do estroma/cordão sexual",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "13.4. Metástases ovarianas",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "14. Quadro clínico de câncer: sintomas que parecem gastrointestinais",
+      "level": 2
+    },
+    {
+      "line": 310,
+      "title": "15. Rastreamento versus investigação de sintomas",
+      "level": 2
+    },
+    {
+      "line": 318,
+      "title": "16. História familiar, BRCA, HRD e prevenção de alto risco",
+      "level": 2
+    },
+    {
+      "line": 324,
+      "title": "16.1. Cirurgia redutora de risco",
+      "level": 3
+    },
+    {
+      "line": 330,
+      "title": "17. FIGO/TNM: classificação do câncer tubo-ovariano",
+      "level": 2
+    },
+    {
+      "line": 343,
+      "title": "17.1. Componentes do estadiamento cirúrgico",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "18. Tratamento do câncer epitelial: princípio de citorredução completa",
+      "level": 2
+    },
+    {
+      "line": 353,
+      "title": "18.1. Citorredução primária (PCS)",
+      "level": 3
+    },
+    {
+      "line": 357,
+      "title": "18.2. Neoadjuvância + cirurgia de intervalo",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "18.3. Linfonodos no câncer avançado",
+      "level": 3
+    },
+    {
+      "line": 367,
+      "title": "18.4. Quimioterapia",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "18.5. Recaída",
+      "level": 3
+    },
+    {
+      "line": 379,
+      "title": "19. Tratamento de câncer germinativo e estromal",
+      "level": 2
+    },
+    {
+      "line": 387,
+      "title": "20. Como escolher observação, cirurgia conservadora ou oncoginecologia",
+      "level": 2
+    },
+    {
+      "line": 395,
+      "title": "20.1. Laparoscopia e laparotomia",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "20.2. Fertilidade e reserva ovariana",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "21. Cuidados perioperatórios e complicações",
+      "level": 2
+    },
+    {
+      "line": 411,
+      "title": "21.1. Seguimento e sinais de recidiva",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "22. Cuidados paliativos e comunicação de diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 423,
+      "title": "23. Algoritmos de conduta LURIA",
+      "level": 2
+    },
+    {
+      "line": 425,
+      "title": "Fluxo A — Dor pélvica aguda + massa anexial",
+      "level": 3
+    },
+    {
+      "line": 428,
+      "title": "Fluxo B — Massa incidental em pessoa na pré-menopausa",
+      "level": 3
+    },
+    {
+      "line": 431,
+      "title": "Fluxo C — Massa em pós-menopausa",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "Fluxo D — Suspeita de câncer epitelial avançado",
+      "level": 3
+    },
+    {
+      "line": 437,
+      "title": "Fluxo E — Adolescente com massa sólida",
+      "level": 3
+    },
+    {
+      "line": 440,
+      "title": "24. Erros de prova e prática — trinta armadilhas",
+      "level": 2
+    },
+    {
+      "line": 473,
+      "title": "25. Referências principais e atualizações",
+      "level": 2
+    },
+    {
+      "line": 491,
+      "title": "26. Controle editorial desta fase",
+      "level": 2
+    },
+    {
+      "line": 512,
+      "title": "27. Casos clínicos integradores — diagnóstico, risco e decisão terapêutica",
+      "level": 2
+    },
+    {
+      "line": 516,
+      "title": "Caso 1 — Cisto simples na pré-menopausa",
+      "level": 3
+    },
+    {
+      "line": 530,
+      "title": "Caso 2 — Cisto hemorrágico com dor, mas sem choque",
+      "level": 3
+    },
+    {
+      "line": 544,
+      "title": "Caso 3 — Dor aguda e Doppler com fluxo preservado",
+      "level": 3
+    },
+    {
+      "line": 558,
+      "title": "Caso 4 — Gestação de localização desconhecida e instabilidade",
+      "level": 3
+    },
+    {
+      "line": 572,
+      "title": "Caso 5 — Abscesso tubo-ovariano e falha clínica",
+      "level": 3
+    },
+    {
+      "line": 586,
+      "title": "Caso 6 — Endometrioma bilateral e plano reprodutivo",
+      "level": 3
+    },
+    {
+      "line": 600,
+      "title": "Caso 7 — Dermoide grande em adolescente",
+      "level": 3
+    },
+    {
+      "line": 614,
+      "title": "Caso 8 — Massa sólida e ascite na pós-menopausa, CA-125 normal",
+      "level": 3
+    },
+    {
+      "line": 628,
+      "title": "Caso 9 — Rastreamento pedido em mulher assintomática",
+      "level": 3
+    },
+    {
+      "line": 642,
+      "title": "Caso 10 — BRCA1 patogênico e prevenção cirúrgica",
+      "level": 3
+    },
+    {
+      "line": 656,
+      "title": "Caso 11 — Ascite e carcinomatose: PCS versus neoadjuvância",
+      "level": 3
+    },
+    {
+      "line": 670,
+      "title": "Caso 12 — Borderline unilateral e desejo de gravidez",
+      "level": 3
+    },
+    {
+      "line": 684,
+      "title": "Caso 13 — Granulosa ovariana e sangramento pós-menopausa",
+      "level": 3
+    },
+    {
+      "line": 698,
+      "title": "Caso 14 — Massa bilateral mucinosa e sintomas digestivos",
+      "level": 3
+    },
+    {
+      "line": 712,
+      "title": "Caso 15 — Ascite e derrame pleural com fibroma benigno",
+      "level": 3
+    },
+    {
+      "line": 726,
+      "title": "Caso 16 — Elevação de CA-125 isolada após remissão",
+      "level": 3
+    },
+    {
+      "line": 741,
+      "title": "28. Questões autorais comentadas — todas as alternativas explicadas",
+      "level": 2
+    },
+    {
+      "line": 745,
+      "title": "Questão 1 — Primeiro exame de massa anexial",
+      "level": 3
+    },
+    {
+      "line": 766,
+      "title": "Questão 2 — β-hCG em dor pélvica",
+      "level": 3
+    },
+    {
+      "line": 787,
+      "title": "Questão 3 — Torção com Doppler normal",
+      "level": 3
+    },
+    {
+      "line": 808,
+      "title": "Questão 4 — Ovario escurecido após destorção",
+      "level": 3
+    },
+    {
+      "line": 829,
+      "title": "Questão 5 — Abscesso tubo-ovariano",
+      "level": 3
+    },
+    {
+      "line": 850,
+      "title": "Questão 6 — Cisto simples em jovem",
+      "level": 3
+    },
+    {
+      "line": 871,
+      "title": "Questão 7 — Cisto hemorrágico",
+      "level": 3
+    },
+    {
+      "line": 892,
+      "title": "Questão 8 — Endometrioma e fertilidade",
+      "level": 3
+    },
+    {
+      "line": 913,
+      "title": "Questão 9 — Dermóide e torção",
+      "level": 3
+    },
+    {
+      "line": 934,
+      "title": "Questão 10 — O-RADS 3",
+      "level": 3
+    },
+    {
+      "line": 955,
+      "title": "Questão 11 — IOTA Simple Rules",
+      "level": 3
+    },
+    {
+      "line": 976,
+      "title": "Questão 12 — CA-125 em endometriose",
+      "level": 3
+    },
+    {
+      "line": 997,
+      "title": "Questão 13 — Rastreamento de câncer de ovário",
+      "level": 3
+    },
+    {
+      "line": 1018,
+      "title": "Questão 14 — Massa pós-menopausa suspeita e marcador normal",
+      "level": 3
+    },
+    {
+      "line": 1039,
+      "title": "Questão 15 — FIGO III versus IV",
+      "level": 3
+    },
+    {
+      "line": 1060,
+      "title": "Questão 16 — Derrame pleural FIGO IVA",
+      "level": 3
+    },
+    {
+      "line": 1081,
+      "title": "Questão 17 — Citorredução inicial versus neoadjuvante",
+      "level": 3
+    },
+    {
+      "line": 1102,
+      "title": "Questão 18 — Linfonodos em doença avançada",
+      "level": 3
+    },
+    {
+      "line": 1123,
+      "title": "Questão 19 — BRCA e VUS",
+      "level": 3
+    },
+    {
+      "line": 1144,
+      "title": "Questão 20 — Manutenção com PARP",
+      "level": 3
+    },
+    {
+      "line": 1165,
+      "title": "Questão 21 — Tumor germinativo em adolescente",
+      "level": 3
+    },
+    {
+      "line": 1186,
+      "title": "Questão 22 — Tumor de granulosa e endométrio",
+      "level": 3
+    },
+    {
+      "line": 1207,
+      "title": "Questão 23 — Borderline e fertilidade",
+      "level": 3
+    },
+    {
+      "line": 1228,
+      "title": "Questão 24 — CA-125 isolado no seguimento",
+      "level": 3
+    },
+    {
+      "line": 1250,
+      "title": "29. Curadoria de 20 imagens/diagramas com alto valor didático",
+      "level": 2
+    },
+    {
+      "line": 1277,
+      "title": "Critérios de seleção e preparação técnica",
+      "level": 3
+    },
+    {
+      "line": 1288,
+      "title": "30. Conexões com outras aulas do Lote 09",
+      "level": 2
+    },
+    {
+      "line": 1296,
+      "title": "31. Auditoria consolidada — precisão, extensão e pendências",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. **INCA. Câncer de ovário, versão para profissionais de saúde** — página atualizada em 06/07/2023, consultada em 15/10/2026. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude",
+    "2. **INCA. Câncer de ovário, versão para população — incidência 2026–2028 (8.020 casos/ano)**. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao/",
+    "3. **Ministério da Saúde/Conitec. DDT Neoplasia Maligna Epitelial de Ovário.** Portaria Conjunta SAS/SCTIE/MS nº 01 de 07/01/2019; página oficial atualizada em 21/01/2025, ainda catalogada no índice da Conitec atualizado em setembro de 2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/n/neoplasia-maligna-epitelial-de-ovario-ddt/view ; https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+    "4. **ACR O-RADS Ultrasound v2022** — sistema e tabelas oficiais. https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS/Ultrasound",
+    "5. **Strachowski LM et al. O-RADS US v2022 update**, *Radiology*, 2023. https://doi.org/10.1148/radiol.230685",
+    "6. **ESGO–ESMO–ESP Consensus Conference Recommendations on Ovarian Cancer**, *Annals of Oncology*, 2024. https://www.annalsofoncology.org/article/S0923-7534(23)05103-7/fulltext",
+    "7. **ESGO–ESHRE–ESGE. Fertility-sparing strategies in gynecological malignancies**, 2024, listado no portal ESGO. https://www.esgo.org/guidelines/search-guidelines/ovarian/",
+    "8. **IOTA group: Simple Rules e ADNEX**, plataformas clínicas e publicações metodológicas; consultar metodologia antes de calcular risco. https://www.iotagroup.org/",
+    "9. **FIGO — staging for ovarian, fallopian tube and peritoneal cancer**; conferir tabela institucional vigente antes de citar subestágios. https://www.figo.org/",
+    "10. **NCI. Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment (PDQ)**; revisão contínua de terapias sistêmicas. https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+    "11. **NCI. Ovarian Germ Cell Tumors Treatment (PDQ)**. https://www.cancer.gov/types/ovarian/hp/ovarian-germ-cell-treatment-pdq",
+    "12. **INCA. Diretrizes de detecção precoce e rastreamento** — diferença entre sintoma e rastreio. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/deteccao-precoce (princípios gerais, não protocolo de ovário).",
+    "13. **AHA/SBP/Ministério da Saúde**, protocolos de emergência, choque, gestação ectópica e assistência ginecológica/obstétrica, quando apropriados à unidade e faixa etária (verificar versão específica antes de prescrever).",
+    "**Controle de atualidade:** uma DDT datada de 2019 pode permanecer normativamente catalogada em 2026; os consensos internacionais de 2024 discutem opções modernas, mas não equivalem a incorporação no SUS. Registrar separadamente **regra nacional**, **evidência internacional** e **situação de acesso local**. Não usar dado de incidência 2026 como se fosse mortalidade ou probabilidade individual."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/n/neoplasia-maligna-epitelial-de-ovario-ddt/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS/Ultrasound",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1148/radiol.230685",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.annalsofoncology.org/article/S0923-7534(23",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esgo.org/guidelines/search-guidelines/ovarian/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.iotagroup.org/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.figo.org/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-germ-cell-treatment-pdq",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/deteccao-precoce",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Para muitos carcinomas epiteliais de alto grau, **carboplatina + paclitaxel** é combinação central, frequentemente em ciclos a cada três semanas no contexto adjuvante/neoadjuvante, com seleção conforme função orgânica, reação prévia, neuropatia e disponibilidade. Um regime de referência internacional utiliza paclitaxel **175 mg/m² IV** e carboplatina **AUC 5–6** a cada três semanas, geralmente planejado em torno de seis ciclos no tratamento inicial de cenários comuns, mas dose, número de ciclos e manutenção exigem decisão especializada; não transformar este exemplo em prescrição pronta do SUS.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Mulher de 27 anos, assintomática, US transvaginal de rotina mostra cisto anecoico unilocular de 3,4 cm, sem papilas nem sólido ou vascularização interna. Sem história oncológica pessoal/familiar e exame sem massa dolorosa.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Mulher de 31 anos, dor pélvica à direita iniciada após atividade física; PA e FC estáveis, hemoglobina mantida. US mostra cisto com ecos reticulares e discreto líquido livre, coágulo avascular. β-hCG negativo.",
+      "pattern": 0
+    },
+    {
+      "text": "**Normas de referência:** Ministério da Saúde/INCA; DDT brasileira Neoplasia Maligna Epitelial de Ovário (Portaria Conjunta SAS/SCTIE/MS nº 1, de 07/01/2019, versão catalogada em 2026); ACR O-RADS US v2022 (publicação explicativa Radiology 2023); consenso ESGO–ESMO–ESP 2024; recomendações de preservação de fertilidade ESGO–ESHRE–ESGE 2024. Fontes internacionais atualizam a discussão técnica sem afirmar disponibilidade automática no SUS.",
+      "pattern": 1
+    },
+    {
+      "text": "É qualquer formação no território dos **anexos uterinos**, principalmente ovário e tuba uterina, identificada por palpação, ultrassonografia ou imagem de outra finalidade. “Massa anexial” **descreve localização**, não diagnóstico. Pode ser funcional/transitória, inflamatória, congênita, endometriótica, neoplásica benigna/borderline/maligna ou proveniente de outra estrutura da pelve.",
+      "pattern": 1
+    },
+    {
+      "text": "**Exame físico:** estado geral, sinais vitais, pressão, perfusão, distensão/ascite, dor localizada, defesa, massas, dor à mobilização cervical e corrimento quando exame pélvico indicado. Privacidade, explicação, consentimento e acompanhante de apoio conforme preferência/política. Exame não deve atrasar reanimação em instabilidade.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia — Ginecologia, Ultrassonografia, Urgências Ginecológicas e Oncologia **Lote 09 · Tema 174/180 · Versão editorial 15/10/2026** **Status:** material autoral em elaboração, não validado por ginecologista oncológico, sem imagens licenciadas ou integração na interface LURIA.",
+      "pattern": 2
+    },
+    {
+      "text": "**Normas de referência:** Ministério da Saúde/INCA; DDT brasileira Neoplasia Maligna Epitelial de Ovário (Portaria Conjunta SAS/SCTIE/MS nº 1, de 07/01/2019, versão catalogada em 2026); ACR O-RADS US v2022 (publicação explicativa Radiology 2023); consenso ESGO–ESMO–ESP 2024; recomendações de preservação de fertilidade ESGO–ESHRE–ESGE 2024. Fontes internacionais atualizam a discussão técnica sem afirmar disponibilidade automática no SUS.",
+      "pattern": 2
+    },
+    {
+      "text": "1. Definir massa anexial e reconhecer origens ovarianas, tubárias, uterinas, peritoneais, gastrointestinais e urinárias. 2. Distinguir massa incidental de síndrome dolorosa ou hemorrágica com necessidade de intervenção urgente. 3. Interpretar a ultrassonografia transvaginal com Doppler, distinguindo cisto simples, endometrioma, teratoma maduro, hidrossalpinge, abscesso e lesões complexas suspeitas. 4. Entender a padronização O-RADS US v2022 e regras IOTA, sem substituir avaliação especializada por categoria isolada. 5. Escolher exames adicionais e marcadores de acordo com faixa etária, gravidez, menopausa e suspeita histológica. 6. Diferenciar doença benigna, borderline e câncer epitelial invasivo, além de tumores germinativos e estromais. 7. Identificar fatores de risco hereditário, manifestações clínicas e limites do rastreamento. 8. Descrever FIGO/TNM, cirurgia de estadiamento, citorredução primária, neoadjuvância e tratamento sistêmico do câncer epitelial. 9. Reconhecer indicação de avaliação por ginecologia oncológica e critérios para preservação de fertilidade. 10. Resolver casos práticos, incluindo gestação ectópica, torção, abscesso tubo-ovariano, massa complexa pós-menopausa e carcinomatose.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia — Ginecologia, Ultrassonografia, Urgências Ginecológicas e Oncologia **Lote 09 · Tema 174/180 · Versão editorial 15/10/2026** **Status:** material autoral em elaboração, não validado por ginecologista oncológico, sem imagens licenciadas ou integração na interface LURIA."
+    },
+    {
+      "text": "**Normas de referência:** Ministério da Saúde/INCA; DDT brasileira Neoplasia Maligna Epitelial de Ovário (Portaria Conjunta SAS/SCTIE/MS nº 1, de 07/01/2019, versão catalogada em 2026); ACR O-RADS US v2022 (publicação explicativa Radiology 2023); consenso ESGO–ESMO–ESP 2024; recomendações de preservação de fertilidade ESGO–ESHRE–ESGE 2024. Fontes internacionais atualizam a discussão técnica sem afirmar disponibilidade automática no SUS."
+    }
+  ]
+}

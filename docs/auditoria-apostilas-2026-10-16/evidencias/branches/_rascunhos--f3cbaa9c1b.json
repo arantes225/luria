@@ -1,0 +1,330 @@
+{
+  "sha": "f3cbaa9c1be9b3f4dc8f882ddd36129f58d89347",
+  "path": "apostilas/_rascunhos/lote-05-095-acuracia-testes-diagnosticos.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f3cbaa9c1b",
+  "title": "LURIA — Apostila 095: Sensibilidade, especificidade e valores preditivos",
+  "format": ".md",
+  "chars_estimated": 71009,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 095: Sensibilidade, especificidade e valores preditivos"
+    },
+    {
+      "title": "0. Etapa zero — inventário, confronto de fontes e arquitetura"
+    },
+    {
+      "title": "1. O problema: um teste não produz a verdade sozinho"
+    },
+    {
+      "title": "2. Tabela 2×2: a peça que organiza todas as contas"
+    },
+    {
+      "title": "3. Sensibilidade — entre os doentes, quantos dão positivo?"
+    },
+    {
+      "title": "4. Especificidade — entre os não doentes, quantos dão negativo?"
+    },
+    {
+      "title": "5. Valores preditivos: mudar o denominador muda a pergunta"
+    },
+    {
+      "title": "6. Prevalência e probabilidade pré-teste: por que o mesmo teste muda de significado?"
+    },
+    {
+      "title": "7. Razões de verossimilhança: o elo entre sensibilidade, especificidade e Bayes"
+    },
+    {
+      "title": "7.1. Probabilidade não é odds"
+    },
+    {
+      "title": "7.2. Onde a conta pode falhar na prática?"
+    },
+    {
+      "title": "8. Rastreamento, diagnóstico e triagem: o mesmo índice não serve a todos"
+    },
+    {
+      "title": "9. Validade de estudo diagnóstico — quando a tabela 2×2 engana?"
+    },
+    {
+      "title": "9.1. Viés de espectro e desenho caso-controle com extremos"
+    },
+    {
+      "title": "9.2. Viés de verificação"
+    },
+    {
+      "title": "9.3. Padrão de referência imperfeito e incorporação"
+    },
+    {
+      "title": "9.4. Cegamento, limiar e perdas"
+    },
+    {
+      "title": "9.5. Intervalos de confiança, não apenas um número bonito"
+    },
+    {
+      "title": "10. Situações clínicas comentadas"
+    },
+    {
+      "title": "Caso 1 — Rastreamento com muitos positivos e pouca doença"
+    },
+    {
+      "title": "Caso 2 — Exame negativo diante de probabilidade inicial elevada"
+    },
+    {
+      "title": "Caso 3 — O erro na calculadora de probabilidade"
+    },
+    {
+      "title": "Caso 4 — Estudo bonito, verificação incompleta"
+    },
+    {
+      "title": "11. Questões autorais de residência — todas as alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — O denominador decide o conceito"
+    },
+    {
+      "title": "Questão 2 — Dependência da prevalência"
+    },
+    {
+      "title": "Questão 3 — Razão de verossimilhança positiva"
+    },
+    {
+      "title": "Questão 4 — Bayes sem confusão entre odds e probabilidade"
+    },
+    {
+      "title": "Questão 5 — Verificação parcial"
+    },
+    {
+      "title": "Questão 6 — Seleção de população e transportabilidade"
+    },
+    {
+      "title": "12. Visão de revisão e erros frequentes"
+    },
+    {
+      "title": "13. Camada visual planejada — candidatas a produzir, não imagens aprovadas"
+    },
+    {
+      "title": "14. Incerteza estatística: por que “sensibilidade de 90%” não é um fato exato"
+    },
+    {
+      "title": "14.1. Numerador, denominador e intervalo de confiança"
+    },
+    {
+      "title": "14.2. Estudo pequeno com “100%” de sensibilidade"
+    },
+    {
+      "title": "14.3. Por que o tamanho da amostra total pode enganar"
+    },
+    {
+      "title": "14.4. Intervalos para razões de verossimilhança e comparação entre testes"
+    },
+    {
+      "title": "14.5. Quando o resultado é um número contínuo"
+    },
+    {
+      "title": "15. Além de positivo e negativo: resultados indeterminados, qualidade e erro pré-analítico"
+    },
+    {
+      "title": "15.1. “Inconclusivo” não deve desaparecer do denominador"
+    },
+    {
+      "title": "15.2. Fluxo de pacientes e referência incompleta"
+    },
+    {
+      "title": "15.3. Fase pré-analítica, analítica e pós-analítica"
+    },
+    {
+      "title": "15.4. Reprodutibilidade não é sinônimo de validade"
+    },
+    {
+      "title": "15.5. A regra prática do plantão"
+    },
+    {
+      "title": "16. Dos índices diagnósticos à utilidade clínica: o que muda uma decisão?"
+    },
+    {
+      "title": "16.1. Limiar de teste, limiar de tratamento e zona de incerteza"
+    },
+    {
+      "title": "16.2. O mesmo falso negativo pode ter consequências muito diferentes"
+    },
+    {
+      "title": "16.3. VPP e comunicação de risco em frequências naturais"
+    },
+    {
+      "title": "16.4. Sensibilidade e especificidade não medem benefício final"
+    },
+    {
+      "title": "16.5. Testes seriados e dependência biológica"
+    },
+    {
+      "title": "16.6. Decisão compartilhada e segurança"
+    },
+    {
+      "title": "17. Como desenhar, relatar e julgar um estudo de acurácia"
+    },
+    {
+      "title": "17.1. Comece pela pergunta clínica e não pela estatística"
+    },
+    {
+      "title": "17.2. O que a QUADAS-3 acrescenta em 2026"
+    },
+    {
+      "title": "17.3. Viés de espectro não se limita à prevalência"
+    },
+    {
+      "title": "17.4. Desenhos emparelhados e comparação de estratégia diagnóstica"
+    },
+    {
+      "title": "17.5. Revisões sistemáticas diagnósticas e heterogeneidade"
+    },
+    {
+      "title": "18. Tecnologias digitais e IA diagnóstica: por que estudar acurácia além do laboratório?"
+    },
+    {
+      "title": "18.1. Conjunto de treino, validação interna e avaliação externa"
+    },
+    {
+      "title": "18.2. Acurácia versus calibração"
+    },
+    {
+      "title": "18.3. Subgrupos, justiça e erro diferencial"
+    },
+    {
+      "title": "18.4. STARD-AI 2025 — ferramenta atualizada para leitura crítica"
+    },
+    {
+      "title": "19. Casos integradores avançados — quando a interpretação muda a conduta"
+    },
+    {
+      "title": "Caso 5 — “100% sensível” em apenas dez doentes"
+    },
+    {
+      "title": "Caso 6 — As falhas de coleta desaparecem do relatório"
+    },
+    {
+      "title": "Caso 7 — Duas evidências correlacionadas contadas duas vezes"
+    },
+    {
+      "title": "Caso 8 — Algoritmo com média alta, falha em subgrupo"
+    },
+    {
+      "title": "20. Questões integradoras adicionais — leitura crítica, precisão e decisão"
+    },
+    {
+      "title": "Questão 7 — Precisão versus valor pontual"
+    },
+    {
+      "title": "Questão 8 — Resultado inválido na vida real"
+    },
+    {
+      "title": "Questão 9 — Validade, precisão e referência"
+    },
+    {
+      "title": "Questão 10 — Ferramentas metodológicas de 2026"
+    },
+    {
+      "title": "Questão 11 — Dados dependentes e multiplicação de RV"
+    },
+    {
+      "title": "Questão 12 — O resultado positivo precisa de contexto"
+    },
+    {
+      "title": "Conferência de ancoragem — questões 1–12"
+    },
+    {
+      "title": "21. Referências reais e verificação"
+    },
+    {
+      "title": "22. Auditoria de pendências antes da entrega premium"
+    }
+  ],
+  "reference_entries": [
+    "**Fontes científicas reais:** STARD 2015/EQUATOR para estrutura de estudos de acurácia; Mallett e colaboradores (BMJ, 2012) para interpretação orientada ao paciente; artigo BMJ de 2016 sobre efeito do espectro; e PRISMA-DTA para sínteses de estudos diagnósticos. A fundamentação é metodológica e os exemplos numéricos abaixo são **fictícios e calculados para ensino**, nunca estimativas de desempenho de um teste clínico real.",
+    "**Objetivos verificáveis:** ao fim, o aluno deve construir uma tabela 2×2, calcular sensibilidade, especificidade, VPP, VPN e razões de verossimilhança; distinguir probabilidade pré-teste de prevalência populacional; usar odds pré e pós-teste sem confundir com probabilidades; reconhecer viés de seleção, verificação e padrão de referência; e escolher um exame segundo consequências clínicas de erros.",
+    "**As margens também importam.** Total de doentes = VP + FN. Total de não doentes = VN + FP. Total de testes positivos = VP + FP. Total de testes negativos = VN + FN. Total da amostra = VP + FN + FP + VN. Escrever os denominadores explicitamente evita a maioria dos erros de prova.",
+    "**Exemplo LURIA — mil pessoas:** suponha, apenas para treino, 100 pessoas com a doença e 900 sem. O teste identificou 90 das 100 pessoas doentes e foi negativo em 720 das 900 sem doença.",
+    "**Sensibilidade = VP / (VP + FN).** No exemplo: 90 / 100 = **90%**.",
+    "**Armadilha:** sensibilidade de 90% não significa “um positivo tem 90% de chance de ser verdadeiro”. Essa pergunta pertence ao valor preditivo positivo e exige outro denominador.",
+    "**Especificidade = VN / (VN + FP).** No exemplo: 720 / 900 = **80%**.",
+    "**Erro frequente:** “um teste com 80% de especificidade gera 20% de resultados falsos positivos entre todos os pacientes”. Não. A taxa de falso positivo de 20% refere-se especificamente aos **não doentes**. O número absoluto de falsos positivos na população depende de quantas pessoas não doentes foram examinadas.",
+    "**Valor preditivo positivo (VPP) = VP / (VP + FP)**: entre as pessoas que testaram positivo, que fração de fato tem a doença? No exemplo, 90 / 270 = **33,33%**.",
+    "**Valor preditivo negativo (VPN) = VN / (VN + FN)**: entre as pessoas que testaram negativo, que fração realmente não tem a doença? No exemplo, 720 / 730 = **98,63%**.",
+    "**Pulo do gato:** “doentes” no começo da pergunta conduz a sensibilidade; “positivos” no começo conduz a VPP. Trocar a condição pelo resultado troca o denominador e, portanto, a probabilidade calculada.",
+    "**Prevalência não é sinônimo automático da probabilidade pré-teste de cada indivíduo.** Em rastreamento populacional bem definido, a frequência da condição no grupo pode ser ponto de partida razoável. Em ambulatório de referência, pronto atendimento, pessoas com sinais específicos ou com exame prévio alterado, o risco individual difere da prevalência média. O clínico combina dados epidemiológicos com história, exame físico e contexto para estimar a probabilidade antes do teste; não usa um número genérico como verdade personalizada.",
+    "**RV positiva (LR+) = sensibilidade / (1 − especificidade).** No exemplo, 0,90 / 0,20 = **4,5**. Um resultado positivo é 4,5 vezes tão provável em quem tem a doença quanto em quem não tem, dadas as condições estudadas.",
+    "**RV negativa (LR−) = (1 − sensibilidade) / especificidade.** No exemplo, 0,10 / 0,80 = **0,125**. Um negativo é apenas 0,125 vez tão provável em quem tem a doença quanto em quem não tem; ou seja, ele desloca as chances para baixo.",
+    "**Odds = probabilidade / (1 − probabilidade)**; **probabilidade = odds / (1 + odds)**. Por exemplo, probabilidade de 20% corresponde a odds de 0,20/0,80 = **0,25**, ou uma chance de um evento para quatro de não evento. Escrever “20% = odds de 0,20” é matematicamente incorreto.",
+    "**Regra de Bayes em formato operacional: odds pós-teste = odds pré-teste × RV do resultado.**",
+    "**Rastreamento** testa uma população sem sintomas para encontrar condições em fase inicial; a relevância dos falsos positivos aumenta quando a prevalência é pequena. A decisão depende também de benefício comprovado de detectar cedo, danos do sobrediagnóstico, qualidade da confirmação e acesso ao tratamento — não somente sensibilidade.",
+    "**Diagnóstico em paciente sintomático** incorpora probabilidade pré-teste específica. O exame deve responder a uma hipótese concreta: confirmar, excluir ou deslocar risco até limiar em que uma intervenção se justifique.",
+    "**Triagem de emergência** precisa priorizar evitar perdas perigosas, às vezes aceitando maior número de falso-positivos para não deixar passar condições tempo-dependentes. Um exame de triagem mais sensível é útil quando existe rota segura de confirmação, mas pode ser danoso se desencadear tratamento invasivo desnecessário em massa.",
+    "**Testes em paralelo:** classificar como positivo se qualquer um dos testes for positivo tende a aumentar sensibilidade e reduzir especificidade em comparação ao uso isolado de cada teste. **Testes em série:** exigir múltiplos positivos tende a aumentar especificidade e reduzir sensibilidade. Esses efeitos dependem dos testes e sua correlação; as fórmulas simplificadas baseadas em independência não devem ser aplicadas automaticamente.",
+    "**Checklist de leitura crítica original:** (1) pergunta clínica e população compatíveis com a prática? (2) teste índice e referência adequados? (3) intervalo e cegamento apropriados? (4) todos recebem referência? (5) resultados indeterminados e perdas são informados? (6) limites de decisão são pré-definidos? (7) incerteza estatística, consequências dos erros e possibilidade de replicação aparecem claramente?",
+    "**Hipótese e dados:** existem dez doentes no conjunto, dos quais nove testam positivo; entre 990 sem a condição, 198 terão falso positivo. **Interpretação:** VPP = 9/207 = 4,35%; portanto a maioria dos positivos não tem a condição nesse cenário de baixa prevalência. **Conduta de raciocínio:** não converter positivo em diagnóstico definitivo, considerar confirmação com teste apropriado e informar risco e próximos passos sem rotular indevidamente. **Por que importa:** rastrear uma população quase toda saudável com especificidade limitada produz muitos resultados positivos falsos mesmo quando a s",
+    "**Raciocínio:** negativo não é autorização automática de alta. A probabilidade pós-teste cai segundo a RV−, mas pode permanecer acima do limiar em que investigação é necessária. **Exames e conduta:** reconsiderar timing, técnica, condição-alvo e alternativas; se a suspeita continuar elevada, usar teste de referência ou observação adequada conforme protocolo da doença. **Por que importa:** “teste negativo” e “doença excluída” só equivalem quando o risco residual é aceitavelmente baixo na situação real.",
+    "**Raciocínio:** a regra multiplica **odds**, não probabilidade. Odds pré-teste = 0,20/0,80 = 0,25; odds pós = 0,25 × 5 = 1,25; probabilidade pós = 1,25/2,25 = **55,56%**. **Conduta:** registrar o cálculo com denominador e fontes; não converter índices estatísticos em certeza. **Por que importa:** Bayes é ferramenta clínica poderosa e fonte de erro grave quando suas unidades são confundidas.",
+    "**Hipótese:** verificação parcial. Sem conhecer quantos negativos tinham de fato a doença, o número de falsos negativos permanece desconhecido. **Interpretação:** a estimativa de sensibilidade é potencialmente enviesada e não pode ser adotada sem reconstruir o fluxo de pacientes. **Conduta:** exigir transparência de referência, seguimento e perdas antes de mudar prática assistencial. **Por que importa:** a aparência de perfeição pode ser produzida pelo desenho, não pelo desempenho do teste.",
+    "**Gabarito: C.** Sensibilidade = 90/(90+10)=90%. **A incorreta:** é o VPP. **B incorreta:** é a especificidade. **D incorreta:** aproxima o VPN. **E incorreta:** é a proporção de falso-negativos entre doentes. **Mini-revisão:** a sensibilidade começa selecionando a coluna dos doentes.",
+    "**Gabarito: B.** Com menos doentes entre os testados, os falsos positivos representam maior fração dos resultados positivos; o VPP cai, enquanto o VPN tende a subir. **A incorreta:** inverte o efeito. **C incorreta:** o enunciado fixou a sensibilidade; fora da hipótese, ela pode variar por efeito de espectro, mas não aumenta obrigatoriamente. **D incorreta:** mede dimensões distintas. **E incorreta:** não existe tal identidade. **Mini-revisão:** VPP e VPN são condicionais ao resultado e dependem da frequência da doença no grupo.",
+    "**Gabarito: D.** RV+ = 0,90/(1−0,80)=4,5. **A incorreta:** é a RV−. **B incorreta:** é a sensibilidade isolada. **C incorreta:** não aplica o denominador de falso positivo. **E incorreta:** resultado de operação sem correspondência à fórmula. **Mini-revisão:** positivo força a razão sensibilidade/taxa de falso positivo.",
+    "**Gabarito: D.** Odds pré = 0,2/0,8=0,25; odds pós=1,25; probabilidade=1,25/(1+1,25)=55,6%. **A incorreta:** ignora a nova informação. **B incorreta:** corresponde às odds iniciais expressas indevidamente como percentual. **C incorreta:** ignora conversão correta. **E incorreta:** multiplica diretamente 20% por 5. **Mini-revisão:** a regra opera sobre odds; depois converte-se de volta em probabilidade.",
+    "**Gabarito: C.** Sem verificar negativos, casos doentes perdidos podem não ser contados. **A incorreta:** os índices não ficam automaticamente válidos. **B incorreta:** frequência da condição continua sendo conceito epidemiológico. **D incorreta:** ainda podem existir falsos positivos; a referência pode discordar do teste. **E incorreta:** ROC exige verdade de referência para classificar positivos e negativos. **Mini-revisão:** transparência do fluxo é tão importante quanto a tabela final."
+  ],
+  "external_urls": [
+    "https://doi.org/10.7326/ANNALS-25-02104.",
+    "https://www.gov.br/conitec/pt-br/midias/artigos_publicacoes/diretrizes/revisao_sistematica_metanalise_estudos_acuracia_diagnostica.pdf.",
+    "https://doi.org/10.1038/s41591-025-03953-8.",
+    "https://doi.org/10.1136/bmj.h5527.",
+    "https://www.equator-network.org/reporting-guidelines/stard/",
+    "https://doi.org/10.1136/bmjopen-2016-012799",
+    "https://doi.org/10.1136/bmj.e3999",
+    "https://www.bmj.com/content/353/bmj.i3139",
+    "https://doi.org/10.1001/jama.2017.19163"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A busca inicial no repositório LURIA não identificou uma pasta publicada homônima nem manuscrito com este recorte no inventário do lote 5. Buscas no Drive por “sensibilidade”, “especificidade”, “curva ROC” e “testes diagnósticos” não localizaram, pelo título, apostila geral diretamente correspondente; apareceram materiais de outras doenças que utilizam esses termos incidentalmente. Portanto, **não foi realizado benchmarking de uma apostila proprietária equivalente**, e não se deve atribuir este texto a qualquer cursinho ou presumir autorização de cópia."
+    },
+    {
+      "text": "**Fontes científicas reais:** STARD 2015/EQUATOR para estrutura de estudos de acurácia; Mallett e colaboradores (BMJ, 2012) para interpretação orientada ao paciente; artigo BMJ de 2016 sobre efeito do espectro; e PRISMA-DTA para sínteses de estudos diagnósticos. A fundamentação é metodológica e os exemplos numéricos abaixo são **fictícios e calculados para ensino**, nunca estimativas de desempenho de um teste clínico real."
+    },
+    {
+      "text": "Um exame diagnóstico é uma fonte de evidência que modifica uma hipótese, não um substituto do raciocínio clínico. Um resultado positivo pode ter significados diferentes numa pessoa com doença altamente provável e em outra cuja probabilidade inicial é muito baixa. Da mesma forma, um exame negativo tranquiliza mais ou menos conforme a sensibilidade do teste, sua execução, o momento da doença e a chance clínica antes de examinar."
+    },
+    {
+      "text": "Alta sensibilidade favorece a utilidade de um resultado negativo para reduzir suspeita, **mas não torna todos os negativos seguros**. É preciso observar probabilidade pré-teste, gravidade de perder diagnóstico, limiar de detecção, fase da doença e desempenho real na população. Um teste muito sensível em casos graves e tardios pode falhar mais nos pacientes precoces que chegam à APS."
+    },
+    {
+      "text": "Uma razão de verossimilhança publicada pode ser pouco transportável se o estudo incluiu apenas casos avançados e controles saudáveis, utilizou aparelhos diferentes, adotou outro ponto de corte ou verificou diagnósticos somente em pacientes selecionados. Também não se deve multiplicar mecanicamente as RV de três testes fortemente correlacionados como se oferecessem três evidências independentes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

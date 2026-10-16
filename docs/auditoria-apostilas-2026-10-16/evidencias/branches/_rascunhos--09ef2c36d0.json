@@ -1,0 +1,375 @@
+{
+  "sha": "09ef2c36d0be42fcc39d442f6c8a1b19ef3e738a",
+  "path": "apostilas/_rascunhos/lote-10-aula-208-gestacao-gemelar-alto-risco.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--09ef2c36d0",
+  "title": "LURIA — Lote 10 · Apostila 208",
+  "format": ".md",
+  "chars_estimated": 72487,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 10 · Apostila 208"
+    },
+    {
+      "title": "Gestação gemelar e acompanhamento de alto risco"
+    },
+    {
+      "title": "0. Etapa zero — auditoria de acervo e benchmark real"
+    },
+    {
+      "title": "1. Objetivos clínicos"
+    },
+    {
+      "title": "2. Conceitos centrais: zigoticidade não é corionicidade"
+    },
+    {
+      "title": "2.1 Por que o momento de divisão importa, com cautela"
+    },
+    {
+      "title": "3. Ultrassom do primeiro trimestre: exame que muda todo o cronograma"
+    },
+    {
+      "title": "3.1 Datação"
+    },
+    {
+      "title": "3.2 Sinal lambda/twin-peak e sinal T"
+    },
+    {
+      "title": "3.3 Amnionicidade e membrana divisória"
+    },
+    {
+      "title": "3.4 Identificação reprodutível do feto A e B"
+    },
+    {
+      "title": "4. Calendário do pré-natal por corionicidade"
+    },
+    {
+      "title": "4.1 Crescimento discordante: cálculo não basta"
+    },
+    {
+      "title": "4.2 Prevenção e cuidados maternos"
+    },
+    {
+      "title": "5. Síndrome de transfusão feto-fetal (STFF / TTTS)"
+    },
+    {
+      "title": "5.1 Mecanismo"
+    },
+    {
+      "title": "5.2 Diagnóstico ultrassonográfico"
+    },
+    {
+      "title": "5.3 Estadiamento de Quintero"
+    },
+    {
+      "title": "5.4 Conduta por estágio e idade gestacional"
+    },
+    {
+      "title": "6. TAPS — anemia–policitemia sem oligo/polidrâmnio obrigatório"
+    },
+    {
+      "title": "6.1 Como diferenciar de TTTS"
+    },
+    {
+      "title": "6.2 Critérios usados pela SMFM 2024"
+    },
+    {
+      "title": "7. Restrição seletiva de crescimento fetal (sFGR)"
+    },
+    {
+      "title": "7.1 Definição e mecanismo"
+    },
+    {
+      "title": "7.2 Classificação Doppler em monocoriônicas"
+    },
+    {
+      "title": "7.3 Conduta e limites"
+    },
+    {
+      "title": "8. Gestação monocoriônica-monoamniótica (MCMA)"
+    },
+    {
+      "title": "9. Planejamento do parto sem regras simplistas"
+    },
+    {
+      "title": "9.1 Via de parto"
+    },
+    {
+      "title": "9.2 Hemorragia pós-parto"
+    },
+    {
+      "title": "10. Condutas transversais que não podem faltar"
+    },
+    {
+      "title": "11. Referências científicas verificadas"
+    },
+    {
+      "title": "12. Matriz de competência preliminar"
+    },
+    {
+      "title": "13. Casos clínicos originais com decisões justificadas"
+    },
+    {
+      "title": "Caso 1 — Uma placenta aparente e membrana em T"
+    },
+    {
+      "title": "Caso 2 — O feto que ficou sem bexiga visível"
+    },
+    {
+      "title": "Caso 3 — Anemia/policitemia com líquidos normais"
+    },
+    {
+      "title": "Caso 4 — Discordância de peso não é diagnóstico automático"
+    },
+    {
+      "title": "Caso 5 — Circulação do co-gêmeo após óbito fetal"
+    },
+    {
+      "title": "Caso 6 — O parto gemelar que não exige cesárea universal"
+    },
+    {
+      "title": "14. Questões originais comentadas"
+    },
+    {
+      "title": "Questão 1 — Corionicidade"
+    },
+    {
+      "title": "Questão 2 — Frequência de rastreio da TTTS"
+    },
+    {
+      "title": "Questão 3 — Quintero II"
+    },
+    {
+      "title": "Questão 4 — Tratamento TTTS"
+    },
+    {
+      "title": "Questão 5 — TAPS"
+    },
+    {
+      "title": "Questão 6 — Discordância de peso"
+    },
+    {
+      "title": "Questão 7 — Fluxo umbilical na sFGR monocoriônica"
+    },
+    {
+      "title": "Questão 8 — Nascimento programado sem complicações"
+    },
+    {
+      "title": "Questão 9 — Gêmeos não determinam via única"
+    },
+    {
+      "title": "Questão 10 — Óbito único em monocoriônica"
+    },
+    {
+      "title": "15. Figuras necessárias antes da versão definitiva"
+    },
+    {
+      "title": "16. Auditoria deste incremento"
+    },
+    {
+      "title": "17. Rastreamento morfológico e diagnóstico genético: duas anatomias, um laudo coerente"
+    },
+    {
+      "title": "17.1 Anomalia discordante não significa diagnóstico simples"
+    },
+    {
+      "title": "17.2 Rastreamento versus diagnóstico de aneuploidia"
+    },
+    {
+      "title": "17.3 Intervenções fetais seletivas"
+    },
+    {
+      "title": "18. Sequência TRAP: a fisiopatologia do “gêmeo bomba”"
+    },
+    {
+      "title": "18.1 Achados diagnósticos"
+    },
+    {
+      "title": "18.2 Acompanhamento e tratamento"
+    },
+    {
+      "title": "18.3 Comparação: TRAP versus TTTS versus TAPS"
+    },
+    {
+      "title": "19. Prematuridade em gestação gemelar: riscos, rastreio e limites de prevenção"
+    },
+    {
+      "title": "19.1 Por que gemelares nascem antes?"
+    },
+    {
+      "title": "19.2 Comprimento cervical"
+    },
+    {
+      "title": "19.3 Progesterona, cerclagem e pessário: evitar transplante automático de recomendações de gestação única"
+    },
+    {
+      "title": "19.4 Quando a paciente procura urgência por contrações"
+    },
+    {
+      "title": "20. Obstetrícia intraparto: duas circulações, duas apresentações e um útero"
+    },
+    {
+      "title": "20.1 Antes do trabalho de parto"
+    },
+    {
+      "title": "20.2 Monitorar os dois batimentos de forma inequívoca"
+    },
+    {
+      "title": "20.3 Depois do nascimento do primeiro"
+    },
+    {
+      "title": "21. Mais cenários clínicos para corrigir erros frequentes"
+    },
+    {
+      "title": "Cenário A — “Um feto está pequeno, então deve ser TTTS”"
+    },
+    {
+      "title": "Cenário B — “Duas placentas visíveis no exame tardio”"
+    },
+    {
+      "title": "Cenário C — “A paciente não tem sintomas; pode esperar um mês?”"
+    },
+    {
+      "title": "Cenário D — “Cervicometria de 20 mm: progesterona para toda gemelar?”"
+    },
+    {
+      "title": "Cenário E — “Uma morte fetal exige parto imediato”"
+    },
+    {
+      "title": "22. Fontes adicionais que sustentam os blocos novos"
+    },
+    {
+      "title": "23. Decisões integradas: os quatro cenários que exigem mudança de nível de cuidado"
+    },
+    {
+      "title": "23.1 Monocoriônica com polidrâmnio agudo e dispneia materna"
+    },
+    {
+      "title": "23.2 Gestação gemelar com hipertensão: não confundir risco e diagnóstico"
+    },
+    {
+      "title": "23.3 Monocoriônica com feto estruturalmente anômalo"
+    },
+    {
+      "title": "23.4 Anemia fetal em monocoriônica: a PSV alta não define automaticamente TAPS"
+    },
+    {
+      "title": "24. Quadro de revisão: decisão típica por situação"
+    },
+    {
+      "title": "25. Controle de qualidade científico — não confundir recomendação com protocolo local"
+    },
+    {
+      "title": "23. Auditoria prática do laudo de ultrassonografia gemelar"
+    },
+    {
+      "title": "23.1 Como identificar deterioração que exige atenção imediata"
+    },
+    {
+      "title": "24. Gêmeos conjugados e gestação múltipla de ordem superior: reconhecer sem aprofundamento desproporcional"
+    },
+    {
+      "title": "25. Comunicação clínica no ambulatório de alto risco"
+    },
+    {
+      "title": "26. Casos complementares de integração"
+    },
+    {
+      "title": "Caso 7 — Colo curto não equivale a parto inevitável"
+    },
+    {
+      "title": "Caso 8 — Feto bomba em TRAP"
+    },
+    {
+      "title": "27. Questões complementares"
+    },
+    {
+      "title": "Questão 11 — Cervicometria em gemelares"
+    },
+    {
+      "title": "Questão 12 — TRAP"
+    },
+    {
+      "title": "Questão 13 — Laudo MCDA"
+    },
+    {
+      "title": "Questão 14 — Via e estrutura do serviço"
+    },
+    {
+      "title": "28. Controle de qualidade desta revisão"
+    }
+  ],
+  "reference_entries": [
+    "1. **Khalil A, et al.** ISUOG Practice Guidelines (updated): role of ultrasound in twin pregnancy. *Ultrasound Obstet Gynecol*. 2025;65(2):253–276. DOI [10.1002/uog.29166](https://doi.org/10.1002/uog.29166). [Texto integral](https://pmc.ncbi.nlm.nih.gov/articles/PMC11788470/). ",
+    "2. **Society for Maternal-Fetal Medicine.** Consult Series #72: Twin-twin transfusion syndrome and twin anemia-polycythemia sequence. *Am J Obstet Gynecol*. 2024. DOI [10.1016/j.ajog.2024.07.017](https://doi.org/10.1016/j.ajog.2024.07.017). [Resumo e recomendações originais](https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/).",
+    "3. **NICE.** Twin and triplet pregnancy. Guideline NG137. 2019, página institucional de recomendações vigente consultada em 15/10/2026. [Recommendations](https://www.nice.org.uk/guidance/ng137/chapter/Recommendations).",
+    "4. **Ministério da Saúde/FEBRASGO:** localizar documentos e confirmar a versão brasileira aplicável a ASA/profilaxia, rastreios, planejamento de parto e procedimentos especializados. **Pendência**, não inventar referência específica sem rastreamento.",
+    "**Status de fontes:** origem científica externa verificável; comparativo didático integral do Drive **não encontrado**; doses nacionais e recursos por rede SUS não auditados.",
+    "**Advertência editorial:** esta é a primeira etapa da aula 208. Não afirmar que alcançou 60 mil caracteres úteis, nem que possui as quatro histórias clínicas/seis questões mínimas, nem que foram aprovadas imagens. Aulas 204–207 seguem separadas nesta branch e nenhuma apostila publicada foi substituída.",
+    "**Apresentação:** gestante de 29 anos, 12 semanas e dois dias, ultrassom documenta dois fetos com atividade cardíaca, uma massa placentária posterior e membrana intergemelar delgada que forma sinal **T** na inserção. Os fetos parecem do mesmo sexo. Não há outras alterações.",
+    "**Hipótese:** gestação gemelar monocoriônica-diamniótica (MCDA), a confirmar/documentar pelo exame do primeiro trimestre.",
+    "**Raciocínio:** (1) duas bolsas com membrana e inserção em T apoiam um córion compartilhado; (2) uma massa placentária isolada não bastaria para o diagnóstico; (3) mesmo sexo não define corionicidade; (4) o risco principal é a circulação placentária comunicante, não apenas maior chance de prematuridade; (5) o calendário deve contemplar rastreio de TTTS/TAPS e crescimento a partir de 16 semanas.",
+    "**Exames/conduta:** guardar imagem da inserção, registrar corionicidade, amnionicidade, datação, local dos fetos e exame morfológico. Planejar ultrassom **no mínimo a cada duas semanas a partir de 16 semanas**, incluindo líquido de cada bolsa e bexiga de cada feto, com Dopplers conforme protocolo. Aconselhar sinais de alarme maternos.",
+    "**Por que importa:** a prova frequentemente esconde a decisão mais importante atrás de uma imagem de membrana; reconhecer corionicidade cedo evita vigilância inadequada.",
+    "**Apresentação:** MCDA de 21 semanas em seguimento. US identifica DVP de 1,4 cm em um saco e de 11 cm no outro. Após observação adequada, a bexiga do feto na bolsa com oligodrâmnio não é visualizada; não se identificam Dopplers criticamente alterados nem hidropisia. Mãe refere distensão abdominal progressiva.",
+    "**Hipótese:** síndrome de transfusão feto-fetal **Quintero II**, com doador em oligodrâmnio e receptor em polidrâmnio.",
+    "**Raciocínio:** (1) a placenta compartilhada permite anastomoses; (2) sequência oligo/poli satisfaz padrão de TTTS, e não simples discordância de peso; (3) ausência de visualização da bexiga do doador eleva estágio para **II**; (4) falta de Doppler crítico afasta no momento critérios de estágio III; (5) entre 16–26 semanas, laser fetoscópico é tratamento padrão para estágio II–IV segundo SMFM.",
+    "**Exames:** avaliação completa de anatomia, biometria, Dopplers de artéria umbilical, ducto venoso e ACM, função cardíaca e comprimento cervical conforme centro; revisar grau de distensão e sintomas maternos.",
+    "**Conduta:** **encaminhamento rápido a centro de terapia fetal** para avaliação e discussão de coagulação fetoscópica a laser, sem esperar progressão a hidropisia. Não limitar tratamento a acompanhamento mensal ou amniorredução repetida como solução vascular definitiva.",
+    "**Por que importa:** a presença ou ausência de bexiga do doador muda estágio e momento de avaliação intervencionista.",
+    "**Apresentação:** MCDA com 25 semanas, sem polidrâmnio ou oligodrâmnio importantes, mas Doppler ACM mostra PSV de **1,65 MoM** em um feto e **0,78 MoM** no outro, em medidas técnicas adequadas. Há diferença intergemelar importante.",
+    "**Hipótese:** sequência anemia–policitemia (TAPS), doador provavelmente anêmico e receptor com policitemia.",
+    "**Raciocínio:** (1) normalidade dos líquidos torna TTTS clássica menos provável; (2) o feto com alta PSV da ACM é compatível com anemia e o de baixa PSV, policitemia; (3) o par >1,5 e <1,0 MoM atende ao critério mínimo de triagem de SMFM; (4) é necessário determinar estágio/severidade e coexistência de outras complicações; (5) eventual intervenção depende de idade gestacional e centro.",
+    "**Exames:** repetir Doppler da ACM por especialista, confirmar identificação fetal, avaliar sinais de sobrecarga e anatomia, crescimento e outros Dopplers.",
+    "**Conduta:** discussão com medicina fetal e definição de vigilância intensiva versus terapia específica. Não assumir que líquido normal afasta toda síndrome vascular da placenta monocoriônica.",
+    "**Por que importa:** diferencia TAPS de TTTS usando mecanismo e Doppler, não apenas memorização de siglas.",
+    "**Apresentação:** DCDA de 29 semanas, fetos com PFE de 1550 g e 1160 g. O feto menor está no percentil 7 em curva apropriada; artéria umbilical preserva fluxo diastólico, pressão materna normal, líquido sem alterações importantes.",
+    "**Hipótese:** provável restrição de crescimento de um dos fetos, com discordância de peso significativa, a investigar e seguir conforme corionicidade.",
+    "**Raciocínio:** (1) discordância = (1550−1160)/1550×100 = **25,2%**; (2) percentil <10 e discordância pedem avaliação intensificada; (3) ausência de artéria umbilical crítica não permite alta sem seguimento; (4) DCDA tem duas circulações placentárias, não o mesmo mecanismo vascular de TTTS; (5) não antecipar parto apenas pela porcentagem sem avaliar dinâmica e condições maternas/fetais.",
+    "**Exames:** repetir biometria em intervalo apropriado, avaliar Doppler umbilical e outros vasos conforme indicação, líquido e sinais maternos de doença placentária.",
+    "**Conduta:** acompanhamento de medicina fetal com Doppler intensificado, por exemplo **ao menos semanal** no contexto de critérios NICE para discordância ≥20% e/ou PFE <p10; planejar parto conforme deterioração ou evolução estável.",
+    "**Por que importa:** ensina cálculo correto e proíbe equivaler um único número a decisão de nascimento.",
+    "**Apresentação:** MCDA com 28 semanas, ultrassom de rotina constata óbito de um dos fetos e sobrevivente com batimentos presentes. Não há trabalho de parto nem instabilidade materna."
+  ],
+  "external_urls": [
+    "https://doi.org/10.1002/uog.29166",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11788470/",
+    "https://doi.org/10.1016/j.ajog.2024.07.017",
+    "https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/",
+    "https://www.nice.org.uk/guidance/ng137/chapter/Recommendations",
+    "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/uog.29166",
+    "https://www.isuog.org/resource/updated-isuog-practice-guideline-role-of-ultrasound-in-twin-pregnancy.html"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Após estudar esta apostila, o aluno deve saber: 1. Distinguir **dicoriônica-diamniótica (DCDA)**, **monocoriônica-diamniótica (MCDA)** e **monocoriônica-monoamniótica (MCMA)**. 2. Determinar corionicidade **preferencialmente antes de 13 semanas e seis dias** e guardar imagem do sinal lambda/T, reconhecendo limitações de exames tardios. 3. Diferenciar **zigoticidade** de corionicidade e evitar confundir “mesmo sexo” com monocorionicidade. 4. Calcular e interpretar **discordância de pesos**, relacionando centis, Dopplers e líquido amniótico sem diagnosticar sFGR por assimetria isolada. 5. Interpretar Quintero I–V para TTTS e distinguir TTTS de "
+    },
+    {
+      "text": "A datação precoce reduz erros de classificação de percentis e de planejamento de parto. ISUOG 2025 orienta, na gravidez gemelar apresentada no primeiro trimestre, usar o **comprimento cabeça-nádega (CCN/CRL) do feto maior** para definir idade gestacional. Se a primeira avaliação ocorre após 14 semanas, usar medidas cefálicas conforme protocolo e reconhecer que precisão é menor do que no primeiro trimestre."
+    },
+    {
+      "text": "Uma gestação que parece ter apenas uma bolsa exige exame dirigido em idade apropriada e por operador experiente. A ausência de membrana divisória visível num corte não confirma MCMA: posição fetal, resolução e condições técnicas podem dificultar sua visualização. MCMA é diagnóstico de risco elevado, com planejamento de vigilância e parto especializado."
+    },
+    {
+      "text": "| Tipo | Eixo de vigilância habitual se sem complicações | O que procurar | | --- | --- | --- | | DCDA | Ultrassonografias seriadas em intervalos de cerca de 4 semanas a partir da avaliação morfológica, conforme guia e risco | Crescimento de ambos, discordância, líquido, anomalias, posição. | | MCDA | **A cada 2 semanas desde 16 semanas**, mantendo pelo menos essa frequência | TTTS, TAPS, sFGR, líquido de cada saco, bexigas e Dopplers. | | MCMA | Seguimento por **serviço altamente especializado**, com planos individuais de monitorização intensiva | Cordões compartilhados, comprometimento fetal, crescimento e eventos súbitos. |"
+    },
+    {
+      "text": "**NICE NG137** apresenta consultas/US para DCDA em cerca de 20, 24, 28, 32 e 36 semanas após exame inicial, e MCDA em 16, 18, 20, 22, 24, 26, 28, 30, 32 e 34 semanas. Não confundir esses marcos britânicos com calendário obrigatório idêntico de todas as maternidades brasileiras; a **frequência quinzenal da MCDA desde 16 semanas** coincide com SMFM/ISUOG e tem base fisiopatológica sólida."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

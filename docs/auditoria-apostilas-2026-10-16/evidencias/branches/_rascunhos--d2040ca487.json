@@ -1,0 +1,173 @@
+{
+  "sha": "d2040ca487a1e92260b778c727b4e76178c3fa30",
+  "path": "apostilas/_rascunhos/lote-08-aula-180-cuidados-paliativos-comunicacao.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d2040ca487",
+  "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias",
+  "format": ".md",
+  "chars_estimated": 36523,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias"
+    },
+    {
+      "title": "0. Etapa zero: inventário, fonte comparativa e enquadramento nacional"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. O que é cuidado paliativo?"
+    },
+    {
+      "title": "2. Sofrimento total: por que a morfina sozinha pode não resolver?"
+    },
+    {
+      "title": "3. Identificar necessidades precocemente — sem “prever o dia da morte”"
+    },
+    {
+      "title": "PPS, ECOG e fragilidade — conceitos diferentes"
+    },
+    {
+      "title": "4. Tomada de decisão compartilhada e objetivos de cuidado"
+    },
+    {
+      "title": "5. Diretivas antecipadas de vontade e capacidade decisória"
+    },
+    {
+      "title": "6. Ortotanásia, distanásia, eutanásia e sedação paliativa"
+    },
+    {
+      "title": "Ética da intenção e proporcionalidade"
+    },
+    {
+      "title": "7. Comunicação de más notícias — SPIKES aplicado, não decorado"
+    },
+    {
+      "title": "Exemplo de conversa: diagnóstico de câncer avançado"
+    },
+    {
+      "title": "8. Comunicação de prognóstico, urgência e notícia de morte"
+    },
+    {
+      "title": "9. Controle de dor: mecanismo, tipo e plano de resposta"
+    },
+    {
+      "title": "Opioides — benefícios e riscos"
+    },
+    {
+      "title": "10. Dispneia: tratar sofrimento mesmo sem hipoxemia"
+    },
+    {
+      "title": "11. Náuseas, vômitos, constipação e obstrução intestinal"
+    },
+    {
+      "title": "12. Delirium, ansiedade, depressão e sofrimento existencial"
+    },
+    {
+      "title": "13. Nutrição, hidratação e medidas invasivas no fim da vida"
+    },
+    {
+      "title": "14. Processo ativo de morrer: reconhecer, planejar e cuidar"
+    },
+    {
+      "title": "15. Plano de cuidado antecipado e rede SUS"
+    },
+    {
+      "title": "16. Casos clínicos completos e comentados"
+    },
+    {
+      "title": "Caso 1 — Ainda em quimioterapia, já com necessidade paliativa"
+    },
+    {
+      "title": "Caso 2 — Dispneia sem hipoxemia"
+    },
+    {
+      "title": "Caso 3 — Diretiva antecipada em paciente incapaz"
+    },
+    {
+      "title": "Caso 4 — Delirium antes de sedação"
+    },
+    {
+      "title": "Caso 5 — Comunicação de recidiva"
+    },
+    {
+      "title": "Caso 6 — Decisão sobre RCP em falência multiorgânica irreversível"
+    },
+    {
+      "title": "17. Questões autorais comentadas"
+    },
+    {
+      "title": "18. Revisão de alto rendimento"
+    },
+    {
+      "title": "19. Recursos visuais para futura aprovação no Admin"
+    },
+    {
+      "title": "20. Referências fundamentais verificadas"
+    },
+    {
+      "title": "Divergências e limitações"
+    },
+    {
+      "title": "21. Auditoria editorial da primeira versão"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Portaria GM/MS 3.681, de 7 de maio de 2024** — Política Nacional de Cuidados Paliativos (PNCP). https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "2. Ministério da Saúde. **Política Nacional de Cuidados Paliativos — portal oficial e princípios**, atualizado com atos de 2026. https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/cuidados-paliativos/",
+    "3. Ministério da Saúde. **Legislação da PNCP**, incluindo Portaria 10.181/2026 e SAES 4.288/2026; confirmar efeitos operacionais. https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao/legislacao",
+    "4. Ministério da Saúde. **Nota Técnica 2/2026 DAET/SAES/MS**, medicamentos essenciais para cuidados paliativos nos Estados/Municípios. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-2-2026-daet-saes-ms/view",
+    "5. Conselho Federal de Medicina. **Resolução CFM 1.995/2012** — diretivas antecipadas. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "6. Conselho Federal de Medicina. **Resolução CFM 1.805/2006** — limitação proporcional de medidas na terminalidade e garantia de conforto. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "7. Baile WF, Buckman R, Lenzi R, et al. **SPIKES — A Six-Step Protocol for Delivering Bad News**. The Oncologist. 2000;5(4):302–311. DOI:10.1634/theoncologist.5-4-302. https://academic.oup.com/oncolo/article/5/4/302/6386019",
+    "8. Ministério da Saúde. **Quando iniciar cuidados paliativos?**, FAQ PNCP. https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/perguntas-frequentes-faq/quando-iniciar-o-tratamento",
+    "- **Norma 2026 versus 2024:** novos atos de habilitação, cadastro e financiamento não mudam automaticamente a definição clínica, mas requerem conferência de serviços e acesso local.",
+    "- **CFM e PNCP:** diretivas e limitação de tratamento devem ser aplicadas com documentação, autonomia, equipe e revisão normativa atual. Este texto não é parecer jurídico para disputa familiar.",
+    "- **Farmacologia:** dose de opioide e sedação proporcional ainda necessita validação para insuficiência renal/hepática, interações, disponibilidade nacional e bulário LURIA. Não transformar o rascunho em receita de uso direto.",
+    "- **Benchmark Drive apenas parcial:** analgesia e delirium da UTI pediátrica não equivalem a cuidados paliativos abrangentes. Uma apostila temática comparável continua necessária para certificação.",
+    "**Antes de publicar:** aprofundar doença não oncológica por cenário, prognóstico e PPS, farmacologia/doses com referências brasileiras, vias alternativas de medicação no processo de morrer, pediatria e neonatologia paliativas, decisões de órgãos artificiais, conflitos éticos, fluxos completos da PNCP, referências por afirmação, imagens autorais aprovadas, auditoria independente e testes desktop/PWA."
+  ],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/cuidados-paliativos/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao/legislacao",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-2-2026-daet-saes-ms/view",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "https://academic.oup.com/oncolo/article/5/4/302/6386019",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/perguntas-frequentes-faq/quando-iniciar-o-tratamento"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A decisão deve explorar: 1. Entendimento do diagnóstico e do curso da doença. 2. Valores: autonomia, lucidez, ausência de dor, tempo com familiares, possibilidade de voltar para casa. 3. Objetivos terapêuticos: recuperar função, prolongar vida, controlar sintomas, reduzir internações. 4. Opções e limites: ventilação invasiva, RCP, antibioticoterapia, diálise, transfusões, alimentação artificial, cirurgia, sedação. 5. Probabilidade de benefício **neste cenário**, riscos, efeitos colaterais e alternativas. 6. Quem deve participar, respeitando consentimento/confidencialidade. 7. Registro claro no prontuário, reavaliação se estado ou preferências"
+    },
+    {
+      "text": "**Comunicação de morte inesperada:** garantir que a informação foi confirmada; reunir familiar em lugar reservado, identificar relação e suporte, utilizar termos claros (“morreu”, quando apropriado), evitar rodeios, permitir reação e explicar próximos passos práticos com sensibilidade. Não relatar diagnóstico ou causa incerta como comprovada. Em óbito materno, fetal/neonatal ou de criança, considerar apoio especializado e orientações específicas de luto."
+    },
+    {
+      "text": "**Analgesia multimodal** combina medidas não farmacológicas, analgésicos não opioides quando adequados, opioides em dor intensa selecionada e adjuvantes conforme mecanismo. Não usar AINE indiscriminadamente em insuficiência renal, sangramento, plaquetopenia ou risco gastrointestinal. Avaliar contraindicações de paracetamol e função hepática."
+    },
+    {
+      "text": "A **etiologia da náusea** orienta tratamento: constipação, opioides, obstrução, gastroparesia, hipercalcemia, insuficiência renal/hepática, vestibulopatia, hipertensão intracraniana, quimioterapia ou ansiedade. Antieméticos possuem alvos diferentes (dopaminérgico, serotoninérgico, histamínico e pró-cinético); o uso empírico repetido sem diagnóstico pode não resolver a causa e provocar efeitos adversos como sedação ou prolongamento QT."
+    },
+    {
+      "text": "**Pontos mínimos no plano:** diagnóstico e contexto; quem participa/representa; capacidade e preferências; objetivo principal; intervenções proporcionais e medidas a evitar em cenários definidos; esquema de controle de sintomas e acesso a medicamentos; contatos da APS, equipe domiciliar/especializada e emergência; previsão de retorno e avaliação de cuidador."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}
