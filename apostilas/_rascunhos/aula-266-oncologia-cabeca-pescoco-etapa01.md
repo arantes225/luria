@@ -590,3 +590,62 @@ As fontes a seguir acrescentam escopo específico, sem substituir a precedência
 **Conteúdo adicionado nesta etapa:** aprofundamento de cavidade oral/DOI, prognóstico e possibilidades terapêuticas de orofaringe, biologia de nasofaringe, laríngeo/hipofaríngeo, histologias salivares, primário oculto, patologia, reabilitação, comunicação, quatro casos adicionais, seis questões originais e matriz de decisões.  
 **Permanecem obrigatórios:** normalização e incorporação desses capítulos nas seções correspondentes sem redundância; revisão do TNM formal aplicável por sítio e edição; detalhamento terapêutico e contraindicações com diretrizes atuais; auditoria de similaridade/editorial; imagens reais com licença adequada e aprovação no Admin; avaliação por especialista; testes de casos/questões usando somente o texto da aula; auditoria automática, desktop/PWA e certificação.  
 **Publicação:** NÃO AUTORIZADA por esta entrega.
+
+
+## 32. Auditoria científica dirigida — correções antes da publicação
+
+**Classificação:** revisão editorial interna; não substitui validação de diretriz vigente nem revisão por especialista.
+
+### 32.1. Não misturar versões de TNM
+As classificações de cavidade oral, orofaringe associada a HPV, orofaringe não associada a HPV, nasofaringe e laringe diferem. Cada quadro definitivo deverá trazer o nome do sistema, edição, ano e população. Não reproduzir tabela de TNM de apostila de terceiros sem conferência independente. Até essa verificação, manter a explicação conceitual e sinalizar as tabelas numéricas como pendentes.
+
+### 32.2. Cuidado com o termo “HPV positivo”
+O marcador p16 por imunohistoquímica é aplicado em contexto anatômico e patológico específico. Um linfonodo p16 positivo pode orientar investigação de orofaringe, mas não permite concluir automaticamente a origem em qualquer cenário. Nos casos de sítio desconhecido, documentar qual tecido foi testado, metodologia e necessidade de confirmação complementar segundo protocolo.
+
+### 32.3. Cuidado com as promessas de rastreamento
+Exame de lesão suspeita em pessoa sintomática é investigação diagnóstica. Não transformar educação sobre sinais de alerta em recomendação de rastreamento universal com eficácia comprovada. A referência do INCA deve ser usada para distinguir estratégias e adequar encaminhamentos ao SUS.
+
+### 32.4. Cuidado com disponibilidade terapêutica
+Não atribuir incorporação ao SUS com base em autorização da FDA. Toda referência a pembrolizumabe perioperatório deverá ser acompanhada de população elegível, biomarcador, cenário e data da autorização, além de verificação independente de registro e incorporação nacional na data de publicação.
+
+### 32.5. Revisão dos fluxos urgentes
+Estridor, obstrução de via aérea e sangramento volumoso exigem abordagem hospitalar imediata; nenhuma questão deve sugerir investigação eletiva antes de estabilização. O material não deverá prescrever técnica universal de via aérea difícil sem avaliação especializada.
+
+## 33. Revisão ativa — questões de integração
+
+**13.** Adulto apresenta massa cervical cística persistente, PAAF inicial não diagnóstica e exame de orofaringe simples normal. Qual decisão é mais apropriada?  
+A) Encerrar investigação por provável cisto benigno.  
+B) Considerar investigação especializada com nova amostragem dirigida e busca de primário.  
+C) Prescrever antibiótico por seis meses.  
+D) Realizar tratamento oncológico sem confirmação.  
+E) Aguardar surgimento de dor.  
+**Resposta: B.** Amostra inconclusiva não exclui metástase cística. As demais opções atrasam confirmação ou propõem tratamento sem base.
+
+**14.** Qual variável diferencia especialmente a avaliação de dois CECs da língua móvel com mesmo diâmetro superficial?  
+A) Apenas a presença de dor. B) Espessura do esmalte dentário. C) Profundidade de invasão. D) Sorologia para EBV. E) Saturação basal de oxigênio.  
+**Resposta: C.** A DOI expressa invasão profunda e participa da classificação de tumores da cavidade oral.
+
+**15.** Em paciente com massa de parótida e paresia facial, qual afirmação é mais segura?  
+A) Toda lesão é benigna. B) Trata-se necessariamente de CEC de orofaringe. C) Deve-se suspeitar de malignidade e investigar histologia salivar. D) Não há utilidade para imagem. E) Aguardar dois anos.  
+**Resposta: C.** Paresia facial associada a massa glandular é sinal de alerta, embora não determine isoladamente o diagnóstico.
+
+**16.** Paciente com suspeita de câncer de laringe apresenta estridor e esforço respiratório. Qual é a prioridade?  
+A) Solicitar PET-CT de rotina. B) Proteger a via aérea com equipe habilitada e estabilizar. C) Programar seguimento semestral. D) Iniciar exercício vocal. E) Aguardar histologia ambulatorial.  
+**Resposta: B.** Ameaça respiratória precede estadiamento eletivo.
+
+## 34. Checklist de liberação editorial
+
+- [x] Comparação temática inicial com material correlato.
+- [x] Estrutura de subsítios e decisões clínicas.
+- [x] Casos e questões com respostas comentadas.
+- [x] Sinais de alerta e algoritmo de massa cervical.
+- [ ] Confirmar todas as referências e sua vigência na data de publicação.
+- [ ] Revisar TNM detalhado com sistema e edição explícitos.
+- [ ] Revisar protocolos terapêuticos por sítio com fontes nacionais.
+- [ ] Revisão independente por especialista.
+- [ ] Conferir originalidade e eliminar redundâncias entre etapas.
+- [ ] Obter licenças e aprovação das imagens no Admin.
+- [ ] Testar renderização HTML, desktop e PWA.
+- [ ] Obter autorização editorial de publicação.
+
+**Status final desta etapa: rascunho ampliado e não publicado.**
