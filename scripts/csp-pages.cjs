@@ -16,7 +16,7 @@ module.exports = [
   'trabalho/scores/index.html',
   // Batch B: local scripts, no inline event attributes or special loaders.
   'aprender/index.html',
-  'aplicar/index.html', 'aplicar/curriculo/index.html',
+  'aplicar/index.html', 'aplicar/curriculo/index.html', 'aplicar/radar/index.html',
   'consolidar/index.html',
   'editais.html', 'editais/index.html',
   'beta-testers/index.html',

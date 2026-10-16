@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261016-games1";
+const CACHE_VERSION = "luria-pwa-radar-20261016-radar1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
