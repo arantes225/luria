@@ -172,6 +172,14 @@
             <div class="admin-table-empty">Nenhuma imagem pendente.</div>
           </div>
           <div class="admin-image-review-rule">
+            <strong>Baixa resolução</strong>
+            <span>Imagens com menos de 600 px no lado menor ficam sinalizadas e disponíveis apenas para revisão administrativa.</span>
+          </div>
+          <div id="admin-low-resolution-status" class="admin-status" aria-live="polite">Carregando imagens sinalizadas...</div>
+          <div id="admin-low-resolution-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem sinalizada.</div>
+          </div>
+          <div class="admin-image-review-rule">
             <strong>Apostilas</strong>
             <span>As imagens candidatas das apostilas também aparecem aqui antes de entrarem no texto.</span>
           </div>
@@ -1841,7 +1849,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="/assets/js/app.js?v=20261013-frame1"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20261013-apostila-batch-admin-v1"></script>
+  <script src="assets/js/admin.js?v=20261016-image80kb-v1"></script>
   <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
 </body>
