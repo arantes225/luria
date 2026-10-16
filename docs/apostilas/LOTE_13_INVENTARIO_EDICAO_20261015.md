@@ -7,8 +7,8 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 
 | ID | Tema | Caracteres brutos do Markdown | Seções H2 | Casos?* | Questões?* | Estado |
 |---:|---|---:|---:|:---:|:---:|---|
-| 250 | Transtornos alimentares | 28.734 | 20 | Sim | Sim | Rascunho parcial |
-| 251 | Transtornos de personalidade e autolesão | 28.680 | 17 | Sim | Sim | Rascunho parcial |
+| 250 | Transtornos alimentares | 64.410 | 27 | Sim | Sim | Rascunho ampliado, parcial |
+| 251 | Transtornos de personalidade e autolesão | 75.036 | 27 | Sim | Sim | Rascunho ampliado, parcial |
 | 252 | Saúde mental no ciclo gravídico-puerperal | 29.822 | 18 | Sim | Sim | Rascunho parcial |
 | 253 | Luto, crises e transtornos de adaptação | 25.841 | 19 | Sim | Sim | Rascunho parcial |
 | 254 | Saúde mental do adolescente: avaliação e manejo inicial | 68.216 | 31 | Sim | Sim | Rascunho parcial |
@@ -27,7 +27,7 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 279 | Crescimento fetal reduzido e aumentado | — (HTML existente) | — | — | — | Auditoria preliminar |
 | 280 | Alterações fisiológicas da gestação | — (HTML existente) | — | — | — | Auditoria preliminar |
 
-**Total bruto dos 17 manuscritos:** 813.792 caracteres. **Média bruta:** 47.870.
+**Total bruto dos 17 manuscritos:** 895.824 caracteres. **Média bruta:** 52.696.
 
 *Os campos Casos? e Questões? refletem busca textual inicial de blocos, não contagem, profundidade ou aprovação científica. Quando constar “Rever”, pode ser diferença de título; conferir manualmente.*
 
@@ -71,3 +71,9 @@ Aprofundado o manuscrito #272 com 23.741 caracteres brutos originais nos blocos 
 - **#276 · Diarreia aguda no adulto e infecção por *C. difficile*:** acréscimo de **47.040** caracteres brutos originais; total **80.848**; **28** seções H2. Blocos 11A–11J: mecanismos, reidratação, investigação fecal racional, prevenção de SHU por STEC, síndrome de colite invasiva, GDH/toxina/NAAT e colonização, preferência condicional por fidaxomicina frente a vancomicina oral conforme IDSA/SHEA 2021, CDI fulminante e recidiva, transplante de microbiota e restrições AGA 2024, prevenção CDC; oito casos, oito questões e pautas de imagem. **Benchmark diretamente comparável efetivamente lido:** PDF *Diarreia Aguda + Clostridium* no Drive. Material mais antigo propõe metronidazol como primeira linha para CDI não grave, o que **não foi reproduzido** como recomendação atual.
 
 **Estado de todos os três:** arquivo `_rascunhos` da branch editorial; contagens de **caracteres brutos, incluindo referências e elementos editoriais**, não comprovação de 60.000 caracteres didáticos úteis. Faltam validação por especialistas, revisão final de doses/indicações/registro e acesso ao SUS, verificação de imagens e licenças no Admin, revisão didática e testes técnicos/PWA. **Nenhum merge/deploy/Supabase foi executado nesta rodada; homologações permanecem 0/19**.
+
+## Continuidade — 16/10/2026, #250 e #251
+
+- **#250 · Transtornos alimentares:** acréscimo de **35.676 caracteres brutos originais**; total **64.410** e **27 seções H2**. Blocos 13A–13G: distinção formal e fenomenológica entre anorexia típica/atípica, bulimia, compulsão, ARFID, pica/ruminação, fisiopatologia da desnutrição, rastreio de descompensação cardíaca/metabólica, internação sem regra de IMC absoluto, reabilitação e síndrome de realimentação, intervenções psicológicas, farmacologia contextualizada (incluindo contraindicação de bupropiona em anorexia/bulimia), adolescência, atletas, gestação, diabetes, mais seis casos e seis questões. Orientações NICE NG69, APA 2023 e SAHM 2022. **Drive:** reabertos e relidos *Obesidade — Conceitos Gerais + Tratamento Não Farmacológico* e *Síndromes Cognitivas*, somente comparadores parciais, sem reuso de conteúdo.
+- **#251 · Transtornos de personalidade e autolesão:** acréscimo de **46.356 caracteres brutos originais**; total **75.036** e **27 seções H2**. Blocos 10A–10J: CID-11 por gravidade e qualificadores dimensionais, diferencial de borderline com bipolaridade/TEPT/autismo/TDAH, cuidado somático e psicossocial concomitante após autolesão, formulação clínica sem uso de escala para definir alta, plano de segurança colaborativo, psicoterapias DBT/MBT/esquemas, manejo cauteloso de medicações e comorbidades, adolescência/violência/direitos, articulação APS/CAPS/RAPS e oito novos casos/questões. NICE NG225/CG78 e CID-11 2026-01. **Drive:** reabertos *Síndromes Cognitivas* e *SUS*, apenas comparadores parciais.
+- **Estado:** estes documentos permanecem exclusivamente em `apostilas/_rascunhos/`, branch `editorial/lote-13-preenchimento-20261015`. 60.000 caracteres **brutos** não certificam 60.000 caracteres **didáticos úteis**; faltam benchmark específico integral, revisão clínica especializada, auditoria brasileira regulatória e de fármacos, curadoria de imagens com procedência/licenças aprovadas, revisão linguística, teste HTML/PWA e homologação. **0/19 homologadas nesta rodada.** Nenhum deploy, merge ou alteração Supabase foi solicitado/feito.
