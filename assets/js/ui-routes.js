@@ -3,7 +3,7 @@
 (() => {
   const aliases = new Set([
     'admin', 'amigos', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
-    'dashboard', 'desafio-diario', 'editais', 'estatisticas', 'flashcards',
+    'dashboard', 'desafio-diario', 'editais', 'estatisticas', 'flashcards', 'vocacao',
     'questoes-simulados', 'registrar-questoes'
   ]);
   const location = window.location;

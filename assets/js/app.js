@@ -1150,6 +1150,7 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  vocacao: { title: "Mapa de interesses", eyebrow: "Orientação de carreira", helper: "Explore interesses profissionais e áreas de acesso direto." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
   aprender: { title: "Aprender", eyebrow: "Central de aprendizagem", helper: "Escolha como você quer aprender agora." },
@@ -1502,6 +1503,9 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
         </a>
 
+        <a class="nav-link ${page === "vocacao" ? "active" : ""}" href="/vocacao/">
+          <span class="nav-icon">${luriaIcon("target")}</span><span>Mapa de interesses</span>
+        </a>
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
           <span class="nav-icon">${luriaIcon("users")}</span><span>Amigos</span>
         </a>

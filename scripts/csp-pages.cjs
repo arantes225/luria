@@ -8,6 +8,7 @@ module.exports = [
   'index.html',
   'login.html', 'login/index.html',
   'dashboard.html', 'dashboard/index.html',
+  'vocacao/index.html',
   'amigos.html', 'amigos/index.html',
   'admin.html', 'admin/index.html',
   'trabalho/index.html',
