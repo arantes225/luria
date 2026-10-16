@@ -782,3 +782,73 @@ E. Usar álcool para diminuir sintomas de retirada.
 
 **Gabarito: C.** A pode precipitar retirada grave, inclusive convulsões; B ignora danos/revisão; D/E elevam risco. **Mini-revisão:** benzodiazepínico não é tratamento crônico de primeira linha para TAG, pânico ou TEPT, e **desprescrição também é tratamento** quando clinicamente apropriado.
 
+
+
+## 16. Camada visual planejada — imagens precisam ensinar, não estigmatizar
+
+O tema comporta **esquemas clínicos e fluxogramas autorais** mais úteis que fotos genéricas de pessoas assustadas. A LURIA deve evitar fotografias de sofrimento ou eventos violentos como decoração, representações de compulsões como “mania de limpeza engraçada” e qualquer imagem que exponha sobreviventes identificáveis de trauma. A lista abaixo é **planejamento editorial, não autorização de uso**.
+
+| Item candidato | Tipo e local | Legenda didática projetada |
+| --- | --- | --- |
+| 1 | Diagrama original, cap. 1 | Ciclo ameaça → sintomas → interpretação → evitação |
+| 2 | Infográfico de neurocircuitos, cap. 1 | Rede de ameaça, regulação e memória, sem prometer biomarcador |
+| 3 | Fluxograma clínico, cap. 2 | TAG: suspeita, diferencial, prejuízo, cuidado escalonado |
+| 4 | Gráfico temporal, cap. 3 | Ataque isolado vs transtorno de pânico e duração de preocupação |
+| 5 | Fluxo emergência, cap. 3 | Dor torácica/dispneia: sinais de alarme antes de chamar de ansiedade |
+| 6 | Mapa de situações, cap. 4 | Agorafobia: transporte, espaços e medo de não obter ajuda |
+| 7 | Esquema TCC, cap. 5 | Ansiedade social: atenção autocentrada e medo de avaliação |
+| 8 | Tabela visual, cap. 6–7 | Fobia específica, separação e mutismo seletivo |
+| 9 | Ciclo interativo estático, cap. 8 | Obsessão → angústia → ritual → alívio curto → recaída do impulso |
+| 10 | Quadro autoral, cap. 8–9 | Compulsão visível vs ritual mental e EPR |
+| 11 | Linha do tempo de trauma, cap. 10 | Reação aguda / estresse agudo / TEPT DSM após >1 mês |
+| 12 | Tabela comparativa CID-11 x DSM, cap. 10 | TEPT e TEPT complexo sem fundir critérios |
+| 13 | Fluxograma, cap. 11 | Primeiros cuidados, monitoramento ativo, terapia focada no trauma |
+| 14 | Quadro de tratamentos, cap. 12 | Qual psicoterapia por diagnóstico e por que |
+| 15 | Quadro de segurança, cap. 13 | Pânico x mimetizadores e necessidade de avaliação urgente |
+
+**Seleção e licença:** a etapa futura deve pesquisar ≥10 referências de imagens se houver ganho didático, verificar origem, qualidade, adequação clínica e licença para uso **comercial**; diagramas autorais podem dispensar reprodução de figuras externas. Converter mídias aprovadas para WebP com texto legível e boa responsividade, adicionando alt text, fonte/crédito quando obrigatório e aprovação no Admin. **Nenhuma mídia foi adquirida, aprovada ou inserida neste rascunho.**
+
+## 17. Referências científicas e orientações brasileiras — verificadas em consulta online
+
+1. **NICE.** *Generalised anxiety disorder and panic disorder in adults: management*, **CG113**, publicado em 2011, com revisões/emendas posteriores no conteúdo online. Disponível: <https://www.nice.org.uk/guidance/cg113/chapter/Recommendations>. Base dos capítulos TAG, pânico, cuidado escalonado, psicoterapia, fármacos e restrição ao uso prolongado de benzodiazepínicos. **Não citar o documento como criado em 2026.**
+2. **NICE.** *Social anxiety disorder: recognition, assessment and treatment*, **CG159**, publicado em **22 maio 2013**. <https://www.nice.org.uk/guidance/cg159/chapter/recommendations>. Base de TCC específica e opções de ISRS em adultos, limites de abordagem infantil e intervenção por resposta.
+3. **NICE.** *Obsessive-compulsive disorder and body dysmorphic disorder: treatment*, **CG31**, publicado em **2005**, com recomendações online consultadas. <https://www.nice.org.uk/guidance/cg31/chapter/Recommendations>. Base de EPR, escolha TCC/ISRS por prejuízo, tratamento combinado, revisão em torno de 12 semanas em cenários sem resposta e manutenção por pelo menos 12 meses quando ISRS é efetivo.
+4. **NICE.** *Post-traumatic stress disorder*, **NG116**, publicado em **2018**. <https://www.nice.org.uk/guidance/ng116/chapter/recommendations>. Base de apoio precoce, prevenção, TCC focada no trauma, EMDR, escolhas de medicamento e restrição de farmacoprofilaxia/benzodiazepínicos.
+5. **American Psychological Association (APA).** *Clinical Practice Guideline for the Treatment of PTSD in Adults*, **2025**. <https://www.apa.org/ptsd-guideline/>. Orientações atualizadas sobre intervenções em adultos. **Não confundir com American Psychiatric Association**, que é entidade distinta.
+6. **U.S. Department of Veterans Affairs / Department of Defense (VA/DoD).** *Management of Posttraumatic Stress Disorder and Acute Stress Disorder Clinical Practice Guideline*, **2023**. <https://www.healthquality.va.gov/guidelines/MH/ptsd/>. Apoia avaliação e escolhas terapêuticas; recomendação contra benzodiazepínicos para TEPT, contra prazosina como tratamento global e sugestão fraca/condicional para **pesadelos associados**. Resumo publicado em *Annals of Internal Medicine*, 2024: <https://doi.org/10.7326/M23-2757>.
+7. **World Health Organization (WHO).** *mhGAP guideline for mental, neurological and substance use disorders*, **3ª ed., 20 nov. 2023**. <https://www.who.int/publications/i/item/9789240084278>. Cuidados em serviços não especializados. **Nota de direitos:** publicação com licença não comercial **CC BY-NC-SA 3.0 IGO**; esta apostila usa fatos/recomendações citados e redação original, sem reproduzir tabelas/figuras do manual.
+8. **BRASIL. Ministério da Saúde — Biblioteca Virtual em Saúde.** *Transtorno Obsessivo-Compulsivo (TOC)*, dica elaborada em **abril de 2024**. <https://bvsms.saude.gov.br/transtorno-obsessivo-compulsivo-toc/>. Referência brasileira para reconhecimento e orientação de TOC, com terminologia destinada ao público geral. **Complementada por NICE e classificação atual**, pois não é PCDT técnico detalhado e chama TOC coloquialmente de “ansiedade crônica”.
+9. **BRASIL. Ministério da Saúde.** Rede de Atenção Psicossocial (RAPS), portal institucional. <https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps>. Referência de organização assistencial, não algoritmo farmacológico para cada transtorno.
+10. **NICE.** *Self-harm: assessment, management and preventing recurrence*, **NG225**, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Referência de segurança clínica, avaliação psicossocial e não uso de escala isolada para prever autoagressão/decidir alta.
+11. **NLM/DailyMed, bulas oficiais de referências farmacológicas**, a cotejar com **ANVISA** antes de prescrição. <https://dailymed.nlm.nih.gov/>. Evidência de formulações e esquemas adultos distintos para sertralina, escitalopram, fluoxetina e venlafaxina; não substitui bula brasileira da marca, nem demonstra disponibilidade no SUS.
+12. **VA National Center for PTSD.** *Clinician's Guide to Medications for PTSD*, recurso institucional consultado. <https://www.ptsd.va.gov/professional/treat/txessentials/clinician_guide_meds.asp>. Esclarece distinção entre prazosina para pesadelos e ausência de recomendação para todos os sintomas globais.
+
+**Nota sobre documentos do projeto:** os dois PDFs do Drive lidos foram usados **apenas como verificação de sobreposição e temas clínicos correlatos** — alcalose respiratória/hiperventilação e diferenciais cardiovasculares/síncope. Eles **não embasam critérios DSM, dose de medicamento, recomendações de EPR ou trauma**, que foram pesquisados externamente nas diretrizes acima.
+
+## 18. Revisão de alto rendimento — quadro sinótico final
+
+**TAG:** preocupação ampla e difícil de controlar por ≥6 meses segundo DSM + sintomas associados → **TCC e cuidado escalonado; ISRS/IRSN quando apropriados**, não benzodiazepínicos crônicos.
+
+**Pânico:** ataque abrupto ≠ transtorno. Repetição inesperada + ≥1 mês de preocupação/mudança comportamental sugere transtorno de pânico após avaliação clínica → TCC e **exposição interoceptiva**, além de opções farmacológicas. **Primeiro episódio com dor/dispneia exige excluir causas graves proporcionalmente.**
+
+**Agorafobia:** medo de não escapar/não conseguir ajuda em várias classes de situações. **Fobia social:** medo de avaliação negativa. **Fobia específica:** objeto/situação circunscrita. Foco da TCC/exposição muda conforme manutenção do medo.
+
+**TOC:** obsessão (intrusão) e compulsão (ritual visível ou mental) que consomem tempo/prejudicam → **EPR**; associação com ISRS em prejuízo mais grave. Não chamar mania bipolar pela expressão coloquial “mania de limpeza”.
+
+**TEPT:** lembrar trauma com revivescência, evitação e ameaça persistente, prejuízo/duração; critérios DSM x CID-11 diferentes → **TCC focada no trauma/EMDR**, farmacoterapia em cenários selecionados. **Não dar BZD para prevenir TEPT**; prazosina pode ter papel específico para pesadelos em recomendação VA/DoD, mas não para tratar toda síndrome.
+
+**Qualquer diagnóstico:** pesquisar uso de substâncias, doença clínica, depressão/bipolaridade, necessidades de segurança, preferências e acesso real ao cuidado. Escala monitora sintomas; **não é sentença diagnóstica automática, nem previsão isolada de suicídio**.
+
+## 19. Autoauditoria, delimitação de qualidade e próximos passos
+
+- **Cobertura produzida:** fisiopatologia, epidemiologia qualitativa e determinantes, quadro clínico, critérios e duração quando relevantes, diagnósticos diferenciais, investigação clínica, psicoterapia por diagnóstico, fármacos e precauções, criança/adolescente, idosos, gestação, situações de urgência, **nove casos completos** e **quinze questões com A–E comentadas**.
+- **Rigor da evidência:** há pesquisas em fontes oficiais nacionais/internacionais verificadas online, com documentação dos anos originais; necessidade de **revisão científica independente** permanece, inclusive de diferenças DSM/CID, farmacoterapia e indicação nacional.
+- **Cuidado com licenças:** PDFs do Drive não foram copiados e materiais da OMS de licença não comercial não foram reproduzidos. O texto é redação original; figuras de guidelines **não** foram transplantadas.
+- **Meta de caracteres:** contabilizar **texto Markdown bruto** é possível; o “mínimo de 60 mil caracteres úteis” requer auditoria diferente, com remoção de referências, estrutura, duplicidades e textos de administração. Não declarar aprovação numérica automática.
+- **Benchmark equivalente ausente:** buscas em Drive não localizaram apostila psiquiátrica-base; dois materiais relacionados foram lidos e registrados. Etapa zero integral não pode ser afirmada.
+- **Camada visual:** 15 sugestões de quadros/esquemas, **sem qualquer imagem efetiva/licenciada/aprovada**.
+- **Integração:** **somente Markdown em \`apostilas/_rascunhos/\`**, sem modificação em HTML/CSS/JS público, Supabase, catálogo, Admin, \`main\` ou deploy.
+- **Próximo tema do cronograma:** **214 — Esquizofrenia e outros transtornos psicóticos**; depois **215 — Emergências psiquiátricas e fundamentos de psicofarmacologia**. Evitar redundância entre EEM (210), sintomas psicóticos (214) e abordagem de emergência (215).
+
+**Parecer provisório:** conteúdo didático substancial e individualizado por diagnóstico, mas **não homologado para publicação ou aplicação prescritiva**, pendente de psiquiatria, revisão editorial profunda, auditoria visual e conferência nacional de fármacos.
+
