@@ -1,0 +1,445 @@
+/* Run explicitly: NODE_PATH=<Playwright installation> node tests/games.browser.cjs.
+ * Uses the real shell with the existing test-only Supabase fixture. Never real user data. */
+const fs = require("node:fs"),
+  path = require("node:path"),
+  http = require("node:http"),
+  assert = require("node:assert/strict");
+const { chromium, webkit } = require("playwright");
+const root = path.resolve(__dirname, ".."),
+  out = path.resolve(
+    process.env.GAMES_ARTIFACTS || path.join(root, "browser-results/games"),
+  );
+fs.mkdirSync(out, { recursive: true });
+const mime = {
+  ".html": "text/html",
+  ".js": "application/javascript",
+  ".mjs": "application/javascript",
+  ".css": "text/css",
+  ".json": "application/json",
+  ".webmanifest": "application/manifest+json",
+  ".svg": "image/svg+xml",
+  ".png": "image/png",
+  ".woff2": "font/woff2",
+  ".webp": "image/webp",
+};
+const original = fs.readFileSync(
+  path.join(root, "assets/js/supabase.js"),
+  "utf8",
+);
+const fixture =
+  fs.readFileSync(
+    path.join(__dirname, "fixtures/supabase-browser.js"),
+    "utf8",
+  ) +
+  "\n" +
+  original.slice(original.indexOf("// Ownership is established"));
+const server = http.createServer((req, res) => {
+  let pathname;
+  try {
+    pathname = decodeURIComponent(new URL(req.url, "http://local").pathname);
+  } catch {
+    res.writeHead(400);
+    res.end();
+    return;
+  }
+  let file = path.resolve(root, "." + pathname);
+  if (!file.startsWith(root + path.sep) && file !== root) {
+    res.writeHead(403);
+    res.end();
+    return;
+  }
+  if (fs.existsSync(file) && fs.statSync(file).isDirectory())
+    file = path.join(file, "index.html");
+  if (!fs.existsSync(file)) {
+    res.writeHead(404);
+    res.end();
+    return;
+  }
+  res.setHeader(
+    "Content-Type",
+    mime[path.extname(file)] || "application/octet-stream",
+  );
+  res.end(fs.readFileSync(file));
+});
+const results = {
+  checks: [],
+  screenshots: [],
+  errors: [],
+  fixture:
+    "Authenticated test account with existing tests/fixtures/supabase-browser.js; no live login or Supabase writes.",
+};
+const check = (name, value) => {
+  assert.ok(value, name);
+  results.checks.push(name);
+};
+let browser;
+(async () => {
+  await new Promise((r) => server.listen(0, "127.0.0.1", r));
+  const base = "http://127.0.0.1:" + server.address().port;
+  const engine = process.env.GAMES_BROWSER === "webkit" ? webkit : chromium;
+  browser = await engine.launch({
+    headless: true,
+    ...(process.env.GAMES_EXECUTABLE
+      ? { executablePath: process.env.GAMES_EXECUTABLE }
+      : {}),
+  });
+  results.engine = process.env.GAMES_BROWSER || "chromium";
+  const context = await browser.newContext({
+    viewport: { width: 1366, height: 900 },
+    reducedMotion: "reduce",
+    serviceWorkers: "block",
+  });
+  await context.route("**/*", (route) => {
+    const u = new URL(route.request().url());
+    if (u.origin !== base) return route.abort();
+    if (u.pathname === "/assets/js/supabase.js")
+      return route.fulfill({
+        status: 200,
+        contentType: "application/javascript",
+        body: fixture,
+      });
+    return route.continue();
+  });
+  const page = await context.newPage();
+  page.on("pageerror", (e) => results.errors.push(e.message));
+  const missing = [];
+  page.on("response", (res) => {
+    if (res.status() >= 400 && /games-|\/games\/|\/jogos\//.test(res.url()))
+      missing.push(res.url());
+  });
+  async function open(slug) {
+    await page.goto(base + "/jogos/" + slug + "/");
+    await page
+      .locator('body[data-ui-startup="ready"]')
+      .waitFor({ timeout: 30000 });
+    await page.locator(".g-hero").waitFor();
+  }
+  async function screenshot(name) {
+    if (process.env.GAMES_QUICK) return;
+    const file = name + ".png";
+    await page.locator("main").evaluate((el) => {
+      el.scrollTop = 0;
+    });
+    await page.screenshot({ path: path.join(out, file), fullPage: true });
+    results.screenshots.push(file);
+  }
+  async function noOverflow(name) {
+    check(
+      name + " no horizontal overflow",
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth + 1,
+      ),
+    );
+  }
+  async function solve() {
+    const ids = await page
+      .locator(".g-sort li")
+      .evaluateAll((els) => els.map((el) => +el.dataset.id));
+    for (let target = 0; target < ids.length; target++) {
+      let pos = await page
+        .locator(".g-sort li")
+        .evaluateAll(
+          (els, t) => els.findIndex((el) => +el.dataset.id === t),
+          target,
+        );
+      while (pos > target) {
+        await page.locator(`[data-move="${pos}"][data-dir="-1"]`).click();
+        pos--;
+      }
+    }
+  }
+  const games = [
+    "plantao-relampago",
+    "sequencia-salvadora",
+    "escapando-do-plantao",
+  ];
+  if (!process.env.GAMES_MOBILE_ONLY) {
+    for (const slug of games) {
+      await open(slug);
+      for (const width of [390, 768, 1366, 1920]) {
+        await page.setViewportSize({ width, height: 900 });
+        await noOverflow(slug + " " + width);
+        await screenshot(slug + "-" + width);
+      }
+      for (const appearance of ["light", "dark"])
+        for (const identity of ["blue", "pink"]) {
+          await page.locator("body").evaluate(
+            (el, { appearance, identity }) => {
+              el.dataset.uiAppearance = appearance;
+              el.dataset.uiIdentity = identity;
+            },
+            { appearance, identity },
+          );
+          await noOverflow(slug + " " + appearance + " " + identity);
+          await screenshot(slug + "-" + appearance + "-" + identity);
+        }
+      await page.locator("body").evaluate((el) => {
+        el.dataset.uiAppearance = "light";
+        el.dataset.uiIdentity = "blue";
+      });
+    }
+    await page.setViewportSize({ width: 1366, height: 900 });
+    await open(games[0]);
+    await page.locator('button[type="submit"]').click();
+    const correct = await page.evaluate(
+      () =>
+        LuriaGameContent.questions.find(
+          (q) => q.prompt === document.querySelector("h2.g-case").textContent,
+        ).answer,
+    );
+    await page.locator(`[data-answer="${correct}"]`).click();
+    const points = await page.locator("#r-score").textContent();
+    await page
+      .locator(`[data-answer="${correct}"]`)
+      .evaluate((el) => el.click());
+    check(
+      "duplicate answer cannot add points",
+      (await page.locator("#r-score").textContent()) === points,
+    );
+    await screenshot("relampago-feedback");
+    await page.locator('[data-action="finish"]').click();
+    check(
+      "timed result has review",
+      (await page.locator(".g-review details").count()) === 1,
+    );
+    await screenshot("relampago-result");
+    await page.locator('[data-action="again"]').click();
+    await page.clock.install();
+    await page.locator('button[type="submit"]').click();
+    await page.clock.fastForward(121000);
+    check(
+      "timer expiration finishes round",
+      await page.getByText("Tempo encerrado", { exact: true }).isVisible(),
+    );
+    await open(games[1]);
+    await page.locator('[name="specialty"]').selectOption("Pediatria");
+    await page.locator('button[type="submit"]').click();
+    check(
+      "empty sequence filter is recoverable",
+      await page.getByText("Sem desafios neste recorte").isVisible(),
+    );
+    await page.locator('[data-action="setup"]').click();
+    await page.locator('[name="specialty"]').selectOption("Misto");
+    await page.locator('button[type="submit"]').click();
+    const before = await page
+      .locator(".g-sort li")
+      .evaluateAll((els) => els.map((el) => el.dataset.id).join(","));
+    await page.locator('[data-drag="0"]').focus();
+    await page.keyboard.press("ArrowDown");
+    check(
+      "keyboard reorder changes order",
+      before !==
+        (await page
+          .locator(".g-sort li")
+          .evaluateAll((els) => els.map((el) => el.dataset.id).join(","))),
+    );
+    const handle = await page.locator('[data-drag="0"]').boundingBox(),
+      target = await page.locator(".g-sort li").nth(2).boundingBox();
+    const preDrag = await page
+      .locator(".g-sort li")
+      .evaluateAll((els) => els.map((el) => el.dataset.id).join(","));
+    await page.mouse.move(
+      handle.x + handle.width / 2,
+      handle.y + handle.height / 2,
+    );
+    await page.mouse.down();
+    await page.mouse.move(
+      target.x + target.width / 2,
+      target.y + target.height / 2,
+      { steps: 8 },
+    );
+    await page.mouse.up();
+    check(
+      "pointer drag changes order",
+      preDrag !==
+        (await page
+          .locator(".g-sort li")
+          .evaluateAll((els) => els.map((el) => el.dataset.id).join(","))),
+    );
+    await screenshot("sequencia-in-play");
+    for (let i = 0; i < 3; i++) {
+      await solve();
+      await page.locator('[data-action="confirm"]').click();
+      check(
+        "sequence challenge " + i + " resolves",
+        await page.getByText(/Sequência resolvida/).isVisible(),
+      );
+      if (i === 0) await screenshot("sequencia-feedback");
+      await page.locator('[data-action="next"]').click();
+    }
+    check(
+      "sequence finishes all challenges",
+      await page.getByText("Conexões que fazem sentido.").isVisible(),
+    );
+    await screenshot("sequencia-result");
+    await page.locator('[data-action="again"]').click();
+    await open(games[2]);
+    await page.locator('[data-action="start"]').click();
+    await page.locator('[data-option="0"]').click();
+    await page.locator('[data-action="confirm"]').click();
+    check(
+      "adventure mistake leaves room unresolved",
+      (await page.locator('[data-action="next"]').count()) === 0,
+    );
+    await screenshot("escape-first-room");
+    for (let i = 0; i < 9; i++) {
+      const s = await page.evaluate((i) => LuriaGameContent.adventure[i], i);
+      if (s.type === "sort") await solve();
+      else if (s.type === "select")
+        for (const answer of s.answers)
+          await page.locator(`[data-option="${answer}"]`).click();
+      else await page.locator(`[data-option="${s.answer}"]`).click();
+      await page.locator('[data-action="confirm"]').click();
+      await noOverflow("adventure scene " + i);
+      if (i === 4) await screenshot("escape-chapter-two");
+      await page.locator('[data-action="next"]').click();
+    }
+    check(
+      "adventure concludes nine scenes",
+      await page.getByText("Turno entregue", { exact: false }).isVisible(),
+    );
+    await screenshot("escape-result");
+    await page.locator('[data-action="again"]').click();
+    check(
+      "adventure restarts",
+      await page.locator('[data-action="start"]').isVisible(),
+    );
+    await page.locator(".g-back").click();
+    check("return to games hub", new URL(page.url()).pathname === "/jogos/");
+    await page.clock.resume();
+    for (const route of [
+      "/dashboard/",
+      "/aprender/",
+      "/consolidar/",
+      "/estatisticas/",
+      "/amigos/",
+      "/jogos/study-rats/",
+      "/plantao/sala-emergencia/",
+    ]) {
+      await page.goto(base + route);
+      await page.locator("body.app-ready").waitFor({ timeout: 30000 });
+      check(
+        route + " authenticated shell opens",
+        (await page.locator('#sidebar a[href="/jogos/"]').count()) > 0,
+      );
+    }
+    await open(games[0]);
+    await page.evaluate(() => localStorage.setItem("fixture-logged-out", "1"));
+    await page.reload();
+    await page.waitForURL("**/login/");
+    check("logged-out game follows existing login redirect", true);
+    results.knownRegressionResourceFailures = missing.filter((url) =>
+      url.includes("/jogos/study-rats/"),
+    );
+    results.missingRequests = missing.filter(
+      (url) => !url.includes("/jogos/study-rats/"),
+    );
+    check(
+      "new game resources load without 404",
+      results.missingRequests.length === 0,
+    );
+    check("no uncaught browser errors", results.errors.length === 0);
+    await context.close();
+  }
+  const mobile = await browser.newContext({
+    viewport: { width: 390, height: 844 },
+    hasTouch: true,
+    isMobile: true,
+    reducedMotion: "reduce",
+    serviceWorkers: "block",
+  });
+  await mobile.route("**/*", (route) => {
+    const u = new URL(route.request().url());
+    if (u.origin !== base) return route.abort();
+    if (u.pathname === "/assets/js/supabase.js")
+      return route.fulfill({
+        status: 200,
+        contentType: "application/javascript",
+        body: fixture,
+      });
+    return route.continue();
+  });
+  await mobile.addInitScript(() => {
+    const original = window.matchMedia.bind(window);
+    window.matchMedia = (query) => {
+      const result = original(query);
+      if (query === "(display-mode: standalone)")
+        Object.defineProperty(result, "matches", { value: true });
+      return result;
+    };
+  });
+  const m = await mobile.newPage();
+  m.on("pageerror", (e) => results.errors.push(e.message));
+  for (const slug of games) {
+    await m.goto(base + "/jogos/" + slug + "/");
+    await m.locator('body[data-ui-startup="ready"]').waitFor();
+    check(
+      slug + " installed PWA shell",
+      (await m.locator('html[data-pwa="standalone"]').count()) === 1,
+    );
+    await m
+      .locator(
+        slug === games[2] ? '[data-action="start"]' : 'button[type="submit"]',
+      )
+      .click();
+    check(
+      slug + " mobile in-play has no horizontal overflow",
+      await m.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth + 1,
+      ),
+    );
+    if (!process.env.GAMES_QUICK) {
+      const file = slug + "-mobile-in-play.png";
+      await m.screenshot({ path: path.join(out, file), fullPage: true });
+      results.screenshots.push(file);
+    }
+    if (slug === games[1] && engine === chromium) {
+      // Keep source and destination inside the viewport before sending real touch input.
+      await m.locator(".g-sort").evaluate((el) => el.scrollIntoView({ block: "start" }));
+      await m.locator('[data-drag="0"]').scrollIntoViewIfNeeded();
+      const from = await m.locator('[data-drag="0"]').boundingBox(),
+        to = await m.locator(".g-sort li").nth(1).boundingBox();
+      const ids = await m
+        .locator(".g-sort li")
+        .evaluateAll((els) => els.map((el) => el.dataset.id).join(","));
+      const cdp = await mobile.newCDPSession(m);
+      await cdp.send("Input.dispatchTouchEvent", {
+        type: "touchStart",
+        touchPoints: [
+          { x: from.x + from.width / 2, y: from.y + from.height / 2 },
+        ],
+      });
+      await cdp.send("Input.dispatchTouchEvent", {
+        type: "touchMove",
+        touchPoints: [{ x: to.x + to.width / 2, y: to.y + to.height / 2 }],
+      });
+      await cdp.send("Input.dispatchTouchEvent", {
+        type: "touchEnd",
+        touchPoints: [],
+      });
+      check(
+        "touch drag reorders on smartphone",
+        ids !==
+          (await m
+            .locator(".g-sort li")
+            .evaluateAll((els) => els.map((el) => el.dataset.id).join(","))),
+      );
+      await cdp.detach();
+    }
+  }
+  await mobile.close();
+  check("no uncaught mobile browser errors", results.errors.length === 0);
+})()
+  .catch((e) => {
+    results.failure = e.stack;
+    process.exitCode = 1;
+  })
+  .finally(async () => {
+    if (browser) await browser.close();
+    await new Promise((r) => server.close(r));
+    fs.writeFileSync(
+      path.join(out, "browser-results.json"),
+      JSON.stringify(results, null, 2),
+    );
+    console.log(JSON.stringify(results, null, 2));
+  });

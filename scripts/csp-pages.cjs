@@ -1,5 +1,9 @@
 // Reviewed batches only: check each page's loaders before extending this list.
 module.exports = [
+  // New game pages: same-origin external scripts only.
+  'jogos/plantao-relampago/index.html',
+  'jogos/sequencia-salvadora/index.html',
+  'jogos/escapando-do-plantao/index.html',
   // Batch A
   'index.html',
   'login.html', 'login/index.html',

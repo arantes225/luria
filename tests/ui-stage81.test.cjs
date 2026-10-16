@@ -80,9 +80,10 @@ test('Note panel relocates the same nodes and keeps live handlers and responsive
  const media={matches:false,addEventListener:(type,fn)=>mediaChanged=fn};w.matchMedia=()=>media;
  let clicks=0;d.getElementById('notebook-bold').addEventListener('click',()=>clicks++);editor.textContent='Rascunho preservado';
  const source=read('assets/js/caderno-notion-editor-fix.js');w.eval(source.slice(source.indexOf('/* Stage 8.1:')));d.dispatchEvent(new w.Event('DOMContentLoaded'));await flush();
- assert.equal(d.querySelector('.note-editing-panel #notebook-toolbar'),toolbar);assert(d.querySelector('.note-editing-panel .note-tree'));assert(d.querySelector('.note-editing-panel .note-info'));d.getElementById('notebook-bold').disabled=false;d.getElementById('notebook-bold').click();assert.equal(clicks,1);
+ assert.equal(d.querySelector('.note-canvas > #notebook-toolbar'),toolbar);assert(d.querySelector('.note-editing-panel .note-tree'));assert(d.querySelector('.note-editing-panel .note-info'));d.getElementById('notebook-bold').disabled=false;d.getElementById('notebook-bold').click();assert.equal(clicks,1);
+ assert.equal(d.querySelector('.note-editing-panel > summary').nextElementSibling,d.querySelector('.note-info'));
  media.matches=true;mediaChanged();assert.equal(toolbar.parentElement,d.querySelector('.note-canvas'));assert.equal(d.querySelector('.note-editing-panel').open,false);
- media.matches=false;mediaChanged();assert.equal(toolbar.parentElement,d.querySelector('.note-editing-panel'));assert.equal(editor.textContent,'Rascunho preservado');assert.equal(d.querySelectorAll('#notebook-toolbar').length,1);
+ media.matches=false;mediaChanged();assert.equal(toolbar.parentElement,d.querySelector('.note-canvas'));assert.equal(editor.textContent,'Rascunho preservado');assert.equal(d.querySelectorAll('#notebook-toolbar').length,1);
 });
 
 test('Flashcard return switches view without clearing fields or interrupting a live review',async t=>{

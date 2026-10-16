@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261016-overlays1";
+const CACHE_VERSION = "luria-pwa-native-activities-20261016-games1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -34,6 +34,10 @@ const APP_SHELL = [
   "/trabalho/calculadora/",
   "/manifest.webmanifest?v=5",
   "/mini-osce/",
+  "/jogos/",
+  "/jogos/plantao-relampago/",
+  "/jogos/sequencia-salvadora/",
+  "/jogos/escapando-do-plantao/",
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
   "/assets/img/logos/logo-principal.png?v=luria7",
   "/assets/vendor/supabase-2.110.6.js",
