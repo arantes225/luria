@@ -255,6 +255,34 @@ A Nota Informativa nº 5/2024 do Ministério da Saúde implementa **regime de qu
 
 A decisão deve ser registrada com idade, peso, localização da TB, parâmetros de gravidade, dados microbiológicos possíveis, sensibilidade ou risco de resistência e plano de seguimento. Não inferir que todas as crianças abaixo de dez anos recebem quatro meses.
 
+### 12.1. Matriz decisória da Nota Informativa MS nº 5/2024
+
+O Ministério da Saúde descreve **três cenários operacionais**, conforme a disponibilidade de radiografia e bacteriologia. A ausência de exames não é sinônimo de ausência de doença grave; exige uma avaliação clínica mais cuidadosa. Em todos os cenários, respeitar a faixa etária, a ausência de suspeita de resistência e a condição de **tuberculose sensível não grave**.
+
+| Cenário | Exames disponíveis | Elementos de elegibilidade descritos na nota |
+| --- | --- | --- |
+| **Situação 1** | Radiografia e bacteriologia | RX compatível com TB não grave; TRM-TB não detectado ou com carga traços/muito baixa/baixa, ou baciloscopia negativa; sintomas leves sem necessidade de internação |
+| **Situação 2** | Radiografia indisponível; bacteriologia disponível | TRM-TB não detectado ou com baixa carga, ou baciloscopia negativa; sintomas leves sem necessidade de internação **ou** TB ganglionar periférica isolada, sem suspeita de acometimento em outros sítios extrapulmonares |
+| **Situação 3** | Radiografia e bacteriologia indisponíveis | Avaliação clínica de sintomas leves sem necessidade de internação **ou** TB ganglionar periférica isolada, sem sinais de doença extrapulmonar adicional |
+
+A própria nota denomina essas condições como situações de decisão com diferentes níveis de acesso diagnóstico. **Não misturar indevidamente critérios de situações distintas**: não exigir TRM negativo quando o teste está indisponível, nem chamar um RX com cavitação de “não grave” porque a baciloscopia é negativa.
+
+### 12.2. Fenótipos elegíveis e não elegíveis: mapa de exclusões
+
+**Favorecem não gravidade se o conjunto do caso for coerente:** acometimento de linfonodos intratorácicos sem obstrução das vias aéreas; infiltrado sem cavitação, circunscrito a um lobo e sem padrão miliar; derrame pleural sem complicações; forma ganglionar periférica isolada segundo critérios específicos. A criança deve apresentar sintomas leves e não demandar internação por gravidade da doença. A presença de HIV exige avaliação de imunossupressão, uso de TARV e doenças oportunistas, com seguimento especialmente atento ao mês quatro.
+
+**Impedem assumir elegibilidade sem reclassificar:** cavidade pulmonar, padrão miliar, compressão relevante das vias aéreas, derrame pleural com pneumotórax ou empiema, repercussão sistêmica que exige internação, suspeita de TB drogarresistente, meningite e forma osteoarticular grave. A Note 5/2024 mantém tratamento de seis meses para não elegíveis e admite tratamentos especiais de doze meses em formas graves extrapulmonares.
+
+**Exemplo de aplicação:** criança de seis anos com sintomas leves, bom estado geral, sem suspeita de resistência, TRM não detectado e RX com adenopatia hilar sem obstrução pode ser candidata à duração de quatro meses se toda avaliação concordar com TB não grave. Criança da mesma idade com obstrução brônquica causada por adenopatia não se torna elegível apenas porque o TRM é negativo. O exame molecular mede detecção de bacilos, não calibre das vias aéreas.
+
+### 12.3. Como acompanhar um regime escolhido de quatro meses
+
+A Nota MS 5/2024 orienta consulta **mensal**, acompanhamento dos sintomas, estado nutricional e interrupções. Os sintomas tendem a desaparecer dentro do primeiro mês e espera-se recuperação nutricional ao final de quatro meses, mas **esses marcos não dispensam avaliação clínica**. Diante de resposta desfavorável, investigar adesão, adequação de dose ao peso, formulação, intercorrências, resistência e diagnósticos alternativos; a nota prevê estender a manutenção para completar seis meses quando indicado.
+
+Se houver interrupção e retorno dos sintomas, a nota recomenda reavaliação com TRM-TB e cultura para avaliar possibilidade de resistência. Não considerar a mera passagem de quatro meses como prova de cura, nem “prolongar por conta própria” sem compreender a causa de má evolução.
+
+**Referência primária diretamente conferida:** Ministério da Saúde, Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS, especialmente itens 2–5, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf .
+
 ## 13. Tratamento da TB ativa sensível: tabela-mestra de raciocínio
 
 Notação dos fármacos: **R** = rifampicina, **H** = isoniazida, **Z** = pirazinamida, **E** = etambutol. Exemplo: 2RHZ/4RH significa dois meses de R+H+Z seguidos de quatro meses de R+H, totalizando seis meses.
