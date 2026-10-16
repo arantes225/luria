@@ -71,3 +71,7 @@ test('PWA caches only public game shells and local game assets for subsequent of
     online=true;let response=await f.run(url);await response.done();assert.equal(await response.response.text(),'public game bytes');online=false;response=await f.run(url);await response.done();assert.equal(await response.response.text(),'public game bytes');
   }
 });
+test('a repeated click on an old next button cannot skip another scene or challenge',t=>{
+  const s=game(t,'sequencia');s.submit();solve(s);s.click('[data-action="confirm"]');const old=s.d.querySelector('[data-action="next"]');old.click();old.click();assert.match(s.d.querySelector('.g-kicker').textContent,/2\/3/);
+  const e=game(t,'escape');e.click('[data-action="start"]');e.click('[data-option="1"]');e.click('[data-action="confirm"]');const next=e.d.querySelector('[data-action="next"]');next.click();next.click();assert.match(e.d.querySelector('.e-story .g-kicker').textContent,/Cena 2\/9/);
+});
