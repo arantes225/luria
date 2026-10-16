@@ -1,0 +1,40 @@
+{
+  "topic_id": 2,
+  "status": "pesquisa_pendente",
+  "references": [],
+  "research_targets": [
+    {
+      "label": "Diretriz SBC de avaliação cardiovascular perioperatória, versão vigente",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Diretriz AHA/ACC de manejo cardiovascular perioperatório, versão vigente",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Diretrizes de avaliação pré-anestésica e jejum de sociedades oficiais",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Fontes primárias para manejo perioperatório de anticoagulantes e antidiabéticos",
+      "url": null,
+      "opened": false,
+      "verified": false
+    }
+  ],
+  "verification_requirements": [
+    "título, autoria, edição e data",
+    "URL real ou identificador bibliográfico",
+    "trecho que sustenta recomendação",
+    "vigência e divergências",
+    "data de consulta",
+    "dose/via/duração e situações especiais quando pertinentes"
+  ],
+  "invented_references": false
+}

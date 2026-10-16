@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-14",
+  "status": "inventario_preliminar_salvo_piloto_documental",
+  "stats": {
+    "entries": 225,
+    "schedule_entries": 180,
+    "complements": 45,
+    "existing_books": 26,
+    "books_below_60k": 17,
+    "books_at_least_60k": 9,
+    "topics_with_candidate_book": 32,
+    "topics_without_candidate_book": 193,
+    "integral_coverage_certified": 0,
+    "integral_coverage_unknown": true,
+    "topics_mapped_to_books_below_60k": 21
+  },
+  "completed": [
+    "inventário de arquivos e IDs",
+    "triagens existentes",
+    "correspondências propostas",
+    "fila dinâmica",
+    "planos do piloto"
+  ],
+  "not_completed": [
+    "auditoria clínica integral",
+    "comparativo Aristo",
+    "matriz ENAMED integral",
+    "Fase A científica de cinco temas",
+    "aprovação editorial",
+    "HTML final",
+    "branch/PR"
+  ],
+  "next": "Completar benchmark e matriz ENAMED; receber arquivos Fase A por tema; revisar referências; desenvolver e validar uma apostila por vez; manter o lote não aprovado até revisão individual.",
+  "repository_modified": false,
+  "production_modified": false
+}

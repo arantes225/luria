@@ -1,0 +1,216 @@
+{
+  "minimum": 60000,
+  "total": 26,
+  "missing": 17,
+  "notice": "Somente triagem; não atesta qualidade clínica, autoria, referências nem imagens.",
+  "report": [
+    {
+      "slug": "alteracoes-fisiologicas-da-gestacao",
+      "source": "index.html",
+      "chars": 78397,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "amenorreia",
+      "source": "index.html",
+      "chars": 83025,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "amniorrexe-prematura",
+      "source": "index.html",
+      "chars": 68032,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "assistencia-ao-parto",
+      "source": "index.html",
+      "chars": 44758,
+      "deficit": 15242,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "avaliacao-vitalidade-fetal",
+      "source": "index.html",
+      "chars": 43695,
+      "deficit": 16305,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "cancer-colo-utero-hpv",
+      "source": "content.json",
+      "chars": 54243,
+      "deficit": 5757,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "cancer-de-mama",
+      "source": "index.html",
+      "chars": 61310,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "cervicites-doenca-inflamatoria-pelvica",
+      "source": "index.html",
+      "chars": 49800,
+      "deficit": 10200,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "ciclo-menstrual-eixo-hho",
+      "source": "index.html",
+      "chars": 50764,
+      "deficit": 9236,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "climaterio-menopausa",
+      "source": "content.json",
+      "chars": 47498,
+      "deficit": 12502,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "crescimento-intrauterino-reduzido-aumentado",
+      "source": "index.html",
+      "chars": 52421,
+      "deficit": 7579,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "diabetes-mellitus-gestacional",
+      "source": "index.html",
+      "chars": 51996,
+      "deficit": 8004,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "hemorragias-primeiro-terceiro-trimestre",
+      "source": "index.html",
+      "chars": 53736,
+      "deficit": 6264,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "inducao-do-trabalho-de-parto",
+      "source": "index.html",
+      "chars": 31269,
+      "deficit": 28731,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "infeccoes-gestacao-transmissao-vertical",
+      "source": "index.html",
+      "chars": 62229,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "infeccoes-sexualmente-transmissiveis",
+      "source": "index.html",
+      "chars": 64415,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "infertilidade-conjugal",
+      "source": "index.html",
+      "chars": 48987,
+      "deficit": 11013,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "planejamento-reprodutivo-contracepcao",
+      "source": "index.html",
+      "chars": 39065,
+      "deficit": 20935,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "pre-natal-baixo-risco",
+      "source": "index.html",
+      "chars": 70130,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "sangramento-uterino-anormal",
+      "source": "index.html",
+      "chars": 51845,
+      "deficit": 8155,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "sexualidade",
+      "source": "index.html",
+      "chars": 34134,
+      "deficit": 25866,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "sexualidade-masculina",
+      "source": "index.html",
+      "chars": 35007,
+      "deficit": 24993,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "sindrome-ovariana-metabolica-poliendocrina-somp",
+      "source": "index.html",
+      "chars": 28600,
+      "deficit": 31400,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "sindromes-hipertensivas-da-gestacao",
+      "source": "index.html",
+      "chars": 53270,
+      "deficit": 6730,
+      "status": "precisa expandir",
+      "note": ""
+    },
+    {
+      "slug": "trabalho-parto-prematuro",
+      "source": "content.json",
+      "chars": 60374,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    },
+    {
+      "slug": "vulvovaginites",
+      "source": "index.html",
+      "chars": 69482,
+      "deficit": 0,
+      "status": "passou na triagem de extensão",
+      "note": ""
+    }
+  ]
+}

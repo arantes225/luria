@@ -1,0 +1,398 @@
+{
+  "slug": "assistencia-ao-parto",
+  "source": "index.html",
+  "chars": 44758,
+  "deficit": 15242,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/assistencia-ao-parto/index.html",
+  "sha256": "663312f775ff5beb2e75c50398a59ea444ca00a017dd6c8011912643b5f66562",
+  "html_sha256": "663312f775ff5beb2e75c50398a59ea444ca00a017dd6c8011912643b5f66562",
+  "headings": [
+    {
+      "title": "Resumo de prova / Em 30 segundos"
+    },
+    {
+      "title": "Pontos essenciais"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Admissão"
+    },
+    {
+      "title": "Vigilância"
+    },
+    {
+      "title": "Partograma"
+    },
+    {
+      "title": "Terceiro período"
+    },
+    {
+      "title": "1. Conceito e definição"
+    },
+    {
+      "title": "Trabalho de parto"
+    },
+    {
+      "title": "2. Fisiologia, estática fetal e mecanismos do parto"
+    },
+    {
+      "title": "2.1 Situação fetal: qual é a relação entre o eixo do feto e o eixo materno?"
+    },
+    {
+      "title": "2.2 Apresentação fetal: qual parte do feto está voltada para a entrada da pelve?"
+    },
+    {
+      "title": "2.3 Atitude fetal: o feto está fletido ou estendido?"
+    },
+    {
+      "title": "2.4 Ponto de referência: qual parte anatômica usamos para “dar nome” à posição?"
+    },
+    {
+      "title": "2.5 Posição e variedade de posição: para que lado o ponto de referência está olhando?"
+    },
+    {
+      "title": "Como reconhecer no toque vaginal?"
+    },
+    {
+      "title": "2.6 Encaixamento e estação: a cabeça já entrou de verdade na pelve?"
+    },
+    {
+      "title": "2.7 Mecanismos do parto cefálico de vértice, passo a passo"
+    },
+    {
+      "title": "2.8 Afinal, “para que lado ele roda”?"
+    },
+    {
+      "title": "2.9 Restituição: por que a cabeça “desvira” depois que nasce?"
+    },
+    {
+      "title": "2.10 Assinclitismo: a sutura sagital precisa estar exatamente no meio?"
+    },
+    {
+      "title": "3. Admissão e avaliação inicial: como traduzir o exame obstétrico"
+    },
+    {
+      "title": "3.1 Avaliação materna"
+    },
+    {
+      "title": "3.2 Avaliação fetal abdominal: o que eu quero descobrir?"
+    },
+    {
+      "title": "3.3 Ausculta fetal: onde procurar os batimentos?"
+    },
+    {
+      "title": "3.4 Toque vaginal: o que cada item significa?"
+    },
+    {
+      "title": "4. Vigilância intraparto: o que observar e por quê"
+    },
+    {
+      "title": "4.1 Dinâmica uterina: o que é uma contração “adequada”?"
+    },
+    {
+      "title": "4.2 Frequência cardíaca fetal: o que exatamente estou tentando descobrir?"
+    },
+    {
+      "title": "Na ausculta/monitorização, pense sempre em quatro perguntas"
+    },
+    {
+      "title": "4.3 Desacelerações: por que “precoce”, “variável” e “tardia” têm nomes diferentes?"
+    },
+    {
+      "title": "4.4 Se a FCF muda, o que devo procurar primeiro?"
+    },
+    {
+      "title": "4.5 Vigilância materna: não esqueça que há duas pessoas em trabalho de parto"
+    },
+    {
+      "title": "4.6 Membranas e líquido amniótico"
+    },
+    {
+      "title": "4.7 Exame vaginal: para que serve e por que não deve ser repetido sem motivo?"
+    },
+    {
+      "title": "5. Partograma e WHO Labour Care Guide: como realmente ler"
+    },
+    {
+      "title": "5.1 Antes de tudo: qual é a diferença entre partograma clássico e Labour Care Guide?"
+    },
+    {
+      "title": "5.2 Partogramas reais: reconheça os instrumentos clássicos"
+    },
+    {
+      "title": "Como ler os modelos clássicos da imagem"
+    },
+    {
+      "title": "5.3 Por que a regra de “1 cm por hora” caiu?"
+    },
+    {
+      "title": "5.4 O que deve entrar no raciocínio do gráfico?"
+    },
+    {
+      "title": "5.5 Como ler a curva de dilatação sem decorar desenho?"
+    },
+    {
+      "title": "5.6 Linha de alerta e linha de ação: por que ainda preciso saber?"
+    },
+    {
+      "title": "5.7 O que significa “parada de dilatação” ou “parada de descida”?"
+    },
+    {
+      "title": "5.8 Os 3 P da distócia: a forma mais simples de organizar o raciocínio"
+    },
+    {
+      "title": "Exemplo de raciocínio"
+    },
+    {
+      "title": "6. Manejo da dor"
+    },
+    {
+      "title": "Métodos não farmacológicos"
+    },
+    {
+      "title": "Métodos farmacológicos"
+    },
+    {
+      "title": "7. Períodos do parto: do início ao pós-parto imediato"
+    },
+    {
+      "title": "7.1 Primeiro período: dilatação"
+    },
+    {
+      "title": "7.2 Segundo período: expulsivo"
+    },
+    {
+      "title": "7.3 Período passivo e fase de puxos"
+    },
+    {
+      "title": "7.4 Coroamento e desprendimento cefálico"
+    },
+    {
+      "title": "7.5 Terceiro período: dequitação placentária"
+    },
+    {
+      "title": "Elementos centrais do terceiro período"
+    },
+    {
+      "title": "7.6 Sinais de separação placentária"
+    },
+    {
+      "title": "7.7 Quarto período: primeiras horas pós-parto"
+    },
+    {
+      "title": "8. Complicações e desvios da evolução normal"
+    },
+    {
+      "title": "8.1 Progressão lenta ou parada"
+    },
+    {
+      "title": "8.2 Occípito-posterior persistente"
+    },
+    {
+      "title": "8.3 Alteração do bem-estar fetal"
+    },
+    {
+      "title": "8.4 Prolapso de cordão: por que é uma emergência?"
+    },
+    {
+      "title": "8.5 Distócia de ombro"
+    },
+    {
+      "title": "Princípios iniciais"
+    },
+    {
+      "title": "8.6 Hemorragia pós-parto: pense nos 4 T"
+    },
+    {
+      "title": "8.7 Práticas que não devem virar rotina automática"
+    },
+    {
+      "title": "9. Condutas práticas: como raciocinar à beira-leito"
+    },
+    {
+      "title": "9.1 Checklist mental de admissão"
+    },
+    {
+      "title": "9.2 Se a dilatação está lenta"
+    },
+    {
+      "title": "9.3 Se a cabeça não desce"
+    },
+    {
+      "title": "9.4 Se o traçado fetal preocupa"
+    },
+    {
+      "title": "9.5 Como falar com a paciente"
+    },
+    {
+      "title": "Questões de fixação"
+    },
+    {
+      "title": "10. Aprofundamento: decisões intraparto, distócias e segurança materno-fetal"
+    },
+    {
+      "title": "Progressão lenta: antes de diagnosticar distócia"
+    },
+    {
+      "title": "Ocítocina: medicamento de alto risco"
+    },
+    {
+      "title": "Monitorização fetal: interpretar mecanismo, não apenas “categoria”"
+    },
+    {
+      "title": "Parto operatório vaginal"
+    },
+    {
+      "title": "Trauma perineal e terceiro período"
+    },
+    {
+      "title": "Cesárea intraparto: indicação é falha do processo, não “demora” isolada"
+    },
+    {
+      "title": "Exercício de acompanhamento: um exame só não mostra progressão"
+    },
+    {
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "title": "Distocias não são todas iguais"
+    },
+    {
+      "title": "Terceiro período e hemorragia"
+    },
+    {
+      "title": "Referências prioritárias"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Distocia da progressão: quando agir"
+    },
+    {
+      "title": "Distocia de ombro: sequência e segurança"
+    },
+    {
+      "title": "Hemorragia pós-parto: as quatro causas"
+    },
+    {
+      "title": "Assistência respeitosa e vigilância"
+    },
+    {
+      "title": "Raciocínio por entidade clínica"
+    },
+    {
+      "title": "Distocia da progressão"
+    },
+    {
+      "title": "Distocia de ombro"
+    },
+    {
+      "title": "Hemorragia pós-parto"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Resumo de prova / Em 30 segundos",
+      "chars": 1098
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 353
+    },
+    {
+      "id": "conceito",
+      "title": "1. Conceito e definição",
+      "chars": 575
+    },
+    {
+      "id": "fisiologia",
+      "title": "2. Fisiologia, estática fetal e mecanismos do parto",
+      "chars": 9976
+    },
+    {
+      "id": "admissao",
+      "title": "3. Admissão e avaliação inicial: como traduzir o exame obstétrico",
+      "chars": 3505
+    },
+    {
+      "id": "vigilancia",
+      "title": "4. Vigilância intraparto: o que observar e por quê",
+      "chars": 5219
+    },
+    {
+      "id": "partograma",
+      "title": "5. Partograma e WHO Labour Care Guide: como realmente ler",
+      "chars": 7095
+    },
+    {
+      "id": "dor",
+      "title": "6. Manejo da dor",
+      "chars": 376
+    },
+    {
+      "id": "periodos",
+      "title": "7. Períodos do parto: do início ao pós-parto imediato",
+      "chars": 3068
+    },
+    {
+      "id": "complicacoes",
+      "title": "8. Complicações e desvios da evolução normal",
+      "chars": 2422
+    },
+    {
+      "id": "condutas",
+      "title": "9. Condutas práticas: como raciocinar à beira-leito",
+      "chars": 1955
+    },
+    {
+      "id": "questoes",
+      "title": "Questões de fixação",
+      "chars": 1974
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "10. Aprofundamento: decisões intraparto, distócias e segurança materno-fetal",
+      "chars": 3988
+    },
+    {
+      "id": "editorial-depth-assistencia-ao-parto",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 715
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 1310
+    },
+    {
+      "id": "luria-livro-etiologias-assistencia-ao-parto",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2462
+    },
+    {
+      "id": "capitulos-livro-assistencia-ao-parto",
+      "title": "Raciocínio por entidade clínica",
+      "chars": 1061
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+    "https://www.who.int/publications/i/item/9789240017566",
+    "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1186%2Fs12884-016-1213-4/MediaObjects/12884_2016_1213_Fig1_HTML.gif",
+    "https://link.springer.com/article/10.1186/s12884-016-1213-4/figures/1",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

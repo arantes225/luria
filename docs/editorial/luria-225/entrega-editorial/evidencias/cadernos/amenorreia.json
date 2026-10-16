@@ -1,0 +1,419 @@
+{
+  "slug": "amenorreia",
+  "source": "index.html",
+  "chars": 83025,
+  "deficit": 0,
+  "status": "passou na triagem de extensão",
+  "note": "",
+  "path": "apostilas/amenorreia/index.html",
+  "sha256": "e8eec345dce346f3af386947c602c164f0f1e1273277c4a29b32741ff39d1ef5",
+  "html_sha256": "e8eec345dce346f3af386947c602c164f0f1e1273277c4a29b32741ff39d1ef5",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "O que você precisa lembrar"
+    },
+    {
+      "title": "1. Conceitos e fisiopatologia"
+    },
+    {
+      "title": "1.1 A fisiologia explica os perfis laboratoriais"
+    },
+    {
+      "title": "1.2 O que o FSH não consegue dizer sozinho?"
+    },
+    {
+      "title": "1.3 Linha temporal: o que determina urgência?"
+    },
+    {
+      "title": "2. Amenorreia primária"
+    },
+    {
+      "title": "Dor cíclica + massa pélvica + amenorreia primária"
+    },
+    {
+      "title": "Reconhecendo o hímen imperfurado no exame real"
+    },
+    {
+      "title": "2.1 Atraso constitucional da puberdade"
+    },
+    {
+      "title": "2.2 Síndrome de Turner e disgenesia gonadal"
+    },
+    {
+      "title": "2.3 Deficiência congênita de GnRH e síndrome de Kallmann"
+    },
+    {
+      "title": "2.4 Agenesia mülleriana (MRKH)"
+    },
+    {
+      "title": "2.5 Insensibilidade completa aos androgênios (CAIS)"
+    },
+    {
+      "title": "2.6 Hímen imperfurado e septo vaginal transverso"
+    },
+    {
+      "title": "Leitura cruzada do desenvolvimento mamário e da anatomia"
+    },
+    {
+      "title": "Turner: como organizar o rastreamento multissistêmico"
+    },
+    {
+      "title": "Diferenças do desenvolvimento sexual: decisões compartilhadas"
+    },
+    {
+      "title": "Obstrução menstrual: complicações e cuidados"
+    },
+    {
+      "title": "Como escolher a investigação na adolescente: puberdade, cariótipo e anatomia"
+    },
+    {
+      "title": "Turner: iniciar puberdade não encerra o cuidado"
+    },
+    {
+      "title": "MRKH e CAIS: a abordagem não se resume a definir o cariótipo"
+    },
+    {
+      "title": "3. Amenorreia secundária"
+    },
+    {
+      "title": "3.1 Gestação: sempre a primeira hipótese"
+    },
+    {
+      "title": "3.2 Amenorreia fisiológica e associada a contraceptivos"
+    },
+    {
+      "title": "3.3 Disfunções tireoidianas"
+    },
+    {
+      "title": "3.4 Doença crônica, medicamentos e causas sistêmicas"
+    },
+    {
+      "title": "3.5 Lesões hipofisárias e síndrome de Sheehan"
+    },
+    {
+      "title": "3.6 Quando a causa é medicamentosa?"
+    },
+    {
+      "title": "3.7 Sheehan e hipopituitarismo: reconhecer a paciente que precisa de avaliação urgente"
+    },
+    {
+      "title": "3.8 Como distinguir gravidez precoce, ectópica e falso negativo?"
+    },
+    {
+      "title": "O momento clínico decide qual exame vem primeiro"
+    },
+    {
+      "title": "4. Algoritmo diagnóstico prático"
+    },
+    {
+      "title": "Como interpretar o conjunto, e não um hormônio isolado"
+    },
+    {
+      "title": "4.1 Painel inicial: o que solicitar e por quê?"
+    },
+    {
+      "title": "4.2 Matriz de interpretação hormonal"
+    },
+    {
+      "title": "4.3 Quando pedir androgênios, cariótipo ou ressonância?"
+    },
+    {
+      "title": "5. Hiperprolactinemia"
+    },
+    {
+      "title": "Da prolactina elevada ao tratamento"
+    },
+    {
+      "title": "5.1 Por que prolactina alta bloqueia o ciclo?"
+    },
+    {
+      "title": "5.2 Prolactina discretamente elevada: como evitar o falso diagnóstico?"
+    },
+    {
+      "title": "5.3 Prolactinoma, efeito de haste e lesões hipofisárias"
+    },
+    {
+      "title": "5.4 Tratamento, fertilidade e situações especiais"
+    },
+    {
+      "title": "Uma elevação laboratorial: três decisões diferentes"
+    },
+    {
+      "title": "6. Amenorreia hipotalâmica funcional"
+    },
+    {
+      "title": "ACO não é tratamento da causa"
+    },
+    {
+      "title": "Por que provocar sangramento não resolve o déficit energético?"
+    },
+    {
+      "title": "6.1 Déficit energético: o mecanismo pode ocorrer sem baixo IMC"
+    },
+    {
+      "title": "6.2 Diagnóstico diferencial da amenorreia hipogonadotrófica"
+    },
+    {
+      "title": "6.3 Complicações clínicas além da ausência menstrual"
+    },
+    {
+      "title": "6.4 Tratamento e como acompanhar a recuperação"
+    },
+    {
+      "title": "Disponibilidade energética, osso e ciclo: três indicadores diferentes de recuperação"
+    },
+    {
+      "title": "7. Insuficiência ovariana primária (IOP)"
+    },
+    {
+      "title": "Reposição e acompanhamento da insuficiência ovariana"
+    },
+    {
+      "title": "7.1 Critério diagnóstico atualizado: por que não exigir dois FSH obrigatoriamente?"
+    },
+    {
+      "title": "7.2 O que investigar após confirmar IOP?"
+    },
+    {
+      "title": "7.3 Complicações e o motivo da reposição hormonal"
+    },
+    {
+      "title": "7.4 Fertilidade: atividade intermitente não é recuperação permanente"
+    },
+    {
+      "title": "Após confirmar IOP: investigar a causa sem solicitar exames inespecíficos"
+    },
+    {
+      "title": "8. SOP e hiperandrogenismo"
+    },
+    {
+      "title": "Virilização rápida não é “SOP até prova em contrário”"
+    },
+    {
+      "title": "8.1 Por que a SOP causa amenorreia?"
+    },
+    {
+      "title": "8.2 Critérios diagnósticos e exclusões"
+    },
+    {
+      "title": "8.3 Quando suspeitar de outra causa de hiperandrogenismo"
+    },
+    {
+      "title": "8.4 Tratamento organizado por objetivo"
+    },
+    {
+      "title": "8.5 Eixo da SOP: por que coexistem oligomenorreia e endométrio estimulado?"
+    },
+    {
+      "title": "8.6 Diferença entre acne, hirsutismo e virilização"
+    },
+    {
+      "title": "8.7 Escolhas de tratamento conforme prioridade"
+    },
+    {
+      "title": "8.8 Complicações e seguimento"
+    },
+    {
+      "title": "Adolescência: não transportar critérios de adulta para o início da puberdade"
+    },
+    {
+      "title": "Risco metabólico e endométrio: rastrear o que importa"
+    },
+    {
+      "title": "Quando o hiperandrogenismo não parece SOP"
+    },
+    {
+      "title": "9. Causas anatômicas"
+    },
+    {
+      "title": "9.1 Síndrome de Asherman (sinéquias intrauterinas)"
+    },
+    {
+      "title": "9.2 Estenose cervical"
+    },
+    {
+      "title": "9.3 Útero ausente não equivale a ovário ausente"
+    },
+    {
+      "title": "9.4 Síndrome de Asherman: consequências e chance de recorrência"
+    },
+    {
+      "title": "9.5 Ausência de fluxo com dor: distinguir obstrução de deficiência hormonal"
+    },
+    {
+      "title": "Alterações endometriais versus bloqueio da saída: decisões diferentes"
+    },
+    {
+      "title": "10. Teste de progesterona e outros testes funcionais"
+    },
+    {
+      "title": "10.1 Entenda o desafio com progestagênio passo a passo"
+    },
+    {
+      "title": "10.2 AMH, progesterona e ultrassom: testes que não respondem à mesma pergunta"
+    },
+    {
+      "title": "Quando um teste funcional não localiza a doença"
+    },
+    {
+      "title": "11. Tratamento orientado pela causa"
+    },
+    {
+      "title": "11.1 Roteiro de acompanhamento após definir a etiologia"
+    },
+    {
+      "title": "11.2 O que o retorno da menstruação realmente significa?"
+    },
+    {
+      "title": "11.3 Quatro perguntas que definem o plano terapêutico"
+    },
+    {
+      "title": "11.4 Situações em que a amenorreia exige urgência"
+    },
+    {
+      "title": "11.5 O que acompanhar em 3, 6 e 12 meses?"
+    },
+    {
+      "title": "12. Erros frequentes"
+    },
+    {
+      "title": "13. Casos integradores"
+    },
+    {
+      "title": "Casos de residência: tome a decisão antes de abrir a resposta"
+    },
+    {
+      "title": "14. Fixação"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Hipotálamo/hipófise"
+    },
+    {
+      "title": "Ovário"
+    },
+    {
+      "title": "Anovulação crônica"
+    },
+    {
+      "title": "Útero/via de saída"
+    },
+    {
+      "title": "Referências"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1053
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e fisiopatologia",
+      "chars": 3475
+    },
+    {
+      "id": "primaria",
+      "title": "2. Amenorreia primária",
+      "chars": 13703
+    },
+    {
+      "id": "secundaria",
+      "title": "3. Amenorreia secundária",
+      "chars": 7346
+    },
+    {
+      "id": "algoritmo",
+      "title": "4. Algoritmo diagnóstico prático",
+      "chars": 5952
+    },
+    {
+      "id": "prolactina",
+      "title": "5. Hiperprolactinemia",
+      "chars": 6737
+    },
+    {
+      "id": "ahf",
+      "title": "6. Amenorreia hipotalâmica funcional",
+      "chars": 6830
+    },
+    {
+      "id": "iop",
+      "title": "7. Insuficiência ovariana primária (IOP)",
+      "chars": 6780
+    },
+    {
+      "id": "sop",
+      "title": "8. SOP e hiperandrogenismo",
+      "chars": 9312
+    },
+    {
+      "id": "anatomicas",
+      "title": "9. Causas anatômicas",
+      "chars": 5040
+    },
+    {
+      "id": "testes",
+      "title": "10. Teste de progesterona e outros testes funcionais",
+      "chars": 3637
+    },
+    {
+      "id": "tratamento",
+      "title": "11. Tratamento orientado pela causa",
+      "chars": 5146
+    },
+    {
+      "id": "erros",
+      "title": "12. Erros frequentes",
+      "chars": 369
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos integradores",
+      "chars": 7832
+    },
+    {
+      "id": "questoes",
+      "title": "14. Fixação",
+      "chars": 369
+    },
+    {
+      "id": "mapa",
+      "title": "Mapa mental",
+      "chars": 480
+    },
+    {
+      "id": "referencias",
+      "title": "Referências",
+      "chars": 768
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12121456/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11008086/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3029536/",
+    "https://link.springer.com/article/10.1007/s11604-021-01115-7",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+    "https://www.febrasgo.org.br/noticia/a-hiperprolactinemia-no-consultorio-do-ginecologista-como-e-quando-o-tratamento-medicamentoso-e-indicado/",
+    "https://www.endocrine.org/clinical-practice-guidelines/hypothalamic-amenorrhea",
+    "https://www.febrasgo.org.br/images/pec/FPS---N2---Agosto-2020---portugues.pdf",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+    "https://www.nature.com/articles/s41574-023-00886-5",
+    "https://academic.oup.com/humrep/article/38/9/1655/7241786",
+    "https://www.febrasgo.org.br/images/pec/Protocolos-assistenciais/Protocolos-assistenciais-ginecologia.pdf/Amenorreia.pdf",
+    "https://academic.oup.com/ejendo/article/190/6/G53/7674241",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

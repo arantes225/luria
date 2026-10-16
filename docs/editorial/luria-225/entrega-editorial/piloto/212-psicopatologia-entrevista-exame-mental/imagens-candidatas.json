@@ -1,0 +1,54 @@
+{
+  "topic_id": 212,
+  "status": "planejamento_sem_candidatas_verificadas",
+  "images": [],
+  "visual_needs": [
+    {
+      "key": "psicopatologia-entrevista-exame-mental-planejamento-1",
+      "description": "Mapa original de domínios do exame mental",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "psicopatologia-entrevista-exame-mental-planejamento-2",
+      "description": "Tabela original de fenômenos próximos e diferenças",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "psicopatologia-entrevista-exame-mental-planejamento-3",
+      "description": "Modelo original de registro com caso fictício",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "psicopatologia-entrevista-exame-mental-planejamento-4",
+      "description": "Fluxo original de risco e investigação clínica",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    }
+  ],
+  "admin_importable": false,
+  "notes": [
+    "Necessidades não são candidatas prontas para o Admin.",
+    "Buscar recursos aprovados antes de solicitar imagens novas.",
+    "Não inserir clínica/exames sem licença, proveniência e aprovação.",
+    "Aplicar teto operacional do fluxo de lote: 110 KiB após aprovação; resolver divergência histórica com outros limites antes de otimizar."
+  ]
+}

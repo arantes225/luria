@@ -1,0 +1,342 @@
+{
+  "slug": "sexualidade",
+  "source": "index.html",
+  "chars": 34134,
+  "deficit": 25866,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/sexualidade/index.html",
+  "sha256": "a17168795522c9eb32a42033dfaa7894be686822740e68fa7f8c3cb0faf0fc8b",
+  "html_sha256": "a17168795522c9eb32a42033dfaa7894be686822740e68fa7f8c3cb0faf0fc8b",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Interesse, excitação e orgasmo"
+    },
+    {
+      "title": "Localizar antes de tratar"
+    },
+    {
+      "title": "Biopsicossocial"
+    },
+    {
+      "title": "Objetivo da paciente"
+    },
+    {
+      "title": "1. Conceitos e modelos de resposta sexual"
+    },
+    {
+      "title": "Modelo linear: útil, mas incompleto"
+    },
+    {
+      "title": "Modelo circular e desejo responsivo"
+    },
+    {
+      "title": "Excitação subjetiva e genital não são idênticas"
+    },
+    {
+      "title": "2. Consulta e anamnese sexual"
+    },
+    {
+      "title": "O eixo da anamnese"
+    },
+    {
+      "title": "Modelos úteis para organizar a consulta"
+    },
+    {
+      "title": "3. Classificação e raciocínio diagnóstico"
+    },
+    {
+      "title": "Desejo sexual hipoativo versus transtorno do interesse/excitação"
+    },
+    {
+      "title": "4. Desejo reduzido e alterações da excitação"
+    },
+    {
+      "title": "Fatores associados"
+    },
+    {
+      "title": "Medicamentos"
+    },
+    {
+      "title": "Testosterona: o que realmente importa"
+    },
+    {
+      "title": "Excitação"
+    },
+    {
+      "title": "5. Dificuldade orgásmica"
+    },
+    {
+      "title": "Fatores comuns"
+    },
+    {
+      "title": "6. Dor sexual e dificuldade de penetração"
+    },
+    {
+      "title": "Transtorno da dor genitopélvica/penetração"
+    },
+    {
+      "title": "Vulvodínia"
+    },
+    {
+      "title": "7. Exame físico e exames complementares"
+    },
+    {
+      "title": "Exame dirigido"
+    },
+    {
+      "title": "Exames: pedir para responder uma pergunta"
+    },
+    {
+      "title": "8. Tratamento: algoritmo prático"
+    },
+    {
+      "title": "Educação e terapia sexual"
+    },
+    {
+      "title": "Dor e assoalho pélvico"
+    },
+    {
+      "title": "Síndrome geniturinária da menopausa"
+    },
+    {
+      "title": "Testosterona"
+    },
+    {
+      "title": "Antidepressivos e disfunção sexual"
+    },
+    {
+      "title": "Dificuldade orgásmica"
+    },
+    {
+      "title": "Transformar a queixa em um plano verificável"
+    },
+    {
+      "title": "9. Situações especiais"
+    },
+    {
+      "title": "Menopausa"
+    },
+    {
+      "title": "Pós-parto e lactação"
+    },
+    {
+      "title": "Gestação"
+    },
+    {
+      "title": "Adolescência"
+    },
+    {
+      "title": "Pessoa idosa"
+    },
+    {
+      "title": "Após câncer de mama ou ginecológico"
+    },
+    {
+      "title": "10. Violência sexual, coerção e segurança"
+    },
+    {
+      "title": "Atendimento após violência sexual — janela de oportunidade e decisões por prioridade"
+    },
+    {
+      "title": "Primeiros minutos: estabilizar, acolher e oferecer escolhas"
+    },
+    {
+      "title": "Relógio clínico: o que não pode esperar"
+    },
+    {
+      "title": "Notificação epidemiológica e decisão sobre a polícia são processos distintos"
+    },
+    {
+      "title": "Seguimento após a primeira consulta"
+    },
+    {
+      "title": "Caso de prova — busca de cuidado 48 horas após violência"
+    },
+    {
+      "title": "11. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — queda de desejo e anorgasmia após ISRS"
+    },
+    {
+      "title": "Caso 2 — dispareunia pós-menopausa"
+    },
+    {
+      "title": "Caso 3 — dor, medo e hipertonia"
+    },
+    {
+      "title": "Caso 4 — dor profunda cíclica"
+    },
+    {
+      "title": "Caso 5 — “testosterona baixa” em mulher assintomática"
+    },
+    {
+      "title": "12. Revisão de alto rendimento"
+    },
+    {
+      "title": "Questões de fixação"
+    },
+    {
+      "title": "13. Aprofundamento: resposta sexual, dor e cuidado informado por trauma"
+    },
+    {
+      "title": "Desejo responsivo"
+    },
+    {
+      "title": "Discordância entre excitação subjetiva e genital"
+    },
+    {
+      "title": "Dor: localizar antes de rotular"
+    },
+    {
+      "title": "Antidepressivos e outras medicações"
+    },
+    {
+      "title": "Cuidado informado por trauma"
+    },
+    {
+      "title": "Testosterona"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "Desejo responsivo e sofrimento clínico"
+    },
+    {
+      "title": "Dispareunia superficial e profunda"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Desejo responsivo e sofrimento"
+    },
+    {
+      "title": "Dificuldade orgásmica"
+    },
+    {
+      "title": "Dispareunia superficial e profunda"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1795
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 734
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e modelos de resposta sexual",
+      "chars": 2350
+    },
+    {
+      "id": "consulta",
+      "title": "2. Consulta e anamnese sexual",
+      "chars": 2105
+    },
+    {
+      "id": "classificacao",
+      "title": "3. Classificação e raciocínio diagnóstico",
+      "chars": 1668
+    },
+    {
+      "id": "desejo",
+      "title": "4. Desejo reduzido e alterações da excitação",
+      "chars": 2071
+    },
+    {
+      "id": "orgasmo",
+      "title": "5. Dificuldade orgásmica",
+      "chars": 1141
+    },
+    {
+      "id": "dor",
+      "title": "6. Dor sexual e dificuldade de penetração",
+      "chars": 1911
+    },
+    {
+      "id": "exame",
+      "title": "7. Exame físico e exames complementares",
+      "chars": 1644
+    },
+    {
+      "id": "tratamento",
+      "title": "8. Tratamento: algoritmo prático",
+      "chars": 4330
+    },
+    {
+      "id": "situacoes",
+      "title": "9. Situações especiais",
+      "chars": 1894
+    },
+    {
+      "id": "violencia",
+      "title": "10. Violência sexual, coerção e segurança",
+      "chars": 898
+    },
+    {
+      "id": "atendimento-pos-violencia-sexual",
+      "title": "Atendimento após violência sexual — janela de oportunidade e decisões por prioridade",
+      "chars": 5258
+    },
+    {
+      "id": "casos",
+      "title": "11. Casos clínicos integradores",
+      "chars": 1642
+    },
+    {
+      "id": "revisao",
+      "title": "12. Revisão de alto rendimento",
+      "chars": 1740
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "13. Aprofundamento: resposta sexual, dor e cuidado informado por trauma",
+      "chars": 2847
+    },
+    {
+      "id": "editorial-depth-sexualidade",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 763
+    },
+    {
+      "id": "referencias",
+      "title": "Referências",
+      "chars": 1208
+    },
+    {
+      "id": "capitulos-livro-sexualidade",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 881
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/contracepcao/diu-de-cobre",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan/viva-sinan-vigilancia-continua",
+    "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/agosto-defeso-eleitoral/lei-do-minuto-seguinte-conheca-os-direitos-de-quem-sofre-violencia-sexual"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

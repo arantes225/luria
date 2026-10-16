@@ -1,0 +1,40 @@
+{
+  "topic_id": 5,
+  "status": "pesquisa_pendente",
+  "references": [],
+  "research_targets": [
+    {
+      "label": "Constituição Federal: dispositivos de saúde no texto oficial atualizado",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Lei 8.080/1990: texto oficial atualizado",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Lei 8.142/1990: texto oficial atualizado",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Decreto 7.508/2011 e normas ministeriais pertinentes, textos oficiais atualizados",
+      "url": null,
+      "opened": false,
+      "verified": false
+    }
+  ],
+  "verification_requirements": [
+    "título, autoria, edição e data",
+    "URL real ou identificador bibliográfico",
+    "trecho que sustenta recomendação",
+    "vigência e divergências",
+    "data de consulta",
+    "dose/via/duração e situações especiais quando pertinentes"
+  ],
+  "invented_references": false
+}

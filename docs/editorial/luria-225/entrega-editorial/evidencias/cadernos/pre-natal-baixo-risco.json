@@ -1,0 +1,704 @@
+{
+  "slug": "pre-natal-baixo-risco",
+  "source": "index.html",
+  "chars": 70130,
+  "deficit": 0,
+  "status": "passou na triagem de extensão",
+  "note": "",
+  "path": "apostilas/pre-natal-baixo-risco/index.html",
+  "sha256": "2a8f3db7afb2975ae6fe87c4329971e2a3e46d55a7cbbc4f5f85f615c7ae4c29",
+  "html_sha256": "2a8f3db7afb2975ae6fe87c4329971e2a3e46d55a7cbbc4f5f85f615c7ae4c29",
+  "headings": [
+    {
+      "title": "Apostila LURIA — Pré-natal de baixo risco"
+    },
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Linha do tempo clínica"
+    },
+    {
+      "title": "Como usar a linha do tempo"
+    },
+    {
+      "title": "Fontes principais (atualizar conforme rede)"
+    },
+    {
+      "title": "PARTE I — Primeiro trimestre (até 13 semanas e 6 dias)"
+    },
+    {
+      "title": "1. Objetivos e raciocínio clínico"
+    },
+    {
+      "title": "2. Exames da primeira consulta: o que muda a conduta?"
+    },
+    {
+      "title": "3. Prevenção já na primeira consulta"
+    },
+    {
+      "title": "4. Imagens com indicação didática no primeiro trimestre"
+    },
+    {
+      "title": "Aprofundamento — Primeira abordagem da gestante"
+    },
+    {
+      "title": "Quando iniciar?"
+    },
+    {
+      "title": "O que deve ocorrer no primeiro contato?"
+    },
+    {
+      "title": "Aprofundamento — Diagnóstico da gestação"
+    },
+    {
+      "title": "Suspeita clínica"
+    },
+    {
+      "title": "Teste de gravidez"
+    },
+    {
+      "title": "Teste urinário"
+    },
+    {
+      "title": "β-hCG sérico"
+    },
+    {
+      "title": "Fluxograma inicial"
+    },
+    {
+      "title": "Gestação de localização desconhecida"
+    },
+    {
+      "title": "Aprofundamento — Datação gestacional"
+    },
+    {
+      "title": "Definição"
+    },
+    {
+      "title": "DUM confiável"
+    },
+    {
+      "title": "Cálculo da idade gestacional pela DUM"
+    },
+    {
+      "title": "Exemplo"
+    },
+    {
+      "title": "Ultrassonografia para datação"
+    },
+    {
+      "title": "Regra geral para escolher a datação"
+    },
+    {
+      "title": "Aprofundamento — Cálculo da data provável do parto"
+    },
+    {
+      "title": "Regra de Näegele"
+    },
+    {
+      "title": "Exemplo 1"
+    },
+    {
+      "title": "Exemplo 2"
+    },
+    {
+      "title": "Limitações"
+    },
+    {
+      "title": "Gestação pós-termo e datação"
+    },
+    {
+      "title": "Aprofundamento — Primeira consulta de pré-natal"
+    },
+    {
+      "title": "História clínica"
+    },
+    {
+      "title": "Identificação"
+    },
+    {
+      "title": "História da gestação atual"
+    },
+    {
+      "title": "Antecedentes obstétricos"
+    },
+    {
+      "title": "Antecedentes clínicos"
+    },
+    {
+      "title": "História familiar"
+    },
+    {
+      "title": "Exame físico"
+    },
+    {
+      "title": "Avaliação geral"
+    },
+    {
+      "title": "Medidas antropométricas"
+    },
+    {
+      "title": "Exame cardiovascular"
+    },
+    {
+      "title": "Exame respiratório"
+    },
+    {
+      "title": "Exame abdominal e obstétrico"
+    },
+    {
+      "title": "Exame ginecológico"
+    },
+    {
+      "title": "Registro inicial"
+    },
+    {
+      "title": "Aprofundamento — Exames iniciais"
+    },
+    {
+      "title": "Exames geralmente solicitados no início"
+    },
+    {
+      "title": "Hemograma"
+    },
+    {
+      "title": "Interpretação"
+    },
+    {
+      "title": "Tipagem, Rh e Coombs indireto"
+    },
+    {
+      "title": "Coombs indireto negativo"
+    },
+    {
+      "title": "Coombs indireto positivo"
+    },
+    {
+      "title": "Glicemia"
+    },
+    {
+      "title": "Na primeira consulta"
+    },
+    {
+      "title": "Entre 24 e 28 semanas"
+    },
+    {
+      "title": "Urina e urocultura"
+    },
+    {
+      "title": "EAS"
+    },
+    {
+      "title": "Urocultura"
+    },
+    {
+      "title": "Sífilis"
+    },
+    {
+      "title": "HIV"
+    },
+    {
+      "title": "Hepatite B"
+    },
+    {
+      "title": "Hepatite C"
+    },
+    {
+      "title": "Toxoplasmose"
+    },
+    {
+      "title": "Gestante suscetível"
+    },
+    {
+      "title": "PARTE II — Segundo trimestre (14 semanas a 27 semanas e 6 dias)"
+    },
+    {
+      "title": "1. O que muda biologicamente?"
+    },
+    {
+      "title": "2. Exame obstétrico em toda consulta"
+    },
+    {
+      "title": "3. Morfológica e colo uterino"
+    },
+    {
+      "title": "4. Rastreio do diabetes gestacional: 24 a 28 semanas"
+    },
+    {
+      "title": "5. Vacinas e outros cuidados da metade da gestação"
+    },
+    {
+      "title": "6. O que exige reclassificação imediata?"
+    },
+    {
+      "title": "Aprofundamento — Ultrassonografias"
+    },
+    {
+      "title": "Ultrassonografia inicial"
+    },
+    {
+      "title": "Primeiro trimestre"
+    },
+    {
+      "title": "Morfológica do segundo trimestre"
+    },
+    {
+      "title": "Ultrassonografia do terceiro trimestre"
+    },
+    {
+      "title": "Quando pedir ultrassonografia extra?"
+    },
+    {
+      "title": "Aprofundamento — Suplementação"
+    },
+    {
+      "title": "Ácido fólico"
+    },
+    {
+      "title": "Objetivo"
+    },
+    {
+      "title": "Rotina"
+    },
+    {
+      "title": "Dose elevada"
+    },
+    {
+      "title": "Ferro"
+    },
+    {
+      "title": "Orientação prática"
+    },
+    {
+      "title": "Quando suspeitar de anemia por deficiência de ferro?"
+    },
+    {
+      "title": "Cálcio"
+    },
+    {
+      "title": "Interação com ferro"
+    },
+    {
+      "title": "Vitamina D"
+    },
+    {
+      "title": "Aprofundamento — Ganho ponderal"
+    },
+    {
+      "title": "Princípio"
+    },
+    {
+      "title": "Recomendações para gestação única"
+    },
+    {
+      "title": "Ganho insuficiente"
+    },
+    {
+      "title": "Ganho excessivo"
+    },
+    {
+      "title": "Como orientar"
+    },
+    {
+      "title": "PARTE III — Terceiro trimestre (28 semanas ao parto)"
+    },
+    {
+      "title": "1. Missão clínica"
+    },
+    {
+      "title": "2. Repetição de exames e prevenção de transmissão vertical"
+    },
+    {
+      "title": "3. Vacinação no período final"
+    },
+    {
+      "title": "4. Crescimento fetal, apresentação e movimentação"
+    },
+    {
+      "title": "5. Parto e puerpério: o que deve estar decidido?"
+    },
+    {
+      "title": "6. Caso clínico: consulta de 32 semanas"
+    },
+    {
+      "title": "Aprofundamento — Calendário de consultas"
+    },
+    {
+      "title": "Calendário prático"
+    },
+    {
+      "title": "O que avaliar em todas as consultas?"
+    },
+    {
+      "title": "Estrutura da consulta subsequente"
+    },
+    {
+      "title": "Aprofundamento — Vacinação"
+    },
+    {
+      "title": "Vacinas geralmente recomendadas"
+    },
+    {
+      "title": "Influenza"
+    },
+    {
+      "title": "dTpa"
+    },
+    {
+      "title": "dT"
+    },
+    {
+      "title": "Hepatite B"
+    },
+    {
+      "title": "Covid-19"
+    },
+    {
+      "title": "Vacina contra VSR"
+    },
+    {
+      "title": "Vacinas geralmente contraindicadas"
+    },
+    {
+      "title": "Tabela prática"
+    },
+    {
+      "title": "Aprofundamento — Sinais de alarme"
+    },
+    {
+      "title": "Procurar atendimento imediatamente se houver:"
+    },
+    {
+      "title": "Aprofundamento — Quando encaminhar para alto risco?"
+    },
+    {
+      "title": "Encaminhamento imediato ou avaliação urgente"
+    },
+    {
+      "title": "Encaminhamento programado"
+    },
+    {
+      "title": "Diabetes gestacional"
+    },
+    {
+      "title": "PARTE IV — Cuidado transversal e consolidação"
+    },
+    {
+      "title": "Aprofundamento — Conceito e objetivos"
+    },
+    {
+      "title": "O que é pré-natal de baixo risco?"
+    },
+    {
+      "title": "Objetivos do pré-natal"
+    },
+    {
+      "title": "Princípio editorial"
+    },
+    {
+      "title": "Aprofundamento — Classificação de risco"
+    },
+    {
+      "title": "Risco habitual"
+    },
+    {
+      "title": "Classificação dinâmica"
+    },
+    {
+      "title": "Categorias de risco"
+    },
+    {
+      "title": "Fatores que exigem avaliação especializada"
+    },
+    {
+      "title": "Condições maternas prévias"
+    },
+    {
+      "title": "História obstétrica"
+    },
+    {
+      "title": "Gestação atual"
+    },
+    {
+      "title": "Fatores sociais"
+    },
+    {
+      "title": "Encaminhamento não significa abandono"
+    },
+    {
+      "title": "Aprofundamento — Alimentação"
+    },
+    {
+      "title": "Princípios gerais"
+    },
+    {
+      "title": "Evitar ou reduzir"
+    },
+    {
+      "title": "Segurança alimentar"
+    },
+    {
+      "title": "Náuseas e vômitos"
+    },
+    {
+      "title": "Alimentação e diabetes gestacional"
+    },
+    {
+      "title": "Aprofundamento — Atividade física"
+    },
+    {
+      "title": "Benefícios"
+    },
+    {
+      "title": "Exemplos"
+    },
+    {
+      "title": "Como iniciar"
+    },
+    {
+      "title": "Situações para interromper e avaliar"
+    },
+    {
+      "title": "Contraindicações ou necessidade de avaliação especializada"
+    },
+    {
+      "title": "Aprofundamento — Saúde bucal"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "Orientações"
+    },
+    {
+      "title": "Náuseas e vômitos"
+    },
+    {
+      "title": "Aprofundamento — Algoritmo de estratificação"
+    },
+    {
+      "title": "Aprofundamento — Checklist da primeira consulta"
+    },
+    {
+      "title": "História"
+    },
+    {
+      "title": "Exame"
+    },
+    {
+      "title": "Plano"
+    },
+    {
+      "title": "Aprofundamento — Casos clínicos"
+    },
+    {
+      "title": "Caso 1 — Confirmação e datação"
+    },
+    {
+      "title": "Conduta"
+    },
+    {
+      "title": "Cálculo"
+    },
+    {
+      "title": "Caso 2 — DUM incerta"
+    },
+    {
+      "title": "Conduta"
+    },
+    {
+      "title": "Caso 3 — Gestante inicialmente baixo risco"
+    },
+    {
+      "title": "Interpretação"
+    },
+    {
+      "title": "Avaliar"
+    },
+    {
+      "title": "Caso 4 — Vacinação"
+    },
+    {
+      "title": "Conduta"
+    },
+    {
+      "title": "Caso 5 — Ganho ponderal"
+    },
+    {
+      "title": "Interpretação"
+    },
+    {
+      "title": "Aprofundamento — Questões comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Gabarito: B"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Gabarito: C"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Gabarito: C"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Gabarito: C"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Gabarito: D"
+    },
+    {
+      "title": "Aprofundamento — Resumo de conduta"
+    },
+    {
+      "title": "Na primeira consulta"
+    },
+    {
+      "title": "Em todas as consultas"
+    },
+    {
+      "title": "Ao longo da gestação"
+    },
+    {
+      "title": "Aprofundamento — Mensagens finais"
+    },
+    {
+      "title": "Referências selecionadas"
+    },
+    {
+      "title": "Fontes e atualização"
+    },
+    {
+      "title": "Ferramentas de revisão — mapa mental por trimestre"
+    },
+    {
+      "title": "Imagens e curadoria para o Admin LURIA"
+    },
+    {
+      "title": "Casos aplicados: urocultura, sífilis e vacinação no pré-natal de 2026"
+    },
+    {
+      "title": "1. Urocultura positiva sem sintomas: não é o mesmo que cistite"
+    },
+    {
+      "title": "2. Sífilis: um teste negativo no começo da gravidez não encerra a prevenção"
+    },
+    {
+      "title": "3. Vacinação da gestante: calendário nacional atualizado"
+    },
+    {
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "title": "A cada consulta: explicar o motivo"
+    },
+    {
+      "title": "Mudança de classificação de risco"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Primeira consulta como formulação de risco"
+    },
+    {
+      "title": "Segundo trimestre: anatomia, crescimento e glicose"
+    },
+    {
+      "title": "Terceiro trimestre: planejamento e vigilância"
+    },
+    {
+      "title": "Continuidade na APS e pós-parto"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Primeiro trimestre: estabelecer risco"
+    },
+    {
+      "title": "Segundo trimestre: mecanismos e rastreamento"
+    },
+    {
+      "title": "Terceiro trimestre e puerpério"
+    }
+  ],
+  "sections": [
+    {
+      "id": "pre-natal-infeccoes-urinarias-vacinas-2026",
+      "title": "Casos aplicados: urocultura, sífilis e vacinação no pré-natal de 2026",
+      "chars": 6200
+    },
+    {
+      "id": "editorial-depth-pre-natal-baixo-risco",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 664
+    },
+    {
+      "id": "luria-livro-etiologias-pre-natal-baixo-risco",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 1955
+    },
+    {
+      "id": "capitulos-livro-pre-natal-baixo-risco",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 1049
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes/gestantes/",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/caderneta_brasileira_gestante.pdf",
+    "https://mooc.campusvirtual.fiocruz.br/rea/pre-natal-qualidade/modulo3/modulo3-aula4.html",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_tecnico_gestacao_alto_risco.pdf",
+    "https://www.febrasgo.org.br/noticia/posicionamento-febrasgo-em-relacao-a-lei-14-598-sobre-inclusao-de-exames-no-protocolo-de-assistencia-de-rotina-as-gestantes-brasileiras/",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hulw-ufpb/acesso-a-informacao/gestao-documental/pop-procedimento-operacional-padrao/2019-1/pnar-pre-natal-de-alto-risco/pop-pnar-011-data-provavel-de-parto.pdf/@@download/file",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/publicacoes/caderneta-brasileira-da-gestante.pdf",
+    "https://bvaps.portoalegre.rs.gov.br/sites/default/files/usu_doc/politicas/Protocolo%20-%20Assist%C3%AAncia%20-%20Pr%C3%A9-Natal%20de%20Risco%20Habitual%20-%202026.pdf",
+    "https://prefeitura.sp.gov.br/cidade/secretarias/upload/saude/PROTOCOLO_DE_PRE_NATAL_HABITUAL_BAIXO_RISCO_6_09_19.pdf",
+    "https://saude.curitiba.pr.gov.br/images/APS/M%C3%A3e%20Curitibana/2%20-%20Pr%C3%A9-natal%20e%20puerp%C3%A9rio%20na%20aten%C3%A7%C3%A3o%20prim%C3%A1ria%20-%20atualizado%20em%2015%20de%20janeiro%20de%202025.pdf",
+    "https://www.febrasgo.org.br/pt/femina",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/0101adolescente_gravida.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4340812/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2025/nota-tecnica-no-o-119-2025-cgici-dpni-svsa-ms",
+    "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/agosto-defeso-eleitoral/pre-natal-cuidados-desde-as-primeiras-semanas-tornam-a-gestacao-mais-segura",
+    "https://esppe.saude.pe.gov.br/pluginfile.php/279048/mod_folder/content/0/PR%C3%89-NATAL/Modelo%20de%20encaminhamento%20ao%20PNAR.pdf?forcedownload=1",
+    "https://www.saude.df.gov.br/documents/37101/716749/SEI_GDF-13887044-Nota-T%C3%A9cnica_ginecolocia-e-obtestricia.pdf/8bc82df0-2e7b-302b-37c7-6b5e161d7c68?t=1653333966659",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez",
+    "https://atencaoprimaria.es.gov.br/Media/AtencaoPrimaria/Mulher/Manual%20Gesta%C3%A7%C3%A3o%20Alto%20Risco%202022.pdf",
+    "https://www.saude.sc.gov.br/index.php/pt/atencao-primaria-a-saude/gerencias-da-aps/gapps/saude-da-mulher/saude-da-mulher-arquivos/instrumento-de-estratificacao-de-risco-gestacional-retificado-em-23-09-2025/download",
+    "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-15-2022-saps-ms",
+    "https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/diretrizes-clinicas-para-a-aps/diretrizes-abordadas/pratica_odontologica_gestantes.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/publicacoes",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_pre_natal_baixo_risco.pdf",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/a-vacina-virus-sincicial-respiratorio-2"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

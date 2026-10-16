@@ -1,0 +1,405 @@
+{
+  "slug": "infertilidade-conjugal",
+  "source": "index.html",
+  "chars": 48987,
+  "deficit": 11013,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/infertilidade-conjugal/index.html",
+  "sha256": "9b9576ecb39f41050dd6f9de79dafbbdbb93e257b2874e256db4631a98f14d08",
+  "html_sha256": "9b9576ecb39f41050dd6f9de79dafbbdbb93e257b2874e256db4631a98f14d08",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Ovulação e reserva"
+    },
+    {
+      "title": "Útero e tubas"
+    },
+    {
+      "title": "Fator masculino"
+    },
+    {
+      "title": "Escolha da estratégia"
+    },
+    {
+      "title": "1. Conceitos e fisiopatologia"
+    },
+    {
+      "title": "Da ovulação à implantação"
+    },
+    {
+      "title": "Idade, reserva e qualidade oocitária"
+    },
+    {
+      "title": "2. Reconhecimento clínico"
+    },
+    {
+      "title": "Quando a espera deixa de ser razoável?"
+    },
+    {
+      "title": "O que muda completamente a investigação?"
+    },
+    {
+      "title": "3. Diagnóstico: o mínimo que responde a pergunta certa"
+    },
+    {
+      "title": "Ovulação"
+    },
+    {
+      "title": "Reserva ovariana"
+    },
+    {
+      "title": "Útero e tubas"
+    },
+    {
+      "title": "Leitura prática da propedêutica"
+    },
+    {
+      "title": "Como interpretar a HSG além de “aberta ou fechada”"
+    },
+    {
+      "title": "Reserva ovariana: quantidade não é qualidade"
+    },
+    {
+      "title": "4. Fator feminino: localizar o mecanismo"
+    },
+    {
+      "title": "Anovulação e SOP"
+    },
+    {
+      "title": "Baixa reserva x insuficiência ovariana primária"
+    },
+    {
+      "title": "Fator cervical e relação sexual"
+    },
+    {
+      "title": "Endometriose"
+    },
+    {
+      "title": "Fator tubário e hidrossalpinge"
+    },
+    {
+      "title": "Fator uterino"
+    },
+    {
+      "title": "5. Fator masculino: não reduzir tudo ao espermograma"
+    },
+    {
+      "title": "Como transformar o espermograma em raciocínio etiológico"
+    },
+    {
+      "title": "Varicocele: nem toda imagem vira cirurgia"
+    },
+    {
+      "title": "Quando pensar em genética"
+    },
+    {
+      "title": "6. Tratamento: escalar pela causa, pelo prognóstico e pelo relógio biológico"
+    },
+    {
+      "title": "Expectativa e coito programado"
+    },
+    {
+      "title": "Inseminação intrauterina (IUI)"
+    },
+    {
+      "title": "FIV x ICSI"
+    },
+    {
+      "title": "Anovulação por SOP"
+    },
+    {
+      "title": "Infertilidade sem causa aparente"
+    },
+    {
+      "title": "Quando “pular etapas” faz sentido"
+    },
+    {
+      "title": "7. Reprodução assistida e regras brasileiras"
+    },
+    {
+      "title": "8. Situações especiais: por que a estratégia muda"
+    },
+    {
+      "title": "Idade ≥35 anos"
+    },
+    {
+      "title": "Obesidade e SOP"
+    },
+    {
+      "title": "Amenorreia hipotalâmica"
+    },
+    {
+      "title": "Insuficiência ovariana primária"
+    },
+    {
+      "title": "HIV"
+    },
+    {
+      "title": "Perda gestacional recorrente não é a mesma coisa que infertilidade"
+    },
+    {
+      "title": "Oncofertilidade"
+    },
+    {
+      "title": "SUS e acesso"
+    },
+    {
+      "title": "9. Complicações e danos evitáveis"
+    },
+    {
+      "title": "Gestação múltipla"
+    },
+    {
+      "title": "Síndrome de hiperestimulação ovariana"
+    },
+    {
+      "title": "Gravidez ectópica"
+    },
+    {
+      "title": "Dano por sobretratamento"
+    },
+    {
+      "title": "10. Seguimento e pré-concepção"
+    },
+    {
+      "title": "11. Casos integradores"
+    },
+    {
+      "title": "Caso 1 — SOP e desejo de “ir direto para FIV”"
+    },
+    {
+      "title": "Caso 2 — 37 anos, dor e ultrassom “normal”"
+    },
+    {
+      "title": "Caso 3 — azoospermia e testosterona"
+    },
+    {
+      "title": "Caso 4 — HSG com bloqueio proximal unilateral"
+    },
+    {
+      "title": "Caso 5 — 40 anos, AMH baixo e três IUIs falhas"
+    },
+    {
+      "title": "Caso 6 — hidrossalpinge antes da FIV"
+    },
+    {
+      "title": "Caso longitudinal — reserva ovariana e fator tubário não são sinônimos"
+    },
+    {
+      "title": "Raciocínio prático: cinco erros que atrasam o diagnóstico do casal"
+    },
+    {
+      "title": "1. Ciclos de 54 dias e AMH alto: não comece pela reserva"
+    },
+    {
+      "title": "2. Galactorreia e infertilidade: prolactina não é um diagnóstico final"
+    },
+    {
+      "title": "3. Espermograma muito alterado em homem que usa testosterona"
+    },
+    {
+      "title": "4. HSG com interrupção proximal: confira a técnica antes de sentenciar esterilidade"
+    },
+    {
+      "title": "5. Mulher de 39 anos, seis meses de tentativa e exames iniciais normais"
+    },
+    {
+      "title": "12. Revisão de alto rendimento"
+    },
+    {
+      "title": "13. Aprofundamento: prognóstico reprodutivo e escolha racional de tratamento"
+    },
+    {
+      "title": "Idade feminina é variável prognóstica central"
+    },
+    {
+      "title": "Espermograma: exame de probabilidade"
+    },
+    {
+      "title": "Tubas e endométrio"
+    },
+    {
+      "title": "Infertilidade sem causa aparente"
+    },
+    {
+      "title": "FIV versus ICSI"
+    },
+    {
+      "title": "Dimensão psicossocial"
+    },
+    {
+      "title": "Aprofundamento clínico por mecanismos e causas"
+    },
+    {
+      "title": "Fator feminino por compartimento"
+    },
+    {
+      "title": "Fator masculino em paralelo"
+    },
+    {
+      "title": "14. Investigação conjunta da infertilidade — fisiologia, exames e decisão em profundidade"
+    },
+    {
+      "title": "14.1 Por que não se começa com todos os exames possíveis"
+    },
+    {
+      "title": "14.2 Ovulação não é a mesma coisa que fertilidade global"
+    },
+    {
+      "title": "14.3 Reserva ovariana responde sobre resposta aos estímulos, não sobre o destino individual"
+    },
+    {
+      "title": "14.4 Tubas uterinas: ter um lúmen aberto não garante função normal"
+    },
+    {
+      "title": "14.5 Fator masculino: interpretar o espermograma como probabilidade, não sentença"
+    },
+    {
+      "title": "14.6 FIV e ICSI tratam problemas diferentes"
+    },
+    {
+      "title": "14.7 Dois casos comentados que mudam o plano terapêutico"
+    },
+    {
+      "title": "Referências essenciais"
+    },
+    {
+      "title": "Estudo aprofundado por mecanismo e etiologia"
+    },
+    {
+      "title": "Anovulação: confirmação e conduta"
+    },
+    {
+      "title": "Fator tuboperitoneal"
+    },
+    {
+      "title": "Reserva ovariana e idade"
+    },
+    {
+      "title": "Fator masculino: roteiro mínimo"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1188
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 609
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e fisiopatologia",
+      "chars": 2421
+    },
+    {
+      "id": "reconhecimento",
+      "title": "2. Reconhecimento clínico",
+      "chars": 1693
+    },
+    {
+      "id": "diagnostico",
+      "title": "3. Diagnóstico: o mínimo que responde a pergunta certa",
+      "chars": 5320
+    },
+    {
+      "id": "fator-feminino",
+      "title": "4. Fator feminino: localizar o mecanismo",
+      "chars": 3207
+    },
+    {
+      "id": "fator-masculino",
+      "title": "5. Fator masculino: não reduzir tudo ao espermograma",
+      "chars": 2900
+    },
+    {
+      "id": "tratamento",
+      "title": "6. Tratamento: escalar pela causa, pelo prognóstico e pelo relógio biológico",
+      "chars": 2963
+    },
+    {
+      "id": "reproducao-assistida",
+      "title": "7. Reprodução assistida e regras brasileiras",
+      "chars": 994
+    },
+    {
+      "id": "especiais",
+      "title": "8. Situações especiais: por que a estratégia muda",
+      "chars": 2833
+    },
+    {
+      "id": "complicacoes",
+      "title": "9. Complicações e danos evitáveis",
+      "chars": 1014
+    },
+    {
+      "id": "seguimento",
+      "title": "10. Seguimento e pré-concepção",
+      "chars": 531
+    },
+    {
+      "id": "casos",
+      "title": "11. Casos integradores",
+      "chars": 3132
+    },
+    {
+      "id": "infertilidade-casos-decisao-2026",
+      "title": "Raciocínio prático: cinco erros que atrasam o diagnóstico do casal",
+      "chars": 4428
+    },
+    {
+      "id": "revisao",
+      "title": "12. Revisão de alto rendimento",
+      "chars": 999
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "13. Aprofundamento: prognóstico reprodutivo e escolha racional de tratamento",
+      "chars": 2814
+    },
+    {
+      "id": "editorial-depth-infertilidade-conjugal",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 910
+    },
+    {
+      "id": "infertilidade-integral-40k",
+      "title": "14. Investigação conjunta da infertilidade — fisiologia, exames e decisão em profundidade",
+      "chars": 10048
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 857
+    },
+    {
+      "id": "etio-profundidade-infertilidade-conjugal",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "chars": 2154
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://commons.wikimedia.org/wiki/File:Hysterosalpingography.png",
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+    "https://www.who.int/publications/i/item/9789240030787",
+    "https://doi.org/10.1016/j.fertnstert.2021.08.038"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

@@ -1,0 +1,413 @@
+{
+  "slug": "diabetes-mellitus-gestacional",
+  "source": "index.html",
+  "chars": 51996,
+  "deficit": 8004,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/diabetes-mellitus-gestacional/index.html",
+  "sha256": "52d72b735eab6c764d804e33ed982cb2c87b98038c46e9b766198abba68f9fd7",
+  "html_sha256": "52d72b735eab6c764d804e33ed982cb2c87b98038c46e9b766198abba68f9fd7",
+  "headings": [
+    {
+      "title": "Resumo de prova"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Fisiopatologia"
+    },
+    {
+      "title": "Repercussão fetal"
+    },
+    {
+      "title": "Tratamento guiado pelo padrão"
+    },
+    {
+      "title": "Parto e pós-parto"
+    },
+    {
+      "title": "1. Definição"
+    },
+    {
+      "title": "1.1 DMG não é sinônimo de diabetes pré-gestacional"
+    },
+    {
+      "title": "1.2 Por que o DMG importa?"
+    },
+    {
+      "title": "1.3 Frequência"
+    },
+    {
+      "title": "2. Fisiopatologia"
+    },
+    {
+      "title": "2.1 Primeira metade da gestação: fase predominantemente anabólica"
+    },
+    {
+      "title": "2.2 Segunda metade: resistência à insulina crescente"
+    },
+    {
+      "title": "2.3 O que o pâncreas materno deveria fazer?"
+    },
+    {
+      "title": "2.4 Onde surge o DMG?"
+    },
+    {
+      "title": "2.5 Por que a insulina materna não “corrige” a glicemia fetal?"
+    },
+    {
+      "title": "2.6 Por que ocorre macrossomia?"
+    },
+    {
+      "title": "2.7 Por que ocorre polidrâmnio?"
+    },
+    {
+      "title": "2.8 Por que ocorre hipoglicemia neonatal?"
+    },
+    {
+      "title": "2.9 Hipóxia relativa, policitemia e hiperbilirrubinemia"
+    },
+    {
+      "title": "3. Quadro clínico"
+    },
+    {
+      "title": "3.1 Quando há manifestações clínicas"
+    },
+    {
+      "title": "3.2 Achados obstétricos que podem sugerir repercussão"
+    },
+    {
+      "title": "4. Fatores de risco"
+    },
+    {
+      "title": "4.1 Como raciocinar sobre os fatores de risco?"
+    },
+    {
+      "title": "5. Rastreamento e diagnóstico"
+    },
+    {
+      "title": "5.1 Primeira consulta pré-natal"
+    },
+    {
+      "title": "5.2 HbA1c na primeira consulta"
+    },
+    {
+      "title": "5.3 Glicemia ao acaso"
+    },
+    {
+      "title": "5.4 TOTG-75 g entre 24 e 28 semanas"
+    },
+    {
+      "title": "5.5 Quantos valores precisam estar alterados?"
+    },
+    {
+      "title": "5.6 Erros comuns de prova e prática"
+    },
+    {
+      "title": "5.7 E após cirurgia bariátrica?"
+    },
+    {
+      "title": "6. Monitorização glicêmica"
+    },
+    {
+      "title": "6.1 Perfil sem tratamento farmacológico"
+    },
+    {
+      "title": "6.2 Perfil com tratamento farmacológico"
+    },
+    {
+      "title": "6.3 Como interpretar padrões"
+    },
+    {
+      "title": "6.4 Um valor isolado alto muda o tratamento?"
+    },
+    {
+      "title": "6.5 HbA1c durante a gestação"
+    },
+    {
+      "title": "6.6 Monitorização contínua de glicose"
+    },
+    {
+      "title": "6.7 O que registrar no diário?"
+    },
+    {
+      "title": "7. Tratamento"
+    },
+    {
+      "title": "7.1 Objetivos do tratamento"
+    },
+    {
+      "title": "7.2 Educação e autocuidado"
+    },
+    {
+      "title": "7.3 Terapia nutricional"
+    },
+    {
+      "title": "7.4 Fracionamento"
+    },
+    {
+      "title": "7.5 Atividade física"
+    },
+    {
+      "title": "7.6 Quando iniciar farmacoterapia?"
+    },
+    {
+      "title": "7.7 Circunferência abdominal como pista terapêutica"
+    },
+    {
+      "title": "7.8 Insulina — princípio geral"
+    },
+    {
+      "title": "7.9 Dose inicial de insulina"
+    },
+    {
+      "title": "7.10 Por que a necessidade de insulina pode aumentar?"
+    },
+    {
+      "title": "7.11 Tipos de insulina"
+    },
+    {
+      "title": "7.12 Como titular"
+    },
+    {
+      "title": "7.13 Metformina"
+    },
+    {
+      "title": "7.14 Glibenclamida"
+    },
+    {
+      "title": "7.15 Como julgar resposta ao tratamento?"
+    },
+    {
+      "title": "8. Avaliação fetal"
+    },
+    {
+      "title": "8.1 Biometria"
+    },
+    {
+      "title": "8.2 GIG e macrossomia não são exatamente a mesma coisa"
+    },
+    {
+      "title": "8.3 Circunferência abdominal ≥P75"
+    },
+    {
+      "title": "8.4 Líquido amniótico"
+    },
+    {
+      "title": "8.5 Cardiotocografia e perfil biofísico"
+    },
+    {
+      "title": "8.6 Dopplervelocimetria"
+    },
+    {
+      "title": "8.7 Por que não basta olhar o ultrassom?"
+    },
+    {
+      "title": "9. Complicações"
+    },
+    {
+      "title": "9.1 Complicações fetais e neonatais"
+    },
+    {
+      "title": "9.2 Complicações maternas e obstétricas"
+    },
+    {
+      "title": "Principais associações"
+    },
+    {
+      "title": "9.2.1 Por que o risco hipertensivo aumenta: associação não significa causa única"
+    },
+    {
+      "title": "9.2.2 Infecções e candidíase: entender a predisposição sem superdiagnosticar"
+    },
+    {
+      "title": "9.2.3 Crescimento fetal excessivo, parto operatório e risco real de distócia"
+    },
+    {
+      "title": "9.2.4 Por que a avaliação fetal não se resume à circunferência abdominal"
+    },
+    {
+      "title": "9.2.5 O recém-nascido e a transição metabólica após o nascimento"
+    },
+    {
+      "title": "9.2.6 Puerpério: por que o fim da gravidez não encerra o risco metabólico"
+    },
+    {
+      "title": "9.3 Malformações congênitas"
+    },
+    {
+      "title": "10. Hipoglicemia na gestação"
+    },
+    {
+      "title": "10.1 Definição"
+    },
+    {
+      "title": "10.2 Principais causas"
+    },
+    {
+      "title": "10.3 Quadro clínico"
+    },
+    {
+      "title": "10.4 Conduta — paciente consciente"
+    },
+    {
+      "title": "Regra dos 15"
+    },
+    {
+      "title": "10.5 Hipoglicemia grave"
+    },
+    {
+      "title": "10.6 Prevenção"
+    },
+    {
+      "title": "11. Parto e puerpério"
+    },
+    {
+      "title": "11.1 Planejamento do parto"
+    },
+    {
+      "title": "11.2 Via de parto"
+    },
+    {
+      "title": "11.3 Controle intraparto"
+    },
+    {
+      "title": "11.4 Puerpério imediato"
+    },
+    {
+      "title": "Após a saída da placenta"
+    },
+    {
+      "title": "11.5 Recém-nascido"
+    },
+    {
+      "title": "11.6 Reclassificação metabólica"
+    },
+    {
+      "title": "11.7 Seguimento"
+    },
+    {
+      "title": "Rastreamento especial: gestação após cirurgia bariátrica"
+    },
+    {
+      "title": "Caso aplicado: bypass gástrico prévio"
+    },
+    {
+      "title": "12. Aprofundamento: fenótipo glicêmico, insulinização e emergências"
+    },
+    {
+      "title": "Jejum alto versus pós-prandial alto"
+    },
+    {
+      "title": "Diabetes manifesto descoberto na gestação"
+    },
+    {
+      "title": "Crescimento fetal como leitura da exposição glicêmica"
+    },
+    {
+      "title": "Cetoacidose euglicêmica"
+    },
+    {
+      "title": "Intraparto e pós-parto"
+    },
+    {
+      "title": "Risco de longo prazo"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Diário glicêmico: interpretar antes de ajustar"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "Glicemias de jejum versus pós-prandiais"
+    },
+    {
+      "title": "Acompanhamento após o parto"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Fisiopatologia fetal e neonatal"
+    },
+    {
+      "title": "Padrões de monitoramento e tratamento"
+    },
+    {
+      "title": "Parto e pós-parto"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Placenta, insulina e repercussão fetal"
+    },
+    {
+      "title": "Tratamento guiado pelo padrão"
+    },
+    {
+      "title": "Parto e prevenção futura"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Resumo de prova",
+      "chars": 731
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 1102
+    },
+    {
+      "id": "rastreio-pos-bariatrica",
+      "title": "Rastreamento especial: gestação após cirurgia bariátrica",
+      "chars": 1924
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "12. Aprofundamento: fenótipo glicêmico, insulinização e emergências",
+      "chars": 2875
+    },
+    {
+      "id": "diario-resolvido",
+      "title": "Diário glicêmico: interpretar antes de ajustar",
+      "chars": 1351
+    },
+    {
+      "id": "editorial-depth-diabetes-mellitus-gestacional",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 645
+    },
+    {
+      "id": "luria-livro-etiologias-diabetes-mellitus-gestacional",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 1607
+    },
+    {
+      "id": "capitulos-livro-diabetes-mellitus-gestacional",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 938
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://doi.org/10.2337/dc26-S015",
+    "https://diretriz.diabetes.org.br/rastreamento-e-diagnostico-da-hiperglicemia-na-gestacao/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12329555/",
+    "https://www.mja.com.au/journal/2025/223/3/australasian-diabetes-pregnancy-society-adips-2025-consensus-recommendations",
+    "https://diretriz.diabetes.org.br/tratamento-farmacologico-do-diabetes-na-gestacao/"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

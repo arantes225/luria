@@ -1,0 +1,211 @@
+{
+  "slug": "cancer-colo-utero-hpv",
+  "source": "content.json",
+  "chars": 54243,
+  "deficit": 5757,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/cancer-colo-utero-hpv/content.json",
+  "sha256": "ca8eab7e5aa876dda789df159a74f0b42ade96a320977aa33aeff56c30cc6d8f",
+  "html_sha256": "d2fa5b1c506c032f75c97c99cf35db769a63310ed718e75c996cb81e23e64cfc",
+  "headings": [
+    {
+      "id": "resumo",
+      "title": 0
+    },
+    {
+      "id": "anatomia",
+      "title": 0
+    },
+    {
+      "id": "hpv",
+      "title": 0
+    },
+    {
+      "id": "prevencao",
+      "title": 0
+    },
+    {
+      "id": "rastreamento",
+      "title": 0
+    },
+    {
+      "id": "hpv-algoritmo-aplicado",
+      "title": 0
+    },
+    {
+      "id": "citologia",
+      "title": 0
+    },
+    {
+      "id": "colposcopia",
+      "title": 0
+    },
+    {
+      "id": "colposcopia-lesoes-avancado",
+      "title": 0
+    },
+    {
+      "id": "clinica",
+      "title": 0
+    },
+    {
+      "id": "estadiamento",
+      "title": 0
+    },
+    {
+      "id": "tratamento",
+      "title": 0
+    },
+    {
+      "id": "figo-conduta-integrada-2026",
+      "title": 0
+    },
+    {
+      "id": "especiais",
+      "title": 0
+    },
+    {
+      "id": "seguimento-situacoes-especiais-casos",
+      "title": 0
+    },
+    {
+      "id": "seguimento",
+      "title": 0
+    },
+    {
+      "id": "casos",
+      "title": 0
+    },
+    {
+      "id": "revisao",
+      "title": 0
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": 0
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section"
+    },
+    {
+      "id": "referencias",
+      "title": 0
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": 0,
+      "chars": 1480
+    },
+    {
+      "id": "anatomia",
+      "title": 0,
+      "chars": 1031
+    },
+    {
+      "id": "hpv",
+      "title": 0,
+      "chars": 2098
+    },
+    {
+      "id": "prevencao",
+      "title": 0,
+      "chars": 1401
+    },
+    {
+      "id": "rastreamento",
+      "title": 0,
+      "chars": 2239
+    },
+    {
+      "id": "hpv-algoritmo-aplicado",
+      "title": 0,
+      "chars": 6413
+    },
+    {
+      "id": "citologia",
+      "title": 0,
+      "chars": 2191
+    },
+    {
+      "id": "colposcopia",
+      "title": 0,
+      "chars": 982
+    },
+    {
+      "id": "colposcopia-lesoes-avancado",
+      "title": 0,
+      "chars": 8215
+    },
+    {
+      "id": "clinica",
+      "title": 0,
+      "chars": 1227
+    },
+    {
+      "id": "estadiamento",
+      "title": 0,
+      "chars": 1393
+    },
+    {
+      "id": "tratamento",
+      "title": 0,
+      "chars": 2628
+    },
+    {
+      "id": "figo-conduta-integrada-2026",
+      "title": 0,
+      "chars": 8780
+    },
+    {
+      "id": "especiais",
+      "title": 0,
+      "chars": 1502
+    },
+    {
+      "id": "seguimento-situacoes-especiais-casos",
+      "title": 0,
+      "chars": 7741
+    },
+    {
+      "id": "seguimento",
+      "title": 0,
+      "chars": 1660
+    },
+    {
+      "id": "casos",
+      "title": 0,
+      "chars": 1281
+    },
+    {
+      "id": "revisao",
+      "title": 0,
+      "chars": 1299
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": 0,
+      "chars": 3562
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section",
+      "chars": 1128
+    },
+    {
+      "id": "referencias",
+      "title": 0,
+      "chars": 902
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

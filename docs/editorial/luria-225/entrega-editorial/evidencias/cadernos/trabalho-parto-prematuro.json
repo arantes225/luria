@@ -1,0 +1,256 @@
+{
+  "slug": "trabalho-parto-prematuro",
+  "source": "content.json",
+  "chars": 60374,
+  "deficit": 0,
+  "status": "passou na triagem de extensão",
+  "note": "",
+  "path": "apostilas/trabalho-parto-prematuro/content.json",
+  "sha256": "73a8fbb2ba3972ccb99729e19b013f1bbbe8e3064e27fa0eddbb7dc811b793b6",
+  "html_sha256": "537a40411f3e461fe585970caa14b65d05040f8e32fea3876e97b514cd430bd6",
+  "headings": [
+    {
+      "id": "resumo",
+      "title": "book-exam-summary"
+    },
+    {
+      "id": "conceitos",
+      "title": 0
+    },
+    {
+      "id": "fisiopatologia",
+      "title": 0
+    },
+    {
+      "id": "risco-prevencao",
+      "title": 0
+    },
+    {
+      "id": "reconhecimento",
+      "title": 0
+    },
+    {
+      "id": "diagnostico",
+      "title": 0
+    },
+    {
+      "id": "prevencao-vs-tpp-diagnostico-2026",
+      "title": 0
+    },
+    {
+      "id": "triagem-contracoes-2026",
+      "title": ""
+    },
+    {
+      "id": "diferenciais",
+      "title": 0
+    },
+    {
+      "id": "conduta-inicial",
+      "title": 0
+    },
+    {
+      "id": "corticoide",
+      "title": 0
+    },
+    {
+      "id": "tocolise",
+      "title": 0
+    },
+    {
+      "id": "magnesio",
+      "title": 0
+    },
+    {
+      "id": "antibioticos-egb",
+      "title": 0
+    },
+    {
+      "id": "rpmo",
+      "title": 0
+    },
+    {
+      "id": "quando-nascer",
+      "title": 0
+    },
+    {
+      "id": "parto",
+      "title": 0
+    },
+    {
+      "id": "peri-viabilidade",
+      "title": 0
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": 0
+    },
+    {
+      "id": "casos",
+      "title": 0
+    },
+    {
+      "id": "revisao",
+      "title": 0
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section"
+    },
+    {
+      "id": "manual-avancado-2026",
+      "title": "book-section"
+    },
+    {
+      "id": "capitulo-integrador-40k-2026",
+      "title": 0
+    },
+    {
+      "id": "referencias",
+      "title": 0
+    },
+    {
+      "id": "curadoria-imagens",
+      "title": 0
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "book-exam-summary",
+      "chars": 1846
+    },
+    {
+      "id": "conceitos",
+      "title": 0,
+      "chars": 1293
+    },
+    {
+      "id": "fisiopatologia",
+      "title": 0,
+      "chars": 1201
+    },
+    {
+      "id": "risco-prevencao",
+      "title": 0,
+      "chars": 1703
+    },
+    {
+      "id": "reconhecimento",
+      "title": 0,
+      "chars": 1056
+    },
+    {
+      "id": "diagnostico",
+      "title": 0,
+      "chars": 1500
+    },
+    {
+      "id": "prevencao-vs-tpp-diagnostico-2026",
+      "title": 0,
+      "chars": 7892
+    },
+    {
+      "id": "triagem-contracoes-2026",
+      "title": "",
+      "chars": 1980
+    },
+    {
+      "id": "diferenciais",
+      "title": 0,
+      "chars": 1014
+    },
+    {
+      "id": "conduta-inicial",
+      "title": 0,
+      "chars": 750
+    },
+    {
+      "id": "corticoide",
+      "title": 0,
+      "chars": 1380
+    },
+    {
+      "id": "tocolise",
+      "title": 0,
+      "chars": 1816
+    },
+    {
+      "id": "magnesio",
+      "title": 0,
+      "chars": 988
+    },
+    {
+      "id": "antibioticos-egb",
+      "title": 0,
+      "chars": 827
+    },
+    {
+      "id": "rpmo",
+      "title": 0,
+      "chars": 1011
+    },
+    {
+      "id": "quando-nascer",
+      "title": 0,
+      "chars": 537
+    },
+    {
+      "id": "parto",
+      "title": 0,
+      "chars": 736
+    },
+    {
+      "id": "peri-viabilidade",
+      "title": 0,
+      "chars": 616
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": 0,
+      "chars": 1017
+    },
+    {
+      "id": "casos",
+      "title": 0,
+      "chars": 2216
+    },
+    {
+      "id": "revisao",
+      "title": 0,
+      "chars": 1664
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section",
+      "chars": 1211
+    },
+    {
+      "id": "manual-avancado-2026",
+      "title": "book-section",
+      "chars": 12117
+    },
+    {
+      "id": "capitulo-integrador-40k-2026",
+      "title": 0,
+      "chars": 17702
+    },
+    {
+      "id": "referencias",
+      "title": 0,
+      "chars": 759
+    },
+    {
+      "id": "curadoria-imagens",
+      "title": 0,
+      "chars": 558
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

@@ -1,0 +1,261 @@
+{
+  "status": "proposta — não aplicada ao site",
+  "entries": [
+    {
+      "theme_id": 4,
+      "path": "/apostilas/pre-natal-baixo-risco/",
+      "source_path": "apostilas/pre-natal-baixo-risco/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 9,
+      "path": "/apostilas/pre-natal-baixo-risco/",
+      "source_path": "apostilas/pre-natal-baixo-risco/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 14,
+      "path": "/apostilas/pre-natal-baixo-risco/",
+      "source_path": "apostilas/pre-natal-baixo-risco/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 19,
+      "path": "/apostilas/pre-natal-baixo-risco/",
+      "source_path": "apostilas/pre-natal-baixo-risco/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 24,
+      "path": "/apostilas/sindromes-hipertensivas-da-gestacao/",
+      "source_path": "apostilas/sindromes-hipertensivas-da-gestacao/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 29,
+      "path": "/apostilas/diabetes-mellitus-gestacional/",
+      "source_path": "apostilas/diabetes-mellitus-gestacional/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 34,
+      "path": "/apostilas/infeccoes-gestacao-transmissao-vertical/",
+      "source_path": "apostilas/infeccoes-gestacao-transmissao-vertical/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 39,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 44,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 49,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 54,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 59,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 64,
+      "path": "/apostilas/hemorragias-primeiro-terceiro-trimestre/",
+      "source_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 69,
+      "path": "/apostilas/assistencia-ao-parto/",
+      "source_path": "apostilas/assistencia-ao-parto/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 74,
+      "path": "/apostilas/assistencia-ao-parto/",
+      "source_path": "apostilas/assistencia-ao-parto/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 79,
+      "path": "/apostilas/inducao-do-trabalho-de-parto/",
+      "source_path": "apostilas/inducao-do-trabalho-de-parto/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 84,
+      "path": "/apostilas/assistencia-ao-parto/",
+      "source_path": "apostilas/assistencia-ao-parto/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 89,
+      "path": "/apostilas/avaliacao-vitalidade-fetal/",
+      "source_path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 94,
+      "path": "/apostilas/amniorrexe-prematura/",
+      "source_path": "apostilas/amniorrexe-prematura/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 99,
+      "path": "/apostilas/trabalho-parto-prematuro/",
+      "source_path": "apostilas/trabalho-parto-prematuro/content.json",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 119,
+      "path": "/apostilas/planejamento-reprodutivo-contracepcao/",
+      "source_path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 124,
+      "path": "/apostilas/sangramento-uterino-anormal/",
+      "source_path": "apostilas/sangramento-uterino-anormal/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 129,
+      "path": "/apostilas/amenorreia/",
+      "source_path": "apostilas/amenorreia/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 134,
+      "path": "/apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/",
+      "source_path": "apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 144,
+      "path": "/apostilas/climaterio-menopausa/",
+      "source_path": "apostilas/climaterio-menopausa/content.json",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 149,
+      "path": "/apostilas/infeccoes-sexualmente-transmissiveis/",
+      "source_path": "apostilas/infeccoes-sexualmente-transmissiveis/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 154,
+      "path": "/apostilas/cervicites-doenca-inflamatoria-pelvica/",
+      "source_path": "apostilas/cervicites-doenca-inflamatoria-pelvica/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 159,
+      "path": "/apostilas/cancer-colo-utero-hpv/",
+      "source_path": "apostilas/cancer-colo-utero-hpv/content.json",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 164,
+      "path": "/apostilas/cancer-colo-utero-hpv/",
+      "source_path": "apostilas/cancer-colo-utero-hpv/content.json",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 167,
+      "path": "/apostilas/cancer-de-mama/",
+      "source_path": "apostilas/cancer-de-mama/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 169,
+      "path": "/apostilas/cancer-de-mama/",
+      "source_path": "apostilas/cancer-de-mama/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    },
+    {
+      "theme_id": 211,
+      "path": "/apostilas/sangramento-uterino-anormal/",
+      "source_path": "apostilas/sangramento-uterino-anormal/index.html",
+      "coverage": "parcial — correspondência candidata, integralidade não verificada",
+      "enabled": false,
+      "requires": "auditoria de cobertura e teste de acesso do aluno"
+    }
+  ]
+}

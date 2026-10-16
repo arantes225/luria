@@ -1,0 +1,54 @@
+{
+  "topic_id": 3,
+  "status": "planejamento_sem_candidatas_verificadas",
+  "images": [],
+  "visual_needs": [
+    {
+      "key": "assistencia-recem-nascido-sala-parto-planejamento-1",
+      "description": "Diagrama original de circulação fetal e neonatal",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "assistencia-recem-nascido-sala-parto-planejamento-2",
+      "description": "Sequência original de transição respiratória",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "assistencia-recem-nascido-sala-parto-planejamento-3",
+      "description": "Checklist ilustrado de equipamentos",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "assistencia-recem-nascido-sala-parto-planejamento-4",
+      "description": "Fluxo original de avaliação inicial",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    }
+  ],
+  "admin_importable": false,
+  "notes": [
+    "Necessidades não são candidatas prontas para o Admin.",
+    "Buscar recursos aprovados antes de solicitar imagens novas.",
+    "Não inserir clínica/exames sem licença, proveniência e aprovação.",
+    "Aplicar teto operacional do fluxo de lote: 110 KiB após aprovação; resolver divergência histórica com outros limites antes de otimizar."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": 2,
+  "slug": "avaliacao-pre-operatoria-risco-cirurgico",
+  "area": "Cirurgia Geral",
+  "stage": "planejamento",
+  "phase_a_received": false,
+  "scientific_characters": 0,
+  "checkpoints": {
+    "inventory": true,
+    "plan": true,
+    "drive_comparison_complete": false,
+    "enamed_mapping": false,
+    "scientific_draft": false,
+    "sources_verified": false,
+    "images_approved": false,
+    "clinical_review": false,
+    "html_generated": false,
+    "validators_passed": false,
+    "human_approved": false
+  },
+  "pending": [
+    "arquivo científico Fase A",
+    "benchmark de escopo suficiente",
+    "matriz ENAMED",
+    "referências verificadas",
+    "conteúdo 60K útil",
+    "casos e questões",
+    "imagens",
+    "HTML e testes",
+    "revisão médica"
+  ],
+  "next_action": "Completar pré-requisitos e redigir/revisar capítulo a capítulo; preservar checkpoint ao concluir cada capítulo."
+}

@@ -1,0 +1,361 @@
+{
+  "slug": "inducao-do-trabalho-de-parto",
+  "source": "index.html",
+  "chars": 31269,
+  "deficit": 28731,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/inducao-do-trabalho-de-parto/index.html",
+  "sha256": "773e0f6acae2a8e612155a39ad8c498d214d4960392f39efc0e904e5ab24729a",
+  "html_sha256": "773e0f6acae2a8e612155a39ad8c498d214d4960392f39efc0e904e5ab24729a",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "O que precisa ficar automático"
+    },
+    {
+      "title": "1. Conceitos essenciais"
+    },
+    {
+      "title": "2. Antes de induzir: checklist obrigatório"
+    },
+    {
+      "title": "3. Índice de Bishop: como calcular e interpretar"
+    },
+    {
+      "title": "Como calcular? Some cinco achados do toque vaginal"
+    },
+    {
+      "title": "O que significam os parâmetros?"
+    },
+    {
+      "title": "Qual é o Bishop baixo e qual é o alto?"
+    },
+    {
+      "title": "4. Indicações: quando terminar é mais seguro que esperar"
+    },
+    {
+      "title": "Macrossomia suspeita isolada não é sinônimo de indução obrigatória"
+    },
+    {
+      "title": "5. Contraindicações: pense em contraindicação ao parto vaginal"
+    },
+    {
+      "title": "Contraindicações fortes"
+    },
+    {
+      "title": "O que NÃO deve ser colocado automaticamente como contraindicação absoluta"
+    },
+    {
+      "title": "6. Como escolher o método"
+    },
+    {
+      "title": "7. Misoprostol"
+    },
+    {
+      "title": "Esquema de baixa dose"
+    },
+    {
+      "title": "Quando não repetir a dose"
+    },
+    {
+      "title": "Intervalo para ocitocina"
+    },
+    {
+      "title": "Cesárea prévia"
+    },
+    {
+      "title": "8. Métodos mecânicos: Foley e balão duplo"
+    },
+    {
+      "title": "Como reconhecer os dispositivos?"
+    },
+    {
+      "title": "Foley de balão único: passo a passo conceitual"
+    },
+    {
+      "title": "Balão duplo (Cook): o que muda?"
+    },
+    {
+      "title": "9. Ocitocina"
+    },
+    {
+      "title": "Estratégia de baixa dose"
+    },
+    {
+      "title": "Meta de atividade uterina"
+    },
+    {
+      "title": "Efeitos adversos"
+    },
+    {
+      "title": "Da dose em mU/min à bomba de infusão"
+    },
+    {
+      "title": "10. Amniotomia"
+    },
+    {
+      "title": "Antes de romper membranas"
+    },
+    {
+      "title": "11. Indução após cesárea prévia"
+    },
+    {
+      "title": "Cicatrizes de alto risco"
+    },
+    {
+      "title": "12. Monitorização durante a indução"
+    },
+    {
+      "title": "13. Complicações e manejo"
+    },
+    {
+      "title": "13.1 Taquissistolia"
+    },
+    {
+      "title": "13.2 Ruptura uterina"
+    },
+    {
+      "title": "13.3 Prolapso de cordão"
+    },
+    {
+      "title": "14. Quando chamar de falha de indução?"
+    },
+    {
+      "title": "15. Situações especiais"
+    },
+    {
+      "title": "15.1 Rotura de membranas a termo"
+    },
+    {
+      "title": "15.2 Pré-eclâmpsia"
+    },
+    {
+      "title": "15.3 Óbito fetal"
+    },
+    {
+      "title": "15.4 HIV"
+    },
+    {
+      "title": "16. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — 41+2 semanas, Bishop 3, sem cicatriz"
+    },
+    {
+      "title": "Caso 2 — 40 semanas, uma cesárea segmentar prévia, Bishop 2"
+    },
+    {
+      "title": "Caso 3 — Bishop 8, apresentação cefálica baixa"
+    },
+    {
+      "title": "Caso 4 — Ocitocina com 6 contrações/10 min e desacelerações"
+    },
+    {
+      "title": "Caso 5 — 4 cm após muitas horas de indução"
+    },
+    {
+      "title": "17. Revisão de alto rendimento"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "Método conforme colo e cicatriz"
+    },
+    {
+      "title": "Taquissistolia e falha de indução"
+    },
+    {
+      "title": "Decisões difíceis na indução — comparação entre métodos e avaliação de segurança"
+    },
+    {
+      "title": "Caso 1 — colo desfavorável, cesárea prévia e desejo de parto vaginal"
+    },
+    {
+      "title": "Caso 2 — Bishop favorável, mas apresentação alta e polidrâmnio"
+    },
+    {
+      "title": "Caso 3 — comparação mecânico versus prostaglandina"
+    },
+    {
+      "title": "Caso 4 — taquissistolia durante infusão de ocitocina"
+    },
+    {
+      "title": "Caso 5 — 4 cm após muitas horas: falha de indução ou fase latente?"
+    },
+    {
+      "title": "Caso 6 — termo com ruptura de membranas e corioamnionite suspeita"
+    },
+    {
+      "title": "Quadro de segurança: quais decisões exigem resposta imediata?"
+    },
+    {
+      "title": "Referências principais"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Bishop e escolha do amadurecimento"
+    },
+    {
+      "title": "Ocitocina, taquissistolia e monitorização"
+    },
+    {
+      "title": "Quando falar em falha de indução"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Bishop e escolha racional"
+    },
+    {
+      "title": "Ocitocina e taquissistolia"
+    },
+    {
+      "title": "Falha versus latência"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1105
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos essenciais",
+      "chars": 630
+    },
+    {
+      "id": "antes",
+      "title": "2. Antes de induzir: checklist obrigatório",
+      "chars": 713
+    },
+    {
+      "id": "bishop",
+      "title": "3. Índice de Bishop: como calcular e interpretar",
+      "chars": 3069
+    },
+    {
+      "id": "indicacoes",
+      "title": "4. Indicações: quando terminar é mais seguro que esperar",
+      "chars": 1142
+    },
+    {
+      "id": "contraindicacoes",
+      "title": "5. Contraindicações: pense em contraindicação ao parto vaginal",
+      "chars": 986
+    },
+    {
+      "id": "metodos",
+      "title": "6. Como escolher o método",
+      "chars": 459
+    },
+    {
+      "id": "misoprostol",
+      "title": "7. Misoprostol",
+      "chars": 1074
+    },
+    {
+      "id": "balao",
+      "title": "8. Métodos mecânicos: Foley e balão duplo",
+      "chars": 2959
+    },
+    {
+      "id": "ocitocina",
+      "title": "9. Ocitocina",
+      "chars": 1776
+    },
+    {
+      "id": "amniotomia",
+      "title": "10. Amniotomia",
+      "chars": 584
+    },
+    {
+      "id": "cesarea-previa",
+      "title": "11. Indução após cesárea prévia",
+      "chars": 790
+    },
+    {
+      "id": "monitorizacao",
+      "title": "12. Monitorização durante a indução",
+      "chars": 543
+    },
+    {
+      "id": "complicacoes",
+      "title": "13. Complicações e manejo",
+      "chars": 2325
+    },
+    {
+      "id": "falha",
+      "title": "14. Quando chamar de falha de indução?",
+      "chars": 941
+    },
+    {
+      "id": "situacoes",
+      "title": "15. Situações especiais",
+      "chars": 923
+    },
+    {
+      "id": "casos",
+      "title": "16. Casos clínicos integradores",
+      "chars": 1091
+    },
+    {
+      "id": "revisao",
+      "title": "17. Revisão de alto rendimento",
+      "chars": 928
+    },
+    {
+      "id": "editorial-depth-inducao-do-trabalho-de-parto",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 725
+    },
+    {
+      "id": "inducoes-casos-avancados-2026",
+      "title": "Decisões difíceis na indução — comparação entre métodos e avaliação de segurança",
+      "chars": 7285
+    },
+    {
+      "id": "referencias",
+      "title": "Referências principais",
+      "chars": 404
+    },
+    {
+      "id": "luria-livro-etiologias-inducao-do-trabalho-de-parto",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 1426
+    },
+    {
+      "id": "capitulos-livro-inducao-do-trabalho-de-parto",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 878
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12884-022-05035-w/MediaObjects/12884_2022_5035_Fig4_HTML.png",
+    "https://link.springer.com/article/10.1186/s12884-022-05035-w/figures/4",
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://www.cookmedical.com/patient-resources/induced-labor/cook-offers-solutions-for-inducing-labor/",
+    "https://www.alodokter.com/ruptur-uteri",
+    "https://medical.uworld.com/library/obstetrics/158/preterm-prelabor-rupture-of-membranes/",
+    "https://www.who.int/publications/i/item/9789240055780",
+    "https://www.nice.org.uk/guidance/ng207/chapter/Recommendations",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "https://www.gov.br/ebserh-/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PR_215_Inducao_tabalho_parto_V01.pdf",
+    "https://www.who.int/publications/i/item/9789240052796",
+    "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/ans-divulga-relatorio-sobre-parto-adequado/Parto_Adequado_Estratgias_de_Qualificao_da_Jornada_da_Gestante_r14.pdf"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

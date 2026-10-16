@@ -1,0 +1,348 @@
+{
+  "totals": {
+    "apostilas": 26,
+    "htmlBytes": 2313383,
+    "withWarnings": 23,
+    "sharedCss": 5
+  },
+  "metrics": [
+    {
+      "apostila": "alteracoes-fisiologicas-da-gestacao",
+      "format": "html",
+      "htmlBytes": 112023,
+      "contentChars": 81638,
+      "heads": 127,
+      "images": 0,
+      "tables": 14,
+      "warnings": [
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "amenorreia",
+      "format": "html",
+      "htmlBytes": 115242,
+      "contentChars": 85055,
+      "heads": 95,
+      "images": 1,
+      "tables": 12,
+      "warnings": []
+    },
+    {
+      "apostila": "amniorrexe-prematura",
+      "format": "html",
+      "htmlBytes": 108037,
+      "contentChars": 71277,
+      "heads": 80,
+      "images": 0,
+      "tables": 16,
+      "warnings": [
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "assistencia-ao-parto",
+      "format": "html",
+      "htmlBytes": 86888,
+      "contentChars": 47356,
+      "heads": 88,
+      "images": 3,
+      "tables": 12,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "avaliacao-vitalidade-fetal",
+      "format": "html",
+      "htmlBytes": 73184,
+      "contentChars": 46546,
+      "heads": 83,
+      "images": 1,
+      "tables": 13,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "cancer-colo-utero-hpv",
+      "format": "content-json",
+      "htmlBytes": 70285,
+      "contentChars": 57363,
+      "heads": 21,
+      "images": 0,
+      "tables": 0,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem"
+      ]
+    },
+    {
+      "apostila": "cancer-de-mama",
+      "format": "html",
+      "htmlBytes": 92043,
+      "contentChars": 61609,
+      "heads": 85,
+      "images": 8,
+      "tables": 10,
+      "warnings": [
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "cervicites-doenca-inflamatoria-pelvica",
+      "format": "html",
+      "htmlBytes": 91875,
+      "contentChars": 51772,
+      "heads": 75,
+      "images": 3,
+      "tables": 10,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "ciclo-menstrual-eixo-hho",
+      "format": "html",
+      "htmlBytes": 83814,
+      "contentChars": 53645,
+      "heads": 79,
+      "images": 1,
+      "tables": 4,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "complicacoes_e_seguimento",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "climaterio-menopausa",
+      "format": "content-json",
+      "htmlBytes": 64179,
+      "contentChars": 51124,
+      "heads": 23,
+      "images": 0,
+      "tables": 1,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas"
+      ]
+    },
+    {
+      "apostila": "crescimento-intrauterino-reduzido-aumentado",
+      "format": "html",
+      "htmlBytes": 80208,
+      "contentChars": 55232,
+      "heads": 83,
+      "images": 1,
+      "tables": 7,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "diabetes-mellitus-gestacional",
+      "format": "html",
+      "htmlBytes": 101849,
+      "contentChars": 52887,
+      "heads": 106,
+      "images": 0,
+      "tables": 7,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "hemorragias-primeiro-terceiro-trimestre",
+      "format": "html",
+      "htmlBytes": 96952,
+      "contentChars": 57039,
+      "heads": 90,
+      "images": 0,
+      "tables": 10,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "inducao-do-trabalho-de-parto",
+      "format": "html",
+      "htmlBytes": 61996,
+      "contentChars": 33036,
+      "heads": 66,
+      "images": 1,
+      "tables": 8,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "infeccoes-gestacao-transmissao-vertical",
+      "format": "html",
+      "htmlBytes": 108317,
+      "contentChars": 62314,
+      "heads": 151,
+      "images": 2,
+      "tables": 8,
+      "warnings": [
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "infeccoes-sexualmente-transmissiveis",
+      "format": "html",
+      "htmlBytes": 122633,
+      "contentChars": 67985,
+      "heads": 132,
+      "images": 8,
+      "tables": 17,
+      "warnings": [
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "infertilidade-conjugal",
+      "format": "html",
+      "htmlBytes": 90468,
+      "contentChars": 51243,
+      "heads": 92,
+      "images": 1,
+      "tables": 7,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "planejamento-reprodutivo-contracepcao",
+      "format": "html",
+      "htmlBytes": 79945,
+      "contentChars": 41884,
+      "heads": 87,
+      "images": 0,
+      "tables": 4,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "pre-natal-baixo-risco",
+      "format": "html",
+      "htmlBytes": 121463,
+      "contentChars": 70193,
+      "heads": 46,
+      "images": 0,
+      "tables": 9,
+      "warnings": [
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "sangramento-uterino-anormal",
+      "format": "html",
+      "htmlBytes": 72047,
+      "contentChars": 54922,
+      "heads": 84,
+      "images": 1,
+      "tables": 6,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "sexualidade",
+      "format": "html",
+      "htmlBytes": 75999,
+      "contentChars": 37329,
+      "heads": 73,
+      "images": 0,
+      "tables": 5,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "sexualidade-masculina",
+      "format": "html",
+      "htmlBytes": 71378,
+      "contentChars": 36970,
+      "heads": 31,
+      "images": 0,
+      "tables": 5,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "sindrome-ovariana-metabolica-poliendocrina-somp",
+      "format": "html",
+      "htmlBytes": 59282,
+      "contentChars": 30609,
+      "heads": 57,
+      "images": 1,
+      "tables": 2,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "sindromes-hipertensivas-da-gestacao",
+      "format": "html",
+      "htmlBytes": 93010,
+      "contentChars": 56339,
+      "heads": 85,
+      "images": 0,
+      "tables": 12,
+      "warnings": [
+        "conteudo_abaixo_60k_triagem",
+        "referencias_nao_padronizadas",
+        "css_legado"
+      ]
+    },
+    {
+      "apostila": "trabalho-parto-prematuro",
+      "format": "content-json",
+      "htmlBytes": 76755,
+      "contentChars": 63818,
+      "heads": 25,
+      "images": 0,
+      "tables": 0,
+      "warnings": []
+    },
+    {
+      "apostila": "vulvovaginites",
+      "format": "html",
+      "htmlBytes": 103511,
+      "contentChars": 70495,
+      "heads": 58,
+      "images": 4,
+      "tables": 8,
+      "warnings": []
+    }
+  ]
+}
+

@@ -1,0 +1,289 @@
+{
+  "slug": "sindrome-ovariana-metabolica-poliendocrina-somp",
+  "source": "index.html",
+  "chars": 28600,
+  "deficit": 31400,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html",
+  "sha256": "9b202cc10fd46a359877d63ecfe7e54c5c2ce03180bad284f25217eda7d98279",
+  "html_sha256": "9b202cc10fd46a359877d63ecfe7e54c5c2ce03180bad284f25217eda7d98279",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "Diagnóstico"
+    },
+    {
+      "title": "Metabólico"
+    },
+    {
+      "title": "Sem desejo gestacional"
+    },
+    {
+      "title": "Com desejo gestacional"
+    },
+    {
+      "title": "1. Conceito e terminologia"
+    },
+    {
+      "title": "2. Fisiopatologia"
+    },
+    {
+      "title": "Resistência à insulina e hiperinsulinemia"
+    },
+    {
+      "title": "Eixo hipotálamo–hipófise–ovário"
+    },
+    {
+      "title": "Disfunção folicular"
+    },
+    {
+      "title": "3. Manifestações clínicas"
+    },
+    {
+      "title": "4. Diagnóstico"
+    },
+    {
+      "title": "Adultas: 2 de 3 critérios"
+    },
+    {
+      "title": "Hiperandrogenismo bioquímico"
+    },
+    {
+      "title": "Ultrassonografia e AMH"
+    },
+    {
+      "title": "Adolescentes"
+    },
+    {
+      "title": "Regra diagnóstica"
+    },
+    {
+      "title": "Avaliação laboratorial de exclusão"
+    },
+    {
+      "title": "Adolescência: evitar transformar maturação normal em doença"
+    },
+    {
+      "title": "4.1. Raciocínio diagnóstico na SOMP: cinco situações em que o exame isolado engana"
+    },
+    {
+      "title": "Caso 1 — 16 anos, dois anos após a menarca e ovários multifoliculares"
+    },
+    {
+      "title": "Caso 2 — exames de andrógeno enquanto toma anticoncepcional combinado"
+    },
+    {
+      "title": "Caso 3 — menstruação aparentemente regular e suspeita de anovulação"
+    },
+    {
+      "title": "Caso 4 — mulher com peso dentro da faixa esperada e glicemia normal"
+    },
+    {
+      "title": "Caso 5 — hirsutismo, amenorreia e desejo de gestar"
+    },
+    {
+      "title": "Além dos ovários: saúde mental, sono e endométrio"
+    },
+    {
+      "title": "5. Diagnóstico diferencial"
+    },
+    {
+      "title": "6. Risco metabólico e cardiovascular"
+    },
+    {
+      "title": "Rastreamento"
+    },
+    {
+      "title": "O que avaliar na prática"
+    },
+    {
+      "title": "7. Tratamento"
+    },
+    {
+      "title": "Estilo de vida"
+    },
+    {
+      "title": "Anticoncepcionais hormonais combinados"
+    },
+    {
+      "title": "Proteção endometrial"
+    },
+    {
+      "title": "Metformina"
+    },
+    {
+      "title": "Antiandrogênios"
+    },
+    {
+      "title": "Agonistas de GLP-1"
+    },
+    {
+      "title": "8. Infertilidade e indução de ovulação"
+    },
+    {
+      "title": "Letrozol: primeira linha"
+    },
+    {
+      "title": "Alternativas e escalonamento"
+    },
+    {
+      "title": "9. Complicações e seguimento"
+    },
+    {
+      "title": "Questões de fixação"
+    },
+    {
+      "title": "10. Aprofundamento: PMOS como síndrome reprodutiva, metabólica e longitudinal"
+    },
+    {
+      "title": "Por que a resistência à insulina amplifica o hiperandrogenismo?"
+    },
+    {
+      "title": "Fenótipos importam, mas não substituem avaliação de risco"
+    },
+    {
+      "title": "Endométrio: por que ciclos muito espaçados importam?"
+    },
+    {
+      "title": "Desejo gestacional: induzir ovulação não é o mesmo que “tratar toda infertilidade”"
+    },
+    {
+      "title": "Gestação e pós-parto"
+    },
+    {
+      "title": "Saúde mental, imagem corporal e excesso de tratamento"
+    },
+    {
+      "title": "Aprofundamento clínico por mecanismos e causas"
+    },
+    {
+      "title": "Diagnóstico diferencial completo"
+    },
+    {
+      "title": "Terapêutica por objetivo"
+    },
+    {
+      "title": "Seguimento metabólico"
+    },
+    {
+      "title": "Referências prioritárias"
+    },
+    {
+      "title": "Estudo aprofundado por mecanismo e etiologia"
+    },
+    {
+      "title": "Eixo neuroendócrino e hiperandrogenismo"
+    },
+    {
+      "title": "Exames que mudam o diagnóstico"
+    },
+    {
+      "title": "Endométrio, infertilidade e metabolismo"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 904
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 529
+    },
+    {
+      "id": "conceito",
+      "title": "1. Conceito e terminologia",
+      "chars": 988
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia",
+      "chars": 1481
+    },
+    {
+      "id": "clinica",
+      "title": "3. Manifestações clínicas",
+      "chars": 725
+    },
+    {
+      "id": "diagnostico",
+      "title": "4. Diagnóstico",
+      "chars": 3254
+    },
+    {
+      "id": "casos-decisao-somp-2026",
+      "title": "4.1. Raciocínio diagnóstico na SOMP: cinco situações em que o exame isolado engana",
+      "chars": 6461
+    },
+    {
+      "id": "diferencial",
+      "title": "5. Diagnóstico diferencial",
+      "chars": 817
+    },
+    {
+      "id": "metabolico",
+      "title": "6. Risco metabólico e cardiovascular",
+      "chars": 939
+    },
+    {
+      "id": "tratamento",
+      "title": "7. Tratamento",
+      "chars": 2904
+    },
+    {
+      "id": "fertilidade",
+      "title": "8. Infertilidade e indução de ovulação",
+      "chars": 1406
+    },
+    {
+      "id": "seguimento",
+      "title": "9. Complicações e seguimento",
+      "chars": 799
+    },
+    {
+      "id": "questoes",
+      "title": "Questões de fixação",
+      "chars": 1214
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "10. Aprofundamento: PMOS como síndrome reprodutiva, metabólica e longitudinal",
+      "chars": 3703
+    },
+    {
+      "id": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 1244
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 838
+    },
+    {
+      "id": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "chars": 2120
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://commons.wikimedia.org/wiki/File:Polycystic_ovary.jpg",
+    "https://www.monash.edu/medicine/mchri/pcos/guideline",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-from-the-2023-international-evidence-based-guideline-for-the-assessment-and-management-of-polyendocrine-metabolic-ovarian-syndrome-2023/",
+    "https://www.monash.edu/__data/assets/pdf_file/0009/4360095/Updated-PMOS-Guideline-12-June26.pdf"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

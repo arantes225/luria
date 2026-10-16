@@ -1,0 +1,387 @@
+{
+  "slug": "hemorragias-primeiro-terceiro-trimestre",
+  "source": "index.html",
+  "chars": 53736,
+  "deficit": 6264,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+  "sha256": "bdfa347ea85380bccbcee94e0d0f1caf259a6ed35ad26e046ab5699ae0752551",
+  "html_sha256": "bdfa347ea85380bccbcee94e0d0f1caf259a6ed35ad26e046ab5699ae0752551",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "1º trimestre"
+    },
+    {
+      "title": "3º trimestre"
+    },
+    {
+      "title": "Perguntas imediatas"
+    },
+    {
+      "title": "Decisão"
+    },
+    {
+      "title": "1. Abordagem inicial: gravidade antes da etiologia"
+    },
+    {
+      "title": "Mãe"
+    },
+    {
+      "title": "Feto"
+    },
+    {
+      "title": "Se o sangramento for importante"
+    },
+    {
+      "title": "História dirigida"
+    },
+    {
+      "title": "2. Hemorragias do 1º trimestre"
+    },
+    {
+      "title": "Ameaça de abortamento: o que muda a conduta?"
+    },
+    {
+      "title": "Hematoma subcoriônico"
+    },
+    {
+      "title": "Abortamento infectado: reconhecer antes da sepse"
+    },
+    {
+      "title": "Critérios ultrassonográficos: onde não se pode errar"
+    },
+    {
+      "title": "Quando repetir a ultrassonografia?"
+    },
+    {
+      "title": "Abortamento confirmado: três estratégias"
+    },
+    {
+      "title": "Como escolher entre expectante, medicamento e aspiração?"
+    },
+    {
+      "title": "Imunoprofilaxia anti-D"
+    },
+    {
+      "title": "3. Gestação ectópica e gestação de localização desconhecida"
+    },
+    {
+      "title": "Gestação de localização desconhecida (PUL)"
+    },
+    {
+      "title": "Dinâmica do β-hCG: interpretar tendência sem transformar números em diagnóstico"
+    },
+    {
+      "title": "Conduta expectante"
+    },
+    {
+      "title": "Metotrexato: monitorização importa tanto quanto a dose"
+    },
+    {
+      "title": "Cirurgia: salpingectomia ou salpingostomia?"
+    },
+    {
+      "title": "Quando operar sem esperar série laboratorial"
+    },
+    {
+      "title": "Metotrexato: para quem ele é opção?"
+    },
+    {
+      "title": "4. Doença trofoblástica gestacional"
+    },
+    {
+      "title": "Conduta e seguimento"
+    },
+    {
+      "title": "Depois do esvaziamento: o hCG é uma curva, não um exame de alta"
+    },
+    {
+      "title": "5. Hemorragias do 3º trimestre: separar padrões sem confiar demais no “clássico”"
+    },
+    {
+      "title": "Placenta prévia e placenta de inserção baixa"
+    },
+    {
+      "title": "Espectro de placenta acreta: quando a placenta prévia muda de categoria de risco"
+    },
+    {
+      "title": "Paciente estável e pré-termo: o que fazer enquanto se espera?"
+    },
+    {
+      "title": "6. Descolamento prematuro de placenta (DPP)"
+    },
+    {
+      "title": "Fatores de risco"
+    },
+    {
+      "title": "Diagnóstico é clínico"
+    },
+    {
+      "title": "Laboratório e coagulopatia"
+    },
+    {
+      "title": "Por que o fibrinogênio é tão útil?"
+    },
+    {
+      "title": "Útero de Couvelaire"
+    },
+    {
+      "title": "Via de parto"
+    },
+    {
+      "title": "7. Vasa prévia e rotura uterina"
+    },
+    {
+      "title": "Vasa prévia"
+    },
+    {
+      "title": "Quem merece rastreamento dirigido para vasa prévia?"
+    },
+    {
+      "title": "Rotura uterina"
+    },
+    {
+      "title": "8. Hemorragia grave, transfusão e quando pular etapas"
+    },
+    {
+      "title": "Reanimação hemostática: pensar além de “dar soro”"
+    },
+    {
+      "title": "Índice de choque obstétrico"
+    },
+    {
+      "title": "Segurança clínica: cinco hemorragias parecidas com condutas diferentes"
+    },
+    {
+      "title": "1. Descolamento prematuro de placenta: o ultrassom normal não encerra o caso"
+    },
+    {
+      "title": "2. Placenta prévia: antes de examinar o colo, localize a placenta"
+    },
+    {
+      "title": "3. Placenta prévia anterior e cicatriz de cesárea: suspeitar do espectro acreta"
+    },
+    {
+      "title": "4. Vasa prévia: sangramento pequeno na mãe pode ser grande para o feto"
+    },
+    {
+      "title": "5. Primeira metade: repetir exame para proteger gravidez desejada"
+    },
+    {
+      "title": "9. Casos integradores"
+    },
+    {
+      "title": "Caso 1 — 7 semanas, saco pequeno sem batimento"
+    },
+    {
+      "title": "Caso 2 — PUL com dor unilateral"
+    },
+    {
+      "title": "Caso 3 — 32 semanas, sangue vivo sem dor"
+    },
+    {
+      "title": "Caso 4 — 36 semanas, dor e hipertonia com bradicardia"
+    },
+    {
+      "title": "Caso 5 — sangramento após amniorrexe, mãe estável"
+    },
+    {
+      "title": "Caso 6 — DPP com óbito fetal"
+    },
+    {
+      "title": "Caso 7 — febre após abortamento incompleto"
+    },
+    {
+      "title": "Caso 8 — placenta prévia anterior + duas cesáreas"
+    },
+    {
+      "title": "10. Revisão de alto rendimento"
+    },
+    {
+      "title": "11. Aprofundamento: hemorragia obstétrica como problema de tempo e fisiologia"
+    },
+    {
+      "title": "Choque pode estar subestimado"
+    },
+    {
+      "title": "Fibrinogênio e coagulopatia"
+    },
+    {
+      "title": "Placenta acreta: diagnóstico muda logística"
+    },
+    {
+      "title": "Ectópica não é apenas tubária ampular"
+    },
+    {
+      "title": "Doença trofoblástica"
+    },
+    {
+      "title": "Aprofundamento clínico por mecanismos e causas"
+    },
+    {
+      "title": "Primeiro trimestre: localização e viabilidade"
+    },
+    {
+      "title": "Terceiro trimestre: placenta e útero"
+    },
+    {
+      "title": "12. Hemorragias da primeira metade da gravidez — mecanismos, exames e decisões"
+    },
+    {
+      "title": "12.1 Por que um saco gestacional pequeno não confirma perda gestacional"
+    },
+    {
+      "title": "12.2 β-hCG seriado não localiza a gestação sozinho"
+    },
+    {
+      "title": "12.3 O mecanismo da gestação ectópica e a urgência hemorrágica"
+    },
+    {
+      "title": "12.4 Abortamento: explicar as diferenças entre abordagens"
+    },
+    {
+      "title": "13. Hemorragias do terceiro trimestre — placenta, circulação e urgência obstétrica"
+    },
+    {
+      "title": "13.1 Placenta prévia e a relação entre implantação e sangramento"
+    },
+    {
+      "title": "13.2 Descolamento prematuro da placenta: um problema de separação e coagulação"
+    },
+    {
+      "title": "13.3 Vasa prévia: pequeno volume de sangue materno pode significar perda fetal grave"
+    },
+    {
+      "title": "13.4 A rotura uterina não depende de sangramento vaginal exuberante"
+    },
+    {
+      "title": "13.5 Prioridade na hemorragia: fisiologia do choque antes da quantificação perfeita"
+    },
+    {
+      "title": "Referências essenciais"
+    },
+    {
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta"
+    },
+    {
+      "title": "Gestação de localização desconhecida: não intervir antes de localizar"
+    },
+    {
+      "title": "Abortamento: três abordagens são alternativas, não sinônimos"
+    },
+    {
+      "title": "Terceiro trimestre: placenta prévia, DPP, vasa prévia e rotura"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1765
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 507
+    },
+    {
+      "id": "abordagem",
+      "title": "1. Abordagem inicial: gravidade antes da etiologia",
+      "chars": 1939
+    },
+    {
+      "id": "primeiro-trimestre",
+      "title": "2. Hemorragias do 1º trimestre",
+      "chars": 7272
+    },
+    {
+      "id": "ectopica",
+      "title": "3. Gestação ectópica e gestação de localização desconhecida",
+      "chars": 3958
+    },
+    {
+      "id": "dtg",
+      "title": "4. Doença trofoblástica gestacional",
+      "chars": 1723
+    },
+    {
+      "id": "terceiro-trimestre",
+      "title": "5. Hemorragias do 3º trimestre: separar padrões sem confiar demais no “clássico”",
+      "chars": 2807
+    },
+    {
+      "id": "dpp",
+      "title": "6. Descolamento prematuro de placenta (DPP)",
+      "chars": 2537
+    },
+    {
+      "id": "vasa-rotura",
+      "title": "7. Vasa prévia e rotura uterina",
+      "chars": 1866
+    },
+    {
+      "id": "hemorragia-grave",
+      "title": "8. Hemorragia grave, transfusão e quando pular etapas",
+      "chars": 1974
+    },
+    {
+      "id": "decisoes-hemorragicas-2026",
+      "title": "Segurança clínica: cinco hemorragias parecidas com condutas diferentes",
+      "chars": 6537
+    },
+    {
+      "id": "casos",
+      "title": "9. Casos integradores",
+      "chars": 1923
+    },
+    {
+      "id": "revisao",
+      "title": "10. Revisão de alto rendimento",
+      "chars": 1591
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "11. Aprofundamento: hemorragia obstétrica como problema de tempo e fisiologia",
+      "chars": 2407
+    },
+    {
+      "id": "editorial-depth-hemorragias-primeiro-terceiro-trimestre",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 937
+    },
+    {
+      "id": "hemorragias-livro-40k",
+      "title": "12. Hemorragias da primeira metade da gravidez — mecanismos, exames e decisões",
+      "chars": 13823
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 1302
+    },
+    {
+      "id": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "chars": 1919
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12411817/",
+    "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2018/12/placenta-accreta-spectrum",
+    "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/placenta-praevia-placenta-accreta-and-vasa-praevia/",
+    "https://www.nice.org.uk/guidance/ng126/chapter/recommendations"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}
