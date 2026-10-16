@@ -87,6 +87,80 @@ window.supabaseClient = window.supabase.createClient(
   }
 );
 
+
+/* Sitewide image upload cap and low-resolution review signal. */
+(() => {
+  const client = window.supabaseClient;
+  if (!client?.storage || client.storage.__luriaImageGuard) return;
+  const CAP = 80 * 1024;
+  const originalFrom = client.storage.from.bind(client.storage);
+  const imageExtensions = /\\.(avif|gif|jpe?g|png|svg|webp|bmp|tiff?)$/i;
+
+  async function prepareImage(file) {
+    if (!file?.type?.startsWith("image/")) return { file, width: null, height: null };
+    let bitmap;
+    try { bitmap = await createImageBitmap(file); }
+    catch { if (file.size > CAP) throw new Error("Não foi possível preparar esta imagem para até 80 KB."); return { file, width: null, height: null }; }
+    const originalWidth = bitmap.width, originalHeight = bitmap.height;
+    const candidates = [];
+    const maxDimension = Math.min(1600, Math.max(originalWidth, originalHeight));
+    const scales = [1, .85, .7, .55, .42, .3, .22, .16, .12];
+    for (const scaleFactor of scales) {
+      const scale = Math.min(scaleFactor, maxDimension / Math.max(originalWidth, originalHeight));
+      const width = Math.max(1, Math.round(originalWidth * scale));
+      const height = Math.max(1, Math.round(originalHeight * scale));
+      const canvas = document.createElement("canvas");
+      canvas.width = width; canvas.height = height;
+      const context = canvas.getContext("2d", { alpha: true });
+      context.imageSmoothingEnabled = true;
+      context.imageSmoothingQuality = "high";
+      context.drawImage(bitmap, 0, 0, width, height);
+      for (const quality of [.86, .76, .66, .56, .46, .36, .28]) {
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/webp", quality));
+        if (blob) candidates.push({ blob, width, height });
+      }
+    }
+    bitmap.close?.();
+    const best = candidates.find(item => item.blob.size <= CAP);
+    if (!best) throw new Error("Não foi possível reduzir a imagem para até 80 KB. Tente uma imagem mais simples.");
+    const base = String(file.name || "imagem").replace(/\\.[^.]+$/, "");
+    const optimized = new File([best.blob], base + ".webp", { type: "image/webp", lastModified: Date.now() });
+    return { file: optimized, width: best.width, height: best.height };
+  }
+
+  const baseFrom = originalFrom;
+  client.storage.from = bucket => {
+    const storageBucket = baseFrom(bucket);
+    const originalUpload = storageBucket.upload.bind(storageBucket);
+    storageBucket.upload = async (path, body, options = {}) => {
+      const prepared = await prepareImage(body);
+      const finalOptions = prepared.file !== body
+        ? { ...options, contentType: "image/webp" }
+        : options;
+      const result = await originalUpload(path, prepared.file, finalOptions);
+      if (result.error) return result;
+      if (prepared.width !== null && Math.min(prepared.width, prepared.height) < 600) {
+        const page = (location.pathname || "/").slice(0, 160);
+        const { error } = await client.rpc("queue_low_resolution_image", {
+          p_bucket_id: bucket,
+          p_object_name: result.data?.path || path,
+          p_width: prepared.width,
+          p_height: prepared.height,
+          p_size_bytes: prepared.file.size,
+          p_source_page: page
+        });
+        if (error) {
+          await baseFrom(bucket).remove([result.data?.path || path]).catch(() => {});
+          throw new Error("A imagem foi enviada, mas não entrou na fila de revisão do Admin.");
+        }
+      }
+      return result;
+    };
+    return storageBucket;
+  };
+  client.storage.__luriaImageGuard = true;
+})();
+
 // Ownership is established by Auth, never by an unscoped legacy draft.
 (() => {
   let ownerId = null, epoch = 0, authRevision = 0;
