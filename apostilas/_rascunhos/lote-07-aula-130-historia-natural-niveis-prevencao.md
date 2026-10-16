@@ -652,3 +652,90 @@ A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais d
 - [ ] Fazer teste independente de questões e de autossuficiência integral; integrar HTML e validar PWA após aprovação.
 **Situação: rascunho com ampliação de conteúdo próprio, NÃO certificado/público.**
 
+
+## 18B. Auditoria metodológica aplicada — não confundir história natural, risco e desenho de estudo
+
+O estudo da história natural de uma doença depende de observações ao longo do tempo, mas **nenhum desenho isolado revela automaticamente a sequência causal completa**. Uma coorte permite acompanhar pessoas inicialmente classificadas por exposição e estimar incidência; um caso-controle parte de pessoas com e sem o desfecho para investigar exposições anteriores; um transversal mede exposição e desfecho em uma janela de observação. Esses desenhos respondem perguntas distintas e podem sofrer vieses distintos. Esta seção aprofunda **como inferir temporalidade**, sem substituir a aula própria de epidemiologia clínica.
+
+### 18B.1. Cinco erros de interpretação que alteram decisões preventivas
+
+| Afirmação tentadora | Por que está errada ou incompleta | Formulação rigorosa |
+|---|---|---|
+| “Coorte prova causalidade porque acompanha pessoas” | Temporalidade ajuda, mas confundimento, perdas de seguimento, erros de aferição e causalidade reversa ainda podem distorcer associações | Coorte é especialmente útil para estimar incidência e estudar sequência exposição→desfecho; inferência causal exige avaliação crítica adicional |
+| “Caso-controle calcula diretamente risco relativo” | Amostragem condicionada ao desfecho geralmente impede recuperar riscos absolutos sem informações adicionais | Odds ratio é a medida típica; aproximação ao risco relativo exige condições e ressalvas específicas |
+| “Estudo transversal prova que a exposição veio antes da doença” | Exposição e desfecho costumam ser aferidos no mesmo recorte | É útil para prevalência e planejamento; temporalidade pode permanecer incerta |
+| “Queda de mortalidade após campanha prova que a campanha causou a queda” | Tendências seculares, mudança de codificação, acesso assistencial e outras intervenções podem explicar parte do efeito | Usar comparador adequado, série temporal/intervenção e avaliação de implementação quando possível |
+| “Se o rastreamento aumentou a sobrevida desde o diagnóstico, evitou mortes” | Antecipação diagnóstica e sobrediagnóstico aumentam sobrevida aparente sem necessariamente alterar o momento do óbito | Priorizar mortalidade específica, mortalidade global quando pertinente e balanço benefício–dano; aprofundamento na aula 125 |
+
+**Exemplo numérico fictício:** numa coorte de 2.000 pessoas sem doença inicial, 1.000 expostas a fator ambiental tiveram 80 novos casos em cinco anos; 1.000 não expostas tiveram 40. Incidências cumulativas observadas: 80/1.000 = 8% e 40/1.000 = 4%. Risco relativo observado = 2; diferença absoluta de riscos = 4 pontos percentuais. Isso **não autoriza** afirmar que eliminar a exposição reduziria necessariamente quatro pontos percentuais: o efeito causal dependeria de comparabilidade entre grupos, confundidores, intervenções concomitantes, adesão e qualidade de dados. Também não se deve chamar a diferença de “quatro por cento de redução relativa”.
+
+**Exemplo de prevenção com decisão temporal:** uma pessoa apresenta doença cardiovascular estabelecida e recebe estatina para evitar outro evento. Na terminologia da cardiologia, costuma-se dizer **prevenção secundária cardiovascular**. Na classificação clássica de Leavell e Clark, medidas destinadas a limitar incapacidade/complicações em doença já estabelecida podem integrar **prevenção terciária**. A expressão correta depende do sistema de classificação explicitado; não há contradição clínica quando os referenciais são identificados.
+
+### 18B.2. Um roteiro para avaliar a qualidade de uma intervenção em saúde coletiva
+
+1. **Definir a população:** quem estava sob risco no início, quem ficou fora da amostra e qual é o território. Não extrapolar automaticamente de usuários que comparecem à UBS para toda a população adscrita.
+2. **Definir exposição e tempo zero:** início real da intervenção, período de latência plausível e o intervalo necessário para observar o desfecho. Uma política antitabagismo pode alterar consumo antes de modificar mortalidade por câncer.
+3. **Definir desfecho que importa:** casos novos, internações evitáveis, incapacidade, mortalidade, qualidade de vida, eventos adversos e desigualdade; número de testes realizados não equivale a benefício clínico.
+4. **Identificar comparação e vieses:** mudanças seculares, acesso, seleção, perdas, aferição, contaminação entre grupos e fatores sociais que afetam exposição e prognóstico.
+5. **Analisar equidade e execução:** cobertura por território e grupo, continuidade de cuidado, retorno de resultados, acesso a tratamento e efeitos não pretendidos. Uma ação pode elevar média de cobertura e ampliar desigualdades.
+6. **Traduzir para decisão:** magnitude absoluta do benefício, incerteza, custo de oportunidade e alternativas menos danosas. Não basta apresentar um valor de p ou um risco relativo sem risco basal.
+
+### Caso 11 — campanha territorial e inferência causal
+
+Uma UBS registra queda de 20% nas internações por exacerbação de asma depois de programa de redução de mofo e poluição intradomiciliar. No mesmo ano, houve inverno menos intenso e maior disponibilidade de medicamentos inalatórios.
+
+**Hipótese:** a intervenção ambiental pode ter contribuído, mas a simples comparação antes/depois não isola o efeito. **Raciocínio:** sazonalidade, tratamento concomitante e tendência prévia são explicações concorrentes. **Plano de avaliação:** comparar taxas padronizadas ao longo de vários períodos, documentar cobertura e implementação, usar territórios comparadores apropriados se viáveis e acompanhar danos/benefícios por vulnerabilidade. **Por que importa:** evidência de melhora observada é diferente de prova causal isolada.
+
+### Caso 12 — uma coorte e a interpretação errada de risco
+
+Estudo fictício acompanha 1.000 expostos e 1.000 não expostos por cinco anos, registrando 80 e 40 novos casos, respectivamente. Um aluno afirma que “a exposição aumenta em 4% a chance relativa de doença e sua eliminação evitará todos esses casos”.
+
+**Hipótese:** erro de interpretação de medida e de causalidade. **Cálculo:** riscos de 8% e 4%, razão de riscos 2 e diferença absoluta de 4 pontos percentuais. **Raciocínio:** o aumento relativo observado é de 100%, não 4%; a fração causal não foi estabelecida pela comparação bruta. **Conduta intelectual:** investigar confundidores, comparabilidade e desenho antes de atribuir efeito preventivo. **Por que importa:** prevenir decisões coletivas baseadas em percentuais mal interpretados.
+
+### Questão 17 — história natural e desenho de estudo
+
+Uma coorte acompanha pessoas sem doença no início e registra exposição e incidência ao longo de cinco anos. Qual afirmação é correta?
+
+A. A coorte prova causalidade independentemente de confundimento.
+B. A coorte permite estimar incidência e examinar temporalidade, mas exige avaliação de vieses para inferência causal.
+C. Coortes só podem estudar doenças já presentes no início.
+D. A razão de chances de caso-controle é sempre igual ao risco relativo, sem ressalvas.
+
+**Gabarito: B.** **A:** incorreta, pois confundimento e perdas podem afetar associação. **B:** correta, reconhece utilidade e limite. **C:** incorreta, incidência é uma finalidade clássica de coorte. **D:** incorreta, OR não equivale universalmente a RR. **Mini-revisão:** temporalidade é necessária para muitas inferências causais, mas não suficiente.
+
+### Questão 18 — interpretação de risco absoluto
+
+Em uma coorte fictícia, 80/1.000 expostos e 40/1.000 não expostos desenvolvem a doença. Qual alternativa descreve corretamente os resultados observados?
+
+A. RR = 2 e diferença absoluta = 4 pontos percentuais, sem demonstração automática de causalidade.
+B. RR = 4 e diferença absoluta = 2 pontos percentuais.
+C. RR = 0,5 e diferença absoluta = 40 pontos percentuais.
+D. Não é possível calcular incidência cumulativa em uma coorte.
+
+**Gabarito: A.** **A:** correta, 0,08/0,04 = 2 e 0,08 − 0,04 = 0,04. **B/C:** cálculos incorretos. **D:** incorreta, coortes permitem calcular incidência quando denominadores e seguimento são adequados. **Mini-revisão:** diferença absoluta em pontos percentuais não é variação relativa.
+
+### Questão 19 — prevenção e terminologia
+
+Paciente com infarto prévio recebe intervenção para reduzir novos eventos. A classificação “prevenção secundária” é comum em cardiologia, mas pode diferir da classificação clássica dos níveis de prevenção. A melhor interpretação é:
+
+A. Um dos referenciais precisa estar necessariamente errado.
+B. Toda intervenção após doença instalada é prevenção primordial.
+C. Deve-se explicitar o referencial: “secundária cardiovascular” designa evitar recorrência; na classificação clássica, limitar complicações de doença instalada aproxima-se de prevenção terciária.
+D. Níveis de atenção (UBS, hospital, UTI) definem automaticamente níveis de prevenção.
+
+**Gabarito: C.** **A:** incorreta, termos variam conforme referencial. **B:** incorreta, primordial atua antes da emergência de fatores de risco. **C:** correta. **D:** incorreta, níveis de atenção e prevenção são dimensões diferentes. **Mini-revisão:** identificar o referencial conceitual é parte da resposta.
+
+### Questão 20 — avaliação de intervenção territorial
+
+Após campanha de saúde ambiental, uma cidade registra queda de internações; no mesmo período houve mudança climática sazonal e expansão de acesso a medicamentos. Qual conclusão é mais adequada?
+
+A. A campanha foi a única causa demonstrada da queda.
+B. A sazonalidade é irrelevante quando há uma política pública.
+C. A queda observada invalida a necessidade de avaliar desigualdades.
+D. Atribuição causal exige considerar tendências, intervenções simultâneas, comparadores e qualidade dos dados.
+
+**Gabarito: D.** **A/B/C:** incorretas porque ignoram confundimento e distribuição de benefícios. **D:** correta, propõe avaliação causal proporcional à pergunta. **Mini-revisão:** associação temporal não basta para demonstrar efeito causal.
+
+### 18B.3. Fonte comparativa efetivamente aberta e limites
+
+**Google Drive:** “Estudos Epidemiológicos.pdf”, 3.081 caracteres extraídos, documento resumido atribuído no cabeçalho a Maysa Mismetti; **não** há prova de que seja apostila de cursinho, nem material completo de história natural. O texto contém coorte, caso-controle, RR, OR e conceitos de desenho epidemiológico; seu conteúdo foi utilizado somente como **benchmark de escopo**, não como fonte para copiar texto ou inferir autoria. O material também apresenta simplificações (por exemplo, classificação de desenhos transversais e longitudinais) que exigem precisão metodológica, como demonstrado acima. **Conteúdo autoral adicionado:** tabela de erros, cálculos fictícios, roteiro, casos e questões. **Revisão acadêmica independente e checagem de fontes metodológicas completas continuam pendentes.**
