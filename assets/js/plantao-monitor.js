@@ -287,49 +287,47 @@
     if(!reduced.matches || reaction) frame=requestAnimationFrame(draw);
   }
   function setupMonitorExpansion() {
-    const monitor = document.querySelector('.plantao-monitor');
-    if (!monitor || monitor.dataset.expandReady === '1') return;
-    monitor.dataset.expandReady = '1';
-    monitor.setAttribute('role','button');
-    monitor.setAttribute('tabindex','0');
-    monitor.setAttribute('aria-expanded','false');
+    const monitor=document.querySelector('.plantao-monitor');
+    if(!monitor||monitor.dataset.expandReady==='1')return;
+    monitor.dataset.expandReady='1';
+    monitor.setAttribute('role','button');monitor.setAttribute('tabindex','0');
+    monitor.setAttribute('aria-expanded','false');monitor.setAttribute('aria-haspopup','dialog');
     monitor.setAttribute('title','Toque para ampliar o monitor');
-
-    const backdrop = document.createElement('div');
-    backdrop.className = 'plantao-monitor-backdrop';
-    backdrop.hidden = true;
-    document.body.appendChild(backdrop);
-
-    const monitorHome = monitor.parentNode;
-    const monitorNextSibling = monitor.nextSibling;
-
-    const setExpanded = expanded => {
-      if (expanded) {
-        document.body.appendChild(monitor);
-      } else if (monitorHome) {
-        if (monitorNextSibling && monitorNextSibling.parentNode === monitorHome) monitorHome.insertBefore(monitor, monitorNextSibling);
-        else monitorHome.appendChild(monitor);
+    const home=monitor.parentNode,anchor=document.createComment('monitor home');
+    home.insertBefore(anchor,monitor);
+    const dialog=document.createElement('dialog');
+    dialog.id='plantao-monitor-dialog';dialog.className='plantao-layer-dialog';
+    dialog.setAttribute('aria-label','Monitor de sinais vitais ampliado');
+    const close=document.createElement('button');
+    close.type='button';close.className='plantao-monitor-dialog-close';
+    close.setAttribute('aria-label','Fechar monitor ampliado');close.textContent='×';
+    dialog.append(close);document.body.append(dialog);
+    const setExpanded=expanded=>{
+      if(expanded===dialog.open)return;
+      if(expanded){
+        dialog.append(monitor);monitor.classList.add('is-expanded');
+        monitor.removeAttribute('role');monitor.setAttribute('tabindex','-1');
+        dialog.showModal();close.focus();
+      }else{
+        dialog.close();monitor.classList.remove('is-expanded');
+        anchor.after(monitor);monitor.setAttribute('role','button');monitor.setAttribute('tabindex','0');
+        monitor.focus({preventScroll:true});
       }
-      monitor.classList.toggle('is-expanded', expanded);
-      backdrop.hidden = !expanded;
-      document.body.classList.toggle('plantao-monitor-open', expanded);
-      monitor.setAttribute('aria-expanded', String(expanded));
-      monitor.setAttribute('title', expanded ? 'Toque para fechar o monitor ampliado' : 'Toque para ampliar o monitor');
-      if (!frame) frame = requestAnimationFrame(draw);
+      document.body.classList.toggle('plantao-monitor-open',expanded);
+      monitor.setAttribute('aria-expanded',String(expanded));
+      monitor.setAttribute('title',expanded?'Monitor ampliado':'Toque para ampliar o monitor');
+      if(!frame)frame=requestAnimationFrame(draw);
     };
-    const toggle = () => setExpanded(!monitor.classList.contains('is-expanded'));
-
-    monitor.addEventListener('click', toggle);
-    backdrop.addEventListener('click', () => setExpanded(false));
-    monitor.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggle();
-      }
+    monitor.addEventListener('click',()=>{if(!dialog.open)setExpanded(true)});
+    monitor.addEventListener('keydown',event=>{
+      if(!dialog.open&&(event.key==='Enter'||event.key===' ')){event.preventDefault();setExpanded(true)}
     });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && monitor.classList.contains('is-expanded')) setExpanded(false);
-    });
+    close.addEventListener('click',()=>setExpanded(false));
+    dialog.addEventListener('cancel',event=>{event.preventDefault();setExpanded(false)});
+    dialog.addEventListener('click',event=>{if(event.target===dialog)setExpanded(false)});
+    const simulator=document.getElementById('plantao-simulator');
+    new MutationObserver(()=>{if(simulator.hidden&&dialog.open)setExpanded(false)})
+      .observe(simulator,{attributes:true,attributeFilter:['hidden']});
   }
 
   setupMonitorExpansion();
