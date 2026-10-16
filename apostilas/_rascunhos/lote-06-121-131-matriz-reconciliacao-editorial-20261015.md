@@ -14,7 +14,7 @@ Duas linhas editoriais trabalharam **os mesmos temas com recortes e redações i
 | Tema | Área resumida | Linha 06, extensão | Linha 07, extensão | Casos/questões 06 | Casos/questões 07 | Decisão editorial atual |
 |---:|---|---:|---:|---|---|---|
 | 121 | ITU e pielonefrite | 101.762 → 109.137 | 97.697 | 8 / 12 | 6 / 8 | Candidato 06 preservado e ampliado em seção 12.5; conteúdo de farmacologia da versão 07 requer conferência linha a linha antes de incorporação definitiva. |
-| 122 | Perfuração de víscera oca | 111.814 | 79.156 | 8 / 12 | 9 / 14 | 06 mais extensa; 07 traz caso e questões extras. Conciliar analgesia, controle de fonte, escalas/tempo, anatomias específicas e referências antes da escolha final. |
+| 122 | Perfuração de víscera oca | **111.814 → 129.525 (consolidado 16/10)** | 79.156 (preservado) | **10 / 14 após conciliação** | 9 / 14 (legado) | **Conciliação focal efetuada**: novos §§10.4, 13.5, 18.5, casos 9/10 e questões 13/14; SIS 2024/SSC 2026/WSES confrontadas, manifesto de imagens corrigido; não certificado. |
 | 123 | Febre sem sinais localizatórios | 96.476 | 78.900 | 8 / 12 | 10 / 14 | Comparar fluxos por idade, UTIs, vacinas, marcadores, antibioticoterapia e critérios de alta; 07 tem mais exercícios. |
 | 124 | Sangramento uterino anormal | 123.187 (HTML) | 17.256 (complemento) | verificar DOM | 8 questões | Preservar apostila HTML pública, prévia 06 e complemento 07; unidades diferentes, não comparar extensão como conteúdo. Não substituir a publicada. |
 | 125 | Rastreamento e prevenção quaternária | 88.001 | 66.086 | 8 / 12 | 10 / 14 | Confrontar recomendações de rastreamento e risco de sobrediagnóstico no SUS; manter exercícios complementares. |
@@ -67,6 +67,16 @@ Duas linhas editoriais trabalharam **os mesmos temas com recortes e redações i
 - O quadro novo **não** altera, presume ou estabelece prescrição local final; condições, doses, resistência e apresentações brasileiras requerem conferência específica.
 
 **Fontes científicas externas conferidas em 15/10/2026:** EAU *Urological Infections 2026*, https://uroweb.org/guidelines/urological-infections/summary-of-changes/2026 ; IDSA 2025 https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/ ; ACOG 2023 https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals ; Antoniou et al. 2010, https://pubmed.ncbi.nlm.nih.gov/20585070/ ; legislação contracepção Ministério da Saúde https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/contracepcao .
+
+## Continuação de 16/10/2026 — apostila 122 reconciliada (com ressalvas)
+
+- Os 111.814 caracteres da linha 06 foram **preservados** e expandidos, em arquivo novo no ramo editorial, para **129.525 caracteres brutos**.
+- Dois casos autorais adicionados (nº 9, tumor sigmoide com perfuração cecal; nº 10, duração de antibiótico após fonte controlada) e duas questões comentadas (nº 13, mecanismo de obstrução; nº 14, SIS 2024 para paciente crítico); total **10 casos e 14 questões**.
+- A seção **10.4** complementa interpretação sistemática da TC; **13.5** especifica até 4 dias SIS 2024, com exceções incluindo críticos selecionados até aproximadamente 8 dias; **18.5** explica perfuração cecal distante de obstrução distal.
+- Etapa Zero com três comparativos efetivamente abertos/lidos no Drive; nenhum comprovadamente Estratégia MED. Fontes médicas verificadas externamente: WSES 2020, WSES 2022, SIS 2024, SSC 2026.
+- Manifesto de dez páginas de imagens copiado e conferido; `122-C10` corrigida para **CC BY-SA 4.0**. Nenhuma imagem aprovada, baixada ou incorporada. Há casos duplicados entre candidatas.
+- **Documento de controle:** `apostilas/_rascunhos/lote-06-122-controle-reconciliacao-20261016.md`.
+- Não integrar o JSON preliminar ou preview da origem: estes **não incluem** os novos blocos e devem ser regenerados e testados após revisão médica. A linha 07 original foi preservada.
 
 ## Etapa Zero e qualidade editorial — pendências
 - PDFs do Drive usados são **benchmarks de escopo**, com proveniência não confirmada para Estratégia MED; não há autorização para copiar conteúdo comercial. Acesso a um volume extenso e realmente comparável continua pendente quando possível.
