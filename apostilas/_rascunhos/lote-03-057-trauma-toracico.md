@@ -203,3 +203,269 @@ Tratamento de lesão confirmada frequentemente inclui reparo cirúrgico. Em paci
 **Toracotomia de reanimação** é abertura cirúrgica do tórax em circunstâncias excepcionais de parada traumática, realizada por equipe treinada com capacidade imediata de controle cirúrgico. Pode permitir tratamento de lesão cardíaca, controle hemorrágico e manobras de ressuscitação cirúrgica, conforme indicação. A **toracotomia de urgência** em doente ainda com circulação pode tratar hemotórax maciço, lesão vascular ou cardíaca e outras causas de sangramento que não respondem a manejo inicial.
 
 O benefício da toracotomia de reanimação depende de **mecanismo penetrante versus contuso, sinais de vida, tempo de parada, suspeita de lesão tratável, recursos cirúrgicos disponíveis e protocolo institucional**. O potencial de dano/futilidade cresce em trauma contuso sem sinais de vida por período prolongado. A técnica não deve ser ensinada como medida executável em qualquer pronto-socorro sem infraestrutura; esta apostila aborda critérios, decisão de acionar equipe e transferir, não uma instrução cirúrgica improvisada.
+
+
+## 17. Procedimentos pleurais e controle de qualidade: o que o aluno precisa entender
+
+O **objetivo** de uma toracostomia é remover ar e/ou sangue, aliviar comprometimento mecânico e permitir acompanhamento de vazamento de ar/débito. O procedimento é invasivo, envolve técnica asséptica, analgesia, reconhecimento anatômico, escolha do dispositivo e confirmação posterior. Não basta conhecer “um espaço intercostal”: erro de referência, compressão de estruturas, obesidade, trauma de parede e lesão diafragmática modificam risco. Colocação é restrita a equipe treinada; comunicação com cirurgia deve ser precoce em comprometimento grave.
+
+### 17.1 Entender o funcionamento do selo d'água e aspiração
+
+O sistema de drenagem costuma permitir saída de ar/líquido e limitar reentrada, favorecendo reexpansão do pulmão. Oscilação da coluna e borbulhamento devem ser interpretados junto ao circuito e ventilação; borbulhamento persistente pode indicar fuga de ar do pulmão ou do sistema. Tubo desconectado ou pinçado de forma indevida em paciente com escape contínuo pode precipitar tensão. A equipe precisa conferir fixação, posição do frasco e integridade das conexões, sem pinçamento arbitrário. A escolha de sucção ou selo simples depende do problema e protocolo, não apenas de “apareceu pneumotórax”.
+
+### 17.2 Monitorização após o dreno
+
+Acompanhar saturação, ventilação, dor, pressão, aspecto e volume drenado, ausculta e imagem de controle conforme indicação. Dreno que exterioriza sangue volumoso de forma aguda demanda acionar cirurgia e hemoterapia, não apenas anotar o volume em prontuário. Dreno que para de oscilar associado a hipoxemia pode estar obstruído, mal posicionado ou o pulmão pode estar reexpandido; contexto decide investigação. A radiografia ou ultrassom podem auxiliar controle, especialmente após inserção e diante de piora.
+
+### 17.3 Quando remover o dreno?
+
+A decisão depende de expansão pulmonar, ausência de vazamento clinicamente significativo, pequeno débito residual e ausência de coleção que precise permanecer drenada, conforme tipo de lesão/protocolo. Não remover porque “completou 48 horas” se há vazamento persistente ou hemotórax retido. Na retirada, observar sinais de recorrência e orientar retorno; alguns pacientes precisam de imagem de controle específica conforme risco e evolução.
+
+### 17.4 Complicações
+
+Incluem sangramento intercostal, lesão pulmonar, diafragmática ou abdominal, infecção, dor intensa, mau posicionamento, drenagem incompleta, enfisema subcutâneo, vazamento prolongado e edema de reexpansão em contextos predisponentes. O mesmo procedimento que salva vida pode produzir lesão iatrogênica; indicação correta e técnica treinada são essenciais.
+
+## 18. Critérios de internação, observação, alta e transferência
+
+**Instabilidade:** hipotensão/choque, insuficiência respiratória, hemotórax com sangramento ativo, tensão, tamponamento, grande lesão aórtica ou suspeita de lesão cardíaca/esofágica requerem centro de trauma e suporte cirúrgico apropriado. O transporte seguro inclui via aérea, monitorização, hemoderivados quando necessários, dreno/patência e equipe capaz de responder a descompensação. Transferir sem comunicar risco de sangramento recorrente ou necessidade de cirurgia potencial aumenta dano.
+
+**Observação hospitalar:** pacientes com pneumotórax pequeno, hemotórax muito pequeno e fraturas selecionadas podem ser observados conforme diretriz e recursos. A WSES recomenda pelo menos 24h para pequeno pneumotórax observado; hemotórax pequeno tem necessidade de acompanhamento e imagem conforme evolução. A possibilidade de observação **não é alta imediata**. Dor não controlada, hipoxemia, ventilação prévia ou comorbidade grave modificam plano.
+
+**Alta segura:** possível em lesão realmente limitada, sinais vitais/oxigenação estáveis, analgesia eficaz, ausência de lesões ocultas relevantes, capacidade de mobilizar e retornar rapidamente. Orientar dispneia progressiva, dor crescente, desmaio, febre persistente e hemoptise como sinais de retorno. A radiografia de controle é selecionada por lesão e protocolo.
+
+### 18.1 Particularidades de pacientes idosos
+
+Idosos têm menor reserva ventilatória e maior risco de pneumonia, delirium e disfunção por dor e imobilidade. Uma fratura isolada pode coexistir com contusão discreta, e múltiplas fraturas com DPOC/IC podem precipitar insuficiência respiratória. Avaliar capacidade de tosse, ingestão, oxigenação em repouso/esforço, ajuda domiciliar e anticoagulantes. Necessidade de analgesia regional e internação pode ser maior que em pessoa jovem com padrão radiológico semelhante.
+
+### 18.2 Particularidades pediátricas
+
+O tórax infantil é mais complacente; forte energia pode causar contusão pulmonar sem fratura aparente. Em crianças, considerar também lesões abdominais, cardiopulmonares e mecanismo não acidental conforme contexto. Exposição à radiação exige racionalização de imagem sem perder lesões graves: NICE recomenda radiografia e/ou eFAST inicial e evitar TC de tórax rotineira como primeira linha na criança. Pequenos volumes de perda sanguínea podem ser críticos proporcionalmente ao peso, exigindo abordagem pediátrica própria.
+
+### 18.3 Gestantes com trauma torácico
+
+Prioridade é estabilizar mãe e preservar oxigenação/perfusão. Alterações anatômicas e fisiológicas da gestação podem afetar ventilação, risco de aspiração e posição de vasos abdominais; avaliação obstétrica/fetal integra cuidado após estabilização conforme idade gestacional e mecanismo. Não negar investigação radiológica ou procedimento salvador por receio genérico de radiação quando indicação é clara. Acionar obstetrícia e trauma precocemente.
+
+## 19. Seis casos clínicos originais — decisões por fisiologia
+
+### Caso 1 — Hipotensão abrupta depois da intubação
+
+**Apresentação:** homem de 29 anos sofreu colisão de motocicleta. Recebe ventilação com pressão positiva por rebaixamento e apresenta queda abrupta de pressão, taquicardia, dessaturação e ausência quase total de murmúrio vesicular à direita. Há crepitação subcutânea.
+
+**Hipótese:** pneumotórax hipertensivo precipitado ou agravado por ventilação, com choque obstrutivo; diferenciais incluem intubação seletiva e hemorragia grave.
+
+**Raciocínio:** deterioração logo após pressão positiva em trauma torácico e assimetria ventilatória é pista forte. Confirmar rapidamente posição do tubo e considerar outras causas, mas **não atrasar descompressão por radiografia** se instável.
+
+**Exames:** avaliação clínica contínua; eFAST se disponível sem atrasar intervenção; depois imagem de controle e pesquisa de outras lesões.
+
+**Conduta:** intervenção de descompressão pleural imediata por equipe habilitada, seguida de drenagem definitiva quando indicada; oxigenação, hemodinâmica e reavaliação de patência; investigar contusão e hemorragia associadas.
+
+**Por que importa:** ensina que diagnóstico e tratamento de tensão precedem imagem em doente fisiologicamente ameaçado.
+
+### Caso 2 — Pneumotórax pequeno oculto e paciente estável
+
+**Apresentação:** mulher de 34 anos sofre queda de bicicleta, permanece estável, sem necessidade de oxigênio e com dor lateral leve. RX em decúbito é inconclusivo; TC realizada por mecanismo e outras lesões mostra pneumotórax traumático de 1,5 cm, sem hemotórax ou contusão importante.
+
+**Hipótese:** pneumotórax simples pequeno em paciente estável.
+
+**Raciocínio:** a regra do PDF antigo “drenar todos” não corresponde à recomendação atual para selecionados. A diretriz WSES–AAST permite **observação por pelo menos 24h** quando pequeno e clinicamente estável, com recursos para intervenção se piorar. O risco muda se precisar ventilação positiva, transporte aéreo ou houver piora respiratória.
+
+**Exames:** reavaliações seriadas, oximetria, controle radiológico conforme protocolo e discussão de plano de seguimento.
+
+**Conduta:** observação supervisionada, analgesia e monitorização; drenagem se houver agravamento ou critérios adicionais. Não declarar alta imediata por tamanho.
+
+**Por que importa:** diferencia tratamento indicado de uso compulsório de procedimento invasivo.
+
+### Caso 3 — Hemotórax maciço com choque e sangramento ativo
+
+**Apresentação:** homem de 40 anos sofre ferimento penetrante torácico. Chega com pele fria, taquicardia, PAS 80 mmHg, hipofonese e macicez à esquerda. Dreno realizado por equipe capacitada exterioriza imediatamente 1.600 mL de sangue.
+
+**Hipótese:** hemotórax maciço hemorrágico, possível lesão de vasos intercostais, pulmão ou grandes vasos.
+
+**Raciocínio:** choque e perda sanguínea importante determinam necessidade de hemostasia; débito imediato acima de aproximadamente 1.500 mL também indica avaliação cirúrgica urgente. Não esperar atingir outra hora de débito se já está instável.
+
+**Exames:** eFAST/RX em paralelo sem atrasar hemostasia; hemograma, tipagem/provas de compatibilidade, coagulação, cálcio e gasometria conforme estado, monitorização do débito.
+
+**Conduta:** equipe de trauma/cirurgia imediata, suporte transfusional/hemostático, controle da fonte e preparação para intervenção cirúrgica. Vigilância de hipotermia, acidose e coagulopatia. Exploração depende da fisiologia e recursos.
+
+**Por que importa:** números são alertas; a perfusão real tem prioridade sobre tabelas de volume.
+
+### Caso 4 — Dor costal grave e deterioração respiratória no idoso
+
+**Apresentação:** paciente de 78 anos com DPOC e anticoagulação cai da escada, mantém Glasgow 15, mas tem cinco fraturas costais laterais, dor 9/10 e respiração superficial. SpO₂ cai de 95% para 90% e o paciente não consegue tossir por dor.
+
+**Hipóteses:** hipoventilação por fraturas, atelectasia, contusão pulmonar evolutiva, pneumotórax/hemotórax associado.
+
+**Raciocínio:** em idoso, redução de tosse e volumes aumenta risco de pneumonia e insuficiência respiratória. Não limitar decisão à contagem de fraturas no laudo. Analgesia efetiva é intervenção respiratória, evitando sedação excessiva que agrava ventilação.
+
+**Exames:** imagem conforme risco, avaliação de contusão/pleura e ventilação, oximetria seriada, gasometria se hipercapnia suspeita.
+
+**Conduta:** observação ou internação conforme evolução, analgesia multimodal e bloqueio regional se indicado, fisioterapia respiratória, mobilização e avaliação por cirurgia torácica caso múltiplas fraturas desviadas, instabilidade ou falha de suporte. Rever anticoagulação no contexto de sangramento.
+
+**Por que importa:** dor insuficientemente tratada pode precipitar complicações, especialmente em idoso com baixa reserva.
+
+### Caso 5 — Desaceleração e lesão de aorta com RX discreto
+
+**Apresentação:** homem de 31 anos sofre colisão frontal em alta velocidade, chega estável após ressuscitação, com dor torácica e equimose importante de cinto. RX não mostra alargamento mediastinal marcante.
+
+**Hipótese:** possível lesão aórtica torácica por desaceleração, além de contusão pulmonar/esternal.
+
+**Raciocínio:** RX não exclui lesão aórtica, e mecanismo de alta energia sustenta investigação. Em doente estável, angiotomografia delimita ruptura íntima, pseudoaneurisma e lesões vasculares. A falta de um sinal radiográfico "clássico" não autoriza dispensar exame quando risco clínico é relevante.
+
+**Exames:** angiotomografia de tórax, monitorização cardiopulmonar e investigação de lesões associadas.
+
+**Conduta:** articular cirurgia vascular e trauma; manejo por grau de lesão, possível TEVAR conforme extensão e condição do paciente, hemodinâmica protegida sem induzir hipotensão nociva em TCE/hemorragia associada.
+
+**Por que importa:** algumas lesões potencialmente fatais permanecem compensadas inicialmente.
+
+### Caso 6 — Ferimento toracoabdominal sem pneumotórax na radiografia
+
+**Apresentação:** paciente de 25 anos sofre ferimento por objeto cortante na região lateral inferior esquerda do tórax. Está hemodinamicamente estável, respira bem e RX inicial não apresenta grande alteração. Relata dor epigástrica leve.
+
+**Hipóteses:** lesão diafragmática penetrante oculta, lesão visceral abdominal, lesão pleural pequena.
+
+**Raciocínio:** diafragma móvel ocupa a região de transição; pequenas lacerações podem passar despercebidas e evoluir com hérnia tardia. RX normal não exclui ruptura; exame físico não define integridade diafragmática.
+
+**Exames:** TC conforme mecanismo e estabilidade, avaliação abdominal, eventual laparoscopia ou toracoscopia diagnóstica em cenário de suspeita persistente, sob cirurgia experiente.
+
+**Conduta:** discussão cirúrgica/observação em ambiente apropriado; reparar lesão identificada, avaliar lesões abdominais associadas; orientar que alta sem investigação adequada pode gerar obstrução tardia.
+
+**Por que importa:** uma ameaça de morte não precisa se manifestar como choque na chegada.
+
+## 20. Dez questões de residência comentadas
+
+### Questão 1 — Tensão no politraumatizado
+Paciente ventilado após trauma passa a apresentar hipotensão, hipoxemia e ausência unilateral de sons respiratórios. Qual melhor prioridade?
+A. TC contrastada antes de intervir.
+B. Descompressão torácica de emergência por equipe treinada, sem esperar imagem.
+C. Antibioticoterapia para pneumonia.
+D. Esperar desvio de traqueia inequívoco.
+**Gabarito B.** A atrasa medida potencialmente salvadora; C não trata mecanismo obstrutivo; D depende de sinal tardio e pouco sensível. Revisão: instabilidade respiratória/hemodinâmica define prioridade.
+
+### Questão 2 — Pneumotórax pequeno
+Mulher estável, sem hipoxemia, com pneumotórax traumático de 1,5 cm na TC. Qual alternativa representa WSES–AAST 2025?
+A. Drenar obrigatoriamente todo pneumotórax.
+B. Observação por pelo menos 24h pode ser considerada em selecionados, com vigilância.
+C. Dar alta imediata sem observação.
+D. Antibiótico profilático resolve ar pleural.
+**Gabarito B.** A é regra antiga absoluta; C ignora recomendação de observação; D não remove ar. Revisão: medida e estabilidade.
+
+### Questão 3 — Pequeno hemotórax
+Hemotórax traumático de 220 mL em doente estável sem piora. A diretriz atual permite:
+A. Manejo conservador em selecionados, com observação apropriada.
+B. Toracotomia obrigatória.
+C. Drenagem e transfusão sempre, independentemente de fisiologia.
+D. Não reavaliar até um mês.
+**Gabarito A.** B/C expõem a intervenções desnecessárias; D ignora risco de progressão. Revisão: WSES permite considerar observação se <300 mL e estável.
+
+### Questão 4 — Débito hemorrágico
+Dreno torácico elimina 1.600 mL imediatamente após trauma, paciente hipotenso. Melhor decisão:
+A. Apenas analgesia e alta.
+B. Acionar cirurgia e ressuscitação hemostática com urgência.
+C. Pinçar tubo e aguardar o sangramento “parar”.
+D. Dar antibiótico oral e observar uma semana.
+**Gabarito B.** Grande débito com choque exige controle da fonte; A/D atrasam tratamento; C pode agravar tamponamento intrapleural, choque e falha de drenagem. Revisão: débito é gatilho, fisiologia é decisiva.
+
+### Questão 5 — Hemotórax retido
+Paciente estável permanece com coleção organizada relevante após dreno, com imagem compatível com hemotórax retido. Qual conduta tem respaldo EAST 2021?
+A. Videotoracoscopia precoce quando intervenção está indicada, preferencialmente até quatro dias.
+B. Nenhuma medida, pois todo coágulo resolve no mesmo dia.
+C. Retirar dreno sem avaliar imagem.
+D. Repetir toracostomias às cegas indefinidamente.
+**Gabarito A.** B/C/D ignoram empiema, drenagem inadequada e evidência de VATS. Revisão: identificar sangue retido cedo.
+
+### Questão 6 — Tamponamento
+Paciente com ferimento precordial, choque e eFAST com líquido pericárdico. A conduta definitiva é:
+A. Reparação cirúrgica/controle da lesão, acionando equipe imediatamente.
+B. Apenas observação prolongada no ambulatório.
+C. Anti-inflamatório como tratamento curativo.
+D. Pericardiocentese como única terapia definitiva em todos.
+**Gabarito A.** B/C inadequadas em risco vital; D pode falhar com coágulos e não repara fonte. Revisão: tamponamento é choque obstrutivo de causa anatômica.
+
+### Questão 7 — Contusão pulmonar
+Após trauma contuso, criança tem hipoxemia, mas nenhuma fratura costal visível no RX. Qual afirmação é adequada?
+A. A contusão é impossível sem fratura.
+B. Criança pode ter contusão pulmonar sem fratura devido à parede complacente.
+C. Corticoide profilático é obrigatório.
+D. A contusão só surge após infecção bacteriana.
+**Gabarito B.** A ignora anatomia pediátrica; C não corresponde ao tratamento; D ignora mecanismo traumático. Revisão: imagem torácica pode subestimar lesão precoce.
+
+### Questão 8 — Fraturas e cirurgia
+Paciente hemodinamicamente estável tem tórax instável sintomático. Qual conduta é respaldada pela WSES–AAST 2025?
+A. Nunca considerar fixação cirúrgica.
+B. Considerar estabilização cirúrgica em paciente elegível, idealmente nas primeiras 48–72 horas.
+C. Fixação imediata mesmo em choque descontrolado.
+D. Cortar analgesia porque mascara sinais.
+**Gabarito B.** A ignora evidência; C contradiz contraindicação por instabilidade; D piora ventilação. Revisão: fixação tem seleção anatômica e clínica.
+
+### Questão 9 — Traumatismo de aorta
+Após desaceleração brusca, paciente estável tem RX pouco expressivo, mas suspeita clínica de lesão aórtica. Qual exame é mais útil?
+A. Angiotomografia torácica com contraste.
+B. Radiografia simples sempre exclui lesão.
+C. Eletroencefalograma.
+D. Cultura de escarro.
+**Gabarito A.** B atribui sensibilidade indevida ao RX; C/D são irrelevantes. Revisão: CTA define anatomia e planejamento.
+
+### Questão 10 — Transição toracoabdominal
+Ferimento penetrante baixo no hemitórax esquerdo com RX normal e paciente estável exige lembrar:
+A. Que lesão de diafragma pode ser oculta e requer avaliação dirigida.
+B. Que diafragma nunca é lesado sem choque.
+C. Que uma radiografia normal prova integridade de todos os órgãos.
+D. Que toda lesão diafragmática se diagnostica por ausculta.
+**Gabarito A.** B/C/D ignoram baixa sensibilidade de exame inicial e risco de hérnia tardia. Revisão: mecanismo e topografia devem guiar investigação.
+
+## 21. Pérolas e matriz de diferenciais
+
+| Cenário | Achado útil | Diagnóstico provável | Primeiro raciocínio |
+|---|---|---|---|
+| Choque, sons ausentes e timpanismo | Pode seguir intubação/PPV | Pneumotórax hipertensivo | Descompressão se instável e forte suspeita |
+| Choque, sons reduzidos e macicez | Perda sanguínea pleural | Hemotórax importante | Drenagem/controle da fonte/hemoterapia |
+| Ferimento sugando ar | Comunicação com pleura | Pneumotórax aberto | Cobertura segura + observar tensão |
+| Choque e líquido pericárdico | Trauma precordial | Tamponamento | Cirurgia imediata |
+| Hipoxemia horas após colisão | Infiltrado em evolução | Contusão pulmonar | Suporte respiratório, analgesia, monitor |
+| Dor/respiração paradoxal | Fraturas múltiplas | Tórax instável | Analgesia, suporte, avaliar fixação |
+| Choque/hemoptise, dreno com escape grande | Enfisema subcutâneo | Lesão traqueobrônquica | Via aérea e broncoscopia dirigidas |
+| Alta energia e suspeita mediastinal | RX pode ser normal | Lesão aórtica | CTA se estável, equipe vascular |
+| Dor abdominal tardia após trauma baixo | Víscera no tórax | Ruptura de diafragma | Investigação cirúrgica |
+
+**Alto rendimento:** tensão é diagnóstico e intervenção clínica no instável; hemotórax maciço é perda sanguínea até prova contrária; pulmão contuso pode piorar tardiamente; fratura costal no idoso não é necessariamente benigna; todo trauma toracoabdominal penetrante deve despertar suspeita de diafragma; fisiologia importa mais que limiar isolado em cirurgia de sangramento.
+
+## 22. Camada visual — planejamento de 12 candidatas, sem incorporação
+
+1. RX de pneumotórax moderado, com linha pleural e ausência de trama periférica, clínica e licença verificadas.
+2. US de pneumotórax com ausência de deslizamento e representação de sinal lung point, com legenda de limitações.
+3. Rx/TC comparativa de pneumotórax oculto em posição supina, sem identificar paciente.
+4. Rx/US de hemotórax traumático, demonstrando líquido pleural e compressão.
+5. TC de hemotórax pequeno versus volumoso, com escala clara de localização e indicação apenas exemplificativa.
+6. eFAST pericárdico mostrando líquido, com origem institucional validada e legenda de tamponamento não automático.
+7. TC de contusão pulmonar alveolar, mostrando opacidades pós-trauma.
+8. Reconstrução 3D de fraturas costais e tórax instável, fonte com licença de uso comercial.
+9. Angiotomografia de pseudoaneurisma traumático de aorta, real e autorizada.
+10. TC de ruptura diafragmática e herniação gástrica, diagnóstico confirmado.
+11. Fluxograma original “instabilidade → descompressão/controle hemorrágico → imagem se estável”.
+12. Linha do tempo original de decisão sobre hemotórax retido/VATS e fixação costal, com critérios WSES–AAST/EAST.
+
+**Regra:** imagens do Drive usadas para benchmark não serão reutilizadas. Candidatas externas dependem de autoria, licença válida para uso comercial, correspondência diagnóstica, legenda médica e aprovação na fila Admin LURIA. Recursos vetoriais autorais podem ser produzidos depois de revisão científica do conteúdo.
+
+## 23. Referências de fechamento e auditoria
+
+1. Coccolini F et al. Thoracic trauma WSES–AAST guidelines. World J Emerg Surg. 2025;20:78. DOI 10.1186/s13017-025-00651-1. https://link.springer.com/article/10.1186/s13017-025-00651-1
+2. NICE. Major trauma: assessment and initial management. NG39. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations
+3. Patel NJ et al. Management of simple and retained hemothorax: EAST guideline. Am J Surg. 2021;221:873–884. DOI 10.1016/j.amjsurg.2020.11.032. https://pubmed.ncbi.nlm.nih.gov/33487403/
+4. EAST. Hemothorax and occult pneumothorax management. 2011; historical comparison, inferior priority to 2025 WSES in small collection selection. https://www.east.org/mobile/practice-management-guideline/trauma/77
+5. ACS. ATLS 11. 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
+
+### Auditoria editorial — NÃO certificação
+
+- [x] Benchmark de três documentos do Drive realmente aberto e examinado; origens registradas, sem pressupor Estratégia MED.
+- [x] Matriz de correção de regras absolutas antigas confrontada com diretriz 2025.
+- [x] Mecanismos, ameaças imediatas, lesões pleurais, grandes vasos, diafragma, costelas, bronquios e coração.
+- [x] Seis casos clínicos completos com hipótese, decisão e conduta.
+- [x] Dez questões originais de quatro alternativas, com justificativa.
+- [x] Planejamento de doze recursos de imagem.
+- [ ] Auditoria de profundidade didática **≥60K caracteres instrutivos efetivamente úteis**, retirando marcadores, repetição, questões, casos e referências.
+- [ ] Checagem de doses, procedimentos invasivos e diretrizes brasileiras de trauma por especialista; confirmar acesso a equipes e protocolos brasileiros.
+- [ ] Gerar algoritmo clínico e esquemas vetoriais com fidelidade clínica, aprovar imagens no Admin.
+- [ ] Testar autossuficiência por questões, corrigir lacunas internas e validar desktop/PWA no renderer.
+- [ ] Nunca publicar/mesclar sem revisão científica e autorização editorial.
+
+**Situação:** rascunho avançado, não certificado e não publicado; links externos servem para rastreabilidade, não substituem ensino presente na aula.
