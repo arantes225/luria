@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-radar-20261016-radar1";
+const CACHE_VERSION = "luria-pwa-radar-vocacao-20261016-v2";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -20,6 +20,7 @@ const APP_SHELL = [
   "/index.html",
   "/login/",
   "/dashboard/",
+  "/vocacao/",
   "/flashcards/",
   "/questoes-simulados/",
   "/aprender/",
@@ -75,6 +76,8 @@ const APP_SHELL = [
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261013-frame1",
+  "/assets/css/vocacao.css?v=1",
+  "/assets/js/vocacao.js?v=1",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
   "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
   "/assets/css/flashcards-ui-v2.css?v=1",
@@ -101,6 +104,7 @@ const INSTALL_PRECACHE = new Set([
   "/",
   "/login/",
   "/dashboard/",
+  "/vocacao/",
   "/apostilas/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
@@ -114,6 +118,8 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/ui-navigation-v2.js?v=20261013-button1",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/app.js?v=20261013-frame1",
+  "/assets/css/vocacao.css?v=1",
+  "/assets/js/vocacao.js?v=1",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/luria-brand-v5.js?v=12"
 ]);
