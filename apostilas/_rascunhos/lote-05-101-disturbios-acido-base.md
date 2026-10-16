@@ -618,11 +618,11 @@ A necessidade de via aérea avançada depende de proteção, ventilação, oxige
 
 ### Caso L — Cetoacidose tratada, cetonemia resolvida e bicarbonato ainda baixo
 
-**Apresentação:** homem de 29 anos, internado por cetoacidose diabética, melhora clinicamente após tratamento protocolar. No retorno, apresenta glicose **178 mg/dL**, β-hidroxibutirato sérico **0,4 mmol/L**, pH venoso **7,32** e bicarbonato **17 mEq/L**. Na **139**, Cl **111**, PaCO₂ medida na gasometria arterial **34 mmHg** quando obtida amostra arterial em avaliação paralela. Cetonúria semiquantitativa permanece positiva.
+**Apresentação:** homem de 29 anos, internado por cetoacidose diabética, melhora clinicamente após tratamento protocolar. No retorno, apresenta glicose **178 mg/dL**, β-hidroxibutirato sérico **0,4 mmol/L**, pH venoso **7,32** e bicarbonato **17 mEq/L**. Na **139** e Cl **111 mEq/L**. Cetonúria semiquantitativa permanece positiva.
 
 **Raciocínio:** AG = 139−(111+17) = **11 mEq/L**. A combinação de baixo bicarbonato e cloro relativamente alto pode decorrer de acidose metabólica hiperclorêmica durante recuperação, sobretudo após fluidoterapia rica em cloreto e excreção urinária de ânions cetônicos. A cetonúria positiva pode persistir porque a conversão de β-hidroxibutirato em acetoacetato altera o teste urinário.
 
-**Critério contemporâneo:** o consenso conjunto de 2024 utiliza **β-hidroxibutirato <0,6 mmol/L** e **pH venoso ≥7,3 ou HCO₃⁻ ≥18 mmol/L** para resolução da CAD, integrado à situação clínica. Neste exemplo, a β-hidroxibutirato é baixa e o pH venoso atende ao critério, mesmo com bicarbonato 17 e cetonúria positiva. O AG não deve ser tomado como indicador primário de resolução quando cetonemia quantitativa está disponível.
+**Critério contemporâneo:** o consenso conjunto de 2024 utiliza **β-hidroxibutirato <0,6 mmol/L** e **pH venoso ≥7,3 ou HCO₃⁻ ≥18 mmol/L** para resolução da CAD, integrado à situação clínica. Neste exemplo, o β-hidroxibutirato está baixo e o pH venoso atende ao critério, mesmo com bicarbonato 17 e cetonúria positiva. O AG não deve ser tomado como indicador primário de resolução quando cetonemia quantitativa está disponível.
 
 **Conduta contextual:** antes da transição do tratamento, confirmar estabilidade, possibilidade de alimentação, eletrólitos, K, causa desencadeante e plano de insulina conforme protocolo. Não interromper conduta apenas porque o AG ficou normal; também não prolongar automaticamente o tratamento de CAD baseado somente na persistência da cetonúria. **Por que importa:** diferencia resolução bioquímica da cetose de normalização imediata de todas as variáveis ácido-base.
 
@@ -701,6 +701,54 @@ D. Cloro urinário não tem utilidade diagnóstica.
 E. O cloro urinário decide sozinho a dose de bicarbonato IV.
 
 **Gabarito: B.** **A incorreta:** diuréticos podem produzir cloro elevado. **B correta:** momento da amostra altera o dado. **C incorreta:** não é específico. **D incorreta:** é marcador útil quando contextualizado. **E incorreta:** confunde investigação etiológica com terapêutica. **Mini-revisão:** o resultado urinário depende de timing e medicação.
+
+### Questão 13 — Amôniogênese renal
+
+O metabolismo renal da glutamina é fundamental para a homeostase ácido-base. Qual afirmação é mais adequada?
+
+A. Todo bicarbonato renal novo resulta exclusivamente da filtração glomerular de bicarbonato previamente existente.
+B. A produção de NH₄⁺ no rim não participa da excreção de ácido.
+C. O metabolismo renal da glutamina pode gerar NH₄⁺ e bicarbonato; a excreção urinária efetiva de amônio contribui para o ganho líquido de bicarbonato novo.
+D. A função da amônia renal é exclusivamente aumentar a osmolaridade plasmática.
+E. Um pH urinário ácido comprova excreção normal de amônio em todo paciente.
+
+**Gabarito: C.** **A incorreta:** recuperação de bicarbonato filtrado é diferente de geração de base nova. **B incorreta:** NH₄⁺ é via central de excreção renal de ácido. **C correta:** integra amôniogênese, transporte e excreção urinária. **D incorreta:** não é a função fisiológica central aqui. **E incorreta:** pH urinário não quantifica NH₄⁺ e pode ser ácido em estados de excreção inadequada. **Mini-revisão:** acidificar o lúmen e excretar ácido em quantidade suficiente não são conceitos equivalentes.
+
+### Questão 14 — Cálculo de ânion gap urinário
+
+Paciente com diarreia abundante tem acidose metabólica, Na 139, Cl 114 e HCO₃⁻ 14. Na urina: Na 35, K 20, Cl 80 mEq/L. Qual alternativa interpreta corretamente?
+
+A. AG sérico 25 e AG urinário +25, sugerindo imediatamente ATR.
+B. AG sérico 11 e AG urinário −25; resposta compatível com maior excreção urinária de NH₄Cl e perda digestiva de bicarbonato no contexto clínico.
+C. AG sérico 11 e AG urinário +115, obrigatoriamente por cetoacidose.
+D. AG sérico 0 e AG urinário normal, excluindo desidratação.
+E. AG urinário substitui dosagem de amônio em todas as condições.
+
+**Gabarito: B.** **A incorreta:** os sinais e operações estão errados. **B correta:** AG sérico = 139−(114+14) = 11; AG urinário = 35+20−80 = −25. **C incorreta:** erro aritmético e etiologia inventada. **D incorreta:** eletrólitos não permitem essa conclusão. **E incorreta:** AG urinário é marcador indireto e pode falhar em presença de cetoânions e outros ânions urinários não medidos. **Mini-revisão:** interpretar uma fórmula com a fisiologia, nunca isoladamente.
+
+### Questão 15 — Resolução da cetoacidose no consenso 2024
+
+Adulto com CAD em melhora, β-hidroxibutirato 0,4 mmol/L, pH venoso 7,32, HCO₃⁻ 17 mmol/L e cetonúria ainda reagente. Segundo os critérios bioquímicos de resolução do consenso internacional de 2024:
+
+A. A CAD não pode estar resolvida porque a cetonúria ainda está positiva.
+B. Todo paciente precisa obrigatoriamente atingir bicarbonato ≥24 mmol/L e AG zero.
+C. A resolução bioquímica pode estar presente porque β-hidroxibutirato <0,6 mmol/L e pH venoso ≥7,3 satisfazem os critérios, mesmo com HCO₃⁻ ainda <18; integrar à clínica.
+D. O β-hidroxibutirato é contraindicado para monitorização de CAD.
+E. AG normal isolado sempre substitui cetonemia quantitativa.
+
+**Gabarito: C.** **A incorreta:** nitroprussiato urinário reflete sobretudo acetoacetato, podendo persistir positivo. **B incorreta:** não são os critérios do consenso. **C correta:** emprega cetonemia e pH com a lógica de “e” e “ou” correta, além de exigir decisão clínica. **D incorreta:** o β-hidroxibutirato é preferido para avaliação. **E incorreta:** o AG pode normalizar ou ficar alterado por hipercloremia, sem representar isoladamente resolução da cetose. **Mini-revisão:** CAD resolvida não exige que toda acidose residual tenha desaparecido.
+
+### Questão 16 — Resposta respiratória insuficiente
+
+Adulto com acidose metabólica tem HCO₃⁻ 14 mEq/L e PaCO₂ 41 mmHg. Qual interpretação é melhor?
+
+A. Winter prevê PaCO₂ de 29 ±2 mmHg; a PaCO₂ medida elevada sugere acidose respiratória adicional.
+B. Winter prevê 60 mmHg e mostra compensação adequada.
+C. A gasometria comprova alcalose respiratória como processo único.
+D. A compensação nunca envolve ventilação.
+E. A PaCO₂ elevada confirma alcalose metabólica primária.
+
+**Gabarito: A.** **A correta:** 1,5×14+8 = 29, com faixa aproximada 27–31; 41 está acima dela e demonstra ventilação insuficiente para o déficit de bicarbonato. **B incorreta:** equação aplicada erroneamente. **C incorreta:** uma PaCO₂ alta não define alcalose respiratória. **D incorreta:** a alteração ventilatória é principal compensação aguda da acidose metabólica. **E incorreta:** bicarbonato 14 está reduzido. **Mini-revisão:** identificar distúrbio principal e comparar CO₂ observado à compensação esperada antes de concluir que a gasometria está “compensada”.
 
 ## 22. Roteiro de autossuficiência: onde buscar a justificativa dentro deste caderno
 
