@@ -765,11 +765,19 @@ E. A PaCO₂ elevada confirma alcalose metabólica primária.
 | Bicarbonato reduz mortalidade na acidemia grave com LRA? | Seção 17; caso G; questão 9 |
 | Qual é o risco de intubar em acidose com hiperventilação? | Seção 19; caso F; questão 8 |
 | Por que salicilatos podem dar pH próximo ao normal? | Seções 12 e 18; caso H; questão 7 |
+| Como o rim gera bicarbonato novo pela excreção de amônio? | Seção 7.3; questão 13 |
+| Qual o papel e a limitação do AG urinário? | Seção 7.4; caso K; questão 14 |
+| Por que cetonúria reagente não impede declarar resolução bioquímica da CAD em adultos? | Seções 11.1–11.2; caso L; questão 15 |
+| Como reconhecer hipoventilação adicional numa acidose metabólica? | Seções 3–4; questão 16 |
 | PvO₂ mede oxigenação arterial? | Seção 2; questão 10 |
 
 **Estado deste teste:** matriz elaborada, mas **a validação independente por um segundo revisor não foi realizada**. O aluno pode encontrar as respostas no manuscrito, porém isso não garante que cada seção esteja didaticamente suficiente ou livre de redundância. A revisão editorial deverá desafiar os casos com perguntas inéditas e corrigir lacunas encontradas.
 
 ## 23. Referências finais anotadas e divergências deliberadamente registradas
+
+- **Amôniogênese e geração renal de HCO₃⁻:** Weiner ID, Verlander JW. *Renal ammonia metabolism and transport*. *Compr Physiol*. 2013;3:201–220. DOI 10.1002/cphy.c120010. https://pmc.ncbi.nlm.nih.gov/articles/PMC4319187/ — distingue recuperação do bicarbonato filtrado, produção e excreção líquida de ácido.
+- **Limitações clínicas das estimativas de NH₄⁺ urinário:** Batlle D et al. *Urinary Ammonium in Clinical Medicine*. *Adv Kidney Dis Health*. 2023. DOI 10.1053/j.akdh.2022.12.006. https://pubmed.ncbi.nlm.nih.gov/36868734/ — contextualiza utilidade/limites do ânion gap urinário.
+
 
 - **Brasil:** Gomes EB, Pereira HCP. *Interpretação de gasometria arterial*. VITTALLE 2021;33:203–218. DOI 10.14295/vittalle.v33i1.11501. https://periodicos.furg.br/vittalle/article/view/11501 — didática e aplicação em português brasileiro.
 - **Raciocínio de gasometria e misturas:** Morikawa MJ, Ganesh PR. *Acid-Base Interpretation: A Practical Approach*. American Family Physician 2025;111:148–155; https://www.aafp.org/afp/2025/0200/acid-base-interpretation.
@@ -782,7 +790,7 @@ E. A PaCO₂ elevada confirma alcalose metabólica primária.
 
 ## 24. Pendências para atingir o padrão final do lead_apostilas
 
-- Ampliar fisiologia renal de secreção ácida/amoniogênese, equilíbrio de eletrólitos e efeitos de alterações rápidas de ventilação.
+- **Fisiologia renal de amôniogênese ampliada na rodada 16/10/2026** (seções 7.3–7.4); seguem pendentes auditoria independente de transporte tubular em comorbidades, equilíbrio de eletrólitos e efeitos de alterações rápidas da ventilação.
 - Detalhar acidose láctica, intoxicações específicas e implicações de osmolar gap conforme tempo de ingestão.
 - Expandir distúrbios respiratórios em ventilação mecânica, gravidez, doenças neuromusculares e idosos.
 - Desenvolver algoritmo de bicarbonato e diálise com critérios e riscos, sem substituir protocolos brasileiros locais.
@@ -792,3 +800,5 @@ E. A PaCO₂ elevada confirma alcalose metabólica primária.
 - Fazer revisão independente por clínico/nefrologista/intensivista, matriz de autossuficiência com âncoras internas, migração para renderer LURIA e inspeção desktop/PWA.
 
 **Status:** manuscrito educacional em elaboração; doses e decisões práticas exigem protocolo de serviço e revisão clínica antes de publicação comercial.
+
+**Checkpoint 16/10/2026 — ampliação do lote 5 (tema 101):** após leitura efetiva de dois PDFs de gasometria (Partes 1/2) do Drive, sem autoria Estratégia MED comprovada, foram acrescentados §§7.3–7.4 sobre amôniogênese e limitações do AG urinário, casos **K–L** (diarreia/acidose hiperclorêmica e resolução bioquímica da CAD adulta) e questões **13–16** com comentário de todas as alternativas. Ampliada matriz de autossuficiência e referências científicas. Resultados internos das contas: AG sérico **11 mEq/L** [139−(114+14)]; AG urinário **−25 mEq/L** [35+20−80]; PaCO₂ de Winter **29 ±2 mmHg** [1,5×14+8], compatível com PaCO₂ observada 30; para a CAD, AG **11** [139−(111+17)] e interpretação do consenso adulto de 2024 depende de β-hidroxibutirato <0,6 e pH venoso ≥7,3 ou bicarbonato ≥18. Sequência conferida: capítulos 0–24 (25), casos A–L (12), questões 1–16, todas A–E, gabarito e mini-revisão. **Extensão bruta e estimativa de caracteres úteis não constituem revisão clínica independente.** Continuam pendentes curadoria/licenças das imagens, auditoria científica de medicamentos e protocolos, revisão médica, testes desktop/PWA, integração e publicação autorizada. **RASCUNHO, SEM MERGE/DEPLOY.**
