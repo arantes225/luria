@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 18,
+  "version": 19,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -215,10 +215,10 @@
       "source_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
       "source_sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
-      "consolidated_sha": "d0487824789a66f59b7f3c2796f224f3a960bcdc",
+      "consolidated_sha": "6b1abbfe2f3c1a06f5eda1c6bd6e28d008a7c6c8",
       "source_raw_characters": 76752,
-      "consolidated_raw_characters": 96147,
-      "consolidated_approximate_plain_characters": 91723,
+      "consolidated_raw_characters": 120815,
+      "consolidated_approximate_plain_characters": null,
       "chapter_count": 10,
       "chapters": [
         {
@@ -262,13 +262,17 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 16,
-      "question_count": 23,
+      "case_count": 19,
+      "question_count": 26,
       "source_numbered_chapter_count": 27,
-      "preflight_warnings": [],
+      "preflight_warnings": [
+        "Drive: comparação adulta específica não localizada; foi lido resumo de pneumonia comunitária pediátrica apenas para escopo, sem extrapolar condutas. Verificar benchmark adulto antes de certificação.",
+        "Manejo de empiema, drenagem e uso de fibrinolíticos exige avaliação de especialista, indicação e revisão de critérios locais de técnica e disponibilidade.",
+        "Apostila não certificada; referências e posologias pendem revisão médica independente e testes Node/PWA."
+      ],
       "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
-      "json_visible_estimate": 91723,
-      "json_table_count": 12
+      "json_visible_estimate": null,
+      "json_table_count": 15
     },
     {
       "id": "TUBERCULOSE",
@@ -333,13 +337,13 @@
       "json_table_count": 23
     }
   ],
-  "last_expansion": "2026-10-15",
+  "last_expansion": "2026-10-16",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "55623512237d1acf7219eab80ed410c066b67f33",
+  "input_json_sha": "43251477c992bc3b33f4920557346639a9f8f5c0",
   "last_update_scope": [
-    "Diabetes: novos tópicos 8.5–8.9, hiperglicemia hospitalar, metas UTI/enfermaria, uso de insulina basal/prandial, cirurgia, GLP-1 e iSGLT2, CAD euglicêmica, hipoglicemia e algoritmo",
-    "Três casos e três questões autorais e quatro fontes oficiais novas, benchmark Drive antidiabéticos orais e subcutâneos, pré-anestésica, CAD/EHH lidos",
-    "Pré-publicação na branch editorial, sem imagens novas, merge ou deploy"
+    "PAC adulta: seções 7.9–7.12 aprofundam derrame complicado/empiema e pH pleural BTS 2023, controle de foco, pneumonite química versus aspiração, falha terapêutica e duração individual",
+    "Três casos novos (17–19), três questões (24–26), duas referências complementares, comparação Drive parcial e não certificadora",
+    "Pré-publicação, cinco livros preservados, imagens vazias, sem publicação/merge/deploy"
   ],
-  "last_revision": "2026-10-15"
+  "last_revision": "2026-10-16"
 }
