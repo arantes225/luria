@@ -1,0 +1,165 @@
+{
+  "sha": "65815cb21fe7598e396c7c5afc4986192a54b326",
+  "path": "apostilas/_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--65815cb21f",
+  "title": "LURIA — LOTE 7 · AULA 136",
+  "format": ".md",
+  "chars_estimated": 18320,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — LOTE 7 · AULA 136"
+    },
+    {
+      "title": "Hemorragia digestiva: integração clínica, localização e decisões da emergência"
+    },
+    {
+      "title": "0. Etapa zero — comparativos reais"
+    },
+    {
+      "title": "1. Três síndromes clínicas, não três cores de fezes"
+    },
+    {
+      "title": "2. Reconhecer choque antes de classificar Forrest"
+    },
+    {
+      "title": "3. Localizar por probabilidade sem atrasar terapia"
+    },
+    {
+      "title": "4. Qual relógio endoscópico?"
+    },
+    {
+      "title": "5. Antitrombóticos e hemostasia: tratar dois riscos em paralelo"
+    },
+    {
+      "title": "6. Fontes não raras e raras — construir um diferencial útil"
+    },
+    {
+      "title": "7. Ferramentas de risco: usar quando o paciente está vivo e a pergunta é correta"
+    },
+    {
+      "title": "8. Algoritmo integrador"
+    },
+    {
+      "title": "9. Quatro casos integradores"
+    },
+    {
+      "title": "Caso 1 — hematêmese e cirrose"
+    },
+    {
+      "title": "Caso 2 — hematoquezia e choque, origem indeterminada"
+    },
+    {
+      "title": "Caso 3 — AAS secundário e úlcera"
+    },
+    {
+      "title": "Caso 4 — EDA/colonoscopia negativas com anemia e novo sangramento"
+    },
+    {
+      "title": "10. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "11. Imagens/esquemas candidatos — sem publicação"
+    },
+    {
+      "title": "12. Referências verificáveis"
+    },
+    {
+      "title": "13. Qualidade e pendências"
+    }
+  ],
+  "reference_entries": [
+    "**Úlcera péptica:** mucosa ultrapassa barreira e pode lesar vaso; AINE e H. pylori entre causas centrais. Forrest classifica estigma endoscópico; em alto risco, hemostasia endoscópica + IBP em esquema adequado. Em ressangramento, reendoscopia e, se falha, TAE/cirurgia.  ",
+    "**Varizes:** hipertensão portal, vasoativo e antibiótico antes de EDA, ligadura esofágica, técnicas específicas para gástricas, TIPS em resgate/alto risco. Não prescrever IBP crônico apenas por varizes.  ",
+    "**Diverticular:** hematoquezia por vezes volumosa e indolor; divertículo incidental não prova localização.  ",
+    "**Colite isquêmica:** dor abdominal após baixo fluxo seguida de sangue; necrose/peritonite muda para cirurgia.  ",
+    "**Angiodisplasia:** episódios intermitentes, idosos e doença cardiovascular/renal, endoscopia hemostática conforme lesão.  ",
+    "**Câncer:** anemia crônica e mudança de hábito, mas também pode apresentar sangramento visível; investigar mesmo com doença anorretal coexistente.  ",
+    "**Fístula aortoentérica:** em portador de prótese vascular aórtica, hemorragia sentinela pode preceder evento fatal; solicitar avaliação vascular urgente, não atribuir simplesmente a úlcera.  ",
+    "**Hemobilia e hemossuco pancreático:** antecedentes hepatobiliares/pancreáticos, pseudoaneurisma, EDA inconclusiva, podem exigir imagem/angiografia.",
+    "**Glasgow–Blatchford (GBS):** pré-EDA, incorpora ureia, Hb, pressão, pulso, melena, síncope, insuficiência cardíaca/hepatopatia. Faixa muito baixa (0–1) pode apoiar manejo ambulatorial **apenas em pessoa realmente estável e com seguimento**. Não aplicar GBS como “autorização automática” para alta em cirrótico com hematêmese.",
+    "**Rockall:** estratificação clínica/endoscópica da HDA, mais associado a prognóstico do que a triagem simples antes de EDA.",
+    "**Oakland:** ferramenta para HDB com potencial uso em identificação de baixo risco, porém depende de validação/população/local e avaliação clínica. Não inventar pontuação em aula sem tabela e cálculo conferidos.",
+    "**Child–Pugh/MELD:** em HDA de cirrótico, avaliam reserva hepática/prognóstico e participam de seleção de TIPS; não substituem ABCDE.",
+    "1. Pergunte **“instável?”** antes de “alta ou baixa?”; ressuscitação e sangue conforme gravidade.",
+    "2. Proteja via aérea quando necessário; colher laboratórios, revisar antitrombóticos.",
+    "3. Hematêmese/cirrose → suspeita varicosa? vasoativo e profilaxia antibiótica oportunos.",
+    "4. Melena sem origem conhecida → avaliar prioridade de EDA.",
+    "5. Hematoquezia volumosa com choque → pensar HDA maciça e HDB; CTA/EDA conforme melhor probabilidade e disponibilidade.",
+    "6. Estável com provável HDB → preparo e colonoscopia.",
+    "7. Identifique foco e obtenha hemostasia definitiva, não apenas normalização transitória de sinais.",
+    "8. Se ressangrar, acione via de resgate (nova endoscopia, radiologia intervencionista, cirurgia).",
+    "9. Investigue e trate causa (H. pylori, profilaxia varicosa, câncer, AINE, colite, anticoagulação).",
+    "10. Antes da alta: anemia/ferro, plano de medicação, sinais de alarme, retorno, acesso e educação.",
+    "**Gabarito C.** Hematoquezia pode ocorrer em HDA de grande fluxo. **A/B** inferem localização pela cor. **D** ignora choque. **Mini-revisão:** hemodinâmica antes de topografia.",
+    "**Gabarito B.** Varizes requerem pacote precoce. **A** omite terapia; **C** agrava hipotensão; **D** não é exame inicial. **Mini-revisão:** relógio varicoso distinto.",
+    "**Gabarito A.** ESGE/ACG recomendam EDA precoce após estabilização, com exceções por instabilidade. **B/D** atrasam; **C** inseguro. **Mini-revisão:** reanimação não pode ser omitida.",
+    "**Gabarito B.** Técnica e timing devem ser adequados. **A** pode prejudicar rendimento; **C** é falso; **D** compromete manejo. **Mini-revisão:** colonoscopia urgente universal não comprovou superioridade.",
+    "**Gabarito D.** Decisão integra dois riscos. **A/B/C** têm potencial de dano. **Mini-revisão:** antitrombóticos exigem plano, não apenas suspensão.",
+    "**Gabarito A.** Delgado/lesões intermitentes permanecem possíveis. **B/C/D** negligenciam causa orgânica. **Mini-revisão:** rever qualidade e completar estudo.",
+    "1. Linha anatômica do Treitz ao reto. 2. Esquema de circulação GI e trânsito do sangue. 3. Fotografia endoscópica de úlcera Forrest Ia sob licença. 4. EDA de varizes esofágicas sob licença. 5. Colonoscopia de sangramento diverticular sob licença. 6. Colonoscopia de angiodisplasia sob licença. 7. CTA de extravasamento colônico sob licença. 8. Angiografia de embolização sob licença. 9. Quadro LURIA das janelas EDA/colonoscopia. 10. Diagrama ABCDE de hemorragia. 11. Fluxo de antitrombóticos. 12. Anatomia do delgado/cápsula. **Nenhuma imagem real obtida ou liberada para uso comercial; buscar candi",
+    "1. Laine L et al. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol*, 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/"
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/guidelines",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Clínica Médica / Gastroenterologia / Urgência **Situação:** **RASCUNHO INTEGRADOR**, não publicado e não certificado como livro-texto autossuficiente. **Revisão:** 14/10/2026. **Vínculos curriculares:** aula 127, hemorragia digestiva alta; aula 132, hemorragia digestiva baixa. **Objetivo desta aula:** não fabricar uma terceira apostila repetindo mecanicamente úlceras, varizes, divertículos e colonoscopia. Construir um eixo transversal de diagnóstico, risco, escolha de testes, ressuscitação e prevenção de erros — **com explicações suficientes para interpretar os casos sem memorizar respostas**. Antes de promover o material, integrar "
+    },
+    {
+      "text": "**Armadilha:** o diagnóstico “hemorroida” é insuficiente para explicar hipotensão profunda e confusão na presença de hematoquezia volumosa; não concluir sítio pela cor quando a perfusão está comprometida."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

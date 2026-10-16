@@ -1,0 +1,107 @@
+{
+  "sha": "9ea59194ee88a55ccc50b348ccac3890f38f8d32",
+  "path": "apostilas/puberdade-precoce-atrasada/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "puberdade-precoce-atrasada--9ea59194ee",
+  "title": "LURIA — Apostila 245: Puberdade precoce, puberdade atrasada e alterações do desenvolvimento puberal",
+  "format": ".md",
+  "chars_estimated": 17650,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 245: Puberdade precoce, puberdade atrasada e alterações do desenvolvimento puberal"
+    },
+    {
+      "title": "1. Princípios do desenvolvimento puberal"
+    },
+    {
+      "title": "2. Puberdade normal e limites de idade"
+    },
+    {
+      "title": "3. Puberdade precoce central (PPC) versus periférica"
+    },
+    {
+      "title": "4. Anamnese e exame físico dirigidos"
+    },
+    {
+      "title": "5. Diagnóstico laboratorial conforme Endocrine Society 2026"
+    },
+    {
+      "title": "5.1 RM de crânio: atualização importante de 2026"
+    },
+    {
+      "title": "5.2 Genética"
+    },
+    {
+      "title": "6. Tratamento da puberdade precoce"
+    },
+    {
+      "title": "7. Puberdade atrasada: definição e diferenciais"
+    },
+    {
+      "title": "8. Exames do atraso puberal"
+    },
+    {
+      "title": "9. Terapia no atraso puberal"
+    },
+    {
+      "title": "10. Diagnósticos diferenciais: quadro integrado"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "12. Seis questões autorais comentadas"
+    },
+    {
+      "title": "13. Figuras candidatas a curadoria (não incorporadas)"
+    },
+    {
+      "title": "14. Referências"
+    },
+    {
+      "title": "15. Checklist editorial"
+    }
+  ],
+  "reference_entries": [
+    "1. Latronico AC et al. **Central Precocious Puberty: An Endocrine Society Clinical Practice Guideline**. JCEM, publicado junho 2026. https://www.endocrine.org/clinical-practice-guidelines/central-precocious-puberty",
+    "2. Ministério da Saúde. **Triagem Neonatal** (HAC, hipotireoidismo congênito e outros). https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal",
+    "3. ACMG. **Exome and genome sequencing for pediatric patients with congenital anomalies or intellectual disability**. Genet Med. 2021. https://pubmed.ncbi.nlm.nih.gov/34211152/ (para discussão genética selecionada)"
+  ],
+  "external_urls": [
+    "https://www.endocrine.org/clinical-practice-guidelines/central-precocious-puberty",
+    "https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal",
+    "https://pubmed.ncbi.nlm.nih.gov/34211152/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Na convenção clínica usual, puberdade precoce é aparecimento de caracteres sexuais antes de **8 anos em meninas** e **9 anos em meninos**, mas o contexto populacional, intensidade da progressão e estágio inicial mudam a abordagem. Em meninas, o primeiro achado puberal gonadal costuma ser telarca (B2); em meninos, aumento testicular (volume ≥4 mL em muitos critérios) precede mudanças penianas importantes. A menarca costuma ocorrer após período de desenvolvimento mamário, e a ausência de menarca com desenvolvimento puberal avançado requer avaliação."
+    },
+    {
+      "text": "A **diretriz Endocrine Society 2026** recomenda que meninas com telarca B2 entre **7,0 e 8,0 anos**, sem achados de alerta, possam ser inicialmente acompanhadas por **observação e exame periódico**, em vez de investigação laboratorial e imagem imediatas. Isso **não** equivale a ignorar todas as meninas abaixo de oito anos: progressão acelerada, sinais neurológicos, crescimento excessivo e idades menores justificam avaliação."
+    },
+    {
+      "text": "A diretriz 2026 **sugere contra RM de rotina** em **meninas de 6–8 anos** e **meninos de 8–9 anos** com PPC confirmada e **sem achados do SNC**. Isso **não se aplica** aos mais jovens que esses intervalos ou a pacientes com cefaleia progressiva, convulsões, déficits visuais ou outros sinais neurológicos. Contrasta com abordagens mais antigas que indicavam RM para todos os meninos com PPC; mencionar evolução das recomendações é didaticamente essencial."
+    },
+    {
+      "text": "Nem toda telarca aos 7,5 anos precisa de bloqueio. A decisão requer duração, progressão, idade óssea, velocidade de crescimento, estatura-alvo familiar e expectativa de benefício. Terapia não substitui manejo psicológico, inclusão social e acompanhamento; dúvidas sobre crescimento e fertilidade devem ser discutidas em linguagem adequada."
+    },
+    {
+      "text": "Em convenção clínica, suspeitar de atraso quando **meninas não apresentam telarca até 13 anos** ou **meninos não apresentam aumento testicular até 14 anos**; investigar **ausência de menarca até 15 anos** ou mais de três anos após telarca conforme contexto e evolução. Essas faixas são de triagem, não diagnóstico etiológico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

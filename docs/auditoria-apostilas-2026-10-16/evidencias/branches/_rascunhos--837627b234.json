@@ -1,0 +1,322 @@
+{
+  "sha": "837627b234087376682691f7cd89f82193ae2402",
+  "path": "apostilas/_rascunhos/lote-09-aula-184-cefaleias-sinais-alarme-neurologicos.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--837627b234",
+  "title": "LURIA — Apostila 184 | Cefaleias e sinais de alarme neurológicos",
+  "format": ".md",
+  "chars_estimated": 96463,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 184 | Cefaleias e sinais de alarme neurológicos"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Cefaleia é sintoma, síndrome e por vezes doença"
+    },
+    {
+      "title": "1.1 Cinco tempos clinicamente diferentes"
+    },
+    {
+      "title": "1.2 Epidemiologia e relevância"
+    },
+    {
+      "title": "2. Neuroanatomia e fisiopatologia necessárias ao raciocínio"
+    },
+    {
+      "title": "3. História clínica: perguntas que mais discriminam"
+    },
+    {
+      "title": "3.1 Exame físico com intencionalidade"
+    },
+    {
+      "title": "4. Sinais de alarme: SNOOP10 adaptado ao raciocínio clínico"
+    },
+    {
+      "title": "4.1 O problema da “pior dor da vida”"
+    },
+    {
+      "title": "4.2 O que NÃO afasta emergência"
+    },
+    {
+      "title": "5. Quando e como investigar: TC, RM, angioimagem e punção liquórica"
+    },
+    {
+      "title": "5.1 Suspeita de HSA: a janela de seis horas exige condições"
+    },
+    {
+      "title": "5.2 Quando LP vem depois de neuroimagem"
+    },
+    {
+      "title": "5.3 Cefaleia primária típica não é indicação automática de TC"
+    },
+    {
+      "title": "6. Migrânea (enxaqueca) sem aura: critérios e lógica"
+    },
+    {
+      "title": "6.1 As fases de um ataque"
+    },
+    {
+      "title": "6.2 Episódica versus crônica"
+    },
+    {
+      "title": "6.3 Diagnósticos diferenciais de migrânea"
+    },
+    {
+      "title": "7. Aura migranosa e distinção de AVC/AIT"
+    },
+    {
+      "title": "Quadro comparativo orientado ao tempo"
+    },
+    {
+      "title": "8. Cefaleia do tipo tensão: reconhecer sem desvalorizar"
+    },
+    {
+      "title": "9. Cefaleias trigêmino-autonômicas: a duração da crise é central"
+    },
+    {
+      "title": "9.1 Cefaleia em salvas"
+    },
+    {
+      "title": "9.2 Hemicrania paroxística e hemicrania contínua"
+    },
+    {
+      "title": "9.3 SUNCT e SUNA"
+    },
+    {
+      "title": "Quadro comparativo"
+    },
+    {
+      "title": "10. Neuralgia do trigêmeo e diagnósticos de dor facial"
+    },
+    {
+      "title": "11. Tratamento da migrânea aguda: objetivo, vias e seleção terapêutica"
+    },
+    {
+      "title": "11.1 Analgésicos e anti-inflamatórios"
+    },
+    {
+      "title": "11.2 Triptanos: entender receptor e contraindicações"
+    },
+    {
+      "title": "11.3 Gepantes e outras classes dirigidas"
+    },
+    {
+      "title": "11.4 Antieméticos e hidratação"
+    },
+    {
+      "title": "11.5 O que evitar"
+    },
+    {
+      "title": "12. Migrânea no pronto-socorro: a mudança de evidências de 2025"
+    },
+    {
+      "title": "12.1 Roteiro de emergência com decisão causal"
+    },
+    {
+      "title": "13. Quando prevenir? A indicação não depende de número mágico de crises"
+    },
+    {
+      "title": "13.1 Medidas não farmacológicas com racional clínico"
+    },
+    {
+      "title": "13.2 Escolha do preventivo por comorbidades e riscos"
+    },
+    {
+      "title": "13.3 Diretrizes AHS versus NICE: diferença que precisa aparecer no material"
+    },
+    {
+      "title": "13.4 Como avaliar sucesso e tolerabilidade"
+    },
+    {
+      "title": "14. Cefaleia por uso excessivo de medicamentos (MOH): por que o tratamento pode perpetuar a dor?"
+    },
+    {
+      "title": "14.1 Tratamento não é simplesmente “proibir remédio”"
+    },
+    {
+      "title": "15. Tratamento da cefaleia em salvas e outras formas trigêmino-autonômicas"
+    },
+    {
+      "title": "16. Cefaleias secundárias tempo-dependentes: do sintoma à ameaça"
+    },
+    {
+      "title": "16.1 Hemorragia subaracnóidea aneurismática (HSA)"
+    },
+    {
+      "title": "16.2 Vasoconstrição cerebral reversível (RCVS)"
+    },
+    {
+      "title": "16.3 Trombose venosa cerebral (CVST)"
+    },
+    {
+      "title": "16.4 Dissecção de carótida ou vertebral"
+    },
+    {
+      "title": "16.5 Arterite de células gigantes (ACG)"
+    },
+    {
+      "title": "16.6 Infecção do SNC: meningite e encefalite"
+    },
+    {
+      "title": "16.7 Hipertensão intracraniana idiopática (HII)"
+    },
+    {
+      "title": "16.8 Hipotensão intracraniana espontânea e cefaleia pós-punção"
+    },
+    {
+      "title": "16.9 Glaucoma agudo de ângulo fechado"
+    },
+    {
+      "title": "16.10 Emergências hipertensivas, gestação e PRES"
+    },
+    {
+      "title": "16.11 Apoplexia hipofisária"
+    },
+    {
+      "title": "16.12 Neoplasia intracraniana e hidrocefalia"
+    },
+    {
+      "title": "17. Red flags por população e cenário: não generalizar algoritmo adulto típico"
+    },
+    {
+      "title": "17.1 Gestantes e puérperas"
+    },
+    {
+      "title": "17.2 Adultos acima de 50 anos"
+    },
+    {
+      "title": "17.3 Pessoas imunossuprimidas"
+    },
+    {
+      "title": "17.4 Crianças e adolescentes"
+    },
+    {
+      "title": "17.5 Anticoagulados e pós-trauma"
+    },
+    {
+      "title": "18. Seguimento, prognóstico e prevenção de incapacidade"
+    },
+    {
+      "title": "18.1 Orientações de retorno"
+    },
+    {
+      "title": "19. Casos clínicos comentados: raciocínio que muda conduta"
+    },
+    {
+      "title": "Caso 1 — Jovem com “a pior dor da vida”: a armadilha de tratar e dispensar"
+    },
+    {
+      "title": "Caso 2 — Dor progressiva no puerpério: não ancorar em cefaleia pós-raqui"
+    },
+    {
+      "title": "Caso 3 — Migrânea sem aura recorrente, agora com uso excessivo de analgésicos"
+    },
+    {
+      "title": "Caso 4 — Dor orbitária unilateral: salvas, glaucoma ou dissecção?"
+    },
+    {
+      "title": "Caso 5 — Cefaleia temporal de intensidade moderada em mulher de 73 anos"
+    },
+    {
+      "title": "Caso 6 — Cefaleia ortostática após punção"
+    },
+    {
+      "title": "20. Questões autorais comentadas (estilo ENAMED/residência)"
+    },
+    {
+      "title": "Questão 1 — Cefaleia em trovoada"
+    },
+    {
+      "title": "Questão 2 — Migrânea sem aura"
+    },
+    {
+      "title": "Questão 3 — Aura versus evento vascular"
+    },
+    {
+      "title": "Questão 4 — Cefaleia em salvas"
+    },
+    {
+      "title": "Questão 5 — Uso excessivo de analgésicos"
+    },
+    {
+      "title": "Questão 6 — Cefaleia na emergência"
+    },
+    {
+      "title": "Questão 7 — Hipertensão intracraniana idiopática"
+    },
+    {
+      "title": "Questão 8 — Idoso com nova cefaleia"
+    },
+    {
+      "title": "21. Algoritmo clínico original da LURIA: o que fazer em cada ponto decisório"
+    },
+    {
+      "title": "22. Quadro de diferenciais rápidos por alteração clínica"
+    },
+    {
+      "title": "23. Síntese de alto rendimento"
+    },
+    {
+      "title": "24. Bibliografia médica real para conferência editorial"
+    },
+    {
+      "title": "25. Registro visual previsto — curadoria ainda NÃO concluída"
+    },
+    {
+      "title": "26. Matriz de cobertura e auditoria editorial"
+    },
+    {
+      "title": "Parecer honesto de qualidade"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://ichd-3.org/",
+    "https://ichd-3.org/1-migraine/1-1-migraine-without-aura/",
+    "https://ichd-3.org/1-migraine/1-2-migraine-with-aura/",
+    "https://ichd-3.org/3-trigeminal-autonomic-cephalalgias/3-1-cluster-headache/",
+    "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/",
+    "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+    "https://acsearch.acr.org/docs/69482/Narrative/",
+    "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage",
+    "https://doi.org/10.1161/STR.0000000000000456",
+    "https://doi.org/10.1111/head.70016",
+    "https://pubmed.ncbi.nlm.nih.gov/41321235/",
+    "https://doi.org/10.1111/head.14692"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O estudante deve sair desta apostila sabendo reconstruir a história temporal de uma cefaleia, reconhecer apresentações que exigem investigação imediata, distinguir síndromes primárias e secundárias, aplicar os critérios da ICHD-3 às formas mais frequentes, escolher neuroimagem e outros testes conforme cenário, tratar ataques de migrânea e cefaleia em salvas sem intervenções inadequadas, evitar cronificação pelo uso excessivo de analgésicos e construir profilaxia com metas e acompanhamento. A segurança clínica depende principalmente de **não dar o diagnóstico de “enxaqueca” antes de excluir alertas relevantes** e, na outra direção, de **não so"
+    },
+    {
+      "text": "**Início abrupto:** atinge intensidade máxima em segundos a um minuto; é “cefaleia em trovoada” e exige investigação de hemorragia subaracnóidea e outras causas vasculares. **Crise de horas:** pode corresponder a migrânea, mas alterações neurológicas, febre, gravidez, pós-parto ou primeiro episódio tardio modificam a hipótese. **Ataques de minutos repetidos em salvas:** levantam hipótese de cefaleia trigêmino-autonômica. **Cefaleia diária progressiva em semanas:** sugere avaliar hipertensão intracraniana, neoplasia, infecção, doença vascular e uso de medicamentos. **Cefaleia crônica estável por anos, com exame normal e fenômenos típicos:** us"
+    },
+    {
+      "text": "Inspecionar olho doloroso, hiperemia, córnea, pupila, acuidade visual e sintomas de halos — glaucoma agudo exige abordagem oftalmológica, não tratamento rotineiro de “enxaqueca ocular”. Palpar artérias temporais e buscar claudicação mandibular, alterações visuais e sintomas sistêmicos em pessoas acima de 50 anos, sobretudo quando cefaleia é nova. Examinar pescoço para dor e limitação de movimento, valorizando contexto de febre, déficit ou trauma. O exame muda a probabilidade de doença; um exame normal isolado não elimina todas as causas de cefaleia em trovoada."
+    },
+    {
+      "text": "| Sinal/contexto | Por que preocupa | Hipóteses e próximos passos | |---|---|---| | Cefaleia em trovoada (pico em até um minuto) | Possível hemorragia ou evento vascular agudo | TC sem contraste urgente; aprofundar conforme tempo, qualidade e risco | | Déficit focal, rebaixamento, convulsão | Lesão estrutural, vascular, inflamatória ou infecciosa | Avaliação neurológica urgente e imagem apropriada | | Febre, meningismo, imunossupressão | Infecção do SNC e doenças oportunistas | Investigar sepse/meningite/encefalite; estabilizar e não atrasar tratamento | | Nova cefaleia após 50 anos | Maior chance de arterite temporal e doença secundária | Ex"
+    },
+    {
+      "text": "**Primeira cefaleia após 50 anos** não significa que todo paciente tem arterite, porém exige perguntar sobre sintomas sistêmicos, claudicação de mandíbula, alterações visuais e polimialgia reumática. **Idade e história importam mais que o grau de dor:** uma pessoa idosa com cefaleia moderada e perda visual transitória pode ter maior urgência que jovem com crise muito forte, habitual, sem qualquer alerta."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,832 @@
+{
+  "key": "avc-crises-convulsivas--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/avc-crises-convulsivas/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 176 | Acidente vascular cerebral e crises convulsivas",
+  "source_sha256": "76b8ddc4363c9d190402d7e09ba4e899cd9541aee31b42625e4f289164ee1859",
+  "chars_estimated": 87525,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 176 | Acidente vascular cerebral e crises convulsivas",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Competências do estudante",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "2. Duas emergências que podem se apresentar juntas",
+      "level": 2
+    },
+    {
+      "line": 38,
+      "title": "2.1. Mecanismos fisiopatológicos",
+      "level": 3
+    },
+    {
+      "line": 44,
+      "title": "3. Anatomia vascular: localizar a lesão no exame clínico",
+      "level": 2
+    },
+    {
+      "line": 46,
+      "title": "3.1. Circulação anterior",
+      "level": 3
+    },
+    {
+      "line": 54,
+      "title": "3.2. Circulação posterior",
+      "level": 3
+    },
+    {
+      "line": 62,
+      "title": "3.3. Pequenos vasos",
+      "level": 3
+    },
+    {
+      "line": 66,
+      "title": "3.4. Quadro comparativo",
+      "level": 3
+    },
+    {
+      "line": 80,
+      "title": "4. Epidemiologia, risco e prevenção",
+      "level": 2
+    },
+    {
+      "line": 88,
+      "title": "4.1. Prevenção primária de AVC",
+      "level": 3
+    },
+    {
+      "line": 92,
+      "title": "5. Linha de cuidado do AVC agudo: da rua à TC",
+      "level": 2
+    },
+    {
+      "line": 94,
+      "title": "5.1. Reconhecimento e transporte",
+      "level": 3
+    },
+    {
+      "line": 98,
+      "title": "5.2. Último momento conhecido bem (last known well)",
+      "level": 3
+    },
+    {
+      "line": 102,
+      "title": "5.3. ABCDE e testes iniciais",
+      "level": 3
+    },
+    {
+      "line": 106,
+      "title": "5.4. NIHSS e mRS",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "6. Imagem inicial: TC sem contraste é decisiva",
+      "level": 2
+    },
+    {
+      "line": 116,
+      "title": "6.1. Sinais precoces de isquemia na TC",
+      "level": 3
+    },
+    {
+      "line": 120,
+      "title": "6.2. Angio-TC e angio-RM",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "6.3. Perfusão e RM: quando mudam a janela",
+      "level": 3
+    },
+    {
+      "line": 128,
+      "title": "6.4. Hemorragia e sinais de outra causa",
+      "level": 3
+    },
+    {
+      "line": 134,
+      "title": "7. AVC isquêmico agudo: janela de trombólise e incapacidade",
+      "level": 2
+    },
+    {
+      "line": 138,
+      "title": "7.1. Alteplase versus tenecteplase — dose e administração",
+      "level": 3
+    },
+    {
+      "line": 148,
+      "title": "7.2. Não confundir déficit leve com não incapacitante",
+      "level": 3
+    },
+    {
+      "line": 154,
+      "title": "7.3. Critérios e contraindicações relevantes",
+      "level": 3
+    },
+    {
+      "line": 160,
+      "title": "7.4. Monitorização pós-IVT",
+      "level": 3
+    },
+    {
+      "line": 164,
+      "title": "8. Trombectomia mecânica em oclusão de grande vaso",
+      "level": 2
+    },
+    {
+      "line": 168,
+      "title": "8.1. Janelas convencionais e expandidas",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "8.2. Trombólise e trombectomia não são rivais",
+      "level": 3
+    },
+    {
+      "line": 179,
+      "title": "8.3. Riscos",
+      "level": 3
+    },
+    {
+      "line": 183,
+      "title": "9. Pressão arterial, glicemia, oxigênio, febre e outras medidas no AVCi",
+      "level": 2
+    },
+    {
+      "line": 185,
+      "title": "9.1. PA sem reperfusão",
+      "level": 3
+    },
+    {
+      "line": 189,
+      "title": "9.2. Glicemia",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "9.3. Oxigenação, temperatura, volume",
+      "level": 3
+    },
+    {
+      "line": 197,
+      "title": "9.4. Teste de deglutição e prevenção de pneumonia",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "10. Antiagregação e prevenção secundária após AVCi/AIT",
+      "level": 2
+    },
+    {
+      "line": 207,
+      "title": "10.1. Cardioembolismo e fibrilação atrial",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "10.2. Aterosclerose carotídea",
+      "level": 3
+    },
+    {
+      "line": 217,
+      "title": "10.3. Outras etiologias e TOAST",
+      "level": 3
+    },
+    {
+      "line": 223,
+      "title": "11. AIT — sintomas transitórios não significam baixo risco",
+      "level": 2
+    },
+    {
+      "line": 229,
+      "title": "11.1. Amaurose fugaz",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "12. Hemorragia intracerebral espontânea (HIC) — outra fisiologia, outra conduta",
+      "level": 2
+    },
+    {
+      "line": 239,
+      "title": "12.1. Controle de PA na HIC",
+      "level": 3
+    },
+    {
+      "line": 243,
+      "title": "12.2. Reversão de anticoagulantes",
+      "level": 3
+    },
+    {
+      "line": 249,
+      "title": "12.3. Neurocirurgia e hidrocefalia",
+      "level": 3
+    },
+    {
+      "line": 253,
+      "title": "12.4. Convulsões na HIC",
+      "level": 3
+    },
+    {
+      "line": 257,
+      "title": "13. Hemorragia subaracnóidea (HSA) aneurismática",
+      "level": 2
+    },
+    {
+      "line": 267,
+      "title": "14. Trombose venosa cerebral (TVC) e outras causas vasculares",
+      "level": 2
+    },
+    {
+      "line": 275,
+      "title": "15. Mimetizadores de AVC: problemas do diagnóstico rápido",
+      "level": 2
+    },
+    {
+      "line": 277,
+      "title": "15.1. Hipoglicemia",
+      "level": 3
+    },
+    {
+      "line": 281,
+      "title": "15.2. Paralisia de Todd e crise focal",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "15.3. Enxaqueca com aura",
+      "level": 3
+    },
+    {
+      "line": 289,
+      "title": "15.4. Paralisia facial periférica",
+      "level": 3
+    },
+    {
+      "line": 293,
+      "title": "15.5. Intoxicação, infecção, tumor, conversivo/funcional",
+      "level": 3
+    },
+    {
+      "line": 297,
+      "title": "16. Crise epiléptica: classificação clínica moderna",
+      "level": 2
+    },
+    {
+      "line": 301,
+      "title": "16.1. Crise focal",
+      "level": 3
+    },
+    {
+      "line": 305,
+      "title": "16.2. Crise generalizada",
+      "level": 3
+    },
+    {
+      "line": 309,
+      "title": "16.3. Crise de início desconhecido",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "16.4. Provocada/aguda sintomática versus não provocada",
+      "level": 3
+    },
+    {
+      "line": 317,
+      "title": "17. Diagnóstico de epilepsia — definição ILAE e PCDT brasileiro 2026",
+      "level": 2
+    },
+    {
+      "line": 328,
+      "title": "18. Primeira crise epiléptica em adulto: investigar sem banalizar",
+      "level": 2
+    },
+    {
+      "line": 330,
+      "title": "18.1. História da testemunha",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "18.2. Exames",
+      "level": 3
+    },
+    {
+      "line": 345,
+      "title": "18.3. Quando internar/encaminhar urgente?",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "19. Estado de mal epiléptico — o relógio começa em cinco minutos",
+      "level": 2
+    },
+    {
+      "line": 353,
+      "title": "19.1. Primeiros cinco minutos",
+      "level": 3
+    },
+    {
+      "line": 357,
+      "title": "19.2. Primeiro medicamento: benzodiazepínico em dose correta",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "19.3. Segunda linha: após benzodiazepina adequada",
+      "level": 3
+    },
+    {
+      "line": 369,
+      "title": "19.4. Refratário e super-refratário",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "20. Crises relacionadas a álcool, medicamentos e toxinas",
+      "level": 2
+    },
+    {
+      "line": 385,
+      "title": "21. Antiepilépticos de manutenção: escolher pela síndrome, não pelo nome popular",
+      "level": 2
+    },
+    {
+      "line": 389,
+      "title": "21.1. Seleção orientadora",
+      "level": 3
+    },
+    {
+      "line": 402,
+      "title": "21.2. Efeitos adversos relevantes",
+      "level": 3
+    },
+    {
+      "line": 406,
+      "title": "21.3. Adesão e retirada de fármaco",
+      "level": 3
+    },
+    {
+      "line": 410,
+      "title": "22. EEG, RM e epilepsia não convulsiva",
+      "level": 2
+    },
+    {
+      "line": 418,
+      "title": "23. Situações especiais: gestação, AVC jovem, idosos e epilepsia pós-AVC",
+      "level": 2
+    },
+    {
+      "line": 420,
+      "title": "23.1. Gestação e puerpério",
+      "level": 3
+    },
+    {
+      "line": 426,
+      "title": "23.2. Jovens com AVC",
+      "level": 3
+    },
+    {
+      "line": 430,
+      "title": "23.3. Idosos com crises e AVC",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "23.4. Crise precoce versus tardia após AVC",
+      "level": 3
+    },
+    {
+      "line": 438,
+      "title": "24. Complicações, reabilitação e prognóstico",
+      "level": 2
+    },
+    {
+      "line": 440,
+      "title": "24.1. Complicações de AVC",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "24.2. Complicações de epilepsia/estado de mal",
+      "level": 3
+    },
+    {
+      "line": 454,
+      "title": "24.3. Prognóstico",
+      "level": 3
+    },
+    {
+      "line": 457,
+      "title": "25. Algoritmos LURIA — conduta passo a passo",
+      "level": 2
+    },
+    {
+      "line": 459,
+      "title": "A. Déficit focal súbito",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "B. AVC ao despertar",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "C. Hipertensão com déficit neurológico",
+      "level": 3
+    },
+    {
+      "line": 468,
+      "title": "D. Convulsão ≥5 minutos",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "E. Primeira crise não provocada que terminou",
+      "level": 3
+    },
+    {
+      "line": 474,
+      "title": "F. AVC com crise no início",
+      "level": 3
+    },
+    {
+      "line": 477,
+      "title": "26. Segurança do paciente: erros com risco de morte",
+      "level": 2
+    },
+    {
+      "line": 505,
+      "title": "27. Tabela de revisão em um minuto",
+      "level": 2
+    },
+    {
+      "line": 520,
+      "title": "28. Fontes primárias verificáveis",
+      "level": 2
+    },
+    {
+      "line": 538,
+      "title": "Reconciliação obrigatória de fontes",
+      "level": 3
+    },
+    {
+      "line": 542,
+      "title": "29. Pendências editoriais antes da camada de casos",
+      "level": 2
+    },
+    {
+      "line": 560,
+      "title": "30. Casos clínicos integradores — do primeiro minuto ao seguimento",
+      "level": 2
+    },
+    {
+      "line": 564,
+      "title": "Caso 1 — Afasia súbita com NIHSS baixo e janela convencional",
+      "level": 3
+    },
+    {
+      "line": 578,
+      "title": "Caso 2 — AVC ao despertar e decisão por imagem",
+      "level": 3
+    },
+    {
+      "line": 592,
+      "title": "Caso 3 — Oclusão da basilar e NIHSS moderado-grave",
+      "level": 3
+    },
+    {
+      "line": 606,
+      "title": "Caso 4 — Hemorragia cerebral em paciente usando varfarina",
+      "level": 3
+    },
+    {
+      "line": 620,
+      "title": "Caso 5 — Cefaleia em trovoada com primeira TC sem sangue",
+      "level": 3
+    },
+    {
+      "line": 634,
+      "title": "Caso 6 — AIT que melhorou antes de chegar",
+      "level": 3
+    },
+    {
+      "line": 648,
+      "title": "Caso 7 — Crise focal com hemiparesia após convulsão",
+      "level": 3
+    },
+    {
+      "line": 662,
+      "title": "Caso 8 — Estado de mal tônico-clônico no pronto atendimento",
+      "level": 3
+    },
+    {
+      "line": 676,
+      "title": "Caso 9 — Primeira crise generalizada após hiponatremia grave",
+      "level": 3
+    },
+    {
+      "line": 690,
+      "title": "Caso 10 — Convulsão e hipertensão no puerpério",
+      "level": 3
+    },
+    {
+      "line": 704,
+      "title": "Caso 11 — Primeira crise tardia após AVC cortical",
+      "level": 3
+    },
+    {
+      "line": 718,
+      "title": "Caso 12 — Cefaleia e convulsão por trombose venosa cerebral",
+      "level": 3
+    },
+    {
+      "line": 734,
+      "title": "31. Questões autorais de AVC, epilepsia e estado de mal",
+      "level": 2
+    },
+    {
+      "line": 738,
+      "title": "Questão 1 — TC normal na primeira hora",
+      "level": 3
+    },
+    {
+      "line": 759,
+      "title": "Questão 2 — Horário de início ao despertar",
+      "level": 3
+    },
+    {
+      "line": 780,
+      "title": "Questão 3 — Alteplase na janela convencional",
+      "level": 3
+    },
+    {
+      "line": 801,
+      "title": "Questão 4 — TNK em 2026",
+      "level": 3
+    },
+    {
+      "line": 822,
+      "title": "Questão 5 — NIHSS baixo e afasia incapacitante",
+      "level": 3
+    },
+    {
+      "line": 843,
+      "title": "Questão 6 — Trombectomia e grande vaso",
+      "level": 3
+    },
+    {
+      "line": 864,
+      "title": "Questão 7 — PA para IVT",
+      "level": 3
+    },
+    {
+      "line": 885,
+      "title": "Questão 8 — AAS antes de excluir sangue",
+      "level": 3
+    },
+    {
+      "line": 906,
+      "title": "Questão 9 — PA na HIC",
+      "level": 3
+    },
+    {
+      "line": 927,
+      "title": "Questão 10 — Varfarina e hemorragia intracerebral",
+      "level": 3
+    },
+    {
+      "line": 948,
+      "title": "Questão 11 — Crise no início do AVC",
+      "level": 3
+    },
+    {
+      "line": 969,
+      "title": "Questão 12 — AIT e risco precoce",
+      "level": 3
+    },
+    {
+      "line": 990,
+      "title": "Questão 13 — Definição operacional de epilepsia",
+      "level": 3
+    },
+    {
+      "line": 1011,
+      "title": "Questão 14 — EEG normal exclui epilepsia?",
+      "level": 3
+    },
+    {
+      "line": 1032,
+      "title": "Questão 15 — Estado de mal e tempo",
+      "level": 3
+    },
+    {
+      "line": 1053,
+      "title": "Questão 16 — Primeira linha no estado de mal",
+      "level": 3
+    },
+    {
+      "line": 1074,
+      "title": "Questão 17 — Segunda linha após benzodiazepínico",
+      "level": 3
+    },
+    {
+      "line": 1095,
+      "title": "Questão 18 — Hiponatremia e convulsão",
+      "level": 3
+    },
+    {
+      "line": 1116,
+      "title": "Questão 19 — Crise no puerpério e hipertensão grave",
+      "level": 3
+    },
+    {
+      "line": 1137,
+      "title": "Questão 20 — TVC no puerpério",
+      "level": 3
+    },
+    {
+      "line": 1160,
+      "title": "32. Curadoria visual premium — 20 exames e diagramas candidatos",
+      "level": 2
+    },
+    {
+      "line": 1187,
+      "title": "Critérios de publicação",
+      "level": 3
+    },
+    {
+      "line": 1198,
+      "title": "33. Auditoria científica e editorial consolidada",
+      "level": 2
+    },
+    {
+      "line": 1202,
+      "title": "Conferências realizadas",
+      "level": 3
+    },
+    {
+      "line": 1215,
+      "title": "Pendências obrigatórias antes de publicar",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **AHA/ASA. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke.** *Stroke*. 2026. DOI: https://doi.org/10.1161/STR.0000000000000513 .",
+    "2. **AHA. Top Things to Know — 2026 AIS Guideline.** https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+    "3. **Ministério da Saúde. PCDT do AVC isquêmico agudo.** Portaria Conjunta SAES/SECTICS/MS nº 29 de 12/12/2023 (página oficial 21/01/2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view",
+    "4. **Ministério da Saúde. Linha de Cuidado AVC no Adulto.** https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/",
+    "5. **Ministério da Saúde. Linha de Cuidado AVCi <4 horas, trombólise e monitorização.** https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/unidade-hospitalar/avc-isquemico-menor-igual-4horas/",
+    "6. **AHA/ASA. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage.** *Stroke*. DOI https://doi.org/10.1161/STR.0000000000000407 .",
+    "7. **AHA/ASA. 2023 Guideline for Management of Aneurysmal Subarachnoid Hemorrhage.** *Stroke*. 2023;54:e314–e370. DOI: https://doi.org/10.1161/STR.0000000000000436 .",
+    "8. **Ministério da Saúde. PCDT Epilepsia**, anexo alterado em **05/05/2026**. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "9. **ILAE. A practical clinical definition of epilepsy** (Fisher et al., *Epilepsia* 2014;55:475–482). https://doi.org/10.1111/epi.12550 .",
+    "10. **ILAE. Operational classification of seizure types by the ILAE** (Fisher et al., *Epilepsia* 2017;58:522–530). https://doi.org/10.1111/epi.13670 .",
+    "11. **Kapur et al. Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus (ESETT).** *NEJM*. 2019;381:2103–2113. https://doi.org/10.1056/NEJMoa1905795 .",
+    "12. **Neurocritical Care Society. Guidelines for the evaluation and management of status epilepticus** e literatura atual de tratamento, verificar atualização. https://www.neurocriticalcare.org/",
+    "13. **AHA/ASA. Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack**, diretriz 2021 e atualizações subsequentes (prevenção secundária específica). https://www.ahajournals.org/",
+    "14. **Ministério da Saúde. Catálogo oficial PCDT**, conferir versão e incorporações por medicamento. https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "15. **Ministério da Saúde. Lei sancionada em 02/09/2026 sobre oferta de trombolíticos na rede de urgência SUS**, verificar implementação por localidade sem deduzir oferta universal imediata. https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/setembro/sancionada-lei-que-preve-oferta-de-tromboliticos-para-tratamento-de-infarto-e-avc-na-rede-de-urgencia-e-emergencia-do-sus/",
+    "**AHA/ASA 2026**: referência internacional atual de seleção e tratamento do AVCi; **PCDT do SUS 2023/2025**: referência nacional de implementação, protocolos e elegibilidade. **Não assumir que mudança AHA atualiza automaticamente portaria brasileira**. **PCDT Epilepsia alterado em maio/2026** orienta uso e acesso nacional; protocolos ESETT são fontes de evidência para emergência e requerem dose/apresentação validadas pelo hospital. A presença de fármaco em estudo ou diretriz não garante disponibilidade na rede local."
+  ],
+  "external_links": [
+    {
+      "url": "https://doi.org/10.1161/STR.0000000000000513",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/unidade-hospitalar/avc-isquemico-menor-igual-4horas/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1161/STR.0000000000000407",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1161/STR.0000000000000436",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1111/epi.12550",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1111/epi.13670",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1056/NEJMoa1905795",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.neurocriticalcare.org/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ahajournals.org/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/setembro/sancionada-lei-que-preve-oferta-de-tromboliticos-para-tratamento-de-infarto-e-avc-na-rede-de-urgencia-e-emergencia-do-sus/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Hipoglicemia pode simular hemiparesia; checar e corrigir. Hiperglicemia importante associa-se a piores desfechos, mas a **AHA 2026 não recomenda controle intensivo de 80–130 mg/dL por infusão de insulina** para melhorar desfechos de AVC, pelo risco de hipoglicemia. Manejo razoável segundo protocolos é melhor que extremos.",
+      "pattern": 0
+    },
+    {
+      "text": "A definição operacional ILAE aceita diagnóstico de epilepsia em: 1. **Duas crises não provocadas** (ou reflexas) ocorridas com intervalo **>24 horas**; **OU** 2. **Uma crise não provocada** e probabilidade de novas crises semelhante ao risco após duas crises, **≥60% nos 10 anos seguintes**, por achados estruturais/EEG/síndrome; **OU** 3. Diagnóstico de uma **síndrome epiléptica**.",
+      "pattern": 0
+    },
+    {
+      "text": "A primeira linha é **benzodiazepina adequada à via**, como lorazepam IV (quando disponível), diazepam IV ou midazolam IM/intranasal/bucal conforme serviço e idade. Em adultos, protocolos internacionais incluem **lorazepam IV 0,1 mg/kg (máximo usual 4 mg por dose)**, **diazepam IV 0,15–0,2 mg/kg (máximo 10 mg)** ou **midazolam IM 10 mg em pessoa de peso ≥40 kg** (apresentação e protocolo). Repetir dose apenas conforme algoritmo/tempo/resposta, evitando subdosagem, que é causa importante de refratariedade, e excesso sem suporte respiratório.",
+      "pattern": 0
+    },
+    {
+      "text": "**Atualização de alto impacto:** AHA/ASA **2026** atualizou manejo do AVC isquêmico agudo; o Ministério da Saúde mantém PCDT de AVC isquêmico agudo aprovado pela Portaria Conjunta SAES/SECTICS/MS nº 29, de **12/12/2023**; o **PCDT Epilepsia brasileiro teve alteração em 05/05/2026**. Recomendações AHA internacionais sobre tenecteplase, janelas de tratamento e trombectomia não significam automaticamente incorporação/rotina em qualquer serviço SUS.",
+      "pattern": 1
+    },
+    {
+      "text": "1. Reconhecer AVC isquêmico, hemorrágico, AIT, trombose venosa cerebral e mimetizadores neurológicos. 2. Distinguir síndrome clínica de território vascular e determinar o último momento conhecido sem sintomas. 3. Aplicar ABCDE, glicemia e NIHSS, encaminhar rapidamente para TC sem contraste e angiografia vascular quando indicada. 4. Entender **trombólise IV até 4,5 h** em pacientes elegíveis, inclusive déficit incapacitante com NIHSS baixo, e seleção por imagem em janela prolongada. 5. Interpretar indicações gerais de trombectomia mecânica em grandes vasos até 24 h em contextos selecionados. 6. Diferenciar AVC isquêmico de hemorragia intracerebral e hemorragia subaracnóidea e tratar de forma apropriada. 7. Reconhecer contraindicações/risco de anticoagulantes, pressão arterial e antitrombóticos na fase aguda. 8. Estratificar AIT/minor stroke e organizar prevenção secundária conforme mecanismo (aterosclerótico, cardioembólico, lacunar etc.). 9. Diferenciar crise epiléptica focal, generalizada, provocada, não provocada e eventos não epilépticos. 10. Diagnosticar estado de mal convulsivo e tratar **a partir de 5 min**, com suporte respiratório e sequência farmacológica correta. 11. Definir epilepsia e saber quando solicitar EEG, RM e quando indicar tratamento continuado. 12. Acompanhar reabilitação, disfagia, incapacidade, segurança, adesão e retorno ao trabalho.",
+      "pattern": 1
+    },
+    {
+      "text": "Uma crise tônico-clônica generalizada com fraqueza unilateral posterior pode ser **paralisia de Todd**, mas também **AVC com crise no início**. A presença de convulsão não deve encerrar a via de AVC se persistem afasia, hemiparesia, negligência ou desvio conjugado.",
+      "pattern": 1
+    },
+    {
+      "text": "**Clínica Médica · Neurologia · Urgência e Emergência · Terapia Intensiva** **Lote 09 — Aula 176/180 · Versão editorial 15/10/2026** **Status:** rascunho técnico-educacional, sem validação médica independente, não publicado na interface LURIA.",
+      "pattern": 2
+    },
+    {
+      "text": "**Atualização de alto impacto:** AHA/ASA **2026** atualizou manejo do AVC isquêmico agudo; o Ministério da Saúde mantém PCDT de AVC isquêmico agudo aprovado pela Portaria Conjunta SAES/SECTICS/MS nº 29, de **12/12/2023**; o **PCDT Epilepsia brasileiro teve alteração em 05/05/2026**. Recomendações AHA internacionais sobre tenecteplase, janelas de tratamento e trombectomia não significam automaticamente incorporação/rotina em qualquer serviço SUS.",
+      "pattern": 2
+    },
+    {
+      "text": "Déficit focal súbito exige **acionar emergência/SAMU 192**, registrar horário e transportar para serviço capaz de fazer TC e tratar AVC. Quando há suspeita de oclusão de grande vaso, considerar sistema regional de transporte para centro de trombectomia ou transferência rápida, sem inviabilizar trombólise local de tempo. A diretriz AHA/ASA 2026 recomenda organização específica da rede e não simplesmente “levar para qualquer hospital mais próximo” em todos os contextos.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Clínica Médica · Neurologia · Urgência e Emergência · Terapia Intensiva** **Lote 09 — Aula 176/180 · Versão editorial 15/10/2026** **Status:** rascunho técnico-educacional, sem validação médica independente, não publicado na interface LURIA."
+    },
+    {
+      "text": "**Atualização de alto impacto:** AHA/ASA **2026** atualizou manejo do AVC isquêmico agudo; o Ministério da Saúde mantém PCDT de AVC isquêmico agudo aprovado pela Portaria Conjunta SAES/SECTICS/MS nº 29, de **12/12/2023**; o **PCDT Epilepsia brasileiro teve alteração em 05/05/2026**. Recomendações AHA internacionais sobre tenecteplase, janelas de tratamento e trombectomia não significam automaticamente incorporação/rotina em qualquer serviço SUS."
+    }
+  ]
+}

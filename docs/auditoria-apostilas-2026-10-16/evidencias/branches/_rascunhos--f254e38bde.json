@@ -1,0 +1,52 @@
+{
+  "sha": "f254e38bde1a03ab9836447f877ccd6687c703f5",
+  "path": "apostilas/_rascunhos/lote-06-134-controle-cientifico-20261015.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f254e38bde",
+  "title": "LURIA — Tema 134 · SOP/PMOS/SOMP — controle científico de 15/10/2026",
+  "format": ".md",
+  "chars_estimated": 4180,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tema 134 · SOP/PMOS/SOMP — controle científico de 15/10/2026"
+    },
+    {
+      "title": "Existência e não duplicação"
+    },
+    {
+      "title": "Comparador Drive consultado diretamente antes da edição"
+    },
+    {
+      "title": "Achado científico novo e objetivo da correção"
+    },
+    {
+      "title": "Modificações reais no complemento (não no HTML final)"
+    },
+    {
+      "title": "Gates pendentes"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.monash.edu/medicine/mchri/pcos/guideline",
+    "https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change",
+    "https://doi.org/10.1016/S0140-6736%2826%2900717-8",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

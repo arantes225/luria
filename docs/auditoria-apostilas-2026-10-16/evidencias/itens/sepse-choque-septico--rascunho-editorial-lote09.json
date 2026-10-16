@@ -1,0 +1,154 @@
+{
+  "key": "sepse-choque-septico--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/sepse-choque-septico/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 161 | Sepse e choque séptico",
+  "source_sha256": "65865c668fcff55acdf2d51fca841b3f470ae4ebefdb46a5fc6849a4ae651947",
+  "chars_estimated": 12743,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 161 | Sepse e choque séptico",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "1. Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 10,
+      "title": "2. Definições e conceitos operacionais",
+      "level": 2
+    },
+    {
+      "line": 17,
+      "title": "3. Por que a sepse causa falência de órgãos?",
+      "level": 2
+    },
+    {
+      "line": 22,
+      "title": "4. Reconhecimento clínico",
+      "level": 2
+    },
+    {
+      "line": 27,
+      "title": "5. Investigação",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "6. Abordagem das primeiras horas",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "7. Complicações e suporte",
+      "level": 2
+    },
+    {
+      "line": 43,
+      "title": "8. Fluxograma LURIA",
+      "level": 2
+    },
+    {
+      "line": 46,
+      "title": "9. Casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 48,
+      "title": "Caso 1 — Urossepse com hipotensão",
+      "level": 3
+    },
+    {
+      "line": 51,
+      "title": "Caso 2 — Pneumonia e incerteza diagnóstica",
+      "level": 3
+    },
+    {
+      "line": 54,
+      "title": "Caso 3 — Abdome agudo séptico",
+      "level": 3
+    },
+    {
+      "line": 57,
+      "title": "Caso 4 — Ressuscitação em paciente com insuficiência cardíaca",
+      "level": 3
+    },
+    {
+      "line": 60,
+      "title": "10. Questões autorais LURIA — com justificativas",
+      "level": 2
+    },
+    {
+      "line": 74,
+      "title": "11. Pérolas de prova e prática",
+      "level": 2
+    },
+    {
+      "line": 82,
+      "title": "12. Referências verificadas",
+      "level": 2
+    },
+    {
+      "line": 87,
+      "title": "13. Pendências para publicação",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Prescott HC, Antonelli M, Alhazzani W, et al. *Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026*. Critical Care Medicine. 2026;54(4):725–812. DOI: 10.1097/CCM.0000000000007075. https://doi.org/10.1097/CCM.0000000000007075",
+    "2. Prescott HC, Antonelli M, et al. *Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026*. Intensive Care Medicine. 2026;52:863–936. DOI: 10.1007/s00134-026-08361-1. https://doi.org/10.1007/s00134-026-08361-1",
+    "3. Instituto Latino-Americano de Sepse (ILAS). *Implementação de protocolo gerenciado de sepse: protocolo clínico*, revisão de agosto de 2018 (material histórico para comparação de fluxos; **não** deve prevalecer sobre recomendações atualizadas). https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf"
+  ],
+  "external_links": [
+    {
+      "url": "https://doi.org/10.1097/CCM.0000000000007075",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1007/s00134-026-08361-1",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 0,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Choque séptico** é o subconjunto de sepse com anormalidades circulatórias e metabólicas mais profundas. Na definição Sepsis-3, em paciente adequadamente ressuscitado, há necessidade de vasopressores para manter pressão arterial média (PAM) ≥ 65 mmHg e lactato > 2 mmol/L, na ausência de hipovolemia persistente. Na prática, o atendimento ao paciente hipotenso com infecção presumida deve começar **antes** de preencher retrospectivamente todos os critérios.",
+      "pattern": 0
+    },
+    {
+      "text": "**Q2.** qSOFA negativo: A) exclui sepse; B) não exclui sepse; C) dispensa reavaliação; D) define ausência de infecção. **Gabarito B.** As demais superestimam a sensibilidade da ferramenta. Revisão: diagnóstico é clínico, guiado por disfunção orgânica e avaliação seriada.",
+      "pattern": 1
+    },
+    {
+      "text": "**Q3.** No choque séptico, qual vasopressor é preferencial? A) Dopamina; B) Noradrenalina; C) Terlipressina; D) Fenilefrina em todos os casos. **Gabarito B.** A favorece arritmias; C não é recomendação de primeira linha; D não é escolha de rotina. Revisão: titular para alvo de PAM individualizado.",
+      "pattern": 1
+    },
+    {
+      "text": "**Q5.** Sobre reposição volêmica: A) usar amido de rotina; B) avaliar somente PVC; C) administrar cristaloide e reavaliar perfusão/responsividade; D) evitar toda reposição em insuficiência cardíaca. **Gabarito C.** A não é recomendada; B é medida estática insuficiente; D é excessivamente absoluta. Revisão: individualização e índices dinâmicos.",
+      "pattern": 1
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Choque séptico** é o subconjunto de sepse com anormalidades circulatórias e metabólicas mais profundas. Na definição Sepsis-3, em paciente adequadamente ressuscitado, há necessidade de vasopressores para manter pressão arterial média (PAM) ≥ 65 mmHg e lactato > 2 mmol/L, na ausência de hipovolemia persistente. Na prática, o atendimento ao paciente hipotenso com infecção presumida deve começar **antes** de preencher retrospectivamente todos os critérios."
+    },
+    {
+      "text": "**SIRS** tem baixa especificidade e não equivale a sepse. **qSOFA** (FR ≥22/min, PAS ≤100 mmHg, alteração mental) identifica risco à beira-leito, mas sua sensibilidade insuficiente impede usá-lo isoladamente para descartar sepse."
+    }
+  ]
+}

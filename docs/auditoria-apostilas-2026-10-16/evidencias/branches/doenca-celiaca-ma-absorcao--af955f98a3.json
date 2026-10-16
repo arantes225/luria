@@ -1,0 +1,115 @@
+{
+  "sha": "af955f98a34bb76aafb5efae5a5f4c26a32eda61",
+  "path": "apostilas/doenca-celiaca-ma-absorcao/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "doenca-celiaca-ma-absorcao--af955f98a3",
+  "title": "LURIA — Apostila 242: Doença celíaca e síndromes de má absorção na infância",
+  "format": ".md",
+  "chars_estimated": 19973,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 242: Doença celíaca e síndromes de má absorção na infância"
+    },
+    {
+      "title": "1. O raciocínio de primeira consulta"
+    },
+    {
+      "title": "2. Fisiologia da digestão e absorção"
+    },
+    {
+      "title": "3. Fisiopatologia da doença celíaca"
+    },
+    {
+      "title": "4. Quadro clínico e grupos de risco"
+    },
+    {
+      "title": "5. Diagnóstico da doença celíaca: algoritmo ESPGHAN 2020"
+    },
+    {
+      "title": "5.1 Primeiros testes"
+    },
+    {
+      "title": "5.2 Quando a endoscopia pode ser dispensada?"
+    },
+    {
+      "title": "5.3 Interpretação histológica"
+    },
+    {
+      "title": "6. Diferenciais de má absorção"
+    },
+    {
+      "title": "7. Avaliação laboratorial complementar de má absorção"
+    },
+    {
+      "title": "8. Tratamento da doença celíaca"
+    },
+    {
+      "title": "9. Tratamento de outras síndromes de má absorção"
+    },
+    {
+      "title": "10. Sinais de risco e prognóstico"
+    },
+    {
+      "title": "11. Fluxograma rápido"
+    },
+    {
+      "title": "12. Casos clínicos comentados"
+    },
+    {
+      "title": "13. Questões autorais comentadas"
+    },
+    {
+      "title": "14. Planejamento de figuras clínicas, ainda não incorporadas"
+    },
+    {
+      "title": "15. Referências científicas"
+    },
+    {
+      "title": "16. Auditoria provisória"
+    }
+  ],
+  "reference_entries": [
+    "1. Husby S et al. ESPGHAN Guidelines for Diagnosing Coeliac Disease 2020. *J Pediatr Gastroenterol Nutr.* 2020. doi:10.1097/MPG.0000000000002497. https://pubmed.ncbi.nlm.nih.gov/31568151/",
+    "2. ESPGHAN. *New Guidelines for the Diagnosis of Paediatric Coeliac Disease* (resumo oficial 2020). https://www.espghan.org/dam/jcr:a82023ac-c7e6-45f9-8864-fe5ee5c37058/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease._ESPGHAN_Advice_Guide.pdf",
+    "3. NICE NG20. Coeliac disease: recognition, assessment and management. https://www.nice.org.uk/guidance/ng20/chapter/Recommendations",
+    "**Incluídos:** mecanismo, apresentação clássica/atípica, algoritmo ESPGHAN com limiar preciso, déficits nutricionais, diferenciais, tratamento, 4 casos, 6 questões, 13 imagens a pesquisar.  ",
+    "**Pendências:** ampliar síndromes de má absorção raras e graves, fibrose cística/insuficiência pancreática, doença inflamatória intestinal, abordagem da diarreia crônica neonatal, microbiologia local, tabelas de transição nutricional e referenciais SUS, classificação Marsh e falhas do algoritmo, imagens autorizadas, bibliografia brasileira atual e revisão independente. **Abaixo da meta ~60k caracteres; NÃO APROVAR.**"
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/31568151/",
+    "https://www.espghan.org/dam/jcr:a82023ac-c7e6-45f9-8864-fe5ee5c37058/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease._ESPGHAN_Advice_Guide.pdf",
+    "https://www.nice.org.uk/guidance/ng20/chapter/Recommendations"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Pediatria · **Lote 12** · **Estado:** manuscrito inicial; NÃO PUBLICAR antes de revisão final. **Módulo curricular:** Diarreia crônica e doenças funcionais (Alta); integra #58 diarreia aguda, #68 desnutrição, #63 refluxo, #203 alergias alimentares sem duplicá-los. **Fonte central:** ESPGHAN 2020 (diagnóstico pediátrico) e NICE NG20 (dieta com glúten antes dos exames). Atualizado para leitura em 15/10/2026."
+    },
+    {
+      "text": "**Doença celíaca** é enteropatia imunomediada desencadeada pela ingestão de glúten em pessoas geneticamente susceptíveis, com anticorpos característicos e lesão da mucosa do intestino delgado em muitos pacientes. **Alergia ao trigo** é mecanismo imunológico diferente (IgE ou não IgE); **sensibilidade ao glúten/trigo não celíaca** é diagnóstico de exclusão e não apresenta os mesmos biomarcadores e danos clássicos. A distinção muda aconselhamento, rastreio familiar e seguimento."
+    },
+    {
+      "text": "HLA-DQ2/DQ8 é frequente na população e **não confirma doença**, mas a ausência de ambos a torna muito improvável, útil em situações selecionadas de diagnóstico difícil. A doença pode ocorrer em qualquer idade após introdução do glúten, com apresentações distintas."
+    },
+    {
+      "text": "O exame só é interpretável adequadamente se a criança **mantém ingestão de glúten no período diagnóstico**. Iniciar dieta sem glúten antes da sorologia e eventual biópsia pode normalizar anticorpos e mucosa, criando resultados falsamente negativos e necessidade futura de reexposição supervisionada. A NICE orienta não retirar glúten até confirmação por especialista e recomenda exposição dietética suficiente durante investigação; crianças que já o retiraram requerem consulta específica."
+    },
+    {
+      "text": "Pedir **IgA total + IgA anti-transglutaminase tecidual 2 (tTG-IgA)**, com técnica validada. IgA total permite identificar deficiência seletiva que torna a tTG-IgA falsamente negativa. Se IgA deficiente, usar teste **baseado em IgG** conforme especialista (anti-DGP-IgG, tTG-IgG ou EMA-IgG), sem tentar aplicar diretamente algoritmo de diagnóstico sem biópsia que pressupõe IgA normal."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

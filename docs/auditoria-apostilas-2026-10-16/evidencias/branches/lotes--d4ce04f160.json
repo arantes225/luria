@@ -1,0 +1,376 @@
+{
+  "sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
+  "path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--d4ce04f160",
+  "title": "LURIA — Doença pulmonar obstrutiva crônica",
+  "format": ".md",
+  "chars_estimated": 75612,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Doença pulmonar obstrutiva crônica"
+    },
+    {
+      "title": "Etapa zero e inventário"
+    },
+    {
+      "title": "1. Conceitos, anatomia funcional e fisiopatologia"
+    },
+    {
+      "title": "2. Diagnóstico: suspeita não é confirmação"
+    },
+    {
+      "title": "3. Tratamento estável: intervenções com objetivos diferentes"
+    },
+    {
+      "title": "4. Exacerbação, hipercapnia e VNI"
+    },
+    {
+      "title": "5. Atualização de 2026: GOLD internacional × PCDT brasileiro"
+    },
+    {
+      "title": "5.1 Três dimensões que nunca devem ser confundidas"
+    },
+    {
+      "title": "5.2 Como interpretar escalas sem decorar valores fora de contexto"
+    },
+    {
+      "title": "6. Fisiologia aplicada: do VEF1 à hiperinsuflação e à troca gasosa"
+    },
+    {
+      "title": "6.1 Por que a expiração é o principal problema?"
+    },
+    {
+      "title": "6.2 O que a gasometria diz — e o que ela não diz?"
+    },
+    {
+      "title": "6.3 Troca gasosa, difusão e rastreamento de deficiências"
+    },
+    {
+      "title": "7. Anamnese, exame e testes: consulta estruturada em APS"
+    },
+    {
+      "title": "8. Tratamento estável: escolhas por objetivos e não por marca de inalador"
+    },
+    {
+      "title": "8.1 Um plano longitudinal tem quatro frentes"
+    },
+    {
+      "title": "8.2 Comparativo terapêutico segundo PCDT nacional de 2026"
+    },
+    {
+      "title": "8.3 Eosinófilos, benefício e risco de corticoide inalatório"
+    },
+    {
+      "title": "8.4 Tabela farmacológica de exemplos nacionais — conferir dispositivo antes da prescrição"
+    },
+    {
+      "title": "9. Dispositivos: por que a escolha muda a eficácia real"
+    },
+    {
+      "title": "10. Manejo da exacerbação em urgência: mecanismo, suporte e falha"
+    },
+    {
+      "title": "10.1 Primeiro excluir doenças que simulam exacerbação"
+    },
+    {
+      "title": "10.2 Sequência de abordagem com justificativa"
+    },
+    {
+      "title": "10.3 Alta, retorno e prevenção da próxima internação"
+    },
+    {
+      "title": "11. Oxigenoterapia domiciliar, reabilitação e terapias avançadas"
+    },
+    {
+      "title": "12. Casos clínicos adicionais"
+    },
+    {
+      "title": "Caso 3 — A mesma história, dois grupos: divergência entre diretrizes"
+    },
+    {
+      "title": "Caso 4 — Dispneia com VEF1 moderadamente reduzido e pouca reserva funcional"
+    },
+    {
+      "title": "Caso 5 — Corticoide inalatório: benefício esperado versus pneumonia"
+    },
+    {
+      "title": "Caso 6 — Somnolência, acidose respiratória e avaliação do suporte ventilatório"
+    },
+    {
+      "title": "13. Questões autorais adicionais — residência médica"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "14. Registro da matriz de autossuficiência desta etapa"
+    },
+    {
+      "title": "15. Fontes científicas verificadas e limites da edição"
+    },
+    {
+      "title": "Ampliação editorial 03 — fisiologia funcional, acompanhamento, emergência e armadilhas de prova"
+    },
+    {
+      "title": "16. Da ventilação normal à ventilação obstrutiva: fisiologia necessária para ler o paciente"
+    },
+    {
+      "title": "16.1 A equação clínica do VEF1"
+    },
+    {
+      "title": "16.2 O significado clínico de volume residual e capacidade inspiratória"
+    },
+    {
+      "title": "16.3 Difusão alveolocapilar e DLCO"
+    },
+    {
+      "title": "17. Diagnóstico além da primeira espirometria: perguntas que evitam erros"
+    },
+    {
+      "title": "17.1 A busca de exposições é longitudinal"
+    },
+    {
+      "title": "17.2 Exames complementares: indique pela dúvida clínica"
+    },
+    {
+      "title": "18. Interpretação integrada da gasometria na exacerbação"
+    },
+    {
+      "title": "18.1 Três leituras sucessivas"
+    },
+    {
+      "title": "18.2 Por que a saturação pode enganar"
+    },
+    {
+      "title": "18.3 Oxigênio controlado não significa privar o paciente de oxigênio"
+    },
+    {
+      "title": "19. Tratamento medicamentoso estável — detalhe farmacológico"
+    },
+    {
+      "title": "19.1 Broncodilatadores: qual é a diferença funcional entre SABA, LABA, SAMA e LAMA?"
+    },
+    {
+      "title": "19.2 Corticoide inalatório: escolher por eventos, não por “obstrução forte”"
+    },
+    {
+      "title": "19.3 Regimes em diferentes sistemas de saúde"
+    },
+    {
+      "title": "19.4 Corticoide oral não é tratamento de manutenção habitual"
+    },
+    {
+      "title": "20. Antibioticoterapia na exacerbação — justificar antes de escolher"
+    },
+    {
+      "title": "21. Terapia ventilatória: quando a VNI ajuda e quando atrapalha"
+    },
+    {
+      "title": "21.1 Razão fisiológica da VNI na acidose hipercápnica"
+    },
+    {
+      "title": "21.2 Parâmetros de entrada não são receita para todos"
+    },
+    {
+      "title": "21.3 Contraindicações e falha que não podem ser ignoradas"
+    },
+    {
+      "title": "21.4 Intubação e auto-PEEP: por que ventilação rápida pode prejudicar"
+    },
+    {
+      "title": "22. Oxigenoterapia de longa duração, sono e exercício"
+    },
+    {
+      "title": "22.1 Oxigenoterapia crônica não é tratamento da sensação de falta de ar"
+    },
+    {
+      "title": "22.2 Distúrbios do sono e apneia"
+    },
+    {
+      "title": "22.3 Atividade física e reabilitação como terapia estruturada"
+    },
+    {
+      "title": "23. Manejo longitudinal na APS: uma consulta estruturada que cabe no mundo real"
+    },
+    {
+      "title": "23.1 Antes da consulta: dados mínimos que mudam decisão"
+    },
+    {
+      "title": "23.2 Durante a consulta: cinco perguntas"
+    },
+    {
+      "title": "23.3 Depois da consulta: plano que a pessoa consegue cumprir"
+    },
+    {
+      "title": "24. Prevenção, comorbidades e escolhas centradas no paciente"
+    },
+    {
+      "title": "24.1 Cessação de tabagismo e prevenção de exposição"
+    },
+    {
+      "title": "24.2 Cardiovascular e os múltiplos componentes da dispneia"
+    },
+    {
+      "title": "24.3 Saúde óssea, estado nutricional e qualidade de vida"
+    },
+    {
+      "title": "24.4 Câncer e novos sintomas de alarme"
+    },
+    {
+      "title": "25. Populações especiais"
+    },
+    {
+      "title": "25.1 Idosos frágeis"
+    },
+    {
+      "title": "25.2 Gestantes com obstrução crônica"
+    },
+    {
+      "title": "25.3 Pessoas imunodeprimidas e bronquiectasias"
+    },
+    {
+      "title": "26. Casos clínicos adicionais com dados e interpretação"
+    },
+    {
+      "title": "Caso 7 — Espirometria correta, grupo diferente da gravidade"
+    },
+    {
+      "title": "Caso 8 — Acidose aguda sobre componente crônico"
+    },
+    {
+      "title": "Caso 9 — Escarro purulento e RX com consolidação"
+    },
+    {
+      "title": "Caso 10 — Quando não indicar oxigênio domiciliar de forma automática"
+    },
+    {
+      "title": "Caso 11 — Eosinófilos altos, exacerbações e história de pneumonia"
+    },
+    {
+      "title": "Caso 12 — Apneia coexistente em paciente cansado"
+    },
+    {
+      "title": "27. Questões adicionais com cálculos e condutas"
+    },
+    {
+      "title": "Questão 9 — Maços-ano"
+    },
+    {
+      "title": "Questão 10 — Interpretação da relação"
+    },
+    {
+      "title": "Questão 11 — Gasometria e oxímetro"
+    },
+    {
+      "title": "Questão 12 — Antibiótico"
+    },
+    {
+      "title": "Questão 13 — Corticoide inalatório"
+    },
+    {
+      "title": "Questão 14 — VNI"
+    },
+    {
+      "title": "Questão 15 — Oxigenoterapia crônica"
+    },
+    {
+      "title": "Questão 16 — Grupos e gravidade"
+    },
+    {
+      "title": "28. Matriz avançada de autossuficiência e escopo futuro"
+    },
+    {
+      "title": "Próximas ampliações mandatórias"
+    }
+  ],
+  "reference_entries": [
+    "1. **Ministério da Saúde (Brasil).** Portaria Conjunta SAES/SCTIE nº 29, de 27/11/2025. *Protocolo Clínico e Diretrizes Terapêuticas da Doença Pulmonar Obstrutiva Crônica*, anexo atualizado em 29/01/2026. Fonte e PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view. Consultados capítulos de diagnóstico, classificação, tratamento, elegibilidade e posologias. A transcrição literal do protocolo e de suas tabelas não é parte deste manuscrito.",
+    "2. **GOLD.** *Global Strategy for Prevention, Diagnosis and Management of COPD: 2026 Report*, versão e resumo das alterações na página oficial: https://goldcopd.org/2026-gold-report-and-pocket-guide/; arquivo *2026 Key Changes*: https://goldcopd.org/wp-content/uploads/2025/11/KEY-CHANGES-GOLD-2026-10Nov2025.pdf. A mudança na classificação ABE e a separação entre tratamento inicial e seguimento foram verificadas no documento oficial de mudanças; a revisão integral das posologias do relatório completo ainda é pendente.",
+    "3. **SBPT.** *Tratamento da DPOC avança no Brasil com publicação de novo PCDT* (2025). https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/. Confirma publicação da nova norma brasileira.",
+    "4. **SBPT.** *Manual de DPOC para atenção básica*, Comissão de DPOC, 2024. https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2024/10/29004701/SBPT_MANUAL_DPOC_FINAL_25_OUT_2024.pdf. Útil para ensino clínico, porém anteriores às mudanças GOLD 2026.",
+    "**Fluxo de imagens:** ainda não foram importadas figuras ao livro. Prioridades para futura curadoria: espirograma obstrutivo (curva fluxo-volume, curva volume-tempo); radiografia comparativa normal/hiperinsuflação; TC de enfisema; esquema anatômico de bronquíolos e septos; demonstração de cada classe de inalador; registro de capnografia ou gasometria interpretada; exercício de oximetria; sinal de cor pulmonale; sequência funcional de reabilitação; radiografia de pneumonia complicando exacerbação. Cada imagem precisa de licença conferida para o uso, legenda autoral e fila de aprovação no Admin,",
+    "**Não declarar concluído:** esta expansão ainda é rascunho. Verificar 60 mil caracteres didáticos úteis sem redundância, capítulo de antibioticoterapia, matriz de decisões especiais (gestação, multimorbidade, pacientes imunodeprimidos), exames complementares aprofundados, supervisão médica, integridade do renderer e testes desktop/PWA.",
+    "---",
+    "**Exemplo 1:** VEF1 1,4 L e CVF 3,0 L após broncodilatador: razão aproximadamente 0,47, logo obstrução marcante. Se VEF1 corresponde a 42% do previsto, o grau espirométrico é GOLD 3. **Exemplo 2:** VEF1 de 2,7 L, CVF de 3,4 L, razão 0,79: não atende o corte operacional de obstrução; sintomas crônicos continuam merecendo investigação, incluindo bronquite crônica, doença intersticial, insuficiência cardíaca e outras causas. **Exemplo 3:** VEF1 55% previsto e nenhuma exacerbação, mMRC 3: o componente espirométrico é GOLD 2, enquanto a intensidade dos sintomas pode classificar o paciente como grup",
+    "**Radiografia:** auxilia a ver hiperinsuflação, cardiomegalia, pneumonia e massas, mas pode ser normal em doença inicial. **Tomografia:** caracteriza áreas enfisematosas, bronquiectasias, nódulos e alterações intersticiais, e orienta discussão de procedimentos específicos; não é necessária para confirmar cada diagnóstico simples de DPOC. **Gasometria arterial:** interpreta oxigenação, ventilação e equilíbrio ácido-base quando há hipoxemia relevante, risco de hipercapnia ou doença grave. **ECG e ecocardiograma:** investigam arritmia, insuficiência cardíaca e hipertensão pulmonar quando sintomas",
+    "**Diagnósticos associados importantes:** câncer de pulmão, insuficiência cardíaca, depressão/ansiedade, apneia obstrutiva do sono, bronquiectasias, doença cardiovascular aterosclerótica, osteoporose e desnutrição. Não assumir que todo novo sintoma de um paciente conhecido é “mais DPOC”: dor torácica nova merece avaliação específica; perda ponderal e hemoptise não devem ser atribuídas automaticamente ao enfisema.",
+    "**Primeiro: há acidemia ou alcalemia?** Um pH abaixo do intervalo normal indica acidemia. **Segundo: qual componente acompanha a mudança?** PaCO2 aumentada com pH reduzido aponta componente de acidose respiratória; bicarbonato pode se elevar por compensação renal. **Terceiro: há hipoxemia e qual é o contexto?** Saturação, PaO2, FiO2, clínica e perfusão determinam gravidade e suporte.",
+    "**Caso de interpretação 1:** pH 7,36; PaCO2 59 mmHg; bicarbonato 32 mEq/L. A pessoa pode apresentar retenção crônica de CO2 com compensação renal, dependendo de história e estabilidade. **Caso 2:** pH 7,24; PaCO2 78 mmHg; bicarbonato 33 mEq/L. Há acidemia respiratória apesar de bicarbonato elevado: provável descompensação aguda sobre retenção crônica; deve ser avaliada imediatamente para suporte ventilatório. **Caso 3:** pH 7,46, PaCO2 28 mmHg e hipoxemia em paciente com dor pleurítica súbita. Taquipneia/hipocapnia não comprovam exacerbação de DPOC: embolia pulmonar ou pneumonia podem ser alte",
+    "**SABA** estimula receptores beta-2 do músculo liso e oferece alívio rápido de sintomas; tremor, taquicardia e hipocalemia podem ocorrer com uso excessivo. **LABA** possui duração prolongada, reduz broncoconstrição por estimulação beta-2 e é usado na manutenção. **SAMA** inibe receptores muscarínicos por menor duração; o ipratrópio é exemplo em contextos de resgate. **LAMA** bloqueia tônus colinérgico por período prolongado e é componente central da manutenção, especialmente na estratégia combinada.",
+    "**Não indicar CI isolado como monoterapia de DPOC.** Seu benefício na prevenção de exacerbações tende a aumentar com eosinófilos sanguíneos mais altos e histórico de eventos. Contagem <100 células/µL aponta benefício esperado pequeno em muitos contextos; ≥300 células/µL aumenta possibilidade de resposta, especialmente em quem exacerba; entre 100 e 300, considerar exacerbações, história e risco. História de pneumonias frequentes, micobacteriose ativa ou outra condição infecciosa pode desfavorecer CI. Em paciente com asma concomitante, o esquema precisa contemplar tratamento anti-inflamatório da",
+    "**Exemplo de armadilha:** homem de 58 anos tem VEF1 28% do previsto, sem exacerbações no último ano, eosinófilos 70 células/µL e pneumonia recente. A gravidade obstrutiva é alta, mas isso não torna terapia tripla automática; investigar sintomas, uso de broncodilatadores, reabilitação e outras causas de dispneia. Já paciente com VEF1 55%, duas exacerbações e eosinófilos 430 pode ter forte indicação de avaliar benefício de CI em terapia combinada. A decisão não é definida por VEF1 isolado.",
+    "**Analisar individualmente:** risco de bactéria resistente, tratamento antibiótico nos últimos três meses, internações recentes, bronquiectasias, colonização documentada, alergias verdadeiras, QT prolongado, interações farmacológicas, função renal, exposição a fluoroquinolonas e epidemiologia local. Agentes usuais de exacerbação bacteriana incluem Haemophilus influenzae, Streptococcus pneumoniae e Moraxella catarrhalis. Pseudomonas é possibilidade selecionada quando há fatores de risco, não explicação automática para todo paciente GOLD 4.",
+    "**Duração e escolha específica** dependem do agente provável, gravidade e diretriz institucional. Não acrescentar macrolídeo profilático para toda pessoa com expectoração recorrente: essa estratégia é reservada a fenótipos seletos de exacerbadores, com consideração de resistência, alteração auditiva, QT e avaliação especializada. Para paciente com risco de tuberculose, evitar cursos repetidos de fluoroquinolona que possam mascarar parcialmente o quadro e retardar diagnóstico.",
+    "1. **Qual tarefa de vida cotidiana ficou mais difícil?** Pergunte por banhar-se, caminhar, trabalhar, preparar comida, subir escadas e sair de casa. Explore adaptação silenciosa de atividades.",
+    "2. **Qual foi a pior piora desde a última consulta?** Registre as intervenções necessárias e se houve internação ou VNI.",
+    "3. **Como você usa seu inalador?** Solicite demonstração real e observe erro por coordenação ou incapacidade de inspirar adequadamente.",
+    "4. **Qual exposição continua presente?** Tabaco, biomassa, ocupação, poluição e fumaça doméstica. Ofereça suporte concreto para cessação.",
+    "5. **Há outra doença concorrente?** ICC, arritmia, câncer, anemia, apneia do sono e ansiedade podem aumentar dispneia mesmo se broncodilatação está adequada.",
+    "**Gabarito B.** 15/20 × 28 = **21**. **A** subestima pela metade; **C** ignora cigarros/dia; **D** dobra incorretamente exposição. **Mini-revisão:** quantificar exposição não substitui investigação de biomassa.",
+    "**Gabarito B.** 1,7/3,4 = **0,50**, com obstrução pelo corte operacional GOLD em contexto apropriado. **A** erra cálculo; **C** confunde valor; **D** impossível como proporção nesse caso. **Mini-revisão:** a relação confirma limitação; VEF1 previsto classifica intensidade.",
+    "**Gabarito B.** **A/D** confundem oxigenação e ventilação; **C** impede reconhecer compensação e distúrbios mistos. **Mini-revisão:** oxímetro não mede CO2 nem pH.",
+    "**Gabarito B.** **A/C** carecem de sinais de infecção bacteriana atual; **D** mede função pulmonar, não etiologia da crise. **Mini-revisão:** fenótipo clínico e gravidade importam mais que rótulo espirométrico.",
+    "**Gabarito B.** **A** confunde função e risco; **C** é monoterapia inadequada; **D** descarta importante evento adverso. **Mini-revisão:** risco de exacerbação e eosinófilos orientam benefício estimado.",
+    "**Gabarito B.** **A** pode ser bom candidato com monitorização; **C** não implica contraindicação; **D** não determina segurança ventilatória. **Mini-revisão:** falha/contraindicação de VNI não deve retardar suporte avançado.",
+    "**Gabarito B.** **A/C** tratam desconforto como critério e confundem períodos agudo/crônico; **D** ignora risco de incêndio. **Mini-revisão:** confirmar elegibilidade e reavaliar após recuperação de exacerbação.",
+    "**Gabarito B.** **A** confunde escalas; **C** ignora obstrução documentada; **D** indica tratamento tóxico sem justificativa. **Mini-revisão:** grupo ABE considera sintomas e histórico de exacerbações, separadamente do VEF1 previsto."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view.",
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/;",
+    "https://goldcopd.org/wp-content/uploads/2025/11/KEY-CHANGES-GOLD-2026-10Nov2025.pdf.",
+    "https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/.",
+    "https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2024/10/29004701/SBPT_MANUAL_DPOC_FINAL_25_OUT_2024.pdf.",
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/.",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A abordagem inclui broncodilatadores de curta ação, corticosteroide sistêmico em situações indicadas, oxigênio titulado e antibiótico quando há critérios clínicos compatíveis com exacerbação bacteriana ou suporte ventilatório indicado. Não administrar oxigênio indiscriminadamente com meta de saturação de pessoa sem risco de hipercapnia: em pacientes com exacerbação de DPOC em risco de insuficiência respiratória hipercápnica costuma-se titular para 88–92%, com gasometria e ajustes individuais. Ventilação não invasiva é ferramenta decisiva na acidose respiratória hipercápnica se não houver contraindicações. Rebaixamento profundo, incapacidade d"
+    },
+    {
+      "text": "**Caso 1.** Homem de 67 anos, ex-tabagista, dispneia progressiva e tosse diária, radiografia com hiperinsuflação. Conduta diagnóstica: não fechar DPOC pela radiografia; realizar espirometria pós-broncodilatador e revisar sintomas, exposições e diferenciais. **Por que importa:** evita tratar imagem em vez de doença."
+    },
+    {
+      "text": "**Caso 2.** Mulher de 72 anos com DPOC conhecida apresenta expectoração purulenta, dispneia intensa e sonolência, com gasometria exibindo acidose respiratória. Prioridades: monitorização, broncodilatação, oxigênio cuidadosamente titulado, identificação do precipitante e avaliação imediata de VNI versus via aérea invasiva. **Por que importa:** a alteração de consciência e acidose mudam a urgência."
+    },
+    {
+      "text": "**Questão 1.** Qual exame confirma a obstrução persistente no diagnóstico operacional de DPOC? A) Radiografia; B) Espirometria pós-broncodilatador; C) Oximetria isolada; D) Dosagem isolada de eosinófilos. **Gabarito B.** A pode sugerir hiperinsuflação, C mede oxigenação e D pode auxiliar escolhas terapêuticas; nenhum dos três confirma limitação fixa do fluxo. **Revisão:** doença de sintomas e exposições exige evidência funcional."
+    },
+    {
+      "text": "**Questão 2.** Em exacerbação com acidose hipercápnica e trabalho respiratório aumentado, qual abordagem merece avaliação imediata? A) Alta apenas com mucolítico; B) Oxigênio sem titulação; C) VNI se apta e sem contraindicações; D) Suspender broncodilatadores. **Gabarito C.** A subestima gravidade, B pode agravar retenção de CO2 e D elimina tratamento sintomático importante. **Revisão:** acidose hipercápnica torna decisiva a avaliação do suporte ventilatório."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

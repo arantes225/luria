@@ -1,0 +1,101 @@
+{
+  "sha": "758ac7f8a20381b47f0530686b8eca1f9f7965d2",
+  "path": "apostilas/afogamento-emergencias-ambientais-infancia/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "afogamento-emergencias-ambientais-infancia--758ac7f8a2",
+  "title": "LURIA — Apostila 246: Afogamento e emergências ambientais na infância",
+  "format": ".md",
+  "chars_estimated": 16801,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 246: Afogamento e emergências ambientais na infância"
+    },
+    {
+      "title": "1. Afogamento: definição atual e mecanismo de dano"
+    },
+    {
+      "title": "2. Prevenção e cadeia de sobrevivência"
+    },
+    {
+      "title": "3. Reconhecimento de gravidade"
+    },
+    {
+      "title": "4. Primeiros socorros: atualização AHA/AAP 2024"
+    },
+    {
+      "title": "5. Suporte básico pediátrico 2025"
+    },
+    {
+      "title": "6. Tratamento hospitalar"
+    },
+    {
+      "title": "7. Hipotermia acidental na infância"
+    },
+    {
+      "title": "8. Hipertermia e insolação"
+    },
+    {
+      "title": "9. Intoxicação por monóxido de carbono e outras exposições"
+    },
+    {
+      "title": "10. Algoritmo para emergência ambiental pediátrica"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "12. Seis questões comentadas"
+    },
+    {
+      "title": "13. Recursos visuais candidatos (não incorporados)"
+    },
+    {
+      "title": "14. Referências"
+    },
+    {
+      "title": "15. Auditoria e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. Dezfulian C et al. **2024 AHA and AAP Focused Update on Special Circumstances: Resuscitation Following Drowning**. Circulation / Pediatrics. doi:10.1161/CIR.0000000000001274. https://professional.heart.org/en/science-news/2024-aha-and-aap-focused-update-on-special-circumstances-resuscitation-following-drowning",
+    "2. AHA/AAP. **Part 6: Pediatric Basic Life Support — 2025 Guidelines**. Pediatrics 2026;157:e2025074350. https://doi.org/10.1542/peds.2025-074350",
+    "3. AHA/AAP. **Part 8: Pediatric Advanced Life Support — 2025 Guidelines**. https://doi.org/10.1542/peds.2025-074351"
+  ],
+  "external_urls": [
+    "https://professional.heart.org/en/science-news/2024-aha-and-aap-focused-update-on-special-circumstances-resuscitation-following-drowning",
+    "https://doi.org/10.1542/peds.2025-074350",
+    "https://doi.org/10.1542/peds.2025-074351"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A diretriz específica recomenda **RCP com respirações de resgate e compressões** em vítimas de parada após afogamento, incluindo crianças. Socorrista treinado pode usar primeiro meio de ventilação disponível (boca-a-boca com barreira, pocket mask ou bolsa-válvula-máscara), escolhendo técnica em que é proficiente; diretriz permite início pela respiração ou compressões, com prioridade à ventilação rápida sem atrasos."
+    },
+    {
+      "text": "Se socorrista não sabe/não consegue ventilar, **compressões torácicas isoladas são melhores do que nada**, enquanto pede ajuda e consegue suporte, mas não são método preferencial quando ventilação está disponível. Usar DEA assim que possível **sem interromper ou atrasar ventilação e RCP**, pois ritmos chocáveis são minoria em PCR por afogamento. DEA deve ser utilizado em local seco e seguro conforme recomendações do equipamento."
+    },
+    {
+      "text": "AHA/AAP 2025 recomenda: - Compressões em crianças/lactentes com PCR: **100–120/min**, profundidade ~**1/3 diâmetro anteroposterior do tórax** (aproximadamente 4 cm lactente e 5 cm criança), retorno completo, mínimas interrupções. - Sem via aérea avançada: relação **30:2 com um socorrista** e **15:2 com dois socorristas** treinados. - Pulso presente mas esforço respiratório ausente/inadequado: **1 ventilação a cada 2–3 segundos** (20–30/min) com avaliação de efetividade, evitando hiperventilação. - Via aérea avançada durante PCR: ventilação conforme suporte avançado, geralmente 20–30/min, ajustada à idade e contexto. - Profissionais de saúde v"
+    },
+    {
+      "text": "**Caso 2 — PCR após submersão.** Lactente é retirado não responsivo, sem respiração normal. Socorrista treinado está com bolsa-máscara. **Hipótese:** parada hipóxica após afogamento. **Raciocínio:** ventilação faz parte essencial da RCP. **Exames:** diagnóstico clínico imediato; monitor/desfibrilador quando disponível. **Conduta:** iniciar ventilações eficazes e compressões conforme diretriz, chamar emergência, utilizar DEA sem retardar RCP. **Importância:** compressões isoladas são alternativa quando ventilação inviável, não preferência."
+    },
+    {
+      "text": "**Q2.** Qual prática é contraindicada como rotina em afogamento? A) acionar ajuda; B) fornecer ventilações quando necessário; C) manobras para expulsar água do pulmão; D) RCP apropriada. **Gabarito C.** Não funciona e atrasa ventilação; os outros procedimentos são corretos conforme contexto. **Revisão:** foco em troca gasosa."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,528 @@
+{
+  "sha": "b54a281f5b4363775413ab443df037834ee99b54",
+  "path": "apostilas/_rascunhos/lote-06-122-perfuracao-de-viscera-oca.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b54a281f5b",
+  "title": "LURIA — Apostila 122: Perfuração de Víscera Oca",
+  "format": ".md",
+  "chars_estimated": 125182,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 122: Perfuração de Víscera Oca"
+    },
+    {
+      "title": "1. A urgência que muda tudo: perfuração, peritonite e controle da fonte"
+    },
+    {
+      "title": "1.1 Questões a responder nos primeiros minutos"
+    },
+    {
+      "title": "2. Conceitos anatômicos e fisiológicos indispensáveis"
+    },
+    {
+      "title": "2.1 Peritônio, retroperitônio e espaços de contaminação"
+    },
+    {
+      "title": "2.2 Papel do conteúdo extravasado"
+    },
+    {
+      "title": "2.3 Quatro estados anatômicos que o aluno deve distinguir"
+    },
+    {
+      "title": "3. Epidemiologia e principais etiologias por segmento"
+    },
+    {
+      "title": "3.1 Etiologias por local de lesão"
+    },
+    {
+      "title": "3.2 Risco individual"
+    },
+    {
+      "title": "4. Fisiopatologia clínica: da dor visceral à rigidez abdominal"
+    },
+    {
+      "title": "4.1 Peritonite química versus infecciosa"
+    },
+    {
+      "title": "4.2 Terceiro espaço e falência perfusional"
+    },
+    {
+      "title": "5. História clínica dirigida: oito perguntas de alto rendimento"
+    },
+    {
+      "title": "6. Exame físico: reconhecer gravidade sem depender de uma única manobra"
+    },
+    {
+      "title": "6.1 Avaliação primária e sinais vitais"
+    },
+    {
+      "title": "6.2 Inspeção, ausculta, palpação"
+    },
+    {
+      "title": "6.3 Sinais históricos de pneumoperitônio"
+    },
+    {
+      "title": "6.4 Ausência de defesa não protege em certos grupos"
+    },
+    {
+      "title": "7. Diagnósticos diferenciais e armadilhas cirúrgicas"
+    },
+    {
+      "title": "8. Investigação laboratorial: o que acrescenta e o que não decide"
+    },
+    {
+      "title": "8.1 Exames iniciais proporcionais ao risco"
+    },
+    {
+      "title": "8.2 A função da microbiologia"
+    },
+    {
+      "title": "8.3 Sinais de falência orgânica"
+    },
+    {
+      "title": "9. Radiografia do tórax e abdome: achar ar, entender suas limitações"
+    },
+    {
+      "title": "9.1 Radiografia de tórax em ortostase"
+    },
+    {
+      "title": "9.2 Sinais de Rigler, ligamento falciforme e bola de futebol"
+    },
+    {
+      "title": "9.3 Sinal de Chilaiditi e falso pneumoperitônio"
+    },
+    {
+      "title": "10. Tomografia computadorizada: o exame que localiza a fonte em estáveis"
+    },
+    {
+      "title": "10.1 O que buscar sistematicamente"
+    },
+    {
+      "title": "10.2 Contraste oral: pode ajudar mas não deve atrasar cuidados"
+    },
+    {
+      "title": "10.3 CT negativa ou equívoca"
+    },
+    {
+      "title": "10.4. Tomografia em sete perguntas: localizar perfuração e distinguir gás de doença"
+    },
+    {
+      "title": "11. US, FAST e exames especiais: papel delimitado"
+    },
+    {
+      "title": "12. Ressuscitação e primeiros cuidados: o que fazer ANTES e DURANTE a decisão cirúrgica"
+    },
+    {
+      "title": "12.1 Abordagem em paralelo, não sequência lenta"
+    },
+    {
+      "title": "12.2 Tempo de controle do foco e SSC 2026"
+    },
+    {
+      "title": "12.3 Jejum, sonda nasogástrica e proteção de via aérea"
+    },
+    {
+      "title": "12.4 Antibioticoterapia antes da operação"
+    },
+    {
+      "title": "13. Antibioticoterapia: escolher pelo foco, não “mais amplo para todos”"
+    },
+    {
+      "title": "13.1 Flora por origem e cenário"
+    },
+    {
+      "title": "13.2 Exemplos orientadores de classes e cobertura"
+    },
+    {
+      "title": "13.3 Duração após controlar o foco"
+    },
+    {
+      "title": "13.4 Quando falta melhora após operação"
+    },
+    {
+      "title": "13.5. Quatro dias, oito dias ou revisar o abdome? Uma decisão dependente do controle da fonte"
+    },
+    {
+      "title": "14. Como decidir cirurgia imediata, conservador ou endoscopia"
+    },
+    {
+      "title": "14.1 Indicação cirúrgica forte"
+    },
+    {
+      "title": "14.2 O que define a raríssima opção conservadora de úlcera perfurada"
+    },
+    {
+      "title": "14.3 Diverticulite com ar à distância: exceção com vigilância"
+    },
+    {
+      "title": "14.4 Perfuração de colonoscopia e fechamento endoscópico"
+    },
+    {
+      "title": "14.5 A pergunta unificadora"
+    },
+    {
+      "title": "15. Úlcera péptica perfurada: mecanismo, apresentação e operação"
+    },
+    {
+      "title": "15.1 Como a úlcera atravessa a parede"
+    },
+    {
+      "title": "15.2 Sintomas clássicos e atípicos"
+    },
+    {
+      "title": "15.3 O que a diretriz WSES recomenda"
+    },
+    {
+      "title": "15.4 Reparo e epiplonplastia"
+    },
+    {
+      "title": "15.5 Úlcera gástrica e malignidade"
+    },
+    {
+      "title": "15.6 Jejum, dreno e dieta após cirurgia"
+    },
+    {
+      "title": "16. Perfuração colônica por diverticulite: de microperfuração a peritonite fecal"
+    },
+    {
+      "title": "16.1 Por que divertículos podem perfurar"
+    },
+    {
+      "title": "16.2 Hinchey: entender, não decorar sem contexto"
+    },
+    {
+      "title": "16.3 Tratamento do abscesso localizado"
+    },
+    {
+      "title": "16.4 Ressecção com anastomose ou operação de Hartmann?"
+    },
+    {
+      "title": "16.5 Lavagem laparoscópica: não é solução universal"
+    },
+    {
+      "title": "17. Perfuração de delgado: obstrução, isquemia, trauma e Crohn"
+    },
+    {
+      "title": "17.1 Obstrução que evolui para necrose"
+    },
+    {
+      "title": "17.2 Causas inflamatórias/infecciosas específicas"
+    },
+    {
+      "title": "17.3 Reparar ou ressecar?"
+    },
+    {
+      "title": "18. Perfuração de cólon não diverticular: tumor, estercoral e isquêmica"
+    },
+    {
+      "title": "18.1 Neoplasia obstrutiva"
+    },
+    {
+      "title": "18.2 Úlcera estercoral"
+    },
+    {
+      "title": "18.3 Colite isquêmica e necrose transmural"
+    },
+    {
+      "title": "18.4 Peritonite fecal e escolha de estoma"
+    },
+    {
+      "title": "18.5. Perfuração diastática do ceco por obstrução distal: o defeito nem sempre marca a causa"
+    },
+    {
+      "title": "19. Perfuração esofágica e Boerhaave: emergência fora do abdome clássico"
+    },
+    {
+      "title": "19.1 Mecanismo e anatomia"
+    },
+    {
+      "title": "19.2 A tríade de Mackler e suas limitações"
+    },
+    {
+      "title": "19.3 Manejo individualizado: não declarar que toda ruptura exige esofagectomia"
+    },
+    {
+      "title": "20. Perfuração traumática de estômago, intestino e mesentério"
+    },
+    {
+      "title": "20.1 Trauma contuso: a lesão que a primeira TC pode não mostrar"
+    },
+    {
+      "title": "20.1.1 Quando a tomografia é equívoca: observação ativa, não simples espera"
+    },
+    {
+      "title": "20.2 Trauma penetrante"
+    },
+    {
+      "title": "20.3 Anastomose versus estoma e controle de danos"
+    },
+    {
+      "title": "20.4 Protocolo de antibiótico em trauma"
+    },
+    {
+      "title": "21. Perfuração iatrogênica: colonoscopia, EDA, CPRE e pós-operatório"
+    },
+    {
+      "title": "21.1 Colonoscopia"
+    },
+    {
+      "title": "21.2 CPRE e perfuração duodenal"
+    },
+    {
+      "title": "21.3 Anastomose deiscente no pós-operatório"
+    },
+    {
+      "title": "21.4 PEG/gastrostomia e procedimentos"
+    },
+    {
+      "title": "22. Técnica operatória e segurança: o que o cirurgião busca na cavidade"
+    },
+    {
+      "title": "22.1 A pergunta não é “laparoscopia ou laparotomia?”, mas “qual obtém controle seguro?”"
+    },
+    {
+      "title": "22.2 Etapas técnicas universais"
+    },
+    {
+      "title": "22.3 Avaliar viabilidade de alça"
+    },
+    {
+      "title": "22.4 Dreno e fechamento abdominal"
+    },
+    {
+      "title": "22.5 Contaminação, anastomose e ostomia"
+    },
+    {
+      "title": "23. Abordagem de choque e controle de danos no abdome séptico"
+    },
+    {
+      "title": "23.1 O ciclo fisiológico perigoso"
+    },
+    {
+      "title": "23.2 Fluidoterapia e vasopressores"
+    },
+    {
+      "title": "23.3 Qual o alvo da ressuscitação?"
+    },
+    {
+      "title": "23.4 Antifúngico empírico é exceção, não complemento automático"
+    },
+    {
+      "title": "24. Complicações e vigilância do pós-operatório"
+    },
+    {
+      "title": "24.1 Abscesso residual e peritonite persistente"
+    },
+    {
+      "title": "24.2 Deiscência, fístula e problemas nutricionais"
+    },
+    {
+      "title": "24.3 Síndrome compartimental abdominal e abdome aberto"
+    },
+    {
+      "title": "24.4 Infecção de sítio cirúrgico, hérnia incisional e função intestinal"
+    },
+    {
+      "title": "24.5 Desfechos de choque séptico"
+    },
+    {
+      "title": "25. Populações especiais e cenários de vulnerabilidade"
+    },
+    {
+      "title": "25.1 Pessoas idosas e frágeis"
+    },
+    {
+      "title": "25.2 Corticoide, imunobiológicos e neutropenia"
+    },
+    {
+      "title": "25.3 Gestação"
+    },
+    {
+      "title": "25.4 Pediatria e neonatologia"
+    },
+    {
+      "title": "25.5 Pós-operatório, obesidade e cirurgia bariátrica"
+    },
+    {
+      "title": "25.6 Anticoagulação e coagulopatia"
+    },
+    {
+      "title": "26. Algoritmo clínico integrado em três cenários"
+    },
+    {
+      "title": "26.1 Cenário A: choque + peritonite difusa"
+    },
+    {
+      "title": "26.2 Cenário B: estável + dor + ar livre em CT"
+    },
+    {
+      "title": "26.3 Cenário C: estável + suspeita alta, sem pneumoperitônio"
+    },
+    {
+      "title": "26.4 Fluxograma textual completo"
+    },
+    {
+      "title": "27. Pérolas clínicas, comparações e resumo de prova"
+    },
+    {
+      "title": "27.1 Mecanismo → pista → conduta"
+    },
+    {
+      "title": "27.2 Radiologia em dez linhas de raciocínio"
+    },
+    {
+      "title": "27.3 O que se transforma em flashcard"
+    },
+    {
+      "title": "28. Dez casos clínicos comentados e decisão cirúrgica"
+    },
+    {
+      "title": "Caso 1 — A pior epigastralgia da vida: úlcera duodenal perfurada"
+    },
+    {
+      "title": "Caso 2 — Úlcera selada: quando o não operatório é uma exceção responsável"
+    },
+    {
+      "title": "Caso 3 — Diverticulite perfurada com sepse: Hartmann ou anastomose?"
+    },
+    {
+      "title": "Caso 4 — Pneumoperitônio depois da colonoscopia"
+    },
+    {
+      "title": "Caso 5 — Trauma de cinto com TC duvidosa"
+    },
+    {
+      "title": "Caso 6 — Boerhaave versus Mallory–Weiss"
+    },
+    {
+      "title": "Caso 7 — Perfuração estercoral em idosa constipada"
+    },
+    {
+      "title": "Caso 8 — Pós-operatório de colectomia: febre apesar de antibiótico"
+    },
+    {
+      "title": "Caso 9 — O tumor é no sigmoide, mas quem perfurou foi o ceco"
+    },
+    {
+      "title": "Caso 10 — Sem foco residual, mas foi prescrita antibioticoterapia de 14 dias"
+    },
+    {
+      "title": "29. Quatorze questões autorais comentadas — estilo residência e ENAMED"
+    },
+    {
+      "title": "Questão 1 — A imagem sem ar livre"
+    },
+    {
+      "title": "Questão 2 — Sinal de Chilaiditi"
+    },
+    {
+      "title": "Questão 3 — Úlcera perfurada e manejo conservador"
+    },
+    {
+      "title": "Questão 4 — Diverticulite perfurada e técnica cirúrgica"
+    },
+    {
+      "title": "Questão 5 — Perfuração esofágica"
+    },
+    {
+      "title": "Questão 6 — Source control na sepse"
+    },
+    {
+      "title": "Questão 7 — Duração após controle adequado"
+    },
+    {
+      "title": "Questão 8 — Trauma por cinto e CT equívoca"
+    },
+    {
+      "title": "Questão 9 — Colonoscopia e fechamento endoscópico"
+    },
+    {
+      "title": "Questão 10 — Perfuração de obstrução tumoral"
+    },
+    {
+      "title": "Questão 11 — Rigidez sem ar, ar sem rigidez"
+    },
+    {
+      "title": "Questão 12 — Falha após operação e antibiótico"
+    },
+    {
+      "title": "Questão 13 — Obstrução distal e perfuração proximal"
+    },
+    {
+      "title": "Questão 14 — Antibiótico e controle de fonte em paciente crítico"
+    },
+    {
+      "title": "30. Referências científicas e aplicação brasileira"
+    },
+    {
+      "title": "31. Checklist editorial e de segurança"
+    }
+  ],
+  "reference_entries": [
+    "1. **Tarasconi A et al. (2020).** Perforated and bleeding peptic ulcer: WSES guidelines. *World Journal of Emergency Surgery* 15:3. DOI 10.1186/s13017-019-0283-9. https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/ . Fundamento de diagnóstico e manejo de úlcera perfurada, cirurgia e conservador selecionado.",
+    "2. **Sartelli M et al. (2020).** 2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/ . Abscessos, gás à distância, peritonite, Hartmann versus anastomose.",
+    "3. **WSES (2022).** WSES guidelines on blunt and penetrating bowel injury: diagnosis, investigations, and treatment. *World J Emerg Surg*. https://link.springer.com/article/10.1186/s13017-022-00418-y . Trauma contuso e penetrante, CT e exame seriado.",
+    "4. **WSES (2017).** Guidelines for management of iatrogenic colonoscopy perforation. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/ . Fechamento endoscópico e não operatório selecionado.",
+    "5. **Surgical Infection Society (2024).** The Surgical Infection Society Guidelines on the Management of Intra-Abdominal Infection: 2024 Update. *Surgical Infections*. DOI 10.1089/sur.2024.137. https://journals.sagepub.com/doi/full/10.1089/sur.2024.137 . Controle da fonte, antibióticos e duração.",
+    "6. **Global Alliance for Infections in Surgery (2024).** Intra-abdominal infections survival guide: a position statement. *World J Emerg Surg*. https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/ . Controle de foco e cursos antimicrobianos curtos quando bem controlados.",
+    "7. **Prescott HC et al. (2026).** Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2026. *Critical Care Medicine* e *Intensive Care Medicine*, publicado 23 de março de 2026. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Ressuscitação, antibioticoterapia, vasopressores, reconhecimento/controle precoce da fonte.",
+    "8. **WSES guidelines library.** https://www.wses.org.uk/scientific-resources/guidelines . Ponto de checagem de recomendações e versões sobre perfuração e infecções.",
+    "9. **Ministério da Saúde/Anvisa — protocolos locais.** A escolha de antibióticos, fluxo de trauma, imagem, profilaxia e manejo de sepse deve ser adaptada aos serviços brasileiros e comissões de controle de infecção. **Não foi identificada nesta rodada uma diretriz nacional única que substitua todos os protocolos internacionais para perfuração de cada segmento; não atribuir conduta internacional a PCDT nacional inexistente.**",
+    "**Cuidado de leitura:** referências do Drive usadas para benchmarking foram abertas antes da redação; seu conteúdo original não foi reproduzido. O arquivo do Drive de abdome agudo perfurativo é um resumo de ~4 mil caracteres e não equivale a um livro-texto extenso. As referências acima sustentam os pontos médicos e devem ser conferidas na revisão técnica final.",
+    "- [x] Inventário LURIA e leitura real de resumo do Drive e quatro materiais correlatos antes da redação, com limitação de autoria documentada.",
+    "- [x] 27 capítulos instrucionais progressivos, cobrindo fisiopatologia, clínica, exames, etiologias, fonte, cirurgia, exceções e complicações.",
+    "- [x] Dez casos clínicos com apresentação, raciocínio, exames, conduta, erro crítico e relevância (acrescentados casos 9 e 10 na reconciliação).",
+    "- [x] Quatorze questões A–D com justificativa individual, gabarito e mini-revisão (acrescentadas questões 13 e 14 na reconciliação).",
+    "- [x] Bibliografia médica identificável, destacando SSC **2026**, SIS **2024** e WSES.",
+    "- [ ] Auditoria científica profissional de cirurgia, trauma, antibioticoterapia, tempo e anatomia; conferir especialmente SIS 2024 (4 versus 8 dias em subgrupos), critérios de avaliação de obstrução cecal e SSC 2026.",
+    "- [ ] Executar matriz de autossuficiência do material (capítulo-base de cada questão), **incluindo novas questões 13/14**, revisar lacunas.",
+    "- [ ] Curadoria de ≥10 imagens médicas candidatas e conferência de licença/anatomia; aprovação via Admin, nunca inserção direta.",
+    "- [ ] Deduplicação semântica e certificação de ≥60 mil caracteres realmente instrucionais e úteis.",
+    "- [ ] JSON de entrada/HTML de prévia, validadores oficiais executados, inspeção de desktop/PWA e acessibilidade.",
+    "- [ ] **Não executar merge/deploy; ainda não está aprovada para publicação.**"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8896237/",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "https://journals.sagepub.com/doi/full/10.1089/sur.2024.137",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/",
+    "https://doi.org/10.1007/s00134-026-08361-1",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/",
+    "https://link.springer.com/article/10.1186/s13017-022-00418-y",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/",
+    "https://www.wses.org.uk/scientific-resources/guidelines"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A regra de atendimento é separar **diagnóstico anatômico** de **gravidade fisiológica**. Uma pessoa hipotensa e com rigidez difusa precisa de ressuscitação, antibiótico quando indicado e avaliação cirúrgica imediata; não esperar um exame “ideal” se isso retardar o controle da fonte. Um paciente estável com pequena coleção adjacente ao cólon por perfuração contida pode, em condições específicas, ser tratado com antibiótico e drenagem percutânea ou observação rigorosa. O mesmo rótulo “perfuração intestinal” não pode levar automaticamente a Hartmann, epiplonplastia ou laparotomia indiscriminada."
+    },
+    {
+      "text": "Diverticulite e perfuração colônica associam-se a idade, diverticulose, alterações da parede, constipação, imunossupressão e, em alguns subgrupos, uso de AINEs. Lesão traumática relaciona-se a desaceleração, compressão por cinto, penetrantes e contusão de mesentério. Após colonoscopia, polipectomia/EMR, diverticulose e manobras difíceis elevam risco de perfuração. A principal utilidade desses fatores é **ajustar a suspeita e o limiar de investigação**, não definir diagnóstico isolado."
+    },
+    {
+      "text": "No exame, inspeção de cicatrizes, hérnias inguinais, estomas e locais de procedimento pode localizar fatores causais. Palpação focal de FID/FIE ajuda a reconhecer peritonite localizada. O toque retal ou exame pélvico são indicados quando informação mudará conduta (sangue, massa, abscesso pélvico, diagnóstico ginecológico), respeitando consentimento e conforto; **não são testes universais de perfuração**."
+    },
+    {
+      "text": "Uso de opioides, idade avançada, neuropatia diabética, alteração cognitiva, trauma medular, sedação ou imunossupressão diminuem confiabilidade do exame. Diante de deterioração hemodinâmica com dor aparentemente pequena, repita exame e use imagem/avaliação cirúrgica proporcionais. Em traumático com lesões distrativas, pacientes intoxicados ou sedados podem não descrever dor. A recomendação WSES 2022 valoriza **exames seriados** e CT repetida em achados equívocos."
+    },
+    {
+      "text": "A leucocitose pode estar ausente cedo, na neutropenia e em sepse avançada. Elevação de PCR é inespecífica; esperar PCR alta para operar é erro. **Lactato elevado sugere hipoperfusão/gravidade**, mas lactato normal não exclui isquemia, perfuração inicial nem sepse. Creatinina ajuda a estimar lesão renal e planejar contraste/dose de antibióticos, porém risco de atraso em diagnóstico de emergência pode superar risco de contraste, sob avaliação individual."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

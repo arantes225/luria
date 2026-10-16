@@ -1,0 +1,332 @@
+{
+  "sha": "5542381eaed21ebb6bc6c7a825e0fa6777c32745",
+  "path": "apostilas/_rascunhos/lote-10-aula-211-transtornos-depressivos-risco-suicidio.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--5542381eae",
+  "title": "LURIA — Apostila 211 — Transtornos depressivos e avaliação do risco de suicídio",
+  "format": ".md",
+  "chars_estimated": 72365,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 211 — Transtornos depressivos e avaliação do risco de suicídio"
+    },
+    {
+      "title": "0. Auditoria de não duplicação, benchmark e procedência"
+    },
+    {
+      "title": "Roteiro de aprendizagem"
+    },
+    {
+      "title": "1. Epidemiologia e carga de doença: um problema funcional, não só emocional"
+    },
+    {
+      "title": "2. Fisiopatologia: da neurotransmissão à plasticidade e ao estresse"
+    },
+    {
+      "title": "2.1 Modelo biopsicossocial integrado"
+    },
+    {
+      "title": "2.2 Eixo de estresse e inflamação"
+    },
+    {
+      "title": "2.3 Genes, temperamento e ambiente"
+    },
+    {
+      "title": "2.4 Por que o corpo apresenta sintomas?"
+    },
+    {
+      "title": "3. Conceitos diagnósticos: sintoma, episódio e transtorno"
+    },
+    {
+      "title": "3.1 Humor deprimido e anedonia"
+    },
+    {
+      "title": "3.2 Episódio depressivo maior segundo lógica DSM-5-TR"
+    },
+    {
+      "title": "3.3 CID-11 versus DSM: convergência sem fusão artificial"
+    },
+    {
+      "title": "3.4 Transtorno depressivo persistente e curso"
+    },
+    {
+      "title": "3.5 Especificadores clinicamente relevantes"
+    },
+    {
+      "title": "4. Anamnese: perguntas que evitam os grandes erros"
+    },
+    {
+      "title": "4.1 Começar pela história longitudinal"
+    },
+    {
+      "title": "4.2 A pergunta obrigatória antes de antidepressivo: mania/hipomania"
+    },
+    {
+      "title": "4.3 História psiquiátrica e tratamentos prévios"
+    },
+    {
+      "title": "4.4 Substâncias, sono e contexto"
+    },
+    {
+      "title": "4.5 Investigar segurança em toda consulta"
+    },
+    {
+      "title": "5. Exame físico, mental e exames complementares direcionados"
+    },
+    {
+      "title": "5.1 PHQ-2, PHQ-9 e avaliação estruturada"
+    },
+    {
+      "title": "6. Diagnóstico diferencial que realmente muda o tratamento"
+    },
+    {
+      "title": "6.1 Luto e depressão: sobreposição sem falsa oposição"
+    },
+    {
+      "title": "6.2 Depressão e cognição no idoso"
+    },
+    {
+      "title": "7. Gravidade e formulação clínica: além de sintomas contados"
+    },
+    {
+      "title": "8. Terapias não farmacológicas e modelo de decisão compartilhada"
+    },
+    {
+      "title": "8.1 O que o tratamento deve alcançar?"
+    },
+    {
+      "title": "8.2 Ativação comportamental"
+    },
+    {
+      "title": "8.3 TCC, terapia interpessoal e outras abordagens"
+    },
+    {
+      "title": "8.4 Sono, exercício, substâncias e rede"
+    },
+    {
+      "title": "9. Tratamento farmacológico: por que, quando, qual e como monitorar"
+    },
+    {
+      "title": "9.1 Quando considerar antidepressivo"
+    },
+    {
+      "title": "9.2 ISRS: mecanismo, diferenças e cuidados"
+    },
+    {
+      "title": "9.3 IRSN, mirtazapina, bupropiona e tricíclicos"
+    },
+    {
+      "title": "9.4 Exemplos de posologia inicial para estudo — NÃO constituem prescrição individual"
+    },
+    {
+      "title": "9.5 Início, revisão e tempo para resposta"
+    },
+    {
+      "title": "9.6 Continuação, manutenção e prevenção de recaída"
+    },
+    {
+      "title": "9.7 Suspensão gradual e diferenciação da síndrome de retirada"
+    },
+    {
+      "title": "9.8 Hiponatremia, QT, interações e populações especiais"
+    },
+    {
+      "title": "10. Avaliação do risco de suicídio: competência transversal e prioridade de segurança"
+    },
+    {
+      "title": "10.1 Por que perguntar em toda consulta?"
+    },
+    {
+      "title": "10.2 “Baixo, médio, alto risco”: por que o estudante precisa atualizar a linguagem?"
+    },
+    {
+      "title": "10.3 Manejo do paciente com perigo imediato"
+    },
+    {
+      "title": "10.4 Plano colaborativo de segurança"
+    },
+    {
+      "title": "10.5 Após episódio de autoagressão"
+    },
+    {
+      "title": "10.6 Antidepressivos em pessoas com risco de autoagressão"
+    },
+    {
+      "title": "10.7 Diferenças entre risco e transtorno depressivo"
+    },
+    {
+      "title": "11. Depressão grave, psicose, catatonia e terapias especializadas"
+    },
+    {
+      "title": "11.1 Depressão com características psicóticas"
+    },
+    {
+      "title": "11.2 Catatonia ou recusa alimentar grave"
+    },
+    {
+      "title": "11.3 Eletroconvulsoterapia (ECT)"
+    },
+    {
+      "title": "11.4 Tratamentos avançados"
+    },
+    {
+      "title": "12. Casos clínicos autorais comentados"
+    },
+    {
+      "title": "Caso 1 — A pessoa que procura a UBS por dor e fadiga"
+    },
+    {
+      "title": "Caso 2 — “Só depressão”, mas há períodos de energia extraordinária"
+    },
+    {
+      "title": "Caso 3 — Sintomas menos graves e preferência por psicoterapia"
+    },
+    {
+      "title": "Caso 4 — Jovem no início do ISRS, agora mais agitado"
+    },
+    {
+      "title": "Caso 5 — Tratamento “resistente” que nunca foi tomado adequadamente"
+    },
+    {
+      "title": "Caso 6 — Idosa com isolamento, queda e hiponatremia"
+    },
+    {
+      "title": "Caso 7 — Depressão grave com incapacidade de alimentar-se"
+    },
+    {
+      "title": "Caso 8 — Autoagressão com pedido de alta imediata"
+    },
+    {
+      "title": "Caso 9 — Recidiva após suspensão abrupta"
+    },
+    {
+      "title": "13. Questões originais de residência — alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — Critérios de episódio depressivo maior"
+    },
+    {
+      "title": "Questão 2 — Diferencial com bipolaridade"
+    },
+    {
+      "title": "Questão 3 — PHQ-9"
+    },
+    {
+      "title": "Questão 4 — Menos grave e preferência"
+    },
+    {
+      "title": "Questão 5 — Início do ISRS"
+    },
+    {
+      "title": "Questão 6 — Classe e efeito adverso"
+    },
+    {
+      "title": "Questão 7 — Ausência de resposta"
+    },
+    {
+      "title": "Questão 8 — Retirada da venlafaxina"
+    },
+    {
+      "title": "Questão 9 — Segurança e escalas"
+    },
+    {
+      "title": "Questão 10 — Início do cuidado em urgência"
+    },
+    {
+      "title": "Questão 11 — Notificação no SUS"
+    },
+    {
+      "title": "Questão 12 — Depressão e tireoide"
+    },
+    {
+      "title": "Questão 13 — PHQ-9 e alta"
+    },
+    {
+      "title": "Questão 14 — Continuação do antidepressivo"
+    },
+    {
+      "title": "14. Camada visual: imagens e esquemas previstos, sem licença presumida"
+    },
+    {
+      "title": "15. Referências verificáveis, data e aplicabilidade"
+    },
+    {
+      "title": "16. Quadro final de memorização clínica"
+    },
+    {
+      "title": "17. Autoauditoria e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. **Brasil — Ministério da Saúde.** *Linha de Cuidado da Depressão no Adulto: manejo inicial/conduta (APS)*. Página com recomendações para avaliação de risco de suicídio, acolhimento, família/rede, referência e notificação de violência autoprovocada. Disponível em: <https://linhasdecuidado.saude.gov.br/portal/depressao/unidade-de-atencao-primaria/manejo-inicial-conduta/>. **Linha publicada em 2022; confirmar normas de notificação e protocolos locais vigentes em 2026**.",
+    "2. **Brasil — Ministério da Saúde.** *Depressão no adulto — planejamento terapêutico na atenção especializada*. <https://linhasdecuidado.saude.gov.br/portal/depressao/atencao-especializada/planejamento-terapeutico/>. Interação APS–CAPS e PHQ-9 no acompanhamento.",
+    "3. **NICE.** *Depression in adults: treatment and management*. **NG222**, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Fonte principal de cuidado escalonado, tratamento, retorno, segurança ao iniciar medicação, manutenção, retirada e ECT.",
+    "4. **NICE.** *Self-harm: assessment, management and preventing recurrence*. **NG225**, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte para **não usar escalas ou classificação baixo/médio/alto como preditores/critério de alta** e para plano colaborativo de segurança.",
+    "5. **Organização Mundial da Saúde.** *Mental Health Gap Action Programme (mhGAP) guideline for mental, neurological and substance use disorders*, **3ª ed. 2023**. <https://www.who.int/publications/i/item/9789240084278>. Manejo em serviços não especializados. A licença da obra é CC BY-NC-SA 3.0 IGO; o texto aqui é original e não reproduz o manual.",
+    "6. **Canadian Network for Mood and Anxiety Treatments (CANMAT).** *2023 Update to CANMAT Clinical Guidelines for Adults with Major Depressive Disorder*, recursos oficiais em <https://www.canmat.org/2025/04/29/major-depressive-disorder-guidelines-related-resources/>. Conferir sempre a referência primária da atualização para detalhes de hierarquia de tratamento.",
+    "7. **DailyMed/NLM.** *Fluoxetine — oral capsule, prescribing information*, seção 2.1 Major Depressive Disorder. <https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1409772-e719-67f5-e053-2995a90ab5b6>. Confirma início de **20 mg/dia em adulto** para a apresentação indicada, com teto de 80 mg/dia; não implica disponibilidade/formulação brasileiras equivalentes.",
+    "8. **DailyMed/NLM.** *Venlafaxine hydrochloride extended-release tablets, prescribing information*. <https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fdaed1c2-dd0a-4bf3-975a-86fe3e7f0c97>. Confirma início de **75 mg/dia** (37,5 mg temporário em alguns pacientes) e dose máxima de **225 mg/dia para aquela apresentação**.",
+    "9. **DailyMed/NLM.** *Sertraline hydrochloride tablets — Major Depressive Disorder*. Bula com início adulto de **50 mg uma vez ao dia**. <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40be43b2-649b-0928-e063-6394a90a3b48>.",
+    "10. **DailyMed/NLM.** *Escitalopram oxalate tablets — Major Depressive Disorder*. Bula com início adulto de **10 mg uma vez ao dia**, limite usual **20 mg/dia** para apresentação descrita. <https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5fbc8ce-bd41-4bd0-b413-0dea97e596c3>.",
+    "11. **NICE.** *Bipolar disorder: assessment and management*. **CG185** (2014, com atualizações subsequentes inclusive 2023/2025). <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fonte para diferenciar depressão bipolar antes de monoterapia antidepressiva.",
+    "12. **Yatham LN et al.** *CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence*, texto integral em <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Fonte de precaução com monoterapia antidepressiva na bipolaridade I, aprofundada na aula 212.",
+    "**Checagem futura:** confirmar bula Anvisa/Rename e tabelas de apresentação/doses brasileiras específicas antes de incorporar a um sistema de prescrição. O quadro posológico é de referência acadêmica para adultos, não prescrição individualizada.",
+    "**Suspeita de depressão:** humor deprimido ou anedonia persistentes, outros domínios afetivos/biológicos, prejuízo e duração → avaliar segurança → procurar histórico de hipomania/mania e causas médicas → classificar gravidade e preferências → escolher cuidado escalonado → reavaliar precocemente → monitorar resposta/remissão e planejar manutenção.",
+    "**Se há risco atual significativo:** apoiar/acolher, avaliar segurança, condições clínicas e capacidade de autocuidado, envolver equipe/rede apropriada, garantir transferência e seguimento reais. **Nunca dar alta só por escala.**",
+    "**Se antidepressivo está em uso:** conferir adesão, dose/tempo, tolerabilidade, alterações do humor, agitação e pensamentos de autoagressão; reavaliar por necessidade, não apenas por calendário fixo. **Não suspender abruptamente** sem considerar síndrome de retirada.",
+    "**Se há psicose/catatonia/risco vital:** cuidado especializado urgente; ECT pode ser considerada em depressão grave que exige resposta rápida.",
+    "- **Estrutura:** conceitos, fisiopatologia, diagnóstico com temporalidade/criteriologia, diferenciais, gravidade, psicoterapia, fármacos, segurança, cuidado especializado, **9 casos** e **14 questões originais comentadas**.",
+    "- **Fonte do Drive:** somente resumos de **síndromes cognitivas** e **vigilância epidemiológica** com conteúdos correlatos, não há obra equivalente integral confirmada; logo, etapa zero comparativa **NÃO CERTIFICADA**.",
+    "- **Ciência:** houve confronto externo com Ministério da Saúde, NICE, OMS, CANMAT e bulas norte-americanas de duas apresentações. Requer **revisão clínica independente por psiquiatra**, conferência de critérios CID-11/DSM, atos normativos de notificação em 2026, disponibilidade/formulações de fármacos e ética em pronto-atendimento.",
+    "- **Imagens:** 12 itens candidatos previstos, **nenhuma** imagem médica aprovada/licenciada/inserida.",
+    "- **Contagem:** número bruto de caracteres Markdown não equivale a “60 mil caracteres úteis” após excluir referências/controles, tabelas repetitivas ou elementos não didáticos.",
+    "- **Integridade do site:** nenhuma página HTML/JS, catálogo, Supabase, branch \\`main\\` ou deploy foram alterados. **Rascunho isolado**, sem conclusão clínica certificada.",
+    "- **Próximo tema oficial do lote:** **212 — Transtorno bipolar e episódios do humor**, após checar fontes e ausência de livro equivalente no Drive. Foco próprio: mania, hipomania, depressão bipolar, mistos, estabilização, lítio, anticonvulsivantes, antipsicóticos e vigilância."
+  ],
+  "external_urls": [
+    "https://linhasdecuidado.saude.gov.br/portal/depressao/unidade-de-atencao-primaria/manejo-inicial-conduta/",
+    "https://linhasdecuidado.saude.gov.br/portal/depressao/atencao-especializada/planejamento-terapeutico/",
+    "https://www.nice.org.uk/guidance/ng222/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.who.int/publications/i/item/9789240084278",
+    "https://www.canmat.org/2025/04/29/major-depressive-disorder-guidelines-related-resources/",
+    "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1409772-e719-67f5-e053-2995a90ab5b6",
+    "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fdaed1c2-dd0a-4bf3-975a-86fe3e7f0c97",
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40be43b2-649b-0928-e063-6394a90a3b48",
+    "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5fbc8ce-bd41-4bd0-b413-0dea97e596c3",
+    "https://www.nice.org.uk/guidance/cg185/chapter/recommendations",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **EM 30 SEGUNDOS — PULO DO GATO LURIA** > Depressão **não é apenas tristeza**: é alteração persistente de humor e/ou prazer, associada a mudanças cognitivas, corporais e funcionais, cujo diagnóstico exige **curso temporal, sofrimento/prejuízo, diagnóstico diferencial e exclusão de causas médicas/substâncias**. **Antes de prescrever antidepressivo, procure história de mania/hipomania** para não tratar depressão bipolar como unipolar. Em todo paciente com depressão, **pergunte diretamente sobre pensamentos de morte e possibilidade atual de se ferir**, avalie necessidades de segurança e estabeleça acesso real ao cuidado. Escalas como PHQ-9 aju"
+    },
+    {
+      "text": "**Pesquisa externa — distinguida das fontes do Drive:** Ministério da Saúde/Linha de Cuidado da Depressão no Adulto (orientação SUS com publicação de 2022); NICE **NG222** (depressão em adultos, publicada 2022, recomendações online consultadas em 2026); NICE **NG225** (autoagressão e planejamento de segurança, 2022); OMS **mhGAP 3ª edição 2023**; CANMAT *2023 Update* para depressão maior, página CANMAT consultada; revisão de manejo em transtorno bipolar NICE **CG185** e CANMAT/ISBD (2023) para evitar confundir polaridade. O conteúdo aqui é elaboração original, não transcrição/derivação editorial dessas publicações. Procedimentos e produtos de"
+    },
+    {
+      "text": "1. Explicar mecanismo biopsicossocial da síndrome depressiva sem reduzi-la a “falta de serotonina”. 2. Diferenciar tristeza, luto, transtorno de adaptação, episódio depressivo, distimia/transtorno depressivo persistente, depressão bipolar, delirium e condições clínicas. 3. Aplicar lógica diagnóstica de **episódio depressivo maior** (cinco ou mais sintomas por duas semanas no DSM-5-TR, incluindo humor deprimido e/ou anedonia, com prejuízo e exclusões) sem confundir a descrição simplificada com todo o manual diagnóstico. 4. Reconhecer especificadores: melancólicos, atípicos, ansiosos, com características psicóticas, padrão sazonal e início peri"
+    },
+    {
+      "text": "Transtornos depressivos estão entre os principais responsáveis por incapacidade e perda de qualidade de vida, com sintomas frequentemente iniciados em idades produtivas e repercussão em escola, trabalho, cuidado dos filhos e relações. A prevalência depende de país, período, método de diagnóstico e população estudada; não confundir prevalência de **sintomas depressivos** em questionário com a de **transtorno depressivo diagnosticado**. Comorbidade com ansiedade, condições dolorosas, doenças cardiovasculares, diabetes, uso de substâncias e transtornos do sono complica avaliação e tratamento."
+    },
+    {
+      "text": "Monoaminas **serotonina, noradrenalina e dopamina** participam desses circuitos, mas a doença **não é explicada por deficiência única, diretamente mensurável de serotonina**. Antidepressivos podem alterar neurotransmissão precocemente, enquanto benefício clínico leva semanas e envolve adaptação de circuitos, aprendizagem, sono, regulação emocional e outros fatores. O modelo de plasticidade sináptica e fatores neurotróficos é útil para entender latência terapêutica, sem ser apresentado como biomarcador diagnóstico validado."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

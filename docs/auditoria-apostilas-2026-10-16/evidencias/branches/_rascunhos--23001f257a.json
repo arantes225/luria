@@ -1,0 +1,403 @@
+{
+  "sha": "23001f257a7bb8631a06a5cd83d7091266d32e7d",
+  "path": "apostilas/_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--23001f257a",
+  "title": "LURIA — TEMA 136 · LOTE 6 NA GRADE DE 260 TEMAS (ARQUIVO LEGADO DO LOTE 7)",
+  "format": ".md",
+  "chars_estimated": 71293,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — TEMA 136 · LOTE 6 NA GRADE DE 260 TEMAS (ARQUIVO LEGADO DO LOTE 7)"
+    },
+    {
+      "title": "Hemorragia digestiva: integração clínica, localização e decisões da emergência"
+    },
+    {
+      "title": "0. Etapa zero — comparativos reais"
+    },
+    {
+      "title": "0A. Fronteiras curriculares verificadas em 15/10/2026"
+    },
+    {
+      "title": "0A.1. Exercício transversal de decisão com fonte incerta"
+    },
+    {
+      "title": "0A.2. Achados de sobreposição que exigem revisão editorial posterior"
+    },
+    {
+      "title": "1. Três síndromes clínicas, não três cores de fezes"
+    },
+    {
+      "title": "2. Reconhecer choque antes de classificar Forrest"
+    },
+    {
+      "title": "3. Localizar por probabilidade sem atrasar terapia"
+    },
+    {
+      "title": "4. Qual relógio endoscópico?"
+    },
+    {
+      "title": "5. Antitrombóticos e hemostasia: tratar dois riscos em paralelo"
+    },
+    {
+      "title": "6. Fontes não raras e raras — construir um diferencial útil"
+    },
+    {
+      "title": "7. Ferramentas de risco: usar quando o paciente está vivo e a pergunta é correta"
+    },
+    {
+      "title": "7.1. Glasgow–Blatchford: calcular sem misturar unidades e sem transformar triagem em prognóstico absoluto"
+    },
+    {
+      "title": "8. Algoritmo integrador"
+    },
+    {
+      "title": "9. Quatro casos integradores"
+    },
+    {
+      "title": "Caso 1 — hematêmese e cirrose"
+    },
+    {
+      "title": "Caso 2 — hematoquezia e choque, origem indeterminada"
+    },
+    {
+      "title": "Caso 3 — AAS secundário e úlcera"
+    },
+    {
+      "title": "Caso 4 — EDA/colonoscopia negativas com anemia e novo sangramento"
+    },
+    {
+      "title": "10. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "11. Imagens/esquemas candidatos — sem publicação"
+    },
+    {
+      "title": "12. Referências verificáveis"
+    },
+    {
+      "title": "13. Qualidade e pendências"
+    },
+    {
+      "title": "CAMADA INTEGRADORA AVANÇADA — A HEMORRAGIA COMO SÍNDROME"
+    },
+    {
+      "title": "14. Anatomia funcional: onde sangue se transforma em sintoma"
+    },
+    {
+      "title": "14.1. Esôfago, estômago e duodeno proximal"
+    },
+    {
+      "title": "14.2. Hipertensão portal não é vasodilatação gástrica isolada"
+    },
+    {
+      "title": "14.3. Cólon proximal, reto e fonte no delgado"
+    },
+    {
+      "title": "14.4. A lesão que sangra pode ser consequência de outro problema"
+    },
+    {
+      "title": "15. Fisiologia do choque hemorrágico — por que o primeiro Hb pode enganar"
+    },
+    {
+      "title": "15.1. Perfusão e oferta de oxigênio"
+    },
+    {
+      "title": "15.2. Exemplo de hemoglobina aparentemente tranquilizadora"
+    },
+    {
+      "title": "15.3. Lactato não é sinônimo de localização"
+    },
+    {
+      "title": "15.4. Pressão normalizada não garante hemostasia"
+    },
+    {
+      "title": "16. Transfusão e hemostasia: evitar simultaneamente subtratamento e excesso"
+    },
+    {
+      "title": "16.1. Concentrado de hemácias"
+    },
+    {
+      "title": "16.2. Plaquetas, plasma e fibrinogênio"
+    },
+    {
+      "title": "16.3. Unidade de sangue não é “um número que resolve”"
+    },
+    {
+      "title": "16.4. Uma diferença de prioridade em hepatopata"
+    },
+    {
+      "title": "17. História clínica focada em um minuto"
+    },
+    {
+      "title": "17.1. Um roteiro para comunicação em equipe"
+    },
+    {
+      "title": "17.2. Medicamentos: cada um muda uma pergunta"
+    },
+    {
+      "title": "17.3. Cirurgias que alteram o mapa"
+    },
+    {
+      "title": "18. Escolher o exame é escolher como controlar a fonte"
+    },
+    {
+      "title": "18.1. EDA quando fonte alta é provável"
+    },
+    {
+      "title": "18.2. EDA negativa: o que significa?"
+    },
+    {
+      "title": "18.3. Colonoscopia quando provável HDB estável"
+    },
+    {
+      "title": "18.4. CTA é a ponte da síndrome ativa para a radiologia intervencionista"
+    },
+    {
+      "title": "18.5. Angiografia e embolização"
+    },
+    {
+      "title": "18.6. Cápsula, enteroscopia e delgado"
+    },
+    {
+      "title": "18.7. Sangue retido no estômago: quando o pró-cinético muda a qualidade da EDA"
+    },
+    {
+      "title": "19. Manejo de úlcera hemorrágica: da imagem Forrest à alta"
+    },
+    {
+      "title": "19.1. Classificação Forrest aplicada a conduta"
+    },
+    {
+      "title": "19.2. Hemostasia durável importa"
+    },
+    {
+      "title": "19.3. IBP e *H. pylori*"
+    },
+    {
+      "title": "19.4. Sinais de ressangramento"
+    },
+    {
+      "title": "19.5. Nutrição e ferro"
+    },
+    {
+      "title": "20. Manejo varicoso como pacote pré-endoscópico e pós-hemostasia"
+    },
+    {
+      "title": "20.1. Por que antibiótico em sangramento sem infecção comprovada?"
+    },
+    {
+      "title": "20.2. Vasoativo e tempo"
+    },
+    {
+      "title": "20.3. Técnica endoscópica não é igual em toda variz"
+    },
+    {
+      "title": "20.4. TIPS precoce versus resgate"
+    },
+    {
+      "title": "20.5. Profilaxia secundária de varizes"
+    },
+    {
+      "title": "21. HDB: por que a colite dolorosa segue outro tratamento"
+    },
+    {
+      "title": "21.1. Divertículo e angiodisplasia"
+    },
+    {
+      "title": "21.2. Colite isquêmica"
+    },
+    {
+      "title": "21.3. Doença inflamatória intestinal, infecção e tumor"
+    },
+    {
+      "title": "21.4. Sangramento pós-procedimento"
+    },
+    {
+      "title": "22. Paciente com antitrombóticos: o risco trombótico continua presente"
+    },
+    {
+      "title": "22.1. Quatro cenários com implicações distintas"
+    },
+    {
+      "title": "22.2. Reversão não é sinônimo de suspensão"
+    },
+    {
+      "title": "22.3. Retomada evita risco tardio"
+    },
+    {
+      "title": "23. Delirium, fragilidade, gestação e outros grupos especiais"
+    },
+    {
+      "title": "23.1. Idosos e fragilidade"
+    },
+    {
+      "title": "23.2. Gestantes"
+    },
+    {
+      "title": "23.3. Crianças/adolescentes"
+    },
+    {
+      "title": "23.4. Pacientes críticos/UTI"
+    },
+    {
+      "title": "24. Simulações de decisão clínica: cinco pacientes, cinco caminhos"
+    },
+    {
+      "title": "Caso 5 — pressão arterial recuperada, úlcera ainda sangrando"
+    },
+    {
+      "title": "Caso 6 — sangue vivo e anticoagulação, mas a cor não localiza"
+    },
+    {
+      "title": "Caso 7 — cirrose com sangramento de úlcera, não de variz"
+    },
+    {
+      "title": "Caso 8 — sangramento sentinela após cirurgia da aorta"
+    },
+    {
+      "title": "Caso 9 — sangramento oculto e exame negativo de má qualidade"
+    },
+    {
+      "title": "25. Questões inéditas de integração — oito erros frequentes"
+    },
+    {
+      "title": "Questão 7 — hemoglobina e choque"
+    },
+    {
+      "title": "Questão 8 — relógios endoscópicos"
+    },
+    {
+      "title": "Questão 9 — Forrest IIb e 2026"
+    },
+    {
+      "title": "Questão 10 — CTA"
+    },
+    {
+      "title": "Questão 11 — cirrose e úlcera"
+    },
+    {
+      "title": "Questão 12 — antitrombóticos"
+    },
+    {
+      "title": "Questão 13 — fístula aortoentérica"
+    },
+    {
+      "title": "Questão 14 — exame “negativo” incompleto"
+    },
+    {
+      "title": "26. Teste de autossuficiência: integração não precisa virar repetição"
+    },
+    {
+      "title": "26.1. O que este livro agora ensina sem exigir outra leitura"
+    },
+    {
+      "title": "26.2. Matriz conteúdo → caso → questão"
+    },
+    {
+      "title": "26.3. O que permanece ausente"
+    },
+    {
+      "title": "27. Referências adicionais e registro de versões"
+    },
+    {
+      "title": "28. Checklist após aprofundamento"
+    }
+  ],
+  "reference_entries": [
+    "**Úlcera péptica:** mucosa ultrapassa barreira e pode lesar vaso; AINE e H. pylori entre causas centrais. Forrest classifica estigma endoscópico; em alto risco, hemostasia endoscópica + IBP em esquema adequado. Em ressangramento, reendoscopia e, se falha, TAE/cirurgia.  ",
+    "**Varizes:** hipertensão portal, vasoativo e antibiótico antes de EDA, ligadura esofágica, técnicas específicas para gástricas, TIPS em resgate/alto risco. Não prescrever IBP crônico apenas por varizes.  ",
+    "**Diverticular:** hematoquezia por vezes volumosa e indolor; divertículo incidental não prova localização.  ",
+    "**Colite isquêmica:** dor abdominal após baixo fluxo seguida de sangue; necrose/peritonite muda para cirurgia.  ",
+    "**Angiodisplasia:** episódios intermitentes, idosos e doença cardiovascular/renal, endoscopia hemostática conforme lesão.  ",
+    "**Câncer:** anemia crônica e mudança de hábito, mas também pode apresentar sangramento visível; investigar mesmo com doença anorretal coexistente.  ",
+    "**Fístula aortoentérica:** em portador de prótese vascular aórtica, hemorragia sentinela pode preceder evento fatal; solicitar avaliação vascular urgente, não atribuir simplesmente a úlcera.  ",
+    "**Hemobilia e hemossuco pancreático:** antecedentes hepatobiliares/pancreáticos, pseudoaneurisma, EDA inconclusiva, podem exigir imagem/angiografia.",
+    "**Glasgow–Blatchford (GBS):** pré-EDA, incorpora ureia, Hb, pressão, pulso, melena, síncope, insuficiência cardíaca/hepatopatia. Faixa muito baixa (0–1) pode apoiar manejo ambulatorial **apenas em pessoa realmente estável e com seguimento**. Não aplicar GBS como “autorização automática” para alta em cirrótico com hematêmese.",
+    "**Rockall:** estratificação clínica/endoscópica da HDA, mais associado a prognóstico do que a triagem simples antes de EDA.",
+    "**Oakland:** ferramenta específica para estratificar adultos com HDB e possível alta segura (sete variáveis, limiar de referência ≤8 pontos na ESGE 2021). A validação externa e a aula 132 documentam a pontuação; na abordagem integrada o princípio central é não substituir a avaliação hemodinâmica e a investigação da causa por um número isolado.",
+    "**Child–Pugh/MELD:** em HDA de cirrótico, avaliam reserva hepática/prognóstico e participam de seleção de TIPS; não substituem ABCDE.",
+    "**Atenção às unidades.** A tabela usa **ureia em mmol/L** (padrão de vários estudos), mas no Brasil muitos laudos fornecem **ureia em mg/dL**; outros locais relatam **nitrogênio ureico — BUN**, outra grandeza. Nunca inserir o número de um laudo de ureia em mg/dL diretamente na faixa numérica de mmol/L nem tratar ureia e BUN como equivalentes sem conversão laboratorial apropriada.",
+    "**Exemplo de risco baixo, em contexto apropriado:** mulher de 32 anos, pequena hematêmese autolimitada, Hb **12,8 g/dL**, ureia **5,4 mmol/L**, PAS **124 mmHg**, FC **82/min**, sem melena, síncope, hepatopatia nem insuficiência cardíaca. Cada variável pontua **zero**, portanto **GBS = 0**. Antes de considerar seguimento ambulatorial, conferir a confiabilidade do relato, ausência de sangramento persistente, sinais de alarme, acesso a avaliação e outras razões para internação.",
+    "**Exemplo de alto risco que dispensa calculadora para iniciar atendimento:** homem com melena, síncope, FC **112/min**, PAS **105 mmHg**, Hb **11,3 g/dL**, ureia **9,1 mmol/L** e sem comorbidades do escore: GBS = **1 (melena) + 2 (síncope) + 1 (FC) + 1 (PAS) + 3 (Hb) + 3 (ureia) = 11**. Reanimação, monitorização, acesso venoso e planejamento de endoscopia ocorrem imediatamente; o escore comunica gravidade, não substitui terapia.",
+    "**Não trocar GBS por Oakland:** para hematêmese/melena com suspeita alta, GBS tem função de triagem; para provável HDB em adulto, Oakland pode apoiar a decisão de alta, mas não é calculadora validada para escolher EDA versus CTA num choque de fonte indeterminada. Se o paciente está instável, a prioridade é estabilização e controle do foco, mesmo antes da definição de topografia. Conferir com a equipe local como pontua idade, unidades, exame retal e risco no modelo Oakland; **valores ausentes não são zero**.",
+    "**Fontes verificáveis:** NHS Greater Glasgow and Clyde, tabela institucional de GBS: https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/ ; ACG 2021, DOI 10.14309/ajg.0000000000001245; ACG 2023 para HDB; validação externa Oakland, *JAMA Network Open* 2020: https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/. Essas tabelas apresentam parâmetros de escore padronizado, não transcrevem conteúdo pedagógico de terceiros.",
+    "1. Pergunte **“instável?”** antes de “alta ou baixa?”; ressuscitação e sangue conforme gravidade.",
+    "2. Proteja via aérea quando necessário; colher laboratórios, revisar antitrombóticos.",
+    "3. Hematêmese/cirrose → suspeita varicosa? vasoativo e profilaxia antibiótica oportunos.",
+    "4. Melena sem origem conhecida → avaliar prioridade de EDA.",
+    "5. Hematoquezia volumosa com choque → pensar HDA maciça e HDB; CTA/EDA conforme melhor probabilidade e disponibilidade.",
+    "6. Estável com provável HDB → preparo e colonoscopia.",
+    "7. Identifique foco e obtenha hemostasia definitiva, não apenas normalização transitória de sinais.",
+    "8. Se ressangrar, acione via de resgate (nova endoscopia, radiologia intervencionista, cirurgia).",
+    "9. Investigue e trate causa (H. pylori, profilaxia varicosa, câncer, AINE, colite, anticoagulação).",
+    "10. Antes da alta: anemia/ferro, plano de medicação, sinais de alarme, retorno, acesso e educação.",
+    "**Gabarito C.** Hematoquezia pode ocorrer em HDA de grande fluxo. **A/B** inferem localização pela cor. **D** ignora choque. **Mini-revisão:** hemodinâmica antes de topografia.",
+    "**Gabarito B.** Varizes requerem pacote precoce. **A** omite terapia; **C** agrava hipotensão; **D** não é exame inicial. **Mini-revisão:** relógio varicoso distinto.",
+    "**Gabarito A.** ESGE/ACG recomendam EDA precoce após estabilização, com exceções por instabilidade. **B/D** atrasam; **C** inseguro. **Mini-revisão:** reanimação não pode ser omitida."
+  ],
+  "external_urls": [
+    "https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/.",
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/guidelines",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/.",
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://pubmed.ncbi.nlm.nih.gov/42173116/",
+    "https://gi.org/topics/small-bowel-bleeding/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Clínica Médica / Gastroenterologia / Urgência **Situação:** **RASCUNHO INTEGRADOR**, não publicado e não certificado como livro-texto autossuficiente. **Revisão:** 14/10/2026. **Vínculos curriculares:** aula 127, hemorragia digestiva alta; aula 132, hemorragia digestiva baixa. **Objetivo desta aula:** não fabricar uma terceira apostila repetindo mecanicamente úlceras, varizes, divertículos e colonoscopia. Construir um eixo transversal de diagnóstico, risco, escolha de testes, ressuscitação e prevenção de erros — **com explicações suficientes para interpretar os casos sem memorizar respostas**. Antes de promover o material, integrar "
+    },
+    {
+      "text": "**Apresentação:** homem de 70 anos chega com hematoquezia abundante, sudorese, hipotensão e síncope. Tem antecedente de cirrose, usa AAS após infarto e relata episódios anteriores de melena. **Diferenciais:** fonte colorretal (divertículo, angioectasia), HDA maciça por varizes, úlcera péptica em cirrótico, outras fontes; nem cirrose prova varizes, nem hematoquezia prova cólon. **Etapa 1 — risco:** ABCDE, acesso, tipagem/hemograma seriados e avaliação de choque; decisão transfusional não espera número mágico se há perda ameaçadora à vida. **Etapa 2 — evidência para localização:** melena prévia, sinais de hipertensão portal, uso de AINE/AAS, pr"
+    },
+    {
+      "text": "**Armadilha:** o diagnóstico “hemorroida” é insuficiente para explicar hipotensão profunda e confusão na presença de hematoquezia volumosa; não concluir sítio pela cor quando a perfusão está comprometida."
+    },
+    {
+      "text": "O **GBS** é calculado **antes da endoscopia**, em suspeita de **hemorragia digestiva alta**. O desfecho que procura antecipar é a necessidade de intervenção hospitalar (transfusão, hemostasia etc.) ou morte, não o risco de câncer nem a chance exata de úlcera Forrest IIa. A pontuação usa ureia, hemoglobina, pressão sistólica, pulso, melena, síncope e comorbidades selecionadas. A ACG 2021 admite **GBS 0–1 como um dos critérios de muito baixo risco**, em pessoa estável e com seguimento possível. Isso é **recomendação condicional**, não ordem de alta."
+    },
+    {
+      "text": "**Exemplo de risco baixo, em contexto apropriado:** mulher de 32 anos, pequena hematêmese autolimitada, Hb **12,8 g/dL**, ureia **5,4 mmol/L**, PAS **124 mmHg**, FC **82/min**, sem melena, síncope, hepatopatia nem insuficiência cardíaca. Cada variável pontua **zero**, portanto **GBS = 0**. Antes de considerar seguimento ambulatorial, conferir a confiabilidade do relato, ausência de sangramento persistente, sinais de alarme, acesso a avaliação e outras razões para internação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

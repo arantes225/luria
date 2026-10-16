@@ -1,0 +1,308 @@
+{
+  "sha": "bfc5c81dd8cb5b25c88bceb30b4c8118ea9b806a",
+  "path": "apostilas/_rascunhos/lote-11-aula-233-oncologia-clinica-emergencias-oncologicas.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--bfc5c81dd8",
+  "title": "LURIA — Apostila 233: Oncologia clínica e emergências oncológicas",
+  "format": ".md",
+  "chars_estimated": 39314,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 233: Oncologia clínica e emergências oncológicas"
+    },
+    {
+      "title": "Etapa zero: inventário e comparação"
+    },
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "1. Bases biológicas da oncologia"
+    },
+    {
+      "title": "1.1 Célula normal, neoplasia e carcinogênese"
+    },
+    {
+      "title": "1.2 Crescimento local e disseminação"
+    },
+    {
+      "title": "1.3 Marcadores biológicos e medicina de precisão"
+    },
+    {
+      "title": "2. Diagnóstico, estadiamento e desempenho funcional"
+    },
+    {
+      "title": "2.1 A pergunta clínica antecede o exame"
+    },
+    {
+      "title": "2.2 Biópsia e segurança"
+    },
+    {
+      "title": "2.3 Estadiamento TNM e grau"
+    },
+    {
+      "title": "2.4 ECOG, fragilidade e objetivos"
+    },
+    {
+      "title": "3. Modalidades terapêuticas"
+    },
+    {
+      "title": "3.1 Cirurgia, radioterapia e tratamento sistêmico"
+    },
+    {
+      "title": "3.2 Toxicidades por mecanismo"
+    },
+    {
+      "title": "3.3 Suporte longitudinal"
+    },
+    {
+      "title": "4. Princípios de emergências oncológicas"
+    },
+    {
+      "title": "5. Neutropenia febril"
+    },
+    {
+      "title": "5.1 Definição e risco"
+    },
+    {
+      "title": "5.2 Conduta tempo-dependente"
+    },
+    {
+      "title": "5.3 Estratificação e alta"
+    },
+    {
+      "title": "6. Síndrome de lise tumoral (SLT)"
+    },
+    {
+      "title": "6.1 Mecanismo"
+    },
+    {
+      "title": "6.2 Prevenção e tratamento"
+    },
+    {
+      "title": "7. Hipercalcemia da malignidade"
+    },
+    {
+      "title": "7.1 Fisiopatologia e sintomas"
+    },
+    {
+      "title": "7.2 Conduta"
+    },
+    {
+      "title": "8. Compressão medular metastática"
+    },
+    {
+      "title": "8.1 Reconhecer antes do déficit irreversível"
+    },
+    {
+      "title": "8.2 Conduta inicial"
+    },
+    {
+      "title": "9. Síndrome da veia cava superior (SVCS)"
+    },
+    {
+      "title": "9.1 Quadro clínico e causas"
+    },
+    {
+      "title": "9.2 Priorização"
+    },
+    {
+      "title": "10. Tamponamento cardíaco maligno"
+    },
+    {
+      "title": "11. Hipertensão intracraniana e metástases cerebrais"
+    },
+    {
+      "title": "12. Obstruções viscerais, hemorragias e complicações mecânicas"
+    },
+    {
+      "title": "12.1 Obstrução intestinal maligna"
+    },
+    {
+      "title": "12.2 Obstrução urinária e lesão renal"
+    },
+    {
+      "title": "12.3 Hemoptise e sangramento tumoral"
+    },
+    {
+      "title": "13. Trombose associada ao câncer"
+    },
+    {
+      "title": "14. Emergências dos tratamentos"
+    },
+    {
+      "title": "14.1 Extravasamento de antineoplásicos"
+    },
+    {
+      "title": "14.2 Reação de infusão e anafilaxia"
+    },
+    {
+      "title": "14.3 Toxicidade imunomediada"
+    },
+    {
+      "title": "14.4 Síndrome de liberação de citocinas e neurotoxicidade"
+    },
+    {
+      "title": "15. Dor oncológica e comunicação"
+    },
+    {
+      "title": "16. Algoritmos clínicos integrados"
+    },
+    {
+      "title": "A — Paciente com câncer e febre"
+    },
+    {
+      "title": "B — Paciente com câncer e dor nas costas"
+    },
+    {
+      "title": "C — Paciente em quimioterapia com creatinina elevada"
+    },
+    {
+      "title": "D — Dispneia aguda em paciente oncológico"
+    },
+    {
+      "title": "17. Casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — Febre no nadir de quimioterapia"
+    },
+    {
+      "title": "Caso 2 — Fraqueza progressiva e câncer de próstata"
+    },
+    {
+      "title": "Caso 3 — Hiperpotassemia após tratamento de linfoma"
+    },
+    {
+      "title": "Caso 4 — Confusão, poliúria e tumor avançado"
+    },
+    {
+      "title": "Caso 5 — Edema facial e circulação colateral"
+    },
+    {
+      "title": "Caso 6 — Dispneia, hipotensão e derrame pericárdico"
+    },
+    {
+      "title": "Caso 7 — Diarreia sob imunoterapia"
+    },
+    {
+      "title": "Caso 8 — Dor e edema no acesso durante quimioterapia"
+    },
+    {
+      "title": "18. Questões originais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "19. Revisão de alto rendimento"
+    },
+    {
+      "title": "20. Referências e validação científica pendente"
+    },
+    {
+      "title": "21. Imagens candidatas — nenhuma incorporada ou aprovada"
+    },
+    {
+      "title": "22. Auditoria de pendências e bloqueios"
+    }
+  ],
+  "reference_entries": [
+    "**Fontes-base para auditoria formal antes da publicação (a inclusão não afirma checagem integral de cada edição nesta rodada):**",
+    "1. Ministério da Saúde/INCA — Diretrizes de detecção precoce, controle do câncer e publicações por tipo tumoral: https://www.gov.br/inca/pt-br .",
+    "2. Ministério da Saúde/CONITEC — Protocolos Clínicos e Diretrizes Terapêuticas em oncologia: https://www.gov.br/conitec/pt-br .",
+    "3. Infectious Diseases Society of America (IDSA) — Diretriz clínica de agentes antimicrobianos em pacientes neutropênicos com câncer (edição aplicável a verificar).",
+    "4. ASCO/IDSA — Manejo ambulatorial de febre e neutropenia em adultos com câncer (atualização a verificar).",
+    "5. Endocrine Society — Treatment of Hypercalcemia of Malignancy in Adults, 2022/2023 (verificar versão e indicação).",
+    "6. NICE NG234 — Spinal metastases and metastatic spinal cord compression (2023).",
+    "7. British Society for Haematology e/ou consensos internacionais — Tumor lysis syndrome, estratificação e profilaxia (verificar edição vigente).",
+    "8. European Society for Medical Oncology (ESMO) — Clinical Practice Guidelines para complicações oncológicas e cuidados de suporte.",
+    "9. NCCN — Clinical Practice Guidelines in Oncology: Palliative Care e Hematopoietic Growth Factors (acesso/edição a verificar).",
+    "10. Sociedade Brasileira de Oncologia Clínica (SBOC) — Diretrizes por tumor e cuidados de suporte: https://sboc.org.br/ .",
+    "1. Diagrama autoral de transformação maligna e checkpoints.",
+    "2. Esquema autoral de metástase hematogênica/linfática.",
+    "3. Mapa de conceitos de grau versus TNM.",
+    "4. Linha de tempo de neoadjuvância e adjuvância.",
+    "5. Escala visual ECOG.",
+    "6. Algoritmo neutropenia febril.",
+    "7. Infográfico da lise tumoral e alterações eletrolíticas.",
+    "8. ECG ilustrativo de hipercalemia com licença verificada.",
+    "9. Esquema de hipercalcemia por PTHrP/osteólise.",
+    "10. RM real licenciada de compressão medular.",
+    "11. Ilustração anatômica da SVCS.",
+    "12. Ecocardiograma real licenciado de tamponamento.",
+    "13. TC licenciada de obstrução intestinal maligna.",
+    "14. Algoritmo de toxicidade imunomediada.",
+    "15. Fluxograma de extravasamento de vesicante.",
+    "16. Quadro visual CRS versus ICANS.",
+    "- [x] Documento editorial lead_apostilas consultado antes da ação.",
+    "- [x] Inventário consultado; tema 233 estava pendente.",
+    "- [x] Busca inicial no Drive por “oncologia” e “emergencias oncologicas”: sem resultados; não atribuir procedência não comprovada."
+  ],
+  "external_urls": [
+    "https://www.gov.br/inca/pt-br",
+    "https://www.gov.br/conitec/pt-br",
+    "https://sboc.org.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Oncogene** não é sinônimo de mutação hereditária: a maioria das alterações tumorais é somática. Variantes germinativas predisponentes, como em síndromes hereditárias específicas, demandam aconselhamento genético e critérios de rastreio familiar. **Mutação germinativa não equivale a diagnóstico de câncer.** Por outro lado, um tumor pode carregar alteração-alvo tratável sem que ela esteja presente no sangue ou em parentes."
+    },
+    {
+      "text": "Biomarcadores podem ser **diagnósticos**, **prognósticos** (risco natural da doença), **preditivos** (probabilidade de resposta a intervenção) ou de **monitorização**. Exemplos clássicos incluem receptores hormonais/HER2 em câncer de mama, EGFR/ALK e outros drivers em câncer de pulmão, MSI/dMMR em múltiplos tumores e marcadores hematológicos. Não transformar exemplos em indicação automática: o painel depende do tipo tumoral, estágio, contexto e acesso. Marcador sérico elevado raramente substitui biópsia histológica; pode ser inespecífico e elevar-se em condições benignas."
+    },
+    {
+      "text": "Sinais de alerta incluem perda ponderal involuntária, massa progressiva, sangramento inexplicado, anemia persistente, alteração de hábito intestinal, disfagia progressiva, linfonodomegalia suspeita e dor óssea persistente. Esses sinais não confirmam câncer; justificam investigação proporcional à probabilidade e ao contexto. Em muitos tumores, **rastreio de assintomáticos** e **diagnóstico de sintomáticos** seguem algoritmos diferentes."
+    },
+    {
+      "text": "Antes de terapia de alto risco, estratificar risco por tipo de neoplasia, massa tumoral, LDH, função renal, leucocitose e terapêutica. Medidas incluem **hidratação intravenosa cuidadosamente monitorada**, acompanhamento frequente de eletrólitos/creatinina/ácido úrico, e agente hipouricemiante conforme risco. **Alopurinol** reduz produção de novo ácido úrico, mas não degrada urato já existente; **rasburicase** converte ácido úrico em alantoína e pode ser necessária em alto risco/SLT estabelecida, respeitando contraindicação em **deficiência de G6PD** e disponibilidade."
+    },
+    {
+      "text": "Imobilização/precauções de mobilização quando instabilidade vertebral é possível; exame neurológico seriado e **ressonância magnética da coluna com abrangência apropriada de urgência** (muitas vezes coluna inteira para avaliar múltiplos níveis). Acionar neurocirurgia/ortopedia de coluna, radioterapia e oncologia imediatamente. **Dexametasona** pode ser indicada em suspeita/diagnóstico com sintomas neurológicos conforme protocolo, equilibrando efeitos adversos e risco de mascarar linfoma ainda sem biópsia. A decisão entre descompressão/estabilização cirúrgica e radioterapia considera estabilidade, compressão, radiossensibilidade, prognóstico e"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

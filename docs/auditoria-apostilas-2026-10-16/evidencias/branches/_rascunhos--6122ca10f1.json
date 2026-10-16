@@ -1,0 +1,157 @@
+{
+  "sha": "6122ca10f1b86d598b90da067cf2aecbe63490ba",
+  "path": "apostilas/_rascunhos/lote-13-253-luto-crises-adaptacao.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--6122ca10f1",
+  "title": "LURIA · Lote 13 · Apostila 253",
+  "format": ".md",
+  "chars_estimated": 24980,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Lote 13 · Apostila 253"
+    },
+    {
+      "title": "Luto, crises psicológicas, reações ao estresse e transtornos de adaptação"
+    },
+    {
+      "title": "Etapa zero: honestidade sobre a referência"
+    },
+    {
+      "title": "1. Uma perda não é um diagnóstico"
+    },
+    {
+      "title": "2. Crise psicológica: quando recursos habituais ficam insuficientes"
+    },
+    {
+      "title": "3. Avaliação clínica: ouvir o evento sem reduzir a pessoa ao evento"
+    },
+    {
+      "title": "4. Luto esperado: manifestações e apoio"
+    },
+    {
+      "title": "5. Transtorno de luto prolongado — distinguir tempo, gravidade e cultura"
+    },
+    {
+      "title": "Manifestações centrais"
+    },
+    {
+      "title": "6. Luto versus depressão maior"
+    },
+    {
+      "title": "7. Transtorno de adaptação"
+    },
+    {
+      "title": "Como diferenciar de sofrimento adaptativo normal?"
+    },
+    {
+      "title": "Manejo"
+    },
+    {
+      "title": "8. Reação aguda ao estresse, TEPT e dissociação"
+    },
+    {
+      "title": "9. Crise e risco de suicídio"
+    },
+    {
+      "title": "10. Situações específicas e cuidado sensível"
+    },
+    {
+      "title": "11. Encaminhamentos, APS e rede comunitária"
+    },
+    {
+      "title": "12. Fluxogramas didáticos"
+    },
+    {
+      "title": "A. Após perda recente"
+    },
+    {
+      "title": "B. Estressor identificável com sofrimento"
+    },
+    {
+      "title": "C. Crise no pronto atendimento"
+    },
+    {
+      "title": "13. Cinco casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Saudade intensa em datas especiais"
+    },
+    {
+      "title": "Caso 2 — Preocupação incapacitante após morte"
+    },
+    {
+      "title": "Caso 3 — Mudança de emprego e adaptação"
+    },
+    {
+      "title": "Caso 4 — Confusão aguda em idosa após perda"
+    },
+    {
+      "title": "Caso 5 — Perda gestacional e retraimento"
+    },
+    {
+      "title": "14. Questões autorais comentadas"
+    },
+    {
+      "title": "15. Revisão para memorização"
+    },
+    {
+      "title": "16. Imagens didáticas para futura fila Admin"
+    },
+    {
+      "title": "17. Referências (verificar íntegra/versão na homologação)"
+    },
+    {
+      "title": "Auditoria de saída"
+    }
+  ],
+  "reference_entries": [
+    "1. WHO. ICD-11 MMS — disorders specifically associated with stress. https://icd.who.int/browse/2026-01/mms/en",
+    "2. Maercker A et al. Diagnosis and classification of disorders specifically associated with stress: proposals for ICD-11. World Psychiatry. 2013. https://pmc.ncbi.nlm.nih.gov/articles/PMC3799241/",
+    "3. American Psychiatric Association. DSM-5-TR. Prolonged grief disorder, diagnostic criteria and differential (edição 2022; consultar obra licenciada e textos oficiais).",
+    "4. NICE. Self-harm: assessment, management and preventing recurrence. NG225. https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "5. WHO/War Trauma Foundation/World Vision. Psychological first aid: Guide for field workers. https://www.who.int/publications/i/item/9789241548205",
+    "6. Ministério da Saúde. Saúde Mental / RAPS — rede e acolhimento. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "**Presente:** quadro sindrômico, diferença luto/depressão/PGD/adaptação/TEPT, risco e proteção, PFA, APS e rede, 5 casos comentados, 7 questões originais, 10 pautas visuais.  ",
+    "**Não finalizado:** benchmark específico no Drive, revisão de critérios atuais diretos no navegador CID11/DSM-5-TR, diferenciais clínicos e comorbidades com aprofundamento, abordagens psicoterápicas e resultados de estudos recentes, atuação em crise/desastres na rede brasileira, contagem ≥60 mil caracteres didáticos reais, revisão especializada, imagens licenciadas, teste de autossuficiência e PWA.  ",
+    "**Status:** RASCUNHO_PARCIAL_NAO_PUBLICAR."
+  ],
+  "external_urls": [
+    "https://icd.who.int/browse/2026-01/mms/en",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3799241/",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.who.int/publications/i/item/9789241548205",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Não há cronograma universal de \"cinco etapas\" que todos devem percorrer em sequência. Modelos como negação, raiva, negociação, depressão e aceitação podem ilustrar experiências, mas não são fases obrigatórias nem critérios diagnósticos. A intensidade pode oscilar em ondas, reativada por aniversários, cheiros e lugares, e coexistir com momentos de alegria sem negar importância da perda."
+    },
+    {
+      "text": "A avaliação do estado mental observa contato, afeto, pensamento, cognição, juízo crítico e sinais dissociativos. Sem testes laboratoriais diagnósticos específicos para luto, exames são orientados por sintomas: perda de peso persistente, hipotireoidismo, anemia, dor, comprometimento cognitivo e uso de fármacos podem exigir investigação sem presumir etiologia psiquiátrica."
+    },
+    {
+      "text": "**Adolescentes:** amigos, escola e redes sociais influenciam luto e isolamento; atenção a automutilação e uso de substâncias sem pressupor que todo sofrimento necessita diagnóstico de TPB."
+    },
+    {
+      "text": "**Q4.** Atendimento após evento traumático coletivo deve inicialmente privilegiar: A) Debriefing psicológico obrigatório detalhado com todos. B) Segurança, necessidades básicas, escuta não coercitiva, informações e rede de apoio. C) Exposição forçada a lembranças. D) Diagnóstico de TEPT imediato em todos. E) Suspender atendimento médico. **Gabarito B.** A/C podem gerar dano, D é diagnóstico precipitado, E negligencia segurança; B descreve PFA."
+    },
+    {
+      "text": "**Q6.** A afirmação mais apropriada sobre luto e depressão: A) Nunca coexistem. B) Um evento de morte impede diagnóstico de depressão maior. C) Podem coexistir, e humor difusamente deprimido/anedonia e prejuízo podem requerer avaliação de episódio depressivo. D) Tristeza sempre exige fármaco. E) Nenhuma forma de luto gera risco suicida. **Gabarito C.** A/B negam coexistência, D/E são absolutismos inadequados; C reconhece diferencial clínico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

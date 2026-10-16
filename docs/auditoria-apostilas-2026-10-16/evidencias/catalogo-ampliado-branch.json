@@ -1,0 +1,183 @@
+{
+  "ref": "origin/audit/enamed-7areas-lotes-finais-20261015",
+  "version": "2026-10-15-lote11-detalhado",
+  "areas": [
+    "Clínica Médica",
+    "Cirurgia Geral",
+    "Ginecologia e Obstetrícia",
+    "Pediatria",
+    "Medicina de Família e Comunidade",
+    "Saúde Mental",
+    "Saúde Coletiva"
+  ],
+  "new_topics": [
+    {
+      "number": 261,
+      "area": "Clínica Médica",
+      "title": "Doenças pulmonares intersticiais: diagnóstico e manejo",
+      "priority": "Alta",
+      "instruction": "DOENÇA PULMONAR INTERSTICIAL (Alta): diagnóstico sindrômico, padrões clínicos e de TCAR, prova funcional, causas autoimunes/ocupacionais/fármacos, fibrose pulmonar idiopática e outras DPI, investigação, manejo e critérios de encaminhamento. Produzir de forma autossuficiente, conforme padrão livro-texto LURIA.",
+      "lot": 11
+    },
+    {
+      "number": 262,
+      "area": "Clínica Médica",
+      "title": "Esclerose múltipla e doenças desmielinizantes",
+      "priority": "Alta",
+      "instruction": "ESCLEROSE MÚLTIPLA + NEUROMIELITE ÓPTICA (Alta): neuroanatomia e desmielinização, surto vs pseudossurto, exames de RNM e líquor, critérios diagnósticos contemporâneos, diferenciais (NMOSD/MOGAD), tratamento agudo e modificador de doença, gravidez e prognóstico; capítulo completo, não encaixar em AVC.",
+      "lot": 11
+    },
+    {
+      "number": 263,
+      "area": "Clínica Médica",
+      "title": "Intoxicações exógenas no adulto e toxicologia de emergência",
+      "priority": "Diamante",
+      "instruction": "INTOXICAÇÕES EXÓGENAS NO ADULTO (Diamante): suporte ABCDE, toxíndromes, ECG/alterações ácido-base, carvão ativado e indicações/contraindicações, antídotos frequentes, síndromes por analgésicos, antidepressivos, álcool, organofosforados, cáusticos, sedativos e drogas estimulantes, observação e critérios de alta; validar fármacos/doses nas fontes atuais.",
+      "lot": 11
+    },
+    {
+      "number": 264,
+      "area": "Cirurgia Geral",
+      "title": "Doenças hepatobiliares e pancreáticas: lesões, infecções e tumores",
+      "priority": "Alta/Média",
+      "instruction": "DOENÇAS HEPATOBILIARES E PANCREÁTICAS (Alta/Média/Diamante/Baixa): organizar em módulos *separados*: (1) anatomia, raciocínio e lesões hepáticas benignas; (2) abscesso hepático e infecções; (3) carcinoma hepatocelular e metástases; (4) adenocarcinoma pancreático, tumores periampulares, lesões císticas e tumores neuroendócrinos; (5) estadiamento/conduta. Não reduzir as aulas não oncológicas a citações dentro da oncologia. Pancreatite aguda/crônica continua no #97.",
+      "lot": 11
+    },
+    {
+      "number": 265,
+      "area": "Cirurgia Geral",
+      "title": "Câncer de pulmão e tumores mediastinais",
+      "priority": "Alta/Média",
+      "instruction": "ONCOLOGIA TORÁCICA (Alta/Média): nódulo pulmonar e algoritmo de risco; câncer pulmonar, investigação, estadiamento e linhas terapêuticas por histologia/biomarcadores em nível de generalista; mediastino, massas, complicações e indicação cirúrgica. Hemoptise e bronquiectasias pertencem à Pneumologia #71 e entram aqui só como interface diagnóstica.",
+      "lot": 11
+    },
+    {
+      "number": 266,
+      "area": "Cirurgia Geral",
+      "title": "Oncologia de cabeça e pescoço",
+      "priority": "Alta/Média",
+      "instruction": "CEC cabeça/pescoço, massas cervicais, diagnóstico, estadiamento e tratamento",
+      "lot": 12
+    },
+    {
+      "number": 267,
+      "area": "Cirurgia Geral",
+      "title": "Endoscopia digestiva e urgências endoscópicas",
+      "priority": "Alta/Diamante",
+      "instruction": "Indicações, hemorragia digestiva, corpo estranho, complicações e intervenções",
+      "lot": 12
+    },
+    {
+      "number": 268,
+      "area": "Cirurgia Geral",
+      "title": "Cirurgia cardiovascular para o generalista",
+      "priority": "Alta",
+      "instruction": "Cirurgia coronariana, valvar e aórtica; indicações, complicações, encaminhamento",
+      "lot": 12
+    },
+    {
+      "number": 269,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Ultrassonografia obstétrica e medicina fetal",
+      "priority": "Alta",
+      "instruction": "US gestacional, rastreio malformativo, avaliação fetal, Doppler e medicina fetal; sem repetir #89",
+      "lot": 12
+    },
+    {
+      "number": 270,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Intercorrências clínicas na gestação",
+      "priority": "Alta/Média",
+      "instruction": "Cardiopatias na gravidez (Alta), outras intercorrências (Média), trombofilias na gestação e puerpério (Baixa): organizar por agravo; preservar manejo materno-fetal.",
+      "lot": 12
+    },
+    {
+      "number": 271,
+      "area": "Pediatria",
+      "title": "Endocrinologia pediátrica",
+      "priority": "Alta/Média",
+      "instruction": "Hiperplasia adrenal congênita, tireoide, crescimento, puberdade e urgências endócrinas",
+      "lot": 13
+    },
+    {
+      "number": 272,
+      "area": "Pediatria",
+      "title": "Fibrose cística",
+      "priority": "Alta",
+      "instruction": "Triagem, diagnóstico, manifestações respiratórias/digestivas e seguimento",
+      "lot": 13
+    },
+    {
+      "number": 273,
+      "area": "Pediatria",
+      "title": "Imunodeficiências na infância",
+      "priority": "Alta",
+      "instruction": "Sinais de suspeita, avaliação inicial, classificação e encaminhamento",
+      "lot": 13
+    },
+    {
+      "number": 274,
+      "area": "Pediatria",
+      "title": "Ortopedia pediátrica",
+      "priority": "Alta/Diamante",
+      "instruction": "Ortopedia (Alta), ortopedia pediátrica (Diamante), osteomielite e artrite séptica (Alta), trauma ortopédico; manter avaliação neurovascular.",
+      "lot": 13
+    },
+    {
+      "number": 275,
+      "area": "Pediatria",
+      "title": "Emergências de cirurgia pediátrica",
+      "priority": "Alta/Diamante",
+      "instruction": "Uropediatria, hérnias, escroto agudo, urgências abdominais e cirurgia pediátrica no PS",
+      "lot": 13
+    },
+    {
+      "number": 276,
+      "area": "Clínica Médica",
+      "title": "Diarreia aguda no adulto e colite por Clostridioides difficile",
+      "priority": "Baixa/essencial",
+      "instruction": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146.",
+      "lot": 13
+    }
+  ],
+  "cataloged": [
+    {
+      "number": 277,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Infertilidade conjugal e reprodução assistida",
+      "lot": 11,
+      "content_url": "/apostilas/infertilidade-conjugal/",
+      "priority": "Alta",
+      "instruction": "APOSTILA JÁ EXISTENTE — Infertilidade Conjugal: verificar texto efetivo e referências; integrar investigação do casal, endocrinologia reprodutiva, técnicas de reprodução assistida, aconselhamento e complicações. NÃO criar nova apostila ou copiar capítulos existentes."
+    },
+    {
+      "number": 278,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Ciclo menstrual e eixo hipotálamo–hipófise–ovário",
+      "lot": 12,
+      "content_url": "/apostilas/ciclo-menstrual-eixo-hho/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Fisiologia Menstrual (Alta) e Esteroidogênese (Alta), capítulos hormonal/foliculogênese; não duplicar em amenorreia."
+    },
+    {
+      "number": 279,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Crescimento fetal reduzido e aumentado",
+      "lot": 13,
+      "content_url": "/apostilas/crescimento-intrauterino-reduzido-aumentado/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Restrição do Crescimento Intrauterino (Alta), critérios Doppler e manejo. Articular avaliação de vitalidade fetal, sem duplicação."
+    },
+    {
+      "number": 280,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Alterações fisiológicas da gestação",
+      "lot": 13,
+      "content_url": "/apostilas/alteracoes-fisiologicas-da-gestacao/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Modificações do Organismo Materno (Alta), por sistema e trimestre, e correlação com sinais de risco. Não criar conteúdo repetido."
+    }
+  ],
+  "notes_count": 186,
+  "total_topics": 280
+}

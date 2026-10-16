@@ -1,0 +1,131 @@
+{
+  "sha": "6d9d8890755c46c8fdc7fc71b24d02cbb0fca852",
+  "path": "apostilas/_rascunhos/lote-03/60-vigilancia-epidemiologica.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--6d9d889075",
+  "title": "LURIA — AULA 60 | VIGILÂNCIA EPIDEMIOLÓGICA: DETECÇÃO, NOTIFICAÇÃO E INVESTIGAÇÃO",
+  "format": ".md",
+  "chars_estimated": 23402,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — AULA 60 | VIGILÂNCIA EPIDEMIOLÓGICA: DETECÇÃO, NOTIFICAÇÃO E INVESTIGAÇÃO"
+    },
+    {
+      "title": "Etapa 0 — auditoria prévia e desenho antirrepetição"
+    },
+    {
+      "title": "1. Vigilância epidemiológica é interpretação em tempo útil"
+    },
+    {
+      "title": "2. Vigilância ativa, passiva, sentinela e por eventos"
+    },
+    {
+      "title": "3. Notificação compulsória no Brasil: obrigações e classificação temporal"
+    },
+    {
+      "title": "4. Sistemas de informação — o que cada um responde"
+    },
+    {
+      "title": "5. Qualidade do dado: completude, oportunidade, consistência e representatividade"
+    },
+    {
+      "title": "6. Tempo, lugar e pessoa: análise descritiva"
+    },
+    {
+      "title": "7. Conceitos quantitativos necessários para provas"
+    },
+    {
+      "title": "8. Investigação de surto: do alerta ao encerramento"
+    },
+    {
+      "title": "9. Vigilância da doença diarreica como caso-modelo brasileiro"
+    },
+    {
+      "title": "10. Vigilância de contatos, bloqueio e medidas proporcionais"
+    },
+    {
+      "title": "11. Sensibilidade, especificidade, valor preditivo e realidade da vigilância"
+    },
+    {
+      "title": "12. Segurança ética e comunicação de risco"
+    },
+    {
+      "title": "13. Cinco diferenças fundamentais entre a aula 55 e a 60"
+    },
+    {
+      "title": "14. Fluxo decisório de um serviço sentinela"
+    },
+    {
+      "title": "15. Quatro casos integradores originais"
+    },
+    {
+      "title": "Caso 1 — Sarampo suspeito no ambulatório"
+    },
+    {
+      "title": "Caso 2 — Aumento de DDA na unidade sentinela"
+    },
+    {
+      "title": "Caso 3 — Refeição coletiva e risco relativo"
+    },
+    {
+      "title": "Caso 4 — Óbitos parecem crescer depois de mudar sistema"
+    },
+    {
+      "title": "16. Seis questões autorais comentadas"
+    },
+    {
+      "title": "17. Recursos visuais propostos"
+    },
+    {
+      "title": "18. Referências jurídicas e técnico-científicas"
+    },
+    {
+      "title": "Pendências de homologação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. \\`Guia de Vigilância em Saúde\\`, 6ª ed. revisada, portal atualizado em 10/07/2026: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/vigilancia",
+    "2. Conselho Nacional de Saúde. Resolução CNS nº 588/2018 — PNVS: https://bvsms.saude.gov.br/bvs/saudelegis/cns/2018/res0588_13_08_2018.html",
+    "3. Ministério da Saúde. Portaria GM/MS nº 5.201/2024 — lista de notificação compulsória (histórica, confrontar consolidação): https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt5201_19_08_2024.html",
+    "4. Ministério da Saúde. Portaria GM/MS nº 6.734/2025 — esporotricose humana: https://bvs.saude.gov.br/bvs/saudelegis/gm/2025/prt6734_31_03_2025.html",
+    "5. Ministério da Saúde. Vigilância Epidemiológica das DDA (MDDA/Sivep-DDA): https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica",
+    "6. Ministério da Saúde. Formulários e instrutivos Sivep-DDA: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica/formularios",
+    "7. Brasil. Lei nº 6.259/1975: https://www.planalto.gov.br/ccivil_03/leis/l6259.htm"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/vigilancia",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/cns/2018/res0588_13_08_2018.html",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt5201_19_08_2024.html",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2025/prt6734_31_03_2025.html",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/vigilancia-epidemiologica/formularios",
+    "https://www.planalto.gov.br/ccivil_03/leis/l6259.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Vigilância epidemiológica compreende ações que permitem conhecer e detectar mudanças nos fatores determinantes e condicionantes da saúde, para recomendar e adotar prevenção e controle de doenças e agravos. O processo não termina quando uma ficha é preenchida: **detectar → verificar → investigar → agir → avaliar → comunicar**."
+    },
+    {
+      "text": "**Um sistema não responde todas as perguntas.** Taxa de letalidade de caso notificado pode variar com diagnóstico incompleto; taxa de mortalidade populacional depende de SIM e denominador. Cobertura vacinal é calculada a partir de doses válidas em grupos-alvo, não apenas totais de seringas distribuídas."
+    },
+    {
+      "text": "**Subnotificação e subdiagnóstico** não são idênticos: subdiagnóstico implica ausência de reconhecimento; subnotificação ocorre quando caso reconhecido não chega ao sistema, por falha de registro/comunicação. Ambos distorcem decisões, mas exigem intervenções diferentes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

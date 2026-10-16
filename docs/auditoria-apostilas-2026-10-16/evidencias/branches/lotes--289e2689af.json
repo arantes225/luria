@@ -1,0 +1,342 @@
+{
+  "sha": "289e2689af4c2bfa83ce78083a1a9cd31256e222",
+  "path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--289e2689af",
+  "title": "LURIA — Doença pulmonar obstrutiva crônica",
+  "format": ".md",
+  "chars_estimated": 129377,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Doença pulmonar obstrutiva crônica"
+    },
+    {
+      "title": "Percurso de aprendizagem"
+    },
+    {
+      "title": "1. Fisiologia obstrutiva, enfisema e hiperinsuflação"
+    },
+    {
+      "title": "1.1 Conceitos, anatomia funcional e fisiopatologia"
+    },
+    {
+      "title": "1.2 Fisiologia aplicada: do VEF1 à hiperinsuflação e à troca gasosa"
+    },
+    {
+      "title": "1.3 Da ventilação normal à ventilação obstrutiva: fisiologia necessária para ler o paciente"
+    },
+    {
+      "title": "2. Suspeita clínica, exames e diagnóstico"
+    },
+    {
+      "title": "2.1 Diagnóstico: suspeita não é confirmação"
+    },
+    {
+      "title": "2.2 Anamnese, exame e testes: consulta estruturada em APS"
+    },
+    {
+      "title": "2.3 Diagnóstico além da primeira espirometria: perguntas que evitam erros"
+    },
+    {
+      "title": "2.4 Deficiência de alfa-1-antitripsina: investigar a etiologia modificável do enfisema"
+    },
+    {
+      "title": "3. Classificação GOLD 2026 e PCDT brasileiro"
+    },
+    {
+      "title": "3.1 Atualização de 2026: GOLD internacional × PCDT brasileiro"
+    },
+    {
+      "title": "3.2 ABE inicial não é algoritmo de seguimento: como evitar escalonamento automático"
+    },
+    {
+      "title": "4. Tratamento estável e dispositivos inalatórios"
+    },
+    {
+      "title": "4.1 Tratamento estável: intervenções com objetivos diferentes"
+    },
+    {
+      "title": "4.2 Tratamento estável: escolhas por objetivos e não por marca de inalador"
+    },
+    {
+      "title": "4.3 Dispositivos: por que a escolha muda a eficácia real"
+    },
+    {
+      "title": "4.4 Tratamento medicamentoso estável — detalhe farmacológico"
+    },
+    {
+      "title": "4.5 Escolher o inalador correto: aerossol pressurizado, pó seco ou névoa suave?"
+    },
+    {
+      "title": "4.6 O algoritmo “verificar antes de escalar”: adesão, técnica, exposição, doença concorrente"
+    },
+    {
+      "title": "4.7 Tabela de erros de inalação que mudam a decisão terapêutica"
+    },
+    {
+      "title": "5. Exacerbação: diagnóstico, gases, antibióticos e suporte"
+    },
+    {
+      "title": "5.1 Exacerbação, hipercapnia e VNI"
+    },
+    {
+      "title": "5.2 Manejo da exacerbação em urgência: mecanismo, suporte e falha"
+    },
+    {
+      "title": "5.3 Interpretação integrada da gasometria na exacerbação"
+    },
+    {
+      "title": "5.4 Antibioticoterapia na exacerbação — justificar antes de escolher"
+    },
+    {
+      "title": "5.5 Terapia ventilatória: quando a VNI ajuda e quando atrapalha"
+    },
+    {
+      "title": "6. Oxigênio de longa duração, sono e reabilitação"
+    },
+    {
+      "title": "6.1 Oxigenoterapia domiciliar, reabilitação e terapias avançadas"
+    },
+    {
+      "title": "6.2 Oxigenoterapia de longa duração, sono e exercício"
+    },
+    {
+      "title": "6.3 Oxigenoterapia domiciliar prolongada (ODP): critérios operacionais do SUS"
+    },
+    {
+      "title": "6.4 DPOC não é apenas VEF1: quantificar dispneia, capacidade funcional e prognóstico"
+    },
+    {
+      "title": "6.5 Do limiar à decisão: exemplos aplicados de oxigênio e funcionalidade"
+    },
+    {
+      "title": "6.6 Enfisema avançado: quando broncodilatação não corrige a hiperinsuflação"
+    },
+    {
+      "title": "6.7 Quando encaminhar e como preparar uma referência clínica útil"
+    },
+    {
+      "title": "6.8 Cuidados paliativos e metas de vida: iniciar cedo, sem abandonar a terapêutica"
+    },
+    {
+      "title": "7. Seguimento, comorbidades e populações especiais"
+    },
+    {
+      "title": "7.1 Manejo longitudinal na APS: uma consulta estruturada que cabe no mundo real"
+    },
+    {
+      "title": "7.2 Prevenção, comorbidades e escolhas centradas no paciente"
+    },
+    {
+      "title": "7.3 Populações especiais"
+    },
+    {
+      "title": "7.4 Reavaliação após exacerbação: transformar internação em prevenção"
+    },
+    {
+      "title": "8. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Hiperinsuflação radiológica não é confirmação de DPOC"
+    },
+    {
+      "title": "Caso 2 — Exacerbação com acidose hipercápnica e sonolência"
+    },
+    {
+      "title": "Caso 3 — A mesma história, dois grupos: divergência entre diretrizes"
+    },
+    {
+      "title": "Caso 4 — Dispneia com VEF1 moderadamente reduzido e pouca reserva funcional"
+    },
+    {
+      "title": "Caso 5 — Corticoide inalatório: benefício esperado versus pneumonia"
+    },
+    {
+      "title": "Caso 6 — Somnolência, acidose respiratória e avaliação do suporte ventilatório"
+    },
+    {
+      "title": "Caso 7 — Espirometria correta, grupo diferente da gravidade"
+    },
+    {
+      "title": "Caso 8 — Acidose aguda sobre componente crônico"
+    },
+    {
+      "title": "Caso 9 — Escarro purulento e RX com consolidação"
+    },
+    {
+      "title": "Caso 10 — Quando não indicar oxigênio domiciliar de forma automática"
+    },
+    {
+      "title": "Caso 11 — Eosinófilos altos, exacerbações e história de pneumonia"
+    },
+    {
+      "title": "Caso 12 — Apneia coexistente em paciente cansado"
+    },
+    {
+      "title": "Caso 13 — Não transformar saturação da alta em prescrição vitalícia"
+    },
+    {
+      "title": "Caso 14 — Hipoxemia grave estável e indicação formal"
+    },
+    {
+      "title": "Caso 15 — A “falha da tripla terapia” era falha de dispositivo"
+    },
+    {
+      "title": "Caso 16 — Nova dispneia após alta e etiologia cardíaca concorrente"
+    },
+    {
+      "title": "Caso 17 — Uma exacerbação moderada: classificar sem tratar a letra"
+    },
+    {
+      "title": "Caso 18 — Enfisema precoce: procurar a causa, não apenas trocar o inalador"
+    },
+    {
+      "title": "Caso 19 — Dispneia incapacitante e enfisema heterogêneo após reabilitação"
+    },
+    {
+      "title": "Caso 20 — DPOC com internações frequentes: suporte paliativo e avaliação avançada podem coexistir"
+    },
+    {
+      "title": "9. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Confirmação diagnóstica da DPOC"
+    },
+    {
+      "title": "Questão 2 — Acidose hipercápnica na exacerbação"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9 — Maços-ano"
+    },
+    {
+      "title": "Questão 10 — Interpretação da relação"
+    },
+    {
+      "title": "Questão 11 — Gasometria e oxímetro"
+    },
+    {
+      "title": "Questão 12 — Antibiótico"
+    },
+    {
+      "title": "Questão 13 — Corticoide inalatório"
+    },
+    {
+      "title": "Questão 14 — VNI"
+    },
+    {
+      "title": "Questão 15 — Oxigenoterapia crônica"
+    },
+    {
+      "title": "Questão 16 — Grupos e gravidade"
+    },
+    {
+      "title": "Questão 17 — Encaminhamento e indicação de ODP"
+    },
+    {
+      "title": "Questão 18 — Faixa intermediária da gasometria"
+    },
+    {
+      "title": "Questão 19 — Três medidas de doença diferentes"
+    },
+    {
+      "title": "Questão 20 — Aerossol versus pó seco"
+    },
+    {
+      "title": "Questão 21 — Falha aparente do tratamento"
+    },
+    {
+      "title": "Questão 22 — Retorno após exacerbação"
+    },
+    {
+      "title": "Questão 23 — Classificação inicial e acompanhamento"
+    },
+    {
+      "title": "Questão 24 — Alfa-1-antitripsina e exame na fase inflamatória"
+    },
+    {
+      "title": "Questão 25 — DPOC e redução de volume pulmonar"
+    },
+    {
+      "title": "Questão 26 — Cuidados paliativos na DPOC avançada"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "1. GOLD 2026 Report and Pocket Guide. https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "2. Ministério da Saúde — PCDT DPOC (2025/2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view",
+    "3. SBPT — Atualização do PCDT de DPOC. https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/",
+    "4. Ministério da Saúde — Linha de Cuidado DPOC. https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/",
+    "5. Feitosa PHR et al. Recomendações para o diagnóstico e tratamento da deficiência de alfa-1 antitripsina. *J Bras Pneumol.* 2024;50(5):e20240235. https://doi.org/10.36416/1806-3756/e20240235",
+    "6. Sandhaus RA et al. The diagnosis and management of alpha-1 antitrypsin deficiency in the adult. *Chronic Obstr Pulm Dis.* 2016;3(3):668–682. https://doi.org/10.15326/jcopdf.3.3.2015.0182",
+    "7. GOLD — Global Strategy for Prevention, Diagnosis and Management of COPD: 2026 Report (intervenções e cuidados de suporte). https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "8. Ministério da Saúde — Linha de Cuidado DPOC, Atenção Especializada, Planejamento Terapêutico. https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/atencao-especializada/planejamento-terapeutico/",
+    "9. NICE — Chronic obstructive pulmonary disease in over 16s: diagnosis and management, NG115 (encaminhamento para redução de volume e transplante). https://www.nice.org.uk/guidance/ng115/chapter/Recommendations"
+  ],
+  "external_urls": [
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "https://www.nhlbi.nih.gov/resources/how-use-dry-powder-inhaler-fact-sheet",
+    "https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler",
+    "https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/metered-dose-inhaler-chamber-spacer",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view",
+    "https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/",
+    "https://doi.org/10.36416/1806-3756/e20240235",
+    "https://doi.org/10.15326/jcopdf.3.3.2015.0182",
+    "https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/atencao-especializada/planejamento-terapeutico/",
+    "https://www.nice.org.uk/guidance/ng115/chapter/Recommendations"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Comece pelos fundamentos e critérios diagnósticos; avance para decisões terapêuticas e avaliação de risco. Use os casos e questões de consolidação após estudar o corpo clínico. As fontes ao final permitem conferir normas e atualizações."
+    },
+    {
+      "text": "Suspeite de DPOC diante de dispneia progressiva, tosse crônica, expectoração recorrente, história de tabagismo, exposição à fumaça de biomassa, poluição ou risco ocupacional. A idade e o histórico de exposições modulam probabilidade; nunca exclua a doença apenas por não haver tabagismo. A espirometria pós-broncodilatador é necessária para confirmar limitação persistente do fluxo. A relação VEF1/CVF abaixo do corte operacional da GOLD deve ser interpretada com atenção à idade, qualidade do exame e diagnósticos alternativos. Uma resposta broncodilatadora importante não torna automaticamente o diagnóstico de asma exclusivo, e pacientes podem ter"
+    },
+    {
+      "text": "O exame físico pode ser pouco expressivo no início. Em quadros avançados, expiração prolongada, sibilos, redução do murmúrio, postura de apoio, tiragem, perda de massa muscular e sinais de cor pulmonale ajudam a dimensionar gravidade, sem substituir espirometria. Oximetria é útil para triagem; em sintomas desproporcionais, policitemia, grande redução do VEF1 ou saturação baixa, considerar investigação de trocas gasosas. O PCDT de 2026 recomenda gasometria se SpO2 inferior a 92% em sua avaliação de necessidade de oxigenoterapia. Essa indicação de gasometria não significa indicar automaticamente oxigênio domiciliar."
+    },
+    {
+      "text": "Quantifique tabagismo em **maços-ano**: maços por dia multiplicados pelos anos de consumo (um maço convencional de 20 cigarros). Um paciente que fumou meio maço por 30 anos tem 15 maços-ano; uma pessoa que fumou dois maços por 10 anos tem 20. A conta ajuda a estimar exposição, mas **não** determina certeza de DPOC nem cobre biomassa, vapores, poeiras e fumo passivo. Pergunte sobre fogão a lenha em ambiente fechado, solventes, mineração, silagem, fertilizantes, tabaco aquecido e vape. Biomassa pode produzir fenótipo com menor enfisema extenso e mais alterações de pequenas vias aéreas, mas há sobreposição clínica."
+    },
+    {
+      "text": "**Radiografia:** auxilia a ver hiperinsuflação, cardiomegalia, pneumonia e massas, mas pode ser normal em doença inicial. **Tomografia:** caracteriza áreas enfisematosas, bronquiectasias, nódulos e alterações intersticiais, e orienta discussão de procedimentos específicos; não é necessária para confirmar cada diagnóstico simples de DPOC. **Gasometria arterial:** interpreta oxigenação, ventilação e equilíbrio ácido-base quando há hipoxemia relevante, risco de hipercapnia ou doença grave. **ECG e ecocardiograma:** investigam arritmia, insuficiência cardíaca e hipertensão pulmonar quando sintomas/sinais justificam. **Hemograma:** anemia e polici"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,126 @@
+{
+  "sha": "3940ee696ff92c9c6068d191bd317d02365fb1fb",
+  "path": "apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "avaliacao-pre-operatoria-risco-cirurgico--3940ee696f",
+  "title": "Avaliação Pré-operatória e Risco Cirúrgico",
+  "format": ".json",
+  "chars_estimated": 113439,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Avaliação pré-operatória: decisão compartilhada, não 'liberação cirúrgica'"
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Risco cirúrgico, risco anestésico, ASA e urgência"
+    },
+    {
+      "id": "historia",
+      "title": "2. Anamnese e exame físico: o que realmente muda conduta"
+    },
+    {
+      "id": "cardio",
+      "title": "3. Algoritmo de avaliação cardiovascular perioperatória em cinco decisões"
+    },
+    {
+      "id": "rcri",
+      "title": "4. Escore RCRI (Lee): como calcular e não superinterpretar"
+    },
+    {
+      "id": "exames",
+      "title": "5. Exames pré-operatórios: indicação proporcional e conduta diante de achados"
+    },
+    {
+      "id": "viaaerea",
+      "title": "6. Via aérea e risco de broncoaspiração: duas avaliações distintas"
+    },
+    {
+      "id": "medicamentos",
+      "title": "7. Medicações e antitrombóticos: evitar receitas genéricas"
+    },
+    {
+      "id": "especial",
+      "title": "8. Populações especiais, fragilidade e ética"
+    },
+    {
+      "id": "fluxo",
+      "title": "9. Fluxo operacional de decisão e documentação"
+    },
+    {
+      "id": "casos",
+      "title": "10. Cinco casos clínicos comentados"
+    },
+    {
+      "id": "questoes",
+      "title": "11. Questões autorais comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "12. Referências científicas, comparação documental e estado editorial"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"12. Referências científicas, comparação documental e estado editorial\"]",
+    "[\"o\",[\"<a href=\\\"https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Gualandro et al. SBC — Diretriz de Avaliação Cardiovascular Perioperatória (2024), Arq Bras Cardiol 121(9):e20240590.</a>\",\"<a href=\\\"https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">AHA/ACC e sociedades. Perioperative Cardiovascular Management for Noncardiac Surgery (2024; dire",
+    "[\"p\",\"<strong>Benchmark não incorporado:</strong> “01 - AVALIACAO PRE-ANESTESICA.pdf” foi aberto no Drive e mostra ASA, Lee, METs, exames, jejum e via aérea. Há nele afirmações demasiado absolutas (4 METs para autorizar cirurgia; porcentagens ASA como risco do indivíduo) e referências legais que exigem conferência; a redação LURIA usa diretrizes primárias e não reproduz imagens/tabelas/figuras da apostila comparativa.\"]",
+    "[\"p\",\"<strong>Estado editorial atualizado (14/10/2026):</strong> o livro de avaliação pré-operatória foi profundamente ampliado nos eixos de risco cardiovascular (SBC/AHA 2024), RCRI/AUB-HAS2/DASI, exames dirigidos, viabilidade e intervalos pós-angioplastia, anticoagulantes e anestesia neuraxial (CHEST/ASRA), diabetes/iSGLT2/GLP-1, vias aéreas difíceis e jejum (ASA), populações especiais, casos e questões. O antigo bloco de revisão redundante foi desmembrado, preservando casos/questões específicos e fontes, de forma a manter progressão por tema. A metragem textual deve ser auditada quanto à ut",
+    "[\"p\",\"Referências clínicas confirmadas: Gualandro DM et al. Diretriz de Avaliação Cardiovascular Perioperatória — SBC 2024, Arq Bras Cardiol 121(9):e20240590, https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/ ; AHA/ACC multisociety Guideline for Perioperative Cardiovascular Management 2024, vigente em 2026, https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery ; JACC 2024 DOI 10.1016/j.jacc.2024.06.013. Benchmark do Drive '01 - AVALIACAO PRE-A"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12094288/",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013",
+    "https://doi.org/10.1097/ALN.0000000000004002",
+    "https://pubmed.ncbi.nlm.nih.gov/36629465/",
+    "https://www.nice.org.uk/guidance/ng45/chapter/recommendations",
+    "https://esaic.org/guideline/pre-operative-evaluation-of-adults-undergoing-elective-noncardiac-surgery-1st-update/",
+    "https://journal.chestnet.org/article/S0012-3692(22",
+    "https://rapm.bmj.com/content/early/2025/09/16/rapm-2024-105766",
+    "https://www.asahq.org/about-asa/newsroom/news-releases/2024/10/new-multi-society-glp-1-guidance",
+    "https://www.facs.org/quality-programs/accreditation-and-verification/geriatric-surgery-verification/resources/",
+    "https://abccardiol.org/article/diretriz-de-avaliacao-cardiovascular-perioperatoria-da-sociedade-brasileira-de-cardiologia-2024/",
+    "https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery",
+    "https://doi.org/10.1097/ALN.0000000000004381",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9994846/",
+    "https://www.chestnet.org/guidelines-and-topic-collections/guidelines/pulmonary-vascular/perioperative-management-of-antithrombotic-therapy",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "conceitos",
+      "text": "Fatores que determinam resultados incluem idade biológica e fragilidade, estado nutricional, tipo e magnitude da operação, perda de sangue esperada, inflamação, necessidade de UTI, comorbidades e experiência do serviço. Diagnósticos estáveis e controlados podem não justificar adiar cirurgia de baixo risco. Já descompensação cardíaca ou doença valvar sintomática grave mudam completamente o plano. Estratificação precisa produzir uma ação: continuar, otimizar, investigar se realmente mudar conduta ou adiar em conjunto com a equipe."
+    },
+    {
+      "section": "historia",
+      "text": "A história deve registrar diagnóstico cirúrgico e alternativas, grau de urgência, operações/anestesias anteriores, complicações prévias (intubação difícil, broncoaspiração, reação alérgica, hipertermia maligna, náusea grave), eventos familiares anestésicos e uso de fármacos. Identificar capacidade para atividades cotidianas, dispneia, dor torácica, edema, síncope, palpitações, sangramentos, trombose prévia, ronco/apneia, tabagismo, álcool e substâncias psicoativas. Perguntar por gravidez possível quando pertinente, explicando finalidade e obtendo consentimento."
+    },
+    {
+      "section": "cardio",
+      "text": "A AHA/ACC 2024 recomenda teste de estresse apenas para casos selecionados com risco cirúrgico elevado, capacidade funcional ruim/desconhecida e probabilidade cardiovascular relevante, sobretudo quando a descoberta mudaria estratégia. ECG, BNP/NT-proBNP e troponina também são seletivos, não universais. Revascularização coronariana profilática antes de qualquer operação não reduz automaticamente eventos e só deve ocorrer por indicação clínica habitual, não porque o calendário cirúrgico se aproxima."
+    },
+    {
+      "section": "cardio",
+      "text": "O risco cardiovascular perioperatório não é uma propriedade fixa que pode ser medida em uma consulta e transportada para qualquer operação. A mesma pessoa com doença coronariana estável pode passar por um procedimento odontológico ou por uma reconstrução vascular extensa, com respostas inflamatórias, variações de pressão e perdas sanguíneas muito diferentes. A SBC 2024 orienta uma avaliação progressiva: condições graves ativas, magnitude e urgência da operação, reserva funcional, escore validado e necessidade real de exames adicionais. A AHA/ACC 2024 converge nessa lógica, mas as ferramentas e recomendações não devem ser fundidas como se foss"
+    },
+    {
+      "section": "cardio",
+      "text": "Capacidade funcional é uma estimativa da reserva cardiovascular diante de atividade. Tradicionalmente descreve-se baixa capacidade como menos de 4 equivalentes metabólicos (METs), mas não se deve usar essa faixa como licença ou proibição de operar. A AHA/ACC 2024 reconhece que DASI (Duke Activity Status Index) fornece informação prognóstica mais sistemática que apenas perguntar 'sobe escadas?', enquanto SBC 2024 recomenda documentar na anamnese a capacidade de subir dois lances de escada em operações de risco intermediário/alto. Paciente com artrose grave pode ter baixa atividade devido à dor, não necessariamente a limitação cardíaca."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

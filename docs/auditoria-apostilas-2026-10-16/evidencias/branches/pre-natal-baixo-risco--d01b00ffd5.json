@@ -1,0 +1,241 @@
+{
+  "sha": "d01b00ffd5d4c1a9fe0eafe65daaba1c30294835",
+  "path": "apostilas/pre-natal-baixo-risco/index.html",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "pre-natal-baixo-risco--d01b00ffd5",
+  "title": "Pré-natal de baixo risco",
+  "format": ".html",
+  "chars_estimated": 76941,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Apostila LURIA — Pré-natal de baixo risco"
+    },
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Linha do tempo clínica"
+    },
+    {
+      "title": "Como usar a linha do tempo"
+    },
+    {
+      "title": "Fontes principais (atualizar conforme rede)"
+    },
+    {
+      "title": "PARTE I — Primeiro trimestre (até 13 semanas e 6 dias)"
+    },
+    {
+      "title": "PARTE II — Segundo trimestre (14 semanas a 27 semanas e 6 dias)"
+    },
+    {
+      "title": "PARTE III — Terceiro trimestre (28 semanas ao parto)"
+    },
+    {
+      "title": "Procurar atendimento imediatamente se houver:"
+    },
+    {
+      "title": "PARTE IV — Cuidado transversal e consolidação"
+    },
+    {
+      "title": "História"
+    },
+    {
+      "title": "Exame"
+    },
+    {
+      "title": "Plano"
+    },
+    {
+      "title": "Prevenção da pré-eclâmpsia — estratificação de risco na APS"
+    },
+    {
+      "title": "Como decidir quem precisa discutir profilaxia?"
+    },
+    {
+      "title": "AAS e cálcio: prevenção tem população-alvo e janela"
+    },
+    {
+      "title": "Fluxo prático — rastrear → prevenir → acompanhar"
+    },
+    {
+      "title": "Caso clínico integrador"
+    },
+    {
+      "title": "Questões complementares com justificativa por alternativa"
+    },
+    {
+      "title": "Caso 1 — Confirmação e datação"
+    },
+    {
+      "title": "Caso 2 — DUM incerta"
+    },
+    {
+      "title": "Caso 3 — Gestante inicialmente baixo risco"
+    },
+    {
+      "title": "Caso 4 — Vacinação"
+    },
+    {
+      "title": "Caso 5 — Ganho ponderal"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Na primeira consulta"
+    },
+    {
+      "title": "Em todas as consultas"
+    },
+    {
+      "title": "Ao longo da gestação"
+    },
+    {
+      "title": "Referências selecionadas"
+    },
+    {
+      "title": "Fontes e atualização"
+    },
+    {
+      "title": "Ferramentas de revisão — mapa mental por trimestre"
+    },
+    {
+      "title": "Imagens e curadoria para o Admin LURIA"
+    },
+    {
+      "title": "Casos aplicados: urocultura, sífilis e vacinação no pré-natal de 2026"
+    },
+    {
+      "title": "1. Urocultura positiva sem sintomas: não é o mesmo que cistite"
+    },
+    {
+      "title": "2. Sífilis: um teste negativo no começo da gravidez não encerra a prevenção"
+    },
+    {
+      "title": "3. Vacinação da gestante: calendário nacional atualizado"
+    },
+    {
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "title": "A cada consulta: explicar o motivo"
+    },
+    {
+      "title": "Mudança de classificação de risco"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Primeira consulta como formulação de risco"
+    },
+    {
+      "title": "Segundo trimestre: anatomia, crescimento e glicose"
+    },
+    {
+      "title": "Terceiro trimestre: planejamento e vigilância"
+    },
+    {
+      "title": "Continuidade na APS e pós-parto"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Primeiro trimestre: estabelecer risco"
+    },
+    {
+      "title": "Segundo trimestre: mecanismos e rastreamento"
+    },
+    {
+      "title": "Terceiro trimestre e puerpério"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co;",
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes/gestantes/",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/caderneta_brasileira_gestante.pdf",
+    "https://mooc.campusvirtual.fiocruz.br/rea/pre-natal-qualidade/modulo3/modulo3-aula4.html",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_tecnico_gestacao_alto_risco.pdf",
+    "https://www.febrasgo.org.br/noticia/posicionamento-febrasgo-em-relacao-a-lei-14-598-sobre-inclusao-de-exames-no-protocolo-de-assistencia-de-rotina-as-gestantes-brasileiras/",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hulw-ufpb/acesso-a-informacao/gestao-documental/pop-procedimento-operacional-padrao/2019-1/pnar-pre-natal-de-alto-risco/pop-pnar-011-data-provavel-de-parto.pdf/@@download/file",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/publicacoes/caderneta-brasileira-da-gestante.pdf",
+    "https://bvaps.portoalegre.rs.gov.br/sites/default/files/usu_doc/politicas/Protocolo%20-%20Assist%C3%AAncia%20-%20Pr%C3%A9-Natal%20de%20Risco%20Habitual%20-%202026.pdf",
+    "https://prefeitura.sp.gov.br/cidade/secretarias/upload/saude/PROTOCOLO_DE_PRE_NATAL_HABITUAL_BAIXO_RISCO_6_09_19.pdf",
+    "https://saude.curitiba.pr.gov.br/images/APS/M%C3%A3e%20Curitibana/2%20-%20Pr%C3%A9-natal%20e%20puerp%C3%A9rio%20na%20aten%C3%A7%C3%A3o%20prim%C3%A1ria%20-%20atualizado%20em%2015%20de%20janeiro%20de%202025.pdf",
+    "https://www.febrasgo.org.br/pt/femina",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/0101adolescente_gravida.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4340812/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2025/nota-tecnica-no-o-119-2025-cgici-dpni-svsa-ms",
+    "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/agosto-defeso-eleitoral/pre-natal-cuidados-desde-as-primeiras-semanas-tornam-a-gestacao-mais-segura",
+    "https://esppe.saude.pe.gov.br/pluginfile.php/279048/mod_folder/content/0/PR%C3%89-NATAL/Modelo%20de%20encaminhamento%20ao%20PNAR.pdf?forcedownload=1",
+    "https://www.saude.df.gov.br/documents/37101/716749/SEI_GDF-13887044-Nota-T%C3%A9cnica_ginecolocia-e-obtestricia.pdf/8bc82df0-2e7b-302b-37c7-6b5e161d7c68?t=1653333966659",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez",
+    "https://atencaoprimaria.es.gov.br/Media/AtencaoPrimaria/Mulher/Manual%20Gesta%C3%A7%C3%A3o%20Alto%20Risco%202022.pdf",
+    "https://www.saude.sc.gov.br/index.php/pt/atencao-primaria-a-saude/gerencias-da-aps/gapps/saude-da-mulher/saude-da-mulher-arquivos/instrumento-de-estratificacao-de-risco-gestacional-retificado-em-23-09-2025/download",
+    "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-15-2022-saps-ms",
+    "https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/diretrizes-clinicas-para-a-aps/diretrizes-abordadas/pratica_odontologica_gestantes.pdf",
+    "https://www.febrasgo.org.br/images/pec/posicionamentos-febrasgo/FPS-N1-Janeiro-2023-portugues.pdf",
+    "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n19%20-%20O%20-%20Hipertens%C3%A3o%20na%20gesta%C3%A7%C3%A3o.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/publicacoes",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_pre_natal_baixo_risco.pdf",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/a-vacina-virus-sincicial-respiratorio-2"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Atenção à sífilis: o mínimo recomendado pelo MS é testagem na primeira consulta, no 3º trimestre e no parto/abortamento. Protocolos podem ampliar a frequência diante de risco ou decisões locais; o rastreio no 2º trimestre não substitui os momentos mínimos."
+    },
+    {
+      "text": "O Ministério da Saúde recomenda o início preferencial até a 12ª semana e acompanhamento periódico até o parto. gov"
+    },
+    {
+      "text": "Calculam-se os dias transcorridos e divide-se por 7. Se o resultado for 10 semanas e 0 dias, essa será a idade gestacional estimada pela DUM."
+    },
+    {
+      "text": "A FEBRASGO destaca a importância da avaliação entre 11 semanas e 13 semanas e 6 dias para datação, número de fetos e corionicidade/amnionicidade. febrasgo.org"
+    },
+    {
+      "text": "Quando não houve diagnóstico inicial, realizar teste oral de tolerância à glicose com 75 g, conforme disponibilidade e protocolo."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

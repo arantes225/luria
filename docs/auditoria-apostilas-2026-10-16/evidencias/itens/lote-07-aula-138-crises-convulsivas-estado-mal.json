@@ -1,0 +1,672 @@
+{
+  "key": "lote-07-aula-138-crises-convulsivas-estado-mal",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md",
+  "title": "LURIA — Lote 7 · Aula 138",
+  "source_sha256": "847dc606b4fea76b9e79c970f2c9dca4fbe07084a2523a4819c30f80161244eb",
+  "chars_estimated": 73291,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 138",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Crises convulsivas e estado de mal epiléptico — Pediatria e Emergência",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "0. Auditoria anterior à redação",
+      "level": 2
+    },
+    {
+      "line": 12,
+      "title": "1. Definir corretamente crise, epilepsia e estado de mal",
+      "level": 2
+    },
+    {
+      "line": 19,
+      "title": "1.1. Classificação clínica simplificada",
+      "level": 3
+    },
+    {
+      "line": 32,
+      "title": "2. Fisiopatologia da crise prolongada",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "3. Primeiros socorros seguros",
+      "level": 2
+    },
+    {
+      "line": 44,
+      "title": "4. Reconhecimento do estado de mal",
+      "level": 2
+    },
+    {
+      "line": 49,
+      "title": "5. Avaliação inicial: causas reversíveis não podem esperar",
+      "level": 2
+    },
+    {
+      "line": 56,
+      "title": "6. Crises febris: não banalizar nem superinvestigar",
+      "level": 2
+    },
+    {
+      "line": 64,
+      "title": "7. Algoritmo de EME pediátrico por tempo",
+      "level": 2
+    },
+    {
+      "line": 66,
+      "title": "Fase 0–5 minutos: estabilizar e preparar",
+      "level": 3
+    },
+    {
+      "line": 69,
+      "title": "Fase ≥5 minutos: benzodiazepínico como primeira linha",
+      "level": 3
+    },
+    {
+      "line": 77,
+      "title": "Persistência apesar de benzodiazepínicos: segunda linha",
+      "level": 3
+    },
+    {
+      "line": 86,
+      "title": "Estado refratário",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "8. Diagnóstico e investigação após estabilização",
+      "level": 2
+    },
+    {
+      "line": 99,
+      "title": "9. Continuidade de tratamento: epilepsia não é igual a EME",
+      "level": 2
+    },
+    {
+      "line": 104,
+      "title": "10. Quatro casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 106,
+      "title": "Caso 1 — crise febril simples",
+      "level": 3
+    },
+    {
+      "line": 109,
+      "title": "Caso 2 — status sem acesso venoso",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "Caso 3 — status refratário com paralisia",
+      "level": 3
+    },
+    {
+      "line": 115,
+      "title": "Caso 4 — crise por distúrbio eletrolítico",
+      "level": 3
+    },
+    {
+      "line": 118,
+      "title": "11. Seis questões autorais com comentários",
+      "level": 2
+    },
+    {
+      "line": 119,
+      "title": "Questão 1 — tempo de EME",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "Questão 2 — status após benzodiazepínico",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "Questão 3 — crise febril",
+      "level": 3
+    },
+    {
+      "line": 134,
+      "title": "Questão 4 — status oculto",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "Questão 5 — valproato e POLG",
+      "level": 3
+    },
+    {
+      "line": 144,
+      "title": "Questão 6 — causa reversível",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "12. Pérolas LURIA e resumo",
+      "level": 2
+    },
+    {
+      "line": 163,
+      "title": "13. Imagens e materiais visuais a curar (NENHUM incorporado)",
+      "level": 2
+    },
+    {
+      "line": 167,
+      "title": "14. Referências",
+      "level": 2
+    },
+    {
+      "line": 174,
+      "title": "15. Pendências antes de certificação",
+      "level": 2
+    },
+    {
+      "line": 186,
+      "title": "SEGUNDA CAMADA EDITORIAL — DA CRISE À DECISÃO SEGURA",
+      "level": 1
+    },
+    {
+      "line": 189,
+      "title": "16. Raciocínio ampliado — reconhecer o evento e evitar falso diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 191,
+      "title": "16.1. A pergunta anterior à crise: o evento foi de fato epiléptico?",
+      "level": 3
+    },
+    {
+      "line": 200,
+      "title": "16.2. O exame intercrítico importa",
+      "level": 3
+    },
+    {
+      "line": 205,
+      "title": "16.3. Quatro padrões que deveriam mudar o caminho",
+      "level": 3
+    },
+    {
+      "line": 211,
+      "title": "17. Como classificar semiologia de modo reproduzível",
+      "level": 2
+    },
+    {
+      "line": 213,
+      "title": "17.1. Primeiro classifique o início",
+      "level": 3
+    },
+    {
+      "line": 220,
+      "title": "17.2. Consciência e responsividade",
+      "level": 3
+    },
+    {
+      "line": 223,
+      "title": "17.3. Ausências típicas, atípicas e crises focais",
+      "level": 3
+    },
+    {
+      "line": 228,
+      "title": "17.4. Espasmos epilépticos infantis são outra emergência",
+      "level": 3
+    },
+    {
+      "line": 231,
+      "title": "18. A cronologia do EME: um processo paralelo de decisões",
+      "level": 2
+    },
+    {
+      "line": 233,
+      "title": "18.1. Por que o relógio deve começar no primeiro movimento?",
+      "level": 3
+    },
+    {
+      "line": 238,
+      "title": "18.2. Fase inicial: o que a segurança de via aérea realmente envolve?",
+      "level": 3
+    },
+    {
+      "line": 243,
+      "title": "18.3. Primeira linha: benzodiazepínicos não são “microbolus repetidos”",
+      "level": 3
+    },
+    {
+      "line": 250,
+      "title": "18.4. Exemplo didático resolvido de peso versus dose — não é receita",
+      "level": 3
+    },
+    {
+      "line": 255,
+      "title": "18.5. Segunda linha: farmacologia comparada e a evidência que realmente existe",
+      "level": 3
+    },
+    {
+      "line": 268,
+      "title": "18.6. Se nenhuma segunda linha é superior universalmente, como escolher?",
+      "level": 3
+    },
+    {
+      "line": 277,
+      "title": "18.7. O que faz um medicamento “falhar” de verdade?",
+      "level": 3
+    },
+    {
+      "line": 280,
+      "title": "18.8. Estado refratário: objetivos da UTI",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "19. Convulsão febril: decisão por idade, duração e recuperação",
+      "level": 2
+    },
+    {
+      "line": 287,
+      "title": "19.1. O raciocínio tem dois eixos",
+      "level": 3
+    },
+    {
+      "line": 291,
+      "title": "19.2. O que torna “simples”?",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "19.3. Investigação que costuma não ser necessária — e quando muda",
+      "level": 3
+    },
+    {
+      "line": 303,
+      "title": "19.4. Recorrência e risco futuro sem determinismo",
+      "level": 3
+    },
+    {
+      "line": 308,
+      "title": "19.5. Exemplo de orientação de alta após crise febril simples",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "20. Emergências metabólicas e tóxicas que parecem epilepsia",
+      "level": 2
+    },
+    {
+      "line": 313,
+      "title": "20.1. Hipoglicemia",
+      "level": 3
+    },
+    {
+      "line": 316,
+      "title": "20.2. Hiponatremia",
+      "level": 3
+    },
+    {
+      "line": 319,
+      "title": "20.3. Hipocalcemia e hipomagnesemia",
+      "level": 3
+    },
+    {
+      "line": 322,
+      "title": "20.4. Intoxicações e abstinência",
+      "level": 3
+    },
+    {
+      "line": 325,
+      "title": "20.5. Gestação em adolescente",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "21. Classificação ILAE 2025 — atualização obrigatória do vocabulário",
+      "level": 2
+    },
+    {
+      "line": 333,
+      "title": "21.1. Quatro classes principais, em vez de assumir sempre um início documentado",
+      "level": 3
+    },
+    {
+      "line": 341,
+      "title": "21.2. De “awareness” para “consciousness”",
+      "level": 3
+    },
+    {
+      "line": 350,
+      "title": "21.3. Manifestações observáveis e não observáveis",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "21.4. Nova classificação, mesma prioridade no PS",
+      "level": 3
+    },
+    {
+      "line": 368,
+      "title": "21.5. Classificação da síndrome ainda é outra pergunta",
+      "level": 3
+    },
+    {
+      "line": 371,
+      "title": "22. Eletroencefalograma, neuroimagem e laboratório: o que cada teste responde?",
+      "level": 2
+    },
+    {
+      "line": 373,
+      "title": "22.1. EEG não é detector perfeito de epilepsia",
+      "level": 3
+    },
+    {
+      "line": 378,
+      "title": "22.2. Potencial diagnóstico e limitações",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "22.3. Uma criança está acordando devagar: o que observar?",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "22.4. Ressonância versus tomografia",
+      "level": 3
+    },
+    {
+      "line": 396,
+      "title": "22.5. LCR sem atrasar o que salva",
+      "level": 3
+    },
+    {
+      "line": 401,
+      "title": "23. Depois da primeira crise não provocada: diagnóstico, risco e decisão de tratar",
+      "level": 2
+    },
+    {
+      "line": 403,
+      "title": "23.1. Uma crise não é automaticamente epilepsia",
+      "level": 3
+    },
+    {
+      "line": 406,
+      "title": "23.2. O que aumenta preocupação depois do evento?",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "23.3. Investigação etiológica organizada",
+      "level": 3
+    },
+    {
+      "line": 426,
+      "title": "23.4. A criança e a escola precisam de um plano",
+      "level": 3
+    },
+    {
+      "line": 429,
+      "title": "24. Escolher antiepiléptico de manutenção não é copiar a droga do status",
+      "level": 2
+    },
+    {
+      "line": 431,
+      "title": "24.1. Agudo e crônico têm objetivos diferentes",
+      "level": 3
+    },
+    {
+      "line": 436,
+      "title": "24.2. Levetiracetam",
+      "level": 3
+    },
+    {
+      "line": 439,
+      "title": "24.3. Lamotrigina",
+      "level": 3
+    },
+    {
+      "line": 442,
+      "title": "24.4. Carbamazepina/oxcarbazepina",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "24.5. Valproato na manutenção",
+      "level": 3
+    },
+    {
+      "line": 448,
+      "title": "24.6. Abstinência abrupta, interação e adesão",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "25. Risco de morte, qualidade de vida e ética do cuidado",
+      "level": 2
+    },
+    {
+      "line": 453,
+      "title": "25.1. SUDEP sem alarmismo",
+      "level": 3
+    },
+    {
+      "line": 456,
+      "title": "25.2. Acidentes e proteção sem proibição absoluta",
+      "level": 3
+    },
+    {
+      "line": 459,
+      "title": "25.3. Saúde mental e aprendizagem",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "25.4. Comunicação depois de emergência grave",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "26. Casos clínicos adicionais — cinco dimensões de decisão",
+      "level": 2
+    },
+    {
+      "line": 467,
+      "title": "Caso 5 — síncope convulsiva que não é epilepsia",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "Caso 6 — espasmos em salvas no lactente",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Caso 7 — status refratário e ESETT",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "Caso 8 — inconsciência persistente após intubação",
+      "level": 3
+    },
+    {
+      "line": 499,
+      "title": "Caso 9 — primeira crise afebril com EEG normal",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "27. Oito questões adicionais com comentários das alternativas",
+      "level": 2
+    },
+    {
+      "line": 509,
+      "title": "Questão 7 — ILAE 2025",
+      "level": 3
+    },
+    {
+      "line": 514,
+      "title": "Questão 8 — ESETT",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "Questão 9 — episódio durante exercício",
+      "level": 3
+    },
+    {
+      "line": 524,
+      "title": "Questão 10 — espasmos do lactente",
+      "level": 3
+    },
+    {
+      "line": 529,
+      "title": "Questão 11 — EEG normal",
+      "level": 3
+    },
+    {
+      "line": 534,
+      "title": "Questão 12 — hiponatremia",
+      "level": 3
+    },
+    {
+      "line": 539,
+      "title": "Questão 13 — manutenção",
+      "level": 3
+    },
+    {
+      "line": 544,
+      "title": "Questão 14 — EEG na UTI",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "28. Matriz de autossuficiência: quais conteúdos sustentam quais decisões?",
+      "level": 2
+    },
+    {
+      "line": 568,
+      "title": "29. Bibliografia adicionada e limites da comparação",
+      "level": 2
+    },
+    {
+      "line": 578,
+      "title": "30. Parecer da segunda rodada de aprofundamento",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Ministério da Saúde. **PCDT de Epilepsia**, anexo alterado em 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "2. NICE NG217. Epilepsies in children, young people and adults, seção de status, atualizada 30/01/2025. https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "3. American Epilepsy Society. Treatment of Convulsive Status Epilepticus, guideline clássico 2016. https://cms.aesnet.org/clinical-care/clinical-guidance/guideline-prolonged-seizures/guideline-for-treatment-of-prolonged-seizures-in-children-and-adults",
+    "4. Children's Hospital of Philadelphia. Status Epilepticus Clinical Pathway, ED/ICU, versão disponível em 2026. https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+    "5. NHS Greater Glasgow and Clyde. Status Epilepticus Management, pediatric guidance, revisão 05/05/2026. https://www.clinicalguidelines.scot.nhs.uk/ggc-paediatric-guidelines/ggc-paediatric-guidelines/emergency-medicine/status-epilepticus-management/",
+    "6. **ILAE**. Beniczky S et al. *Updated classification of epileptic seizures: Position paper*. *Epilepsia*. 2025;66(6):1804–1823. DOI 10.1111/epi.18338. https://www.ilae.org/guidelines/definition-and-classification/updated-classification-of-epileptic-seizures-2025",
+    "7. **ESETT**. Kapur J et al. *Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus*. *N Engl J Med*. 2019;381:2103–2113. Análise por idade: *Lancet*. 2020. https://pubmed.ncbi.nlm.nih.gov/32203691/",
+    "8. **CHOP**. *Status Epilepticus Clinical Pathway – ED and ICU*, revisto em agosto/2026. https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+    "9. **NICE NG217**. Seção 7 *Treating status epilepticus, repeated or cluster seizures*, atualização 30/01/2025. https://www.nice.org.uk/guidance/ng217/chapter/treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "10. **Ministério da Saúde**. PCDT de Epilepsia, anexo alterado em 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "**Proveniência:** o único PDF do Drive diretamente acessível para este tema permanece **toxicidade de anestésicos locais**, um recorte de convulsão provocada, não um livro de epileptologia. As doses institucionais são explicitamente CHOP/NICE, não inferidas do PCDT brasileiro. **Nenhuma norma de prescrição do SUS foi inventada.**"
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://cms.aesnet.org/clinical-care/clinical-guidance/guideline-prolonged-seizures/guideline-for-treatment-of-prolonged-seizures-in-children-and-adults",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.clinicalguidelines.scot.nhs.uk/ggc-paediatric-guidelines/ggc-paediatric-guidelines/emergency-medicine/status-epilepticus-management/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ilae.org/guidelines/definition-and-classification/updated-classification-of-epileptic-seizures-2025",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32203691/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng217/chapter/treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 3,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Típica simples:** criança de aproximadamente **6 meses a 5 anos** com febre e crise generalizada **<15 min**, evento único nas 24 h, com recuperação, sem evidência de infecção do SNC e sem déficit neurológico focal. **Complexa:** focal, duração ≥15 min ou recorrência dentro de 24 h; exige avaliação mais individualizada. **Status febril:** crise febril prolongada ≥30 min na definição específica histórica, embora **tratamento emergencial comece aos 5 min**.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exemplo de protocolo público pediátrico CHOP** (não representa fórmula universal do SUS): - lorazepam IV **0,1 mg/kg**, máximo **4 mg** por dose; - midazolam intranasal/bucal **0,3 mg/kg**, máximo **10 mg**. Uma segunda dose adequada de benzodiazepínico pode ser necessária se a convulsão persiste, usualmente após intervalo aproximado de 3–5 minutos conforme protocolo. **Contabilizar doses pré-hospitalares para evitar depressão respiratória por redosagem indevida.** A escolha/diluição é dependente de produto e disponibilidade local.",
+      "pattern": 0
+    },
+    {
+      "text": "**CHOP (criança >28 dias, versão revisada em agosto/2026):** lorazepam IV 0,1 mg/kg (máximo 4 mg); midazolam IN/bucal 0,3 mg/kg (máximo 10 mg) quando IV não disponível. Esses exemplos são reproduzidos para demonstrar **como ler um protocolo institucional específico**, e não como tabela nacional única. A preparação final precisa confirmar diluição, formulação, volume intranasal tolerável, atomizador, via e limites de segurança com farmacêutico/protocolo do hospital. Em especial, a concentração de midazolam e o volume por narina determinam entrega efetiva; grande volume pode escorrer para orofaringe e falhar mesmo com dose calculada corretamente.",
+      "pattern": 0
+    },
+    {
+      "text": "**Epilepsia** não significa obrigatoriamente “teve uma convulsão”: diagnóstico pressupõe tendência duradoura a crises não provocadas, definida por dois eventos não provocados separados por >24 h, ou uma crise com risco de recorrência comparável, ou síndrome epiléptica específica, conforme critérios ILAE em contexto clínico. A avaliação etiológica é importante para evitar rótulo em pessoa com crise exclusivamente por hipoglicemia ou toxina reversível.",
+      "pattern": 1
+    },
+    {
+      "text": "**Crise aguda sintomática:** decorre de insulto agudo, como hiponatremia, hipoglicemia, encefalite, trauma, intoxicação ou AVC. **Crise febril:** ocorre em faixa etária típica, associada à febre sem infecção SNC/metabólica aguda, com critérios próprios. **Síncope convulsiva:** hipoperfusão cerebral pode produzir movimentos breves e confundir diagnóstico, exigindo história de prodromos, recuperação e exame cardiovascular.",
+      "pattern": 1
+    },
+    {
+      "text": "**Tempos operacionais ILAE de status tônico-clônico:** t1 ≈ **5 min**, momento em que a crise provavelmente não cessará espontaneamente e intervenção é indicada; t2 ≈ **30 min**, limiar teórico de maior risco de consequências de longo prazo. Os valores dependem do tipo de crise e não devem ser transferidos automaticamente a ausências/estado focal.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria / Neurologia / Atendimento de Emergência. **Estado:** rascunho original em revisão, NÃO PUBLICADO. **Atualizado:** 14/10/2026. **Fontes prioritárias:** PCDT de Epilepsia do Ministério da Saúde, anexo alterado **05/05/2026**; NICE NG217, tratamento de status (atualizado 2025); AES guideline de status convulsivo (2016) como base clássica; fluxograma CHOP pediátrico atualizado; NHS GGC Pediatric Status Epilepticus 05/05/2026. O escopo é acima do período neonatal; neonatal exige protocolo específico.",
+      "pattern": 2
+    },
+    {
+      "text": "**CHOP (criança >28 dias, versão revisada em agosto/2026):** lorazepam IV 0,1 mg/kg (máximo 4 mg); midazolam IN/bucal 0,3 mg/kg (máximo 10 mg) quando IV não disponível. Esses exemplos são reproduzidos para demonstrar **como ler um protocolo institucional específico**, e não como tabela nacional única. A preparação final precisa confirmar diluição, formulação, volume intranasal tolerável, atomizador, via e limites de segurança com farmacêutico/protocolo do hospital. Em especial, a concentração de midazolam e o volume por narina determinam entrega efetiva; grande volume pode escorrer para orofaringe e falhar mesmo com dose calculada corretamente.",
+      "pattern": 2
+    },
+    {
+      "text": "**Levetiracetam:** ação sobre proteína vesicular SV2A, relativamente poucas interações farmacocinéticas; pode causar irritabilidade/alterações comportamentais e requer atenção à função renal em manutenção. Em EME, segurança da infusão e dose máxima seguem protocolo. O CHOP de agosto/2026 usa **60 mg/kg IV, máximo 4.500 mg**, como primeira medicação antiepiléptica após benzodiazepínico em muitas crianças >28 dias, com exceções conforme manutenção prévia.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria / Neurologia / Atendimento de Emergência. **Estado:** rascunho original em revisão, NÃO PUBLICADO. **Atualizado:** 14/10/2026. **Fontes prioritárias:** PCDT de Epilepsia do Ministério da Saúde, anexo alterado **05/05/2026**; NICE NG217, tratamento de status (atualizado 2025); AES guideline de status convulsivo (2016) como base clássica; fluxograma CHOP pediátrico atualizado; NHS GGC Pediatric Status Epilepticus 05/05/2026. O escopo é acima do período neonatal; neonatal exige protocolo específico."
+    },
+    {
+      "text": "**Google Drive:** busca por “estado de mal epiléptico”, “epilepsia”, “convulsões” não localizou um capítulo de neuropediatria equivalente. Foi **aberto e lido** “09 - CIRURGIA ANESTESICOS LOCAIS.pdf” (~5,5 mil caracteres), um material **somente correlato**, cujo tópico de intoxicação sistêmica de anestésico local inclui sintomas premonitórios, crises convulsivas e colapso cardiovascular; sua abordagem de EMEs é superficial/fora de escopo. Não transcrever esse resumo nem usar seus valores de doses sem conferir diretriz apropriada. A etapa zero equivalente permanece **pendente** e não será certificada como concluída integralmente. Não se atribui autoria Estratégia MED sem comprovação. Uma apostila LURIA já padronizada de outra matéria, \\`apostilas/infertilidade-conjugal/index.html\\`, foi lida como modelo editorial geral, sem reutilizar estrutura gráfica protegida de terceiros."
+    }
+  ]
+}

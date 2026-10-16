@@ -1,0 +1,193 @@
+{
+  "sha": "d0d7307f9c33efcda4bf9d5712df7e5f65d93cd5",
+  "path": "apostilas/_rascunhos/lote-08-aula-177-complicacoes-pos-operatorias.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d0d7307f9c",
+  "title": "LURIA | Aula 177 — Complicações pós-operatórias: reconhecimento precoce e conduta",
+  "format": ".md",
+  "chars_estimated": 38467,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 177 — Complicações pós-operatórias: reconhecimento precoce e conduta"
+    },
+    {
+      "title": "0. Auditoria e comparação editorial"
+    },
+    {
+      "title": "1. Por que o pós-operatório é um período de risco especial?"
+    },
+    {
+      "title": "As cinco perguntas de uma visita cirúrgica"
+    },
+    {
+      "title": "2. Classificação temporal — útil, mas não absoluta"
+    },
+    {
+      "title": "3. Reconhecimento de deterioração: ABCDE, tendências e “red flags”"
+    },
+    {
+      "title": "Sinais que devem disparar reavaliação imediata"
+    },
+    {
+      "title": "4. Hemorragia pós-operatória e coagulopatia"
+    },
+    {
+      "title": "Abordagem inicial estruturada"
+    },
+    {
+      "title": "Sangramento intraluminal versus extraluminal"
+    },
+    {
+      "title": "5. Infecção de sítio cirúrgico (ISC): superficial, profunda e órgão/espaço"
+    },
+    {
+      "title": "Como suspeitar sem confundir inflamação normal com infecção?"
+    },
+    {
+      "title": "Prevenção: OMS e CCIH"
+    },
+    {
+      "title": "6. Deiscência anastomótica e fístulas: a complicação que pode esconder-se"
+    },
+    {
+      "title": "Pistas clínicas e laboratoriais"
+    },
+    {
+      "title": "Estável versus instável: decisão que muda tudo"
+    },
+    {
+      "title": "Imagens"
+    },
+    {
+      "title": "7. Íleo pós-operatório, obstrução e síndrome compartimental abdominal"
+    },
+    {
+      "title": "Prevenção ERAS"
+    },
+    {
+      "title": "8. Tromboembolismo venoso: profilaxia e diagnóstico"
+    },
+    {
+      "title": "9. Complicações respiratórias pós-operatórias"
+    },
+    {
+      "title": "10. Lesão renal aguda, eletrólitos e retenção urinária"
+    },
+    {
+      "title": "11. Delirium, dor, náuseas e complicações metabólicas"
+    },
+    {
+      "title": "12. Ferida operatória: deiscência, seroma, hematoma e hérnia incisional"
+    },
+    {
+      "title": "13. Segurança no pós-operatório por especialidade"
+    },
+    {
+      "title": "14. Tratamento e seguimento organizado: não esquecer o controle do foco"
+    },
+    {
+      "title": "Reavaliação 24–72 h após intervenção"
+    },
+    {
+      "title": "Preparo de alta segura"
+    },
+    {
+      "title": "15. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Taquicardia no 4º DPO de colectomia"
+    },
+    {
+      "title": "Caso 2 — Queda de pressão após bariátrica"
+    },
+    {
+      "title": "Caso 3 — Ferida com pus e febre tardia"
+    },
+    {
+      "title": "Caso 4 — Dispneia súbita e TEP"
+    },
+    {
+      "title": "Caso 5 — Oligúria não é sempre insuficiência renal"
+    },
+    {
+      "title": "Caso 6 — Delirium hipoativo no idoso"
+    },
+    {
+      "title": "Caso 7 — Dreno bilioso após gastrectomia"
+    },
+    {
+      "title": "Caso 8 — Evisceração da incisão"
+    },
+    {
+      "title": "16. Questões autorais comentadas — ENAMED/residência"
+    },
+    {
+      "title": "17. Pérolas e fluxograma de revisão rápida"
+    },
+    {
+      "title": "18. Imagens candidatas (curadoria pendente)"
+    },
+    {
+      "title": "19. Referências rastreáveis"
+    },
+    {
+      "title": "Divergências de aplicabilidade"
+    },
+    {
+      "title": "20. Auditoria final desta primeira versão — publicação bloqueada"
+    }
+  ],
+  "reference_entries": [
+    "1. World Health Organization. **Global Guidelines for Prevention of Surgical Site Infection**, 2nd ed., 2018. https://www.who.int/publications-detail-redirect/9789241550475",
+    "2. WHO/NCBI Bookshelf. **Evidence-based recommendations on prevention of SSI**, especialmente timing de profilaxia, normotermia e preparo. https://www.ncbi.nlm.nih.gov/books/NBK536431/",
+    "3. ERAS Society. **Consensus Guidelines for Perioperative Care for Emergency Laparotomy: Intra- and Postoperative Care**, 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10241558/",
+    "4. ERAS Society. **Guidelines for elective abdominal and pelvic surgery at primary/secondary hospitals in LMICs**, 2022. https://link.springer.com/article/10.1007/s00268-022-06587-w",
+    "5. WHO. **Surgical Safety Checklist and implementation guidance**. https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources",
+    "6. Ministério da Saúde, ANVISA. **Segurança do Paciente / Prevenção de Infecções Relacionadas à Assistência à Saúde**, consultar notas e protocolos vigentes para ISC. https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana",
+    "- OMS 2018 é diretriz base internacional; disponibilidade de insumos e esquemas de antibioticoprofilaxia exige adaptação CCIH brasileira.",
+    "- Material comparativo do Drive é específico de gastrectomia/bariátrica e usa números de incidência variáveis, que não devem ser extrapolados para toda cirurgia; não houve reprodução.",
+    "- Os critérios específicos de classificação de ISC por procedimento, tratamento de TEP após cirurgia de alto risco hemorrágico, drenagem endoscópica e decisões de reoperação exigem protocolos especializados. Este texto ensina princípios e sinais, não dá ordem cirúrgica individual.",
+    "**Concluído:** inventário, 3 comparativos lidos, conteúdo original com classificação temporal, hemorragia, ISC, deiscência/fístulas, íleo/obstrução, TVP/TEP, rim, pulmão, delirium, ferida, 8 casos e 12 questões, fluxos e candidatos visuais.",
+    "**Pendente:** chegar à profundidade de 60 mil caracteres úteis; revisar algoritmos e tratamentos com cirurgia/anestesia/CCIH; confirmar referências brasileiras específicas por complicação, selecionar/aprovar imagens, corrigir eventualmente nomenclaturas; consolidar com outras aulas sem duplicações, converter ao formato LURIA, testar no PWA/desktop e realizar revisão independente. **Não homologar, não publicar, não fazer merge/deploy.**"
+  ],
+  "external_urls": [
+    "https://www.who.int/publications-detail-redirect/9789241550475",
+    "https://www.ncbi.nlm.nih.gov/books/NBK536431/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10241558/",
+    "https://link.springer.com/article/10.1007/s00268-022-06587-w",
+    "https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Benchmarks do Google Drive abertos e lidos:** (1) \\`04 - ESTOMAGO - COMPLICACOES AGUDAS POS GASTRECTOMIAS.pdf\\` (~4,6 mil caracteres de texto), (2) \\`03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf\\` (~6,8 mil) e (3) \\`01 - AVALIACAO PRE-ANESTESICA.pdf\\` (~13,7 mil). Tratam de deiscência/fístulas, sangramento, hérnia interna e riscos pré-operatórios; não são cobertura geral equivalente do tema. Trazem marca textual “Medicina Livre”; autoria institucional do Estratégia MED **não confirmada**. Não se copia nenhuma imagem/texto. Padrão de atualização: diretriz OMS de prevenção de infecção de sítio cirúrgico (2ª edição 2018), recomendações ERA"
+    },
+    {
+      "text": "A OMS recomenda antibioticoprofilaxia cirúrgica **antes da incisão** e, quando indicada, dentro de **120 minutos anteriores**, com ajuste conforme meia-vida do fármaco; na prática institucional muitos beta-lactâmicos são administrados mais perto da incisão. Repetição intraoperatória depende da meia-vida, duração, perdas e protocolo. **Prolongar antibiótico profilático por vários dias sem infecção estabelecida não substitui boas práticas** e aumenta resistência/danos."
+    },
+    {
+      "text": "**Obstrução mecânica** resulta de bridas, hérnias, estenoses, torção ou outras causas; dor cólica, vômitos, distensão, sinais de sofrimento intestinal e TC podem auxiliar. Na cirurgia com reconstrução em Y de Roux, **hérnia interna** pode produzir dor pós-prandial intermitente e TC inicialmente não diagnóstica; suspeita clínica forte em paciente com dor importante exige avaliação cirúrgica. O **sinal de redemoinho do mesentério** pode apoiar diagnóstico, mas ausência do sinal não exclui hérnia."
+    },
+    {
+      "text": "Cirurgia, inflamação, imobilidade, câncer e características do paciente elevam risco de **trombose venosa profunda (TVP)** e **tromboembolismo pulmonar (TEP)**. A prevenção é equilibrar risco trombótico versus risco de sangramento, considerando procedimento, história prévia, mobilidade, contraindicações e protocolos (exemplo: escore de Caprini quando aplicável). Não aplicar anticoagulação farmacológica automaticamente em paciente com hemorragia ativa."
+    },
+    {
+      "text": "**Hérnia incisional** ocorre tardiamente por falha de integridade da parede, com fatores como infecção, obesidade, tosse crônica, desnutrição e técnica. Prevenção começa na sutura adequada, profilaxia de ISC e reabilitação; não apenas em recomendar cinta."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

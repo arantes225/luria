@@ -1,0 +1,841 @@
+{
+  "key": "cancer-endometrio--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/cancer-endometrio/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 179 — Câncer de endométrio",
+  "source_sha256": "68e9b4003dafa4d3dac272045842aa35fcbf6098d01dd17d7a3dfce341901c3c",
+  "chars_estimated": 95666,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 179 — Câncer de endométrio",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "2. Anatomia funcional: por que o endométrio sangra?",
+      "level": 2
+    },
+    {
+      "line": 38,
+      "title": "2.1. Do ciclo à transformação neoplásica",
+      "level": 3
+    },
+    {
+      "line": 42,
+      "title": "2.2. Origem endometrial versus cervical",
+      "level": 3
+    },
+    {
+      "line": 46,
+      "title": "3. Epidemiologia brasileira em 2026",
+      "level": 2
+    },
+    {
+      "line": 54,
+      "title": "3.1. Detecção precoce versus rastreamento",
+      "level": 3
+    },
+    {
+      "line": 58,
+      "title": "4. Fatores de risco e modificadores de probabilidade",
+      "level": 2
+    },
+    {
+      "line": 76,
+      "title": "4.1. Tamoxifeno: rastrear sintomas, não espessura arbitrária",
+      "level": 3
+    },
+    {
+      "line": 80,
+      "title": "4.2. Síndrome de Lynch",
+      "level": 3
+    },
+    {
+      "line": 86,
+      "title": "5. Histologia: a distinção de tipos é terapêutica",
+      "level": 2
+    },
+    {
+      "line": 92,
+      "title": "5.1. FIGO grau histológico versus FIGO estágio",
+      "level": 3
+    },
+    {
+      "line": 96,
+      "title": "5.2. EIN/hiperplasia atípica versus hiperplasia sem atipia",
+      "level": 3
+    },
+    {
+      "line": 104,
+      "title": "6. Classificação molecular — de TCGA a um exame de rotina",
+      "level": 2
+    },
+    {
+      "line": 113,
+      "title": "6.1. ESGO 2025: refinamento dos NSMP",
+      "level": 3
+    },
+    {
+      "line": 117,
+      "title": "6.2. Tumores com múltiplos classificadores",
+      "level": 3
+    },
+    {
+      "line": 121,
+      "title": "6.3. Quadro de classificação",
+      "level": 3
+    },
+    {
+      "line": 132,
+      "title": "7. Manifestação clínica: primeiro sinal é o sangramento",
+      "level": 2
+    },
+    {
+      "line": 138,
+      "title": "7.1. Quando o sangramento pós-menopausa é emergência?",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "7.2. Pré-menopausa, SOP e obesidade",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "7.3. Red flags",
+      "level": 3
+    },
+    {
+      "line": 150,
+      "title": "8. Diagnósticos diferenciais e raciocínio por contexto",
+      "level": 2
+    },
+    {
+      "line": 165,
+      "title": "9. Diagnóstico da paciente pós-menopáusica — atualização ACOG 2026",
+      "level": 2
+    },
+    {
+      "line": 167,
+      "title": "9.1. Evolução da orientação",
+      "level": 3
+    },
+    {
+      "line": 173,
+      "title": "9.2. Como aplicar na LURIA sem extrapolar contexto",
+      "level": 3
+    },
+    {
+      "line": 183,
+      "title": "9.3. Ultrassonografia transvaginal: o que descrever",
+      "level": 3
+    },
+    {
+      "line": 189,
+      "title": "9.4. Biópsia endometrial: escolha do procedimento",
+      "level": 3
+    },
+    {
+      "line": 197,
+      "title": "9.5. Amostra insuficiente",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "9.6. Quando chamar urgência oncoginecológica?",
+      "level": 3
+    },
+    {
+      "line": 205,
+      "title": "10. Diagnóstico em pré-menopausa e perimenopausa",
+      "level": 2
+    },
+    {
+      "line": 213,
+      "title": "11. Anatomia patológica: o laudo precisa responder perguntas terapêuticas",
+      "level": 2
+    },
+    {
+      "line": 230,
+      "title": "11.1. Linfonodo sentinela: ultrastaging",
+      "level": 3
+    },
+    {
+      "line": 234,
+      "title": "12. Estadiamento FIGO 2023 — não usar tabela antiga sem data",
+      "level": 2
+    },
+    {
+      "line": 255,
+      "title": "12.1. Qualificadores moleculares",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "12.2. IA3 — exceção muito cobrada",
+      "level": 3
+    },
+    {
+      "line": 263,
+      "title": "12.3. Por que a tabela FIGO 2009 pode levar a erro",
+      "level": 3
+    },
+    {
+      "line": 267,
+      "title": "13. Imagem para estadiamento — não confundir com diagnóstico histológico",
+      "level": 2
+    },
+    {
+      "line": 273,
+      "title": "13.1. CA-125",
+      "level": 3
+    },
+    {
+      "line": 277,
+      "title": "14. Pré-operatório e discussão multidisciplinar",
+      "level": 2
+    },
+    {
+      "line": 283,
+      "title": "14.1. Embolia, diabetes, hipertensão e peso",
+      "level": 3
+    },
+    {
+      "line": 287,
+      "title": "15. Cirurgia do câncer de endométrio inicial",
+      "level": 2
+    },
+    {
+      "line": 293,
+      "title": "15.1. Linfonodo sentinela: estratégia moderna",
+      "level": 3
+    },
+    {
+      "line": 299,
+      "title": "15.2. Omento e peritônio",
+      "level": 3
+    },
+    {
+      "line": 303,
+      "title": "15.3. Preservação ovariana em jovens selecionadas",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "15.4. Inoperável clinicamente",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "16. Adjuvância por risco: observação, braquiterapia, radioterapia e quimioterapia",
+      "level": 2
+    },
+    {
+      "line": 324,
+      "title": "16.1. Braquiterapia vaginal",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "16.2. Radioterapia externa pélvica",
+      "level": 3
+    },
+    {
+      "line": 332,
+      "title": "16.3. Quimioterapia de platina/taxano",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "16.4. POLEmut: evitar sobretratamento",
+      "level": 3
+    },
+    {
+      "line": 340,
+      "title": "16.5. p53abn sem invasão: risco incerto",
+      "level": 3
+    },
+    {
+      "line": 344,
+      "title": "17. Tratamento avançado, irressecável e recorrente",
+      "level": 2
+    },
+    {
+      "line": 348,
+      "title": "17.1. Terapia sistêmica e MMRd",
+      "level": 3
+    },
+    {
+      "line": 354,
+      "title": "17.2. Não-MMRd e NSMP/p53abn",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "17.3. Receptores hormonais e terapia endócrina",
+      "level": 3
+    },
+    {
+      "line": 362,
+      "title": "17.4. HER2 em carcinoma seroso",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "17.5. Controle local de recidiva",
+      "level": 3
+    },
+    {
+      "line": 370,
+      "title": "18. Preservação de fertilidade: exceção estritamente selecionada",
+      "level": 2
+    },
+    {
+      "line": 374,
+      "title": "18.1. Antes de qualquer tratamento hormonal conservador",
+      "level": 3
+    },
+    {
+      "line": 385,
+      "title": "18.2. Terapia conservadora",
+      "level": 3
+    },
+    {
+      "line": 391,
+      "title": "18.3. EIN/AEH sem carcinoma invasivo",
+      "level": 3
+    },
+    {
+      "line": 395,
+      "title": "18.4. Reprodução e risco emocional",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "19. Complicações do tratamento e reabilitação",
+      "level": 2
+    },
+    {
+      "line": 407,
+      "title": "20. Seguimento após tratamento inicial",
+      "level": 2
+    },
+    {
+      "line": 413,
+      "title": "20.1. Marcadores e testes",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "20.2. Cuidados de sobrevivência",
+      "level": 3
+    },
+    {
+      "line": 421,
+      "title": "21. Prognóstico e recorrência: quais fatores importam?",
+      "level": 2
+    },
+    {
+      "line": 435,
+      "title": "22. Rastreio genético, prevenção e comunicação familiar",
+      "level": 2
+    },
+    {
+      "line": 441,
+      "title": "22.1. Papel da APS",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "22.2. Linguagem e consentimento",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "23. Situações especiais",
+      "level": 2
+    },
+    {
+      "line": 451,
+      "title": "23.1. Endométrio espesso incidental em assintomática",
+      "level": 3
+    },
+    {
+      "line": 454,
+      "title": "23.2. Sangramento em uso de anticoagulante",
+      "level": 3
+    },
+    {
+      "line": 457,
+      "title": "23.3. Tamoxifeno",
+      "level": 3
+    },
+    {
+      "line": 460,
+      "title": "23.4. Paciente obesa com comorbidades severas",
+      "level": 3
+    },
+    {
+      "line": 463,
+      "title": "23.5. Tumor seroso em pólipo",
+      "level": 3
+    },
+    {
+      "line": 466,
+      "title": "23.6. Sarcoma uterino suspeito",
+      "level": 3
+    },
+    {
+      "line": 469,
+      "title": "23.7. Lesões sincrônicas endométrio–ovário",
+      "level": 3
+    },
+    {
+      "line": 472,
+      "title": "23.8. Gestação",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "24. Algoritmos LURIA",
+      "level": 2
+    },
+    {
+      "line": 477,
+      "title": "Fluxo A — Sangramento pós-menopausa",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "Fluxo B — Sangramento pré-menopausa",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Fluxo C — Biópsia confirma adenocarcinoma",
+      "level": 3
+    },
+    {
+      "line": 486,
+      "title": "Fluxo D — EIN/hiperplasia atípica",
+      "level": 3
+    },
+    {
+      "line": 489,
+      "title": "Fluxo E — Paciente jovem quer preservar gestação",
+      "level": 3
+    },
+    {
+      "line": 492,
+      "title": "Fluxo F — Câncer avançado/recaída",
+      "level": 3
+    },
+    {
+      "line": 495,
+      "title": "Fluxo G — Triagem de Lynch",
+      "level": 3
+    },
+    {
+      "line": 498,
+      "title": "25. Erros frequentes de prova e prática — lista de segurança",
+      "level": 2
+    },
+    {
+      "line": 541,
+      "title": "26. Tabela para revisão rápida",
+      "level": 2
+    },
+    {
+      "line": 558,
+      "title": "27. Referências principais e datas",
+      "level": 2
+    },
+    {
+      "line": 575,
+      "title": "Nota de compatibilidade Brasil–internacional",
+      "level": 3
+    },
+    {
+      "line": 579,
+      "title": "28. Controle editorial do núcleo",
+      "level": 2
+    },
+    {
+      "line": 602,
+      "title": "29. Casos clínicos comentados — 14 situações de diagnóstico, FIGO e tratamento",
+      "level": 2
+    },
+    {
+      "line": 606,
+      "title": "Caso 1 — Sangramento pós-menopausa, pequeno volume, grande risco",
+      "level": 3
+    },
+    {
+      "line": 620,
+      "title": "Caso 2 — Endométrio fino, sangramento recorrente",
+      "level": 3
+    },
+    {
+      "line": 634,
+      "title": "Caso 3 — Usuária de tamoxifeno sintomática",
+      "level": 3
+    },
+    {
+      "line": 648,
+      "title": "Caso 4 — Anovulação crônica aos 34 anos",
+      "level": 3
+    },
+    {
+      "line": 662,
+      "title": "Caso 5 — Pipelle insuficiente não é biópsia benigna",
+      "level": 3
+    },
+    {
+      "line": 676,
+      "title": "Caso 6 — EIN e reprodução concluída",
+      "level": 3
+    },
+    {
+      "line": 690,
+      "title": "Caso 7 — EIN com desejo de fertilidade",
+      "level": 3
+    },
+    {
+      "line": 704,
+      "title": "Caso 8 — Endometrioide inicial de baixo risco",
+      "level": 3
+    },
+    {
+      "line": 718,
+      "title": "Caso 9 — Grau 3 e POLEmut patogênico",
+      "level": 3
+    },
+    {
+      "line": 732,
+      "title": "Caso 10 — Carcinoma seroso restrito a pólipo",
+      "level": 3
+    },
+    {
+      "line": 746,
+      "title": "Caso 11 — LVSI substancial apesar de miométrio superficial",
+      "level": 3
+    },
+    {
+      "line": 760,
+      "title": "Caso 12 — Suspeita de Lynch por perda MSH2/MSH6",
+      "level": 3
+    },
+    {
+      "line": 774,
+      "title": "Caso 13 — Recidiva avançada MMRd",
+      "level": 3
+    },
+    {
+      "line": 788,
+      "title": "Caso 14 — Recidiva isolada no coto vaginal",
+      "level": 3
+    },
+    {
+      "line": 804,
+      "title": "30. Questões autorais — 23 exercícios comentados alternativa por alternativa",
+      "level": 2
+    },
+    {
+      "line": 808,
+      "title": "Questão 1 — ACOG 2026 e sangramento pós-menopausa",
+      "level": 3
+    },
+    {
+      "line": 829,
+      "title": "Questão 2 — Eco fino e sangramento recorrente",
+      "level": 3
+    },
+    {
+      "line": 850,
+      "title": "Questão 3 — Amostra de Pipelle insuficiente",
+      "level": 3
+    },
+    {
+      "line": 871,
+      "title": "Questão 4 — Pré-menopausa com alto risco",
+      "level": 3
+    },
+    {
+      "line": 892,
+      "title": "Questão 5 — EIN/AEH e cirurgia definitiva",
+      "level": 3
+    },
+    {
+      "line": 913,
+      "title": "Questão 6 — EIN e preservação",
+      "level": 3
+    },
+    {
+      "line": 934,
+      "title": "Questão 7 — Rastreamento em assintomáticas",
+      "level": 3
+    },
+    {
+      "line": 955,
+      "title": "Questão 8 — FIGO 2023 IA2",
+      "level": 3
+    },
+    {
+      "line": 976,
+      "title": "Questão 9 — FIGO 2023 por LVSI",
+      "level": 3
+    },
+    {
+      "line": 997,
+      "title": "Questão 10 — Seroso sem invasão",
+      "level": 3
+    },
+    {
+      "line": 1018,
+      "title": "Questão 11 — Seroso com invasão",
+      "level": 3
+    },
+    {
+      "line": 1039,
+      "title": "Questão 12 — POLEmut patogênico",
+      "level": 3
+    },
+    {
+      "line": 1060,
+      "title": "Questão 13 — p53abn invasivo",
+      "level": 3
+    },
+    {
+      "line": 1081,
+      "title": "Questão 14 — Classes moleculares",
+      "level": 3
+    },
+    {
+      "line": 1102,
+      "title": "Questão 15 — MLH1 e Lynch",
+      "level": 3
+    },
+    {
+      "line": 1123,
+      "title": "Questão 16 — Cirurgia padrão",
+      "level": 3
+    },
+    {
+      "line": 1144,
+      "title": "Questão 17 — Sentinela com ICG",
+      "level": 3
+    },
+    {
+      "line": 1165,
+      "title": "Questão 18 — Baixo risco e adjuvância",
+      "level": 3
+    },
+    {
+      "line": 1186,
+      "title": "Questão 19 — Avançado MMRd",
+      "level": 3
+    },
+    {
+      "line": 1207,
+      "title": "Questão 20 — Preservação de fertilidade",
+      "level": 3
+    },
+    {
+      "line": 1228,
+      "title": "Questão 21 — Recidiva vaginal após cirurgia sem RT",
+      "level": 3
+    },
+    {
+      "line": 1249,
+      "title": "Questão 22 — Citologia cervical normal",
+      "level": 3
+    },
+    {
+      "line": 1270,
+      "title": "Questão 23 — Tumor de corpo uterino e FIGO IV",
+      "level": 3
+    },
+    {
+      "line": 1293,
+      "title": "31. Curadoria de 24 imagens médicas e diagramas candidatos",
+      "level": 2
+    },
+    {
+      "line": 1324,
+      "title": "Requisitos antes de incluir no aplicativo",
+      "level": 3
+    },
+    {
+      "line": 1335,
+      "title": "32. Integração com currículo LURIA e proposta de flashcards",
+      "level": 2
+    },
+    {
+      "line": 1343,
+      "title": "33. Auditoria final e pendências de publicação",
+      "level": 2
+    },
+    {
+      "line": 1347,
+      "title": "Verificações editoriais automatizáveis",
+      "level": 3
+    },
+    {
+      "line": 1358,
+      "title": "Pendências importantes",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **INCA. Câncer do corpo do útero: versão para profissionais de saúde.** https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+    "2. **INCA. Câncer do corpo do útero: versão para população**, incorpora estimativa anual 2026–2028 (9.650 casos) e mortalidade SIM 2024. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-populacao",
+    "3. **INCA. Estimativa 2026–2028: Síntese de resultados e comentários**, corpo do útero 8,79/100 mil. https://www.gov.br/inca/pt-br/assuntos/cancer/numeros/estimativa/sintese-de-resultados-e-comentarios",
+    "4. **ACOG. Clinical Practice Update, Updated Guidance Regarding the Role of TVUS in Postmenopausal Bleeding.** *Obstet Gynecol*. julho/2026;148:e87–e91. DOI: https://doi.org/10.1097/AOG.0000000000006275 .",
+    "5. **ACOG. Nota oficial de 16/04/2026** explicando recomendação de US + amostragem inicial na maioria das pacientes. https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding",
+    "6. **ACOG. Committee Opinion 734, TVUS no sangramento pós-menopausa (2018, reafirmado em 2023)**, **parcialmente modificado** pela atualização de 2026. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding",
+    "7. **ACOG. Management of Endometrial Intraepithelial Neoplasia or Atypical Endometrial Hyperplasia**, Clinical Consensus nº 5, 2023. https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/09/management-of-endometrial-intraepithelial-neoplasia-or-atypical-endometrial-hyperplasia",
+    "8. **Berek JS et al. FIGO staging of endometrial cancer: 2023.** *Int J Gynaecol Obstet.* 2023. DOI: https://doi.org/10.1002/ijgo.14923",
+    "9. **Concin N et al. ESGO–ESTRO–ESP guidelines for management of endometrial carcinoma: update 2025.** *Lancet Oncol.* 2025;26:e423–e435. PubMed: https://pubmed.ncbi.nlm.nih.gov/40744042/ ; texto online: https://www.sciencedirect.com/science/article/pii/S1470204525001676",
+    "10. **ESGO–ESHRE–ESGE. Guidelines for fertility-sparing treatment of patients with endometrial carcinoma**, 2023. Índice institucional: https://www.esgo.org/guidelines/search-guidelines/endometrial/",
+    "11. **NCI. Endometrial Cancer Treatment (PDQ), Health Professional Version.** https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+    "12. **Conitec/MS. Índice de DDT oncológicas**, modificado em 14/09/2026; conferir atos específicos por tecnologia. https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+    "13. **LURIA. Sangramento Uterino Anormal**, apostila complementar existente no repositório. https://github.com/arantes225/luria/blob/main/apostilas/sangramento-uterino-anormal/index.html",
+    "14. **LURIA. Câncer do colo uterino/HPV**, manter distição anatômica, etiológica e programa de rastreamento. https://github.com/arantes225/luria/tree/main/apostilas/cancer-colo-utero-hpv",
+    "**ACOG 2026:** recomenda combinação diagnóstica em grande parte dos casos de sangramento pós-menopausa; é atualização estadunidense e não equivale a ato automático de incorporação brasileiro. **INCA 2026:** não recomenda rastreamento populacional de mulheres assintomáticas de risco habitual; isso é compatível com investigar sintomas. **FIGO 2023:** muda classificação anátomo-histológica/molecular; sempre citar versão na prova. **ESGO 2025:** refina prognóstico e terapia, mas agentes sistêmicos, acesso e financiamento devem ser verificados no SUS/oncologia local antes de prescrever."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-populacao",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/numeros/estimativa/sintese-de-resultados-e-comentarios",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1097/AOG.0000000000006275",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/09/management-of-endometrial-intraepithelial-neoplasia-or-atypical-endometrial-hyperplasia",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/ijgo.14923",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40744042/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1470204525001676",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esgo.org/guidelines/search-guidelines/endometrial/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://github.com/arantes225/luria/blob/main/apostilas/sangramento-uterino-anormal/index.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://github.com/arantes225/luria/tree/main/apostilas/cancer-colo-utero-hpv",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 7,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Em mulher de 35 anos com obesidade, anovulação crônica e sangramento irregular prolongado, câncer/EIN são menos prováveis que anovulação benigna, mas não impossíveis. A decisão de amostragem deve integrar idade, tempo de anovulação, resposta a tratamento, anemia e fatores de risco; **não esperar atingir 45 anos obrigatoriamente** quando há sinais de hiperplasia/EIN.",
+      "pattern": 0
+    },
+    {
+      "text": "Amostragem endometrial é geralmente indicada em SUA **≥45 anos**, e também em pessoas mais jovens com **exposição estrogênica persistente sem oposição, obesidade, SOP, sangramento persistente ou refratário, e predisposição hereditária**, segundo avaliações orientadas por diretrizes. O ponto de corte não substitui julgamento: uma paciente jovem com Lynch, anemia e anovulação prolongada não deve esperar aniversário de 45 anos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação e dados relevantes:** Mulher de 64 anos, menopausa há 14 anos, obesidade e DM2. Relata duas manchas rosadas na roupa íntima. US mostra eco endometrial irregular de 9 mm e espéculo sem lesão cervical.",
+      "pattern": 0
+    },
+    {
+      "text": "1. Diferenciar câncer de endométrio, câncer de colo, sarcoma uterino, EIN/hiperplasia atípica e outras causas de sangramento uterino anormal. 2. Explicar fisiologia endometrial, estrogênio sem oposição e vias de carcinogênese, incluindo câncer endometrioide e não endometrioide. 3. Identificar fatores de risco endócrinos, metabólicos, medicamentosos e hereditários, incluindo síndrome de Lynch. 4. Conduzir a investigação de sangramento pós-menopausa e sangramento anormal em paciente pré-menopáusica com fatores de risco. 5. Compreender a **mudança da ACOG em 2026**: US transvaginal isolada não deve ser considerada exclusão universal de lesão maligna na avaliação inicial da maioria das pacientes pós-menopáusicas com sangramento. 6. Escolher e interpretar biópsia por Pipelle, histeroscopia, curetagem e exames de estadiamento, inclusive amostra insuficiente e biópsia negativa com sangramento persistente. 7. Interpretar histologia, grau, invasão miometrial, invasão linfovascular, extensão cervical, linfonodal e marcadores moleculares. 8. Aplicar conceitualmente os estágios FIGO 2023 (incluindo IA1–IA3, IB, IC, IIA–IIC, III e IV) e seus qualificadores moleculares. 9. Descrever tratamento cirúrgico, linfonodo sentinela, radioterapia/braquiterapia, quimioterapia e imunoterapia em cenários apropriados. 10. Reconhecer critérios restritos de preservação de fertilidade, exclusão de doença invasiva e acompanhamento histológico obrigatório. 11. Manejar seguimento, complicações, recidiva, menopausa cirúrgica e cuidados paliativos. 12. Resolver casos e questões clínico-prognósticas de prova sem cair em armadilhas de conduta.",
+      "pattern": 1
+    },
+    {
+      "text": "Na **menopausa**, ocorre hipoestrogenismo relativo e o endométrio tende a ficar fino/atrófico, embora fontes periféricas de estrogênio e uso hormonal possam modificá-lo. Sangramento após cessação menstrual por pelo menos 12 meses não deve ser interpretado automaticamente como “mais uma menstruação”; a etiologia pode ser atrofia, pólipo, lesão cervical, medicação, hiperplasia ou câncer.",
+      "pattern": 1
+    },
+    {
+      "text": "Entre mulheres, o corpo do útero figura entre tumores mais incidentes, e a concentração em faixas pós-menopausa está ligada a idade e fatores metabólicos/reprodutivos. Ainda assim, **mulheres jovens podem adoecer**, especialmente em obesidade, anovulação crônica/SOP, síndromes hereditárias ou exposição estrogênica; ausência de menopausa não deve excluir biópsia quando sinais de alto risco estão presentes.",
+      "pattern": 1
+    },
+    {
+      "text": "**Ginecologia e Obstetrícia · Ginecologia Oncológica · Patologia · Genética Médica · Saúde Coletiva** **Lote 09 — Aula 179 de 180 · Edição autoral de 15/10/2026** **Situação editorial:** apostila aprofundada em rascunho; ainda não revisada por oncoginecologista, patologista e radio-oncologista; não publicada no PWA.",
+      "pattern": 2
+    },
+    {
+      "text": "**Fontes de referência e atualização:** INCA, *Câncer do corpo do útero* e *Estimativa 2026–2028*; ACOG, atualização de **abril/julho de 2026** para sangramento pós-menopausa; ACOG, EIN/hiperplasia atípica (2023); FIGO, estadiamento **2023**; ESGO–ESTRO–ESP, diretrizes de carcinoma endometrial **2025**; ESGO–ESHRE–ESGE, preservação de fertilidade **2023**; NCI PDQ, tratamento do carcinoma endometrial. Princípios internacionais de fármacos ou acesso não substituem diretrizes e incorporação/financiamento do SUS.",
+      "pattern": 2
+    },
+    {
+      "text": "1. Diferenciar câncer de endométrio, câncer de colo, sarcoma uterino, EIN/hiperplasia atípica e outras causas de sangramento uterino anormal. 2. Explicar fisiologia endometrial, estrogênio sem oposição e vias de carcinogênese, incluindo câncer endometrioide e não endometrioide. 3. Identificar fatores de risco endócrinos, metabólicos, medicamentosos e hereditários, incluindo síndrome de Lynch. 4. Conduzir a investigação de sangramento pós-menopausa e sangramento anormal em paciente pré-menopáusica com fatores de risco. 5. Compreender a **mudança da ACOG em 2026**: US transvaginal isolada não deve ser considerada exclusão universal de lesão maligna na avaliação inicial da maioria das pacientes pós-menopáusicas com sangramento. 6. Escolher e interpretar biópsia por Pipelle, histeroscopia, curetagem e exames de estadiamento, inclusive amostra insuficiente e biópsia negativa com sangramento persistente. 7. Interpretar histologia, grau, invasão miometrial, invasão linfovascular, extensão cervical, linfonodal e marcadores moleculares. 8. Aplicar conceitualmente os estágios FIGO 2023 (incluindo IA1–IA3, IB, IC, IIA–IIC, III e IV) e seus qualificadores moleculares. 9. Descrever tratamento cirúrgico, linfonodo sentinela, radioterapia/braquiterapia, quimioterapia e imunoterapia em cenários apropriados. 10. Reconhecer critérios restritos de preservação de fertilidade, exclusão de doença invasiva e acompanhamento histológico obrigatório. 11. Manejar seguimento, complicações, recidiva, menopausa cirúrgica e cuidados paliativos. 12. Resolver casos e questões clínico-prognósticas de prova sem cair em armadilhas de conduta.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Ginecologia e Obstetrícia · Ginecologia Oncológica · Patologia · Genética Médica · Saúde Coletiva** **Lote 09 — Aula 179 de 180 · Edição autoral de 15/10/2026** **Situação editorial:** apostila aprofundada em rascunho; ainda não revisada por oncoginecologista, patologista e radio-oncologista; não publicada no PWA."
+    },
+    {
+      "text": "**Fontes de referência e atualização:** INCA, *Câncer do corpo do útero* e *Estimativa 2026–2028*; ACOG, atualização de **abril/julho de 2026** para sangramento pós-menopausa; ACOG, EIN/hiperplasia atípica (2023); FIGO, estadiamento **2023**; ESGO–ESTRO–ESP, diretrizes de carcinoma endometrial **2025**; ESGO–ESHRE–ESGE, preservação de fertilidade **2023**; NCI PDQ, tratamento do carcinoma endometrial. Princípios internacionais de fármacos ou acesso não substituem diretrizes e incorporação/financiamento do SUS."
+    }
+  ]
+}

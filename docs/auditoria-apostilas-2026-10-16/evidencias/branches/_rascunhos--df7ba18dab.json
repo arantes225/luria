@@ -1,0 +1,404 @@
+{
+  "sha": "df7ba18dab501d9764514f49e342b108da8d37dc",
+  "path": "apostilas/_rascunhos/lote-10-210-psicopatologia-exame-mental.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--df7ba18dab",
+  "title": "LURIA | Apostila 210 — Psicopatologia, entrevista e exame do estado mental",
+  "format": ".md",
+  "chars_estimated": 86147,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 210 — Psicopatologia, entrevista e exame do estado mental"
+    },
+    {
+      "title": "0. Etapa zero — lacuna, comparação e fronteira editorial"
+    },
+    {
+      "title": "1. Objetivos e o que torna a entrevista médica útil"
+    },
+    {
+      "title": "2. O que é psicopatologia e o que ela NÃO é"
+    },
+    {
+      "title": "2.1. Fenômeno, sintoma, sinal, síndrome, diagnóstico"
+    },
+    {
+      "title": "2.2. Normalidade, diferença cultural e sofrimento clinicamente significativo"
+    },
+    {
+      "title": "2.3. Uma pessoa pode apresentar múltiplas síndromes"
+    },
+    {
+      "title": "2.4. Diagnóstico por exclusão e exame clínico"
+    },
+    {
+      "title": "3. Bases neurobiológicas necessárias à semiologia"
+    },
+    {
+      "title": "3.1. Redes e processos, não “uma área do cérebro para cada sintoma”"
+    },
+    {
+      "title": "3.2. Regulação do alerta e consciência"
+    },
+    {
+      "title": "3.3. Memória e aprendizagem"
+    },
+    {
+      "title": "3.4. Controle motor e função executiva"
+    },
+    {
+      "title": "4. A entrevista psiquiátrica: técnica, ética e sequência"
+    },
+    {
+      "title": "4.1. Preparar o ambiente"
+    },
+    {
+      "title": "4.2. Pergunta aberta e narrativa espontânea"
+    },
+    {
+      "title": "4.3. Elementos da história"
+    },
+    {
+      "title": "4.4. Fonte colateral e validade da informação"
+    },
+    {
+      "title": "4.5. Como perguntar sobre experiências incomuns"
+    },
+    {
+      "title": "4.6. Perguntas de suicídio não são iatrogênicas"
+    },
+    {
+      "title": "5. Exame do estado mental: roteiro completo e descrição padronizada"
+    },
+    {
+      "title": "5.1. Aparência, apresentação e autocuidado"
+    },
+    {
+      "title": "5.2. Atitude e relação com entrevistador"
+    },
+    {
+      "title": "5.3. Psicomotricidade"
+    },
+    {
+      "title": "5.4. Fala"
+    },
+    {
+      "title": "5.5. Consciência e vigília"
+    },
+    {
+      "title": "5.6. Atenção"
+    },
+    {
+      "title": "5.7. Orientação"
+    },
+    {
+      "title": "5.8. Memória"
+    },
+    {
+      "title": "5.9. Humor e afeto"
+    },
+    {
+      "title": "5.10. Pensamento — curso, forma e conteúdo"
+    },
+    {
+      "title": "5.11. Sensopercepção"
+    },
+    {
+      "title": "5.12. Insight, julgamento e capacidade decisória"
+    },
+    {
+      "title": "5.13. Como registrar em texto corrido"
+    },
+    {
+      "title": "6. Alterações do pensamento: diferenciação com exemplos"
+    },
+    {
+      "title": "6.1. Pensamento acelerado e fuga de ideias"
+    },
+    {
+      "title": "6.2. Bradipsiquismo e bloqueio"
+    },
+    {
+      "title": "6.3. Circunstancialidade e tangencialidade"
+    },
+    {
+      "title": "6.4. Descarrilamento e associações frouxas"
+    },
+    {
+      "title": "6.5. Perseveração e prolixidade"
+    },
+    {
+      "title": "6.6. Neologismos e alterações de linguagem"
+    },
+    {
+      "title": "6.7. Conteúdo: ideia prevalente, obsessão e delírio"
+    },
+    {
+      "title": "6.8. Conteúdos delirantes clássicos"
+    },
+    {
+      "title": "7. Alterações da percepção: ilusão, alucinação e experiências limítrofes"
+    },
+    {
+      "title": "7.1. Sensação e percepção"
+    },
+    {
+      "title": "7.2. Ilusão"
+    },
+    {
+      "title": "7.3. Alucinação"
+    },
+    {
+      "title": "7.4. Hipnagógicas e hipnopômpicas"
+    },
+    {
+      "title": "7.5. Pseudoalucinação: limite de um conceito clássico"
+    },
+    {
+      "title": "7.6. Despersonalização e desrealização"
+    },
+    {
+      "title": "7.7. Sinais de risco nas experiências perceptivas"
+    },
+    {
+      "title": "8. Consciência, atenção e delirium: emergências clínicas camufladas"
+    },
+    {
+      "title": "8.1. Definição operacional"
+    },
+    {
+      "title": "8.2. Hiperativo, hipoativo e misto"
+    },
+    {
+      "title": "8.3. Causas precipitantes e predisponentes"
+    },
+    {
+      "title": "8.4. Exame inicial de gravidade"
+    },
+    {
+      "title": "8.5. Ferramentas 4AT e CAM-ICU"
+    },
+    {
+      "title": "8.6. Delirium versus demência versus depressão"
+    },
+    {
+      "title": "8.7. Manejo inicial: tratar causa e prevenir danos"
+    },
+    {
+      "title": "8.8. Quando o delirium muda a avaliação psiquiátrica"
+    },
+    {
+      "title": "9. Síndromes psicopatológicas: a ponte entre exame e diagnóstico"
+    },
+    {
+      "title": "9.1. Síndrome depressiva"
+    },
+    {
+      "title": "9.2. Síndrome maníaca"
+    },
+    {
+      "title": "9.3. Síndrome ansiosa"
+    },
+    {
+      "title": "9.4. Síndrome psicótica"
+    },
+    {
+      "title": "9.5. Síndrome catatônica"
+    },
+    {
+      "title": "9.6. Sindrome de uso de substâncias e abstinência"
+    },
+    {
+      "title": "9.7. Sintoma isolado não é diagnóstico"
+    },
+    {
+      "title": "10. Risco agudo e plano de segurança"
+    },
+    {
+      "title": "10.1. Avaliação de ideação suicida"
+    },
+    {
+      "title": "10.2. Risco de violência e agitação"
+    },
+    {
+      "title": "10.3. Capacidade e consentimento sob crise"
+    },
+    {
+      "title": "10.4. Vulnerabilidades e sigilo"
+    },
+    {
+      "title": "11. Roteiros de entrevista por contexto assistencial"
+    },
+    {
+      "title": "11.1. Atenção Primária (APS)"
+    },
+    {
+      "title": "11.2. Pronto atendimento"
+    },
+    {
+      "title": "11.3. Internação clínica e pós-operatório"
+    },
+    {
+      "title": "11.4. Ambulatório de psiquiatria"
+    },
+    {
+      "title": "12. Exemplo de prontuário integrado de exame mental"
+    },
+    {
+      "title": "12.1. Erros de redação a evitar"
+    },
+    {
+      "title": "13. Casos clínicos originais comentados — oito trajetórias de raciocínio"
+    },
+    {
+      "title": "Caso 1 — A idosa “deprimida” que não conseguia acompanhar perguntas"
+    },
+    {
+      "title": "Caso 2 — Três noites “sem precisar dormir” e fala acelerada"
+    },
+    {
+      "title": "Caso 3 — Vozes ao adormecer e medo de ter esquizofrenia"
+    },
+    {
+      "title": "Caso 4 — Pensamento intrusivo de ferir alguém e vergonha de contar"
+    },
+    {
+      "title": "Caso 5 — Fala incompreensível iniciada de repente"
+    },
+    {
+      "title": "Caso 6 — Desrealização em crise de pânico, mas sem perder juízo de realidade"
+    },
+    {
+      "title": "Caso 7 — Ideação suicida com plano e recusa de ajuda"
+    },
+    {
+      "title": "Caso 8 — Mutismo, postura mantida e instabilidade autonômica"
+    },
+    {
+      "title": "14. Doze questões autorais estilo ENAMED e residência — todas as alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — Exame do estado mental: humor versus afeto"
+    },
+    {
+      "title": "Questão 2 — Circunstancialidade versus tangencialidade"
+    },
+    {
+      "title": "Questão 3 — Delirium ou transtorno neurocognitivo crônico?"
+    },
+    {
+      "title": "Questão 4 — Ilusão versus alucinação"
+    },
+    {
+      "title": "Questão 5 — Redução da necessidade de sono"
+    },
+    {
+      "title": "Questão 6 — Pensamento intrusivo e intenção"
+    },
+    {
+      "title": "Questão 7 — Vozes apenas ao adormecer"
+    },
+    {
+      "title": "Questão 8 — Falha súbita de linguagem"
+    },
+    {
+      "title": "Questão 9 — Capacidade decisória na presença de transtorno mental"
+    },
+    {
+      "title": "Questão 10 — Catatonia e segurança"
+    },
+    {
+      "title": "Questão 11 — Ideação suicida e escala de risco"
+    },
+    {
+      "title": "Questão 12 — Delirium hipoativo"
+    },
+    {
+      "title": "15. Pérolas clínicas, algoritmos e quadro de revisão"
+    },
+    {
+      "title": "15.1. Os doze mandamentos da semiologia mental segura"
+    },
+    {
+      "title": "15.2. Fluxo A — paciente com alteração aguda do comportamento"
+    },
+    {
+      "title": "15.3. Fluxo B — relato de experiências perceptivas incomuns"
+    },
+    {
+      "title": "15.4. Fluxo C — paciente com tristeza, ansiedade ou irritabilidade"
+    },
+    {
+      "title": "15.5. Fluxo D — ideação suicida ou autoagressão"
+    },
+    {
+      "title": "15.6. Fluxo E — suspeita de catatonia"
+    },
+    {
+      "title": "15.7. Um exemplo de ficha rápida do EEM sem questionário proprietário"
+    },
+    {
+      "title": "15.8. Situações de encaminhamento prioritário"
+    },
+    {
+      "title": "16. Dez imagens e diagramas candidatos à fila editorial"
+    },
+    {
+      "title": "17. Referências e o que foi efetivamente conferido"
+    },
+    {
+      "title": "18. Auditoria do manuscrito 210 — situação e próximos gates"
+    }
+  ],
+  "reference_entries": [
+    "1. **World Health Organization (WHO).** *Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR).* Genebra: WHO; 2024. ISBN 9789240077263. https://www.who.int/publications/i/item/9789240077263 . **Utilização:** estrutura diagnóstica internacional e distinção entre sintomas, síndromes e transtornos; **não reproduzir critérios extensos protegidos**. Licenciamento e possível uso comercial exigem atenção.",
+    "2. **National Institute for Health and Care Excellence (NICE).** *Delirium: prevention, diagnosis and management in hospital and long-term care.* CG103, publicada 2010, **atualizada em 18/01/2023**. https://www.nice.org.uk/guidance/cg103/chapter/recommendations . **Utilização:** indicadores de delirium, avaliação com 4AT fora da UTI e CAM-ICU ou ICDSC na UTI/recuperação pós-operatória, manejo causal e medidas ambientais.",
+    "3. **National Institute for Health and Care Excellence (NICE).** *Self-harm: assessment, management and preventing recurrence.* NG225; 2022. https://www.nice.org.uk/guidance/ng225/chapter/recommendations . **Utilização:** perguntas de segurança e plano de cuidado; **não utilizar escores/estratificação global** para previsão de suicídio ou para decidir alta.",
+    "4. **World Health Organization.** *mhGAP Intervention Guide for mental, neurological and substance use disorders in non-specialized health settings*, version 2.0, 2016. https://www.who.int/publications/i/item/9789241549790 . **Utilização:** cuidado clínico integrado e importância de adaptar protocolos ao ambiente não especializado. **Não copiar algoritmos protegidos sem verificar licença.**",
+    "5. **World Health Organization.** *ICD-11 for Mortality and Morbidity Statistics (MMS)*, plataforma terminológica/estatística oficial. https://icd.who.int/browse/2025-01/mms/en . **Utilização:** nomenclatura de categorias; disponibilidade da versão/idioma de adoção nacional deve ser verificada, sem confundir com o CDDR clínico.",
+    "6. **Ministério da Saúde, Brasil.** Documentos de Atenção Básica e Rede de Atenção Psicossocial (RAPS): **referência nacional a verificar na versão vigente antes de implementar rotas locais de atendimento, sigilo, manejo de crise e rede.** Não atribuir parágrafos, doses ou critérios a documentos não acessados.",
+    "7. **Literatura-texto complementar** para revisão editorial presencial: *Sims' Symptoms in the Mind*, livro de psicopatologia descritiva; e *Kaplan & Sadock's Synopsis of Psychiatry*, para organização da semiologia. **Não foi aberta uma edição específica dessas obras nesta etapa**, e nenhuma afirmação exclusiva foi atribuída a páginas ou edição não conferidas.",
+    "**Transparência editorial:** na pesquisa do Drive foi encontrado apenas um material curto sobre síndromes cognitivas/delirium, não apostila homônima de exame mental. O conteúdo é uma construção original da LURIA apoiada em referências externas explicitadas, não adaptação/coprodução do PDF privado. Antes de certificação, buscar **fonte brasileira atual para semiologia e normas assistenciais** e realizar revisão por docente/psiquiatra.",
+    "**Parecer editorial:** a apostila apresenta cobertura semiológica ampla e múltiplas situações clinicamente úteis, porém permanece **manuscrito em revisão**. Para considerar “aprovada”, validar terminologia pelo especialista, confrontar cronograma com as aulas 211–215, resolver pendências de fontes brasileiras, incorporar somente imagens originais/licenciadas e executar auditorias do repositório. Não inflar texto artificialmente para cumprir tamanho numérico."
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240077263",
+    "https://www.nice.org.uk/guidance/cg103/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/cg103/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.who.int/publications/i/item/9789241549790",
+    "https://icd.who.int/browse/2025-01/mms/en"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Pulo do Gato LURIA:** *sintoma*, *sinal*, *síndrome* e *diagnóstico* não são a mesma coisa. “Ouvir vozes” descreve experiência perceptiva, não confirma esquizofrenia; “ficar triste” não confirma transtorno depressivo; “inquietação” não prova ansiedade primária; **desatenção flutuante e mudança aguda de consciência sugerem delirium**, cuja causa orgânica precisa ser investigada. Em risco de suicídio ou agitação, **segurança e avaliação clínica precedem classificação diagnóstica refinada**."
+    },
+    {
+      "text": "**Inventário LURIA:** a aula 210 é planejada como base da sequência **211 depressão/risco de suicídio, 212 bipolaridade/mania, 213 ansiedade/TOC/trauma, 214 transtornos psicóticos e 215 emergências psiquiátricas/farmacologia**. Para não duplicar, esta apostila ensina linguagem e exame psicopatológico, diagnóstico diferencial sindrômico, vínculo e urgências orgânicas; decisões farmacológicas por transtorno ficarão nas aulas específicas. A abordagem de delirium se articula com clínica médica, emergência, geriatria e UTI, sem substituir esses módulos."
+    },
+    {
+      "text": "**Base internacional primária e limites de licença:** - **OMS, 2024:** *Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR)*, manual de categorias diagnósticas e limites entre normalidade e doença. https://www.who.int/publications/i/item/9789240077263 . **O manual é sujeito a licença CC BY-NC-ND IGO**, incompatível com reprodução/adaptação comercial sem autorização; aqui será utilizado **apenas como referência conceitual externa**, produzindo texto didático novo, sem transcrever capítulos, critérios extensos ou imagens. - **NICE CG103:** *Delirium: prevention, diagnosis and "
+    },
+    {
+      "text": "Ao estudar esta aula, o aluno deve conseguir: 1. Diferenciar sofrimento psíquico, sintoma isolado, síndrome e transtorno clínico com prejuízo funcional. 2. Construir entrevista empática, adaptada ao nível de consciência, capacidade e contexto cultural. 3. Realizar exame do estado mental (EEM) estruturado: aparência, comportamento, atividade psicomotora, consciência, atenção, orientação, memória, linguagem, humor/afeto, pensamento, percepção, juízo de realidade, insight e funções executivas. 4. Distinguir ilusões, alucinações, pseudoalucinações e experiências sensoriais em condições diversas sem absolutizar terminologia controversa. 5. Descrev"
+    },
+    {
+      "text": "A psicopatologia clínica descreve experiências subjetivas, comportamentos observáveis e alterações das funções mentais, considerando sofrimento, contexto, trajetória e possível mecanismo. **Sintoma** é experiência relatada, como “pensamentos que chegam sem querer” ou “vozes quando estou sozinho”. **Sinal** é achado observável, como agitação, fala pressionada, desorientação ou lentificação psicomotora. **Síndrome** reúne manifestações que tendem a ocorrer juntas, como conjunto depressivo ou psicótico. **Diagnóstico** requer integrar duração, gravidade, alteração funcional, exclusões e critérios válidos para classificar doença."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

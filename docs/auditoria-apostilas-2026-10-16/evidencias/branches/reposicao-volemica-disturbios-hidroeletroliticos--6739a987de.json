@@ -1,0 +1,134 @@
+{
+  "sha": "6739a987de18666c4b59acb283a42e3250f88697",
+  "path": "apostilas/reposicao-volemica-disturbios-hidroeletroliticos/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "reposicao-volemica-disturbios-hidroeletroliticos--6739a987de",
+  "title": "Reposição Volêmica e Distúrbios Hidroeletrolíticos no Paciente Cirúrgico",
+  "format": ".json",
+  "chars_estimated": 87045,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Fluidos e eletrólitos no paciente cirúrgico: tratar a fisiologia, não o número"
+    },
+    {
+      "id": "fisiologia",
+      "title": "1. Compartimentos, tonicidade, ADH e distribuição dos líquidos"
+    },
+    {
+      "id": "avaliacao",
+      "title": "2. Diagnóstico da volemia e da perfusão: exame clínico, responsividade e limites"
+    },
+    {
+      "id": "solucoes",
+      "title": "3. Escolha das soluções: cristaloides, água livre, salina hipertônica e coloides"
+    },
+    {
+      "id": "manutencao",
+      "title": "4. Manutenção, jejum e perdas extraordinárias: prescrição de 24 horas"
+    },
+    {
+      "id": "disnatremias",
+      "title": "5. Hiponatremia e hipernatremia: tonicidade, urgência e prevenção de sobrecorreção"
+    },
+    {
+      "id": "potassio",
+      "title": "6. Potássio perioperatório: hipocalemia, hipercalemia e o ECG"
+    },
+    {
+      "id": "outros-eletr",
+      "title": "7. Magnésio, cálcio e fósforo: os eletrólitos que mudam a resposta ao tratamento"
+    },
+    {
+      "id": "acidobase",
+      "title": "8. Distúrbios ácido-base na cirurgia: gasometria, ânion gap e compensação"
+    },
+    {
+      "id": "lra",
+      "title": "9. Lesão renal aguda e congestão pós-operatória"
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Cenários cirúrgicos particulares e erros de rotina"
+    },
+    {
+      "id": "algoritmo",
+      "title": "11. Algoritmo decisório, revisão por turnos e pérolas de prova"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos integradores — da alteração laboratorial à conduta"
+    },
+    {
+      "id": "questoes",
+      "title": "13. Questões autorais comentadas — 24 problemas de prova"
+    },
+    {
+      "id": "referencias",
+      "title": "14. Fontes, matriz de suficiência e estado editorial"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"14. Fontes, matriz de suficiência e estado editorial\"]",
+    "[\"3\",\"Fontes verificáveis de diretrizes e consensos\"]",
+    "[\"o\",[\"<a href=\\\"https://www.nice.org.uk/guidance/cg174/chapter/recommendations\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">NICE. Intravenous fluid therapy in adults in hospital (CG174): 5 Rs, avaliação, ressuscitação e manutenção. Consultado em 15/10/2026.</a>\",\"<a href=\\\"https://pubmed.ncbi.nlm.nih.gov/38771364/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Arabi YM et al. ESICM Clinical Practice Guideline: Fluid therapy in adult critically ill patients, Part 1 — choice of resuscitation fluids. Intensive Care Med. 2024;50:813–831. DOI:10.1007/s00134-024-07369-9.</a>\",\"<a href=\\\"https:/",
+    "[\"3\",\"Matriz: conceito → decisão → onde o aluno pratica\"]",
+    "[\"t\",[\"Competência\",\"Capítulo\",\"Caso / questão\"],[[\"5 Rs e plano de 24h\",\"Visão, 4 e 11\",\"Q1, Q5 e caso 1\"],[\"Cristaloides/hipercloremia\",\"3 e 8\",\"Q3–Q4, Q23, caso 9\"],[\"Reavaliação e responsividade\",\"2 e 11\",\"Q2, caso 1\"],[\"Vômitos/sonda/ileostomia\",\"4 e 10\",\"Casos 2 e 12, Q6 e Q21\"],[\"Hiponatremia aguda e crônica\",\"5\",\"Casos 3 e 4, Q7–Q9\"],[\"Hipernatremia e hiperglicemia\",\"5 e 10\",\"Casos 7 e 8, Q10\"],[\"Hipercalemia e segurança do K\",\"6\",\"Caso 5, Q11–Q12 e Q22\"],[\"Hipocalemia e magnésio\",\"6 e 7\",\"Caso 6, Q13\"],[\"Cálcio ionizado/transfusão\",\"7\",\"Q14\"],[\"Fósforo e realimentação\",\"7\",\"Caso 10, Q",
+    "[\"3\",\"Fronteiras com o currículo LURIA\"]",
+    "[\"p\",\"A apostila 007 (Cuidados Perioperatórios) cobre o cuidado de segurança amplo, prevenção de infecção/TEV, ERAS e recuperação. A 012 (Resposta Metabólica ao Trauma) aprofunda os mecanismos inflamatórios, endocrinológicos e catabólicos. A 017 cobre indicação, prescrição, interpretação e correção de fluidos/eletrólitos no paciente cirúrgico. O tema 022 abordará hemostasia e transfusão no choque hemorrágico. A diferenciação evita repetir os capítulos já existentes enquanto mantém os mecanismos indispensáveis para entender cada emergência.\"]",
+    "[\"3\",\"Comparação documental realizada na etapa zero\"]",
+    "[\"p\",\"Foram efetivamente lidos, no Google Drive do usuário, os PDFs '04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf' (4.793 caracteres extraídos), '08 - GASOMETRIA ARTERIAL - PARTE 2.pdf' (8.923), '02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf' (19.972) e '01 - INTENSIVA - POLITRAUMA E QUEIMADURAS.pdf' (26.658). Não foi encontrado documento único com cobertura equivalente à aula 017, e autoria institucional Estratégia MED não foi confirmada. Os documentos serviram apenas para verificar lacunas, sem copiar texto, tabelas, imagens ou identidade gráfica. Registro detalhado: `apostilas/lotes/TEMA_017_REPO",
+    "[\"3\",\"Cuidados com recomendações de outras regiões\"]",
+    "[\"p\",\"NICE CG174, ESICM 2024–2025, UKKA 2023 e diretriz europeia de hiponatremia 2014 são referências internacionais de contexto e não equivalem automaticamente a uma portaria brasileira ou ao protocolo específico de cada hospital. Doses e prioridades de emergência precisam ser adaptadas por anestesia, cirurgia, nefrologia/UTI e farmácia clínica, especialmente em KCl IV concentrado, salina 3%, cálcio IV e administração de insulina-glicose. A versão da diretriz, a qualidade da evidência e a população-alvo devem ser informadas antes de assumir universalidade.\"]",
+    "[\"3\",\"Pendências que impedem certificação/publicação\"]",
+    "[\"p\",\"Este arquivo é <strong>rascunho editorial</strong>, não prescrição assistencial individual. Revisar por cirurgião/anestesiologista e nefrologista independentes, conferir doses e concentração das apresentações disponíveis no Brasil, verificar o nível de evidência para fluido balanceado versus salina conforme subgrupo, testar os casos e questões com alunos, medir redundância semântica, conciliar com temas 007/012/022, validar interface responsiva e acessibilidade PWA e direitos autorais. Não criar `index.html`, não incluir imagens externas sem aprovação central no Admin, não publicar catál"
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/cg174/chapter/recommendations",
+    "https://pubmed.ncbi.nlm.nih.gov/38771364/",
+    "https://pubmed.ncbi.nlm.nih.gov/40163133/",
+    "https://www.esicm.org/resources/guidelines-consensus-statements/",
+    "https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+    "https://staging.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0",
+    "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+    "https://kdigo.org/guidelines/acute-kidney-injury/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "A prescrição de líquidos intravenosos é uma intervenção farmacológica: tem indicação, dose, composição, velocidade, monitorização, contraindicações e efeitos adversos. O mesmo litro de cristaloide pode melhorar perfusão em paciente hipovolêmico responsivo, precipitar edema pulmonar em insuficiência cardíaca ou aumentar distensão intestinal após cirurgia abdominal. O primeiro erro é perguntar 'qual soro usar?' antes de responder 'qual é a necessidade fisiológica e qual compartimento está alterado?'"
+    },
+    {
+      "section": "visao",
+      "text": "<strong>Segurança:</strong> volume, velocidade e reposição eletrolítica não devem ser aplicados como receita fixa; exigem diagnóstico, função renal, monitorização e protocolos da unidade. A hiponatremia grave sintomática e a hipercalemia com risco arrítmico são emergências. Quantidades mencionadas como exemplos de diretrizes não autorizam infusão sem avaliação e infraestrutura clínica adequadas."
+    },
+    {
+      "section": "fisiologia",
+      "text": "Quando glicose plasmática sobe muito, a água migra do intracelular ao extracelular e dilui sódio. Usam-se correções aproximadas de sódio de 1,6 a 2,4 mmol/L para cada aumento de glicose de 100 mg/dL acima de 100, dependentes da faixa de glicemia. A correção é estimativa, não substitui medir osmolaridade e avaliar necessidade de tratar distúrbio glicêmico. A aparente hiponatremia decorrente de hiperglicemia não deve receber automaticamente salina hipertônica como se fosse hipotonicidade grave."
+    },
+    {
+      "section": "avaliacao",
+      "text": "A NICE CG174 recomenda abordagem ABCDE na ressuscitação e reavaliação contínua de perfusão e sinais vitais; pacientes em fluidoterapia requerem plano escrito e monitorização de eletrólitos, ureia, creatinina, balanço e peso. Exame após transferência de setor pode encontrar sobrecarga ou novo sangramento não reconhecido pela equipe anterior. A monitorização deve corresponder ao risco: paciente estável em manutenção pode ser revisto diariamente; em choque, reavaliação é contínua."
+    },
+    {
+      "section": "solucoes",
+      "text": "Em traumatismo cranioencefálico, a ESICM 2024 faz recomendação condicional a favor de salina isotônica em relação a balanceados, devido a considerações de tonicidade e evidência disponível. Isso impede a afirmação didática 'Ringer lactato é sempre o melhor cristalóide para todos os pacientes'. A composição específica do produto deve ser conferida no rótulo, e sua osmolaridade/titulação precisa ser interpretada em contexto neurológico e renal."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

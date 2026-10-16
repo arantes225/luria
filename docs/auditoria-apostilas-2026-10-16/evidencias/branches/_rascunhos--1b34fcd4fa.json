@@ -1,0 +1,135 @@
+{
+  "sha": "1b34fcd4fa9a5e631fae9ff9c92792c9ec9793e6",
+  "path": "apostilas/_rascunhos/lote-06-126-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1b34fcd4fa",
+  "title": "Lote 06 — Tema 126: Cirrose e Complicações",
+  "format": ".md",
+  "chars_estimated": 16274,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — Tema 126: Cirrose e Complicações"
+    },
+    {
+      "title": "Etapa zero: acervo LURIA"
+    },
+    {
+      "title": "Drive: benchmark efetivamente aberto e lido antes da produção"
+    },
+    {
+      "title": "Correções críticas detectadas no comparativo"
+    },
+    {
+      "title": "Fontes externas confirmadas para consulta e citações"
+    },
+    {
+      "title": "Matriz de abrangência"
+    },
+    {
+      "title": "Bloqueios"
+    },
+    {
+      "title": "Etapa 2 — texto integral, conversão técnica e QA estrutural (15/10/2026)"
+    },
+    {
+      "title": "Teste preliminar de autossuficiência por questão"
+    },
+    {
+      "title": "Contas básicas recalculadas"
+    },
+    {
+      "title": "Principais ganhos científicos da redação"
+    },
+    {
+      "title": "Pendências bloqueantes de publicação"
+    },
+    {
+      "title": "Atualização de referência — Baveno VIII (2026)"
+    },
+    {
+      "title": "Revisão técnica de 15/10/2026 — Baveno VIII, EASL CHC e sincronização"
+    },
+    {
+      "title": "Atualizações médicas com fonte primária"
+    },
+    {
+      "title": "Artefatos e integridade"
+    },
+    {
+      "title": "Matriz de autossuficiência preliminar (apenas cobertura lexical)"
+    },
+    {
+      "title": "Pendências que bloqueiam certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. **Baveno VII, 2022**: https://pubmed.ncbi.nlm.nih.gov/35120736/ . Hipertensão portal clinicamente significativa e profilaxia de descompensação.",
+    "2. **AASLD 2024, hipertensão portal/varizes**: https://doi.org/10.1097/HEP.0000000000000647 e https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis .",
+    "3. **ADQI–ICA 2024, lesão renal aguda e HRS-AKI**: https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/ .",
+    "4. **EASL 2022, encefalopatia hepática**: https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext .",
+    "5. **AASLD 2024, ambulatório e CHC**: https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis .",
+    "6. **AASLD, albumina e PBE**: https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis .",
+    "7. **Sociedade Brasileira de Hepatologia, manuais e consensos**: https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/ . Conferir cronologia das recomendações antigas.",
+    "8. **IMIP 2025, protocolo institucional brasileiro de complicações da cirrose**: https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf . Exemplo institucional, **não PCDT federal**.",
+    "- [ ] Texto didático suficiente, ≥60.000 caracteres úteis, sem duplicação artificial.",
+    "- [ ] Casos/questões com raciocínio e justificativas, cobertura por capítulos.",
+    "- [ ] Seleção de figuras clínicas com fonte/licença e aprovação do Admin.",
+    "- [ ] Revisão de hepatologista/nefrologista/farmacologista das doses, diagnósticos e atualizações 2026.",
+    "- [ ] JSON/HTML de prévia, scripts oficiais executados e inspeção desktop/PWA.",
+    "- [ ] Aprovação editorial explícita antes de publicar.",
+    "---",
+    "- \\`apostilas/_rascunhos/lote-06-126-cirrose-e-complicacoes.md\\`: **90.522 caracteres brutos**, 30 capítulos consecutivos, 8 casos clínicos, 12 questões e referências.",
+    "- \\`apostilas/_rascunhos/lote-06-126-build-input-preliminar.json\\`: **29 seções** de conteúdo (apresentação, corpo, casos e questões), **10 referências externas** e 0 imagens inseridas.",
+    "- \\`apostilas/_rascunhos/lote-06-126-preview.html\\`: prévia no modelo de \\`apostilas/vulvovaginites/index.html\\` com **30 seções** incluindo referências, **8 casos**, **12 questões** com A–D, **0 âncoras internas ausentes**, **0 IDs duplicados** e \\`noindex,nofollow\\`.",
+    "- \\`apostilas/_rascunhos/lote-06-126-imagens-candidatas-plano.json\\`: **10 pautas visuais** para localizar/verificar, **nenhuma ainda licenciada, aprovada ou embutida**. Planejamento visual não equivale a imagem selecionada.",
+    "**Extensão instrucional:** aproximadamente **60.535 caracteres** nos capítulos 1–26, com supressão simples de URLs e marcação Markdown básica; não conta casos, questões, referências ou controle. **Esta medida é só preliminar:** a prova de ≥60 mil caracteres realmente úteis, sem repetições semânticas, precisa de revisão humana.",
+    "**Resultado: 12/12** com cobertura preliminar. Foram checadas as 12 listas A–D; cada uma possui **exatamente 4 alternativas semânticas**. Os casos e as questões são casos fictícios para ensino, não eventos reais.",
+    "- PMN da questão 3: 900 leucócitos × 35% = **315 PMN/µL**.",
+    "- GASA da questão 2: 3,1 − 1,2 = **1,9 g/dL**.",
+    "- Albumina da questão 4: 7 litros × 8 g/L = **56 g**.",
+    "- LRA da questão 5: 0,8 → 1,3 mg/dL = aumento **0,5 mg/dL** em 48 h.",
+    "- PBE no exemplo de 70 kg: dia 1, 70 × 1,5 = **105 g**; dia 3, 70 × 1,0 = **70 g**.",
+    "- As contas acima passaram na revisão numérica. A pertinência médica dos esquemas e a validade de cada alternativa **ainda demandam revisão especializada**.",
+    "- Documento histórico de benchmark do Drive exigia albumina por 48h na suspeita de HRS; o texto LURIA passou a explicar o consenso **ADQI–ICA 2024**, com avaliação de volemia, sem desafio compulsório e atenção ao risco respiratório da terlipressina/albumina.",
+    "- Separou GASA e proteína total para identificar mecanismos de ascite, sem equiparar gradiente alto a “transudato” de forma simplista.",
+    "- Diferenciou albumina de paracentese (>5 L, por litro) de albumina terapêutica da PBE (por kg nos dias 1 e 3)."
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/35120736/",
+    "https://doi.org/10.1097/HEP.0000000000000647",
+    "https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis",
+    "https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/",
+    "https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext",
+    "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+    "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis",
+    "https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/",
+    "https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- PMN da questão 3: 900 leucócitos × 35% = **315 PMN/µL**. - GASA da questão 2: 3,1 − 1,2 = **1,9 g/dL**. - Albumina da questão 4: 7 litros × 8 g/L = **56 g**. - LRA da questão 5: 0,8 → 1,3 mg/dL = aumento **0,5 mg/dL** em 48 h. - PBE no exemplo de 70 kg: dia 1, 70 × 1,5 = **105 g**; dia 3, 70 × 1,0 = **70 g**. - As contas acima passaram na revisão numérica. A pertinência médica dos esquemas e a validade de cada alternativa **ainda demandam revisão especializada**."
+    },
+    {
+      "text": "1. **Baveno VIII 2026, capítulo 6:** acrescentados critérios para primeira descompensação e nova descompensação, com definição de recompensação. **Diferença decisiva:** Baveno VIII exige manutenção dos critérios de recompensação **por mais de seis meses**, enquanto Baveno VII histórico usava doze meses; a etiologia precisa estar controlada, ascite e encefalopatia resolvidas **sem terapias específicas** e função hepática melhorada para Child A5/A6. 2. **Betabloqueadores (Baveno VIII):** carvedilol/NSBB em pacientes apropriados com ascite e varizes; redução ou suspensão quando PAS persistentemente <90 mmHg, PAM <65 mmHg ou HRS-AKI, com reavalia"
+    },
+    {
+      "text": "| Questão | Tema | Capítulo-base | | --- | --- | --- | | 1 | Definição de cirrose, lesão estrutural versus enzima elevada | 1, 5 | | 2 | GASA e proteína ascítica | 8 | | 3 | PMN absoluto e limiar de PBE | 10 | | 4 | Albumina após paracentese volumosa | 9 | | 5 | Diagnóstico atualizado HRS-AKI | 11 | | 6 | Lactulose, diarreia e segurança na EH | 12 | | 7 | Antibiótico/vasoativo antes de endoscopia na HDA varicosa | 13 | | 8 | PBE versus peritonite secundária | 10 | | 9 | Profilaxia após PBE versus primária | 10 | | 10 | INR na cirrose e risco de trombose | 15 | | 11 | CHC após cura de hepatite viral | 16 | | 12 | Ascite refratária, TIPS e ence"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

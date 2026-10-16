@@ -1,0 +1,490 @@
+{
+  "sha": "795f499ba9f52c8c02ef32e2533a350a6557ba09",
+  "path": "apostilas/_rascunhos/lote-06-124-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--795f499ba9",
+  "title": "Sangramento Uterino Anormal",
+  "format": ".html",
+  "chars_estimated": 100080,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "1. Emergência?"
+    },
+    {
+      "title": "2. Gravidez?"
+    },
+    {
+      "title": "3. Etiologia"
+    },
+    {
+      "title": "4. Tratamento"
+    },
+    {
+      "title": "1. Conceitos, terminologia e Sistema 1 da FIGO"
+    },
+    {
+      "title": "2. Fisiologia do sangramento menstrual: por que o endométrio para de sangrar?"
+    },
+    {
+      "title": "3. PALM — causas estruturais"
+    },
+    {
+      "title": "P — Pólipo endometrial ou endocervical"
+    },
+    {
+      "title": "A — Adenomiose"
+    },
+    {
+      "title": "L — Leiomioma uterino"
+    },
+    {
+      "title": "M — Malignidade e hiperplasia endometrial"
+    },
+    {
+      "title": "4. COEIN — causas não estruturais"
+    },
+    {
+      "title": "C — Coagulopatia"
+    },
+    {
+      "title": "O — Disfunção ovulatória"
+    },
+    {
+      "title": "E — Disfunção endometrial primária"
+    },
+    {
+      "title": "I — Causa iatrogênica"
+    },
+    {
+      "title": "N — Não classificada em outras categorias"
+    },
+    {
+      "title": "PALM-COEIN na prática: comparação e exemplos"
+    },
+    {
+      "title": "5. Avaliação inicial: primeiro segurança, depois etiologia"
+    },
+    {
+      "title": "Passo 1 — estabilidade hemodinâmica"
+    },
+    {
+      "title": "Passo 2 — excluir gestação"
+    },
+    {
+      "title": "Passo 3 — história que realmente muda probabilidade"
+    },
+    {
+      "title": "Passo 4 — exame"
+    },
+    {
+      "title": "6. Exames laboratoriais e de imagem"
+    },
+    {
+      "title": "Ultrassonografia transvaginal"
+    },
+    {
+      "title": "Sonohisterografia e histeroscopia"
+    },
+    {
+      "title": "Ressonância"
+    },
+    {
+      "title": "7. Quando investigar o endométrio?"
+    },
+    {
+      "title": "8. SUA agudo: abordagem de emergência"
+    },
+    {
+      "title": "Tratamento hormonal"
+    },
+    {
+      "title": "Ácido tranexâmico"
+    },
+    {
+      "title": "Quando partir para procedimento"
+    },
+    {
+      "title": "9. SUA crônico: escolher tratamento pelo mecanismo e pelo objetivo"
+    },
+    {
+      "title": "SIU-LNG"
+    },
+    {
+      "title": "Contraceptivos hormonais combinados"
+    },
+    {
+      "title": "Progestagênios"
+    },
+    {
+      "title": "Ácido tranexâmico"
+    },
+    {
+      "title": "AINEs"
+    },
+    {
+      "title": "10. Tratamento dirigido às causas estruturais"
+    },
+    {
+      "title": "Pólipo"
+    },
+    {
+      "title": "Mioma submucoso"
+    },
+    {
+      "title": "Adenomiose"
+    },
+    {
+      "title": "Hiperplasia/câncer"
+    },
+    {
+      "title": "11. Adolescência: pense em anovulação, mas não esqueça coagulopatia"
+    },
+    {
+      "title": "12. Perimenopausa: anovulação é comum, câncer não pode ser presumido ausente"
+    },
+    {
+      "title": "13. Coagulopatias e anticoagulação"
+    },
+    {
+      "title": "Doença de von Willebrand"
+    },
+    {
+      "title": "Anticoagulantes"
+    },
+    {
+      "title": "14. Anemia, ferro e seguimento"
+    },
+    {
+      "title": "Medir resposta e recuperar reserva de ferro"
+    },
+    {
+      "title": "Atualização clínica: sistemas FIGO, biópsia e tomada de decisão"
+    },
+    {
+      "title": "Sistema 1 descreve; Sistema 2 PALM-COEIN explica"
+    },
+    {
+      "title": "Gravidez e estabilidade são verificadas antes de aplicar PALM-COEIN"
+    },
+    {
+      "title": "Não aplicar um limiar universal de espessura endometrial à pré-menopausa"
+    },
+    {
+      "title": "Atualização terapêutica: segurança, fertilidade e objetivos reais"
+    },
+    {
+      "title": "Agudo: controlar perda e revisar contraindicações"
+    },
+    {
+      "title": "Crônico: SIU-LNG e outras opções dependem de cavidade e escolha"
+    },
+    {
+      "title": "Adolescente, perimenopausa e desejo gestacional"
+    },
+    {
+      "title": "Investigação especializada: da história ao diagnóstico etiológico"
+    },
+    {
+      "title": "1. Quantificar o impacto menstrual sem reduzir a pessoa a mililitros"
+    },
+    {
+      "title": "2. Laboratório por hipótese: hemograma e ferritina, depois etiologia"
+    },
+    {
+      "title": "3. Quando a ultrassonografia transvaginal resolve e quando não resolve"
+    },
+    {
+      "title": "4. Subtipos de leiomioma e o que muda para a cavidade"
+    },
+    {
+      "title": "5. Amostra endometrial insuficiente e doença focal"
+    },
+    {
+      "title": "Seguimento integrado: anemia, anticoagulação, fertilidade e resposta"
+    },
+    {
+      "title": "6. Duas doenças ao mesmo tempo: sangramento e deficiência de ferro"
+    },
+    {
+      "title": "7. Anticoagulante, anticoagulação e sangramento de escape: não simplificar"
+    },
+    {
+      "title": "8. Resposta insatisfatória: verificar adesão, mecanismo e nova patologia"
+    },
+    {
+      "title": "9. Antes de um procedimento definitivo, discutir o que será perdido e preservado"
+    },
+    {
+      "title": "10. Comunicação de risco: sintoma, causa e decisão não são sinônimos"
+    },
+    {
+      "title": "Complemento avançado: diagnóstico por padrão clínico, risco e exame adequado"
+    },
+    {
+      "title": "A. SUA agudo em pessoa com possibilidade de gestação: a primeira bifurcação é outra"
+    },
+    {
+      "title": "B. Quatro apresentações que orientam a primeira hipótese"
+    },
+    {
+      "title": "C. Ultrassom, histeroscopia e histologia não respondem à mesma pergunta"
+    },
+    {
+      "title": "D. Exames laboratoriais dirigidos e armadilhas na anemia"
+    },
+    {
+      "title": "Complemento avançado: condutas de alto risco e segurança de tratamentos"
+    },
+    {
+      "title": "A. Sangramento agudo intenso: decisão paralela e comunicação entre especialidades"
+    },
+    {
+      "title": "B. Sangramento associado à anticoagulação: risco duplo"
+    },
+    {
+      "title": "C. Sangramento depois de gestação ou instrumentação: cuidado com vascularização anormal"
+    },
+    {
+      "title": "D. Miomas e desejo de gravidez: a localização importa mais que o maior diâmetro isolado"
+    },
+    {
+      "title": "E. Controle de ferro e monitoramento após conter o fluxo"
+    },
+    {
+      "title": "Complemento avançado: adolescência, perimenopausa e decisões compartilhadas"
+    },
+    {
+      "title": "A. Adolescente com sangramento desde a menarca"
+    },
+    {
+      "title": "B. Perimenopausa: nem tudo é hormonal ou benigno"
+    },
+    {
+      "title": "C. Mulher com deficiência de ferro e alta tolerância ao sofrimento"
+    },
+    {
+      "title": "D. Autonomia e decisões que dependem da paciente"
+    },
+    {
+      "title": "15. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — 17 anos, sangramento intenso desde a menarca"
+    },
+    {
+      "title": "Caso 2 — 32 anos, SOP, ciclos de 60–90 dias"
+    },
+    {
+      "title": "Caso 3 — 39 anos, fluxo intenso e mioma submucoso"
+    },
+    {
+      "title": "Caso 4 — 47 anos, obesidade, sangramento irregular há 8 meses"
+    },
+    {
+      "title": "Caso 5 — 28 anos, hemorragia aguda, estável, β-hCG negativo"
+    },
+    {
+      "title": "Caso 6 — 36 anos, sangramento agudo e Doppler com vascularização serpiginosa de alta velocidade"
+    },
+    {
+      "title": "Caso 7 — 34 anos, sangramento intenso, anticoncepcional combinado e trombose prévia"
+    },
+    {
+      "title": "Caso 8 — 52 anos, sangramento persistente e amostra endometrial insuficiente"
+    },
+    {
+      "title": "Questões autorais comentadas — SUA, FIGO e conduta"
+    },
+    {
+      "title": "Questão 1 — PALM-COEIN e gravidez"
+    },
+    {
+      "title": "Questão 2 — FIGO Systems 1 e 2"
+    },
+    {
+      "title": "Questão 3 — Mioma incidental"
+    },
+    {
+      "title": "Questão 4 — SUA na adolescente"
+    },
+    {
+      "title": "Questão 5 — Biópsia endometrial"
+    },
+    {
+      "title": "Questão 6 — SUA agudo e instabilidade"
+    },
+    {
+      "title": "Questão 7 — SIU-LNG e cavidade"
+    },
+    {
+      "title": "Questão 8 — Anticoagulante e SUA"
+    },
+    {
+      "title": "Questão 9 — Ablação endometrial e fertilidade"
+    },
+    {
+      "title": "Questão 10 — MAV uterina e curetagem"
+    },
+    {
+      "title": "Questão 11 — Anemia no SUA"
+    },
+    {
+      "title": "Questão 12 — Pólipo sintomático e desejo reprodutivo"
+    },
+    {
+      "title": "16. Revisão de alto rendimento"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "PALM: entidades distintas"
+    },
+    {
+      "title": "COEIN: mecanismos diferentes"
+    },
+    {
+      "title": "17. Fisiologia, diagnóstico etiológico e decisões terapêuticas: integração aprofundada"
+    },
+    {
+      "title": "17.1 Como a menstruação normal termina: hemostasia e reparação endometrial"
+    },
+    {
+      "title": "17.2 Fisiopatologia da anovulação: por que o ciclo pode ser espaçado e o sangramento intenso"
+    },
+    {
+      "title": "17.3 Sistema FIGO 1 antes do PALM-COEIN: descrever a queixa para depois atribuir a causa"
+    },
+    {
+      "title": "17.4 O mioma que sangra não é necessariamente o maior mioma"
+    },
+    {
+      "title": "17.5 Adenomiose: o mecanismo de dor e sangramento é diferente do leiomioma"
+    },
+    {
+      "title": "17.6 História hemorrágica e hemostasia sistêmica: identificando coagulopatias"
+    },
+    {
+      "title": "17.7 Exames e amostragem endometrial: como evitar falsa tranquilização"
+    },
+    {
+      "title": "17.8 Tratamento guiado pelo mecanismo e pelos objetivos da paciente"
+    },
+    {
+      "title": "17.9 Casos comentados: aprender a não fechar o diagnóstico cedo demais"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Pólipo, adenomiose e mioma não são sinônimos"
+    },
+    {
+      "title": "Hiperplasia e câncer endometrial"
+    },
+    {
+      "title": "COEIN em profundidade"
+    },
+    {
+      "title": "Tratamento guiado por estabilidade e intenção"
+    },
+    {
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas"
+    },
+    {
+      "title": "Pólipo, adenomiose e mioma"
+    },
+    {
+      "title": "Hiperplasia e malignidade"
+    },
+    {
+      "title": "Coagulopatia e ovulação"
+    },
+    {
+      "title": "Tratamento por urgência e objetivo"
+    },
+    {
+      "title": "Referências essenciais"
+    },
+    {
+      "title": "Referências atualizadas (2021–2023)"
+    }
+  ],
+  "reference_entries": [
+    "FEBRASGO. Sangramento uterino anormal. Femina. 2026;54(3):227–235. Protocolo nº 80, 2026.",
+    "FEBRASGO. Sangramento uterino anormal. Protocolo nº 28, 2021.",
+    "FEBRASGO. Diagnóstico e tratamento de sangramento uterino anormal agudo. Protocolo nº 80, 2021.",
+    "Munro MG et al. FIGO. PALM-COEIN classification system for causes of abnormal uterine bleeding.",
+    "Fraser IS et al. FIGO recommendations on terminologies and definitions for normal and abnormal uterine bleeding.",
+    "ACOG. Management of Acute Abnormal Uterine Bleeding in Nonpregnant Reproductive-Aged Women.",
+    "ACOG. Screening and Management of Bleeding Disorders in Adolescents With Heavy Menstrual Bleeding.",
+    "NICE. Heavy menstrual bleeding: assessment and management (NG88).",
+    "Ministério da Saúde. Portaria SCTIE/MS nº 101, de 8 de janeiro de 2026 — incorporação de ácido tranexâmico e DIU-LNG para leiomioma com sangramento intenso em indicações específicas.",
+    "Secretaria de Saúde do Distrito Federal. Protocolo de Sangramento Uterino Anormal.",
+    "FIGO. Contemporary evaluation of women and girls with abnormal uterine bleeding: Systems 1 and 2 (2023).",
+    "FIGO. The ovulatory disorders classification system (2022).",
+    "NICE NG88. Heavy menstrual bleeding: assessment and management (updated 2021).",
+    "ACOG CO557. Management of acute abnormal uterine bleeding in nonpregnant reproductive-aged women (2013)."
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov;",
+    "https://upload.wikimedia.org/wikipedia/commons/7/76/05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+    "https://commons.wikimedia.org/wiki/File:05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+    "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ03Z2026Z5.pdf",
+    "https://doi.org/10.1002/ijgo.14946",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women",
+    "https://www.nice.org.uk/guidance/ng88/chapter/recommendations",
+    "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/ijgo.14331"
+  ],
+  "embedded_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+      "alt": "Imagem endoscópica real mostrando pólipo do corpo uterino antes da remoção"
+    }
+  ],
+  "samples": [
+    {
+      "text": "O Sangramento Uterino Anormal é uma descrição clínica, não um diagnóstico etiológico. Ele engloba alterações do sangramento originado no corpo uterino em pessoas não grávidas. A nomenclatura moderna substitui expressões vagas como “hemorragia uterina disfuncional”, “menorragia” e “metrorragia” por descrições do padrão de sangramento e pela causa quando conhecida."
+    },
+    {
+      "text": "Suspeitar em sangramento persistente, irregular ou recorrente, sobretudo com idade ≥45 anos ou fatores de risco como obesidade, SOP/anovulação crônica, diabetes, síndrome de Lynch e tamoxifeno. Em menores de 45 anos, amostragem pode ser indicada por risco elevado, persistência ou falha do tratamento. A ultrassonografia identifica alterações e lesões, mas não substitui biópsia indicada; o ponto de corte endometrial usado em sangramento pós-menopausa não deve ser extrapolado sem crítica para mulheres menstruadas."
+    },
+    {
+      "text": "Em geral ciclos com intervalo previsível, mas volume menstrual anormalmente elevado; exame e ultrassom podem não revelar lesão causadora. Não há teste laboratorial específico que confirme AUB-E: o diagnóstico resulta de avaliação clínica e exclusão criteriosa de causas concorrentes, incluindo gravidez e coagulopatias quando suspeitas."
+    },
+    {
+      "text": "Aconselhamento, ajuste/troca do método ou tratamento temporário podem resolver, respeitando contraindicações. Em anticoagulação, não suspender medicação essencial por conta própria; discutir com equipe responsável. Avaliar anemia e preferência da paciente."
+    },
+    {
+      "text": "Se houver suspeita de lesão vascular, evitar curetagem às cegas até esclarecimento diagnóstico, pois pode precipitar hemorragia. Encaminhar conforme gravidade para imagem especializada e abordagem multidisciplinar. O tratamento de istmocele considera sintomas, espessura miometrial residual e desejo gestacional."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

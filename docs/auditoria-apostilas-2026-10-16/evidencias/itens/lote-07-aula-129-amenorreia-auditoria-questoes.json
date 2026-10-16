@@ -1,0 +1,148 @@
+{
+  "key": "lote-07-aula-129-amenorreia-auditoria-questoes",
+  "kind": "complemento-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-129-amenorreia-auditoria-questoes.md",
+  "title": "LURIA — LOTE 07 | AULA 129",
+  "source_sha256": "66cdf2a8e4fea113b5e2de4b28add2969a60eb3570b300bea29d40c59c17d0b4",
+  "chars_estimated": 12978,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — LOTE 07 | AULA 129",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Amenorreia — auditoria de cobertura e complemento de questões",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "1. Auditoria inicial do que já existe",
+      "level": 2
+    },
+    {
+      "line": 16,
+      "title": "2. Etapa zero — comparativos efetivamente reabertos",
+      "level": 2
+    },
+    {
+      "line": 22,
+      "title": "3. Ajustes clínicos prioritários à luz da ASRM 2024",
+      "level": 2
+    },
+    {
+      "line": 24,
+      "title": "3.1. Não esqueça gestação, incluindo teste falso-negativo muito precoce",
+      "level": 3
+    },
+    {
+      "line": 27,
+      "title": "3.2. Ausência de menarca: mamas e útero orientam mais que painel indiscriminado",
+      "level": 3
+    },
+    {
+      "line": 30,
+      "title": "3.3. FSH/E2 interpretados como conjunto",
+      "level": 3
+    },
+    {
+      "line": 33,
+      "title": "3.4. Prolactina: não converter alteração discreta em tumor imediatamente",
+      "level": 3
+    },
+    {
+      "line": 36,
+      "title": "3.5. Amenorreia hipotalâmica funcional: a causa é déficit energético, não apenas baixo peso",
+      "level": 3
+    },
+    {
+      "line": 39,
+      "title": "3.6. Causas uterinas e de saída",
+      "level": 3
+    },
+    {
+      "line": 42,
+      "title": "4. Oito questões autorais com justificativa de todas as alternativas",
+      "level": 2
+    },
+    {
+      "line": 44,
+      "title": "Questão 1 — passo inicial da amenorreia secundária",
+      "level": 3
+    },
+    {
+      "line": 52,
+      "title": "Questão 2 — ausência de útero e mamas presentes",
+      "level": 3
+    },
+    {
+      "line": 60,
+      "title": "Questão 3 — FSH e E2",
+      "level": 3
+    },
+    {
+      "line": 68,
+      "title": "Questão 4 — padrão central",
+      "level": 3
+    },
+    {
+      "line": 76,
+      "title": "Questão 5 — prolactina moderadamente elevada",
+      "level": 3
+    },
+    {
+      "line": 84,
+      "title": "Questão 6 — obstrução de saída",
+      "level": 3
+    },
+    {
+      "line": 92,
+      "title": "Questão 7 — síndrome de Asherman",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "Questão 8 — gestação e hiperandrogenismo",
+      "level": 3
+    },
+    {
+      "line": 108,
+      "title": "5. Plano de integração com o HTML original",
+      "level": 2
+    },
+    {
+      "line": 116,
+      "title": "6. Fontes",
+      "level": 2
+    }
+  ],
+  "references": [],
+  "external_links": [
+    {
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/current-evaluation-of-amenorrhea/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 0,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Situação:** COMPLEMENTO EM RASCUNHO, NÃO INCORPORADO AO HTML PUBLICADO. **Arquivo original preservado:** \\`apostilas/amenorreia/index.html\\`. **Base científica:** ASRM *Current evaluation of amenorrhea* (2024), guideline de insuficiência ovariana prematura ASRM/ESHRE/IMS (2024), Endocrine Society (amenorreia hipotalâmica funcional), fontes brasileiras a conferir na edição final. **Data de conferência:** 14/10/2026.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Situação:** COMPLEMENTO EM RASCUNHO, NÃO INCORPORADO AO HTML PUBLICADO. **Arquivo original preservado:** \\`apostilas/amenorreia/index.html\\`. **Base científica:** ASRM *Current evaluation of amenorrhea* (2024), guideline de insuficiência ovariana prematura ASRM/ESHRE/IMS (2024), Endocrine Society (amenorreia hipotalâmica funcional), fontes brasileiras a conferir na edição final. **Data de conferência:** 14/10/2026."
+    },
+    {
+      "text": "Cobertura detectada: fisiologia do eixo hipotálamo-hipófise-ovários; amenorreia primária e secundária; presença de útero/mamas; Turner; síndrome de Kallmann/deficiência de GnRH; MRKH; insensibilidade completa aos andrógenos; obstrução do trato genital; hiperprolactinemia; amenorreia hipotalâmica funcional; insuficiência ovariana primária; SOP; sinéquias/Asherman; interpretação de FSH/E2; prova de progestagênio; terapia conforme causa. Também há seção de casos integradores e fixação em formato de perguntas curtas."
+    }
+  ]
+}

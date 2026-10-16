@@ -1,0 +1,341 @@
+{
+  "sha": "2923ab5e13e7293de49b8905ed0f8a9798defdd8",
+  "path": "apostilas/_rascunhos/lote-10-204-vasculites-pediatricas-kawasaki.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2923ab5e13",
+  "title": "LURIA | Apostila 204 — Vasculites pediátricas e doença de Kawasaki",
+  "format": ".md",
+  "chars_estimated": 86068,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 204 — Vasculites pediátricas e doença de Kawasaki"
+    },
+    {
+      "title": "0. Etapa zero e limites editoriais da presente versão"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "Mapa das quatro síndromes"
+    },
+    {
+      "title": "1. Bases fisiológicas: imunidade, sinovial, endotélio e coração"
+    },
+    {
+      "title": "1.1. O que é uma resposta inflamatória fisiológica?"
+    },
+    {
+      "title": "1.2. A membrana sinovial e o movimento normal"
+    },
+    {
+      "title": "1.3. O endotélio e a parede vascular"
+    },
+    {
+      "title": "1.4. Imunocomplexos e o rim"
+    },
+    {
+      "title": "1.5. Imunidade pós-estreptocócica"
+    },
+    {
+      "title": "2. A criança com dor articular: abordagem sindrômica segura"
+    },
+    {
+      "title": "2.1. Perguntas que mudam a primeira decisão"
+    },
+    {
+      "title": "2.2. Exame clínico dirigido"
+    },
+    {
+      "title": "2.3. Tabela dos principais diagnósticos diferenciais"
+    },
+    {
+      "title": "3. Artrite idiopática juvenil: definição e classificação clínica"
+    },
+    {
+      "title": "3.1. Critério sindrômico de partida"
+    },
+    {
+      "title": "3.2. Fenótipos com impacto na conduta"
+    },
+    {
+      "title": "3.3. Quadro clínico, crescimento e qualidade de vida"
+    },
+    {
+      "title": "3.4. Investigação inicial e interpretação dos exames"
+    },
+    {
+      "title": "3.5. Tratamento da AIJ: por fenótipo, risco e alvo"
+    },
+    {
+      "title": "3.6. Uveíte associada à AIJ"
+    },
+    {
+      "title": "3.7. Síndrome de ativação macrofágica (SAM)"
+    },
+    {
+      "title": "4. Doença de Kawasaki: raciocínio diagnóstico completo"
+    },
+    {
+      "title": "4.1. Definição, epidemiologia e por que importa"
+    },
+    {
+      "title": "4.2. A semiologia que realmente precisa ser entendida"
+    },
+    {
+      "title": "4.3. Kawasaki clássico e incompleto"
+    },
+    {
+      "title": "4.4. Exames e interpretação do risco coronariano"
+    },
+    {
+      "title": "4.5. Diagnósticos diferenciais decisivos"
+    },
+    {
+      "title": "4.6. Tratamento agudo e princípios de segurança"
+    },
+    {
+      "title": "4.7. O que a criança e a família precisam saber"
+    },
+    {
+      "title": "5. Vasculite por IgA: a síndrome cutâneo-articular-digestivo-renal"
+    },
+    {
+      "title": "5.1. Nomenclatura, epidemiologia e fundamentos"
+    },
+    {
+      "title": "5.2. Lesão vascular e apresentação clínica"
+    },
+    {
+      "title": "5.3. Diagnóstico: critérios de classificação e decisão clínica"
+    },
+    {
+      "title": "5.4. Por que a urina precisa ser medida repetidamente?"
+    },
+    {
+      "title": "5.5. Tratamento por gravidade"
+    },
+    {
+      "title": "5.6. Diagnósticos diferenciais da púrpura"
+    },
+    {
+      "title": "5.7. O que comunicar na alta?"
+    },
+    {
+      "title": "6. Febre reumática: autoimunidade pós-estreptocócica, não vasculite"
+    },
+    {
+      "title": "6.1. Por que este capítulo está na apostila 204?"
+    },
+    {
+      "title": "6.2. Fisiopatologia e dano valvar"
+    },
+    {
+      "title": "6.3. Manifestações maiores e menores nos critérios de Jones"
+    },
+    {
+      "title": "6.4. Como demonstrar infecção estreptocócica prévia?"
+    },
+    {
+      "title": "6.5. Como procurar cardite clínica e subclínica?"
+    },
+    {
+      "title": "6.6. Artrite e coréia: manifestações distintivas"
+    },
+    {
+      "title": "6.7. Tratamento agudo e prevenção secundária"
+    },
+    {
+      "title": "6.8. Comparar febre reumática com artrite pós-estreptocócica não reumática"
+    },
+    {
+      "title": "6.9. Duas armadilhas comuns de prova"
+    },
+    {
+      "title": "7. Quatro algoritmos clínicos úteis para o pronto atendimento"
+    },
+    {
+      "title": "Algoritmo A — criança com febre, rash e inflamação sistêmica"
+    },
+    {
+      "title": "Algoritmo B — criança com artrite"
+    },
+    {
+      "title": "Algoritmo C — púrpura não trombocitopênica"
+    },
+    {
+      "title": "Algoritmo D — suspeita de Kawasaki"
+    },
+    {
+      "title": "8. Quadro-mestre de exames: pedir, interpretar, agir"
+    },
+    {
+      "title": "9. Situações especiais e considerações de segurança"
+    },
+    {
+      "title": "9.1. Lactentes abaixo de seis meses"
+    },
+    {
+      "title": "9.2. Criança imunossuprimida"
+    },
+    {
+      "title": "9.3. Adolescentes"
+    },
+    {
+      "title": "9.4. Diferentes fenótipos cutâneos"
+    },
+    {
+      "title": "9.5. Falta de acesso a eco e specialist"
+    },
+    {
+      "title": "10. Complicações e prognóstico: o que muda a vida da criança?"
+    },
+    {
+      "title": "11. Pérolas de prova — raciocínio sem decoreba"
+    },
+    {
+      "title": "12. Casos clínicos comentados (oito cenários originais)"
+    },
+    {
+      "title": "Caso 1 — A menina que manca ao levantar e não reclama de dor intensa"
+    },
+    {
+      "title": "Caso 2 — AIJ sistêmica ou sepse? A ferritina e a plaqueta mudaram"
+    },
+    {
+      "title": "Caso 3 — Kawasaki clássico com sinais que surgiram em dias diferentes"
+    },
+    {
+      "title": "Caso 4 — Lactente com febre persistente, mas só dois sinais de Kawasaki"
+    },
+    {
+      "title": "Caso 5 — Púrpura nas pernas, tornozelos inchados e urina aparentemente normal"
+    },
+    {
+      "title": "Caso 6 — IgAV, dor abdominal desproporcional e sinais obstrutivos"
+    },
+    {
+      "title": "Caso 7 — Artrite migratória após faringite: o sopro não é obrigatório"
+    },
+    {
+      "title": "Caso 8 — O falso diagnóstico de AIJ: a articulação séptica"
+    },
+    {
+      "title": "13. Questões autorais comentadas (12 questões, estilo ENAMED/residência)"
+    },
+    {
+      "title": "Questão 1 — A criança com uveíte assintomática"
+    },
+    {
+      "title": "Questão 2 — SAM na AIJ sistêmica"
+    },
+    {
+      "title": "Questão 3 — Kawasaki incompleto"
+    },
+    {
+      "title": "Questão 4 — Imagem em Kawasaki"
+    },
+    {
+      "title": "Questão 5 — Tratamento inicial do Kawasaki"
+    },
+    {
+      "title": "Questão 6 — Púrpura típica e plaquetas normais"
+    },
+    {
+      "title": "Questão 7 — IgAV com dor abdominal grave"
+    },
+    {
+      "title": "Questão 8 — Corticosteroide e prevenção da nefrite na IgAV"
+    },
+    {
+      "title": "Questão 9 — Jones e ASLO"
+    },
+    {
+      "title": "Questão 10 — Artrite migratória e cardite subclínica"
+    },
+    {
+      "title": "Questão 11 — Tratamento da AIJ e erro de prescrição"
+    },
+    {
+      "title": "Questão 12 — A articulação aguda e muito dolorosa"
+    },
+    {
+      "title": "14. Exercícios de integração: resolva usando apenas este texto"
+    },
+    {
+      "title": "15. Proposta de dez figuras clínicas a pesquisar e submeter ao Admin"
+    },
+    {
+      "title": "16. Referências científicas verificáveis"
+    },
+    {
+      "title": "17. Auditoria interna do manuscrito e pendências antes de aprovar"
+    },
+    {
+      "title": "Checklist de revisão científica antes de publicação"
+    }
+  ],
+  "reference_entries": [
+    "1. **Brasil, Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas — Artrite Idiopática Juvenil, página oficial atualizada em **19/05/2026**. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-idiopatica-juvenil/view",
+    "2. **Jone P-N, Tremoulet A, Choueiter N, et al.** Update on Diagnosis and Management of Kawasaki Disease: A Scientific Statement From the American Heart Association. *Circulation*. 2024;150:e481–e500. DOI: **10.1161/CIR.0000000000001295**. https://pubmed.ncbi.nlm.nih.gov/39534969/",
+    "3. **American Heart Association.** Corrigenda da declaração Kawasaki publicada em 2025; conferir antes de reproduzir recomendações detalhadas sobre anticoagulação e antiagregação. DOI: 10.1161/CIR.0000000000001313 e 10.1161/CIR.0000000000001324.",
+    "4. **KDIGO.** Clinical Practice Guideline for the Management of Immunoglobulin A Nephropathy and IgA Vasculitis (IgAV), 2025. https://kdigo.org/guidelines/iga-nephropathy/",
+    "5. **Sociedade Brasileira de Pediatria.** Vasculite por IgA (púrpura de Henoch–Schönlein), Departamento de Reumatologia, atualização 2022. https://www.sbp.com.br/pediatria-para-familias/doencas/vasculite-por-iga-purpura-de-henoch-schonlein/",
+    "6. **Sociedade Brasileira de Pediatria.** Febre reumática, Departamento Científico de Reumatologia, atualização setembro de 2024. https://www.sbp.com.br/pediatria-para-familias/doencas/febre-reumatica/",
+    "7. **Centers for Disease Control and Prevention.** Clinical Guidance for Acute Rheumatic Fever, atualização agosto de 2025. https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/acute-rheumatic-fever.html",
+    "8. **American College of Rheumatology.** 2021 Guideline for the Treatment of Juvenile Idiopathic Arthritis: Therapeutic Approaches for Oligoarthritis, TMJ Arthritis, and Systemic AIJ. *Arthritis Care & Research*. 2022;74:521–537. DOI: 10.1002/acr.24853. https://pmc.ncbi.nlm.nih.gov/articles/PMC10124899/",
+    "9. **Sociedade Brasileira de Cardiologia.** Diretrizes brasileiras para diagnóstico, tratamento e prevenção da febre reumática. *Arquivos Brasileiros de Cardiologia*, documento clássico a interpretar com atualizações posteriores. https://www.scielo.br/j/abc/a/BgMJ45rh8cKSsHpK7bTbjwM/?lang=pt",
+    "10. **International Pediatric Nephrology Association / KDIGO.** Recomendações pediátricas sobre nefrite por vasculite IgA, conforme vínculo e atualizações do guia KDIGO 2025; consultar documentos originais antes de definir esquemas especializados de imunossupressão.",
+    "**Observação de método:** A existência da referência não certifica que todas as recomendações específicas estejam resolvidas na versão presente. Em divergência entre diretrizes, indicar população-alvo e adotar protocolo brasileiro vigente quando aplicável. Não inventar níveis de evidência ou fármacos aprovados pelo SUS sem consulta à versão normativa.",
+    "- Validar critérios exatos e intervalos da classificação Kawasaki incompleta e do seguimento coronariano na atualização AHA com erratas.",
+    "- Verificar detalhes de tratamento e acesso medicamentoso da AIJ no PCDT MS de maio de 2026, especialmente subtipos, faixa etária e imunização.",
+    "- Conferir diretrizes KDIGO/IPNA 2025 para critérios de nefrite IgA e intervalos de vigilância conforme gravidade.",
+    "- Conferir tabela de Jones com risco populacional, cardite subclínica e critérios de profilaxia secundária brasileiros.",
+    "- Revisar todas as doses, contraindicações e indicações de internação por pediatra/reumatologia e cardiologia pediátrica.",
+    "- Acrescentar imagens reais licenciadas via fila Admin, com descrição de achados em diversas tonalidades de pele.",
+    "- Confrontar texto com questões ENAMED representativas; para qualquer questão não resolúvel com este material, localizar lacuna no capítulo correto e completá-la, sem apêndice redundante.",
+    "- Manter este manuscrito como fonte editorial não publicada até a etapa zero, revisão médica, deduplicação e validação de desktop/PWA estarem concluídas."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-idiopatica-juvenil/view",
+    "https://pubmed.ncbi.nlm.nih.gov/39534969/",
+    "https://kdigo.org/guidelines/iga-nephropathy/",
+    "https://www.sbp.com.br/pediatria-para-familias/doencas/vasculite-por-iga-purpura-de-henoch-schonlein/",
+    "https://www.sbp.com.br/pediatria-para-familias/doencas/febre-reumatica/",
+    "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/acute-rheumatic-fever.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124899/",
+    "https://www.scielo.br/j/abc/a/BgMJ45rh8cKSsHpK7bTbjwM/?lang=pt"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Atualização clínica externa verificada:** PCDT brasileiro da AIJ, atualizado em maio de 2026; declaração AHA 2024 sobre Kawasaki e erratas de 2025; KDIGO 2025 para vasculite por IgA; SBP para vasculite por IgA e febre reumática, incluindo material de 2024; recomendações ACR para AIJ. Doses e imunomoduladores especializados exigem conferência final com o PCDT, idade, peso, função de órgãos e contexto assistencial."
+    },
+    {
+      "text": "Ao terminar a apostila, o aluno deve ser capaz de reconhecer e classificar sinovite em criança, separar doença inflamatória crônica de infecção osteoarticular, distinguir vasculite de vasos médios e de pequenos vasos, investigar febre persistente sem depender de um “teste de Kawasaki”, interpretar os achados decisivos de um ecocardiograma com escore Z, monitorar manifestações renais que podem ser clinicamente silenciosas e organizar a profilaxia secundária de febre reumática. A competência central não é recitar cinco diagnósticos; é **decidir o que precisa acontecer hoje para prevenir dano irreversível**."
+    },
+    {
+      "text": "Uma articulação agudamente dolorosa, com recusa de apoiar, febre e limitação importante de mobilização pode representar artrite séptica ou osteomielite. Há perigo de destruição cartilaginosa e bacteremia. Instabilidade circulatória, letargia, rash purpúrico disseminado em contexto de doença sistêmica e sinais de choque exigem emergência. O diagnóstico diferencial de sinovite não deve virar pretexto para adiar atendimento emergencial. A artrocentese e coleta microbiológica são decididas conforme articulação, possibilidade de realização e urgência; em sepse ou choque, antibiótico não deve aguardar procedimentos demorados."
+    },
+    {
+      "text": "**Armadilha:** melhora de dor com anti-inflamatório não distingue com segurança AIJ, febre reumática, quadro viral e, ocasionalmente, infecção parcialmente tratada. Raciocínio diagnóstico precisa de cronologia, exame e sinais de alarme."
+    },
+    {
+      "text": "AIJ é um grupo heterogêneo de artrites inflamatórias com início antes dos 16 anos e persistência de artrite por pelo menos seis semanas, depois de excluídas outras causas. A exigência temporal é uma ferramenta de definição/classificação e **não justifica retardar investigação e tratamento** de criança com sinovite importante. A evolução pode começar com uma ou poucas articulações e depois se expandir."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

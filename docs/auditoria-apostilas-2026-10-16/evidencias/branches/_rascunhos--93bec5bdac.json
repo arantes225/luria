@@ -1,0 +1,402 @@
+{
+  "sha": "93bec5bdacb4eec1b46c5703e9a54b0c4388262e",
+  "path": "apostilas/_rascunhos/lote-06-125-rastreamento-prevencao-quaternaria.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--93bec5bdac",
+  "title": "LURIA — Apostila 125: Rastreamento e Prevenção Quaternária",
+  "format": ".md",
+  "chars_estimated": 84553,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 125: Rastreamento e Prevenção Quaternária"
+    },
+    {
+      "title": "1. Rastreamento é intervenção em pessoas sem sintomas — e isso muda a ética"
+    },
+    {
+      "title": "1.1 Exame positivo não é diagnóstico final"
+    },
+    {
+      "title": "2. Rastreamento, diagnóstico precoce, vigilância e busca ativa"
+    },
+    {
+      "title": "2.1 Prevenção primária continua relevante"
+    },
+    {
+      "title": "3. Quando vale a pena rastrear: princípios de programas responsáveis"
+    },
+    {
+      "title": "3.1 Um diagnóstico precoce pode não modificar prognóstico"
+    },
+    {
+      "title": "3.2 Benefícios e danos precisam compartilhar denominadores"
+    },
+    {
+      "title": "4. Desempenho do teste em baixa prevalência: aplicando Bayes na APS"
+    },
+    {
+      "title": "4.1 Risco absoluto e risco relativo no aconselhamento"
+    },
+    {
+      "title": "4.2 Dois erros simétricos"
+    },
+    {
+      "title": "5. Riscos e eventos adversos: o percurso completo de rastreamento"
+    },
+    {
+      "title": "5.1 O denominador oculto: quem não chega ao tratamento"
+    },
+    {
+      "title": "5.2 Inclusão, acessibilidade e equidade"
+    },
+    {
+      "title": "6. SUS em 2026: rastreamento do câncer do colo do útero"
+    },
+    {
+      "title": "6.1 Mudança fundamental: teste molecular DNA-HPV primário"
+    },
+    {
+      "title": "6.2 Implementação territorial e cuidado individual"
+    },
+    {
+      "title": "6.3 Evitando excesso e deficiência simultaneamente"
+    },
+    {
+      "title": "7. SUS em 2026: mamografia e câncer de mama"
+    },
+    {
+      "title": "7.1 Critério do programa populacional e acesso por demanda"
+    },
+    {
+      "title": "7.2 Mamografia não é prova de ausência de câncer"
+    },
+    {
+      "title": "7.3 Danos e escolhas"
+    },
+    {
+      "title": "8. SUS em 2026: câncer colorretal e teste imunoquímico fecal"
+    },
+    {
+      "title": "8.1 FIT como estratégia de rastreamento"
+    },
+    {
+      "title": "8.2 O gargalo da colonoscopia"
+    },
+    {
+      "title": "9. Comparação operacional dos programas brasileiros recentes"
+    },
+    {
+      "title": "10. Rastreamento em outras condições: nem todo teste tem benefício líquido demonstrado"
+    },
+    {
+      "title": "10.1 Próstata: discussão individual, não número automático"
+    },
+    {
+      "title": "10.2 Tireoide: incidentalomas e microcarcinomas"
+    },
+    {
+      "title": "10.3 Câncer de ovário e marcadores"
+    },
+    {
+      "title": "10.4 Cardiovascular: fator de risco não é sempre “doença para rastrear”"
+    },
+    {
+      "title": "11. Quando a vigilância de alto risco não segue a recomendação populacional"
+    },
+    {
+      "title": "11.1 Descobrir risco alto não é sinônimo de solicitar teste imediatamente"
+    },
+    {
+      "title": "12. Como medir a qualidade de um programa sem confundir volume com benefício"
+    },
+    {
+      "title": "12.1 O problema dos indicadores intermediários"
+    },
+    {
+      "title": "12.2 Programa oportunístico versus organizado"
+    },
+    {
+      "title": "13. Prevenção quaternária: definição clínica e origem ética"
+    },
+    {
+      "title": "13.1 Por que a boa intenção pode causar dano"
+    },
+    {
+      "title": "13.2 A consulta orientada por valores"
+    },
+    {
+      "title": "14. Cascata diagnóstica: um exame fora de indicação pode multiplicar intervenções"
+    },
+    {
+      "title": "14.1 Decisão à frente da probabilidade"
+    },
+    {
+      "title": "14.2 Documentação de decisões de não rastrear"
+    },
+    {
+      "title": "15. Desprescrição e polifarmácia: prevenção quaternária no cuidado longitudinal"
+    },
+    {
+      "title": "15.1 Prevenção quaternária não é \"parar todos os remédios\""
+    },
+    {
+      "title": "15.2 Quando o paciente pede \"todos os exames\""
+    },
+    {
+      "title": "16. Incidentalomas e resultados limítrofes: trabalhar com incerteza sem transformar toda alteração em doença"
+    },
+    {
+      "title": "16.1 O efeito do limiar de doença"
+    },
+    {
+      "title": "17. Comunicação do risco e tomada de decisão compartilhada"
+    },
+    {
+      "title": "17.1 Aconselhamento de rastreio solicitado fora do protocolo"
+    },
+    {
+      "title": "17.2 Segurança da negativa e retorno"
+    },
+    {
+      "title": "18. Implementação de rastreamento organizado em uma UBS: fluxo de trabalho"
+    },
+    {
+      "title": "18.1 Ficha de alta utilidade no prontuário"
+    },
+    {
+      "title": "18.2 Um resultado positivo não localizado é evento de segurança"
+    },
+    {
+      "title": "19. Prevenção quaternária na atenção de pessoas idosas, crianças e pessoas com comorbidades"
+    },
+    {
+      "title": "19.1 Idoso frágil e horizonte temporal do benefício"
+    },
+    {
+      "title": "19.2 Crianças: rastrear risco, não colecionar exames"
+    },
+    {
+      "title": "19.3 Multimorbidade e prevenção centrada na pessoa"
+    },
+    {
+      "title": "20. Síntese operativa: perguntas de alto rendimento para prova e consultório"
+    },
+    {
+      "title": "21. Os vieses do rastreamento em profundidade: por que a evidência pode enganar"
+    },
+    {
+      "title": "21.1 Viés de voluntário saudável e comparação inadequada"
+    },
+    {
+      "title": "21.2 Lead-time, length-time e sobrediagnóstico são fenômenos diferentes"
+    },
+    {
+      "title": "21.3 Viés de contaminação e mudança do tratamento"
+    },
+    {
+      "title": "22. Falso positivo, falso negativo e discordância entre exame e clínica"
+    },
+    {
+      "title": "22.1 Um resultado indeterminado exige plano, não pânico"
+    },
+    {
+      "title": "22.2 Nódulo novo apesar de rastreamento negativo"
+    },
+    {
+      "title": "22.3 Resultado falso positivo pode afetar relações e trabalho"
+    },
+    {
+      "title": "23. Quando não fazer rastreamento: quatro tipos de justificativa muito diferentes"
+    },
+    {
+      "title": "23.1 Ausência de evidência de benefício"
+    },
+    {
+      "title": "23.2 Benefício esperado menor que o dano"
+    },
+    {
+      "title": "23.3 Benefício em outro grupo, não neste"
+    },
+    {
+      "title": "23.4 Falha de infraestrutura e oportunidade de melhora do sistema"
+    },
+    {
+      "title": "24. Comunicação de decisões difíceis: microcasos e formulações adequadas"
+    },
+    {
+      "title": "24.1 Pessoa ansiosa exige mais cuidado, não necessariamente mais exames"
+    },
+    {
+      "title": "24.2 Paciente com teste positivo precisa de cronograma concreto"
+    },
+    {
+      "title": "24.3 Tomada de decisão compartilhada envolve direito de recusar"
+    },
+    {
+      "title": "24.4 O médico que não sabe o risco absoluto deve admitir limitação"
+    },
+    {
+      "title": "25. Monitoramento e melhoria da qualidade na rede pública"
+    },
+    {
+      "title": "25.1 Pequeno ciclo de auditoria local"
+    },
+    {
+      "title": "25.2 Taxas brutas podem enganar"
+    },
+    {
+      "title": "25.3 Novos testes, novas responsabilidades"
+    },
+    {
+      "title": "25.4 O papel da evidência no planejamento e da prudência na execução"
+    },
+    {
+      "title": "26. Aplicação integrada: quem deve receber qual conduta na mesma semana"
+    },
+    {
+      "title": "26.1 Quadro comparativo de ações"
+    },
+    {
+      "title": "26.2 Como documentar benefício líquido"
+    },
+    {
+      "title": "27. Oito casos clínicos de rastreamento e prevenção quaternária"
+    },
+    {
+      "title": "Caso 1 — A mamografia de uma mulher de 43 anos sem sintomas"
+    },
+    {
+      "title": "Caso 2 — Sangramento pós-coital e DNA-HPV negativo anterior"
+    },
+    {
+      "title": "Caso 3 — FIT positivo em homem assintomático de 61 anos"
+    },
+    {
+      "title": "Caso 4 — Nódulo tireoidiano encontrado num \"check-up total\""
+    },
+    {
+      "title": "Caso 5 — Mamografia em pessoa muito frágil e expectativa de vida limitada"
+    },
+    {
+      "title": "Caso 6 — História de Lynch em parente: programa habitual pode ser insuficiente"
+    },
+    {
+      "title": "Caso 7 — Resultado alterado sem seguimento numa UBS"
+    },
+    {
+      "title": "Caso 8 — Mulher assintomática com 12 marcadores alterados no check-up"
+    },
+    {
+      "title": "28. Doze questões autorais comentadas — residência, ENAMED e APS"
+    },
+    {
+      "title": "Questão 1 — Rastreamento versus investigação diagnóstica"
+    },
+    {
+      "title": "Questão 2 — Rastreamento cervical brasileiro 2026"
+    },
+    {
+      "title": "Questão 3 — Mamografia no SUS após mudança de 2025"
+    },
+    {
+      "title": "Questão 4 — FIT positivo em assintomático"
+    },
+    {
+      "title": "Questão 5 — Lead-time"
+    },
+    {
+      "title": "Questão 6 — Sobrediagnóstico versus falso positivo"
+    },
+    {
+      "title": "Questão 7 — VPP na baixa prevalência"
+    },
+    {
+      "title": "Questão 8 — Pessoa de alto risco hereditário"
+    },
+    {
+      "title": "Questão 9 — Prevenção quaternária"
+    },
+    {
+      "title": "Questão 10 — Qualidade programática"
+    },
+    {
+      "title": "Questão 11 — Incidentaloma e cascata"
+    },
+    {
+      "title": "Questão 12 — Uso da recomendação de risco médio"
+    },
+    {
+      "title": "29. Referências científicas e normas brasileiras utilizadas"
+    },
+    {
+      "title": "30. Controle editorial e limites de uso"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Diretrizes Brasileiras para Rastreamento de Câncer de Colo de Útero — Parte I**, aprovação e atualização em agosto de 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view .",
+    "2. Ministério da Saúde. **Como funciona o rastreamento do câncer no SUS?** FAQ publicada em 28/04/2026, descrevendo DNA-HPV primário, 25–64 anos e 5 anos após negativo. https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do .",
+    "3. Ministério da Saúde / INCA. **Nota Técnica nº 626/2025**, mamografia populacional 50–74 anos bienal e acesso por demanda fora dessa faixa. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus .",
+    "4. Ministério da Saúde / INCA. **SUS inclui teste de alta tecnologia para rastreamento de câncer colorretal** (10/08/2026), FIT para 50–75 anos, bienal. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal .",
+    "5. Ministério da Saúde / INCA. **SUS adota novo exame para detectar câncer de intestino antes dos sintomas** (21/05/2026). https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-adota-novo-exame-para-detectar-cancer-de-intestino-antes-dos-sintomas .",
+    "6. UK National Screening Committee. **Principles of screening**, atualizado em julho de 2025. https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening .",
+    "7. UK National Screening Committee. **Informed choice**, atualizado em julho de 2025. https://www.gov.uk/guidance/principles-of-population-screening/informed-choice .",
+    "8. World Health Organization Regional Office for Europe. **Effectiveness of population-level cardiovascular screening programmes**, segunda edição, 2024. https://www.who.int/europe/publications/i/item/978-92-890-6088-2 .",
+    "9. Organização Mundial da Saúde. **Screening programmes: a short guide. Increase effectiveness, maximize benefits and minimize harm.** Documento de referência conceitual de rastreamento e dano. https://iris.who.int/handle/10665/330829 .",
+    "10. Sociedade e Ministério da Saúde no Brasil podem empregar recomendações diferentes para rastreamentos específicos. **Não confundir diretriz de sociedade, norma do programa SUS e disponibilidade territorial.** Verificar fonte oficial do exame no momento do atendimento.",
+    "- [x] Inventário de apostilas existentes e material do Drive sem copiar conteúdo privado.",
+    "- [x] Escopo complementar à apostila 120: rastreamento como programa, danos, vieses, SUS 2026 e prevenção quaternária.",
+    "- [x] Separação de investigação diagnóstica versus população assintomática.",
+    "- [x] Atualização de DNA-HPV, mamografia e FIT pelo Ministério da Saúde/INCA.",
+    "- [x] Oito casos clínicos originais e doze questões comentadas.",
+    "- [ ] Revisão técnica independente da interpretação das normas e das exceções de alto risco.",
+    "- [ ] Auditoria quantitativa de ≥60 mil caracteres **instrucionais únicos**, excluindo casos, questões, referências.",
+    "- [ ] Revisão de gramática, deduplicação semântica, gabaritos e autoexplicatividade.",
+    "- [ ] Diagramas autorais/figuras com fonte, licença e aprovação do Admin; não inserir imagens de origem não rastreada.",
+    "- [ ] Preparar JSON do gerador e HTML de prévia; executar validadores oficiais e verificar desktop/PWA.",
+    "- [ ] **RASCUNHO: NÃO PUBLICAR, NÃO FAZER MERGE/DEPLOY.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-adota-novo-exame-para-detectar-cancer-de-intestino-antes-dos-sintomas",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening",
+    "https://www.gov.uk/guidance/principles-of-population-screening/informed-choice",
+    "https://www.who.int/europe/publications/i/item/978-92-890-6088-2",
+    "https://iris.who.int/handle/10665/330829"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Rastreamento** é a aplicação planejada de um teste a pessoas que **não apresentam sinais ou sintomas sugestivos da doença-alvo**, para identificar indivíduos com maior probabilidade de condição subclínica e encaminhá-los para investigação confirmatória e, quando apropriado, tratamento. Ele é distinto de **diagnóstico precoce em pessoa sintomática**, investigação de um nódulo palpável, seguimento de doença já conhecida e vigilância de alto risco com protocolo específico. Essa distinção define quais populações, periodicidades, testes e benefícios são válidos."
+    },
+    {
+      "text": "A ética é especialmente exigente porque a iniciativa muitas vezes parte do sistema de saúde para pessoas que **se sentem saudáveis**. O programa precisa comprovar que a cadeia **convite → exame → confirmação → tratamento → seguimento** produz benefício global superior aos danos, custos e oportunidades perdidas. Um exame que detecta mais lesões não é necessariamente programa que salva mais vidas: pode antecipar diagnóstico, rotular doença indolente e gerar biópsias sem ganho real de saúde. Esse é o encontro entre rastreamento e **prevenção quaternária** — evitar dano produzido pela própria assistência."
+    },
+    {
+      "text": "| Situação | Quem recebe a intervenção? | Objetivo e caminho | | --- | --- | --- | | Rastreamento populacional | Assintomáticos em faixa elegível | Teste padronizado, confirmação, tratamento e seguimento | | Rastreamento oportunístico | Assintomáticos durante consulta por outro motivo | Oferecer teste conforme recomendação; menor organização pode gerar perdas e excessos | | Diagnóstico precoce | Pessoas com sinais ou sintomas | Acesso rápido à investigação e confirmação etiológica | | Vigilância de alto risco | Pessoas com predisposição genética, lesão prévia ou condição de risco definida | Protocolo próprio, às vezes diferente de rastreament"
+    },
+    {
+      "text": "A APS tem papel de **identificar elegíveis, verificar histórico, oferecer escolha informada, realizar/coletar quando habilitada, rastrear faltosos e navegar resultados positivos**. Um resultado alterado que não chega à colposcopia ou à colonoscopia é falha do percurso de rastreamento. O exame isolado não produz benefício se não há diagnóstico/terapia tempestivos."
+    },
+    {
+      "text": "Imagine dois grupos fictícios com câncer que levaria à morte aos 70 anos. Sem rastreamento, o tumor é diagnosticado aos 66; com exame antecipado, é diagnosticado aos 60. A sobrevida desde o diagnóstico sobe de 4 para 10 anos, mas a **idade da morte é a mesma**. Esse é o **viés de antecipação (lead-time)**. O desfecho “sobrevida em cinco anos entre diagnosticados” isoladamente é inadequado para estimar benefício de programa."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

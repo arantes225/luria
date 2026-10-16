@@ -1,0 +1,726 @@
+{
+  "key": "crescimento-intrauterino-reduzido-aumentado",
+  "kind": "apostila-html",
+  "path": "apostilas/crescimento-intrauterino-reduzido-aumentado/index.html",
+  "html_path": "apostilas/crescimento-intrauterino-reduzido-aumentado/index.html",
+  "title": "Crescimento intrauterino reduzido e aumentado",
+  "source_sha256": "317b407ecf78b5a77ceb5b0e210e8d2cddc290c01a1aa8fbce74bda8f9a5863d",
+  "html_sha256": "317b407ecf78b5a77ceb5b0e210e8d2cddc290c01a1aa8fbce74bda8f9a5863d",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H3",
+      "title": "Crescimento intrauterino reduzido: PIG e RCF",
+      "section": "resumo"
+    },
+    {
+      "tag": "H3",
+      "title": "Crescimento intrauterino aumentado: GIG e macrossomia",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Crescimento reduzido — conceitos que não podem ser confundidos",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Datação vem antes do percentil",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Crescimento reduzido — fisiopatologia",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Insuficiência placentária",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que primeiro o abdome fica pequeno?",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Redistribuição não é “proteção suficiente”",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Etiologia da restrição de crescimento",
+      "section": "causas"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Rastreamento e quando suspeitar",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Suspeite de RCF quando houver",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Ultrassonografia e investigação diagnóstica",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Biometria seriada",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Investigação etiológica dirigida",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Critérios Delphi/ISUOG para RCF",
+      "section": "delphi"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF precoce — <32 semanas",
+      "section": "delphi"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF tardia — ≥32 semanas",
+      "section": "delphi"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Doppler: como interpretar de verdade",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Sequência clássica da deterioração placentária",
+      "section": "doppler"
+    },
+    {
+      "tag": "H2",
+      "title": "8. RCF precoce",
+      "section": "rcf-precoce"
+    },
+    {
+      "tag": "H2",
+      "title": "9. RCF tardia",
+      "section": "rcf-tardia"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Manejo da RCF",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento segundo SMFM",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando resolver — esquema SMFM",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H3",
+      "title": "Corticoide e neuroproteção",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H3",
+      "title": "Via de parto",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso longitudinal de crescimento reduzido",
+      "section": "manejo-rcf"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Crescimento aumentado — GIG e macrossomia",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Conceitos",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Fisiopatologia: por que o feto fica grande?",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores de risco",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando suspeitar",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico ultrassonográfico e limitações",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Complicações",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Cesárea profilática",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Indução",
+      "section": "gig"
+    },
+    {
+      "tag": "H3",
+      "title": "Crescimento aumentado: uma pergunta diferente",
+      "section": "gig"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Crescimento aumentado — distocia de ombro",
+      "section": "distocia"
+    },
+    {
+      "tag": "H3",
+      "title": "Conduta inicial",
+      "section": "distocia"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — pequeno constitucional",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — RCF precoce grave",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — RCF tardia sutil",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — suspeita de macrossomia no diabetes",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "Decisões clínicas integradas: quando o percentil não basta",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "1. PIG e RCF não são sinônimos em todas as diretrizes",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Delphi precoce: o Doppler umbilical é uma pista decisiva",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "3. RCF tardia: acima do percentil 10 ainda pode haver falha de crescimento",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Artéria umbilical: diástole presente, ausente ou reversa não são equivalentes",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Cenários discordantes: CTG tranquilizadora com fluxo reverso",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "6. O peso estimado não é uma balança — cenário de macrossomia",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "7. Distocia de ombro: sequência segura, imagem e equipes treinadas",
+      "section": "decisoes-seriadas-rcf-gig-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Aprofundamento: crescimento fetal como marcador de função placentária",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Insuficiência placentária é uma doença vascular progressiva",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Redistribuição cerebral: adaptação, não “normalidade”",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF precoce e tardia são problemas diferentes",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Grande para a idade gestacional: tamanho e composição não são iguais",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Macrossomia e distocia de ombro: risco populacional ≠ previsão individual",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "section": "editorial-depth-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF e PIG: não confundir",
+      "section": "editorial-depth-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H3",
+      "title": "GIG e macrossomia",
+      "section": "editorial-depth-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Crescimento intrauterino reduzido — investigação e acompanhamento em profundidade",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.1 Crescimento constitucional e falha real de crescimento",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.2 Por que a datação correta muda completamente o resultado",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.3 Como a insuficiência placentária reduz aporte de nutrientes",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.4 Interpretando as artérias umbilicais sem tratar o Doppler como número mágico",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.5 Redistribuição cerebral: resposta compensatória, não garantia de segurança",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.6 Por que a RCF precoce não pode ser manejada como a RCF tardia",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.7 Um caso longitudinal de crescimento reduzido",
+      "section": "crescimento-reduzido-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Crescimento intrauterino aumentado — mecanismos e decisões em profundidade",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.1 Feto grande para idade gestacional não é sinônimo de macrossomia",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.2 A sequência metabólica da hiperglicemia materna ao crescimento fetal",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.3 Por que a estimativa ultrassonográfica tem limitações nos fetos maiores",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.4 Distócia de ombro: entender a mecânica sem supor previsibilidade perfeita",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.5 O que diabetes, indução e história obstétrica mudam na decisão",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.6 Caso clínico de crescimento aumentado",
+      "section": "crescimento-aumentado-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "section": "clinica-etiologia-2026-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF precoce: investigação etiológica e seguimento",
+      "section": "clinica-etiologia-2026-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H3",
+      "title": "RCF tardia: por que um Doppler umbilical normal não tranquiliza sempre",
+      "section": "clinica-etiologia-2026-crescimento-intrauterino-reduzido-aumentado"
+    },
+    {
+      "tag": "H3",
+      "title": "Macrossomia e distocia de ombro: antecipar sem superestimar",
+      "section": "clinica-etiologia-2026-crescimento-intrauterino-reduzido-aumentado"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1685
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Crescimento reduzido — conceitos que não podem ser confundidos",
+      "chars": 1088
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Crescimento reduzido — fisiopatologia",
+      "chars": 1309
+    },
+    {
+      "id": "causas",
+      "title": "3. Etiologia da restrição de crescimento",
+      "chars": 808
+    },
+    {
+      "id": "rastreamento",
+      "title": "4. Rastreamento e quando suspeitar",
+      "chars": 529
+    },
+    {
+      "id": "diagnostico",
+      "title": "5. Ultrassonografia e investigação diagnóstica",
+      "chars": 1204
+    },
+    {
+      "id": "delphi",
+      "title": "6. Critérios Delphi/ISUOG para RCF",
+      "chars": 864
+    },
+    {
+      "id": "doppler",
+      "title": "7. Doppler: como interpretar de verdade",
+      "chars": 1366
+    },
+    {
+      "id": "rcf-precoce",
+      "title": "8. RCF precoce",
+      "chars": 855
+    },
+    {
+      "id": "rcf-tardia",
+      "title": "9. RCF tardia",
+      "chars": 614
+    },
+    {
+      "id": "manejo-rcf",
+      "title": "10. Manejo da RCF",
+      "chars": 2400
+    },
+    {
+      "id": "gig",
+      "title": "11. Crescimento aumentado — GIG e macrossomia",
+      "chars": 4095
+    },
+    {
+      "id": "distocia",
+      "title": "12. Crescimento aumentado — distocia de ombro",
+      "chars": 671
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos clínicos integradores",
+      "chars": 1064
+    },
+    {
+      "id": "decisoes-seriadas-rcf-gig-2026",
+      "title": "Decisões clínicas integradas: quando o percentil não basta",
+      "chars": 8468
+    },
+    {
+      "id": "revisao",
+      "title": "14. Revisão de alto rendimento",
+      "chars": 1087
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "15. Aprofundamento: crescimento fetal como marcador de função placentária",
+      "chars": 3392
+    },
+    {
+      "id": "editorial-depth-crescimento-intrauterino-reduzido-aumentado",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 897
+    },
+    {
+      "id": "crescimento-reduzido-40k",
+      "title": "16. Crescimento intrauterino reduzido — investigação e acompanhamento em profundidade",
+      "chars": 11014
+    },
+    {
+      "id": "crescimento-aumentado-40k",
+      "title": "17. Crescimento intrauterino aumentado — mecanismos e decisões em profundidade",
+      "chars": 8325
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 917
+    },
+    {
+      "id": "clinica-etiologia-2026-crescimento-intrauterino-reduzido-aumentado",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "chars": 2154
+    }
+  ],
+  "references": [
+    "FEBRASGO. Restrição do crescimento fetal. Protocolos Assistenciais / Comissão Nacional Especializada em Medicina Fetal.",
+    "Secretaria de Saúde do Distrito Federal. Fetos Pequenos para a Idade Gestacional e Restrição de Crescimento Fetal.",
+    "ISUOG. Practice Guidelines: diagnosis and management of small-for-gestational-age fetus and fetal growth restriction. Ultrasound Obstet Gynecol. 2020;56:298–312.",
+    "ISUOG. Practice Guidelines: ultrasound assessment of fetal biometry and growth. Ultrasound Obstet Gynecol. 2019;53:715–723.",
+    "Society for Maternal-Fetal Medicine. Consult Series #52: Diagnosis and management of fetal growth restriction. 2020; reaffirmed 2024.",
+    "ACOG. Practice Bulletin No. 216: Macrosomia. 2020; reaffirmed 2026.",
+    "FEBRASGO / Ministério da Saúde. Diabetes Mellitus Gestacional no Brasil: cuidados obstétricos.",
+    "FEBRASGO. Distocia de ombro. Conteúdo técnico e recomendações assistenciais."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ultrasound_Scan_ND_0111105746_1103050.png",
+      "in_references": false
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_0111105746_1103050.png",
+      "in_references": false
+    },
+    {
+      "label": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "in_references": false
+    },
+    {
+      "label": "Ampliar ↗",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ultrasound_Scan_ND_0111105746_1103050.png",
+      "in_references": false
+    },
+    {
+      "label": "SMFM Consult 52, reafirmado em 2024",
+      "url": "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+      "in_references": false
+    },
+    {
+      "label": "SMFM Consult Series #52 (2020; reafirmada 2024)",
+      "url": "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+      "in_references": false
+    },
+    {
+      "label": "ISUOG, 2020, definições Delphi e manejo",
+      "url": "https://www.isuog.org/static/b2aa3fb4-031e-4d84-b7246d613a466884/ISUOG-Practice-Guidelines-diagnosis-and-management-of-small-for-gestational-age-fetus-and-fetal-growth-restriction.pdf",
+      "in_references": false
+    },
+    {
+      "label": "10.1002/ijgo.13522",
+      "url": "https://doi.org/10.1002/ijgo.13522",
+      "in_references": false
+    },
+    {
+      "label": "Página oficial ACOG",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/01/macrosomia",
+      "in_references": false
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ultrasound_Scan_ND_0111105746_1103050.png",
+      "alt": "Registro real de ultrassonografia Doppler da artéria umbilical, com espectro de fluxo e informações de exame na tela",
+      "section": "doppler",
+      "caption": "Exame real: Doppler de artéria umbilical. Observe a existência de fluxo ao longo do ciclo cardíaco. A imagem isolada não prova RCF nem permite diagnosticar fluxo diastólico ausente ou reverso sem analisar direção, escalas e medidas do exame completo. Nevit Dilmen, Wikimedia Commons, CC BY-SA 3.0. Arquivo original sem modificações. Ampliar ↗.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 7,
+  "paragraphs": 96,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 55,
+      "status": "pending",
+      "section": "distocia",
+      "source_license": "CC0",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/McRoberts%20maneuver.svg"
+    },
+    {
+      "id": 56,
+      "status": "approved",
+      "section": "distocia",
+      "source_license": "CC BY 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-crescimento-intrauterino-reduzido-aumentado/crescimento-suprapubica.webp"
+    },
+    {
+      "id": 57,
+      "status": "approved",
+      "section": "distocia",
+      "source_license": "CC BY 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-crescimento-intrauterino-reduzido-aumentado/crescimento-rubin-1.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "diagnostico",
+      "text": "Avaliações muito próximas podem confundir erro de medida com crescimento real. Em geral, o crescimento é reavaliado em intervalos de aproximadamente 2–4 semanas, enquanto Doppler e vitalidade podem exigir avaliações muito mais frequentes.",
+      "pattern": 0
+    },
+    {
+      "section": "manejo-rcf",
+      "text": "Administrar corticoide quando houver risco relevante de parto prematuro dentro da janela recomendada. A SMFM recomenda sulfato de magnésio para neuroproteção quando o parto é provável antes de 32 semanas.",
+      "pattern": 0
+    },
+    {
+      "section": "manejo-rcf",
+      "text": "A gestação foi datada por ultrassom precoce. Aos 28 semanas, o peso estimado está no percentil 8; o passo seguinte é revisar anatomia, líquido, Doppler e contexto materno, não mudar a idade gestacional. A trajetória deve ser avaliada com intervalo suficiente para distinguir crescimento real de erro de medida. Se houver piora do Doppler umbilical, a vigilância aumenta mesmo que a mãe não tenha sintomas.",
+      "pattern": 0
+    },
+    {
+      "section": "manejo-rcf",
+      "text": "Na referência SMFM, peso entre percentis 3 e 10 com Doppler umbilical normal pode permitir parto em 38–39 semanas; peso abaixo do percentil 3 ou fluxo diastólico reduzido sem ausência/reversão leva a considerar 37 semanas. Diástole ausente ou reversa exige vigilância mais intensiva e antecipação, de acordo com a idade e o conjunto clínico. Esses marcos não substituem a avaliação de emergência materna ou fetal.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "O primeiro bloco desta apostila trata exclusivamente do crescimento fetal reduzido. Antes de discutir Doppler ou momento do parto, é essencial separar tamanho fetal de doença.",
+      "pattern": 1
+    },
+    {
+      "section": "conceitos",
+      "text": "Todo diagnóstico de crescimento reduzido depende de idade gestacional confiável. A melhor datação é a do primeiro trimestre. Uma gestação adequadamente datada precocemente não deve ser redatada no terceiro trimestre porque a biometria está menor; isso pode mascarar RCF verdadeira.",
+      "pattern": 1
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "A chamada centralização é uma adaptação à menor oferta de oxigênio. Ela pode preservar temporariamente perfusão cerebral, mas é sinal de comprometimento fisiológico e não deve ser interpretada como normalização do risco.",
+      "pattern": 1
+    },
+    {
+      "section": "causas",
+      "text": "Genética parental e características populacionais podem resultar em feto pequeno e saudável. O diagnóstico é de exclusão clínica: crescimento estável, Doppler e líquido normais e ausência de sinais de doença.",
+      "pattern": 1
+    },
+    {
+      "section": "manejo-rcf",
+      "text": "Administrar corticoide quando houver risco relevante de parto prematuro dentro da janela recomendada. A SMFM recomenda sulfato de magnésio para neuroproteção quando o parto é provável antes de 32 semanas.",
+      "pattern": 2
+    },
+    {
+      "section": "gig",
+      "text": "O ACOG mantém como limiares de consideração — e não obrigação automática — PFE ≥5.000 g em gestante sem diabetes ou ≥4.500 g quando há diabetes. A discussão deve incluir margem de erro da ultrassonografia, riscos cirúrgicos e antecedentes obstétricos.",
+      "pattern": 2
+    },
+    {
+      "section": "decisoes-seriadas-rcf-gig-2026",
+      "text": "Estes marcos da SMFM não são datas obrigatórias para todas as pacientes. Antes do intervalo de referência, uma deterioração da vitalidade, grave pré-eclâmpsia, descolamento, sangramento importante ou outra urgência pode indicar parto. Em gestação muito prematura, também pesam recursos neonatais e transferência para centro adequado. Corticoide antenatal e sulfato de magnésio para neuroproteção devem ser avaliados conforme idade gestacional e risco de parto, sem atrasar resolução de situação ameaçadora.",
+      "pattern": 2
+    },
+    {
+      "section": "decisoes-seriadas-rcf-gig-2026",
+      "text": "Gestante com diabetes pré-gestacional, 38 semanas, PFE de 4.650 g. A macrossomia aumenta risco de distocia de ombro e trauma, porém o erro da ultrassonografia nos extremos de peso pode ser relevante. ACOG considera que cesariana eletiva pode ser discutida quando PFE é de pelo menos 4.500 g em gestação com diabetes, enquanto na ausência de diabetes o limiar referencial é 5.000 g. São critérios para aconselhamento individualizado, não prova de que o peso real seja exatamente o estimado ou de que cesariana seja obrigatória.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceitos",
+      "text": "O primeiro bloco desta apostila trata exclusivamente do crescimento fetal reduzido. Antes de discutir Doppler ou momento do parto, é essencial separar tamanho fetal de doença."
+    },
+    {
+      "section": "conceitos",
+      "text": "Todo diagnóstico de crescimento reduzido depende de idade gestacional confiável. A melhor datação é a do primeiro trimestre. Uma gestação adequadamente datada precocemente não deve ser redatada no terceiro trimestre porque a biometria está menor; isso pode mascarar RCF verdadeira."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 56,
+        "section": "distocia",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-crescimento-intrauterino-reduzido-aumentado/crescimento-suprapubica.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 2
+  }
+}

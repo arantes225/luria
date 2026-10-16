@@ -1,0 +1,808 @@
+{
+  "key": "avaliacao-vitalidade-fetal",
+  "kind": "apostila-html",
+  "path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+  "html_path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+  "title": "Avaliação da vitalidade fetal",
+  "source_sha256": "ac553e7dabe446f490a0a4c3cb58f4f653baebad3e595ce65c97f5cacddfb535",
+  "html_sha256": "ac553e7dabe446f490a0a4c3cb58f4f653baebad3e595ce65c97f5cacddfb535",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Princípios fisiológicos",
+      "section": "principio"
+    },
+    {
+      "tag": "H3",
+      "title": "O que cada método enxerga?",
+      "section": "principio"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Quem deve receber vigilância anteparto?",
+      "section": "indicacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Movimentos fetais",
+      "section": "movimentos"
+    },
+    {
+      "tag": "H3",
+      "title": "O que importa de verdade",
+      "section": "movimentos"
+    },
+    {
+      "tag": "H3",
+      "title": "Contagem estruturada",
+      "section": "movimentos"
+    },
+    {
+      "tag": "H3",
+      "title": "Conduta",
+      "section": "movimentos"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Cardiotocografia anteparto / Nonstress test",
+      "section": "ctg-anteparto"
+    },
+    {
+      "tag": "H3",
+      "title": "O que o exame registra?",
+      "section": "ctg-anteparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Leitura sistemática em cinco passos",
+      "section": "ctg-anteparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Reatividade",
+      "section": "ctg-anteparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Reativa × não reativa",
+      "section": "ctg-anteparto"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Como ler os parâmetros da FCF",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H3",
+      "title": "Linha de base",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H3",
+      "title": "Variabilidade",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H3",
+      "title": "Acelerações",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H3",
+      "title": "Desacelerações",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H3",
+      "title": "Roteiro de leitura do traçado",
+      "section": "ctg-parametros"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Perfil Biofísico Fetal",
+      "section": "pbf"
+    },
+    {
+      "tag": "H3",
+      "title": "Interpretação",
+      "section": "pbf"
+    },
+    {
+      "tag": "H3",
+      "title": "PBF modificado",
+      "section": "pbf"
+    },
+    {
+      "tag": "H3",
+      "title": "Como pontuar e interpretar um exame real",
+      "section": "pbf"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Líquido amniótico",
+      "section": "liquido"
+    },
+    {
+      "tag": "H3",
+      "title": "Fisiologia",
+      "section": "liquido"
+    },
+    {
+      "tag": "H3",
+      "title": "Como medir",
+      "section": "liquido"
+    },
+    {
+      "tag": "H3",
+      "title": "Oligodrâmnio",
+      "section": "liquido"
+    },
+    {
+      "tag": "H3",
+      "title": "Polidrâmnio",
+      "section": "liquido"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Dopplervelocimetria obstétrica",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Artéria umbilical",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Artéria cerebral média",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Relação cerebroplacentária",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Ducto venoso",
+      "section": "doppler"
+    },
+    {
+      "tag": "H3",
+      "title": "Técnica importa",
+      "section": "doppler"
+    },
+    {
+      "tag": "H2",
+      "title": "9. RCF: como o Doppler muda a vigilância",
+      "section": "rcf"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Situações especiais",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Pré-eclâmpsia e hipertensão",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Diabetes",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação múltipla",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Pós-datismo",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Redução de movimentos",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "11. CTG intraparto: um capítulo diferente",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Comece pelas contrações",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Desacelerações: a relação com as contrações",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Desaceleração precoce",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Desaceleração tardia",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Desaceleração variável",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Classificação em três categorias",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H3",
+      "title": "Medidas intrauterinas",
+      "section": "intraparto"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Integração dos métodos",
+      "section": "integracao"
+    },
+    {
+      "tag": "H3",
+      "title": "Teste alterado: como escolher o próximo passo",
+      "section": "integracao"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Armadilhas frequentes",
+      "section": "armadilhas"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — Redução de movimentos, CTG não reativa",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — RCF com AU alterada",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — RCF com diástole reversa",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — PBF 6/10",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — Polidrâmnio leve idiopático",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — CTG intraparto com tardias recorrentes",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "Interpretação aplicada — cinco decisões que mudam a conduta",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Prematuridade: duas acelerações de 10 × 10",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Perfil biofísico: dois resultados 8/10, significados diferentes",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Restrição de crescimento: CTG reativa não apaga Doppler grave",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Intraparto: taquissistolia com desacelerações tardias",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Testes discordantes: primeiro confirme a pergunta e a qualidade do sinal",
+      "section": "decisoes-resolvidas-vitalidade"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "section": "editorial-depth-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H3",
+      "title": "CTG: interpretar todos os parâmetros",
+      "section": "editorial-depth-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H3",
+      "title": "Doppler e perfil biofísico",
+      "section": "editorial-depth-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.1 Do oxigênio materno ao metabolismo fetal: onde pode ocorrer falha",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.2 Cardiotocografia anteparto: atividade neural e reatividade",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.3 Desacelerações: a forma não substitui o contexto",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.4 Perfil biofísico fetal: comportamento, oxigenação e temporalidade",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.5 Líquido amniótico: por que o volume informa algo, mas não explica tudo",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.6 Doppler: três territórios e três perguntas fisiológicas",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.7 Testes normais e anormais: limites da previsibilidade",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "16.8 Um caso com dois testes aparentemente contraditórios",
+      "section": "vitalidade-livro-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências prioritárias",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio avançado e situações de risco",
+      "section": "raciocinio-avancado-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H3",
+      "title": "Cardiotocografia: cinco perguntas obrigatórias",
+      "section": "raciocinio-avancado-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H3",
+      "title": "Perfil biofísico e líquido amniótico",
+      "section": "raciocinio-avancado-avaliacao-vitalidade-fetal"
+    },
+    {
+      "tag": "H3",
+      "title": "Doppler em crescimento restrito",
+      "section": "raciocinio-avancado-avaliacao-vitalidade-fetal"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1637
+    },
+    {
+      "id": "principio",
+      "title": "1. Princípios fisiológicos",
+      "chars": 1219
+    },
+    {
+      "id": "indicacoes",
+      "title": "2. Quem deve receber vigilância anteparto?",
+      "chars": 988
+    },
+    {
+      "id": "movimentos",
+      "title": "3. Movimentos fetais",
+      "chars": 1139
+    },
+    {
+      "id": "ctg-anteparto",
+      "title": "4. Cardiotocografia anteparto / Nonstress test",
+      "chars": 2285
+    },
+    {
+      "id": "ctg-parametros",
+      "title": "5. Como ler os parâmetros da FCF",
+      "chars": 1680
+    },
+    {
+      "id": "pbf",
+      "title": "6. Perfil Biofísico Fetal",
+      "chars": 2468
+    },
+    {
+      "id": "liquido",
+      "title": "7. Líquido amniótico",
+      "chars": 1056
+    },
+    {
+      "id": "doppler",
+      "title": "8. Dopplervelocimetria obstétrica",
+      "chars": 1604
+    },
+    {
+      "id": "rcf",
+      "title": "9. RCF: como o Doppler muda a vigilância",
+      "chars": 784
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Situações especiais",
+      "chars": 967
+    },
+    {
+      "id": "intraparto",
+      "title": "11. CTG intraparto: um capítulo diferente",
+      "chars": 2201
+    },
+    {
+      "id": "integracao",
+      "title": "12. Integração dos métodos",
+      "chars": 1431
+    },
+    {
+      "id": "armadilhas",
+      "title": "13. Armadilhas frequentes",
+      "chars": 742
+    },
+    {
+      "id": "casos",
+      "title": "14. Casos clínicos integradores",
+      "chars": 1474
+    },
+    {
+      "id": "decisoes-resolvidas-vitalidade",
+      "title": "Interpretação aplicada — cinco decisões que mudam a conduta",
+      "chars": 5895
+    },
+    {
+      "id": "revisao",
+      "title": "15. Revisão de alto rendimento",
+      "chars": 819
+    },
+    {
+      "id": "editorial-depth-avaliacao-vitalidade-fetal",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 728
+    },
+    {
+      "id": "vitalidade-livro-40k",
+      "title": "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade",
+      "chars": 14526
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 943
+    },
+    {
+      "id": "raciocinio-avancado-avaliacao-vitalidade-fetal",
+      "title": "Raciocínio avançado e situações de risco",
+      "chars": 1414
+    }
+  ],
+  "references": [
+    "HC-UFTM/Ebserh. Protocolo de Avaliação da Vitalidade Fetal Anteparto, versão 2, 2025.",
+    "Ministério da Saúde. Gestação de Alto Risco: manual técnico e documentos correlatos.",
+    "ACOG. Antepartum Fetal Surveillance. Practice Bulletin 229; reaffirmed 2024.",
+    "ACOG. Indications for Outpatient Antenatal Fetal Surveillance. Committee Opinion nº 828, 2021.",
+    "ACOG. Intrapartum Fetal Heart Rate Monitoring: Interpretation and Management. Clinical Practice Guideline, 2025.",
+    "SMFM Consult Series #52. Diagnosis and management of fetal growth restriction (2020; reafirmada em 2024).",
+    "SMFM Consult Series #46. Evaluation and management of polyhydramnios; reaffirmed 2024.",
+    "ISUOG Practice Guidelines (updated): use of Doppler velocimetry in obstetrics.",
+    "Protocolos de Medicina Fetal e Obstetrícia da Rede Ebserh/HU Brasil.",
+    "NICE. Fetal monitoring in labour, NG229 (2022).",
+    "PhantomSteve. CTG Output (fotografia de traçado anteparto), CC BY-SA 3.0."
+  ],
+  "reference_links": [
+    {
+      "label": "ACOG. Indications for Outpatient Antenatal Fetal Surveillance. Committee Opinion nº 828, 2021.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+      "in_references": true
+    },
+    {
+      "label": "SMFM Consult Series #52. Diagnosis and management of fetal growth restriction (2020; reafirmada em 2024).",
+      "url": "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+      "in_references": true
+    },
+    {
+      "label": "NICE. Fetal monitoring in labour, NG229 (2022).",
+      "url": "https://www.nice.org.uk/guidance/ng229/chapter/recommendations",
+      "in_references": true
+    },
+    {
+      "label": "PhantomSteve. CTG Output (fotografia de traçado anteparto), CC BY-SA 3.0.",
+      "url": "https://commons.wikimedia.org/wiki/File:CTG_Output.jpg",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+      "in_references": false
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:CTG_Output.jpg",
+      "in_references": false
+    },
+    {
+      "label": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "in_references": false
+    },
+    {
+      "label": "Ampliar exame ↗",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+      "in_references": false
+    },
+    {
+      "label": "ACOG — testes de bem-estar fetal",
+      "url": "https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being",
+      "in_references": false
+    },
+    {
+      "label": "ACOG, vigilância anteparto (2021)",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+      "in_references": false
+    },
+    {
+      "label": "ACOG, testes de bem-estar fetal (revisão 2026)",
+      "url": "https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being",
+      "in_references": false
+    },
+    {
+      "label": "SMFM, RCF (2020, reafirmada em 2024)",
+      "url": "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG229, monitorização intraparto",
+      "url": "https://www.nice.org.uk/guidance/ng229/chapter/recommendations",
+      "in_references": false
+    },
+    {
+      "label": "ACOG CPG nº 10 (2025)",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2025/10/intrapartum-fetal-heart-rate-monitoring-interpretation-and-management",
+      "in_references": false
+    },
+    {
+      "label": "ACOG",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+      "in_references": false
+    },
+    {
+      "label": "ACOG. Indications for Outpatient Antenatal Fetal Surveillance. Committee Opinion nº 828, 2021.",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+      "in_references": true
+    },
+    {
+      "label": "SMFM Consult Series #52. Diagnosis and management of fetal growth restriction (2020; reafirmada em 2024).",
+      "url": "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+      "in_references": true
+    },
+    {
+      "label": "NICE. Fetal monitoring in labour, NG229 (2022).",
+      "url": "https://www.nice.org.uk/guidance/ng229/chapter/recommendations",
+      "in_references": true
+    },
+    {
+      "label": "PhantomSteve. CTG Output (fotografia de traçado anteparto), CC BY-SA 3.0.",
+      "url": "https://commons.wikimedia.org/wiki/File:CTG_Output.jpg",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+      "alt": "Cardiotocografia real anteparto; A: frequência cardíaca fetal, B: marcação de movimento pela gestante, C: movimentos fetais registrados e D: contrações uterinas",
+      "section": "ctg-anteparto",
+      "caption": "Registro real de cardiotocografia anteparto (ampliável). A: frequência cardíaca fetal; B: marcação da gestante; C: movimentos fetais; D: atividade uterina. A presença de contrações no canal inferior não transforma, por si só, esse registro em traçado intraparto. Autor: PhantomSteve. Wikimedia Commons, CC BY-SA 3.0; sem alterações do arquivo. Ampliar exame ↗",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 13,
+  "paragraphs": 89,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 274,
+      "status": "approved",
+      "section": "ctg-parametros",
+      "source_license": "CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0/",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-ctg-output.webp"
+    },
+    {
+      "id": 276,
+      "status": "approved",
+      "section": "ctg-anteparto",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-fhr-monitoring.webp"
+    },
+    {
+      "id": 278,
+      "status": "approved",
+      "section": "intraparto",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-kardiotokogramm.webp"
+    },
+    {
+      "id": 284,
+      "status": "approved",
+      "section": "rcf",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-ua-doppler-3.webp"
+    },
+    {
+      "id": 286,
+      "status": "approved",
+      "section": "liquido",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-polyhydramnios-2.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "indicacoes",
+      "text": "Depende da doença, da idade gestacional em que o parto seria uma opção e da magnitude do risco. Em muitos cenários, a vigilância inicia por volta de 32 semanas; em risco alto pode começar antes.",
+      "pattern": 0
+    },
+    {
+      "section": "ctg-parametros",
+      "text": "Confira velocidade do papel, qualidade do sinal e possibilidade de registrar pulso materno. Estime linha de base excluindo acelerações e desacelerações; descreva variabilidade, acelerações e desacelerações, relacionando estas últimas às contrações. Só depois formule a interpretação. “Reativo” não é sinônimo de “qualquer traçado com uma subida”. No NST a partir de 32 semanas, procuram-se pelo menos duas acelerações de 15 bpm com 15 segundos; antes de 32 semanas utiliza-se habitualmente 10 bpm por 10 segundos. A observação pode precisar alcançar 40 minutos por ciclo de sono.",
+      "pattern": 0
+    },
+    {
+      "section": "pbf",
+      "text": "Gestação de 34 semanas: NST reativo, quatro movimentos corporais, extensão seguida de flexão, maior bolsão vertical de 3 cm e nenhum episódio respiratório de 30 segundos durante observação completa.",
+      "pattern": 0
+    },
+    {
+      "section": "casos",
+      "text": "Gestante de 35 semanas relata redução importante dos movimentos. CTG por 20 minutos mostra basal 140, variabilidade moderada, sem desacelerações e apenas uma aceleração. A conduta não é “cesárea por sofrimento”: prolongar a avaliação, considerar estímulo e complementar com PBF/USG conforme risco.",
+      "pattern": 0
+    },
+    {
+      "section": "ctg-parametros",
+      "text": "É a média aproximada em 10 minutos, excluindo acelerações, desacelerações e períodos marcadamente irregulares. Em geral, 110–160 bpm é a faixa normal.",
+      "pattern": 1
+    },
+    {
+      "section": "ctg-parametros",
+      "text": "Confira velocidade do papel, qualidade do sinal e possibilidade de registrar pulso materno. Estime linha de base excluindo acelerações e desacelerações; descreva variabilidade, acelerações e desacelerações, relacionando estas últimas às contrações. Só depois formule a interpretação. “Reativo” não é sinônimo de “qualquer traçado com uma subida”. No NST a partir de 32 semanas, procuram-se pelo menos duas acelerações de 15 bpm com 15 segundos; antes de 32 semanas utiliza-se habitualmente 10 bpm por 10 segundos. A observação pode precisar alcançar 40 minutos por ciclo de sono.",
+      "pattern": 1
+    },
+    {
+      "section": "pbf",
+      "text": "O líquido amniótico tem peso especial, porque representa fenômeno mais crônico. Um escore “bom” com oligodrâmnio não deve ser tratado como totalmente tranquilizador.",
+      "pattern": 1
+    },
+    {
+      "section": "doppler",
+      "text": "Reflete hemodinâmica cardíaca venosa e tem utilidade sobretudo em RCF precoce grave em protocolos especializados. Alterações da onda “a” são sinal de deterioração, mas a decisão de parto não deve ser reduzida a uma frase universal sem contexto de idade gestacional e protocolo.",
+      "pattern": 1
+    },
+    {
+      "section": "decisoes-resolvidas-vitalidade",
+      "text": "Referências para conferência: ACOG, vigilância anteparto (2021); ACOG, testes de bem-estar fetal (revisão 2026); SMFM, RCF (2020, reafirmada em 2024); NICE NG229, monitorização intraparto; ACOG CPG nº 10 (2025).",
+      "pattern": 2
+    },
+    {
+      "section": "vitalidade-livro-40k",
+      "text": "A frequência de testes deve acompanhar risco real. ACOG Committee Opinion nº 828 ressalta que indicações e periodicidades são sugestões individualizáveis, não imposições universais. Doenças como restrição de crescimento com Doppler gravemente alterado podem exigir monitoramento muito mais frequente do que uma situação estável de menor risco. A realização excessiva de testes em população de baixo risco também pode gerar falso-positivo, ansiedade e intervenções que não melhoram desfechos. O melhor exame é aquele que responde uma pergunta relevante em momento no qual o resultado tem potencial de mudar conduta.",
+      "pattern": 2
+    },
+    {
+      "section": "vitalidade-livro-40k",
+      "text": "Fontes para integração: ACOG. Antepartum Fetal Surveillance, Practice Bulletin nº 229 (2021; reafirmado 2024); ACOG/SMFM. Indications for Outpatient Antenatal Fetal Surveillance, Committee Opinion nº 828 (2021), disponível em ACOG; FIGO. Best practice advice for fetal growth restriction (2021), DOI 10.1002/ijgo.13522. Os critérios operacionais devem ser conferidos com a diretriz obstétrica brasileira vigente.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "principio",
+      "text": "A vigilância fetal funciona porque hipóxia e insuficiência placentária provocam respostas fisiológicas relativamente previsíveis. O feto primeiro redistribui fluxo para órgãos nobres, depois reduz atividades biofísicas e, em deterioração avançada, surgem alterações cardiovasculares e ácido-básicas."
+    },
+    {
+      "section": "indicacoes",
+      "text": "A vigilância não é “rotina para toda gestação”. Ela é mais útil quando existe risco aumentado de óbito fetal e quando o resultado do teste pode mudar conduta."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 276,
+        "section": "ctg-anteparto",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-fhr-monitoring.webp",
+        "source_only": false
+      },
+      {
+        "id": 274,
+        "section": "ctg-parametros",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-ctg-output.webp",
+        "source_only": false
+      },
+      {
+        "id": 286,
+        "section": "liquido",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-polyhydramnios-2.webp",
+        "source_only": false
+      },
+      {
+        "id": 284,
+        "section": "rcf",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-ua-doppler-3.webp",
+        "source_only": false
+      },
+      {
+        "id": 278,
+        "section": "intraparto",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-avaliacao-vitalidade-fetal/vf-kardiotokogramm.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 6
+  }
+}

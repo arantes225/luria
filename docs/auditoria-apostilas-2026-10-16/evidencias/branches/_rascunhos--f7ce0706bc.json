@@ -1,0 +1,135 @@
+{
+  "sha": "f7ce0706bc647ea3f34949f40cdb3d9a02d547d8",
+  "path": "apostilas/_rascunhos/lote-10-205-dor-pelvica-aguda-torcao-anexial.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f7ce0706bc",
+  "title": "LURIA | Apostila 205 — Dor pélvica aguda e torção anexial",
+  "format": ".md",
+  "chars_estimated": 22712,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 205 — Dor pélvica aguda e torção anexial"
+    },
+    {
+      "title": "0. Leitura comparativa obrigatória e preservação da biblioteca"
+    },
+    {
+      "title": "1. O raciocínio inicial que salva vidas"
+    },
+    {
+      "title": "Algoritmo operacional dos primeiros minutos"
+    },
+    {
+      "title": "2. Anatomia funcional explicada para entender as emergências"
+    },
+    {
+      "title": "2.1. Compartimentos pélvicos e relação com a dor"
+    },
+    {
+      "title": "2.2. Ovulação, corpo lúteo e cistos funcionais"
+    },
+    {
+      "title": "2.3. Torção: sequência hemodinâmica"
+    },
+    {
+      "title": "3. História clínica: traduzir descrições vagas em hipóteses verificáveis"
+    },
+    {
+      "title": "3.1. Cinco dimensões da dor"
+    },
+    {
+      "title": "3.2. Perguntas específicas sobre gravidez e sangramento"
+    },
+    {
+      "title": "3.3. Sintomas infecciosos e sexualidade com privacidade"
+    },
+    {
+      "title": "4. Exame físico: segurança, consentimento e informações de alto rendimento"
+    },
+    {
+      "title": "4.1. Exame geral e abdominal"
+    },
+    {
+      "title": "4.2. Exame ginecológico"
+    },
+    {
+      "title": "5. Escolhendo e interpretando os exames"
+    },
+    {
+      "title": "5.1. Laboratório inicial por risco"
+    },
+    {
+      "title": "5.2. Ultrassonografia: o que ela pergunta?"
+    },
+    {
+      "title": "5.3. Quando TC ou RM?"
+    },
+    {
+      "title": "5.4. O problema da gravidez de localização desconhecida"
+    },
+    {
+      "title": "6. Torção anexial: a emergência que o Doppler não pode descartar"
+    },
+    {
+      "title": "6.1. Epidemiologia e mecanismo"
+    },
+    {
+      "title": "6.2. Quadro clínico clássico e atípico"
+    },
+    {
+      "title": "6.3. US com Doppler: sinais e limitações"
+    },
+    {
+      "title": "6.4. Quando e como tratar"
+    },
+    {
+      "title": "6.5. Diferenciais da torção"
+    },
+    {
+      "title": "7. Gestação ectópica: reconhecer ameaça imediata"
+    },
+    {
+      "title": "7.1. O que é e por que rompe?"
+    },
+    {
+      "title": "7.2. Clínica e ultrassom"
+    },
+    {
+      "title": "7.3. Conduta orientada à estabilidade"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Pulo do Gato LURIA:** Em paciente em idade reprodutiva com dor pélvica aguda, a **possibilidade de gravidez e a estabilidade hemodinâmica vêm antes da escolha do diagnóstico ginecológico**. Torção anexial continua possível com fluxo arterial ao Doppler. Ectópica rota pode ser fatal mesmo antes de qualquer “zona discriminatória” de beta-hCG."
+    },
+    {
+      "text": "Dor pélvica aguda é dor localizada no baixo abdome, pelve ou região genital de início recente, podendo ser incapacitante, contínua ou intermitente. É síndrome, não diagnóstico. As origens podem ser ginecológicas, obstétricas, urinárias, gastrointestinais, musculoesqueléticas ou vasculares, e uma mesma pessoa pode ter mais de um processo simultâneo. Diferenciais graves e tempo-dependentes incluem gestação ectópica rota, hemorragia intra-abdominal, torção anexial, apendicite, abscesso tubo-ovariano com sepse e outras causas de abdome agudo."
+    },
+    {
+      "text": "A sensibilidade anexial é **achado, não diagnóstico**. Dor à mobilização do colo pode ocorrer em ectópica, irritação peritoneal e apendicite pélvica; não é patognomônica de DIP. Da mesma forma, corrimento coincidente não exclui quadro cirúrgico."
+    },
+    {
+      "text": "A apresentação clássica combina **dor aguda unilateral**, náuseas e vômitos, podendo ocorrer episódios anteriores autolimitados de torção parcial/intermitente. Febre não é necessária e, quando aparece, pode sugerir necrose, reação inflamatória ou diagnóstico diferente. Em adolescentes pré-menarca, a queixa pode ser abdominal, pouco localizável, e nenhum exame pélvico invasivo é exigido para suspeitar."
+    },
+    {
+      "text": "**Doppler arterial normal não exclui torção.** Possíveis mecanismos: irrigação dual útero-ovariana, torsão intermitente, persistência arterial enquanto fluxo venoso está comprometido, torção tubária ou paratubária. Estudos citados pelo ACOG demonstram fluxo arterial preservado em proporção relevante de torções confirmadas. Nem leucocitose nem PCR elevada constituem testes diagnósticos definitivos. Não criar um escore isolado como decisor absoluto da cirurgia."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,273 @@
+{
+  "sha": "fb090b441b8cef5c1fa69383fcbb7703d70f5ca5",
+  "path": "apostilas/_rascunhos/lote-13-274-ortopedia-pediatrica.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--fb090b441b",
+  "title": "LURIA — Lote 13 · Apostila 274",
+  "format": ".md",
+  "chars_estimated": 62950,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 274"
+    },
+    {
+      "title": "Ortopedia pediátrica: desenvolvimento, claudicação, infecções e trauma"
+    },
+    {
+      "title": "1. Introdução e mapa do raciocínio"
+    },
+    {
+      "title": "2. Semiologia musculoesquelética do lactente à adolescência"
+    },
+    {
+      "title": "3. Displasia do desenvolvimento do quadril (DDQ)"
+    },
+    {
+      "title": "Fatores de risco e rastreamento"
+    },
+    {
+      "title": "Imagem e interpretação"
+    },
+    {
+      "title": "Tratamento"
+    },
+    {
+      "title": "4. Criança claudicante: sinovite transitória, Perthes, epifisiólise e infecção"
+    },
+    {
+      "title": "4.1 Sinovite transitória"
+    },
+    {
+      "title": "4.2 Doença de Legg-Calvé-Perthes"
+    },
+    {
+      "title": "4.3 Epifisiólise proximal femoral"
+    },
+    {
+      "title": "5. Artrite séptica pediátrica — emergência articular"
+    },
+    {
+      "title": "Investigação sem retardar tratamento"
+    },
+    {
+      "title": "6. Osteomielite hematogênica aguda"
+    },
+    {
+      "title": "Distinguir infecção óssea de artrite séptica"
+    },
+    {
+      "title": "7. Trauma infantil e especificidades do osso em crescimento"
+    },
+    {
+      "title": "Salter–Harris, compreendendo a anatomia"
+    },
+    {
+      "title": "Fratura supracondiliana do úmero"
+    },
+    {
+      "title": "Pronação dolorosa (subluxação da cabeça radial)"
+    },
+    {
+      "title": "Lesões suspeitas de violência"
+    },
+    {
+      "title": "8. Dor não traumática localizada e esportes"
+    },
+    {
+      "title": "9. Fluxo prático: criança com claudicação"
+    },
+    {
+      "title": "10. Acompanhamento, prognóstico e complicações"
+    },
+    {
+      "title": "10A. O quadril do recém-nascido: rastreamento, displasia residual e risco de iatrogenia"
+    },
+    {
+      "title": "Por que a displasia não é simplesmente uma “luxação congênita”?"
+    },
+    {
+      "title": "USG, radiografia e escolhas condicionadas à ossificação"
+    },
+    {
+      "title": "Tratamento depende de estabilidade, redutibilidade e evolução"
+    },
+    {
+      "title": "O que comunicar aos pais"
+    },
+    {
+      "title": "10B. A criança que manca: hipóteses por idade, gravidade e lesão referida"
+    },
+    {
+      "title": "A primeira decisão não é o diagnóstico exato, mas a segurança da articulação"
+    },
+    {
+      "title": "Sinovite transitória e probabilidade de artrite séptica"
+    },
+    {
+      "title": "Perthes: uma doença de remodelação, não uma sentença cirúrgica pela idade"
+    },
+    {
+      "title": "Epifisiólise proximal femoral: não permitir deambulação após suspeita"
+    },
+    {
+      "title": "10C. Infecção osteoarticular: cultura, imagem e antibiótico sem atrasar fonte de controle"
+    },
+    {
+      "title": "A anatomia explica por que recém-nascidos podem adoecer de forma diferente"
+    },
+    {
+      "title": "Um algoritmo de emergência: coleta quando seguro, antibiótico quando urgente"
+    },
+    {
+      "title": "Quando a imagem muda o plano"
+    },
+    {
+      "title": "Tratamento IV versus via oral: a trajetória é tão importante quanto o calendário"
+    },
+    {
+      "title": "Diagnóstico diferencial de infecção que falha em melhorar"
+    },
+    {
+      "title": "10D. Fraturas, fise e tecido mole: decisões que evitam incapacidade futura"
+    },
+    {
+      "title": "O osso cresce, mas isso não significa que toda deformidade será corrigida"
+    },
+    {
+      "title": "Exame neurovascular antes e depois de imobilizar"
+    },
+    {
+      "title": "Fratura exposta e contaminação: tempo até antibiótico e cuidado de ferida"
+    },
+    {
+      "title": "Violência contra criança como diagnóstico diferencial de lesão inexplicada"
+    },
+    {
+      "title": "10E. Tumores, joelho, pé e coluna: como não chamar toda dor de crescimento"
+    },
+    {
+      "title": "Dor tumoral versus dor mecânica"
+    },
+    {
+      "title": "Dor anterior de joelho e apofisite por tração"
+    },
+    {
+      "title": "Pé plano, marcha em ponta e deformidades angulares"
+    },
+    {
+      "title": "Escoliose no adolescente: não confundir assimetria postural com curvatura estrutural"
+    },
+    {
+      "title": "10F. Integração com provas: casos adicionais, questões e alta segura"
+    },
+    {
+      "title": "Caso integrado 1 — DDQ em criança de risco, exame normal"
+    },
+    {
+      "title": "Caso integrado 2 — claudicação e exames laboratoriais ambíguos"
+    },
+    {
+      "title": "Caso integrado 3 — dor no joelho com origem no quadril"
+    },
+    {
+      "title": "Caso integrado 4 — ferida pequena após queda de moto"
+    },
+    {
+      "title": "Caso integrado 5 — febre e osso doloroso, mas imagem inicial normal"
+    },
+    {
+      "title": "Caso integrado 6 — “dor do crescimento” unilateral progressiva"
+    },
+    {
+      "title": "Seis questões adicionais comentadas"
+    },
+    {
+      "title": "Fila de imagens complementares para curadoria central — nenhuma incluída"
+    },
+    {
+      "title": "Bibliografia usada na expansão da apostila"
+    },
+    {
+      "title": "11. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Bebê em apresentação pélvica com exame aparentemente normal"
+    },
+    {
+      "title": "Caso 2 — Criança que não apoia o membro, com febre"
+    },
+    {
+      "title": "Caso 3 — Adolescente com dor no joelho, radiografia normal"
+    },
+    {
+      "title": "Caso 4 — Osteomielite de tíbia e resposta à terapêutica"
+    },
+    {
+      "title": "12. Questões autorais de prova"
+    },
+    {
+      "title": "13. Quadros e figuras didáticas propostas"
+    },
+    {
+      "title": "14. Referências científicas verificadas"
+    },
+    {
+      "title": "Auditoria de saída — status parcial, não homologado"
+    }
+  ],
+  "reference_entries": [
+    "1. AAOS. Pediatric Developmental Dysplasia of the Hip CPG, 2022. https://new.aaos.org/quality/quality-programs/pediatric-developmental-dysplasia-of-the-hip/",
+    "2. PIDS/IDSA. Acute Hematogenous Osteomyelitis in Pediatrics CPG, 2021. https://www.idsociety.org/practice-guideline/bone-and-joint-infections---osteomyelitis/",
+    "3. Royal Children's Hospital Melbourne. The limping or non-weight bearing child, atualização outubro/2025. https://www.rch.org.au/clinicalguide/guideline_index/Child_with_limp/",
+    "4. BOAST-related review. Investigation and Management of Lower Limb Septic Arthritis in Children, 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11238896/",
+    "5. AAOS. Pediatric Clinical Practice Guidelines index (fraturas femorais pediátricas 2026 e fraturas supracondilianas). https://new.aaos.org/quality/quality-programs/clinical-practice-guidelines/",
+    "- **Benchmark:** documento de Ortopedia Pediátrica efetivamente lido no Drive; fonte institucional do documento não comprovada, usado apenas para análise de tópicos.",
+    "- **Comparação interna:** layout/estrutura de apostilas reais #279 e #280 do repositório conferidos.",
+    "- **Conteúdo elaborado:** DDQ, claudicação, Perthes, epifisiólise, sinovite transitória, artrite séptica, osteomielite, trauma fisário, fratura supracondiliana, pronação dolorosa, diferenciais; 4 casos, 6 questões, tabelas/algoritmo original.",
+    "- **Pontos que exigem aprofundamento antes de 60K:** critérios de admissão para trauma e infecção, diagnóstico e tratamento de osteomielite neonatal, patógenos por faixa etária, síndrome compartimental e fraturas expostas, tumores ósseos, deformidades de membros e pés, DDQ residual/adolescente, reabilitação e protocolos brasileiros em maior detalhe.",
+    "- **Pendente:** revisão formal de doses dependentes de peso, diretrizes brasileiras, auditoria dos 60 mil caracteres didáticos, mais exemplos diagnósticos e questões, validação de licença das imagens, inspeção do HTML/PWA, revisão por médico.",
+    "- **Status final desta etapa:** `RASCUNHO_PARCIAL_NAO_PUBLICAR`."
+  ],
+  "external_urls": [
+    "https://www.aaos.org/quality/quality-programs/pediatric-quality-programs/pediatric-developmental-dysplasia-of-the-hip/",
+    "https://www.idsociety.org/practice-guideline/bone-and-joint-infections---osteomyelitis/",
+    "https://www.idsociety.org/practice-guideline/acute-bacterial-arthritis-in-pediatrics2/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Child_with_limp/",
+    "https://www.aaos.org/quality/quality-programs/clinical-practice-guidelines/",
+    "https://new.aaos.org/quality/quality-programs/pediatric-developmental-dysplasia-of-the-hip/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11238896/",
+    "https://new.aaos.org/quality/quality-programs/clinical-practice-guidelines/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Objetivo didático:** permitir ao estudante localizar a fonte de dor, reconhecer emergências osteoarticulares e distinguir DDQ, Perthes, epifisiólise, sinovite transitória, artrite séptica, osteomielite e padrões de fratura da infância. > **Correções necessárias perante material de referência:** ultrassom universal de todos os recém-nascidos não é recomendado pela AAOS; a investigação é guiada pelo exame físico e por risco. Nem toda epifisiólise ou DDQ requer o mesmo tratamento puramente por idade; o estadiamento, a estabilidade e a avaliação especializada definem conduta. O “click” benigno do quadril não equivale ao “clunk” verdadeiro de "
+    },
+    {
+      "text": "A idade muda o diferencial: lactente tem maior possibilidade de DDQ e infecção; criança pré-escolar claudicante pode ter sinovite transitória ou doença infecciosa; escolares podem desenvolver doença de Legg-Calvé-Perthes; adolescentes durante estirão — particularmente com obesidade — estão sob risco de epifisiólise proximal do fêmur. Essas associações são pistas, não diagnósticos suficientes."
+    },
+    {
+      "text": "A diretriz PIDS/IDSA 2021 favorece transição **para antibiótico oral ativo e tolerado** depois de resposta à terapia IV em quadros selecionados, em vez de manter acesso IV domiciliar desnecessariamente. Para osteomielite hematogênica **não complicada** por *S. aureus* responsiva, sugere duração total de **3–4 semanas**; não extrapolar a quadros complexos ou agentes diferentes. A decisão deve considerar resposta clínica, PCR, foco, adesão e segurança. Não oferecer posologia pediátrica genérica fora de contexto de peso, bactéria, função renal e protocolo local."
+    },
+    {
+      "text": "Na displasia do desenvolvimento do quadril (DDQ), a relação entre cabeça femoral e acetábulo pode variar desde **imaturidade acetabular estável** até instabilidade, subluxação e luxação estabelecida. A articulação se desenvolve por interação entre fatores mecânicos e crescimento osteocondral; a posição concêntrica da cabeça femoral estimula modelagem acetabular. Assim, algumas crianças não nascem com luxação fixa: instabilidade ou displasia pode ficar evidente nas primeiras semanas, e o diagnóstico deve incorporar evolução."
+    },
+    {
+      "text": "**Apresentação pélvica**, história familiar em parente próximo e exame de instabilidade verdadeira aumentam a probabilidade; sexo feminino e fatores de restrição intrauterina também contribuem. A avaliação neonatal deve documentar fatores de risco, mas não transformar todo fator isolado em diagnóstico. Um bebê com exame normal e risco relevante pode necessitar imagem seletiva posterior; já um bebê com manobra de Ortolani positiva merece ortopedia pediátrica sem aguardar que a criança comece a mancar."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

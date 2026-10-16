@@ -1,0 +1,138 @@
+{
+  "sha": "1e695bb4bc7fc6c59ab40fa13967416d752edfe7",
+  "path": "apostilas/oncologia-pediatrica/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "oncologia-pediatrica--1e695bb4bc",
+  "title": "LURIA — Apostila 243: Oncologia pediátrica — leucemias, linfomas e tumores sólidos",
+  "format": ".md",
+  "chars_estimated": 20408,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 243: Oncologia pediátrica — leucemias, linfomas e tumores sólidos"
+    },
+    {
+      "title": "1. O raciocínio de detecção precoce"
+    },
+    {
+      "title": "2. Diferenças biológicas relevantes"
+    },
+    {
+      "title": "3. Leucemia aguda"
+    },
+    {
+      "title": "3.1 Clínica da infiltração medular"
+    },
+    {
+      "title": "3.2 Exames iniciais e diferenciais"
+    },
+    {
+      "title": "3.3 Linfoblástica versus mieloide"
+    },
+    {
+      "title": "4. Linfomas na criança"
+    },
+    {
+      "title": "5. Tumores sólidos: padrões de apresentação"
+    },
+    {
+      "title": "6. Emergências oncológicas — reconhecer sem atraso"
+    },
+    {
+      "title": "6.1 Febre e neutropenia"
+    },
+    {
+      "title": "6.2 Síndrome de lise tumoral"
+    },
+    {
+      "title": "6.3 Compressão medular"
+    },
+    {
+      "title": "6.4 Síndrome de veia cava superior/massa mediastinal"
+    },
+    {
+      "title": "6.5 Leucostase, sangramento e hipercalcemia"
+    },
+    {
+      "title": "7. Tratamento oncológico: princípios de manejo"
+    },
+    {
+      "title": "8. Diagnósticos diferenciais e armadilhas"
+    },
+    {
+      "title": "9. Algoritmo de ação para APS e pronto atendimento"
+    },
+    {
+      "title": "10. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — “Virose” repetida com petéquias"
+    },
+    {
+      "title": "Caso 2 — Massa abdominal indolor"
+    },
+    {
+      "title": "Caso 3 — Dispneia ao deitar com adenomegalia"
+    },
+    {
+      "title": "Caso 4 — Quimioterapia e febre"
+    },
+    {
+      "title": "11. Seis questões autorais comentadas"
+    },
+    {
+      "title": "12. Matriz de imagens para curadoria"
+    },
+    {
+      "title": "13. Referências verificáveis"
+    },
+    {
+      "title": "14. Auditoria e lacunas"
+    }
+  ],
+  "reference_entries": [
+    "1. INCA. **Câncer infantojuvenil — versão para profissionais de saúde**. Atualizado 2025. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/versao-para-profissionais-de-saude/",
+    "2. INCA. **Tumor de Wilms — profissionais**. Atualizado 2026. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/especificos/tumor-de-wilms/versao-para-profissionais-de-saude",
+    "3. INCA. **Neuroblastoma — profissionais**. Atualizado 2026. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/especificos/neuroblastoma/versao-para-profissionais-de-saude",
+    "4. WHO. **Childhood cancer**. https://www.who.int/news-room/fact-sheets/detail/cancer-in-children",
+    "5. NICE NG12. **Suspected cancer: recognition and referral**, children/young people. https://www.nice.org.uk/guidance/ng12/chapter/recommendations-organised-by-site-of-cancer"
+  ],
+  "external_urls": [
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/versao-para-profissionais-de-saude/",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/especificos/tumor-de-wilms/versao-para-profissionais-de-saude",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/infantojuvenil/especificos/neuroblastoma/versao-para-profissionais-de-saude",
+    "https://www.who.int/news-room/fact-sheets/detail/cancer-in-children",
+    "https://www.nice.org.uk/guidance/ng12/chapter/recommendations-organised-by-site-of-cancer"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Sinais urgentes:** petéquias sem explicação, hepatoesplenomegalia, anemia com sintomas, sangramento, febre persistente e dor óssea profunda/progressiva. NICE NG12 recomenda avaliação especializada imediata diante de petéquias inexplicadas ou hepatoesplenomegalia em criança/adolescente; hemograma muito urgente para palidez, hematomas, sangramento, dor óssea ou febre persistente sem causa."
+    },
+    {
+      "text": "A equipe multidisciplinar inclui oncologia/hematologia pediátrica, cirurgia, radiologia, patologia, enfermagem, infectologia, nutrição, fisioterapia, psicologia, assistência social, odontologia, farmacologia e cuidados paliativos quando necessários. **Cuidados paliativos pediátricos não significam automaticamente suspensão do tratamento oncológico**; alívio de dor, sintomas e sofrimento pode ocorrer desde o diagnóstico."
+    },
+    {
+      "text": "**Q6.** Em geral, rastreamento populacional de câncer infantil: A) é universalmente indicado; B) não é principal estratégia, priorizando diagnóstico precoce e acesso a tratamento especializado; C) substitui avaliação de sintomas; D) significa PET-CT anual em todas crianças. **Gabarito B.** OMS destaca diagnóstico oportuno e não rastreamento indiscriminado; A/C/D não têm fundamento. **Revisão:** vigiar síndromes de predisposição específicas quando indicado."
+    },
+    {
+      "text": "1. Hemograma/esfregaço com blastos de LLA — interpretar achado. 2. Citometria de fluxo esquemática das linhagens — diferenciar leucemias. 3. Imagem de adenomegalia mediastinal em RX — risco respiratório. 4. TC/RM de massa mediastinal — localização e decisão anestésica. 5. US de massa renal de Wilms — diagnóstico inicial. 6. RM/TC de neuroblastoma abdominal com invasão de canal — urgência. 7. Foto de leucocoria licenciada — retinoblastoma. 8. RM de tumor de fossa posterior — SNC e hipertensão intracraniana. 9. RX de lesão óssea agressiva — osteossarcoma. 10. Fluxo clínico de febre neutropênica — conduta em minutos. 11. Quadro bioquímico de lis"
+    },
+    {
+      "text": "Há abordagem inicial forte de detecção, síndromes, diferencial, emergência, casos e questões. **Não está completo:** necessitam revisão de fluxos nacionais de febre neutropênica, protocolos específicos de LLA/LMA/linfomas, algoritmos de estratificação e estadiamento, diagnóstico e prognóstico molecular, manejo de cada tumor sólido, doses e terapias específicas em contexto especializado, neuroblastoma por risco, tumores de SNC por idade/localização, longo prazo/sobreviventes e cuidados paliativos, imagens clínicas autorizadas e ampliação substancial para ~60 mil caracteres úteis. **NÃO PUBLICAR.**"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

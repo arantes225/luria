@@ -1,0 +1,91 @@
+{
+  "sha": "0495680a58c29d75b0196d063aee3d340ede772f",
+  "path": "apostilas/LOTE_03_ANDAMENTO_2026-10-14.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "apostilas--0495680a58",
+  "title": "LURIA — Lote 03: registro operacional de 14/10/2026",
+  "format": ".md",
+  "chars_estimated": 19514,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 03: registro operacional de 14/10/2026"
+    },
+    {
+      "title": "Estados editoriais padronizados"
+    },
+    {
+      "title": "Produção desta etapa (arquivos verificados em branch)"
+    },
+    {
+      "title": "Ampliação concluída nesta etapa — 14/10/2026"
+    },
+    {
+      "title": "Aula 50 — Financiamento e Gestão do SUS (15/10/2026)"
+    },
+    {
+      "title": "Aula 48 — calendário PNI 2026, texto e prévia HTML (14/10/2026)"
+    },
+    {
+      "title": "Aula 47 — prévia HTML em branch editorial (14/10/2026)"
+    },
+    {
+      "title": "Aula 47 — aprofundamento e auditoria (14/10/2026)"
+    },
+    {
+      "title": "Aula 46 — aprofundamento e deduplicação de Asma (14/10/2026)"
+    },
+    {
+      "title": "Aula 46 — ampliação clínica e snapshot de validação (14/10/2026)"
+    },
+    {
+      "title": "Aula 45 — aprofundamento de participação e controle social (14/10/2026)"
+    },
+    {
+      "title": "Aula 43 — aprofundamento clínico de puericultura (14/10/2026)"
+    },
+    {
+      "title": "Aula 42 — versão HTML editorial e validação estática (14/10/2026)"
+    },
+    {
+      "title": "Aula 42 — ampliação clínica, casos e questões (14/10/2026)"
+    },
+    {
+      "title": "Aula 41 — conversão visual realizada (14/10/2026)"
+    },
+    {
+      "title": "Aprofundamento da aula 41 — 14/10/2026"
+    },
+    {
+      "title": "Etapa registrada — cinco temas finais iniciados em 14/10/2026"
+    },
+    {
+      "title": "Próximas ações — revisão de profundidade, não criação superficial"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A apostila `apostilas/_rascunhos/lote-03/46-asma.md` foi revisada com confronto das diretrizes PCDT/MS 2026 e GINA 2026. Há **100.245 caracteres brutos**, **26 capítulos**, **10 casos e 14 questões**. Passaram a constar cálculos diagnósticos, abordagem de fenótipos, comparação pediátrica entre diretrizes, tratamento em etapas, crise grave, seguimento e riscos de dispositivos. Foi removida uma duplicação editorial de capítulos 19–23. A conferência estática confirmou sequência de capítulos 1–26 sem repetição."
+    },
+    {
+      "text": "Foram cotejados o **PCDT da Asma do Ministério da Saúde (Portaria Conjunta 43/2026)** e **GINA 2026**, incluindo a importante diferença entre porcentagem do basal versus previsto na resposta broncodilatadora pediátrica, terapia AIR/MART, crise, faixa de 6–11 anos e imunobiológicos com elegibilidade SUS. Benchmark de Drive reaberto para dois resumos de asma e crise (procedência institucional não verificada), sem reprodução. Padrão HTML de Assistência ao Parto consultado como modelo LURIA."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

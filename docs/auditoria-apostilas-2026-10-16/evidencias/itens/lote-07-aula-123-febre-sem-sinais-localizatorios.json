@@ -1,0 +1,646 @@
+{
+  "key": "lote-07-aula-123-febre-sem-sinais-localizatorios",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-123-febre-sem-sinais-localizatorios.md",
+  "title": "LURIA | Lote 7 — Aula 123",
+  "source_sha256": "28b3ffcf5d5e40e75dd2352f4f960def782ba50771a99821967e2c3135062b89",
+  "chars_estimated": 75865,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Lote 7 — Aula 123",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Febre sem sinais localizatórios na infância",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "Etapa zero — comparação efetivamente realizada",
+      "level": 2
+    },
+    {
+      "line": 15,
+      "title": "Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 18,
+      "title": "1. Primeiro princípio: febre é resposta, não diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 28,
+      "title": "2. Fisiologia do risco — por que a idade é tão importante?",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "2.1. Resposta imune do lactente pequeno",
+      "level": 3
+    },
+    {
+      "line": 33,
+      "title": "2.2. Infecções escondidas",
+      "level": 3
+    },
+    {
+      "line": 36,
+      "title": "2.3. Papel das vacinas",
+      "level": 3
+    },
+    {
+      "line": 39,
+      "title": "3. O que realmente significa “boa aparência”?",
+      "level": 2
+    },
+    {
+      "line": 53,
+      "title": "4. Faixas etárias: o eixo do algoritmo",
+      "level": 2
+    },
+    {
+      "line": 66,
+      "title": "5. Anamnese de alto rendimento",
+      "level": 2
+    },
+    {
+      "line": 77,
+      "title": "6. Exame físico sistemático: buscar foco antes de solicitar exames",
+      "level": 2
+    },
+    {
+      "line": 91,
+      "title": "7. Investigação laboratorial e microbiológica",
+      "level": 2
+    },
+    {
+      "line": 93,
+      "title": "7.1. Urina: o foco bacteriano oculto mais importante",
+      "level": 3
+    },
+    {
+      "line": 98,
+      "title": "7.2. Hemocultura e marcadores",
+      "level": 3
+    },
+    {
+      "line": 103,
+      "title": "7.3. Punção lombar (LCR)",
+      "level": 3
+    },
+    {
+      "line": 106,
+      "title": "7.4. Imagem",
+      "level": 3
+    },
+    {
+      "line": 109,
+      "title": "7.5. Testes virais",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "8. Tratamento e destino conforme risco",
+      "level": 2
+    },
+    {
+      "line": 114,
+      "title": "8.1. Criança com aparência ruim ou sinais de perigo",
+      "level": 3
+    },
+    {
+      "line": 117,
+      "title": "8.2. Bem-aparentado de 8–21 dias",
+      "level": 3
+    },
+    {
+      "line": 120,
+      "title": "8.3. Bem-aparentado de 22–28 dias",
+      "level": 3
+    },
+    {
+      "line": 123,
+      "title": "8.4. Bem-aparentado de 29–60 dias",
+      "level": 3
+    },
+    {
+      "line": 126,
+      "title": "8.5. Criança maior estável",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "9. Situações que exigem cuidado especial",
+      "level": 2
+    },
+    {
+      "line": 131,
+      "title": "Febre após vacina",
+      "level": 3
+    },
+    {
+      "line": 134,
+      "title": "Dengue e outras arboviroses",
+      "level": 3
+    },
+    {
+      "line": 137,
+      "title": "Febre prolongada",
+      "level": 3
+    },
+    {
+      "line": 140,
+      "title": "Criança com doença crônica ou imunodeficiência",
+      "level": 3
+    },
+    {
+      "line": 143,
+      "title": "10. Diagnósticos diferenciais conforme tempo e evolução",
+      "level": 2
+    },
+    {
+      "line": 157,
+      "title": "11. Fluxograma textual para atendimento e reavaliação",
+      "level": 2
+    },
+    {
+      "line": 167,
+      "title": "12. Quatro casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 169,
+      "title": "Caso 1 — neonato aparentemente saudável",
+      "level": 3
+    },
+    {
+      "line": 177,
+      "title": "Caso 2 — 48 dias, urina suspeita",
+      "level": 3
+    },
+    {
+      "line": 185,
+      "title": "Caso 3 — febre após vacina em criança maior",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "Caso 4 — petéquias e perfusão ruim",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "13. Seis questões autorais com comentários completos",
+      "level": 2
+    },
+    {
+      "line": 203,
+      "title": "Questão 1 — faixa etária",
+      "level": 3
+    },
+    {
+      "line": 212,
+      "title": "Questão 2 — cultura de urina",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "Questão 3 — lactente 29–60 dias",
+      "level": 3
+    },
+    {
+      "line": 230,
+      "title": "Questão 4 — criança doente",
+      "level": 3
+    },
+    {
+      "line": 239,
+      "title": "Questão 5 — antibióticos",
+      "level": 3
+    },
+    {
+      "line": 248,
+      "title": "Questão 6 — vacinação e dengue",
+      "level": 3
+    },
+    {
+      "line": 257,
+      "title": "14. Pérolas práticas para provas e ambulatório",
+      "level": 2
+    },
+    {
+      "line": 270,
+      "title": "15. Plano de imagens e recursos originais — SEM IMAGENS INCORPORADAS",
+      "level": 2
+    },
+    {
+      "line": 284,
+      "title": "16. Fontes clínicas com escopo explicitado",
+      "level": 2
+    },
+    {
+      "line": 294,
+      "title": "17. Checklist de aprovação pendente",
+      "level": 2
+    },
+    {
+      "line": 313,
+      "title": "AMPLIAÇÃO CLÍNICA — FEBRE SEM SINAIS LOCALIZATÓRIOS (FSSL)",
+      "level": 1
+    },
+    {
+      "line": 316,
+      "title": "18. A decisão de risco começa antes dos exames",
+      "level": 2
+    },
+    {
+      "line": 318,
+      "title": "18.1. Diferenciar \"febre sem foco\" de \"sem diagnóstico após exames\"",
+      "level": 3
+    },
+    {
+      "line": 323,
+      "title": "18.2. O que significa febre documentada?",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "18.3. O termômetro não substitui a perfusão",
+      "level": 3
+    },
+    {
+      "line": 333,
+      "title": "18.4. Febre e rigores",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "19. Sinais de gravidade: a triagem por sistemas resolve antes do algoritmo laboratorial",
+      "level": 2
+    },
+    {
+      "line": 338,
+      "title": "19.1. Traduzir NICE \"traffic light\" em ação",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "19.2. Sinais precoces que a família percebe antes do profissional",
+      "level": 3
+    },
+    {
+      "line": 356,
+      "title": "19.3. Petequias: hematoma benigno não é o mesmo que púrpura fulminante",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "19.4. Febre sem foco + taquicardia não prova choque",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "20. Escolhendo algoritmos sem misturar populações",
+      "level": 2
+    },
+    {
+      "line": 368,
+      "title": "20.1. AAP 2021 — quem está incluído?",
+      "level": 3
+    },
+    {
+      "line": 373,
+      "title": "20.2. Primeiros sete dias: neonatal é outro território",
+      "level": 3
+    },
+    {
+      "line": 378,
+      "title": "20.3. AAP 8–21 dias — a baixa probabilidade não tranquiliza sozinha",
+      "level": 3
+    },
+    {
+      "line": 385,
+      "title": "20.4. AAP 22–28 dias — a janela de decisão se abre, mas é estreita",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "20.5. AAP 29–60 dias — separar ITU de infecção bacteriana invasiva",
+      "level": 3
+    },
+    {
+      "line": 395,
+      "title": "20.6. Dos 61 aos 90 dias",
+      "level": 3
+    },
+    {
+      "line": 398,
+      "title": "20.7. De três a seis meses e infância maior",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "21. Exames de urina, sangue e LCR — interpretar com o resultado pré-teste",
+      "level": 2
+    },
+    {
+      "line": 405,
+      "title": "21.1. Urina: a etapa técnica altera o diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 410,
+      "title": "21.2. Exemplo de urina:",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "21.3. Marcadores AAP: números de apoio, não oráculos",
+      "level": 3
+    },
+    {
+      "line": 420,
+      "title": "21.4. Hemocultura: quando colher e por que não dar antibiótico sem necessidade?",
+      "level": 3
+    },
+    {
+      "line": 425,
+      "title": "21.5. O LCR não é \"exame de febre\", mas teste de meningite e risco",
+      "level": 3
+    },
+    {
+      "line": 432,
+      "title": "21.6. Punção traumática e marcador falso",
+      "level": 3
+    },
+    {
+      "line": 435,
+      "title": "21.7. Teste viral positivo: o que realmente altera?",
+      "level": 3
+    },
+    {
+      "line": 438,
+      "title": "22. Tratamento e seguimento: por que a alta precisa de uma rede, não só uma receita",
+      "level": 2
+    },
+    {
+      "line": 440,
+      "title": "22.1. Antibiótico dirigido e antibiótico empírico são estratégias diferentes",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "22.2. Antitérmico: conforto e segurança",
+      "level": 3
+    },
+    {
+      "line": 450,
+      "title": "22.3. A melhora com antitérmico tem utilidade, mas não exclui risco",
+      "level": 3
+    },
+    {
+      "line": 453,
+      "title": "22.4. Plano de retorno que evita abandono",
+      "level": 3
+    },
+    {
+      "line": 464,
+      "title": "22.5. Culturas negativas e suspender antimicrobiano",
+      "level": 3
+    },
+    {
+      "line": 467,
+      "title": "22.6. Como documentar sem frases vagas?",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "23. Diagnósticos brasileiros que mudam decisão quando o foco ainda não apareceu",
+      "level": 2
+    },
+    {
+      "line": 473,
+      "title": "23.1. Dengue no início da febre",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "23.2. Doença de Kawasaki",
+      "level": 3
+    },
+    {
+      "line": 485,
+      "title": "23.3. MIS-C pós-SARS-CoV-2",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "23.4. Osteoartrite infecciosa e infecção osteoarticular",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "23.5. Infecção oculta de pele, mastoidite e pneumonia inicial",
+      "level": 3
+    },
+    {
+      "line": 494,
+      "title": "23.6. Febre de origem indeterminada",
+      "level": 3
+    },
+    {
+      "line": 497,
+      "title": "24. Matriz comparativa do que o algoritmo responde",
+      "level": 2
+    },
+    {
+      "line": 513,
+      "title": "25. Casos clínicos de aprofundamento — o que muda entre dois pacientes febris?",
+      "level": 2
+    },
+    {
+      "line": 515,
+      "title": "Caso 5 — bronquiolite não significa que nunca há ITU",
+      "level": 3
+    },
+    {
+      "line": 523,
+      "title": "Caso 6 — urocultura de saco não confirma pielonefrite",
+      "level": 3
+    },
+    {
+      "line": 531,
+      "title": "Caso 7 — dengue quando a febre desaparece",
+      "level": 3
+    },
+    {
+      "line": 539,
+      "title": "Caso 8 — Kawasaki incompleta no lactente",
+      "level": 3
+    },
+    {
+      "line": 547,
+      "title": "Caso 9 — retorno inseguro altera decisão",
+      "level": 3
+    },
+    {
+      "line": 555,
+      "title": "Caso 10 — febre alta e rigores não são sinônimo de antibiótico",
+      "level": 3
+    },
+    {
+      "line": 563,
+      "title": "26. Oito questões inéditas — todas as alternativas comentadas",
+      "level": 2
+    },
+    {
+      "line": 565,
+      "title": "Questão 7 — marcador normal e idade neonatal",
+      "level": 3
+    },
+    {
+      "line": 570,
+      "title": "Questão 8 — a quem AAP não se aplica literalmente?",
+      "level": 3
+    },
+    {
+      "line": 575,
+      "title": "Questão 9 — cultura de urina inadequada",
+      "level": 3
+    },
+    {
+      "line": 580,
+      "title": "Questão 10 — teste de influenza positivo",
+      "level": 3
+    },
+    {
+      "line": 585,
+      "title": "Questão 11 — defervescência perigosa",
+      "level": 3
+    },
+    {
+      "line": 590,
+      "title": "Questão 12 — Kawasaki incompleta",
+      "level": 3
+    },
+    {
+      "line": 595,
+      "title": "Questão 13 — NICE e AAP",
+      "level": 3
+    },
+    {
+      "line": 600,
+      "title": "Questão 14 — decisão de alta no pequeno lactente",
+      "level": 3
+    },
+    {
+      "line": 605,
+      "title": "27. Matriz de cobertura: texto que sustenta conduta e questão",
+      "level": 2
+    },
+    {
+      "line": 624,
+      "title": "28. Fontes primárias usadas para esta ampliação",
+      "level": 2
+    },
+    {
+      "line": 632,
+      "title": "29. Auditoria editorial desta rodada — ainda não é certificação",
+      "level": 2
+    }
+  ],
+  "references": [
+    "7. Pantell RH et al. AAP. **Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old.** *Pediatrics*. 2021;148(2):e2021052228. https://publications.aap.org/pediatrics/article/148/2/e2021052228/179783/Clinical-Practice-Guideline-Evaluation-and",
+    "8. NICE NG143. **Fever in under 5s: assessment and initial management.** 2019, última atualização 26/11/2021. https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+    "9. Ministério da Saúde. **Dengue: diagnóstico e manejo clínico: adulto e criança**, publicação revisada disponibilizada em 10/07/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view",
+    "10. Ministério da Saúde. **Dengue — publicações e fluxos oficiais** (revisão 10/07/2026). https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue",
+    "11. Sociedade Brasileira de Pediatria. **Manejo da febre aguda** (2021) — fonte brasileira previamente registrada na seção 16; recomendações específicas exigem confronto integral da versão oficial antes de dosagens.",
+    "12. Ministério da Saúde. **Atenção Integrada às Doenças Prevalentes na Infância (AIDPI)** — complemento brasileiro da triagem pediátrica; não substituir diretrizes específicas de lactentes febris."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.sbp.com.br/orientacoes-sobre-manejo-da-febre-e-tema-de-novo-documento-cientifico-da-sbp/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/aidpi",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1542/peds.2021-052228",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.aap.org/en/patient-care/infant-fever/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtp/dtp/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://publications.aap.org/pediatrics/article/148/2/e2021052228/179783/Clinical-Practice-Guideline-Evaluation-and",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exemplo comparativo:** 35 dias, PCT 0,12, PCR 8 mg/L, ANC 2.100/mm³ e urinálise negativa: o padrão é tranquilizador **se o paciente é realmente elegível e bem-aparentado**. Em bebê de mesma idade, perfusão ruim, sonolência e gemência, os marcadores \"bons\" não autorizam baixa prioridade, pois o algoritmo de baixo risco não se aplica ao doente grave.",
+      "pattern": 0
+    },
+    {
+      "text": "Pesquisados no Google Drive materiais de febre, febre sem foco e pediatria. **Não foi identificado um caderno de FSSL diretamente equivalente.** Foi aberto e lido “Pneumonia Comunitária na Pediatria.pdf” (resumo de ~1,2 mil caracteres sobre febre, taquipneia, hipoxemia, consolidação e critérios de internação); material de autoria nominal Maysa Mismetti, **sem comprovação de que seja Estratégia MED**. Também foi lido “Imunizações .pdf” (resumo do PNI 2020, ~2,9 mil caracteres), usado somente como contraste para lembrar que **calendário vacinal antigo não pode ser considerado protocolo atual**. Esses arquivos são comparativos **parciais**, não equivalem a guia de FSSL e não fundamentam recomendações médicas deste texto. As fontes clínicas centrais estão discriminadas adiante (SBP, Ministério da Saúde/AIDPI, AAP).",
+      "pattern": 1
+    },
+    {
+      "text": "A temperatura depende do sítio de medida, técnica, horário e contexto. Na criança pequena, valores axilares não devem ser equiparados sem conversão validada aos pontos de corte retais empregados por algumas diretrizes. No algoritmo da AAP para lactentes de 8 a 60 dias, considera-se **febre ≥38,0 °C**, obtida por medida adequadamente documentada; febre referida por cuidador também merece investigação conforme confiabilidade e risco. Criança que está afebril na consulta após antitérmico não perde automaticamente o histórico de febre.",
+      "pattern": 1
+    },
+    {
+      "text": "**FSSL**, segundo a comunicação da SBP sobre manejo da febre, designa febre com duração inferior a sete dias, sem causa identificável na história e no exame. Depois de alguns dias, o “sem foco” pode tornar-se exantema, otite, síndrome respiratória, ITU ou outro diagnóstico. Reavaliar é parte do raciocínio, não indicação de falha inicial por si só.",
+      "pattern": 1
+    },
+    {
+      "text": "Fontes devem ser verificadas quanto à edição mais atual na revisão final, e mudanças no PNI ou epidemiologia local devem ser refletidas separadamente. O documento da AAP foi publicado em 2021; não afirmar que é atualização de 2026.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Pesquisados no Google Drive materiais de febre, febre sem foco e pediatria. **Não foi identificado um caderno de FSSL diretamente equivalente.** Foi aberto e lido “Pneumonia Comunitária na Pediatria.pdf” (resumo de ~1,2 mil caracteres sobre febre, taquipneia, hipoxemia, consolidação e critérios de internação); material de autoria nominal Maysa Mismetti, **sem comprovação de que seja Estratégia MED**. Também foi lido “Imunizações .pdf” (resumo do PNI 2020, ~2,9 mil caracteres), usado somente como contraste para lembrar que **calendário vacinal antigo não pode ser considerado protocolo atual**. Esses arquivos são comparativos **parciais**, não equivalem a guia de FSSL e não fundamentam recomendações médicas deste texto. As fontes clínicas centrais estão discriminadas adiante (SBP, Ministério da Saúde/AIDPI, AAP)."
+    },
+    {
+      "text": "**Apostila LURIA preexistente:** nenhuma pasta de mesmo título foi vista na listagem nominal de apostilas; criar rascunho sem substituir arquivo existente. **Limitação editorial:** etapa zero específica não plenamente cumprida; manter rascunho não certificado até localizar fonte comparativa mais apropriada."
+    }
+  ]
+}

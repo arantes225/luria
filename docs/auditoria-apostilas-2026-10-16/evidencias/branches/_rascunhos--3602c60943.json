@@ -1,0 +1,378 @@
+{
+  "sha": "3602c60943a7bfdc2efabf2b7613c5bf9996644f",
+  "path": "apostilas/_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--3602c60943",
+  "title": "LURIA — Tema 132 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)",
+  "format": ".md",
+  "chars_estimated": 67429,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tema 132 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)"
+    },
+    {
+      "title": "Hemorragia Digestiva Baixa: da hematoquezia à hemostasia"
+    },
+    {
+      "title": "0. Etapa zero"
+    },
+    {
+      "title": "1. Definição e apresentação"
+    },
+    {
+      "title": "2. Fisiologia do sangramento e do choque"
+    },
+    {
+      "title": "3. Etiologias com comparação clínica"
+    },
+    {
+      "title": "4. Primeira avaliação no pronto-socorro"
+    },
+    {
+      "title": "5. Transfusão e antitrombóticos: contextualizar"
+    },
+    {
+      "title": "6. Colonoscopia, preparo, CTA e radiologia intervencionista"
+    },
+    {
+      "title": "6.1. Qual paciente se beneficia de colonoscopia?"
+    },
+    {
+      "title": "6.2. Sangramento persistente com instabilidade"
+    },
+    {
+      "title": "6.3. Quando pensar em sangramento de intestino delgado?"
+    },
+    {
+      "title": "7. Tratamento por etiologia"
+    },
+    {
+      "title": "8. Diferencial por perfil temporal"
+    },
+    {
+      "title": "9. Fluxos práticos"
+    },
+    {
+      "title": "10. Quatro casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — sangue vivo indolor em idoso"
+    },
+    {
+      "title": "Caso 2 — hematoquezia com hipotensão"
+    },
+    {
+      "title": "Caso 3 — dor e sangue: não é só divertículo"
+    },
+    {
+      "title": "Caso 4 — sangramento após polipectomia e anticoagulação"
+    },
+    {
+      "title": "11. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — HDB e timing"
+    },
+    {
+      "title": "Questão 2 — hematoquezia e choque"
+    },
+    {
+      "title": "Questão 3 — instabilidade e CTA"
+    },
+    {
+      "title": "Questão 4 — divertículo"
+    },
+    {
+      "title": "Questão 5 — antitrombótico"
+    },
+    {
+      "title": "Questão 6 — sangue e dor"
+    },
+    {
+      "title": "12. Revisão rápida"
+    },
+    {
+      "title": "13. Imagens candidatas planejadas, nenhuma aprovada"
+    },
+    {
+      "title": "14. Fontes científicas"
+    },
+    {
+      "title": "15. Checklist pendente"
+    },
+    {
+      "title": "LURIA — APROFUNDAMENTO CLÍNICO E ENDOSCÓPICO"
+    },
+    {
+      "title": "16. Hemorragia baixa em três cenários: a gravidade decide a sequência"
+    },
+    {
+      "title": "16.1. Cenário 1: a perda discreta que não deve ser banalizada"
+    },
+    {
+      "title": "16.2. Cenário 2: HDB maior, mas a pessoa foi estabilizada"
+    },
+    {
+      "title": "16.3. Cenário 3: o sangramento volumoso continua e a perfusão cai"
+    },
+    {
+      "title": "17. Anatomia arterial e topografia: de onde vem o sangue?"
+    },
+    {
+      "title": "17.1. O cólon não tem irrigação uniforme"
+    },
+    {
+      "title": "17.2. O segmento importa na interpretação das fezes"
+    },
+    {
+      "title": "17.3. Microvasos e angiodisplasia"
+    },
+    {
+      "title": "18. Avaliação hemodinâmica: a fisiologia que não cabe no valor inicial de Hb"
+    },
+    {
+      "title": "18.1. Por que pressão normal pode coexistir com perda importante?"
+    },
+    {
+      "title": "18.2. Hemoglobina é concentração, não medidor instantâneo de hemorragia"
+    },
+    {
+      "title": "18.3. Transfusão restritiva tem condições"
+    },
+    {
+      "title": "19. O Oakland score: baixo risco não é ausência de diagnóstico"
+    },
+    {
+      "title": "19.1. O propósito do escore"
+    },
+    {
+      "title": "19.2. O que torna alta plausível?"
+    },
+    {
+      "title": "19.3. Exemplo para não usar score cegamente"
+    },
+    {
+      "title": "19.4. Como calcular o Oakland: sete variáveis, unidades e interpretação"
+    },
+    {
+      "title": "20. Exames: diferenciar localizar sangue de caracterizar doença"
+    },
+    {
+      "title": "20.1. Colonoscopia durante internação"
+    },
+    {
+      "title": "20.2. Angiotomografia (CTA)"
+    },
+    {
+      "title": "20.3. Angiografia e embolização"
+    },
+    {
+      "title": "20.4. Estudos do intestino delgado"
+    },
+    {
+      "title": "20.5. Ler a angio-TC como exame de sangramento, não apenas como laudo “positivo/negativo”"
+    },
+    {
+      "title": "21. Tratamento das etiologias: exame e técnica precisam responder ao vaso certo"
+    },
+    {
+      "title": "21.1. Hemorragia diverticular"
+    },
+    {
+      "title": "21.2. Angiodisplasia"
+    },
+    {
+      "title": "21.3. Colite isquêmica"
+    },
+    {
+      "title": "21.4. Colite infecciosa"
+    },
+    {
+      "title": "21.5. Doença inflamatória intestinal"
+    },
+    {
+      "title": "21.6. Neoplasia colorretal e lesões pré-neoplásicas"
+    },
+    {
+      "title": "21.7. Pós-polipectomia"
+    },
+    {
+      "title": "21.8. Lesões anorretais"
+    },
+    {
+      "title": "22. Anticoagulantes e antiagregantes: além de “suspender ou continuar”"
+    },
+    {
+      "title": "22.1. Varfarina"
+    },
+    {
+      "title": "22.2. Anticoagulantes de ação direta (DOAC)"
+    },
+    {
+      "title": "22.3. AAS e dupla antiagregação"
+    },
+    {
+      "title": "22.4. A verdadeira pergunta da alta"
+    },
+    {
+      "title": "23. Populações especiais e comorbidades"
+    },
+    {
+      "title": "23.1. Idoso frágil"
+    },
+    {
+      "title": "23.2. Cirrose e hipertensão portal"
+    },
+    {
+      "title": "23.3. Gestação"
+    },
+    {
+      "title": "23.4. Pediatria"
+    },
+    {
+      "title": "23.5. Imunossuprimidos"
+    },
+    {
+      "title": "24. Alta e prevenção de recorrência: completar a linha de cuidado"
+    },
+    {
+      "title": "24.1. Hemorragia resolvida não significa doença explicada"
+    },
+    {
+      "title": "24.2. Ferro e reabilitação de anemia"
+    },
+    {
+      "title": "24.3. Fatores modificáveis"
+    },
+    {
+      "title": "24.4. Sinais de retorno"
+    },
+    {
+      "title": "25. Fluxograma de decisão em quatro perguntas"
+    },
+    {
+      "title": "26. Resumo técnico de confronto ACG 2023 × ESGE 2021"
+    },
+    {
+      "title": "27. Casos clínicos avançados — seis decisões que não cabem no algoritmo curto"
+    },
+    {
+      "title": "Caso 5 — CTA positiva e sangramento diverticular arterial"
+    },
+    {
+      "title": "Caso 6 — a hemorroida aparente que escondia câncer"
+    },
+    {
+      "title": "Caso 7 — colite isquêmica depois de hipotensão"
+    },
+    {
+      "title": "Caso 8 — idoso com anticoagulante por FA e stent recente"
+    },
+    {
+      "title": "Caso 9 — bebê com sangue nas fezes e dor intermitente"
+    },
+    {
+      "title": "Caso 10 — duas endoscopias negativas, mas anemia não resolve"
+    },
+    {
+      "title": "28. Oito questões adicionais com quatro alternativas comentadas"
+    },
+    {
+      "title": "Questão 7 — nova recomendação de timing"
+    },
+    {
+      "title": "Questão 8 — score de Oakland"
+    },
+    {
+      "title": "Questão 9 — hematoquezia e choque"
+    },
+    {
+      "title": "Questão 10 — angio-TC positiva"
+    },
+    {
+      "title": "Questão 11 — colite e isquemia"
+    },
+    {
+      "title": "Questão 12 — estenose aórtica e ectasia vascular"
+    },
+    {
+      "title": "Questão 13 — dois riscos da dupla antiagregação"
+    },
+    {
+      "title": "Questão 14 — pediatria"
+    },
+    {
+      "title": "29. Matriz de autossuficiência e revisão final de HDB"
+    }
+  ],
+  "reference_entries": [
+    "- ACG. *Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline*. Am J Gastroenterol 2023. Conferir acesso à edição integral na revisão final. https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "- ESGE. *Diagnosis and management of acute lower gastrointestinal bleeding*. Endoscopy 2021;53:850–868. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "- LURIA. \\`apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md\\` — diferencial alto, sem duplicar tratamento.",
+    "- [x] História, anatomia, diferenciais, risco, CTA/colonoscopia, tratamento, 4 casos e 6 questões.",
+    "- [x] Registro transparente de falta de benchmark específico no Drive.",
+    "- [ ] Conferir ACG 2023 integral, inclusive nuances de Glasgow/Oakland, transfusão e sangramento ativo em contraste com ESGE.",
+    "- [ ] Estender endoscopia de intestino delgado, etiologia pediátrica, cirurgia e pós-procedimento, com doses brasileiras.",
+    "- [ ] Aprofundar para padrão premium e ≥60.000 caracteres didáticos úteis sem repetição.",
+    "- [ ] Imagens licenciadas, validação médica, teste editorial desktop/PWA e revisão de bibliografia.",
+    "**Status:** rascunho, NÃO PUBLICADO.",
+    "---",
+    "**Rodada editorial:** 14/10/2026. Base científica principal: ACG 2023 e ESGE 2021; o material correlato “Úlcera péptica” do Drive compara somente **hemorragia digestiva alta**. O capítulo a seguir é produção original de HDB e deixa explícito onde essa falta de benchmark específico permanece. Nenhum texto ou imagem do Drive foi reproduzido.",
+    "**Sangue no papel após evacuação dolorosa** sugere fissura, mas **hemorroidas ou fissuras coexistentes não excluem câncer**. Sangue misturado ao bolo fecal, alteração recente do hábito intestinal, emagrecimento, anemia ferropriva e história familiar reforçam investigação colorretal. Uma boa abordagem permite que a doença anorretal seja tratada sem encerrar prematuramente o estudo.",
+    "- **divertículos** podem sangrar por lesão de vasa recta na parede, com sangramento arterial abrupto frequentemente indolor;",
+    "- **colite isquêmica** reflete sofrimento da mucosa por baixo fluxo/vasoconstrição/alterações vasculares, causando dor, urgência evacuatória e sangue em intensidade variável.",
+    "**Índice de choque**, razão frequência cardíaca/pressão sistólica, pode ajudar triagem. Um valor acima de ~1 em certos adultos pode sugerir instabilidade, mas não é limiar universal, e é alterado por idade/medicações/ritmo; não usar para negar choque em paciente bradicárdico ou com cardiopatia.",
+    "**Comparação de casos:**",
+    "- A: hematoquezia há 20 minutos, PA 79/42, confuso, Hb 11,2 → emergência e ressuscitação sem esperar 7 g/dL.",
+    "- B: Hb 6,8, sem sangramento volumoso atual, PA normal e doença renal → avaliar necessidade transfusional, causa crônica, comorbidades e terapias de ferro, sem acionar protocolo de hemorragia maciça por valor isolado.",
+    "**O escore não substitui o médico:** pessoa com sinais de choque, doença coronariana aguda, anticoagulação importante, novo sangramento abundante, barreira de acesso ou suspeita de neoplasia necessita avaliação própria mesmo se uma calculadora mostrar resultado baixo. A pontuação também depende de exame e unidade de Hb adequados; não produzir escore com dados faltantes como se fossem zero.",
+    "**Exemplo resolvido, baixo risco imediato:** mulher de 45 anos, sem internação anterior por HDB, sem sangue observado ao exame retal, FC 68 bpm, PAS 140 mmHg e Hb 13,7 g/dL. Pontos = idade **1** + sexo **0** + antecedente **0** + exame **0** + FC **0** + PAS **2** + Hb **4** = **7**. Se a hemorragia cessou, não existem sinais adversos e o acesso à investigação está assegurado, **≤8** é um elemento que favorece considerar seguimento ambulatorial, conforme ESGE; não autoriza alta automática.",
+    "**Exemplo resolvido, perda relevante:** homem de 72 anos, internação anterior por HDB, sangue ao toque retal, FC 114 bpm, PAS 100 mmHg e Hb 9,4 g/dL. Soma = **2 + 1 + 1 + 1 + 3 + 4 + 13 = 25**. A instabilidade ou a possibilidade de sangramento importante já exige abordagem hospitalar, independentemente de qualquer escore. Não aguardar a calculadora para reanimar.",
+    "**Limites do instrumento:** o escore foi derivado para estratificar necessidade de intervenção/desfechos hospitalares, não para excluir malignidade, medir volume perdido ou escolher entre colonoscopia e angio-TC. Um componente ausente **não recebe zero por conveniência**. Sinais incompatíveis com aplicação segura (por exemplo, PAS abaixo das faixas da derivação) exigem julgamento de gravidade, e não extrapolação matemática. Valores e componentes conferidos com a tabela da validação externa publicada no *JAMA Network Open* (2020): https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/; recomendação ",
+    "**Colonoscopia urgente de baixo rendimento:** paciente em choque, sem preparo, com sangramento ativo abundante, sedação arriscada e pouca visualização pode ter procedimento inconclusivo. Essa situação justifica considerar CTA/radiologia ou estabilizar primeiro. Em paciente estável, colonoscopia precoce durante hospitalização faz sentido, mas em geral **não exige relógio <24 h** para benefício em desfechos clínicos.",
+    "**CTA positiva:** chamar radiologia intervencionista, correlacionar território vascular e pensar em embolização transcateter quando paciente/recursos permitem.  ",
+    "**CTA negativa e paciente estabilizou:** observação, colonoscopia e investigação conforme risco.  ",
+    "**CTA negativa mas choque persiste:** revisar origem alta, frequência do sangramento, repetir avaliação e organizar hemostasia por outras vias quando indicado.",
+    "**Função renal e contraste:** risco de lesão renal por contraste é consideração, mas em hemorragia ameaçadora à vida deve ser equilibrado com necessidade de hemostasia. A avaliação de risco renal não pode transformar proteção contra possível lesão renal em atraso fatal de diagnóstico vascular.",
+    "**Papel da cirurgia:** quando há sangramento persistente ou recorrente com repercussão vital e endoscopia/embolização falharam, não estão disponíveis ou não são apropriadas, a equipe cirúrgica precisa avaliar controle definitivo. A localização do ponto hemorrágico aumenta a chance de ressecção direcionada e evita retirada extensa de intestino por hipótese frágil. Não interpretar este parágrafo como indicação de colectomia imediata em toda hematoquezia volumosa; a prioridade permanece reanimação, localização e tratamento mais adequado aos recursos disponíveis.",
+    "**Erro de prova frequente:** “angio-TC negativa exclui HDB” é falso quando o paciente sangra de modo intermitente. Já “angio-TC positiva significa operar” também é falso: a imagem frequentemente abre caminho para intervenção endovascular. As recomendações ACG 2023 e ESGE 2021 sustentam a centralidade da CTA quando há hemorragia importante/instabilidade e a ausência de obrigação de colonoscopia emergencial em todos os internados."
+  ],
+  "external_urls": [
+    "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/;",
+    "https://pubmed.ncbi.nlm.nih.gov/36735555/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Origem | Padrão sugestivo | Elemento diagnóstico e armadilha | |---|---|---| | Diverticulose colônica | Hematoquezia frequentemente indolor, por vezes volumosa, em pessoa mais velha | Colonoscopia/CTA conforme atividade; divertículo incidental não prova fonte | | Angiodisplasia | Sangramento intermitente/recorrente, anemia, idosos, valvopatia/DRC | Lesão vascular endoscópica; pode coexistir com outras causas | | Colite isquêmica | Dor abdominal e sangue, contexto de baixo fluxo/aterosclerose | TC/colonoscopia seletivas após estabilização; excluir isquemia mesentérica grave | | Doença inflamatória intestinal | Diarreia sanguinolenta, tenesmo"
+    },
+    {
+      "text": "**Exames:** hemograma seriado, função renal, eletrólitos, tipagem e prova de compatibilidade, coagulação conforme medicamento/doença; não pedir indiscriminadamente painel de exames sem pergunta clínica. Angio-TC pode localizar extravasamento ativo, especialmente em sangramento persistente hemodinamicamente relevante. Ultrassonografia não substitui TC/colonoscopia no diagnóstico do local de hemorragia colorretal ativa."
+    },
+    {
+      "text": "**Antiagregação:** AAS para prevenção cardiovascular secundária costuma ter papel distinto daquele usado para prevenção primária. ESGE recomenda, se possível, não interromper AAS em prevenção secundária e, quando interrompido, retomar precocemente após hemostasia. Dupla antiagregação após stent recente exige discussão com cardiologia."
+    },
+    {
+      "text": "**Preparo intestinal:** solução purgativa por via oral/sonda quando necessário pode melhorar visualização e reduzir procedimento inconclusivo. Preparo inadequado dificulta detectar divertículo responsável, vaso ou tumor e aumenta risco de uma colonoscopia de baixo rendimento. Contraindicações e tolerância dependem de instabilidade, risco de aspiração e íleo."
+    },
+    {
+      "text": "| Variável | Faixa ou resposta → pontos | |---|---| | Idade | até 39 anos → **0**; 40–69 → **1**; 70 ou mais → **2** | | Sexo registrado no modelo original | feminino → **0**; masculino → **1** | | Hospitalização prévia por HDB | não → **0**; sim → **1** | | Sangue no toque retal | ausente → **0**; presente → **1** | | Frequência cardíaca inicial | até 69 bpm → **0**; 70–89 → **1**; 90–109 → **2**; 110 ou mais → **3** | | Pressão arterial sistólica inicial | 160 mmHg ou mais → **0**; 130–159 → **2**; 120–129 → **3**; 90–119 → **4**; 50–89 → **5** | | Hemoglobina inicial | 16,0 g/dL ou mais → **0**; 13,0–15,9 → **4**; 11,0–12,9 → **8**; 9,0–10"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

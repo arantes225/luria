@@ -1,0 +1,128 @@
+{
+  "sha": "b77af4efe5cc23268885852967d5d3e0c3406d7b",
+  "path": "apostilas/lei-8142-1990/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "lei-8142-1990--b77af4efe5",
+  "title": "Lei nº 8.142/1990 — Participação Social e Repasses no SUS",
+  "format": ".json",
+  "chars_estimated": 90579,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Lei nº 8.142/1990: participação democrática e financiamento do SUS"
+    },
+    {
+      "id": "contexto",
+      "title": "1. Constituição, Reforma Sanitária e por que a Lei 8.142 foi necessária"
+    },
+    {
+      "id": "conferencia",
+      "title": "2. Conferências de Saúde — art. 1º, §1º"
+    },
+    {
+      "id": "conselho",
+      "title": "3. Conselhos de Saúde — art. 1º, §2º"
+    },
+    {
+      "id": "paridade",
+      "title": "4. Paridade e representatividade — art. 1º, §§3º–5º e Resolução CNS 453/2012"
+    },
+    {
+      "id": "res453",
+      "title": "5. Resolução CNS nº 453/2012: funcionamento efetivo dos conselhos"
+    },
+    {
+      "id": "instancias",
+      "title": "6. Conselhos, conferências, CIB/CIT e outros canais de participação"
+    },
+    {
+      "id": "fns",
+      "title": "7. Art. 2º — Fundo Nacional de Saúde: quatro grupos de alocação de recursos"
+    },
+    {
+      "id": "repasses",
+      "title": "8. Art. 3º — repasses regulares e automáticos, consórcios e a LC 141/2012"
+    },
+    {
+      "id": "condicoes",
+      "title": "9. Art. 4º — os seis requisitos legais para receber recursos"
+    },
+    {
+      "id": "planejamento",
+      "title": "10. Do problema sanitário à decisão: plano, orçamento, controle e transparência"
+    },
+    {
+      "id": "revisao",
+      "title": "11. Mapa de prova: literalidade, prazos e diferenças que mais confundem"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos aplicados — como interpretar e agir institucionalmente"
+    },
+    {
+      "id": "questoes",
+      "title": "13. Questões autorais comentadas — literalidade e aplicação"
+    },
+    {
+      "id": "referencias",
+      "title": "14. Referências, matriz de cobertura e advertências editoriais"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"14. Referências, matriz de cobertura e advertências editoriais\"]",
+    "[\"3\",\"Fontes normativas primárias verificadas\"]",
+    "[\"o\",[\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/leis/l8142.htm\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Presidência da República. Lei nº 8.142/1990. Participação da comunidade e transferências intergovernamentais de recursos. Texto oficial consultado em 15/10/2026.</a>\",\"<a href=\\\"https://www2.camara.leg.br/legin/fed/lei/1990/lei-8142-28-dezembro-1990-366031-publicacaooriginal-1-pl.html\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Câmara dos Deputados. Lei nº 8.142/1990, publicação original e dispositivos completos, arts. 1º–7º.</a>\",\"<a href=\\\"https://www.gov.br/conselho-naci",
+    "[\"3\",\"Mapa de suficiência didática\"]",
+    "[\"t\",[\"Competência de estudo\",\"Capítulo que ensina\",\"Exercício de checagem\"],[[\"Objetivo geral da lei e relação com Constituição\",\"Visão e cap.1\",\"Q1, Q3, Q20\"],[\"Conferência quadrienal e extraordinária\",\"Cap.2\",\"Caso 2, Q2 e Q21\"],[\"Conselho permanente/deliberativo\",\"Cap.3\",\"Caso 3, Q3, Q9 e Q20\"],[\"Paridade e 50/25/25\",\"Cap.4\",\"Caso 1, Q4 e Q5\"],[\"Resolução 453, presidência, quórum, homologação\",\"Cap.5\",\"Casos 3 e 11, Q7–Q9 e Q19\"],[\"Distinção entre Conselho e CIB/CIT\",\"Cap.6\",\"Caso 6, Q24\"],[\"Art. 2º destinos de recursos FNS\",\"Cap.7\",\"Q10\"],[\"Art. 3º e LC 141, consórcios\",\"Cap.8\",\"Casos 6–7",
+    "[\"p\",\"<strong>Comparativo obrigatório da etapa zero:</strong> aberto o material `SUS.pdf` do Google Drive do usuário em 15/10/2026 (2.670 caracteres de texto extraídos). A autoria institucional do cursinho não pôde ser confirmada; documento de mapa mental não abrange repasses e requisitos de financiamento. Também abertas apostilas LURIA `principios-diretrizes-sus/content.json` (005) e `lei-8080-1990/content.json` (010) para evitar duplicação. Plano de comparação em `apostilas/lotes/TEMA_015_LEI_8142_AUDITORIA_2026-10-15.md`. Conteúdo deste rascunho é original; nenhum texto, tabela ou imagem de",
+    "[\"p\",\"<strong>Atualização de fontes:</strong> a Lei nº 8.142/1990, art.3º §2º conserva o registro literal sobre pelo menos 70% de certos recursos aos municípios; sua aplicação contemporânea deve ser analisada junto da LC 141/2012 e normas de financiamento. A proporção detalhada 50/25/25, reuniões mensais, prazo de trinta dias e outras regras procedimentais derivam da Resolução CNS 453/2012, não do texto literal do art.1º da lei.\"]",
+    "[\"p\",\"<strong>Status de produção:</strong> rascunho editorial não submetido a revisão jurídica independente, teste de autossuficiência com estudantes, conciliação com todas as alterações normativas/portarias de financiamento, revisão de direitos autorais ou inspeção PWA/desktop. Antes de publicar, conferir legislação vigente naquela data, consistência dos casos e questões, siglas e clareza semântica; desenhos/esquemas autorais deverão ser montados em estágio próprio sem imagens externas não aprovadas no Admin. Não houve index.html, catálogo, merge ou deploy.\"]"
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8142-28-dezembro-1990-366031-publicacaooriginal-1-pl.html",
+    "https://www.gov.br/conselho-nacional-de-saude/pt-br/atos-normativos/resolucoes/2012/resolucao-no-453.pdf",
+    "https://www.gov.br/conselho-nacional-de-saude/pt-br/acesso-a-informacao/composicao",
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "conferencia",
+      "text": "Uma conferência pode recomendar expansão de saúde mental, mas a distribuição de leitos, equipes e financiamento precisa considerar evidências epidemiológicas, legislação, recursos e planejamento regional. Direitos das minorias e obrigações sanitárias continuam protegidos mesmo quando determinadas propostas têm apoio majoritário. Participação democrática qualifica decisões, mas não torna juridicamente válida qualquer deliberação contrária à Constituição ou às normas de segurança."
+    },
+    {
+      "section": "conselho",
+      "text": "Ao formular estratégias, o Conselho discute necessidades sanitárias, planos, prioridades e políticas, examinando evidências e demandas. Ao controlar execução, observa se recursos foram aplicados segundo finalidades, se serviços pactuados funcionam, se indicadores evoluem e se houve cumprimento de deliberações. O Conselho pode pedir relatórios e recomendar auditoria independente; isso não o transforma em executor de compras nem substitui a gerência operacional de UBS."
+    },
+    {
+      "section": "paridade",
+      "text": "O art. 1º, §4º da Lei 8.142 afirma que representação dos usuários em conselhos e conferências será paritária em relação ao conjunto dos outros segmentos. O resultado é uma divisão de metade das posições para representantes dos usuários e metade para o conjunto de governo, prestadores e profissionais. O texto original da lei não distribui nominalmente cada uma das outras categorias em percentuais de 25%; essa distribuição mais detalhada é estabelecida na Resolução CNS 453/2012, que recomenda 50% usuários, 25% trabalhadores de saúde e 25% governo e prestadores privados conveniados ou sem fins lucrativos."
+    },
+    {
+      "section": "paridade",
+      "text": "A Resolução 453 recomenda renovação de pelo menos parte das entidades representadas nas eleições, mas a forma e o período do mandato dos conselheiros dependem de leis e regimentos aplicáveis; não se deve confundir conferência quadrienal com mandato obrigatório de quatro anos de cada conselheiro. O fato de o Conselho Nacional ter regras eleitorais específicas não significa idêntica duração automática para todos os conselhos municipais. O ponto seguro é verificar norma da esfera correspondente e manter paridade e legitimidade."
+    },
+    {
+      "section": "res453",
+      "text": "A resolução detalha que atos deliberativos do Conselho podem assumir formatos como resoluções, recomendações, moções e outros, com procedimento apropriado. Resoluções exigem homologação pelo chefe do poder da esfera no prazo de até 30 dias, segundo Resolução 453, com divulgação oficial; não homologação deve ter justificativa e seguir o procedimento previsto. O silêncio administrativo não significa necessariamente liberdade para ignorar continuamente deliberações, e a tramitação pode envolver retomada da matéria e instâncias de controle."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,392 @@
+{
+  "sha": "ac0fef57337a26d64fe8442bd9e91ad3eebe5bc0",
+  "path": "apostilas/_rascunhos/lote-05-104-hemorragia-pos-parto.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ac0fef5733",
+  "title": "LURIA — Apostila 104: Hemorragia pós-parto",
+  "format": ".md",
+  "chars_estimated": 98775,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 104: Hemorragia pós-parto"
+    },
+    {
+      "title": "Etapa zero — referência comparativa e preservação"
+    },
+    {
+      "title": "1. Do terceiro período ao choque: o problema clínico"
+    },
+    {
+      "title": "2. Definições que caem em prova e têm consequências práticas"
+    },
+    {
+      "title": "2.1. Medir, não apenas estimar"
+    },
+    {
+      "title": "2.2. Índice de choque: ferramenta, não diagnóstico isolado"
+    },
+    {
+      "title": "3. Fisiopatologia operacional: as quatro perguntas sobre o foco"
+    },
+    {
+      "title": "4. A resposta dos primeiros minutos não deve ser sequencial lenta"
+    },
+    {
+      "title": "5. Tratamento farmacológico: objetivos, cautelas e sequência temporal"
+    },
+    {
+      "title": "6. Hemorragia secundária: quando o cenário deixa de ser sala de parto"
+    },
+    {
+      "title": "6.1. Primeiro separar lóquios esperados de sinais de alerta"
+    },
+    {
+      "title": "6.2. Duas rotas de atendimento: instabilidade versus estabilidade"
+    },
+    {
+      "title": "6.3. Diagnóstico diferencial por mecanismo, pista e risco de intervenção"
+    },
+    {
+      "title": "6.4. Ultrassom: que pergunta cada achado realmente responde?"
+    },
+    {
+      "title": "6.5. Tratamento orientado à causa — sem automatismos"
+    },
+    {
+      "title": "6.6. Fluxograma de raciocínio original para o plantão"
+    },
+    {
+      "title": "6.7. Miniestação clínica — dois cenários que exigem decisões diferentes"
+    },
+    {
+      "title": "6.8. Pérolas de prova, segurança e referências desta seção"
+    },
+    {
+      "title": "7. Casos clínicos integrados"
+    },
+    {
+      "title": "Caso A — Perda aparentemente “abaixo de 500”"
+    },
+    {
+      "title": "Caso B — Sangramento e útero firme"
+    },
+    {
+      "title": "Caso C — Foco não controlado e ressuscitação tardia"
+    },
+    {
+      "title": "Caso D — Sangramento na terceira semana"
+    },
+    {
+      "title": "8. Questões comentadas — fundamentos com cinco alternativas analisadas"
+    },
+    {
+      "title": "Questão fundamental 1 — Critério clínico versus corte volumétrico"
+    },
+    {
+      "title": "Questão fundamental 2 — Útero firme e perda persistente"
+    },
+    {
+      "title": "Questão fundamental 3 — Ácido tranexâmico"
+    },
+    {
+      "title": "Questão fundamental 4 — Atonia e quatro T"
+    },
+    {
+      "title": "Questão fundamental 5 — Hemoglobina e choque"
+    },
+    {
+      "title": "Questão fundamental 6 — Sangramento tardio"
+    },
+    {
+      "title": "9. Registro da ampliação e instruções de integração"
+    },
+    {
+      "title": "10. Prevenção: reduzir eventos antes de precisar de ressuscitação"
+    },
+    {
+      "title": "10.1. Corrigir anemia é intervenção de segurança materna"
+    },
+    {
+      "title": "10.2. Planejamento do parto diante de acretismo suspeito"
+    },
+    {
+      "title": "10.3. Uterotônico profilático: qual a distinção entre indicação e disponibilidade?"
+    },
+    {
+      "title": "10.4. Condutas tradicionais cuja indicação mudou"
+    },
+    {
+      "title": "Quadro — prevenção versus tratamento"
+    },
+    {
+      "title": "11. Reconhecimento quantitativo: por que medir muda a conduta"
+    },
+    {
+      "title": "11.1. Medida por pesagem"
+    },
+    {
+      "title": "11.2. Relevância da taxa de sangramento"
+    },
+    {
+      "title": "11.3. Armadilha do índice de choque"
+    },
+    {
+      "title": "11.4. A janela de maior vigilância"
+    },
+    {
+      "title": "12. Resposta organizada: liderança, tempo e pacote E-MOTIVE"
+    },
+    {
+      "title": "12.1. Distribuição de funções"
+    },
+    {
+      "title": "12.2. Ressuscitação e exames iniciais"
+    },
+    {
+      "title": "12.3. O relógio do ácido tranexâmico"
+    },
+    {
+      "title": "12.4. A equipe precisa olhar para mais de um T"
+    },
+    {
+      "title": "12.5. Simulação de comunicação em crise"
+    },
+    {
+      "title": "13. Farmacologia aplicada: por que cada droga funciona e quando ela pode causar dano"
+    },
+    {
+      "title": "13.1. Ocitocina: mecanismo e administração segura"
+    },
+    {
+      "title": "13.2. Metilergometrina: contraindicação é parte do tratamento"
+    },
+    {
+      "title": "13.3. Misoprostol: diferenciar via e objetivo"
+    },
+    {
+      "title": "13.4. Carboprost e prostaglandinas parenterais"
+    },
+    {
+      "title": "13.5. TXA não é uterotônico"
+    },
+    {
+      "title": "Quadro original — fármaco e pergunta de segurança"
+    },
+    {
+      "title": "14. Coagulopatia, fibrinogênio e transfusão: interpretar, não decorar proporções"
+    },
+    {
+      "title": "14.1. Por que a hemoglobina inicial pode enganar"
+    },
+    {
+      "title": "14.2. Reposição de concentrado de hemácias"
+    },
+    {
+      "title": "14.3. Fibrinogênio como alvo específico"
+    },
+    {
+      "title": "14.4. Plasma fresco e plaquetas"
+    },
+    {
+      "title": "14.5. Divergências entre recomendações: como ensinar ao aluno"
+    },
+    {
+      "title": "Quadro — interpretação do laboratório durante HPP"
+    },
+    {
+      "title": "15. Controle mecânico e cirúrgico: a indicação certa no momento certo"
+    },
+    {
+      "title": "15.1. Compressão uterina bimanual"
+    },
+    {
+      "title": "15.2. Compressão externa da aorta e traje antichoque"
+    },
+    {
+      "title": "15.3. Balão de tamponamento: cinco condições de segurança"
+    },
+    {
+      "title": "15.4. Suturas compressivas e ligaduras vasculares"
+    },
+    {
+      "title": "15.5. Embolização arterial"
+    },
+    {
+      "title": "15.6. Inversão uterina e rotura: reconhecer emergências distintas"
+    },
+    {
+      "title": "Quadro — escolha do próximo procedimento"
+    },
+    {
+      "title": "16. Recuperação e segurança depois da hemorragia"
+    },
+    {
+      "title": "16.1. Anemia, ferro e retorno"
+    },
+    {
+      "title": "16.2. Experiência traumática e comunicação"
+    },
+    {
+      "title": "16.3. Auditoria do cuidado"
+    },
+    {
+      "title": "17. Casos aprofundados: a urgência exige decisões verificáveis"
+    },
+    {
+      "title": "Caso 5 — Hemorragia por atonia em puérpera com pré-eclâmpsia grave"
+    },
+    {
+      "title": "Caso 6 — Sangramento refratário em paciente com asma"
+    },
+    {
+      "title": "Caso 7 — Perda após tentativa de remover placenta invasiva"
+    },
+    {
+      "title": "Caso 8 — Choque com fibrinogênio baixo: qual hemocomponente priorizar?"
+    },
+    {
+      "title": "Caso 9 — Tentar balão onde não há retaguarda é seguro?"
+    },
+    {
+      "title": "Caso 10 — Inversão uterina: quando o fundo desaparece à palpação"
+    },
+    {
+      "title": "18. Questões de residência com todas as alternativas justificadas"
+    },
+    {
+      "title": "Questão 7 — Diagnóstico precoce sob definição OMS/FIGO/ICM 2025"
+    },
+    {
+      "title": "Questão 8 — Um uterotônico profilático não equivale a tratamento idêntico"
+    },
+    {
+      "title": "Questão 9 — Farmacologia e pré-eclâmpsia"
+    },
+    {
+      "title": "Questão 10 — Fibrinogênio durante hemorragia maciça"
+    },
+    {
+      "title": "Questão 11 — Balão intrauterino e critérios de segurança"
+    },
+    {
+      "title": "Questão 12 — TXA: relógio e finalidade"
+    },
+    {
+      "title": "Questão 13 — Hemoglobina e transfusão"
+    },
+    {
+      "title": "Questão 14 — Intervenção correta para cada uma das quatro causas"
+    },
+    {
+      "title": "19. Questões integradoras sem cálculo: prevenção, causa e resposta"
+    },
+    {
+      "title": "20. Fluxograma editorial original — HPP desde a sala de parto até a retaguarda"
+    },
+    {
+      "title": "Erros de sequenciamento que mais prejudicam a paciente"
+    },
+    {
+      "title": "21. Recursos didáticos, imagens e teste de autossuficiência"
+    },
+    {
+      "title": "21.1. Teste de autossuficiência"
+    },
+    {
+      "title": "Nota técnica de reconciliação OMS 2025 × práticas brasileiras"
+    }
+  ],
+  "reference_entries": [
+    "1. **Hemorragia tardia não é HPP imediata “mais lenta”**: o tempo pós-parto muda hipóteses e evidências terapêuticas.",
+    "2. **Endométrio espesso não é indicação cirúrgica isolada**, sobretudo no puerpério precoce.",
+    "3. **Padrão vascular importa**: EMV, pseudoaneurisma, fístula e MAV verdadeira são entidades relacionadas, mas não equivalentes.",
+    "4. **O maior erro evitável diante de lesão vascular suspeita é instrumentar sem esclarecer o diagnóstico e planejar controle de sangramento.**",
+    "5. **Estabilidade momentânea não anula risco** se a história descreve episódios volumosos e recorrentes.",
+    "**Fontes revisadas para este capítulo (sem reprodução de tabelas ou imagens):**",
+    "- NICE, *Postnatal care*, NG194, recomendações 1.2.4, 1.2.13–1.2.14: https://www.nice.org.uk/guidance/ng194/chapter/Recommendations",
+    "- ISUOG, *Practice Guidelines: point-of-care ultrasound in obstetrics and gynecology*, 2026: https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/uog.70122",
+    "- Royal College of Obstetricians and Gynaecologists, *Prevention and Management of Postpartum Haemorrhage*, Green-top 52, capítulo sobre hemorragia secundária (contextualizar ano/versão ao citar): https://ranzcog.edu.au/wp-content/uploads/RCOG-Prevention-Management-Postpartum-Haemorrhage.pdf",
+    "- RadioGraphics, *Secondary Postpregnancy Hemorrhage: Guide for Diagnosis and Management*, 2025: https://doi.org/10.1148/rg.240098",
+    "- RadioGraphics, *Enhanced Myometrial Vascularity: Is It an Arteriovenous Malformation?*, 2026: https://doi.org/10.1148/rg.250152",
+    "- OMS/FIGO/ICM, *Consolidated guidelines for the prevention, diagnosis and treatment of postpartum haemorrhage*, 2025, escopo da HPP nas primeiras 24 horas: https://www.who.int/publications/i/item/9789240115637",
+    "**Gabarito: C.** A paciente já perdeu ≥300 mL, tem FC >100 bpm e índice de choque de 110/105, aproximadamente 1,05, satisfazendo critério de intervenção precoce da OMS 2025. O útero flácido aponta para atonia, sem excluir fatores coexistentes.",
+    "- **A — incorreta:** o limite de 500 mL não é condição única para iniciar tratamento.",
+    "- **B — incorreta:** concentração de Hb pode estar preservada durante a perda aguda.",
+    "- **C — correta:** combina quantificação com fisiologia e resposta imediata.",
+    "- **D — incorreta:** PAS isolada não afasta repercussão circulatória.",
+    "- **E — incorreta:** terapia de anemia não controla hemorragia em curso.",
+    "**Mini-revisão:** a decisão de tratar HPP não depende de esperar choque tardio.",
+    "**Gabarito: A.** Com bom tônus uterino, investigar trauma cervical, vaginal ou perineal e hematomas; etiologias podem coexistir.",
+    "- **A — correta:** o mecanismo e a cronologia favorecem lesão traumática.",
+    "- **B — incorreta:** boa contração reduz plausibilidade de atonia isolada como explicação suficiente.",
+    "- **C — incorreta:** não explica a hemorragia pós-parto aguda de forma prioritária.",
+    "- **D — incorreta:** antecedente metabólico não substitui inspeção do foco.",
+    "- **E — incorreta:** quadro não tem relação causal plausível com o evento agudo.",
+    "**Mini-revisão:** “Tônus, Trauma, Tecido, Trombina” serve para encontrar e tratar a origem.",
+    "**Gabarito: D.** O ácido tranexâmico é antifibrinolítico, de administração precoce quando indicado na HPP estabelecida, dentro de três horas do nascimento conforme a OMS.",
+    "- **A — incorreta:** sua janela de benefício exige considerar uso precoce.",
+    "- **B — incorreta:** atua sobre fibrinólise, não contração miometrial.",
+    "- **C — incorreta:** três horas é janela máxima para início oportuno, não tempo de espera."
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240115637",
+    "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ07Z2025Z-Zatualizada.pdf",
+    "https://www.febrasgo.org.br/images/pec/FPS---Edicao-Especial-2024_1_Portugues-1.pdf",
+    "https://www.nice.org.uk/guidance/ng194/chapter/Recommendations",
+    "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/uog.70122",
+    "https://ranzcog.edu.au/wp-content/uploads/RCOG-Prevention-Management-Postpartum-Haemorrhage.pdf",
+    "https://doi.org/10.1148/rg.240098",
+    "https://doi.org/10.1148/rg.250152",
+    "https://www.who.int/publications/i/item/9789240116115",
+    "https://www.febrasgo.org.br/fluxograma/procedimento-para-tratar-hemorragia-pos-parto/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab28/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab14/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab10/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab45/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**LURIA existente inspecionada:** \\`apostilas/assistencia-ao-parto/index.html\\` (~83,8 mil caracteres de HTML). Contém seção introdutória de HPP, causas pelos quatro T, vigilância intraparto e prevenção; merece preservação. O propósito desta apostila 104 é expandir **diagnóstico e resposta à emergência hemorrágica**, sem copiar aquela abordagem geral nem substituir o arquivo existente. As duas apostilas deverão se remeter mutuamente na integração final."
+    },
+    {
+      "text": "**Fontes clínicas primárias para este início:** - World Health Organization, FIGO e ICM. *Consolidated guidelines for the prevention, diagnosis and treatment of postpartum haemorrhage* (2025). https://www.who.int/publications/i/item/9789240115637 - FEBRASGO. *Diagnóstico e manejo hemostático na hemorragia obstétrica: aplicabilidade do uso de hemocomponentes e hemoderivados*. *Femina* 2025;53(7):928–932. https://www.febrasgo.org.br/media/k2/attachments/FeminaZ07Z2025Z-Zatualizada.pdf - FEBRASGO. *Hemorragia pós-parto: prevenção, diagnóstico e manejo não cirúrgico*, Position Statement, edição especial 2024. https://www.febrasgo.org.br/images/pe"
+    },
+    {
+      "text": "**Hemorragia pós-parto primária:** sangramento excessivo até 24 horas após o nascimento. **Hemorragia secundária:** sangramento anormal após esse período, dentro de semanas subsequentes, frequentemente relacionado a restos ovulares, infecção uterina e subinvolução, embora diagnóstico seja individualizado."
+    },
+    {
+      "text": "Na abordagem contemporânea da **OMS/FIGO/ICM 2025**, a mensuração objetiva é decisiva. A perda ≥300 mL com sinal hemodinâmico anormal ou ≥500 mL por si só demanda resposta precoce. São sinais considerados nessa recomendação: pulso >100 bpm, índice de choque >1, pressão sistólica <100 mmHg ou diastólica <60 mmHg. O alvo é identificar cedo quem pode evoluir para complicações graves, evitando que “sangramento visualmente discreto” esconda perda significativa."
+    },
+    {
+      "text": "O volume observado é acumulativo. Se foram coletados 240 mL inicialmente e mais 180 mL em poucos minutos, a perda mensurada já soma 420 mL. Com pulso de 112 bpm e pressão sistólica de 100 mmHg, o índice de choque é 1,12. A combinação de perda ≥300 mL e sinal hemodinâmico anormal satisfaz critério de ativação precoce, mesmo sem atingir 500 mL."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

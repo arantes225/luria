@@ -1,0 +1,779 @@
+{
+  "key": "trabalho-parto-prematuro",
+  "kind": "apostila-html",
+  "path": "apostilas/trabalho-parto-prematuro/content.json",
+  "html_path": "apostilas/trabalho-parto-prematuro/index.html",
+  "title": "Trabalho de Parto Prematuro",
+  "source_sha256": "73a8fbb2ba3972ccb99729e19b013f1bbbe8e3064e27fa0eddbb7dc811b793b6",
+  "html_sha256": "537a40411f3e461fe585970caa14b65d05040f8e32fea3876e97b514cd430bd6",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos: parto prematuro, ameaça e TPP verdadeiro",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiopatologia: por que o parto começa cedo?",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Fatores de risco e prevenção",
+      "section": "risco-prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Cervicometria no segundo trimestre",
+      "section": "risco-prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Progesterona vaginal",
+      "section": "risco-prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Cerclagem",
+      "section": "risco-prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "O que não fazer de rotina",
+      "section": "risco-prevencao"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Reconhecimento clínico",
+      "section": "reconhecimento"
+    },
+    {
+      "tag": "H3",
+      "title": "Avaliação inicial",
+      "section": "reconhecimento"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Diagnóstico e estratificação do risco de parto iminente",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Cervicometria transvaginal na gestante sintomática",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Fibronectina fetal e outros biomarcadores",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "Decisões de alto impacto: colo curto assintomático ≠ parto prematuro iminente",
+      "section": "prevencao-vs-tpp-diagnostico-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Prevenção em gestante assintomática: o que dizem as recomendações SMFM",
+      "section": "prevencao-vs-tpp-diagnostico-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Diagnóstico na paciente sintomática: a questão clínica é outra",
+      "section": "prevencao-vs-tpp-diagnostico-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Quatro decisões comentadas",
+      "section": "prevencao-vs-tpp-diagnostico-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Tocólise e neuroproteção respondem a objetivos diferentes",
+      "section": "prevencao-vs-tpp-diagnostico-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Triagem clínica: contrações não equivalem a trabalho de parto prematuro",
+      "section": "triagem-contracoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "O que investigar à chegada",
+      "section": "triagem-contracoes-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Diagnóstico diferencial",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Conduta inicial: as primeiras decisões",
+      "section": "conduta-inicial"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Corticoide antenatal",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H3",
+      "title": "Faixa gestacional",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H3",
+      "title": "Curso de repetição",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Tocólise: ganhar tempo, não “curar” o parto",
+      "section": "tocolise"
+    },
+    {
+      "tag": "H3",
+      "title": "Nifedipino",
+      "section": "tocolise"
+    },
+    {
+      "tag": "H3",
+      "title": "Outros fármacos",
+      "section": "tocolise"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Sulfato de magnésio para neuroproteção",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Esquemas variam",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Monitorização",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Antibióticos e profilaxia para estreptococo do grupo B",
+      "section": "antibioticos-egb"
+    },
+    {
+      "tag": "H2",
+      "title": "12. RPMO pré-termo: quando o raciocínio muda",
+      "section": "rpmo"
+    },
+    {
+      "tag": "H3",
+      "title": "Manejo geral",
+      "section": "rpmo"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Quando não tentar prolongar a gestação",
+      "section": "quando-nascer"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Assistência ao parto prematuro",
+      "section": "parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Organização da sala",
+      "section": "parto"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Periviabilidade e limites de idade gestacional",
+      "section": "peri-viabilidade"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Situações especiais",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação múltipla",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Diabetes",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Pré-eclâmpsia",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Infecção intra-amniótica",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — 30 semanas, contrações, colo 35 mm",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — 29 semanas, contrações regulares e dilatação progressiva",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — 31 semanas, febre, dor uterina e taquicardia fetal",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — 33 semanas, perda líquida e bolsa rota",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — 24 semanas, colo 18 mm assintomática",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso integrado — o objetivo de ganhar tempo",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "18. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Ameaça, pródromos e trabalho estabelecido",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que usar cada intervenção?",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Periviabilidade e decisão compartilhada",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Manual avançado — Trabalho de Parto Prematuro",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Bases biológicas da prematuridade",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Inflamação e infecção ascendente",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Ativação uterina e insuficiência cervical",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Determinantes de risco e prevenção",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Reconhecimento e probabilidades diagnósticas",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Sintomas e exame inicial",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Por que contração não basta",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Cervicometria, fibronectina e limites",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Diagnósticos diferenciais que não podem ser perdidos",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Corticoide antenatal: mecanismo, janela e riscos",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Benefício fisiológico",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Indicação estratificada",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Repetição e diabetes",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Tocólise: decisão, escolha e contraindicações",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Objetivo e critérios",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Nifedipina e alternativas",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "O que NÃO é tocólise de rotina",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Neuroproteção com sulfato de magnésio",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Por que usar",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Quando oferecer",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Esquema e vigilância",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "EGB, antibióticos e rotura de membranas",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Membranas íntegras versus rotas",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Rotura prematura pré-termo",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "O que monitorar",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Decisão de parto e assistência neonatal",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Quando é mais seguro nascer",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Condutas durante o nascimento",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Periviabilidade e autonomia",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Casos comentados e raciocínio longitudinal",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Caso 1 — 31+2 semanas, colo curto e contrações",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Caso 2 — 29 semanas e febre após perda de líquido",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H4",
+      "title": "Caso 3 — 25 semanas, contrações sem progressão",
+      "section": "manual-avancado-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "19. Aprofundamento integrador — do mecanismo da prematuridade à decisão assistencial",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.1 Por que o útero mantém quiescência durante a maior parte da gestação?",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.2 O colo do útero não é apenas uma medida em centímetros",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.3 Inflamação, infecção e a cascata das prostaglandinas",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.4 A diferença entre risco de parto prematuro e parto nas próximas 48 horas",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.5 A finalidade da tocólise: proteger o recém-nascido, não suprimir toda contração",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.6 Corticoide antenatal e maturação pulmonar: benefício e limites",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.7 Neuroproteção fetal e sulfato de magnésio",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.8 Ruptura prematura pré-termo das membranas: um caminho clínico distinto",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "19.9 Dois casos integrados para aprender a decidir",
+      "section": "capitulo-integrador-40k-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1762
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos: parto prematuro, ameaça e TPP verdadeiro",
+      "chars": 1196
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia: por que o parto começa cedo?",
+      "chars": 1082
+    },
+    {
+      "id": "risco-prevencao",
+      "title": "3. Fatores de risco e prevenção",
+      "chars": 1584
+    },
+    {
+      "id": "reconhecimento",
+      "title": "4. Reconhecimento clínico",
+      "chars": 967
+    },
+    {
+      "id": "diagnostico",
+      "title": "5. Diagnóstico e estratificação do risco de parto iminente",
+      "chars": 1376
+    },
+    {
+      "id": "prevencao-vs-tpp-diagnostico-2026",
+      "title": "Decisões de alto impacto: colo curto assintomático ≠ parto prematuro iminente",
+      "chars": 7622
+    },
+    {
+      "id": "triagem-contracoes-2026",
+      "title": "Triagem clínica: contrações não equivalem a trabalho de parto prematuro",
+      "chars": 1890
+    },
+    {
+      "id": "diferenciais",
+      "title": "6. Diagnóstico diferencial",
+      "chars": 884
+    },
+    {
+      "id": "conduta-inicial",
+      "title": "7. Conduta inicial: as primeiras decisões",
+      "chars": 702
+    },
+    {
+      "id": "corticoide",
+      "title": "8. Corticoide antenatal",
+      "chars": 1268
+    },
+    {
+      "id": "tocolise",
+      "title": "9. Tocólise: ganhar tempo, não “curar” o parto",
+      "chars": 1670
+    },
+    {
+      "id": "magnesio",
+      "title": "10. Sulfato de magnésio para neuroproteção",
+      "chars": 893
+    },
+    {
+      "id": "antibioticos-egb",
+      "title": "11. Antibióticos e profilaxia para estreptococo do grupo B",
+      "chars": 763
+    },
+    {
+      "id": "rpmo",
+      "title": "12. RPMO pré-termo: quando o raciocínio muda",
+      "chars": 929
+    },
+    {
+      "id": "quando-nascer",
+      "title": "13. Quando não tentar prolongar a gestação",
+      "chars": 470
+    },
+    {
+      "id": "parto",
+      "title": "14. Assistência ao parto prematuro",
+      "chars": 669
+    },
+    {
+      "id": "peri-viabilidade",
+      "title": "15. Periviabilidade e limites de idade gestacional",
+      "chars": 588
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": "16. Situações especiais",
+      "chars": 935
+    },
+    {
+      "id": "casos",
+      "title": "17. Casos integradores",
+      "chars": 2100
+    },
+    {
+      "id": "revisao",
+      "title": "18. Revisão de alto rendimento",
+      "chars": 1531
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 1147
+    },
+    {
+      "id": "manual-avancado-2026",
+      "title": "Manual avançado — Trabalho de Parto Prematuro",
+      "chars": 11564
+    },
+    {
+      "id": "capitulo-integrador-40k-2026",
+      "title": "19. Aprofundamento integrador — do mecanismo da prematuridade à decisão assistencial",
+      "chars": 17373
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 716
+    },
+    {
+      "id": "curadoria-imagens",
+      "title": "curadoria-imagens",
+      "chars": 536
+    }
+  ],
+  "references": [
+    "Ministério da Saúde. Manual de Gestação de Alto Risco. Brasília.",
+    "MEAC/UFC–EBSERH. Protocolo Trabalho de Parto Prematuro, versão 6, 2025.",
+    "FEBRASGO. Trabalho de parto prematuro: uso racional da tocólise. Protocolo nº 29.",
+    "FEBRASGO. Ultrassonografia morfológica do segundo trimestre. Femina, 2025.",
+    "WHO. Recommendations on antenatal corticosteroids for improving preterm birth outcomes. 2022.",
+    "WHO. Recommendation on tocolytic therapy for improving preterm birth outcomes. 2022.",
+    "NICE. Preterm labour and birth (NG25). atualização vigente.",
+    "Revisão LURIA: outubro de 2026. Material educacional; doses e limites gestacionais devem ser conferidos com o protocolo institucional e a avaliação obstétrica/neonatal."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "SMFM Consult Series nº 70 (2024)",
+      "url": "https://publications.smfm.org/publications/560-society-for-maternal-fetal-medicine-consult-series-70/",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG25 — Preterm labour and birth",
+      "url": "https://www.nice.org.uk/guidance/ng25/chapter/Recommendations",
+      "in_references": false
+    },
+    {
+      "label": "OMS 2022 — nifedipino e tocólise",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK585030/",
+      "in_references": false
+    },
+    {
+      "label": "ACOG, Preterm Labor and Birth",
+      "url": "https://www.acog.org/womens-health/faqs/preterm-labor-and-birth",
+      "in_references": false
+    },
+    {
+      "label": "Hospital Universitário / Ministério da Educação, protocolo TPP (2025)",
+      "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/ch-ufc/acesso-a-informacao/protocolos-e-pops/protocolos-meac/maternidade-escola-assis-chateaubriand/obstetricia/pro-med-obs-029-v3-trabalho-de-parto-prematuro.pdf/@@download/file",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG25 — Preterm labour and birth, recomendações",
+      "url": "https://www.nice.org.uk/guidance/ng25/chapter/Recommendations",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 8,
+  "paragraphs": 117,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": false,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "conceitos",
+      "text": "Parto prematuro é o nascimento antes de 37 semanas completas. Já trabalho de parto prematuro descreve o processo clínico que antecede o nascimento: atividade uterina regular acompanhada por apagamento e/ou dilatação cervical progressiva antes do termo.",
+      "pattern": 0
+    },
+    {
+      "section": "risco-prevencao",
+      "text": "A ultrassonografia transvaginal é o método adequado para medir o colo. No Brasil, documentos do Ministério da Saúde e protocolos públicos utilizam ≤25 mm no segundo trimestre como marcador de maior risco, com rastreamento especialmente útil entre 18 e 24 semanas.",
+      "pattern": 0
+    },
+    {
+      "section": "risco-prevencao",
+      "text": "Em gestação única com colo curto no segundo trimestre, a progesterona vaginal reduz risco de prematuridade. Protocolos brasileiros usam progesterona natural micronizada, frequentemente 200 mg por via vaginal à noite, iniciada quando o colo curto é diagnosticado e mantida até cerca de 36–36+6 semanas, conforme protocolo.",
+      "pattern": 0
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "Para gestação única, assintomática e sem antecedente de parto prematuro espontâneo, o SMFM Consult Series nº 70 (2024) define colo curto por comprimento transvaginal de 25 mm ou menos no segundo trimestre. Quando a medida é 20 mm ou menos antes de 24 semanas, recomenda progesterona vaginal; entre 21 e 25 mm, ela pode ser considerada em decisão compartilhada. A medida para essa decisão é transvaginal e padronizada — o resultado transabdominal não deve ser usado como equivalente sem validação.",
+      "pattern": 0
+    },
+    {
+      "section": "risco-prevencao",
+      "text": "A cerclagem deve ser pensada em três cenários clássicos: história típica de insuficiência cervical; antecedente de parto prematuro espontâneo associado a colo curto na gestação atual; e cerclagem de resgate diante de dilatação cervical indolor com membranas expostas, após excluir contrações, infecção e outras contraindicações.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "O diagnóstico é clínico e evolutivo. Protocolos brasileiros recentes utilizam atividade uterina regular e modificação cervical, frequentemente com dilatação de cerca de 2 cm ou mais e apagamento importante, mas o limiar exato varia. A progressão em avaliações seriadas é mais informativa do que um número isolado.",
+      "pattern": 1
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "A mesma medida de comprimento cervical pode aparecer em dois contextos clínicos muito diferentes: rastreamento de risco no segundo trimestre de uma gestante sem contrações e triagem de uma paciente sintomática em que é preciso estimar a probabilidade de nascimento nas próximas 48 horas. Os pontos de corte usados para prevenção não devem ser transplantados automaticamente para diagnóstico de trabalho de parto. Antes de interpretar qualquer valor, declare idade gestacional, gestação única ou múltipla, antecedente de parto prematuro, membranas, sangramento, dinâmica uterina e presença de modificação cervical.",
+      "pattern": 1
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "Para gestação única, assintomática e sem antecedente de parto prematuro espontâneo, o SMFM Consult Series nº 70 (2024) define colo curto por comprimento transvaginal de 25 mm ou menos no segundo trimestre. Quando a medida é 20 mm ou menos antes de 24 semanas, recomenda progesterona vaginal; entre 21 e 25 mm, ela pode ser considerada em decisão compartilhada. A medida para essa decisão é transvaginal e padronizada — o resultado transabdominal não deve ser usado como equivalente sem validação.",
+      "pattern": 1
+    },
+    {
+      "section": "risco-prevencao",
+      "text": "Em gestação única com colo curto no segundo trimestre, a progesterona vaginal reduz risco de prematuridade. Protocolos brasileiros usam progesterona natural micronizada, frequentemente 200 mg por via vaginal à noite, iniciada quando o colo curto é diagnosticado e mantida até cerca de 36–36+6 semanas, conforme protocolo.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "Para gestação única, assintomática e sem antecedente de parto prematuro espontâneo, o SMFM Consult Series nº 70 (2024) define colo curto por comprimento transvaginal de 25 mm ou menos no segundo trimestre. Quando a medida é 20 mm ou menos antes de 24 semanas, recomenda progesterona vaginal; entre 21 e 25 mm, ela pode ser considerada em decisão compartilhada. A medida para essa decisão é transvaginal e padronizada — o resultado transabdominal não deve ser usado como equivalente sem validação.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "No mesmo grupo específico, o SMFM recomenda não colocar cerclagem de rotina para colo ultrassonográfico entre 10 e 25 mm se não houver dilatação; também não recomenda pessário preventivo e não indica 17-alfa-hidroxiprogesterona caproato para tratar colo curto. Para gestação gemelar, recomenda contra progesterona, pessário ou cerclagem usados rotineiramente apenas por encurtamento cervical, fora de pesquisa. Essas restrições não substituem a avaliação específica de quem tem antecedente de parto espontâneo precoce, insuficiência cervical típica ou dilatação cervical já presente.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao-vs-tpp-diagnostico-2026",
+      "text": "Caso A — o colo de 18 mm não é uma emergência obstétrica por definição. Primigesta de 22+2 semanas, sem dor, sangramento, contrações ou perda líquida, tem colo de 18 mm ao ultrassom transvaginal morfológico. O raciocínio correto é prevenção e seguimento do colo curto em gestação única: discutir progesterona vaginal, verificar técnica da medida e antecedentes e explicar sinais de TPP. Corticoide, nifedipino para tocólise e magnésio para neuroproteção não são prescritos automaticamente por uma cervicometria isolada. A janela terapêutica dos fármacos agudos depende da probabilidade real de nascimento prematuro.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "resumo",
+      "text": "Tocólise ganha tempo; corticoide amadurece; magnésio neuroprotege; infecção, sofrimento fetal e instabilidade mudam a prioridade para o parto."
+    },
+    {
+      "section": "conceitos",
+      "text": "Parto prematuro é o nascimento antes de 37 semanas completas. Já trabalho de parto prematuro descreve o processo clínico que antecede o nascimento: atividade uterina regular acompanhada por apagamento e/ou dilatação cervical progressiva antes do termo."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 0
+  }
+}

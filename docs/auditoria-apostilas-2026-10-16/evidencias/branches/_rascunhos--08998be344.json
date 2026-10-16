@@ -1,0 +1,364 @@
+{
+  "sha": "08998be3447712dac4b78b4630df3e1ce4fa8682",
+  "path": "apostilas/_rascunhos/lote-08-aula-176-consolidada-curada-20261015.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--08998be344",
+  "title": "LURIA — Aula 176 | AVC e crises convulsivas: diagnóstico tempo-dependente e prevenção etiológica",
+  "format": ".md",
+  "chars_estimated": 77260,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 176 | AVC e crises convulsivas: diagnóstico tempo-dependente e prevenção etiológica"
+    },
+    {
+      "title": "Controle editorial: de onde veio cada camada"
+    },
+    {
+      "title": "PARTE I — Fundamentos, diagnóstico e tratamento agudo"
+    },
+    {
+      "title": "0. Inventário, benchmark Drive e fontes atuais"
+    },
+    {
+      "title": "Objetivos didáticos"
+    },
+    {
+      "title": "1. Anatomia vascular em linguagem clínica"
+    },
+    {
+      "title": "2. Fisiopatologia: isquemia, penumbra e hemorragia"
+    },
+    {
+      "title": "3. Reconhecimento pré-hospitalar e Código AVC"
+    },
+    {
+      "title": "NIHSS e ASPECTS — função e limites"
+    },
+    {
+      "title": "4. Interpretação de neuroimagem em AVC"
+    },
+    {
+      "title": "5. Reperfusão no AVC isquêmico: conciliar PCDT brasileiro e AHA/ASA 2026"
+    },
+    {
+      "title": "Janela padrão e evidência atual"
+    },
+    {
+      "title": "Seleção é mais ampla que “NIHSS elevado”"
+    },
+    {
+      "title": "Trombectomia mecânica"
+    },
+    {
+      "title": "Condições que exigem verificação imediata"
+    },
+    {
+      "title": "6. Após trombólise/trombectomia: monitorar lesão por reperfusão"
+    },
+    {
+      "title": "7. AVC hemorrágico: quadro e prioridades"
+    },
+    {
+      "title": "8. AIT e AVC minor: urgência apesar da melhora"
+    },
+    {
+      "title": "9. Crises epilépticas: conceitos necessários"
+    },
+    {
+      "title": "10. Diagnósticos diferenciais de crise e déficit focal"
+    },
+    {
+      "title": "11. Estado de mal epiléptico: tempo é prognóstico"
+    },
+    {
+      "title": "Etapa inicial"
+    },
+    {
+      "title": "Falha após benzodiazepínico"
+    },
+    {
+      "title": "Estado de mal não convulsivo"
+    },
+    {
+      "title": "12. Primeira crise: quando fazer imagem e EEG?"
+    },
+    {
+      "title": "13. Populações especiais e interfaces"
+    },
+    {
+      "title": "14. Complicações, reabilitação e prognóstico"
+    },
+    {
+      "title": "15. Algoritmos LURIA de alto rendimento"
+    },
+    {
+      "title": "PARTE II — Etiologia, prevenção, evolução e epilepsia pós-AVC"
+    },
+    {
+      "title": "16. Da imagem vascular à decisão etiológica"
+    },
+    {
+      "title": "A1. Anatomia aplicada à imagem: defeito clínico e vaso provável"
+    },
+    {
+      "title": "A2. Conflitos frequentes entre horários e elegibilidade"
+    },
+    {
+      "title": "17. Classificação etiológica: a base da prevenção secundária"
+    },
+    {
+      "title": "B1. As categorias TOAST em linguagem clínica"
+    },
+    {
+      "title": "B2. Fibrilação atrial, infarto e decisão de anticoagulação"
+    },
+    {
+      "title": "B3. Antiagregação simples versus dupla"
+    },
+    {
+      "title": "B4. Doença carotídea e intervenções"
+    },
+    {
+      "title": "18. Neuroimagem comentada: achados e contradições"
+    },
+    {
+      "title": "C1. TC inicial aparentemente normal, RM posteriormente positiva"
+    },
+    {
+      "title": "C2. Imagem no AVC posterior"
+    },
+    {
+      "title": "C3. Transformação hemorrágica do infarto"
+    },
+    {
+      "title": "C4. HSA e pseudocefaleias primárias"
+    },
+    {
+      "title": "19. O que fazer nas primeiras 72 horas"
+    },
+    {
+      "title": "D1. Deglutição, aspiração, hidratação e glicose"
+    },
+    {
+      "title": "D2. Quando edema é mais perigoso que o tamanho visível"
+    },
+    {
+      "title": "D3. Mobilização e cuidado preventivo"
+    },
+    {
+      "title": "20. Crises após lesão vascular: um novo mapa diferencial"
+    },
+    {
+      "title": "E1. Crise aguda sintomática versus epilepsia pós-AVC"
+    },
+    {
+      "title": "E2. Todd versus isquemia persistente: decisão prática"
+    },
+    {
+      "title": "E3. Estado de mal não convulsivo após crise e coma"
+    },
+    {
+      "title": "PARTE III — Integração de alta utilidade: cinco desafios à decisão clínica"
+    },
+    {
+      "title": "21. Não perder o AVC posterior: vertigem, disfagia, diplopia e ataxia"
+    },
+    {
+      "title": "Síndrome vestibular aguda: diferenciar por contexto"
+    },
+    {
+      "title": "22. Reperfusão: como um aluno interpreta a elegibilidade sem decorar somente horas"
+    },
+    {
+      "title": "Déficit incapacitante é diferente de NIHSS elevado"
+    },
+    {
+      "title": "Janelas e tecnologias não são permissão indiscriminada"
+    },
+    {
+      "title": "Caso operacional resumido"
+    },
+    {
+      "title": "23. AVC hemorrágico espontâneo: prioridades específicas, sem confundir com reperfusão"
+    },
+    {
+      "title": "Três decisões clínicas que não podem esperar"
+    },
+    {
+      "title": "Hemorragia subaracnóidea aneurismática: outra lógica"
+    },
+    {
+      "title": "24. Prevenção secundária não é lista de fármacos: três decisões etiológicas"
+    },
+    {
+      "title": "Aterosclerose de grande artéria"
+    },
+    {
+      "title": "Cardioembolia"
+    },
+    {
+      "title": "AVC criptogênico/ESUS"
+    },
+    {
+      "title": "O elo com adesão e segurança"
+    },
+    {
+      "title": "25. Crise epiléptica e AVC na mesma sala: sequência de hipóteses"
+    },
+    {
+      "title": "Estado de mal: prioridade temporal e fármacos apropriados"
+    },
+    {
+      "title": "Fronteira curricular com a aula 138"
+    },
+    {
+      "title": "26. Desospitalização: o paciente precisa sair com um mapa, não apenas alta"
+    },
+    {
+      "title": "Como escrever uma síntese de alta útil"
+    },
+    {
+      "title": "27. Imagens clínicas que realmente ensinam — plano de curadoria"
+    },
+    {
+      "title": "PARTE IV — Casos clínicos comentados"
+    },
+    {
+      "title": "Casos 1–11: repertório clínico da aula original e do complemento 02"
+    },
+    {
+      "title": "Caso 1 — Afasia de início súbito com NIHSS baixo"
+    },
+    {
+      "title": "Caso 2 — AVC ao acordar"
+    },
+    {
+      "title": "Caso 3 — Hemorragia e anticoagulação"
+    },
+    {
+      "title": "Caso 4 — Convulsão com paresia subsequente"
+    },
+    {
+      "title": "Caso 5 — Estado de mal após dez minutos"
+    },
+    {
+      "title": "Caso 6 — Consciência não retorna após cessar movimentos"
+    },
+    {
+      "title": "Caso 7 — Duas fontes potenciais de êmbolo"
+    },
+    {
+      "title": "Caso 8 — Candidato à reabilitação com NIHSS baixo"
+    },
+    {
+      "title": "Caso 9 — Encefalopatia após aparente controle da crise"
+    },
+    {
+      "title": "Caso 10 — AVC isquêmico grande que piora depois de 48h"
+    },
+    {
+      "title": "Caso 11 — AIT de alto risco ou evento funcional?"
+    },
+    {
+      "title": "28. Casos de integração para aprendizado profundo"
+    },
+    {
+      "title": "Caso 12 — Vertigem aguda, incapacidade de marcha e TC “tranquila”"
+    },
+    {
+      "title": "Caso 13 — Fibrilação atrial, placa carotídea e dois territórios"
+    },
+    {
+      "title": "Caso 14 — Afasia, crise focal e déficit persistente"
+    },
+    {
+      "title": "PARTE V — Questões autorais comentadas"
+    },
+    {
+      "title": "Questões 1–16: avaliação e comentários das versões anteriores"
+    },
+    {
+      "title": "29. Questões inéditas de integração com comentários por alternativa"
+    },
+    {
+      "title": "30. Referências revisadas e atualizações que mudam conduta"
+    },
+    {
+      "title": "31. Auditoria científica/editorial: aprovação bloqueada"
+    }
+  ],
+  "reference_entries": [
+    "**Drive:** buscas por “AVC isquêmico”, “acidente vascular cerebral”, “estado de mal”, “crise convulsiva” e “neurologia” não localizaram apostila temática completa equivalente. Foi **aberto e lido** o material correlato \\`02 - TCE GRAVE, MORTE ENCEFALICA.pdf\\` (~18 mil caracteres extraídos), que ajuda apenas na avaliação neurológica inicial, coma, pupilas, imagem e causas de convulsão por lesão secundária. Foi aberto em consulta anterior o material de intensivismo pediátrico e neuroemergências correlatas. **Benchmark somente parcial; autoria Estratégia MED não comprovada** (marca Medicina Livre",
+    "1. Reconhecer sinais de déficit focal súbito por território arterial e apresentação de circulação posterior.",
+    "2. Organizar ABCDE, glicemia e horário da última vez assintomático na suspeita de AVC.",
+    "3. Diferenciar AVC isquêmico, hemorrágico, ataque isquêmico transitório e mimetizadores.",
+    "4. Interpretar por que TC sem contraste exclui hemorragia evidente, mas pode ser normal no início de isquemia.",
+    "5. Raciocinar sobre trombólise, trombectomia, contraindicações e acessibilidade no SUS.",
+    "6. Compreender hemorragia intracerebral e subaracnoide, intervenção neurocirúrgica e complicações.",
+    "7. Classificar crise epiléptica e diferenciar crise provocada, primeira crise não provocada e epilepsia.",
+    "8. Tratar convulsão sustentada sem esperar 30 minutos, com escalonamento conforme protocolo.",
+    "9. Reconhecer paresia de Todd, síncope convulsiva, hipoglicemia e AVC como diferenciais.",
+    "10. Planejar prevenção secundária e seguimento interdisciplinar.",
+    "**Armadilha:** AVC posterior não precisa ter hemiparesia clássica. Vertigem abrupta incapacitante, marcha impossível, sinais oculomotores ou diplopia em paciente vascular merecem investigação, sem atribuir tudo à labirintite. Testes oculomotores como HINTS só devem ser interpretados por profissional treinado em paciente com síndrome vestibular aguda apropriada.",
+    "**AVC isquêmico** ocorre por interrupção de fluxo arterial e privação energética. Existe um núcleo isquêmico onde lesão se torna irreversível e tecido hipoperfundido com risco, porém potencialmente recuperável, a **penumbra**. Reperfusão precoce pode salvar tecido, mas está sujeita a hemorragia de reperfusão e lesão por reoxigenação em condições específicas. O intervalo tempo–benefício e a seleção por imagem explicam por que a avaliação deve ser coordenada.",
+    "**AVC hemorrágico intracerebral** deriva de sangramento dentro do tecido, com expansão de hematoma, hipertensão intracraniana, edema e lesão secundária. Hipertensão crônica, angiopatia amiloide, anticoagulação e lesões estruturais são causas possíveis. **Hemorragia subaracnóidea (HSA)** é sangue no espaço subaracnóideo; ruptura de aneurisma é causa de alta gravidade. Cefaleia de início explosivo atípica exige avaliação urgente, ainda que o exame neurológico inicial seja pouco alterado.",
+    "**AIT** é episódio de déficit neurológico focal compatível com isquemia sem infarto agudo estabelecido na definição baseada em tecido; a recuperação de sintomas não elimina risco de evento futuro. Não é “AVC leve para marcar ambulatório daqui a meses”.",
+    "1. ABCDE e glicemia capilar imediata para identificar hipoglicemia mimetizadora.",
+    "2. Monitorização de PA, saturação, temperatura, ritmo cardíaco, nível de consciência e déficits.",
+    "3. Avaliação neurológica focada/NIHSS por equipe treinada, sem impedir imagem urgente.",
+    "4. TC de crânio **sem contraste** para excluir hemorragia, com angio-TC quando se suspeita de oclusão de grande vaso e há infraestrutura adequada.",
+    "5. Investigar uso de anticoagulantes, plaquetas, cirurgia/hemorragia recente, PA e contraindicações relevantes à reperfusão.",
+    "6. Acionar referência para trombectomia/tele-AVC quando indicado, minimizando atrasos.",
+    "**Não esperar resultado de todos os exames laboratoriais** quando isso atrasa reperfusão sem necessidade. Por outro lado, se há suspeita de coagulopatia, anticoagulação relevante ou outra contraindicação, os testes podem mudar segurança. A decisão é integrada e deve respeitar protocolo.",
+    "**NIHSS** quantifica déficits e gravidade clínica, incluindo consciência, olhar, linguagem, força, sensibilidade, ataxia e negligência. Um escore baixo não significa “sem deficiência”: afasia incapacitante ou hemianopsia relevante podem ocorrer com NIHSS relativamente baixo. A diretriz 2026 enfatiza **déficit incapacitante** na elegibilidade para trombólise, não só o número.",
+    "**ASPECTS** é escala de imagem para alterações isquêmicas precoces no território da ACM em TC sem contraste, tradicionalmente entre 0 e 10: valor mais alto geralmente indica menor extensão de sinais precoces. Não usar ASPECTS como substituto de avaliação clínica, e critérios de seleção para trombectomia evoluíram, inclusive em núcleos maiores em determinadas circunstâncias.",
+    "**TC sem contraste:** rápida e disponível, identifica hemorragia aguda e certas alterações estruturais. Nos primeiros momentos de AVC isquêmico, pode parecer normal; procurar perda de diferenciação substância cinzenta–branca, apagamento de sulcos e sinal de artéria hiperdensa, sem exigir que todos estejam presentes.",
+    "**Angio-TC:** avalia vasos cervicais e intracranianos e pode detectar oclusão de grande vaso ou estenoses; exige avaliar contraste/rim e risco, mas proteção do cérebro tempo-dependente modifica a relação benefício-risco.",
+    "**TC de perfusão ou RM com difusão/perfusão:** identificam padrões de tecido infartado e potencialmente recuperável em cenários de janela estendida ou início desconhecido. **RM difusão (DWI)** pode detectar isquemia precoce com maior sensibilidade que TC; **FLAIR** auxilia estimar maturidade da lesão em determinados algoritmos. A imagem seleciona casos específicos, mas não deve atrasar trombólise convencional quando o paciente é claramente elegível dentro de 4,5 horas.",
+    "**Hemorragia:** volume, localização, extensão ventricular, hidrocefalia, efeito de massa e possível aneurisma influenciam urgência. Angio-TC pode avaliar aneurisma/lesão vascular em casos apropriados; punção lombar para HSA só cabe em contexto selecionado após imagem inicial e avaliação de risco.",
+    "**Distinção regulatória importante:** evidência internacional atualizada **não equivale a incorporação automática no SUS** nem autoriza qualquer serviço a substituir seu PCDT vigente. A seleção deve seguir medicamento disponibilizado, equipe, protocolos aprovados, elegibilidade e contraindicações.",
+    "**Trombólise fora de 4h30:** em pacientes cuidadosamente selecionados por imagem avançada com penumbra/discordância DWI–FLAIR e início desconhecido ou janela até cerca de 9 horas, AHA 2026 admite reperfusão intravenosa sob critérios específicos. **Não usar a existência de “janela estendida” para tratar indiscriminadamente sem imagem de seleção.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view",
+    "https://www.ahajournals.org/doi/10.1161/STR.0000000000000513",
+    "https://professional.heart.org/en/science-news/2021-guideline-for-the-prevention-of-stroke-in-patients-with-stroke-and-transient-ischemic-attack/top-things-to-know",
+    "https://professional.heart.org/en/science-news/2022-guideline-for-the-management-of-patients-with-spontaneous-intracerebral-hemorrhage/top-things-to-know",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view",
+    "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+    "https://pubmed.ncbi.nlm.nih.gov/31774955/",
+    "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage/top-things-to-know"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "1. **Núcleo de base:** aula 176 original (fisiologia vascular, triagem, imagem, reperfusão, hemorragia, crise convulsiva, status, casos e questões 1–8); preservei o arquivo anterior. 2. **Aprofundamento 02:** classificação TOAST, angioimagem, prevenção secundária, fase aguda hospitalar, crises pós-AVC; cinco casos e oito questões novos foram movidos para uma posição lógica após capítulos básicos, sem repetir a introdução. 3. **Expansão específica desta consolidação:** comparação aplicada de diagnóstico diferencial, controle de risco e transição de cuidados, interpretação de exames e cenários complexos, para que o aluno consiga responder a que"
+    },
+    {
+      "text": "1. Reconhecer sinais de déficit focal súbito por território arterial e apresentação de circulação posterior. 2. Organizar ABCDE, glicemia e horário da última vez assintomático na suspeita de AVC. 3. Diferenciar AVC isquêmico, hemorrágico, ataque isquêmico transitório e mimetizadores. 4. Interpretar por que TC sem contraste exclui hemorragia evidente, mas pode ser normal no início de isquemia. 5. Raciocinar sobre trombólise, trombectomia, contraindicações e acessibilidade no SUS. 6. Compreender hemorragia intracerebral e subaracnoide, intervenção neurocirúrgica e complicações. 7. Classificar crise epiléptica e diferenciar crise provocada, prim"
+    },
+    {
+      "text": "Na sala de emergência: 1. ABCDE e glicemia capilar imediata para identificar hipoglicemia mimetizadora. 2. Monitorização de PA, saturação, temperatura, ritmo cardíaco, nível de consciência e déficits. 3. Avaliação neurológica focada/NIHSS por equipe treinada, sem impedir imagem urgente. 4. TC de crânio **sem contraste** para excluir hemorragia, com angio-TC quando se suspeita de oclusão de grande vaso e há infraestrutura adequada. 5. Investigar uso de anticoagulantes, plaquetas, cirurgia/hemorragia recente, PA e contraindicações relevantes à reperfusão. 6. Acionar referência para trombectomia/tele-AVC quando indicado, minimizando atrasos."
+    },
+    {
+      "text": "**Não esperar resultado de todos os exames laboratoriais** quando isso atrasa reperfusão sem necessidade. Por outro lado, se há suspeita de coagulopatia, anticoagulação relevante ou outra contraindicação, os testes podem mudar segurança. A decisão é integrada e deve respeitar protocolo."
+    },
+    {
+      "text": "A linha de cuidado brasileira e o PCDT 2025 contemplam **trombólise intravenosa até 4h30 do início ou último momento bem conhecido em pacientes elegíveis**. A diretriz **AHA/ASA 2026** recomenda, nesse intervalo em adultos elegíveis com déficit incapacitante, **alteplase 0,9 mg/kg** (máximo 90 mg) **ou tenecteplase 0,25 mg/kg** (máximo 25 mg). Alteplase é infundida durante 60 minutos com bolus inicial de 10% da dose; tenecteplase é administrada em bolus intravenoso conforme preparação/protocolo. **Não extrapolar doses ou concentrações entre fármacos**."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

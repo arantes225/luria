@@ -1,0 +1,118 @@
+{
+  "sha": "d315294dde967c96411d94b8ef7a497adc57ac91",
+  "path": "apostilas/_rascunhos/lote-06-122-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d315294dde",
+  "title": "Lote 06 — Tema 122: Perfuração de Víscera Oca",
+  "format": ".md",
+  "chars_estimated": 14677,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — Tema 122: Perfuração de Víscera Oca"
+    },
+    {
+      "title": "Acervo e preservação"
+    },
+    {
+      "title": "Benchmark realizado ANTES da redação"
+    },
+    {
+      "title": "Fontes primárias abertas/identificadas para confirmação clínica"
+    },
+    {
+      "title": "Matriz de lacunas (benchmark × material LURIA novo)"
+    },
+    {
+      "title": "Bloqueios"
+    },
+    {
+      "title": "Etapa 2 — conteúdo integral, JSON, prévia HTML e cobertura (14/10/2026)"
+    },
+    {
+      "title": "Medidas técnicas"
+    },
+    {
+      "title": "Matriz de cobertura por conceitos — gabaritos excluídos"
+    },
+    {
+      "title": "Bloqueios remanescentes"
+    },
+    {
+      "title": "Etapa 2 — redação consolidada, preview e auditoria quantitativa"
+    },
+    {
+      "title": "Matriz de autossuficiência preliminar — doze questões"
+    },
+    {
+      "title": "Controle de originalidade e imagens"
+    },
+    {
+      "title": "Pendências bloqueadoras"
+    },
+    {
+      "title": "Complemento de curadoria — 10 candidatos de radiologia"
+    }
+  ],
+  "reference_entries": [
+    "1. **WSES 2020, úlcera péptica perfurada:** Tarasconi et al., *World J Emerg Surg* 15:3, DOI 10.1186/s13017-019-0283-9; https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/ . Indicação de TC quando viável, cirurgia para peritonite e extravasamento/ pneumoperitônio significativos; tratamento não operatório apenas excepcional se selamento confirmado e sem critérios de gravidade.",
+    "2. **WSES 2020, diverticulite aguda:** Sartelli et al., *World J Emerg Surg* 15:32; https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/ . Diferenciar ar pericólico e gás distante, peritonite purulenta/fecal, seleção de ressecção e anastomose versus Hartmann; manejo não operatório de gás distante é excepcional em estáveis com vigilância próxima.",
+    "3. **WSES 2022, lesão intestinal traumática:** https://link.springer.com/article/10.1186/s13017-022-00418-y . Achados tomográficos, lesão intestinal oculta, exames seriados, imagem repetida em achados equívocos e cirurgia para peritonite.",
+    "4. **WSES 2017, perfuração iatrogênica de colonoscopia:** https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/ . Fechamento endoscópico precoce se lesão/experiência adequadas; conservação rigorosamente selecionada; cirurgia em peritonite, piora, lesão grande ou falha.",
+    "5. **Surgical Infection Society 2024 (SIS):** https://journals.sagepub.com/doi/full/10.1089/sur.2024.137 ; antimicrobiano por até ~4 dias após controle adequado da fonte em infecção intra-abdominal complicada responsiva, com exceções.",
+    "6. **Global Alliance for Infections in Surgery 2024:** https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/ . Controle de fonte e duração curta, investigação se sinais persistirem em vez de prolongar antibiótico automaticamente.",
+    "7. **Surviving Sepsis Campaign 2026:** Prescott et al., publicado 23/03/2026, https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Avaliação imediata do foco anatômico, antibioticoterapia/ressuscitação orientadas por risco e controle precoce da fonte em pacientes com sepse/choque que o exigem; objetivo condicional idealmente em até **6 h** do diagnóstico, sem tratar como janela segura de espera.",
+    "**Não inferir disponibilidade universal de técnica/endoscopia/cirurgia no SUS.** Abordagem deve respeitar prontidão e recursos institucionais.",
+    "- [ ] ≥60 mil caracteres didáticos reais e não repetitivos.",
+    "- [ ] Revisão clínica/cirúrgica especializada antes da liberação, especialmente choque, antibióticos, tempo cirúrgico e técnica.",
+    "- [ ] 8 casos e 12 questões autorais com autossuficiência, explicação de todas alternativas.",
+    "- [ ] Figuras/TC/RX candidatas com licença individual, aprovadas via Admin.",
+    "- [ ] Entrada gerador + prévia HTML + validadores oficiais realmente executados em ambiente apropriado.",
+    "- [ ] Inspeção desktop/PWA e aprovação final; **não publicar**.",
+    "---",
+    "- `apostilas/_rascunhos/lote-06-122-perfuracao-de-viscera-oca.md`: **111.814 caracteres brutos Markdown**, 31 capítulos numerados (27 didáticos, 8 casos no capítulo 28, 12 questões no 29, referências e status).",
+    "- `apostilas/_rascunhos/lote-06-122-build-input-preliminar.json`: conteúdo editável em formato de entrada ao gerador da LURIA; **30 seções**, **8 referências**, nenhuma imagem clínica incorporada.",
+    "- `apostilas/_rascunhos/lote-06-122-preview.html`: prévia HTML `noindex,nofollow`, baseada no template LURIA, com **31 seções incluindo bibliografia**, 8 casos, 12 questões e 12 conjuntos de alternativas A–D.",
+    "- Capítulo de trauma complementado depois de detectar necessidade de explicitação de **TC inicial equívoca, exames abdominais seriados e reavaliação imediata se piora**, com sincronização do Markdown, JSON e HTML.",
+    "- Corpo de capítulos 1–27, excluindo casos, questões, bibliografia e controle: **79.204 caracteres aproximados**, descontados URLs e marcas Markdown básicas.",
+    "- 0 âncoras quebradas e 0 IDs duplicados na prévia textual.",
+    "- 0 parágrafos longos literalmente repetidos encontrados.",
+    "- **Contagem e teste textual não comprovam 60 mil caracteres únicos e úteis nem correção clínica.** Revisão semântica e científica continuam necessárias.",
+    "**Resultado: 12/12**, teste lexical preliminar. Não constitui aprovação de conteúdo por cirurgião ou validação de cada alternativa.",
+    "- [ ] Revisão médica especializada do capítulo completo (cirurgia, trauma, antibióticos e sepse), confirmação de atualizações WSES/SIS/SSC e consistência com SUS.",
+    "- [ ] Auditoria de utilidade e deduplicação **semântica** (não somente ausência literal).",
+    "- [ ] Curadoria de ~10 imagens de RX/TC e esquemas anatômicos com fonte, licença e legenda verificadas, submetidas à aprovação Admin.",
+    "- [ ] Execução **real** dos scripts de build/QA do repositório; as verificações feitas aqui são pré-testes JavaScript e **não** execução de `node scripts/build-apostilas-batch.cjs --dry-run`.",
+    "- [ ] Conferência de renderização desktop/PWA, responsividade, acessibilidade e referências.",
+    "- [ ] Aprovação editorial antes de qualquer merge ou deploy. **Permanece RASCUNHO NÃO PUBLICADO.**"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/",
+    "https://link.springer.com/article/10.1186/s13017-022-00418-y",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5784542/",
+    "https://journals.sagepub.com/doi/full/10.1089/sur.2024.137",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161965/",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- **Markdown autoral:** \\`apostilas/_rascunhos/lote-06-122-perfuracao-de-viscera-oca.md\\` — **111.814 caracteres brutos**, **31 capítulos** com 27 de instrução, 8 casos completos (cap. 28), 12 questões A–D (cap. 29), referências (cap. 30) e controles (cap. 31). - **Corpo instrucional estimado:** **79.202 caracteres**, após remoção de parte da marcação Markdown e URLs, excluindo casos, questões e bibliografia. Não equivale a verificação de 60 mil **caracteres semanticamente únicos e úteis**. - **JSON de entrada preliminar:** \\`apostilas/_rascunhos/lote-06-122-build-input-preliminar.json\\`, 30 seções (introdução + 27 capítulos + casos + questõe"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

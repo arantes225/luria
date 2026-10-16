@@ -1,0 +1,354 @@
+{
+  "sha": "f91dd48210294767cdba7faeaf3bce3217437648",
+  "path": "apostilas/_rascunhos/lote-06-117-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f91dd48210",
+  "title": "Isquemia Mesentérica e Abdome Agudo Vascular",
+  "format": ".html",
+  "chars_estimated": 82657,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Apresentação e objetivo de aprendizagem"
+    },
+    {
+      "title": "1. Escopo, competências e nomenclatura"
+    },
+    {
+      "title": "Quadro de entrada — a pergunta que salva intestino"
+    },
+    {
+      "title": "2. Anatomia vascular e fisiologia que explicam a clínica"
+    },
+    {
+      "title": "2.1 Três territórios arteriais e seus arcos de comunicação"
+    },
+    {
+      "title": "2.2 Por que a dor é desproporcional ao exame?"
+    },
+    {
+      "title": "3. Epidemiologia e riscos: quatro mecanismos que não podem ser misturados"
+    },
+    {
+      "title": "4. Quadro clínico — como reconhecer antes da peritonite"
+    },
+    {
+      "title": "Exame físico evolutivo"
+    },
+    {
+      "title": "5. Diagnóstico: laboratórios auxiliam, angioTC responde"
+    },
+    {
+      "title": "5.1 Laboratório: utilidade e limitações"
+    },
+    {
+      "title": "5.2 Angiotomografia de abdome e pelve"
+    },
+    {
+      "title": "5.3 O que o laudo deve informar"
+    },
+    {
+      "title": "5.4 Quando a imagem não deve atrasar laparotomia"
+    },
+    {
+      "title": "6. Manejo nas primeiras horas: ressuscitar, diagnosticar e reperfundir"
+    },
+    {
+      "title": "6.1 Primeiros passos de emergência"
+    },
+    {
+      "title": "6.2 Três objetivos complementares"
+    },
+    {
+      "title": "7. Isquemia arterial oclusiva: embolia versus trombose"
+    },
+    {
+      "title": "7.1 Embolia arterial mesentérica"
+    },
+    {
+      "title": "7.2 Trombose arterial sobre aterosclerose"
+    },
+    {
+      "title": "7.3 Viabilidade intestinal e segundo olhar"
+    },
+    {
+      "title": "8. Trombose venosa mesentérica: congestão, anticoagulação e cirurgia seletiva"
+    },
+    {
+      "title": "9. NOMI — intestino em choque sem trombo visível"
+    },
+    {
+      "title": "10. Isquemia mesentérica crônica: o paciente que passou a temer comida"
+    },
+    {
+      "title": "11. Colite isquêmica: não confundir todo sangramento com IMA da AMS"
+    },
+    {
+      "title": "12. Diagnósticos diferenciais críticos"
+    },
+    {
+      "title": "13. Algoritmo clínico integrado"
+    },
+    {
+      "title": "14. Complicações, prognóstico e seguimento"
+    },
+    {
+      "title": "15. Oito pérolas de prova e prática"
+    },
+    {
+      "title": "16. Entendendo a angiotomografia como um exame de decisões"
+    },
+    {
+      "title": "16.1 O que pedir ao radiologista e por quê"
+    },
+    {
+      "title": "16.2 Realce intestinal e relação com viabilidade"
+    },
+    {
+      "title": "16.3 Exercício de interpretação com quatro descrições de laudo"
+    },
+    {
+      "title": "16.4 Quando repetir ou complementar a imagem"
+    },
+    {
+      "title": "17. Farmacologia prática e segurança: anticoagulantes, antibióticos e perfusão"
+    },
+    {
+      "title": "17.1 Heparina não fracionada versus heparina de baixo peso molecular"
+    },
+    {
+      "title": "17.2 Antibiótico precoce não significa antibiótico indefinido"
+    },
+    {
+      "title": "17.3 Reposição volêmica: a diferença entre ressuscitar e inundar"
+    },
+    {
+      "title": "17.4 Vasopressores e NOMI: contraindicação simplista"
+    },
+    {
+      "title": "17.5 Analgesia, sedação e nutrição"
+    },
+    {
+      "title": "18. Cirurgia vascular e cirurgia digestiva: técnica a serviço da biologia"
+    },
+    {
+      "title": "18.1 Quando o endovascular agrega valor"
+    },
+    {
+      "title": "18.2 Quando a operação aberta é central"
+    },
+    {
+      "title": "18.3 Ressecção e anastomose: quais decisões dependem da perfusão"
+    },
+    {
+      "title": "18.4 A relação com a síndrome do intestino curto"
+    },
+    {
+      "title": "19. Colite isquêmica em profundidade: espectro, avaliação e alta segurança"
+    },
+    {
+      "title": "19.1 Anatomia colônica e vulnerabilidade"
+    },
+    {
+      "title": "19.2 Clínica típica e apresentações alarmantes"
+    },
+    {
+      "title": "19.3 Por que a colonoscopia não vem sempre primeiro"
+    },
+    {
+      "title": "19.4 Conduta e seguimento"
+    },
+    {
+      "title": "20. Isquemia crônica avançada e apresentação aguda sobre crônica"
+    },
+    {
+      "title": "20.1 Como história e anatomia predizem risco"
+    },
+    {
+      "title": "20.2 Diagnóstico crônico e interpretação de Doppler"
+    },
+    {
+      "title": "20.3 Prevenção e decisão de revascularizar"
+    },
+    {
+      "title": "21. Trombose venosa — decisões sobre etiologia, duração e recorrência"
+    },
+    {
+      "title": "21.1 Por que nem toda trombofilia deve ser testada no mesmo dia"
+    },
+    {
+      "title": "21.2 Por quanto tempo anticoagular?"
+    },
+    {
+      "title": "21.3 Fatores provocadores versus causas permanentes"
+    },
+    {
+      "title": "21.4 O que perguntar antes da alta"
+    },
+    {
+      "title": "22. Populações especiais e cenários de maior risco"
+    },
+    {
+      "title": "23. Medidas de segurança e erros clínicos que mais custam vidas"
+    },
+    {
+      "title": "23.1 Erros no diagnóstico"
+    },
+    {
+      "title": "23.2 Erros na escolha de tratamento"
+    },
+    {
+      "title": "23.3 Erros durante acompanhamento"
+    },
+    {
+      "title": "24. Prognóstico por subtipo e prevenção secundária"
+    },
+    {
+      "title": "25. Quadro farmacológico e de conduta por mecanismo"
+    },
+    {
+      "title": "26. Miniatlas textual: que imagem realmente ensina?"
+    },
+    {
+      "title": "27. Revisão estruturada: raciocínio de alta retenção"
+    },
+    {
+      "title": "27.1 Como diferenciar lesões vasculares menos comuns sem confundir com a doença aterosclerótica"
+    },
+    {
+      "title": "27.2 Interpretando a força das recomendações atuais"
+    },
+    {
+      "title": "27.3 Sistematização da comunicação entre emergência, radiologia, vascular e cirurgia"
+    },
+    {
+      "title": "27.4 Evolução pós-reperfusão e armadilhas nas primeiras 72 horas"
+    },
+    {
+      "title": "27.5 Quatro erros de raciocínio causados por interpretação literal de palavras"
+    },
+    {
+      "title": "28. Oito casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Embolia arterial por fibrilação atrial"
+    },
+    {
+      "title": "Caso 2 — Trombose arterial em paciente com angina intestinal"
+    },
+    {
+      "title": "Caso 3 — Trombose venosa sem peritonite"
+    },
+    {
+      "title": "Caso 4 — NOMI em choque"
+    },
+    {
+      "title": "Caso 5 — Paciente com insuficiência renal: contraste ou intestino?"
+    },
+    {
+      "title": "Caso 6 — Colite isquêmica pós-hipotensão"
+    },
+    {
+      "title": "Caso 7 — Medo de comer e perda ponderal progressiva"
+    },
+    {
+      "title": "Caso 8 — Depois da laparotomia: o que significa preservar intestino?"
+    },
+    {
+      "title": "29. Doze questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "Referências"
+    }
+  ],
+  "reference_entries": [
+    "WSES 2022 — Acute mesenteric ischemia: updated guidelines",
+    "ESVS 2025 — Diseases of the Mesenteric and Renal Arteries and Veins",
+    "ESVS 2025 — PDF integral das recomendações",
+    "ESVS — Portal oficial das diretrizes",
+    "WSES — Portal oficial das diretrizes"
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov",
+    "https://wwwn.cdc.gov;",
+    "https://link.springer.com/article/10.1186/s13017-022-00443-x",
+    "https://doi.org/10.1016/j.ejvs.2025.06.010",
+    "https://ris.utwente.nl/ws/portalfiles/portal/502462657/PIIS1078588425005167.pdf",
+    "https://esvs.org/guidelines/",
+    "https://www.wses.org.uk/scientific-resources/guidelines"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O diagnóstico da isquemia mesentérica aguda é uma corrida contra a perda de intestino viável. Suspeita clínica e angiotomografia imediata importam mais que aguardar a elevação do lactato. Dor desproporcional ao exame é uma pista inicial, mas sua ausência não exclui a doença."
+    },
+    {
+      "text": "A IMA é incomum entre as admissões por dor abdominal, mas carrega mortalidade elevada. Em estudos e épocas diferentes, a proporção de embolia, trombose arterial e NOMI varia; não existe uma distribuição fixa que substitua a história clínica. O envelhecimento, a doença cardiovascular e o maior número de pacientes críticos modificam o perfil observado. Diretrizes WSES 2022 estimam aproximadamente 0,09–0,2% das admissões cirúrgicas agudas, com mortalidade substancial; não usar números populacionais como teste diagnóstico individual."
+    },
+    {
+      "text": "Registrar sinais vitais, perfusão periférica, estado mental, dor, grau de distensão, ruídos hidroaéreos e irritação peritoneal. Abolir ruídos não é pré-requisito de diagnóstico. A presença de defesa involuntária, rigidez, peritonite franca ou choque com forte suspeita de necrose modifica a via de tratamento: acionar imediatamente cirurgia de emergência para exploração. No paciente crítico sob sedação, marcadores de deterioração, aumento de vasopressores e exames de imagem podem ter maior peso."
+    },
+    {
+      "text": "AngioTC com contraste intravenoso, com aquisição arterial e venosa, é o exame inicial recomendado para suspeita de IMA, sem atraso evitável. A fase arterial avalia AMS, tronco celíaco e demais ramos; a fase venosa demonstra drenagem, trombose portal/mesentérica e alterações de perfusão de parede. Imagem sem contraste isolada não serve para excluir IMA. Contraste oral pode atrasar o exame e frequentemente não é útil no contexto agudo."
+    },
+    {
+      "text": "A necessidade de decisão urgente impõe discussão apropriada de contraste iodado mesmo em portadores de injúria renal; o risco de perder intestino viável muitas vezes supera o risco de deterioração renal relacionada ao contraste. Avaliar alergias e aspectos técnicos sem atrasos perigosos. Arteriografia não é o exame inicial obrigatório; pode integrar procedimento diagnóstico-terapêutico quando a estratégia endovascular está indicada."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

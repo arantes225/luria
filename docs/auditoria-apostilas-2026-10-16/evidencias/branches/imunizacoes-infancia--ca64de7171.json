@@ -1,0 +1,400 @@
+{
+  "sha": "ca64de7171cb75d276531e656235dfe69108edfe",
+  "path": "apostilas/imunizacoes-infancia/index.html",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "imunizacoes-infancia--ca64de7171",
+  "title": "Imunizações na Infância",
+  "format": ".html",
+  "chars_estimated": 91748,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Visão rápida — método de decisão vacinal"
+    },
+    {
+      "title": "Apresentação editorial"
+    },
+    {
+      "title": "Etapa zero: comparação de fontes"
+    },
+    {
+      "title": "1. A imunização como prática clínica e política pública"
+    },
+    {
+      "title": "2. Plataformas: compreender para saber contraindicar"
+    },
+    {
+      "title": "3. Consulta vacinal em pediatria: o método"
+    },
+    {
+      "title": "4. O calendário infantil é dinâmico — núcleos de estudo"
+    },
+    {
+      "title": "5. Exemplo real de mudança em 2026: VPC10 → VPC20"
+    },
+    {
+      "title": "6. Particularidades de algumas vacinas"
+    },
+    {
+      "title": "7. Contraindicações verdadeiras, precauções e falsas contraindicações"
+    },
+    {
+      "title": "8. Comunicação clínica e hesitação vacinal"
+    },
+    {
+      "title": "9. Fluxograma de atraso vacinal"
+    },
+    {
+      "title": "10. Oito casos clínicos integradores comentados"
+    },
+    {
+      "title": "Caso 1 — VPC20 aos 2 meses e VPC10 aos 4: erro ou transição?"
+    },
+    {
+      "title": "Caso 2 — Rotavírus aos dez meses e invaginação prévia"
+    },
+    {
+      "title": "Caso 3 — Criança com quimioterapia e doses vivas pendentes"
+    },
+    {
+      "title": "Caso 4 — Reação anafilática após vacinação: nem toda reação é igual"
+    },
+    {
+      "title": "Caso 5 — Dose zero de sarampo durante surto e o primeiro aniversário"
+    },
+    {
+      "title": "Caso 6 — Criança escolar com coriza e atraso vacinal"
+    },
+    {
+      "title": "Caso 7 — Exposição a morcego e carteira “completa”"
+    },
+    {
+      "title": "Caso 8 — Cobertura de 95% e surto concentrado"
+    },
+    {
+      "title": "Caso 9 — Prematuro elegível para imunização passiva contra VSR"
+    },
+    {
+      "title": "Caso 10 — Vacina materna contra VSR aplicada antes da idade prevista"
+    },
+    {
+      "title": "11. Dezesseis questões originais de residência comentadas"
+    },
+    {
+      "title": "Questão 1 — Resgate vacinal após atraso"
+    },
+    {
+      "title": "Questão 2 — Rotavírus em 2026"
+    },
+    {
+      "title": "Questão 3 — Transição pneumocócica"
+    },
+    {
+      "title": "Questão 4 — Qual é o reforço de pólio em 2026?"
+    },
+    {
+      "title": "Questão 5 — Meningocócica ACWY no segundo ano"
+    },
+    {
+      "title": "Questão 6 — Dose zero de sarampo"
+    },
+    {
+      "title": "Questão 7 — Influenza pela primeira vez"
+    },
+    {
+      "title": "Questão 8 — Criança em quimioterapia"
+    },
+    {
+      "title": "Questão 9 — Anafilaxia e eventos leves"
+    },
+    {
+      "title": "Questão 10 — HPV e dengue na infância tardia"
+    },
+    {
+      "title": "Questão 11 — Profilaxia pós-exposição à raiva"
+    },
+    {
+      "title": "Questão 12 — Cobertura alta e surto"
+    },
+    {
+      "title": "Questão 13 — Vacina materna contra VSR"
+    },
+    {
+      "title": "Questão 14 — Nirsevimabe"
+    },
+    {
+      "title": "Questão 15 — HPV no PNI de 2026"
+    },
+    {
+      "title": "Questão 16 — Rotavírus com antecedente de invaginação"
+    },
+    {
+      "title": "12. Calendário Nacional da Criança em 2026 — quadro clínico interpretado por idade"
+    },
+    {
+      "title": "12.1 O que significa um quadro de vacinação atualizado"
+    },
+    {
+      "title": "12.2 O que muda em comparação com fichas antigas de residência"
+    },
+    {
+      "title": "13. Rotavírus: atualização de janela etária, imunologia e contraindicações"
+    },
+    {
+      "title": "13.1 Por que a janela de idade importa?"
+    },
+    {
+      "title": "13.2 Atrasos e esquemas incompletos"
+    },
+    {
+      "title": "13.3 Antecedente de invaginação e imunodeficiência"
+    },
+    {
+      "title": "13.4 Vacinação oral e administração"
+    },
+    {
+      "title": "14. Doença pneumocócica e a transição VPC10 → VPC20 em 2026"
+    },
+    {
+      "title": "14.1 Por que conjugação e valência são importantes?"
+    },
+    {
+      "title": "14.2 Implantação nacional em 2026"
+    },
+    {
+      "title": "14.3 Grupos especiais não seguem apenas o quadro de rotina"
+    },
+    {
+      "title": "14.4 Um caso numérico de transição"
+    },
+    {
+      "title": "15. Poliomielite e o fim do reforço oral de rotina no calendário estudado"
+    },
+    {
+      "title": "15.1 A imunização contra pólio exige proteção individual e coletiva"
+    },
+    {
+      "title": "15.2 Como registrar uma carteira com VOP antiga"
+    },
+    {
+      "title": "16. Meningocócicas C e ACWY: memória por sorogrupo e por idade"
+    },
+    {
+      "title": "16.1 Por que o nome da vacina importa?"
+    },
+    {
+      "title": "16.2 Esquema da infância no portal nacional de 2026"
+    },
+    {
+      "title": "16.3 Grupos de risco e surtos"
+    },
+    {
+      "title": "17. Recém-nascido: hepatite B, BCG e proteção antes da alta"
+    },
+    {
+      "title": "17.1 Hepatite B ao nascer"
+    },
+    {
+      "title": "17.2 BCG: proteção contra formas graves e contraindicações"
+    },
+    {
+      "title": "17.3 Cicatriz vacinal é memória cutânea, não teste de soroproteção"
+    },
+    {
+      "title": "18. Pentavalente, coqueluche, hepatite A e proteção contra tétano"
+    },
+    {
+      "title": "18.1 Pentavalente: cinco alvos em um produto"
+    },
+    {
+      "title": "18.2 Reforços de DTP e possíveis eventos adversos"
+    },
+    {
+      "title": "18.3 Hepatite A no segundo ano"
+    },
+    {
+      "title": "19. Febre amarela e tríplice viral: vacinas vivas e saúde pública"
+    },
+    {
+      "title": "19.1 Febre amarela: tempo, local e risco-benefício"
+    },
+    {
+      "title": "19.2 Sarampo, caxumba e rubéola: a SCR"
+    },
+    {
+      "title": "19.3 Dose zero em emergência de sarampo"
+    },
+    {
+      "title": "19.4 Varicela e tetraviral"
+    },
+    {
+      "title": "20. Influenza e covid-19: idade, temporada e produto"
+    },
+    {
+      "title": "20.1 Por que reforço e formulação anual podem mudar?"
+    },
+    {
+      "title": "20.2 Covid-19 em 2026: calendário e produto importam"
+    },
+    {
+      "title": "20.3 Coadministração e doenças leves"
+    },
+    {
+      "title": "21. HPV e dengue na transição para a adolescência"
+    },
+    {
+      "title": "21.1 HPV: prevenir infecção e câncer futuro"
+    },
+    {
+      "title": "21.2 Dengue: idade-alvo, intervalo e produto"
+    },
+    {
+      "title": "21.3 Mensagem prática da puericultura aos nove e dez anos"
+    },
+    {
+      "title": "22. Imunobiológicos especiais: como pensar a criança com alto risco"
+    },
+    {
+      "title": "22.1 Por que o mesmo calendário não basta para todos?"
+    },
+    {
+      "title": "22.2 Diferenciar situações clínicas"
+    },
+    {
+      "title": "22.3 Proteção indireta dos contatos"
+    },
+    {
+      "title": "22.4 Cuidado com doses “extra” sem indicação"
+    },
+    {
+      "title": "22.5 VSR em 2026: vacina materna não é nirsevimabe"
+    },
+    {
+      "title": "23. Vacinação pós-exposição e em surtos: tempo e risco importam"
+    },
+    {
+      "title": "23.1 Imunização ativa e passiva têm funções diferentes"
+    },
+    {
+      "title": "23.2 Hepatite B perinatal e acidente com material biológico"
+    },
+    {
+      "title": "23.3 Raiva e ferimentos por animais"
+    },
+    {
+      "title": "23.4 Tétano após ferimento"
+    },
+    {
+      "title": "23.5 Contato com sarampo, varicela e meningococo"
+    },
+    {
+      "title": "23.6 Modelo de decisão pós-exposição"
+    },
+    {
+      "title": "24. Segurança e vigilância: o que é EAPV e o que realmente contraindica?"
+    },
+    {
+      "title": "24.1 Evento temporal não é necessariamente causado pela vacina"
+    },
+    {
+      "title": "24.2 Anafilaxia pós-vacinal"
+    },
+    {
+      "title": "24.3 Falsas contraindicações frequentes"
+    },
+    {
+      "title": "24.4 Vacinas vivas em contextos específicos"
+    },
+    {
+      "title": "24.5 Registro do evento e conduta sobre próxima dose"
+    },
+    {
+      "title": "25. Cadeia de frio, administração e erros programáticos"
+    },
+    {
+      "title": "25.1 O imunobiológico é um produto biológico sensível"
+    },
+    {
+      "title": "25.2 Conferências antes de administrar"
+    },
+    {
+      "title": "25.3 Registro fidedigno e caderneta"
+    },
+    {
+      "title": "25.4 Oportunidades perdidas e qualidade do serviço"
+    },
+    {
+      "title": "26. Princípios quantitativos para interpretar cobertura e proteção"
+    },
+    {
+      "title": "26.1 Imunidade individual, proteção de rebanho e suscetibilidade"
+    },
+    {
+      "title": "26.2 Eficácia, efetividade e proteção indireta"
+    },
+    {
+      "title": "26.3 Registro e denominadores"
+    },
+    {
+      "title": "27. Matriz de autossuficiência e consistência normativa"
+    },
+    {
+      "title": "28. Visuais propostos sem aprovação"
+    },
+    {
+      "title": "29. Parecer editorial preliminar e gates"
+    },
+    {
+      "title": "30. Referências oficiais e temporalidade"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/julho/vacina-pneumo-20-esta-disponivel-no-sus-para-criancas-de-ate-5-anos-e-grupos-especiais",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/n/protocolo-de-uso-do-nirsevimabe.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-de-estrategia-contra-virus-sincicial-para-criancas-prematuras.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-31-2026-cgici-dpni-svsa-ms.pdf",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-52-2026-cgici-dpni-svsa-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Idade e calendário não bastam: confira produto, dose anterior, intervalo, contraindicações, comorbidades, normas locais e registro. Resgate não é reinício universal."
+    },
+    {
+      "text": "A classificação imunológica não substitui a leitura da bula e da norma oficial: composição, indicação, contraindicação e dose dependem de produto e programa."
+    },
+    {
+      "text": "BCG: a imunização protege especialmente contra apresentações graves de tuberculose na infância; não se deve interpretar ausência de cicatriz como prova automática de falta de imunidade ou indicação imediata de revacinação. Avaliar regras de administração e contraindicações por condição neonatal e imunodepressão."
+    },
+    {
+      "text": "Rotavírus: vacina oral viva, com critérios etários e contraindicações que devem ser consultados no calendário técnico 2026. História de invaginação intestinal e condições imunológicas específicas podem impedir uso; intervalos e elegibilidade diferem de vacinas sem janela máxima estrita. Não repetir no texto os limites de idade do documento PNI 2020."
+    },
+    {
+      "text": "Tríplice viral, varicela, febre amarela: distinguir calendário rotineiro, recomendações para bloqueio de surtos, contatos e situações de imunossupressão. Condutas para viajantes e regiões específicas variam."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

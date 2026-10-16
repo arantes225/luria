@@ -1,0 +1,129 @@
+{
+  "sha": "5fb08a224dd7a80f9f7e8b44f4f013365f70d62f",
+  "path": "apostilas/vacinacao-suplementacao-gestacao/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "vacinacao-suplementacao-gestacao--5fb08a224d",
+  "title": "Vacinação e Suplementação na Gestação",
+  "format": ".json",
+  "chars_estimated": 87942,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Vacinação e suplementação: proteção materna, fetal e neonatal"
+    },
+    {
+      "id": "imunologia",
+      "title": "1. Por que a imunização materna protege duas pessoas"
+    },
+    {
+      "id": "calendario",
+      "title": "2. Calendário nacional 2026: vacina, fase e finalidade"
+    },
+    {
+      "id": "dtpa",
+      "title": "3. dT e dTpa: completar esquema sem perder a proteção contra coqueluche"
+    },
+    {
+      "id": "vsr",
+      "title": "4. Vacina materna contra VSR: proteção respiratória no início da vida"
+    },
+    {
+      "id": "influenza-covid",
+      "title": "5. Influenza e covid-19: risco materno e proteção na gestação"
+    },
+    {
+      "id": "hepatite-febreamarela",
+      "title": "6. Hepatite B, febre amarela e vacinas em condições especiais"
+    },
+    {
+      "id": "folato",
+      "title": "7. Ácido fólico: prevenção de defeitos do tubo neural e situações de risco"
+    },
+    {
+      "id": "ferro",
+      "title": "8. Ferro: prevenção, diagnóstico diferencial de anemia e tratamento"
+    },
+    {
+      "id": "calcio",
+      "title": "9. Cálcio: prevenção de pré-eclâmpsia e administração prática"
+    },
+    {
+      "id": "outros",
+      "title": "10. Vitamina D, B12, iodo e outros nutrientes: quando individualizar"
+    },
+    {
+      "id": "fluxos",
+      "title": "11. Consulta prática: como revisar cartão, prescrever e acompanhar"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos comentados"
+    },
+    {
+      "id": "questoes",
+      "title": "13. Questões autorais de prova com justificativas"
+    },
+    {
+      "id": "referencias",
+      "title": "14. Referências oficiais, escopo editorial e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"14. Referências oficiais, escopo editorial e pendências\"]",
+    "[\"p\",\"<strong>Ministério da Saúde (Brasil).</strong> Calendário Nacional de Vacinação — Gestante, 2026: https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante . Calendário técnico da gestante: https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante . Versões institucionais acessadas em outubro de 2026.\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Vacina vírus sincicial respiratório: perguntas frequentes, público-alvo/gestante e administração antes da 28ª semana: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina ; https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/uma-mulher-foi-vacinada-antes .\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Nota Técnica Conjunta nº 251/2024, orientações para suplementação universal de cálcio em gestantes, publicada no portal federal: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf/@@download/file .\"]",
+    "[\"p\",\"<strong>Ministério da Saúde.</strong> Linha de Cuidado de Pré-natal de Baixo Risco, planejamento terapêutico e PNSF: https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/ . A linha de cuidado é anterior ao calendário de vacinação de 2026; utilizar o PNI atual para imunização.\"]",
+    "[\"p\",\"<strong>Organização Mundial da Saúde.</strong> Daily iron and folic acid supplementation during pregnancy (atualização 2024): https://www.who.int/tools/elena/interventions/daily-iron-pregnancy . Recomendação de 30–60 mg de ferro elementar + folato 400 µg; contextualizar com política brasileira.\"]",
+    "[\"p\",\"<strong>OMS.</strong> WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience, suplementação de cálcio para contextos com baixa ingestão dietética; síntese em NCBI Bookshelf: https://www.ncbi.nlm.nih.gov/books/NBK409113/ .\"]",
+    "[\"p\",\"<strong>Status editorial:</strong> rascunho autoral do tema 019, separado dos detalhes gerais do pré-natal (tema 004) e de exames (tema 014). A priorização de particularidades do calendário 2026 impede cópia de esquemas antigos do material comparativo. Não considerar certificado antes de auditoria de conteúdo didático útil, validação de cada esquema/dose/questão, revisão médica e de política sanitária, imagens/diagramas aprovados e teste PWA/desktop. Sem criação de HTML, publicação ou merge.\"]"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-virus-sincicial-respiratorio-vsr/uma-mulher-foi-vacinada-antes",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-251-2024-coemm-cgesmu-dgci-saps-ms-e-cgan-deppros-saps-ms.pdf/@@download/file",
+    "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.who.int/tools/elena/interventions/daily-iron-pregnancy",
+    "https://www.ncbi.nlm.nih.gov/books/NBK409113/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "O calendário nacional de vacinação da gestante de 2026, do Ministério da Saúde, é a referência programática brasileira adotada nesta apostila. Para suplementação, a linha de cuidado brasileira orienta 40 mg/dia de ferro elementar de modo profilático a partir da 20ª semana até o terceiro mês pós-parto ou pós-aborto, e a Nota Técnica Conjunta 251/2024 propõe cálcio elementar 1.000 mg/dia para todas as gestantes da 12ª semana até o parto. Recomendações da OMS podem diferir em dose e momento por razões epidemiológicas e de política pública; ambas serão identificadas, sem misturar prescrições."
+    },
+    {
+      "section": "visao",
+      "text": "Uma orientação programática destina-se a garantir cobertura para um conjunto de pessoas e reduzir complicações frequentes. A prescrição individual pergunta se o recurso atende ao risco real, se a dose é compatível com a apresentação dispensada, se há contraindicações e se a paciente conseguirá seguir o plano. O exemplo do ferro demonstra isso: recomenda-se profilaxia universal em programa, mas uma gestante com anemia diagnosticada precisa de avaliação de causa e tratamento. O exemplo do cálcio mostra uma política universal brasileira de prevenção de pré-eclâmpsia com limites de segurança: doença renal ou hipercalcemia podem demandar ajuste in"
+    },
+    {
+      "section": "imunologia",
+      "text": "Vacinas inativadas, recombinantes, com subunidades proteicas, toxoides e vacinas de RNA mensageiro não contêm vírus vivo capaz de causar a doença pela replicação vacinal. A indicação depende, porém, de produto aprovado, composição, indicação etária, calendário e contraindicações clínicas. A gestação não impede o uso de vacinas indicadas apenas por receio genérico de efeitos fetais; o risco de infecção materna grave também precisa entrar na comparação."
+    },
+    {
+      "section": "imunologia",
+      "text": "Vacinas vivas atenuadas, como sarampo-caxumba-rubéola e varicela, são evitadas durante a gestação devido ao risco teórico de infecção fetal. A febre amarela é exceção relativa ao princípio, pois em cenário epidemiológico de alto risco pode haver benefício superior ao risco potencial; a decisão deve ser individualizada pelo serviço, jamais convertida em recomendação universal. Vacinação inadvertida com vacina viva não é, por si só, indicação de interromper a gestação."
+    },
+    {
+      "section": "imunologia",
+      "text": "Dor local, fadiga e febre leve podem ocorrer após vacinação; a magnitude e o manejo dependem do produto. Reação anafilática comprovada a dose anterior ou componente específico exige avaliação antes de repetir. Sintomas leves de resfriado em geral não equivalem a contraindicação permanente. Eventos supostamente atribuíveis à vacinação exigem registro, investigação e notificação segundo a rede de vigilância, evitando atribuição causal automática apenas pela coincidência temporal."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

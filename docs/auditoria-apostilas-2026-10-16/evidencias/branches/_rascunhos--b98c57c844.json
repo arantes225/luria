@@ -1,0 +1,401 @@
+{
+  "sha": "b98c57c844eb455c2512b62a7aa22d8af64cda2b",
+  "path": "apostilas/_rascunhos/lote-10-208-gestacao-gemelar-alto-risco.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b98c57c844",
+  "title": "LURIA | Apostila 208 — Gestação gemelar e acompanhamento de alto risco",
+  "format": ".md",
+  "chars_estimated": 79168,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 208 — Gestação gemelar e acompanhamento de alto risco"
+    },
+    {
+      "title": "0. Etapa zero — consulta comparativa documentada"
+    },
+    {
+      "title": "1. Objetivos e roteiro clínico"
+    },
+    {
+      "title": "2. Bases embriológicas e anatômicas"
+    },
+    {
+      "title": "2.1. Zigoticidade não é corionicidade"
+    },
+    {
+      "title": "2.2. Placentação DCDA"
+    },
+    {
+      "title": "2.3. Placentação MCDA"
+    },
+    {
+      "title": "2.4. Placentação MCMA"
+    },
+    {
+      "title": "2.5. Nomes que precisam ser escritos corretamente"
+    },
+    {
+      "title": "3. Ultrassonografia do primeiro trimestre: idade, corionicidade e amnionicidade"
+    },
+    {
+      "title": "3.1. Quanto mais cedo, melhor"
+    },
+    {
+      "title": "3.2. Sinal do lambda ou “twin peak”"
+    },
+    {
+      "title": "3.3. Sinal do T"
+    },
+    {
+      "title": "3.4. Quando corionicidade é indeterminada"
+    },
+    {
+      "title": "3.5. Datação da gestação"
+    },
+    {
+      "title": "3.6. Rastreamento de anomalias e aneuploidias"
+    },
+    {
+      "title": "4. Riscos gerais da gestação múltipla"
+    },
+    {
+      "title": "4.1. Prematuridade: principal desfecho agregador"
+    },
+    {
+      "title": "4.2. Pré-eclâmpsia e doença hipertensiva"
+    },
+    {
+      "title": "4.3. Anemia, nutrição e diabetes gestacional"
+    },
+    {
+      "title": "4.4. Crescimento fetal discordante"
+    },
+    {
+      "title": "4.5. Riscos maternos adicionais e puerpério"
+    },
+    {
+      "title": "5. Pré-natal de alto risco: o calendário guiado pela corionicidade"
+    },
+    {
+      "title": "5.1. Uma equipe e um plano documental"
+    },
+    {
+      "title": "5.2. DCDA sem complicações"
+    },
+    {
+      "title": "5.3. MCDA sem complicações"
+    },
+    {
+      "title": "5.4. MCMA e tripletos"
+    },
+    {
+      "title": "5.5. Tabela-matriz de vigilância"
+    },
+    {
+      "title": "6. Ultrassom de crescimento e interpretação dos resultados"
+    },
+    {
+      "title": "6.1. Atribuição consistente de A e B"
+    },
+    {
+      "title": "6.2. Biometria fetal"
+    },
+    {
+      "title": "6.3. Discordância percentual"
+    },
+    {
+      "title": "6.4. Artéria umbilical, ACM e ducto venoso"
+    },
+    {
+      "title": "6.5. Quando intensificar exames"
+    },
+    {
+      "title": "7. Síndrome de transfusão feto-fetal (TTTS / STFF)"
+    },
+    {
+      "title": "7.1. Mecanismo: duas circulações em uma placenta"
+    },
+    {
+      "title": "7.2. O diagnóstico ultrassonográfico: discrepância de líquido é central"
+    },
+    {
+      "title": "7.3. Bexiga fetal e perfusão"
+    },
+    {
+      "title": "7.4. Quintero: estágios da TTTS"
+    },
+    {
+      "title": "7.5. Encaminhamento e tratamento"
+    },
+    {
+      "title": "7.6. Após laser: vigilância não acabou"
+    },
+    {
+      "title": "7.7. Diagnóstico diferencial da sequência de líquido"
+    },
+    {
+      "title": "8. Sequência anemia–policitemia gemelar (TAPS)"
+    },
+    {
+      "title": "8.1. Por que é diferente de TTTS?"
+    },
+    {
+      "title": "8.2. Rastreamento pela velocidade sistólica máxima da ACM"
+    },
+    {
+      "title": "8.3. TAPS não é diagnosticada por hemoglobina materna"
+    },
+    {
+      "title": "8.4. Condutas especializadas"
+    },
+    {
+      "title": "9. Restrição de crescimento fetal seletiva (sFGR / RCF seletiva)"
+    },
+    {
+      "title": "9.1. Definição e raciocínio"
+    },
+    {
+      "title": "9.2. Critérios e desacordos entre classificações"
+    },
+    {
+      "title": "9.3. Tipos de sFGR na monocorionicidade segundo fluxo diastólico da artéria umbilical do feto menor"
+    },
+    {
+      "title": "9.4. Monitoramento por gravidade"
+    },
+    {
+      "title": "9.5. Um exemplo numérico e sua interpretação"
+    },
+    {
+      "title": "10. Sequência de perfusão arterial reversa (TRAP)"
+    },
+    {
+      "title": "10.1. O mecanismo incomum"
+    },
+    {
+      "title": "10.2. Ultrassonografia"
+    },
+    {
+      "title": "10.3. Monitoramento e tratamento"
+    },
+    {
+      "title": "11. Morte intrauterina de um gemelar"
+    },
+    {
+      "title": "11.1. Por que a corionicidade muda o risco?"
+    },
+    {
+      "title": "11.2. Abordagem após identificar óbito"
+    },
+    {
+      "title": "11.3. Comunicação clínica e acompanhamento humano"
+    },
+    {
+      "title": "12. Prematuridade e colo uterino na gestação gemelar"
+    },
+    {
+      "title": "12.1. Rastreamento do comprimento cervical"
+    },
+    {
+      "title": "12.2. O que não prescrever a todas as pacientes"
+    },
+    {
+      "title": "12.3. Trabalho de parto prematuro estabelecido"
+    },
+    {
+      "title": "12.4. RPMO e complicações de líquido"
+    },
+    {
+      "title": "13. Momento de parto: corionicidade, complicação e prematuridade"
+    },
+    {
+      "title": "13.1. Por que não esperar até 40 semanas em todos os gêmeos?"
+    },
+    {
+      "title": "13.2. Referência NICE NG137 em gestações sem complicações"
+    },
+    {
+      "title": "13.3. Quando antecipar por indicação"
+    },
+    {
+      "title": "13.4. Corticoterapia antenatal no parto programado"
+    },
+    {
+      "title": "13.5. Sulfato de magnésio para neuroproteção"
+    },
+    {
+      "title": "14. Via de parto em gestações múltiplas"
+    },
+    {
+      "title": "14.1. O primeiro feto é decisivo, mas não único"
+    },
+    {
+      "title": "14.2. O segundo gêmeo e manobras obstétricas"
+    },
+    {
+      "title": "14.3. Monitorização intraparto"
+    },
+    {
+      "title": "14.4. Hemorragia pós-parto e atonia"
+    },
+    {
+      "title": "15. Pós-parto, cuidado neonatal e aconselhamento"
+    },
+    {
+      "title": "15.1. Imediato materno"
+    },
+    {
+      "title": "15.2. Neonatal"
+    },
+    {
+      "title": "15.3. Amamentação de gêmeos"
+    },
+    {
+      "title": "15.4. Encaminhamento e saúde mental"
+    },
+    {
+      "title": "16. Quatro fluxogramas de decisão originais"
+    },
+    {
+      "title": "Fluxo A — Primeira ultrassonografia de gestação múltipla"
+    },
+    {
+      "title": "Fluxo B — MCDA com discrepância de líquido"
+    },
+    {
+      "title": "Fluxo C — MCDA com discordância de crescimento"
+    },
+    {
+      "title": "Fluxo D — Planejamento da via e momento de parto"
+    },
+    {
+      "title": "17. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — O erro de confiar em “dois bebês, uma placenta” sem laudo precoce"
+    },
+    {
+      "title": "Caso 2 — MCDA 19 semanas, doador com oligodrâmnio e bexiga não visível"
+    },
+    {
+      "title": "Caso 3 — Fluido quase normal, Doppler da ACM marcadamente discordante"
+    },
+    {
+      "title": "Caso 4 — Gêmeos com diferença ponderal e Doppler crítico"
+    },
+    {
+      "title": "Caso 5 — Gestação DCDA sem intercorrências e momento de parto"
+    },
+    {
+      "title": "Caso 6 — Colo curto em gêmeos e a armadilha da prescrição universal"
+    },
+    {
+      "title": "Caso 7 — Morte de um feto em MCDA"
+    },
+    {
+      "title": "Caso 8 — Monoamniótica com cordões e planejamento"
+    },
+    {
+      "title": "Caso 9 — Hemorragia pós-parto após gestação gemelar"
+    },
+    {
+      "title": "18. Questões de residência — alternativas e comentários"
+    },
+    {
+      "title": "Questão 1 — Sinal ultrassonográfico de corionicidade"
+    },
+    {
+      "title": "Questão 2 — Seguimento de MCDA sem intercorrências"
+    },
+    {
+      "title": "Questão 3 — Diferença de peso fetal"
+    },
+    {
+      "title": "Questão 4 — Quintero estágio II"
+    },
+    {
+      "title": "Questão 5 — TTTS estágio III na janela clássica"
+    },
+    {
+      "title": "Questão 6 — Doppler de ACM e TAPS"
+    },
+    {
+      "title": "Questão 7 — sFGR tipo III"
+    },
+    {
+      "title": "Questão 8 — TRAP"
+    },
+    {
+      "title": "Questão 9 — Timing de DCDA sem intercorrências"
+    },
+    {
+      "title": "Questão 10 — Timing de MCMA"
+    },
+    {
+      "title": "Questão 11 — Colo uterino de 22 mm na gestação gemelar"
+    },
+    {
+      "title": "Questão 12 — Morte de um gemelar monocoriônico"
+    },
+    {
+      "title": "Questão 13 — Elegibilidade ao parto vaginal em gemelares"
+    },
+    {
+      "title": "19. Pérolas de prova e prática"
+    },
+    {
+      "title": "20. Dez imagens candidatas (somente para fila Admin)"
+    },
+    {
+      "title": "21. Referências clínicas verificáveis"
+    },
+    {
+      "title": "22. Auditoria de autossuficiência e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. Khalil A, et al. **ISUOG Practice Guidelines (updated): role of ultrasound in twin pregnancy.** *Ultrasound Obstet Gynecol.* 2025. DOI: **10.1002/uog.29166**. Texto em acesso aberto: https://pmc.ncbi.nlm.nih.gov/articles/PMC11788470/ . **Base principal** de ultrassom, corionicidade, TTTS, TAPS, TRAP, restrição seletiva e morte de um gemelar.",
+    "2. National Institute for Health and Care Excellence. **Twin and triplet pregnancy (NG137)**. Diretriz 2019 com recomendações de prevenção de prematuridade atualizadas em 2024. https://www.nice.org.uk/guidance/ng137/chapter/recommendations . **Usada para:** acompanhamento, crescimento, comprimento cervical, progesterona, parto planejado.",
+    "3. Society for Maternal-Fetal Medicine. Miller R, et al. **Consult Series #72: Twin-twin transfusion syndrome and twin anemia-polycythemia sequence.** *Am J Obstet Gynecol.* 2024. DOI: **10.1016/j.ajog.2024.07.017**; PMID 39029545. https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/ . **Usada para:** terapia a laser TTTS II–IV, seguimento pós-laser, TAPS via PSV-ACM e vigilância MCDA.",
+    "4. Ministério da Saúde. **Atenção ao Pré-Natal de Alto Risco**, manual oficial brasileiro (verificar edição vigente em portal do MS e atos estaduais). **Complementar**: protocolo de hipertensão gestacional/parto prematuro e assistência ao parto conforme SUS. Não atribuir páginas ou recomendações específicas sem conferir documento atual.",
+    "5. LURIA. **Pré-natal de baixo risco, Crescimento Intrauterino Reduzido e Aumentado, Avaliação da Vitalidade Fetal, Trabalho de Parto Prematuro e Síndromes Hipertensivas da Gestação**. Arquivos internos para integração, não fontes independentes de validação clínica.",
+    "**Regra de segurança:** percentis, cutoffs, testes e diretrizes são auxiliares da avaliação; não transformá-los em prescrição individual sem revisão de idade gestacional, situação fetal, conduta de alto risco e disponibilidade hospitalar. Até validação especializada, a apostila permanece peça editorial, não protocolo assistencial."
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11788470/",
+    "https://www.nice.org.uk/guidance/ng137/chapter/recommendations",
+    "https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Pulo do Gato LURIA:** na primeira ultrassonografia de gestação múltipla, perguntar **quantas placentas e quantas bolsas?** Corionicidade e amnionicidade importam mais para o risco e para o calendário de exames que o simples número de fetos. **Placenta única (monocoriônica) implica risco de transfusão feto-fetal, TAPS e crescimento seletivo.** Biórnia/DCDA costuma ter seguimento de crescimento menos frequente; MCDA exige ultrassonografia quinzenal **desde 16 semanas**, mesmo sem sintomas. Um septo visualizado distingue bolsas amnióticas, não garante duas placentas."
+    },
+    {
+      "text": "A aula é organizada pelo princípio **“corionicidade primeiro, depois complicações”**, pois decorar diagnósticos sem saber a estrutura placentária induz erros. Um achado de polidrâmnio em um dos fetos MCDA tem significado diferente de dois sacos dicoriônicos com líquido desigual."
+    },
+    {
+      "text": "A membrana separadora **não impede** transferência sanguínea através da placenta. Ter duas bolsas não significa ausência de TTTS. Por isso a MCDA precisa de rastreamento quinzenal desde 16 semanas, não apenas ultrassonografia de crescimento a cada quatro semanas."
+    },
+    {
+      "text": "Na gestação **monocoriônica monoamniótica (MCMA)**, há placenta compartilhada **sem membrana interamniótica**; fetos dividem espaço amniótico. Além dos riscos de monocorionicidade, existe risco de entrelaçamento/compressão de cordões, morte fetal súbita e complicações de cordão. A visualização de cordões entrelaçados ao Doppler pode apoiar diagnóstico de monoamnionicidade, mas o exame deve esclarecer se realmente não há membrana, pois septo muito fino pode passar despercebido."
+    },
+    {
+      "text": "No primeiro trimestre, ultrassom permite identificar número de embriões com batimentos, sacos gestacionais, número de bolsas, membrana intergemelar e região de inserção placentária. Definir corionicidade **até 13 semanas e 6 dias** é preferível porque sinais de membranas e interfaces coriais são mais interpretáveis. Após o primeiro trimestre, amnionicidade e corionicidade podem ser mais difíceis de determinar, especialmente com placentas fusionadas e membranas muito finas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

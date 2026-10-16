@@ -1,0 +1,751 @@
+{
+  "key": "hemorragias-primeiro-terceiro-trimestre",
+  "kind": "apostila-html",
+  "path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+  "html_path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+  "title": "Hemorragias do 1º e 3º trimestre da gestação",
+  "source_sha256": "bdfa347ea85380bccbcee94e0d0f1caf259a6ed35ad26e046ab5699ae0752551",
+  "html_sha256": "bdfa347ea85380bccbcee94e0d0f1caf259a6ed35ad26e046ab5699ae0752551",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "1º trimestre",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "3º trimestre",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Perguntas imediatas",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Decisão",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Abordagem inicial: gravidade antes da etiologia",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "Mãe",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "Feto",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "Se o sangramento for importante",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "História dirigida",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Hemorragias do 1º trimestre",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Ameaça de abortamento: o que muda a conduta?",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Hematoma subcoriônico",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Abortamento infectado: reconhecer antes da sepse",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Critérios ultrassonográficos: onde não se pode errar",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando repetir a ultrassonografia?",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Abortamento confirmado: três estratégias",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Como escolher entre expectante, medicamento e aspiração?",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Imunoprofilaxia anti-D",
+      "section": "primeiro-trimestre"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Gestação ectópica e gestação de localização desconhecida",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação de localização desconhecida (PUL)",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Dinâmica do β-hCG: interpretar tendência sem transformar números em diagnóstico",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Conduta expectante",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Metotrexato: monitorização importa tanto quanto a dose",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Cirurgia: salpingectomia ou salpingostomia?",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando operar sem esperar série laboratorial",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H3",
+      "title": "Metotrexato: para quem ele é opção?",
+      "section": "ectopica"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Doença trofoblástica gestacional",
+      "section": "dtg"
+    },
+    {
+      "tag": "H3",
+      "title": "Conduta e seguimento",
+      "section": "dtg"
+    },
+    {
+      "tag": "H3",
+      "title": "Depois do esvaziamento: o hCG é uma curva, não um exame de alta",
+      "section": "dtg"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Hemorragias do 3º trimestre: separar padrões sem confiar demais no “clássico”",
+      "section": "terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Placenta prévia e placenta de inserção baixa",
+      "section": "terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Espectro de placenta acreta: quando a placenta prévia muda de categoria de risco",
+      "section": "terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Paciente estável e pré-termo: o que fazer enquanto se espera?",
+      "section": "terceiro-trimestre"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Descolamento prematuro de placenta (DPP)",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores de risco",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico é clínico",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Laboratório e coagulopatia",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que o fibrinogênio é tão útil?",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Útero de Couvelaire",
+      "section": "dpp"
+    },
+    {
+      "tag": "H3",
+      "title": "Via de parto",
+      "section": "dpp"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Vasa prévia e rotura uterina",
+      "section": "vasa-rotura"
+    },
+    {
+      "tag": "H3",
+      "title": "Vasa prévia",
+      "section": "vasa-rotura"
+    },
+    {
+      "tag": "H3",
+      "title": "Quem merece rastreamento dirigido para vasa prévia?",
+      "section": "vasa-rotura"
+    },
+    {
+      "tag": "H3",
+      "title": "Rotura uterina",
+      "section": "vasa-rotura"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Hemorragia grave, transfusão e quando pular etapas",
+      "section": "hemorragia-grave"
+    },
+    {
+      "tag": "H3",
+      "title": "Reanimação hemostática: pensar além de “dar soro”",
+      "section": "hemorragia-grave"
+    },
+    {
+      "tag": "H3",
+      "title": "Índice de choque obstétrico",
+      "section": "hemorragia-grave"
+    },
+    {
+      "tag": "H2",
+      "title": "Segurança clínica: cinco hemorragias parecidas com condutas diferentes",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Descolamento prematuro de placenta: o ultrassom normal não encerra o caso",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Placenta prévia: antes de examinar o colo, localize a placenta",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Placenta prévia anterior e cicatriz de cesárea: suspeitar do espectro acreta",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Vasa prévia: sangramento pequeno na mãe pode ser grande para o feto",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Primeira metade: repetir exame para proteger gravidez desejada",
+      "section": "decisoes-hemorragicas-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — 7 semanas, saco pequeno sem batimento",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — PUL com dor unilateral",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — 32 semanas, sangue vivo sem dor",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — 36 semanas, dor e hipertonia com bradicardia",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — sangramento após amniorrexe, mãe estável",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — DPP com óbito fetal",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 7 — febre após abortamento incompleto",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 8 — placenta prévia anterior + duas cesáreas",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Aprofundamento: hemorragia obstétrica como problema de tempo e fisiologia",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Choque pode estar subestimado",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Fibrinogênio e coagulopatia",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Placenta acreta: diagnóstico muda logística",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Ectópica não é apenas tubária ampular",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Doença trofoblástica",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "section": "editorial-depth-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Primeiro trimestre: localização e viabilidade",
+      "section": "editorial-depth-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Terceiro trimestre: placenta e útero",
+      "section": "editorial-depth-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Hemorragias da primeira metade da gravidez — mecanismos, exames e decisões",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "12.1 Por que um saco gestacional pequeno não confirma perda gestacional",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "12.2 β-hCG seriado não localiza a gestação sozinho",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "12.3 O mecanismo da gestação ectópica e a urgência hemorrágica",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "12.4 Abortamento: explicar as diferenças entre abordagens",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Hemorragias do terceiro trimestre — placenta, circulação e urgência obstétrica",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.1 Placenta prévia e a relação entre implantação e sangramento",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.2 Descolamento prematuro da placenta: um problema de separação e coagulação",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.3 Vasa prévia: pequeno volume de sangue materno pode significar perda fetal grave",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.4 A rotura uterina não depende de sangramento vaginal exuberante",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "13.5 Prioridade na hemorragia: fisiologia do choque antes da quantificação perfeita",
+      "section": "hemorragias-livro-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "section": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação de localização desconhecida: não intervir antes de localizar",
+      "section": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Abortamento: três abordagens são alternativas, não sinônimos",
+      "section": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre"
+    },
+    {
+      "tag": "H3",
+      "title": "Terceiro trimestre: placenta prévia, DPP, vasa prévia e rotura",
+      "section": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1759
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 488
+    },
+    {
+      "id": "abordagem",
+      "title": "1. Abordagem inicial: gravidade antes da etiologia",
+      "chars": 1913
+    },
+    {
+      "id": "primeiro-trimestre",
+      "title": "2. Hemorragias do 1º trimestre",
+      "chars": 7227
+    },
+    {
+      "id": "ectopica",
+      "title": "3. Gestação ectópica e gestação de localização desconhecida",
+      "chars": 3930
+    },
+    {
+      "id": "dtg",
+      "title": "4. Doença trofoblástica gestacional",
+      "chars": 1713
+    },
+    {
+      "id": "terceiro-trimestre",
+      "title": "5. Hemorragias do 3º trimestre: separar padrões sem confiar demais no “clássico”",
+      "chars": 2775
+    },
+    {
+      "id": "dpp",
+      "title": "6. Descolamento prematuro de placenta (DPP)",
+      "chars": 2523
+    },
+    {
+      "id": "vasa-rotura",
+      "title": "7. Vasa prévia e rotura uterina",
+      "chars": 1864
+    },
+    {
+      "id": "hemorragia-grave",
+      "title": "8. Hemorragia grave, transfusão e quando pular etapas",
+      "chars": 1948
+    },
+    {
+      "id": "decisoes-hemorragicas-2026",
+      "title": "Segurança clínica: cinco hemorragias parecidas com condutas diferentes",
+      "chars": 6514
+    },
+    {
+      "id": "casos",
+      "title": "9. Casos integradores",
+      "chars": 1923
+    },
+    {
+      "id": "revisao",
+      "title": "10. Revisão de alto rendimento",
+      "chars": 1574
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "11. Aprofundamento: hemorragia obstétrica como problema de tempo e fisiologia",
+      "chars": 2405
+    },
+    {
+      "id": "editorial-depth-hemorragias-primeiro-terceiro-trimestre",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 932
+    },
+    {
+      "id": "hemorragias-livro-40k",
+      "title": "12. Hemorragias da primeira metade da gravidez — mecanismos, exames e decisões",
+      "chars": 13823
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 1289
+    },
+    {
+      "id": "clinica-etiologia-2026-hemorragias-primeiro-terceiro-trimestre",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "chars": 1913
+    }
+  ],
+  "references": [
+    "Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco. Brasília: Ministério da Saúde, 2022.",
+    "FEBRASGO. Abortamento espontâneo: classificação, diagnóstico e conduta. Protocolo 01/2021.",
+    "FEBRASGO. Descolamento prematuro de placenta. Protocolo/fluxograma da Comissão de Gestação de Alto Risco.",
+    "ACOG. Early Pregnancy Loss. Practice Bulletin No. 200.",
+    "ACOG. Tubal Ectopic Pregnancy. Practice Bulletin No. 193; reaffirmed 2025.",
+    "Society of Radiologists in Ultrasound. Diagnostic Criteria for Nonviable Pregnancy Early in the First Trimester. N Engl J Med. 2013.",
+    "SMFM. Consult Series #44: Management of bleeding in the late preterm period. Reaffirmed 2024.",
+    "SMFM. Consult Series #37: Diagnosis and management of vasa previa. Reaffirmed 2024.",
+    "ACOG. Bleeding During Pregnancy. Patient guidance, current online version.",
+    "ACOG. The Rh Factor: How It Can Affect Your Pregnancy. Current online guidance.",
+    "NICE. Ectopic pregnancy and miscarriage: diagnosis and initial management (NG126). Atualizado em 17 jun. 2026.",
+    "ACOG. Rh D Immune Globulin Administration After Abortion or Pregnancy Loss at Less Than 12 Weeks of Gestation. Clinical Practice Update, 2024.",
+    "Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco: seção de abortamento infectado e sepse obstétrica. 2022."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "FIGO — doença trofoblástica, atualização de 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12411817/",
+      "in_references": false
+    },
+    {
+      "label": "ACOG, Placenta Accreta Spectrum",
+      "url": "https://www.acog.org/clinical/clinical-guidance/obstetric-care-consensus/articles/2018/12/placenta-accreta-spectrum",
+      "in_references": false
+    },
+    {
+      "label": "RCOG, placenta prévia e acretismo",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/placenta-praevia-placenta-accreta-and-vasa-praevia/",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG126, atualizada em 2026",
+      "url": "https://www.nice.org.uk/guidance/ng126/chapter/recommendations",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 10,
+  "paragraphs": 101,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 44,
+      "status": "approved",
+      "section": "ectopica",
+      "source_license": "CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-ectopic-blob.webp"
+    },
+    {
+      "id": 46,
+      "status": "approved",
+      "section": "dtg",
+      "source_license": "CC0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-molar-us.webp"
+    },
+    {
+      "id": 48,
+      "status": "approved",
+      "section": "terceiro-trimestre",
+      "source_license": "CC BY-SA 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-placenta-previa-illustration.webp"
+    },
+    {
+      "id": 51,
+      "status": "approved",
+      "section": "dpp",
+      "source_license": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-abruption-concealed.webp"
+    },
+    {
+      "id": 52,
+      "status": "approved",
+      "section": "vasa-rotura",
+      "source_license": "CC BY 3.0 / GFDL",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-vasa-previa.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "primeiro-trimestre",
+      "text": "O sangramento até 13 semanas e 6 dias varia de spotting benigno a emergência hemorrágica. A pergunta central é dupla: a gestação está intrauterina? e é viável?. Essas perguntas não devem ser respondidas apenas pelo aspecto do sangue.",
+      "pattern": 0
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Uma recomendação internacional atualizada do NICE oferece progesterona micronizada vaginal 400 mg duas vezes ao dia para mulheres com sangramento precoce, gestação intrauterina confirmada e pelo menos um abortamento prévio; se houver atividade cardíaca fetal, o tratamento é mantido até 16 semanas. Essa recomendação não deve ser extrapolada para toda gestante com sangramento e deve ser contextualizada à disponibilidade e aos protocolos brasileiros.",
+      "pattern": 0
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "No Brasil, protocolos da FEBRASGO descrevem misoprostol 800 µg por via vaginal em esquemas repetidos para abortamento de 1º trimestre, conforme contexto e protocolo institucional. O uso do misoprostol é regulado e, na prática brasileira, hospitalar. Aspiração intrauterina é preferível à curetagem cortante quando disponível para esvaziamento cirúrgico.",
+      "pattern": 0
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Em gestantes RhD-negativas não sensibilizadas, a indicação depende do evento, idade gestacional e protocolo. ACOG recomenda RhIg após perda com 12 semanas ou mais e após ectópica; abaixo de 12 semanas a recomendação passou a ser mais individualizada. No Brasil, seguir protocolo obstétrico institucional/Ministério da Saúde, especialmente em sangramento significativo, procedimentos e eventos sensibilizantes.",
+      "pattern": 0
+    },
+    {
+      "section": "abordagem",
+      "text": "A hemorragia obstétrica deve ser encarada como problema potencialmente dinâmico. Pressão arterial inicialmente normal não exclui perda relevante, especialmente em gestantes jovens, que podem compensar até fases tardias. O objetivo inicial é reconhecer hipoperfusão, quantificar tendência do sangramento e definir simultaneamente o estado fetal quando houver viabilidade.",
+      "pattern": 1
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "O sangramento até 13 semanas e 6 dias varia de spotting benigno a emergência hemorrágica. A pergunta central é dupla: a gestação está intrauterina? e é viável?. Essas perguntas não devem ser respondidas apenas pelo aspecto do sangue.",
+      "pattern": 1
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Na ameaça de abortamento há sangramento vaginal com colo fechado e gestação intrauterina ainda viável. O diagnóstico é descritivo: ele não significa que a perda ocorrerá. A intensidade do sangramento, presença de dor, idade materna, hematoma subcoriônico e achados ultrassonográficos ajudam a estimar risco, mas nenhum deles isoladamente autoriza declarar inviabilidade.",
+      "pattern": 1
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Uma recomendação internacional atualizada do NICE oferece progesterona micronizada vaginal 400 mg duas vezes ao dia para mulheres com sangramento precoce, gestação intrauterina confirmada e pelo menos um abortamento prévio; se houver atividade cardíaca fetal, o tratamento é mantido até 16 semanas. Essa recomendação não deve ser extrapolada para toda gestante com sangramento e deve ser contextualizada à disponibilidade e aos protocolos brasileiros.",
+      "pattern": 1
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Uma recomendação internacional atualizada do NICE oferece progesterona micronizada vaginal 400 mg duas vezes ao dia para mulheres com sangramento precoce, gestação intrauterina confirmada e pelo menos um abortamento prévio; se houver atividade cardíaca fetal, o tratamento é mantido até 16 semanas. Essa recomendação não deve ser extrapolada para toda gestante com sangramento e deve ser contextualizada à disponibilidade e aos protocolos brasileiros.",
+      "pattern": 2
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "No Brasil, protocolos da FEBRASGO descrevem misoprostol 800 µg por via vaginal em esquemas repetidos para abortamento de 1º trimestre, conforme contexto e protocolo institucional. O uso do misoprostol é regulado e, na prática brasileira, hospitalar. Aspiração intrauterina é preferível à curetagem cortante quando disponível para esvaziamento cirúrgico.",
+      "pattern": 2
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "Em gestantes RhD-negativas não sensibilizadas, a indicação depende do evento, idade gestacional e protocolo. ACOG recomenda RhIg após perda com 12 semanas ou mais e após ectópica; abaixo de 12 semanas a recomendação passou a ser mais individualizada. No Brasil, seguir protocolo obstétrico institucional/Ministério da Saúde, especialmente em sangramento significativo, procedimentos e eventos sensibilizantes.",
+      "pattern": 2
+    },
+    {
+      "section": "ectopica",
+      "text": "Dosagem de progesterona sérica não deve ser usada para distinguir, sozinha, gestação intrauterina viável de ectópica em uma PUL.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "abordagem",
+      "text": "A hemorragia obstétrica deve ser encarada como problema potencialmente dinâmico. Pressão arterial inicialmente normal não exclui perda relevante, especialmente em gestantes jovens, que podem compensar até fases tardias. O objetivo inicial é reconhecer hipoperfusão, quantificar tendência do sangramento e definir simultaneamente o estado fetal quando houver viabilidade."
+    },
+    {
+      "section": "primeiro-trimestre",
+      "text": "O sangramento até 13 semanas e 6 dias varia de spotting benigno a emergência hemorrágica. A pergunta central é dupla: a gestação está intrauterina? e é viável?. Essas perguntas não devem ser respondidas apenas pelo aspecto do sangue."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 44,
+        "section": "ectopica",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-ectopic-blob.webp",
+        "source_only": false
+      },
+      {
+        "id": 46,
+        "section": "dtg",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-molar-us.webp",
+        "source_only": false
+      },
+      {
+        "id": 48,
+        "section": "terceiro-trimestre",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-placenta-previa-illustration.webp",
+        "source_only": false
+      },
+      {
+        "id": 51,
+        "section": "dpp",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-abruption-concealed.webp",
+        "source_only": false
+      },
+      {
+        "id": 52,
+        "section": "vasa-rotura",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-hemorragias-primeiro-terceiro-trimestre/hemorragias-vasa-previa.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 5
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "sha": "179f796a9d8fc1b41183fddafc7c43e1be13a0b1",
+  "path": "apostilas/_rascunhos/lote-08-aula-180-complemento-02-clinico-2026.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--179f796a9d",
+  "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias",
+  "format": ".md",
+  "chars_estimated": 53797,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias"
+    },
+    {
+      "title": "Camada adicional 02B — aprofundamento clínico e atualização normativa de 2026"
+    },
+    {
+      "title": "0. Comparativo, segurança e fonte normativa vigente"
+    },
+    {
+      "title": "22. O cuidado paliativo é simultâneo ao modificador de doença"
+    },
+    {
+      "title": "Da intenção terapêutica ao benefício verificável"
+    },
+    {
+      "title": "23. Ferramentas para avaliação de necessidades, não para prever data exata de morte"
+    },
+    {
+      "title": "Análise do padrão de declínio"
+    },
+    {
+      "title": "Reconhecer sinais de declínio potencialmente reversível"
+    },
+    {
+      "title": "24. PAC e DAV segundo a Portaria 10.181/2026 — diferenças fundamentais"
+    },
+    {
+      "title": "Como documentar uma conversa de PAC"
+    },
+    {
+      "title": "Exemplo de registro clínico autoral"
+    },
+    {
+      "title": "Situação ética difícil: familiar discorda da DAV"
+    },
+    {
+      "title": "25. Paliativos não oncológicos: insuficiência cardíaca, DPOC, doença renal e demência"
+    },
+    {
+      "title": "Insuficiência cardíaca avançada"
+    },
+    {
+      "title": "Doença pulmonar obstrutiva crônica e outras insuficiências respiratórias"
+    },
+    {
+      "title": "Doença renal avançada"
+    },
+    {
+      "title": "Demência avançada, fragilidade e doenças neurológicas"
+    },
+    {
+      "title": "26. Avaliação integral da dor — além da escala numérica"
+    },
+    {
+      "title": "Características que sempre precisam de registro"
+    },
+    {
+      "title": "Opioides: escolha, titulação e segurança"
+    },
+    {
+      "title": "Quando dor expressa outra emergência"
+    },
+    {
+      "title": "27. Dispneia, secreções e sintomas respiratórios no fim da vida"
+    },
+    {
+      "title": "28. Sintomas digestivos, obstrução intestinal e alimentação"
+    },
+    {
+      "title": "29. Delirium e sofrimento neuropsiquiátrico: não sedar antes de avaliar"
+    },
+    {
+      "title": "30. Sedação paliativa proporcional: avaliação de refratariedade, intenção e monitorização"
+    },
+    {
+      "title": "Matriz antes de sedar"
+    },
+    {
+      "title": "31. Vias alternativas, domicílio e plano de crise 24/7"
+    },
+    {
+      "title": "Modelo de plano de crise domiciliar"
+    },
+    {
+      "title": "Desospitalização segura"
+    },
+    {
+      "title": "32. Crianças, adolescentes e neonatos: cuidado paliativo não é só miniaturizar o adulto"
+    },
+    {
+      "title": "33. Comunicação avançada: prognóstico, conflito, esperança e notícia de morte"
+    },
+    {
+      "title": "Perguntas úteis antes de explicar prognóstico"
+    },
+    {
+      "title": "Prognóstico em cenários, com incerteza honesta"
+    },
+    {
+      "title": "Conflito familiar sobre intubação"
+    },
+    {
+      "title": "Comunicar notícia de óbito"
+    },
+    {
+      "title": "34. Checklist de revisão de medicamentos em tempo de vida limitado"
+    },
+    {
+      "title": "Plano de reconciliação"
+    },
+    {
+      "title": "35. Casos adicionais — dilemas não repetidos do rascunho-base"
+    },
+    {
+      "title": "Caso 7 — CDI em insuficiência cardíaca terminal"
+    },
+    {
+      "title": "Caso 8 — Diálise e escolha informada"
+    },
+    {
+      "title": "Caso 9 — Dispneia refratária e saturação preservada"
+    },
+    {
+      "title": "Caso 10 — Demência avançada e pedido de gastrostomia"
+    },
+    {
+      "title": "Caso 11 — Delirium agitado com bexiga cheia"
+    },
+    {
+      "title": "Caso 12 — Criança com doença neurodegenerativa"
+    },
+    {
+      "title": "Caso 13 — Desprescrição sem descontinuação abrupta"
+    },
+    {
+      "title": "Caso 14 — Obstrução intestinal maligna com vômitos"
+    },
+    {
+      "title": "36. Questões autorais adicionais com explicação de alternativas"
+    },
+    {
+      "title": "37. Visualização e ensino: matriz de 14 recursos, não aprovados"
+    },
+    {
+      "title": "38. Referências verificadas nesta ampliação e aspectos ainda abertos"
+    },
+    {
+      "title": "Distinções obrigatórias ao consolidar"
+    },
+    {
+      "title": "39. Auditoria de qualidade desta camada"
+    }
+  ],
+  "reference_entries": [
+    "1. **Brasil, MS.** Portaria GM/MS nº 3.681, de 7 maio 2024. Política Nacional de Cuidados Paliativos no SUS. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "2. **Brasil, MS.** Portaria GM/MS nº 10.181, de 26 janeiro 2026. Atualiza PAC, DAV, RAS, EMCP/EAACP e implantação. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+    "3. **Brasil, MS.** Página oficial de legislação PNCP (inclui Portaria SAES/MS nº 4.288, junho 2026; informações CNES). https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao",
+    "4. **INCA.** Cuidados paliativos: definição, início precoce, domicílio e internação quando necessários. https://www.gov.br/inca/pt-br/assuntos/cancer/tratamento/cuidados-paliativos",
+    "5. **Conselho Federal de Medicina.** Resolução CFM 1.805/2006: limitação/suspensão proporcional de procedimentos na fase terminal, documentação e manutenção do conforto. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "6. **Conselho Federal de Medicina.** Resolução CFM 1.995/2012: diretivas antecipadas de vontade. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "7. **European Association for Palliative Care.** Revised recommended framework on palliative sedation: international Delphi study. Palliat Med. 2024;38:213–228. https://pmc.ncbi.nlm.nih.gov/articles/PMC10865771/",
+    "8. **INCA.** Série Cuidados Paliativos, v. 1: sintomas e assistência no fim de vida, com exemplos de manejo de equipe. https://www.inca.gov.br/sites/ufu.sti.inca.local/files/media/document/completo_serie_cuidados_paliativos_volume_1.pdf",
+    "9. **INCA.** Cuidados paliativos e práticas da equipe interdisciplinar. https://www.gov.br/inca/pt-br/assuntos/cancer/tratamento/cuidados-paliativos",
+    "- **PNCP 2024 versus PNCP após 10.181/2026:** o texto de 2024 deve ser apresentado com alterações vigentes; não resumir estrutura original de equipes como se 2026 não existisse.",
+    "- **PAC versus DAV:** a portaria de 2026 explicita PAC como processo e sua precedência desejável à DAV; a Resolução CFM 1.995/2012 detalha dever de considerar a vontade previamente manifestada.",
+    "- **Ortotanásia versus sedação paliativa:** limitação de intervenção desproporcional e alívio de sintoma refratário possuem critérios próprios. Nenhuma delas equivale automaticamente a eutanásia.",
+    "- **SUS pretendido versus disponível:** descrição normativa de rede não comprova que há EMCP/EAACP habilitada no município do leitor.",
+    "- **Farmacologia:** revisão de morfina, fentanil, metadona, antissecretórios, antieméticos, antipsicóticos, sedativos e vias precisa ocorrer no bulário com farmacêutico, antes de transformar o material em prescrição.",
+    "**Estado final:** complemento didático original; não é protocolo prescritivo nem apostila premium certificada. O conjunto pode ultrapassar a marca bruta de 60 mil caracteres, porém o nível mínimo deve ser verificado **após** integração sem redundância, controle de imagens e revisão independente."
+  ],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+    "https://www.gov.br/saude/pt-br/composicao/saes/cuidados-paliativos/legislacao",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tratamento/cuidados-paliativos",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10865771/",
+    "https://www.inca.gov.br/sites/ufu.sti.inca.local/files/media/document/completo_serie_cuidados_paliativos_volume_1.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "1. **Situação clínica:** nomear condição e incerteza, o que se sabe sobre reversibilidade, tratamento disponível e tendência funcional. 2. **Capacidade e participação:** verificar capacidade decisória naquele momento para a escolha em pauta; capacidade não é determinada apenas por idade ou diagnóstico. Adaptar informação, linguagem e apoios. 3. **Valores:** perguntar o que representa uma vida aceitável, funções essenciais, medos e compromissos; evitar sugerir que há resposta “certa”. 4. **Metas:** formular prioridades concretas — estar desperto, conseguir comunicar-se, evitar dor, manter tratamento que possibilite alta, permanecer perto de fa"
+    },
+    {
+      "text": "“Paciente orientado, compreende diagnóstico e possibilidade de novas descompensações. Relata prioridade em permanecer consciente e evitar procedimentos invasivos se recuperação da autonomia prévia for muito improvável. Deseja tratar infecções que possam permitir voltar para casa, aceita oxigênio e antibióticos quando houver benefício clínico, mas solicita discutir intubação e RCP à luz do prognóstico. Indica pessoa de confiança para participar se perder capacidade. Plano explicado a familiares presentes com autorização; revisar após próxima consulta ou mudança importante.”"
+    },
+    {
+      "text": "**Constipação induzida por opioide:** costuma persistir durante uso e **não apresenta tolerância comparável à náusea/sedação**. Planejar profilaxia/tratamento desde o início salvo contraindicações; avaliar fecaloma e obstrução antes de laxante estimulante. Em paciente com intolerância oral ou trânsito interrompido, selecionar rota e abordagem conforme quadro."
+    },
+    {
+      "text": "**Refratariedade é julgamento clínico justificado**, não sinônimo de sintoma intenso no primeiro momento. Perguntar: o diagnóstico e mecanismo foram avaliados? Há opções com benefício provável e tempo compatível? Foram testadas, contraindicadas ou recusadas? O paciente/família compreendem consequências? Existe médico experiente disponível? É possível usar sedação intermitente/proporcional em vez de sedação profunda contínua?"
+    },
+    {
+      "text": "| Pergunta | Registro necessário | |---|---| | Qual sintoma é refratário? | Intensidade, evolução, diagnóstico diferencial, tentativas de alívio | | Por que medidas usuais falharam? | Falta de resposta, efeitos adversos, contraindicação ou prazo incompatível | | Qual objetivo da intervenção? | Reduzir sofrimento específico e de forma proporcional | | Existe capacidade/consentimento? | Preferências atuais, PAC/DAV, representante e deliberação | | Qual plano farmacológico? | Fármaco e via sob equipe experiente, titulação, monitorização, resgate | | Como cuidar da família? | Explicar expectativa, alterações de consciência, possibilidade de prese"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

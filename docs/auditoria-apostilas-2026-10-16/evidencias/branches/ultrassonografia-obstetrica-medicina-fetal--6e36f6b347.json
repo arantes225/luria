@@ -1,0 +1,327 @@
+{
+  "sha": "6e36f6b347304873f99515ec45069aa4c707746c",
+  "path": "apostilas/ultrassonografia-obstetrica-medicina-fetal/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "ultrassonografia-obstetrica-medicina-fetal--6e36f6b347",
+  "title": "LURIA — Ultrassonografia Obstétrica e Medicina Fetal",
+  "format": ".md",
+  "chars_estimated": 64848,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Ultrassonografia Obstétrica e Medicina Fetal"
+    },
+    {
+      "title": "1. Introdução — a ultrassonografia responde perguntas clínicas, não produz certezas absolutas"
+    },
+    {
+      "title": "1.1 Três níveis de resposta do exame"
+    },
+    {
+      "title": "1.2 Âmbito do generalista"
+    },
+    {
+      "title": "2. Fundamentos técnicos e segurança do exame"
+    },
+    {
+      "title": "2.1 Formação da imagem"
+    },
+    {
+      "title": "2.2 Doppler: imagem de movimento do sangue"
+    },
+    {
+      "title": "2.3 Segurança: ALARA, índices térmico e mecânico"
+    },
+    {
+      "title": "2.4 Como reconhecer um laudo tecnicamente útil"
+    },
+    {
+      "title": "3. Cronologia do ultrassom obstétrico"
+    },
+    {
+      "title": "3.1 Primeiro trimestre inicial — localização, viabilidade e datação"
+    },
+    {
+      "title": "3.2 Exame entre 11 e 14 semanas"
+    },
+    {
+      "title": "3.3 Morfológico de segundo trimestre"
+    },
+    {
+      "title": "3.4 Ultrassom do terceiro trimestre"
+    },
+    {
+      "title": "3.5 Tabela de objetivos por etapa"
+    },
+    {
+      "title": "4. Biometria fetal: medir bem, interpretar melhor"
+    },
+    {
+      "title": "4.1 Medidas padronizadas"
+    },
+    {
+      "title": "4.2 Percentil não é diagnóstico completo"
+    },
+    {
+      "title": "4.3 Intervalo entre medidas seriadas"
+    },
+    {
+      "title": "4.4 Macrossomia e peso fetal aumentado"
+    },
+    {
+      "title": "5. Anatomia fetal: checklist interpretativo"
+    },
+    {
+      "title": "5.1 Cabeça, cérebro e face"
+    },
+    {
+      "title": "5.2 Coluna vertebral e tegumento"
+    },
+    {
+      "title": "5.3 Coração fetal: rastreio não é ecocardiografia completa"
+    },
+    {
+      "title": "5.4 Tórax, diafragma e pulmões"
+    },
+    {
+      "title": "5.5 Abdome, parede e trato gastrointestinal"
+    },
+    {
+      "title": "5.6 Rins, ureteres, bexiga e líquido"
+    },
+    {
+      "title": "5.7 Membros e esqueleto"
+    },
+    {
+      "title": "6. Placenta, cordão e inserção"
+    },
+    {
+      "title": "6.1 Localização placentária e placenta baixa"
+    },
+    {
+      "title": "6.2 Espectro de acretismo placentário"
+    },
+    {
+      "title": "6.3 Vasa prévia"
+    },
+    {
+      "title": "6.4 Cordão umbilical"
+    },
+    {
+      "title": "7. Líquido amniótico — significado clínico"
+    },
+    {
+      "title": "7.1 Como medir"
+    },
+    {
+      "title": "7.2 Interpretação fisiopatológica"
+    },
+    {
+      "title": "8. Dopplervelocimetria feto-placentária: tradução da fisiologia em conduta"
+    },
+    {
+      "title": "8.1 Artérias uterinas"
+    },
+    {
+      "title": "8.2 Artéria umbilical"
+    },
+    {
+      "title": "8.3 Artéria cerebral média: redistribuição versus anemia"
+    },
+    {
+      "title": "8.4 Ducto venoso"
+    },
+    {
+      "title": "8.5 Quadro comparativo"
+    },
+    {
+      "title": "9. Restrição de crescimento fetal — o papel da ultrassonografia, sem duplicar a apostila clínica"
+    },
+    {
+      "title": "10. Medicina fetal: suspeita de anomalia, genética e tratamento"
+    },
+    {
+      "title": "10.1 Rastreio, NIPT e diagnóstico invasivo"
+    },
+    {
+      "title": "10.2 Marcadores ultrassonográficos “soft”"
+    },
+    {
+      "title": "10.3 Terapia fetal: quando a imagem muda intervenção"
+    },
+    {
+      "title": "10.4 Hidropsia fetal"
+    },
+    {
+      "title": "11. Ultrassonografia em gestações múltiplas"
+    },
+    {
+      "title": "11.1 Corionicidade e amnionicidade: por que verificar cedo"
+    },
+    {
+      "title": "11.2 Síndrome de transfusão feto-fetal (STFF/TTTS)"
+    },
+    {
+      "title": "11.3 TAPS, RCF seletiva e TRAP"
+    },
+    {
+      "title": "11.4 O que registrar a cada exame"
+    },
+    {
+      "title": "12. Avaliação cervical e risco de prematuridade"
+    },
+    {
+      "title": "13. Condutas iniciais diante dos principais resultados"
+    },
+    {
+      "title": "Algoritmo A — imagem com suspeita de anomalia estrutural"
+    },
+    {
+      "title": "Algoritmo B — suspeita de comprometimento de crescimento"
+    },
+    {
+      "title": "Algoritmo C — placenta potencialmente de alto risco"
+    },
+    {
+      "title": "14. Casos clínicos comentados (base para revisão médica)"
+    },
+    {
+      "title": "Caso 1 — DPP que muda a cada exame"
+    },
+    {
+      "title": "Caso 2 — Translucência nucal aumentada"
+    },
+    {
+      "title": "Caso 3 — Malformação de parede abdominal"
+    },
+    {
+      "title": "Caso 4 — Doppler umbilical muito alterado"
+    },
+    {
+      "title": "Caso 5 — Gêmeos monocoriônicos com discordância de líquido"
+    },
+    {
+      "title": "Caso 6 — Vaso fetal próximo ao colo"
+    },
+    {
+      "title": "15. Questões autorais LURIA — 8 questões comentadas"
+    },
+    {
+      "title": "16. Revisão rápida de alto rendimento"
+    },
+    {
+      "title": "17. Matriz de imagens candidatas para curadoria (sem uso de material terceirizado não licenciado)"
+    },
+    {
+      "title": "18. Referências científicas — verificadas como fontes oficiais"
+    },
+    {
+      "title": "19A. Auditoria científica adicional — datação, limiares e armadilhas"
+    },
+    {
+      "title": "A. DUM versus ultrassom: quando ajustar a DPP pela PRIMEIRA datação confiável"
+    },
+    {
+      "title": "B. Três conceitos que costumam ser confundidos nas provas"
+    },
+    {
+      "title": "C. Marcos clínicos, interpretação responsável e segurança"
+    },
+    {
+      "title": "19B. Busca real de candidatos visuais e controle preliminar de direitos"
+    },
+    {
+      "title": "C. Protocolo de conferência visual antes de integração"
+    },
+    {
+      "title": "19. Auditoria editorial inicial: status ainda não concluído"
+    }
+  ],
+  "reference_entries": [
+    "1. **ISUOG Clinical Standards Committee.** ISUOG Practice Guidelines (updated): performance of 11–14-week ultrasound scan. *Ultrasound in Obstetrics & Gynecology*, 2023. https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/uog.26106",
+    "2. **ISUOG.** Practice Guidelines (updated): Performance of the routine mid-trimester fetal ultrasound scan. *Ultrasound Obstet Gynecol.* 2022;59:840–856. https://www.isuog.org/resource/isuog-practice-guidelines-updated-performance-of-the-routine-mid-trimester-fetal-ultrasound-scan.html",
+    "3. **ISUOG.** Practice Guidelines: performance of third-trimester obstetric ultrasound scan. 2024. https://www.isuog.org/resource/isuog-issues-new-practice-guideline-on-performance-of-third-trimester-obstetric-ultrasound-scan.html",
+    "4. **ISUOG.** Practice Guidelines: use of Doppler velocimetry in obstetrics. 2021. https://www.isuog.org/clinical-resources/isuog-guidelines/practice-guidelines-english.html",
+    "5. **ISUOG.** Practice Guidelines (updated): role of ultrasound in twin pregnancy. 2025. https://www.isuog.org/resource/isuog-practice-guidelines-role-of-ultrasound-in-twin-pregnancy-pdf.html",
+    "6. **ISUOG.** Updated fetal cardiac screening Practice Guideline. 2023. https://www.isuog.org/clinical-resources/isuog-guidelines/practice-guidelines-english.html",
+    "7. **ACOG, AIUM, SMFM.** Methods for Estimating the Due Date. Committee Opinion No. 700, 2017, reaffirmed 2025. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date",
+    "8. **SMFM.** Consult Series #52: Diagnosis and management of fetal growth restriction. 2020, reaffirmed 2024. https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+    "9. **SMFM.** Consult Series #46: Evaluation and management of polyhydramnios. 2018, reaffirmed 2024. https://publications.smfm.org/publications/263-society-for-maternal-fetal-medicine-consult-series-46/",
+    "10. **SMFM.** Consult Series #57: Evaluation and management of isolated soft ultrasound markers for aneuploidy in the second trimester. 2021, reaffirmed 2025. https://publications.smfm.org/publications/394-society-for-maternal-fetal-medicine-consult-series-57/",
+    "11. **Ministério da Saúde (Brasil).** Linha de Cuidado: Pré-Natal de Baixo Risco — planejamento terapêutico e ultrassonografia. https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "12. **Hospital Universitário Lauro Wanderley / HU Brasil.** Procedimentos operacionais padronizados de ultrassonografia obstétrica, morfológica e Doppler. 2024. https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hulw-ufpb/acesso-a-informacao/gestao-documental/pop-procedimento-operacional-padrao/2024/umul-unidade-de-saude-da-mulher/pnar-pre-natal-de-alto-risco",
+    "**Importante:** essa tabela **não recomenda redatar a cada exame**. Ela serve para estabelecer a datação na primeira oportunidade e avaliar discordância com DUM. Na gestação cujo CCN foi corretamente medido no primeiro trimestre, um PFE “duas semanas atrasado” no terceiro trimestre deve acender a hipótese de crescimento alterado, não redefinir arbitrariamente a gestação. A US tardia isolada pode errar em cerca de três a quatro semanas na datação; considerar curva, técnica, estado clínico e vigilância.",
+    "**Translucência nucal versus prega nucal:** a TN é medida no primeiro trimestre com plano, CCN e intervalo adequados. A prega nucal é medida do segundo trimestre em plano e contexto distintos; não são a mesma medida nem possuem mesmo ponto de corte. O arquivo de imagem “Nuchal fold measurement ... 19 weeks” da Wikimedia Commons, por exemplo, NÃO deve ser usado como ilustração da técnica de TN 11–14 semanas.",
+    "**Artéria cerebral média IP versus PSV:** IP reduzido em insuficiência placentária corresponde a redistribuição hemodinâmica; velocidade sistólica máxima elevada pode sinalizar anemia, especialmente na aloimunização. Um laudo que diz “Doppler da ACM normal” sem especificar a medida é insuficiente para inferir que não há anemia em paciente com anticorpos relevantes.",
+    "**Perfil biofísico fetal versus ultrassonografia morfológica:** o perfil biofísico analisa movimentos corporais, movimentos respiratórios fetais, tônus e líquido, com adição de cardiotocografia na versão clássica. Ele busca sinais de possível comprometimento funcional, não realiza inspeção anatômica sistemática para descartar malformações. Seu detalhamento pertence à apostila “Avaliação da vitalidade fetal”.",
+    "**Esta é uma shortlist inicial de 12 arquivos reais, não uma aprovação automática para publicação.** Metadados de licença foram visualizados nas páginas de origem indicadas. Para arquivos Creative Commons, confirmar autor/atribuição, versão e obrigações de *ShareAlike* na data do uso, identificar adaptações e verificar nitidez/dados pessoais. Para imagens com direitos ainda não verificados, não reutilizar os bytes. Alguns candidatos repetem a mesma estrutura porque a fase é de seleção e comparação: o objetivo não é inserir todos.",
+    "**Avaliação:** candidatos 1–9 dispõem de indícios de permissão aberta conforme página originária, mas ainda devem ser examinados individualmente quanto a detalhes anatômicos e uso comercial. Candidatos 10–12 são úteis como referência de leitura e não devem ser copiados sem licença/permissão explícita. Essa matriz **não equivale a dez imagens aprovadas ou integradas**. A etapa de produção visual permanece pendente, inclusive WebP, otimização e legendas no arquivo final.",
+    "1. Abrir página canônica; registrar URL, autor, título, licença e obrigações de crédito.",
+    "2. Conferir que o arquivo é um **exame clínico representativo**, e que diagnóstico/traçado realmente correspondem à legenda; descartar material equívoco.",
+    "3. Comparar escala, exposição de dados clínicos e resolução; remover/anonimizar marcas identificáveis quando apropriado e permitido.",
+    "4. Selecionar posições didáticas corretas; alternar figuras com textos para que o leitor aprenda a reconhecer achados, não apenas contemplá-los.",
+    "5. Converter imagens aprovadas para WebP e limitar peso conforme padrões LURIA, protegendo legibilidade de traçados Doppler.",
+    "6. Revisar atribuições e efeitos de licenças *ShareAlike* em distribuição comercial; documentar modificações sem retirar crédito.",
+    "7. Verificar legibilidade no desktop e PWA; em modo escuro, manter contraste da figura e legenda.",
+    "**Já incluído:** fundamentos físicos e Doppler, segurança, datação, anatomia por sistemas, placenta e cordão, biometria, líquido, Doppler, RCF, anomalias, rastreio genético e medicina fetal, múltiplos, colo, fluxos clínicos, seis casos e oito questões.",
+    "**A expandir na próxima etapa:** tabelas completas de datação e critérios de discrepância com DUM; planos morfológicos em roteiro de qualidade; condições neurológicas/torácicas/renais e diferenciais com prognóstico; anomalias cromossômicas e rastreamento; Doppler de artéria uterina e de RCF precoce/tardia; síndromes específicas de gêmeos; procedimentos fetais, riscos e aconselhamento; diagnósticos de placenta; integração bibliográfica brasileira. Revisar todos os números de janela e limiares com norma original e protocolo local.",
+    "**Qualidade visual:** 12 funções didáticas registradas; imagens ainda **NÃO** selecionadas, licenciadas ou convertidas. Não afirmar revisão visual concluída.",
+    "**Produção:** somente rascunho editorial de branch, sem merge, deploy, alteração em tabela de apostilas ou publicação. Exige validação médica antes de considerar pronto."
+  ],
+  "external_urls": [
+    "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/uog.26106",
+    "https://www.isuog.org/resource/isuog-practice-guidelines-updated-performance-of-the-routine-mid-trimester-fetal-ultrasound-scan.html",
+    "https://www.isuog.org/resource/isuog-issues-new-practice-guideline-on-performance-of-third-trimester-obstetric-ultrasound-scan.html",
+    "https://www.isuog.org/clinical-resources/isuog-guidelines/practice-guidelines-english.html",
+    "https://www.isuog.org/resource/isuog-practice-guidelines-role-of-ultrasound-in-twin-pregnancy-pdf.html",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date",
+    "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+    "https://publications.smfm.org/publications/263-society-for-maternal-fetal-medicine-consult-series-46/",
+    "https://publications.smfm.org/publications/394-society-for-maternal-fetal-medicine-consult-series-57/",
+    "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hulw-ufpb/acesso-a-informacao/gestao-documental/pop-procedimento-operacional-padrao/2024/umul-unidade-de-saude-da-mulher/pnar-pre-natal-de-alto-risco",
+    "https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110325112752_1129380.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110302150120_1503250.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nuchal_fold_measurement_on_the_TC_plane_Dr._Moroder.jpg",
+    "https://commons.wikimedia.org/wiki/File:Transverse_plane_of_the_FT_fetal_abdomen_human.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110303135229_1358380.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gastrochisis_0001.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_034.jpg",
+    "https://commons.wikimedia.org/wiki/File:Art%C3%A8re_ombilcale_avec_flux_normal.png",
+    "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_062.jpg",
+    "https://www.smfm.org/case-of-the-week",
+    "https://drpixel.fcm.unicamp.br/conteudo/interpretacao-do-doppler-obstetrico-na-avaliacao-da-vitalidade-fetal",
+    "https://journals.sagepub.com/doi/10.1177/1742271X17747137"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Matriz de cobertura LURIA/MedCof:** [Alta, PDF p.2] Ultrassonografia em Obstetrícia; [Alta, PDF p.29] Medicina Fetal. A #269 articula ultrassonografia morfológica, datagem, placentação, biometria, Doppler e diagnóstico fetal. **Não duplicar** a apostila de avaliação da vitalidade fetal, a de crescimento intrauterino reduzido/aumentado, pré-natal, hipertensão na gestação, aloimunização, gestação gemelar nem o item #89 do cronograma; utilizar remissões nos pontos apropriados. A doença e o tratamento obstétrico não devem ser reexplicados integralmente onde outra apostila já contempla o assunto."
+    },
+    {
+      "text": "O valor clínico do exame depende de **quando**, **por que**, **por quem** e **como** foi realizado. Um exame normal em determinada idade gestacional não exclui todas as malformações, doenças genéticas ou alterações que surgem posteriormente. Um marcador inespecífico isolado não equivale a diagnóstico de aneuploidia. Percentil baixo isolado não prova insuficiência placentária; percentil normal isolado não garante crescimento adequado. A leitura do laudo deve reconstruir a pergunta inicial: confirmar localização e viabilidade? fixar datação? detectar anomalias? estimar crescimento? avaliar perfusão feto-placentária? localizar placenta? planejar"
+    },
+    {
+      "text": "**Rastreamento:** identifica sinal de aumento de probabilidade de doença e seleciona pacientes para investigação. **Diagnóstico anatômico ou funcional:** demonstra alteração estruturada, como anencefalia ou hidronefrose, com graus diferentes de certeza; pode necessitar confirmação. **Acompanhamento:** monitora comportamento ao longo do tempo, inclusive crescimento e Doppler. Confundir rastreamento com diagnóstico produz ansiedade, procedimentos desnecessários e falsa segurança."
+    },
+    {
+      "text": "Um laudo obstétrico competente identifica paciente, indicação, idade gestacional adotada e fonte dessa datação, gestação única ou múltipla, corionicidade quando aplicável, vitalidade, apresentação e situação fetal, placenta e relação com orifício cervical interno conforme idade/indicação, líquido amniótico, biometria e percentis segundo curva declarada, anatomia avaliada, achados positivos e limitações. Se houve Doppler, indicar vasos e índices com referência; se houve medida de colo, especificar via e técnica. Deve conter impressão diagnóstica e recomendação proporcional, não uma enumeração opaca de medidas."
+    },
+    {
+      "text": "**Comprimento cabeça-nádegas (CCN/CRL)** é principal parâmetro de datação no primeiro trimestre, antes de 14 semanas, quando imagem tecnicamente adequada. A posição deve ser neutra, sem hiperflexão/extensão, medida máxima entre vértice e nádegas em corte sagital apropriado. Após aproximadamente 14 semanas, recorre-se à biometria craniana e demais medidas. A ultrassonografia precoce bem executada deve, em regra, fixar idade gestacional e data provável do parto (DPP); não se deve “redatar” a cada ultrassom posterior somente porque o feto está pequeno ou grande. Em fertilização in vitro, utilizar idade embrionária e data da transferência conform"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

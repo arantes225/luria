@@ -1,0 +1,609 @@
+{
+  "key": "sexualidade",
+  "kind": "apostila-html",
+  "path": "apostilas/sexualidade/index.html",
+  "html_path": "apostilas/sexualidade/index.html",
+  "title": "Sexualidade Feminina",
+  "source_sha256": "a17168795522c9eb32a42033dfaa7894be686822740e68fa7f8c3cb0faf0fc8b",
+  "html_sha256": "a17168795522c9eb32a42033dfaa7894be686822740e68fa7f8c3cb0faf0fc8b",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Interesse, excitação e orgasmo",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Localizar antes de tratar",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Biopsicossocial",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Objetivo da paciente",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos e modelos de resposta sexual",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Modelo linear: útil, mas incompleto",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Modelo circular e desejo responsivo",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Excitação subjetiva e genital não são idênticas",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Consulta e anamnese sexual",
+      "section": "consulta"
+    },
+    {
+      "tag": "H3",
+      "title": "O eixo da anamnese",
+      "section": "consulta"
+    },
+    {
+      "tag": "H3",
+      "title": "Modelos úteis para organizar a consulta",
+      "section": "consulta"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Classificação e raciocínio diagnóstico",
+      "section": "classificacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Desejo sexual hipoativo versus transtorno do interesse/excitação",
+      "section": "classificacao"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Desejo reduzido e alterações da excitação",
+      "section": "desejo"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores associados",
+      "section": "desejo"
+    },
+    {
+      "tag": "H3",
+      "title": "Medicamentos",
+      "section": "desejo"
+    },
+    {
+      "tag": "H3",
+      "title": "Testosterona: o que realmente importa",
+      "section": "desejo"
+    },
+    {
+      "tag": "H3",
+      "title": "Excitação",
+      "section": "desejo"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Dificuldade orgásmica",
+      "section": "orgasmo"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores comuns",
+      "section": "orgasmo"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Dor sexual e dificuldade de penetração",
+      "section": "dor"
+    },
+    {
+      "tag": "H3",
+      "title": "Transtorno da dor genitopélvica/penetração",
+      "section": "dor"
+    },
+    {
+      "tag": "H3",
+      "title": "Vulvodínia",
+      "section": "dor"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Exame físico e exames complementares",
+      "section": "exame"
+    },
+    {
+      "tag": "H3",
+      "title": "Exame dirigido",
+      "section": "exame"
+    },
+    {
+      "tag": "H3",
+      "title": "Exames: pedir para responder uma pergunta",
+      "section": "exame"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Tratamento: algoritmo prático",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Educação e terapia sexual",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Dor e assoalho pélvico",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Síndrome geniturinária da menopausa",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Testosterona",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Antidepressivos e disfunção sexual",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Dificuldade orgásmica",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Transformar a queixa em um plano verificável",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Situações especiais",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Menopausa",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Pós-parto e lactação",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescência",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Pessoa idosa",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Após câncer de mama ou ginecológico",
+      "section": "situacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Violência sexual, coerção e segurança",
+      "section": "violencia"
+    },
+    {
+      "tag": "H2",
+      "title": "Atendimento após violência sexual — janela de oportunidade e decisões por prioridade",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H3",
+      "title": "Primeiros minutos: estabilizar, acolher e oferecer escolhas",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H3",
+      "title": "Relógio clínico: o que não pode esperar",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H3",
+      "title": "Notificação epidemiológica e decisão sobre a polícia são processos distintos",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento após a primeira consulta",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso de prova — busca de cuidado 48 horas após violência",
+      "section": "atendimento-pos-violencia-sexual"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — queda de desejo e anorgasmia após ISRS",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — dispareunia pós-menopausa",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — dor, medo e hipertonia",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — dor profunda cíclica",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — “testosterona baixa” em mulher assintomática",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Questões de fixação",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Aprofundamento: resposta sexual, dor e cuidado informado por trauma",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Desejo responsivo",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Discordância entre excitação subjetiva e genital",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Dor: localizar antes de rotular",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Antidepressivos e outras medicações",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Cuidado informado por trauma",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Testosterona",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "section": "editorial-depth-sexualidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Desejo responsivo e sofrimento clínico",
+      "section": "editorial-depth-sexualidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Dispareunia superficial e profunda",
+      "section": "editorial-depth-sexualidade"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "section": "capitulos-livro-sexualidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Desejo responsivo e sofrimento",
+      "section": "capitulos-livro-sexualidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Dificuldade orgásmica",
+      "section": "capitulos-livro-sexualidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Dispareunia superficial e profunda",
+      "section": "capitulos-livro-sexualidade"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1791
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 715
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e modelos de resposta sexual",
+      "chars": 2345
+    },
+    {
+      "id": "consulta",
+      "title": "2. Consulta e anamnese sexual",
+      "chars": 2080
+    },
+    {
+      "id": "classificacao",
+      "title": "3. Classificação e raciocínio diagnóstico",
+      "chars": 1654
+    },
+    {
+      "id": "desejo",
+      "title": "4. Desejo reduzido e alterações da excitação",
+      "chars": 2061
+    },
+    {
+      "id": "orgasmo",
+      "title": "5. Dificuldade orgásmica",
+      "chars": 1140
+    },
+    {
+      "id": "dor",
+      "title": "6. Dor sexual e dificuldade de penetração",
+      "chars": 1902
+    },
+    {
+      "id": "exame",
+      "title": "7. Exame físico e exames complementares",
+      "chars": 1629
+    },
+    {
+      "id": "tratamento",
+      "title": "8. Tratamento: algoritmo prático",
+      "chars": 4309
+    },
+    {
+      "id": "situacoes",
+      "title": "9. Situações especiais",
+      "chars": 1894
+    },
+    {
+      "id": "violencia",
+      "title": "10. Violência sexual, coerção e segurança",
+      "chars": 897
+    },
+    {
+      "id": "atendimento-pos-violencia-sexual",
+      "title": "Atendimento após violência sexual — janela de oportunidade e decisões por prioridade",
+      "chars": 5237
+    },
+    {
+      "id": "casos",
+      "title": "11. Casos clínicos integradores",
+      "chars": 1642
+    },
+    {
+      "id": "revisao",
+      "title": "12. Revisão de alto rendimento",
+      "chars": 1732
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "13. Aprofundamento: resposta sexual, dor e cuidado informado por trauma",
+      "chars": 2845
+    },
+    {
+      "id": "editorial-depth-sexualidade",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 758
+    },
+    {
+      "id": "referencias",
+      "title": "Referências",
+      "chars": 1208
+    },
+    {
+      "id": "capitulos-livro-sexualidade",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 875
+    }
+  ],
+  "references": [
+    "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Anamnese em sexologia e os critérios diagnósticos das disfunções sexuais. Femina. 2025;53(11):1292-1298.",
+    "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratamento das disfunções sexuais no consultório do ginecologista. Femina. 2025;53(11):1299-1307.",
+    "Sociedade Brasileira de Endocrinologia e Metabologia; FEBRASGO; Sociedade Brasileira de Cardiologia. Nota conjunta sobre o uso de testosterona na mulher. 2025.",
+    "World Health Organization. Defining sexual health. WHO; 2006, com páginas institucionais atualizadas sobre saúde sexual.",
+    "American College of Obstetricians and Gynecologists. Female Sexual Dysfunction. Practice Bulletin No. 213. Obstet Gynecol. 2019.",
+    "Parish SJ, Simon JA, Davis SR, et al. ISSWSH Clinical Practice Guideline for the Use of Systemic Testosterone for Hypoactive Sexual Desire Disorder in Women. J Sex Med. 2021;18(5):849-867.",
+    "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, DSM-5-TR. 2022.",
+    "International Society for the Study of Vulvovaginal Disease et al. Consensos e terminologia contemporânea para dor vulvar/vulvodínia."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "Ministério da Saúde — Violência Sexual, acolhimento e atendimento",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde — PEP",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde — DIU de cobre",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/contracepcao/diu-de-cobre",
+      "in_references": false
+    },
+    {
+      "label": "VIVA/SINAN — notificação de violência sexual",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/inqueritos-de-saude/viva-sinan/viva-sinan-vigilancia-continua",
+      "in_references": false
+    },
+    {
+      "label": "Lei do Minuto Seguinte, 2026",
+      "url": "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/agosto-defeso-eleitoral/lei-do-minuto-seguinte-conheca-os-direitos-de-quem-sofre-violencia-sexual",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "paragraphs": 68,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "dificuldade orgasmica",
+      "sections": [
+        "tratamento",
+        "capitulos-livro-sexualidade"
+      ]
+    },
+    {
+      "title": "dispareunia superficial e profunda",
+      "sections": [
+        "editorial-depth-sexualidade",
+        "capitulos-livro-sexualidade"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "casos",
+      "text": "Mulher de 29 anos inicia sertralina e, quatro meses depois, relata menor interesse sexual e dificuldade de orgasmo, sem dor. A cronologia sugere efeito medicamentoso, mas é indispensável avaliar controle da depressão, ansiedade, sono e relacionamento. A conduta é revisar o esquema com o prescritor, e não suspender abruptamente.",
+      "pattern": 0
+    },
+    {
+      "section": "casos",
+      "text": "Mulher de 58 anos com secura, ardor e dor à penetração; mucosa fina e pouco elástica. O padrão é compatível com síndrome geniturinária da menopausa. Lubrificantes/hidratantes podem ajudar; estrogênio vaginal de baixa dose é opção importante. Qualquer sangramento exige investigação própria.",
+      "pattern": 0
+    },
+    {
+      "section": "casos",
+      "text": "Paciente de 24 anos não consegue usar tampão e apresenta dor intensa à tentativa de penetração, com medo antecipatório. Considerar transtorno da dor genitopélvica/penetração e hipertonia do assoalho pélvico. O exame deve ser gradual; fisioterapia pélvica e terapia sexual podem ser centrais.",
+      "pattern": 0
+    },
+    {
+      "section": "casos",
+      "text": "Paciente de 34 anos com dismenorreia progressiva e dispareunia profunda cíclica. Endometriose entra no topo do diferencial. O foco deixa de ser “disfunção sexual primária” e passa a ser investigação e tratamento da causa pélvica.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "Saúde sexual, segundo a Organização Mundial da Saúde, implica uma abordagem positiva e respeitosa da sexualidade e das relações, com possibilidade de experiências prazerosas e seguras, livres de coerção, discriminação e violência. Portanto, uma consulta de sexologia não deve ter como meta “normalizar” frequência, penetração ou orgasmo, mas melhorar segurança, conforto, autonomia, prazer e qualidade de vida conforme os objetivos da própria paciente.",
+      "pattern": 1
+    },
+    {
+      "section": "consulta",
+      "text": "Frequência baixa, ausência de penetração ou ausência de orgasmo vaginal não são diagnósticos. A clínica começa no sofrimento, no desejo de mudança e no contexto.",
+      "pattern": 1
+    },
+    {
+      "section": "classificacao",
+      "text": "O diagnóstico contemporâneo privilegia síndromes clínicas, duração e sofrimento. No DSM-5-TR, as principais categorias femininas são: transtorno do interesse/excitação sexual feminino, transtorno orgásmico feminino e transtorno da dor genitopélvica/penetração. Também existem condições como disfunção sexual induzida por substância/medicamento e outras especificações.",
+      "pattern": 1
+    },
+    {
+      "section": "classificacao",
+      "text": "Em geral, os critérios exigem sintomas persistentes por aproximadamente 6 meses, presentes em parcela relevante das experiências e acompanhados de sofrimento clinicamente significativo. A interpretação, porém, nunca deve ser mecânica: mudanças recentes claramente atribuíveis a doença, pós-parto, medicação ou violência podem exigir intervenção antes de qualquer “cronômetro diagnóstico”.",
+      "pattern": 1
+    },
+    {
+      "section": "desejo",
+      "text": "Não há ponto de corte de testosterona total que diagnostique TDSH. A dosagem pode ser útil como linha de base e monitorização quando a terapia é considerada, não como teste confirmatório. A nota conjunta SBEM/FEBRASGO/SBC de 2025 restringe a indicação cientificamente reconhecida a mulheres pós-menopausa com TDSH, após diagnóstico clínico, exclusão de causas frequentes e decisão compartilhada.",
+      "pattern": 2
+    },
+    {
+      "section": "atendimento-pos-violencia-sexual",
+      "text": "Referências oficiais: Ministério da Saúde — Violência Sexual, acolhimento e atendimento; Ministério da Saúde — PEP; Ministério da Saúde — DIU de cobre; VIVA/SINAN — notificação de violência sexual; Lei do Minuto Seguinte, 2026.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "mapa-mental",
+      "text": "Sexualidade clínica não é uma busca por “um hormônio baixo”; é a leitura integrada de contexto, resposta sexual, dor, vínculo e saúde."
+    },
+    {
+      "section": "conceitos",
+      "text": "A sexualidade é uma dimensão central da vida humana. Inclui sexo, identidades e papéis de gênero, orientação sexual, erotismo, prazer, intimidade e reprodução, e é modulada por fatores biológicos, psicológicos, sociais, econômicos, culturais, legais, históricos e espirituais. Na prática clínica, isso impede que uma queixa sexual seja reduzida a genitália, hormônios ou desempenho."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 0
+  }
+}

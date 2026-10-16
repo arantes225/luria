@@ -1,0 +1,113 @@
+{
+  "sha": "851e68341d28ba324a4e3d4b88343a8171aa353b",
+  "path": "apostilas/purpuras-coagulopatias-hemoglobinopatias-pediatricas/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "purpuras-coagulopatias-hemoglobinopatias-pediatricas--851e68341d",
+  "title": "LURIA — Apostila 244: Púrpuras, coagulopatias e hemoglobinopatias pediátricas",
+  "format": ".md",
+  "chars_estimated": 18134,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 244: Púrpuras, coagulopatias e hemoglobinopatias pediátricas"
+    },
+    {
+      "title": "1. Como interpretar petéquias, equimoses e sangramento infantil"
+    },
+    {
+      "title": "2. Triagem diagnóstica orientada"
+    },
+    {
+      "title": "3. Trombocitopenia imune (PTI)"
+    },
+    {
+      "title": "3.1 O que diferencia PTI típica"
+    },
+    {
+      "title": "3.2 Quando observar em vez de medicar"
+    },
+    {
+      "title": "4. Vasculite por IgA e outras púrpuras com plaquetas normais"
+    },
+    {
+      "title": "5. Hemofilia A/B e doença de von Willebrand"
+    },
+    {
+      "title": "5.1 Hemofilia"
+    },
+    {
+      "title": "5.2 Doença de von Willebrand"
+    },
+    {
+      "title": "6. Hemoglobinopatias e doença falciforme"
+    },
+    {
+      "title": "6.1 Emergências falciformes"
+    },
+    {
+      "title": "6.2 Manejo longitudinal"
+    },
+    {
+      "title": "7. CIVD, SHU e microangiopatias"
+    },
+    {
+      "title": "8. Conduta passo a passo"
+    },
+    {
+      "title": "9. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "10. Seis questões autorais comentadas"
+    },
+    {
+      "title": "11. Matriz de imagens (candidatas, não incorporadas)"
+    },
+    {
+      "title": "12. Referências científicas"
+    },
+    {
+      "title": "13. Pendências para certificação premium"
+    }
+  ],
+  "reference_entries": [
+    "1. Neunert C et al. **American Society of Hematology 2019 guidelines for immune thrombocytopenia**. Blood Adv. 2019;3:3829–3866. https://pmc.ncbi.nlm.nih.gov/articles/PMC6963252/",
+    "2. Srivastava A et al. **WFH Guidelines for the Management of Hemophilia, 3rd edition**. Haemophilia. 2020;26(S6):1–158. https://doi.org/10.1111/hae.14046",
+    "3. Ministério da Saúde. **PCDT Doença Falciforme**, atualizado em 2024 (publicação portal 2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6963252/",
+    "https://doi.org/10.1111/hae.14046",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Púrpura** refere-se a extravasamento sanguíneo na pele/mucosa; **petéquias** são pequenas lesões puntiformes não desaparecem à digitopressão. Palpabilidade, distribuição, história febril, lesões mucosas, visceromegalia e aspecto sistêmico ajudam a priorizar diagnósticos."
+    },
+    {
+      "text": "PTI é doença imunomediada marcada por destruição periférica e produção alterada de plaquetas, geralmente com **trombocitopenia isolada**. Em crianças pode surgir após infecção e muitas vezes remite espontaneamente. O diagnóstico é clínico-laboratorial e de exclusão razoável, sem exigir pesquisa extensa de anticorpos antiplaquetários de rotina."
+    },
+    {
+      "text": "A ASH 2019 recomenda **observação em crianças com PTI recém-diagnosticada e sem sangramento ou com sangramento cutâneo leve**, em vez de corticoides ou IVIG, com orientação de segurança e acompanhamento hematológico oportuno. A baixa contagem isolada não implica obrigatoriamente internação ou IVIG. A diretriz menciona considerações sociais, distância, incerteza do diagnóstico e capacidade de retorno para decidir hospitalização."
+    },
+    {
+      "text": "**Diferenciais de púrpura palpável:** vasculite sistêmica, meningococcemia, trombocitopenia com lesão extensa, doença inflamatória e outras causas. Criança com choque precisa de protocolo séptico, não diagnóstico ambulatorial de vasculite."
+    },
+    {
+      "text": "**Tratamento:** concentrados de fator e modalidades de profilaxia que previnem artropatia; na hemofilia A, emicizumabe pode ser opção específica conforme PCDT, elegibilidade, disponibilidade e risco de inibidores. Diretriz WFH recomenda profilaxia precoce em hemofilia grave pediátrica, idealmente antes de dano articular. Em **hemorragia importante ou suspeita intracraniana**, repor terapia hemostática com urgência conforme protocolo, sem esperar exame de imagem para começar tratamento em quem tem diagnóstico conhecido e alto risco."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

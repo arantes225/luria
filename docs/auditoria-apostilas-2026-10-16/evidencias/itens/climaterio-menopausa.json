@@ -1,0 +1,819 @@
+{
+  "key": "climaterio-menopausa",
+  "kind": "apostila-html",
+  "path": "apostilas/climaterio-menopausa/content.json",
+  "html_path": "apostilas/climaterio-menopausa/index.html",
+  "title": "Climatério e Menopausa",
+  "source_sha256": "d68dc32d62fa683793cc822666e918dbf46cf417407133b3ac84ce4280ec98a1",
+  "html_sha256": "7714620de7ebb69a54b2132fdcb8c799a3152d0f65f6a2571e3579a60da23257",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Transição",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Sintomas",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Decisão terapêutica",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos e estadiamento reprodutivo",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "STRAW+10: o que realmente cai",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiopatologia: da reserva folicular aos sintomas",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Envelhecimento folicular e eixo hipotálamo–hipófise–ovário",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Fogachos: por que acontecem?",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Síndrome geniturinária: um processo local e progressivo",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Manifestações clínicas",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "Sintomas vasomotores",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "Sangramento e padrão menstrual",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "Sono, humor e cognição",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "Sexualidade",
+      "section": "clinica"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Diagnóstico e exames: pedir apenas o que muda a conduta",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando o FSH pode ajudar",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "O que não pedir de rotina para “confirmar menopausa”",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Exames dirigidos",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Sangramento uterino no climatério e após a menopausa",
+      "section": "sangramento"
+    },
+    {
+      "tag": "H3",
+      "title": "Sangramento pós-menopausa",
+      "section": "sangramento"
+    },
+    {
+      "tag": "H2",
+      "title": "Sangramento pós-menopausa: a atualização ACOG de 2026 aplicada a casos",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — um único episódio, baixo risco e endométrio de 3 mm",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — sangramento repetido e endométrio de 2,5 mm",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — endométrio não mensurável por miomas e exame limitado",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — sangramento após iniciar terapia hormonal sistêmica",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Exemplo comparativo — achado incidental sem sangramento",
+      "section": "sangramento-pos-menopausa-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Contracepção na transição menopausal",
+      "section": "contracepcao"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Consulta global: além do fogacho",
+      "section": "avaliacao-global"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Terapia hormonal da menopausa: quando e por quê",
+      "section": "th"
+    },
+    {
+      "tag": "H3",
+      "title": "Janela de oportunidade",
+      "section": "th"
+    },
+    {
+      "tag": "H3",
+      "title": "Útero define a necessidade de proteção endometrial",
+      "section": "th"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando não iniciar TH sistêmica sem avaliação especializada",
+      "section": "th"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Esquemas, vias e escolha prática da TH",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "Oral x transdérmica",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "Contínuo x sequencial",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "Progesterona micronizada e outros progestagênios",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "SIU-LNG",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "Tibolona",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H3",
+      "title": "Esquemas de referência: dose, via e endométrio",
+      "section": "esquemas"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Síndrome geniturinária da menopausa",
+      "section": "sgm"
+    },
+    {
+      "tag": "H3",
+      "title": "Estrogênio vaginal",
+      "section": "sgm"
+    },
+    {
+      "tag": "H3",
+      "title": "ITU recorrente e sintomas urinários",
+      "section": "sgm"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Tratamento não hormonal",
+      "section": "nao-hormonal"
+    },
+    {
+      "tag": "H3",
+      "title": "Sintomas vasomotores",
+      "section": "nao-hormonal"
+    },
+    {
+      "tag": "H3",
+      "title": "Fitoterápicos e manipulados",
+      "section": "nao-hormonal"
+    },
+    {
+      "tag": "H3",
+      "title": "Escolha e monitoramento das alternativas",
+      "section": "nao-hormonal"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Situações especiais",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Insuficiência ovariana prematura",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "História de câncer de mama",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Testosterona",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Enxaqueca, obesidade e risco trombótico",
+      "section": "situacoes-especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Saúde óssea e cardiovascular",
+      "section": "osso-cv"
+    },
+    {
+      "tag": "H3",
+      "title": "Osso",
+      "section": "osso-cv"
+    },
+    {
+      "tag": "H3",
+      "title": "Cardiovascular",
+      "section": "osso-cv"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Seguimento",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H3",
+      "title": "O que avaliar no retorno",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — 49 anos, ciclos irregulares e fogachos",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — 52 anos, 2 anos de menopausa, fogachos intensos e útero presente",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — 64 anos, apenas secura e dispareunia",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — 57 anos, sangramento 5 anos após menopausa",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — 38 anos, amenorreia e fogachos",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — 61 anos, menopausa há 12 anos, quer iniciar TH “para o coração”",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: decisão terapêutica e risco individual",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Janela de oportunidade não é autorização automática",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Via oral versus transdérmica",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Progestagênio: proteção endometrial é dose e tempo dependentes",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Síndrome geniturinária não é apenas “secura”",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Osso, músculo e risco de quedas",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Risco cardiovascular",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Terapia hormonal por cenários",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Sangramento pós-menopausa",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "IOP não é menopausa natural",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Integração fisiopatológica e terapêutica da transição menopausal",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.1 Como a perda folicular modifica FSH, estradiol e progesterona",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.2 Fogachos: a diferença entre temperatura corporal e percepção térmica",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.3 Síndrome geniturinária: uma condição anatômica e funcional",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.4 Por que o útero muda a escolha da terapia hormonal",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.5 Via oral versus transdérmica: por que o fígado importa",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.6 Saúde óssea: como o estrogênio participa da remodelação",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.7 Terapia não hormonal e decisão informada",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.8 Caso clínico integrador",
+      "section": "tratado-climaterio-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1453
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 515
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e estadiamento reprodutivo",
+      "chars": 2348
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia: da reserva folicular aos sintomas",
+      "chars": 2518
+    },
+    {
+      "id": "clinica",
+      "title": "3. Manifestações clínicas",
+      "chars": 1704
+    },
+    {
+      "id": "diagnostico",
+      "title": "4. Diagnóstico e exames: pedir apenas o que muda a conduta",
+      "chars": 1402
+    },
+    {
+      "id": "sangramento",
+      "title": "5. Sangramento uterino no climatério e após a menopausa",
+      "chars": 1609
+    },
+    {
+      "id": "sangramento-pos-menopausa-2026",
+      "title": "Sangramento pós-menopausa: a atualização ACOG de 2026 aplicada a casos",
+      "chars": 5287
+    },
+    {
+      "id": "contracepcao",
+      "title": "6. Contracepção na transição menopausal",
+      "chars": 844
+    },
+    {
+      "id": "avaliacao-global",
+      "title": "7. Consulta global: além do fogacho",
+      "chars": 725
+    },
+    {
+      "id": "th",
+      "title": "8. Terapia hormonal da menopausa: quando e por quê",
+      "chars": 1615
+    },
+    {
+      "id": "esquemas",
+      "title": "9. Esquemas, vias e escolha prática da TH",
+      "chars": 3303
+    },
+    {
+      "id": "sgm",
+      "title": "10. Síndrome geniturinária da menopausa",
+      "chars": 898
+    },
+    {
+      "id": "nao-hormonal",
+      "title": "11. Tratamento não hormonal",
+      "chars": 2429
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": "12. Situações especiais",
+      "chars": 1608
+    },
+    {
+      "id": "osso-cv",
+      "title": "13. Saúde óssea e cardiovascular",
+      "chars": 1045
+    },
+    {
+      "id": "seguimento",
+      "title": "14. Seguimento",
+      "chars": 2007
+    },
+    {
+      "id": "casos",
+      "title": "15. Casos integradores",
+      "chars": 1270
+    },
+    {
+      "id": "revisao",
+      "title": "16. Revisão de alto rendimento",
+      "chars": 830
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "Aprofundamento: decisão terapêutica e risco individual",
+      "chars": 3255
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 1217
+    },
+    {
+      "id": "tratado-climaterio-40k",
+      "title": "17. Integração fisiopatológica e terapêutica da transição menopausal",
+      "chars": 11073
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 846
+    }
+  ],
+  "references": [
+    "SOBRAC. Consenso Brasileiro de Terapêutica Hormonal do Climatério 2024.",
+    "FEBRASGO / SBC / SOBRAC. Diretriz Brasileira sobre a Saúde Cardiovascular no Climatério e na Menopausa. 2024.",
+    "Ministério da Saúde. Manual de Atenção à Mulher no Climatério/Menopausa.",
+    "European Society of Endocrinology. Clinical practice guideline for evaluation and management of menopause and the perimenopause. 2025.",
+    "NICE. Menopause: identification and management (NG23). Atualização 2026.",
+    "The Menopause Society. 2022 Hormone Therapy Position Statement.",
+    "The Menopause Society. 2023 Nonhormone Therapy Position Statement.",
+    "USPSTF. Osteoporosis to Prevent Fractures: Screening. 2025.",
+    "Harlow SD et al. STRAW+10. Menopause / JCEM, 2012.",
+    "Material educacional. Condutas devem ser individualizadas conforme história, contraindicações, preferências e protocolos locais."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "ACOG, Clinical Practice Update, julho de 2026, DOI 10.1097/AOG.0000000000006275",
+      "url": "https://doi.org/10.1097/AOG.0000000000006275",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG23, atualização de 2026",
+      "url": "https://www.nice.org.uk/guidance/ng23/chapter/Recommendations",
+      "in_references": false
+    },
+    {
+      "label": "British Menopause Society, sangramento não programado em TH, 2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38743767/",
+      "in_references": false
+    },
+    {
+      "label": "Diretriz brasileira cardiovascular no climatério, 2024",
+      "url": "https://www.febrasgo.org.br/images/pec/posicionamentos-febrasgo/DIRETRIZ-CLIMATERIO-e-MENOPAUSA_portugues_10052024.pdf",
+      "in_references": false
+    },
+    {
+      "label": "FEBRASGO — proteção endometrial",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/06-PAPEL_DOS_PROGESTAGENIOS_NA_TERAPIA_HORMONAL_DO_CLIMATERIO.pdf",
+      "in_references": false
+    },
+    {
+      "label": "FEBRASGO — saúde na menopausa",
+      "url": "https://www.febrasgo.org.br/images/pdfs/Diretriz_Saude_da_Mulher_na_Menopausa_Feito_Para_Ela_aprovado.pdf",
+      "in_references": false
+    },
+    {
+      "label": "bula de fezolinetante",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=cae9f798-24f9-4580-a4fc-e6c710cbda3c",
+      "in_references": false
+    },
+    {
+      "label": "FDA — monitoramento hepático",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-adds-warning-about-rare-occurrence-serious-liver-injury-use-veozah-fezolinetant-hot-flashes-due",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 8,
+  "paragraphs": 98,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "sangramento pos-menopausa",
+      "sections": [
+        "sangramento",
+        "editorial-depth-2026"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 76,
+      "status": "approved",
+      "section": "sgm",
+      "source_license": "CC BY-SA 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-vagina-pre-pos.webp"
+    },
+    {
+      "id": 78,
+      "status": "approved",
+      "section": "fisiopatologia",
+      "source_license": "Copyright editorial — revisar uso",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-kndy.webp"
+    },
+    {
+      "id": 80,
+      "status": "approved",
+      "section": "sangramento",
+      "source_license": "Licença descrita na página da fonte",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-anatomia-endometrio.webp"
+    },
+    {
+      "id": 163,
+      "status": "approved",
+      "section": "sgm",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-vaginal-mucosa.webp"
+    },
+    {
+      "id": 169,
+      "status": "approved",
+      "section": "sgm",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-vaginal-estradiol-levels.webp"
+    },
+    {
+      "id": 178,
+      "status": "approved",
+      "section": "sangramento",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-endometrial-hyperplasia.webp"
+    },
+    {
+      "id": 187,
+      "status": "approved",
+      "section": "osso-cv",
+      "source_license": "CC BY-SA 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-osteoporosis-locations-verified.webp"
+    },
+    {
+      "id": 191,
+      "status": "approved",
+      "section": "esquemas",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-estradiol-sublingual-verified.webp"
+    },
+    {
+      "id": 192,
+      "status": "approved",
+      "section": "esquemas",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-estradiol-im-verified.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": false,
+  "db_published": true,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "diagnostico",
+      "text": "Em mulher com 45 anos ou mais, irregularidade menstrual típica e sintomas compatíveis, a menopausa/perimenopausa é geralmente um diagnóstico clínico. A dosagem hormonal rotineira aumenta ruído porque FSH e estradiol flutuam muito nessa fase.",
+      "pattern": 0
+    },
+    {
+      "section": "diagnostico",
+      "text": "Na diretriz europeia de 2025, IOP é considerada antes dos 40 anos e pode ser confirmada por FSH >25 IU/L em contexto apropriado; quando há dúvida, a repetição após mais de quatro semanas ajuda. O diagnóstico de IOP exige avaliação etiológica e metabólico-óssea própria.",
+      "pattern": 0
+    },
+    {
+      "section": "sangramento-pos-menopausa-2026",
+      "text": "Mulher de 54 anos, 15 meses após última menstruação, teve pequeno sangramento isolado. Não usa estrogênio sistêmico sem oposição, não apresenta obesidade importante, diabetes ou antecedente relevante e a ultrassonografia mostra endométrio claramente visualizado com 3 mm, sem lesão focal. A ACOG 2026 admite, em pacientes selecionadas como essa, avaliação inicial apenas por ultrassom, após aconselhamento e confirmação de acesso a retorno rápido se houver nova perda. Essa possibilidade não deve ser ensinada como regra para toda pessoa com 3 mm: a recomendação predominante atual é associar amostragem em grande parte dos cenários.",
+      "pattern": 0
+    },
+    {
+      "section": "sangramento-pos-menopausa-2026",
+      "text": "Mulher de 63 anos teve três episódios de sangramento em quatro meses, apesar de ultrassom mostrar espessura de 2,5 mm. A espessura fina não encerra a investigação. Algumas neoplasias, especialmente tipos não endometrioides, podem ocorrer sem espessamento expressivo. A persistência ou recorrência exige investigação histológica apropriada e avaliação de possibilidade de lesão focal. Se uma biópsia cega foi insuficiente ou negativa, mas o sintoma continua, considerar histeroscopia e amostragem dirigida conforme avaliação do serviço.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "Em idade típica, a história menstrual e os sintomas são mais úteis. Um FSH normal não exclui transição menopausal; um FSH alto isolado também não transforma qualquer amenorreia em menopausa.",
+      "pattern": 1
+    },
+    {
+      "section": "clinica",
+      "text": "Fogachos noturnos fragmentam o sono, mas insônia também pode resultar de depressão, ansiedade, apneia obstrutiva, dor, álcool e medicamentos. “Névoa mental” é relatada por muitas pacientes na transição, mas déficit cognitivo progressivo, perda funcional ou sinais neurológicos não devem ser explicados pela menopausa sem investigação.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Em mulher com 45 anos ou mais, irregularidade menstrual típica e sintomas compatíveis, a menopausa/perimenopausa é geralmente um diagnóstico clínico. A dosagem hormonal rotineira aumenta ruído porque FSH e estradiol flutuam muito nessa fase.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Na diretriz europeia de 2025, IOP é considerada antes dos 40 anos e pode ser confirmada por FSH >25 IU/L em contexto apropriado; quando há dúvida, a repetição após mais de quatro semanas ajuda. O diagnóstico de IOP exige avaliação etiológica e metabólico-óssea própria.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Na diretriz europeia de 2025, IOP é considerada antes dos 40 anos e pode ser confirmada por FSH >25 IU/L em contexto apropriado; quando há dúvida, a repetição após mais de quatro semanas ajuda. O diagnóstico de IOP exige avaliação etiológica e metabólico-óssea própria.",
+      "pattern": 2
+    },
+    {
+      "section": "sangramento",
+      "text": "Qualquer sangramento após 12 meses de amenorreia compatível com menopausa exige avaliação clínica para excluir doença endometrial, cervical, vaginal e outras causas. Atualização ACOG 2026: na maioria das pacientes com sangramento pós-menopausa, recomendam-se ultrassonografia transvaginal e amostragem de tecido endometrial como parte da avaliação inicial. A ultrassonografia sem biópsia pode ser considerada inicialmente apenas em casos selecionados de episódio único, endométrio totalmente visualizado com espessura ≤4 mm, sem fatores de alto risco, com acompanhamento acessível e orientação para retornar imediatamente se o sangramento persistir ou reaparecer. Fluxos brasileiros e locais podem diferir e devem ser explicitados. Histeroscopia, sonohisterografia e nova amostragem podem ser necessárias diante de lesão focal, visualização inadequada, amostra insuficiente ou sangramento persistente.",
+      "pattern": 2
+    },
+    {
+      "section": "sangramento-pos-menopausa-2026",
+      "text": "O erro didático clássico é aprender apenas a regra 'endométrio ≤4 mm tranquiliza' e aplicá-la em toda paciente. A recomendação anterior da ACOG (2018) permitia mais amplamente ultrassonografia isolada como abordagem inicial quando a espessura fosse fina. O Clinical Practice Update de 2026 reforça a necessidade de ultrassonografia transvaginal associada à amostragem endometrial na maioria das pacientes com sangramento pós-menopausa. A medida em milímetros é um elemento da probabilidade de doença; não equivale a diagnóstico histológico.",
+      "pattern": 2
+    },
+    {
+      "section": "sangramento-pos-menopausa-2026",
+      "text": "Mulher de 54 anos, 15 meses após última menstruação, teve pequeno sangramento isolado. Não usa estrogênio sistêmico sem oposição, não apresenta obesidade importante, diabetes ou antecedente relevante e a ultrassonografia mostra endométrio claramente visualizado com 3 mm, sem lesão focal. A ACOG 2026 admite, em pacientes selecionadas como essa, avaliação inicial apenas por ultrassom, após aconselhamento e confirmação de acesso a retorno rápido se houver nova perda. Essa possibilidade não deve ser ensinada como regra para toda pessoa com 3 mm: a recomendação predominante atual é associar amostragem em grande parte dos cenários.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "mapa-mental",
+      "text": "O raciocínio parte da fase reprodutiva, identifica o sintoma dominante e só então escolhe o tratamento."
+    },
+    {
+      "section": "conceitos",
+      "text": "Climatério é a transição biológica entre a fase reprodutiva e a não reprodutiva. Não é sinônimo de menopausa e não é doença. A menopausa é apenas um marco dentro desse processo: a última menstruação espontânea, reconhecida retrospectivamente após 12 meses consecutivos de amenorreia."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 80,
+        "section": "sangramento",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-anatomia-endometrio.webp",
+        "source_only": false
+      },
+      {
+        "id": 192,
+        "section": "esquemas",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-estradiol-im-verified.webp",
+        "source_only": false
+      },
+      {
+        "id": 191,
+        "section": "esquemas",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-estradiol-sublingual-verified.webp",
+        "source_only": false
+      },
+      {
+        "id": 76,
+        "section": "sgm",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-vagina-pre-pos.webp",
+        "source_only": false
+      },
+      {
+        "id": 187,
+        "section": "osso-cv",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-climaterio-menopausa/clim-osteoporosis-locations-verified.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 5
+  }
+}

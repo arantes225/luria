@@ -1,0 +1,58 @@
+{
+  "sha": "f4bad87edd7110fb9651351489fee5fe5e485bc0",
+  "path": "apostilas/_rascunhos/lote-03/48-VALIDACAO-HTML.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--f4bad87edd",
+  "title": "Aula 48 — Auditoria editorial e validação estática do HTML",
+  "format": ".md",
+  "chars_estimated": 3713,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Aula 48 — Auditoria editorial e validação estática do HTML"
+    },
+    {
+      "title": "O que foi efetivamente testado"
+    },
+    {
+      "title": "Referências e ressalvas"
+    },
+    {
+      "title": "Pendências de aprovação"
+    },
+    {
+      "title": "Complementação clínica e verificação de sincronização (14/10/2026)"
+    }
+  ],
+  "reference_entries": [
+    "**Atenção:** calendário, esquemas de recuperação, limites de idade, imunossupressão, CRIE/RIE, covid-19, rotavírus e imunobiológicos podem ser atualizados no mesmo ano. Cada aplicação real deve seguir normas/condições válidas **na data de atendimento** e a apresentação disponível.",
+    "1. Revisão médico-pediátrica e farmacêutica linha a linha dos produtos, intervalos, janelas etárias, doses, contraindicações e normas de 2026.",
+    "2. Revisão de pós-exposição (raiva, tétano, hepatite B, sarampo, varicela) e elegibilidade de imunobiológicos especiais pelos protocolos correspondentes.",
+    "3. Auditoria humana de autossuficiência: responder aos 10 casos e às 16 questões apenas pela apostila, preencher lacunas e corrigir erros.",
+    "4. Produção/seleção de diagramas originais, checagem de uso comercial de imagens, submissão ao Admin, WebP e legendagem após aprovação.",
+    "5. Inspeção real em desktop, mobile/PWA e temas claro/escuro/rosa, navegabilidade, tabelas, leitura, gabaritos e ferramentas de grifo.",
+    "6. Checagem de referências, links, atos normativos substituídos e coerência com a aula 43.",
+    "**Status: HTML_EDITORIAL_REVISAO_PENDENTE.** A QA estática não equivale à homologação científica ou teste visual/funcional real."
+  ],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "1. Revisão médico-pediátrica e farmacêutica linha a linha dos produtos, intervalos, janelas etárias, doses, contraindicações e normas de 2026. 2. Revisão de pós-exposição (raiva, tétano, hepatite B, sarampo, varicela) e elegibilidade de imunobiológicos especiais pelos protocolos correspondentes. 3. Auditoria humana de autossuficiência: responder aos 10 casos e às 16 questões apenas pela apostila, preencher lacunas e corrigir erros. 4. Produção/seleção de diagramas originais, checagem de uso comercial de imagens, submissão ao Admin, WebP e legendagem após aprovação. 5. Inspeção real em desktop, mobile/PWA e temas claro/escuro/rosa, navegabilid"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

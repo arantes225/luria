@@ -1,0 +1,1041 @@
+{
+  "key": "cancer-colo-utero-hpv",
+  "kind": "apostila-html",
+  "path": "apostilas/cancer-colo-utero-hpv/content.json",
+  "html_path": "apostilas/cancer-colo-utero-hpv/index.html",
+  "title": "Câncer do colo do útero e HPV",
+  "source_sha256": "37efa6b102a00963f557ee7ae1c9963ab777c082dba7054b6f09454e1c07aec2",
+  "html_sha256": "d2fa5b1c506c032f75c97c99cf35db769a63310ed718e75c996cb81e23e64cfc",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Anatomia funcional do colo e zona de transformação",
+      "section": "anatomia"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que isso importa?",
+      "section": "anatomia"
+    },
+    {
+      "tag": "H2",
+      "title": "2. HPV: biologia, persistência e carcinogênese",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "2.1 Tipos de maior relevância",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "2.2 E6 e E7",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "2.3 Integração viral",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "2.4 Cofatores",
+      "section": "hpv"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Prevenção primária: vacinação contra HPV",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.1 Grupos especiais",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "3.2 Pós-tratamento de lesão de alto grau",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Rastreamento brasileiro com DNA-HPV",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "4.1 Quem rastrear?",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "4.2 Algoritmo após o primeiro teste",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "4.3 Persistência em 12 e 24 meses",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "4.4 Quando encerrar?",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H3",
+      "title": "4.5 Onde DNA-HPV ainda não está disponível",
+      "section": "rastreamento"
+    },
+    {
+      "tag": "H2",
+      "title": "Rastreamento em 2026: algoritmo comentado da diretriz brasileira",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 1 — verificar se a pessoa realmente está em rastreamento",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 2 — classificar o resultado molecular e usar a triagem adequada",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 3 — entender o seguimento de 12 e 24 meses",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 4 — não confundir os dois programas durante a transição",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H3",
+      "title": "Treino de aplicação independente",
+      "section": "hpv-algoritmo-aplicado"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Citologia, Bethesda e histologia",
+      "section": "citologia"
+    },
+    {
+      "tag": "H3",
+      "title": "5.1 Citologia: linguagem Bethesda",
+      "section": "citologia"
+    },
+    {
+      "tag": "H3",
+      "title": "5.2 Histologia",
+      "section": "citologia"
+    },
+    {
+      "tag": "H3",
+      "title": "5.3 p16 e Ki-67",
+      "section": "citologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando a citologia muda a pergunta clínica",
+      "section": "citologia"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Colposcopia: como raciocinar",
+      "section": "colposcopia"
+    },
+    {
+      "tag": "H2",
+      "title": "Colposcopia avançada: da observação à prova histológica",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "Anatomia aplicada: junção escamocolunar e zona de transformação",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "Acetobranco, mosaico e vasos: por que aparência não basta",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando biopsiar e o que a amostra pode responder",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "Dois relatórios que não são sinônimos: Bethesda e histologia",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "p16, Ki-67 e diagnósticos morfologicamente duvidosos",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "NIC2, NIC3 e AIS: escolhas não são intercambiáveis",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação: o que pode, o que não pode e por quê",
+      "section": "colposcopia-lesoes-avancado"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Manifestações clínicas e diagnóstico do câncer invasivo",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "7.1 Red flags",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "7.2 Confirmação e extensão",
+      "section": "clinica"
+    },
+    {
+      "tag": "H3",
+      "title": "7.3 Principais histologias",
+      "section": "clinica"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Estadiamento FIGO 2018",
+      "section": "estadiamento"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Tratamento: da lesão precursora à doença metastática",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.1 Lesões precursoras",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.2 Microinvasão e doença inicial",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.3 Preservação de fertilidade",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.4 Doença localmente avançada",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.5 Após cirurgia: fatores de risco",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "9.6 Doença recorrente ou metastática",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H2",
+      "title": "Estadiamento e escolha terapêutica: raciocínio oncológico por extensão",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Primeiro eixo: diferenciar microinvasão, tumor restrito ao colo e extensão parametrial",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "O sufixo IIIC1r não equivale a IIIC1p",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Segundo eixo: quando cirurgia poupadora de fertilidade faz sentido?",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Terceiro eixo: quimiorradioterapia e braquiterapia não são itens opcionais de lista",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Quarto eixo: interpretar fatores anatomopatológicos depois da cirurgia",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Quinto eixo: recidiva e doença metastática",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Três vinhetas para aplicar o estadiamento",
+      "section": "figo-conduta-integrada-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Situações especiais",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "10.1 HIV e imunossupressão",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "10.2 Gestação",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "10.3 Pós-menopausa",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "10.4 Histerectomia",
+      "section": "especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "Situações especiais comentadas: gestação, HIV, menopausa e pós-tratamento",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestante assintomática atrasada no rastreamento",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Pessoa vivendo com HIV em terapia antirretroviral",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Pós-menopausa com citologia reflexa dificultada pela atrofia",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Histerectomia total por mioma versus histerectomia subtotal",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Idade acima de 60 e um exame negativo",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento após conização por NIC3",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Teste sua autonomia: seis perguntas difíceis",
+      "section": "seguimento-situacoes-especiais-casos"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Seguimento e prevenção de recorrência",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento depois de tratar NIC 2 ou lesão mais grave",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — HPV 16 em assintomática",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — HPV não-16/18 e citologia negativa",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — Sangramento pós-coito",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — Linfonodo pélvico",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — Pós-conização por NIC3",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "Integração clínica: decisões que mudam o percurso da paciente",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Risco biológico não é sinônimo de diagnóstico",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Comunicação para a pessoa que recebe resultado positivo",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando o raciocínio precisa sair do ambulatório de rotina",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Estadiamento, tratamento e desejo reprodutivo",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Vacinação e populações especiais",
+      "section": "integracao-clinica-lote09"
+    },
+    {
+      "tag": "H2",
+      "title": "Casos clínicos aprofundados: raciocínio completo da suspeita à conduta",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — Sangramento pós-coito e teste anterior negativo",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 7 — Persistência de HPV oncogênico não 16/18",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 8 — Vacinação prévia e HPV de alto risco",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 9 — NIC3 histológica com desejo de gestação",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 10 — Lesão glandular e adenocarcinoma in situ",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 11 — Doença cervical invasiva com acometimento parametrial",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 12 — História de NIC3 após os 60 anos",
+      "section": "casos-aprofundados-lote09"
+    },
+    {
+      "tag": "H2",
+      "title": "Questões autorais LURIA: prova e raciocínio por alternativa",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 1 — Triagem/diagnóstico",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 2 — Triagem/diagnóstico",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 3 — Triagem/diagnóstico",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 4 — Lesões precursoras",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 5 — Lesões precursoras",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 6 — Oncologia e prevenção",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 7 — Oncologia e prevenção",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 8 — Oncologia e prevenção",
+      "section": "questoes-autorais-lote09"
+    },
+    {
+      "tag": "H2",
+      "title": "Curadoria visual e controle de qualidade da Aula 164",
+      "section": "curadoria-visual-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Critérios de aprovação das imagens",
+      "section": "curadoria-visual-lote09"
+    },
+    {
+      "tag": "H3",
+      "title": "Auditoria final da complementação",
+      "section": "curadoria-visual-lote09"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: persistência viral, colposcopia e transição do rastreamento para o diagnóstico",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Zona de transformação e metaplasia",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Persistência e oncogênese",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Rastreamento com DNA-HPV: por que o intervalo pode ser maior?",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Genótipo muda a próxima etapa",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Colposcopia: exame de localização, não confirmação final",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Citologia, histologia e tratamento excisional",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando deixa de ser rastreamento?",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Persistência viral até NIC",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Rastreamento e colposcopia",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Câncer invasivo: tratamento por estágio",
+      "section": "editorial-depth-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências principais",
+      "section": "referencias"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1409
+    },
+    {
+      "id": "anatomia",
+      "title": "1. Anatomia funcional do colo e zona de transformação",
+      "chars": 968
+    },
+    {
+      "id": "hpv",
+      "title": "2. HPV: biologia, persistência e carcinogênese",
+      "chars": 1914
+    },
+    {
+      "id": "prevencao",
+      "title": "3. Prevenção primária: vacinação contra HPV",
+      "chars": 1334
+    },
+    {
+      "id": "rastreamento",
+      "title": "4. Rastreamento brasileiro com DNA-HPV",
+      "chars": 2065
+    },
+    {
+      "id": "hpv-algoritmo-aplicado",
+      "title": "Rastreamento em 2026: algoritmo comentado da diretriz brasileira",
+      "chars": 6098
+    },
+    {
+      "id": "citologia",
+      "title": "5. Citologia, Bethesda e histologia",
+      "chars": 2019
+    },
+    {
+      "id": "colposcopia",
+      "title": "6. Colposcopia: como raciocinar",
+      "chars": 874
+    },
+    {
+      "id": "colposcopia-lesoes-avancado",
+      "title": "Colposcopia avançada: da observação à prova histológica",
+      "chars": 7878
+    },
+    {
+      "id": "clinica",
+      "title": "7. Manifestações clínicas e diagnóstico do câncer invasivo",
+      "chars": 1118
+    },
+    {
+      "id": "estadiamento",
+      "title": "8. Estadiamento FIGO 2018",
+      "chars": 1209
+    },
+    {
+      "id": "tratamento",
+      "title": "9. Tratamento: da lesão precursora à doença metastática",
+      "chars": 2500
+    },
+    {
+      "id": "figo-conduta-integrada-2026",
+      "title": "Estadiamento e escolha terapêutica: raciocínio oncológico por extensão",
+      "chars": 8419
+    },
+    {
+      "id": "especiais",
+      "title": "10. Situações especiais",
+      "chars": 1407
+    },
+    {
+      "id": "seguimento-situacoes-especiais-casos",
+      "title": "Situações especiais comentadas: gestação, HIV, menopausa e pós-tratamento",
+      "chars": 7467
+    },
+    {
+      "id": "seguimento",
+      "title": "11. Seguimento e prevenção de recorrência",
+      "chars": 1615
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos integradores",
+      "chars": 1180
+    },
+    {
+      "id": "integracao-clinica-lote09",
+      "title": "Integração clínica: decisões que mudam o percurso da paciente",
+      "chars": 4861
+    },
+    {
+      "id": "casos-aprofundados-lote09",
+      "title": "Casos clínicos aprofundados: raciocínio completo da suspeita à conduta",
+      "chars": 9182
+    },
+    {
+      "id": "questoes-autorais-lote09",
+      "title": "Questões autorais LURIA: prova e raciocínio por alternativa",
+      "chars": 6729
+    },
+    {
+      "id": "curadoria-visual-lote09",
+      "title": "Curadoria visual e controle de qualidade da Aula 164",
+      "chars": 2735
+    },
+    {
+      "id": "revisao",
+      "title": "13. Revisão de alto rendimento",
+      "chars": 1168
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "Aprofundamento: persistência viral, colposcopia e transição do rastreamento para o diagnóstico",
+      "chars": 3494
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 1064
+    },
+    {
+      "id": "referencias",
+      "title": "Referências principais",
+      "chars": 948
+    }
+  ],
+  "references": [
+    "Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer de Colo do Útero — Parte I. 2025.",
+    "CONITEC. Relatório de Recomendação nº 977 — Rastreamento do câncer do colo do útero.",
+    "Ministério da Saúde. Nota Técnica nº 32/2026 — vacinação após NIC2+/AIS.",
+    "INCA. Controle do câncer do colo do útero.",
+    "INCA. Tratamento do câncer do colo do útero.",
+    "WHO. Guideline for screening and treatment of cervical pre-cancer lesions: HPV DNA genotyping. 2026.",
+    "WHO. Evidence-informed guidance for implementation of HPV-based screening programmes. 2026.",
+    "NCI. Cervical Cancer Treatment (PDQ).",
+    "Bhatla N, et al. Revised FIGO staging for carcinoma of the cervix uteri. Int J Gynaecol Obstet. 2019.",
+    "International Federation for Cervical Pathology and Colposcopy. Colposcopic terminology and transformation zone concepts.",
+    "IARC. Atlas of Colposcopy: tipos de zona de transformação.",
+    "Ministério da Saúde. HPV — prevenção e grupos especiais de vacinação."
+  ],
+  "reference_links": [
+    {
+      "label": "Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer de Colo do Útero — Parte I. 2025.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+      "in_references": true
+    },
+    {
+      "label": "CONITEC. Relatório de Recomendação nº 977 — Rastreamento do câncer do colo do útero.",
+      "url": "https://www.gov.br/conitec/pt-br/midias/relatorios/2025/relatorio-de-recomendacao-no-977-diretrizes-rastreamento-colo-de-utero",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Nota Técnica nº 32/2026 — vacinação após NIC2+/AIS.",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-32-2026-cgici-dpni-svsa-ms.pdf/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Controle do câncer do colo do útero.",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Tratamento do câncer do colo do útero.",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/tratamento",
+      "in_references": true
+    },
+    {
+      "label": "WHO. Guideline for screening and treatment of cervical pre-cancer lesions: HPV DNA genotyping. 2026.",
+      "url": "https://www.who.int/publications/i/item/9789240121744",
+      "in_references": true
+    },
+    {
+      "label": "WHO. Evidence-informed guidance for implementation of HPV-based screening programmes. 2026.",
+      "url": "https://www.who.int/publications/i/item/9789240124172",
+      "in_references": true
+    },
+    {
+      "label": "NCI. Cervical Cancer Treatment (PDQ).",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "in_references": true
+    },
+    {
+      "label": "IARC. Atlas of Colposcopy: tipos de zona de transformação.",
+      "url": "https://screening.iarc.fr/atlascolpoindex10.php",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. HPV — prevenção e grupos especiais de vacinação.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "ASCCP — atualização de 2023, correção do calendário pós-tratamento",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10755815/",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde, Diretriz DNA-HPV 2025",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+      "in_references": false
+    },
+    {
+      "label": "INCA, profissionais de saúde",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/colo-do-utero/versao-para-profissionais-de-saude",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde, vacinação HPV",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv",
+      "in_references": false
+    },
+    {
+      "label": "IARC, tipos da zona de transformação",
+      "url": "https://screening.iarc.fr/atlascolpoindex10.php",
+      "in_references": false
+    },
+    {
+      "label": "IARC, atlas digital de colposcopia",
+      "url": "https://screening.iarc.fr/atlascolpodiag_searchifcpc.php?lang=1",
+      "in_references": false
+    },
+    {
+      "label": "NCI, Cervical Cancer Treatment (PDQ)",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer de Colo do Útero — Parte I. 2025.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+      "in_references": true
+    },
+    {
+      "label": "CONITEC. Relatório de Recomendação nº 977 — Rastreamento do câncer do colo do útero.",
+      "url": "https://www.gov.br/conitec/pt-br/midias/relatorios/2025/relatorio-de-recomendacao-no-977-diretrizes-rastreamento-colo-de-utero",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Nota Técnica nº 32/2026 — vacinação após NIC2+/AIS.",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-32-2026-cgici-dpni-svsa-ms.pdf/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Controle do câncer do colo do útero.",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Tratamento do câncer do colo do útero.",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/tratamento",
+      "in_references": true
+    },
+    {
+      "label": "WHO. Guideline for screening and treatment of cervical pre-cancer lesions: HPV DNA genotyping. 2026.",
+      "url": "https://www.who.int/publications/i/item/9789240121744",
+      "in_references": true
+    },
+    {
+      "label": "WHO. Evidence-informed guidance for implementation of HPV-based screening programmes. 2026.",
+      "url": "https://www.who.int/publications/i/item/9789240124172",
+      "in_references": true
+    },
+    {
+      "label": "NCI. Cervical Cancer Treatment (PDQ).",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "in_references": true
+    },
+    {
+      "label": "IARC. Atlas of Colposcopy: tipos de zona de transformação.",
+      "url": "https://screening.iarc.fr/atlascolpoindex10.php",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. HPV — prevenção e grupos especiais de vacinação.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv",
+      "in_references": true
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 13,
+  "paragraphs": 179,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 88,
+      "status": "approved",
+      "section": "citologia",
+      "source_license": "CC BY 2.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-cin1-transicao.webp"
+    },
+    {
+      "id": 89,
+      "status": "approved",
+      "section": "citologia",
+      "source_license": "CC BY 2.0",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/CIN_1_vs_Normal_Exocervical_Epithelium_%283953329264%29.jpg/960px-CIN_1_vs_Normal_Exocervical_Epithelium_%283953329264%29.jpg"
+    },
+    {
+      "id": 90,
+      "status": "approved",
+      "section": "colposcopia",
+      "source_license": "CC BY 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-via-positivo-cin1.webp"
+    },
+    {
+      "id": 161,
+      "status": "approved",
+      "section": "anatomia",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-cervix-normal.webp"
+    },
+    {
+      "id": 183,
+      "status": "approved",
+      "section": "estadiamento",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-staging-verified.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": false,
+  "db_published": true,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "prevencao",
+      "text": "No calendário brasileiro de 2026, a vacinação de rotina contra HPV é recomendada para meninas e meninos de 9 a 14 anos em esquema de dose única. O país também mantém estratégia de resgate para jovens de 15 a 19 anos sem histórico vacinal, conforme organização vigente do PNI.",
+      "pattern": 0
+    },
+    {
+      "section": "rastreamento",
+      "text": "Na população de risco padrão, um teste DNA-HPV negativo realizado acima dos 60 anos permite encerrar o rastreamento. Pessoas com história prévia de NIC2, NIC3 ou AIS devem manter acompanhamento por até 25 anos após o tratamento quando possível e aceitável.",
+      "pattern": 0
+    },
+    {
+      "section": "rastreamento",
+      "text": "Mantém-se a citologia convencional: iniciar aos 25 anos após atividade sexual; fazer dois exames anuais consecutivos e, se ambos normais, seguir com intervalo de três anos, até transição local para a nova estratégia.",
+      "pattern": 0
+    },
+    {
+      "section": "hpv-algoritmo-aplicado",
+      "text": "Na população de risco padrão, o programa abrange pessoas com colo do útero entre 25 e 64 anos que já iniciaram atividade sexual. A diretriz recomenda não rastrear antes dos 25 anos, inclusive quando houve início sexual precoce, pela alta frequência de infecção transitória e risco de intervenções desnecessárias. Após os 60 anos, é possível encerrar após teste molecular negativo nessa faixa; se não houve teste anterior, realizar pelo menos um exame para orientar o encerramento. Histórico de tratamento de NIC2, NIC3 ou AIS muda essa regra e exige acompanhamento prolongado, por até 25 anos conforme diretriz. Quando há sangramento pós-coital persistente ou massa cervical, não usar a rotina de rastreamento como substituta de investigação diagnóstica.",
+      "pattern": 0
+    },
+    {
+      "section": "prevencao",
+      "text": "No calendário brasileiro de 2026, a vacinação de rotina contra HPV é recomendada para meninas e meninos de 9 a 14 anos em esquema de dose única. O país também mantém estratégia de resgate para jovens de 15 a 19 anos sem histórico vacinal, conforme organização vigente do PNI.",
+      "pattern": 1
+    },
+    {
+      "section": "prevencao",
+      "text": "A Nota Técnica nº 32/2026 do Ministério da Saúde recomenda priorizar vacinação contra HPV para pessoas tratadas por NIC2, NIC3 ou adenocarcinoma in situ mediante procedimento excisional, independentemente da idade, com três doses nos meses 0, 2 e 6. A Nota define momento perioperatório ou até 12 meses após o tratamento e orienta prescrição médica e registro do diagnóstico. A aplicação prática depende da organização local da estratégia do PNI e da disponibilidade do imunobiológico; a nota não autoriza afirmar que toda paciente terá acesso imediato em qualquer serviço.",
+      "pattern": 1
+    },
+    {
+      "section": "hpv-algoritmo-aplicado",
+      "text": "Na população de risco padrão, o programa abrange pessoas com colo do útero entre 25 e 64 anos que já iniciaram atividade sexual. A diretriz recomenda não rastrear antes dos 25 anos, inclusive quando houve início sexual precoce, pela alta frequência de infecção transitória e risco de intervenções desnecessárias. Após os 60 anos, é possível encerrar após teste molecular negativo nessa faixa; se não houve teste anterior, realizar pelo menos um exame para orientar o encerramento. Histórico de tratamento de NIC2, NIC3 ou AIS muda essa regra e exige acompanhamento prolongado, por até 25 anos conforme diretriz. Quando há sangramento pós-coital persistente ou massa cervical, não usar a rotina de rastreamento como substituta de investigação diagnóstica.",
+      "pattern": 1
+    },
+    {
+      "section": "hpv-algoritmo-aplicado",
+      "text": "Resultado não detectável em risco padrão autoriza retorno em 5 anos. A detecção de HPV16 e/ou HPV18 direciona à colposcopia sem aguardar citologia reflexa. Se apenas outros tipos oncogênicos forem detectados, a citologia reflexa é preferencialmente realizada na amostra já coletada. Citologia com ASC-US ou alteração mais grave exige colposcopia; citologia negativa permite novo teste molecular em 12 meses. Uma citologia reflexa insatisfatória também demanda colposcopia, e não deve ser tratada como resultado normal. Resultado molecular inválido para todos os tipos exige nova coleta por profissional de saúde.",
+      "pattern": 1
+    },
+    {
+      "section": "prevencao",
+      "text": "No calendário brasileiro de 2026, a vacinação de rotina contra HPV é recomendada para meninas e meninos de 9 a 14 anos em esquema de dose única. O país também mantém estratégia de resgate para jovens de 15 a 19 anos sem histórico vacinal, conforme organização vigente do PNI.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao",
+      "text": "A Nota Técnica nº 32/2026 do Ministério da Saúde recomenda priorizar vacinação contra HPV para pessoas tratadas por NIC2, NIC3 ou adenocarcinoma in situ mediante procedimento excisional, independentemente da idade, com três doses nos meses 0, 2 e 6. A Nota define momento perioperatório ou até 12 meses após o tratamento e orienta prescrição médica e registro do diagnóstico. A aplicação prática depende da organização local da estratégia do PNI e da disponibilidade do imunobiológico; a nota não autoriza afirmar que toda paciente terá acesso imediato em qualquer serviço.",
+      "pattern": 2
+    },
+    {
+      "section": "rastreamento",
+      "text": "O rastreamento é destinado a pessoas assintomáticas. A diretriz nacional aprovada em 2025 estabelece o teste molecular para DNA-HPV oncogênico como método primário, com implantação progressiva no SUS.",
+      "pattern": 2
+    },
+    {
+      "section": "hpv-algoritmo-aplicado",
+      "text": "A Portaria Conjunta SAES/SECTICS nº 13/2025 reorganiza o rastreamento brasileiro em torno do teste molecular para DNA-HPV oncogênico. Isso muda a ordem da decisão: primeiro perguntar se a pessoa está na população-alvo assintomática, depois identificar a genotipagem e, por último, escolher citologia reflexa, colposcopia ou retorno programado. DNA-HPV positivo identifica risco virológico; não diagnostica carcinoma. Um teste negativo não substitui investigação de sintomas nem vigilância após NIC2+.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "anatomia",
+      "text": "O colo uterino é revestido externamente por epitélio escamoso e, no canal endocervical, por epitélio glandular colunar. A junção entre esses epitélios é a junção escamocolunar. Ao longo da vida, influência hormonal, pH vaginal e metaplasia deslocam essa junção, criando a zona de transformação, região onde se originam a maioria das lesões precursoras escamosas."
+    },
+    {
+      "section": "anatomia",
+      "text": "Porque a visibilidade da zona de transformação determina a qualidade da colposcopia e influencia se uma estratégia ablativa é apropriada ou se é necessária excisão diagnóstica/terapêutica. Lesões glandulares podem estar mais altas no canal e escapar de uma inspeção ectocervical aparentemente normal."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 161,
+        "section": "anatomia",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-cervix-normal.webp",
+        "source_only": false
+      },
+      {
+        "id": 88,
+        "section": "citologia",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-cin1-transicao.webp",
+        "source_only": false
+      },
+      {
+        "id": 89,
+        "section": "citologia",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/CIN_1_vs_Normal_Exocervical_Epithelium_%283953329264%29.jpg/960px-CIN_1_vs_Normal_Exocervical_Epithelium_%283953329264%29.jpg",
+        "source_only": false
+      },
+      {
+        "id": 90,
+        "section": "colposcopia",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-via-positivo-cin1.webp",
+        "source_only": false
+      },
+      {
+        "id": 183,
+        "section": "estadiamento",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-cancer-colo-utero-hpv/ccu-staging-verified.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 5
+  }
+}

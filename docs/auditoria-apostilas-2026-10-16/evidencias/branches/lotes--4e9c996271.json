@@ -1,0 +1,391 @@
+{
+  "sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
+  "path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--4e9c996271",
+  "title": "LURIA — Tuberculose: doença ativa, diagnóstico e controle",
+  "format": ".md",
+  "chars_estimated": 92470,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tuberculose: doença ativa, diagnóstico e controle"
+    },
+    {
+      "title": "Etapa zero e inventário"
+    },
+    {
+      "title": "1. Microbiologia e transmissão"
+    },
+    {
+      "title": "2. Apresentação clínica e busca ativa"
+    },
+    {
+      "title": "3. Confirmação microbiológica e imagem"
+    },
+    {
+      "title": "4. Tratamento e acompanhamento no SUS"
+    },
+    {
+      "title": "5. Registro de benchmarking e atualização normativa — 14/10/2026"
+    },
+    {
+      "title": "6. Fisiopatologia e história natural que explicam o diagnóstico"
+    },
+    {
+      "title": "6.1 Por que uma infecção respiratória pode permanecer silenciosa por anos?"
+    },
+    {
+      "title": "6.2 Exposição, infecção, adoecimento e transmissão são eventos distintos"
+    },
+    {
+      "title": "7. Roteiro diagnóstico na APS e nos serviços de urgência"
+    },
+    {
+      "title": "7.1 Primeiro reconhecer que o tempo de evolução muda a probabilidade"
+    },
+    {
+      "title": "7.2 Um resultado “MTB detectado” precisa ser interpretado com história"
+    },
+    {
+      "title": "7.3 Imagem torácica é anatomia, não microbiologia"
+    },
+    {
+      "title": "8. Tuberculose extrapulmonar — como pensar por órgão"
+    },
+    {
+      "title": "8.1 TB pleural"
+    },
+    {
+      "title": "8.2 TB ganglionar"
+    },
+    {
+      "title": "8.3 Meningite tuberculosa"
+    },
+    {
+      "title": "8.4 TB osteoarticular, miliar e outras formas"
+    },
+    {
+      "title": "9. Tratamento de TB sensível: por que combinar fármacos por meses?"
+    },
+    {
+      "title": "9.1 Esquema básico no SUS"
+    },
+    {
+      "title": "9.2 Monitorização e apoio à adesão"
+    },
+    {
+      "title": "9.3 Quadro operacional de doses fixas combinadas: adultos com TB sensível"
+    },
+    {
+      "title": "10. TB drogarresistente: o que mudou em outubro de 2026?"
+    },
+    {
+      "title": "11. Infecção latente e investigação de contatos: prevenção não é tratamento de doença ativa"
+    },
+    {
+      "title": "11.1 Regimes preventivos quantificados em adultos: não confundir com RHZE"
+    },
+    {
+      "title": "12. Populações especiais e armadilhas"
+    },
+    {
+      "title": "12.1 Coinfecção TB/HIV"
+    },
+    {
+      "title": "12.2 Crianças e gestantes"
+    },
+    {
+      "title": "12.3 Situação de rua, privação de liberdade e pessoas com outras vulnerabilidades"
+    },
+    {
+      "title": "13. Casos adicionais comentados"
+    },
+    {
+      "title": "Caso 3 — Pleural exsudativa com ADA elevada: não dispensar investigação"
+    },
+    {
+      "title": "Caso 4 — Meningite subaguda com teste molecular negativo"
+    },
+    {
+      "title": "Caso 5 — Rifampicina resistente no TRM"
+    },
+    {
+      "title": "Caso 6 — Contato sem sintomas e teste positivo"
+    },
+    {
+      "title": "14. Questões autorais de consolidação (além das duas anteriores)"
+    },
+    {
+      "title": "Questão 3 — Interpretação de imunoteste"
+    },
+    {
+      "title": "Questão 4 — Meningite"
+    },
+    {
+      "title": "Questão 5 — Tratamento básico"
+    },
+    {
+      "title": "Questão 6 — Resistência"
+    },
+    {
+      "title": "Questão 7 — Profilaxia"
+    },
+    {
+      "title": "Questão 8 — Esquema novo do SUS"
+    },
+    {
+      "title": "Questão 9 — Efeito adverso ocular"
+    },
+    {
+      "title": "Questão 10 — Epidemiologia"
+    },
+    {
+      "title": "15. Teste de autossuficiência, propostas de figuras e referências"
+    },
+    {
+      "title": "Ampliação editorial 03 — interpretação laboratorial, decisões longitudinais e segurança da TB-DR"
+    },
+    {
+      "title": "16. Da suspeita ao tratamento: uma linha de cuidado sem saltos lógicos"
+    },
+    {
+      "title": "16.1 Identificação da pessoa sintomática não é fechamento diagnóstico"
+    },
+    {
+      "title": "16.2 Como escolher amostra de boa qualidade"
+    },
+    {
+      "title": "16.3 O que cada exame identifica exatamente?"
+    },
+    {
+      "title": "16.4 Como explicar um TRM resistente à rifampicina"
+    },
+    {
+      "title": "16.5 Caso provável sem confirmação inicial: incerteza não é ausência de doença"
+    },
+    {
+      "title": "17. Acompanhamento da TB sensível: por que a consulta mensal importa"
+    },
+    {
+      "title": "17.1 As quatro curvas de resposta"
+    },
+    {
+      "title": "17.2 Positividade ao final do segundo mês: o raciocínio correto"
+    },
+    {
+      "title": "17.3 Monitorar fármacos pelo dano que podem causar"
+    },
+    {
+      "title": "17.4 Ajustar dose por peso e função orgânica"
+    },
+    {
+      "title": "18. TB drogarresistente no SUS: correção normativa completa de outubro de 2026"
+    },
+    {
+      "title": "18.1 Quadro de elegibilidade: o erro que precisa ser evitado"
+    },
+    {
+      "title": "18.2 BPaLM não é BPaL: duração e possibilidade de extensão"
+    },
+    {
+      "title": "18.3 Monitorização clínico-laboratorial nos regimes curtos resistentes"
+    },
+    {
+      "title": "18.4 Toxicidades maiores por classe: qual pergunta fazer no retorno?"
+    },
+    {
+      "title": "18.5 Interrupções são questão de segurança e eficácia"
+    },
+    {
+      "title": "18.6 Seguimento pós-cura da TB-DR não termina no último comprimido"
+    },
+    {
+      "title": "19. TB em pessoas com HIV: duas doenças, múltiplos tempos terapêuticos"
+    },
+    {
+      "title": "19.1 Início de TARV e interação com rifampicina: regra nacional com exceção"
+    },
+    {
+      "title": "20. Infecção latente: prevenir adoecimento sem confundir pessoa infectada com doente"
+    },
+    {
+      "title": "20.1 Como interpretar a prova tuberculínica/IGRA"
+    },
+    {
+      "title": "20.2 Antes de iniciar profilaxia, procure doença ativa"
+    },
+    {
+      "title": "20.3 Quadro original de esquemas preventivos e diferenças conceituais"
+    },
+    {
+      "title": "20.4 BCG e transmissão: ensinar o que a vacina faz"
+    },
+    {
+      "title": "21. Formas extrapulmonares e emergência: o órgão decide o tempo"
+    },
+    {
+      "title": "21.1 Tuberculose pleural: um teste auxiliar não deve “encerrar” o caso"
+    },
+    {
+      "title": "21.2 Meningite: quando o tempo de espera aumenta sequela"
+    },
+    {
+      "title": "21.3 Espondilodiscite e compressão medular"
+    },
+    {
+      "title": "21.4 TB miliar e disseminada"
+    },
+    {
+      "title": "21.5 Pericárdica, abdominal e ganglionar"
+    },
+    {
+      "title": "22. Vigilância e seguimento territorial: o cuidado não termina no consultório"
+    },
+    {
+      "title": "22.1 Notificação, investigação e rastreamento de contatos"
+    },
+    {
+      "title": "22.2 A adesão é parte do tratamento biológico"
+    },
+    {
+      "title": "22.3 Critérios de reavaliação do local de cuidado"
+    },
+    {
+      "title": "22.4 Após tratamento completo: recidiva, sequela e funcionalidade"
+    },
+    {
+      "title": "23. Quadro de erros de interpretação que mudam o desfecho"
+    },
+    {
+      "title": "24. Casos clínicos de decisão avançada"
+    },
+    {
+      "title": "Caso 7 — Cultura após molecular positivo"
+    },
+    {
+      "title": "Caso 8 — Resistente, mas acometimento do SNC"
+    },
+    {
+      "title": "Caso 9 — Interrupção prolongada do BPaL e suspeita de resistência adicional"
+    },
+    {
+      "title": "Caso 10 — Contato imunodeprimido com IGRA negativo"
+    },
+    {
+      "title": "25. Questões autorais adicionais com comentário de cada alternativa"
+    },
+    {
+      "title": "Questão 11 — TRM e cultura"
+    },
+    {
+      "title": "Questão 12 — O segundo mês"
+    },
+    {
+      "title": "Questão 13 — Contraindicação de BPaLM"
+    },
+    {
+      "title": "Questão 14 — BPaL ou BPaLM"
+    },
+    {
+      "title": "Questão 15 — Efeito da linezolida"
+    },
+    {
+      "title": "Questão 16 — IGRA e diagnóstico de doença"
+    },
+    {
+      "title": "Questão 17 — Tratamento preventivo"
+    },
+    {
+      "title": "Questão 18 — Seguimento pós TB-DR"
+    },
+    {
+      "title": "26. Teste de autossuficiência, revisão final pendente e referências"
+    },
+    {
+      "title": "Nota de auditoria de doses — fontes e divergência"
+    },
+    {
+      "title": "Próximas ampliações mandatórias"
+    }
+  ],
+  "reference_entries": [
+    "**Candidatas de imagem — ainda não importadas:** radiografia cavitação apical; radiografia miliar; TC árvore-em-brotamento; derrame pleural TB; imagem US de linfonodo; TC/RM de coluna em Pott; RM de meningite com hidrocefalia; esquema original de granuloma; painel didático de resultados TRM; comparativo histopatológico granuloma/necrose; esquema visual original de RHZE versus BPaLM; fluxograma de contatos/ILTB. Imagens reais somente após verificação de direitos de uso comercial, licença, adequação diagnóstica, legenda e aprovação pelo **Admin**. Não copiar imagens privadas do Drive.",
+    "**Fontes reais verificadas para revisão científica posterior:**",
+    "1. Ministério da Saúde. *Manual de Recomendações para o Controle da Tuberculose no Brasil*, 2ª edição. Atualização de página: 10/07/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "2. Ministério da Saúde. *Diagnóstico*. Atualização 16/03/2026. https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "3. Ministério da Saúde. *Tratamento*. Atualização 16/03/2026. https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "4. Ministério da Saúde. *Prevenção*. Atualização 16/03/2026. https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao",
+    "5. Ministério da Saúde. *Atualização da TB resistente e BPaLM no SUS*, notícia com referência à Nota Informativa nº 2/2026, publicada em 06/10/2026. https://www.gov.br/aids/pt-br/assuntos/noticias/2026/outubro/ministerio-da-saude-atualiza-recomendacoes-para-tratamento-da-tuberculose-resistente-e-amplia-opcoes-no-sus",
+    "6. OMS. *WHO consolidated guidelines on tuberculosis: module 4: treatment and care*, 2ª ed., 25/09/2026. https://www.who.int/publications/i/item/9789240125124",
+    "**Auditoria provisória:** seis casos e dez questões no conjunto com o manuscrito anterior, mas permanece <60 mil caracteres didáticos úteis, com doses e fluxos específicos a validar. Sem arquivo de imagem autorizado, sem livro no catálogo, sem revisão científica independente e sem validação desktop/PWA. **NÃO CERTIFICADA / NÃO PUBLICADA.**",
+    "---",
+    "**Armadilha de alta relevância:** o Ministério da Saúde recomenda cultura quando o diagnóstico inicial foi realizado por baciloscopia; quando o TRM resultou “MTB detectado”; em crianças, HIV, extrapulmonar e retratamento independentemente do resultado inicial; se baciloscopia do 2º mês for positiva; ou se houver suspeita de resistência/falha. Essa lista evita tanto uso indiscriminado quanto a omissão de exame importante. A cultura precisa de logística e seguimento; não basta solicitá-la se ninguém revisará o resultado.",
+    "**Rifampicina e isoniazida** podem causar hepatotoxicidade; **pirazinamida** também contribui para risco hepático e sintomas articulares; **etambutol** pode prejudicar nervo óptico, especialmente com disfunção renal. A consulta deve incluir: náusea persistente, vômitos, icterícia, colúria acompanhada de mal-estar, anorexia intensa, prurido e dor abdominal; visão turva ou alteração da percepção de cores; parestesias e fraqueza; exantema importante. A urina alaranjada esperada por rifampicina, isoladamente, não é igual a urina escura com icterícia e sofrimento sistêmico. Essa diferença deve ser ",
+    "**BPaLM** significa bedaquilina + pretomanida + linezolida + moxifloxacino e tem duração **máxima de 26 semanas (seis meses)** no documento brasileiro. **BPaL** exclui moxifloxacino, notadamente com resistência a fluoroquinolona ou exposição prévia relevante sem teste favorável; pode, em situações específicas de resposta bacteriológica/terapêutica insuficiente e sem interrupções indevidas, ser estendido até **39 semanas (nove meses)** por avaliação especializada. **Não estender BPaLM por confundir os nomes.** Tampouco usar pretomanida isolada ou em uma combinação improvisada fora desses esquem",
+    "**Linezolida:** a inibição da síntese proteica bacteriana pode coexistir com mielossupressão e neuropatia periférica/óptica de exposição prolongada. Pergunte por fraqueza, palidez, sangramento, formigamento persistente, alteração visual e cansaço. Hemograma seriado é parte do protocolo. A nota estabelece decisões específicas de redução/suspensão por tempo de tratamento e gravidade; uma alteração de dose improvisada pode comprometer eficácia do regime. ",
+    "**Bedaquilina e moxifloxacino:** associam-se à preocupação com **prolongamento do QTc**, principalmente com outras medicações que também alteram repolarização; cuidado com antiarrítmicos, determinados antipsicóticos, macrolídeos, antieméticos e distúrbios eletrolíticos. Avaliar ECG, sintomas de síncope/palpitação e a lista completa de fármacos. O risco não é estimado apenas por “não há dor no peito”.",
+    "**Pretomanida e demais componentes:** monitorar sintomas e enzimas de lesão hepática, intolerância gastrointestinal e interações. **Rifampicina não integra o BPaL/BPaLM** e pode interagir fortemente com metabolismo da bedaquilina, de modo que não se deve somar dois esquemas por achar que “quanto mais antituberculose, melhor”. Na pessoa com HIV, o PCDT de antirretrovirais e a Nota 2/2026 precisam ser examinados em conjunto; a nota destaca evitar **efavirenz** com bedaquilina/pretomanida por redução de exposição medicamentosa.",
+    "**Quando iniciar TARV?** A regra geral é não adiar indefinidamente antirretrovirais, pois a imunossupressão aumenta mortalidade; entretanto, a **meningite tuberculosa** exige cautela específica com momento da TARV por risco de inflamação intracraniana associada à reconstituição imune. Sem conhecer CD4, forma clínica, estabilidade, tratamento atual e PCDT brasileiro de HIV, uma frase como “iniciar sempre após sete dias” não é segura. Regimes com rifampicina exigem avaliar interações e necessidade de adaptar ARV. Em TB-DR com BPaL/BPaLM, interações são diferentes porque o regime não usa rifampic",
+    "**IRIS (síndrome de reconstituição imune):** alguns pacientes pioram sintomas inflamatórios após iniciar TARV apesar de tratamento antimicobacteriano eficaz. Antes de atribuir piora a IRIS, verificar falha terapêutica, resistência, ausência de adesão, outra infecção e toxicidade medicamentosa. Edema de SNC, insuficiência respiratória ou compressão orgânica não devem ser minimizados como “reação esperada”.",
+    "**Interação central:** a **rifampicina induz enzimas metabolizadoras** e pode diminuir exposição de antirretrovirais. A edição 2024 do PCDT cita tenofovir/lamivudina/dolutegravir como opção preferencial inicial e, ao associar rifampicina, prevê **dolutegravir 50 mg a cada 12 horas**, retornando ao regime habitual somente **duas semanas após o término da rifampicina**, nos casos elegíveis. Isso **não** significa dobrar qualquer antirretroviral indiscriminadamente. Genotipagem, resistência, doença renal, gestação, interações e esquema prévio podem modificar o regime, e a avaliação deve ser feita",
+    "**Contraste com TB-DR:** BPaL/BPaLM não inclui rifampicina, porém bedaquilina, pretomanida, linezolida e moxifloxacino têm interações e toxicidades próprias; **efavirenz** pode reduzir a exposição a determinados componentes, conforme Nota 2/2026. A decisão sobre TARV na TB-DR é coordenada com serviço especializado, não obtida por substituir mecanicamente rifampicina por outra droga.",
+    "**Internação** pode ser necessária por insuficiência respiratória, hemoptise importante, meningite, compressão medular, choque, desidratação grave, hepatotoxicidade séria, outras doenças descompensadas ou impossibilidade prática de tratamento seguro ambulatorial. A transmissibilidade isoladamente exige medidas respiratórias adequadas e avaliação de contexto; nem toda TB pulmonar precisa de meses de hospitalização. Alta clínica exige plano terapêutico viável, seguimento e medidas de prevenção alinhadas à situação de infectividade.",
+    "**Gabarito: B.** A cultura e teste de sensibilidade integram o fluxo quando MTB é detectado. **A** ignora identificação de resistência e viabilidade; **C** confunde infecção imunológica com resposta ao tratamento; **D** atribui à imagem poder de exclusão que ela não tem. **Revisão:** cada exame responde pergunta diferente.",
+    "**Gabarito: C.** Uma baciloscopia positiva exige avaliação programática. **A** ignora bacteriologia; **B** expõe a falha/resistência; **D** usa regime especial sem indicação comprovada. **Revisão:** seguimento clínico e microbiológico são complementares.",
+    "**Gabarito: B.** A nota exclui TB osteoarticular. **A** omite exceção; **C** ignora caracterização de resistência; **D** contraria restrição expressa. **Revisão:** norma integral, e não manchete, define elegibilidade.",
+    "**Gabarito: C.** **A** inverte composição; **B** adiciona rifampicina ausente; **D** confunde tratamento sensível com TB-DR. **Revisão:** a letra M representa moxifloxacino; a duração também não é intercambiável.",
+    "**Gabarito: B.** **A/C** negam toxicidade reconhecida e elevam risco; **D** ignora sintomas de alarme. **Revisão:** a eficácia depende também de tolerabilidade e seguimento.",
+    "**Gabarito: B.** **A** atribui sítio e transmissibilidade; **C** trata infecção como doença ativa; **D** superestima proteção vacinal. **Revisão:** prevenir e tratar doença ativa são fluxos diferentes.",
+    "**Gabarito: A.** **B** confunde prevenção/tratamento; **C** é regime inadequado; **D** não previne progressão. **Revisão:** a elegibilidade depende de idade, interações e riscos.",
+    "**Gabarito: B.** **A** ignora recidiva e sequelas medicamentosas; **C** transforma regime com prazo em terapia indefinida; **D** interpreta teste imune como exame bacteriológico. **Revisão:** cura farmacológica e seguimento são dimensões distintas.",
+    "**Priorização de imagens candidatas, sem importação:** imagem 1 — radiografia de TB cavitária e diagnóstico diferencial de abscesso; 2 — radiografia de TB miliar e sua relação com disseminação; 3 — TC com árvore-em-brotamento; 4 — ultrassonografia de derrame pleural livre versus loculado; 5 — RM vertebral de Pott; 6 — RM de hidrocefalia/meningite; 7 — lâmina de granuloma necrosante com fonte/licença; 8 — imagem microscópica de BAAR com licença comercial; 9 — diagrama autoral de caminho do bacilo no macrófago; 10 — infográfico original do percurso suspeita→diagnóstico→cultura→TS; 11 — represent"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/tuberculose.",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/diagnostico",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento",
+    "https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao",
+    "https://www.gov.br/aids/pt-br/assuntos/noticias/2026/outubro/ministerio-da-saude-atualiza-recomendacoes-para-tratamento-da-tuberculose-resistente-e-amplia-opcoes-no-sus",
+    "https://www.who.int/publications/i/item/9789240125124",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/publicacoes/ferramenta-instrumentalizadora-assistencia-do-enfermeiro-a-pessoa-com-tuberculose-na-atencao-primaria.pdf",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/PCDT_HIV_Modulo_2_2024_eletrnicoISBN.pdf/@@display-file/file",
+    "https://www.gov.br/aids/pt-br/assuntos/noticias/2025/abril/brasil-amplia-prevencao-e-aposta-em-tratamentos-inovadores-para-eliminar-a-tuberculose.",
+    "https://linhasdecuidado.saude.gov.br/portal/hiv/unidade-de-atencao-primaria/planejamento-terapeutico/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "TB pleural pode cursar com dor e derrame, TB ganglionar com adenomegalia persistente, TB meníngea com cefaleia progressiva e sinais neurológicos, e TB disseminada com manifestações multissistêmicas. O diagnóstico de TB extrapulmonar depende de amostra apropriada do órgão, exames microbiológicos, histopatologia e contexto clínico. Uma prova de infecção latente positiva não comprova doença ativa no órgão."
+    },
+    {
+      "text": "**Caso 1.** Homem de 35 anos com tosse persistente, perda de peso e contato domiciliar com caso de TB. Investigar com amostra respiratória e teste molecular, cultura conforme disponibilidade e avaliação radiológica; orientar redução de exposição conforme avaliação assistencial. **Por que importa:** contato e sintomas aumentam prioridade da investigação."
+    },
+    {
+      "text": "Foram abertos e lidos no Google Drive: **02 - INFECTOLOGIA - TUBERCULOSE.pdf** (texto inicial já consultado), **02 - TUBERCULOSE EXTRA PULMONAR.pdf** (3,9 mil caracteres de texto extraído) e **03 - TRATAMENTO DE TUBERCULOSE E EFEITOS COLATERAIS DO RIPE.pdf** (5,7 mil caracteres). São resumos orientados a prova; mencionam pleurite, meningite, TB óssea, toxicidade e esquemas de tratamento. Há referências a divulgadores e imagens descritas como “arquivo pessoal”; **não foi possível comprovar autoria Estratégia MED ou licença de imagens**. Nenhuma formulação, tabela ou fotografia foi copiada. Os resumos têm simplificações potencialmente enganosas"
+    },
+    {
+      "text": "**Fontes científicas prioritárias confrontadas em outubro de 2026:** - Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, 2ª edição, disponibilizado/atualizado na página oficial em 10/07/2026. - Ministério da Saúde, páginas de **Diagnóstico**, **Tratamento** e **Prevenção** da tuberculose, modificadas em 16/03/2026. - Ministério da Saúde, **Nota Informativa nº 2/2026-CGTM/DATHI/SVSA/MS** sobre tuberculose drogarresistente, anunciada em 06/10/2026, incluindo BPaLM. - OMS, *WHO consolidated guidelines on tuberculosis, Module 4: treatment and care*, **2ª edição em 25/09/2026**. A norma internacional não subs"
+    },
+    {
+      "text": "Cefaleia progressiva, febre, vômitos, alteração comportamental, sinais meníngeos, pares cranianos, convulsões ou déficit focal podem surgir em dias ou semanas. A inflamação basal causa vasculite, infartos e hidrocefalia. LCR pode apresentar pleocitose predominantemente linfocítica, proteínas elevadas e glicose reduzida, mas alterações variam com fase e imunidade. **Negatividade inicial de teste no LCR não exclui meningite TB.** Quando suspeita clínica é alta, tratar a emergência em ambiente hospitalar, coletar amostras sem atraso perigoso e realizar neuroimagem nos cenários indicados. A OMS recomenda corticosteroide adjuvante no tratamento de"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

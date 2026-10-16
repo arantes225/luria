@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-16",
+  "json_valid": 387,
+  "main_reports": 70,
+  "main_source_hashes_preserved": 67,
+  "main_sources_with_tracked_corrections": 3,
+  "expanded_topic_reports": 280,
+  "course_modules_unique": 401,
+  "course_destinations_valid": true,
+  "js_vs_json_mapping_consistent": true,
+  "branch_versions_with_matching_evidence": 296,
+  "clinical_validation_certified": false
+}

@@ -1,0 +1,208 @@
+{
+  "sha": "31be5cc429944dff998ed271f0173f43b853ad10",
+  "path": "apostilas/_rascunhos/lote-04-aula-068-desnutricao-deficiencias-nutricionais.md",
+  "branches": [
+    "origin/editorial/lote-04-aula068-desnutricao-pediatrica-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--31be5cc429",
+  "title": "LURIA — Lote 04, Aula 068 — Desnutrição e deficiências nutricionais na infância",
+  "format": ".md",
+  "chars_estimated": 29644,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 04, Aula 068 — Desnutrição e deficiências nutricionais na infância"
+    },
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Objetivos"
+    },
+    {
+      "title": "1. Conceitos fundamentais"
+    },
+    {
+      "title": "2. Avaliação inicial"
+    },
+    {
+      "title": "3. Estratificação de risco"
+    },
+    {
+      "title": "4. Conduta e seguimento"
+    },
+    {
+      "title": "5. Deficiências nutricionais selecionadas"
+    },
+    {
+      "title": "6. Caso clínico inicial"
+    },
+    {
+      "title": "7. Auditoria editorial obrigatória"
+    },
+    {
+      "title": "Fontes prioritárias para validação"
+    },
+    {
+      "title": "8. Antropometria interpretada corretamente"
+    },
+    {
+      "title": "8.1 Um paciente, três histórias possíveis"
+    },
+    {
+      "title": "8.2 Crescimento como processo"
+    },
+    {
+      "title": "9. Fisiopatologia: desnutrição, inflamação e o ciclo infecção–déficit nutricional"
+    },
+    {
+      "title": "10. História clínica dirigida e diagnósticos diferenciais"
+    },
+    {
+      "title": "10.1 Ingestão, preparo e ambiente"
+    },
+    {
+      "title": "10.2 Doença orgânica subjacente"
+    },
+    {
+      "title": "10.3 Exame físico sistematizado"
+    },
+    {
+      "title": "11. Desnutrição aguda grave: estabilizar antes de acelerar ganho de peso"
+    },
+    {
+      "title": "11.1 Hipoglicemia e hipotermia"
+    },
+    {
+      "title": "11.2 Infecção pode ser pouco evidente"
+    },
+    {
+      "title": "11.3 Água, sódio e potássio: perigo de protocolos genéricos"
+    },
+    {
+      "title": "11.4 Fase de estabilização nutricional"
+    },
+    {
+      "title": "11.5 Síndrome de realimentação"
+    },
+    {
+      "title": "11.6 Ferro na fase inicial"
+    },
+    {
+      "title": "12. Recuperação, alta e prevenção de recaída"
+    },
+    {
+      "title": "13. Micronutrientes: mecanismos, manifestações e armadilhas"
+    },
+    {
+      "title": "13.1 Ferro: deficiência, anemia e inflamação"
+    },
+    {
+      "title": "13.2 Vitamina A"
+    },
+    {
+      "title": "13.3 Vitamina D, cálcio e raquitismo"
+    },
+    {
+      "title": "13.4 Vitamina B12 e folato"
+    },
+    {
+      "title": "13.5 Zinco"
+    },
+    {
+      "title": "13.6 Iodo e tireoide"
+    },
+    {
+      "title": "14. Casos clínicos comentados — expansão"
+    },
+    {
+      "title": "Caso 1 — Criança com edema e peso enganoso"
+    },
+    {
+      "title": "Caso 2 — Diarreia crônica e desaceleração de crescimento"
+    },
+    {
+      "title": "Caso 3 — Lactente com atraso motor e dieta materna restritiva"
+    },
+    {
+      "title": "Caso 4 — Ganho de peso acelerado após privação alimentar"
+    },
+    {
+      "title": "15. Questões autorais com alternativas explicadas"
+    },
+    {
+      "title": "16. Plano de imagens para o Admin"
+    },
+    {
+      "title": "17. Pendências específicas para certificação"
+    }
+  ],
+  "reference_entries": [
+    "- Organização Mundial da Saúde — diretrizes de prevenção e manejo de wasting e edema nutricional em menores de cinco anos (2023): https://www.who.int/publications/i/item/9789240082830",
+    "- OMS — Child Growth Standards: https://www.who.int/tools/child-growth-standards",
+    "- Ministério da Saúde — SISVAN e protocolos de atenção nutricional: https://sisaps.saude.gov.br/sisvan/",
+    "- Ministério da Saúde — Guia Alimentar para Crianças Brasileiras Menores de 2 Anos: https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/documentos/pdf/guia-alimentar-para-criancas-brasileiras-menores-de-2-anos.pdf",
+    "**Peso para idade (P/I):** identifica baixo peso global, mas não distingue se há baixa estatura crônica, emagrecimento recente ou ambos. **Estatura/comprimento para idade (E/I):** sinaliza déficit de crescimento linear acumulado, que pode envolver condições nutricionais, ambientais, genéticas ou doenças crônicas. **Peso para estatura/comprimento (P/E):** é indicador importante de emagrecimento em crianças menores de cinco anos, sem depender da idade exata. **IMC para idade:** útil em faixas etárias específicas e para acompanhamento do estado nutricional; a interpretação exige curva corresponde",
+    "**Criança A:** comprimento preservado, mas perda ponderal recente após diarreia prolongada. O padrão sugere componente agudo e exige investigar hidratação, doença infecciosa, ingestão e absorção. **Criança B:** estatura muito baixa para idade e peso proporcional à baixa estatura, sem perda recente. O padrão pode indicar comprometimento crônico, mas não se deve concluir que a criança “não tem problema” porque P/E é normal. **Criança C:** edema bilateral, pele com alterações e aparente peso adequado. O edema pode mascarar déficit nutricional; a avaliação deve registrar o edema e não confiar apen",
+    "**Edema nutricional** envolve mecanismos complexos relacionados a alterações metabólicas, integridade tecidual, equilíbrio oxidativo, inflamação e manejo de líquidos; reduzir sua explicação a “falta de albumina” é insuficiente. A presença de edema bilateral simétrico, sobretudo em pés e pernas, exige distinguir causas renais, cardíacas e hepáticas e buscar outros achados de desnutrição. Em casos graves, o peso pode subir por retenção de água enquanto a condição clínica piora; por isso a evolução do edema deve ser documentada.",
+    "**Padrão orientador:** perda de peso desproporcional à estatura pode sugerir aporte insuficiente ou doença sistêmica; baixa estatura com peso relativamente preservado pode orientar investigação endocrinológica/genética, entre outras possibilidades. Esses são indícios, não diagnósticos definitivos. História de evacuações volumosas/gordurosas, tosse crônica, vômitos persistentes, cianose, sudorese durante mamadas ou atraso do desenvolvimento ajuda a direcionar hipóteses.",
+    "**Sinais de perigo:** letargia, prostração importante, convulsão, incapacidade de beber ou mamar, vômitos persistentes, hipotermia, hipoglicemia, sinais de choque, infecção grave, desidratação importante ou edema grave. Uma criança com desnutrição grave pode não apresentar febre mesmo com infecção séria.",
+    "**1.** Criança de 20 meses com edema bilateral de pés, mesmo sem baixo peso aparente. Qual é a melhor afirmação? A) O edema exclui desnutrição. B) Peso isolado é suficiente. C) Edema bilateral nutricional pode definir desnutrição aguda grave. D) Sempre é insuficiência cardíaca. E) Diurético é obrigatório. **Gabarito C.** A e B ignoram o mascaramento do peso; C reconhece critério clínico importante; D exclui indevidamente outras causas; E propõe intervenção não indicada de rotina.",
+    "**2.** Qual medida é mais apropriada para triagem comunitária de desnutrição aguda em crianças de 6–59 meses? A) Circunferência craniana isolada. B) Perímetro braquial. C) Hemoglobina isolada. D) Albumina isolada. E) Peso ao nascer isolado. **Gabarito B.** A avalia crescimento craniano; B é instrumento reconhecido de triagem; C e D não classificam sozinhos desnutrição aguda; E não descreve estado nutricional atual.",
+    "**3.** Criança com desnutrição grave complicada e infecção deve receber qual prioridade? A) Ganho ponderal máximo no primeiro dia. B) Jejum prolongado. C) Estabilização clínica, alimentação terapêutica cuidadosa e tratamento das complicações. D) Ferro em altas doses indiscriminadamente na fase inicial. E) Apenas vitaminas. **Gabarito C.** A aumenta risco metabólico; B piora déficit; C respeita fases do cuidado; D ignora cautelas na estabilização; E não trata causas e complicações.",
+    "**4.** Qual marcador pode estar artificialmente elevado pela inflamação na investigação de deficiência de ferro? A) Ferritina. B) Comprimento. C) Perímetro braquial. D) Idade cronológica. E) Estatura parental. **Gabarito A.** A é reagente de fase aguda; B–E são medidas ou dados sem esse comportamento bioquímico.",
+    "**5.** Criança com desnutrição grave inicia realimentação e apresenta hipofosfatemia, hipocalemia e hipomagnesemia. Qual complicação é mais provável? A) Raquitismo isolado. B) Síndrome de realimentação. C) Intolerância à lactose obrigatória. D) Hipervitaminose A. E) Hipotireoidismo congênito. **Gabarito B.** A, C, D e E não explicam tão diretamente o padrão após oferta nutricional; B associa resposta insulínica a deslocamentos eletrolíticos.",
+    "**6.** Lactente com hipotonia e anemia macrocítica, filho de mãe com deficiência nutricional, deve ser investigado prioritariamente para: A) Apenas deficiência de iodo. B) Apenas deficiência de vitamina A. C) Deficiência de vitamina B12, entre os diferenciais. D) Apenas intoxicação por ferro. E) Exclusivamente trauma craniano. **Gabarito C.** A e B não são causas típicas desse conjunto; C relaciona hematologia e neurodesenvolvimento; D e E não são hipóteses centrais sem dados adicionais.",
+    "**7.** Criança com baixa estatura importante e peso proporcional à estatura pode ser considerada nutricionalmente normal apenas porque peso/estatura não está reduzido? A) Sim, sempre. B) Não; baixa estatura para idade e trajetória de crescimento exigem avaliação própria. C) Sim, se não houver anemia. D) Sim, se comer diariamente. E) Apenas quando houver edema. **Gabarito B.** A, C e D ignoram déficit linear; B diferencia indicadores; E é irrelevante para a pergunta.",
+    "**8.** Sobre o diagnóstico de desnutrição, é correto afirmar: A) Toda perda de peso é doença celíaca. B) Toda baixa estatura é endocrinológica. C) A história alimentar, medidas seriadas e avaliação de doença orgânica devem ser integradas. D) Nenhuma criança com obesidade tem carências. E) Ferritina isolada exclui deficiência de ferro em infecção. **Gabarito C.** A e B generalizam; C integra causas; D ignora deficiência qualitativa; E ignora resposta inflamatória.",
+    "1. Curvas OMS de peso/idade e comprimento/idade, com orientação de interpretação (usar fonte e licença autorizadas).",
+    "2. Esquema autoral de wasting, stunting e baixo peso, destacando diferenças.",
+    "3. Fotografia clínica autorizada ou desenho de edema bilateral nutricional, com respeito à privacidade.",
+    "4. Diagrama autoral de avaliação de apetite e complicações.",
+    "5. Algoritmo de estabilização → transição → recuperação, redesenhado originalmente com base em diretrizes.",
+    "6. Esquema de hipofosfatemia e síndrome de realimentação.",
+    "7. Imagem de sinais de raquitismo com atribuição/licença conferidas.",
+    "8. Ilustração de manifestações de deficiência de vitamina A (sem reproduzir material proprietário).",
+    "9. Quadro comparativo original de anemia ferropriva versus anemia inflamatória e outras microcitoses.",
+    "10. Fluxograma original de seguimento pela APS e critérios de encaminhamento.",
+    "**Nenhuma imagem foi aprovada ou incorporada.** O padrão editorial prevê expansão do conjunto visual conforme utilidade, com revisão científica e licença de cada item.",
+    "- Confrontar os critérios antropométricos com a OMS 2023 e manuais brasileiros aplicáveis, distinguindo lactentes menores de seis meses.",
+    "- Verificar critérios de internação, teste de apetite, seguimento e recuperação com fontes primárias e realidade da rede brasileira."
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240082830",
+    "https://www.who.int/tools/child-growth-standards",
+    "https://sisaps.saude.gov.br/sisvan/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-me-alimentar-melhor/documentos/pdf/guia-alimentar-para-criancas-brasileiras-menores-de-2-anos.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Padrão orientador:** perda de peso desproporcional à estatura pode sugerir aporte insuficiente ou doença sistêmica; baixa estatura com peso relativamente preservado pode orientar investigação endocrinológica/genética, entre outras possibilidades. Esses são indícios, não diagnósticos definitivos. História de evacuações volumosas/gordurosas, tosse crônica, vômitos persistentes, cianose, sudorese durante mamadas ou atraso do desenvolvimento ajuda a direcionar hipóteses."
+    },
+    {
+      "text": "A vitamina A participa da diferenciação epitelial, imunidade e ciclo visual. Deficiência grave pode causar cegueira noturna, xeroftalmia, manchas de Bitot e lesões corneanas, além de aumentar vulnerabilidade a infecções. O diagnóstico é frequentemente clínico-epidemiológico; suplementação de altas doses deve obedecer protocolos específicos e idade, pois excesso também causa toxicidade. Não confundir orientação dietética, suplementação preventiva em programas públicos e tratamento de xeroftalmia: são indicações diferentes."
+    },
+    {
+      "text": "A vitamina D regula absorção intestinal de cálcio e fósforo e mineralização óssea. Raquitismo nutricional pode apresentar alargamento de punhos, rosário raquítico, deformidades de membros inferiores e atraso motor, dependendo de idade e gravidade. Investigar cálcio, fósforo, fosfatase alcalina, 25-OH vitamina D e PTH conforme apresentação, além de função renal e diagnósticos diferenciais. Deficiência de vitamina D não é sinônimo de raquitismo em todos os casos, e deformidade óssea não é automaticamente nutricional."
+    },
+    {
+      "text": "O iodo é substrato essencial para hormônios tireoidianos e neurodesenvolvimento. A prevenção populacional utiliza iodação do sal conforme normas sanitárias; isso não autoriza consumo excessivo de sal. Em suspeita de hipotireoidismo congênito, o caminho diagnóstico e terapêutico é urgente e específico, incluindo triagem neonatal e exames hormonais, e não apenas suplementação empírica de iodo."
+    },
+    {
+      "text": "**8.** Sobre o diagnóstico de desnutrição, é correto afirmar: A) Toda perda de peso é doença celíaca. B) Toda baixa estatura é endocrinológica. C) A história alimentar, medidas seriadas e avaliação de doença orgânica devem ser integradas. D) Nenhuma criança com obesidade tem carências. E) Ferritina isolada exclui deficiência de ferro em infecção. **Gabarito C.** A e B generalizam; C integra causas; D ignora deficiência qualitativa; E ignora resposta inflamatória."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

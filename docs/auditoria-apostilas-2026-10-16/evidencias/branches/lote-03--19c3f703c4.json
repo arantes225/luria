@@ -1,0 +1,42 @@
+{
+  "sha": "19c3f703c4c05cc459a33aeff4256026cc1cd0c8",
+  "path": "apostilas/_rascunhos/lote-03/42-VALIDACAO-HTML.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--19c3f703c4",
+  "title": "LURIA — Aula 42 | Validação preliminar da versão HTML",
+  "format": ".md",
+  "chars_estimated": 3162,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 42 | Validação preliminar da versão HTML"
+    },
+    {
+      "title": "Resultados verificados por leitura de retorno do GitHub"
+    },
+    {
+      "title": "Etapa zero e base de evidências"
+    },
+    {
+      "title": "Pendências de homologação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

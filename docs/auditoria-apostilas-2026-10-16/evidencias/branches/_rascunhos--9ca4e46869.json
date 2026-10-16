@@ -1,0 +1,412 @@
+{
+  "sha": "9ca4e468690c065fff4120c4f7a466c9500f5d40",
+  "path": "apostilas/_rascunhos/lote-06-118-anemias-na-infancia.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--9ca4e46869",
+  "title": "LURIA — Apostila 118: Anemias na Infância",
+  "format": ".md",
+  "chars_estimated": 88664,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 118: Anemias na Infância"
+    },
+    {
+      "title": "1. Como estudar anemia pediátrica sem decorar listas desconexas"
+    },
+    {
+      "title": "Três eixos que não se confundem"
+    },
+    {
+      "title": "2. Idade muda completamente a interpretação da hemoglobina"
+    },
+    {
+      "title": "2.1 Recém-nascido, anemia fisiológica e prematuridade"
+    },
+    {
+      "title": "2.2 Pontos de corte OMS 2024: atualizar a tabela antiga"
+    },
+    {
+      "title": "2.3 VCM também depende da idade"
+    },
+    {
+      "title": "3. Eritropoiese e interpretação dos índices hematimétricos"
+    },
+    {
+      "title": "3.1 Da célula-tronco à hemácia circulante"
+    },
+    {
+      "title": "3.2 O que cada índice realmente diz"
+    },
+    {
+      "title": "3.3 Esfregaço periférico: o exame não é decorativo"
+    },
+    {
+      "title": "4. Algoritmo inicial para toda criança com anemia"
+    },
+    {
+      "title": "4.1 A anamnese que modifica probabilidades"
+    },
+    {
+      "title": "4.2 O exame físico com maior rendimento"
+    },
+    {
+      "title": "4.3 Solicitação racional de exames"
+    },
+    {
+      "title": "4.4 Fluxo morfológico + funcional"
+    },
+    {
+      "title": "5. Ferropenia: fisiopatologia e apresentação real"
+    },
+    {
+      "title": "5.1 A deficiência de ferro começa antes da queda de hemoglobina"
+    },
+    {
+      "title": "5.2 Por que lactentes são tão vulneráveis"
+    },
+    {
+      "title": "5.3 Sintomas frequentes e apresentações que exigem urgência"
+    },
+    {
+      "title": "6. Diagnóstico laboratorial da anemia ferropriva"
+    },
+    {
+      "title": "6.1 Hemograma e ferritina com PCR"
+    },
+    {
+      "title": "6.2 Diferenciando ferropriva de talassemia e anemia inflamatória"
+    },
+    {
+      "title": "6.3 A confirmação terapêutica quando apropriada"
+    },
+    {
+      "title": "7. Tratamento da anemia ferropriva — distinguir terapêutica de profilaxia"
+    },
+    {
+      "title": "7.1 Dose e tempo segundo SBP 2026"
+    },
+    {
+      "title": "7.2 Falta de resposta: pensar, não apenas repetir"
+    },
+    {
+      "title": "8. Prevenção em lactentes — Brasil, SBP 2026 e PNSF"
+    },
+    {
+      "title": "8.1 Por que protocolos de datas diferentes não devem ser misturados"
+    },
+    {
+      "title": "8.2 Regimes clínicos distintos e sobreposições"
+    },
+    {
+      "title": "8.3 Alimentação complementar que realmente previne deficiência"
+    },
+    {
+      "title": "9. Talassemias: quando a microcitose não deve receber ferro indefinido"
+    },
+    {
+      "title": "9.1 Fisiopatologia: a globina é o problema"
+    },
+    {
+      "title": "9.2 Traço e doença grave: dois cenários opostos"
+    },
+    {
+      "title": "9.3 Interpretando a eletroforese e triagem neonatal"
+    },
+    {
+      "title": "10. Doença falciforme: hemólise crônica, vaso-oclusão e urgência"
+    },
+    {
+      "title": "10.1 Genótipo não é somente HbSS"
+    },
+    {
+      "title": "10.2 Triagem neonatal e seguimento no SUS"
+    },
+    {
+      "title": "10.3 Hidroxiureia é prevenção, não “remédio só para dor”"
+    },
+    {
+      "title": "10.4 Dor vaso-oclusiva e cuidado de suporte"
+    },
+    {
+      "title": "10.5 Febre: uma situação diferente da dor isolada"
+    },
+    {
+      "title": "10.6 Síndrome torácica aguda, AVC e outras complicações"
+    },
+    {
+      "title": "11. Crise aplástica e sequestro esplênico: duas causas de Hb que despenca"
+    },
+    {
+      "title": "11.1 Crise aplástica: reticulócito desaba"
+    },
+    {
+      "title": "11.2 Sequestro esplênico: baço cresce e reticulócito tende a subir"
+    },
+    {
+      "title": "11.3 Crise de hemólise e transfusão recente"
+    },
+    {
+      "title": "12. Esferocitose hereditária"
+    },
+    {
+      "title": "13. Deficiência de G6PD"
+    },
+    {
+      "title": "14. Anemia hemolítica autoimune (AHAI) na criança"
+    },
+    {
+      "title": "15. Anemia da inflamação e doença crônica: ferro presente, mas indisponível"
+    },
+    {
+      "title": "15.1 O que a hepcidina explica"
+    },
+    {
+      "title": "15.2 Quando suspeitar e quando tratar"
+    },
+    {
+      "title": "15.3 Diferença entre resposta de medula e disponibilidade de ferro"
+    },
+    {
+      "title": "16. Anemia associada à doença renal crônica (DRC)"
+    },
+    {
+      "title": "17. Anemia megaloblástica por deficiência de vitamina B12 ou folato"
+    },
+    {
+      "title": "17.1 Por que a célula fica grande"
+    },
+    {
+      "title": "17.2 Deficiência de B12 em lactentes: pensar na mãe"
+    },
+    {
+      "title": "17.3 Diagnóstico laboratorial e risco de tratar errado"
+    },
+    {
+      "title": "17.4 Folato: causas e armadilhas"
+    },
+    {
+      "title": "18. Pancitopenia e medula óssea: sinais de alerta para leucemia ou aplasia"
+    },
+    {
+      "title": "18.1 Por que anemia pode ser só a primeira pista"
+    },
+    {
+      "title": "18.2 Pistas de doença medular"
+    },
+    {
+      "title": "18.3 Como investigar sem causar atraso ou dano"
+    },
+    {
+      "title": "18.4 Eritroblastopenia transitória da infância"
+    },
+    {
+      "title": "18.5 Anemia de Diamond–Blackfan e falências congênitas"
+    },
+    {
+      "title": "19. Anemia microangiopática: quando aparecem esquizócitos"
+    },
+    {
+      "title": "19.1 Hemólise + plaquetopenia + lesão de órgão"
+    },
+    {
+      "title": "19.2 Evitar diagnóstico baseado em um único exame"
+    },
+    {
+      "title": "19.3 Manejo da forma associada a toxina Shiga"
+    },
+    {
+      "title": "20. Intoxicação por chumbo e causas raras de microcitose"
+    },
+    {
+      "title": "21. Anemia por hemorragia: o tempo muda o hemograma"
+    },
+    {
+      "title": "21.1 Perda aguda não exige microcitose imediata"
+    },
+    {
+      "title": "21.2 Perda crônica pode manifestar-se como ferropenia"
+    },
+    {
+      "title": "22. Transfusão de concentrado de hemácias na infância: princípios e riscos"
+    },
+    {
+      "title": "22.1 Indicar por condição clínica, não apenas por uma régua"
+    },
+    {
+      "title": "22.2 Segurança pré-transfusional"
+    },
+    {
+      "title": "22.3 Reconhecendo reação transfusional"
+    },
+    {
+      "title": "23. Quando encaminhar, internar e agir imediatamente"
+    },
+    {
+      "title": "23.1 Estabilidade hemodinâmica e red flags"
+    },
+    {
+      "title": "23.2 Quem pode ser acompanhado na APS"
+    },
+    {
+      "title": "24. Faixas etárias e situações específicas"
+    },
+    {
+      "title": "25. Quadro de integração — padrão laboratorial e próximos passos"
+    },
+    {
+      "title": "26. Prognóstico, saúde pública e acompanhamento longitudinal"
+    },
+    {
+      "title": "Plano de seguimento orientado por doença"
+    },
+    {
+      "title": "27. Pérolas de prova com interpretação, não memorização cega"
+    },
+    {
+      "title": "28. Oito casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — O lactente que só tomava leite"
+    },
+    {
+      "title": "Caso 2 — Microcitose importante e ferritina preservada"
+    },
+    {
+      "title": "Caso 3 — Febre em criança com doença falciforme"
+    },
+    {
+      "title": "Caso 4 — Falciforme com Hb caindo e reticulócitos quase ausentes"
+    },
+    {
+      "title": "Caso 5 — Icterícia neonatal, esferócitos e Coombs negativo"
+    },
+    {
+      "title": "Caso 6 — Diarreia sanguinolenta, esquizócitos e oligúria"
+    },
+    {
+      "title": "Caso 7 — Lactente com regressão neurológica e anemia macrocítica"
+    },
+    {
+      "title": "Caso 8 — “Anemia ferropriva” que era doença medular"
+    },
+    {
+      "title": "29. Doze questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Hemoglobina e idade"
+    },
+    {
+      "title": "Questão 2 — Diagnóstico de ferropenia"
+    },
+    {
+      "title": "Questão 3 — Profilaxia versus tratamento"
+    },
+    {
+      "title": "Questão 4 — Resposta ao ferro oral"
+    },
+    {
+      "title": "Questão 5 — Talassemia ou ferropriva?"
+    },
+    {
+      "title": "Questão 6 — Febre na doença falciforme"
+    },
+    {
+      "title": "Questão 7 — Crise aplástica versus sequestro"
+    },
+    {
+      "title": "Questão 8 — Esferócitos"
+    },
+    {
+      "title": "Questão 9 — G6PD durante hemólise"
+    },
+    {
+      "title": "Questão 10 — Criança com diarreia sanguinolenta e anemia"
+    },
+    {
+      "title": "Questão 11 — Macrocitose com regressão neurológica"
+    },
+    {
+      "title": "Questão 12 — Anemia + outras citopenias"
+    },
+    {
+      "title": "30. Referências priorizadas e conciliação entre documentos"
+    },
+    {
+      "title": "31. Controle de produção — pendências para aprovação"
+    }
+  ],
+  "reference_entries": [
+    "1. **Sociedade Brasileira de Pediatria (SBP).** *Recomendações para o tratamento e prevenção da deficiência de ferro e anemia ferropriva em lactentes – Atualização 2026*, Diretriz nº 32, 17 de março de 2026. https://www.sbp.com.br/wp-content/uploads/2026/03/25239c-Diretrizes-Recom-p-tratam-e-prevencao-da-deficiencia-de-Fe-e-anemia-ferropriva.pdf . Prioritária para doses, critérios preventivos, seguimento e grupos de risco em lactentes.",
+    "2. **OMS.** *Guideline on haemoglobin cutoffs to define anaemia in individuals and populations* (2024). https://www.who.int/publications/i/item/9789240088542 . Prioritária para limites etários de Hb, não para limiares transfusionais.",
+    "3. **Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas da Doença Falciforme, Portaria de novembro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view . Aplicação brasileira da prevenção, hidroxiureia e cuidado especializado.",
+    "4. **Ministério da Saúde.** PCDT da Anemia Hemolítica Autoimune — Portaria Conjunta SAES/SECTICS/MS nº 7, de julho de 2025. https://bvs.saude.gov.br/bvs/saudelegis/Saes/2025/poc0007_14_07_2025.html .",
+    "5. **Ministério da Saúde.** Programa Nacional de Suplementação de Ferro; Nota Técnica nº 15/2022 (esquema de ciclos em crianças de 6–24 meses). https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-15-2022.pdf . Diferenciar do regime terapêutico de anemia instalada.",
+    "6. **Ministério da Saúde.** PCDT Anemia por Deficiência de Ferro, Portaria SAS/MS nº 1.247/2014. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/anemia-deficiencia-de-ferro/view . Conferir vigência de ato e uso em casos específicos, sem substituir a SBP 2026 para lactentes.",
+    "7. **Ministério da Saúde.** Talassemias: características e linhas de cuidado. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/talassemia .",
+    "8. **ASH.** American Society of Hematology 2020 Guidelines: prevention, diagnosis and treatment of cerebrovascular disease in sickle cell disease. https://pmc.ncbi.nlm.nih.gov/articles/PMC7189278/ .",
+    "9. **ABHH/AMB.** Diretrizes brasileiras para prevenção primária do AVC em crianças e adolescentes com doença falciforme. https://pmc.ncbi.nlm.nih.gov/articles/PMC8885378/ .",
+    "10. **AAFP.** *Anemia in Infants and Children: Evaluation and Treatment* (2024). https://www.aafp.org/afp/2024/1200/anemia-infants-children .",
+    "11. **Ministério da Saúde.** NutriSUS — perguntas frequentes e sobreposição com suplementos. https://www.gov.br/saude/pt-br/composicao/saps/nutrisus/faq .",
+    "**Conflitos resolvidos no texto:** os cortes OMS 2024 não são os valores históricos generalizados de antes de 2024; recomendações preventivas SBP 2026 não são o regime antigo de 1 mg/kg/dia contínuo aplicado indistintamente a todos os lactentes; os PCDTs brasileiros de doença falciforme e AHAI receberam atualizações específicas que substituem normas anteriores. O conteúdo do Drive é comparativo de currículo e não comprovação de guideline nem autorização de copiar trechos/imagens.",
+    "- [x] Inventário inicial: sem apostila publicada e sem rascunho nominal de Anemias na Infância no repositório no momento da busca.",
+    "- [x] Leitura comparativa de materiais do Drive sobre anemia ferropriva/talassemia, introdução às anemias, doença falciforme e quadro geral; autoria institucional Estratégia MED não confirmada; alguns materiais trazem informações antigas que precisam ser corrigidas pelas fontes atuais.",
+    "- [x] Comparação do padrão LURIA pela apostila publicada de amenorreia (estrutura e CSS editorial).",
+    "- [x] Corpo clínico com definição, mecanismos, exames, prevenção, tratamento, causas carenciais, hemoglobinopatias, hemólises, falência medular, transfusão, urgências e prognóstico.",
+    "- [x] Oito casos clínicos originais comentados com interpretação, conduta e significado.",
+    "- [x] Doze questões autorais comentadas, cada uma com quatro alternativas e revisão.",
+    "- [ ] Revisão científica especializada de todas as indicações pediátricas (dose, via, segurança, PCDT local), sobretudo doença falciforme, AHAI, transfusão, prematuridade e anemia grave.",
+    "- [ ] Teste formal de autossuficiência com rastreio de conceito por questão e checagem das alternativas no texto do próprio livro.",
+    "- [ ] Auditoria automática real de extensão útil, originalidade, repetições semânticas e precisão; não usar metragem bruta como prova de qualidade.",
+    "- [ ] Benchmark com apostila extensa de mesmo recorte e autoria de cursinho realmente identificada no Drive, se disponibilizada; os documentos abertos são comparativos úteis mas não certificam a equivalência institucional.",
+    "- [ ] Pesquisa de imagens clínicas reais (10 candidatas quando úteis: esfregaços de ferropenia, talassemia, hemólise esferocítica, drepanócitos, esquizócitos, neutrófilos hipersegmentados, diferentes reticulócitos e ilustração autorizada do metabolismo do ferro). Licença/autoria individualizadas, fila Admin, sem inserção direta em HTML.",
+    "- [ ] Gerar insumo JSON, fazer dry-run do gerador LURIA, criar preview e inspecionar desktop/PWA; não substituir nada publicado.",
+    "- [ ] **Status permanece rascunho editorial — não publicar ou fazer merge/deploy antes da validação.**"
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240088542",
+    "https://www.sbp.com.br/wp-content/uploads/2026/03/25239c-Diretrizes-Recom-p-tratam-e-prevencao-da-deficiencia-de-Fe-e-anemia-ferropriva.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view",
+    "https://bvs.saude.gov.br/bvs/saudelegis/Saes/2025/poc0007_14_07_2025.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-15-2022.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/anemia-deficiencia-de-ferro/view",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/talassemia",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7189278/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8885378/",
+    "https://www.aafp.org/afp/2024/1200/anemia-infants-children",
+    "https://www.gov.br/saude/pt-br/composicao/saps/nutrisus/faq"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Anemia é um sinal laboratorial de redução da concentração de hemoglobina para a idade e contexto, não um diagnóstico etiológico.** Dois pacientes com 8,5 g/dL de Hb podem precisar de abordagens muito distintas: um lactente com ferropenia crônica compensada pode ser tratado e investigado ambulatorialmente, enquanto outro com queda abrupta, choque e hemoglobinúria pode necessitar reanimação e investigação de hemólise imediatamente. O valor de Hb isolado não descreve a velocidade de instalação, a oferta efetiva de oxigênio ou a capacidade de compensação."
+    },
+    {
+      "text": "O feto utiliza predominantemente HbF, cuja afinidade maior pelo oxigênio atende à fisiologia placentária. Após nascer, a oxigenação tecidual aumenta, a produção de eritropoetina diminui e as hemácias fetais, de vida média menor, vão sendo substituídas. Ocorre queda esperada da hemoglobina nas primeiras semanas, com nadir fisiológico no lactente a termo em torno de 8 a 12 semanas, muitas vezes por volta de 9–11 g/dL conforme idade, história e laboratório. **Não aplicar ponto de corte de 11 g/dL aos dois meses como se a criança fosse de 2 anos.** Prematuros têm queda mais precoce/profunda em decorrência de menores reservas, menor resposta de EP"
+    },
+    {
+      "text": "A anemia fisiológica do lactente deve ser diagnóstico de contexto: criança com crescimento, exame clínico e série hematológica típicos. Icterícia intensa precoce, palidez já nas primeiras horas, reticulocitose alta, perda sanguínea ou incompatibilidade sanguínea materno-fetal não devem ser explicadas como “anemia fisiológica”. Em recém-nascido com Hb muito baixa e instabilidade, procurar hemorragia feto-materna, placenta/cordão, hemólise imune e condições congênitas, sem aguardar o período clássico do nadir."
+    },
+    {
+      "text": "| Faixa etária | Hb que define anemia | Anemia grave OMS 2024 | | --- | --- | --- | | 6–23 meses | <10,5 g/dL | <7,0 g/dL | | 24–59 meses | <11,0 g/dL | <7,0 g/dL | | 5–11 anos | <11,5 g/dL | <8,0 g/dL | | 12–14 anos, ambos os sexos | <12,0 g/dL | <8,0 g/dL |"
+    },
+    {
+      "text": "Examinar perfusão capilar, frequência cardíaca/respiratória, saturação conforme clínica, pressão arterial adequada à idade, crescimento, estado nutricional, palidez, icterícia, glossite, queilite, mucosa oral, linfonodos, fígado, baço, equimoses/petéquias, dor óssea, edema e sinais neurológicos. Hepatoesplenomegalia e desproporção de alterações entre séries hematológicas ampliam diferenciais. Uma criança com petéquias + neutropenia + anemia não deve receber diagnóstico automático de deficiência nutricional sem investigar patologia de medula."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

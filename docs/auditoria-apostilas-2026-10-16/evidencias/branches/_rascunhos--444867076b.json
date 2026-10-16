@@ -1,0 +1,164 @@
+{
+  "sha": "444867076b4678edf8e0512dd71a42c350550a0c",
+  "path": "apostilas/_rascunhos/lote-13-255-longitudinalidade-coordenacao-matriciamento.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--444867076b",
+  "title": "LURIA — Lote 13 · Apostila 255",
+  "format": ".md",
+  "chars_estimated": 25874,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 255"
+    },
+    {
+      "title": "Longitudinalidade, coordenação do cuidado e apoio matricial na APS"
+    },
+    {
+      "title": "Etapa zero — comparação obrigatória"
+    },
+    {
+      "title": "1. O vínculo longitudinal é um instrumento terapêutico"
+    },
+    {
+      "title": "2. Acesso e acolhimento: como vínculo começa"
+    },
+    {
+      "title": "3. Pessoa, família, território e contexto clínico"
+    },
+    {
+      "title": "4. Coordenação do cuidado: o que acontece quando o paciente sai da UBS?"
+    },
+    {
+      "title": "Três dimensões práticas"
+    },
+    {
+      "title": "Encaminhamento de boa qualidade"
+    },
+    {
+      "title": "5. Gestão clínica de pessoas com múltiplas condições"
+    },
+    {
+      "title": "Roteiro de revisão de medicamentos"
+    },
+    {
+      "title": "6. Vigilância de trajetórias: rastreamento, prevenção e seguimento"
+    },
+    {
+      "title": "Plano de cuidado preventivo por risco"
+    },
+    {
+      "title": "7. Apoio matricial: clínica compartilhada, não encaminhamento em massa"
+    },
+    {
+      "title": "eMulti: organização atual"
+    },
+    {
+      "title": "Exemplos de ações matriciais"
+    },
+    {
+      "title": "8. Projeto Terapêutico Singular e clínica ampliada"
+    },
+    {
+      "title": "9. Transições de cuidado: alta hospitalar, UPA, especialistas e atenção domiciliar"
+    },
+    {
+      "title": "10. Responsabilização pelo território e trabalho em equipe"
+    },
+    {
+      "title": "11. Coordenação e segurança em saúde mental"
+    },
+    {
+      "title": "12. Práticas que prejudicam cuidado longitudinal"
+    },
+    {
+      "title": "13. Algoritmos de ação"
+    },
+    {
+      "title": "A. Atendimento na APS com necessidade complexa"
+    },
+    {
+      "title": "B. Encaminhamento seguro"
+    },
+    {
+      "title": "C. Pós-alta com polifarmácia"
+    },
+    {
+      "title": "14. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — Idosa com medicação duplicada após alta"
+    },
+    {
+      "title": "Caso 2 — Diabetes e depressão na mesma pessoa"
+    },
+    {
+      "title": "Caso 3 — Encaminhamento com pergunta clínica"
+    },
+    {
+      "title": "Caso 4 — Gestante acompanhada em alto risco"
+    },
+    {
+      "title": "Caso 5 — Criança com asma e barreira escolar"
+    },
+    {
+      "title": "15. Questões autorais comentadas"
+    },
+    {
+      "title": "16. Imagens candidatas para o Admin"
+    },
+    {
+      "title": "17. Referências"
+    },
+    {
+      "title": "18. Auditoria editorial e lacunas"
+    }
+  ],
+  "reference_entries": [
+    "- Brasil. Ministério da Saúde. eMulti — organização e integração com equipes APS: https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/emulti",
+    "- Brasil. Portaria GM/MS nº 635/2023 — equipes multiprofissionais: https://bvs.saude.gov.br/bvs/saudelegis/gm/2023/prt0635_22_05_2023.html",
+    "- Ministério da Saúde. Nota Técnica 10/2023 — reorganização eMulti: https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/notas-tecnicas",
+    "- Ministério da Saúde. Registros e ações eMulti no PEC e-SUS APS: https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/faq/orientacoes-sobre-o-registro-das-acoes-das-emulti-no-pec-e-sus-aps/e-possivel-registrar-no-pec",
+    "- Ministério da Saúde. Vínculo e acompanhamento territorial no cofinanciamento APS (2025): https://www.gov.br/saude/pt-br/composicao/saps/esf/faq-novo-modelo-de-cofinanciamento-federal-da-aps/componente-vinculo-e-acompanhamento-territorial/o-que-e-o-componente-de-vinculo-e-acompanhamento-territorial-do-confinanciamento",
+    "- Ministério da Saúde. Projeto Terapêutico Singular, princípio de construção compartilhada: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo/pts/pts/",
+    "**Feito:** corpo original com atributos APS, território, coordenação, matriciamento/eMulti, PTS, multimorbidade, rastreamento e transições, cinco casos, sete questões comentadas, fluxos e pauta de 10 visuais.",
+    "**Pendente:** benchmark MFC equivalente no Drive; aprofundamento da PNAB e regulamentações pós-2023; critérios de indicadores e protocolos das linhas de cuidado, diversidade de arranjos rurais/indígenas/consultório rua, tecnologias digitais e legislação de sigilo; questões multidisciplinares mais exigentes; extensão ≥60 mil caracteres realmente didáticos, revisão por médico de família, fontes em cada recomendação e PWA/imagens.",
+    "**Estado:** RASCUNHO_PARCIAL_NAO_PUBLICAR. Não criar HTML nem alterar página pública."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/emulti",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2023/prt0635_22_05_2023.html",
+    "https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/notas-tecnicas",
+    "https://www.gov.br/saude/pt-br/composicao/saps/acoes-interprofissionais/emulti/faq/orientacoes-sobre-o-registro-das-acoes-das-emulti-no-pec-e-sus-aps/e-possivel-registrar-no-pec",
+    "https://www.gov.br/saude/pt-br/composicao/saps/esf/faq-novo-modelo-de-cofinanciamento-federal-da-aps/componente-vinculo-e-acompanhamento-territorial/o-que-e-o-componente-de-vinculo-e-acompanhamento-territorial-do-confinanciamento",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo/pts/pts/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Um simples \"encaminho ao cardiologista\" sem motivo, exames recentes, pergunta clínica e prioridade dificulta decisão especializada. Da mesma maneira, alta hospitalar sem explicitar diagnóstico, pendências, mudanças terapêuticas e sinais de retorno favorece iatrogenia."
+    },
+    {
+      "text": "Rastreamento não é exame anual universal para qualquer condição. Benefícios e danos dependem de população-alvo, sensibilidade/especificidade, possibilidade de tratamento e sobrevida; falso positivo pode gerar biópsia, ansiedade e cirurgia desnecessária. A equipe longitudinal permite explicar essa balança e acompanhar resultados alterados, sem perder pessoa na transição \"exame → diagnóstico\"."
+    },
+    {
+      "text": "O PTS de saúde mental inclui vínculo, terapia, medicação quando indicada, trabalho, família, violência, participação e redução de estigma. Nem sofrimento após evento adverso requer medicação; nem diagnóstico de transtorno mental autoriza que clínica médica ignore dor ou sintomas orgânicos."
+    },
+    {
+      "text": "**Q5.** Um teste de rastreamento foi solicitado e deu alterado, mas ninguém comunicou resultado. Qual falha? A) Faltou exclusivamente equipamento. B) O cuidado foi completado ao coletar. C) Faltou coordenação e fechamento do ciclo diagnóstico. D) Todo rastreamento é contraindicado. E) É problema sem consequências clínicas. **Gabarito C.** A é insuficiente, B/E ignoram risco, D é generalização; C identifica linha de cuidado interrompida. **Mini-revisão:** teste sem seguimento é processo inacabado."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

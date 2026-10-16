@@ -1,0 +1,370 @@
+{
+  "sha": "72401ea954fe6259bdb9e1b55a310c57bec7eec1",
+  "path": "apostilas/_rascunhos/lote-13-254-saude-mental-adolescente.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--72401ea954",
+  "title": "LURIA · Apostila 254 · Lote 13",
+  "format": ".md",
+  "chars_estimated": 65715,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 254 · Lote 13"
+    },
+    {
+      "title": "Saúde mental do adolescente: avaliação, diagnóstico diferencial e manejo inicial"
+    },
+    {
+      "title": "0. Registro comparativo obrigatório (etapa zero)"
+    },
+    {
+      "title": "1. O que o médico precisa conseguir decidir"
+    },
+    {
+      "title": "2. Desenvolvimento típico não é ausência de vulnerabilidade"
+    },
+    {
+      "title": "Modelo ecológico de vulnerabilidade e proteção"
+    },
+    {
+      "title": "3. Como acolher um adolescente em consulta"
+    },
+    {
+      "title": "3.1 Relação terapêutica"
+    },
+    {
+      "title": "3.2 Esferas da entrevista clínica"
+    },
+    {
+      "title": "3.3 Exame do estado mental"
+    },
+    {
+      "title": "4. Diagnóstico por duração, prejuízo e contexto"
+    },
+    {
+      "title": "5. Depressão na adolescência"
+    },
+    {
+      "title": "Conceito e apresentação"
+    },
+    {
+      "title": "Diferencial antes de tratamento"
+    },
+    {
+      "title": "Manejo por gravidade"
+    },
+    {
+      "title": "Seguimento clínico"
+    },
+    {
+      "title": "6. Ansiedade e pânico: quando preocupação se torna doença?"
+    },
+    {
+      "title": "A clínica deve excluir urgência real"
+    },
+    {
+      "title": "Tratamento"
+    },
+    {
+      "title": "7. TDAH, aprendizagem e problemas de conduta"
+    },
+    {
+      "title": "7.1 TDAH"
+    },
+    {
+      "title": "7.2 Avaliação inicial no adolescente"
+    },
+    {
+      "title": "7.3 Tratamento"
+    },
+    {
+      "title": "7.4 Comportamento opositor e de risco"
+    },
+    {
+      "title": "8. Autismo, neurodivergência e problemas de comunicação"
+    },
+    {
+      "title": "9. Substâncias e comportamentos de risco"
+    },
+    {
+      "title": "Telas, jogos e sono"
+    },
+    {
+      "title": "10. Autolesão, ideação suicida e atendimento seguro"
+    },
+    {
+      "title": "Situações que exigem emergência"
+    },
+    {
+      "title": "11. Psicose, bipolaridade, transtorno do sono e emergências orgânicas"
+    },
+    {
+      "title": "Mania/hipomania"
+    },
+    {
+      "title": "Psicose"
+    },
+    {
+      "title": "Delirium"
+    },
+    {
+      "title": "Sono"
+    },
+    {
+      "title": "12. Violência, bullying, racismo, sexualidade e proteção"
+    },
+    {
+      "title": "13. Ferramentas de rastreamento: para quem, com qual limite?"
+    },
+    {
+      "title": "14. Papel da farmacoterapia: visão prática sem prescrição automática"
+    },
+    {
+      "title": "15. Fluxogramas de conduta"
+    },
+    {
+      "title": "Fluxo 1 — Adolescente com queixa vaga de \"mudou comportamento\""
+    },
+    {
+      "title": "Fluxo 2 — Desempenho escolar caiu"
+    },
+    {
+      "title": "Fluxo 3 — Queixa depressiva"
+    },
+    {
+      "title": "Fluxo 4 — Autolesão"
+    },
+    {
+      "title": "16. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — \"Preguiça\" que era depressão"
+    },
+    {
+      "title": "Caso 2 — Falta de ar recorrente com diagnóstico diferencial"
+    },
+    {
+      "title": "Caso 3 — Desatenção só depois do bullying"
+    },
+    {
+      "title": "Caso 4 — Autolesão sem conclusão automática sobre intenção"
+    },
+    {
+      "title": "Caso 5 — Alteração comportamental aguda e febre"
+    },
+    {
+      "title": "Caso 6 — Euforia e redução da necessidade de sono"
+    },
+    {
+      "title": "17. Questões autorais com comentários por alternativa"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "18. Pérolas de ENAMED e de vida real"
+    },
+    {
+      "title": "19. Visuais pedagógicos candidatos (não publicados)"
+    },
+    {
+      "title": "20. Plano do cuidado longitudinal e seguimento"
+    },
+    {
+      "title": "21. Referências essenciais e auditáveis"
+    },
+    {
+      "title": "22. Recusa escolar: compreender função antes de encaminhar"
+    },
+    {
+      "title": "Como investigar"
+    },
+    {
+      "title": "Diferencial clínico aplicado"
+    },
+    {
+      "title": "Manejo"
+    },
+    {
+      "title": "23. Avaliação de comorbidades e efeito da sobreposição de sintomas"
+    },
+    {
+      "title": "Matriz de sintomas transdiagnósticos"
+    },
+    {
+      "title": "24. Transtorno obsessivo-compulsivo, tiques e sofrimento sensorial"
+    },
+    {
+      "title": "TOC em adolescentes"
+    },
+    {
+      "title": "Tiques"
+    },
+    {
+      "title": "25. Exame psicofarmacológico de segurança: antes, durante e depois"
+    },
+    {
+      "title": "Antes de prescrever"
+    },
+    {
+      "title": "Monitorização por categoria, sem protocolizar doses genéricas"
+    },
+    {
+      "title": "Depois de mudar medicação"
+    },
+    {
+      "title": "Diagnóstico não deve ser ajustado ao medicamento"
+    },
+    {
+      "title": "26. Entrevista e comunicação nos encontros mais difíceis"
+    },
+    {
+      "title": "Adolescente que não fala"
+    },
+    {
+      "title": "Cuidador que exige acesso a toda conversa"
+    },
+    {
+      "title": "Adolescente que pede diagnóstico após ver vídeo"
+    },
+    {
+      "title": "Sintoma que desaparece diante do médico"
+    },
+    {
+      "title": "27. Problemas clínicos com grande consequência para a aprendizagem"
+    },
+    {
+      "title": "A. Adolescente com doença crônica e sofrimento mental"
+    },
+    {
+      "title": "B. Gravidez na adolescência"
+    },
+    {
+      "title": "C. Adolescente com deficiência"
+    },
+    {
+      "title": "D. Experiência de violência sexual"
+    },
+    {
+      "title": "E. Crise sem diagnóstico psiquiátrico definido"
+    },
+    {
+      "title": "28. Exercícios de raciocínio adicional"
+    },
+    {
+      "title": "Caso 7 — Fobia social ou problema de aprendizagem?"
+    },
+    {
+      "title": "Caso 8 — Insônia, perda ponderal e irritabilidade"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "29. Teste de autossuficiência preliminar — pergunta → capítulo"
+    },
+    {
+      "title": "30. Parecer editorial de saída — não homologado"
+    }
+  ],
+  "reference_entries": [
+    "1. WHO. **Mental health of adolescents**. Fact sheet, 1 September 2025. https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health",
+    "2. Ministério da Saúde. **Saúde do Adolescente e Jovens**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente",
+    "3. NICE. **Depression in children and young people: identification and management**, NG134 (2019; apresentação atualizada 2024). https://www.nice.org.uk/guidance/ng134/chapter/recommendations",
+    "4. NICE. **Self-harm: assessment, management and preventing recurrence**, NG225 (2022; revisão de apresentação 2024). https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "5. NICE. **Attention deficit hyperactivity disorder: diagnosis and management**, NG87. https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+    "6. WHO. **Comprehensive Mental Health Action Plan 2013–2030**, prevenção e serviços. https://www.who.int/publications/i/item/9789240031029",
+    "7. Brasil. **Estatuto da Criança e do Adolescente**, Lei nº 8.069/1990, com alterações posteriores. https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+    "8. Brasil. Ministério da Saúde. **Rede de Atenção Psicossocial (RAPS)**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "**Recusa escolar é uma apresentação, não um diagnóstico etiológico.** Um adolescente pode faltar porque teme exposição social, é vítima de bullying, precisa cuidar de familiar, vive luto, tem depressão, usa substâncias, sofre violência no trajeto, apresenta dislexia não reconhecida, dor crônica, alteração de sono ou transtorno do neurodesenvolvimento. A estratégia de \"mandar voltar imediatamente\" sem formular a causa pode agravar risco.",
+    "**Erro de prova:** confundir recusa escolar com transtorno opositor em toda circunstância. A mesma falta pode representar ansiedade importante ou perigo real.",
+    "**Estratégia clínica:** determine quais sintomas surgiram primeiro; quando começaram a atrapalhar; o que persistiu entre crises; qual necessidade é urgente; qual intervenção tem melhor relação benefício-risco e capacidade de implantação no SUS. Listas de diagnósticos sem prioridade produzem polifarmácia e seguimento fragmentado.",
+    "**Diferenciais:** delírio (convicção com crítica ausente ou reduzida), ansiedade generalizada (preocupações ligadas a temas reais com ruminação), TEA (repetição relacionada a interesses/sensorialidade sem necessariamente obsessão intrusiva), transtornos de tique (movimento súbito não intencional repetido, eventualmente precedido de sensação premonitória) e transtorno alimentar (ritual com medo central de engordar).",
+    "**Tratamento:** TCC com exposição e prevenção de resposta, adaptada à idade e com participação familiar apropriada, é intervenção central. Em quadros moderados/graves, considerar ISRS com equipe capacitada e seguimento de efeitos/segurança. Não orientar família a reforçar todas as compulsões para eliminar ansiedade a curto prazo: acomodação excessiva pode perpetuar circuito de sintomas. Também não impor exposição abrupta e humilhante fora de terapia.",
+    "**Verificar diagnóstico e alvo clínico.** Perguntar o que se deseja melhorar: reduzir episódios depressivos, diminuir pânico, organizar tarefas, tratar mania ou psicose. Um fármaco sem alvo mensurável é difícil de avaliar e fácil de perpetuar.",
+    "**Rever bipolaridade e psicose** antes de antidepressivos; risco cardiovascular e histórico familiar em estimulantes quando pertinente; peso, metabolismo, sintomas motores e prolactina quando relevante em antipsicóticos; gravidez possível, uso de substâncias, outros fármacos e adesão.",
+    "**Explicar riscos e tempo de resposta.** ISRS usualmente não produzem benefício integral no primeiro dia; a pessoa e cuidadores adequados precisam reconhecer sinais de piora, efeitos adversos e quando buscar assistência. Estimulantes podem alterar apetite/sono e exigir acompanhamento de crescimento e pressão; antipsicóticos podem alterar peso, glicemia/lipídios e provocar efeitos motores.",
+    "**Apresentação:** estudante de 14 anos evita leitura em voz alta, relata palpitações e choro antes de aulas de português, mas participa normalmente em esportes e conversar com amigos. Desde a alfabetização tem dificuldade relevante de decodificação de palavras e erros persistentes, não avaliados.",
+    "**Hipóteses:** transtorno específico de aprendizagem com sofrimento secundário, ansiedade de desempenho/social e possível coexistência.  ",
+    "**Raciocínio:** evitar apenas atividade com dificuldade específica pode indicar vergonha por déficit acadêmico; ansiedade não invalida problema de leitura.  ",
+    "**Exames/avaliação:** entrevista sobre cronologia, avaliação educacional/neuropsicológica segundo disponibilidade, visão/audição e avaliação de ansiedade.  ",
+    "**Conduta:** suporte pedagógico e adaptação enquanto avalia, psicoterapia se ansiedade incapacitante, envolver adolescente e escola com consentimento.  ",
+    "**Por que importa:** tratar apenas ansiedade sem corrigir barreira de aprendizagem mantém sofrimento.",
+    "**Apresentação:** adolescente de 15 anos está há dois meses dormindo pouco, com perda de peso, palpitações, tremor fino e ansiedade, sem anedonia típica.  ",
+    "**Hipóteses:** tireotoxicose e outras causas clínicas; ansiedade pode coexistir.  ",
+    "**Raciocínio:** taquicardia/tremor/perda de peso associados não permitem concluir apenas transtorno de ansiedade.  ",
+    "**Exames:** sinais vitais, exame físico incluindo tireoide e investigação dirigida (TSH/T4L quando pertinente), medicações/substâncias.  ",
+    "**Conduta:** tratar/encaminhar doença clínica conforme gravidade e reavaliar sintomas mentais.  ",
+    "**Por que importa:** \"psiquiatrização\" de doença orgânica produz atraso diagnóstico.",
+    "**Gabarito B.** A ignora contexto, C e D podem agravar dano, E não considera dificuldade específica; B examina causa e consequência. **Mini-revisão:** função do comportamento orienta diferencial.",
+    "**Gabarito C.** A/B/D/E fazem parte de avaliação adequada; C nomeia a falha. **Mini-revisão:** semiologia e contexto somático importam mesmo em psiquiatria."
+  ],
+  "external_urls": [
+    "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente",
+    "https://www.nice.org.uk/guidance/ng134/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+    "https://www.who.int/publications/i/item/9789240031029",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes externas verificadas para este rascunho:** OMS, ficha técnica *Mental health of adolescents* (01/09/2025); Ministério da Saúde, *Saúde do Adolescente e Jovens*; NICE NG134, depressão em crianças e jovens (recomendações e atualização de apresentação de maio/2024); NICE NG225, autolesão; NICE NG87, TDAH. O uso de diretrizes estrangeiras exige compatibilização com rede SUS e regulamentação brasileira na revisão final."
+    },
+    {
+      "text": "O atendimento tem quatro perguntas simultâneas: **(1) existe emergência clínica ou de segurança? (2) o comportamento é esperado para contexto/desenvolvimento ou sugere síndrome persistente com sofrimento e prejuízo? (3) qual diagnóstico diferencial e comorbidade modifica conduta? (4) qual rede consegue manter cuidado após esta consulta?**"
+    },
+    {
+      "text": "A OMS estima que cerca de **um em sete adolescentes de 10 a 19 anos** apresenta transtorno mental, com ansiedade, depressão e transtornos comportamentais entre causas importantes de sofrimento e incapacidade. A taxa global não substitui estimativa brasileira por região ou faixa etária. A adolescência envolve mudanças biológicas, sociais, emocionais e cognitivas; variações de humor, busca de autonomia e conflito ocasional não são automaticamente doença. Por outro lado, problemas graves podem ser subestimados como \"fase\" quando provocam incapacidade, perda de função ou risco."
+    },
+    {
+      "text": "Não reduzir diagnóstico a notas escolares: estudante que mantém boas notas pode estar em sofrimento grave, com rituais exaustivos, crises de pânico ou transtorno alimentar. Da mesma forma, baixo rendimento pode resultar de dificuldade visual/auditiva, transtorno específico de aprendizagem, sono insuficiente, bullying, trabalho infantil, insegurança alimentar ou doença clínica."
+    },
+    {
+      "text": "**Avaliação essencial de segurança:** perguntar diretamente sobre pensamentos de morte, autolesão, experiência de violência e segurança atual. NICE NG134 recomenda oportunidades de conversa privada e exploração de bullying, abuso e uso de álcool/drogas, com avaliação familiar/escolar."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

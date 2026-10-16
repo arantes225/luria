@@ -1,0 +1,194 @@
+{
+  "sha": "a69ded9a1d9218f5c82abb0510f5fa9204bcdfa2",
+  "path": "apostilas/_rascunhos/lote-06-120-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--a69ded9a1d",
+  "title": "Medicina Baseada em Evidências",
+  "format": ".json",
+  "chars_estimated": 91238,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes-de-leitura",
+      "title": "Como estudar este caderno"
+    },
+    {
+      "id": "cap-01-o-que-realmente-significa-praticar-medicina-basea",
+      "title": "1. O que realmente significa praticar medicina baseada em evidências"
+    },
+    {
+      "id": "cap-02-transformando-problema-assistencial-em-pergunta-r",
+      "title": "2. Transformando problema assistencial em pergunta respondível"
+    },
+    {
+      "id": "cap-03-desenhos-de-estudos-escolher-pelo-tipo-de-pergunt",
+      "title": "3. Desenhos de estudos: escolher pelo tipo de pergunta"
+    },
+    {
+      "id": "cap-04-ensaio-clinico-randomizado-como-proteger-comparab",
+      "title": "4. Ensaio clínico randomizado: como proteger comparabilidade"
+    },
+    {
+      "id": "cap-05-estudos-de-coorte-risco-temporalidade-e-confusao",
+      "title": "5. Estudos de coorte: risco, temporalidade e confusão"
+    },
+    {
+      "id": "cap-06-caso-controle-quando-comeca-pelo-desfecho",
+      "title": "6. Caso-controle: quando começa pelo desfecho"
+    },
+    {
+      "id": "cap-07-estudo-transversal-e-ecologico-prevalencia-e-nive",
+      "title": "7. Estudo transversal e ecológico: prevalência e nível de análise"
+    },
+    {
+      "id": "cap-08-medidas-de-frequencia-incidencia-prevalencia-e-pe",
+      "title": "8. Medidas de frequência: incidência, prevalência e pessoa-tempo"
+    },
+    {
+      "id": "cap-09-risco-relativo-odds-ratio-e-razao-de-riscos-insta",
+      "title": "9. Risco relativo, odds ratio e razão de riscos instantâneos"
+    },
+    {
+      "id": "cap-10-reducao-absoluta-reducao-relativa-nnt-e-nnh",
+      "title": "10. Redução absoluta, redução relativa, NNT e NNH"
+    },
+    {
+      "id": "cap-11-confusao-vies-e-modificacao-de-efeito",
+      "title": "11. Confusão, viés e modificação de efeito"
+    },
+    {
+      "id": "cap-12-causalidade-associacao-nao-e-efeito-causal",
+      "title": "12. Causalidade: associação não é efeito causal"
+    },
+    {
+      "id": "cap-13-erros-aleatorios-amostragem-e-tamanho-de-amostra",
+      "title": "13. Erros aleatórios, amostragem e tamanho de amostra"
+    },
+    {
+      "id": "cap-14-intervalo-de-confianca-valor-de-p-e-relevancia-cl",
+      "title": "14. Intervalo de confiança, valor de p e relevância clínica"
+    },
+    {
+      "id": "cap-15-medidas-continuas-distribuicoes-e-escolha-do-test",
+      "title": "15. Medidas contínuas, distribuições e escolha do teste"
+    },
+    {
+      "id": "cap-16-testes-diagnosticos-construindo-a-tabela-sem-deco",
+      "title": "16. Testes diagnósticos: construindo a tabela sem decorar fórmulas"
+    },
+    {
+      "id": "cap-17-razoes-de-verossimilhanca-e-teorema-de-bayes",
+      "title": "17. Razões de verossimilhança e teorema de Bayes"
+    },
+    {
+      "id": "cap-18-curva-roc-auc-pontos-de-corte-e-calibragem",
+      "title": "18. Curva ROC, AUC, pontos de corte e calibragem"
+    },
+    {
+      "id": "cap-19-estudos-prognosticos-e-modelos-de-predicao",
+      "title": "19. Estudos prognósticos e modelos de predição"
+    },
+    {
+      "id": "cap-20-revisao-sistematica-metodo-antes-de-juntar-estudo",
+      "title": "20. Revisão sistemática: método antes de juntar estudos"
+    },
+    {
+      "id": "cap-21-metanalise-pesos-heterogeneidade-e-interpretacao",
+      "title": "21. Metanálise: pesos, heterogeneidade e interpretação"
+    },
+    {
+      "id": "cap-22-comparacoes-indiretas-e-metanalise-em-rede",
+      "title": "22. Comparações indiretas e metanálise em rede"
+    },
+    {
+      "id": "cap-23-certeza-da-evidencia-e-sistema-grade",
+      "title": "23. Certeza da evidência e sistema GRADE"
+    },
+    {
+      "id": "cap-24-diretrizes-clinicas-checklists-e-avaliacao-de-ris",
+      "title": "24. Diretrizes clínicas, checklists e avaliação de risco de viés"
+    },
+    {
+      "id": "cap-25-avaliacao-de-tecnologias-em-saude-e-decisao-no-su",
+      "title": "25. Avaliação de tecnologias em saúde e decisão no SUS"
+    },
+    {
+      "id": "cap-26-etica-consentimento-transparencia-e-integridade-c",
+      "title": "26. Ética, consentimento, transparência e integridade científica"
+    },
+    {
+      "id": "cap-27-aplicacao-de-mbe-em-rastreamento-e-prevencao",
+      "title": "27. Aplicação de MBE em rastreamento e prevenção"
+    },
+    {
+      "id": "cap-28-sintese-de-decisao-algoritmo-para-ler-qualquer-ar",
+      "title": "28. Síntese de decisão: algoritmo para ler qualquer artigo em dez perguntas"
+    },
+    {
+      "id": "cap-29-oito-casos-clinicos-e-metodologicos-comentados",
+      "title": "29. Oito casos clínicos e metodológicos comentados"
+    },
+    {
+      "id": "cap-30-doze-questoes-autorais-comentadas",
+      "title": "30. Doze questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"Conitec/Ministério da Saúde — Diretrizes Metodológicas para ATS, GRADE e revisões\",\"url\":\"https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas\"}",
+    "{\"label\":\"Cochrane Handbook for Systematic Reviews of Interventions v6.5 (2024)\",\"url\":\"https://training.cochrane.org/handbook/current\"}",
+    "{\"label\":\"CONSORT 2025 — atualização do relato de ensaios randomizados\",\"url\":\"https://www.bmj.com/content/389/bmj-2024-081123\"}",
+    "{\"label\":\"PRISMA 2020 — diretriz de relato de revisões sistemáticas\",\"url\":\"https://www.equator-network.org/reporting-guidelines/prisma/\"}",
+    "{\"label\":\"STROBE — diretriz de relato de observacionais\",\"url\":\"https://www.equator-network.org/reporting-guidelines/strobe/\"}",
+    "{\"label\":\"Cochrane — ferramenta RoB 2 para ensaios randomizados\",\"url\":\"https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials\"}",
+    "{\"label\":\"PROSPERO — registro de revisões sistemáticas\",\"url\":\"https://www.crd.york.ac.uk/PROSPERO/\"}",
+    "{\"label\":\"GRADE Working Group — certeza da evidência e recomendações\",\"url\":\"https://www.gradeworkinggroup.org/\"}",
+    "{\"label\":\"PubMed/MEDLINE — literatura biomédica\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/\"}",
+    "{\"label\":\"Biblioteca Virtual em Saúde e DeCS\",\"url\":\"https://bvsalud.org/\"}",
+    "{\"label\":\"EQUATOR Network — diretrizes de relato\",\"url\":\"https://www.equator-network.org/\"}"
+  ],
+  "external_urls": [
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "https://training.cochrane.org/handbook/current",
+    "https://www.bmj.com/content/389/bmj-2024-081123",
+    "https://www.equator-network.org/reporting-guidelines/prisma/",
+    "https://www.equator-network.org/reporting-guidelines/strobe/",
+    "https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials",
+    "https://www.crd.york.ac.uk/PROSPERO/",
+    "https://www.gradeworkinggroup.org/",
+    "https://pubmed.ncbi.nlm.nih.gov/",
+    "https://bvsalud.org/",
+    "https://www.equator-network.org/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Uma decisão bem formulada percorre cinco operações: formular pergunta clínica, buscar evidência, avaliar validade e relevância, aplicar em parceria com o paciente e avaliar o resultado. Isso não se limita à terapêutica. Perguntas de diagnóstico, prognóstico, prevenção, rastreamento, etiologia e organização de serviços requerem desenhos de pesquisa e medidas próprias. É uma fonte central de questões de residência e da prática diária, porque artigos frequentemente trazem números corretos acompanhados de interpretações erradas."
+    },
+    {
+      "text": "Para diagnóstico, separar população e cenário, teste índice, padrão de referência e doença-alvo. A pergunta “Um teste rápido identifica embolia pulmonar em pessoas de baixo risco?” só fica inteligível quando se esclarece o padrão de referência, o limiar do exame e o contexto clínico. Para prognóstico, descrever momento zero, população de início, fator prognóstico, evento e horizonte temporal. Para rastreamento, perguntar se uma estratégia reduz desfechos relevantes, não apenas se um teste detecta lesões."
+    },
+    {
+      "text": "Prospectivo e retrospectivo descrevem em geral a relação entre o momento do planejamento/coleta e a ocorrência dos fatos, não determinam sozinhos o desenho. Uma coorte histórica pode ser retrospectiva quanto à coleta de registros: identifica participantes por exposição anterior e compara ocorrência subsequente do desfecho nos registros. Um caso-controle aninhado em coorte prospectiva pode usar amostras coletadas antes do diagnóstico. Portanto, a regra “coorte sempre prospectiva; caso-controle sempre retrospectivo” é didaticamente insuficiente."
+    },
+    {
+      "text": "Subgrupos escolhidos depois dos resultados merecem cautela, especialmente quando o estudo relata “houve benefício somente em mulheres” sem teste formal de interação e sem plausibilidade. Comparar p=0,03 num grupo com p=0,08 em outro não demonstra diferença entre grupos. O método correto testa interação e avalia incerteza. Em muitas situações, análises exploratórias geram hipóteses para investigação posterior, não recomendações clínicas definitivas."
+    },
+    {
+      "text": "Dois aparelhos de medir pressão arterial podem produzir correlação alta e diferir sempre por +15 mmHg. Isso não demonstra concordância suficiente para substituição. Correlação mede associação de variação, enquanto avaliação de concordância pode empregar Bland–Altman, coeficiente de correlação intraclasse apropriado e limites clinicamente aceitáveis. Um método novo pode ter AUC elevada e ainda ser mal calibrado para estimar risco absoluto. Em pesquisa diagnóstica, perguntar se a finalidade é ordenar pessoas por risco, prever probabilidades ou substituir uma medição existente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

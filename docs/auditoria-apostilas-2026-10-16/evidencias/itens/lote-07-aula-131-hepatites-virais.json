@@ -1,0 +1,639 @@
+{
+  "key": "lote-07-aula-131-hepatites-virais",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-131-hepatites-virais.md",
+  "title": "LURIA — Lote 7 · Aula 131",
+  "source_sha256": "c99d014d7a10d9d53565b4f37ea501c47d319c57e69f359e29d9c5367b0425de",
+  "chars_estimated": 68649,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 131",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Hepatites virais A, B, C, D e E: raciocínio clínico, sorologia e seguimento",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "0. Etapa zero e atualização",
+      "level": 2
+    },
+    {
+      "line": 11,
+      "title": "1. Um mapa da doença antes de memorizar sorologias",
+      "level": 2
+    },
+    {
+      "line": 16,
+      "title": "2. Comparativo fundamental",
+      "level": 2
+    },
+    {
+      "line": 28,
+      "title": "3. Hepatite aguda: a abordagem sindrômica",
+      "level": 2
+    },
+    {
+      "line": 35,
+      "title": "4. Hepatite A: doença autolimitada não significa doença irrelevante",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "5. Hepatite B: entender seis marcadores",
+      "level": 2
+    },
+    {
+      "line": 42,
+      "title": "5.1. Biologia e história natural",
+      "level": 3
+    },
+    {
+      "line": 45,
+      "title": "5.2. Matriz sorológica de alto rendimento",
+      "level": 3
+    },
+    {
+      "line": 58,
+      "title": "5.3. Tratamento e acompanhamento",
+      "level": 3
+    },
+    {
+      "line": 63,
+      "title": "5.4. Gestação e recém-nascido",
+      "level": 3
+    },
+    {
+      "line": 66,
+      "title": "5.5. Reativação na imunossupressão",
+      "level": 3
+    },
+    {
+      "line": 69,
+      "title": "6. Hepatite C: anticorpo, RNA e cura",
+      "level": 2
+    },
+    {
+      "line": 71,
+      "title": "6.1. Diagnóstico em duas etapas",
+      "level": 3
+    },
+    {
+      "line": 74,
+      "title": "6.2. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 79,
+      "title": "6.3. Depois da cura",
+      "level": 3
+    },
+    {
+      "line": 82,
+      "title": "7. Hepatite D: por que sempre lembrar HBV?",
+      "level": 2
+    },
+    {
+      "line": 87,
+      "title": "8. Hepatite E e situações especiais",
+      "level": 2
+    },
+    {
+      "line": 90,
+      "title": "9. Diagnóstico diferencial de transaminases elevadas",
+      "level": 2
+    },
+    {
+      "line": 102,
+      "title": "10. Fluxos de atendimento",
+      "level": 2
+    },
+    {
+      "line": 109,
+      "title": "11. Quatro casos clínicos integradores",
+      "level": 2
+    },
+    {
+      "line": 111,
+      "title": "Caso 1 — a sorologia do vacinado",
+      "level": 3
+    },
+    {
+      "line": 119,
+      "title": "Caso 2 — janela e infecção aguda B",
+      "level": 3
+    },
+    {
+      "line": 127,
+      "title": "Caso 3 — HCV exposto, sem viremia atual",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "Caso 4 — HBV crônico e piora inexplicada",
+      "level": 3
+    },
+    {
+      "line": 143,
+      "title": "12. Seis questões autorais com distratores comentados",
+      "level": 2
+    },
+    {
+      "line": 145,
+      "title": "Questão 1 — vacinação",
+      "level": 3
+    },
+    {
+      "line": 150,
+      "title": "Questão 2 — anti-HBc",
+      "level": 3
+    },
+    {
+      "line": 155,
+      "title": "Questão 3 — HCV",
+      "level": 3
+    },
+    {
+      "line": 160,
+      "title": "Questão 4 — terapia em cirrose",
+      "level": 3
+    },
+    {
+      "line": 165,
+      "title": "Questão 5 — hepatite D",
+      "level": 3
+    },
+    {
+      "line": 170,
+      "title": "Questão 6 — prognóstico da hepatite aguda",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "13. Quadros de revisão e âncoras de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 184,
+      "title": "14. Camada visual proposta (nenhuma imagem incorporada)",
+      "level": 2
+    },
+    {
+      "line": 189,
+      "title": "15. Fontes",
+      "level": 2
+    },
+    {
+      "line": 196,
+      "title": "16. Checklist de certificação pendente",
+      "level": 2
+    },
+    {
+      "line": 211,
+      "title": "APROFUNDAMENTO LURIA — HEPATITES VIRAIS A–E",
+      "level": 1
+    },
+    {
+      "line": 214,
+      "title": "17. O hepatócito não adoece da mesma forma nos cinco vírus",
+      "level": 2
+    },
+    {
+      "line": 216,
+      "title": "17.1. A expressão “hepatite viral” designa inflamação de múltiplas etiologias",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "17.2. Por que o sistema imune causa tanto dano?",
+      "level": 3
+    },
+    {
+      "line": 234,
+      "title": "17.3. Por que a idade da infecção importa tanto em HBV?",
+      "level": 3
+    },
+    {
+      "line": 239,
+      "title": "18. Hepatite aguda: como distinguir inflamação intensa de falência de função",
+      "level": 2
+    },
+    {
+      "line": 241,
+      "title": "18.1. AST/ALT são marcadores de lesão, não medidores isolados de função",
+      "level": 3
+    },
+    {
+      "line": 249,
+      "title": "18.2. Icterícia não aparece em toda hepatite",
+      "level": 3
+    },
+    {
+      "line": 254,
+      "title": "18.3. Falência hepática aguda: mais importante que dizer “transaminases altíssimas”",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "18.4. Hepatite viral versus necrose isquêmica versus lesão medicamentosa",
+      "level": 3
+    },
+    {
+      "line": 270,
+      "title": "19. Sorologias do HBV: aprender a montar a história imunológica",
+      "level": 2
+    },
+    {
+      "line": 272,
+      "title": "19.1. O significado de cada marcador",
+      "level": 3
+    },
+    {
+      "line": 281,
+      "title": "19.2. Tabela de perfis com raciocínio",
+      "level": 3
+    },
+    {
+      "line": 293,
+      "title": "19.3. Anti-HBc isolado merece investigação orientada por risco, não mnemônico fixo",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "19.4. A janela imunológica do HBV",
+      "level": 3
+    },
+    {
+      "line": 303,
+      "title": "19.5. HBeAg negativo não é “vírus inativo”",
+      "level": 3
+    },
+    {
+      "line": 308,
+      "title": "20. HBV crônico: quem precisa de tratamento e o que significa resposta",
+      "level": 2
+    },
+    {
+      "line": 310,
+      "title": "20.1. A meta clínica vai além de normalizar ALT",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "20.2. Avaliação inicial de infecção crônica",
+      "level": 3
+    },
+    {
+      "line": 323,
+      "title": "20.3. Os critérios de tratamento são multifatoriais",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "20.4. Tenofovir e entecavir: farmacologia e vigilância",
+      "level": 3
+    },
+    {
+      "line": 337,
+      "title": "20.5. Acompanhamento não é repetir PCR indefinidamente sem objetivo",
+      "level": 3
+    },
+    {
+      "line": 342,
+      "title": "21. Transmissão vertical do HBV: combinar estratégias, não escolher apenas uma",
+      "level": 2
+    },
+    {
+      "line": 344,
+      "title": "21.1. O pré-natal identifica risco invisível",
+      "level": 3
+    },
+    {
+      "line": 347,
+      "title": "21.2. Quais intervenções fazem diferença?",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "21.3. O que não inferir da sorologia da gestante?",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "21.4. Exemplo de caso calculado",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "22. HBV e imunossupressão: a reativação é complicação que provas adoram",
+      "level": 2
+    },
+    {
+      "line": 363,
+      "title": "22.1. Reativação não é necessariamente reinfecção",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "22.2. Triar ANTES de rituximabe, quimioterapia e transplante",
+      "level": 3
+    },
+    {
+      "line": 371,
+      "title": "22.3. Como usar uma matriz sem decorar centenas de imunossupressores",
+      "level": 3
+    },
+    {
+      "line": 383,
+      "title": "23. Hepatite C: anticorpo não é viremia e RVS não é imunidade",
+      "level": 2
+    },
+    {
+      "line": 385,
+      "title": "23.1. Rastreamento e confirmação",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "23.2. Infecção aguda antes da soroconversão",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "23.3. Estratificação de fibrose é decisão terapêutica e de seguimento",
+      "level": 3
+    },
+    {
+      "line": 398,
+      "title": "23.4. Por que antivirais de ação direta funcionam?",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "23.5. O que checar antes de fornecer DAA?",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "23.6. Curar HCV não significa proteger contra reinfecção",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "23.7. Após RVS, o fígado ainda pode precisar de vigilância",
+      "level": 3
+    },
+    {
+      "line": 419,
+      "title": "24. Hepatite D: o HBV que a torna possível e o que se perde no diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 421,
+      "title": "24.1. Coinfecção versus superinfecção",
+      "level": 3
+    },
+    {
+      "line": 427,
+      "title": "24.2. Anticorpo e RNA respondem perguntas diferentes",
+      "level": 3
+    },
+    {
+      "line": 430,
+      "title": "24.3. Por que análogo de HBV não é cura do Delta?",
+      "level": 3
+    },
+    {
+      "line": 435,
+      "title": "25. Hepatites A e E: fecal–oral não significa risco idêntico",
+      "level": 2
+    },
+    {
+      "line": 437,
+      "title": "25.1. HAV",
+      "level": 3
+    },
+    {
+      "line": 442,
+      "title": "25.2. HEV",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "26. Diagnósticos diferenciais por padrão de enzimas",
+      "level": 2
+    },
+    {
+      "line": 451,
+      "title": "26.1. Hepatocelular, colestático e misto",
+      "level": 3
+    },
+    {
+      "line": 458,
+      "title": "26.2. O que muda quando AST é maior que ALT?",
+      "level": 3
+    },
+    {
+      "line": 461,
+      "title": "26.3. Ferritina e autoimunidade não são testes de “exclusão do vírus”",
+      "level": 3
+    },
+    {
+      "line": 464,
+      "title": "27. Fluxos de decisão integrados para APS, pronto-socorro e hepatologia",
+      "level": 2
+    },
+    {
+      "line": 466,
+      "title": "27.1. Adulto com AST/ALT elevadas e exame estável",
+      "level": 3
+    },
+    {
+      "line": 473,
+      "title": "27.2. HBsAg positivo na triagem de UBS",
+      "level": 3
+    },
+    {
+      "line": 476,
+      "title": "27.3. Anti-HCV positivo em usuário de drogas injetáveis",
+      "level": 3
+    },
+    {
+      "line": 479,
+      "title": "27.4. Gestante com HBV",
+      "level": 3
+    },
+    {
+      "line": 482,
+      "title": "27.5. Paciente com cirrose HCV curada",
+      "level": 3
+    },
+    {
+      "line": 485,
+      "title": "28. Cinco casos clínicos avançados — diagnóstico, investigação, conduta",
+      "level": 2
+    },
+    {
+      "line": 487,
+      "title": "Caso 5 — HBV com anti-HBc isolado antes de anti-CD20",
+      "level": 3
+    },
+    {
+      "line": 495,
+      "title": "Caso 6 — gestante HBsAg positiva sem sintomas",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "Caso 7 — HCV curado, anticorpo continua positivo",
+      "level": 3
+    },
+    {
+      "line": 511,
+      "title": "Caso 8 — HBV com HBeAg negativo e DNA alto",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "Caso 9 — AST/ALT elevadas e INR piorando",
+      "level": 3
+    },
+    {
+      "line": 527,
+      "title": "29. Oito questões autorais adicionais — alternativas analisadas",
+      "level": 2
+    },
+    {
+      "line": 529,
+      "title": "Questão 7 — anti-HBc isolado",
+      "level": 3
+    },
+    {
+      "line": 534,
+      "title": "Questão 8 — HBeAg",
+      "level": 3
+    },
+    {
+      "line": 539,
+      "title": "Questão 9 — hepatite C após cura",
+      "level": 3
+    },
+    {
+      "line": 544,
+      "title": "Questão 10 — cirrose descompensada e DAA",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "Questão 11 — transmissão vertical de HBV",
+      "level": 3
+    },
+    {
+      "line": 554,
+      "title": "Questão 12 — anticorpos HBV",
+      "level": 3
+    },
+    {
+      "line": 559,
+      "title": "Questão 13 — HDV",
+      "level": 3
+    },
+    {
+      "line": 564,
+      "title": "Questão 14 — lesão versus falência hepática",
+      "level": 3
+    },
+    {
+      "line": 569,
+      "title": "30. Matriz capítulo → competência → caso → questão",
+      "level": 2
+    },
+    {
+      "line": 587,
+      "title": "31. Fontes atualizadas após leitura comparativa",
+      "level": 2
+    },
+    {
+      "line": 596,
+      "title": "32. Parecer editorial após ampliação",
+      "level": 2
+    }
+  ],
+  "references": [],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-b",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-d/hepatite-d",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240090903",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK615006/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exemplo:** pessoa terminou antivirais e anti-HCV permanece positivo: não significa necessariamente falha. Avaliar HCV-RNA em momento apropriado após tratamento, usualmente 12 semanas, para estabelecer **RVS12**.",
+      "pattern": 0
+    },
+    {
+      "text": "**Armadilha essencial:** regimes que contêm **inibidores de protease NS3/4A não devem ser usados em cirrose descompensada**, devido ao risco de toxicidade e contraindicação por função hepática, ainda que sejam pangenotípicos. Avaliar Child–Pugh e esquemas alternativos no hepatopata avançado. Identificar interações com anticonvulsivantes, amiodarona, antiácidos, estatinas, antirretrovirais e outros fármacos; atenção ao risco de reativação do HBV durante DAA em coinfectados.",
+      "pattern": 1
+    },
+    {
+      "text": "A conduta inclui monitorização intensiva, exclusão de intoxicação por paracetamol e hepatites virais específicas, avaliação de outras etiologias tratáveis, glicemia seriada, renal/eletrólitos, complicações infecciosas, edema cerebral e **avaliação precoce de centro transplantador**, conforme gravidade. Não esperar um “pico máximo” de ALT para ligar à equipe de transplante.",
+      "pattern": 1
+    },
+    {
+      "text": "**HBsAg negativo isolado após exposição recente** não exclui janela muito precoce antes de soroconversão; repetição/NAT pode ser necessária em cenários selecionados. A leitura sempre precisa da data de exposição e imunidade prévia.",
+      "pattern": 1
+    },
+    {
+      "text": "O quadro de hepatite severa ou progressiva em portador de HBV não deve ser automaticamente interpretado como “reativação B”; testar HDV e outras causas conforme risco, região e recomendações de OMS 2024/PCDT.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Apostilas correlatas no acervo: aula 126 trata de cirrose e complicações; \\`hiv-infeccoes-oportunistas\\` e \\`infeccoes-gestacao-transmissao-vertical\\` podem compartilhar tópicos, mas não substituem um livro focado em sorologia e terapêutica de hepatites virais. O programa curricular mantém tema autônomo pela prevalência de questões de interpretação de exames."
+    },
+    {
+      "text": "As hepatites virais não são uma única doença. HAV e HEV têm transmissão predominantemente fecal-oral e, em geral, curso agudo. HBV, HCV e HDV apresentam outros mecanismos, incluindo potencial de infecção crônica; HDV depende de HBV. A gravidade e a chance de cronicidade são influenciadas por idade, estado imune, gestação, doenças de base e vírus. O termo “hepatite fulminante” é informal; **insuficiência hepática aguda** combina lesão hepática recente, coagulopatia importante (classicamente INR ≥1,5) e encefalopatia em pessoa sem cirrose prévia relevante, exigindo ambiente especializado."
+    }
+  ]
+}

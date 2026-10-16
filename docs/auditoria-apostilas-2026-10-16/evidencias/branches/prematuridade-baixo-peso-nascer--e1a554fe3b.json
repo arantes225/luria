@@ -1,0 +1,141 @@
+{
+  "sha": "e1a554fe3b1b06a988a4daefef77a55203141ac3",
+  "path": "apostilas/prematuridade-baixo-peso-nascer/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "prematuridade-baixo-peso-nascer--e1a554fe3b",
+  "title": "Prematuridade e Baixo Peso ao Nascer",
+  "format": ".json",
+  "chars_estimated": 92285,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Prematuridade e baixo peso: por que a idade gestacional importa em cada decisão"
+    },
+    {
+      "id": "classificacao",
+      "title": "1. Classificação: idade gestacional, peso e adequação ao crescimento fetal"
+    },
+    {
+      "id": "etiologia",
+      "title": "2. Epidemiologia, causas e prevenção antenatal da prematuridade"
+    },
+    {
+      "id": "fisiologia",
+      "title": "3. Fisiologia da imaturidade e vulnerabilidades por sistemas"
+    },
+    {
+      "id": "primeirosdias",
+      "title": "4. Primeiras horas e dias: estabilização térmica, respiratória e metabólica"
+    },
+    {
+      "id": "respiratorio",
+      "title": "5. Doença respiratória do prematuro: SDR, TTN, apneia e displasia broncopulmonar"
+    },
+    {
+      "id": "cardiovascular",
+      "title": "6. Adaptação hemodinâmica, canal arterial patente e vulnerabilidade renal"
+    },
+    {
+      "id": "neurologia",
+      "title": "7. Lesão neurológica e neurodesenvolvimento: hemorragia, substância branca e vigilância"
+    },
+    {
+      "id": "gastrointestinal",
+      "title": "8. Enterocolite necrosante, intolerância alimentar e problemas hematológicos"
+    },
+    {
+      "id": "nutricao",
+      "title": "9. Alimentação, leite materno, fortificação e crescimento pós-natal"
+    },
+    {
+      "id": "canguru",
+      "title": "10. Método Canguru: contato precoce e as três etapas do cuidado brasileiro"
+    },
+    {
+      "id": "triagens",
+      "title": "11. Triagens específicas do prematuro e interpretação de exames de risco"
+    },
+    {
+      "id": "alta",
+      "title": "12. Alta hospitalar e seguimento: critérios clínicos, idade corrigida e vacinação"
+    },
+    {
+      "id": "revisao",
+      "title": "13. Mapa de raciocínio e pegadinhas de prova: distinguir mecanismos"
+    },
+    {
+      "id": "casos",
+      "title": "14. Dez casos clínicos integradores — decisão e justificativa"
+    },
+    {
+      "id": "questoes",
+      "title": "15. Vinte questões autorais comentadas — alto rendimento"
+    },
+    {
+      "id": "referencias",
+      "title": "16. Referências oficiais, matriz de cobertura e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"16. Referências oficiais, matriz de cobertura e pendências\"]",
+    "[\"3\",\"Fontes científicas e normativas\"]",
+    "[\"o\",[\"<a href=\\\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/cuidado-neonatal/metodo-canguru\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Método Canguru: linha brasileira de cuidado ao recém-nascido pré-termo ou baixo peso.</a>\",\"<a href=\\\"https://bvs.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017sumarioteste.html\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Norma de Atenção Humanizada ao RN de Baixo Peso — Método Canguru, consolidação de critérios das etapas.</a>\",\"<a href=\\\"https://www.who.int/publications/",
+    "[\"3\",\"Matriz de cobertura por capítulo\"]",
+    "[\"t\",[\"Habilidade\",\"Onde está ensinada\",\"O que o aluno deve ser capaz de fazer\"],[[\"Diferenciar prematuridade/baixo peso/PIG\",\"Visão e 1\",\"Classificar RN com IG e percentil sem confundir conceitos\"],[\"Identificar riscos antenatais\",\"2\",\"Antecipar local de parto e necessidades neonatais\"],[\"Explicar imaturidade multisistêmica\",\"3–4\",\"Relacionar mecanismo a termorregulação, glicemia e suporte\"],[\"Diagnosticar problemas respiratórios\",\"5\",\"Diferenciar SDR, TTN, apneia, DBP e intervenções\"],[\"Reconhecer hemodinâmica neonatal\",\"6\",\"Não tratar automaticamente todo canal arterial patente\"],[\"Identifi",
+    "[\"3\",\"Benchmark do Drive e conteúdo autoral\"]",
+    "[\"p\",\"Os resumos privados do Google Drive 'Desconforto Respiratório do Recém...', 'Reanimação Neonatal' e 'Sepse neonatal' foram abertos para identificar temas e lacunas, mas não possuíam aprofundamento de prematuridade longitudinal. Autoria institucional de cursinho não comprovada; alguns mnemônicos estavam desatualizados ou com unidades erradas, razão para priorizar literatura primária acima. Nenhuma ilustração ou tabela de terceiros foi copiada. Comparadas as apostilas LURIA 003 e 008 para delimitar escopo e prevenir reescrita de reanimação.\"]",
+    "[\"3\",\"Pendências de revisão e publicação\"]",
+    "[\"p\",\"<strong>Status:</strong> apostila 013 criada em JSON como rascunho editorial. O formato e contagem de caracteres não comprovam suficiência clínica. Exigir revisão independente por neonatologista (incluindo critérios e data de rastreio de ROP, protocolo institucional de CPAP/surfactante, detalhes de vacinação, nutricional e limiares de alta); validação científica das questões; teste de autossuficiência; inspeção visual desktop/PWA; avaliação de quadros; imagens apenas com proveniência/licenças e aprovação no Admin. Não criar index.html, catálogo, merge ou deploy.\"]",
+    "[\"p\",\"Fronteiras com outras apostilas: tema 003 aborda assistência inicial e profilaxias de sala de parto; tema 008 detalha VPP e reanimação avançada; tema 018 aprofunda hiperbilirrubinemia do recém-nascido; tema 023, sepse neonatal e protocolos de antimicrobianos. O leitor encontra aqui mecanismos, sinais de alerta e encaminhamento necessários a prematuros, mas doses e algoritmos especializados requerem documentos próprios revisados.\"]"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/cuidado-neonatal/metodo-canguru",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017sumarioteste.html",
+    "https://www.who.int/publications/i/item/9789240058262/",
+    "https://www.who.int/publications/m/item/kangaroo-mother-care--a-clinical-practice-guide",
+    "https://www.sbp.com.br/departamentos/neonatologia/documentos-cientificos/",
+    "https://www.sbp.com.br/manual-de-seguimento-do-recem-nascido-de-alto-risco-2a-edicao/",
+    "https://www.sbp.com.br/pediatria-para-familias/vacinas/imunizacao-de-bebes-prematuros/",
+    "https://pubmed.ncbi.nlm.nih.gov/36705703/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13038240/",
+    "https://www.sbp.com.br/fileadmin/user_upload/pdfs/Seguimento_prematuro_oficial.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "O recém-nascido pré-termo (RNPT) nasce antes de 37 semanas completas de gestação; baixo peso ao nascer significa peso inferior a 2.500 g, independentemente da idade gestacional. São conceitos relacionados, mas não equivalentes. Um RN a termo de 2.200 g tem baixo peso e possivelmente restrição do crescimento fetal; um RN de 35 semanas com 2.800 g é prematuro apesar de não possuir baixo peso. A diferença altera risco de insuficiência respiratória, hipoglicemia, perda térmica, crescimento e seguimento."
+    },
+    {
+      "section": "classificacao",
+      "text": "A OMS utiliza frequentemente três grandes faixas de pré-termo: extremo (<28 semanas), muito pré-termo (28 a <32) e moderado/tardio (32 a <37). A subdivisão de 32–33+6 como moderado e 34–36+6 como tardio é comum no ensino e na pediatria brasileira. Quando a questão usa nomenclatura distinta, reconhecer qual classificação foi solicitada, sem alterar os limites numéricos da prematuridade."
+    },
+    {
+      "section": "classificacao",
+      "text": "Os limiares de peso são expressos em <strong>gramas (g)</strong>, nunca miligramas (mg). Um material de resumo antigo que chama 1.500 mg de 'muito baixo peso' apresenta erro de unidade de fator mil. A linguagem correta é 'RN de 1.200 g', '1,2 kg' ou '1.200 gramas'. Um RN com 2.500 g exatos não está abaixo do limite de baixo peso, embora outros fatores possam exigir vigilância."
+    },
+    {
+      "section": "classificacao",
+      "text": "PIG geralmente designa peso para IG e sexo abaixo do percentil 10; AIG, entre percentis 10 e 90; GIG, acima do percentil 90, empregando referência de crescimento indicada. A curva pode variar conforme população e finalidade, e a classificação deve usar idade gestacional estimada corretamente e sexo. Uma criança de 29 semanas que pesa 1.200 g pode estar próxima de faixa apropriada para sua IG; um RN de 40 semanas com o mesmo peso será profundamente pequeno e precisa investigação de fatores de crescimento fetal. A etiqueta PIG não prova que ocorreu restrição de crescimento intrauterino patológica, e ausência de PIG não exclui que um feto tenha "
+    },
+    {
+      "section": "classificacao",
+      "text": "Idade cronológica conta desde o nascimento. Idade pós-menstrual corresponde à idade gestacional ao nascer somada à idade cronológica em semanas; é útil na unidade neonatal e em decisões de maturação. Idade corrigida corresponde à cronológica menos o número de semanas faltantes para atingir 40 semanas de gestação, empregada para acompanhar crescimento e marcos do desenvolvimento do prematuro. Em geral se usa correção durante os dois primeiros anos, com individualização em prematuros muito imaturos e determinadas avaliações."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

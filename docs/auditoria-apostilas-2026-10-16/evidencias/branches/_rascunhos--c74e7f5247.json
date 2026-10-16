@@ -1,0 +1,248 @@
+{
+  "sha": "c74e7f52471b8ca3dd39712be8d2deec7a968056",
+  "path": "apostilas/_rascunhos/lote-10-aula-204-vasculites-pediatricas-kawasaki.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--c74e7f5247",
+  "title": "LURIA | Lote 10 — Aula 204",
+  "format": ".md",
+  "chars_estimated": 62933,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 10 — Aula 204"
+    },
+    {
+      "title": "Vasculites pediátricas e doença de Kawasaki"
+    },
+    {
+      "title": "1. O que o aluno precisa saber resolver"
+    },
+    {
+      "title": "2. Vasculite na infância: conceito, calibre e mecanismo"
+    },
+    {
+      "title": "2.1 Três mecanismos didáticos"
+    },
+    {
+      "title": "2.2 A primeira divisão clínica: ameaça imediata versus avaliação programada"
+    },
+    {
+      "title": "3. Doença de Kawasaki"
+    },
+    {
+      "title": "3.1 Por que a prova — e a enfermaria — valorizam tanto o diagnóstico precoce?"
+    },
+    {
+      "title": "3.2 Critérios clínicos — não decorar sem saber examinar"
+    },
+    {
+      "title": "3.3 Kawasaki incompleta: o cenário onde mais se perde o diagnóstico"
+    },
+    {
+      "title": "3.4 Exames laboratoriais: o que ajudam e o que não ajudam"
+    },
+    {
+      "title": "3.5 Classificação coronariana por escore Z — raciocínio clínico"
+    },
+    {
+      "title": "3.6 Diagnósticos diferenciais — como distinguir à beira do leito"
+    },
+    {
+      "title": "4. Vasculite por IgA (IgAV)"
+    },
+    {
+      "title": "4.1 A apresentação que deve lembrar purpura palpável + abdome + articulações + rim"
+    },
+    {
+      "title": "4.2 Como o diagnóstico é construído"
+    },
+    {
+      "title": "4.3 Diferenciais com consequência imediata"
+    },
+    {
+      "title": "4.4 Nefrite: por que urina normal hoje não significa alta definitiva"
+    },
+    {
+      "title": "4.5 Tratamento por gravidade"
+    },
+    {
+      "title": "5. Outras vasculites pediátricas que não podem ficar invisíveis"
+    },
+    {
+      "title": "5.1 Arterite de Takayasu"
+    },
+    {
+      "title": "5.2 Poliarterite nodosa (PAN)"
+    },
+    {
+      "title": "5.3 Vasculites associadas a ANCA"
+    },
+    {
+      "title": "5.4 Behçet na adolescência — enquadramento sem confusão"
+    },
+    {
+      "title": "6. Quadro comparativo — seis pistas em um minuto"
+    },
+    {
+      "title": "7. Kawasaki — tratamento por fase, risco e resposta"
+    },
+    {
+      "title": "7.1 Regra decisória central"
+    },
+    {
+      "title": "7.2 O conceito de resistência à IVIG"
+    },
+    {
+      "title": "7.3 Monitorização e segurança medicamentosa"
+    },
+    {
+      "title": "7.4 Seguimento ecocardiográfico: não é exame único"
+    },
+    {
+      "title": "7.5 Trombo, isquemia e aneurisma gigante"
+    },
+    {
+      "title": "8. Algoritmos práticos"
+    },
+    {
+      "title": "8.1 Criança com febre prolongada e sinais mucocutâneos"
+    },
+    {
+      "title": "8.2 Criança com púrpura palpável em membros inferiores"
+    },
+    {
+      "title": "8.3 Febre prolongada + pulsos assimétricos/hipertensão inexplicada"
+    },
+    {
+      "title": "9. Condutas especiais e complicações"
+    },
+    {
+      "title": "9.1 Lactente com Kawasaki incompleta"
+    },
+    {
+      "title": "9.2 Criança com doença prévia do coração"
+    },
+    {
+      "title": "9.3 Vasculite por IgA com abdome predominante"
+    },
+    {
+      "title": "9.4 Nefrite e hipertensão"
+    },
+    {
+      "title": "9.5 Diferentes janelas de prognóstico"
+    },
+    {
+      "title": "10. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — A “virose” que ficou sete dias febril"
+    },
+    {
+      "title": "Caso 2 — Lactente de quatro meses com poucos sinais"
+    },
+    {
+      "title": "Caso 3 — Púrpura que some, risco renal que fica"
+    },
+    {
+      "title": "Caso 4 — Púrpura e abdome cirúrgico"
+    },
+    {
+      "title": "Caso 5 — Hipertensão com pulsos diferentes"
+    },
+    {
+      "title": "Caso 6 — Sangue na urina e no pulmão"
+    },
+    {
+      "title": "11. Questões autorais de residência — resolução pelas próprias seções da apostila"
+    },
+    {
+      "title": "Questão 1 — critério temporal"
+    },
+    {
+      "title": "Questão 2 — Kawasaki incompleta"
+    },
+    {
+      "title": "Questão 3 — medicação e objetivo"
+    },
+    {
+      "title": "Questão 4 — resistência à IVIG"
+    },
+    {
+      "title": "Questão 5 — seguimento da IgAV"
+    },
+    {
+      "title": "Questão 6 — prevenção renal com corticoide"
+    },
+    {
+      "title": "Questão 7 — intestino e púrpura"
+    },
+    {
+      "title": "Questão 8 — classificação por calibre"
+    },
+    {
+      "title": "Questão 9 — síndrome pulmão–rim"
+    },
+    {
+      "title": "Questão 10 — risco coronário a longo prazo"
+    },
+    {
+      "title": "12. Resumo de alta retenção"
+    },
+    {
+      "title": "Armadilhas de prova reunidas"
+    },
+    {
+      "title": "13. Banco de imagens clínicas — **plano de aquisição, NÃO aprovado**"
+    },
+    {
+      "title": "14. Bibliografia científica rastreável"
+    },
+    {
+      "title": "15. Matriz de cobertura e autoauditoria inicial"
+    },
+    {
+      "title": "Gate editorial — resultado honesto desta versão"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://doi.org/10.1161/CIR.0000000000001295",
+    "https://doi.org/10.1161/CIR.0000000000001313",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12323682/",
+    "https://doi.org/10.1007/s00467-024-06502-6",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11671997/",
+    "https://professional.heart.org/en/science-news/update-on-diagnosis-and-management-of-kawasaki-disease/top-things-to-know",
+    "https://www.acc.org/latest-in-cardiology/articles/2025/04/28/16/36/aha-scientific-statement-update-on-kawasaki-disease"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Kawasaki é vasculite febril aguda predominante em menores de cinco anos. O diagnóstico é predominantemente **clínico** e pode ser dificultado porque os sinais aparecem em dias diferentes, desaparecem enquanto outros surgem ou recebem explicações superficiais como “virose”, “amigdalite” ou “alergia”. A inflamação coronariana pode iniciar antes que o diagnóstico seja estabelecido; com tratamento adequado e oportuno, o risco de aneurisma coronariano cai substancialmente. Sem tratamento, a doença pode cursar com alteração coronariana em aproximadamente um quarto dos casos, conforme séries históricas."
+    },
+    {
+      "text": "A forma clássica reúne **febre habitualmente por pelo menos cinco dias** e pelo menos **quatro de cinco** sinais principais, sem explicação mais convincente. Em apresentações muito típicas, especialistas podem estabelecer o diagnóstico antes do quinto dia, especialmente quando o risco de esperar é elevado."
+    },
+    {
+      "text": "A investigação utiliza inflamação sistêmica (PCR e VHS), hemograma, albumina, enzimas hepáticas e urina, além de **ecocardiograma**. No algoritmo histórico da AHA para avaliação de suspeita incompleta, PCR ≥3 mg/dL ou VHS ≥40 mm/h sustentam continuar a avaliação; achados suplementares incluem anemia para idade, albumina ≤3 g/dL, elevação de ALT, plaquetas ≥450 mil/mm³ após o sétimo dia, leucócitos ≥15 mil/mm³ e piúria estéril. A combinação exata do algoritmo precisa ser aplicada em protocolo atualizado com avaliação especialista — **os limiares não são teste diagnóstico independente**."
+    },
+    {
+      "text": "- **PCR/VHS:** inflamação; não são específicos. Após imunoglobulina intravenosa, o VHS pode ser dificultado na interpretação, e a tendência de PCR, febre e condição clínica costuma ser mais útil. - **Hemograma:** leucocitose neutrofílica, anemia inflamatória e trombocitose na segunda semana são sugestivas; plaquetopenia pode apontar doença grave ou diagnósticos alternativos, inclusive MIS-C. - **Albumina/ALT:** hipoalbuminemia e elevação hepática podem reforçar inflamação sistêmica. - **Urina:** piúria estéril pode ocorrer; não atribuir urocultura positiva a Kawasaki sem avaliar infecção urinária real. - **Troponina/BNP ou NT-proBNP:** podem "
+    },
+    {
+      "text": "**Exames básicos pertinentes:** hemograma com **plaquetas**, PCR se diagnóstico diferencial, creatinina/TFGe quando suspeita renal ou acompanhamento, urina tipo 1 com microscopia, quantificação de proteinúria por **relação proteína/creatinina urinária**, e pressão arterial ajustada a idade/sexo/estatura. Com dor abdominal importante, ultrassonografia é útil para invaginação ou complicações, evitando pressupor que toda dor intensa seja “só vasculite”."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,1423 @@
+{
+  "key": "infeccoes-gestacao-transmissao-vertical",
+  "kind": "apostila-html",
+  "path": "apostilas/infeccoes-gestacao-transmissao-vertical/index.html",
+  "html_path": "apostilas/infeccoes-gestacao-transmissao-vertical/index.html",
+  "title": "Infecções na gestação e transmissão vertical",
+  "source_sha256": "0f4b69165b1f4660f335986bc9fbfa1bb4d9aab851a9745f6fa7f3cda50da4e8",
+  "html_sha256": "0f4b69165b1f4660f335986bc9fbfa1bb4d9aab851a9745f6fa7f3cda50da4e8",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Apostila LURIA",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "Infecções na gestação e transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "1. Em 30 segundos",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "2. Conceitos fundamentais",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "2.1. O que é transmissão vertical?",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "2.2. Momentos da transmissão",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "2.3. Determinantes do risco",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "2.4. Raciocínio clínico: da infecção materna à proteção neonatal",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "3. Rastreamento durante o pré-natal",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "3.1. Exames iniciais",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "3.2. Repetições",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "4. Sífilis na gestação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.1. Agente e transmissão",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.2. Manifestações maternas",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.3. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.4. Interpretação dos testes",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Teste treponêmico positivo",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "VDRL/RPR",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.5. Tratamento",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Esquemas usuais",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Intervalo entre doses",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.6. Alergia à penicilina",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.7. Resposta de Jarisch–Herxheimer",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.8. Tratamento adequado",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.9. Seguimento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "4.10. Sífilis congênita",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "5. HIV na gestação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.1. Vias de transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.2. Diagnóstico",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.3. Terapia antirretroviral",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.4. Avaliação inicial",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.5. Carga viral e parto",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.6. Intraparto",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.7. Aleitamento materno",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "5.8. Recém-nascido exposto",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Carga viral e escolha da via de parto",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "6. Hepatite B",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "6.1. Transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "6.2. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "6.3. Tratamento e profilaxia materna",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Pontos de monitorização",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "6.4. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "6.5. Via de parto e aleitamento",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "7. Hepatite C",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "7.1. Transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "7.2. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "7.3. Tratamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "7.4. Parto e amamentação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "7.5. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "8. Toxoplasmose",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.1. Agente e transmissão",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.2. Risco conforme idade gestacional",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.3. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.4. Avidez de IgG",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.5. Tratamento materno",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Antes de 16 semanas",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "A partir de 16 semanas",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Exemplo de esquema utilizado em protocolos",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.6. Monitorização",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.7. Ultrassonografia fetal",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "8.8. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "9. Citomegalovírus",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.1. Transmissão",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.2. Manifestações maternas",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.3. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.4. Diagnóstico materno",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.5. Achados fetais sugestivos",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.6. Prevenção",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.7. Tratamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "9.8. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "10. Rubéola",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "10.1. Transmissão",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "10.2. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "10.3. Vacinação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "10.4. Exposição ou suspeita",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "11. Varicela",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.1. Transmissão e risco fetal",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.2. Avaliação da gestante exposta",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.3. Gestante suscetível",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.4. Varicela ativa",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.5. Parto",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "11.6. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "12. Herpes simples",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.1. Transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.2. Manifestações",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.3. Diagnóstico",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.4. Tratamento",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Monitorização",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.5. Supressão no final da gestação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.6. Via de parto",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Cesariana geralmente indicada quando:",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Parto vaginal pode ser considerado quando:",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "12.7. Recém-nascido",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "13. Estreptococo do grupo B",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.1. Agente",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.2. Doença neonatal",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.3. Rastreamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.4. Indicações de profilaxia intraparto",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.5. Profilaxia",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Esquema usual",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.6. O que não fazer?",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "13.7. Bacteriúria por EGB",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "14. Outras infecções relevantes",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.1. Hepatite A",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.2. HTLV-1/2: diagnóstico, aconselhamento e prevenção da transmissão vertical",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "O que mais cai e mais muda a conduta",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Transmissão e fatores de risco",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Rastreamento e confirmação diagnóstica",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta por etapa assistencial",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "O que explicar à paciente?",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.3. Zika",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.4. Dengue e chikungunya",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.5. Tuberculose",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "14.6. Influenza e Covid-19",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "15. Comparação entre infecções",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "16. Algoritmo geral para infecção na gestação",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "17. Quando encaminhar para alto risco ou infectologia?",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "18. Casos clínicos",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — Sífilis com teste rápido positivo",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Erro a evitar",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — HIV diagnosticado no terceiro trimestre",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Erro a evitar",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — HBsAg reagente",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — Toxoplasmose",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Interpretação",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — Exposição à varicela",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — EGB positivo",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Conduta",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "19. Questões de fixação",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 1",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Gabarito: C",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 2",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Gabarito: C",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 3",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Gabarito: C",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 4",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Gabarito: C",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Questão 5",
+      "section": null
+    },
+    {
+      "tag": "H4",
+      "title": "Gabarito: B",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "20. Pulo do gato",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Pulo do Gato 1",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Pulo do Gato 2",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Pulo do Gato 3",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Pulo do Gato 4",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Pulo do Gato 5",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "21. Revisão de alto rendimento",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "22. Mensagens finais",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento clínico — decisões que mudam a conduta",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "A. Sífilis: o que muda no acompanhamento",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "B. HIV: decisões conforme carga viral",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "C. Hepatites B e C: duas trajetórias diferentes",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "D. Toxoplasmose: interpretar a sorologia antes de rotular infecção fetal",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "E. CMV e rubéola: por que a testagem indiscriminada atrapalha",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "F. Infecções próximas ao parto: intervenções tempo-dependentes",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "G. Roteiro de transmissão do cuidado para maternidade e neonatologia",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "H. Referências complementares oficiais",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Referências selecionadas",
+      "section": null
+    },
+    {
+      "tag": "H3",
+      "title": "Fluxo mínimo para toxoplasmose",
+      "section": null
+    },
+    {
+      "tag": "H2",
+      "title": "Casos resolvidos: decisões perinatais que exigem precisão",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Sífilis latente tardia: intervalo entre doses maior do que o permitido",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Teste de sífilis reagente no parto sem documentação de tratamento",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Gestante vivendo com HIV e carga viral indetectável",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Toxoplasmose: IgM isolado não equivale a infecção fetal",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Hepatite B: prevenção neonatal não pode esperar resultado tardio",
+      "section": "casos-transmissao-vertical-diretriz-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis e HIV: não misturar medidas",
+      "section": "editorial-depth-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Toxoplasmose e citomegalovírus",
+      "section": "editorial-depth-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis na gestante e feto",
+      "section": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV e janela do parto",
+      "section": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Toxoplasmose: infecção materna não é diagnóstico fetal",
+      "section": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Rubéola, CMV, herpes e hepatites",
+      "section": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H2",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "section": "capitulos-livro-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis materna e congênita",
+      "section": "capitulos-livro-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV: carga viral e decisões periparto",
+      "section": "capitulos-livro-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Toxoplasmose e CMV",
+      "section": "capitulos-livro-infeccoes-gestacao-transmissao-vertical"
+    },
+    {
+      "tag": "H3",
+      "title": "Hepatite B, rubéola e herpes",
+      "section": "capitulos-livro-infeccoes-gestacao-transmissao-vertical"
+    }
+  ],
+  "sections": [
+    {
+      "id": "casos-transmissao-vertical-diretriz-2026",
+      "title": "Casos resolvidos: decisões perinatais que exigem precisão",
+      "chars": 5344
+    },
+    {
+      "id": "editorial-depth-infeccoes-gestacao-transmissao-vertical",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 710
+    },
+    {
+      "id": "luria-livro-etiologias-infeccoes-gestacao-transmissao-vertical",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2269
+    },
+    {
+      "id": "capitulos-livro-infeccoes-gestacao-transmissao-vertical",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 1242
+    }
+  ],
+  "references": [
+    "Ministério da Saúde. PCDT para prevenção da transmissão vertical de HIV, sífilis e hepatites virais. gov",
+    "Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com IST. gov",
+    "Ministério da Saúde. Boletim Epidemiológico de Sífilis. gov",
+    "Ministério da Saúde. PCDT Hepatite B e coinfecções. gov",
+    "Ministério da Saúde. Hepatite C. gov",
+    "Ministério da Saúde. Toxoplasmose gestacional e congênita. gov",
+    "Ministério da Saúde. Guia de Vigilância em Saúde — rubéola e SRC. bvsms.saude.gov",
+    "Ministério da Saúde. Manual dos CRIE — varicela e imunoglobulina. gov",
+    "CDC. Clinical overview of CMV and congenital CMV. cdc",
+    "CDC. Prevention of perinatal group B streptococcal disease. cdc",
+    "Ministério da Saúde. PCDT de manejo da infecção pelo HIV em crianças e adolescentes. gov"
+  ],
+  "reference_links": [
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/prevencao-da-transmissao-vertical-do-hiv-sifilis-e-hepatites-virais",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-tecnicas/2024/nota-tecnica-no-6-2024-cgist-dathi-svsa-ms.pdf",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/toxoplasmose/publicacoes/quadros_tratamento_gestantes-com-toxoplasmose.pdf",
+      "in_references": true
+    },
+    {
+      "label": "bvsms.saude.gov",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev.pdf",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-dos-centros-de-referencia-para-imunobiologicos-especiais-6a-edicao",
+      "in_references": true
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": true
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5910a1.htm",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/conitec/pt-br/midias/consultas/relatorios/2023/protocolo-clinico-e-diretrizes-terapeuticas-manejo-da-infeccao-pelo-hiv-em-criancas-e-adolescentes-modulo-1-diagnostico-manejo-e-acompanhamento-de-criancas-expostas-ao-hiv/@@display-file/file",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao/@@download/file/Guia%20de%20vigil%C3%A2ncia%20em%20sa%C3%BAde%20-%20vol.%202.pdf",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/conitec/pt-br/midias/consultas/relatorios/2023/protocolo-clinico-e-diretrizes-terapeuticas-manejo-da-infeccao-pelo-hiv-em-criancas-e-adolescentes-modulo-1-diagnostico-manejo-e-acompanhamento-de-criancas-expostas-ao-hiv/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5910a1.htm",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-tecnicas/2024/nota-tecnica-no-6-2024-cgist-dathi-svsa-ms.pdf",
+      "in_references": false
+    },
+    {
+      "label": "Fonte ↗",
+      "url": "https://commons.wikimedia.org/wiki/File:Congenital_syphilis_rash_on_palm.jpg",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-tecnicas/2024/nota-tecnica-no-6-2024-cgist-dathi-svsa-ms.pdf",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/conitec/pt-br/midias/consultas/relatorios/2023/protocolo-clinico-e-diretrizes-terapeuticas-manejo-da-infeccao-pelo-hiv-em-criancas-e-adolescentes-modulo-1-diagnostico-manejo-e-acompanhamento-de-criancas-expostas-ao-hiv/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/conitec/pt-br/midias/consultas/relatorios/2023/protocolo-clinico-e-diretrizes-terapeuticas-manejo-da-infeccao-pelo-hiv-em-criancas-e-adolescentes-modulo-1-diagnostico-manejo-e-acompanhamento-de-criancas-expostas-ao-hiv/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-c",
+      "in_references": false
+    },
+    {
+      "label": "",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png",
+      "in_references": false
+    },
+    {
+      "label": "arquivo Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png",
+      "in_references": false
+    },
+    {
+      "label": "CC BY 2.0",
+      "url": "https://creativecommons.org/licenses/by/2.0/",
+      "in_references": false
+    },
+    {
+      "label": "Ampliar fotografia ↗",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png",
+      "in_references": false
+    },
+    {
+      "label": "saude.ma.gov",
+      "url": "https://www.saude.ma.gov.br/wp-content/uploads/2023/08/Nota-Tecnica-Conjunta-Toxoplasmose-Gestacional-e-Congenita.pdf",
+      "in_references": false
+    },
+    {
+      "label": "saude.sc.gov",
+      "url": "https://www.saude.sc.gov.br/edocman/areas-de-atuacao/assistencia-farmaceutica-diaf/componente-estrategico-cesaf/toxoplasmose/manual%20t%C3%89cnico%20de%20orienta%C3%87%C3%95es%20sobre%20o%20manejo%20da%20toxoplasmose%20-%20outubro.2025.pdf",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/about/index.html",
+      "in_references": false
+    },
+    {
+      "label": "stacks.cdc",
+      "url": "https://stacks.cdc.gov/view/cdc/155125/cdc_155125_DS1.pdf",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/rubeola/notas-tecnicas-e-informativas/nota-tecnica-no-34-2023-cgvdi-dpni-svsa-ms",
+      "in_references": false
+    },
+    {
+      "label": "saude.pr.gov",
+      "url": "https://www.saude.pr.gov.br/Pagina/Rubeola-e-sindrome-da-rubeola-congenita",
+      "in_references": false
+    },
+    {
+      "label": "prefeitura.sp.gov",
+      "url": "https://prefeitura.sp.gov.br/documents/d/saude/documento-tecnico-sarampo-rubeola-src_versao-finalv3-atualizada-20-07-26-pdf",
+      "in_references": false
+    },
+    {
+      "label": "central3.to.gov",
+      "url": "https://central3.to.gov.br/arquivo/249371/",
+      "in_references": false
+    },
+    {
+      "label": "ba.gov",
+      "url": "https://www.ba.gov.br/saude/sites/site-sesab/files/migracao_2024/arquivos/wp-content/uploads/2023/09/Protocolo-de-Varicela-_-Atualizacao-2023-1.pdf",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PR_325_Normas_rotinas_uso_antibioticos_obstetricia_V01.pdf",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PR_325_Normas_rotinas_uso_antibioticos_obstetricia_V01.pdf",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/group-b-strep/prevention/index.html",
+      "in_references": false
+    },
+    {
+      "label": "saude.pr.gov",
+      "url": "https://www.saude.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-04/infeccao_urinaria.pdf",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde — HTLV",
+      "url": "https://www.gov.br/aids/pt-br/assuntos/ist/htlv",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": false
+    },
+    {
+      "label": "saude.pr.gov",
+      "url": "https://www.saude.pr.gov.br/Pagina/Rubeola-e-sindrome-da-rubeola-congenita",
+      "in_references": false
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/group-b-strep/prevention/index.html",
+      "in_references": false
+    },
+    {
+      "label": "PCDT — prevenção da transmissão vertical de HIV, sífilis e hepatites virais, Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/prevencao-da-transmissao-vertical-do-hiv-sifilis-e-hepatites-virais/view",
+      "in_references": false
+    },
+    {
+      "label": "Nota Técnica 100/2022 — toxoplasmose gestacional e congênita, Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-1002022-cgpam-dsmi-saps-ms.pdf/view",
+      "in_references": false
+    },
+    {
+      "label": "Orientação de prevenção da transmissão vertical, Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/prevencao-a-transmissao-vertical",
+      "in_references": false
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/prevencao-da-transmissao-vertical-do-hiv-sifilis-e-hepatites-virais",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/notas-tecnicas/2024/nota-tecnica-no-6-2024-cgist-dathi-svsa-ms.pdf",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf/@@display-file/file",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/toxoplasmose/publicacoes/quadros_tratamento_gestantes-com-toxoplasmose.pdf",
+      "in_references": true
+    },
+    {
+      "label": "bvsms.saude.gov",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev.pdf",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-dos-centros-de-referencia-para-imunobiologicos-especiais-6a-edicao",
+      "in_references": true
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/cytomegalovirus/hcp/clinical-overview/index.html",
+      "in_references": true
+    },
+    {
+      "label": "cdc",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5910a1.htm",
+      "in_references": true
+    },
+    {
+      "label": "gov",
+      "url": "http://www.gov.br/conitec/pt-br/midias/consultas/relatorios/2023/protocolo-clinico-e-diretrizes-terapeuticas-manejo-da-infeccao-pelo-hiv-em-criancas-e-adolescentes-modulo-1-diagnostico-manejo-e-acompanhamento-de-criancas-expostas-ao-hiv/@@display-file/file",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde — Nota Técnica 100/2022, atualizada em 2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-1002022-cgpam-dsmi-saps-ms.pdf",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde, PCDT de Prevenção da Transmissão Vertical (anexo atualizado em 2024)",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/prevencao-da-transmissao-vertical-do-hiv-sifilis-e-hepatites-virais/view",
+      "in_references": false
+    },
+    {
+      "label": "MS, sífilis em gestantes",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes",
+      "in_references": false
+    },
+    {
+      "label": "MS, transmissão vertical de HIV e prevenção neonatal",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/prevencao-a-transmissao-vertical",
+      "in_references": false
+    },
+    {
+      "label": "MS, toxoplasmose",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/toxoplasmose",
+      "in_references": false
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Congenital_syphilis_rash_on_palm.jpg",
+      "alt": "Sífilis congênita: lesão palmar no recém-nascido. CDC, domínio público.",
+      "section": null,
+      "caption": "Sífilis congênita: lesão palmar no recém-nascido. CDC, domínio público. Fonte ↗",
+      "decorative": false
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png",
+      "alt": "Retinografia real mostrando cicatriz macular pigmentada e atrófica de toxoplasmose congênita já cicatrizada",
+      "section": null,
+      "caption": "Imagem real: cicatriz coriorretiniana de toxoplasmose congênita após a fase ativa. Não representa retinite ativa, nem permite estabelecer a data da infecção materna pelo aspecto isolado. Foto de S. Sudharshan, S. K. Ganesh e J. Biswas, Indian Journal of Ophthalmology, 2010; arquivo Wikimedia Commons sob CC BY 2.0, sem edição da imagem. Ampliar fotografia ↗",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 8,
+  "paragraphs": 99,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": null,
+      "text": "O tenofovir pode ser utilizado para redução da transmissão vertical em gestantes com alta carga viral, especialmente quando HBV-DNA é maior ou igual a 200.000 UI/mL ou há HBeAg positivo, conforme o PCDT vigente. gov",
+      "pattern": 0
+    },
+    {
+      "section": null,
+      "text": "O início profilático costuma ocorrer no terceiro trimestre, aproximadamente entre 24–28 ou 28–32 semanas, conforme protocolo atualizado e avaliação especializada.",
+      "pattern": 0
+    },
+    {
+      "section": null,
+      "text": "O teste deve ser realizado nas primeiras 2–3 semanas de vida para diferenciar infecção congênita de infecção adquirida após o nascimento. IgG e IgM não confirmam adequadamente CMV congênito. cdc",
+      "pattern": 0
+    },
+    {
+      "section": null,
+      "text": "Alguns protocolos brasileiros utilizam 35–37 semanas, enquanto outros adotam 36–37 semanas e 6 dias. gov",
+      "pattern": 0
+    },
+    {
+      "section": null,
+      "text": "Obstetrícia e infectologia · rastreamento, diagnóstico, prevenção, tratamento e cuidado do recém-nascido",
+      "pattern": 1
+    },
+    {
+      "section": null,
+      "text": "O Ministério da Saúde recomenda testagem de HIV e sífilis na primeira consulta, no terceiro trimestre e no parto em situações indicadas. gov",
+      "pattern": 1
+    },
+    {
+      "section": null,
+      "text": "O teste rápido permite iniciar tratamento imediatamente quando o contexto clínico e epidemiológico sustenta o diagnóstico.",
+      "pattern": 1
+    },
+    {
+      "section": null,
+      "text": "No esquema de três doses, o intervalo recomendado é semanal. Interrupção prolongada pode exigir reinício conforme o protocolo vigente.",
+      "pattern": 1
+    },
+    {
+      "section": "casos-transmissao-vertical-diretriz-2026",
+      "text": "Referências nacionais: Ministério da Saúde, PCDT de Prevenção da Transmissão Vertical (anexo atualizado em 2024); MS, sífilis em gestantes; MS, transmissão vertical de HIV e prevenção neonatal; MS, toxoplasmose.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": null,
+      "text": "Obstetrícia e infectologia · rastreamento, diagnóstico, prevenção, tratamento e cuidado do recém-nascido"
+    },
+    {
+      "section": null,
+      "text": "Em vez de decorar uma lista isolada de exames, responda a estas seis perguntas para cada agente. Elas determinam o que muda na assistência à gestante, no parto e no seguimento infantil."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 2
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "sha": "6b1abbfe2f3c1a06f5eda1c6bd6e28d008a7c6c8",
+  "path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--6b1abbfe2f",
+  "title": "LURIA — Pneumonia adquirida na comunidade no adulto",
+  "format": ".md",
+  "chars_estimated": 116444,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Pneumonia adquirida na comunidade no adulto"
+    },
+    {
+      "title": "Percurso de aprendizagem"
+    },
+    {
+      "title": "1. Anatomia respiratória, inflamação e semiologia"
+    },
+    {
+      "title": "1.1 Mecanismo e apresentação clínica"
+    },
+    {
+      "title": "1.2 Anatomia funcional: por que a consolidação causa hipoxemia?"
+    },
+    {
+      "title": "1.3 Mecanismos respiratórios aplicados ao exame clínico"
+    },
+    {
+      "title": "2. Etiologia e fatores de risco microbiológicos"
+    },
+    {
+      "title": "2.1 Epidemiologia clínica e etiologia: construir hipóteses, não decorar um único germe"
+    },
+    {
+      "title": "2.2 Etiologia e raciocínio probabilístico sem determinismo radiológico"
+    },
+    {
+      "title": "3. Diagnóstico e estratificação de gravidade"
+    },
+    {
+      "title": "3.1 Diagnóstico e estratificação"
+    },
+    {
+      "title": "3.2 Quadro clínico, gravidade e triagem na primeira avaliação"
+    },
+    {
+      "title": "3.3 Avaliação de gravidade — números com significado e limites"
+    },
+    {
+      "title": "4. Imagem, microbiologia e diferenciais"
+    },
+    {
+      "title": "4.1 Diagnóstico por imagem e diferenciais importantes"
+    },
+    {
+      "title": "4.2 Microbiologia — quando cada teste muda a conduta?"
+    },
+    {
+      "title": "5. Antibioticoterapia, duração e corticoide"
+    },
+    {
+      "title": "5.1 Tratamento e revisão da resposta"
+    },
+    {
+      "title": "5.2 Escolha de antibioticoterapia — raciocínio por cenário"
+    },
+    {
+      "title": "5.3 Antibioticoterapia empírica — dar cobertura adequada, depois reduzir espectro"
+    },
+    {
+      "title": "5.4 Diretriz ATS 2025: novidade que precisa ser ensinada sem generalização"
+    },
+    {
+      "title": "5.5 Teste viral positivo: matriz da ATS 2025 para antibiótico empírico"
+    },
+    {
+      "title": "5.6 Ultrassom pulmonar como alternativa diagnóstica condicional"
+    },
+    {
+      "title": "6. Decisão entre ambulatório, enfermaria e UTI"
+    },
+    {
+      "title": "6.1 Fluxograma textual de conduta: da APS à UTI"
+    },
+    {
+      "title": "6.2 Suporte clínico na pneumonia grave e sepse"
+    },
+    {
+      "title": "7. Falha terapêutica, complicações e seguimento"
+    },
+    {
+      "title": "7.1 Complicações, acompanhamento e prevenção"
+    },
+    {
+      "title": "7.2 A evolução nas primeiras 72 horas: uma lógica temporal"
+    },
+    {
+      "title": "7.3 Estabilidade clínica: o que observar todos os dias e por que"
+    },
+    {
+      "title": "7.4 Da terapia intravenosa à oral: uma decisão farmacológica, não burocrática"
+    },
+    {
+      "title": "7.5 O que significa descalonar de verdade?"
+    },
+    {
+      "title": "7.6 Duração e estabilidade em 2019 versus 2025: aplicação rigorosa"
+    },
+    {
+      "title": "7.7 Imagem após a cura: por que radiografia persistente não é automaticamente falha?"
+    },
+    {
+      "title": "7.8 Alta segura e retorno: seis itens que devem constar do plano"
+    },
+    {
+      "title": "7.9 Derrame parapneumônico: interpretar líquido pleural antes de dizer que o antibiótico falhou"
+    },
+    {
+      "title": "7.10 Aspiração não é diagnóstico de pneumonia bacteriana: três mecanismos diferentes"
+    },
+    {
+      "title": "7.11 A pneumonia não melhora: algoritmo anatômico, microbiológico e diagnóstico"
+    },
+    {
+      "title": "7.12 Duração e alta depois de pneumonia complicada: por que a exceção muda o plano"
+    },
+    {
+      "title": "8. Populações especiais e segurança"
+    },
+    {
+      "title": "8.1 Populações e segurança"
+    },
+    {
+      "title": "8.2 Populações especiais com conduta diferente"
+    },
+    {
+      "title": "9. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Pneumonia lobar sem critérios imediatos de internação"
+    },
+    {
+      "title": "Caso 2 — Idosa confusa e hipotensa, mesmo sem febre alta"
+    },
+    {
+      "title": "Caso 3 — Hipoxemia apesar do CURB-65 baixo"
+    },
+    {
+      "title": "Caso 4 — Fluoroquinolona repetida e tuberculose não reconhecida"
+    },
+    {
+      "title": "Caso 5 — Derrame pleural loculado após antibioticoterapia"
+    },
+    {
+      "title": "Caso 6 — Pneumonia grave e decisão sobre corticosteroide"
+    },
+    {
+      "title": "Caso 7 — CURB-65 baixo, mas insuficiência respiratória"
+    },
+    {
+      "title": "Caso 8 — Pneumonia com dor pleurítica e risco de TEP"
+    },
+    {
+      "title": "Caso 9 — Coinfecção viral-bacteriana em PAC grave"
+    },
+    {
+      "title": "Caso 10 — Confusão após alta e indicação de retorno"
+    },
+    {
+      "title": "Caso 11 — Radiografia que não clareou"
+    },
+    {
+      "title": "Caso 12 — Qual duração antibiótica escolher?"
+    },
+    {
+      "title": "Caso 13 — Estabilidade verdadeira e mudança da via IV para oral"
+    },
+    {
+      "title": "Caso 14 — “Falhou ao antibiótico”: na verdade havia empiema"
+    },
+    {
+      "title": "Caso 15 — Teste de influenza positivo no ambulatório"
+    },
+    {
+      "title": "Caso 16 — Vírus positivo com PAC e necessidade de internação"
+    },
+    {
+      "title": "Caso 17 — Derrame pleural que não respondeu à “troca de antibiótico”"
+    },
+    {
+      "title": "Caso 18 — Aspiração presenciada durante sedação não significa antibiótico por dez dias"
+    },
+    {
+      "title": "Caso 19 — Cavitação depois de um quadro interpretado como PAC simples"
+    },
+    {
+      "title": "10. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Internação e fisiologia além do escore"
+    },
+    {
+      "title": "Questão 2 — Falha terapêutica e derrame pleural"
+    },
+    {
+      "title": "Questão 3 — Estratificação"
+    },
+    {
+      "title": "Questão 4 — PAC grave"
+    },
+    {
+      "title": "Questão 5 — Microbiologia"
+    },
+    {
+      "title": "Questão 6 — Duração de antimicrobianos"
+    },
+    {
+      "title": "Questão 7 — Corticosteroide"
+    },
+    {
+      "title": "Questão 8 — Falha clínica"
+    },
+    {
+      "title": "Questão 9 — Diagnóstico diferencial"
+    },
+    {
+      "title": "Questão 10 — Idoso com quadro pouco febril"
+    },
+    {
+      "title": "Questão 11 — Gasometria"
+    },
+    {
+      "title": "Questão 12 — CURB-65 e ureia"
+    },
+    {
+      "title": "Questão 13 — Aspiração"
+    },
+    {
+      "title": "Questão 14 — PCR ou procalcitonina"
+    },
+    {
+      "title": "Questão 15 — Antibioticoterapia curta"
+    },
+    {
+      "title": "Questão 16 — Corticoide"
+    },
+    {
+      "title": "Questão 17 — Culturas"
+    },
+    {
+      "title": "Questão 18 — Falha terapêutica"
+    },
+    {
+      "title": "Questão 19 — Parâmetros de estabilidade"
+    },
+    {
+      "title": "Questão 20 — Transição IV→VO"
+    },
+    {
+      "title": "Questão 21 — Reimagem após melhora"
+    },
+    {
+      "title": "Questão 22 — PAC viral, mas sem comorbidades"
+    },
+    {
+      "title": "Questão 23 — Ultrassom pulmonar na suspeita de PAC"
+    },
+    {
+      "title": "Questão 24 — Interpretação do pH no derrame parapneumônico"
+    },
+    {
+      "title": "Questão 25 — Aspiração, pneumonite química e anaeróbios"
+    },
+    {
+      "title": "Questão 26 — Falha terapêutica e duração em pneumonia complicada"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "1. SBPT — Recomendações brasileiras de PAC (2018). https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/",
+    "2. ATS/IDSA — Pneumonia adquirida na comunidade em adultos (2019). https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+    "3. ATS — Diagnosis and Management of CAP (2025). https://doi.org/10.1164/rccm.202507-1692ST",
+    "4. SBPT — Consensos e diretrizes. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "5. BTS — Guideline for Pleural Disease 2023 (pleural infection, pH and drainage). https://doi.org/10.1136/thorax-2022-219784",
+    "6. ATS/IDSA — Diagnosis and Treatment of Adults with CAP 2019 (aspiration and anaerobic coverage). https://doi.org/10.1164/rccm.201908-1581ST"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/",
+    "https://doi.org/10.1164/rccm.202507-1692ST",
+    "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "https://doi.org/10.1136/thorax-2022-219784",
+    "https://doi.org/10.1164/rccm.201908-1581ST"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Comece pelos fundamentos e critérios diagnósticos; avance para decisões terapêuticas e avaliação de risco. Use os casos e questões de consolidação após estudar o corpo clínico. As fontes ao final permitem conferir normas e atualizações."
+    },
+    {
+      "text": "**Staphylococcus aureus** pode entrar no diferencial após influenza ou em doença necrosante; bacilos gram-negativos e **Pseudomonas aeruginosa** importam quando há fatores de risco validados, não por “ter ficado em hospital há muitos anos”. Idade, exposição a cuidados de saúde recentes, antibióticos prévios, bronquiectasias, isolamento prévio de patógeno resistente e gravidade influenciam a escolha do antibiótico. Evite aplicar indiscriminadamente o termo antigo “pneumonia associada aos cuidados de saúde” como justificativa para ampliar cobertura de MRSA/Pseudomonas, abandonado como categoria automática nas recomendações ATS/IDSA 2019."
+    },
+    {
+      "text": "**Exemplo:** homem com bronquiectasias e cultura respiratória recente repetidamente positiva para Pseudomonas tem probabilidade diferente de mulher de 35 anos previamente saudável sem antibiótico recente. Dar mesma terapia ampliada a ambos aumenta danos e resistência sem benefício universal."
+    },
+    {
+      "text": "O diagnóstico reúne sintomas e sinais de infecção do trato respiratório inferior e, quando possível, evidência radiológica compatível. Ausculta pode revelar estertores, sopro tubário ou redução localizada do murmúrio, mas exame físico normal não exclui pneumonia em paciente de alto risco. Radiografia auxilia na confirmação e identificação de derrame, cavitação e extensão; em cenários específicos, ultrassom pulmonar ou TC esclarece incertezas. Testes etiológicos devem ser escolhidos pelo impacto na conduta: em PAC leve tratada ambulatorialmente, nem sempre há necessidade de investigação microbiológica extensa, ao contrário de pneumonia grave o"
+    },
+    {
+      "text": "| Cenário | Decisão predominante | |---|---| | Estável, sem hipoxemia nem condição de alto risco | Considerar manejo ambulatorial e retorno programado | | Comorbidades relevantes ou barreiras sociais | Individualizar antibiótico, monitorização e local de cuidado | | Insuficiência respiratória ou instabilidade | Internação e avaliação de necessidade de suporte intensivo | | Derrame, abscesso ou ausência de melhora | Rever etiologia, complicações, diagnóstico e cobertura |"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

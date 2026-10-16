@@ -1,0 +1,382 @@
+{
+  "sha": "2f5ea5826b755b35b9e445cc5c4e68becf1a5025",
+  "path": "apostilas/_rascunhos/lote-03-047-trauma-atendimento-inicial-xabcde.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2f5ea5826b",
+  "title": "LURIA — Apostila 047: Trauma — atendimento inicial e xABCDE",
+  "format": ".md",
+  "chars_estimated": 106494,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 047: Trauma — atendimento inicial e xABCDE"
+    },
+    {
+      "title": "0. Etapa zero — benchmarking documental e matriz"
+    },
+    {
+      "title": "1. Por que o trauma é tratado por prioridades e não por órgãos"
+    },
+    {
+      "title": "1.1 Fisiologia normal: a cadeia de oferta de oxigênio"
+    },
+    {
+      "title": "1.2 Conceitos essenciais: ameaça imediata, ameaça potencial e lesão secundária"
+    },
+    {
+      "title": "2. Preparação, segurança da cena e trabalho em equipe"
+    },
+    {
+      "title": "2.1 Papéis mínimos"
+    },
+    {
+      "title": "2.2 Reavaliação começa no primeiro minuto"
+    },
+    {
+      "title": "3. xABCDE: uma arquitetura clínica dinâmica"
+    },
+    {
+      "title": "4. x — Hemorragia externa catastrófica"
+    },
+    {
+      "title": "4.1 Hemorragia externa não é sinônimo de hemorragia total"
+    },
+    {
+      "title": "5. A — Via aérea com proteção da coluna cervical"
+    },
+    {
+      "title": "5.1 O que sustenta uma via aérea pérvia?"
+    },
+    {
+      "title": "5.2 Quando antecipar uma via aérea definitiva"
+    },
+    {
+      "title": "5.3 Coluna cervical e risco de lesão medular"
+    },
+    {
+      "title": "5.4 Plano A, plano de falha e prevenção de hipóxia peri-intubação"
+    },
+    {
+      "title": "5.5 Aspiração, cânulas e contraindicações anatômicas"
+    },
+    {
+      "title": "5.6 Imobilização seletiva e regra canadense da coluna cervical"
+    },
+    {
+      "title": "5.7 Checklist de uma via aérea após três mudanças de cenário"
+    },
+    {
+      "title": "6. B — Respiração, oxigenação e ventilação"
+    },
+    {
+      "title": "6.1 Pneumotórax hipertensivo: diagnóstico clínico quando instável"
+    },
+    {
+      "title": "6.2 Hemotórax volumoso"
+    },
+    {
+      "title": "6.3 Pneumotórax aberto e lesões da parede"
+    },
+    {
+      "title": "6.4 Contusão pulmonar, aspiração e outras causas"
+    },
+    {
+      "title": "7. C — Circulação, choque e controle da fonte de sangramento"
+    },
+    {
+      "title": "7.1 As cinco regiões de hemorragia oculta mais lembradas"
+    },
+    {
+      "title": "7.2 Tipos de choque após trauma"
+    },
+    {
+      "title": "7.3 Acesso vascular e prioridades de ressuscitação"
+    },
+    {
+      "title": "7.4 Ressuscitação hemostática"
+    },
+    {
+      "title": "7.5 Ácido tranexâmico: indicação e janela"
+    },
+    {
+      "title": "7.6 Pressão permissiva não é receita universal"
+    },
+    {
+      "title": "8. D — Avaliação neurológica breve, repetível e segura"
+    },
+    {
+      "title": "8.1 Evitar confundir causa neurológica com choque"
+    },
+    {
+      "title": "8.2 Prevenir segunda agressão cerebral"
+    },
+    {
+      "title": "8.3 Escala de Coma de Glasgow: entender cada componente"
+    },
+    {
+      "title": "8.4 Pupilas, lateralização e sinais de hipertensão intracraniana"
+    },
+    {
+      "title": "8.5 TCE leve não significa ausência de risco"
+    },
+    {
+      "title": "9. E — Exposição com preservação térmica e dignidade"
+    },
+    {
+      "title": "10. Adjuntos da avaliação primária: monitoração e exames que mudam a decisão"
+    },
+    {
+      "title": "10.1 Anatomia das janelas do FAST e do eFAST"
+    },
+    {
+      "title": "10.2 Por que um exame negativo não encerra a investigação"
+    },
+    {
+      "title": "10.3 TC de corpo inteiro versus TC dirigida"
+    },
+    {
+      "title": "10.4 O que pedir no laboratório sem transformar coleta em ritual"
+    },
+    {
+      "title": "11. Avaliação secundária: depois das ameaças imediatas"
+    },
+    {
+      "title": "12. Tratamento definitivo, transferência e continuidade"
+    },
+    {
+      "title": "12.1 Cirurgia de controle de danos versus tratamento definitivo imediato"
+    },
+    {
+      "title": "12.2 Angioembolização e sangramento que não é acessível por compressão"
+    },
+    {
+      "title": "12.3 Planejamento do destino e segurança da transferência"
+    },
+    {
+      "title": "13. Interpretação integrada de sinais, valores e evolução"
+    },
+    {
+      "title": "13.1 Pulso, pressão e índice de choque"
+    },
+    {
+      "title": "13.2 Hemoglobina, lactato e déficit de base"
+    },
+    {
+      "title": "13.3 Exemplo de tendências em três momentos"
+    },
+    {
+      "title": "14. Dor, sedação, antibioticoprofilaxia e prevenção de danos"
+    },
+    {
+      "title": "15. Cinco cenários anatômicos que exigem decisões diferentes"
+    },
+    {
+      "title": "15.1 Trauma penetrante de pescoço"
+    },
+    {
+      "title": "15.2 Trauma torácico fechado com piora progressiva"
+    },
+    {
+      "title": "15.3 Trauma abdominal fechado"
+    },
+    {
+      "title": "15.4 Trauma pélvico"
+    },
+    {
+      "title": "15.5 Trauma de membro com risco vascular"
+    },
+    {
+      "title": "16. Populações especiais e diferenças na leitura dos sinais"
+    },
+    {
+      "title": "16.1 Crianças: compensação longa e colapso rápido"
+    },
+    {
+      "title": "16.2 Gestantes: dois organismos, uma ressuscitação inicial materna"
+    },
+    {
+      "title": "16.3 Idosos e pacientes com fragilidade"
+    },
+    {
+      "title": "16.4 Pessoas com doença medular, deficiência ou neurodivergência"
+    },
+    {
+      "title": "16.5 Pacientes intoxicados"
+    },
+    {
+      "title": "17. Algoritmos autorais de decisão na sala de trauma"
+    },
+    {
+      "title": "17.1 Algoritmo A: o paciente chegou sangrando e hipotenso"
+    },
+    {
+      "title": "17.2 Algoritmo B: insuficiência respiratória súbita após intubação"
+    },
+    {
+      "title": "17.3 Algoritmo C: Glasgow piorou durante observação"
+    },
+    {
+      "title": "17.4 Algoritmo D: FAST negativo em paciente instável"
+    },
+    {
+      "title": "18. Tabelas de alta utilidade para provas e prática"
+    },
+    {
+      "title": "18.1 Comparação rápida de tipos de choque"
+    },
+    {
+      "title": "18.2 Escolher exame pelo problema e pela estabilidade"
+    },
+    {
+      "title": "18.3 Quadro de erros frequentes"
+    },
+    {
+      "title": "19. Comunicação, documentação e segurança assistencial"
+    },
+    {
+      "title": "20. Caso clínico comentado 1 — Sangramento de membro e choque oculto"
+    },
+    {
+      "title": "21. Caso clínico comentado 2 — Colapso após ventilação com pressão positiva"
+    },
+    {
+      "title": "22. Caso clínico comentado 3 — FAST negativo e hemorragia pélvica"
+    },
+    {
+      "title": "23. Caso clínico comentado 4 — Idoso anticoagulado e declínio tardio de consciência"
+    },
+    {
+      "title": "24. Caso clínico comentado 5 — Gestante politraumatizada sem sangramento vaginal"
+    },
+    {
+      "title": "25. Caso clínico comentado 6 — Criança com choque compensado após atropelamento"
+    },
+    {
+      "title": "26. Questões originais de residência — análise de todas as alternativas"
+    },
+    {
+      "title": "Questão 1 — Primeira prioridade no trauma de extremidade"
+    },
+    {
+      "title": "Questão 2 — Pressão preservada, perfusão ruim"
+    },
+    {
+      "title": "Questão 3 — Pneumotórax hipertensivo com instabilidade"
+    },
+    {
+      "title": "Questão 4 — FAST negativo"
+    },
+    {
+      "title": "Questão 5 — Ácido tranexâmico"
+    },
+    {
+      "title": "Questão 6 — Deterioração de consciência no idoso"
+    },
+    {
+      "title": "Questão 7 — Choque e lesão medular"
+    },
+    {
+      "title": "Questão 8 — Trauma na gestação"
+    },
+    {
+      "title": "Questão 9 — Criança após trauma"
+    },
+    {
+      "title": "Questão 10 — Medidas associadas à hemorragia maciça"
+    },
+    {
+      "title": "Questão 11 — Via aérea e confirmação"
+    },
+    {
+      "title": "Questão 12 — O momento da avaliação secundária"
+    },
+    {
+      "title": "27. Matriz de cobertura e teste de autossuficiência — revisão editorial ainda aberta"
+    },
+    {
+      "title": "28. Referências principais verificáveis e hierarquia de uso"
+    },
+    {
+      "title": "29. Plano da camada visual — candidatas, não imagens incorporadas"
+    },
+    {
+      "title": "30. Auditoria final — status ainda não certificado"
+    }
+  ],
+  "reference_entries": [
+    "1. **American College of Surgeons.** Advanced Trauma Life Support (ATLS), 11th edition, informação institucional sobre curso e estrutura xABCDE, 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "2. **American College of Surgeons.** Trauma Care Gets Major Upgrade with Launch of ATLS 11, 16 September 2025. https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/",
+    "3. **National Institute for Health and Care Excellence (NICE).** NG39: Major trauma — assessment and initial management. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+    "4. **Rossaint R, Afshari A, Bouillon B, et al.** The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. DOI 10.1186/s13054-023-04327-7. https://link.springer.com/article/10.1186/s13054-023-04327-7",
+    "5. **World Health Organization; International Committee of the Red Cross.** Basic Emergency Care: Approach to the Acutely Ill and Injured. WHO; 2018. https://www.who.int/publications/i/item/9789241513081",
+    "6. **NICE.** Spinal injury: assessment and initial management, NG41. Consulta de regras de restrição de movimento e investigação por cenário deve ser realizada na revisão científica específica. https://www.nice.org.uk/guidance/ng41",
+    "**Nota de rastreabilidade:** a divulgação pública da ACS confirma a mudança para xABCDE, mas não dá acesso ao manual ATLS 11 integral sob licença. Este texto **não afirma** ter auditado cada linha do manual pago. Recomendação medicamentosa e escolhas técnicas descritas devem ser validadas pelo texto integral das diretrizes abertas e normas institucionais brasileiras antes de publicação.",
+    "1. Foto clínica real de torniquete corretamente aplicado em extremidade com demonstração de nível anatômico e referência visual; objetivo: distinguir torniquete de compressão direta.",
+    "2. Esquema autoral vetorial de xABCDE com ramificação de ressuscitação e reavaliação; objetivo: mostrar a natureza circular do protocolo (não é imagem clínica).",
+    "3. Radiografia de tórax real mostrando pneumotórax significativo, com legenda de sinais; objetivo: interpretar pleura e expansão.",
+    "4. Sequência de ultrassom pulmonar real com deslizamento pleural e ausência de deslizamento em contexto apropriado; objetivo: ensinar limitação/achados do eFAST.",
+    "5. Ultrassom FAST com líquido livre em bolsa hepatorrenal, com setas e fonte clínica; objetivo: interpretar janela positiva.",
+    "6. Ultrassom FAST em janela pélvica, preferencialmente com comparação normal/alterada; objetivo: anatomia e sensibilidade.",
+    "7. TC abdominal com lesão de baço e hemoperitônio em paciente estável; objetivo: diferenciar indicação de TC e de cirurgia.",
+    "8. Radiografia de pelve com fratura de anel e exemplo de posicionamento de binder demonstrativo; objetivo: reconhecer risco de sangramento e evitar binder sobre cintura.",
+    "9. Exemplo didático real de hematoma epidural/subdural com autorização institucional para inclusão; objetivo: justificar deterioração neurológica, mantendo detalhamento no capítulo 052.",
+    "10. Algoritmo vetorial original de escolha entre avaliação à beira-leito, TC e hemostasia; objetivo: ensinar a decisão condicionada à estabilidade.",
+    "**Pendências para cada candidata:** identificar proprietário, origem primária, licença válida para uso comercial e eventuais exigências de atribuição; verificar correspondência clínica; preparar legenda, objetivo e seção de destino; converter para WebP otimizado; submeter e aguardar aprovação no Admin. Não copiar figuras protegidas do ATLS nem dos PDFs privados.",
+    "- [x] Recorte curricular identificado como nº 047 do lote 3.",
+    "- [x] Benchmark comparativo efetivamente aberto e descrito; procedência institucional não inventada.",
+    "- [x] Apostila LURIA existente de referência visual inspecionada, sem alteração.",
+    "- [x] Texto autoral com fisiologia normal antes da patologia, xABCDE, condutas, populações especiais e seis casos.",
+    "- [x] Doze questões autorais com quatro alternativas A–D, cada uma com justificativas e minirrevisão; revisar adequação ao padrão final da plataforma.",
+    "- [x] Diagnósticos diferenciais e algoritmos de decisão ao longo dos capítulos.",
+    "- [ ] Contagem de caracteres **didáticos úteis**, eliminando cabeçalhos, referências, tabelas e repetições, com validador apropriado.",
+    "- [ ] Revisão técnica independente e avaliação explícita de doses, contraindicações e divergências entre protocolos.",
+    "- [ ] Aprofundamento adicional onde teste com questões externas relevantes revelar lacunas.",
+    "- [ ] Seleção e aprovação efetiva de imagens no fluxo centralizado do Admin.",
+    "- [ ] Transformação para template HTML/content.json, testes de sintaxe, auditoria desktop/PWA, liberação editorial e deploy.",
+    "**Conclusão:** manuscrito substancial, em revisão, não publicado. O comprimento bruto do Markdown não certifica qualidade, segurança de uso clínico nem autossuficiência."
+  ],
+  "external_urls": [
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/.",
+    "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations.",
+    "https://doi.org/10.1186/s13054-023-04327-7.",
+    "https://www.who.int/publications/i/item/9789241513081.",
+    "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/",
+    "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+    "https://link.springer.com/article/10.1186/s13054-023-04327-7",
+    "https://www.who.int/publications/i/item/9789241513081",
+    "https://www.nice.org.uk/guidance/ng41"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Núcleo | Benchmark do Drive | Esta produção autoral | Teste de saída | |---|---|---|---| | Preparação e priorização | Citado superficialmente | Papéis, comunicação, fisiologia do risco, prevenção de erro | Simulações de decisão | | Hemorragia externa catastrófica | Pouco diferenciada do C | xABCDE com controle imediato | Torniquete, compressão, empacotamento | | Via aérea e coluna | Algoritmo muito compacto | Indicações, escolha de estratégia, complicações, coluna | Cenários de via aérea difícil | | Ventilação/lesões letais | Lista de diagnósticos | Integração clínica, intervenções e reavaliação | Diferenciais de insuficiência respiratória "
+    },
+    {
+      "text": "O trauma grave altera simultaneamente três elementos da sobrevivência: troca gasosa, transporte de oxigênio no sangue e perfusão de órgãos. É possível haver pulmão relativamente preservado com hipoperfusão fatal causada por hemorragia, ou pressão arterial normal com hipoxemia grave por obstrução de via aérea. O atendimento inicial não busca fazer todos os diagnósticos; busca reconhecer e resolver, em ordem operacional, aquilo que mata antes de qualquer exame."
+    },
+    {
+      "text": "A Canadian C-spine Rule é instrumento de estratificação para pacientes adequados à avaliação clínica, não licença para movimentos inseguros em qualquer traumatizado. Entre fatores de alto risco estão idade a partir de 65 anos, parestesias em extremidades e mecanismos perigosos definidos pela regra (por exemplo, queda maior que 1 metro ou cinco degraus, carga axial cervical, colisão de alta energia, capotamento ou ejeção). Na presença de fator de alto risco, a imagem costuma ser indicada conforme protocolo."
+    },
+    {
+      "text": "O mais frequente no trauma grave com hipotensão e hipoperfusão é o hemorrágico, mas os diferenciais mudam intervenções: - **Hemorrágico:** perda de sangue e redução de retorno venoso/débito cardíaco; procurar fonte e controlar sangramento, administrar hemocomponentes conforme protocolo. - **Obstrutivo:** pneumotórax hipertensivo ou tamponamento cardíaco dificultam enchimento/ejeção; sangue não resolve a obstrução. - **Cardiogênico:** contusão miocárdica ou evento cardíaco coincidente, com falência de bomba; quadro deve ser individualizado. - **Distributivo/neurogênico:** perda de resistência vascular após lesão medular alta; diagnóstico exige"
+    },
+    {
+      "text": "No adulto vítima de trauma com sangramento significativo ou risco de sangramento significativo, a diretriz europeia de 2023 recomenda administração precoce, em até **3 horas após a lesão**, no esquema de **1 g IV em 10 minutos, seguido de 1 g IV durante 8 horas**. NICE também recomenda TXA prontamente em sangramento maior suspeito/ativo e, em regra, não o administrar após 3 horas sem evidência específica de hiperfibrinólise. A indicação não é universal para todo traumatizado; não adiar hemostasia ou transfusão para aplicar TXA. Dose e elegibilidade pediátricas devem ser conferidas no protocolo específico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

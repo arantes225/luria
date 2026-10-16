@@ -1,0 +1,357 @@
+{
+  "sha": "54145da3d0444b8f5526c6560f86a98f6fd9fa8d",
+  "path": "apostilas/_rascunhos/lote-10-207-prolapso-incontinencia-urinaria-feminina.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--54145da3d0",
+  "title": "LURIA | Apostila 207 — Prolapso genital e incontinência urinária feminina",
+  "format": ".md",
+  "chars_estimated": 73340,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 207 — Prolapso genital e incontinência urinária feminina"
+    },
+    {
+      "title": "0. Etapa zero e comparação"
+    },
+    {
+      "title": "1. Objetivos e fluxo clínico"
+    },
+    {
+      "title": "2. Anatomia pélvica e fisiologia da continência"
+    },
+    {
+      "title": "2.1. Armazenar urina é processo ativo"
+    },
+    {
+      "title": "2.2. Pressão abdominal, uretra e sustentação"
+    },
+    {
+      "title": "2.3. Diafragma pélvico e fáscias"
+    },
+    {
+      "title": "2.4. Vaginal, vesical e retal são compartimentos integrados"
+    },
+    {
+      "title": "3. Definições clínicas: não confundir perdas com urgência"
+    },
+    {
+      "title": "3.1. Incontinência urinária de esforço (IUE)"
+    },
+    {
+      "title": "3.2. Incontinência de urgência (IUU)"
+    },
+    {
+      "title": "3.3. Incontinência mista"
+    },
+    {
+      "title": "3.4. Outras formas que alteram o diagnóstico"
+    },
+    {
+      "title": "4. Epidemiologia e fatores de risco com interpretação crítica"
+    },
+    {
+      "title": "5. Anamnese que define o fenótipo"
+    },
+    {
+      "title": "5.1. Diário miccional"
+    },
+    {
+      "title": "5.2. Qualidade de vida e objetivos"
+    },
+    {
+      "title": "5.3. História medicamentosa e sistêmica"
+    },
+    {
+      "title": "6. Exame físico dirigido e sinais de alerta"
+    },
+    {
+      "title": "6.1. Exame geral e neurológico"
+    },
+    {
+      "title": "6.2. Exame pélvico e da musculatura"
+    },
+    {
+      "title": "6.3. Prolapso não é diagnóstico apenas de ultrassom"
+    },
+    {
+      "title": "7. POP-Q: medir, estadiar e interpretar"
+    },
+    {
+      "title": "7.1. O hímen é o plano de referência"
+    },
+    {
+      "title": "7.2. Estadiamento simplificado"
+    },
+    {
+      "title": "7.3. Tipos de prolapso e nomes anatômicos"
+    },
+    {
+      "title": "8. Propedêutica e exames complementares: quando realmente mudam decisão"
+    },
+    {
+      "title": "8.1. Urina tipo 1 e urocultura"
+    },
+    {
+      "title": "8.2. Resíduo pós-miccional"
+    },
+    {
+      "title": "8.3. Teste de tosse com redução de prolapso"
+    },
+    {
+      "title": "8.4. Urofluxometria"
+    },
+    {
+      "title": "8.5. Estudo urodinâmico: compreender o princípio antes de indicar"
+    },
+    {
+      "title": "8.6. Escalas validadas e medidas de resultado"
+    },
+    {
+      "title": "8.7. Exames de imagem"
+    },
+    {
+      "title": "9. Manejo conservador da incontinência urinária de esforço"
+    },
+    {
+      "title": "9.1. Educação e prioridades"
+    },
+    {
+      "title": "9.2. Treinamento muscular do assoalho pélvico (TMAP/PFMT)"
+    },
+    {
+      "title": "9.3. Dispositivos e medidas de suporte"
+    },
+    {
+      "title": "9.4. Medicamentos: o que não prometer"
+    },
+    {
+      "title": "9.5. Quando encaminhar"
+    },
+    {
+      "title": "10. Síndrome da bexiga hiperativa: tratar urgência com segurança"
+    },
+    {
+      "title": "10.1. Avaliação inicial"
+    },
+    {
+      "title": "10.2. Treino vesical e modificações comportamentais"
+    },
+    {
+      "title": "10.3. Antimuscarínicos"
+    },
+    {
+      "title": "10.4. Agonistas β3-adrenérgicos"
+    },
+    {
+      "title": "10.5. Terapias minimamente invasivas"
+    },
+    {
+      "title": "10.6. Fatores psicológicos e qualidade de vida"
+    },
+    {
+      "title": "11. Prolapso de órgãos pélvicos: decisão conservadora ou cirúrgica"
+    },
+    {
+      "title": "11.1. O que realmente indica tratamento?"
+    },
+    {
+      "title": "11.2. Conservador: reabilitação e hábitos"
+    },
+    {
+      "title": "11.3. Pessários vaginais"
+    },
+    {
+      "title": "11.4. Planejamento cirúrgico por compartimento"
+    },
+    {
+      "title": "11.5. Avaliar objetivos sexuais e reprodutivos"
+    },
+    {
+      "title": "11.6. Consentimento e riscos cirúrgicos"
+    },
+    {
+      "title": "12. Incontinência de esforço: cirurgias e decisão individual"
+    },
+    {
+      "title": "12.1. Quando considerar cirurgia"
+    },
+    {
+      "title": "12.2. Sling de uretra média"
+    },
+    {
+      "title": "12.3. Alternativas sem sling sintético"
+    },
+    {
+      "title": "12.4. IUE mista e cirurgia de prolapso concomitante"
+    },
+    {
+      "title": "13. Populações especiais e situações que exigem avaliação diferenciada"
+    },
+    {
+      "title": "13.1. Gestação e puerpério"
+    },
+    {
+      "title": "13.2. Menopausa"
+    },
+    {
+      "title": "13.3. Pessoas idosas e fragilidade"
+    },
+    {
+      "title": "13.4. Doença neurológica"
+    },
+    {
+      "title": "13.5. Pós-cirurgia ginecológica e pós-radioterapia"
+    },
+    {
+      "title": "13.6. Sintomas intestinais e disfunção evacuatória"
+    },
+    {
+      "title": "14. Fluxos práticos para APS e ambulatório especializado"
+    },
+    {
+      "title": "Fluxo A — Queixa “estou perdendo xixi”"
+    },
+    {
+      "title": "Fluxo B — Sensação de bola vaginal"
+    },
+    {
+      "title": "Fluxo C — Urgência com noctúria"
+    },
+    {
+      "title": "Fluxo D — Prolapso com possível IUE oculta"
+    },
+    {
+      "title": "15. Comparação diferencial de síndromes miccionais"
+    },
+    {
+      "title": "16. Casos clínicos comentados — de queixa inespecífica a decisão segura"
+    },
+    {
+      "title": "Caso 1 — Atleta jovem que perde urina ao correr"
+    },
+    {
+      "title": "Caso 2 — Urgência e cognição em mulher idosa"
+    },
+    {
+      "title": "Caso 3 — Perda mista: melhora parcial e prioridades diferentes"
+    },
+    {
+      "title": "Caso 4 — Prolapso avançado e perda de esforço oculta"
+    },
+    {
+      "title": "Caso 5 — Prolapso e retenção com risco renal"
+    },
+    {
+      "title": "Caso 6 — Perda contínua após cirurgia pélvica"
+    },
+    {
+      "title": "Caso 7 — Noctúria que não é bexiga hiperativa"
+    },
+    {
+      "title": "Caso 8 — Recidiva após sling e sintomas complexos"
+    },
+    {
+      "title": "17. Questões autorais estilo ENAMED/residência — comentários por alternativa"
+    },
+    {
+      "title": "Questão 1 — Mecanismo de IUE"
+    },
+    {
+      "title": "Questão 2 — Primeiro tratamento da IUE não complicada"
+    },
+    {
+      "title": "Questão 3 — Noctúria e urgência"
+    },
+    {
+      "title": "Questão 4 — Medicação e cognição"
+    },
+    {
+      "title": "Questão 5 — POP-Q estádio II"
+    },
+    {
+      "title": "Questão 6 — Prolapso e ressurgimento da IUE"
+    },
+    {
+      "title": "Questão 7 — Cuidado com pessário"
+    },
+    {
+      "title": "Questão 8 — Urodinâmica pré-operatória"
+    },
+    {
+      "title": "Questão 9 — Perda contínua pós-histerectomia"
+    },
+    {
+      "title": "Questão 10 — Prolapso com risco renal"
+    },
+    {
+      "title": "Questão 11 — Diferença entre prolapso e IUE"
+    },
+    {
+      "title": "Questão 12 — Tratamento de POP estágio I–II"
+    },
+    {
+      "title": "18. Pérolas de prova e erros que prejudicam o cuidado"
+    },
+    {
+      "title": "19. Síntese clínica em quadro de alta utilidade"
+    },
+    {
+      "title": "20. Camada visual — dez candidatas, nenhuma incorporada"
+    },
+    {
+      "title": "21. Referências e documentação de origem"
+    },
+    {
+      "title": "22. Auditoria editorial antes de qualquer publicação"
+    }
+  ],
+  "reference_entries": [
+    "1. National Institute for Health and Care Excellence. **NG123 — Urinary incontinence and pelvic organ prolapse in women: management**. Publicada em 2019, recomendações vigentes consultadas em 15/10/2026. https://www.nice.org.uk/guidance/ng123/chapter/Recommendations . **Usada para:** avaliação clínica, diário, urodinâmica seletiva, 3 meses de treino para IUE/mista, 16 semanas para POP-Q I–II, pessário e cirurgia.",
+    "2. National Institute for Health and Care Excellence. **NG210 — Pelvic floor dysfunction: prevention and non-surgical management**. https://www.nice.org.uk/guidance/ng210/chapter/Recommendations . **Usada para:** prevenção, avaliação e manejo conservador do assoalho pélvico.",
+    "3. Cameron AP, Chung DE, Dielubanza EJ et al. **The AUA/SUFU Guideline on the Diagnosis and Treatment of Idiopathic Overactive Bladder**. *J Urol.* 2024;212:11–20. DOI: **10.1097/JU.0000000000003985**; PMID 38651651. https://www.auajournals.org/doi/10.1097/JU.0000000000003985 . **Usada para:** tratamento de BHA, antimuscarínicos, β3, cautela cognitiva e terapias procedimentais.",
+    "4. International Continence Society. **ICS Standards 2023 — terminologia de continência, prolapso e disfunções do assoalho pélvico**. https://www.ics.org/Publications/ICS%20Standards%202023.pdf . **Usada para:** terminologia e descrição do POP-Q; consultar relatório específico quando houver dúvida em medidas.",
+    "5. International Urogynecological Association (IUGA). **Patient information and clinical resources on pelvic organ prolapse**. https://www.iuga.org/ . **Uso:** educação e terminologia, não como substituto de diretriz terapêutica.",
+    "6. LURIA, materiais originais internos a manter consistentes: outras apostilas sobre obstetrícia, geriatria, cuidado na atenção primária e farmacologia da plataforma. **Não equivalem a validação de conteúdo da aula 207.**",
+    "**Limites:** as diretrizes NICE e AUA/SUFU não substituem automaticamente diretrizes/serviços brasileiros. Disponibilidade no SUS, regulamentação Anvisa de materiais protéticos e fármacos, acesso a fisioterapia/pessários e detalhes de consentimento local devem ser confirmados antes de publicar. O benchmarking direto com apostila de POP ainda precisa ser completado.",
+    "**Regra final:** apresentar terapia como possibilidade condicionada, não como prescrição sem exame. Nenhum classificador, escore POP-Q, faixa de VLPP ou achado urodinâmico isolado substitui hipótese clínica e preferências. A publicação requer fontes diretas específicas, revisão médica e avaliação de legibilidade/funcionamento, além de extensão e qualidade."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng123/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/ng210/chapter/Recommendations",
+    "https://www.auajournals.org/doi/10.1097/JU.0000000000003985",
+    "https://www.ics.org/Publications/ICS%20Standards%202023.pdf",
+    "https://www.iuga.org/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Google Drive, consulta real em 15/10/2026:** - PDF “01 - INCONTINENCIA URINARIA ESFORCO.pdf”: cerca de 7,1 mil caracteres extraíveis; estudados história, exame físico, fisiologia da continência, pressão abdominal e opções clínicas/cirúrgicas. **Cautelas científicas:** não reproduzir classificações simplistas por pressão de perda como diagnóstico definitivo de hipermobilidade versus deficiência esfincteriana; não apresentar laser vaginal como terapia padrão nem duloxetina como ISRS (é um inibidor de recaptação de serotonina e noradrenalina — IRSN). - PDF “11 - RESUMO - UROLOGIA - SINDROME DA BEXIGA HIPERATIVA E BEXIGA DOLOROSA.pdf”: cerca de"
+    },
+    {
+      "text": "Investigar expectativas: alívio sem cirurgia, desejo de gestar, manutenção de relações vaginais, possibilidade de manejar pessário e tolerância a medicamentos. Não recomendar cirurgia apenas por estadiamento elevado se a pessoa não tem sintomas significativos, depois de excluir repercussões."
+    },
+    {
+      "text": "Se prolapso é visível clinicamente, imagem de rotina exclusivamente para “confirmá-lo” geralmente não é necessária. Ultrassom ou ressonância podem ser úteis para lesões concomitantes, anatomia cirúrgica complexa, massas ou discrepância clínica, conforme avaliação especializada. A NICE NG123 recomenda não solicitar imagem de rotina apenas para documentar prolapso identificado no exame."
+    },
+    {
+      "text": "Indicações selecionadas incluem sintomas mistos com diagnóstico incerto, cirurgias anteriores de continência, suspeita de disfunção de esvaziamento/obstrução, incontinência complicada e situações em que resultados mudariam a intervenção planejada. **Não solicitar urodinâmica de rotina para toda paciente com IUE típica demonstrada, sem fatores complicadores, antes de tratamento conservador**; até antes de cirurgia, algumas diretrizes dispensam o exame em casos de IUE não complicada demonstrada clinicamente."
+    },
+    {
+      "text": "Recomendado como primeiro tratamento de IUE ou IU mista em muitas diretrizes, com programa supervisionado de pelo menos **três meses**. NICE NG123 descreve mínimo de oito contrações por sessão, três vezes ao dia, com adaptação e avaliação da técnica. A intensidade e progressão são individualizadas; as fibras musculares precisam de coordenação, força e resistência, não apenas quantidade de repetições."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

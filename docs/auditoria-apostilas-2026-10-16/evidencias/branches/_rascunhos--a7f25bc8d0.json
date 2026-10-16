@@ -1,0 +1,179 @@
+{
+  "sha": "a7f25bc8d092f8d6f97a8d5a24cde85dc2a5d983",
+  "path": "apostilas/_rascunhos/lote-06-127-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--a7f25bc8d0",
+  "title": "Hemorragia Digestiva Alta",
+  "format": ".json",
+  "chars_estimated": 81083,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes",
+      "title": "Apresentação"
+    },
+    {
+      "id": "cap-01-o-desafio-da-hda-estabilizar-uma-sindrome-ant",
+      "title": "1. O desafio da HDA: estabilizar uma síndrome antes de conhecer a lesão"
+    },
+    {
+      "id": "cap-02-anatomia-e-hemostasia-que-explicam-a-apresent",
+      "title": "2. Anatomia e hemostasia que explicam a apresentação"
+    },
+    {
+      "id": "cap-03-etiologias-de-hda-e-pistas-de-reconhecimento",
+      "title": "3. Etiologias de HDA e pistas de reconhecimento"
+    },
+    {
+      "id": "cap-04-anamnese-e-exame-inicial-descobrir-risco-sem-",
+      "title": "4. Anamnese e exame inicial: descobrir risco sem perder minutos"
+    },
+    {
+      "id": "cap-05-abordagem-de-choque-hemorragico-agir-antes-de",
+      "title": "5. Abordagem de choque hemorrágico: agir antes de o Hb cair"
+    },
+    {
+      "id": "cap-06-classificacao-de-risco-glasgow-blatchford-roc",
+      "title": "6. Classificação de risco: Glasgow–Blatchford, Rockall e julgamento"
+    },
+    {
+      "id": "cap-07-endoscopia-momento-apropriado-e-depois-da-rea",
+      "title": "7. Endoscopia: momento apropriado é depois da reanimação, não simplesmente “o mais cedo possível”"
+    },
+    {
+      "id": "cap-08-ulcera-peptica-hemorragica-fisiopatologia-e-r",
+      "title": "8. Úlcera péptica hemorrágica: fisiopatologia e risco real"
+    },
+    {
+      "id": "cap-09-hemostasia-endoscopica-em-ulcera-tecnicas-e-a",
+      "title": "9. Hemostasia endoscópica em úlcera: técnicas e atualização ESGE 2026"
+    },
+    {
+      "id": "cap-10-ibp-antes-e-depois-da-endoscopia-nao-sao-a-me",
+      "title": "10. IBP: antes e depois da endoscopia não são a mesma indicação"
+    },
+    {
+      "id": "cap-11-helicobacter-pylori-e-aines-prevenir-ressangr",
+      "title": "11. Helicobacter pylori e AINEs: prevenir ressangramento de verdade"
+    },
+    {
+      "id": "cap-12-laceracao-de-mallory-weiss-gastropatia-e-caus",
+      "title": "12. Laceração de Mallory–Weiss, gastropatia e causas menos comuns"
+    },
+    {
+      "id": "cap-13-hemorragia-digestiva-varicosa-reconhecer-ramo",
+      "title": "13. Hemorragia digestiva varicosa: reconhecer ramo de hipertensão portal imediatamente"
+    },
+    {
+      "id": "cap-14-varizes-gastricas-portal-hipertensiva-e-tips-",
+      "title": "14. Varizes gástricas, portal hipertensiva e TIPS: escolher pela anatomia"
+    },
+    {
+      "id": "cap-15-antitromboticos-antiagregantes-e-hemorragia-e",
+      "title": "15. Antitrombóticos, antiagregantes e hemorragia: equilíbrio fino"
+    },
+    {
+      "id": "cap-16-hemorragia-pos-operatoria-anastomoses-e-anato",
+      "title": "16. Hemorragia pós-operatória, anastomoses e anatomia alterada"
+    },
+    {
+      "id": "cap-17-hda-no-idoso-gestante-e-pessoas-com-comorbida",
+      "title": "17. HDA no idoso, gestante e pessoas com comorbidades"
+    },
+    {
+      "id": "cap-18-quando-a-endoscopia-nao-revela-a-fonte-uma-se",
+      "title": "18. Quando a endoscopia não revela a fonte: uma segunda hipótese anatômica"
+    },
+    {
+      "id": "cap-19-angio-tc-embolizacao-transcateter-e-cirurgia-",
+      "title": "19. Angio-TC, embolização transcateter e cirurgia: tratamento além da endoscopia"
+    },
+    {
+      "id": "cap-20-pos-endoscopia-nutricao-ferro-alta-e-seguimen",
+      "title": "20. Pós-endoscopia: nutrição, ferro, alta e seguimento"
+    },
+    {
+      "id": "cap-21-prognostico-complicacoes-e-sinais-de-falha",
+      "title": "21. Prognóstico, complicações e sinais de falha"
+    },
+    {
+      "id": "cap-22-diferenciais-que-mais-causam-erro-em-prova-e-",
+      "title": "22. Diferenciais que mais causam erro em prova e emergência"
+    },
+    {
+      "id": "cap-23-algoritmo-completo-para-a-sala-de-emergencia",
+      "title": "23. Algoritmo completo para a sala de emergência"
+    },
+    {
+      "id": "cap-24-perguntas-frequentes-que-confundem-pratica-cl",
+      "title": "24. Perguntas frequentes que confundem prática clínica"
+    },
+    {
+      "id": "cap-25-revisao-de-alto-rendimento-para-enamed-e-resi",
+      "title": "25. Revisão de alto rendimento para ENAMED e residência"
+    },
+    {
+      "id": "cap-26-oito-casos-clinicos-comentados-de-hemorragia-",
+      "title": "26. Oito casos clínicos comentados de hemorragia digestiva alta"
+    },
+    {
+      "id": "cap-27-doze-questoes-autorais-comentadas-hda-e-endos",
+      "title": "27. Doze questões autorais comentadas — HDA e endoscopia"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"ESGE 2026 — peptic ulcer bleeding\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/42127996/\"}",
+    "{\"label\":\"ESGE 2021 — NVUGIH\",\"url\":\"https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021\"}",
+    "{\"label\":\"ACG 2021 — UGIB\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/33929377/\"}",
+    "{\"label\":\"ESGE 2022 — variceal hemorrhage\",\"url\":\"https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage\"}",
+    "{\"label\":\"Baveno VIII 2026\",\"url\":\"https://doi.org/10.1016/j.jhep.2026.07.030\"}",
+    "{\"label\":\"AASLD — portal hypertension\",\"url\":\"https://doi.org/10.1097/HEP.0000000000000647\"}",
+    "{\"label\":\"NICE CG141\",\"url\":\"https://www.nice.org.uk/guidance/cg141/chapter/Recommendations\"}",
+    "{\"label\":\"ESGE guidelines\",\"url\":\"https://www.esge.com/publications/guidelines\"}",
+    "{\"label\":\"Sociedade Brasileira de Hepatologia\",\"url\":\"https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/\"}",
+    "{\"label\":\"NICE TA697\",\"url\":\"https://www.nice.org.uk/guidance/ta697\"}"
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021",
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+    "https://doi.org/10.1016/j.jhep.2026.07.030",
+    "https://doi.org/10.1097/HEP.0000000000000647",
+    "https://www.nice.org.uk/guidance/cg141/chapter/Recommendations",
+    "https://www.esge.com/publications/guidelines",
+    "https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/",
+    "https://www.nice.org.uk/guidance/ta697"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Choque, hipotermia, acidose, uso de antiagregantes/anticoagulantes e trombocitopenia podem agravar hemorragia, mas a interpretação é contextual. INR isolado em cirrose não mede adequadamente todo o risco hemorrágico, pois há alterações simultâneas de fatores pró e anticoagulantes. Corrigir INR com plasma em todo cirrótico com varizes não é rotina recomendada; sobrecarga volêmica pode aumentar hipertensão portal. Em uso de varfarina ou anticoagulante oral direto com hemorragia ameaçadora à vida, pode haver indicação de reversão específica conforme fármaco, gravidade e protocolos — situações distintas da coagulopatia intrínseca da cirrose."
+    },
+    {
+      "text": "Nas HDA graves com estômago repleto de sangue/coágulos e necessidade de EDA, eritromicina IV antes do procedimento pode favorecer visualização em pacientes selecionados, se não houver contraindicações. A ESGE 2026 acrescentou que metoclopramida intravenosa pode ser considerada quando eritromicina IV não estiver disponível, em casos selecionados de sangramento clinicamente grave ou ativo. Isso não autoriza usar procinético em todos nem atrasar EDA até obter medicamento. Avaliar ECG/QT, interações e condições individuais conforme fármaco."
+    },
+    {
+      "text": "O Rockall combina idade, sinais de choque, comorbidade e, no escore completo, diagnóstico endoscópico e estigmas de sangramento recente. Útil para prognóstico de mortalidade/ressangramento; porém, não confundir com GBS pré-EDA na pergunta sobre necessidade de intervenção. Scores não substituem Forrest quando a pergunta é risco específico de úlcera encontrada e indicação de hemostasia."
+    },
+    {
+      "text": "A ESGE 2021 recomenda EDA precoce em até 24 horas após ressuscitação hemodinâmica para HDA não varicosa; a ACG 2021 também sugere EDA em até 24 horas em internados. A ESGE 2026 de úlcera hemorrágica mantém oposição a EDA emergente ≤6 h ou urgente ≤12 h rotineiras, salvo se o paciente permanece instável apesar de reanimação adequada. Isso parece paradoxal, mas a pressa em sedar doente não ressuscitado pode piorar hipotensão, aspiração e visibilidade, sem benefício em resultados para maioria dos estáveis."
+    },
+    {
+      "text": "Na HDA varicosa, a urgência é maior; documentos de hepatologia/endoscopia frequentemente recomendam EDA em até 12 horas após ressuscitação em pacientes elegíveis, considerando disponibilidade e gravidade. Iniciar vasoativo esplâncnico e antibiótico profilático antes da EDA desde a suspeita, sem aguardar confirmação de varizes. Não confundir a recomendação de “não fazer EDA ultrarrápida de rotina na úlcera não varicosa estável” com permissão de postergar HDA varicosa grave."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

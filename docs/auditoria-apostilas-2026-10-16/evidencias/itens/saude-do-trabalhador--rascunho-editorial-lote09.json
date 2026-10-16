@@ -1,0 +1,773 @@
+{
+  "key": "saude-do-trabalhador--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/saude-do-trabalhador/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 165 — Saúde do trabalhador e da trabalhadora",
+  "source_sha256": "221ed1c677a96bc117ffcf1171946e8ee5cc1230681c84b244d6d756930c79c7",
+  "chars_estimated": 104371,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 165 — Saúde do trabalhador e da trabalhadora",
+      "level": 1
+    },
+    {
+      "line": 12,
+      "title": "1. Objetivos e mapa de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 27,
+      "title": "Percurso da aula",
+      "level": 3
+    },
+    {
+      "line": 31,
+      "title": "2. Conceitos fundamentais: da ocupação ao processo saúde–doença",
+      "level": 2
+    },
+    {
+      "line": 45,
+      "title": "Três dimensões de causalidade",
+      "level": 3
+    },
+    {
+      "line": 53,
+      "title": "Causas necessárias, componentes e concausas",
+      "level": 3
+    },
+    {
+      "line": 59,
+      "title": "3. Panorama epidemiológico e determinantes sociais",
+      "level": 2
+    },
+    {
+      "line": 67,
+      "title": "O erro do “trabalhador padrão”",
+      "level": 3
+    },
+    {
+      "line": 71,
+      "title": "4. Classificação dos riscos ocupacionais",
+      "level": 2
+    },
+    {
+      "line": 84,
+      "title": "Agente, via, dose e tempo",
+      "level": 3
+    },
+    {
+      "line": 90,
+      "title": "5. Como fazer anamnese ocupacional de alto rendimento",
+      "level": 2
+    },
+    {
+      "line": 94,
+      "title": "Roteiro completo (10 perguntas-chave)",
+      "level": 3
+    },
+    {
+      "line": 107,
+      "title": "Exemplo de anotação clínica útil",
+      "level": 3
+    },
+    {
+      "line": 113,
+      "title": "Cronologia e prova de exposição",
+      "level": 3
+    },
+    {
+      "line": 119,
+      "title": "6. Diagnóstico e investigação do nexo",
+      "level": 2
+    },
+    {
+      "line": 121,
+      "title": "Fluxo clínico de avaliação",
+      "level": 3
+    },
+    {
+      "line": 132,
+      "title": "Ferramentas epidemiológicas e limitações",
+      "level": 3
+    },
+    {
+      "line": 138,
+      "title": "Diferenciais transversais",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "7. LER/DORT: diagnóstico, diferenciais e tratamento",
+      "level": 2
+    },
+    {
+      "line": 144,
+      "title": "O que são",
+      "level": 3
+    },
+    {
+      "line": 150,
+      "title": "Principais manifestações",
+      "level": 3
+    },
+    {
+      "line": 163,
+      "title": "Estratégia diagnóstica",
+      "level": 3
+    },
+    {
+      "line": 167,
+      "title": "Tratamento e retorno ao trabalho",
+      "level": 3
+    },
+    {
+      "line": 173,
+      "title": "Prevenção",
+      "level": 3
+    },
+    {
+      "line": 177,
+      "title": "8. Perda auditiva relacionada ao trabalho e PAIR",
+      "level": 2
+    },
+    {
+      "line": 181,
+      "title": "Quadro clínico e padrões",
+      "level": 3
+    },
+    {
+      "line": 187,
+      "title": "Investigação e conduta",
+      "level": 3
+    },
+    {
+      "line": 198,
+      "title": "9. Dermatoses relacionadas ao trabalho",
+      "level": 2
+    },
+    {
+      "line": 200,
+      "title": "Dermatite irritativa versus alérgica",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "Diagnóstico diferencial",
+      "level": 3
+    },
+    {
+      "line": 217,
+      "title": "Tratamento",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "10. Doenças respiratórias ocupacionais",
+      "level": 2
+    },
+    {
+      "line": 223,
+      "title": "10.1. Asma relacionada ao trabalho",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "10.2. Pneumoconioses",
+      "level": 3
+    },
+    {
+      "line": 245,
+      "title": "10.3. Exames de função e imagem",
+      "level": 3
+    },
+    {
+      "line": 249,
+      "title": "10.4. Abordagem do trabalhador com dispneia aguda",
+      "level": 3
+    },
+    {
+      "line": 253,
+      "title": "11. Exposição ocupacional a material biológico",
+      "level": 2
+    },
+    {
+      "line": 257,
+      "title": "Primeira sequência",
+      "level": 3
+    },
+    {
+      "line": 273,
+      "title": "12. Intoxicações químicas: reconhecimento sindrômico e segurança",
+      "level": 2
+    },
+    {
+      "line": 277,
+      "title": "História toxicológica breve",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "12.1. Agrotóxicos inibidores de acetilcolinesterase",
+      "level": 3
+    },
+    {
+      "line": 291,
+      "title": "12.2. Solventes, monóxido de carbono e gases irritantes",
+      "level": 3
+    },
+    {
+      "line": 297,
+      "title": "12.3. Metais e outros agentes crônicos",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "13. Saúde mental relacionada ao trabalho e a NR-1 de 2026",
+      "level": 2
+    },
+    {
+      "line": 309,
+      "title": "Não confundir sofrimento com diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 315,
+      "title": "Alteração normativa decisiva",
+      "level": 3
+    },
+    {
+      "line": 321,
+      "title": "Atendimento ao trabalhador com sofrimento mental",
+      "level": 3
+    },
+    {
+      "line": 334,
+      "title": "Exemplo comparativo de prevenção",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "14. Câncer relacionado ao trabalho e longo período de latência",
+      "level": 2
+    },
+    {
+      "line": 353,
+      "title": "15. Distúrbio de voz relacionado ao trabalho",
+      "level": 2
+    },
+    {
+      "line": 363,
+      "title": "16. Prevenção: do perigo à mudança no processo",
+      "level": 2
+    },
+    {
+      "line": 365,
+      "title": "Hierarquia das medidas de prevenção",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "Proteção coletiva e individual",
+      "level": 3
+    },
+    {
+      "line": 381,
+      "title": "17. Normas Regulamentadoras: quadro para ENAMED e prática",
+      "level": 2
+    },
+    {
+      "line": 397,
+      "title": "17.1. PGR e GRO",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "17.2. PCMSO e ASO na NR-7",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "17.3. Profissional assistente versus médico do trabalho versus perícia",
+      "level": 3
+    },
+    {
+      "line": 419,
+      "title": "18. SUS, PNSTT, RENASTT, Cerest e VISAT",
+      "level": 2
+    },
+    {
+      "line": 427,
+      "title": "Papéis da rede",
+      "level": 3
+    },
+    {
+      "line": 436,
+      "title": "Fluxo territorial exemplar",
+      "level": 3
+    },
+    {
+      "line": 442,
+      "title": "19. Vigilância e notificação: SINAN não é CAT",
+      "level": 2
+    },
+    {
+      "line": 444,
+      "title": "19.1. Notificação sanitária",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "19.2. Comunicação de Acidente de Trabalho (CAT)",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "19.3. Matriz de comparação",
+      "level": 3
+    },
+    {
+      "line": 484,
+      "title": "19.4. O que fazer na assistência",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "20. Acidentes traumáticos e medidas emergenciais",
+      "level": 2
+    },
+    {
+      "line": 496,
+      "title": "Lesões típicas de alto risco",
+      "level": 3
+    },
+    {
+      "line": 504,
+      "title": "Documentação do acidente",
+      "level": 3
+    },
+    {
+      "line": 508,
+      "title": "21. Situações especiais e populações vulneráveis",
+      "level": 2
+    },
+    {
+      "line": 510,
+      "title": "Gestantes e lactantes",
+      "level": 3
+    },
+    {
+      "line": 514,
+      "title": "Adolescentes e trabalho infantil",
+      "level": 3
+    },
+    {
+      "line": 518,
+      "title": "Pessoas idosas",
+      "level": 3
+    },
+    {
+      "line": 522,
+      "title": "Trabalhadores informais, autônomos e desempregados",
+      "level": 3
+    },
+    {
+      "line": 526,
+      "title": "Trabalhadores com deficiência",
+      "level": 3
+    },
+    {
+      "line": 530,
+      "title": "Exposições combinadas e comorbidades",
+      "level": 3
+    },
+    {
+      "line": 534,
+      "title": "22. Linha de cuidado e reabilitação longitudinal",
+      "level": 2
+    },
+    {
+      "line": 545,
+      "title": "Retorno gradual e seguimento",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "23. Prognóstico e consequências tardias",
+      "level": 2
+    },
+    {
+      "line": 557,
+      "title": "24. Algoritmo integrado LURIA: suspeita de agravo relacionado ao trabalho",
+      "level": 2
+    },
+    {
+      "line": 578,
+      "title": "25. Pérolas de prova e erros frequentes",
+      "level": 2
+    },
+    {
+      "line": 601,
+      "title": "26. Resumo para revisão rápida",
+      "level": 2
+    },
+    {
+      "line": 616,
+      "title": "27. Fontes normativas e clínicas — referências verificáveis",
+      "level": 2
+    },
+    {
+      "line": 650,
+      "title": "Nota de hierarquia de evidência",
+      "level": 3
+    },
+    {
+      "line": 654,
+      "title": "28. Checklist editorial inicial",
+      "level": 2
+    },
+    {
+      "line": 673,
+      "title": "29. Casos clínicos integradores LURIA — comentários passo a passo",
+      "level": 2
+    },
+    {
+      "line": 677,
+      "title": "Caso 1 — Analista de dados com parestesias noturnas e atividade repetitiva",
+      "level": 3
+    },
+    {
+      "line": 691,
+      "title": "Caso 2 — Acidente perfurocortante na sala de emergência",
+      "level": 3
+    },
+    {
+      "line": 705,
+      "title": "Caso 3 — Trabalhador do corte de pedras com dispneia e tosse",
+      "level": 3
+    },
+    {
+      "line": 719,
+      "title": "Caso 4 — Professora com perda progressiva da voz",
+      "level": 3
+    },
+    {
+      "line": 733,
+      "title": "Caso 5 — Sofrimento mental em equipe de atendimento ao público",
+      "level": 3
+    },
+    {
+      "line": 747,
+      "title": "Caso 6 — Agricultor com broncorreia, miose e fraqueza após pulverização",
+      "level": 3
+    },
+    {
+      "line": 761,
+      "title": "Caso 7 — Fábrica têxtil: hipoacusia e zumbido progressivos",
+      "level": 3
+    },
+    {
+      "line": 775,
+      "title": "Caso 8 — Higienização hospitalar com eczema nas mãos",
+      "level": 3
+    },
+    {
+      "line": 789,
+      "title": "Caso 9 — Câncer de pulmão após exposição histórica a amianto",
+      "level": 3
+    },
+    {
+      "line": 803,
+      "title": "Caso 10 — Acidente de máquina: trauma, SINAN e CAT",
+      "level": 3
+    },
+    {
+      "line": 817,
+      "title": "Caso 11 — Trabalhador da panificação com tosse e chiado nas segundas-feiras",
+      "level": 3
+    },
+    {
+      "line": 831,
+      "title": "Caso 12 — Trabalhadora grávida e solventes no laboratório",
+      "level": 3
+    },
+    {
+      "line": 847,
+      "title": "30. Questões autorais LURIA — gabaritos e comentários por alternativa",
+      "level": 2
+    },
+    {
+      "line": 851,
+      "title": "Questão 1 — Diferença entre CAT e SINAN",
+      "level": 3
+    },
+    {
+      "line": 872,
+      "title": "Questão 2 — Prazo da CAT",
+      "level": 3
+    },
+    {
+      "line": 893,
+      "title": "Questão 3 — Notificação sanitária ocupacional 2026",
+      "level": 3
+    },
+    {
+      "line": 914,
+      "title": "Questão 4 — NR-1 vigente em 2026",
+      "level": 3
+    },
+    {
+      "line": 935,
+      "title": "Questão 5 — NR-7 e retorno ao trabalho",
+      "level": 3
+    },
+    {
+      "line": 956,
+      "title": "Questão 6 — Hierarquia de controle",
+      "level": 3
+    },
+    {
+      "line": 977,
+      "title": "Questão 7 — LER/DORT e nexo",
+      "level": 3
+    },
+    {
+      "line": 998,
+      "title": "Questão 8 — Perda auditiva relacionada ao trabalho",
+      "level": 3
+    },
+    {
+      "line": 1019,
+      "title": "Questão 9 — Silicose e tuberculose",
+      "level": 3
+    },
+    {
+      "line": 1040,
+      "title": "Questão 10 — Dermatite por trabalho úmido",
+      "level": 3
+    },
+    {
+      "line": 1061,
+      "title": "Questão 11 — Organofosforado e síndrome colinérgica",
+      "level": 3
+    },
+    {
+      "line": 1082,
+      "title": "Questão 12 — Acidente biológico e PEP",
+      "level": 3
+    },
+    {
+      "line": 1103,
+      "title": "Questão 13 — Função do Cerest",
+      "level": 3
+    },
+    {
+      "line": 1124,
+      "title": "Questão 14 — LDRT e causalidade",
+      "level": 3
+    },
+    {
+      "line": 1145,
+      "title": "Questão 15 — Asma relacionada ao trabalho",
+      "level": 3
+    },
+    {
+      "line": 1166,
+      "title": "Questão 16 — Trabalho informal",
+      "level": 3
+    },
+    {
+      "line": 1187,
+      "title": "Questão 17 — Saúde mental e nexo",
+      "level": 3
+    },
+    {
+      "line": 1208,
+      "title": "Questão 18 — PCMSO versus PGR",
+      "level": 3
+    },
+    {
+      "line": 1231,
+      "title": "31. Curadoria de imagens candidatas — plano premium",
+      "level": 2
+    },
+    {
+      "line": 1250,
+      "title": "Regras técnicas antes da integração",
+      "level": 3
+    },
+    {
+      "line": 1261,
+      "title": "32. Auditoria de alta qualidade — revisão do Lote 09",
+      "level": 2
+    },
+    {
+      "line": 1263,
+      "title": "Verificação de cobertura",
+      "level": 3
+    },
+    {
+      "line": 1271,
+      "title": "Limitações explicitadas",
+      "level": 3
+    },
+    {
+      "line": 1281,
+      "title": "Checklist final para publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "**[R1] Ministério da Saúde.** Portaria GM/MS nº 1.999/2023 — atualiza a Lista de Doenças Relacionadas ao Trabalho (LDRT). https://bvsms.saude.gov.br/bvs/saudelegis/gm/2023/prt1999_29_11_2023.html",
+    "**[R2] Ministério da Saúde.** Portaria GM/MS nº 10.175, de 23 de janeiro de 2026 — Anexo da Lista Nacional de Notificação Compulsória. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10175_26_01_2026.html",
+    "**[R3] Ministério da Saúde.** Portaria GM/MS nº 5.201/2024 — inclusão de doenças e agravos ocupacionais na lista nacional. https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt5201_19_08_2024.html",
+    "**[R4] Ministério do Trabalho e Emprego.** NR-1 — Disposições Gerais e Gerenciamento de Riscos Ocupacionais; versão vigente a partir de 26/05/2026. https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
+    "**[R5] Ministério do Trabalho e Emprego.** Manual de Interpretação e Aplicação do Capítulo 1.5 da NR-1 — GRO/PGR, incluindo fatores de risco psicossociais (2026). https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/manual_gro_pgr_da_nr_1.pdf",
+    "**[R6] Ministério do Trabalho e Emprego.** NR-7 — Programa de Controle Médico de Saúde Ocupacional. https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-7-nr-7",
+    "**[R7] Ministério do Trabalho e Emprego.** Normas Regulamentadoras vigentes (todas as NRs e respectivos textos). https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs",
+    "**[R8] Ministério da Saúde.** Rede Nacional de Atenção Integral à Saúde do Trabalhador e da Trabalhadora — RENASTT/Cerest. https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/renast/renast",
+    "**[R9] Ministério da Saúde.** Vigilância em Saúde do Trabalhador — VISAT. https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat",
+    "**[R10] Ministério da Saúde.** Lesões por Esforços Repetitivos / DORT. https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/lesoes-por-esforcos-repetitivos-ler-disturbios-osteomusculares-relacionadas-ao-trabalho-dort",
+    "**[R11] Ministério da Saúde.** Perda Auditiva Induzida por Ruído — PAIR. https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/perda-auditiva-induzida-por-ruido-pair",
+    "**[R12] Ministério da Saúde.** Acidente de trabalho com exposição a material biológico. https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/acidente-de-trabalho-com-exposicao-a-material-biologico",
+    "**[R13] Ministério da Saúde.** Profilaxia Pós-Exposição (PEP) ao HIV e hepatite B. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+    "**[R14] Governo Federal.** Serviço de cadastramento de Comunicação de Acidente de Trabalho (CAT), atualizado em 20/08/2026. https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+    "**[R15] Brasil.** Lei 8.213/1991, arts. 19–23 e normas previdenciárias relacionadas a acidentes. https://planalto.gov.br/ccivil_03/leis/l8213cons.htm",
+    "**[R16] Ministério da Saúde.** Portaria GM/MS nº 4.922/2024 — adoção do nome RENASTT. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4922_26_07_2024.html",
+    "Esta apostila prioriza **documentos brasileiros oficiais** para normas, vigilância e diretrizes de cuidado no SUS. Casos, exemplos e explicações clínicas são elaboração editorial original da LURIA, construída a partir dessas fontes; não representam transcrição literal de normas. Antes de publicação, verificar versão vigente de NRs, portarias e protocolos de medicamentos e classificação de notificações."
+  ],
+  "external_links": [
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2023/prt1999_29_11_2023.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10175_26_01_2026.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt5201_19_08_2024.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/manual_gro_pgr_da_nr_1.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-7-nr-7",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/renast/renast",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/lesoes-por-esforcos-repetitivos-ler-disturbios-osteomusculares-relacionadas-ao-trabalho-dort",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/perda-auditiva-induzida-por-ruido-pair",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-do-trabalhador/vigilancia-em-saude-do-trabalhador-vigisat/doencas-e-agravos-relacionados-ao-trabalho/acidente-de-trabalho-com-exposicao-a-material-biologico",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aids-hiv/pep",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://planalto.gov.br/ccivil_03/leis/l8213cons.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4922_26_07_2024.html",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 9,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Apresentação:** Mulher de 39 anos, trabalha com digitação e mouse há oito anos, em ritmo elevado e com pausas irregulares. Descreve formigamento noturno em polegar, indicador e dedo médio da mão direita, piorando após turnos longos. Nos últimos meses, deixa cair objetos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Residente de enfermagem de 26 anos sofre perfuração com agulha usada em coleta de sangue há 45 minutos. Existe sangue visível no dispositivo. A pessoa-fonte ainda não foi testada. O trabalhador está vacinado contra hepatite B, mas não recorda resultado de anti-HBs.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Homem de 52 anos, trabalhou 23 anos cortando e polindo pedras com exposição intensa à poeira, frequentemente sem extração local adequada. Evoluiu com tosse persistente, dispneia progressiva e radiografia com opacidades nodulares predominantes nos campos superiores.",
+      "pattern": 0
+    },
+    {
+      "text": "**Agravamento pelo trabalho:** é possível que uma doença com múltiplas causas seja piorada por fatores laborais. Exemplo: asma prévia intensificada por poeiras, aerossóis ou irritantes no trabalho. A contribuição do trabalho pode existir mesmo quando não é causa exclusiva.",
+      "pattern": 1
+    },
+    {
+      "text": "1. **Clínica:** o paciente apresenta sinais e sintomas coerentes, com diagnóstico ou síndrome definido por investigação médica. 2. **Epidemiológica:** a exposição é capaz de causar ou agravar o desfecho? Existem outros trabalhadores com padrão semelhante? Há associação conhecida para o agente? 3. **Temporal/ocupacional:** exposição precedeu doença? Há melhora em férias/afastamento ou piora ao retornar? Dose e latência são plausíveis? Existem resultados de monitoramento ambiental ou biomarcadores adequados?",
+      "pattern": 1
+    },
+    {
+      "text": "A carga real de agravos ocupacionais é frequentemente maior que os registros formais devido à subnotificação, informalidade, subdiagnóstico e demora na identificação da exposição. Um denominador composto apenas por empregados com carteira não descreve a totalidade de trabalhadores. Serviços do SUS devem incluir pessoas sem vínculo formal e pessoas adoecidas após o desligamento, especialmente em exposições de longa latência.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área do cronograma:** Medicina Preventiva **Interfaces:** Medicina de Família, Clínica Médica, Pneumologia, Dermatologia, Ortopedia, Psiquiatria, Infectologia, Medicina Legal, Medicina do Trabalho e Urgência **Lote:** 09, aula 165 de 180 **Versão editorial:** 14 de outubro de 2026 — rascunho principal 01 **Público:** estudantes em internato, ENAMED, residência médica e profissionais em atenção inicial **Status:** material em expansão e revisão, não publicado como apostila final.",
+      "pattern": 2
+    },
+    {
+      "text": "1. Definir saúde do trabalhador como campo de atenção integral e vigilância dos efeitos dos processos de trabalho sobre a saúde, inclusive de trabalhadores informais, autônomos, rurais e desempregados expostos no passado. 2. Formular uma **anamnese ocupacional** suficientemente detalhada para identificar agentes físicos, químicos, biológicos, ergonômicos, psicossociais e acidentes. 3. Distinguir acidente típico, acidente de trajeto e doença ocupacional; reconhecer que as categorias previdenciárias e sanitárias possuem finalidades distintas. 4. Diferenciar doença comum concomitante, doença profissional, doença do trabalho, agravo agravado pelo trabalho e condição não relacionada, sem transformar um único exame ou documento em prova universal de causalidade. 5. Reconhecer LER/DORT, perda auditiva relacionada ao trabalho, doenças respiratórias ocupacionais, dermatoses, intoxicações e transtornos mentais relacionados ao trabalho. 6. Conduzir primeiros cuidados em acidentes graves e exposição a material biológico e encaminhar apropriadamente ao SUS e aos serviços especializados. 7. Aplicar conceitos de **GRO/PGR**, **PCMSO/ASO**, **CIPA**, **SESMT**, **EPC/EPI**, **VISAT**, **RENASTT/Cerest**, **SINAN** e **CAT**. 8. Conhecer as atualizações normativas relevantes até outubro de 2026, em especial a NR-1 com fatores psicossociais e as listas nacionais de agravos notificáveis. 9. Construir planos para o indivíduo e para outros trabalhadores expostos ao mesmo processo produtivo. 10. Resolver questões e casos sem confundir assistência, vigilância, responsabilidade legal, perícia e prevenção.",
+      "pattern": 2
+    },
+    {
+      "text": "**Duas notificações distintas:** a lista nacional de 2026 prevê acidente de trabalho com exposição a material biológico como notificação **semanal ao SINAN**, enquanto “acidente de trabalho” geral aparece na coluna de comunicação **imediata em até 24 h à Secretaria Municipal de Saúde (SMS)**. Os fluxos e campos do agravo devem ser conferidos na vigilância local. Separadamente, o prazo de CAT da empresa é, em regra, até o primeiro dia útil seguinte ao evento, com comunicação imediata em caso de óbito.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área do cronograma:** Medicina Preventiva **Interfaces:** Medicina de Família, Clínica Médica, Pneumologia, Dermatologia, Ortopedia, Psiquiatria, Infectologia, Medicina Legal, Medicina do Trabalho e Urgência **Lote:** 09, aula 165 de 180 **Versão editorial:** 14 de outubro de 2026 — rascunho principal 01 **Público:** estudantes em internato, ENAMED, residência médica e profissionais em atenção inicial **Status:** material em expansão e revisão, não publicado como apostila final."
+    },
+    {
+      "text": "1. Definir saúde do trabalhador como campo de atenção integral e vigilância dos efeitos dos processos de trabalho sobre a saúde, inclusive de trabalhadores informais, autônomos, rurais e desempregados expostos no passado. 2. Formular uma **anamnese ocupacional** suficientemente detalhada para identificar agentes físicos, químicos, biológicos, ergonômicos, psicossociais e acidentes. 3. Distinguir acidente típico, acidente de trajeto e doença ocupacional; reconhecer que as categorias previdenciárias e sanitárias possuem finalidades distintas. 4. Diferenciar doença comum concomitante, doença profissional, doença do trabalho, agravo agravado pelo trabalho e condição não relacionada, sem transformar um único exame ou documento em prova universal de causalidade. 5. Reconhecer LER/DORT, perda auditiva relacionada ao trabalho, doenças respiratórias ocupacionais, dermatoses, intoxicações e transtornos mentais relacionados ao trabalho. 6. Conduzir primeiros cuidados em acidentes graves e exposição a material biológico e encaminhar apropriadamente ao SUS e aos serviços especializados. 7. Aplicar conceitos de **GRO/PGR**, **PCMSO/ASO**, **CIPA**, **SESMT**, **EPC/EPI**, **VISAT**, **RENASTT/Cerest**, **SINAN** e **CAT**. 8. Conhecer as atualizações normativas relevantes até outubro de 2026, em especial a NR-1 com fatores psicossociais e as listas nacionais de agravos notificáveis. 9. Construir planos para o indivíduo e para outros trabalhadores expostos ao mesmo processo produtivo. 10. Resolver questões e casos sem confundir assistência, vigilância, responsabilidade legal, perícia e prevenção."
+    }
+  ]
+}

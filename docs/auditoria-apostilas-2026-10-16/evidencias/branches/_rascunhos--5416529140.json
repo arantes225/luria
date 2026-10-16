@@ -1,0 +1,163 @@
+{
+  "sha": "5416529140b6ad9ef1fe1f6fb505f564480352be",
+  "path": "apostilas/_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--5416529140",
+  "title": "LURIA — Lote 7 · Aula 132",
+  "format": ".md",
+  "chars_estimated": 22161,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 132"
+    },
+    {
+      "title": "Hemorragia Digestiva Baixa: da hematoquezia à hemostasia"
+    },
+    {
+      "title": "0. Etapa zero"
+    },
+    {
+      "title": "1. Definição e apresentação"
+    },
+    {
+      "title": "2. Fisiologia do sangramento e do choque"
+    },
+    {
+      "title": "3. Etiologias com comparação clínica"
+    },
+    {
+      "title": "4. Primeira avaliação no pronto-socorro"
+    },
+    {
+      "title": "5. Transfusão e antitrombóticos: contextualizar"
+    },
+    {
+      "title": "6. Colonoscopia, preparo, CTA e radiologia intervencionista"
+    },
+    {
+      "title": "6.1. Qual paciente se beneficia de colonoscopia?"
+    },
+    {
+      "title": "6.2. Sangramento persistente com instabilidade"
+    },
+    {
+      "title": "6.3. Quando pensar em sangramento de intestino delgado?"
+    },
+    {
+      "title": "7. Tratamento por etiologia"
+    },
+    {
+      "title": "8. Diferencial por perfil temporal"
+    },
+    {
+      "title": "9. Fluxos práticos"
+    },
+    {
+      "title": "10. Quatro casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — sangue vivo indolor em idoso"
+    },
+    {
+      "title": "Caso 2 — hematoquezia com hipotensão"
+    },
+    {
+      "title": "Caso 3 — dor e sangue: não é só divertículo"
+    },
+    {
+      "title": "Caso 4 — sangramento após polipectomia e anticoagulação"
+    },
+    {
+      "title": "11. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — HDB e timing"
+    },
+    {
+      "title": "Questão 2 — hematoquezia e choque"
+    },
+    {
+      "title": "Questão 3 — instabilidade e CTA"
+    },
+    {
+      "title": "Questão 4 — divertículo"
+    },
+    {
+      "title": "Questão 5 — antitrombótico"
+    },
+    {
+      "title": "Questão 6 — sangue e dor"
+    },
+    {
+      "title": "12. Revisão rápida"
+    },
+    {
+      "title": "13. Imagens candidatas planejadas, nenhuma aprovada"
+    },
+    {
+      "title": "14. Fontes científicas"
+    },
+    {
+      "title": "15. Checklist pendente"
+    }
+  ],
+  "reference_entries": [
+    "- ACG. *Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline*. Am J Gastroenterol 2023. Conferir acesso à edição integral na revisão final. https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "- ESGE. *Diagnosis and management of acute lower gastrointestinal bleeding*. Endoscopy 2021;53:850–868. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "- LURIA. \\`apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md\\` — diferencial alto, sem duplicar tratamento.",
+    "- [x] História, anatomia, diferenciais, risco, CTA/colonoscopia, tratamento, 4 casos e 6 questões.",
+    "- [x] Registro transparente de falta de benchmark específico no Drive.",
+    "- [ ] Conferir ACG 2023 integral, inclusive nuances de Glasgow/Oakland, transfusão e sangramento ativo em contraste com ESGE.",
+    "- [ ] Estender endoscopia de intestino delgado, etiologia pediátrica, cirurgia e pós-procedimento, com doses brasileiras.",
+    "- [ ] Aprofundar para padrão premium e ≥60.000 caracteres didáticos úteis sem repetição.",
+    "- [ ] Imagens licenciadas, validação médica, teste editorial desktop/PWA e revisão de bibliografia.",
+    "**Status:** rascunho, NÃO PUBLICADO."
+  ],
+  "external_urls": [
+    "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Origem | Padrão sugestivo | Elemento diagnóstico e armadilha | |---|---|---| | Diverticulose colônica | Hematoquezia frequentemente indolor, por vezes volumosa, em pessoa mais velha | Colonoscopia/CTA conforme atividade; divertículo incidental não prova fonte | | Angiodisplasia | Sangramento intermitente/recorrente, anemia, idosos, valvopatia/DRC | Lesão vascular endoscópica; pode coexistir com outras causas | | Colite isquêmica | Dor abdominal e sangue, contexto de baixo fluxo/aterosclerose | TC/colonoscopia seletivas após estabilização; excluir isquemia mesentérica grave | | Doença inflamatória intestinal | Diarreia sanguinolenta, tenesmo"
+    },
+    {
+      "text": "**Exames:** hemograma seriado, função renal, eletrólitos, tipagem e prova de compatibilidade, coagulação conforme medicamento/doença; não pedir indiscriminadamente painel de exames sem pergunta clínica. Angio-TC pode localizar extravasamento ativo, especialmente em sangramento persistente hemodinamicamente relevante. Ultrassonografia não substitui TC/colonoscopia no diagnóstico do local de hemorragia colorretal ativa."
+    },
+    {
+      "text": "**Antiagregação:** AAS para prevenção cardiovascular secundária costuma ter papel distinto daquele usado para prevenção primária. ESGE recomenda, se possível, não interromper AAS em prevenção secundária e, quando interrompido, retomar precocemente após hemostasia. Dupla antiagregação após stent recente exige discussão com cardiologia."
+    },
+    {
+      "text": "**Preparo intestinal:** solução purgativa por via oral/sonda quando necessário pode melhorar visualização e reduzir procedimento inconclusivo. Preparo inadequado dificulta detectar divertículo responsável, vaso ou tumor e aumenta risco de uma colonoscopia de baixo rendimento. Contraindicações e tolerância dependem de instabilidade, risco de aspiração e íleo."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

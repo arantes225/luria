@@ -1,0 +1,195 @@
+{
+  "sha": "a4b778ee402dcbd1a3365f9c37fb02fbc06729c1",
+  "path": "apostilas/_rascunhos/lote-08-aula-175-declaracao-obito-indicadores.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--a4b778ee40",
+  "title": "LURIA | Aula 175 — Declaração de Óbito e Indicadores de Mortalidade",
+  "format": ".md",
+  "chars_estimated": 36941,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 175 — Declaração de Óbito e Indicadores de Mortalidade"
+    },
+    {
+      "title": "0. Auditoria prévia e material comparativo"
+    },
+    {
+      "title": "1. Por que a Declaração de Óbito é documento clínico e de saúde pública"
+    },
+    {
+      "title": "2. Termos que precisam estar claros antes de preencher"
+    },
+    {
+      "title": "3. Fluxo institucional — quem atesta e quem emite a DO?"
+    },
+    {
+      "title": "SVO versus IML — comparação detalhada"
+    },
+    {
+      "title": "4. Como preencher a sequência de causas — método inverso"
+    },
+    {
+      "title": "Exemplo 1 — Pneumonia relacionada a neoplasia"
+    },
+    {
+      "title": "Exemplo 2 — Infarto, ruptura e tamponamento"
+    },
+    {
+      "title": "Exemplo 3 — Diabetes, nefropatia e complicação fatal"
+    },
+    {
+      "title": "Exemplo 4 — Queda e lesão cerebral"
+    },
+    {
+      "title": "Regras de qualidade"
+    },
+    {
+      "title": "5. Óbito fetal, perda gestacional e neonatal — atualização importante de 2026"
+    },
+    {
+      "title": "O que mudou na prática assistencial com a Política de Humanização do Luto?"
+    },
+    {
+      "title": "6. Partes do formulário — o que cada informação significa"
+    },
+    {
+      "title": "7. Sistema de Informações sobre Mortalidade (SIM) e SINASC"
+    },
+    {
+      "title": "8. Indicadores essenciais e cálculo"
+    },
+    {
+      "title": "Mortalidade geral"
+    },
+    {
+      "title": "Mortalidade específica por causa"
+    },
+    {
+      "title": "Mortalidade proporcional"
+    },
+    {
+      "title": "Letalidade"
+    },
+    {
+      "title": "Mortalidade infantil"
+    },
+    {
+      "title": "Mortalidade materna"
+    },
+    {
+      "title": "Natimortalidade e mortalidade perinatal"
+    },
+    {
+      "title": "Mortalidade prematura e anos potenciais de vida perdidos"
+    },
+    {
+      "title": "9. Leitura crítica: comparações entre municípios e anos"
+    },
+    {
+      "title": "Erros metodológicos frequentes"
+    },
+    {
+      "title": "10. Investigação de óbitos evitáveis e vigilância"
+    },
+    {
+      "title": "11. Fluxos operacionais para plantão e APS"
+    },
+    {
+      "title": "Fluxo 1 — Óbito no hospital"
+    },
+    {
+      "title": "Fluxo 2 — Óbito domiciliar inesperado"
+    },
+    {
+      "title": "Fluxo 3 — Óbito de gestação ou recém-nascido"
+    },
+    {
+      "title": "Fluxo 4 — Indicador de mortalidade para prova"
+    },
+    {
+      "title": "12. Casos clínicos completos e comentados"
+    },
+    {
+      "title": "Caso 1 — Causa básica de morte por pneumonia pós-AVC"
+    },
+    {
+      "title": "Caso 2 — Queda com óbito tardio"
+    },
+    {
+      "title": "Caso 3 — Causa desconhecida sem inventar"
+    },
+    {
+      "title": "Caso 4 — Óbito após nascimento com breves sinais de vida"
+    },
+    {
+      "title": "Caso 5 — Luto por perda gestacional e nova norma"
+    },
+    {
+      "title": "Caso 6 — Dados populacionais com confusão de denominador"
+    },
+    {
+      "title": "Caso 7 — Mortalidade proporcional pode subir sem aumento de risco"
+    },
+    {
+      "title": "13. Questões autorais comentadas — ENAMED e residência"
+    },
+    {
+      "title": "14. Pérolas LURIA e checklist pré-preenchimento"
+    },
+    {
+      "title": "15. Candidatas de elementos visuais a produzir/curar"
+    },
+    {
+      "title": "16. Bibliografia primária e divergências documentadas"
+    },
+    {
+      "title": "Divergências de época — não omitir na versão final"
+    },
+    {
+      "title": "17. Auditoria editorial — pontos ainda pendentes"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/declaracao-de-obito-manual-de-instrucoes-para-preenchimento.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-vigilancia-do-obito-de-causa-natural-inespecifica-no-brasil.pdf",
+    "https://bvs.saude.gov.br/bvs/saudelegis/svs/2009/prt0116_11_02_2009_atual.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10273_27_02_2026.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/doc_tec/ago_25/Portaria_Tecnica_7235_de_2025.pdf",
+    "https://portal.cfm.org.br/wp-content/uploads/2023/01/cartilha_declaracao_obito.pdf",
+    "https://prefeitura.sp.gov.br/w/servico/instrucoes-para-preenchimento-de-declaracao-de-obito",
+    "https://www.ba.gov.br/saude/suvisa/vigilancia-epidemiologica/sistema-de-informacoes-sobre-mortalidade-sim"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Causa mal definida:** relato insuficiente, por exemplo “morte súbita” sem investigação quando havia oportunidade de averiguação. Às vezes a causa permanece realmente desconhecida mesmo após investigação; o princípio é não inventar diagnóstico."
+    },
+    {
+      "text": "| Situação | Caminho geral | Erro frequente | |---|---|---| | Internado e morto por doença conhecida | Médico assistente ou substituto habilitado da instituição | Delegar a DO ao cartório ou a profissional sem atribuição médica | | Pessoa com doença conhecida em acompanhamento domiciliar/ambulatorial | Médico/instituição assistencial, conforme norma e recursos locais | Encaminhar automaticamente ao IML sem suspeita externa | | Morte natural sem assistência/sem causa esclarecida | Verificar SVO e normas locais; serviços habilitados | Inventar diagnóstico sem informação clínica | | Morte após acidente/violência, mesmo tardia | IML/serviço médic"
+    },
+    {
+      "text": "O SVO investiga **mortes naturais** com diagnóstico não esclarecido e apoia qualificação da causa no SIM, podendo realizar necropsia conforme estrutura e indicação. O IML analisa **mortes violentas e suspeitas de causa externa**, produzindo documentação médico-legal e preservando elementos de prova. As normas de rede de SVO de 2025 reforçam encaminhamento ao IML de casos com causa externa confirmada/suspeita identificada antes ou durante exame, assim como outros casos definidos em normas específicas."
+    },
+    {
+      "text": "Primeiro pergunte: *qual evento mórbido fez a pessoa morrer diretamente?* Depois: *o que provocou esse evento?* Continue até chegar à doença/lesão inicial que melhor explica a cadeia. Na **Parte I**, cada linha abaixo deve explicar etiologicamente a condição da linha acima. Evitar listas de diagnósticos sem conexão causal."
+    },
+    {
+      "text": "1. Registrar **uma única causa por linha** da Parte I, com sequência temporal coerente; quando há múltiplas contribuintes que não integram a cadeia, reservar Parte II. 2. Não deixar de registrar a **causa básica** apenas para preencher detalhes inespecíficos e ocupar todas as linhas. 3. A causa básica pode ficar em **b, c ou d**, desde que seja a última linha preenchida. 4. Preencher intervalo aproximado entre início de cada condição e morte: horas/dias/semanas/anos. O tempo ajuda a confirmar coerência; não exige precisão impossível. 5. Usar nomes completos de doenças, evitar abreviaturas e siglas. 6. Para neoplasia, registrar órgão/sítio pri"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

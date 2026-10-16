@@ -1,0 +1,216 @@
+{
+  "sha": "89d3e4b402524b8d3fe5afa6dcc6557400967bf1",
+  "path": "apostilas/_rascunhos/lote-07-aula-140-saude-crianca-aps.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--89d3e4b402",
+  "title": "LURIA — Lote 7 · Aula 140",
+  "format": ".md",
+  "chars_estimated": 33952,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 140"
+    },
+    {
+      "title": "Saúde da criança na Atenção Primária: puericultura, desenvolvimento e cuidado integral"
+    },
+    {
+      "title": "0. Etapa zero — acervo LURIA e comparativos do Drive"
+    },
+    {
+      "title": "1. Por que a saúde da criança não é só “consultar bebê saudável”?"
+    },
+    {
+      "title": "2. Organização das consultas de puericultura no SUS"
+    },
+    {
+      "title": "Primeira semana: janela de alto valor"
+    },
+    {
+      "title": "Em todas as consultas"
+    },
+    {
+      "title": "3. A Caderneta da Criança como prontuário compartilhado"
+    },
+    {
+      "title": "4. Crescimento normal: medida, técnica e interpretação"
+    },
+    {
+      "title": "4.1. Peso, comprimento e estatura"
+    },
+    {
+      "title": "4.2. Curvas OMS e Z-escores"
+    },
+    {
+      "title": "4.3. Velocidade de crescimento"
+    },
+    {
+      "title": "4.4. Prematuridade"
+    },
+    {
+      "title": "5. Vigilância do desenvolvimento: não esperar regressão grave"
+    },
+    {
+      "title": "5.1. Perguntas úteis por domínio"
+    },
+    {
+      "title": "5.2. Rastreios do neurodesenvolvimento"
+    },
+    {
+      "title": "5.3. Visão e audição"
+    },
+    {
+      "title": "6. Aleitamento materno: técnica, suporte e comunicação"
+    },
+    {
+      "title": "7. Alimentação complementar e deficiências nutricionais"
+    },
+    {
+      "title": "8. Sobrepeso/obesidade infantil e linguagem sem estigma"
+    },
+    {
+      "title": "9. Sono, telas, saúde mental e ambiente"
+    },
+    {
+      "title": "10. Vacinação, prevenção de acidentes e proteção contra violência"
+    },
+    {
+      "title": "11. Triagens neonatais e doenças prevalentes"
+    },
+    {
+      "title": "12. Deficiência, prematuridade e vulnerabilidade"
+    },
+    {
+      "title": "13. Algoritmo de consulta de puericultura"
+    },
+    {
+      "title": "Quando acelerar referência?"
+    },
+    {
+      "title": "14. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — recém-nascido com mamadas ineficazes"
+    },
+    {
+      "title": "Caso 2 — queda da velocidade de crescimento"
+    },
+    {
+      "title": "Caso 3 — regressão da linguagem"
+    },
+    {
+      "title": "Caso 4 — criança com IMC alto e dificuldades familiares"
+    },
+    {
+      "title": "15. Oito questões autorais e comentários"
+    },
+    {
+      "title": "Questão 1 — finalidade da Caderneta"
+    },
+    {
+      "title": "Questão 2 — velocidade"
+    },
+    {
+      "title": "Questão 3 — regressão do desenvolvimento"
+    },
+    {
+      "title": "Questão 4 — aleitamento"
+    },
+    {
+      "title": "Questão 5 — prematuridade"
+    },
+    {
+      "title": "Questão 6 — sono seguro"
+    },
+    {
+      "title": "Questão 7 — perda de oportunidade vacinal"
+    },
+    {
+      "title": "Questão 8 — integralidade"
+    },
+    {
+      "title": "16. Pulo do Gato — memorização aplicada"
+    },
+    {
+      "title": "17. Sugestões de imagens didáticas — NENHUMA obtida/licenciada"
+    },
+    {
+      "title": "18. Referências brasileiras verificáveis"
+    },
+    {
+      "title": "19. Checklist de certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Política Nacional de Atenção Integral à Saúde da Criança — PNAISC.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/pnaisc",
+    "2. Ministério da Saúde. **Caderneta da Criança.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+    "3. Ministério da Saúde. **Caderneta Digital da Criança / Meu SUS Digital.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+    "4. Ministério da Saúde. **Linha de Cuidado da Criança — Puericultura, APS.** https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+    "5. Ministério da Saúde. **Primeira Infância**, esquema de consultas e vigilância. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia",
+    "6. Ministério da Saúde. **Calendário Nacional de Vacinação 2026.** https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "7. Sociedade Brasileira de Pediatria. Documentos Científicos, Pediatria Ambulatorial e Desenvolvimento: acessar a recomendação específica antes de inserir doses. https://www.sbp.com.br/especiais/documentos-cientificos/",
+    "- [x] PNAISC, organização de consultas, Caderneta, crescimento, desenvolvimento, nutrição, segurança, vulnerabilidade, seguimento.",
+    "- [x] Comparativo Drive de duas apostilas correlatas realmente aberto e lido, limites/autoria registrados.",
+    "- [x] 4 casos e 8 questões comentadas por alternativa.",
+    "- [ ] Completar e auditar cronograma de triagens, marcos e sinais por idade com dados específicos do manual vigente.",
+    "- [ ] Completar doses nacionais de ferro, vitamina D e imunobiológicos apenas após verificar documentos oficiais aplicáveis.",
+    "- [ ] Ampliar saúde bucal, visão, audição, puberdade, saúde mental, violência e crianças com deficiência.",
+    "- [ ] Robustez ≥60K caracteres didáticos úteis sem repetição, avaliação independente de autossuficiência.",
+    "- [ ] Imagens reais licenciadas e figuras próprias, revisão médico-editorial, integração ao HTML LURIA e PWA.",
+    "**Situação:** rascunho parcial; não publicar como apostila certificada."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/pnaisc",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+    "https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia",
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.sbp.com.br/especiais/documentos-cientificos/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Drive — materiais efetivamente abertos e lidos:** 1. “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (~8.323 caracteres). Explica fases do crescimento, ganho ponderal, velocidade, perímetro cefálico, estatura-alvo, variantes normais e causas patológicas. Algumas frases absolutas como “a velocidade de crescimento nunca é menor que 5 cm/ano” são simplificações que **não devem ser transcritas como lei universal** — interpretar idade, estágio puberal, contexto e medida seriada. 2. “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (~7.919 caracteres). Discute IMC por idade, variantes de Z-escore conforme faixa, fatores de risco e comor"
+    },
+    {
+      "text": "A **PNAISC** brasileira organiza ações desde a gestação até os **9 anos**, com atenção especial à primeira infância e populações vulnerabilizadas. Seus sete eixos devem aparecer na lógica da consulta, e não apenas como mnemônico decorado: 1. atenção humanizada gestação–parto–nascimento–recém-nascido; 2. aleitamento e alimentação complementar; 3. crescimento e desenvolvimento integral; 4. atenção a agravos prevalentes, doenças crônicas; 5. violência, acidentes e cultura de paz; 6. deficiência, situações específicas e vulnerabilidade; 7. vigilância e prevenção de óbitos infantil, fetal e materno."
+    },
+    {
+      "text": "A Caderneta da Criança acompanha nascimento a **9 anos** e contém orientações para família, curvas antropométricas, vigilância de marcos, vacinas, saúde bucal, visão, audição, prevenção de acidentes e violência. A versão digital integrada ao **Meu SUS Digital** amplia acesso aos registros; a física continua relevante para compartilhamento com equipes e famílias."
+    },
+    {
+      "text": "**Problemas comuns:** ingurgitamento, pega ineficaz, fissuras, mastite, obstrução e baixo ganho de peso; avaliação deve identificar mecanismo (transferência de leite, frequência, posição, doença do bebê). Mastite pode exigir medidas clínicas e, em determinados casos, antibióticos de acordo com indicação; não confundir inflamação com infecção obrigatória. Evitar recomendar água, chá ou suco antes dos seis meses em criança amamentada exclusivamente, salvo necessidade específica orientada por equipe."
+    },
+    {
+      "text": "**HIV/HTLV e outras exposições:** no Brasil, há contraindicações específicas ao aleitamento em situações como infecção materna por HIV, conforme normas nacionais e acesso a fórmula. Orientações de organizações internacionais podem diferir conforme condições de segurança alimentar/acesso a antirretrovirais; seguir **protocolo brasileiro atualizado** em atendimento local. Não determinar suspensão do leite por qualquer resfriado materno."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

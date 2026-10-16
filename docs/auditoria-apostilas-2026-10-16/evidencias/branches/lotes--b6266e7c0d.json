@@ -1,0 +1,372 @@
+{
+  "sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
+  "path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--b6266e7c0d",
+  "title": "LURIA — Asma brônquica",
+  "format": ".md",
+  "chars_estimated": 72538,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Asma brônquica"
+    },
+    {
+      "title": "Registro obrigatório de comparação (etapa zero)"
+    },
+    {
+      "title": "Matriz de cobertura interna (provisória)"
+    },
+    {
+      "title": "1. O que é asma e por que o fluxo varia"
+    },
+    {
+      "title": "2. Inflamação brônquica, obstrução e hiperresponsividade"
+    },
+    {
+      "title": "2.1 Componentes funcionais"
+    },
+    {
+      "title": "2.2 Vias imunes e heterogeneidade"
+    },
+    {
+      "title": "2.3 Por que a crise piora de madrugada, com exercício ou virose?"
+    },
+    {
+      "title": "2.4 Por que corticoide inalatório muda prognóstico?"
+    },
+    {
+      "title": "3. Reconhecimento clínico e diagnósticos diferenciais"
+    },
+    {
+      "title": "4. Como confirmar a suspeita"
+    },
+    {
+      "title": "4.1 Raciocínio em duas etapas"
+    },
+    {
+      "title": "4.2 Negativo não significa excluído"
+    },
+    {
+      "title": "4.3 Exames que ajudam, mas não substituem a definição"
+    },
+    {
+      "title": "5. Controle atual não é o mesmo que risco futuro"
+    },
+    {
+      "title": "6. Tratamento controlador: raciocínio antes da prescrição"
+    },
+    {
+      "title": "7. Reconhecer exacerbação e perigo imediato"
+    },
+    {
+      "title": "8. Casos clínicos de integração"
+    },
+    {
+      "title": "Caso 1 — Espirometria normal entre episódios"
+    },
+    {
+      "title": "Caso 2 — Poucos sintomas, crise importante"
+    },
+    {
+      "title": "9. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "10. Fontes para conferência científica"
+    },
+    {
+      "title": "11. Pendências obrigatórias para certificação"
+    },
+    {
+      "title": "Ampliação editorial 02 — confirmação, revisão terapêutica, situações especiais e consolidação"
+    },
+    {
+      "title": "12. A consulta diagnóstica como processo: documentar antes de tratar, quando possível"
+    },
+    {
+      "title": "12.1 Separar os três problemas da investigação"
+    },
+    {
+      "title": "12.2 O exame funcional precisa ser confiável"
+    },
+    {
+      "title": "12.3 A tosse isolada exige outro grau de cuidado"
+    },
+    {
+      "title": "13. Plano terapêutico como ciclo de decisões, não escada automática"
+    },
+    {
+      "title": "13.1 Primeiro conferir a necessidade real de intensificação"
+    },
+    {
+      "title": "13.2 O que significa reliever com ação anti-inflamatória?"
+    },
+    {
+      "title": "13.3 Antes de reduzir etapas"
+    },
+    {
+      "title": "14. Exacerbação: uma sequência prática de segurança"
+    },
+    {
+      "title": "14.1 Triagem e primeiros minutos"
+    },
+    {
+      "title": "14.2 Avaliar a resposta, não só repetir a mesma prescrição"
+    },
+    {
+      "title": "14.3 Alta segura não é apenas melhora do chiado"
+    },
+    {
+      "title": "15. Populações em que a regra geral precisa de adaptação"
+    },
+    {
+      "title": "15.1 Gestação"
+    },
+    {
+      "title": "15.2 Crianças"
+    },
+    {
+      "title": "15.3 Idosos e pessoas com multimorbidade"
+    },
+    {
+      "title": "15.4 Exposição profissional"
+    },
+    {
+      "title": "16. Casos adicionais comentados"
+    },
+    {
+      "title": "Caso 3 — Obstrução laríngea induzida por exercício, não presumir asma"
+    },
+    {
+      "title": "Caso 4 — Dispneia grave e tórax silencioso"
+    },
+    {
+      "title": "17. Questões autorais adicionais"
+    },
+    {
+      "title": "Questão 3 — Erro de técnica inalatória"
+    },
+    {
+      "title": "Questão 4 — Asma relacionada ao trabalho"
+    },
+    {
+      "title": "Questão 5 — Terapia de alívio"
+    },
+    {
+      "title": "Questão 6 — Atenção à gestante"
+    },
+    {
+      "title": "18. Teste de autossuficiência — verificação parcial"
+    },
+    {
+      "title": "Ampliação editorial 03 — fisiologia quantificada, decisões por etapa e segurança (14/10/2026)"
+    },
+    {
+      "title": "19. Aprofundamento da espirometria — do gráfico ao diagnóstico"
+    },
+    {
+      "title": "19.1 O que VEF1 e CVF realmente medem?"
+    },
+    {
+      "title": "19.2 Teste após broncodilatador: evidência quantitativa"
+    },
+    {
+      "title": "19.3 Pico de fluxo: medidas seriadas valem mais que uma medida isolada"
+    },
+    {
+      "title": "19.4 Teste de provocação brônquica e resultado normal"
+    },
+    {
+      "title": "20. Controle, gravidade e risco: uma matriz de decisões"
+    },
+    {
+      "title": "20.1 Instrumento clínico de quatro semanas"
+    },
+    {
+      "title": "20.2 Gravidade é resposta ao tratamento, não intensidade da crise"
+    },
+    {
+      "title": "20.3 Fatores de risco independentes do relato de sintomas"
+    },
+    {
+      "title": "21. Tratamento por etapas: tradução prática de GINA 2026 ao contexto brasileiro"
+    },
+    {
+      "title": "21.1 Começar pelo princípio, depois escolher o esquema"
+    },
+    {
+      "title": "21.2 Tabela clínica original — cenários e intervenção correspondente"
+    },
+    {
+      "title": "21.3 O nome na caixa tem duas convenções de dose"
+    },
+    {
+      "title": "21.4 Exemplos de classificação de dose de corticoide inalatório no PCDT"
+    },
+    {
+      "title": "21.5 Eventos adversos e interações que alteram prescrição"
+    },
+    {
+      "title": "22. Crise asmática — intervenções quantificadas e decisões sem atraso"
+    },
+    {
+      "title": "22.1 Reconhecimento de gravidade precede qualquer protocolo medicamentoso"
+    },
+    {
+      "title": "22.2 Exemplos auditados do PCDT brasileiro"
+    },
+    {
+      "title": "22.3 Erros de emergência e seus mecanismos"
+    },
+    {
+      "title": "22.4 Critérios práticos de segurança após atendimento"
+    },
+    {
+      "title": "23. Asma difícil de tratar e asma grave: biomarcadores e biológicos"
+    },
+    {
+      "title": "23.1 O teste mais importante antes de chamar de refratária"
+    },
+    {
+      "title": "23.2 Fenotipagem: o que eosinófilos, IgE e FeNO significam?"
+    },
+    {
+      "title": "23.3 Opções de terapia adicional e decisão de elegibilidade"
+    },
+    {
+      "title": "23.4 Avaliar resposta ao biológico, não apenas número de eosinófilos"
+    },
+    {
+      "title": "24. Populações especiais e comorbidades — decisões que caem em prova"
+    },
+    {
+      "title": "24.1 Gestação: risco materno e fetal versus exposições"
+    },
+    {
+      "title": "24.2 Crianças pequenas: sibilância não basta"
+    },
+    {
+      "title": "24.3 Idosos: a capacidade de usar inalador é variável clínica"
+    },
+    {
+      "title": "24.4 Asma relacionada a exercício e AINEs"
+    },
+    {
+      "title": "25. Casos clínicos quantitativos adicionais"
+    },
+    {
+      "title": "Caso 5 — Resposta broncodilatadora: aprender a conta"
+    },
+    {
+      "title": "Caso 6 — Excesso de resgate com baixa percepção de sintomas"
+    },
+    {
+      "title": "Caso 7 — Asma de difícil controle ou grave?"
+    },
+    {
+      "title": "Caso 8 — Eosinófilos após corticoide oral e possível indicação de imunobiológico"
+    },
+    {
+      "title": "26. Questões autorais adicionais — interpretação e decisão"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "27. Checklist de aprendizagem — teste por conteúdo e não por metragem"
+    }
+  ],
+  "reference_entries": [
+    "1. Global Initiative for Asthma. *2026 GINA Summary Guide for Asthma Management and Prevention*. https://ginasthma.org/2026-gina-summary-guide/",
+    "2. Global Initiative for Asthma. *2026 GINA Strategy Report*. https://ginasthma.org/2026-gina-strategy-report/",
+    "3. Ministério da Saúde. *Protocolo Clínico e Diretrizes Terapêuticas da Asma*, atualização de 2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "4. Sociedade Brasileira de Pneumologia e Tisiologia. *Consensos e Diretrizes da SBPT* (asma 2020 e asma grave 2021). https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "5. SBPT. *Ministério da Saúde corrige critério de identificação da asma grave após solicitação da SBPT* (2026). https://sbpt.org.br/portal/ministerio-da-saude-corrige-criterio-de-identificacao-da-asma-grave-apos-solicitacao-da-sbpt/",
+    "- Aprofundar epidemiologia, asma ocupacional, diferenciais, espirometria quantitativa, broncoprovocação, pico de fluxo, FeNO, controle, fármacos com apresentações/doses e contraindicações, manejo domiciliar e hospitalar de exacerbações, alta, seguimento, asma na infância e gestação, asma difícil/grave, biológicos, comorbidades e prognóstico.",
+    "- Ampliar para pelo menos quatro casos completos e seis questões com comentários de **todas** as alternativas; comprovar que respostas decorrem do texto.",
+    "- Conferir e discriminar eventuais diferenças entre GINA 2026 e PCDT brasileiro **retificado** de 2026; não misturar recomendações como se fossem equivalentes.",
+    "- Inventariar pelo menos dez imagens candidatas quando justificadas (curvas de espirometria, técnica inalatória, dispositivos), validando licença/uso comercial; **não embutir imagens neste rascunho**, pois publicação visual depende de Admin.",
+    "- Validar extensão didática útil ≥60.000 caracteres, não duplicação, autenticidade das referências, revisão por especialista, renderização e acessibilidade desktop/PWA.",
+    "- **Status:** primeira etapa escrita; NÃO CERTIFICADA; sem `index.html`, sem catálogo, sem deploy.",
+    "---",
+    "**Gabarito: C.** A eleva tratamento sem corrigir entrega pulmonar; B expõe a risco e prejudica controle; D não tem indicação indiscriminada. **Mini-revisão:** o ciclo de manejo inclui avaliar, ajustar e revisar; técnica e adesão não são detalhes opcionais.",
+    "**Gabarito: A.** A associação temporal exige avaliação dirigida, mas não confirma isoladamente etiologia; B não avalia mecanismo; C é redução indevida; D confunde pista clínica com comprovação causal. **Mini-revisão:** reconhecer exposições modificáveis é parte do diagnóstico.",
+    "**Gabarito: C.** A confunde alívio agudo com proteção; B ignora farmacologia e evidência específica do dispositivo/formulação; D impede avaliação de entrega efetiva. **Mini-revisão:** nem toda medicação de manutenção pode servir de resgate.",
+    "**Gabarito: B.** A deixa doença descontrolada; C ignora diagnósticos potencialmente graves; D subtrata a inflamação e o risco futuro. **Mini-revisão:** a segurança materno-fetal inclui prevenir hipóxia e crises, não apenas reduzir exposição medicamentosa.",
+    "**Auditoria provisória:** agora há quatro casos e seis questões com justificativas das alternativas, mas faltam detalhes quantitativos, algoritmo de tratamento por etapa, dispositivos e seleção licenciada de figuras. A meta de caracteres *didáticos úteis* e a autossuficiência seguem **não atendidas/não certificadas**. Nenhuma edição de catálogo nem publicação é autorizada.",
+    "---",
+    "**CVF** é o volume total exalado em uma manobra forçada após inspiração máxima. **VEF1** é a parcela que saiu no primeiro segundo dessa expiração. A relação **VEF1/CVF** mostra qual proporção da capacidade vital sai rapidamente; quando vias aéreas oferecem grande resistência, a fração expirada no primeiro segundo diminui. O traçado volume-tempo pode alcançar platô mais lentamente e a curva fluxo-volume apresenta ramo expiratório côncavo. Esses padrões são **consequências mecânicas**, não assinaturas etiológicas de asma.",
+    "**Exemplo didático:** paciente A expira CVF de 4,0 L e VEF1 de 2,4 L; a razão é 0,60. Paciente B expira CVF de 3,8 L e VEF1 de 3,2 L; a razão é aproximadamente 0,84. O primeiro apresenta maior evidência de obstrução, desde que a relação esteja abaixo do limite apropriado. O segundo pode ainda ter asma se examinado em fase estável. O diagnóstico não é obtido apenas fazendo a divisão.",
+    "**Exemplo comentado:** VEF1 pré de 2,00 L; VEF1 pós de 2,30 L. Diferença absoluta = 300 mL e relativa ao basal = 15%. Em adulto com clínica sugestiva, isso constitui evidência de resposta broncodilatadora relevante pelo critério GINA acima. Já uma mudança de 2,00 para 2,15 L significa 150 mL e 7,5%: não preenche o critério, mas a asma continua possível em outro momento. Um critério positivo também deve ser interpretado considerando diagnósticos que podem apresentar resposta broncodilatadora.",
+    "**Exemplo:** adulto registra em um dia PFE matinal 300 L/min e vespertino 400 L/min. A variabilidade do dia calculada pela diferença entre maior e menor dividida pela média é 100/350, aproximadamente **28,6%**. Isoladamente isso não confirma o diagnóstico se a técnica foi inadequada; entretanto, repetido em vários dias de sintomas, aumenta suporte à hipótese. O registro deve incluir horários, exposição, sintomas e uso de broncodilatadores.",
+    "**AIR:** alívio com ação anti-inflamatória, por exemplo budesonida-formoterol na dose e apresentação validada, sem obrigatoriedade de dose diária fixa nas primeiras etapas. **MART:** combinação de CI-formoterol administrada diariamente como manutenção e também em doses extras para sintomas. **CI-LABA convencional:** CI combinado a um beta-2 agonista de longa duração que não foi validado para resgate pode funcionar como manutenção, mas o alívio precisa ser prescrito separadamente. Exemplo: não usar salmeterol como se fosse formoterol de início rápido.",
+    "**Exemplo de tratamento em adultos e adolescentes ≥12 anos (PCDT 2026 e GINA 2026):** na Trilha 1, uma formulação apropriada de budesonida-formoterol 200/6 µg medida (160/4,5 µg liberada) pode ser usada como **uma inalação quando há sintomas** nas primeiras etapas. Na etapa com MART, acrescentam-se doses diárias fixas a doses extras de alívio. O PCDT brasileiro descreve, na etapa 3, uma inalação de manutenção uma ou duas vezes ao dia + doses de alívio, e nas etapas 4–5, duas inalações duas vezes ao dia + doses conforme sintomas. **O total diário de inalações, somando manutenção e alívio, não d",
+    "**Por que esses números não podem ser comparados miligrama a miligrama?** A eficácia depende de deposição respiratória, dispositivo, partícula e potência local, e o risco de absorção sistêmica cresce com maior exposição. A noção de “dose alta” é específica para cada molécula/formulação; equivalências simples com corticoide oral são inadequadas. O PCDT brasileiro apresenta, para 6–11 anos, limites diferentes, e não autoriza aplicar intervalos de adulto nessa faixa. Mesmo em dose baixa podem ocorrer disfonia e candidíase; usar técnica correta e medidas locais apropriadas.",
+    "**SABA e formoterol:** tremor, palpitação, taquicardia e hipocalemia em doses altas; monitorar contexto cardíaco e uso excessivo. **CI:** candidíase orofaríngea, disfonia; doses altas por longos períodos podem aumentar risco de alterações ósseas, oculares e supressão adrenal, especialmente com interações metabólicas. **Corticoide sistêmico:** hiperglicemia, alterações de sono/humor, risco infeccioso, hipertensão, alterações ósseas e eventos tromboembólicos mesmo em cursos relativamente curtos; a toxicidade é cumulativa após crises repetidas. **Antileucotrienos:** considerar alerta de eventos n",
+    "**Eosinofilia sanguínea** pode indicar inflamação do tipo 2 em contexto adequado, mas é variável e sofre redução após corticosteroide oral; dosar logo após crise tratada pode subestimar níveis prévios. **IgE total** faz parte da avaliação de elegibilidade/dose de omalizumabe, mas valor alto não “prova” que asma é alérgica; avaliar sensibilização a aeroalérgeno e correlação com sintomas. **FeNO** reflete aspectos de inflamação epitelial tipo 2 e pode ser influenciado por exposição, tabagismo, rinite e uso de CI. Nenhum marcador isolado substitui história, confirmação do diagnóstico e avaliação ",
+    "**Exemplos de esquemas descritos no PCDT Asma 2026, a serem prescritos somente após elegibilidade formal:** mepolizumabe 100 mg subcutâneo a cada quatro semanas em pacientes ≥12 anos; 40 mg a cada quatro semanas de 6–11 anos. Benralizumabe 30 mg subcutâneo a cada quatro semanas nas primeiras três administrações, depois a cada oito semanas. **Omalizumabe não usa uma dose fixa para todos:** depende simultaneamente do IgE pré-tratamento e do peso, e a primeira administração precisa de estrutura para manejo de anafilaxia. Dupilumabe possui esquema de ataque/manutenção específico segundo idade, pes",
+    "**Gabarito B.** 2,09−1,80 = 0,29 L e 0,29/1,80 ≈16,1%. **A** erra unidade; **C** despreza um critério funcional válido em contexto clínico; **D** extrapola para fenótipo sem provas. **Mini-revisão:** sempre registrar referência e base do percentual.",
+    "**Gabarito C.** **A** ignora exposição diária total; **B** desconsidera fármaco e evidência; **D** enfraquece autocuidado. **Mini-revisão:** a associação exata e o total cumulativo precisam estar na prescrição."
+  ],
+  "external_urls": [
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://ginasthma.org/2026-gina-strategy-report/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "https://sbpt.org.br/portal/ministerio-da-saude-corrige-criterio-de-identificacao-da-asma-grave-apos-solicitacao-da-sbpt/",
+    "https://ginasthma.org/2026-gina-summary-guide/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- **Material de comparação efetivamente aberto no Google Drive:** `Asma.pdf`; texto curto de aproximadamente 929 caracteres extraídos, com definição, associação com IgE, sinais e sintomas, espirometria, reversibilidade e referências antigas à SBPT 2012 e GINA 2018. O nome de uma pessoa aparece no material; **não há identificação institucional verificada como Estratégia MED**. Não se copiaram textos, quadros, figuras nem organização gráfica. Identificadores privados do Drive não foram transportados a este arquivo. - **Apostila LURIA de referência para estilo:** padrão técnico identificado no projeto (`apostilas/PRODUCAO_EM_LOTE.md`, `apostilas"
+    },
+    {
+      "text": "| Eixo | Âncora neste rascunho | Estado | |---|---|---| | Definição e fisiologia | [1](#1-o-que-é-asma-e-por-que-o-fluxo-varia) | Desenvolvido | | Fisiopatologia | [2](#2-inflamação-brônquica-obstrução-e-hiperresponsividade) | Desenvolvido | | Clínica e diferenciais | [3](#3-reconhecimento-clínico-e-diagnósticos-diferenciais) | Em desenvolvimento | | Diagnóstico e exames | [4](#4-como-confirmar-a-suspeita) | Em desenvolvimento | | Avaliação de controle/risco | [5](#5-controle-atual-não-é-o-mesmo-que-risco-futuro) | Em desenvolvimento | | Tratamento de manutenção | [6](#6-tratamento-controlador-raciocínio-antes-da-prescrição) | Introduzido | |"
+    },
+    {
+      "text": "Diferencie quatro afirmações: 1. **Sintoma compatível não confirma asma.** Sibilância também ocorre em DPOC, insuficiência cardíaca, obstrução de via aérea superior e algumas infecções. 2. **Ausência de sintoma no consultório não exclui asma.** A variabilidade é constitutiva da doença. 3. **Resposta subjetiva à bombinha não estabelece diagnóstico isoladamente.** Há efeito placebo, variações espontâneas e coexistência de outras causas de dispneia. 4. **Asma leve na frequência dos sintomas não significa crise incapaz de matar.** Pessoas pouco sintomáticas também podem exacerbar, especialmente quando não recebem tratamento anti-inflamatório apro"
+    },
+    {
+      "text": "O diagnóstico é uma construção de probabilidades: padrão clínico sugestivo combinado, sempre que possível, com comprovação objetiva de variabilidade da função pulmonar. O tratamento deve simultaneamente aliviar sintomas e reduzir risco de exacerbação, perda funcional e exposição a corticoide sistêmico."
+    },
+    {
+      "text": "Espirometria basal normal ou ausência de resposta broncodilatadora em uma única ocasião não excluem asma. O paciente pode estar assintomático, usando controlador, longe de uma exposição ou com obstrução mínima naquele momento. Se a suspeita permanece elevada, recupere história temporal, técnica e medicações utilizadas, considere repetição quando sintomático e testes adicionais supervisionados. Por outro lado, não se deve registrar diagnóstico definitivo somente com base em resposta percebida ao tratamento."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

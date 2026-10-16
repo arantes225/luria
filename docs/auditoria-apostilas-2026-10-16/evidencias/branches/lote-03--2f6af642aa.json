@@ -1,0 +1,328 @@
+{
+  "sha": "2f6af642aa07302fef1e411fd8efc2112877f3aa",
+  "path": "apostilas/_rascunhos/lote-03/41-choque-circulatorio.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--2f6af642aa",
+  "title": "Choque circulatório — LURIA | manuscrito editorial em revisão",
+  "format": ".md",
+  "chars_estimated": 84779,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Choque circulatório — LURIA | manuscrito editorial em revisão"
+    },
+    {
+      "title": "1. Da circulação normal ao choque"
+    },
+    {
+      "title": "2. Quatro mecanismos e misturas frequentes"
+    },
+    {
+      "title": "3. Reconhecimento no primeiro contato"
+    },
+    {
+      "title": "4. Primeiros minutos: estratégia clínica"
+    },
+    {
+      "title": "5. Interpretação hemodinâmica"
+    },
+    {
+      "title": "6. Diferenciais de urgência"
+    },
+    {
+      "title": "7. Fisiologia cardiovascular aplicada: da macrocirculação à mitocôndria"
+    },
+    {
+      "title": "7.1 Débito cardíaco não é sinônimo de pressão arterial"
+    },
+    {
+      "title": "7.2 Oferta de oxigênio e conteúdo arterial: cálculo com unidades"
+    },
+    {
+      "title": "7.3 Pré-carga, pós-carga e o perigo das generalizações"
+    },
+    {
+      "title": "7.4 Microcirculação, heterogeneidade e lesão de órgão"
+    },
+    {
+      "title": "8. Reconhecimento e acompanhamento: interpretar as janelas de perfusão"
+    },
+    {
+      "title": "8.1 Perfusão periférica"
+    },
+    {
+      "title": "8.2 Estado mental e sistema renal"
+    },
+    {
+      "title": "8.3 Lactato, pH e o que a gasometria não responde"
+    },
+    {
+      "title": "8.4 Saturações venosas e o “gap” de CO2"
+    },
+    {
+      "title": "8.5 Reavaliação clínica estruturada"
+    },
+    {
+      "title": "9. Exames à beira-leito e ecocardiografia: RUSH como raciocínio"
+    },
+    {
+      "title": "9.1 O ultrassom responde perguntas, não entrega um diagnóstico mágico"
+    },
+    {
+      "title": "9.2 A bomba — coração esquerdo e direito"
+    },
+    {
+      "title": "9.3 O tanque — pulmões, veias e cavidades"
+    },
+    {
+      "title": "9.4 Os canos — vasculatura e obstrução"
+    },
+    {
+      "title": "9.5 Erros de interpretação frequentes"
+    },
+    {
+      "title": "10. Teste de fluidorresponsividade, tolerância e resposta real"
+    },
+    {
+      "title": "10.1 Três perguntas diferentes"
+    },
+    {
+      "title": "10.2 Elevação passiva das pernas (PLR)"
+    },
+    {
+      "title": "10.3 Variação de pressão de pulso e variação de volume sistólico"
+    },
+    {
+      "title": "10.4 Mini-desafio de fluidos e parada de expansão"
+    },
+    {
+      "title": "11. Choque hipovolêmico: hemorrágico versus não hemorrágico"
+    },
+    {
+      "title": "11.1 Diferenciar a perda para escolher a reposição"
+    },
+    {
+      "title": "11.2 Choque hemorrágico traumático e controle de dano"
+    },
+    {
+      "title": "11.3 Hipotensão permissiva não é universal"
+    },
+    {
+      "title": "11.4 Desidratação e perdas gastrointestinais"
+    },
+    {
+      "title": "11.5 Sangramento digestivo"
+    },
+    {
+      "title": "12. Choque cardiogênico: bomba insuficiente, congestão e tratamento causal"
+    },
+    {
+      "title": "12.1 Identificar o fenótipo real"
+    },
+    {
+      "title": "12.2 Diagnóstico e ecocardiografia orientados"
+    },
+    {
+      "title": "12.3 Reperfusão na síndrome coronariana aguda"
+    },
+    {
+      "title": "12.4 Drogas vasoativas e suporte mecânico"
+    },
+    {
+      "title": "13. Choque distributivo: vasoplegia com múltiplas etiologias"
+    },
+    {
+      "title": "13.1 Separar os três mecanismos mais cobrados"
+    },
+    {
+      "title": "13.2 Sepse e choque séptico: definições operacionais"
+    },
+    {
+      "title": "13.3 Antibióticos e foco: relógios diferentes da SSC 2026"
+    },
+    {
+      "title": "13.4 Ressuscitação séptica: 30 mL/kg é sugestão contextualizada"
+    },
+    {
+      "title": "13.5 Vasopressores e metas de pressão"
+    },
+    {
+      "title": "13.6 Reavaliação, segurança e complicações do tratamento"
+    },
+    {
+      "title": "14. Anafilaxia, choque neurogênico e insuficiência adrenal"
+    },
+    {
+      "title": "14.1 Anafilaxia: reconhecer e tratar antes do resultado de exames"
+    },
+    {
+      "title": "14.2 Choque neurogênico e choque medular são coisas diferentes"
+    },
+    {
+      "title": "14.3 Crise adrenal e vasoplegia resistente"
+    },
+    {
+      "title": "15. Choque obstrutivo: três síndromes que mudam a decisão em minutos"
+    },
+    {
+      "title": "15.1 Tamponamento: pressão pericárdica e enchimento"
+    },
+    {
+      "title": "15.2 Pneumotórax hipertensivo: fisiologia de ventilação e retorno venoso"
+    },
+    {
+      "title": "15.3 Tromboembolismo pulmonar de alto risco"
+    },
+    {
+      "title": "16. Diagnóstico diferencial integrado: reconhecer sobreposições sem decorar perfis falsos"
+    },
+    {
+      "title": "17. Casos clínicos para expansão (comentados)"
+    },
+    {
+      "title": "Caso 1 — Hipoperfusão antes da hipotensão"
+    },
+    {
+      "title": "Caso 2 — Baixo débito e pulmão congesto"
+    },
+    {
+      "title": "Caso 3 — Obstrução mecânica reversível"
+    },
+    {
+      "title": "Caso 4 — Vasoplegia abrupta"
+    },
+    {
+      "title": "Caso 5 — Choque hemorrágico com hemoglobina inicialmente normal"
+    },
+    {
+      "title": "Caso 6 — TEP de alto risco após cirurgia, com falência de VD"
+    },
+    {
+      "title": "Caso 7 — Sepse abdominal que se transforma em choque misto"
+    },
+    {
+      "title": "Caso 8 — Lesão cervical com hipotensão e bradicardia: hipótese não é exclusão"
+    },
+    {
+      "title": "18. Questões originais — primeira bateria didática"
+    },
+    {
+      "title": "Questão 7 — Choque compensado e diagnóstico de gravidade"
+    },
+    {
+      "title": "Questão 8 — Oxigênio e hemoglobina"
+    },
+    {
+      "title": "Questão 9 — Algoritmo de antibioticoterapia na sepse segundo 2026"
+    },
+    {
+      "title": "Questão 10 — Fluidorresponsividade e congestão"
+    },
+    {
+      "title": "Questão 11 — Choque cardiogênico por síndrome coronariana aguda"
+    },
+    {
+      "title": "Questão 12 — Anafilaxia e erro de dose"
+    },
+    {
+      "title": "19. Populações especiais, retirada de suporte e seguimento depois do choque"
+    },
+    {
+      "title": "19.1 Pessoa idosa: menos reserva e sinais fisiológicos atípicos"
+    },
+    {
+      "title": "19.2 Gestação e puerpério: fisiologia e causas próprias"
+    },
+    {
+      "title": "19.3 Crianças e adolescentes: reconhecer compensação antes da hipotensão"
+    },
+    {
+      "title": "19.4 Insuficiência renal, cirrose e doença cardíaca crônica"
+    },
+    {
+      "title": "19.5 Paciente em ventilação mecânica: coração e pulmão interagem"
+    },
+    {
+      "title": "19.6 Choque refratário: procurar “o que ainda está faltando”"
+    },
+    {
+      "title": "19.7 Desmame de vasopressores, retirada de fluidos e segurança"
+    },
+    {
+      "title": "19.8 Recuperação e consequências pós-UTI"
+    },
+    {
+      "title": "19.9 O que registrar no prontuário durante a emergência"
+    },
+    {
+      "title": "20. Pulo do Gato e segurança editorial"
+    },
+    {
+      "title": "Referências primárias verificáveis e divergências de recomendações"
+    },
+    {
+      "title": "Auditoria editorial: cobertura, estado das imagens e pendências"
+    },
+    {
+      "title": "Curadoria visual — resultado da busca nesta etapa"
+    }
+  ],
+  "reference_entries": [
+    "**Hierarquia editorial:** fontes brasileiras são priorizadas para medicamentos, comunicação com o SUS e rotinas nacionais quando há norma aplicável; consensos internacionais guiam monitorização hemodinâmica e choques cuja evidência ainda não tem diretriz brasileira atual de abrangência equivalente. As datas de publicação são parte da interpretação — recomendações mudam.",
+    "1. **ASBAI e Sociedade Brasileira de Pediatria.** Atualização em Alergia Alimentar 2025, com abordagem de anafilaxia e adrenalina IM. *Arquivos de Asma, Alergia e Imunologia*, 9(1), 2025. https://aaai-asbai.org.br/article/10.5935/2526-5393.20250003/pdf/aaai-9-1-5-trans1.pdf — Base para dose por peso e concentração da adrenalina no contexto de reação grave; verificar protocolos hospitalares ao prescrever.",
+    "2. **Sociedade Brasileira de Cardiologia.** Atualização da Diretriz de Ressuscitação Cardiopulmonar e Cuidados Cardiovasculares de Emergência, 2019. https://doi.org/10.5935/abc.20190203 — Relevante para atendimento cardiovascular de emergência e anafilaxia; recomendações mais recentes, quando existentes, têm prioridade.",
+    "3. **Surviving Sepsis Campaign.** Prescott H et al. International Guidelines for Management of Sepsis and Septic Shock 2026, *Critical Care Medicine / Intensive Care Medicine*. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 — Fonte primária de rastreio, antibióticos, fluidos, vasopressores, perfusão, corticoides e desescalonamento na sepse.",
+    "4. **ESICM.** Monnet X et al. Guidelines on circulatory shock and hemodynamic monitoring 2025, *Intensive Care Medicine*. https://www.esicm.org/esicm-guideline-circulatory-shock-haemodynamic-monitoring/ — Fonte para avaliação de perfusão seriada, medidas dinâmicas, ecocardiografia e monitorização.",
+    "5. **American College of Cardiology.** Sinha SS et al. Concise Clinical Guidance on Evaluation and Management of Cardiogenic Shock, 2025. https://www.jacc.org/doi/10.1016/j.jacc.2025.02.018 — Fonte para reconhecimento, estratificação e abordagem cardiogênica.",
+    "6. **ACC/AHA.** Guideline for Management of Acute Coronary Syndromes 2025. https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009 — Fundamenta revascularização emergencial de artéria culpada no choque cardiogênico associado à SCA e alerta contra PCI rotineira inicial de vasos não culpados.",
+    "7. **AHA/ACC e sociedades participantes.** Guideline for the Evaluation and Management of Acute Pulmonary Embolism in Adults, 2026. https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005 — Atualiza estratificação e opções de reperfusão no TEP com instabilidade hemodinâmica.",
+    "8. **European guideline on management of major bleeding and coagulopathy following trauma.** 6ª edição, *Critical Care*, 2023. https://doi.org/10.1186/s13054-023-04327-7 — Fundamenta hemostasia, TXA precoce em trauma hemorrágico e cuidados na ressuscitação.",
+    "9. **ILAS — Instituto Latino-Americano de Sepse.** Plataforma educacional com módulo dedicado às atualizações SSCG 2026. https://ilas.eadplataforma.app/courses — Referência brasileira para treinamento e implementação; a existência de curso não foi tratada como validação independente de dose ou conduta específica.",
+    "**Divergência que deve permanecer explícita:** a SSC 2026 sugere **pelo menos 30 mL/kg** nas primeiras três horas para adultos com hipoperfusão induzida por sepse ou choque séptico, sempre individualizando; a orientação ESICM sobre volume de fluidos não usa obrigatoriamente o mesmo enquadramento. Não somar recomendações como se fossem um valor absoluto invariável. A necessidade de fluidos após fase inicial deve resultar de avaliação dinâmica e da tolerância, com atenção à insuficiência cardíaca, edema e choque misto. Em anafilaxia, a dose IM da ASBAI/SBP é por peso, respeitando o teto e a faix",
+    "**Pendências obrigatórias para homologar:** revisão médico-científica especializada de condutas/doses e da consistência entre diretrizes; ajuste de farmacologia segundo protocolos hospitalares brasileiros; matriz com âncoras reais após integração HTML; confirmar ao menos dez candidatas reais de imagem com rastreabilidade, fazer curadoria licenciada e colocar na fila Admin; checar figuras já aprovadas no acervo; executar validações de sintaxe, referências, scripts de auditoria, interface desktop/PWA, acessibilidade e leitura crítica de cada questão. **Não divulgar como livro pronto nem executar"
+  ],
+  "external_urls": [
+    "https://aaai-asbai.org.br/article/10.5935/2526-5393.20250003/pdf/aaai-9-1-5-trans1.pdf",
+    "https://doi.org/10.5935/abc.20190203",
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "https://www.esicm.org/esicm-guideline-circulatory-shock-haemodynamic-monitoring/",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2025.02.018",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005",
+    "https://doi.org/10.1186/s13054-023-04327-7",
+    "https://ilas.eadplataforma.app/courses",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6496999/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Reconhecer alteração do sensório, tempo de enchimento capilar prolongado, extremidades frias ou mosqueadas, oligúria, taquipneia, hipotensão e elevação ou persistência de lactato. Nenhum sinal isolado encerra o diagnóstico. A avaliação é **seriada**, antes e depois de cada intervenção, e deve incluir evidência de congestão quando há risco de sobrecarga hídrica."
+    },
+    {
+      "text": "**Alerta de segurança:** pneumotórax hipertensivo com instabilidade é diagnóstico clínico e não deve esperar tomografia. Trombólise para TEP só após ponderar probabilidade, gravidade e contraindicações; choque cardiogênico isquêmico precisa avaliação urgente de reperfusão. A intervenção é determinada pelo mecanismo, não por uma sequência única aplicável a todo choque."
+    },
+    {
+      "text": "A pressão arterial média depende de fluxo e resistência vascular, mas valores aparentemente satisfatórios não excluem microcirculação inadequada. Na sepse com necessidade de vasopressores, PAM em torno de 65 mmHg é ponto de partida frequente, a individualizar pelo quadro; não serve como meta universal para todos os pacientes, fases ou mecanismos."
+    },
+    {
+      "text": "O débito depende da frequência cardíaca multiplicada pelo volume sistólico. O volume sistólico, por sua vez, depende de pré-carga, contratilidade, pós-carga, sincronismo entre câmaras e integridade valvar. Aumentar frequência nem sempre aumenta fluxo: na taquicardia extrema, o enchimento diastólico fica comprometido; uma bradiarritmia grave pode produzir baixo débito mesmo com contração ventricular preservada. No choque, separar as perguntas “o sangue chega ao coração?”, “o coração consegue ejetá-lo?” e “o sangue chega aos tecidos em resistência adequada?” ajuda a construir o diagnóstico."
+    },
+    {
+      "text": "**Exemplo comentado:** paciente A tem PAM de 70 mmHg e mãos frias, pulso fino, débito estimado reduzido, vasoconstrição intensa; paciente B tem PAM de 70 mmHg, extremidades quentes, pulso amplo e vasodilatação relevante. A pressão igual não significa mesma necessidade de fluidos, vasopressores ou inotrópicos. A avaliação do fenótipo e da trajetória determina a escolha."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

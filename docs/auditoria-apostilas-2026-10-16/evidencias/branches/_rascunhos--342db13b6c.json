@@ -1,0 +1,380 @@
+{
+  "sha": "342db13b6cf2a1fc047cd301fe876cd3d55c55e3",
+  "path": "apostilas/_rascunhos/lote-05-109-puerperio-normal-patologico.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--342db13b6c",
+  "title": "LURIA — Apostila 109: Puerpério normal e patológico",
+  "format": ".md",
+  "chars_estimated": 67428,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 109: Puerpério normal e patológico"
+    },
+    {
+      "title": "0. Auditoria inicial, fontes e limites curriculares"
+    },
+    {
+      "title": "0.1. O que esta aula NÃO tentará substituir"
+    },
+    {
+      "title": "0.2. Competências finais"
+    },
+    {
+      "title": "1. Definições: puerpério é período biológico e transição assistencial"
+    },
+    {
+      "title": "1.1. Linha do tempo com perguntas clínicas"
+    },
+    {
+      "title": "2. Involução uterina: hemostasia e remodelamento são processos relacionados, não idênticos"
+    },
+    {
+      "title": "2.1. O leito placentário continua cicatrizando"
+    },
+    {
+      "title": "3. Loquiação: cor é uma pista, gravidade depende do conjunto"
+    },
+    {
+      "title": "4. Fisiologia hemodinâmica, hematológica, renal e metabólica"
+    },
+    {
+      "title": "4.1. Redistribuição de volume e circulação"
+    },
+    {
+      "title": "4.2. Leucócitos e coagulação"
+    },
+    {
+      "title": "4.3. Hemoglobina e anemia"
+    },
+    {
+      "title": "4.4. Micção e trato urinário"
+    },
+    {
+      "title": "4.5. Rim, eletrólitos e volume"
+    },
+    {
+      "title": "5. Endocrinologia do pós-parto e início da lactação"
+    },
+    {
+      "title": "5.1. Saída da placenta: a mudança hormonal decisiva"
+    },
+    {
+      "title": "5.2. Colostro e a primeira semana"
+    },
+    {
+      "title": "5.3. Sucção, ejeção e transferência"
+    },
+    {
+      "title": "6. Mama normal, ingurgitamento, trauma e espectro de mastite"
+    },
+    {
+      "title": "6.1. Congestão fisiológica e ingurgitamento"
+    },
+    {
+      "title": "6.2. Trauma papilar"
+    },
+    {
+      "title": "6.3. Mastite inflamatória, bacteriana e abscesso"
+    },
+    {
+      "title": "7. Períneo, feridas e recuperação musculoesquelética"
+    },
+    {
+      "title": "7.1. Pós-parto vaginal e lacerações"
+    },
+    {
+      "title": "7.2. Cesariana e ferida cirúrgica"
+    },
+    {
+      "title": "7.3. Assoalho pélvico e função sexual"
+    },
+    {
+      "title": "8. Intestino, bexiga e abdome: sintomas comuns e diagnósticos perigosos"
+    },
+    {
+      "title": "9. Sinais de alerta: triagem obstétrica não pode esperar seis semanas"
+    },
+    {
+      "title": "9.1. Sinais imediatamente ameaçadores"
+    },
+    {
+      "title": "9.2. Falsas tranquilizações frequentes"
+    },
+    {
+      "title": "10. Hemorragia puerperal: ponte segura para a aula 104"
+    },
+    {
+      "title": "11. Hipertensão no pós-parto: a gestação terminou, a doença pode não ter terminado"
+    },
+    {
+      "title": "11.1. Cefaleia após raquianestesia/peridural"
+    },
+    {
+      "title": "12. Tromboembolismo venoso, embolia pulmonar e risco cardiovascular"
+    },
+    {
+      "title": "12.1. Cardiomiopatia periparto e edema pulmonar"
+    },
+    {
+      "title": "13. Febre puerperal, feridas e infecção: reconhecimento, não duplicação da 114"
+    },
+    {
+      "title": "14. Saúde mental: baby blues, depressão, ansiedade, mania e psicose"
+    },
+    {
+      "title": "14.1. Baby blues"
+    },
+    {
+      "title": "14.2. Depressão perinatal/pós-parto"
+    },
+    {
+      "title": "14.3. Psicose puerperal: emergência"
+    },
+    {
+      "title": "14.4. Ansiedade, trauma obstétrico e violência"
+    },
+    {
+      "title": "15. Sono, fadiga, identidade e rede social: assistência não é só exame físico"
+    },
+    {
+      "title": "16. Contracepção após parto: ovulação pode preceder a primeira menstruação"
+    },
+    {
+      "title": "16.1. Método da amenorreia lactacional (MAL/LAM)"
+    },
+    {
+      "title": "16.2. Combinados com estrogênio"
+    },
+    {
+      "title": "16.3. Progestagênio isolado e LARC"
+    },
+    {
+      "title": "16.4. Barreira, contracepção de emergência e planejamento reprodutivo"
+    },
+    {
+      "title": "17. Diabetes gestacional, tireoide e doenças crônicas"
+    },
+    {
+      "title": "17.1. Após diabetes mellitus gestacional"
+    },
+    {
+      "title": "17.2. Tireoidite pós-parto"
+    },
+    {
+      "title": "17.3. Risco cardiovascular de longo prazo"
+    },
+    {
+      "title": "18. Consulta puerperal — uma consulta de verdade, não apenas “olhar a incisão”"
+    },
+    {
+      "title": "18.1. Quando fazer"
+    },
+    {
+      "title": "18.2. Roteiro completo: abertura"
+    },
+    {
+      "title": "18.3. Sintomas por sistemas"
+    },
+    {
+      "title": "18.4. Exame físico dirigido"
+    },
+    {
+      "title": "18.5. Condutas da consulta"
+    },
+    {
+      "title": "19. Atendimento respeitoso, desigualdades e situações especiais"
+    },
+    {
+      "title": "19.1. Puérperas adolescentes"
+    },
+    {
+      "title": "19.2. Pessoas com deficiência ou mobilidade reduzida"
+    },
+    {
+      "title": "19.3. Cesárea complexa, hemorragia e transfusão"
+    },
+    {
+      "title": "19.4. Natimorto, perda neonatal e luto"
+    },
+    {
+      "title": "19.5. Recém-nascido prematuro/UUTI neonatal"
+    },
+    {
+      "title": "20. Algoritmos textuais originais para plantão, APS e alta"
+    },
+    {
+      "title": "Fluxo A — primeira avaliação pós-parto"
+    },
+    {
+      "title": "Fluxo B — sangramento puerperal"
+    },
+    {
+      "title": "Fluxo C — cefaleia"
+    },
+    {
+      "title": "Fluxo D — mama dolorosa"
+    },
+    {
+      "title": "Fluxo E — sofrimento emocional"
+    },
+    {
+      "title": "21. Pérolas de prova e medicina real"
+    },
+    {
+      "title": "22. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — A loquiação que deixou de ser normal no 13º dia"
+    },
+    {
+      "title": "Caso 2 — Cefaleia no quinto dia após cesárea"
+    },
+    {
+      "title": "Caso 3 — Mama dolorida na apojadura"
+    },
+    {
+      "title": "Caso 4 — Tristeza que persiste além do baby blues"
+    },
+    {
+      "title": "Caso 5 — Delírio na segunda semana"
+    },
+    {
+      "title": "Caso 6 — A amamentação como falsa garantia contraceptiva"
+    },
+    {
+      "title": "Caso 7 — Dispneia em paciente após cesariana"
+    },
+    {
+      "title": "Caso 8 — Alta tardia após diabetes gestacional"
+    },
+    {
+      "title": "23. Questões autorais com comentários de TODAS as alternativas"
+    },
+    {
+      "title": "Questão 1 — Acompanhamento pós-natal"
+    },
+    {
+      "title": "Questão 2 — Loquiação"
+    },
+    {
+      "title": "Questão 3 — Cefaleia"
+    },
+    {
+      "title": "Questão 4 — Mastite ou ingurgitamento?"
+    },
+    {
+      "title": "Questão 5 — Micção"
+    },
+    {
+      "title": "Questão 6 — MAL"
+    },
+    {
+      "title": "Questão 7 — Estrogênio"
+    },
+    {
+      "title": "Questão 8 — Psicose puerperal"
+    },
+    {
+      "title": "Questão 9 — Rastreamento após DMG"
+    },
+    {
+      "title": "Questão 10 — Trombose"
+    },
+    {
+      "title": "24. Plano visual — dez imagens/diagramas candidatos"
+    },
+    {
+      "title": "25. Referências reais, datadas e aplicadas"
+    },
+    {
+      "title": "26. Auditoria preliminar e lacunas honestamente sinalizadas"
+    }
+  ],
+  "reference_entries": [
+    "**Situação do repositório antes da criação:** não havia manuscrito dedicado no caminho editorial desta aula; havia material correlato sobre assistência ao parto e **uma apostila 104 de hemorragia pós-parto com 102.189 caracteres**, que deve ser preservada. A **apostila 114, infecção puerperal**, está prevista para o mesmo lote e deverá conter o manejo infeccioso em profundidade. A 109 funciona como aula longitudinal do pós-parto: fisiologia, avaliação, prevenção, amamentação, alterações frequentes, complicações reconhecidas precocemente, seguimento e encaminhamento.",
+    "**Referência de benchmark efetivamente lida no Google Drive:** “01 - PUERPERIO FISIOLOGICO.pdf” (2.930 caracteres extraídos) aborda fases, involução, loquiação, mama, hematologia e ovulação, mas não foi incorporada ou reescrita. O documento contém indicação de redistribuição por terceiro e **licença comercial não verificada**; sua utilidade é apenas indicar assuntos que o aluno espera encontrar. Algumas cronologias desse resumo são aproximativas e NÃO substituem literatura clínica.",
+    "**Fontes públicas verificadas:** OMS 2022 *WHO recommendations on maternal and newborn care for a positive postnatal experience*, especialmente recomendações 1 e 44; ACOG Committee Opinion 736, *Optimizing Postpartum Care* (2018); ACOG Clinical Practice Guidelines 4 e 5 (2023), saúde mental perinatal; CDC US MEC/US SPR 2024, contracepção no puerpério; Academy of Breastfeeding Medicine, protocolo 36 sobre espectro da mastite (2022); Ministério da Saúde, páginas de Saúde Materna e guia de atenção à saúde de mulheres com deficiência e mobilidade reduzida (recomendação de avaliação puerperal preco",
+    "**Mapa dos capítulos:** conceito e cronologia → adaptações fisiológicas → consulta e sinais de alarme → aleitamento e mama → feridas e assoalho pélvico → trato urinário e intestino → doenças vasculares e metabólicas → saúde mental → contracepção e sexualidade → seguimento centrado na pessoa → casos e questões → visual, referências e QA.",
+    "- **Apostila 104 — Hemorragia pós-parto:** ressuscitação, uterotônicos, tamponamento, cirurgia, protocolos de transfusão e diagnóstico detalhado de HPP secundária. A 109 ensina **a identificar sangramento que ultrapassa padrão fisiológico e a encaminhar/estabilizar**.",
+    "- **Apostila 114 — Infecção puerperal:** endometrite, infecção de ferida, abscesso, mastite bacteriana complexa e sepse com terapêutica detalhada. A 109 ensina **a distinguir febre fisiologicamente explicável, inflamação mamária e infecção real**, e identifica urgência.",
+    "- Apostilas de pré-eclâmpsia, DMG, tromboembolismo e amamentação: quando existirem, devem ser relacionadas por links curriculares, sem recriação de centenas de linhas repetidas.",
+    "**Classificação tradicional brasileira frequentemente cobrada:** puerpério imediato, do 1º ao 10º dia; tardio, do 11º ao 45º dia; remoto, após 45º dia. **Não há uniformidade universal de nomenclatura e intervalos**: em outros textos, “puerpério imediato” é primeiras 24 horas e o restante se organiza de outro modo. Prova deve informar o esquema adotado ou utilizar a cronologia explícita em dias; atendimento clínico deve priorizar risco, e não classificações rígidas.",
+    "**Por que o puerpério importa:** complicações como hipertensão de início pós-parto, trombose e problemas de lactação podem ocorrer **após a alta**, quando a paciente muitas vezes reduz contato com a maternidade. O cuidado seguro demanda continuidade entre maternidade, Atenção Primária à Saúde (APS), especialistas, enfermagem, saúde mental e rede de apoio. O recém-nascido é parte do cenário assistencial, mas necessidades da mulher merecem avaliação própria e não podem ser reduzidas a “está tudo bem com o bebê?”.",
+    "**Ocitonina e amamentação:** a sucção promove liberação de ocitocina, contrações uterinas e por vezes **cólicas durante mamadas**, especialmente em multíparas. A contração normal tende a ser limitada no tempo, suportável e a diminuir na evolução. Dor intensa progressiva, útero muito doloroso com febre, mau odor dos lóquios ou hemorragia não devem ser explicados automaticamente como “cólica da involução”.",
+    "**Subinvolução:** o útero permanece maior e/ou com sangramento além do esperado, podendo relacionar-se a restos ovulares, infecção, alterações vasculares ou falha de contração. Não é diagnóstico com base somente na palpação isolada; contexto, exame, sinais vitais e eventualmente ultrassom Doppler importam. **Suspeitar de HPP secundária** com sangramento volumoso ou instabilidade e seguir conteúdo da aula 104.",
+    "**Lóquios** são secreções vaginais pós-parto provenientes de sangue, decidua e material uterino, cuja aparência costuma modificar-se com a involução. O padrão didático mais lembrado é **rubra**, inicialmente avermelhada; **serosa**, progressivamente rósea/acastanhada; **alba**, clara/esbranquiçada. Os intervalos são aproximativos, dependem de lactação e atividade, e mudanças temporárias de cor não significam sozinhas patologia.",
+    "**Fluxo esperado:** tende a diminuir progressivamente. Um discreto aumento ao levantar ou amamentar pode ocorrer, mas **enchimento rápido de absorvente, coágulos grandes, tontura, palpitação, hipotensão, palidez e sangramento crescente** exigem avaliação. O uso de um “número de dias rubra” como diagnóstico inflexível ignora amplo espectro normal e real necessidade de examinar. Uma paciente com anemia prévia pode ter repercussão importante antes de atingir grandes volumes aparentes.",
+    "**Perguntas de qualidade:** quantos absorventes e em quanto tempo, quão encharcados, presença de coágulos, piora progressiva, sintomas ortostáticos, febre, dor abdominal, antecedentes de HPP, uso de anticoagulante e saída de restos. A cor isolada é menos informativa que tendência e repercussão.",
+    "**Pressão arterial:** pacientes com pré-eclâmpsia/hipertensão gestacional exigem vigilância após o parto. A PA pode elevar-se nos primeiros dias, inclusive depois da alta. ACOG 736 indica aferir PA em hipertensas da gestação em até **7–10 dias após o parto**, com avaliação em até **72 horas** na hipertensão grave. Hipertensão de novo com cefaleia/escotomas/dor epigástrica/dispneia deve ser avaliada como potencial síndrome hipertensiva puerperal, não “apenas estresse”.",
+    "**Prolactina** contribui para produção, estimulada pela sucção. **Ocitocina** contribui para ejeção por contração das células mioepiteliais. Confundir produção e ejeção gera intervenções erradas: mama tensa não prova transferência eficaz ao bebê, enquanto mama macia não prova falta de leite.",
+    "**Cuidados práticos:** pele a pele e oferta responsiva quando mãe/bebê estão estáveis; observar uma mamada completa se houver queixa; orientar extração manual quando separação ou pega ineficaz; individualizar extração mecânica e suplementação; garantir acesso a banco de leite humano/equipe de lactação quando disponível. Não transformar recomendações gerais em imposições a famílias com contraindicação médica, escolhas informadas ou contextos de vulnerabilidade.",
+    "**Quadro inflamatório:** dor, eritema localizado, calor e, às vezes, sintomas sistêmicos. **Suspeita de mastite bacteriana:** febre persistente, piora clínica, sinais mais extensos ou evolução compatível; a distinção pode exigir acompanhamento estreito. **Abscesso:** coleção e possível flutuação, massa persistente ou falha após tratamento, precisando de imagem e intervenção. A aula **114** conterá antibióticos, culturas, drenagem e diferenciais detalhados; aqui, a competência é **reconhecer necessidade de avaliação, garantir transferência segura e não ordenar interromper aleitamento de forma a",
+    "**Sinal de alarme:** paciente toxêmica, hipoperfundida, confusa ou com dor rapidamente progressiva necessita avaliação imediata para sepse/infecção profunda, independentemente de lactação.",
+    "**Lacerações obstétricas de terceiro e quarto graus** envolvem complexo esfincteriano anal e/ou mucosa retal, associando-se a risco de incontinência fecal, dor e disfunção sexual. Seu seguimento exige equipe experiente, controle de evacuação, analgesia, cuidado de ferida e, quando pertinente, fisioterapia pélvica. Não utilizar “todas cicatrizam sozinhas” como aconselhamento.",
+    "**Retenção urinária:** suspeitar quando não há micção no período esperado, há desconforto suprapúbico, globo vesical ou micções pequenas com sensação de esvaziamento incompleto. Pode haver retenção oculta sem dor intensa. Medir resíduo pós-miccional com US quando disponível e conduzir segundo protocolo, evitando lesão por hiperdistensão. **Incontinência e retenção não são mutuamente excludentes:** extravasamento pode coexistir com retenção.",
+    "**Sintomas urinários:** disúria e urgência podem decorrer de trauma periuretral, cateter, irritação e ITU. Febre persistente, dor lombar, disúria e piúria exigem avaliação de infecção. Paciente com cateter pós-parto prolongado deve ter indicação reavaliada e remoção tão logo seja segura, evitando infecção associada.",
+    "**Atendimento de emergência:** sangramento vaginal volumoso/coágulos com fraqueza ou alteração hemodinâmica; cefaleia intensa e refratária com escotomas/convulsão/alteração neurológica; dispneia ou dor torácica; dessaturação; unilateralidade de edema doloroso com suspeita trombótica; confusão, febre alta persistente com taquicardia/hipotensão; ideias suicidas com intenção ou delírios/psicose; dor abdominal intensa com defesa/peritonismo.",
+    "- “Toda dor de cabeça no pós-parto é da anestesia.” Não: cefaleia pós-punção é um diferencial, mas pré-eclâmpsia, trombose venosa cerebral, hemorragia e meningite podem exigir exclusão.",
+    "- “Pés inchados são sempre normais.” Não: assimetria dolorosa e dispneia mudam conduta.",
+    "- “Lóquios fortes são comuns.” O volume e a repercussão devem ser objetivados.",
+    "- “Febre é porque desceu o leite.” Apojadura pode cursar desconforto, mas febre persistente/alteração sistêmica não deve ser atribuída a ela sem exame.",
+    "- “Toda tristeza na primeira semana é baby blues.” Sintomas graves, psicose ou risco de suicídio não são flutuação hormonal esperada.",
+    "**Sequência segura:** reconhecer choque antes de esperar hemoglobina; acionar ajuda, avaliar via aérea/respiração/circulação, acesso venoso, quantificar perdas, exame abdominal e genital conforme estabilidade, exames e US Doppler quando indicados. Em instáveis, não retardar ressuscitação esperando imagem. Em estáveis, determinar causa para evitar procedimentos iatrogênicos — por exemplo, lesão vascular uterina pode simular restos e requer cuidado antes de instrumentação. **Toda a terapêutica detalhada e protocolos de transfusão pertencem à 104**.",
+    "**Ensinamento central:** um episódio de sangramento que a paciente descreve como “menstruação intensa” duas semanas após parto precisa ser avaliado pelo conjunto clínico; chamar de “retorno de ciclo” sem avaliar tônus, volume e sinais vitais é erro perigoso."
+  ],
+  "external_urls": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK579650/.",
+    "https://www.who.int/publications/i/item/9789240045989.",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/optimizing-postpartum-care.",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum.",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/treatment-and-management-of-mental-health-conditions-during-pregnancy-and-postpartum.",
+    "https://www.cdc.gov/mmwr/volumes/73/rr/rr7304a1_appendix.htm.",
+    "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html.",
+    "https://www.cdc.gov/contraception/hcp/usmec/lactational-amenorrhea-method.html.",
+    "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm.",
+    "https://pubmed.ncbi.nlm.nih.gov/35576513/.",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-materna.",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/publicacoes/guia-de-atencao-a-saude-das-mulheres-com-deficiencia-e-mobilidade-reduzida.pdf.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12307271/;"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes públicas verificadas:** OMS 2022 *WHO recommendations on maternal and newborn care for a positive postnatal experience*, especialmente recomendações 1 e 44; ACOG Committee Opinion 736, *Optimizing Postpartum Care* (2018); ACOG Clinical Practice Guidelines 4 e 5 (2023), saúde mental perinatal; CDC US MEC/US SPR 2024, contracepção no puerpério; Academy of Breastfeeding Medicine, protocolo 36 sobre espectro da mastite (2022); Ministério da Saúde, páginas de Saúde Materna e guia de atenção à saúde de mulheres com deficiência e mobilidade reduzida (recomendação de avaliação puerperal precoce); diretrizes obstétricas de HPP, síndromes hipe"
+    },
+    {
+      "text": "- **Apostila 104 — Hemorragia pós-parto:** ressuscitação, uterotônicos, tamponamento, cirurgia, protocolos de transfusão e diagnóstico detalhado de HPP secundária. A 109 ensina **a identificar sangramento que ultrapassa padrão fisiológico e a encaminhar/estabilizar**. - **Apostila 114 — Infecção puerperal:** endometrite, infecção de ferida, abscesso, mastite bacteriana complexa e sepse com terapêutica detalhada. A 109 ensina **a distinguir febre fisiologicamente explicável, inflamação mamária e infecção real**, e identifica urgência. - Apostilas de pré-eclâmpsia, DMG, tromboembolismo e amamentação: quando existirem, devem ser relacionadas por"
+    },
+    {
+      "text": "O puerpério começa após o nascimento e a dequitação e corresponde ao período de **regressão das modificações gestacionais**, estabelecimento da lactação, recuperação de tecidos e reorganização física e psicossocial. A OMS centra suas recomendações pós-natais nas **seis primeiras semanas**, enquanto o conceito de recuperação pós-parto pode ultrapassar esse horizonte, envolvendo sono, sexualidade, assoalho pélvico, doença crônica e saúde mental durante meses. Dizer que “o corpo volta ao estado pré-gravídico em 42 dias” confunde uma convenção de seguimento com retorno simultâneo de todos os sistemas."
+    },
+    {
+      "text": "| Janela | Adaptação principal | Prioridades de avaliação | Armadilhas | |---|---|---|---| | Primeiras duas horas | Contração uterina, hemostasia placentária, mudanças hemodinâmicas | Sangramento, tônus, sinais vitais, vínculo, pele a pele | Achar que normotensão isolada exclui hemorragia | | 2–24 horas | Diurese, mobilização, início de lactação, dor | PA, pulso, sangramento, retenção urinária, dor, feridas | Não documentar primeira micção | | 2–3 dias | Transição láctea, redistribuição de fluidos, possível pico de PA em dias seguintes | Pega, ingurgitamento, cefaleia, edema, suporte | Confundir febre persistente com apojadura | | 7–14 dias |"
+    },
+    {
+      "text": "**Subinvolução:** o útero permanece maior e/ou com sangramento além do esperado, podendo relacionar-se a restos ovulares, infecção, alterações vasculares ou falha de contração. Não é diagnóstico com base somente na palpação isolada; contexto, exame, sinais vitais e eventualmente ultrassom Doppler importam. **Suspeitar de HPP secundária** com sangramento volumoso ou instabilidade e seguir conteúdo da aula 104."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

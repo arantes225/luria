@@ -1,0 +1,321 @@
+{
+  "sha": "d9333296e25b3002b1849a77e8356a2a7e6f3054",
+  "path": "apostilas/_rascunhos/lote-09-aula-188-anafilaxia-reacoes-alergicas-graves.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d9333296e2",
+  "title": "LURIA — Apostila 188 | Anafilaxia e reações alérgicas graves",
+  "format": ".md",
+  "chars_estimated": 61254,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 188 | Anafilaxia e reações alérgicas graves"
+    },
+    {
+      "title": "1. Anafilaxia é síndrome clínica aguda, não sinônimo de urticária intensa"
+    },
+    {
+      "title": "1.1 Hipersensibilidade imune e não imune"
+    },
+    {
+      "title": "1.2 Por que o paciente pode entrar em choque?"
+    },
+    {
+      "title": "1.3 Mediadores e racional farmacológico"
+    },
+    {
+      "title": "2. Diagnóstico: reconhecer rapidamente padrões de risco"
+    },
+    {
+      "title": "2.1 Manifestações por sistema"
+    },
+    {
+      "title": "2.2 Diagnóstico diferencial"
+    },
+    {
+      "title": "2.3 Tryptase: exame de confirmação auxiliar, não autorização para tratar"
+    },
+    {
+      "title": "3. Tratamento imediato: tempo até adrenalina é variável decisiva"
+    },
+    {
+      "title": "3.1 Adrenalina IM — fármaco de primeira linha"
+    },
+    {
+      "title": "3.2 ABC, posição e acesso"
+    },
+    {
+      "title": "3.3 Broncodilatador, anti-histamínico e corticosteroide são adjuvantes"
+    },
+    {
+      "title": "3.4 Anafilaxia refratária"
+    },
+    {
+      "title": "4. Observação, recorrência e prevenção após crise"
+    },
+    {
+      "title": "4.1 A reação bifásica existe, mas não acomete todos"
+    },
+    {
+      "title": "4.2 Autoinjetores no Brasil e plano de ação"
+    },
+    {
+      "title": "4.3 Identificar gatilho sem rotular toda exposição"
+    },
+    {
+      "title": "4.4 Distúrbios mastocitários e causa idiopática"
+    },
+    {
+      "title": "5. Quatro situações que confundem a decisão"
+    },
+    {
+      "title": "8. Como reconhecer rapidamente uma emergência sem depender de exames"
+    },
+    {
+      "title": "8.1 Janela temporal e vínculo causal"
+    },
+    {
+      "title": "8.2 A pele pode estar normal"
+    },
+    {
+      "title": "8.3 Sintoma respiratório alto versus baixo"
+    },
+    {
+      "title": "8.4 Sintoma gastrointestinal: quando é relevante?"
+    },
+    {
+      "title": "8.5 Choque sem hipotensão detectada no primeiro minuto"
+    },
+    {
+      "title": "9. Farmacologia da adrenalina: por que a escolha e a via importam"
+    },
+    {
+      "title": "9.1 Concentração 1 mg/mL e cálculo da dose IM"
+    },
+    {
+      "title": "9.2 Por que a coxa anterolateral?"
+    },
+    {
+      "title": "9.3 Repetição e reavaliação"
+    },
+    {
+      "title": "9.4 Epinefrina IV e erro de administração"
+    },
+    {
+      "title": "9.5 Beta-bloqueadores e epinefrina"
+    },
+    {
+      "title": "10. Manejo por prioridades clínicas: decisões em tempo real"
+    },
+    {
+      "title": "10.1 Via aérea alta com edema progressivo"
+    },
+    {
+      "title": "10.2 Broncoespasmo persistente"
+    },
+    {
+      "title": "10.3 Choque persistente"
+    },
+    {
+      "title": "10.4 Sinais de parada cardiorrespiratória"
+    },
+    {
+      "title": "11. Angioedema: histamina versus bradicinina"
+    },
+    {
+      "title": "11.1 Histaminérgico"
+    },
+    {
+      "title": "11.2 Mediado por bradicinina"
+    },
+    {
+      "title": "11.3 Exames e confirmação posterior"
+    },
+    {
+      "title": "11.4 Quadro comparativo"
+    },
+    {
+      "title": "12. Reações cutâneas medicamentosas graves: nem toda “alergia” é anafilaxia"
+    },
+    {
+      "title": "12.1 Urticária aguda e exantema morbiliforme"
+    },
+    {
+      "title": "12.2 Síndrome de Stevens–Johnson e necrólise epidérmica tóxica"
+    },
+    {
+      "title": "12.3 DRESS"
+    },
+    {
+      "title": "12.4 AGEP e outras reações"
+    },
+    {
+      "title": "12.5 Alergia imediata à penicilina versus rótulo de alergia"
+    },
+    {
+      "title": "13. Anafilaxia relacionada a alimentos, medicamentos e insetos"
+    },
+    {
+      "title": "13.1 Alimentos"
+    },
+    {
+      "title": "13.2 Medicamentos"
+    },
+    {
+      "title": "13.3 Venenos de himenópteros"
+    },
+    {
+      "title": "13.4 Látex e contexto cirúrgico"
+    },
+    {
+      "title": "14. Do episódio agudo à prevenção individual"
+    },
+    {
+      "title": "14.1 Reação bifásica e tempo de observação"
+    },
+    {
+      "title": "14.2 Prevenção sem medo excessivo"
+    },
+    {
+      "title": "14.3 Educação de familiares e comunidade"
+    },
+    {
+      "title": "15. Integração com princípios de segurança do LURIA"
+    },
+    {
+      "title": "16. Casos clínicos originais e raciocínio passo a passo"
+    },
+    {
+      "title": "Caso 1 — Sem urticária, mas com choque após antibiótico"
+    },
+    {
+      "title": "Caso 2 — Edema de língua por IECA ou anafilaxia?"
+    },
+    {
+      "title": "Caso 3 — Urticária isolada e risco de superdiagnóstico"
+    },
+    {
+      "title": "Caso 4 — Picada de vespa e hipotensão com beta-bloqueador"
+    },
+    {
+      "title": "Caso 5 — Hipotensão súbita sob anestesia"
+    },
+    {
+      "title": "Caso 6 — Recorrência de sintomas após resolução"
+    },
+    {
+      "title": "17. Questões originais comentadas — oito cenários"
+    },
+    {
+      "title": "Questão 1 — Primeiro tratamento"
+    },
+    {
+      "title": "Questão 2 — Via e concentração"
+    },
+    {
+      "title": "Questão 3 — Ausência de pele"
+    },
+    {
+      "title": "Questão 4 — Angioedema por bradicinina"
+    },
+    {
+      "title": "Questão 5 — Medicações adjuvantes"
+    },
+    {
+      "title": "Questão 6 — Reação bifásica"
+    },
+    {
+      "title": "Questão 7 — Anafilaxia perioperatória"
+    },
+    {
+      "title": "Questão 8 — Beta-bloqueador e cardiopatia"
+    },
+    {
+      "title": "18. Algoritmo LURIA original, seguro e não reproduzido"
+    },
+    {
+      "title": "19. Plano visual com aprovação centralizada"
+    },
+    {
+      "title": "20. Matriz de cobertura e pendências"
+    },
+    {
+      "title": "21. Referências para validação e continuidade"
+    },
+    {
+      "title": "22. Auditoria de decisões críticas e aprofundamento de cenários especiais"
+    },
+    {
+      "title": "22.1 Teste de estresse: “o paciente não tem rash”"
+    },
+    {
+      "title": "22.2 Teste de estresse: “já recebi uma dose de adrenalina”"
+    },
+    {
+      "title": "22.3 Teste de estresse: “só tenho um acesso venoso e quero usá-lo para adrenalina”"
+    },
+    {
+      "title": "22.4 Teste de estresse: “a pessoa é cardiopata e muito idosa”"
+    },
+    {
+      "title": "22.5 Teste de estresse: “o problema apareceu durante anestesia”"
+    },
+    {
+      "title": "22.6 Teste de estresse: “a reação passou, posso encerrar cuidado?”"
+    },
+    {
+      "title": "22.7 Diferenciar “refratária”, “persistente” e “bifásica”"
+    },
+    {
+      "title": "22.8 Por que esses conceitos fazem diferença nas provas?"
+    },
+    {
+      "title": "22.9 Segurança de tradução para a plataforma"
+    }
+  ],
+  "reference_entries": [
+    "1. **WORLD ALLERGY ORGANIZATION.** *World Allergy Organization Anaphylaxis Guidance 2020*. *World Allergy Organization Journal*, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+    "2. **GOLDEN, D. B. K. et al.** *Anaphylaxis: a 2023 practice parameter update*. *Annals of Allergy, Asthma & Immunology*, 2024;132:124–176. DOI https://doi.org/10.1016/j.anai.2023.09.015 . PDF integral: https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf",
+    "3. **ASBAI. Departamento Científico de Anafilaxia.** *Autoinjetores de adrenalina no manejo da anafilaxia*. *Esclarecendo*, edição 19, novembro de 2024. https://asbai.org.br/wp-content/uploads/2024/11/ASBAI_Esclarecendo_no-19_novembro-2024_compressed.pdf",
+    "4. **ASBAI/SBP.** *Atualização em alergia alimentar 2025*, para aspectos de anafilaxia alimentar e pediatria, conferindo abrangência, dosagem e indicações no texto original. https://asbairj.org.br/atualizacao-em-alergia-alimentar-2025-asbai-e-sbp/",
+    "**Refratária** enfatiza ausência de resposta adequada a intervenções apropriadas, incluindo doses repetidas de epinefrina e suporte. **Persistente** envolve continuidade de sintomas ao longo do tempo sem resolução verdadeira. **Bifásica** exige melhora/resolução inicial seguida de nova fase sintomática sem reexposição ao agente. Na prática, a classificação auxilia entendimento, mas nenhum termo deve atrasar tratamento emergencial da fase atual."
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+    "https://doi.org/10.1016/j.anai.2023.09.015",
+    "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf",
+    "https://asbai.org.br/wp-content/uploads/2024/11/ASBAI_Esclarecendo_no-19_novembro-2024_compressed.pdf",
+    "https://asbairj.org.br/atualizacao-em-alergia-alimentar-2025-asbai-e-sbp/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Segundo WAO 2020, dose recomendada na anafilaxia é **0,01 mg/kg IM**, utilizando concentração **1 mg/mL (1:1.000)**, com **máximo de 0,5 mg no adulto**. Aplicar na **face anterolateral média da coxa (músculo vasto lateral)**. Na persistência/progressão dos sintomas, pode ser repetida em **5–15 minutos**, com reavaliação clínica. A dose em adulto depende de peso/protocolo; diretrizes nacionais e internacionais admitem com frequência 0,3 a 0,5 mg no adulto."
+    },
+    {
+      "text": "Em ambientes comunitários, o documento AAAAI/ACAAI 2023 sugere que a necessidade de acionar serviço de emergência depois de autoinjetor pode ser individualizada quando há resposta completa, rápida e durável, conforme risco e situação; **isso não autoriza recomendar que pessoa em choque ou com sintomas persistentes fique em casa**. O contexto do serviço e protocolos brasileiros devem orientar a decisão."
+    },
+    {
+      "text": "Reações muito graves ao veneno de himenópteros, anafilaxias recorrentes sem gatilho identificado ou triptase basal elevada podem levantar suspeita de **doença mastocitária ou alfa-triptasemia hereditária**. Não fazer diagnóstico de mastocitose por uma triptase aguda isolada, nem investigar com biópsia medular todo paciente após episódio isolado leve. O especialista integra história, sintomas, triptase basal e critérios específicos."
+    },
+    {
+      "text": "**Pessoa em uso de IECA com edema de língua progressivo, sem prurido/urticária ou exposição alergênica:** considerar **angioedema mediado por bradicinina**, que pode requerer manejo específico. Garantir via aérea é urgente; a terapêutica de anafilaxia pode ser iniciada se diagnóstico não está claro e há risco, mas ausência de resposta exige reavaliar mecanismo."
+    },
+    {
+      "text": "O reconhecimento da anafilaxia é primordialmente **clínico** e orientado por tempo. Uma exposição plausível seguida de alterações agudas de via aérea, respiração e/ou circulação indica risco imediato; o diagnóstico não pode depender de resultado de IgE, triptase, hemograma ou imagem. Em emergências, a maior parte dos erros graves decorre de **atribuir sibilância a asma isolada, hipotensão a vasovagal ou edema laríngeo a ansiedade**, apesar de contexto alergênico e evolução rápida."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

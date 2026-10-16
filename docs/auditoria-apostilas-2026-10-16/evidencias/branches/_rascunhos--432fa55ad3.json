@@ -1,0 +1,331 @@
+{
+  "sha": "432fa55ad31ac848636611e12a7f2149f241fd1d",
+  "path": "apostilas/_rascunhos/lote-13-276-diarreia-aguda-c-difficile.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--432fa55ad3",
+  "title": "LURIA — Lote 13 · Apostila 276",
+  "format": ".md",
+  "chars_estimated": 77923,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 276"
+    },
+    {
+      "title": "Diarreia aguda no adulto e infecção por *Clostridioides difficile*"
+    },
+    {
+      "title": "Índice"
+    },
+    {
+      "title": "1. Definições e raciocínio sindrômico"
+    },
+    {
+      "title": "Vocabulário decisório"
+    },
+    {
+      "title": "2. Fisiopatologia: por que o intestino produz fezes líquidas?"
+    },
+    {
+      "title": "3. Etiologia orientada por exposição"
+    },
+    {
+      "title": "4. Abordagem clínica e reconhecimento de gravidade"
+    },
+    {
+      "title": "Reidratação como tratamento de primeira linha"
+    },
+    {
+      "title": "5. Investigação: quem precisa de exames?"
+    },
+    {
+      "title": "6. Antimicrobianos, sintomáticos e orientação de alta"
+    },
+    {
+      "title": "7. Infecção por *Clostridioides difficile* (CDI)"
+    },
+    {
+      "title": "Quem deve ser testado?"
+    },
+    {
+      "title": "Como interpretar GDH, toxina e NAAT/PCR?"
+    },
+    {
+      "title": "8. Estratificação e tratamento da CDI"
+    },
+    {
+      "title": "Por que vancomicina intravenosa não resolve a CDI luminal?"
+    },
+    {
+      "title": "9. Recorrência, prognóstico, controle de infecção"
+    },
+    {
+      "title": "10. Diagnósticos diferenciais e condições especiais"
+    },
+    {
+      "title": "11. Algoritmos de decisão"
+    },
+    {
+      "title": "Algoritmo A: adulto com diarreia aguda"
+    },
+    {
+      "title": "Algoritmo B: suspeita de CDI"
+    },
+    {
+      "title": "11A. Diarreia aguda: transformar sintomas em hipóteses fisiopatológicas úteis"
+    },
+    {
+      "title": "Definir o episódio, mas não confundir calendário com mecanismo"
+    },
+    {
+      "title": "O que realmente significa “osmótica”, “secretora” e “inflamatória”?"
+    },
+    {
+      "title": "História epidemiológica: transformar exposições em probabilidades"
+    },
+    {
+      "title": "O “gap osmótico fecal”: quando o cálculo ajuda e quando atrapalha"
+    },
+    {
+      "title": "11B. Desidratação e manejo inicial: a fisiologia orienta o volume, a via e a reavaliação"
+    },
+    {
+      "title": "Perfusão versus hidratação: dois conceitos que se sobrepõem, mas não são iguais"
+    },
+    {
+      "title": "Exemplo de cálculo clínico sem criar receita automática"
+    },
+    {
+      "title": "Distúrbios metabólicos comuns e mecanismos"
+    },
+    {
+      "title": "11C. Qual exame fecal realmente muda conduta?"
+    },
+    {
+      "title": "Não coletar tudo em todos"
+    },
+    {
+      "title": "O parasitológico convencional não responde a toda pergunta"
+    },
+    {
+      "title": "Painel molecular positivo para vários microrganismos"
+    },
+    {
+      "title": "11D. Antimicrobianos e sintomáticos: terapêutica por síndrome em vez de “diarreia = antibiótico”"
+    },
+    {
+      "title": "Diarreia aquosa simples e curta"
+    },
+    {
+      "title": "Disenteria e viajante"
+    },
+    {
+      "title": "Salmonella e os diferenciais de tratamento"
+    },
+    {
+      "title": "11E. *C. difficile*: da disbiose ao diagnóstico correto"
+    },
+    {
+      "title": "Por que um antibiótico respiratório pode gerar colite semanas depois?"
+    },
+    {
+      "title": "Escolher a amostra correta evita uma cascata de falsos diagnósticos"
+    },
+    {
+      "title": "Não confundir pseudomembranas com critério indispensável"
+    },
+    {
+      "title": "11F. Estratificação e tratamento da CDI com a atualização moderna"
+    },
+    {
+      "title": "Não grave, grave e fulminante: o que muda realmente?"
+    },
+    {
+      "title": "Primeiro episódio não fulminante"
+    },
+    {
+      "title": "CDI fulminante: via enteral de vancomicina e foco de infecção"
+    },
+    {
+      "title": "O que fazer com o antibiótico que desencadeou CDI?"
+    },
+    {
+      "title": "Comparação didática das decisões de CDI"
+    },
+    {
+      "title": "11G. Recorrência de CDI, terapias de microbiota e prevenção"
+    },
+    {
+      "title": "Por que a recorrência existe mesmo quando o antibiótico mata o patógeno?"
+    },
+    {
+      "title": "Terapia baseada em microbiota: não é um “probiótico mais forte”"
+    },
+    {
+      "title": "Bezlotoxumabe e a diferença entre tratamento e prevenção"
+    },
+    {
+      "title": "Precaução de contato, lavagem das mãos e ambiente"
+    },
+    {
+      "title": "11H. Complicações, diagnósticos concorrentes e populações especiais"
+    },
+    {
+      "title": "Síndrome hemolítico-urêmica: o que monitorar na possível STEC"
+    },
+    {
+      "title": "Idoso com “diarreia” por fecaloma"
+    },
+    {
+      "title": "Colite isquêmica versus CDI"
+    },
+    {
+      "title": "Doença inflamatória intestinal e infecção sobreposta"
+    },
+    {
+      "title": "Gravidez, transplante e imunossupressão"
+    },
+    {
+      "title": "11I. Casos integrados adicionais para aprendizado por decisão clínica"
+    },
+    {
+      "title": "Caso A — diarreia aquosa e a tentação do antibiótico"
+    },
+    {
+      "title": "Caso B — sangue e risco de síndrome hemolítico-urêmica"
+    },
+    {
+      "title": "Caso C — PCR de CDI positivo com laxante"
+    },
+    {
+      "title": "Caso D — colite fulminante e ileus paradoxal"
+    },
+    {
+      "title": "Caso E — primeiro episódio não fulminante e escolha de tratamento"
+    },
+    {
+      "title": "Caso F — recorrência verdadeira versus teste de cura"
+    },
+    {
+      "title": "Caso G — CDI recorrente após transplante e risco de microbiota"
+    },
+    {
+      "title": "Caso H — viagem, antibiótico e efeito sobre resistência"
+    },
+    {
+      "title": "11J. Questões adicionais de residência — todas as alternativas explicadas"
+    },
+    {
+      "title": "Matriz final: conduta por gravidade e provável síndrome"
+    },
+    {
+      "title": "Imagens candidatas para curadoria do Admin — não anexadas"
+    },
+    {
+      "title": "Referências comparadas, com diferenças de geração editorial explicitadas"
+    },
+    {
+      "title": "12. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Adulto com diarreia aquosa após reunião familiar"
+    },
+    {
+      "title": "Caso 2 — Disenteria e suspeita de STEC"
+    },
+    {
+      "title": "Caso 3 — CDI não fulminante após cefalosporina"
+    },
+    {
+      "title": "Caso 4 — CDI fulminante com íleo"
+    },
+    {
+      "title": "13. Questões autorais comentadas"
+    },
+    {
+      "title": "14. Erros frequentes e pérolas"
+    },
+    {
+      "title": "15. Imagens candidatas — somente fila do Admin, sem inserção no HTML"
+    },
+    {
+      "title": "16. Referências científicas verificadas"
+    },
+    {
+      "title": "Auditoria preliminar (NÃO homologação)"
+    }
+  ],
+  "reference_entries": [
+    "1. IDSA. **Clinical Practice Guidelines for the Diagnosis and Management of Infectious Diarrhea** (2017). https://www.idsociety.org/practice-guideline/infectious-diarrhea",
+    "2. IDSA/SHEA. **Clinical Practice Guideline Update for Management of *Clostridioides difficile* Infection in Adults** (2021). https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/",
+    "3. IDSA/SHEA. **Clinical Practice Guidelines for *Clostridium difficile* Infection in Adults and Children** (2017): recomendações de fulminância, isolamento e esquemas detalhados. https://www.idsociety.org/practice-guideline/clostridium-difficile/",
+    "4. AGA. **Clinical Practice Guideline on Fecal Microbiota-Based Therapies for Select Gastrointestinal Diseases** (2024). https://pubmed.ncbi.nlm.nih.gov/38395525/",
+    "5. CDC. **Clinical Guidance for *C. diff* Infection Prevention in Acute Care Facilities** (consulta em 15/10/2026). https://www.cdc.gov/c-diff/hcp/clinical-guidance/",
+    "6. Comparador do Drive efetivamente lido: *01 — Gastro — Diarreia Aguda + Clostridium*. Estrutura clínica histórica com conceitos úteis, mas esquema “não grave: metronidazol primeiro” está **desatualizado** frente à IDSA/SHEA 2021; não foi reproduzido. Texto/figuras de terceiros não foram reutilizados.",
+    "**Situação editorial:** texto original ampliado; não contém mídia externa publicada. Diretrizes de 2017, 2021 e 2024 foram citadas com seus anos reais, sem apresentá-las como lançamento de 2026. Checagem de doses/apresentações, acesso brasileiro aos medicamentos, revisão por infectologista e gastroenterologista, auditoria dos 60.000 caracteres *didáticos úteis* e testes HTML/PWA seguem pendentes. **RASCUNHO_PARCIAL_NAO_PUBLICAR.**",
+    "**Hipótese:** gastroenterite aguda comunitária provavelmente viral. **Raciocínio:** surto por contato/alimento, duração curta e ausência de gravidade tornam exames e antibióticos de rotina pouco úteis. **Exames:** não obrigatórios inicialmente. **Conduta:** hidratação oral com solução adequada, alimentação conforme tolerância, higiene, repouso relativo e retorno diante de alarme. **Por que importa:** entender que *não prescrever antibiótico* é intervenção correta sustentada por probabilidade pré-teste e segurança.",
+    "**Hipótese:** infecção por bactéria produtora de toxina Shiga entre os principais diferenciais. **Exames:** avaliar hemograma, função renal e análise fecal capaz de pesquisar STEC/toxina Shiga conforme rede. **Conduta:** reidratar, **evitar antibiótico empírico** e fármacos que inibem motilidade enquanto esse diagnóstico não for afastado, monitorar plaquetas e função renal se evolução compatível. **Por que importa:** prevenir síndrome hemolítico-urêmica e a armadilha “diarreia com sangue = antibiótico”.",
+    "**Hipótese:** primeiro episódio de infecção por C. difficile. **Raciocínio:** exposição a antimicrobiano + diarreia nova + prova laboratorial apropriada; distinguir colonização. **Exames:** hemograma/creatinina para gravidade, eletrólitos quando indicados. **Conduta:** precaução de contato e revisão de antibiótico, tratar CDI com fidaxomicina se acessível ou vancomicina VO 125 mg 6/6 h por 10 dias; monitorar hidratação. **Por que importa:** metronidazol não é primeira escolha quando essas opções estão disponíveis.",
+    "**Hipótese:** CDI fulminante com íleo/possível megacólon tóxico; avaliar diferencial isquêmico. **Exames:** coleta dirigida e imagem conforme estabilidade, sem retardar suporte. **Conduta:** abordagem de choque, precauções e equipe multiprofissional, vancomicina enteral 500 mg 6/6 h + metronidazol IV 500 mg 8/8 h conforme IDSA/SHEA; discutir vancomicina retal se íleo, avaliação cirúrgica precoce. **Por que importa:** ausência de diarreia abundante não exclui colite devastadora e vancomicina exclusivamente IV não trata adequadamente a CDI.",
+    "**Q1.** Jovem com 36 h de diarreia aquosa, boa hidratação, sem febre/sangue. Melhor conduta?  ",
+    "**Gabarito C.** Correta: o suporte hídrico é central na doença leve. A/E erram ao empregar antibiótico indiscriminado; B não tem sinal de gravidade; D não costuma alterar o manejo. **Revisão:** indicação de exames depende de sinais de alarme e potencial mudança terapêutica.",
+    "**Q2.** Adulto após carne malcozida evolui com sangue nas fezes, cólica e pouca febre. Qual agente demanda cautela antes de antibiótico?  ",
+    "**Gabarito B.** Correta pela relação com toxina Shiga e SHU. A/E são causas virais geralmente aquosas, C mais frequentemente prolongada/disabsortiva, D não é causa típica de disenteria aguda. **Revisão:** disenteria exige investigação dirigida; a decisão antimicrobiana não é automática.",
+    "**Q3.** Paciente com diarreia após antibiótico tem NAAT positivo para C. difficile e toxina negativa. Interpretação?  ",
+    "**Gabarito C.** NAAT detecta gene toxigênico, não atividade tóxica necessariamente. A exagera; B/D confundem lógica diagnóstica; E erra via de tratamento. **Revisão:** seleção de amostras pré-teste é crucial.",
+    "**Q4.** Primeiro episódio de CDI não fulminante e acesso aos fármacos recomendados. Qual opção apresenta preferência condicional por reduzir recorrência?  ",
+    "**Gabarito B.** IDSA/SHEA favorece fidaxomicina, com vancomicina VO como alternativa. A só é recurso excepcional quando agentes principais não estão disponíveis; C/D/E são inadequadas. **Revisão:** considerar acesso e custos sem inverter a hierarquia da evidência.",
+    "**Q5.** Paciente com choque, megacólon e CDI: esquema que corresponde à recomendação do IDSA/SHEA?  ",
+    "**Gabarito A.** O tratamento combina suporte, via enteral e adjuvante IV em fulminância. B erra o compartimento de ação, C expõe a risco, D subtrata, E atrasa terapêutica. **Revisão:** íleo pode exigir via retal adicional especializada.",
+    "**Q6.** Após tratamento eficaz de CDI, paciente está assintomático. A conduta diagnóstica correta é:  ",
+    "**Gabarito D.** A resolução é clínica; teste persistente pode traduzir detecção residual ou colonização. A/B/C/E levam a sobremedicalização. **Revisão:** recorrência se investiga quando há novos sintomas compatíveis, não apenas positividade laboratorial.",
+    "1. Reidratação costuma ser a primeira conduta — e não é “pouco tratamento”.",
+    "2. Diarreia sanguinolenta não significa “dar antibiótico antes de tudo”; lembrar STEC.",
+    "3. Antibiótico prévio sugere CDI, mas laxantes e outras causas competem.",
+    "4. Solicitar NAAT em assintomático aumenta falso diagnóstico clínico por colonização.",
+    "5. Metronidazol não deve ser apresentado como padrão inicial de CDI não grave se fidaxomicina ou vancomicina VO estiverem disponíveis.",
+    "6. Vancomicina IV isolada não substitui vancomicina enteral no tratamento de CDI luminal.",
+    "7. Ausência de fezes no íleo grave não tranquiliza: suspeitar de colite fulminante."
+  ],
+  "external_urls": [
+    "https://www.idsociety.org/practice-guideline/infectious-diarrhea",
+    "https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/",
+    "https://www.idsociety.org/practice-guideline/clostridium-difficile/",
+    "https://pubmed.ncbi.nlm.nih.gov/38395525/",
+    "https://www.cdc.gov/c-diff/hcp/clinical-guidance/",
+    "https://www.idsociety.org/practice-guideline/infectious-diarrhea/",
+    "https://www.cdc.gov/c-diff/hcp/clinical-overview/index.html",
+    "https://gastro.org/clinical-guidance/fecal-microbiota-based-therapies-for-select-gastrointestinal-diseases/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O aspecto das fezes fornece pistas, mas não dá diagnóstico microbiológico: fezes aquosas volumosas sugerem maior participação de intestino delgado/hipersecreção; evacuações escassas, muito frequentes, com urgência e tenesmo fazem pensar em colite; sangue visível, febre alta e dor importante demandam avaliação para doença inflamatória/invasiva, porém sangue isolado não identifica o patógeno e **não justifica antibiótico automático**."
+    },
+    {
+      "text": "**Gap osmótico fecal** = 290 − 2 × ([Na+] fecal + [K+] fecal), medido em mOsm/kg. É ferramenta de casos prolongados/selecionados, **não exame rotineiro em diarreia aguda**. Valores altos sugerem solutos não medidos; valores baixos sugerem predomínio secretor. Não usar o resultado isoladamente como diagnóstico etiológico."
+    },
+    {
+      "text": "| Situação clínica no adulto | Opção documentada em IDSA/SHEA 2021 | Observações | | --- | --- | --- | | Primeiro episódio, não fulminante | Fidaxomicina VO 200 mg 12/12 h por 10 dias, se acessível | Preferida por reduzir recorrência; disponibilidade/custo variam | | Primeiro episódio, não fulminante | Vancomicina VO 125 mg 6/6 h por 10 dias | Alternativa válida; VO, **não IV** para tratar lúmen do cólon | | Se ambas indisponíveis, episódio não grave | Metronidazol VO 500 mg 8/8 h por 10–14 dias | Recurso de exceção, **não primeira linha moderna** | | CDI fulminante | Vancomicina VO/sonda 500 mg 6/6 h + metronidazol IV 500 mg 8/8 h | Avaliaçã"
+    },
+    {
+      "text": "Fidaxomicina tende a produzir menos recorrência que vancomicina no contexto estudado, embora custos e acesso condicionem implementação. Esquemas de vancomicina oral em desmame/pulsos são alternativas em casos selecionados. Terapias baseadas em microbiota, inclusive transplante de microbiota fecal sob protocolos especializados de seleção e segurança, podem ser indicadas após episódios recorrentes; não são automedicação nem procedimento sem triagem infecciosa. A diretriz AGA 2024 apresenta recomendações diferenciadas conforme imunossupressão."
+    },
+    {
+      "text": "A **má absorção** pode produzir esteatorreia, flatulência, emagrecimento e sintomas mais prolongados; pensar em *Giardia*, doença celíaca, insuficiência pancreática, ressecção intestinal e outras causas conforme história. **Dismotilidade** pode acompanhar síndrome do intestino irritável, mas diagnóstico funcional não deve ser empregado para primeira diarreia sanguinolenta ou febril sem investigação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

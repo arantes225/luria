@@ -1,0 +1,138 @@
+{
+  "sha": "03ca633099af2ec0e50fbe508c1950687855710d",
+  "path": "apostilas/exames-rastreamentos-pre-natal/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "exames-rastreamentos-pre-natal--03ca633099",
+  "title": "Exames e Rastreamentos no Pré-Natal",
+  "format": ".json",
+  "chars_estimated": 81289,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Exames e rastreamentos no pré-natal: testar com propósito, interpretar e agir"
+    },
+    {
+      "id": "cronograma",
+      "title": "1. Linha do tempo: exames por fase gestacional e contexto"
+    },
+    {
+      "id": "interpretacao",
+      "title": "2. Fundamentos da interpretação: probabilidade, limitações e armadilhas"
+    },
+    {
+      "id": "hematologia",
+      "title": "3. Hemograma, anemia, hemoglobinopatias e plaquetas"
+    },
+    {
+      "id": "aloimunizacao",
+      "title": "4. ABO/Rh, pesquisa de anticorpos irregulares e prevenção de doença hemolítica"
+    },
+    {
+      "id": "urina",
+      "title": "5. Urina tipo I, urocultura e bacteriúria assintomática"
+    },
+    {
+      "id": "ist",
+      "title": "6. Sífilis, HIV, hepatites B/C e infecções de transmissão vertical"
+    },
+    {
+      "id": "toxoplasmose",
+      "title": "7. Toxoplasmose: IgG, IgM e avidez interpretadas por idade gestacional"
+    },
+    {
+      "id": "glicemia",
+      "title": "8. Diabetes gestacional: glicemia de jejum e TOTG 75 g"
+    },
+    {
+      "id": "seletivos",
+      "title": "9. Exames que não se tornaram universais só por serem disponíveis"
+    },
+    {
+      "id": "ultrassom",
+      "title": "10. Ultrassonografia: datação, morfologia, crescimento e sinais de alerta"
+    },
+    {
+      "id": "genetica",
+      "title": "11. Rastreio de aneuploidias e diagnóstico genético: como aconselhar"
+    },
+    {
+      "id": "gbssinais",
+      "title": "12. Streptococcus B, outros exames e decisões em final da gestação"
+    },
+    {
+      "id": "fluxo",
+      "title": "13. Fluxos integradores, documentação e matriz de decisões"
+    },
+    {
+      "id": "casos",
+      "title": "14. Casos clínicos comentados: do laudo à conduta"
+    },
+    {
+      "id": "questoes",
+      "title": "15. Questões autorais comentadas — 20 situações de prova"
+    },
+    {
+      "id": "referencias",
+      "title": "16. Referências oficiais, limites de aplicação e pendências editoriais"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"16. Referências oficiais, limites de aplicação e pendências editoriais\"]",
+    "[\"3\",\"Fontes verificáveis e respectivas competências\"]",
+    "[\"o\",[\"<a href=\\\"https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Linha de Cuidado Pré-Natal de Baixo Risco, planejamento terapêutico, exames e monitorização.</a>\",\"<a href=\\\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Sífilis em gestantes: testagem na primeira consulta, 3º trimestre e parto/aborto, seguimento mensal após tratamento.</a>\",\"<a href=\\\"https://",
+    "[\"3\",\"Mapa de autossuficiência\"]",
+    "[\"t\",[\"Competência\",\"Onde está explicada\",\"Questões/casos que exercitam\"],[[\"Rastreamento/diagnóstico/interpretação\",\"Visão geral e cap. 2\",\"Questão 20\"],[\"Calendário e repetição dos exames\",\"Cap. 1\",\"Casos 2 e 11; questão 2\"],[\"Anemia, plaquetas, hemoglobinopatias\",\"Cap. 3\",\"Questões 16 e 17\"],[\"Rh e anticorpos irregulares\",\"Cap. 4\",\"Caso 6 e questão 6\"],[\"Urocultura e bacteriúria\",\"Cap. 5\",\"Casos 1 e 11; questão 1\"],[\"IST, sífilis, HIV e hepatites\",\"Cap. 6\",\"Casos 2 e 12; questões 2, 12, 15 e 19\"],[\"Toxoplasmose e avidez\",\"Cap. 7\",\"Casos 3 e 4; questões 3 e 4\"],[\"TOTG e diagnóstico de DMG\",\"",
+    "[\"p\",\"<strong>Etapa zero:</strong> material comparativo aberto no Drive: '02 - ASSISTENCIA AO PRE-NATAL.pdf' (25.315 caracteres extraídos), 'Pré-Natal.pdf' (1.603 caracteres) e '03 - RESUMO - INFECCOES E GRAVIDEZ.pdf' (16.277 caracteres). A autoria institucional Estratégia MED não foi confirmada; os documentos são material de comparação de cobertura e não foram reproduzidos. A apostila LURIA preexistente 'pre-natal-baixo-risco/index.html' foi examinada, com a fronteira curricular definida: 004 ensina rotina da assistência e 014 detalha seleção e interpretação de exames.\"]",
+    "[\"p\",\"<strong>Critério de atualização:</strong> diretrizes brasileiras do Ministério da Saúde e do INCA prevalecem para o contexto de SUS. Recomendações estrangeiras de ACOG/SMFM 2026 sobre cfDNA são explicitamente internacionais e não equivalem a oferta universal obrigatória no SUS. O teste DNA-HPV em rastreamento cervical é atualização nacional de 2025–2026, não exigência automática de exame na gravidez.\"]",
+    "[\"p\",\"<strong>Pendências antes da certificação:</strong> revisão obstétrica independente, confirmação sistemática da vigência das portarias e protocolos locais, auditoria de conteúdo por especialistas em medicina fetal/infectologia, teste das questões com aluno real, revisão semântica contra 004/009/infecções/diabetes, legibilidade desktop e PWA, seleção de imagens com licença e aprovação pelo Admin. Este documento é um rascunho editorial; não criar HTML/index, não adicionar ao catálogo e não fazer merge/deploy.\"]"
+  ],
+  "external_urls": [
+    "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis/gestantes",
+    "https://www.gov.br/aids/pt-br/assuntos/transmissao-vertical",
+    "https://linhasdecuidado.saude.gov.br/portal/hepatites-virais/unidade-de-atencao-primaria/prevencao-combinada/",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-1002022-cgpam-dsmi-saps-ms.pdf/view",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+    "https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2026/01/screening-for-fetal-chromosomal-abnormalities",
+    "https://www.acog.org/advocacy/policy-priorities/non-invasive-prenatal-testing/current-acog-guidance"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "<strong>Rastreamento</strong> testa pessoas sem sintomas para identificar risco/doença antes de manifestação e reduzir desfechos. <strong>Diagnóstico</strong> investiga condição suspeita por sintomas, sinais ou outro teste positivo, podendo exigir métodos confirmatórios. <strong>Monitorização</strong> acompanha evolução de doença ou resposta terapêutica, como VDRL quantitativo mensal após sífilis tratada ou glicemias capilares em diabetes. O mesmo exame pode ter papel diferente dependendo da pergunta. Uma ultrassonografia que avalia crescimento porque altura uterina está abaixo do percentil esperado não é mera 'USG de rotina'."
+    },
+    {
+      "section": "visao",
+      "text": "Falso-positivos e resultados incidentais podem gerar ansiedade, procedimentos invasivos, uso desnecessário de antimicrobianos e encaminhamentos. Falso-negativos por janela imunológica ou coleta inadequada podem gerar falsa segurança. A interpretação precisa combinar prevalência/risco pré-teste, sensibilidade e especificidade, idade gestacional, qualidade do método, contexto epidemiológico e consequência de um atraso diagnóstico. Rastrear uma doença em gestantes faz sentido quando há janela de intervenção ou proteção neonatal efetiva; não apenas porque um laboratório oferece o exame."
+    },
+    {
+      "section": "visao",
+      "text": "Um teste negativo em gestante recém-exposta ao HIV não exclui infecção muito recente; repetir no momento apropriado e aplicar orientações de profilaxia é diferente de 'pedir painel completo diariamente'. Para testes genéticos, risco aumentado não equivale a diagnóstico e exige aconselhamento; para testes infecciosos reagentes, a necessidade de confirmação não deve servir de pretexto para atrasar tratamento quando o protocolo recomenda início imediato."
+    },
+    {
+      "section": "cronograma",
+      "text": "Gestante que chega pela primeira vez às 30 semanas ainda deve receber avaliação e testagens pertinentes. No diabetes, um TOTG 75 g pode ser indicado após 28 semanas conforme protocolo se ainda não houve rastreio; a interpretação e condução precisam ocorrer com rapidez. Em infecções, a utilidade de testar persiste mesmo perto do parto, porque intervenções maternas e neonatais podem reduzir transmissão vertical. Em ultrassonografia tardia, a precisão da datação é inferior à do primeiro trimestre: o exame não deve substituir arbitrariamente uma DPP fixada por método confiável anterior."
+    },
+    {
+      "section": "cronograma",
+      "text": "Em mulheres com alto risco obstétrico, rotinas adicionais como Doppler seriado, testes de bem-estar fetal, hemoglobina glicada, exames renais ou de autoanticorpos dependem do diagnóstico. Não transplantar um calendário de alto risco para todas; nem assumir que baixo risco inicial permanece baixo risco até o parto."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,387 @@
+{
+  "sha": "a85be18a6071c002da2569c3765f6a3154d8457c",
+  "path": "apostilas/trauma-atendimento-inicial/index.html",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "trauma-atendimento-inicial--a85be18a60",
+  "title": "Trauma — Atendimento Inicial e xABCDE",
+  "format": ".html",
+  "chars_estimated": 93861,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Visão rápida — avaliação primária dinâmica"
+    },
+    {
+      "title": "Apresentação editorial"
+    },
+    {
+      "title": "Auditoria comparativa (obrigatória)"
+    },
+    {
+      "title": "1. Objetivo: tratar primeiro o que mata primeiro"
+    },
+    {
+      "title": "2. Preparação e segurança antes de tocar no paciente"
+    },
+    {
+      "title": "3. x — Hemorragia externa exsanguinante"
+    },
+    {
+      "title": "4. A — Via aérea com proteção cervical"
+    },
+    {
+      "title": "5. B — Ventilação e lesões torácicas imediatas"
+    },
+    {
+      "title": "6. C — Circulação e identificação da fonte de sangramento"
+    },
+    {
+      "title": "7. D — Avaliação neurológica"
+    },
+    {
+      "title": "8. E — Exposição e prevenção de hipotermia"
+    },
+    {
+      "title": "9. Ferramentas diagnósticas: escolha guiada pela estabilidade"
+    },
+    {
+      "title": "10. Populações especiais"
+    },
+    {
+      "title": "11. Dez casos clínicos originais com raciocínio integral"
+    },
+    {
+      "title": "Caso 1 — Hemorragia de extremidade antes da intubação"
+    },
+    {
+      "title": "Caso 2 — Pneumotórax hipertensivo após ventilação positiva"
+    },
+    {
+      "title": "Caso 3 — Abdome hemorrágico que não deve fazer turismo pela tomografia"
+    },
+    {
+      "title": "Caso 4 — TCE importante com hipotensão e anticoagulante"
+    },
+    {
+      "title": "Caso 5 — Fratura pélvica e FAST negativo"
+    },
+    {
+      "title": "Caso 6 — Penetrante cervical com voz mudando"
+    },
+    {
+      "title": "Caso 7 — Criança com choque compensado e “pressão bonita”"
+    },
+    {
+      "title": "Caso 8 — Gestante no terceiro trimestre após colisão"
+    },
+    {
+      "title": "Caso 9 — Choque após intubação: o ventilador não é a única explicação"
+    },
+    {
+      "title": "Caso 10 — Resposta transitória a transfusão e abdome pouco doloroso"
+    },
+    {
+      "title": "12. Quatorze questões originais de residência comentadas por alternativa"
+    },
+    {
+      "title": "Questão 1 — A prioridade que mudou com o xABCDE"
+    },
+    {
+      "title": "Questão 2 — Pneumotórax hipertensivo e imagem"
+    },
+    {
+      "title": "Questão 3 — O significado de eFAST negativo"
+    },
+    {
+      "title": "Questão 4 — Hemoglobina inicial em hemorragia aguda"
+    },
+    {
+      "title": "Questão 5 — Tomografia versus controle hemorrágico"
+    },
+    {
+      "title": "Questão 6 — Índice de choque não é oráculo"
+    },
+    {
+      "title": "Questão 7 — Ácido tranexâmico"
+    },
+    {
+      "title": "Questão 8 — Pelvic binder: onde colocar?"
+    },
+    {
+      "title": "Questão 9 — Glasgow e intubação"
+    },
+    {
+      "title": "Questão 10 — Criança com pressão ainda normal"
+    },
+    {
+      "title": "Questão 11 — TCE e hipotensão permissiva"
+    },
+    {
+      "title": "Questão 12 — Trauma gestacional sem sangramento vaginal"
+    },
+    {
+      "title": "Questão 13 — Resposta transitória"
+    },
+    {
+      "title": "Questão 14 — Exposição e temperatura"
+    },
+    {
+      "title": "13. Proposta de figuras e recursos originais"
+    },
+    {
+      "title": "14. Cinemática, triagem e coordenação da equipe antes do primeiro contato"
+    },
+    {
+      "title": "14.1 O mecanismo orienta suspeitas, mas não é diagnóstico"
+    },
+    {
+      "title": "14.2 Comunicação de transferência e antecipação de recursos"
+    },
+    {
+      "title": "14.3 O que significa triagem correta"
+    },
+    {
+      "title": "15. Fisiologia do politrauma e choque hemorrágico na avaliação primária"
+    },
+    {
+      "title": "15.1 Circulação compensada não é circulação normal"
+    },
+    {
+      "title": "15.2 Índice de choque: auxílio, não sentença"
+    },
+    {
+      "title": "15.3 Onde o sangue pode estar escondido"
+    },
+    {
+      "title": "15.4 Coagulopatia traumática, hipotermia, acidose e cálcio"
+    },
+    {
+      "title": "15.5 Hemostasia definitiva e ressuscitação em paralelo"
+    },
+    {
+      "title": "15.6 Ácido tranexâmico: quem, quando e por quê"
+    },
+    {
+      "title": "15.7 Hipotensão permissiva versus perfusão cerebral"
+    },
+    {
+      "title": "16. Hemorragia externa e trauma de extremidades: a letra x detalhada"
+    },
+    {
+      "title": "16.1 Diferenciar sangramento controlável de hemorragia exsanguinante"
+    },
+    {
+      "title": "16.2 Feridas juncionais e locais não passíveis de torniquete comum"
+    },
+    {
+      "title": "16.3 Fraturas expostas, vascular e síndrome compartimental"
+    },
+    {
+      "title": "17. A — Via aérea traumática e proteção da coluna: decisões críticas"
+    },
+    {
+      "title": "17.1 Via aérea inicialmente pérvia pode deixar de ser em minutos"
+    },
+    {
+      "title": "17.2 Restrição de movimento da coluna: proteção sem danos de rotina"
+    },
+    {
+      "title": "17.3 Via aérea difícil de trauma: anatomia e fisiologia"
+    },
+    {
+      "title": "17.4 Lesões faciais e aerodigestivas"
+    },
+    {
+      "title": "18. B — Ameaças respiratórias que não podem esperar por imagem"
+    },
+    {
+      "title": "18.1 Ventilação insuficiente e oxigenação não são sinônimos"
+    },
+    {
+      "title": "18.2 Pneumotórax hipertensivo"
+    },
+    {
+      "title": "18.3 Pneumotórax aberto e hemotórax maciço"
+    },
+    {
+      "title": "18.4 Contusão pulmonar e tórax instável"
+    },
+    {
+      "title": "18.5 Lesão de árvore traqueobrônquica e tamponamento"
+    },
+    {
+      "title": "19. C — Buscar e controlar a hemorragia, sem confundir resposta transitória com solução"
+    },
+    {
+      "title": "19.1 O que medir nos primeiros minutos"
+    },
+    {
+      "title": "19.2 Acesso vascular e exames sem interromper o cuidado"
+    },
+    {
+      "title": "19.3 A “resposta à ressuscitação” tem três significados"
+    },
+    {
+      "title": "19.4 Pelve: estabilizar corretamente e diferenciar de abdome"
+    },
+    {
+      "title": "19.5 Sangramento não compressível e controle de danos"
+    },
+    {
+      "title": "19.6 Reposição sanguínea e reversão de anticoagulantes"
+    },
+    {
+      "title": "20. D — Neurologia: evitar dano secundário mesmo sem neuroimagem pronta"
+    },
+    {
+      "title": "20.1 O exame neurológico precisa ser reprodutível"
+    },
+    {
+      "title": "20.2 TCE não explica todos os sinais hemodinâmicos"
+    },
+    {
+      "title": "20.3 Suspeita de lesão medular e choque neurogênico"
+    },
+    {
+      "title": "21. E — Exposição, hipotermia e avaliação de lesões esquecidas"
+    },
+    {
+      "title": "21.1 Descobrir lesões sem induzir perda de calor"
+    },
+    {
+      "title": "21.2 Lesões posteriores e secundárias"
+    },
+    {
+      "title": "21.3 Examinar intimidade e respeitar dignidade"
+    },
+    {
+      "title": "22. Imagem no trauma: a pergunta certa antes do equipamento certo"
+    },
+    {
+      "title": "22.1 eFAST: foco, janelas e limitações"
+    },
+    {
+      "title": "22.2 TC e instabilidade circulatória"
+    },
+    {
+      "title": "22.3 RX de tórax e pelve: onde ainda agrega"
+    },
+    {
+      "title": "22.4 Gasometria, lactato, déficit de bases e tromboelastometria"
+    },
+    {
+      "title": "22.5 Armadilhas que o aluno precisa reconhecer"
+    },
+    {
+      "title": "23. Avaliação secundária, reavaliações e tratamento definitivo"
+    },
+    {
+      "title": "23.1 Quando iniciar a avaliação secundária"
+    },
+    {
+      "title": "23.2 Analgesia e cuidado centrado no paciente"
+    },
+    {
+      "title": "23.3 Exames seriados e a necessidade de observar"
+    },
+    {
+      "title": "23.4 Critérios para transferência a centro de maior complexidade"
+    },
+    {
+      "title": "24. Populações especiais: quem pode parecer estável e estar grave?"
+    },
+    {
+      "title": "24.1 Crianças: a reserva de pressão engana"
+    },
+    {
+      "title": "24.2 Idosos: baixo mecanismo não significa baixo risco"
+    },
+    {
+      "title": "24.3 Gestantes"
+    },
+    {
+      "title": "24.4 Pacientes com deficiência, transtorno neurocognitivo ou comunicação limitada"
+    },
+    {
+      "title": "24.5 Pacientes com anticoagulantes e antiagregantes"
+    },
+    {
+      "title": "25. Algoritmos originais para tomada de decisão"
+    },
+    {
+      "title": "Fluxo A — chegada do paciente politraumatizado"
+    },
+    {
+      "title": "Fluxo B — choque com FAST positivo"
+    },
+    {
+      "title": "Fluxo C — instabilidade com FAST negativo"
+    },
+    {
+      "title": "Fluxo D — piora após intubação"
+    },
+    {
+      "title": "Fluxo E — decisão de tomografia no trauma"
+    },
+    {
+      "title": "Fluxo F — transferência para maior complexidade"
+    },
+    {
+      "title": "26. Matriz de cobertura e autossuficiência"
+    },
+    {
+      "title": "27. Recursos visuais — plano e curadoria sem publicação"
+    },
+    {
+      "title": "28. Referências e cautelas de aplicação"
+    },
+    {
+      "title": "29. Parecer editorial e pendências de homologação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://commons.wikimedia.org/wiki/File:Clinician-performed-resuscitative-ultrasonography-for-the-initial-evaluation-and-resuscitation-of-1757-7241-17-34-S7.ogv",
+    "https://commons.wikimedia.org/wiki/File:Clinician-performed-resuscitative-ultrasonography-for-the-initial-evaluation-and-resuscitation-of-1757-7241-17-34-S4.ogv",
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-avancado-de-vida-1.pdf/view",
+    "https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-basico-de-vida-1-2.pdf/view",
+    "https://link.springer.com/article/10.1186/s13054-023-04327-7",
+    "https://www.nice.org.uk/guidance/ng39/chapter/Recommendations",
+    "https://doi.org/10.1186/1757-7241-17-34"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Pneumotórax hipertensivo em paciente instável: diagnóstico clínico; descompressão não espera radiografia ou tomografia. Após medida emergencial, preparar drenagem definitiva segundo técnica e serviço. Hemotórax maciço: considerar drenagem, ressuscitação hemostática e avaliação cirúrgica urgente; volume e persistência de débito do dreno ajudam a determinar necessidade de intervenção. Contusão pulmonar: pode piorar com tempo e excesso de fluido; analgesia e ventilação apropriada são fundamentais."
+    },
+    {
+      "text": "O ultrassom torácico pode auxiliar rapidamente no diagnóstico de ar ou líquido pleural, mas achados dependem de operador e não superam indicação de intervenção emergencial diante de quadro evidente."
+    },
+    {
+      "text": "Em suspeita de choque hemorrágico relevante, priorizar controle de hemorragia, protocolo de transfusão maciça quando indicado e hemoderivados aquecidos conforme política local e disponibilidades. Grandes volumes de cristalóide podem diluir fatores, piorar hipotermia e agravar coagulopatia; o resumo antigo que recomendava 1 L para todos não é uma conduta universal. Considerar antifibrinolítico quando indicado pelos protocolos de trauma e tempo desde a lesão; não estabelecer uso indiscriminado, especialmente fora da janela e em cenários sem hemorragia significativa."
+    },
+    {
+      "text": "Apresentação. Trabalhador de 28 anos sofre amputação traumática parcial da perna. Chega conversando, ansioso, FC 145 bpm, PA 110/74 mmHg, pele fria e sangramento pulsátil intenso que atravessa curativo improvisado. FR 27 irpm, SpO₂ 98% em ar ambiente. Não há estridor, obstrução ou dificuldade de proteger via aérea."
+    },
+    {
+      "text": "Apresentação. Homem de 35 anos com trauma torácico contuso chega instável e é intubado por rebaixamento importante. Após início de ventilação, SpO₂ cai de 94% para 79%, PAS de 100 para 65 mmHg, expansão torna-se assimétrica, resistência inspiratória aumenta e murmúrio vesicular fica muito reduzido à direita."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

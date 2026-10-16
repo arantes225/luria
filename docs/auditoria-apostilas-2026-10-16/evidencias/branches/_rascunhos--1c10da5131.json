@@ -1,0 +1,254 @@
+{
+  "sha": "1c10da513108ab2ff988828647dfd853880a1876",
+  "path": "apostilas/_rascunhos/lote-07-aula-128-sepse-choque-septico-pediatrico.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-11-demensias-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1c10da5131",
+  "title": "LURIA — LOTE 07 | AULA 128",
+  "format": ".md",
+  "chars_estimated": 36518,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — LOTE 07 | AULA 128"
+    },
+    {
+      "title": "Sepse e choque séptico pediátrico — reconhecimento e ressuscitação conforme 2026"
+    },
+    {
+      "title": "0. Antes de escrever: auditoria de sobreposição e referências de Drive"
+    },
+    {
+      "title": "1. Entender a resposta à infecção no desenvolvimento infantil"
+    },
+    {
+      "title": "1.1. Da inflamação à disfunção orgânica"
+    },
+    {
+      "title": "1.2. Quatro compartimentos de disfunção"
+    },
+    {
+      "title": "2. Definição contemporânea: Phoenix 2024 e diretriz 2026"
+    },
+    {
+      "title": "3. Clínica por idade e sinais de perigo"
+    },
+    {
+      "title": "Lactentes"
+    },
+    {
+      "title": "Pré-escolares"
+    },
+    {
+      "title": "Escolares e adolescentes"
+    },
+    {
+      "title": "Exame imediato"
+    },
+    {
+      "title": "4. Reconhecimento precoce é uma decisão clínica, não um “rastreamento mágico”"
+    },
+    {
+      "title": "5. Diagnóstico dirigido — colher o que muda conduta"
+    },
+    {
+      "title": "5.1. Lactato"
+    },
+    {
+      "title": "5.2. Culturas e antimicrobianos"
+    },
+    {
+      "title": "5.3. Laboratórios de órgãos"
+    },
+    {
+      "title": "5.4. Imagem e ultrassom à beira leito"
+    },
+    {
+      "title": "6. A primeira hora — terapia proporcional ao risco"
+    },
+    {
+      "title": "6.1. Antibiótico: dois relógios"
+    },
+    {
+      "title": "6.2. Bolus: depende da estrutura do sistema de saúde"
+    },
+    {
+      "title": "6.3. Reavaliar após cada bolus"
+    },
+    {
+      "title": "6.4. Vasoativos: nova precisão da diretriz 2026"
+    },
+    {
+      "title": "6.5. Hidrocortisona e adjuvantes"
+    },
+    {
+      "title": "7. O foco importa tanto quanto o antibiótico"
+    },
+    {
+      "title": "7.1. Pneumonia com complicação pleural"
+    },
+    {
+      "title": "7.2. Abdome agudo"
+    },
+    {
+      "title": "7.3. ITU obstrutiva"
+    },
+    {
+      "title": "7.4. Cateter contaminado e infecção da corrente sanguínea"
+    },
+    {
+      "title": "7.5. Meningite e meningococcemia"
+    },
+    {
+      "title": "8. Suporte orgânico nas horas e dias seguintes"
+    },
+    {
+      "title": "9. Diagnósticos diferenciais: nem todo choque febril é séptico"
+    },
+    {
+      "title": "10. Algoritmo textual de emergência pediátrica LURIA"
+    },
+    {
+      "title": "11. Casos clínicos integradores comentados"
+    },
+    {
+      "title": "Caso 1 — criança normotensa com perfusão ruim"
+    },
+    {
+      "title": "Caso 2 — gastroenterite em hospital sem UTI"
+    },
+    {
+      "title": "Caso 3 — meningococcemia e choque"
+    },
+    {
+      "title": "Caso 4 — choque refratário e excesso de bolus"
+    },
+    {
+      "title": "12. Oito questões autorais com comentários completos"
+    },
+    {
+      "title": "Questão 1 — Phoenix 2024"
+    },
+    {
+      "title": "Questão 2 — choque antes da hipotensão"
+    },
+    {
+      "title": "Questão 3 — antibiótico em choque"
+    },
+    {
+      "title": "Questão 4 — cenário sem UTI"
+    },
+    {
+      "title": "Questão 5 — fluidos em local com UTI"
+    },
+    {
+      "title": "Questão 6 — vasoativos 2026"
+    },
+    {
+      "title": "Questão 7 — source control"
+    },
+    {
+      "title": "Questão 8 — corticoide"
+    },
+    {
+      "title": "13. Pérolas LURIA e prevenção de erros"
+    },
+    {
+      "title": "14. Imagens médicas e esquemas candidatos — ainda sem licença/incorporação"
+    },
+    {
+      "title": "15. Referências e grau de atualização"
+    },
+    {
+      "title": "16. Auditoria editorial e lacunas de certificação"
+    }
+  ],
+  "reference_entries": [
+    "**Auditoria na LURIA:** em “apostilas/sepse-choque-septico/” já existem os rascunhos “rascunho-editorial-lote09.md” e “complemento-editorial-02-lote09.md”, ambos de **sepse no adulto (aula 161)**, que descrevem SOFA, qSOFA, lactato e protocolos de adulto. Eles foram lidos. A segunda versão afirma explicitamente que particularidades pediátricas pertencem a outro capítulo. **Não alterar esses arquivos e não copiar SOFA adulto para uma criança.** Este livro trata apenas do universo pediátrico; sepse neonatal e prematuridade têm ainda algoritmos próprios.",
+    "**Pesquisa e leitura no Drive:** não foi localizado título equivalente de “sepse pediátrica e choque séptico” com abordagem integral. Foram abertos “Sepse neonatal.pdf” (~2 mil caracteres), que lista fatores materno-neonatais e agentes do período neonatal, e “01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf” (~15 mil caracteres), que aborda analgesia, sedação, intubação e ventilação/risco de eventos adversos. Ambos são **referências parciais**. A autoria institucional Estratégia MED não foi comprovada. O material neonatal tem critérios e esquemas que não podem ser extrapolados par",
+    "**Matriz de lacunas identificadas no conteúdo correlato da LURIA:** ausência de classificação pediátrica Phoenix, diferenças de protocolos entre serviços com e sem leitos intensivos, contextualização da hipotensão tardia, limites dos bolus de cristalóide, atualização de 2026 sobre início precoce de drogas vasoativas e incerteza sobre epinefrina versus norepinefrina, princípios de controle de foco e seguimento funcional.",
+    "**Fisiologia aplicada a fluidos:** uma criança pode iniciar com redução de preenchimento circulatório e melhorar com cristaloide, mas a barreira capilar inflamada pode favorecer extravasamento e edema pulmonar com bolus excessivos. A melhora do pulso/consciência após volume é tão informativa quanto o aparecimento de crepitações, hepatomegalia crescente ou hipoxemia que sinalizem sobrecarga.",
+    "- **cardiovascular**: perfusão, necessidade de vasoativos, alterações de pressão;",
+    "- **respiratório**: disfunção de oxigenação e necessidade de suporte;",
+    "- **coagulação**: trombocitopenia e alterações relacionadas;",
+    "- **neurológico**: queda de responsividade ou escore de consciência.",
+    "**Comparação de critérios:**",
+    "**Implicação para provas:** febre + taquicardia não é sinônimo automático de sepse; e uma criança apática e hipoperfundida não precisa “esperar ficar hipotensa” para ser reconhecida como alto risco.",
+    "**Sinais que obrigam ação:** alteração de consciência, má perfusão, pulsos filiformes, enchimento capilar prolongado, hipoxemia, cianose, apneia, petéquias/púrpura com deterioração, oligúria, hipotensão e progressão respiratória rápida. A presença de antibiótico recebido antes da chegada não garante controle da infecção nem protege contra evolução.",
+    "**Suspeita de choque séptico:** SSC 2026 recomenda antibiótico **o mais rápido possível, idealmente em até uma hora do reconhecimento da sepse**.  ",
+    "**Sepse provável sem choque:** recomenda investigação rápida e delimitada; quando a preocupação clínica persiste após avaliação apropriada, iniciar antibiótico **idealmente em até três horas** do reconhecimento.  ",
+    "**Escolha empírica:** deve levar em conta idade, foco provável, infecção comunitária/hospitalar, vacinas, culturas prévias, colonização multirresistente, imunossupressão, antibióticos recentes, alergias e resistência local. Em choque, escolher regime ativo com alto grau de confiança inicial; revisar após culturas, resposta e definição do foco. Esquemas e doses específicas devem ser validados por faixa etária, peso e função renal na versão final; **não copiar doses do adulto**.",
+    "**Exemplo de cálculo de ensino:** para uma criança de 12 kg, um bolus de 10 mL/kg corresponde a **120 mL** de cristaloide; 20 mL/kg, **240 mL**. A decisão de oferecer uma segunda etapa depende de resposta clínica. **40–60 mL/kg não é receita compulsória**, especialmente em pneumonia grave, disfunção cardíaca, sinais de congestão ou serviço sem capacidade de intensivo.",
+    "**Quando pensar em vasoativo precocemente:** perfusão persistentemente ruim apesar de reanimação individualizada, hipotensão, sinais de sobrecarga que contraindicam mais volume ou disfunção cardíaca. POCUS/eco pode auxiliar onde disponível, sem atrasar medida necessária.",
+    "**Respiração:** avaliar necessidade de oxigênio e suporte ventilatório; intubação pode ser indicada por insuficiência respiratória, comprometimento de via aérea ou deterioração hemodinâmica. A indução/intubação pode precipitar colapso em choque; preparar ressuscitação/vasoativo e equipe especializada. A SSC 2026 sugere **evitar etomidato** em crianças com sepse/choque na indução, levando em conta efeitos sobre função adrenal. Não transformar essa observação em indicação de sedativo específico universal.",
+    "**Rim e balanço:** monitorar diurese, creatinina e peso; ressuscitação bem-sucedida seguida por acúmulo excessivo de fluido pode prejudicar função respiratória e renal. Após estabilidade, buscar evitar excesso e discutir retirada de volume conforme indicação.",
+    "**Coagulação:** trombocitopenia e coagulopatia podem surgir; decisões transfusionais dependem de sangramento, procedimento e tendências, não apenas alteração laboratorial isolada.",
+    "**Glicemia/eletrólitos:** crianças são vulneráveis a hipoglicemia, disnatremias e outras alterações; corrigir de modo seguro conforme idade e contexto. Evitar soluções hipotônicas inadequadas em criança com hiponatremia ou risco de edema cerebral.",
+    "**Nutrição e reabilitação:** após estabilização e conforme segurança enteral, reiniciar nutrição apropriada e reduzir catabolismo. Sobreviventes podem apresentar fraqueza, déficits cognitivos, alteração escolar e repercussões familiares; SSC 2026 enfatiza cuidado de recuperação e reabilitação individualizada, não alta exclusivamente baseada na normalização da PA.",
+    "**Raciocínio crítico:** diagnóstico diferencial não significa protelar antibiótico em choque com infecção provável. Significa procurar simultaneamente causas coexistentes e condições que requerem terapia imediata distinta.",
+    "1. Criança agudamente doente → **ABCDE**, avaliação rápida de respiração, consciência, perfusão, glicemia, contexto infeccioso e sinais de perigo.",
+    "2. Suspeita de choque/infeção com disfunção → acionar equipe de ressuscitação/UTI e organizar transferência conforme estrutura.",
+    "3. Acesso venoso/intraósseo apropriado; colher hemocultura se não atrasar; dosar lactato e exames dirigidos.",
+    "4. **Choque séptico suspeito → antibiótico idealmente ≤1 h**, sem esperar culturas ou escore Phoenix completo.",
+    "5. Avaliar condição de recurso: há terapia intensiva disponível? Se sim, administrar bolus titulados 10–20 mL/kg até teto de 40–60 mL/kg na primeira hora *somente quando indicados*, reavaliando; sem intensivo, não dar bolus em sepse sem hipotensão e agir com cautela na hipotensão.",
+    "6. Reavaliar perfusão e sinais de sobrecarga após cada volume.",
+    "7. Se persiste choque, não prolongar fluido por automatismo; iniciar vasoativo com monitorização, inclusive por acesso periférico apropriado se central atrasaria terapia.",
+    "8. Controlar foco (drenagem, retirada de dispositivo, cirurgia) assim que possível."
+  ],
+  "external_urls": [
+    "https://link.springer.com/article/10.1007/s00134-026-08360-2",
+    "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+    "https://jamanetwork.com/journals/jama/fullarticle/2814297",
+    "https://www.sbp.com.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O consenso internacional publicado no *JAMA* em 2024 propôs identificar sepse pediátrica em menores de 18 anos com infecção suspeita ou confirmada e **Phoenix Sepsis Score ≥2**, composto por disfunção de sistemas respiratório, cardiovascular, coagulação e neurológico. **Choque séptico** é sepse com **pelo menos um ponto no componente cardiovascular**. Os critérios permitem classificação epidemiológica/prognóstica padronizada, mas **não se deve esperar completar escore para iniciar ressuscitação na criança criticamente enferma**."
+    },
+    {
+      "text": "A proposta Phoenix não se aplica diretamente a recém-nascidos/neonatos com **idade pós-concepcional inferior a 37 semanas**. Neonatos e recém-nascidos de risco exigem diretrizes específicas da neonatologia. O termo “sepse grave” de critérios antigos SIRS como categoria distinta deixou de ser preferido na conceituação Phoenix, pois sepse já corresponde a disfunção orgânica ameaçadora à vida."
+    },
+    {
+      "text": "A SSC 2026 observa insuficiência de evidências para recomendar *novo rastreamento universal sistemático* em toda criança agudamente doente **além dos protocolos clínicos já estabelecidos**. Entretanto, recomenda programas institucionais de melhoria de desempenho com procedimentos operacionais padronizados para sepse. A frase “não recomendar screening adicional por falta de evidência” não significa “não triagem”: significa valorizar reconhecimento clínico, treinamento, protocolos executáveis, medição de qualidade e redução de atrasos evitáveis."
+    },
+    {
+      "text": "| Cenário | Estratégia de fluido sugerida | Observações | |---|---|---| | Choque séptico em sistema **com terapia intensiva disponível** | Bolus de **10–20 mL/kg**, reavaliando a cada etapa, até **40–60 mL/kg na primeira hora** em criança que permanece com indicação | A meta não é volume obrigatório; suspender se perfusão se normaliza ou sinais de sobrecarga surgem | | Sepse **sem hipotensão** em sistema **sem terapia intensiva disponível** | **Não** realizar bolus de rotina; iniciar manutenção e tratar/transferir conforme quadro | Recomendação forte baseada em evidência em contextos de recursos limitados | | Choque com **hipotensão** em sist"
+    },
+    {
+      "text": "Também **não há recomendação para iniciar vasoativos necessariamente antes ou depois de 40 mL/kg**. A diretriz sugere iniciar por acesso periférico apropriado **em vez de atrasar tratamento esperando acesso central**. Na prática, tempo, concentração, integridade da veia, monitorização e extravasamento devem ser gerenciados por equipe experiente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

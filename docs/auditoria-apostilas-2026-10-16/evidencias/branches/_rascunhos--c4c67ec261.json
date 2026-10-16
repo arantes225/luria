@@ -1,0 +1,450 @@
+{
+  "sha": "c4c67ec261fdd2c40fef04bd76bc525a522ceae3",
+  "path": "apostilas/_rascunhos/lote-05-115-vieses-confundimento-causalidade.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--c4c67ec261",
+  "title": "LURIA — Apostila 115: Vieses, confundimento e inferência causal em Medicina",
+  "format": ".md",
+  "chars_estimated": 75839,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 115: Vieses, confundimento e inferência causal em Medicina"
+    },
+    {
+      "title": "0. Auditoria de existência, fontes e recorte sem duplicação"
+    },
+    {
+      "title": "1. Associação, efeito e o mundo que não observamos"
+    },
+    {
+      "title": "1.1. Exemplo de associação protetora espúria"
+    },
+    {
+      "title": "1.2. Fato, hipótese e inferência devem ser rotulados"
+    },
+    {
+      "title": "1.3. Associação não-causal pode ser extremamente precisa"
+    },
+    {
+      "title": "2. Contrafactuais e estimandos: qual efeito, para quem e quando?"
+    },
+    {
+      "title": "2.1. Oferta versus recebimento"
+    },
+    {
+      "title": "2.2. Definir momento zero"
+    },
+    {
+      "title": "3. As três hipóteses principais de identificação causal"
+    },
+    {
+      "title": "3.1. Intercambiabilidade (exchangeability)"
+    },
+    {
+      "title": "3.2. Positividade"
+    },
+    {
+      "title": "3.3. Consistência"
+    },
+    {
+      "title": "3.4. Outros pontos essenciais"
+    },
+    {
+      "title": "4. DAGs: mapas de hipóteses causais, não gráficos decorativos"
+    },
+    {
+      "title": "4.1. Confundidor: uma causa comum"
+    },
+    {
+      "title": "4.2. Mediador: parte do caminho causal"
+    },
+    {
+      "title": "4.3. Colisor: uma consequência comum que abre caminho"
+    },
+    {
+      "title": "4.4. Descendente de colisor e mediador"
+    },
+    {
+      "title": "4.5. Confundidor não é sinônimo de fator de risco forte"
+    },
+    {
+      "title": "5. D-separation e critério backdoor em linguagem clínica"
+    },
+    {
+      "title": "5.1. “Ajustei por tudo que tinha” pode piorar"
+    },
+    {
+      "title": "5.2. Como escolher covariáveis?"
+    },
+    {
+      "title": "5.3. Exemplo completo de redes de atendimento"
+    },
+    {
+      "title": "6. Confundimento por indicação e contraindicação"
+    },
+    {
+      "title": "6.1. Por que um modelo multivariado nem sempre resolve?"
+    },
+    {
+      "title": "6.2. Métodos que ajudam"
+    },
+    {
+      "title": "6.3. Falácia do “tratamento associado a pior prognóstico”"
+    },
+    {
+      "title": "7. Viés de seleção: o conjunto analisado pode ter criado a diferença"
+    },
+    {
+      "title": "7.1. Berkson: hospitalização como colisor"
+    },
+    {
+      "title": "7.2. Sobreviventes e viés do trabalhador saudável"
+    },
+    {
+      "title": "7.3. Perdas de seguimento"
+    },
+    {
+      "title": "7.4. Seleção por teste ou diagnóstico"
+    },
+    {
+      "title": "8. Viés de informação: medir mal pode alterar magnitude e direção"
+    },
+    {
+      "title": "8.1. Lembrança (recall bias)"
+    },
+    {
+      "title": "8.2. Entrevistador e observador"
+    },
+    {
+      "title": "8.3. Vigilância (surveillance/detection bias)"
+    },
+    {
+      "title": "8.4. Viés de diagnóstico incorporado"
+    },
+    {
+      "title": "8.5. Medição de exposição ao longo do tempo"
+    },
+    {
+      "title": "9. Vieses de temporalidade: tempo imortal, janela e usuário prevalente"
+    },
+    {
+      "title": "9.1. Tempo imortal (immortal-time bias)"
+    },
+    {
+      "title": "9.2. Viés de usuário prevalente"
+    },
+    {
+      "title": "9.3. Viés de protopatia e causalidade reversa"
+    },
+    {
+      "title": "9.4. Períodos de graça"
+    },
+    {
+      "title": "10. Emulação de ensaio-alvo (target trial emulation): pensar como ECR antes de abrir o banco"
+    },
+    {
+      "title": "10.1. Tabela do ensaio-alvo"
+    },
+    {
+      "title": "10.2. Comparador ativo é frequentemente mais informativo que “não tratar”"
+    },
+    {
+      "title": "10.3. Múltiplos ensaios sequenciais"
+    },
+    {
+      "title": "10.4. Relato transparente da emulação"
+    },
+    {
+      "title": "11. Confundimento dependente do tempo e por que o ajuste usual pode falhar"
+    },
+    {
+      "title": "11.1. Exemplo em hipertensão"
+    },
+    {
+      "title": "11.2. Regras de dose e intervenções dinâmicas"
+    },
+    {
+      "title": "12. Propensity score: balancear medidos, não fabricar randomização"
+    },
+    {
+      "title": "12.1. O que verificar antes e depois?"
+    },
+    {
+      "title": "12.2. Pareamento não recupera pessoas sem comparador"
+    },
+    {
+      "title": "12.3. Peso inverso: intuição e cálculo"
+    },
+    {
+      "title": "12.4. Matching e escolher variáveis"
+    },
+    {
+      "title": "13. Mediação causal: efeito total, direto e indireto"
+    },
+    {
+      "title": "13.1. Exemplo clínico: tratamento, pressão e AVC"
+    },
+    {
+      "title": "13.2. Variável que é mediador e confounder de outro trecho"
+    },
+    {
+      "title": "13.3. Efeito direto não significa “efeito verdadeiro”"
+    },
+    {
+      "title": "14. Análises de sensibilidade: mensurar o que o modelo principal não garante"
+    },
+    {
+      "title": "14.1. E-value: significado, cálculo e limites"
+    },
+    {
+      "title": "14.2. Controle negativo"
+    },
+    {
+      "title": "14.3. Análise quantitativa de viés"
+    },
+    {
+      "title": "14.4. Robustez a especificações"
+    },
+    {
+      "title": "15. Variáveis instrumentais e “experimentos naturais” — soluções condicionais, não atalhos"
+    },
+    {
+      "title": "15.1. LATE não é ATE por conveniência"
+    },
+    {
+      "title": "15.2. Regression discontinuity"
+    },
+    {
+      "title": "15.3. Diferenças-em-diferenças e tendência paralela"
+    },
+    {
+      "title": "15.4. Série temporal interrompida"
+    },
+    {
+      "title": "16. Fatores de risco, marcadores prognósticos, confundidores e causas"
+    },
+    {
+      "title": "16.1. Previsão e causalidade exigem validações diferentes"
+    },
+    {
+      "title": "16.2. Odds ratio condicionado e não colapsabilidade"
+    },
+    {
+      "title": "16.3. Simpson: decomposição importa"
+    },
+    {
+      "title": "17. Confundimento residual: como reconhecer risco sem fingir que o provou"
+    },
+    {
+      "title": "17.1. Estratégias para reduzir"
+    },
+    {
+      "title": "17.2. Superajuste e colinearidade"
+    },
+    {
+      "title": "17.3. Modelo errado de exposição e resultado"
+    },
+    {
+      "title": "18. Erros de seleção e informação nos sistemas de dados brasileiros"
+    },
+    {
+      "title": "18.1. SIH/SUS: internação é evento observado e também processo de acesso"
+    },
+    {
+      "title": "18.2. SINAN: notificação depende de capacidade de vigilância"
+    },
+    {
+      "title": "18.3. SIM: mortalidade e qualidade da classificação"
+    },
+    {
+      "title": "18.4. Atenção Primária, e-SUS APS e prontuários"
+    },
+    {
+      "title": "18.5. Indicadores e políticas"
+    },
+    {
+      "title": "18.6. LGPD e necessidade de minimização"
+    },
+    {
+      "title": "19. Como criticar um artigo em dez passos sem se perder no p"
+    },
+    {
+      "title": "19.1. STROBE é transparência; ROBINS-I é julgamento; GRADE é certeza"
+    },
+    {
+      "title": "19.2. Domínios de risco em estudos não randomizados"
+    },
+    {
+      "title": "19.3. Uma conclusão honesta pode ser “não sabemos”"
+    },
+    {
+      "title": "20. Exercícios matemáticos originais e conferíveis"
+    },
+    {
+      "title": "Exercício 1 — confundimento por gravidade (Simpson)"
+    },
+    {
+      "title": "Exercício 2 — peso inverso e overlap"
+    },
+    {
+      "title": "Exercício 3 — E-value"
+    },
+    {
+      "title": "Exercício 4 — diferenças-em-diferenças"
+    },
+    {
+      "title": "Exercício 5 — erro de atribuição de tempo imortal"
+    },
+    {
+      "title": "21. Oito casos clínico-epidemiológicos com diagnóstico do viés e correção possível"
+    },
+    {
+      "title": "Caso 1 — Antibiótico amplo associado a maior mortalidade na UTI"
+    },
+    {
+      "title": "Caso 2 — Programa de acompanhamento parece impedir mortes antes de começar"
+    },
+    {
+      "title": "Caso 3 — Pacientes hospitalizados parecem ter proteção paradoxal"
+    },
+    {
+      "title": "Caso 4 — Risco de câncer parece aumentado em mulheres que fazem mais consultas"
+    },
+    {
+      "title": "Caso 5 — O ajuste removeu o benefício da pressão"
+    },
+    {
+      "title": "Caso 6 — Confundimento variante no tempo após intensificação da terapia"
+    },
+    {
+      "title": "Caso 7 — Estudo de vacina mostra “proteção” contra hospitalização antes de vacinar"
+    },
+    {
+      "title": "Caso 8 — Programa municipal e queda de internações"
+    },
+    {
+      "title": "22. Dez questões autorais com cinco alternativas e comentários individuais"
+    },
+    {
+      "title": "Questão 1 — Confundidor versus mediador"
+    },
+    {
+      "title": "Questão 2 — Colisor"
+    },
+    {
+      "title": "Questão 3 — Tempo imortal"
+    },
+    {
+      "title": "Questão 4 — E-value"
+    },
+    {
+      "title": "Questão 5 — STROBE"
+    },
+    {
+      "title": "Questão 6 — Controle negativo temporal"
+    },
+    {
+      "title": "Questão 7 — Positividade"
+    },
+    {
+      "title": "Questão 8 — Confundimento por indicação"
+    },
+    {
+      "title": "Questão 9 — DiD"
+    },
+    {
+      "title": "Questão 10 — Confundidor dependente do tempo"
+    },
+    {
+      "title": "23. Dez propostas de imagens e diagramas autorais"
+    },
+    {
+      "title": "24. Referências e transparência editorial"
+    },
+    {
+      "title": "25. Auditoria preliminar e bloqueios para publicação"
+    }
+  ],
+  "reference_entries": [
+    "**Etapa zero:** a busca no Drive pelos termos viés, vieses, causalidade e confundimento não encontrou apostila equivalente; resultados não relacionados foram descartados. Não foi reproduzido texto ou imagem de documentos de terceiros. Antes de criar este arquivo, o caminho dedicado não existia na branch editorial ancestral.",
+    "**Bibliografia principal acessada:**",
+    "- Hernán MA, Robins JM, *Causal Inference: What If*, versão online do livro. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/ — conceitos de resultados potenciais, intercambiabilidade, positividade, consistência, ensaios-alvo, g-métodos.",
+    "- Hernán MA et al. *Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses*. J Clin Epidemiol 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC5124536/.",
+    "- Hernán MA, et al. *Target trial emulation: applying principles of randomised trials to observational studies*. BMJ 2022. https://www.bmj.com/content/378/bmj-2022-071108.",
+    "- Elwert F, Winship C. *Endogenous Selection Bias: The Problem of Conditioning on a Collider Variable*. Annu Rev Sociol 2014. https://pmc.ncbi.nlm.nih.gov/articles/PMC6089543/.",
+    "- VanderWeele TJ, Ding P. *Sensitivity Analysis in Observational Research: Introducing the E-Value*. Ann Intern Med 2017. https://pubmed.ncbi.nlm.nih.gov/28693043/.",
+    "- **STROBE 2007**, 22 itens para relato de observacionais, **não validação metodológica**. https://www.equator-network.org/reporting-guidelines/strobe/.",
+    "- **ROBINS-I**, risco de viés de resultados de estudos não randomizados de intervenções. https://methods.cochrane.org/bias/risk-bias-non-randomized-studies-interventions. **ROBINS-I V2**, revisão divulgada em 20/11/2025, **ainda rascunho sujeito a alterações em 15/10/2026**. https://www.riskofbias.info/welcome/robins-i-v2. Sua licença indicada no portal é **CC BY-NC-ND**: não reproduzir imagem/checklist em produto comercial sem permissão.",
+    "- Textor J et al. DAGitty and causal graph adjustment, Int J Epidemiol 2016/2017; https://doi.org/10.1093/ije/dyw341. Usar como ferramenta/conceito, **sem importar ilustrações de terceiros**.",
+    "**Definição de escopo:** exemplo de estudo é útil se mostra que certa decisão aparentemente razoável — ajustar idade, filtrar sobreviventes, comparar quem completou terapia — pode criar viés. A aula não repetirá longas classificações de coorte/ensaio da 105/110, nem ensinará meta-análise novamente. Os dados numéricos dos exemplos são **fictícios**, para ensino, e nunca resultados clínicos reais.",
+    "**Associação:** P(Y|A=1) diferente de P(Y|A=0) nos dados. **Efeito causal:** diferença entre P(Y(1)) e P(Y(0)) em população-alvo. Em dados observacionais, associação pode diferir do efeito porque pessoas que escolhem/recebem tratamento já diferem em gravidade, acesso ou prognóstico.",
+    "**Fato observado:** 5% versus 10% em grupos analisados. **Hipótese causal:** se a mesma população tivesse acesso/adesão ao aplicativo, internaria menos. **Pressupostos:** fatores prognósticos relevantes medidos adequadamente, seleção não distorce, há comparação possível para perfis e intervenção é bem definida. **Inferência:** estimar efeito sob esses pressupostos, comunicando incerteza. Não transformar hipótese em fato por inserir uma regressão.",
+    "**ATE — efeito médio do tratamento na população-alvo:** diferença média Y(1)−Y(0) na população definida. **ATT — efeito médio entre tratados:** diferença entre desfecho tratado observado e desfecho que **esses tratados** teriam sob não tratamento. **ATC** analogamente para não tratados. Em heterogeneidade de efeito, ATE e ATT **podem ser distintos mesmo após análise causal correta**, pois representam populações diferentes.",
+    "**Intercambiabilidade condicional** pode ser escrita como Y(a) independente de A dado L (confundidores medidos), sob desenho causal escolhido. **Não é testável integralmente a partir dos dados observados**, porque contrafactuais não vistos permanecem não observados. Conseguir bons *balance plots* depois de propensity score não demonstra ausência de confundimento não medido.",
+    "**Mensuração válida e ausência de viés de seleção/tempo zero** são condições adicionais cruciais, não garantidas pelas três hipóteses principais. Dados não aleatórios podem produzir inferência causal útil, mas somente com pergunta e métodos transparentes.",
+    "**Directed acyclic graph (DAG)** é grafo de **setas direcionadas sem ciclos**, representando hipóteses sobre relações causais. Uma seta A→Y indica que A pode afetar Y de forma direta no modelo; a ausência de seta também é hipótese e pode ser errada. **Acyclic** significa que não há sequência de setas que retorne ao mesmo nó; relações recíprocas ao longo do tempo devem ser modeladas com nós datados distintos, como L0→A0→L1→A1.",
+    "**L → A → Y, e L → Y**.",
+    "**Exemplo:** pacientes mais graves recebem antibiótico intravenoso; também morrem mais por causa da gravidade. Comparar mortalidade bruta IV versus VO pode fazer IV parecer nocivo, mesmo que seja benéfico em grupo elegível. Ajuste por gravidade **antes** do tratamento é pertinente, mas é preciso perguntar se gravidade foi registrada com resolução suficiente.",
+    "**Armadilha:** em estudo de perda de peso e mortalidade, ajustar “peso alcançado aos seis meses” pode remover parte do efeito da intervenção. Não incluir automaticamente no modelo toda variável que “prediz bem morte” se foi causada pelo tratamento.",
+    "**Não confundir causa comum (confundidor) com consequência comum (colisor).** Ajustar confundidor fecha caminho; condicionar em colisor abre caminho. O colisor pode ser variável pré-exposição ou pós-exposição, dependendo da estrutura, e **a seleção do estudo também pode equivaler a condicionamento**. Elwert e Winship (2014) detalham esse problema.",
+    "**D-separation** formaliza quando um conjunto de variáveis bloqueia todas vias relevantes, de acordo com DAG. A regra de bolso: caminhos com nós não colisores condicionados são bloqueados; caminhos com colisores permanecem bloqueados **a menos que se condicione no colisor ou em descendente apropriado**. O conjunto mínimo de ajuste deve fechar vias espúrias e evitar bloquear efeitos que se deseja incluir ou abrir caminhos por seleção.",
+    "**Confundimento por indicação** é central em estudos de efetividade farmacológica: médicos prescrevem tratamentos conforme gravidade, comorbidade e prognóstico. Pacientes mais graves podem receber intervenção mais potente e também ter mais eventos; o tratamento pode parecer danoso na análise bruta. **Confundimento por contraindicação** ocorre quando frágeis, gestantes ou pacientes com doença renal recebem menos uma terapia porque têm risco especial; o grupo tratado pode parecer mais saudável por seleção clínica.",
+    "**Exemplo numérico fictício:** em 100 pacientes graves, 80 recebem A e têm 24 mortes; 20 não recebem A e têm 8 mortes. Em 900 leves, 200 recebem A e têm 4 mortes; 700 não recebem e têm 28 mortes. Taxas brutas: A 28/280 = 10%; sem A 36/720 = 5% → A pareceria associado a duplicar mortalidade. Mas dentro dos graves: 30% em tratados e 40% em não tratados; dentro dos leves: 2% em tratados e 4% em não tratados. **A associação inverte quando estratificamos gravidade**, exemplo de paradoxo de Simpson condicionado à composição dos grupos. Não podemos afirmar que A causa redução sem controlar todas outr",
+    "**Gravidade pode ser mal medida**: um campo “grave: sim/não” talvez omita hipoxemia, fragilidade, perfusão, funcionalidade e acesso, e esses detalhes influenciam A e Y. Fatores não medidos persistem. Ajuste para variáveis basais em escores pode ajudar quando suficientes, mas **não equilibra automaticamente não observados**.",
+    "**Seleção** ocorre quando a probabilidade de uma pessoa integrar ou permanecer na amostra depende de fatores relacionados à exposição e desfecho, produzindo distribuição diferente da população-alvo e, em certas estruturas, associação espúria. O problema não é apenas “amostra pequena” ou “não representativa”: **pode gerar viés interno mesmo em amostra enorme**, especialmente quando seleção condiciona colisor.",
+    "**Erro de classificação** ocorre quando exposição ou desfecho é categorizado incorretamente; pode ser **diferencial** se probabilidade de erro depende do outro status, ou **não diferencial** se não depende sob definição relevante. O adjetivo não diferencial **não garante viés em direção ao nulo em qualquer desenho**, especialmente categorias múltiplas, exposições contínuas, dependência entre erros, confusão residual e determinadas medidas.",
+    "**Tempo imortal** é período em que a pessoa necessariamente deve permanecer sem desfecho para ser classificada no grupo exposto conforme definição futura. Se estudo rotula como “tratados” todos que algum dia iniciaram medicamento, o período desde o diagnóstico até a primeira prescrição pode ser erroneamente contabilizado como tempo tratado, embora um paciente que tivesse morrido antes da prescrição **não pudesse ser classificado como tratado**. Isso frequentemente cria benefício artificial.",
+    "**Exemplo didático:** pacientes diagnosticados em 1º de janeiro, com início de A somente a partir de março. O estudo define grupo A como “quem recebeu A até junho” e grupo controle “quem nunca recebeu”. Para integrar A, a pessoa precisou sobreviver até primeiro A; mortes de fevereiro só podem aparecer entre “não usuários”. Se tempos de risco forem atribuídos incorretamente, A parecerá protetor mesmo sem efeito real.",
+    "**Correções possíveis:** alinhar tempo zero e atribuição de estratégias; usar exposição variável no tempo quando adequado para pergunta; emular ensaio-alvo com período de graça e estratégias como clone–censor–weight quando necessário, sob hipóteses explícitas. **Não basta “ajustar idade”** para apagar erro de classificação temporal."
+  ],
+  "external_urls": [
+    "https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5124536/.",
+    "https://www.bmj.com/content/378/bmj-2022-071108.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6089543/.",
+    "https://pubmed.ncbi.nlm.nih.gov/28693043/.",
+    "https://www.equator-network.org/reporting-guidelines/strobe/.",
+    "https://methods.cochrane.org/bias/risk-bias-non-randomized-studies-interventions.",
+    "https://www.riskofbias.info/welcome/robins-i-v2.",
+    "https://doi.org/10.1093/ije/dyw341.",
+    "https://pubmed.ncbi.nlm.nih.gov/27237061/",
+    "https://www.bmj.com/content/378/bmj-2022-071108",
+    "https://bmjmedicine.bmj.com/content/5/1/e001280",
+    "https://www.riskofbias.info/welcome/robins-i-v2",
+    "https://doi.org/10.1093/ije/dyw341"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Considere uma exposição **A** (por exemplo, iniciar tratamento ao diagnóstico) e desfecho **Y** (internação em 12 meses). Observamos a evolução de quem recebeu A e de quem não recebeu. A pergunta causal é: **o que teria acontecido com as mesmas pessoas, no mesmo tempo e contexto, sob a outra estratégia?** Esse cenário alternativo não é simultaneamente observável para uma pessoa; é o problema fundamental da inferência causal."
+    },
+    {
+      "text": "Para cada combinação relevante de covariáveis L na população-alvo, deveria haver probabilidade positiva de receber cada estratégia comparada. Se determinado fármaco **nunca** é prescrito a gestantes por contraindicação, não há dados diretos que informem o efeito daquele fármaco nesse grupo; extrapolar de homens/gestantes não expostas é outra pergunta."
+    },
+    {
+      "text": "Positividade **estrutural** pode falhar por contraindicação. Positividade **prática** pode falhar quando poucos pacientes de determinado perfil recebem uma opção, gerando pesos muito grandes e estimativas instáveis. Não “consertar” ausência de comparação simplesmente aumentando complexidade da regressão."
+    },
+    {
+      "text": "**Confundimento por indicação** é central em estudos de efetividade farmacológica: médicos prescrevem tratamentos conforme gravidade, comorbidade e prognóstico. Pacientes mais graves podem receber intervenção mais potente e também ter mais eventos; o tratamento pode parecer danoso na análise bruta. **Confundimento por contraindicação** ocorre quando frágeis, gestantes ou pacientes com doença renal recebem menos uma terapia porque têm risco especial; o grupo tratado pode parecer mais saudável por seleção clínica."
+    },
+    {
+      "text": "Comparar pessoas que continuam empregadas em trabalho de risco com população geral pode apresentar mortalidade menor porque **pessoas com pior saúde saem do emprego ou nunca entram**. A associação não comprova que exposição ocupacional é protetora. Em coortes clínicas, comparar sobreviventes que chegaram a receber tratamento complexo com pacientes desde o diagnóstico pode criar viés semelhante."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

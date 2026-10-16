@@ -1,0 +1,233 @@
+{
+  "sha": "ce8d17b0eb7d356d655c244ec7cc18a327ab933c",
+  "path": "apostilas/_rascunhos/lote-07-aula-122-perfuracao-viscera-oca.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-11-demensias-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015",
+    "origin/editorial/lote04-aula64-placenta-dpp-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ce8d17b0eb",
+  "title": "LURIA | Lote 7 — Aula 122",
+  "format": ".md",
+  "chars_estimated": 38736,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 7 — Aula 122"
+    },
+    {
+      "title": "Perfuração de víscera oca e abdome agudo perfurativo"
+    },
+    {
+      "title": "Registro obrigatório da etapa zero — benchmark pedagógico"
+    },
+    {
+      "title": "Índice e mapa de competências"
+    },
+    {
+      "title": "1. Definição: um problema anatômico que rapidamente se torna fisiológico"
+    },
+    {
+      "title": "2. Fisiologia normal antes da fisiopatologia"
+    },
+    {
+      "title": "2.1. Barreira epitelial, pressão intraluminal e microbiota"
+    },
+    {
+      "title": "2.2. Peritônio e mecanismos de contenção"
+    },
+    {
+      "title": "2.3. Perfuração livre, contida e retroperitoneal"
+    },
+    {
+      "title": "3. Etiologias e pistas por segmento"
+    },
+    {
+      "title": "4. Quadro clínico orientado por gravidade e topografia"
+    },
+    {
+      "title": "5. Primeiros minutos: tratar o paciente, não aguardar a tomografia"
+    },
+    {
+      "title": "Por que “estável” não é apenas uma pressão aceitável?"
+    },
+    {
+      "title": "6. Métodos diagnósticos: quando e como interpretar"
+    },
+    {
+      "title": "6.1. Radiografia convencional"
+    },
+    {
+      "title": "6.2. Tomografia computadorizada"
+    },
+    {
+      "title": "6.3. Ultrassonografia"
+    },
+    {
+      "title": "6.4. Laboratório: gravidade, não prova anatômica"
+    },
+    {
+      "title": "7. Diagnósticos diferenciais que exigem raciocínio"
+    },
+    {
+      "title": "8. Princípios de controle de foco e tratamento cirúrgico"
+    },
+    {
+      "title": "8.1. Úlcera gastroduodenal perfurada"
+    },
+    {
+      "title": "8.2. Cólon e delgado"
+    },
+    {
+      "title": "8.3. Perfuração iatrogênica e esofágica"
+    },
+    {
+      "title": "8.4. Tratamento não operatório da úlcera perfurada — exceção, não padrão"
+    },
+    {
+      "title": "9. Antimicrobianos e reavaliação do foco"
+    },
+    {
+      "title": "10. Situações especiais"
+    },
+    {
+      "title": "Gestante"
+    },
+    {
+      "title": "Idoso e paciente imunossuprimido"
+    },
+    {
+      "title": "Obstrução, neoplasia e isquemia"
+    },
+    {
+      "title": "Pós-endoscopia"
+    },
+    {
+      "title": "11. Complicações, prognóstico e seguimento"
+    },
+    {
+      "title": "12. Algoritmos textuais"
+    },
+    {
+      "title": "Algoritmo A — suspeita de abdome perfurativo"
+    },
+    {
+      "title": "Algoritmo B — úlcera gastroduodenal perfurada"
+    },
+    {
+      "title": "13. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — úlcera duodenal perfurada clássica"
+    },
+    {
+      "title": "Caso 2 — ausência de pneumoperitônio à radiografia"
+    },
+    {
+      "title": "Caso 3 — possível perfuração de úlcera selada"
+    },
+    {
+      "title": "Caso 4 — perfuração colônica em contexto de obstrução"
+    },
+    {
+      "title": "14. Questões autorais de residência, com alternativas justificadas"
+    },
+    {
+      "title": "Questão 1 — imagem negativa"
+    },
+    {
+      "title": "Questão 2 — prioridade em peritonite"
+    },
+    {
+      "title": "Questão 3 — terapia conservadora"
+    },
+    {
+      "title": "Questão 4 — antibiótico no pós-operatório"
+    },
+    {
+      "title": "Questão 5 — perforação pós-colonoscopia"
+    },
+    {
+      "title": "Questão 6 — perfuração por obstrução"
+    },
+    {
+      "title": "15. Pérolas de prova e prevenção de erros"
+    },
+    {
+      "title": "16. Plano visual e de imagens candidatas (NENHUMA APROVADA OU INCORPORADA)"
+    },
+    {
+      "title": "17. Referências científicas e rastreabilidade"
+    },
+    {
+      "title": "18. Auditoria do rascunho e próximas inserções"
+    }
+  ],
+  "reference_entries": [
+    "1. Tarasconi A, Coccolini F, Biffl WL, et al. **Perforated and bleeding peptic ulcer: WSES guidelines.** World Journal of Emergency Surgery. 2020;15:3. DOI: 10.1186/s13017-019-0283-9. https://link.springer.com/article/10.1186/s13017-019-0283-9",
+    "2. Sartelli M, Chichom-Mefire A, Labricciosa FM, et al. **The management of intra-abdominal infections from a global perspective: 2017 WSES guidelines.** World Journal of Emergency Surgery. 2017;12:29. DOI: 10.1186/s13017-017-0141-6. https://pmc.ncbi.nlm.nih.gov/articles/PMC5504840/",
+    "3. WSES. **Scientific resources — guidelines** (página de índice de consensos, exige verificar edição específica para cada etiologia). https://www.wses.org.uk/scientific-resources/guidelines",
+    "**Hierarquia editorial:** antes da aprovação, cotejar com documentos nacionais pertinentes de cirurgia, sepse e segurança do paciente e protocolos de antibioticoterapia do serviço. Não transformar recomendações internacionais em regras universais do SUS.",
+    "- [x] Comparativo relacionado efetivamente aberto e lido; autoria institucional não comprovada.",
+    "- [x] Fisiologia normal e fisiopatologia causal diferenciadas.",
+    "- [x] Diagnóstico, diferenciais, fluxos, tratamento e populações especiais introdutórios.",
+    "- [x] Quatro casos integradores comentados.",
+    "- [x] Seis questões autorais comentadas com todas as alternativas.",
+    "- [x] Plano visual sem uso indevido de imagens.",
+    "- [ ] Completar 60 mil caracteres de conteúdo didático útil com aprofundamentos não repetitivos.",
+    "- [ ] Conferir fonte brasileira primária e protocolo antimicrobiano completo com dose e ajuste renal.",
+    "- [ ] Inserir manejo detalhado por sítio (delgado, cólon, iatrogenia, trauma, esôfago) com fontes específicas.",
+    "- [ ] Auditar precisão de todo tratamento, contraindicações, variabilidade de técnica e atualização temporal.",
+    "- [ ] Realizar teste de autossuficiência por cenários inéditos e rastreio capítulo → questão.",
+    "- [ ] Selecionar imagens reais com licença e revisão Admin; realizar testes visuais desktop/PWA.",
+    "- [ ] Inspecionar redundância, acessibilidade e diagramação antes de integrar ao HTML final.",
+    "**Status final desta versão: RASCUNHO EM REVISÃO, NÃO APROVADO/NÃO PUBLICADO.**"
+  ],
+  "external_urls": [
+    "https://link.springer.com/article/10.1186/s13017-019-0283-9",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5504840/",
+    "https://www.wses.org.uk/scientific-resources/guidelines"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- **Material do Google Drive efetivamente aberto:** “13 - ABDOME AGUDO PERFURATIVO.pdf”, texto recuperado e lido em 14/10/2026. Cerca de 4 mil caracteres de tópicos sobre úlcera perfurada, pneumoperitônio, sítios gastrointestinais, achados radiográficos e cirurgia. O próprio texto exibe identificação de circulação “Medicina livre”; **não foi verificada autoria da Estratégia MED**. - **Comparação com LURIA:** a pasta “apostilas/perfuracao-de-viscera-oca” não estava presente no inventário nominal consultado. Este rascunho inaugura cobertura específica, sem modificar apostilas aprovadas nem copiar estrutura textual ou figuras do comparativo. - *"
+    },
+    {
+      "text": "**Gabarito C.** A imagem simples negativa não exclui perfuração; sinais clínicos e perfil de risco impõem reavaliação e imagem adequada, sem retardar controle de foco. **A** confunde baixa sensibilidade com exclusão. **B** perpetua mito sobre analgesia, que deve ser oferecida. **D** usa leucocitose como condição necessária, o que é falso. **Minirrevisão:** síndrome cirúrgica é diagnóstico integrado e dinâmico."
+    },
+    {
+      "text": "**Hierarquia editorial:** antes da aprovação, cotejar com documentos nacionais pertinentes de cirurgia, sepse e segurança do paciente e protocolos de antibioticoterapia do serviço. Não transformar recomendações internacionais em regras universais do SUS."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

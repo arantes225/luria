@@ -1,0 +1,123 @@
+{
+  "sha": "f10fe21c9d30c8eca3c94e175113c137b5aa5620",
+  "path": "apostilas/assistencia-recem-nascido-sala-parto/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "assistencia-recem-nascido-sala-parto--f10fe21c9d",
+  "title": "Assistência ao Recém-nascido em Sala de Parto",
+  "format": ".json",
+  "chars_estimated": 77370,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Assistência ao recém-nascido em sala de parto: proteger a transição sem medicalizar o bebê saudável"
+    },
+    {
+      "id": "fisiologia",
+      "title": "1. Fisiologia da adaptação cardiorrespiratória e térmica"
+    },
+    {
+      "id": "preparo",
+      "title": "2. Preparação da sala, da equipe e avaliação de risco antenatal"
+    },
+    {
+      "id": "triagem",
+      "title": "3. Avaliação imediata: respiração, tônus, frequência cardíaca e Apgar"
+    },
+    {
+      "id": "cordao",
+      "title": "4. Clampeamento do cordão: benefício, elegibilidade e exceções"
+    },
+    {
+      "id": "rotina",
+      "title": "5. Cuidados de rotina: calor, contato pele a pele e aleitamento"
+    },
+    {
+      "id": "exame",
+      "title": "6. Exame físico inicial, medidas e sinais de alerta"
+    },
+    {
+      "id": "profilaxia",
+      "title": "7. Vitamina K e prevenção da doença hemorrágica do recém-nascido"
+    },
+    {
+      "id": "imunizacao",
+      "title": "8. Imunização ao nascer e prevenção de transmissão vertical"
+    },
+    {
+      "id": "registro",
+      "title": "9. Documentação, segurança, alojamento conjunto e transição de cuidados"
+    },
+    {
+      "id": "casos",
+      "title": "10. Casos clínicos comentados: o que muda a conduta"
+    },
+    {
+      "id": "questoes",
+      "title": "11. Questões autorais de residência com comentários"
+    },
+    {
+      "id": "referencias",
+      "title": "12. Referências científicas e estado do rascunho"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"12. Referências científicas e estado do rascunho\"]",
+    "[\"o\",[\"<a href=\\\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-124-2026-dahud-saes-ms.pdf/view\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Nota Técnica 124/2026: contato pele a pele precoce e ininterrupto na primeira hora após parto vaginal ou cesárea.</a>\",\"<a href=\\\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-20-2026-dpni-dahu-svsa-saes-ms.pdf\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde, PNI. Nota Técnica Conjunta 20/2026: imu",
+    "[\"p\",\"<strong>Comparativos consultados no Google Drive:</strong> 'Reanimação Neonatal.pdf' (2.130 caracteres extraídos) e '01 - ICTERICIA E COLESTASE NEONATAL.pdf' (14.963 caracteres), com autoria institucional Estratégia MED não confirmada. Foram usados apenas para definir fronteiras curriculares e armadilhas: resumo antigo sugere aspiração meconial e regras de suspensão de reanimação desatualizadas; não reproduzimos suas figuras ou textos, e decisões de reanimação pertencem ao tema 008.\"]",
+    "[\"p\",\"<strong>Estado editorial:</strong> rascunho original do tema curricular 003, primeira etapa de construção. Ainda não atende à meta de 60 mil caracteres didáticos úteis nem recebeu revisão independente, matriz de questões completa, curadoria de imagens ou validação de desktop/PWA. Não existe index.html nem vínculo novo ao catálogo; não publicado. Revisar em capítulo futuro os critérios de triagem neonatal por idade, detalhes dos exames e situações de prematuridade/infecção antes da certificação.\"]",
+    "[\"p\",\"<strong>Aprofundamento editorial LURIA 14/10/2026:</strong> atualizados fisiologia cardiopulmonar, prevenção de hipotermia, briefing, decisão na primeira hora, Apgar, clampeamento, exame por sistemas, sinais de risco, hemorragia por vitamina K, vacinação e linha de cuidado dos rastreios; casos e questões adicionais. Documento comparativo do Drive efetivamente aberto e lido: “Reanimação Neonatal.pdf”, autoria institucional não comprovada. As afirmações antigas de aspiração meconial rotineira ou interrupção obrigatória da reanimação aos 10 minutos não foram reproduzidas. A base normativa é"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-124-2026-dahud-saes-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-20-2026-dpni-dahu-svsa-saes-ms.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/assistencia-ao-parto-normal-diretriz-nacional",
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/b/bcg",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/neonatal-resuscitation",
+    "https://publications.aap.org/pediatrics/article/157/1/e2025074352/205237/Part-5-Neonatal-Resuscitation-2025-American-Heart",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/legislacao/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/triagem-neonatal/perguntas-frequentes-faq",
+    "https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-igual-maior-34-semanas-12junho2026.pdf",
+    "https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-menor-34-semanas-12junho2026.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/cuidado-neonatal",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/notas-tecnicas-e-informativas/nota-tecnica-no-108-2025-cgici-dpni-svsa-ms"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "fisiologia",
+      "text": "A elevação do retorno venoso pulmonar ao átrio esquerdo e as mudanças de pressões atriais favorecem fechamento funcional do forame oval. O aumento de oxigenação e a queda de prostaglandinas contribuem para constrição funcional do ducto arterioso, processo que leva tempo e difere do fechamento anatômico. Nas primeiras horas pode haver fluxo transitório por comunicações fetais; persistência de hipoxemia, taquipneia importante e diferença entre saturações não pode ser atribuída sem avaliação à 'transição normal'. Hipertensão pulmonar persistente do recém-nascido ocorre quando a queda esperada da resistência pulmonar falha, mantendo shunt extrapu"
+    },
+    {
+      "section": "fisiologia",
+      "text": "Catecolaminas e alterações hormonais do fim da gestação estimulam absorção de líquido pulmonar fetal por canais epiteliais de sódio e transporte intersticial. Trabalho de parto e respiração inicial ajudam na transição, mas a ideia de que o tórax é simplesmente 'espremido' pelo canal de parto é explicação incompleta. Após cesariana eletiva antes do início do trabalho de parto, a depuração do líquido pode ocorrer mais lentamente, aumentando risco de taquipneia transitória do recém-nascido. Isso não implica que todo bebê de cesariana precise de oxigênio: avaliar gravidade, tendência, retrações, gemido, saturação e diagnósticos alternativos."
+    },
+    {
+      "section": "preparo",
+      "text": "As diretrizes brasileiras de reanimação neonatal de 2026 são organizadas em dois documentos: <strong>RN ≥34 semanas</strong> e <strong>RN <34 semanas</strong>. Essa divisão é operacional do programa de reanimação e não altera os conceitos epidemiológicos de prematuridade. A abordagem do RN de 33 semanas e a do RN de 35 semanas não são intercambiáveis, mesmo quando ambos choram ao nascer. O módulo de reanimação neonatal da LURIA (tema 008) detalha dispositivos e sequência completa de suporte; esta apostila usa a distinção para orientar preparação, aquecimento e decisão sobre permanência com a família ou transferência."
+    },
+    {
+      "section": "cordao",
+      "text": "Em RN a termo sem necessidade de reanimação imediata, a recomendação AHA/AAP 2025 considera benéfico adiar o clampeamento por <strong>pelo menos 60 segundos</strong>. Para RN com menos de 37 semanas que não precisa de reanimação imediata, a recomendação também favorece pelo menos 60 segundos. O cuidado deve manter calor, observação respiratória e coordenação com a equipe obstétrica. Quando possível, parte dos passos iniciais pode ocorrer com cordão íntegro."
+    },
+    {
+      "section": "cordao",
+      "text": "A ordenha do cordão não deve ser tratada como sinônimo de clampeamento tardio. AHA/AAP 2025 não recomenda ordenhar o cordão íntegro em RN com idade gestacional <28 semanas devido ao risco de hemorragia intraventricular. Em intervalos gestacionais específicos e quando o clampeamento tardio não for viável, diretrizes podem discutir alternativas, mas sua adoção requer protocolo neonatal específico."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

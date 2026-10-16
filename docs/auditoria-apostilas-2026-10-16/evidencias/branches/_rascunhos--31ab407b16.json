@@ -1,0 +1,269 @@
+{
+  "sha": "31ab407b1610e9224c3339cd08cd7c332b8c2210",
+  "path": "apostilas/_rascunhos/lote-13-260-biosseguranca-iras.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--31ab407b16",
+  "title": "LURIA — Lote 13 · Apostila 260",
+  "format": ".md",
+  "chars_estimated": 56759,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 260"
+    },
+    {
+      "title": "Biossegurança e prevenção das infecções relacionadas à assistência à saúde"
+    },
+    {
+      "title": "Benchmark obrigatório registrado (etapa zero, parcial)"
+    },
+    {
+      "title": "1. Definição e relevância"
+    },
+    {
+      "title": "2. Cadeia de infecção e hierarquia de controle"
+    },
+    {
+      "title": "3. Precauções padrão: para todos os pacientes"
+    },
+    {
+      "title": "Higiene das mãos"
+    },
+    {
+      "title": "Segurança do uso de material perfurocortante"
+    },
+    {
+      "title": "4. Precauções baseadas na transmissão"
+    },
+    {
+      "title": "5. Infecção primária de corrente sanguínea associada a cateter (IPCS/CLABSI)"
+    },
+    {
+      "title": "Mecanismos"
+    },
+    {
+      "title": "Inserção: bundle racional"
+    },
+    {
+      "title": "Manutenção"
+    },
+    {
+      "title": "Suspeita de bacteremia relacionada ao cateter"
+    },
+    {
+      "title": "6. Infecção urinária associada ao cateter vesical (ITU-CVD)"
+    },
+    {
+      "title": "7. Pneumonia associada à ventilação mecânica (PAV) e pneumonia hospitalar"
+    },
+    {
+      "title": "Estratégias de prevenção"
+    },
+    {
+      "title": "8. Infecção do sítio cirúrgico (ISC)"
+    },
+    {
+      "title": "9. Resistência antimicrobiana e stewardship"
+    },
+    {
+      "title": "10. Limpeza, desinfecção, esterilização e classificação de materiais"
+    },
+    {
+      "title": "11. Acidente com material biológico: conduta imediata"
+    },
+    {
+      "title": "12. Vigilância epidemiológica e indicadores"
+    },
+    {
+      "title": "Densidade de incidência por dispositivo"
+    },
+    {
+      "title": "13. Gestão de surtos: passo a passo"
+    },
+    {
+      "title": "14. Diagnóstico diferencial: infecção, inflamação, colonização e contaminação"
+    },
+    {
+      "title": "15. Fluxogramas de conduta"
+    },
+    {
+      "title": "Fluxo A — impedir IRAS por dispositivo"
+    },
+    {
+      "title": "Fluxo B — decisão sobre isolamento"
+    },
+    {
+      "title": "Fluxo C — profissional com perfurocortante"
+    },
+    {
+      "title": "15A. Da evidência à beira-leito: desenho do programa de prevenção"
+    },
+    {
+      "title": "Prevenção não é um cartaz: estrutura, processo, desfecho e realimentação"
+    },
+    {
+      "title": "Cinco momentos de higiene das mãos na sequência real do atendimento"
+    },
+    {
+      "title": "Escolha de precauções: raciocínio por transmissão e procedimento"
+    },
+    {
+      "title": "15B. Bacteremia e cateter: separar vigilância, diagnóstico clínico e controle do foco"
+    },
+    {
+      "title": "Três perguntas que não devem ser confundidas"
+    },
+    {
+      "title": "Risco anatômico e escolha do sítio vascular"
+    },
+    {
+      "title": "Como interpretar microrganismo, gravidade e falha terapêutica"
+    },
+    {
+      "title": "15C. Setores especiais: reduzir dano sem aplicar mecanicamente um bundle único"
+    },
+    {
+      "title": "Hemodiálise e cateteres de longa permanência"
+    },
+    {
+      "title": "Neonatologia e pediatria"
+    },
+    {
+      "title": "Atenção obstétrica, parto e puerpério"
+    },
+    {
+      "title": "Atenção Primária, ambulatório e cuidado domiciliar"
+    },
+    {
+      "title": "15D. Indicadores que explicam o desempenho, e não apenas decoram uma prova"
+    },
+    {
+      "title": "Denominadores: paciente-dia, dispositivo-dia e procedimentos"
+    },
+    {
+      "title": "Investigar melhora real versus artefato de registro"
+    },
+    {
+      "title": "Resistência antimicrobiana: antibiograma agregado e decisão individual"
+    },
+    {
+      "title": "15E. Investigação de surtos com exemplo de raciocínio epidemiológico"
+    },
+    {
+      "title": "Caso-síntese — infecções após procedimentos em uma mesma sala"
+    },
+    {
+      "title": "Questões de integração para verificar autossuficiência"
+    },
+    {
+      "title": "Referências verificadas para o complemento (consulta em 15/10/2026)"
+    },
+    {
+      "title": "16. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Bacteriúria em paciente sondada"
+    },
+    {
+      "title": "Caso 2 — Febre e calafrios durante infusão por CVC"
+    },
+    {
+      "title": "Caso 3 — Prevenção de ISC em cirurgia abdominal"
+    },
+    {
+      "title": "Caso 4 — Acidente com agulha contaminada"
+    },
+    {
+      "title": "17. Questões autorais comentadas"
+    },
+    {
+      "title": "18. Pérolas de prova e prática"
+    },
+    {
+      "title": "19. Banco inicial de figuras educativas (nenhuma imagem aprovada)"
+    },
+    {
+      "title": "20. Referências institucionais"
+    },
+    {
+      "title": "Auditoria preliminar — NÃO CONCLUÍDA"
+    }
+  ],
+  "reference_entries": [
+    "- ANVISA. *Programa Nacional de Prevenção e Controle de Infecções Relacionadas à Assistência à Saúde (PNPCIRAS 2026–2030)*, aprovado pela Portaria nº 79/2026: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude",
+    "- ANVISA. *Infecção primária de corrente sanguínea*: protocolos e cartazes de prevenção, página atualizada em janeiro de 2026: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-primaria-de-corrente-sanguinea",
+    "- ANVISA. *Higiene das mãos*: manual técnico e estratégia multimodal: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/higienizacao-das-maos-1/copy_of_higienizacao-das-maos",
+    "- ANVISA. *Série Segurança do Paciente e Qualidade em Serviços de Saúde, cadernos 2025/2026* (inclui caderno 8, prevenção de IRAS na atenção obstétrica): https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/manuais/serie-seguranca-do-paciente-e-qualidade-em-servicos-de-saude-2013-2025-6",
+    "- Ministério da Saúde. *PCDT para Profilaxia Pós-Exposição a HIV, IST e Hepatites Virais*, anexo atualizado em março de 2025: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-pos-exposicao-de-risco-pep-a-infeccao-pelo-hiv/view",
+    "**Nota de transparência:** o complemento emprega informações clínicas de fontes oficiais e raciocínios originais. O material do Google Drive foi utilizado apenas como comparação didática parcial; nenhuma imagem ou tabela alheia foi reproduzida. Este texto NÃO supre a necessidade de conferir os critérios operacionais íntegros de vigilância da Anvisa, de validar o manuscrito com revisor técnico e de concluir a auditoria do mínimo de 60 mil caracteres didáticos úteis.",
+    "**Q1.** Sobre precauções padrão, qual alternativa é correta?  ",
+    "**Gabarito C.** Precauções padrão são universais; A restringe indevidamente, B/E promovem contaminação, D confunde indicação por transmissão. **Revisão:** EPI é dependente da tarefa, e higiene de mãos permanece central.",
+    "**Q2.** Paciente com CVC desnecessário e sem sinais de infecção, melhor medida de prevenção de IPCS?  ",
+    "**Gabarito B.** Reduzir tempo de dispositivo diminui exposição; A/C/D não são prevenção rotineira; E viola técnica. **Revisão:** necessidade deve ser reavaliada todos os dias.",
+    "**Q3.** Em paciente estável sondado com urocultura positiva e sem sinais de infecção, qual conduta é mais apropriada em regra?  ",
+    "**Gabarito C.** Cultura positiva não define ITU; A/D causam dano potencial, B promove exames desnecessários, E ignora intervenção causal. **Revisão:** tratar somente em indicações clínicas/exceções apropriadas.",
+    "**Q4.** Indicador de uma UTI: 4 IPCSL elegíveis e 2.000 cateter central-dia. Qual DI?  ",
+    "**Gabarito B.** 4 ÷ 2000 × 1000 = 2. A muda denominador; C/D introduzem denominadores ausentes; E ignora dados suficientes. **Revisão:** nunca comparar denominadores incompatíveis.",
+    "**Q5.** Profissional sofre perfuração por agulha potencialmente contaminada, há 2 horas. Se PEP HIV for indicada, qual janela de início?  ",
+    "**Gabarito C.** A PEP tem janela máxima de 72 horas e dura 28 dias. A/B/D atrasam, E desconhece prevenção disponível. **Revisão:** avaliar HBV e HCV no mesmo atendimento.",
+    "**Q6.** Candidato cirúrgico receberá antibiótico profilático corretamente antes de incisão. Em regra, qual orientação adicional é apropriada?  ",
+    "**Gabarito B.** A e C aumentam risco sem benefício necessário; D/E comprometem bundle preventivo. **Revisão:** ISC tem prevenção em múltiplos pontos; profilaxia deve ser racional.",
+    "1. IRAS pode ocorrer fora de hospital e manifestar-se depois da alta; cronologia isolada não basta.",
+    "2. Colonização não é automaticamente infecção — especialmente urina sondada e dispositivos respiratórios.",
+    "3. Higiene das mãos e indicação diária de dispositivos têm grande impacto preventivo.",
+    "4. Precauções padrão aplicam-se a todos, precauções adicionais dependem da transmissão.",
+    "5. Uso de luvas sem higienizar mãos aumenta falsa sensação de segurança.",
+    "6. CVC é simultaneamente oportunidade de terapia e risco infeccioso; remover quando possível.",
+    "7. Cateter vesical mantém risco contínuo — evitar inserção desnecessária.",
+    "8. Prevenir PAV significa especialmente evitar tempo de VM desnecessário e microaspiração, com bundle adequado.",
+    "9. Antibiótico profilático não trata ISC instalada nem precisa prolongamento arbitrário.",
+    "10. Medir por dispositivo-dia e acompanhar processo + desfecho; “zero casos” sem vigilância não comprova segurança.",
+    "11. PEP HIV após acidente é urgência de 72 h e requer 28 dias quando indicada.",
+    "12. Em 2026, a referência brasileira de indicadores é PNPCIRAS 2026–2030 e notas técnicas vigentes da ANVISA."
+  ],
+  "external_urls": [
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/pnpciras-e-pan-servicos-de-saude",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-primaria-de-corrente-sanguinea",
+    "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/higienizacao-das-maos-1/copy_of_higienizacao-das-maos",
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/manuais/serie-seguranca-do-paciente-e-qualidade-em-servicos-de-saude-2013-2025-6",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-pos-exposicao-de-risco-pep-a-infeccao-pelo-hiv/view",
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas",
+    "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+    "https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html",
+    "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infection/prevention-strategies.html",
+    "https://www.cdc.gov/infection-control/hcp/cauti/index.html",
+    "https://www.who.int/southeastasia/publications/i/item/9789240093829",
+    "https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada/pep-profilaxia-pos-exposicao-ao-hiv"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**IPCSL associada a cateter** é uma classificação de vigilância, com critérios epidemiológicos de tempo de dispositivo e ausência de foco alternativo; não é necessariamente idêntica ao diagnóstico clínico de infecção comprovadamente originada do cateter. A classificação formal requer **Nota Técnica 03/2026 ANVISA** e critérios institucionais atuais. O clínico não deve reduzir qualquer febre em portador de acesso a “infecção do cateter” sem procurar pneumonia, urinária, abdominal, endocardite, farmacológica e causas não infecciosas."
+    },
+    {
+      "text": "Quando surge febre, secreção purulenta, infiltrado novo e deterioração oxigenatória, construir diagnóstico diferencial: PAV, edema pulmonar, atelectasia, embolia, síndrome inflamatória e outros focos. Coletar amostras respiratórias quando indicado antes de antimicrobiano, **sem retardar** terapia de sepse. Revisar e descalonar tratamento conforme culturas, evolução e risco local."
+    },
+    {
+      "text": "Há risco de HIV, hepatites B e C em exposições pertinentes. A **PEP para HIV** é urgência e, quando indicada por avaliação de risco, deve começar o quanto antes, dentro do limite de **72 horas**, mantida por **28 dias** conforme Ministério da Saúde; não se deve atrasar PEP para aguardar exames desnecessários. Esquema antirretroviral específico, interações, função renal e contraindicações exigem protocolo SUS vigente. Para hepatite B, a conduta depende de vacinação/anti-HBs e status da fonte, podendo incluir vacina e imunoglobulina em situações apropriadas. Para hepatite C, seguir investigação basal e seriada; não assumir existência de profila"
+    },
+    {
+      "text": "A ANVISA estabelece critérios, notas técnicas e metas nacionais atualizadas para PNPCIRAS 2026–2030. O auditor deve conferir a **versão 2026 dos critérios diagnósticos obrigatórios**, sobretudo IPCSL, ITU-CVD, PAV e ISC, antes de usar uma taxa como dado oficial."
+    },
+    {
+      "text": "O programa de prevenção de IRAS precisa tornar as práticas seguras **executáveis** no local de trabalho. Uma recomendação como “higienizar as mãos antes de manipular o cateter” só funciona quando há preparação alcoólica acessível, treinamento de toda a equipe, previsibilidade de suprimentos, gestão das interrupções durante o procedimento, observação de desempenho e devolutiva tempestiva. Sem essas condições, atribuir a infecção exclusivamente à distração de um trabalhador é uma leitura incompleta do risco."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

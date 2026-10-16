@@ -1,0 +1,394 @@
+{
+  "sha": "62a384d3d310e9b85598ab046ea6fc4a6da6baf0",
+  "path": "apostilas/_rascunhos/lote-05-106-lesao-renal-aguda.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--62a384d3d3",
+  "title": "LURIA — Apostila 106: Lesão Renal Aguda (LRA)",
+  "format": ".md",
+  "chars_estimated": 70100,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 106: Lesão Renal Aguda (LRA)"
+    },
+    {
+      "title": "0. Etapa zero — auditoria de duplicações, referenciais e recorte"
+    },
+    {
+      "title": "Mapa curricular e competências avaliadas"
+    },
+    {
+      "title": "1. Por que a LRA importa no internato e na emergência?"
+    },
+    {
+      "title": "2. Fisiologia indispensável: filtração, perfusão e autorregulação"
+    },
+    {
+      "title": "2.1. O que a filtração glomerular mede?"
+    },
+    {
+      "title": "2.2. Por que a medula renal é vulnerável?"
+    },
+    {
+      "title": "2.3. Creatinina: por que o marcador chega atrasado?"
+    },
+    {
+      "title": "2.4. Fluxo urinário é marcador funcional, não diagnóstico etiológico"
+    },
+    {
+      "title": "3. Definição e estadiamento KDIGO — dominar os números sem perder o paciente"
+    },
+    {
+      "title": "3.1. Critério diagnóstico de LRA (KDIGO 2012)"
+    },
+    {
+      "title": "3.2. Três estágios — duas colunas e um critério especial"
+    },
+    {
+      "title": "3.3. Diurese medida de forma correta"
+    },
+    {
+      "title": "3.4. LRA, doença renal aguda e doença renal crônica"
+    },
+    {
+      "title": "3.5. Quando não há basal confiável"
+    },
+    {
+      "title": "3.6. A diretriz KDIGO de 2026 — o que afirmar em outubro?"
+    },
+    {
+      "title": "4. Quem está em risco? Epidemiologia aplicada ao leito"
+    },
+    {
+      "title": "5. Classificação etiológica: pré-renal, intrínseca e pós-renal"
+    },
+    {
+      "title": "5.1. Pré-renal: falta de perfusão renal efetiva"
+    },
+    {
+      "title": "5.2. Intrínseca/parênquimatosa: qual compartimento está doente?"
+    },
+    {
+      "title": "5.3. Pós-renal: obstrução é uma causa tratável e potencialmente urgente"
+    },
+    {
+      "title": "5.4. Tabela: integrar achados sem cair em determinismo"
+    },
+    {
+      "title": "6. Primeiros 10 minutos: reconhecer perigo e estabilizar"
+    },
+    {
+      "title": "6.1. Avaliação simultânea por prioridades"
+    },
+    {
+      "title": "6.2. Cinco perigos que mudam a urgência"
+    },
+    {
+      "title": "6.3. Monitorar e reavaliar, não “tratar o número”"
+    },
+    {
+      "title": "7. Anamnese orientada, exame físico e dados prévios"
+    },
+    {
+      "title": "7.1. História das últimas 72 horas e das últimas semanas"
+    },
+    {
+      "title": "7.2. Exame físico — volume e perfusão não são sinônimos"
+    },
+    {
+      "title": "8. Diagnóstico laboratorial: pedir com propósito e interpretar em conjunto"
+    },
+    {
+      "title": "8.1. Primeira linha em adulto com suspeita de LRA"
+    },
+    {
+      "title": "8.2. Urina: exame pequeno que muda decisões grandes"
+    },
+    {
+      "title": "8.3. Proteinúria não significa automaticamente doença glomerular primária"
+    },
+    {
+      "title": "8.4. A limitação da eTFG na fase aguda"
+    },
+    {
+      "title": "9. Frações de excreção e índices urinários — quando ajudam e quando confundem"
+    },
+    {
+      "title": "9.1. Fração de excreção de sódio (FENa)"
+    },
+    {
+      "title": "9.2. Fração de excreção de ureia (FEUreia)"
+    },
+    {
+      "title": "9.3. Exemplo calculado com limitações explícitas"
+    },
+    {
+      "title": "10. Imagem e avaliação da obstrução"
+    },
+    {
+      "title": "10.1. Quando investigar o trato urinário com urgência?"
+    },
+    {
+      "title": "10.2. Ultrassom é exame de contexto"
+    },
+    {
+      "title": "10.3. Contraste iodado: não confundir risco e proibição"
+    },
+    {
+      "title": "11. Manejo: tratar causa, restaurar perfusão quando necessária e evitar a segunda agressão"
+    },
+    {
+      "title": "11.1. Um algoritmo clínico realista"
+    },
+    {
+      "title": "11.2. Fluidoterapia: a decisão começa na avaliação hemodinâmica"
+    },
+    {
+      "title": "11.3. Diuréticos: tratar edema, não prometer regeneração tubular"
+    },
+    {
+      "title": "11.4. Revisão dos medicamentos de forma inteligente"
+    },
+    {
+      "title": "11.5. Terapia específica para etiologias"
+    },
+    {
+      "title": "12. Hipercalemia na LRA — algoritmo de emergência, com barreiras de segurança"
+    },
+    {
+      "title": "12.1. Reconhecer antes que apareça ECG “clássico”"
+    },
+    {
+      "title": "12.2. Três mecanismos de tratamento — proteção, deslocamento, remoção"
+    },
+    {
+      "title": "12.3. O que nunca esquecer após intervenção inicial"
+    },
+    {
+      "title": "13. Acidose, volume e outras complicações"
+    },
+    {
+      "title": "13.1. Acidose metabólica — trate fisiologia e causa"
+    },
+    {
+      "title": "13.2. Sobrecarga volêmica e edema pulmonar"
+    },
+    {
+      "title": "13.3. Complicações urêmicas"
+    },
+    {
+      "title": "13.4. Disfunções de sódio, cálcio e fósforo"
+    },
+    {
+      "title": "14. Terapia renal substitutiva: quando e por que"
+    },
+    {
+      "title": "14.1. A lógica AEIOU e suas limitações"
+    },
+    {
+      "title": "14.2. Estágio KDIGO 3 não é igual a “tem que dialisar”"
+    },
+    {
+      "title": "14.3. O que o STARRT-AKI realmente demonstrou?"
+    },
+    {
+      "title": "14.4. Modalidades — qual pergunta cada uma responde?"
+    },
+    {
+      "title": "14.5. Quando parar TRS?"
+    },
+    {
+      "title": "15. Grupos especiais e interfaces curriculares"
+    },
+    {
+      "title": "15.1. Crianças e adolescentes"
+    },
+    {
+      "title": "15.2. Gravidez e puerpério"
+    },
+    {
+      "title": "15.3. Cirrose e doenças hepáticas"
+    },
+    {
+      "title": "15.4. Oncologia, lise tumoral e nefrotoxinas"
+    },
+    {
+      "title": "15.5. Idosos e fragilidade"
+    },
+    {
+      "title": "16. Evolução, alta e seguimento: a LRA não termina quando a creatinina cai"
+    },
+    {
+      "title": "17. Casos clínicos comentados — integrar hipóteses, exames e decisões"
+    },
+    {
+      "title": "Caso 1 — Diarreia, anti-inflamatório e creatinina que duplicou"
+    },
+    {
+      "title": "Caso 2 — Coração congestionado e rim piorando"
+    },
+    {
+      "title": "Caso 3 — Bexiga cheia, potássio alto e rim obstruído"
+    },
+    {
+      "title": "Caso 4 — Hematúria que não era “infecção urinária simples”"
+    },
+    {
+      "title": "Caso 5 — Sepse, oligúria e sedimento granular"
+    },
+    {
+      "title": "Caso 6 — Hipercalemia grave e necessidade de remover potássio"
+    },
+    {
+      "title": "Caso 7 — Oligúria de oito horas não é estágio 3"
+    },
+    {
+      "title": "Caso 8 — Acidemia grave, bicarbonato e desfecho que não mudou"
+    },
+    {
+      "title": "18. Questões de residência com correção integral"
+    },
+    {
+      "title": "Questão 1 — Aumento absoluto versus relativo"
+    },
+    {
+      "title": "Questão 2 — Estágio máximo"
+    },
+    {
+      "title": "Questão 3 — Obstrução e urgência"
+    },
+    {
+      "title": "Questão 4 — FENa"
+    },
+    {
+      "title": "Questão 5 — Diurese e tempo"
+    },
+    {
+      "title": "Questão 6 — Diálise e creatinina"
+    },
+    {
+      "title": "Questão 7 — Bicarbonato e acidemia grave"
+    },
+    {
+      "title": "Questão 8 — Contraste iodado na emergência"
+    },
+    {
+      "title": "Questão 9 — Congestão cardiorrenal"
+    },
+    {
+      "title": "Questão 10 — Seguimento pós-LRA"
+    },
+    {
+      "title": "19. Fluxogramas de bolso e visão de revisão"
+    },
+    {
+      "title": "19.1. Suspeita de LRA → sequência operacional"
+    },
+    {
+      "title": "19.2. Oito sinais para chamar equipe especializada cedo"
+    },
+    {
+      "title": "19.3. Cinco erros que mais prejudicam a assistência"
+    },
+    {
+      "title": "19.4. Relação com as demais apostilas"
+    },
+    {
+      "title": "20. Camada visual — dez candidatos reais + peças autorais, NÃO aprovados"
+    },
+    {
+      "title": "21. Referências médicas — base identificada e uso contextual"
+    },
+    {
+      "title": "22. Auditoria editorial provisória — o que ainda impede classificação premium?"
+    }
+  ],
+  "reference_entries": [
+    "1. **SBN.** Younes-Ibrahim M et al. *Guia de assistência nefrológica hospitalar da Sociedade Brasileira de Nefrologia (SBN)*. *Braz J Nephrol*. 2025;47(3):513–527. DOI: 10.1590/2175-8239-JBN-2024-0239pt. https://www.bjnephrology.org/article/guia-de-assistencia-nefrologica-hospitalar-da-sociedade-brasileira-denefrologia-sbn/. Aplicação: suporte hospitalar, TRS e seguimento.",
+    "2. **SBN.** *Injúria renal aguda e métodos de suporte renal: padronização da nomenclatura*. *J Bras Nefrol*, 2022. https://www.scielo.br/j/jbn/a/wrBHQvvhjZZbvVCh4LNx6zn/?lang=pt. Aplicação: terminologia em língua portuguesa.",
+    "3. **KDIGO.** *Clinical Practice Guideline for Acute Kidney Injury*. *Kidney Int Suppl*. 2012;2:1–138. Resumo de critérios e estadiamento: https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/. Aplicação: diagnóstico, estágios e seguimento.",
+    "4. **KDIGO.** *Acute Kidney Injury and Acute Kidney Disease — guideline update*. https://kdigo.org/guidelines/acute-kidney-injury/. Consultada em 15/10/2026; **atualização 2026 ainda em preparação para publicação**, não citar como texto final.",
+    "5. **NICE.** *Acute kidney injury: prevention, detection and management. NG148*. Publicada em 2019, atualizada em 16/10/2024. https://www.nice.org.uk/guidance/ng148/chapter/Recommendations. Aplicação: avaliação, imagem, fármacos, TRS, transição.",
+    "6. **UKKA.** *Management of Hyperkalaemia in Adults*, revisão 2023. https://guidelines.ukkidney.org/hyperkalaemia/. Aplicação: mecanismos e segurança na hipercalemia do adulto; doses requerem validação local.",
+    "7. **STARRT-AKI Investigators.** *Timing of Initiation of Renal-Replacement Therapy in Acute Kidney Injury*. *N Engl J Med*. 2020;383:240–251. DOI: 10.1056/NEJMoa2000741. Aplicação: evitar TRS acelerada automática na ausência de emergência.",
+    "8. **Jung B et al.** *Sodium Bicarbonate for Severe Metabolic Acidemia and Acute Kidney Injury: The BICARICU-2 Randomized Clinical Trial*. *JAMA*. 2025;334:2000–2010. DOI: 10.1001/jama.2025.20231. Aplicação: mortalidade vs utilização de TRS em acidemia grave.",
+    "9. **SBP e SBN.** Documentos específicos de nefropediatria, insuficiência renal e microangiopatias deverão ser incorporados após curadoria científica e conferência da versão aplicável. Esta entrada **não** equivale a referência verificada e não autoriza formulações pediátricas específicas.",
+    "10. **Material de referência do usuário no Drive:** “02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”, identificado e lido como inventário, com direitos de reprodução não confirmados. **Não reproduzido**.",
+    "- [x] Inventário de material existente e controle contra duplicação com 111.",
+    "- [x] Definição, estágios KDIGO com casos e exercícios de diurese.",
+    "- [x] Fisiopatologia pré/intra/pós-renal, glomérulo e túbulo.",
+    "- [x] Diagnóstico, EAS, índices urinários com limitações, imagem de obstrução.",
+    "- [x] Manejo não dialítico, nefrotoxinas, hipercalemia, acidose e TRS.",
+    "- [x] Ênfase em referências da SBN e distinção de KDIGO 2026 em elaboração.",
+    "- [x] Oito casos e dez questões com cinco alternativas e correção.",
+    "- [x] Dez candidatos visuais identificados, **nenhum licenciado nem incorporado**.",
+    "- [ ] Revisão por nefrologista e farmacêutico quanto às recomendações e indicações locais.",
+    "- [ ] Ampliação de detalhes farmacológicos validados para uso específico nas calculadoras/bulário LURIA, sem transformar material didático em prescrição automática.",
+    "- [ ] Checagem de consistência de prazos pediátricos com NICE e critérios KDIGO, variações de forma entre recomendações.",
+    "- [ ] Diagramas/imagens autorais e curadoria de direitos para exames de terceiros.",
+    "- [ ] Revisão editorial de exemplos, redundâncias, precisão em estimativas e facilidade de leitura.",
+    "- [ ] Adaptação ao renderer de apostilas do site, PWA, contraste e acessibilidade.",
+    "- [ ] Aprovação clínica, publicação e eventual merge — **não executados**.",
+    "**STATUS: RASCUNHO AVANÇADO DE TRABALHO; NÃO PUBLICADO; NÃO CERTIFICADO PARA PRESCRIÇÃO.**"
+  ],
+  "external_urls": [
+    "https://www.scielo.br/j/jbn/a/wrBHQvvhjZZbvVCh4LNx6zn/?lang=pt.",
+    "https://kdigo.org/guidelines/acute-kidney-injury/.",
+    "https://www.nice.org.uk/guidance/ng148/chapter/Recommendations.",
+    "https://nephsim.com/urine-gallery/",
+    "https://www.aafp.org/pubs/afp/issues/2020/0301/p275.html",
+    "https://www.melbourneus.com/how-to-scan-the-kidneys/",
+    "https://www.radiology.expert/nl/modules/echo-abdomen/echo-pathologie-urinewegen/",
+    "https://www.ultrasound-images.com/ureteric-calculi/",
+    "https://www.grepmed.com/images/5775/clinical-granular-nephrology-casts-sediment",
+    "https://laboatlas.com/sedimento-urinario/cilindros/",
+    "https://amjmed.org/illusion-suspicion-and-obstruction-an-intriguing-case-of-acute-kidney-injury/",
+    "https://www.researchgate.net/figure/Renal-ultrasound-of-bladder-outlet-obstruction_fig1_273448687",
+    "https://ddoublebbokdeongi.tistory.com/entry/Urine%EC%9A%94%EA%B2%80%AC%EC%82%AC-%EC%9A%94%EC%B9%A8%EC%82%AC-%ED%98%84%EB%AF%B8%EA%B2%BD%EA%B2%80%ACMicro-Analysis%EC%B4%9D%EC%A0%95%EB%A6%AC-1",
+    "https://www.bjnephrology.org/article/guia-de-assistencia-nefrologica-hospitalar-da-sociedade-brasileira-denefrologia-sbn/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/.",
+    "https://guidelines.ukkidney.org/hyperkalaemia/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Hierarquia científica em 15/10/2026:** 1. SBN, *Guia de assistência nefrológica hospitalar*, Braz J Nephrol 2025;47(3):513–527, DOI 10.1590/2175-8239-JBN-2024-0239pt — referência brasileira prioritária para rede hospitalar, suporte renal e seguimento. 2. KDIGO AKI 2012 — base dos critérios diagnósticos/estágios consolidados. A **KDIGO AKI/AKD 2026 estava em preparação para publicação final após consulta pública**, não deve ser apresentada como guideline final já publicado. https://kdigo.org/guidelines/acute-kidney-injury/. 3. NICE NG148, atualizado em 16/10/2024 — risco, diagnóstico, obstrução, nefrotoxicidade, indicação de suporte renal. h"
+    },
+    {
+      "text": "Imagine uma mulher de 72 anos com vômitos, febre, diabetes e uso habitual de losartana, diurético e anti-inflamatório. Chega ao pronto-socorro com creatinina de 1,5 mg/dL. Esse valor isolado pode ser interpretado como “aumentou pouco” ou “ela deve ter função renal reduzida crônica”. O prontuário mostra creatinina de 0,75 mg/dL há três semanas. Agora há **duplicação** do valor basal, possível LRA estágio 2, e o raciocínio clínico muda: é preciso avaliar circulação, sepse, drogas, potássio, diurese, urina e possíveis obstruções, além de evitar exposições que agravem o quadro."
+    },
+    {
+      "text": "1. Aumento da creatinina sérica **≥0,3 mg/dL em 48 horas**; ou 2. Aumento da creatinina **≥1,5 vez em relação ao valor basal**, conhecido ou presumido como ocorrido nos **sete dias anteriores**; ou 3. Débito urinário **<0,5 mL/kg/h por seis horas**."
+    },
+    {
+      "text": "| Estágio | Creatinina sérica | Diurese | |---|---|---| | **1** | 1,5–1,9 × basal **ou** aumento ≥0,3 mg/dL | <0,5 mL/kg/h por 6–12 h | | **2** | 2,0–2,9 × basal | <0,5 mL/kg/h por ≥12 h | | **3** | ≥3 × basal **ou** creatinina que sobe para ≥4,0 mg/dL **ou** início de TRS; em menores de 18 anos, também redução de eTFG para <35 mL/min/1,73 m² | <0,3 mL/kg/h por ≥24 h **ou** anúria por ≥12 h |"
+    },
+    {
+      "text": "**Exemplo A:** creatinina basal 0,8 mg/dL, atual 1,1 mg/dL após 24 h. Aumento de 0,3 mg/dL → LRA **estágio 1** por critério absoluto, mesmo sendo 1,375 vez o basal."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

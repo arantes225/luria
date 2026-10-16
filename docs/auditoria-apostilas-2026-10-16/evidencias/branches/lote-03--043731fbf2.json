@@ -1,0 +1,123 @@
+{
+  "sha": "043731fbf2c2e3e7a8423cc7624f2ce8afd6259a",
+  "path": "apostilas/_rascunhos/lote-03/57-trauma-toracico.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--043731fbf2",
+  "title": "LURIA — AULA 57 | TRAUMA TORÁCICO: DO PRIMEIRO MINUTO AO TRATAMENTO DEFINITIVO",
+  "format": ".md",
+  "chars_estimated": 19839,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — AULA 57 | TRAUMA TORÁCICO: DO PRIMEIRO MINUTO AO TRATAMENTO DEFINITIVO"
+    },
+    {
+      "title": "Etapa zero — inventário, materiais realmente lidos e limites"
+    },
+    {
+      "title": "1. Por que tórax é território crítico?"
+    },
+    {
+      "title": "2. Avaliação inicial xABCDE orientada ao tórax"
+    },
+    {
+      "title": "3. Pneumotórax hipertensivo"
+    },
+    {
+      "title": "4. Pneumotórax aberto"
+    },
+    {
+      "title": "5. Pneumotórax simples ou oculto"
+    },
+    {
+      "title": "6. Hemotórax — reconhecer hemorragia oculta em cavidade pleural"
+    },
+    {
+      "title": "7. Tamponamento cardíaco traumático"
+    },
+    {
+      "title": "8. Contusão pulmonar e tórax instável"
+    },
+    {
+      "title": "9. Fraturas costais e esterno: interpretar local, número e idade"
+    },
+    {
+      "title": "10. Lesão cardíaca contusa, grandes vasos e diafragma"
+    },
+    {
+      "title": "11. Lesões de via aérea central e esôfago"
+    },
+    {
+      "title": "12. Radiologia e eFAST aplicados à decisão"
+    },
+    {
+      "title": "13. Algoritmo — principais decisões"
+    },
+    {
+      "title": "14. Quatro casos comentados"
+    },
+    {
+      "title": "Caso 1 — Pneumotórax hipertensivo após ventilação"
+    },
+    {
+      "title": "Caso 2 — Hemotórax pequeno em paciente estável"
+    },
+    {
+      "title": "Caso 3 — Choque, macicez e perda pleural importante"
+    },
+    {
+      "title": "Caso 4 — Dispneia tardia após dor costal"
+    },
+    {
+      "title": "15. Seis questões originais comentadas"
+    },
+    {
+      "title": "16. Banco de imagens candidatas — não aprovadas"
+    },
+    {
+      "title": "Referências utilizadas"
+    },
+    {
+      "title": "Pendências de homologação"
+    }
+  ],
+  "reference_entries": [
+    "1. WSES-AAST. Thoracic trauma guidelines, 2025. https://link.springer.com/article/10.1186/s13017-025-00651-1",
+    "2. American College of Surgeons. ATLS 11, 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "3. ACS. ATLS 11 launch notice. https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/"
+  ],
+  "external_urls": [
+    "https://link.springer.com/article/10.1186/s13017-025-00651-1",
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "As lesões podem coexistir. Um paciente com múltiplas costelas fraturadas pode apresentar simultaneamente contusão pulmonar e pneumotórax oculto; não parar a avaliação depois do primeiro diagnóstico."
+    },
+    {
+      "text": "**Diagnóstico prioritariamente clínico no instável.** Não aguardar radiografia para realizar descompressão emergencial quando suspeita é forte. O procedimento é realizado por equipe treinada, seguido de drenagem definitiva quando indicada, vigilância de recorrência, monitorização e reavaliação de outras fontes de choque. A localização e abordagem específicas dependem do protocolo atualizado, habitus e experiência; descrição textual não substitui treinamento."
+    },
+    {
+      "text": "**Tórax instável (flail chest)** ocorre quando múltiplos arcos são fraturados em mais de um ponto criando segmento dessolidarizado; movimento paradoxal pode aparecer, mas dor, contusão e falência ventilatória muitas vezes determinam gravidade. Controle multimodal da dor permite tossir, expandir pulmão e reduzir atelectasias. **Estabilização cirúrgica de fraturas costais** tem indicações seletivas, como tórax instável em pacientes apropriados; a WSES-AAST recomenda considerar estabilização especialmente em pacientes hemodinamicamente estáveis com lesões específicas. Não ensinar “fixação sempre proibida” ou “fixação sempre obrigatória”."
+    },
+    {
+      "text": "**Q2.** TC mostra pneumotórax de 1,5 cm em paciente adulto estável sem sintomas expressivos. WSES-AAST 2025: A) exige toracotomia; B) exige drenagem universal; C) permite observação selecionada por pelo menos 24 h; D) recomenda ignorar o achado. **Gabarito C.** A/B exageram; C exige seleção e vigilância; D omite seguimento. **Revisão:** pneumotórax pequeno ≠ hipertensivo."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

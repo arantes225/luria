@@ -1,0 +1,114 @@
+{
+  "sha": "f108e1274697e0efaa193f12f7c55bdf7cc3eedc",
+  "path": "apostilas/hipertensao-arterial-sistemica/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "hipertensao-arterial-sistemica--f108e12746",
+  "title": "Hipertensão Arterial Sistêmica",
+  "format": ".json",
+  "chars_estimated": 85230,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "panorama",
+      "title": "Hipertensão Arterial Sistêmica — manual clínico LURIA"
+    },
+    {
+      "id": "fisiologia",
+      "title": "1. Fisiologia da pressão arterial e origem da hipertensão"
+    },
+    {
+      "id": "tecnica",
+      "title": "2. Como medir a pressão de forma válida"
+    },
+    {
+      "id": "estratificacao",
+      "title": "3. Avaliação global do risco cardiovascular e dano orgânico"
+    },
+    {
+      "id": "causas",
+      "title": "4. Hipertensão primária e secundária: quando buscar etiologia"
+    },
+    {
+      "id": "naofarmacologico",
+      "title": "5. Intervenções não farmacológicas: mecanismo e adesão"
+    },
+    {
+      "id": "farmacos",
+      "title": "6. Escolha de medicamentos e combinações"
+    },
+    {
+      "id": "crise",
+      "title": "7. Pressão muito elevada: urgência e emergência hipertensiva"
+    },
+    {
+      "id": "especiais",
+      "title": "8. HAS em populações especiais"
+    },
+    {
+      "id": "mapa-mrpa-metas-resistencia-2026",
+      "title": "Aprofundamento 2026 — MAPA, MRPA e decisão terapêutica pela diretriz brasileira de 2025"
+    },
+    {
+      "id": "casos",
+      "title": "9. Cinco casos clínicos integradores"
+    },
+    {
+      "id": "questoes",
+      "title": "10. Questões autorais com justificativa de alternativas"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências rastreáveis e lacunas"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências rastreáveis e lacunas\"]",
+    "[\"o\",[\"<a href=\\\"https://www.scielo.br/j/abc/a/BXT7Vk4B9VKQnJFsJhgJ4Hn/?lang=pt\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Brandão AA et al. Diretriz Brasileira de Hipertensão Arterial — 2025, Arq Bras Cardiol. 122(9):e20250624.</a>\",\"<a href=\\\"https://www.portal.cardiol.br/entidades/dha\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">SBC — Departamento de Hipertensão Arterial, diretriz brasileira de 2025.</a>\",\"<a href=\\\"https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">AHA/ACC et al. High ",
+    "[\"p\",\"<strong>Estado editorial após aprofundamento:</strong> a apostila agora aborda classificação brasileira de 2025, técnica, MAPA/MRPA, risco, tratamentos com faixas de dose, emergência hipertensiva, hipertensão secundária e cenários especiais. Ainda exige revisão médica independente de toda farmacologia e dos algoritmos, conferência de bibliografia e requisitos regulatórios, seleção de imagens clínicas com licença e aprovação centralizada no Admin, checagem de coesão e redundâncias e validação visual desktop/PWA. A metragem de texto aparente não substitui o gate de autossuficiência; não pu"
+  ],
+  "external_urls": [
+    "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+    "https://www.scielo.br/j/abc/a/BXT7Vk4B9VKQnJFsJhgJ4Hn/?format=html&lang=pt.",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2025.05.007.",
+    "https://www.scielo.br/j/abc/a/BXT7Vk4B9VKQnJFsJhgJ4Hn/?lang=pt",
+    "https://www.portal.cardiol.br/entidades/dha",
+    "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "panorama",
+      "text": "<strong>Fundamento editorial:</strong> usar prioritariamente a Diretriz Brasileira de Hipertensão Arterial de 2025 (SBC/SBH/SBN) para consulta e provas brasileiras, explicando separadamente a terminologia da AHA/ACC 2025. No Brasil, o diagnóstico tradicional de HAS pelo consultório permanece com PA ≥140 mmHg sistólica e/ou ≥90 mmHg diastólica em medidas repetidas adequadas, usualmente em pelo menos duas ocasiões. A AHA/ACC 2025 chama de hipertensão estágio 1 a PA de 130–139/80–89 mmHg. Esse contraste deve constar das questões, evitando que o aluno misture tabelas de diretrizes."
+    },
+    {
+      "section": "panorama",
+      "text": "As tabelas usam a categoria mais elevada entre PAS e PAD. Para aferições em idosos, gestantes, crianças e certos contextos de emergência aplicam-se considerações adicionais. Não confundir o ponto de corte diagnóstico com a meta terapêutica: um paciente diagnosticado com HAS e tratado até 128/78 mmHg continua tendo o diagnóstico de hipertensão."
+    },
+    {
+      "section": "tecnica",
+      "text": "A diretriz brasileira descreve confirmação da HAS em consultório com medidas ≥140/90 mmHg em pelo menos duas ocasiões separadas por dias ou semanas, exceto cenários de PA muito elevada, lesão de órgãos-alvo evidente ou necessidade de intervenção urgente. Sempre que disponível, MAPA ou MRPA auxilia a reconhecer fenótipos e estimar carga pressórica fora do consultório. Uma aferição extremamente elevada com sinais de emergência exige agir conforme gravidade, e não aguardar série ambulatorial."
+    },
+    {
+      "section": "tecnica",
+      "text": "A MAPA registra pressões ao longo de um dia usual, incluindo período de sono e variabilidade circadiana; pode revelar elevação noturna ou ausência de descenso. A MRPA envolve aferições repetidas em domicílio com protocolo padronizado, dias e horários definidos; não é sinônimo de mostrar duas fotos de um visor doméstico. Os pontos de corte dependem de técnica, período e documento de referência. No material final, reproduzir apenas tabelas da diretriz brasileira vigente conferidas linha a linha e distinguir limiares de MAPA 24h, vigília, sono e MRPA. Evitar aplicar automaticamente ≥140/90 mmHg de consultório a toda modalidade."
+    },
+    {
+      "section": "estratificacao",
+      "text": "A avaliação inicial combina fatores de risco modificáveis e não modificáveis, comorbidades e evidências de lesão de órgãos-alvo. Analisar idade, história familiar, tabagismo, colesterol, diabetes, adiposidade central, doença renal, eventos cardiovasculares prévios, apneia do sono e uso de fármacos que elevam pressão. A diretriz brasileira 2025 propõe estratificação de risco e utiliza equações PREVENT em contextos adequados. O risco calculado deve ser discutido como estimativa, nunca como diagnóstico ou autorização para ignorar hipertensão grave."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}
