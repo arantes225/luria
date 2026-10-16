@@ -466,3 +466,135 @@ Cafeína e estimulantes podem exacerbar sintomas autonômicos; álcool e benzodi
 
 **Idosos:** ansiedade de início tardio exige investigação de doença clínica, medicamentos, delirium e transtorno neurocognitivo. Sedativos elevam risco de quedas, cognição prejudicada e interações. **Adolescentes/crianças:** adaptar entrevista, linguagem, escola, família, bullying, TEA/TDAH, transtornos de aprendizagem e segurança; **não aplicar doses e recomendações adultas automaticamente**, em especial fármacos para TEPT infantil.
 
+
+
+## 14. Nove casos clínicos autorais — raciocínio, diagnóstico e conduta
+
+### Caso 1 — “Meu coração está disparado”: primeiro episódio de pânico no pronto-socorro
+
+**Apresentação:** mulher de 37 anos, sem diagnóstico psiquiátrico, chega ao pronto atendimento com palpitações, falta de ar, dor torácica e medo de morrer, iniciados subitamente há 25 minutos. Ela está chorosa e hiperventila. Usa contraceptivo hormonal e fez viagem prolongada recentemente; uma colega diz que “isso é ansiedade, sempre acontece com gente estressada”.
+
+**Achados relevantes:** taquicardia e desconforto respiratório; sinais vitais completos e saturação ainda não foram aferidos; sem ECG. Sua queixa é um primeiro episódio, com fatores que pedem avaliação de doença clínica.
+
+**Hipótese inicial:** síndrome de sintomas torácico-respiratórios agudos; **pânico é possibilidade, não diagnóstico definitivo**. Considerar arritmia, SCA e tromboembolismo pulmonar conforme probabilidade clínica; outras causas incluem asma, hipoglicemia, efeitos de substâncias.
+
+**Raciocínio passo a passo:** (1) começo súbito e medo catastrófico são compatíveis com ataque de pânico; (2) sintomas são inespecíficos e podem ocorrer em doenças potencialmente graves; (3) fatores e exame ainda incompletos impedem alta; (4) uma crise isolada não confirma **transtorno de pânico**, que exige recorrência inesperada e medo/mudança de comportamento persistente; (5) só após estratificar risco médico faz sentido trabalhar explicação psicofisiológica da crise.
+
+**Exames complementares:** sinais vitais, saturação, ECG, glicemia quando indicada; investigação de TEP/SCA baseada em história/exame e protocolos, sem exames de rastreio universal para todo ataque em pessoa estável. Não interpretar hiperventilação como prova de causa psíquica.
+
+**Conduta:** acolher, avaliação imediata de sinais de alarme, estabilização clínica se necessário. Se causas emergenciais forem adequadamente afastadas, explicar possibilidade de ataque de pânico, oferecer orientações, organizar seguimento e avaliação longitudinal. Não realizar respiração em saco de papel.
+
+**Por que este caso importa:** ensina o erro mais perigoso: **rotular dor torácica como ansiedade antes de triagem clínica**.
+
+### Caso 2 — Preocupação com tudo, todos os dias
+
+**Apresentação:** homem de 32 anos relata preocupação permanente com trabalho, dívidas, saúde dos pais e desempenho dos filhos por mais de um ano. Sente tensão cervical, cansaço, dificuldade de concentração, irritabilidade e insônia. Mesmo após resolver uma conta, passa horas pensando no próximo problema. Mantém trabalho, mas passa o tempo conferindo mensagens e antecipando catástrofes.
+
+**Hipótese:** transtorno de ansiedade generalizada (TAG), a confirmar com critérios, comorbidades e diagnóstico diferencial. Avaliar gravidade funcional e contexto socioeconômico concreto.
+
+**Raciocínio:** (1) múltiplos domínios de preocupação; (2) difícil controle; (3) duração compatível com DSM ≥6 meses; (4) sintomas associados e prejuízo; (5) diferenciar medo proporcional por insegurança financeira real de componente persistente/disfuncional e considerar depressão, tireoide, substâncias/cafeína e bipolaridade.
+
+**Exames:** EEM e avaliação clínica, GAD-7 como monitorização opcional, testes dirigidos por história/sinais; TSH se suspeita clínica, não painel laboratorial indiscriminado.
+
+**Conduta:** decisão compartilhada sobre TCC, intervenções estruturadas de baixa intensidade se apropriadas, manejo de sono/estressores, ISRS quando indicado e preferido, plano de retorno e avaliação de segurança/comorbidades. Evitar prescrever benzodiazepínico crônico como solução única.
+
+**Por que importa:** TAG não é soma de crises de pânico; o núcleo é **preocupação difusa e persistente**, que não desaparece só porque um estressor foi resolvido.
+
+### Caso 3 — Ataques inesperados com medo do próximo ataque
+
+**Apresentação:** mulher de 24 anos teve quatro crises inesperadas de taquicardia, falta de ar, parestesias e medo intenso de morrer ao longo de dois meses. Após avaliação médica inicial adequada, sem sinais clínicos de doença aguda, passou a monitorar constantemente frequência cardíaca, evitando academia por medo de acelerar o pulso. Não teme avaliação social; teme o **retorno das sensações**.
+
+**Hipótese:** transtorno de pânico sem agorafobia definida na história, com evitação interoceptiva.
+
+**Raciocínio:** (1) ataques repetidos inesperados; (2) persistência por mais de um mês de preocupação/mudança comportamental; (3) interpretação catastrófica do batimento cardíaco perpetua medo; (4) diferenciar início de agorafobia e comorbidade depressiva; (5) não repetir exames cardiológicos sem indicação, mas reavaliar se surgir novo sinal.
+
+**Exames:** revisão de exames clínicos prévios, EEM, substâncias/cafeína e história familiar; novos exames apenas com red flags.
+
+**Conduta:** TCC com psicoeducação e exposição interoceptiva supervisionada, ISRS/IRSN se indicado, monitorar recuperação de capacidade de se exercitar e qualidade de vida. Evitar benzodiazepínico como tratamento crônico.
+
+**Por que importa:** controlar somente o número de crises não basta quando o medo das sensações mantém incapacidade.
+
+### Caso 4 — Medo de apresentar seminário e medo de ser humilhada
+
+**Apresentação:** estudante de 19 anos consegue conversar com amigas, mas evita seminários, refeições com colegas desconhecidos e entrevistas. Descreve medo de gaguejar, ficar vermelha e ser julgada “incompetente”. Fica dias imaginando comentários dos outros e repassa mentalmente cada frase pronunciada.
+
+**Hipótese:** transtorno de ansiedade social, com extensão para situações de desempenho e interação; avaliar duração, prejuízo e diferencial com timidez não patológica.
+
+**Raciocínio:** (1) ameaça principal é **avaliação negativa**; (2) antecipação/ruminação pós-evento e comportamentos de segurança; (3) prejuízo educacional; (4) no pânico, foco seria medo das sensações ou do novo ataque, não necessariamente de julgamento; (5) investigar bullying, TEA, depressão e suporte escolar sem patologizar diferenças culturais.
+
+**Exames:** entrevista focada, história longitudinal e escala SPIN/LSAS se disponível e interpretável, sem exigir exame laboratorial.
+
+**Conduta:** oferecer TCC individual específica, com experimentos comportamentais e exposição gradual; se optar por farmacoterapia após discussão, considerar ISRS de acordo com diretriz, bula e monitorização. Envolver rede universitária/educacional com consentimento.
+
+**Por que importa:** o alvo terapêutico é **mudar relação com avaliação negativa**, não simplesmente sedar manifestações vegetativas.
+
+### Caso 5 — “Se não conferir dez vezes, alguém vai se machucar”
+
+**Apresentação:** homem de 29 anos leva duas horas toda manhã verificando fechaduras, fogão e tomadas. Embora reconheça excesso, sente angústia e uma imagem involuntária de que pode ser responsável por acidente. Pergunta repetidamente à parceira se a casa ficou segura. Chega atrasado ao trabalho, que já ameaça demiti-lo.
+
+**Hipótese:** TOC com dimensão de responsabilidade e compulsões de verificação, com acomodação familiar.
+
+**Raciocínio:** (1) pensamentos repetitivos intrusivos de dano; (2) atos para reduzir angústia/prevenir ameaça; (3) tempo e prejuízo claros; (4) insight razoável não é exigência absoluta de TOC, mas está presente; (5) a parceira pode aliviar momentaneamente ansiedade ao reassegurar, reforçando ciclo.
+
+**Exames:** entrevista para rituais mentais, Y-BOCS como linha de base, avaliação de depressão/segurança, uso de substâncias; sem exame de imagem para “confirmar TOC”.
+
+**Conduta:** TCC com **EPR**, graduação de verificações e prevenção de rituais/reasseguramento de modo colaborativo, envolver parceira conforme desejo e consentimento. Considerar ISRS se interferência moderada/grave ou preferência, avaliando resposta em tempo suficiente.
+
+**Por que importa:** o problema principal não é “hábito de ser organizado”, mas **ciclo de intrusão, compulsão e prejuízo**.
+
+### Caso 6 — Pensamentos intrusivos que a pessoa tem vergonha de contar
+
+**Apresentação:** pessoa de 27 anos relata pensamentos intrusivos e indesejados de conteúdo agressivo, profundamente contrários aos seus valores. Sente medo do significado dos pensamentos, evita alguns lugares e realiza rituais silenciosos para neutralizar. Nunca desejou agir de acordo com eles e procura ajuda justamente por angústia. Foi considerada “perigosa” por alguém que ouviu apenas a temática das intrusões.
+
+**Hipótese:** suspeita de TOC com obsessões tabu/compulsões mentais; realizar **avaliação individualizada da segurança**, sem interpretar tema como intenção automática.
+
+**Raciocínio:** (1) intrusão ego-distônica e sofrimento; (2) compulsões podem ser mentais; (3) avaliação distingue medo de pensamentos de desejo/intenção, sem eliminar pergunta de segurança; (4) vergonha atrasa diagnóstico, aumenta isolamento e depressão; (5) comparar com psicose/obsessões de insight pobre, sempre conforme fenomenologia.
+
+**Exames:** EEM com perguntas abertas, história de evolução, avaliação de risco atual e comorbidades, Y-BOCS se pertinente.
+
+**Conduta:** abordagem não julgadora, explicar mecanismo de intrusão/neutralização e oferecer TCC especializada com prevenção de resposta mental; considerar farmacoterapia por gravidade e escolha clínica. Não forçar exposição potencialmente perigosa nem estigmatizar.
+
+**Por que importa:** **conteúdo intrusivo não é sinônimo de intenção**; escuta precisa protege contra erro diagnóstico e sofrimento adicional.
+
+### Caso 7 — Insônia após assalto, há duas semanas
+
+**Apresentação:** mulher de 38 anos sofreu assalto violento há 14 dias e desde então dorme mal, tem lembranças involuntárias e evita o local. Recebe apoio familiar, mantém alimentação e procura orientação. Apresenta desconforto significativo, mas ainda é possível organizar atividades essenciais; nega perigo atual. Pede remédio “para não ter TEPT depois”.
+
+**Hipótese:** resposta aguda a trauma, com necessidade de avaliar critérios de **transtorno de estresse agudo**, sintomas clinicamente relevantes e acompanhamento; **TEPT DSM ainda não se confirma** apenas com duas semanas.
+
+**Raciocínio:** (1) há exposição potencialmente traumática; (2) sintomas ocorrem na janela inicial; (3) TEPT DSM requer duração >1 mês; (4) muitos apresentam recuperação espontânea, mas sintomas importantes podem se beneficiar de intervenção precoce; (5) medicamento profilático para impedir TEPT não tem indicação rotineira conforme NICE.
+
+**Exames:** entrevista com consentimento, suporte/segurança e comorbidades, avaliar lesão/violência em curso, sem forçar narrativa exaustiva.
+
+**Conduta:** primeiros cuidados psicológicos, suporte prático e monitorização ativa; oferecer/encaminhar para TCC focada no trauma se quadro de estresse agudo/sofrimento clínico relevante, conforme disponibilidade. **Não prescrever benzodiazepínico preventivo para TEPT.**
+
+**Por que importa:** **não confundir cuidado precoce com diagnóstico prematuro ou sedação preventiva**.
+
+### Caso 8 — Flashbacks, pesadelos e evitação após violência
+
+**Apresentação:** homem de 41 anos sofreu violência grave há oito meses. Tem imagens involuntárias do evento, pesadelos, sensação de que o episódio “está acontecendo de novo” ao ouvir sons semelhantes, evita locais associados, fica hipervigilante, reage a ruídos e está afastado do trabalho. Exame não sugere delirium, intoxicação ou psicose primária; há sofrimento e prejuízo persistentes.
+
+**Hipótese:** TEPT, a confirmar por história de trauma, grupos sintomáticos, duração e exclusões. Investigar depressão, substâncias e segurança.
+
+**Raciocínio:** (1) evento compatível; (2) intrusão e revivescência; (3) evitação; (4) alterações de ameaça e cognição/humor; (5) persistência >1 mês e prejuízo; (6) diferenciar TEPT DSM de CID-11/TEPT complexo; (7) decidir terapia focada no trauma conforme preferência e contexto.
+
+**Exames:** entrevista psicossocial sensível, PCL-5 como monitorização se apropriado, avaliação de comorbidades e rede; imagem cerebral não confirma TEPT.
+
+**Conduta:** oferecer TCC focada no trauma por terapeuta habilitado (exposição prolongada, terapia de processamento cognitivo etc.) ou EMDR conforme preferência/indicação/serviço; considerar ISRS/IRSN se preferir medicação ou sem acesso a terapia, com revisão; plano de segurança e retorno funcional.
+
+**Por que importa:** **TEPT exige síndrome após trauma, não apenas história de evento traumático**.
+
+### Caso 9 — Pesadelos persistentes no TEPT e solicitação de sedativo
+
+**Apresentação:** mulher de 50 anos diagnosticada com TEPT após violência interpessoal, em psicoterapia estruturada, relata pesadelos recorrentes que prejudicam sono e funcionamento. Já usa álcool à noite para tentar adormecer e pede benzodiazepínico fixo. A PA habitual é baixa e tem episódios de tontura ao levantar.
+
+**Hipótese:** TEPT com sintoma noturno persistente e uso de álcool como estratégia potencialmente prejudicial; avaliar insônia de outras causas e risco de queda.
+
+**Raciocínio:** (1) benzodiazepínico não é recomendação para tratamento do TEPT e pode piorar dependência/queda, especialmente associado a álcool; (2) terapia focada no trauma permanece central; (3) VA/DoD 2023 sugere **prazosina para pesadelos associados**, mas não para sintomas globais de TEPT; (4) PA baixa e ortostase são cautelas que podem tornar fármaco inadequado; (5) não prometer cura por medicação.
+
+**Exames:** história de sono e álcool, pressão deitada/em pé quando indicado, medicamentos, apneia e contexto de segurança.
+
+**Conduta:** fortalecer terapia, intervir no consumo de álcool de forma não julgadora, oferecer manejo de sono, discutir com especialista se alguma medicação específica seria adequada com monitorização hemodinâmica; evitar prescrição automática de sedativo.
+
+**Por que importa:** **prazosina para pesadelos ≠ prazosina para TEPT global**, e escolha deve respeitar risco individual.
+
