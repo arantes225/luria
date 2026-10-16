@@ -302,7 +302,7 @@ Os quadros abaixo são uma **síntese didática original** do *Folder de mesa: t
 
 **Exemplo comentado:** criança de cinco anos, 13 kg, TB pulmonar sensível não grave adequadamente classificada. O quadro indica **3 comprimidos dispersíveis RHZ 75/50/150 por dia durante os dois primeiros meses** e, se mantida a elegibilidade/boa resposta, **3 comprimidos RH 75/50 por dia durante dois meses de manutenção**. Isso corresponde, durante a fase intensiva, a R 225 mg/dia, H 150 mg/dia e Z 450 mg/dia em dose fixa combinada; na manutenção, a R 225 mg/dia e H 150 mg/dia. Estes valores derivam da **multiplicação da quantidade oficial de comprimidos pelos componentes da formulação**, e não de arredondamento isolado de mg/kg. Não aplicar essa conta à criança com meningite, resistência, <4 kg ou formulações de outra concentração.
 
-**Exemplo de transição de peso:** criança que inicia a medicação com 11,7 kg (faixa 12–15 = 3 comprimidos) e evolui para 16,2 kg deve ter a dose reavaliada para a faixa 16–24 (4 comprimidos) conforme protocolo, mesmo que ainda esteja em manutenção. Não manter dose inadequada apenas porque a prescrição original foi impressa no início do tratamento.
+**Exemplo de transição de peso:** criança que inicia a medicação com 13,4 kg (faixa 12–15 = 3 comprimidos) e evolui para 16,2 kg deve ter a dose reavaliada para a faixa 16–24 (4 comprimidos) conforme protocolo, mesmo que ainda esteja em manutenção. Não manter dose inadequada apenas porque a prescrição original foi impressa no início do tratamento.
 
 ### 14.2. Crianças menores de dez anos e peso ≥25 kg: doses individualizadas
 
@@ -380,7 +380,7 @@ Na infância, ILTB pode ser altamente relevante porque tratar antes da doença e
 | --- | --- | --- |
 | **3RH** | Rifampicina + isoniazida **diariamente**, **90 doses** em cerca de 3 meses | Crianças **<10 anos**, **4 a <25 kg**, especialmente quando não conseguem deglutir comprimidos comuns e não têm contraindicação |
 | **3HP** | Isoniazida + rifapentina **uma vez por semana**, **12 doses** | Faixas elegíveis com capacidade de deglutir conforme nota nacional; observar HIV/TARV e interações |
-| **4R** | Rifampicina **diária**, **120 doses** | No texto da Nota 6/2024, apresentação em suspensão reservada principalmente aos **<4 kg**, com aplicação também em condições específicas de resistência/intolerância à H segundo avaliação de referência |
+| **4R** | Rifampicina **diária**, **120 doses** | A Nota MS 6/2024 apresenta 4R suspensão como opção rotineira para **<4 kg**, mas no mesmo documento recomenda **4R para RN coabitante de paciente bacilífero** e contempla **contatos com monorresistência à isoniazida**; não misturar indicação geral da apresentação com essas situações específicas |
 | **6H / 9H** | Isoniazida **diária** por 180 ou 270 doses | Alternativas quando esquemas mais curtos não são apropriados; em interações HIV específicas, a nota prefere 9H |
 
 A tabela demonstra que **3HP não é 3RH**: as letras mudam, a rifapentina não é rifampicina e o intervalo semanal não corresponde ao uso diário.
@@ -398,6 +398,8 @@ Na Nota 6/2024, para **crianças menores de dez anos e peso inferior a 25 kg**, 
 
 A **duração programada é de 90 doses diárias, a serem tomadas em intervalo de três a cinco meses**. Na mesma nota, uma criança que retorne após abandono com **pelo menos 72 doses (≥80%)** pode ser considerada com tratamento completo nessa situação particular — isso **não** deve ser apresentado como autorização rotineira para prescrever somente 72 doses. Diante de interrupção, reavaliar possibilidade de TB ativa antes de decidir reinício.
 
+**Exceções programáticas à frase “4R exclusivamente para <4 kg”:** a própria Nota 6/2024 apresenta, em trechos distintos, a prevenção de **recém-nascidos coabitantes de fonte bacilífera** e a alternativa com rifampicina quando o contato é **monorresistente à isoniazida**. A redação da lista geral de regimes não dispensa leitura dos algoritmos de RN e de resistência. Há uma tensão textual interna na fonte; a seleção final de formulação e dose depende do protocolo e da equipe responsável.
+
 **Demonstração de preparo segundo Nota 6/2024:** dissolver os comprimidos prescritos em 50 mL de água potável; quando o volume dificulta deglutição, o documento admite 10 mL mínimos ou orientação médica. Agitar e administrar **todo o conteúdo imediatamente**. Descartar a mistura não utilizada. Orientar administração em jejum e esperar ao menos uma hora até oferecer alimento, com ajustes de viabilidade definidos pela equipe.
 
 ### 17.3. Contato recente: janela imunológica e retestagem
@@ -410,7 +412,7 @@ A PT positiva **≥5 mm** na investigação de infecção não tem o mesmo uso d
 
 O primeiro passo é avaliar risco de **TB congênita/ativa** e status infeccioso materno/domiciliar, observando sinais neonatais e resultados da fonte. Quando o RN **coabita com pessoa bacilífera** e não se constata doença na investigação, a Nota 6/2024 prevê **rifampicina preventiva por quatro meses**, sem PT posterior de rotina naquele fluxo, e BCG após concluir prevenção. Se recebeu BCG antes do reconhecimento da exposição, a nota recomenda ainda a profilaxia e avaliação individual da possível revacinação conforme resposta vacinal.
 
-**Divergência de doses a reconciliar:** a SBP 2026 menciona em uma passagem **rifampicina 10 mg/kg/dia** no RN exposto; na síntese dos esquemas apresenta **15 mg/kg/dia (faixa 10–20 mg/kg/dia)** para suspensão infantil. A Nota 6/2024 orienta 4R na prevenção de <4 kg com essa última referência de faixa de dose. Não converter essas passagens em prescrição neonatal automática sem validação do esquema nacional, da concentração da suspensão, da condição clínica e da disponibilidade atual. O valor final deve ser decidido por serviço habilitado e registro farmacológico auditado.
+**Divergência de doses a reconciliar:** a SBP 2026 menciona em uma passagem **rifampicina 10 mg/kg/dia** no RN exposto; na síntese dos esquemas reproduz da Nota MS 6/2024 **15 mg/kg/dia (faixa 10–20 mg/kg/dia)** para suspensão infantil. A Nota 6/2024 orienta 4R na prevenção de <4 kg com essa última referência de faixa de dose. Não converter essas passagens em prescrição neonatal automática sem validação do esquema nacional, da concentração da suspensão, da condição clínica e da disponibilidade atual. O valor final deve ser decidido por serviço habilitado e registro farmacológico auditado.
 
 ### 17.5. Contato de tuberculose resistente
 
