@@ -1,0 +1,99 @@
+name: Editorial PTB-XL 500Hz ECG Review - NO DEPLOY
+# All test records must remain non-clinical fixtures.
+
+on:
+  push:
+    branches:
+      - editorial/lote-08-inventario-e-producao-20261014
+    paths:
+      - '.github/workflows/editorial-ptbxl-500hz.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  convert-500hz-ecgs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout editorial branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned plotting and test libraries
+        run: |
+          python -m pip install --disable-pip-version-check numpy==2.2.6 matplotlib==3.10.3 Pillow==11.3.0 pytest==8.4.1
+      - name: Unit tests of waveform reading and consistent vertical mV scale
+        run: python -m pytest -q scripts/editorial/tests/test_ptbxl_pipeline.py
+      - name: Download only the 14 verified PTB-XL IDs in original 500 Hz
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          import re
+          import subprocess
+          dest=pathlib.Path('build/editorial-ptbxl-500hz')
+          request=json.loads(pathlib.Path('scripts/editorial/ptbxl-14-ids-review.json').read_text())
+          if len(request)!=14 or len(set(i['ecg_id'] for i in request))!=14:
+              raise SystemExit('Review list must contain 14 different IDs')
+          for item in request:
+              id=item['ecg_id']
+              if not re.fullmatch(r'[0-9]{5}', id):
+                  raise SystemExit('Invalid ECG id')
+              block=f'{int(id)//1000*1000:05d}'
+              base=dest/'dataset'/'records500'/block
+              base.mkdir(parents=True,exist_ok=True)
+              for ext in ('hea','dat'):
+                  name=f'{id}_hr.{ext}'
+                  url=f'https://physionet.org/files/ptb-xl/1.0.3/records500/{block}/{name}'
+                  subprocess.run(['curl','--fail','--location','--silent','--show-error',
+                                  '--retry','3','--retry-delay','2','--max-time','60',
+                                  '--output',str(base/name),url],check=True)
+                  if not (base/name).is_file() or (base/name).stat().st_size == 0:
+                      raise SystemExit('Missing or empty PTB-XL original signal')
+          PY
+      - name: Rebuild 14 real ECG images with shared amplitude scale and 500Hz data
+        run: |
+          python scripts/editorial/render_ptbxl_ecgs.py \
+            --dataset build/editorial-ptbxl-500hz/dataset \
+            --manifest scripts/editorial/ptbxl-14-ids-review.json \
+            --output build/editorial-ptbxl-500hz/REVIEW-ONLY \
+            --resolution 500 --limit-kb 120
+      - name: Verify license provenance and pixel output metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('build/editorial-ptbxl-500hz/REVIEW-ONLY')
+          data=json.loads((root/'manifesto-revisao-imagens-ptbxl.json').read_text())
+          assert len(data)==14
+          assert len(set(x['ecg_id'] for x in data))==14
+          for x in data:
+              assert x['sampling_hz']==500
+              assert x['image']['sampling_hz']==500
+              assert x['image']['uniform_ylim_mv'] >= 2.0
+              assert x['record_header'].find('/records500/')>=0
+              assert x['license']=='https://creativecommons.org/licenses/by/4.0/'
+              assert x['clinical_label_verified'] is False
+              assert x['publication_approved'] is False
+              assert (root/x['file']).is_file()
+              assert (root/x['file']).stat().st_size <= 120 * 1024
+          (root/'LEIA-ME-REVISAR.txt').write_text(
+              'LURIA - PTB-XL v1.0.3. 14 ECGs REAIS a 500 Hz (CC BY 4.0).\n'
+              'Escala vertical em mV igual em todas as 12 derivacoes.\n'
+              'Adaptacao grafica digital nao equivale a papel calibrado.\n'
+              'NENHUM laudo ou imagem aprovado automaticamente. NUNCA PUBLICAR SEM REVISAO.\n'
+              'Wagner P et al. PhysioNet. DOI 10.13026/kfzx-aw45.\n'
+          )
+          print('Verified 14 genuine clinical WFDB signal plots; still unapproved')
+          PY
+      - name: Upload short-lived images for human medical review only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PTBXL-14-ECGs-500Hz-ESCALA-UNIFORME-REVIEW-ONLY
+          path: build/editorial-ptbxl-500hz/REVIEW-ONLY/
+          retention-days: 7
+          if-no-files-found: warn

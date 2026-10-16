@@ -1,0 +1,100 @@
+name: Editorial PTB-XL DII 10s rhythm strips - NO DEPLOY
+
+on:
+  push:
+    branches:
+      - editorial/lote-08-inventario-e-producao-20261014
+    paths:
+      - '.github/workflows/editorial-ptbxl-rhythm-10s.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-10s-continuous-lead-ii:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout editorial code
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install controlled dependencies
+        run: |
+          python -m pip install --disable-pip-version-check numpy==2.2.6 matplotlib==3.10.3 Pillow==11.3.0 pytest==8.4.1
+      - name: Run synthetic software tests, never package synthetic samples
+        run: python -m pytest -q scripts/editorial/tests/test_ptbxl_pipeline.py
+      - name: Download 14 original 500Hz PTB-XL WFDB records
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          import re
+          import subprocess
+          root=pathlib.Path('build/editorial-ptbxl-rhythm-10s')
+          items=json.loads(pathlib.Path('scripts/editorial/ptbxl-14-ids-review.json').read_text())
+          assert len(items)==14 and len(set(x['ecg_id'] for x in items))==14
+          for row in items:
+              key=row['ecg_id']
+              if not re.fullmatch(r'[0-9]{5}', key):
+                  raise SystemExit('ECG identifier outside whitelist format')
+              block=f'{int(key)//1000*1000:05d}'
+              folder=root/'dataset'/'records500'/block
+              folder.mkdir(parents=True,exist_ok=True)
+              for ext in ('hea','dat'):
+                  name=f'{key}_hr.{ext}'
+                  source=f'https://physionet.org/files/ptb-xl/1.0.3/records500/{block}/{name}'
+                  subprocess.run(['curl','--fail','--location','--silent','--show-error',
+                                  '--retry','3','--retry-delay','2','--max-time','60',
+                                  '--output',str(folder/name),source],check=True)
+                  if not (folder/name).is_file() or (folder/name).stat().st_size==0:
+                      raise SystemExit('Missing clinical source binary, fail closed')
+          PY
+      - name: Render 14 real DII traces, 10 seconds at 500Hz
+        run: |
+          python scripts/editorial/render_ptbxl_rhythm_strips.py \
+            --dataset build/editorial-ptbxl-rhythm-10s/dataset \
+            --manifest scripts/editorial/ptbxl-14-ids-review.json \
+            --output build/editorial-ptbxl-rhythm-10s/REVIEW-ONLY \
+            --limit-bytes 120000
+      - name: Validate source attribution, duration, byte size and medical hold
+        run: |
+          python - <<'PY'
+          import json
+          import hashlib
+          from pathlib import Path
+          folder=Path('build/editorial-ptbxl-rhythm-10s/REVIEW-ONLY')
+          records=json.loads((folder/'MANIFESTO-DII-10S-REVIEW.json').read_text())
+          wanted=json.loads(Path('scripts/editorial/ptbxl-14-ids-review.json').read_text())
+          assert len(records)==14
+          assert {x['ecg_id'] for x in records}=={x['ecg_id'] for x in wanted}
+          for item in records:
+              technical=item['technical']
+              photo=folder/item['file']
+              assert photo.is_file()
+              assert technical['bytes']==photo.stat().st_size<=120000
+              assert technical['lead']=='II' and technical['seconds']==10
+              assert technical['samples']==5000 and technical['sampling_hz']==500
+              assert technical['has_full_10s_contiguous_same_lead'] is True
+              assert technical['physical_paper_calibrated'] is False
+              assert technical['digital_grid_minor_seconds']==0.04
+              assert technical['digital_grid_minor_mV']==0.1
+              assert technical['sha256_webp']==hashlib.sha256(photo.read_bytes()).hexdigest()
+              assert '/records500/' in item['source']
+              assert item['license']=='https://creativecommons.org/licenses/by/4.0/'
+              assert item['signal_reviewed_by_independent_cardiologist'] is False
+              assert item['clinical_diagnosis_approved'] is False
+              assert item['image_approved_for_LURIA'] is False
+              assert item['publication_allowed_in_workflow'] is False
+          print('Checked 14 genuine uninterrupted 10s DII strips, NOT clinically certified.')
+          PY
+      - name: Upload review-only ZIP artifact; NEVER deploy to GitHub Pages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: LURIA-PTBXL-DII-10s-500Hz-REVIEW-ONLY
+          path: build/editorial-ptbxl-rhythm-10s/REVIEW-ONLY/
+          retention-days: 7
+          if-no-files-found: warn
