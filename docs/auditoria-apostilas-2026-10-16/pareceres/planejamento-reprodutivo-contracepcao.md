@@ -84,3 +84,7 @@ Anticoncepção (Diamante), aconselhamento, métodos, contraindicações e decis
 Módulos principais: 214 — Anticoncepção; 225 — Anticoncepção.
 
 [Ficha de cobertura do núcleo](../nucleos/119.md).
+
+## Execução das correções estruturais — 16/10/2026
+
+Correção implementada após comparação parcial com resumo correlato do Drive. Ver [registro de execução](../EXECUCAO_CORRECOES.md) e [hashes antes/depois](../correcoes-estrutura-20261016.json). O parecer acima é histórico e descreve o estado anterior. A alteração técnica não representa aprovação científica integral.

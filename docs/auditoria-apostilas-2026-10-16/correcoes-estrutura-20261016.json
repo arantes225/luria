@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-16",
+  "scope": "Correção estrutural; sem alteração de condutas; revisão clínica pendente",
+  "changes": [
+    {
+      "path": "apostilas/ciclo-menstrual-eixo-hho/index.html",
+      "changed": true,
+      "anchors_preserved": true,
+      "images_preserved": true,
+      "source_sha256": "b1b270f73905c87a11df9deb5f7ffaff4267af140bae1222065acfd4131b1a3a",
+      "result_sha256": "d739724d0c3a764624f1bb55f5a8f25c597cb1ab7394bcab85587630f8a8f986"
+    },
+    {
+      "path": "apostilas/cancer-de-mama/index.html",
+      "changed": true,
+      "anchors_preserved": true,
+      "images_preserved": true,
+      "source_sha256": "a462c3aef070fa92d9600fcf14b00fa975bc7dfca56e862f379eac8613a14a9d",
+      "result_sha256": "12c0d3f316f1241f5f5a30f9c2f99184bea082046cb1bb95659bc249300da0bc"
+    },
+    {
+      "path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+      "changed": true,
+      "anchors_preserved": true,
+      "images_preserved": true,
+      "source_sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf",
+      "result_sha256": "fe94407dd907cf9227afa281b72b21f160233b8b7bc1ffa8d0df1586181c9124"
+    }
+  ],
+  "benchmark": {
+    "date": "2026-10-16",
+    "readable_text_examined": true,
+    "visual_pdf_examined": false,
+    "preferred_author_confirmed": false,
+    "searches": [
+      "Ciclo menstrual",
+      "Mastologia",
+      "Anticoncepção",
+      "contracepção",
+      "Estratégia ginecologia"
+    ],
+    "materials": [
+      "fisiologia menstrual.pdf",
+      "MASTOLOGIA.pdf",
+      "Planejamento familiar.pdf"
+    ],
+    "scope": "Resumos parciais com identificação Maysa Mismetti; nenhuma autoria Estratégia MED confirmada. Comparação de tópicos e sequência; nenhuma conduta copiada ou validada a partir dos resumos. Conferência científica integral permanece pendente."
+  },
+  "validation": {
+    "batch_tests_pass": 35,
+    "syntax_blocks": 289,
+    "syntax_errors": 0,
+    "clinical_approval": false,
+    "visual_desktop_pwa": false
+  }
+}

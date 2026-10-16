@@ -93,3 +93,7 @@ UNIFICAR MASTOLOGIA: propedêutica mamária (Diamante), rastreamento (Diamante),
 Módulos principais: 226 — Principais Sintomas em Mastologia; 230 — Propedêutica Mamária; 238 — Classificação das Lesões Benignas; 298 — Câncer de Mama - Rastreamento; 299 — Câncer de Mama - Fatores de Risco e CDIS; 302 — Câncer de Mama - Doença Invasiva.
 
 [Ficha de cobertura do núcleo](../nucleos/169.md).
+
+## Execução das correções estruturais — 16/10/2026
+
+Correção implementada após comparação parcial com resumo correlato do Drive. Ver [registro de execução](../EXECUCAO_CORRECOES.md) e [hashes antes/depois](../correcoes-estrutura-20261016.json). O parecer acima é histórico e descreve o estado anterior. A alteração técnica não representa aprovação científica integral.

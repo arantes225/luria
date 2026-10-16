@@ -88,3 +88,7 @@ Apostila JÁ PUBLICADA. Conferir Fisiologia Menstrual (Alta) e Esteroidogênese 
 Módulos principais: 62 — Fisiologia Menstrual; 71 — Esteroidogênese.
 
 [Ficha de cobertura do núcleo](../nucleos/278.md).
+
+## Execução das correções estruturais — 16/10/2026
+
+Correção implementada após comparação parcial com resumo correlato do Drive. Ver [registro de execução](../EXECUCAO_CORRECOES.md) e [hashes antes/depois](../correcoes-estrutura-20261016.json). O parecer acima é histórico e descreve o estado anterior. A alteração técnica não representa aprovação científica integral.
