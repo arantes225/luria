@@ -241,6 +241,40 @@ Pessoa com diarreia intensa, pH 7,27, bicarbonato 15, AG corrigido normal, K red
 
 A conduta não é “corrigir o pH com bicarbonato em todos os casos”; envolve restaurar volemia se necessária, tratar a perda de bicarbonato, corrigir potássio e considerar reposição alcalina crônica em ATR confirmada, conforme nefrologia e protocolos.
 
+### 7.3. Amôniogênese renal: de onde surge o novo bicarbonato
+
+É comum decorar que o rim “elimina H⁺”, mas essa frase não explica o mecanismo que permite suportar diariamente uma carga de ácidos não voláteis. O organismo filtra grande quantidade de bicarbonato e precisa **recuperar o HCO₃⁻ filtrado** para evitar perdê-lo na urina. Além disso, ao excretar ácido efetivamente, o rim deve **gerar bicarbonato novo** para repor o consumido ao tamponar a carga ácida metabólica.
+
+As duas funções são relacionadas, porém distintas. **Recuperar HCO₃⁻ filtrado** evita perda de base já existente. **Excretar H⁺ como ácido titulável ou amônio (NH₄⁺)** contribui para excreção líquida de ácidos e geração efetiva de bicarbonato novo. O pH urinário sozinho não quantifica esses processos: é possível ter urina bastante ácida e, ainda assim, excretar pequena quantidade total de H⁺ se a produção ou excreção de amônio for inadequada.
+
+**O mecanismo-chave ocorre no túbulo proximal.** O metabolismo da glutamina gera amônia/amônio e bicarbonato. No modelo fisiológico, a transformação completa de uma molécula de glutamina pode produzir **dois NH₄⁺ e dois HCO₃⁻**. O novo bicarbonato retorna ao sangue, enquanto o amônio precisa ser efetivamente eliminado na urina para haver ganho líquido. Se o amônio produzido retorna à circulação e é metabolizado no fígado, parte do benefício potencial é anulada. A alça espessa ascendente e o ducto coletor participam de reciclagem e transporte de NH₃/NH₄⁺.
+
+Quando há acidose metabólica sustentada, o rim íntegro aumenta produção e excreção de amônio ao longo do tempo. Na **doença renal crônica**, a redução da massa funcional de néfrons pode limitar essa resposta. Em certas formas de **acidose tubular renal**, a insuficiência de produção, transporte ou secreção distal gera acidose mesmo antes de grande elevação da creatinina.
+
+**O potássio não é mero espectador.** Hipercalemia pode inibir amôniogênese e contribuir para acidose hiperclorêmica, como na ATR tipo 4/hipoaldosteronismo funcional. Hipopotassemia pode aumentar produção renal de amônia, contribuindo para mudanças complexas no manejo ácido-base e na alcalose metabólica. O aluno precisa interpretar K sérico, aldosterona, medicamentos, função renal e diurese junto da gasometria.
+
+**Fonte fisiológica para aprofundamento:** Weiner ID, Verlander JW. *Renal ammonia metabolism and transport*, Compr Physiol, 2013, DOI 10.1002/cphy.c120010, https://pmc.ncbi.nlm.nih.gov/articles/PMC4319187/ ; revisões recentes https://pubmed.ncbi.nlm.nih.gov/38448728/ .
+
+### 7.4. Como decidir se a acidose hiperclorêmica é intestinal ou renal
+
+**Primeiro confirmar:** bicarbonato baixo com AG sem aumento relevante após ponderar albumina, eletrólitos medidos próximos no tempo, exposição a fluidos ricos em cloreto e causa provável de acidose. Em paciente com lactato elevado e hipoalbuminemia, AG medido “normal” pode mascarar outra componente metabólica.
+
+**Depois avaliar a resposta renal ao ácido:** na diarreia com perda intestinal de bicarbonato, a função renal preservada tende a elevar a excreção de NH₄⁺, frequentemente como NH₄Cl. Isso aumenta Cl⁻ urinário não acompanhado por Na⁺/K⁺ e pode tornar o **ânion gap urinário (Naᵤ + Kᵤ − Clᵤ)** negativo. Já em alguns defeitos renais de acidificação, a excreção urinária de amônio é inadequada e o ânion gap urinário pode ficar positivo ou pouco negativo.
+
+**A armadilha:** o ânion gap urinário é uma *aproximação indireta* de amônio, não uma dosagem. Pode falhar se NH₄⁺ estiver associado a **ânions não cloreto** (como cetoânions), se houver grandes perturbações de sódio/volume, baixo fluxo, diuréticos ou interferências analíticas. Um resultado isolado não distingue automaticamente toda diarreia de toda ATR.
+
+| Elemento | Perda digestiva de bicarbonato | Defeito renal de excreção de ácido | Cautela |
+| --- | --- | --- | --- |
+| História | Diarreia importante, ostomia, fístulas ou perdas intestinais | Doença tubular, autoimunidade, medicamentos, distúrbio mineralocorticoide | Medicamentos/volume podem alterar os dois cenários |
+| Potássio | Muitas vezes baixo, mas variável | Tipo 1/2 frequentemente baixo; tipo 4 tende a alto | Não usar K isolado como diagnóstico |
+| Amônio urinário | Tendência a resposta elevada se função renal preservada | Pode estar inadequadamente baixo | Medida direta é mais informativa quando disponível |
+| AG urinário | Frequentemente negativo com NH₄Cl | Pode ser positivo ou pouco negativo | Só vale se os ânions urinários se comportarem como esperado |
+| pH urinário | Pode ser ácido após compensação | Tipo 1 pode mostrar pH inadequadamente elevado | ATR tipo 4 pode manter urina ácida e, mesmo assim, excretar pouco amônio |
+
+**Mini-caso numérico:** Na sérico 139, Cl 114, HCO₃⁻ 14 → AG sérico **11**. Com diarreia importante, função renal preservada e Na urinário 35, K urinário 20, Cl urinário 80, o AG urinário = 35+20−80 = **−25 mEq/L**. Isso é coerente com aumento de excreção de NH₄Cl, favorecendo perda extrarrenal de bicarbonato se não houver fatores de confusão. A PaCO₂ de 30 mmHg também é aproximadamente compatível com Winter: 1,5×14+8=29 ±2. A interpretação é fisiológica, não uma prova etiológica absoluta.
+
+**Fonte metodológica:** Batlle et al., *Urinary Ammonium in Clinical Medicine*, Adv Kidney Dis Health, 2023, DOI 10.1053/j.akdh.2022.12.006, https://pubmed.ncbi.nlm.nih.gov/36868734/ .
+
 ## 8. Alcalose metabólica: perder H⁺ não explica tudo
 
 A alcalose metabólica ocorre por aumento primário de bicarbonato plasmático, que pode resultar de perda de ácido gástrico, carga de álcalis, depleção de cloro, perda de K ou aumento de reabsorção renal de bicarbonato. **A alcalose precisa de fatores que a mantenham**, como redução do volume arterial efetivo, deficiência de cloro, hipopotassemia ou excesso mineralocorticoide; caso contrário, o rim poderia excretar o excesso de bicarbonato.
