@@ -2,9 +2,9 @@
    Keep query/hash destinations (review tabs, selected decks and deep links). */
 (() => {
   const aliases = new Set([
-    'admin', 'amigos', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
+    'admin', 'amigos', 'aplicar', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
     'dashboard', 'desafio-diario', 'editais', 'estatisticas', 'flashcards',
-    'questoes-simulados', 'registrar-questoes'
+    'jogos', 'questoes-simulados', 'registrar-questoes'
   ]);
   const location = window.location;
   const match = location.pathname.match(/^\/([^/]+)\.html$/);

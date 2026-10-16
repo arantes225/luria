@@ -1164,6 +1164,7 @@ const PAGE_INFO = {
   plantao: { title: "Simulador de Emergência", eyebrow: "Simulação clínica", helper: "Treine decisões clínicas em cenários realistas de urgência e emergência." },
   desafio: { title: "Desafio Diário", eyebrow: "Caso do dia", helper: "Uma hipótese por dia para manter o raciocínio afiado." },
   estatisticas: { title: "Estatísticas", eyebrow: "Seu desempenho", helper: "Acompanhe sua evolução e ajuste sua estratégia." },
+  aplicar: { title: "Aplicar", eyebrow: "Carreira & Provas", helper: "Planeje sua especialidade, acompanhe editais e analise a incidência de provas." },
   editais: { title: "Editais / Provas", eyebrow: "Provas e editais", helper: "Centralize datas, provas e informações importantes." },
   amigos: { title: "Amigos", eyebrow: "Rede de estudos", helper: "Estude junto, compartilhe e acompanhe sua rede." },
   configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência no LURIA." },
@@ -1330,6 +1331,7 @@ const LURIA_ICON_PATHS = {
   simulation: '<path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/>',
   stethoscope: '<path d="M6 3v7a4 4 0 0 0 8 0V3M4 3h4m4 0h4m-6 11v2a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/>',
   users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  compass: '<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="none" stroke="currentColor"/>',
   more: '<circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/>'
 };
 
@@ -1498,8 +1500,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
-        <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
-          <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
+        <a class="nav-link ${["aplicar", "editais"].includes(page) ? "active" : ""}" href="/aplicar/">
+          <span class="nav-icon">${luriaIcon("compass")}</span><span>Aplicar</span>
         </a>
 
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
@@ -6355,15 +6357,19 @@ async function iniciarApp() {
       label.textContent = info.eyebrow || "";
       label.hidden = !info.eyebrow;
 
-      let helper = copy.querySelector(".luria-page-spotlight-helper");
+      let helper = copy.querySelector(".luria-page-spotlight-helper") || copy.querySelector("small") || copy.querySelector("p");
       if (!helper) {
         helper = document.createElement("small");
-        helper.className = "luria-page-spotlight-helper";
         copy.appendChild(helper);
       }
+      helper.className = "luria-page-spotlight-helper";
 
-      helper.textContent = info.helper || "";
-      helper.hidden = !info.helper;
+      if (info.helper) {
+        helper.textContent = info.helper;
+      }
+      helper.hidden = !helper.textContent;
+
+      copy.querySelectorAll("small:not(.luria-page-spotlight-helper), p:not(.luria-page-spotlight-helper)").forEach((el) => el.remove());
     });
 
   // Logout resiliente a re-renderizações da sidebar.
