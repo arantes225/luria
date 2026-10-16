@@ -598,3 +598,187 @@ Cafeína e estimulantes podem exacerbar sintomas autonômicos; álcool e benzodi
 
 **Por que importa:** **prazosina para pesadelos ≠ prazosina para TEPT global**, e escolha deve respeitar risco individual.
 
+
+
+## 15. Questões originais de residência — 15 itens com comentários das alternativas
+
+### Questão 1 — Transtorno de ansiedade generalizada
+
+Paciente de 40 anos apresenta preocupação intensa, difícil de controlar, acerca de finanças, filhos e saúde há 11 meses, com tensão muscular, sono insatisfatório, irritabilidade e fadiga. Exames dirigidos não identificaram explicação clínica predominante. Qual hipótese principal?
+
+A. Transtorno de ansiedade generalizada (TAG).  
+B. Transtorno de pânico por definição.  
+C. Fobia específica de finanças.  
+D. TEPT independentemente de trauma.  
+E. Hipomania por dormir mal.
+
+**Gabarito: A.** O padrão difuso, persistentemente difícil de controlar e com prejuízo/sintomas associados é típico de TAG. **B incorreta:** pânico exige crises abruptas inesperadas recorrentes mais preocupação/mudança de comportamento; **C:** há múltiplos domínios; **D:** não há síndrome ligada a trauma; **E:** insônia sem energia aumentada/episódio não prova hipomania. **Mini-revisão:** DSM-5-TR usa ≥6 meses e ≥3 sintomas associados no adulto, com exclusões e prejuízo.
+
+### Questão 2 — Pânico não significa necessariamente transtorno de pânico
+
+Mulher de 25 anos teve episódio abrupto de palpitação, tremor, medo de morrer e sudorese, que atingiu pico em minutos durante um voo. Não houve outras crises; medo era restrito à possibilidade de voar. Qual é a conclusão correta?
+
+A. O ataque isolado define transtorno de pânico.  
+B. O quadro necessariamente representa síndrome coronariana.  
+C. Pode ter ocorrido **ataque de pânico** no contexto de fobia específica; falta evidência para transtorno de pânico.  
+D. Toda crise desse tipo diagnostica bipolar I.  
+E. A presença de medo elimina a necessidade de triagem médica se há sinais de alarme.
+
+**Gabarito: C.** Ataque de pânico é fenômeno transdiagnóstico. **A incorreta:** são necessários ataques inesperados recorrentes + período de preocupação/mudança funcional; **B:** não há informação para conclusão única, avaliação clínica é proporcional; **D:** não há episódio maníaco; **E:** sintomas agudos precisam de triagem quando quadro sugere risco clínico. **Mini-revisão:** a fobia específica envolve medo circunscrito, enquanto pânico envolve crises e ansiedade antecipatória sobre crises.
+
+### Questão 3 — Sinais de alerta antes de rotular “ansiedade”
+
+Paciente apresenta dor torácica, dispneia e taquicardia pela primeira vez após viagem prolongada. Está ansioso e hiperventilando. A conduta mais apropriada é:
+
+A. Dar alta sem examinar porque está chorando.  
+B. Considerar ataque de pânico, mas realizar avaliação clínica proporcional de hipóxia, TEP/SCA/arritmia e outros diferenciais antes de atribuir causa psiquiátrica.  
+C. Solicitar gasometria para provar que todo paciente hiperventilando tem ansiedade.  
+D. Prescrever benzodiazepínico contínuo por um ano, sem diagnóstico.  
+E. Internar obrigatoriamente como transtorno de pânico.
+
+**Gabarito: B.** **A incorreta:** aparência ansiosa não exclui doença grave; **C:** hipocapnia pode ocorrer por várias causas, inclusive hipóxia/TEP; **D:** tratamento crônico de BZD é inadequado; **E:** ataque não define transtorno nem internação obrigatória, que depende de gravidade. **Mini-revisão:** o diagnóstico de pânico é clínico **depois de triagem médica apropriada**, sem exames indiscriminados.
+
+### Questão 4 — Agorafobia
+
+Qual descrição melhor caracteriza agorafobia?
+
+A. Medo exclusivo de falar em público por avaliação negativa.  
+B. Medo de entrar em transporte público, ficar em multidão e sair sozinho por receio de não conseguir escapar ou obter ajuda.  
+C. Necessidade de verificar fogão 30 vezes por dia para neutralizar pensamento.  
+D. Medo restrito de cobras sem outras situações.  
+E. Reexperiência de acidente traumático com flashbacks.
+
+**Gabarito: B.** A descreve ansiedade social; C sugere TOC; D, fobia específica; E, TEPT. **Mini-revisão:** agorafobia envolve tipicamente medo em ≥2 classes de situações com preocupação sobre escape/ajuda, podendo existir sem transtorno de pânico.
+
+### Questão 5 — Ansiedade social
+
+Universitária evita seminários porque pensa que será humilhada, reescreve falas mentalmente e rumina após interações. Qual tratamento psicológico tem evidência e recomendação principal na NICE CG159 para adultos?
+
+A. TCC individual específica para ansiedade social, com experimentos e exposição.  
+B. Sedação crônica com benzodiazepínico como intervenção de primeira linha.  
+C. Hipnose compulsória para toda pessoa antes da apresentação.  
+D. Quetiapina para suprimir rubor como rotina de APS.  
+E. Não tratar, porque todo medo social é timidez normal.
+
+**Gabarito: A.** A dirige-se ao mecanismo de medo de avaliação e evitação. **B:** BZD crônico não é rotina; **C:** não é recomendação padronizada; **D:** antipsicótico não é primeira linha; **E:** há prejuízo funcional. **Mini-revisão:** foco no julgamento negativo diferencia ansiedade social de pânico/agorafobia.
+
+### Questão 6 — Fobia de sangue e síncope
+
+Adolescente desmaia repetidamente durante coletas de sangue após intensa antecipação de medo, com recuperação rápida e exame sugerindo vasovagal. Qual abordagem é coerente?
+
+A. Considerar fobia específica tipo sangue/injeção, avaliar síncope clinicamente e planejar exposição graduada e técnicas apropriadas em contexto seguro.  
+B. Diagnosticar automaticamente epilepsia.  
+C. Obrigar o paciente a ficar em pé durante punção.  
+D. Considerar todo desmaio simulação.  
+E. Tratar com BZD diário sem avaliação.
+
+**Gabarito: A.** Fobia de sangue/injeção pode cursar com resposta vasovagal. **B:** síncope tem diferenciais; **C:** aumenta risco de queda; **D:** desvaloriza evento; **E:** terapia de exposição e segurança são centrais. **Mini-revisão:** um desfecho físico (síncope) pode ser gerado por reflexo autonômico e também requer avaliação clínica.
+
+### Questão 7 — Obsessão e compulsão
+
+Pessoa relata pensamento intrusivo indesejado de ter deixado um aparelho ligado e passa duas horas verificando repetidamente, com atraso ao trabalho. Qual conceito melhor explica manutenção do quadro?
+
+A. Pensamento intrusivo prova psicose em todos os casos.  
+B. Ritual repetitivo pode aliviar angústia imediatamente e reforçar sua própria repetição, perpetuando TOC.  
+C. TOC exige que a compulsão seja necessariamente visível.  
+D. Toda preocupação com segurança é patológica.  
+E. A intensidade da culpa define transtorno bipolar.
+
+**Gabarito: B.** O **reforço negativo** mantém ciclo de obsessão/compulsão. **A:** insight/realidade devem ser avaliados; **C:** rituais mentais são possíveis; **D:** conferir uma vez pode ser cuidado adequado; **E:** não há mania. **Mini-revisão:** o alvo da EPR é tolerar incerteza/angústia sem neutralizar com ritual.
+
+### Questão 8 — Pensamentos tabu no TOC
+
+Paciente relata imagens agressivas involuntárias, que lhe provocam medo e repulsa, seguidas por rituais de neutralização; nega desejo de praticar violência. Qual afirmação é mais adequada?
+
+A. O conteúdo por si prova intenção de agressão.  
+B. Não é possível haver TOC sem rituais de lavagem.  
+C. Deve-se diferenciar intrusão ego-distônica de intenção real por avaliação clínica individualizada, considerando TOC com compulsões mentais.  
+D. O médico nunca deve perguntar por segurança.  
+E. Deve-se internar obrigatoriamente toda pessoa que relata imagem intrusiva.
+
+**Gabarito: C.** As obsessões podem ter conteúdo tabu e rituais mentais. **A:** confunde medo de pensamento com intenção; **B:** restringe TOC a estereótipo; **D:** segurança ainda deve ser avaliada; **E:** internação exige necessidade concreta. **Mini-revisão:** entrevista não julgadora evita estigma e atraso terapêutico.
+
+### Questão 9 — TOC com prejuízo grave
+
+Adulto tem TOC há cinco anos, compulsões ocupam cinco horas/dia e impedem trabalho. Sem tratamento adequado. Segundo NICE CG31, a abordagem inicial de maior evidência no prejuízo grave é:
+
+A. Apenas reasseguramento familiar contínuo.  
+B. Combinação de **TCC com EPR** e **ISRS** quando apropriados, com cuidado especializado proporcional.  
+C. Antipsicótico isolado para todos.  
+D. Clomipramina com dose máxima no primeiro dia sem ECG/interações.  
+E. Tratar apenas com técnicas de relaxamento sem abordar rituais.
+
+**Gabarito: B.** NICE propõe combinação em TOC com prejuízo grave. **A:** acomodação familiar pode reforçar ciclo; **C:** antipsicótico não é primeira linha isolada; **D:** toxicidade/titulação exigem cuidado; **E:** evita mecanismo central. **Mini-revisão:** EPR precisa incluir rituais **visíveis e mentais**.
+
+### Questão 10 — Resposta a ISRS no TOC
+
+Pessoa iniciou ISRS para TOC há 12 dias, tolera bem mas ainda realiza rituais. Qual raciocínio é correto?
+
+A. É definitivamente refratária.  
+B. Deve associar três antipsicóticos imediatamente.  
+C. É necessário avaliar tratamento em ensaio adequado, com EPR, dose/titulação, adesão e seguimento; poucas semanas podem ser insuficientes.  
+D. Rituais mentais provam que fármaco nunca funcionará.  
+E. Pode suspender abruptamente porque “é ansiolítico”.
+
+**Gabarito: C.** TOC pode exigir ensaio mais longo; CG31 discute resposta após **12 semanas** de intervenções em determinados contextos. **A/B:** escalonamento precoce; **D:** rituais mentais demandam EPR própria; **E:** retirada abrupta é inadequada. **Mini-revisão:** não chamar refratariedade sem tratamento **bem realizado**.
+
+### Questão 11 — Duas semanas após trauma
+
+Homem foi vítima de evento potencialmente traumático há 14 dias; tem sintomas intrusivos, insônia e evitação, sem diagnóstico anterior. Qual conclusão respeita a janela DSM?
+
+A. TEPT já está formalmente confirmado apenas por duas semanas.  
+B. Considerar reação aguda/estresse agudo e avaliar gravidade; TEPT DSM exige duração **maior que um mês**.  
+C. Prescrever benzodiazepínico preventivo para TEPT em todos.  
+D. Obrigar sessão única de debriefing intenso.  
+E. Concluir simulação porque muitos melhoram espontaneamente.
+
+**Gabarito: B.** A erra duração; C não é prevenção recomendada; D não é prática preventiva indicada; E desvaloriza sofrimento. **Mini-revisão:** suporte precoce e TCC focada no trauma são possíveis em sintomas importantes sem chamar de TEPT prematuramente.
+
+### Questão 12 — TEPT e psicoterapia
+
+Adulto com trauma compatível há oito meses apresenta flashbacks, evitação, hiperalerta e prejuízo funcional. Qual opção possui recomendação de primeira linha em NICE NG116?
+
+A. TCC individual focada no trauma, em modalidades baseadas em evidências, ou EMDR conforme indicação/contexto.  
+B. Debriefing compulsório de sessão única para todos.  
+C. Benzodiazepínico contínuo como monoterapia preferencial.  
+D. Evitar qualquer discussão do trauma por toda a vida, mesmo em terapia especializada.  
+E. Antipsicótico isolado para todos, independentemente de psicose.
+
+**Gabarito: A.** Intervenções estruturadas trabalham revivescência, evitação e significado. **B:** não recomendado como prevenção universal; **C:** benzodiazepínicos são desaconselhados no tratamento; **D:** a intervenção baseada em evidência inclui processamento em condições seguras; **E:** não é rotina. **Mini-revisão:** terapia exige capacitação/consentimento e não é “reviver trauma à força”.
+
+### Questão 13 — Prazosina no TEPT
+
+Paciente em terapia adequada tem pesadelos associados ao TEPT. Qual afirmação corresponde à VA/DoD 2023?
+
+A. Prazosina é recomendada para todos os sintomas de TEPT em qualquer pessoa.  
+B. Prazosina pode ser considerada para pesadelos associados ao TEPT, embora não seja recomendada para tratar globalmente o TEPT; avaliar risco de hipotensão e contexto local.  
+C. Prazosina é antidepressivo ISRS.  
+D. Prazosina não exige avaliação clínica em hipotensão ortostática.  
+E. Benzodiazepínico crônico deve ser adicionado a todos.
+
+**Gabarito: B.** A confunde desfecho específico e síndrome global; C erra farmacologia; D ignora queda/PA; E contraria orientação para TEPT. **Mini-revisão:** tratamento de **pesadelo** é pergunta terapêutica distinta de tratamento da síndrome de TEPT.
+
+### Questão 14 — CID-11, DSM e TEPT complexo
+
+Qual afirmação sobre classificação de TEPT é adequada?
+
+A. CID-11 e DSM-5-TR possuem quatro clusters absolutamente idênticos.  
+B. TEPT complexo na CID-11 é definido apenas por ter sofrido dois traumas, sem sintomas.  
+C. CID-11 destaca revivescência no presente, evitação e percepção persistente de ameaça; TEPT complexo adiciona alterações persistentes de organização do self, com diagnóstico clínico.  
+D. TEPT exige delírios em todos.  
+E. Sofrimento após perda sem trauma necessariamente equivale a TEPT.
+
+**Gabarito: C.** A mistura sistemas; B ignora requisitos sintomáticos; D não é necessário; E ignora diferencial com luto/adaptação. **Mini-revisão:** **evento traumático não é diagnóstico**; avaliar síndrome, prejuízo, classificação e curso.
+
+### Questão 15 — Uso prolongado de benzodiazepínico
+
+Pessoa com TAG usa benzodiazepínico diariamente há três anos e deseja parar imediatamente. Qual orientação geral é mais segura?
+
+A. Parar abruptamente qualquer dose porque não há retirada.  
+B. Continuar para sempre sem revisão.  
+C. Planejar redução gradual com prescritor, considerando dose, duração, risco de abstinência e intervenções baseadas em evidências para TAG.  
+D. Trocar automaticamente por opioide.  
+E. Usar álcool para diminuir sintomas de retirada.
+
+**Gabarito: C.** A pode precipitar retirada grave, inclusive convulsões; B ignora danos/revisão; D/E elevam risco. **Mini-revisão:** benzodiazepínico não é tratamento crônico de primeira linha para TAG, pânico ou TEPT, e **desprescrição também é tratamento** quando clinicamente apropriado.
+
