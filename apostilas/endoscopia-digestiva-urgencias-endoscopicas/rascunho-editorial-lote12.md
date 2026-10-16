@@ -3,6 +3,23 @@
 
 > Objetivo: formar raciocínio clínico sobre indicação, priorização, preparo, riscos e interpretação dos procedimentos endoscópicos. Não substitui protocolos locais nem avaliação especializada.
 
+
+## Em 30 segundos: dez decisões que não podem ser erradas
+
+1. **Choque e hemorragia digestiva:** estabilização materno-fisiológica e recursos para hemostasia antes de corrida para exame.
+2. **HDA não varicosa:** após ressuscitação, EDA geralmente ≤24 h; a ESGE **2026** não defende ≤6–12 h para toda úlcera.
+3. **HDA por varizes suspeitas:** iniciar vasoativo e antibioticoprofilaxia sem esperar confirmação, com EDA em até 12 h após ressuscitação e eventual TIPS nos pacientes selecionados.
+4. **Forrest:** Ia/Ib (sangra), IIa (vaso exposto), IIb (coágulo aderido), IIc (ponto pigmentado), III (base limpa).
+5. **Não usar epinefrina isolada** como hemostasia definitiva em úlcera de alto risco.
+6. **Hematoquezia com choque:** também pode ser fonte alta; CTA pode localizar sangramento baixo ativo, enquanto colonoscopia ≤24 h não é rotina obrigatória.
+7. **Bateria botão no esôfago e obstrução esofágica completa:** endoscopia emergencial, com via aérea protegida conforme risco.
+8. **Impactação alimentar recorrente:** pensar em EoE, anel e estenose; biópsias podem ser necessárias mesmo sem achado endoscópico impressionante.
+9. **Colangite com obstrução:** antibiótico + ressuscitação + drenagem biliar, frequentemente CPRE; não tratar como simples cálculo assintomático.
+10. **CPRE pode causar pancreatite:** prevenir em pacientes elegíveis com AINE retal, técnica adequada, stent pancreático quando indicado e hidratação individualizada.
+
+**Objetivo operacional:** ao concluir o estudo, o aluno deve distinguir quando **ressuscitar**, quando **endoscopar**, quando **preferir imagem/embolização** e quando **referenciar a centros com endoscopia terapêutica**. O rascunho foi mantido e ampliado; a versão ainda requer auditoria científica e visual final.
+
+
 ## 1. O que a endoscopia resolve — e o que não resolve
 
 A endoscopia digestiva alta (EDA) permite examinar esôfago, estômago e duodeno proximal, obter biópsias e executar intervenções hemostáticas, dilatação, retirada de corpos estranhos e outros tratamentos. Colonoscopia avalia mucosa colônica e íleo terminal quando acessível, além de permitir biópsias e polipectomia. Ecoendoscopia caracteriza lesões da parede e estruturas adjacentes; CPRE é principalmente terapêutica para doença pancreatobiliar, e não exame de primeira linha para toda dor abdominal ou icterícia.
@@ -428,7 +445,7 @@ Um laudo de EDA que diz só “gastrite enantematosa leve” sem contexto, amost
 Na resposta inicial, estabilizar, coletar exames direcionados e solicitar imagem/avaliação cirúrgica quando indicada. Em ressecção de pólipo grande, pode ocorrer **síndrome pós-polipectomia** por lesão térmica transmural sem perfuração livre; diferenciar de perfuração exige clínica/imagem e seguimento. A alta deve incluir sinais de alarme escritos e contato para retorno.
 
 
-## 8. Quatro casos clínicos comentados
+## 8. Casos clínicos comentados — dez situações
 
 **Caso 1 — Melena e hipotensão.** Homem de 68 anos, em uso de anti-inflamatório, apresenta melena, tontura e pressão arterial baixa. **Raciocínio:** hemorragia digestiva potencialmente grave, provável fonte alta, sem assumir úlcera antes de exame. **Conduta:** ABC, monitorização, dois acessos, tipagem e exames, reposição guiada por perfusão e avaliação de transfusão; EDA após estabilização para diagnóstico e hemostasia. **Erro perigoso:** encaminhar imediatamente à sala de endoscopia sem ressuscitação.
 
@@ -438,7 +455,23 @@ Na resposta inicial, estabilizar, coletar exames direcionados e solicitar imagem
 
 **Caso 4 — Icterícia febril e hipotensão.** Mulher de 72 anos com dor em hipocôndrio direito, febre, icterícia, confusão e hipotensão. **Raciocínio:** colangite grave com sepse e provável obstrução biliar. **Conduta:** protocolo de sepse, antibiótico, suporte orgânico e drenagem biliar urgente, frequentemente por CPRE. **Erro perigoso:** pedir CPRE eletiva para a semana seguinte.
 
-## 9. Questões de fixação
+
+### Casos adicionais — decisões que complementam os quatro originais
+
+**Caso 5 — Hematoquezia volumosa e a dúvida entre CTA e colonoscopia.** Mulher de 78 anos, com episódios de sangue vermelho abundante pelo reto, FC 119, PA 90/58 mmHg, Hb 9,8 g/dL antes de reposição e doença diverticular conhecida. **Hipóteses:** hemorragia digestiva baixa significativa por divertículo/angiodisplasia, sem excluir HDA intensa. **Raciocínio:** a instabilidade predomina; Hb inicial não quantifica perda aguda. A colonoscopia com fezes e sangue abundantes pode não localizar fonte; preparo requer tempo e segurança de via aérea. **Exames:** estabilizar, hemograma/tipagem/coagulograma conforme contexto, revisar anticoagulação, avaliar indícios de HDA, **CTA** se sangramento baixo ativo e disponibilidade. **Conduta:** ressuscitação e acionamento de endoscopia/radiologia intervencionista; se extravasamento localizado, considerar embolização, e colonoscopia após preparo e estabilidade conforme evolução. **Por que importa:** colonoscopia urgente para todos os sangramentos baixos não melhora necessariamente desfechos.
+
+**Caso 6 — Impactação recorrente em paciente com atopia.** Homem de 27 anos, asma e rinite, episódios repetidos de carne impactada e disfagia para sólidos, sem perda de peso. Chega após almoço, consegue engolir apenas pequenas quantidades de saliva com dificuldade. **Hipóteses:** esofagite eosinofílica com fenótipo fibroestenótico, anel de Schatzki ou estenose péptica. **Raciocínio:** padrão intermitente em pessoa jovem atópica aumenta suspeita de EoE, mas não prova diagnóstico; a urgência depende da obstrução e do manejo de secreções. **Exames:** EDA para resolver impactação no tempo apropriado; avaliar mucosa e coletar **≥6 biópsias de ≥2 níveis** quando seguro. **Conduta:** retirar bolus sob técnica segura, confirmar histologia e orientar tratamento anti-inflamatório de manutenção (IBP/corticoide deglutido/dieta sob especialista); dilatação quando indicado por calibre, não como tratamento único de inflamação. **Por que importa:** liberar alimento e encerrar atendimento sem biópsia pode perpetuar recorrência.
+
+**Caso 7 — Coledocolitíase intermediária versus CPRE precipitada.** Mulher de 48 anos com litíase vesicular, dor biliar que cedeu, bilirrubina total 2,6 mg/dL, transaminases elevadas, sem febre ou hipotensão; ultrassom mostra colédoco de 5,5 mm e nenhum cálculo visível. **Hipótese:** possível cálculo migratório de colédoco, com probabilidade intermediária, sem critérios de alto risco ASGE. **Raciocínio:** bilirrubina >4 mg/dL **E** colédoco dilatado seriam critério combinado de alto risco; imagem de cálculo ou colangite também. Nenhum está presente. **Exames:** MRCP ou EUS, ou estratégia intraoperatória conforme recursos. **Conduta:** evitar CPRE diagnóstica de risco desnecessário; definir tratamento de vesícula conforme diagnóstico. **Por que importa:** a CPRE não é “ressonância invasiva” gratuita, e pancreatite iatrogênica é evitável.
+
+**Caso 8 — Úlcera duodenal com ressangramento após clip.** Homem de 67 anos, internado com sangramento de úlcera posterior de bulbo, inicialmente submetido a hemostasia por clip TTS e IBP. Após 36 horas, desenvolve melena volumosa, taquicardia e queda da PA. **Hipótese:** ressangramento de úlcera de alto risco. **Raciocínio:** localização posterior e vaso calibroso favorecem risco de falha; o procedimento inicial bem sucedido não impede recorrência. **Exames:** ressuscitar, tipagem e evolução laboratorial, planejar segunda EDA com hemostasia reforçada. **Conduta:** considerar **OTS clip** na reendoscopia; se falhar ou for inadequada, **TAE** em serviço com radiologia intervencionista, com cirurgia se TAE indisponível ou falha. **Por que importa:** algoritmo de ressangramento não termina em “mais adrenalina”.
+
+**Caso 9 — Anticoagulado e polipectomia eletiva.** Homem de 71 anos em varfarina por prótese valvar mecânica, colonoscopia para avaliação de pólipo grande passível de ressecção. O paciente recebeu orientação genérica para “parar todos os remédios cinco dias antes”. **Hipóteses/risco:** trombose protética se interromper de forma imprudente versus sangramento pós-ressecção se continuar anticoagulado. **Raciocínio:** colonoscopia diagnóstica com biópsia e ressecção avançada não têm mesmo perfil hemorrágico; prótese mitral mecânica pode ter alto risco trombótico. **Exames/decisão:** avaliar posição/prótese, história de embolia, INR, função renal, tamanho/localização do pólipo, técnica prevista e concordância de cardiologia/hematologia/endoscopia. **Conduta:** plano individual de suspensão ou manutenção, eventual ponte somente se indicada, e reintrodução pós-procedimento por protocolo; não delegar decisão ao paciente. **Por que importa:** risco de AVC ou trombose fatal pode superar risco da própria polipectomia em planejamento inadequado.
+
+**Caso 10 — Úlcera gástrica, teste de H. pylori negativo durante sangramento.** Mulher de 59 anos teve hematêmese, EDA mostrou úlcera gástrica com vaso visível, tratada com hemostasia. Teste para *H. pylori* realizado durante internação foi negativo sob uso de IBP em alta dose. **Hipótese:** úlcera hemorrágica com etiologia ainda não determinada; resultado inicial pode ser falso negativo. **Raciocínio:** sangue e supressão ácida diminuem rendimento de alguns testes; em úlcera gástrica, também é crucial garantir investigação de malignidade por biópsia/seguimento conforme localização e segurança. **Conduta:** continuar supressão ácida e revisão de AINE, reavaliar pesquisa de H. pylori em momento adequado e **confirmar erradicação** se positivo e tratado (em geral pelo menos quatro semanas após antibiótico e duas semanas sem IBP para testes respiratório/antígeno fecal segundo ACG 2024). **Por que importa:** sucesso da hemostasia não significa resolução etiológica.
+
+
+## 9. Questões de fixação — doze questões autorais
 
 **1.** Paciente com melena e choque chega ao pronto-socorro. Qual a prioridade? A) EDA antes de acesso venoso; B) ressuscitação e estabilização; C) colonoscopia imediata; D) alta com IBP. **Resposta: B.** A intervenção endoscópica é importante, mas sem estabilização eleva o risco de desfecho adverso.
 
@@ -452,6 +485,76 @@ Na resposta inicial, estabilizar, coletar exames direcionados e solicitar imagem
 
 **6.** Hematoquezia volumosa com instabilidade: A) exclui sangramento alto; B) confirma hemorroida; C) pode decorrer de fonte alta intensa; D) impede ressuscitação. **Resposta: C.** A velocidade do trânsito pode produzir sangue vivo por fonte proximal.
 
+
+### Questões adicionais com correção integral por alternativa
+
+**Questão 7 — Momento de EDA na HDA por úlcera.** Mulher de 56 anos internada com melena, sem sinais de hipertensão portal, pressão normal após ressuscitação inicial e GBS de risco hospitalar. Qual afirmação está mais alinhada à ESGE 2026?  
+A) Fazer EDA emergente ≤6 horas em toda suspeita de úlcera.  
+B) Iniciar IBP pré-endoscopia se apropriado, sem atrasar a endoscopia precoce, geralmente organizada em até 24 horas.  
+C) Solicitar cápsula como substituta da EDA de primeira linha.  
+D) Tratar úlcera hemorrágica apenas com antibiótico.  
+**Gabarito: B.** **A incorreta:** a ESGE 2026 não recomenda ≤6 h ou ≤12 h rotineiras salvo instabilidade persistente após ressuscitação. **B correta:** prioriza estabilização e EDA precoce, podendo considerar IBP sem atraso. **C incorreta:** cápsula não é investigação inicial de rotina em HDA. **D incorreta:** antibiótico não substitui hemostasia/IBP da úlcera. **Revisão:** o momento oportuno deriva de estabilização, risco e etiologia, não do impulso “quanto mais cedo, melhor” sem limites.
+
+**Questão 8 — Coágulo aderido Forrest IIb.** Em endoscopia pós-hematêmese, úlcera apresenta coágulo firmemente aderido, sem sangramento jorrando. A melhor conduta interpretativa é:  
+A) Classificá-la como Forrest III e dar alta em todos os casos.  
+B) Classificá-la como Forrest IIa e injetar adrenalina isoladamente.  
+C) Reconhecer Forrest IIb e considerar remoção do coágulo/terapia segundo ESGE 2026 se houver expertise para tratar sangramento subjacente.  
+D) Não realizar avaliação de risco porque não há sangramento ativo.  
+**Gabarito: C.** **A incorreta:** base limpa é III, não coágulo aderido. **B incorreta:** IIa é vaso visível sem coágulo, e adrenalina isolada não é definitiva. **C correta:** a atualização de 2026 sugere abordagem ativa em condições técnicas seguras. **D incorreta:** risco de ressangramento permanece. **Revisão:** a classificação Forrest descreve o **estigma**, não apenas se o paciente sangra naquele instante.
+
+**Questão 9 — Bateria no esôfago.** Lactente com sialorreia e objeto circular esofágico com sinal radiográfico de bateria tipo botão. A principal conduta é:  
+A) Aguardar eliminação em uma semana.  
+B) Administrar dieta pastosa para empurrar objeto.  
+C) Providenciar remoção endoscópica emergencial com equipe preparada, seguida de avaliação de lesão.  
+D) Dar alta porque não tem febre.  
+**Gabarito: C.** **A incorreta:** lesão corrosiva pode progredir rapidamente. **B incorreta:** tentativa cega aumenta risco/atraso. **C correta:** emergência verdadeira; o seguimento deve considerar lesão profunda/fístulas tardias. **D incorreta:** sintomas iniciais modestos não significam segurança. **Revisão:** retirar bateria esofágica **imediatamente** e considerar dano residual.
+
+**Questão 10 — EoE após impactação.** Homem de 24 anos com impactação alimentar recorrente, EDA com anéis e sulcos; qual estratégia sustenta investigação?  
+A) Não biopsiar porque as imagens são diagnósticas.  
+B) Coletar pelo menos seis biópsias de pelo menos dois níveis do esôfago, quando seguro, e buscar ≥15 eosinófilos/campo com quadro clínico correspondente.  
+C) Realizar manometria como único exame para confirmar EoE.  
+D) Prescrever antibiótico prolongado para tratar etiologia obrigatoriamente bacteriana.  
+**Gabarito: B.** **A incorreta:** endoscopia pode até ser normal e não substitui histologia. **B correta:** ACG 2025 e diretriz brasileira reforçam amostragem ampla pela doença ser irregular. **C incorreta:** manometria investiga motilidade. **D incorreta:** EoE é doença inflamatória imuno-mediada, não bacteriana. **Revisão:** endoscopia e biópsias respondem perguntas diferentes.
+
+**Questão 11 — Cálculo biliar e indicação de CPRE.** Paciente com dor biliar, bilirrubina 2,8 mg/dL, elevação de enzimas hepáticas, sem colangite e sem cálculo/dilatação de via biliar ao US. Estratégia inicial mais adequada:  
+A) CPRE urgente obrigatória por qualquer bilirrubina alterada.  
+B) MRCP ou EUS, conforme acesso, antes de indicar CPRE por probabilidade intermediária.  
+C) Nunca investigar coledocolitíase porque o US é negativo.  
+D) Fazer CPRE para rastreamento de câncer colorretal.  
+**Gabarito: B.** **A incorreta:** seleção de alto risco da ASGE exige critérios específicos. **B correta:** evitar pancreatite iatrogênica por exame desnecessário. **C incorreta:** US não detecta todos os cálculos. **D incorreta:** indicação e anatomia incompatíveis. **Revisão:** bilirrubina >4 **com** dilatação ou cálculo demonstrado/colangite são critérios de alto risco no esquema ASGE.
+
+**Questão 12 — AINE retal e pancreatite pós-CPRE.** Adulto sem contraindicação será submetido a CPRE terapêutica por cálculo confirmado. Qual medida tem suporte de diretriz ASGE 2023?  
+A) Indometacina retal periprocedimento, juntamente com técnica adequada e medidas adicionais conforme risco.  
+B) Retirar todo controle de hidratação e infundir grande volume em insuficiência cardíaca grave.  
+C) Utilizar canulação repetida com contraste mesmo se houver acesso difícil.  
+D) Proibir qualquer prótese pancreática em paciente de alto risco.  
+**Gabarito: A.** **A correta:** AINE retal é recomendado quando não há contraindicações. **B incorreta:** excesso de fluidos pode descompensar coração/rim. **C incorreta:** técnica com fio e redução de trauma são preferíveis. **D incorreta:** stent pancreático profilático é ferramenta em alto risco selecionado. **Revisão:** a CPRE é terapêutica, mas sua prevenção de complicações começa antes da canulação.
+
+
+
+## 9A. Curadoria inicial de imagens reais para a etapa visual
+
+Nesta rodada foram **localizadas páginas canônicas reais** para **dez imagens/diagramas** de interesse. A informação abaixo deriva das declarações de licença das respectivas páginas da Wikimedia Commons, não apenas de título ou miniatura de buscador. **Candidato não é imagem aprovada:** conferir visualização anatômica individual, direitos e qualidade para uso comercial antes de baixar/otimizar. Nenhum arquivo foi incorporado à apostila ou ao site nesta etapa.
+
+| Nº | Arquivo real / URL | Crédito e licença declarada | Função didática e decisão preliminar |
+|---|---|---|---|
+| 1 | https://commons.wikimedia.org/wiki/File:Bleeding_gastric_ulcer.png | Jeremias, **CC BY-SA 3.0** | Úlcera com hemorragia ativa; boa candidata se classificada corretamente em legenda |
+| 2 | https://commons.wikimedia.org/wiki/File:Ulcer_Visible_Vessel.jpg | Jeremias, **CC BY-SA 3.0** | Vaso visível, comparar com Forrest IIa |
+| 3 | https://commons.wikimedia.org/wiki/File:Deep_gastric_ulcer.png | arquivo com **CC BY-SA 3.0/GFDL**; revisar autor da versão | Profundidade ulcerosa; risco de não confundir com classificação de Forrest |
+| 4 | https://commons.wikimedia.org/wiki/File:Gastric_ulcer_2.jpg | antigo acervo migrado para **CC BY-SA 3.0/GFDL**; atribuição a conferir | Diferenciar úlcera sem sangramento ativo |
+| 5 | https://commons.wikimedia.org/wiki/File:Gastric_antral_vascular_ectasia_(before_and_after).png | Samir/acervo migrado, **CC BY-SA 3.0/GFDL**; verificar créditos | GAVE antes/depois de coagulação por plasma de argônio |
+| 6 | https://commons.wikimedia.org/wiki/File:Endoscopic_retrograde_cholangiopancreatography_(ERCP).png | Kel898, **CC BY-SA 4.0** | Técnica de CPRE e anatomia biliopancreática |
+| 7 | https://commons.wikimedia.org/wiki/File:ERCP_stone.jpg | Samir/arquivo originalmente liberado ao domínio público; **conferir licença completa** | Defeito de enchimento por cálculo no colédoco |
+| 8 | https://commons.wikimedia.org/wiki/File:Diagram_showing_an_endoscopic_retrograde_cholangio_pancreatography_(ERCP)_CRUK_097.svg | Cancer Research UK, **CC BY-SA 4.0**, permissão arquivada Wikimedia VRT | Diagrama técnico de acesso à papila e via biliar; traduzir legendas por versão autoral |
+| 9 | https://commons.wikimedia.org/wiki/File:Esophageal-varices-hariadhi.svg | Hariadhi, **CC BY-SA 4.0** | Anatomia de varizes esofágicas; **esquema**, não fotografia endoscópica |
+| 10 | https://commons.wikimedia.org/wiki/File:Endomucosal_resection_1.jpg | Stephen Holland, **CC BY 2.5** | Etapa real de mucosectomia/polipectomia colônica |
+| 11 | https://commons.wikimedia.org/wiki/File:Polyp.jpeg | acervo de colonoscopia, **CC BY 2.5**; crédito individual pendente | Pólipo colônico; comparar tamanho/forma |
+| 12 | https://commons.wikimedia.org/wiki/File:Gastric_ulcer_3.jpg | acervo Samir, **CC BY-SA 3.0** | Úlcera com comprovação de câncer gástrico; excelente alerta sobre biópsia, confirmar legenda |
+| 13 | https://pmc.ncbi.nlm.nih.gov/articles/PMC9139956/ | Estudo *Diagnostics* 2022, indicado como **CC BY**, licença da figura específica a verificar | Classes Forrest, imagens e interpretação interobservador |
+
+**Pendências críticas:** inspeção visual, verificação individual da licença e eventuais restrições de modificação/ShareAlike, crédito com link, legenda autoral, conversão WebP sem perda de nitidez e teste de responsividade. Uma licença CC BY-SA pode exigir cuidados com derivados em distribuição comercial. Itens com imagem histórica e metadados de paciente precisam de revisão de privacidade e adequação, mesmo se marcados como licença aberta. **Não se deve usar imagens de blogs/ASGE/Slideshare sem autorização explícita**, apesar de serem clinicamente interessantes. O documento continua **sem figuras integradas**.
+
+
 ## 10. Referências-base para verificação editorial
 
 - Laine L et al. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol*. 2021.
@@ -461,11 +564,33 @@ Na resposta inicial, estabilizar, coletar exames direcionados e solicitar imagem
 - ACG: guideline de hemorragia digestiva baixa — conferir versão vigente na revisão final.
 - Tokyo Guidelines: manejo de colangite aguda — conferir atualizações e critérios de gravidade.
 
+
+## 10A. Fontes verificadas e trilha de atualização (complemento às referências-base)
+
+1. **Gralnek IM et al.** Endoscopic diagnosis and management of peptic ulcer bleeding: ESGE Guideline — Update **2026**. *Endoscopy.* 2026;58:899–924. doi:10.1055/a-2863-8314. https://pubmed.ncbi.nlm.nih.gov/42127996/ — atualizado para Forrest IIb, OTS clip, hemostatic powder, TAE, ferro e nutrição precoce. **Há errata:** doi:10.1055/a-2881-7411.
+2. **Laine L et al.** ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol.* 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/ — GBS baixo risco, transfusão restritiva, endoscopia ≤24h, hemostasia.
+3. **Gralnek IM et al.** ESGE Guideline Nonvariceal Upper Gastrointestinal Hemorrhage, atualização 2021. https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021/ — conceitos preservados e parcialmente substituídos por ESGE 2026 para úlcera.
+4. **de Franchis R et al.** Baveno VII: Renewing consensus in portal hypertension. *J Hepatol.* 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/ — fármacos vasoativos, antibiótico, EDA ≤12h, TIPS seletivo.
+5. **Sengupta N et al.** ACG Clinical Guideline: Management of Patients With Acute Lower Gastrointestinal Bleeding (update). *Am J Gastroenterol.* 2023. https://pubmed.ncbi.nlm.nih.gov/36735555/ — CTA em sangramento intenso, colonoscopia não urgente para maioria.
+6. **Birk M et al.** Removal of foreign bodies in the upper gastrointestinal tract in adults: ESGE Clinical Guideline. *Endoscopy.* 2016. https://pubmed.ncbi.nlm.nih.gov/26862844/ — remoção emergencial/urgente por tipo/local.
+7. **ASGE Standards of Practice.** Management of ingested foreign bodies and food impactions. https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions — risco de bateria, ímã, obstrução e investigação após bolo.
+8. **Dellon ES et al.** ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis. *Am J Gastroenterol.* 2025;120:31–59. doi:10.14309/ajg.0000000000003194. https://gi.org/journals-publications/ebgi/eluri_feb2025/ — ≥6 biópsias, ≥2 níveis, EREFS, opções terapêuticas.
+9. **Federação Brasileira de Gastroenterologia.** FBG Clinical Guideline: Diagnosis and Treatment of Eosinophilic Esophagitis in Adults and Adolescents, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12560844/ — fonte nacional para diagnóstico e tratamento.
+10. **ASGE.** Guideline on role of endoscopy in evaluation/management of choledocholithiasis, 2019. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis — critérios alto/intermediário/baixo risco.
+11. **ASGE.** Guideline on management of cholangitis. 2021. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-management-of-cholangitis — drenagem e tempo conforme gravidade.
+12. **ASGE.** Guideline on post-ERCP pancreatitis prevention strategies. 2023. https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-post-ercp-pancreatitis-prevention-strategies-summary-and-recommendations — AINE retal, fio-guia, stent, hidratação.
+13. **Veitch AM et al.** BSG/ESGE guideline update: Endoscopy in patients on antiplatelet or anticoagulant therapy. *Gut.* 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8390296/ — risco de procedimentos, prazo de suspensão e reintrodução; **não usar guideline superada de 2016** para intervalos.
+14. **Chey WD et al.** ACG Clinical Guideline: Treatment of *Helicobacter pylori* Infection. *Am J Gastroenterol.* 2024. https://gi.org/journals-publications/ebgi/schoenfeld_sep2024/ — teste de cura e precauções com PPI/antibióticos.
+15. **World Gastroenterology Organisation** e **sociedades brasileiras**: localizar protocolos operacionais nacionais de hemorragia digestiva, endoscopia e segurança, especialmente em rede SUS, antes de publicação; **não incluídos como “revisados” sem conferir documento integral.**
+
+**Diferenças que não podem ser ocultadas:** a ESGE 2026 de úlcera não substitui Baveno VII de varizes; ACG 2023 de hemorragia baixa não exige colonoscopia ≤24h em todos; a ASGE para corpo estranho inclui crianças em alguns materiais, enquanto ESGE 2016 é especificamente adulta; os intervalos de antitrombóticos de 2021 substituem orientações de 2016 e dependem de risco. Revisão por especialista ainda é pendência editorial.
+
+
 ## 11. Pendências obrigatórias antes de aprovação
 
-- Expandir substancialmente para padrão de profundidade do lead (~60 mil caracteres úteis).
+- Meta de profundidade textual superada; agora auditar **conteúdo útil**, redundância, nuance clínica e consistência científica com diretrizes e realidade SUS, não aumentar apenas para inflar tamanho.
 - Validar recomendações contra diretrizes atuais e protocolos brasileiros; incluir doses somente após checagem.
 - Construir tabelas completas de indicação/contraindicação, manejo de antitrombóticos, estigmas e timing.
-- Curar ao menos dez imagens endoscópicas com fonte, licença e direitos de uso comprovados; não incorporar imagens não licenciadas.
+- Foram identificados 13 candidatos visuais em páginas de origem e 10+ com declaração de licença aberta, mas **falta auditoria visual individual, aprovação editorial e incorporação**. Não usar arquivo/imagem sem licença e autoria comprovadas.
 - Revisar os quatro casos e seis questões por médico responsável.
 - Converter para layout LURIA e testar responsividade sem deploy nesta etapa.
