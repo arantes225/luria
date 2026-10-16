@@ -602,6 +602,32 @@ A necessidade de via aérea avançada depende de proteção, ventilação, oxige
 
 **Raciocínio:** CO₂ cai rápido; rim não excreta imediatamente a reserva adicional de bicarbonato. Uma alcalose pós-hipercápnica pode surgir, com riscos eletrolíticos e de ventilação. **Conduta:** avaliação da ventilação, ajustes seguros conforme fisiologia, correção de K/cloro e monitorização, sem tentar corrigir tudo com medicação isolada. **Por que importa:** intervalo de compensação renal é componente clínico, não apenas cálculo.
 
+### Caso K — Perda intestinal de bicarbonato e função renal preservada
+
+**Apresentação:** mulher de 44 anos com diarreia abundante há quatro dias, tontura ortostática e fraqueza. Gasometria arterial: pH **7,29**, PaCO₂ **30 mmHg**, HCO₃⁻ **14 mEq/L**. Eletrólitos séricos próximos da coleta: Na **139**, Cl **114**, K **3,2 mEq/L**; albumina preservada. Eletrólitos urinários de amostra adequada: Naᵤ **35**, Kᵤ **20**, Clᵤ **80 mEq/L**.
+
+**Pergunta clínica:** há acidose metabólica simples, processo misto ou ATR? De que maneira o rim está respondendo à perda de base?
+
+**Cálculo 1 — AG sérico:** 139 − (114+14) = **11 mEq/L**, compatível com acidose hiperclorêmica sem aumento expressivo do AG se a referência do laboratório for adequada.
+
+**Cálculo 2 — compensação respiratória:** Winter = 1,5×14+8 = **29 ±2 mmHg**. PaCO₂ observada de 30 mmHg é coerente com compensação aproximada, sem evidência aritmética convincente de um distúrbio respiratório adicional.
+
+**Cálculo 3 — AG urinário:** 35+20−80 = **−25 mEq/L**. Em contexto de diarreia e função renal preservada, isso é coerente com excreção aumentada de NH₄Cl e resposta apropriada à perda extrarrenal de bicarbonato. A hipótese principal é acidose metabólica hiperclorêmica por perdas digestivas, não ATR baseada apenas no pH.
+
+**Exames e conduta:** avaliar sinais de hipovolemia, perfusão, função renal, K, Mg, história de medicamentos e causa da diarreia. Repor perdas e eletrólitos de forma monitorada e tratar a etiologia; repetir exames conforme gravidade e resposta. **Por que o caso importa:** mostra que ânion gap urinário negativo não mede amônio diretamente, mas pode ajudar na distinção entre perda digestiva e defeito tubular.
+
+### Caso L — Cetoacidose tratada, cetonemia resolvida e bicarbonato ainda baixo
+
+**Apresentação:** homem de 29 anos, internado por cetoacidose diabética, melhora clinicamente após tratamento protocolar. No retorno, apresenta glicose **178 mg/dL**, β-hidroxibutirato sérico **0,4 mmol/L**, pH venoso **7,32** e bicarbonato **17 mEq/L**. Na **139**, Cl **111**, PaCO₂ medida na gasometria arterial **34 mmHg** quando obtida amostra arterial em avaliação paralela. Cetonúria semiquantitativa permanece positiva.
+
+**Raciocínio:** AG = 139−(111+17) = **11 mEq/L**. A combinação de baixo bicarbonato e cloro relativamente alto pode decorrer de acidose metabólica hiperclorêmica durante recuperação, sobretudo após fluidoterapia rica em cloreto e excreção urinária de ânions cetônicos. A cetonúria positiva pode persistir porque a conversão de β-hidroxibutirato em acetoacetato altera o teste urinário.
+
+**Critério contemporâneo:** o consenso conjunto de 2024 utiliza **β-hidroxibutirato <0,6 mmol/L** e **pH venoso ≥7,3 ou HCO₃⁻ ≥18 mmol/L** para resolução da CAD, integrado à situação clínica. Neste exemplo, a β-hidroxibutirato é baixa e o pH venoso atende ao critério, mesmo com bicarbonato 17 e cetonúria positiva. O AG não deve ser tomado como indicador primário de resolução quando cetonemia quantitativa está disponível.
+
+**Conduta contextual:** antes da transição do tratamento, confirmar estabilidade, possibilidade de alimentação, eletrólitos, K, causa desencadeante e plano de insulina conforme protocolo. Não interromper conduta apenas porque o AG ficou normal; também não prolongar automaticamente o tratamento de CAD baseado somente na persistência da cetonúria. **Por que importa:** diferencia resolução bioquímica da cetose de normalização imediata de todas as variáveis ácido-base.
+
+**Fonte:** consenso ADA/EASD/JBDS/AACE/DTS, *Diabetes Care* 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/ .
+
 ## 21. Questões avançadas — respostas explicadas em todas as alternativas
 
 ### Questão 7 — Intoxicação por salicilatos
