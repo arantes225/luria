@@ -228,3 +228,272 @@ Ensinar a reconhecer olhos fundos, irritabilidade excessiva, pouca urina, incapa
 | Alergia alimentar | Diarreia e às vezes sangue/muco | Relação a exposição, padrão etário, exclusão de infecção |
 | Colite por C. difficile | Diarreia após antibiótico | Idade adequada para teste e critérios de doença, colonização em bebês |
 | Constipação com escape | "Diarreia" de pequenas porções | Fezes retidas, história de constipação e escape |
+
+
+## 13. Raciocínio clínico passo a passo em três apresentações fundamentais
+
+### 13.1 Criança pequena com diarreia aquosa e boa perfusão
+
+Primeiro confirmar mudança verdadeira de padrão das fezes; uma criança em aleitamento exclusivo pode evacuar frequentemente sem doença. Segundo avaliar idade, capacidade de beber, estado mental, diurese e perdas estimadas. Terceiro investigar sinais de alarme (sangue, vômitos persistentes, dor focal, toxemia). Em criança clinicamente hidratada, alerta e sem fatores especiais, o **Plano A** com SRO após perdas, aleitamento/alimentação habitual e orientação de retorno é suficiente na maior parte das vezes. Não pedir cultura fecal "para saber qual vírus" quando resultado não altera conduta.
+
+O seguimento é essencial: cuidador deve compreender que o objetivo não é parar cada evacuação, mas preservar hidratação e recuperação; se não melhora em dois dias ou surge piora, repetir avaliação conforme orientação brasileira. Se família não consegue oferecer SRO, há vulnerabilidade de acesso ou lactente muito pequeno, o limiar para observação é diferente, mesmo que sinais atuais sejam discretos.
+
+### 13.2 Criança com diarreia sanguinolenta, febre e dor
+
+A diarreia sanguinolenta sugere lesão inflamatória, mas etiologia pode variar. Shigella e Campylobacter são relevantes, mas STEC deve ser considerado, sobretudo com cólicas intensas, pouca febre ou surto relacionado a alimento. Avaliar estado geral, hemograma/plaquetas e função renal se risco de SHU, obter exames de fezes específicos conforme disponibilidade, e discutir antibiótico **por cenário**, não simplesmente administrar metronidazol ou ciprofloxacino adulto.
+
+**OMS 2024:** recomenda antibiótico quando há diarreia com sangue em crianças até dez anos, em contraste com recomendação mais restritiva de uma página geral brasileira que o reserva em disenteria com comprometimento geral. Essa divergência é real e deve ser explicada ao aluno em vez de ocultada. Em suspeita de STEC, o potencial de SHU muda decisão e o acompanhamento de rim e hemograma passa a ser prioritário. Se o paciente está toxemiado ou com sepse, a abordagem hospitalar não deve aguardar exame de fezes.
+
+### 13.3 Diarreia prolongada e perda ponderal
+
+Em doença ≥14 dias, avaliar crescimento, evolução do peso, dieta, exposição à água não tratada, viagens, imunossupressão, antibióticos, fezes gordurosas, sangue e sintomas sistêmicos. Parasitos como Giardia/Cryptosporidium e intolerância secundária pós-infecciosa entram na investigação, além de celíaca e condições inflamatórias. Não presumir "é uma virose muito demorada" sem explorar déficit ponderoestatural, mas também não concluir doença grave a partir de um dia extra de fezes pastosas em criança com crescimento normal.
+
+## 14. Casos clínicos autorais — seis cenários que mudam conduta
+
+### Caso 1 — Gastroenterite aquosa viral, sem desidratação
+
+**Apresentação:** menina de 14 meses, vacinação em dia, apresenta três dias de fezes aquosas e vômitos no primeiro dia. Pai e irmão tiveram sintomas semelhantes. Está alerta, brinca, ingere leite materno e refeições, diurese preservada, boa perfusão, sem sangue nas fezes.
+
+**Hipótese:** gastroenterite viral, incluindo norovírus/rotavírus entre possibilidades, sem desidratação clinicamente relevante.
+
+**Raciocínio:** agrupamento familiar, início agudo e recuperação dos vômitos favorecem etiologia viral. Não há sinais de infecção bacteriana invasiva, desidratação ou abdome cirúrgico. Identificar o vírus por PCR não modificará tratamento na maioria dos casos.
+
+**Exames:** nenhum exame de fezes rotineiro, após avaliação clínica adequada. Pesar e comparar peso quando disponível.
+
+**Conduta:** Plano A e prevenção de desidratação com SRO adequada, manter amamentação/dieta, higiene e vigilância de diurese. Orientar retorno por sangue, sede importante, oligúria, vômitos recorrentes, letargia ou piora. Avaliar zinco segundo norma local, reconhecendo atualização OMS 2024.
+
+**Por que importa:** sustenta antibioticoterapia parcimoniosa e ensina que prognóstico depende mais da capacidade de manter líquidos que do nome do vírus.
+
+### Caso 2 — Disenteria com febre e tenesmo
+
+**Apresentação:** menino de 4 anos, febre alta, dor cólica, fezes pequenas e muito frequentes com muco e sangue, tenesmo e recusa parcial alimentar. Outra criança da mesma creche apresentou quadro semelhante. Perfusão preservada, mas irritado.
+
+**Hipótese:** disenteria bacteriana, especialmente Shigella, com diferenciais Campylobacter, Salmonella invasiva, STEC e doença inflamatória.
+
+**Raciocínio:** presença de sangue e tenesmo sugere acometimento colônico. Epidemiologia de creche favorece transmissão pessoa-pessoa. A OMS 2024 recomenda antibiótico em diarreia com sangue, mas identificar risco de STEC e gravidade é importante antes de selecionar agente; a norma geral brasileira enfatiza comprometimento geral.
+
+**Exames:** teste fecal/cultura ou PCR conforme disponibilidade, incluindo capacidade de detectar toxina de Shiga, e hemograma/eletrólitos conforme gravidade. Notificação/investigação de agrupamento conforme fluxo local.
+
+**Conduta:** hidratação, reavaliação da perfusão e necessidade de internamento, tratamento antibiótico selecionado pelo pediatra conforme contexto e resistência/protocolo; vigilância da diurese, sangue e possível SHU; educação de contatos/creche.
+
+**Por que importa:** mostra que "sangue nas fezes" muda conduta e diferencial, mas não permite escolher antibiótico sem raciocinar sobre STEC.
+
+### Caso 3 — Oligúria e palidez após diarreia sanguinolenta
+
+**Apresentação:** criança de 6 anos teve diarreia sanguinolenta há cinco dias, agora as fezes melhoraram, mas está pálida, prostrada e urinando muito pouco. PA elevada para idade. Hemograma: Hb 7,8 g/dL, plaquetas 55 mil/mm³. Creatinina aumentada e DHL elevada; esfregaço mostra esquizócitos.
+
+**Hipótese:** síndrome hemolítico-urêmica pós-diarréica associada a STEC, até prova em contrário.
+
+**Raciocínio:** tríade de anemia hemolítica microangiopática, plaquetopenia e lesão renal, após disenteria, define síndrome clínica, que não se explica por déficit hídrico isolado. O risco persistiu **mesmo depois de fezes melhorarem**. Hipertensão/oligúria podem sinalizar IRA significativa.
+
+**Exames:** hemograma seriado, reticulócitos, DHL, bilirrubinas, haptoglobina/esfregaço, função renal e eletrólitos, urina, pesquisa fecal específica de toxina de Shiga quando possível, acompanhamento de diurese e PA.
+
+**Conduta:** internação e equipe pediátrica/nefrológica, suporte hemodinâmico e renal/eletrolítico, avaliação de transfusão e diálise conforme indicação; evitar drogas nefrotóxicas, antimotilidade e antibiótico empírico para STEC sem justificativa especializada.
+
+**Por que importa:** o aluno aprende que a complicação perigosa pode aparecer na fase de aparente recuperação intestinal.
+
+### Caso 4 — Diarreia aquosa maciça, hipovolemia grave e risco coletivo
+
+**Apresentação:** criança de 8 anos, após deslocamento para área com falha de saneamento, apresenta diarreia muito volumosa sem sangue, vômitos e sede extrema. Chega sonolenta, taquicárdica, com extremidades frias, pulsos fracos e oligúria. Outras pessoas de mesmo alojamento adoeceram.
+
+**Hipóteses:** gastroenterite secretória grave; cólera é diferencial epidemiológico relevante se há circulação/surto, entre outras infecções.
+
+**Raciocínio:** o mecanismo secretório causa perdas grandes e rápidas, podendo progredir a choque. O agente é importante para vigilância, mas **ressuscitação é anterior ao resultado microbiológico**. Agrupamento de casos exige comunicação à rede de saúde pública e investigação de água/alimentos.
+
+**Exames:** glicemia, eletrólitos e função renal conforme gravidade; amostras de fezes para investigação de cólera e outros agentes segundo vigilância.
+
+**Conduta:** atendimento hospitalar imediato, Plano C/ressuscitação conforme estado e protocolo, monitorização repetida, antibioticoterapia quando cólera grave for plausível/confirmada conforme resistência e orientação; equipe de vigilância investiga exposição e medidas de proteção da comunidade.
+
+**Por que importa:** uma gastroenterite pode ser emergência sistêmica e coletiva, não mero distúrbio intestinal.
+
+### Caso 5 — Lactente com sangue nas fezes e hipótese de invaginação
+
+**Apresentação:** lactente de 10 meses, previamente bem, desenvolve episódios de choro intenso com flexão das pernas, palidez e vômitos. Entre crises fica letárgico. Evacuação apresenta muco e sangue; não tem quadro diarreico aquoso contínuo típico.
+
+**Hipótese:** invaginação intestinal deve ser considerada imediatamente, com diferenciais disenteria e outras causas de abdome agudo.
+
+**Raciocínio:** dor em crises, letargia intermitente e sangue/muco compõem sinal de obstrução/sofrimento intestinal. A apresentação pode imitar gastroenterite, mas a necessidade de imagem e desinvaginação urgente muda completamente conduta. Não basta prescrever SRO e antibiótico domiciliar.
+
+**Exames:** ultrassonografia abdominal dirigida com equipe experiente e avaliação de perfusão/hidratação; imagem adicional conforme cirurgia pediátrica.
+
+**Conduta:** atendimento hospitalar/cirurgia pediátrica imediata, jejum e suporte conforme indicação, redução por enema terapêutico quando elegível e recurso, cirurgia quando necessário. Não atrasar investigação por cultura fecal.
+
+**Por que importa:** ensina diagnóstico diferencial que salva intestino e evita necrose/perfuração.
+
+### Caso 6 — Diarreia persistente, distensão e falha de crescimento
+
+**Apresentação:** menina de 3 anos, diarreia há 21 dias, fezes volumosas de odor fétido, gases, distensão e perda ponderal. Frequenta creche e a família relata consumo eventual de água de nascente sem tratamento. Sem febre alta ou sangue importante.
+
+**Hipóteses:** giardíase, intolerância transitória à lactose pós-infecciosa, doença celíaca ou outras síndromes de má absorção.
+
+**Raciocínio:** duração ≥14 dias e perda ponderal afastam simples manejo de gastroenterite viral breve. A exposição ambiental favorece Giardia, que deve ser pesquisada por antígeno/PCR ou parasitológico adequado. O teste positivo não dispensa reavaliar ganho ponderal após terapia.
+
+**Exames:** peso/curva de crescimento, exames de fezes dirigidos para Giardia e demais etiologias, hemograma/eletrolíticos ou investigação de celíaca se contexto justificar.
+
+**Conduta:** reidratar conforme estado, manter nutrição, tratar protozoário comprovado ou fortemente sustentado por equipe pediátrica e protocolo, orientar tratamento da água e higiene de contatos; reavaliar crescimento e persistência de sintomas.
+
+**Por que importa:** diarreia persistente exige olhar nutrição e agente, não apenas repetir SRO por semanas sem investigação.
+
+## 15. Doze questões originais com alternativas comentadas
+
+### Questão 1 — Classificação temporal
+Criança com fezes aquosas há 17 dias e perda ponderal leve apresenta:
+A. Diarreia aguda clássica, sempre.
+B. Diarreia persistente (≥14 dias na definição OMS), que requer investigar nutrição e etiologia.
+C. Constipação obrigatoriamente.
+D. Diarreia crônica definida universalmente por apenas 48 horas.
+**Gabarito B.** A ignora duração; C não decorre do quadro; D confunde conceitos. **Minirrevisão:** a persistência muda o eixo diagnóstico, sobretudo se há perda ponderal.
+
+### Questão 2 — Síndrome diarreica sem desidratação
+Lactente com fezes aquosas leves, ativo, diurese preservada, sem sinais de gravidade. Qual conduta?
+A. Manter alimentação e amamentação, oferecer SRO após perdas e orientar retorno.
+B. Jejum absoluto e antibiótico por sete dias.
+C. Loperamida para interromper todas as evacuações.
+D. Suspender leite materno por uma semana.
+**Gabarito A.** B causa risco nutricional e uso inadequado de ATB. C não é rotina pediátrica e pode fazer mal. D perde proteção nutricional/hídrica. **Minirrevisão:** Plano A é prevenção de desidratação.
+
+### Questão 3 — Mecanismo SRO
+A eficácia da SRO de baixa osmolaridade durante diarreia secretória decorre principalmente de:
+A. Erradicação de todas as bactérias.
+B. Cotransporte intestinal de sódio e glicose com absorção de água.
+C. Paralisação da peristalse.
+D. Ausência total de eletrólitos no preparo.
+**Gabarito B.** A/C descrevem efeitos que SRO não proporciona. D torna solução inadequada. **Minirrevisão:** reidratar funciona apesar de diarréia persistente.
+
+### Questão 4 — Etiologia em surto institucional
+Três crianças da mesma creche e dois cuidadores têm vômitos e diarreia abruptos em período curto. Qual agente é particularmente plausível?
+A. Norovírus.
+B. Doença celíaca em todos simultaneamente.
+C. Fibrose cística adquirida na mesma semana.
+D. Insuficiência pancreática genética de surto.
+**Gabarito A.** B/C/D não produzem surto agudo pessoa-pessoa. **Minirrevisão:** padrão epidemiológico dá pistas sem confirmação etiológica.
+
+### Questão 5 — Antibiótico na diarreia aquosa
+Menino previamente saudável, gastroenterite aquosa leve, sem sangue ou sinais de invasão. Qual afirmação se alinha OMS 2024?
+A. Recomendar antibiótico para todos.
+B. Sugerir não usar antibiótico na diarreia aquosa aguda não complicada.
+C. Dar quinolona em toda febre baixa.
+D. Dar metronidazol preventivo a todos os contatos.
+**Gabarito B.** A/C/D ignoram risco/benefício e resistência. **Minirrevisão:** etiologia predominantemente autolimitada, tratar perdas e nutrição.
+
+### Questão 6 — SHU
+Após diarreia sanguinolenta, criança desenvolve anemia com esquizócitos, plaquetopenia e IRA. Qual síndrome?
+A. Síndrome hemolítico-urêmica.
+B. Intolerância isolada à lactose.
+C. Rotavirose leve sem complicações.
+D. Hipervitaminose A.
+**Gabarito A.** B/C/D não explicam tríade hematológica/renal. **Minirrevisão:** STEC lesa endotélio e pode causar microangiopatia.
+
+### Questão 7 — Antibióticos quando STEC é suspeita
+Criança com diarreia sanguinolenta e exposição sugestiva a STEC. Melhor princípio:
+A. Prescrever antibiótico automaticamente antes de avaliar risco de SHU.
+B. Avaliar clinicamente e pesquisar STEC quando indicado, evitando antibiótico e antimotilidade em suspeita forte pelo risco de SHU.
+C. Usar loperamida na criança pequena para prevenir SHU.
+D. Não acompanhar diurese.
+**Gabarito B.** A pode causar dano em STEC; C aumenta risco de complicações; D perde IRA precoce. **Minirrevisão:** sangue nas fezes demanda raciocínio etiológico.
+
+### Questão 8 — Zinco segundo OMS 2024
+A atualização OMS para crianças até dez anos sugere:
+A. Zinco 5 mg/dia por até 14 dias, de modo condicional e com evidência de baixa certeza.
+B. Zinco 100 mg/dia obrigatório a todos.
+C. Nunca usar zinco em diarreia.
+D. Ozinco substitui SRO.
+**Gabarito A.** B é dose inadequada sem evidência. C contradiz recomendação de suplemento. D ignora tratamento fundamental. **Minirrevisão:** OMS 2024 difere das doses de protocolos mais antigos, e Brasil deve verificar norma local.
+
+### Questão 9 — Probióticos
+Quanto à diarreia aquosa aguda em crianças até dez anos, a OMS 2024:
+A. Recomenda probiótico universal e obrigatório.
+B. Sugere contra uso rotineiro de probióticos (recomendação condicional).
+C. Considera probiótico substituto de água e sais.
+D. Afirma efeito idêntico de todas as cepas.
+**Gabarito B.** A/C/D extrapolam evidência e segurança. **Minirrevisão:** recomendação OMS atual é desfavorável ao uso rotineiro.
+
+### Questão 10 — Diarreia persistente
+Menina apresenta diarreia por três semanas, distensão e perda de peso após uso de água não tratada. Qual hipótese merece investigação?
+A. Giardíase.
+B. Apenas quadro viral que obrigatoriamente resolve sem avaliação.
+C. Neoplasia intestinal em todas as crianças.
+D. Crise asmática.
+**Gabarito A.** B minimiza risco de desnutrição/parasitas; C extrapola raridade; D não causa quadro. **Minirrevisão:** duração, evolução ponderal e água sinalizam parasitose.
+
+### Questão 11 — Diagnóstico alternativo à gastroenterite
+Lactente com dor abdominal episódica intensa, palidez, vômitos e sangue/muco nas fezes deve ser avaliado urgentemente para:
+A. Invaginação intestinal.
+B. Dermatite atópica.
+C. Otite externa.
+D. Rinite alérgica.
+**Gabarito A.** B/C/D não explicam abdome agudo intermitente. **Minirrevisão:** invaginação pode mascarar-se como diarreia.
+
+### Questão 12 — Rotavírus em 2026
+Qual orientação corresponde ao calendário nacional brasileiro de 2026?
+A. Aplicação rotineira de duas doses aos 2 e 4 meses, observando janelas oficiais estendidas em atrasos.
+B. A vacina só existe depois dos dez anos.
+C. Não há necessidade de verificar janelas etárias.
+D. A vacina protege contra todas as causas de disenteria bacteriana.
+**Gabarito A.** B/C ignoram PNI, D erra alvo etiológico da vacina. **Minirrevisão:** conferir o calendário nacional vigente em vez de usar página antiga com corte diferente.
+
+## 16. Algoritmo de revisão de alto rendimento
+
+**Fezes líquidas agudas → avaliar criança (gravidade antes do agente) →**
+- **Choque/desidratação grave:** cuidado urgente, reidratação venosa adaptada e monitorização, enquanto se investiga etiologia.
+- **Sem desidratação:** Plano A, SRO/prevenção, manter aleitamento e alimentação, retorno com sinais de alarme.
+- **Desidratação sem gravidade e consegue beber:** Plano B com SRO supervisionada, reavaliando até recuperação.
+- **Sangue/disenteria:** avaliar toxemia, suspeita STEC e SHU, necessidade de exame fecal e antibiótico de acordo com normas/risco.
+- **Diarreia ≥14 dias:** avaliar crescimento e nutrição, protozoários, intolerância secundária e outras doenças.
+- **Dor focal/abdome agudo:** investigar invaginação, apendicite e obstrução antes de rotular "virose".
+- **Suspeita de surto:** comunicar vigilância e investigar fonte, higiene e água.
+
+| Pergunta de prova | Resposta base |
+|---|---|
+| Diarreia aquosa sem gravidade pede antibiótico? | Em geral não |
+| A SRO reduz diarreia por matar agentes? | Não, repõe fluidos e eletrólitos |
+| Rotavirose exige suspender aleitamento? | Não |
+| Sangue na diarreia = Shigella obrigatória? | Não, lembrar STEC e diferenciais |
+| Tríade anemia hemolítica + plaquetas baixas + IRA | SHU |
+| Diarreia por mais de duas semanas com falha ponderal | Persistente, investigar |
+| OMS 2024: zinco atual | Sugestão condicional 5 mg/dia, checar protocolo brasileiro |
+| OMS 2024: probióticos na diarreia aquosa | Sugere contra uso rotineiro |
+| PNI rotavírus 2026 | Rotina 2 e 4 meses, janelas estendidas oficiais |
+| Criança com dor episódica, letargia, sangue/muco | Considerar invaginação intestinal |
+
+## 17. Camada visual premium — 12 candidatas, sem uso automático
+
+1. **Mecanismo de absorção glicose–sódio no enterócito**, diagrama vetorial original para SRO, legenda do mecanismo preservado em diarreia secretória.
+2. **Esquema de diarreia secretória x osmótica x inflamatória**, três painéis autorais, sem figuras do Drive.
+3. **Microscopia do rotavírus** de fonte institucional com licença comercial explícita, se houver.
+4. **Imagem de norovírus em microscopia eletrônica** com fonte e direitos verificados, para surtos e transmissão.
+5. **Micrografia de Giardia duodenalis** ou parasitologia autorizada, com identificação morfológica.
+6. **Quadro ilustrado de sinais de desidratação**, fotografia ou esquema com consentimento/licença e limite de interpretação.
+7. **Fluxograma original de escolha A/B/C**, conciso, incluindo critérios de alarme, remetendo à 053 para cálculo.
+8. **Esquema da microangiopatia na SHU**, endotélio, esquizócito, plaquetas e rim, vetorial autoral.
+9. **Gráfico de evolução pós-STEC**, fezes sanguinolentas → melhora intestinal → IRA/plaquetopenia (linha de tempo didática sem dados reais).
+10. **Ultrassom real de invaginação**, sinal do alvo, com autorização editorial para diferenciar gastroenterite.
+11. **Fluxograma de testes fecais**, quando colher cultura/PCR/toxina de Shiga versus quando não colher.
+12. **Calendário vacinal de rotavírus 2026**, esquema gráfico original de 2 e 4 meses e janelas oficiais com referência, sem copiar layout governamental.
+
+Todas dependem de aprovação na fila Admin. Imagens externas precisam de licença apropriada (incluindo uso comercial), diagnóstico confiável e legenda crítica. Não inserir automaticamente imagens do documento privado do Drive.
+
+## 18. Referências e pendências científicas
+
+- Ministério da Saúde. Doenças diarreicas agudas. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda .
+- WHO. Guideline on management of pneumonia and diarrhoea in children up to 10 years of age. 2024. https://www.who.int/publications/i/item/9789240103412 .
+- WHO via NCBI Bookshelf. Evidence and recommendations, zinc, antimicrobianos e probióticos. https://www.ncbi.nlm.nih.gov/books/NBK611550/ .
+- Ministério da Saúde. Calendário Nacional de Vacinação, 2026. https://www.gov.br/saude/pt-br/vacinacao/calendario .
+- SBP. Diarreias, informações para famílias e recomendações gerais. https://www.sbp.com.br/diarreias/ .
+
+### Checklist de qualidade — estado real
+
+- [x] Documento correlato do Drive aberto e lido; especialidade **adulto** corretamente declarada como limitação; autoria Estratégia MED não presumida.
+- [x] Manuscrito 053 reaberto e utilizado para definir fronteira curricular.
+- [x] Revisão externa WHO 2024/MS 2026/SBP e indicação de divergência sobre zinco, probióticos e antibióticos.
+- [x] Fisiopatologia, etiologias, exames seletivos, SHU, tratamento, vacina, complicações e prevenção.
+- [x] Seis casos clínicos originais, doze questões justificadas.
+- [x] Doze candidatas visuais especificadas, sem incorporar imagens privadas.
+- [ ] **Benchmark equivalente de diarreia pediátrica** ainda não localizado (Drive tem apenas gastroenterologia adulta); não declarar equivalente lido.
+- [ ] Conferência do calendário PNI 2026 contra última instrução normativa, especialmente limites em atraso e contraindicações.
+- [ ] Revisão pediátrica de antibióticos de disenteria, doenças invasivas e doses nacionais; conferir STEC antes de prescrever.
+- [ ] Verificar divergências de **zinco OMS 2024 versus protocolo brasileiro institucional** e corrigir também a aula 053.
+- [ ] Checar se 60.000 caracteres **didáticos úteis** foram alcançados excluindo casos, questões, tabelas e referências, sem inflar por repetição.
+- [ ] Auditoria de autossuficiência, licença de imagens, tradução para renderer HTML, desktop/PWA e publicação apenas após aprovação.
+
+**Parecer:** manuscrito autoral didático e avançado, **não certificado/não publicado**. A aula 053 continua detentora dos detalhes de cálculo de fluidos para evitar repetição desnecessária.
