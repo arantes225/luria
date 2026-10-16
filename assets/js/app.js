@@ -1152,6 +1152,8 @@ const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
+  aplicar: { title: "Aplicar", eyebrow: "Processos seletivos", helper: "Prepare sua candidatura." },
+  curriculo: { title: "Currículo", eyebrow: "Aplicar", helper: "Organize sua trajetória acadêmica." },
   aprender: { title: "Aprender", eyebrow: "Central de aprendizagem", helper: "Escolha como você quer aprender agora." },
   consolidar: { title: "Consolidar", eyebrow: "Fixação e prática", helper: "Revise, pratique e transforme conteúdo em conhecimento utilizável." },
   jogos: { title: "Jogos", eyebrow: "Aprender jogando", helper: "Explore desafios e treine medicina de um jeito diferente." },
@@ -1497,6 +1499,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
           <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
         </a>
+
+        <a class="nav-link ${["aplicar", "curriculo"].includes(page) ? "active" : ""}" href="/aplicar/"><span class="nav-icon">${luriaIcon("simulation")}</span><span>Aplicar</span></a>
 
         <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
           <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
