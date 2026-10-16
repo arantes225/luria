@@ -1,0 +1,82 @@
+-- LURIA / Bulário: lote 11 (medicamentos 501–550), 2026-10-15
+-- Triagem de documentos/riscos, NÃO valida doses científicas.
+-- Preserva status principal e dados clínicos originais; idempotente por quality_audit.
+WITH items(id,priority,clinical_area,action_required,prescription_copy_blocked) AS(
+ VALUES
+(309,'P1','Cardiologia/APS','Candesartana + hidroclorotiazida 8/12,5 e 16/12,5 mg: conferir titular cada componente, função renal, sódio/potássio e contraindicação gestacional.',false),
+(472,'P1','Otorrinolaringologia/Pneumologia','Beclometasona cadastrada como spray nasal 50 mcg/jato; distinguir formulações intranasais de inaladores para asma, com dose e indicação próprias.',false),
+(476,'P0','Pneumologia/Alergia','Omalizumabe: pó 150 mg e seringas SC 75/150/300 mg reunidos; conferir indicação, doses específicas por peso/IgE quando aplicável, preparo e monitorização de anafilaxia.',true),
+(507,'P0','Cardiologia/Urologia','Sildenafila oral 25/50/100 mg: distinguir disfunção erétil de hipertensão pulmonar e apresentações/regimes próprios; contraindicar coadministração com nitratos e revisar interações.',true),
+(522,'P1','Infectologia/Estomatologia','Miconazol gel oral 20 mg/g: dose e aplicação diferem de cremes/óvulos tópicos; conferir idade, risco de engasgo em lactentes e interações sistêmicas (anticoagulantes).',false),
+(528,'P1','Gastroenterologia/APS','Senosídeos A+B sem concentração específica nem fonte individual; identificar dose real por comprimido, idade, contraindicação em obstrução e duração de uso.',false),
+(532,'P1','Cardiologia/Dislipidemia','Pravastatina 10/20/40 mg sem URL por apresentação: revisar dose por risco cardiovascular, função renal e interações; confirmar produto vigente.',false),
+(534,'P1','Pneumologia/DPOC','Umeclidínio Ellipta 62,5 mcg por inalação sem URL: confirmar dispositivo e modo de uso, indicação de manutenção da DPOC e que não é terapia de resgate.',false),
+(541,'P1','Gastroenterologia/Hepatologia','Ácido ursodesoxicólico cápsulas/comprimidos 150/300 mg agrupados sem fonte: validar dose por kg, indicação colestática, outras apresentações e acompanhamento hepático.',false),
+(545,'P0','Urologia/Cardiologia','Tadalafila 5/10/20 mg sem URL individual: separar regimes para disfunção erétil, HPB e hipertensão pulmonar; não intercambiar indicações/doses, observar contraindicação com nitratos.',true),
+(554,'P1','Psiquiatria','Clomipramina 10/25/75 mg em comprimidos/drágeas, formulação genérica sem fonte: conferir eventual liberação modificada, risco de QT, toxicidade anticolinérgica e interações serotoninérgicas.',false),
+(565,'P0','Psiquiatria','Ziprasidona reúne cápsulas orais 40/80 mg e solução IM 20 mg/mL sem fonte específica; separar vias e monitorar QT, alterações eletrolíticas e indicação de agitação.',true),
+(572,'P0','Infectologia/UTI','Ceftolozana + tazobactam descrita como frascos IV 1g/0,5g e 2g/1g sem URL: confirmar força/registro, indicação, ajuste renal, dose por ambos os componentes e infusão.',true),
+(576,'P1','Endocrinologia/Diabetes','Pioglitazona 15/30/45 mg sem fonte: revisar contraindicação em insuficiência cardíaca, retenção hídrica, fígado, fraturas e combinação com outros hipoglicemiantes.',false),
+(582,'P1','Cardiologia/Dislipidemia','Ezetimiba + sinvastatina em várias proporções, incluindo 10/80 em certos mercados; confirmar forças brasileiras vigentes, interações, risco muscular e restrições da dose alta.',false),
+(595,'P0','Infectologia/Onco-hematologia','Posaconazol agrupa comprimidos gastrorresistentes, suspensão oral e solução IV sem fonte; não usar a mesma posologia entre formas devido à absorção; validar infusão, interações e função hepática.',true),
+(602,'P1','Urologia','Solifenacina 5/10 mg sem URL: revisar retenção urinária, glaucoma de ângulo fechado, QT/efeitos anticolinérgicos e ajustes renal/hepático.',false),
+(603,'P0','Infectologia/Hospitalar','Eravaciclina IV sem URL e sem força por frasco no rótulo; confirmar disponibilidade/registro no Brasil, indicação aprovada, concentração, diluição e intervalo por protocolo.',true),
+(605,'P1','Endocrinologia/Diabetes','Metformina + saxagliptina XR combina 5/500, 5/1000 mg e outras forças sem URL; diferenciar composição, função renal, insuficiência cardíaca e formulação XR.',false),
+(614,'P1','Infectologia/Pediatria','Cefuroxima axetil oral em comprimidos e suspensão sem URL; formas podem apresentar recomendações distintas por alimento, idade, dose por peso e função renal.',false),
+(618,'P1','Cardiologia/Nefrologia','Espironolactona + hidroclorotiazida 25/25 ou 50/50 mg sem bula específica; verificar risco de hipo/hipercalemia, função renal e soma com outros diuréticos.',false),
+(620,'P0','Infectologia/UTI','Foscarnete sódico IV 24 mg/mL sem URL; revisar indicação em CMV/herpes resistente, infusão baseada em função renal, eletrólitos, convulsões e monitorização.',true),
+(621,'P1','Urologia','Oxibutinina inclui comprimido imediato, ER e xarope 1 mg/mL sem fonte; distinguir liberação/dose, efeitos anticolinérgicos e restrições por idade.',false),
+(622,'P0','Infectologia/UTI','Isavuconazônio cápsulas e IV descritos pelo equivalente de isavuconazol; documentar conversão pró-fármaco/ativo, dose de ataque/manutenção, infusão e interações antes da cópia.',true),
+(625,'P0','Emergência/Procedimentos','Uroquinase em UI para via IV/intracateter, sem fonte por produto: separar indicação e quantidade por via, risco hemorrágico e contraindicações de trombólise.',true),
+(627,'P0','Infectologia','Tedizolida 200 mg oral e IV agrupadas sem URL: conferir disponibilidade/registro, duração/indicação, modo de infusão e eventual equivalência após confirmar produto.',true),
+(632,'P1','Neurologia','Piridostigmina 60 mg, solução oral e possíveis formas ER agrupadas; conferir miastenia, horários, crise colinérgica, função renal e diferenças de liberação.',false),
+(635,'P1','Endocrinologia','Metformina + linagliptina em 2,5/500–1000 mg: confirmar concentração por comprimido, doses máximas dos componentes, TFGe e tolerabilidade gastrointestinal.',false),
+(636,'P1','Endocrinologia','Metformina + empagliflozina: combinações empagliflozina 5/12,5 mg com diferentes metforminas; revisar função renal, depleção volêmica, cetoacidose e suspensão perioperatória.',false),
+(642,'P1','Endocrinologia/Metabolismo ósseo','Teriparatida caneta 20 mcg/dose sem fonte: confirmar indicação/duração conforme registro, técnica de aplicação e cautelas em condições hipercalcêmicas.',false),
+(643,'P0','Infectologia/Hospitalar','Daptomicina IV em frascos 350/500 mg, rótulo genérico sem URL: validar mg/kg por indicação, CPK, função renal e não utilizar como substituto para pneumonia.',true),
+(645,'P0','Infectologia','Dalbavancina IV 500 mg sem fonte específica: confirmar esquema de dose única/duas doses, diluição, função renal, intervalo e necessidade de indicação validada.',true),
+(662,'P0','GO/Endocrinologia','Progesterona micronizada 100/200 mg admite uso oral ou vaginal conforme produto e indicação; fonte ausente e dois campos de segurança ausentes. Separar rigorosamente vias.',true),
+(664,'P0','Clínica/Hematologia','Ferro sacarato IV 20 mg/mL sem URL individual, dois campos ausentes: conferir mg de ferro elementar, diluição, velocidade, dose cumulativa e reações infusionais.',true),
+(667,'P0','Emergência/Toxicologia','Hidroxocobalamina IV 5 g usada como antídoto do cianeto é diferente de cianocobalamina e vitamina B12 suplementar; fonte ausente e dois campos de segurança ausentes.',true),
+(669,'P0','Infectologia','Flucitosina cápsulas 500 mg sem fonte e com campos ausentes: validar disponibilidade, dose por kg/função renal, toxicidade hematológica e necessidade de níveis séricos quando indicado.',true),
+(672,'P0','Endocrinologia/Oncologia','Denosumabe reúne Prolia 60 mg e Xgeva 120 mg em uma ficha, sem fonte e com segurança incompleta; doses/indicações/intervalos não são intercambiáveis, monitorar cálcio.',true),
+(673,'P1','Endocrinologia/Diabetes','Acarbose 50/100 mg sem fonte individual e dois campos básicos ausentes: revisar administração com a refeição, efeitos gastrointestinais, contraindicações intestinais e conduta de hipoglicemia.',false),
+(681,'P0','Emergência/Hematologia','Idarucizumabe em kit 2×2,5 g IV é agente de reversão específico da dabigatrana, não de todos anticoagulantes; fonte e dois campos de segurança ausentes.',true),
+(682,'P0','Endocrinologia/Oncologia','Lanreotida seringas de 60/90/120 mg para SC profunda sem URL e campos de segurança incompletos; validar indicação, periodicidade e diferenças de dispositivos/locais de aplicação.',true),
+(686,'P1','Nefrologia/Endocrinologia','Cinacalcete 30/60/90 mg sem fonte: revisar cálcio, PTH, contraindicação em hipocalcemia, intervalos de controle e uso por indicação.',false),
+(687,'P0','Endocrinologia/Gastroenterologia','Octreotida SC/IV de ação curta e formulação LAR IM de depósito reunidas, sem fonte por apresentação; nunca equiparar dose/intervalo ou técnica de aplicação.',true),
+(699,'P0','Anestesia/UTI','Pancurônio 2 mg/mL sem URL, dois campos de segurança faltantes: bloqueador neuromuscular com risco de paralisia sem sedação/ventilação; validar via IV, concentração e monitorização.',true),
+(702,'P0','Emergência/Cardiologia','Tenecteplase pó IV com dose dependente do peso, sem URL nem segurança completa; validar indicação aprovada e esquema específico (não extrapolar IAM para AVC), hemorragia e contraindicações.',true),
+(707,'P0','Nefrologia/Hematologia','Alfaepoetina em seringas SC/IV de múltiplas UI, sem fonte e segurança incompleta: selecionar apresentação por concentração, anemia/indicação, hemoglobina e risco trombótico.',true),
+(709,'P0','Emergência/Hematologia','Alfa-andexanete IV em frascos de 200 mg sem URL e campos incompletos: verificar situação regulatória e disponibilidade brasileiras, critérios de reversão de inibidores Xa e risco de trombose.',true),
+(710,'P0','Clínica/Dor/Pediatria','Codeína em comprimidos, solução e associações sem fonte e com segurança incompleta: restringir por idade/indicação conforme bula, metabolismo CYP2D6 e risco respiratório/opioide.',true),
+(711,'P0','Clínica/Dor/Dependência','Buprenorfina em adesivos e apresentações sublinguais com indicações e potências diferentes, sem fonte e segurança incompleta; bloquear equivalência automática das vias e doses.',true),
+(718,'P0','Hematologia','Filgrastim SC/IV 300/480 mcg sem fonte e dois campos básicos ausentes: conferir dose em mcg/kg, força/dispositivo, indicação, monitorização hematológica e biossimilar.',true),
+(720,'P0','GO/Contracepção','Ulipristal 30 mg para contracepção de emergência; não confundir com apresentações de 5 mg usadas em outros contextos/mercados. Sem URL e segurança incompleta; revisar janela de uso e interações.',true)
+), tagged AS(
+ UPDATE public.bulario_drugs d SET data=jsonb_set(d.data,'{quality_audit}',jsonb_build_object(
+  'batch','bul-11-501-550',
+  'screened_at','2026-10-15',
+  'scope','source_formulation_routes_duplicate_risks_and_medical_review_triage',
+  'scientifically_validated',false,
+  'priority',i.priority,
+  'clinical_area',i.clinical_area,
+  'action_required',i.action_required,
+  'prescription_copy_blocked',i.prescription_copy_blocked,
+  'review_status','PENDING_CLINICAL_SOURCE_REVIEW',
+  'formulation_count',jsonb_array_length(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END),
+  'missing_source_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE COALESCE(f->>'source_url','') NOT LIKE 'http%'),
+  'retailer_or_aggregator_hosted_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE lower(COALESCE(f->>'source_url','')) ~ '(consultaremedios[.]com[.]br|saudedireta[.]com[.]br|remediobarato[.]com|bula[.]com[.]br|drogasil[.]com[.]br|vteximg[.]com[.]br|onepharma[.]com[.]br|oncoexpress[.]com[.]br)'),
+  'generic_placeholder_forms',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE COALESCE(f->>'label','') ILIKE '%conforme produto%' OR COALESCE(f->>'label','') ILIKE '%conforme registro%' OR COALESCE(f->>'label','') ILIKE '%conforme mercado%'),
+  'repeated_formulation_label_groups',(SELECT count(*) FROM(SELECT lower(COALESCE(f->>'label','')) label FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f GROUP BY 1 HAVING count(*)>1) grouped),
+  'missing_core_safety_fields',to_jsonb(array_remove(ARRAY[
+   CASE WHEN NOT d.data?'renal_adjustment' THEN 'renal_adjustment' END,
+   CASE WHEN NOT d.data?'hepatic_adjustment' THEN 'hepatic_adjustment' END,
+   CASE WHEN NOT d.data?'contraindications' THEN 'contraindications' END,
+   CASE WHEN NOT d.data?'drug_interactions' THEN 'drug_interactions' END,
+   CASE WHEN NOT d.data?'adverse_reactions' THEN 'adverse_reactions' END
+  ],NULL))
+ ),true)
+ FROM items i WHERE d.id=i.id AND NOT(d.data?'quality_audit') RETURNING d.id
+)
+SELECT count(*) tagged_now,(SELECT count(*) FROM items) expected FROM tagged;
