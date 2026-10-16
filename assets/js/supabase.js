@@ -110,7 +110,7 @@ window.supabaseClient = window.supabase.createClient(
     }
     if (file.type === "image/gif" || file.type === "image/svg+xml") {
       bitmap.close?.();
-      throw new Error("GIFs animados e SVGs acima de 80 KB precisam ser reduzidos antes do envio para preservar o formato.");
+      throw new Error("GIFs e SVGs acima de 80 KB precisam ser reduzidos antes do envio para preservar o formato.");
     }
     let best = null;
     const maxDimension = Math.min(1600, Math.max(originalWidth, originalHeight));
