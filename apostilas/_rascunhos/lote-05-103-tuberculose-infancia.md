@@ -832,6 +832,42 @@ E. Padrão miliar no tórax indica TB não grave.
 **Gabarito: B.** A ignora que o critério de esquema encurtado corresponde a derrame não complicado. B incorpora estabilidade e características do derrame. C usa a idade isoladamente. D negligencia a investigação do empiema. E transforma sinal de disseminação em critério de baixa gravidade. **Mini-revisão:** localização não define sozinha gravidade.
 
 
+### Questão 16 — Resultado indeterminado do IGRA na criança contato
+
+Menina de sete anos, contato domiciliar de TB pulmonar, com doença ativa afastada após investigação apropriada, tem IGRA indeterminado. Segundo a Nota MS 2/2022, qual alternativa é correta?
+
+A. O resultado prova TB pulmonar ativa.
+B. O resultado deve ser interpretado como não reagente em qualquer idade.
+C. No cenário de contato entre dois e menos de dez anos, a orientação programática é considerar ILTB provável e avaliar tratamento preventivo.
+D. Um IGRA indeterminado em qualquer paciente, inclusive pré-transplante e adulto, equivale a infecção confirmada.
+E. Deve receber automaticamente RHZE para doença ativa por seis meses.
+
+**Gabarito: C.** A confunde teste imunológico com diagnóstico de doença. B ignora a orientação específica para criança contato. C segue a Nota 2/2022 e condiciona prevenção à exclusão de doença. D generaliza fora da população indicada. E propõe terapia curativa sem indicação. **Mini-revisão:** decisão programática por risco não significa equivalência biológica de resultados.
+
+### Questão 17 — Tratamento preventivo interrompido
+
+Criança de cinco anos, com doença ativa excluída, recebeu 3RH dispersível para prevenção, mas abandonou o acompanhamento após tomar 74 doses documentadas. Retorna assintomática semanas depois. Qual é a orientação que melhor corresponde à Nota MS 6/2024?
+
+A. O plano deve ser 74 doses desde o início, pois a meta oficial de 3RH é 72.
+B. A meta prescrita continua sendo 90 doses; no retorno após abandono, com pelo menos 72 doses, a nota admite considerar o tratamento completo após avaliação clínica e exclusão de TB ativa.
+C. Considerar tratamento de TB-doença concluído, sem avaliação, porque recebeu duas drogas.
+D. Iniciar obrigatoriamente RHZE sem considerar o estado clínico.
+E. Classificar IGRA positivo como sinal definitivo de falha terapêutica.
+
+**Gabarito: B.** A confunde exceção após abandono com duração inicialmente prescrita; B diferencia a meta de 90 doses do critério de retorno e mantém a triagem de doença; C confunde prevenção e cura; D é prescrição indevida; E utiliza teste imunológico como marcador de cura ou falha. **Mini-revisão:** 3RH preventivo tem 90 doses planejadas em três a cinco meses, e a regra de ≥72 doses aplica-se somente ao cenário especificado pela nota.
+
+### Questão 18 — Regime curto sem RX disponível
+
+Em unidade que não dispõe de radiografia, criança de oito anos com TB pulmonar provável e manifestações clínicas leves tem TRM-TB de carga baixa; não há sinais de internação nem suspeita de resistência. Conforme a Nota MS 5/2024:
+
+A. A ausência de RX é equivalente a um RX comprovadamente normal.
+B. Todo caso sem RX deve receber necessariamente o mesmo regime que meningite tuberculosa.
+C. O regime encurtado pode ser considerado na **Situação 2** quando os demais critérios são cumpridos e adequadamente documentados.
+D. TRM com baixa carga demonstra ausência absoluta de cavidades, empiema e obstrução.
+E. Não é necessário acompanhamento após o início do regime de quatro meses.
+
+**Gabarito: C.** A transforma exame não realizado em achado negativo; B desconsidera a elegibilidade descrita pela nota; C aplica corretamente a situação com imagem indisponível; D atribui poder anatômico à carga do teste molecular; E ignora seguimento mensal. **Mini-revisão:** classificar disponibilidade de exames e gravidade separadamente, sem inferências inexistentes.
+
 ## 24. Pérolas de prova e erros de conduta
 
 1. Tuberculose-doença pediátrica é frequentemente **paucibacilar**: TRM ou baciloscopia negativos não excluem o quadro.
