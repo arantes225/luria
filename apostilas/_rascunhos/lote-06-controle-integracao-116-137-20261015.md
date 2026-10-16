@@ -14,7 +14,7 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 | 119 | Planejamento reprodutivo e contracepção | **Prévia HTML editorial e controle copiados**; versão publicada já contém regra atual Lei 14.443/2022, não sobrescrever |
 | 120 | Medicina baseada em evidências | **Rascunho completo e controle copiados para esta ramificação**; não certificado |
 | 121 | Infecção urinária e pielonefrite | **Candidato linha-06 preservado e ampliado em 12.5 (109.137 caracteres brutos)**; linha-07 permanece intacta, fusão clínica integral ainda pendente |
-| 122 | Perfuração de víscera oca | Rascunhos paralelos; reconciliar lacunas |
+| 122 | Perfuração de víscera oca | **Consolidação focal efetuada em 16/10/2026**: rascunho linha 06 ampliado para 129.525 caracteres brutos (10 casos/14 questões), contraste com linha 07, manifesto de 10 páginas de imagens auditado; NÃO certificado |
 | 123 | Febre sem sinais localizatórios | Rascunhos paralelos; reconciliar |
 | 124 | Sangramento uterino anormal | Apostila HTML existente preservada; complementos/controle separados em ambos os fluxos; integração apenas aditiva auditada |
 | 125 | Rastreamento e prevenção quaternária | Rascunhos paralelos; reconciliar |
@@ -71,3 +71,11 @@ O plano vigente `assets/js/apostilas-lotes-225.js` possui **260 temas em 13 lote
 - **Conciliação detalhada:** `apostilas/_rascunhos/lote-06-121-131-matriz-reconciliacao-editorial-20261015.md`. O próximo ciclo de trabalho deve auditar e combinar **122–131**, começando pela aula 122 e usando as duas bases.
 - Etapa Zero específica do tema 121 refeita com leitura integral do resumo comparativo `10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf`, complementada por diretrizes EAU 2026/IDSA 2025/ACOG 2023 e estudo primário sobre hipercalemia por trimetoprima em usuário de IECA/BRA.
 - Nenhum merge/deploy, nenhuma edição em `main`, nenhuma imagem adicionada ou publicada. Nenhuma apostila foi certificada com base em extensão bruta.
+
+## Continuação de 16/10/2026 — apostila 122
+
+- `apostilas/_rascunhos/lote-06-122-perfuracao-de-viscera-oca.md` criado no ramo editorial a partir de rascunho linha 06 (111.814 caracteres, 8 casos, 12 questões), expandido com capítulos originais sobre leitura de TC, SIS 2024 (4/8 dias) e ruptura cecal por obstrução distal, além de dois casos/dois itens novos (129.525 caracteres brutos, 10 casos, 14 questões).
+- `apostilas/_rascunhos/lote-06-122-controle-reconciliacao-20261016.md`: etapas de benchmark real no Drive, diretrizes WSES/SIS/SSC, matriz das alterações, pendências e proibição de deploy.
+- `apostilas/_rascunhos/lote-06-122-imagens-candidatas-parciais.json`: dez páginas de origem com licença verificada preliminarmente, **C10 corrigida para CC BY-SA 4.0**; nenhum arquivo de imagem baixado ou publicado; decidir sobre redundâncias e verificar crédito antes da aprovação Admin.
+- Matriz 121–131 atualizada com estado 122. **Linha 07 permanece integralmente preservada.** Arquivos de build JSON e HTML de prévia de 122 no ramo anterior estão obsoletos depois da ampliação e não devem ser usados para publicar; regeneração e teste obrigatórios.
+- **Próxima etapa:** 123 — Febre sem Sinais Localizatórios, começando por leitura comparativa de PDFs reais, confronto de fluxos por idade e preservação de casos/questões das duas linhas.
