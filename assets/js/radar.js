@@ -5,9 +5,6 @@
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const el = (tag, text, cls) => { const n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n; };
   let data, bank, area = areas[0];
-  function link(text, url) {
-    const a = el('a', text); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a;
-  }
   function profiles() { return bank.medcof?.perfis || []; }
   function selectBank() {
     bank = data.provas.find(p => p.prova === $('radar-bank').value);
@@ -27,10 +24,7 @@
     $('radar-area-title').textContent = area;
     $('radar-count').textContent = `${rows.length} tema${rows.length === 1 ? '' : 's'}`;
     $('radar-summary').textContent = fromMedcof ? 'Ordem pela contagem publicada entre os temas selecionados no artigo. Empates compartilham a posição.' : 'Destaques gerais com área explicitamente identificada no mapa. Ordem editorial preservada; sem contagens de questões.';
-    $('radar-period').textContent = fromMedcof ? `Recorte: ${bank.medcof.fonte.periodo_descrito || 'anos das questões não explicitados no artigo'}.` : 'Recorte: últimos três anos, conforme o material Aristo 2026.';
-    $('radar-origin').replaceChildren();
-    if (fromMedcof) $('radar-origin').append(link('Consultar análise da MedCof ↗', bank.medcof.fonte.url));
-    else $('radar-origin').append(link('Biblioteca Aristo ↗', 'https://app.aristoclass.com.br/#/mais-aristo/documentos'));
+    $('radar-period').textContent = fromMedcof ? `Recorte: ${bank.medcof.fonte.periodo_descrito || 'anos das questões não explicitados no artigo'}.` : 'Recorte: últimos três anos, conforme o material de 2026.';
     const list = $('radar-list'); list.replaceChildren();
     if (!rows.length) {
       const empty = el('div', undefined, 'cv-empty');
@@ -42,7 +36,7 @@
       const rank = el('span', fromMedcof ? String(t.posicao).padStart(2, '0') : '•', 'radar-rank'); rank.setAttribute('aria-label', fromMedcof ? `Posição ${t.posicao}` : 'Destaque editorial');
       const copy = el('div', undefined, 'radar-topic-copy'); copy.append(el('h3', t.tema));
       if (fromMedcof) copy.append(el('small', t.subarea_fonte || t.area_fonte));
-      else copy.append(el('small', 'Aristo · destaque geral · página 3'));
+      else copy.append(el('small', 'Destaque editorial · página 3'));
       item.append(rank, copy);
       if (fromMedcof) item.append(el('span', `${t.questoes_publicadas} questões`, 'radar-value'));
       list.append(item);
@@ -61,7 +55,7 @@
   }
   async function init() {
     try {
-      const response = await fetch('/assets/data/radar-provas.json?v=20261016-radar1');
+      const response = await fetch('/assets/data/radar-provas.json?v=20261016-radar2');
       if (!response.ok) throw Error('Dados indisponíveis');
       data = await response.json();
       $('radar-bank').replaceChildren(...data.provas.map(p => { const o = el('option', p.prova); o.value = p.prova; return o; }));
@@ -73,7 +67,7 @@
       $('radar-bank').addEventListener('change', selectBank);
       ['radar-profile', 'radar-source'].forEach(id => $(id).addEventListener('change', render));
       $('radar-search').addEventListener('input', render);
-      $('radar-total').textContent = `${data.provas.length} provas · Aristo + MedCof`;
+      $('radar-total').textContent = `${data.provas.length} provas`;
       $('radar-controls').disabled = false; selectBank();
     } catch {
       $('radar-list').replaceChildren(el('p', 'Não foi possível carregar o Radar. Atualize a página para tentar novamente.', 'cv-empty'));

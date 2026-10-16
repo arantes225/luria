@@ -26,6 +26,8 @@ test('Radar: area click shows specific subjects, bank and source filters stay in
     await new Promise(r=>setImmediate(r));
     const d=w.document;
     assert.equal(d.querySelector('#radar-bank').value,'USP-SP');
+    assert.equal(d.querySelectorAll('a[href*="grupomedcof"],a[href*="aristoclass"]').length,0);
+    assert.equal(d.querySelector('#radar-total').textContent,'45 provas');
     assert.equal(d.querySelectorAll('.radar-topic').length,9);
     assert.equal(d.querySelector('.radar-topic h3').textContent,'Arritmias');
     assert.ok(![...d.querySelectorAll('.radar-topic h3')].some(n=>n.textContent==='Cardiologia'));
