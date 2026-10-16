@@ -5,7 +5,7 @@
 
 ## Apostilas produzidas nesta branch
 
-- **#267 — Endoscopia digestiva e urgências endoscópicas:** rascunho anterior em `apostilas/endoscopia-digestiva-urgencias-endoscopicas/rascunho-editorial-lote12.md` (commit de origem `3518ad2`), ainda abaixo da robustez alvo; necessita aprofundamento, revisão e curadoria visual.
+- **#267 — Endoscopia digestiva e urgências endoscópicas:** **rascunho original preservado e profundamente expandido** em `apostilas/endoscopia-digestiva-urgencias-endoscopicas/rascunho-editorial-lote12.md`: de 13.642 para **93.880 caracteres / 597 linhas / 10 casos / 12 questões**. Inclui ESGE 2026 para úlcera, Baveno VII, ACG 2023 HDB, corpo estranho ESGE/ASGE, EoE ACG/FBG 2025, CPRE/colangite/PEP ASGE, antitrombóticos BSG/ESGE 2021, 13 candidatas visuais rastreáveis (não integradas). Commits `8adfc6c`, `6907303`, `1f46599`. **PENDENTE revisão médica, inspeção/licenciamento de imagens, padronização HTML e checagem de referências brasileiras antes de publicação.**
 - **#268 — Cirurgia cardiovascular para o generalista:** manuscrito expandido em `apostilas/cirurgia-cardiovascular-para-o-generalista/rascunho-editorial-lote12.md`, 68.455 caracteres em 451 linhas, 6 casos clínicos extensos, 8 questões autorais comentadas, tabelas/algoritmos, cirurgia coronariana, valvar e aórtica, endocardite, manejo antitrombótico, complicações e seguimento. Commits `6e3ab16` (criação) e `239d712` (ampliação). **Status: rascunho editorial, não revisado/aprovado para publicação**. Não duplicar apostila #21 (valvopatias clínicas) nem #240 (aneurisma/aorta clínica).
 
 ## Ainda pendentes, conforme matriz oficial ENAMED / MedCof
@@ -28,4 +28,4 @@
 
 ## Próxima execução sugerida
 
-A auditoria inicial #238–249, a consolidação #266 e a conferência não destrutiva #278 foram registradas. **Próxima prioridade de produção:** aprofundar #267 — Endoscopia Digestiva (13.642 caracteres), após isso expandir #249, #246, #247 e #248 pela criticidade das condutas; manter os 12 rascunhos sem publicar e a #278 intacta, até revisão. Nenhum merge ou deploy.
+A auditoria inicial #238–249, a consolidação #266 e a conferência não destrutiva #278 foram registradas. **#267 expandida** e registrada em manuscrito editorial, ainda não publicável. **Próxima prioridade:** revisar e aprofundar #249 (violência sexual e direitos reprodutivos), #246 (afogamento), #247 (hiperêmese) e #248 (colestase) por criticidade, preservando seus rascunhos; manter a #278 intacta e todas as publicações suspensas até aprovação. Nenhum merge ou deploy.
