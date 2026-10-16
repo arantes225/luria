@@ -5812,15 +5812,15 @@
     const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(id));
     if (action === "approve") {
       const size = Number(row?.proposed_asset?.size_bytes || 0);
-      if (!size || size > 112640) {
+      if (!size || size > 81920) {
         const status = $("admin-apostila-images-status");
-        if (status) status.textContent = "Otimizando imagem para o padrão máximo de 110 KB...";
+        if (status) status.textContent = "Otimizando imagem para o padrão máximo de 80 KB...";
         const { data: optimized, error: optimizeError } = await sb.functions.invoke("optimize-apostila-image", {
           body: { id: Number(id) }
         });
         if (optimizeError) throw optimizeError;
-        if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 112640) {
-          throw new Error("Não foi possível otimizar a imagem para até 110 KB.");
+        if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 81920) {
+          throw new Error("Não foi possível otimizar a imagem para até 80 KB.");
         }
       }
     }
@@ -5905,7 +5905,7 @@
         title: String(asset.title || asset.alt).trim().slice(0,180),
         caption: String(asset.caption || "").trim().slice(0,700),
         didactic_note: String(asset.didactic_note || "").trim().slice(0,700),
-        ...(Number.isInteger(size) && size > 0 && size <= 112640 ? {size_bytes:size} : {})
+        ...(Number.isInteger(size) && size > 0 && size <= 81920 ? {size_bytes:size} : {})
       },
       source_url: original,
       source_name: String(raw.source_name).trim().slice(0,180),
@@ -6103,6 +6103,9 @@
     if (!allowed) {
       return;
     }
+
+    wireLowResolutionImageQueue();
+    loadLowResolutionImageQueue().catch(console.error);
 
     wirePinGate();
 
