@@ -299,3 +299,170 @@ Encaminhar com prioridade se TOC impede alimentação/autocuidado, produz incapa
 
 **Não confundir “mania de arrumação” popular com episódio maníaco do transtorno bipolar.** Em português, “mania” tem sentido coloquial de hábito; episódio maníaco exige alteração de humor/energia, curso, duração e prejuízo. TOC e transtorno bipolar são entidades distintas e podem coexistir.
 
+
+## 10. Transtornos relacionados ao estresse e trauma: por que nem todo sofrimento posterior é TEPT?
+
+### 10.1 Evento potencialmente traumático, reação aguda e transtorno
+
+Eventos com exposição real ou ameaça de morte, lesão grave ou violência sexual, vividos, testemunhados ou conhecidos em circunstâncias especificadas no DSM, podem anteceder TEPT. O **DSM-5-TR** define modalidades de exposição e inclui circunstâncias ocupacionais de exposição repetida a detalhes aversivos (ex.: determinados serviços de emergência). **Consumo voluntário de conteúdo online sobre tragédias**, por si só e fora de exposições ocupacionais previstas, não preenche necessariamente critério traumático DSM. Na **CID-11**, a caracterização de evento extremamente ameaçador/horrível usa linguagem própria. Não misturar critérios de sistemas diferentes como se fossem um único formulário.
+
+**Resposta aguda esperada:** medo, tristeza, irritabilidade, tremor, insônia transitória, imagens involuntárias ou desconforto na primeira fase podem ocorrer sem transtorno. O cérebro está processando ameaça e perda, e grande parte das pessoas apresenta melhora espontânea com segurança, suporte e tempo.
+
+**Transtorno de estresse agudo (TEA/ASD)** na lógica DSM: sintomas relevantes de intrusão, humor negativo, dissociação, evitação ou excitação que persistem de **três dias até um mês após trauma**, com sofrimento/prejuízo e outros critérios. **TEPT no DSM** exige sintomas por **mais de um mês**, além dos agrupamentos clínicos e demais requisitos. **Não diagnosticar TEPT DSM no segundo dia** do trauma — não impede oferecer cuidado e intervenção precoce a quem está muito sintomático.
+
+**Transtorno de adaptação** ocorre em resposta a um estressor identificável que não precisa preencher critério de trauma grave (demissão, mudança, diagnóstico de doença), com sofrimento desproporcional/prejuízo e contexto específico. Não exigir flashbacks ou medo de morte para diagnosticá-lo. Luto pode sobrepor-se a vários quadros; evitar patologização automática.
+
+### 10.2 Primeiros cuidados após evento adverso
+
+**Prioridade:** segurança física, lesões, abrigo, hidratação, rede confiável, necessidade de proteção contra violência atual e capacidade de entender informações. A assistência deve validar sofrimento sem obrigar narrativa detalhada do evento na primeira avaliação. Perguntar “o que é mais importante para você neste momento?” pode ser mais útil que solicitar imediatamente sequência minuciosa de cenas dolorosas.
+
+**Primeiros cuidados psicológicos** (PAP/psychological first aid) são suporte humano e prático — ouvir sem forçar, avaliar necessidades, conectar recursos, proteger e respeitar autonomia —, não uma psicoterapia diagnóstica que “previne TEPT garantidamente”.
+
+**Não realizar debriefing psicológico compulsório de sessão única com reconstrução exaustiva do trauma** para todos os expostos como suposta prevenção; NICE NG116 desaconselha intervenção desse tipo. Isso **não equivale** a impedir a pessoa de falar quando espontaneamente deseja ou negar psicoterapia indicada por sintomas graves.
+
+### 10.3 TEPT segundo DSM-5-TR: quatro grupos fundamentais
+
+No DSM, após exposição traumática compatível, há:
+1. **Intrusão/reexperiência**: memórias angustiantes involuntárias, pesadelos, flashbacks, sofrimento ou reação fisiológica a lembranças.
+2. **Evitação persistente:** evitar memórias/conversas sobre evento ou sinais externos associados, mesmo à custa de funcionalidade.
+3. **Alterações negativas de cognição e humor:** culpa persistente e distorcida, crenças negativas sobre si/mundo, emoções negativas, perda de interesse, distanciamento, dificuldade com emoções positivas e amnésia dissociativa em certas apresentações.
+4. **Alterações de excitação e reatividade:** hiperalerta, sobressaltos, irritabilidade, sono prejudicado, concentração ruim e comportamentos imprudentes em determinados pacientes.
+
+Duração **>1 mês**, sofrimento/prejuízo e exclusão de substância/condição médica são essenciais para enquadramento DSM. **Especificadores** incluem subtipo com sintomas dissociativos e expressão retardada conforme critérios; trauma passado não exige que todos os pacientes tenham pesadelos.
+
+### 10.4 CID-11 e TEPT complexo — não usar DSM como cópia
+
+A **CID-11** descreve TEPT com três núcleos: **revivescência no presente, evitação de lembranças e percepção persistente de ameaça atual** (ex.: hipervigilância/sobressalto), associados a prejuízo. Distingue-se da organização DSM em quatro domínios; não são modelos idênticos.
+
+A CID-11 também reconhece **TEPT complexo (C-PTSD)**, no qual há três núcleos do TEPT **mais** prejuízos persistentes de **regulação emocional, autoimagem negativa e relacionamentos interpessoais** (disturbances in self-organization). Frequentemente está associado a trauma interpessoal prolongado, mas **tipo de evento sozinho não basta para o diagnóstico**. Uma pessoa com trauma repetido pode ter TEPT simples, complexo, outro transtorno ou não ter transtorno; evitar etiqueta automática.
+
+### 10.5 Avaliação com sensibilidade ao trauma
+
+A entrevista não deve reproduzir experiência de coerção. Explicar limites do sigilo e perguntar permissão antes de temas difíceis; permitir pausas e escolha de não detalhar evento naquele momento. Avaliar segurança atual (violência doméstica, exploração, situação de rua), comorbidades, uso de substâncias, sono, dor crônica, luto, culpa, vergonha, dissociação e consequências profissionais/familiares.
+
+**PCL-5** pode mensurar sintomas de TEPT segundo enquadramento DSM; **não define TEPT automaticamente por escore**. Entrevista diagnóstica estruturada como CAPS-5 é referência clínica em serviços com treinamento, mas uso requer capacitação. Avaliar psicose, delirium, transtorno neurocognitivo, epilepsia, TCE e outros diferenciais quando aplicável.
+
+### 10.6 TEPT x TAG x TOC x pânico — o conteúdo da mente não basta
+
+| Distúrbio | Núcleo emocional/cognitivo | Pistas de comportamento | Tratamento psicológico típico |
+| --- | --- | --- | --- |
+| TAG | Preocupações amplas sobre múltiplos futuros | Reasseguramento, evitação de incerteza | TCC focada em preocupação e tolerância a incerteza |
+| Transtorno de pânico | Medo de novas crises e interpretação catastrófica das sensações | Evitar exercício/sensações, monitorar pulso | TCC e exposição interoceptiva |
+| Ansiedade social | Avaliação negativa e humilhação | Evitar fala/contato, auto-observar | TCC específica com exposição social |
+| Fobia específica | Objeto/situação circunscrito | Evitação do estímulo | Exposição graduada específica |
+| TOC | Intrusões indesejadas e urgência de neutralizar | Rituais visíveis ou mentais | TCC com **EPR** |
+| TEPT | Reviver trauma e ameaça persistente | Evitar lembranças/gatilhos, hiperalerta | **TCC focada no trauma**, EMDR conforme indicação |
+| Transtorno de adaptação | Sofrimento ligado a estressor não necessariamente traumático | Prejuízo situacional | Abordagem psicológica e manejo de estressor, individualizada |
+
+**Transtornos coexistem:** alguém pode ter TEPT e TOC, TAG e depressão, ou transtorno de pânico associado a agorafobia. A síndrome predominante/urgente orienta estratégia, e tratamento deve contemplar comorbidades sem copiar um algoritmo inespecífico para todas.
+
+## 11. Tratamento do TEPT: memória, significado, evitação e segurança
+
+### 11.1 Psicoterapia focada no trauma: primeira linha
+
+A NICE **NG116** recomenda **TCC individual focada no trauma** a adultos com TEPT/sintomas clinicamente relevantes apresentados após um mês de evento, incluindo modalidades como **terapia de processamento cognitivo (CPT)**, **terapia cognitiva para TEPT**, **exposição prolongada (PE)** e **terapia de exposição narrativa**. Essas abordagens compartilham **processamento de memórias traumáticas, modificação de significados e redução da evitação**, mas possuem técnicas/protocolos distintos.
+
+O trabalho inclui construir condições de segurança e habilidade para lidar com ativação; depois processar memórias e esquemas de culpa/vergonha/ameaça de modo gradual e consentido; reconectar-se a trabalho, estudo e relações. **Não pedir ao estudante ou familiar para realizar “exposição caseira intensa ao trauma” sem supervisão.** A exposição terapêutica não deve colocar pessoa sob risco real ou violência ativa.
+
+A diretriz descreve **geralmente 8–12 sessões** para intervenções estruturadas adultas, com duração superior quando há trauma múltiplo, dificuldades de engajamento ou necessidade clínica. Isso é referência e não teto rígido de sessões.
+
+### 11.2 EMDR — indicação real e cuidados
+
+**Eye Movement Desensitization and Reprocessing (EMDR)** é psicoterapia estruturada que inclui evocação/processamento de memórias-alvo e estimulação bilateral, em protocolo organizado por profissional treinado. NICE NG116 oferece EMDR para adultos com TEPT após trauma **não relacionado a combate** há mais de **3 meses**, e considera entre **1 e 3 meses** conforme preferência. Outras diretrizes, incluindo VA/DoD, reconhecem EMDR como intervenção eficaz em TEPT em adultos com contextos variados, portanto **não inferir que EMDR “nunca funciona em trauma de combate”** da redação específica da NICE.
+
+O mecanismo não deve ser supervendido como “apagar memórias por movimento ocular”; o objetivo é reduzir sofrimento e interferência associada, e os componentes exatos/necessidade da estimulação bilateral são objetos de pesquisa. Necessária avaliação, consentimento, cuidado com dissociação e equipe qualificada.
+
+### 11.3 Intervenção precoce e monitoramento ativo
+
+Para pessoas com **sintomas subclínicos nas primeiras semanas**, NICE sugere **monitoramento ativo** e retorno planejado, reconhecendo recuperação espontânea. Em **adultos com transtorno de estresse agudo ou sintomas clínicos importantes dentro do primeiro mês**, há indicação para **TCC focada no trauma**, não apenas “esperar passar”. Crianças/adolescentes exigem protocolo e envolvimento da família quando apropriado, com diferenças por idade e tempo desde evento.
+
+**Não medicar universalmente toda pessoa que vivenciou trauma para prevenir TEPT**. A NICE recomenda não oferecer fármacos, incluindo benzodiazepínicos, para prevenção primária do transtorno.
+
+### 11.4 Fármacos em TEPT quando indicados e preferidos
+
+Se psicoterapia focada no trauma é indisponível, não desejada ou insuficiente, **ISRS como sertralina** e **IRSN como venlafaxina** são opções que algumas diretrizes consideram em adultos; **paroxetina** também possui evidência/registro em determinados contextos. NICE NG116 recomenda considerar venlafaxina ou ISRS **se pessoa prefere tratamento medicamentoso**, com revisão periódica e cautela com aprovações locais. O tratamento farmacológico deve avaliar histórico de resposta, bipolaridade, disfunção sexual, interações e interrupção gradual, em vez de medicação como estratégia única após violência contínua.
+
+**Benzodiazepínicos não são tratamento recomendado do TEPT.** A VA/DoD 2023 recomenda fortemente contra seu uso para TEPT em geral; sedação pode mascarar sofrimento, dificultar aprendizagem terapêutica, aumentar dependência/queda e interagir com álcool/opioides. Tratamento de indicação independente (ex.: convulsões) é outra questão e não justifica “receita de TEPT”.
+
+**Prazosina:** VA/DoD 2023 sugere **considerá-la para pesadelos associados a TEPT** (recomendação fraca/condicional), mas **sugere não utilizá-la para tratamento dos sintomas globais de TEPT**. São duas perguntas clínicas distintas. Uso envolve avaliação de hipotensão, quedas e disponibilidade/registro/indicação local, por especialista; não a apresentar como “cura da memória traumática”.
+
+**Antipsicóticos/estabilizadores** não são rotina para TEPT simples, e VA/DoD alerta contra múltiplas estratégias sem benefício demonstrado. Psicose verdadeira ou comorbidade bipolar exigem diagnóstico específico e tratamento próprio, não atribuir todos os sintomas ao trauma.
+
+### 11.5 TEPT complexo, violência atual e dissociação
+
+Quando há instabilidade de moradia, violência doméstica ativa, uso grave de substâncias, dissociação ou desregulação emocional importante, o plano deve primeiro **tornar cuidado praticável e seguro**. Isso não significa que psicoterapia focada no trauma seja sempre “proibida” até anos de estabilização — diferentes protocolos baseados em evidência podem ser adaptados, e comorbidade por uso de substâncias **não deve excluir automaticamente** intervenções adequadas (VA/DoD 2023).
+
+Em dissociação, trabalhar orientação ao presente, estratégias de ancoragem e segurança antes/durante sessões quando apropriado; detalhamento terapêutico é trabalho de profissional habilitado. Evitar interpretações de caráter (“não quer melhorar”), suposições de memória infalível ou confrontos sobre validade do relato. O impacto real de violência exige proteção social/jurídica quando aplicável.
+
+### 11.6 Cuidados no SUS brasileiro
+
+A APS pode identificar sintomas, tratar comorbidades, oferecer escuta e avaliar sinais de gravidade, estabelecer seguimento e encaminhar à **RAPS/CAPS ou serviço especializado** conforme necessidade e organização territorial. Para violência sexual/doméstica, seguir **protocolos assistenciais e de notificação** vigentes, com atenção a privacidade, consentimento e tempos de profilaxias quando clinicamente relevantes; trauma psicológico não substitui atendimento médico de lesões/violência.
+
+Em crianças/adolescentes, preservar proteção e envolver serviços previstos no ECA, evitando repetidas entrevistas não especializadas que possam ser traumáticas. Paciente não deve ter acesso a psicoterapia negado apenas por morar longe ou não ter renda; articulação com serviço social/equipe multiprofissional é parte do plano.
+
+## 12. Farmacoterapia dos transtornos ansiosos e TOC — comparação aplicada
+
+### 12.1 Um ISRS pode servir para doenças diferentes, mas o tratamento não é idêntico
+
+Sertralina, fluoxetina, escitalopram, paroxetina, fluvoxamina e determinados IRSN aparecem em diferentes diretrizes. **A indicação, nível de evidência, dose-alvo, velocidade de titulação e tempo mínimo para julgar resposta variam por doença**. TOC frequentemente exige ensaio mais longo do que TAG; ansiedade social tem TCC individual específica como preferencial; TEPT privilegia terapia focada no trauma. Não escrever “ansiedade → prescrever sertralina” sem diagnóstico.
+
+| Condição | Intervenção psicológica-chave | Fármacos adultos quando indicados | Evitar simplificação |
+| --- | --- | --- | --- |
+| TAG | TCC para preocupação e relaxamento aplicado/autoajuda guiada | ISRS; IRSN alternativas | BZD crônico; antipsicótico rotineiro na APS |
+| Pânico | TCC e **exposição interoceptiva** | ISRS/IRSN em casos selecionados | Diagnóstico sem triagem cardiopulmonar |
+| Agorafobia | Exposição situacional gradual | Em comorbidades/indicação, ISRS/IRSN | Sedação substituindo recuperação da autonomia |
+| Ansiedade social | **TCC individual específica** | Sertralina/escitalopram conforme diretriz | Considerar toda timidez doença |
+| Fobia específica | Exposição graduada, adaptações | Em geral não há medicação crônica específica como primeira linha | BZD para toda exposição |
+| TOC | **EPR/ERP**, abordar rituais mentais | ISRS; clomipramina posterior em situações selecionadas | “Pensamentos positivos” sem prevenir resposta |
+| TEPT | **TCC focada no trauma / EMDR** | Sertralina/venlafaxina em certas situações e conforme diretrizes | BZD como tratamento de TEPT ou fármacos para prevenção |
+| Transtorno de adaptação | Intervenção psicológica e manejo do estressor | Conforme comorbidades, não prescrição automática | Tratar sofrimento situacional como “necessidade vitalícia de psicofármaco” |
+
+### 12.2 Aspectos farmacológicos gerais relevantes
+
+**ISRS:** efeitos gastrointestinais, agitação inicial, alterações de sono, disfunção sexual, hiponatremia em vulneráveis, interação com anticoagulantes/AINEs e, em combinações, síndrome serotoninérgica. Revisar **história de mania/hipomania** antes de iniciar. Os efeitos terapêuticos podem demorar semanas. Adolescentes e adultos jovens exigem acompanhamento próximo por possível piora inicial de ideação suicida em subgrupo.
+
+**IRSN (venlafaxina, duloxetina):** efeitos serotoninérgicos e noradrenérgicos, atenção a pressão arterial (sobretudo venlafaxina), interações e retirada. **Venlafaxina** pode ter síndrome de descontinuação relevante; não suspender abruptamente em tratamento contínuo.
+
+**Pregabalina:** NICE CG113 inclui em TAG quando ISRS/IRSN não são tolerados, com alerta regulatório britânico de potencial de abuso/dependência. No Brasil, verificar registro, indicação aprovada e controle de prescrição; **não extrapolar disponibilidade SUS**.
+
+**Buspirona:** ansiolítico com ação parcial em 5-HT1A e uso em determinados contextos de TAG, sem sedação/reforço típicos dos BZD, mas não atua como “resgate” de efeito imediato para pânico e não deve ser apresentada como tratamento comprovado de TEPT.
+
+**Benzodiazepínicos:** aliviam alguns sintomas rapidamente por modulação GABA-A, mas tolerância, dependência, intoxicação e retirada são problemas relevantes, especialmente com álcool/opioides e em idosos. Emprego breve em crise selecionada não equivale à recomendação de manutenção. **Nunca interromper abruptamente após uso crônico** por risco de síndrome de retirada e, em casos graves, convulsão; planejar redução com prescritor.
+
+**Clomipramina:** evidência para TOC, mas cardiotoxicidade em sobredose, efeitos anticolinérgicos, interações e risco convulsivo justificam uso mais especializado. ISRS concomitante pode aumentar exposição/interações — evitar combinações sem indicação experiente.
+
+### 12.3 Exemplo acadêmico de início de ISRS — não é receita
+
+Os esquemas abaixo são **referências para adultos em determinadas formulações**, não doses universais nem prescrição e precisam ser conferidos na **bula Anvisa de cada marca/apresentação/indicação**, histórico bipolar, gravidez, função hepática, interações e risco de efeitos adversos:
+
+- **Sertralina:** algumas bulas iniciam **50 mg VO/dia** em depressão maior/TOC adulto, mas em **transtorno de pânico** frequentemente permitem **25 mg VO/dia na primeira semana** antes de 50 mg para melhorar tolerabilidade. Titulação gradual conforme indicação e perfil.
+- **Escitalopram:** **10 mg VO/dia** é referência adulta para alguns transtornos aprovados, com ajustes individuais; cautela em idade avançada, QT e insuficiência hepática. Não aplicar teto de outra formulação sem conferir bula.
+- **Fluoxetina:** início adulto frequentemente **20 mg VO/dia** em depressão, enquanto esquemas para pânico/TOC podem precisar ajustes por tolerância e indicação. Meia-vida longa e interações persistem após suspensão.
+- **Venlafaxina XR:** apresentações em alguns mercados usam **75 mg VO/dia**, com início transitório de **37,5 mg** em certos pacientes, mas isso **não autoriza tratar toda doença da tabela com a mesma dose**. Monitorar PA e retirada.
+
+**Quando não há confirmação de bula nacional ou indicação específica, não inserir esse número diretamente no Bulário LURIA.** O quadro será revisto com RENAME/Anvisa e prescrições por contexto antes de uso clínico.
+
+### 12.4 Monitorizar resposta, não apenas receita
+
+Registrar linha de base de sintomas, **medidas de funcionamento** (estudo, trabalho, uso de transporte, tempo perdido em compulsões), adesão, efeitos adversos, objetivos da pessoa e contato seguro para piora. Planejar retorno **precoce** quando há risco, juventude, ativação, comorbidade ou medicamento recém iniciado; reavaliar periodicamente em tratamento estabilizado. **Escalas GAD-7, Y-BOCS e PCL-5 ajudam a seguir tendência**, sem substituir diagnóstico ou decidir alta por pontos.
+
+Após resposta sustentada, duração de manutenção depende do transtorno, recorrência e medicação: **TAG** pode demandar **≥1 ano** de antidepressivo quando respondeu segundo NICE CG113; **TOC** tratado com ISRS, **≥12 meses** se efetivo conforme CG31; em outros quadros intervalos específicos variam. Suspensão **gradual** e prevenção de recaída fazem parte do plano.
+
+## 13. Urgência, comorbidades e segurança
+
+### 13.1 Quando encaminhar imediatamente
+
+**Instabilidade clínica** — dor torácica de possível origem cardíaca, dispneia/hipóxia, síncope sugestiva de arritmia, confusão, intoxicação/abstinência importante, convulsão ou anormalidades neurológicas — precisa de avaliação médica urgente, mesmo que o paciente pareça ansioso. **Sintomas psiquiátricos graves** — pensamentos de autoagressão com perigo atual, psicose, desorganização acentuada, incapacidade de autocuidado, quadro com violência ativa/insegurança ou restrição alimentar grave — também exigem avaliação e plano emergencial apropriado.
+
+**NICE NG225** e aula 211: não utilizar categorias fixas “baixo/médio/alto risco” ou pontuação isolada para prever suicídio ou decidir alta; descrever fatos, necessidades, capacidade de segurança, suporte, observação e transição efetiva.
+
+### 13.2 Depressão e bipolaridade com ansiedade
+
+Ansiedade e depressão frequentemente coexistem e ampliam incapacidade; perguntar por humor, anedonia, sono e ideação de autoagressão. **Antes de ISRS/IRSN**, perguntar por **mania/hipomania**: história de sono muito reduzido com energia aumentada, fala acelerada, impulsos/gastos e episódio claro muda escolha de medicação. Em bipolaridade, tratamento do episódio deve seguir curso bipolar (aula 212), não prescrição reflexa de ISRS para “ansiedade”.
+
+### 13.3 Uso de substâncias, gravidez e envelhecimento
+
+Cafeína e estimulantes podem exacerbar sintomas autonômicos; álcool e benzodiazepínicos podem aliviar brevemente e perpetuar dependência/retirada. História temporal é essencial. **Gestação/puerpério:** distinguir preocupações fisiológicas de transtorno, avaliar violência, sono, comorbidades e risco perinatal; psicoterapia baseada em evidências é frequentemente valiosa, e decisão medicamentosa exige ponderar **risco da doença sem tratamento e do medicamento**; não suspender antidepressivos de modo abrupto.
+
+**Idosos:** ansiedade de início tardio exige investigação de doença clínica, medicamentos, delirium e transtorno neurocognitivo. Sedativos elevam risco de quedas, cognição prejudicada e interações. **Adolescentes/crianças:** adaptar entrevista, linguagem, escola, família, bullying, TEA/TDAH, transtornos de aprendizagem e segurança; **não aplicar doses e recomendações adultas automaticamente**, em especial fármacos para TEPT infantil.
+
