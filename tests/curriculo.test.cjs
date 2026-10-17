@@ -55,6 +55,84 @@ test('USP-RP uses the official 10-point curriculum matrix and block ceilings',()
   assert.equal(core.score(rp,answers).subtotal,10);
   assert.equal(core.score(rp,{['rp-hospital']:1,['rp-pos5']:1,['rp-pos24']:1,['rp-e5']:1}).subtotal,1.5);
 });
+test('PUC-SP uses the official 100-point access-direct matrix',()=>{
+  const puc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-SP');
+  assert.equal(puc.status,'reviewed');
+  assert.match(puc.source,/Edital-RM-2027-ABAD\.pdf/);
+  const answers={};puc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(puc,answers).subtotal,100);
+  assert.equal(core.score(puc,{['pucsp-mon6']:1,['pucsp-ic12']:1,['pucsp-idioma']:2}).total,15);
+});
+test('PSU-GO uses its own official 10-point entry-direct matrix',()=>{
+  const go=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PSU-GO');
+  assert.equal(go.status,'reviewed');
+  assert.match(go.source,/EntradaDiretaPSUGO2027/);
+  const answers={};go.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(go,answers).subtotal,10);
+  assert.equal(core.score(go,{['go-monitoria']:2,['go-publicacao']:2,['go-estagio']:1}).total,2);
+});
+test('UNICAMP uses the official 100-point 2027 access-direct matrix',()=>{
+  const unicamp=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='UNICAMP');
+  assert.equal(unicamp.status,'reviewed');
+  assert.match(unicamp.source,/001-Edital-Acesso-Direto-2027\.pdf/);
+  const answers={};unicamp.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(unicamp,answers).subtotal,100);
+  assert.equal(core.score(unicamp,{['unicamp-doutorado']:1,['unicamp-mestrado']:1,['unicamp-scielo']:2}).total,25);
+});
+test('UFPA identifies its latest official edition and preserves the 100-point ceiling',()=>{
+  const ufpa=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='UFPA');
+  assert.equal(ufpa.status,'reviewed');
+  assert.equal(ufpa.edition,'2026');
+  assert.match(ufpa.source,/ANEXO-II-FICHA-AVALIACAO-CURRICULO\.pdf/);
+  const answers={};ufpa.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(ufpa,answers).subtotal,100);
+  assert.equal(core.score(ufpa,{['ufpa-monitoria-bolsa']:1,['ufpa-monitoria-voluntario']:1,['ufpa-idioma']:2}).total,16);
+});
+test('SES-DF groups shared official ceilings and caps the 2026 matrix at 10',()=>{
+  const df=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='SES-DF');
+  assert.equal(df.status,'reviewed');
+  assert.equal(df.edition,'2026');
+  assert.match(df.updates,/202601250836896\.pdf/);
+  const answers={};df.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(df,answers).subtotal,10);
+  assert.equal(core.score(df,{['df-curso']:10,['df-projeto']:2,['df-estagio']:10,['df-artigo-indexado']:1,['df-artigo-nao-indexado']:5}).total,2);
+});
+test('Santa Casa SP uses the official 2027 access-direct group only',()=>{
+  const sc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='Santa Casa SP');
+  assert.equal(sc.status,'reviewed');
+  assert.equal(sc.edition,'2027');
+  assert.match(sc.source,/scmsp126\/edital_de_abertura_21_09_26_publicar_2\.pdf/);
+  const answers={};sc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(sc,answers).subtotal,10);
+  assert.equal(core.score(sc,{['scsp-enamed5']:1,['scsp-enamed4']:1,['scsp-anais1']:1,['scsp-anais2']:1}).total,3);
+});
+test('PUC-Campinas applies the official 2027 access-direct matrix and disciplinary deductions',()=>{
+  const puc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='PUC-Campinas');
+  assert.equal(puc.status,'reviewed');
+  assert.match(puc.source,/PUCCampinas27_ResidenciaMedica\.pdf/);
+  const answers={};puc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(puc,answers).total,0);
+  const positive={};puc.criteria.filter(row=>!row.deduction).forEach(row=>row.parts.forEach(part=>{positive[part.id]=999;}));
+  assert.equal(core.score(puc,positive).total,100);
+  assert.equal(core.score(puc,{...positive,['puccamp-sancao']:1}).total,95);
+  assert.equal(core.score(puc,{['puccamp-enamed3']:1,['puccamp-enamed4']:1}).total,4);
+});
+test('FMABC uses the official 10-point 2027 access-direct matrix',()=>{
+  const fmabc=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='FMABC');
+  assert.equal(fmabc.status,'reviewed');
+  assert.match(fmabc.source,/d16d85c3-794c-489e-b76d-72695ca65753\.pdf/);
+  const answers={};fmabc.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(fmabc,answers).subtotal,10);
+  assert.equal(core.score(fmabc,{['fmabc-progresso']:1,['fmabc-mon-ano']:1,['fmabc-artigo2']:1,['fmabc-artigo1']:1}).total,3);
+});
+test('official non-calculable statuses explain why a score is unavailable',()=>{
+  const byName=name=>sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution===name);
+  assert.equal(byName('Santa Casa BH').status,'not-required');
+  assert.equal(byName('UNIFESP').status,'program-specific');
+  assert.equal(byName('Einstein').status,'weights-pending');
+  assert.equal(byName('SES-PE').status,'pending');
+  for (const name of ['Santa Casa BH','UNIFESP','Einstein','SES-PE']) assert.equal(core.score(byName(name),{}),null);
+});
 test('Lattes parses supported records, removes duplicates, requires review and rejects unsafe XML', () => {
   const { DOMParser } = new JSDOM('').window;
   const xml = '<CURRICULO-VITAE><ARTIGO-PUBLICADO><DADOS-BASICOS-DO-ARTIGO TITULO-DO-ARTIGO="Estudo clínico" ANO-DO-ARTIGO="2025"/></ARTIGO-PUBLICADO><ARTIGO-PUBLICADO><DADOS-BASICOS-DO-ARTIGO TITULO-DO-ARTIGO="Estudo clínico" ANO-DO-ARTIGO="2025"/></ARTIGO-PUBLICADO></CURRICULO-VITAE>';
@@ -104,11 +182,17 @@ test('rubric changes persist and malformed saved answers recover', () => {
 test('pending institutions never display invented grades and verified coverage is explicit',()=>{
   const w=boot();
   assert.equal(w.document.querySelectorAll('.cv-institution').length,15);
-  assert.match(w.document.getElementById('cv-coverage').textContent,/3 editais conferidos/);
+  assert.match(w.document.getElementById('cv-coverage').textContent,/11 matrizes calculáveis · 1 sem currículo · 3 aguardando complemento/);
   const option=[...w.document.getElementById('cv-exam').options].find(option=>option.textContent.startsWith('UNIFESP'));
   w.document.getElementById('cv-exam').value=option.value;
   w.document.getElementById('cv-exam').dispatchEvent(new w.Event('change'));
   assert.match(w.document.getElementById('cv-score').textContent,/indisponível/);
+  assert.match(w.document.getElementById('cv-source').textContent,/matrizes diferentes por programa/);
+  assert.equal(w.document.querySelector('#cv-source a').href,'https://documento.vunesp.com.br/documento/stream/Nzg4NzcyOA%3d%3d');
   assert.equal(w.document.querySelectorAll('#cv-rules input').length,0);
+  const noCv=[...w.document.getElementById('cv-exam').options].find(option=>option.textContent.startsWith('Santa Casa BH'));
+  w.document.getElementById('cv-exam').value=noCv.value;
+  w.document.getElementById('cv-exam').dispatchEvent(new w.Event('change'));
+  assert.match(w.document.getElementById('cv-score').textContent,/não possui análise curricular/);
   w.close();
 });

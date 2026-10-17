@@ -67,15 +67,24 @@
   function renderInstitutions() {
     const box = $('cv-institutions'); box.replaceChildren();
     const reviewed = rubrics.filter(row => row.status === 'reviewed').length;
-    $('cv-coverage').textContent = `${reviewed} editais conferidos · ${rubrics.length - reviewed} a conferir`;
+    const notRequired = rubrics.filter(row => row.status === 'not-required').length;
+    $('cv-coverage').textContent = `${reviewed} matrizes calculáveis · ${notRequired} sem currículo · ${rubrics.length - reviewed - notRequired} aguardando complemento`;
     rubrics.forEach(rubric => {
       const card = node('button', undefined, 'cv-institution'); card.type = 'button';
       card.setAttribute('aria-pressed', String(rubric.id === $('cv-exam').value));
       const icon = node('span',rubric.institution.replace(/[^A-Z]/g,'').slice(0,3),'cv-institution-icon'); icon.setAttribute('aria-hidden','true');
       const copy = node('span',undefined,'cv-institution-copy');
-      copy.append(node('strong',rubric.institution),node('small',rubric.status === 'reviewed' ? `${rubric.region} · ${rubric.edition} · Acesso direto` : `${rubric.region} · Edital a conferir`));
+      const subtitles = {
+        reviewed: `${rubric.region} · ${rubric.edition} · Matriz conferida`,
+        'not-required': `${rubric.region} · ${rubric.edition} · Sem análise curricular`,
+        'program-specific': `${rubric.region} · ${rubric.edition} · Por especialidade`,
+        'weights-pending': `${rubric.region} · ${rubric.edition} · Pesos aguardados`,
+        pending: `${rubric.region} · ${rubric.edition || 'edição vigente'} · Edital aguardado`
+      };
+      copy.append(node('strong',rubric.institution),node('small',subtitles[rubric.status] || subtitles.pending));
       const score = core.score(rubric,state.answers[rubric.id] || {});
-      card.append(icon,copy,node('span',score ? (score.total/score.max*10).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1}) : '—','cv-institution-value'));
+      const displayValue = score ? (score.total/score.max*10).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1}) : rubric.status === 'not-required' ? 'Sem' : '—';
+      card.append(icon,copy,node('span',displayValue,'cv-institution-value'));
       if (score) card.setAttribute('aria-label',`${rubric.institution}: ${score.total.toLocaleString('pt-BR')} de ${score.max} pontos. Cartão convertido para escala de 0 a 10.`);
       card.addEventListener('click',()=>selectRubric(rubric.id)); box.append(card);
     });
@@ -84,14 +93,20 @@
     const rubric = activeRubric();
     const score = core.score(rubric, state.answers[rubric?.id] || {});
     const box = $('cv-score'); box.replaceChildren();
-    if (!score) { box.append(node('p', 'Pontuação indisponível: critérios ainda não conferidos.')); return; }
+    if (!score) {
+      box.append(node('p', rubric?.status === 'not-required' ? 'Este processo não possui análise curricular.' : 'Pontuação indisponível até completar a matriz oficial.'));
+      return;
+    }
     box.append(node('small', 'Estimativa autodeclarada'), node('div', `${score.total.toLocaleString('pt-BR')} / ${score.max}`, 'cv-stat'), node('small', `Subtotal: ${score.subtotal.toLocaleString('pt-BR')} · Fator: ${score.multiplier.toLocaleString('pt-BR')} · Teto final: ${score.max}`));
     score.rows.forEach(row => {
       const badge = $(`cv-points-${row.id}`);
-      if (badge) badge.textContent = `${row.value.toLocaleString('pt-BR')} / ${row.max.toLocaleString('pt-BR')} pontos`;
+      const definition = rubric.criteria.find(criterion => criterion.id === row.id);
+      if (badge) badge.textContent = definition?.deduction
+        ? `${row.value.toLocaleString('pt-BR')} pontos`
+        : `${row.value.toLocaleString('pt-BR')} / ${row.max.toLocaleString('pt-BR')} pontos`;
     });
     (rubric.groups || []).forEach(group => {
-      const rows = score.rows.filter(row => group.criteria.includes(row.id));
+      const rows = score.rows.filter(row => group.criteria.includes(row.id) && !rubric.criteria.find(criterion => criterion.id === row.id)?.deduction);
       const value = Math.round(rows.reduce((sum,row)=>sum+row.value,0)*1000000)/1000000;
       const max = Math.round(rows.reduce((sum,row)=>sum+row.max,0)*1000000)/1000000;
       const badge = $(`cv-group-points-${group.id}`);
@@ -109,18 +124,27 @@
     const rules = $('cv-rules'); rules.replaceChildren();
     if (!rubric) { renderScore(); return; }
     renderInstitutions();
-    if (rubric.status !== 'reviewed') {
-      source.append(node('p',rubric.scope));
-      const pending = node('div',undefined,'cv-pending');
-      pending.append(node('h3','Critérios aguardando conferência'),node('p','Esta instituição está na lista de cobertura. A nota será disponibilizada após confirmar o edital vigente, suas retificações e a modalidade da seleção. Você já pode organizar suas atividades no currículo abaixo.'));
-      source.append(pending); renderScore(); return;
-    }
-    source.append(node('p', rubric.scope), node('small', `Regras conferidas em ${rubric.checkedAt.split('-').reverse().join('/')}. Consulte novas retificações antes da candidatura.`));
     const links = node('div', undefined, 'cv-actions');
-    for (const [text, url] of [['Edital oficial',rubric.source],['Retificação',rubric.updates],['Publicações da banca',rubric.listing]]) {
+    for (const [text, url] of [['Edital oficial',rubric.source],['Retificação',rubric.updates],['Publicações oficiais',rubric.listing]]) {
       if (!url) continue;
       const link = node('a',text); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; links.append(link);
     }
+    if (rubric.status !== 'reviewed') {
+      source.append(node('p',rubric.scope));
+      if (rubric.checkedAt) source.append(node('small', `Situação conferida em ${rubric.checkedAt.split('-').reverse().join('/')}.`));
+      if (links.childElementCount) source.append(links);
+      const pending = node('div',undefined,'cv-pending');
+      const messages = {
+        'not-required':['Sem análise curricular','O edital vigente usa somente a prova objetiva, portanto não há nota de currículo para calcular.'],
+        'program-specific':['Escolha por especialidade em preparação','O edital usa matrizes diferentes por programa. A calculadora única fica bloqueada para evitar uma nota incorreta.'],
+        'weights-pending':['Pesos oficiais ainda não publicados','A análise curricular está prevista, mas a banca ainda precisa publicar o aditivo com as atividades e seus pesos.'],
+        pending:['Matriz oficial ainda não publicada','A calculadora será liberada quando o edital com os critérios de pontuação estiver disponível.']
+      };
+      const message = messages[rubric.status] || messages.pending;
+      pending.append(node('h3',message[0]),node('p',message[1]));
+      source.append(pending); renderScore(); return;
+    }
+    source.append(node('p', rubric.scope), node('small', `Regras conferidas em ${rubric.checkedAt.split('-').reverse().join('/')}. Consulte novas retificações antes da candidatura.`));
     source.append(links);
     if (rubric.id === 'fmusp-2027-direto-v20261007') {
       const suggest=node('button','Preencher com meu currículo');suggest.type='button';
@@ -157,7 +181,10 @@
       const pageLink = node('a', `Ver item no edital · página ${criterion.page}`); pageLink.href = `${rubric.source}#page=${criterion.page}`; pageLink.target = '_blank'; pageLink.rel = 'noopener noreferrer'; details.append(pageLink);
       criterion.parts.forEach(part => {
         const label = node('label', undefined, 'cv-field');
-        label.append(node('span', part.label), node('small', `${part.points.toLocaleString('pt-BR')} ponto(s) por atividade · máximo ${part.limit}`));
+        const pointsText = criterion.deduction
+          ? `Dedução de ${Math.abs(part.points).toLocaleString('pt-BR')} ponto(s) por registro · máximo ${part.limit}`
+          : `${part.points.toLocaleString('pt-BR')} ponto(s) por atividade · máximo ${part.limit}`;
+        label.append(node('span', part.label), node('small', pointsText));
         const input = node('input'); input.type = 'number'; input.min = '0'; input.max = String(part.limit); input.step = '1'; input.value = String(answers[part.id] || 0); input.dataset.part = part.id;
         input.addEventListener('input', () => {
           state.answers[rubric.id] ||= {};

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-neutral-20261017-imagecap-v2";
+const CACHE_VERSION = "luria-pwa-neutral-20261017-curriculo-v3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

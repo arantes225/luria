@@ -39,12 +39,14 @@
         return Number.isFinite(count) ? Math.max(0, Math.min(part.limit, Math.floor(count))) * part.points : 0;
       });
       const raw = criterion.exclusive ? Math.max(0, ...values) : values.reduce((sum, value) => sum + value, 0);
-      const value = Math.min(criterion.max, raw);
+      const value = criterion.deduction
+        ? Math.max(Number.isFinite(criterion.min) ? criterion.min : -rubric.max, raw)
+        : Math.min(criterion.max, raw);
       return { id: criterion.id, value, max: criterion.max };
     });
     const subtotal = Math.round(rows.reduce((sum, row) => sum + row.value, 0) * 1000000) / 1000000;
     const multiplier = rubric.multipliers?.find(m => m.id === answers.multiplier)?.value || 1;
-    return { rows, subtotal, multiplier, total: Math.min(rubric.max, Math.round(subtotal * multiplier * 100) / 100), max: rubric.max };
+    return { rows, subtotal, multiplier, total: Math.max(0, Math.min(rubric.max, Math.round(subtotal * multiplier * 100) / 100)), max: rubric.max };
   }
   function suggestFmusp(items) {
     const answers = {m1:0,m2:0,m3:0,p1:0,p2:0,p3:0,a1:0,a2:0,s1:0};
