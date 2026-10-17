@@ -163,7 +163,7 @@
     root.querySelector("#r-combo").textContent =
       run.combo >= 3 ? "Combo ×" + multiplier : "Sequência " + run.combo;
     root.querySelector("#r-feedback").innerHTML =
-      `<div class="g-feedback ${good ? "g-correct" : "g-wrong"}"><strong>${good ? "✓ Correto · +" + points + " pontos" : "↻ Revise esta decisão · combo reiniciado"}</strong>${G.esc(q.explanation)}</div>`;
+      `<div class="g-feedback ${good ? "g-correct g-anim-correct" : "g-wrong g-anim-wrong"}"><strong>${good ? "✓ Correto · +" + points + " pontos" : "↻ Revise esta decisão · combo reiniciado"}</strong>${G.esc(q.explanation)}</div>`;
     next = setTimeout(() => {
       if (!run) return;
       run.index++;

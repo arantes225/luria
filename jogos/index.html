@@ -37,7 +37,9 @@
     body[data-page="jogos"] .games-section-label h2{margin:0!important;color:var(--color-text-primary,#172033)!important;font-size:14px!important;line-height:1.4!important;font-weight:650!important;letter-spacing:-.015em}
     body[data-page="jogos"] .games-section-label span{font-size:12px;color:var(--color-text-secondary,#596579)}
     body[data-page="jogos"] .games-feature-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;min-width:0}
-    body[data-page="jogos"] :is(.games-feature,.games-emergency,.games-mini){min-width:0;overflow:hidden;border:1px solid var(--color-border,#e3e7ed);border-radius:15px;background:var(--color-surface,#fff);box-shadow:0 2px 11px rgba(15,35,66,.045);position:relative}
+    body[data-page="jogos"] :is(.games-feature,.games-emergency,.games-mini){min-width:0;overflow:hidden;border:1px solid var(--color-border,#e3e7ed);border-radius:15px;background:var(--color-surface,#fff);box-shadow:0 2px 11px rgba(15,35,66,.045);position:relative;transition:transform .2s,box-shadow .2s}
+    body[data-page="jogos"] .games-feature:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,35,66,.06)}
+    body[data-page="jogos"] .games-mini:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(15,35,66,.08)}
     body[data-page="jogos"] .games-feature{min-height:302px;display:grid;grid-template-columns:minmax(225px,.82fr) minmax(270px,1fr);gap:3px;align-items:stretch;padding:17px 0 17px 22px}
     body[data-page="jogos"] .games-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:11px;z-index:2;padding:4px 0}
     body[data-page="jogos"] .games-kicker{display:inline-flex;align-items:center;gap:7px;color:#184888;background:#e9f0fa;border:1px solid #dbe6f4;border-radius:50px;font-size:10px;line-height:1.2;font-weight:700;letter-spacing:.055em;text-transform:uppercase;padding:6px 9px}
@@ -68,7 +70,8 @@
     body[data-page="jogos"] .games-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;min-width:0}
     body[data-page="jogos"] .games-mini{min-height:189px;padding:16px 17px 14px;display:flex;flex-direction:column;gap:8px;align-items:flex-start;justify-content:flex-start}
     body[data-page="jogos"] .games-mini-visual{height:50px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:6px;position:relative}
-    body[data-page="jogos"] .games-mini-icon{width:48px;height:48px;display:grid;place-items:center;flex:none;border-radius:13px;background:var(--mini-soft);color:var(--mini-color)}
+    body[data-page="jogos"] .games-mini-icon{width:48px;height:48px;display:grid;place-items:center;flex:none;border-radius:13px;background:var(--mini-soft);color:var(--mini-color);transition:transform .2s}
+    body[data-page="jogos"] .games-mini:hover .games-mini-icon{transform:scale(1.1)}
     body[data-page="jogos"] .games-mini-icon svg{height:25px;width:25px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.85}
     body[data-page="jogos"] .games-mini-status{font-size:10px;font-weight:650;letter-spacing:.015em;color:var(--color-text-secondary,#596579);background:#f3f5f8;border-radius:50px;border:1px solid #e4e9ef;padding:5px 8px;white-space:nowrap}
     body[data-page="jogos"] .games-mini h3{font-size:18px!important;line-height:1.2!important;font-weight:700!important;letter-spacing:-.025em!important;color:var(--color-text-primary,#172033)!important;margin:0!important}
