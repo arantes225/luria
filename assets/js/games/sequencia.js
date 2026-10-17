@@ -106,9 +106,9 @@
     const c = x.c;
     if (!x.done) {
       const divergence = x.feedback.marks.findIndex((v) => !v);
-      return `<div class="g-feedback g-wrong" role="status"><strong>${x.feedback.marks.filter(Boolean).length}/${c.steps.length} posições corretas</strong>Primeira divergência na posição ${divergence + 1}. Reavalie as dependências antes de confirmar novamente. As marcações comparam a ordem válida mais próxima da sua.</div>`;
+      return `<div class="g-feedback g-wrong g-anim-wrong" role="status"><strong>${x.feedback.marks.filter(Boolean).length}/${c.steps.length} posições corretas</strong>Primeira divergência na posição ${divergence + 1}. Reavalie as dependências antes de confirmar novamente. As marcações comparam a ordem válida mais próxima da sua.</div>`;
     }
-    return `<div class="g-feedback g-correct" role="status"><strong>${x.guided ? "Revisão guiada concluída" : "Sequência resolvida · " + x.score + " pontos"}</strong><div class="g-stars" aria-label="${x.stars} de 3 estrelas">${"★".repeat(x.stars)}${"☆".repeat(3 - x.stars)}</div><p>${G.esc(c.explanation)}</p><p>${x.attempts} tentativas · ${x.seconds}s · ${x.partial}/${c.steps.length} posições na primeira tentativa.</p><details><summary>Organização recomendada e justificativa</summary><ol>${c.variants[0].map((id) => `<li>${G.esc(c.steps[id])}</li>`).join("")}</ol>${c.variants.length > 1 ? "<p>A troca das duas conferências iniciais também é válida.</p>" : ""}</details>${G.refs(c.refs)}</div>`;
+    return `<div class="g-feedback g-correct g-anim-correct" role="status"><strong>${x.guided ? "Revisão guiada concluída" : "Sequência resolvida · " + x.score + " pontos"}</strong><div class="g-stars" aria-label="${x.stars} de 3 estrelas">${"★".repeat(x.stars)}${"☆".repeat(3 - x.stars)}</div><p>${G.esc(c.explanation)}</p><p>${x.attempts} tentativas · ${x.seconds}s · ${x.partial}/${c.steps.length} posições na primeira tentativa.</p><details><summary>Organização recomendada e justificativa</summary><ol>${c.variants[0].map((id) => `<li>${G.esc(c.steps[id])}</li>`).join("")}</ol>${c.variants.length > 1 ? "<p>A troca das duas conferências iniciais também é válida.</p>" : ""}</details>${G.refs(c.refs)}</div>`;
   }
   function confirm() {
     if (!run || run.current.done) return;
