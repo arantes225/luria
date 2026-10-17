@@ -89,14 +89,25 @@ Deno.serve(async req => {
         const mime = String(metadata.mimetype || "");
         const size = Number(metadata.size || 0);
         if (!mime.startsWith("image/")) continue;
-        if (size > 0 && size <= CAP) { skipped.push({ bucket, path: item.path }); continue; }
         try {
-          if (mime === "image/gif" || mime === "image/svg+xml") {
-            throw new Error("Formato animado/vetorial preservado; reduza-o sem alterar o formato.");
-          }
           const { data: downloaded, error: downloadError } = await storageClient.storage.from(bucket).download(item.path);
           if (downloadError || !downloaded) throw downloadError || new Error("Falha ao baixar objeto.");
           const input = new Uint8Array(await downloaded.arrayBuffer());
+          if (size > 0 && size <= CAP) {
+            const dimensions = ImageMagick.read(input, img => ({ width: img.width, height: img.height }));
+            skipped.push({ bucket, path: item.path });
+            if (Math.min(dimensions.width, dimensions.height) < 600) {
+              const { error: queueError } = await userClient.rpc("admin_queue_low_resolution_image", {
+                p_bucket_id: bucket, p_object_name: item.path, p_width: dimensions.width, p_height: dimensions.height,
+                p_size_bytes: size, p_source_page: "/admin/image-cap-backfill"
+              });
+              if (queueError) throw queueError;
+            }
+            continue;
+          }
+          if (mime === "image/gif" || mime === "image/svg+xml") {
+            throw new Error("Formato animado/vetorial preservado; reduza-o sem alterar o formato.");
+          }
           const result = optimize(input);
           const { error: uploadError } = await storageClient.storage.from(bucket).upload(item.path, result.bytes, {
             contentType: "image/webp", cacheControl: "31536000", upsert: true
