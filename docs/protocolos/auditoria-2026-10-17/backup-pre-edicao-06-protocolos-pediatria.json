@@ -1,0 +1,962 @@
+{
+  "created_date": "2026-10-17",
+  "description": "Backup integral de seis protocolos pediátricos adicionais antes da revisão crítica",
+  "records": [
+    {
+      "id": 146,
+      "slug": "pediatria-infeccao-urinaria-pediatrica",
+      "title": "Infecção urinária pediátrica",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Infecção urinária pediátrica exige coleta adequada de urina antes do antibiótico, diagnóstico baseado em piúria e crescimento significativo em cultura, e avaliação de gravidade conforme idade e febre.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Febre sem foco em lactentes, disúria, frequência, dor abdominal/lombar ou novos escapes urinários.",
+            "Lactentes podem ter apenas febre, irritabilidade ou má alimentação."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Coletar urina por método adequado antes do antibiótico.",
+            "Avaliar sepse e hidratação."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Urina tipo I + urocultura.",
+            "Ultrassom renal/vesical após ITU febril em faixas etárias selecionadas conforme guideline.",
+            "Uretrocistografia miccional não é rotina após primeiro episódio simples."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Lactente febril sem foco ou criança com disúria/polaciúria",
+          "then": "Coletar urina adequada para EAS/urocultura ANTES do antibiótico se clinicamente possível; em criança sem controle esfincteriano, preferir cateterismo/PUB."
+        },
+        {
+          "if": "Criança estável com cistite provável e tolerância oral",
+          "then": "Antibiótico oral após coleta, ajustado a urocultura, resistência local e função renal."
+        },
+        {
+          "if": "Febre alta, dor lombar/vômitos e suspeita de pielonefrite",
+          "then": "Avaliar sinais sistêmicos, iniciar tratamento apropriado e decidir internação conforme idade e tolerância."
+        },
+        {
+          "if": "Lactente pequeno, toxemia, sepse, desidratação ou incapacidade de ingerir",
+          "then": "Internação e antibiótico parenteral empírico após culturas, depois adequação por antibiograma."
+        },
+        {
+          "if": "ITU febril recorrente, evolução atípica ou alteração do trato urinário",
+          "then": "Investigar malformações e disfunção vesical/intestinal; ultrassonografia renal/vesical e exames adicionais segundo idade e risco."
+        },
+        {
+          "if": "Febre sem foco em lactente ou disúria/polaciúria em criança",
+          "then": "Colher urina para EAS e cultura com técnica apropriada antes do antibiótico quando possível."
+        },
+        {
+          "if": "ITU não complicada em criança estável, hidratada e tolerando VO",
+          "then": "Antimicrobiano oral conforme idade e resistência local, ajustado após cultura."
+        },
+        {
+          "if": "Pielonefrite grave, sepse, lactente muito jovem ou intolerância oral",
+          "then": "Internar para antimicrobiano parenteral e avaliar obstrução/complicações."
+        },
+        {
+          "if": "ITU febril recorrente ou febre persistente após 48–72 h",
+          "then": "Revisar cultura, cobertura, adesão e imagem de vias urinárias conforme indicação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Escolher cefalosporina ou outra opção apropriada para o quadro e cultura, com dose/duração por peso e sítio (cistite vs pielonefrite).",
+            "Não diagnosticar ITU apenas por saco coletor positivo devido à contaminação; considerar culturas adequadas.",
+            "Avaliar resposta clínica em 24–48 horas e ajustar antibiótico à sensibilidade; não repetir cultura rotineiramente em criança assintomática com boa resposta, salvo indicação específica."
+          ],
+          "title": "Antimicrobianos e acompanhamento"
+        },
+        {
+          "items": [
+            "Cultura de urina de bolsa coletora isolada não confirma ITU em lactente; cateter ou punção quando indicada."
+          ],
+          "title": "Conduta operacional revisada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e orientar retorno por sinais de alarme."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Investigar constipação/disfunção miccional, orientar hidratação e hábitos urinários; avaliar imagem e seguimento nefro/urológico quando recorrente."
+          ],
+          "title": "Prevenção"
+        },
+        {
+          "items": [
+            "Reavaliar resolução da febre, resultado de urocultura e necessidade de investigação renal."
+          ],
+          "title": "Seguimento e reavaliação"
+        }
+      ],
+      "red_flags": [
+        "Sepse ou hipotensão, dor lombar intensa, vômitos persistentes.",
+        "Menores de 3 meses com febre.",
+        "Anúria/oligúria ou suspeita de obstrução.",
+        "Febre persistente >48 horas sob antibiótico apropriado.",
+        "Sepse, desidratação, alteração renal ou obstrução."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar critérios diagnósticos, tratamento e resposta.",
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.aap.org/en/patient-care/urinary-tract-infection-clinical-practice-guideline/algorithms-for-the-diagnosis-and-treatment-of-urinary-tract-infection-in-children-eight-days-to-five-years-of-age/",
+          "label": "AAP — Algoritmos de diagnóstico e tratamento da infecção urinária em crianças"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "amoxicilina + clavulanato de potássio",
+        "ceftriaxona"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 151,
+      "slug": "pediatria-hipoglicemia-na-crianca",
+      "title": "Hipoglicemia na criança",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Hipoglicemia sintomática é emergência pediátrica pelo risco de lesão neurológica. Os limiares dependem de idade, diabetes e contexto; diante de sintomas neuroglicopênicos com glicose baixa, tratar imediatamente. Em quadros graves usar glicose IV 10% e reavaliar rapidamente; investigar hipoglicemia inexplicada/recorrente sem atrasar correção.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Sudorese, tremor, palidez, fome, irritabilidade, fraqueza, alteração de comportamento, sonolência, convulsão ou coma.",
+            "Considerar jejum, gastroenterite, insulina/hipoglicemiante, erro metabólico, endocrinopatia, sepse, insuficiência hepática e intoxicação.",
+            "Glicemia capilar pode diferir da plasmática em choque; confirmar por laboratório quando possível, sem atrasar tratamento de sintomas graves."
+          ],
+          "title": "Reconhecer"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE, medir glicemia capilar imediatamente, monitorizar consciência e risco de aspiração; se convulsão, tratar simultaneamente causa metabólica.",
+            "Se consciente e deglutindo com segurança, oferecer carboidrato de rápida absorção por via oral e repetir glicemia em aproximadamente 15 minutos.",
+            "Se rebaixamento, convulsão ou incapacidade de deglutir, administrar glicose 10% IV/IO 2 mL/kg (200 mg/kg), com novo controle glicêmico em aproximadamente 15 minutos e repetição/infusão conforme resposta.",
+            "Se não houver acesso IV/IO, considerar glucagon IM segundo idade/peso e disponibilidade; eficácia pode ser menor em jejum prolongado ou depleção de glicogênio."
+          ],
+          "title": "Primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Em hipoglicemia grave, inexplicada ou recorrente, coletar amostra crítica durante o episódio se houver acesso imediato SEM atrasar glicose: glicose plasmática, beta-hidroxibutirato, insulina, peptídeo C, cortisol, GH, lactato conforme suspeita.",
+            "Complementar depois com eletrólitos, função renal/hepática, amônia, ácidos graxos livres, acilcarnitinas e testes específicos conforme avaliação especializada.",
+            "Monitorar glicemia seriada após tratamento; verificar alimentação, vômitos, dose de insulina e outros desencadeantes."
+          ],
+          "title": "Investigação etiológica"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Hipoglicemia com consciência preservada e deglutição segura",
+          "then": "Carboidrato oral de ação rápida conforme idade/peso e rechecagem da glicemia em 15 minutos; repetir se mantiver glicose baixa e oferecer alimento de absorção lenta após recuperação."
+        },
+        {
+          "if": "Hipoglicemia com convulsão, confusão, coma ou incapacidade de engolir",
+          "then": "Glicose 10% IV/IO 2 mL/kg, sem atrasar; reavaliar clínica/glicemia, repetir/interromper conforme resposta e instituir aporte contínuo se risco de recorrência."
+        },
+        {
+          "if": "Acesso venoso não disponível imediatamente",
+          "then": "Considerar glucagon IM/SC conforme faixa etária e protocolo enquanto providencia via IV/IO; não depender dele em jejum prolongado ou suspeita de falha de reserva de glicogênio."
+        },
+        {
+          "if": "Hipoglicemia persistente, recorrente ou sem causa evidente",
+          "then": "Internar, iniciar infusão de glicose ajustada para manter euglicemia, coletar amostra crítica se possível e investigar endocrinopatias, metabolismo e infecção."
+        },
+        {
+          "if": "Hipoglicemia neonatal (especialmente <48–72 horas)",
+          "then": "Aplicar protocolo específico por idade pós-natal, sintomas e fatores de risco; não extrapolar pontos de corte e fluxos de crianças maiores."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Criança consciente: glicose ou carboidrato de absorção rápida por via oral; evitar líquidos de baixa concentração de glicose como única terapia em quadros significativos.",
+            "Hipoglicemia grave: dextrose (glicose) 10% IV 2 mL/kg, que corresponde a 0,2 g/kg; reavaliar rapidamente e, se necessário, seguir com infusão de glicose e monitoramento.",
+            "Após correção, fornecer refeição/lanche com carboidrato de duração prolongada ou solução glicosada IV se incapaz de alimentar; prevenir recorrência."
+          ],
+          "title": "Reposição de glicose"
+        },
+        {
+          "items": [
+            "Revisar administração recente de insulina e outros hipoglicemiantes, investigar sepse, insuficiência adrenal e erros metabólicos em episódios não explicados.",
+            "Glucagon pode ser opção sem acesso venoso e com estoques hepáticos adequados; não deve atrasar glicose IV/IO em criança grave."
+          ],
+          "title": "Controle de causa"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Neonatos requerem critérios operacionais e taxas de infusão conforme dias de vida, peso, sintomas e condições maternas, em protocolo neonatal separado.",
+            "Crianças com diabetes e uso de insulina devem ter plano de hipoglicemia compartilhado com cuidadores/escola, incluindo identificação de episódios noturnos.",
+            "Em suspeita de hiperinsulinismo ou endocrinopatia, discutir investigação com endocrinologia pediátrica."
+          ],
+          "title": "Neonatos e doenças de base"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Repetir glicemia cerca de 15 minutos após intervenção e acompanhar até valores e sintomas estáveis, alimentação adequada e menor risco de recidiva.",
+            "Alta apenas se causa reversível identificada/tratada, observação suficiente e família treinada; hospitalizar recorrência, causa obscura ou comprometimento neurológico.",
+            "Se diabetes, revisar regime de insulina, monitorização e plano escrito de correção de hipoglicemia."
+          ],
+          "title": "Reavaliação e alta"
+        }
+      ],
+      "red_flags": [
+        "Convulsão, alteração de consciência ou incapacidade de proteger via aérea.",
+        "Hipoglicemia recorrente logo após bolus ou necessidade de infusão elevada de glicose.",
+        "Lactente/neonato com letargia, apneia ou recusa alimentar persistente.",
+        "Suspeita de intoxicação por sulfonilureia, hiperinsulinismo ou sepse."
+      ],
+      "notification": {
+        "text": "Registrar valor glicêmico, horário, tratamento, nova glicemia e hipótese etiológica. Notificar intoxicação medicamentosa quando aplicável aos critérios de vigilância.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.rch.org.au/clinicalguide/guideline_index/Hypoglycaemia_Guideline/",
+          "label": "Royal Children's Hospital Melbourne — Hypoglycaemia Clinical Practice Guideline"
+        },
+        {
+          "url": "https://www.chop.edu/clinical-pathway/dehydration-clinical-pathway",
+          "label": "Children's Hospital of Philadelphia — Dehydration Clinical Pathway, hipoglicemia"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "Glicose 10%"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 02:16:32.367734+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 153,
+      "slug": "pediatria-intoxicacao-aguda-pediatrica",
+      "title": "Intoxicação aguda pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Intoxicação aguda pediátrica exige estabilização ABCDE, identificação do agente quando possível e tratamento baseado em toxíndromes, descontaminação seletiva e antídotos específicos.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Alteração súbita de consciência, pupilas anormais, arritmia, convulsões ou sintomas inexplicados.",
+            "Acesso a medicamentos, produtos domésticos ou drogas."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE, glicemia e ECG.",
+            "Contactar centro de informação toxicológica.",
+            "Não induzir vômito."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "ECG em exposição potencialmente cardiotóxica.",
+            "Paracetamol sérico em ingestões desconhecidas/possíveis.",
+            "Exames dirigidos; rastreios toxicológicos amplos raramente mudam conduta."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Exposição tóxica suspeita com rebaixamento, apneia, convulsão ou choque",
+          "then": "ABCDE, corrigir hipóxia e hipoglicemia, ECG e monitorização; acionar CIATox e intensivista."
+        },
+        {
+          "if": "Ingestão de medicamento desconhecido ou potencialmente cardiotóxico",
+          "then": "Registrar horário, quantidade máxima possível, peso e formulação; ECG seriado e exames dirigidos, sem presumir ausência de risco pelo exame inicial."
+        },
+        {
+          "if": "Ingestão recente com indicação específica de descontaminação",
+          "then": "Carvão ativado somente com orientação de toxicologia, substância adsorvível e via aérea protegida; não induzir vômito."
+        },
+        {
+          "if": "Toxidrome definido (opioide, colinérgico, anticolinérgico, simpaticomimético etc.)",
+          "then": "Administrar antídoto específico quando indicado e suporte fisiológico enquanto investiga agentes."
+        },
+        {
+          "if": "Exposição intencional, negligência ou suspeita de violência",
+          "then": "Avaliar segurança e risco psicossocial, notificar quando aplicável e garantir proteção da criança."
+        },
+        {
+          "if": "Suspeita de exposição tóxica",
+          "then": "ABC, glicemia, identificar substância, dose, horário e entrar em contato com CIATox."
+        },
+        {
+          "if": "Apneia, arritmia, convulsão, choque ou rebaixamento",
+          "then": "Reanimação, antídoto específico quando indicado e monitorização intensiva."
+        },
+        {
+          "if": "Ingestão recente com estabilidade",
+          "then": "Avaliar risco da substância e considerar descontaminação somente sob orientação específica; não induzir vômitos."
+        },
+        {
+          "if": "Substância de toxicidade tardia ou dose desconhecida",
+          "then": "Observar durante janela de risco; ECG e exames pertinentes à toxina."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Priorizar ventilação, circulação e controle de crises; antídotos como naloxona, N-acetilcisteína ou atropina dependem de toxina, tempo e indicação.",
+            "Carvão ativado não é rotina, especialmente em rebaixamento sem via aérea protegida ou substâncias não adsorvíveis.",
+            "Consultar CIATox para decisão de antídoto, descontaminação, tempo de observação e critérios de internação."
+          ],
+          "title": "Suporte e antídotos"
+        },
+        {
+          "items": [
+            "Carvão ativado não é universal e requer indicação/toxicidade/tempo e avaliação de via aérea; CIATox orienta conduta e antídotos."
+          ],
+          "title": "Conduta operacional revisada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar condutas por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clinicamente e garantir orientação de retorno/seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar ECG, consciência, sinais vitais e recorrência de sintomas conforme farmacocinética; discutir prevenção doméstica e armazenamento de produtos."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Alta somente após janela toxicológica segura e orientações para evitar nova exposição."
+          ],
+          "title": "Seguimento e reavaliação"
+        }
+      ],
+      "red_flags": [
+        "Apneia, arritmia, QRS/QTc anormais ou choque.",
+        "Convulsões, acidose ou hipoglicemia recorrentes.",
+        "Ingestão de liberação prolongada ou dose desconhecida de agente de alto risco.",
+        "Suspeita de autolesão ou maus-tratos.",
+        "Convulsão, arritmia, alteração respiratória ou piora tardia."
+      ],
+      "notification": {
+        "text": "Notificar suspeita ou confirmação de intoxicação exógena segundo lista nacional e fluxo SINAN.",
+        "required": true
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/composicao/svsa/saude-ambiental/vigipeq/ciatox/ciatox",
+          "label": "Ministério da Saúde — CIATox, assistência toxicológica"
+        },
+        {
+          "url": "https://www.who.int/health-topics/chemical-safety",
+          "label": "OMS — Chemical Safety, conteúdo institucional geral"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 154,
+      "slug": "pediatria-broncoaspiracao-corpo-estranho",
+      "title": "Broncoaspiração / corpo estranho",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Aspiração de corpo estranho deve ser suspeitada diante de engasgo súbito seguido de tosse, sibilância focal, redução unilateral do murmúrio vesicular ou quadro respiratório persistente sem explicação. A radiografia pode ser normal; broncoscopia é diagnóstica e terapêutica quando a suspeita permanece alta.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Episódio testemunhado de engasgo, tosse súbita, cianose ou dispneia em criança previamente saudável.",
+            "Sibilância unilateral, diminuição localizada do murmúrio vesicular ou hiperinsuflação assimétrica aumentam a suspeita.",
+            "Corpo estranho radiolucente pode não ser visto diretamente; pneumonia recorrente no mesmo lobo ou atelectasia também podem ser apresentação tardia."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Se obstrução completa e criança não consegue falar/chorar/tossir efetivamente, iniciar manobras de desobstrução conforme idade e suporte básico/avançado.",
+            "Se tosse eficaz e ventilação mantida, evitar varredura digital às cegas e encaminhar para avaliação definitiva.",
+            "Em ambiente hospitalar, manter monitorização, jejum e acionar equipe com capacidade de broncoscopia quando suspeita for relevante."
+          ],
+          "title": "Conduta imediata"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Radiografia de tórax pode mostrar hiperinsuflação unilateral, aprisionamento aéreo, atelectasia ou corpo estranho radiopaco.",
+            "Radiografia normal não exclui aspiração.",
+            "Broncoscopia rígida é o método padrão para retirada de corpo estranho em crianças quando indicado; broncoscopia flexível pode ter papel diagnóstico em cenários selecionados."
+          ],
+          "title": "Investigação"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Tosse eficaz, voz/respiração preservadas e obstrução leve",
+          "then": "Estimular tosse espontânea e observação; não aplicar manobras agressivas desnecessárias."
+        },
+        {
+          "if": "Lactente consciente <1 ano com obstrução grave (sem choro/tosse eficaz)",
+          "then": "Alternar cinco golpes interescapulares e cinco compressões torácicas; não realizar compressões abdominais."
+        },
+        {
+          "if": "Criança ≥1 ano consciente com obstrução grave",
+          "then": "Alternar cinco golpes interescapulares e cinco compressões abdominais, repetindo até expulsão ou inconsciência."
+        },
+        {
+          "if": "Torna-se inconsciente",
+          "then": "Iniciar RCP com compressões, chamar ajuda; procurar corpo estranho visível ao abrir via aérea para ventilar; não varrer a boca às cegas."
+        },
+        {
+          "if": "Engasgo resolvido mas persiste tosse unilateral/sibilância/atelectasia",
+          "then": "Suspeitar corpo estranho brônquico retido, solicitar avaliação e broncoscopia conforme indicação, mesmo com radiografia inicial normal."
+        },
+        {
+          "if": "Engasgo com tosse efetiva e ventilação preservada",
+          "then": "Incentivar tosse e vigiar; não fazer manobras invasivas ou varredura digital às cegas."
+        },
+        {
+          "if": "Obstrução grave em lactente consciente",
+          "then": "Executar ciclos de 5 golpes interescapulares e 5 compressões torácicas, conforme diretrizes de suporte básico; não usar compressões abdominais em lactentes."
+        },
+        {
+          "if": "Obstrução grave em criança maior consciente",
+          "then": "Usar sequência de manobras de desobstrução apropriada à idade e protocolo atualizado; pedir ajuda imediatamente."
+        },
+        {
+          "if": "Perda de consciência ou parada",
+          "then": "Iniciar RCP, inspecionar boca apenas ao abrir via aérea para remover objeto visível; não fazer busca às cegas."
+        },
+        {
+          "if": "Suspeita de aspiração com tosse persistente/sibilo focal após episódio",
+          "then": "Avaliação urgente e broncoscopia quando indicada, mesmo se radiografia for normal."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Atualização AHA 2025: lactentes — 5 golpes nas costas e 5 compressões torácicas; crianças — 5 golpes nas costas e 5 compressões abdominais.",
+            "Não introduzir dedos às cegas. Se PCR, iniciar RCP pediátrica e ventilação adequada.",
+            "Estridor ou insuficiência respiratória exige equipe de via aérea, sem transferências inseguras; broncoscopia rígida é método de escolha para retirada de objeto aspirado quando indicada."
+          ],
+          "title": "Desobstrução e tratamento definitivo"
+        },
+        {
+          "items": [
+            "Corpo estranho de via aérea requer remoção por broncoscopia por equipe preparada; exames de imagem não substituem avaliação quando suspeita forte.",
+            "Não realizar compressões de desobstrução em paciente ventilando/chorando eficazmente."
+          ],
+          "title": "Aprimoramento de condutas — revisão editorial"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Sibilância de início súbito sem história prévia de asma deve levantar hipótese de corpo estranho.",
+            "A ausência de relato de engasgo não exclui aspiração.",
+            "Objetos orgânicos podem inchar e causar reação inflamatória progressiva."
+          ],
+          "title": "Armadilhas"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Confirmar melhora clínica e expansão pulmonar quando havia atelectasia/hiperinsuflação.",
+            "Reavaliar se persistirem tosse, febre, sibilância ou assimetria auscultatória."
+          ],
+          "title": "Após remoção"
+        },
+        {
+          "items": [
+            "Reavaliar respiração, saturação, ausculta e complicações; orientar prevenção por alimentos/objetos e supervisão por idade."
+          ],
+          "title": "Depois do evento"
+        },
+        {
+          "items": [
+            "Reavaliar tosse, estridor, pneumonias de repetição e possíveis lesões após remoção."
+          ],
+          "title": "Reavaliação e segurança de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Cianose ou incapacidade de tossir/falar/chorar.",
+        "Estridor, dessaturação, inconsciência.",
+        "Sibilo unilateral persistente após engasgo.",
+        "Queda de ventilação ou PCR.",
+        "Estridor com fadiga, cianose ou incapacidade de vocalizar/chorar.",
+        "Sibilância unilateral persistente após engasgo, atelectasia ou febre."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar história de engasgo, lateralidade dos achados e resultado da broncoscopia.; Orientar prevenção domiciliar de alimentos/objetos de risco para a faixa etária.",
+        "items": [
+          "Registrar história de engasgo, lateralidade dos achados e resultado da broncoscopia.",
+          "Orientar prevenção domiciliar de alimentos/objetos de risco para a faixa etária."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.sbp.com.br/pediatria-para-familias/seguranca-e-prevencao/aspiracao-de-corpo-estranho/",
+          "label": "Sociedade Brasileira de Pediatria — Aspiração de corpo estranho"
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American",
+          "label": "AHA/AAP — Pediatric Basic Life Support 2025, obstrução de via aérea"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Radiografia de tórax com hiperinsuflação unilateral por corpo estranho brônquico",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fremdkoerperaspiration%20mit%20Ventilwirkung%202W%20-%20CR%20ap%20-%20001.jpg",
+          "kind": "xray",
+          "max_kb": 120,
+          "caption": "Aspiração de corpo estranho — hiperinsuflação do pulmão esquerdo por mecanismo valvular",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fremdkoerperaspiration_mit_Ventilwirkung_2W_-_CR_ap_-_001.jpg",
+          "source_name": "Hellerhoff / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "xray"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "RX com corpo estranho/hiperinsuflação unilateral"
+    },
+    {
+      "id": 155,
+      "slug": "pediatria-invaginacao-intestinal",
+      "title": "Invaginação intestinal",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Invaginação intestinal é o telescopamento de um segmento intestinal para dentro do seguinte, mais frequentemente ileocólico em lactentes. Pode evoluir de obstrução para isquemia, perfuração e choque. Ultrassonografia é o exame inicial de escolha.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor abdominal ou choro paroxístico, palidez, vômitos e períodos em que a criança parece bem entre as crises.",
+            "Letargia isolada pode ser apresentação inicial em lactentes.",
+            "Fezes em geleia de morango são achado tardio e não devem ser aguardadas para suspeitar do diagnóstico.",
+            "Massa abdominal em salsicha pode ser palpável, mas a tríade clássica é incomum."
+          ],
+          "title": "Apresentação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acesso venoso, jejum, analgesia e correção de hipovolemia antes da redução.",
+            "Acionar pediatria/cirurgia pediátrica precocemente.",
+            "Sonda nasogástrica se houver obstrução importante, vômitos persistentes ou necessidade de transferência."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ultrassonografia tem alta sensibilidade/especificidade em mãos experientes e pode demonstrar sinal do alvo ou pseudorrim.",
+            "RX de abdome é reservado principalmente para suspeita de perfuração/obstrução ou quando US não está prontamente disponível; RX normal não exclui invaginação.",
+            "Enema pneumático/hidrostático é diagnóstico e terapêutico em casos elegíveis."
+          ],
+          "title": "Diagnóstico"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Lactente com dor em cólicas, vômitos, palidez, letargia ou fezes com sangue",
+          "then": "Suspeitar invaginação mesmo sem tríade clássica; acesso IV, analgesia e ultrassom de abdome."
+        },
+        {
+          "if": "Instabilidade, sinais peritoneais, perfuração ou choque",
+          "then": "Ressuscitar e acionar cirurgia pediátrica imediatamente; não realizar enema terapêutico em peritonite/perfuração."
+        },
+        {
+          "if": "Invaginação ileocólica confirmada e criança estável, sem perfuração",
+          "then": "Redução por enema pneumático/hidrostático guiada por imagem em serviço com cirurgia disponível."
+        },
+        {
+          "if": "Falha de redução, recorrência complicada ou achado de ponto guia patológico",
+          "then": "Avaliar abordagem cirúrgica e investigação de lesão predisponente."
+        },
+        {
+          "if": "Redução bem sucedida",
+          "then": "Observar sinais vitais, dor, tolerância alimentar e sinais de recidiva antes da alta."
+        },
+        {
+          "if": "Lactente com choro paroxístico, vômitos, palidez ou dor em cólicas",
+          "then": "Suspeitar invaginação mesmo sem sangue nas fezes; ultrassonografia e cirurgia pediátrica."
+        },
+        {
+          "if": "Confirmada e estável sem perfuração/peritonite",
+          "then": "Redução por enema pneumático/hidrostático sob imagem e equipe habilitada."
+        },
+        {
+          "if": "Choque, peritonite, perfuração ou piora",
+          "then": "Ressuscitação e cirurgia urgente; não insistir em redução não operatória."
+        },
+        {
+          "if": "Redução bem-sucedida",
+          "then": "Observar recorrência e considerar lesão guia em idade atípica/recidivas."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Jejum, fluidos isotônicos se desidratação, analgesia, eventualmente sonda gástrica e cirurgia pediátrica acionada antes da tentativa de redução.",
+            "Enema radioguiado/ultrassonográfico é primeira linha na criança estável; cirurgia em perfuração, choque não controlado ou falha do enema."
+          ],
+          "title": "Desobstrução e suporte"
+        },
+        {
+          "items": [
+            "Jejum, hidratação e analgesia enquanto se organiza redução; exame complementar não deve atrasar tratamento urgente."
+          ],
+          "title": "Aprimoramento de condutas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Crianças maiores têm maior chance de ponto guia patológico, como divertículo de Meckel, pólipo ou linfoma.",
+            "Púrpura de Henoch-Schönlein pode se associar a invaginação, muitas vezes de delgado.",
+            "Invaginação limitada ao delgado pode resolver espontaneamente em alguns cenários, mas requer correlação clínica."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Orientar retorno se recorrência de dor, vômitos, palidez ou letargia.",
+            "Recorrência é mais comum nas primeiras 24–48 h após redução."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Observar recidiva de dor, vômitos, sangramento e retorno da alimentação; orientar família sobre retorno urgente."
+          ],
+          "title": "Após redução"
+        },
+        {
+          "items": [
+            "Orientar retorno por recorrência de cólica, vômitos, distensão ou hematoquezia."
+          ],
+          "title": "Reavaliação e desfecho"
+        }
+      ],
+      "red_flags": [
+        "Choque, perfuração ou peritonismo.",
+        "Letargia intensa ou alteração da consciência.",
+        "Vômitos biliosos e distensão progressiva.",
+        "Dor recorrente após redução.",
+        "Choque, vômitos biliosos, abdome rígido ou pneumoperitônio."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar horário de início, achados ultrassonográficos e método/sucesso da redução.; Documentar orientação sobre possibilidade de recorrência.",
+        "items": [
+          "Registrar horário de início, achados ultrassonográficos e método/sucesso da redução.",
+          "Documentar orientação sobre possibilidade de recorrência."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.rch.org.au/clinicalguide/guideline_index/Intussusception/",
+          "label": "Royal Children's Hospital Melbourne — Intussusception CPG, updated 2026"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassonografia com sinal do alvo em invaginação intestinal",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ultrasound%20of%20target%20sign%20in%20intussusception%20of%20the%20right%20bowel.png",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "Invaginação intestinal — sinal do alvo ao ultrassom",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ultrasound_of_target_sign_in_intussusception_of_the_right_bowel.png",
+          "source_name": "Cerevisae / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": true,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "US com sinal do alvo/pseudorrim na invaginação"
+    },
+    {
+      "id": 156,
+      "slug": "pediatria-apendicite-pediatrica",
+      "title": "Apendicite pediátrica",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Apendicite pediátrica é causa frequente de dor abdominal cirúrgica na infância. Crianças pequenas podem ter apresentação inespecífica e maior taxa de perfuração. Ultrassonografia é o exame inicial preferido quando imagem é necessária, reduzindo exposição à radiação.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor abdominal progressiva, anorexia, vômitos e febre; migração para fossa ilíaca direita é útil quando presente.",
+            "Em crianças pequenas, irritabilidade, recusa alimentar, diarreia ou quadro pouco localizado podem predominar.",
+            "Dor localizada em fossa ilíaca direita, defesa e dor à mobilização aumentam a probabilidade."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar hidratação, perfusão, febre, peritonite e sepse.",
+            "Jejum, analgesia, antiemético e hidratação quando necessário.",
+            "Acionar cirurgia pediátrica precocemente em alta suspeita, perfuração ou peritonite."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma e PCR podem apoiar o diagnóstico, mas não devem ser interpretados isoladamente.",
+            "Ultrassonografia é primeira linha: apêndice não compressível >6 mm, hiperemia, gordura inflamada, apendicolito e coleção são achados úteis.",
+            "Quando US é inconclusiva e a suspeita permanece alta, RM ou TC podem ser utilizadas conforme disponibilidade e estabilidade.",
+            "Escores pediátricos podem auxiliar estratificação, mas não substituem avaliação clínica."
+          ],
+          "title": "Investigação"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Dor migratória à FID, anorexia, febre ou peritonismo",
+          "then": "Avaliar escore clínico como auxílio, hemograma/PCR e ultrassom como imagem inicial em muitos cenários pediátricos."
+        },
+        {
+          "if": "Instabilidade, peritonite generalizada ou perfuração provável",
+          "then": "Jejum, acesso IV, analgesia, antibiótico de amplo espectro e cirurgia pediátrica urgente."
+        },
+        {
+          "if": "Suspeita intermediária com ultrassom inconclusivo",
+          "then": "Reexaminar seriado e considerar RM ou TC de baixa dose conforme disponibilidade/risco, evitando atrasar cirurgia em deterioração."
+        },
+        {
+          "if": "Apendicite não complicada confirmada e paciente operável",
+          "then": "Apendicectomia laparoscópica costuma ser escolha; opção antibiótico exclusivo apenas em seleção cuidadosa e decisão compartilhada."
+        },
+        {
+          "if": "Abscesso/plastrão estável",
+          "then": "Antibiótico com possível drenagem guiada por imagem e acompanhamento cirúrgico, considerando falha terapêutica e necessidade de intervenção."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Analgesia e hidratação com jejum; antibioticoprofilaxia conforme cirurgia e flora entérica/anaeróbia.",
+            "Cirurgia por laparoscopia na maioria dos casos; antibiótico pós-operatório prolongado em apendicite não complicada geralmente não indicado.",
+            "Complicada: duração e via dos antibióticos dependem de controle de foco, culturas quando apropriado e evolução."
+          ],
+          "title": "Cuidado perioperatório"
+        },
+        {
+          "items": [
+            "Jejum, analgesia, hidratação adequada e antibiótico pré-operatório conforme gravidade. Apendicectomia laparoscópica é preferida em casos operáveis; terapia conservadora com antibiótico é exceção em pacientes selecionados e requer explicação de recorrência."
+          ],
+          "title": "Conduta terapêutica individualizada — complemento do lote de 40"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Crianças menores têm maior chance de perfuração no diagnóstico.",
+            "A dose de medicamentos e fluidos deve ser baseada em peso.",
+            "Evitar radiação ionizante sempre que ultrassom/RM puderem responder à pergunta clínica."
+          ],
+          "title": "Pontos pediátricos"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar dor, febre, tolerância oral e ferida após tratamento.",
+            "Orientar retorno imediato em febre persistente, vômitos, distensão ou piora da dor."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar dor, febre, alimentação, trânsito e complicações infecciosas; retorno por piora ou dor recorrente."
+          ],
+          "title": "Reavaliação e segurança de seguimento"
+        },
+        {
+          "items": [
+            "Reavaliar ferida, alimentação, dor, febre persistente/abscesso e tolerância à atividade; retorno precoce se piora."
+          ],
+          "title": "Alta e complicações"
+        }
+      ],
+      "red_flags": [
+        "Sinais de peritonite difusa ou choque.",
+        "Dor desproporcional, distensão ou vômitos biliosos.",
+        "Febre persistente e suspeita de abscesso pós-operatório."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar peso, exame seriado, achados do ultrassom e decisão de escalonamento de imagem.; Documentar classificação como complicada ou não complicada.",
+        "items": [
+          "Registrar peso, exame seriado, achados do ultrassom e decisão de escalonamento de imagem.",
+          "Documentar classificação como complicada ou não complicada."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00306-3",
+          "label": "WSES Jerusalem guidelines — Diagnosis and treatment of acute appendicitis, 2020 update"
+        },
+        {
+          "url": "https://acsearch.acr.org/docs/3105874/Narrative/",
+          "label": "ACR Appropriateness Criteria — Suspected Appendicitis-Child"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41604201/",
+          "label": "WSES — Jerusalem Guidelines for Acute Appendicitis 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ceftriaxona",
+        "metronidazol"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 02:23:41.160392+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassonografia típica de apendicite aguda em cortes longitudinal e transversal",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/SonoAppendizitis.JPG",
+          "caption": "Apendicite pediátrica — aspecto em alvo ao ultrassom",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:SonoAppendizitis.JPG",
+          "source_name": "Drahreg01 / Wikimedia Commons",
+          "approved_by_admin": true,
+          "reusable_in_summaries": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "US de apendicite pediátrica"
+    }
+  ]
+}
