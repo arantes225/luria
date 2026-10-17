@@ -1,0 +1,4827 @@
+{
+  "description": "Backup antes de normalização de estrutura de alertas e registro assistencial, complementando o backup dos IDs 91–127.",
+  "created_date": "2026-10-16",
+  "records": [
+    {
+      "id": 12,
+      "slug": "clinica-medica-sindrome-coronariana-aguda-com-supra-de-st",
+      "title": "Síndrome coronariana aguda com supra de ST",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão/choque, hipoperfusão, congestão pulmonar ou hipoxemia.",
+            "Dor persistente/recorrente, arritmia ventricular, bloqueio avançado ou parada.",
+            "Novo sopro ou deterioração súbita: considerar complicação mecânica, tamponamento ou dissecção de aorta."
+          ],
+          "title": "Escalonamento imediato"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar regulação/SAMU e fluxo regional de IAM; transferir imediatamente para serviço com ICP quando indicado.",
+          "Notificar conforme regras locais; registrar início dos sintomas, primeiro contato, ECG, fibrinólise/ICP e transferência."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 13,
+      "slug": "clinica-medica-sindrome-coronariana-aguda-sem-supra-de-st",
+      "title": "Síndrome coronariana aguda sem supra de ST",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, hipotensão ou sinais de hipoperfusão; edema pulmonar/IC aguda.",
+            "Dor isquêmica persistente/recorrente apesar do tratamento, alterações dinâmicas no ECG ou elevação de troponina com piora clínica.",
+            "Arritmia ventricular, parada cardiorrespiratória, bloqueio avançado ou suspeita de complicação mecânica.",
+            "Suspeita de dissecção de aorta ou outra emergência não coronariana que altere a segurança da terapia antitrombótica."
+          ],
+          "title": "Escalonamento imediato"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar regulação e cardiologia/hemodinâmica conforme categoria de risco e capacidade local; documentar horário de sintomas, ECG, coleta de troponina e decisões de transferência/cateterismo.",
+          "Registrar eventos adversos e notificar conforme fluxos institucionais e normas locais."
+        ]
+      },
+      "updated_at": "2026-10-02 16:16:05.275998+00"
+    },
+    {
+      "id": 14,
+      "slug": "clinica-medica-dor-toracica-na-emergencia",
+      "title": "Dor torácica na emergência",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica, hipoperfusão, alteração do nível de consciência, hipóxia ou arritmia significativa.",
+            "Dor persistente/recorrente, novo déficit neurológico, assimetria de pulsos, sinais de insuficiência cardíaca ou novo sopro.",
+            "ECG isquêmico/dinâmico, troponina elevada ou em ascensão, suspeita clínica de dissecção, TEP, pneumotórax hipertensivo ou tamponamento."
+          ],
+          "title": "Não liberar sem avaliação adicional"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar fluxo institucional de dor torácica, equipe de emergência, cardiologia, cirurgia vascular/cardiotorácica ou equipe de TEP conforme hipótese e recursos locais.",
+          "Seguir notificações compulsórias quando etiologia confirmada estiver incluída na lista nacional/estadual vigente; verificar norma local."
+        ]
+      },
+      "updated_at": "2026-09-30 23:54:03.46426+00"
+    },
+    {
+      "id": 15,
+      "slug": "clinica-medica-insuficiencia-cardiaca-cronica",
+      "title": "Insuficiência cardíaca crônica",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Dispneia em repouso rapidamente progressiva, saturação baixa, edema pulmonar ou congestão intensa.",
+            "Hipotensão, síncope, confusão, extremidades frias, oligúria ou outros sinais de baixo débito/choque.",
+            "Dor torácica aguda, arritmia sustentada, novo déficit neurológico ou suspeita de síndrome coronariana/embolia pulmonar.",
+            "Ganho rápido de peso com piora de edema/ortopneia ou descompensação apesar do plano terapêutico."
+          ],
+          "title": "Encaminhar com urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Programar seguimento longitudinal na APS e cardiologia conforme risco; registrar FEVE, NYHA, etiologia, internações e resposta terapêutica.",
+          "Encaminhamento e dispensação de sacubitril/valsartana ou dapagliflozina devem seguir critérios e fluxos estaduais/municipais do PCDT do MS."
+        ]
+      },
+      "updated_at": "2026-10-01 11:58:29.978135+00"
+    },
+    {
+      "id": 17,
+      "slug": "clinica-medica-fibrilacao-atrial",
+      "title": "Fibrilação atrial",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão/choque, síncope, alteração mental, isquemia, edema pulmonar ou insuficiência cardíaca aguda.",
+            "QRS irregular largo ou suspeita de pré-excitação, frequência ventricular muito elevada, dor isquêmica ou arritmia ventricular.",
+            "Sangramento importante em anticoagulante, sinais de AVC ou embolia sistêmica."
+          ],
+          "title": "Escalonamento imediato"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar FA no ECG, duração presumida, estabilidade, estratégia inicial, CHA2DS2-VA, anticoagulante e plano pós-cardioversão.",
+          "Notificar conforme fluxo institucional se associada a síndrome coronariana, evento adverso medicamentoso ou condição compulsória pertinente."
+        ]
+      },
+      "updated_at": "2026-10-02 16:16:05.275998+00"
+    },
+    {
+      "id": 20,
+      "slug": "clinica-medica-bradicardias",
+      "title": "Bradicardias",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Síncope, choque, hipotensão persistente, alteração de consciência, dor isquêmica, edema pulmonar ou hipoperfusão.",
+            "Mobitz II, BAV avançado/total, pausas prolongadas sintomáticas, escape ventricular lento/largo ou deterioração apesar de atropina.",
+            "Suspeita de infarto, hiperpotassemia grave ou intoxicação medicamentosa."
+          ],
+          "title": "Escalonamento imediato"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar SAMU/regulação para transferência monitorizada se unidade sem suporte de estimulação, cardiologia ou terapia intensiva.",
+          "Registrar ECG/ritmo, estabilidade, dose e resposta à atropina, início do pacing, causas suspeitas e destino; notificar reação adversa/toxicidade conforme fluxo aplicável."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 21,
+      "slug": "clinica-medica-sincope",
+      "title": "Síncope",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Síncope durante exercício ou em decúbito; palpitação prévia, ausência de pródromo, cardiopatia conhecida ou história familiar de morte súbita precoce.",
+            "ECG com bloqueio avançado, QT prolongado, pré-excitação, padrão Brugada, isquemia ou arritmia; hipotensão persistente ou sinais de insuficiência cardíaca.",
+            "Sangramento, anemia importante, dispneia/hipoxemia, dor torácica, trauma significativo, déficit neurológico persistente ou recuperação incompleta."
+          ],
+          "title": "Alto risco"
+        }
+      ],
+      "notification": {
+        "text": "Síncope não é agravo de notificação compulsória nacional como condição isolada. Casos de alto risco devem ser transferidos de forma monitorizada, com registro de ECG, sinais vitais, trauma, medicações e critérios de retorno.",
+        "required": false
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 22,
+      "slug": "clinica-medica-endocardite-infecciosa",
+      "title": "Endocardite infecciosa",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, sepse, edema pulmonar, insuficiência cardíaca aguda ou nova regurgitação grave.",
+            "Novo bloqueio AV, suspeita de abscesso, bacteremia persistente, prótese/dispositivo infectado ou fungemia.",
+            "Déficit neurológico súbito, embolia sistêmica, hemorragia intracraniana ou dor abdominal aguda sugestiva de embolização."
+          ],
+          "title": "Emergência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar regulação para transferência a centro com cardiologia, infectologia, ecocardiografia transesofágica e cirurgia cardíaca quando complicação ou capacidade local insuficiente.",
+          "Registrar horário e número de hemoculturas, antibiótico prévio, tipo de valva/dispositivo, imagem, culturas e pareceres; comunicar laboratório sobre suspeita de endocardite."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 24,
+      "slug": "clinica-medica-tromboembolismo-pulmonar",
+      "title": "Tromboembolismo pulmonar",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Síncope, hipotensão, choque, hipoxemia grave ou parada.",
+            "Disfunção de VD com piora respiratória/biomarcadores elevados.",
+            "Sangramento ativo ou suspeita de hemorragia intracraniana durante anticoagulação."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Transferir com monitorização se instabilidade, necessidade de reperfusão/UTI ou ausência de suporte diagnóstico local.",
+          "Registrar probabilidade clínica, imagem, estrato de risco, contraindicações, anticoagulante e plano de duração."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 25,
+      "slug": "clinica-medica-trombose-venosa-profunda",
+      "title": "Trombose venosa profunda",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Dispneia, síncope, dor torácica, hemoptise, hipotensão ou hipoxemia.",
+            "Edema maciço/cianose, flegmasia ou comprometimento neurovascular.",
+            "Sangramento maior durante anticoagulação."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar regulação se TEP, ameaça ao membro ou necessidade de intervenção.",
+          "Registrar probabilidade, exames, extensão, decisão terapêutica e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 26,
+      "slug": "clinica-medica-anticoagulacao-e-reversao-de-anticoagulantes",
+      "title": "Anticoagulação e reversão de anticoagulantes",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Hemorragia intracraniana, instabilidade, sangramento digestivo volumoso, retroperitoneal ou via aérea.",
+            "Trauma craniano em anticoagulado, déficit neurológico ou síncope.",
+            "Cirurgia urgente com anticoagulação ativa."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Ativar protocolo institucional de reversão/transfusão e transferência para suporte avançado, se necessário.",
+          "Documentar fármaco, última dose, função renal, INR/testes, reversor, resposta e plano de reinício."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 27,
+      "slug": "clinica-medica-avc-isquemico-agudo",
+      "title": "AVC isquêmico agudo",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Novo déficit focal, alteração de consciência, convulsão ou cefaleia intensa súbita.",
+            "Afasia, desvio ocular, hemiparesia grave ou sinais de herniação.",
+            "Anticoagulação ativa, trauma ou hipoglicemia exigem avaliação imediata."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar SAMU/código AVC e transferir a centro com neuroimagem e equipe habilitada; documentar última vez bem.",
+          "Notificar/registrar conforme fluxo hospitalar e vigilância aplicável."
+        ]
+      },
+      "updated_at": "2026-10-02 16:16:05.275998+00"
+    },
+    {
+      "id": 31,
+      "slug": "clinica-medica-epilepsia",
+      "title": "Epilepsia",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Crise >5 min, série sem recuperação, primeira crise com trauma/febre/gestação ou déficit focal.",
+            "Piora abrupta do padrão, alteração persistente de consciência ou reação grave a medicamento.",
+            "Crise na gestação ou em anticoagulado/imunossuprimido."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Encaminhar neurologia em primeira crise não provocada, refratariedade, dúvida diagnóstica, gestação ou efeito adverso grave.",
+          "Registrar classificação, frequência, tratamento, efeitos e plano de segurança/acesso SUS."
+        ]
+      },
+      "updated_at": "2026-10-15 16:43:37.491107+00"
+    },
+    {
+      "id": 32,
+      "slug": "clinica-medica-cefaleia-aguda",
+      "title": "Cefaleia aguda",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Cefaleia explosiva, pior da vida, déficit, convulsão, febre/rigidez nucal ou alteração mental.",
+            "Papiledema, perda visual, trauma, gravidez/puerpério, câncer/imunossupressão ou anticoagulação.",
+            "Olho vermelho doloroso com visão reduzida ou sinais de dissecção/AVC."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Encaminhar urgência quando houver red flags ou necessidade de neuroimagem/punção.",
+          "Registrar início, padrão, exame, alertas, medicações e justificativa para exames/alta."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 33,
+      "slug": "clinica-medica-meningite-bacteriana",
+      "title": "Meningite bacteriana",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Púrpura, choque, extremidades frias, oligúria ou lactato elevado.",
+            "Rebaixamento, convulsão, déficit, papiledema, anisocoria ou sinais de herniação.",
+            "Febre/rigidez nucal em imunossuprimido, idoso ou portador de dispositivo neurocirúrgico."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Notificar imediatamente vigilância epidemiológica; acionar investigação e profilaxia de contatos conforme agente.",
+          "Transferir para internação; comunicar precauções, culturas e horário dos antibióticos na passagem."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 34,
+      "slug": "clinica-medica-encefalite",
+      "title": "Encefalite",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, rebaixamento, déficit focal, febre com alteração mental ou rápida progressão.",
+            "Sinais de hipertensão intracraniana, choque, insuficiência respiratória ou estado de mal.",
+            "Imunossupressão com alteração neurológica aguda."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Transferir para hospital/UTI conforme gravidade; comunicar necessidade de aciclovir empírico e precauções pertinentes.",
+          "Notificar se etiologia for agravo compulsório ou arbovirose conforme vigilância."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 35,
+      "slug": "clinica-medica-delirium",
+      "title": "Delirium",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Mudança aguda de consciência, febre/sepse, hipóxia, déficit focal, trauma, convulsão ou instabilidade.",
+            "Agitação com risco iminente, incapacidade de proteger via aérea, desidratação grave ou retenção urinária dolorosa.",
+            "Hipoatividade súbita em idoso frágil ou imunossuprimido."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Encaminhar para emergência se causa potencialmente grave; internar conforme necessidade de tratar gatilho e garantir segurança.",
+          "Documentar comunicação com familiares e medidas de prevenção; notificar somente se causa subjacente exigir."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 36,
+      "slug": "clinica-medica-doenca-de-parkinson",
+      "title": "Doença de Parkinson",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Queda com trauma, disfagia/aspiração, imobilidade súbita ou estado confusional agudo.",
+            "Febre/rigidez/autonomia instável após suspensão abrupta de antiparkinsoniano (síndrome parkinsonismo-hiperpirexia).",
+            "Psicose, síncope recorrente, hipotensão grave ou deterioração rápida."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Encaminhar neurologia; urgência para aspiração, trauma, delirium ou suspensão abrupta.",
+          "Registrar escala funcional, fármacos/horários, resposta e plano de reabilitação."
+        ]
+      },
+      "updated_at": "2026-10-15 16:43:37.491107+00"
+    },
+    {
+      "id": 37,
+      "slug": "clinica-medica-dpoc",
+      "title": "DPOC",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Dispneia em repouso nova, cianose, confusão, hipoxemia, dor torácica ou exacerbações repetidas.",
+            "Perda ponderal/hemoptise, queda funcional rápida ou suspeita de câncer/TB.",
+            "Hipercapnia ou hipoxemia grave."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar espirometria, sintomas/exacerbações, classificação, plano inalatório e cessação do tabagismo.",
+          "Encaminhar para serviço especializado conforme critérios do PCDT e rede SUS."
+        ]
+      },
+      "updated_at": "2026-10-15 16:43:37.491107+00"
+    },
+    {
+      "id": 38,
+      "slug": "clinica-medica-exacerbacao-de-dpoc",
+      "title": "Exacerbação de DPOC",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Confusão/sonolência, cianose, exaustão, silêncio auscultatório, instabilidade ou SpO2 baixa apesar de oxigênio.",
+            "Acidose hipercápnica, necessidade de VNI/intubação ou falha de VNI.",
+            "Dor torácica, febre/novo infiltrado, hemoptise ou assimetria de murmúrio vesicular."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Internar/transferir se grave, suporte ventilatório, comorbidade descompensada ou falta de resposta.",
+          "Registrar gasometria, alvo de oxigênio, broncodilatadores, corticoide/antibiótico e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 39,
+      "slug": "clinica-medica-asma",
+      "title": "Asma",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Asma não controlada com despertares frequentes, exacerbações repetidas ou uso crescente de resgate.",
+            "Dispneia em repouso, fala entrecortada, cianose, tórax silencioso ou queda de pico de fluxo.",
+            "História de intubação/UTI por asma ou baixa percepção de gravidade."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Encaminhar pneumologia se asma grave, diagnóstico incerto, exacerbações recorrentes ou suspeita de doença ocupacional.",
+          "Plano escrito deve definir quando procurar urgência."
+        ]
+      },
+      "updated_at": "2026-10-01 12:05:26.214808+00"
+    },
+    {
+      "id": 40,
+      "slug": "clinica-medica-crise-aguda-de-asma",
+      "title": "Crise aguda de asma",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Fala entrecortada, cianose, sonolência/confusão, exaustão, tórax silencioso ou PFE muito baixo.",
+            "Hipoxemia persistente, hipotensão, bradicardia, falha ao tratamento inicial ou antecedente de intubação.",
+            "Anafilaxia, pneumotórax, pneumonia grave ou diagnóstico alternativo."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Transferir para emergência/UTI conforme gravidade e resposta; registrar PFE, saturação, tratamento e horários.",
+          "Orientar plano de ação e retorno imediato se piora/uso repetido de resgate."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 41,
+      "slug": "clinica-medica-pneumonia-adquirida-na-comunidade",
+      "title": "Pneumonia adquirida na comunidade",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "SpO2 baixa, FR >30, hipotensão, confusão, cianose ou incapacidade de ingerir líquidos.",
+            "Choque, necessidade de ventilação, derrame complicado/empiema ou falha após tratamento.",
+            "Hemoptise significativa, dor torácica intensa ou deterioração rápida."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Internar/transferir se gravidade, hipoxemia, comorbidades descompensadas ou suporte domiciliar insuficiente.",
+          "Notificação conforme agente/surto (p.ex., influenza, COVID, TB) e normas vigentes; PAC comum não é automaticamente compulsória."
+        ]
+      },
+      "updated_at": "2026-10-15 15:24:45.923796+00"
+    },
+    {
+      "id": 42,
+      "slug": "clinica-medica-pneumonia-hospitalar",
+      "title": "Pneumonia hospitalar",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Choque séptico, hipoxemia crescente, necessidade de ventilação/vasopressor ou disfunção orgânica.",
+            "Bacteremia, empiema/abscesso, falha antimicrobiana ou suspeita de patógeno multirresistente.",
+            "Piora respiratória súbita exige excluir TEP, pneumotórax, obstrução e edema."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Acionar UTI/CCIH/infectologia; notificar IRAS/resistência microbiana nos sistemas e prazos vigentes da Anvisa.",
+          "Documentar início de sintomas, dispositivos, culturas, antibióticos e medidas de prevenção."
+        ]
+      },
+      "updated_at": "2026-10-15 16:43:42.488007+00"
+    },
+    {
+      "id": 43,
+      "slug": "clinica-medica-derrame-pleural",
+      "title": "Derrame pleural",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia, dispneia intensa, instabilidade ou grande derrame com desvio mediastinal.",
+            "Febre/sepse, pus, loculação ou dor pleurítica com piora clínica.",
+            "Pneumotórax pós-procedimento, hemorragia ou edema de reexpansão após drenagem."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Transferir se necessidade de drenagem/UTI ou insuficiência respiratória; enviar resultados e imagens.",
+          "Notificar TB confirmada conforme vigilância compulsória; outros agentes conforme normas locais."
+        ]
+      },
+      "updated_at": "2026-10-02 22:46:11.639359+00"
+    },
+    {
+      "id": 128,
+      "slug": "cirurgia-geral-mordeduras-humanas-e-animais",
+      "title": "Mordeduras humanas e animais",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Infecção rapidamente progressiva.",
+            "Comprometimento neurovascular.",
+            "Tenossinovite ou artrite séptica suspeita.",
+            "Sinais sistêmicos de infecção."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Déficit funcional, celulite ascendente, artrite séptica, sinais de raiva ou sepse."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar espécie, circunstância, local da mordida e status vacinal.",
+          "Documentar decisão sobre raiva e tétano."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 129,
+      "slug": "pediatria-avaliacao-inicial-da-crianca-grave",
+      "title": "Avaliação inicial da criança grave",
+      "status": "review_needed",
+      "red_flags": [
+        "Apneia, cianose e exaustão respiratória.",
+        "Bradicardia com hipoperfusão ou ausência de pulso.",
+        "Rebaixamento, convulsão prolongada ou choque.",
+        "Piora apesar de suporte inicial.",
+        "Rebaixamento, apneia, cianose ou bradicardia com hipoperfusão.",
+        "Choque, convulsão persistente ou fadiga respiratória."
+      ],
+      "notification": {
+        "items": [
+          "Registrar sinais vitais, intervenções e resposta clínica."
+        ]
+      },
+      "updated_at": "2026-10-15 02:20:14.231103+00"
+    },
+    {
+      "id": 130,
+      "slug": "pediatria-parada-cardiorrespiratoria-pediatrica",
+      "title": "Parada cardiorrespiratória pediátrica",
+      "status": "review_needed",
+      "red_flags": [
+        "Compressões atrasadas por pulso duvidoso.",
+        "Ventilação ineficaz, pausas longas e hiperinsuflação.",
+        "Choques/doses sem ajuste de peso.",
+        "Não reconhecer deterioração pós-ROSC.",
+        "Interrupções frequentes de compressões, ventilação inadequada e erro de dose/concentração de adrenalina."
+      ],
+      "notification": {
+        "items": [
+          "Registrar sinais vitais, intervenções e resposta clínica."
+        ]
+      },
+      "updated_at": "2026-10-15 02:26:24.818869+00"
+    },
+    {
+      "id": 137,
+      "slug": "pediatria-gastroenterite",
+      "title": "Gastroenterite",
+      "status": "review_needed",
+      "red_flags": [
+        "Choque e hipoperfusão.",
+        "Vômitos biliosos ou dor localizada intensa.",
+        "Sangramento e sinais de síndrome hemolítico-urêmica.",
+        "Desidratação grave.",
+        "Oligúria, letargia, vômitos biliosos ou sangue nas fezes."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:25.011181+00"
+    },
+    {
+      "id": 139,
+      "slug": "pediatria-pneumonia-pediatrica",
+      "title": "Pneumonia pediátrica",
+      "status": "review_needed",
+      "red_flags": [
+        "SpO₂ persistentemente baixa, cianose e gemência.",
+        "Retrações intensas, apneia ou exaustão.",
+        "Suspeita de derrame/empiema ou sepse.",
+        "Ausência de melhora com tratamento apropriado.",
+        "Hipoxemia, apneia, choque, incapacidade de ingerir e derrame complicado."
+      ],
+      "notification": {
+        "items": [
+          "Registrar peso, frequência respiratória, saturação e critérios de internação.",
+          "Documentar reavaliação em 48–72 h e sinais de retorno."
+        ]
+      },
+      "updated_at": "2026-10-15 02:27:25.979042+00"
+    },
+    {
+      "id": 141,
+      "slug": "pediatria-crupe",
+      "title": "Crupe",
+      "status": "review_needed",
+      "red_flags": [
+        "Estridor em repouso persistente, hipoxemia.",
+        "Sialorreia importante e sinais de epiglotite.",
+        "Exaustão, alteração mental ou falência ventilatória."
+      ],
+      "notification": {
+        "items": [
+          "Registrar gravidade clínica antes e após tratamento.",
+          "Documentar horário das doses de adrenalina e período de observação."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 142,
+      "slug": "pediatria-coqueluche",
+      "title": "Coqueluche",
+      "status": "review_needed",
+      "red_flags": [
+        "Apneia/cianose em lactente jovem.",
+        "Pneumonia, hipóxia ou perda de peso.",
+        "Tosse paroxística com exaustão ou síncope."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 143,
+      "slug": "pediatria-otite-media-aguda",
+      "title": "Otite média aguda",
+      "status": "review_needed",
+      "red_flags": [
+        "Dor mastoidea, edema retroauricular ou proptose da orelha.",
+        "Paralisia facial, vertigem, sinais neurológicos.",
+        "RN/lactente muito jovem com quadro sistêmico.",
+        "Mastoidite, sinais neurológicos, edema retroauricular ou toxicidade."
+      ],
+      "notification": {
+        "items": [
+          "Registrar lateralidade, grau de abaulamento, presença de efusão/otorréia e estratégia de observação versus antibiótico.",
+          "Documentar orientação de retorno em 48–72 h se não houver melhora."
+        ]
+      },
+      "updated_at": "2026-10-15 02:26:24.818869+00"
+    },
+    {
+      "id": 144,
+      "slug": "pediatria-sinusite-bacteriana",
+      "title": "Sinusite bacteriana",
+      "status": "review_needed",
+      "red_flags": [
+        "Proptose, alteração visual ou dor com movimento ocular.",
+        "Alteração mental, rigidez de nuca, déficit focal.",
+        "Edema periorbitário importante ou sinais de abscesso.",
+        "Proptose, diplopia, alteração visual, edema palpebral importante ou meningismo."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:28:35.865568+00"
+    },
+    {
+      "id": 145,
+      "slug": "pediatria-faringoamigdalite",
+      "title": "Faringoamigdalite",
+      "status": "review_needed",
+      "red_flags": [
+        "Sialorreia, trismo, voz abafada e estridor.",
+        "Asimetria amigdaliana importante ou edema cervical.",
+        "Desidratação significativa, toxicidade ou imunossupressão.",
+        "Estridor, desidratação, trismo ou tumefação cervical progressiva."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:25.011181+00"
+    },
+    {
+      "id": 146,
+      "slug": "pediatria-infeccao-urinaria-pediatrica",
+      "title": "Infecção urinária pediátrica",
+      "status": "review_needed",
+      "red_flags": [
+        "Sepse ou hipotensão, dor lombar intensa, vômitos persistentes.",
+        "Menores de 3 meses com febre.",
+        "Anúria/oligúria ou suspeita de obstrução.",
+        "Febre persistente >48 horas sob antibiótico apropriado.",
+        "Sepse, desidratação, alteração renal ou obstrução."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:50.572134+00"
+    },
+    {
+      "id": 154,
+      "slug": "pediatria-broncoaspiracao-corpo-estranho",
+      "title": "Broncoaspiração / corpo estranho",
+      "status": "review_needed",
+      "red_flags": [
+        "Cianose ou incapacidade de tossir/falar/chorar.",
+        "Estridor, dessaturação, inconsciência.",
+        "Sibilo unilateral persistente após engasgo.",
+        "Queda de ventilação ou PCR.",
+        "Estridor com fadiga, cianose ou incapacidade de vocalizar/chorar.",
+        "Sibilância unilateral persistente após engasgo, atelectasia ou febre."
+      ],
+      "notification": {
+        "items": [
+          "Registrar história de engasgo, lateralidade dos achados e resultado da broncoscopia.",
+          "Orientar prevenção domiciliar de alimentos/objetos de risco para a faixa etária."
+        ]
+      },
+      "updated_at": "2026-10-15 02:20:14.231103+00"
+    },
+    {
+      "id": 155,
+      "slug": "pediatria-invaginacao-intestinal",
+      "title": "Invaginação intestinal",
+      "status": "review_needed",
+      "red_flags": [
+        "Choque, perfuração ou peritonismo.",
+        "Letargia intensa ou alteração da consciência.",
+        "Vômitos biliosos e distensão progressiva.",
+        "Dor recorrente após redução.",
+        "Choque, vômitos biliosos, abdome rígido ou pneumoperitônio."
+      ],
+      "notification": {
+        "items": [
+          "Registrar horário de início, achados ultrassonográficos e método/sucesso da redução.",
+          "Documentar orientação sobre possibilidade de recorrência."
+        ]
+      },
+      "updated_at": "2026-10-15 02:26:24.818869+00"
+    },
+    {
+      "id": 156,
+      "slug": "pediatria-apendicite-pediatrica",
+      "title": "Apendicite pediátrica",
+      "status": "review_needed",
+      "red_flags": [
+        "Sinais de peritonite difusa ou choque.",
+        "Dor desproporcional, distensão ou vômitos biliosos.",
+        "Febre persistente e suspeita de abscesso pós-operatório."
+      ],
+      "notification": {
+        "items": [
+          "Registrar peso, exame seriado, achados do ultrassom e decisão de escalonamento de imagem.",
+          "Documentar classificação como complicada ou não complicada."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 157,
+      "slug": "pediatria-ictericia-neonatal",
+      "title": "Icterícia neonatal",
+      "status": "review_needed",
+      "red_flags": [
+        "Icterícia nas primeiras 24 horas.",
+        "Sucção fraca, letargia, hipotonia/hipertonia ou choro agudo.",
+        "Elevação rápida da bilirrubina ou hemólise.",
+        "Icterícia conjugada/fezes hipocólicas.",
+        "Icterícia precoce, alteração de sucção/consciência, hipotonia ou hipertonia."
+      ],
+      "notification": {
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:50.572134+00"
+    },
+    {
+      "id": 158,
+      "slug": "pediatria-sepse-neonatal",
+      "title": "Sepse neonatal",
+      "status": "review_needed",
+      "red_flags": [
+        "Hipotermia ou febre associada à prostração.",
+        "Apneia, perfusão ruim, choque ou convulsões.",
+        "Sinais de meningite, púrpura e deterioração rápida.",
+        "Apneia, convulsão, choque, hipotermia persistente ou acidose progressiva."
+      ],
+      "notification": {
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:28:35.865568+00"
+    },
+    {
+      "id": 159,
+      "slug": "pediatria-hipoglicemia-neonatal",
+      "title": "Hipoglicemia neonatal",
+      "status": "review_needed",
+      "red_flags": [
+        "Convulsão, apneia ou prostração associadas à hipoglicemia.",
+        "Glicose baixa persistente apesar de intervenção.",
+        "Recorrência após estabilização ou necessidade de alta taxa de infusão.",
+        "Apneia, convulsões, letargia ou hipoglicemia recorrente grave."
+      ],
+      "notification": {
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:23:17.393194+00"
+    },
+    {
+      "id": 160,
+      "slug": "pediatria-reanimacao-neonatal",
+      "title": "Reanimação neonatal",
+      "status": "review_needed",
+      "red_flags": [
+        "Apneia/gasping e FC <100/min.",
+        "FC <60/min apesar de ventilação efetiva.",
+        "Ventilação ineficaz ou deterioração térmica.",
+        "Necessidade de reanimação prolongada ou suspeita de encefalopatia.",
+        "Apneia, FC <60/min persistente, ventilação ineficaz ou hipotermia."
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:27:25.979042+00"
+    },
+    {
+      "id": 161,
+      "slug": "pediatria-crescimento-e-desenvolvimento",
+      "title": "Crescimento e desenvolvimento",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração clínica, perda de habilidades ou falha de crescimento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Regressão do desenvolvimento ou falha de crescimento importante."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:23:17.393194+00"
+    },
+    {
+      "id": 162,
+      "slug": "pediatria-aleitamento-materno",
+      "title": "Aleitamento materno",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração clínica, perda de habilidades ou falha de crescimento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Lactente prostrado, oligúria, perda ponderal excessiva ou sinais de desidratação.",
+            "Mastite materna com toxicidade sistêmica ou abscesso."
+          ],
+          "title": "Critérios adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:34.219068+00"
+    },
+    {
+      "id": 163,
+      "slug": "pediatria-introducao-alimentar",
+      "title": "Introdução alimentar",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração clínica, perda de habilidades ou falha de crescimento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Engasgo com obstrução, aspiração recorrente ou perda de peso."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:50.572134+00"
+    },
+    {
+      "id": 164,
+      "slug": "pediatria-calendario-vacinal",
+      "title": "Calendário vacinal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração clínica, perda de habilidades ou falha de crescimento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Suspeita de anafilaxia pós-vacinação, exigindo emergência.",
+            "Criança imunossuprimida com aplicação planejada de vacina viva sem avaliação."
+          ],
+          "title": "Critérios adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:34.219068+00"
+    },
+    {
+      "id": 165,
+      "slug": "pediatria-obesidade-infantil",
+      "title": "Obesidade infantil",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Deterioração clínica, perda de habilidades ou falha de crescimento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sintomas de apneia, hipertensão importante, poliúria/polidipsia ou sofrimento psíquico."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:26:24.818869+00"
+    },
+    {
+      "id": 166,
+      "slug": "pediatria-anemia-ferropriva-infantil",
+      "title": "Anemia ferropriva infantil",
+      "status": "review_needed",
+      "red_flags": [
+        "Dispneia importante, síncope, taquicardia persistente ou insuficiência cardíaca.",
+        "Anemia muito grave ou queda rápida de hemoglobina.",
+        "Sangramento gastrointestinal, falha de resposta ao ferro."
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 167,
+      "slug": "ginecologia-e-obstetricia-pre-natal-de-baixo-risco",
+      "title": "Pré-natal de baixo risco",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "PA elevada, sangramento, febre, perda de líquido, dispneia ou redução de movimentação."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 168,
+      "slug": "ginecologia-e-obstetricia-pre-natal-de-alto-risco",
+      "title": "Pré-natal de alto risco",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "PA ≥160/110, dispneia, dor intensa, sangramento ou teste fetal não tranquilizador."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 169,
+      "slug": "ginecologia-e-obstetricia-hipertensao-gestacional",
+      "title": "Hipertensão gestacional",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Cefaleia intensa, escotomas, epigastralgia, dispneia, PA grave, oligúria."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 173,
+      "slug": "ginecologia-e-obstetricia-diabetes-gestacional",
+      "title": "Diabetes gestacional",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hiperglicemia sintomática com cetose, sinais de pré-eclâmpsia, sofrimento fetal."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 174,
+      "slug": "ginecologia-e-obstetricia-sangramento-no-primeiro-trimestre",
+      "title": "Sangramento no primeiro trimestre",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão, taquicardia, síncope ou sinais de choque.",
+            "Dor unilateral intensa, peritonismo ou dor no ombro.",
+            "Sangramento volumoso ou queda importante de hemoglobina."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Síncope, sinais de choque, dor pélvica súbita, febre ou sangramento volumoso."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar quantidade estimada de sangramento, Rh, beta-hCG e achados ultrassonográficos.",
+          "Documentar plano de seguimento quando localização/viabilidade ainda não estiver definida."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 175,
+      "slug": "ginecologia-e-obstetricia-abortamento",
+      "title": "Abortamento",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sangramento intenso com instabilidade ou queda de hemoglobina.",
+            "Febre, dor uterina, secreção fétida ou sepse.",
+            "Dor unilateral/peritonismo que sugira ectópica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, síncope, febre, peritonismo ou perda sanguínea importante."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar classificação do abortamento, opção terapêutica discutida e consentimento.",
+          "Documentar orientação de retorno e Rh/imunoprofilaxia quando aplicável."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 176,
+      "slug": "ginecologia-e-obstetricia-gravidez-ectopica",
+      "title": "Gravidez ectópica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, síncope ou peritonite.",
+            "Líquido livre importante com dor intensa ou queda de hemoglobina.",
+            "Deterioração clínica durante seguimento expectante/medicamentoso."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Hipotensão, síncope, defesa abdominal ou hemoperitônio."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização suspeita, tendência de beta-hCG e estratégia escolhida.",
+          "Documentar critérios de elegibilidade e seguimento quando usado metotrexato."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 177,
+      "slug": "ginecologia-e-obstetricia-doenca-trofoblastica-gestacional",
+      "title": "Doença trofoblástica gestacional",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sangramento importante, instabilidade ou anemia sintomática.",
+            "Sintomas de hipertireoidismo grave, pré-eclâmpsia precoce ou comprometimento respiratório.",
+            "hCG persistente/ascendente após evacuação."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hemorragia, dispneia, sinais hipertireoidianos, β-hCG em elevação ou metástase suspeita."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar valor basal do hCG, achados ultrassonográficos e resultado anatomopatológico.",
+          "Documentar calendário de vigilância do hCG e encaminhamento ao centro de referência quando indicado."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 178,
+      "slug": "ginecologia-e-obstetricia-hemorragia-da-segunda-metade-da-gestacao",
+      "title": "Hemorragia da segunda metade da gestação",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade materna, hipertensão grave, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, coagulopatia, dor/hipertonia, bradicardia fetal ou sangramento persistente."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios diagnósticos, idade gestacional, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 179,
+      "slug": "ginecologia-e-obstetricia-placenta-previa",
+      "title": "Placenta prévia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hemorragia volumosa ou recorrente.",
+            "Hipotensão, taquicardia, síncope ou queda de hemoglobina.",
+            "Sinais de sofrimento fetal ou suspeita de acretismo com sangramento."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Sangramento ativo volumoso, choque, sofrimento fetal ou suspeita de acretismo."
+          ],
+          "title": "Alerta adicional"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização placentária, distância ao orifício interno e presença de fatores de risco para acretismo.",
+          "Documentar episódios de sangramento, internações e plano de parto."
+        ]
+      },
+      "updated_at": "2026-10-15 02:28:35.865568+00"
+    },
+    {
+      "id": 180,
+      "slug": "ginecologia-e-obstetricia-descolamento-prematuro-de-placenta",
+      "title": "Descolamento prematuro de placenta",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque, coagulopatia ou fibrinogênio muito baixo.",
+            "Bradicardia fetal persistente ou traçado não tranquilizador.",
+            "Dor/hipertonia uterina intensa com deterioração clínica.",
+            "Hemorragia oculta com instabilidade."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Útero hipertônico, choque desproporcional ao sangramento aparente, CIVD ou bradicardia fetal."
+          ],
+          "title": "Alerta adicional"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar estimativa de sangramento, estado fetal, fibrinogênio e hemocomponentes usados.",
+          "Documentar horário da decisão e via de parto."
+        ]
+      },
+      "updated_at": "2026-10-15 02:28:35.865568+00"
+    },
+    {
+      "id": 181,
+      "slug": "ginecologia-e-obstetricia-trabalho-de-parto-prematuro",
+      "title": "Trabalho de parto prematuro",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Febre ou suspeita de corioamnionite.",
+            "Sangramento significativo ou DPP.",
+            "Traçado fetal não tranquilizador.",
+            "Progressão rápida do trabalho de parto."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Febre, dor uterina, hemorragia, taquicardia fetal ou parto avançado sem equipe neonatal."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar idade gestacional, mudança cervical, integridade das membranas e horário das medicações.",
+          "Documentar indicação e contraindicação de tocólise."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 182,
+      "slug": "ginecologia-e-obstetricia-rotura-prematura-de-membranas",
+      "title": "Rotura prematura de membranas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Febre, taquicardia fetal, dor uterina, prolapso de cordão ou descolamento."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 183,
+      "slug": "ginecologia-e-obstetricia-inducao-do-parto",
+      "title": "Indução do parto",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Taquissistolia com desacelerações persistentes.",
+            "Suspeita de ruptura uterina.",
+            "Sangramento importante ou prolapso de cordão após amniotomia.",
+            "Traçado fetal persistentemente patológico."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento, sofrimento fetal, taquissistolia ou suspeita de ruptura uterina."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar Bishop inicial, método escolhido, doses e resposta.",
+          "Documentar motivo de interrupção ou mudança de estratégia."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 184,
+      "slug": "ginecologia-e-obstetricia-assistencia-ao-parto-normal",
+      "title": "Assistência ao parto normal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "FCF persistentemente anormal, sangramento grave, prolapso de cordão ou sinais de sepse."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 185,
+      "slug": "ginecologia-e-obstetricia-operacao-cesariana",
+      "title": "Operação cesariana",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hemorragia/choque, falta de oxigenação, tromboembolismo, febre e sinais de deiscência."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 187,
+      "slug": "ginecologia-e-obstetricia-distocia-de-ombro",
+      "title": "Distócia de ombro",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Demora na liberação dos ombros, necessidade de manobras avançadas ou comprometimento neonatal."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 189,
+      "slug": "ginecologia-e-obstetricia-endometrite-puerperal",
+      "title": "Endometrite puerperal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, abscesso ou sangramento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipotensão, confusão, oligúria, peritonismo, choque ou infecção necrosante."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 190,
+      "slug": "ginecologia-e-obstetricia-mastite-puerperal",
+      "title": "Mastite puerperal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, abscesso ou sangramento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Abscesso, necrose cutânea, sepse ou febre persistente apesar de manejo."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 191,
+      "slug": "ginecologia-e-obstetricia-contracepcao-no-puerperio",
+      "title": "Contracepção no puerpério",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, abscesso ou sangramento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Suspeita de trombose, febre/septicemia ou sangramento inexplicado antes da colocação de DIU."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 192,
+      "slug": "ginecologia-e-obstetricia-contracepcao-de-emergencia",
+      "title": "Contracepção de emergência",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, abscesso ou sangramento importante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor pélvica intensa, sangramento importante, gestação ectópica suspeita ou exposição sexual violenta."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 193,
+      "slug": "ginecologia-e-obstetricia-sangramento-uterino-anormal",
+      "title": "Sangramento uterino anormal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, sangramento não controlado, anemia sintomática ou suspeita de malignidade."
+          ],
+          "title": "Sinais adicionais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:48:12.149599+00"
+    },
+    {
+      "id": 194,
+      "slug": "ginecologia-e-obstetricia-amenorreia",
+      "title": "Amenorreia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Cefaleia/alteração visual com hiperprolactinemia, virilização rápida ou amenorreia com sangramento e dor aguda."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 195,
+      "slug": "ginecologia-e-obstetricia-dismenorreia",
+      "title": "Dismenorreia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor súbita intensa, febre, síncope, abdome agudo ou suspeita gestacional."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 196,
+      "slug": "ginecologia-e-obstetricia-endometriose",
+      "title": "Endometriose",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Obstrução intestinal/ureteral, hematúria cíclica importante ou dor aguda de abdome."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:53:05.701713+00"
+    },
+    {
+      "id": 197,
+      "slug": "ginecologia-e-obstetricia-sindrome-dos-ovarios-policisticos",
+      "title": "Síndrome dos ovários policísticos",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Virilização rápida, sangramento uterino prolongado/intenso, hiperglicemia sintomática."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 198,
+      "slug": "ginecologia-e-obstetricia-doenca-inflamatoria-pelvica",
+      "title": "Doença inflamatória pélvica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, febre alta persistente, peritonite, massa anexial complexa ou gravidez."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 199,
+      "slug": "ginecologia-e-obstetricia-vulvovaginites",
+      "title": "Vulvovaginites",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Febre, dor pélvica importante, gestação com sintomas intensos ou sangramento persistente."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 200,
+      "slug": "ginecologia-e-obstetricia-infeccoes-sexualmente-transmissiveis",
+      "title": "Infecções sexualmente transmissíveis",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor pélvica com febre, úlcera extensa, sinais neurológicos ou gestação com sífilis não tratada."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 201,
+      "slug": "ginecologia-e-obstetricia-climaterio-e-menopausa",
+      "title": "Climatério e menopausa",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento importante, dor intensa ou sepse."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento pós-menopausa não investigado, dor torácica, sinais de TEV ou nódulo mamário suspeito."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, investigação, tratamento e orientações."
+        ]
+      },
+      "updated_at": "2026-10-15 02:49:46.348096+00"
+    },
+    {
+      "id": 217,
+      "slug": "aph-emergencia-crise-asmatica-grave",
+      "title": "Crise asmática grave",
+      "status": "verified",
+      "red_flags": [
+        {
+          "items": [
+            "Fala entrecortada, cianose, sonolência/confusão, exaustão, tórax silencioso ou PFE muito baixo.",
+            "Hipoxemia persistente, hipotensão, bradicardia, falha ao tratamento inicial ou antecedente de intubação.",
+            "Anafilaxia, pneumotórax, pneumonia grave ou diagnóstico alternativo."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Transferir para emergência/UTI conforme gravidade e resposta; registrar PFE, saturação, tratamento e horários.",
+          "Orientar plano de ação e retorno imediato se piora/uso repetido de resgate."
+        ]
+      },
+      "updated_at": "2026-10-15 07:04:32.15475+00"
+    },
+    {
+      "id": 246,
+      "slug": "dermatologia-dermatite-atopica",
+      "title": "Dermatite atópica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Eczema herpético suspeito.",
+            "Infecção extensa com febre ou sinais sistêmicos.",
+            "Eritrodermia, desidratação ou falha importante do tratamento tópico."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Eczema herpético: vesículas monomórficas dolorosas, febre, lesões oculares ou infecção disseminada."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão, localização, intensidade do prurido e impacto no sono.",
+          "Documentar plano de manutenção e quantidade aproximada de tópico orientada."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 247,
+      "slug": "dermatologia-dermatite-de-contato",
+      "title": "Dermatite de contato",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Edema facial importante com comprometimento ocular.",
+            "Sinais de queimadura química ou necrose.",
+            "Infecção secundária extensa ou sintomas sistêmicos."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Edema facial com dispneia, bolhas extensas ou febre e piora rápida."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar distribuição anatômica e exposição suspeita.",
+          "Documentar resultado de patch test quando realizado."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 248,
+      "slug": "dermatologia-urticaria",
+      "title": "Urticária",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Estridor, dispneia, hipotensão ou síncope.",
+            "Edema de língua/laringe ou progressão rápida.",
+            "Sintomas em múltiplos sistemas após exposição provável."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Angioedema laríngeo, queda de pressão, síncope ou broncoespasmo."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar presença ou ausência de anafilaxia e angioedema.",
+          "Documentar resposta ao anti-histamínico e necessidade de escalonamento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:37.676055+00"
+    },
+    {
+      "id": 249,
+      "slug": "dermatologia-psoriase",
+      "title": "Psoríase",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Eritrodermia extensa, febre ou instabilidade.",
+            "Pustulose generalizada.",
+            "Artrite rapidamente progressiva ou incapacitante."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Eritrodermia, pústulas generalizadas com sinais sistêmicos ou artrite agressiva."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão aproximada, áreas especiais e presença de sintomas articulares.",
+          "Documentar terapia prévia e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:06.963126+00"
+    },
+    {
+      "id": 250,
+      "slug": "dermatologia-acne",
+      "title": "Acne",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Acne fulminante com febre e sintomas sistêmicos.",
+            "Cicatrização rápida/progressiva.",
+            "Impacto psicológico importante ou ideação suicida associada à doença."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Acne fulminante com febre/lesões ulceradas ou gravidez sob retinoide."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar gravidade, distribuição e presença de cicatrizes.",
+          "Documentar uso prévio de antibióticos e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 251,
+      "slug": "dermatologia-rosacea",
+      "title": "Rosácea",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor ocular, fotofobia ou redução da visão.",
+            "Fimatoses progressivas com obstrução funcional.",
+            "Apresentação atípica que sugira lúpus, dermatite perioral ou outra doença."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor ocular importante, fotofobia e baixa visual."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar fenótipos predominantes e gatilhos.",
+          "Documentar acometimento ocular e resposta por componente clínico."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:06.963126+00"
+    },
+    {
+      "id": 252,
+      "slug": "dermatologia-impetigo",
+      "title": "Impetigo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Febre alta ou toxicidade sistêmica.",
+            "Rápida progressão, dor desproporcional ou necrose.",
+            "Bolhas extensas em lactente ou descamação difusa."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Celulite extensa, sepse, doença bolhosa em lactente ou sintomas renais pós-estreptocócicos."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão e forma clínica (bolhosa versus não bolhosa).",
+          "Documentar cultura quando coletada e resposta terapêutica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 253,
+      "slug": "dermatologia-erisipela",
+      "title": "Erisipela",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipotensão, alteração de consciência ou sepse.",
+            "Dor muito intensa ou desproporcional.",
+            "Necrose, bolhas hemorrágicas, crepitação ou anestesia cutânea."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, dor desproporcional, necrose ou rápida progressão."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão e porta de entrada provável.",
+          "Documentar progressão das bordas e resposta em reavaliação."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 254,
+      "slug": "dermatologia-celulite",
+      "title": "Celulite",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor desproporcional.",
+            "Necrose, bolhas hemorrágicas ou crepitação.",
+            "Hipotensão, alteração mental ou rápida progressão.",
+            "Imunossupressão com deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipotensão, progressão horária, necrose ou dor intensa desproporcional."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar extensão do eritema, sinais sistêmicos e fatores predisponentes.",
+          "Documentar risco de MRSA e resposta ao tratamento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 255,
+      "slug": "dermatologia-herpes-zoster",
+      "title": "Herpes-zóster",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Acometimento ocular ou perda visual.",
+            "Fraqueza facial, alterações auditivas ou vertigem.",
+            "Disseminação cutânea ampla, febre alta ou sinais neurológicos."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Zóster oftálmico, Ramsay Hunt com déficit, disseminação, meningite/encefalite."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar dermátomo, tempo desde início do rash e presença de complicações.",
+          "Documentar imunossupressão e necessidade de isolamento/precauções."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 256,
+      "slug": "dermatologia-herpes-simples",
+      "title": "Herpes simples",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Acometimento ocular.",
+            "Alteração neurológica ou encefalite suspeita.",
+            "Doença disseminada em imunossuprimido."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Ceratite, encefalite, disseminação ou desidratação por mucosite intensa."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar sítio, frequência de recorrências e necessidade de supressão.",
+          "Documentar complicações e imunossupressão."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 257,
+      "slug": "dermatologia-escabiose",
+      "title": "Escabiose",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Escabiose crostosa extensa.",
+            "Infecção secundária grave.",
+            "Surto em instituição ou população vulnerável."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Crosta disseminada em imunossuprimido, infecção bacteriana secundária ou surto institucional."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar contatos tratados e esquema utilizado.",
+          "Documentar suspeita de escabiose crostosa ou surto."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 258,
+      "slug": "dermatologia-pediculose",
+      "title": "Pediculose",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Infecção bacteriana secundária importante.",
+            "Falha repetida após tratamento correto.",
+            "Infestação em criança muito pequena ou com contraindicação medicamentosa."
+          ],
+          "title": "Reavaliar"
+        },
+        {
+          "items": [
+            "Infecção secundária extensa, febre ou reação química por tratamento inadequado."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tratamento utilizado e necessidade de repetição.",
+          "Orientar contatos e evitar estigma escolar."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 259,
+      "slug": "dermatologia-tinha-dermatofitoses",
+      "title": "Tinha / dermatofitoses",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Querion extenso com risco de cicatriz.",
+            "Infecção disseminada em imunossuprimido.",
+            "Falha repetida sugerindo resistência ou diagnóstico incorreto."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Quérion inflamatório com risco de alopecia cicatricial, infecção bacteriana secundária."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar sítio, extensão e método diagnóstico quando realizado.",
+          "Documentar uso prévio de corticosteroide e falhas terapêuticas."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:37.676055+00"
+    },
+    {
+      "id": 260,
+      "slug": "dermatologia-pitiriase-versicolor",
+      "title": "Pitiríase versicolor",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Lesões totalmente despigmentadas sem descamação.",
+            "Progressão apesar de tratamento adequado.",
+            "Inflamação importante ou sintomas sistêmicos."
+          ],
+          "title": "Reavaliar diagnóstico"
+        },
+        {
+          "items": [
+            "Hipoestesia com alteração de nervo periférico."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar distribuição, cor predominante e recorrências.",
+          "Documentar resposta clínica, não apenas repigmentação."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:06.963126+00"
+    },
+    {
+      "id": 261,
+      "slug": "dermatologia-candidiase-cutanea",
+      "title": "Candidíase cutânea",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Febre ou sinais sistêmicos.",
+            "Extensão rápida em imunossuprimido.",
+            "Falha terapêutica persistente."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Eritema expansivo febril, dor importante, úlcera ou suspeita de infecção invasiva."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização, fatores predisponentes e recorrência.",
+          "Documentar cultura/KOH quando realizados."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 262,
+      "slug": "dermatologia-hidradenite-supurativa",
+      "title": "Hidradenite supurativa",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Celulite extensa ou sepse sobreposta.",
+            "Lesão perineal ulcerada/vegetante crônica.",
+            "Dor incapacitante ou rápido aumento de extensão."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Infecção extensa, abscesso perineal profundo, febre/sepse ou sofrimento psíquico grave."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar estágio de Hurley e áreas acometidas.",
+          "Documentar resposta a antibióticos, biológicos e procedimentos."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 263,
+      "slug": "dermatologia-hanseniase",
+      "title": "Hanseníase",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor neural, perda súbita de força ou piora rápida da sensibilidade.",
+            "Reação hansênica sistêmica importante.",
+            "Lesão ocular ou incapacidade progressiva."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Neurite dolorosa ou perda de função recente, acometimento ocular ou reação sistêmica grave."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Hanseníase é de notificação compulsória no Brasil.",
+          "Registrar classificação operacional, grau de incapacidade e avaliação de contatos."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 264,
+      "slug": "dermatologia-lesoes-pigmentadas-e-suspeita-de-melanoma",
+      "title": "Lesões pigmentadas e suspeita de melanoma",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Crescimento rápido ou mudança recente importante.",
+            "Sangramento espontâneo/ulceração.",
+            "Lesão pigmentada nova e claramente diferente das demais."
+          ],
+          "title": "Alta suspeição"
+        },
+        {
+          "items": [
+            "Lesão nova em mudança rápida, sangramento persistente ou linfonodo suspeito."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tamanho, localização, características ABCDE e achados dermatoscópicos.",
+          "Documentar resultado anatomopatológico e Breslow quando confirmado."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 265,
+      "slug": "psiquiatria-agitacao-psicomotora",
+      "title": "Agitação psicomotora",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipoxemia, hipertermia, rigidez, trauma, confusão aguda ou depressão respiratória."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:28:49.770335+00"
+    },
+    {
+      "id": 266,
+      "slug": "psiquiatria-delirium",
+      "title": "Delirium",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipóxia, sepse, rebaixamento, crise convulsiva ou instabilidade hemodinâmica."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:28:49.770335+00"
+    },
+    {
+      "id": 267,
+      "slug": "psiquiatria-avaliacao-de-risco-de-suicidio",
+      "title": "Avaliação de risco de suicídio",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Plano e intenção atuais, tentativa recente grave, psicose de comando ou acesso iminente a meios."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:28:49.770335+00"
+    },
+    {
+      "id": 268,
+      "slug": "psiquiatria-depressao",
+      "title": "Depressão",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Intenção/plano suicida, sintomas psicóticos, catatonia, mania induzida e negligência grave."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:29:30.306548+00"
+    },
+    {
+      "id": 269,
+      "slug": "psiquiatria-transtorno-de-ansiedade-generalizada",
+      "title": "Transtorno de ansiedade generalizada",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Risco suicida, mania, abuso de sedativos ou sintomas cardiopulmonares não explicados."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 270,
+      "slug": "psiquiatria-transtorno-do-panico",
+      "title": "Transtorno do pânico",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor torácica sugestiva de isquemia, síncope, hipóxia, ideação suicida."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 271,
+      "slug": "psiquiatria-transtorno-bipolar",
+      "title": "Transtorno bipolar",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Risco de autoagressão, agressividade grave, delirium ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Mania com psicose, risco suicida, agitação grave, gestação sob teratógenos ou intoxicação por lítio."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, intervenção e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 272,
+      "slug": "psiquiatria-esquizofrenia",
+      "title": "Esquizofrenia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Catatonia, risco grave, síndrome neuroléptica maligna, agitação ameaçadora ou incapacidade de autocuidado."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:29:30.306548+00"
+    },
+    {
+      "id": 273,
+      "slug": "psiquiatria-primeiro-episodio-psicotico",
+      "title": "Primeiro episódio psicótico",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Alteração de consciência, febre, catatonia, comportamento perigoso ou déficits focais."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:29:30.306548+00"
+    },
+    {
+      "id": 274,
+      "slug": "psiquiatria-sindrome-de-abstinencia-alcoolica",
+      "title": "Síndrome de abstinência alcoólica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Convulsões, delirium tremens, hipertermia, arritmia, vômitos intensos ou instabilidade."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:28:49.770335+00"
+    },
+    {
+      "id": 275,
+      "slug": "psiquiatria-intoxicacao-alcoolica",
+      "title": "Intoxicação alcoólica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Rebaixamento progressivo, trauma oculto, hipóxia, hipoglicemia, convulsão ou aspiração."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:29:30.306548+00"
+    },
+    {
+      "id": 276,
+      "slug": "psiquiatria-abstinencia-de-benzodiazepinicos",
+      "title": "Abstinência de benzodiazepínicos",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Convulsão, delirium, agitação intensa, taquicardia grave ou ideação suicida."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 277,
+      "slug": "psiquiatria-tdah",
+      "title": "TDAH",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Convulsão, delirium, coma, risco de autoagressão ou instabilidade."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Ideação suicida, sinais psicóticos/maníacos, hipertensão importante ou uso abusivo de estimulantes."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar exame mental, risco, tratamento e seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 299,
+      "slug": "procedimentos-protocolos-transversais-prescricao-de-fluidoterapia",
+      "title": "Prescrição de fluidoterapia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Edema pulmonar, oligúria, choque persistente, rápida variação de sódio."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 300,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-potassio",
+      "title": "Reposição de potássio",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Arritmia, alterações importantes de ECG, paralisia ou insuficiência renal com risco de hipercalemia."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 301,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-sodio",
+      "title": "Reposição de sódio",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Convulsão, coma, edema cerebral, sobrecorreção ou desmielinização osmótica."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 302,
+      "slug": "procedimentos-protocolos-transversais-reposicao-de-magnesio",
+      "title": "Reposição de magnésio",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Torsades de pointes, convulsão, hiporreflexia, depressão respiratória ou insuficiência renal."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 303,
+      "slug": "procedimentos-protocolos-transversais-insulinoterapia-hospitalar",
+      "title": "Insulinoterapia hospitalar",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipoglicemia grave, cetose/acidemia, hipocalemia ou alteração de consciência."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 304,
+      "slug": "procedimentos-protocolos-transversais-transfusao-de-concentrado-de-hemacias",
+      "title": "Transfusão de concentrado de hemácias",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque hemorrágico, reação hemolítica, dispneia aguda ou sobrecarga circulatória."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 305,
+      "slug": "procedimentos-protocolos-transversais-transfusao-de-plaquetas",
+      "title": "Transfusão de plaquetas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hemorragia intracraniana, sangramento incontrolável, anafilaxia ou TRALI."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 306,
+      "slug": "procedimentos-protocolos-transversais-plasma-fresco-congelado",
+      "title": "Plasma fresco congelado",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Arritmia, alteração neurológica, sobrecarga, sangramento ou reação transfusional."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dispneia aguda, febre/hipotensão na transfusão ou sangramento refratário."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, dose/volume, monitorização e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 307,
+      "slug": "procedimentos-protocolos-transversais-reacoes-transfusionais",
+      "title": "Reações transfusionais",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, hemoglobinúria, dispneia grave, edema pulmonar, broncoespasmo ou sangramento."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 308,
+      "slug": "procedimentos-protocolos-transversais-sedacao-e-analgesia-procedural",
+      "title": "Sedação e analgesia procedural",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Apneia, hipoxemia, hipotensão, laringoespasmo ou aspiração."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 309,
+      "slug": "procedimentos-protocolos-transversais-analgesia-na-emergencia",
+      "title": "Analgesia na emergência",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Rebaixamento, hipoventilação, hipotensão ou dor súbita desproporcional ao achado."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 310,
+      "slug": "procedimentos-protocolos-transversais-profilaxia-de-ulcera-de-estresse",
+      "title": "Profilaxia de úlcera de estresse",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hematêmese, melena com instabilidade, anemia aguda ou sangramento ativo."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 311,
+      "slug": "procedimentos-protocolos-transversais-profilaxia-de-tromboembolismo-venoso",
+      "title": "Profilaxia de tromboembolismo venoso",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento ativo, HIT suspeita, novo edema assimétrico com dispneia ou instabilidade."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 312,
+      "slug": "procedimentos-protocolos-transversais-antibioticoterapia-empirica",
+      "title": "Antibioticoterapia empírica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, antibioticoterapia ineficaz, foco não drenado ou infecção necrosante."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 313,
+      "slug": "procedimentos-protocolos-transversais-coleta-de-hemoculturas",
+      "title": "Coleta de hemoculturas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Bacteremia persistente, S. aureus em hemocultura ou choque séptico."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 314,
+      "slug": "procedimentos-protocolos-transversais-puncao-lombar",
+      "title": "Punção lombar",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Instabilidade, hipertensão intracraniana com risco de herniação, coagulopatia importante ou déficit neurológico progressivo."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 315,
+      "slug": "procedimentos-protocolos-transversais-paracentese",
+      "title": "Paracentese",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Peritonite, hemorragia, instabilidade ou ascite com suspeita de infecção."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 316,
+      "slug": "procedimentos-protocolos-transversais-toracocentese",
+      "title": "Toracocentese",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, insuficiência respiratória ou deterioração neurológica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Pneumotórax hipertensivo, sangramento, edema de reexpansão ou insuficiência respiratória."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 317,
+      "slug": "procedimentos-protocolos-transversais-acesso-venoso-central",
+      "title": "Acesso venoso central",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dispneia súbita, sangramento, arritmia, expansão de hematoma ou sinais de sepse."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 318,
+      "slug": "procedimentos-protocolos-transversais-acesso-intraosseo",
+      "title": "Acesso intraósseo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Edema rápido do membro, dor intensa, perfusão distal alterada ou dificuldade de flush."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 319,
+      "slug": "procedimentos-protocolos-transversais-cateterismo-vesical",
+      "title": "Cateterismo vesical",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Ausência de drenagem com dor, sangramento importante, febre ou suspeita de uretra lesada."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 320,
+      "slug": "procedimentos-protocolos-transversais-sonda-nasogastrica-nasoenteral",
+      "title": "Sonda nasogástrica/nasoenteral",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Tosse intensa, dessaturação, dificuldade respiratória, sangramento ou suspeita de posicionamento pulmonar."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 321,
+      "slug": "procedimentos-protocolos-transversais-manejo-de-drenos",
+      "title": "Manejo de drenos",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sangramento abundante, bile/fezes inesperadas, perda do dreno crítico ou sepse."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 322,
+      "slug": "procedimentos-protocolos-transversais-cuidados-com-ostomias",
+      "title": "Cuidados com ostomias",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Estoma necrótico, ausência abrupta de débito com distensão, sepse ou desidratação."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 323,
+      "slug": "procedimentos-protocolos-transversais-curativos-e-feridas",
+      "title": "Curativos e feridas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Necrose progressiva, dor desproporcional, sepse, isquemia ou lesão suspeita de câncer."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 324,
+      "slug": "procedimentos-protocolos-transversais-prevencao-de-lesao-por-pressao",
+      "title": "Prevenção de lesão por pressão",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Lesão cutânea profunda, necrose, sepse, isquemia do calcâneo."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 325,
+      "slug": "procedimentos-protocolos-transversais-prescricao-de-nutricao-enteral",
+      "title": "Prescrição de nutrição enteral",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Broncoaspiração, isquemia intestinal suspeita, hipofosfatemia grave ou vômitos persistentes."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 326,
+      "slug": "procedimentos-protocolos-transversais-prevencao-de-delirium-hospitalar",
+      "title": "Prevenção de delirium hospitalar",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sangramento, infecção, isquemia ou deterioração clínica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Delirium hipoativo não reconhecido, hipóxia, sepse, agressividade grave ou rebaixamento."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, resposta e complicações."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 327,
+      "slug": "procedimentos-protocolos-transversais-reconciliacao-medicamentosa",
+      "title": "Reconciliação medicamentosa",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, deterioração neurológica, insuficiência renal ou risco de segurança."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Anticoagulante, insulina, opioide ou anticonvulsivante omitido ou duplicado; alergia grave."
+          ],
+          "title": "Sinais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 05:56:23.723287+00"
+    },
+    {
+      "id": 328,
+      "slug": "procedimentos-protocolos-transversais-alta-hospitalar-segura",
+      "title": "Alta hospitalar segura",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, deterioração neurológica, insuficiência renal ou risco de segurança."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Instabilidade clínica, incapacidade de uso de medicações essenciais ou ausência de suporte imprescindível."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 359,
+      "slug": "pediatria-sindrome-nefrotica-na-infancia",
+      "title": "Síndrome nefrótica na infância",
+      "status": "review_needed",
+      "red_flags": [
+        "Dor abdominal intensa, febre e suspeita de peritonite bacteriana.",
+        "Dor unilateral de membro, dispneia súbita ou suspeita de trombose.",
+        "Oligúria, hipotensão e sinais de hipovolemia.",
+        "Resistência a corticoide ou disfunção renal progressiva.",
+        "Dor abdominal intensa com febre, trombose, dispneia, anúria ou hipertensão grave."
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:28:35.865568+00"
+    },
+    {
+      "id": 360,
+      "slug": "pediatria-glomerulonefrite-pos-estreptococica",
+      "title": "Glomerulonefrite pós-estreptocócica",
+      "status": "review_needed",
+      "red_flags": [
+        "Edema agudo de pulmão, hipertensão encefalopática.",
+        "Hipercalemia, anúria e insuficiência renal progressiva.",
+        "Proteinúria nefrótica ou C3 persistentemente baixo."
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 361,
+      "slug": "pediatria-purpura-de-henoch-schonlein",
+      "title": "Púrpura de Henoch-Schönlein",
+      "status": "review_needed",
+      "red_flags": [
+        "Dor abdominal intensa, sangue nas fezes ou vômito bilioso.",
+        "Proteinúria relevante, hipertensão ou oligúria.",
+        "Edema importante e perda de função renal.",
+        "Hipertensão, oligúria, proteinúria importante, sangramento intestinal ou dor abdominal contínua."
+      ],
+      "notification": {
+        "items": [
+          "Registrar PA e EAS em todas as avaliações de seguimento.",
+          "Documentar presença de dor abdominal, artrite e sinais renais."
+        ]
+      },
+      "updated_at": "2026-10-15 02:27:25.979042+00"
+    },
+    {
+      "id": 362,
+      "slug": "pediatria-doenca-de-kawasaki",
+      "title": "Doença de Kawasaki",
+      "status": "review_needed",
+      "red_flags": [
+        "Aneurisma/dilatação coronariana.",
+        "Choque, miocardite ou disfunção ventricular.",
+        "Febre persistente após IGIV.",
+        "Lactente com febre prolongada e diagnóstico atrasado.",
+        "Choque, arritmia, disfunção cardíaca ou febre persistente após imunoglobulina."
+      ],
+      "notification": {
+        "items": [
+          "Registrar critérios clínicos, Z-scores coronarianos e horário da IVIG.",
+          "Documentar resposta febril e plano de seguimento cardíaco."
+        ]
+      },
+      "updated_at": "2026-10-15 02:25:25.011181+00"
+    },
+    {
+      "id": 364,
+      "slug": "pediatria-constipacao-funcional",
+      "title": "Constipação funcional",
+      "status": "review_needed",
+      "red_flags": [
+        "Vômito bilioso e distensão importante.",
+        "Sangramento não explicado por fissura.",
+        "Falha de crescimento, sinais neurológicos/anorretais anormais.",
+        "Constipação desde período neonatal com mecônio tardio."
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 365,
+      "slug": "pediatria-refluxo-gastroesofagico-na-infancia",
+      "title": "Refluxo gastroesofágico na infância",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, deterioração neurológica, insuficiência renal ou risco de segurança."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Vômitos biliosos ou em jato progressivos, sangue, disfagia, apneia ou perda ponderal."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:27:25.979042+00"
+    },
+    {
+      "id": 366,
+      "slug": "pediatria-alergia-a-proteina-do-leite-de-vaca",
+      "title": "Alergia à proteína do leite de vaca",
+      "status": "review_needed",
+      "red_flags": [
+        "Anafilaxia ou comprometimento respiratório.",
+        "Hematoquezia importante, desidratação ou hipotensão.",
+        "Falha de crescimento e desnutrição.",
+        "Dietas restritivas prolongadas sem confirmação."
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 367,
+      "slug": "pediatria-ictericia-prolongada-no-lactente",
+      "title": "Icterícia prolongada no lactente",
+      "status": "review_needed",
+      "red_flags": [
+        "Fezes hipocólicas/acólicas, colúria e hepatomegalia.",
+        "Bilirrubina conjugada elevada.",
+        "Coagulopatia ou sangramento, ganho de peso ruim."
+      ],
+      "notification": {
+        "items": [
+          "Registrar achados, conduta e plano de seguimento."
+        ]
+      },
+      "updated_at": "2026-10-15 02:29:59.181653+00"
+    },
+    {
+      "id": 369,
+      "slug": "ginecologia-e-obstetricia-hiperemese-gravidica",
+      "title": "Hiperêmese gravídica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Confusão, ataxia, desidratação grave, oligúria, hematêmese ou distúrbio eletrolítico."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 370,
+      "slug": "ginecologia-e-obstetricia-colestase-intra-hepatica-da-gestacao",
+      "title": "Colestase intra-hepática da gestação",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Ácidos biliares ≥100 µmol/L, icterícia progressiva, alterações da coagulação ou movimentos fetais reduzidos."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 371,
+      "slug": "ginecologia-e-obstetricia-isoimunizacao-rh",
+      "title": "Isoimunização Rh",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hidropisia, anemia fetal suspeita, Doppler ACM elevado ou icterícia/anemia neonatal importante."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 372,
+      "slug": "ginecologia-e-obstetricia-restricao-de-crescimento-fetal",
+      "title": "Restrição de crescimento fetal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Fluxo reverso em artéria umbilical.",
+            "Cardiotocografia não tranquilizadora.",
+            "Pré-eclâmpsia grave ou deterioração materna.",
+            "Redução importante de movimentos fetais."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Doppler reverso, CTG alterada, movimentos reduzidos ou pré-eclâmpsia grave."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar percentis de PFE e CA, Doppler umbilical e plano de vigilância.",
+          "Documentar indicação e idade gestacional planejada para parto."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 373,
+      "slug": "ginecologia-e-obstetricia-gestacao-prolongada",
+      "title": "Gestação prolongada",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Movimentos fetais reduzidos.",
+            "Oligoidrâmnio.",
+            "Traçado fetal não tranquilizador.",
+            "Sangramento ou sinais maternos de complicação."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Movimentos fetais reduzidos, oligodrâmnio, desacelerações ou gestação avançando sem plano."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar melhor estimativa de idade gestacional e método de datação.",
+          "Documentar decisão compartilhada sobre indução versus manejo expectante."
+        ]
+      },
+      "updated_at": "2026-10-15 02:46:40.859283+00"
+    },
+    {
+      "id": 374,
+      "slug": "ginecologia-e-obstetricia-infeccao-urinaria-na-gestacao",
+      "title": "Infecção urinária na gestação",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Febre, dor lombar, hipotensão, vômitos, sinais de sepse ou contrações prematuras."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 376,
+      "slug": "ginecologia-e-obstetricia-violencia-sexual-e-profilaxias",
+      "title": "Violência sexual e profilaxias",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Suicidalidade, ferimentos graves, exposição a agressor com ameaça, gestação ou PEP prestes a ultrapassar 72h."
+          ],
+          "title": "Critérios adicionais de urgência"
+        }
+      ],
+      "notification": {
+        "text": "Notificação compulsória de violência sexual à autoridade de saúde em 24 horas e comunicação protetiva conforme legislação, com preservação de confidencialidade.",
+        "required": true
+      },
+      "updated_at": "2026-10-15 02:51:29.207218+00"
+    },
+    {
+      "id": 377,
+      "slug": "ginecologia-e-obstetricia-cisto-ovariano-e-massa-anexial",
+      "title": "Cisto ovariano e massa anexial",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Ascite, nodularidade sólida ou papilas com vascularização.",
+            "Dor súbita intensa com náuseas/vômitos.",
+            "Crescimento rápido ou sintomas sistêmicos."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Peritonite, dor intensa, ascite, componentes sólidos irregulares ou crescimento rápido."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar categoria O-RADS quando utilizada e características morfológicas.",
+          "Documentar menopausa e fatores de risco oncológico."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 378,
+      "slug": "ginecologia-e-obstetricia-torcao-anexial",
+      "title": "Torção anexial",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Dor súbita intensa com vômitos.",
+            "Massa anexial + dor aguda.",
+            "Sinais de irritação peritoneal ou instabilidade."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Dor/vômitos persistentes, peritonismo ou deterioração clínica."
+          ],
+          "title": "Sinais adicionais de alerta"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tempo de início da dor, achados ultrassonográficos e tempo até avaliação cirúrgica.",
+          "Documentar preservação ovariana quando realizada."
+        ]
+      },
+      "updated_at": "2026-10-15 02:45:12.751995+00"
+    },
+    {
+      "id": 379,
+      "slug": "cirurgia-geral-colecoes-e-abscessos-intra-abdominais",
+      "title": "Coleções e abscessos intra-abdominais",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque séptico ou disfunção orgânica.",
+            "Peritonite difusa.",
+            "Falha de drenagem com piora clínica.",
+            "Sinais de perfuração visceral ou necrose."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Choque, peritonite, bacteremia persistente ou deterioração apesar de antibiótico."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar tamanho/localização da coleção, método de controle de foco e material enviado para cultura.",
+          "Documentar resposta clínica após drenagem/cirurgia."
+        ]
+      },
+      "updated_at": "2026-10-15 03:06:54.987212+00"
+    },
+    {
+      "id": 380,
+      "slug": "cirurgia-geral-fistulas-enterocutaneas",
+      "title": "Fístulas enterocutâneas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, sepse persistente, hipocalemia/hipomagnesemia grave ou débito de alto volume."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 381,
+      "slug": "cirurgia-geral-sindrome-do-intestino-curto",
+      "title": "Síndrome do intestino curto",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Oligúria, hipovolemia, distúrbio eletrolítico, sepse de cateter ou desnutrição grave."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 382,
+      "slug": "cirurgia-geral-trauma-cervical",
+      "title": "Trauma cervical",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Estridor, hematoma expansivo, hemorragia ativa, AVC agudo ou enfisema progressivo."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 383,
+      "slug": "cirurgia-geral-trauma-de-face",
+      "title": "Trauma de face",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, sepse, sangramento importante, deterioração neurológica ou comprometimento fetal."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Comprometimento da via aérea, perda visual aguda, hemorragia não controlada ou fístula liquórica."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 384,
+      "slug": "cirurgia-geral-trauma-geniturinario",
+      "title": "Trauma geniturinário",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade hemodinâmica com suspeita de sangramento geniturinário.",
+            "Anúria, extravasamento urinário extenso ou lesão vascular renal.",
+            "Sangue no meato + fratura pélvica.",
+            "Ruptura testicular ou trauma peniano grave."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Sangue no meato, retenção, choque, extravasamento urinário e peritonite."
+          ],
+          "title": "Alertas de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar mecanismo, hematúria, achados de TC/cistografia/uretrografia e intervenção realizada.",
+          "Documentar necessidade de seguimento urológico."
+        ]
+      },
+      "updated_at": "2026-10-15 03:08:29.198534+00"
+    },
+    {
+      "id": 386,
+      "slug": "cirurgia-geral-doenca-arterial-periferica",
+      "title": "Doença arterial periférica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Gangrena, dor em repouso persistente, infecção de úlcera ou perda aguda de pulso."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 387,
+      "slug": "cirurgia-geral-ulcera-venosa-e-insuficiencia-venosa-cronica",
+      "title": "Úlcera venosa e insuficiência venosa crônica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Dor isquêmica, necrose progressiva, celulite em expansão ou úlcera atípica que sangra.",
+            "Úlcera sem evolução favorável após manejo adequado."
+          ],
+          "title": "Alertas adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:22:59.371188+00"
+    },
+    {
+      "id": 388,
+      "slug": "cirurgia-geral-trombose-arterial-aguda",
+      "title": "Trombose arterial aguda",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Déficit motor novo, anestesia progressiva, dor em repouso intensa ou reperfusão complicada."
+          ],
+          "title": "Alarmes adicionais"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:12:23.846493+00"
+    },
+    {
+      "id": 399,
+      "slug": "dermatologia-sindrome-de-stevens-johnson-e-necrolise-epidermica-toxica",
+      "title": "Síndrome de Stevens-Johnson e necrólise epidérmica tóxica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Destacamento epidérmico progressivo.",
+            "Hipotensão, insuficiência renal, insuficiência respiratória ou sepse.",
+            "Comprometimento ocular ou de via aérea.",
+            "SCORTEN elevado."
+          ],
+          "title": "Emergência"
+        },
+        {
+          "items": [
+            "Via aérea ameaçada, lesão ocular, descolamento rápido, choque ou sepse."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Documentar percentual de superfície descolada, SCORTEN e medicamentos iniciados nas 8 semanas anteriores.",
+          "Registrar fármaco suspeito como reação grave no prontuário."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:37.676055+00"
+    },
+    {
+      "id": 400,
+      "slug": "dermatologia-eritema-multiforme",
+      "title": "Eritema multiforme",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Acometimento ocular.",
+            "Desidratação por mucosite intensa.",
+            "Destacamento epidérmico extenso ou suspeita de SJS/NET."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Descolamento cutâneo, múltiplas mucosas graves, desidratação ou lesão ocular."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar padrão de lesões-alvo, distribuição e gatilho suspeito.",
+          "Documentar número de recorrências e uso de profilaxia antiviral."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 401,
+      "slug": "dermatologia-farmacodermias",
+      "title": "Farmacodermias",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Erosões de mucosa, bolhas ou dor cutânea.",
+            "Febre alta com edema facial e eosinofilia.",
+            "Hipotensão, dispneia ou anafilaxia.",
+            "Hepatite, nefropatia ou outra disfunção orgânica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Erosões mucosas, bolhas extensas, febre alta, eosinofilia com lesão hepática/renal ou hipotensão."
+          ],
+          "title": "Alertas clínicos"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar medicamento, data de início, latência e tipo de reação.",
+          "Notificar farmacovigilância quando aplicável."
+        ]
+      },
+      "updated_at": "2026-10-15 03:24:17.29915+00"
+    },
+    {
+      "id": 402,
+      "slug": "dermatologia-ulceras-cutaneas-cronicas",
+      "title": "Úlceras cutâneas crônicas",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Isquemia crítica ou gangrena.",
+            "Sepse/celulite extensa.",
+            "Exposição óssea ou suspeita de osteomielite.",
+            "Úlcera atípica progressiva ou suspeita de neoplasia."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Isquemia crítica, necrose progressiva, sepse ou malignidade suspeita."
+          ],
+          "title": "Sinais de gravidade"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar etiologia provável, medidas da ferida e perfusão.",
+          "Documentar presença/ausência de sinais clínicos de infecção."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:37.676055+00"
+    },
+    {
+      "id": 403,
+      "slug": "dermatologia-lesao-por-pressao",
+      "title": "Lesão por pressão",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse ou celulite extensa.",
+            "Crepitação, necrose rapidamente progressiva ou dor desproporcional.",
+            "Exposição óssea com suspeita de osteomielite."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Febre/sepse, exsudato purulento, dor/eritema progressivos e exposição óssea com infecção."
+          ],
+          "title": "Alarmes"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar estágio e medidas da lesão.",
+          "Documentar medidas preventivas, reposicionamento e superfície de suporte."
+        ]
+      },
+      "updated_at": "2026-10-15 03:25:33.488836+00"
+    },
+    {
+      "id": 404,
+      "slug": "dermatologia-piodermites-recorrentes",
+      "title": "Piodermites recorrentes",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Sepse, hipotensão ou progressão rápida.",
+            "Imunossupressão importante.",
+            "Necrose, dor desproporcional ou suspeita de infecção profunda."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sepse, necrose, celulite extensa ou abscesso profundo."
+          ],
+          "title": "Sinais de alarme"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar localização, cultura e agente isolado.",
+          "Documentar esquema de descolonização quando realizado."
+        ]
+      },
+      "updated_at": "2026-10-15 03:27:06.963126+00"
+    },
+    {
+      "id": 405,
+      "slug": "psiquiatria-transtorno-obsessivo-compulsivo",
+      "title": "Transtorno obsessivo-compulsivo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Risco suicida, impossibilidade de alimentação/higiene ou delírios graves."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 406,
+      "slug": "psiquiatria-transtorno-de-estresse-pos-traumatico",
+      "title": "Transtorno de estresse pós-traumático",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Ideação suicida, dissociação grave, violência atual ou incapacidade de autocuidado."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 407,
+      "slug": "psiquiatria-transtornos-alimentares",
+      "title": "Transtornos alimentares",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Bradicardia/hipotensão graves, síncope, arritmia, hipocalemia ou ideação suicida."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 408,
+      "slug": "psiquiatria-insonia",
+      "title": "Insônia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Sonolência com risco de acidente, sintomas maníacos, apneia grave ou ideação suicida."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 409,
+      "slug": "psiquiatria-intoxicacao-e-abstinencia-por-estimulantes",
+      "title": "Intoxicação e abstinência por estimulantes",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Hipertermia, convulsão, arritmia, dor torácica ou ideação suicida."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 410,
+      "slug": "psiquiatria-transtornos-relacionados-ao-uso-de-opioides",
+      "title": "Transtornos relacionados ao uso de opioides",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Instabilidade, déficit neurológico, isquemia ameaçadora, risco suicida ou deterioração rápida."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Apneia, hipoxemia persistente, depressão respiratória recorrente, aspiração ou suicidabilidade."
+          ],
+          "title": "Critérios de avaliação urgente"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar avaliação, tratamento e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:51:18.678959+00"
+    },
+    {
+      "id": 411,
+      "slug": "procedimentos-protocolos-transversais-manejo-de-acesso-venoso-periferico-dificil",
+      "title": "Manejo de acesso venoso periférico difícil",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Necrose por extravasamento, perda de acesso essencial ou trombose/infeção associada."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 412,
+      "slug": "procedimentos-protocolos-transversais-puncao-arterial-e-gasometria",
+      "title": "Punção arterial e gasometria",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Isquemia distal, sangramento persistente, hipóxia ou acidose grave."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    },
+    {
+      "id": 413,
+      "slug": "procedimentos-protocolos-transversais-cardioversao-eletrica-sincronizada",
+      "title": "Cardioversão elétrica sincronizada",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Choque sincronizado em TV polimórfica.",
+            "Disparar sem confirmar marcadores de sincronização.",
+            "Atrasar cardioversão em paciente com choque/edema agudo por taquiarritmia."
+          ],
+          "title": "Erros críticos"
+        },
+        {
+          "items": [
+            "Hipotensão, isquemia, edema pulmonar, síncope, perda de pulso."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar ritmo pré/pós-choque, energia e resposta clínica.",
+          "Documentar sedação e eventos adversos."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 414,
+      "slug": "procedimentos-protocolos-transversais-desfibrilacao",
+      "title": "Desfibrilação",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Atrasar choque em FV/TV sem pulso.",
+            "Interromper compressões por tempo excessivo.",
+            "Aplicar choque em assistolia/AESP.",
+            "Usar modo sincronizado durante PCR por FV/TV sem pulso."
+          ],
+          "title": "Erros críticos"
+        },
+        {
+          "items": [
+            "FV/TV sem pulso persistente, falha de segurança elétrica ou RCP interrompida por longos períodos."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar ritmos, horários e energias dos choques.",
+          "Documentar RCP, medicamentos e momento do ROSC."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 415,
+      "slug": "procedimentos-protocolos-transversais-marcapasso-transcutaneo",
+      "title": "Marcapasso transcutâneo",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Confundir artefato de estimulação com captura verdadeira.",
+            "Não confirmar pulso mecânico.",
+            "Atrasar pacing em bradicardia instável refratária."
+          ],
+          "title": "Erros críticos"
+        },
+        {
+          "items": [
+            "Choque, perda de captura mecânica, síncope recorrente ou bradicardia extrema."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar ritmo, frequência programada, limiar e corrente final.",
+          "Documentar captura elétrica e mecânica."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 416,
+      "slug": "procedimentos-protocolos-transversais-drenagem-toracica",
+      "title": "Drenagem torácica",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Choque, dispneia aguda, sangramento pleural maciço ou enfisema subcutâneo progressivo."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 417,
+      "slug": "procedimentos-protocolos-transversais-cricotireoidostomia",
+      "title": "Cricotireoidostomia",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Incapacidade de oxigenar, hipoxemia refratária, falso trajeto ou ausência de CO2 expirado."
+          ],
+          "title": "Sinais de complicação"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:52:51.919082+00"
+    },
+    {
+      "id": 418,
+      "slug": "procedimentos-protocolos-transversais-intubacao-orotraqueal",
+      "title": "Intubação orotraqueal",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Não oxigena/não intuba, ausência de EtCO2 persistente ou hipotensão refratária."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 419,
+      "slug": "procedimentos-protocolos-transversais-extubacao-e-avaliacao-de-prontidao",
+      "title": "Extubação e avaliação de prontidão",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Estridor, hipoxemia persistente, fadiga respiratória ou rebaixamento."
+          ],
+          "title": "Alarmes e complicações"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:54:20.532413+00"
+    },
+    {
+      "id": 420,
+      "slug": "procedimentos-protocolos-transversais-prevencao-e-manejo-de-broncoaspiracao",
+      "title": "Prevenção e manejo de broncoaspiração",
+      "status": "review_needed",
+      "red_flags": [
+        {
+          "items": [
+            "Hipoxemia refratária, sangramento, pneumotórax, falha de via aérea ou deterioração hemodinâmica."
+          ],
+          "title": "Alarme"
+        },
+        {
+          "items": [
+            "Estridor, hipoxemia, necessidade de ventilação ou febre com instabilidade."
+          ],
+          "title": "Sinais de urgência"
+        }
+      ],
+      "notification": {
+        "items": [
+          "Registrar indicação, técnica, complicações e resposta."
+        ]
+      },
+      "updated_at": "2026-10-15 03:55:44.561332+00"
+    }
+  ]
+}
