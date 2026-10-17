@@ -1,0 +1,91 @@
+{
+  "created_date": "2026-10-16",
+  "description": "Backup antes da correção clínica e da referência específica AAOS e nuance CHEST/ACC.",
+  "records": [
+    {
+      "id": 113,
+      "slug": "cirurgia-geral-manejo-perioperatorio-de-anticoagulantes",
+      "title": "Manejo perioperatório de anticoagulantes",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://journal.chestnet.org/article/S0012-3692(22)01359-9/fulltext",
+          "label": "CHEST — Perioperative Management of Antithrombotic Therapy"
+        },
+        {
+          "url": "https://journal.chestnet.org/article/S0012-3692-%2822%2901359-9/fulltext",
+          "label": "CHEST — Manejo perioperatório de antitrombóticos 2022"
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Varfarina: vitamina K e concentrado de complexo protrombínico em sangramento grave/urgência conforme necessidade.",
+            "Dabigatrana: idarucizumabe é reversor específico.",
+            "Inibidores de fator Xa: andexanet alfa pode ser usado em cenários selecionados; PCC é alternativa conforme protocolo.",
+            "Protamina reverte heparina não fracionada e parcialmente HBPM."
+          ],
+          "title": "Reversão"
+        },
+        {
+          "items": [
+            "Decisão requer risco trombótico, sangramento, função renal e procedimento; não dar tempo de suspensão único para todos.",
+            "Reiniciar após hemostasia segura e risco de sangramento aceito; anticoagulação de ponte não é rotina na maioria dos usuários de DOAC."
+          ],
+          "title": "Tratamento e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "TEV recente e prótese valvar mecânica podem elevar muito o risco trombótico.",
+            "Anestesia neuraxial exige intervalos específicos mais conservadores.",
+            "Função renal reduzida prolonga efeito de vários anticoagulantes."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    },
+    {
+      "id": 127,
+      "slug": "cirurgia-geral-sindrome-compartimental",
+      "title": "Síndrome compartimental",
+      "status": "review_needed",
+      "source_refs": [
+        {
+          "url": "https://www.aaos.org/",
+          "label": "AAOS — Management of Acute Compartment Syndrome"
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Fasciotomia completa de todos os compartimentos envolvidos é o tratamento definitivo.",
+            "Feridas costumam permanecer abertas inicialmente e ser reavaliadas para fechamento tardio/enxertia.",
+            "Tratar rabdomiólise, hipercalemia e lesão renal associadas quando presentes."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "O pulso distal pode permanecer palpável até fases tardias; não exclui síndrome compartimental.",
+            "Evitar posicionar membro excessivamente elevado, que reduz pressão de perfusão; monitorar CK/rim, mas não atrasar fasciotomia."
+          ],
+          "title": "Condutas clínicas específicas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Fratura de tíbia é causa clássica, mas síndrome compartimental pode ocorrer sem fratura.",
+            "Anticoagulação, queimaduras circunferenciais e reperfusão aumentam risco.",
+            "Analgesia regional pode dificultar reconhecimento em alguns cenários; monitorização deve ser rigorosa."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "updated_at": "2026-10-17 02:20:53.049776+00"
+    }
+  ]
+}
