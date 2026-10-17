@@ -1,0 +1,932 @@
+{
+  "key": "complicacoes-pos-operatorias--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/complicacoes-pos-operatorias/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 177 | Complicações pós-operatórias",
+  "source_sha256": "fd20f1244d7f8b8e78e71ab501119d3213da499676beb8e4d8d6010ae65a8827",
+  "chars_estimated": 105659,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 177 | Complicações pós-operatórias",
+      "level": 1
+    },
+    {
+      "line": 15,
+      "title": "1. Definição e importância para provas e prática",
+      "level": 2
+    },
+    {
+      "line": 21,
+      "title": "1.1. Por que interessa",
+      "level": 3
+    },
+    {
+      "line": 25,
+      "title": "1.2. Classificação por tempo",
+      "level": 3
+    },
+    {
+      "line": 34,
+      "title": "2. Fisiopatologia: inflamação fisiológica versus complicação",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "2.1. Cicatrização e riscos de falha",
+      "level": 3
+    },
+    {
+      "line": 48,
+      "title": "2.2. Riscos do hospedeiro e operação",
+      "level": 3
+    },
+    {
+      "line": 63,
+      "title": "3. Vigilância pós-operatória: olhar paciente, não apenas exames",
+      "level": 2
+    },
+    {
+      "line": 65,
+      "title": "3.1. Checklist clínico por visita",
+      "level": 3
+    },
+    {
+      "line": 77,
+      "title": "3.2. Early warning scores",
+      "level": 3
+    },
+    {
+      "line": 83,
+      "title": "3.3. Monitoramento de balanço",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "4. Primeiro minuto diante de deterioração: algoritmo ABCDE",
+      "level": 2
+    },
+    {
+      "line": 102,
+      "title": "4.1. Perguntas que diferenciam os grandes riscos",
+      "level": 3
+    },
+    {
+      "line": 116,
+      "title": "5. Classificação Clavien–Dindo: o que de fato mede",
+      "level": 2
+    },
+    {
+      "line": 132,
+      "title": "5.1. Comprehensive Complication Index e outros desfechos",
+      "level": 3
+    },
+    {
+      "line": 136,
+      "title": "6. Febre pós-operatória: investigar pela síndrome, não por calendário mágico",
+      "level": 2
+    },
+    {
+      "line": 140,
+      "title": "6.1. Os “5 Ws” e por que são limitados",
+      "level": 3
+    },
+    {
+      "line": 156,
+      "title": "6.2. PCR e procalcitonina",
+      "level": 3
+    },
+    {
+      "line": 162,
+      "title": "7. Infecção de sítio cirúrgico (ISC): superficial, profunda e órgão/espaço",
+      "level": 2
+    },
+    {
+      "line": 164,
+      "title": "7.1. Como classificar",
+      "level": 3
+    },
+    {
+      "line": 174,
+      "title": "7.2. Diagnóstico e diferenciais",
+      "level": 3
+    },
+    {
+      "line": 180,
+      "title": "7.3. Prevenção antes/durante/depois",
+      "level": 3
+    },
+    {
+      "line": 190,
+      "title": "7.4. Prevenção não substitui reconhecimento",
+      "level": 3
+    },
+    {
+      "line": 194,
+      "title": "8. Deiscência de anastomose gastrointestinal: diagnóstico que não pode atrasar",
+      "level": 2
+    },
+    {
+      "line": 198,
+      "title": "8.1. Mecanismos e fatores de risco",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "8.2. Sinais de alarme",
+      "level": 3
+    },
+    {
+      "line": 216,
+      "title": "8.3. Qual imagem pedir?",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "8.4. Tratamento por estabilidade e contaminação",
+      "level": 3
+    },
+    {
+      "line": 235,
+      "title": "8.5. Classificações e comunicação",
+      "level": 3
+    },
+    {
+      "line": 239,
+      "title": "9. Abscesso e infecção intra-abdominal após cirurgia",
+      "level": 2
+    },
+    {
+      "line": 245,
+      "title": "9.1. Controle de foco — princípio decisivo",
+      "level": 3
+    },
+    {
+      "line": 253,
+      "title": "9.2. Antimicrobianos: selecionar pela flora e gravidade",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "10. Deiscência aponeurótica e evisceração",
+      "level": 2
+    },
+    {
+      "line": 265,
+      "title": "10.1. Conduta na evisceração",
+      "level": 3
+    },
+    {
+      "line": 275,
+      "title": "11. Hemorragia pós-operatória",
+      "level": 2
+    },
+    {
+      "line": 279,
+      "title": "11.1. Reconhecer",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "11.2. Manejo",
+      "level": 3
+    },
+    {
+      "line": 289,
+      "title": "11.3. Hematoma versus sangramento ativo",
+      "level": 3
+    },
+    {
+      "line": 293,
+      "title": "12. Tromboembolismo venoso: TVP e embolia pulmonar",
+      "level": 2
+    },
+    {
+      "line": 297,
+      "title": "12.1. TVP",
+      "level": 3
+    },
+    {
+      "line": 301,
+      "title": "12.2. TEP",
+      "level": 3
+    },
+    {
+      "line": 309,
+      "title": "12.3. Profilaxia",
+      "level": 3
+    },
+    {
+      "line": 315,
+      "title": "13. Complicações respiratórias: da hipoventilação ao TEP",
+      "level": 2
+    },
+    {
+      "line": 317,
+      "title": "13.1. Depressão ventilatória e opioides",
+      "level": 3
+    },
+    {
+      "line": 323,
+      "title": "13.2. Atelectasia e pneumonia",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "13.3. Aspiração e pneumonite química",
+      "level": 3
+    },
+    {
+      "line": 333,
+      "title": "13.4. Edema pulmonar e insuficiência respiratória",
+      "level": 3
+    },
+    {
+      "line": 337,
+      "title": "13.5. Prevenção",
+      "level": 3
+    },
+    {
+      "line": 341,
+      "title": "14. Complicações cardiovasculares: IAM, MINS, arritmia e insuficiência cardíaca",
+      "level": 2
+    },
+    {
+      "line": 345,
+      "title": "14.1. MINS e diretriz ACC/AHA 2024 reafirmada 2026",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "14.2. Fibrilação atrial pós-operatória",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "14.3. Insuficiência cardíaca e choque cardiogênico",
+      "level": 3
+    },
+    {
+      "line": 359,
+      "title": "15. Lesão renal aguda e distúrbios hidroeletrolíticos",
+      "level": 2
+    },
+    {
+      "line": 363,
+      "title": "15.1. Como pensar na oligúria",
+      "level": 3
+    },
+    {
+      "line": 372,
+      "title": "15.2. Complicações urgentes",
+      "level": 3
+    },
+    {
+      "line": 376,
+      "title": "15.3. Hiponatremia",
+      "level": 3
+    },
+    {
+      "line": 380,
+      "title": "15.4. Distúrbios de magnésio, cálcio e potássio",
+      "level": 3
+    },
+    {
+      "line": 384,
+      "title": "16. Íleo pós-operatório, obstrução mecânica e pseudo-obstrução",
+      "level": 2
+    },
+    {
+      "line": 386,
+      "title": "16.1. Íleo fisiológico versus prolongado",
+      "level": 3
+    },
+    {
+      "line": 392,
+      "title": "16.2. Obstrução mecânica precoce e tardia",
+      "level": 3
+    },
+    {
+      "line": 398,
+      "title": "16.3. Pseudo-obstrução colônica aguda (Ogilvie)",
+      "level": 3
+    },
+    {
+      "line": 402,
+      "title": "17. Fístulas específicas: biliares, pancreáticas, urinárias e enterocutâneas",
+      "level": 2
+    },
+    {
+      "line": 404,
+      "title": "17.1. Fístula biliar após colecistectomia",
+      "level": 3
+    },
+    {
+      "line": 408,
+      "title": "17.2. Fístula pancreática",
+      "level": 3
+    },
+    {
+      "line": 412,
+      "title": "17.3. Fístula enterocutânea",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "17.4. Lesão urinária",
+      "level": 3
+    },
+    {
+      "line": 420,
+      "title": "18. Complicações de ferida e parede abdominal tardias",
+      "level": 2
+    },
+    {
+      "line": 422,
+      "title": "18.1. Seroma",
+      "level": 3
+    },
+    {
+      "line": 426,
+      "title": "18.2. Hematoma",
+      "level": 3
+    },
+    {
+      "line": 430,
+      "title": "18.3. Hérnia incisional",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "18.4. Dor crônica e neuropatia pós-operatória",
+      "level": 3
+    },
+    {
+      "line": 438,
+      "title": "19. Delirium, alterações cognitivas, quedas e complicações funcionais",
+      "level": 2
+    },
+    {
+      "line": 446,
+      "title": "20. Complicações nutricionais e metabólicas",
+      "level": 2
+    },
+    {
+      "line": 448,
+      "title": "20.1. Desnutrição e sarcopenia",
+      "level": 3
+    },
+    {
+      "line": 452,
+      "title": "20.2. Recuperação acelerada ERAS 2025",
+      "level": 3
+    },
+    {
+      "line": 458,
+      "title": "20.3. Síndrome de realimentação",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "20.4. Estomas e alterações funcionais",
+      "level": 3
+    },
+    {
+      "line": 466,
+      "title": "21. Populações especiais",
+      "level": 2
+    },
+    {
+      "line": 468,
+      "title": "21.1. Idosos",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "21.2. Paciente oncológico",
+      "level": 3
+    },
+    {
+      "line": 474,
+      "title": "21.3. Gestantes e puérperas",
+      "level": 3
+    },
+    {
+      "line": 477,
+      "title": "21.4. Crianças",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "21.5. Imunossuprimidos e transplantados",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "22. Prevenção estruturada e qualidade assistencial",
+      "level": 2
+    },
+    {
+      "line": 485,
+      "title": "22.1. Antes da cirurgia",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "22.2. Durante a operação",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "22.3. Depois",
+      "level": 3
+    },
+    {
+      "line": 494,
+      "title": "22.4. ANVISA 2026: vigilância e melhoria",
+      "level": 3
+    },
+    {
+      "line": 497,
+      "title": "23. Prognóstico e falha de resgate",
+      "level": 2
+    },
+    {
+      "line": 503,
+      "title": "23.1. Continuidade pós-alta",
+      "level": 3
+    },
+    {
+      "line": 509,
+      "title": "24. Algoritmos LURIA de conduta",
+      "level": 2
+    },
+    {
+      "line": 511,
+      "title": "A. Taquicardia e deterioração pós-operatória",
+      "level": 3
+    },
+    {
+      "line": 514,
+      "title": "B. Suspeita de deiscência gastrointestinal",
+      "level": 3
+    },
+    {
+      "line": 517,
+      "title": "C. Ferida vermelha e dolorosa",
+      "level": 3
+    },
+    {
+      "line": 520,
+      "title": "D. Febre após cirurgia",
+      "level": 3
+    },
+    {
+      "line": 523,
+      "title": "E. Dispneia aguda no pós-operatório",
+      "level": 3
+    },
+    {
+      "line": 526,
+      "title": "F. Oligúria",
+      "level": 3
+    },
+    {
+      "line": 529,
+      "title": "G. Dor abdominal com distensão e vômitos",
+      "level": 3
+    },
+    {
+      "line": 532,
+      "title": "H. Evisceração",
+      "level": 3
+    },
+    {
+      "line": 535,
+      "title": "25. Pérolas e pegadinhas de prova",
+      "level": 2
+    },
+    {
+      "line": 578,
+      "title": "26. Referências reais e orientação de uso",
+      "level": 2
+    },
+    {
+      "line": 601,
+      "title": "Hierarquia e divergências importantes",
+      "level": 3
+    },
+    {
+      "line": 605,
+      "title": "27. Checklist editorial inicial",
+      "level": 2
+    },
+    {
+      "line": 630,
+      "title": "28. Casos clínicos integradores — diagnóstico, exames, conduta e seguimento",
+      "level": 2
+    },
+    {
+      "line": 634,
+      "title": "Caso 1 — Taquicardia persistente após colectomia",
+      "level": 3
+    },
+    {
+      "line": 648,
+      "title": "Caso 2 — Deiscência anastomótica com peritonite e choque",
+      "level": 3
+    },
+    {
+      "line": 662,
+      "title": "Caso 3 — Evisceração após acesso mediano",
+      "level": 3
+    },
+    {
+      "line": 676,
+      "title": "Caso 4 — Febre isolada no primeiro dia de pós-operatório",
+      "level": 3
+    },
+    {
+      "line": 690,
+      "title": "Caso 5 — Ferida infectada versus seroma após hernioplastia",
+      "level": 3
+    },
+    {
+      "line": 704,
+      "title": "Caso 6 — Hipotensão e dreno sanguinolento quatro horas após esplenectomia",
+      "level": 3
+    },
+    {
+      "line": 718,
+      "title": "Caso 7 — Dispneia súbita após cirurgia oncológica pélvica",
+      "level": 3
+    },
+    {
+      "line": 732,
+      "title": "Caso 8 — Troponina elevada sem dor torácica após cirurgia vascular",
+      "level": 3
+    },
+    {
+      "line": 746,
+      "title": "Caso 9 — Oligúria após colectomia com balanço muito positivo",
+      "level": 3
+    },
+    {
+      "line": 760,
+      "title": "Caso 10 — Íleo prolongado ou obstrução mecânica por hérnia interna?",
+      "level": 3
+    },
+    {
+      "line": 774,
+      "title": "Caso 11 — Biloma após colecistectomia",
+      "level": 3
+    },
+    {
+      "line": 788,
+      "title": "Caso 12 — Confusão hipoativa após artroplastia em idosa",
+      "level": 3
+    },
+    {
+      "line": 802,
+      "title": "Caso 13 — Ileostomia de alto débito e lesão renal após alta",
+      "level": 3
+    },
+    {
+      "line": 816,
+      "title": "Caso 14 — Dor desproporcional e rápida progressão após cirurgia de partes moles",
+      "level": 3
+    },
+    {
+      "line": 832,
+      "title": "29. Questões autorais LURIA — 22 problemas de conduta e segurança",
+      "level": 2
+    },
+    {
+      "line": 836,
+      "title": "Questão 1 — Alerta de deiscência anastomótica",
+      "level": 3
+    },
+    {
+      "line": 857,
+      "title": "Questão 2 — TC negativa e fístula",
+      "level": 3
+    },
+    {
+      "line": 878,
+      "title": "Questão 3 — Peritonite e choque após anastomose",
+      "level": 3
+    },
+    {
+      "line": 899,
+      "title": "Questão 4 — Classificação Clavien–Dindo IIIb",
+      "level": 3
+    },
+    {
+      "line": 920,
+      "title": "Questão 5 — Clavien–Dindo IVb",
+      "level": 3
+    },
+    {
+      "line": 941,
+      "title": "Questão 6 — Febre isolada no primeiro PO",
+      "level": 3
+    },
+    {
+      "line": 962,
+      "title": "Questão 7 — ISC órgão/espaço",
+      "level": 3
+    },
+    {
+      "line": 983,
+      "title": "Questão 8 — Período de vigilância de ISC",
+      "level": 3
+    },
+    {
+      "line": 1004,
+      "title": "Questão 9 — Controle de foco em abscesso",
+      "level": 3
+    },
+    {
+      "line": 1025,
+      "title": "Questão 10 — Duração antimicrobiana após foco adequado",
+      "level": 3
+    },
+    {
+      "line": 1046,
+      "title": "Questão 11 — Evisceração",
+      "level": 3
+    },
+    {
+      "line": 1067,
+      "title": "Questão 12 — Hb e sangramento agudo",
+      "level": 3
+    },
+    {
+      "line": 1088,
+      "title": "Questão 13 — TEP após cirurgia",
+      "level": 3
+    },
+    {
+      "line": 1109,
+      "title": "Questão 14 — D-dímero no pós-operatório",
+      "level": 3
+    },
+    {
+      "line": 1130,
+      "title": "Questão 15 — Troponina e MINS",
+      "level": 3
+    },
+    {
+      "line": 1151,
+      "title": "Questão 16 — LRA KDIGO",
+      "level": 3
+    },
+    {
+      "line": 1172,
+      "title": "Questão 17 — Oligúria com congestão",
+      "level": 3
+    },
+    {
+      "line": 1193,
+      "title": "Questão 18 — Íleo versus obstrução mecânica",
+      "level": 3
+    },
+    {
+      "line": 1214,
+      "title": "Questão 19 — Delirium hipoativo",
+      "level": 3
+    },
+    {
+      "line": 1235,
+      "title": "Questão 20 — Ileostomia de alto débito",
+      "level": 3
+    },
+    {
+      "line": 1256,
+      "title": "Questão 21 — Dor desproporcional e infecção necrosante",
+      "level": 3
+    },
+    {
+      "line": 1277,
+      "title": "Questão 22 — Profilaxia TEV após cirurgia oncológica maior",
+      "level": 3
+    },
+    {
+      "line": 1300,
+      "title": "30. Curadoria de 22 imagens clínicas, exames e diagramas",
+      "level": 2
+    },
+    {
+      "line": 1329,
+      "title": "Checklist técnico de imagens",
+      "level": 3
+    },
+    {
+      "line": 1341,
+      "title": "31. Integração com outros módulos LURIA",
+      "level": 2
+    },
+    {
+      "line": 1351,
+      "title": "Flashcards derivados sugeridos",
+      "level": 3
+    },
+    {
+      "line": 1376,
+      "title": "32. Auditoria final do rascunho e pendências",
+      "level": 2
+    },
+    {
+      "line": 1382,
+      "title": "Verificações feitas",
+      "level": 3
+    },
+    {
+      "line": 1395,
+      "title": "Pendências antes de declarar material publicado",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **ANVISA. NOTA TÉCNICA GVIMS/GGTES/DIRE3/ANVISA nº 03/2026**, Critérios Diagnósticos das IRAS de notificação nacional obrigatória, **republicada 14/07/2026**. Página: https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas-vigentes/nota-tecnica-03-2026-criterios-de-iras-02-01-2026.pdf",
+    "2. **ANVISA. Modelo de Protocolo 2 — Prevenção de Infecção de Sítio Cirúrgico**, publicado 28/01/2026. Página: https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico",
+    "3. **ANVISA. PNPCIRAS 2026–2030**, informação de aprovação do Programa Nacional, 06/02/2026. https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-programa-nacional-de-prevencao-e-controle-de-infeccoes-em-servicos-de-saude",
+    "4. **CDC NHSN. Surgical Site Infection (SSI) Events — January 2026, Chapter 9**, períodos de vigilância e definição. https://www.cdc.gov/nhsn/psc/ssi/index.html",
+    "5. **CDC. FAQs Surgical Site Infections (SSI)**, 30/90 dias segundo categoria NHSN, https://www.cdc.gov/nhsn/faqs/faq-ssi.html .",
+    "6. **Gustafsson UO et al. ERAS Society. Guidelines for perioperative care in elective colorectal surgery: recommendations 2025.** *Surgery*. 2025;184:109397. DOI: https://doi.org/10.1016/j.surg.2025.109397 .",
+    "7. **Irani JL et al. Clinical Practice Guidelines for Enhanced Recovery After Colon and Rectal Surgery (ASCRS/SAGES).** *Dis Colon Rectum*. 2023;66:15–40. DOI: https://doi.org/10.1097/DCR.0000000000002650 .",
+    "8. **Huston JM et al. Surgical Infection Society Guidelines on Management of Intra-Abdominal Infection: 2024 Update.** *Surg Infect*. 2024. DOI: https://doi.org/10.1089/sur.2024.137 .",
+    "9. **Pastier C et al. Management of Low Colorectal/Coloanal Anastomotic Leak: Results of a French National Intergroups Practice Survey.** *World J Surg*. 2025;49:1747–1756. DOI: https://doi.org/10.1002/wjs.12634 .",
+    "10. **Heuvelings DJ et al. CoReAL Reporting Framework.** *Dis Colon Rectum*. 2025;68:941–950. DOI: https://doi.org/10.1097/DCR.0000000000003790 .",
+    "11. **2024 AHA/ACC/ACS etc Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery** (*JACC* 2024) e reafirmação em 2026 na página profissional AHA. DOI: https://doi.org/10.1016/j.jacc.2024.06.013 . Informações sobre reafirmação: https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery",
+    "12. **American Society of Hematology. ASH 2021 guidelines for prevention and treatment of VTE in patients with cancer.** *Blood Adv*. 2021. DOI: https://doi.org/10.1182/bloodadvances.2020003442 .",
+    "13. **KDIGO. Acute Kidney Injury Guideline.** Definições internacionais de LRA; consultar documento vigente: https://kdigo.org/guidelines/acute-kidney-injury/",
+    "14. **WHO. Surgical Safety Checklist and Implementation Manual 2009**, usada como base de segurança cirúrgica. https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources",
+    "15. **Dindo D, Demartines N, Clavien PA. Classification of Surgical Complications.** *Ann Surg*. 2004;240:205–213. DOI: https://doi.org/10.1097/01.sla.0000133083.54934.ae",
+    "16. **NICE. Venous thromboembolism in over 16s: reducing the risk of hospital-acquired DVT or pulmonary embolism (NG89).** https://www.nice.org.uk/guidance/ng89",
+    "17. **Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock**, verificar versão em vigor e atualizações locais. https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources",
+    "18. **International Study Group of Rectal Cancer. Definition and grading of anastomotic leakage after anterior resection.** *Surgery*. 2010;147:339–351. https://doi.org/10.1016/j.surg.2009.10.012",
+    "19. **International Study Group of Pancreatic Surgery. 2016 update of definition and grading of POPF**, *Surgery*. 2017;161:584–591. https://doi.org/10.1016/j.surg.2016.11.014",
+    "20. **WHO. Global Guidelines for the Prevention of Surgical Site Infection**, recomendação internacional complementar; verificar versão, https://www.who.int/publications/i/item/9789241550475 .",
+    "**Brasil:** ANVISA 2026 norteia prevenção, definições de vigilância/indicadores e controle de infecção em serviços de saúde brasileiros. **Internacional:** CDC/NHSN 2026 define critérios de notificação na sua própria rede; não importar um critério administrativo de CDC como substituto automático da ANVISA. **ERAS 2025** é específico de cirurgia colorretal eletiva, não de qualquer cirurgia urgente/contaminada. **SIS 2024** trata de infecção intra-abdominal, e os cursos curtos de antibiótico pressupõem **controle de foco adequado**. **AHA/ACC 2024** segue como documento válido segundo reafirmação de 2026. As referências têm finalidades diferentes e devem ser apresentadas sem falsa equivalência."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas-vigentes/nota-tecnica-03-2026-criterios-de-iras-02-01-2026.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/infeccao-de-sitio-cirurgico",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-programa-nacional-de-prevencao-e-controle-de-infeccoes-em-servicos-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cdc.gov/nhsn/psc/ssi/index.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.cdc.gov/nhsn/faqs/faq-ssi.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.surg.2025.109397",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1097/DCR.0000000000002650",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1089/sur.2024.137",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/wjs.12634",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1097/DCR.0000000000003790",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jacc.2024.06.013",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://professional.heart.org/en/science-news/2024-guideline-for-perioperative-cardiovascular-management-for-noncardiac-surgery",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1182/bloodadvances.2020003442",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://kdigo.org/guidelines/acute-kidney-injury/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/teams/integrated-health-services/quality-of-care-and-patient-safety/patient-safety-guidance-and-tools/safe-surgery/tool-and-resources",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1097/01.sla.0000133083.54934.ae",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng89",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.surg.2009.10.012",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.surg.2016.11.014",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789241550475",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "O consenso francês 2025 sobre **anastomose colorretal/coloanal baixa com ileostomia de proteção** encontrou limiares de alerta em seu cenário específico, inclusive **PCR >250 mg/L**, febre ≥38,5°C, FC >100/min e dor abdominal difusa; trata-se de consenso de pesquisa com população específica, **não ponto de corte universal** para diagnosticar qualquer fístula pós-operatória. Ele reforça investigação por TC quando houver sinais de alarme.",
+      "pattern": 0
+    },
+    {
+      "text": "**LRA** no pós-operatório pode resultar de hipoperfusão/sangramento, sepse, nefrotoxinas, contraste em contextos selecionados, obstrução urinária, congestão e doença renal preexistente. A definição KDIGO comum inclui **elevação de creatinina ≥0,3 mg/dL em 48 h, ou ≥1,5 vez o basal em sete dias, ou diurese <0,5 mL/kg/h por ≥6 h**, com critérios para estágios e exceções, interpretando fluidos/diuréticos e medidas clínicas.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação e dados relevantes:** Homem de 64 anos foi submetido à sigmoidectomia por neoplasia, com anastomose colorretal. No 4º PO apresenta FC 118–126/min por seis horas, T 37,7°C, pressão 112/70, dor abdominal mais intensa e nenhuma eliminação de flatos desde a cirurgia. Dreno apresenta pequeno débito seroso; PCR subiu após queda inicial.",
+      "pattern": 0
+    },
+    {
+      "text": "**Limite curricular:** a aula 172 cobre princípios de oncologia cirúrgica, incluindo prevenção de complicações. A aula 177 aprofunda **reconhecimento, diagnóstico diferencial, estratificação de gravidade e conduta diante de complicações já instaladas**. A aula 161 trata de sepse sistêmica e choque séptico, com algoritmos complementares; a aula 173 detalha urgências pediátricas, sem transposição automática de doses adultas.",
+      "pattern": 1
+    },
+    {
+      "text": "**Nota de segurança:** não aplicar algoritmos deste rascunho como prescrição autônoma. Antibióticos, anticoagulação, exames contrastados, manejo de feridas e reoperações dependem de avaliação cirúrgica imediata, procedimentos realizados, estabilidade, função renal/hepática e protocolo hospitalar. Quando há peritonite, choque, evisceração, isquemia ou hemorragia ativa, exames não devem atrasar ressuscitação e controle de foco.",
+      "pattern": 1
+    },
+    {
+      "text": "**Não decorar “febre no 1º dia é sempre não infecciosa; no 5º, sempre ferida”:** a distribuição temporal modifica probabilidade, mas nenhum dia exclui uma infecção necrosante, aspiração grave, transfusão inadequada, sepse ou tromboembolismo.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Cirurgia Geral · Perioperatório · Cirurgia Colorretal · Terapia Intensiva · Segurança do Paciente **Lote 09 — Aula 177 de 180 | Versão editorial 15/10/2026** **Status:** rascunho médico-científico autoral, não submetido a revisão clínica independente, não inserido no renderizador PWA da LURIA.",
+      "pattern": 2
+    },
+    {
+      "text": "**Referências de alta prioridade verificadas em 15/10/2026:** ANVISA — Nota Técnica GVIMS/GGTES/DIRE3 nº 03/2026, republicada em 14/07/2026 (critérios de IRAS); Protocolo 2 de Prevenção de Infecção de Sítio Cirúrgico publicado em 28/01/2026; ERAS Society 2025 para cirurgia colorretal; Surgical Infection Society 2024 para infecção intra-abdominal; consenso francês de fístula de anastomose baixa 2025; AHA/ACC 2024 de manejo cardiovascular perioperatório, reafirmada válida na página profissional da AHA em 2026; ASH 2021 para tromboprofilaxia em cirurgia oncológica.",
+      "pattern": 2
+    },
+    {
+      "text": "O consenso francês 2025 sobre **anastomose colorretal/coloanal baixa com ileostomia de proteção** encontrou limiares de alerta em seu cenário específico, inclusive **PCR >250 mg/L**, febre ≥38,5°C, FC >100/min e dor abdominal difusa; trata-se de consenso de pesquisa com população específica, **não ponto de corte universal** para diagnosticar qualquer fístula pós-operatória. Ele reforça investigação por TC quando houver sinais de alarme.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Cirurgia Geral · Perioperatório · Cirurgia Colorretal · Terapia Intensiva · Segurança do Paciente **Lote 09 — Aula 177 de 180 | Versão editorial 15/10/2026** **Status:** rascunho médico-científico autoral, não submetido a revisão clínica independente, não inserido no renderizador PWA da LURIA."
+    },
+    {
+      "text": "**Referências de alta prioridade verificadas em 15/10/2026:** ANVISA — Nota Técnica GVIMS/GGTES/DIRE3 nº 03/2026, republicada em 14/07/2026 (critérios de IRAS); Protocolo 2 de Prevenção de Infecção de Sítio Cirúrgico publicado em 28/01/2026; ERAS Society 2025 para cirurgia colorretal; Surgical Infection Society 2024 para infecção intra-abdominal; consenso francês de fístula de anastomose baixa 2025; AHA/ACC 2024 de manejo cardiovascular perioperatório, reafirmada válida na página profissional da AHA em 2026; ASH 2021 para tromboprofilaxia em cirurgia oncológica."
+    }
+  ]
+}

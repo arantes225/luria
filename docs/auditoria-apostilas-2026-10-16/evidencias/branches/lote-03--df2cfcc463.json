@@ -1,0 +1,128 @@
+{
+  "sha": "df2cfcc46352e087a8470d6a26992b4732829644",
+  "path": "apostilas/_rascunhos/lote-03/53-desidratacao-terapia-reidratacao.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--df2cfcc463",
+  "title": "LURIA — Aula 53 | DESIDRATAÇÃO E TERAPIA DE REIDRATAÇÃO EM PEDIATRIA",
+  "format": ".md",
+  "chars_estimated": 19673,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 53 | DESIDRATAÇÃO E TERAPIA DE REIDRATAÇÃO EM PEDIATRIA"
+    },
+    {
+      "title": "1. Diagnóstico do acervo e comparação preliminar"
+    },
+    {
+      "title": "2. Por que crianças desidratam mais rapidamente?"
+    },
+    {
+      "title": "3. Principais causas e diferenciais"
+    },
+    {
+      "title": "4. Exame e classificação do estado de hidratação"
+    },
+    {
+      "title": "5. Planos A, B e C: o algoritmo brasileiro"
+    },
+    {
+      "title": "Plano A — criança hidratada com diarreia"
+    },
+    {
+      "title": "Plano B — criança desidratada que consegue ser reidratada por via enteral"
+    },
+    {
+      "title": "Plano C — desidratação grave no contexto de doença diarreica"
+    },
+    {
+      "title": "6. Terapia oral: por que funciona?"
+    },
+    {
+      "title": "7. Exames complementares quando úteis"
+    },
+    {
+      "title": "8. Expansão, reposição e manutenção: três prescrições distintas"
+    },
+    {
+      "title": "9. Populações especiais"
+    },
+    {
+      "title": "10. Complicações e seguimento"
+    },
+    {
+      "title": "11. Fluxograma de decisão"
+    },
+    {
+      "title": "12. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Plano A bem explicado evita retorno"
+    },
+    {
+      "title": "Caso 2 — 10 kg e SRO supervisionada"
+    },
+    {
+      "title": "Caso 3 — Incapaz de beber, pulsos fracos"
+    },
+    {
+      "title": "Caso 4 — Sódio 160 após fórmula excessivamente concentrada"
+    },
+    {
+      "title": "13. Seis questões originais e justificativas"
+    },
+    {
+      "title": "14. Recursos visuais — manifestação de candidatas"
+    },
+    {
+      "title": "15. Referências científicas verificáveis"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. Manejo do paciente com diarreia — avaliação do estado de hidratação (2023): https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-de-hidratacao-do-paciente-arquivo-com-marcas-de-corte",
+    "2. Ministério da Saúde. Doenças Diarreicas Agudas: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+    "3. Sociedade Brasileira de Pediatria. Diarreias: https://www.sbp.com.br/diarreias/",
+    "4. SBP, Documento Científico “Diarreia aguda: diagnóstico e tratamento” (2017): https://www.sbp.com.br/fileadmin/user_upload/2017/03/Guia-Pratico-Diarreia-Aguda.pdf",
+    "5. American Academy of Pediatrics. Clinical Practice Guideline: Maintenance IV Fluids in Children, 2018: https://publications.aap.org/pediatrics/article/142/6/e20183083/37529/Clinical-Practice-Guideline-Maintenance",
+    "**Pendências:** completar dose/contraindicações por faixa etária e situação com supervisão clínica, desnutrição grave, estimativa de déficits por peso prévio, monitorização de disnatremias e gasometria, revisão bibliográfica, imagens aprovadas, 60 mil caracteres úteis, casos refinados e testes/inspeção. Este caderno não está no índice público."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-diarreicas-agudas/manejo-do-paciente-com-diarreia-avaliacao-do-estado-de-hidratacao-do-paciente-arquivo-com-marcas-de-corte",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/",
+    "https://www.sbp.com.br/diarreias/",
+    "https://www.sbp.com.br/fileadmin/user_upload/2017/03/Guia-Pratico-Diarreia-Aguda.pdf",
+    "https://publications.aap.org/pediatrics/article/142/6/e20183083/37529/Clinical-Practice-Guideline-Maintenance"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **RASCUNHO NÃO HOMOLOGADO.** Este caderno não deve servir como prescrição automática: doses e velocidade de infusão requerem seleção do diagnóstico, peso, idade, cardiopatia/nefropatia, glicemia, sódio e situação circulatória. Objetivo final segue o lead_apostilas de 60.000 caracteres didáticos úteis com revisão médico-editorial."
+    },
+    {
+      "text": "Na enumeração da pasta apostilas da LURIA, nenhum diretório publicado corresponde nominalmente ao tema. É tema complementar à aula 58 (Diarreia Aguda) e à puericultura, mas sua abordagem transversal inclui vômitos, ingestão insuficiente e distúrbios eletrolíticos; assim, uma apostila própria pode ser justificável após deduplicação. Foi examinado o padrão editorial de apostila LURIA publicada. **No Drive, buscas por “desidratação”, “gastroenterite”, “reidratação”, “diarreia aguda criança” não localizaram uma apostila pediátrica de reidratação suficientemente equivalente.** Foi aberto e lido o correlato “01 - GASTRO - DIARREIA AGUDA + CLOSTRIDI"
+    },
+    {
+      "text": "**Fonte principal adequada e diretamente consultada:** Ministério da Saúde, folha clínica “Manejo do paciente com diarreia — avaliação do estado de hidratação” (2023), junto à página oficial Doenças Diarreicas Agudas. **Fonte de apoio:** Sociedade Brasileira de Pediatria, Documento Científico Diarreia Aguda: diagnóstico e tratamento (2017) e AAP Clinical Practice Guideline sobre fluidos de manutenção (2018), observando limitações de faixa etária e condições excluídas. Esta etapa zero está **parcialmente cumprida** por falta de apostila pediátrica de cursinho equivalente no Drive; fontes oficiais são suficientes para redigir a base científica,"
+    },
+    {
+      "text": "O Ministério da Saúde recomenda, em crianças menores de 5 anos com diarreia, **zinco por 10–14 dias**: até seis meses, 10 mg/dia; acima de seis meses, 20 mg/dia. Conferir formulação, duração e contexto antes da prescrição."
+    },
+    {
+      "text": "Em vômitos, reduzir velocidade, ofertar quantidades muito pequenas e frequentes, recomeçando após intervalo curto. O Ministério da Saúde admite ondansetrona em vômitos persistentes durante Plano B segundo faixa etária e indicação; revisar contraindicações e protocolo antes do uso. Em falha oral, considerar administração por sonda nasogástrica (gastróclise), quando adequada, antes de concluir que toda criança precisa de via intravenosa. Se evoluir para desidratação grave, mudar para Plano C imediatamente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

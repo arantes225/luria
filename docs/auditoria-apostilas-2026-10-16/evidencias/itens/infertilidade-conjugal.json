@@ -1,0 +1,816 @@
+{
+  "key": "infertilidade-conjugal",
+  "kind": "apostila-html",
+  "path": "apostilas/infertilidade-conjugal/index.html",
+  "html_path": "apostilas/infertilidade-conjugal/index.html",
+  "title": "Infertilidade Conjugal",
+  "source_sha256": "9b9576ecb39f41050dd6f9de79dafbbdbb93e257b2874e256db4631a98f14d08",
+  "html_sha256": "9b9576ecb39f41050dd6f9de79dafbbdbb93e257b2874e256db4631a98f14d08",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Ovulação e reserva",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Útero e tubas",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator masculino",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Escolha da estratégia",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos e fisiopatologia",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Da ovulação à implantação",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Idade, reserva e qualidade oocitária",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Reconhecimento clínico",
+      "section": "reconhecimento"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando a espera deixa de ser razoável?",
+      "section": "reconhecimento"
+    },
+    {
+      "tag": "H3",
+      "title": "O que muda completamente a investigação?",
+      "section": "reconhecimento"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Diagnóstico: o mínimo que responde a pergunta certa",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Ovulação",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Reserva ovariana",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Útero e tubas",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Leitura prática da propedêutica",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Como interpretar a HSG além de “aberta ou fechada”",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Reserva ovariana: quantidade não é qualidade",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Fator feminino: localizar o mecanismo",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Anovulação e SOP",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Baixa reserva x insuficiência ovariana primária",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator cervical e relação sexual",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Endometriose",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator tubário e hidrossalpinge",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator uterino",
+      "section": "fator-feminino"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Fator masculino: não reduzir tudo ao espermograma",
+      "section": "fator-masculino"
+    },
+    {
+      "tag": "H3",
+      "title": "Como transformar o espermograma em raciocínio etiológico",
+      "section": "fator-masculino"
+    },
+    {
+      "tag": "H3",
+      "title": "Varicocele: nem toda imagem vira cirurgia",
+      "section": "fator-masculino"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando pensar em genética",
+      "section": "fator-masculino"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Tratamento: escalar pela causa, pelo prognóstico e pelo relógio biológico",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Expectativa e coito programado",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Inseminação intrauterina (IUI)",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "FIV x ICSI",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Anovulação por SOP",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Infertilidade sem causa aparente",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando “pular etapas” faz sentido",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Reprodução assistida e regras brasileiras",
+      "section": "reproducao-assistida"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Situações especiais: por que a estratégia muda",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Idade ≥35 anos",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Obesidade e SOP",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Amenorreia hipotalâmica",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Insuficiência ovariana primária",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Perda gestacional recorrente não é a mesma coisa que infertilidade",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Oncofertilidade",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "SUS e acesso",
+      "section": "especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Complicações e danos evitáveis",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação múltipla",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Síndrome de hiperestimulação ovariana",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Gravidez ectópica",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Dano por sobretratamento",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Seguimento e pré-concepção",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — SOP e desejo de “ir direto para FIV”",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — 37 anos, dor e ultrassom “normal”",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — azoospermia e testosterona",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — HSG com bloqueio proximal unilateral",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — 40 anos, AMH baixo e três IUIs falhas",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — hidrossalpinge antes da FIV",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso longitudinal — reserva ovariana e fator tubário não são sinônimos",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio prático: cinco erros que atrasam o diagnóstico do casal",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Ciclos de 54 dias e AMH alto: não comece pela reserva",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Galactorreia e infertilidade: prolactina não é um diagnóstico final",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Espermograma muito alterado em homem que usa testosterona",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "4. HSG com interrupção proximal: confira a técnica antes de sentenciar esterilidade",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Mulher de 39 anos, seis meses de tentativa e exames iniciais normais",
+      "section": "infertilidade-casos-decisao-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Aprofundamento: prognóstico reprodutivo e escolha racional de tratamento",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Idade feminina é variável prognóstica central",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Espermograma: exame de probabilidade",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Tubas e endométrio",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Infertilidade sem causa aparente",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "FIV versus ICSI",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Dimensão psicossocial",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "section": "editorial-depth-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator feminino por compartimento",
+      "section": "editorial-depth-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator masculino em paralelo",
+      "section": "editorial-depth-infertilidade-conjugal"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Investigação conjunta da infertilidade — fisiologia, exames e decisão em profundidade",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.1 Por que não se começa com todos os exames possíveis",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.2 Ovulação não é a mesma coisa que fertilidade global",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.3 Reserva ovariana responde sobre resposta aos estímulos, não sobre o destino individual",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.4 Tubas uterinas: ter um lúmen aberto não garante função normal",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.5 Fator masculino: interpretar o espermograma como probabilidade, não sentença",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.6 FIV e ICSI tratam problemas diferentes",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "14.7 Dois casos comentados que mudam o plano terapêutico",
+      "section": "infertilidade-integral-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "section": "etio-profundidade-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Anovulação: confirmação e conduta",
+      "section": "etio-profundidade-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator tuboperitoneal",
+      "section": "etio-profundidade-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Reserva ovariana e idade",
+      "section": "etio-profundidade-infertilidade-conjugal"
+    },
+    {
+      "tag": "H3",
+      "title": "Fator masculino: roteiro mínimo",
+      "section": "etio-profundidade-infertilidade-conjugal"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1186
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 594
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e fisiopatologia",
+      "chars": 2414
+    },
+    {
+      "id": "reconhecimento",
+      "title": "2. Reconhecimento clínico",
+      "chars": 1690
+    },
+    {
+      "id": "diagnostico",
+      "title": "3. Diagnóstico: o mínimo que responde a pergunta certa",
+      "chars": 5284
+    },
+    {
+      "id": "fator-feminino",
+      "title": "4. Fator feminino: localizar o mecanismo",
+      "chars": 3206
+    },
+    {
+      "id": "fator-masculino",
+      "title": "5. Fator masculino: não reduzir tudo ao espermograma",
+      "chars": 2887
+    },
+    {
+      "id": "tratamento",
+      "title": "6. Tratamento: escalar pela causa, pelo prognóstico e pelo relógio biológico",
+      "chars": 2948
+    },
+    {
+      "id": "reproducao-assistida",
+      "title": "7. Reprodução assistida e regras brasileiras",
+      "chars": 988
+    },
+    {
+      "id": "especiais",
+      "title": "8. Situações especiais: por que a estratégia muda",
+      "chars": 2832
+    },
+    {
+      "id": "complicacoes",
+      "title": "9. Complicações e danos evitáveis",
+      "chars": 1014
+    },
+    {
+      "id": "seguimento",
+      "title": "10. Seguimento e pré-concepção",
+      "chars": 531
+    },
+    {
+      "id": "casos",
+      "title": "11. Casos integradores",
+      "chars": 3128
+    },
+    {
+      "id": "infertilidade-casos-decisao-2026",
+      "title": "Raciocínio prático: cinco erros que atrasam o diagnóstico do casal",
+      "chars": 4423
+    },
+    {
+      "id": "revisao",
+      "title": "12. Revisão de alto rendimento",
+      "chars": 989
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "13. Aprofundamento: prognóstico reprodutivo e escolha racional de tratamento",
+      "chars": 2813
+    },
+    {
+      "id": "editorial-depth-infertilidade-conjugal",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 905
+    },
+    {
+      "id": "infertilidade-integral-40k",
+      "title": "14. Investigação conjunta da infertilidade — fisiologia, exames e decisão em profundidade",
+      "chars": 10047
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 849
+    },
+    {
+      "id": "etio-profundidade-infertilidade-conjugal",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "chars": 2149
+    }
+  ],
+  "references": [
+    "World Health Organization. Guideline for the prevention, diagnosis and treatment of infertility. 28 nov. 2025.",
+    "World Health Organization. Infertility — Fact sheet. Atualizado em 28 nov. 2025.",
+    "FEBRASGO. Propedêutica básica da infertilidade conjugal. Protocolo n. 84, 2021.",
+    "FEBRASGO. Síndrome dos ovários policísticos. Recomendações com clomifeno e inibidores da aromatase.",
+    "FEBRASGO. Diagnóstico e manejo da infertilidade associada à endometriose. Position Statement n. 4, 2026.",
+    "World Health Organization. WHO laboratory manual for the examination and processing of human semen. 6th ed., 2021.",
+    "European Society of Human Reproduction and Embryology. Unexplained infertility guideline.",
+    "Conselho Federal de Medicina. Resolução CFM nº 2.320/2022 — em vigor.",
+    "NIH ClinicalInfo. Reproductive Options When One or Both Partners Have HIV."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://commons.wikimedia.org/wiki/File:Hysterosalpingography.png",
+      "in_references": false
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Hysterosalpingography.png",
+      "in_references": false
+    },
+    {
+      "label": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "in_references": false
+    },
+    {
+      "label": "Abrir fonte e ampliar ↗",
+      "url": "https://commons.wikimedia.org/wiki/File:Hysterosalpingography.png",
+      "in_references": false
+    },
+    {
+      "label": "ASRM — investigação da infertilidade",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+      "in_references": false
+    },
+    {
+      "label": "ASRM — Fertility evaluation of infertile women (2021)",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+      "in_references": false
+    },
+    {
+      "label": "Diretriz internacional de SOP (2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "in_references": false
+    },
+    {
+      "label": "OMS — Manual de análise seminal, 6ª edição (2021)",
+      "url": "https://www.who.int/publications/i/item/9789240030787",
+      "in_references": false
+    },
+    {
+      "label": "10.1016/j.fertnstert.2021.08.038",
+      "url": "https://doi.org/10.1016/j.fertnstert.2021.08.038",
+      "in_references": false
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Hysterosalpingography.png",
+      "alt": "Histerossalpingografia real contrastada, exibindo a cavidade uterina e o trajeto tubário. Exame clínico, não diagrama gerado.",
+      "section": "diagnostico",
+      "caption": "Histerossalpingografia — exame real. A injeção de contraste permite estudar a anatomia da cavidade uterina e acompanhar a passagem pelas tubas. A imagem, por si só, não avalia motilidade ciliar e não exclui endometriose; interpretar o padrão da paciente com laudo e história clínica. Foto clínica original de Drhan9394, Wikimedia Commons, CC0 1.0, arquivo original de aproximadamente 69 KB. Abrir fonte e ampliar ↗",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 7,
+  "paragraphs": 103,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "infertilidade sem causa aparente",
+      "sections": [
+        "tratamento",
+        "aprofundamento-2026"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 31,
+      "status": "approved",
+      "section": "diagnostico",
+      "source_license": "CC0 1.0",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hysterosalpingography.png"
+    },
+    {
+      "id": 32,
+      "status": "approved",
+      "section": "diagnostico",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infertilidade-conjugal/infertilidade-hsg-normal.webp"
+    },
+    {
+      "id": 34,
+      "status": "approved",
+      "section": "diagnostico",
+      "source_license": "CC BY-SA 4.0 / GFDL",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infertilidade-conjugal/infertilidade-asherman-hsg.webp"
+    },
+    {
+      "id": 38,
+      "status": "approved",
+      "section": "fator-masculino",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ultrasound%20transverse%20varicocele.png"
+    },
+    {
+      "id": 39,
+      "status": "approved",
+      "section": "fator-feminino",
+      "source_license": "Domínio público",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Myoma.jpg"
+    },
+    {
+      "id": 40,
+      "status": "approved",
+      "section": "fator-masculino",
+      "source_license": "CC BY-SA 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infertilidade-conjugal/infertilidade-sperm-microscopy.webp"
+    },
+    {
+      "id": 42,
+      "status": "approved",
+      "section": "fator-feminino",
+      "source_license": "CC0 1.0",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Polycystic_ovary.jpg"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "conceitos",
+      "text": "A fecundabilidade é a chance de conceber em um ciclo. Em casais jovens, ela é relativamente alta, mas cai com o tempo e, principalmente, com a idade feminina. Por isso, “esperar mais” não tem o mesmo custo biológico aos 26 e aos 39 anos. Aos 35 anos ou mais, uma espera de seis meses já pode consumir uma parcela relevante da janela reprodutiva; quando há amenorreia, oligo-ovulação, fator masculino conhecido, endometriose avançada ou doença tubária evidente, esperar 12 meses não acrescenta informação.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "Uma mulher de 29 anos com AMH baixo pode responder com poucos folículos, mas ainda produzir oócitos cromossomicamente competentes. Uma mulher de 41 anos com AMH aparentemente bom pode responder com vários folículos e, mesmo assim, ter maior risco de aneuploidia. Não use AMH para “dar sentença de fertilidade”.",
+      "pattern": 0
+    },
+    {
+      "section": "fator-feminino",
+      "text": "O letrozol reduz síntese de estrogênio, diminui o feedback negativo e aumenta FSH endógeno com menor efeito antiestrogênico persistente sobre endométrio e muco cervical do que o clomifeno. Doses usuais de 2,5 a 7,5 mg/dia por 5 dias são utilizadas em protocolos de indução, com monitorização individualizada.",
+      "pattern": 0
+    },
+    {
+      "section": "fator-feminino",
+      "text": "Baixa reserva não é sinônimo de falência ovariana. Na baixa reserva, a paciente pode manter ciclos e ovulação, mas tende a recrutar menos folículos em estimulação. Na insuficiência ovariana primária, há disfunção folicular antes dos 40 anos, com irregularidade menstrual e perfil hormonal compatível. A distinção muda prognóstico, investigação etiológica e aconselhamento.",
+      "pattern": 0
+    },
+    {
+      "section": "diagnostico",
+      "text": "A propedêutica básica deve responder três perguntas: ela ovula? útero e tubas oferecem caminho viável? há espermatozoides em quantidade e qualidade compatíveis? Exames que não mudam essas respostas não devem ser pedidos de rotina.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Ciclos regulares, especialmente entre aproximadamente 21 e 35 dias com padrão previsível, tornam anovulação crônica menos provável. Progesterona de fase lútea pode documentar ovulação quando existe dúvida, mas não precisa ser pedida para toda mulher com ciclo regular. Kits de LH e temperatura basal podem ajudar no timing, mas não substituem investigação etiológica e não devem ser transformados em obrigação.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "A histerossalpingografia continua sendo um exame central de patência tubária e avaliação da cavidade em muitos serviços. O contraste livre na pelve mostra patência; não comprova cílios funcionais nem exclui aderência fina ou endometriose. Obstrução proximal isolada pode ser espasmo e deve ser interpretada com cautela.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Como raciocinar diante de uma HSG: confirme o preenchimento uterino, observe o trajeto do contraste à direita e esquerda, procure extravasamento livre na cavidade peritoneal, analise defeitos de enchimento e recorde artefatos como espasmo cornual. Uma prova que mostra falha de passagem proximal unilateral não deve ser convertida automaticamente em obstrução tubária definitiva sem considerar técnica, histórico e exames adicionais. A HSG não deve ser realizada durante possível gestação e exige avaliação de contraindicações, como infecção pélvica ativa.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Ciclos regulares, especialmente entre aproximadamente 21 e 35 dias com padrão previsível, tornam anovulação crônica menos provável. Progesterona de fase lútea pode documentar ovulação quando existe dúvida, mas não precisa ser pedida para toda mulher com ciclo regular. Kits de LH e temperatura basal podem ajudar no timing, mas não substituem investigação etiológica e não devem ser transformados em obrigação.",
+      "pattern": 2
+    },
+    {
+      "section": "fator-feminino",
+      "text": "O posicionamento FEBRASGO de 2026 reforça uma mudança importante: a endometriose associada à infertilidade deve ser manejada com avaliação clínica e imagem especializada, reservando laparoscopia para quando há indicação terapêutica ou sintomas persistentes. Não se faz laparoscopia diagnóstica rotineira em toda infértil assintomática com imagem normal.",
+      "pattern": 2
+    },
+    {
+      "section": "tratamento",
+      "text": "A diretriz global da OMS de 2025 propõe progressão racional de estratégias simples para mais complexas conforme a causa, os testes, o prognóstico e as preferências do casal. Não existe mérito em “cumprir todas as etapas” quando a chance de sucesso de uma etapa é muito baixa; também não existe mérito em partir direto para FIV quando uma intervenção simples tem boa chance de resolver o mecanismo dominante.",
+      "pattern": 2
+    },
+    {
+      "section": "infertilidade-integral-40k",
+      "text": "Menstruações espontâneas relativamente regulares podem sugerir ovulação, mas não demonstram permeabilidade tubária nem qualidade do sêmen. Quando há dúvida, progesterona em fase lútea apropriada e outros métodos podem auxiliar avaliação. O momento da coleta precisa corresponder ao padrão individual do ciclo: medir progesterona no dia 21 de uma mulher que costuma menstruar a cada 35 dias pode significar coleta antes do período de maior produção luteínica. O exame isolado, mal temporizado, pode gerar diagnóstico falso de anovulação e tratamentos desnecessários.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceitos",
+      "text": "A definição clássica de infertilidade é a falha em obter gravidez após 12 meses ou mais de relações sexuais regulares e sem contracepção. A OMS a define como doença do sistema reprodutivo masculino ou feminino e estima que cerca de 1 em cada 6 pessoas vivencie infertilidade ao longo da vida. Isso não significa que a investigação deva ser “da mulher” ou “do homem”: o casal precisa ser avaliado em paralelo, porque fatores masculinos, femininos e combinados coexistem com frequência."
+    },
+    {
+      "section": "conceitos",
+      "text": "A fecundabilidade é a chance de conceber em um ciclo. Em casais jovens, ela é relativamente alta, mas cai com o tempo e, principalmente, com a idade feminina. Por isso, “esperar mais” não tem o mesmo custo biológico aos 26 e aos 39 anos. Aos 35 anos ou mais, uma espera de seis meses já pode consumir uma parcela relevante da janela reprodutiva; quando há amenorreia, oligo-ovulação, fator masculino conhecido, endometriose avançada ou doença tubária evidente, esperar 12 meses não acrescenta informação."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 32,
+        "section": "diagnostico",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infertilidade-conjugal/infertilidade-hsg-normal.webp",
+        "source_only": false
+      },
+      {
+        "id": 42,
+        "section": "fator-feminino",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Polycystic_ovary.jpg",
+        "source_only": false
+      },
+      {
+        "id": 39,
+        "section": "fator-feminino",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Myoma.jpg",
+        "source_only": false
+      },
+      {
+        "id": 38,
+        "section": "fator-masculino",
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ultrasound%20transverse%20varicocele.png",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 5
+  }
+}

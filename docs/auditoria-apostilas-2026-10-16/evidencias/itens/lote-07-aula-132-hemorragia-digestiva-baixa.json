@@ -1,0 +1,545 @@
+{
+  "key": "lote-07-aula-132-hemorragia-digestiva-baixa",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md",
+  "title": "LURIA — Lote 7 · Aula 132",
+  "source_sha256": "e248ca22bc6546551b8481c2fc57fe6930ea592d507d70f18532cc2e6db7e635",
+  "chars_estimated": 62251,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 132",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Hemorragia Digestiva Baixa: da hematoquezia à hemostasia",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "0. Etapa zero",
+      "level": 2
+    },
+    {
+      "line": 9,
+      "title": "1. Definição e apresentação",
+      "level": 2
+    },
+    {
+      "line": 16,
+      "title": "2. Fisiologia do sangramento e do choque",
+      "level": 2
+    },
+    {
+      "line": 21,
+      "title": "3. Etiologias com comparação clínica",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "4. Primeira avaliação no pronto-socorro",
+      "level": 2
+    },
+    {
+      "line": 46,
+      "title": "5. Transfusão e antitrombóticos: contextualizar",
+      "level": 2
+    },
+    {
+      "line": 53,
+      "title": "6. Colonoscopia, preparo, CTA e radiologia intervencionista",
+      "level": 2
+    },
+    {
+      "line": 55,
+      "title": "6.1. Qual paciente se beneficia de colonoscopia?",
+      "level": 3
+    },
+    {
+      "line": 60,
+      "title": "6.2. Sangramento persistente com instabilidade",
+      "level": 3
+    },
+    {
+      "line": 65,
+      "title": "6.3. Quando pensar em sangramento de intestino delgado?",
+      "level": 3
+    },
+    {
+      "line": 68,
+      "title": "7. Tratamento por etiologia",
+      "level": 2
+    },
+    {
+      "line": 77,
+      "title": "8. Diferencial por perfil temporal",
+      "level": 2
+    },
+    {
+      "line": 83,
+      "title": "9. Fluxos práticos",
+      "level": 2
+    },
+    {
+      "line": 89,
+      "title": "10. Quatro casos clínicos integradores",
+      "level": 2
+    },
+    {
+      "line": 91,
+      "title": "Caso 1 — sangue vivo indolor em idoso",
+      "level": 3
+    },
+    {
+      "line": 99,
+      "title": "Caso 2 — hematoquezia com hipotensão",
+      "level": 3
+    },
+    {
+      "line": 107,
+      "title": "Caso 3 — dor e sangue: não é só divertículo",
+      "level": 3
+    },
+    {
+      "line": 115,
+      "title": "Caso 4 — sangramento após polipectomia e anticoagulação",
+      "level": 3
+    },
+    {
+      "line": 123,
+      "title": "11. Seis questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 125,
+      "title": "Questão 1 — HDB e timing",
+      "level": 3
+    },
+    {
+      "line": 130,
+      "title": "Questão 2 — hematoquezia e choque",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "Questão 3 — instabilidade e CTA",
+      "level": 3
+    },
+    {
+      "line": 140,
+      "title": "Questão 4 — divertículo",
+      "level": 3
+    },
+    {
+      "line": 145,
+      "title": "Questão 5 — antitrombótico",
+      "level": 3
+    },
+    {
+      "line": 150,
+      "title": "Questão 6 — sangue e dor",
+      "level": 3
+    },
+    {
+      "line": 155,
+      "title": "12. Revisão rápida",
+      "level": 2
+    },
+    {
+      "line": 165,
+      "title": "13. Imagens candidatas planejadas, nenhuma aprovada",
+      "level": 2
+    },
+    {
+      "line": 169,
+      "title": "14. Fontes científicas",
+      "level": 2
+    },
+    {
+      "line": 174,
+      "title": "15. Checklist pendente",
+      "level": 2
+    },
+    {
+      "line": 186,
+      "title": "LURIA — APROFUNDAMENTO CLÍNICO E ENDOSCÓPICO",
+      "level": 1
+    },
+    {
+      "line": 189,
+      "title": "16. Hemorragia baixa em três cenários: a gravidade decide a sequência",
+      "level": 2
+    },
+    {
+      "line": 191,
+      "title": "16.1. Cenário 1: a perda discreta que não deve ser banalizada",
+      "level": 3
+    },
+    {
+      "line": 196,
+      "title": "16.2. Cenário 2: HDB maior, mas a pessoa foi estabilizada",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "16.3. Cenário 3: o sangramento volumoso continua e a perfusão cai",
+      "level": 3
+    },
+    {
+      "line": 206,
+      "title": "17. Anatomia arterial e topografia: de onde vem o sangue?",
+      "level": 2
+    },
+    {
+      "line": 208,
+      "title": "17.1. O cólon não tem irrigação uniforme",
+      "level": 3
+    },
+    {
+      "line": 217,
+      "title": "17.2. O segmento importa na interpretação das fezes",
+      "level": 3
+    },
+    {
+      "line": 222,
+      "title": "17.3. Microvasos e angiodisplasia",
+      "level": 3
+    },
+    {
+      "line": 227,
+      "title": "18. Avaliação hemodinâmica: a fisiologia que não cabe no valor inicial de Hb",
+      "level": 2
+    },
+    {
+      "line": 229,
+      "title": "18.1. Por que pressão normal pode coexistir com perda importante?",
+      "level": 3
+    },
+    {
+      "line": 234,
+      "title": "18.2. Hemoglobina é concentração, não medidor instantâneo de hemorragia",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "18.3. Transfusão restritiva tem condições",
+      "level": 3
+    },
+    {
+      "line": 246,
+      "title": "19. O Oakland score: baixo risco não é ausência de diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 248,
+      "title": "19.1. O propósito do escore",
+      "level": 3
+    },
+    {
+      "line": 253,
+      "title": "19.2. O que torna alta plausível?",
+      "level": 3
+    },
+    {
+      "line": 256,
+      "title": "19.3. Exemplo para não usar score cegamente",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "20. Exames: diferenciar localizar sangue de caracterizar doença",
+      "level": 2
+    },
+    {
+      "line": 261,
+      "title": "20.1. Colonoscopia durante internação",
+      "level": 3
+    },
+    {
+      "line": 266,
+      "title": "20.2. Angiotomografia (CTA)",
+      "level": 3
+    },
+    {
+      "line": 275,
+      "title": "20.3. Angiografia e embolização",
+      "level": 3
+    },
+    {
+      "line": 280,
+      "title": "20.4. Estudos do intestino delgado",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "21. Tratamento das etiologias: exame e técnica precisam responder ao vaso certo",
+      "level": 2
+    },
+    {
+      "line": 285,
+      "title": "21.1. Hemorragia diverticular",
+      "level": 3
+    },
+    {
+      "line": 292,
+      "title": "21.2. Angiodisplasia",
+      "level": 3
+    },
+    {
+      "line": 297,
+      "title": "21.3. Colite isquêmica",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "21.4. Colite infecciosa",
+      "level": 3
+    },
+    {
+      "line": 305,
+      "title": "21.5. Doença inflamatória intestinal",
+      "level": 3
+    },
+    {
+      "line": 308,
+      "title": "21.6. Neoplasia colorretal e lesões pré-neoplásicas",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "21.7. Pós-polipectomia",
+      "level": 3
+    },
+    {
+      "line": 314,
+      "title": "21.8. Lesões anorretais",
+      "level": 3
+    },
+    {
+      "line": 317,
+      "title": "22. Anticoagulantes e antiagregantes: além de “suspender ou continuar”",
+      "level": 2
+    },
+    {
+      "line": 319,
+      "title": "22.1. Varfarina",
+      "level": 3
+    },
+    {
+      "line": 322,
+      "title": "22.2. Anticoagulantes de ação direta (DOAC)",
+      "level": 3
+    },
+    {
+      "line": 325,
+      "title": "22.3. AAS e dupla antiagregação",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "22.4. A verdadeira pergunta da alta",
+      "level": 3
+    },
+    {
+      "line": 338,
+      "title": "23. Populações especiais e comorbidades",
+      "level": 2
+    },
+    {
+      "line": 340,
+      "title": "23.1. Idoso frágil",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "23.2. Cirrose e hipertensão portal",
+      "level": 3
+    },
+    {
+      "line": 346,
+      "title": "23.3. Gestação",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "23.4. Pediatria",
+      "level": 3
+    },
+    {
+      "line": 352,
+      "title": "23.5. Imunossuprimidos",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "24. Alta e prevenção de recorrência: completar a linha de cuidado",
+      "level": 2
+    },
+    {
+      "line": 357,
+      "title": "24.1. Hemorragia resolvida não significa doença explicada",
+      "level": 3
+    },
+    {
+      "line": 360,
+      "title": "24.2. Ferro e reabilitação de anemia",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "24.3. Fatores modificáveis",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "24.4. Sinais de retorno",
+      "level": 3
+    },
+    {
+      "line": 369,
+      "title": "25. Fluxograma de decisão em quatro perguntas",
+      "level": 2
+    },
+    {
+      "line": 382,
+      "title": "26. Resumo técnico de confronto ACG 2023 × ESGE 2021",
+      "level": 2
+    },
+    {
+      "line": 399,
+      "title": "27. Casos clínicos avançados — seis decisões que não cabem no algoritmo curto",
+      "level": 2
+    },
+    {
+      "line": 401,
+      "title": "Caso 5 — CTA positiva e sangramento diverticular arterial",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "Caso 6 — a hemorroida aparente que escondia câncer",
+      "level": 3
+    },
+    {
+      "line": 417,
+      "title": "Caso 7 — colite isquêmica depois de hipotensão",
+      "level": 3
+    },
+    {
+      "line": 425,
+      "title": "Caso 8 — idoso com anticoagulante por FA e stent recente",
+      "level": 3
+    },
+    {
+      "line": 433,
+      "title": "Caso 9 — bebê com sangue nas fezes e dor intermitente",
+      "level": 3
+    },
+    {
+      "line": 441,
+      "title": "Caso 10 — duas endoscopias negativas, mas anemia não resolve",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "28. Oito questões adicionais com quatro alternativas comentadas",
+      "level": 2
+    },
+    {
+      "line": 451,
+      "title": "Questão 7 — nova recomendação de timing",
+      "level": 3
+    },
+    {
+      "line": 459,
+      "title": "Questão 8 — score de Oakland",
+      "level": 3
+    },
+    {
+      "line": 467,
+      "title": "Questão 9 — hematoquezia e choque",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "Questão 10 — angio-TC positiva",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Questão 11 — colite e isquemia",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "Questão 12 — estenose aórtica e ectasia vascular",
+      "level": 3
+    },
+    {
+      "line": 499,
+      "title": "Questão 13 — dois riscos da dupla antiagregação",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "Questão 14 — pediatria",
+      "level": 3
+    },
+    {
+      "line": 515,
+      "title": "29. Matriz de autossuficiência e revisão final de HDB",
+      "level": 2
+    }
+  ],
+  "references": [
+    "- ACG. *Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline*. Am J Gastroenterol 2023. Conferir acesso à edição integral na revisão final. https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "- ESGE. *Diagnosis and management of acute lower gastrointestinal bleeding*. Endoscopy 2021;53:850–868. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "- LURIA. \\`apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md\\` — diferencial alto, sem duplicar tratamento."
+  ],
+  "external_links": [
+    {
+      "url": "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36735555/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 3,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exames:** hemograma seriado, função renal, eletrólitos, tipagem e prova de compatibilidade, coagulação conforme medicamento/doença; não pedir indiscriminadamente painel de exames sem pergunta clínica. Angio-TC pode localizar extravasamento ativo, especialmente em sangramento persistente hemodinamicamente relevante. Ultrassonografia não substitui TC/colonoscopia no diagnóstico do local de hemorragia colorretal ativa.",
+      "pattern": 1
+    },
+    {
+      "text": "**Antiagregação:** AAS para prevenção cardiovascular secundária costuma ter papel distinto daquele usado para prevenção primária. ESGE recomenda, se possível, não interromper AAS em prevenção secundária e, quando interrompido, retomar precocemente após hemostasia. Dupla antiagregação após stent recente exige discussão com cardiologia.",
+      "pattern": 1
+    },
+    {
+      "text": "**Preparo intestinal:** solução purgativa por via oral/sonda quando necessário pode melhorar visualização e reduzir procedimento inconclusivo. Preparo inadequado dificulta detectar divertículo responsável, vaso ou tumor e aumenta risco de uma colonoscopia de baixo rendimento. Contraindicações e tolerância dependem de instabilidade, risco de aspiração e íleo.",
+      "pattern": 1
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Manifestações:** hematoquezia é eliminação retal de sangue vermelho ou vinho, com ou sem coágulos; enterorragia e proctorragia são termos usados de modo variável. Melena costuma sugerir sangue digerido de origem alta, mas também pode ocorrer com fontes do intestino delgado ou cólon proximal e trânsito lento. Sangue oculto e anemia ferropriva de evolução crônica são síndromes relacionadas, mas têm investigação diferente de sangramento agudo maciço."
+    },
+    {
+      "text": "**Perguntas de gravidade:** há choque, síncope, ortostase, dispneia, dor torácica, alteração mental, sangramento contínuo, comorbidade cardiovascular, anticoagulação ou necessidade transfusional? O número de evacuações sanguinolentas isolado não mede volume efetivo perdido."
+    }
+  ]
+}

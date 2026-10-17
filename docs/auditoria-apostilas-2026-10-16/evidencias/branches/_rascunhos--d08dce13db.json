@@ -1,0 +1,358 @@
+{
+  "sha": "d08dce13db357e04971e3689ad680a6a8e56db5f",
+  "path": "apostilas/_rascunhos/lote-10-205-dor-pelvica-torcao-anexial.md",
+  "branches": [
+    "origin/editorial/lote-10-apostilas-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d08dce13db",
+  "title": "LURIA | Apostila 205 — Dor pélvica aguda e torção anexial",
+  "format": ".md",
+  "chars_estimated": 79768,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Apostila 205 — Dor pélvica aguda e torção anexial"
+    },
+    {
+      "title": "0. Diagnóstico editorial: materiais comparados e limites de uso"
+    },
+    {
+      "title": "1. Objetivos e organização do raciocínio"
+    },
+    {
+      "title": "2. Anatomia funcional da pelve — o que muda a conduta"
+    },
+    {
+      "title": "2.1. Órgãos e compartimentos"
+    },
+    {
+      "title": "2.2. Ligamentos e pedículo anexial"
+    },
+    {
+      "title": "2.3. A complexidade da dor visceral"
+    },
+    {
+      "title": "3. Definição e mapa etiológico"
+    },
+    {
+      "title": "3.1. Agrupamento por ameaça e mecanismo"
+    },
+    {
+      "title": "3.2. Faixa etária e contexto"
+    },
+    {
+      "title": "3.3. Probabilidade pré-teste e sinais ausentes"
+    },
+    {
+      "title": "4. Primeiros dez minutos no pronto atendimento"
+    },
+    {
+      "title": "4.1. Triagem imediata"
+    },
+    {
+      "title": "4.2. Analgesia não é “mascarar” diagnóstico"
+    },
+    {
+      "title": "4.3. O que documentar"
+    },
+    {
+      "title": "5. Anamnese direcionada: perguntas e significado fisiopatológico"
+    },
+    {
+      "title": "5.1. Começo e ritmo da dor"
+    },
+    {
+      "title": "5.2. Sintomas acompanhantes"
+    },
+    {
+      "title": "5.3. História reprodutiva e fatores de risco"
+    },
+    {
+      "title": "6. Exame físico e exames complementares — pedir o exame que responde à pergunta"
+    },
+    {
+      "title": "6.1. Exame abdominal e ginecológico"
+    },
+    {
+      "title": "6.2. β-hCG: indispensável e frequentemente mal interpretado"
+    },
+    {
+      "title": "6.3. Hemograma, PCR e urina"
+    },
+    {
+      "title": "6.4. Ultrassom — abordagem por via e pergunta clínica"
+    },
+    {
+      "title": "6.5. Tomografia e ressonância"
+    },
+    {
+      "title": "7. Torção anexial: doença tempo-dependente"
+    },
+    {
+      "title": "7.1. Definição e estruturas envolvidas"
+    },
+    {
+      "title": "7.2. Quem está em maior risco?"
+    },
+    {
+      "title": "7.3. Clínica típica e apresentações enganosas"
+    },
+    {
+      "title": "7.4. Como ler os sinais ultrassonográficos"
+    },
+    {
+      "title": "7.5. Tratamento: preservar antes de ressecar"
+    },
+    {
+      "title": "7.6. Complicações e seguimento"
+    },
+    {
+      "title": "7.7. Por que não esperar “janela de horas”?"
+    },
+    {
+      "title": "8. Gravidez ectópica, gestação de localização desconhecida e dor aguda"
+    },
+    {
+      "title": "8.1. O conceito anatômico"
+    },
+    {
+      "title": "8.2. A tríade que é clássica, não obrigatória"
+    },
+    {
+      "title": "8.3. Integração do ultrassom e dos níveis de β-hCG"
+    },
+    {
+      "title": "8.4. Conduta por estabilidade clínica"
+    },
+    {
+      "title": "8.5. Gestação heterotópica e situações especiais"
+    },
+    {
+      "title": "9. Cistos funcionais, corpo lúteo hemorrágico e hemoperitônio"
+    },
+    {
+      "title": "9.1. O que é esperado no ciclo ovulatório"
+    },
+    {
+      "title": "9.2. Apresentação típica de ruptura"
+    },
+    {
+      "title": "9.3. Ultrassom do cisto hemorrágico"
+    },
+    {
+      "title": "9.4. Conduta por estabilidade e suspeita"
+    },
+    {
+      "title": "9.5. Endometrioma e endometriose no diferencial"
+    },
+    {
+      "title": "10. Doença inflamatória pélvica como diferencial urgente"
+    },
+    {
+      "title": "10.1. Mecanismo: ascensão de infecção do trato inferior"
+    },
+    {
+      "title": "10.2. Clínica e exame"
+    },
+    {
+      "title": "10.3. Critérios brasileiros e limiar de tratamento"
+    },
+    {
+      "title": "10.4. Tratamento empírico e distinção entre protocolos"
+    },
+    {
+      "title": "10.5. Abscesso tubo-ovariano"
+    },
+    {
+      "title": "10.6. DIU, parcerias e prevenção"
+    },
+    {
+      "title": "11. Causas urinárias e gastrointestinais: não reduzir o abdome inferior ao sistema reprodutivo"
+    },
+    {
+      "title": "11.1. Apendicite aguda"
+    },
+    {
+      "title": "11.2. Urolitíase e infecção urinária"
+    },
+    {
+      "title": "11.3. Diverticulite, doença inflamatória intestinal e causas intestinais"
+    },
+    {
+      "title": "11.4. Dor musculoesquelética e referida"
+    },
+    {
+      "title": "12. Cenários por ciclo de vida e circunstância"
+    },
+    {
+      "title": "12.1. Pré-púbere e adolescente"
+    },
+    {
+      "title": "12.2. Gravidez inicial"
+    },
+    {
+      "title": "12.3. Pós-parto e pós-procedimentos ginecológicos"
+    },
+    {
+      "title": "12.4. Pós-menopausa"
+    },
+    {
+      "title": "12.5. Uso de anticoagulantes e distúrbios de coagulação"
+    },
+    {
+      "title": "12.6. Tratamento de reprodução assistida e hiperestimulação"
+    },
+    {
+      "title": "13. Fluxogramas textuais originais de decisão"
+    },
+    {
+      "title": "Fluxo A — Dor aguda com instabilidade"
+    },
+    {
+      "title": "Fluxo B — Dor súbita unilateral, vômitos, paciente estável"
+    },
+    {
+      "title": "Fluxo C — Dor subaguda, secreção, febre, sensibilidade pélvica"
+    },
+    {
+      "title": "Fluxo D — β-hCG positivo, ultrassom sem gestação definida"
+    },
+    {
+      "title": "Fluxo E — Dor após ultrassom com cisto hemorrágico provável"
+    },
+    {
+      "title": "14. Quadro de contrastes para prova e plantão"
+    },
+    {
+      "title": "15. Casos clínicos comentados — aprender a decidir"
+    },
+    {
+      "title": "Caso 1 — Adolescente com Doppler preservado e suspeita forte de torção"
+    },
+    {
+      "title": "Caso 2 — Dor pélvica, síncope e “atraso pequeno”"
+    },
+    {
+      "title": "Caso 3 — Gestação desejada e β-hCG positivo sem localização definida"
+    },
+    {
+      "title": "Caso 4 — Dor súbita após relação sexual e líquido livre"
+    },
+    {
+      "title": "Caso 5 — DIP provável, mas um diagnóstico mais urgente precisa ser excluído"
+    },
+    {
+      "title": "Caso 6 — Massa complexa, febre e falha de tratamento"
+    },
+    {
+      "title": "Caso 7 — Apendicite pélvica simulando problema ginecológico"
+    },
+    {
+      "title": "Caso 8 — Indução de ovulação, dor e aumento anexial"
+    },
+    {
+      "title": "16. Questões autorais estilo residência, com justificativa por alternativa"
+    },
+    {
+      "title": "Questão 1 — A armadilha do Doppler"
+    },
+    {
+      "title": "Questão 2 — Gestação não localizada"
+    },
+    {
+      "title": "Questão 3 — Choque em paciente com gravidez positiva"
+    },
+    {
+      "title": "Questão 4 — Clínica de DIP"
+    },
+    {
+      "title": "Questão 5 — Abscesso tubo-ovariano"
+    },
+    {
+      "title": "Questão 6 — Cisto hemorrágico e estabilidade"
+    },
+    {
+      "title": "Questão 7 — Exame inicial de imagem"
+    },
+    {
+      "title": "Questão 8 — Adolescente sem massa ovariana"
+    },
+    {
+      "title": "Questão 9 — Encontrou um cisto, encerrou investigação?"
+    },
+    {
+      "title": "Questão 10 — Gestação heterotópica"
+    },
+    {
+      "title": "Questão 11 — Preservação ovariana"
+    },
+    {
+      "title": "Questão 12 — Antibiótico para DIP no Brasil"
+    },
+    {
+      "title": "17. Pérolas de prova e erros cognitivos frequentes"
+    },
+    {
+      "title": "18. Resumo operacional de uma página"
+    },
+    {
+      "title": "19. Imagens a pesquisar — apenas candidatas, sem publicação"
+    },
+    {
+      "title": "20. Referências e rastreabilidade de afirmações"
+    },
+    {
+      "title": "21. Matriz de autossuficiência e estado de aprovação"
+    }
+  ],
+  "reference_entries": [
+    "**Fontes oficiais e recomendações clínicas utilizadas:**",
+    "1. Brasil. Ministério da Saúde. *Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST)*. Brasília, 2022. Capítulo 10 — DIP. https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf ; quadro de antibióticos p. 144 impressa (PDF p. 145). **Finalidade:** critérios nacionais, tratamento ambulatorial/hospitalar e segurança de seguimento.",
+    "2. Centers for Disease Control and Prevention. *Pelvic Inflammatory Disease (PID): STI Treatment Guidelines*. Diretrizes 2021, versão eletrônica consultada em 15/10/2026. https://www.cdc.gov/std/treatment-guidelines/pid.htm . **Finalidade:** limiar terapêutico sensível, regimes de referência, internação e seguimento.",
+    "3. ACOG. *Adnexal Torsion in Adolescents*. Committee Opinion No. 783, agosto de 2019. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents . **Finalidade:** limites do Doppler, indicação de laparoscopia, preservação anexial.",
+    "4. American College of Radiology. *ACR Appropriateness Criteria — Acute Pelvic Pain in the Reproductive Age Group: 2023 Update*. *J Am Coll Radiol*. 2024;21(6 Suppl):S3–S20. DOI 10.1016/j.jacr.2024.02.014. https://pubmed.ncbi.nlm.nih.gov/38823952/ . **Finalidade:** escolha inicial de ultrassom e critérios para TC/RM.",
+    "5. National Institute for Health and Care Excellence. *Ectopic pregnancy and miscarriage: diagnosis and initial management*. NG126, publicada em 2019, atualização de junho de 2026. https://www.nice.org.uk/guidance/ng126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy . **Finalidade:** diagnóstico ultrassonográfico, GLD e contraindicação lógica do β-hCG isolado para localização.",
+    "6. Royal College of Obstetricians and Gynaecologists. *Diagnosis and Management of Ectopic Pregnancy*. Green-top Guideline 21. https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/diagnosis-and-management-of-ectopic-pregnancy-green-top-guideline-no-21/ . **Finalidade:** categorias de gravidez ectópica e riscos.",
+    "7. Royal College of Obstetricians and Gynaecologists. *The Management of Ovarian Hyperstimulation Syndrome*. Green-top Guideline No. 5, atualização 2026. DOI 10.1111/1471-0528.70195. https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1111/1471-0528.70195 . **Finalidade:** reconhecer cirurgia indicada em torção/hemorragia em síndrome de hiperestimulação.",
+    "**Biblioteca interna LURIA, consultada para evitar redundância:** `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html`; `apostilas/massas-anexiais-cancer-ovario/rascunho-editorial-lote09.md`; `apostilas/hemorragias-primeiro-terceiro-trimestre/`. O conteúdo foi usado para mapear funções editoriais, não para copiar parágrafos. A leitura direta integral de todos os arquivos relacionados permanece pendente.",
+    "**Status: MANUSCRITO EDITORIAL ORIGINAL. NÃO PUBLICAR AUTOMATICAMENTE.** Antes de mover para biblioteca ativa: confrontar fluxos com diretrizes brasileiras vigentes e prática especializada; revisar diferencial de gravidez ectópica em pessoas gestantes; conferir contraindicações e regimes antimicrobianos em diferentes populações; buscar/aprovar imagens por licença; aplicar revisão científica por ginecologista, teste de casos inéditos e auditorias de extensão, sintaxe e responsividade. A regra central é **não produzir texto redundante para alcançar uma metragem artificial**."
+  ],
+  "external_urls": [
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf",
+    "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents",
+    "https://pubmed.ncbi.nlm.nih.gov/38823952/",
+    "https://www.nice.org.uk/guidance/ng126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy",
+    "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/diagnosis-and-management-of-ectopic-pregnancy-green-top-guideline-no-21/",
+    "https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1111/1471-0528.70195"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Referência direta LURIA:** `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html`, com corpo próprio amplo de cervicites/DIP. Este material será preservado: nele ficam etiologia, diagnóstico diferencial fino e tratamento integral da DIP; nesta apostila, DIP aparece no **fluxo diferencial da dor aguda**, com conduta inicial suficiente e remissão ao texto específico. **Referências conexas:** `apostilas/massas-anexiais-cancer-ovario/rascunho-editorial-lote09.md` (avaliação de massa, tumores e estratificação oncológica) e `apostilas/hemorragias-primeiro-terceiro-trimestre/` (sangramentos obstétricos). Este manuscrito aborda prioritariame"
+    },
+    {
+      "text": "**Referências clínicas primárias rastreáveis:** ACOG Committee Opinion 783 (torção anexial na adolescência; 2019, vigente para pontos anatômicos críticos), ACR Appropriateness Criteria Acute Pelvic Pain 2023 Update (publicado em 2024), NICE NG126 (gravidez ectópica, revisão até 2026), PCDT-IST do Ministério da Saúde (2022, capítulo 10, DIP) e CDC STI Treatment Guidelines (2021, versão eletrônica consultada em 2026). Divergências entre guias brasileiros e internacionais são expressas explicitamente; recomendações farmacológicas finais dependem de protocolos locais, peso, alergias, gestação e revisão profissional."
+    },
+    {
+      "text": "O objetivo não é memorizar uma lista de doenças. Ao final, o aluno deverá: reconhecer instabilidade e peritonite; oferecer analgesia e cuidados de suporte sem postergar diagnóstico; identificar quem precisa de teste de gravidez; interpretar a combinação de β-hCG e ultrassonografia sem absolutizar um limiar; reconhecer apresentação clássica e atípica de torção; diferenciar cisto hemorrágico, ectópica e DIP; formular a indicação de abordagem cirúrgica; localizar sinais ultrassonográficos úteis; escolher imagem adequada a gestação e hipótese clínica; distinguir seguimento seguro de uma alta arriscada; e explicar as decisões para a paciente com r"
+    },
+    {
+      "text": "Fibras aferentes viscerais e somáticas convergem em segmentos medulares, produzindo dor mal localizada, irradiada ou referida. A irritação do peritônio parietal gera dor mais delimitada, defesa e piora com movimento, tosse ou percussão. Patologia anexial pode apresentar dor em fossa ilíaca sem sensibilidade vaginal marcante; apendicite pélvica pode gerar desconforto suprapúbico e sintomas urinários. Anatomia explica por que a topografia **orienta**, mas não confirma, o diagnóstico."
+    },
+    {
+      "text": "A ausência de febre não descarta infecção grave; a ausência de sangramento vaginal não descarta ectópica; a ausência de massa palpável não descarta torção; exame ginecológico sem dor intensa não torna apendicite improvável; e urina tipo 1 alterada não significa que o achado urinário explique todos os sintomas. Em emergências, **um achado positivo parcial nunca deve interromper a busca por uma segunda condição perigosa** se a evolução discordar do diagnóstico inicial."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

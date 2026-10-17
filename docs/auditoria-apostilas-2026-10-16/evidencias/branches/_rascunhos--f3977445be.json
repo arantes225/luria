@@ -1,0 +1,300 @@
+{
+  "sha": "f3977445be61f3da08b8549be02b6542e7caf5c6",
+  "path": "apostilas/_rascunhos/lote-03-053-desidratacao-terapia-reidratacao-pediatria.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--f3977445be",
+  "title": "LURIA — Apostila 053 | Desidratação e terapia de reidratação em Pediatria",
+  "format": ".md",
+  "chars_estimated": 56206,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 053 | Desidratação e terapia de reidratação em Pediatria"
+    },
+    {
+      "title": "0. Etapa zero — inventário, benchmark, fontes e separação curricular"
+    },
+    {
+      "title": "1. O que é desidratação pediátrica e por que a criança descompensa?"
+    },
+    {
+      "title": "1.1 Água entre os compartimentos"
+    },
+    {
+      "title": "1.2 Por que a SRO funciona mesmo quando existe diarreia?"
+    },
+    {
+      "title": "2. Etiologias do déficit hídrico: localizar a perda antes da prescrição"
+    },
+    {
+      "title": "2.1 Elementos da anamnese que mudam risco"
+    },
+    {
+      "title": "2.2 Perda de peso: medida útil com limitações"
+    },
+    {
+      "title": "3. Reconhecer desidratação e choque: o exame supera a porcentagem estimada"
+    },
+    {
+      "title": "3.1 Estado mental e capacidade de beber"
+    },
+    {
+      "title": "3.2 Perfusão periférica e pulso"
+    },
+    {
+      "title": "3.3 Olhos, mucosas, lágrimas e prega"
+    },
+    {
+      "title": "3.4 Quadro de estratificação operacional"
+    },
+    {
+      "title": "4. Planos A, B e C do Ministério da Saúde — não confundir prevenção com correção"
+    },
+    {
+      "title": "4.1 Plano A: criança ainda hidratada"
+    },
+    {
+      "title": "4.2 Plano B: corrigir déficit por boca na unidade de saúde"
+    },
+    {
+      "title": "4.3 Plano C: desidratação grave, ambiente hospitalar e correção rápida inicial"
+    },
+    {
+      "title": "4.4 Diferença entre o cartaz geral do MS e algoritmo AIDPI"
+    },
+    {
+      "title": "5. Reidratação oral na prática: preparação e administração"
+    },
+    {
+      "title": "5.1 Continuar alimentação não significa forçar grandes volumes"
+    },
+    {
+      "title": "5.2 Zinco e medidas adjuvantes"
+    },
+    {
+      "title": "5.3 Atualização crítica para a revisão científica de 2026 — divergência de zinco"
+    },
+    {
+      "title": "6. Perdas contínuas e manutenção: fechar o balanço ao longo do tempo"
+    },
+    {
+      "title": "6.1 Regra de manutenção por peso (Holliday–Segar)"
+    },
+    {
+      "title": "6.2 Fluido de manutenção intravenoso: evitar hipotonicidade indiscriminada"
+    },
+    {
+      "title": "6.3 Medindo perdas contínuas"
+    },
+    {
+      "title": "7. Laboratório e indicação de exames"
+    },
+    {
+      "title": "7.1 Sódio não é medida de desidratação em porcentagem"
+    },
+    {
+      "title": "7.2 Potássio, bicarbonato e função renal"
+    },
+    {
+      "title": "7.3 Glicose e alteração de consciência"
+    },
+    {
+      "title": "8. Hiponatremia e hipernatremia: por que corrigir com cautela"
+    },
+    {
+      "title": "8.1 Hipernatremia pode mascarar desidratação"
+    },
+    {
+      "title": "8.2 Hiponatremia e risco de convulsão"
+    },
+    {
+      "title": "9. Situações especiais que não cabem automaticamente nos Planos A/B/C"
+    },
+    {
+      "title": "9.1 Desnutrição aguda grave"
+    },
+    {
+      "title": "9.2 Cetoacidose diabética"
+    },
+    {
+      "title": "9.3 Cardiopatias e doença renal"
+    },
+    {
+      "title": "9.4 Neonatos e prematuros"
+    },
+    {
+      "title": "9.5 Choque séptico versus hipovolemia simples"
+    },
+    {
+      "title": "10. Algoritmos por cenário: como transformar exame em conduta"
+    },
+    {
+      "title": "10.1 Criança com diarreia e estado geral preservado"
+    },
+    {
+      "title": "10.2 Criança desidratada, alerta e com sede intensa"
+    },
+    {
+      "title": "10.3 Criança com má perfusão, letargia e incapacidade de beber"
+    },
+    {
+      "title": "11. Regras práticas de cálculo sem mecanizar a prescrição"
+    },
+    {
+      "title": "11.1 Déficit estimado a partir do peso"
+    },
+    {
+      "title": "11.2 Referência de SRO inicial em determinado Plano B"
+    },
+    {
+      "title": "11.3 Plano C clássico para desidratação grave por diarreia"
+    },
+    {
+      "title": "11.4 Manutenção não é expansão"
+    },
+    {
+      "title": "11.5 Evitar erro de cálculo por arredondamento e unidades"
+    },
+    {
+      "title": "12. Diagnóstico diferencial de criança com pouca urina e mucosas secas"
+    },
+    {
+      "title": "13. Seis casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Diarreia sem desidratação: ensinar Plano A de verdade"
+    },
+    {
+      "title": "Caso 2 — Desidratação sem choque e vômitos durante SRO"
+    },
+    {
+      "title": "Caso 3 — Lactente com desidratação grave e hipoperfusão"
+    },
+    {
+      "title": "Caso 4 — Hipernatremia em criança com perda de água livre"
+    },
+    {
+      "title": "Caso 5 — Diabetes inicial confundido com gastroenterite"
+    },
+    {
+      "title": "Caso 6 — Desnutrição grave e edema, uma armadilha de volume"
+    },
+    {
+      "title": "14. Dez questões de residência, com justificativa de todas as alternativas"
+    },
+    {
+      "title": "Questão 1 — Mecanismo da reidratação oral"
+    },
+    {
+      "title": "Questão 2 — Criança sem desidratação"
+    },
+    {
+      "title": "Questão 3 — Criança desidratada e capaz de beber"
+    },
+    {
+      "title": "Questão 4 — Plano C AIDPI por faixa etária"
+    },
+    {
+      "title": "Questão 5 — Volumes de manutenção"
+    },
+    {
+      "title": "Questão 6 — Hipernatremia e reidratação"
+    },
+    {
+      "title": "Questão 7 — Vômitos e reidratação oral"
+    },
+    {
+      "title": "Questão 8 — Lactente letárgico e pouca perfusão"
+    },
+    {
+      "title": "Questão 9 — Desnutrição aguda grave"
+    },
+    {
+      "title": "Questão 10 — Cetoacidose e desidratação"
+    },
+    {
+      "title": "15. Matrizes de revisão e segurança de prescrição"
+    },
+    {
+      "title": "16. Camada visual: 10 ideias com destino e indicação"
+    },
+    {
+      "title": "17. Referências e auditoria preliminar"
+    }
+  ],
+  "reference_entries": [
+    "**Relação com o cronograma:** aula 053, “Desidratação e terapia de reidratação”; aula 058, “Diarreia aguda”. A 053 ensina como a criança perde água e eletrólitos, como avaliar perfusão e déficit, como escolher entre planos A/B/C, SRO, acesso venoso, volumes, ritmos e controle de complicações. A 058 deverá aprofundar agentes etiológicos, diarreia inflamatória/secretória, prevenção, vacinação, investigação e antibioticoterapia quando indicada, **sem repetir integralmente os algoritmos de reidratação**. Ambas precisam ser legíveis isoladamente.",
+    "**Busca real no Google Drive:** foram pesquisados “desidratação pediatria”, “desidratação criança”, “terapia de reidratação”, “diarreia aguda criança”, “hidratação oral” e “plano A B C”; não foi encontrada apostila de reidratação pediátrica específica. O documento correlato “01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf” foi aberto e lido (cerca de 9 mil caracteres extraídos), mas é voltado principalmente à diarreia em adultos, mecanismos e tratamento etiológico; sequer detalha o SRO pediátrico e planos A/B/C. Indicações antigas de antibiótico e antidiarreico desse PDF **não podem orientar ro",
+    "**Fontes primárias/assistenciais públicas identificadas e consultadas:**",
+    "1. Ministério da Saúde, **Doenças diarreicas agudas (DDA): tratamento — Planos A, B e C**, página vigente em outubro de 2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda",
+    "2. Ministério da Saúde, **Manejo do paciente com diarreia: avaliação do estado do paciente**, atualizado em 10/07/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente",
+    "3. Ministério da Saúde/OPAS, **AIDPI: Manual de Quadros de Procedimentos, Criança 2 meses a 5 anos** (material de referência de fluxos pediátricos; verificar vigência das tabelas operacionais antes de uso clínico). https://bvsms.saude.gov.br/bvs/publicacoes/manual_quadros_procedimentos_aidpi_crianca_2meses_5anos.pdf",
+    "4. Organização Mundial da Saúde/UNICEF, **The Treatment of Diarrhoea: A Manual for Physicians and Other Senior Health Workers**, 2005, referência clássica para SRO de baixa osmolaridade. https://pmnch.who.int/resources/publications/i/item/the-treatment-of-diarrhoea",
+    "5. Organização Mundial da Saúde, **Diarrhoea** (atualizações de contexto e reidratação): https://www.who.int/health-topics/diarrhoea",
+    "6. Organização Mundial da Saúde, **Severe acute malnutrition: dehydration without shock** (estratégia específica, não aplicar SRO padrão automaticamente a desnutrição grave): https://www.who.int/tools/elena/interventions/dehydration-sam",
+    "7. Secretaria de Saúde do Distrito Federal, protocolo de APS da criança, material correlato de Plano C: https://www.saude.df.gov.br/documents/37101/80989/Protocolo%2Bde%2BAten%C3%A7%C3%A3o%2BPrim%C3%A1ria%2B%C3%A0%2BSa%C3%BAde%2Bda%2BCrian%C3%A7a.pdf/2739857b-50fc-97cc-35cf-35d240dcadcf",
+    "**Limites:** o esquema de hidratação muda em choque, hipernatremia, desnutrição aguda grave, cardiopatia/nefropatia, insuficiência renal, neonatos e cetoacidose diabética. Os volumes de “Plano C” para diarreia com desidratação grave não devem ser colados como única prescrição para todas essas entidades.",
+    "**Três conceitos não são sinônimos:**",
+    "- **Desidratação:** déficit de água corporal, avaliado por história, peso e sinais clínicos.",
+    "- **Hipovolemia:** redução do volume circulante efetivo, que pode provocar taquicardia, má perfusão e choque.",
+    "- **Distúrbio hidroeletrolítico:** alteração de concentração de sódio, potássio, cloro ou bicarbonato, que pode acompanhar déficit hídrico e modificar o tratamento.",
+    "**Gastrointestinais:** diarreia, vômitos e perdas por estomas/fístulas. **Renais:** diurese osmótica em hiperglicemia, diabetes insipidus e alterações tubulares. **Cutâneas:** febre, queimaduras, sudorese intensa e grande superfície exposta. **Baixa entrada:** recusa alimentar, dificuldade de amamentação, doença dolorosa e impossibilidade de acesso a água. **Redistribuição:** sepse e quadros com extravasamento capilar ou terceiro espaço podem reduzir volume circulante sem corresponder a desidratação simples; as estratégias terapêuticas divergem.",
+    "**Estimativa do déficit em mililitros:** peso pré-doença (kg) × percentual de perda × 1.000. Se a perda é expressa como 0,05 (5%), para 12 kg o déficit estimado é 12 × 0,05 × 1.000 = 600 mL. É aproximação didática para entender ordens de grandeza; esquemas de reidratação seguem classificação clínica e protocolos, especialmente em pacientes sem peso anterior.",
+    "**Ponto importante:** iniciar hidratação antes de haver desidratação evita que o quadro evolua. Não suspender leite materno por diarreia. A solução deve ser oferecida em pequenos goles frequentes se houver náuseas. O plano A não é “não fazer nada”; inclui prevenção, educação e vigilância da evolução.",
+    "**Exemplo orientador:** para criança de 10 kg e indicação de 75 mL/kg em estratégia específica de quatro horas, total teórico é 750 mL. Isso não implica obrigar ingestão rápida nem suspender se vomitar uma vez; os volumes precisam ser fracionados, repostos conforme perdas e ajustados à resposta e tolerância. A decisão de manter plano B depende de exame, não apenas da quantidade “bebida”.",
+    "**Quando a criança vomita:** pausa breve quando necessário, reiniciar lentamente em pequenas porções repetidas; vômitos isolados não implicam falha definitiva da terapia oral. Vômitos incoercíveis, distensão progressiva, recusa persistente, rebaixamento ou piora perfusional exigem reavaliação e escalonamento. Administração por sonda nasogástrica pode ser opção em serviços capacitados quando não há choque e a criança não consegue ingerir o volume suficiente, com contraindicações específicas e vigilância.",
+    "**Atenção de segurança:** choque hipovolêmico exige reconhecimento e tratamento imediato em serviço apropriado, podendo demandar bolus e reavaliações frequentes conforme protocolo pediátrico. Não esperar completar seis horas de Plano C para tratar choque que persiste, nem administrar indiscriminadamente 100 mL/kg em prazo padrão em cardiopatia, nefropatia, cetoacidose diabética, hipernatremia ou desnutrição aguda grave. O fracionamento, ritmo e objetivo mudam conforme distúrbio.",
+    "**Transição:** assim que a criança puder beber e estiver segura, oferecer SRO em pequenas quantidades para cobrir perdas e facilitar passagem ao plano oral. Suspender via venosa quando reidratação, tolerância oral e controle de vômitos forem adequados, conforme avaliação. A alta exige plano A, sinais de alarme e suporte familiar viável.",
+    "- Primeiros 10 kg: 100 mL/kg/dia.",
+    "- Entre 10 e 20 kg: somar 50 mL/kg/dia para cada quilograma acima de 10.",
+    "- Acima de 20 kg: somar 20 mL/kg/dia para cada quilograma acima de 20.",
+    "**Exemplos:** 8 kg → 800 mL/dia. 15 kg → 1.000 + 5×50 = 1.250 mL/dia. 25 kg → 1.000 + 500 + 5×20 = 1.600 mL/dia. São cálculos de **manutenção**, não indicação de que toda criança deve receber esses volumes por via venosa. Febre, doença renal/cardíaca, edema, SIADH, perdas elevadas e estado nutricional podem exigir adaptação. No ambulatório, avaliar oferta enteral e perdas reais é mais útil que aplicar manutenção venosa de forma mecânica.",
+    "1. Aferir peso e sinais vitais apropriados à idade.",
+    "2. Investigar número de evacuações, vômitos, diurese, capacidade de beber, amamentação e febre.",
+    "3. Avaliar sinais de desidratação e perfusão; se não há déficit clínico, seguir **Plano A**.",
+    "4. Orientar SRO após perdas, leite materno e alimentação habitual, preparo correto e sinais de retorno."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_quadros_procedimentos_aidpi_crianca_2meses_5anos.pdf",
+    "https://pmnch.who.int/resources/publications/i/item/the-treatment-of-diarrhoea",
+    "https://www.who.int/health-topics/diarrhoea",
+    "https://www.who.int/tools/elena/interventions/dehydration-sam",
+    "https://www.saude.df.gov.br/documents/37101/80989/Protocolo%2Bde%2BAten%C3%A7%C3%A3o%2BPrim%C3%A1ria%2B%C3%A0%2BSa%C3%BAde%2Bda%2BCrian%C3%A7a.pdf/2739857b-50fc-97cc-35cf-35d240dcadcf",
+    "https://www.who.int/publications/i/item/9789240103412",
+    "https://www.ncbi.nlm.nih.gov/books/NBK611550/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Lote 3 (047–069) · Pediatria · Início da revisão:** 15/10/2026 **Estado:** material autoral inicial EM PRODUÇÃO, ainda NÃO certificado, NÃO integrado ao site e NÃO aprovado como protocolo clínico de prescrição. Revisão de doses, contraindicações e contextos especiais obrigatória."
+    },
+    {
+      "text": "**Fontes primárias/assistenciais públicas identificadas e consultadas:** 1. Ministério da Saúde, **Doenças diarreicas agudas (DDA): tratamento — Planos A, B e C**, página vigente em outubro de 2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda 2. Ministério da Saúde, **Manejo do paciente com diarreia: avaliação do estado do paciente**, atualizado em 10/07/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/manejo-do-paciente-com-diarreia-avaliacao-do-estado-do-paciente 3. Ministério da Saúde/OPAS, **AIDPI: Manual de Quadros de Procedimentos, Criança 2 meses a 5 anos** (material de referência de fluxo"
+    },
+    {
+      "text": "Diarreia aguda é causa comum, mas não é o único diagnóstico de criança com mucosas secas. Uma criança com poliúria, polidipsia, perda ponderal e respiração profunda precisa investigação de hiperglicemia/cetoacidose; não deve receber apenas “Plano B” porque está desidratada. Vômitos biliosos, dor intensa ou distensão podem indicar obstrução intestinal ou outra condição cirúrgica; hidratação é suporte, não substitui diagnóstico."
+    },
+    {
+      "text": "Manter alimentação habitual e aleitamento; aumentar ingestão de líquidos adequados, incluindo SRO depois de perdas, em quantidade proporcional à sede, idade e volume de fezes. Ensinar preparo correto, colher sinais de alarme e combinar retorno se houver piora, vômitos repetidos, muita sede, recusa alimentar, sangue nas fezes, diurese diminuída ou ausência de melhora conforme orientação oficial. O Ministério recomenda suplementação de zinco uma vez ao dia durante 10–14 dias para crianças com doença diarreica aguda; posologia por faixa etária e orientações da versão vigente devem ser conferidas no documento técnico completo antes de publicar re"
+    },
+    {
+      "text": "**Quando a criança vomita:** pausa breve quando necessário, reiniciar lentamente em pequenas porções repetidas; vômitos isolados não implicam falha definitiva da terapia oral. Vômitos incoercíveis, distensão progressiva, recusa persistente, rebaixamento ou piora perfusional exigem reavaliação e escalonamento. Administração por sonda nasogástrica pode ser opção em serviços capacitados quando não há choque e a criança não consegue ingerir o volume suficiente, com contraindicações específicas e vigilância."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

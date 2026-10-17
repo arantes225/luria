@@ -1,0 +1,319 @@
+{
+  "sha": "350c6fadadfe49ce6b968d1d78302b5ae67051c4",
+  "path": "apostilas/_rascunhos/lote-13-273-imunodeficiencias-infancia.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--350c6fadad",
+  "title": "LURIA — Lote 13 · Apostila 273",
+  "format": ".md",
+  "chars_estimated": 66675,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 273"
+    },
+    {
+      "title": "Imunodeficiências na infância: suspeita, localização do defeito, investigação e encaminhamento"
+    },
+    {
+      "title": "Etapa zero e limites do benchmark"
+    },
+    {
+      "title": "Objetivos de aprendizagem e mapa curricular"
+    },
+    {
+      "title": "1. O nome moderno: erros inatos da imunidade (EII)"
+    },
+    {
+      "title": "2. Imunologia indispensável — como o defeito produz o fenótipo"
+    },
+    {
+      "title": "2.1 Barreira epitelial e complemento"
+    },
+    {
+      "title": "2.2 Fagócitos"
+    },
+    {
+      "title": "2.3 Linfócitos B e anticorpos"
+    },
+    {
+      "title": "2.4 Linfócitos T e imunidade combinada"
+    },
+    {
+      "title": "2.5 NK, sinalização e regulação imune"
+    },
+    {
+      "title": "3. Sinais de alerta interpretados clinicamente"
+    },
+    {
+      "title": "4. Classificação sindrômica que ajuda a escolher testes"
+    },
+    {
+      "title": "5. Principais síndromes: fisiopatologia, apresentação e resposta clínica"
+    },
+    {
+      "title": "5.1 Agamaglobulinemia ligada ao X (Bruton, BTK)"
+    },
+    {
+      "title": "5.2 Imunodeficiência comum variável (IDCV/CVID)"
+    },
+    {
+      "title": "5.3 Deficiência seletiva de IgA"
+    },
+    {
+      "title": "5.4 SCID — imunodeficiência combinada grave"
+    },
+    {
+      "title": "5.5 Síndrome de DiGeorge / deleção 22q11.2"
+    },
+    {
+      "title": "5.6 Wiskott-Aldrich"
+    },
+    {
+      "title": "5.7 Doença granulomatosa crônica"
+    },
+    {
+      "title": "5.8 Deficiência terminal de complemento"
+    },
+    {
+      "title": "5.9 Defeitos da via IL-12/IFN-γ e suscetibilidade a micobactérias"
+    },
+    {
+      "title": "6. Imunodeficiência secundária — procurar antes de rotular genética"
+    },
+    {
+      "title": "7. Abordagem da APS, enfermaria e pronto-socorro"
+    },
+    {
+      "title": "Primeira consulta: o que registrar"
+    },
+    {
+      "title": "Primeiro painel — selecionar com pergunta clínica"
+    },
+    {
+      "title": "Segunda linha conforme suspeita"
+    },
+    {
+      "title": "8. Tratamento: qual intervenção atua em qual defeito?"
+    },
+    {
+      "title": "9. Vacinas — segurança depende do tipo de imunodeficiência"
+    },
+    {
+      "title": "10. Urgências imunológicas e segurança hospitalar"
+    },
+    {
+      "title": "Quando internar/encaminhar imediatamente"
+    },
+    {
+      "title": "Fluxo de suspeita de SCID"
+    },
+    {
+      "title": "11. Ferramentas de decisão: padrão de infecção → sistema a testar"
+    },
+    {
+      "title": "11A. Raciocínio imunológico da APS à referência: o padrão das infecções orienta o primeiro exame"
+    },
+    {
+      "title": "A criança que adoece muitas vezes versus a criança cuja defesa falha"
+    },
+    {
+      "title": "Fenótipo microbiológico: o germe é uma pista, não o diagnóstico"
+    },
+    {
+      "title": "O exame que responde a uma pergunta tem valor superior ao painel indiscriminado"
+    },
+    {
+      "title": "Interpretação operacional de um painel inicial"
+    },
+    {
+      "title": "11B. A imunidade começa a ser medida no período neonatal: TREC e SCID"
+    },
+    {
+      "title": "O que mede um TREC e por que o teste não substitui diagnóstico"
+    },
+    {
+      "title": "Lactente com suspeita forte de SCID: ordem das decisões"
+    },
+    {
+      "title": "T, B e NK: padrão fenotípico que orienta, mas não sentencia o gene"
+    },
+    {
+      "title": "Vacinação da família e ambiente domiciliar"
+    },
+    {
+      "title": "11C. Erros inatos sem infecção recorrente como manifestação dominante"
+    },
+    {
+      "title": "Autoimunidade e citopenias: não confundir defesa alterada com defesa simplesmente “fraca”"
+    },
+    {
+      "title": "Alergia grave, eczema e infecções: diferentes mecanismos sob aparência semelhante"
+    },
+    {
+      "title": "Inflamação estéril e febres recorrentes"
+    },
+    {
+      "title": "Predisposição seletiva: uma infecção excepcional pode bastar"
+    },
+    {
+      "title": "11D. Vacinas e hemocomponentes: segurança personalizada por mecanismo"
+    },
+    {
+      "title": "Uma matriz de decisão sem simplificações excessivas"
+    },
+    {
+      "title": "Hemoterapia, exposição a CMV e reações transfusionais"
+    },
+    {
+      "title": "11E. Terapêutica integral e seguimento centrado no defeito"
+    },
+    {
+      "title": "Reposição de imunoglobulina: por que funciona em alguns EII"
+    },
+    {
+      "title": "Transplante e terapias de precisão"
+    },
+    {
+      "title": "Plano longitudinal verificável"
+    },
+    {
+      "title": "Aconselhamento reprodutivo e familiar"
+    },
+    {
+      "title": "11F. Síntese de raciocínio por cenários e questões de integração"
+    },
+    {
+      "title": "Cenário 1 — infecções que parecem frequentes, mas não comprovam EII"
+    },
+    {
+      "title": "Cenário 2 — o hemograma aparentemente normal engana"
+    },
+    {
+      "title": "Cenário 3 — IgA isoladamente baixa aos dois anos"
+    },
+    {
+      "title": "Cenário 4 — meningococo recorrente, imunoglobulinas normais"
+    },
+    {
+      "title": "Cenário 5 — eczema, trombocitopenia e infecção"
+    },
+    {
+      "title": "Cenário 6 — doença oportunista com IgG normal"
+    },
+    {
+      "title": "Quadro de verificação de aprendizado"
+    },
+    {
+      "title": "Referências primárias conferidas para a ampliação — 15/10/2026"
+    },
+    {
+      "title": "12. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Muitas viroses na creche"
+    },
+    {
+      "title": "Caso 2 — Lactente com diarreia e candidíase refratária"
+    },
+    {
+      "title": "Caso 3 — Menino com pneumonias e amígdalas pequenas"
+    },
+    {
+      "title": "Caso 4 — Duas meningites por meningococo"
+    },
+    {
+      "title": "Caso 5 — Abscesso hepático e pneumonia fúngica"
+    },
+    {
+      "title": "13. Questões autorais estilo residência — comentários completos"
+    },
+    {
+      "title": "14. Pérolas clínicas e de prova"
+    },
+    {
+      "title": "15. Propostas de imagens para curadoria central"
+    },
+    {
+      "title": "16. Referências científicas"
+    },
+    {
+      "title": "17. Auditoria final desta etapa (sem certificação)"
+    }
+  ],
+  "reference_entries": [
+    "1. IUIS. **The 2024 update of IUIS phenotypic classification of human inborn errors of immunity.** *Journal of Human Immunity* 2025;1:e20250002. https://doi.org/10.70962/jhi.20250002",
+    "2. IUIS. **Human inborn errors of immunity: 2024 update on the classification.** *Journal of Human Immunity* 2025;1:e20250003. https://doi.org/10.70962/jhi.20250003",
+    "3. CDC. **Altered Immunocompetence — General Best Practice Guidelines for Immunization**, revisão publicada em 26/06/2024. https://www.cdc.gov/vaccines/hcp/imz-best-practices/altered-immunocompetence.html",
+    "4. Sociedade Brasileira de Pediatria. **Sistema Imunológico de Seus Filhos** (conteúdo de orientação sobre erros inatos da imunidade). https://www.sbp.com.br/pediatria-para-familias/cuidados-com-a-saude/sistema-imunologico-de-seus-filhos/",
+    "5. Ministério da Saúde. **PCDT Imunodeficiência Primária com Predominância de Defeitos de Anticorpos — Imunoglobulina Humana**, Portaria 495/2007, página institucional consultada em 15/10/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/i/imunodeficiencia-primaria-com-predominancia-de-defeitos-de-anticorpos-imunoglobulina-humana/view",
+    "6. AAAAI. **Inborn Errors of Immunity Practice Parameter** (2025, listado entre os parâmetros profissionais em 2026). https://www.aaaai.org/allergist-resources/statements-practice-parameters/practice-parameters-guidelines",
+    "**Registro ético/editorial:** o documento do Drive *Pneumonia Comunitária na Pediatria* foi lido para comparar a diferenciação clínica de infecção respiratória comum; o resumo *Infecção pelo HIV* foi lido como exemplo de imunodeficiência secundária e contém abordagens antigas que NÃO foram reproduzidas. Os materiais não cobrem integralmente EII e, portanto, a comparação específica completa continua pendente. O texto deste bloco foi redigido originalmente para a LURIA, sem imagens ou tabelas de terceiros. Não foram certificadas adequação de todas as doses, extensão didática útil, imagens, leitu",
+    "**Q1.** Criança de três anos na creche com seis IVAS leves no ano, crescimento normal e sem infecção profunda. Melhor conduta?",
+    "**Gabarito C.** A/E supõem síndrome grave sem sinais; B não tem indicação; D prejudica prevenção; C usa padrão e acompanhamento. **Mini-revisão:** resfriados frequentes isolados não equivalem a EII.",
+    "**Q2.** Lactente de três meses com candidíase refratária, infecção oportunista e diarreia com emagrecimento. Qual prioridade?",
+    "**Gabarito B.** A/C atrasam diagnóstico, D arrisca em deficiência celular grave, E é classificação imprópria; B integra urgência e segurança. **Mini-revisão:** SCID é emergência imunológica.",
+    "**Q3.** Adolescente com doença meningocócica invasiva recorrente e imunoglobulinas normais. Exame que melhor orienta a próxima etapa:",
+    "**Gabarito C.** A/B não testam complemento, D investiga CFTR, E não relaciona fenótipo; C avalia vias de complemento. **Mini-revisão:** C5–C9 protege contra Neisseria.",
+    "**Q4.** Criança com abscessos graves e Aspergillus invasivo, número de neutrófilos normal. Melhor teste funcional:",
+    "**Gabarito A.** DHR avalia explosão oxidativa e suspeita de DGC; os demais não investigam função neutrofílica. **Mini-revisão:** quantidade normal não é sinônimo de função normal.",
+    "**Q5.** Menino de oito meses com pneumonias por encapsulados, IgG/A/M muito baixas e B CD19 quase ausentes. Diagnóstico sugestivo:",
+    "**Gabarito A.** B não explica B ausente; C é ortopédico; D depende de CFTR/suor; E não explica imunoglobulinas profundamente baixas. **Mini-revisão:** BTK bloqueia maturação B.",
+    "**Q6.** Sobre vacinas em criança com suspeita forte de imunodeficiência celular grave:",
+    "**Gabarito C.** A/B podem causar dano; D prejudica proteção coletiva; E é falso; C respeita risco de replicação e urgência. **Mini-revisão:** regras dependem do mecanismo; deficiência isolada de IgA não equivale a SCID.",
+    "**Q7.** Lactente de sete meses tem IgG discretamente reduzida para intervalo adulto, crescimento adequado, sem infecções graves. Melhor interpretação:",
+    "**Gabarito C.** A/B ignoram idade e critérios; D/E são intervenções de alto risco sem indicação; C interpreta maturação imune e probabilidade pré-teste. **Mini-revisão:** IgG materna e produção própria variam nos primeiros meses.",
+    "**Q8.** Menino com eczema grave, infecções e plaquetas baixas e pequenas. Hipótese mais provável:",
+    "**Gabarito B.** A costuma predispor a meningococo; C/D/E não explicam microtrombocitopenia associada a eczema/infecções; B é quadro clássico. **Mini-revisão:** o tamanho da plaqueta pode ser pista diagnóstica.",
+    "- EII não é apenas “muitas infecções”: **autoimunidade, alergia grave, enteropatia e citopenias** também sinalizam.",
+    "- Contar IVAS sem pesar gravidade/organismos/recuperação produz sobrediagnóstico.",
+    "- Infecção oportunista precoce e falha ponderoestatural devem abrir investigação de **defeito T/SCID**.",
+    "- IgG, IgA, IgM e contagens linfocitárias exigem **intervalos por idade**.",
+    "- Meningococo recorrente indica investigação de complemento.",
+    "- Abscessos/fungos invasivos com neutrófilos normais exigem **DHR**.",
+    "- Anticorpo pós-vacina depende do histórico vacinal e de terapia com Ig."
+  ],
+  "external_urls": [
+    "https://doi.org/10.70962/jhi.20250002",
+    "https://doi.org/10.70962/jhi.20250003",
+    "https://www.cdc.gov/vaccines/hcp/imz-best-practices/altered-immunocompetence.html",
+    "https://www.sbp.com.br/pediatria-para-familias/cuidados-com-a-saude/sistema-imunologico-de-seus-filhos/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/i/imunodeficiencia-primaria-com-predominancia-de-defeitos-de-anticorpos-imunoglobulina-humana/view",
+    "https://www.aaaai.org/allergist-resources/statements-practice-parameters/practice-parameters-guidelines",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829316/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829761/",
+    "https://iuis.org/committees/iei/",
+    "https://www.sbp.com.br/10-sinais-de-alerta-para-imunodeficiencia-primaria/",
+    "https://cdc.gov/primary-immunodeficiency/about/index.html"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Urgência:** encaminhamento imediato a imunologia/transplante quando suspeita é forte, cuidado com exposição infecciosa, avaliação de profilaxia e reposição de Ig, **evitar vacinas vivas em suspeita de defeito T grave** (incluindo rotavírus; BCG pode ter sido dada ao nascer no Brasil e requer avaliação de complicações). Recomendar hemocomponentes irradiados/CMV seguros conforme protocolo se transfusão for necessária. Terapia definitiva pode ser transplante de células-tronco hematopoéticas ou tratamento específico (enzima/gene em subtipos), com prognóstico fortemente dependente de diagnóstico e manejo precoces."
+    },
+    {
+      "text": "**Imunoglobulinas IgG, IgA e IgM quantitativas:** interpretar por idade e estado inflamatório, prematuridade e perda proteica. **IgG baixa não equivale automaticamente a agamaglobulinemia**, especialmente no nadir fisiológico dos primeiros meses; critérios de diagnóstico dependem de persistência e achados complementares."
+    },
+    {
+      "text": "A maior ameaça pode ser **atrasar diagnóstico de SCID** até após rotavírus/BCG em bebê com sinais relevantes. A avaliação de vacinas não pode aguardar sequenciamento genético completo quando já há forte suspeita de imunodeficiência celular grave."
+    },
+    {
+      "text": "A citometria pode mostrar padrões resumidos como **T−B+NK−**, **T−B−NK+** ou outros. O significado é fisiopatológico: uma falha de sinalização que impede maturação T/NK pode preservar número de B, sem garantir resposta de anticorpos funcional; já defeitos de recombinação de receptores podem comprometer T e B. Os padrões são pistas para seleção de variantes e de terapias, não diagnóstico molecular automático."
+    },
+    {
+      "text": "Proteger contatos domiciliares com imunizações indicadas pode reduzir exposição do paciente a doenças preveníveis. A decisão sobre certas vacinas vivas em contatos segue recomendações específicas e é diferente da decisão sobre a criança imunodeficiente; não proibir indiscriminadamente vacinação familiar. Orientar o que fazer diante de contatos febris ou erupções, higiene e condutas específicas para vacinas com eliminação de vírus vacinal quando pertinentes. O plano deve ser comunicado pela equipe de referência, e não improvisado pela família."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

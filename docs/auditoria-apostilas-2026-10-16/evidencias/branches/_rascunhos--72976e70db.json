@@ -1,0 +1,383 @@
+{
+  "sha": "72976e70dbfc447930e0e2bcd2a4b23c4b4784cc",
+  "path": "apostilas/_rascunhos/lote-05-114-infeccao-puerperal.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--72976e70db",
+  "title": "LURIA — Apostila 114: Infecção puerperal, endometrite e sepse obstétrica",
+  "format": ".md",
+  "chars_estimated": 72034,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 114: Infecção puerperal, endometrite e sepse obstétrica"
+    },
+    {
+      "title": "0. Auditoria inicial: por que esta apostila precisa existir?"
+    },
+    {
+      "title": "1. O que é infecção puerperal? Definições e síndrome febril"
+    },
+    {
+      "title": "1.1. Três perguntas iniciais"
+    },
+    {
+      "title": "1.2. Diferenciar colonização, inflamação e infecção"
+    },
+    {
+      "title": "2. Epidemiologia e risco: o parto muda o perfil de exposição"
+    },
+    {
+      "title": "2.1. O fator tempo não exclui etiologia"
+    },
+    {
+      "title": "2.2. Prevenção não deve virar julgamento moral"
+    },
+    {
+      "title": "3. Microbiologia: a endometrite é frequentemente polimicrobiana"
+    },
+    {
+      "title": "3.1. Foco e cultura não são a mesma coisa"
+    },
+    {
+      "title": "3.2. Resistência e cobertura empírica"
+    },
+    {
+      "title": "4. Diagnóstico diferencial da febre puerperal: raciocínio de emergência"
+    },
+    {
+      "title": "5. Endometrite pós-parto: inflamação infecciosa uterina como síndrome clínica"
+    },
+    {
+      "title": "5.1. Por que é mais frequente após cesárea?"
+    },
+    {
+      "title": "5.2. Diagnóstico clínico e exclusão de foco concorrente"
+    },
+    {
+      "title": "5.3. O que muda tratamento imediato?"
+    },
+    {
+      "title": "6. Antibiótico da endometrite: referência OMS e diferenças de protocolos"
+    },
+    {
+      "title": "6.1. Por que não colocar dose pronta no botão de copiar da LURIA?"
+    },
+    {
+      "title": "6.2. O cuidado com enterococo e infecção hospitalar"
+    },
+    {
+      "title": "6.3. Momento de descalonamento"
+    },
+    {
+      "title": "7. Por que febre pode persistir apesar de clindamicina e gentamicina?"
+    },
+    {
+      "title": "7.1. Abscesso pélvico"
+    },
+    {
+      "title": "7.2. Restos ovulares e hematoma infectado"
+    },
+    {
+      "title": "7.3. Tromboflebite pélvica séptica"
+    },
+    {
+      "title": "8. Infecção de ferida operatória e perineal: superfície, profundidade e deiscência"
+    },
+    {
+      "title": "8.1. Quando há pus, antibiótico isolado pode ser insuficiente"
+    },
+    {
+      "title": "8.2. Fasciíte necrosante e infecção toxigênica"
+    },
+    {
+      "title": "8.3. Deiscência sem infecção"
+    },
+    {
+      "title": "9. Mastite puerperal: pensar em espectro inflamatório"
+    },
+    {
+      "title": "9.1. O paradoxo do “esvaziar tudo”"
+    },
+    {
+      "title": "9.2. Quando antibiótico é necessário?"
+    },
+    {
+      "title": "9.3. Abscesso mamário é problema de drenagem"
+    },
+    {
+      "title": "9.4. Quando suspeitar de algo além de mastite?"
+    },
+    {
+      "title": "10. Infecções urinárias e não genitais no pós-parto"
+    },
+    {
+      "title": "10.1. Febre com dispneia"
+    },
+    {
+      "title": "11. Sepse materna: definir, reconhecer e não depender de febre"
+    },
+    {
+      "title": "11.1. qSOFA, SIRS e escalas obstétricas"
+    },
+    {
+      "title": "11.2. Culturas e lactato"
+    },
+    {
+      "title": "11.3. Antimicrobianos precoces em alto risco"
+    },
+    {
+      "title": "11.4. Reanimação com líquidos e monitorização"
+    },
+    {
+      "title": "11.5. Vasopressor e UTI"
+    },
+    {
+      "title": "11.6. Controle de foco: a segunda emergência"
+    },
+    {
+      "title": "12. Complicações graves e raras: o que não pode ficar fora do diagnóstico diferencial"
+    },
+    {
+      "title": "12.1. Choque tóxico estreptocócico"
+    },
+    {
+      "title": "12.2. Fasciíte necrosante"
+    },
+    {
+      "title": "12.3. Abscesso e peritonite pélvica"
+    },
+    {
+      "title": "12.4. Trombose de veia ovariana"
+    },
+    {
+      "title": "12.5. Disfunção renal e multiorgânica"
+    },
+    {
+      "title": "13. Distinguindo infecção intra-amniótica do trabalho de parto e endometrite após parto"
+    },
+    {
+      "title": "13.1. Quando a febre intraparto continua após a dequitação"
+    },
+    {
+      "title": "13.2. Bolsa rota e múltiplos toques: risco, não condenação inevitável"
+    },
+    {
+      "title": "14. Antibióticos e lactação: farmacologia materna e segurança do bebê"
+    },
+    {
+      "title": "14.1. Amamentação em mastite e abscesso"
+    },
+    {
+      "title": "14.2. Gentamicina em função renal instável"
+    },
+    {
+      "title": "14.3. Resistência antimicrobiana: não confundir profilaxia com tratamento"
+    },
+    {
+      "title": "15. Prevenção de infecção após cesariana: o que realmente tem evidência"
+    },
+    {
+      "title": "15.1. Antissepsia e barreiras locais"
+    },
+    {
+      "title": "15.2. Ferida pós-cesárea: orientações após alta"
+    },
+    {
+      "title": "16. Prevenção após parto vaginal, lacerações e instrumentação"
+    },
+    {
+      "title": "16.1. Cuidado urinário e cateter"
+    },
+    {
+      "title": "17. Quando internar, observar ou encaminhar para UTI?"
+    },
+    {
+      "title": "17.1. Critérios de alta da endometrite hospitalizada"
+    },
+    {
+      "title": "17.2. Retorno planejado faz parte do antibiótico"
+    },
+    {
+      "title": "18. Seguimento de sepse materna e redução de danos após alta"
+    },
+    {
+      "title": "18.1. Comunicação com a família"
+    },
+    {
+      "title": "18.2. Revisão do cuidado institucional"
+    },
+    {
+      "title": "19. Antibioticoterapia de endometrite: comparador de guias, não cardápio indiscriminado"
+    },
+    {
+      "title": "19.1. Protocolo prático de reavaliação de tratamento"
+    },
+    {
+      "title": "20. Algoritmos originais de decisão no pronto atendimento"
+    },
+    {
+      "title": "Fluxo A — febre na mulher até semanas após o parto"
+    },
+    {
+      "title": "Fluxo B — febre + útero doloroso após cesariana"
+    },
+    {
+      "title": "Fluxo C — eritema de ferida que progride"
+    },
+    {
+      "title": "Fluxo D — mama quente e dolorosa na lactação"
+    },
+    {
+      "title": "Fluxo E — choque séptico sem febre"
+    },
+    {
+      "title": "21. Erros de plantão que o estudante precisa reconhecer"
+    },
+    {
+      "title": "22. Oito casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Dor uterina e febre 48 horas após cesárea"
+    },
+    {
+      "title": "Caso 2 — Hipotensão sem febre na puérpera"
+    },
+    {
+      "title": "Caso 3 — Febre persistente apesar de terapia correta"
+    },
+    {
+      "title": "Caso 4 — Infecção necrosante na incisão"
+    },
+    {
+      "title": "Caso 5 — Mastite inflamatória versus antibiótico desnecessário"
+    },
+    {
+      "title": "Caso 6 — Abscesso mamário após terapia que não resolveu"
+    },
+    {
+      "title": "Caso 7 — Puerpério, disúria e dor lombar não são endometrite automática"
+    },
+    {
+      "title": "Caso 8 — Febre e dor pélvica depois de hemorragia tardia"
+    },
+    {
+      "title": "23. Dez questões de prova autorais, cinco alternativas e comentários completos"
+    },
+    {
+      "title": "Questão 1 — Diagnóstico da endometrite"
+    },
+    {
+      "title": "Questão 2 — Recomendações OMS de tratamento"
+    },
+    {
+      "title": "Questão 3 — Sepse sem febre"
+    },
+    {
+      "title": "Questão 4 — Persistência de febre"
+    },
+    {
+      "title": "Questão 5 — Ferida necrosante"
+    },
+    {
+      "title": "Questão 6 — Mastite inflamatória"
+    },
+    {
+      "title": "Questão 7 — Abscesso mamário"
+    },
+    {
+      "title": "Questão 8 — Profilaxia de cesariana"
+    },
+    {
+      "title": "Questão 9 — Tromboflebite pélvica séptica"
+    },
+    {
+      "title": "Questão 10 — Prioridade na sepse materna"
+    },
+    {
+      "title": "24. Camada visual: dez candidatos autorais ou de exames verdadeiros"
+    },
+    {
+      "title": "25. Referências verificáveis e aplicação"
+    },
+    {
+      "title": "26. Auditoria preliminar e pendências formalizadas para o Codex"
+    }
+  ],
+  "reference_entries": [
+    "1. **World Health Organization.** *WHO recommendations for prevention and treatment of maternal peripartum infections.* Geneva; 2015. https://www.who.int/publications/i/item/9789241549363. **Endometrite: clindamicina + gentamicina, recomendação condicional de certeza muito baixa.**",
+    "2. **WHO.** *WHO recommendations on maternal health guidelines approved by Guidelines Review Committee*, 2nd ed. 2025, parte de infecções periparto que republica recomendação 20 de 2015. https://www.ncbi.nlm.nih.gov/books/NBK615643/table/part2.tab65/. **Não rotular como atualização clínica integral de 2025.**",
+    "3. **WHO.** *Recommendation on prophylactic antibiotics for women undergoing caesarean section*. 2021. https://www.ncbi.nlm.nih.gov/books/NBK571489/. **Profilaxia 30–60 minutos antes da incisão e considerações de dose/redose.**",
+    "4. **Society for Maternal-Fetal Medicine.** *Consult Series #67: Maternal sepsis*. 2023, reaffirmed 2025, endorsed by ACOG. https://publications.smfm.org/publications/507-society-for-maternal-fetal-medicine-consult-series-67/. **Sepse sem febre, antibiótico idealmente 1h em choque/alta probabilidade, líquido balanceado/reavaliação, controle urgente de foco.**",
+    "5. **Mitchell KB et al.** *Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum, Revised 2022*. Breastfeeding Medicine. 2022;17:360–376. https://pubmed.ncbi.nlm.nih.gov/35576513/. **Mastite inflamatória, bacteriana, abscesso e lactação.**",
+    "6. **NICE.** *Caesarean birth*, NG192. https://www.nice.org.uk/guidance/NG192/chapter/recommendations. **Cuidados pós-operatórios, ferida e prevenção.**",
+    "7. **MSD Manual Professional.** *Postpartum Endometritis*, rev. 2024. https://www.msdmanuals.com/professional/gynecology-and-obstetrics/postpartum-care-and-associated-disorders/postpartum-endometritis. **Diagnóstico clínico e febre refratária 48–72h.**",
+    "8. **WHO.** *Recommendation on routine antibiotic prophylaxis for women undergoing operative vaginal birth*. 2021. https://www.who.int/publications/i/item/9789240027992. **Diferenciação de prevenção em parto operatório versus parto espontâneo.**",
+    "9. **WHO.** *Recommendations on choice of antiseptic agent and method of application for preoperative skin preparation for caesarean section*. 2021. https://www.who.int/publications/i/item/9789240028036. **Técnica preventiva, não tratamento de foco já infectado.**",
+    "10. **LURIA, apostila 109 — Puerpério normal e patológico**, arquivo editorial preservado. **Só triagem e fisiologia, não detalha antimicrobianos.**",
+    "11. **LURIA, apostila 104 — Hemorragia pós-parto**, arquivo editorial preservado. **Avaliação de HPP secundária e controle hemostático em restos infectados.**",
+    "12. **Benchmark bibliográfico do usuário:** busca em Drive por endometrite, infecção puerperal e sepse não encontrou arquivo integral dedicado; os resultados relativos a HPP não foram reproduzidos.",
+    "**Produção estrutural:** etiologia e risco, microbiologia, sepse puerperal, endometrite e esquemas conforme força da evidência, foco urinário/respiratório, ferida/deiscência/necrosante, mastite e abscesso, infecção intra-amniótica versus pós-parto, prevenção em cesárea/parto operatório, controle de foco, choque/reanimação e lactação. Inclui algoritmos, dez visualizações candidatas, oito casos e dez questões de cinco alternativas com gabarito e comentário de cada opção.",
+    "**Auditoria científica independente necessária:**",
+    "- Validar critérios febris específicos brasileiros sem usar a definição histórica como bloqueio de cuidado; comparar protocolos obstétricos do SUS/FEBRASGO e hospitais universitários.",
+    "- Revisar antibioticoterapia de endometrite conforme **CCIH e resistência local**, doses máximas, ajuste de peso/função renal, toxicidade de gentamicina, alergia e lactação; verificar se o bulário LURIA tem todos os fármacos e se não libera prescrição sem revisão.",
+    "- Revisar protocolos de **sepse e choque** (lactato, tempo de terapia, fluidos, vasopressores, controle de foco, suporte e tromboprofilaxia) com obstetrícia, infectologia, intensivista e farmacêutico.",
+    "- Conferir diferenciais de infecção profunda e imagem (US/Doppler/TC/MRI), não atrasar cirurgia quando há suspeita de necrosante, e cuidado para não instrumentar malformação vascular uterina com hemorragia.",
+    "- Auditar segurança da lactação por produto e exposição neonatal; verificar disponibilidade brasileira e contraindicações, incluindo prematuridade.",
+    "- Imagens reais não foram importadas: checar licença, consentimento, qualidade, WebP, legendas e acessibilidade. Revisar clareza, redundâncias, casos e questões e converter ao renderer da LURIA.",
+    "- Linkar tecnicamente às apostilas 104 e 109 sem duplicação, revisar coerência com base do modo Trabalho/protocolos e testar desktop/PWA.",
+    "**Controle de versão:** todo o material segue em branch editorial, sem merge ou publicação. A auditoria geral por Codex foi exigida pelo usuário e formalizada em apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md; só executá-la **após concluir os manuscritos de TODOS os lotes**, com matriz de cobertura, ciência, licenças, PWA e correção fundamentada por PR.",
+    "**STATUS: MANUSCRITO TÉCNICO DE PRIMEIRA PASSAGEM, NÃO CERTIFICADO PARA PRESCRIÇÃO, NÃO PUBLICADO.**"
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789241549363",
+    "https://www.ncbi.nlm.nih.gov/books/NBK615643/table/part2.tab65/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK571489/",
+    "https://publications.smfm.org/publications/507-society-for-maternal-fetal-medicine-consult-series-67/",
+    "https://pubmed.ncbi.nlm.nih.gov/35576513/",
+    "https://www.nice.org.uk/guidance/NG192/chapter/recommendations",
+    "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/postpartum-care-and-associated-disorders/postpartum-endometritis",
+    "https://www.who.int/publications/i/item/9789241549363.",
+    "https://www.ncbi.nlm.nih.gov/books/NBK615643/table/part2.tab65/.",
+    "https://www.ncbi.nlm.nih.gov/books/NBK571489/.",
+    "https://publications.smfm.org/publications/507-society-for-maternal-fetal-medicine-consult-series-67/.",
+    "https://pubmed.ncbi.nlm.nih.gov/35576513/.",
+    "https://www.nice.org.uk/guidance/NG192/chapter/recommendations.",
+    "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/postpartum-care-and-associated-disorders/postpartum-endometritis.",
+    "https://www.who.int/publications/i/item/9789240027992.",
+    "https://www.who.int/publications/i/item/9789240028036."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A **109 — Puerpério Normal e Patológico** ensina fisiologia e triagem de febre, dor, mamas e feridas; a **104 — Hemorragia Pós-Parto** aprofunda sangramento precoce/tardio, ressuscitação e medidas hemostáticas. Esta **114** é uma aula dedicada ao **diagnóstico, investigação, tratamento, prevenção e controle de foco de infecções no pós-parto**, abrangendo endometrite/endomiometrite, complicações de ferida, mastite/abscesso mamário e sepse materna. Referenciar, mas não copiar, as seções das outras duas apostilas."
+    },
+    {
+      "text": "**Referências auditadas:** - **OMS 2015**, *Recommendations for Prevention and Treatment of Maternal Peripartum Infections*, https://www.who.int/publications/i/item/9789241549363 ; a compilação OMS 2025 preserva recomendação **condicional de certeza muito baixa** de clindamicina com gentamicina no tratamento de endometrite pós-parto. https://www.ncbi.nlm.nih.gov/books/NBK615643/table/part2.tab65/ . **Compilação 2025 NÃO significa revisão integral nova de endometrite.** - **OMS 2021**, atualização de profilaxia de cesariana, https://www.ncbi.nlm.nih.gov/books/NBK571489/ ; recomenda administração **30–60 minutos antes da incisão**, tipicamente "
+    },
+    {
+      "text": "Infecção puerperal compreende processos infecciosos que se desenvolvem em relação ao parto/puerpério, especialmente do trato genital e tecidos lesionados durante o parto ou cesárea, mas na prática a mulher também pode apresentar mastite, ITU, pneumonia, infecção de cateter ou outras causas. **Não reduzir a investigação à cavidade uterina.** O pós-parto é período de remodelamento tecidual, exposição prévia a procedimentos e reorganização imunológica/volêmica, em que febre tem diagnósticos diferentes conforme o dia, o tipo de parto e as intervenções."
+    },
+    {
+      "text": "Lóquios têm flora e não são estéreis por definição; **cultura positiva de secreção vaginal não é diagnóstico automático de endometrite**. Eritema leve e dor inicial de incisão podem ser reação inflamatória normal; eritema em expansão, pus e febre apoiam infecção. Ingurgitamento mamário nos primeiros dias pode causar dor e calor, mas **mastite bacteriana não deve ser rotulada pela sensação de “mama cheia” sem avaliação**. O inverso também importa: sinais sistêmicos com pouco eritema podem refletir infecção profunda grave."
+    },
+    {
+      "text": "Após parto, flora vaginal, cervical e entérica pode ascender ou contaminar tecidos lesionados. **Endometrite pós-parto** costuma ser **polimicrobiana**, incluindo anaeróbios, estreptococos, enterococos em certos casos e bacilos gram-negativos entéricos como *E. coli*. A distribuição muda por uso prévio de antibiótico e ambiente hospitalar. **Uma cultura cervical superficial pode representar colonização**, razão pela qual o diagnóstico de endometrite é predominantemente clínico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,151 @@
+{
+  "sha": "0a9c5b824376e461eb178093a61b9021209823f7",
+  "path": "apostilas/_rascunhos/lote-08-aula-173-urgencias-pediatricas-suporte-vida.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--0a9c5b8243",
+  "title": "LURIA — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida",
+  "format": ".md",
+  "chars_estimated": 28565,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 173 | Urgências pediátricas e suporte básico/avançado de vida"
+    },
+    {
+      "title": "0. Inventário, comparação obrigatória e atualização"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Anatomia e fisiologia: por que a criança descompensa diferente?"
+    },
+    {
+      "title": "2. Primeira impressão e triângulo de avaliação pediátrica"
+    },
+    {
+      "title": "ABCDE de emergência"
+    },
+    {
+      "title": "3. Desconforto respiratório, insuficiência e falência ventilatória"
+    },
+    {
+      "title": "4. Choque pediátrico: reconhecer antes da hipotensão"
+    },
+    {
+      "title": "Na criança bradicárdica"
+    },
+    {
+      "title": "5. Parada cardiorrespiratória pediátrica — reconhecer e agir"
+    },
+    {
+      "title": "Ritmos chocáveis e não chocáveis"
+    },
+    {
+      "title": "Causas reversíveis"
+    },
+    {
+      "title": "6. Bradicardia e taquicardia com pulso — não confundir choque sincronizado com desfibrilação"
+    },
+    {
+      "title": "7. Anafilaxia: tratar síndrome, não esperar exantema"
+    },
+    {
+      "title": "8. Emergências respiratórias não cardíacas"
+    },
+    {
+      "title": "9. Convulsão, hipoglicemia e alteração de consciência"
+    },
+    {
+      "title": "10. PARDS e suporte ventilatório avançado"
+    },
+    {
+      "title": "11. Após retorno da circulação espontânea (ROSC)"
+    },
+    {
+      "title": "12. Comunicação com família e segurança"
+    },
+    {
+      "title": "13. Algoritmos LURIA resumidos"
+    },
+    {
+      "title": "14. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Bronquiolite com apneia"
+    },
+    {
+      "title": "Caso 2 — Choque sem hipotensão"
+    },
+    {
+      "title": "Caso 3 — Bradicardia hipóxica"
+    },
+    {
+      "title": "Caso 4 — TV sem pulso em criança"
+    },
+    {
+      "title": "Caso 5 — TSV com instabilidade"
+    },
+    {
+      "title": "Caso 6 — Rebaixamento após retorno da circulação"
+    },
+    {
+      "title": "15. Questões comentadas — ENAMED/residência"
+    },
+    {
+      "title": "16. Curadoria visual para o Admin (não autorizada nem embutida)"
+    },
+    {
+      "title": "17. Referências primárias e interfaces"
+    },
+    {
+      "title": "18. Matriz de auditoria e pendências para homologação"
+    }
+  ],
+  "reference_entries": [
+    "1. Joyner BL et al. **2025 AHA/AAP Pediatric Basic Life Support Guidelines**, Circulation 2025, DOI 10.1161/CIR.0000000000001370. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+    "2. Lasa JJ et al. **2025 AHA/AAP Pediatric Advanced Life Support Guidelines**, Circulation 2025, DOI 10.1161/CIR.0000000000001368. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "3. American Heart Association. **2025 Pediatric Cardiac Arrest Algorithm**, CPR & First Aid. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "4. Pediatric Acute Lung Injury Consensus Conference Group. **PALICC-2 Guidelines**, 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC9848214/",
+    "5. Sociedade Brasileira de Pediatria. **Documentos Científicos de Emergência e Terapia Intensiva** — verificar recomendações nacionais por doença. https://www.sbp.com.br/especiais/pediatria-para-familias/noticias/",
+    "6. Ministério da Saúde. **Linhas de cuidado da criança e urgência** — conferir portas de entrada, classificação de risco e transporte. https://linhasdecuidado.saude.gov.br/",
+    "**Hierarquia:** em contradição de algoritmo de RCP, a diretriz AHA/AAP 2025 e a norma nacional adotada institucionalmente precisam ser confrontadas; material do Drive é benchmark pedagógico parcial, não autoridade clínica para ressuscitação. Fluxos de bronquiolite, anafilaxia e choque séptico não substituem protocolos específicos.",
+    "**Status final desta entrega:** rascunho médico com conteúdo original, não certificado; não aplicar automaticamente doses sem revisão independente nem publicar."
+  ],
+  "external_urls": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9848214/",
+    "https://www.sbp.com.br/especiais/pediatria-para-familias/noticias/",
+    "https://linhasdecuidado.saude.gov.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Não chocáveis:** assistolia e atividade elétrica sem pulso (AESP). Não desfibrilar; continuar RCP, administrar adrenalina conforme algoritmo e identificar causas reversíveis. **Adrenalina IV/IO na PCR pediátrica: 0,01 mg/kg** da concentração **0,1 mg/mL** (máx. 1 mg), repetível a cada **3–5 min**, com conferência rigorosa por dupla checagem para evitar erro de concentração. Em ritmo não chocável, ofertar assim que possível; em FV/TVSP, desfibrilar rapidamente e administrar conforme sequência. A intervenção é própria de equipe treinada, com acesso e monitorização."
+    },
+    {
+      "text": "**FV/TVSP refratárias:** amiodarona ou lidocaína podem ser consideradas conforme PALS 2025 após choques e RCP adequados. Rotina de bicarbonato ou cálcio **não é recomendada** na PCR sem indicações específicas, como hipercalemia ou intoxicação por bloqueadores de canal de sódio."
+    },
+    {
+      "text": "**Q1.** Em criança, hipotensão no choque costuma ser: A) requisito diagnóstico inicial; B) achado tardio de descompensação; C) prova de anafilaxia; D) normal em todas. **B.** A atrasa reconhecimento; C superespecifica; D é falso. **Revisão:** avaliar perfusão, aparência e FC."
+    },
+    {
+      "text": "1. Joyner BL et al. **2025 AHA/AAP Pediatric Basic Life Support Guidelines**, Circulation 2025, DOI 10.1161/CIR.0000000000001370. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support 2. Lasa JJ et al. **2025 AHA/AAP Pediatric Advanced Life Support Guidelines**, Circulation 2025, DOI 10.1161/CIR.0000000000001368. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support 3. American Heart Association. **2025 Pediatric Cardiac Arrest Algorithm**, CPR & First Aid. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms 4. Pediatric A"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

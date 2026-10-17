@@ -1,0 +1,338 @@
+{
+  "sha": "2ad7c50ded096890ee134dc1e87008c1e01919bb",
+  "path": "apostilas/_rascunhos/lote-09-aula-187-antibioticoterapia-uso-racional.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2ad7c50ded",
+  "title": "LURIA — Apostila 187 | Antibioticoterapia e uso racional de antimicrobianos",
+  "format": ".md",
+  "chars_estimated": 76995,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 187 | Antibioticoterapia e uso racional de antimicrobianos"
+    },
+    {
+      "title": "1. A pergunta certa vem antes do nome do antibiótico"
+    },
+    {
+      "title": "1.1 Antimicrobiano, antibacteriano e antibiótico"
+    },
+    {
+      "title": "1.2 Risco individual e coletivo: por que reduzir exposição desnecessária"
+    },
+    {
+      "title": "2. Microbiologia aplicada — bactéria isolada não significa infecção"
+    },
+    {
+      "title": "2.1 Gram positivo, Gram negativo e barreiras"
+    },
+    {
+      "title": "2.2 Resistência intrínseca e adquirida"
+    },
+    {
+      "title": "3. Antibiótico não funciona apenas por “alcançar bactéria”: PK e PD"
+    },
+    {
+      "title": "3.1 Concentração inibitória mínima (MIC/CIM)"
+    },
+    {
+      "title": "3.2 Três alvos PK/PD essenciais"
+    },
+    {
+      "title": "3.3 Distribuição e foco"
+    },
+    {
+      "title": "3.4 Função renal e depuração dinâmica"
+    },
+    {
+      "title": "4. Classes fundamentais: mecanismo, espectro e armadilhas"
+    },
+    {
+      "title": "4.1 Beta-lactâmicos"
+    },
+    {
+      "title": "4.2 Glicopeptídeos e lipoglicopeptídeos"
+    },
+    {
+      "title": "4.3 Lipopeptídeos"
+    },
+    {
+      "title": "4.4 Macrolídeos e tetraciclinas"
+    },
+    {
+      "title": "4.5 Aminoglicosídeos"
+    },
+    {
+      "title": "4.6 Fluoroquinolonas"
+    },
+    {
+      "title": "4.7 Sulfametoxazol-trimetoprima (TMP-SMX)"
+    },
+    {
+      "title": "4.8 Nitroimidazóis e anaeróbios"
+    },
+    {
+      "title": "4.9 Oxazolidinonas"
+    },
+    {
+      "title": "4.10 Antimicrobianos dirigidos a resistência complexa"
+    },
+    {
+      "title": "5. Resistência: ESBL, AmpC, CRE, MRSA, VRE e não fermentadores"
+    },
+    {
+      "title": "5.1 ESBL: o que significa"
+    },
+    {
+      "title": "5.2 AmpC induzível"
+    },
+    {
+      "title": "5.3 CRE e carbapenemases"
+    },
+    {
+      "title": "5.4 Pseudomonas"
+    },
+    {
+      "title": "5.5 Acinetobacter e Stenotrophomonas"
+    },
+    {
+      "title": "5.6 MRSA e MSSA"
+    },
+    {
+      "title": "5.7 VRE"
+    },
+    {
+      "title": "6. A decisão empírica correta não é sempre “o maior espectro disponível”"
+    },
+    {
+      "title": "6.1 O ciclo D0 → D2–3 → fim do curso"
+    },
+    {
+      "title": "7. Stewardship hospitalar e APS: estruturas que evitam erro individual"
+    },
+    {
+      "title": "7.1 Autorização prévia e auditoria pós-prescrição"
+    },
+    {
+      "title": "7.2 Antimicrobiano para comunidade e para hospital não seguem o mesmo caminho"
+    },
+    {
+      "title": "7.3 Indicadores e suas limitações"
+    },
+    {
+      "title": "7.4 Classificação AWaRe da OMS 2025"
+    },
+    {
+      "title": "8. Antibiograma local e perfil epidemiológico"
+    },
+    {
+      "title": "9. Alergia a antibiótico: diferenciar etiqueta de risco real"
+    },
+    {
+      "title": "10. Cultura e teste microbiológico: quando coletar e o que significam"
+    },
+    {
+      "title": "11. Controle de foco: o antimicrobiano não substitui o procedimento"
+    },
+    {
+      "title": "12. Bacteremia e infecção relacionada a cateter: raciocínio, não receita universal"
+    },
+    {
+      "title": "13. *Clostridioides difficile*: evento adverso que pode ser causado pela própria terapia"
+    },
+    {
+      "title": "14. Prescrever por síndrome: cobertura adequada sem “tratar todo resultado”"
+    },
+    {
+      "title": "14.1 Infecção urinária: cistite, pielonefrite e bacteriúria assintomática não são a mesma doença"
+    },
+    {
+      "title": "14.2 Pneumonia comunitária: patógeno provável e gravidade"
+    },
+    {
+      "title": "14.3 Infecções de pele e partes moles: purulência muda a estratégia"
+    },
+    {
+      "title": "14.4 Faringite e sinusite: não transformar virose em tratamento bacteriano"
+    },
+    {
+      "title": "14.5 Infecção intra-abdominal: antibiótico versus fonte operável"
+    },
+    {
+      "title": "14.6 Meningite bacteriana: urgência terapêutica"
+    },
+    {
+      "title": "14.7 Febre em neutropenia"
+    },
+    {
+      "title": "14.8 Bacteremia e endocardite"
+    },
+    {
+      "title": "15. Duração de tratamento: evitar automatismos de sete, dez ou quatorze dias"
+    },
+    {
+      "title": "15.1 Contar corretamente dias de tratamento"
+    },
+    {
+      "title": "15.2 Biomarcadores não devem ditar tempo isoladamente"
+    },
+    {
+      "title": "16. Transição intravenosa para oral (IV→VO)"
+    },
+    {
+      "title": "16.1 Como evitar erro na alta"
+    },
+    {
+      "title": "17. Populações especiais: como a mesma bactéria exige decisões diferentes"
+    },
+    {
+      "title": "17.1 Doença renal crônica ou lesão renal aguda"
+    },
+    {
+      "title": "17.2 Obesidade e baixo peso"
+    },
+    {
+      "title": "17.3 Gestação e lactação"
+    },
+    {
+      "title": "17.4 Pediatria"
+    },
+    {
+      "title": "17.5 Idosos e fragilidade"
+    },
+    {
+      "title": "17.6 Imunossuprimidos e transplantados"
+    },
+    {
+      "title": "18. Segurança na prescrição: doses, interação, toxicidade e vigilância"
+    },
+    {
+      "title": "18.1 Reações adversas previsíveis"
+    },
+    {
+      "title": "18.2 Interações com antiarrítmicos, anticoagulantes e eletrólitos"
+    },
+    {
+      "title": "18.3 Linhas de infusão, estabilidade e velocidade"
+    },
+    {
+      "title": "18.4 Prescrição de segurança como checklist"
+    },
+    {
+      "title": "19. Casos clínicos autorais comentados"
+    },
+    {
+      "title": "Caso 1 — A urocultura que não precisava de antibiótico"
+    },
+    {
+      "title": "Caso 2 — Bacteremia por ESBL-E e antibiótico aparentemente “sensível”"
+    },
+    {
+      "title": "Caso 3 — *S. aureus* após acesso vascular"
+    },
+    {
+      "title": "Caso 4 — Antibiótico não drena um sistema urinário obstruído"
+    },
+    {
+      "title": "Caso 5 — Diarreia após clindamicina, com risco de prescrição antiga"
+    },
+    {
+      "title": "Caso 6 — Cultura respiratória positiva sem pneumonia nova"
+    },
+    {
+      "title": "20. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — Evidência de infecção versus cultura"
+    },
+    {
+      "title": "Questão 2 — PK/PD"
+    },
+    {
+      "title": "Questão 3 — Foco pulmonar"
+    },
+    {
+      "title": "Questão 4 — Resistência ESBL"
+    },
+    {
+      "title": "Questão 5 — Controle de foco"
+    },
+    {
+      "title": "Questão 6 — CDI após antibiótico"
+    },
+    {
+      "title": "Questão 7 — Revisão de terapia"
+    },
+    {
+      "title": "Questão 8 — AWaRe da OMS"
+    },
+    {
+      "title": "21. Algoritmo de decisão original LURIA"
+    },
+    {
+      "title": "22. Quadro de “pegadinhas” clínicas de alto rendimento"
+    },
+    {
+      "title": "23. Fontes e hierarquia para a revisão final"
+    },
+    {
+      "title": "24. Necessidades de imagens para curadoria (não aprovadas)"
+    },
+    {
+      "title": "25. Matriz de cobertura, autossuficiência e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. **BRASIL. ANVISA.** *Diretriz Nacional para Elaboração de Programa de Gerenciamento de Antimicrobianos em Serviços de Saúde*. Revisão 2023. https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/DiretrizGerenciamentoAntimicrobianosANVISA2023FINAL.pdf",
+    "2. **WORLD HEALTH ORGANIZATION (WHO).** *The WHO AWaRe (Access, Watch, Reserve) antibiotic book*. 2022. https://www.who.int/publications/i/item/9789240062382",
+    "3. **WORLD HEALTH ORGANIZATION.** *WHO AWaRe classification of antibiotics for evaluation and monitoring of use, 2025*. https://www.who.int/publications/i/item/B09489",
+    "4. **CENTERS FOR DISEASE CONTROL AND PREVENTION.** *Core Elements of Hospital Antibiotic Stewardship Programs*. https://www.cdc.gov/antibiotic-use/core-elements/index.html",
+    "5. **TAMMA, P. D. et al.** *IDSA 2024 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections*. *Clinical Infectious Diseases*, 2024. DOI https://doi.org/10.1093/cid/ciae403",
+    "6. **JOHNSON, S. et al.** *Clinical Practice Guideline by the IDSA and SHEA: 2021 Focused Update on Management of Clostridioides difficile Infection in Adults*. *Clinical Infectious Diseases*. https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/",
+    "7. **INFECTIOUS DISEASES SOCIETY OF AMERICA.** *Clinical Practice Guideline for Management of Asymptomatic Bacteriuria*. 2019. https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/",
+    "8. **INFECTIOUS DISEASES SOCIETY OF AMERICA.** *Practice Guidelines, professional guidance and updates*, para revisar PAC, meningite, SSTI, neutropenia e demais síndromes antes da certificação. https://www.idsociety.org/practice-guideline/practice-guidelines/",
+    "**Nota de revisão:** documentos de diferentes anos e países não são equivalentes, e sua aplicação deve considerar epidemiologia brasileira, disponibilidade SUS/privado, BrCAST, população e gravidade. A matriz clínica original é didática, não substitui protocolo local. Uma recomendação de 2024 poderá exigir atualização por protocolo mais recente antes de publicação definitiva.",
+    "**Conclusão editorial:** trata-se de um caderno autoral aprofundado que ensina por mecanismo, síndrome, microbiologia e segurança. A produção está em **rascunho**: sem revisão de doses todas as classes, sem comparação integral de curso farmacológico no Drive, sem imagem aprovada, sem prova de autossuficiência por avaliador independente e sem versão HTML. **Não fazer merge/deploy/publicação até o gate editorial completo.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/DiretrizGerenciamentoAntimicrobianosANVISA2023FINAL.pdf",
+    "https://www.who.int/publications/i/item/9789240062382",
+    "https://www.who.int/publications/i/item/B09489",
+    "https://www.cdc.gov/antibiotic-use/core-elements/index.html",
+    "https://doi.org/10.1093/cid/ciae403",
+    "https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/",
+    "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/",
+    "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **STATUS: RASCUNHO AUTORAL EM PRODUÇÃO · LOTE 09 · 15/10/2026 — NÃO CERTIFICADO/NÃO PUBLICADO.** Material para ENAMED, internato e residência. Não constitui autorização para prescrever; escolha real depende de diagnóstico, gravidade, histórico de alergia, função renal/hepática, antibiograma e epidemiologia local. > > **Etapa zero de benchmarking REALIZADA e com limitação explicitada:** buscados no Drive “antibioticoterapia”, “antimicrobianos”, “antibióticos”, “resistência bacteriana” e “infecção bacteriana”; efetivamente abertos e lidos os arquivos \\`07 - INFECCAO DE CORRENTE SANGUINEA.pdf\\`, \\`01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf"
+    },
+    {
+      "text": "**MRSA** possui proteínas ligadoras de penicilina alteradas por mecanismos que reduzem atividade de beta-lactâmicos usuais, exigindo escolha de agente ativo conforme síndrome. Vancomicina, linezolida (em determinados focos) e daptomicina (não pulmonar) têm aplicações distintas. **MSSA** em bacteremia costuma responder melhor a beta-lactâmico antiestafilocócico adequado, como oxacilina/cefazolina, do que à manutenção de vancomicina quando não há contraindicação. Uma hemocultura positiva para *S. aureus* requer investigação de foco e possível endocardite, não apenas troca mecânica de nome no prontuário."
+    },
+    {
+      "text": "**Após 48–72 horas:** reavaliar febre, pressão, oxigenação, função orgânica, cultura, antibiograma, exames de imagem e diagnóstico alternativo. Perguntar se antibiótico ainda é necessário; se for, estreitar, mudar via ou dose quando apropriado. **Descalonamento não significa tratamento inferior**; significa que informações novas permitem preservar eficácia com menor exposição."
+    },
+    {
+      "text": "A classificação é instrumento de saúde pública, não antibiograma individual nem prescrição por cores. A OMS publicou atualização da **classificação em setembro/2025**, enquanto o *AWaRe antibiotic book* de 2022 está sendo atualizado em função de diretrizes novas; citar o ano de cada documento para não misturar recomendações que mudaram."
+    },
+    {
+      "text": "**Anafilaxia verdadeira** exige evitar exposição inadvertida e plano individual. **Reações cutâneas graves** como SJS/TEN, DRESS e AGEP têm gravidade própria e podem contraindicar reexposição a classes relacionadas, exigindo alergologia. Reatividade cruzada entre beta-lactâmicos depende de estrutura, especialmente cadeias laterais, e não deve ser reduzida ao mito “qualquer cefalosporina é sempre proibida em todo rótulo de penicilina”. A avaliação de *de-labeling* supervisionado pode ampliar opções seguras, mas não deve ser improvisada em pronto-socorro sem estrutura."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

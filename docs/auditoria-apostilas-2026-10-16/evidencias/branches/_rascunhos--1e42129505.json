@@ -1,0 +1,84 @@
+{
+  "sha": "1e42129505090d51c2de4d00bb6a6a0b02f5da19",
+  "path": "apostilas/_rascunhos/lote-06-117-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1e42129505",
+  "title": "Lote 06 — controle editorial da apostila 117 (Isquemia Mesentérica)",
+  "format": ".md",
+  "chars_estimated": 8217,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — controle editorial da apostila 117 (Isquemia Mesentérica)"
+    },
+    {
+      "title": "1. Inventário e integridade"
+    },
+    {
+      "title": "2. Etapa zero — fontes comparativas do Drive efetivamente lidas"
+    },
+    {
+      "title": "3. Fonte científica para decisões médicas"
+    },
+    {
+      "title": "4. Matriz de autossuficiência — 12 questões originais"
+    },
+    {
+      "title": "5. Lacunas e critérios de aprovação"
+    },
+    {
+      "title": "Complemento da auditoria de autossuficiência"
+    },
+    {
+      "title": "6. Preparação técnica para a LURIA — etapa adicional"
+    }
+  ],
+  "reference_entries": [
+    "1. **“14 - ABDOME AGUDO VASCULAR.pdf”**: conteúdo textual extraído e inspecionado integralmente; aborda classificação aguda/crônica, embolia/trombose, trombose venosa, NOMI, investigação e tratamento, colite isquêmica, além de fluxograma básico. Apresenta apenas um resumo de aproximadamente 5,9 mil caracteres textuais: **não é benchmark extenso de cursinho premium**, e a autoria institucional Estratégia MED **não foi confirmada**.",
+    "2. **“01 - ABDOME AGUDO - INTRODUCAO.pdf”**: conteúdo lido (aproximadamente 3,9 mil caracteres textuais) para comparar a organização do abdome vascular dentro da classificação do abdome agudo. Também não teve autoria institucional Estratégia MED confirmada.",
+    "3. **“12 - ABDOME AGUDO OBSTRUTIVO.pdf”**: conteúdo comparativo lido para distinguir estrangulamento/obstrução mecânica e isquemia vascular primária.",
+    "4. A comparação do material da LURIA com o Drive motivou melhorias específicas: interpretação bifásica da angioTC, limitação do lactato inicial, diferença entre anticoagular trombose venosa e reperfundir artéria, avaliação de viabilidade/peritonite, explicação de second-look, NOMI em choque, prevenção de intestino curto e momento correto da revascularização na isquemia crônica.",
+    "5. **Nenhum texto, quadro, figura ou identidade gráfica do material do Drive foi copiado**. Os documentos foram benchmark de abrangência. Não registrar identificadores ou URLs privados nos arquivos públicos.",
+    "- **WSES 2022**: Bala M et al., World J Emerg Surg 17:54, DOI 10.1186/s13017-022-00443-x. Ênfase em angioTC rápida, avaliação de necrose, antibiótico precoce na IMA, cirurgia na peritonite e abordagem multidisciplinar.",
+    "- **ESVS 2025**: Koelemay MJ et al., Eur J Vasc Endovasc Surg 70(2):153–218, DOI 10.1016/j.ejvs.2025.06.010. Ênfase em revascularização endovascular selecionada (recomendação 37), NOMI (43 e 45) e trombose venosa (52, 53 e 56).",
+    "- Não foi localizado documento brasileiro de sociedades/Ministério com **PCDT nacional específico e verificado** para a totalidade da IMA. Diretrizes internacionais devem ser adaptadas ao SUS e protocolos institucionais; não atribuir falsamente recomendações ao Ministério da Saúde ou SBACV.",
+    "**Resultado:** 12/12 questões com termos do conteúdo localizados nos capítulos esperados. A triagem não prova que cada alternativa seja totalmente justificável apenas com o texto nem que os dados estejam clinicamente corretos; exige revisão humana.",
+    "- [x] Fundamentos anatômicos/fisiológicos e mecanismos das quatro modalidades agudas.",
+    "- [x] Quadro clínico, exames, angioTC, interpretação de sinais e escalonamento de emergência.",
+    "- [x] Condutas diferenciadas por mecanismo; cirurgia, revascularização e tratamento da trombose venosa.",
+    "- [x] IMC e colite isquêmica, complicações e prevenção secundária.",
+    "- [x] 8 casos clínicos com raciocínio e 12 questões autorais comentadas.",
+    "- [ ] Benchmark equivalente a uma apostila extensa com autoria identificada (prioridade Estratégia MED, se acessível), ou registro formal da limitação.",
+    "- [ ] Revisão clínica médica especializada, sobretudo terapias anticoagulantes, cirurgia, populações especiais, doses e conciliação com protocolos brasileiros.",
+    "- [ ] Auditoria de contagem **útil e única** (não só estimativa textual), antirredundância semântica e teste de autossuficiência clínica.",
+    "- [ ] Pelo menos dez candidatas de imagens úteis **com fonte e licença individualmente verificadas**; submissão para aprovação no Admin, sem inclusão automática.",
+    "- [ ] Preparar JSON/HTML em padrão LURIA e executar realmente os scripts oficiais, além da inspeção desktop e PWA antes de qualquer publicação.",
+    "- [ ] Manter branch editorial; **não fazer merge nem deploy sem validação final e autorização**.",
+    "**Parecer:** capítulo central e banco inicial de exercícios produzidos, qualidade clínica/promocional ainda pendente de aprovação; o texto não deve ser apresentado como versão final.",
+    "---",
+    "- \\`apostilas/_rascunhos/lote-06-117-build-input-preliminar.json\\`: entrada JSON com **30 seções** (introdução + 27 capítulos científicos + capítulo de casos + capítulo de questões) e **5 referências externas** vinculadas. A seção de controle editorial não foi incorporada como conteúdo do aluno.",
+    "- \\`apostilas/_rascunhos/lote-06-117-preview.html\\`: prévia no HTML do template oficial da LURIA, mantendo CSS compartilhado e menu interno, com aviso visível de revisão, \\`noindex,nofollow\\` e sem inserir imagens candidatas.",
+    "- Checagem estrutural feita na etapa de criação: **30 seções, 8 casos clínicos, 12 questões, 12 listas semânticas de alternativas A–D, zero imagens novas e zero links internos quebrados**.",
+    "- A transformação para HTML foi executada em código editorial controlado, mas **os scripts oficiais em Node não foram executados**. Portanto, não classificar o pré-teste como \\`node scripts/build-apostilas-batch.cjs --dry-run\\` ou como QA de navegador real.",
+    "- A contagem bruta da apostila é superior ao piso, e a estimativa do corpo didático sem casos/questões chegou a cerca de 64 mil caracteres, mas ainda é obrigatório verificar **utilidade, ausência de redundância e suficiência clínica reais**.",
+    "**Ainda pendente:** localizar benchmark extenso de referência com autoria confirmada, auditoria médica, imagens licenciadas e aprovadas no Admin, execução dos validadores oficiais do repositório, inspeção desktop/PWA, resolução de eventuais falhas e autorização explícita de publicação. Preservar integralmente versões atuais publicadas."
+  ],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

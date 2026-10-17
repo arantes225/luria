@@ -1,0 +1,94 @@
+{
+  "sha": "996c5d51549ef818bc612515bd1bf2dd615c0b55",
+  "path": "apostilas/_rascunhos/lote-05-093-asma-infancia.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--996c5d5154",
+  "title": "LURIA — Apostila 093: Asma na infância",
+  "format": ".md",
+  "chars_estimated": 16268,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 093: Asma na infância"
+    },
+    {
+      "title": "0. Etapa zero — benchmarking obrigatório"
+    },
+    {
+      "title": "Matriz inicial de cobertura e lacunas"
+    },
+    {
+      "title": "1. O que é asma — começando pelo mecanismo"
+    },
+    {
+      "title": "2. Suspeita clínica e raciocínio diagnóstico"
+    },
+    {
+      "title": "3. Diagnósticos diferenciais que mudam a conduta"
+    },
+    {
+      "title": "4. Princípios contemporâneos do tratamento controlador"
+    },
+    {
+      "title": "5. Exacerbação — estrutura de decisão inicial"
+    },
+    {
+      "title": "6. Educação, prevenção e seguimento"
+    },
+    {
+      "title": "7. Casos clínicos — elaboração inicial"
+    },
+    {
+      "title": "8. Questões formativas comentadas — versão inicial"
+    },
+    {
+      "title": "9. Revisão obrigatória antes de integrar ao site"
+    },
+    {
+      "title": "Fontes de referência clínica"
+    }
+  ],
+  "reference_entries": [
+    "- Global Initiative for Asthma. *GINA 2026 Strategy Report*. https://ginasthma.org/reports/",
+    "- Global Initiative for Asthma. *Summary Guide for Asthma Management and Prevention 2026*. https://ginasthma.org/2026-gina-summary-guide/",
+    "- Ministério da Saúde do Brasil — protocolos e documentos nacionais pertinentes, a conferir na revisão de doses e apresentações.",
+    "**Rastreabilidade:** os PDFs do Drive foram efetivamente lidos, mas são resumos antigos e não têm autoria institucional verificável; nenhuma passagem, figura ou tabela foi importada desses arquivos."
+  ],
+  "external_urls": [
+    "https://ginasthma.org/reports/",
+    "https://ginasthma.org/2026-gina-summary-guide/.",
+    "https://ginasthma.org/2026-gina-summary-guide/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui."
+    },
+    {
+      "text": "Na inflamação do tipo 2, citocinas e células efetoras como eosinófilos, mastócitos e linfócitos participam de hiperresponsividade, edema e secreção. Entretanto, nem toda criança asmática apresenta o mesmo padrão biológico; usar 'asma alérgica' como sinônimo de toda asma levaria a diagnósticos e decisões incorretos. Além dos desencadeantes alérgicos, infecções respiratórias virais, exposição a fumaça, poluentes e exercício podem precipitar sintomas. As exposições precisam ser contextualizadas com sintomas, sazonalidade e ambiente familiar."
+    },
+    {
+      "text": "História familiar de atopia, eczema, rinite alérgica ou asma aumenta a probabilidade pré-teste, mas não confirma o diagnóstico isoladamente. O mesmo vale para a resposta subjetiva a uma única nebulização; observar melhora não autoriza ignorar pneumonia, corpo estranho ou disfunção de vias aéreas superiores. O exame físico pode ser inteiramente normal entre crises."
+    },
+    {
+      "text": "Nas crianças capazes de realizar testes reprodutíveis, buscar **evidência objetiva de limitação variável do fluxo expiratório**, preferencialmente com espirometria de qualidade, interpretação pediátrica e teste broncodilatador quando apropriado. Um exame normal em período assintomático não exclui a doença; repetir durante sintomas ou empregar testes especializados pode ser indicado conforme disponibilidade e segurança. Quando a criança já está em uso de anti-inflamatório inalatório, a documentação da variabilidade pode ficar mais difícil. Não suspender medicação apenas para 'provar' o diagnóstico sem ponderar risco."
+    },
+    {
+      "text": "Na faixa pré-escolar, episódios de sibilância são comuns durante viroses e o diagnóstico costuma ser probabilístico. Frequência, gravidade, sintomas entre infecções, história atópica, resposta a ensaio terapêutico estruturado e diagnósticos alternativos devem ser integrados longitudinalmente. A decisão de tratar e acompanhar pode preceder certeza diagnóstica absoluta, mas deve incluir reavaliação de hipótese, adesão e resposta."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

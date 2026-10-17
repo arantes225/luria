@@ -1,0 +1,444 @@
+{
+  "sha": "28b264b1d17af02f7c8cec75fbd7b21b53130e8d",
+  "path": "apostilas/_rascunhos/lote-06-116-sindromes-glomerulares.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--28b264b1d1",
+  "title": "Lote 06 — 116 Síndromes glomerulares",
+  "format": ".md",
+  "chars_estimated": 89581,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — 116 Síndromes glomerulares"
+    },
+    {
+      "title": "Etapa zero: comparação de referência"
+    },
+    {
+      "title": "1. Como o glomérulo funciona"
+    },
+    {
+      "title": "Fisiopatologia integrada"
+    },
+    {
+      "title": "2. Identificando o padrão sindrômico"
+    },
+    {
+      "title": "3. Avaliação inicial e urgências"
+    },
+    {
+      "title": "4. Raciocínio etiológico"
+    },
+    {
+      "title": "5. Quatro situações para ensinar no capítulo completo"
+    },
+    {
+      "title": "Pendências antes de considerar apostila pronta"
+    },
+    {
+      "title": "Referências primárias para aprofundamento"
+    },
+    {
+      "title": "Ampliação editorial — etapa 2 (14/10/2026)"
+    },
+    {
+      "title": "6. Da queixa ao diagnóstico: leitura clínica do edema, da hematúria e da proteinúria"
+    },
+    {
+      "title": "6.1 O edema não localiza a lesão renal sozinho"
+    },
+    {
+      "title": "6.2 Quando a urina muda de cor"
+    },
+    {
+      "title": "6.3 Como quantificar proteinúria com segurança"
+    },
+    {
+      "title": "7. Exames imunológicos: perguntas que cada teste deve responder"
+    },
+    {
+      "title": "8. Anatomopatologia orientada à decisão"
+    },
+    {
+      "title": "9. Tratamento de suporte: a intervenção que atravessa as etiologias"
+    },
+    {
+      "title": "9.1 Controle volêmico e pressão"
+    },
+    {
+      "title": "9.2 Redução do risco cardiovascular e complicações"
+    },
+    {
+      "title": "9.3 Terapia imunomoduladora é específica"
+    },
+    {
+      "title": "10. Atualizações de diretrizes que mudam questões"
+    },
+    {
+      "title": "10.1 Nefropatia por IgA: não esperar proteinúria “nefrótica” para reconhecer risco"
+    },
+    {
+      "title": "10.2 Nefrite lúpica: atualização de combinação terapêutica"
+    },
+    {
+      "title": "10.3 Vasculite ANCA: menos glicocorticoide pode ser melhor"
+    },
+    {
+      "title": "11. Diferenciais de alta consequência"
+    },
+    {
+      "title": "12. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso clínico 1 — Criança com edema e proteinúria"
+    },
+    {
+      "title": "Caso clínico 2 — Hematúria após faringite"
+    },
+    {
+      "title": "Caso clínico 3 — Hipertensão e oligúria depois de infecção"
+    },
+    {
+      "title": "Caso clínico 4 — Síndrome pulmão-rim"
+    },
+    {
+      "title": "13. Questões originais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "14. Matriz de cobertura provisória"
+    },
+    {
+      "title": "Referências desta ampliação"
+    },
+    {
+      "title": "Ampliação editorial — etapa 3: doenças específicas e terapêutica (14/10/2026)"
+    },
+    {
+      "title": "15. Síndrome nefrótica pediátrica: do primeiro episódio às recaídas"
+    },
+    {
+      "title": "15.1 Por que a pediatria não é uma cópia dos adultos"
+    },
+    {
+      "title": "15.2 Definições contemporâneas que mudam o gabarito"
+    },
+    {
+      "title": "15.3 Primeira crise: indicação, esquema e proteção"
+    },
+    {
+      "title": "15.4 O que fazer se as recaídas voltarem ou não houver resposta"
+    },
+    {
+      "title": "15.5 Complicações imediatas na infância"
+    },
+    {
+      "title": "16. Doença de lesões mínimas no adulto"
+    },
+    {
+      "title": "16.1 O defeito funcional pode ser mais exuberante que a microscopia óptica"
+    },
+    {
+      "title": "16.2 Escolhendo e monitorando o tratamento"
+    },
+    {
+      "title": "16.3 Questão diferencial: lesões mínimas versus GESF primária"
+    },
+    {
+      "title": "17. Glomeruloesclerose segmentar e focal (GESF): a histologia não basta"
+    },
+    {
+      "title": "17.1 O significado dos dois adjetivos"
+    },
+    {
+      "title": "17.2 Primária, secundária, genética e causa indeterminada"
+    },
+    {
+      "title": "17.3 Tratamento guiado pelo mecanismo"
+    },
+    {
+      "title": "17.4 Seguimento e prognóstico"
+    },
+    {
+      "title": "18. Nefropatia membranosa: autoimunidade podocitária, risco e tempo de resposta"
+    },
+    {
+      "title": "18.1 Lesão por depósitos subepiteliais"
+    },
+    {
+      "title": "18.2 Anti-PLA2R e necessidade de biópsia: nuance indispensável"
+    },
+    {
+      "title": "18.3 Risco trombótico e anticoagulação"
+    },
+    {
+      "title": "18.4 Quando observar e quando imunossuprimir"
+    },
+    {
+      "title": "19. Glomerulonefrite associada a infecção versus glomerulopatia do complemento"
+    },
+    {
+      "title": "19.1 A inflamação pode persistir depois de a infecção desaparecer"
+    },
+    {
+      "title": "19.2 A cinética do complemento é diagnóstica"
+    },
+    {
+      "title": "19.3 O padrão membranoproliferativo é uma descrição, não uma causa única"
+    },
+    {
+      "title": "19.4 Endocardite como diagnóstico diferencial de vasculite"
+    },
+    {
+      "title": "Registro de verificação desta etapa"
+    },
+    {
+      "title": "20. Glomerulonefrite rapidamente progressiva (GNRP): fisiopatologia, triagem e urgência"
+    },
+    {
+      "title": "20.1 Síndrome temporal antes de diagnóstico histológico"
+    },
+    {
+      "title": "20.2 Três mecanismos histológicos que orientam o diferencial"
+    },
+    {
+      "title": "20.3 Algoritmo de risco imediato"
+    },
+    {
+      "title": "20.4 Por que o pulmão muda o cenário"
+    },
+    {
+      "title": "21. Doença anti-membrana basal glomerular (anti-MBG / anti-GBM)"
+    },
+    {
+      "title": "21.1 Antígeno e repercussões"
+    },
+    {
+      "title": "21.2 A intervenção precisa começar cedo"
+    },
+    {
+      "title": "21.3 Quando a função renal já está muito comprometida"
+    },
+    {
+      "title": "22. Vasculites associadas a ANCA"
+    },
+    {
+      "title": "22.1 Reconhecer doença sistêmica de pequenos vasos"
+    },
+    {
+      "title": "22.2 Indução e manutenção não são sinônimos"
+    },
+    {
+      "title": "22.3 E a plasmaférese?"
+    },
+    {
+      "title": "22.4 Monitorar atividade sem confundir com dano acumulado"
+    },
+    {
+      "title": "23. Nefrite lúpica: imunologia, classe histológica e estratégia de longo prazo"
+    },
+    {
+      "title": "23.1 O que torna a apresentação heterogênea"
+    },
+    {
+      "title": "23.2 Traduzindo classes histológicas em raciocínio clínico"
+    },
+    {
+      "title": "23.3 Tratamento de classe III/IV ativa"
+    },
+    {
+      "title": "23.4 Classe V e situações reprodutivas"
+    },
+    {
+      "title": "23.5 Por que exames repetidos importam"
+    },
+    {
+      "title": "24. Nefropatia por IgA e vasculite por IgA: da mucosa ao prognóstico renal"
+    },
+    {
+      "title": "24.1 Mecanismo e fenótipo clínico"
+    },
+    {
+      "title": "24.2 Estratificação KDIGO 2025"
+    },
+    {
+      "title": "24.3 Duas frentes de tratamento, com limites diferentes"
+    },
+    {
+      "title": "24.4 IgA em crianças e vasculite com manifestações abdominais"
+    },
+    {
+      "title": "25. Síndromes hereditárias, sistêmicas e neoplasias: quando a glomerulopatia não é “primária”"
+    },
+    {
+      "title": "25.1 Doença de Alport e nefropatia da membrana basal fina"
+    },
+    {
+      "title": "25.2 Amiloidose e doenças monoclonais"
+    },
+    {
+      "title": "25.3 Diabetes com glomerulopatia sobreposta"
+    },
+    {
+      "title": "25.4 Glomerulopatias relacionadas a medicamentos e infecções"
+    },
+    {
+      "title": "26. Plano longitudinal: um seguimento que responde a perguntas concretas"
+    },
+    {
+      "title": "26.1 O que documentar em cada retorno"
+    },
+    {
+      "title": "26.2 Falha terapêutica versus recuperação lenta"
+    },
+    {
+      "title": "26.3 Critérios práticos de reencaminhamento urgente"
+    },
+    {
+      "title": "26.4 Perspectiva da APS no Brasil"
+    },
+    {
+      "title": "26.5 Aconselhamento e decisão compartilhada"
+    },
+    {
+      "title": "27. Laboratório interpretado: vinhetas comparativas curtas"
+    },
+    {
+      "title": "28. Casos adicionais para consolidar etiologias e tratamento"
+    },
+    {
+      "title": "Caso 5 — Membranosa com risco trombótico"
+    },
+    {
+      "title": "Caso 6 — Laudo de GESF, mas sem síndrome nefrótica completa"
+    },
+    {
+      "title": "Caso 7 — Paciente com LES e proteinúria de instalação recente"
+    },
+    {
+      "title": "Caso 8 — Vasculite por IgA após púrpura"
+    },
+    {
+      "title": "29. Questões adicionais originais comentadas"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "30. Referências priorizadas e limites de aplicação"
+    },
+    {
+      "title": "31. Checklist de saída pendente antes de marcar como final"
+    }
+  ],
+  "reference_entries": [
+    "1. KDIGO. Glomerular Diseases, guideline hub e atualizações. https://kdigo.org/guidelines/gd/",
+    "2. KDIGO. IgA Nephropathy and IgA Vasculitis (2025), no hub acima.",
+    "3. KDIGO. Nephrotic Syndrome in Children (2025), no hub acima.",
+    "4. KDIGO. Lupus Nephritis (2024), no hub acima.",
+    "5. KDIGO. ANCA-associated vasculitis (2024), no hub acima.",
+    "6. Sociedade Brasileira de Nefrologia. Diretrizes e posicionamentos. https://sbn.org.br/medicos/utilidades/diretrizes-e-posicionamentos-da-sbn/",
+    "---",
+    "**Biópsia renal não é uma formalidade:** microscopia óptica revela proliferação, esclerose, crescentes e fibrose; imunofluorescência identifica padrão de depósitos; microscopia eletrônica pode caracterizar depósitos e alterações podocitárias. A proporção de lesões reversíveis (atividade) e cicatrizes (cronicidade) modifica tanto benefício esperado como toxicidade aceitável da imunossupressão. O clínico precisa verificar risco de sangramento e condições de segurança do procedimento antes de solicitá-lo.",
+    "**Necrose tubular aguda:** creatinina pode aumentar muito sem proteinúria significativa ou cilindros hemáticos; sedimento granular pigmentado e contexto de sepse/hipoperfusão são pistas, embora haja sobreposição. **Nefrite intersticial:** exposição medicamentosa, piúria e cilindros leucocitários podem orientar, mas tríade febre-rash-eosinofilia é insensível. **Microangiopatia trombótica:** hemólise microangiopática, plaquetopenia e lesão renal levam a investigação urgente, inclusive de hipertensão maligna, SHU e PTT. **Nefropatia diabética:** diabetes não elimina causa glomerular concomitante,",
+    "**Gabarito: B.** O conjunto de proteinúria maciça, hipoalbuminemia e edema forma síndrome nefrótica. **A:** síndrome nefrótica pode refletir injúria podocitária sem proliferação. **C:** inúmeras glomerulopatias proteinúricas têm sedimento pouco ativo. **D:** histologia requer integração clínica e frequentemente biópsia. **Revisão:** síndrome descreve fenótipo, não etiologia.",
+    "**Gabarito: A.** A hematúria sinfaringítica é pista clássica de IgA. **B:** cilindros hemáticos sugerem origem glomerular. **C:** GN pós-estreptocócica costuma surgir após período de latência. **D:** litíase é diferencial, mas não explica de modo típico cilindros hemáticos. **Revisão:** a biópsia é necessária para confirmação de nefropatia por IgA.",
+    "**Gabarito: B.** O sedimento ativo com perda funcional rápida pode representar agressão glomerular grave. **A:** não é marcador de GNRP. **C:** inespecífico. **D:** exige confirmação, mas não constitui por si só emergência glomerular. **Revisão:** velocidade de mudança da TFG é parte central da gravidade.",
+    "**Gabarito: C.** O limiar de 0,5 g/dia orienta consideração de terapias e risco. **A:** confunde risco com faixa nefrótica. **B:** a confirmação de IgA é histológica. **D:** a meta de proteinúria é menor que 0,5 g/dia, idealmente menor que 0,3 g/dia, se alcançável. **Revisão:** risco de progressão renal e síndrome nefrótica são conceitos distintos.",
+    "**Gabarito: C.** Classe IV ativa geralmente exige imunossupressão inicial estruturada. **A:** antibióticos são indicados para infecção, não substituem tratamento imunológico. **B:** diurético controla volume, não atividade proliferativa. **D:** contradiz o manejo de doença ativa. **Revisão:** atividade, cronicidade e manifestações sistêmicas definem benefício-risco.",
+    "**Gabarito: C.** Hemorragia alveolar e GNRP possíveis ameaçam órgãos e vida. **A:** atraso grave. **B:** não explica sedimento glomerular nem hemoptise. **D:** ignora achados de alto risco. **Revisão:** estabilizar o paciente e investigar em paralelo.",
+    "**Auditoria:** foram incluídos quatro casos comentados e seis questões autorais, mas a apostila permanece parcial: não atende ainda à extensão útil mínima, ao aprofundamento de cada entidade, à etapa comparativa integral do Drive nem aos testes visuais e de autossuficiência. Não publicar ou marcar como concluída.",
+    "- KDIGO. Clinical Practice Guideline for IgA Nephropathy and IgA Vasculitis (2025): https://kdigo.org/guidelines/iga-nephropathy/",
+    "- KDIGO. Clinical Practice Guideline for Lupus Nephritis (2024): https://kdigo.org/guidelines/lupus-nephritis/",
+    "- KDIGO. Clinical Practice Guideline for ANCA-Associated Vasculitis (2024, incluindo esclarecimentos): https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/",
+    "- KDIGO. Glomerular Diseases guideline hub: https://kdigo.org/guidelines/gd/",
+    "---",
+    "**Recaída em criança sensível:** uma estratégia KDIGO 2025 é reiniciar prednisona/prednisolona oral 2 mg/kg/dia (ou 60 mg/m²/dia; máximo 60 mg) até remissão completa mantida por pelo menos três dias; depois passar à dose em dias alternados de 1,5 mg/kg ou 40 mg/m² (máximo 40 mg) por quatro semanas, em conformidade com o especialista e protocolo aplicável. Cada episódio deve ser diferenciado de proteinúria transitória associada a febre sem síndrome nefrótica plenamente recorrente.",
+    "**Referências nucleares:** KDIGO Nephrotic Syndrome in Children 2025, https://kdigo.org/guidelines/nephrotic-syndrome-in-children/ ; Ministério da Saúde, PCDT Síndrome Nefrótica Primária em Crianças e Adolescentes, https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes/view . Conferir divergências entre atualização internacional e acesso/fluxo nacional antes da publicação.",
+    "**Focal** significa que nem todos os glomérulos da amostra estão comprometidos. **Segmentar** significa que apenas parte do tufo de um glomérulo acometido apresenta esclerose. Essa descrição morfológica não esclarece, sozinha, por que os podócitos foram lesados. O processo pode resultar de lesão primária presumivelmente mediada por fator circulante, adaptação a hiperfiltração, variantes genéticas, viroses ou medicamentos. Distinguir os grupos evita expor uma pessoa com GESF adaptativa à toxicidade de imunossupressão sem benefício esperado.",
+    "**Erro clássico:** encontrar proteinúria de 4 g/dia em paciente obeso com GESF e afirmar que há doença primária apenas porque ultrapassou 3,5 g/dia. A albumina sérica, o conjunto clínico, apagamento de pedicelos e história são decisivos. **Erro inverso:** descartar causa genética porque não há parentes diagnosticados; penetrância e reconhecimento familiar são imperfeitos.",
+    "**Fonte-chave:** KDIGO 2021, FSGS key takeaways, https://kdigo.org/guidelines/gd/ .",
+    "**Raciocínio temporal:** redução de anti-PLA2R após imunoterapia pode anteceder queda de proteinúria por meses. Não classificar falha terapêutica apenas porque a proteinúria ainda não desapareceu nas semanas iniciais, se há resposta imunológica e estabilidade clínica. O inverso também existe: anti-PLA2R persistente ou crescente pode indicar atividade mesmo antes de piorar a proteinúria. Repetir marcadores em intervalos definidos pelo risco e plano nefrológico.",
+    "**Fonte-chave:** KDIGO 2021, Membranous nephropathy, https://kdigo.org/guidelines/gd/ ; PCDT brasileiro para síndrome nefrótica primária adulta: https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos/view .",
+    "- Foram acrescentados **cinco blocos etiológicos**: síndrome nefrótica pediátrica, lesões mínimas, GESF, nefropatia membranosa e GN relacionada a infecção/complemento. As recomendações terapêuticas são diferenciadas por diagnóstico e risco; as doses pediátricas acima foram conferidas no KDIGO 2025 e necessitam conciliação com PCDT e padronização brasileira antes de eventual publicação.",
+    "- Pendente aprofundar anti-MBG, vasculites ANCA, IgA/IgAV, nefrite lúpica, nefropatias hereditárias, situações especiais, prognóstico longitudinal, casos comparativos e verificação final. O texto ainda não é uma apostila aprovada."
+  ],
+  "external_urls": [
+    "https://kdigo.org/guidelines/gd/",
+    "https://sbn.org.br/medicos/utilidades/diretrizes-e-posicionamentos-da-sbn/",
+    "https://kdigo.org/guidelines/iga-nephropathy/.",
+    "https://kdigo.org/guidelines/lupus-nephritis/.",
+    "https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/.",
+    "https://kdigo.org/guidelines/iga-nephropathy/",
+    "https://kdigo.org/guidelines/lupus-nephritis/",
+    "https://kdigo.org/guidelines/antineutrophilic-cytoplasmic-antibody-anca-associated-vasculitis-aav/",
+    "https://kdigo.org/guidelines/nephrotic-syndrome-in-children/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-criancas-e-adolescentes/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-nefrotica-primaria-em-adultos/view",
+    "https://kdigo.org/guidelines/gd/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Doença de lesões mínimas:** causa importante de síndrome nefrótica na infância, tipicamente com sedimento pouco ativo. Em adultos, exige atenção a diagnósticos alternativos e associações medicamentosas e sistêmicas; comportamento e indicação de biópsia não devem ser inferidos diretamente do padrão pediátrico."
+    },
+    {
+      "text": "A expressão **crescente glomerular** descreve proliferação celular e acúmulo de componentes no espaço de Bowman em resposta a injúria intensa da parede capilar. Não é diagnóstico etiológico por si só. A imunofluorescência permite três grandes pistas: deposição linear de IgG na doença anti-MBG; depósitos granulares em processos por imunocomplexos, como lúpus e IgA; e pouca ou nenhuma deposição imune nas vasculites pauci-imunes, muitas vezes associadas a ANCA. Na prática, há apresentações sobrepostas, inclusive ANCA associado a anti-MBG."
+    },
+    {
+      "text": "A) Apenas proteinúria acima de 3,5 g/dia indica risco de progressão. B) O diagnóstico pode ser firmado somente pela história de hematúria sinfaringítica. C) Proteinúria persistente ≥0,5 g/dia sinaliza risco e exige avaliação de tratamento adicional. D) O objetivo é manter proteinúria acima de 1 g/dia para evitar hipotensão."
+    },
+    {
+      "text": "O perfil de doenças por trás da síndrome nefrótica muda com a idade. Na infância, especialmente entre os anos pré-escolares, há predomínio de apresentações idiopáticas sensíveis ao corticoide, frequentemente com histologia de lesões mínimas. O diagnóstico inicial é predominantemente clínico e laboratorial; em criança com apresentação típica, não se exige biópsia antes da primeira terapia. Em adultos, a necessidade de biópsia e a probabilidade de nefropatia membranosa, glomeruloesclerose segmentar e focal e causas secundárias são diferentes."
+    },
+    {
+      "text": "A diretriz KDIGO 2025 define **proteinúria em faixa nefrótica pediátrica** por relação proteína/creatinina urinária (RPC) de **2 g/g ou maior**, ou proteína urinária de pelo menos 1.000 mg/m²/dia, usando amostra apropriada. O diagnóstico clínico de síndrome nefrótica reúne proteinúria nessa faixa com **albumina sérica abaixo de 3 g/dL**, ou edema quando a albumina não está disponível. A confirmação de remissão completa utiliza, entre outros critérios, RPC até 0,2 g/g ou fita urinária negativa/traços em **três dias consecutivos**, preferindo primeira urina da manhã. Os limiares pediátricos não devem ser substituídos pela excreção absoluta de 3"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

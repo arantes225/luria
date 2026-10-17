@@ -1,0 +1,2551 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "d7dc563786147a089a71d264247ad899d6e57576",
+  "items": [
+    {
+      "key": "alteracoes-fisiologicas-da-gestacao",
+      "path": "apostilas/alteracoes-fisiologicas-da-gestacao/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 78397,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 5,
+        "pending_rows": 0,
+        "simulated_insertions": 4,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Completar identificação bibliográfica das entradas genéricas Natural Physiological Changes e Large-scale pregnancy/postpartum laboratory dynamics study; ligar cada faixa laboratorial à publicação e população de referência."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir os critérios de anemia por trimestre e separar a revisão de 2024 dos textos históricos ainda citados."
+        }
+      ],
+      "source_sha256": "0168f73fcd76a54f9e941e468f13b3f142cf147129fa1974b4947e5c0117f4ce"
+    },
+    {
+      "key": "amenorreia",
+      "path": "apostilas/amenorreia/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 83025,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 11,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "ASRM-AMENORREIA"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Resolver os links FEBRASGO que retornaram 404 na consulta e manter ASRM 2024 como referência rastreável."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Revisar individualmente doses de cabergolina e reposição na insuficiência ovariana; distinguir critérios de diagnóstico de indicação terapêutica."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Consolidar o complemento de questões do lote 07 após comparar a versão atual; não recriar o caderno."
+        },
+        {
+          "priority": "P2",
+          "evidence": "2 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "e8eec345dce346f3af386947c602c164f0f1e1273277c4a29b32741ff39d1ef5"
+    },
+    {
+      "key": "amniorrexe-prematura",
+      "path": "apostilas/amniorrexe-prematura/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 68032,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 5,
+        "pending_rows": 9,
+        "simulated_insertions": 4,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "NICE-PREMATURIDADE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir antibióticos de latência, corticoide e neuroproteção em uma matriz por idade gestacional e protocolo; NICE teve acesso restrito."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Atualizar o link específico da FEBRASGO que retornou 404 e demonstrar a reafirmação bibliográfica citada."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Distinguir registros aprovados, itens ocultados por licença e nove candidatas pendentes; não reaprovar automaticamente."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        },
+        {
+          "priority": "P2",
+          "evidence": "9 registros pendentes no Admin.",
+          "action": "Concluir licença, fidelidade clínica, legenda e destino e submeter à revisão administrativa individual."
+        }
+      ],
+      "source_sha256": "a5830443718eac22cadbdaab44e74de8248f5e83907cc70c6fe6ada48455e9d1"
+    },
+    {
+      "key": "artrites-inflamatorias-doencas-autoimunes--rascunho-editorial-lote09",
+      "path": "apostilas/artrites-inflamatorias-doencas-autoimunes/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 116210,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir tratamento por doença, monitorização/toxicidade e doses por peso; diretriz de uma doença não sustenta automaticamente o manejo de todas as autoimunes."
+        }
+      ],
+      "source_sha256": "6369719b9c2a6c8d72b8c549c30b1a38b7d9a0ef0a28d72cc3595cb7b455428c"
+    },
+    {
+      "key": "assistencia-ao-parto",
+      "path": "apostilas/assistencia-ao-parto/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 44758,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 3,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 44758 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Integrar os apêndices de aprofundamento aos capítulos correspondentes; há conteúdo clínico após referências."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Demonstrar diferenças entre partograma tradicional, Labour Care Guide e critérios contemporâneos de progressão, sem algoritmo híbrido."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Manter interface explícita com o manuscrito de hemorragia pós-parto e completar somente lacunas da assistência intraparto."
+        }
+      ],
+      "source_sha256": "663312f775ff5beb2e75c50398a59ea444ca00a017dd6c8011912643b5f66562"
+    },
+    {
+      "key": "avaliacao-vitalidade-fetal",
+      "path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 43695,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 5,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SMFM-RCF"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 43695 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear os critérios de NST, PBF e Doppler a documentos identificados, com versão e população."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Separar vigilância anteparto e monitorização intraparto para evitar transporte de categorias entre cenários."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Realocar aprofundamentos que aparecem após as referências e completar casos que exijam decisão por idade gestacional."
+        }
+      ],
+      "source_sha256": "ac553e7dabe446f490a0a4c3cb58f4f653baebad3e595ce65c97f5cacddfb535"
+    },
+    {
+      "key": "avc-crises-convulsivas--rascunho-editorial-lote09",
+      "path": "apostilas/avc-crises-convulsivas/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 87525,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir doses e sequência temporal, contabilizando tratamento pré-hospitalar; separar vias e faixas etárias e ligar cada janela de reperfusão/crise à diretriz específica."
+        }
+      ],
+      "source_sha256": "76b8ddc4363c9d190402d7e09ba4e899cd9541aee31b42625e4f289164ee1859"
+    },
+    {
+      "key": "cancer-colo-utero-hpv",
+      "path": "apostilas/cancer-colo-utero-hpv/content.json",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 77994,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 5,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir integralmente o algoritmo brasileiro DNA-HPV e a nota de vacinação pós-NIC2+/AIS, com limites por grupo especial."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Revisar capítulos reiterados de colposcopia e tratamento, mantendo o melhor recurso e acrescentando apenas distinções novas."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Atualizar a matriz de cobertura conjunta de 159/164 antes de habilitar ambos os acessos ao mesmo caderno."
+        }
+      ],
+      "source_sha256": "37efa6b102a00963f557ee7ae1c9963ab777c082dba7054b6f09454e1c07aec2"
+    },
+    {
+      "key": "cancer-de-mama",
+      "path": "apostilas/cancer-de-mama/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 127562,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 8,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "MS-MAMOGRAFIA"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Parágrafo literal repetido 8 vezes: Mini-revisão: Relacione o próximo passo à finalidade do atendimento (rastrear, diagnosticar, tratar ou prevenir complicação), ao risco individual e à segurança materno-fetal quando aplicável.",
+          "action": "Consolidar a explicação e acrescentar conteúdo apenas onde há ganho pedagógico."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Remover/consolidar a mini-revisão idêntica repetida oito vezes no módulo GO; há repetição literal sem aprendizado novo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Unificar a ordem dos capítulos originais e dos módulos 167/169, com referências finais e remissões internas, preservando cirurgia e lactação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rever procedência, licença e eventual aprovação das oito imagens embutidas: a ausência de fila correspondente no banco não comprova ausência de autorização histórica."
+        }
+      ],
+      "source_sha256": "a462c3aef070fa92d9600fcf14b00fa975bc7dfca56e862f379eac8613a14a9d"
+    },
+    {
+      "key": "cancer-endometrio--rascunho-editorial-lote09",
+      "path": "apostilas/cancer-endometrio/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 95666,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "ACOG-PM-BLEEDING"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir a atualização ACOG 2026 integral, FIGO 2023 e grupos moleculares ESGO antes de aprovar os casos; a existência de anúncio oficial não valida o algoritmo completo."
+        }
+      ],
+      "source_sha256": "68e9b4003dafa4d3dac272045842aa35fcbf6098d01dd17d7a3dfce341901c3c"
+    },
+    {
+      "key": "cervicites-doenca-inflamatoria-pelvica",
+      "path": "apostilas/cervicites-doenca-inflamatoria-pelvica/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 49800,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 3,
+        "approved_rows": 6,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "CDC-DIP"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 49800 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "O trecho de internação remete ao protocolo institucional sem desenvolver integralmente o esquema nacional: preencher a tabela de dose, via, duração, transição e contraindicações após consulta ao PCDT."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Integrar o desenvolvimento etiológico ao capítulo da doença, evitando apêndice após bibliografia."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Comparar imagens embutidas e aprovadas antes de inserir novas: a simulação não acrescentou figuras da fila neste caderno."
+        }
+      ],
+      "source_sha256": "c4f2864f2ba28f0801a699139bfc3b135012982b3016268710c4f0bccb8db8be"
+    },
+    {
+      "key": "ciclo-menstrual-eixo-hho",
+      "path": "apostilas/ciclo-menstrual-eixo-hho/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 50764,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 5,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "ENDOTEXT-CICLO"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 50764 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P1",
+          "evidence": "7 headings com mais de 400 caracteres; seção hho-integracao-40k.",
+          "action": "Reparar markup e recuperar parágrafos antes de validar coesão, navegação e extensão."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Corrigir sete títulos H3 malformados na seção hho-integracao-40k: contêm longos parágrafos e resíduos de geração como aspas e parênteses."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Refazer a contagem útil e a leitura após reparar a estrutura; conteúdo incorporado a headings não deve ser tratado como capítulo bem formatado."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Substituir o acesso bloqueado ao Endotext por uma cópia institucional acessível para verificar os mecanismos sem declarar leitura não realizada."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "b1b270f73905c87a11df9deb5f7ffaff4267af140bae1222065acfd4131b1a3a"
+    },
+    {
+      "key": "climaterio-menopausa",
+      "path": "apostilas/climaterio-menopausa/content.json",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 47498,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 9,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "ACOG-PM-BLEEDING"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 47498 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "O corpo contém atualização ACOG 2026 sobre sangramento pós-menopausa; localizar e adicionar a referência completa correspondente ao bloco bibliográfico principal e conferir a diretriz integral."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reparar os links de PDFs FEBRASGO com resposta 404; não confundir atualização da página com edição científica."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Preservar o bloqueio de renderização da figura histórica 78 enquanto não houver substituta licenciada."
+        },
+        {
+          "priority": "P2",
+          "evidence": "3 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "d68dc32d62fa683793cc822666e918dbf46cf417407133b3ac84ce4280ec98a1"
+    },
+    {
+      "key": "complicacoes-pos-operatorias--rascunho-editorial-lote09",
+      "path": "apostilas/complicacoes-pos-operatorias/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 105659,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir sinais de sofrimento/isquemia e critérios de intervenção sem depender de prazo fixo; ligar antibiótico e controle de foco à etiologia e gravidade."
+        }
+      ],
+      "source_sha256": "fd20f1244d7f8b8e78e71ab501119d3213da499676beb8e4d8d6010ae65a8827"
+    },
+    {
+      "key": "crescimento-intrauterino-reduzido-aumentado",
+      "path": "apostilas/crescimento-intrauterino-reduzido-aumentado/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 52421,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 2,
+        "pending_rows": 1,
+        "simulated_insertions": 1,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SMFM-RCF"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 52421 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Manter separação didática entre crescimento reduzido e aumentado; explicitar os protocolos diferentes de avaliação Doppler."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir individualmente limites de interrupção e indicação de via de parto para cada cenário."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Resolver a candidata de imagem pendente e verificar se os dois registros aprovados adicionam achados distintos, sem duplicação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 registros pendentes no Admin.",
+          "action": "Concluir licença, fidelidade clínica, legenda e destino e submeter à revisão administrativa individual."
+        }
+      ],
+      "source_sha256": "317b407ecf78b5a77ceb5b0e210e8d2cddc290c01a1aa8fbce74bda8f9a5863d"
+    },
+    {
+      "key": "cuidados-paliativos-comunicacao-mas-noticias--rascunho-editorial-lote09",
+      "path": "apostilas/cuidados-paliativos-comunicacao-mas-noticias/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 76039,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Verificar conversões de opioides, titulação e manejo de sintomas nas fontes clínicas; critérios e limites éticos devem ser vinculados às normas nacionais, com exemplos de comunicação originais."
+        }
+      ],
+      "source_sha256": "bb303ecaa3b9bc7ce89447e59791b6f50e4fdc5e164e9a64d96f28893861c256"
+    },
+    {
+      "key": "declaracao-obito-indicadores-mortalidade--rascunho-editorial-lote09",
+      "path": "apostilas/declaracao-obito-indicadores-mortalidade/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 92385,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reabrir normas oficiais e registrar dispositivo/artigo e vigência para cada decisão; dados de notificação devem manter ano, fonte e faixa etária, sem extrapolar para incidência atual."
+        }
+      ],
+      "source_sha256": "afc1142894f066f9931105c4046196791fd934ce796eee15a6c9d57eda83c25c"
+    },
+    {
+      "key": "diabetes-mellitus-gestacional",
+      "path": "apostilas/diabetes-mellitus-gestacional/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 51996,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SBD-DMG"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 51996 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Na bibliografia, distinguir edição 2026 do portal SBD e data de revisão do capítulo consultado: a página de rastreamento registra 28/01/2022."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear metas, início/titulação de insulina e seguimento pós-parto ao capítulo/fonte específicos, não ao PCDT de DM2 de forma genérica."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Criar recursos didáticos para padrões glicêmicos e insulinização; não foram encontradas imagens clínicas embutidas nem registros na fila deste caminho."
+        }
+      ],
+      "source_sha256": "52d72b735eab6c764d804e33ed982cb2c87b98038c46e9b766198abba68f9fd7"
+    },
+    {
+      "key": "etica-medica-sigilo-prontuario--rascunho-editorial-lote09",
+      "path": "apostilas/etica-medica-sigilo-prontuario/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 83242,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reabrir normas oficiais e registrar dispositivo/artigo e vigência para cada decisão; dados de notificação devem manter ano, fonte e faixa etária, sem extrapolar para incidência atual."
+        }
+      ],
+      "source_sha256": "7d227e60cf87ed472938d21ae756efcc9558bda766faeb2c23f5efd2e9888a3e"
+    },
+    {
+      "key": "hemorragias-primeiro-terceiro-trimestre",
+      "path": "apostilas/hemorragias-primeiro-terceiro-trimestre/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 53736,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 5,
+        "pending_rows": 0,
+        "simulated_insertions": 5,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "NICE-PROGESTERONA"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 53736 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir cada algoritmo de abortamento, ectópica, doença trofoblástica e hemorragia tardia com sua própria fonte e doses."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Relacionar os núcleos 039/044/049/054/059/064 a capítulos específicos antes de considerar cobertura integral."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Realocar o bloco pós-bibliografia e verificar imagem/legenda por etiologia, sem fazer inferência diagnóstica somente pela figura."
+        }
+      ],
+      "source_sha256": "bdfa347ea85380bccbcee94e0d0f1caf259a6ed35ad26e046ab5699ae0752551"
+    },
+    {
+      "key": "hiv-infeccoes-oportunistas--rascunho-editorial-lote09",
+      "path": "apostilas/hiv-infeccoes-oportunistas/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 83007,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir TARV/interações, profilaxias e doses de infecções oportunistas no PCDT por módulo; ligar cada recomendação a CD4, função renal e situação clínica."
+        }
+      ],
+      "source_sha256": "f50e44ae4f41f0bc0958d12c1e57245558dbe69d31202c92ad1da1f1ced8d0f2"
+    },
+    {
+      "key": "inducao-do-trabalho-de-parto",
+      "path": "apostilas/inducao-do-trabalho-de-parto/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 31269,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "NICE-INDUCAO"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 31269 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Expandir lacunas reais de métodos, doses, titulação, monitorização e definição de falha; o texto tem cerca de metade do piso editorial."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "O PDF Ebserh de indução retornou 404; substituir pelo endereço institucional atual e conferir a edição."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "NICE NG207 não foi aberto integralmente: concluir confronto antes de validar o algoritmo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "773e0f6acae2a8e612155a39ad8c498d214d4960392f39efc0e904e5ab24729a"
+    },
+    {
+      "key": "infeccoes-gestacao-transmissao-vertical",
+      "path": "apostilas/infeccoes-gestacao-transmissao-vertical/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 62229,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 2,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "O texto oferece faixas alternativas de início de tenofovir sem fixar claramente qual protocolo sustenta cada uma; montar tabela nacional por critério, momento e seguimento."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Corrigir o link da nota técnica de toxoplasmose com resposta 404 e rastrear os testes sorológicos por janela de interpretação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir separadamente cada dose e cenário perinatal; possuir muitas referências não comprova que todas sustentem o capítulo correspondente."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "0f4b69165b1f4660f335986bc9fbfa1bb4d9aab851a9745f6fa7f3cda50da4e8"
+    },
+    {
+      "key": "infeccoes-sexualmente-transmissiveis",
+      "path": "apostilas/infeccoes-sexualmente-transmissiveis/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 64415,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 8,
+        "approved_rows": 8,
+        "pending_rows": 10,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "CDC-TRICOMONIASE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir PEP/PrEP, doxiPEP e vacinação nas normas específicas e datas vigentes, sem aplicar populações elegíveis indistintamente."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rever parcerias, resistência e duração de esquemas por agente com rastreabilidade direta ao PCDT."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Não transformar dez candidatas pendentes em imagens publicadas; a presença de oito registros aprovados também não significa oito inserções adicionais no texto."
+        },
+        {
+          "priority": "P2",
+          "evidence": "10 registros pendentes no Admin.",
+          "action": "Concluir licença, fidelidade clínica, legenda e destino e submeter à revisão administrativa individual."
+        }
+      ],
+      "source_sha256": "dd4ee3020d1f00cb408d0583f12d3337bb62031d7a7f8b17070f5f9b379106cd"
+    },
+    {
+      "key": "infertilidade-conjugal",
+      "path": "apostilas/infertilidade-conjugal/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 48987,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 7,
+        "pending_rows": 0,
+        "simulated_insertions": 4,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "WHO-INFERTILIDADE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 48987 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear regimes de indução e monitorização em fonte clínica específica; a existência da diretriz OMS 2025 não valida cada dose."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir requisitos de reprodução assistida na norma CFM efetivamente vigente e explicitar contextos de referência."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reconciliar figuras aprovadas e inserções efetivas, preservando alternativas com achados diferentes."
+        }
+      ],
+      "source_sha256": "9b9576ecb39f41050dd6f9de79dafbbdbb93e257b2874e256db4631a98f14d08"
+    },
+    {
+      "key": "intoxicacoes-exogenas-infancia--rascunho-editorial-lote09",
+      "path": "apostilas/intoxicacoes-exogenas-infancia/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 96314,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir todos os cálculos por peso, antídotos e contraindicações em fontes clínicas profissionais; material para famílias não basta para validar dose de emergência."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "3143d0ef244bdc87740c297149f842f74b6fb6e2feb5e176e924fa42b6f2a48b"
+    },
+    {
+      "key": "lote-05-093-asma-infancia",
+      "path": "apostilas/_rascunhos/lote-05-093-asma-infancia.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 77419,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "GINA-2026"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir a divisão por faixa etária, dose/apresentação/dispositivo e limites de crise na GINA 2026 integral, separando recomendação internacional de disponibilidade e bula no Brasil."
+        }
+      ],
+      "source_sha256": "6a79b8841bab6d1bafbe12ea5f35c97bb50f7e0a64815eec3d4f7eb4f0d9fa1c"
+    },
+    {
+      "key": "lote-05-096-disturbios-hidroeletroliticos",
+      "path": "apostilas/_rascunhos/lote-05-096-disturbios-hidroeletroliticos.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 94822,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Recalcular exemplos de osmolalidade e correção de sódio/potássio; validar unidades, concentrações, velocidade de infusão, monitorização e manejo de sobrecorreção."
+        }
+      ],
+      "source_sha256": "311331a3026446b67dfc45efe1381c66bcedc397d5e95ffecbad8e83641b5195"
+    },
+    {
+      "key": "lote-05-097-pancreatite-aguda",
+      "path": "apostilas/_rascunhos/lote-05-097-pancreatite-aguda.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 67994,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir Atlanta revisada, BUN versus ureia, hidratação e indicação/tempo de intervenção. Vincular 097/141 ao mesmo núcleo sem duplicar textos."
+        }
+      ],
+      "source_sha256": "9168e486386fe99a7e150ece12a875fc578849d4374972db3b85f6ebc9d85669"
+    },
+    {
+      "key": "lote-05-101-disturbios-acido-base",
+      "path": "apostilas/_rascunhos/lote-05-101-disturbios-acido-base.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 70782,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Resolver novamente os casos e conferir fórmulas de compensação, correção do ânion gap e unidades; distinguir valor esperado, medido e distúrbio misto."
+        }
+      ],
+      "source_sha256": "a55961be100e52a8ea33d7fd4efb40f2449617eb780def7d82ce1722d68d0dfc"
+    },
+    {
+      "key": "lote-05-102-obstrucao-intestinal",
+      "path": "apostilas/_rascunhos/lote-05-102-obstrucao-intestinal.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 59755,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir sinais de sofrimento/isquemia e critérios de intervenção sem depender de prazo fixo; ligar antibiótico e controle de foco à etiologia e gravidade."
+        }
+      ],
+      "source_sha256": "8427cbc1e4836bed8a5b8c31cf81b94171e054dd0bda1bd21d23f3eb29944fb8"
+    },
+    {
+      "key": "lote-05-104-hemorragia-pos-parto",
+      "path": "apostilas/_rascunhos/lote-05-104-hemorragia-pos-parto.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 85350,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "WHO-HPP-2025"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir uterotônicos, antifibrinolítico, transfusão e algoritmo de resposta na diretriz OMS 2025 integral; separar prevenção de tratamento e hemorragia imediata/tardia."
+        },
+        {
+          "priority": "P2",
+          "evidence": "2 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "d709562061e7261f96c1a509b29efef31d882c94ddb6aaf37e995bb09b89ab9b"
+    },
+    {
+      "key": "lote-07-aula-121-itu-pielonefrite",
+      "path": "apostilas/_rascunhos/lote-07-aula-121-itu-pielonefrite.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 94490,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear critérios diagnósticos e doses às recomendações por população, gravidade, função renal e resistência local; distinguir cistite, pielonefrite e grupos especiais."
+        }
+      ],
+      "source_sha256": "9bcb94d2b50e36ec890555c8699478628d38aff62540e580fc007724f629269a"
+    },
+    {
+      "key": "lote-07-aula-122-perfuracao-viscera-oca",
+      "path": "apostilas/_rascunhos/lote-07-aula-122-perfuracao-viscera-oca.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 76489,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir sinais de sofrimento/isquemia e critérios de intervenção sem depender de prazo fixo; ligar antibiótico e controle de foco à etiologia e gravidade."
+        }
+      ],
+      "source_sha256": "a444235f60aa331f238184c3745b783fac5ace47421c8e865d59a2c080d6ed4f"
+    },
+    {
+      "key": "lote-07-aula-123-febre-sem-sinais-localizatorios",
+      "path": "apostilas/_rascunhos/lote-07-aula-123-febre-sem-sinais-localizatorios.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 75865,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Comparar com a atualização específica da branch CPS 2026 antes de integrar; a amostragem do texto-base já declara benchmark apenas indireto. Confirmar idade, elegibilidade e critérios de baixo risco."
+        }
+      ],
+      "source_sha256": "28b3ffcf5d5e40e75dd2352f4f960def782ba50771a99821967e2c3135062b89"
+    },
+    {
+      "key": "lote-07-aula-124-sua-casos-questoes-complemento",
+      "path": "apostilas/_rascunhos/lote-07-aula-124-sua-casos-questoes-complemento.md",
+      "stage": "Complemento em Markdown; comparar e integrar ao caderno de origem",
+      "kind": "complemento-md",
+      "chars": 16273,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Integrar somente o complemento, após comparação com o caderno de origem."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Este arquivo é complemento: comparar com o texto original, integrar no capítulo previsto e executar as questões contra o conteúdo resultante. Não exigir 60K para o complemento isolado nem contá-lo como novo livro."
+        }
+      ],
+      "source_sha256": "711473485213eeacc71307d09818eabe81be5518023a509ce7c6b6008c7582a4"
+    },
+    {
+      "key": "lote-07-aula-125-rastreamento-prevencao-quaternaria",
+      "path": "apostilas/_rascunhos/lote-07-aula-125-rastreamento-prevencao-quaternaria.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 62560,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "MS-MAMOGRAFIA"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Preservar fronteira 125/130: decisão de rastrear versus fundamentos de níveis de prevenção. Conferir exemplos de programas com normas atuais e evitar repetir a mesma explicação dos vieses."
+        }
+      ],
+      "source_sha256": "3936d88e1962cd767babb10f4d80170c0426e9647965b63cd1cdc648dbfcaaea"
+    },
+    {
+      "key": "lote-07-aula-126-cirrose-complicacoes",
+      "path": "apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 90111,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir referências por complicação e terapia; evitar usar portal genérico como sustentação de dose. Rastrear critérios de disfunção renal, sorologia/resposta virológica e contraindicações por função hepática."
+        }
+      ],
+      "source_sha256": "5b41b92d53e7469d52fc0b2578f77ed142ce27aa768383602a8c432cb17e6176"
+    },
+    {
+      "key": "lote-07-aula-127-hemorragia-digestiva-alta",
+      "path": "apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 76017,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reconciliar 127/132/136 como capítulos e integração clínica, com fronteiras explícitas. Conferir estratificação e tempo de endoscopia conforme estabilidade e fonte, sem produzir uma terceira cópia dos mesmos capítulos."
+        }
+      ],
+      "source_sha256": "e6b62fcdc9091608ad1d0361fd2818cae2958ba66b6412b24e5d9191ae17ba20"
+    },
+    {
+      "key": "lote-07-aula-128-sepse-choque-septico-pediatrico",
+      "path": "apostilas/_rascunhos/lote-07-aula-128-sepse-choque-septico-pediatrico.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 77275,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SSC-PEDIATRIA-2026"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Consolidar as versões e o complemento de sepse antes de contar extensão; conferir SSC 2026 e distinguir algoritmo adulto/pediátrico, recursos disponíveis e limites de cada recomendação."
+        }
+      ],
+      "source_sha256": "f82046c7586e4eecefea4b7664f5a04a30c417f9337c114313d82f8c783a1317"
+    },
+    {
+      "key": "lote-07-aula-129-amenorreia-auditoria-questoes",
+      "path": "apostilas/_rascunhos/lote-07-aula-129-amenorreia-auditoria-questoes.md",
+      "stage": "Complemento em Markdown; comparar e integrar ao caderno de origem",
+      "kind": "complemento-md",
+      "chars": 12978,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "ASRM-AMENORREIA"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Integrar somente o complemento, após comparação com o caderno de origem."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Este arquivo é complemento: comparar com o texto original, integrar no capítulo previsto e executar as questões contra o conteúdo resultante. Não exigir 60K para o complemento isolado nem contá-lo como novo livro."
+        }
+      ],
+      "source_sha256": "66cdf2a8e4fea113b5e2de4b28add2969a60eb3570b300bea29d40c59c17d0b4"
+    },
+    {
+      "key": "lote-07-aula-130-historia-natural-niveis-prevencao",
+      "path": "apostilas/_rascunhos/lote-07-aula-130-historia-natural-niveis-prevencao.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 70787,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Preservar fronteira 125/130: decisão de rastrear versus fundamentos de níveis de prevenção. Conferir exemplos de programas com normas atuais e evitar repetir a mesma explicação dos vieses."
+        }
+      ],
+      "source_sha256": "0d4b590d6243b429728aa03baec0ebcb656d33341b2ce0df0f769ab2b6dae3bd"
+    },
+    {
+      "key": "lote-07-aula-131-hepatites-virais",
+      "path": "apostilas/_rascunhos/lote-07-aula-131-hepatites-virais.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 68649,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir referências por complicação e terapia; evitar usar portal genérico como sustentação de dose. Rastrear critérios de disfunção renal, sorologia/resposta virológica e contraindicações por função hepática."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "c99d014d7a10d9d53565b4f37ea501c47d319c57e69f359e29d9c5367b0425de"
+    },
+    {
+      "key": "lote-07-aula-132-hemorragia-digestiva-baixa",
+      "path": "apostilas/_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 62251,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reconciliar 127/132/136 como capítulos e integração clínica, com fronteiras explícitas. Conferir estratificação e tempo de endoscopia conforme estabilidade e fonte, sem produzir uma terceira cópia dos mesmos capítulos."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "e248ca22bc6546551b8481c2fc57fe6930ea592d507d70f18532cc2e6db7e635"
+    },
+    {
+      "key": "lote-07-aula-133-meningites-encefalites",
+      "path": "apostilas/_rascunhos/lote-07-aula-133-meningites-encefalites.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 77807,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "WHO-MENINGITE-2025"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir diretriz OMS integral, doses por idade/função renal, critérios de imagem antes da punção e prioridade de antimicrobianos; o catálogo de publicação não valida o esquema."
+        }
+      ],
+      "source_sha256": "10dacd5dd14dab116f35c0a511c459381adade91555e9571f26b0019484bf2c1"
+    },
+    {
+      "key": "lote-07-aula-134-sop-auditoria-questoes",
+      "path": "apostilas/_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md",
+      "stage": "Complemento em Markdown; comparar e integrar ao caderno de origem",
+      "kind": "complemento-md",
+      "chars": 11426,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "MONASH-PMOS"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Integrar somente o complemento, após comparação com o caderno de origem."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Este arquivo é complemento: comparar com o texto original, integrar no capítulo previsto e executar as questões contra o conteúdo resultante. Não exigir 60K para o complemento isolado nem contá-lo como novo livro."
+        }
+      ],
+      "source_sha256": "a3f36d4b093b55548c0db1b95eee88fbdb9330b618b010d736fc630276196ac2"
+    },
+    {
+      "key": "lote-07-aula-135-imunizacoes-pni-2026",
+      "path": "apostilas/_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 79692,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir cada linha de idade, intervalo, dose e contraindicação no calendário/nota técnica PNI vigente. Registrar data de corte e não tratar calendário como recomendação permanente."
+        }
+      ],
+      "source_sha256": "b8e7a0b298e63ed4bd7b8ca7a28e160aae5c359d61d131ab53e68e12b1c10192"
+    },
+    {
+      "key": "lote-07-aula-136-hemorragia-digestiva-integrada",
+      "path": "apostilas/_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 64924,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reconciliar 127/132/136 como capítulos e integração clínica, com fronteiras explícitas. Conferir estratificação e tempo de endoscopia conforme estabilidade e fonte, sem produzir uma terceira cópia dos mesmos capítulos."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "a0fc644e95a451db9bdc992b41f3626d7f15990044278d7f70e475b7cc8b7755"
+    },
+    {
+      "key": "lote-07-aula-137-drge-hernia-hiatal",
+      "path": "apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 77310,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Localizar as recomendações nos capítulos indicados e verificar, uma a uma, os fundamentos, critérios, situações especiais e fontes; o roteiro de capítulos não equivale a cobertura integral."
+        }
+      ],
+      "source_sha256": "12a2f6c80cf6d880303c6b1d6cc6fd26799193ed19889620a7291db8c6f0dea0"
+    },
+    {
+      "key": "lote-07-aula-138-crises-convulsivas-estado-mal",
+      "path": "apostilas/_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 73291,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir doses e sequência temporal, contabilizando tratamento pré-hospitalar; separar vias e faixas etárias e ligar cada janela de reperfusão/crise à diretriz específica."
+        }
+      ],
+      "source_sha256": "847dc606b4fea76b9e79c970f2c9dca4fbe07084a2523a4819c30f80161244eb"
+    },
+    {
+      "key": "lote-07-aula-139-endometriose",
+      "path": "apostilas/_rascunhos/lote-07-aula-139-endometriose.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 74199,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir a atualização ACOG 2026 integral, FIGO 2023 e grupos moleculares ESGO antes de aprovar os casos; a existência de anúncio oficial não valida o algoritmo completo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir critérios contemporâneos de diagnóstico e indicação cirúrgica, separando manejo de dor de infertilidade; evitar apresentar cirurgia como requisito universal de diagnóstico."
+        }
+      ],
+      "source_sha256": "2fe8762f2b5a11d539862997529e05eb8dff0f9b03e16bc72f80c25a11b34ba9"
+    },
+    {
+      "key": "lote-07-aula-140-saude-crianca-aps",
+      "path": "apostilas/_rascunhos/lote-07-aula-140-saude-crianca-aps.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 74900,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir faixas etárias, curvas e instrumentos de desenvolvimento/pubertários nas fontes próprias; diferenciar recortes legais e biológicos e garantir método de avaliação ensinável."
+        }
+      ],
+      "source_sha256": "f9e9dfdacb393d3ba7c6b0afff5862a24340f36d0b71bc4cda527ef3a61198f1"
+    },
+    {
+      "key": "massas-anexiais-cancer-ovario--rascunho-editorial-lote09",
+      "path": "apostilas/massas-anexiais-cancer-ovario/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 95838,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear estadiamento e tratamento por histologia/situação. Separar diretriz internacional de incorporação/acesso no SUS e não extrapolar regime de um tumor para outro."
+        }
+      ],
+      "source_sha256": "71d0f76781f6ad559a5b7775ce4ff199f43d3a4b745bfd37f1ae7f59d9dcb9d0"
+    },
+    {
+      "key": "nodulos-cancer-tireoide--rascunho-editorial-lote09",
+      "path": "apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 11415,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Desenvolver reconhecimento de risco, TI-RADS/Bethesda, decisões cirúrgicas e seguimento, rastreando a atualização ATA citada; não tratar um roteiro de poucos casos como livro-texto final."
+        }
+      ],
+      "source_sha256": "b7bcb8d87582d848b66dee68190b97ba419844b22de216a191343d14db98a363"
+    },
+    {
+      "key": "planejamento-reprodutivo-contracepcao",
+      "path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 39065,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 7,
+        "pending_rows": 0,
+        "simulated_insertions": 7,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "CDC-CONTRACEPCAO"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 39065 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Renumerar capítulos e índice após a expansão por métodos: a sequência retorna de 16 para 7 e repete numerações."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Confrontar categorias e regras de início/esquecimento com OMS/CDC e separar as normas brasileiras de esterilização."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir documentação de licença dos dispositivos e a correspondência exata das sete figuras inseridas na simulação."
+        }
+      ],
+      "source_sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf"
+    },
+    {
+      "key": "pre-natal-baixo-risco",
+      "path": "apostilas/pre-natal-baixo-risco/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 70130,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Verificar vacinação e suplementação nas notas nacionais específicas e datas; não assumir que citações gerais cobrem todas as doses."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Consolidar os aprofundamentos posteriores ao corpo original para evitar repetição da consulta e da mesma investigação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Planejar esquemas originais de datação, exames e consultas; não foram encontradas imagens clínicas embutidas nem fila neste caminho."
+        }
+      ],
+      "source_sha256": "2a8f3db7afb2975ae6fe87c4329971e2a3e46d55a7cbbc4f5f85f615c7ae4c29"
+    },
+    {
+      "key": "principios-oncologia-cirurgica--rascunho-editorial-lote09",
+      "path": "apostilas/principios-oncologia-cirurgica/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 91115,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Rastrear estadiamento e tratamento por histologia/situação. Separar diretriz internacional de incorporação/acesso no SUS e não extrapolar regime de um tumor para outro."
+        }
+      ],
+      "source_sha256": "f965af599a1f894e6738cf56f91acd534837146aec264411884649ef2b41c5a7"
+    },
+    {
+      "key": "puberdade-adolescencia--rascunho-editorial-lote09",
+      "path": "apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 84910,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir faixas etárias, curvas e instrumentos de desenvolvimento/pubertários nas fontes próprias; diferenciar recortes legais e biológicos e garantir método de avaliação ensinável."
+        }
+      ],
+      "source_sha256": "5c251b011d60259fa34d134bcdf672893053fca22087a356bc19d338b93c9a95"
+    },
+    {
+      "key": "sangramento-uterino-anormal",
+      "path": "apostilas/sangramento-uterino-anormal/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 51845,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 1,
+        "approved_rows": 4,
+        "pending_rows": 0,
+        "simulated_insertions": 2,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 51845 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Parágrafo literal repetido 2 vezes: Como usar a classificação: PALM reúne causas estruturais, frequentemente identificáveis por imagem ou histologia; COEIN reúne causas não estruturais. Uma paciente pode ter mais de uma categoria ao mesmo tempo. Primeiro exclua gravidez e ava",
+          "action": "Consolidar a explicação e acrescentar conteúdo apenas onde há ganho pedagógico."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Resolver o PDF Femina que retornou 404 e conferir o texto oficial da incorporação de medicamentos/dispositivos antes de descrever acesso no SUS."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Comparar o complemento 124 e integrar questões ao local previsto sem duplicar casos existentes."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Preservar o bloqueio das figuras históricas 315/319 até licença/substituição; conferir as figuras efetivamente disponíveis."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "0f3ae79743c5fa83262af166d36863d06b4d3857b0b0afa5489cd5224ec00e24"
+    },
+    {
+      "key": "saude-do-trabalhador--rascunho-editorial-lote09",
+      "path": "apostilas/saude-do-trabalhador/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 104371,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reabrir normas oficiais e registrar dispositivo/artigo e vigência para cada decisão; dados de notificação devem manter ano, fonte e faixa etária, sem extrapolar para incidência atual."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "221ed1c677a96bc117ffcf1171946e8ee5cc1230681c84b244d6d756930c79c7"
+    },
+    {
+      "key": "sepse-choque-septico--complemento-editorial-02-lote09",
+      "path": "apostilas/sepse-choque-septico/complemento-editorial-02-lote09.md",
+      "stage": "Complemento em Markdown; comparar e integrar ao caderno de origem",
+      "kind": "complemento-md",
+      "chars": 12567,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SSC-ADULTO-2026"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Integrar somente o complemento, após comparação com o caderno de origem."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Consolidar as versões e o complemento de sepse antes de contar extensão; conferir SSC 2026 e distinguir algoritmo adulto/pediátrico, recursos disponíveis e limites de cada recomendação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Este arquivo é complemento: comparar com o texto original, integrar no capítulo previsto e executar as questões contra o conteúdo resultante. Não exigir 60K para o complemento isolado nem contá-lo como novo livro."
+        },
+        {
+          "priority": "P2",
+          "evidence": "1 URLs retornaram 404/410 na forma extraída.",
+          "action": "Conferir o link no original, localizar endereço oficial válido e verificar se edição/trecho sustentam a recomendação. Não concluir que a publicação inexiste."
+        }
+      ],
+      "source_sha256": "e3d9bfd6c157c797b6b61bb87fbe065bf70073b8255c1a2dfaee043d8150d56e"
+    },
+    {
+      "key": "sepse-choque-septico--rascunho-editorial-lote09",
+      "path": "apostilas/sepse-choque-septico/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 12743,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "SSC-ADULTO-2026"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Consolidar as versões e o complemento de sepse antes de contar extensão; conferir SSC 2026 e distinguir algoritmo adulto/pediátrico, recursos disponíveis e limites de cada recomendação."
+        }
+      ],
+      "source_sha256": "65865c668fcff55acdf2d51fca841b3f470ae4ebefdb46a5fc6849a4ae651947"
+    },
+    {
+      "key": "sexualidade-masculina",
+      "path": "apostilas/sexualidade-masculina/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 35007,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "EAU-SEXUALIDADE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 35007 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Aprofundar e rastrear diagnóstico de hipogonadismo, indicação de testosterona, fertilidade e doses ajustadas."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir os algoritmos de urgência e falha terapêutica diretamente na edição EAU correspondente."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Planejar recursos visuais úteis; nenhum registro de imagem foi localizado neste caminho do banco."
+        }
+      ],
+      "source_sha256": "a17205f7c7b5cf70ebae9691cfeb1a99ad349901fbc7ddd0f7970fb711cd2115"
+    },
+    {
+      "key": "sexualidade",
+      "path": "apostilas/sexualidade/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 34134,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 34134 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Completar tratamentos e critérios com indicação, contraindicações e limites de evidência, sem patologizar experiências sem sofrimento clínico."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Distinguir a discussão de testosterona sistêmica das demais intervenções e verificar a situação regulatória brasileira."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Priorizar anatomia e exames pertinentes; não usar imagens decorativas para substituir didática ou atingir contagem."
+        }
+      ],
+      "source_sha256": "a17168795522c9eb32a42033dfaa7894be686822740e68fa7f8c3cb0faf0fc8b"
+    },
+    {
+      "key": "sindrome-ovariana-metabolica-poliendocrina-somp",
+      "path": "apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 28600,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 1,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "MONASH-PMOS"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 28600 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Padronizar os aliases SOP/SOMP/PMOS e a tradução sem romper as rotas. A atualização internacional do nome em 2026 foi confirmada na Monash."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Integrar o complemento 134 após comparação, expandindo riscos, farmacologia e seguimento nas lacunas reais."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Citar versão/trecho para contagem folicular, uso de AMH e critérios por anos de menarca, evitando afirmar que uma atualização de nome substitui toda a diretriz."
+        }
+      ],
+      "source_sha256": "9b202cc10fd46a359877d63ecfe7e54c5c2ce03180bad284f25217eda7d98279"
+    },
+    {
+      "key": "sindromes-hipertensivas-da-gestacao",
+      "path": "apostilas/sindromes-hipertensivas-da-gestacao/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 53270,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "NICE-HIPERTENSAO"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Triagem estrita: 53270 caracteres úteis estimados.",
+          "action": "Completar objetivos ausentes com conteúdo novo, depois recontar sem redundâncias; não preencher apenas o déficit aritmético."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir todos os esquemas de sulfato de magnésio, antídoto, anti-hipertensivos, resolução e prevenção nas fontes RBEHG/MS."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Distinguir recomendação contextual de cálcio e política nacional; registrar faixas e contraindicações por fonte."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Criar fluxos originais de gravidade e vigilância; não foram encontrados registros atuais de imagens neste caminho."
+        }
+      ],
+      "source_sha256": "27a967280b46f15f1df8ec1eac2d28258d2738145f74b55ae703d93de9f1f29d"
+    },
+    {
+      "key": "trabalho-parto-prematuro",
+      "path": "apostilas/trabalho-parto-prematuro/content.json",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 60374,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "NICE-PREMATURIDADE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir as janelas de progesterona, corticoide, tocólise e neuroproteção por diretriz e situação de membranas."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Revisar diferenças entre critérios de triagem e de diagnóstico e demonstrar conduta em resultados discordantes."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Buscar imagens/exames pertinentes e aprová-los no fluxo central; o caderno passa na triagem de extensão, mas não tem imagens na fila consultada."
+        }
+      ],
+      "source_sha256": "73a8fbb2ba3972ccb99729e19b013f1bbbe8e3064e27fa0eddbb7dc811b793b6"
+    },
+    {
+      "key": "urgencias-pediatricas-suporte-basico-avancado--rascunho-editorial-lote09",
+      "path": "apostilas/urgencias-pediatricas-suporte-basico-avancado/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 99426,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir atualização AHA/AAP, faixa etária e todos os cálculos de drogas/energia; separar ressuscitação neonatal, SBV e PALS. Não reproduzir algoritmos protegidos como imagens sem licença."
+        }
+      ],
+      "source_sha256": "5c2e172174012e49128f42050fa7014a350dfd1f75bbac55141c1cb182c15cd5"
+    },
+    {
+      "key": "violencia-maus-tratos-criancas-adolescentes--rascunho-editorial-lote09",
+      "path": "apostilas/violencia-maus-tratos-criancas-adolescentes/rascunho-editorial-lote09.md",
+      "stage": "Manuscrito em Markdown; revisão e integração pendentes",
+      "kind": "rascunho-md",
+      "chars": 64494,
+      "chars_certified": false,
+      "db_published": false,
+      "images": {
+        "inline": 0,
+        "approved_rows": 0,
+        "pending_rows": 0,
+        "simulated_insertions": 0,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Arquivo Markdown; não há HTML neste artefato.",
+          "action": "Revisar o manuscrito, preparar entrada compatível com o gerador/renderer, validar e só então habilitar acesso no catálogo."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Reabrir normas oficiais e registrar dispositivo/artigo e vigência para cada decisão; dados de notificação devem manter ano, fonte e faixa etária, sem extrapolar para incidência atual."
+        }
+      ],
+      "source_sha256": "f2f25832563167d42446148549ddd7c92256c8e57c83e21852d9229574b74644"
+    },
+    {
+      "key": "vulvovaginites",
+      "path": "apostilas/vulvovaginites/index.html",
+      "stage": "HTML existente; aprovação clínica integral não certificada",
+      "kind": "apostila-html",
+      "chars": 69482,
+      "chars_certified": false,
+      "db_published": true,
+      "images": {
+        "inline": 4,
+        "approved_rows": 9,
+        "pending_rows": 0,
+        "simulated_insertions": 2,
+        "clinical_visual_review": false
+      },
+      "clinical_review": "confronto focal quando indicado; revisão integral não certificada",
+      "scientific_checks": [
+        "CDC-CANDIDIASE",
+        "CDC-TRICOMONIASE",
+        "CDC-VAGINOSE"
+      ],
+      "actions": [
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Concluir comparação entre recomendações históricas CDC e atualização ACOG/ensaio de 2025 para parcerias na vaginose recorrente."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Conferir espécies não-albicans, falha terapêutica e situações especiais em fonte primária; não extrapolar fluconazol para gestação."
+        },
+        {
+          "priority": "P2",
+          "evidence": "Leitura focal de objetivos, capítulos, trechos e referências deste arquivo.",
+          "action": "Preservar figuras existentes e conferir as duas inserções adicionais escolhidas pelo renderer, sem transformar nove aprovações em galeria."
+        }
+      ],
+      "source_sha256": "e709fc7af0ce78de9330446259e611ec865d72f35c817b1cd63706883dd162bf"
+    }
+  ]
+}

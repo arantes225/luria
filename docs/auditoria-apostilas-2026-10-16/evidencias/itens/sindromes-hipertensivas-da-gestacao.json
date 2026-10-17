@@ -1,0 +1,755 @@
+{
+  "key": "sindromes-hipertensivas-da-gestacao",
+  "kind": "apostila-html",
+  "path": "apostilas/sindromes-hipertensivas-da-gestacao/index.html",
+  "html_path": "apostilas/sindromes-hipertensivas-da-gestacao/index.html",
+  "title": "Síndromes hipertensivas da gestação",
+  "source_sha256": "27a967280b46f15f1df8ec1eac2d28258d2738145f74b55ae703d93de9f1f29d",
+  "html_sha256": "27a967280b46f15f1df8ec1eac2d28258d2738145f74b55ae703d93de9f1f29d",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H4",
+      "title": "O que você precisa lembrar",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Antes de 20 semanas",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Após 20 semanas",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Deterioração",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Emergências",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Classificação completa",
+      "section": "classificacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Fenótipos adicionais",
+      "section": "classificacao"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Definição e aferição correta da pressão arterial",
+      "section": "pa"
+    },
+    {
+      "tag": "H4",
+      "title": "Não espere 4 horas diante de PA grave",
+      "section": "pa"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Hipertensão arterial crônica",
+      "section": "cronica"
+    },
+    {
+      "tag": "H3",
+      "title": "Avaliação basal",
+      "section": "cronica"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento",
+      "section": "cronica"
+    },
+    {
+      "tag": "H3",
+      "title": "Fármacos a evitar durante a gestação",
+      "section": "cronica"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Hipertensão gestacional",
+      "section": "gestacional"
+    },
+    {
+      "tag": "H3",
+      "title": "O que procurar em cada reavaliação",
+      "section": "gestacional"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Pré-eclâmpsia: diagnóstico sem simplificações",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Proteinúria significativa",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Pré-eclâmpsia sem proteinúria",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Disfunção uteroplacentária",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Fisiopatologia em duas etapas",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Precoce x tardia",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Biomarcadores angiogênicos",
+      "section": "preeclampsia"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Pré-eclâmpsia com sinais de deterioração clínica/laboratorial",
+      "section": "gravidade"
+    },
+    {
+      "tag": "H4",
+      "title": "Não espere a paciente “ficar muito doente”",
+      "section": "gravidade"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Pré-eclâmpsia sobreposta à hipertensão crônica",
+      "section": "sobreposta"
+    },
+    {
+      "tag": "H3",
+      "title": "Critérios que aumentam fortemente a suspeita segundo a RBEHG",
+      "section": "sobreposta"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Eclâmpsia",
+      "section": "eclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Conduta imediata",
+      "section": "eclampsia"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando pensar em outra causa",
+      "section": "eclampsia"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Síndrome HELLP",
+      "section": "hellp"
+    },
+    {
+      "tag": "H3",
+      "title": "Apresentação clínica",
+      "section": "hellp"
+    },
+    {
+      "tag": "H3",
+      "title": "Complicações",
+      "section": "hellp"
+    },
+    {
+      "tag": "H4",
+      "title": "Dor em HCD + HELLP = pense no fígado",
+      "section": "hellp"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Crise hipertensiva na gestação",
+      "section": "crise"
+    },
+    {
+      "tag": "H3",
+      "title": "Meta inicial",
+      "section": "crise"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Sulfato de magnésio: prevenção e tratamento da eclâmpsia",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Esquemas aceitos pela RBEHG",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Antes de manter a próxima dose",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Insuficiência renal",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Toxicidade e antídoto",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Recorrência da convulsão",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Duração",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Prevenção",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Ácido acetilsalicílico",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H4",
+      "title": "Fatores de alto risco",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Cálcio",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H4",
+      "title": "O que não previne pré-eclâmpsia de rotina",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Avaliação fetal",
+      "section": "feto"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Momento da resolução da gestação",
+      "section": "parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Indicações fortes de resolução",
+      "section": "parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Corticoide antenatal",
+      "section": "parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Neuroproteção fetal",
+      "section": "parto"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Puerpério hipertensivo",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H3",
+      "title": "Sinais de alarme após a alta",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H3",
+      "title": "Acompanhamento",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H4",
+      "title": "Mensagem de longo prazo",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H3",
+      "title": "Alta com plano, não apenas com uma receita",
+      "section": "puerperio"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Diagnósticos diferenciais e mimetizadores",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H2",
+      "title": "16.1. Microangiopatias no fim da gestação e no puerpério: HELLP, PTT e SHU atípica",
+      "section": "microangiopatias-gestacao-puerperio-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Comece pela síndrome, não pela sigla",
+      "section": "microangiopatias-gestacao-puerperio-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "O tempo após o parto é uma pista, não uma regra absoluta",
+      "section": "microangiopatias-gestacao-puerperio-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Três casos com raciocínio diferencial",
+      "section": "microangiopatias-gestacao-puerperio-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Plano de segurança para a alta e a reavaliação",
+      "section": "microangiopatias-gestacao-puerperio-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "18. Questões de fixação",
+      "section": "questoes"
+    },
+    {
+      "tag": "H2",
+      "title": "19. Aprofundamento: endotélio, placenta, órgãos-alvo e puerpério",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Desequilíbrio angiogênico",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Rim: por que aparece proteinúria?",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Fígado e plaquetas",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Cérebro e eclâmpsia",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Pulmão e balanço hídrico",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Puerpério: a placenta saiu, o risco não termina",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Fenótipos e critérios",
+      "section": "editorial-depth-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Gravidade e decisão de parto",
+      "section": "editorial-depth-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H2",
+      "title": "20. Fundamentos avançados: da placentação ao cuidado materno-fetal",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.1 A circulação uteroplacentária normal e o desafio da adaptação vascular",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.2 Da placenta ao endotélio: por que vários órgãos adoecem ao mesmo tempo",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.3 Proteinúria e função renal: o que o exame mostra e o que ele não consegue mostrar",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.4 Fígado, plaquetas e hemólise: como reconhecer a síndrome HELLP sem atalhos",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.5 O encéfalo, as convulsões e o papel específico do sulfato de magnésio",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.6 Crise hipertensiva e edema pulmonar: evitar dois erros opostos",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.7 A placenta também adoece: interpretar crescimento fetal e Doppler",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.8 Puerpério e vida futura: por que o parto não encerra o cuidado",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "20.9 Casos comentados: três decisões que parecem semelhantes, mas não são",
+      "section": "aprofundamento-mecanistico-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências prioritárias",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio avançado e situações de risco",
+      "section": "raciocinio-avancado-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Hipertensão gestacional versus pré-eclâmpsia",
+      "section": "raciocinio-avancado-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Pré-eclâmpsia sobreposta e HELLP",
+      "section": "raciocinio-avancado-sindromes-hipertensivas-da-gestacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Eclâmpsia: duas terapias para dois objetivos",
+      "section": "raciocinio-avancado-sindromes-hipertensivas-da-gestacao"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1350
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 426
+    },
+    {
+      "id": "classificacao",
+      "title": "1. Classificação completa",
+      "chars": 1087
+    },
+    {
+      "id": "pa",
+      "title": "2. Definição e aferição correta da pressão arterial",
+      "chars": 867
+    },
+    {
+      "id": "cronica",
+      "title": "3. Hipertensão arterial crônica",
+      "chars": 1433
+    },
+    {
+      "id": "gestacional",
+      "title": "4. Hipertensão gestacional",
+      "chars": 695
+    },
+    {
+      "id": "preeclampsia",
+      "title": "5. Pré-eclâmpsia: diagnóstico sem simplificações",
+      "chars": 2221
+    },
+    {
+      "id": "gravidade",
+      "title": "6. Pré-eclâmpsia com sinais de deterioração clínica/laboratorial",
+      "chars": 1027
+    },
+    {
+      "id": "sobreposta",
+      "title": "7. Pré-eclâmpsia sobreposta à hipertensão crônica",
+      "chars": 866
+    },
+    {
+      "id": "eclampsia",
+      "title": "8. Eclâmpsia",
+      "chars": 1322
+    },
+    {
+      "id": "hellp",
+      "title": "9. Síndrome HELLP",
+      "chars": 979
+    },
+    {
+      "id": "crise",
+      "title": "10. Crise hipertensiva na gestação",
+      "chars": 1074
+    },
+    {
+      "id": "magnesio",
+      "title": "11. Sulfato de magnésio: prevenção e tratamento da eclâmpsia",
+      "chars": 1610
+    },
+    {
+      "id": "prevencao",
+      "title": "12. Prevenção",
+      "chars": 2101
+    },
+    {
+      "id": "feto",
+      "title": "13. Avaliação fetal",
+      "chars": 690
+    },
+    {
+      "id": "parto",
+      "title": "14. Momento da resolução da gestação",
+      "chars": 1735
+    },
+    {
+      "id": "puerperio",
+      "title": "15. Puerpério hipertensivo",
+      "chars": 1955
+    },
+    {
+      "id": "diferenciais",
+      "title": "16. Diagnósticos diferenciais e mimetizadores",
+      "chars": 818
+    },
+    {
+      "id": "microangiopatias-gestacao-puerperio-2026",
+      "title": "16.1. Microangiopatias no fim da gestação e no puerpério: HELLP, PTT e SHU atípica",
+      "chars": 5474
+    },
+    {
+      "id": "casos",
+      "title": "17. Casos integradores",
+      "chars": 1278
+    },
+    {
+      "id": "questoes",
+      "title": "18. Questões de fixação",
+      "chars": 1688
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "19. Aprofundamento: endotélio, placenta, órgãos-alvo e puerpério",
+      "chars": 2634
+    },
+    {
+      "id": "editorial-depth-sindromes-hipertensivas-da-gestacao",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 658
+    },
+    {
+      "id": "aprofundamento-mecanistico-40k",
+      "title": "20. Fundamentos avançados: da placentação ao cuidado materno-fetal",
+      "chars": 18745
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 1438
+    },
+    {
+      "id": "raciocinio-avancado-sindromes-hipertensivas-da-gestacao",
+      "title": "Raciocínio avançado e situações de risco",
+      "chars": 1578
+    }
+  ],
+  "references": [
+    "Rede Brasileira de Estudos sobre Hipertensão na Gravidez (RBEHG). Pré-eclâmpsia — Protocolo Assistencial 2025.",
+    "RBEHG. Hipertensão Arterial Crônica — Protocolo 2025.",
+    "RBEHG. Síndrome HELLP — Protocolo 2025.",
+    "RBEHG. Puerpério — Protocolo Assistencial 2025.",
+    "RBEHG. Recomendação para reposição de cálcio em gestantes. 2026.",
+    "WHO. Maternal health guidelines 2025: calcium supplementation in populations with low calcium intake. Context-specific recommendation.",
+    "NICE. Hypertension in pregnancy: diagnosis and management (NG133). Atualização 2023; acompanhamento no puerpério.",
+    "International Working Group. Management of thrombotic microangiopathy in pregnancy and postpartum. 2020.",
+    "FEBRASGO. Comissão Nacional Especializada em Hipertensão na Gestação. Atualizações institucionais 2026.",
+    "Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco. Brasília: Ministério da Saúde; 2022.",
+    "ACOG. Gestational Hypertension and Preeclampsia. Practice Bulletin No. 222; reaffirmed 2026.",
+    "ACOG. Clinical Guidance for the Integration of the Findings of the Chronic Hypertension and Pregnancy (CHAP) Study. Reaffirmed 2025.",
+    "Tita ATN et al. Treatment for Mild Chronic Hypertension during Pregnancy. N Engl J Med. 2022.",
+    "Nota editorial: quando há divergência entre protocolos internacionais e nacionais, esta apostila prioriza a RBEHG/FEBRASGO/Ministério da Saúde para prática e provas brasileiras e explicita particularidades relevantes."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "RBEHG/CNE-FEBRASGO — documento de 28/03/2026",
+      "url": "https://rbehg.com.br/wp-content/uploads/2026/04/Recomendacao_Calcio_PE_2026.pdf",
+      "in_references": false
+    },
+    {
+      "label": "RBEHG/CNE-FEBRASGO, março 2026",
+      "url": "https://rbehg.com.br/wp-content/uploads/2026/04/Recomendacao_Calcio_PE_2026.pdf",
+      "in_references": false
+    },
+    {
+      "label": "OMS, recomendações maternas 2025",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK615641/table/part1.tab212/",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG133 — monitorização pós-natal",
+      "url": "https://www.nice.org.uk/guidance/ng133/chapter/recommendations",
+      "in_references": false
+    },
+    {
+      "label": "revisão HELLP e microangiopatias trombóticas, 2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10887663/",
+      "in_references": false
+    },
+    {
+      "label": "grupo internacional de microangiopatias na gestação e puerpério",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32808006/",
+      "in_references": false
+    },
+    {
+      "label": "NICE NG133, seguimento no pós-parto",
+      "url": "https://www.nice.org.uk/guidance/ng133/chapter/recommendations",
+      "in_references": false
+    },
+    {
+      "label": "rbehg.com.br/protocolos",
+      "url": "https://rbehg.com.br/protocolos/",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 12,
+  "paragraphs": 100,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "cronica",
+      "text": "É considerada crônica quando já era conhecida antes da gravidez, é identificada antes de 20 semanas ou permanece além de 12 semanas pós-parto.",
+      "pattern": 0
+    },
+    {
+      "section": "gestacional",
+      "text": "É hipertensão identificada após 20 semanas em gestante previamente normotensa, sem proteinúria significativa e sem sinais ou sintomas de disfunção de órgão-alvo.",
+      "pattern": 0
+    },
+    {
+      "section": "gestacional",
+      "text": "Se a hipertensão persistir além de 12 semanas do puerpério, o diagnóstico passa a ser compatível com hipertensão crônica.",
+      "pattern": 0
+    },
+    {
+      "section": "preeclampsia",
+      "text": "A pré-eclâmpsia é uma síndrome multissistêmica. Em mulher previamente normotensa, surge após 20 semanas com hipertensão associada a proteinúria significativa e/ou disfunção de órgão-alvo.",
+      "pattern": 0
+    },
+    {
+      "section": "gestacional",
+      "text": "A RBEHG destaca que até cerca de 25% dessas gestantes podem posteriormente preencher critérios para pré-eclâmpsia. Portanto, o diagnóstico é dinâmico.",
+      "pattern": 1
+    },
+    {
+      "section": "gestacional",
+      "text": "Se a hipertensão persistir além de 12 semanas do puerpério, o diagnóstico passa a ser compatível com hipertensão crônica.",
+      "pattern": 1
+    },
+    {
+      "section": "preeclampsia",
+      "text": "Na ausência de proteinúria, o diagnóstico pode ser estabelecido com hipertensão de início após 20 semanas associada a disfunção de órgão-alvo, como plaquetopenia, insuficiência renal, disfunção hepática, edema pulmonar ou alterações neurológicas/visuais compatíveis.",
+      "pattern": 1
+    },
+    {
+      "section": "preeclampsia",
+      "text": "A razão sFlt-1/PlGF pode auxiliar em casos de suspeita clínica entre 24 e 36 6/7 semanas, especialmente para afastar pré-eclâmpsia. Não substitui os exames diagnósticos habituais e não deve ser usada como rastreio de rotina.",
+      "pattern": 1
+    },
+    {
+      "section": "prevencao",
+      "text": "No protocolo RBEHG 2025, para gestantes com risco aumentado, recomenda-se AAS 100 mg à noite, com início na 12ª semana, idealmente entre 12 e 16 semanas. Se não iniciado nesse intervalo, ainda pode haver benefício até 20 semanas. O protocolo recomenda suspender com 36 semanas e também suspender quando a pré-eclâmpsia já se instalou.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao",
+      "text": "Atualização de março de 2026: a RBEHG e a CNE de Hipertensão da FEBRASGO passaram a não recomendar cálcio com a finalidade de prevenir pré-eclâmpsia, após reavaliação das evidências. Isso atualiza a posição dessas entidades de 2025; não significa que todo documento do Ministério da Saúde ou da OMS tenha mudado ao mesmo tempo. A recomendação do MS de suplementação no pré-natal deve ser identificada como orientação de fonte e data distintas. Cálcio pode ter outras indicações nutricionais. Ao prescrever, distinguir cálcio elementar da massa de carbonato e separar do ferro. RBEHG/CNE-FEBRASGO — documento de 28/03/2026.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao",
+      "text": "RBEHG e CNE/FEBRASGO (posição de março de 2026): deixaram de recomendar suplementação de cálcio especificamente para prevenir pré-eclâmpsia, após reavaliação da metanálise Cochrane de 2025. OMS (recomendação vigente consultada em 2026): mantém suplementação de 1,5–2 g/dia de cálcio elementar para gestantes em populações com baixa ingestão dietética, enquanto revisa a base de evidências. Essas posições não devem ser misturadas nem apresentadas como consenso. A prescrição individual deve seguir o protocolo aplicável e considerar nutrição, comorbidades e segurança.",
+      "pattern": 2
+    },
+    {
+      "section": "puerperio",
+      "text": "Mulheres que recebem alta ainda hipertensas em uso de medicação precisam de aferição precoce e frequente. A RBEHG 2025 recomenda atenção especial ao risco cardiovascular, renal e metabólico nos meses e anos seguintes.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "classificacao",
+      "text": "A nomenclatura “DHEG” é insuficiente para o raciocínio atual. O primeiro passo é dizer qual síndrome hipertensiva a paciente apresenta."
+    },
+    {
+      "section": "classificacao",
+      "text": "A ISSHP e a RBEHG também reconhecem situações como hipertensão do jaleco branco, hipertensão mascarada e hipertensão gestacional transitória. Elas não são curiosidades: associam-se a maior risco de evolução para pré-eclâmpsia e exigem seguimento adequado."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 0
+  }
+}

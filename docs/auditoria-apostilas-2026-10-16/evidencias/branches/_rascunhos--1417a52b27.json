@@ -1,0 +1,301 @@
+{
+  "sha": "1417a52b27a49a2208538af6339f83ff1638c6a4",
+  "path": "apostilas/_rascunhos/lote-13-275-emergencias-cirurgia-pediatrica.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--1417a52b27",
+  "title": "LURIA — Lote 13 · Apostila 275",
+  "format": ".md",
+  "chars_estimated": 64480,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 275"
+    },
+    {
+      "title": "Emergências de cirurgia pediátrica: abdome agudo, escroto agudo, hérnias e uropediatria"
+    },
+    {
+      "title": "1. Fundamentos e reconhecimento de gravidade"
+    },
+    {
+      "title": "2. Obstrução intestinal pediátrica: mecanismo e localização"
+    },
+    {
+      "title": "Como escolher imagem"
+    },
+    {
+      "title": "3. Malrotação intestinal e volvo de intestino médio"
+    },
+    {
+      "title": "4. Invaginação intestinal"
+    },
+    {
+      "title": "Reconhecer apresentação precoce e atípica"
+    },
+    {
+      "title": "Tratamento e contraindicações da redução por enema"
+    },
+    {
+      "title": "5. Estenose hipertrófica do piloro"
+    },
+    {
+      "title": "6. Apendicite aguda em crianças"
+    },
+    {
+      "title": "7. Hérnias inguinais e encarceramento"
+    },
+    {
+      "title": "8. Escroto agudo — torção testicular como prioridade"
+    },
+    {
+      "title": "9. Criptorquidia e anomalias urológicas"
+    },
+    {
+      "title": "Hidronefrose pré-natal e obstruções do trato urinário"
+    },
+    {
+      "title": "10. Outros diagnósticos cirúrgicos importantes"
+    },
+    {
+      "title": "11. Comparações úteis para prova"
+    },
+    {
+      "title": "12. Algoritmos de emergência"
+    },
+    {
+      "title": "A — Vômitos em lactente"
+    },
+    {
+      "title": "B — Dor escrotal"
+    },
+    {
+      "title": "C — Dor abdominal e massa inguinal"
+    },
+    {
+      "title": "12A. A primeira hora do abdome agudo pediátrico: estabilização, exames e prioridades"
+    },
+    {
+      "title": "O abdome agudo da criança não é o abdome adulto em miniatura"
+    },
+    {
+      "title": "Mapa sindrômico por sintomas dominantes"
+    },
+    {
+      "title": "Laboratório, imagem e radiação: cada exame deve responder a uma pergunta"
+    },
+    {
+      "title": "12B. Vômitos e obstrução por faixa etária: malrotação, atresias, íleo meconial e Hirschsprung"
+    },
+    {
+      "title": "Rotação/fixação embrionária e volvo do intestino médio"
+    },
+    {
+      "title": "Atresias intestinais: nível determina o padrão"
+    },
+    {
+      "title": "Íleo meconial e a ligação com fibrose cística"
+    },
+    {
+      "title": "Hirschsprung: obstrução funcional e emergência enterocolítica"
+    },
+    {
+      "title": "Enterocolite necrosante e diferença para alergia/intolerância alimentar"
+    },
+    {
+      "title": "12C. Invaginação ileocólica: por que a tríade de prova não é a porta de entrada"
+    },
+    {
+      "title": "Sintomas mudam à medida que há congestão e comprometimento vascular"
+    },
+    {
+      "title": "Redução e riscos: uma intervenção que exige retaguarda cirúrgica"
+    },
+    {
+      "title": "Um exemplo de decisão e três alternativas erradas"
+    },
+    {
+      "title": "12D. Piloro, apendicite e diferenciais: a decisão terapêutica muda com o mecanismo"
+    },
+    {
+      "title": "A alcalose do piloro é fator anestésico, não apenas pista de prova"
+    },
+    {
+      "title": "Apendicite: probabilidade, imagem por etapas e tomada de decisão informada"
+    },
+    {
+      "title": "Tratamento da apendicite não se resume a “operar todo mundo igual”"
+    },
+    {
+      "title": "Um diagnóstico ginecológico ou urológico pode simular apendicite"
+    },
+    {
+      "title": "12E. Parede abdominal, canal inguinal e escroto agudo"
+    },
+    {
+      "title": "Hérnia inguinal: o saco pode conter mais que intestino"
+    },
+    {
+      "title": "Torção testicular: a janela importa, mas não é “prazo de desistência”"
+    },
+    {
+      "title": "Dor escrotal na criança antes da puberdade"
+    },
+    {
+      "title": "12F. Emergências uropediátricas e condições que parecem “apenas constipação”"
+    },
+    {
+      "title": "Hidronefrose congênita versus obstrução aguda"
+    },
+    {
+      "title": "Obstrução por cálculo, pielonefrite e sepse"
+    },
+    {
+      "title": "Constipação funcional versus alarme cirúrgico"
+    },
+    {
+      "title": "12G. Segurança da alta, comunicação com centro cirúrgico e retorno"
+    },
+    {
+      "title": "Quando o pediatra pode observar e quando não pode"
+    },
+    {
+      "title": "O que deve constar na passagem de caso ao cirurgião"
+    },
+    {
+      "title": "12H. Casos integrados adicionais e questões autorais"
+    },
+    {
+      "title": "Caso A — vômito verde em recém-nascido aparentemente estável"
+    },
+    {
+      "title": "Caso B — letargia inexplicada com dor episódica"
+    },
+    {
+      "title": "Caso C — piloro e risco anestésico"
+    },
+    {
+      "title": "Caso D — adolescente com dor abdominal que é escroto agudo"
+    },
+    {
+      "title": "Caso E — hérnia de menina lactente"
+    },
+    {
+      "title": "Caso F — apendicite em criança com USG inconclusivo"
+    },
+    {
+      "title": "Questões comentadas de alta transferência"
+    },
+    {
+      "title": "Pautas adicionais de imagem — nunca publicar antes da licença e da revisão"
+    },
+    {
+      "title": "Referências e comparador desta ampliação"
+    },
+    {
+      "title": "13. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — O recém-nascido que vomita verde uma única vez"
+    },
+    {
+      "title": "Caso 2 — Lactente com cólicas episódicas e letargia"
+    },
+    {
+      "title": "Caso 3 — Vômitos em jato progressivos e alcalose"
+    },
+    {
+      "title": "Caso 4 — Adolescente com dor escrotal súbita"
+    },
+    {
+      "title": "14. Questões autorais comentadas"
+    },
+    {
+      "title": "15. Pulo do Gato"
+    },
+    {
+      "title": "16. Imagens didáticas — apenas pautas de curadoria Admin"
+    },
+    {
+      "title": "17. Referências científicas verificadas"
+    },
+    {
+      "title": "18. Auditoria preliminar — NÃO CONCLUÍDA"
+    }
+  ],
+  "reference_entries": [
+    "- Royal Children's Hospital Melbourne. **Vomiting**: vômito bilioso verde e obstrução até exclusão. https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/",
+    "- Royal Children's Hospital Melbourne. **Intussusception**: USG como método inicial, enema com retaguarda, contraindicações e seguimento. https://www.rch.org.au/clinicalguide/guideline_index/Intussusception_Guideline/",
+    "- Royal Children's Hospital Melbourne. **Acute scrotal pain or swelling**: torção e hérnia irredutível como emergências; Doppler seletivo sem atrasar cirurgia. https://www.rch.org.au/clinicalguide/guideline_index/Acute_Scrotal_Pain_or_Swelling/",
+    "- Di Saverio S et al. **Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines**. *World J Emerg Surg* 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7386163/",
+    "- EAU. **Paediatric Urology**. https://uroweb.org/guidelines/paediatric-urology",
+    "- *Comparador de estrutura lido no Drive:* **Abdome Agudo Obstrutivo** (ênfase predominante em adultos). Não cobre malrotação neonatal, intussuscepção e torção testicular no mesmo nível; por isso serve apenas de **benchmark parcial**, sem copiar texto/imagens. O manuscrito já registrava outros comparadores de apendicite/hidronefrose na sua etapa anterior, igualmente parciais.",
+    "**Auditoria provisória:** casos e questões foram expandidos sem substituir os já existentes. Falta revisão por cirurgião pediátrico, confirmação local das doses, comparação com livro pediátrico integral, licença/curadoria de imagens, validação de 60 mil caracteres *didáticos úteis* e testes responsivos. **Permanecer em _rascunhos; não publicar.**",
+    "**Q1.** RN estável vomita líquido verde escuro uma vez. Melhor atitude?  ",
+    "**Gabarito C.** Verde é bilioso e obriga investigar obstrução; A/B/D/E atrasam avaliação de isquemia. **Revisão:** um vômito bilioso pode preceder volvo grave.",
+    "**Q2.** Lactente com cólicas em crises, palidez, períodos bem entre crises, sem sangue nas fezes. Melhor hipótese/exame?  ",
+    "**Gabarito A.** Apresentação intermitente, mesmo sem sangue, é típica. Outras alternativas não conciliam faixa etária e quadro/exame. **Revisão:** sinal do alvo e redução por enema em elegíveis.",
+    "**Q3.** Invaginação confirmada por US em lactente com choque e peritonite. Próxima atitude?  ",
+    "**Gabarito B.** Instabilidade, peritonite e perfuração contraindicam redução por enema. A expõe a dano; C/D/E ignoram emergência. **Revisão:** estabilidade é pré-requisito de tratamento não operatório.",
+    "**Q4.** Lactente de seis semanas, vômitos em jato não biliosos, alcalose hipoclorêmica. Conduta correta?  ",
+    "**Gabarito C.** Anestesia com alcalose e distúrbio eletrolítico importante traz risco; A é insegura e as demais não tratam obstrução pilórica. **Revisão:** piloro = cirurgia após estabilização.",
+    "**Q5.** Adolescente com escroto agudo súbito e alta suspeita de torção testicular. Qual prioridade?  ",
+    "**Gabarito B.** Tempo determina viabilidade, e US pode ser falso-tranquilizador/atrasar. A/C/D/E não são condutas adequadas. **Revisão:** torção é diagnóstico cirúrgico e emergência tempo-dependente.",
+    "**Q6.** Lactente com testículo não descido unilateral palpável aos nove meses (idade corrigida). Melhor orientação?  ",
+    "**Gabarito C.** Após seis meses a chance de descida espontânea diminui; EAU favorece intervenção precoce. A/B/E atrasam solução; D ignora risco residual. **Revisão:** diferenciar testículo retrátil do verdadeiro não descido.",
+    "- **Bile verde é cirúrgica até prova em contrário**, ainda que o RN pareça bem.",
+    "- Invaginação não exige sangue nas fezes; letargia e cólicas episódicas podem ser suficiente pista.",
+    "- EHQP é **vômito não bilioso** em semanas de vida, e o distúrbio metabólico é corrigido antes da cirurgia.",
+    "- Apendicite da criança pequena frequentemente não segue a sequência clássica do adulto; US é usualmente primeira imagem.",
+    "- Hérnia inguinal irredutível em lactente é urgência; não confundir com hérnia umbilical redutível.",
+    "- Torção testicular: o Doppler é adjuvante quando adequado, não condição para cirurgia na forte suspeita.",
+    "- Criptorquidia: operar cedo após falha de descida espontânea por volta de seis meses.",
+    "- Hidronefrose é achado; avaliar risco obstrutivo, função e refluxo antes de intervenção.",
+    "- Dor abdominal inferior no menino pode ser dor escrotal referida — examinar escroto.",
+    "- A escolha do estudo de imagem precisa responder uma questão clínica **sem comprometer tempo de salvamento**.",
+    "1. Fotografia licenciada de vômito bilioso verde real versus amarelo, quando houver consentimento e licença."
+  ],
+  "external_urls": [
+    "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Intussusception_Guideline/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Acute_Scrotal_Pain_or_Swelling/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7386163/",
+    "https://uroweb.org/guidelines/paediatric-urology",
+    "https://www.rch.org.au/clinicalguide/guideline_index/intussusception/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Pyloric_stenosis/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Acute_scrotal_pain_or_swelling/",
+    "https://uroweb.org/guidelines/paediatric-urology/chapter/management-of-undescended-testes",
+    "https://www.surgeons.org/about-racs/position-papers/acute-scrotal-pain-and-suspected-testicular-torsion-guidelines-2022",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Recognition_of_the_seriously_unwell_neonate_and_young_infant/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Diagnóstico:** avaliação clínica, radiografia inicial eventualmente inespecífica, imagem com contraste do trato gastrointestinal superior em estáveis quando apropriada, ultrassom com achados vasculares em operadores experientes e investigação cirúrgica em instáveis. A localização da junção duodenojejunal e sinais de torção mesentérica ajudam a esclarecer. Falta de sensibilidade de exame isolado exige integração."
+    },
+    {
+      "text": "**Diferencial importante:** invaginação íleo-ileal transitória pequena, em paciente pouco sintomático, pode ter história e manejo distintos da invaginação ileocólica; não recomendar enema de forma automática sem caracterização ultrassonográfica."
+    },
+    {
+      "text": "Perda repetida de ácido gástrico pode provocar **alcalose metabólica hipoclorêmica e hipocalêmica**, acompanhada por compensações renais; a gravidade laboratorial depende do tempo de evolução. Diagnósticos diferenciais incluem refluxo, erros de alimentação, gastroenterite, ITU, HAC e outras obstruções."
+    },
+    {
+      "text": "**Íleo meconial:** obstrução neonatal do íleo por mecônio espesso, associado à fibrose cística em parcela relevante; massa palpável, distensão e atraso de evacuação. Pode requerer enema contrastado terapêutico supervisionado ou cirurgia se complicado; se suspeita, integrar com triagem/diagnóstico de fibrose cística (#272)."
+    },
+    {
+      "text": "**Enterocolite necrosante:** especialmente em prematuros, com intolerância alimentar, distensão, sangue em fezes e instabilidade; diagnóstico por clínica/imagem e conduta conjunta neonatal-cirúrgica, com jejum, descompressão, antimicrobianos e suporte. Perfuração, pneumoperitônio e piora apesar de suporte podem exigir cirurgia."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

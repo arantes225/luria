@@ -1,0 +1,110 @@
+{
+  "sha": "92f75cfcd8e61e5a86f33fc1a72ca7d617df8957",
+  "path": "apostilas/insuficiencia-cardiaca/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "insuficiencia-cardiaca--92f75cfcd8",
+  "title": "Insuficiência Cardíaca",
+  "format": ".json",
+  "chars_estimated": 91518,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Insuficiência cardíaca: pensar em síndrome, mecanismo e causa"
+    },
+    {
+      "id": "fundamentos",
+      "title": "1. Fisiologia cardiovascular antes da fisiopatologia"
+    },
+    {
+      "id": "classificacao",
+      "title": "2. Classificação: o que mudou nas diretrizes de 2026?"
+    },
+    {
+      "id": "etiologia",
+      "title": "3. Etiologias: perseguir a causa, não apenas tratar edema"
+    },
+    {
+      "id": "diagnostico",
+      "title": "4. Diagnóstico estruturado — sintomas, ECG, BNP e ecocardiografia"
+    },
+    {
+      "id": "aguda",
+      "title": "5. IC descompensada: congestão e perfusão definem a prioridade"
+    },
+    {
+      "id": "terapia",
+      "title": "6. Tratamento crônico: de controle de sintomas à modificação da história natural"
+    },
+    {
+      "id": "seguimento",
+      "title": "7. Monitorização, dispositivos e cuidados longitudinais"
+    },
+    {
+      "id": "especiais",
+      "title": "8. Situações especiais e armadilhas"
+    },
+    {
+      "id": "casos",
+      "title": "9. Casos clínicos integradores"
+    },
+    {
+      "id": "questoes",
+      "title": "10. Questões autorais comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências principais, divergências e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências principais, divergências e pendências\"]",
+    "[\"o\",[\"<a href=\\\"https://journals.cardiol.br/article/diretriz-brasileira-de-insuficiencia-cardiaca-2026/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Simões MV et al. Diretriz Brasileira de Insuficiência Cardíaca – 2026. Arq Bras Cardiol. 2026;123(10):e20260830. Publicada em 08/10/2026.</a>\",\"<a href=\\\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">European Society of Cardiology. ESC Guidelines for the management of heart failure, 2026.</a>\",\"<a href=\\\"https://academic.oup.com/eurhear",
+    "[\"p\",\"<strong>Estado editorial após aprofundamento de 14/10/2026:</strong> a apostila agora integra fisiopatologia e pressões de enchimento, etiologia brasileira (Chagas), confirmação de HFpEF e peptídeos natriuréticos, farmacologia com doses iniciais/alvo conferidas em fontes oficiais, classe funcional e divergência ESC/SBC 2026, descompensação, choque, resposta diurética, dispositivos, IC avançada e cuidados longitudinais. Ainda faltam revisão médica independente de TODAS as doses/indicações, inspeção de referências e links, auditoria de redundância semântica, curadoria e aprovação de imagen"
+  ],
+  "external_urls": [
+    "https://academic.oup.com/eurheartj/article/47/38/5346/8766302.",
+    "https://academic.oup.com/eurheartj/article/47/38/5346/8766302",
+    "https://www.gov.br/conitec/pt-br/midias/protocolos/resumidos/PCDTResumidoInsuficinciaCardacafinal.pdf",
+    "https://journals.cardiol.br/article/diretriz-brasileira-de-insuficiencia-cardiaca-2026/",
+    "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure",
+    "https://www.portal.cardiol.br/diretrizes"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "Os sinais clássicos incluem dispneia aos esforços, ortopneia, dispneia paroxística noturna, edema, ganho de peso por retenção de líquido, turgência jugular, crepitações, terceira bulha e hepatomegalia congestiva. Nenhum sinal isolado é universal; obesidade, idade, doença pulmonar e insuficiência renal podem confundir a avaliação. O diagnóstico combina probabilidade clínica, exames complementares, biomarcadores e demonstração objetiva da disfunção cardíaca ou de pressões de enchimento elevadas."
+    },
+    {
+      "section": "etiologia",
+      "text": "A infecção crônica por Trypanosoma cruzi pode provocar fibrose, alterações de condução e arritmias ventriculares, aneurisma apical, trombo e disfunção ventricular. A hipótese aumenta com origem ou exposição epidemiológica pertinente, história familiar e bloqueio de ramo direito associado a hemibloqueio anterior esquerdo no ECG, embora esses achados não sejam exclusivos. Em suspeita de forma crônica, a confirmação laboratorial utiliza testes sorológicos apropriados por estratégias recomendadas no Brasil; solicitar apenas PCR isolada não é abordagem habitual de triagem crônica. A investigação deve avaliar arritmias, história de síncope, necessi"
+    },
+    {
+      "section": "etiologia",
+      "text": "Uma pessoa com sorologia positiva e FEVE ainda preservada pode estar em estágio diferente daquela com cardiomiopatia chagásica dilatada e taquicardia ventricular sustentada. A avaliação de risco de morte súbita na doença de Chagas possui particularidades que não se resumem aos critérios convencionais de CDI da IC isquêmica. Indicação de antiparasitário na fase crônica depende de faixa etária, forma clínica e recomendações de infectologia/Ministério da Saúde; não confundir diagnóstico etiológico com promessa de reversão completa da fibrose."
+    },
+    {
+      "section": "etiologia",
+      "text": "Álcool em excesso, cocaína, anabolizantes, quimioterápicos potencialmente cardiotóxicos e determinadas drogas oncológicas devem ser investigados sem julgamento. O risco depende de agente, dose cumulativa, comorbidades e predisposição. Em pessoas com câncer, o diagnóstico de cardiotoxicidade exige comparar FEVE e strain longitudinal quando disponíveis, sintomas e biomarcadores em relação ao basal e ao protocolo cardio-oncológico. Tratar IC e discutir interrupção/substituição do agente com oncologia pode preservar simultaneamente prognóstico cardíaco e controle da neoplasia."
+    },
+    {
+      "section": "diagnostico",
+      "text": "ECG ajuda a detectar arritmias, isquemia, sobrecargas ou distúrbios de condução. Radiografia mostra cardiomegalia, congestão, derrame ou diagnósticos alternativos, mas tem sensibilidade limitada. Avaliar hemograma, creatinina, eletrólitos, glicemia, perfil tireoidiano e outros exames direcionados à etiologia e à segurança farmacológica. Ressonância cardíaca pode auxiliar a reconhecer fibrose, miocardite, doenças infiltrativas ou cardiomiopatias específicas; cateterismo e outros testes são selecionados conforme hipótese."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

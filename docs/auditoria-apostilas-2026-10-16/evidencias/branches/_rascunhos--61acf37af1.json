@@ -1,0 +1,482 @@
+{
+  "sha": "61acf37af10b983165762530331451a9f84215fe",
+  "path": "apostilas/_rascunhos/lote-06-119-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--61acf37af1",
+  "title": "Planejamento Reprodutivo e Contracepção",
+  "format": ".html",
+  "chars_estimated": 93804,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "1. Princípios do planejamento reprodutivo"
+    },
+    {
+      "title": "2. Eficácia, uso típico e mecanismo"
+    },
+    {
+      "title": "3. Critérios Médicos de Elegibilidade — OMS 2025"
+    },
+    {
+      "title": "4. Pílula anticoncepcional combinada"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "5. Adesivo contraceptivo combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "6. Anel vaginal combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "7. Anticoncepcional injetável combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "8. Pílula apenas de progestagênio (minipílula)"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "9. Injetável trimestral de medroxiprogesterona (DMPA)"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "10. Implante subdérmico de etonogestrel"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "11. DIU de cobre: dispositivo, ação e acompanhamento"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "13. Preservativos externo e interno"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "14. Diafragma e espermicidas"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "15. Métodos comportamentais e reconhecimento da fertilidade"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "16. Métodos definitivos: laqueadura e vasectomia"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "17. Contracepção de emergência"
+    },
+    {
+      "title": "18. Início rápido, troca e razoável certeza de não gravidez"
+    },
+    {
+      "title": "Início rápido e proteção adicional: transforme a tabela em decisão"
+    },
+    {
+      "title": "19. Puerpério, lactação e pós-aborto"
+    },
+    {
+      "title": "20. Situações especiais"
+    },
+    {
+      "title": "Adolescência"
+    },
+    {
+      "title": "Obesidade"
+    },
+    {
+      "title": "Enxaqueca"
+    },
+    {
+      "title": "Epilepsia e indutores enzimáticos"
+    },
+    {
+      "title": "Câncer de mama"
+    },
+    {
+      "title": "Endometriose/adenomiose/sangramento intenso"
+    },
+    {
+      "title": "21. Esterilização voluntária no Brasil"
+    },
+    {
+      "title": "Vasectomia"
+    },
+    {
+      "title": "Laqueadura"
+    },
+    {
+      "title": "22. Falhas, sangramento, efeitos adversos e interações"
+    },
+    {
+      "title": "Sangramento irregular"
+    },
+    {
+      "title": "Dor com DIU"
+    },
+    {
+      "title": "Interações"
+    },
+    {
+      "title": "ACHES"
+    },
+    {
+      "title": "Como corrigir a repetição genérica"
+    },
+    {
+      "title": "23. Decisões integradas: emergência, início, DIU e segurança"
+    },
+    {
+      "title": "23.1 Ulipristal versus levonorgestrel: o anticoncepcional do dia seguinte muda o início do método regular"
+    },
+    {
+      "title": "23.2 Um DIU na mesma consulta com teste para IST: quando é seguro?"
+    },
+    {
+      "title": "23.3 Enxaqueca com aura e desejo de amenorreia"
+    },
+    {
+      "title": "23.4 Pós-parto imediato: momento do DIU e risco de expulsão"
+    },
+    {
+      "title": "23.5 Pedido de laqueadura durante o pré-natal"
+    },
+    {
+      "title": "23.6 Método regular esquecido ou iniciando no meio do ciclo"
+    },
+    {
+      "title": "24. Avaliação clínica avançada: elegibilidade, início e decisões de segurança"
+    },
+    {
+      "title": "24.1 Categorias do MEC não são níveis de eficácia"
+    },
+    {
+      "title": "24.2 Entrevista centrada na autonomia e sem coerção"
+    },
+    {
+      "title": "24.3 Seis situações em que o estrogênio muda a conduta"
+    },
+    {
+      "title": "24.4 Hipertensão e diabetes: a expressão “sem estrogênio” não é detalhe"
+    },
+    {
+      "title": "24.5 Lúpus, anticorpos antifosfolípides, doença falciforme e doença renal"
+    },
+    {
+      "title": "24.6 Câncer de mama atual, tumores hepáticos e doenças inflamatórias: classificar o método exato"
+    },
+    {
+      "title": "24.7 Epilepsia e interações: duas vias de falha"
+    },
+    {
+      "title": "24.8 Saúde sexual integrada: dupla proteção e prevenção de coerção"
+    },
+    {
+      "title": "25. Início, troca, esquecimentos e contracepção de emergência: fluxo de consultório"
+    },
+    {
+      "title": "25.1 É razoavelmente certo que não há gravidez?"
+    },
+    {
+      "title": "25.2 Proteção adicional: não há uma regra única para toda minipílula"
+    },
+    {
+      "title": "25.3 Esquecimento e vômitos: explicar a ação, não só citar “falhou”"
+    },
+    {
+      "title": "25.4 Contracepção de emergência: escolher considerando o tempo e a próxima etapa"
+    },
+    {
+      "title": "25.5 Troca de DIU para hormônio oral, implante ou outro SIU"
+    },
+    {
+      "title": "25.6 Sangramento e amenorreia: entender a fisiologia antes de solicitar teste"
+    },
+    {
+      "title": "25.7 Puerpério, pós-aborto e desejo reprodutivo em mudança"
+    },
+    {
+      "title": "26. DIU, implante, sangramento e infecção: condutas que evitam intervenções desnecessárias"
+    },
+    {
+      "title": "26.1 DIU em pessoa nulípara, adolescente ou com triagem de IST pendente"
+    },
+    {
+      "title": "26.2 Pós-parto: segurança, expulsão e logística"
+    },
+    {
+      "title": "26.3 Sangramento irregular após implante ou progestagênio: investigar antes de trocar"
+    },
+    {
+      "title": "26.4 Implante etonogestrel no SUS: norma, oferta e acesso em 2026"
+    },
+    {
+      "title": "26.5 Contracepção permanente: lei, confirmação de vontade e acompanhamento"
+    },
+    {
+      "title": "26.6 Checklist de procedimento de DIU e cuidado com a dor"
+    },
+    {
+      "title": "26.7 Fios não visíveis, expulsão, perfuração e gestação"
+    },
+    {
+      "title": "26.8 DMPA: massa óssea, sangramento, atraso do retorno da fertilidade"
+    },
+    {
+      "title": "26.9 Quando a retirada de método é parte do cuidado"
+    },
+    {
+      "title": "27. Casos clínicos integradores — casos 1 a 5"
+    },
+    {
+      "title": "Caso 1 — enxaqueca com aura"
+    },
+    {
+      "title": "Caso 2 — puérpera lactante"
+    },
+    {
+      "title": "Caso 3 — relação desprotegida há 96 horas"
+    },
+    {
+      "title": "Caso 4 — sangramento no implante"
+    },
+    {
+      "title": "Caso 5 — esterilização no parto"
+    },
+    {
+      "title": "28. Casos clínicos aprofundados — casos 6 a 9"
+    },
+    {
+      "title": "Caso 6 — Ulipristal e implantação imediata: conflito farmacológico"
+    },
+    {
+      "title": "Caso 7 — Adolescente nulípara, cervicite e pedido de DIU"
+    },
+    {
+      "title": "Caso 8 — Migraine com aura, fluxo intenso e desejo de amenorreia"
+    },
+    {
+      "title": "Caso 9 — Pedido de laqueadura no pré-natal"
+    },
+    {
+      "title": "29. Questões originais comentadas — residência e ENAMED"
+    },
+    {
+      "title": "Questão 1 — Enxaqueca com aura e contracepção"
+    },
+    {
+      "title": "Questão 2 — Emergência após 96 horas"
+    },
+    {
+      "title": "Questão 3 — Gravidez não excluída com segurança"
+    },
+    {
+      "title": "Questão 4 — Enzimas hepáticas e eficácia contraceptiva"
+    },
+    {
+      "title": "Questão 5 — Adolescentes, nuliparidade e DIU"
+    },
+    {
+      "title": "Questão 6 — Lei de esterilização brasileira"
+    },
+    {
+      "title": "Questão 7 — Implantação do etonogestrel no SUS"
+    },
+    {
+      "title": "Questão 8 — Sangramento no implante"
+    },
+    {
+      "title": "Questão 9 — Puerpério e amamentação"
+    },
+    {
+      "title": "Questão 10 — Falha e gravidez com DIU"
+    },
+    {
+      "title": "30. Revisão de alto rendimento"
+    },
+    {
+      "title": "31. Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "Métodos combinados: segurança antes da prescrição"
+    },
+    {
+      "title": "DIU de cobre, SIU-LNG e implante"
+    },
+    {
+      "title": "Emergência, puerpério e esterilização"
+    },
+    {
+      "title": "32. Raciocínio clínico aprofundado: situações que mudam a conduta"
+    },
+    {
+      "title": "Elegibilidade não é eficácia: como decidir método"
+    },
+    {
+      "title": "Contracepção de emergência: a sequência muda a escolha"
+    },
+    {
+      "title": "Pós-parto e LARC: aconselhamento realista"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Atualizações verificadas para o Lote 6 (2025–2026)"
+    }
+  ],
+  "reference_entries": [
+    "World Health Organization. Medical eligibility criteria for contraceptive use. 6th ed. Geneva: WHO; 2025.",
+    "World Health Organization. Selected practice recommendations for contraceptive use. 4th ed. Geneva: WHO; 2025.",
+    "World Health Organization. WHO guidelines on expanding contraceptive options. Geneva: WHO; 2026.",
+    "World Health Organization. Intrauterine devices (IUDs): fact sheet. Atualizado em 2026.",
+    "Ministério da Saúde. Saúde Sexual e Reprodutiva — Contracepção. Brasil.",
+    "Ministério da Saúde. DIU de cobre. Brasil.",
+    "Ministério da Saúde. Nota Técnica Conjunta nº 198/2026 — orientações sobre acesso ao implante de etonogestrel no SUS.",
+    "Ministério da Saúde. Portarias SECTICS/MS nº 47 e 48/2025 — ampliação/incorporação do implante de etonogestrel.",
+    "Brasil. Lei nº 9.263/1996, alterada pela Lei nº 14.443/2022 — planejamento familiar e esterilização voluntária.",
+    "OMS. Medical eligibility criteria for contraceptive use, 6ª edição, 2025.",
+    "OMS. Selected practice recommendations for contraceptive use, 4ª edição, 2025.",
+    "CDC. U.S. Selected Practice Recommendations for Contraceptive Use, 2024.",
+    "CDC. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024.",
+    "Brasil. Lei 9.263/1996 atualizada pela Lei 14.443/2022.",
+    "Ministério da Saúde. Portaria 47/2025: etonogestrel, 18–49 anos.",
+    "Ministério da Saúde. Portaria 48/2025: etonogestrel, 14–17 anos.",
+    "Ministério da Saúde. Nota Técnica Conjunta 198/2026: distribuição, monitoramento e acesso ao implante no SUS.",
+    "CDC. Manejo de DIU em caso de gestação."
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov;",
+    "https://www.cdc.gov/contraception/hcp/usspr/when-contraceptive-methods.html",
+    "https://www.who.int/publications/i/item/9789240115583",
+    "https://www.who.int/publications/i/item/9789240115606",
+    "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html",
+    "https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/sei_ms-0033574409-nota-tecnica-laqueadura-vasectomia.pdf",
+    "https://www.cdc.gov/contraception/hcp/usspr/classifications-mec-contraception.html",
+    "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2025/prt0047_09_07_2025.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2025/prt0048_09_07_2025.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-51-2026-cgesmu-dgci-saps-e-cgafb-daf-sctie-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-198-2026-cgesmu-dgci-saps-ms.pdf/view",
+    "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14443.htm",
+    "https://www.cdc.gov/mmwr/volumes/73/rr/rr7304a1.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l9263.htm"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Antes de prescrever, responda a quatro perguntas: há contraindicação? qual eficácia é desejada? qual padrão de uso e sangramento é aceitável? existe necessidade de proteção contra IST? Exames laboratoriais rotineiros, ultrassom, coagulograma e “painel hormonal” não são pré-requisitos universais."
+    },
+    {
+      "text": "Antes de prescrever, pesquisar enxaqueca com aura, tabagismo a partir de 35 anos, hipertensão, tromboembolismo, história de AVC, câncer de mama atual, hepatopatias relevantes e uso de medicamentos que interagem. Aferir pressão arterial; exames laboratoriais de rotina não são exigidos para todas as pessoas saudáveis. Náusea, mastalgia, cefaleia e sangramento de escape podem ocorrer, especialmente no início. Benefícios não contraceptivos podem incluir melhora de dismenorreia, acne e sangramento menstrual intenso. Esquecimento de comprimidos requer orientação específica conforme número de doses, semana da cartela e formulação, com contracepção d"
+    },
+    {
+      "text": "A aplicação deve ocorrer em pele íntegra e limpa, nos locais recomendados pelo fabricante, evitando as mamas. Verificar aderência e o tempo em que ficou descolado; o manejo depende da duração do descolamento. É necessário avaliar as mesmas contraindicações ao estrogênio da pílula combinada. Algumas formulações podem ter eficácia reduzida em determinadas faixas de peso ou IMC: conferir a bula específica. Efeitos adversos incluem irritação local, náusea, mastalgia e sangramento irregular."
+    },
+    {
+      "text": "Ensinar a inserção e a retirada, o que fazer diante de expulsão, esquecimento de reinserção ou atraso na troca, seguindo a bula. Não é método de barreira e não protege de IST. Compartilha as contraindicações ao estrogênio e os riscos tromboembólicos dos demais combinados; dúvidas sobre uso durante relações, corrimento ou desconforto devem ser abordadas de forma prática."
+    },
+    {
+      "text": "É opção importante para quem tem contraindicação ao estrogênio e para muitos cenários de lactação, considerando elegibilidade e momento pós-parto. Explicar horários, atrasos, vômitos e diarreia prolongada, além de possível sangramento irregular ou amenorreia. Interações com indutores enzimáticos podem comprometer eficácia; avaliar medicações concomitantes e método alternativo."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

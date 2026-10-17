@@ -1,0 +1,620 @@
+{
+  "key": "cuidados-paliativos-comunicacao-mas-noticias--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/cuidados-paliativos-comunicacao-mas-noticias/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias",
+  "source_sha256": "bb303ecaa3b9bc7ce89447e59791b6f50e4fdc5e164e9a64d96f28893861c256",
+  "chars_estimated": 76039,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 180 | Cuidados paliativos e comunicação de más notícias",
+      "level": 1
+    },
+    {
+      "line": 10,
+      "title": "1. Introdução e conceito",
+      "level": 2
+    },
+    {
+      "line": 18,
+      "title": "2. Referências fundamentais",
+      "level": 2
+    },
+    {
+      "line": 31,
+      "title": "3. Objetivos e integração curricular da aula",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "4. Sofrimento total e avaliação multidimensional",
+      "level": 2
+    },
+    {
+      "line": 56,
+      "title": "5. Elegibilidade e início precoce",
+      "level": 2
+    },
+    {
+      "line": 62,
+      "title": "5.1. Cuidado generalista e equipe especializada",
+      "level": 3
+    },
+    {
+      "line": 68,
+      "title": "5.2. Trajetórias de doença e prognóstico",
+      "level": 3
+    },
+    {
+      "line": 72,
+      "title": "6. Instrumentos ESAS-r, PPS, ECOG e limites",
+      "level": 2
+    },
+    {
+      "line": 82,
+      "title": "7. Planejamento antecipado de cuidados e diretivas antecipadas de vontade",
+      "level": 2
+    },
+    {
+      "line": 88,
+      "title": "7.1. Um roteiro de PAC para internato",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "7.2. Família e sigilo",
+      "level": 3
+    },
+    {
+      "line": 105,
+      "title": "8. Ortotanásia, distanásia, eutanásia e proporcionalidade",
+      "level": 2
+    },
+    {
+      "line": 119,
+      "title": "8.1. Teste terapêutico limitado no tempo",
+      "level": 3
+    },
+    {
+      "line": 123,
+      "title": "9. Comunicação de notícias difíceis: SPIKES com empatia",
+      "level": 2
+    },
+    {
+      "line": 140,
+      "title": "9.1. NURSE: responder à emoção",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "9.2. Prognóstico e Ask–Tell–Ask",
+      "level": 3
+    },
+    {
+      "line": 152,
+      "title": "9.3. Comunicação de morte",
+      "level": 3
+    },
+    {
+      "line": 157,
+      "title": "10. Reunião familiar e decisão compartilhada",
+      "level": 2
+    },
+    {
+      "line": 175,
+      "title": "11. Avaliação de sintomas e escolha farmacológica",
+      "level": 2
+    },
+    {
+      "line": 181,
+      "title": "11.1. Dor",
+      "level": 3
+    },
+    {
+      "line": 189,
+      "title": "11.2. Resgates e rotação de opioides",
+      "level": 3
+    },
+    {
+      "line": 197,
+      "title": "11.3. Sinais de alerta que não devem ser atribuídos apenas à dor crônica",
+      "level": 3
+    },
+    {
+      "line": 201,
+      "title": "12. Dispneia: avaliar sensação, hipoxemia e objetivos",
+      "level": 2
+    },
+    {
+      "line": 211,
+      "title": "13. Náuseas e vômitos por mecanismo",
+      "level": 2
+    },
+    {
+      "line": 225,
+      "title": "14. Constipação, fecaloma e diarreia",
+      "level": 2
+    },
+    {
+      "line": 233,
+      "title": "15. Delirium: forma hiperativa e hipoativa",
+      "level": 2
+    },
+    {
+      "line": 243,
+      "title": "16. Fadiga, anorexia e caquexia",
+      "level": 2
+    },
+    {
+      "line": 251,
+      "title": "17. Feridas, secreções, boca seca e prurido",
+      "level": 2
+    },
+    {
+      "line": 259,
+      "title": "18. Sedação paliativa proporcional: decisão excepcional",
+      "level": 2
+    },
+    {
+      "line": 265,
+      "title": "18.1. Processo de segurança",
+      "level": 3
+    },
+    {
+      "line": 280,
+      "title": "18.2. Intenção e proporcionalidade",
+      "level": 3
+    },
+    {
+      "line": 284,
+      "title": "19. Processo ativo de morte: reconhecer e assistir",
+      "level": 2
+    },
+    {
+      "line": 288,
+      "title": "19.1. Plano do fim de vida",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "19.2. Hemorragia, convulsão e dispneia súbita",
+      "level": 3
+    },
+    {
+      "line": 306,
+      "title": "20. Diferenças por doença e momento clínico",
+      "level": 2
+    },
+    {
+      "line": 308,
+      "title": "20.1. Câncer e neoplasias avançadas",
+      "level": 3
+    },
+    {
+      "line": 312,
+      "title": "20.2. Insuficiência cardíaca",
+      "level": 3
+    },
+    {
+      "line": 316,
+      "title": "20.3. DPOC/insuficiência respiratória",
+      "level": 3
+    },
+    {
+      "line": 320,
+      "title": "20.4. Insuficiência renal avançada",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "20.5. Demência e doenças neurodegenerativas",
+      "level": 3
+    },
+    {
+      "line": 328,
+      "title": "20.6. Cirrose e HIV avançado",
+      "level": 3
+    },
+    {
+      "line": 333,
+      "title": "21. Cuidados paliativos pediátricos, perinatais e proteção da criança",
+      "level": 2
+    },
+    {
+      "line": 339,
+      "title": "21.1. Autonomia progressiva e assentimento",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "21.2. Cuidados paliativos perinatais",
+      "level": 3
+    },
+    {
+      "line": 347,
+      "title": "21.3. Irmãos e familiares",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "22. Atenção domiciliar e continuidade do cuidado",
+      "level": 2
+    },
+    {
+      "line": 355,
+      "title": "22.1. Checklist pré-alta",
+      "level": 3
+    },
+    {
+      "line": 370,
+      "title": "22.2. Transporte para urgência não é fracasso",
+      "level": 3
+    },
+    {
+      "line": 374,
+      "title": "23. Luto antecipatório, morte e cuidado após morte",
+      "level": 2
+    },
+    {
+      "line": 382,
+      "title": "24. Resumo de alto rendimento — fluxogramas de conduta",
+      "level": 2
+    },
+    {
+      "line": 384,
+      "title": "Fluxo A: identificar necessidade de cuidados paliativos",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "Fluxo B: comunicar diagnóstico/prognóstico difícil",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "Fluxo C: dor persistente",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "Fluxo D: dispneia",
+      "level": 3
+    },
+    {
+      "line": 396,
+      "title": "Fluxo E: delirium",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "Fluxo F: discussão de RCP/UTI",
+      "level": 3
+    },
+    {
+      "line": 402,
+      "title": "Fluxo G: morte provável em horas/dias",
+      "level": 3
+    },
+    {
+      "line": 405,
+      "title": "Fluxo H: alta domiciliar",
+      "level": 3
+    },
+    {
+      "line": 408,
+      "title": "25. Pegadinhas de prova e erros de segurança",
+      "level": 2
+    },
+    {
+      "line": 447,
+      "title": "26. Casos clínicos integradores",
+      "level": 2
+    },
+    {
+      "line": 451,
+      "title": "Caso 1 — Câncer em tratamento com intenção curativa",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "Caso 2 — Comunicação de biópsia maligna",
+      "level": 3
+    },
+    {
+      "line": 479,
+      "title": "Caso 3 — Paciente reserva prognóstico para si",
+      "level": 3
+    },
+    {
+      "line": 493,
+      "title": "Caso 4 — Diretiva antecipada versus pedido familiar de RCP",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "Caso 5 — Dispneia intensa com saturação normal",
+      "level": 3
+    },
+    {
+      "line": 521,
+      "title": "Caso 6 — Dor óssea com perda de força",
+      "level": 3
+    },
+    {
+      "line": 535,
+      "title": "Caso 7 — Delirium por retenção urinária",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "Caso 8 — Constipação após opioide",
+      "level": 3
+    },
+    {
+      "line": 563,
+      "title": "Caso 9 — Família implora por soro nos últimos dias",
+      "level": 3
+    },
+    {
+      "line": 577,
+      "title": "Caso 10 — Criança com doença neuromuscular grave",
+      "level": 3
+    },
+    {
+      "line": 591,
+      "title": "Caso 11 — Agitação terminal refratária",
+      "level": 3
+    },
+    {
+      "line": 605,
+      "title": "Caso 12 — Alta domiciliar sem acesso noturno",
+      "level": 3
+    },
+    {
+      "line": 621,
+      "title": "27. Questões autorais LURIA — gabarito e todas as alternativas comentadas",
+      "level": 2
+    },
+    {
+      "line": 625,
+      "title": "Questão 1 — Início do cuidado paliativo",
+      "level": 3
+    },
+    {
+      "line": 646,
+      "title": "Questão 2 — Política brasileira",
+      "level": 3
+    },
+    {
+      "line": 667,
+      "title": "Questão 3 — Conceito de sofrimento total",
+      "level": 3
+    },
+    {
+      "line": 688,
+      "title": "Questão 4 — ESAS-r versus PPS",
+      "level": 3
+    },
+    {
+      "line": 709,
+      "title": "Questão 5 — Diretivas antecipadas",
+      "level": 3
+    },
+    {
+      "line": 730,
+      "title": "Questão 6 — Ortotanásia e eutanásia",
+      "level": 3
+    },
+    {
+      "line": 751,
+      "title": "Questão 7 — Ordem de não reanimar",
+      "level": 3
+    },
+    {
+      "line": 772,
+      "title": "Questão 8 — SPIKES — percepção",
+      "level": 3
+    },
+    {
+      "line": 793,
+      "title": "Questão 9 — SPIKES — reação emocional",
+      "level": 3
+    },
+    {
+      "line": 814,
+      "title": "Questão 10 — NURSE — explorar",
+      "level": 3
+    },
+    {
+      "line": 835,
+      "title": "Questão 11 — Dor e função renal",
+      "level": 3
+    },
+    {
+      "line": 856,
+      "title": "Questão 12 — Dispneia com oximetria normal",
+      "level": 3
+    },
+    {
+      "line": 877,
+      "title": "Questão 13 — Constipação ou diarreia?",
+      "level": 3
+    },
+    {
+      "line": 898,
+      "title": "Questão 14 — Delirium hipoativo",
+      "level": 3
+    },
+    {
+      "line": 919,
+      "title": "Questão 15 — Metoclopramida na obstrução",
+      "level": 3
+    },
+    {
+      "line": 940,
+      "title": "Questão 16 — Sedação paliativa proporcional",
+      "level": 3
+    },
+    {
+      "line": 961,
+      "title": "Questão 17 — Opioide para sedar",
+      "level": 3
+    },
+    {
+      "line": 982,
+      "title": "Questão 18 — Hidratação nos últimos dias",
+      "level": 3
+    },
+    {
+      "line": 1003,
+      "title": "Questão 19 — Cuidados pediátricos",
+      "level": 3
+    },
+    {
+      "line": 1024,
+      "title": "Questão 20 — Alta domiciliar segura",
+      "level": 3
+    },
+    {
+      "line": 1047,
+      "title": "28. Curadoria visual premium — 22 imagens e diagramas candidatos",
+      "level": 2
+    },
+    {
+      "line": 1076,
+      "title": "Padrões técnicos e éticos para imagens",
+      "level": 3
+    },
+    {
+      "line": 1088,
+      "title": "29. Integração LURIA: flashcards, questões e ensino longitudinal",
+      "level": 2
+    },
+    {
+      "line": 1096,
+      "title": "30. Revisão editorial e limitações",
+      "level": 2
+    },
+    {
+      "line": 1100,
+      "title": "Checklist de auditoria editorial",
+      "level": 3
+    },
+    {
+      "line": 1113,
+      "title": "Pendências indispensáveis para publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. Ministério da Saúde — PNCP 2024: https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+    "2. Ministério da Saúde — PNCP 2026: https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+    "3. Manual de Cuidados Paliativos, Ministério da Saúde/PROADI-SUS, 2ª edição, 2023: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2023/manual-de-cuidados-paliativos-2a-edicao/",
+    "4. OMS: https://www.who.int/en/news-room/fact-sheets/detail/palliative-care",
+    "5. CFM 1.805/2006: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+    "6. CFM 1.995/2012: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+    "7. CFM 2.217/2018: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+    "8. SPIKES — Baile et al., The Oncologist, 2000: https://doi.org/10.1634/theoncologist.5-4-302",
+    "9. ESMO, fim de vida: https://pmc.ncbi.nlm.nih.gov/articles/PMC8411064/"
+  ],
+  "external_links": [
+    {
+      "url": "https://bvs.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_14_06_2024_rep.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10181_30_01_2026.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2023/manual-de-cuidados-paliativos-2a-edicao/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/en/news-room/fact-sheets/detail/palliative-care",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1634/theoncologist.5-4-302",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8411064/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Apresentação:** Mulher de 48 anos inicia terapia sistêmica com expectativa de controle curativo. Relata dor 6/10, fadiga, preocupação com trabalho e medo de ficar sem renda. Um residente afirma que paliativos só servem após surgirem metástases.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Homem de 52 anos comparece para resultado de biópsia, acreditando que a lesão era benigna. O laudo confirma câncer. A equipe pensa em informá-lo no corredor, com familiares não autorizados presentes.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apresentação:** Mulher de 69 anos com DPOC avançada mantém capacidade e quer conhecer exames, porém pede que filhos não recebam detalhes. Eles exigem informações.",
+      "pattern": 0
+    },
+    {
+      "text": "Cuidados paliativos são cuidados de saúde ativos, integrados e centrados na pessoa e na rede de apoio, voltados à prevenção e ao alívio de sofrimento relacionado a condições que ameaçam ou limitam a continuidade da vida. Começam conforme necessidades, podendo coexistir com tratamentos modificadores da doença. Não significam abandonar diagnóstico, medicação ou terapias que ainda promovam benefício.",
+      "pattern": 1
+    },
+    {
+      "text": "O aluno deverá reconhecer sofrimento complexo precocemente, avaliar dimensões físicas e psicossociais, escutar valores e preferências, comunicar diagnóstico e prognóstico difíceis, individualizar tratamentos, distinguir terapias proporcionais de obstinação e participar de decisões de cuidado com documentação ética. Na prática deve conseguir iniciar plano para dor, dispneia, náuseas, constipação, delirium, ansiedade e últimos dias de vida, sabendo quando pedir suporte especializado.",
+      "pattern": 1
+    },
+    {
+      "text": "O conceito de **dor total**, associado a Cicely Saunders, compreende dimensões física, psicológica, social e espiritual. Não é alegação de que a dor é imaginária: nocicepção e lesões orgânicas continuam exigindo diagnóstico e analgesia. Uma pessoa com dor de metástase óssea pode ficar ainda mais sofrida por medo de perder autonomia, dívidas, conflitos familiares, ansiedade, isolamento, ameaças à moradia ou perda de sentido.",
+      "pattern": 1
+    },
+    {
+      "text": "**Medicina Preventiva · Clínica Médica · Bioética · Cuidados Paliativos** **Lote 09 — Aula 180/180, versão editorial 15/10/2026**",
+      "pattern": 2
+    },
+    {
+      "text": "Esta apostila aborda a Política Nacional de Cuidados Paliativos do SUS, atualizada em 2026; comunicação de notícias difíceis, manejo de sintomas, planejamento antecipado de cuidados, bioética e cuidado no fim de vida.",
+      "pattern": 2
+    },
+    {
+      "text": "A OMS descreve prevenção e tratamento de sofrimento físico, psicossocial e espiritual. A Política Nacional de Cuidados Paliativos foi instituída pela Portaria GM/MS nº 3.681/2024 e atualizada pela Portaria GM/MS nº 10.181/2026, que incorporou planejamento antecipado de cuidados, diretivas antecipadas de vontade e integração de serviços da rede SUS.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Medicina Preventiva · Clínica Médica · Bioética · Cuidados Paliativos** **Lote 09 — Aula 180/180, versão editorial 15/10/2026**"
+    },
+    {
+      "text": "Esta apostila aborda a Política Nacional de Cuidados Paliativos do SUS, atualizada em 2026; comunicação de notícias difíceis, manejo de sintomas, planejamento antecipado de cuidados, bioética e cuidado no fim de vida."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "sha": "ca317a229e943a92abf1345bd3ebfffe62185516",
+  "path": "apostilas/_rascunhos/lote-10-aula-207-anexo-editorial.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ca317a229e",
+  "title": "LURIA 207 — Fontes, imagens e pendências (anexo editorial)",
+  "format": ".md",
+  "chars_estimated": 1794,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA 207 — Fontes, imagens e pendências (anexo editorial)"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Materiais visuais ainda pendentes de aprovação no Admin"
+    },
+    {
+      "title": "Auditoria"
+    }
+  ],
+  "reference_entries": [
+    "**Data:** 15/10/2026. **Apostila principal:** `lote-10-aula-207-prolapso-incontinencia-urinaria-feminina.md`.",
+    "- NICE NG123, Urinary incontinence and pelvic organ prolapse: <https://www.nice.org.uk/guidance/ng123/chapter/Recommendations>.",
+    "- NICE NG210, Pelvic floor dysfunction: <https://www.nice.org.uk/guidance/ng210/chapter/recommendations>.",
+    "- AUA/SUFU 2024 OAB, DOI 10.1097/JU.0000000000003985: <https://www.auajournals.org/doi/10.1097/JU.0000000000003985>.",
+    "- EAU Female LUTS 2026 (edição com pequenas mudanças de formatação da versão 2025): <https://uroweb.org/guidelines/non-neurogenic-female-luts>.",
+    "- FEBRASGO Position Statement nº 2/2025, Sartori MGF e colaboradores. *Rev Bras Ginecol Obstet*. 2025;47:e-FPS2. DOI 10.61622/rbgo/2025FPS2. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12002725/>.",
+    "- ACOG Pelvic Organ Prolapse, Practice Bulletin 214, 2019, reafirmado em 2024. <https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2019/11/pelvic-organ-prolapse>. Conteúdo integral restrito.",
+    "**Status:** nenhuma imagem clínica nova licenciada/aprovada, nenhum deploy, nenhum HTML publicado. O anexo é planejamento, não manifesto importável.",
+    "**Sequência prevista:** aula 208 Gestação gemelar e acompanhamento de alto risco. Primeiro inventariar as apostilas LURIA de pré-natal, crescimento fetal e avaliação de vitalidade, e buscar materiais comparativos equivalentes."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng123/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/ng210/chapter/recommendations",
+    "https://www.auajournals.org/doi/10.1097/JU.0000000000003985",
+    "https://uroweb.org/guidelines/non-neurogenic-female-luts",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002725/",
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2019/11/pelvic-organ-prolapse"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

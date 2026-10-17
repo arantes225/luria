@@ -1,0 +1,534 @@
+{
+  "key": "lote-05-097-pancreatite-aguda",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-05-097-pancreatite-aguda.md",
+  "title": "LURIA — Apostila 097 | Pancreatite aguda: diagnóstico, tratamento e abordagem cirúrgica",
+  "source_sha256": "9168e486386fe99a7e150ece12a875fc578849d4374972db3b85f6ebc9d85669",
+  "chars_estimated": 67994,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Apostila 097 | Pancreatite aguda: diagnóstico, tratamento e abordagem cirúrgica",
+      "level": 1
+    },
+    {
+      "line": 8,
+      "title": "0. Auditoria inicial obrigatória: acervo LURIA, Drive e diretrizes",
+      "level": 2
+    },
+    {
+      "line": 10,
+      "title": "0.1. O que havia antes de escrever",
+      "level": 3
+    },
+    {
+      "line": 18,
+      "title": "0.2. Material correlato efetivamente lido no Drive",
+      "level": 3
+    },
+    {
+      "line": 26,
+      "title": "0.3. Fontes clínicas usadas nesta versão",
+      "level": 3
+    },
+    {
+      "line": 36,
+      "title": "0.4. Matriz de cobertura curricular e riscos de redundância",
+      "level": 3
+    },
+    {
+      "line": 53,
+      "title": "1. Por que pancreatite aguda não é simplesmente “abdome agudo operatório”",
+      "level": 2
+    },
+    {
+      "line": 61,
+      "title": "1.1. Objetivos da abordagem nas primeiras horas",
+      "level": 3
+    },
+    {
+      "line": 71,
+      "title": "2. Bases anatômicas: ductos, células acinares e microcirculação",
+      "level": 2
+    },
+    {
+      "line": 79,
+      "title": "2.1. Por que um órgão retroperitoneal causa complicações distantes",
+      "level": 3
+    },
+    {
+      "line": 85,
+      "title": "3. Etiologias: identificar para tratar e evitar o próximo episódio",
+      "level": 2
+    },
+    {
+      "line": 89,
+      "title": "3.1. Origem biliar",
+      "level": 3
+    },
+    {
+      "line": 97,
+      "title": "3.2. Álcool",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "3.3. Hipertrigliceridemia e outros mecanismos metabólicos",
+      "level": 3
+    },
+    {
+      "line": 107,
+      "title": "3.4. Iatrogenia, obstrução e situações especiais",
+      "level": 3
+    },
+    {
+      "line": 113,
+      "title": "4. Apresentação clínica e critérios diagnósticos",
+      "level": 2
+    },
+    {
+      "line": 124,
+      "title": "4.1. Limitações reais de lipase e amilase",
+      "level": 3
+    },
+    {
+      "line": 130,
+      "title": "4.2. Exames complementares iniciais",
+      "level": 3
+    },
+    {
+      "line": 136,
+      "title": "4.3. Diagnósticos diferenciais que não podem esperar",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "5. Atlanta revisada: gravidade pela evolução, não pela impressão inicial",
+      "level": 2
+    },
+    {
+      "line": 162,
+      "title": "5.1. Fase precoce e fase tardia",
+      "level": 3
+    },
+    {
+      "line": 166,
+      "title": "6. Risco inicial: o que monitorar nas primeiras 48 horas",
+      "level": 2
+    },
+    {
+      "line": 170,
+      "title": "6.1. BISAP corrigido",
+      "level": 3
+    },
+    {
+      "line": 178,
+      "title": "6.2. O que acompanhar além de um escore",
+      "level": 3
+    },
+    {
+      "line": 184,
+      "title": "7. Exames de imagem: pedir para responder uma pergunta",
+      "level": 2
+    },
+    {
+      "line": 186,
+      "title": "7.1. Ultrassom para causa biliar",
+      "level": 3
+    },
+    {
+      "line": 190,
+      "title": "7.2. TC contrastada na apresentação inicial",
+      "level": 3
+    },
+    {
+      "line": 196,
+      "title": "7.3. CP-RM e EUS",
+      "level": 3
+    },
+    {
+      "line": 200,
+      "title": "8. Hidratação e analgesia: equilíbrio é tratamento ativo",
+      "level": 2
+    },
+    {
+      "line": 210,
+      "title": "9. Nutrição: a mudança de paradigma em relação ao jejum prolongado",
+      "level": 2
+    },
+    {
+      "line": 220,
+      "title": "10. Pancreatite biliar: quem realmente precisa de CPRE?",
+      "level": 2
+    },
+    {
+      "line": 230,
+      "title": "11. Colecistectomia: prevenir recorrência sem operar na hora errada",
+      "level": 2
+    },
+    {
+      "line": 238,
+      "title": "12. Complicações locais: decodificar as coleções de Atlanta",
+      "level": 2
+    },
+    {
+      "line": 253,
+      "title": "13. Necrose pancreática: estéril não é sinônimo de infectada",
+      "level": 2
+    },
+    {
+      "line": 259,
+      "title": "13.1. Por que atrasar debridamento quando possível",
+      "level": 3
+    },
+    {
+      "line": 263,
+      "title": "13.2. Step-up: da medida menos invasiva à mais invasiva",
+      "level": 3
+    },
+    {
+      "line": 269,
+      "title": "13.3. Situações que justificam cirurgia ou intervenção não pancreática imediata",
+      "level": 3
+    },
+    {
+      "line": 273,
+      "title": "14. Seguimento, recorrência e retorno à vida habitual",
+      "level": 2
+    },
+    {
+      "line": 279,
+      "title": "14.1. Alertas após alta",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "15. Algoritmo original de decisão na emergência",
+      "level": 2
+    },
+    {
+      "line": 299,
+      "title": "16. Questões de residência: primeira bateria autoral",
+      "level": 2
+    },
+    {
+      "line": 301,
+      "title": "Questão 1 — Critérios diagnósticos",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "Questão 2 — BISAP e unidades",
+      "level": 3
+    },
+    {
+      "line": 325,
+      "title": "Questão 3 — Nutrição",
+      "level": 3
+    },
+    {
+      "line": 337,
+      "title": "Questão 4 — CPRE",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "Questão 5 — Atlanta",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "Questão 6 — Necrose estéril",
+      "level": 3
+    },
+    {
+      "line": 373,
+      "title": "17. Casos clínicos autorais — primeira rodada",
+      "level": 2
+    },
+    {
+      "line": 375,
+      "title": "Caso A — Pancreatite biliar leve, oportunidade de prevenir recorrência",
+      "level": 3
+    },
+    {
+      "line": 381,
+      "title": "Caso B — Quando a colangite muda a prioridade da CPRE",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "Caso C — Pancreatite e disfunção respiratória que não melhora em 48 horas",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "Caso D — Coleção tardia com sintomas obstrutivos",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "Caso E — Etiologia ignorada por diagnóstico precipitado de “alcoólica”",
+      "level": 3
+    },
+    {
+      "line": 405,
+      "title": "18. Recursos visuais para curadoria futura no Admin",
+      "level": 2
+    },
+    {
+      "line": 424,
+      "title": "19. Pendências explícitas antes de aprovação",
+      "level": 2
+    },
+    {
+      "line": 432,
+      "title": "20. O que o ensaio WATERFALL realmente demonstrou sobre fluidos",
+      "level": 2
+    },
+    {
+      "line": 451,
+      "title": "21. O pâncreas necrosado é diferente de uma coleção infectada",
+      "level": 2
+    },
+    {
+      "line": 457,
+      "title": "21.1. Antimicrobianos: quando ajudam e quando podem prejudicar",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "21.2. Drenagem, necrosectomia e a lógica de escalonamento",
+      "level": 3
+    },
+    {
+      "line": 473,
+      "title": "21.3. Ducto desconectado: por que algumas coleções voltam",
+      "level": 3
+    },
+    {
+      "line": 479,
+      "title": "22. Complicações sistêmicas: a pancreatite compromete mais que o abdome",
+      "level": 2
+    },
+    {
+      "line": 481,
+      "title": "22.1. Insuficiência respiratória",
+      "level": 3
+    },
+    {
+      "line": 487,
+      "title": "22.2. Lesão renal aguda e choque",
+      "level": 3
+    },
+    {
+      "line": 493,
+      "title": "22.3. Síndrome compartimental abdominal",
+      "level": 3
+    },
+    {
+      "line": 497,
+      "title": "22.4. Hemorragia e complicações vasculares",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "22.5. Consequências tardias endócrinas e exócrinas",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "23. Incertezas e situações clínicas especiais",
+      "level": 2
+    },
+    {
+      "line": 509,
+      "title": "23.1. Hipertrigliceridemia muito elevada",
+      "level": 3
+    },
+    {
+      "line": 513,
+      "title": "23.2. Pancreatite durante gestação",
+      "level": 3
+    },
+    {
+      "line": 517,
+      "title": "23.3. Crianças e adolescentes",
+      "level": 3
+    },
+    {
+      "line": 521,
+      "title": "23.4. Idosos e pessoas com insuficiência cardíaca",
+      "level": 3
+    },
+    {
+      "line": 525,
+      "title": "24. Casos de maior complexidade para treino do internato",
+      "level": 2
+    },
+    {
+      "line": 527,
+      "title": "Caso F — Reposição hídrica com descompensação pulmonar",
+      "level": 3
+    },
+    {
+      "line": 533,
+      "title": "Caso G — Necrose com sepse após melhora inicial",
+      "level": 3
+    },
+    {
+      "line": 539,
+      "title": "Caso H — Microlitíase oculta em “pancreatite idiopática”",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "Caso I — Pseudocisto versus WON",
+      "level": 3
+    },
+    {
+      "line": 551,
+      "title": "25. Questões de prova com integração fisiológica e cirúrgica",
+      "level": 2
+    },
+    {
+      "line": 553,
+      "title": "Questão 7 — Fluido em pancreatite",
+      "level": 3
+    },
+    {
+      "line": 565,
+      "title": "Questão 8 — Necrose infectada",
+      "level": 3
+    },
+    {
+      "line": 577,
+      "title": "Questão 9 — Coleção pancreática",
+      "level": 3
+    },
+    {
+      "line": 589,
+      "title": "Questão 10 — Quando repetir TC?",
+      "level": 3
+    },
+    {
+      "line": 601,
+      "title": "26. Checagem integrada do raciocínio — dez erros que a LURIA não deve perpetuar",
+      "level": 2
+    },
+    {
+      "line": 616,
+      "title": "27. Bibliografia comentada e trilha de verificação científica",
+      "level": 2
+    },
+    {
+      "line": 626,
+      "title": "Observação editorial",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **ACG 2024** — diagnóstico, hidratação moderada, preferência por Ringer lactato, reavaliação, nutrição precoce, CPRE e colecistectomia. DOI 10.14309/ajg.0000000000002645. https://pubmed.ncbi.nlm.nih.gov/38857482/. **Principal guia de manejo do presente manuscrito.**",
+    "2. **WATERFALL 2022** — ensaio randomizado que demonstrou maior sobrecarga volêmica com reposição agressiva, sem melhor desfecho clínico demonstrado. https://pubmed.ncbi.nlm.nih.gov/36103415/.",
+    "3. **Atlanta revisada** — Banks PA et al., *Gut*. 2013;62:102–111. https://gut.bmj.com/content/62/1/102. **Fonte principal para classificação e terminologia de coleções.**",
+    "4. **AGA 2019/2020, necrose** — suporte nutricional, antibióticos somente em infecção, seleção de drenagem e adiamento de debridamento quando possível. https://pubmed.ncbi.nlm.nih.gov/31479658/.",
+    "5. **Arquivos de Gastroenterologia 2026, lama biliar** — revisão narrativa publicada em periódico brasileiro sobre importância de EUS/CPRM e etiologia oculta, sem representar consenso oficial do Brasil. https://www.scielo.br/j/ag/a/VzKJwZBQfs5GZj3rbqBxzvN/abstract/?lang=pt.",
+    "6. **AGA 2018, fase inicial** — evidência e estratégias de nutrição, antimicrobianos e tratamento na primeira janela. https://gastro.org/clinical-guidance/initial-management-of-acute-pancreatitis-ap/.",
+    "7. **Publicações brasileiras específicas ainda a incorporar:** AMB, Projeto Diretrizes, *Terapia nutricional na pancreatite aguda* (confirmar data, autores e vigência antes de aplicar); publicações do CBCD e de centros nacionais especializados sobre cirurgia digestiva/ACERTO, distinguindo diretrizes de revisões narrativas. **Não declarar que já houve validação integral de protocolo brasileiro.**",
+    "Ainda é necessário uniformizar os capítulos e verificar sobreposições entre itens 1–19 e aprofundamentos 20–26; conferir critérios de elegibilidade de doses/antimicrobianos/procedimentos em protocolos brasileiros e produzir recursos didáticos visuais com curadoria central. Nenhuma numeração de caráter técnico ou bibliografia substitui **revisão clínica independente** e teste de autossuficiência. **Status: rascunho em revisão.**"
+  ],
+  "external_links": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13221274/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38857482/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gastro.org/clinical-guidance/management-of-pancreatic-necrosis/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31479658/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.scielo.br/j/ag/a/VzKJwZBQfs5GZj3rbqBxzvN/abstract/?lang=pt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36103415/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gut.bmj.com/content/62/1/102",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gastro.org/clinical-guidance/initial-management-of-acute-pancreatitis-ap/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 4,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Hipertrigliceridemia grave é causa reconhecida, frequentemente com níveis **acima de aproximadamente 1000 mg/dL** e probabilidade crescente em concentrações muito elevadas; a interpretação deve considerar tempo de coleta e queda rápida dos TG durante jejum/intervenções. Diabetes descompensado, gestação, obesidade e causas genéticas podem coexistir. A etiologia provável só deve ser afirmada quando contexto e exclusão de outras causas a sustentarem.",
+      "pattern": 0
+    },
+    {
+      "text": "O **BISAP** considera cinco itens na avaliação inicial: **BUN >25 mg/dL**, alteração do estado mental, SIRS, idade >60 anos e derrame pleural. Cada item equivale a um ponto. O marcador BUN se refere a **nitrogênio ureico**, e **não** à ureia sérica em mg/dL, cuja unidade de massa é diferente. Além disso, no material comparativo do Drive aparecia o símbolo “BUN <25”, que inverte o sentido do risco. Essa informação foi corrigida expressamente.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exemplo:** paciente de 70 anos, BUN de 32 mg/dL, FC 120, leucócitos 17.000, temperatura 38,4°C, consciente e sem derrame pleural. Cumpre item de idade, BUN e SIRS, totalizando 3. A pontuação aumenta preocupação prognóstica, mas não confirma necrose infectada, não exige CPRE, nem substitui monitorização hemodinâmica e respiratória.",
+      "pattern": 0
+    },
+    {
+      "text": "O arquivo de planejamento \\`apostilas/_rascunhos/lote-05-inventario.md\\` classificava o tema **097 — Pancreatite aguda cirúrgica** como pendente de inspeção. O escopo editorial correto é **pancreatite aguda: diagnóstico, estratificação, tratamento clínico e intervenções endoscópicas/cirúrgicas**, não apenas uma lista de indicações operatórias: a maioria dos pacientes não precisa de cirurgia durante a inflamação aguda.",
+      "pattern": 1
+    },
+    {
+      "text": "1. **\\`09 - ABDOME AGUDO INFLAMATORIO - PANCREATITE AGUDA.pdf\\`** (~6,7 mil caracteres de texto extraído). Cobre epidemiologia, etiologia biliar/alcoólica, lipase e amilase, classificação, escores, TC, coleções, necrose, colecistectomia e CPRE. É útil como *benchmark de cobertura temática*, mas contém frases que não devem ser reproduzidas como conduta atual: \\`jejum\\` como regra geral; simplificação \\`grave se tiver qualquer disfunção ou complicação\\` que mistura Atlanta moderada e grave; números absolutos de mortalidade não sustentados; interpretação incorreta de componentes do BISAP; e recomendação de CPRE que pode ser entendida como uso indiscriminado. **Autoria institucional original não verificada**, arquivo marcado por redistribuição; não atribuir ao Estratégia MED. 2. **\\`01 - ABDOME AGUDO - INTRODUCAO.pdf\\`** (~3,9 mil caracteres). Situa pancreatite no diagnóstico diferencial do abdome agudo, mas generaliza \\`antibiótico e cirurgia\\` para abdome agudo inflamatório, o que seria incorreto como regra de pancreatite aguda. 3. **\\`07 - ABDOME AGUDO INFLAMATORIO - COLEDOCOLITIASE.pdf\\`** (~2,9 mil caracteres). Apresenta vias biliares, critérios de risco de cálculo no colédoco e modalidades de diagnóstico/terapia. É comparativo secundário; **CPRE terapêutica seletiva** e avaliação de colangite serão ensinadas sem transportar diretamente tabelas do PDF.",
+      "pattern": 1
+    },
+    {
+      "text": "A primeira decisão cirúrgica correta frequentemente é **não operar precocemente o pâncreas**. Estabilizar, esclarecer etiologia e monitorar risco de disfunção orgânica são prioridades. A cirurgia tem papéis precisos: colecistectomia para prevenir recorrência biliar após pancreatite leve, manejo de complicações quando necessário, controle de foco com drenagem e necrosectomia em situações selecionadas e operações por diagnósticos diferenciais ou complicações abdominais específicas.",
+      "pattern": 1
+    },
+    {
+      "text": "**Diretriz internacional principal:** Tenner S, Vege SS, Sheth SG, et al. *American College of Gastroenterology Guidelines: Management of Acute Pancreatitis*. *Am J Gastroenterol*. 2024;119(3):419–437. DOI 10.14309/ajg.0000000000002645. Texto: https://pmc.ncbi.nlm.nih.gov/articles/PMC13221274/ ; referência catalogada: https://pubmed.ncbi.nlm.nih.gov/38857482/.",
+      "pattern": 2
+    },
+    {
+      "text": "**Fonte publicada em periódico brasileiro:** Su M, Xie Y, Chen J. *Biliary sludge-associated acute pancreatitis: clinical spectrum, diagnosis, and management*. *Arquivos de Gastroenterologia*. 2026;63. DOI 10.1590/S0004-2803.24612025-155. https://www.scielo.br/j/ag/a/VzKJwZBQfs5GZj3rbqBxzvN/abstract/?lang=pt. Trata microlitíase e lama biliar; **não é diretriz oficial de sociedade médica brasileira nem substitui a ACG**.",
+      "pattern": 2
+    },
+    {
+      "text": "Um artigo de 2026 publicado em *Arquivos de Gastroenterologia* destaca que lama biliar e microlitíase são causas relevantes em episódios antes chamados de idiopáticos. A EUS pode ser mais sensível para partículas pequenas, mas disponibilidade regional e expertise variam. **Não indicar CPRE diagnóstica rotineira** em paciente estável apenas por suspeita vaga de lama biliar.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Na listagem da pasta \\`apostilas/\\` do repositório \\`arantes225/luria\\`, foram identificadas apostilas já publicadas predominantemente de GO, algumas de clínica e temas transversais, **mas não uma pasta específica de pancreatite aguda**. A ausência de pasta com título igual não prova ausência absoluta de conteúdo pancreático em toda a plataforma: esta é a avaliação inicial da biblioteca e exige busca de sobreposições na integração."
+    },
+    {
+      "text": "O arquivo de planejamento \\`apostilas/_rascunhos/lote-05-inventario.md\\` classificava o tema **097 — Pancreatite aguda cirúrgica** como pendente de inspeção. O escopo editorial correto é **pancreatite aguda: diagnóstico, estratificação, tratamento clínico e intervenções endoscópicas/cirúrgicas**, não apenas uma lista de indicações operatórias: a maioria dos pacientes não precisa de cirurgia durante a inflamação aguda."
+    }
+  ]
+}

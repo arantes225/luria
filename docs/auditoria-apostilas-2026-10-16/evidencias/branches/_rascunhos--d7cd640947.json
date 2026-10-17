@@ -1,0 +1,403 @@
+{
+  "sha": "d7cd6409470944c8d7c64d7a304b24e4f0ac5d83",
+  "path": "apostilas/_rascunhos/lote-05-101-disturbios-acido-base.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d7cd640947",
+  "title": "LURIA — Apostila 101: Distúrbios ácido-base e interpretação sistemática da gasometria",
+  "format": ".md",
+  "chars_estimated": 85708,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 101: Distúrbios ácido-base e interpretação sistemática da gasometria"
+    },
+    {
+      "title": "0. Auditoria inicial obrigatória — o que existia, o que foi lido e o que precisa ser corrigido"
+    },
+    {
+      "title": "0.1. Relação com a biblioteca LURIA"
+    },
+    {
+      "title": "0.2. Etapa zero — benchmarking com documentos reais do Drive"
+    },
+    {
+      "title": "0.3. Fontes técnico-científicas para revisão"
+    },
+    {
+      "title": "0.4. Matriz de cobertura"
+    },
+    {
+      "title": "1. Por que o pH é uma variável de vida ou morte"
+    },
+    {
+      "title": "1.1. Sistema tampão bicarbonato–CO₂"
+    },
+    {
+      "title": "1.2. Defesa imediata, pulmonar e renal"
+    },
+    {
+      "title": "2. Gasometria como exame: o que ela mede e o que não mede"
+    },
+    {
+      "title": "2.1. Valores usuais aproximados em adulto ao nível do mar"
+    },
+    {
+      "title": "2.2. Armadilhas pré-analíticas"
+    },
+    {
+      "title": "3. Leitura em seis etapas — algoritmo original LURIA"
+    },
+    {
+      "title": "3.1. Dois exemplos orientados"
+    },
+    {
+      "title": "4. Compensação: as equações e o que elas realmente permitem concluir"
+    },
+    {
+      "title": "4.1. Acidose metabólica e Winter"
+    },
+    {
+      "title": "4.2. Acidose respiratória: aguda ou crônica?"
+    },
+    {
+      "title": "4.3. Alcalose respiratória: hiperestimulação da ventilação"
+    },
+    {
+      "title": "4.4. Alcalose metabólica: por que fórmulas simplificadas têm limite"
+    },
+    {
+      "title": "5. Ânion gap: a fórmula certa, a albumina e a interpretação"
+    },
+    {
+      "title": "5.1. Exemplo com interpretação"
+    },
+    {
+      "title": "5.2. Corrigir por albumina"
+    },
+    {
+      "title": "5.3. Causas de AG aumentado: um mapa que não é apenas sigla"
+    },
+    {
+      "title": "5.4. Interpretação segura do osmolar gap"
+    },
+    {
+      "title": "6. Delta ratio: encontrar distúrbio metabólico adicional"
+    },
+    {
+      "title": "6.1. Interpretação aproximada, não sentença matemática"
+    },
+    {
+      "title": "6.2. Exemplo com mistura ácida"
+    },
+    {
+      "title": "6.3. Exemplo com alcalose adicional"
+    },
+    {
+      "title": "7. Acidose metabólica com AG normal: rins, intestino e cloreto"
+    },
+    {
+      "title": "7.1. Amônio urinário e ânion gap urinário"
+    },
+    {
+      "title": "7.2. Formas de acidose tubular renal — fisiologia e potássio"
+    },
+    {
+      "title": "7.3. Um paciente, duas interpretações possíveis"
+    },
+    {
+      "title": "7.3. Amôniogênese renal: de onde surge o novo bicarbonato"
+    },
+    {
+      "title": "7.4. Como decidir se a acidose hiperclorêmica é intestinal ou renal"
+    },
+    {
+      "title": "8. Alcalose metabólica: perder H⁺ não explica tudo"
+    },
+    {
+      "title": "8.1. Papel do cloro urinário"
+    },
+    {
+      "title": "8.2. Vômitos versus diuréticos versus mineralocorticoides"
+    },
+    {
+      "title": "8.3. Tratamento deve resolver a causa"
+    },
+    {
+      "title": "9. Acidose respiratória e hipoventilação alveolar"
+    },
+    {
+      "title": "9.1. Quando a gasometria determina urgência"
+    },
+    {
+      "title": "9.2. Alcalose pós-hipercápnica"
+    },
+    {
+      "title": "10. Alcalose respiratória: hiperventilação não significa ansiedade"
+    },
+    {
+      "title": "11. Cetoacidose diabética: reconhecer a atualização de 2024"
+    },
+    {
+      "title": "11.1. Cetonemia e urina: por que podem divergir"
+    },
+    {
+      "title": "11.2. Ânion gap e resolução: uma mudança conceitual"
+    },
+    {
+      "title": "11.3. Bicarbonato na CAD: exceção, não rotina"
+    },
+    {
+      "title": "12. Distúrbios mistos: três situações muito cobradas"
+    },
+    {
+      "title": "12.1. Sepse: acidose láctica com alcalose respiratória"
+    },
+    {
+      "title": "12.2. Salicilatos: hiperventilação e AG aumentado"
+    },
+    {
+      "title": "12.3. DPOC com diurético e vômitos: hipercapnia mais alcalose metabólica"
+    },
+    {
+      "title": "13. Casos clínicos comentados — versão inicial"
+    },
+    {
+      "title": "Caso A — Diarreia, bicarbonato baixo e resposta renal"
+    },
+    {
+      "title": "Caso B — Gasometria “quase normal” e problema misto"
+    },
+    {
+      "title": "Caso C — Doença pulmonar crônica e agudização"
+    },
+    {
+      "title": "Caso D — CAD euglicêmica associada a medicamento"
+    },
+    {
+      "title": "Caso E — Alcalose metabólica com cloro baixo"
+    },
+    {
+      "title": "14. Questões originais — alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — Compensação pela fórmula de Winter"
+    },
+    {
+      "title": "Questão 2 — Ânion gap"
+    },
+    {
+      "title": "Questão 3 — Acidemia com pH aparentemente normal"
+    },
+    {
+      "title": "Questão 4 — Correção do ânion gap por albumina"
+    },
+    {
+      "title": "Questão 5 — Acidose respiratória crônica"
+    },
+    {
+      "title": "Questão 6 — CAD 2024"
+    },
+    {
+      "title": "15. Plano de recursos visuais — candidatas, não imagens aprovadas"
+    },
+    {
+      "title": "16. Acidose láctica e perfusão: interpretar o lactato sem simplificações perigosas"
+    },
+    {
+      "title": "16.1. Perfusão, coleta e tendência"
+    },
+    {
+      "title": "16.2. Tratamento não é “corrigir lactato com bicarbonato”"
+    },
+    {
+      "title": "17. Bicarbonato intravenoso e acidemia grave: onde há evidência e onde não há"
+    },
+    {
+      "title": "17.1. O estudo BICARICU-2 e a interpretação correta"
+    },
+    {
+      "title": "17.2. Mecanismo dos efeitos adversos previsíveis"
+    },
+    {
+      "title": "17.3. Três cenários que não devem ser misturados"
+    },
+    {
+      "title": "17.4. Quando o rim precisa de suporte extracorpóreo"
+    },
+    {
+      "title": "18. Intoxicações, osmol gap e riscos de diagnóstico tardio"
+    },
+    {
+      "title": "18.1. Metanol"
+    },
+    {
+      "title": "18.2. Etilenoglicol"
+    },
+    {
+      "title": "18.3. Salicilatos e indicação de diálise"
+    },
+    {
+      "title": "18.4. Lactato elevado não resolve a investigação toxicológica"
+    },
+    {
+      "title": "19. Gravidez, idosos e ventilação mecânica: a fisiologia altera a referência"
+    },
+    {
+      "title": "19.1. Gestação e ventilação"
+    },
+    {
+      "title": "19.2. Idoso com DPOC, diuréticos e reserva renal reduzida"
+    },
+    {
+      "title": "19.3. Ventilação mecânica e ajuste de PaCO₂"
+    },
+    {
+      "title": "19.4. Baixo pH não significa automaticamente intubação"
+    },
+    {
+      "title": "20. Casos clínicos avançados — do resultado ao plano"
+    },
+    {
+      "title": "Caso F — Intubação e perda da compensação"
+    },
+    {
+      "title": "Caso G — Acidose metabólica com LRA: bicarbonato pode ajudar?"
+    },
+    {
+      "title": "Caso H — Salicilato com pH normal"
+    },
+    {
+      "title": "Caso I — Hipoalbuminemia mascara AG"
+    },
+    {
+      "title": "Caso J — Alcalose pós-hipercápnica na UTI"
+    },
+    {
+      "title": "Caso K — Perda intestinal de bicarbonato e função renal preservada"
+    },
+    {
+      "title": "Caso L — Cetoacidose tratada, cetonemia resolvida e bicarbonato ainda baixo"
+    },
+    {
+      "title": "21. Questões avançadas — respostas explicadas em todas as alternativas"
+    },
+    {
+      "title": "Questão 7 — Intoxicação por salicilatos"
+    },
+    {
+      "title": "Questão 8 — Hiperventilação compensatória"
+    },
+    {
+      "title": "Questão 9 — BICARICU-2"
+    },
+    {
+      "title": "Questão 10 — Gasometria venosa e oxigenação"
+    },
+    {
+      "title": "Questão 11 — Acidose tubular renal tipo 4"
+    },
+    {
+      "title": "Questão 12 — Cloro urinário na alcalose metabólica"
+    },
+    {
+      "title": "Questão 13 — Amôniogênese renal"
+    },
+    {
+      "title": "Questão 14 — Cálculo de ânion gap urinário"
+    },
+    {
+      "title": "Questão 15 — Resolução da cetoacidose no consenso 2024"
+    },
+    {
+      "title": "Questão 16 — Resposta respiratória insuficiente"
+    },
+    {
+      "title": "22. Roteiro de autossuficiência: onde buscar a justificativa dentro deste caderno"
+    },
+    {
+      "title": "23. Referências finais anotadas e divergências deliberadamente registradas"
+    },
+    {
+      "title": "24. Pendências para atingir o padrão final do lead_apostilas"
+    }
+  ],
+  "reference_entries": [
+    "1. Gomes EB, Pereira HCP. **Interpretação de gasometria arterial.** *VITTALLE – Revista de Ciências da Saúde*. 2021;33(1):203–218. Universidade Federal do Rio Grande (Brasil). DOI 10.14295/vittalle.v33i1.11501. https://periodicos.furg.br/vittalle/article/view/11501. Artigo didático brasileiro, não protocolo nacional de medicamentos.",
+    "2. Morikawa MJ, Ganesh PR. **Acid-Base Interpretation: A Practical Approach.** *American Family Physician*. 2025;111(2):148–155 (versão corrigida). https://www.aafp.org/afp/2025/0200/acid-base-interpretation. Revisão sistemática de raciocínio diagnóstico, não guideline de administração de bicarbonato.",
+    "3. **Mixed Acid-Base Disturbances: Core Curriculum 2025.** *American Journal of Kidney Diseases*, 2025. https://www.sciencedirect.com/science/article/pii/S0272638625009072. Abordagem atualizada de compensações e processos mistos.",
+    "4. Umpierrez GE et al. **Hyperglycemic Crises in Adults With Diabetes: A Consensus Report.** *Diabetes Care*. 2024;47(8):1257–1275. DOI 10.2337/dci24-0032. https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/. Consenso ADA/EASD/JBDS/AACE/DTS sobre CAD/EHH em adultos.",
+    "5. Revisões de alta qualidade sobre acidose tubular renal, doenças respiratórias, terapia renal substitutiva e intoxicações serão incorporadas por subcapítulo, com a respectiva fonte; referências nacionais devem prevalecer quando disponíveis e verificáveis.",
+    "**pH = 6,1 + log₁₀ { HCO₃⁻ / [0,03 × PaCO₂] }**, quando bicarbonato está em mEq/L e PaCO₂ em mmHg, utilizando aproximações válidas em condições usuais.",
+    "**Exemplo:** HCO₃⁻ de 24 mEq/L e PaCO₂ de 40 mmHg → razão 24/(1,2) = 20 e pH em torno de 7,40. Se o HCO₃⁻ cai a 12 mEq/L e PaCO₂ não muda, a razão é 10 e pH cai para aproximadamente 7,10. Se a ventilação aumenta e PaCO₂ cai para 24 mmHg, a razão sobe para 12/0,72 ≈16,7 e pH se aproxima de 7,32; a acidemia diminui por resposta respiratória, sem que a causa metabólica tenha necessariamente sido corrigida.",
+    "**Tamponamento químico** ocorre quase imediatamente pela capacidade de proteínas, bicarbonato e outros sistemas de aceitar ou doar prótons. **Resposta respiratória** acontece em minutos a horas, alterando excreção de CO₂: uma acidose metabólica estimula ventilação e pode provocar respiração profunda, como na cetoacidose. **Resposta renal** é mais lenta, podendo exigir horas ou dias para grande ajuste de bicarbonato, especialmente em distúrbios respiratórios crônicos.",
+    "**Gasometria venosa** pode ser útil para monitorar pH e bicarbonato em cenários específicos; porém a PvCO₂ não equivale numericamente à PaCO₂ em choque, hipoperfusão e situações variáveis. A gasometria venosa **não substitui PaO₂ arterial para avaliar oxigenação**. O estudante deve perguntar o tipo de amostra antes de aplicar fórmulas que exigem *Pa*CO₂.",
+    "**Etapa 1 — paciente e segurança.** Há choque, alteração de consciência, trabalho respiratório grave, arritmia, intoxicação ou insuficiência respiratória? Tratar prioridades ABC ao mesmo tempo que se interpreta o exame. A gasometria nunca autoriza ignorar hipoxemia ou instabilidade.",
+    "**Etapa 2 — olhar o pH.** Acidemia, alcalemia ou pH dentro da faixa usual? Registrar o valor exato, não apenas a etiqueta “normal”.",
+    "**Etapa 3 — identificar processo principal.** Se pH baixo e HCO₃⁻ baixo, acidose metabólica é candidata. Se pH baixo e PaCO₂ alta, acidose respiratória. Se pH alto e HCO₃⁻ alto, alcalose metabólica; se pH alto e PaCO₂ baixa, alcalose respiratória. Se ambos se modificaram de forma incompatível ou o pH está aparentemente normal apesar de valores extremos, suspeitar de processos mistos.",
+    "**Etapa 4 — avaliar compensação prevista.** Aplicar fórmula adequada para o *processo primário* e comparar observado a esperado. Se a PaCO₂ ou HCO₃⁻ estiver fora do intervalo de compensação, há provável distúrbio adicional, não “compensação perfeita”.",
+    "**Etapa 5 — calcular ânion gap quando há acidose metabólica**, preferencialmente considerando albumina, e avaliar delta/delta em contexto apropriado. Para alcalose metabólica, investigar cloro urinário e estado de volume. Para distúrbios respiratórios, avaliar cronologia e ventilação.",
+    "**Etapa 6 — procurar a causa e definir conduta/monitorização.** A interpretação que termina em “acidose mista compensada” sem reconhecer sepse, hipoperfusão, DPOC ou intoxicação é incompleta. O mecanismo e a gravidade determinam a intervenção, não apenas o pH.",
+    "**Gasometria A:** pH 7,26; PaCO₂ 28; HCO₃⁻ 12. Acidemia e bicarbonato baixo indicam acidose metabólica. Winter: PaCO₂ esperada = 1,5×12 + 8 ±2 = 26 ±2, isto é, 24–28. PaCO₂ observada 28 → resposta respiratória aproximadamente apropriada. O processo ainda pode ser perigoso; verificar AG, lactato, cetonas, rim e perfusão.",
+    "**Gasometria B:** pH 7,20; PaCO₂ 49; HCO₃⁻ 18. Acidemia com HCO₃⁻ reduzido e PaCO₂ elevada. Para acidose metabólica com bicarbonato 18, seria esperada PaCO₂ de 1,5×18 +8 ±2 = 35 ±2. Como observada é 49, existe **acidose respiratória adicional**; dizer “está compensando” seria erro. O paciente pode ter hipoventilação por intoxicação, fadiga muscular, doença pulmonar ou alteração de consciência, necessitando avaliação urgente da ventilação.",
+    "**Correção histórica documentada:** a Parte 1 do Drive informa um incremento aproximado de 2 mEq/L por 10 mmHg em acidose respiratória crônica, enquanto os currículos renais contemporâneos geralmente usam 3,5–4. **O texto do Drive não será reproduzido como regra válida.**",
+    "**Exemplo 1:** HCO₃⁻ 10; esperado PaCO₂ = 15 + 8 = 23 ±2. Se PaCO₂ medida é 21–25, resposta aproximadamente apropriada. Se PaCO₂ medida é **34**, a ventilação está menos intensa do que deveria: acidose respiratória concomitante. Se PaCO₂ medida é **16**, há ventilação além da esperada, sugerindo alcalose respiratória associada.",
+    "**Exemplo 2:** pessoa com sepse, lactato alto, HCO₃⁻ 14 e PaCO₂ 23. Winter prevista = 29 ±2. A PaCO₂ menor do que o mínimo esperado é compatível com **alcalose respiratória concomitante**, que pode ocorrer em sepse e dor; não basta rotular como “compensação aumentada”. A investigação precisa manter foco no estado clínico.",
+    "**Pulo do gato:** classificar distúrbio misto significa identificar outra alteração primária quando a resposta observada **não é a esperada**, e não quando existem dois valores laboratoriais alterados — isso ocorre mesmo na compensação simples.",
+    "**AG = Na⁺ − (Cl⁻ + HCO₃⁻)**, usando concentrações próximas no tempo em mmol/L ou mEq/L. A notação é essencial: **não** é Na − (HCO₃ − Cl). A faixa de referência depende de método laboratorial, albumina e outros fatores; valores frequentemente ao redor de 8–12 mEq/L, mas o “12” universal é simplificação.",
+    "**AG corrigido ≈ AG medido + 2,5 × (4 − albumina em g/dL)**.",
+    "**Cetoacidose:** deficiência relativa de insulina, redução de ingestão/alimentação, álcool e situações associadas a inibidores de SGLT2 podem aumentar cetonas ácidas. O predomínio de β-hidroxibutirato sobre acetoacetato modifica sensibilidade de tiras urinárias.",
+    "**Acidose láctica:** lactato pode aumentar por hipoperfusão, sepse, convulsões e diversas alterações de metabolismo/depuração. Lactato alto não prova automaticamente choque distributivo; sua interpretação é dinâmica e clínica.",
+    "**Uremia/insuficiência renal avançada:** diminuição da excreção de cargas ácidas e retenção de ânions. LRA pode coexistir com outra causa do AG, como acidose láctica e CAD; não atribuir tudo à creatinina elevada.",
+    "**Intoxicação/ingestão de tóxicos:** metanol, etilenoglicol e salicilatos são hipóteses importantes quando o caso sugere exposição, distúrbio misto, alteração visual, nefrotoxicidade ou AG elevado sem causa aparente. Medidas de osmolar gap são auxiliares e têm limitações: **osmolar gap normal não exclui intoxicação por álcool tóxico em fase tardia**, quando metabólitos ácidos já se acumularam.",
+    "**Osmolar gap = osmolalidade medida − osmolalidade calculada.** A osmolalidade calculada pode usar 2×Na + glicose/18 + ureia/6, quando glicose e **ureia** estão em mg/dL. Fórmulas que usam **BUN** adotam divisor diferente (~2,8); trocar grandezas altera o resultado. A presença de etanol acrescenta osmóis e exige termo apropriado; não subtrair etanol da análise sem saber qual fórmula foi usada.",
+    "**Exemplo:** osmolalidade medida 330 mOsm/kg; calculada 298. Gap ≈32 mOsm/kg, que pode sugerir presença de osmóis não medidos, mas não identifica substância específica. Etanol, manitol, glicóis e particularidades laboratoriais são possibilidades; o quadro clínico, tempo de exposição, AG, toxicologia e suporte especializado determinam investigação e conduta.",
+    "**ΔAG/ΔHCO₃⁻ = (AG − referência basal) / (HCO₃⁻ basal − HCO₃⁻ observado)**."
+  ],
+  "external_urls": [
+    "https://periodicos.furg.br/vittalle/article/view/11501.",
+    "https://www.aafp.org/afp/2025/0200/acid-base-interpretation.",
+    "https://www.sciencedirect.com/science/article/pii/S0272638625009072.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4319187/",
+    "https://pubmed.ncbi.nlm.nih.gov/38448728/",
+    "https://pubmed.ncbi.nlm.nih.gov/36868734/",
+    "https://jamanetwork.com/journals/jama/fullarticle/2840824.",
+    "https://www.extrip-workgroup.org/salicylates.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+    "https://periodicos.furg.br/vittalle/article/view/11501",
+    "https://jamanetwork.com/journals/jama/fullarticle/2840824",
+    "https://www.extrip-workgroup.org/salicylates"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Missão didática:** conduzir o aluno, sem pressupor domínio prévio, da fisiologia de CO₂–bicarbonato ao diagnóstico de distúrbios simples, compensação, distúrbios mistos e condutas dirigidas à causa. As fórmulas e casos são explicados no próprio manuscrito. Não converter diretamente exemplos em prescrições clínicas."
+    },
+    {
+      "text": "**Material A — \\`07 - GASOMETRIA ARTERIAL - PARTE 1.pdf\\`.** Arquivo aberto e lido integralmente como texto (~6,7 mil caracteres). Aborda tampão CO₂/HCO₃⁻, pH, PaCO₂, bicarbonato, acidoses e alcaloses, fórmula de Winter e compensação respiratória. Problemas detectados: a compensação da **acidose respiratória crônica** foi descrita em um ponto como aumento de apenas 2 mEq/L de bicarbonato por 10 mmHg de CO₂; valores de referência e cálculos foram misturados; a fórmula de ânion gap foi impressa de modo inconsistente em um trecho. A apostila LURIA ensinará compensação crônica aproximada de **3,5–4 mEq/L por 10 mmHg** de aumento de PaCO₂, com ref"
+    },
+    {
+      "text": "**Material C — \\`06 - DIABETES - EMERGENCIAS HIPERGLICEMICAS (CAD E EHH).pdf\\`.** Foi aberto e lido como complemento contextual, principalmente para interpretação de CAD, beta-hidroxibutirato, cetose e acidose. Os critérios antigos de CAD enfatizam glicemia >250 mg/dL e usam o ânion gap como critério de resolução; **não reproduzir isso como definição atual**: o consenso ADA/EASD 2024 adotou glicemia ≥200 mg/dL ou história prévia de diabetes, com cetose e acidose, e recomenda beta-hidroxibutirato como indicador central. Não copiar protocolo de insulina/fluido desse resumo sem validação vigente."
+    },
+    {
+      "text": "1. Gomes EB, Pereira HCP. **Interpretação de gasometria arterial.** *VITTALLE – Revista de Ciências da Saúde*. 2021;33(1):203–218. Universidade Federal do Rio Grande (Brasil). DOI 10.14295/vittalle.v33i1.11501. https://periodicos.furg.br/vittalle/article/view/11501. Artigo didático brasileiro, não protocolo nacional de medicamentos. 2. Morikawa MJ, Ganesh PR. **Acid-Base Interpretation: A Practical Approach.** *American Family Physician*. 2025;111(2):148–155 (versão corrigida). https://www.aafp.org/afp/2025/0200/acid-base-interpretation. Revisão sistemática de raciocínio diagnóstico, não guideline de administração de bicarbonato. 3. **Mixed A"
+    },
+    {
+      "text": "| Competência | Benchmark do Drive | Objetivo LURIA | |---|---|---| | Fisiologia CO₂–HCO₃⁻ | Resumo | Ensinar equação, pulmão, rim e tempo de compensação | | Leitura da gasometria | Presente | Algoritmo em etapas, com ressalvas de exame venoso/arterial | | Compensação | Parcial e uma discrepância | Fórmulas por distúrbio, exemplos e limites | | Ânion gap | Parcial, notação errada num trecho | Fórmula correta, albumina e análise de causas | | Distúrbio misto | Raso | Winter, delta gap e estados clínicos sobrepostos | | Acidose tubular renal | Resumo | Fisiologia, formas, K e limitações de AG urinário | | Alcalose metabólica | Cl urinário em co"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,70 @@
+{
+  "sha": "4d97a91b6a89a6f39652e96b9c468b88f7cea393",
+  "path": "apostilas/_rascunhos/lote-06-121-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--4d97a91b6a",
+  "title": "Lote 06 — Tema 121: Infecção Urinária e Pielonefrite",
+  "format": ".md",
+  "chars_estimated": 9842,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — Tema 121: Infecção Urinária e Pielonefrite"
+    },
+    {
+      "title": "Etapa zero — inventário e prevenção de duplicação"
+    },
+    {
+      "title": "Documentos do Drive efetivamente abertos para benchmark de abrangência"
+    },
+    {
+      "title": "Diretrizes científicas localizadas e conferidas"
+    },
+    {
+      "title": "Escopo planejado"
+    },
+    {
+      "title": "Bloqueios de conclusão"
+    },
+    {
+      "title": "Etapa seguinte — material redigido e pré-validação técnica"
+    },
+    {
+      "title": "Cobertura e integridade"
+    },
+    {
+      "title": "Matriz de autossuficiência preliminar (sem consultar gabaritos)"
+    },
+    {
+      "title": "Camada visual"
+    },
+    {
+      "title": "Pendências que bloqueiam marcação de \"concluída\""
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+    "https://uroweb.org/guidelines/urological-infections/summary-of-changes/2026",
+    "https://www.idsociety.org/~/link/bc125f1fa47a47b7913b884cd368e8a0.aspx",
+    "https://academic.oup.com/cid/article/82/Supplement_3/i79/8384478",
+    "https://www.idsociety.org/practice-guideline/amr-guidance/",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

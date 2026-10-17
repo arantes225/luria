@@ -1,0 +1,216 @@
+{
+  "sha": "ed70d7ab27d2a1ba13be57491945645bbf72f0e5",
+  "path": "apostilas/_rascunhos/lote-07-aula-125-rastreamento-prevencao-quaternaria.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015",
+    "origin/editorial/lote04-aula64-placenta-dpp-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ed70d7ab27",
+  "title": "LURIA | Lote 7 — Aula 125",
+  "format": ".md",
+  "chars_estimated": 28466,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 7 — Aula 125"
+    },
+    {
+      "title": "Rastreamento, prevenção quaternária e cuidado baseado em valor"
+    },
+    {
+      "title": "Etapa zero — benchmark de amplitude e lacunas"
+    },
+    {
+      "title": "1. Por que rastrear exige uma justificativa mais forte do que diagnosticar?"
+    },
+    {
+      "title": "2. História natural, fase pré-clínica e janela de oportunidade"
+    },
+    {
+      "title": "3. Epidemiologia aplicada ao teste: prevalência importa"
+    },
+    {
+      "title": "Sensibilidade e especificidade"
+    },
+    {
+      "title": "Exemplo didático — população de risco baixo"
+    },
+    {
+      "title": "4. Quatro vieses e danos que tornam rastreamento um tema de prova"
+    },
+    {
+      "title": "4.1. Viés de antecipação diagnóstica (lead-time)"
+    },
+    {
+      "title": "4.2. Viés de duração (length-time)"
+    },
+    {
+      "title": "4.3. Sobrediagnóstico"
+    },
+    {
+      "title": "4.4. Falso positivo, falso negativo e sobretratamento"
+    },
+    {
+      "title": "5. Critérios para recomendar um programa"
+    },
+    {
+      "title": "6. Rastreio organizado, oportunístico e abordagem diagnóstica"
+    },
+    {
+      "title": "7. Aplicação brasileira atual — exemplos de alto rendimento"
+    },
+    {
+      "title": "7.1. Câncer do colo do útero"
+    },
+    {
+      "title": "7.2. Câncer de mama"
+    },
+    {
+      "title": "7.3. Câncer colorretal"
+    },
+    {
+      "title": "7.4. Câncer de próstata"
+    },
+    {
+      "title": "7.5. Exame anual “de tudo”"
+    },
+    {
+      "title": "8. Prevenção quaternária: a quarta obrigação clínica"
+    },
+    {
+      "title": "9. Decisão compartilhada e comunicação do risco"
+    },
+    {
+      "title": "10. Quando interromper rastreamento"
+    },
+    {
+      "title": "11. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — rastreamento mamário versus diagnóstico"
+    },
+    {
+      "title": "Caso 2 — PSA em pessoa assintomática"
+    },
+    {
+      "title": "Caso 3 — teste DNA-HPV em programa organizado"
+    },
+    {
+      "title": "Caso 4 — FIT positivo e cuidado em rede"
+    },
+    {
+      "title": "12. Seis questões de residência comentadas"
+    },
+    {
+      "title": "Questão 1 — interpretação de teste e prevalência"
+    },
+    {
+      "title": "Questão 2 — viés de antecipação"
+    },
+    {
+      "title": "Questão 3 — prevenção quaternária"
+    },
+    {
+      "title": "Questão 4 — colo do útero no SUS"
+    },
+    {
+      "title": "Questão 5 — mamografia"
+    },
+    {
+      "title": "Questão 6 — teste fecal"
+    },
+    {
+      "title": "13. Resumo estruturado"
+    },
+    {
+      "title": "14. Camada visual proposta — nenhuma imagem aprovada"
+    },
+    {
+      "title": "15. Referências verificadas"
+    },
+    {
+      "title": "16. Pendências e critérios de aprovação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Como funciona o rastreamento do câncer no SUS?** 28/04/2026. https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "2. Ministério da Saúde. **Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero**, Parte I: teste DNA-HPV oncogênico. Portaria Conjunta SAES/SECTICS nº 13/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "3. INCA. **Detecção precoce do câncer do colo do útero**; atualização sobre método molecular e população-alvo. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+    "4. INCA. **Ministério da Saúde padroniza informações para acesso à mamografia no SUS**. 29/09/2025. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "5. INCA. **SUS inclui teste de alta tecnologia para rastreamento de câncer colorretal**. 10/08/2026. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "6. Ministério da Saúde. **Câncer de próstata**, seção sobre riscos do rastreamento em assintomáticos. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata/cancer-de-prostata",
+    "7. Jamoulle M. **Prevenção quaternária: primeiro não causar dano.** Revista Brasileira de Medicina de Família e Comunidade. DOI: 10.5712/rbmfc10(35)1064. https://rbmfc.org.br/rbmfc/article/view/1064",
+    "8. Martins C, Godycki-Cwirko M, Heleno B, Brodersen J. **Quaternary prevention: reviewing the concept.** Eur J Gen Pract. 2018. https://pubmed.ncbi.nlm.nih.gov/29384397/",
+    "- [x] Benchmark parcial efetivamente aberto e limitações explicitadas.",
+    "- [x] Distinção entre rastreamento, diagnóstico e prevenção quaternária.",
+    "- [x] Epidemiologia dos testes e vieses do rastreamento.",
+    "- [x] Exemplos brasileiros atuais conferidos por fontes oficiais.",
+    "- [x] Quatro casos clínicos com raciocínio e seis questões autorais comentadas.",
+    "- [ ] Localizar benchmark específico de medicina preventiva, leitura comparativa equivalente.",
+    "- [ ] Desenvolver capítulo completo de evidências, níveis de recomendação, intervalos, rastreamento e subgrupos especiais.",
+    "- [ ] Revisar com atenção ao desdobramento do FIT na rede SUS após incorporação em 2026.",
+    "- [ ] Checar divergências de sociedades médicas e separar claramente recomendações.",
+    "- [ ] Meta editorial de ≥60 mil caracteres úteis sem repetição e teste de autossuficiência.",
+    "- [ ] Auditoria profissional de números/datas/pontos de corte e avaliação de telas.",
+    "- [ ] Figuras originais e imagens aprovadas com licença comercial.",
+    "**Status desta versão: RASCUNHO PARCIAL, ainda não disponível como apostila da biblioteca.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata/cancer-de-prostata",
+    "https://rbmfc.org.br/rbmfc/article/view/1064",
+    "https://pubmed.ncbi.nlm.nih.gov/29384397/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos."
+    },
+    {
+      "text": "**Investigar não é rastrear.** Mulher com nódulo mamário palpável, sangramento pós-menopausa ou paciente com hematoquezia necessita avaliação **diagnóstica** apropriada, mesmo que esteja fora da faixa etária do programa de rastreamento. A idade recomendada para exame periódico em pessoas assintomáticas não serve como “proibição” de investigar sintomas."
+    },
+    {
+      "text": "Um teste de rastreamento faz sentido quando existe uma fase detectável antes do aparecimento clínico e quando o tratamento nesse estágio melhora um desfecho importante, idealmente mortalidade específica ou total, morbidade ou qualidade de vida. **Descobrir antes não prova que a pessoa viverá mais**; às vezes só aumenta o tempo durante o qual ela conhece o diagnóstico."
+    },
+    {
+      "text": "Antes de recomendar rastreio populacional: 1. A condição é suficientemente relevante em saúde pública no grupo-alvo? 2. Existe fase pré-clínica detectável e entendimento de progressão? 3. O teste tem desempenho adequado, é aceito e disponível? 4. Há tratamento efetivo para doença encontrada precocemente? 5. Estudos mostram melhora de desfechos centrados nas pessoas, não só estágio/tempo de sobrevida após diagnóstico? 6. Os danos foram quantificados? 7. Há equidade, regulação, confirmação diagnóstica e tratamento disponível para testes positivos? 8. Existe acompanhamento dos dados, convite ativo apropriado e reavaliação de políticas?"
+    },
+    {
+      "text": "| Conceito | Funcionamento | Vantagens e riscos | |---|---|---| | Organizado | Identifica população elegível, convoca e monitora intervalos e resultados, assegura percurso de confirmação/tratamento | Melhora cobertura racional, reduz sobreposição de exames e permite avaliar qualidade, mas demanda estrutura | | Oportunístico | Testes oferecidos quando pessoa comparece ao serviço | Pode ampliar acesso individual, mas favorece repetição desnecessária e não alcança facilmente ausentes da rede | | Diagnóstico | Avaliação desencadeada por sintomas, sinais ou achados clínicos | Direcionado ao problema apresentado; **não limitado** aos critérios de t"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

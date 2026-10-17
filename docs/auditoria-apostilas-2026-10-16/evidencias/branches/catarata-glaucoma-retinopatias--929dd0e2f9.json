@@ -1,0 +1,161 @@
+{
+  "sha": "929dd0e2f985acc1304f2733d9d50bee042a04df",
+  "path": "apostilas/catarata-glaucoma-retinopatias/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "catarata-glaucoma-retinopatias--929dd0e2f9",
+  "title": "LURIA · Apostila 239 — Catarata, glaucoma crônico, retinopatias e avaliação ocular pediátrica",
+  "format": ".md",
+  "chars_estimated": 31712,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 239 — Catarata, glaucoma crônico, retinopatias e avaliação ocular pediátrica"
+    },
+    {
+      "title": "1. Objetivo clínico e raciocínio inicial"
+    },
+    {
+      "title": "1.1 Queixa visual: perguntas que mudam a urgência"
+    },
+    {
+      "title": "2. Catarata: fisiopatologia, clínica e decisão cirúrgica"
+    },
+    {
+      "title": "2.1 Quadro clínico"
+    },
+    {
+      "title": "2.2 Tratamento e indicação"
+    },
+    {
+      "title": "3. Glaucoma crônico: hipertensão ocular, dano óptico e campo visual"
+    },
+    {
+      "title": "3.1 Apresentação e exame"
+    },
+    {
+      "title": "3.2 Tratamento"
+    },
+    {
+      "title": "3.3 Diferenciar glaucoma crônico de crise aguda"
+    },
+    {
+      "title": "4. Retinopatias: diagnóstico e encaminhamento"
+    },
+    {
+      "title": "4.1 Retinopatia diabética"
+    },
+    {
+      "title": "4.2 Retinopatia hipertensiva"
+    },
+    {
+      "title": "4.3 Degeneração macular relacionada à idade e outras maculopatias"
+    },
+    {
+      "title": "4.4 Outras urgências retinianas a reconhecer"
+    },
+    {
+      "title": "5. Oftalmopediatria: reflexo vermelho, ambliopia e estrabismo"
+    },
+    {
+      "title": "5.1 Triagem por faixa etária"
+    },
+    {
+      "title": "5.2 Catarata congênita e ambliopia"
+    },
+    {
+      "title": "5.3 Estrabismo e erro refrativo"
+    },
+    {
+      "title": "5.4 Retinopatia da prematuridade (ROP)"
+    },
+    {
+      "title": "5.5 Retinoblastoma: reconhecer e encaminhar"
+    },
+    {
+      "title": "6. Diferenciais de perda visual: tabela de decisão"
+    },
+    {
+      "title": "7. Manejo por cenário: ambulatório, APS e hospital"
+    },
+    {
+      "title": "8. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — 'Minha catarata está grande, preciso operar?'"
+    },
+    {
+      "title": "Caso 2 — Glaucoma com 'pressão normal'"
+    },
+    {
+      "title": "Caso 3 — Diabético com mancha central"
+    },
+    {
+      "title": "Caso 4 — Reflexo branco em fotografia de lactente"
+    },
+    {
+      "title": "9. Seis questões originais com alternativas comentadas"
+    },
+    {
+      "title": "10. Pérolas para ENAMED, residência e clínica"
+    },
+    {
+      "title": "11. Mapa visual pendente — seleção editorial, não imagens já incorporadas"
+    },
+    {
+      "title": "12. Referências verificadas — consultadas em 15/10/2026"
+    },
+    {
+      "title": "13. Auditoria editorial e lacunas"
+    }
+  ],
+  "reference_entries": [
+    "1. Sociedade Brasileira de Oftalmologia Pediátrica, Sociedade Brasileira de Pediatria, Conselho Brasileiro de Oftalmologia. *Recomendações para avaliação ocular pelo pediatra*. Nota técnica diretoria 2023–2025. https://sbop.com.br/medico/wp-content/uploads/sites/2/2024/12/Recomendacoes-para-avaliacao-ocular-pelo-pediatra.pdf_e54b6902-cc09-4c1f-8d13-70fa7cac9bc4.pdf",
+    "2. NICE. *Glaucoma: diagnosis and management*. NG81; atualização 2022. https://www.nice.org.uk/guidance/ng81/chapter/Recommendations",
+    "3. American Academy of Ophthalmology. *Cataract in the Adult Eye Preferred Practice Pattern*. Ophthalmology. https://www.aaojournal.org/article/S0161-6420%2821%2900750-8/fulltext",
+    "4. American Diabetes Association. *12. Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026*. Diabetes Care. https://doi.org/10.2337/dc26-s012",
+    "5. American Academy of Ophthalmology. *Pediatric Eye Evaluations Preferred Practice Pattern*. Ophthalmology. https://www.aaojournal.org/article/S0161-6420%2822%2900866-1/fulltext",
+    "6. American Academy of Ophthalmology EyeWiki. *Retinopathy of Prematurity*. https://eyewiki.aao.org/Retinopathy_of_Prematurity — referência didática secundária; prevalecem critérios brasileiros quando distintos.",
+    "**Concluído neste manuscrito:** catarata, glaucoma crônico, retina diabética/hipertensiva e maculopatias, oftalmopediatria básica, reflexo vermelho, ambliopia/estrabismo, ROP, quatro casos, seis questões, diferenciais, fluxos e bibliografia.",
+    "**Antes de publicação:** aprofundar estágios retinianos com exemplos e imagens, instrumentos de avaliação ocular por idade e exames físicos dirigidos, diretrizes brasileiras de glaucoma/catarata específicas do SUS, retinopatia hipertensiva estratificada, ROP por zonas/estágios/plus e tempo de reavaliação segundo diretriz nacional, avaliação de glaucoma congênito, diagnóstico diferencial de leucocoria detalhado, reabilitação visual e acesso na rede, revisão de linguagem e avaliação médica independente. Não alcançar ainda o tamanho premium exigido e não registrar como finalizado.",
+    "**Sem duplicação:** complementar #195 por links cruzados; não transferir todo o capítulo de urgências a este arquivo."
+  ],
+  "external_urls": [
+    "https://sbop.com.br/medico/wp-content/uploads/sites/2/2024/12/Recomendacoes-para-avaliacao-ocular-pelo-pediatra.pdf_e54b6902-cc09-4c1f-8d13-70fa7cac9bc4.pdf",
+    "https://www.nice.org.uk/guidance/ng81/chapter/Recommendations",
+    "https://www.aaojournal.org/article/S0161-6420%2821%2900750-8/fulltext",
+    "https://doi.org/10.2337/dc26-s012",
+    "https://www.aaojournal.org/article/S0161-6420%2822%2900866-1/fulltext",
+    "https://eyewiki.aao.org/Retinopathy_of_Prematurity"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Catarata, glaucoma e retinopatias são causas relevantes de deficiência visual, mas não se comportam da mesma forma. A **catarata** compromete a transparência do cristalino e, em muitos casos, permite reabilitação cirúrgica da visão. O **glaucoma** é uma neuropatia óptica progressiva em que a pressão intraocular (PIO) é importante fator de risco modificável, mas não critério único e universal de diagnóstico. As **retinopatias** atingem o tecido neurovascular da retina e podem comprometer visão central, periférica ou ambas conforme o território afetado. Em crianças, opacidades do eixo visual, estrabismo ou erros refracionais importantes podem d"
+    },
+    {
+      "text": "A correção óptica e ajustes de iluminação ajudam temporariamente quando a função visual permanece aceitável. **Não há colírio comprovado capaz de reverter catarata relacionada à idade**. O tratamento definitivo é a remoção do cristalino opacificado, habitualmente com implante de lente intraocular, realizada por oftalmologista. A decisão é centrada na **limitação funcional e expectativa realista de melhora**, não em limiar fixo de acuidade visual isoladamente. A AAO recomenda a cirurgia quando o benefício funcional é provável e o paciente informado decide realizá-la; pode ser indicada também para permitir exame ou tratamento de doença posterio"
+    },
+    {
+      "text": "O glaucoma primário de ângulo aberto geralmente é **assintomático nas fases iniciais** e progride com perda de campo visual inicialmente periférica; queixa de baixa visual central pode ocorrer tardiamente ou por comorbidade. Escavação papilar aumentada isolada não fecha diagnóstico: a interpretação exige características do disco, assimetria, progressão, OCT e campimetria."
+    },
+    {
+      "text": "Uma PIO isolada não distingue hipertensão ocular de glaucoma. A NICE NG81 recomenda encaminhamento para investigação quando há dano de papila, defeito campimétrico glaucomatoso ou PIO ≥24 mmHg na aplanação Goldmann em seu contexto assistencial, com repetição de medidas quando apropriado; **esse valor não é um limiar diagnóstico universal nem substitui o fluxo regulatório brasileiro**."
+    },
+    {
+      "text": "| Classe | Exemplos | Efeitos/alertas para o generalista | |---|---|---| | Análogos de prostaglandinas | Latanoprosta, travoprosta | Hiperemia, mudanças em cílios/íris e região periocular; orientação de aplicação | | Betabloqueadores tópicos | Timolol | Possíveis efeitos sistêmicos: bradicardia, broncoespasmo; cautela em asma, DPOC e bloqueios de condução | | Inibidores de anidrase carbônica | Dorzolamida; acetazolamida sistêmica em indicações específicas | Irritação tópica; a forma sistêmica exige cuidado com eletrólitos, rim e contraindicações | | Agonistas alfa-2 | Brimonidina | Sonolência, boca seca, alergia; restrições importantes em cri"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

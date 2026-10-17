@@ -1,0 +1,525 @@
+{
+  "key": "sindrome-ovariana-metabolica-poliendocrina-somp",
+  "kind": "apostila-html",
+  "path": "apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html",
+  "html_path": "apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html",
+  "title": "Síndrome Ovariana Metabólica Poliendócrina",
+  "source_sha256": "9b202cc10fd46a359877d63ecfe7e54c5c2ce03180bad284f25217eda7d98279",
+  "html_sha256": "9b202cc10fd46a359877d63ecfe7e54c5c2ce03180bad284f25217eda7d98279",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Metabólico",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Sem desejo gestacional",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Com desejo gestacional",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceito e terminologia",
+      "section": "conceito"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiopatologia",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Resistência à insulina e hiperinsulinemia",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Eixo hipotálamo–hipófise–ovário",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Disfunção folicular",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Manifestações clínicas",
+      "section": "clinica"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Diagnóstico",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Adultas: 2 de 3 critérios",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Hiperandrogenismo bioquímico",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Ultrassonografia e AMH",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescentes",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H4",
+      "title": "Regra diagnóstica",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Avaliação laboratorial de exclusão",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescência: evitar transformar maturação normal em doença",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "4.1. Raciocínio diagnóstico na SOMP: cinco situações em que o exame isolado engana",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — 16 anos, dois anos após a menarca e ovários multifoliculares",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — exames de andrógeno enquanto toma anticoncepcional combinado",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — menstruação aparentemente regular e suspeita de anovulação",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — mulher com peso dentro da faixa esperada e glicemia normal",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — hirsutismo, amenorreia e desejo de gestar",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Além dos ovários: saúde mental, sono e endométrio",
+      "section": "casos-decisao-somp-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Diagnóstico diferencial",
+      "section": "diferencial"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Risco metabólico e cardiovascular",
+      "section": "metabolico"
+    },
+    {
+      "tag": "H3",
+      "title": "Rastreamento",
+      "section": "metabolico"
+    },
+    {
+      "tag": "H4",
+      "title": "O que avaliar na prática",
+      "section": "metabolico"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Tratamento",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Estilo de vida",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Anticoncepcionais hormonais combinados",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Proteção endometrial",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Metformina",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Antiandrogênios",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H3",
+      "title": "Agonistas de GLP-1",
+      "section": "tratamento"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Infertilidade e indução de ovulação",
+      "section": "fertilidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Letrozol: primeira linha",
+      "section": "fertilidade"
+    },
+    {
+      "tag": "H3",
+      "title": "Alternativas e escalonamento",
+      "section": "fertilidade"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Complicações e seguimento",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "Questões de fixação",
+      "section": "questoes"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Aprofundamento: PMOS como síndrome reprodutiva, metabólica e longitudinal",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que a resistência à insulina amplifica o hiperandrogenismo?",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Fenótipos importam, mas não substituem avaliação de risco",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Endométrio: por que ciclos muito espaçados importam?",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Desejo gestacional: induzir ovulação não é o mesmo que “tratar toda infertilidade”",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação e pós-parto",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Saúde mental, imagem corporal e excesso de tratamento",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "section": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico diferencial completo",
+      "section": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Terapêutica por objetivo",
+      "section": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento metabólico",
+      "section": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências prioritárias",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "section": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Eixo neuroendócrino e hiperandrogenismo",
+      "section": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Exames que mudam o diagnóstico",
+      "section": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp"
+    },
+    {
+      "tag": "H3",
+      "title": "Endométrio, infertilidade e metabolismo",
+      "section": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 900
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 512
+    },
+    {
+      "id": "conceito",
+      "title": "1. Conceito e terminologia",
+      "chars": 988
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia",
+      "chars": 1477
+    },
+    {
+      "id": "clinica",
+      "title": "3. Manifestações clínicas",
+      "chars": 721
+    },
+    {
+      "id": "diagnostico",
+      "title": "4. Diagnóstico",
+      "chars": 3237
+    },
+    {
+      "id": "casos-decisao-somp-2026",
+      "title": "4.1. Raciocínio diagnóstico na SOMP: cinco situações em que o exame isolado engana",
+      "chars": 6449
+    },
+    {
+      "id": "diferencial",
+      "title": "5. Diagnóstico diferencial",
+      "chars": 810
+    },
+    {
+      "id": "metabolico",
+      "title": "6. Risco metabólico e cardiovascular",
+      "chars": 936
+    },
+    {
+      "id": "tratamento",
+      "title": "7. Tratamento",
+      "chars": 2904
+    },
+    {
+      "id": "fertilidade",
+      "title": "8. Infertilidade e indução de ovulação",
+      "chars": 1402
+    },
+    {
+      "id": "seguimento",
+      "title": "9. Complicações e seguimento",
+      "chars": 794
+    },
+    {
+      "id": "questoes",
+      "title": "Questões de fixação",
+      "chars": 1204
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "10. Aprofundamento: PMOS como síndrome reprodutiva, metabólica e longitudinal",
+      "chars": 3701
+    },
+    {
+      "id": "editorial-depth-sindrome-ovariana-metabolica-poliendocrina-somp",
+      "title": "Aprofundamento clínico por mecanismos e causas",
+      "chars": 1237
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 837
+    },
+    {
+      "id": "etio-profundidade-sindrome-ovariana-metabolica-poliendocrina-somp",
+      "title": "Estudo aprofundado por mecanismo e etiologia",
+      "chars": 2116
+    }
+  ],
+  "references": [
+    "International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. 2023; terminologia atualizada para PMOS em 2026.",
+    "Teede HJ et al. Consenso internacional de renomeação PCOS → PMOS. The Lancet, 2026.",
+    "Monash Centre for Health Research and Implementation. PMOS Guideline update, 2026.",
+    "Sociedade Brasileira de Endocrinologia e Metabologia (SBEM). Comunicação e participação brasileira no consenso global de 2026.",
+    "Ministério da Saúde / CONITEC. PCDT brasileiro de Síndrome dos Ovários Policísticos, utilizado como referência nacional com ressalva para critérios ultrassonográficos mais antigos.",
+    "Nota editorial: recomendações internacionais atuais prevalecem nos pontos em que documentos nacionais mais antigos divergem, especialmente critérios de morfologia ovariana e uso de AMH."
+  ],
+  "reference_links": [],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://commons.wikimedia.org/wiki/File:Polycystic_ovary.jpg",
+      "in_references": false
+    },
+    {
+      "label": "Diretriz internacional de 2023 e atualização institucional de nomenclatura de 2026",
+      "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "in_references": false
+    },
+    {
+      "label": "diretriz internacional PMOS/SOMP 2023, versão institucional com nomenclatura atualizada",
+      "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-from-the-2023-international-evidence-based-guideline-for-the-assessment-and-management-of-polyendocrine-metabolic-ovarian-syndrome-2023/",
+      "in_references": false
+    },
+    {
+      "label": "Monash, nota de atualização terminológica, 2026",
+      "url": "https://www.monash.edu/__data/assets/pdf_file/0009/4360095/Updated-PMOS-Guideline-12-June26.pdf",
+      "in_references": false
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Polycystic_ovary.jpg",
+      "alt": "Ultrassonografia transvaginal de ovário com morfologia policística",
+      "section": "diagnostico",
+      "caption": "Ultrassonografia transvaginal — morfologia ovariana policística. Imagem clínica real. Fonte: Wikimedia Commons, Schomynv, CC0 1.0. A distribuição periférica dos folículos pode ocorrer, mas não é requisito diagnóstico isolado.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 2,
+  "paragraphs": 53,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "diagnostico",
+      "text": "Com tecnologia ultrassonográfica adequada, o critério preferencial é FNPO ≥20 folículos em pelo menos um ovário. Quando a qualidade de imagem ou a tecnologia não permite contagem adequada do ovário inteiro, volume ovariano ≥10 mL ou FNPS ≥10 podem ser usados. O AMH em adultas pode substituir o ultrassom para definição de PCOM, mas não deve ser solicitado junto com US de rotina nem interpretado por um ponto de corte universal.",
+      "pattern": 0
+    },
+    {
+      "section": "casos-decisao-somp-2026",
+      "text": "Adolescente teve menarca aos 14 anos. Apresenta ciclos de 46–60 dias, acne leve e ultrassom com numerosos folículos. O achado de ovário policístico não deve ser usado como critério diagnóstico nessa fase; a morfologia ovariana é frequentemente multifolicular durante a maturação reprodutiva. Entre 1 e menos de 3 anos após a menarca, intervalos menores que 21 ou maiores que 45 dias devem motivar avaliação de disfunção ovulatória, mas não bastam sozinhos para rotular SOMP. É necessário identificar hiperandrogenismo clínico significativo ou bioquímico, excluir outras causas e acompanhar a evolução.",
+      "pattern": 0
+    },
+    {
+      "section": "casos-decisao-somp-2026",
+      "text": "Mulher de 25 anos toma anticoncepcional combinado há dois anos para acne e ciclos irregulares. Um laboratório informa testosterona total e livre normais; ela pergunta se isso exclui SOMP. Não: anticoncepcionais combinados aumentam SHBG e reduzem a produção ovariana de andrógenos dependente de gonadotrofinas, dificultando avaliação bioquímica. História de hirsutismo, padrão menstrual anterior ao método e sinais clínicos têm valor. Se medir andrógenos for imprescindível, a diretriz internacional recomenda considerar suspensão do anticoncepcional por pelo menos três meses, com outro método contraceptivo eficaz durante esse período; não suspender por conta própria apenas para repetir um exame sem indicação.",
+      "pattern": 0
+    },
+    {
+      "section": "casos-decisao-somp-2026",
+      "text": "Paciente de 30 anos tem hirsutismo importante e menstrua a cada 29–32 dias, mas refere infertilidade. Ciclos de duração regular tornam a ovulação provável, porém não a garantem. Quando confirmar ovulação for necessário, a dosagem de progesterona deve ser programada de acordo com o provável momento ovulatório — aproximadamente sete dias antes da menstruação esperada — e não automaticamente no “dia 21” em qualquer ciclo. A investigação de infertilidade também deve considerar fatores tubários e masculinos, não apenas a presença de hiperandrogenismo.",
+      "pattern": 0
+    },
+    {
+      "section": "conceito",
+      "text": "Poliendócrina descreve a interação entre produção ovariana de andrógenos, eixo hipotálamo–hipófise–ovário, sinalização insulínica e, em algumas pacientes, contribuição adrenal. Tireoidopatias e hiperprolactinemia continuam sendo diagnósticos diferenciais, e não componentes obrigatórios da síndrome.",
+      "pattern": 1
+    },
+    {
+      "section": "conceito",
+      "text": "A prevalência varia conforme o critério diagnóstico e a população estudada, em geral na faixa de aproximadamente 8–13% das mulheres em idade reprodutiva. A SOMP é uma das principais causas de infertilidade anovulatória.",
+      "pattern": 1
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "A resistência à insulina é frequente, mas não universal e não integra os critérios diagnósticos. A hiperinsulinemia compensatória potencializa a esteroidogênese nas células da teca, atua em sinergia com LH e reduz a síntese hepática de SHBG, elevando a fração livre de testosterona. Adiposidade visceral e inflamação de baixo grau podem amplificar esse circuito.",
+      "pattern": 1
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "Alterações na pulsatilidade de GnRH favorecem secreção relativa de LH e produção ovariana de andrógenos. A relação LH/FSH pode estar elevada, porém não é critério diagnóstico e não deve ser usada para confirmar ou excluir SOMP.",
+      "pattern": 1
+    },
+    {
+      "section": "conceito",
+      "text": "A Síndrome Ovariana Metabólica Poliendócrina (SOMP), em inglês Polyendocrine Metabolic Ovarian Syndrome (PMOS), é um distúrbio endócrino-metabólico heterogêneo caracterizado pela combinação variável de hiperandrogenismo, disfunção ovulatória e morfologia ovariana policística. A nomenclatura substituiu PCOS/SOP em 2026 para reduzir o foco indevido no aspecto ultrassonográfico e refletir melhor a natureza hormonal e metabólica da síndrome.",
+      "pattern": 2
+    },
+    {
+      "section": "conceito",
+      "text": "A prevalência varia conforme o critério diagnóstico e a população estudada, em geral na faixa de aproximadamente 8–13% das mulheres em idade reprodutiva. A SOMP é uma das principais causas de infertilidade anovulatória.",
+      "pattern": 2
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "Alterações na pulsatilidade de GnRH favorecem secreção relativa de LH e produção ovariana de andrógenos. A relação LH/FSH pode estar elevada, porém não é critério diagnóstico e não deve ser usada para confirmar ou excluir SOMP.",
+      "pattern": 2
+    },
+    {
+      "section": "diagnostico",
+      "text": "Dosagem de insulina basal ou HOMA-IR não é recomendada rotineiramente para diagnosticar SOMP ou “documentar” resistência à insulina.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceito",
+      "text": "A Síndrome Ovariana Metabólica Poliendócrina (SOMP), em inglês Polyendocrine Metabolic Ovarian Syndrome (PMOS), é um distúrbio endócrino-metabólico heterogêneo caracterizado pela combinação variável de hiperandrogenismo, disfunção ovulatória e morfologia ovariana policística. A nomenclatura substituiu PCOS/SOP em 2026 para reduzir o foco indevido no aspecto ultrassonográfico e refletir melhor a natureza hormonal e metabólica da síndrome."
+    },
+    {
+      "section": "conceito",
+      "text": "Poliendócrina descreve a interação entre produção ovariana de andrógenos, eixo hipotálamo–hipófise–ovário, sinalização insulínica e, em algumas pacientes, contribuição adrenal. Tireoidopatias e hiperprolactinemia continuam sendo diagnósticos diferenciais, e não componentes obrigatórios da síndrome."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 1
+  }
+}

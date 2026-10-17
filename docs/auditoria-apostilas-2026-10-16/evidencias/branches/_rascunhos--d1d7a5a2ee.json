@@ -1,0 +1,180 @@
+{
+  "sha": "d1d7a5a2eed5145ee2dee6c9b932cd44d5015be3",
+  "path": "apostilas/_rascunhos/lote-13-258-ats-custo-efetividade.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d1d7a5a2ee",
+  "title": "LURIA — Lote 13 · Apostila 258",
+  "format": ".md",
+  "chars_estimated": 29638,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 258"
+    },
+    {
+      "title": "Avaliação de Tecnologias em Saúde (ATS), economia da saúde e custo-efetividade"
+    },
+    {
+      "title": "Benchmark e limitação da etapa zero"
+    },
+    {
+      "title": "Roteiro de aprendizagem"
+    },
+    {
+      "title": "1. ATS: evidência não é apenas \"funciona?\""
+    },
+    {
+      "title": "2. A cadeia da evidência clínica: PICO e certeza"
+    },
+    {
+      "title": "Eficácia vs efetividade"
+    },
+    {
+      "title": "Qualidade da evidência"
+    },
+    {
+      "title": "3. Custo tem perspectiva, tempo e contexto"
+    },
+    {
+      "title": "Custos diretos e indiretos"
+    },
+    {
+      "title": "4. Tipos de avaliação econômica"
+    },
+    {
+      "title": "5. QALY e DALY: construir para entender"
+    },
+    {
+      "title": "6. RCEI/ICER — interpretar numerador e denominador"
+    },
+    {
+      "title": "Quatro quadrantes de decisão"
+    },
+    {
+      "title": "Dominância estendida e fronteira eficiente"
+    },
+    {
+      "title": "7. Limiar de custo-efetividade: guia, não carimbo"
+    },
+    {
+      "title": "Custo de oportunidade e valor coletivo"
+    },
+    {
+      "title": "8. Modelagem de decisão: árvore, Markov e simulação"
+    },
+    {
+      "title": "Desconto, horizonte e inflação"
+    },
+    {
+      "title": "9. Sensibilidade: quanto a resposta depende do que não sabemos?"
+    },
+    {
+      "title": "O que a curva de aceitabilidade NÃO diz"
+    },
+    {
+      "title": "10. Análise de Impacto Orçamentário (AIO)"
+    },
+    {
+      "title": "11. Testes diagnósticos e ATS"
+    },
+    {
+      "title": "Exemplo"
+    },
+    {
+      "title": "12. Da Conitec à prática: não confundir instituições"
+    },
+    {
+      "title": "13. Equidade, populações raras e limites do modelo"
+    },
+    {
+      "title": "14. Algoritmos de interpretação"
+    },
+    {
+      "title": "A. Lendo artigo de avaliação econômica"
+    },
+    {
+      "title": "B. Tecnologia muito cara e benefício aparentemente pequeno"
+    },
+    {
+      "title": "C. Teste diagnóstico novo"
+    },
+    {
+      "title": "15. Casos integradores com comentário"
+    },
+    {
+      "title": "Caso 1 — Duas terapias e ICER"
+    },
+    {
+      "title": "Caso 2 — Nova tecnologia dominante"
+    },
+    {
+      "title": "Caso 3 — Preço e orçamento"
+    },
+    {
+      "title": "Caso 4 — Teste de rastreio em baixa prevalência"
+    },
+    {
+      "title": "Caso 5 — Pacientes diferentes, média enganosa"
+    },
+    {
+      "title": "16. Questões autorais de residência — comentários completos"
+    },
+    {
+      "title": "17. Dez visuais didáticos planejados para fila de aprovação"
+    },
+    {
+      "title": "18. Referências nacionais e internacionais verificáveis"
+    },
+    {
+      "title": "Auditoria e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde/Conitec. Diretrizes Metodológicas — lista e Diretriz de Avaliação Econômica, 3ª edição, 2026: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "2. Ministério da Saúde. Diretrizes Metodológicas — Diretriz de Avaliação Econômica, 3ª edição, 2026 (obra de 164 páginas): https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_metodologicas_diretriz_avaliacao_economica_3ed.pdf",
+    "3. Conitec. Limiares de custo-efetividade, página institucional atualizada em 2026: https://www.gov.br/conitec/pt-br/centrais-de-conteudo/biblioteca-virtual/limiares",
+    "4. Conitec. Ministério da Saúde publica documento sobre limiares de custo-efetividade (2022): https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/novembro/ministerio-da-saude-publica-proposta-de-uso-de-limiares-de-custo-efetividade-lce-recomendada-pela-conitec/",
+    "5. Conitec. Diretrizes metodológicas de análise de impacto orçamentário e consulta pública 2026: https://www.gov.br/conitec/pt-br/assuntos/noticias/2026/Maio/consulta-publica-recebe-contribuicoes-sobre-diretrizes-metodologicas-de-analise-de-impacto-orcamentario",
+    "6. Conitec. Perguntas frequentes — processo e dimensões de incorporação: https://www.gov.br/conitec/pt-br/acesso-a-informacao/perguntas-frequentes",
+    "7. WHO. WHO guideline development and HTA background information, sítio de ATS: https://www.who.int/health-topics/health-technology-assessment",
+    "8. CHEERS 2022. Consolidated Health Economic Evaluation Reporting Standards: https://www.equator-network.org/reporting-guidelines/cheers/",
+    "**Já redigido:** conceitos essenciais de ATS, decisão baseada em PICO, economia, comparação, QALY/DALY, ICER, dominância, perspectiva, tempo, modelagem, sensibilidade, AIO, teste diagnóstico, equidade, cinco casos, oito questões comentadas e dez pautas visuais.",
+    "**Pendências obrigatórias:** falta PDF dedicado no Drive, comparação especializada, leitura completa do manual econômico 2026 com revisão de parâmetros oficiais (taxas de desconto, perspectiva padrão, tratamento da heterogeneidade, métodos recomendados), fórmulas de fronteira de eficiência com casos calculados, análise crítica de incerteza, avaliações internacionais comparadas, integração com decisões brasileiras recentes para casos de incorporação, revisão matemática externa, ≥60 mil caracteres úteis e teste de autossuficiência, figuras validadas, HTML/PWA.",
+    "**Estado de verdade:** RASCUNHO_PARCIAL_NAO_PUBLICAR, sem merge, sem deploy."
+  ],
+  "external_urls": [
+    "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/diretrizes-metodologicas",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_metodologicas_diretriz_avaliacao_economica_3ed.pdf",
+    "https://www.gov.br/conitec/pt-br/centrais-de-conteudo/biblioteca-virtual/limiares",
+    "https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/novembro/ministerio-da-saude-publica-proposta-de-uso-de-limiares-de-custo-efetividade-lce-recomendada-pela-conitec/",
+    "https://www.gov.br/conitec/pt-br/assuntos/noticias/2026/Maio/consulta-publica-recebe-contribuicoes-sobre-diretrizes-metodologicas-de-analise-de-impacto-orcamentario",
+    "https://www.gov.br/conitec/pt-br/acesso-a-informacao/perguntas-frequentes",
+    "https://www.who.int/health-topics/health-technology-assessment",
+    "https://www.equator-network.org/reporting-guidelines/cheers/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O parecer brasileiro enfatiza **custo-efetividade não isolada**; mesmo ICER abaixo do limiar pode gerar recomendação desfavorável se faltam segurança, evidência, viabilidade ou outras condições. Um ICER acima do valor orientador pode coexistir com incorporação em situações ponderadas de necessidade, equidade ou inovação, devidamente justificada."
+    },
+    {
+      "text": "Caminho simplificado: 1. Definir população e problema clínico. 2. Formular pergunta comparativa, reunir evidências de benefício/segurança. 3. Analisar evidências e incertezas; realizar avaliação econômica e AIO quando cabível. 4. Abrir participação social, considerar avaliações técnicas e critérios éticos/organizacionais. 5. Emitir recomendação e decisão formal nos termos vigentes. 6. Preparar PCDT, fornecimento, rede e monitorização de uso/segurança. 7. Reavaliar tecnologias diante de novas evidências, custos ou alternativas."
+    },
+    {
+      "text": "**Não presumir que relatório de consulta pública é decisão de incorporação**; conferir portaria e situação vigente. Um medicamento pode ser registrado, recomendado e ainda não estar operacionalmente disponível em toda unidade, exigindo trabalho de implantação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

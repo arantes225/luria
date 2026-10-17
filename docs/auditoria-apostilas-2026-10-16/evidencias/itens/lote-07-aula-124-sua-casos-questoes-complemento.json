@@ -1,0 +1,162 @@
+{
+  "key": "lote-07-aula-124-sua-casos-questoes-complemento",
+  "kind": "complemento-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-124-sua-casos-questoes-complemento.md",
+  "title": "LURIA | Lote 7 — Aula 124",
+  "source_sha256": "711473485213eeacc71307d09818eabe81be5518023a509ce7c6b6008c7582a4",
+  "chars_estimated": 16273,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Lote 7 — Aula 124",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Sangramento uterino anormal — complemento de avaliação e decisões clínicas",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "Diagnóstico inicial da apostila existente",
+      "level": 2
+    },
+    {
+      "line": 13,
+      "title": "Comparação do Drive",
+      "level": 3
+    },
+    {
+      "line": 16,
+      "title": "Fontes principais e observação de atualização",
+      "level": 3
+    },
+    {
+      "line": 19,
+      "title": "1. Matriz de raciocínio clínico da avaliação",
+      "level": 2
+    },
+    {
+      "line": 32,
+      "title": "2. Expansões dos seis casos existentes (sem recontá-los)",
+      "level": 2
+    },
+    {
+      "line": 46,
+      "title": "3. Questões autorais comentadas — bloco de avaliação para integração",
+      "level": 2
+    },
+    {
+      "line": 48,
+      "title": "Questão 1 — estabilidade e gestação",
+      "level": 3
+    },
+    {
+      "line": 59,
+      "title": "Questão 2 — PALM-COEIN",
+      "level": 3
+    },
+    {
+      "line": 70,
+      "title": "Questão 3 — coagulopatia na adolescência",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "Questão 4 — amostragem endometrial",
+      "level": 3
+    },
+    {
+      "line": 92,
+      "title": "Questão 5 — decisão terapêutica",
+      "level": 3
+    },
+    {
+      "line": 103,
+      "title": "Questão 6 — sangramento e lesão vascular",
+      "level": 3
+    },
+    {
+      "line": 114,
+      "title": "Questão 7 — SUS, diretrizes e indicação",
+      "level": 3
+    },
+    {
+      "line": 125,
+      "title": "Questão 8 — decisão após controle agudo",
+      "level": 3
+    },
+    {
+      "line": 136,
+      "title": "4. Plano de integração sem sobrescrita",
+      "level": 2
+    },
+    {
+      "line": 144,
+      "title": "5. Referências",
+      "level": 2
+    }
+  ],
+  "references": [
+    "A apostila LURIA já cita protocolo FEBRASGO/Femina de 2026. Verificação adicional: “Sangramento uterino anormal”, *Femina* 2026, vol. 54, nº 3, p. 227–235, protocolo FEBRASGO nº 80. Página da editora contém incongruência tipográfica nos números de páginas em alguns campos; usar edição/paginação confirmada no documento antes de finalizar a bibliografia. A Portaria SCTIE/MS nº 101, de 8/01/2026, **incorpora no SUS** ácido tranexâmico e DIU-LNG **em condições específicas de leiomioma com sangramento intenso**, segundo elegibilidade indicada, sem significar autorização universal a qualquer pessoa com SUA.",
+    "- Federação Brasileira das Associações de Ginecologia e Obstetrícia. Sangramento uterino anormal. **Femina** 2026;54(3):227–235. Protocolo nº 80. https://femina.org.br/article/sangramento-uterino-anormal/ ",
+    "- Ministério da Saúde. **Portaria SCTIE/MS nº 101, de 8 de janeiro de 2026**, incorporação de ácido tranexâmico e DIU-LNG em indicações delimitadas para leiomioma com sangramento intenso. https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2026/prt0101_12_01_2026.html",
+    "- ACOG. **Management of Acute Abnormal Uterine Bleeding in Nonpregnant Reproductive-Aged Women.** Committee Opinion 557, 2013 (referência histórica de manejo, não edição 2026). https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women",
+    "- ACOG. **Screening and Management of Bleeding Disorders in Adolescents With Heavy Menstrual Bleeding.** Committee Opinion 785, 2019. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/09/screening-and-management-of-bleeding-disorders-in-adolescents-with-heavy-menstrual-bleeding",
+    "**Estado:** bloco didático produzido e salvo como complemento em rascunho; não integrado e não certificado."
+  ],
+  "external_links": [
+    {
+      "url": "https://femina.org.br/article/sangramento-uterino-anormal/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2026/prt0101_12_01_2026.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/09/screening-and-management-of-bleeding-disorders-in-adolescents-with-heavy-menstrual-bleeding",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 1,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Caso 4, 47 anos, obesidade e sangramento persistente.** Sangramento irregular pode decorrer de perimenopausa e anovulação, mas hiperplasia e malignidade precisam ser excluídas quando há indicação de avaliação histológica. Endométrio “não muito espesso” na ultrassonografia não resolve isoladamente o risco de doença endometrial pré-menopausa. Se amostra for insuficiente ou houver sangramento persistente, discutir nova amostragem, histeroscopia ou abordagem dirigida. Sinais de alerta e seguimento devem ser explícitos.",
+      "pattern": 0
+    },
+    {
+      "text": "O livro LURIA já apresenta classificação PALM-COEIN, fisiologia da hemostasia endometrial, diagnóstico, sangramento agudo, tratamento crônico, causas estruturais, adolescentes, perimenopausa, anemia, referências e **seis vinhetas clínicas**. A extração preliminar de seu HTML revelou aproximadamente 55 mil caracteres de texto, mas **isso não equivale** a 55 mil caracteres didáticos originais aprovados: o texto extraído inclui elementos de navegação, títulos e repetições. Há seção de casos, porém **nenhuma seção de questões comentadas foi identificada pela busca textual simples**. Não substituir os casos existentes; ampliar a avaliação formativa.",
+      "pattern": 1
+    },
+    {
+      "text": "**Caso 1, adolescente com SUA desde a menarca.** Além da hipótese de anovulação fisiológica dos primeiros anos pós-menarca, aplicar perguntas direcionadas a sangramento de mucosas, epistaxe prolongada, hematomas fáceis, sangramento dentário e histórico familiar. Hemograma, ferritina e investigação hemostática especializada conforme triagem devem coexistir com avaliação de estabilidade. Um coagulograma inicial normal não exclui doença de von Willebrand. Planejar tratamento que controle fluxo e corrija deficiência de ferro, considerando risco trombótico, contraindicações e suporte hematológico quando necessário.",
+      "pattern": 1
+    },
+    {
+      "text": "**Caso 2, paciente com ciclos espaçados e provável disfunção ovulatória.** O risco não se resume a irregularidade menstrual: períodos repetidos de exposição estrogênica sem oposição progestacional podem aumentar proliferação endometrial, especialmente com obesidade e síndrome metabólica. Investigar gestação, fatores endócrinos conforme história e sinais de hiperandrogenismo, avaliando se há indicação de biópsia por risco e persistência. A terapia busca proteção endometrial, controle do sangramento, contracepção quando desejada e manejo metabólico, sem supor que tratar exclusivamente peso ou acne resolve o sangramento.",
+      "pattern": 1
+    }
+  ],
+  "opening": [
+    {
+      "text": "O livro LURIA já apresenta classificação PALM-COEIN, fisiologia da hemostasia endometrial, diagnóstico, sangramento agudo, tratamento crônico, causas estruturais, adolescentes, perimenopausa, anemia, referências e **seis vinhetas clínicas**. A extração preliminar de seu HTML revelou aproximadamente 55 mil caracteres de texto, mas **isso não equivale** a 55 mil caracteres didáticos originais aprovados: o texto extraído inclui elementos de navegação, títulos e repetições. Há seção de casos, porém **nenhuma seção de questões comentadas foi identificada pela busca textual simples**. Não substituir os casos existentes; ampliar a avaliação formativa."
+    },
+    {
+      "text": "**Caso 1, adolescente com SUA desde a menarca.** Além da hipótese de anovulação fisiológica dos primeiros anos pós-menarca, aplicar perguntas direcionadas a sangramento de mucosas, epistaxe prolongada, hematomas fáceis, sangramento dentário e histórico familiar. Hemograma, ferritina e investigação hemostática especializada conforme triagem devem coexistir com avaliação de estabilidade. Um coagulograma inicial normal não exclui doença de von Willebrand. Planejar tratamento que controle fluxo e corrija deficiência de ferro, considerando risco trombótico, contraindicações e suporte hematológico quando necessário."
+    }
+  ]
+}

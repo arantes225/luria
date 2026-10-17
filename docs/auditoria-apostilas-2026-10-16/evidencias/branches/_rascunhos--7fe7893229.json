@@ -1,0 +1,450 @@
+{
+  "sha": "7fe789322939b2064cf5260d40ece546e9751089",
+  "path": "apostilas/_rascunhos/lote-06-126-cirrose-e-complicacoes.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--7fe7893229",
+  "title": "LURIA — Apostila 126: Cirrose e Complicações",
+  "format": ".md",
+  "chars_estimated": 99332,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 126: Cirrose e Complicações"
+    },
+    {
+      "title": "1. O que é cirrose — doença arquitetural, não apenas enzima alterada"
+    },
+    {
+      "title": "2. Fisiopatologia integrada: do dano crônico à circulação hiperdinâmica"
+    },
+    {
+      "title": "2.1 Como o hepatócito lesionado ativa a fibrose"
+    },
+    {
+      "title": "2.2 Hipertensão portal e vasodilatação esplâncnica"
+    },
+    {
+      "title": "2.3 Intestino, microbiota, inflamação e cérebro"
+    },
+    {
+      "title": "2.4 Efeito sobre coagulação"
+    },
+    {
+      "title": "3. Etiologias e raciocínio causal: tratar o fígado e a causa"
+    },
+    {
+      "title": "3.1 Principais grupos etiológicos"
+    },
+    {
+      "title": "3.2 O que perguntar com qualidade"
+    },
+    {
+      "title": "4. Como o paciente se apresenta: sinais compensados e descompensados"
+    },
+    {
+      "title": "4.1 Alarmes de pronto-socorro"
+    },
+    {
+      "title": "5. Diagnóstico da cirrose e avaliação inicial em ambulatório e hospital"
+    },
+    {
+      "title": "5.1 Laboratórios úteis"
+    },
+    {
+      "title": "5.2 Ultrassonografia com Doppler"
+    },
+    {
+      "title": "5.3 Elastografia e biomarcadores não invasivos"
+    },
+    {
+      "title": "5.4 Biópsia hepática e diferenciais"
+    },
+    {
+      "title": "6. Hipertensão portal: do gradiente à prevenção de descompensação"
+    },
+    {
+      "title": "6.1 Profilaxia em paciente compensado"
+    },
+    {
+      "title": "6.2 Quando reconsiderar betabloqueador"
+    },
+    {
+      "title": "6.3 Atualização Baveno VIII (agosto de 2026): reclassificação não invasiva e prevenção"
+    },
+    {
+      "title": "6.4 Baveno VIII: o que conta como primeira e nova descompensação?"
+    },
+    {
+      "title": "6.5 Recompensação: novo conceito formal em Baveno VIII (2026)"
+    },
+    {
+      "title": "6.6 Carvedilol na doença descompensada: indicação, janela hemodinâmica e reavaliação"
+    },
+    {
+      "title": "7. Classificações prognósticas: Child–Pugh, MELD e suas limitações"
+    },
+    {
+      "title": "7.1 Child–Pugh: cinco componentes"
+    },
+    {
+      "title": "7.2 MELD, MELD-Na e MELD 3.0"
+    },
+    {
+      "title": "7.3 ACLF: quando uma agressão aguda muda o horizonte"
+    },
+    {
+      "title": "8. Ascite: diagnóstico começa com paracentese, não com diurético automático"
+    },
+    {
+      "title": "8.1 Por que surge"
+    },
+    {
+      "title": "8.2 Quando realizar paracentese diagnóstica"
+    },
+    {
+      "title": "8.3 Interpretar o GASA corretamente"
+    },
+    {
+      "title": "8.4 Segurança da paracentese"
+    },
+    {
+      "title": "9. Tratamento da ascite: sódio, diuréticos, paracentese e refratariedade"
+    },
+    {
+      "title": "9.1 Medidas iniciais e vigilância"
+    },
+    {
+      "title": "9.2 Espironolactona e furosemida"
+    },
+    {
+      "title": "9.3 Paracentese de grande volume e albumina"
+    },
+    {
+      "title": "9.4 Ascite refratária"
+    },
+    {
+      "title": "10. Peritonite bacteriana espontânea: diagnóstico que não depende de febre"
+    },
+    {
+      "title": "10.1 Suspeita e paracentese"
+    },
+    {
+      "title": "10.2 PBE ou peritonite secundária?"
+    },
+    {
+      "title": "10.3 Antibiótico e albumina na PBE"
+    },
+    {
+      "title": "11. Lesão renal aguda e síndrome hepatorrenal: consenso ADQI–ICA 2024"
+    },
+    {
+      "title": "11.1 Primeiro detectar a lesão renal"
+    },
+    {
+      "title": "11.2 O diagnóstico atualizado de HRS-AKI"
+    },
+    {
+      "title": "11.3 Terapia e armadilhas"
+    },
+    {
+      "title": "12. Encefalopatia hepática: raciocínio clínico, gatilhos e nutrição"
+    },
+    {
+      "title": "12.1 Síndrome e classificação West Haven"
+    },
+    {
+      "title": "12.2 Buscar precipitante em toda descompensação"
+    },
+    {
+      "title": "12.3 Lactulose, rifaximina e via aérea"
+    },
+    {
+      "title": "12.4 Proteína é parte do tratamento"
+    },
+    {
+      "title": "13. Hemorragia digestiva varicosa: estabilização e endoscopia precoce"
+    },
+    {
+      "title": "13.1 Conduta desde a suspeita"
+    },
+    {
+      "title": "13.2 Vasoativo, antibiótico e EDA"
+    },
+    {
+      "title": "13.3 Sangramento refratário e TIPS"
+    },
+    {
+      "title": "14. Hidrotórax, síndrome hepatopulmonar e hipertensão portopulmonar"
+    },
+    {
+      "title": "15. Trombose portal, plaquetopenia e o mito da “autoanticoagulação”"
+    },
+    {
+      "title": "16. Carcinoma hepatocelular e vigilância sem perder o seguimento"
+    },
+    {
+      "title": "16.1 EASL 2025: vigilância é exame repetido, não diagnóstico por AFP"
+    },
+    {
+      "title": "17. Nutrição, prevenção e vacinação no cuidado longitudinal"
+    },
+    {
+      "title": "18. Transplante hepático e metas de cuidado"
+    },
+    {
+      "title": "19. Algoritmo integrado da cirrose: o que fazer na primeira consulta e em cada descompensação"
+    },
+    {
+      "title": "19.1 A primeira consulta não termina no diagnóstico de cirrose"
+    },
+    {
+      "title": "19.2 Quatro algoritmos urgentes"
+    },
+    {
+      "title": "19.3 Fluxo de alta: a urgência pode voltar"
+    },
+    {
+      "title": "20. Como diferenciar quatro causas de abdome aumentado no paciente com cirrose"
+    },
+    {
+      "title": "20.1 Gradiente alto com proteínas baixas"
+    },
+    {
+      "title": "20.2 Gradiente alto com proteínas altas"
+    },
+    {
+      "title": "20.3 Gradiente baixo e ascite exsudativa"
+    },
+    {
+      "title": "20.4 Ascite com anemia, dor ou rápida deterioração"
+    },
+    {
+      "title": "21. Interações medicamentosas, efeitos adversos e prevenção de iatrogenias"
+    },
+    {
+      "title": "21.1 Diurético é terapia que exige controle"
+    },
+    {
+      "title": "21.2 Lactulose é eficaz, mas a dose precisa ser revisada"
+    },
+    {
+      "title": "21.3 Betabloqueadores não seletivos"
+    },
+    {
+      "title": "21.4 AINE, sedativo e anticoagulante"
+    },
+    {
+      "title": "21.5 Antibióticos e seleção de resistência"
+    },
+    {
+      "title": "22. Descompensação por infecção: cirrose, sepse e ACLF"
+    },
+    {
+      "title": "22.1 Diferenciar EH isolada de sepse/ACLF"
+    },
+    {
+      "title": "22.2 Por que albumina não é cristalóide universal"
+    },
+    {
+      "title": "22.3 Profilaxia de infecção após sangramento gastrointestinal"
+    },
+    {
+      "title": "23. Complicações menos lembradas: hérnias, disfunção cardíaca, pele e cognição"
+    },
+    {
+      "title": "23.1 Hérnias em ascite"
+    },
+    {
+      "title": "23.2 Cardiomiopatia cirrótica"
+    },
+    {
+      "title": "23.3 Alteração de sono, cognição mínima e direção"
+    },
+    {
+      "title": "23.4 Prurido e manifestações cutâneas"
+    },
+    {
+      "title": "24. Prognóstico e avaliação do risco em situações que confundem"
+    },
+    {
+      "title": "24.1 Cirrose compensada com enzimas normais"
+    },
+    {
+      "title": "24.2 Child A com evento de descompensação"
+    },
+    {
+      "title": "24.3 GASA elevado não significa ausência de infecção"
+    },
+    {
+      "title": "24.4 Hiponatremia: mecanismo e riscos da correção"
+    },
+    {
+      "title": "25. Casos de transição entre ambulatório e pronto-socorro"
+    },
+    {
+      "title": "25.1 O paciente da APS que descobriu plaquetopenia"
+    },
+    {
+      "title": "25.2 O paciente que melhora da HDA e corre risco na alta"
+    },
+    {
+      "title": "25.3 A ascite que não melhora com dose crescente"
+    },
+    {
+      "title": "25.4 Familiar descreve “ele fica muito mais agressivo”"
+    },
+    {
+      "title": "26. Síntese de alto rendimento e matriz de decisões"
+    },
+    {
+      "title": "Fechamento clínico integrador"
+    },
+    {
+      "title": "27. Oito casos clínicos integradores comentados"
+    },
+    {
+      "title": "Caso 1 — Ascite nova em pessoa com diabetes: o GASA muda a hipótese"
+    },
+    {
+      "title": "Caso 2 — PBE afebril que se apresenta como confusão"
+    },
+    {
+      "title": "Caso 3 — Creatinina 0,7 para 1,2 após diurético: não rotular HRS antes de avaliar volemia"
+    },
+    {
+      "title": "Caso 4 — Hematêmese em cirrose: três terapias antes de saber a variz"
+    },
+    {
+      "title": "Caso 5 — Encefalopatia que piorou após laxativo demais"
+    },
+    {
+      "title": "Caso 6 — Ascite refratária e dispneia à direita"
+    },
+    {
+      "title": "Caso 7 — Nódulo de 2,5 cm em cirrótico com AFP normal"
+    },
+    {
+      "title": "Caso 8 — Endoscopia normal, plaquetas baixas e elastografia intermediária"
+    },
+    {
+      "title": "28. Doze questões autorais comentadas — cirrose e complicações"
+    },
+    {
+      "title": "Questão 1 — Cirrose não é AST elevada"
+    },
+    {
+      "title": "Questão 2 — GASA e proteínas totais"
+    },
+    {
+      "title": "Questão 3 — PMN absoluto na paracentese"
+    },
+    {
+      "title": "Questão 4 — Albumina na paracentese"
+    },
+    {
+      "title": "Questão 5 — HRS-AKI em 2024"
+    },
+    {
+      "title": "Questão 6 — Encefalopatia e risco iatrogênico"
+    },
+    {
+      "title": "Questão 7 — Hemorragia varicosa: medicações antes da EDA"
+    },
+    {
+      "title": "Questão 8 — PBE ou perfuração?"
+    },
+    {
+      "title": "Questão 9 — Profilaxia de peritonite"
+    },
+    {
+      "title": "Questão 10 — Cirrose, INR e trombose"
+    },
+    {
+      "title": "Questão 11 — CHC após cura viral"
+    },
+    {
+      "title": "Questão 12 — Ascite refratária e TIPS"
+    },
+    {
+      "title": "29. Referências clínicas e distinção entre normas"
+    },
+    {
+      "title": "30. Controle editorial de produção e próximos gates"
+    }
+  ],
+  "reference_entries": [
+    "1. **Baveno VIII Faculty.** *Baveno VIII — Advancing consensus in portal hypertension.* *Journal of Hepatology*, publicado online em 19/08/2026. **DOI 10.1016/j.jhep.2026.07.030.** https://doi.org/10.1016/j.jhep.2026.07.030 . Revisão de CSPH não invasiva, NSBB, prevenção de descompensação e sangramento. Baveno VII permanece referência histórica apenas para orientações que não foram modificadas.",
+    "2. **Baveno VII — Renewing consensus in portal hypertension.** *Journal of Hepatology*, 2022;76(4):959–974. https://pubmed.ncbi.nlm.nih.gov/35120736/ . Parâmetros de hipertensão portal clinicamente significativa e prevenção.",
+    "2. **AASLD Practice Guidance on Risk Stratification and Management of Portal Hypertension and Varices in Cirrhosis**, publicada em 2024. https://doi.org/10.1097/HEP.0000000000000647 . Varizes, NSBB, hemorragia aguda, EDA e TIPS.",
+    "3. **ADQI–ICA Joint Consensus, 2024 — Acute kidney injury in patients with cirrhosis.** *Journal of Hepatology*. https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/ . Revisão importante que elimina necessidade de albumina 48h sistemática para diagnóstico de HRS-AKI.",
+    "4. **EASL Clinical Practice Guidelines on Hepatic Encephalopathy, 2022.** *Journal of Hepatology*, 77:807–824. https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext . Diagnóstico, precipitantes e tratamento.",
+    "5. **AASLD, Back to Basics: Outpatient Management of Cirrhosis**, 2024. https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis . Ascite, alimentação e vigilância CHC.",
+    "6. **AASLD: Why Do We Use Albumin in Patients With Cirrhosis?** https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis . PBE/paracentese/HRS conforme contextos.",
+    "7. **Sociedade Brasileira de Hepatologia — diretrizes, consensos e recomendações.** https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/ . Material brasileiro de diferentes datas; os consensos antigos não substituem automaticamente atualizações internacionais.",
+    "8. **IMIP, Protocolo Institucional de Manejo das Complicações da Cirrose Hepática, 2025.** https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf . Exemplo de protocolo de hospital brasileiro, não PCDT federal nacional.",
+    "9. **AASLD Practice Guidance on prevention, diagnosis and treatment of hepatocellular carcinoma**, 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/ . Vigilância e imagem de CHC.",
+    "10. **American Association for the Study of Liver Diseases — Portal Hypertension Bleeding in Cirrhosis.** https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis .",
+    "11. **AASLD 2026, apresentação de diretrizes de ascite, PBE e HRS para fellows.** https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management . Recurso de atualização; conferir a diretriz primária citada.",
+    "12. **Ministério da Saúde / Sistema Nacional de Transplantes.** A implementação brasileira de inscrição, elegibilidade e alocação segue normas próprias vigentes; **não atribuir regras norte-americanas de MELD 3.0 como política automática do Brasil** sem verificação no SNT.",
+    "13. **EASL Clinical Practice Guidelines — Management of Hepatocellular Carcinoma**, *Journal of Hepatology*. 2025;82:315–374. https://www.journal-of-hepatology.eu/article/S0168-8278%2824%2902508-X/fulltext . US semestral, trade-off da AFP e seleção de pacientes para vigilância.",
+    "**Nota científica:** valores de laboratório e medicamentos apresentados como exemplos têm função didática e podem exigir confirmação de dose e indicação conforme gravidade, resistência, função renal, acesso local e bula vigente. Citações internacionais não equivalem a protocolos obrigatórios para todas as redes brasileiras.",
+    "- [x] Conteúdo-base com fisiopatologia, diagnóstico, doença compensada/descompensada, CSPH, ascite, PBE, HRS-AKI conforme ADQI–ICA 2024, EH, HDA varicosa, CHC e transplante.",
+    "- [x] Caso HRS corrigido em relação ao resumo de Drive que exigia albumina por 48h em todos.",
+    "- [x] Oito casos originais discutindo mecanismos, exames e conduta, incluindo risco de efeitos iatrogênicos.",
+    "- [x] Doze questões com quatro alternativas, análise de todas e mini-revisão.",
+    "- [x] Referências de fontes originais/institucionais e distinção de documentos brasileiros antigos/2025.",
+    "- [ ] Revisão clínica especializada de doses, elegibilidade HRS/TIPS, profilaxia PBE, HDA, segurança de terlipressina e polifarmácia.",
+    "- [ ] Matriz de autossuficiência por questão, com capítulos-base e respostas sem recorrer aos gabaritos.",
+    "- [ ] Deduplicação semântica e certificação de ≥60 mil caracteres instrucionais **realmente úteis**.",
+    "- [ ] Curadoria até 10 imagens didáticas (US com ascite/CHC, Doppler portal, EDA de varizes, esquema TIPS, paracentese), com autoria/licença verificada e aprovação Admin; não incluir diretamente novas imagens no HTML.",
+    "- [ ] Entrada do gerador JSON, HTML preliminar, execução de validadores oficiais e testes desktop/PWA.",
+    "- [ ] **RASCUNHO EDITORIAL — NÃO FAZER MERGE/DEPLOY SEM REVISÃO.**"
+  ],
+  "external_urls": [
+    "https://doi.org/10.1016/j.jhep.2026.07.030",
+    "https://pubmed.ncbi.nlm.nih.gov/35120736/",
+    "https://doi.org/10.1097/HEP.0000000000000647",
+    "https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/",
+    "https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext",
+    "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+    "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis",
+    "https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/",
+    "https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/",
+    "https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis",
+    "https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management",
+    "https://www.journal-of-hepatology.eu/article/S0168-8278%2824%2902508-X/fulltext"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **RASCUNHO EDITORIAL — NÃO PUBLICAR.** Conteúdo acadêmico autoral, não prescrição para paciente específico. Uso de diuréticos, albumina, vasopressores, antibióticos e procedimentos depende de contexto clínico, recomendações atualizadas, supervisão e disponibilidade institucional. As faixas de doses são referências de protocolos, não ordens automáticas. A sequência editorial privilegia primeiro reconhecer descompensação e tratar a ameaça imediata, depois estabelecer etiologia, prognóstico e plano de cuidado."
+    },
+    {
+      "text": "**Cirrose hepática** é estágio de remodelamento crônico e difuso do fígado, com fibrose avançada, nódulos regenerativos e desorganização vascular que elevam a resistência ao fluxo sanguíneo portal e comprometem funções hepáticas. Nem toda pessoa com cirrose apresenta icterícia, ascite ou aminotransferases elevadas; o diagnóstico pode surgir em avaliação de plaquetopenia, esplenomegalia, imagem nodular ou rastreamento de carcinoma hepatocelular (CHC)."
+    },
+    {
+      "text": "Em compensados, pode não haver sintomas; cansaço inespecífico, esplenomegalia e plaquetopenia são pistas. Na descompensação, surgem **distensão abdominal progressiva**, edema, icterícia, sangramento gastrointestinal, inversão sono-vigília, confusão, queda de funcionalidade ou infecção. O exame pode revelar circulação colateral abdominal, eritema palmar, telangiectasias, ginecomastia, atrofia muscular e edema. Esses sinais não são diagnósticos isolados: por exemplo, eritema palmar também aparece na gestação e em outras condições."
+    },
+    {
+      "text": "Avalia contorno nodular, heterogeneidade, tamanho hepático, esplenomegalia, ascite, colaterais, fluxo portal/hepático e lesões focais. Em doença avançada, o diagnóstico pode ser muito sugestivo, mas US normal não exclui fibrose avançada. Doppler ajuda a investigar trombose de veia porta e síndromes vasculares, mas interpretação depende de técnica e contexto. Lesão focal suspeita requer protocolo específico de CHC, não biópsia indiscriminada antes de imagem multiphasic quando há critérios."
+    },
+    {
+      "text": "Esses pontos de corte **não são universais** para todos os pacientes, inclusive obesidade grave, congestão cardíaca, etiologias não validadas e cirrose já descompensada. Escores de fibrose como FIB-4 podem ser úteis na triagem metabólica, porém resultados intermediários exigem avaliação adicional; não equivalem a diagnóstico de cirrose por si."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

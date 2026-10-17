@@ -1,0 +1,237 @@
+{
+  "sha": "61ab599265fdbf36ea113ee3109d79858b651171",
+  "path": "apostilas/_rascunhos/lote-05-100-curvas-roc-testes-diagnosticos.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--61ab599265",
+  "title": "LURIA — Apostila 100: Testes diagnósticos, curvas ROC e pontos de corte",
+  "format": ".md",
+  "chars_estimated": 44004,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 100: Testes diagnósticos, curvas ROC e pontos de corte"
+    },
+    {
+      "title": "0. Etapa zero, referências e limites da produção"
+    },
+    {
+      "title": "1. Por que o ponto de corte transforma o exame"
+    },
+    {
+      "title": "2. Recapitulação mínima: o mapa da curva ROC"
+    },
+    {
+      "title": "3. Construção de uma curva do zero — exemplo LURIA, sem dados de pacientes reais"
+    },
+    {
+      "title": "3.1. Calculando cada linha de maneira auditável"
+    },
+    {
+      "title": "3.2. Desenhando a curva mentalmente"
+    },
+    {
+      "title": "4. AUC: o que a área mede, e o que não mede"
+    },
+    {
+      "title": "4.1. Área por trapézios no exemplo didático"
+    },
+    {
+      "title": "4.2. Por que AUC elevada não garante boa decisão"
+    },
+    {
+      "title": "5. Índice de Youden: útil, mas não oráculo clínico"
+    },
+    {
+      "title": "6. AUC, acurácia global, VPP e calibração: quatro perguntas diferentes"
+    },
+    {
+      "title": "7. Valor preditivo por ponto de corte — consequências no mesmo grupo"
+    },
+    {
+      "title": "8. Ponto de corte para rastreamento versus confirmação"
+    },
+    {
+      "title": "9. Análise de curva de decisão e benefício líquido"
+    },
+    {
+      "title": "9.1. Exemplo numérico puramente ilustrativo"
+    },
+    {
+      "title": "9.2. Por que benefício líquido não é sinônimo de AUC"
+    },
+    {
+      "title": "10. Comparação de duas curvas: pareamento, precisão e relevância"
+    },
+    {
+      "title": "11. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Triagem de risco e ponto de corte"
+    },
+    {
+      "title": "Caso 2 — Alto Youden, mas escolha clínica diferente"
+    },
+    {
+      "title": "Caso 3 — AUC alta e risco mal calibrado"
+    },
+    {
+      "title": "Caso 4 — Validação vazada de um classificador"
+    },
+    {
+      "title": "12. Questões autorais comentadas — padrão de residência"
+    },
+    {
+      "title": "Questão 1 — Eixos da curva ROC"
+    },
+    {
+      "title": "Questão 2 — O efeito de elevar o limiar"
+    },
+    {
+      "title": "Questão 3 — AUC de 0,90"
+    },
+    {
+      "title": "Questão 4 — Índice de Youden"
+    },
+    {
+      "title": "Questão 5 — Benefício líquido e consequência clínica"
+    },
+    {
+      "title": "Questão 6 — Vazamento e avaliação externa"
+    },
+    {
+      "title": "13. Quadros de revisão, visualizações propostas e pulo do gato"
+    },
+    {
+      "title": "14. ROC em doenças raras: por que a curva precisão–revocação acrescenta informação"
+    },
+    {
+      "title": "14.1. Precisão (precision) e revocação (recall)"
+    },
+    {
+      "title": "14.2. Uma curva não substitui o fluxo assistencial"
+    },
+    {
+      "title": "15. Escolher e validar um corte — como evitar otimismo estatístico"
+    },
+    {
+      "title": "15.1. Desenvolvimento e avaliação respondem perguntas diferentes"
+    },
+    {
+      "title": "15.2. Zona cinzenta e estratégia com dois limiares"
+    },
+    {
+      "title": "15.3. Sensibilidade e especificidade não aumentam juntas apenas por mover o corte"
+    },
+    {
+      "title": "15.4. Youden versus distância geométrica"
+    },
+    {
+      "title": "16. Quando duas curvas se cruzam"
+    },
+    {
+      "title": "16.1. Modelos para evento futuro exigem atenção adicional"
+    },
+    {
+      "title": "17. Camada SUS: um exame só ajuda se o paciente conseguir completar o cuidado"
+    },
+    {
+      "title": "18. Casos e questões adicionais de alto rendimento"
+    },
+    {
+      "title": "Caso 5 — ROC promissora, baixo rendimento de positivos"
+    },
+    {
+      "title": "Caso 6 — Corte selecionado depois de olhar o gabarito"
+    },
+    {
+      "title": "Questão 7 — ROC e doença rara"
+    },
+    {
+      "title": "Questão 8 — Otimismo de ponto de corte"
+    },
+    {
+      "title": "19. Referências verificáveis"
+    },
+    {
+      "title": "20. Auditoria editorial e científica ainda necessária"
+    }
+  ],
+  "reference_entries": [
+    "**Inventário:** a entrada 100 do inventário do lote 5 não registra pasta homônima publicada nem manuscrito anterior. A busca inicial no Google Drive por “Curva ROC” não retornou apostila de metodologia diretamente equivalente. Não presumir que materiais de terceiros estejam autorizados para uso. Conteúdo, cenários e valores numéricos deste arquivo são criados para a LURIA, não transcritos de apostila externa.",
+    "**Fontes verificadas para embasamento:** Altman e Bland, *BMJ* (1994), explicam o significado de curvas ROC e AUC; Fawcett (2006) discute fundamentos e armadilhas dos classificadores; Vickers e Elkin (2006) introduzem análise de curva de decisão; STARD 2015 orienta relato transparente da acurácia. Para revisões sistemáticas brasileiras, consultar a diretriz metodológica da Conitec. Esses documentos têm escopos diferentes e não autorizam atribuir a um deles afirmações não presentes nele.",
+    "**Meta pedagógica:** depois desta aula, o estudante deve construir pontos (1−especificidade, sensibilidade), interpretar uma AUC sem chamá-la de probabilidade individual de doença, comparar limiares, criticar seleção automática por índice de Youden, compreender benefício líquido e integrar prevenção de dano clínico à escolha da estratégia diagnóstica.",
+    "**Pulo do Gato:** um exame não fica “mais sensível” porque o laboratório aumentou a qualidade do aparelho; às vezes apenas **baixou o limiar**, aceitando aumento de falsos positivos. Compare os dois índices ao interpretar mudanças de corte.",
+    "**Importante:** ROC relaciona taxas condicionadas à doença, e não VPP. Seu eixo horizontal **não** indica “percentual de todos os pacientes que receberão positivo”. Essa fração depende de prevalência e limiar.",
+    "**Corte A:** 76/80 = 95% de sensibilidade. 54/120 = 45% de especificidade. FPR = 1−0,45 = 0,55. O ponto é (0,55; 0,95).",
+    "**Corte B:** 68/80 = 85% de sensibilidade. 90/120 = 75% de especificidade. FPR = 0,25. Ponto (0,25; 0,85).",
+    "**Corte C:** 48/80 = 60% de sensibilidade. 114/120 = 95% de especificidade. FPR = 0,05. Ponto (0,05; 0,60).",
+    "- O corte **C** fica mais à esquerda e relativamente baixo: poucos falsos positivos, porém perde parcela importante dos casos.",
+    "- O corte **B** ganha sensibilidade sem aumentar tanto a taxa de falso positivo.",
+    "- O corte **A** quase detecta todos os doentes, mas leva a maior proporção de não doentes classificados como positivos.",
+    "- O melhor corte **não** decorre apenas da distância visual do canto superior esquerdo sem conhecer objetivos clínicos.",
+    "1. De x=0 a 0,05: 0,05 × (0+0,60)/2 = **0,015**.",
+    "2. De x=0,05 a 0,25: 0,20 × (0,60+0,85)/2 = **0,145**.",
+    "3. De x=0,25 a 0,55: 0,30 × (0,85+0,95)/2 = **0,270**.",
+    "4. De x=0,55 a 1: 0,45 × (0,95+1)/2 = **0,43875**.",
+    "**Armadilha de prova:** “maior Youden” não equivale à escolha baseada em custos, valores dos pacientes, prevalência, calibração ou utilidade final.",
+    "**Atenção à validade externa:** a prevalência de 40% foi escolhida só para ilustrar contas. Se outro ambulatório tiver proporção muito inferior de doentes e diferente espectro de condições, a distribuição de resultados e os valores preditivos podem mudar. Não importar o VPP de 88,9% como “o VPP do teste” sem contexto.",
+    "**Triagem:** quando perder caso é perigoso e existe via de confirmação, pode ser aceitável escolher corte sensível com maior número de falsos positivos, desde que os danos associados sejam proporcionais e o fluxo da rede suporte a confirmação.",
+    "**Confirmação:** quando positivo desencadeia tratamento agressivo, isolamento prolongado ou procedimento invasivo, é relevante minimizar falsa positividade, às vezes exigindo combinação com padrão de referência antes de iniciar a intervenção definitiva.",
+    "**Monitoramento longitudinal:** acompanhar tendência de marcador ao longo do tempo requer precisão analítica, estabilidade biológica e interpretação de mudança intraindividual; não é automaticamente o mesmo problema que comparar duas populações e escolher limiar de positivo/negativo.",
+    "**Triage assistencial:** limiares para priorizar atendimento podem refletir risco de deterioração, necessidade de avaliação rápida e capacidade do serviço, mesmo quando o escore não constitui exame confirmatório de uma doença.",
+    "**NB = VP/N − (FP/N) × [pₜ/(1−pₜ)]**",
+    "**NB(B) = 68/200 − (30/200)×0,25 = 0,340 − 0,0375 = 0,3025.**",
+    "**Pulo do Gato:** não confundir “probabilidade-limiar para decidir tratar” com “limiar numérico bruto de um exame de laboratório”. Só coincidem quando a regra está calibrada e definida na mesma escala probabilística para aquela decisão.",
+    "**Erros que invalidam comparação:** selecionar um corte na amostra de teste após observar resultados e apresentá-lo como predefinido; usar referências diferentes sem justificar; misturar aparelhos e versões; comparar AUC de populações com espectros muito distintos como se estivessem sob as mesmas condições; ou ignorar resultados indeterminados.",
+    "**Apresentação:** um serviço utiliza marcador fictício para identificar condição potencialmente grave antes de confirmação. O conjunto de validação contém 80 doentes e 120 não doentes. Há duas possibilidades: A (sensibilidade 95%, especificidade 45%) e C (sensibilidade 60%, especificidade 95%).",
+    "**Dados relevantes:** no corte A, quatro doentes testam negativo; no C, trinta e dois doentes testam negativo. A é associado a 66 falsos positivos, C a seis.",
+    "**Hipótese e raciocínio:** se a finalidade é uma triagem inicial com via de confirmação confiável e o dano de perder casos é muito alto, A pode se adequar melhor. Mas não basta repetir “quanto mais sensível melhor”: é necessário considerar capacidade da rede e dano de 66 falsos positivos.",
+    "**Exames complementares:** método de referência nos positivos e avaliação de protocolo de segurança para negativos de alto risco, conforme doença real."
+  ],
+  "external_urls": [
+    "https://doi.org/10.1136/bmj.309.6948.188.",
+    "https://doi.org/10.1016/j.patrec.2005.10.010.",
+    "https://doi.org/10.1177/0272989X06295361.",
+    "https://doi.org/10.1136/bmj.h5527.",
+    "https://www.gov.br/conitec/pt-br/midias/artigos_publicacoes/diretrizes/revisao_sistematica_metanalise_estudos_acuracia_diagnostica.pdf.",
+    "https://doi.org/10.1038/s41591-025-03953-8."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A área sob a curva ROC, ou **AUC**, resume a capacidade de **discriminação por ordenação** do marcador ao longo dos limiares. No caso em que valores maiores indicam doença e não há empates, ela pode ser entendida como a probabilidade de um **doente escolhido aleatoriamente apresentar valor do marcador maior que um não doente escolhido aleatoriamente**. Com empates, as formulações usuais atribuem contribuição de metade aos pares empatados. Essa interpretação **não é** “a probabilidade de um paciente positivo ter doença”, nem “percentual de diagnósticos corretos”."
+    },
+    {
+      "text": "A. Noventa por cento de todos os positivos são doentes. B. O teste é 90% sensível em todo corte. C. Noventa por cento dos participantes têm diagnóstico correto em qualquer corte. D. Há aproximadamente 90% de probabilidade de um doente aleatório apresentar escore maior que um não doente aleatório, no contexto estudado. E. O tratamento melhora a sobrevida em 90%."
+    },
+    {
+      "text": "Ao introduzir teste de triagem com baixo VPP, a instituição deve planejar o que acontecerá com cada positivo: haverá exame confirmatório? Em quanto tempo? A comunicação indicará resultado preliminar ou diagnóstico estabelecido? Quantas pessoas receberão intervenção desnecessária? E os falsos negativos saberão quando retornar? A ausência de um fluxo de confirmação pode transformar bom desempenho estatístico em experiência ruim para pacientes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

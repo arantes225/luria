@@ -1,0 +1,60 @@
+{
+  "sha": "c3919b6ddc4777e67e2cb89f8e04370786c2eecf",
+  "path": "apostilas/_rascunhos/lote-03/46-REGISTRO-REVISAO-20261014.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--c3919b6ddc",
+  "title": "LURIA — Aula 46 | Registro de aprofundamento e auditoria preliminar",
+  "format": ".md",
+  "chars_estimated": 4507,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 46 | Registro de aprofundamento e auditoria preliminar"
+    },
+    {
+      "title": "Resultado verificado por leitura direta do GitHub"
+    },
+    {
+      "title": "Evidência primária e pontos sensíveis"
+    },
+    {
+      "title": "Matriz de autossuficiência a confirmar"
+    },
+    {
+      "title": "Plano de dez recursos didáticos visuais — não aprovados"
+    },
+    {
+      "title": "Portões restantes"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://ginasthma.org/2026-gina-strategy-report/",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "- Extensão do texto neste snapshot: **100245 caracteres brutos**. O manuscrito tinha cerca de 21.631 caracteres na auditoria inicial; a metragem pode mudar em razão de outras edições concorrentes na branch. - **26 capítulos numerados** no corpo principal, com índice extenso e matéria clínica. - **10 casos clínicos identificados** (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) e **14 questões em formato MCQ** (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14); foram encontrados **14 marcadores de gabarito**. - Preservados capítulos iniciais e ampliados os tópicos de fisiopatologia, diagnóstico funcional, critérios pediátricos, diferenciais, controle, farmacolog"
+    },
+    {
+      "text": "**Tratamento:** GINA 2026 introduz opções adicionais de alívio anti-inflamatório em crianças de 6–11 anos, mas uso prático deve respeitar registro, dispositivo, aprovação e disponibilidade no SUS. O PCDT brasileiro inclui AIR/MART com budesonida-formoterol em combinações e doses específicas; limites máximos não podem ser transportados entre idades ou dispositivos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

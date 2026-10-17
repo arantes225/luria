@@ -1,0 +1,64 @@
+{
+  "sha": "4c89ae570c7a657ba046be5c6c6a695df4df4dfe",
+  "path": "apostilas/_rascunhos/lote-06-133-controle-cientifico-20261015.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--4c89ae570c",
+  "title": "LURIA — Tema 133: meningites e encefalites — auditoria de 15/10/2026",
+  "format": ".md",
+  "chars_estimated": 5186,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tema 133: meningites e encefalites — auditoria de 15/10/2026"
+    },
+    {
+      "title": "Inventário LURIA verificado"
+    },
+    {
+      "title": "Etapa zero — comparação REAL do Drive antes de modificar o texto"
+    },
+    {
+      "title": "Fontes primárias vigentes conferidas — distinguem-se dos PDFs do Drive"
+    },
+    {
+      "title": "Auditoria e edição efetivamente aplicadas"
+    },
+    {
+      "title": "Matriz para a próxima revisão médica (bloqueante)"
+    }
+  ],
+  "reference_entries": [
+    "- Ministério da Saúde. `Notas Técnicas — Meningite`; atualizado em **12/02/2026**: `https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas`. A página rotula **Nota 97/2024 (Revogada)** e lista **Nota Técnica Conjunta 154/2024**.",
+    "- Ministério da Saúde. `Nota Técnica Conjunta nº 154/2024-DPNI/SVSA/MS` (2024): `https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas/nota-tecnica-conjunta-no-154-2024-dpni-svsa-ms`; retifica/revoga orientações da 97/2024. O documento não autoriza declarar 154 revogada.",
+    "- OMS. `WHO guidelines on meningitis diagnosis, treatment and care` (10/04/2025): `https://www.who.int/publications/i/item/9789240108042`; cobre crianças maiores de um mês e adultos.",
+    "- OMS. `WHO practical manual on meningitis diagnosis, treatment and care` (26/05/2026): `https://www.who.int/publications/i/item/9789240121027`; material de implementação, inclui breve diferenciação de neonatos.",
+    "- NICE. `NG240 Meningitis (bacterial) and meningococcal disease` (19/03/2024): `https://www.nice.org.uk/guidance/ng240/chapter/recommendations`; cobre avaliação e antibioticoterapia precoce, adverte uso de documentos específicos para RN (NG195). Fonte internacional não substitui normas brasileiras de vigilância/doses.",
+    "- **Corrigida ambiguidade de vigilância no capítulo 8:** a menção antes inespecífica a “nota de 2024 revogada” foi substituída por distinção explícita 97/2024 revogada versus 154/2024 listada; risco era induzir leitor a considerar revogada a nota efetivamente usada no capítulo 25.",
+    "- Corrigido erro ortográfico “Recién-nascidos” → “Recém-nascidos” no capítulo 20.7.",
+    "- Identificação curricular em cabeçalho ajustada ao lote 6/tema 133 sem renomear arquivo antigo nem quebrar referências.",
+    "- A edição é **aditiva/localizada**, sem substituição das 9 situações clínicas, 14 questões, matrizes, doses de quimioprofilaxia ou tratamento. Não se declara validada a exatidão de todas as tabelas anteriormente presentes.",
+    "**Não marcar concluído / não fazer merge/deploy.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas/nota-tecnica-conjunta-no-154-2024-dpni-svsa-ms",
+    "https://www.who.int/publications/i/item/9789240108042",
+    "https://www.who.int/publications/i/item/9789240121027",
+    "https://www.nice.org.uk/guidance/ng240/chapter/recommendations"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

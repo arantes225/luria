@@ -1,0 +1,79 @@
+{
+  "sha": "483d03e9df7328fd67b63268a336913e23493462",
+  "path": "apostilas/_rascunhos/lote-06-127-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--483d03e9df",
+  "title": "Lote 06 — 127: Hemorragia Digestiva Alta",
+  "format": ".md",
+  "chars_estimated": 11412,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 — 127: Hemorragia Digestiva Alta"
+    },
+    {
+      "title": "Inventário"
+    },
+    {
+      "title": "Benchmark temático aberto e lido ANTES da redação"
+    },
+    {
+      "title": "Diretrizes científicas verificadas"
+    },
+    {
+      "title": "Lacunas prioritárias do benchmark"
+    },
+    {
+      "title": "Proibições e gates"
+    },
+    {
+      "title": "Etapa 2 — conteúdo integral e prévia estrutural (15/10/2026)"
+    },
+    {
+      "title": "Auditoria estrutural"
+    },
+    {
+      "title": "Matriz de autossuficiência lexical"
+    },
+    {
+      "title": "Curadoria de imagem — status real"
+    },
+    {
+      "title": "Diferenciação de atualizações"
+    },
+    {
+      "title": "Gates restantes — não marcar como pronta"
+    },
+    {
+      "title": "Revisão estrutural adicional — 15/10/2026"
+    },
+    {
+      "title": "Questões: matriz lexical de autossuficiência (não é revisão clínica)"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021",
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+    "https://doi.org/10.1016/j.jhep.2026.07.030,",
+    "https://www.nice.org.uk/guidance/cg141/chapter/Recommendations;",
+    "https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

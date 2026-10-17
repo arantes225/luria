@@ -1,0 +1,289 @@
+{
+  "sha": "3186194164f018e7d2d96847fbbd7b34bc1fc7a3",
+  "path": "apostilas/_rascunhos/lote-10-aula-205-dor-pelvica-aguda-torcao-anexial.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--3186194164",
+  "title": "LURIA | Lote 10 — Aula 205",
+  "format": ".md",
+  "chars_estimated": 65885,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Lote 10 — Aula 205"
+    },
+    {
+      "title": "Dor pélvica aguda e torção anexial"
+    },
+    {
+      "title": "0. Controle editorial e comparação real antes da redação"
+    },
+    {
+      "title": "1. Objetivos de aprendizagem e mapa de raciocínio"
+    },
+    {
+      "title": "2. O que é dor pélvica aguda?"
+    },
+    {
+      "title": "3. Avaliação imediata: primeira decisão é gravidade"
+    },
+    {
+      "title": "3.1 Triage e ABCDE sem perder hemorragia/sepse"
+    },
+    {
+      "title": "3.2 História clínica que realmente muda a probabilidade"
+    },
+    {
+      "title": "3.3 Exame físico"
+    },
+    {
+      "title": "4. Exames: pedir para responder à pergunta correta"
+    },
+    {
+      "title": "4.1 Teste de gravidez universal quando biologicamente plausível"
+    },
+    {
+      "title": "4.2 Ultrassonografia pélvica é primeira linha para a maioria dos cenários"
+    },
+    {
+      "title": "4.3 Tomografia e ressonância quando mudam conduta"
+    },
+    {
+      "title": "4.4 Hemograma, PCR, urina e testes de IST"
+    },
+    {
+      "title": "5. Torção anexial: apresentação, mecanismo e fatores predisponentes"
+    },
+    {
+      "title": "5.1 Anatomia funcional e por que o ovário torce"
+    },
+    {
+      "title": "5.2 Quadro típico e apresentações enganadoras"
+    },
+    {
+      "title": "5.3 Achados ultrassonográficos e sua interpretação"
+    },
+    {
+      "title": "5.4 Tratamento: destorcer e preservar, não remover pelo aspecto"
+    },
+    {
+      "title": "5.5 Tempos e prioridade"
+    },
+    {
+      "title": "6. Diferenciais essenciais e como separá-los"
+    },
+    {
+      "title": "6.1 Gestação ectópica"
+    },
+    {
+      "title": "6.2 Cisto hemorrágico e ruptura de corpo lúteo"
+    },
+    {
+      "title": "6.3 Doença inflamatória pélvica e abscesso tubo-ovariano"
+    },
+    {
+      "title": "6.4 Apendicite aguda"
+    },
+    {
+      "title": "6.5 Endometriose e dor pélvica crônica exacerbada"
+    },
+    {
+      "title": "6.6 Cólica ureteral e infecção urinária"
+    },
+    {
+      "title": "6.7 Torção de tuba isolada e outras causas"
+    },
+    {
+      "title": "7. Tabela-síntese de decisão inicial"
+    },
+    {
+      "title": "8. Pré-operatório, pós-operatório e seguimento específicos da torção"
+    },
+    {
+      "title": "8.1 Preparação sem retardar destorção"
+    },
+    {
+      "title": "8.2 Achado macroscópico escurecido"
+    },
+    {
+      "title": "8.3 Reavaliação e plano de alta"
+    },
+    {
+      "title": "9. Armadilhas de raciocínio com justificativa"
+    },
+    {
+      "title": "10. Fluxogramas textuais para o pronto-socorro"
+    },
+    {
+      "title": "10.1 Algoritmo “teste de gravidez antes de culpar o ovário”"
+    },
+    {
+      "title": "10.2 Algoritmo “torção: o Doppler não decide sozinho”"
+    },
+    {
+      "title": "10.3 Algoritmo “hemoperitônio, mas de onde veio o sangue?”"
+    },
+    {
+      "title": "10.4 Algoritmo “DIP versus torção versus apendicite”"
+    },
+    {
+      "title": "11. Populações e situações especiais"
+    },
+    {
+      "title": "11.1 Adolescente e pré-menarca"
+    },
+    {
+      "title": "11.2 Gestante com dor aguda"
+    },
+    {
+      "title": "11.3 Pós-parto e pós-procedimento"
+    },
+    {
+      "title": "11.4 Paciente com massa anexial conhecida"
+    },
+    {
+      "title": "11.5 Paciente sob anticoagulante ou com coagulopatia"
+    },
+    {
+      "title": "11.6 Dor em paciente com endometriose prévia"
+    },
+    {
+      "title": "11.7 Mulheres no climatério e pós-menopausa"
+    },
+    {
+      "title": "12. Complicações: reconhecer e prevenir"
+    },
+    {
+      "title": "13. Casos clínicos comentados com raciocínio e decisão"
+    },
+    {
+      "title": "Caso 1 — Torção ovariana típica com Doppler positivo"
+    },
+    {
+      "title": "Caso 2 — Adolescente com ovário muito escuro na laparoscopia"
+    },
+    {
+      "title": "Caso 3 — Dor, sangramento e síncope após “menstruação atrasada”"
+    },
+    {
+      "title": "Caso 4 — Cisto hemorrágico roto em paciente estável"
+    },
+    {
+      "title": "Caso 5 — Infecção pélvica com diagnóstico diferencial cirúrgico"
+    },
+    {
+      "title": "Caso 6 — Dor à direita em adolescente não é automaticamente apendicite"
+    },
+    {
+      "title": "Caso 7 — Gestação de localização indeterminada estável"
+    },
+    {
+      "title": "Caso 8 — Dor aguda “é minha endometriose de sempre”"
+    },
+    {
+      "title": "14. Questões originais comentadas de alto rendimento"
+    },
+    {
+      "title": "Questão 1 — a armadilha do Doppler arterial"
+    },
+    {
+      "title": "Questão 2 — o ovário violáceo"
+    },
+    {
+      "title": "Questão 3 — gravidez positiva e choque"
+    },
+    {
+      "title": "Questão 4 — gestação de localização indeterminada"
+    },
+    {
+      "title": "Questão 5 — dor pélvica e apendicite"
+    },
+    {
+      "title": "Questão 6 — diagnóstico de cisto hemorrágico"
+    },
+    {
+      "title": "Questão 7 — quadro sugestivo de DIP"
+    },
+    {
+      "title": "Questão 8 — intervalo de controle após destorção"
+    },
+    {
+      "title": "Questão 9 — adolescente sem massa ovariana"
+    },
+    {
+      "title": "Questão 10 — número que não manda na cirurgia"
+    },
+    {
+      "title": "Questão 11 — primeira linha de imagem"
+    },
+    {
+      "title": "Questão 12 — história prévia de endometriose"
+    },
+    {
+      "title": "15. Estratégia editorial visual: dez necessidades de imagem e esquemas"
+    },
+    {
+      "title": "16. Referências rastreáveis e limites de aplicação"
+    },
+    {
+      "title": "17. Matriz de cobertura para teste de autossuficiência"
+    },
+    {
+      "title": "18. Auditoria provisória"
+    }
+  ],
+  "reference_entries": [
+    "1. **American College of Obstetricians and Gynecologists.** *Adnexal Torsion in Adolescents*. Committee Opinion No. 783, agosto de 2019. [Documento oficial](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents). Base para destorção, preservação ovariana e limites do Doppler. **Escopo principal: adolescentes**; extrapolação à mulher adulta requer contextualização.",
+    "2. **Expert Panel on Women's Imaging / American College of Radiology.** *ACR Appropriateness Criteria: Acute Pelvic Pain in the Reproductive Age Group: 2023 Update*. *J Am Coll Radiol.* Publicação 2024. DOI [10.1016/j.jacr.2024.02.014](https://doi.org/10.1016/j.jacr.2024.02.014). Base para seleção de imagem.",
+    "3. **Ministério da Saúde.** *Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis*, edição 2022, capítulo doença inflamatória pélvica. [PDF oficial](https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf). Doses, parceiros e duração devem ser confirmados contra atualização nacional vigente antes da publicação.",
+    "4. **FEBRASGO.** Protocolo clínico *Massas anexiais na gestação*, Coleção 2024–2025, número 38. [Documento oficial](https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n38%20-%20G%20-%20Massas%20anexiais%20na%20gestacao.pdf). Complemento para populações gestantes; a revisão brasileira definitiva deve conferir versão e recomendações completas.",
+    "5. **Acervo LURIA.** `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html` e `apostilas/_rascunhos/lote-07-aula-139-endometriose.md`, consultados como controle de **não duplicação**, não como fontes de revisão científica independente.",
+    "**Pontos ainda pendentes da revisão bibliográfica:** localizar e confrontar diretriz brasileira específica para torção anexial e protocolo de gestação ectópica atualizado, além de referências a urgências pediátricas e apresentações de massa maligna, se pertinentes. Não apresentar recomendações de exames/terapia como protocolos prescritivos sem revisão local.",
+    "- **Cobertura:** texto com triagem, diagnóstico, exame, diferenciais, cirurgia, preservação, seguimento, populações especiais e fluxos. **Ainda não certificado** como autossuficiente.",
+    "- **Casos originais:** 8, com dados, raciocínio, interpretação e conduta; exigem revisão clínica independente.",
+    "- **Questões originais:** 12, alternativas A–E comentadas e revisão do conceito; exigem calibração.",
+    "- **Imagens:** zero aprovadas; 10 propostas temáticas.",
+    "- **Benchmark Drive:** dois resumos parciais lidos (DIP e apendicite), **sem livro de torção integral equivalente** e sem autoria Estratégia MED comprovada.",
+    "- **Referências:** ACOG 2019, ACR 2023/2024 e PCDT IST MS 2022; aprofundamento com diretrizes brasileiras vigentes é **pendência**.",
+    "- **60 mil caracteres didáticos úteis:** **NÃO CERTIFICADO**. A contagem total de arquivo, caso ultrapasse esse limiar, não substitui análise de utilidade real e ausência de redundância.",
+    "- **Layout e imagens:** não convertidos para HTML; desktop/PWA não avaliados; nenhuma imagem de terceiros adicionada.",
+    "- **Publicação:** **NÃO publicada**; somente arquivo Markdown de rascunho isolado na branch editorial.",
+    "- **Próximo tema:** **206 — Miomas, pólipos e patologia uterina benigna**, reusando e não sobrescrevendo `sangramento-uterino-anormal`, com matriz de diferenciação entre PALM–COEIN, diagnósticos e escolha terapêutica."
+  ],
+  "external_urls": [
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents",
+    "https://doi.org/10.1016/j.jacr.2024.02.014",
+    "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf",
+    "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n38%20-%20G%20-%20Massas%20anexiais%20na%20gestacao.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Acervo LURIA consultado (código efetivamente lido em 15/10/2026):** foram inspecionados excertos do HTML de DIP/cervicite e do rascunho de endometriose. Ambos desenvolvem outras síndromes e indicam a torção como diferencial, mas não substituem um roteiro diagnóstico-cirúrgico de **dor pélvica aguda**. O HTML de SUA apresenta miomas e pólipos e deve ser preservado para a aula 206."
+    },
+    {
+      "text": "Ao final deste livro, o estudante deve conseguir: 1. Priorizar a avaliação hemodinâmica da paciente e não perder uma hemorragia intra-abdominal. 2. Aplicar teste de gravidez e ultrassonografia apropriados sem tratar beta-hCG isolado como diagnóstico definitivo. 3. Distinguir causas ginecológicas, obstétricas, urinárias, gastrointestinais e vasculares de dor abdominal inferior. 4. Suspeitar de torção anexial com Doppler aparentemente normal e defender cirurgia precoce quando a probabilidade clínica é alta. 5. Interpretar os sinais ecográficos: aumento unilateral do ovário, edema estromal, folículos periféricos, líquido livre e pedículo torcido"
+    },
+    {
+      "text": "**Suspeita de sepse:** febre alta ou hipotermia, instabilidade, lactato elevado quando indicado, secreção purulenta, abscesso, gravidez/puerpério e disfunção de órgãos. Iniciar avaliação e terapia antimicrobiana/controle de foco conforme protocolos, com ginecologia e cirurgia conforme necessidade. Não atribuir febre automaticamente a “cisto torcido”: febre importante ou toxemia exigem busca ativa de infecção e outros diagnósticos."
+    },
+    {
+      "text": "Observação geral, cardiopulmonar, perfusão e abdome com inspeção, ausculta conforme contexto, palpação progressiva e identificação de defesa involuntária. Exame especular/bimanual pode ajudar em adultos com suspeita de DIP, sangramento, lesão cervical, gestação ectópica ou dor anexial; deve ocorrer com explicação, consentimento, privacidade e observância de contraindicações e tolerância. **Em criança/adolescente, exame bimanual rotineiro pode ser desnecessário/inadequado; preferir avaliação não invasiva e especialistas**. Sinais de comprometimento de órgão fora da pelve exigem exame dirigido."
+    },
+    {
+      "text": "O β-hCG urinário é ferramenta rápida de triagem, mas **teste negativo muito precoce não elimina qualquer gravidez possível**. Em paciente de risco e quadro compatível, dosagem sérica quantitativa e repetição podem ser necessárias. Se β-hCG for positivo, a primeira pergunta é a **localização da gestação** e a possibilidade de sangramento. Diagnóstico de gestação intrauterina inequívoca reduz muito a chance de ectópica, mas em técnicas de reprodução assistida lembrar **gestação heterotópica**."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

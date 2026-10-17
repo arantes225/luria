@@ -1,0 +1,124 @@
+{
+  "sha": "f58a0666ebf0352c45e53ad03c6248d3d505852d",
+  "path": "apostilas/hiperemese-gravidica/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "hiperemese-gravidica--f58a0666eb",
+  "title": "LURIA — Apostila 247: Hiperêmese gravídica e náuseas e vômitos na gestação",
+  "format": ".md",
+  "chars_estimated": 18937,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 247: Hiperêmese gravídica e náuseas e vômitos na gestação"
+    },
+    {
+      "title": "1. Definição e panorama epidemiológico"
+    },
+    {
+      "title": "2. Bases fisiopatológicas"
+    },
+    {
+      "title": "3. Fatores associados e investigação da apresentação clínica"
+    },
+    {
+      "title": "4. Diagnóstico: gravidade e exclusão de outras causas"
+    },
+    {
+      "title": "4.1 Diferenciais práticos"
+    },
+    {
+      "title": "5. Tratamento por nível de gravidade"
+    },
+    {
+      "title": "5.1 Orientação e apoio para casos leves"
+    },
+    {
+      "title": "5.2 Antieméticos por etapas"
+    },
+    {
+      "title": "5.3 Hidratação e reposição"
+    },
+    {
+      "title": "5.4 Internação e cuidados multidisciplinares"
+    },
+    {
+      "title": "5.5 Nutrição enteral e parenteral"
+    },
+    {
+      "title": "6. Complicações e prognóstico"
+    },
+    {
+      "title": "7. Fluxo de conduta para o plantão"
+    },
+    {
+      "title": "8. Quatro casos comentados"
+    },
+    {
+      "title": "Caso 1 — HG sem cetonúria"
+    },
+    {
+      "title": "Caso 2 — Perda ponderal e alteração de marcha"
+    },
+    {
+      "title": "Caso 3 — Vômitos com dor focal e febre"
+    },
+    {
+      "title": "Caso 4 — Falha do primeiro antiemético"
+    },
+    {
+      "title": "9. Seis questões autorais comentadas"
+    },
+    {
+      "title": "10. Recursos visuais — candidatas, não incorporadas"
+    },
+    {
+      "title": "11. Referências primárias reais"
+    },
+    {
+      "title": "12. Parecer editorial"
+    }
+  ],
+  "reference_entries": [
+    "1. Nelson-Piercy C et al. **The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum** (Green-top 69). BJOG. 2024. doi:10.1111/1471-0528.17739. https://doi.org/10.1111/1471-0528.17739",
+    "2. RCOG. Updated Green-top 69 guideline, published 6 February 2024. https://www.rcog.org.uk/news/updated-rcog-green-top-guideline-on-the-management-of-nausea-and-vomiting-in-pregnancy-and-hyperemesis-gravidarum-published/",
+    "3. RCOG. Clinical guidance page. https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/the-management-of-nausea-and-vomiting-of-pregnancy-and-hyperemesis-gravidarum-green-top-guideline-no-69/",
+    "**Há cobertura inicial:** conceito clínico, fisiopatologia, diagnóstico, diferenciais, urgências, tratamento, 4 casos, 6 questões e plano visual.  ",
+    "**Falta antes de aprovação:** aprofundar epidemiologia brasileira, acesso a antieméticos no SUS e apresentações/doses por perfil, terapia nutricional e risco trombótico, efeitos fetais por medicação e gestação, protocolos de enfermagem e seguimento, esquemas de tiamina validados no Brasil, bibliografia local, fontes/figuras autorizadas, revisão médica independente; meta ~60k úteis ainda não atingida. **NÃO PUBLICAR.**"
+  ],
+  "external_urls": [
+    "https://doi.org/10.1111/1471-0528.17739",
+    "https://www.rcog.org.uk/news/updated-rcog-green-top-guideline-on-the-management-of-nausea-and-vomiting-in-pregnancy-and-hyperemesis-gravidarum-published/",
+    "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/the-management-of-nausea-and-vomiting-of-pregnancy-and-hyperemesis-gravidarum-green-top-guideline-no-69/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia · **Lote 12** · **Situação editorial:** manuscrito inicial, revisão médica e expansão premium pendentes; NÃO PUBLICAR. **Referência diretriz:** RCOG Green-top 69, segunda edição (2024), atualizada; conferir aplicação ao SUS/Febrasgo. **Objetivo:** diferenciar sintomas fisiológicos, hiperêmese e diagnósticos alternativos; tratar desidratação e carências de forma segura, sem subestimar repercussões físicas e psicossociais."
+    },
+    {
+      "text": "Náuseas e vômitos da gestação (NVG) são extremamente frequentes; podem começar entre quatro e sete semanas, piorar perto de nove semanas e regredir até a vigésima semana na maioria. O termo 'enjoos matinais' é impreciso: episódios ocorrem a qualquer hora do dia. A hiperêmese gravídica (HG) é a forma grave e incapacitante do espectro. Segundo a definição de Windsor discutida no RCOG 2024, caracteriza-se por náuseas e/ou vômitos graves iniciados antes de 16 semanas, incapacidade de alimentar-se ou hidratar-se normalmente e limitação intensa da vida diária; sinais de desidratação contribuem, mas **perda ponderal e cetonúria não são exigências ob"
+    },
+    {
+      "text": "A origem é multifatorial. Alterações hormonais placentárias, fatores genéticos, sensibilidade central a estímulos eméticos, motilidade gastrointestinal e condições metabólicas influenciam sintomas. Pesquisas associam a via de **GDF15**, produzido em grande parte pela unidade fetoplacentária, à intensidade das NVG/HG em mulheres susceptíveis; o risco depende da exposição e da sensibilidade materna prévia. Essa descoberta amplia compreensão biológica, mas **não gera teste diagnóstico padronizado ou tratamento rotineiro baseado no biomarcador** no cuidado comum."
+    },
+    {
+      "text": "HG é diagnóstico clínico, após história e exame, com investigação proporcional. Gestante com vômitos persistentes costuma precisar de avaliação de sódio, potássio, ureia/creatinina, glicemia e urina para descartar infecção quando indicado. Considerar hemograma e provas hepáticas, cálcio/magnésio/fósforo em quadros graves ou prolongados; tireoide conforme sinais de tireotoxicose não típica ou evolução atípica. US obstétrica pode avaliar idade gestacional, número de fetos e gestação molar quando suspeita."
+    },
+    {
+      "text": "Não solicitar exames extensivos de modo automático sem suspeita; também não presumir que toda gestante com vômitos tenha HG. Sintomas iniciados após 16 semanas ou acompanhados de dor focal, febre, icterícia, vômitos biliosos/hematêmese, hiperglicemia, hipertensão e cefaleia persistente exigem maior atenção a causas secundárias."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

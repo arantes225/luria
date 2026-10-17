@@ -1,0 +1,291 @@
+{
+  "sha": "ff0d01a592868dc5fa2764c7676c2e9f825da221",
+  "path": "apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-11-demensias-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ff0d01a592",
+  "title": "LURIA — LOTE 07 | AULA 126",
+  "format": ".md",
+  "chars_estimated": 51056,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — LOTE 07 | AULA 126"
+    },
+    {
+      "title": "Cirrose hepática: da fibrose à hipertensão portal e às complicações"
+    },
+    {
+      "title": "0. Etapa zero: inventário, benchmark e cautelas editoriais"
+    },
+    {
+      "title": "1. Conceitos e anatomia funcional antes do diagnóstico"
+    },
+    {
+      "title": "2. Etiologias: reconhecer causas tratáveis"
+    },
+    {
+      "title": "2.1. História e exame físico que orientam etiologia e gravidade"
+    },
+    {
+      "title": "3. Fisiopatologia: da matriz extracelular à circulação hiperdinâmica"
+    },
+    {
+      "title": "3.1. Varizes e gastropatia hipertensiva portal"
+    },
+    {
+      "title": "3.2. Amônia e neuroinflamação"
+    },
+    {
+      "title": "4. Diagnóstico e estratificação"
+    },
+    {
+      "title": "4.1. O que examinar"
+    },
+    {
+      "title": "4.2. Hipertensão portal clinicamente significativa (HPCS/CSPH)"
+    },
+    {
+      "title": "4.3. Child–Pugh"
+    },
+    {
+      "title": "4.4. MELD e encaminhamento para transplante"
+    },
+    {
+      "title": "4.5. Cirrose compensada, descompensada e recompensação"
+    },
+    {
+      "title": "5. Ascite: como raciocinar do primeiro episódio à refratariedade"
+    },
+    {
+      "title": "5.1. O problema"
+    },
+    {
+      "title": "5.2. Quais dados pedir no líquido?"
+    },
+    {
+      "title": "5.3. Tratamento da ascite não complicada"
+    },
+    {
+      "title": "5.4. Paracentese terapêutica e albumina"
+    },
+    {
+      "title": "5.5. Ascite recorrente e refratária"
+    },
+    {
+      "title": "6. Peritonite bacteriana espontânea (PBE)"
+    },
+    {
+      "title": "6.1. Conceito e mecanismo"
+    },
+    {
+      "title": "6.2. Diagnóstico"
+    },
+    {
+      "title": "6.3. Conduta inicial"
+    },
+    {
+      "title": "6.4. Profilaxia: para quem e por quê?"
+    },
+    {
+      "title": "7. Encefalopatia hepática (EH)"
+    },
+    {
+      "title": "7.1. Reconhecer e classificar"
+    },
+    {
+      "title": "7.2. Tratar o precipitante enquanto protege a pessoa"
+    },
+    {
+      "title": "7.3. Comunicação na alta"
+    },
+    {
+      "title": "8. Injúria renal aguda, síndrome hepatorrenal e atualização de 2024"
+    },
+    {
+      "title": "8.1. A grande correção deste capítulo"
+    },
+    {
+      "title": "8.2. Como reconhecer IRA em cirrose"
+    },
+    {
+      "title": "8.3. Critérios ADQI–ICA 2024 para HRS-AKI"
+    },
+    {
+      "title": "8.4. Conduta em possível HRS-AKI"
+    },
+    {
+      "title": "9. Hemorragia varicosa: identificar o mecanismo e chamar o protocolo"
+    },
+    {
+      "title": "10. Outras complicações com alto impacto"
+    },
+    {
+      "title": "10.1. Hepatocarcinoma (CHC/HCC)"
+    },
+    {
+      "title": "10.2. Hidrotórax hepático"
+    },
+    {
+      "title": "10.3. Síndrome hepatopulmonar e hipertensão portopulmonar"
+    },
+    {
+      "title": "10.4. Distúrbios de coagulação"
+    },
+    {
+      "title": "11. Nutrição, prevenção e cuidado longitudinal"
+    },
+    {
+      "title": "12. Algoritmos textuais para UBS, enfermaria e emergência"
+    },
+    {
+      "title": "A — hepatopatia crônica suspeita sem complicação"
+    },
+    {
+      "title": "B — cirrótico internado com ascite"
+    },
+    {
+      "title": "C — cirrótico com confusão"
+    },
+    {
+      "title": "D — cirrótico com creatinina aumentando"
+    },
+    {
+      "title": "E — cirrótico com hematêmese"
+    },
+    {
+      "title": "13. Quatro casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — ascite nova e GASA"
+    },
+    {
+      "title": "Caso 2 — infecção ascítica com injúria renal"
+    },
+    {
+      "title": "Caso 3 — encefalopatia precipitada por constipação"
+    },
+    {
+      "title": "Caso 4 — provável HRS-AKI e armadilha dos dois dias de albumina"
+    },
+    {
+      "title": "14. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — fisiopatologia da ascite"
+    },
+    {
+      "title": "Questão 2 — GASA"
+    },
+    {
+      "title": "Questão 3 — PBE"
+    },
+    {
+      "title": "Questão 4 — encefalopatia"
+    },
+    {
+      "title": "Questão 5 — atualização HRS-AKI"
+    },
+    {
+      "title": "Questão 6 — prevenção de descompensação"
+    },
+    {
+      "title": "15. Pulo do Gato — erros que mais prejudicam o aluno"
+    },
+    {
+      "title": "16. Camada visual planejada — não incorporada nem licenciada"
+    },
+    {
+      "title": "17. Referências verificadas e hierarquia"
+    },
+    {
+      "title": "18. Auditoria parcial e questões abertas"
+    }
+  ],
+  "reference_entries": [
+    "**Brasil**",
+    "- Ministério da Saúde. PCDT de Hepatite B e Coinfecções; indicação de tratar hepatite B associada a cirrose. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/pcdt/protocolo-clinico-e-diretrizes-terapeuticas-de-hepatite-b-e-coinfeccoes",
+    "- Sociedade Brasileira de Hepatologia. *Evolving portal hypertension through Baveno VII recommendations*, comentário técnico de 2024. https://sbhepatologia.org.br/publicacoes/artigos/evolving-portal-hypertension-through-baveno-vii-recommendations/",
+    "- Ebserh/HC-UFMG, protocolos assistenciais de hepatologia (2025), listando prevenção varicosa, HDA, IRA, ascite e EH; os documentos específicos devem ser abertos e lidos antes de extrair doses. https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/protocolos-setoriais-iag",
+    "- Secretaria de Saúde do Distrito Federal. *Protocolo de Tratamento da Encefalopatia Hepática*, Portaria SES-DF nº 279/2024. Documento nacional pertinente a cotejar integralmente na revisão final.",
+    "**Diretrizes internacionais**",
+    "- de Franchis R et al. *Baveno VII – Renewing consensus in portal hypertension*. J Hepatol. 2022;76(4):959–974. DOI 10.1016/j.jhep.2021.12.022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "- Biggins SW et al. *Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: AASLD 2021 Practice Guidance*. Hepatology. DOI 10.1002/hep.31884. https://onlinelibrary.wiley.com/doi/10.1002/hep.31884",
+    "- Nadim MK et al. *Acute kidney injury in patients with cirrhosis: ADQI–ICA joint multidisciplinary consensus*. J Hepatol. 2024;81(1):163–183. DOI 10.1016/j.jhep.2024.03.031. https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/",
+    "- AASLD. *Back to Basics: Outpatient Management of Cirrhosis* (portal educacional baseado em diretrizes). https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+    "- ESGE. *Endoscopic diagnosis and management of esophagogastric variceal hemorrhage*, orientação de 2022. https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+    "- [x] Inventário de existência na LURIA, comparativos do Drive efetivamente lidos, autoria de benchmark tratada com cautela.",
+    "- [x] Fisiologia, hipertensão portal, insuficiência hepatocelular e ponte causal entre complicações.",
+    "- [x] Avaliação inicial, etiologia, escalas, paracentese, GASA, PBE, ascite refratária, EH, HRS 2024, varizes e seguimento.",
+    "- [x] 4 casos completos e 6 questões comentadas com todas as alternativas.",
+    "- [x] Referências brasileiras e internacionais reais identificadas.",
+    "- [ ] Ampliar epidemiologia e dados de prognóstico segundo população brasileira sem inventar percentuais.",
+    "- [ ] Aprofundar exames complementares do fígado por etiologia, e escore MELD versão aplicável no SUS.",
+    "- [ ] Validar tratamento com doses completas, disponibilidade brasileira, contraindicações de cada medicamento e algoritmo de PBE comunitária/nosocomial.",
+    "- [ ] Leitura médico-editorial formal, revisão do protocolo SES-DF/Ebserh e comparação com apostila LURIA equivalente quando possível.",
+    "- [ ] Desenvolver **≥60 mil caracteres de conteúdo didático útil**, apenas por aprofundamento real, não repetição.",
+    "- [ ] Selecionar imagens clínicas com licença, converter WebP, aprovar no Admin e testar desktop/PWA.",
+    "- [ ] Auditoria de prova: seis questões devem ser respondíveis após leitura do corpo, sem consultar gabarito.",
+    "**Estado final deste arquivo:** rascunho autoral substancial, **não certificado e não publicado na LURIA**."
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11193657/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/pcdt/protocolo-clinico-e-diretrizes-terapeuticas-de-hepatite-b-e-coinfeccoes",
+    "https://sbhepatologia.org.br/publicacoes/artigos/evolving-portal-hypertension-through-baveno-vii-recommendations/",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/protocolos-setoriais-iag",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "https://onlinelibrary.wiley.com/doi/10.1002/hep.31884",
+    "https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Material do Drive efetivamente aberto e lido:** 1. “04 - GASTRO - ASCITE + PBE.pdf”, aproximadamente 7,6 mil caracteres extraídos. Inclui GASA, ascite, PBE, profilaxia, ascite refratária e hidrotórax, mas oferece cobertura abreviada da fisiopatologia, da seleção de albumina e do controle de foco. 2. “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, aproximadamente 8,2 mil caracteres extraídos. Abrange alterações neurológicas, precipitantes, lactulose/rifaximina e HRS, mas segue **algoritmo histórico de suspensão de diuréticos + 48 h de albumina como requisito diagnóstico**, que não deve ser ensinado como exigência universal "
+    },
+    {
+      "text": "**Ponto importante:** encefalopatia não é definida por “amônia alta”. O diagnóstico é clínico, com exclusão de outras causas de alteração de consciência. Amônia pode auxiliar em situações selecionadas, mas nível isolado não gradua a encefalopatia nem valida todas as decisões terapêuticas."
+    },
+    {
+      "text": "O benefício clínico desse conceito é passar de “tratar variz quando ela aparece” para “prevenir primeira descompensação em quem tem hipertensão portal significativa”. Baveno VII recomenda considerar betabloqueador não seletivo, com carvedilol preferido na cirrose compensada elegível, quando há HPCS. Em paciente já recebendo betabloqueador não seletivo adequadamente, endoscopia apenas para pesquisar varizes pode não alterar tratamento. Intolerância/contraindicação muda a estratégia."
+    },
+    {
+      "text": "**Paracentese diagnóstica** é recomendada no primeiro episódio de ascite clinicamente relevante e em pacientes hospitalizados com cirrose e ascite, especialmente quando há deterioração, febre, dor, encefalopatia, sangramento, hipotensão ou alteração renal. **PBE pode ocorrer sem febre nem dor exuberantes.**"
+    },
+    {
+      "text": "**Peritonite bacteriana secundária** deve ser considerada quando há flora polimicrobiana, deterioração, sinais peritoneais relevantes, glicose baixa, proteína/DHL elevados ou falha ao tratamento. Os critérios de Runyon (por exemplo, proteína >1 g/dL, glicose <50 mg/dL, DHL acima do limite superior sérico; dois ou mais elementos) são pistas, não teste conclusivo. Suspeita de perfuração exige imagem e cirurgia."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

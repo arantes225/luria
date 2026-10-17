@@ -1,0 +1,402 @@
+{
+  "sha": "2138c598a4af8e601fa983010efda4f8bdaccc41",
+  "path": "apostilas/_rascunhos/lote-11-aula-228-neuropatias-doencas-neuromusculares.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2138c598a4",
+  "title": "LURIA — Apostila 228: Neuropatias periféricas e doenças neuromusculares",
+  "format": ".md",
+  "chars_estimated": 75364,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 228: Neuropatias periféricas e doenças neuromusculares"
+    },
+    {
+      "title": "0. Auditoria editorial, benchmark e decisão de escopo"
+    },
+    {
+      "title": "1. Introdução e princípio de localização"
+    },
+    {
+      "title": "2. Neuroanatomia funcional e semiologia do exame neuromuscular"
+    },
+    {
+      "title": "2.1 O que a distribuição sugere"
+    },
+    {
+      "title": "2.2 Como documentar a força"
+    },
+    {
+      "title": "2.3 Tipos de sensibilidade"
+    },
+    {
+      "title": "2.4 Avaliação bulbar e ventilatória"
+    },
+    {
+      "title": "3. Classificação útil das neuropatias periféricas"
+    },
+    {
+      "title": "3.1 Pela distribuição"
+    },
+    {
+      "title": "3.2 Pela fibra predominante"
+    },
+    {
+      "title": "3.3 Pelo mecanismo eletrofisiológico"
+    },
+    {
+      "title": "3.4 Pelo tempo"
+    },
+    {
+      "title": "4. Investigação escalonada da polineuropatia"
+    },
+    {
+      "title": "4.1 História que de fato diferencia"
+    },
+    {
+      "title": "4.2 Exames laboratoriais de maior rendimento"
+    },
+    {
+      "title": "4.3 Quando eletroneuromiografia agrega"
+    },
+    {
+      "title": "4.4 Hipóteses especiais"
+    },
+    {
+      "title": "5. Neuropatia periférica diabética e cuidado do pé"
+    },
+    {
+      "title": "5.1 Dor versus anestesia: duas prioridades diferentes"
+    },
+    {
+      "title": "5.2 Disautonomia"
+    },
+    {
+      "title": "6. Neuropatias focais, radiculopatias e plexopatias"
+    },
+    {
+      "title": "6.1 Síndrome do túnel do carpo"
+    },
+    {
+      "title": "6.2 Mononeuropatia fibular"
+    },
+    {
+      "title": "6.3 Radiculopatia e cauda equina"
+    },
+    {
+      "title": "6.4 Mononeurite múltipla"
+    },
+    {
+      "title": "7. Síndrome de Guillain-Barré (SGB): urgência neuromuscular"
+    },
+    {
+      "title": "7.1 Mecanismo, clínica e temporalidade"
+    },
+    {
+      "title": "7.2 Exames e armadilhas"
+    },
+    {
+      "title": "7.3 Tratamento de urgência e suporte"
+    },
+    {
+      "title": "8. Polirradiculoneuropatia inflamatória desmielinizante crônica (CIDP)"
+    },
+    {
+      "title": "9. Miastenia gravis: doença da junção neuromuscular"
+    },
+    {
+      "title": "9.1 A fisiopatologia explica o exame"
+    },
+    {
+      "title": "9.2 Diagnóstico"
+    },
+    {
+      "title": "9.3 Tratamento fora de crise"
+    },
+    {
+      "title": "9.4 Crise miastênica"
+    },
+    {
+      "title": "9.5 Medicamentos que podem agravar"
+    },
+    {
+      "title": "10. Miopatias: diferenciar dor, perda de força e elevação de CK"
+    },
+    {
+      "title": "10.1 Abordagem de fraqueza proximal"
+    },
+    {
+      "title": "10.2 Dermatomiosite"
+    },
+    {
+      "title": "10.3 Síndrome antissintetase e doença pulmonar intersticial"
+    },
+    {
+      "title": "10.4 Miopatia necrosante imunomediada"
+    },
+    {
+      "title": "10.5 Miosite por corpos de inclusão"
+    },
+    {
+      "title": "10.6 Polimiosite e sobreposição"
+    },
+    {
+      "title": "10.7 Tratamento por fenótipo e órgão-alvo"
+    },
+    {
+      "title": "11. Outras doenças neuromusculares que não podem ser esquecidas"
+    },
+    {
+      "title": "11.1 Esclerose lateral amiotrófica (ELA)"
+    },
+    {
+      "title": "11.2 Neuropatia motora multifocal"
+    },
+    {
+      "title": "11.3 Doenças hereditárias e distrofias"
+    },
+    {
+      "title": "12. Matriz diferencial por sinais e exames"
+    },
+    {
+      "title": "13. Fluxo prático de conduta"
+    },
+    {
+      "title": "14. Casos clínicos inéditos — com hipóteses e decisões"
+    },
+    {
+      "title": "Caso 1 — O diabético que começou a cair em duas semanas"
+    },
+    {
+      "title": "Caso 2 — Dor em queimação, monofilamento anormal e pé sem dor"
+    },
+    {
+      "title": "Caso 3 — Ptose e voz que desaparecem no fim do dia"
+    },
+    {
+      "title": "Caso 4 — Fraqueza de quadris, Gottron e dispneia"
+    },
+    {
+      "title": "Caso 5 — Dormência e fraqueza há seis meses"
+    },
+    {
+      "title": "Caso 6 — Músculos de dedos e quadríceps"
+    },
+    {
+      "title": "15. Questões autorais comentadas — alternativas justificadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3"
+    },
+    {
+      "title": "Questão 4"
+    },
+    {
+      "title": "Questão 5"
+    },
+    {
+      "title": "Questão 6"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "16. Imagens e figuras candidatas — não inserir até aprovação"
+    },
+    {
+      "title": "17. Referências primárias e institucionais"
+    },
+    {
+      "title": "18. Matriz de qualidade / pendências"
+    },
+    {
+      "title": "19. Interpretação de resultados difíceis: clínica, ENMG, líquor e imagem"
+    },
+    {
+      "title": "19.1 O estudo eletrofisiológico não é uma “fotografia do diagnóstico”"
+    },
+    {
+      "title": "19.2 Testes negativos e probabilidade pré-teste"
+    },
+    {
+      "title": "19.3 LCR na SGB e CIDP"
+    },
+    {
+      "title": "19.4 CK: números elevados e perguntas melhores"
+    },
+    {
+      "title": "20. Grandes decisões de urgência: quem não pode receber alta"
+    },
+    {
+      "title": "20.1 Quando a fraqueza respiratória está começando"
+    },
+    {
+      "title": "20.2 A instabilidade autonômica pode ser o problema dominante"
+    },
+    {
+      "title": "20.3 Lesão medular que imita doença periférica"
+    },
+    {
+      "title": "20.4 Fraqueza aguda com CK e urina escura"
+    },
+    {
+      "title": "21. Doenças musculares endócrinas, metabólicas e medicamentosas"
+    },
+    {
+      "title": "21.1 Hipotireoidismo, tireotoxicose e distúrbios eletrolíticos"
+    },
+    {
+      "title": "21.2 Miopatia associada a glicocorticoides"
+    },
+    {
+      "title": "21.3 Deficiências nutricionais e cirurgia gastrointestinal"
+    },
+    {
+      "title": "21.4 Efeitos de quimioterapia e drogas"
+    },
+    {
+      "title": "22. Autoanticorpos e miosites: quando o painel muda o raciocínio"
+    },
+    {
+      "title": "22.1 Como planejar rastreamento de neoplasia na miosite"
+    },
+    {
+      "title": "22.2 Quando a biópsia muscular é útil"
+    },
+    {
+      "title": "23. Acompanhamento, funcionalidade e prevenção de danos"
+    },
+    {
+      "title": "23.1 Medir evolução de modo clinicamente significativo"
+    },
+    {
+      "title": "23.2 Reabilitação não é prêmio após a cura"
+    },
+    {
+      "title": "23.3 Conselhos de alta com retorno seguro"
+    },
+    {
+      "title": "24. Casos adicionais: integração entre mecanismos, exames e condutas"
+    },
+    {
+      "title": "Caso 7 — Vitamina em excesso e dormência progressiva"
+    },
+    {
+      "title": "Caso 8 — Oftalmoplegia, ataxia e reflexos abolidos"
+    },
+    {
+      "title": "Caso 9 — Ptose que piora após antibiótico"
+    },
+    {
+      "title": "Caso 10 — Fraqueza após corticoide prolongado"
+    },
+    {
+      "title": "25. Questões avançadas de prova: interpretação em cenário"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "Questão 13"
+    },
+    {
+      "title": "Questão 14"
+    },
+    {
+      "title": "26. Nota de encerramento desta fase de redação"
+    }
+  ],
+  "reference_entries": [
+    "1. American Diabetes Association. **Retinopathy, Neuropathy, and Foot Care: Standards of Care in Diabetes—2026**. Diabetes Care. DOI: 10.2337/dc26-s012. https://doi.org/10.2337/dc26-s012",
+    "2. England JD et al. **Practice Parameter: evaluation of distal symmetric polyneuropathy—laboratory and genetic testing**. Neurology. 2009. https://pubmed.ncbi.nlm.nih.gov/19627867/",
+    "3. Van Doorn PA et al. **EAN/PNS Guideline on diagnosis and treatment of Guillain–Barré syndrome**. Eur J Neurol. 2023. https://doi.org/10.1111/ene.16073",
+    "4. Brasil, Ministério da Saúde. **PCDT Síndrome de Guillain-Barré** (anexo alterado 01/04/2022; página atualizada em 21/01/2025). https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view",
+    "5. Van den Bergh PYK et al. **EAN/PNS guideline on diagnosis and treatment of CIDP**, segunda revisão. Eur J Neurol. 2021. https://doi.org/10.1111/ene.14959",
+    "6. Sanders DB et al. **International consensus guidance for management of myasthenia gravis: executive summary**. Neurology. 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC4977114/",
+    "7. Narayanaswami P et al. **International consensus guidance for management of myasthenia gravis: 2020 update**. Neurology. 2021. https://pubmed.ncbi.nlm.nih.gov/33144515/",
+    "8. Oldroyd AGS et al. **British Society for Rheumatology guideline on idiopathic inflammatory myopathy**. Rheumatology. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9398208/",
+    "9. Oldroyd AGS et al. **International Guideline for Idiopathic Inflammatory Myopathy-Associated Cancer Screening**. Nat Rev Rheumatol. 2023. https://doi.org/10.1038/s41584-023-01045-w",
+    "10. AANEM. **Diagnostic and Screening Laboratory Tests in the Assessment of Patients With Small Fiber Neuropathy: An Evidence-Based Review**. Muscle Nerve. 2026. https://doi.org/10.1002/mus.70119",
+    "**Decisão editorial final desta etapa:** conservar o manuscrito 228 como **rascunho em branch editorial**, não alterar `main`, não gerar HTML incompleto ou inserir imagens sem licença e não anunciar como apostila certificada. Próxima iteração: aprofundar critérios SGB/CIDP, miastenia e miosites, expandir 4+ cenários de interpretação de exames, alargar parte terapêutica com segurança e completar matriz formal de rastreabilidade questão→capítulo.",
+    "**Pergunta clínica antes de pedir ENMG:** “Quero localizar compressão do mediano ou radiculopatia?”, “Existe padrão axonal ou desmielinizante adquirido?”, “Preciso diferenciar miopatia e doença do neurônio motor?”, “É necessário selecionar músculo para biópsia?”. Um pedido específico melhora seleção de nervos/músculos e a interpretação posterior.",
+    "1. **O exame avalia a estrutura que suspeito estar lesada?** Condução convencional não documenta adequadamente as fibras autonômicas ou nociceptivas finas.",
+    "2. **O momento do exame permite encontrar o fenômeno?** Certas alterações levam dias ou semanas a tornar-se detectáveis; repetir estudo pode ser razoável.",
+    "3. **O laudo resolve a etiologia ou apenas descreve mecanismo/localização?** “Polineuropatia axonal” exige investigar causas; “miopatia” não indica automaticamente autoimunidade.",
+    "- **Mialgia com CK normal ou pouco elevada:** verificar relação temporal, outras causas e decisão compartilhada sobre manter, ajustar ou interromper temporariamente o medicamento.",
+    "- **Miopatia tóxica por estatina:** quadro costuma melhorar com suspensão, mas tempo e gravidade variam.",
+    "- **Miopatia necrosante imunomediada associada a anti-HMGCR:** fraqueza e CK persistentemente muito elevadas ou progressivas mesmo após retirada tornam necessária investigação especializada.",
+    "- **Rabdomiólise:** avaliação urgente da função renal/eletrólitos, gravidade e precipitantes.",
+    "**Pegadinha clínica:** transaminases elevadas acompanhando CK muito elevada podem ter contribuição muscular. Não concluir hepatopatia ativa apenas por AST/ALT sem examinar fígado, hemólise, bilirrubina e padrão de enzimas.",
+    "- Não é aceitável ignorar perda de peso, sintomas persistentes, hemogramas alterados ou achados focais em pessoa com dermatomiosite.",
+    "- Não é adequado pedir tomografia de toda a extensão corporal indiscriminadamente em qualquer pessoa com CK elevada.",
+    "- Triagens populacionais apropriadas para idade e sexo permanecem indicadas, acrescidas de avaliação conforme estratificação.",
+    "- A recomendação de vigilância não deve ser extrapolada automaticamente de miosite adulta para dermatomiosite juvenil ou miosite por corpos de inclusão confirmada, grupos que possuem perfis distintos na diretriz.",
+    "- Complicações como **disfagia e DPI** devem ser triadas desde o começo; o rastreamento oncológico não substitui segurança clínica imediata.",
+    "**Na SGB**, identificar platô, recuperação, fadiga residual e necessidades de reabilitação; piora após estabilização exige reavaliar complicações, flutuações relacionadas a tratamento ou diagnóstico alternativo. **Na CIDP**, usar medidas objetivas seriadas para decidir se imunoterapia está fazendo diferença, evitando tratamento continuado baseado apenas em sensação de “discreta melhora”. **Na miastenia**, definir metas de capacidade de fala, mastigação, olhos, membros e qualidade de vida, vigilância respiratória e toxicidade da medicação. **Na miopatia**, acompanhar força, função, CK quando in",
+    "**Hipótese:** neuropatia sensitiva com possível toxicidade por piridoxina, sem excluir outras causas. **Raciocínio:** suplementação não é sempre inócua; história farmacológica inclui produtos de venda livre. **Exames:** documentar doses de B6, ENMG conforme fenótipo, avaliar glicemia, B12 funcional e causas de neuropatia; testar equilíbrio/risco de quedas. **Conduta:** evitar exposição potencialmente tóxica com orientação, corrigir défices específicos e acompanhar evolução/reabilitação. **Por que importa:** a conduta “dar mais vitaminas” pode perpetuar neuropatia.",
+    "**Hipótese:** síndrome de Miller Fisher, variante do espectro Guillain-Barré. **Diferenciais:** lesão de tronco encefálico, Wernicke, intoxicações e causas vestibulares/centrais. **Exames:** avaliação neurológica urgente, exame de tronco, neuroimagem conforme suspeita, anti-GQ1b quando disponível, ENMG/líquor a critério. **Conduta:** monitorar evolução e risco bulbar/respiratório; necessidade de imunoterapia definida conforme gravidade e progressão. **Por que importa:** SGB não é obrigatoriamente fraqueza ascendente clássica.",
+    "**Hipótese:** exacerbação miastênica precipitada por infecção e possivelmente modulada por fármaco. **Diferenciais:** encefalopatia séptica, lesão de tronco, aspiração e efeitos adversos independentes. **Exames:** avaliação hospitalar de função bulbar e ventilatória seriada, oximetria, exames de infecção, revisão de fármacos. **Conduta:** **não simplesmente suspender antibiótico eficaz sem alternativa**, mas revisar risco e substituir se apropriado, tratar infecção, considerar IVIG/plasmaférese e suporte ventilatório conforme gravidade. **Por que importa:** o risco respiratório é clínico mesmo",
+    "**Hipótese:** miopatia induzida por glicocorticoide, sem descartar descondicionamento e miopatia inflamatória associada a outras doenças. **Raciocínio:** CK normal e fraqueza proximal pouco dolorosa em pessoa exposta sustentam suspeita; não são confirmação isolada. **Exames:** revisão de doses, função endócrina quando indicada, avaliação de atividade da doença, nutrição e fragilidade; outros testes se atipias. **Conduta:** discutir redução segura e gradual da exposição se viável, reabilitação, tratamento da doença de base por alternativas apropriadas. **Importância:** intensificar esteroide “p"
+  ],
+  "external_urls": [
+    "https://doi.org/10.2337/dc26-s012",
+    "https://pubmed.ncbi.nlm.nih.gov/19627867/",
+    "https://doi.org/10.1111/ene.16073",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/s/sindrome-de-guillain-barre/view",
+    "https://doi.org/10.1111/ene.14959",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4977114/",
+    "https://pubmed.ncbi.nlm.nih.gov/33144515/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9398208/",
+    "https://doi.org/10.1038/s41584-023-01045-w",
+    "https://doi.org/10.1002/mus.70119"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Correções conceituais importantes em relação ao benchmark:** - A neuropatia distal simétrica da diabetes é frequente, mas sintomas neuropáticos em uma pessoa diabética **não dispensam** o diagnóstico diferencial; padrões assimétricos, motores ou rapidamente progressivos são sinais de atipia. [ADA 2026]. - O monofilamento de 10 g serve principalmente para detectar **perda de sensibilidade protetora e risco de ulceração**, não substitui avaliação das fibras finas nem exame etiológico. [ADA 2026]. - Não oferecer ácido alfa-lipoico ou reposição de vitaminas sem deficiência como “restauração nervosa” comprovada; tratar deficiências documentadas "
+    },
+    {
+      "text": "Teste levantar-se da cadeira sem usar braços, caminhar nas pontas dos pés e calcanhares, abduzir ombros, flexionar pescoço e examinar flexores profundos dos dedos. Fraqueza de flexores dos dedos e quadríceps especialmente em pessoa acima de 50 anos com curso insidioso sugere miosite por corpos de inclusão; não é a mesma distribuição de dermatomiosite clássica."
+    },
+    {
+      "text": "A ADA 2026 recomenda avaliação em DM2 **a partir do diagnóstico**, em DM1 **após cinco anos**, e pelo menos **anualmente**. O exame inclui dor/temperatura, vibração de 128 Hz, reflexos e monofilamento de 10 g para identificar pés em risco. O calendário não é substituto de avaliação imediata se surgirem sintomas."
+    },
+    {
+      "text": "O tratamento causal inclui controle glicêmico apropriado e manejo cardiovascular/global. Embora seja importante, melhorar glicemia não garante reversão rápida da lesão nervosa estabelecida. Para **dor neuropática**, duloxetina, pregabalina, gabapentina e alguns antidepressivos tricíclicos são opções conforme perfil, contraindicações, função renal, fragilidade, cognição e interações; evitar opioides como solução crônica de rotina. Doses e esquemas completos devem entrar em revisão farmacológica própria antes de publicar, não apenas repetir listas."
+    },
+    {
+      "text": "A diretriz EAN/PNS 2023 recomenda, em paciente **incapaz de caminhar sem ajuda**, **imunoglobulina intravenosa 0,4 g/kg/dia por cinco dias** se dentro das duas primeiras semanas da fraqueza (considerar cenários até quatro semanas conforme prática), **ou plasmaférese** (volume total geralmente 12–15 L em quatro a cinco sessões durante uma a duas semanas) se dentro das primeiras quatro semanas. A escolha considera acesso, comorbidades e complicações do procedimento. Em casos especiais ainda capazes de deambular, avaliar risco de deterioração rápida com especialistas. **Não oferecer segundo curso de imunoglobulina automaticamente por prognóstico"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

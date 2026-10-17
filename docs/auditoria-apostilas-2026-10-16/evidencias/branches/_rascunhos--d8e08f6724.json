@@ -1,0 +1,344 @@
+{
+  "sha": "d8e08f672464703ebe2032f5b5f42af629b13b17",
+  "path": "apostilas/_rascunhos/lote-10-aula-212-transtorno-bipolar-episodios-humor.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d8e08f6724",
+  "title": "LURIA — Apostila 212 — Transtorno bipolar e episódios do humor",
+  "format": ".md",
+  "chars_estimated": 70228,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 212 — Transtorno bipolar e episódios do humor"
+    },
+    {
+      "title": "0. Procedência, auditoria de acervo e benchmark"
+    },
+    {
+      "title": "1. Objetivos e mapa de raciocínio"
+    },
+    {
+      "title": "2. Conceitos fundamentais e nomes sem confusão"
+    },
+    {
+      "title": "2.1 Manias e hipomanias não são simplesmente dois tamanhos da mesma alegria"
+    },
+    {
+      "title": "2.2 Bipolar I, II e ciclotimia"
+    },
+    {
+      "title": "3. Epidemiologia, curso e prognóstico"
+    },
+    {
+      "title": "4. Fisiopatologia integrada: por que ritmo, energia e emoção oscilam"
+    },
+    {
+      "title": "4.1 Vulnerabilidade genética e redes de regulação"
+    },
+    {
+      "title": "4.2 Ritmo circadiano e sono como regulador"
+    },
+    {
+      "title": "4.3 Neuroplasticidade e estresse"
+    },
+    {
+      "title": "5. Diagnóstico longitudinal: a linha do tempo é o exame principal"
+    },
+    {
+      "title": "5.1 Como perguntar por episódio maníaco sem sugerir a resposta"
+    },
+    {
+      "title": "5.2 Entrevista e EEM por fase"
+    },
+    {
+      "title": "5.3 Rastreios e por que o MDQ não é diagnóstico"
+    },
+    {
+      "title": "5.4 Exames de outras condições"
+    },
+    {
+      "title": "6. Diagnósticos diferenciais: distinguir e reconhecer coexistência"
+    },
+    {
+      "title": "6.1 O diagnóstico pode mudar legitimamente ao longo do tempo"
+    },
+    {
+      "title": "6.2 Mania induzida por antidepressivo: interpretação cuidadosa"
+    },
+    {
+      "title": "7. Estratificação de gravidade e local de cuidado"
+    },
+    {
+      "title": "8. Tratamento da mania aguda: conter episódio e restabelecer funções"
+    },
+    {
+      "title": "8.1 Passos de início"
+    },
+    {
+      "title": "8.2 Tratamento farmacológico por perfil"
+    },
+    {
+      "title": "8.3 Lamotrigina NÃO trata mania aguda"
+    },
+    {
+      "title": "8.4 Eletroconvulsoterapia em mania grave"
+    },
+    {
+      "title": "9. Depressão bipolar: diferente da depressão unipolar também no tratamento"
+    },
+    {
+      "title": "9.1 Por que a polaridade muda a prescrição?"
+    },
+    {
+      "title": "9.2 Por que antidepressivo isolado não é escolha de rotina em bipolar I?"
+    },
+    {
+      "title": "9.3 Quetiapina e antipsicóticos na depressão bipolar"
+    },
+    {
+      "title": "9.4 Lamotrigina no polo depressivo"
+    },
+    {
+      "title": "9.5 Lítio e depressão bipolar"
+    },
+    {
+      "title": "10. Tratamento de manutenção e prevenção de recaídas"
+    },
+    {
+      "title": "10.1 O que se mantém quando sintomas desaparecem?"
+    },
+    {
+      "title": "10.2 Psicoeducação: identificar pródromos"
+    },
+    {
+      "title": "10.3 Terapias psicossociais"
+    },
+    {
+      "title": "10.4 Substâncias, obesidade e saúde física"
+    },
+    {
+      "title": "10.5 Não interromper estabilizador abruptamente"
+    },
+    {
+      "title": "11. Lítio — fisiologia, prescrição por nível e segurança"
+    },
+    {
+      "title": "11.1 Por que há necessidade de monitorização?"
+    },
+    {
+      "title": "11.2 Antes de iniciar"
+    },
+    {
+      "title": "11.3 Litemia e interpretação"
+    },
+    {
+      "title": "11.4 Efeitos adversos e toxicidade"
+    },
+    {
+      "title": "11.5 Interações que caem em prova"
+    },
+    {
+      "title": "12. Anticonvulsivantes com ação sobre humor: indicações distintas"
+    },
+    {
+      "title": "12.1 Valproato/divalproato"
+    },
+    {
+      "title": "12.2 Lamotrigina e o risco cutâneo"
+    },
+    {
+      "title": "12.3 Carbamazepina e alternativas"
+    },
+    {
+      "title": "13. Antipsicóticos: eficácia por fase e efeitos adversos"
+    },
+    {
+      "title": "13.1 Mecanismos gerais e variabilidade"
+    },
+    {
+      "title": "13.2 Monitorização do risco cardiometabólico"
+    },
+    {
+      "title": "13.3 Tratamento combinado: quando ajuda e quando aumenta danos"
+    },
+    {
+      "title": "14. Populações especiais"
+    },
+    {
+      "title": "14.1 Gestação e período perinatal"
+    },
+    {
+      "title": "14.2 Crianças e adolescentes"
+    },
+    {
+      "title": "14.3 Idosos"
+    },
+    {
+      "title": "14.4 Comorbidades clínicas importantes"
+    },
+    {
+      "title": "15. Segurança, risco e crise: a polaridade não substitui avaliação"
+    },
+    {
+      "title": "16. Algoritmos de plantão e ambulatório"
+    },
+    {
+      "title": "16.1 Fala acelerada + pouca necessidade de sono"
+    },
+    {
+      "title": "16.2 Pessoa procura atendimento por depressão"
+    },
+    {
+      "title": "16.3 Paciente em uso de lítio com vômitos, ataxia e confusão"
+    },
+    {
+      "title": "16.4 Depressão bipolar com lamotrigina e novo exantema"
+    },
+    {
+      "title": "17. Casos clínicos autorais comentados"
+    },
+    {
+      "title": "Caso 1 — Mania clássica, não apenas “felicidade excessiva”"
+    },
+    {
+      "title": "Caso 2 — Bipolar II escondido atrás de anos de depressão"
+    },
+    {
+      "title": "Caso 3 — A insônia que não era mania"
+    },
+    {
+      "title": "Caso 4 — Tireotoxicose imitando mania"
+    },
+    {
+      "title": "Caso 5 — Lítio, gastroenterite e AINE"
+    },
+    {
+      "title": "Caso 6 — Paciente com mania e valproato na gestação"
+    },
+    {
+      "title": "Caso 7 — A lamotrigina como “resgate” de mania"
+    },
+    {
+      "title": "Caso 8 — Depressão bipolar com sintomas mistos"
+    },
+    {
+      "title": "Caso 9 — Quetiapina funciona, mas a glicemia piora"
+    },
+    {
+      "title": "18. Questões originais comentadas"
+    },
+    {
+      "title": "Questão 1 — Bipolar I"
+    },
+    {
+      "title": "Questão 2 — Bipolar II"
+    },
+    {
+      "title": "Questão 3 — Hipomania ou mania?"
+    },
+    {
+      "title": "Questão 4 — Redução da necessidade de sono"
+    },
+    {
+      "title": "Questão 5 — Ciclagem rápida"
+    },
+    {
+      "title": "Questão 6 — Fármaco não indicado em mania aguda"
+    },
+    {
+      "title": "Questão 7 — Depressão bipolar I"
+    },
+    {
+      "title": "Questão 8 — Lítio e prevenção de recaída"
+    },
+    {
+      "title": "Questão 9 — Meta sérica de manutenção"
+    },
+    {
+      "title": "Questão 10 — Lítio e AINE"
+    },
+    {
+      "title": "Questão 11 — Lamotrigina + valproato"
+    },
+    {
+      "title": "Questão 12 — Gestação com valproato"
+    },
+    {
+      "title": "Questão 13 — Hipertireoidismo versus mania"
+    },
+    {
+      "title": "Questão 14 — Estado misto"
+    },
+    {
+      "title": "19. Referências verificadas e hierarquia normativa"
+    },
+    {
+      "title": "20. Planejamento visual: usar imagens que ensinem e não estigmatizem"
+    },
+    {
+      "title": "21. Revisão de alto rendimento"
+    },
+    {
+      "title": "22. Matriz de competências, qualidade e pendências"
+    }
+  ],
+  "reference_entries": [
+    "1. **BRASIL. Ministério da Saúde.** Portaria nº 315, de **30 de março de 2016**, e anexo: *Protocolo Clínico e Diretrizes Terapêuticas do Transtorno Afetivo Bipolar do Tipo I*. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/pcdt/t/transtorno-afetivo-bipolar-do-tipo-i/@@download/file>. **O PDF de 36 páginas foi aberto, e a capa explicita 2016.** A página de navegação foi atualizada em **21/01/2025**, mas **isso não indica atualização clínica do anexo**. O texto refere busca da literatura até setembro de 2015, usa CID-10 e se limita sobretudo a bipolar I. Não extrapolar seu rol de medic",
+    "2. **NICE.** *Bipolar disorder: assessment and management*, **CG185**, publicada em 2014 com emendas posteriores de 2023 e referências regulatórias atualizadas no texto online em 2025. <https://www.nice.org.uk/guidance/cg185/chapter/recommendations>. Fundamenta diferença entre mania, depressão bipolar, manejo de valproato, manutenção com lítio, exames/litemia, alertas de AINE e lentidão da titulação de lamotrigina.",
+    "3. **Yatham LN, et al.** *The CANMAT and ISBD Guidelines for the Treatment of Bipolar Disorder: Summary and a 2023 Update of Evidence*. *Focus*. 2024. DOI **10.1176/appi.focus.20230009**. Texto integral em: <https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/>. Base para hierarquia de fármacos por **mania, depressão bipolar I/II e manutenção**, com precauções sobre antidepressivo em monoterapia no tipo I.",
+    "4. **Organização Mundial da Saúde.** *mhGAP guideline for mental, neurological and substance use disorders*, 3ª edição, 2023. <https://www.who.int/publications/i/item/9789240084278>. Referência para cuidado não especializado, psicoeducação e rede.",
+    "5. **NICE.** *Depression in adults: treatment and management* **NG222**, 2022. <https://www.nice.org.uk/guidance/ng222/chapter/recommendations>. Utilizada apenas para diagnóstico diferencial e necessidade de investigar hipomania/mania, não como algoritmo de fármaco para bipolar I.",
+    "6. **NICE.** *Self-harm: assessment, management and preventing recurrence* **NG225**, 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Fonte de avaliação psicossocial e não uso de escalas como preditores/decisão única de alta.",
+    "7. **Ministério da Saúde — RAPS.** Rede de Atenção Psicossocial. <https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps>. Estrutura de coordenação APS/CAPS/urgência.",
+    "8. **DailyMed/NLM e bulas Anvisa**: conferir rótulos de lítio, lamotrigina, valproato e antipsicóticos por produto/formulação antes da versão prescritiva. **Esta etapa nacional de bulas, apresentações e custos está pendente**, não é referência integral de doses já auditadas.",
+    "**Ponto clínico de incompatibilidade temporal:** a publicação brasileira disponível em 2016 contém escolhas e contexto de financiamento de seu período. As listas CANMAT/ISBD 2023–24 e NICE com emendas posteriores incluem agentes que podem não constar daquele PCDT; a apostila não os apresenta como **automaticamente incorporados ao SUS**. A necessidade de verificar atos normativos posteriores, especialmente para valproato em pessoas com potencial reprodutivo, é explícita.",
+    "**Status de mídia:** 12 itens conceituais, **zero imagens aprovadas ou inseridas**. Buscar candidatos de origem confiável com licenças de uso comercial, e desenhos originais quando apropriados; checar legendas e aprovação administrativa antes de integrar à página.",
+    "**Diagnóstico:** mais importante que observar euforia na consulta é **provar episódio com mudança de energia, duração, prejuízo, história e exclusões**. Mania define bipolar I; hipomania + depressão maior sem mania compõem bipolar II.",
+    "**Fases:** mania trata-se com **agentes antimaníacos**, depressão bipolar exige medicamentos com evidência para **polo depressivo bipolar**, e manutenção depende da polaridade anterior, resposta e efeitos. **Lamotrigina não serve para mania aguda. ISRS isolado não é recomendação de primeira linha para bipolar I depressivo.**",
+    "**Lítio:** função renal e tireoide/cálcio, nível sérico, interações e doença aguda. Nova **ataxia/confusão/vômitos** em usuário de lítio exige avaliação urgente.",
+    "**Valproato:** eficácia antimaníaca não cancela riscos reprodutivos, hepáticos, hematológicos e metabólicos; decisão especializada e consentimento.",
+    "**Segurança:** avaliar suicidabilidade, psicose, perda de autocuidado, intoxicação, sono e contexto, sem usar categoria de risco como prova de alta ou internação automática.",
+    "**Parecer editorial provisório:** apostila autoral extensa com **9 casos e 14 questões**, cobertura de fundamentos, diagnóstico, diferenciais, tratamento agudo/longitudinal e situações especiais. **Pendente** de revisão científica por psiquiatra, conferência de versão/impacto do PCDT 2016 no SUS 2026, verificação de doses e registros Anvisa, auditoria de estilo, contagem de caracteres **úteis** (não brutos), imagens clínicas adequadas e aprovação no Admin.",
+    "**Status técnico:** branch editorial isolada; nenhuma página publicada, HTML, catálogo, banco, Supabase ou \\`main\\` modificados; não houve deploy. O próximo tema oficial é **213 — Transtornos ansiosos, TOC e transtornos relacionados ao trauma**."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/t/transtorno-afetivo-bipolar-do-tipo-i/@@download/file",
+    "https://www.nice.org.uk/guidance/cg185/chapter/recommendations",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11058959/",
+    "https://www.who.int/publications/i/item/9789240084278",
+    "https://www.nice.org.uk/guidance/ng222/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Lote 10 · Saúde Mental · Data editorial:** 15/10/2026. **Estado:** RASCUNHO DIDÁTICO AUTORAL, NÃO PUBLICADO, SEM CERTIFICAÇÃO DE REVISÃO CLÍNICA INDEPENDENTE. **Recorte curricular:** episódio maníaco, hipomaníaco, depressão bipolar, mistos, tipo I e II, ciclotimia, fatores de risco, diagnóstico diferencial, farmacoterapia por fase, seguimento, segurança e populações especiais. A aula **211** cobre depressão unipolar e segurança de modo amplo; a **210** contém semiologia e EEM; a **215** detalhará emergências/psicofarmacologia geral."
+    },
+    {
+      "text": "> **EM 30 SEGUNDOS — PULO DO GATO LURIA** > **Bipolar I** exige **ao menos um episódio maníaco** na história; depressão maior **não é obrigatória** para confirmar bipolar I. **Bipolar II** exige ao menos um **episódio hipomaníaco** e um **episódio depressivo maior**, **sem** história de mania. Mania pode necessitar hospitalização e ter psicose; hipomania por definição não produz a gravidade funcional característica da mania. **Lamotrigina não trata mania aguda. Antidepressivo isolado não é tratamento recomendado para depressão bipolar I.** Lítio pode ser importante na manutenção, mas exige **nível sérico e monitorização renal, tireoidiana, cá"
+    },
+    {
+      "text": "**Eutimia** descreve fase sem sintomas sindrômicos significativos de mania ou depressão, não significa ausência de vulnerabilidade a recaídas. **Depressão bipolar** é episódio depressivo que ocorre numa pessoa com bipolaridade — e pode ser indistinguível de depressão unipolar em entrevista transversal. O diagnóstico depende do **curso de vida**."
+    },
+    {
+      "text": "**Critérios sintomáticos DSM para mania/hipomania:** durante alteração de humor e energia, há conjunto de sintomas como grandiosidade/autoestima inflada, menor necessidade de sono, fala pressionada, fuga de ideias/pensamento acelerado, distratibilidade, aumento de atividade dirigida a objetivos/agitação e envolvimento excessivo em situações de consequências potencialmente prejudiciais. Em apresentação predominantemente **irritável**, o número mínimo de sintomas exigido é maior que quando há euforia/expansividade. Duração, prejuízo e exclusão de substâncias/condições médicas completam o diagnóstico."
+    },
+    {
+      "text": "Transtorno bipolar pode começar na adolescência ou vida adulta jovem, mas a idade de reconhecimento varia; diagnósticos podem atrasar quando a primeira fase é depressiva. A prevalência muda conforme bipolar I, II, espectro, sistema diagnóstico e metodologia. **Não confundir prevalência de sintomas hipomaníacos relatados com prevalência de transtorno bipolar confirmado**, pois dormir menos por trabalho, uso de estimulantes e características temperamentais podem imitar sintomas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

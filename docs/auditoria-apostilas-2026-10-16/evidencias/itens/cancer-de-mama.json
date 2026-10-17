@@ -1,0 +1,1402 @@
+{
+  "key": "cancer-de-mama",
+  "kind": "apostila-html",
+  "path": "apostilas/cancer-de-mama/index.html",
+  "html_path": "apostilas/cancer-de-mama/index.html",
+  "title": "Câncer de mama",
+  "source_sha256": "a462c3aef070fa92d9600fcf14b00fa975bc7dfca56e862f379eac8613a14a9d",
+  "html_sha256": "a462c3aef070fa92d9600fcf14b00fa975bc7dfca56e862f379eac8613a14a9d",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Visão geral e mapa clínico",
+      "section": "chapter-1"
+    },
+    {
+      "tag": "H2",
+      "title": "Anatomia, histologia e progressão",
+      "section": "chapter-2"
+    },
+    {
+      "tag": "H3",
+      "title": "O que a lâmina histológica responde?",
+      "section": "chapter-2"
+    },
+    {
+      "tag": "H2",
+      "title": "Fatores de risco e prevenção",
+      "section": "chapter-3"
+    },
+    {
+      "tag": "H3",
+      "title": "Não modificáveis",
+      "section": "chapter-3"
+    },
+    {
+      "tag": "H3",
+      "title": "Modificáveis ou parcialmente modificáveis",
+      "section": "chapter-3"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando suspeitar de predisposição hereditária?",
+      "section": "chapter-3"
+    },
+    {
+      "tag": "H2",
+      "title": "Patologias benignas da mama e lesões de alto risco",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Classificação que realmente importa",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Nódulo palpável: abordagem por idade e concordância",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Fibroadenoma",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Cistos: simples, complicados e císticos com componente sólido",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Alterações fibrocísticas e mastalgia",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "6. Descarga papilar: fisiológica, galactorreia e descarga patológica",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "7. Papiloma intraductal e ectasia ductal",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "8. Mastite puerperal, abscesso e mastite não puerperal",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "9. Galactocele e necrose gordurosa",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "10. Tumor filoide: não chamar de “fibroadenoma grande”",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "11. Lesões de alto risco: HDA, HLA, cicatriz radial e LCIS",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "12. BI-RADS aplicado às lesões benignas",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H3",
+      "title": "13. Sinais de alarme: quando parar de chamar de “benigno”",
+      "section": "chapter-4"
+    },
+    {
+      "tag": "H2",
+      "title": "Manifestações clínicas e exame físico",
+      "section": "chapter-5"
+    },
+    {
+      "tag": "H3",
+      "title": "Três situações que não podem ser banalizadas",
+      "section": "chapter-5"
+    },
+    {
+      "tag": "H2",
+      "title": "Rastreamento no Brasil",
+      "section": "chapter-6"
+    },
+    {
+      "tag": "H2",
+      "title": "Investigação por imagem: qual exame pedir?",
+      "section": "chapter-7"
+    },
+    {
+      "tag": "H3",
+      "title": "O que reconhecer na imagem?",
+      "section": "chapter-7"
+    },
+    {
+      "tag": "H2",
+      "title": "BI-RADS: interpretação e conduta",
+      "section": "chapter-8"
+    },
+    {
+      "tag": "H2",
+      "title": "Biópsia e concordância tripla",
+      "section": "chapter-9"
+    },
+    {
+      "tag": "H3",
+      "title": "HER2 equívoco",
+      "section": "chapter-9"
+    },
+    {
+      "tag": "H3",
+      "title": "Concordância: quando um resultado benigno não encerra a investigação",
+      "section": "chapter-9"
+    },
+    {
+      "tag": "H2",
+      "title": "Concordância clínica, imagem e biópsia: como evitar atrasos diagnósticos",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — nódulo palpável com mamografia anterior negativa",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — microcalcificações suspeitas, mas ultrassom sem massa",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — BI-RADS 5 e biópsia “benigna”",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — saída de sangue espontânea pelo mamilo",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — nódulo persistente na gestação ou lactação",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — BI-RADS 3 sob seguimento e mudança do quadro",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Autoteste integrado — resposta orientada pela lógica",
+      "section": "capitulo-concordancia-mamaria-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Tipos histológicos e perfis moleculares",
+      "section": "chapter-10"
+    },
+    {
+      "tag": "H2",
+      "title": "Estadiamento TNM e avaliação sistêmica",
+      "section": "chapter-11"
+    },
+    {
+      "tag": "H2",
+      "title": "Tratamento: mapa de decisão",
+      "section": "chapter-12"
+    },
+    {
+      "tag": "H2",
+      "title": "Cirurgia conservadora, mastectomia e oncoplastia",
+      "section": "chapter-13"
+    },
+    {
+      "tag": "H3",
+      "title": "Cirurgia conservadora",
+      "section": "chapter-13"
+    },
+    {
+      "tag": "H3",
+      "title": "Mastectomia e técnicas poupadoras",
+      "section": "chapter-13"
+    },
+    {
+      "tag": "H3",
+      "title": "Oncoplastia e reconstrução mamária",
+      "section": "chapter-13"
+    },
+    {
+      "tag": "H3",
+      "title": "Margens",
+      "section": "chapter-13"
+    },
+    {
+      "tag": "H2",
+      "title": "Axila e linfonodo sentinela",
+      "section": "chapter-14"
+    },
+    {
+      "tag": "H2",
+      "title": "Tratamento sistêmico por perfil",
+      "section": "chapter-15"
+    },
+    {
+      "tag": "H3",
+      "title": "RH positivo / HER2 negativo",
+      "section": "chapter-15"
+    },
+    {
+      "tag": "H3",
+      "title": "HER2 positivo",
+      "section": "chapter-15"
+    },
+    {
+      "tag": "H3",
+      "title": "Triplo-negativo",
+      "section": "chapter-15"
+    },
+    {
+      "tag": "H2",
+      "title": "Neoadjuvância, adjuvância e resposta patológica",
+      "section": "chapter-16"
+    },
+    {
+      "tag": "H3",
+      "title": "Radioterapia",
+      "section": "chapter-16"
+    },
+    {
+      "tag": "H2",
+      "title": "Situações especiais",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H3",
+      "title": "Lactação",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H3",
+      "title": "Homens",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H3",
+      "title": "Idosas e pacientes frágeis",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H3",
+      "title": "Doença metastática",
+      "section": "chapter-17"
+    },
+    {
+      "tag": "H2",
+      "title": "Seguimento, reabilitação e cuidados paliativos",
+      "section": "chapter-18"
+    },
+    {
+      "tag": "H3",
+      "title": "O seguimento tem objetivos distintos",
+      "section": "chapter-18"
+    },
+    {
+      "tag": "H2",
+      "title": "Casos clínicos comentados",
+      "section": "chapter-19"
+    },
+    {
+      "tag": "H2",
+      "title": "Erros frequentes e revisão final",
+      "section": "chapter-20"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento integrador — da lesão mamária à estratégia oncológica individualizada",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "1. A unidade ductolobular terminal e a heterogeneidade das neoplasias",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "2. O papel dos receptores hormonais e do HER2 na decisão terapêutica",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Concordância clínico-radiológica-patológica: o raciocínio para não perder um câncer",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Por que o rastreamento não substitui a investigação de sintomas",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Cirurgia conservadora, margens e radioterapia como tratamento coordenado",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "6. Avaliação axilar e linfonodo sentinela: estadiar com menor morbidade",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "7. Neoadjuvância e resposta patológica: por que tratar antes de operar?",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "8. Caso integrador comentado: duas mulheres com nódulos semelhantes",
+      "section": "capitulo-integracao-mama-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências e imagens para curadoria",
+      "section": "chapter-21"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "section": "editorial-depth-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Benigno, lesão de risco e malignidade",
+      "section": "editorial-depth-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Subtipos e tratamento",
+      "section": "editorial-depth-cancer-de-mama"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Nódulo palpável: discordância tripla",
+      "section": "luria-livro-etiologias-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Patologias benignas que exigem decisões diferentes",
+      "section": "luria-livro-etiologias-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Da patologia ao tratamento oncológico",
+      "section": "luria-livro-etiologias-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Rastreamento e risco familiar",
+      "section": "luria-livro-etiologias-cancer-de-mama"
+    },
+    {
+      "tag": "H2",
+      "title": "Raciocínio por entidade clínica",
+      "section": "capitulos-livro-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Tríplice concordância",
+      "section": "capitulos-livro-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Lesões benignas e alto risco",
+      "section": "capitulos-livro-cancer-de-mama"
+    },
+    {
+      "tag": "H3",
+      "title": "Subtipos e tratamento",
+      "section": "capitulos-livro-cancer-de-mama"
+    },
+    {
+      "tag": "H2",
+      "title": "Doenças benignas e câncer de mama: decisões cirúrgicas, reconstrução e prova",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Nódulo mamário: quando observar, biopsiar ou operar",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "2. BI-RADS aplicado à decisão cirúrgica",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Entidades benignas que têm decisões cirúrgicas diferentes",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Pré-operatório oncológico: o que deve ser definido antes da incisão",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Cirurgia conservadora versus mastectomia: indicação oncológica",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "6. Margens cirúrgicas: carcinoma invasivo versus CDIS",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "7. Axila: por que linfonodo sentinela mudou a cirurgia",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "8. Neoadjuvância: por que tratar antes de operar",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "9. Reconstrução mamária: parte do plano oncológico e da qualidade de vida",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "10. Pós-operatório e complicações que o interno precisa reconhecer",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "11. Rastreamento versus diagnóstico — atualização Brasil 2025/2026",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "12. Tratamento orientado à pessoa: perspectivas éticas e comunicação",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "13. Casos clínicos aprofundados — decisão passo a passo",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 1 — Nódulo palpável em mama jovem com ultrassom provavelmente benigno",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 2 — Microcalcificações suspeitas sem massa ao ultrassom",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 3 — BI-RADS 5 e core com resultado benigno",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 4 — Mastite puerperal com abscesso",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 5 — Core fibroepitelial e crescimento acelerado",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 6 — Carcinoma RH positivo inicial: cirurgia conservadora",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 7 — Tumor HER2 positivo com axila comprometida antes de tratar",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso cirúrgico 8 — Margem com tumor na tinta após tumorectomia",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "14. Questões autorais LURIA — comentários por alternativa",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 1",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 2",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 3",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 4",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 5",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 6",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 7",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 8",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 9",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão cirúrgica 10",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "15. Curadoria visual: doze imagens didáticas candidatas",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "16. Referências verificáveis e diferenças entre fontes",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H3",
+      "title": "17. Auditoria editorial da expansão",
+      "section": "luria-lote09-cirurgia-mamaria-167"
+    },
+    {
+      "tag": "H2",
+      "title": "Mastologia clínica em GO: queixas benignas, prevenção, gestação e lactação",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "1. A primeira consulta: risco individual, queixa e oportunidade preventiva",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Rastreamento no SUS em 2026: não confundir acesso, convite e diagnóstico",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Risco hereditário e aconselhamento",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Terapia hormonal menopausal e contraceptivos: estimativa de risco sem alarmismo",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "5. Gestação: o nódulo persistente exige imagem, não espera pelo puerpério",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "6. Lactação e puerpério: espectro da mastite",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "7. Galactorreia, ectasia e secreção patológica: três caminhos distintos",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "8. Mastalgia e alterações cíclicas: aliviar sem procedimentos desnecessários",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "9. Integração com a transição menopausal e a oncologia",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "10. Algoritmo GO para queixas mamárias",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "11. Seis casos de GO comentados",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 1 — Nódulo durante o segundo trimestre",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 2 — Mastite que evoluiu para abscesso",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 3 — Risco familiar relevante aos 36 anos",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 4 — Secreção unilateral sanguinolenta",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 5 — Mastalgia cíclica sem sinais de alarme",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso GO 6 — Climatério após câncer RH positivo",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "12. Oito questões autorais comentadas",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 1 — Rastreamento prioritário SUS 2025/2026",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 2 — Nódulo na gravidez",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 3 — Risco hereditário",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 4 — Mastite inflamatória",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 5 — Abscesso puerperal",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 6 — Descarga papilar suspeita",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 7 — SOP e consulta mamária",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "Questão GO 8 — Terapia hormonal após câncer mamário",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "13. Curadoria visual adicional do recorte GO",
+      "section": "luria-lote09-mastologia-go-169"
+    },
+    {
+      "tag": "H3",
+      "title": "14. Referências do módulo GO",
+      "section": "luria-lote09-mastologia-go-169"
+    }
+  ],
+  "sections": [
+    {
+      "id": "chapter-1",
+      "title": "Visão geral e mapa clínico",
+      "chars": 1294
+    },
+    {
+      "id": "chapter-2",
+      "title": "Anatomia, histologia e progressão",
+      "chars": 1038
+    },
+    {
+      "id": "chapter-3",
+      "title": "Fatores de risco e prevenção",
+      "chars": 1155
+    },
+    {
+      "id": "chapter-4",
+      "title": "Patologias benignas da mama e lesões de alto risco",
+      "chars": 10730
+    },
+    {
+      "id": "chapter-5",
+      "title": "Manifestações clínicas e exame físico",
+      "chars": 1358
+    },
+    {
+      "id": "chapter-6",
+      "title": "Rastreamento no Brasil",
+      "chars": 2263
+    },
+    {
+      "id": "chapter-7",
+      "title": "Investigação por imagem: qual exame pedir?",
+      "chars": 1534
+    },
+    {
+      "id": "chapter-8",
+      "title": "BI-RADS: interpretação e conduta",
+      "chars": 883
+    },
+    {
+      "id": "chapter-9",
+      "title": "Biópsia e concordância tripla",
+      "chars": 2140
+    },
+    {
+      "id": "capitulo-concordancia-mamaria-2026",
+      "title": "Concordância clínica, imagem e biópsia: como evitar atrasos diagnósticos",
+      "chars": 6827
+    },
+    {
+      "id": "chapter-10",
+      "title": "Tipos histológicos e perfis moleculares",
+      "chars": 1698
+    },
+    {
+      "id": "chapter-11",
+      "title": "Estadiamento TNM e avaliação sistêmica",
+      "chars": 914
+    },
+    {
+      "id": "chapter-12",
+      "title": "Tratamento: mapa de decisão",
+      "chars": 667
+    },
+    {
+      "id": "chapter-13",
+      "title": "Cirurgia conservadora, mastectomia e oncoplastia",
+      "chars": 1602
+    },
+    {
+      "id": "chapter-14",
+      "title": "Axila e linfonodo sentinela",
+      "chars": 1095
+    },
+    {
+      "id": "chapter-15",
+      "title": "Tratamento sistêmico por perfil",
+      "chars": 1259
+    },
+    {
+      "id": "chapter-16",
+      "title": "Neoadjuvância, adjuvância e resposta patológica",
+      "chars": 853
+    },
+    {
+      "id": "chapter-17",
+      "title": "Situações especiais",
+      "chars": 1086
+    },
+    {
+      "id": "chapter-18",
+      "title": "Seguimento, reabilitação e cuidados paliativos",
+      "chars": 1284
+    },
+    {
+      "id": "chapter-19",
+      "title": "Casos clínicos comentados",
+      "chars": 1071
+    },
+    {
+      "id": "chapter-20",
+      "title": "Erros frequentes e revisão final",
+      "chars": 799
+    },
+    {
+      "id": "capitulo-integracao-mama-40k",
+      "title": "Aprofundamento integrador — da lesão mamária à estratégia oncológica individualizada",
+      "chars": 14586
+    },
+    {
+      "id": "chapter-21",
+      "title": "Referências e imagens para curadoria",
+      "chars": 864
+    },
+    {
+      "id": "editorial-depth-cancer-de-mama",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 632
+    },
+    {
+      "id": "luria-livro-etiologias-cancer-de-mama",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2412
+    },
+    {
+      "id": "capitulos-livro-cancer-de-mama",
+      "title": "Raciocínio por entidade clínica",
+      "chars": 913
+    },
+    {
+      "id": "luria-lote09-cirurgia-mamaria-167",
+      "title": "Doenças benignas e câncer de mama: decisões cirúrgicas, reconstrução e prova",
+      "chars": 42763
+    },
+    {
+      "id": "luria-lote09-mastologia-go-169",
+      "title": "Mastologia clínica em GO: queixas benignas, prevenção, gestação e lactação",
+      "chars": 22902
+    }
+  ],
+  "references": [
+    "Ministério da Saúde — Linha de Cuidado do Câncer de Mama: exame clínico, alterações benignas e critérios de encaminhamento.",
+    "INCA — Detecção precoce do câncer de mama.",
+    "INCA — Tratamento do câncer de mama.",
+    "INCA — Versão para profissionais.",
+    "MS — Nota Técnica 626/2025: mamografia.",
+    "NCI — Breast Cancer Treatment (PDQ).",
+    "Wikimedia Commons — coleção de mamografias (avaliar licenças).",
+    "Artigo com exemplos de microcalcificações — verificar licença e atribuição.",
+    "Ministério da Saúde. PCDT de Câncer de Mama, Portaria Conjunta SAES/SECTICS nº 17/2024, página atualizada em 04/05/2026. Fundamentos brasileiros de diagnóstico, cirurgia, axila, radioterapia e tratamento sistêmico.",
+    "INCA. Câncer de mama — versão para profissionais de saúde. Diagnóstico triplo, biópsia por agulha e linha de cuidado.",
+    "Ministério da Saúde. Nota Técnica nº 626/2025. Rastreamento prioritário 50–74 anos e acesso sob demanda em outras faixas.",
+    "INCA. Tratamento do câncer de mama. Cirurgia inicial e reconstrução.",
+    "Ministério da Saúde. Reconstrução mamária no SUS. Política de ampliação do acesso.",
+    "Moran MS et al. Society of Surgical Oncology–American Society for Radiation Oncology consensus guideline on margins for breast-conserving surgery with whole-breast irradiation in stages I and II invasive breast cancer. Int J Radiat Oncol Biol Phys. 2014. DOI. Referência internacional para “no ink on tumor”.",
+    "Morrow M et al. Society of Surgical Oncology–American Society for Radiation Oncology–American Society of Clinical Oncology consensus guideline on margins for breast-conserving surgery with whole-breast irradiation in DCIS. Ann Surg Oncol. 2016. DOI. Referência internacional para CDIS; explicitamente fora do escopo do PCDT invasivo.",
+    "Ministério da Saúde, Nota Técnica nº 626/2025 — faixa 50–74 e acesso à mamografia.",
+    "INCA, Fatores de risco, atualizado em 2025 — fatores reprodutivos, hormonais e ambientais.",
+    "Ministério da Saúde, Linha de Cuidado — Planejamento Terapêutico — história reprodutiva e avaliação de queixas.",
+    "Ministério da Saúde, PCDT Câncer de Mama — terapêutica oncológica e condições especiais.",
+    "Academy of Breastfeeding Medicine, Clinical Protocol 36 (2022) — espectro da mastite (referência internacional complementar, sujeito a protocolos brasileiros)."
+  ],
+  "reference_links": [
+    {
+      "label": "Ministério da Saúde — Linha de Cuidado do Câncer de Mama: exame clínico, alterações benignas e critérios de encaminhamento",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/exame-clinico-mamas/",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Detecção precoce do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Tratamento do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento/",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Versão para profissionais",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": true
+    },
+    {
+      "label": "MS — Nota Técnica 626/2025: mamografia",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/@@download/file",
+      "in_references": true
+    },
+    {
+      "label": "NCI — Breast Cancer Treatment (PDQ)",
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "in_references": true
+    },
+    {
+      "label": "Wikimedia Commons — coleção de mamografias (avaliar licenças)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Mammography",
+      "in_references": true
+    },
+    {
+      "label": "Artigo com exemplos de microcalcificações — verificar licença e atribuição",
+      "url": "https://www.mdpi.com/2075-4418/15/13/1687",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. PCDT de Câncer de Mama, Portaria Conjunta SAES/SECTICS nº 17/2024, página atualizada em 04/05/2026",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Câncer de mama — versão para profissionais de saúde",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Nota Técnica nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Tratamento do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Reconstrução mamária no SUS",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/cgcan/reconstrucao-mamaria",
+      "in_references": true
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.ijrobp.2013.11.012",
+      "in_references": true
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1245/s10434-016-5449-z",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, Nota Técnica nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA, Fatores de risco, atualizado em 2025",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/fatores-de-risco",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, Linha de Cuidado — Planejamento Terapêutico",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/atencao-especializada/planejamento-terapeutico/",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, PCDT Câncer de Mama",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+      "in_references": true
+    },
+    {
+      "label": "Academy of Breastfeeding Medicine, Clinical Protocol 36 (2022)",
+      "url": "https://www.bfmed.org/protocols",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "Conferir a recomendação atual do INCA",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": false
+    },
+    {
+      "label": "MS, Nota Técnica nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf",
+      "in_references": false
+    },
+    {
+      "label": "SBM/CBR/FEBRASGO, 2025",
+      "url": "https://cbr.org.br/wp-content/uploads/2025/01/Nota-tecnica-da-Comissao-Nacional-de-Mamografia-sobre-o-rastreamento-do-Cancer-de-Mama-no-Brasil.pdf",
+      "in_references": false
+    },
+    {
+      "label": "Nota Técnica MS nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/@@download/file",
+      "in_references": false
+    },
+    {
+      "label": "INCA — detecção precoce",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": false
+    },
+    {
+      "label": "",
+      "url": "https://commons.wikimedia.org/wiki/File:Mammogram_microcalcifications_in_carcinoma_in_situ,_MLO,_details.png",
+      "in_references": false
+    },
+    {
+      "label": "Jmarchn / Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Mammogram_microcalcifications_in_carcinoma_in_situ,_MLO,_details.png",
+      "in_references": false
+    },
+    {
+      "label": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "in_references": false
+    },
+    {
+      "label": "INCA, Câncer de Mama — versão para profissionais",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": false
+    },
+    {
+      "label": "American College of Radiology, ACR Appropriateness Criteria: Palpable Breast Masses",
+      "url": "https://acsearch.acr.org/docs/69495/Narrative",
+      "in_references": false
+    },
+    {
+      "label": "National Cancer Institute, Breast Cancer Treatment (PDQ)",
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "in_references": false
+    },
+    {
+      "label": "",
+      "url": "https://commons.wikimedia.org/wiki/File:Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+      "in_references": false
+    },
+    {
+      "label": "Mikael Häggström, MD / Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+      "in_references": false
+    },
+    {
+      "label": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "in_references": false
+    },
+    {
+      "label": "NCI — Breast Cancer Treatment, PDQ profissional",
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "in_references": false
+    },
+    {
+      "label": "INCA — detecção precoce",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": false
+    },
+    {
+      "label": "PCDT vigente",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+      "in_references": false
+    },
+    {
+      "label": "INCA",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde — Linha de Cuidado do Câncer de Mama: exame clínico, alterações benignas e critérios de encaminhamento",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/exame-clinico-mamas/",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Detecção precoce do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Tratamento do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento/",
+      "in_references": true
+    },
+    {
+      "label": "INCA — Versão para profissionais",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": true
+    },
+    {
+      "label": "MS — Nota Técnica 626/2025: mamografia",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/@@download/file",
+      "in_references": true
+    },
+    {
+      "label": "NCI — Breast Cancer Treatment (PDQ)",
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "in_references": true
+    },
+    {
+      "label": "Wikimedia Commons — coleção de mamografias (avaliar licenças)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Mammography",
+      "in_references": true
+    },
+    {
+      "label": "Artigo com exemplos de microcalcificações — verificar licença e atribuição",
+      "url": "https://www.mdpi.com/2075-4418/15/13/1687",
+      "in_references": true
+    },
+    {
+      "label": "IARC — Breast Cancer Early Detection Atlas",
+      "url": "https://screening.iarc.fr/atlasbreastdiag.php",
+      "in_references": false
+    },
+    {
+      "label": "INCA — versão para profissionais",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde. PCDT de Câncer de Mama, Portaria Conjunta SAES/SECTICS nº 17/2024, página atualizada em 04/05/2026",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Câncer de mama — versão para profissionais de saúde",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Nota Técnica nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf",
+      "in_references": true
+    },
+    {
+      "label": "INCA. Tratamento do câncer de mama",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde. Reconstrução mamária no SUS",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/cgcan/reconstrucao-mamaria",
+      "in_references": true
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1016/j.ijrobp.2013.11.012",
+      "in_references": true
+    },
+    {
+      "label": "DOI",
+      "url": "https://doi.org/10.1245/s10434-016-5449-z",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, Nota Técnica nº 626/2025",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/view",
+      "in_references": true
+    },
+    {
+      "label": "INCA, Fatores de risco, atualizado em 2025",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/fatores-de-risco",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, Linha de Cuidado — Planejamento Terapêutico",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/atencao-especializada/planejamento-terapeutico/",
+      "in_references": true
+    },
+    {
+      "label": "Ministério da Saúde, PCDT Câncer de Mama",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+      "in_references": true
+    },
+    {
+      "label": "Academy of Breastfeeding Medicine, Clinical Protocol 36 (2022)",
+      "url": "https://www.bfmed.org/protocols",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/01-progressao.svg",
+      "alt": "Progressão de epitélio mamário normal para carcinoma in situ e invasivo",
+      "section": "chapter-2",
+      "caption": "Invasão do estroma · Esquema didático LURIA, em português.",
+      "decorative": false
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/02-birads.svg",
+      "alt": "Categorias BI-RADS e condutas correspondentes",
+      "section": "chapter-7",
+      "caption": "Interpretação resumida do BI-RADS · Esquema didático LURIA, em português.",
+      "decorative": false
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/03-investigacao.svg",
+      "alt": "Fluxo de investigação de um nódulo mamário suspeito",
+      "section": "chapter-7",
+      "caption": "Investigação e concordância diagnóstica · Esquema didático LURIA, em português.",
+      "decorative": false
+    },
+    {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png/960px-Mammogram_microcalcifications_in_carcinoma_in_situ%2C_MLO%2C_details.png",
+      "alt": "Mamografia real na incidência mediolateral oblíqua: múltiplas microcalcificações agrupadas em caso de carcinoma ductal in situ, imagem clínica original de Jmarchn",
+      "section": "capitulo-concordancia-mamaria-2026",
+      "caption": "Mamografia real — microcalcificações em carcinoma ductal in situ (CDIS). Incidência MLO, usada para discutir por que uma lesão suspeita pode aparecer sem nódulo palpável e exigir biópsia pelo método que demonstra as calcificações. Arquivo: Jmarchn / Wikimedia Commons, CC BY-SA 3.0. Prévia redimensionada sem alterações clínicas no conteúdo; amplie na fonte para análise detalhada.",
+      "decorative": false
+    },
+    {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg/960px-Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+      "alt": "Fotomicrografia verdadeira em hematoxilina e eosina de carcinoma invasivo da mama: agrupamentos tumorais infiltram tecido adiposo no campo esquerdo e detalhe celular em maior aumento no direito",
+      "section": "chapter-10",
+      "caption": "Histopatologia real — carcinoma mamário invasivo. À esquerda, agrupamentos tumorais infiltram o tecido adiposo; à direita, detalhe citológico em maior aumento. A imagem mostra invasão estromal, não simplesmente displasia intraductal. Autor Mikael Häggström, MD / Wikimedia Commons, licença CC0 1.0. Prévia redimensionada sem alterações de conteúdo.",
+      "decorative": false
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/05-tratamento.svg",
+      "alt": "Etapas do tratamento do câncer de mama",
+      "section": "chapter-12",
+      "caption": "Planejamento terapêutico · Esquema didático LURIA, em português.",
+      "decorative": false
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/06-tumor-axila.svg",
+      "alt": "Decisões na avaliação da axila e linfonodo sentinela",
+      "section": "chapter-14",
+      "caption": "Conduta axilar · Esquema didático LURIA, em português.",
+      "decorative": false
+    },
+    {
+      "src": "/assets/img/apostilas/cancer-de-mama/04-perfis.svg",
+      "alt": "Comparação entre perfis hormonais HER2 positivo e triplo-negativo",
+      "section": "chapter-15",
+      "caption": "Biologia tumoral · Esquema didático LURIA, em português.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 18,
+  "paragraphs": 266,
+  "duplicated_paragraphs": [
+    {
+      "count": 8,
+      "sections": [
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169",
+        "luria-lote09-mastologia-go-169"
+      ],
+      "excerpt": "Mini-revisão: Relacione o próximo passo à finalidade do atendimento (rastrear, diagnosticar, tratar ou prevenir complicação), ao risco individual e à segurança materno-fetal quando aplicável."
+    }
+  ],
+  "duplicate_headings": [
+    {
+      "title": "subtipos e tratamento",
+      "sections": [
+        "editorial-depth-cancer-de-mama",
+        "capitulos-livro-cancer-de-mama"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "chapter-6",
+      "text": "Entre 40–49 anos e acima de 74 anos, o SUS não impede a mamografia por demanda, após esclarecimento sobre benefícios e potenciais danos. Risco hereditário elevado exige estratégia individualizada, frequentemente com genética e métodos complementares.",
+      "pattern": 0
+    },
+    {
+      "section": "chapter-6",
+      "text": "Rastreamento populacional de risco habitual: mamografia bienal dos 50 aos 74 anos. Aos 40–49 anos e após 74, há possibilidade de mamografia por demanda após orientação individualizada sobre benefícios e danos.",
+      "pattern": 0
+    },
+    {
+      "section": "chapter-6",
+      "text": "Recomendação das sociedades de especialidade: mamografia anual dos 40 aos 74 anos; a partir de 75, individualizar segundo condição clínica e expectativa de vida. É orientação distinta daquela adotada para priorização populacional do SUS.",
+      "pattern": 0
+    },
+    {
+      "section": "chapter-6",
+      "text": "Questão de prova: mulher assintomática de 44 anos e risco habitual pergunta sobre rastreamento. No SUS, a faixa prioritária de rotina é 50–74 anos, mas o exame aos 44 não é proibido; deve haver decisão informada. As sociedades recomendam mamografia anual a partir de 40 anos. Se uma mulher de 37 anos apresenta nódulo suspeito, a dúvida é diagnóstica, não de rastreamento, e precisa ser investigada independentemente da faixa etária.",
+      "pattern": 0
+    },
+    {
+      "section": "chapter-1",
+      "text": "Os principais sítios de metástase são osso, fígado, pulmões e sistema nervoso central. A maioria dos casos não é explicada por uma variante hereditária de alta penetrância; ausência de história familiar não afasta o diagnóstico.",
+      "pattern": 1
+    },
+    {
+      "section": "chapter-3",
+      "text": "Diagnóstico em idade jovem, câncer bilateral ou múltiplos primários, câncer de mama masculino, triplo-negativo em contexto sugestivo e agregação familiar de mama, ovário, pâncreas ou próstata justificam avaliação de risco e, quando indicado, aconselhamento genético. Critérios e acesso dependem do protocolo vigente.",
+      "pattern": 1
+    },
+    {
+      "section": "chapter-4",
+      "text": "Uma grande parte das queixas mamárias é benigna, mas o raciocínio não deve começar com “parece benigno”. O caminho seguro é queixa → história e exame → imagem apropriada → concordância clínica-radiológica → biópsia quando indicada. Massa nova, descarga papilar patológica, retração, alteração cutânea ou inflamação persistente não devem ser encerradas apenas porque um diagnóstico benigno é possível.",
+      "pattern": 1
+    },
+    {
+      "section": "chapter-4",
+      "text": "Não se recomenda “ordenhar” o mamilo repetidamente para acompanhar secreção: a própria manipulação perpetua descarga. Citologia da secreção tem baixa sensibilidade e não substitui imagem/biópsia quando há indicação.",
+      "pattern": 1
+    },
+    {
+      "section": "chapter-9",
+      "text": "Discordância: se a biópsia vem “benigna”, mas a imagem é muito suspeita, não encerrar o caso; discutir revisão e nova amostragem ou excisão conforme indicação. Pedir no tumor invasivo: tipo, grau, receptores de estrogênio e progesterona, HER2 e parâmetros adicionais indicados.",
+      "pattern": 2
+    },
+    {
+      "section": "capitulo-integracao-mama-40k",
+      "text": "O receptor de estrogênio é um fator de transcrição ativado por ligante e pode favorecer programas celulares relacionados à proliferação de células tumorais sensíveis a hormônios. Quando um carcinoma apresenta receptor de estrogênio ou progesterona positivo segundo critérios patológicos, abre-se possibilidade de tratamento endócrino apropriado. Entretanto, a presença de receptor não significa que todos os tumores positivos respondam de forma idêntica: intensidade e proporção de expressão, proliferação, estágio, menopausa e comorbidades afetam as decisões.",
+      "pattern": 2
+    },
+    {
+      "section": "capitulo-integracao-mama-40k",
+      "text": "O termo triplo-negativo indica ausência dos três marcadores usados nessa classificação operacional — receptores de estrogênio, progesterona e expressão/amplificação HER2 conforme critérios vigentes. Não é um diagnóstico histológico único e não significa que toda neoplasia triplo-negativa tenha a mesma sensibilidade aos tratamentos. A ausência dos alvos hormonais clássicos e HER2 muda o conjunto de terapias disponíveis e pode tornar estratégias sistêmicas citotóxicas e outras opções específicas mais importantes. O planejamento depende de estágio, biomarcadores adicionais e acesso a terapias compatíveis com protocolos atuais.",
+      "pattern": 2
+    },
+    {
+      "section": "capitulo-integracao-mama-40k",
+      "text": "O Ministério da Saúde atualizou em setembro de 2025 a faixa prioritária do rastreamento mamográfico populacional do SUS para mulheres de 50 a 74 anos com periodicidade bienal. O acesso a avaliação mamográfica em outras idades não deve ser confundido com a faixa prioritária de um programa populacional: mulheres sintomáticas precisam de investigação direcionada, independentemente da idade. Para mulheres entre 40 e 49 anos ou acima de 74 anos que desejem rastreamento, o Ministério da Saúde prevê orientação quanto a riscos e benefícios. Pessoas com predisposição hereditária ou risco muito elevado podem necessitar estratégia individualizada distinta da rotina populacional.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "chapter-1",
+      "text": "O câncer de mama reúne neoplasias biologicamente diferentes que surgem principalmente do epitélio ductolobular. Uma lesão pode permanecer in situ, infiltrar o estroma, alcançar linfonodos ou produzir metástases. Ao mesmo tempo, a maioria das queixas mamárias na prática clínica é benigna; por isso, a competência central é distinguir benignidade verdadeira, lesões de alto risco e sinais que exigem biópsia. O prognóstico e o tratamento dependem do estádio e da biologia tumoral."
+    },
+    {
+      "section": "chapter-1",
+      "text": "Os principais sítios de metástase são osso, fígado, pulmões e sistema nervoso central. A maioria dos casos não é explicada por uma variante hereditária de alta penetrância; ausência de história familiar não afasta o diagnóstico."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 8
+  }
+}

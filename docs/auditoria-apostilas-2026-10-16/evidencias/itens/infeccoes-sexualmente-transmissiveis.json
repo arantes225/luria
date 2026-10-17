@@ -1,0 +1,1148 @@
+{
+  "key": "infeccoes-sexualmente-transmissiveis",
+  "kind": "apostila-html",
+  "path": "apostilas/infeccoes-sexualmente-transmissiveis/index.html",
+  "html_path": "apostilas/infeccoes-sexualmente-transmissiveis/index.html",
+  "title": "Infecções Sexualmente Transmissíveis",
+  "source_sha256": "dd4ee3020d1f00cb408d0583f12d3337bb62031d7a7f8b17070f5f9b379106cd",
+  "html_sha256": "dd4ee3020d1f00cb408d0583f12d3337bb62031d7a7f8b17070f5f9b379106cd",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Corrimento",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Úlcera",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Dor e complicação",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos, transmissão e história natural",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que úlcera e inflamação aumentam transmissão?",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Epidemiologia, vulnerabilidade e fatores de risco",
+      "section": "epidemiologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Notificação e vigilância",
+      "section": "epidemiologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Abordagem sindrômica sem perder a etiologia",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "História sexual que realmente muda conduta",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "Corrimento vaginal: nem tudo é IST",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H3",
+      "title": "Diferenciais não infecciosos",
+      "section": "abordagem"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Diagnóstico e interpretação dos testes",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Testagem por sítio anatômico",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis: não leia dois exames sem ler a história",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Microscopia, cultura e biologia molecular",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Janela diagnóstica e repetição",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Rastreamento, parcerias e seguimento",
+      "section": "rastreio"
+    },
+    {
+      "tag": "H3",
+      "title": "Abordagem das parcerias",
+      "section": "rastreio"
+    },
+    {
+      "tag": "H3",
+      "title": "Abstinência temporária",
+      "section": "rastreio"
+    },
+    {
+      "tag": "H3",
+      "title": "Quem merece atenção especial para gonococo e clamídia",
+      "section": "rastreio"
+    },
+    {
+      "tag": "H3",
+      "title": "Teste de cura versus retestagem",
+      "section": "rastreio"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Sífilis: da lesão primária à doença sistêmica",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento segundo o PCDT brasileiro",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Neurossífilis, sífilis ocular e otossífilis",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento sorológico e intervalo entre doses",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento imediato com apenas um teste reagente",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Alternativas em não gestantes",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando puncionar líquor?",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento",
+      "section": "sifilis"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Gonorreia e clamídia: uretra, colo, reto e faringe",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento vigente no Brasil",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Resistência e falha terapêutica",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Complicações",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Uretrite persistente ou recorrente",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Epididimite e dor escrotal",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H3",
+      "title": "Proctite",
+      "section": "gonococo-clamidia"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Tricomoníase",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação e recorrência",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Herpes genital",
+      "section": "herpes"
+    },
+    {
+      "tag": "H3",
+      "title": "Doença grave e imunossupressão",
+      "section": "herpes"
+    },
+    {
+      "tag": "H3",
+      "title": "Herpes e parto",
+      "section": "herpes"
+    },
+    {
+      "tag": "H3",
+      "title": "Aconselhamento",
+      "section": "herpes"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Outras úlceras: cancroide, LGV e donovanose",
+      "section": "outras-ulceras"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando pensar em LGV anorretal",
+      "section": "outras-ulceras"
+    },
+    {
+      "tag": "H3",
+      "title": "Diferencial morfológico de prova — use como pista, não como regra absoluta",
+      "section": "outras-ulceras"
+    },
+    {
+      "tag": "H2",
+      "title": "10A. Úlceras genitais: seis decisões clínicas comentadas",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Roteiro inicial em qualquer úlcera suspeita",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — úlcera única, aparentemente típica de sífilis, teste rápido negativo",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — várias erosões dolorosas após uma semana, sem vesículas",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — úlceras dolorosas e bubão supurativo",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — proctite grave depois de sexo anal receptivo",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — úlcera crônica indolor e friável que não melhora",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — pessoa gestante com provável sífilis e história de alergia",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando a lesão não cabe na tabela clássica",
+      "section": "ulceras-genitais-decisoes-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "11. HPV e verrugas anogenitais",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico e quando biopsiar",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento das verrugas",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "Vacinação em 2026",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "Opções terapêuticas — escolha pela lesão e pelo paciente",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "O que não fazer",
+      "section": "hpv"
+    },
+    {
+      "tag": "H3",
+      "title": "Imunossupressão",
+      "section": "hpv"
+    },
+    {
+      "tag": "H2",
+      "title": "12. HIV e hepatites virais no contexto das IST",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV agudo",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "PEP para HIV",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "Hepatite B",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "Hepatite C",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "Seguimento laboratorial após PEP",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "Hepatite B pós-exposição",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "HTLV",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H3",
+      "title": "Hepatite B, hepatite C e HIV não são a mesma trajetória",
+      "section": "hiv-hepatites"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Doença inflamatória pélvica: infecção ascendente e risco reprodutivo",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Critérios diagnósticos do PCDT",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnósticos diferenciais que não podem ser perdidos",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento ambulatorial",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando internar",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "Esquemas hospitalares",
+      "section": "dip"
+    },
+    {
+      "tag": "H3",
+      "title": "DIU e DIP",
+      "section": "dip"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Prevenção combinada",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "PrEP e PEP para HIV",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "DoxiPEP: atualização brasileira de 2026",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Vacinação contra HPV em 2026",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Indetectável = intransmissível para HIV sexual",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Preservativos e lubrificante",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção combinada em uma consulta real",
+      "section": "prevencao"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Situações especiais",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Gestação",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis na gestação",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Adolescentes",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Pessoas vivendo com HIV",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Violência sexual",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Imunossupressão",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Prática anal e proctite",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "PEP em gestantes e pessoas com potencial de engravidar",
+      "section": "especiais"
+    },
+    {
+      "tag": "H3",
+      "title": "Contracepção de emergência",
+      "section": "especiais"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — “Meu exame de urina deu negativo”",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — úlcera que desapareceu",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — corrimento + dor pélvica",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — vesículas dolorosas no primeiro episódio",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — teste treponêmico positivo, VDRL negativo",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — exposição recente ao HIV",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 7 — uretrite que não melhora",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 8 — VDRL 1:32 que cai para 1:8",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 9 — dor pélvica com NAAT cervical negativo",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Perguntas de fixação",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "18. Aprofundamento: diagnóstico por sítio, resistência e prevenção de recorrência",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Testagem extragenital",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Resistência antimicrobiana",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis: interpretar trajetória, não apenas “positivo/negativo”",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "HIV agudo e janelas",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Recorrência: distinguir persistência de reinfecção",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H3",
+      "title": "Vacinas fazem parte da consulta de IST",
+      "section": "aprofundamento-2026"
+    },
+    {
+      "tag": "H2",
+      "title": "Etiologias que não devem ser apenas listadas",
+      "section": "editorial-depth-ist"
+    },
+    {
+      "tag": "H3",
+      "title": "Úlcera genital: sífilis, herpes e diferenciais",
+      "section": "editorial-depth-ist"
+    },
+    {
+      "tag": "H3",
+      "title": "Corrimento uretral e cervicite por patógeno",
+      "section": "editorial-depth-ist"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis: estágio, tratamento e interpretação",
+      "section": "editorial-depth-ist"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis: interpretar estágio e exames",
+      "section": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Herpes genital: episódio inicial, recorrência e gestação",
+      "section": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Gonococo, clamídia e M. genitalium",
+      "section": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "ISTs ulcerativas e prevenção combinada",
+      "section": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H2",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "section": "capitulos-livro-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Sífilis: testes e estágio",
+      "section": "capitulos-livro-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Herpes e úlceras genitais",
+      "section": "capitulos-livro-infeccoes-sexualmente-transmissiveis"
+    },
+    {
+      "tag": "H3",
+      "title": "Cervicite, gonorreia e clamídia",
+      "section": "capitulos-livro-infeccoes-sexualmente-transmissiveis"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1940
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 603
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos, transmissão e história natural",
+      "chars": 2192
+    },
+    {
+      "id": "epidemiologia",
+      "title": "2. Epidemiologia, vulnerabilidade e fatores de risco",
+      "chars": 1255
+    },
+    {
+      "id": "abordagem",
+      "title": "3. Abordagem sindrômica sem perder a etiologia",
+      "chars": 3312
+    },
+    {
+      "id": "diagnostico",
+      "title": "4. Diagnóstico e interpretação dos testes",
+      "chars": 2594
+    },
+    {
+      "id": "rastreio",
+      "title": "5. Rastreamento, parcerias e seguimento",
+      "chars": 2373
+    },
+    {
+      "id": "sifilis",
+      "title": "6. Sífilis: da lesão primária à doença sistêmica",
+      "chars": 5257
+    },
+    {
+      "id": "gonococo-clamidia",
+      "title": "7. Gonorreia e clamídia: uretra, colo, reto e faringe",
+      "chars": 3844
+    },
+    {
+      "id": "tricomoníase",
+      "title": "8. Tricomoníase",
+      "chars": 1368
+    },
+    {
+      "id": "herpes",
+      "title": "9. Herpes genital",
+      "chars": 2757
+    },
+    {
+      "id": "outras-ulceras",
+      "title": "10. Outras úlceras: cancroide, LGV e donovanose",
+      "chars": 2375
+    },
+    {
+      "id": "ulceras-genitais-decisoes-2026",
+      "title": "10A. Úlceras genitais: seis decisões clínicas comentadas",
+      "chars": 7815
+    },
+    {
+      "id": "hpv",
+      "title": "11. HPV e verrugas anogenitais",
+      "chars": 3107
+    },
+    {
+      "id": "hiv-hepatites",
+      "title": "12. HIV e hepatites virais no contexto das IST",
+      "chars": 3428
+    },
+    {
+      "id": "dip",
+      "title": "13. Doença inflamatória pélvica: infecção ascendente e risco reprodutivo",
+      "chars": 2600
+    },
+    {
+      "id": "prevencao",
+      "title": "14. Prevenção combinada",
+      "chars": 3815
+    },
+    {
+      "id": "especiais",
+      "title": "15. Situações especiais",
+      "chars": 2624
+    },
+    {
+      "id": "casos",
+      "title": "16. Casos integradores",
+      "chars": 2339
+    },
+    {
+      "id": "revisao",
+      "title": "17. Revisão de alto rendimento",
+      "chars": 3161
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "18. Aprofundamento: diagnóstico por sítio, resistência e prevenção de recorrência",
+      "chars": 2796
+    },
+    {
+      "id": "editorial-depth-ist",
+      "title": "Etiologias que não devem ser apenas listadas",
+      "chars": 1293
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 1402
+    },
+    {
+      "id": "luria-livro-etiologias-infeccoes-sexualmente-transmissiveis",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2146
+    },
+    {
+      "id": "capitulos-livro-infeccoes-sexualmente-transmissiveis",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 979
+    }
+  ],
+  "references": [
+    "Brasil. Ministério da Saúde. PCDT para Atenção Integral às Pessoas com IST, anexo alterado em 2024; página atualizada em 2025.",
+    "Brasil. Ministério da Saúde / Conitec. PCDT para Profilaxia Pós-Exposição (PEP) de Risco à Infecção pelo HIV, IST e Hepatites Virais. versão 2024.",
+    "Brasil. Ministério da Saúde. PCDT para Profilaxia Pré-Exposição (PrEP) Oral à Infecção pelo HIV. 2025.",
+    "CONITEC. Relatório de Recomendação nº 1089 — doxiciclina como profilaxia pós-exposição para clamídia e sífilis. 2026.",
+    "Ministério da Saúde. Ministério oferece nova estratégia para prevenção de clamídia e sífilis. 2026.",
+    "Ministério da Saúde. Calendário Nacional de Vacinação / HPV. 2026.",
+    "Ministério da Saúde. Portal de apoio à decisão clínica — PEP. 2026.",
+    "World Health Organization. Sexually transmitted infections — Fact sheet. 2025.",
+    "Brasil. Ministério da Saúde. Nota Técnica / atualização sobre intervalo entre doses de penicilina para sífilis em gestantes. 2023, vigente em 2026.",
+    "Brasil. Ministério da Saúde. Portal de apoio à decisão clínica — Sífilis e PEP. versão consultada em 2026.",
+    "Brasil. Ministério da Saúde. Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE). 6ª ed.",
+    "Revisão clínica LURIA: outubro de 2026. Material educacional. Condutas devem ser aplicadas com avaliação clínica individual e conferência de atualizações do Ministério da Saúde quando houver revisão do PCDT."
+  ],
+  "reference_links": [
+    {
+      "label": "PCDT para Atenção Integral às Pessoas com IST, anexo alterado em 2024; página atualizada em 2025.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=16749",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=17054",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=15820",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=30265",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=32192",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=3691",
+      "in_references": false
+    },
+    {
+      "label": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (anexo alterado em 2024, página atualizada em 2025)",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+      "in_references": false
+    },
+    {
+      "label": "CDC, úlceras genitais: abordagem diagnóstica",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "in_references": false
+    },
+    {
+      "label": "CDC, herpes genital",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=4151",
+      "in_references": false
+    },
+    {
+      "label": "Fonte clínica",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=16733",
+      "in_references": false
+    },
+    {
+      "label": "PCDT para Atenção Integral às Pessoas com IST, anexo alterado em 2024; página atualizada em 2025.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-13.webp",
+      "alt": "Sífilis secundária: lesões palmares",
+      "section": "sifilis",
+      "caption": "Sífilis secundária: lesões palmares · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-14.webp",
+      "alt": "Sífilis primária: cancro vulvar",
+      "section": "sifilis",
+      "caption": "Sífilis primária: cancro vulvar · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-15.webp",
+      "alt": "Herpes genital feminino",
+      "section": "herpes",
+      "caption": "Herpes genital feminino · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-16.webp",
+      "alt": "Herpes genital: lesões vulvares",
+      "section": "herpes",
+      "caption": "Herpes genital: lesões vulvares · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-19.webp",
+      "alt": "Cancro mole",
+      "section": "outras-ulceras",
+      "caption": "Cancro mole · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-20.webp",
+      "alt": "Cancro mole com bubão inguinal",
+      "section": "outras-ulceras",
+      "caption": "Cancro mole com bubão inguinal · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-17.webp",
+      "alt": "Condiloma acuminado",
+      "section": "hpv",
+      "caption": "Condiloma acuminado · Fonte clínica",
+      "decorative": false
+    },
+    {
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-18.webp",
+      "alt": "Condiloma perianal",
+      "section": "hpv",
+      "caption": "Condiloma perianal · Fonte clínica",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 17,
+  "paragraphs": 128,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 229,
+      "status": "approved",
+      "section": "sifilis",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-13.webp"
+    },
+    {
+      "id": 230,
+      "status": "approved",
+      "section": "sifilis",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-14.webp"
+    },
+    {
+      "id": 231,
+      "status": "approved",
+      "section": "herpes",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-15.webp"
+    },
+    {
+      "id": 232,
+      "status": "approved",
+      "section": "herpes",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-16.webp"
+    },
+    {
+      "id": 233,
+      "status": "approved",
+      "section": "hpv",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-17.webp"
+    },
+    {
+      "id": 234,
+      "status": "approved",
+      "section": "hpv",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-18.webp"
+    },
+    {
+      "id": 235,
+      "status": "approved",
+      "section": "outras-ulceras",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-19.webp"
+    },
+    {
+      "id": 236,
+      "status": "approved",
+      "section": "outras-ulceras",
+      "source_license": "Domínio público / uso educacional com atribuição CDC",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-20.webp"
+    },
+    {
+      "id": 259,
+      "status": "pending",
+      "section": "sifilis",
+      "source_license": "CDC PHIL, domínio público"
+    },
+    {
+      "id": 260,
+      "status": "pending",
+      "section": "sifilis",
+      "source_license": "CDC PHIL, domínio público"
+    },
+    {
+      "id": 261,
+      "status": "pending",
+      "section": "sifilis",
+      "source_license": "Wikimedia Commons; licença na fonte"
+    },
+    {
+      "id": 262,
+      "status": "pending",
+      "section": "diagnostico",
+      "source_license": "CC BY-SA 4.0, Graham Beards"
+    },
+    {
+      "id": 263,
+      "status": "pending",
+      "section": "tricomoníase",
+      "source_license": "Licença CC, Graham Beards"
+    },
+    {
+      "id": 264,
+      "status": "pending",
+      "section": "tricomoníase",
+      "source_license": "CDC PHIL, domínio público"
+    },
+    {
+      "id": 265,
+      "status": "pending",
+      "section": "hpv",
+      "source_license": "Wikimedia Commons, Nephron, licença CC"
+    },
+    {
+      "id": 266,
+      "status": "pending",
+      "section": "hpv",
+      "source_license": "Wikimedia Commons, Nephron, licença CC"
+    },
+    {
+      "id": 267,
+      "status": "pending",
+      "section": "hpv",
+      "source_license": "Wikimedia Commons, Nephron, licença CC"
+    },
+    {
+      "id": 268,
+      "status": "pending",
+      "section": "especiais",
+      "source_license": "CC BY 4.0, Gandikota Raghurama Rao"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": false,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "sifilis",
+      "text": "Quando penicilina realmente não puder ser utilizada, o PCDT admite alternativas em não gestantes: para sífilis recente, doxiciclina 100 mg VO a cada 12 horas por 15 dias; para sífilis tardia ou de duração ignorada, doxiciclina 100 mg VO a cada 12 horas por 30 dias. Essas alternativas exigem adesão e seguimento mais cuidadosos e não substituem penicilina na gestação.",
+      "pattern": 0
+    },
+    {
+      "section": "herpes",
+      "text": "Em lesões extensas, doença visceral, retenção urinária importante, comprometimento neurológico ou imunossupressão relevante, pode ser necessário tratamento intravenoso e internação. O PCDT utiliza aciclovir IV 5–10 mg/kg a cada 8 horas em imunossuprimidos com doença extensa, ajustando para função renal.",
+      "pattern": 0
+    },
+    {
+      "section": "ulceras-genitais-decisoes-2026",
+      "text": "Paciente de 24 anos relata ferida genital há cinco dias, de bordas regulares, pouco dolorosa e com linfonodo inguinal. Teste treponêmico rápido inicial é não reagente, e o VDRL também. Interpretação: resultado negativo na janela precoce não exclui sífilis primária; documente a cronologia, considere coleta direta de lesão quando disponível e repita a sorologia no intervalo orientado pelo protocolo. Avalie HSV, HIV e outras IST. Conforme a suspeita e possibilidade de seguimento, está indicado considerar tratamento presuntivo precoce de sífilis infecciosa em vez de aguardar soroconversão. Uma resposta negativa isolada não autoriza alta definitiva.",
+      "pattern": 0
+    },
+    {
+      "section": "ulceras-genitais-decisoes-2026",
+      "text": "Paciente de 30 anos apresenta tenesmo, dor retal, secreção, sangramento e teste molecular retal positivo para Chlamydia trachomatis. Interpretação: a possibilidade de linfogranuloma venéreo (LGV, sorotipos L1–L3) muda o raciocínio: em proctocolite compatível, o manejo pode exigir doxiciclina por 21 dias, conforme protocolo e contraindicações, e não simplesmente o esquema de sete dias usado para outras infecções clamidianas. Avalie gonorreia retal, sífilis, HIV, doença inflamatória intestinal e outras causas, além do cuidado das parcerias. A forma anorretal pode ocorrer sem úlcera genital visível.",
+      "pattern": 0
+    },
+    {
+      "section": "epidemiologia",
+      "text": "A ausência desses fatores não exclui IST. Da mesma forma, ter um fator de risco não autoriza presumir diagnóstico. O objetivo da história sexual é ajustar probabilidade pré-teste, escolher sítios de coleta e construir prevenção individualizada.",
+      "pattern": 1
+    },
+    {
+      "section": "abordagem",
+      "text": "O manejo sindrômico foi desenhado para permitir tratamento imediato quando há síndrome típica e risco de complicação ou perda de seguimento. Ele não significa abandonar diagnóstico etiológico. Sempre que disponível e clinicamente útil, colha testes antes ou no início do tratamento, sem atrasar terapia quando o custo da espera for alto.",
+      "pattern": 1
+    },
+    {
+      "section": "abordagem",
+      "text": "Corrimento vaginal é uma síndrome, não um diagnóstico. Candidíase vulvovaginal e vaginose bacteriana são extremamente frequentes e não são classificadas como IST clássicas; tricomoníase é IST. Cervicite por gonococo/clamídia pode coexistir e, em muitos casos, o aspecto do corrimento isoladamente não permite separar as causas.",
+      "pattern": 1
+    },
+    {
+      "section": "abordagem",
+      "text": "Se os testes são negativos ou o quadro é recorrente, pense em vaginite atrófica, vaginite inflamatória descamativa, dermatite de contato, líquen, psoríase, corpo estranho, excesso de muco fisiológico e irritantes químicos. Repetir antimicrobianos sem redefinir o diagnóstico é uma causa frequente de persistência dos sintomas.",
+      "pattern": 1
+    },
+    {
+      "section": "ulceras-genitais-decisoes-2026",
+      "text": "Referências de suporte: Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (anexo alterado em 2024, página atualizada em 2025); CDC, úlceras genitais: abordagem diagnóstica; CDC, herpes genital. As fontes dos exames clínicos e das oito imagens existentes são apresentadas nas legendas específicas da apostila.",
+      "pattern": 2
+    },
+    {
+      "section": "hpv",
+      "text": "No SUS, a rotina para 9–14 anos utiliza dose única. Pessoas imunodeprimidas seguem esquemas de três doses (0, 2 e 6 meses) e há recomendações específicas para violência sexual, papilomatose respiratória recorrente e pessoas em PrEP de 15 a 45 anos. Em 2026, o Ministério da Saúde mantém estratégia de resgate para adolescentes e jovens de 15–19 anos não vacinados até 31 de dezembro.",
+      "pattern": 2
+    },
+    {
+      "section": "dip",
+      "text": "O PCDT inclui ceftriaxona IV + doxiciclina + metronidazol e alternativas como clindamicina + gentamicina ou ampicilina/sulbactam + doxiciclina. Após melhora clínica, a terapia pode migrar para via oral, completando 14 dias.",
+      "pattern": 2
+    },
+    {
+      "section": "prevencao",
+      "text": "O calendário nacional utiliza dose única para meninas e meninos de 9–14 anos. A estratégia de resgate para não vacinados de 15–19 anos foi prorrogada até 31 de dezembro de 2026. Pessoas imunodeprimidas, vítimas de violência sexual, usuários de PrEP e pessoas com papilomatose respiratória recorrente seguem esquemas específicos.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "mapa-mental",
+      "text": "O caminho clínico é reconhecer a síndrome, localizar o sítio exposto, estimar gravidade e então definir testagem, tratamento e prevenção."
+    },
+    {
+      "section": "conceitos",
+      "text": "Infecções sexualmente transmissíveis são infecções em que a via sexual tem papel epidemiológico relevante. O termo IST é preferível a “DST” porque a pessoa pode estar infectada, transmitir o agente e desenvolver complicações mesmo sem manifestações clínicas. Esse detalhe muda a prática: rastreamento e prevenção não podem depender apenas de sintomas."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [],
+    "total_article_images": 8
+  }
+}

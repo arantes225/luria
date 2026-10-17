@@ -1,0 +1,386 @@
+{
+  "sha": "84ae1f2d2626a407b200498a69ea2e7c45ace487",
+  "path": "apostilas/_rascunhos/lote-11-aula-232-coagulopatias-trombofilias-hemoterapia.md",
+  "branches": [
+    "origin/editorial/lote-11-demensias-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--84ae1f2d26",
+  "title": "LURIA — Apostila 232: Coagulopatias, trombofilias e hemoterapia",
+  "format": ".md",
+  "chars_estimated": 89720,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 232: Coagulopatias, trombofilias e hemoterapia"
+    },
+    {
+      "title": "Etapa zero — auditoria comparativa e escopo"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "PARTE I — FISIOLOGIA, SANGRAMENTO E COAGULOGRAMA"
+    },
+    {
+      "title": "1. Por que o paciente sangra — e por que nem todo coagulograma alterado significa sangramento?"
+    },
+    {
+      "title": "1.1 Hemostasia primária: endotélio, VWF e plaquetas"
+    },
+    {
+      "title": "1.2 Hemostasia secundária: cascata e modelo celular"
+    },
+    {
+      "title": "1.3 Fibrinólise"
+    },
+    {
+      "title": "2. Perguntas da anamnese que mudam a hipótese"
+    },
+    {
+      "title": "3. Coagulograma em contexto: tabela de interpretação"
+    },
+    {
+      "title": "3.1 Quando repetir e como evitar erro pré-analítico"
+    },
+    {
+      "title": "3.2 Teste de mistura 1:1"
+    },
+    {
+      "title": "3.3 Plaquetas baixas e sinais que exigem urgência"
+    },
+    {
+      "title": "4. Hemostasia especial e exames de segunda linha"
+    },
+    {
+      "title": "PARTE II — COAGULOPATIAS E TROMBOCITOPENIAS"
+    },
+    {
+      "title": "5. Doença de von Willebrand (DVW)"
+    },
+    {
+      "title": "5.1 Tipos e interpretação"
+    },
+    {
+      "title": "5.2 Como investigar"
+    },
+    {
+      "title": "5.3 Tratamento didático"
+    },
+    {
+      "title": "6. Hemofilias congênitas"
+    },
+    {
+      "title": "6.1 Gravidade e apresentações"
+    },
+    {
+      "title": "6.2 Investigação e confirmação"
+    },
+    {
+      "title": "6.3 Profilaxia versus tratamento episódico"
+    },
+    {
+      "title": "6.4 Urgências hemofílicas"
+    },
+    {
+      "title": "7. Plaquetopenias: raciocínio por mecanismo"
+    },
+    {
+      "title": "7.1 Trombocitopenia imune (PTI)"
+    },
+    {
+      "title": "7.2 Púrpura trombocitopênica trombótica (PTT)"
+    },
+    {
+      "title": "7.3 Síndrome hemolítico-urêmica e outras microangiopatias"
+    },
+    {
+      "title": "7.4 Coagulação intravascular disseminada (CIVD)"
+    },
+    {
+      "title": "7.5 Trombocitopenia induzida por heparina (HIT)"
+    },
+    {
+      "title": "PARTE III — TROMBOFILIAS E ESTADOS PRÓ-TROMBÓTICOS"
+    },
+    {
+      "title": "8. Conceito, prevalência clínica e o problema do rastreio indiscriminado"
+    },
+    {
+      "title": "8.1 Principais trombofilias hereditárias"
+    },
+    {
+      "title": "8.2 Quando testar — ASH 2023"
+    },
+    {
+      "title": "8.3 Quando NÃO testar e as armadilhas do timing"
+    },
+    {
+      "title": "9. Síndrome antifosfolípide (SAF)"
+    },
+    {
+      "title": "9.1 Tratamento trombótico e segurança dos DOACs"
+    },
+    {
+      "title": "9.2 SAF obstétrica"
+    },
+    {
+      "title": "10. TEV na prática: interface com trombofilia"
+    },
+    {
+      "title": "11. Anticoagulantes, reversão e interações críticas"
+    },
+    {
+      "title": "PARTE IV — HEMOTERAPIA, COMPONENTES E SEGURANÇA"
+    },
+    {
+      "title": "12. Princípio central: transfundir por benefício clínico, não para “normalizar papel”"
+    },
+    {
+      "title": "12.1 Antes da transfusão"
+    },
+    {
+      "title": "12.2 Concentrado de hemácias (CH)"
+    },
+    {
+      "title": "12.3 Concentrado de plaquetas"
+    },
+    {
+      "title": "12.4 Plasma fresco congelado (PFC)"
+    },
+    {
+      "title": "12.5 Crioprecipitado e fibrinogênio"
+    },
+    {
+      "title": "12.6 Seleção por situação clínica"
+    },
+    {
+      "title": "13. Compatibilidade ABO/Rh e imuno-hematologia"
+    },
+    {
+      "title": "13.1 Produto leucorreduzido, irradiado, lavado e fenotipado"
+    },
+    {
+      "title": "14. Reações transfusionais e hemovigilância"
+    },
+    {
+      "title": "14.1 Reação hemolítica aguda"
+    },
+    {
+      "title": "14.2 Reação febril não hemolítica e alergia"
+    },
+    {
+      "title": "14.3 TACO versus TRALI: não confundir"
+    },
+    {
+      "title": "14.4 Contaminação bacteriana"
+    },
+    {
+      "title": "14.5 Complicações tardias"
+    },
+    {
+      "title": "15. Transfusão maciça, trauma e hemorragia obstétrica — interface"
+    },
+    {
+      "title": "15.1 Segurança no pós-parto"
+    },
+    {
+      "title": "15.2 Segurança na dengue"
+    },
+    {
+      "title": "PARTE V — ALGORITMOS DE DECISÃO E ARMADILHAS"
+    },
+    {
+      "title": "16. Algoritmo A — Sangramento sem causa óbvia"
+    },
+    {
+      "title": "17. Algoritmo B — TEV e dúvida sobre trombofilia"
+    },
+    {
+      "title": "18. Algoritmo C — Reação transfusional à beira leito"
+    },
+    {
+      "title": "19. Algoritmo D — Hemorragia maciça"
+    },
+    {
+      "title": "20. Pérolas de prova e segurança"
+    },
+    {
+      "title": "21. Casos clínicos originais: do laboratório à decisão"
+    },
+    {
+      "title": "Caso 1 — Menorragia desde a adolescência e coagulograma normal"
+    },
+    {
+      "title": "Caso 2 — Hemartrose repetida em menino sem história familiar"
+    },
+    {
+      "title": "Caso 3 — Paciente com emicizumabe, trauma craniano e TTPa aparentemente normal"
+    },
+    {
+      "title": "Caso 4 — Plaquetopenia, esquizócitos e confusão mental: PTT até prova em contrário"
+    },
+    {
+      "title": "Caso 5 — Plaquetas caem após heparina, apesar de trombose nova"
+    },
+    {
+      "title": "Caso 6 — Sepse e sangramento em múltiplos sítios"
+    },
+    {
+      "title": "Caso 7 — Jovem com TVP provocada e solicitação de painel completo"
+    },
+    {
+      "title": "Caso 8 — AVC e SAF triplo-positiva: risco com anticoagulante oral direto"
+    },
+    {
+      "title": "Caso 9 — Reação durante transfusão: hemólise aguda ou sepse?"
+    },
+    {
+      "title": "Caso 10 — Dispneia após múltiplas bolsas: TACO versus TRALI"
+    },
+    {
+      "title": "Caso 11 — PTT, dengue e a armadilha do “valor de plaquetas”"
+    },
+    {
+      "title": "Caso 12 — Cirurgia eletiva e anticoagulante lúpico sem sangramento"
+    },
+    {
+      "title": "22. Questões autorais comentadas — estilo residência"
+    },
+    {
+      "title": "Questão 1 — Hemostasia e fator von Willebrand"
+    },
+    {
+      "title": "Questão 2 — Interpretação de TP/TTPa"
+    },
+    {
+      "title": "Questão 3 — DVW e desmopressina"
+    },
+    {
+      "title": "Questão 4 — Hemofilia com inibidor e emicizumabe"
+    },
+    {
+      "title": "Questão 5 — PTT imune"
+    },
+    {
+      "title": "Questão 6 — HIT"
+    },
+    {
+      "title": "Questão 7 — CIVD versus PTT"
+    },
+    {
+      "title": "Questão 8 — Quando pedir teste de trombofilia"
+    },
+    {
+      "title": "Questão 9 — SAF trombótica"
+    },
+    {
+      "title": "Questão 10 — Transfusão de hemácias"
+    },
+    {
+      "title": "Questão 11 — Plaquetas e punção lombar"
+    },
+    {
+      "title": "Questão 12 — Dengue"
+    },
+    {
+      "title": "Questão 13 — Reação transfusional aguda"
+    },
+    {
+      "title": "Questão 14 — TACO e TRALI"
+    },
+    {
+      "title": "Questão 15 — Plaquetas em PTT versus PTI"
+    },
+    {
+      "title": "Questão 16 — Plasma na cirrose"
+    },
+    {
+      "title": "23. Fluxos de checagem independente dos casos e questões"
+    },
+    {
+      "title": "23.1 Ajustes editoriais previstos"
+    },
+    {
+      "title": "23.2 Integração com o ecossistema LURIA"
+    },
+    {
+      "title": "24. Curadoria de imagens — propostas, não incorporadas"
+    },
+    {
+      "title": "25. Leituras prioritárias e referências públicas"
+    },
+    {
+      "title": "26. Pendências bloqueadoras de certificação"
+    }
+  ],
+  "reference_entries": [
+    "1. MINISTÉRIO DA SAÚDE (BRASIL). **Guia para Uso de Hemocomponentes**, 2ª edição; catálogo oficial, consultado 15/10/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/publicacoes/hemoterapia .",
+    "2. MINISTÉRIO DA SAÚDE (BRASIL). **Nota Técnica Conjunta 225/2026-CGSH/DAET/SAES/MS: prevenção, diagnóstico, notificação e manejo de TACO**, publicada 23/09/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-225-2026-cgsh-daet-saes-ms.pdf/view .",
+    "3. MINISTÉRIO DA SAÚDE (BRASIL). **Regulamentos técnicos específicos da hemoterapia**, incluindo Portaria GM/MS 11.685/2026. https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/legislacao/regulamentos-tecnicos-especificos-hemoterapia/ .",
+    "4. CARSON JL et al. **Red Blood Cell Transfusion: 2023 AABB International Guidelines.** JAMA. 2023;330:1892–1902. https://doi.org/10.1001/jama.2023.12914 .",
+    "5. METCALF RA et al. **Platelet Transfusion: 2025 AABB and ICTMG International Clinical Practice Guidelines.** JAMA. 2025;334:606–617. https://doi.org/10.1001/jama.2025.7529 .",
+    "6. SRIVASTAVA A et al. **WFH Guidelines for the Management of Hemophilia**, 3rd ed. Haemophilia. 2020;26(Suppl 6):1–158. https://doi.org/10.1111/hae.14046 .",
+    "7. MINISTÉRIO DA SAÚDE (BRASIL). **Protocolo de uso de emicizumabe para hemofilia A moderada e grave com inibidores**, aprovado em outubro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hemofilia-a-2013-uso-do-emicizumabe-protocolo-de-uso/view .",
+    "8. JAMES PD et al. **ASH ISTH NHF WFH 2021 guidelines on the diagnosis of von Willebrand disease.** Blood Adv. 2021;5:280–300. https://doi.org/10.1182/bloodadvances.2020003265 .",
+    "9. CONNELL NT et al. **ASH ISTH NHF WFH 2021 guidelines on the management of von Willebrand disease.** Blood Adv. 2021;5:301–325. https://doi.org/10.1182/bloodadvances.2020003264 .",
+    "10. MIDDLEDORP S et al. **American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing.** Blood Adv. 2023;7:7101–7138. https://pubmed.ncbi.nlm.nih.gov/37195076/ .",
+    "11. TEKTONIDOU MG et al. **EULAR recommendations for management of antiphospholipid syndrome in adults.** Ann Rheum Dis. 2019;78:1296–1304. https://doi.org/10.1136/annrheumdis-2019-215213 .",
+    "12. ZHENG XL et al. **2025 focused update of the 2020 ISTH guidelines for management of thrombotic thrombocytopenic purpura.** J Thromb Haemost. 2025;23:3711–3732. https://pubmed.ncbi.nlm.nih.gov/40533296/ .",
+    "- [x] Lote e tema conferidos com inventário; nenhum rascunho #232 existente no caminho visado.",
+    "- [x] Etapa zero do Drive com **quatro fontes complementares efetivamente lidas**; procedência institucional dos resumos não comprovada e não foi transcrito material.",
+    "- [x] Diretrizes oficiais consultadas para hemofilia, DVW, trombofilia, plaquetas, hemácias, PTT e TACO.",
+    "- [x] Núcleo principal escrito com raciocínio sindrômico, fisiopatologia, laboratoriais, manejo e quadros práticos.",
+    "- [ ] Mais de 90 mil caracteres **brutos**, sem auditoria conclusiva de ≥60.000 **caracteres didáticos úteis**; revisar densidade e redundâncias.",
+    "- [x] Incluídos 12 casos e 16 questões comentadas (alternativas A–E); **validação independente de gabaritos ainda pendente**.",
+    "- [ ] Auditoria farmacológica da integralidade de doses, apresentações e interações via PCDT/bulas.",
+    "- [ ] Conferência de disponibilidade brasileira e rotinas específicas: fator, emicizumabe, caplacizumabe, antídotos e hemoderivados.",
+    "- [ ] Selecionar ≥10 imagens candidatas, verificar licença e submeter ao Admin.",
+    "- [ ] Benchmark externo equivalente com comparação completa e auditoria de coesão de todas as partes.",
+    "- [ ] Revisão médica especializada, checagem dos critérios de cada diretriz em populações especiais, integração HTML e testes desktop/PWA.",
+    "- [ ] Manter **NÃO PUBLICAR — não fazer merge, deploy ou alterar a main**."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/publicacoes/hemoterapia",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-225-2026-cgsh-daet-saes-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/composicao/saes/doacao-de-sangue/legislacao/regulamentos-tecnicos-especificos-hemoterapia/",
+    "https://doi.org/10.1001/jama.2023.12914",
+    "https://doi.org/10.1001/jama.2025.7529",
+    "https://doi.org/10.1111/hae.14046",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hemofilia-a-2013-uso-do-emicizumabe-protocolo-de-uso/view",
+    "https://doi.org/10.1182/bloodadvances.2020003265",
+    "https://doi.org/10.1182/bloodadvances.2020003264",
+    "https://pubmed.ncbi.nlm.nih.gov/37195076/",
+    "https://doi.org/10.1136/annrheumdis-2019-215213",
+    "https://pubmed.ncbi.nlm.nih.gov/40533296/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Comparação crítica baseada em fontes públicas atualizadas:** - Hemofilia e von Willebrand: critérios e terapias atuais devem considerar WFH 2020 e diretrizes ASH/ISTH/NHF/WFH 2021; **desmopressina não é universal**, especialmente na DVW 2B e tipo 3. - Trombofilias: ASH 2023 recomenda **não investigar indiscriminadamente** trombofilia hereditária após todo TEV, e não fazer rastreio da população geral antes do anticoncepcional combinado. Um teste só se justifica quando muda decisão. - Plaquetas: AABB/ICTMG **2025** redefiniu limiares em contextos específicos (por exemplo, punção lombar <20 ×10⁹/L, CVC em sítio compressível <10 ×10⁹/L); **não "
+    },
+    {
+      "text": "| Aqui é obrigatório | Em outra aula deverá ficar aprofundado | Conexão essencial | |---|---|---| | Hemostasia, coagulograma, sangramento mucoso/profundo e diferencial | Detalhamento de anemia hemolítica hereditária (#231) | Hemólise pós-transfusão e paciente politransfundido | | Hemofilias, von Willebrand, PTI, PTT, CIVD, trombocitopenias | Oncologia e microangiopatias secundárias | Emergências e encaminhamento | | Trombofilia hereditária, SAF, critérios de testagem | Trombofilia gestacional em obstetrícia | Saúde reprodutiva e HBPM na gestação | | Terapia transfusional e hemovigilância | Choque hemorrágico, HPP, trauma cirúrgico | Ativar he"
+    },
+    {
+      "text": "Valores de referência, interferências e sensibilidade dos reagentes variam entre laboratórios. **Nenhuma linha da tabela é diagnóstico definitivo.** Um INR de 2,2 em paciente usando varfarina pode estar dentro de alvo terapêutico conforme indicação, ao passo que o mesmo número em pessoa sem anticoagulação exige investigação."
+    },
+    {
+      "text": "**Desmopressina (DDAVP)** promove liberação endotelial de VWF e FVIII; pode beneficiar principalmente DVW tipo 1 em pacientes responsivos. Resposta deve ser confirmada/estimada com base em subtipagem e teste de resposta quando recomendado. Ela é **contraindicada/ineficaz** em tipo 3 e geralmente contraindicada em tipo 2B; restrições adicionais incluem cardiopatia ativa, hiponatremia, risco de convulsão e crianças pequenas. Monitorar balanço hídrico e risco de hiponatremia; repetição pode causar taquifilaxia."
+    },
+    {
+      "text": "| Atividade basal de fator | Classificação convencional | Apresentação provável | |---|---|---| | <1% | Grave | Hemartrose e sangramento espontâneo | | 1–5% | Moderada | Sangramento após traumas menores ou espontâneo em alguns | | >5% e <40% | Leve | Sangramento com cirurgia, extração, trauma; diagnóstico tardio possível |"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

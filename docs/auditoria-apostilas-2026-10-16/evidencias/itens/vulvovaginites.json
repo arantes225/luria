@@ -1,0 +1,883 @@
+{
+  "key": "vulvovaginites",
+  "kind": "apostila-html",
+  "path": "apostilas/vulvovaginites/index.html",
+  "html_path": "apostilas/vulvovaginites/index.html",
+  "title": "Vulvovaginites",
+  "source_sha256": "e709fc7af0ce78de9330446259e611ec865d72f35c817b1cd63706883dd162bf",
+  "html_sha256": "e709fc7af0ce78de9330446259e611ec865d72f35c817b1cd63706883dd162bf",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos essenciais",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "1.1 Vulva, vagina e colo: três origens possíveis",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "1.2 Secreção fisiológica não é infecção",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiologia vaginal e microbiota",
+      "section": "microbiota"
+    },
+    {
+      "tag": "H3",
+      "title": "2.1 Epitélio, estrogênio e lactobacilos",
+      "section": "microbiota"
+    },
+    {
+      "tag": "H3",
+      "title": "2.2 O que observamos na microbiota?",
+      "section": "microbiota"
+    },
+    {
+      "tag": "H3",
+      "title": "2.3 Mudanças fisiológicas ao longo da vida",
+      "section": "microbiota"
+    },
+    {
+      "tag": "H3",
+      "title": "2.4 O pH é uma pista, não uma resposta",
+      "section": "microbiota"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Avaliação inicial do corrimento",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.1 Primeiro: localize a queixa",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.2 Depois: faça a anamnese dirigida",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.3 Por último: exame físico e testes dirigidos",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.4 Coleta e interpretação: o que cada exame realmente responde?",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.5 Resultados contraditórios: como não errar na prova",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "3.6 Quando a síndrome deixa de ser apenas vaginite",
+      "section": "clinica-diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Candidíase vulvovaginal",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Conceito e epidemiologia",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Fisiopatologia",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Quadro clínico",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Tradução clínica",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Exames e identificação da espécie",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Quando os sintomas não combinam com fungo",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Candidíase de repetição: quando suspeitar e como confirmar",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "O que torna a candidíase complicada?",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Tratamento — episódios não complicados",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Episódio grave: tratamento inicial",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Tratamento escalonado da candidíase recorrente por C. albicans",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Espécies não albicans e resistência: por que o esquema muda?",
+      "section": "candida"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção e seguimento",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Consequências clínicas e prognóstico",
+      "section": "candida"
+    },
+    {
+      "tag": "H4",
+      "title": "Quatro episódios de prurido em um ano: e agora?",
+      "section": "candida"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Vaginose bacteriana",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Conceito e epidemiologia",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Fisiopatologia",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Por que o pH sobe e o odor aparece?",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Biofilme e recorrência",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Quadro clínico",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Clue cells",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Critérios de Amsel, Nugent e testes moleculares",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Resultados discordantes: quando a hipótese não fecha",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "O que significa vaginose de repetição?",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Quando a vaginose retorna: primeiro episódio versus múltiplas recorrências",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Tratamento do parceiro: por que a resposta de prova pode mudar?",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção e seguimento",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Complicações e associações importantes",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Gestação: o que é associação e o que é conduta?",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Quando considerar encaminhamento",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H4",
+      "title": "Gestante com odor vaginal: tratar ou só acompanhar?",
+      "section": "vaginose"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Tricomoníase",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Conceito e epidemiologia",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Quadro clínico",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "O que procurar no exame ginecológico?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Diagnóstico",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "Por que a microscopia pode ser negativa?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "NAAT, cultura e citologia: quando utilizar?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "PCDT brasileiro e CDC: por que existem duas respostas?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "Por que a via sistêmica é necessária?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H3",
+      "title": "Prevenção e seguimento",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "Complicações: gestação, transmissão e coinfecções",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "Persistência ou recidiva: como a conduta muda?",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H4",
+      "title": "Tricomoníase tratada, mas o teste voltou positivo",
+      "section": "tricomoníase"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Causas não infecciosas e diferenciais",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando a inflamação existe, mas o agente habitual não aparece",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Um quadro comparativo não substitui o exame",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Situações especiais do diagnóstico diferencial",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Vaginite inflamatória descamativa: quando pensar?",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Vaginite aeróbia: mais inflamação e menos lactobacilos",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Síndrome geniturinária da menopausa",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Dermatite de contato e dermatoses vulvares",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Vaginose citolítica: reconhecer a controvérsia",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Infecções mistas e amostras discordantes",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H4",
+      "title": "Corrimento persistente com testes convencionais negativos",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Revisão clínica e casos",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Armadilhas de prova e prática",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "O que não posso esquecer",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Casos para treinar as decisões",
+      "section": "revisao"
+    },
+    {
+      "tag": "H3",
+      "title": "Mini caso integrado",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental de revisão",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Microbiota",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Candidíase",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Vaginose",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "Tricomoníase",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "Quadro comparativo final",
+      "section": "luria-quadro-visual-vaginites"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências",
+      "section": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 571
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos essenciais",
+      "chars": 1235
+    },
+    {
+      "id": "microbiota",
+      "title": "2. Fisiologia vaginal e microbiota",
+      "chars": 2959
+    },
+    {
+      "id": "clinica-diagnostico",
+      "title": "3. Avaliação inicial do corrimento",
+      "chars": 5688
+    },
+    {
+      "id": "candida",
+      "title": "4. Candidíase vulvovaginal",
+      "chars": 16762
+    },
+    {
+      "id": "vaginose",
+      "title": "5. Vaginose bacteriana",
+      "chars": 13475
+    },
+    {
+      "id": "tricomoníase",
+      "title": "6. Tricomoníase",
+      "chars": 12534
+    },
+    {
+      "id": "diferenciais",
+      "title": "7. Causas não infecciosas e diferenciais",
+      "chars": 9394
+    },
+    {
+      "id": "revisao",
+      "title": "8. Revisão clínica e casos",
+      "chars": 4407
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental de revisão",
+      "chars": 573
+    },
+    {
+      "id": "luria-quadro-visual-vaginites",
+      "title": "Quadro comparativo final",
+      "chars": 1178
+    }
+  ],
+  "references": [
+    "Ministério da Saúde. PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis. Ministério da Saúde, atualização consultável no portal oficial.",
+    "Brasil. Protocolo Brasileiro para Infecções que Causam Corrimento Vaginal. Epidemiologia e Serviços de Saúde, 2021.",
+    "FEBRASGO. Vaginites e Vaginoses. Protocolos assistenciais.",
+    "CDC. Vulvovaginal Symptoms — STI Treatment Guidelines. Avaliação de pH, KOH e microscopia.",
+    "CDC. Urethritis and Cervicitis — STI Treatment Guidelines. Diferenciação de secreção endocervical.",
+    "CDC. Bacterial Vaginosis — STI Treatment Guidelines.",
+    "CDC. Vulvovaginal Candidiasis — STI Treatment Guidelines.",
+    "CDC. Trichomoniasis — STI Treatment Guidelines.",
+    "ACOG. Concurrent Sexual Partner Therapy to Prevent Bacterial Vaginosis Recurrence. Clinical Practice Update, 2025.",
+    "Vodstrcil LA et al. Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis. N Engl J Med. 2025;392:947–957. DOI: 10.1056/NEJMoa2405404.",
+    "Reichman O, Sobel JD. Desquamative inflammatory vaginitis. Best Pract Res Clin Obstet Gynaecol. 2014.",
+    "Rosati D et al. Vulvovaginal Candidiasis: A Current Understanding and Burning Questions. J Fungi.",
+    "Kraut R et al. Scoping review of cytolytic vaginosis literature. PLOS ONE. 2023;18:e0280954."
+  ],
+  "reference_links": [
+    {
+      "label": "PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf",
+      "in_references": true
+    },
+    {
+      "label": "Protocolo Brasileiro para Infecções que Causam Corrimento Vaginal.",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2021/epidemiologia-e-servicos-de-saude/@@download/file/041_ress_ist.pdf",
+      "in_references": true
+    },
+    {
+      "label": "Vulvovaginal Symptoms — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/vaginal-discharge.htm",
+      "in_references": true
+    },
+    {
+      "label": "Urethritis and Cervicitis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Bacterial Vaginosis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "in_references": true
+    },
+    {
+      "label": "Vulvovaginal Candidiasis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Trichomoniasis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Concurrent Sexual Partner Therapy to Prevent Bacterial Vaginosis Recurrence.",
+      "url": "https://www.acog.org/news/news-releases/2025/10/acog-recommends-concurrent-sexual-partner-treatment-recurrent-bacterial-vaginosis-first-time",
+      "in_references": true
+    },
+    {
+      "label": "Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40043236/",
+      "in_references": true
+    },
+    {
+      "label": "Desquamative inflammatory vaginitis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25132275/",
+      "in_references": true
+    },
+    {
+      "label": "Scoping review of cytolytic vaginosis literature.",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280954",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "Fonte: CDC PHIL ↗",
+      "url": "https://wwwn.cdc.gov/PHIL/Details.aspx?pid=16824",
+      "in_references": false
+    },
+    {
+      "label": "Fonte: CDC PHIL ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=2933",
+      "in_references": false
+    },
+    {
+      "label": "Fonte: CDC PHIL ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=3720",
+      "in_references": false
+    },
+    {
+      "label": "Fonte: CDC PHIL ↗",
+      "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=14500",
+      "in_references": false
+    },
+    {
+      "label": "PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf",
+      "in_references": true
+    },
+    {
+      "label": "Protocolo Brasileiro para Infecções que Causam Corrimento Vaginal.",
+      "url": "https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2021/epidemiologia-e-servicos-de-saude/@@download/file/041_ress_ist.pdf",
+      "in_references": true
+    },
+    {
+      "label": "Vulvovaginal Symptoms — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/vaginal-discharge.htm",
+      "in_references": true
+    },
+    {
+      "label": "Urethritis and Cervicitis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Bacterial Vaginosis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "in_references": true
+    },
+    {
+      "label": "Vulvovaginal Candidiasis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Trichomoniasis — STI Treatment Guidelines.",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "in_references": true
+    },
+    {
+      "label": "Concurrent Sexual Partner Therapy to Prevent Bacterial Vaginosis Recurrence.",
+      "url": "https://www.acog.org/news/news-releases/2025/10/acog-recommends-concurrent-sexual-partner-treatment-recurrent-bacterial-vaginosis-first-time",
+      "in_references": true
+    },
+    {
+      "label": "Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40043236/",
+      "in_references": true
+    },
+    {
+      "label": "Desquamative inflammatory vaginitis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25132275/",
+      "in_references": true
+    },
+    {
+      "label": "Scoping review of cytolytic vaginosis literature.",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280954",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/16824/16824_lores.jpg",
+      "alt": "Microbiota vaginal com lactobacilos",
+      "section": "microbiota",
+      "caption": "Microbiota vaginal com lactobacilos. Esfregaço vaginal corado pelo Gram: observe os bacilos predominantes. Fonte: CDC PHIL ↗ Crédito: CDC / Joe Miller. Obra em domínio público, com fonte CDC PHIL.",
+      "decorative": false
+    },
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/2933/2933_lores.jpg",
+      "alt": "Candida albicans no esfregaço vaginal",
+      "section": "candida",
+      "caption": "Candida albicans no esfregaço vaginal. Fotomicrografia: relacione estruturas fúngicas ao quadro clínico; colonização isolada não é doença. Fonte: CDC PHIL ↗ Crédito: CDC / Dr. Stuart Brown. Obra em domínio público, com fonte CDC PHIL.",
+      "decorative": false
+    },
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/3720/3720_lores.jpg",
+      "alt": "Clue cells na vaginose bacteriana",
+      "section": "vaginose",
+      "caption": "Clue cells na vaginose bacteriana. Identifique células epiteliais com bordas obscurecidas por bactérias. Fonte: CDC PHIL ↗ Crédito: CDC / M. Rein. Obra em domínio público, com fonte CDC PHIL.",
+      "decorative": false
+    },
+    {
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/14500/14500_lores.jpg",
+      "alt": "Trichomonas vaginalis em montagem a fresco",
+      "section": "tricomoníase",
+      "caption": "Trichomonas vaginalis em montagem a fresco. Reconheça o protozoário; a microscopia a fresco é menos sensível que testes moleculares. Fonte: CDC PHIL ↗ Crédito: CDC / Joe Miller. Obra em domínio público, com fonte CDC PHIL.",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 8,
+  "paragraphs": 155,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [
+    {
+      "title": "conceito e epidemiologia",
+      "sections": [
+        "candida",
+        "vaginose",
+        "tricomoníase"
+      ]
+    },
+    {
+      "title": "prevencao e seguimento",
+      "sections": [
+        "candida",
+        "vaginose",
+        "tricomoníase"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 1,
+      "status": "approved",
+      "section": "candida",
+      "source_license": "Domínio público; atribuir CDC/Dr. Stuart Brown",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/2933/2933_lores.jpg"
+    },
+    {
+      "id": 2,
+      "status": "approved",
+      "section": "candida",
+      "source_license": "Domínio público; atribuir CDC/Sherry A. Brinkman",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/24036/24036_lores.jpg"
+    },
+    {
+      "id": 5,
+      "status": "approved",
+      "section": "vaginose",
+      "source_license": "Domínio público; atribuir CDC/M. Rein",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/3720/3720_lores.jpg"
+    },
+    {
+      "id": 8,
+      "status": "approved",
+      "section": "microbiota",
+      "source_license": "Domínio público / uso educacional com atribuição; verificar termos do item",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/16824/16824_lores.jpg"
+    },
+    {
+      "id": 10,
+      "status": "approved",
+      "section": "tricomoníase",
+      "source_license": "Domínio público / uso educacional com atribuição; verificar termos do item",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/14500/14500_lores.jpg"
+    },
+    {
+      "id": 13,
+      "status": "approved",
+      "section": "candida",
+      "source_license": "CC0 1.0 — domínio público",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Speculum_exam_in_candidal_vulvovaginitis.jpg"
+    },
+    {
+      "id": 15,
+      "status": "approved",
+      "section": "vaginose",
+      "source_license": "CC0 1.0 — domínio público",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bacterial_vaginosis_workup.jpg"
+    },
+    {
+      "id": 17,
+      "status": "approved",
+      "section": "tricomoníase",
+      "source_license": "Domínio público — CDC PHIL #5241",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Trichomonas_vaginitis_5241_lores.jpg"
+    },
+    {
+      "id": 18,
+      "status": "approved",
+      "section": "candida",
+      "source_license": "Conferir restrições específicas no PHIL antes de uso definitivo",
+      "src": "https://wwwn.cdc.gov/phil/PHIL_Images/16703/16703_lores.jpg"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "candida",
+      "text": "Quando há eritema vulvar extenso, edema importante, escoriações ou fissuras profundas, os tratamentos muito curtos têm menor probabilidade de êxito. O CDC recomenda azólico tópico por 7–14 dias ou, em mulheres não gestantes quando apropriado, fluconazol oral 150 mg em duas doses separadas por 72 horas. Antes de definir um regime sistêmico, confirme gestação, alergias, interações e outras condições clínicas. A estratégia específica da forma recorrente é apresentada abaixo e envolve indução seguida de manutenção, não apenas repetir a dose do episódio simples.",
+      "pattern": 0
+    },
+    {
+      "section": "candida",
+      "text": "A lógica da terapia é composta de duas fases diferentes. Primeiro, a indução busca alcançar remissão clínica e microbiológica: opções de diretrizes incluem azólico tópico por 7–14 dias ou fluconazol oral nos dias 1, 4 e 7 em não gestantes quando apropriado. Somente depois vem a manutenção, habitualmente fluconazol 150 mg por via oral uma vez por semana durante seis meses, se não houver contraindicação, com seguimento e individualização da escolha. Esquemas tópicos de manutenção também são alternativas em cenários específicos.",
+      "pattern": 0
+    },
+    {
+      "section": "candida",
+      "text": "Paciente não gestante, 31 anos, relata quatro episódios de prurido com fissuras e melhora após azólico, seguidos de recidiva. No episódio atual, há eritema vulvar e cultura com C. albicans. O raciocínio é de candidíase recorrente sintomática documentada: verificar fatores predisponentes, excluir dermatoses concomitantes, realizar indução adequada e discutir manutenção por seis meses. O erro de prova seria prescrever uma nova dose única isolada sem organizar investigação, indução e acompanhamento.",
+      "pattern": 0
+    },
+    {
+      "section": "vaginose",
+      "text": "O PCDT brasileiro historicamente não recomenda tratar parcerias de maneira rotineira na vaginose, ao contrário da tricomoníase. Entretanto, o ensaio StepUp publicado no New England Journal of Medicine em 2025 avaliou mulheres com vaginose e parceiros masculinos estáveis: a recorrência em 12 semanas foi observada em cerca de 35% com tratamento concomitante e 63% com tratamento apenas da mulher. A intervenção no parceiro combinou metronidazol oral e clindamicina tópica peniana, sob supervisão.",
+      "pattern": 0
+    },
+    {
+      "section": "resumo-prova",
+      "text": "Primeiro, entenda a fisiologia normal; depois, organize a avaliação clínica. O diagnóstico e o tratamento aparecem integralmente no capítulo de cada doença.",
+      "pattern": 1
+    },
+    {
+      "section": "conceitos",
+      "text": "“Corrimento” descreve um sintoma, não um diagnóstico. A secreção pode ser fisiológica ou estar associada a alterações diferentes. A pergunta inicial é: qual compartimento está acometido?",
+      "pattern": 1
+    },
+    {
+      "section": "microbiota",
+      "text": "Para interpretar o corrimento, primeiro é necessário entender o que mantém a mucosa vaginal estável. Este é um capítulo de fisiologia normal; diagnósticos e tratamentos específicos aparecem adiante.",
+      "pattern": 1
+    },
+    {
+      "section": "microbiota",
+      "text": "Esquema fisiológico: o estímulo hormonal, o epitélio e a microbiota participam da manutenção do ambiente vaginal. Não é um teste diagnóstico.",
+      "pattern": 1
+    },
+    {
+      "section": "vaginose",
+      "text": "O critério de Amsel é clínico e microscópico: três de quatro achados sustentam a síndrome. Já o Nugent é um escore do Gram e descreve padrões de morfotipos bacterianos; resultado intermediário deve ser considerado junto dos sintomas e do exame. Painéis moleculares validados podem ajudar em determinados cenários, mas seu desempenho e indicação dependem do teste. A distinção importa porque o pH vaginal, embora útil, tem especificidade limitada: um valor elevado não permite prescrever metronidazol sem examinar outras hipóteses.",
+      "pattern": 2
+    },
+    {
+      "section": "vaginose",
+      "text": "O biofilme e a instabilidade da microbiota após terapia ajudam a explicar novos episódios. A recorrência não prova automaticamente resistência ao metronidazol; é necessário reconfirmar etiologia, pesquisar infecção concomitante, avaliar tratamentos e discutir estratégias específicas quando adequadas.",
+      "pattern": 2
+    },
+    {
+      "section": "vaginose",
+      "text": "Na recorrência múltipla, protocolos internacionais admitem estratégias supressivas, como metronidazol gel 0,75% duas vezes por semana por mais de 3 meses. Esses regimes devem ser individualizados e não são sinônimo de “tratamento padrão de toda recorrência”.",
+      "pattern": 2
+    },
+    {
+      "section": "vaginose",
+      "text": "Após uma primeira recidiva, pode ser aceitável repetir um esquema recomendado ou escolher outro regime de primeira linha, verificando adesão, tolerância e confirmação diagnóstica. Já em múltiplas recorrências, estratégias supressivas selecionadas podem ser discutidas: uma opção descrita pelo CDC é metronidazol gel intravaginal a 0,75% duas vezes por semana durante mais de três meses. A redução de recidivas ocorre sobretudo durante a manutenção, e parte das pacientes volta a apresentar sintomas após suspendê-la.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "resumo-prova",
+      "text": "Nem todo corrimento é doença. A avaliação começa por identificar se a queixa vem da vulva, da vagina ou do colo uterino, e não apenas pela cor da secreção."
+    },
+    {
+      "section": "resumo-prova",
+      "text": "Primeiro, entenda a fisiologia normal; depois, organize a avaliação clínica. O diagnóstico e o tratamento aparecem integralmente no capítulo de cada doença."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 13,
+        "section": "candida",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Speculum_exam_in_candidal_vulvovaginitis.jpg",
+        "source_only": false
+      },
+      {
+        "id": 17,
+        "section": "tricomoníase",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Trichomonas_vaginitis_5241_lores.jpg",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 6
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "sha": "f4bb593f87f9714502598a00bb24bd27a91ac884",
+  "path": "apostilas/diagnostico-datacao-gestacao/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "diagnostico-datacao-gestacao--f4bb593f87",
+  "title": "Diagnóstico e Datação da Gestação",
+  "format": ".json",
+  "chars_estimated": 64908,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Diagnóstico e datação da gestação: três perguntas que não se confundem"
+    },
+    {
+      "id": "biologia",
+      "title": "1. Implantação, hCG e cronologia biológica do diagnóstico"
+    },
+    {
+      "id": "testes",
+      "title": "2. Confirmação bioquímica: teste urinário, hCG sérico e armadilhas"
+    },
+    {
+      "id": "semio",
+      "title": "3. Avaliação clínica: quando a confirmação pode esperar e quando é urgência"
+    },
+    {
+      "id": "ultrassom",
+      "title": "4. Ultrassonografia precoce: localização, estruturas e limites de imagem"
+    },
+    {
+      "id": "viabilidade",
+      "title": "5. Viabilidade gestacional: o perigo de chamar exame precoce de abortamento"
+    },
+    {
+      "id": "pul",
+      "title": "6. Gravidez de localização desconhecida (PUL/GUL): raciocínio sequencial"
+    },
+    {
+      "id": "data",
+      "title": "7. Fundamentos da idade gestacional: DUM, idade pós-concepcional e DPP"
+    },
+    {
+      "id": "crl",
+      "title": "8. Datação por ultrassonografia: CRL e queda da precisão ao longo da gravidez"
+    },
+    {
+      "id": "fiv",
+      "title": "9. Reprodução assistida, gemelaridade e situações especiais"
+    },
+    {
+      "id": "casos",
+      "title": "10. Casos clínicos comentados: da suspeita à datação segura"
+    },
+    {
+      "id": "questoes",
+      "title": "11. Questões autorais com comentários por alternativa"
+    },
+    {
+      "id": "referencias",
+      "title": "12. Bibliografia, fronteira curricular e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"12. Bibliografia, fronteira curricular e pendências\"]",
+    "[\"o\",[\"<a href=\\\"https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">ACOG/AIUM/SMFM. Committee Opinion nº 700. Methods for Estimating the Due Date. 2017.</a>\",\"<a href=\\\"https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">ACOG. Early Pregnancy Loss. Practice Bulletin. 2018.</a>\",\"<a href=\\\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal\\\" target=\\\"_blank\\",
+    "[\"p\",\"<strong>Comparação LURIA com materiais existentes:</strong> antes de redigir, foram abertos os PDFs privados '02 - ASSISTENCIA AO PRE-NATAL.pdf' e '02 - SANGRAMENTO DA PRIMEIRA METADE.pdf'; a autoria institucional do cursinho não pôde ser confirmada. Seus textos e imagens não foram reproduzidos. O material público preexistente da LURIA 'Pré-natal de Baixo Risco' também foi lido, especialmente os capítulos de diagnóstico de gestação, cálculo de DUM/IG/DPP e ultrassonografia; seu papel de seguimento longitudinal não foi transferido nem apagado.\"]",
+    "[\"p\",\"<strong>Matriz de cobertura interna:</strong> confirmação hormonal em testes; cronologia em biologia; diferenciais de amenorreia em biologia e semio; localização intrauterina versus ectópica em ultrassom/pul; viabilidade em viabilidade; datação por DUM/CRL/ART em data, crl e fiv; decisões de risco em semio, pul e casos; interpretação de questões em questoes. Referências são recursos para conferir, e não pré-requisito para os casos introdutórios.\"]",
+    "[\"p\",\"<strong>Estado editorial:</strong> primeiro rascunho original do tema 009, não publicado, sem `index.html`, sem alteração de catálogo. Não recebeu revisão de obstetra, validação de critérios ultrassonográficos atualizados em diretrizes brasileiras, teste de autossuficiência por banca representativa, auditoria de semântica e acessibilidade ou curadoria de imagens na fila de aprovação Admin. A meta de 60.000 caracteres didáticos úteis e a revisão humana continuam exigidas; não declarar certificação.\"]"
+  ],
+  "external_urls": [
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date",
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/gravidez/pre-natal",
+    "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/pregnancy-unknown-location-pul",
+    "https://www.nice.org.uk/guidance/NG126/chapter/diagnosis-of-viable-intrauterine-pregnancy-and-of-tubal-ectopic-pregnancy",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2026/02/management-of-positive-human-chorionic-gonadotropin-test-results-in-nonpregnant-patients-without-gynecologic-malignancy"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "A datação obstétrica estima quantas semanas e dias transcorreram desde a data convencional de início da gravidez. A idade gestacional é expressa a partir do primeiro dia da última menstruação e não a partir da fecundação; em ciclos de 28 dias com ovulação aproximada no dia 14, a idade pós-concepcional é cerca de duas semanas menor. A melhor estimativa usa DUM confiável, exame ultrassonográfico precoce de qualidade e histórico de reprodução assistida, quando pertinente. Uma vez definida com segurança, a DPP deve permanecer consistente, para evitar diagnósticos errôneos de restrição de crescimento, pós-termo e prematuridade."
+    },
+    {
+      "section": "biologia",
+      "text": "hCG é uma glicoproteína heterodimérica com subunidades alfa e beta. A subunidade beta ajuda especificidade de ensaios diagnósticos, mas os testes têm sensibilidades distintas e podem detectar isoformas/hormônios relacionados dependendo do método. O valor isolado não data com precisão e não indica o número de fetos. Gestação múltipla, doença trofoblástica e outras circunstâncias podem alterar concentrações, com grande sobreposição entre gestações normais. Interpretar tendências depende do intervalo entre coletas, técnica laboratorial e quadro clínico."
+    },
+    {
+      "section": "testes",
+      "text": "Em gravidez inicial que evolui, hCG sérico tende a subir; porém a velocidade de elevação varia com concentração inicial, viabilidade, idade e método laboratorial. O antigo ensino de que sempre 'deve dobrar em 48 horas' é excessivamente rígido e pode levar ao diagnóstico errôneo de inviabilidade. Uma queda sugere evolução desfavorável ou resolução de tecido gestacional, mas não exclui ectópica até que localização/resolução tenham sido asseguradas. Gestação ectópica pode apresentar elevação, platô ou queda, e alguns padrões se sobrepõem a gravidez intrauterina. O algoritmo de gestação de localização desconhecida deve usar tendência junto com re"
+    },
+    {
+      "section": "testes",
+      "text": "Os níveis de hCG hipofisário geralmente são baixos, particularmente em fase menopausal. O consenso ACOG 2026 considera FSH e faixa etária na avaliação; os cortes do documento não devem ser aplicados automaticamente a adolescente ou pessoa de idade reprodutiva com possibilidade de gestação. Em quadro de atraso menstrual e sintomatologia pélvica, a prioridade continua excluir gestação intrauterina ou ectópica antes de invocar hipótese laboratorial rara. Em nenhuma situação é adequado administrar tratamento de neoplasia apenas com hCG discretamente elevado sem diagnóstico sustentado."
+    },
+    {
+      "section": "semio",
+      "text": "Registrar primeiro dia da última menstruação, regularidade e duração dos ciclos, uso recente de contraceptivos, contracepção de emergência, amamentação, interrupção gestacional recente e tratamentos de fertilidade. Investigar gravidez anterior, cirurgia tubária, doença inflamatória pélvica, história de ectópica e uso de dispositivo intrauterino no momento da concepção, sem considerar tais fatores isolados determinantes do diagnóstico. Perguntar por dor, sangramento, tontura, síncope e febre, além de percepção sobre desejo reprodutivo e rede de apoio."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

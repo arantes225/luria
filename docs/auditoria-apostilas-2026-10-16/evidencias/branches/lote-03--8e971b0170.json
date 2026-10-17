@@ -1,0 +1,291 @@
+{
+  "sha": "8e971b01708ec506d0fb37c37ffa654ab8cbbaca",
+  "path": "apostilas/_rascunhos/lote-03/51-dpoc.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--8e971b0170",
+  "title": "LURIA — Aula 51 | DOENÇA PULMONAR OBSTRUTIVA CRÔNICA (DPOC)",
+  "format": ".md",
+  "chars_estimated": 57715,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 51 | DOENÇA PULMONAR OBSTRUTIVA CRÔNICA (DPOC)"
+    },
+    {
+      "title": "1. Auditoria comparativa antes da produção"
+    },
+    {
+      "title": "2. Definição e fisiopatologia integrada"
+    },
+    {
+      "title": "3. Epidemiologia, exposições e suscetibilidade"
+    },
+    {
+      "title": "4. História e exame físico"
+    },
+    {
+      "title": "5. Diagnóstico funcional: interpretar, não decorar"
+    },
+    {
+      "title": "6. Três eixos de avaliação que não devem ser confundidos"
+    },
+    {
+      "title": "7. Tratamento não farmacológico"
+    },
+    {
+      "title": "8. Broncodilatadores e corticoide inalatório"
+    },
+    {
+      "title": "9. Oxigenoterapia domiciliar: indicar pelo desfecho e critérios"
+    },
+    {
+      "title": "10. Exacerbação e insuficiência ventilatória"
+    },
+    {
+      "title": "11. Algoritmos didáticos"
+    },
+    {
+      "title": "12. Casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — Uma exacerbação muda o risco"
+    },
+    {
+      "title": "Caso 2 — “DPOC” sem espirometria"
+    },
+    {
+      "title": "Caso 3 — Acidose hipercápnica"
+    },
+    {
+      "title": "Caso 4 — Dispneia apesar de muitos inaladores"
+    },
+    {
+      "title": "13. Questões comentadas"
+    },
+    {
+      "title": "14. Integração clínica aprofundada: como raciocinar no consultório e na enfermaria"
+    },
+    {
+      "title": "14.1 A espirometria é indispensável, mas não interpreta o paciente sozinha"
+    },
+    {
+      "title": "14.2 Fenótipos úteis e armadilhas"
+    },
+    {
+      "title": "14.3 Exacerbação: avaliação temporal e gravidade"
+    },
+    {
+      "title": "14.4 Antibióticos: decidir por probabilidade bacteriana e gravidade"
+    },
+    {
+      "title": "14.5 Alta segura: a prevenção começa antes da saída"
+    },
+    {
+      "title": "14.6 Matriz de decisão clínica para revisão"
+    },
+    {
+      "title": "14.7 Dois casos integradores adicionais"
+    },
+    {
+      "title": "14.8 Duas questões adicionais com justificativa completa"
+    },
+    {
+      "title": "15. Reabilitação pulmonar, exercício, nutrição e prevenção de incapacidade"
+    },
+    {
+      "title": "15.1 Por que broncodilatar não basta"
+    },
+    {
+      "title": "15.2 Quem deve ser avaliado para reabilitação"
+    },
+    {
+      "title": "15.3 Componentes de uma sessão de reabilitação"
+    },
+    {
+      "title": "15.4 Nutrição e composição corporal"
+    },
+    {
+      "title": "15.5 Tabagismo: abordagem longitudinal"
+    },
+    {
+      "title": "16. Oxigenoterapia domiciliar prolongada: indicação, limites e acompanhamento"
+    },
+    {
+      "title": "16.1 Separar hipoxemia crônica de dessaturação transitória"
+    },
+    {
+      "title": "16.2 Benefício não é igual para todos"
+    },
+    {
+      "title": "16.3 Segurança doméstica"
+    },
+    {
+      "title": "17. Comorbidades e diagnósticos concorrentes"
+    },
+    {
+      "title": "17.1 Cardiovasculares"
+    },
+    {
+      "title": "17.2 Câncer de pulmão e nódulos"
+    },
+    {
+      "title": "17.3 Osteoporose, fraqueza e quedas"
+    },
+    {
+      "title": "17.4 Ansiedade, depressão e sono"
+    },
+    {
+      "title": "17.5 Bronquiectasias e infecções recorrentes"
+    },
+    {
+      "title": "17.6 Deficiência de alfa-1 antitripsina"
+    },
+    {
+      "title": "18. Avaliação longitudinal, prognóstico e cuidado centrado na pessoa"
+    },
+    {
+      "title": "18.1 O que registrar em cada consulta"
+    },
+    {
+      "title": "18.2 Risco não se resume ao VEF1"
+    },
+    {
+      "title": "18.3 Cuidados paliativos e planejamento antecipado"
+    },
+    {
+      "title": "19. Casos clínicos integradores — raciocínio ampliado"
+    },
+    {
+      "title": "Caso 7 — Exacerbação ou edema pulmonar?"
+    },
+    {
+      "title": "Caso 8 — Oxigênio domiciliar após pneumonia"
+    },
+    {
+      "title": "20. Questões adicionais comentadas"
+    },
+    {
+      "title": "Questão 9 — Reabilitação pulmonar"
+    },
+    {
+      "title": "Questão 10 — Hipoxemia na fase aguda"
+    },
+    {
+      "title": "Questão 11 — Diagnóstico concorrente"
+    },
+    {
+      "title": "Questão 12 — Corticosteroide inalatório"
+    },
+    {
+      "title": "21. Revisão editorial de segurança e pontos de atualização"
+    },
+    {
+      "title": "22. Segurança do tratamento inalatório e interpretação clínica"
+    },
+    {
+      "title": "22.1 A escolha do dispositivo é parte da prescrição"
+    },
+    {
+      "title": "22.2 Benefícios e danos precisam ser avaliados em conjunto"
+    },
+    {
+      "title": "22.3 Gasometria: um exemplo resolvido"
+    },
+    {
+      "title": "22.4 Diagnósticos concorrentes durante a exacerbação"
+    },
+    {
+      "title": "22.5 Caso clínico adicional"
+    },
+    {
+      "title": "22.6 Questões adicionais"
+    },
+    {
+      "title": "23. Organização do atendimento: da suspeita à decisão compartilhada"
+    },
+    {
+      "title": "23.1 Primeiro contato na atenção primária"
+    },
+    {
+      "title": "23.2 Confirmou obstrução: quais perguntas vêm depois?"
+    },
+    {
+      "title": "23.3 O que fazer quando a espirometria não está disponível imediatamente?"
+    },
+    {
+      "title": "23.4 Plano terapêutico em quatro camadas"
+    },
+    {
+      "title": "23.5 Quando encaminhar à pneumologia"
+    },
+    {
+      "title": "24. Casos de integração diagnóstica e terapêutica"
+    },
+    {
+      "title": "Caso 12 — Tosse crônica e exposição à biomassa"
+    },
+    {
+      "title": "Caso 13 — VEF1 não explica sozinho a escolha terapêutica"
+    },
+    {
+      "title": "25. Questões de integração"
+    },
+    {
+      "title": "Questão 19 — Diagnóstico em não fumante"
+    },
+    {
+      "title": "Questão 20 — Avaliação multidimensional"
+    },
+    {
+      "title": "26. Quadro final de segurança e atualização"
+    },
+    {
+      "title": "27. Curadoria de imagens e referências"
+    }
+  ],
+  "reference_entries": [
+    "- Ministério da Saúde, PCDT DPOC atualizado 29/01/2026: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view",
+    "- GOLD 2026: https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "- GOLD/GLI, espirometria e obstrução, 2026: https://publications.ersnet.org/content/erj/early/2026/02/26/1399300302574-2025",
+    "- SBPT: https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "**Pendências explícitas:** conferir fármacos/doses e critérios SUS no texto integral do PCDT; desenvolver complicações, reabilitação, efeitos adversos e prognóstico; ampliar para 60 mil caracteres úteis; selecionar imagens com licença verificada; revisar casos/questões, validar desempenho desktop/PWA. **Não homologado.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view",
+    "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+    "https://publications.ersnet.org/content/erj/early/2026/02/26/1399300302574-2025",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Ventilação não invasiva (VNI):** considerar em insuficiência respiratória hipercápnica aguda com acidemia, frequentemente pH até 7,35 e PaCO2 elevada, se o doente protege a via aérea e não apresenta contraindicações. Precisam ser avaliados consciência, vômito/aspiração, secreções, instabilidade e tolerância. Reavaliar em curto intervalo sintomas, pH, PaCO2 e trabalho respiratório. Não atrasar intubação se VNI falhar, houver incapacidade de proteção da via aérea ou deterioração clínica. Na ventilação invasiva, evitar hiperinsuflação dinâmica com ajuste apropriado de tempo expiratório e monitorização."
+    },
+    {
+      "text": "A interpretação exige pelo menos três perguntas: **a curva é tecnicamente aceitável?**; **a obstrução persiste após broncodilatador?**; **a intensidade da redução do VEF1 descreve risco, mas explica integralmente sintomas?** Não. Pacientes com VEF1 semelhante podem apresentar dispneia, capacidade de exercício, hiperinsuflação e frequência de exacerbações muito diferentes. O diagnóstico diferencial inclui asma, bronquiectasias, insuficiência cardíaca, tuberculose prévia, doença intersticial e doenças das vias aéreas centrais. Um teste com reversibilidade broncodilatadora não separa de modo absoluto asma e DPOC: pode haver reversibilidade na DP"
+    },
+    {
+      "text": "**Exemplo:** pessoa de 69 anos, 40 maços-ano, tosse e dispneia progressiva, espirometria pré-broncodilatador VEF1/CVF 0,63, após broncodilatador 0,65. Há obstrução persistente pelo ponto de corte fixo. O próximo passo não é prescrever automaticamente terapia tripla: avaliar mMRC/CAT, exacerbações prévias, eosinófilos, comorbidades, técnica inalatória e elegibilidade terapêutica no SUS."
+    },
+    {
+      "text": "**Enfisema predominante:** destruição do parênquima e redução de retração elástica, favorecendo aprisionamento de ar; DLCO pode reduzir, sobretudo em enfisema significativo. **Bronquite crônica:** tosse produtiva por três meses ao ano em dois anos consecutivos, depois de excluídas outras causas; é um fenótipo, não sinônimo de DPOC. **Exacerbador frequente:** episódios recorrentes, especialmente com internações, aumentam risco futuro e exigem investigar gatilhos e prevenção. **Eosinofilia periférica:** marcador probabilístico de benefício de corticoide inalatório na prevenção de exacerbações, e não diagnóstico de asma isoladamente."
+    },
+    {
+      "text": "**VNI** é particularmente útil na insuficiência respiratória hipercápnica com acidose respiratória e trabalho ventilatório elevado, quando não há contraindicações e existe equipe capaz de acompanhar resposta. Avaliar consciência, proteção de via aérea, estabilidade hemodinâmica, secreções, tolerância e possibilidade de falha. Deterioração clínica, hipoxemia refratária ou incapacidade de proteger via aérea demandam avaliação imediata para via aérea invasiva. Não atrasar intubação necessária por insistência prolongada em VNI sem resposta."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

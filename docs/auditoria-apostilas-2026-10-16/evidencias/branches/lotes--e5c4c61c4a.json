@@ -1,0 +1,322 @@
+{
+  "sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
+  "path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--e5c4c61c4a",
+  "title": "LURIA — Pneumonia adquirida na comunidade no adulto",
+  "format": ".md",
+  "chars_estimated": 74063,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Pneumonia adquirida na comunidade no adulto"
+    },
+    {
+      "title": "Etapa zero e inventário"
+    },
+    {
+      "title": "1. Mecanismo e apresentação clínica"
+    },
+    {
+      "title": "2. Diagnóstico e estratificação"
+    },
+    {
+      "title": "3. Tratamento e revisão da resposta"
+    },
+    {
+      "title": "4. Populações e segurança"
+    },
+    {
+      "title": "5. Registro comparativo e decisões editoriais da etapa 02"
+    },
+    {
+      "title": "6. Anatomia funcional: por que a consolidação causa hipoxemia?"
+    },
+    {
+      "title": "6.1 Defesas respiratórias e fatores predisponentes"
+    },
+    {
+      "title": "7. Epidemiologia clínica e etiologia: construir hipóteses, não decorar um único germe"
+    },
+    {
+      "title": "8. Quadro clínico, gravidade e triagem na primeira avaliação"
+    },
+    {
+      "title": "8.1 CURB-65 — ensino com interpretação"
+    },
+    {
+      "title": "8.2 Critérios ATS/IDSA de pneumonia comunitária grave"
+    },
+    {
+      "title": "9. Diagnóstico por imagem e diferenciais importantes"
+    },
+    {
+      "title": "10. Microbiologia — quando cada teste muda a conduta?"
+    },
+    {
+      "title": "11. Escolha de antibioticoterapia — raciocínio por cenário"
+    },
+    {
+      "title": "11.0A Posologia comparativa das diretrizes: quadros de decisão para adultos"
+    },
+    {
+      "title": "11.1 Duração — distinguir 2019 de 2025 e testar estabilidade"
+    },
+    {
+      "title": "11.2 Corticosteroides: uma divergência histórica importante"
+    },
+    {
+      "title": "12. Fluxograma textual de conduta: da APS à UTI"
+    },
+    {
+      "title": "13. Complicações, acompanhamento e prevenção"
+    },
+    {
+      "title": "14. Casos clínicos integradores adicionais"
+    },
+    {
+      "title": "Caso 3 — Hipoxemia apesar do CURB-65 baixo"
+    },
+    {
+      "title": "Caso 4 — Fluoroquinolona repetida e tuberculose não reconhecida"
+    },
+    {
+      "title": "Caso 5 — Derrame pleural loculado após antibioticoterapia"
+    },
+    {
+      "title": "Caso 6 — Pneumonia grave e decisão sobre corticosteroide"
+    },
+    {
+      "title": "15. Questões autorais adicionais, com revisão por alternativa"
+    },
+    {
+      "title": "Questão 3 — Estratificação"
+    },
+    {
+      "title": "Questão 4 — PAC grave"
+    },
+    {
+      "title": "Questão 5 — Microbiologia"
+    },
+    {
+      "title": "Questão 6 — Duração de antimicrobianos"
+    },
+    {
+      "title": "Questão 7 — Corticosteroide"
+    },
+    {
+      "title": "Questão 8 — Falha clínica"
+    },
+    {
+      "title": "Questão 9 — Diagnóstico diferencial"
+    },
+    {
+      "title": "Questão 10 — Idoso com quadro pouco febril"
+    },
+    {
+      "title": "16. Matriz de cobertura, imagens candidatas e auditoria"
+    },
+    {
+      "title": "Ampliação editorial 03 — raciocínio aprofundado, decisões de local de cuidado e situações especiais"
+    },
+    {
+      "title": "17. Mecanismos respiratórios aplicados ao exame clínico"
+    },
+    {
+      "title": "17.1 Consolidação e broncograma: por que o pulmão muda o som?"
+    },
+    {
+      "title": "17.2 Da consolidação ao shunt e à insuficiência respiratória"
+    },
+    {
+      "title": "17.3 Pleurite e derrame: anatomia orienta urgência"
+    },
+    {
+      "title": "18. Etiologia e raciocínio probabilístico sem determinismo radiológico"
+    },
+    {
+      "title": "18.1 Três perguntas melhores que “qual bactéria é?”"
+    },
+    {
+      "title": "18.2 Quando ampliar o diferencial para MRSA ou Pseudomonas?"
+    },
+    {
+      "title": "18.3 Aspiração não é sinônimo de cobertura anaeróbia universal"
+    },
+    {
+      "title": "19. Avaliação de gravidade — números com significado e limites"
+    },
+    {
+      "title": "19.1 O CURB-65 pode ser calculado e ainda assim levar à decisão errada"
+    },
+    {
+      "title": "19.2 Critérios de PAC grave da ATS/IDSA e sua fisiologia"
+    },
+    {
+      "title": "19.3 PSI/PORT e apoio à decisão do local de cuidado"
+    },
+    {
+      "title": "20. Antibioticoterapia empírica — dar cobertura adequada, depois reduzir espectro"
+    },
+    {
+      "title": "20.1 O conceito de espectro importa mais que decorar marcas"
+    },
+    {
+      "title": "20.2 Proposta terapêutica explicativa por cenário"
+    },
+    {
+      "title": "20.3 Quando um resultado microbiológico realmente modifica conduta?"
+    },
+    {
+      "title": "20.4 Risco de eventos adversos também é resultado clínico"
+    },
+    {
+      "title": "21. A evolução nas primeiras 72 horas: uma lógica temporal"
+    },
+    {
+      "title": "21.1 Melhora clínica não se mede por temperatura isolada"
+    },
+    {
+      "title": "21.2 Falha precoce, falha tardia e diagnóstico alternativo"
+    },
+    {
+      "title": "22. Diretriz ATS 2025: novidade que precisa ser ensinada sem generalização"
+    },
+    {
+      "title": "22.1 Duração abreviada sob condições específicas"
+    },
+    {
+      "title": "22.2 Corticosteroide sistêmico: distinguir indicação de PAC e comorbidade"
+    },
+    {
+      "title": "22.3 Diagnóstico viral e coinfecção"
+    },
+    {
+      "title": "23. Suporte clínico na pneumonia grave e sepse"
+    },
+    {
+      "title": "23.1 O primeiro minuto deve responder ao que mata agora"
+    },
+    {
+      "title": "23.2 Interpretação de oxigenação"
+    },
+    {
+      "title": "23.3 Fluidoterapia e choque"
+    },
+    {
+      "title": "23.4 Mobilização, nutrição e delirium"
+    },
+    {
+      "title": "24. Populações especiais com conduta diferente"
+    },
+    {
+      "title": "24.1 Idoso sem febre e com delirium"
+    },
+    {
+      "title": "24.2 Imunossuprimidos"
+    },
+    {
+      "title": "24.3 Gestação e puerpério"
+    },
+    {
+      "title": "24.4 Doença renal e insuficiência cardíaca"
+    },
+    {
+      "title": "24.5 DPOC, bronquiectasias e pneumonia pós-obstrutiva"
+    },
+    {
+      "title": "25. Casos clínicos avançados"
+    },
+    {
+      "title": "Caso 7 — CURB-65 baixo, mas insuficiência respiratória"
+    },
+    {
+      "title": "Caso 8 — Pneumonia com dor pleurítica e risco de TEP"
+    },
+    {
+      "title": "Caso 9 — Coinfecção viral-bacteriana em PAC grave"
+    },
+    {
+      "title": "Caso 10 — Confusão após alta e indicação de retorno"
+    },
+    {
+      "title": "Caso 11 — Radiografia que não clareou"
+    },
+    {
+      "title": "Caso 12 — Qual duração antibiótica escolher?"
+    },
+    {
+      "title": "26. Questões adicionais de integração"
+    },
+    {
+      "title": "Questão 11 — Gasometria"
+    },
+    {
+      "title": "Questão 12 — CURB-65 e ureia"
+    },
+    {
+      "title": "Questão 13 — Aspiração"
+    },
+    {
+      "title": "Questão 14 — PCR ou procalcitonina"
+    },
+    {
+      "title": "Questão 15 — Antibioticoterapia curta"
+    },
+    {
+      "title": "Questão 16 — Corticoide"
+    },
+    {
+      "title": "Questão 17 — Culturas"
+    },
+    {
+      "title": "Questão 18 — Falha terapêutica"
+    },
+    {
+      "title": "27. Auditoria de autossuficiência após esta expansão"
+    },
+    {
+      "title": "Próximas ampliações mandatórias"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/;",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6467584/",
+    "https://doi.org/10.1164/rccm.202507-1692ST",
+    "https://doi.org/10.1164/rccm.202507-1692ST."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Cenário | Decisão predominante | |---|---| | Estável, sem hipoxemia nem condição de alto risco | Considerar manejo ambulatorial e retorno programado | | Comorbidades relevantes ou barreiras sociais | Individualizar antibiótico, monitorização e local de cuidado | | Insuficiência respiratória ou instabilidade | Internação e avaliação de necessidade de suporte intensivo | | Derrame, abscesso ou ausência de melhora | Rever etiologia, complicações, diagnóstico e cobertura |"
+    },
+    {
+      "text": "Uma reavaliação clínica precoce observa febre, dispneia, frequência respiratória, pressão arterial, oxigenação e capacidade de manter tratamento. Persistência de febre isolada no início não obriga troca automática de antibiótico; porém deterioração clínica impõe busca imediata de hipóteses alternativas, resistência, bacteremia ou complicações. Derrame pleural complicado/empiema pode exigir drenagem e avaliação especializada. A duração do tratamento deve ser proporcional à estabilidade e a recomendações atualizadas, evitando prolongamento desnecessário."
+    },
+    {
+      "text": "**Caso 1.** Homem de 42 anos com febre, tosse produtiva, infiltrado lobar e sinais vitais estáveis. Avaliar comorbidades, oxigenação e capacidade de seguimento antes de decidir local de tratamento. **Por que importa:** imagem isolada não define internação."
+    },
+    {
+      "text": "**Caso 2.** Mulher de 80 anos com confusão nova, frequência respiratória elevada e hipotensão, sem febre alta. Há suspeita de PAC grave ou sepse; estabilizar e investigar, sem esperar manifestações clássicas. **Por que importa:** apresentação atípica no idoso exige atenção à perfusão e consciência."
+    },
+    {
+      "text": "**Questão 2.** Paciente sem melhora e com derrame pleural novo após iniciar terapia. Próxima etapa? A) Repetir indefinidamente o mesmo esquema; B) Considerar complicação pleural e reavaliar; C) Declarar cura; D) Suspender avaliação microbiológica em qualquer circunstância. **Gabarito B.** A posterga diagnóstico, C contradiz evolução e D impede investigação indicada. **Revisão:** falha terapêutica exige busca ativa de complicações."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

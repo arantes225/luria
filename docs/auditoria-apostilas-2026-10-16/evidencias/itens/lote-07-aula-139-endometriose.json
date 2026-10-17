@@ -1,0 +1,607 @@
+{
+  "key": "lote-07-aula-139-endometriose",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-139-endometriose.md",
+  "title": "LURIA — Lote 7 · Aula 139",
+  "source_sha256": "2fe8762f2b5a11d539862997529e05eb8dff0f9b03e16bc72f80c25a11b34ba9",
+  "chars_estimated": 74199,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 139",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Endometriose: dor pélvica, doença profunda e fertilidade",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "0. Etapa zero — preservar o que já existe, identificar material comparativo",
+      "level": 2
+    },
+    {
+      "line": 12,
+      "title": "1. Conceito e os três fenôtipos clínicos",
+      "level": 2
+    },
+    {
+      "line": 22,
+      "title": "2. Fisiopatologia: da menstruação retrógrada à sensibilização nervosa",
+      "level": 2
+    },
+    {
+      "line": 24,
+      "title": "2.1. Menstruação retrógrada não explica tudo",
+      "level": 3
+    },
+    {
+      "line": 29,
+      "title": "2.2. Dor neuropática e sensibilização central",
+      "level": 3
+    },
+    {
+      "line": 32,
+      "title": "3. Epidemiologia e fatores de risco: evitar a falsa precisão",
+      "level": 2
+    },
+    {
+      "line": 37,
+      "title": "4. Manifestações clínicas: a dor tem padrão temporal, mas não obrigação de ser cíclica",
+      "level": 2
+    },
+    {
+      "line": 47,
+      "title": "5. Anamnese dirigida e exame",
+      "level": 2
+    },
+    {
+      "line": 52,
+      "title": "6. Diagnóstico contemporâneo: não exigir cirurgia para começar a cuidar",
+      "level": 2
+    },
+    {
+      "line": 54,
+      "title": "6.1. Ultrassonografia",
+      "level": 3
+    },
+    {
+      "line": 61,
+      "title": "6.2. Ressonância magnética",
+      "level": 3
+    },
+    {
+      "line": 64,
+      "title": "6.3. CA-125 e outros biomarcadores",
+      "level": 3
+    },
+    {
+      "line": 67,
+      "title": "6.4. Laparoscopia",
+      "level": 3
+    },
+    {
+      "line": 72,
+      "title": "7. Classificação anatômica e por objetivo terapêutico",
+      "level": 2
+    },
+    {
+      "line": 79,
+      "title": "8. Tratamento clínico: controlar dor sem criar infertilidade iatrogênica",
+      "level": 2
+    },
+    {
+      "line": 81,
+      "title": "8.1. Abordagem inicial compartilhada",
+      "level": 3
+    },
+    {
+      "line": 84,
+      "title": "8.2. Terapia hormonal",
+      "level": 3
+    },
+    {
+      "line": 93,
+      "title": "8.3. Dor persistente e componente nociplástico",
+      "level": 3
+    },
+    {
+      "line": 96,
+      "title": "9. Cirurgia: indicação não é sinônimo de diagnóstico",
+      "level": 2
+    },
+    {
+      "line": 107,
+      "title": "10. Infertilidade associada à endometriose — FEBRASGO 2026",
+      "level": 2
+    },
+    {
+      "line": 109,
+      "title": "10.1. Por que a infertilidade é multifatorial?",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "10.2. O que o posicionamento FEBRASGO nº 4/2026, publicado em maio acrescenta?",
+      "level": 3
+    },
+    {
+      "line": 119,
+      "title": "11. Diferenciais por sintoma",
+      "level": 2
+    },
+    {
+      "line": 129,
+      "title": "12. Algoritmos assistenciais",
+      "level": 2
+    },
+    {
+      "line": 141,
+      "title": "13. Cinco casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 143,
+      "title": "Caso 1 — adolescente com “cólicas normais”",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "Caso 2 — endometriose intestinal profunda",
+      "level": 3
+    },
+    {
+      "line": 149,
+      "title": "Caso 3 — infertilidade e endometrioma bilateral",
+      "level": 3
+    },
+    {
+      "line": 152,
+      "title": "Caso 4 — obstrução ureteral silenciosa",
+      "level": 3
+    },
+    {
+      "line": 155,
+      "title": "Caso 5 — dor persistente após laparoscopia",
+      "level": 3
+    },
+    {
+      "line": 158,
+      "title": "14. Oito questões autorais com comentários por alternativa",
+      "level": 2
+    },
+    {
+      "line": 160,
+      "title": "Questão 1 — diagnóstico e imagem",
+      "level": 3
+    },
+    {
+      "line": 165,
+      "title": "Questão 2 — CA-125",
+      "level": 3
+    },
+    {
+      "line": 170,
+      "title": "Questão 3 — laparoscopia",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "Questão 4 — endometrioma e FIV",
+      "level": 3
+    },
+    {
+      "line": 180,
+      "title": "Questão 5 — infiltração ureteral",
+      "level": 3
+    },
+    {
+      "line": 185,
+      "title": "Questão 6 — controle de dor sem gravidez atual",
+      "level": 3
+    },
+    {
+      "line": 190,
+      "title": "Questão 7 — risco de infertilidade",
+      "level": 3
+    },
+    {
+      "line": 195,
+      "title": "Questão 8 — dor e anatomia",
+      "level": 3
+    },
+    {
+      "line": 200,
+      "title": "15. Pulo do Gato LURIA — alta retenção",
+      "level": 2
+    },
+    {
+      "line": 214,
+      "title": "16. Esquemas visuais e imagens clínicas candidatas (nenhuma incorporada)",
+      "level": 2
+    },
+    {
+      "line": 218,
+      "title": "17. Fontes atuais",
+      "level": 2
+    },
+    {
+      "line": 225,
+      "title": "18. Checklist",
+      "level": 2
+    },
+    {
+      "line": 238,
+      "title": "CAMADA DE APROFUNDAMENTO — ENDOMETRIOSE 2026",
+      "level": 1
+    },
+    {
+      "line": 241,
+      "title": "19. O que a história clínica deve conseguir separar?",
+      "level": 2
+    },
+    {
+      "line": 243,
+      "title": "19.1. Dor cíclica não significa automaticamente lesão endometriótica",
+      "level": 3
+    },
+    {
+      "line": 248,
+      "title": "19.2. Cinco perguntas que mudam o diferencial",
+      "level": 3
+    },
+    {
+      "line": 257,
+      "title": "19.3. Diferenciar os geradores de dor por exame",
+      "level": 3
+    },
+    {
+      "line": 266,
+      "title": "19.4. Adenomiose e endometriose: duas entidades que podem coexistir",
+      "level": 3
+    },
+    {
+      "line": 271,
+      "title": "19.5. DIP versus endometriose: o que não pode ser perdido",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "20. Imagem de endometriose como problema anatômico, não teste mágico",
+      "level": 2
+    },
+    {
+      "line": 276,
+      "title": "20.1. A pergunta da ultrassonografia especializada",
+      "level": 3
+    },
+    {
+      "line": 281,
+      "title": "20.2. Sliding sign",
+      "level": 3
+    },
+    {
+      "line": 286,
+      "title": "20.3. Endometrioma: “vidro fosco” não é termo de certeza oncológica",
+      "level": 3
+    },
+    {
+      "line": 291,
+      "title": "20.4. Doença intestinal: quatro medidas e uma pergunta",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "20.5. Ureter: não esperar dor intensa",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "20.6. Quando pedir RM",
+      "level": 3
+    },
+    {
+      "line": 312,
+      "title": "20.7. CA-125 como armadilha de duas especialidades",
+      "level": 3
+    },
+    {
+      "line": 315,
+      "title": "21. Diagnóstico contemporâneo: reconciliar ESHRE e NICE sem falsa oposição",
+      "level": 2
+    },
+    {
+      "line": 317,
+      "title": "21.1. O que realmente mudou em 2022 e 2024?",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "21.2. Quatro cenários ilustram a decisão",
+      "level": 3
+    },
+    {
+      "line": 333,
+      "title": "21.3. O que a biópsia responde?",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "21.4. Diferenciar o diagnóstico da decisão de operar",
+      "level": 3
+    },
+    {
+      "line": 339,
+      "title": "22. Tratamento por objetivo: dor, proteção de órgão e fertilidade",
+      "level": 2
+    },
+    {
+      "line": 341,
+      "title": "22.1. Tratamento hormonal não é “anticoncepcional para toda pessoa”",
+      "level": 3
+    },
+    {
+      "line": 352,
+      "title": "22.2. AINEs e analgesia: o alvo é sintoma, não remoção de implante",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "22.3. Agonistas de GnRH e hipoestrogenismo",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "22.4. Antagonistas de GnRH",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "22.5. SIU-LNG e adenomiose",
+      "level": 3
+    },
+    {
+      "line": 364,
+      "title": "22.6. Dor persistente: centralização e comorbidades",
+      "level": 3
+    },
+    {
+      "line": 367,
+      "title": "22.7. Proteção de órgão muda a urgência",
+      "level": 3
+    },
+    {
+      "line": 370,
+      "title": "23. A cirurgia com qualidade começa antes da incisão",
+      "level": 2
+    },
+    {
+      "line": 372,
+      "title": "23.1. Classificar anatomia para reduzir dano",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "23.2. Técnica intestinal: shaving, discoide e segmentar",
+      "level": 3
+    },
+    {
+      "line": 382,
+      "title": "23.3. Cirurgia ovariana e reserva",
+      "level": 3
+    },
+    {
+      "line": 387,
+      "title": "23.4. Preservação de fertilidade antes da cirurgia",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "23.5. Recidiva: diferenciar lesão de sintoma",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "23.6. Histerectomia e ovariectomia: consequências separadas",
+      "level": 3
+    },
+    {
+      "line": 396,
+      "title": "24. O que muda quando o objetivo principal é gestar?",
+      "level": 2
+    },
+    {
+      "line": 398,
+      "title": "24.1. Fazer pergunta reprodutiva explícita",
+      "level": 3
+    },
+    {
+      "line": 401,
+      "title": "24.2. Decisão por tempo reprodutivo, não por tamanho da lesão",
+      "level": 3
+    },
+    {
+      "line": 404,
+      "title": "24.3. Qual contribuição do posicionamento FEBRASGO nº 4/2026?",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "24.4. A conduta frente a estágios I/II é diferente de doença profunda",
+      "level": 3
+    },
+    {
+      "line": 412,
+      "title": "24.5. Endometrioma antes da FIV: o principal erro cobrado",
+      "level": 3
+    },
+    {
+      "line": 422,
+      "title": "24.6. Gestação não cura endometriose",
+      "level": 3
+    },
+    {
+      "line": 426,
+      "title": "25. Casos adicionais de raciocínio integrado",
+      "level": 2
+    },
+    {
+      "line": 428,
+      "title": "Caso 6 — exame negativo, adolescente incapacitada",
+      "level": 3
+    },
+    {
+      "line": 437,
+      "title": "Caso 7 — dor intestinal e colonoscopia normal",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "Caso 8 — ovário, fertilidade e risco de iatrogenia",
+      "level": 3
+    },
+    {
+      "line": 453,
+      "title": "Caso 9 — pouca dor, ureter ameaçado",
+      "level": 3
+    },
+    {
+      "line": 461,
+      "title": "Caso 10 — dor depois da cirurgia e mecanismo neuromuscular",
+      "level": 3
+    },
+    {
+      "line": 469,
+      "title": "26. Questões avançadas — oito diagnósticos e decisões",
+      "level": 2
+    },
+    {
+      "line": 471,
+      "title": "Questão 9 — imagem negativa",
+      "level": 3
+    },
+    {
+      "line": 476,
+      "title": "Questão 10 — colonoscopia normal",
+      "level": 3
+    },
+    {
+      "line": 481,
+      "title": "Questão 11 — infertilidade com endometrioma",
+      "level": 3
+    },
+    {
+      "line": 486,
+      "title": "Questão 12 — lesão ureteral",
+      "level": 3
+    },
+    {
+      "line": 491,
+      "title": "Questão 13 — biomarcador",
+      "level": 3
+    },
+    {
+      "line": 496,
+      "title": "Questão 14 — supressão e gestação",
+      "level": 3
+    },
+    {
+      "line": 501,
+      "title": "Questão 15 — cenário pós-cirurgia",
+      "level": 3
+    },
+    {
+      "line": 506,
+      "title": "Questão 16 — diagnóstico e laparoscopia",
+      "level": 3
+    },
+    {
+      "line": 511,
+      "title": "27. Mapa de ligação para revisão e construção de flashcards",
+      "level": 2
+    },
+    {
+      "line": 529,
+      "title": "Pulo do Gato — decisões de alto rendimento",
+      "level": 3
+    },
+    {
+      "line": 543,
+      "title": "28. Fontes conferidas para a ampliação",
+      "level": 2
+    },
+    {
+      "line": 549,
+      "title": "29. Auditoria editorial da continuação",
+      "level": 2
+    }
+  ],
+  "references": [],
+  "external_links": [
+    {
+      "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng73/chapter/Recommendations",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.scielo.br/j/rbgo/a/JKgf5FkDmZm3LNv9mcYW9Th/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 2,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exemplo clínico:** adolescente de 15 anos com cólicas de um dia de duração, intensidade leve-moderada, sem faltas escolares, sem progressão e com boa resposta a AINE isolado tem probabilidade pré-teste diferente de adolescente de 17 anos que falta dois dias de aula mensalmente, vomita de dor e já usa tratamento adequado sem alívio. A segunda merece avaliação mais dirigida e encaminhamento, mesmo que imagem inicial não revele lesão.",
+      "pattern": 0
+    },
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**. **Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional.",
+      "pattern": 1
+    },
+    {
+      "text": "**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor.",
+      "pattern": 1
+    },
+    {
+      "text": "**Três apresentações anatômicas principais:** 1. **Endometriose peritoneal superficial:** implantes na superfície peritoneal, frequentemente invisíveis ao ultrassom e à RM convencionais. 2. **Endometrioma ovariano:** cisto relacionado a endometriose, frequentemente com conteúdo hemático crônico e achado ultrassonográfico típico, embora diagnóstico diferencial com outras massas seja essencial. 3. **Endometriose profunda (DE/DIE):** lesões infiltrativas abaixo da superfície peritoneal, capazes de envolver ligamentos uterossacros, septo retovaginal, intestino, bexiga e ureter, além de espaços pélvicos. A extensão anatômica precisa ser mapeada para prevenir dano cirúrgico e avaliar obstrução de órgãos.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**. **Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional.",
+      "pattern": 2
+    },
+    {
+      "text": "**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor.",
+      "pattern": 2
+    },
+    {
+      "text": "**Inflamação local:** macrófagos e mediadores pró-inflamatórios, prostaglandinas e fatores de crescimento contribuem para dor e manutenção das lesões. **Estrogênio:** estimula crescimento e inflamação; resistência relativa à ação de progesterona em tecido ectópico pode reduzir efeito antiproliferativo. **Neuroangiogênese:** fibras nervosas/vasos de neoformação no tecido lesional ampliam percepção dolorosa. **Fibrose/aderências:** distorcem anatomia, limitam mobilidade de órgãos e podem gerar dor mecânica e comprometimento tubário.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Ginecologia e Obstetrícia / Cirurgia Ginecológica. **Estado:** rascunho original, **NÃO INTEGRADO/NÃO PUBLICADO**. **Marco científico:** ESHRE *Endometriosis Guideline* 2022; NICE NG73 diagnóstico e tratamento atualizado em novembro/2024; FEBRASGO Position Statement nº 4/2026, publicado em **maio/2026** na revista *Femina*, sobre **infertilidade associada à endometriose**. A literatura brasileira atual orienta aplicação nacional, enquanto tratamentos de fertilidade e acesso SUS exigem avaliação regional."
+    },
+    {
+      "text": "**Google Drive:** busca específica por “endometriose” não localizou apostila exclusivamente dedicada; **foi aberto e lido** “Doença Inflamatória Pélvica.pdf” (~2,8 mil caracteres), que apenas menciona endometriose no diferencial de infertilidade tubária e dor crônica, mas não oferece diagnóstico, estadiamento nem tratamento da endometriose. O comparativo é **parcial** e a autoria de Estratégia MED não foi demonstrada. Não copiar figuras/textos nem declarar etapa zero equivalente integralmente cumprida. Como fontes principais independentes, foram consultadas diretrizes ESHRE/NICE e documento FEBRASGO publicado em maio/2026; esse posicionamento brasileiro sobre infertilidade **não substitui** protocolo integral para todos os fenótipos de dor."
+    }
+  ]
+}

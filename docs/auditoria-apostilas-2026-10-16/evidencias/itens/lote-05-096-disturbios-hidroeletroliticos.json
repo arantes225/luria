@@ -1,0 +1,680 @@
+{
+  "key": "lote-05-096-disturbios-hidroeletroliticos",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-05-096-disturbios-hidroeletroliticos.md",
+  "title": "LURIA — Apostila 096: Distúrbios hidroeletrolíticos",
+  "source_sha256": "311331a3026446b67dfc45efe1381c66bcedc397d5e95ffecbad8e83641b5195",
+  "chars_estimated": 94822,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Apostila 096: Distúrbios hidroeletrolíticos",
+      "level": 1
+    },
+    {
+      "line": 8,
+      "title": "0. Etapa zero: comparação obrigatória de referências e preservação",
+      "level": 2
+    },
+    {
+      "line": 10,
+      "title": "Fontes do Drive efetivamente abertas e inspecionadas",
+      "level": 3
+    },
+    {
+      "line": 20,
+      "title": "Diretrizes e documentos primários para conferência",
+      "level": 3
+    },
+    {
+      "line": 27,
+      "title": "Matriz de lacunas detectadas antes da redação",
+      "level": 3
+    },
+    {
+      "line": 40,
+      "title": "1. Como pensar o equilíbrio entre água, eletrólitos e função renal",
+      "level": 2
+    },
+    {
+      "line": 48,
+      "title": "1.1. Primeiras perguntas diante de resultado alterado",
+      "level": 3
+    },
+    {
+      "line": 59,
+      "title": "2. Osmolalidade, tonicidade e interpretação do sódio",
+      "level": 2
+    },
+    {
+      "line": 75,
+      "title": "3. Hiponatremia: classificar antes de escolher fluido",
+      "level": 2
+    },
+    {
+      "line": 85,
+      "title": "3.1. Por que a duração importa",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "3.2. Sintomas de maior gravidade",
+      "level": 3
+    },
+    {
+      "line": 95,
+      "title": "3.3. Risco de sobrecorreção",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "3.4. Hiponatremia estável sem encefalopatia grave",
+      "level": 3
+    },
+    {
+      "line": 105,
+      "title": "4. Hipernatremia: déficit de água, exposição e capacidade de beber",
+      "level": 2
+    },
+    {
+      "line": 113,
+      "title": "4.1. Exemplo de raciocínio",
+      "level": 3
+    },
+    {
+      "line": 117,
+      "title": "5. Potássio: o valor e o ECG não caminham sempre juntos",
+      "level": 2
+    },
+    {
+      "line": 123,
+      "title": "5.1. Hiperpotassemia (hipercalemia): três tarefas diferentes",
+      "level": 3
+    },
+    {
+      "line": 131,
+      "title": "5.2. Gravidade e decisão",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "5.3. Seguimento do tratamento",
+      "level": 3
+    },
+    {
+      "line": 139,
+      "title": "6. Hipopotassemia: corrigir a deficiência e a causa",
+      "level": 2
+    },
+    {
+      "line": 149,
+      "title": "Exemplo clínico",
+      "level": 3
+    },
+    {
+      "line": 153,
+      "title": "7. Cálcio: ionizado, albumina e intervalo QT",
+      "level": 2
+    },
+    {
+      "line": 161,
+      "title": "Armadilha eletrocardiográfica",
+      "level": 3
+    },
+    {
+      "line": 165,
+      "title": "8. Magnésio e fósforo: distúrbios frequentemente esquecidos",
+      "level": 2
+    },
+    {
+      "line": 171,
+      "title": "Síndrome de realimentação: elo entre K, Mg e fósforo",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "9. Quadro integrador de emergência",
+      "level": 2
+    },
+    {
+      "line": 188,
+      "title": "10. Casos clínicos comentados — conjunto inicial",
+      "level": 2
+    },
+    {
+      "line": 190,
+      "title": "Caso A — Sódio 118 e convulsão",
+      "level": 3
+    },
+    {
+      "line": 194,
+      "title": "Caso B — Potássio 6,9 e ECG pouco alterado",
+      "level": 3
+    },
+    {
+      "line": 198,
+      "title": "Caso C — Hipocalemia persistente após diurético",
+      "level": 3
+    },
+    {
+      "line": 202,
+      "title": "Caso D — Hipernatremia e perda hídrica",
+      "level": 3
+    },
+    {
+      "line": 206,
+      "title": "11. Questões autorais — versão de estudo",
+      "level": 2
+    },
+    {
+      "line": 208,
+      "title": "Questão 1",
+      "level": 3
+    },
+    {
+      "line": 220,
+      "title": "Questão 2",
+      "level": 3
+    },
+    {
+      "line": 232,
+      "title": "Questão 3",
+      "level": 3
+    },
+    {
+      "line": 244,
+      "title": "Questão 4",
+      "level": 3
+    },
+    {
+      "line": 256,
+      "title": "Questão 5",
+      "level": 3
+    },
+    {
+      "line": 269,
+      "title": "12. Unidade, fórmula e interpretação: oficina de cálculo para residência",
+      "level": 2
+    },
+    {
+      "line": 273,
+      "title": "12.1. Equivalências que não permitem atalho",
+      "level": 3
+    },
+    {
+      "line": 279,
+      "title": "12.2. Cálculo de osmolalidade como ferramenta de hipóteses",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "12.3. Cálculo de água livre: estimativa estática versus paciente dinâmico",
+      "level": 3
+    },
+    {
+      "line": 289,
+      "title": "12.4. Índices urinários: por que o denominador e o diurético importam",
+      "level": 3
+    },
+    {
+      "line": 293,
+      "title": "12.5. Interpretação de cálcio por fração ativa",
+      "level": 3
+    },
+    {
+      "line": 299,
+      "title": "13. Algoritmo aprofundado do sódio: três perguntas antes da terapia",
+      "level": 2
+    },
+    {
+      "line": 303,
+      "title": "13.1. Primeiro: existe hipotonicidade verdadeira?",
+      "level": 3
+    },
+    {
+      "line": 311,
+      "title": "13.2. Como calcular osmolalidade sem errar a unidade",
+      "level": 3
+    },
+    {
+      "line": 321,
+      "title": "13.3. Segundo: por que o rim não excretou água livre?",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "13.4. Terceiro: qual o estado do volume circulante?",
+      "level": 3
+    },
+    {
+      "line": 339,
+      "title": "Quadro original: raciocínio de urina diante da hiponatremia hipotônica",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "14. Hiponatremia sintomática: estabilizar, controlar a velocidade e prevenir danos da correção",
+      "level": 2
+    },
+    {
+      "line": 355,
+      "title": "14.1. O que são bolus de salina hipertônica e por que não se busca o Na normal?",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "14.2. O limite diário é um teto, não um alvo",
+      "level": 3
+    },
+    {
+      "line": 367,
+      "title": "14.3. Por que a diurese pode acelerar o sódio sem mais soro hipertônico?",
+      "level": 3
+    },
+    {
+      "line": 373,
+      "title": "14.4. Reconhecer incerteza de evidência, sem confundir o estudante",
+      "level": 3
+    },
+    {
+      "line": 379,
+      "title": "15. Hipernatremia: organizar a reposição de água sem perder o cuidado da circulação",
+      "level": 2
+    },
+    {
+      "line": 383,
+      "title": "15.1. Identificar perfusão antes da água livre",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "15.2. Água corporal total e cálculo aproximado do déficit",
+      "level": 3
+    },
+    {
+      "line": 401,
+      "title": "15.3. Diferenciar perda de água de carga de sódio",
+      "level": 3
+    },
+    {
+      "line": 407,
+      "title": "15.4. Velocidade de correção: como ensinar uma área em evolução",
+      "level": 3
+    },
+    {
+      "line": 415,
+      "title": "15.5. O que monitorar ao longo do tratamento",
+      "level": 3
+    },
+    {
+      "line": 427,
+      "title": "16. Hiperpotassemia na emergência: estabilizar, deslocar e eliminar",
+      "level": 2
+    },
+    {
+      "line": 433,
+      "title": "16.1. Decidir se o resultado é verdadeiro sem atrasar tratamento",
+      "level": 3
+    },
+    {
+      "line": 439,
+      "title": "16.2. Passo 1: proteger o coração",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "16.3. Passo 2: deslocar potássio para o intracelular",
+      "level": 3
+    },
+    {
+      "line": 459,
+      "title": "16.4. Passo 3: remover K do organismo",
+      "level": 3
+    },
+    {
+      "line": 467,
+      "title": "16.5. Passo 4: documentar a resposta e evitar rebote",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "16.6. Interações e prevenção secundária",
+      "level": 3
+    },
+    {
+      "line": 489,
+      "title": "17. Hipopotassemia do adulto: estimar perdas e decidir via de correção",
+      "level": 2
+    },
+    {
+      "line": 493,
+      "title": "17.1. Procurar perdas digestivas e renais",
+      "level": 3
+    },
+    {
+      "line": 499,
+      "title": "17.2. Relação com magnésio",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "17.3. Reposição: por que a via importa",
+      "level": 3
+    },
+    {
+      "line": 509,
+      "title": "17.4. Condições especiais",
+      "level": 3
+    },
+    {
+      "line": 515,
+      "title": "18. Cálcio em emergência e endocrinologia: localizar o defeito do sistema",
+      "level": 2
+    },
+    {
+      "line": 519,
+      "title": "18.1. O que interpretar primeiro",
+      "level": 3
+    },
+    {
+      "line": 525,
+      "title": "18.2. Hipocalcemia aguda grave",
+      "level": 3
+    },
+    {
+      "line": 533,
+      "title": "18.3. Hipercalcemia: PTH é bifurcação diagnóstica",
+      "level": 3
+    },
+    {
+      "line": 543,
+      "title": "18.4. Quadro comparativo",
+      "level": 3
+    },
+    {
+      "line": 554,
+      "title": "19. Magnésio e fósforo: insuficiência renal, realimentação e arritmias",
+      "level": 2
+    },
+    {
+      "line": 556,
+      "title": "19.1. A deficiência de magnésio atravessa vários diagnósticos",
+      "level": 3
+    },
+    {
+      "line": 564,
+      "title": "19.2. Hipermagnesemia",
+      "level": 3
+    },
+    {
+      "line": 568,
+      "title": "19.3. Fosfato baixo, energia celular e risco de realimentação",
+      "level": 3
+    },
+    {
+      "line": 574,
+      "title": "19.4. Hiperfosfatemia na doença renal crônica",
+      "level": 3
+    },
+    {
+      "line": 580,
+      "title": "19.5. Síndrome de realimentação: mecanismo e critérios diagnósticos",
+      "level": 3
+    },
+    {
+      "line": 590,
+      "title": "Quadro de integração K–Mg–fosfato na realimentação",
+      "level": 3
+    },
+    {
+      "line": 600,
+      "title": "20. Quando terminar um caso de eletrólitos: dez verificações de segurança",
+      "level": 2
+    },
+    {
+      "line": 614,
+      "title": "21. Casos integrados avançados: exames, mecanismo, conduta e acompanhamento",
+      "level": 2
+    },
+    {
+      "line": 618,
+      "title": "Caso E — Hiponatremia e tiazídico: quando a restauração volêmica acelera a correção",
+      "level": 3
+    },
+    {
+      "line": 628,
+      "title": "Caso F — Hipercalemia, bradicardia e diferença entre gluconato e cloreto",
+      "level": 3
+    },
+    {
+      "line": 638,
+      "title": "Caso G — Glicemia cai duas horas após insulina para hipercalemia",
+      "level": 3
+    },
+    {
+      "line": 646,
+      "title": "Caso H — Hipercalcemia grave e função renal reduzida",
+      "level": 3
+    },
+    {
+      "line": 654,
+      "title": "Caso I — Realimentação após semanas de ingestão mínima",
+      "level": 3
+    },
+    {
+      "line": 662,
+      "title": "Caso J — Cálcio total baixo e ionizado normal",
+      "level": 3
+    },
+    {
+      "line": 668,
+      "title": "22. Questões de múltipla escolha com justificativa por alternativa",
+      "level": 2
+    },
+    {
+      "line": 670,
+      "title": "Questão 6 — Sódio e osmolalidade",
+      "level": 3
+    },
+    {
+      "line": 682,
+      "title": "Questão 7 — Cálculo de déficit hídrico",
+      "level": 3
+    },
+    {
+      "line": 694,
+      "title": "Questão 8 — Hiponatremia após reposição isotônica",
+      "level": 3
+    },
+    {
+      "line": 706,
+      "title": "Questão 9 — Cálcio IV em hiperpotassemia",
+      "level": 3
+    },
+    {
+      "line": 718,
+      "title": "Questão 10 — Formulação de cálcio e risco de erro",
+      "level": 3
+    },
+    {
+      "line": 730,
+      "title": "Questão 11 — Insulina-glicose e monitorização",
+      "level": 3
+    },
+    {
+      "line": 742,
+      "title": "Questão 12 — PTH e hipercalcemia",
+      "level": 3
+    },
+    {
+      "line": 754,
+      "title": "Questão 13 — Realimentação e eletrolíticos",
+      "level": 3
+    },
+    {
+      "line": 766,
+      "title": "Questão 14 — Hiperfosfatemia na DRC",
+      "level": 3
+    },
+    {
+      "line": 778,
+      "title": "23. Planejamento didático de figuras e imagens para a fila do Admin",
+      "level": 2
+    },
+    {
+      "line": 798,
+      "title": "24. Auditoria final pendente — critérios de publicação",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. **“04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf”**: aborda alterações eletrocardiográficas de hipo/hiperpotassemia e cálcio, mas mistura esses assuntos com pericardite e derrame pericárdico. Contém mapas de alterações do ECG e exemplos, sem desenvolver integralmente investigação de volume, osmolalidade, tratamentos ou seguimento. **Autoria institucional não verificada**; contém marca “Medicina livre”. Não atribuir ao Estratégia MED.",
+    "2. **“08 - GASOMETRIA ARTERIAL - PARTE 2.pdf”**: concentra-se em acidose/alcalose, anion gap e cloro urinário. Possui referências cruzadas a Na, K e cloro; é útil apenas como comparação de interfaces entre distúrbios hidroeletrolíticos e acidobásicos. O conteúdo acidobásico completo ficará reservado ao tema 101. **Autoria institucional não verificada.**",
+    "3. **“02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”**: descreve doença renal aguda e crônica, consequências metabólicas e indicações gerais de diálise, mas não constitui apostila integral dos distúrbios de eletrólitos. Parte do texto está direcionada à pediatria; a aplicação em adultos exige confirmação independente. **Autoria institucional não verificada.**",
+    "Os três materiais são comparações **parciais**; o projeto não possui, entre os documentos efetivamente abertos neste turno, um livro-texto comparável cobrindo por completo os cinco eixos eletrolíticos. Por isso a etapa zero **não certifica equivalência pedagógica integral** e a apostila deve permanecer em revisão.",
+    "**Referência de identidade LURIA:** o padrão do repositório, especialmente a apostila \\`apostilas/amniorrexe-prematura/index.html\\` e a estrutura de livros com introdução, mapa de decisão, capítulos, quadros, casos, questões e fontes. Nenhum HTML médico existente foi substituído.",
+    "- European Society of Endocrinology, European Society of Intensive Care Medicine e European Renal Association. *Clinical practice guideline on diagnosis and treatment of hyponatraemia*. *European Journal of Endocrinology*. 2014;170:G1–G47. https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+    "- UK Kidney Association. *Clinical Practice Guideline: Management of Hyperkalaemia in Adults*. Outubro de 2023. https://www.ukkidney.org/sites/default/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223.pdf",
+    "- UK Kidney Association. *Hyperkalaemia in Hospital* — recomendações de monitorização e prevenção secundária. https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-9-ii-hyperkalaemia-in-hospital-21-1-21-4/",
+    "- Ministério da Saúde — consultar protocolos locais de emergência, farmácia hospitalar e documentos nacionais aplicáveis antes de validar doses. As referências acima são internacionais e não certificam disponibilidade ou equivalência das apresentações brasileiras.",
+    "| Competência | Materiais comparativos do Drive | Necessidade do texto LURIA |",
+    "|---|---|---|",
+    "| Osmolalidade e tonicidade | Insuficiente | Explicar água corporal, gradiente osmótico e hiperglicemia |",
+    "| Hiponatremia | Citada indiretamente | Distinguir pseudohiponatremia, hipertônica e hipotônica; urina e tratamento |",
+    "| Hipernatremia | Praticamente ausente | Avaliação de déficit hídrico, mecanismo e limites seguros |",
+    "| Hiperpotassemia | Ênfase excessiva no ECG | Identificar risco mesmo com ECG normal; três objetivos do tratamento |",
+    "| Hipopotassemia | Alterações do ECG | Reposição, magnésio, diurese, perdas e segurança da infusão |",
+    "| Cálcio | Alterações do QT | Cálcio ionizado versus total, albumina, PTH e causas |",
+    "| Magnésio/fósforo | Insuficiente | Reconhecer repercussões neuromusculares e cardíacas |",
+    "| Caso e decisão | Quadros de revisão | Decisões sequenciais com segurança e justificativa |"
+  ],
+  "external_links": [
+    {
+      "url": "https://academic.oup.com/ejendo/article/170/3/G1/6668028",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ukkidney.org/sites/default/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-9-ii-hyperkalaemia-in-hospital-21-1-21-4/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2826087",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10175862/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39765195/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ukkidney.org/sites/renal.org/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223_0.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.uk/drug-safety-update/calcium-chloride-calcium-gluconate-potential-risk-of-underdosing-with-calcium-gluconate-in-severe-hyperkalaemia",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbn.org.br/wp-content/uploads/2024/05/Clique-aqui-para-acessar-a-guia-na-integra.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314808/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117371/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/hypercalcemia",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://kdigo.org/guidelines/ckd-mbd/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/ncp.10474",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exemplo:** Na 128 mmol/L, glicose 90 mg/dL, ureia 30 mg/dL. Osmolalidade estimada = 256 + 5 + 5 = 266 mOsm/kg. A paciente apresenta hiponatremia com hipo-osmolalidade estimada, a confirmar com dados clínicos, medição direta e investigação de urina.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exemplo contrastante:** Na 128 mmol/L e glicose de 540 mg/dL. A hiperglicemia contribui fortemente para a osmolalidade/tonicidade, atraindo água para o extracelular e reduzindo a concentração de sódio medido. Chamar isso automaticamente de hiponatremia hipotônica e administrar salina hipertônica seria erro potencialmente grave. Corrigir glicemia e monitorar evolução de sódio, osmolalidade e volume é central; a conversão do sódio conforme glicose usa fórmulas estimativas que variam por faixa de hiperglicemia e situação clínica.",
+      "pattern": 0
+    },
+    {
+      "text": "**Hiponatremia** geralmente é definida por sódio sérico <135 mmol/L. O primeiro eixo é a **tonicidade**, e não o volume aparente. A sequência de estudo deve separar:",
+      "pattern": 0
+    },
+    {
+      "text": "- European Society of Endocrinology, European Society of Intensive Care Medicine e European Renal Association. *Clinical practice guideline on diagnosis and treatment of hyponatraemia*. *European Journal of Endocrinology*. 2014;170:G1–G47. https://academic.oup.com/ejendo/article/170/3/G1/6668028 - UK Kidney Association. *Clinical Practice Guideline: Management of Hyperkalaemia in Adults*. Outubro de 2023. https://www.ukkidney.org/sites/default/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223.pdf - UK Kidney Association. *Hyperkalaemia in Hospital* — recomendações de monitorização e prevenção secundária. https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-9-ii-hyperkalaemia-in-hospital-21-1-21-4/ - Ministério da Saúde — consultar protocolos locais de emergência, farmácia hospitalar e documentos nacionais aplicáveis antes de validar doses. As referências acima são internacionais e não certificam disponibilidade ou equivalência das apresentações brasileiras.",
+      "pattern": 1
+    },
+    {
+      "text": "Um número isolado não deve induzir decisão automática. A pergunta de emergência é: **há risco imediato de lesão cerebral ou arritmia?** Se sim, estabilização e confirmação etiológica avançam simultaneamente.",
+      "pattern": 1
+    },
+    {
+      "text": "A expressão depende de unidade laboratorial e aproximações de partículas. Não misturar fórmulas que empregam **ureia** com aquelas que empregam **BUN**; o fator de conversão não é o mesmo. Para tonicidade efetiva, exclui-se a contribuição da ureia na aproximação usada. O valor medido, quando disponível, esclarece discordâncias e ajuda a investigar osmóis não mensurados.",
+      "pattern": 1
+    },
+    {
+      "text": "**Lote:** 5 — tema 096 de 260 · **Área:** Clínica Médica **Estado editorial:** rascunho parcial original; **NÃO APROVADO** para publicação ou prescrição. **Data da etapa zero:** 14/10/2026. **Escopo:** raciocínio clínico do sódio, potássio, cálcio, magnésio e fósforo em adultos; integra urgência, enfermaria e APS. Interpretação aprofundada de gasometria será desenvolvida na apostila **101 — Distúrbios ácido-base** para evitar duplicação.",
+      "pattern": 2
+    },
+    {
+      "text": "**Magnésio:** deficiência pode acompanhar alcoolismo, diarreia, perda renal, diuréticos e alguns fármacos; está associada a manifestações neuromusculares, hipocalemia e hipocalcemia. Em contexto de arritmia específica, como *torsades de pointes*, o sulfato de magnésio IV tem uso emergencial sob protocolo, independentemente de haver hipomagnesemia documentada. Reposição de magnésio requer avaliação renal: doentes com excreção prejudicada têm risco de acúmulo e toxicidade.",
+      "pattern": 2
+    },
+    {
+      "text": "Uma revisão sistemática publicada em 2024/2025 (*JAMA Internal Medicine*) associou correções mais rápidas de hiponatremia grave a menor mortalidade, sem demonstrar aumento estatisticamente significativo de desmielinização nas coortes avaliadas. **Isso não revoga automaticamente os limites de segurança em diretrizes**, pois existem confundidores, heterogeneidade e limitação de dados sobre grupos de risco. A prática clínica deve equilibrar risco de edema cerebral pelo tratamento insuficiente e risco de lesão osmótica pelo excesso, com decisão especializada e monitorização. Não é aceitável concluir que “agora pode corrigir quanto quiser”.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Lote:** 5 — tema 096 de 260 · **Área:** Clínica Médica **Estado editorial:** rascunho parcial original; **NÃO APROVADO** para publicação ou prescrição. **Data da etapa zero:** 14/10/2026. **Escopo:** raciocínio clínico do sódio, potássio, cálcio, magnésio e fósforo em adultos; integra urgência, enfermaria e APS. Interpretação aprofundada de gasometria será desenvolvida na apostila **101 — Distúrbios ácido-base** para evitar duplicação."
+    },
+    {
+      "text": "1. **“04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf”**: aborda alterações eletrocardiográficas de hipo/hiperpotassemia e cálcio, mas mistura esses assuntos com pericardite e derrame pericárdico. Contém mapas de alterações do ECG e exemplos, sem desenvolver integralmente investigação de volume, osmolalidade, tratamentos ou seguimento. **Autoria institucional não verificada**; contém marca “Medicina livre”. Não atribuir ao Estratégia MED. 2. **“08 - GASOMETRIA ARTERIAL - PARTE 2.pdf”**: concentra-se em acidose/alcalose, anion gap e cloro urinário. Possui referências cruzadas a Na, K e cloro; é útil apenas como comparação de interfaces entre distúrbios hidroeletrolíticos e acidobásicos. O conteúdo acidobásico completo ficará reservado ao tema 101. **Autoria institucional não verificada.** 3. **“02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”**: descreve doença renal aguda e crônica, consequências metabólicas e indicações gerais de diálise, mas não constitui apostila integral dos distúrbios de eletrólitos. Parte do texto está direcionada à pediatria; a aplicação em adultos exige confirmação independente. **Autoria institucional não verificada.**"
+    }
+  ]
+}

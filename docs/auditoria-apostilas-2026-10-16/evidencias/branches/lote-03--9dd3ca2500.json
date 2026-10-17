@@ -1,0 +1,396 @@
+{
+  "sha": "9dd3ca25009f30a200c7acff96c4e46ab37a8aee",
+  "path": "apostilas/_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--9dd3ca2500",
+  "title": "LURIA — Aula 43: Puericultura e prevenção de acidentes (rascunho não publicado)",
+  "format": ".md",
+  "chars_estimated": 92298,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 43: Puericultura e prevenção de acidentes (rascunho não publicado)"
+    },
+    {
+      "title": "Comparativo exigido"
+    },
+    {
+      "title": "1. Objetivos da consulta de puericultura"
+    },
+    {
+      "title": "2. Medidas e curvas: interpretação longitudinal"
+    },
+    {
+      "title": "3. Desenvolvimento: observar mais que cumprir uma tabela"
+    },
+    {
+      "title": "4. Prevenção de acidentes por idade e contexto"
+    },
+    {
+      "title": "5. A consulta como linha de cuidado"
+    },
+    {
+      "title": "6. Organização longitudinal da puericultura no SUS: agenda e conteúdo da consulta"
+    },
+    {
+      "title": "6.1 Uma consulta não é apenas pesar e medir"
+    },
+    {
+      "title": "6.2 Roteiro prático de consulta"
+    },
+    {
+      "title": "6.3 Caderneta impressa e digital: complementaridade"
+    },
+    {
+      "title": "7. Crescimento: medidas, escores-z e investigação por padrões"
+    },
+    {
+      "title": "7.1 Como medir corretamente"
+    },
+    {
+      "title": "7.2 Escore-z, percentil e curva longitudinal"
+    },
+    {
+      "title": "7.3 Velocidade de crescimento e por que medidas seriadas importam"
+    },
+    {
+      "title": "7.4 Baixa estatura: algoritmo diferencial"
+    },
+    {
+      "title": "7.5 Falha de ganho ponderal e excesso de peso"
+    },
+    {
+      "title": "8. Neurodesenvolvimento: vigilância, triagem e sinais de alerta"
+    },
+    {
+      "title": "8.1 A avaliação começa antes de qualquer questionário"
+    },
+    {
+      "title": "8.2 Marcos orientadores e o cuidado com listas rígidas"
+    },
+    {
+      "title": "8.3 Rastreio do TEA: instrumento não é diagnóstico"
+    },
+    {
+      "title": "8.4 Atraso de fala: diferencial auditivo e neurológico"
+    },
+    {
+      "title": "8.5 Prematuridade e idade corrigida"
+    },
+    {
+      "title": "9. Alimentação de zero a dois anos: fisiologia, prática e riscos"
+    },
+    {
+      "title": "9.1 Aleitamento materno e sua promoção sem julgamento"
+    },
+    {
+      "title": "9.2 Alimentação complementar aos seis meses"
+    },
+    {
+      "title": "9.3 Ferro, vitamina A e avaliação de risco"
+    },
+    {
+      "title": "9.4 Riscos alimentares: engasgo, contaminantes e hábitos"
+    },
+    {
+      "title": "10. Sono seguro, comportamento e saúde emocional"
+    },
+    {
+      "title": "10.1 Sono seguro do lactente: separar recomendação de conforto adulto"
+    },
+    {
+      "title": "10.2 Rotina, vínculo e autorregulação"
+    },
+    {
+      "title": "10.3 Telas, brincadeira e desenvolvimento"
+    },
+    {
+      "title": "11. Exame físico e rastreamentos por idade: o que realmente vale investigar"
+    },
+    {
+      "title": "11.1 Repetir exame com perguntas clínicas"
+    },
+    {
+      "title": "11.2 Triagens neonatais e seguimento"
+    },
+    {
+      "title": "11.3 Visão, audição e saúde bucal"
+    },
+    {
+      "title": "11.4 Quando solicitar exames laboratoriais"
+    },
+    {
+      "title": "12. Vacinação e oportunidades perdidas"
+    },
+    {
+      "title": "13. Proteção contra violências, negligência e sofrimento familiar"
+    },
+    {
+      "title": "13.1 Diferenciar vulnerabilidade, negligência e violência"
+    },
+    {
+      "title": "13.2 Como abordar sem aumentar o risco"
+    },
+    {
+      "title": "13.3 Saúde mental parental e ambiente de cuidado"
+    },
+    {
+      "title": "14. Prevenção de acidentes: avaliação domiciliar por tipo de risco"
+    },
+    {
+      "title": "14.1 Quedas e traumatismos"
+    },
+    {
+      "title": "14.2 Afogamento e ambientes com água"
+    },
+    {
+      "title": "14.3 Queimaduras, escaldaduras e eletricidade"
+    },
+    {
+      "title": "14.4 Intoxicações por medicamentos e produtos domésticos"
+    },
+    {
+      "title": "14.5 Engasgo e aspiração de corpo estranho"
+    },
+    {
+      "title": "14.6 Trânsito: legislação e segurança adicional"
+    },
+    {
+      "title": "14.7 Riscos por faixa etária — matriz prática"
+    },
+    {
+      "title": "15. Roteiro de condutas para achados anormais em puericultura"
+    },
+    {
+      "title": "15.1 Criança que perde percentis: a primeira decisão é validar a medida"
+    },
+    {
+      "title": "15.2 Falta de ganho de estatura: diferenciação por tempo e fenótipo"
+    },
+    {
+      "title": "15.3 Atraso de desenvolvimento e regressão"
+    },
+    {
+      "title": "15.4 Suspeita de dificuldade auditiva/visual"
+    },
+    {
+      "title": "15.5 Recusa alimentar e seletividade: qual é o risco?"
+    },
+    {
+      "title": "15.6 Intercorrência febril não exclui necessidades preventivas"
+    },
+    {
+      "title": "16. A consulta de puericultura por sistemas — checklist clínico aprofundado"
+    },
+    {
+      "title": "16.1 História gestacional e neonatal"
+    },
+    {
+      "title": "16.2 Antecedentes familiares"
+    },
+    {
+      "title": "16.3 Ambiente e determinantes sociais"
+    },
+    {
+      "title": "16.4 Saúde da família como parte do cuidado pediátrico"
+    },
+    {
+      "title": "16.5 Saúde do adolescente em transição"
+    },
+    {
+      "title": "17. Orientação antecipatória estruturada por encontro: exemplos de comunicação"
+    },
+    {
+      "title": "17.1 Na primeira semana"
+    },
+    {
+      "title": "17.2 Dos dois aos quatro meses"
+    },
+    {
+      "title": "17.3 Aos seis meses"
+    },
+    {
+      "title": "17.4 Aos nove e doze meses"
+    },
+    {
+      "title": "17.5 Aos dezoito e vinte e quatro meses"
+    },
+    {
+      "title": "17.6 Pré-escolar e escolar"
+    },
+    {
+      "title": "18. Algoritmos textuais de prática e prova"
+    },
+    {
+      "title": "Fluxo A — consulta sem queixa principal"
+    },
+    {
+      "title": "Fluxo B — suspeita de alteração de crescimento"
+    },
+    {
+      "title": "Fluxo C — atraso ou regressão do neurodesenvolvimento"
+    },
+    {
+      "title": "Fluxo D — prevenção de lesões não intencionais"
+    },
+    {
+      "title": "Fluxo E — suspeita de violência"
+    },
+    {
+      "title": "Mini mapa comparativo — o que a puericultura não deve confundir"
+    },
+    {
+      "title": "19. Oito casos clínicos integrados de puericultura"
+    },
+    {
+      "title": "Caso 1 — “O peso despencou”: curva duvidosa e risco nutricional verdadeiro"
+    },
+    {
+      "title": "Caso 2 — Perda de palavras em criança de 21 meses"
+    },
+    {
+      "title": "Caso 3 — Prematuro: confusão entre idade cronológica e corrigida"
+    },
+    {
+      "title": "Caso 4 — Lactente pequeno dormindo no sofá com a mãe exausta"
+    },
+    {
+      "title": "Caso 5 — Criança de três anos com acesso livre à piscina"
+    },
+    {
+      "title": "Caso 6 — Baixa estatura em menino com ganho de peso aumentado"
+    },
+    {
+      "title": "Caso 7 — Suspeita de violência não pode ser reduzida à curiosidade diagnóstica"
+    },
+    {
+      "title": "Caso 8 — Sonolência súbita com frasco de medicamento aberto"
+    },
+    {
+      "title": "20. Doze questões autorais de prova com comentários por alternativa"
+    },
+    {
+      "title": "Questão 1 — Agenda de puericultura do Ministério da Saúde"
+    },
+    {
+      "title": "Questão 2 — A curva não é só o último percentil"
+    },
+    {
+      "title": "Questão 3 — Peso aumenta, altura desacelera"
+    },
+    {
+      "title": "Questão 4 — Correção da idade do prematuro"
+    },
+    {
+      "title": "Questão 5 — Regressão de linguagem"
+    },
+    {
+      "title": "Questão 6 — A finalidade do M-CHAT-R/F"
+    },
+    {
+      "title": "Questão 7 — Guia Alimentar para menores de dois anos"
+    },
+    {
+      "title": "Questão 8 — Sono seguro"
+    },
+    {
+      "title": "Questão 9 — Prevenção de afogamento"
+    },
+    {
+      "title": "Questão 10 — Transporte infantil"
+    },
+    {
+      "title": "Questão 11 — Intoxicação e reação da família"
+    },
+    {
+      "title": "Questão 12 — Violência e proteção integral"
+    },
+    {
+      "title": "21. Referências clínicas e normas verificáveis"
+    },
+    {
+      "title": "22. Matriz de cobertura e antirrepetição com a aula 48"
+    },
+    {
+      "title": "23. Curadoria de recursos visuais — pré-manifesto SEM aprovação"
+    },
+    {
+      "title": "24. Controle de qualidade e pendências objetivas"
+    }
+  ],
+  "reference_entries": [
+    "**Bases brasileiras prioritárias (conteúdo clínico normativo e organização do SUS):**",
+    "1. Ministério da Saúde. **Caderneta da Criança — Passaporte da Cidadania.** Página institucional com conteúdo da versão física, registro de crescimento, desenvolvimento, vacinas e prevenção de acidentes. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+    "2. Ministério da Saúde. **Primeira infância — Acompanhamento da Saúde.** Agenda de consultas: primeira semana; 1, 2, 4, 6, 9, 12, 18, 24 e 36 meses, com pelo menos acompanhamento anual depois de dois anos, adaptado ao risco. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/acompanhamento-da-saude",
+    "3. Ministério da Saúde. **Caderneta Digital da Criança, Meu SUS Digital** (página institucional, disponibilizada antes de 2026 e orientações divulgadas em 2026). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+    "4. Ministério da Saúde. **Guia Alimentar para Crianças Brasileiras Menores de 2 Anos** (2019) e página de alimentação saudável. https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes/guia_da_crianca_2019.pdf ; https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/alimentacao-saudavel",
+    "5. Ministério da Saúde. **TEA na Atenção Primária à Saúde** — uso do M-CHAT-R/F como rastreio de risco entre 16 e 30 meses. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo/aps",
+    "6. Ministério da Saúde. **Saúde da Criança** — vigilância do desenvolvimento nos primeiros anos e atenção integral. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "7. Ministério da Saúde. **Prevenção e Cultura de Paz**, estratégia de prevenção de violências e acidentes na PNAISC. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/prevencao-e-cultura-de-paz/prevencao-e-cultura-de-paz/",
+    "8. Ministério da Saúde. **Prevenção de Afogamento**, definição e estratégias integradas, incluindo materiais em parceria com Sobrasa. https://www.gov.br/saude/pt-br/composicao/svsa/vigilancia-de-doencas-cronicas-nao-transmissiveis/vigilancia-de-violencias-e-acidentes/prevencao-de-afogamento",
+    "9. Ministério dos Transportes / CONTRAN. **Resolução nº 819/2021** sobre transporte e dispositivos de retenção para crianças, observando regras e alterações aplicáveis. https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao8192021.pdf",
+    "10. Brasil, Portaria de Consolidação GM/MS nº 5/2017, art. 110–111 e atualizações. **Programa Nacional de Suplementação de Ferro**, público-alvo 6–24 meses e outras situações programáticas. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0005_03_10_2017.html",
+    "**Referências internacionais complementares, não normativas do SUS:**",
+    "11. American Academy of Pediatrics (HealthyChildren). **Preocupação com desenvolvimento**, vigilância em todas as consultas, rastreio geral em 9, 18 e 30 meses e TEA em 18 e 24 meses segundo agenda norte-americana. https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/What-should-I-do-if-I-am-worried-about-my-childs-development.aspx",
+    "12. World Health Organization. **Child Growth Standards**, curvas para 0–5 anos, e **Growth Reference 5–19 years**. https://www.who.int/tools/child-growth-standards ; https://www.who.int/tools/growth-reference-data-for-5to19-years",
+    "**Diferenças que não devem ser apagadas no HTML final:** (a) agenda de consultas e agenda de vacinas não são iguais; (b) M-CHAT-R/F na Caderneta é rastreio e não diagnóstico; (c) cronograma norte-americano da AAP é diferente do conjunto operacional brasileiro; (d) a Resolução 819/2021 contém condições/exceções e pode ser alterada, não basta decorar idade; (e) protocolos de suplementação do SUS variam conforme estratégia, região, produtos e atualização.",
+    "**Deduplicação deliberada:** a aula 43 aborda **verificação da situação vacinal e oportunidade de cuidado**. Não substituir nem duplicar toda a aula 48 (Imunizações na infância), cuja função é detalhar produtos, esquemas, contraindicações, situações especiais e calendários atuais. A aula 53 (Desidratação Pediátrica) trata de manejo técnico A/B/C; aqui, a orientação é reconhecer perda ponderal e desidratação como risco, não reproduzir volumes. A aula 58 (Diarreia Aguda) aborda etiologias e terapia; aqui, a ênfase é alimentação e prevenção longitudinal.",
+    "**Regras:** imagens clínicas/externas só podem ser incorporadas após licença compatível com produto comercial, proveniência confiável, pertinência anatômica, avaliação ética e aprovação no Admin. Converter e otimizar para WebP pelo pipeline. Curvas oficiais OMS não devem ser copiadas como arte do PDF de cursinho; se houver licença aplicável, citar a fonte e trabalhar com dados/diretrizes verificáveis. Diagramas e ilustrações originais devem passar pela revisão médica e visual.",
+    "**Produzido nesta expansão:**",
+    "- desenvolvimento real das seções de consultas, medida e interpretação de curvas, risco nutricional, neurodesenvolvimento, saúde sensorial, prematuridade, alimentação, sono, triagens, violência, acidentes e comunicação na APS;",
+    "- oito casos clínicos originais com hipóteses, exame, interpretação, conduta, alertas e fechamento didático;",
+    "- doze questões de múltipla escolha, com quatro alternativas e explicações individuais;",
+    "- cinco algoritmos operacionais, comparações e matriz de vínculo curricular;",
+    "- referências primárias brasileiras e distinções de evidência de outros países.",
+    "**Não realizado / ainda necessário:** revisão clínico-pediátrica especializada de pontos de rastreio e suplementação; validação jurídica da norma de transporte na data da publicação; leitura de apostila correlata *completa* de acidentes no Drive (não encontrada; material principal de crescimento/obesidade é **parcial** para o tema); seleção e aprovação de imagens reais; criação de diagramas; conversão para HTML seguindo padrão LURIA; inspeção desktop/PWA; teste humano de autossuficiência da apostila; revisão final de linguagem e possíveis redundâncias.",
+    "**Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** Meta de extensão útil é uma estimativa de cobertura a ser checada, não homologação médica. Não publicar/mesclar/deployar até conclusão dos gates."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/acompanhamento-da-saude",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+    "https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes/guia_da_crianca_2019.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/alimentacao-saudavel",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo/aps",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/prevencao-e-cultura-de-paz/prevencao-e-cultura-de-paz/",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/vigilancia-de-doencas-cronicas-nao-transmissiveis/vigilancia-de-violencias-e-acidentes/prevencao-de-afogamento",
+    "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao8192021.pdf",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0005_03_10_2017.html",
+    "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/What-should-I-do-if-I-am-worried-about-my-childs-development.aspx",
+    "https://www.who.int/tools/child-growth-standards",
+    "https://www.who.int/tools/growth-reference-data-for-5to19-years"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O Ministério da Saúde recomenda consultas de rotina na **primeira semana**, depois com **1, 2, 4, 6, 9, 12, 18, 24 e 36 meses**, e ao menos anualmente a partir dos dois anos, normalmente próximo ao aniversário; o registro de 36 meses explicita o acompanhamento anual no terceiro ano. Crianças de risco precisam de visitas mais frequentes: prematuridade, baixo peso, condição crônica complexa, preocupação com crescimento, déficit sensorial, dificuldades alimentares, transtornos do desenvolvimento e vulnerabilidade psicossocial. Este calendário representa acompanhamento clínico, **não** o calendário vacinal."
+    },
+    {
+      "text": "| Faixa etária | Objetivos mais relevantes | Riscos/antecipação | |---|---|---| | Primeira semana | adaptação ao nascimento, aleitamento, perda/recuperação de peso, icterícia, exame neonatal, triagens, vínculo e apoio familiar | sono seguro, não deixar em superfície alta, transporte correto | | 1–2 meses | ganho ponderal, alimentação, sensorialidade, sinais sociais iniciais, exame físico, condição emocional de cuidadores | sufocação, superaquecimento, queimadura no banho | | 4–6 meses | curvas, interação, postura/controle cervical, alimentação exclusiva até seis meses e transição adequada | rolar e cair, pequenos objetos, superfície de sono |"
+    },
+    {
+      "text": "1. **Abrir com prioridade da família:** “O que mais preocupa vocês no crescimento ou comportamento?” A escuta frequentemente revela sintoma que a ficha não captura. 2. **Revisar acontecimentos desde a consulta anterior:** internações, medicamentos, mudanças da alimentação, quedas, ambiente e acesso à creche/escola. 3. **Medir e registrar:** peso, comprimento/estatura, IMC quando pertinente, perímetro cefálico no período recomendado; comparar curva longitudinal e técnica de medida. 4. **Observar desenvolvimento:** interação, movimentos, linguagem, brincadeira, comportamento e marcos na Caderneta; investigar regressão. 5. **Realizar exame físic"
+    },
+    {
+      "text": "A Caderneta da Criança é entregue na alta e acompanha até os **9 anos**, reunindo crescimento, desenvolvimento, vacinas, saúde bucal, prevenção de acidentes e direitos. É instrumento compartilhado entre família, APS e outros setores. Em 2026, o Ministério mantém também **Caderneta Digital no Meu SUS Digital**, com histórico de registros integrados ao SUS e alertas, desde que o vínculo da criança com o responsável esteja devidamente registrado. O registro digital é complemento: inconsistência de sincronização ou vínculo não substitui verificação na carteira física, história e sistema oficial da unidade. Nunca presumir vacinação realizada apena"
+    },
+    {
+      "text": "Em menores de 2 anos, comprimento geralmente é aferido em posição deitada com infantômetro adequado, idealmente com ajuda para manter cabeça e pernas em posição correta; acima dessa idade, usa-se estadiômetro em pé quando a criança consegue permanecer na postura correta. Não é equivalente comparar comprimento supino e estatura em pé sem considerar diferença de técnica. Peso requer balança calibrada, roupas removidas ou controladas e registro de data/horário; fraldas molhadas e casacos podem alterar medidas de pequenos lactentes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

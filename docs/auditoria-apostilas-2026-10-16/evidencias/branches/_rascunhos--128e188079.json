@@ -1,0 +1,191 @@
+{
+  "sha": "128e188079b3f68f42864b2bf9852ce492049042",
+  "path": "apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--128e188079",
+  "title": "LURIA | Aula 179 — Câncer de endométrio: do sangramento ao tratamento orientado por risco",
+  "format": ".md",
+  "chars_estimated": 41897,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 179 — Câncer de endométrio: do sangramento ao tratamento orientado por risco"
+    },
+    {
+      "title": "Etapa zero — auditoria da base, comparação com Drive e atualização científica"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Introdução: por que o endométrio sangra?"
+    },
+    {
+      "title": "2. Epidemiologia, risco e prevenção: pensar em mecanismos, não rótulos"
+    },
+    {
+      "title": "3. Histologia e biologia molecular — um mesmo órgão, várias doenças"
+    },
+    {
+      "title": "4. Quadro clínico e diagnósticos diferenciais"
+    },
+    {
+      "title": "Perguntas essenciais da anamnese"
+    },
+    {
+      "title": "5. Abordagem inicial: antes e depois da atualização ACOG 2026"
+    },
+    {
+      "title": "Sequência em contexto ambulatorial"
+    },
+    {
+      "title": "Quando US não basta"
+    },
+    {
+      "title": "6. Hiperplasia endometrial e EIN: a fronteira com câncer"
+    },
+    {
+      "title": "7. Confirmou câncer: que informações devem estar no laudo?"
+    },
+    {
+      "title": "Exames de extensão"
+    },
+    {
+      "title": "8. FIGO 2023: mapa didático que integra anatomia e biologia"
+    },
+    {
+      "title": "9. Tratamento cirúrgico: operação proporcional ao risco"
+    },
+    {
+      "title": "Mapeamento de linfonodo sentinela"
+    },
+    {
+      "title": "Segurança perioperatória"
+    },
+    {
+      "title": "10. Adjuvância: por que nem toda paciente recebe radioterapia/quimioterapia?"
+    },
+    {
+      "title": "11. Doença avançada ou recorrente e tratamento sistêmico"
+    },
+    {
+      "title": "Tratamento de sintomas e cuidado integral"
+    },
+    {
+      "title": "12. Preservação da fertilidade: exceção planejada, não alternativa casual"
+    },
+    {
+      "title": "13. Lynch e genética: o que perguntar e quando encaminhar"
+    },
+    {
+      "title": "14. Seguimento, qualidade de vida e prognóstico"
+    },
+    {
+      "title": "15. Fluxogramas textuais LURIA"
+    },
+    {
+      "title": "Fluxo A — Sangramento pós-menopausa"
+    },
+    {
+      "title": "Fluxo B — Câncer confirmado"
+    },
+    {
+      "title": "Fluxo C — Desejo reprodutivo"
+    },
+    {
+      "title": "16. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Pequeno sangramento depois da menopausa"
+    },
+    {
+      "title": "Caso 2 — Sangramento persistente com pipelle benigna"
+    },
+    {
+      "title": "Caso 3 — EIN sem câncer diagnosticado na biópsia"
+    },
+    {
+      "title": "Caso 4 — Tumores aparentemente semelhantes, perfis moleculares opostos"
+    },
+    {
+      "title": "Caso 5 — Desejo de gestar com tumor inicial"
+    },
+    {
+      "title": "Caso 6 — MMRd e história familiar de câncer colorretal"
+    },
+    {
+      "title": "Caso 7 — Hemorragia uterina e instabilidade"
+    },
+    {
+      "title": "17. Questões autorais comentadas — residência/ENAMED"
+    },
+    {
+      "title": "18. Resumo de alto rendimento e armadilhas"
+    },
+    {
+      "title": "19. Imagens candidatas — curadoria sem publicação automática"
+    },
+    {
+      "title": "20. Referências verificáveis e diferenças de fonte"
+    },
+    {
+      "title": "Divergências explicadas"
+    },
+    {
+      "title": "21. Auditoria final desta versão — não certificar"
+    }
+  ],
+  "reference_entries": [
+    "1. Instituto Nacional de Câncer (INCA). **Câncer do corpo do útero — versão para profissionais de saúde**. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+    "2. Concin N, et al. **ESGO–ESTRO–ESP guidelines for endometrial carcinoma: update 2025**. Lancet Oncology. 2025;26:e423–e435. DOI: 10.1016/S1470-2045(25)00167-6. https://pubmed.ncbi.nlm.nih.gov/40744042/",
+    "3. FIGO. **FIGO staging of endometrial cancer: 2023**. Int J Gynecol Obstet. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/",
+    "4. American College of Obstetricians and Gynecologists. **Updated guidance on evaluation of postmenopausal bleeding**, comunicado 16/04/2026. https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding",
+    "5. ACOG. **The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding**, orientação de 2018 para comparação histórica, **não usar como único algoritmo de 2026**. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding",
+    "6. National Cancer Institute. **Endometrial Cancer Treatment (PDQ)**, edição para profissionais, inclui FIGO 2023, cirurgia e terapias por risco. https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+    "7. Sociedade Brasileira de Patologia. **Carcinomas do Endométrio**, Manual 2026. https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/",
+    "- **ACOG 2018 × ACOG 2026:** o primeiro permitia US isolada no episódio inicial selecionado com endométrio ≤4 mm; a atualização orienta combinar US e tecido inicialmente na maioria. Contexto de implementação no Brasil deve respeitar disponibilidade e diretrizes nacionais.",
+    "- **Esquema histológico antigo × classificação moderna:** “tipo I/II” é introdução histórica; classificação molecular, LVSI e histologia refinam risco.",
+    "- **Diretrizes internacionais × SUS:** procedimentos, medicamentos e testes nem sempre estão disponíveis de forma uniforme. Não afirmar incorporação automática de imunoterápicos, painéis moleculares ou exames.",
+    "**Teste de autossuficiência ainda não concluído:** faltam fluxos completos de manejo sistêmico por perfil molecular/linha, detalhes completos do estadiamento FIGO, parâmetros nacionais de rastreamento em Lynch, aprofundamento da cirurgia em doença avançada, testes de consistência dos casos e liberação de imagens. Para aprovação, reavaliar capítulo por capítulo, sem duplicações artificiais."
+  ],
+  "external_urls": [
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+    "https://pubmed.ncbi.nlm.nih.gov/40744042/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10482588/",
+    "https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/the-role-of-transvaginal-ultrasonography-in-evaluating-the-endometrium-of-women-with-postmenopausal-bleeding",
+    "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+    "https://www.sbp.org.br/manual-2026/carcinomas-do-endometrio/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Pulo do Gato LURIA:** o sinal cardinal é o sangramento uterino anormal, sobretudo o sangramento após a menopausa. O diagnóstico é histológico; a ultrassonografia estratifica e localiza, mas não substitui a amostragem endometrial quando indicada. Depois de confirmar câncer, a conduta depende não apenas de estádio e grau, mas também de **POLE, MMR, p53 e NSMP**. Um tumor pequeno de biologia agressiva pode exigir conduta mais intensa do que outro anatomicamente semelhante."
+    },
+    {
+      "text": "**Pontos do resumo comparativo que exigem correção crítica:** apresenta POLE como pior prognóstico em ordem invertida em trecho de classificação; a classificação molecular atual reconhece **POLE patogênico geralmente favorável** e **p53 anormal de pior risco**. Aplica algoritmo de sangramento pós-menopausa anterior à atualização **ACOG de abril de 2026**, que recomenda ultrassonografia transvaginal associada a amostragem tecidual inicial na maioria dos casos. Também simplifica linfadenectomia como procedimento universal em grupos extensos, sem incorporar adequadamente biópsia de linfonodo sentinela e mapeamento conforme risco. A indicação de "
+    },
+    {
+      "text": "**Medidas protetoras e manejo de risco**: controle de obesidade e comorbidades, adequação da exposição hormonal, contraceptivos com componente progestagênico em situações indicadas e orientação específica para portadores de síndrome de Lynch. Não recomendar tabagismo como prevenção de câncer por eventual associação epidemiológica inversa com algumas neoplasias hormonodependentes: os danos sistêmicos excedem qualquer associação e o tabaco causa inúmeros cânceres."
+    },
+    {
+      "text": "**Rastreamento populacional:** não há recomendação de rastreamento com US transvaginal e biópsias repetidas para a população geral assintomática. A vigilância em síndrome de Lynch segue protocolos próprios de aconselhamento genético, avaliação de sintomas, consideração de amostragem endometrial e discussão de cirurgia redutora de risco após projeto reprodutivo; não substituir avaliação especializada por calendário único aplicável a todos."
+    },
+    {
+      "text": "**ATUALIZAÇÃO CRÍTICA (16 de abril de 2026):** a ACOG divulgou revisão recomendando **combinação de ultrassonografia transvaginal com amostragem endometrial na avaliação inicial da maioria das pacientes com sangramento pós-menopausa**, modificando o enfoque anterior de US isolada como primeira abordagem quando espessura ≤4 mm. Essa distinção deve ser explicitada em materiais de 2026. Não afirmar que o ponto de corte 4 mm foi abolido como informação ultrassonográfica; ele continua descritivo e potencialmente útil, mas não substitui automaticamente o componente tecidual no novo esquema da ACOG. Confrontar disponibilidade e normas nacionais ante"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

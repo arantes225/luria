@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-16",
+  "stage": "auditoria_documental_de_cadeia_com_confrontos_cientificos_amostrais",
+  "completed": [
+    "snapshot main e 36 branches",
+    "70 pareceres de arquivos da main",
+    "fichas para todos os caminhos adicionais identificados",
+    "consulta somente leitura de catálogo/imagens",
+    "checagem HTTP e comparação de arquivos servidos",
+    "pendências por arquivo e transição"
+  ],
+  "not_certified": [
+    "revisão clínica integral das 255 versões de branches",
+    "licença e fidelidade clínica de cada imagem",
+    "aprovação médica humana",
+    "layout visual desktop/PWA",
+    "comparação integral de todos os capítulos com todas as referências"
+  ],
+  "stats": {
+    "main_html": 26,
+    "main_manuscripts_and_complements": 44,
+    "main_html_below_60k": 16,
+    "main_html_at_least_60k": 10,
+    "production_branches": 36,
+    "additional_content_paths": 279,
+    "additional_content_versions": 296,
+    "db_published": 18,
+    "image_records": 113,
+    "approved_images": 93,
+    "pending_images": 20,
+    "html_with_inline_or_simulated_images": 20,
+    "http_checked": 1989,
+    "http_404_or_410": 89,
+    "public_files_compared": 29,
+    "public_files_match": 29,
+    "integral_clinical_approvals_given": 0
+  },
+  "next": "Conferir o ensino de cada módulo do cursinho no destino ampliado e as competências ENAMED, completar a matriz fonte-afirmação e reparar os handoffs. Preservar conteúdos incorporados e novas apostilas dos lotes 10–13.",
+  "authorized_expansion": true,
+  "expanded_curriculum": {
+    "topics": 280,
+    "modules": 401,
+    "orphan_primary_destinations": 0,
+    "topics_with_artifacts": 192,
+    "modules_with_heading_evidence": 157,
+    "unassigned_artifacts": 9
+  }
+}

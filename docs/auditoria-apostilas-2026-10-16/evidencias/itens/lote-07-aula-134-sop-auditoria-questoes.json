@@ -1,0 +1,126 @@
+{
+  "key": "lote-07-aula-134-sop-auditoria-questoes",
+  "kind": "complemento-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md",
+  "title": "LURIA — Lote 7 · Aula 134",
+  "source_sha256": "a3f36d4b093b55548c0db1b95eee88fbdb9330b618b010d736fc630276196ac2",
+  "chars_estimated": 11426,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 134",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Síndrome dos ovários policísticos — auditoria e bloco adicional de questões",
+      "level": 1
+    },
+    {
+      "line": 8,
+      "title": "0. Por que não criar novo livro?",
+      "level": 2
+    },
+    {
+      "line": 13,
+      "title": "1. Matriz de validação do livro existente",
+      "level": 2
+    },
+    {
+      "line": 23,
+      "title": "2. Oito questões inéditas com comentários por alternativa",
+      "level": 2
+    },
+    {
+      "line": 25,
+      "title": "Questão 1 — adulta e necessidade de imagem",
+      "level": 3
+    },
+    {
+      "line": 33,
+      "title": "Questão 2 — adolescente",
+      "level": 3
+    },
+    {
+      "line": 41,
+      "title": "Questão 3 — metabolismo sem obesidade",
+      "level": 3
+    },
+    {
+      "line": 49,
+      "title": "Questão 4 — desejo reprodutivo",
+      "level": 3
+    },
+    {
+      "line": 57,
+      "title": "Questão 5 — critérios de hiperandrogenismo",
+      "level": 3
+    },
+    {
+      "line": 65,
+      "title": "Questão 6 — AMH",
+      "level": 3
+    },
+    {
+      "line": 73,
+      "title": "Questão 7 — diferencial de virilização",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "Questão 8 — proteção endometrial",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "3. Complementos pontuais recomendados",
+      "level": 2
+    },
+    {
+      "line": 96,
+      "title": "4. Integração segura",
+      "level": 2
+    },
+    {
+      "line": 99,
+      "title": "5. Fontes",
+      "level": 2
+    }
+  ],
+  "references": [],
+  "external_links": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 0,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Terminologia:** o site emprega “Síndrome Ovariana Metabólica Poliendócrina (SOMP)” como adaptação editorial. A denominação médica consagrada em documentos científicos é **Síndrome dos Ovários Policísticos (SOP; PCOS em inglês)**. Recomendo apresentar os dois nomes quando necessário, deixando claro que **“SOMP” é rótulo editorial local**, não um novo diagnóstico com critérios independentes. Evitar alterar automaticamente URLs, títulos ou material já publicado sem revisão.",
+      "pattern": 1
+    },
+    {
+      "text": "**Status:** COMPLEMENTO EDITORIAL EM RASCUNHO, NÃO INTEGRADO/NÃO PUBLICADO. **Apostila existente preservada:** \\`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\\`. **Data da revisão:** 14/10/2026. **Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado.",
+      "pattern": 2
+    },
+    {
+      "text": "**Terminologia:** o site emprega “Síndrome Ovariana Metabólica Poliendócrina (SOMP)” como adaptação editorial. A denominação médica consagrada em documentos científicos é **Síndrome dos Ovários Policísticos (SOP; PCOS em inglês)**. Recomendo apresentar os dois nomes quando necessário, deixando claro que **“SOMP” é rótulo editorial local**, não um novo diagnóstico com critérios independentes. Evitar alterar automaticamente URLs, títulos ou material já publicado sem revisão.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Status:** COMPLEMENTO EDITORIAL EM RASCUNHO, NÃO INTEGRADO/NÃO PUBLICADO. **Apostila existente preservada:** \\`apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html\\`. **Data da revisão:** 14/10/2026. **Fonte científica primária:** *International Evidence-based Guideline for the Assessment and Management of PCOS* (2023), elaborada pela colaboração internacional liderada por Monash/ASRM/ESHRE. **Fonte comparativa Drive:** “01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf”, aberto e lido, 10.545 caracteres extraídos; não comprova autoria Estratégia MED e não será copiado."
+    },
+    {
+      "text": "**Terminologia:** o site emprega “Síndrome Ovariana Metabólica Poliendócrina (SOMP)” como adaptação editorial. A denominação médica consagrada em documentos científicos é **Síndrome dos Ovários Policísticos (SOP; PCOS em inglês)**. Recomendo apresentar os dois nomes quando necessário, deixando claro que **“SOMP” é rótulo editorial local**, não um novo diagnóstico com critérios independentes. Evitar alterar automaticamente URLs, títulos ou material já publicado sem revisão."
+    }
+  ]
+}

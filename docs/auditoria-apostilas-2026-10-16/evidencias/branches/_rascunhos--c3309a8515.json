@@ -1,0 +1,349 @@
+{
+  "sha": "c3309a85151105544b83b2c4335faaf3c4675e0e",
+  "path": "apostilas/_rascunhos/lote-13-251-transtornos-personalidade-autolesao.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--c3309a8515",
+  "title": "LURIA · Lote 13 · Apostila 251",
+  "format": ".md",
+  "chars_estimated": 72594,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Lote 13 · Apostila 251"
+    },
+    {
+      "title": "Transtornos da personalidade, regulação emocional e autolesão"
+    },
+    {
+      "title": "Registro da etapa zero"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Personalidade, traço e transtorno: raciocínio dimensional"
+    },
+    {
+      "title": "Traços e situações não patológicas"
+    },
+    {
+      "title": "2. Cluster A, B e C: modelo clássico"
+    },
+    {
+      "title": "3. Transtorno de personalidade borderline (TPB)"
+    },
+    {
+      "title": "Mecanismos clínicos sem determinismo"
+    },
+    {
+      "title": "Diagnóstico diferencial indispensável"
+    },
+    {
+      "title": "4. Autolesão e comportamento suicida: termos e avaliação"
+    },
+    {
+      "title": "Perguntas clínicas apropriadas"
+    },
+    {
+      "title": "5. Avaliação de risco: por que a escala não manda na alta?"
+    },
+    {
+      "title": "Classificação clínica sem rótulo simplista"
+    },
+    {
+      "title": "6. Atendimento na emergência e APS"
+    },
+    {
+      "title": "7. Tratamento estruturado do TPB e psicoterapias"
+    },
+    {
+      "title": "Farmacoterapia: o que NÃO fazer"
+    },
+    {
+      "title": "8. Plano colaborativo de segurança"
+    },
+    {
+      "title": "Linguagem que protege e mantém adesão"
+    },
+    {
+      "title": "9. Condições especiais"
+    },
+    {
+      "title": "10. Fluxogramas autorais para redação em HTML"
+    },
+    {
+      "title": "A. Autolesão na emergência"
+    },
+    {
+      "title": "B. Suspeita de TPB"
+    },
+    {
+      "title": "C. Repetição de episódios"
+    },
+    {
+      "title": "10A. Da categoria ao perfil dimensional da CID-11: avaliar funcionamento, não caricaturas"
+    },
+    {
+      "title": "Personalidade é uma organização de padrões ao longo do tempo"
+    },
+    {
+      "title": "CID-11: gravidade global e qualificadores"
+    },
+    {
+      "title": "O funcionamento do self e o interpessoal na entrevista"
+    },
+    {
+      "title": "CID-11 e DSM-5-TR: não fabricar equivalências automáticas"
+    },
+    {
+      "title": "10B. Personalidade borderline: formulação clínica e diagnósticos que mais geram erros"
+    },
+    {
+      "title": "O padrão borderline vai além de um único sintoma"
+    },
+    {
+      "title": "Bipolaridade: episódio sustentado de humor versus reatividade afetiva"
+    },
+    {
+      "title": "TEPT e TEPT complexo"
+    },
+    {
+      "title": "TDAH, autismo, TOC, ansiedade e dissociação"
+    },
+    {
+      "title": "Diagnóstico longitudinal: uma hipótese que pode amadurecer"
+    },
+    {
+      "title": "10C. Autolesão: atendimento clínico completo sem julgamento"
+    },
+    {
+      "title": "Lesão é evento médico e psicossocial simultaneamente"
+    },
+    {
+      "title": "Entrevista baseada em fenômenos clínicos, não em métodos"
+    },
+    {
+      "title": "Avaliação física que costuma ser esquecida"
+    },
+    {
+      "title": "No Brasil: acesso, proteção e comunicação"
+    },
+    {
+      "title": "10D. Risco: formulação dinâmica em vez de etiqueta “baixo/médio/alto”"
+    },
+    {
+      "title": "Por que uma pontuação de triagem não antecipa o futuro com segurança?"
+    },
+    {
+      "title": "Um modelo original de formulação"
+    },
+    {
+      "title": "Destino assistencial não é simplesmente “sim ou não” para internação"
+    },
+    {
+      "title": "10E. Plano de segurança colaborativo: do papel à ação executável"
+    },
+    {
+      "title": "Plano de segurança não é contrato de promessa"
+    },
+    {
+      "title": "Segurança na alta: checklist que não pode ser um mero carimbo"
+    },
+    {
+      "title": "10F. Psicoterapias estruturadas: o que faz uma intervenção funcionar"
+    },
+    {
+      "title": "DBT: habilidades, validação e mudança"
+    },
+    {
+      "title": "Terapia baseada em mentalização, terapia de esquemas e outras abordagens"
+    },
+    {
+      "title": "Relação terapêutica, limites e contratransferência"
+    },
+    {
+      "title": "10G. Psicofarmacologia, comorbidades e prevenção de iatrogenia"
+    },
+    {
+      "title": "Por que “um remédio para cada sintoma” tende a falhar?"
+    },
+    {
+      "title": "Comorbidade depressiva não é “só borderline”"
+    },
+    {
+      "title": "Sedativos em crises e os limites de uma exceção"
+    },
+    {
+      "title": "Decisão farmacológica auditável"
+    },
+    {
+      "title": "10H. Situações específicas: adolescentes, violência, identidade e vulnerabilidade"
+    },
+    {
+      "title": "Adolescentes: sofrimento merece cuidado antes de rótulo"
+    },
+    {
+      "title": "Puerpério e gestação"
+    },
+    {
+      "title": "Pessoas mais velhas e mudanças súbitas de comportamento"
+    },
+    {
+      "title": "Violência e direitos"
+    },
+    {
+      "title": "10I. Continuidade na APS, no CAPS e na rede: construir cuidado que exista"
+    },
+    {
+      "title": "A consulta de urgência é um ponto de uma trajetória"
+    },
+    {
+      "title": "Passagem de caso centrada na segurança"
+    },
+    {
+      "title": "Quando revisar o plano"
+    },
+    {
+      "title": "10J. Casos adicionais e questões de integração para residência e prática"
+    },
+    {
+      "title": "Caso integrado A — autolesão com ferimento pequeno"
+    },
+    {
+      "title": "Caso integrado B — oscilações breves versus hipomania"
+    },
+    {
+      "title": "Caso integrado C — equipe que oferece sedativos repetidos"
+    },
+    {
+      "title": "Caso integrado D — adolescente em casa insegura"
+    },
+    {
+      "title": "Caso integrado E — presença de traços anancásticos sem doença"
+    },
+    {
+      "title": "Caso integrado F — autolesão recorrente, atendimento fragmentado"
+    },
+    {
+      "title": "Caso integrado G — paciente idoso com mudança súbita"
+    },
+    {
+      "title": "Caso integrado H — plano de segurança sem contatos utilizáveis"
+    },
+    {
+      "title": "Questões originais com justificativa de todas as opções"
+    },
+    {
+      "title": "Revisão de alta utilidade em 30 segundos"
+    },
+    {
+      "title": "Referências verificadas para a expansão"
+    },
+    {
+      "title": "11. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Episódio de autolesão e pedido de alta rápida"
+    },
+    {
+      "title": "Caso 2 — Instabilidade afetiva versus bipolaridade"
+    },
+    {
+      "title": "Caso 3 — \"Paciente difícil\" com trauma"
+    },
+    {
+      "title": "Caso 4 — Psicofármaco empilhado"
+    },
+    {
+      "title": "Caso 5 — Dependência aparente e condição funcional"
+    },
+    {
+      "title": "12. Questões de residência com comentários"
+    },
+    {
+      "title": "13. Quadro de revisão de alto rendimento"
+    },
+    {
+      "title": "14. Imagens candidatas ao Admin, SEM PUBLICAÇÃO"
+    },
+    {
+      "title": "15. Referências principais"
+    },
+    {
+      "title": "Auditoria (não é certificado)"
+    }
+  ],
+  "reference_entries": [
+    "1. NICE. **NG225: Self-harm — assessment, management and preventing recurrence** (2022). https://www.nice.org.uk/guidance/ng225/chapter/Recommendations",
+    "2. NICE. **CG78: Borderline personality disorder — recognition and management** (2009, página vigente consultada em 16/10/2026). https://www.nice.org.uk/guidance/cg78/chapter/Recommendations",
+    "3. World Health Organization. **ICD-11 for Mortality and Morbidity Statistics**, versão 2026-01 — transtornos da personalidade e qualificadores. https://icd.who.int/browse/2026-01/mms/en",
+    "4. Bach B, First MB. **Application of the ICD-11 classification of personality disorders**. *BMC Psychiatry* (2018). https://pmc.ncbi.nlm.nih.gov/articles/PMC6206910/",
+    "5. Mulder RT et al. **The ICD-11 classification of personality disorders: a European perspective on challenges and opportunities**. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973542/",
+    "6. Ministério da Saúde. **Rede de Atenção Psicossocial (RAPS)**, portal institucional. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "**Etapa zero / originalidade:** os materiais correlatos do Drive *Síndromes Cognitivas* e *SUS* foram relidos nesta etapa. O primeiro é focado em alterações neurocognitivas orgânicas e não ensina personalidade/autolesão; o segundo descreve princípios de rede, sem protocolos especializados. Esses documentos servem apenas como comparação parcial. O texto é autoral e não reutiliza imagens, frases, diagramas ou protocolos privados de cursinho. Falta comparador específico de personalidade, revisão por psiquiatra, conferência de legislação brasileira aplicável, curadoria de imagens com licença, audi",
+    "**Q1.** Após autolesão atendida no PS, equipe deseja alta porque escala indicou \"baixo risco\". Melhor conduta:  ",
+    "**Gabarito B.** A contraria NG225, C é punição, D confunde gravidade da lesão e intenção, E interrompe linha de cuidado. B integra avaliação e segurança. **Mini-revisão:** risco não é número determinístico.",
+    "**Q2.** Principal abordagem longitudinal de TPB com autolesão recorrente:  ",
+    "**Gabarito B.** A/D privilegiam medicação sem indicação própria, C nega acesso, E confunde padrões; B é tratamento focado em habilidades e segurança.",
+    "**Q3.** Oscilações afetivas breves associadas a conflitos, sem episódios sustentados de mania/hipomania, sugerem que:  ",
+    "**Gabarito C.** A/B inferem demais, D ignora história, E omite diferencial; C usa longitudinalidade.",
+    "**Q4.** Pessoa com autolesão e intoxicação associada apresenta capacidade parcial para entrevista. Qual abordagem?  ",
+    "**Gabarito B.** A posterga indevidamente, C/D punem e E negligencia; B integra manejo físico e mental.",
+    "**Q5.** Pessoa perfeccionista, rígida e orientada a regras, sem obsessões intrusivas, tem prejuízo crônico nas relações. Diferencial mais importante:  ",
+    "**Gabarito A.** Demais opções não explicam padrão narrado; A diferencia traço egossintônico e obsessões intrusivas conforme contexto.",
+    "**Q6.** Em diagnóstico de TPB, qual afirmação é correta?  ",
+    "**Gabarito D.** A/B/C/E são falsas e estigmatizantes; D é raciocínio clínico apropriado.",
+    "**Q7.** Sobre medicação usada para autolesão sem indicação psiquiátrica independente:  ",
+    "**Gabarito C.** A/B exageram evidência, D/E arriscam iatrogenia; C segue NICE NG225.",
+    "- Personalidade é **dimensional e contextual**; diagnóstico requer persistência e prejuízo.",
+    "- Autolesão **não implica automaticamente** intenção suicida, nem a exclui.",
+    "- Histórico de múltiplas idas à emergência deve estimular **coordenação**, não punição.",
+    "- Escala de risco **não determina** alta, internação ou acesso ao tratamento.",
+    "- DBT e outras psicoterapias estruturadas são pilares de tratamento do TPB.",
+    "- Psicofármacos tratam comorbidades definidas, não \"personalidade\" por padrão.",
+    "- Diferenciar TPB de bipolaridade, TEPT, TDAH, autismo, depressão e uso de substâncias.",
+    "- Plano de crise é escrito, colaborativo, realista e revisto após episódios.",
+    "- Encaminhamento para CAPS ou especialista **não elimina vínculo** com APS."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng225/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/cg78/chapter/Recommendations",
+    "https://icd.who.int/browse/2026-01/mms/en",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6206910/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8973542/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng225"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Antissocial:** padrão persistente de violação de direitos e normas, com critérios históricos particulares no DSM; não usar diagnóstico para desumanizar ou retirar acesso. Delitos não equivalem automaticamente a transtorno e são influenciados por contextos sociais. **Histriônico:** busca de atenção e expressão emocional intensa; critérios históricos apresentam risco de viés de gênero e cultura, exigindo cautela. **Narcisista:** padrões de grandiosidade/vulnerabilidade, necessidade de admiração e dificuldades empáticas, diferenciando de autoestima saudável, reação ao trauma e episódios maníacos. **Evitativo:** deseja vínculo, mas o evita por "
+    },
+    {
+      "text": "No episódio de autolesão, NICE NG225 também alerta que não há tratamento farmacológico específico recomendado para \"prevenir autolesão\" de forma indiscriminada; a escolha de fármacos baseia-se em diagnósticos e indicações próprias."
+    },
+    {
+      "text": "Os qualificadores mais utilizados incluem **afetividade negativa, distanciamento, dissocialidade, desinibição e anancastia**; o **padrão borderline** é qualificador adicional opcional. Esses eixos podem coexistir: alguém pode apresentar afetividade negativa e anancastia, por exemplo, enquanto outra pessoa exibe desinibição e dissocialidade. Um traço não determina diagnóstico, maldade ou inevitabilidade de dano."
+    },
+    {
+      "text": "**Intimidade/reciprocidade:** consegue construir relações relativamente estáveis, negociar limites e tolerar divergência? Mudanças de relacionamento em uma fase específica da vida, por si, não autorizam diagnóstico."
+    },
+    {
+      "text": "No modelo DSM-5-TR, a avaliação categórica de transtorno de personalidade borderline considera padrão de instabilidade nas relações, autoimagem, afetos e impulsividade, com manifestações como medo de abandono, relações intensas/instáveis, perturbação de identidade, impulsividade em áreas potencialmente danosas, comportamentos suicidas ou autolesão, instabilidade afetiva, vazio, raiva intensa e ideias paranoides/dissociação transitórias associadas a estresse. Critérios quantitativos formais devem ser checados no manual diagnóstico apropriado; **a contagem isolada não substitui história de persistência e prejuízo**."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

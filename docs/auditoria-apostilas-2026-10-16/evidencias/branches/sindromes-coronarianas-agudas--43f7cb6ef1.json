@@ -1,0 +1,117 @@
+{
+  "sha": "43f7cb6ef13436e968eddfcce70f9a1f59435c77",
+  "path": "apostilas/sindromes-coronarianas-agudas/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "sindromes-coronarianas-agudas--43f7cb6ef1",
+  "title": "Síndromes Coronarianas Agudas",
+  "format": ".json",
+  "chars_estimated": 94869,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Síndromes coronarianas agudas: do primeiro ECG à revascularização"
+    },
+    {
+      "id": "fundamentos",
+      "title": "1. Anatomia coronariana, oferta de oxigênio e trombose"
+    },
+    {
+      "id": "avaliacao",
+      "title": "2. Primeiros dez minutos: história, estabilidade e ECG"
+    },
+    {
+      "id": "ecg",
+      "title": "3. ECG em SCA: localização, padrões equivalentes e armadilhas"
+    },
+    {
+      "id": "troponina",
+      "title": "4. Troponina de alta sensibilidade: saber o que o número significa"
+    },
+    {
+      "id": "reperfusao",
+      "title": "5. Infarto com supra: relógio de reperfusão, não relógio de troponina"
+    },
+    {
+      "id": "sem-supra",
+      "title": "6. SCA sem supra: da estratificação ao momento invasivo"
+    },
+    {
+      "id": "terapia",
+      "title": "7. Medidas médicas: alívio, proteção e prevenção secundária"
+    },
+    {
+      "id": "complicacoes",
+      "title": "8. Complicações agudas e diagnósticos que não podem ser perdidos"
+    },
+    {
+      "id": "tratamento-risco-sangramento-alta-acs2025",
+      "title": "Aprofundamento — terapêutica antitrombótica, risco hemorrágico e alta após SCA (2025)"
+    },
+    {
+      "id": "casos",
+      "title": "9. Casos clínicos integradores — raciocínio passo a passo"
+    },
+    {
+      "id": "questoes",
+      "title": "10. Questões autorais comentadas — prova e prática"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências e limites editoriais"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências e limites editoriais\"]",
+    "[\"o\",[\"<a href=\\\"https://linhasdecuidado.saude.gov.br/portal/infarto-agudo-do-miocardio/unidade-de-pronto-atendimento/manejo-inicial/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Ministério da Saúde. Linha de Cuidado do Infarto Agudo do Miocárdio — manejo inicial na UPA, reperfusão, antiagregação e anticoagulação, consultada em 2026.</a>\",\"<a href=\\\"https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Rao SV et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. JACC, 2025.</a>\",\"<a href=\\\"h",
+    "[\"p\",\"<strong>Estado editorial (14/10/2026, ciclo de aprofundamento):</strong> o rascunho já desenvolve ECG e equivalentes de oclusão, troponina e definição de IAM, estratificação invasiva do NSTEMI, ICP e farmacoinvasiva, farmacologia de referência, complicações e seguimento, com casos e questões. A metragem de prosa aparente pode ultrapassar 60 mil caracteres, mas não substitui auditoria de utilidade ou autossuficiência. Continuam pendentes revisão independente de doses/contraindicações e diretrizes brasileiras por cardiologista, correções de redundância editorial, candidatos de imagens apro"
+  ],
+  "external_urls": [
+    "https://linhasdecuidado.saude.gov.br/portal/infarto-agudo-do-miocardio/unidade-de-pronto-atendimento/manejo-inicial/",
+    "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+    "https://doi.org/10.1093/eurheartj/ehad191",
+    "https://academic.oup.com/eurheartj/article/44/38/3720/7243210",
+    "https://linhasdecuidado.saude.gov.br/portal/infarto-agudo-do-miocardio/unidade-de-pronto-atendimento/manejo-inicial/.",
+    "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+    "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes",
+    "https://www.portal.cardiol.br/diretrizes",
+    "https://www.scielo.br/j/abc/a/GKTmBKCfKXHmSdYCnyJv9PC/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "visao",
+      "text": "A síndrome coronariana aguda (SCA) reúne apresentações de isquemia miocárdica aguda geralmente associadas à alteração súbita da perfusão coronariana. Sua relevância não está apenas na dor torácica: dispneia, sudorese, náusea, desconforto epigástrico e queda do nível funcional podem ser manifestações, sobretudo em idosos, pessoas com diabetes e mulheres. A triagem identifica rapidamente quem precisa de reperfusão imediata, quem necessita de investigação seriada e quem apresenta diagnóstico alternativo potencialmente fatal."
+    },
+    {
+      "section": "visao",
+      "text": "O ensino deve separar três perguntas, nesta ordem: <strong>há instabilidade clínica?</strong>, <strong>há padrão eletrocardiográfico que exige reperfusão emergente?</strong> e <strong>há evidências de lesão miocárdica aguda por isquemia?</strong>. Nenhuma dessas perguntas deve ser respondida exclusivamente pelo nível isolado de troponina. Dor típica com ECG inicial não diagnóstico permanece sob investigação; dor pouco típica com achado isquêmico não pode ser tranquilizada pela descrição subjetiva da dor."
+    },
+    {
+      "section": "avaliacao",
+      "text": "Na suspeita de SCA, obter e interpretar ECG de 12 derivações em até <strong>10 minutos do primeiro contato médico</strong>, com monitorização, avaliação de sinais vitais e acesso à avaliação emergencial conforme risco. Documentar horário de início dos sintomas, contato, ECG, medicações, alergias e achados de instabilidade. Comparar ECG anterior, mas não esperar por ele em emergência. A diretriz ACC/AHA 2025 recomenda repetir ECG quando o inicial não é diagnóstico e a suspeita clínica persiste."
+    },
+    {
+      "section": "ecg",
+      "text": "Nas derivações que não são V2 e V3, a elevação de ST no ponto J de pelo menos 1 mm em duas derivações contíguas, no contexto clínico adequado e sem explicação alternativa, contribui para identificar IAM com supra. Em V2 e V3 usam-se limiares maiores e diferentes: homens com 40 anos ou mais, 2 mm; homens abaixo de 40 anos, 2,5 mm; mulheres, 1,5 mm. São referências diagnósticas que dependem de ECG de calibração usual e da ausência de situações que modificam profundamente a repolarização. Não concluir que toda elevação de ST representa trombo de uma artéria; pericardite, repolarização precoce, aneurisma ventricular e hipertrofia podem apresentar"
+    },
+    {
+      "section": "ecg",
+      "text": "O ventrículo direito infartado perde capacidade de ejetar para a circulação pulmonar. Pode depender mais da pré-carga para manter débito; nitratos venodilatadores diminuem retorno venoso e podem precipitar hipotensão profunda. Por isso, diante de infarto inferior com hipotensão, jugular ingurgitada e ausculta pulmonar sem congestão importante, registrar derivações direitas, particularmente V4R, e avaliar função de VD por ecocardiografia quando disponível. A ausência da tríade clássica não afasta o diagnóstico. Além disso, infartos inferiores podem cursar com bradicardia e bloqueio AV pelo comprometimento do sistema de condução."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

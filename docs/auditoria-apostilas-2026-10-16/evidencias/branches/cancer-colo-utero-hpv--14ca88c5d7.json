@@ -1,0 +1,151 @@
+{
+  "sha": "14ca88c5d78f22e415ded080b8bf85b6d14ba426",
+  "path": "apostilas/cancer-colo-utero-hpv/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014",
+    "origin/editorial/inventario-225-piloto",
+    "origin/editorial/lote-03-auditoria-20261014",
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "cancer-colo-utero-hpv--14ca88c5d7",
+  "title": "Câncer do colo do útero e HPV",
+  "format": ".json",
+  "chars_estimated": 57296,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos"
+    },
+    {
+      "id": "anatomia",
+      "title": "1. Anatomia funcional do colo e zona de transformação"
+    },
+    {
+      "id": "hpv",
+      "title": "2. HPV: biologia, persistência e carcinogênese"
+    },
+    {
+      "id": "prevencao",
+      "title": "3. Prevenção primária: vacinação contra HPV"
+    },
+    {
+      "id": "rastreamento",
+      "title": "4. Rastreamento brasileiro com DNA-HPV"
+    },
+    {
+      "id": "hpv-algoritmo-aplicado",
+      "title": "Rastreamento em 2026: algoritmo comentado da diretriz brasileira"
+    },
+    {
+      "id": "citologia",
+      "title": "5. Citologia, Bethesda e histologia"
+    },
+    {
+      "id": "colposcopia",
+      "title": "6. Colposcopia: como raciocinar"
+    },
+    {
+      "id": "colposcopia-lesoes-avancado",
+      "title": "Colposcopia avançada: da observação à prova histológica"
+    },
+    {
+      "id": "clinica",
+      "title": "7. Manifestações clínicas e diagnóstico do câncer invasivo"
+    },
+    {
+      "id": "estadiamento",
+      "title": "8. Estadiamento FIGO 2018"
+    },
+    {
+      "id": "tratamento",
+      "title": "9. Tratamento: da lesão precursora à doença metastática"
+    },
+    {
+      "id": "figo-conduta-integrada-2026",
+      "title": "Estadiamento e escolha terapêutica: raciocínio oncológico por extensão"
+    },
+    {
+      "id": "especiais",
+      "title": "10. Situações especiais"
+    },
+    {
+      "id": "seguimento-situacoes-especiais-casos",
+      "title": "Situações especiais comentadas: gestação, HIV, menopausa e pós-tratamento"
+    },
+    {
+      "id": "seguimento",
+      "title": "11. Seguimento e prevenção de recorrência"
+    },
+    {
+      "id": "casos",
+      "title": "12. Casos clínicos integradores"
+    },
+    {
+      "id": "revisao",
+      "title": "13. Revisão de alto rendimento"
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": "Aprofundamento: persistência viral, colposcopia e transição do rastreamento para o diagnóstico"
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências principais"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências principais\"]",
+    "[\"o\",[\"<a href=\\\"https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer de Colo do Útero — Parte I. 2025.</a>\",\"<a href=\\\"https://www.gov.br/conitec/pt-br/midias/relatorios/2025/relatorio-de-recomendacao-no-977-diretrizes-rastreamento-colo-de-utero\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">CONITEC. Relatório de Recomendação nº 977 — Rastreamento do câncer do colo do útero.</a>\",\"<a href=\\\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/nota"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10755815/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "https://www.gov.br/conitec/pt-br/midias/relatorios/2025/relatorio-de-recomendacao-no-977-diretrizes-rastreamento-colo-de-utero",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-32-2026-cgici-dpni-svsa-ms.pdf/view",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/tratamento",
+    "https://www.who.int/publications/i/item/9789240121744",
+    "https://www.who.int/publications/i/item/9789240124172",
+    "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "prevencao",
+      "text": "No calendário brasileiro de 2026, a vacinação de rotina contra HPV é recomendada para meninas e meninos de <strong>9 a 14 anos</strong> em esquema de dose única. O país também mantém estratégia de resgate para jovens de 15 a 19 anos sem histórico vacinal, conforme organização vigente do PNI."
+    },
+    {
+      "section": "prevencao",
+      "text": "A <strong>Nota Técnica nº 32/2026 do Ministério da Saúde</strong> recomenda priorizar vacinação contra HPV para pessoas tratadas por <strong>NIC2, NIC3 ou adenocarcinoma in situ</strong> mediante procedimento excisional, independentemente da idade, com três doses nos meses 0, 2 e 6. A Nota define momento perioperatório ou até 12 meses após o tratamento e orienta prescrição médica e registro do diagnóstico. A aplicação prática depende da organização local da estratégia do PNI e da disponibilidade do imunobiológico; a nota não autoriza afirmar que toda paciente terá acesso imediato em qualquer serviço."
+    },
+    {
+      "section": "rastreamento",
+      "text": "Na população de risco padrão, um teste DNA-HPV negativo realizado <strong>acima dos 60 anos</strong> permite encerrar o rastreamento. Pessoas com história prévia de NIC2, NIC3 ou AIS devem manter acompanhamento por até 25 anos após o tratamento quando possível e aceitável."
+    },
+    {
+      "section": "rastreamento",
+      "text": "Mantém-se a citologia convencional: iniciar aos 25 anos após atividade sexual; fazer dois exames anuais consecutivos e, se ambos normais, seguir com intervalo de três anos, até transição local para a nova estratégia."
+    },
+    {
+      "section": "hpv-algoritmo-aplicado",
+      "text": "Na população de risco padrão, o programa abrange pessoas com colo do útero entre 25 e 64 anos que já iniciaram atividade sexual. A diretriz recomenda não rastrear antes dos 25 anos, inclusive quando houve início sexual precoce, pela alta frequência de infecção transitória e risco de intervenções desnecessárias. Após os 60 anos, é possível encerrar após teste molecular negativo nessa faixa; se não houve teste anterior, realizar pelo menos um exame para orientar o encerramento. Histórico de tratamento de NIC2, NIC3 ou AIS muda essa regra e exige acompanhamento prolongado, por até 25 anos conforme diretriz. Quando há sangramento pós-coital persi"
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

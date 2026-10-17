@@ -1,0 +1,596 @@
+{
+  "key": "puberdade-adolescencia--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 168 — Puberdade e adolescência: desenvolvimento, endocrinologia e atenção integral",
+  "source_sha256": "5c251b011d60259fa34d134bcdf672893053fca22087a356bc19d338b93c9a95",
+  "chars_estimated": 84910,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 168 — Puberdade e adolescência: desenvolvimento, endocrinologia e atenção integral",
+      "level": 1
+    },
+    {
+      "line": 10,
+      "title": "1. Objetivos de aprendizagem",
+      "level": 2
+    },
+    {
+      "line": 23,
+      "title": "2. Conceitos e recortes etários",
+      "level": 2
+    },
+    {
+      "line": 37,
+      "title": "3. Eixo hipotálamo–hipófise–gônadas e crescimento",
+      "level": 2
+    },
+    {
+      "line": 47,
+      "title": "3.1. Distinção muito cobrada",
+      "level": 3
+    },
+    {
+      "line": 51,
+      "title": "3.2. GH/IGF-1, nutrição e saúde",
+      "level": 3
+    },
+    {
+      "line": 55,
+      "title": "4. Idades e sequência fisiológica dos marcos",
+      "level": 2
+    },
+    {
+      "line": 70,
+      "title": "4.1. Anamnese puberal focalizada",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "5. Estadiamento de Tanner — exame com técnica e respeito",
+      "level": 2
+    },
+    {
+      "line": 95,
+      "title": "5.1. Como descrever no prontuário",
+      "level": 3
+    },
+    {
+      "line": 99,
+      "title": "6. Crescimento e idade óssea",
+      "level": 2
+    },
+    {
+      "line": 107,
+      "title": "6.1. Padrões orientadores",
+      "level": 3
+    },
+    {
+      "line": 118,
+      "title": "7. Puberdade precoce — reconhecer sem superdiagnosticar",
+      "level": 2
+    },
+    {
+      "line": 122,
+      "title": "7.1. PPC: GnRH-dependente",
+      "level": 3
+    },
+    {
+      "line": 128,
+      "title": "7.2. PPP: GnRH-independente",
+      "level": 3
+    },
+    {
+      "line": 140,
+      "title": "7.3. Variantes sem progressão gonadal central significativa",
+      "level": 3
+    },
+    {
+      "line": 148,
+      "title": "7.4. Tabela diferencial de puberdade precoce",
+      "level": 3
+    },
+    {
+      "line": 159,
+      "title": "8. Diagnóstico da puberdade precoce — algoritmo aplicado",
+      "level": 2
+    },
+    {
+      "line": 173,
+      "title": "Quando encaminhar com prioridade",
+      "level": 3
+    },
+    {
+      "line": 182,
+      "title": "9. Tratamento da puberdade precoce central",
+      "level": 2
+    },
+    {
+      "line": 198,
+      "title": "10. Puberdade atrasada: quando investigar",
+      "level": 2
+    },
+    {
+      "line": 202,
+      "title": "10.1. Três mecanismos etiológicos",
+      "level": 3
+    },
+    {
+      "line": 208,
+      "title": "10.2. Exames por hipótese",
+      "level": 3
+    },
+    {
+      "line": 214,
+      "title": "10.3. Conduta",
+      "level": 3
+    },
+    {
+      "line": 218,
+      "title": "10.4. Situações específicas",
+      "level": 3
+    },
+    {
+      "line": 228,
+      "title": "11. Comparação: puberdade precoce versus tardia",
+      "level": 2
+    },
+    {
+      "line": 239,
+      "title": "12. Consulta integral do adolescente: método e vínculo",
+      "level": 2
+    },
+    {
+      "line": 247,
+      "title": "12.1. Entrevista psicossocial estruturada — HEEADSSS/HEADSS",
+      "level": 3
+    },
+    {
+      "line": 261,
+      "title": "12.2. Exame físico proporcional",
+      "level": 3
+    },
+    {
+      "line": 265,
+      "title": "13. Crescimento, composição corporal, alimentação e exercício",
+      "level": 2
+    },
+    {
+      "line": 280,
+      "title": "14. Saúde menstrual: menarca, irregularidade e sangramento",
+      "level": 2
+    },
+    {
+      "line": 284,
+      "title": "14.1. Quando irregularidade deve ser investigada?",
+      "level": 3
+    },
+    {
+      "line": 295,
+      "title": "14.2. Sangramento intenso",
+      "level": 3
+    },
+    {
+      "line": 299,
+      "title": "14.3. Dismenorreia",
+      "level": 3
+    },
+    {
+      "line": 303,
+      "title": "14.4. Síndrome dos ovários policísticos na adolescência",
+      "level": 3
+    },
+    {
+      "line": 309,
+      "title": "15. Acne, pele e imagem corporal",
+      "level": 2
+    },
+    {
+      "line": 317,
+      "title": "16. Ginecomastia puberal e queixas genitais masculinas",
+      "level": 2
+    },
+    {
+      "line": 327,
+      "title": "17. Saúde sexual e reprodutiva sem julgamento",
+      "level": 2
+    },
+    {
+      "line": 337,
+      "title": "17.1. Sexualidade, identidade de gênero e corpo",
+      "level": 3
+    },
+    {
+      "line": 341,
+      "title": "18. Vacinação, sono e prevenção",
+      "level": 2
+    },
+    {
+      "line": 349,
+      "title": "19. Saúde mental, autolesão e violência",
+      "level": 2
+    },
+    {
+      "line": 353,
+      "title": "19.1. Avaliação de risco suicida",
+      "level": 3
+    },
+    {
+      "line": 359,
+      "title": "19.2. Violência e abuso",
+      "level": 3
+    },
+    {
+      "line": 365,
+      "title": "20. Situações que exigem ação urgente",
+      "level": 2
+    },
+    {
+      "line": 379,
+      "title": "21. Algoritmos de conduta LURIA",
+      "level": 2
+    },
+    {
+      "line": 381,
+      "title": "Fluxo A — Desenvolvimento puberal antes da faixa esperada",
+      "level": 3
+    },
+    {
+      "line": 385,
+      "title": "Fluxo B — Ausência de puberdade",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "Fluxo C — Consulta integral",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "Fluxo D — Alteração menstrual",
+      "level": 3
+    },
+    {
+      "line": 397,
+      "title": "22. Resumo comparativo de sinais versus diagnósticos",
+      "level": 2
+    },
+    {
+      "line": 411,
+      "title": "23. Referências principais e hierarquia científica",
+      "level": 2
+    },
+    {
+      "line": 441,
+      "title": "Controle de fontes",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "24. Pendências e controle editorial",
+      "level": 2
+    },
+    {
+      "line": 465,
+      "title": "25. Casos clínicos integradores — hipóteses, exames, interpretação e conduta",
+      "level": 2
+    },
+    {
+      "line": 469,
+      "title": "Caso 1 — Telarca antes dos oito anos e crescimento acelerado",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Caso 2 — Pubarca isolada aos sete anos",
+      "level": 3
+    },
+    {
+      "line": 497,
+      "title": "Caso 3 — Puberdade precoce em menino de oito anos",
+      "level": 3
+    },
+    {
+      "line": 511,
+      "title": "Caso 4 — Atraso puberal masculino com história familiar",
+      "level": 3
+    },
+    {
+      "line": 525,
+      "title": "Caso 5 — Baixa estatura e ausência de telarca aos 14 anos",
+      "level": 3
+    },
+    {
+      "line": 539,
+      "title": "Caso 6 — Ausência de menarca com desenvolvimento mamário preservado",
+      "level": 3
+    },
+    {
+      "line": 553,
+      "title": "Caso 7 — Ciclos irregulares e acne na adolescência",
+      "level": 3
+    },
+    {
+      "line": 567,
+      "title": "Caso 8 — Sangramento menstrual intenso e instabilidade",
+      "level": 3
+    },
+    {
+      "line": 581,
+      "title": "Caso 9 — Restrição alimentar e bradicardia sem baixo IMC extremo",
+      "level": 3
+    },
+    {
+      "line": 595,
+      "title": "Caso 10 — Dor escrotal súbita durante esporte",
+      "level": 3
+    },
+    {
+      "line": 609,
+      "title": "Caso 11 — Consulta desacompanhada e relato de violência digital",
+      "level": 3
+    },
+    {
+      "line": 623,
+      "title": "Caso 12 — Ginecomastia puberal e uso de suplementos",
+      "level": 3
+    },
+    {
+      "line": 639,
+      "title": "26. Questões autorais — 18 questões comentadas alternativa por alternativa",
+      "level": 2
+    },
+    {
+      "line": 643,
+      "title": "Questão 1 — Primeiro sinal de puberdade nas meninas",
+      "level": 3
+    },
+    {
+      "line": 664,
+      "title": "Questão 2 — Primeiro sinal de puberdade nos meninos",
+      "level": 3
+    },
+    {
+      "line": 685,
+      "title": "Questão 3 — Definição de puberdade precoce",
+      "level": 3
+    },
+    {
+      "line": 706,
+      "title": "Questão 4 — Pubarca isolada versus puberdade central",
+      "level": 3
+    },
+    {
+      "line": 727,
+      "title": "Questão 5 — PPC ou PPP",
+      "level": 3
+    },
+    {
+      "line": 748,
+      "title": "Questão 6 — Idade óssea na puberdade precoce",
+      "level": 3
+    },
+    {
+      "line": 769,
+      "title": "Questão 7 — Tratamento de PPC",
+      "level": 3
+    },
+    {
+      "line": 790,
+      "title": "Questão 8 — Atraso puberal masculino",
+      "level": 3
+    },
+    {
+      "line": 811,
+      "title": "Questão 9 — Hipergonadotrófico versus hipogonadotrófico",
+      "level": 3
+    },
+    {
+      "line": 832,
+      "title": "Questão 10 — Amenorreia primária",
+      "level": 3
+    },
+    {
+      "line": 853,
+      "title": "Questão 11 — SOP na adolescência",
+      "level": 3
+    },
+    {
+      "line": 874,
+      "title": "Questão 12 — Menstruação com intervalo de 90 dias",
+      "level": 3
+    },
+    {
+      "line": 895,
+      "title": "Questão 13 — Ginecomastia puberal",
+      "level": 3
+    },
+    {
+      "line": 916,
+      "title": "Questão 14 — Dor testicular súbita",
+      "level": 3
+    },
+    {
+      "line": 937,
+      "title": "Questão 15 — Consulta desacompanhada",
+      "level": 3
+    },
+    {
+      "line": 958,
+      "title": "Questão 16 — Transtorno alimentar e instabilidade",
+      "level": 3
+    },
+    {
+      "line": 979,
+      "title": "Questão 17 — Puberdade precoce e RM",
+      "level": 3
+    },
+    {
+      "line": 1000,
+      "title": "Questão 18 — Acolhimento de violência digital",
+      "level": 3
+    },
+    {
+      "line": 1023,
+      "title": "27. Curadoria de imagens médicas e diagramas — 14 candidatas",
+      "level": 2
+    },
+    {
+      "line": 1044,
+      "title": "Requisitos de aprovação",
+      "level": 3
+    },
+    {
+      "line": 1056,
+      "title": "28. Auditoria científica e editorial desta fase",
+      "level": 2
+    },
+    {
+      "line": 1060,
+      "title": "Verificação das armadilhas de prova",
+      "level": 3
+    },
+    {
+      "line": 1074,
+      "title": "Pendências antes de publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "**[R1] Ministério da Saúde / CONITEC.** PCDT Puberdade Precoce Central. Portaria Conjunta SAES/SCTIE/MS nº 13, de 27/07/2022; página atualizada em 21/01/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/p/puberdade-precoce-central/view",
+    "**[R2] Sociedade Brasileira de Pediatria (SBP).** Departamento Científico de Endocrinologia. Puberdade precoce: explicações e parâmetros clínicos. Março/2023. https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-precoce/",
+    "**[R3] Sociedade Brasileira de Pediatria.** Puberdade atrasada: avaliação e tratamento. Março/2023. https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-atrasada/",
+    "**[R4] Sociedade Brasileira de Pediatria.** Documento Científico: Puberdade Precoce. Departamento Científico de Endocrinologia, gestão 2022–2024. https://www.sbp.com.br/fileadmin/user_upload/23953c-DC_-_Puberdade_Precoce.pdf",
+    "**[R5] Ministério da Saúde.** Saúde do Adolescente e Jovens — orientações de atendimento, privacidade e consulta individual. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente",
+    "**[R6] Ministério da Saúde.** Caderneta de Saúde do Adolescente, serviço oficial modificado em 29/07/2026. https://www.gov.br/pt-br/servicos/ofertar-a-caderneta-de-saude-da-adolescente-caderneta-de-saude-do-adolescente",
+    "**[R7] Ministério da Saúde.** Proteger e cuidar da saúde de adolescentes na Atenção Básica, 2ª edição. https://bvsms.saude.gov.br/bvs/publicacoes/proteger_cuidar_adolescentes_atencao_basica_2ed.pdf",
+    "**[R8] Brasil.** Lei nº 8.069/1990 — Estatuto da Criança e do Adolescente, texto compilado, inclusive alterações subsequentes. https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+    "**[R9] Sociedade Brasileira de Pediatria.** A importância da avaliação clínica da puberdade atrasada, anúncio do Documento Científico, janeiro/2022. https://www.sbp.com.br/sbp-publica-documento-sobre-importancia-da-avaliacao-clinica-da-puberdade-atrasada/",
+    "**[R10] ACOG.** Menstruation in Girls and Adolescents: Using the Menstrual Cycle as a Vital Sign. Committee Opinion 651, 2015 — referência internacional identificada para saúde menstrual. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign",
+    "**[R11] International Evidence-based Guideline for the Assessment and Management of PCOS (2023).** Recomendações específicas para critérios de irregularidade menstrual e diagnóstico em adolescentes, não substituindo protocolos brasileiros aplicáveis. https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+    "**[R12] Ministério da Saúde / Conitec.** Incorporação de leuprorrelina 45 mg e triptorrelina 22,5 mg no SUS (2022). https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/agosto/protocolos-para-puberdade-precoce-central-e-tdah-sao-atualizados-no-sus",
+    "**[R13] Ministério da Saúde.** Página principal do PNI e documentos técnicos vigentes de imunização, consultar calendário aplicável à data. https://www.gov.br/saude/pt-br/vacinacao",
+    "**[R14] Ministério da Saúde.** Diretrizes de cuidado integral à saúde do adolescente, seção de atenção básica da página oficial. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente",
+    "Priorizar **MS/PCDT e SBP** para definições, investigação e tratamento de PPC, crescimento e atendimento no Brasil. Usar ACOG e diretriz internacional de SOP com identificação explícita para cortes menstruais e diferencial. Não atribuir esquemas de tratamento endocrinológico não descritos no PCDT à prática universal do SUS."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/puberdade-precoce-central/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-precoce/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/pediatria-para-familias/doencas/puberdade-atrasada/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/fileadmin/user_upload/23953c-DC_-_Puberdade_Precoce.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-do-adolescente",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/pt-br/servicos/ofertar-a-caderneta-de-saude-da-adolescente-caderneta-de-saude-do-adolescente",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/proteger_cuidar_adolescentes_atencao_basica_2ed.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/sbp-publica-documento-sobre-importancia-da-avaliacao-clinica-da-puberdade-atrasada/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/12/menstruation-in-girls-and-adolescents-using-the-menstrual-cycle-as-a-vital-sign",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/conitec/pt-br/assuntos/noticias/2022/agosto/protocolos-para-puberdade-precoce-central-e-tdah-sao-atualizados-no-sus",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/vacinacao",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 8,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "A **adolescência**, segundo o recorte programático do Ministério da Saúde/OMS, costuma compreender dos **10 aos 19 anos**. O Estatuto da Criança e do Adolescente (ECA) define **adolescente como pessoa entre 12 e 18 anos incompletos**, e criança como pessoa com menos de 12 anos. Esses recortes têm funções diferentes: epidemiologia e organização da atenção versus aplicação de garantias legais. Não se deve confundir o limite do ECA com o início biológico da puberdade.",
+      "pattern": 0
+    },
+    {
+      "text": "A **puberdade** é o conjunto de modificações neuroendócrinas, somáticas e reprodutivas que conduz à maturidade sexual. Pode começar antes dos 10 anos em parte das crianças e prosseguir na adolescência. O início da capacidade reprodutiva não equivale à maturidade psicossocial; decisões e aconselhamento devem respeitar desenvolvimento e contexto.",
+      "pattern": 0
+    },
+    {
+      "text": "**Meninos:** LH age nas células de Leydig (testosterona) e FSH participa da função das células de Sertoli e espermatogênese. O primeiro sinal clínico habitual da gonadarca é o aumento **bilateral do volume testicular para cerca de 4 mL ou mais**. O crescimento peniano e aparecimento de pelos ocorrem em sequência posterior, com variabilidade.",
+      "pattern": 0
+    },
+    {
+      "text": "Exemplo: “M2P1 à direita e M2P1 à esquerda, broto glandular bilateral, sem secreção, velocidade de crescimento em avaliação.” Outro: “G2P1, testículos estimados em cerca de 4 mL bilateralmente, sem sinais de massa.” Registrar data, examinador e que o exame foi feito quando clinicamente necessário; seguir preferência e conforto.",
+      "pattern": 1
+    },
+    {
+      "text": "O eixo hipotálamo–hipófise–gônadas se ativa precocemente. Há progressão gonadal coerente com sequência fisiológica, porém em idade inadequada. História, Tanner, crescimento, idade óssea, LH/FSH por método sensível e resposta a teste de estímulo quando necessário integram diagnóstico.",
+      "pattern": 1
+    },
+    {
+      "text": "**Adrenarca/pubarca precoce isolada:** pelos, odor axilar, acne leve e possível DHEAS adrenarcal, com testículos infantis ou sem telarca progressiva. A avaliação deve excluir hiperplasia adrenal congênita e hiperandrogenismo patológico quando há crescimento acelerado, virilização ou quadro atípico.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Pediatria — Endocrinologia pediátrica e Medicina do Adolescente **Lote 09 • Tema 168/180 • Versão editorial de 14/10/2026** **Estado:** rascunho substancial ainda não revisado clinicamente, não publicado no catálogo LURIA. **Escopo:** adolescência como fase biopsicossocial e puberdade como processo biológico de maturação sexual e aceleração do crescimento. Dados clínicos apresentados por anatomia e processo fisiológico; acolhimento individual e respeito à diversidade.",
+      "pattern": 2
+    },
+    {
+      "text": "**Passo 5: imagem e etiologia.** US pélvica em meninas selecionadas ajuda a avaliar útero, ovários e massas; não comprova PPC isoladamente. RM de encéfalo/hipotálamo–hipófise está indicada em contextos de maior risco, especialmente meninos com PPC, meninas muito jovens e quaisquer crianças com sintomas neurológicos ou evolução atípica; em meninas de 6–8 anos sem sinais neurológicos a decisão pode ser individualizada conforme PCDT e endocrinologia pediátrica. Exames adrenais/17-OH-progesterona/DHEAS/andrógenos conforme suspeita periférica.",
+      "pattern": 2
+    },
+    {
+      "text": "A diretriz internacional de SOP/PCOS 2023 utiliza: - **Primeiro ano pós-menarca:** irregularidade pode acompanhar transição puberal. - **1 a menos de 3 anos pós-menarca:** intervalos <21 ou >45 dias sugerem anormalidade. - **A partir de 3 anos:** intervalos <21 ou >35 dias ou menos de oito ciclos/ano exigem avaliação. - **Mais de 90 dias entre menstruações**, após um ano de menarca, merece investigação. - **Amenorreia primária:** ausência de menarca aos 15 anos ou mais de três anos após telarca.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Pediatria — Endocrinologia pediátrica e Medicina do Adolescente **Lote 09 • Tema 168/180 • Versão editorial de 14/10/2026** **Estado:** rascunho substancial ainda não revisado clinicamente, não publicado no catálogo LURIA. **Escopo:** adolescência como fase biopsicossocial e puberdade como processo biológico de maturação sexual e aceleração do crescimento. Dados clínicos apresentados por anatomia e processo fisiológico; acolhimento individual e respeito à diversidade."
+    },
+    {
+      "text": "Ao terminar a leitura, o estudante deverá: 1. Explicar a reativação do eixo hipotálamo–hipófise–gônadas, a adrenarca e o estirão puberal sem confundir hormônios adrenais com gonadais. 2. Reconhecer a sequência esperada de telarca, aumento testicular, pubarca, pico de velocidade de crescimento e menarca, com suas variações fisiológicas. 3. Realizar avaliação de crescimento usando estatura, velocidade, alvo familiar, curvas por idade e sexo, exame de Tanner e idade óssea quando indicada. 4. Distinguir puberdade precoce central (PPC), periférica (PPP) e variantes benignas, escolhendo corretamente investigação hormonal e imagem. 5. Investigar atraso puberal e hipogonadismo por insuficiência gonadal primária, causa central, doença sistêmica e atraso constitucional. 6. Identificar alterações menstruais, acne, ginecomastia, queixas genitais e transtornos nutricionais relevantes. 7. Atender adolescentes com privacidade, abordagem de riscos e fatores protetores, educação sexual, saúde mental, atualização vacinal e ações contra violência. 8. Encaminhar situações de emergência e construir seguimento clínico sem medicalizar variações normais. 9. Resolver casos e questões com foco ENAMED/residência e prática do SUS."
+    }
+  ]
+}

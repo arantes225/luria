@@ -1,0 +1,318 @@
+{
+  "sha": "7d2b4a297afc86f24f74b50dee5c82a4ee1221f6",
+  "path": "apostilas/_rascunhos/lote-09-aula-182-rcp-adulto-cuidados-pos-parada.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--7d2b4a297a",
+  "title": "LURIA · Apostila 182 — Ressuscitação cardiopulmonar do adulto e cuidados pós-parada",
+  "format": ".md",
+  "chars_estimated": 77817,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 182 — Ressuscitação cardiopulmonar do adulto e cuidados pós-parada"
+    },
+    {
+      "title": "Sumário pedagógico e objetivos"
+    },
+    {
+      "title": "1. Compreensão fisiológica: o que falha na parada?"
+    },
+    {
+      "title": "1.1 Perfusão coronariana e cerebral"
+    },
+    {
+      "title": "1.2 Por que a desfibrilação funciona?"
+    },
+    {
+      "title": "1.3 Síndrome pós-parada"
+    },
+    {
+      "title": "2. Reconhecimento e cadeia de sobrevivência"
+    },
+    {
+      "title": "Quadro 1 — Conduta inicial em três apresentações"
+    },
+    {
+      "title": "3. RCP de alta qualidade: técnica, lógica e erros"
+    },
+    {
+      "title": "3.1 Ventilação antes de via aérea avançada"
+    },
+    {
+      "title": "3.2 Com via aérea avançada"
+    },
+    {
+      "title": "3.3 Fração de compressão torácica"
+    },
+    {
+      "title": "4. Desfibrilador e DEA: o choque é para dois ritmos"
+    },
+    {
+      "title": "Comparação indispensável"
+    },
+    {
+      "title": "5. ACLS: algoritmo do adulto por ritmo"
+    },
+    {
+      "title": "5.1 FV/TVSP: prioridade é desfibrilar"
+    },
+    {
+      "title": "5.2 Assistolia/AESP: choque não resolve"
+    },
+    {
+      "title": "5.3 Drogas: doses usuais e limites"
+    },
+    {
+      "title": "6. Acesso vascular, monitorização e ultrassom"
+    },
+    {
+      "title": "7. As causas reversíveis: raciocínio pelos “Hs e Ts”"
+    },
+    {
+      "title": "7.1 Hipovolemia"
+    },
+    {
+      "title": "7.2 Hipóxia"
+    },
+    {
+      "title": "7.3 Acidose e distúrbios do potássio"
+    },
+    {
+      "title": "7.4 Hipotermia"
+    },
+    {
+      "title": "7.5 Pneumotórax hipertensivo"
+    },
+    {
+      "title": "7.6 Tamponamento cardíaco"
+    },
+    {
+      "title": "7.7 Trombose pulmonar"
+    },
+    {
+      "title": "7.8 Trombose coronariana"
+    },
+    {
+      "title": "7.9 Toxinas"
+    },
+    {
+      "title": "8. Circunstâncias especiais que mudam a conduta"
+    },
+    {
+      "title": "9. Retorno da circulação espontânea: reconhecer e estabilizar"
+    },
+    {
+      "title": "9.1 Primeiros minutos após RCE"
+    },
+    {
+      "title": "9.2 Metas iniciais de oxigenação, ventilação e circulação"
+    },
+    {
+      "title": "9.3 Controle de glicemia"
+    },
+    {
+      "title": "9.4 Temperatura: o que realmente mudou"
+    },
+    {
+      "title": "9.5 ECG, coronariografia e imagem"
+    },
+    {
+      "title": "9.6 Convulsões e EEG"
+    },
+    {
+      "title": "10. Prognóstico neurológico: evitar conclusões irreversíveis precoces"
+    },
+    {
+      "title": "11. Equipe, segurança e qualidade de sistema"
+    },
+    {
+      "title": "12. Fluxograma original LURIA — leitura como árvore de decisões"
+    },
+    {
+      "title": "13. Armadilhas de prova e de plantão"
+    },
+    {
+      "title": "14. Casos clínicos originais com raciocínio comentado"
+    },
+    {
+      "title": "Caso 1 — Colapso testemunhado em academia, ritmo chocável"
+    },
+    {
+      "title": "Caso 2 — Insuficiência respiratória e AESP no hospital"
+    },
+    {
+      "title": "Caso 3 — RCE sem resposta aos comandos"
+    },
+    {
+      "title": "Caso 4 — Parada em gestante com fundo uterino acima da cicatriz umbilical"
+    },
+    {
+      "title": "15. Questões originais de consolidação — comentadas"
+    },
+    {
+      "title": "Questão 1 — O reconhecimento"
+    },
+    {
+      "title": "Questão 2 — Ritmos"
+    },
+    {
+      "title": "Questão 3 — Choque e compressões"
+    },
+    {
+      "title": "Questão 4 — Farmacologia"
+    },
+    {
+      "title": "Questão 5 — Cuidados pós-RCE"
+    },
+    {
+      "title": "Questão 6 — Coronariografia e neuroprognóstico"
+    },
+    {
+      "title": "16. Checklist de revisão rápida para o aluno"
+    },
+    {
+      "title": "17. Referências primárias (verificadas) e rastreabilidade"
+    },
+    {
+      "title": "18. Interpretação do monitor durante PCR: do traçado à decisão"
+    },
+    {
+      "title": "18.1 FV grosseira, FV fina e taquicardia ventricular sem pulso"
+    },
+    {
+      "title": "18.2 Assistolia verdadeira versus problemas de registro"
+    },
+    {
+      "title": "18.3 Dissociação eletromecânica: AESP e pseudo-AESP"
+    },
+    {
+      "title": "18.4 Como agir quando o ritmo muda"
+    },
+    {
+      "title": "19. Mecânica da ventilação e interpretação integrada de ETCO₂"
+    },
+    {
+      "title": "19.1 Pressão intratorácica e retorno venoso"
+    },
+    {
+      "title": "19.2 Ventilação após RCE: evitar extremos"
+    },
+    {
+      "title": "19.3 O que fazer quando a saturação está baixa"
+    },
+    {
+      "title": "19.4 Via aérea difícil e decisão de intubação"
+    },
+    {
+      "title": "20. Circulação no período pós-parada: distinguir choque cardiogênico de vasoplegia"
+    },
+    {
+      "title": "20.1 Como avaliar a perfusão além da pressão"
+    },
+    {
+      "title": "20.2 Choque cardiogênico pós-parada"
+    },
+    {
+      "title": "20.3 Vasoplegia e outras causas de hipotensão"
+    },
+    {
+      "title": "20.4 Oxigenação e circulação cerebral como eixos integrados"
+    },
+    {
+      "title": "21. Ressuscitação refratária, transporte, ECPR e limites éticos"
+    },
+    {
+      "title": "21.1 Ressuscitação extracorpórea (ECPR)"
+    },
+    {
+      "title": "21.2 Desfibrilação refratária e técnicas especiais"
+    },
+    {
+      "title": "21.3 RCP mecânica"
+    },
+    {
+      "title": "21.4 Critérios para término da reanimação"
+    },
+    {
+      "title": "21.5 Diretivas antecipadas e comunicação"
+    },
+    {
+      "title": "22. Exercícios integradores adicionais e matriz de autossuficiência"
+    },
+    {
+      "title": "Vinheta aplicada A — Linha quase reta após troca de leito"
+    },
+    {
+      "title": "Vinheta aplicada B — ETCO₂ de 8 mmHg durante RCP"
+    },
+    {
+      "title": "Vinheta aplicada C — Choque cardiogênico após RCE"
+    },
+    {
+      "title": "Vinheta aplicada D — Mioclonias em paciente sedado"
+    },
+    {
+      "title": "Matriz preliminar: onde o aluno deve encontrar as respostas"
+    },
+    {
+      "title": "Perguntas rápidas para autoavaliação oral"
+    },
+    {
+      "title": "23. Pendências para liberação — NÃO CERTIFICADO"
+    }
+  ],
+  "reference_entries": [
+    "1. AMERICAN HEART ASSOCIATION. **Part 7: Adult Basic Life Support.** 2025 Guidelines for CPR and ECC. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+    "2. WIGGINTON, J. G. et al. **Part 9: Adult Advanced Life Support.** *Circulation*, 2025;152(Suppl 2):S538–S577. DOI: [10.1161/CIR.0000000000001376](https://doi.org/10.1161/CIR.0000000000001376).",
+    "3. AMERICAN HEART ASSOCIATION. **Part 10: Adult and Pediatric Special Circumstances of Resuscitation.** 2025. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "4. HIRSCH, K. G. et al. **Part 11: Post–Cardiac Arrest Care.** *Circulation*, 2025;152(Suppl 2):S673–S718. DOI: [10.1161/CIR.0000000000001375](https://doi.org/10.1161/CIR.0000000000001375).",
+    "5. AMERICAN HEART ASSOCIATION. **2025 CPR/ECC Algorithms.** https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/",
+    "**AESP verdadeira** expressa ausência de contração mecânica eficaz apesar de atividade elétrica detectável; **pseudo-AESP** refere-se a movimento cardíaco ainda presente ao ultrassom, mas circulação insuficiente para gerar pulso detectável clinicamente. A diferença pode ajudar a formular hipóteses, mas não altera a necessidade imediata de compressões em paciente sem circulação efetiva. O ultrassom não deve ser usado para abandonar terapia ou determinar prognóstico isoladamente. Presença de alguma movimentação cardíaca não significa que o paciente esteja perfundindo adequadamente.",
+    "**O ETCO₂ não é um biomarcador isolado de prognóstico.** Vazamento ao redor do dispositivo, excesso de ventilação, administração de certas medicações e alterações metabólicas afetam leitura. Quando a onda desaparece, examinar circuito, sensor, vedação, via aérea e perfusão. A interpretação deve integrar ritmo, pressão arterial, expansibilidade do tórax, gases e evolução no tempo.",
+    "**Por que não devo interromper compressões por 30 segundos para palpar pulso?** Porque o pulso é difícil de avaliar durante baixo fluxo, e a parada das compressões reduz rapidamente pressão de perfusão coronariana, comprometendo probabilidade de sucesso. O limite de aproximadamente dez segundos minimiza essa perda.",
+    "**Por que o monitor pode mostrar um ritmo “normal” durante AESP?** Porque a despolarização elétrica pode ocorrer sem força contrátil ou sem enchimento suficiente para gerar débito palpável. É necessário confirmar circulação.",
+    "**Por que não transfiro automaticamente todas as PCRs com ECPR disponível a longa distância?** Porque resultado depende de tempo sem fluxo, RCP de qualidade, etiologia, seleção e logística. Transporte pode deteriorar assistência, e centro especializado precisa aceitar e executar terapêutica em janela efetiva.",
+    "**Por que febre após RCE merece tratamento ativo?** Porque hipertermia aumenta demandas metabólicas e pode agravar lesão cerebral em tecido vulnerável. As recomendações de 2025 continuam exigindo controle deliberado de temperatura no grupo indicado.",
+    "**Por que um paciente sedado sem reação ainda não pode ser declarado neurologicamente sem recuperação?** Porque sedativos, hipotermia e instabilidade interferem em exame e testes; prognóstico exige momento adequado, exclusão de confundidores e avaliação multimodal.",
+    "**COMPLEMENTAR NA PRÓXIMA REVISÃO:** ampliar aprofundamento mecanístico e interpretações concretas de monitorização, administração segura de medicações e particularidades do suporte avançado por perfis; detalhar abordagem das causas reversíveis especiais com fontes respectivas; adicionar subcapítulos completos sobre bradi/taquiarritmias peri-parada sem duplicar eletrocardiografia, ECPR e critérios de transferência; expandir casuística e comentários até que o aluno responda questões variadas usando apenas este documento.",
+    "**Curadoria visual ainda pendente:** mapear e licenciar pelo menos 10 candidatas clínicas para a fila Admin (traçados FV/TVSP/AESP/assistolia; posição de compressões; monitor/capnografia; ritmo pós-RCE; esquema de Hs/Ts; imagem de tamponamento ou TEP; traçados que exemplifiquem ritmo organizado sem pulso), sem inserir ou copiar imagens de terceiros e sem confundir desenho gerado com ECG/exame real. A seleção definitiva requer URL original, autoria, licença comercial verificável, legenda didática, seção de destino e aprovação Admin."
+  ],
+  "external_urls": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+    "https://doi.org/10.1161/CIR.0000000000001376",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://doi.org/10.1161/CIR.0000000000001375",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A capnografia contínua com forma de onda é recomendada para confirmar e monitorar posicionamento do tubo endotraqueal. Ausência persistente de onda adequada exige considerar deslocamento do tubo, erro de posicionamento, baixa perfusão ou equipamento. A avaliação deve integrar inspeção, expansão bilateral, ausculta quando possível e contexto clínico; não substituir exame por número isolado."
+    },
+    {
+      "text": "A tecnologia bifásica é amplamente utilizada em ambientes de emergência. Para choque de FV/TVSP, seguir energia inicial recomendada pelo fabricante do dispositivo (comumente na faixa de 120–200 J conforme forma de onda). Quando a dose do fabricante é desconhecida, utilizar a energia máxima disponível, conforme diretrizes e configuração institucional. Monofásicos, quando presentes, tradicionalmente utilizam 360 J. Não transformar **200 J** em valor universal para todos os aparelhos e ondas."
+    },
+    {
+      "text": "O **DEA** interpreta o ritmo e orienta choque quando indicado; pode ser operado por leigos treinados e, em muitos contextos, por pessoas sem treinamento prévio seguindo instruções de áudio. A sequência é ligar, posicionar eletrodos, afastar pessoas na análise e, se orientado, na descarga, retomando RCP rapidamente. A instrução “choque não recomendado” não significa que a pessoa esteja viva ou tenha circulação: pode corresponder a assistolia ou AESP, e compressões devem continuar quando houver PCR."
+    },
+    {
+      "text": "**Epinefrina/adrenalina:** dose padrão no adulto com PCR: **1 mg IV/IO a cada 3–5 minutos**. Usar a apresentação e diluição corretas com dupla conferência; essa dose é de parada cardíaca, **não** pode ser confundida com a dose e via para anafilaxia com circulação. Na AESP/assistolia, administrar assim que possível; em FV/TVSP, após as primeiras tentativas de choque malsucedidas. Altas doses rotineiras não são recomendadas."
+    },
+    {
+      "text": "**Amiodarona:** pode ser considerada em FV/TVSP refratária à desfibrilação. Esquema frequentemente utilizado no algoritmo de PCR do adulto: primeira dose **300 mg IV/IO em bolus**, seguida, se necessária, de segunda dose **150 mg**. Não se deve aplicar este esquema de bolus rápido a uma taquicardia estável com pulso; ali a avaliação, monitorização e infusão são diferentes."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

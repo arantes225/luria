@@ -1,0 +1,132 @@
+{
+  "sha": "1be510109cc54dc36085d8793aedb75fcb06c8af",
+  "path": "apostilas/principios-diretrizes-sus/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "principios-diretrizes-sus--1be510109c",
+  "title": "Princípios e Diretrizes do SUS",
+  "format": ".json",
+  "chars_estimated": 69155,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Princípios e diretrizes do SUS: o que o médico precisa compreender"
+    },
+    {
+      "id": "fundamentos",
+      "title": "1. Constituição de 1988, Reforma Sanitária e conceito ampliado de saúde"
+    },
+    {
+      "id": "doutrina",
+      "title": "2. Princípios doutrinários e organizativos: como classificar sem errar a lei"
+    },
+    {
+      "id": "universalidade",
+      "title": "3. Universalidade: titularidade do direito e acesso efetivo"
+    },
+    {
+      "id": "integralidade",
+      "title": "4. Integralidade: pessoa inteira, linha de cuidado e responsabilidade na rede"
+    },
+    {
+      "id": "equidade",
+      "title": "5. Equidade: redução de iniquidades sem privilégio pessoal"
+    },
+    {
+      "id": "organizacao",
+      "title": "6. Regionalização, hierarquização e redes de atenção"
+    },
+    {
+      "id": "portas",
+      "title": "7. Portas de entrada e regulação: o que diz o Decreto nº 7.508"
+    },
+    {
+      "id": "descentralizacao",
+      "title": "8. Descentralização, direção única e responsabilidades dos entes federados"
+    },
+    {
+      "id": "pactuacao",
+      "title": "9. Comissões intergestores, Conass, Conasems e decisão compartilhada"
+    },
+    {
+      "id": "participacao",
+      "title": "10. Participação da comunidade, Conselhos e Conferências de Saúde"
+    },
+    {
+      "id": "privado",
+      "title": "11. SUS, setor privado e complementaridade: distinguir arranjos"
+    },
+    {
+      "id": "aplicacao",
+      "title": "12. Como aplicar princípios na clínica, na gestão e na prova"
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos integradores: dos princípios às decisões"
+    },
+    {
+      "id": "questoes",
+      "title": "14. Questões autorais com justificativas por alternativa"
+    },
+    {
+      "id": "referencias",
+      "title": "15. Referências verificáveis, matriz de cobertura e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"15. Referências verificáveis, matriz de cobertura e pendências\"]",
+    "[\"3\",\"Fontes primárias e leitura comparativa\"]",
+    "[\"o\",[\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Constituição Federal de 1988, arts. 196–200. Presidência da República — texto constitucional.</a>\",\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/leis/l8080.htm\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Brasil. Lei nº 8.080, de 19 de setembro de 1990, texto consolidado consultado em outubro de 2026.</a>\",\"<a href=\\\"https://www.planalto.gov.br/ccivil_03/leis/l8142.htm\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Brasil. Lei nº 8.142, de 28 de dezembro d",
+    "[\"3\",\"Matriz de autossuficiência — versão de desenvolvimento\"]",
+    "[\"t\",[\"Competência para uma questão\",\"Capítulo principal\",\"Situação\"],[[\"Distinguir direito constitucional e dever estatal\",\"1\",\"Texto inicial incluído, conferência jurídica final pendente\"],[\"Discriminar universalidade/integralidade/equidade\",\"2–5\",\"Incluído com quadros e exemplos, verificar clareza na revisão\"],[\"Localizar fundamentos do art. 7º Lei 8.080\",\"2 e 3\",\"Incluído; leitura artigo a artigo fica no tema 010\"],[\"Diferenciar descentralização de desconcentração\",\"8\",\"Incluído com explicações e exemplos\"],[\"Definir Região de Saúde e seus cinco componentes\",\"6\",\"Incluído; testar com quest",
+    "[\"p\",\"<strong>Material comparativo não incorporado:</strong> arquivo de revisão 'SUS.pdf' do Google Drive do usuário, com 2.670 caracteres de texto extraído, foi aberto antes da redação e usado para identificar organização didática e lacunas. Autoria institucional do arquivo não confirmada, não reproduzimos seus textos, fluxos ou imagens. A cifra sem metodologia de '85% de resolutividade' foi tratada como simplificação histórica, não como taxa normativa universal.\"]",
+    "[\"p\",\"<strong>Estado editorial:</strong> conteúdo elaborado como rascunho original do tema 005 do planejamento de 260 apostilas. Não há index.html e a obra não está no catálogo. As informações normativas foram conferidas em fontes oficiais acessadas em 14/10/2026. Ainda são necessários leitura jurídica final de dispositivos consolidados, revisão didática independente, auditoria de texto útil sem duplicação, verificação das questões por especialistas, avaliação de acessibilidade/layout e eventual curadoria de diagramas com direitos de uso e aprovação centralizada no Admin. Não declarar apostila"
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm",
+    "https://www.gov.br/saude/pt-br/composicao/se/dgip/regionalizacao/regionalizacao",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html",
+    "https://bvs.saude.gov.br/bvs/saudelegis/cns/2012/res0453_10_05_2012.html",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus/conselhos"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "integralidade",
+      "text": "Mais exames e medicamentos não garantem melhor saúde. A prevenção quaternária e a medicina baseada em evidências protegem contra excesso de intervenções, sobrediagnóstico, iatrogenia e desperdício de recursos. A integração não se traduz em 'fazer tudo'; demanda escolher o que é indicado, compartilhar decisões e comunicar incertezas. Pode ser integral não solicitar ressonância em lombalgia sem sinais de alarme, desde que a equipe avalie, oriente, alivie sintomas e acompanhe a evolução."
+    },
+    {
+      "section": "integralidade",
+      "text": "Referência é encaminhamento para serviço ou recurso com maior adequação à necessidade; contrarreferência é retorno de informações, planos e responsabilidades à equipe de origem ou outro ponto que seguirá a pessoa. Em uma linha de cuidado oncológica, a informação de cirurgia realizada, anatomopatológico, terapêutica e sinais de alerta precisa chegar aos responsáveis pelo território. Sem esse fluxo, o usuário carrega sozinho o ônus de explicar diagnósticos e pedidos e aumenta risco de duplicidade, atraso e falha de seguimento."
+    },
+    {
+      "section": "descentralizacao",
+      "text": "A resposta não é negar atendimento com a frase 'não é responsabilidade da cidade'. É reconhecer limites reais e organizar continuidade por meio da rede regional, da regulação e dos mecanismos de cooperação. Para investigação oncológica complexa, município pequeno pode assegurar diagnóstico inicial e seguimento, encaminhando para referência regional enquanto estado e demais gestores pactuam capacidade e financiamento. Uma pessoa não pode ser abandonada entre secretarias por discussão sobre quem pagará o procedimento. A responsabilidade federativa exige articulação para viabilizar o direito, ainda que os detalhes jurídicos de atribuição variem."
+    },
+    {
+      "section": "pactuacao",
+      "text": "Imagine que três municípios querem compartilhar um centro diagnóstico. Secretarias locais mapeiam necessidade e capacidade; gestores pactuam região, fluxos, custos e regulação com apoio estadual, utilizando fórum apropriado, frequentemente CIB. Conselhos de Saúde analisam diretrizes e acompanham execução, inclusive gastos e transparência. Serviços assistenciais organizam encaminhamentos e devolução de laudos. Usuários são ouvidos e devem ter canais de participação e informação. A qualidade da solução depende de planejamento e cumprimento do fluxo, não da simples assinatura de convênio."
+    },
+    {
+      "section": "privado",
+      "text": "O poder público continua responsável por organização, regulação, fiscalização, financiamento segundo normas e continuidade da rede, mesmo quando um serviço específico é executado por contratado. A necessidade de oferecer diagnóstico e tratamento não autoriza transferir a responsabilidade para uma instituição particular e abandonar a regulação de acesso ou o acompanhamento. O usuário deve conhecer fluxos e direitos pertinentes, receber cuidado digno e conseguir seguir sua linha de cuidado após atendimento contratado."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

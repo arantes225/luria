@@ -1,0 +1,411 @@
+{
+  "sha": "93702f20035303fb60e1959ffa09b18546cc29eb",
+  "path": "apostilas/_rascunhos/lote-03-052-traumatismo-cranioencefalico.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--93702f2003",
+  "title": "LURIA — Apostila 052 | Traumatismo cranioencefálico: da concussão ao neurotrauma grave",
+  "format": ".md",
+  "chars_estimated": 88493,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 052 | Traumatismo cranioencefálico: da concussão ao neurotrauma grave"
+    },
+    {
+      "title": "0. Etapa zero — inventário, benchmark e plano autoral"
+    },
+    {
+      "title": "Matriz de escopo e lacunas"
+    },
+    {
+      "title": "1. Conceito, importância e espectro clínico"
+    },
+    {
+      "title": "1.1 Uma pergunta fundamental: por que o TCE não termina no momento do impacto?"
+    },
+    {
+      "title": "2. Bases anatômicas e fisiológicas indispensáveis"
+    },
+    {
+      "title": "2.1 Autorregulação do fluxo sanguíneo cerebral"
+    },
+    {
+      "title": "2.2 Lesão primária versus secundária"
+    },
+    {
+      "title": "2.3 Edema cerebral: citotóxico, vasogênico e mecanismos mistos"
+    },
+    {
+      "title": "3. Gravidade clínica: Glasgow, sintomas e lesões estruturais"
+    },
+    {
+      "title": "3.1 Componentes e interpretação clínica"
+    },
+    {
+      "title": "3.2 Glasgow normal não equivale a TC normal"
+    },
+    {
+      "title": "3.3 Pupilas e sinais focais"
+    },
+    {
+      "title": "3.4 Sinais de alarme na prática"
+    },
+    {
+      "title": "4. Atendimento inicial do paciente com suspeita de TCE significativo"
+    },
+    {
+      "title": "4.1 Via aérea: decidir pela capacidade de proteger, não apenas pelo número"
+    },
+    {
+      "title": "4.2 Oxigenação e ventilação"
+    },
+    {
+      "title": "4.3 Perfusão: um episódio de hipotensão pode importar muito"
+    },
+    {
+      "title": "4.4 Metabolismo, glicose, temperatura e crises"
+    },
+    {
+      "title": "5. Tomografia de crânio: reconhecer quem precisa e a urgência"
+    },
+    {
+      "title": "5.1 NICE NG232 — adulto com 16 anos ou mais: TC em até uma hora"
+    },
+    {
+      "title": "5.2 NICE NG232 — adulto com perda de consciência ou amnésia"
+    },
+    {
+      "title": "5.3 Anticoagulantes e antiagregantes"
+    },
+    {
+      "title": "5.4 Crianças e adolescentes abaixo de 16 anos"
+    },
+    {
+      "title": "5.5 Por que duas regras podem dar respostas diferentes?"
+    },
+    {
+      "title": "6. Ler a TC sem virar refém do laudo"
+    },
+    {
+      "title": "6.1 Hematoma epidural"
+    },
+    {
+      "title": "6.2 Hematoma subdural agudo"
+    },
+    {
+      "title": "6.3 Contusões e hematoma intraparenquimatoso"
+    },
+    {
+      "title": "6.4 Hemorragia subaracnóidea traumática"
+    },
+    {
+      "title": "6.5 Hemorragia intraventricular, hidrocefalia e fratura"
+    },
+    {
+      "title": "6.6 Lesão axonal traumática"
+    },
+    {
+      "title": "6.7 O que é “efeito de massa”?"
+    },
+    {
+      "title": "7. Qual hematoma precisa de neurocirurgia? Entender critérios em vez de decorar formas"
+    },
+    {
+      "title": "7.1 Epidural agudo"
+    },
+    {
+      "title": "7.2 Subdural agudo"
+    },
+    {
+      "title": "7.3 Contusões e massas intraparenquimatosas"
+    },
+    {
+      "title": "7.4 Fraturas abertas e deprimidas"
+    },
+    {
+      "title": "7.5 Craniectomia descompressiva e perspectiva de resultado"
+    },
+    {
+      "title": "8. Hipertensão intracraniana (HIC): fisiologia à beira-leito"
+    },
+    {
+      "title": "8.1 Metas de PIC e PPC: números com contexto"
+    },
+    {
+      "title": "8.2 Quando medir a PIC?"
+    },
+    {
+      "title": "8.3 Por que elevar a cabeceira pode ajudar?"
+    },
+    {
+      "title": "8.4 Tratamento escalonado — conceito e objetivos"
+    },
+    {
+      "title": "8.5 Solução salina hipertônica e manitol"
+    },
+    {
+      "title": "8.6 Hiperventilação: recurso de ponte, não rotina"
+    },
+    {
+      "title": "8.7 Sedação, analgesia e bloqueio neuromuscular"
+    },
+    {
+      "title": "8.8 Corticosteroide e hipotermia"
+    },
+    {
+      "title": "9. Convulsões após TCE: tratamento agudo, prevenção precoce e epilepsia"
+    },
+    {
+      "title": "9.1 Quem merece considerar profilaxia?"
+    },
+    {
+      "title": "9.2 Crise convulsiva não convulsiva"
+    },
+    {
+      "title": "9.3 Armadilhas de prova"
+    },
+    {
+      "title": "10. Hemostasia, anticoagulação e transfusão em neurotrauma"
+    },
+    {
+      "title": "10.1 O que a TC muda na anticoagulação?"
+    },
+    {
+      "title": "10.2 Plaquetas e anticoagulantes antiagregantes"
+    },
+    {
+      "title": "10.3 Quanto de hemoglobina é suficiente?"
+    },
+    {
+      "title": "11. Cuidados intensivos sistêmicos: cérebro não existe isoladamente"
+    },
+    {
+      "title": "11.1 Líquidos e eletrólitos"
+    },
+    {
+      "title": "11.2 Temperatura e infecção"
+    },
+    {
+      "title": "11.3 Nutrição e prevenção de fraqueza"
+    },
+    {
+      "title": "11.4 Tromboembolismo venoso"
+    },
+    {
+      "title": "11.5 Avaliação funcional precoce"
+    },
+    {
+      "title": "12. Crianças: o que muda de fato"
+    },
+    {
+      "title": "12.1 PECARN: raciocínio por idade, não lista decorada"
+    },
+    {
+      "title": "12.2 NICE pediátrica versus PECARN"
+    },
+    {
+      "title": "12.3 HIC em criança não usa as mesmas metas do adulto"
+    },
+    {
+      "title": "12.4 Retorno à escola e proteção contra novo TCE"
+    },
+    {
+      "title": "13. TCE leve e concussão: diagnóstico clínico, observação e recuperação"
+    },
+    {
+      "title": "13.1 Avaliar além de uma pergunta sobre desmaio"
+    },
+    {
+      "title": "13.2 Por que o repouso absoluto prolongado não é o padrão atual?"
+    },
+    {
+      "title": "13.3 Retorno ao esporte em etapas"
+    },
+    {
+      "title": "13.4 Sintomas persistentes pós-concussão"
+    },
+    {
+      "title": "13.5 Alta responsável"
+    },
+    {
+      "title": "14. Idoso, anticoagulação e trauma aparentemente banal"
+    },
+    {
+      "title": "14.1 Duas perguntas sobre anticoagulação"
+    },
+    {
+      "title": "14.2 Polifarmácia, síncope e causa da queda"
+    },
+    {
+      "title": "15. Gestação, lesão craniana e particularidades sistêmicas"
+    },
+    {
+      "title": "16. Seis casos clínicos integrados — do pronto atendimento à neurocirurgia"
+    },
+    {
+      "title": "Caso 1 — Intervalo lúcido e epidural expansivo"
+    },
+    {
+      "title": "Caso 2 — Subdural agudo no idoso anticoagulado"
+    },
+    {
+      "title": "Caso 3 — TCE grave, choque hemorrágico extracraniano e perfusão cerebral"
+    },
+    {
+      "title": "Caso 4 — PIC elevada sem lesão única operável"
+    },
+    {
+      "title": "Caso 5 — Lactente com hematoma de couro cabeludo e história inconsistente"
+    },
+    {
+      "title": "Caso 6 — Concussão no esporte com TC normal e sintomas persistentes"
+    },
+    {
+      "title": "17. Questões originais para residência — justificativa das alternativas"
+    },
+    {
+      "title": "Questão 1 — Critério de TC imediata no adulto"
+    },
+    {
+      "title": "Questão 2 — Adulto idoso com amnésia"
+    },
+    {
+      "title": "Questão 3 — Forma de hematoma na TC"
+    },
+    {
+      "title": "Questão 4 — Critério de epidural operável"
+    },
+    {
+      "title": "Questão 5 — Critério de subdural agudo"
+    },
+    {
+      "title": "Questão 6 — PIC, PPC e metas"
+    },
+    {
+      "title": "Questão 7 — Hiperventilação em TCE"
+    },
+    {
+      "title": "Questão 8 — Corticoide e hipotermia"
+    },
+    {
+      "title": "Questão 9 — Prevenção de convulsão pós-traumática"
+    },
+    {
+      "title": "Questão 10 — Lactente e TC"
+    },
+    {
+      "title": "Questão 11 — Retorno ao esporte após concussão"
+    },
+    {
+      "title": "Questão 12 — Hemoglobina no TCE"
+    },
+    {
+      "title": "18. Pérolas e armadilhas: revisão orientada por decisões"
+    },
+    {
+      "title": "19. Quando internar, observar, transferir ou orientar alta"
+    },
+    {
+      "title": "19.1 Internação e observação hospitalar"
+    },
+    {
+      "title": "19.2 Acionamento da neurocirurgia"
+    },
+    {
+      "title": "19.3 Transporte seguro"
+    },
+    {
+      "title": "19.4 Alta após TCE sem lesão intracraniana relevante"
+    },
+    {
+      "title": "20. Prognóstico e decisão compartilhada"
+    },
+    {
+      "title": "20.1 Morte encefálica: conceito separado de mau prognóstico"
+    },
+    {
+      "title": "21. Camada visual: 10 candidatas com finalidade clínica, sem incorporação automática"
+    },
+    {
+      "title": "22. Referências completas e trilha de correções"
+    },
+    {
+      "title": "23. Auditoria científica-editorial — checkpoint de 15/10/2026"
+    }
+  ],
+  "reference_entries": [
+    "1. NICE. **Head injury: assessment and early management**, NG232, maio de 2023. Disponível em https://www.nice.org.uk/guidance/ng232/chapter/recommendations . Usada para indicação e tempo de TC, TXA no TCE selecionado, observação e transferência.",
+    "2. Brain Trauma Foundation. **Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition**, Neurosurgery, 2017 (publicação inicial online 2016). Página pública https://braintrauma.org/coma/guidelines/severe-tbi . Usada para PIC, PPC, PAS, prevenção de convulsão precoce, corticosteroides e HIC.",
+    "3. Brain Trauma Foundation. **Guidelines for the Surgical Management of Traumatic Brain Injury**, recomendações em https://braintrauma.org/coma/guidelines/surgical . Usada para volume de epidural, espessura/desvio de subdural e contusões com efeito de massa.",
+    "4. American College of Surgeons. **Best Practices Guidelines in Management of TBI** — notícia oficial da revisão de outubro de 2024. https://www.facs.org/media-center/press-releases/2024/american-college-of-surgeons-releases-revised-best-practices-guidelines-in-management-of-traumatic-brain-injury/ . Página institucional confirma publicação; revisão integral do manual é pendente.",
+    "5. Kochanek PM et al. **Guidelines for the Management of Pediatric Severe Traumatic Brain Injury, Third Edition**, Pediatric Critical Care Medicine. 2019;20(3S Suppl 1):S1–S82. DOI 10.1097/PCC.0000000000001735. https://pubmed.ncbi.nlm.nih.gov/30829890/ . Usada para faixa pediátrica de PIC/PPC.",
+    "6. Turgeon AF et al. **Liberal or Restrictive Transfusion Strategy in Patients with Traumatic Brain Injury**, N Engl J Med. 2024;391:722–735. DOI 10.1056/NEJMoa2404360. https://www.nejm.org/doi/full/10.1056/NEJMoa2404360 . Usada para não transformar Hb>10 em meta universal.",
+    "7. Centers for Disease Control and Prevention. **Managing Return to Activities**, julho 2025. https://www.cdc.gov/heads-up/hcp/clinical-guidance/ . Usada para concussão e retorno gradual.",
+    "8. Centers for Disease Control and Prevention. **Returning to School After a Concussion**, agosto 2025. https://www.cdc.gov/heads-up/guidelines/returning-to-school.html .",
+    "9. Conselho Federal de Medicina. **Resolução CFM nº 2.173/2017**, determinação de morte encefálica. https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2017/2173_2017.pdf . Referência normativa de contexto; antes de detalhar testes legais, revisar vigência e todos os requisitos.",
+    "**Divergência editorial importante:** a NICE NG232 (2023) admite considerar TXA em dose única de 2 g IV para TCE com GCS ≤12 e sem sangramento extracraniano ativo suspeito, o mais cedo possível até duas horas, inclusive antes de imagem. Isso **não é o mesmo regime nem a mesma população** da estratégia de TXA para trauma com hemorragia extracraniana maior (p. ex., 1 g seguido de 1 g em oito horas até três horas na diretriz de trauma). A escolha deve seguir cenário e protocolo; o texto não prescreve automaticamente TXA em toda concussão ou em qualquer lesão. As evidências, contexto brasileiro e ",
+    "- [x] Tema curricular e relação com nº 047 identificados; sem duplicação integral de xABCDE.",
+    "- [x] Benchmark privado de TCE aberto e lido; autoria institucional não presumida.",
+    "- [x] Correções de conceitos antigos sobre imagem, PPC/PIC, corticosteroides, nimodipino e hipotermia.",
+    "- [x] Diferenciais de hematomas com leitura tomográfica e critérios específicos de cirurgia.",
+    "- [x] Quadro de TCE leve/concussão, risco pediátrico e idoso anticoagulado.",
+    "- [x] Seis casos clínicos autorais completos, incluindo TCE grave, epidural, subdural, pediatria e concussão.",
+    "- [x] Doze questões com quatro alternativas, gabarito, explicações e minirrevisão.",
+    "- [x] Planejamento de 10 imagens; 1 fonte/licença candidata explicitamente identificada, as demais pendentes.",
+    "- [ ] Leitura integral da diretriz ACS 2024 e revisão da aplicabilidade a serviços brasileiros, inclusive neurocirurgia e transportes.",
+    "- [ ] Revisão farmacológica por especialista dos critérios de osmoterapia, anticonvulsivantes, reversão de anticoagulantes e TXA.",
+    "- [ ] Checagem de conteúdo **didático útil e original** versus métrica de 60.000 caracteres após retirar títulos, tabelas, casos, questões, referências e repetições.",
+    "- [ ] Conferência do algoritmo completo PECARN, em especial critérios por idade e exclusões, antes de criar calculadora.",
+    "- [ ] Auditoria de fontes brasileiras do SUS/CFM e atualização legal específica de morte encefálica antes de qualquer uso operacional.",
+    "- [ ] Aprovação Admin das imagens clínicas reais, com fonte, licença, WebP e peso.",
+    "- [ ] Conversão para renderer/apostila HTML somente após aprovação; validação desktop/PWA, links, acessibilidade, navegação e aplicação das questões.",
+    "**Parecer:** manuscrito autoral substancial e avançado, ainda EM REVISÃO e NÃO PUBLICADO. Tamanho bruto não certifica profundidade autossuficiente nem precisão de todas as doses."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+    "https://braintrauma.org/coma/guidelines/severe-tbi",
+    "https://www.facs.org/media-center/press-releases/2024/american-college-of-surgeons-releases-revised-best-practices-guidelines-in-management-of-traumatic-brain-injury/",
+    "https://pubmed.ncbi.nlm.nih.gov/30829890/",
+    "https://www.cdc.gov/heads-up/hcp/clinical-guidance/",
+    "https://www.nice.org.uk/guidance/ng39/chapter/recommendations",
+    "https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2017/2173_2017.pdf",
+    "https://braintrauma.org/coma/guidelines/surgical",
+    "https://commons.wikimedia.org/wiki/File:Traumatic_acute_epidual_hematoma.jpg",
+    "https://commons.wikimedia.org/wiki/Category:CT_images_of_subdural_hematoma",
+    "https://commons.wikimedia.org/wiki/Category:CT_images_of_subarachnoid_hemorrhage",
+    "https://www.nejm.org/doi/full/10.1056/NEJMoa2404360",
+    "https://www.cdc.gov/heads-up/guidelines/returning-to-school.html"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Material comparativo privado efetivamente aberto:** documento do Drive “02 - TCE GRAVE, MORTE ENCEFALICA.pdf”, com aproximadamente 18 mil caracteres de texto extraído. Contém introdução ao TCE, Glasgow, PECARN, aspectos tomográficos, hipertensão intracraniana, neurointensivismo e diagnóstico de morte encefálica. O texto revela atribuição de circulação por “Medicina Livre”, sem comprovação de autoria Estratégia MED. Não foram copiados textos, esquemas ou imagens do arquivo; sua função é somente benchmark pedagógico. A seção de morte encefálica é uma unidade normativa própria e não deve ser confundida com uma ferramenta de prognóstico ou de d"
+    },
+    {
+      "text": "**Correções exigidas frente ao resumo antigo do Drive:** Glasgow de 13–15 define TCE leve em classificação usual, 9–12 moderado e 3–8 grave, mas classificar GCS 15 “sem alarme” como outra modalidade não deve obscurecer avaliação por sinais de risco. Não pedir TC simplesmente para todo paciente com qualquer TCE. Não aplicar PECARN adulto nem regra canadense diretamente à criança. Não considerar pressão cerebral normal ao manter PPC arbitrariamente até 120 mmHg: BTF aponta faixa de PPC 60–70 mmHg em TCE grave adulto selecionado. Não recomendar hipotermia profilática rotineira, corticosteroides em TCE ou nimodipino rotineiro na HSA traumática. N"
+    },
+    {
+      "text": "O dióxido de carbono altera tônus vascular cerebral. **Hipercapnia** produz vasodilatação e pode elevar volume sanguíneo intracraniano e PIC; **hipocapnia** causa vasoconstrição e reduz PIC à custa de potencial redução do fluxo cerebral. A hiperventilação intensa pode diminuir pressão por minutos, mas provocar isquemia se mantida desnecessariamente. Isso embasa a recomendação de evitar hiperventilação profilática sustentada em TCE sem herniação, reservando redução transitória da PaCO₂ para ponte de resgate sob monitorização especializada."
+    },
+    {
+      "text": "Evitar hipóxia e garantir ventilação suficiente. A meta é eucapnia em paciente sem indicação de hiperventilação de resgate; valores de PaCO₂ ao redor de 35–45 mmHg são referência fisiológica em adultos, adaptados a monitorização e contexto, sem impor um número fixo a todos. Não usar hiperventilação intensa e prolongada para “baixar PIC” profilaticamente. Ventilar com frequência desnecessariamente alta pode prejudicar retorno venoso e, no TCE, causar vasoconstrição cerebral por hipocapnia."
+    },
+    {
+      "text": "Hemorragia intracraniana isolada raramente explica choque hemorrágico sistêmico de grande magnitude; investigar tórax, abdome, pelve e membros. Lesão medular associada, choque cardiogênico e pneumotórax hipertensivo também podem coexistir. Em TCE grave, metas de pressão sistólica devem evitar quedas conforme idade. A BTF sugere considerar PAS ≥110 mmHg para 15–49 anos e >70 anos, e ≥100 mmHg entre 50–69 anos (nível III, adulto); são referências de redução de risco, não desculpa para tolerar hipoperfusão ou hipertensão induzida indiscriminadamente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,180 @@
+{
+  "sha": "da0d9515ae1cfaa284e6da704b18573e90b98b71",
+  "path": "apostilas/_rascunhos/lote-07-aula-131-hepatites-virais.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--da0d9515ae",
+  "title": "LURIA — Lote 7 · Aula 131",
+  "format": ".md",
+  "chars_estimated": 25308,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 131"
+    },
+    {
+      "title": "Hepatites virais A, B, C, D e E: raciocínio clínico, sorologia e seguimento"
+    },
+    {
+      "title": "0. Etapa zero e atualização"
+    },
+    {
+      "title": "1. Um mapa da doença antes de memorizar sorologias"
+    },
+    {
+      "title": "2. Comparativo fundamental"
+    },
+    {
+      "title": "3. Hepatite aguda: a abordagem sindrômica"
+    },
+    {
+      "title": "4. Hepatite A: doença autolimitada não significa doença irrelevante"
+    },
+    {
+      "title": "5. Hepatite B: entender seis marcadores"
+    },
+    {
+      "title": "5.1. Biologia e história natural"
+    },
+    {
+      "title": "5.2. Matriz sorológica de alto rendimento"
+    },
+    {
+      "title": "5.3. Tratamento e acompanhamento"
+    },
+    {
+      "title": "5.4. Gestação e recém-nascido"
+    },
+    {
+      "title": "5.5. Reativação na imunossupressão"
+    },
+    {
+      "title": "6. Hepatite C: anticorpo, RNA e cura"
+    },
+    {
+      "title": "6.1. Diagnóstico em duas etapas"
+    },
+    {
+      "title": "6.2. Tratamento"
+    },
+    {
+      "title": "6.3. Depois da cura"
+    },
+    {
+      "title": "7. Hepatite D: por que sempre lembrar HBV?"
+    },
+    {
+      "title": "8. Hepatite E e situações especiais"
+    },
+    {
+      "title": "9. Diagnóstico diferencial de transaminases elevadas"
+    },
+    {
+      "title": "10. Fluxos de atendimento"
+    },
+    {
+      "title": "11. Quatro casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — a sorologia do vacinado"
+    },
+    {
+      "title": "Caso 2 — janela e infecção aguda B"
+    },
+    {
+      "title": "Caso 3 — HCV exposto, sem viremia atual"
+    },
+    {
+      "title": "Caso 4 — HBV crônico e piora inexplicada"
+    },
+    {
+      "title": "12. Seis questões autorais com distratores comentados"
+    },
+    {
+      "title": "Questão 1 — vacinação"
+    },
+    {
+      "title": "Questão 2 — anti-HBc"
+    },
+    {
+      "title": "Questão 3 — HCV"
+    },
+    {
+      "title": "Questão 4 — terapia em cirrose"
+    },
+    {
+      "title": "Questão 5 — hepatite D"
+    },
+    {
+      "title": "Questão 6 — prognóstico da hepatite aguda"
+    },
+    {
+      "title": "13. Quadros de revisão e âncoras de aprendizagem"
+    },
+    {
+      "title": "14. Camada visual proposta (nenhuma imagem incorporada)"
+    },
+    {
+      "title": "15. Fontes"
+    },
+    {
+      "title": "16. Checklist de certificação pendente"
+    }
+  ],
+  "reference_entries": [
+    "- Ministério da Saúde. *PCDT Hepatite B e Coinfecções*, anexo alterado em 2024, portal MS atualizado 2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view",
+    "- Ministério da Saúde. *PCDT Hepatite C e Coinfecções*, portal atualizado em julho/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view",
+    "- Ministério da Saúde. *Manual Técnico para o Diagnóstico das Hepatites Virais*, portal de publicações 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais",
+    "- OMS/WHO. Diretrizes sobre hepatites e diagnóstico HBV/HDV; consultar versão integral antes da edição final.",
+    "- LURIA. \\`apostilas/_rascunhos/lote-07-aula-126-cirrose-complicacoes.md\\` — contexto de fibrose/cirrose.",
+    "- [x] Benchmark específico do tema lido, autoria não presumida, diferenças identificadas.",
+    "- [x] Cinco vírus, matrizes de HBV, diagnóstico do HCV, doenças especiais, gestação e fluxos.",
+    "- [x] Quatro casos e seis questões autorais totalmente comentadas.",
+    "- [ ] Revisar integralmente as versões completas dos PCDTs e esquemas/limiares nacionais, sem copiar doses antigas.",
+    "- [ ] Expandir imunologia, farmacologia, efeitos adversos/contraindicações e etiologia de agudização sobre crônica.",
+    "- [ ] Revisar normas de notificação, HCV pediátrico, condutas em imunossuprimidos e profilaxia vertical.",
+    "- [ ] Alcançar profundidade premium de ≥60.000 caracteres didáticos úteis sem inflar texto.",
+    "- [ ] Curadoria de imagens reais com licença e otimização PWA, auditoria médica/visual e testes.",
+    "**Estado de publicação: RASCUNHO, não certificado nem publicado.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Vírus | Material genético e transmissão central | Cronicidade | Prevenção | Diagnóstico de maior utilidade | |---|---|---|---|---| | HAV | RNA, fecal-oral, água/alimento/contato | Não produz infecção crônica típica | Vacina e saneamento | Anti-HAV IgM na hepatite aguda; IgG indica imunidade/exposição | | HBV | DNA com transcrição reversa; sangue, sexual e vertical | Sim, varia muito com idade | Vacinação + profilaxia vertical | HBsAg, anti-HBs, anti-HBc total/IgM, HBeAg/anti-HBe, HBV-DNA | | HCV | RNA, sobretudo exposição sanguínea | Sim, grande parte sem tratamento | Sem vacina licenciada; redução de exposições | Anti-HCV seguido de HCV-RN"
+    },
+    {
+      "text": "**Armadilha essencial:** regimes que contêm **inibidores de protease NS3/4A não devem ser usados em cirrose descompensada**, devido ao risco de toxicidade e contraindicação por função hepática, ainda que sejam pangenotípicos. Avaliar Child–Pugh e esquemas alternativos no hepatopata avançado. Identificar interações com anticonvulsivantes, amiodarona, antiácidos, estatinas, antirretrovirais e outros fármacos; atenção ao risco de reativação do HBV durante DAA em coinfectados."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

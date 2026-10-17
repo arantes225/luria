@@ -1,0 +1,75 @@
+{
+  "sha": "b4f0fa52e4a972c332027b03e2b27d42ec71da37",
+  "path": "apostilas/_rascunhos/lote-12-aula-238-trauma-raquimedular.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b4f0fa52e4",
+  "title": "LURIA — Lote 12 · Apostila 238 — Trauma raquimedular e avaliação neurológica inicial",
+  "format": ".md",
+  "chars_estimated": 7064,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 12 · Apostila 238 — Trauma raquimedular e avaliação neurológica inicial"
+    },
+    {
+      "title": "1. Objetivos de aprendizagem"
+    },
+    {
+      "title": "2. Conceitos e fisiopatologia"
+    },
+    {
+      "title": "3. Atendimento inicial: prioridades"
+    },
+    {
+      "title": "4. Exame neurológico"
+    },
+    {
+      "title": "Síndromes clínicas"
+    },
+    {
+      "title": "5. Imagem e encaminhamento"
+    },
+    {
+      "title": "6. Tratamento inicial e prevenção de dano secundário"
+    },
+    {
+      "title": "7. Fluxograma de decisão"
+    },
+    {
+      "title": "8. Casos clínicos de ensino"
+    },
+    {
+      "title": "9. Questões comentadas"
+    },
+    {
+      "title": "10. Pontos de auditoria obrigatória antes de publicação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Hipotensão após trauma não deve ser atribuída automaticamente a choque neurogênico: excluir primeiro hemorragia e outras causas de choque. Bradicardia com hipotensão e pele relativamente quente pode sugerir perda do tônus simpático em lesões altas, mas não confirma diagnóstico isoladamente."
+    },
+    {
+      "text": "**Caso 2.** Mulher de 72 anos após queda com hiperextensão cervical, fraqueza predominante em mãos e braços. Suspeitar de síndrome medular central; investigar com imagem e avaliação especializada mesmo se a TC não demonstrar fratura."
+    },
+    {
+      "text": "**4.** Metilprednisolona deve ser iniciada de rotina? **Não.** Não é recomendação rotineira, diante de benefício incerto e potenciais danos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,279 @@
+{
+  "sha": "0f5ce96c0dcfa12b7139f549e3d8f78713457766",
+  "path": "apostilas/_rascunhos/lote-13-272-fibrose-cistica.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--0f5ce96c0d",
+  "title": "LURIA — Lote 13 · Apostila 272",
+  "format": ".md",
+  "chars_estimated": 62886,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 272"
+    },
+    {
+      "title": "Fibrose cística: triagem, diagnóstico, doença multissistêmica e seguimento"
+    },
+    {
+      "title": "Diagnóstico editorial, pesquisa e limites"
+    },
+    {
+      "title": "Índice"
+    },
+    {
+      "title": "1. Definição, herança e história natural"
+    },
+    {
+      "title": "2. CFTR normal versus disfunção: o mecanismo precisa ficar claro"
+    },
+    {
+      "title": "Pulmões"
+    },
+    {
+      "title": "Glândulas sudoríparas"
+    },
+    {
+      "title": "Pâncreas"
+    },
+    {
+      "title": "Intestino e fígado"
+    },
+    {
+      "title": "Endócrino e reprodução"
+    },
+    {
+      "title": "3. Apresentações clínicas conforme idade"
+    },
+    {
+      "title": "4. Triagem neonatal: teste alterado não é diagnóstico"
+    },
+    {
+      "title": "5. Diagnóstico — teste do suor, genética e resultados intermediários"
+    },
+    {
+      "title": "CRMS/CFSPID — classificação não resolvida"
+    },
+    {
+      "title": "Teste negativo não fecha todas as portas"
+    },
+    {
+      "title": "6. Diferenciais: encontrar o elemento discriminador"
+    },
+    {
+      "title": "7. Avaliação inicial após diagnóstico"
+    },
+    {
+      "title": "8. Doença respiratória crônica: infecção e inflamação em ciclo"
+    },
+    {
+      "title": "9. Exacerbação pulmonar: como reconhecer, investigar e tratar"
+    },
+    {
+      "title": "Critérios de gravidade clínica"
+    },
+    {
+      "title": "Tratamento não é apenas \"antibiótico por dez dias\""
+    },
+    {
+      "title": "10. Insuficiência pancreática e nutrição: o segundo grande eixo"
+    },
+    {
+      "title": "Diagnóstico de insuficiência pancreática"
+    },
+    {
+      "title": "Enzimas pancreáticas (PERT)"
+    },
+    {
+      "title": "Vitaminas e energia"
+    },
+    {
+      "title": "Íleo meconial e síndrome de obstrução intestinal distal"
+    },
+    {
+      "title": "11. Complicações hepatobiliares, metabólicas, ósseas e reprodutivas"
+    },
+    {
+      "title": "12. Moduladores de CFTR — tratar defeito molecular, não presumir elegibilidade universal"
+    },
+    {
+      "title": "Monitorização importante"
+    },
+    {
+      "title": "13. Seguimento longitudinal, prevenção e saúde pública"
+    },
+    {
+      "title": "14. Fluxos textuais de conduta"
+    },
+    {
+      "title": "Triagem neonatal alterada"
+    },
+    {
+      "title": "Lactente com esteatorreia, tosse e baixo peso"
+    },
+    {
+      "title": "Exacerbação respiratória em FC conhecida"
+    },
+    {
+      "title": "14A. Integração diagnóstica no recém-nascido e na criança com quadro incompleto"
+    },
+    {
+      "title": "Ler um resultado como probabilidade clínica, não como sentença"
+    },
+    {
+      "title": "Genótipo que não explica o fenótipo"
+    },
+    {
+      "title": "Diferencial orientado por pistas que discriminam"
+    },
+    {
+      "title": "14B. Decisões respiratórias que exigem diferenciar colonização, nova aquisição e exacerbação"
+    },
+    {
+      "title": "A trajetória importa mais que um isolado isolado"
+    },
+    {
+      "title": "Três diagnósticos adicionais em quem “não melhora com antibiótico”"
+    },
+    {
+      "title": "Como medir função pulmonar sem reduzir o paciente a FEV1"
+    },
+    {
+      "title": "14C. Complicações que alteram a urgência e a estratégia terapêutica"
+    },
+    {
+      "title": "Hemoptise: reconhecer quando a prioridade passa a ser estabilização"
+    },
+    {
+      "title": "Pneumotórax e dor torácica aguda"
+    },
+    {
+      "title": "Fígado, ossos, glicemia e suporte avançado"
+    },
+    {
+      "title": "14D. CFTR em 2026: diferenciar eficácia biológica, indicação regulatória e acesso efetivo"
+    },
+    {
+      "title": "Da variante ao medicamento: uma sequência de verificações"
+    },
+    {
+      "title": "Benefício não elimina vigilância"
+    },
+    {
+      "title": "Transição para cuidado de adultos e vida reprodutiva"
+    },
+    {
+      "title": "Matriz final de decisão para leitura de casos de prova"
+    },
+    {
+      "title": "Fontes primárias usadas neste aprofundamento (15/10/2026)"
+    },
+    {
+      "title": "15. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Teste do pezinho alterado em recém-nascido assintomático"
+    },
+    {
+      "title": "Caso 2 — Tosse, esteatorreia e dificuldade de ganhar peso"
+    },
+    {
+      "title": "Caso 3 — Cloreto intermediário e teste genético não conclusivo"
+    },
+    {
+      "title": "Caso 4 — Exacerbação com Pseudomonas conhecida"
+    },
+    {
+      "title": "Caso 5 — Desidratação e alcalose metabólica"
+    },
+    {
+      "title": "16. Questões autorais estilo residência (comentários de todas as alternativas)"
+    },
+    {
+      "title": "17. Pérolas e armadilhas"
+    },
+    {
+      "title": "18. Mídia didática — somente propostas para fila do Admin"
+    },
+    {
+      "title": "19. Referências e pontos de atualização"
+    },
+    {
+      "title": "20. Auditoria de saída — pendências transparentes"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. *Protocolo Clínico e Diretrizes Terapêuticas da Fibrose Cística*, atualização de 2024: https://www.gov.br/saude/pt-br/assuntos/pcdt/f/fibrose-cistica/view",
+    "2. Cystic Fibrosis Foundation. *Sweat Test Clinical Care Guidelines*: https://www.cff.org/medical-professionals/sweat-test-clinical-care-guidelines",
+    "3. Cystic Fibrosis Foundation. *CF Diagnosis Clinical Care Guidelines*: https://www.cff.org/medical-professionals/cf-diagnosis-clinical-care-guidelines",
+    "4. Cystic Fibrosis Foundation. *Cystic Fibrosis-Related Diabetes Clinical Care Guidelines*: https://www.cff.org/medical-professionals/cystic-fibrosis-related-diabetes-clinical-care-guidelines",
+    "5. European Cystic Fibrosis Society. *Standards for the care of people with CF; recognising and addressing CF health issues*, *Journal of Cystic Fibrosis* (2024). DOI: https://doi.org/10.1016/j.jcf.2024.01.005",
+    "6. Conitec. *Consultas públicas encerradas em 2026*, incluindo ampliações do ETI: https://www.gov.br/conitec/pt-br/assuntos/participacao-social/consultas-publicas/encerradas/2026",
+    "7. Conitec. *155ª Reunião Ordinária — registro de itens e retirada de pauta*, setembro de 2026: https://www.gov.br/conitec/pt-br/assuntos/reunioes-da-conitec/conitec-em-tempo-real-1/155a_conitec-em-tempo-real",
+    "**Registro de benchmark da rodada:** Foram relidos no Drive os documentos correlatos *Pneumonia Comunitária na Pediatria* e *Icterícia e Colestase Neonatal*. O primeiro cobre reconhecimento de doença respiratória aguda; o segundo, identificação e investigação inicial de colestase neonatal. Não há estudo equivalente em CFTR/genética, diagnóstico de FC ou moduladores nestes dois documentos. Seu uso restringiu-se à identificação de lacunas e ao desenho de diferenciais; nenhuma afirmação de dose, tratamento ou critério foi transcrita deles. A comparação temática integral permanece pendente, assim ",
+    "**Hipótese:** triagem positiva para FC, ainda não confirmada. **Raciocínio:** rastreamento de alta sensibilidade busca casos antes de sintomas, mas pode ser falso positivo. **Exame seguinte:** teste quantitativo de cloreto no suor em serviço habilitado; genotipagem conforme protocolo. **Interpretação:** ≥60 mmol/L é compatível com FC; 30–59 requer investigação, <30 diminui muito probabilidade. **Conduta:** confirmar prontamente e orientar família sem atraso, monitorar crescimento. **Por que importa:** separar triagem, confirmação e categorias inconclusivas.",
+    "**Hipótese:** FC com possível IPE. **Raciocínio:** fenótipo respiratório/digestivo típico com teste compatível; esteatorreia indica avaliação de pâncreas e nutrientes. **Exames:** avaliação genética, elastase fecal, vitaminas, cultura respiratória e antropometria. **Conduta:** encaminhar a centro de FC, iniciar plano nutricional e PERT se IPE confirmada/fortemente indicada, fisioterapia e prevenção de infecções. **Por que importa:** antibiótico isolado não resolve desnutrição por má digestão.",
+    "**Hipótese:** diagnóstico inconclusivo (possível CRMS/CFSPID, conforme definição formal). **Raciocínio:** cloreto intermediário não é normal nem confirmação automática; painel genético limitado pode não identificar variantes raras. **Exames:** repetição do suor e análise genética ampliada/funcional sob centro especializado. **Conduta:** seguimento formal, comunicar incerteza à família e procurar evolução clínica; não declarar doença clássica sem evidência. **Por que importa:** protege contra falso diagnóstico e falso descarte.",
+    "**Hipótese:** exacerbação pulmonar moderada-grave por agentes usuais em FC, com necessidade de avaliar complicações. **Raciocínio:** piora clínica/funcional é mais importante que cultura positiva isolada. **Exames:** oximetria, cultura respiratória, avaliação clínica/funcional, imagem se pneumonia/pneumotórax forem hipóteses. **Conduta:** avaliação hospitalar/centro de FC, suporte, antibiótico dirigido por histórico e cultura, intensificar higiene brônquica e nutrição. **Por que importa:** exacerbação de FC não é tratada empiricamente como pneumonia comunitária banal.",
+    "**Hipótese:** síndrome de perda de sal relacionada à FC, após excluir causas concorrentes. **Raciocínio:** defeito de reabsorção de sal no suor leva à perda hidro-eletrolítica e hipocloremia. **Exames:** eletrólitos, gasometria, função renal, glicemia e avaliação de volume. **Conduta:** correção segura e monitorada da hidratação/eletrólitos; orientação preventiva individual para calor e doença febril. **Por que importa:** síndrome pode simular vômitos/gastroenterite e atrasar correção de sal.",
+    "**1.** RN com triagem positiva para FC e cloreto no suor de 41 mmol/L. Qual interpretação é mais adequada?  ",
+    "**Gabarito C.** A ignora incerteza; B exige evidência mais robusta; C interpreta corretamente faixa 30–59; D mede teste distinto não confirmatório; E ignora idade, variante e regulação. **Mini-revisão:** teste do suor ≥60 fortalece diagnóstico, <30 reduz probabilidade, intermediário requer mais avaliação.",
+    "**2.** Sobre a fisiopatologia respiratória da FC, assinale a correta:  ",
+    "**Gabarito B.** A inverte desidratação; B conecta canal, muco, infecção e lesão; C nega patógenos; D confunde tratamento sintomático e etiológico; E não descreve mecanismo central. **Mini-revisão:** inflamação crônica e infecção mantêm ciclo de dano pulmonar.",
+    "**3.** Lactente com FC, esteatorreia e ganho ponderal insuficiente: medida etiologicamente apropriada para a má digestão:  ",
+    "**Gabarito C.** A/D pioram nutrição; B não aborda digestão; C corrige déficit exócrino; E aumenta risco de deficiência. **Mini-revisão:** pesquisar elastase fecal e acompanhar crescimento/vitaminas.",
+    "**4.** Qual par indica a interpretação mais apropriada do teste de suor?  ",
+    "**Gabarito C.** A/B/D são conclusões inválidas; C respeita limiar ≥60; E usa método inadequado como confirmação. **Mini-revisão:** testes devem ser realizados por serviço capacitado.",
+    "**5.** Adolescente com FC e queda de função pulmonar, mais escarro e hipoxemia, cultura prévia com Pseudomonas. Qual conduta é melhor?  ",
+    "**Gabarito C.** A atrasa cuidado, B subtrata, D confunde colonização com exacerbação, E ignora manejo de secreções; C é decisão integrativa. **Mini-revisão:** suporte, cultura e antibiótico são individualizados.",
+    "**6.** Lactente com FC em dia quente, vômitos discretos, Na e Cl baixos e alcalose metabólica:  ",
+    "**Gabarito C.** A ignora defeito no suor; B tem fisiopatologia e acidobase distintos; C integra o mecanismo; D agrava desidratação; E não estabelece diagnóstico. **Mini-revisão:** pseudo-Bartter é apresentação hidroeletrolítica importante.",
+    "**7.** Sobre a terapia moduladora ETI no SUS, é correto afirmar:  ",
+    "**Gabarito C.** A/B usam indicação sem fundamento; C respeita mecanismo e política sanitária; D/E ignoram cuidado longitudinal. **Mini-revisão:** eficácia de moduladores depende de variante responsiva e elegibilidade regulatória vigente.",
+    "- Teste do pezinho sugere; **suor confirma em contexto adequado** — não o contrário.",
+    "- Cloreto 30–59 mmol/L: **não normalizar nem diagnosticar automaticamente**.",
+    "- Painel negativo limitado **não afasta** toda variação de CFTR."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/f/fibrose-cistica/view",
+    "https://www.cff.org/medical-professionals/sweat-test-clinical-care-guidelines",
+    "https://www.cff.org/medical-professionals/cf-diagnosis-clinical-care-guidelines",
+    "https://www.cff.org/medical-professionals/cystic-fibrosis-related-diabetes-clinical-care-guidelines",
+    "https://doi.org/10.1016/j.jcf.2024.01.005",
+    "https://www.gov.br/conitec/pt-br/assuntos/participacao-social/consultas-publicas/encerradas/2026",
+    "https://www.gov.br/conitec/pt-br/assuntos/reunioes-da-conitec/conitec-em-tempo-real-1/155a_conitec-em-tempo-real",
+    "https://www.cff.org/medical-professionals/infant-care-clinical-care-guidelines",
+    "https://www.cff.org/medical-professionals/pancreatic-enzymes-clinical-care-guidelines",
+    "https://www.gov.br/conitec/pt-br/assuntos/noticias/2024/fevereiro/protocolo-da-fibrose-cistica-e-atualizado-apos-incorporacao-de-medicamento-no-sus"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Historicamente a FC gerava alta morbimortalidade infantil por infecções e insuficiência pancreática. Diagnóstico mais precoce, reposição enzimática, fisioterapia respiratória, antimicrobianos e terapias moduladoras mudaram o prognóstico, mas complicações persistem. **Nunca apresentar moduladores como cura universal**, nem retirar fisioterapia, nutrição e vigilância microbiológica automaticamente após prescrevê-los."
+    },
+    {
+      "text": "**Adulto:** doença respiratória crônica de gravidade variável, infertilidade masculina obstrutiva, pancreatite recorrente com função pancreática residual ou história infantil sugestiva não esclarecida. Encaminhar também quando achados sustentam suspeita, apesar de triagem neonatal prévia sem diagnóstico."
+    },
+    {
+      "text": "**Genética:** identificar duas variantes causadoras em trans pode apoiar diagnóstico e permitir elegibilidade de moduladores; um painel limitado pode perder variantes raras. Sequenciamento ampliado e pesquisa de deleções/duplicações são úteis em casos inconclusivos. A presença de uma variante isolada não estabelece FC clássica, e **não se deve usar \"2 mutações quaisquer\" como diagnóstico** sem classificação de patogenicidade e fase alélica."
+    },
+    {
+      "text": "Não triturar grânulos entéricos e não colocar conteúdo em alimento quente que degrade formulação; orientar ingestão correta conforme apresentação, evitando lesão de mucosa. Reavaliar esteatorreia, distensão, número de dejeções, peso e adesão antes de aumentar dose. Persistência de sintomas pode indicar administração incorreta, excesso/insuficiência de enzima, constipação, doença celíaca, SIBO ou outro diagnóstico."
+    },
+    {
+      "text": "**Diabetes relacionado à FC:** pode surgir por dano às ilhotas, com alterações de secreção de insulina e inflamação; sintomas clássicos podem ser discretos e o impacto nutricional/pulmonar preceder sintomas de hiperglicemia. O rastreamento com teste oral de tolerância à glicose e idade de início depende de diretriz do centro (frequentemente anual a partir de 10 anos em recomendações CFF); **HbA1c isolada não é bom teste de rastreio para CFRD**. Quando estabelecido, tratamento geralmente envolve insulina e acompanhamento conjunto."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

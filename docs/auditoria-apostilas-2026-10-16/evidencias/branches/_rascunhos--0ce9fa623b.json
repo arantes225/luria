@@ -1,0 +1,353 @@
+{
+  "sha": "0ce9fa623bc1091bbb71f4bcf70c709c2876317e",
+  "path": "apostilas/_rascunhos/lote-06-128-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--0ce9fa623b",
+  "title": "Sepse e Choque Séptico Pediátrico",
+  "format": ".html",
+  "chars_estimated": 84879,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Orientações e apresentação"
+    },
+    {
+      "title": "1. Sepse pediátrica: infecção com disfunção orgânica ameaçadora à vida"
+    },
+    {
+      "title": "2. Fisiopatologia: do endotélio ao choque compensado"
+    },
+    {
+      "title": "3. Critérios Phoenix 2024: definição atual sem atraso terapêutico"
+    },
+    {
+      "title": "4. Focos e microrganismos: idade, vacinação e dispositivos importam"
+    },
+    {
+      "title": "5. Exame e diferenciais: choque não é necessariamente séptico"
+    },
+    {
+      "title": "6. Exames iniciais: medir sem atrasar decisões vitais"
+    },
+    {
+      "title": "7. Abordagem da primeira hora — sequência paralela"
+    },
+    {
+      "title": "7.1 Por que separar choque de sepse sem choque"
+    },
+    {
+      "title": "7.2 O que documentar durante a ressuscitação"
+    },
+    {
+      "title": "8. Ressuscitação volêmica: a recomendação depende do sistema de saúde"
+    },
+    {
+      "title": "8.1 Exercício de cálculo com valores fictícios"
+    },
+    {
+      "title": "8.2 Tipo de fluido"
+    },
+    {
+      "title": "8.3 Sinais de sobrecarga mais importantes"
+    },
+    {
+      "title": "9. Vasoativos: o que mudou na atualização de 2026"
+    },
+    {
+      "title": "10. Antibiótico empírico: cobrir o provável e revisar no tempo certo"
+    },
+    {
+      "title": "10.1 A primeira dose tem prioridade no choque"
+    },
+    {
+      "title": "10.2 Exemplos de raciocínio microbiológico"
+    },
+    {
+      "title": "10.3 A segunda decisão é desescalonar"
+    },
+    {
+      "title": "11. Controle da fonte: antibiótico não drena abscesso"
+    },
+    {
+      "title": "12. Disfunção respiratória, PARDS e intubação segura no choque"
+    },
+    {
+      "title": "12.1 PARDS e avaliação diferencial da oxigenação"
+    },
+    {
+      "title": "13. Disfunção renal e balanço hídrico após a reanimação"
+    },
+    {
+      "title": "13.1 Eletrólitos e hipoglicemia"
+    },
+    {
+      "title": "13.2 Medicações nefrotóxicas"
+    },
+    {
+      "title": "14. Coagulopatia, plaquetas e púrpura fulminante"
+    },
+    {
+      "title": "14.1 Exantemas perigosos versus comuns"
+    },
+    {
+      "title": "15. Disfunção neurológica: encefalopatia, meningite e convulsão"
+    },
+    {
+      "title": "16. Corticoide: quando a hidrocortisona é indicada — e quando não é"
+    },
+    {
+      "title": "16.1 Por que não tratar todo lactato alto com esteroide"
+    },
+    {
+      "title": "17. Imunossupressão, oncologia e infecção relacionada a dispositivos"
+    },
+    {
+      "title": "18. Lactentes jovens e sepse neonatal: quais regras mudam"
+    },
+    {
+      "title": "19. Criança com dengue e choque: diferencial indispensável no Brasil"
+    },
+    {
+      "title": "20. Miocardite e choque cardiogênico misto: quando o volume agrava"
+    },
+    {
+      "title": "21. Acompanhar a resposta: metas clínicas e tendências"
+    },
+    {
+      "title": "21.1 Exame seriado estruturado"
+    },
+    {
+      "title": "21.2 POCUS e ecocardiografia funcional"
+    },
+    {
+      "title": "22. Alterações metabólicas e terapias controversas"
+    },
+    {
+      "title": "22.1 Hipoglicemia em bebê séptico"
+    },
+    {
+      "title": "23. Erros de prescrição e segurança medicamentosa pediátrica"
+    },
+    {
+      "title": "23.1 Fármaco, dose, concentração e bomba: quatro verificações"
+    },
+    {
+      "title": "23.2 Efeitos adversos que parecem deterioração da sepse"
+    },
+    {
+      "title": "23.3 Compatibilidade e acesso"
+    },
+    {
+      "title": "24. Choque séptico na UBS ou pronto atendimento sem UTI: plano de transferência"
+    },
+    {
+      "title": "24.1 Comunicação SBAR"
+    },
+    {
+      "title": "25. Indicadores de qualidade: como aprender com cada caso"
+    },
+    {
+      "title": "25.1 Debriefing de um evento crítico"
+    },
+    {
+      "title": "26. Sobrevivência e cuidado pós-sepse pediátrica"
+    },
+    {
+      "title": "26.1 O que perguntar na primeira consulta após alta"
+    },
+    {
+      "title": "27. Resumo de alto rendimento — algoritmos e \"não confundir\""
+    },
+    {
+      "title": "27.1 Algoritmo textual para a sala de emergência"
+    },
+    {
+      "title": "27.2 Tabela final de armadilhas"
+    },
+    {
+      "title": "27.3 Metas de aprendizagem para casos e questões"
+    },
+    {
+      "title": "28. Cinco síndromes infecciosas de apresentação distinta: decidir pelo foco"
+    },
+    {
+      "title": "28.1 Meningococcemia: sepse fulminante sem obrigatoriedade de meningismo"
+    },
+    {
+      "title": "28.2 Pneumonia complicada e empiema"
+    },
+    {
+      "title": "28.3 Infecção abdominal e apendicite complicada"
+    },
+    {
+      "title": "28.4 Pielonefrite complicada e obstrução urinária"
+    },
+    {
+      "title": "28.5 Infecção de pele e síndrome do choque tóxico"
+    },
+    {
+      "title": "29. Diagnóstico diferencial na criança sem hipotensão, mas muito doente"
+    },
+    {
+      "title": "29.1 Quando chamar cirurgia, nefrologia ou cardiologia"
+    },
+    {
+      "title": "29.2 Repetir avaliação após transferência"
+    },
+    {
+      "title": "30. Cálculos de segurança que o aluno deve dominar"
+    },
+    {
+      "title": "30.1 Volume prescrito e volume efetivamente administrado"
+    },
+    {
+      "title": "30.2 Unidade de vasoativo"
+    },
+    {
+      "title": "30.3 Interpretação contextual de lactato e PaCO₂"
+    },
+    {
+      "title": "30.4 Escore Phoenix e valores ausentes"
+    },
+    {
+      "title": "31. Protocolo de retorno clínico e falhas da primeira abordagem"
+    },
+    {
+      "title": "31.1 Quando a criança não melhora após terapia inicial"
+    },
+    {
+      "title": "31.2 Alta e desescalonamento: não curar apenas números"
+    },
+    {
+      "title": "31.3 Checklist de cinco decisões de maior impacto"
+    },
+    {
+      "title": "32. Oito casos clínicos integradores comentados"
+    },
+    {
+      "title": "Caso 1 — Choque compensado com pressão ainda normal"
+    },
+    {
+      "title": "Caso 2 — Sepse sem hipotensão em local sem UTI"
+    },
+    {
+      "title": "Caso 3 — Piora respiratória após fluidos: pense em disfunção miocárdica"
+    },
+    {
+      "title": "Caso 4 — Meningococcemia fulminante com púrpura"
+    },
+    {
+      "title": "Caso 5 — Recém-nascido hipotérmico com apneia"
+    },
+    {
+      "title": "Caso 6 — Criança neutropênica com bacteremia e cateter central"
+    },
+    {
+      "title": "Caso 7 — Criança com dengue e choque na fase de defervescência"
+    },
+    {
+      "title": "Caso 8 — Choque após pneumonia e empiema não drenado"
+    },
+    {
+      "title": "33. Doze questões autorais comentadas — ENAMED e residência"
+    },
+    {
+      "title": "Questão 1 — Critérios Phoenix versus SIRS"
+    },
+    {
+      "title": "Questão 2 — Choque compensado"
+    },
+    {
+      "title": "Questão 3 — Antibiótico no choque pediátrico"
+    },
+    {
+      "title": "Questão 4 — Volume com disponibilidade de UTI"
+    },
+    {
+      "title": "Questão 5 — Serviço sem UTI e sem hipotensão"
+    },
+    {
+      "title": "Questão 6 — Congestão após bolo"
+    },
+    {
+      "title": "Questão 7 — Vasopressor de primeira linha na SSC 2026"
+    },
+    {
+      "title": "Questão 8 — Púrpura fulminante sem meningismo"
+    },
+    {
+      "title": "Questão 9 — Hidrocortisona em choque"
+    },
+    {
+      "title": "Questão 10 — Empiema e controle de fonte"
+    },
+    {
+      "title": "Questão 11 — Lactente jovem sem febre alta"
+    },
+    {
+      "title": "Questão 12 — Diferencial dengue versus sepse bacteriana"
+    },
+    {
+      "title": "Referências e documentos de verificação"
+    }
+  ],
+  "reference_entries": [
+    "SSC 2026 pediátrica — SCCM, recomendações item a item",
+    "Weiss et al. 2026 — SSC em crianças, DOI 10.1007/s00134-026-08360-2",
+    "Schlapbach et al. 2024 — Phoenix Sepsis Criteria",
+    "Sanchez-Pinto et al. — validação do Phoenix 2024",
+    "SSC pediátrica 2020 — referência histórica de comparação",
+    "Ministério da Saúde — Dengue",
+    "Ministério da Saúde — Saúde da Criança",
+    "Sociedade Brasileira de Pediatria — publicações"
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov",
+    "https://wwwn.cdc.gov;",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/",
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in",
+    "https://doi.org/10.1007/s00134-026-08360-2",
+    "https://doi.org/10.1001/jama.2024.0196",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7095013/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca",
+    "https://www.sbp.com.br/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Sepse pediátrica 2026, Phoenix 2024, diagnóstico, choque compensado, fluidos, vasoativos, antibióticos, controle de foco e 8 casos/12 questões."
+    },
+    {
+      "text": "Pulo do Gato: não transpor SOFA adulto, PAM ≥65 mmHg e bolo universal de 30 mL/kg para lactentes/crianças. A diretriz pediátrica mais atual é de março de 2026 e diferencia suporte disponível, presença de hipotensão e resposta aos fluidos."
+    },
+    {
+      "text": "A SSC 2026 recomenda lactato sanguíneo como parte da avaliação inicial de crianças com sepse provável ou choque suspeito. O exame pode ajudar a acompanhar perfusão e evolução, mas elevação ocorre também por estímulo adrenérgico, convulsão, hipoxemia, doenças metabólicas e alterações de depuração. Lactato normal não exclui sepse ou choque compensado. Tendência associada ao exame da criança vale mais que tratar um limiar isolado."
+    },
+    {
+      "text": "Hemograma/plaquetas, eletrólitos, glicose, creatinina, gasometria quando indicada, coagulação, função hepática e biomarcadores conforme cenário documentam disfunção e guiam suporte. Coletar hemoculturas antes de antibiótico se isso não atrasar substancialmente o início, e culturas dirigidas (urina, secreção, líquor, drenagem) quando seguras e pertinentes. A punção lombar pode ser essencial para investigação de meningite, mas não deve retardar antibiótico em criança grave; avaliar contraindicações e estabilização primeiro."
+    },
+    {
+      "text": "A SSC 2026 recomenda começar antimicrobianos imediatamente, idealmente até uma hora em choque, enquanto permite breve avaliação estruturada em suspeita de sepse sem choque até três horas, se a preocupação persiste. Isso procura equilibrar risco de atraso de infecção grave contra dano por antibióticos em febres sem doença bacteriana invasiva. Não criar cronômetro para toda criança com febre e boa perfusão; não utilizar uma janela de investigação de três horas em paciente hipotenso."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

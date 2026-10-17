@@ -1,0 +1,77 @@
+{
+  "sha": "526006a5e57807a2294586e51e5d5be32226157f",
+  "path": "apostilas/_rascunhos/lote-06-119-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014",
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--526006a5e5",
+  "title": "Lote 06 · Tema 119 — Planejamento Reprodutivo e Contracepção",
+  "format": ".md",
+  "chars_estimated": 11013,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 · Tema 119 — Planejamento Reprodutivo e Contracepção"
+    },
+    {
+      "title": "Identificação e preservação"
+    },
+    {
+      "title": "Etapa zero — leitura comparativa realizada ANTES da escrita"
+    },
+    {
+      "title": "Revisão externa verificada para edição"
+    },
+    {
+      "title": "Matriz de lacunas reais (original × revisão)"
+    },
+    {
+      "title": "Bloqueios de publicação"
+    },
+    {
+      "title": "Atualização — produção da cópia editorial e QA preliminar (14/10/2026)"
+    },
+    {
+      "title": "Produção efetivamente realizada"
+    },
+    {
+      "title": "Pré-auditoria quantitativa e técnica"
+    },
+    {
+      "title": "Priorização clínica na revisão final"
+    },
+    {
+      "title": "Curadoria visual pendente"
+    },
+    {
+      "title": "Bloqueios ainda vigentes"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240115583",
+    "https://www.who.int/publications/i/item/9789240115606",
+    "https://www.cdc.gov/contraception/hcp/usmec/index.html",
+    "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l9263.htm",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2025/prt0047_09_07_2025.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/sctie/2025/prt0048_09_07_2025.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-51-2026-cgesmu-dgci-saps-e-cgafb-daf-sctie-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-198-2026-cgesmu-dgci-saps-ms.pdf/view"
+  ],
+  "embedded_images": [],
+  "samples": [],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

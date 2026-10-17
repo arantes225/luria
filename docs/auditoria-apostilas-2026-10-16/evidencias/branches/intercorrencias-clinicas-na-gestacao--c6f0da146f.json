@@ -1,0 +1,307 @@
+{
+  "sha": "c6f0da146ffb412816d0638685dd62692c7e7c1f",
+  "path": "apostilas/intercorrencias-clinicas-na-gestacao/rascunho-editorial-lote12.md",
+  "branches": [
+    "origin/editorial/lote-12-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "intercorrencias-clinicas-na-gestacao--c6f0da146f",
+  "title": "LURIA — Intercorrências Clínicas na Gestação",
+  "format": ".md",
+  "chars_estimated": 72551,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Intercorrências Clínicas na Gestação"
+    },
+    {
+      "title": "1. Por que doenças clínicas assumem outro significado na gestação"
+    },
+    {
+      "title": "1.1 Alterações fisiológicas relevantes"
+    },
+    {
+      "title": "1.2 Visão longitudinal de risco"
+    },
+    {
+      "title": "2. Triagem prática e estratificação inicial"
+    },
+    {
+      "title": "2.1 Sinais de alarme que superam qualquer consulta de rotina"
+    },
+    {
+      "title": "2.2 Exame clínico focal"
+    },
+    {
+      "title": "2.3 Quadro de classificação de destino assistencial"
+    },
+    {
+      "title": "3. Cardiopatias na gravidez: núcleo principal da apostila"
+    },
+    {
+      "title": "3.1 A grande pergunta: a gestante tolera a sobrecarga hemodinâmica?"
+    },
+    {
+      "title": "3.2 Classificação de risco mWHO 2.0 — atualização ESC 2025"
+    },
+    {
+      "title": "3.3 Avaliação pré-gestacional e no primeiro atendimento"
+    },
+    {
+      "title": "3.4 Valvopatias e gestação"
+    },
+    {
+      "title": "3.5 Cardiopatias congênitas operadas e não operadas"
+    },
+    {
+      "title": "3.6 Cardiomiopatia periparto (PPCM)"
+    },
+    {
+      "title": "3.7 Arritmias e instabilidade"
+    },
+    {
+      "title": "3.8 Aortopatias"
+    },
+    {
+      "title": "3.9 Plano de parto na paciente cardiopata"
+    },
+    {
+      "title": "4. Tromboembolismo venoso (TEV) na gestação e puerpério"
+    },
+    {
+      "title": "4.1 Fisiopatologia e relevância"
+    },
+    {
+      "title": "4.2 TVP: diagnóstico baseado em imagem"
+    },
+    {
+      "title": "4.3 TEP: emergência diagnóstica"
+    },
+    {
+      "title": "4.4 Tratamento anticoagulante de TVP/TEP"
+    },
+    {
+      "title": "4.5 Profilaxia: risco não é igual a prescrição universal"
+    },
+    {
+      "title": "4.6 Trabalho de parto, anestesia neuroaxial e heparinas"
+    },
+    {
+      "title": "4.7 TEP maciço / alto risco"
+    },
+    {
+      "title": "5. Trombofilias hereditárias e síndrome antifosfolípide"
+    },
+    {
+      "title": "5.1 Uma das principais armadilhas da prática clínica"
+    },
+    {
+      "title": "5.2 Quando considerar investigação de trombofilia?"
+    },
+    {
+      "title": "5.3 Síndrome antifosfolípide obstétrica"
+    },
+    {
+      "title": "5.4 Monitorização e segurança em uso de heparina"
+    },
+    {
+      "title": "6. Próteses mecânicas: exceção de altíssimo risco"
+    },
+    {
+      "title": "7. Doenças endócrinas não diabéticas"
+    },
+    {
+      "title": "7.1 Hipotireoidismo prévio e novo diagnóstico"
+    },
+    {
+      "title": "7.2 Hipertireoidismo, doença de Graves e tireotoxicose gestacional transitória"
+    },
+    {
+      "title": "7.3 Tireoidite pós-parto"
+    },
+    {
+      "title": "8. Anemia na gestação: fisiologia versus deficiência e doença"
+    },
+    {
+      "title": "8.1 Interpretação correta da hemoglobina"
+    },
+    {
+      "title": "8.2 Tratamento e consequência clínica"
+    },
+    {
+      "title": "9. Epilepsia e doenças neurológicas"
+    },
+    {
+      "title": "9.1 Controle de crises protege mãe e feto"
+    },
+    {
+      "title": "9.2 Ácido fólico e aconselhamento"
+    },
+    {
+      "title": "9.3 Convulsão nova não é automaticamente epilepsia"
+    },
+    {
+      "title": "10. Outras intercorrências clínicas frequentes e perigosas"
+    },
+    {
+      "title": "10.1 Asma e doença respiratória"
+    },
+    {
+      "title": "10.2 Doença renal crônica e injúria renal aguda"
+    },
+    {
+      "title": "10.3 Doença autoimune"
+    },
+    {
+      "title": "10.4 Doença hepatobiliar não exclusivamente obstétrica"
+    },
+    {
+      "title": "10.5 Doenças gastrointestinais e cirúrgicas"
+    },
+    {
+      "title": "10.6 Infecção e sepse"
+    },
+    {
+      "title": "11. Medicamentos na gestação: princípios antes de memorizar listas"
+    },
+    {
+      "title": "11.1 Quadro: segurança é uma decisão clínica"
+    },
+    {
+      "title": "12. Puerpério: não é o fim do risco"
+    },
+    {
+      "title": "13. Fluxos de conduta de alta utilidade"
+    },
+    {
+      "title": "Algoritmo A — gestante com dispneia"
+    },
+    {
+      "title": "Algoritmo B — gestante com risco trombótico"
+    },
+    {
+      "title": "Algoritmo C — doença materna crônica recém-identificada"
+    },
+    {
+      "title": "14. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Edema pulmonar no terceiro trimestre e estenose mitral"
+    },
+    {
+      "title": "Caso 2 — TEP suspeito no puerpério"
+    },
+    {
+      "title": "Caso 3 — Perdas gestacionais e anticardiolipina isolado"
+    },
+    {
+      "title": "Caso 4 — Prótese mecânica e gravidez não planejada"
+    },
+    {
+      "title": "Caso 5 — Nova insuficiência cardíaca no pós-parto"
+    },
+    {
+      "title": "Caso 6 — Hipotireoidismo e ajuste no primeiro trimestre"
+    },
+    {
+      "title": "Caso 7 — Gestante com epilepsia controlada por valproato"
+    },
+    {
+      "title": "Caso 8 — Crise asmática grave e interrupção de corticoide inalatório"
+    },
+    {
+      "title": "15. Questões autorais LURIA — 10 questões comentadas"
+    },
+    {
+      "title": "15A. Aprofundamento das decisões que mais geram erro em provas e assistência"
+    },
+    {
+      "title": "15A.1 Critérios SAF: por que classificação para pesquisa não é igual a diagnóstico individual"
+    },
+    {
+      "title": "15A.2 Diferenciais por exame: o laboratório muda durante a gravidez"
+    },
+    {
+      "title": "15A.3 Síndrome coronariana, dissecção e AVC em gestantes"
+    },
+    {
+      "title": "15A.4 Tabela de medicação, restrição e decisão"
+    },
+    {
+      "title": "15A.5 Modelo de encaminhamento de alto risco a ser reutilizado no prontuário"
+    },
+    {
+      "title": "15A.6 Mini-perguntas de raciocínio (checagem informal)"
+    },
+    {
+      "title": "16. Checklist de alta utilidade para prova e plantão"
+    },
+    {
+      "title": "17. Matriz de 12 imagens candidatas — etapa de curadoria ainda pendente"
+    },
+    {
+      "title": "18. Referências reais e verificadas — versão inicial"
+    },
+    {
+      "title": "19. Auditoria inicial — status EM ELABORAÇÃO"
+    }
+  ],
+  "reference_entries": [
+    "1. Brasil. Ministério da Saúde. **Manual de Gestação de Alto Risco**. Brasília; 2022. https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "2. De Backer J, Haugaa KH e grupo de trabalho ESC. **2025 ESC Guidelines for the management of cardiovascular disease and pregnancy**. *European Heart Journal*. 2025;46(43):4462–4568. https://doi.org/10.1093/eurheartj/ehaf193",
+    "3. **ASH 2018 guidelines for management of venous thromboembolism: venous thromboembolism in the context of pregnancy.** *Blood Advances*. 2018;2(22):3317–3359. https://pmc.ncbi.nlm.nih.gov/articles/PMC6258928/",
+    "4. American Thyroid Association, Korevaar TIM, Leung AM, Alexander EK e outros. **American Thyroid Association 2026 Guidelines for Thyroid Disease in Preconception, Pregnancy, and Postpartum.** *Thyroid*. 2026;36(5):481–544. https://doi.org/10.1177/10507256261445624",
+    "5. Pack AM, Oskoui M e colaboradores. **Teratogenesis, Perinatal, and Neurodevelopmental Outcomes After In Utero Exposure to Antiseizure Medication: Practice Guideline from the AAN, AES, and SMFM.** *Neurology*. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11175651/",
+    "6. World Health Organization. **Guideline on haemoglobin cutoffs to define anaemia in individuals and populations**. Geneva; 2024. https://www.who.int/publications-detail-redirect/9789240088542",
+    "7. FEBRASGO. **Avaliação do risco e prevenção de tromboembolismo no pré-natal**. Material de orientação institucional; interpretar junto às recomendações mais recentes da ASH/ESC e contextos locais. https://www.febrasgo.org.br/noticia/avaliacao-do-risco-e-prevencao-de-tromboembolismo-no-pre-natal/",
+    "8. European Society of Cardiology. **2025 ESC Guidelines for Management of Cardiovascular Diseases During Pregnancy**, página oficial de diretrizes. https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/cardiovascular-diseases-during-pregnancy-management-of/",
+    "9. American Thyroid Association. **New ATA Guidelines for Thyroid Disease in Preconception, Pregnancy, and Postpartum**, comunicado institucional publicado em 2026. https://www.thyroid.org/new-ata-guidelines-for-thyroid-disease-in-preconception-pregnancy-and-postpartum/",
+    "10. AAN/AES/SMFM. **Teratogenesis, Perinatal, and Neurodevelopmental Outcomes...**, SMFM Publications and Clinical Guidelines, 2024. https://publications.smfm.org/publications/556-teratogenesis-perinatal-and-neurodevelopmental-outcomes-after-in-utero/",
+    "**Nota de fontes:** o PDF “03 - TROMBOFILIAS.pdf” encontrado no Drive foi utilizado apenas para situar o assunto na coleção, **não** como fonte primária de conduta nem como material a ser copiado. As diretrizes citadas estão disponíveis em páginas institucionais ou periódicos verificáveis. Dados de dose e conduta em situações de alto risco ainda precisam de revisão especializada, especialmente próteses mecânicas, terapias anticoagulantes, tireoidopatias e cardiopatias complexas.",
+    "**Cobertura iniciada:** adaptação fisiológica, triagem, cardiopatias/valvopatias/cardiomiopatia periparto, arritmias, aortopatias, TEV, SAF/trombofilias, próteses mecânicas, tireoide, anemia, epilepsia, doenças respiratórias/renais/autoimunes e puerpério. Oito casos comentados, dez questões autorais, tabelas e três fluxos textuais.",
+    "**Pendências técnicas:** ampliar decisão por classe mWHO 2.0 com validação cruzada da Tabela 6 original; aprofundar diferencial de dispneia/TEP; matriz formal de profilaxia VTE sem confundir guidelines; avaliar interação de fármacos com lactação e intervalos neuroaxiais; acrescentar aspectos de cardiopatias congênitas, genética, transplante e planejamento reprodutivo; reforçar condições clínicas menos frequentes sem duplicar módulos. Revisar casos, questões e doses com médico responsável.",
+    "**Pendências visuais:** doze propostas de busca registradas, **zero imagens aprovadas/incorporadas**. Critérios de licença e precisão ainda não executados.",
+    "**Publicação:** documento rascunho de branch editorial, sem registro no banco de apostilas, sem merge/deploy."
+  ],
+  "external_urls": [
+    "https://ard.bmj.com/content/82/10/1258.",
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "https://doi.org/10.1093/eurheartj/ehaf193",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6258928/",
+    "https://doi.org/10.1177/10507256261445624",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11175651/",
+    "https://www.who.int/publications-detail-redirect/9789240088542",
+    "https://www.febrasgo.org.br/noticia/avaliacao-do-risco-e-prevencao-de-tromboembolismo-no-pre-natal/",
+    "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/cardiovascular-diseases-during-pregnancy-management-of/",
+    "https://www.thyroid.org/new-ata-guidelines-for-thyroid-disease-in-preconception-pregnancy-and-postpartum/",
+    "https://publications.smfm.org/publications/556-teratogenesis-perinatal-and-neurodevelopmental-outcomes-after-in-utero/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Bases verificadas para esta versão:** Ministério da Saúde, Manual de Gestação de Alto Risco (2022); ESC 2025, doença cardiovascular e gestação (com atualização da classificação mWHO 2.0); ASH, TEV e gravidez; ATA, tireoide na pré-concepção/gestação/puerpério (nova edição 2026); AAN/AES/SMFM 2024, epilepsia; OMS 2024, anemia; recomendações pertinentes de FEBRASGO. Divergências entre fontes e critérios são sinalizadas, não harmonizadas artificialmente."
+    },
+    {
+      "text": "A gravidez modifica circulação, ventilação, coagulação, volume plasmático, função renal, imunidade e metabolismo hormonal. Essas mudanças protegem a gestação, mas alteram a apresentação de doenças e o resultado de exames. Um diagnóstico correto depende de distinguir **adaptação fisiológica** de **patologia** e de reconhecer quando o tratamento materno deve ser imediato, ainda que haja riscos fetais. A omissão de terapia necessária pode ser mais perigosa do que a exposição criteriosa a medicamentos e exames."
+    },
+    {
+      "text": "O raciocínio deve responder seis perguntas: (1) há instabilidade materna? (2) o achado é fisiológico ou desproporcional? (3) existe diagnóstico com repercussão materna imediata? (4) o feto é afetado pela doença, pela medicação ou por ambos? (5) é necessário acompanhamento de alto risco ou internação? (6) como gestação, parto e puerpério modificarão o plano?"
+    },
+    {
+      "text": "| Contexto | Encaminhamento mais adequado | Decisão-chave | |---|---|---| | Doença crônica controlada, sem red flags | Pré-natal compartilhado APS/especialista conforme risco | Revisão de fármacos e plano de seguimento | | Doença cardíaca com risco moderado/alto | Pré-natal de alto risco + cardiologia / Pregnancy Heart Team | Estratificar mWHO 2.0 e planejar parto | | TEV suspeito ou cardiopatia descompensada | Avaliação hospitalar imediata | Diagnóstico objetivo e estabilização sem espera | | Doença grave com instabilidade | Emergência/UTI com obstetrícia e especialidade pertinente | Tratamento materno prioritário, plano fetal | | Alteração "
+    },
+    {
+      "text": "A cardiomiopatia periparto manifesta insuficiência cardíaca associada a **disfunção sistólica do ventrículo esquerdo**, tipicamente FEVE <45%, em período periparto, sem causa alternativa que explique o quadro. Pode surgir no último mês da gravidez ou nos meses após o parto (e, conforme definições modernas e séries, início pode ocorrer fora de recortes temporais muito rígidos). É diagnóstico clínico/eco de exclusão etiológica, não consequência de qualquer edema puerperal."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

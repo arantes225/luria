@@ -1,0 +1,300 @@
+{
+  "sha": "96040dc89a9cbbd732293aca905d991403fdade1",
+  "path": "apostilas/_rascunhos/lote-10-aula-207-prolapso-incontinencia-urinaria-feminina.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--96040dc89a",
+  "title": "LURIA — Lote 10 · Apostila 207",
+  "format": ".md",
+  "chars_estimated": 62009,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 10 · Apostila 207"
+    },
+    {
+      "title": "Prolapso genital e incontinência urinária feminina"
+    },
+    {
+      "title": "0. Etapa zero — comparação real, originalidade e limites"
+    },
+    {
+      "title": "1. Objetivos clínicos e abordagem por síndrome"
+    },
+    {
+      "title": "2. Anatomia funcional do assoalho pélvico"
+    },
+    {
+      "title": "2.1 Não é apenas “fraqueza da musculatura”"
+    },
+    {
+      "title": "2.2 Compartimentos e estruturas"
+    },
+    {
+      "title": "2.3 Continência uretral e armazenamento"
+    },
+    {
+      "title": "2.4 Fatores de risco e consequências"
+    },
+    {
+      "title": "3. Síndromes urinárias: qual perda a paciente descreve?"
+    },
+    {
+      "title": "3.1 IUE de esforço: diagnóstico e graduação de incômodo"
+    },
+    {
+      "title": "3.2 Urgência e bexiga hiperativa"
+    },
+    {
+      "title": "3.3 Incontinência mista"
+    },
+    {
+      "title": "3.4 Retenção e esvaziamento alterado"
+    },
+    {
+      "title": "4. História e exame físico completo"
+    },
+    {
+      "title": "4.1 História clínica estruturada"
+    },
+    {
+      "title": "4.2 Inspeção, teste de tosse e avaliação de força"
+    },
+    {
+      "title": "4.3 Exame ginecológico dos compartimentos"
+    },
+    {
+      "title": "5. POP-Q: medir em centímetros a partir do hímen"
+    },
+    {
+      "title": "5.1 Nove medidas"
+    },
+    {
+      "title": "5.2 Estadiamento"
+    },
+    {
+      "title": "6. Exames complementares: fazer o suficiente, não fazer tudo"
+    },
+    {
+      "title": "6.1 Urinálise e urocultura dirigida"
+    },
+    {
+      "title": "6.2 Diário miccional e questionários"
+    },
+    {
+      "title": "6.3 Resíduo pós-miccional"
+    },
+    {
+      "title": "6.4 Urodinâmica — quando ajuda?"
+    },
+    {
+      "title": "6.5 Cistoscopia e imagem"
+    },
+    {
+      "title": "6.6 Riscos e diferenciais específicos"
+    },
+    {
+      "title": "7. Tratamento conservador: o núcleo da primeira linha"
+    },
+    {
+      "title": "7.1 Começar pelo incômodo e pelo objetivo"
+    },
+    {
+      "title": "7.2 Treinamento da musculatura do assoalho pélvico (TMAP/PFMT)"
+    },
+    {
+      "title": "7.3 Treinamento vesical e mudança de hábitos"
+    },
+    {
+      "title": "7.4 Pessário vaginal para prolapso"
+    },
+    {
+      "title": "7.5 Estrogênio vaginal na síndrome geniturinária da menopausa"
+    },
+    {
+      "title": "7.6 Eletroterapia, radiofrequência e laser vaginal"
+    },
+    {
+      "title": "8. Tratamento farmacológico por fenótipo urinário"
+    },
+    {
+      "title": "8.1 Não existe “remédio para todo tipo de incontinência”"
+    },
+    {
+      "title": "8.2 Antimuscarínicos"
+    },
+    {
+      "title": "8.3 Agonistas β3-adrenérgicos"
+    },
+    {
+      "title": "8.4 Duloxetina: posição restrita e classificação correta"
+    },
+    {
+      "title": "8.5 Terapias para OAB refratária"
+    },
+    {
+      "title": "9. POP: manejo por compartimento e gravidade"
+    },
+    {
+      "title": "9.1 Prolapso anterior"
+    },
+    {
+      "title": "9.2 Prolapso apical"
+    },
+    {
+      "title": "9.3 Prolapso posterior e disfunção evacuativa"
+    },
+    {
+      "title": "9.4 Colpocleise"
+    },
+    {
+      "title": "10. Incontinência de esforço — cirurgia baseada em sintomas, exame e escolha"
+    },
+    {
+      "title": "10.1 Quando indicar?"
+    },
+    {
+      "title": "10.2 Sling de uretra média"
+    },
+    {
+      "title": "10.3 Alternativas sem malha sintética"
+    },
+    {
+      "title": "10.4 O que não fazer: operar “IUE” por uma parede anterior abaulada"
+    },
+    {
+      "title": "10.5 Complicações de tela/implante e encaminhamento"
+    },
+    {
+      "title": "11. POP + IU: o diagnóstico oculto e a decisão cirúrgica"
+    },
+    {
+      "title": "12. Populações especiais e estratégias seguras"
+    },
+    {
+      "title": "12.1 Pós-parto e lactação"
+    },
+    {
+      "title": "12.2 Idosas frágeis e polifarmácia"
+    },
+    {
+      "title": "12.3 Doença neurológica"
+    },
+    {
+      "title": "12.4 POP avançado com obstrução"
+    },
+    {
+      "title": "12.5 Dor pélvica crônica e hipertonia"
+    },
+    {
+      "title": "13. Seguimento e medidas de sucesso"
+    },
+    {
+      "title": "14. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Perda ao tossir após segunda gestação"
+    },
+    {
+      "title": "Caso 2 — Urgência, frequência e restrição hídrica excessiva"
+    },
+    {
+      "title": "Caso 3 — Perda mista e expectativa sobre sling"
+    },
+    {
+      "title": "Caso 4 — Cistocele avançada mascarando IUE"
+    },
+    {
+      "title": "Caso 5 — POP-Q escrito como número"
+    },
+    {
+      "title": "Caso 6 — Idosa com constipação e carga anticolinérgica"
+    },
+    {
+      "title": "Caso 7 — Perda contínua após histerectomia"
+    },
+    {
+      "title": "Caso 8 — Dor e sangramento após sling sintético"
+    },
+    {
+      "title": "15. Questões originais — aplicação e comentários de distratores"
+    },
+    {
+      "title": "Questão 1 — IUE clínica típica"
+    },
+    {
+      "title": "Questão 2 — Tipo de incontinência"
+    },
+    {
+      "title": "Questão 3 — Urodinâmica"
+    },
+    {
+      "title": "Questão 4 — Diário miccional"
+    },
+    {
+      "title": "Questão 5 — POP-Q"
+    },
+    {
+      "title": "Questão 6 — Prolapso assintomático"
+    },
+    {
+      "title": "Questão 7 — Pessário"
+    },
+    {
+      "title": "Questão 8 — IUE mascarada"
+    },
+    {
+      "title": "Questão 9 — Antimuscarínico em idosa"
+    },
+    {
+      "title": "Questão 10 — POP anterior com retenção"
+    },
+    {
+      "title": "Questão 11 — Cirurgia de IUE e malha"
+    },
+    {
+      "title": "Questão 12 — Perda contínua após cirurgia"
+    },
+    {
+      "title": "Questão 13 — Duloxetina"
+    },
+    {
+      "title": "Questão 14 — Prolapso posterior e constipação"
+    },
+    {
+      "title": "16. Resumo estruturado e pérolas finais"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Correções críticas em relação a resumos antigos:** estudo urodinâmico **não é obrigatório antes de toda primeira cirurgia de IUE**; NICE NG123 o dispensa em IUE pura ou mista com predomínio de esforço demonstrada clinicamente, reservando-o para situações selecionadas. O valor de VLPP isolado **não define necessariamente** hipermobilidade ou deficiência esfincteriana; há sobreposição e o diagnóstico é clínico-funcional. **Laser vaginal não é tratamento padrão comprovado para IUE** e não deve ser oferecido como equivalente a fisioterapia ou sling. **Duloxetina é SNRI**, não ISRS, tem efeitos adversos relevantes e uso depende de licença/local."
+    },
+    {
+      "text": "Diagnóstico é sobretudo **clínico**: relato característico e, quando possível, demonstração objetiva de perda por tosse/esforço com bexiga adequadamente cheia. Quantificar frequências, absorventes, episódios, limitação de exercício, viagens e trabalho. Uma paciente com duas perdas semanais pode ter repercussão maior que outra com perdas diárias se sua atividade profissional exige esforço específico."
+    },
+    {
+      "text": "**VLPP:** pressão abdominal registrada na perda à manobra de Valsalva durante urodinâmica. Valores muito baixos podem sugerir deficiência esfincteriana, porém dependem de metodologia, volume vesical, técnica e interpretação; a prática atual **não recomenda definir tratamento somente por pontos de corte históricos** (<60 ou >90 cmH2O). Não inferir que mulheres com IUE por hipermobilidade só perdem a altos esforços e mulheres com deficiência esfincteriana sempre perdem a baixos esforços: há sobreposição."
+    },
+    {
+      "text": "**Sinais de alarme:** hematúria macroscópica ou persistente inexplicada, dor pélvica/vesical intensa, infecção recorrente com febre, massa suspeita, perda contínua após parto ou cirurgia, retenção grave, manifestações neurológicas novas e suspeita de neoplasia requerem investigação dirigida. Não permitir que diagnóstico de POP encubra câncer urinário ou fistula."
+    },
+    {
+      "text": "A **cistocele** costuma aparecer como abaulamento anterior; prolapso apical altera descida de colo ou cúpula; retocele abaula parede posterior. Retração de tecido, dor ou cirurgia prévia podem dificultar identificação; exame em pé ou cócoras pode mostrar prolapso não reproduzido em decúbito. NICE NG123 **não recomenda imagem rotineira somente para documentar prolapso** já demonstrado clinicamente."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

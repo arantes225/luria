@@ -1,0 +1,120 @@
+{
+  "sha": "e468fa14a17bd3ba20ccf9048762d28a3db2ca7b",
+  "path": "apostilas/_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--e468fa14a1",
+  "title": "Lote 03 — Revisão clínica dirigida das aulas 44, 49, 54 e 59",
+  "format": ".md",
+  "chars_estimated": 15458,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 03 — Revisão clínica dirigida das aulas 44, 49, 54 e 59"
+    },
+    {
+      "title": "Origem, revisão e decisão de estrutura"
+    },
+    {
+      "title": "AULA 44 — Abortamento: pontos para aprofundar"
+    },
+    {
+      "title": "Diagnóstico da gestação inicial: como evitar um diagnóstico falso de inviabilidade"
+    },
+    {
+      "title": "O que o aspecto endometrial não resolve"
+    },
+    {
+      "title": "Estratégias terapêuticas e decisão compartilhada"
+    },
+    {
+      "title": "Acolhimento, documentação e direitos"
+    },
+    {
+      "title": "AULA 49 — Gestação ectópica: pontos para aprofundar"
+    },
+    {
+      "title": "Gravidez de localização desconhecida não é diagnóstico de ectópica"
+    },
+    {
+      "title": "Risco de rotura e decisão emergencial"
+    },
+    {
+      "title": "Cirurgia e preservação da fertilidade"
+    },
+    {
+      "title": "AULA 54 — Doença trofoblástica gestacional: pontos para aprofundar"
+    },
+    {
+      "title": "Não confundir esvaziamento com alta"
+    },
+    {
+      "title": "Complicações específicas"
+    },
+    {
+      "title": "AULA 59 — Sangramento na segunda metade da gestação: pontos para aprofundar"
+    },
+    {
+      "title": "Abordagem inicial: gravidade antes do rótulo"
+    },
+    {
+      "title": "Descolamento prematuro de placenta"
+    },
+    {
+      "title": "Placenta prévia e espectro de acretismo"
+    },
+    {
+      "title": "Vasa prévia e rotura uterina"
+    },
+    {
+      "title": "Matriz crítica de revisão: afirmações a procurar em capítulos já existentes"
+    },
+    {
+      "title": "Casos originais suplementares para futura integração"
+    },
+    {
+      "title": "Questões originais de checagem de lacunas (bateria 1/6)"
+    },
+    {
+      "title": "Checklist antes de integrar ao HTML"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+    "https://www.nice.org.uk/guidance/ng126",
+    "https://www.who.int/publications-detail-redirect/9789240039483/",
+    "https://cdn.who.int/media/docs/default-source/reproductive-health/clinical-practice-handbook-for-quality-abortion-care.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Tema | Evitar afirmação absoluta | Melhor redação clínica | |---|---|---| | Perda gestacional inicial | “Endométrio <15 mm confirma abortamento completo” | Não decidir apenas por espessura endometrial; considerar clínica e achados integrados | | Diagnóstico de inviabilidade | “Saco ≥25 mm sem embrião sempre autoriza intervenção imediata” | Confirmar qualidade do exame e seguir salvaguardas de segunda opinião/reexame | | Ectópica | “Beta-hCG acima da zona discriminatória confirma ectópica” | Valor isolado não determina localização; avaliar seriado com clínica/US | | Ectópica | “Só opera com hCG alto” | Gravidade clínica e risco de rotura ind"
+    },
+    {
+      "text": "**Caso A — Desejo de gestação e achado inconclusivo.** Gestante com sete semanas calculadas por DUM irregular, sangramento leve e saco intrauterino de 18 mm sem polo embrionário em US transvaginal. Estável. **Hipótese:** gestação inicial de viabilidade incerta; **não** diagnosticar falência gestacional pelo dado isolado. **Exames:** rever imagens, sintomas, achados anexiais e repetir US em intervalo recomendado. **Conduta:** orientação de retorno por sangramento intenso, dor ou síncope; decisão diferida até confirmação. **Importância:** evita interrupção indevida de gestação viável."
+    },
+    {
+      "text": "**Caso D — Dor e sangramento escasso no terceiro trimestre.** Gestante hipertensa de 34 semanas, dor abdominal súbita, útero doloroso/hipertônico, sangue vaginal discreto e desacelerações fetais persistentes. **Hipótese:** descolamento prematuro de placenta, possivelmente com perda oculta. **Exames:** avaliação materno-fetal e hemostática imediata; ultrassom auxilia diferenciais, mas negativo não exclui. **Conduta:** equipe obstétrica emergencial, preparação hemoterápica e decisão de parto pela urgência clínica. **Importância:** hemorragia oculta pode ser grave apesar de exteriorização discreta."
+    },
+    {
+      "text": "**5.** Gestante com dor, hipertonia uterina e alteração fetal grave, com pouca perda vaginal: A) DPP está descartado; B) sangramento oculto é possível; C) o volume vaginal mede a perda total; D) US negativo afasta DPP. **Gabarito B.** A/C/D desconsideram hemorragia retroplacentária e limitações da US. Diagnóstico permanece clínico."
+    },
+    {
+      "text": "**6.** Placenta prévia ainda não excluída em gestante sangrando: A) realizar toque digital para caracterizar o colo; B) realizar amniotomia; C) localizar placenta e avaliar estabilidade antes do toque digital; D) assumir DPP por exclusão. **Gabarito C.** A/B podem agravar risco; D é salto diagnóstico. A ultrassonografia orienta avaliação segura."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,115 @@
+{
+  "sha": "d8d0b50006e04daec6ffa5fbccade99968d35d42",
+  "path": "apostilas/_rascunhos/lote-06-124-controle-editorial.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d8d0b50006",
+  "title": "Lote 06 · Tema 124 — Sangramento Uterino Anormal: revisão da apostila existente",
+  "format": ".md",
+  "chars_estimated": 11216,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 · Tema 124 — Sangramento Uterino Anormal: revisão da apostila existente"
+    },
+    {
+      "title": "Inventário e preservação"
+    },
+    {
+      "title": "Busca por benchmark"
+    },
+    {
+      "title": "Referências verificadas para revisão"
+    },
+    {
+      "title": "Matriz de aprimoramento"
+    },
+    {
+      "title": "Bloqueios"
+    },
+    {
+      "title": "Etapa 2 — cópia ampliada e controle estrutural (14/10/2026)"
+    },
+    {
+      "title": "Pré-teste quantitativo"
+    },
+    {
+      "title": "Pendências de qualidade"
+    },
+    {
+      "title": "Etapa 3 — aprofundamento e cobertura ampliada (14/10/2026)"
+    },
+    {
+      "title": "Cobertura lexical dos objetivos de avaliação"
+    },
+    {
+      "title": "Etapa 4 — aprofundamento diferenciado com checagem de segurança (14/10/2026)"
+    }
+  ],
+  "reference_entries": [
+    "1. **FIGO, Jain et al., 2023**, Contemporary evaluation of women and girls with abnormal uterine bleeding: FIGO Systems 1 and 2. https://doi.org/10.1002/ijgo.14946 . Sistema 1 descreve padrões menstrual/volume e intermenstrual; Sistema 2 classifica PALM-COEIN. Enfatiza deficiência de ferro/anemia e causas coexistentes.",
+    "2. **FIGO, Munro et al., 2022**, FIGO ovulatory disorders classification. https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/ijgo.14331 . Diferenciar ovulação irregular/anovulação e classificação etiológica.",
+    "3. **NICE NG88**, Heavy menstrual bleeding, publicado 2018 e atualizado **24/05/2021**. https://www.nice.org.uk/guidance/ng88/chapter/recommendations . Preferência por SIU-LNG em certos contextos sem grande deformidade uterina, miomas <3cm sem distorção, adenomiose e preferência individual; terapia não hormonal e cirurgia por cenário.",
+    "4. **ACOG Committee Opinion No.557, 2013**, Management of Acute Abnormal Uterine Bleeding in Nonpregnant Reproductive-Aged Women. https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women . Primeiro avaliar hipovolemia/instabilidade; tratamento clínico em pacientes elegíveis, intervenção quando falha/inviável.",
+    "5. Normas de atenção ginecológica brasileiras e disponibilidade no SUS devem ser verificadas durante a revisão; **não atribuir automaticamente guideline internacional a PCDT nacional de SUA não gestacional**.",
+    "- [ ] Revisão clínica de ginecologista e dosagem/contraindicações de terapias.",
+    "- [ ] Contagem útil sem redundância semântica.",
+    "- [ ] Casos/questões completos e material autossuficiente.",
+    "- [ ] Curadoria de imagens com autoria/licença rastreada, aprovação Admin.",
+    "- [ ] Executar validadores oficiais, inspeção desktop/PWA.",
+    "- [ ] **Sem merge/deploy/publicação**.",
+    "---",
+    "**Produção real:** `apostilas/_rascunhos/lote-06-124-preview.html` foi derivada da apostila pública `apostilas/sangramento-uterino-anormal/index.html`, **sem alterar seu original**. O HTML publicado tinha 69.515 caracteres, a prévia contém 92.317 (22.802 adicionais), e todos os **24 IDs de seções originais foram preservados**. Três seções novas de atualização, casos e questões foram incluídas, somando 27 no artigo. A navegação foi reconstruída com IDs estáveis e bibliografia realocada ao final.",
+    "**Aprimoramentos autorais:** FIGO Systems 1 e 2 (atualização FIGO 2023), avaliação de instabilidade/gravidez, risco endometrial, SIU-LNG/miomas e escolha por fertilidade, coagulopatia, anticoagulação, anemia e riscos de instrumentação de malformação vascular. Os **seis casos originais foram expandidos** com investigação e conduta, e **dois casos novos** foram incluídos. Foram produzidas **12 questões** autorais com quatro alternativas e comentários individuais, reunidas no bloco `lote06-124-questoes`.",
+    "- **8 casos, 12 questões, 12 listas A–D**.",
+    "- **52.873 caracteres aproximados** do corpo instrucional visível, excluindo casos, questões, bibliografia, mapa e revisão por filtragem simples de HTML. Isto não é certificação de 60 mil caracteres únicos úteis.",
+    "- **0** links âncora ausentes, **0** IDs duplicados.",
+    "- Sem merge, deploy ou imagem não aprovada adicionada.",
+    "- [ ] Revisar cientificamente as 12 questões, inclusive eventuais situações de exceção terapêutica e formulações brasileiras.",
+    "- [ ] Avaliar redundância semântica do HTML original, que inclui blocos adicionais após a bibliografia inicial, apesar do reordenamento.",
+    "- [ ] Reconciliar a numeração dos capítulos antigos e novos mantendo todos os identificadores estáveis.",
+    "- [ ] Curadoria e aprovação de imagens/diagramas no Admin com autoria/licenças rastreadas.",
+    "- [ ] Executar validadores oficiais do repositório e inspecionar desktop/PWA. **Só houve pré-teste de estrutura HTML e links.**",
+    "- [ ] Avaliação ginecológica e editorial independente antes de publicação.",
+    "**Parecer:** apostila 124 revisada em cópia editorial, preservando base publicada. **Não está cientificamente certificada nem publicada.**",
+    "---",
+    "**Métricas verificadas após ampliação:** HTML de **103.901 caracteres**; **29 seções** no artigo, preservadas as 24 originais; corpo instrucional visível com aproximadamente **63.785 caracteres** após remoção simples da marcação, excluindo casos, questões, resumo, mapa, revisão e referências. **8 casos, 12 questões e 12/12 objetivos com cobertura lexical preliminar**; zero âncoras quebradas e IDs duplicados.",
+    "**Ressalva:** a pré-contagem acima não atesta automaticamente originalidade semântica, ausência de repetição de ideias, aprovação farmacológica ou correção clínica independente. Os validadores oficiais não foram executados e a prévia não foi publicada. Permanecem pendentes revisão ginecológica, curadoria de imagens licenciadas/Admin, conformidade brasileira e inspeção desktop/PWA.",
+    "---",
+    "1. **Diagnóstico por cenário:** diferenciar sangramento gestacional/não gestacional antes do PALM-COEIN; padrões clínicos e interpretação de doenças coexistentes; papel diferenciado de US transvaginal, histeroscopia dirigida e histologia; ferritina, coagulopatias e exames hormonais dirigidos."
+  ],
+  "external_urls": [
+    "https://doi.org/10.1002/ijgo.14946",
+    "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/ijgo.14331",
+    "https://www.nice.org.uk/guidance/ng88/chapter/recommendations",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/04/management-of-acute-abnormal-uterine-bleeding-in-nonpregnant-reproductive-aged-women"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A prévia `apostilas/_rascunhos/lote-06-124-preview.html` foi aprofundada sem modificação do arquivo publicado, com novas seções sobre: quantificação clínica e qualidade de vida; hemograma/ferritina e diagnóstico laboratorial; US versus sonohisterografia/histeroscopia/RM; <strong>classificação FIGO de leiomiomas 0–8</strong> e implicações terapêuticas; amostra endometrial insuficiente; reposição de ferro/transfusão por contexto; anticoagulação e trombose; acompanhamento e escolha reprodutiva. A repetição genérica das 12 mini-revisões foi substituída por conclusões específicas por questão."
+    },
+    {
+      "text": "1. **Diagnóstico por cenário:** diferenciar sangramento gestacional/não gestacional antes do PALM-COEIN; padrões clínicos e interpretação de doenças coexistentes; papel diferenciado de US transvaginal, histeroscopia dirigida e histologia; ferritina, coagulopatias e exames hormonais dirigidos. 2. **Condutas de alto risco:** ressuscitação e contraindicações no sangramento agudo; anticoagulação e risco tromboembólico; sangramento pós-gestação/instrumentação com vascularização anormal e risco de curetagem sem investigação; miomas por localização e fertilidade; reposição de ferro e monitorização. 3. **Populações especiais e autonomia:** adolescent"
+    },
+    {
+      "text": "**Fontes externas explicitadas:** FIGO Systems 1/2 (2023), NICE NG88 e ACOG Committee Opinion 785 sobre adolescente com sangramento intenso, com distinção importante entre recomendações NICE de amostragem endometrial durante histeroscopia e práticas de amostragem ambulatorial em outros contextos — sem extrapolar proibição da Pipelle ao SUS."
+    },
+    {
+      "text": "**Bloqueios mantidos:** revisão ginecológica dos algoritmos e contraindicações, análise semântica e revisão da numeração original, curadoria de figuras de exame/fluxo com autorização/licença e Admin, execução dos scripts oficiais, teste visual desktop/PWA e aprovação editorial. **A apostila 124 ainda não foi certificada ou publicada.**"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

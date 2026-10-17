@@ -1,0 +1,154 @@
+{
+  "sha": "49710bb1602554245852353255c9703374e1379c",
+  "path": "apostilas/_rascunhos/lote-03/56-pneumonia-adquirida-comunidade.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--49710bb160",
+  "title": "LURIA — AULA 56 | PNEUMONIAS ADQUIRIDAS NA COMUNIDADE EM ADULTOS",
+  "format": ".md",
+  "chars_estimated": 22049,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — AULA 56 | PNEUMONIAS ADQUIRIDAS NA COMUNIDADE EM ADULTOS"
+    },
+    {
+      "title": "Etapa 0 — auditoria, fontes efetivamente consultadas e delimitação"
+    },
+    {
+      "title": "1. Conceitos e relevância"
+    },
+    {
+      "title": "2. Fisiopatologia: como a infecção compromete trocas gasosas"
+    },
+    {
+      "title": "3. Agentes e fatores predisponentes"
+    },
+    {
+      "title": "4. História e exame físico"
+    },
+    {
+      "title": "5. Diagnóstico, radiografia e ultrassom"
+    },
+    {
+      "title": "6. Quando pedir microbiologia?"
+    },
+    {
+      "title": "7. Diagnósticos diferenciais e armadilhas"
+    },
+    {
+      "title": "8. Estratificação — CURB-65 e julgamento clínico"
+    },
+    {
+      "title": "9. Tratamento inicial e seleção do cenário"
+    },
+    {
+      "title": "10. Duração e estabilidade clínica — diretriz ATS 2025"
+    },
+    {
+      "title": "11. Corticoides sistêmicos na PAC — o que mudou"
+    },
+    {
+      "title": "12. Complicações e falha terapêutica"
+    },
+    {
+      "title": "13. Algoritmo textual de atendimento"
+    },
+    {
+      "title": "14. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Ambulatorial e sem comorbidade"
+    },
+    {
+      "title": "Caso 2 — Idoso com delirium e hipoxemia"
+    },
+    {
+      "title": "Caso 3 — Teste viral positivo sem comorbidades"
+    },
+    {
+      "title": "Caso 4 — Grave na UTI, decisão sobre corticoide"
+    },
+    {
+      "title": "15. Seis questões de residência com explicação por alternativa"
+    },
+    {
+      "title": "16. Seleção preliminar de elementos visuais"
+    },
+    {
+      "title": "Referências com data de consulta editorial"
+    },
+    {
+      "title": "Pendências antes da aprovação"
+    }
+  ],
+  "reference_entries": [
+    "**LURIA:** não foi encontrado diretório específico de PAC adulta na enumeração de \\`apostilas/\\`; o livro \\`assistencia-ao-parto/index.html\\` foi examinado como padrão editorial. Asma (46), DPOC (51) e Pneumonia da Comunidade precisam ter encaminhamentos cruzados, sem repetir integralmente seus capítulos.",
+    "**Drive efetivamente lido:** \\`Pneumonia Comunitária na Pediatria.pdf\\`, resumo conciso com etiologia, sinais, hospitalização e derrame pleural **pediátricos**. Não é apostila equivalente para a aula de adultos; há lacuna de benchmarking de cursinho para PAC adulta. Também foi revisado resumo do Drive \\`DPOC exacerbada.pdf\\`, como diferencial respiratório. Não reproduzir nenhum texto ou imagem desses documentos. O recorte LURIA deste arquivo é **PAC em adultos imunocompetentes**, com tópicos de populações especiais e remissão à Pediatria para PAC infantil.",
+    "**Fontes clínicas utilizadas e verificadas:** SBPT, *Recomendações para o manejo da PAC* (2018; base nacional, não presumir atualização 2026); ATS/IDSA 2019 (diagnóstico, gravidade, esquema antimicrobiano); ATS 2025 (*Diagnosis and Management of Community-acquired Pneumonia*, atualização de ultrassom pulmonar, infecção viral, duração antibiótica e corticoides). São fontes de momentos diferentes; a diferença será mostrada explicitamente, não apagada.",
+    "*Streptococcus pneumoniae* permanece agente clássico de PAC bacteriana. *Haemophilus influenzae*, vírus respiratórios, *Mycoplasma pneumoniae*, *Legionella pneumophila* e outros microrganismos podem atuar conforme idade, estação, ambiente, surtos e comorbidades. Não é cientificamente correto atribuir patógeno específico pelo padrão radiológico isolado (“infiltrado intersticial = atípico”) ou pela cor de escarro.",
+    "**S. aureus resistente e Pseudomonas:** antibióticos de espectro amplo não devem ser prescritos rotineiramente só por idade, doença pulmonar ou por ter procurado hospital. Avaliar isolamento respiratório prévio e hospitalização recente associada a antibiótico parenteral, além de risco local validado. Cobertura excessiva seleciona resistência e aumenta dano.",
+    "**Sinais de alarme:** saturação baixa, aumento do trabalho respiratório, confusão, hipotensão, taquipneia marcante, choque, incapacidade de autocuidado e deterioração rápida. A decisão sobre internação não deve esperar hemocultura ou cálculo de escore se há evidente insuficiência respiratória.",
+    "**Procalcitonina:** teste baixo isolado não deve ser usado para negar antibioticoterapia em PAC bacteriana clinicamente e radiologicamente plausível; não supera o contexto. Hemograma, função renal e eletrólitos ajudam a estratificar gravidade, hidratação e dosagem de antimicrobianos no hospital.",
+    "- **C** — confusão nova;",
+    "- **U** — ureia >7 mmol/L (aproximadamente BUN >19–20 mg/dL, observando unidades laboratoriais);",
+    "- **R** — frequência respiratória ≥30/min;",
+    "- **B** — pressão sistólica <90 mmHg ou diastólica ≤60 mmHg;",
+    "- **65** — idade ≥65 anos.",
+    "**Exemplo:** 72 anos (+1), confusão (+1), FR 32 (+1), PA 88/58 (+1), ureia elevada (+1) = CURB-65 cinco; alto risco e avaliação imediata. Não aguardar “prova completa de pneumonia” para estabilizar choque.",
+    "**Ambulatorial sem comorbidades e PAC bacteriana provável:** ATS/IDSA 2019 admite amoxicilina ou doxiciclina como opções, conforme alergias e resistência; macrolídeo em monoterapia apenas onde resistência pneumocócica local for suficientemente baixa (referência ATS: <25%). No SUS brasileiro, escolha deve seguir diretriz nacional e perfil local; doxiciclina tem restrições específicas em gestação e idade.",
+    "**Ambulatorial com comorbidades:** considerar beta-lactâmico apropriado associado a macrolídeo ou doxiciclina, ou fluoroquinolona respiratória em casos selecionados, ponderando eventos adversos e contraindicações. Não prescrever fluoroquinolona de modo indiscriminado quando alternativa segura for disponível.",
+    "**Internação, PAC não grave:** ATS/IDSA 2019 recomenda beta-lactâmico + macrolídeo ou monoterapia com fluoroquinolona respiratória, ajustando alergias e risco individual. **PAC grave:** beta-lactâmico + macrolídeo ou beta-lactâmico + fluoroquinolona respiratória, com avaliação de suporte intensivo. Se há risco validado de MRSA/Pseudomonas, incorporar cobertura específica e colher amostras para **descalonar** quando possível.",
+    "- **Ambulatoriais** com PAC e estabilidade clínica alcançada: ATS 2025 **sugere menos de 5 dias**, com **mínimo de 3 dias**, em pacientes adequadamente selecionados (condicional; evidência baixa).",
+    "- **Internação sem PAC grave**, desde que estabilidade clínica seja alcançada: também sugere menos de 5 dias, mínimo 3, com individualização (condicional).",
+    "- **PAC grave internada**: recomenda **5 ou mais dias** (forte, evidência baixa).",
+    "- Organismos particulares, infecção por microrganismos resistentes, bacteremia/infecção extrapulmonar, abscesso, necrose, empiema e evolução desfavorável podem exigir cursos maiores.",
+    "**Estabilidade clínica** não significa apenas ausência de febre: ponderar pressão, frequência cardíaca, respiração, oxigenação, estado mental, capacidade de comer, tendência de sintomas e suporte. Não iniciar curso curtíssimo se o doente ainda estiver instável ou se não houver acesso ao acompanhamento. **A diretriz SBPT brasileira de 2018 e diretriz ATS/IDSA 2019 são anteriores a essa atualização**; a apresentação final deve mostrar a divergência temporal em vez de fundi-las como se sempre concordassem.",
+    "**ATS/IDSA 2019:** recomendava contra uso rotineiro em PAC não grave e também sugeria não utilizar rotineiramente na grave. **ATS 2025:** mantém recomendação de **não usar corticoide sistêmico em PAC não grave**, mas **sugere uso em PAC grave em adultos hospitalizados**, de forma condicional, ponderando contraindicações. **Exclui especificamente pneumonia grave por influenza** da sugestão favorável. Evidência e recomendações de outras sociedades podem divergir.",
+    "**Q1.** Qual dado muda mais a prioridade em paciente com infiltrado novo e tosse?  ",
+    "**Gabarito B.** A não define gravidade/etiologia; B indica hipoxemia e disfunção grave; C é comum; D sozinho não determina internação. **Revisão:** gravidade precede microbiologia.",
+    "**Q2.** Qual variável pertence ao CURB-65?  ",
+    "**Gabarito C.** A/B/D não são componentes; C é o “C”, associado a risco. **Revisão:** C-U-R-B-65 integra clínica, ureia, respiração, pressão e idade.",
+    "**Q3.** PAC não grave internada, com estabilidade documentada e sem complicações. ATS 2025 permite considerar:  ",
+    "**Gabarito B.** A é incongruente; B expressa atualização condicional; C expõe a dano; D ignora probabilidade bacteriana. **Revisão:** duração depende de estabilidade e contexto.",
+    "**Q4.** Corticoide sistêmico em PAC segundo ATS 2025:  ",
+    "**Gabarito C.** A/B são absolutas indevidas; C distingue gravidade; D ignora etiologia e suporte. **Revisão:** mudanças de diretrizes importam."
+  ],
+  "external_urls": [
+    "https://sbpt.org.br/portal/manejo-pac-atualizacao-2018/",
+    "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-cap-in-adults",
+    "https://doi.org/10.1164/rccm.202507-1692ST",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes clínicas utilizadas e verificadas:** SBPT, *Recomendações para o manejo da PAC* (2018; base nacional, não presumir atualização 2026); ATS/IDSA 2019 (diagnóstico, gravidade, esquema antimicrobiano); ATS 2025 (*Diagnosis and Management of Community-acquired Pneumonia*, atualização de ultrassom pulmonar, infecção viral, duração antibiótica e corticoides). São fontes de momentos diferentes; a diferença será mostrada explicitamente, não apagada."
+    },
+    {
+      "text": "Pneumonia adquirida na comunidade (PAC) é infecção aguda do parênquima pulmonar desenvolvida fora do ambiente hospitalar e, em geral, identificada precocemente em pessoas sem contexto de pneumonia nosocomial. O diagnóstico clássico reúne sintomas compatíveis com infecção do trato respiratório inferior e evidência de infiltrado pulmonar novo em exame de imagem. A decisão de considerar pneumonia pode ser difícil no início: idosos podem não ter febre exuberante, pessoas com desidratação inicial podem ter radiografia pouco expressiva e bronquite aguda costuma ter tosse sem consolidação alveolar."
+    },
+    {
+      "text": "A radiografia de tórax frequentemente confirma infiltrado novo em paciente com apresentação clínica compatível; projeções e qualidade influenciam sensibilidade. Consolidação lobar, opacidades segmentares e infiltrados multifocais são padrões possíveis. Ausência de imagem alterada no início não exclui totalmente PAC em paciente de elevada probabilidade pré-teste; reavaliar quando persistirem sinais. Radiografia de controle universal para todos após cura não é obrigatória; avaliar persistência de sintomas, risco de neoplasia e recomendações locais."
+    },
+    {
+      "text": "A atualização ATS 2025 oferece uma nuance importante: para **adultos ambulatoriais sem comorbidades**, com evidência clínica e por imagem de PAC e teste viral respiratório positivo, **sugere não prescrever antibioticoterapia empírica** (recomendação condicional, evidência muito baixa), desde que sejam consideradas particularidades e plano de seguimento. Para ambulatoriais com comorbidades e hospitalizados, a orientação geral é manter antibióticos empíricos devido ao risco de coinfecção. Isso não é licença para suspender antibiótico de todo paciente grave que testou positivo para influenza ou SARS-CoV-2."
+    },
+    {
+      "text": "| Diagnóstico | Pistas de diferenciação | Exames e conduta | |---|---|---| | Bronquite aguda | tosse sem sinais de consolidação, paciente estável | geralmente não requer antibiótico | | Exacerbação de DPOC | aumento de dispneia, tosse/escarro com obstrução crônica | radiografia para pesquisar pneumonia concomitante quando indicado | | Insuficiência cardíaca | ortopneia, edema, congestão, padrão bilateral | ECG, eco/BNP conforme probabilidade | | Tromboembolismo pulmonar | início agudo, dor pleurítica, risco trombótico | probabilidade clínica e imagem apropriada | | Tuberculose | duração prolongada, sudorese noturna, emagrecimento, exposição |"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

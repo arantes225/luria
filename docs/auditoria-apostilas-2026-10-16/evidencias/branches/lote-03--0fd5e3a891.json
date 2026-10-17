@@ -1,0 +1,333 @@
+{
+  "sha": "0fd5e3a891a3dc43b4e963e8e78cab1bda4b862d",
+  "path": "apostilas/_rascunhos/lote-03/45-controle-social-sus.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--0fd5e3a891",
+  "title": "LURIA — Aula 45: Participação e controle social no SUS (rascunho não publicado)",
+  "format": ".md",
+  "chars_estimated": 55371,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 45: Participação e controle social no SUS (rascunho não publicado)"
+    },
+    {
+      "title": "Etapa zero e contraste de fontes"
+    },
+    {
+      "title": "1. Participação social no SUS: conceito"
+    },
+    {
+      "title": "2. Conselhos versus Conferências"
+    },
+    {
+      "title": "3. Representação paritária e funcionamento"
+    },
+    {
+      "title": "4. Fundamentos constitucionais e origem da participação social na saúde"
+    },
+    {
+      "title": "4.1 Reforma Sanitária e democratização das decisões"
+    },
+    {
+      "title": "4.2 Participação social não significa substituição do gestor"
+    },
+    {
+      "title": "4.3 Democracia representativa e participativa no SUS"
+    },
+    {
+      "title": "5. A Lei 8.142/1990 em leitura artigo por artigo"
+    },
+    {
+      "title": "5.1 Artigo 1º: dois colegiados em cada esfera"
+    },
+    {
+      "title": "5.2 A paridade dos usuários"
+    },
+    {
+      "title": "5.3 Regimentos, homologação e competências"
+    },
+    {
+      "title": "5.4 Artigos 2º a 4º e financiamento"
+    },
+    {
+      "title": "6. Resolução CNS 453/2012: composição e funcionamento responsável"
+    },
+    {
+      "title": "6.1 Base normativa e sua vigência"
+    },
+    {
+      "title": "6.2 Quantidade de representantes versus qualidade da participação"
+    },
+    {
+      "title": "6.3 Presidência, mandato e eleição"
+    },
+    {
+      "title": "6.4 Deliberações, resoluções e acompanhamento"
+    },
+    {
+      "title": "7. Conferências de Saúde: participação, deliberação e sua conexão com planejamento"
+    },
+    {
+      "title": "7.1 Etapas e formulação de diretrizes"
+    },
+    {
+      "title": "7.2 Participação além dos presentes na plenária"
+    },
+    {
+      "title": "7.3 Conferências temáticas e convocação extraordinária"
+    },
+    {
+      "title": "8. Conselhos de saúde e órgãos de pactuação: diferentes funções"
+    },
+    {
+      "title": "8.1 Conselho de Saúde x CIT/CIB/CIR"
+    },
+    {
+      "title": "8.2 Outros espaços de participação"
+    },
+    {
+      "title": "9. Participação no planejamento e orçamento: o que de fato é fiscalizado?"
+    },
+    {
+      "title": "9.1 Plano de Saúde, Programação Anual e Relatórios"
+    },
+    {
+      "title": "9.2 Prestação de contas e LC 141/2012"
+    },
+    {
+      "title": "9.3 DigiSUS Gestor e transparência"
+    },
+    {
+      "title": "9.4 Análise de dados e controle social na prática"
+    },
+    {
+      "title": "10. Ouvidoria, reclamação individual e resposta coletiva"
+    },
+    {
+      "title": "10.1 Função das ouvidorias do SUS"
+    },
+    {
+      "title": "10.2 Resposta à manifestação e vínculo com governança"
+    },
+    {
+      "title": "11. Limites do controle social e garantia de transparência"
+    },
+    {
+      "title": "11.1 Controle social não significa veto ilimitado"
+    },
+    {
+      "title": "11.2 Gestão participativa e desigualdades regionais"
+    },
+    {
+      "title": "12. Casos jurídico-institucionais de alta incidência em provas"
+    },
+    {
+      "title": "Caso 1 — Conselho reduzido a “órgão para campanhas”"
+    },
+    {
+      "title": "Caso 2 — Conferência e Conselho confundidos"
+    },
+    {
+      "title": "Caso 3 — Composição distorcida de conselho municipal"
+    },
+    {
+      "title": "Caso 4 — CIB confundida com Conselho Estadual"
+    },
+    {
+      "title": "Caso 5 — Relatório financeiro com números isolados"
+    },
+    {
+      "title": "Caso 6 — Comunidade excluída por reunião inacessível"
+    },
+    {
+      "title": "13. Dez questões de residência médica comentadas"
+    },
+    {
+      "title": "Questão 1 — Natureza jurídica dos conselhos"
+    },
+    {
+      "title": "Questão 2 — Periodicidade da conferência"
+    },
+    {
+      "title": "Questão 3 — Paridade e porcentagens"
+    },
+    {
+      "title": "Questão 4 — Origens normativas do 50/25/25"
+    },
+    {
+      "title": "Questão 5 — Conselho versus CIB"
+    },
+    {
+      "title": "Questão 6 — Plano de Saúde, PAS e RAG"
+    },
+    {
+      "title": "Questão 7 — Prestação de contas quadrimestral"
+    },
+    {
+      "title": "Questão 8 — Ouvidoria do SUS"
+    },
+    {
+      "title": "Questão 9 — Homologação de decisões"
+    },
+    {
+      "title": "Questão 10 — Controle social real e desigualdades"
+    },
+    {
+      "title": "14. Da demanda social à decisão: metodologia de atuação dos conselhos"
+    },
+    {
+      "title": "14.1 Definir problema com população, território e evidência"
+    },
+    {
+      "title": "14.2 Priorização: risco, equidade e viabilidade"
+    },
+    {
+      "title": "14.3 Comunicação dos resultados à comunidade"
+    },
+    {
+      "title": "15. Simulação de análise de PAS e RAG: como o conselheiro interpreta indicadores"
+    },
+    {
+      "title": "15.1 Um município fictício"
+    },
+    {
+      "title": "15.2 Indicadores de processo, resultado e equidade"
+    },
+    {
+      "title": "15.3 Orçamento executado versus resultados"
+    },
+    {
+      "title": "16. Conselho local de saúde, APS e participação no território"
+    },
+    {
+      "title": "16.1 Por que conselhos locais são relevantes"
+    },
+    {
+      "title": "16.2 O papel do profissional de saúde"
+    },
+    {
+      "title": "17. Integridade, conflitos de interesse e riscos de captura"
+    },
+    {
+      "title": "17.1 Quem representa os usuários?"
+    },
+    {
+      "title": "17.2 Transparência e independência"
+    },
+    {
+      "title": "17.3 Limites da linguagem e do acesso digital"
+    },
+    {
+      "title": "18. Fluxogramas integrados para questões e prática"
+    },
+    {
+      "title": "Fluxo A — dúvida sobre competência de órgão"
+    },
+    {
+      "title": "Fluxo B — conselho recebe uma proposta"
+    },
+    {
+      "title": "Fluxo C — prestação de contas insuficiente"
+    },
+    {
+      "title": "Fluxo D — manifestação de um usuário"
+    },
+    {
+      "title": "Fluxo E — conferência propõe novo serviço"
+    },
+    {
+      "title": "19. Pérolas de prova: afirmações parcialmente verdadeiras"
+    },
+    {
+      "title": "20. Matriz curricular de autossuficiência e limites com a aula 50"
+    },
+    {
+      "title": "21. Referências oficiais e leis utilizadas"
+    },
+    {
+      "title": "22. Recursos gráficos planejados e qualidade editorial"
+    },
+    {
+      "title": "23. Auditoria preliminar — não homologado"
+    }
+  ],
+  "reference_entries": [
+    "**Exemplo:** conselho municipal aponta baixa oferta de atendimento em região distante e delibera prioridade de expansão na política/plano, acompanhando orçamento e resultados. Isso não equivale a conselho assumir cargo de secretário nem a substituir processo licitatório ou gestão de pessoas.",
+    "**Conferência:** reúne-se em regra a cada **quatro anos** com vários segmentos sociais para avaliar situação de saúde e propor diretrizes. Pode ser convocada pelo Poder Executivo ou extraordinariamente conforme previsão legal, inclusive pelo Conselho. **Conselho:** colegiado **permanente e deliberativo** que atua na formulação de estratégias e no controle da execução da política de saúde, inclusive nos aspectos econômicos e financeiros. As decisões devem ser homologadas pela autoridade legalmente constituída na esfera.",
+    "**Cálculo de prova:** conselho com 20 cadeiras deve organizar 10 para usuários, 5 para trabalhadores de saúde e 5 para conjunto gestores/prestadores, se adotada a composição normativa da Resolução 453. Uma proposta com 5 usuários, 10 governo e 5 trabalhadores não é paritária, mesmo que cada cadeira tenha voto. Não inventar número obrigatório de membros igual para todo município: a quantidade concreta é definida por normas/regimento, mantendo proporcionalidade e representatividade.",
+    "**Cuidado de prova:** conselho “deliberativo” ≠ “executivo” e conferência “propõe diretrizes” ≠ “autoriza licitação”. Os termos têm consequências institucionais diferentes.",
+    "**Exemplo:** município apresenta aumento de gasto em consultas especializadas de R$ 2 milhões para R$ 3 milhões, mas filas continuam altas. O conselho não deve concluir automaticamente boa ou má gestão apenas pelo gasto: precisa examinar volume de consultas realizadas, tempo de espera, critérios de acesso, preço por procedimento, metas e demanda reprimida. Analisar economia sem resultado assistencial é tão incompleto quanto analisar saúde sem orçamento.",
+    "**Exemplo:** múltiplas reclamações de falta de transporte para hemodiálise podem revelar padrão territorial. A ouvidoria encaminha e acompanha manifestações, enquanto gestor organiza resposta e o conselho pode pautar dados agregados para acompanhamento político-institucional. É essencial preservar identificação de usuários e dados sensíveis, pois relatórios públicos não devem expor história clínica nominal.",
+    "**Apresentação:** secretário municipal diz que o Conselho de Saúde só é responsável por aprovar cartazes de vacinação; questões de orçamento e rede hospitalar seriam exclusivas do gestor.",
+    "**Problema jurídico:** Lei 8.142, art. 1º, §2º inclui **formulação de estratégias e controle da execução da política de saúde, inclusive econômica e financeira**. O gestor executa políticas e orçamento, mas conselho participa conforme competências. A afirmação reduz indevidamente o alcance do órgão deliberativo.",
+    "**Conduta institucional:** disponibilizar orçamento, PAS/RAG e indicadores ao conselho, orientar pauta/competência pelo regimento e articular acompanhamento de políticas. **Por que importa:** prova frequentemente contrapõe caráter deliberativo e consultivo.",
+    "**Apresentação:** conselheiro afirma que nenhum debate relevante de política pode ocorrer entre conferências, pois “os órgãos do controle social só se reúnem a cada quatro anos”.",
+    "**Interpretação:** conferência geral é quadrienal em regra; conselho é permanente. Pode haver conferência extraordinária nos termos legais. O planejamento é contínuo e precisa de avaliação e ajustes.",
+    "**Conduta:** organizar agendas regulares do conselho, discussões e avaliação de indicadores conforme regimento; articular próxima conferência com participação plural. **Por que importa:** fixar a diferença entre periodicidade e natureza dos colegiados.",
+    "**Apresentação:** proposta municipal destina 30% das cadeiras a usuários, 20% a trabalhadores e 50% a gestores/prestadores. Defensores alegam que basta haver ao menos um usuário.",
+    "**Base legal:** §4º do art. 1º da Lei 8.142 fixa paridade dos usuários em relação aos demais segmentos; diretriz da Resolução 453 estabelece 50% usuários/25% trabalhadores/25% governo e prestadores.",
+    "**Conduta:** revisar proposta conforme norma/regimento, assegurar processo legítimo de representação, publicar composição e corrigir desproporção antes de validar conselho. **Por que importa:** saber a origem jurídica da paridade evita decorar apenas números.",
+    "**Apresentação:** coordenador regional alega que aprovação por Comissão Intergestores Bipartite substitui apreciação de conselho estadual sobre política e relatórios de gestão.",
+    "**Interpretação:** CIB pactua aspectos interfederativos entre gestores estaduais e municipais; Conselho Estadual representa segmentos sociais e delibera/acompanha política segundo lei. As funções podem se complementar, mas não são intercambiáveis.",
+    "**Conduta:** submeter cada instrumento ao rito/instância competente, registrar deliberações e pactuações separadamente. **Por que importa:** as provas usam siglas parecidas para testar funções.",
+    "**Apresentação:** município mostra aumento de gasto de R$ 3 milhões para R$ 4 milhões em atenção especializada, mas não informa produção de procedimentos, indicadores ou filas. Solicita aprovação do relatório em minutos.",
+    "**Interpretação:** LC 141 exige prestação detalhada, incluindo fontes e montantes, auditorias e produção/cobertura assistencial confrontada com indicadores. O aumento de gasto pode refletir ampliação necessária ou ineficiência; não dá para concluir sem contexto.",
+    "**Conduta:** solicitar informação suficiente, identificar período e fontes, comparar metas da PAS, registrar prazo e justificar deliberação segundo regimento. **Por que importa:** controle financeiro exige análise de resultado e transparência.",
+    "**Apresentação:** conselho de região rural marca reunião presencial diurna na capital local, sem meios de transporte, enquanto comunidades mais afetadas ficam distantes e têm comunicação limitada.",
+    "**Interpretação:** paridade formal não assegura participação efetiva quando barreiras de acesso impedem representação. O problema envolve legitimidade e capacidade de ouvir demandas.",
+    "**Conduta:** redesenhar comunicação e participação conforme regimento/recursos, buscar apoio institucional para acessibilidade e ouvir comunidades. Em 2026, o MS divulgou ações de fortalecimento de conselhos locais. **Por que importa:** princípio constitucional tem dimensão prática, além da composição numérica.",
+    "**Gabarito: B.** **A — incorreta:** descreve parcialmente a função/periodicidade das conferências. **B — correta:** condensa a regra legal do art. 1º, §2º. **C — incorreta:** execução administrativa não é a atribuição central do colegiado. **D — incorreta:** confunde conselho com espaço de pactuação de gestores. **Revisão:** conselho é permanente, deliberativo e com controle social da política.",
+    "**Gabarito: A.** **A — correta:** os segmentos sociais avaliam situação e propõem diretrizes em periodicidade quadrienal, ressalvada convocação extraordinária. **B — incorreta:** confunde natureza do conselho. **C — incorreta:** a lei prevê convocação pelo Executivo ou extraordinária inclusive pelo conselho. **D — incorreta:** erra periodicidade e função. **Revisão:** conferência propõe diretrizes; conselho monitora continuamente a política.",
+    "**Gabarito: B.** **A — incorreta:** usuários seriam apenas 25%. **B — correta:** 50% / 25% / 25%. **C — incorreta:** exclui participação dos usuários. **D — incorreta:** 40% de usuários não atende proporção normativa. **Revisão:** a Lei 8.142 estabelece paridade dos usuários; a decomposição detalhada está na Resolução CNS 453.",
+    "**Gabarito: B.** **A — incorreta:** a Constituição estabelece diretriz de participação, não porcentagens textuais. **B — correta:** distingue normas. **C — incorreta:** entidades de gestores não substituem lei e resoluções do CNS. **D — incorreta:** paridade está expressamente na legislação. **Revisão:** em prova normativa, citar a fonte certa é tão importante quanto o número.",
+    "**Gabarito: B.** **A — incorreta:** inverte composição/função. **B — correta:** a função de pactuação não equivale à representação comunitária. **C — incorreta:** ambos os papéis estão errados. **D — incorreta:** esferas de competência são distintas. **Revisão:** entenda quem participa da instância antes de memorizar a sigla.",
+    "**Gabarito: B.** **A — incorreta:** inverte temporalidade e objeto. **B — correta:** corresponde às descrições oficiais de instrumentos do SUS. **C — incorreta:** RAG é ex post e orienta redirecionamento, não a origem do planejamento. **D — incorreta:** controle econômico-financeiro exige documentação. **Revisão:** plano (onde chegar), PAS (o que fazer neste ano), RAG (o que foi obtido)."
+  ],
+  "external_urls": [
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://www.gov.br/conselho-nacional-de-saude/pt-br/acesso-a-informacao/atos-normativos/resolucoes/2012/resolucao-no-453.pdf/view",
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/pas",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag",
+    "https://digisusgmp.saude.gov.br/faq",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social",
+    "https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvsus/sistema-nacional-de-ouvidorias-do-sus/como-implantar-uma-ouvidoria-do-sus",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/chamamentos-publicos/2026/chamamento-publico-no-11-2026-se"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Não se recomenda copiar “quórum é sempre metade mais um em qualquer conselho do Brasil” sem verificar a regra pertinente à decisão e ao regimento. A Resolução 453 estabelece diretrizes de funcionamento, enquanto procedimentos específicos podem depender das normas internas e de atos de cada esfera."
+    },
+    {
+      "text": "Conferências ampliam diagnóstico de necessidades e definem propostas coletivas, muitas vezes com etapas locais, municipais, estaduais e nacionais dependendo do evento. Participantes apresentam problemas, discutem propostas, aprovam relatórios e diretrizes segundo regimento do encontro. A conferência produz **insumos para planos e políticas**, não substitui todo processo técnico, orçamentário e jurídico de implementação."
+    },
+    {
+      "text": "Ouvidorias oferecem canais para solicitar informações, registrar elogios, sugestões, reclamações e denúncias, ajudando gestores a identificar falhas sistêmicas e aprimorar serviços. A página do Ministério, atualizada em 2026, enfatiza rede descentralizada de ouvidorias da União, estados e municípios. Ouvidoria não é órgão de diagnóstico clínico nem órgão com poder de substituir gestor ou Conselho de Saúde."
+    },
+    {
+      "text": "Município de 80 mil habitantes aprova PAS com meta de ampliar acompanhamento de hipertensão de 48% para 65% das pessoas cadastradas com diagnóstico, segundo definição de indicador pactuada. O RAG informa que a cobertura registrada passou para 60%. O conselho deve avaliar se as bases de dados, população de referência e critérios de “acompanhado” se mantiveram estáveis ao longo do período."
+    },
+    {
+      "text": "O resultado é **melhora de 12 pontos percentuais**, mas inferior à meta de 65% por cinco pontos percentuais. Se houve mudança cadastral ou ampliação de diagnóstico, o denominador pode ter aumentado e afetado percentual sem piora real de produção. É importante examinar território: uma média municipal de 60% pode esconder UBS com 80% e outras com 20%. O conselho pode recomendar plano de correção focal, metas realistas e apoio às equipes mais vulneráveis, sem concluir fraude por diferença simples."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

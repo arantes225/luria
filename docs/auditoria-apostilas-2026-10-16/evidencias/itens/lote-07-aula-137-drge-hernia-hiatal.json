@@ -1,0 +1,661 @@
+{
+  "key": "lote-07-aula-137-drge-hernia-hiatal",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-137-drge-hernia-hiatal.md",
+  "title": "LURIA — Lote 7 · Aula 137",
+  "source_sha256": "12a2f6c80cf6d880303c6b1d6cc6fd26799193ed19889620a7291db8c6f0dea0",
+  "chars_estimated": 77310,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 137",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Doença do refluxo gastroesofágico (DRGE) e hérnia hiatal",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "0. Etapa zero — comparação e lacunas",
+      "level": 2
+    },
+    {
+      "line": 14,
+      "title": "1. Definição clínica, do mecanismo ao sofrimento",
+      "level": 2
+    },
+    {
+      "line": 23,
+      "title": "2. Anatomia e defesa antirrefluxo",
+      "level": 2
+    },
+    {
+      "line": 32,
+      "title": "3. Fatores de risco e história dirigida",
+      "level": 2
+    },
+    {
+      "line": 43,
+      "title": "4. Quatro tipos de hérnia hiatal",
+      "level": 2
+    },
+    {
+      "line": 54,
+      "title": "5. Diagnóstico: quando a clínica basta e quando o teste muda o plano",
+      "level": 2
+    },
+    {
+      "line": 56,
+      "title": "5.1. Teste terapêutico com IBP",
+      "level": 3
+    },
+    {
+      "line": 61,
+      "title": "5.2. Endoscopia digestiva alta",
+      "level": 3
+    },
+    {
+      "line": 72,
+      "title": "5.3. pHmetria e impedanciometria — dois cenários distintos",
+      "level": 3
+    },
+    {
+      "line": 83,
+      "title": "5.4. Sensibilidade ao refluxo e pirose funcional",
+      "level": 3
+    },
+    {
+      "line": 87,
+      "title": "5.5. Manometria",
+      "level": 3
+    },
+    {
+      "line": 90,
+      "title": "5.6. Radiografia contrastada/esofagograma",
+      "level": 3
+    },
+    {
+      "line": 93,
+      "title": "6. Diagnósticos diferenciais que mudam a decisão",
+      "level": 2
+    },
+    {
+      "line": 106,
+      "title": "7. Tratamento clínico por mecanismos",
+      "level": 2
+    },
+    {
+      "line": 108,
+      "title": "7.1. Medidas comportamentais úteis",
+      "level": 3
+    },
+    {
+      "line": 111,
+      "title": "7.2. IBP — uso correto",
+      "level": 3
+    },
+    {
+      "line": 118,
+      "title": "7.3. Antiácidos, alginatos, antagonistas H2 e procinéticos",
+      "level": 3
+    },
+    {
+      "line": 123,
+      "title": "7.4. Complicações",
+      "level": 3
+    },
+    {
+      "line": 129,
+      "title": "8. Indicações cirúrgicas: confirmar antes de operar",
+      "level": 2
+    },
+    {
+      "line": 139,
+      "title": "8.1. Hérnia paraesofágica assintomática",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "8.2. Volvo gástrico e estrangulamento",
+      "level": 3
+    },
+    {
+      "line": 145,
+      "title": "9. Populações especiais",
+      "level": 2
+    },
+    {
+      "line": 151,
+      "title": "10. Algoritmos práticos",
+      "level": 2
+    },
+    {
+      "line": 158,
+      "title": "11. Quatro casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 160,
+      "title": "Caso 1 — DRGE típica sem sinais de alarme",
+      "level": 3
+    },
+    {
+      "line": 163,
+      "title": "Caso 2 — pirose persistente e teste normal",
+      "level": 3
+    },
+    {
+      "line": 166,
+      "title": "Caso 3 — hérnia hiatal tipo III com anemia e dispneia",
+      "level": 3
+    },
+    {
+      "line": 169,
+      "title": "Caso 4 — retching, dor e volvo",
+      "level": 3
+    },
+    {
+      "line": 172,
+      "title": "12. Seis questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 174,
+      "title": "Questão 1 — abordagem inicial",
+      "level": 3
+    },
+    {
+      "line": 179,
+      "title": "Questão 2 — pHmetria",
+      "level": 3
+    },
+    {
+      "line": 184,
+      "title": "Questão 3 — teste on/off IBP",
+      "level": 3
+    },
+    {
+      "line": 189,
+      "title": "Questão 4 — hérnia tipo II",
+      "level": 3
+    },
+    {
+      "line": 194,
+      "title": "Questão 5 — manometria",
+      "level": 3
+    },
+    {
+      "line": 199,
+      "title": "Questão 6 — hérnia e tela",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "13. Pérolas para prova e prática",
+      "level": 2
+    },
+    {
+      "line": 218,
+      "title": "14. Camada de imagens candidatas (não incorporadas)",
+      "level": 2
+    },
+    {
+      "line": 222,
+      "title": "15. Referências",
+      "level": 2
+    },
+    {
+      "line": 229,
+      "title": "16. Auditoria parcial",
+      "level": 2
+    },
+    {
+      "line": 242,
+      "title": "APROFUNDAMENTO EDITORIAL — NÚCLEO CLÍNICO AVANÇADO",
+      "level": 1
+    },
+    {
+      "line": 245,
+      "title": "17. Como a anatomia da junção explica os diferentes fenótipos da DRGE",
+      "level": 2
+    },
+    {
+      "line": 247,
+      "title": "17.1. O refluxo depende de forças, não de um “esfíncter aberto” permanente",
+      "level": 3
+    },
+    {
+      "line": 254,
+      "title": "17.2. A depuração explica a piora noturna",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "17.3. Refluxo ácido, fracamente ácido e gasoso",
+      "level": 3
+    },
+    {
+      "line": 264,
+      "title": "17.4. Por que a mucosa dói sem erosão?",
+      "level": 3
+    },
+    {
+      "line": 267,
+      "title": "18. Aprendendo a interpretar exames por perguntas clínicas",
+      "level": 2
+    },
+    {
+      "line": 269,
+      "title": "18.1. Passo anterior ao exame: DRGE está comprovada?",
+      "level": 3
+    },
+    {
+      "line": 276,
+      "title": "18.2. O que o endoscopista precisa registrar na EDA?",
+      "level": 3
+    },
+    {
+      "line": 289,
+      "title": "18.3. Como ler Los Angeles sem memorizar apenas letras",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "18.4. Três laudos de pHmetria com raciocínio resolvido",
+      "level": 3
+    },
+    {
+      "line": 308,
+      "title": "18.5. O que muda na análise por 96 horas?",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "18.6. Ler impedanciometria sem superinterpretar",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "18.7. Associação de sintomas não equivale a causalidade absoluta",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "19. A investigação da disfagia é uma via clínica separada",
+      "level": 2
+    },
+    {
+      "line": 331,
+      "title": "19.1. Antes de falar em refluxo: localizar o sintoma",
+      "level": 3
+    },
+    {
+      "line": 336,
+      "title": "19.2. Por que a EDA vem primeiro?",
+      "level": 3
+    },
+    {
+      "line": 341,
+      "title": "19.3. Acalasia não é “refluxo que não responde”",
+      "level": 3
+    },
+    {
+      "line": 344,
+      "title": "19.4. Chicago 4.0 em linguagem de decisão",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "20. Endoscopia de Barrett — do achado incidental à decisão de seguimento",
+      "level": 2
+    },
+    {
+      "line": 353,
+      "title": "20.1. O que constitui Barrett?",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "20.2. Quem deve ser selecionado para rastreamento?",
+      "level": 3
+    },
+    {
+      "line": 363,
+      "title": "20.3. Da biópsia à vigilância",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "20.4. Protocolo de Seattle e viés de amostragem",
+      "level": 3
+    },
+    {
+      "line": 369,
+      "title": "20.5. Por que cirurgia antirrefluxo não “cura” Barrett",
+      "level": 3
+    },
+    {
+      "line": 374,
+      "title": "21. Farmacologia aplicada: indicar, otimizar e desprescrever IBP com segurança",
+      "level": 2
+    },
+    {
+      "line": 376,
+      "title": "21.1. Por que o horário importa",
+      "level": 3
+    },
+    {
+      "line": 381,
+      "title": "21.2. Escolher o caminho de supressão",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "21.3. Usar duas doses ou trocar de molécula?",
+      "level": 3
+    },
+    {
+      "line": 392,
+      "title": "21.4. Segurança: diferenciar associação de causalidade",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "21.5. A desprescrição como plano, não abandono",
+      "level": 3
+    },
+    {
+      "line": 406,
+      "title": "22. Relatórios e decisões: duas matrizes úteis para residência",
+      "level": 2
+    },
+    {
+      "line": 408,
+      "title": "22.1. Matriz exposição ácida × associação de sintomas",
+      "level": 3
+    },
+    {
+      "line": 420,
+      "title": "22.2. Matriz apresentação × destino da consulta",
+      "level": 3
+    },
+    {
+      "line": 433,
+      "title": "23. Referências científicas da ampliação, verificadas em fonte primária",
+      "level": 2
+    },
+    {
+      "line": 442,
+      "title": "24. Cirurgia antirrefluxo e do hiato: construir a indicação antes do procedimento",
+      "level": 2
+    },
+    {
+      "line": 444,
+      "title": "24.1. O que significa indicação cirúrgica robusta?",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "24.2. O preparo cirúrgico responde cinco perguntas",
+      "level": 3
+    },
+    {
+      "line": 460,
+      "title": "24.3. O que faz uma fundoplicatura?",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "24.4. O que a SAGES realmente recomenda?",
+      "level": 3
+    },
+    {
+      "line": 470,
+      "title": "24.5. Reparar o hiato não equivale a simplesmente “fechar um buraco”",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "24.6. Hérnia paraesofágica: a indicação pode ser respiratória ou hematológica",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "24.7. A hérnia paraesofágica assintomática é dilema verdadeiro",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "24.8. Volvo gástrico agudo e complicações mecânicas",
+      "level": 3
+    },
+    {
+      "line": 488,
+      "title": "25. O pós-operatório é capítulo obrigatório, não um rodapé de cirurgia",
+      "level": 2
+    },
+    {
+      "line": 490,
+      "title": "25.1. O que esperar logo após fundoplicatura?",
+      "level": 3
+    },
+    {
+      "line": 493,
+      "title": "25.2. Síndrome de gás aprisionado",
+      "level": 3
+    },
+    {
+      "line": 496,
+      "title": "25.3. Disfagia persistente após cirurgia",
+      "level": 3
+    },
+    {
+      "line": 499,
+      "title": "25.4. Recorrência de sintomas não significa necessariamente falha anatômica",
+      "level": 3
+    },
+    {
+      "line": 502,
+      "title": "25.5. Hérnia recidivada e decisão de reoperação",
+      "level": 3
+    },
+    {
+      "line": 505,
+      "title": "25.6. Seguimento após tratamento",
+      "level": 3
+    },
+    {
+      "line": 508,
+      "title": "26. Casos clínicos adicionais de raciocínio profundo",
+      "level": 2
+    },
+    {
+      "line": 510,
+      "title": "Caso 5 — tosse crônica e erro de atribuição",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "Caso 6 — Los Angeles B e exame objetivo",
+      "level": 3
+    },
+    {
+      "line": 527,
+      "title": "Caso 7 — Barrett e risco de subtratamento",
+      "level": 3
+    },
+    {
+      "line": 535,
+      "title": "Caso 8 — cirurgia e exame de motilidade",
+      "level": 3
+    },
+    {
+      "line": 543,
+      "title": "27. Oito questões adicionais para consolidar as lacunas avançadas",
+      "level": 2
+    },
+    {
+      "line": 545,
+      "title": "Questão 7 — suspeita de refluxo sem evidência objetiva",
+      "level": 3
+    },
+    {
+      "line": 550,
+      "title": "Questão 8 — decisão sobre tela",
+      "level": 3
+    },
+    {
+      "line": 555,
+      "title": "Questão 9 — Barrett não displásico",
+      "level": 3
+    },
+    {
+      "line": 560,
+      "title": "Questão 10 — pHmetria de quatro dias",
+      "level": 3
+    },
+    {
+      "line": 565,
+      "title": "Questão 11 — sintoma pós-operatório",
+      "level": 3
+    },
+    {
+      "line": 570,
+      "title": "Questão 12 — controle do sintoma e refluxo objetivo",
+      "level": 3
+    },
+    {
+      "line": 575,
+      "title": "Questão 13 — hérnia paraesofágica sem pirose",
+      "level": 3
+    },
+    {
+      "line": 580,
+      "title": "Questão 14 — critérios motores",
+      "level": 3
+    },
+    {
+      "line": 585,
+      "title": "28. Auditoria pedagógica intermediária — matriz conceitos → evidência interna",
+      "level": 2
+    },
+    {
+      "line": 603,
+      "title": "29. Revisão editorial final desta rodada (ainda em rascunho)",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Katz PO et al. ACG Clinical Guideline: Diagnosis and Management of GERD. *Am J Gastroenterol*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/",
+    "2. Gyawali CP et al. Lyon Consensus 2.0. *Gut*. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10846564/",
+    "3. SAGES. Guidelines for Surgical Treatment of Hiatal Hernias. 2024. https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-hiatal-hernias/",
+    "4. SAGES. Guidelines for Surgical Treatment of GERD. 2021. https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-gastroesophageal-reflux-gerd/",
+    "5. SAGES. Multi-Society Consensus Conference and Guideline on Treatment of GERD. 2022. https://www.sages.org/publications/guidelines/multi-society-consensus-conference-and-guideline-on-the-treatment-of-gerd/",
+    "6. AGA. *Clinical Practice Update on De-Prescribing Proton Pump Inhibitors*. Gastroenterology. 2022. https://gastro.org/clinical-guidance/de-prescribing-proton-pump-inhibitors-ppis/",
+    "7. ACG. *Diagnosis and Management of Barrett’s Esophagus: Updated Guideline*. Am J Gastroenterol. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC10259184/",
+    "8. Yadlapati R et al. *Chicago Classification version 4.0: esophageal motility disorders*. Neurogastroenterol Motil. 2021. https://pmc.ncbi.nlm.nih.gov/articles/PMC8034247/",
+    "9. AGA. *Personalized Approach to Evaluation and Management of GERD: Expert Review*. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9838103/",
+    "**Nota de proveniência:** o Drive ensinava DRGE em esquema curto, com DeMeester e IBP. As explicações de limiares atuais, amostragem de Barrett e segurança farmacológica acima derivam das diretrizes indicadas, não do PDF. Não houve reprodução de texto/imagem do benchmark."
+  ],
+  "external_links": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10846564/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-hiatal-hernias/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-gastroesophageal-reflux-gerd/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sages.org/publications/guidelines/multi-society-consensus-conference-and-guideline-on-the-treatment-of-gerd/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gastro.org/clinical-guidance/de-prescribing-proton-pump-inhibitors-ppis/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10259184/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8034247/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9838103/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Exemplo clínico A:** pessoa de 37 anos com exposição ácida esofágica de 11% em pHmetria sem IBP, regurgitação frequente apesar de tratamento corretamente utilizado, hérnia deslizante relevante e motilidade preservada. A hipótese fisiológica é clara: há refluxo objetivado e falha da barreira mecânica, com um sintoma que não depende apenas de acidez. Conversa cirúrgica é razoável.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exemplo clínico B:** pessoa de 37 anos com “refluxo” referido, EDA normal, exposição ácida de 2% em todos os dias de monitorização e ausência de correlação com sintomas. Pode sofrer muito, mas **não há alvo de refluxo patológico demonstrado** para cirurgia. Fundoplicatura nesse contexto pode adicionar disfagia sem resolver dor funcional. A indicação deve ser reavaliada.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exemplo:** paciente de 76 anos com hérnia volumosa, anemia ferropriva e cansaço ao caminhar diz não ter azia. Chamá-la de hérnia “assintomática” por ausência de piroses pode negar avaliação de sintomas mecânicos/hematológicos. O raciocínio correto envolve examinar se dispneia/anemia estão plausivelmente relacionadas à hérnia e discutir reparo conforme risco clínico e objetivos.",
+      "pattern": 0
+    },
+    {
+      "text": "**Apostila LURIA de referência visual auditada:** \\`apostilas/infertilidade-conjugal/index.html\\` já contém índice hierárquico, resumos rápidos, mecanismos, clínica, diagnóstico e casos; o HTML não será alterado e foi usado apenas como referência da profundidade e da organização, sem importar seus estilos para Markdown.",
+      "pattern": 1
+    },
+    {
+      "text": "**Sinais de alarme** demandam investigação oportuna, em especial disfagia progressiva, perda ponderal, anemia/sangramento, vômitos persistentes e odinofagia. Uma apresentação com dor torácica exige excluir causas cardíacas de risco antes de atribuir origem esofágica.",
+      "pattern": 1
+    },
+    {
+      "text": "Se sintomas persistem: primeiro verificar diagnóstico, **horário do IBP** (normalmente 30–60 minutos antes da refeição para fármacos convencionais), uso contínuo, dose e outros problemas. Escalar doses sem revisar aderência e sem avaliar diagnósticos alternativos é erro frequente.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Cirurgia Geral / Gastroenterologia. **Situação:** rascunho autoral em revisão, **não publicado**. **Data-base:** 14/10/2026. Fontes centrais: ACG GERD 2022, Lyon Consensus 2.0 (2024), SAGES *Guidelines for Surgical Treatment of Hiatal Hernias* 2024 e SAGES tratamento cirúrgico da DRGE 2021/multissocietário 2022.",
+      "pattern": 2
+    },
+    {
+      "text": "**Hérnia hiatal ≠ indicação cirúrgica automática.** A SAGES 2024, focada nas hérnias II–IV, reconhece incerteza nas paraesofágicas verdadeiramente assintomáticas e propõe decisão compartilhada sobre observação ou correção, analisando risco operatório, sintomas extra-GI, anatomia e risco de volvo. Em contrapartida, paciente com vômitos persistentes, dor epigástrica intensa, incapacidade de alimentação/sonda ou suspeita de volvo gástrico/estrangulamento exige abordagem emergencial.",
+      "pattern": 2
+    },
+    {
+      "text": "**Fundoplicatura Nissen (360°):** constrói envoltório completo; maior pressão de barreira em casos adequados, mas pode causar disfagia, incapacidade de arrotar/vomitar e distensão gasosa. **Fundoplicatura parcial (p. ex., Toupet 270°):** pode reduzir disfagia em alguns perfis, especialmente com motilidade reduzida, mas escolha depende de anatomia e experiência. Não declarar uma técnica superior para todos. **Reparo hiatal:** redução do estômago, dissecção do saco quando pertinente, aproximação dos pilares e avaliação de necessidade de fundoplicatura. Uso rotineiro de **tela** em reparo de hérnia hiatal tipo II–IV tem evidência insuficiente para recomendação geral pró ou contra segundo SAGES 2024. **Aumento magnético do EEI:** opção em pacientes selecionados, requer avaliação de motilidade/anatomia e disponibilidade. **TIF:** endoscópico indicado apenas em subgrupo com refluxo documentado, sem hérnia grande ou esofagite LA C/D; não substitui reparo de hérnia paraesofágica significativa. **Bypass gástrico em Y de Roux:** opção em obesidade com indicação cirúrgica e DRGE, considerando benefícios e riscos nutricionais; não oferecer só porque a pessoa prefere “corrigir refluxo” sem critérios.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Cirurgia Geral / Gastroenterologia. **Situação:** rascunho autoral em revisão, **não publicado**. **Data-base:** 14/10/2026. Fontes centrais: ACG GERD 2022, Lyon Consensus 2.0 (2024), SAGES *Guidelines for Surgical Treatment of Hiatal Hernias* 2024 e SAGES tratamento cirúrgico da DRGE 2021/multissocietário 2022."
+    },
+    {
+      "text": "**Google Drive — benchmark efetivamente aberto e lido:** “DOENÇA DO REFLUXO GASTROESOFÁGICO.pdf”, aproximadamente **1.647 caracteres** extraídos, é um mapa-resumo de sintomas típicos/atípicos, IBP, pHmetria, motilidade, Barrett, hérnia e cirurgia. Ele menciona tempo de exposição ácida >6%, mas não ensina adequadamente a interpretação de pHmetria inconclusiva, as diferenças entre teste **com** e **sem** IBP, a distinção de hérnia deslizante versus paraesofágica nem os critérios de avaliação pré-operatória. Também foi lido “02 - ESTOMAGO 1 DISPEPSIA, FISIOLOGIA GASTRICA E IBPS.pdf” em levantamento de material correlato, mas não assumido como benchmark equivalente. **Autoria Estratégia MED não comprovada**. Nenhuma frase, tabela ou imagem foi copiada."
+    }
+  ]
+}

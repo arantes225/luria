@@ -1,0 +1,389 @@
+{
+  "sha": "bfd4524ffc7002042a97b0a75beb4d0905f5e599",
+  "path": "apostilas/_rascunhos/lote-06-123-preview.html",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--bfd4524ffc",
+  "title": "Febre sem Sinais Localizatórios na Criança",
+  "format": ".html",
+  "chars_estimated": 90040,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Orientações e apresentação"
+    },
+    {
+      "title": "1. Definição e o problema de verdade no pronto atendimento pediátrico"
+    },
+    {
+      "title": "1.1 Quatro perguntas que precedem qualquer calculadora"
+    },
+    {
+      "title": "2. Febre, hipertermia e técnica de medida"
+    },
+    {
+      "title": "2.1 O conceito de febre"
+    },
+    {
+      "title": "2.2 Temperatura isolada não decide gravidade"
+    },
+    {
+      "title": "3. Epidemiologia e a transformação após as vacinas"
+    },
+    {
+      "title": "3.1 Populações que não cabem no “baixo risco” comum"
+    },
+    {
+      "title": "4. Estratificação principal: idade exata em dias"
+    },
+    {
+      "title": "4.1 Esquema geral de decisão"
+    },
+    {
+      "title": "4.2 Por que separar 8–21 e 22–28?"
+    },
+    {
+      "title": "5. Reconhecimento de sinais de doença grave: abordagem imediata"
+    },
+    {
+      "title": "5.1 O semáforo NICE: verde, amarelo e vermelho"
+    },
+    {
+      "title": "5.2 Situações em que antitérmico mascara sem resolver"
+    },
+    {
+      "title": "6. Anamnese por domínio: além do número do termômetro"
+    },
+    {
+      "title": "6.1 Curso febril e sintomas não reconhecidos"
+    },
+    {
+      "title": "6.2 Dados perinatais que mudam risco"
+    },
+    {
+      "title": "6.3 Capacidade de acompanhamento"
+    },
+    {
+      "title": "7. Exame físico completo: encontrar foco sem causar sofrimento"
+    },
+    {
+      "title": "7.1 Cabeça, ouvido, garganta e fontanelas"
+    },
+    {
+      "title": "7.2 Tórax e respiração"
+    },
+    {
+      "title": "7.3 Abdome, urina, ossos e articulações"
+    },
+    {
+      "title": "7.4 Pele e exame neurológico"
+    },
+    {
+      "title": "8. Exames laboratoriais: escolher o que modifica decisão"
+    },
+    {
+      "title": "8.1 Hemograma e contagem absoluta de neutrófilos (ANC)"
+    },
+    {
+      "title": "8.2 Procalcitonina e proteína C reativa"
+    },
+    {
+      "title": "8.3 Hemoculturas e amostras"
+    },
+    {
+      "title": "8.4 Uma bateria de exames negativa não vale fora do protocolo"
+    },
+    {
+      "title": "9. Urina e ITU oculta: o exame que mais frequentemente muda a investigação"
+    },
+    {
+      "title": "9.1 Por que investigar urina no lactente"
+    },
+    {
+      "title": "9.2 Coleta de urina adequada"
+    },
+    {
+      "title": "9.3 Fita de urina, piúria e nitrito"
+    },
+    {
+      "title": "9.4 Urina positiva e decisão sobre LCR"
+    },
+    {
+      "title": "10. Punção lombar: indicação, benefício, riscos e momento seguro"
+    },
+    {
+      "title": "10.1 O que a punção lombar responde"
+    },
+    {
+      "title": "10.2 Regras AAP por idade — sem misturar populações"
+    },
+    {
+      "title": "10.3 Quando não adiar antibioticoterapia"
+    },
+    {
+      "title": "10.4 Interpretação de LCR em lactentes"
+    },
+    {
+      "title": "11. Regras preditivas: Step-by-Step, PECARN, AAP e suas fronteiras"
+    },
+    {
+      "title": "11.1 Por que “baixo risco” não significa “sem risco”"
+    },
+    {
+      "title": "11.2 PECARN: três critérios combinados"
+    },
+    {
+      "title": "11.3 Step-by-Step: idade mínima e marcadores diferentes"
+    },
+    {
+      "title": "11.4 Aronson quando PCT não está disponível"
+    },
+    {
+      "title": "11.5 Exemplo de prova: três lactentes com a mesma PCT"
+    },
+    {
+      "title": "12. Faixa 0–7 dias: fora do protocolo AAP habitual"
+    },
+    {
+      "title": "13. Faixa 8–21 dias: investigar amplamente mesmo com boa aparência"
+    },
+    {
+      "title": "13.1 Condições para interromper terapia e alta hospitalar"
+    },
+    {
+      "title": "14. Faixa 22–28 dias: a idade muda risco, mas não apaga o perigo"
+    },
+    {
+      "title": "14.1 Situações que excluem baixo risco independente do hemograma"
+    },
+    {
+      "title": "15. Faixa 29–60 dias: usar informação para evitar excessos com segurança"
+    },
+    {
+      "title": "15.1 Urina positiva com marcadores normais"
+    },
+    {
+      "title": "15.2 Quando considerar internação apesar de “baixo risco”"
+    },
+    {
+      "title": "16. Faixa 61–90 dias: a atualização canadense de 2026"
+    },
+    {
+      "title": "16.1 O erro de tratar “menor de três meses” como uma única categoria"
+    },
+    {
+      "title": "17. Crianças de 3 a 36 meses: depois da vacinação conjugada"
+    },
+    {
+      "title": "17.1 Procura de foco em reavaliação"
+    },
+    {
+      "title": "17.2 A febre de 39–40°C sozinha justifica antibiótico?"
+    },
+    {
+      "title": "18. Crianças maiores: febre ainda sem foco após exame"
+    },
+    {
+      "title": "19. Focos ocultos e diferenciais infecciosos que precisam ser buscados"
+    },
+    {
+      "title": "19.1 Infecção do trato urinário"
+    },
+    {
+      "title": "19.2 Bacteremia oculta"
+    },
+    {
+      "title": "19.3 Meningite bacteriana"
+    },
+    {
+      "title": "19.4 Pneumonia oculta"
+    },
+    {
+      "title": "19.5 Infecção osteoarticular"
+    },
+    {
+      "title": "19.6 HSV e outras infecções virais importantes"
+    },
+    {
+      "title": "20. Painel viral positivo: como usar sem cometer erro de exclusão"
+    },
+    {
+      "title": "21. Quadro não infeccioso: quando “sem foco” pede outra hipótese"
+    },
+    {
+      "title": "22. Antibióticos e antivirais: princípios de segurança, sem automatismos"
+    },
+    {
+      "title": "22.1 Quem deve receber antibiótico prontamente"
+    },
+    {
+      "title": "22.2 Regimes conceituais por período"
+    },
+    {
+      "title": "22.3 Prescrever antibiótico a toda febre alta é um erro"
+    },
+    {
+      "title": "22.4 Profilaxia e imunização"
+    },
+    {
+      "title": "23. Antitérmicos, hidratação e conforto: evitar a febrefobia"
+    },
+    {
+      "title": "23.1 Ibuprofeno não é opção para qualquer febre em qualquer criança"
+    },
+    {
+      "title": "23.2 Medidas físicas e hidratação"
+    },
+    {
+      "title": "24. Convulsão febril e outros eventos neurológicos: quando o cenário deixa de ser simples"
+    },
+    {
+      "title": "24.1 Cefaleia e sinais de hipertensão intracraniana"
+    },
+    {
+      "title": "25. Alta segura, safety net e acompanhamento das culturas"
+    },
+    {
+      "title": "25.1 Checklist de alta"
+    },
+    {
+      "title": "25.2 Comunicação que reduz retornos desnecessários sem perder segurança"
+    },
+    {
+      "title": "26. Fluxograma integrado por idade e risco"
+    },
+    {
+      "title": "26.1 Passo a passo no pronto atendimento"
+    },
+    {
+      "title": "26.2 Matriz de erros frequentes"
+    },
+    {
+      "title": "27. Pérolas clínicas e resumo de alto rendimento"
+    },
+    {
+      "title": "28. Oito casos clínicos integradores comentados"
+    },
+    {
+      "title": "Caso 1 — Recém-nascido de dez dias, boa aparência e febre"
+    },
+    {
+      "title": "Caso 2 — 25 dias, biomarcadores baixos e a falsa “regra dos dois meses”"
+    },
+    {
+      "title": "Caso 3 — 46 dias, urina positiva, PCT baixa e sem sinais meníngeos"
+    },
+    {
+      "title": "Caso 4 — 78 dias com febre, boa alimentação e exames tranquilizadores"
+    },
+    {
+      "title": "Caso 5 — Pré-escolar vacinado, 40°C e sem sinais de gravidade"
+    },
+    {
+      "title": "Caso 6 — 39 dias com rinovírus positivo e recusa alimentar"
+    },
+    {
+      "title": "Caso 7 — Febre no sexto dia: a hipótese inflamatória surge"
+    },
+    {
+      "title": "Caso 8 — Dezesseis dias, convulsão e pequenas vesículas"
+    },
+    {
+      "title": "29. Doze questões autorais comentadas — residência, internato e ENAMED"
+    },
+    {
+      "title": "Questão 1 — Lactente de 12 dias bem-aparente"
+    },
+    {
+      "title": "Questão 2 — Critérios do Step-by-Step"
+    },
+    {
+      "title": "Questão 3 — PECARN versus Step-by-Step"
+    },
+    {
+      "title": "Questão 4 — EAS positivo aos 48 dias"
+    },
+    {
+      "title": "Questão 5 — Febre aos 83 dias"
+    },
+    {
+      "title": "Questão 6 — HSV neonatal sem vesículas"
+    },
+    {
+      "title": "Questão 7 — Semáforo de risco NICE"
+    },
+    {
+      "title": "Questão 8 — Antitérmicos e convulsão febril"
+    },
+    {
+      "title": "Questão 9 — Painel viral positivo no pequeno lactente"
+    },
+    {
+      "title": "Questão 10 — Criança imunizada de 18 meses e febre de 40°C"
+    },
+    {
+      "title": "Questão 11 — Cultura de saco coletor"
+    },
+    {
+      "title": "Questão 12 — Alta e segurança de seguimento"
+    },
+    {
+      "title": "Referências e leituras de verificação"
+    }
+  ],
+  "reference_entries": [
+    "AAP 2021 — febrile infant 8–60 days",
+    "AAP — infant fever practice resources",
+    "Canadian Paediatric Society — febrile infants ≤90 days, update 27/05/2026",
+    "NICE NG143 — fever in under 5s",
+    "NICE NG224 — urinary tract infection in under 16s",
+    "Ministério da Saúde — Dengue: diagnóstico e manejo clínico 2026"
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov",
+    "https://wwwn.cdc.gov;",
+    "https://publications.aap.org/pediatrics/article/148/2/e2021052228/179825/",
+    "https://www.aap.org/en/patient-care/infant-fever/",
+    "https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days",
+    "https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng224/chapter/Recommendations",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Também merece cuidado a história de antibiótico anterior, porque pode alterar crescimento de culturas e mascarar sintomas. Febre dentro de curto intervalo após vacinação pode ter relação com imunização, mas o diagnóstico de reação vacinal não deve ser usado como licença para ignorar sinais de infecção grave, especialmente em neonatos ou se o quadro clínico é atípico."
+    },
+    {
+      "text": "A categorização ajuda a não supervalorizar temperatura isolada, mas não substitui avaliação por idade. Lactente de 15 dias aparentemente “verde” continua no estrato neonatal de alto cuidado por idade. Sinal vermelho isolado tem peso para encaminhamento urgente; amarelo sem diagnóstico requer reavaliação, rede de segurança e eventualmente avaliação especializada. Não interpretar “verde” como autorização para dispensar toda orientação de retorno."
+    },
+    {
+      "text": "Uma mãe pode dizer “sem outros sintomas”, mas exame dirigido revelar taquipneia, otite, lesão cutânea profunda, edema de membro, dor à mobilização do quadril ou sinais de infecção periumbilical. A busca por foco é parte do diagnóstico e deve ser repetida se a febre persiste. Crianças pequenas não verbalizam disúria; ITU pode manifestar-se por febre e irritabilidade isoladas."
+    },
+    {
+      "text": "Inspecionar pele/couro cabeludo, perfusão, fontanelas e tônus. Fontanela abaulada em lactente febril pode sugerir aumento de pressão intracraniana/meningite, mas pode ser influenciada por choro e posicionamento; interpretar com outros sinais. Avaliar otoscopia, boca, orofaringe e pescoço; otite média aguda exige achados otoscópicos compatíveis, não só “tímpano vermelho” após choro. No neonato, diagnóstico de foco respiratório ou otite não dispensa automaticamente investigação de IBI devido à idade."
+    },
+    {
+      "text": "Palpar abdome gentilmente, avaliar distensão, dor focal, hepatosplenomegalia, massas e sensibilidade suprapúbica. Observar genital/períneo, sinais de balanite/vulvovaginite ou irritação sem assumir que são ITU. Em lactente com febre sem foco, ITU é um diagnóstico oculto prioritário, mesmo sem disúria. Inspecionar mobilidade espontânea dos quatro membros: recusa de mobilizar articulação, choro na troca de fraldas, claudicação ou pseudoparalisia podem sinalizar artrite séptica/osteomielite, que necessitam outra investigação."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

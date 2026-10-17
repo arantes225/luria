@@ -1,0 +1,593 @@
+{
+  "key": "lote-07-aula-127-hemorragia-digestiva-alta",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md",
+  "title": "LURIA — LOTE 07 | AULA 127",
+  "source_sha256": "e6b62fcdc9091608ad1d0361fd2818cae2958ba66b6412b24e5d9191ae17ba20",
+  "chars_estimated": 76017,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — LOTE 07 | AULA 127",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Hemorragia Digestiva Alta: abordagem por síndrome, etiologia e risco",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "0. Etapa zero: fontes de comparação realmente lidas e limites",
+      "level": 2
+    },
+    {
+      "line": 26,
+      "title": "1. Definição e significado clínico",
+      "level": 2
+    },
+    {
+      "line": 39,
+      "title": "2. Fisiologia e anatomia necessárias à decisão",
+      "level": 2
+    },
+    {
+      "line": 41,
+      "title": "2.1. Barreira mucosa do estômago e duodeno",
+      "level": 3
+    },
+    {
+      "line": 44,
+      "title": "2.2. Varizes esofagogástricas e circulação portal",
+      "level": 3
+    },
+    {
+      "line": 47,
+      "title": "2.3. HDA com múltiplos mecanismos",
+      "level": 3
+    },
+    {
+      "line": 50,
+      "title": "3. Etiologias organizadas pela fisiopatologia",
+      "level": 2
+    },
+    {
+      "line": 66,
+      "title": "4. Reconhecimento de gravidade e reanimação",
+      "level": 2
+    },
+    {
+      "line": 68,
+      "title": "4.1. O olhar antes dos exames",
+      "level": 3
+    },
+    {
+      "line": 73,
+      "title": "4.2. ABCDE e equipes",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "4.3. Estratégia transfusional",
+      "level": 3
+    },
+    {
+      "line": 86,
+      "title": "4.4. Jejum e medicamentos antes da EDA",
+      "level": 3
+    },
+    {
+      "line": 91,
+      "title": "5. Estratificação de risco: GBS e Rockall não são sinônimos",
+      "level": 2
+    },
+    {
+      "line": 93,
+      "title": "Glasgow–Blatchford Score (GBS)",
+      "level": 3
+    },
+    {
+      "line": 98,
+      "title": "Rockall",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "Child–Pugh e MELD no sangramento varicoso",
+      "level": 3
+    },
+    {
+      "line": 104,
+      "title": "6. Timing endoscópico: os dois relógios",
+      "level": 2
+    },
+    {
+      "line": 115,
+      "title": "7. HDA não varicosa — úlcera péptica em profundidade",
+      "level": 2
+    },
+    {
+      "line": 117,
+      "title": "7.1. Pistas etiológicas e mecanismo vascular",
+      "level": 3
+    },
+    {
+      "line": 122,
+      "title": "7.2. Classificação de Forrest — traduzir visão em tratamento",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "7.3. Métodos hemostáticos: reconhecer mecanismo e limitação",
+      "level": 3
+    },
+    {
+      "line": 146,
+      "title": "7.4. IBP antes e depois da hemostasia",
+      "level": 3
+    },
+    {
+      "line": 151,
+      "title": "7.5. *H. pylori* após úlcera sangrante",
+      "level": 3
+    },
+    {
+      "line": 154,
+      "title": "7.6. Repetição de sangramento e falha endoscópica",
+      "level": 3
+    },
+    {
+      "line": 159,
+      "title": "7.7. Transição para alta com redução de recidiva",
+      "level": 3
+    },
+    {
+      "line": 163,
+      "title": "7.8. A endoscopia precisa controlar o vaso, não somente interromper a imagem de sangramento",
+      "level": 3
+    },
+    {
+      "line": 171,
+      "title": "7.9. Forrest IIb: a mudança de 2026 explicada pelo risco do procedimento",
+      "level": 3
+    },
+    {
+      "line": 177,
+      "title": "7.10. Quando o sangramento volta: resgate estruturado",
+      "level": 3
+    },
+    {
+      "line": 188,
+      "title": "7.11. O que acontece depois das primeiras 72 horas?",
+      "level": 3
+    },
+    {
+      "line": 202,
+      "title": "7.12. Visualização endoscópica antes do procedimento: o que mudou em 2026?",
+      "level": 3
+    },
+    {
+      "line": 208,
+      "title": "8. HDA varicosa — um caminho farmacológico/endoscópico diferente",
+      "level": 2
+    },
+    {
+      "line": 210,
+      "title": "8.1. Suspeitar de hipertensão portal e iniciar terapia",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "8.2. Vasoativos antes da endoscopia",
+      "level": 3
+    },
+    {
+      "line": 218,
+      "title": "8.3. Antibiótico precoce em sangramento varicoso",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "8.4. Endoscopia e técnicas por localização",
+      "level": 3
+    },
+    {
+      "line": 226,
+      "title": "8.5. Alto risco e TIPS precoce",
+      "level": 3
+    },
+    {
+      "line": 236,
+      "title": "8.6. Prevenção secundária",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "8.7. IBP não é terapia de base da hipertensão portal",
+      "level": 3
+    },
+    {
+      "line": 244,
+      "title": "9. Anticoagulantes, AAS e risco cardiovascular",
+      "level": 2
+    },
+    {
+      "line": 252,
+      "title": "9.1. O antitrombótico não é uma condição binária: indicação, meia-vida e reversão",
+      "level": 3
+    },
+    {
+      "line": 269,
+      "title": "9.2. Anemia e ressangramento: uma hemoglobina não descreve todo o processo",
+      "level": 3
+    },
+    {
+      "line": 277,
+      "title": "9.3. Reintrodução de alimentação e medicações na alta",
+      "level": 3
+    },
+    {
+      "line": 284,
+      "title": "10. Diagnósticos diferenciais e mimetizadores",
+      "level": 2
+    },
+    {
+      "line": 294,
+      "title": "10.1. Lesão de Dieulafoy e malformações vasculares",
+      "level": 3
+    },
+    {
+      "line": 304,
+      "title": "10.2. Laceração de Mallory–Weiss, esofagite e lesões raras",
+      "level": 3
+    },
+    {
+      "line": 310,
+      "title": "10.3. HDA após cirurgia bariátrica: localização da anatomia é o primeiro exame conceitual",
+      "level": 3
+    },
+    {
+      "line": 318,
+      "title": "10.4. Hematochezia com choque — lembrar HDA maciça sem inverter prioridade",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "11. Exames complementares e interpretação prática",
+      "level": 2
+    },
+    {
+      "line": 326,
+      "title": "11.1. Hemograma seriado, não um resultado único",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "11.2. Ureia e função renal",
+      "level": 3
+    },
+    {
+      "line": 332,
+      "title": "11.3. Coagulograma",
+      "level": 3
+    },
+    {
+      "line": 335,
+      "title": "11.4. Endoscopia: diagnóstico e tratamento",
+      "level": 3
+    },
+    {
+      "line": 338,
+      "title": "12. Fluxos de decisão que não devem faltar na prova",
+      "level": 2
+    },
+    {
+      "line": 340,
+      "title": "Fluxo A — qualquer paciente com hematêmese ou melena",
+      "level": 3
+    },
+    {
+      "line": 350,
+      "title": "Fluxo B — úlcera com Forrest Ia/IIa",
+      "level": 3
+    },
+    {
+      "line": 357,
+      "title": "Fluxo C — varizes",
+      "level": 3
+    },
+    {
+      "line": 366,
+      "title": "13. Casos clínicos integradores",
+      "level": 2
+    },
+    {
+      "line": 368,
+      "title": "Caso 1 — HDA por úlcera duodenal com Forrest Ia",
+      "level": 3
+    },
+    {
+      "line": 376,
+      "title": "Caso 2 — cirrótico com hematêmese",
+      "level": 3
+    },
+    {
+      "line": 384,
+      "title": "Caso 3 — coágulo aderido Forrest IIb após atualização 2026",
+      "level": 3
+    },
+    {
+      "line": 392,
+      "title": "Caso 4 — recorrência após hemostasia ulcerosa",
+      "level": 3
+    },
+    {
+      "line": 400,
+      "title": "Caso 5 — hematochezia com choque pode ser HDA",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "Caso 6 — úlcera posterior e ressangramento",
+      "level": 3
+    },
+    {
+      "line": 418,
+      "title": "Caso 7 — o paciente com stent recente e melena",
+      "level": 3
+    },
+    {
+      "line": 427,
+      "title": "Caso 8 — melena e anemia após bypass em Y de Roux",
+      "level": 3
+    },
+    {
+      "line": 436,
+      "title": "Caso 9 — coágulo Forrest IIb e equipe sem dispositivo hemostático",
+      "level": 3
+    },
+    {
+      "line": 445,
+      "title": "Caso 10 — sangramento por Dieulafoy e EDA inicial negativa",
+      "level": 3
+    },
+    {
+      "line": 454,
+      "title": "14. Oito questões autorais — alternativas comentadas",
+      "level": 2
+    },
+    {
+      "line": 456,
+      "title": "Questão 1 — timing endoscópico, atualização 2026",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "Questão 2 — suspeita varicosa",
+      "level": 3
+    },
+    {
+      "line": 474,
+      "title": "Questão 3 — Forrest",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Questão 4 — Forrest IIb e ESGE 2026",
+      "level": 3
+    },
+    {
+      "line": 492,
+      "title": "Questão 5 — epinefrina e hemostasia",
+      "level": 3
+    },
+    {
+      "line": 501,
+      "title": "Questão 6 — ressangramento após EDA",
+      "level": 3
+    },
+    {
+      "line": 510,
+      "title": "Questão 7 — hematoquezia",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "Questão 8 — profilaxia depois de sangramento varicoso",
+      "level": 3
+    },
+    {
+      "line": 529,
+      "title": "Questão 9 — Forrest IIb e capacidade técnica",
+      "level": 3
+    },
+    {
+      "line": 537,
+      "title": "Questão 10 — úlcera de alto risco e recidiva",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "Questão 11 — metoclopramida antes de EDA",
+      "level": 3
+    },
+    {
+      "line": 553,
+      "title": "Questão 12 — terapia antiplaquetária após stent",
+      "level": 3
+    },
+    {
+      "line": 561,
+      "title": "Questão 13 — anemia pós-hemostasia",
+      "level": 3
+    },
+    {
+      "line": 569,
+      "title": "Questão 14 — HDA depois de bypass",
+      "level": 3
+    },
+    {
+      "line": 577,
+      "title": "Questão 15 — Dieulafoy versus úlcera convencional",
+      "level": 3
+    },
+    {
+      "line": 585,
+      "title": "Questão 16 — GAVE e hipertensão portal",
+      "level": 3
+    },
+    {
+      "line": 593,
+      "title": "15. Pontos de alto rendimento e armadilhas de residência",
+      "level": 2
+    },
+    {
+      "line": 611,
+      "title": "16. Plano de imagens reais e esquemas — não incorporados",
+      "level": 2
+    },
+    {
+      "line": 630,
+      "title": "17. Fontes científicas e registro de atualização",
+      "level": 2
+    },
+    {
+      "line": 632,
+      "title": "Fonte principal da HDA ulcerosa — **2026**",
+      "level": 3
+    },
+    {
+      "line": 636,
+      "title": "Orientação de transição e fundamento não varicoso",
+      "level": 3
+    },
+    {
+      "line": 641,
+      "title": "HDA varicosa e hipertensão portal",
+      "level": 3
+    },
+    {
+      "line": 646,
+      "title": "Contexto brasileiro",
+      "level": 3
+    },
+    {
+      "line": 650,
+      "title": "18. Auditoria parcial e pendências",
+      "level": 2
+    },
+    {
+      "line": 671,
+      "title": "17A. Atualização temática e etapa zero repetida (15/10/2026)",
+      "level": 2
+    },
+    {
+      "line": 679,
+      "title": "18A. Matriz de autossuficiência parcial",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Gralnek IM et al. **Endoscopic diagnosis and management of peptic ulcer bleeding: ESGE Guideline – Update 2026.** *Endoscopy.* 2026;58(8):899–924. Publicação on-line 13/05/2026; DOI **10.1055/a-2863-8314**. https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "2. ESGE. Página oficial de Guidelines, indicando atualização da úlcera péptica em maio de 2026. https://www.esge.com/guidelines",
+    "3. Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. **ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding.** *Am J Gastroenterol.* 2021;116(5):899–917. DOI 10.14309/ajg.0000000000001245. https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "4. Gralnek IM et al. **Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: ESGE Update 2021.** *Endoscopy.* 2021;53(3):300–332. DOI 10.1055/a-1369-5274. https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021",
+    "   **Nota editorial:** o documento 2021 foi atualizado parcialmente/especificamente pela ESGE 2026 em sangramento ulceroso; em conflito, privilegiar a edição mais recente no tópico atualizado.",
+    "5. de Franchis R et al. **Baveno VII – Renewing consensus in portal hypertension.** *J Hepatol.* 2022;76(4):959–974. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "6. ESGE. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage**, guideline 2022. https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+    "7. AASLD. **Why do we use early TIPS for management of variceal bleeding?** https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-early-tips-management-variceal-bleeding",
+    "8. Ebserh/HC-UFMG, Protocolos Setoriais IAG, listando “PR 240 Abordagem da HDA secundária à ruptura de varizes esofagogástricas no adulto”, revisado em 2025. O protocolo deve ser lido integralmente antes de transcrever dose/rotina brasileira. https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/protocolos-setoriais-iag",
+    "9. Sociedade Brasileira de Hepatologia. Comentário técnico sobre Baveno VII e hipertensão portal publicado em 2024. https://sbhepatologia.org.br/publicacoes/artigos/evolving-portal-hypertension-through-baveno-vii-recommendations/"
+  ],
+  "external_links": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/guidelines",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-early-tips-management-variceal-bleeding",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/protocolos-setoriais-iag",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sbhepatologia.org.br/publicacoes/artigos/evolving-portal-hypertension-through-baveno-vii-recommendations/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 6,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Regime clássico usado como referência:** omeprazol/pantoprazol IV equivalente a 80 mg de carga seguido de 8 mg/h por 72 h **em pacientes selecionados após hemostasia**; regimes intermitentes de dose alta são alternativas. A concentração e produto local exigem verificação. Não dar dose de infusão como regra obrigatória para pequena lesão Forrest III de base limpa.",
+      "pattern": 0
+    },
+    {
+      "text": "**Benchmarks lidos no Google Drive:** - “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Foco quase exclusivo em HDA varicosa, compressão esplâncnica, profilaxia, ligadura e TIPS, associado a capítulo de síndrome hepatopulmonar. Traz simplificações como “betabloqueador para todos com hipertensão portal” sem abordar contraindicações, hipotensão ou decisão por HPCS em contexto específico. - “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”, cerca de 9 mil caracteres. Explica fisiologia gástrica, úlcera péptica, classificação de Forrest, ligadura de relação com H. pylori e opções de hemostasia. Há números históricos muito categóricos sobre associação entre úlcera e H. pylori e material não atualizado para novas alternativas de hemostasia. - “04 - GASTRO - ASCITE + PBE.pdf” e “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, também lidos na aula 126, foram utilizados somente como contexto de complicações hepáticas e riscos de hipervolemia/IRA em pacientes com HDA varicosa.",
+      "pattern": 1
+    },
+    {
+      "text": "**Atualização que muda o ensino:** a ESGE publicou em **13/05/2026** nova diretriz específica de **sangramento por úlcera péptica**, posterior ao documento geral de HDA não varicosa de 2021. Mudanças relevantes: não exigir EDA ≤6/≤12 horas em paciente estável com sangramento ulceroso; cautela com pré-EDA e preferência por hemostasia especializada; considerar tratamento de coágulo aderido Forrest IIb em mãos capacitadas; reconhecer clipes over-the-scope (OTS) como alternativa primária em sangramento ativo de alto risco; e discutir embolização transarterial (TAE) em falha endoscópica. O tempo-alvo **de HDA varicosa segue outro algoritmo** (EDA idealmente ≤12 h após estabilização).",
+      "pattern": 1
+    },
+    {
+      "text": "Hemorragia digestiva alta (HDA) é o sangramento que tem origem **proximal ao ligamento de Treitz**, principalmente esôfago, estômago e duodeno. Pode aparecer como hematêmese de sangue vermelho, vômito em borra de café, melena ou, quando volumosa, hematoquezia. Não equiparar hematoquezia a sangramento exclusivamente colônico: trânsito intestinal acelerado em HDA maciça pode exteriorizar sangue vivo por via retal.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Cirurgia Geral / Gastroenterologia / Emergência **Status editorial:** RASCUNHO ORIGINAL EM REVISÃO; NÃO INTEGRADO AO SITE **Data:** 14/10/2026. Escopo: HDA varicosa e não varicosa. Referências principais: ESGE **2026** para sangramento por úlcera, ESGE **2022** para sangramento por varizes, Baveno VII e ACG 2021. **Separação curricular:** aula 126 contém fisiopatologia geral da cirrose e hipertensão portal; aula 127 concentra-se no sangramento agudo, estratégias endoscópicas e reabilitação. A aula 132 tratará HDB e a 136, visão integradora de hemorragia digestiva sem reproduzir aqui todos os conteúdos.",
+      "pattern": 2
+    },
+    {
+      "text": "**Inventário LURIA:** não havia diretório específico desta apostila na listagem nominal disponível em 14/10/2026. Houve criação de conteúdo sobre cirrose na aula 126 como referência correlata, mas não um texto autossuficiente de HDA. Evitar publicação de versão com terapêutica repetitiva e divergente.",
+      "pattern": 2
+    },
+    {
+      "text": "**Atualização que muda o ensino:** a ESGE publicou em **13/05/2026** nova diretriz específica de **sangramento por úlcera péptica**, posterior ao documento geral de HDA não varicosa de 2021. Mudanças relevantes: não exigir EDA ≤6/≤12 horas em paciente estável com sangramento ulceroso; cautela com pré-EDA e preferência por hemostasia especializada; considerar tratamento de coágulo aderido Forrest IIb em mãos capacitadas; reconhecer clipes over-the-scope (OTS) como alternativa primária em sangramento ativo de alto risco; e discutir embolização transarterial (TAE) em falha endoscópica. O tempo-alvo **de HDA varicosa segue outro algoritmo** (EDA idealmente ≤12 h após estabilização).",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Cirurgia Geral / Gastroenterologia / Emergência **Status editorial:** RASCUNHO ORIGINAL EM REVISÃO; NÃO INTEGRADO AO SITE **Data:** 14/10/2026. Escopo: HDA varicosa e não varicosa. Referências principais: ESGE **2026** para sangramento por úlcera, ESGE **2022** para sangramento por varizes, Baveno VII e ACG 2021. **Separação curricular:** aula 126 contém fisiopatologia geral da cirrose e hipertensão portal; aula 127 concentra-se no sangramento agudo, estratégias endoscópicas e reabilitação. A aula 132 tratará HDB e a 136, visão integradora de hemorragia digestiva sem reproduzir aqui todos os conteúdos."
+    },
+    {
+      "text": "**Inventário LURIA:** não havia diretório específico desta apostila na listagem nominal disponível em 14/10/2026. Houve criação de conteúdo sobre cirrose na aula 126 como referência correlata, mas não um texto autossuficiente de HDA. Evitar publicação de versão com terapêutica repetitiva e divergente."
+    }
+  ]
+}

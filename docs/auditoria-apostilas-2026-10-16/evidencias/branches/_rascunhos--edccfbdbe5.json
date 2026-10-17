@@ -1,0 +1,182 @@
+{
+  "sha": "edccfbdbe55218cc1033736873223ce4b7bf10b8",
+  "path": "apostilas/_rascunhos/lote-06-125-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--edccfbdbe5",
+  "title": "Rastreamento e Prevenção Quaternária",
+  "format": ".json",
+  "chars_estimated": 80103,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes-de-leitura",
+      "title": "Apresentação e orientações"
+    },
+    {
+      "id": "cap-01-rastreamento-e-intervencao-em-pessoas-sem-sintom",
+      "title": "1. Rastreamento é intervenção em pessoas sem sintomas — e isso muda a ética"
+    },
+    {
+      "id": "cap-02-rastreamento-diagnostico-precoce-vigilancia-e-bu",
+      "title": "2. Rastreamento, diagnóstico precoce, vigilância e busca ativa"
+    },
+    {
+      "id": "cap-03-quando-vale-a-pena-rastrear-principios-de-progra",
+      "title": "3. Quando vale a pena rastrear: princípios de programas responsáveis"
+    },
+    {
+      "id": "cap-04-desempenho-do-teste-em-baixa-prevalencia-aplican",
+      "title": "4. Desempenho do teste em baixa prevalência: aplicando Bayes na APS"
+    },
+    {
+      "id": "cap-05-riscos-e-eventos-adversos-o-percurso-completo-de",
+      "title": "5. Riscos e eventos adversos: o percurso completo de rastreamento"
+    },
+    {
+      "id": "cap-06-sus-em-2026-rastreamento-do-cancer-do-colo-do-ut",
+      "title": "6. SUS em 2026: rastreamento do câncer do colo do útero"
+    },
+    {
+      "id": "cap-07-sus-em-2026-mamografia-e-cancer-de-mama",
+      "title": "7. SUS em 2026: mamografia e câncer de mama"
+    },
+    {
+      "id": "cap-08-sus-em-2026-cancer-colorretal-e-teste-imunoquimi",
+      "title": "8. SUS em 2026: câncer colorretal e teste imunoquímico fecal"
+    },
+    {
+      "id": "cap-09-comparacao-operacional-dos-programas-brasileiros",
+      "title": "9. Comparação operacional dos programas brasileiros recentes"
+    },
+    {
+      "id": "cap-10-rastreamento-em-outras-condicoes-nem-todo-teste-",
+      "title": "10. Rastreamento em outras condições: nem todo teste tem benefício líquido demonstrado"
+    },
+    {
+      "id": "cap-11-quando-a-vigilancia-de-alto-risco-nao-segue-a-re",
+      "title": "11. Quando a vigilância de alto risco não segue a recomendação populacional"
+    },
+    {
+      "id": "cap-12-como-medir-a-qualidade-de-um-programa-sem-confun",
+      "title": "12. Como medir a qualidade de um programa sem confundir volume com benefício"
+    },
+    {
+      "id": "cap-13-prevencao-quaternaria-definicao-clinica-e-origem",
+      "title": "13. Prevenção quaternária: definição clínica e origem ética"
+    },
+    {
+      "id": "cap-14-cascata-diagnostica-um-exame-fora-de-indicacao-p",
+      "title": "14. Cascata diagnóstica: um exame fora de indicação pode multiplicar intervenções"
+    },
+    {
+      "id": "cap-15-desprescricao-e-polifarmacia-prevencao-quaternar",
+      "title": "15. Desprescrição e polifarmácia: prevenção quaternária no cuidado longitudinal"
+    },
+    {
+      "id": "cap-16-incidentalomas-e-resultados-limitrofes-trabalhar",
+      "title": "16. Incidentalomas e resultados limítrofes: trabalhar com incerteza sem transformar toda alteração em doença"
+    },
+    {
+      "id": "cap-17-comunicacao-do-risco-e-tomada-de-decisao-compart",
+      "title": "17. Comunicação do risco e tomada de decisão compartilhada"
+    },
+    {
+      "id": "cap-18-implementacao-de-rastreamento-organizado-em-uma-",
+      "title": "18. Implementação de rastreamento organizado em uma UBS: fluxo de trabalho"
+    },
+    {
+      "id": "cap-19-prevencao-quaternaria-na-atencao-de-pessoas-idos",
+      "title": "19. Prevenção quaternária na atenção de pessoas idosas, crianças e pessoas com comorbidades"
+    },
+    {
+      "id": "cap-20-sintese-operativa-perguntas-de-alto-rendimento-p",
+      "title": "20. Síntese operativa: perguntas de alto rendimento para prova e consultório"
+    },
+    {
+      "id": "cap-21-os-vieses-do-rastreamento-em-profundidade-por-qu",
+      "title": "21. Os vieses do rastreamento em profundidade: por que a evidência pode enganar"
+    },
+    {
+      "id": "cap-22-falso-positivo-falso-negativo-e-discordancia-ent",
+      "title": "22. Falso positivo, falso negativo e discordância entre exame e clínica"
+    },
+    {
+      "id": "cap-23-quando-nao-fazer-rastreamento-quatro-tipos-de-ju",
+      "title": "23. Quando não fazer rastreamento: quatro tipos de justificativa muito diferentes"
+    },
+    {
+      "id": "cap-24-comunicacao-de-decisoes-dificeis-microcasos-e-fo",
+      "title": "24. Comunicação de decisões difíceis: microcasos e formulações adequadas"
+    },
+    {
+      "id": "cap-25-monitoramento-e-melhoria-da-qualidade-na-rede-pu",
+      "title": "25. Monitoramento e melhoria da qualidade na rede pública"
+    },
+    {
+      "id": "cap-26-aplicacao-integrada-quem-deve-receber-qual-condu",
+      "title": "26. Aplicação integrada: quem deve receber qual conduta na mesma semana"
+    },
+    {
+      "id": "cap-27-oito-casos-clinicos-de-rastreamento-e-prevencao-",
+      "title": "27. Oito casos clínicos de rastreamento e prevenção quaternária"
+    },
+    {
+      "id": "cap-28-doze-questoes-autorais-comentadas-residencia-ena",
+      "title": "28. Doze questões autorais comentadas — residência, ENAMED e APS"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"Ministério da Saúde — rastreio DNA-HPV (2025)\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view\"}",
+    "{\"label\":\"Ministério da Saúde — FAQ rastreamento SUS (2026)\",\"url\":\"https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do\"}",
+    "{\"label\":\"INCA — Nota Técnica 626/2025 sobre mamografia no SUS\",\"url\":\"https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus\"}",
+    "{\"label\":\"INCA — inclusão de FIT no SUS (agosto de 2026)\",\"url\":\"https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal\"}",
+    "{\"label\":\"INCA — anúncio do protocolo FIT (maio de 2026)\",\"url\":\"https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-adota-novo-exame-para-detectar-cancer-de-intestino-antes-dos-sintomas\"}",
+    "{\"label\":\"UK National Screening Committee — principles (2025)\",\"url\":\"https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening\"}",
+    "{\"label\":\"UK National Screening Committee — informed choice\",\"url\":\"https://www.gov.uk/guidance/principles-of-population-screening/informed-choice\"}",
+    "{\"label\":\"OMS Europa — revisão de rastreamento cardiovascular (2024)\",\"url\":\"https://www.who.int/europe/publications/i/item/978-92-890-6088-2\"}",
+    "{\"label\":\"OMS — Screening programmes: a short guide\",\"url\":\"https://iris.who.int/handle/10665/330829\"}"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-adota-novo-exame-para-detectar-cancer-de-intestino-antes-dos-sintomas",
+    "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening",
+    "https://www.gov.uk/guidance/principles-of-population-screening/informed-choice",
+    "https://www.who.int/europe/publications/i/item/978-92-890-6088-2",
+    "https://iris.who.int/handle/10665/330829"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Rastreamento é a aplicação planejada de um teste a pessoas que não apresentam sinais ou sintomas sugestivos da doença-alvo, para identificar indivíduos com maior probabilidade de condição subclínica e encaminhá-los para investigação confirmatória e, quando apropriado, tratamento. Ele é distinto de diagnóstico precoce em pessoa sintomática, investigação de um nódulo palpável, seguimento de doença já conhecida e vigilância de alto risco com protocolo específico. Essa distinção define quais populações, periodicidades, testes e benefícios são válidos."
+    },
+    {
+      "text": "A ética é especialmente exigente porque a iniciativa muitas vezes parte do sistema de saúde para pessoas que se sentem saudáveis. O programa precisa comprovar que a cadeia convite → exame → confirmação → tratamento → seguimento produz benefício global superior aos danos, custos e oportunidades perdidas. Um exame que detecta mais lesões não é necessariamente programa que salva mais vidas: pode antecipar diagnóstico, rotular doença indolente e gerar biópsias sem ganho real de saúde. Esse é o encontro entre rastreamento e prevenção quaternária — evitar dano produzido pela própria assistência."
+    },
+    {
+      "text": "A APS tem papel de identificar elegíveis, verificar histórico, oferecer escolha informada, realizar/coletar quando habilitada, rastrear faltosos e navegar resultados positivos. Um resultado alterado que não chega à colposcopia ou à colonoscopia é falha do percurso de rastreamento. O exame isolado não produz benefício se não há diagnóstico/terapia tempestivos."
+    },
+    {
+      "text": "Imagine dois grupos fictícios com câncer que levaria à morte aos 70 anos. Sem rastreamento, o tumor é diagnosticado aos 66; com exame antecipado, é diagnosticado aos 60. A sobrevida desde o diagnóstico sobe de 4 para 10 anos, mas a idade da morte é a mesma. Esse é o viés de antecipação (lead-time). O desfecho “sobrevida em cinco anos entre diagnosticados” isoladamente é inadequado para estimar benefício de programa."
+    },
+    {
+      "text": "Sobrediagnóstico é identificar condição que nunca teria causado sintomas ou morte durante a vida da pessoa. Ele não é igual a falso positivo: no sobrediagnóstico, o exame e a confirmação histológica podem realmente identificar uma lesão existente; o problema é que ela não produziria dano clínico relevante. Em muitos casos individuais não se consegue prever com segurança qual lesão teria comportamento indolente; a estimativa é essencialmente populacional e envolve suposições. Sobretratamento é intervir em doença que não teria exigido cuidado."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,513 @@
+{
+  "key": "lote-05-102-obstrucao-intestinal",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-05-102-obstrucao-intestinal.md",
+  "title": "LURIA — Apostila 102: Obstrução intestinal e abdome agudo obstrutivo",
+  "source_sha256": "8427cbc1e4836bed8a5b8c31cf81b94171e054dd0bda1bd21d23f3eb29944fb8",
+  "chars_estimated": 59755,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Apostila 102: Obstrução intestinal e abdome agudo obstrutivo",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "0. Auditoria inicial: acervo LURIA, materiais do Drive e referências clínicas",
+      "level": 2
+    },
+    {
+      "line": 9,
+      "title": "0.1. Inventário antes da redação",
+      "level": 3
+    },
+    {
+      "line": 15,
+      "title": "0.2. Etapa zero — documentos do Google Drive efetivamente abertos",
+      "level": 3
+    },
+    {
+      "line": 25,
+      "title": "0.3. Fontes externas de atualização",
+      "level": 3
+    },
+    {
+      "line": 34,
+      "title": "0.4. Matriz curricular da apostila",
+      "level": 3
+    },
+    {
+      "line": 51,
+      "title": "1. Conceito: o conteúdo intestinal deixou de progredir",
+      "level": 2
+    },
+    {
+      "line": 57,
+      "title": "1.1. Por que o paciente pode estar desidratado com barriga muito distendida?",
+      "level": 3
+    },
+    {
+      "line": 61,
+      "title": "1.2. Alta, baixa, completa ou parcial?",
+      "level": 3
+    },
+    {
+      "line": 67,
+      "title": "2. O que é alça fechada e por que o tempo passa a importar",
+      "level": 2
+    },
+    {
+      "line": 77,
+      "title": "3. Quadro clínico: sintomas que evoluem e sintomas que enganam",
+      "level": 2
+    },
+    {
+      "line": 81,
+      "title": "3.1. Localização e tempo",
+      "level": 3
+    },
+    {
+      "line": 89,
+      "title": "3.2. Ausculta e exame físico",
+      "level": 3
+    },
+    {
+      "line": 95,
+      "title": "3.3. Sinais de alerta de possível intestino inviável",
+      "level": 3
+    },
+    {
+      "line": 101,
+      "title": "4. Laboratório: risco, reserva fisiológica e causas tratáveis",
+      "level": 2
+    },
+    {
+      "line": 109,
+      "title": "5. Imagem: quando radiografia é insuficiente e TC muda decisão",
+      "level": 2
+    },
+    {
+      "line": 115,
+      "title": "5.1. Ler a TC por perguntas, não por um único sinal",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "5.2. O que a radiografia ainda ensina",
+      "level": 3
+    },
+    {
+      "line": 128,
+      "title": "6. Obstrução por aderências: o papel real do tratamento não operatório",
+      "level": 2
+    },
+    {
+      "line": 134,
+      "title": "6.1. Quem NÃO deve entrar no protocolo de espera?",
+      "level": 3
+    },
+    {
+      "line": 138,
+      "title": "6.2. O que significa a janela de 72 horas?",
+      "level": 3
+    },
+    {
+      "line": 142,
+      "title": "6.3. Contraste hidrossolúvel como teste prognóstico",
+      "level": 3
+    },
+    {
+      "line": 148,
+      "title": "6.4. Laparoscopia versus laparotomia",
+      "level": 3
+    },
+    {
+      "line": 152,
+      "title": "7. Hérnias da parede abdominal, hérnias internas e isquemia",
+      "level": 2
+    },
+    {
+      "line": 158,
+      "title": "7.1. Redução manual não é solução automática",
+      "level": 3
+    },
+    {
+      "line": 162,
+      "title": "7.2. Hérnia interna após derivação gástrica",
+      "level": 3
+    },
+    {
+      "line": 166,
+      "title": "8. Obstrução do cólon: câncer, volvos, fecaloma e risco cecal",
+      "level": 2
+    },
+    {
+      "line": 170,
+      "title": "8.1. Neoplasia colorretal obstrutiva",
+      "level": 3
+    },
+    {
+      "line": 176,
+      "title": "8.2. Volvo de sigmoide versus volvo de ceco",
+      "level": 3
+    },
+    {
+      "line": 184,
+      "title": "8.3. Fecaloma e impactação fecal",
+      "level": 3
+    },
+    {
+      "line": 188,
+      "title": "9. Íleo pós-operatório e pseudo-obstrução colônica aguda (Ogilvie)",
+      "level": 2
+    },
+    {
+      "line": 194,
+      "title": "9.1. O que fazer antes de tratar como Ogilvie?",
+      "level": 3
+    },
+    {
+      "line": 202,
+      "title": "10. Síndrome da artéria mesentérica superior, doença de Crohn e outras causas",
+      "level": 2
+    },
+    {
+      "line": 212,
+      "title": "11. Resposta nas primeiras horas — estabilização e reavaliação estruturadas",
+      "level": 2
+    },
+    {
+      "line": 224,
+      "title": "12. Quadro de decisão — o que muda a intervenção?",
+      "level": 2
+    },
+    {
+      "line": 237,
+      "title": "13. Casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 239,
+      "title": "Caso A — Bridas, estabilidade e teste de trânsito",
+      "level": 3
+    },
+    {
+      "line": 243,
+      "title": "Caso B — Hérnia femoral com sinais de sofrimento",
+      "level": 3
+    },
+    {
+      "line": 247,
+      "title": "Caso C — Sigmoide distendido em idoso sem peritonite",
+      "level": 3
+    },
+    {
+      "line": 251,
+      "title": "Caso D — Hérnia interna depois de bypass com TC pouco expressiva",
+      "level": 3
+    },
+    {
+      "line": 255,
+      "title": "Caso E — Pseudo-obstrução colônica após doença crítica",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "14. Questões autorais com comentários por alternativa",
+      "level": 2
+    },
+    {
+      "line": 261,
+      "title": "Questão 1 — Exame de imagem",
+      "level": 3
+    },
+    {
+      "line": 273,
+      "title": "Questão 2 — Indicação de cirurgia",
+      "level": 3
+    },
+    {
+      "line": 285,
+      "title": "Questão 3 — Contraste hidrossolúvel",
+      "level": 3
+    },
+    {
+      "line": 297,
+      "title": "Questão 4 — Hérnia pós-bariátrica",
+      "level": 3
+    },
+    {
+      "line": 309,
+      "title": "Questão 5 — Diferenciar volvos",
+      "level": 3
+    },
+    {
+      "line": 321,
+      "title": "Questão 6 — Íleo e pseudo-obstrução",
+      "level": 3
+    },
+    {
+      "line": 333,
+      "title": "15. Recursos visuais planejados para o Admin",
+      "level": 2
+    },
+    {
+      "line": 354,
+      "title": "16. Estrangulamento e isquemia de alça: processo contínuo, não diagnóstico binário simples",
+      "level": 2
+    },
+    {
+      "line": 360,
+      "title": "16.1. Lactato normal exclui isquemia intestinal?",
+      "level": 3
+    },
+    {
+      "line": 364,
+      "title": "16.2. Quais achados de TC são mais preocupantes?",
+      "level": 3
+    },
+    {
+      "line": 370,
+      "title": "16.3. Estrangulamento e infecção",
+      "level": 3
+    },
+    {
+      "line": 374,
+      "title": "17. Volvo de sigmoide e ceco segundo a ASCRS: por que um não é tratado como o outro",
+      "level": 2
+    },
+    {
+      "line": 378,
+      "title": "17.1. Sigmoide sem isquemia",
+      "level": 3
+    },
+    {
+      "line": 384,
+      "title": "17.2. Ceco",
+      "level": 3
+    },
+    {
+      "line": 388,
+      "title": "17.3. Megacólon chagásico e realidade brasileira",
+      "level": 3
+    },
+    {
+      "line": 394,
+      "title": "18. Pseudo-obstrução colônica aguda: algoritmo que evita tratamento automático",
+      "level": 2
+    },
+    {
+      "line": 398,
+      "title": "18.1. Quando medidas conservadoras fazem sentido",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "18.2. Neostigmina: farmacologia que explica a monitorização",
+      "level": 3
+    },
+    {
+      "line": 415,
+      "title": "18.3. Diâmetro cecal: alerta, não botão automático de cirurgia",
+      "level": 3
+    },
+    {
+      "line": 421,
+      "title": "19. Neoplasia colorretal obstrutiva: cirurgia, estoma e stent são decisões diferentes",
+      "level": 2
+    },
+    {
+      "line": 435,
+      "title": "19.1. Por que uma anastomose é mais perigosa em paciente instável?",
+      "level": 3
+    },
+    {
+      "line": 439,
+      "title": "20. Obstrução no pós-operatório e reintrodução da alimentação",
+      "level": 2
+    },
+    {
+      "line": 447,
+      "title": "20.1. Prevenção de recorrência aderencial",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "21. Casos integradores avançados",
+      "level": 2
+    },
+    {
+      "line": 453,
+      "title": "Caso F — Brida com transição e líquido livre: observar ou operar?",
+      "level": 3
+    },
+    {
+      "line": 459,
+      "title": "Caso G — Obstrução tumoral à esquerda sem perfuração",
+      "level": 3
+    },
+    {
+      "line": 465,
+      "title": "Caso H — Distensão colônica e bradicardia: avaliar neostigmina",
+      "level": 3
+    },
+    {
+      "line": 471,
+      "title": "Caso I — Volvo cecal: evitar a armadilha do sigmoide",
+      "level": 3
+    },
+    {
+      "line": 477,
+      "title": "Caso J — Íleo biliar em idosa",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "22. Questões avançadas com análise das alternativas",
+      "level": 2
+    },
+    {
+      "line": 485,
+      "title": "Questão 7 — Observação de bridas",
+      "level": 3
+    },
+    {
+      "line": 497,
+      "title": "Questão 8 — Obstrução neoplásica esquerda",
+      "level": 3
+    },
+    {
+      "line": 509,
+      "title": "Questão 9 — Ogilvie e neostigmina",
+      "level": 3
+    },
+    {
+      "line": 521,
+      "title": "Questão 10 — Critério de risco de isquemia",
+      "level": 3
+    },
+    {
+      "line": 533,
+      "title": "Questão 11 — Volvo cecal",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "Questão 12 — Íleo biliar",
+      "level": 3
+    },
+    {
+      "line": 557,
+      "title": "23. Matriz de autossuficiência a ser validada por revisor independente",
+      "level": 2
+    },
+    {
+      "line": 575,
+      "title": "24. Pendências e fronteiras editoriais",
+      "level": 2
+    }
+  ],
+  "references": [
+    "Na listagem prévia do repositório \\`arantes225/luria\\`, não foi encontrada pasta pública denominada obstrução intestinal. O tema 102 aparece no cronograma-base e no inventário do Lote 5 como ainda não redigido. Isso **não comprova inexistência de todo conteúdo relacionado**: as apostilas futuras de hérnias, pós-operatório e cirurgia digestiva poderão ter sobreposição. O recorte desta obra será a **síndrome de obstrução intestinal e seu manejo de emergência**, com capítulos de etiologias que ensinem reconhecimento e conduta, sem substituir monografias de hérnias e tumores.",
+    "A referência visual \\`apostilas/amniorrexe-prematura/index.html\\` foi inspecionada no mesmo processo editorial do lote. A versão aqui redigida permanece em Markdown sob \\`_rascunhos/\\`, sem substituir HTML ou \\`content.json\\` publicados e sem inserir imagens clínicas ainda não aprovadas no Admin.",
+    "**Referência principal do Drive:** \\`12 - ABDOME AGUDO OBSTRUTIVO.pdf\\` (~7,7 mil caracteres de texto extraído). Inclui fisiopatologia, classificação, tríade clínica, investigação por imagem, bridas, tumores, volvo, fecaloma, DII, Ogilvie, síndrome da artéria mesentérica superior e causas raras. Funciona como *benchmark de abrangência temática*, não como norma atual de intervenção. Contém algumas simplificações que precisam ser corrigidas: radiografia em três incidências como passo obrigatório; indicação automática de cirurgia por qualquer tumor sem estratificação; prazo de observação de bridas sem ressalva de isquemia; descrição de pseudo-obstrução que confunde laxativos e descompressão; generalização de “obstrução baixa cursa com acidose”; critérios cirúrgicos de volvo que dependem de viabilidade e localização. Nenhum trecho ou figura do PDF foi copiado.",
+    "**Referência secundária:** \\`HÉRNIAS.pdf\\`, material breve sobre encarceramento, estrangulamento e técnica de parede abdominal. Permite planejar interface com uma apostila separada de hérnias. A abordagem aqui ficará centrada na **hérnia como causa de obstrução e risco de isquemia**.",
+    "**Referência terciária:** \\`03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf\\`, com seção sobre hérnia interna após derivação gástrica, clínica intermitente e limitações da TC. Útil para identificar a necessidade de capítulo de alto risco pós-bariátrica, evitando concluir que TC normal exclui hérnia interna se a suspeita clínica for alta.",
+    "**Autoria:** os arquivos apresentam marcas de redistribuição e/ou autoria individual, sem comprovação de vínculo institucional com Estratégia MED. É incorreto denominá-los material oficial do cursinho. A comparação foi estrutural e crítica, não cópia textual.",
+    "1. **WSES Bologna guidelines**, ten Broek RPG et al. *Bologna guidelines for diagnosis and management of adhesive small bowel obstruction: 2017 update.* *World J Emerg Surg*. 2018;13:24. DOI 10.1186/s13017-018-0185-2. https://pmc.ncbi.nlm.nih.gov/articles/PMC6006983/. Foco em **obstrução de intestino delgado por aderências** e não em todos os tipos de obstrução.",
+    "2. **American College of Radiology**, *ACR Appropriateness Criteria: Suspected Small-Bowel Obstruction*, https://acsearch.acr.org/docs/69476/Narrative/. Indicações de TC com contraste IV e exames alternativos conforme cenário.",
+    "3. **Eastern Association for the Surgery of Trauma (EAST)**, *Small-Bowel Obstruction: Evaluation and Management*, https://www.east.org/education-resources/practice-management-guidelines/details/smallbowel-obstruction-evaluation-and-management-of. Diretriz de cirurgia de urgência, anterior à WSES atualizada; comparar sem tratá-la como publicação recente.",
+    "4. Para obstrução colorretal por neoplasia, volvos, pseudo-obstrução colônica aguda e cenários pós-bariátricos, serão consultadas diretrizes específicas antes de consolidar tratamentos e indicações invasivas. Estas entidades não devem ser indevidamente apresentadas como cobertura já conferida.",
+    "**Contexto brasileiro:** adaptar a classificação, as opções de TC, disponibilidade de cirurgia/endoscopia e transferência à realidade assistencial; revisar protocolos do serviço e publicações nacionais verificáveis antes de validar condutas farmacológicas.",
+    "| Competência | Resumo do Drive | Meta da LURIA |",
+    "|---|---|---|",
+    "| Anatomia e mecanismo | Lista de achados | Explicar pressão, distensão, perfusão e isquemia |",
+    "| Diagnóstico clínico | Tríade | Cronologia, localização, exame de hérnias, causas atípicas |",
+    "| Causas de delgado | Bridas e hérnias | Diferenciar aderência, hérnia, tumor, Crohn, íleo biliar |",
+    "| Causas de cólon | Tumor, volvo | Risco de perfuração, ceco, decomposição endoscópica seletiva |",
+    "| Isquemia/estrangulamento | Alerta genérico | Sintomas, TC, progressão e cirurgia sem atraso |",
+    "| Imagem | RX em 3 incidências | Tomografia com contraste IV segundo indicação/ACR |",
+    "| Bridas | Jejum/sonda/hidratação | Seleção para observação, contraste hidrossolúvel e 72 h |",
+    "| Alça fechada | Menção isolada | Fisiopatologia e urgência de controle |",
+    "| Íleo/Ogilvie | Misturados | Separar falta de propulsão de obstrução mecânica |",
+    "| Tumor | Cirurgia automática | Risco e opções conforme local, estabilidade e equipe |",
+    "| Complicações | Pouca explicação | Aspiração, choque, distúrbios hidroeletr., perfuração |",
+    "| Estudo autônomo | Ausente | Casos, questões, tabelas e fluxo original |"
+  ],
+  "external_links": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6006983/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://acsearch.acr.org/docs/69476/Narrative/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.east.org/education-resources/practice-management-guidelines/details/smallbowel-obstruction-evaluation-and-management-of",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34016826/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.ascrsu.com/ascrs/view/ASCRS-Evidence-Based-Guidelines-and-Expert-Consensus/3982019/all/Management_of_Colonic_Volvulus_and_Acute_Colonic_Pseudo_Obstruction__2021_",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1097/DCR.0000000000002323",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 3,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Mulher de 58 anos, três laparotomias prévias, procura emergência por cólica, distensão, vômitos e obstipação há um dia. PA estável, sem defesa, lactato não elevado, TC demonstra obstrução de delgado com transição e sem sinais de sofrimento/alça fechada. **Hipótese:** ASBO não complicada. **Raciocínio:** cirurgia prévia aumenta risco; ausência de sinais críticos permite considerar observação em serviço cirúrgico. **Conduta:** jejum, suporte IV, descompressão conforme sintomas, monitorização e eventual desafio de contraste hidrossolúvel, com reavaliação. **Por que importa:** a cirurgia nem sempre é primeiro passo, mas a observação só é segura com critérios e vigilância.",
+      "pattern": 0
+    },
+    {
+      "text": "Mulher de 77 anos tem vômitos, dor intensa contínua, distensão e pequeno abaulamento doloroso na região femoral direita, não redutível. Está taquicárdica e com defesa abdominal. **Hipótese:** obstrução por hérnia femoral estrangulada até prova em contrário. **Exames:** laboratório e imagem apenas se não atrasarem decisão emergencial em cenário inequívoco. **Conduta:** ressuscitação e exploração cirúrgica urgente conforme equipe; não tentar redução agressiva desassistida. **Por que importa:** uma hérnia pequena pode ser uma emergência vascular intestinal.",
+      "pattern": 0
+    },
+    {
+      "text": "Homem de 81 anos, constipação crônica, distensão abdominal marcante e ausência de eliminação de gases. Está estável, sem peritonite. Imagem sugere volvo de sigmoide. **Raciocínio:** se não há isquemia ou perfuração, discutir destorção/descompressão endoscópica por equipe habilitada e planejar prevenção definitiva pela elevada recorrência. **Por que importa:** volvo de sigmoide viável difere de volvo de ceco e de volvo necrótico.",
+      "pattern": 0
+    },
+    {
+      "text": "**Referência terciária:** \\`03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf\\`, com seção sobre hérnia interna após derivação gástrica, clínica intermitente e limitações da TC. Útil para identificar a necessidade de capítulo de alto risco pós-bariátrica, evitando concluir que TC normal exclui hérnia interna se a suspeita clínica for alta.",
+      "pattern": 1
+    },
+    {
+      "text": "1. **WSES Bologna guidelines**, ten Broek RPG et al. *Bologna guidelines for diagnosis and management of adhesive small bowel obstruction: 2017 update.* *World J Emerg Surg*. 2018;13:24. DOI 10.1186/s13017-018-0185-2. https://pmc.ncbi.nlm.nih.gov/articles/PMC6006983/. Foco em **obstrução de intestino delgado por aderências** e não em todos os tipos de obstrução. 2. **American College of Radiology**, *ACR Appropriateness Criteria: Suspected Small-Bowel Obstruction*, https://acsearch.acr.org/docs/69476/Narrative/. Indicações de TC com contraste IV e exames alternativos conforme cenário. 3. **Eastern Association for the Surgery of Trauma (EAST)**, *Small-Bowel Obstruction: Evaluation and Management*, https://www.east.org/education-resources/practice-management-guidelines/details/smallbowel-obstruction-evaluation-and-management-of. Diretriz de cirurgia de urgência, anterior à WSES atualizada; comparar sem tratá-la como publicação recente. 4. Para obstrução colorretal por neoplasia, volvos, pseudo-obstrução colônica aguda e cenários pós-bariátricos, serão consultadas diretrizes específicas antes de consolidar tratamentos e indicações invasivas. Estas entidades não devem ser indevidamente apresentadas como cobertura já conferida.",
+      "pattern": 1
+    },
+    {
+      "text": "**Parcial:** algum trânsito pode persistir, de modo que a pessoa ainda elimina gases ou fezes. **Completa:** não há progressão efetiva pelo ponto de obstrução; entretanto, fezes distais podem ser eliminadas no início, o que impede concluir que “evacuar uma vez exclui obstrução”. Relevância depende de grau, perfusão, evolução e causa.",
+      "pattern": 1
+    },
+    {
+      "text": "**Lote:** 5 — tema 102 de 260 · **Área:** Cirurgia Geral e Emergências · **Status:** manuscrito original **EM ELABORAÇÃO**, não aprovado e não publicado · **Etapa zero:** 14/10/2026.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Lote:** 5 — tema 102 de 260 · **Área:** Cirurgia Geral e Emergências · **Status:** manuscrito original **EM ELABORAÇÃO**, não aprovado e não publicado · **Etapa zero:** 14/10/2026."
+    },
+    {
+      "text": "**Propósito:** ensinar a reconhecer obstrução verdadeira, diferenciar delgado de cólon, separar causas mecânicas de íleo/pseudo-obstrução e decidir com segurança quando observar, descomprimir, operar ou encaminhar. O texto não substitui protocolo assistencial de cirurgia de urgência ou revisão por cirurgião habilitado."
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "sha": "235a9e2aaf8a92b713f00af74c09e57909211ff1",
+  "path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "avaliacao-vitalidade-fetal--235a9e2aaf",
+  "title": "Avaliação da vitalidade fetal",
+  "format": ".html",
+  "chars_estimated": 57390,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "1. Princípios fisiológicos"
+    },
+    {
+      "title": "O que cada método enxerga?"
+    },
+    {
+      "title": "2. Quem deve receber vigilância anteparto?"
+    },
+    {
+      "title": "3. Movimentos fetais"
+    },
+    {
+      "title": "O que importa de verdade"
+    },
+    {
+      "title": "Contagem estruturada"
+    },
+    {
+      "title": "Conduta"
+    },
+    {
+      "title": "4. Cardiotocografia anteparto / Nonstress test"
+    },
+    {
+      "title": "O que o exame registra?"
+    },
+    {
+      "title": "Leitura sistemática em cinco passos"
+    },
+    {
+      "title": "Reatividade"
+    },
+    {
+      "title": "Reativa × não reativa"
+    },
+    {
+      "title": "5. Como ler os parâmetros da FCF"
+    },
+    {
+      "title": "Linha de base"
+    },
+    {
+      "title": "Variabilidade"
+    },
+    {
+      "title": "Acelerações"
+    },
+    {
+      "title": "Desacelerações"
+    },
+    {
+      "title": "Roteiro de leitura do traçado"
+    },
+    {
+      "title": "6. Perfil Biofísico Fetal"
+    },
+    {
+      "title": "Interpretação"
+    },
+    {
+      "title": "PBF modificado"
+    },
+    {
+      "title": "Como pontuar e interpretar um exame real"
+    },
+    {
+      "title": "7. Líquido amniótico"
+    },
+    {
+      "title": "Fisiologia"
+    },
+    {
+      "title": "Como medir"
+    },
+    {
+      "title": "Oligodrâmnio"
+    },
+    {
+      "title": "Polidrâmnio"
+    },
+    {
+      "title": "8. Dopplervelocimetria obstétrica"
+    },
+    {
+      "title": "Artéria umbilical"
+    },
+    {
+      "title": "Artéria cerebral média"
+    },
+    {
+      "title": "Relação cerebroplacentária"
+    },
+    {
+      "title": "Ducto venoso"
+    },
+    {
+      "title": "Técnica importa"
+    },
+    {
+      "title": "9. RCF: como o Doppler muda a vigilância"
+    },
+    {
+      "title": "10. Situações especiais"
+    },
+    {
+      "title": "Pré-eclâmpsia e hipertensão"
+    },
+    {
+      "title": "Diabetes"
+    },
+    {
+      "title": "Gestação múltipla"
+    },
+    {
+      "title": "Pós-datismo"
+    },
+    {
+      "title": "Redução de movimentos"
+    },
+    {
+      "title": "11. CTG intraparto: um capítulo diferente"
+    },
+    {
+      "title": "Comece pelas contrações"
+    },
+    {
+      "title": "Desacelerações: a relação com as contrações"
+    },
+    {
+      "title": "Desaceleração precoce"
+    },
+    {
+      "title": "Desaceleração tardia"
+    },
+    {
+      "title": "Desaceleração variável"
+    },
+    {
+      "title": "Classificação em três categorias"
+    },
+    {
+      "title": "Medidas intrauterinas"
+    },
+    {
+      "title": "12. Integração dos métodos"
+    },
+    {
+      "title": "Teste alterado: como escolher o próximo passo"
+    },
+    {
+      "title": "13. Armadilhas frequentes"
+    },
+    {
+      "title": "14. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — Redução de movimentos, CTG não reativa"
+    },
+    {
+      "title": "Caso 2 — RCF com AU alterada"
+    },
+    {
+      "title": "Caso 3 — RCF com diástole reversa"
+    },
+    {
+      "title": "Caso 4 — PBF 6/10"
+    },
+    {
+      "title": "Caso 5 — Polidrâmnio leve idiopático"
+    },
+    {
+      "title": "Caso 6 — CTG intraparto com tardias recorrentes"
+    },
+    {
+      "title": "Interpretação aplicada — cinco decisões que mudam a conduta"
+    },
+    {
+      "title": "1. Prematuridade: duas acelerações de 10 × 10"
+    },
+    {
+      "title": "2. Perfil biofísico: dois resultados 8/10, significados diferentes"
+    },
+    {
+      "title": "3. Restrição de crescimento: CTG reativa não apaga Doppler grave"
+    },
+    {
+      "title": "4. Intraparto: taquissistolia com desacelerações tardias"
+    },
+    {
+      "title": "5. Testes discordantes: primeiro confirme a pergunta e a qualidade do sinal"
+    },
+    {
+      "title": "15. Revisão de alto rendimento"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "CTG: interpretar todos os parâmetros"
+    },
+    {
+      "title": "Doppler e perfil biofísico"
+    },
+    {
+      "title": "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade"
+    },
+    {
+      "title": "16.1 Do oxigênio materno ao metabolismo fetal: onde pode ocorrer falha"
+    },
+    {
+      "title": "16.2 Cardiotocografia anteparto: atividade neural e reatividade"
+    },
+    {
+      "title": "16.3 Desacelerações: a forma não substitui o contexto"
+    },
+    {
+      "title": "16.4 Perfil biofísico fetal: comportamento, oxigenação e temporalidade"
+    },
+    {
+      "title": "16.5 Líquido amniótico: por que o volume informa algo, mas não explica tudo"
+    },
+    {
+      "title": "16.6 Doppler: três territórios e três perguntas fisiológicas"
+    },
+    {
+      "title": "16.7 Testes normais e anormais: limites da previsibilidade"
+    },
+    {
+      "title": "16.8 Um caso com dois testes aparentemente contraditórios"
+    },
+    {
+      "title": "15A. Segurança da cardiotocografia: qualidade do sinal, pulso materno e decisões proporcionais"
+    },
+    {
+      "title": "Por que o monitor pode registrar a frequência cardíaca errada?"
+    },
+    {
+      "title": "Checklist de conferência antes de interpretar uma linha de base"
+    },
+    {
+      "title": "O que muda entre CTG anteparto e CTG intraparto?"
+    },
+    {
+      "title": "Taquissistolia, hipóxia e medidas conservadoras: raciocínio causal"
+    },
+    {
+      "title": "Uma CTG reativa não anula um Doppler umbilical grave"
+    },
+    {
+      "title": "Quatro casos com tomada de decisão"
+    },
+    {
+      "title": "Autoteste: responda explicando o mecanismo"
+    },
+    {
+      "title": "Referências prioritárias"
+    },
+    {
+      "title": "Raciocínio avançado e situações de risco"
+    },
+    {
+      "title": "Cardiotocografia: cinco perguntas obrigatórias"
+    },
+    {
+      "title": "Perfil biofísico e líquido amniótico"
+    },
+    {
+      "title": "Doppler em crescimento restrito"
+    }
+  ],
+  "reference_entries": [
+    "HC-UFTM/Ebserh. Protocolo de Avaliação da Vitalidade Fetal Anteparto, versão 2, 2025.",
+    "Ministério da Saúde. Gestação de Alto Risco: manual técnico e documentos correlatos.",
+    "ACOG. Antepartum Fetal Surveillance. Practice Bulletin 229; reaffirmed 2024.",
+    "ACOG. Indications for Outpatient Antenatal Fetal Surveillance. Committee Opinion nº 828, 2021.",
+    "ACOG. Intrapartum Fetal Heart Rate Monitoring: Interpretation and Management. Clinical Practice Guideline, 2025.",
+    "SMFM Consult Series #52. Diagnosis and management of fetal growth restriction (2020; reafirmada em 2024).",
+    "SMFM Consult Series #46. Evaluation and management of polyhydramnios; reaffirmed 2024.",
+    "ISUOG Practice Guidelines (updated): use of Doppler velocimetry in obstetrics.",
+    "Protocolos de Medicina Fetal e Obstetrícia da Rede Ebserh/HU Brasil.",
+    "NICE. Fetal monitoring in labour, NG229 (2022).",
+    "PhantomSteve. CTG Output (fotografia de traçado anteparto), CC BY-SA 3.0."
+  ],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://media.springernature.com",
+    "https://commons.wikimedia.org",
+    "https://upload.wikimedia.org",
+    "https://pdres.s3.amazonaws.com",
+    "https://www.cookmedical.com",
+    "https://www.ncbi.nlm.nih.gov;",
+    "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+    "https://commons.wikimedia.org/wiki/File:CTG_Output.jpg",
+    "https://creativecommons.org/licenses/by-sa/3.0/",
+    "https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+    "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+    "https://www.nice.org.uk/guidance/ng229/chapter/recommendations",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2025/10/intrapartum-fetal-heart-rate-monitoring-interpretation-and-management"
+  ],
+  "embedded_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+      "alt": "Cardiotocografia real anteparto; A: frequência cardíaca fetal, B: marcação de movimento pela gestante, C: movimentos fetais registrados e D: contrações uterinas"
+    }
+  ],
+  "samples": [
+    {
+      "text": "Depende da doença, da idade gestacional em que o parto seria uma opção e da magnitude do risco. Em muitos cenários, a vigilância inicia por volta de 32 semanas; em risco alto pode começar antes."
+    },
+    {
+      "text": "Confira velocidade do papel, qualidade do sinal e possibilidade de registrar pulso materno. Estime linha de base excluindo acelerações e desacelerações; descreva variabilidade, acelerações e desacelerações, relacionando estas últimas às contrações. Só depois formule a interpretação. “Reativo” não é sinônimo de “qualquer traçado com uma subida”. No NST a partir de 32 semanas, procuram-se pelo menos duas acelerações de 15 bpm com 15 segundos; antes de 32 semanas utiliza-se habitualmente 10 bpm por 10 segundos. A observação pode precisar alcançar 40 minutos por ciclo de sono."
+    },
+    {
+      "text": "Gestação de 34 semanas: NST reativo, quatro movimentos corporais, extensão seguida de flexão, maior bolsão vertical de 3 cm e nenhum episódio respiratório de 30 segundos durante observação completa."
+    },
+    {
+      "text": "Gestante de 35 semanas relata redução importante dos movimentos. CTG por 20 minutos mostra basal 140, variabilidade moderada, sem desacelerações e apenas uma aceleração. A conduta não é “cesárea por sofrimento”: prolongar a avaliação, considerar estímulo e complementar com PBF/USG conforme risco."
+    },
+    {
+      "text": "32 semanas, PFE p2, AU com IP >p95 e diástole ainda presente. Isso representa insuficiência placentária, mas não é o mesmo risco de diástole ausente/reversa. Intensifique vigilância e programe timing conforme evolução."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

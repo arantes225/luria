@@ -1,0 +1,389 @@
+{
+  "sha": "303f3d81253608067bc5eb247650f280af1f795e",
+  "path": "apostilas/_rascunhos/lote-07-aula-121-itu-pielonefrite.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-11-demensias-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--303f3d8125",
+  "title": "LURIA — Lote 07 / Aula 121",
+  "format": ".md",
+  "chars_estimated": 83235,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 07 / Aula 121"
+    },
+    {
+      "title": "Infecção do trato urinário e pielonefrite"
+    },
+    {
+      "title": "1. Bases anatômicas e fisiológicas"
+    },
+    {
+      "title": "2. Conceitos essenciais e classificação"
+    },
+    {
+      "title": "3. Etiopatogenia"
+    },
+    {
+      "title": "4. Raciocínio diagnóstico"
+    },
+    {
+      "title": "5. Tratamento: princípios"
+    },
+    {
+      "title": "6. Armadilhas clínicas"
+    },
+    {
+      "title": "7. Matriz de expansão obrigatória (não concluída)"
+    },
+    {
+      "title": "8. Referências verificadas"
+    },
+    {
+      "title": "Ampliação didática — avaliação etiológica, microbiologia e terapêutica"
+    },
+    {
+      "title": "9. Registro da leitura comparativa (etapa zero)"
+    },
+    {
+      "title": "10. O rim e as defesas urinárias — aprofundamento do funcionamento normal"
+    },
+    {
+      "title": "10.1. O rim tem função muito maior que produzir urina"
+    },
+    {
+      "title": "10.2. Barreira urotelial e imunidade inata"
+    },
+    {
+      "title": "10.3. A próstata altera a farmacologia do tratamento"
+    },
+    {
+      "title": "10.4. Por que a obstrução transforma a infecção?"
+    },
+    {
+      "title": "11. Microbiologia: do agente ao antibiograma"
+    },
+    {
+      "title": "11.1. Via ascendente e fatores de virulência"
+    },
+    {
+      "title": "11.2. Cálculos de infecção e urease"
+    },
+    {
+      "title": "11.3. Cateter, biofilme e colonização"
+    },
+    {
+      "title": "11.4. O antibiograma responde a uma pergunta delimitada"
+    },
+    {
+      "title": "12. Reconhecer síndromes em vez de decorar o termo “ITU”"
+    },
+    {
+      "title": "13. Clínica: como conectar sintoma, fisiopatologia e probabilidade"
+    },
+    {
+      "title": "13.1. Cistite aguda típica"
+    },
+    {
+      "title": "13.2. Pielonefrite"
+    },
+    {
+      "title": "13.3. Situações atípicas"
+    },
+    {
+      "title": "13.4. Sintoma de alarme que exige reavaliação"
+    },
+    {
+      "title": "14. Exames: decidir o que perguntar antes de solicitar o teste"
+    },
+    {
+      "title": "14.1. Urina tipo 1 (EAS)"
+    },
+    {
+      "title": "14.2. Urocultura: coleta e interpretação"
+    },
+    {
+      "title": "14.3. Quando cultura é fundamental"
+    },
+    {
+      "title": "14.4. Hemocultura e outros exames"
+    },
+    {
+      "title": "15. Diagnóstico diferencial — não deixar que cultura esconda outra doença"
+    },
+    {
+      "title": "16. Imagem e controle de foco"
+    },
+    {
+      "title": "16.1. Cistite isolada"
+    },
+    {
+      "title": "16.2. Pielonefrite estável"
+    },
+    {
+      "title": "16.3. Obstrução infecciosa — urgência urológica"
+    },
+    {
+      "title": "16.4. Gestantes e crianças"
+    },
+    {
+      "title": "17. Terapêutica explicada a partir do sítio e do risco"
+    },
+    {
+      "title": "17.1. Primeiro estratifique, depois prescreva"
+    },
+    {
+      "title": "17.2. Cistite localizada: exemplos de regimes de adulto segundo EAU 2026"
+    },
+    {
+      "title": "17.3. Pielonefrite ambulatorial em adulto não gestante selecionado"
+    },
+    {
+      "title": "17.4. Pielonefrite que exige internação"
+    },
+    {
+      "title": "17.5. Quando mudar de IV para VO?"
+    },
+    {
+      "title": "17.6. Duração: interpretar em vez de decorar"
+    },
+    {
+      "title": "17.7. Princípio de descalonamento"
+    },
+    {
+      "title": "17.8. Segurança medicamentosa e exceções"
+    },
+    {
+      "title": "18. Populações especiais: o diagnóstico muda antes da prescrição"
+    },
+    {
+      "title": "18.1. Gestação: adaptação fisiológica, risco e vigilância"
+    },
+    {
+      "title": "18.2. Crianças: febre sem foco pode ser doença urinária"
+    },
+    {
+      "title": "18.3. Homens: próstata, obstrução e resistência"
+    },
+    {
+      "title": "18.4. Idosos e pessoas em instituições de longa permanência"
+    },
+    {
+      "title": "18.5. Cateter urinário: prevenção e avaliação de infecção associada"
+    },
+    {
+      "title": "18.6. Diabetes e imunossupressão"
+    },
+    {
+      "title": "18.7. Transplante renal e outras uropatias"
+    },
+    {
+      "title": "19. Bacteriúria assintomática: uma aula de prevenção quaternária"
+    },
+    {
+      "title": "Quem costuma precisar de rastreio/tratamento?"
+    },
+    {
+      "title": "Quem em geral não deve receber antibiótico só porque a cultura está positiva?"
+    },
+    {
+      "title": "Questão de comunicação com o paciente"
+    },
+    {
+      "title": "20. Recorrência, reinfecção e prevenção longitudinal"
+    },
+    {
+      "title": "20.1. O que perguntar antes de indicar profilaxia?"
+    },
+    {
+      "title": "20.2. Medidas comportamentais e escolhas informadas"
+    },
+    {
+      "title": "20.3. Quando encaminhar?"
+    },
+    {
+      "title": "21. Complicações por mecanismo"
+    },
+    {
+      "title": "21.1. Abscesso renal e perinéfrico"
+    },
+    {
+      "title": "21.2. Pielonefrite enfisematosa"
+    },
+    {
+      "title": "21.3. Injúria renal aguda e disfunção sistêmica"
+    },
+    {
+      "title": "21.4. Bacteremia, choque e consequências obstétricas"
+    },
+    {
+      "title": "21.5. Lesão renal pediátrica"
+    },
+    {
+      "title": "22. Algoritmos de atendimento para revisão rápida"
+    },
+    {
+      "title": "Algoritmo 1 — disúria em mulher não gestante"
+    },
+    {
+      "title": "Algoritmo 2 — febre, dor no flanco ou suspeita de pielonefrite"
+    },
+    {
+      "title": "Algoritmo 3 — cultura positiva sem sintomas"
+    },
+    {
+      "title": "Algoritmo 4 — infecção + cálculo obstrutivo"
+    },
+    {
+      "title": "23. Casos clínicos comentados — seis cenários que o texto deve permitir resolver"
+    },
+    {
+      "title": "Caso 1 — cistite aguda esporádica versus vulvovaginite"
+    },
+    {
+      "title": "Caso 2 — pielonefrite em adulta com cultura em andamento"
+    },
+    {
+      "title": "Caso 3 — litíase obstrutiva infectada: antibiótico isolado não basta"
+    },
+    {
+      "title": "Caso 4 — bacteriúria na gestação sem sintoma"
+    },
+    {
+      "title": "Caso 5 — idoso com delirium e cultura positiva"
+    },
+    {
+      "title": "Caso 6 — lactente febril com urina suspeita"
+    },
+    {
+      "title": "24. Questões autorais estilo residência — oito itens com comentário de cada alternativa"
+    },
+    {
+      "title": "Questão 1 — localização anatômica e escolha do medicamento"
+    },
+    {
+      "title": "Questão 2 — sepse e obstrução"
+    },
+    {
+      "title": "Questão 3 — cultura positiva no idoso"
+    },
+    {
+      "title": "Questão 4 — gestação"
+    },
+    {
+      "title": "Questão 5 — método de coleta pediátrica"
+    },
+    {
+      "title": "Questão 6 — urocultura e tratamento direcionado"
+    },
+    {
+      "title": "Questão 7 — uretrite ou cistite?"
+    },
+    {
+      "title": "Questão 8 — recorrência sem febre"
+    },
+    {
+      "title": "25. Pulo do Gato LURIA — revisão de alta utilidade"
+    },
+    {
+      "title": "26. Camada visual — dez candidatas com finalidade clínica (NÃO INCORPORADAS)"
+    },
+    {
+      "title": "27. Referências rastreáveis, precedência e limites"
+    },
+    {
+      "title": "28. Matriz de cobertura e teste de autossuficiência"
+    }
+  ],
+  "reference_entries": [
+    "1. Infectious Diseases Society of America. *2025 Guideline Update on Complicated Urinary Tract Infections*. https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/",
+    "2. European Association of Urology. *EAU Guidelines on Urological Infections*, versão 2026. https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+    "---",
+    "**Versão expandida:** 14/10/2026. O capítulo inicial foi preservado como introdução; os tópicos a seguir aprofundam mecanismos e condutas sem substituir o texto existente. **Não utilizar como protocolo assistencial pronto sem adequar doses, cultura, função renal e recomendações nacionais à realidade do serviço.**",
+    "**a) “10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf”** — aproximadamente 6,5 mil caracteres extraídos. É um resumo de cólica renal, hidronefrose, exames de imagem e urgências relacionadas a cálculos. Seu principal ponto aproveitável como **escopo** é separar cólica renal sem infecção de obstrução com infecção; nesta última, o texto destaca antibiótico e descompressão por cateter ureteral (duplo J) ou nefrostomia, seguido de tratamento definitivo do cálculo. Também aborda a possibilidade de cultura inicial falsamente tranquilizadora. Sua linguagem é predominantemente esquemática, sem explicar e",
+    "**b) “02 - ASSISTENCIA AO PRE-NATAL.pdf”** — texto extenso de pré-natal, com indicação de exames iniciais e referência a urina tipo 1 e urocultura. O foco é obstétrico amplo, não a infectologia urinária. Há detalhes perinatais e calendários que podem estar desatualizados em relação a publicações do Ministério da Saúde posteriores à sua elaboração. Foi utilizado para mapear a presença de bacteriúria assintomática no seguimento da gestação, não para definir isoladamente a conduta clínica contemporânea. **Autoria institucional não verificada.**",
+    "**Comparação de cobertura com a LURIA:** o rascunho original da aula 121 continha fisiologia introdutória, distinção básica entre cistite e pielonefrite e noções de cultura/tratamento, mas não ensinava coleta correta, diagnóstico em populações especiais, sepse obstrutiva, farmacologia por síndrome, prevenção de recorrência, seguimento, casos e questões. Estes são os alvos do presente desenvolvimento original. Não copiar figuras, texto nem tabelas dos PDFs.",
+    "**Fontes primárias clínicas deste desenvolvimento:** EAU *Urological Infections* edição 2026; IDSA 2025 *Complicated UTI* (seleção, troca IV/VO e duração); IDSA 2019 *Asymptomatic Bacteriuria*; FEBRASGO protocolo Obstetrícia nº 9, 3ª edição de 2024; SBP Nefrologia, *Infecção urinária: diagnóstico, investigação e prevenção* (2023). A EAU oferece algoritmo de cistite e pielonefrite e exemplos de posologia para adultos, **não** é normativa única brasileira. As rotinas de gestação diferem entre instituições, inclusive no calendário de novas uroculturas; sempre nomear a diretriz empregada.",
+    "**Mudança de linguagem entre diretrizes:** a EAU 2026 organiza em ITU **localizada** e **sistêmica**, ambas com fatores de risco que podem dificultar resposta. A IDSA 2025, por sua vez, publica recomendações de “complicated UTI” com escopo e critérios próprios. Evitar assumir que o termo “complicada” de um guideline inclui exatamente os mesmos pacientes do outro. A pergunta clínica prática é: existe comprometimento além da bexiga? Há sepse, obstrução ou hospedeiro especial? Uma paciente com cistite e diabetes controlado não deve receber automaticamente um antibiótico de amplo espectro apenas p",
+    "**Leucócitos/piúria:** marcam inflamação, mas têm especificidade limitada. Ausência de piúria em contexto de bacteriúria típica pode tornar ITU menos provável, dependendo do cenário; não são regra de exclusão em todo imunossuprimido.  ",
+    "**Esterase leucocitária:** identifica indiretamente leucócitos; falsos positivos e negativos ocorrem.  ",
+    "**Nitrito:** certas bactérias convertem nitrato em nitrito; seu achado favorece bacteriúria por organismos nitrato-redutores, mas ausência não descarta ITU. Urina armazenada pouco tempo na bexiga, baixa ingestão de nitrato e espécie bacteriana diferente podem gerar nitrito negativo.  ",
+    "**Hemácias:** podem acompanhar cistite e cálculo; hematuria persistente merece avaliação independente.  ",
+    "**Proteína:** traços podem acompanhar febre/infecção, mas proteinúria persistente requer outra investigação.  ",
+    "**Cilindros leucocitários:** podem apoiar inflamação renal em contexto apropriado, não são obrigatórios nem altamente sensíveis para diagnosticar pielonefrite.",
+    "**Exercício mental:** mulher de 24 anos com disúria, corrimento e dor à relação sexual não pode ser rotulada como cistite típica apenas pela disúria. O conjunto pede considerar IST/vulvovaginite, teste gestacional quando apropriado e coleta dirigida.",
+    "**Se cistite típica sem gravidade em mulher não gestante:** privilegiar opções de baixo impacto ecológico e eficácia vesical, conforme resistência local.  ",
+    "**Se pielonefrite:** requer nível de antibiótico renal e sistêmico; nitrofurantoína e fosfomicina oral em dose única não devem ser escolhidas.  ",
+    "**Se sepse:** avaliar ambiente hospitalar, ressuscitação e antibiótico parenteral com probabilidade elevada de atividade inicial.  ",
+    "**Se obstrução:** acrescentar descompressão urgente.  ",
+    "**Se cultura define agente:** ajustar para fármaco mais estreito efetivo, observando sítio e dose.",
+    "*Tabela educacional de opções, não prescrição automática brasileira. Doses variam por formulação; verificar bula nacional, acesso, função renal, idade, gestação e sensibilidade.*",
+    "**Discussão clínica:** o fato de fosfomicina ser administrada em dose única favorece adesão, mas não a torna equivalente a um curso de tratamento para pielonefrite. A nitrofurantoína tem alta concentração urinária, mas níveis insuficientes no tecido renal e próstata. O trimetoprima-sulfametoxazol tem atividade variável e risco de interações, especialmente em idosos, insuficiência renal e pacientes que usam bloqueadores do sistema renina-angiotensina.",
+    "**Nitrofurantoína e rim:** diretriz EAU considera contraindicada quando taxa de filtração estimada <30 mL/min/1,73 m². A decisão real depende da formulação e de normas farmacológicas locais. Não empregar sem checar função renal quando houver suspeita de disfunção.",
+    "**Não generalizar** a caso de abscesso, obstrução não resolvida, prostatite bacteriana aguda, imunossupressão importante, foco endovascular, resposta inadequada ou agentes de exposição tecidual incerta. Em homem com ITU febril e suspeita de prostatite, curso de 10–14 dias ou diferente conforme síndrome e diretriz pode ser necessário. Persistência de febre além de 48–72 h demanda reavaliação de suscetibilidade, foco, imagem e outras hipóteses antes de apenas prolongar automaticamente.",
+    "- Fluoroquinolonas: evitar uso rotineiro em cistite simples; verificar histórico de tendinopatia, interações, QT, efeitos no SNC e outras advertências de bula.",
+    "- Nitrofurantoína: não para pielonefrite, sepse urinária ou prostatite; cautela com insuficiência renal, deficiência de G6PD, gravidez em períodos específicos e uso crônico.",
+    "- Fosfomicina oral: é opção para cistite em cenários apropriados; não confundir com formulações intravenosas disponíveis em outros países nem uso em ITU sistêmica.",
+    "- TMP-SMX: alergia a sulfonamidas, função renal, potássio, interações com warfarina e outros fármacos, gestação e risco de mielossupressão.",
+    "- Beta-lactâmicos: avaliar alergia verdadeira versus rótulo sem documentação, função renal e seleção de resistência; penicilina simples sem teste não deve ser resposta padrão a patógenos comunitários resistentes."
+  ],
+  "external_urls": [
+    "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/",
+    "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+    "https://www.febrasgo.org.br/",
+    "https://www.sbp.com.br/departamentos/nefrologia/documentos-cientificos/",
+    "https://www.sbp.com.br/pediatria-para-familias/doencas/infeccao-urinaria-na-crianca/",
+    "https://bvsms.saude.gov.br/",
+    "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**a) “10 - UROLOGIA - LITIASE NO PRONTO-SOCORRO.pdf”** — aproximadamente 6,5 mil caracteres extraídos. É um resumo de cólica renal, hidronefrose, exames de imagem e urgências relacionadas a cálculos. Seu principal ponto aproveitável como **escopo** é separar cólica renal sem infecção de obstrução com infecção; nesta última, o texto destaca antibiótico e descompressão por cateter ureteral (duplo J) ou nefrostomia, seguido de tratamento definitivo do cálculo. Também aborda a possibilidade de cultura inicial falsamente tranquilizadora. Sua linguagem é predominantemente esquemática, sem explicar em detalhe o mecanismo da sepse obstrutiva, a escol"
+    },
+    {
+      "text": "**Comparação de cobertura com a LURIA:** o rascunho original da aula 121 continha fisiologia introdutória, distinção básica entre cistite e pielonefrite e noções de cultura/tratamento, mas não ensinava coleta correta, diagnóstico em populações especiais, sepse obstrutiva, farmacologia por síndrome, prevenção de recorrência, seguimento, casos e questões. Estes são os alvos do presente desenvolvimento original. Não copiar figuras, texto nem tabelas dos PDFs."
+    },
+    {
+      "text": "**Fontes primárias clínicas deste desenvolvimento:** EAU *Urological Infections* edição 2026; IDSA 2025 *Complicated UTI* (seleção, troca IV/VO e duração); IDSA 2019 *Asymptomatic Bacteriuria*; FEBRASGO protocolo Obstetrícia nº 9, 3ª edição de 2024; SBP Nefrologia, *Infecção urinária: diagnóstico, investigação e prevenção* (2023). A EAU oferece algoritmo de cistite e pielonefrite e exemplos de posologia para adultos, **não** é normativa única brasileira. As rotinas de gestação diferem entre instituições, inclusive no calendário de novas uroculturas; sempre nomear a diretriz empregada."
+    },
+    {
+      "text": "A mucosa vaginal na mulher pré-menopausa é influenciada por estrogênio e microbiota, incluindo lactobacilos. Depois da menopausa, redução estrogênica pode modificar pH, microbiota e integridade mucosa e se associar a maior risco de episódios recorrentes. O benefício do estrogênio vaginal em determinadas mulheres após a menopausa se relaciona a esse mecanismo, embora contraindicações e escolhas individuais exijam avaliação."
+    },
+    {
+      "text": "| Síndrome | Padrão clínico | Exame-chave / limite | Consequência terapêutica | |---|---|---|---| | Bacteriúria assintomática | Cultura positiva, sem sintomas imputáveis à urina | Diagnóstico é microbiológico, interpretação depende da população | Geralmente não tratar, exceto gestação e determinados procedimentos endourológicos | | Cistite localizada | Disúria, urgência e frequência sem sinais sistêmicos | História típica pode bastar em mulher não gestante de baixo risco; cultura seletiva | Opções com elevada concentração vesical podem ser suficientes | | Pielonefrite/ITU sistêmica | Febre, calafrios, dor lombar, vômitos, mal-estar ou sepse |"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

@@ -1,0 +1,18 @@
+{
+  "ref": "origin/audit/enamed-7areas-lotes-finais-20261015",
+  "authoritative_lot11": "2026-10-15-lote11-corrigido",
+  "lot11_count": 18,
+  "final_lots_count": 55,
+  "mapping_version": "2026-10-15-lote11-audit2",
+  "mapping_coverage_self_reported": {
+    "mapped": 401,
+    "unmapped": 0,
+    "content_checked": 0
+  },
+  "js_vs_json_primary_mismatches": [],
+  "notes": [
+    "Para lote 11 foi usado o controle corrigido, que declara precedência sobre o genérico.",
+    "Estados declarados antigos foram preservados como evidência, sem sobrepor a observação de manuscritos em branches posteriores.",
+    "Uma observação de arquivo existente não muda automaticamente um campo de aprovação médica."
+  ]
+}

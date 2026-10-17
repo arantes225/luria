@@ -1,0 +1,121 @@
+{
+  "sha": "8a725ea1d9f2fb45fb0c28a6a95a263df8c1f790",
+  "path": "apostilas/valvopatias/content.json",
+  "branches": [
+    "origin/editorial/apostilas-lote-01-etapa-01-20261014"
+  ],
+  "in_main": false,
+  "key": "valvopatias--8a725ea1d9",
+  "title": "Valvopatias",
+  "format": ".json",
+  "chars_estimated": 25192,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "visao",
+      "title": "Visão geral"
+    },
+    {
+      "id": "fisiologia",
+      "title": "Fisiologia das quatro válvulas"
+    },
+    {
+      "id": "exame",
+      "title": "História e exame físico"
+    },
+    {
+      "id": "eco",
+      "title": "Ecocardiografia e integração diagnóstica"
+    },
+    {
+      "id": "ea",
+      "title": "Estenose aórtica"
+    },
+    {
+      "id": "ia",
+      "title": "Insuficiência aórtica"
+    },
+    {
+      "id": "em",
+      "title": "Estenose mitral"
+    },
+    {
+      "id": "im",
+      "title": "Insuficiência mitral"
+    },
+    {
+      "id": "direitas",
+      "title": "Tricúspide e pulmonar"
+    },
+    {
+      "id": "urgencias",
+      "title": "Descompensações e urgências"
+    },
+    {
+      "id": "proteses",
+      "title": "Próteses, anticoagulação e endocardite"
+    },
+    {
+      "id": "algoritmo",
+      "title": "Algoritmo prático de avaliação"
+    },
+    {
+      "id": "casos",
+      "title": "Casos integradores"
+    },
+    {
+      "id": "questoes",
+      "title": "Questões autorais comentadas"
+    },
+    {
+      "id": "referencias",
+      "title": "Referências e pendências"
+    }
+  ],
+  "reference_entries": [
+    "[\"2\",\"Referências e pendências\"]",
+    "[\"p\",\"Diretriz ESC/EACTS 2025 para manejo de valvopatias: https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/valvular-heart-disease . Conferir versão integral e atualizações antes de transformar limiares em indicação automática.\"]",
+    "[\"p\",\"Diretriz ACC/AHA 2020 para doença valvar: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923 . Usar como referência comparativa, respeitando atualizações.\"]",
+    "[\"p\",\"Sociedade Brasileira de Cardiologia: pesquisar e confrontar diretrizes nacionais de valvopatias e profilaxia de endocardite, incluindo data e validade da versão antes da certificação.\"]",
+    "[\"p\",\"Material de benchmark disponível no Drive: '03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf', lido apenas para identificar fronteira com insuficiência cardíaca; não é apostila específica de valvopatias e não foi reproduzido.\"]",
+    "[\"p\",\"STATUS: RASCUNHO INICIAL. Faltam aprofundamento até ≥60.000 caracteres didáticos úteis, validação científica atualizada, mais casos/questões, 10 visuais licenciados/autorais e teste de renderização. Não publicar.\"]"
+  ],
+  "external_urls": [
+    "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/valvular-heart-disease",
+    "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "section": "exame",
+      "text": "Síncope durante esforço, dor torácica típica, edema pulmonar, hipotensão, confusão, extremidades frias e queda de saturação são achados que exigem avaliação imediata, sobretudo diante de lesão conhecida. Febre persistente associada a novo sopro ou prótese valvar aumenta suspeita de endocardite, embora diagnóstico dependa de conjunto clínico, microbiologia e imagem."
+    },
+    {
+      "section": "ea",
+      "text": "Ausculta costuma revelar sopro sistólico ejetivo crescendo-decrescendo no foco aórtico, irradiando para carótidas, por vezes com pulso carotídeo de ascensão lenta. A gravidade ecocardiográfica clássica pode envolver Vmáx ≥4,0 m/s, gradiente médio ≥40 mmHg e área ≤1,0 cm², mas discordâncias por fluxo e tamanho corporal exigem avaliação integrada. Paciente com estenose aórtica grave sintomática necessita avaliação prioritária para intervenção valvar."
+    },
+    {
+      "section": "em",
+      "text": "O achado clássico é ruflar diastólico apical, frequentemente com estalido de abertura, melhor ouvido em decúbito lateral esquerdo. O ecocardiograma define área valvar, gradientes dependentes da frequência/fluxo, anatomia e trombos quando indicado. Em anatomia favorável e ausência de contraindicações, comissurotomia mitral percutânea pode ser opção; outros casos requerem cirurgia."
+    },
+    {
+      "section": "urgencias",
+      "text": "Não administrar indiscriminadamente vasodilatadores, grandes volumes ou diuréticos com base apenas no diagnóstico genérico 'valvopatia'. O efeito depende de pressão arterial, congestão, função ventricular, lesão específica e estado de perfusão. A estabilização deve ser conduzida por equipe habilitada em ambiente apropriado."
+    },
+    {
+      "section": "proteses",
+      "text": "Profilaxia antibiótica para endocardite não é recomendada indiscriminadamente a todos os portadores de sopro. É reservada a situações de alto risco e procedimentos específicos segundo diretriz aplicável. Febre persistente em paciente com prótese ou sinais de embolia demanda investigação clínica e hemoculturas antes de antibiótico quando possível e seguro."
+    }
+  ],
+  "stage": "conteúdo estruturado em branch; conferir renderer, revisão e integração",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

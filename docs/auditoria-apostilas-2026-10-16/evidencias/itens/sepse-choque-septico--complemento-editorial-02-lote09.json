@@ -1,0 +1,133 @@
+{
+  "key": "sepse-choque-septico--complemento-editorial-02-lote09",
+  "kind": "complemento-md",
+  "path": "apostilas/sepse-choque-septico/complemento-editorial-02-lote09.md",
+  "title": "Aula 161 · Complemento editorial 02 — Sepse e choque séptico",
+  "source_sha256": "e3d9bfd6c157c797b6b61bb87fbe065bf70073b8255c1a2dfaee043d8150d56e",
+  "chars_estimated": 12567,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "Aula 161 · Complemento editorial 02 — Sepse e choque séptico",
+      "level": 1
+    },
+    {
+      "line": 6,
+      "title": "1. SOFA e disfunção orgânica: o que efetivamente se avalia",
+      "level": 2
+    },
+    {
+      "line": 20,
+      "title": "2. A sequência clínica detalhada: reconhecer, tratar, revisar",
+      "level": 2
+    },
+    {
+      "line": 31,
+      "title": "3. Fluidos e perfusão: expandir com objetivo, não por reflexo",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "4. Antimicrobianos: escolher pelo foco e revisar",
+      "level": 2
+    },
+    {
+      "line": 54,
+      "title": "5. Controle do foco: decisão que muda o prognóstico",
+      "level": 2
+    },
+    {
+      "line": 57,
+      "title": "Vinheta: obstrução infectada",
+      "level": 3
+    },
+    {
+      "line": 60,
+      "title": "6. Ventilação, rins, coagulação e suporte adicional",
+      "level": 2
+    },
+    {
+      "line": 71,
+      "title": "7. Populações especiais e riscos de generalização",
+      "level": 2
+    },
+    {
+      "line": 80,
+      "title": "8. Erros frequentes de prova e de plantão",
+      "level": 2
+    },
+    {
+      "line": 90,
+      "title": "9. Checklist editorial para a integração",
+      "level": 2
+    },
+    {
+      "line": 102,
+      "title": "Referências e status",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Prescott HC et al. **Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026.** SCCM, publicada em 23/03/2026. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "2. Hospital Universitário da UFSC / Ebserh. **Protocolo de Sepse Adulto**, PS.PRT.COSEP.0002/24, versão 1, emissão 29/08/2024; revisão prevista para 29/08/2026. https://www.gov.br/ebserh-intensifica-assistencia-a-distancia-como-estrategia-de-combate-a-covid-19/pt-br/hospitais-universitarios/regiao-sul/hu-ufsc/governanca/colegiados-internos/comite-de-seguranca-do-paciente-cosep/sepse/protocolo-de-sepse-adulto.pdf/@@download/file",
+    "3. ILAS. **Implementação de Protocolo Gerenciado de Sepse — Protocolo Clínico**, rev. agosto 2018. Referência histórica brasileira para implantação institucional, não substitui a SSC 2026. https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf",
+    "**Nota metodológica:** recomendações externas são interpretadas editorialmente; validar a versão vigente do protocolo local. Este arquivo é complemento, não deve ser tratado como conteúdo clínico automaticamente aprovado."
+  ],
+  "external_links": [
+    {
+      "url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/ebserh-intensifica-assistencia-a-distancia-como-estrategia-de-combate-a-covid-19/pt-br/hospitais-universitarios/regiao-sul/hu-ufsc/governanca/colegiados-internos/comite-de-seguranca-do-paciente-cosep/sepse/protocolo-de-sepse-adulto.pdf/@@download/file",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ilas.org.br/wp-content/uploads/2022/02/protocolo-de-tratamento.pdf",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 2,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Quando considerar vasopressor?** A hipotensão que persiste apesar da ressuscitação inicial, ou que é profunda desde o início, exige noradrenalina precoce. A meta inicial de PAM na maioria dos adultos é 65 mmHg. Para idosos de 65 anos ou mais, a SSC 2026 sugere faixa inicial de 60–65 mmHg em vez de metas mais elevadas, levando em conta perfusão e história individual. Pacientes com hipertensão crônica ou lesão neurológica podem precisar de individualização.",
+      "pattern": 0
+    },
+    {
+      "text": "**Na primeira hora:** colher lactato e culturas quando possíveis sem provocar atraso significativo, iniciar antimicrobianos nos cenários de choque ou sepse provável/definida, e ressuscitar hipoperfusão com cristaloides e vasopressores conforme a resposta. A recomendação atual da SSC 2026 distingue **choque/provável sepse** (antimicrobianos imediatamente, idealmente em 1 h) de **possível sepse sem choque** (investigação rápida, até 3 h se a preocupação infecciosa persistir).",
+      "pattern": 1
+    },
+    {
+      "text": "**Nota metodológica:** recomendações externas são interpretadas editorialmente; validar a versão vigente do protocolo local. Este arquivo é complemento, não deve ser tratado como conteúdo clínico automaticamente aprovado.",
+      "pattern": 1
+    },
+    {
+      "text": "**Na primeira hora:** colher lactato e culturas quando possíveis sem provocar atraso significativo, iniciar antimicrobianos nos cenários de choque ou sepse provável/definida, e ressuscitar hipoperfusão com cristaloides e vasopressores conforme a resposta. A recomendação atual da SSC 2026 distingue **choque/provável sepse** (antimicrobianos imediatamente, idealmente em 1 h) de **possível sepse sem choque** (investigação rápida, até 3 h se a preocupação infecciosa persistir).",
+      "pattern": 2
+    },
+    {
+      "text": "**Nas horas seguintes:** buscar e controlar o foco, revisar resultados, responsividade a fluidos, necessidade de noradrenalina, débito urinário e oxigenação; decidir internação em ambiente compatível com gravidade. As diretrizes SSC 2026 sugerem, quando UTI é indicada, admissão em até 6 horas, conforme disponibilidade e fluxo local.",
+      "pattern": 2
+    },
+    {
+      "text": "**Quando considerar vasopressor?** A hipotensão que persiste apesar da ressuscitação inicial, ou que é profunda desde o início, exige noradrenalina precoce. A meta inicial de PAM na maioria dos adultos é 65 mmHg. Para idosos de 65 anos ou mais, a SSC 2026 sugere faixa inicial de 60–65 mmHg em vez de metas mais elevadas, levando em conta perfusão e história individual. Pacientes com hipertensão crônica ou lesão neurológica podem precisar de individualização.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Este capítulo estende o arquivo `rascunho-editorial-lote09.md`; não substitui a versão principal nem autoriza publicação sem revisão médica e integração editorial. Escopo: sepse no adulto. Particularidades pediátricas pertencem à aula de urgências pediátricas."
+    },
+    {
+      "text": "**SOFA não é qSOFA.** O qSOFA é simplificação prognóstica de três achados clínicos e não substitui avaliação estruturada, triagem ou julgamento clínico. SIRS também não é critério definidor de sepse no consenso atual."
+    }
+  ]
+}

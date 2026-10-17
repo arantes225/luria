@@ -1,0 +1,181 @@
+{
+  "sha": "8ca52c5d6089caa1e0cc64ccbc55b60dbe37087a",
+  "path": "apostilas/_rascunhos/lote-06-130-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--8ca52c5d60",
+  "title": "Níveis de Prevenção e História Natural da Doença",
+  "format": ".json",
+  "chars_estimated": 85421,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes-de-leitura",
+      "title": "Apresentação e orientações"
+    },
+    {
+      "id": "cap-01-por-que-os-niveis-de-prevencao-importam-no-consul",
+      "title": "1. Por que os níveis de prevenção importam no consultório e na prova"
+    },
+    {
+      "id": "cap-02-historia-natural-da-doenca-o-modelo-leavell-clark",
+      "title": "2. História natural da doença: o modelo Leavell & Clark como mapa temporal"
+    },
+    {
+      "id": "cap-03-triade-agente-hospedeiro-ambiente-e-determinacao-",
+      "title": "3. Tríade agente–hospedeiro–ambiente e determinação social"
+    },
+    {
+      "id": "cap-04-prevencao-primordial-impedir-que-os-fatores-de-ri",
+      "title": "4. Prevenção primordial: impedir que os fatores de risco se consolidem"
+    },
+    {
+      "id": "cap-05-prevencao-primaria-classica-promocao-da-saude-e-p",
+      "title": "5. Prevenção primária clássica: promoção da saúde e proteção específica"
+    },
+    {
+      "id": "cap-06-prevencao-secundaria-detectar-doenca-existente-an",
+      "title": "6. Prevenção secundária: detectar doença existente antes do dano maior"
+    },
+    {
+      "id": "cap-07-prevencao-terciaria-reduzir-incapacidade-e-restau",
+      "title": "7. Prevenção terciária: reduzir incapacidade e restaurar funcionalidade"
+    },
+    {
+      "id": "cap-08-prevencao-quaternaria-evitar-que-a-assistencia-se",
+      "title": "8. Prevenção quaternária: evitar que a assistência se torne novo fator de risco"
+    },
+    {
+      "id": "cap-09-a-pergunta-correta-para-classificar-intervencoes-",
+      "title": "9. A pergunta correta para classificar intervenções ambíguas"
+    },
+    {
+      "id": "cap-10-promocao-da-saude-no-sus-pnps-ottawa-pnab-e-terri",
+      "title": "10. Promoção da saúde no SUS: PNPS, Ottawa, PNAB e território"
+    },
+    {
+      "id": "cap-11-prevencao-em-doencas-infecciosas-do-contato-a-seq",
+      "title": "11. Prevenção em doenças infecciosas: do contato à sequela"
+    },
+    {
+      "id": "cap-12-doencas-cronicas-diabetes-hipertensao-obesidade-e",
+      "title": "12. Doenças crônicas: diabetes, hipertensão, obesidade e doença cardiovascular"
+    },
+    {
+      "id": "cap-13-saude-materna-infancia-e-ciclo-de-vida-a-fase-mud",
+      "title": "13. Saúde materna, infância e ciclo de vida: a fase muda o alvo"
+    },
+    {
+      "id": "cap-14-cancer-lesao-precursora-diagnostico-tratamento-e-",
+      "title": "14. Câncer: lesão precursora, diagnóstico, tratamento e vida após câncer"
+    },
+    {
+      "id": "cap-15-saude-mental-promocao-deteccao-precoce-e-prevenca",
+      "title": "15. Saúde mental: promoção, detecção precoce e prevenção do dano"
+    },
+    {
+      "id": "cap-16-saude-do-trabalhador-dos-riscos-do-ambiente-as-se",
+      "title": "16. Saúde do trabalhador: dos riscos do ambiente às sequelas"
+    },
+    {
+      "id": "cap-17-vacinacao-imunidade-e-prevencao-especifica-em-det",
+      "title": "17. Vacinação, imunidade e prevenção específica em detalhes"
+    },
+    {
+      "id": "cap-18-prevencao-e-promocao-na-rede-de-atencao-trabalho-",
+      "title": "18. Prevenção e promoção na rede de atenção: trabalho em equipe"
+    },
+    {
+      "id": "cap-19-prevencao-de-eventos-cardiovasculares-duas-conven",
+      "title": "19. Prevenção de eventos cardiovasculares: duas convenções de “primária/secundária”"
+    },
+    {
+      "id": "cap-20-raciocinio-contrafactual-e-prevencao-o-que-aconte",
+      "title": "20. Raciocínio contrafactual e prevenção: o que aconteceria sem intervenção?"
+    },
+    {
+      "id": "cap-21-intervencoes-universais-seletivas-e-indicadas-out",
+      "title": "21. Intervenções universais, seletivas e indicadas: outro eixo de classificação"
+    },
+    {
+      "id": "cap-22-limitacoes-do-modelo-de-leavell-clark-no-mundo-co",
+      "title": "22. Limitações do modelo de Leavell & Clark no mundo contemporâneo"
+    },
+    {
+      "id": "cap-23-algoritmo-de-decisao-para-questoes-e-atendimento",
+      "title": "23. Algoritmo de decisão para questões e atendimento"
+    },
+    {
+      "id": "cap-24-quadro-mestre-de-comparacao-dez-dimensoes-que-pod",
+      "title": "24. Quadro-mestre de comparação: dez dimensões que podem ser confundidas"
+    },
+    {
+      "id": "cap-25-vigilancia-em-saude-surtos-e-desastres-prevencao-",
+      "title": "25. Vigilância em saúde, surtos e desastres: prevenção não é apenas consulta"
+    },
+    {
+      "id": "cap-26-planejamento-de-acoes-evitar-tanto-o-excesso-quan",
+      "title": "26. Planejamento de ações: evitar tanto o excesso quanto a falta de prevenção"
+    },
+    {
+      "id": "cap-27-revisao-dirigida-como-responder-questoes-complexa",
+      "title": "27. Revisão dirigida: como responder questões complexas sem decorar cem exceções"
+    },
+    {
+      "id": "cap-28-oito-casos-clinicos-e-coletivos-comentados",
+      "title": "28. Oito casos clínicos e coletivos comentados"
+    },
+    {
+      "id": "cap-29-doze-questoes-autorais-comentadas",
+      "title": "29. Doze questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"OMS/OPAS — Carta de Ottawa para promoção da saúde (1986)\",\"url\":\"https://www.paho.org/en/documents/ottawa-charter-health-promotion\"}",
+    "{\"label\":\"OMS — Conceitos e determinantes da promoção da saúde\",\"url\":\"https://www.who.int/health-topics/health-promotion\"}",
+    "{\"label\":\"Brasil — Portaria GM/MS nº 2.446/2014 (PNPS)\",\"url\":\"https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html\"}",
+    "{\"label\":\"Brasil — Portaria de Consolidação nº 2/2017\",\"url\":\"https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html\"}",
+    "{\"label\":\"Brasil — Portaria GM/MS nº 2.436/2017 (PNAB)\",\"url\":\"https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html\"}",
+    "{\"label\":\"Ministério da Saúde — PCDTs vigentes por agravo\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt\"}",
+    "{\"label\":\"OMS — Conferências de promoção da saúde\",\"url\":\"https://www.who.int/teams/health-promotion/enhanced-wellbeing/first-global-conference\"}"
+  ],
+  "external_urls": [
+    "https://www.paho.org/en/documents/ottawa-charter-health-promotion",
+    "https://www.who.int/health-topics/health-promotion",
+    "https://bvs.saude.gov.br/bvs/saudelegis/gm/2014/prt2446_11_11_2014.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017_comp.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "https://www.who.int/teams/health-promotion/enhanced-wellbeing/first-global-conference"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A Portaria GM/MS nº 2.436/2017 define a Atenção Básica como conjunto de ações individuais, familiares e coletivas incluindo promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância. Portanto, restringir UBS a “ações preventivas sem tratamento” ou hospital a “reabilitação” contradiz a própria ideia de rede integrada."
+    },
+    {
+      "text": "No modelo clássico, prevenção secundária combina diagnóstico precoce e tratamento oportuno em doença-alvo já iniciada, muitas vezes durante fase subclínica ou início de manifestações. O objetivo é impedir progressão, complicações ou óbito. Em populações assintomáticas, isso pode ocorrer via rastreamento de doença com história natural adequada e percurso de cuidado comprovadamente benéfico. Em pessoas com sintomas, significa reconhecer sinais precoces e tratar antes que a condição se agrave."
+    },
+    {
+      "text": "Rastreamento não é sinônimo de todo diagnóstico precoce. Rastrear câncer de colo uterino em pessoa assintomática elegível é ato de prevenção secundária; investigar sangramento pós-coital é atendimento diagnóstico de pessoa sintomática, também pode buscar evitar evolução e dano, mas não é programa de rastreamento. A apostila 125 aprofunda teste, faixas brasileiras 2026, vieses e quaternária; aqui o essencial é identificar a fase da história natural."
+    },
+    {
+      "text": "Uma pessoa com tosse persistente, febre e hemoptise precisa de investigação de tuberculose ativa. Não se trata de rastreamento de assintomático, e sim de diagnóstico precoce com tratamento que pode evitar transmissão e sequelas. Uma mulher com sangramento vaginal anormal requer investigação de sua etiologia, mesmo se fez citologia ou DNA-HPV negativo recente. O critério temporal é estar após início da doença-alvo, mas antes de dano mais grave, conforme modelo."
+    },
+    {
+      "text": "A prevenção quaternária reduz risco de medicalização e intervenção excessiva, incluindo exames desnecessários, diagnóstico de condições sem relevância clínica, procedimentos e medicamentos com mais dano que benefício. Ela é transversal: pode ser aplicada em pessoa saudável convidada a rastreamento ou em paciente grave com polifarmácia. Não se restringe a “quarto período” da história natural; a representação em linha do tempo é imperfeita, pois a iatrogenia pode começar antes mesmo de a doença existir."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,338 @@
+{
+  "sha": "5e0bcaf57e8a76f95dcdf7b7737164180cb5baaf",
+  "path": "apostilas/_rascunhos/lote-09-aula-183-dislipidemias-risco-cardiovascular.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--5e0bcaf57e",
+  "title": "LURIA — Apostila 183 · Dislipidemias e prevenção do risco cardiovascular",
+  "format": ".md",
+  "chars_estimated": 67112,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 183 · Dislipidemias e prevenção do risco cardiovascular"
+    },
+    {
+      "title": "1. Por que o colesterol importa?"
+    },
+    {
+      "title": "2. Ler o lipidograma com método"
+    },
+    {
+      "title": "3. Estratificar antes de estabelecer meta"
+    },
+    {
+      "title": "4. Tratamento não farmacológico e prevenção"
+    },
+    {
+      "title": "5. Estatinas e terapias combinadas"
+    },
+    {
+      "title": "6. Hipertrigliceridemia e hipercolesterolemia familiar"
+    },
+    {
+      "title": "7. Grupos especiais"
+    },
+    {
+      "title": "8. Quatro casos clínicos originais"
+    },
+    {
+      "title": "9. Seis questões autorais e comentários"
+    },
+    {
+      "title": "10. Referências e pendências"
+    },
+    {
+      "title": "11. Complemento técnico — estratificação formal da Diretriz Brasileira de 2025"
+    },
+    {
+      "title": "11.1 Interpretando exemplos sem falsificar a categoria"
+    },
+    {
+      "title": "11.2 Metas absolutas e reduções percentuais no mesmo paciente"
+    },
+    {
+      "title": "12. Complemento — drogas e sequência real de intensificação"
+    },
+    {
+      "title": "12.1 Como evitar inércia terapêutica"
+    },
+    {
+      "title": "12.2 Intensidade da estatina: o que significa na decisão"
+    },
+    {
+      "title": "12.3 Efeitos musculares: avaliar sem minimizar, sem superdiagnosticar"
+    },
+    {
+      "title": "12.4 Associações e seu mecanismo causal"
+    },
+    {
+      "title": "12.5 Disponibilidade e tratamento no Brasil"
+    },
+    {
+      "title": "13. Complemento — dislipidemias secundárias e interpretação causal"
+    },
+    {
+      "title": "13.1 Diabetes e resistência à insulina"
+    },
+    {
+      "title": "13.2 Hipotireoidismo"
+    },
+    {
+      "title": "13.3 Doenças renais e síndrome nefrótica"
+    },
+    {
+      "title": "13.4 Álcool, medicamentos e doenças hepáticas"
+    },
+    {
+      "title": "13.5 Alimentação e genética coexistem"
+    },
+    {
+      "title": "14. Complemento — TG, partículas remanescentes e pancreatite"
+    },
+    {
+      "title": "14.1 Quando investigar síndrome da quilomicronemia familiar"
+    },
+    {
+      "title": "14.2 Icosapenta etila: formulação específica importa"
+    },
+    {
+      "title": "15. Complemento — perguntas de decisão na vida real"
+    },
+    {
+      "title": "Situação A: “Meu LDL caiu de 210 para 112; já estou curado?”"
+    },
+    {
+      "title": "Situação B: “Se HDL é alto, posso ignorar LDL?”"
+    },
+    {
+      "title": "Situação C: “Como decidir se vale pedir Lp(a)?”"
+    },
+    {
+      "title": "Situação D: “Um paciente de alto risco se recusa a tomar estatina por medo de dor muscular.”"
+    },
+    {
+      "title": "Situação E: “Há TG de 650 mg/dL, mas paciente está assintomático.”"
+    },
+    {
+      "title": "Situação F: “O valor medido não corresponde à dose prescrita.”"
+    },
+    {
+      "title": "16. Checklist de auditoria para aprofundamento"
+    },
+    {
+      "title": "17. Diagnóstico diferencial do colesterol elevado: reconhecer qual fração está alterada"
+    },
+    {
+      "title": "17.1 LDL isoladamente aumentado"
+    },
+    {
+      "title": "17.2 TG predominantemente aumentado"
+    },
+    {
+      "title": "17.3 Padrão misto"
+    },
+    {
+      "title": "17.4 LDL aparentemente baixo com ApoB alto"
+    },
+    {
+      "title": "17.5 Colesterol total muito elevado por alterações não usuais"
+    },
+    {
+      "title": "18. Laboratório em profundidade: jejum, resultados conflitantes e unidade"
+    },
+    {
+      "title": "18.1 Como decidir sobre jejum"
+    },
+    {
+      "title": "18.2 Diferença entre LDL calculado, medido e método alternativo"
+    },
+    {
+      "title": "18.3 Proporção da redução e regressão à média"
+    },
+    {
+      "title": "18.4 ApoB: motivo de sua utilidade"
+    },
+    {
+      "title": "18.5 Lp(a): características únicas"
+    },
+    {
+      "title": "18.6 Pequeno painel de interpretação"
+    },
+    {
+      "title": "19. Hipercolesterolemia familiar: da suspeita ao rastreamento em cascata"
+    },
+    {
+      "title": "19.1 Fisiopatologia genética"
+    },
+    {
+      "title": "19.2 Suspeita clínica é mais ampla que LDL ≥190 mg/dL"
+    },
+    {
+      "title": "19.3 Diagnóstico formal"
+    },
+    {
+      "title": "19.4 Rastreamento em cascata: efeito preventivo"
+    },
+    {
+      "title": "19.5 HF grave resistente a tratamento"
+    },
+    {
+      "title": "20. Prevenção cardiovascular como projeto longitudinal"
+    },
+    {
+      "title": "20.1 Do primeiro exame ao plano de longo prazo"
+    },
+    {
+      "title": "20.2 Atenção primária e seguimento"
+    },
+    {
+      "title": "20.3 Comunicação sem culpabilização"
+    },
+    {
+      "title": "20.4 Adesão como variável clínica mensurável"
+    },
+    {
+      "title": "20.5 Decisão compartilhada não é abandono de evidência"
+    },
+    {
+      "title": "20.6 Monitorização de segurança sem excesso de exames"
+    },
+    {
+      "title": "21. Polifarmácia, interação e situações de prova"
+    },
+    {
+      "title": "21.1 Por que estatina interage com medicamentos?"
+    },
+    {
+      "title": "21.2 Estatina associada a fibrato"
+    },
+    {
+      "title": "21.3 Gestante em uso de medicamento crônico"
+    },
+    {
+      "title": "21.4 Paciente com insuficiência cardíaca"
+    },
+    {
+      "title": "21.5 População pediátrica"
+    },
+    {
+      "title": "22. Casuística para interpretação de decisões difíceis"
+    },
+    {
+      "title": "Casuística 1 — Paciente de baixo risco que pergunta por medicação"
+    },
+    {
+      "title": "Casuística 2 — LDL muito alto e “escore baixo”"
+    },
+    {
+      "title": "Casuística 3 — Doença arterial periférica e LDL 91 mg/dL"
+    },
+    {
+      "title": "Casuística 4 — Após estatina, LDL melhora mas ApoB permanece acima da meta"
+    },
+    {
+      "title": "Casuística 5 — TG 740 mg/dL e álcool diário"
+    },
+    {
+      "title": "Casuística 6 — Mialgia após prescrição"
+    },
+    {
+      "title": "Casuística 7 — Falta de acesso à terapia combinada"
+    },
+    {
+      "title": "Casuística 8 — Lp(a) elevada com LDL moderado"
+    },
+    {
+      "title": "23. Questões discursivas para auditoria de autossuficiência"
+    },
+    {
+      "title": "24. Checklist prático para fechamento da apostila"
+    },
+    {
+      "title": "25. Integração entre quadro clínico, biomarcador e prioridade terapêutica"
+    },
+    {
+      "title": "26. O que a equipe deve registrar na consulta"
+    },
+    {
+      "title": "27. Quando encaminhar e quando manejar na atenção primária"
+    },
+    {
+      "title": "28. Tabela transversal para reconhecimento de erros"
+    },
+    {
+      "title": "29. Integração planejada com o ecossistema LURIA"
+    },
+    {
+      "title": "30. Fontes, qualidade e limite de conclusão"
+    }
+  ],
+  "reference_entries": [
+    "- RACHED, F. H. et al. Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2025. *Arq. Bras. Cardiol.* 2025;122(9):e20250640. DOI https://doi.org/10.36660/abc.20250640 . Texto: https://www.scielo.br/j/abc/a/tRJrwGzKX6C4GvMqdJpZcGk/?lang=pt",
+    "- ESC/EAS. 2025 Focused Update of the 2019 ESC/EAS Guidelines for the Management of Dyslipidaemias. *Eur. Heart J.* 2025;46:4359–4378. https://doi.org/10.1093/eurheartj/ehaf190",
+    "**COMPLEMENTAR NA PRÓXIMA REVISÃO**: estratificação brasileira completa categoria por categoria, ApoB/Lp(a) e técnicas de laboratório aprofundadas, HF com escores e formas genéticas, farmacologia e interações em detalhe, dislipidemias raras, risco cardiovascular em diabetes/DRC, algoritmos de hipertrigliceridemia e acesso terapêutico brasileiro, casos e questões adicionais. Pesquisar e verificar ≥10 imagens candidatas com licenças comerciais antes de importar ao Admin, expandir a >=60 mil caracteres didáticos úteis SEM repetição, realizar checagem científica e teste de autossuficiência, e some",
+    "**Alto risco** engloba estimativa ≥20% em dez anos, categoria intermediária acrescida de fator agravante relevante, LDL-c ≥190 mg/dL, algumas apresentações de DM2 e aterosclerose subclínica significativa para esse enquadramento (por exemplo, placas vasculares não obstrutivas e CAC elevado acima de critérios definidos). Na diretriz de 2025, uma Lp(a) extremamente elevada também pode situar o indivíduo em maior estrato de risco. Portanto, LDL 195 mg/dL em adulto saudável de 30 anos não é argumento para esperar que uma calculadora de dez anos indique risco elevado: o colesterol persistentemente m",
+    "**Muito alto risco** frequentemente engloba evento cardiovascular aterosclerótico prévio, doença coronária, cerebrovascular ou arterial periférica significativa, CAC muito elevado e algumas situações de DM2 com grande carga de dano ou estratificadores. O fato de o paciente ter pressão e LDL “controlados hoje” não desfaz a ocorrência de infarto passado. O risco é a probabilidade clínica de um evento, não uma fotografia do último exame.",
+    "**Risco extremo** é categoria reservada a múltiplos eventos cardiovasculares ateroscleróticos maiores ou a um evento maior acompanhado de pelo menos duas condições de alto risco, segundo critérios da diretriz. O uso da categoria extremo em consulta demanda verificar e documentar quais eventos/condições realmente ocorreram. Um infarto isolado pode indicar risco muito alto, mas não necessariamente extremo. A diretriz apresenta detalhamento e nomenclatura específica de estratificadores de alto/muito alto risco, que devem ser cotejados na avaliação individual.",
+    "**Homem de 38 anos com LDL persistente de 202 mg/dL e sem evento cardiovascular:** LDL tão alto exige investigação de hipercolesterolemia familiar e prevenção ativa; não classificá-lo automaticamente como baixo risco só porque sua idade gera probabilidade pequena em modelos de dez anos.",
+    "**Mulher de 57 anos com AVC isquêmico de origem aterosclerótica documentada:** prevenção secundária. Sua meta lipídica deriva da doença vascular e dos agravantes, não da média de risco populacional.",
+    "**Homem com infarto há quatro anos e novo AVC aterosclerótico recente:** múltiplos eventos maiores exigem avaliar categoria de risco extremo, uma vez que o risco de recorrência é substancial.",
+    "**Mulher de 45 anos, sem evento prévio, com Lp(a) elevada e história familiar:** verificar unidade, magnitude da Lp(a), restantes fatores e categoria calculada; a Lp(a) pode reclassificar risco, mas sua influência deve ser proporcional ao valor e ao cenário. Não assumir equivalência automática entre mg/dL e nmol/L.",
+    "**Importante:** suplementar vitamina D ou coenzima Q10 de rotina com único objetivo de “curar mialgia da estatina” não possui recomendação favorável na diretriz brasileira de 2025. Uma deficiência real de vitamina D pode necessitar tratamento próprio, mas isso é decisão clínica independente de uma afirmação generalizada sobre estatinas.",
+    "**Estatina + ezetimiba:** ao mesmo tempo que o fígado sintetiza menos colesterol, o intestino entrega menos ao organismo. O fígado aumenta captação de LDL circulante. Em pacientes com risco elevado e meta distante, essa complementaridade é particularmente útil.",
+    "**Estatina + inibidor de PCSK9:** a estatina favorece receptores de LDL, enquanto inibir PCSK9 evita degradação desses receptores. A soma amplia remoção de LDL da circulação. A indicação é mais restrita pelo custo, acesso e perfil de risco, e não deve ser extrapolada automaticamente a todo paciente com colesterol discretamente aumentado.",
+    "**Ácido bempedoico:** bloqueia etapa de produção hepática anterior à HMG-CoA redutase. Pode integrar terapias para pessoas que não toleram estatinas ou necessitam intensificar; considerar risco de hiperuricemia, gota e eventos tendíneos em contextos específicos. Se o paciente possui história de gota, isso integra conversa sobre escolha terapêutica.",
+    "**Inclisirana:** reduz a síntese hepática de PCSK9 por mecanismo de RNA. A redução de LDL é relevante, mas provas podem cobrar a distinção entre efeito bioquímico e demonstração direta de redução de eventos com cada agente e em cada população. Não afirmar que toda intervenção que reduz LDL tem automaticamente o mesmo nível de evidência para desfechos ou mesma indicação de bula.",
+    "1. Reduzir risco de infarto/AVC por aterosclerose: estratificar, reduzir LDL e carga de partículas ApoB, controlar fatores vasculares.",
+    "2. Evitar pancreatite em hipertrigliceridemia severa: reduzir TG por alimentação apropriada, retirar álcool, corrigir diabetes/medicações desencadeantes e considerar tratamento específico conforme gravidade.",
+    "**Questão A:** explique por que LDL-c baixo e ApoB alto não são contraditórios em indivíduo com TG elevados.  ",
+    "**Resposta esperada:** LDL-c mede colesterol transportado, enquanto ApoB se relaciona ao número de partículas; partículas menores podem transportar menos colesterol cada. Não-HDL complementa interpretação.",
+    "**Questão B:** um paciente teve dois eventos ateroscleróticos maiores e mantém LDL 58 mg/dL. Qual erro seria usar meta de LDL de risco intermediário?  ",
+    "**Resposta esperada:** o histórico de múltiplos eventos pode indicar categoria extrema na SBC 2025, com alvo mais baixo, independente da referência laboratorial de LDL “normal”.",
+    "**Questão C:** por que a suspensão imediata e definitiva de estatina após dor muscular leve pode prejudicar o cuidado?  ",
+    "**Resposta esperada:** a causa pode não ser medicamentosa; devem-se avaliar gravidade, temporalidade, outras etiologias e esquemas alternativos, preservando prevenção quando possível.",
+    "**Questão D:** em TG 1500 mg/dL e dor epigástrica, qual risco se torna prioritário?  ",
+    "**Resposta esperada:** pancreatite aguda, exigindo avaliação hospitalar e tratamento metabólico/etiológico, sem deixar de considerar risco cardiovascular futuro.",
+    "**Questão E:** por que não se deve usar um número de HDL elevado como motivo para ignorar LDL alto?  ",
+    "**Resposta esperada:** HDL-c não anula a causalidade de lipoproteínas aterogênicas; aumentar HDL por medicamento não é desfecho de benefício comprovado.",
+    "**Questão F:** qual a diferença entre hipercolesterolemia familiar e dieta inadequada?  ",
+    "**Resposta esperada:** HF é condição de exposição geneticamente elevada a LDL desde cedo; dieta pode modular concentrações, mas não remove defeito de captação. Avaliação familiar e tratamento dirigido são essenciais.",
+    "**Questão G:** um LDL estimado por Friedewald parece normal em TG 600 mg/dL. Como proceder?  "
+  ],
+  "external_urls": [
+    "https://doi.org/10.36660/abc.20250640",
+    "https://www.scielo.br/j/abc/a/tRJrwGzKX6C4GvMqdJpZcGk/?lang=pt",
+    "https://doi.org/10.1093/eurheartj/ehaf190"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Exemplo: CT = 230, HDL = 40, TG = 150 mg/dL. Não-HDL = 190; LDL pela fórmula clássica ≈ 160 mg/dL. Esses valores precisam ser associados a idade, tabagismo, hipertensão, diabetes, doença renal, doença cardiovascular e história familiar antes de definir conduta."
+    },
+    {
+      "text": "| Estrato brasileiro 2025 | LDL-c alvo | Não-HDL-c alvo | ApoB, meta secundária | Redução percentual desejada de LDL | |---|---:|---:|---:|---:| | Baixo | <115 mg/dL | <145 | <100 | ≥30% | | Intermediário | <100 mg/dL | <130 | <90 | ≥30% | | Alto | <70 mg/dL | <100 | <70 | ≥50% | | Muito alto | <50 mg/dL | <80 | <55 | ≥50% | | Extremo | <40 mg/dL | <70 | <45 | ≥50% |"
+    },
+    {
+      "text": "Essas metas não são intervalos de referência laboratorial para todos os pacientes. Um homem com infarto e LDL 78 mg/dL pode precisar de maior redução apesar de o resultado parecer “normal” em um laudo. A condição de risco extremo exige critérios específicos de recorrência e agravantes; não atribuir a qualquer infarto isolado. A atualização ESC/EAS de 2025 não é igual à diretriz brasileira: não misturar metas de origens distintas sem identificação."
+    },
+    {
+      "text": "Estatinas inibem HMG-CoA redutase, aumentam receptores hepáticos de LDL e reduzem sua concentração plasmática, diminuindo eventos cardiovasculares. Alta intensidade tende a baixar LDL em ≥50% (exemplos adultos: atorvastatina 40–80 mg/dia ou rosuvastatina 20–40 mg/dia); intensidade moderada reduz em média 30–49%. Essas doses são exemplos de categoria farmacológica, não prescrição universal. Checar função renal/hepática, interações, capacidade de adesão e risco individual antes de prescrever."
+    },
+    {
+      "text": "Ezetimiba bloqueia NPC1L1 intestinal e fornece redução adicional do LDL-c; dose adulta usual 10 mg/dia, quando indicada. A associação com estatina pode ser escolhida precocemente quando meta está distante. Inibidores da PCSK9 aumentam reciclagem de receptores de LDL e são alternativas adicionais para determinados pacientes de alto risco, conforme comprovação de desfechos, acesso e custo. Ácido bempedoico age na ATP-citrato liase e pode ser opção na intolerância a estatinas ou quando necessária intensificação; monitorar efeitos adversos e interações."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

@@ -1,0 +1,172 @@
+{
+  "sha": "b61332fb4be600e8676802e188d55f5b29308a13",
+  "path": "apostilas/_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--b61332fb4b",
+  "title": "LURIA — Lote 7 · Aula 135",
+  "format": ".md",
+  "chars_estimated": 24948,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 135"
+    },
+    {
+      "title": "Imunizações e Programa Nacional de Imunizações (PNI) — Brasil, outubro de 2026"
+    },
+    {
+      "title": "0. Etapa zero — por que os resumos antigos são perigosos"
+    },
+    {
+      "title": "1. Imunidade, antígeno e memória: fisiologia antes da tabela"
+    },
+    {
+      "title": "2. Plataformas vacinais e implicações clínicas"
+    },
+    {
+      "title": "3. Organização do PNI"
+    },
+    {
+      "title": "4. Calendário da criança — leitura orientada da página MS 2026"
+    },
+    {
+      "title": "4.1. A transição da VPC10 para VPC20"
+    },
+    {
+      "title": "4.2. Meningocócica ACWY no segundo ano de vida"
+    },
+    {
+      "title": "4.3. Poliomielite: VIP versus VOP"
+    },
+    {
+      "title": "5. Gestantes: imunidade materna e proteção do lactente"
+    },
+    {
+      "title": "6. Outros ciclos de vida"
+    },
+    {
+      "title": "7. Contraindicação verdadeira versus falsa contraindicação"
+    },
+    {
+      "title": "8. Eventos supostamente atribuíveis à vacinação (ESAVI)"
+    },
+    {
+      "title": "9. Cobertura, equidade e vacinação de bloqueio"
+    },
+    {
+      "title": "10. Fluxo de sala de vacina e UBS"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — criança em transição pneumocócica"
+    },
+    {
+      "title": "Caso 2 — reforço meningocócico"
+    },
+    {
+      "title": "Caso 3 — gestante e VSR"
+    },
+    {
+      "title": "Caso 4 — falso impedimento e atraso de vacinação"
+    },
+    {
+      "title": "12. Seis questões autorais — comentários completos"
+    },
+    {
+      "title": "Questão 1 — plataforma"
+    },
+    {
+      "title": "Questão 2 — poliomielite"
+    },
+    {
+      "title": "Questão 3 — pneumocócica"
+    },
+    {
+      "title": "Questão 4 — meningocócica"
+    },
+    {
+      "title": "Questão 5 — gestante"
+    },
+    {
+      "title": "Questão 6 — contraindicações"
+    },
+    {
+      "title": "13. Quadro de armadilhas de prova"
+    },
+    {
+      "title": "14. Camada visual planejada, sem arquivos aprovados"
+    },
+    {
+      "title": "15. Fontes oficiais datadas"
+    },
+    {
+      "title": "16. Auditoria editorial pendente"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. *Calendário Nacional de Vacinação — portal por ciclo de vida*, dados acessados em 14/10/2026. https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "2. Ministério da Saúde. *Instrução Normativa que instrui o Calendário Nacional de Vacinação 2026*, publicação/atualização em julho–agosto de 2026. https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "3. Ministério da Saúde. *Calendário Nacional de Vacinação — Criança*, atualização 29/07/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view",
+    "4. Ministério da Saúde. *Calendário Nacional de Vacinação — Gestante*, atualização 13/10/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante/view",
+    "5. Sociedade Brasileira de Pediatria. *Calendário de Vacinação SBP 2026/2027*, publicado em 28/07/2026, descrevendo VPC20 e esquema de transição no SUS. https://www.sbp.com.br/confira-o-novo-calendario-de-vacinacao-da-sbp-atualizacao-2026-2027/",
+    "6. Ministério da Saúde. *Notas Técnicas — Meningite*, incluindo substituição de reforço MenC por MenACWY em 2025. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "- [x] Benchmark antigo 2020 identificado, aberto e contrastado explicitamente com 2026; autoria não presumida.",
+    "- [x] Fisiologia, plataformas, PNI, calendário da criança/gestante, transição pneumocócica e MenACWY, CRIE, contraindicações, ESAVI, cobertura e equidade.",
+    "- [x] Quatro casos e seis questões comentadas com todas as alternativas.",
+    "- [ ] Completar calendário técnico 2026 para todas as faixas etárias, intervalos mínimos, catch-up e grupos especiais, por produto e via, **diretamente da IN vigente**, após conferência integral.",
+    "- [ ] Verificar detalhes de vacinas sazonais, dengue em situações especiais e uso do monoclonal VSR nas populações elegíveis.",
+    "- [ ] Produzir livro premium ≥60 mil caracteres didáticos úteis, com farmacovigilância, microplanejamento e estratégias de cobertura brasileiras.",
+    "- [ ] Desenvolver figuras originais e validar licenças de uso comercial antes de integrar.",
+    "- [ ] Revisão médica, checagem normativa final em data de publicação, integração e teste PWA.",
+    "**Estado final do documento:** rascunho; não certifica calendário de aplicação e não foi integrado à biblioteca LURIA."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante/view",
+    "https://www.sbp.com.br/confira-o-novo-calendario-de-vacinacao-da-sbp-atualizacao-2026-2027/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O Ministério da Saúde disponibilizou calendário da criança atualizado em **29/07/2026**, instrução normativa de 2026 e calendário de gestantes atualizado em **13/10/2026**. A vacina pneumocócica **VPC20** foi incorporada em 2026 com fase de transição de estoques da VPC10: a página oficial pode mostrar VPC20 em algumas idades e VPC10 em dose intermediária enquanto se executa esquema misto. A SBP publicou calendário 2026/2027 em julho/2026 e confirmou a transição; suas recomendações profissionais podem divergir de acesso e intervalos prioritários do SUS. **Não confundir recomendação da SBP com esquema disponibilizado universalmente pelo PNI**."
+    },
+    {
+      "text": "| Tecnologia | Exemplos | Princípio de segurança/indicação | |---|---|---| | Viva atenuada | BCG, tríplice viral, varicela, febre amarela, rotavírus | Replicação limitada; geralmente contraindicada em imunossupressão importante e certas gestações, com exceções específicas por risco/benefício | | Inativada | VIP, hepatite A, influenza inativada | Não replica; pode ser usada em várias populações com imunossupressão, embora resposta possa ser menor | | Subunidade/recombinante | Hepatite B, HPV, componentes de pneumocócica/meningocócica | Antígenos selecionados, frequentemente com adjuvantes | | Conjugada | Hib, pneumocócica conjugada, meningocóc"
+    },
+    {
+      "text": "**Fontes conferidas na página pública do Ministério da Saúde:** - **Ao nascer:** hepatite B e BCG. - **2 meses:** penta (DTP/Hib/HB), VIP, rotavírus e pneumocócica conjugada (VPC20, com transição de VPC10 por estoque). - **3 meses:** meningocócica C. - **4 meses:** segundas doses de penta, VIP, rotavírus e pneumocócica conjugada — o portal atualmente exibe VPC10 na dose de 4 meses em regime de transição. - **5 meses:** segunda meningocócica C. - **6 meses:** terceira penta e VIP, além de outras vacinas sazonais/por indicação segundo calendário vigente (influenza/covid etc.). - **12 meses:** reforço pneumocócico conjugado, **meningocócica ACWY"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

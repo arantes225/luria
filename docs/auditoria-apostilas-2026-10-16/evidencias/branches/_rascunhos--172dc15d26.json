@@ -1,0 +1,172 @@
+{
+  "sha": "172dc15d266bc1668c27fe51b98d21973d964048",
+  "path": "apostilas/_rascunhos/lote-13-256-reabilitacao-deficiencia-comunidade.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--172dc15d26",
+  "title": "LURIA — Lote 13 · Apostila 256",
+  "format": ".md",
+  "chars_estimated": 30074,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 256"
+    },
+    {
+      "title": "Reabilitação comunitária e cuidado longitudinal de pessoas com deficiência"
+    },
+    {
+      "title": "Etapa zero e mapeamento de lacunas"
+    },
+    {
+      "title": "1. Definição: sair do modelo exclusivamente biomédico"
+    },
+    {
+      "title": "2. Habilitação e reabilitação"
+    },
+    {
+      "title": "3. A rede brasileira RCPD e o papel da APS"
+    },
+    {
+      "title": "Matriz de responsabilidades"
+    },
+    {
+      "title": "4. Primeira consulta na UBS: entrevista e exame que realmente mudam conduta"
+    },
+    {
+      "title": "Anamnese biopsicossocial"
+    },
+    {
+      "title": "Exame funcional dirigido"
+    },
+    {
+      "title": "5. Projeto Terapêutico Singular (PTS): objetivos reais e responsabilidades"
+    },
+    {
+      "title": "6. Deficiência física: síndrome medular, sequelas de AVC e mobilidade reduzida"
+    },
+    {
+      "title": "7. Prevenção de complicações da imobilidade"
+    },
+    {
+      "title": "Lesão por pressão — entender para prevenir"
+    },
+    {
+      "title": "Contraturas e espasticidade"
+    },
+    {
+      "title": "Continência e bexiga neurogênica"
+    },
+    {
+      "title": "8. Deficiência auditiva, visual, intelectual e comunicação"
+    },
+    {
+      "title": "9. Desenvolvimento infantil e participação escolar"
+    },
+    {
+      "title": "10. Tecnologias assistivas e indicação orientada por função"
+    },
+    {
+      "title": "Antes de indicar cadeira de rodas"
+    },
+    {
+      "title": "Dispositivos de marcha"
+    },
+    {
+      "title": "11. Saúde integral além da deficiência"
+    },
+    {
+      "title": "12. Intersetorialidade: onde a rede clínica termina?"
+    },
+    {
+      "title": "13. Seguimento domiciliar e sobrecarga de cuidador"
+    },
+    {
+      "title": "14. Algoritmos de atendimento e decisão"
+    },
+    {
+      "title": "A. Primeira consulta"
+    },
+    {
+      "title": "B. Pessoa acamada com risco de lesão por pressão"
+    },
+    {
+      "title": "C. Demanda por cadeira de rodas"
+    },
+    {
+      "title": "15. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Pós-AVC e meta de banho"
+    },
+    {
+      "title": "Caso 2 — Lesão por pressão em paraplegia"
+    },
+    {
+      "title": "Caso 3 — Deficiência auditiva e consulta sem intérprete"
+    },
+    {
+      "title": "Caso 4 — Criança com atraso motor e escola inacessível"
+    },
+    {
+      "title": "Caso 5 — Autonomia e decisão clínica"
+    },
+    {
+      "title": "16. Questões autorais comentadas"
+    },
+    {
+      "title": "17. Plano de imagens para Admin"
+    },
+    {
+      "title": "18. Fontes oficiais e referência técnica"
+    },
+    {
+      "title": "Auditoria desta versão"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. Saúde da Pessoa com Deficiência — PNAISPD e reabilitação: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia",
+    "2. Ministério da Saúde. Rede de Cuidados à Pessoa com Deficiência, PTS e CER: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd/rede-de-cuidados-a-pessoa-com-deficiencia/",
+    "3. Ministério da Saúde. Centros Especializados em Reabilitação, modalidades: https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/selecao-2025/centros-especializados-em-reabilitacao",
+    "4. Ministério da Saúde. Legislação PNAISPD: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/legislacao/legislacao",
+    "5. Brasil. Lei nº 13.146/2015 (Lei Brasileira de Inclusão): https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+    "6. OMS. Classificação Internacional de Funcionalidade, Incapacidade e Saúde: https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health",
+    "7. Ministério da Saúde. Notas técnicas e fluxos de reabilitação 2025/2026: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/notas-tecnicas/notas-tecnicas",
+    "**Realizado:** conteúdo original com definição de deficiência, avaliação funcional, organização RCPD/CER, plano centrado na pessoa, reabilitação física e cognitivo-comunicacional, prevenção de complicações, tecnologia assistiva, direitos e saúde integral, 5 casos e 7 questões comentadas.",
+    "**Pendente:** literatura especializada de reabilitação comunitária, critérios de rastreamento e evidência de tecnologias específicas, aprofundar escalas e resultados por síndrome, políticas intersetoriais e financiamento, recomendações completas sobre lesões por pressão sem generalizações, benchmark equivalente, ≥60.000 caracteres únicos, revisão especializada, imagens com licença e inspeção PWA.",
+    "**Estado verdadeiro:** RASCUNHO_PARCIAL_NAO_PUBLICAR. Nenhuma página existente foi alterada."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd/rede-de-cuidados-a-pessoa-com-deficiencia/",
+    "https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/selecao-2025/centros-especializados-em-reabilitacao",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/legislacao/legislacao",
+    "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+    "https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/notas-tecnicas/notas-tecnicas"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Diagnóstico do acervo LURIA:** manter tema #256 próprio; #255 cobre coordenação e matriciamento de modo geral, enquanto #256 deve ensinar cuidado biopsicossocial e reabilitação; #260 cobre IRAS, mas prevenção de lesão por pressão e complicações domiciliares é desenvolvida aqui no contexto longitudinal."
+    },
+    {
+      "text": "A Classificação Internacional de Funcionalidade, Incapacidade e Saúde (CIF/ICF) da OMS descreve funções/estruturas corporais, atividades, participação e fatores ambientais/pessoais. Não substitui diagnóstico clínico CID, mas complementa sua utilidade: saber que pessoa teve AVC isquêmico não informa, isoladamente, se consegue falar, engolir, vestir-se ou acessar a UBS."
+    },
+    {
+      "text": "**Q3.** Pessoa com paraplegia e área sacral arroxeada mas indolor e pele íntegra. A conduta adequada: A) excluir lesão por pressão por não haver dor. B) suspeitar lesão profunda, aliviar carga, examinar/encaminhar e revisar dispositivos. C) massagear vigorosamente a área. D) iniciar antibiótico IV para todos. E) aguardar necrose. **Gabarito B.** A/E atrasam diagnóstico; C pode agravar dano; D não é universal; B aborda mecanismo e risco. **Mini-revisão:** perda sensorial torna inspeção preventiva essencial."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

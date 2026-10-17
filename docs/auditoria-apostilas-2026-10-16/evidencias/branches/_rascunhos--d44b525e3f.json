@@ -1,0 +1,367 @@
+{
+  "sha": "d44b525e3fefdb76b2d33a99c6d7e42a147ff966",
+  "path": "apostilas/_rascunhos/lote-09-aula-186-arboviroses-dengue-chikungunya-zika.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d44b525e3f",
+  "title": "LURIA · Apostila 186 — Arboviroses: dengue, chikungunya e Zika",
+  "format": ".md",
+  "chars_estimated": 82904,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA · Apostila 186 — Arboviroses: dengue, chikungunya e Zika"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Bases virológicas e do raciocínio sindrômico"
+    },
+    {
+      "title": "1.1 Por que o Brasil é cenário privilegiado de epidemias?"
+    },
+    {
+      "title": "1.2 DENV tem quatro sorotipos"
+    },
+    {
+      "title": "1.3 Febre, rash e artralgia são síndromes, não nomes de vírus"
+    },
+    {
+      "title": "2. Dengue — fases e mecanismos de gravidade"
+    },
+    {
+      "title": "2.1 Fase febril"
+    },
+    {
+      "title": "2.2 Fase crítica: o momento em que a febre pode desaparecer e o risco aumentar"
+    },
+    {
+      "title": "2.3 Choque por dengue: fluxo e pressão não são intercambiáveis"
+    },
+    {
+      "title": "2.4 Hematócrito: interpretar tendência em vez de decorar teto fixo"
+    },
+    {
+      "title": "2.5 Fase de recuperação"
+    },
+    {
+      "title": "3. Diagnóstico clínico de dengue e exclusão de emergências alternativas"
+    },
+    {
+      "title": "3.1 Anamnese direcionada à gravidade"
+    },
+    {
+      "title": "3.2 Exame físico: além do exantema"
+    },
+    {
+      "title": "3.3 Prova do laço: utilidade e limites"
+    },
+    {
+      "title": "4. Diagnóstico laboratorial da dengue por dia de doença"
+    },
+    {
+      "title": "4.1 Direto: RNA viral e NS1"
+    },
+    {
+      "title": "4.2 Sorologia: interpretação contextual de IgM e IgG"
+    },
+    {
+      "title": "4.3 Exames que monitoram gravidade"
+    },
+    {
+      "title": "4.4 Quando tratar independentemente da confirmação específica"
+    },
+    {
+      "title": "5. Classificação A, B, C e D — núcleo prático da LURIA"
+    },
+    {
+      "title": "5.1 Grupo A: prevenir deterioração após a consulta"
+    },
+    {
+      "title": "5.2 Grupo B: vulnerabilidade e necessidade de monitorização"
+    },
+    {
+      "title": "5.3 Grupo C: sinal de alarme é decisão terapêutica"
+    },
+    {
+      "title": "5.4 Grupo D: choque ou complicação grave"
+    },
+    {
+      "title": "5.5 Mudança de grupo por evolução, não por repetição de exames"
+    },
+    {
+      "title": "6. Raciocínio hemodinâmico durante ressuscitação e recuperação"
+    },
+    {
+      "title": "6.1 Três curvas mentais que ajudam a decidir"
+    },
+    {
+      "title": "6.2 Pressão de pulso estreita como alerta precoce"
+    },
+    {
+      "title": "6.3 Diurese não é parâmetro independente de toda a fisiologia"
+    },
+    {
+      "title": "6.4 Sobrecarga de fluido é complicação evitável"
+    },
+    {
+      "title": "7. Manifestações hemorrágicas, plaquetas e antitrombóticos"
+    },
+    {
+      "title": "7.1 Sangramento de mucosas e hemorragia grave são situações distintas"
+    },
+    {
+      "title": "7.2 AAS, dupla antiagregação e anticoagulantes"
+    },
+    {
+      "title": "7.3 Antitérmicos, anti-inflamatórios e corticoides"
+    },
+    {
+      "title": "8. Grupos especiais em dengue: fisiologia que modifica protocolo"
+    },
+    {
+      "title": "8.1 Idosos"
+    },
+    {
+      "title": "8.2 Cardiopatas e hipertensos"
+    },
+    {
+      "title": "8.3 Doença renal crônica"
+    },
+    {
+      "title": "8.4 Gestação"
+    },
+    {
+      "title": "8.5 Crianças e lactentes"
+    },
+    {
+      "title": "9. Critérios de seguimento e alta"
+    },
+    {
+      "title": "10. Chikungunya: fisiopatologia e fenótipo além da artralgia"
+    },
+    {
+      "title": "10.1 Definição e apresentação inicial"
+    },
+    {
+      "title": "10.2 Três fases do Ministério da Saúde (guia revisado de 2026)"
+    },
+    {
+      "title": "10.3 Não confundir artralgia, artrite, tenossinovite e dor neuropática"
+    },
+    {
+      "title": "10.4 Por que ocorre persistência por meses?"
+    },
+    {
+      "title": "11. Chikungunya grave e manifestações extra-articulares"
+    },
+    {
+      "title": "11.1 Neurológicas"
+    },
+    {
+      "title": "11.2 Cardíacas"
+    },
+    {
+      "title": "11.3 Renais, respiratórias e cutâneas"
+    },
+    {
+      "title": "11.4 Crianças e transmissão vertical"
+    },
+    {
+      "title": "12. Diagnóstico de chikungunya: exame laboratorial não substitui fenótipo"
+    },
+    {
+      "title": "12.1 Diferenciais da artrite pós-viral"
+    },
+    {
+      "title": "13. Tratamento na fase aguda de chikungunya"
+    },
+    {
+      "title": "14. Tratamento pós-agudo: a clínica orienta a escolha"
+    },
+    {
+      "title": "14.1 Dor não inflamatória"
+    },
+    {
+      "title": "14.2 Artrite ou tenossinovite"
+    },
+    {
+      "title": "14.3 Componente neuropático"
+    },
+    {
+      "title": "14.4 Reabilitação não é coadjuvante decorativo"
+    },
+    {
+      "title": "15. Chikungunya crônica após 90 dias"
+    },
+    {
+      "title": "16. Zika: quadro clínico e implicação reprodutiva"
+    },
+    {
+      "title": "16.1 Por que Zika tem relevância desproporcional na gestação?"
+    },
+    {
+      "title": "16.2 Transmissão sexual"
+    },
+    {
+      "title": "16.3 Diagnóstico laboratorial"
+    },
+    {
+      "title": "16.4 Tratamento da infecção aguda"
+    },
+    {
+      "title": "17. Síndrome congênita associada à infecção pelo vírus Zika"
+    },
+    {
+      "title": "17.1 Não é sinônimo de microcefalia"
+    },
+    {
+      "title": "17.2 Avaliação da gestante exposta ou sintomática"
+    },
+    {
+      "title": "17.3 Avaliação do recém-nascido"
+    },
+    {
+      "title": "17.4 Seguimento multidisciplinar e evolução"
+    },
+    {
+      "title": "17.5 Amamentação e aconselhamento"
+    },
+    {
+      "title": "18. Complicações neurológicas após arboviroses"
+    },
+    {
+      "title": "19. Diagnóstico diferencial sindrômico na prática brasileira"
+    },
+    {
+      "title": "19.1 Oropouche e Mayaro"
+    },
+    {
+      "title": "20. Interpretação dos testes em coinfecções e contextos especiais"
+    },
+    {
+      "title": "21. Vacinação dengue em 2026: políticas e limites"
+    },
+    {
+      "title": "22. Vigilância, notificação e abordagem comunitária"
+    },
+    {
+      "title": "22.1 Informar sem alarmismo nem falso conforto"
+    },
+    {
+      "title": "23. Fluxo diagnóstico autoral LURIA"
+    },
+    {
+      "title": "24. Casos clínicos originais LURIA — com raciocínio e conduta"
+    },
+    {
+      "title": "Caso 1 — A febre cedeu, mas o choque está começando"
+    },
+    {
+      "title": "Caso 2 — Dengue em idosa cardiopata"
+    },
+    {
+      "title": "Caso 3 — Dor articular persistente após arbovirose"
+    },
+    {
+      "title": "Caso 4 — Rash leve na gestante, desfecho potencialmente importante"
+    },
+    {
+      "title": "Caso 5 — Uma febre que não é apenas dengue"
+    },
+    {
+      "title": "25. Questões autorais estilo ENAMED/residência — justificadas"
+    },
+    {
+      "title": "Questão 1 — Fase crítica"
+    },
+    {
+      "title": "Questão 2 — Sinais de choque"
+    },
+    {
+      "title": "Questão 3 — Grupo B"
+    },
+    {
+      "title": "Questão 4 — Testes diagnósticos"
+    },
+    {
+      "title": "Questão 5 — Fases da chikungunya"
+    },
+    {
+      "title": "Questão 6 — Tratamento agudo da chikungunya"
+    },
+    {
+      "title": "Questão 7 — Zika e gestação"
+    },
+    {
+      "title": "Questão 8 — Interpretação do hematócrito"
+    },
+    {
+      "title": "26. Quadro de alta utilidade — não confundir números e indicações"
+    },
+    {
+      "title": "27. Revisão final em fluxos práticos"
+    },
+    {
+      "title": "28. Fontes primárias e registro de uso"
+    },
+    {
+      "title": "29. Plano visual por relevância clínica (ainda sem licença verificada)"
+    },
+    {
+      "title": "30. Matriz de autossuficiência e revisão científica"
+    }
+  ],
+  "reference_entries": [
+    "1. **BRASIL. Ministério da Saúde.** *Dengue: diagnóstico e manejo clínico — adulto e criança*. **6. ed.** Brasília: MS, 2024. Publicação oficial, disponibilizada/atualizada no portal em 2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue/publicacoes/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca . Usada para fases, sinais de alarme, grupos A/B/C/D, exemplos de hidratação, cardiopatas, antitrombóticos e critérios de alta.",
+    "2. **BRASIL. Ministério da Saúde.** *Chikungunya: manejo clínico*. **2. ed. revisada, julho de 2026**. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/chikungunya-manejo-clinico-2o-edicao-revisada.pdf . Usada para classificação temporal, manifestações extra-articulares, fisiopatologia/implicações e tratamento por fase.",
+    "3. **BRASIL. Ministério da Saúde.** *Zika vírus — informações clínicas e prevenção*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/z/zika-virus . Usada para apresentação, proteção individual, prevenção sexual e cuidado gestacional.",
+    "4. **BRASIL. Ministério da Saúde.** *Síndrome congênita associada à infecção pelo vírus Zika*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/scz . Usada para espectro congênito, diagnósticos diferenciais e seguimento.",
+    "5. **BRASIL. Ministério da Saúde.** *Vacina contra dengue do Butantan — faixa etária e recomendação SUS*, FAQ publicada em abril/2026. https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/para-qual-faixa-etaria-esta .",
+    "6. **BRASIL. Ministério da Saúde.** *Quem pode receber a vacina contra a dengue do Instituto Butantan?*, FAQ abril/2026. https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/quem-pode-receber-a-vacina .",
+    "7. **BRASIL. Ministério da Saúde.** *Nota Técnica nº 11/2026 — estratégia de vacinação de trabalhadores da APS com a vacina Butantan-DV*. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-11-2026-cgici-dpni-svsa-ms.pdf/view .",
+    "8. **BRASIL. Ministério da Saúde.** *Chikungunya — informações para profissionais e população*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/chikungunya/chikungunya .",
+    "**Parecer editorial preliminar:** cobertura original e extensa, casos comentados e questões com alternativas justificadas. No entanto, atingir 60K caracteres **não é certificação**. Antes de publicação, conferir integralmente protocolos de dengue e chikungunya nas regiões de tabelas/algoritmos, adequar manejo em população pediátrica, validar intervenções de choque e medicações com revisão por médico, concluir curadoria de imagens e passar por teste de autossuficiência e visualização desktop/PWA. **Sem merge e sem deploy.**"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue/publicacoes/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/chikungunya-manejo-clinico-2o-edicao-revisada.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/z/zika-virus",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/scz",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/para-qual-faixa-etaria-esta",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/quem-pode-receber-a-vacina",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-11-2026-cgici-dpni-svsa-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/chikungunya/chikungunya"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **LOTE 09 | REDAÇÃO AUTORAL EM REVISÃO | 15/10/2026.** Material de ensino para internato, ENAMED e residência, não substitui avaliação clínica, regulação do SUS ou protocolo local. NÃO PUBLICADO e NÃO CERTIFICADO, sem deploy. > > **Etapa zero realizada:** benchmarking real de \\`06 - ARBOVIROSES.pdf\\` do Drive conectado (identificação textual Medicina Livre), restrito à verificação de cobertura de temas. A fonte contém afirmações antigas ou conflitantes, especificadas em \\`lote-09-aula-186-auditoria-pre-producao-arboviroses.md\\`; nenhuma redação, tabela ou arte foi copiada. > > **Referências nacionais verificadas integral ou parcialmente no "
+    },
+    {
+      "text": "O número de episódios ao longo da vida não fornece diagnóstico de gravidade individual. A ordem dos sorotipos, imunidade, idade, comorbidades e fatores virais também importam. Não afirmar que “ninguém pode ter dengue duas vezes no mesmo ano”: a duração e extensão da imunidade cruzada variam, e novo adoecimento depende de nova exposição. Esse tipo de frase absoluta não pertence a um material médico premium."
+    },
+    {
+      "text": "Durante essa fase, o paciente pode perder líquidos por febre, menor ingestão, vômitos ou diarreia. A orientação de hidratação oral e sinais de retorno começa **antes** de qualquer exame específico, pois muitas pessoas pioram justamente quando deixam de acompanhar sua hidratação. A escolha de antitérmico/analgésico deve evitar **salicilatos e AINEs** na suspeita de dengue pelo risco hemorrágico/renal; paracetamol ou dipirona podem ser utilizados conforme contraindicações, idade e protocolo."
+    },
+    {
+      "text": "O diagnóstico sindrômico é sustentado por epidemiologia e apresentação compatível, mas a decisão inicial tem dois eixos simultâneos: **é dengue provável?** e **o paciente está em risco de complicação agora?** A segunda pergunta é prioritária na triagem. Não esperar PCR, antígeno NS1 ou IgM para hidratar uma pessoa com sinais de alarme, nem usar teste negativo para negar choque em contexto compatível."
+    },
+    {
+      "text": "Inspecionar estado geral, consciência, coloração e temperatura periférica, tempo de enchimento capilar, mucosas, volume respiratório, bulhas, abdome e sinais de sangramento. Aferir PA em contexto e **pressão de pulso (PAS − PAD)**; p.ex., PA 105/95 mmHg produz pressão de pulso de **10 mmHg**, valor preocupante com taquicardia e perfusão ruim, apesar de PAS acima de 100. Aferir frequência cardíaca, respiratória e temperatura e, se possível, medir diurese. Nas crianças, usar referências etárias; nos idosos, pesquisar hipotensão ortostática conforme estabilidade, sem provocar síncope em paciente grave."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

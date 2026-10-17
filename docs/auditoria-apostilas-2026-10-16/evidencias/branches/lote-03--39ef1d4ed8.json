@@ -1,0 +1,401 @@
+{
+  "sha": "39ef1d4ed8f123eea43345c4cd0d3a74fd0723e4",
+  "path": "apostilas/_rascunhos/lote-03/46-asma.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--39ef1d4ed8",
+  "title": "LURIA | AULA 46 — ASMA",
+  "format": ".md",
+  "chars_estimated": 97762,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | AULA 46 — ASMA"
+    },
+    {
+      "title": "Registro comparativo obrigatório (Drive × LURIA × evidência)"
+    },
+    {
+      "title": "1. O conceito que sustenta todo o raciocínio"
+    },
+    {
+      "title": "2. Imunologia e fenótipos: quando isso modifica a conduta"
+    },
+    {
+      "title": "3. História e exame físico orientados"
+    },
+    {
+      "title": "4. Diagnóstico objetivo e interpretação da função pulmonar"
+    },
+    {
+      "title": "5. Avaliar controle e risco em eixos separados"
+    },
+    {
+      "title": "6. Tratamento de manutenção: reduzir inflamação e exacerbações"
+    },
+    {
+      "title": "7. Manejo da exacerbação: reconhecimento, tratamento e reavaliação"
+    },
+    {
+      "title": "8. Populações e situações especiais"
+    },
+    {
+      "title": "9. Algoritmo decisório textual"
+    },
+    {
+      "title": "10. Casos clínicos originais comentados"
+    },
+    {
+      "title": "Caso 1 — Sintomas intermitentes e espirometria normal"
+    },
+    {
+      "title": "Caso 2 — “Asma grave” que não usa controlador"
+    },
+    {
+      "title": "Caso 3 — Crise com deterioração"
+    },
+    {
+      "title": "Caso 4 — Asma ou outra causa de dispneia?"
+    },
+    {
+      "title": "11. Primeira bateria: seis questões originais comentadas integralmente"
+    },
+    {
+      "title": "Questão 1 — Espirometria normal e suspeita clínica"
+    },
+    {
+      "title": "Questão 2 — Resposta broncodilatadora no adulto"
+    },
+    {
+      "title": "Questão 3 — Segurança no tratamento da asma confirmada"
+    },
+    {
+      "title": "Questão 4 — Exacerbação com deterioração neurológica"
+    },
+    {
+      "title": "Questão 5 — Asma difícil de tratar ou grave?"
+    },
+    {
+      "title": "Questão 6 — Alta após crise asmática"
+    },
+    {
+      "title": "12. Itens para figuras médicas (somente plano editorial)"
+    },
+    {
+      "title": "13. Fisiopatologia integrada: da lesão epitelial ao aprisionamento de ar"
+    },
+    {
+      "title": "13.1 A inflamação começa na interface com o ambiente"
+    },
+    {
+      "title": "13.2 Resistência das vias aéreas e ventilação heterogênea"
+    },
+    {
+      "title": "13.3 Por que a expiração sofre mais?"
+    },
+    {
+      "title": "13.4 Trocas gasosas na exacerbação"
+    },
+    {
+      "title": "13.5 Hiperresponsividade e gatilhos"
+    },
+    {
+      "title": "14. Epidemiologia, fatores de risco e apresentação heterogênea"
+    },
+    {
+      "title": "14.1 Importância clínica e carga de doença"
+    },
+    {
+      "title": "14.2 Fatores predisponentes e modificadores"
+    },
+    {
+      "title": "14.3 Fenótipos clínicos de interesse"
+    },
+    {
+      "title": "15. Diagnóstico funcional avançado: interpretar medidas sem decorar um único número"
+    },
+    {
+      "title": "15.1 Espirometria: o que é necessário para interpretação válida?"
+    },
+    {
+      "title": "15.2 Exemplo numérico com adulto"
+    },
+    {
+      "title": "15.3 Crianças e denominador de porcentagem"
+    },
+    {
+      "title": "15.4 Pico de fluxo: variabilidade e limitações"
+    },
+    {
+      "title": "15.5 Quando considerar broncoprovocação?"
+    },
+    {
+      "title": "15.6 Biomarcadores e alergia: o que acrescentam ao diagnóstico?"
+    },
+    {
+      "title": "16. Diagnósticos diferenciais por cenário clínico"
+    },
+    {
+      "title": "16.1 Chiado e dispneia em jovem"
+    },
+    {
+      "title": "16.2 Tosse isolada"
+    },
+    {
+      "title": "16.3 Adulto fumante de longa data"
+    },
+    {
+      "title": "16.4 Dispneia com sinais sistêmicos"
+    },
+    {
+      "title": "17. Controle e gravidade: avaliar o que importa para o futuro"
+    },
+    {
+      "title": "17.1 Perguntas das últimas quatro semanas"
+    },
+    {
+      "title": "17.2 Fatores de risco de exacerbação independentemente do controle"
+    },
+    {
+      "title": "17.3 Asma difícil de tratar x asma grave"
+    },
+    {
+      "title": "18. Farmacologia terapêutica: escolher mecanismo e minimizar dano"
+    },
+    {
+      "title": "18.1 Corticoides inalatórios (CI): o eixo da prevenção"
+    },
+    {
+      "title": "18.2 SABA e LABA: a diferença não é apenas duração"
+    },
+    {
+      "title": "18.3 Antagonistas muscarínicos e leucotrienos"
+    },
+    {
+      "title": "18.4 Corticoide sistêmico: benefício na crise, custo na repetição"
+    },
+    {
+      "title": "18.5 Um quadro de escolhas por propósito"
+    },
+    {
+      "title": "19. Tratamento escalonado em adultos e adolescentes: estratégia preferencial e alternativa"
+    },
+    {
+      "title": "19.1 Por que o tratamento em etapas não é uma escada fixa?"
+    },
+    {
+      "title": "19.2 Estratégia preferencial — interpretação clínica"
+    },
+    {
+      "title": "19.3 Estratégia alternativa — quando não é possível AIR/MART"
+    },
+    {
+      "title": "19.4 Uso real no SUS e doses"
+    },
+    {
+      "title": "19.5 Critérios de escolha e passo de volta"
+    },
+    {
+      "title": "20. Tratamento em crianças de 6 a 11 anos — novidades de 2026 e limites brasileiros"
+    },
+    {
+      "title": "20.1 A criança não é um adulto com dose menor"
+    },
+    {
+      "title": "20.2 Técnica inalatória pediátrica"
+    },
+    {
+      "title": "20.3 Crescimento, efeitos adversos e risco real"
+    },
+    {
+      "title": "20.4 Antes dos seis anos"
+    },
+    {
+      "title": "21. Exacerbação aguda — raciocínio do pronto atendimento"
+    },
+    {
+      "title": "21.1 Reconhecer ameaça à vida em segundos"
+    },
+    {
+      "title": "21.2 O atendimento por prioridades"
+    },
+    {
+      "title": "21.3 Oxigênio e decisão de nível de cuidado"
+    },
+    {
+      "title": "21.4 Sulfato de magnésio intravenoso"
+    },
+    {
+      "title": "21.5 Exames: perguntar o que realmente muda conduta"
+    },
+    {
+      "title": "21.6 Ventilação não invasiva e invasiva: quando a fisiologia muda"
+    },
+    {
+      "title": "21.7 Alta da urgência: uma transição de risco"
+    },
+    {
+      "title": "22. Asma grave, fenotipagem e tratamentos adicionais no SUS"
+    },
+    {
+      "title": "22.1 Identificar o que não é gravidade intrínseca"
+    },
+    {
+      "title": "22.2 Marcadores tipo 2 e interpretação"
+    },
+    {
+      "title": "22.3 Imunobiológicos efetivamente relacionados ao PCDT 2026"
+    },
+    {
+      "title": "22.4 Escolha individual e monitoramento do efeito"
+    },
+    {
+      "title": "22.5 Corticoide oral crônico e efeitos cumulativos"
+    },
+    {
+      "title": "23. Gestão longitudinal, educação e prescrição realmente executável"
+    },
+    {
+      "title": "23.1 Avaliar — ajustar — revisar"
+    },
+    {
+      "title": "23.2 Técnica de inalação: erro frequente, impacto grande"
+    },
+    {
+      "title": "23.3 Plano de ação escrito"
+    },
+    {
+      "title": "23.4 Prevenção de efeitos adversos, vacinação e comorbidades"
+    },
+    {
+      "title": "23.5 Acompanhamento após exacerbação e sinais para encaminhar"
+    },
+    {
+      "title": "24. Situações especiais e armadilhas de comorbidades"
+    },
+    {
+      "title": "24.1 Gestante com asma"
+    },
+    {
+      "title": "24.2 Lactação"
+    },
+    {
+      "title": "24.3 Idoso, cardiopatia e risco de arritmia"
+    },
+    {
+      "title": "24.4 Trabalho e ambiente"
+    },
+    {
+      "title": "24.5 AINEs e doença respiratória exacerbada por AINE"
+    },
+    {
+      "title": "24.6 Saúde mental e percepção dos sintomas"
+    },
+    {
+      "title": "25. Casos de integração clínica avançada"
+    },
+    {
+      "title": "Caso 5 — Criança com resposta broncodilatadora diferente entre duas diretrizes"
+    },
+    {
+      "title": "Caso 6 — Resgate excessivo e “asma leve”"
+    },
+    {
+      "title": "Caso 7 — Exacerbação com tórax silencioso e PaCO₂ “normal”"
+    },
+    {
+      "title": "Caso 8 — Asma ou insuficiência cardíaca no idoso?"
+    },
+    {
+      "title": "Caso 9 — Asma ocupacional: exame normal durante férias"
+    },
+    {
+      "title": "Caso 10 — Fenótipo eosinofílico grave após otimização adequada"
+    },
+    {
+      "title": "26. Questões adicionais originais — alternativas e comentários completos"
+    },
+    {
+      "title": "Questão 7 — Cálculo de resposta pediátrica com denominadores diferentes"
+    },
+    {
+      "title": "Questão 8 — AIR versus MART"
+    },
+    {
+      "title": "Questão 9 — Atualização pediátrica em 2026"
+    },
+    {
+      "title": "Questão 10 — Exacerbação e sedação"
+    },
+    {
+      "title": "Questão 11 — Corticoide oral após crise"
+    },
+    {
+      "title": "Questão 12 — Asma grave e imunobiológico no SUS"
+    },
+    {
+      "title": "Questão 13 — Dispneia no esforço sem resposta ao broncodilatador"
+    },
+    {
+      "title": "Questão 14 — Técnica e adesão antes da escalada"
+    },
+    {
+      "title": "Referências e evidência de verificação"
+    },
+    {
+      "title": "Pendências antes da homologação"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. PCDT da Asma, atualizado 02/04/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "2. GINA. *2026 GINA Summary Guide*, consulta a página oficial em 14/10/2026. https://ginasthma.org/2026-gina-summary-guide/",
+    "3. GINA. *2026 Strategy Report*, acesso orientado pela página oficial, com restrições de reprodução. https://ginasthma.org/",
+    "4. Sociedade Brasileira de Pneumologia e Tisiologia. Portal de consensos e diretrizes — Asma. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "5. BTS/NICE/SIGN. Asthma diagnosis, monitoring and chronic management (NG245), recomendações públicas. https://www.nice.org.uk/guidance/ng245/chapter/recommendations",
+    "1. Revisão pneumológica e farmacológica especializada do PCDT Asma (Portaria Conjunta SAES/SCTIE nº 43/2026), incluindo doses máximas diárias de CI-formoterol, diferenças entre dose medida e liberada, ajustes por dispositivo/idade, critérios de prescrição do SUS e imunobiológicos.",
+    "2. Conferência ponto a ponto dos critérios espirométricos pediátricos conforme PCDT 2026 e GINA 2026, sem fundir porcentagem relativa ao basal e ao previsto.",
+    "3. Revisão de autossuficiência clínica: avaliar casos, quatorze questões de residência, possíveis inconsistências nas alternativas e exemplos numéricos, e lacunas no ensino de crise grave.",
+    "4. Curadoria e aprovação via Admin de imagens e diagramas úteis; a documentação GINA tem restrições expressas de reprodução e de uso comercial, e suas figuras não serão copiadas.",
+    "5. Conversão para HTML no padrão LURIA com índice, tabelas, casos/questões expansíveis, ferramentas de estudo e testes desktop/PWA. Não colocar link no catálogo público antes de homologar.",
+    "6. Verificação de interoperabilidade com flashcards, simulador e bulário e de duplicação temática com DPOC (aula 51) e temas pediátricos.",
+    "**Estado correto:** manuscrito extenso e cientificamente orientado por fontes 2026, porém **TEXTO_APROFUNDADO_REVISAO_PENDENTE**. Nenhuma publicação, imagem não licenciada ou homologação foi autorizada."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://ginasthma.org/",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "https://www.nice.org.uk/guidance/ng245/chapter/recommendations"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Asma é uma doença heterogênea, em geral caracterizada por inflamação crônica das vias aéreas e história de sintomas respiratórios variáveis — sibilância, dispneia, aperto torácico e tosse — associados à limitação variável do fluxo aéreo expiratório. A variabilidade é a principal pista: intensidade e frequência oscilam ao longo de dias, estações e exposições; sintomas podem piorar à noite, ao despertar, com exercício ou infecção respiratória. **Espirometria normal entre episódios não exclui asma.** Por outro lado, nenhuma crise isolada de sibilância em adulto comprova diagnóstico de asma."
+    },
+    {
+      "text": "É importante separar **fenótipo** (características clínicas e inflamatórias observáveis), **endótipo** (mecanismo biológico subjacente) e **gravidade** (intensidade de tratamento necessária para manter controle e prevenir exacerbações). A classificação de asma grave não deve ser atribuída só por muitos sintomas: primeiro confirmar diagnóstico, checar adesão, técnica inalatória, exposição ambiental e comorbidades. Biomarcadores como eosinófilos e FeNO apoiam decisões seletivas, mas não isolam diagnóstico e podem ser modificados por corticoides, tabagismo e infecções."
+    },
+    {
+      "text": "O diagnóstico combina sintomas compatíveis com **evidência de variabilidade excessiva da função expiratória** sempre que factível. Registrar função antes de iniciar controlador quando possível, sem atrasar o tratamento se houver risco clínico. Uma resposta broncodilatadora positiva em adulto com sintomas típicos é aumento do VEF1 de pelo menos 12% **e** pelo menos 200 mL em relação ao valor pré-broncodilatador, critério mantido no documento GINA 2026 para confirmação clínica; outros critérios podem ser considerados conforme diretriz, método e faixa etária. Em crianças, os critérios percentuais diferem e devem ser consultados na tabela etária "
+    },
+    {
+      "text": "Interpretação por etapas: qualidade técnica das manobras; relação VEF1/CVF comparada ao limite inferior da normalidade; VEF1 em relação ao previsto; mudança após broncodilatador; associação com história variável. Um traçado normal após broncodilatador, fora de crise ou durante uso de CI, não afasta doença; repetir na fase sintomática, monitorar pico de fluxo ou avaliar broncoprovocação em serviço apropriado pode esclarecer. Resultados discrepantes requerem reavaliar técnica, uso anterior de medicações e diagnósticos alternativos."
+    },
+    {
+      "text": "Diagnósticos diferenciais a considerar: DPOC (história de exposição e obstrução persistente), disfunção laríngea induzível, insuficiência cardíaca, bronquiectasias, aspiração/refluxo em cenários específicos, tosse crônica por vias aéreas superiores, embolia pulmonar, corpo estranho e alterações estruturais. Sibilância não é sinônimo de asma. A coexistência de asma e obstrução persistente relacionada a tabagismo não deve ser resolvida forçando uma dicotomia artificial."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

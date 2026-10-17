@@ -1,0 +1,316 @@
+{
+  "sha": "4b3b0c475287076bdb56c6bf0a80437d9b40e289",
+  "path": "apostilas/_rascunhos/lote-09-aula-185-sindromes-geriatricas-quedas-polifarmacia.md",
+  "branches": [
+    "origin/editorial/lote-09-producao-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--4b3b0c4752",
+  "title": "LURIA — Apostila 185 | Síndromes geriátricas, quedas e polifarmácia",
+  "format": ".md",
+  "chars_estimated": 63970,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 185 | Síndromes geriátricas, quedas e polifarmácia"
+    },
+    {
+      "title": "1. A pergunta principal da geriatria: “o que esta pessoa consegue fazer?”"
+    },
+    {
+      "title": "1.1 Idade, multimorbidade e vulnerabilidade"
+    },
+    {
+      "title": "2. Síndromes geriátricas e os cinco gigantes históricos"
+    },
+    {
+      "title": "2.1 As síndromes não devem ser tratadas em compartimentos"
+    },
+    {
+      "title": "3. Fragilidade: conceito, instrumentos e implicação clínica"
+    },
+    {
+      "title": "3.1 Fenótipo de Fried"
+    },
+    {
+      "title": "3.2 Clinical Frailty Scale (CFS) e julgamento basal"
+    },
+    {
+      "title": "3.3 Fragilidade, comorbidade e incapacidade não são sinônimos"
+    },
+    {
+      "title": "4. Sarcopenia, força e mobilidade"
+    },
+    {
+      "title": "4.1 Tratamento: músculo precisa ser utilizado"
+    },
+    {
+      "title": "4.2 Descondicionamento durante internação"
+    },
+    {
+      "title": "5. Quedas: nunca aceitar “tropeçou porque é velho” como investigação"
+    },
+    {
+      "title": "5.1 Quem deve receber avaliação mais completa?"
+    },
+    {
+      "title": "5.2 Avaliação multifatorial da queda"
+    },
+    {
+      "title": "5.3 Hipotensão ortostática"
+    },
+    {
+      "title": "5.4 Síncope versus queda mecânica"
+    },
+    {
+      "title": "6. Prevenção de quedas: intervenção combinada, não uma única vitamina"
+    },
+    {
+      "title": "6.1 Medo de cair e restrição de atividades"
+    },
+    {
+      "title": "7. Polifarmácia: definição, risco e raciocínio de revisão"
+    },
+    {
+      "title": "7.1 Prescrição em cascata: a armadilha que cresce"
+    },
+    {
+      "title": "7.2 Reconciliação medicamentosa completa"
+    },
+    {
+      "title": "7.3 Critérios explícitos: Beers e STOPP/START"
+    },
+    {
+      "title": "8. Desprescrição estruturada: reduzir dano sem descompensar doença"
+    },
+    {
+      "title": "8.1 Benzodiazepínicos e drogas Z"
+    },
+    {
+      "title": "8.2 Anticolinérgicos e carga cumulativa"
+    },
+    {
+      "title": "8.3 Antipsicóticos e delirium/demência"
+    },
+    {
+      "title": "8.4 AINEs, anticoagulantes e função renal"
+    },
+    {
+      "title": "9. Delirium: alteração aguda de atenção, consciência e cognição"
+    },
+    {
+      "title": "9.1 Risco e fatores precipitantes"
+    },
+    {
+      "title": "9.2 Diagnóstico e instrumentos"
+    },
+    {
+      "title": "9.3 Manejo: tratar causa e reduzir agressões ambientais"
+    },
+    {
+      "title": "9.4 Diferenciar delirium, demência e depressão"
+    },
+    {
+      "title": "10. Incontinência, constipação, sono e lesão por pressão no plano geriátrico"
+    },
+    {
+      "title": "11. Plano de atendimento geriátrico em três cenários"
+    },
+    {
+      "title": "Cenário ambulatorial: paciente com duas quedas"
+    },
+    {
+      "title": "Cenário hospitalar: pneumonia e confusão aguda"
+    },
+    {
+      "title": "Cenário de transição de cuidado: alta após fratura"
+    },
+    {
+      "title": "12. Algoritmo original de avaliação após queda"
+    },
+    {
+      "title": "13. Quatro casos clínicos originais"
+    },
+    {
+      "title": "Caso 1 — Queda depois de novo hipnótico"
+    },
+    {
+      "title": "Caso 2 — Hipoatividade após cirurgia"
+    },
+    {
+      "title": "Caso 3 — “Creatinina normal” e toxicidade"
+    },
+    {
+      "title": "Caso 4 — Sarcopenia, fragilidade e risco de fratura"
+    },
+    {
+      "title": "14. Seis questões comentadas"
+    },
+    {
+      "title": "Questão 1 — Avaliação de quedas"
+    },
+    {
+      "title": "Questão 2 — Hipotensão ortostática"
+    },
+    {
+      "title": "Questão 3 — Delirium versus demência"
+    },
+    {
+      "title": "Questão 4 — Polifarmácia apropriada"
+    },
+    {
+      "title": "Questão 5 — Fragilidade"
+    },
+    {
+      "title": "Questão 6 — Revisão de psicotrópico"
+    },
+    {
+      "title": "15. Referências verificáveis"
+    },
+    {
+      "title": "16. Pendências editoriais e matriz de cobertura"
+    },
+    {
+      "title": "17. Quedas e fraturas: por que a lesão é consequência de dois processos?"
+    },
+    {
+      "title": "17.1 Osteoporose e avaliação de risco"
+    },
+    {
+      "title": "17.2 Fratura de quadril: evento sentinela"
+    },
+    {
+      "title": "17.3 Dispositivos de auxílio e ajuste de ambiente"
+    },
+    {
+      "title": "17.4 Quando a queda pode sinalizar emergência neurológica?"
+    },
+    {
+      "title": "18. Marcha e equilíbrio: padrões clínicos que refinam hipóteses"
+    },
+    {
+      "title": "18.1 Marcha parkinsoniana"
+    },
+    {
+      "title": "18.2 Marcha neuropática/sensitiva"
+    },
+    {
+      "title": "18.3 Marcha vestibular e cerebelar"
+    },
+    {
+      "title": "18.4 Hidrocefalia de pressão normal"
+    },
+    {
+      "title": "18.5 Avaliação de desempenho: interpretar, não decorar somente segundos"
+    },
+    {
+      "title": "19. Nutrição geriátrica, perda de peso e disfagia"
+    },
+    {
+      "title": "19.1 Disfagia e aspiração"
+    },
+    {
+      "title": "19.2 Proteína, energia e exercício"
+    },
+    {
+      "title": "19.3 Saúde bucal como determinante funcional"
+    },
+    {
+      "title": "20. Cognição, humor e autonomia: diferentes trajetórias"
+    },
+    {
+      "title": "20.1 Comprometimento cognitivo não equivale imediatamente a demência"
+    },
+    {
+      "title": "20.2 Demência e delirium podem coexistir"
+    },
+    {
+      "title": "20.3 Depressão, apatia e isolamento"
+    },
+    {
+      "title": "20.4 Preservar autonomia com apoio proporcional"
+    },
+    {
+      "title": "21. Transição do hospital para casa: momento de alto risco para iatrogenia"
+    },
+    {
+      "title": "21.1 Planejamento funcional de alta"
+    },
+    {
+      "title": "21.2 Compartilhamento de informação com APS"
+    },
+    {
+      "title": "22. Prioridade terapêutica quando há multimorbidade"
+    },
+    {
+      "title": "22.1 Decisão compartilhada e metas concretas"
+    },
+    {
+      "title": "22.2 Quando encaminhar"
+    },
+    {
+      "title": "23. Erros de prova e prática — síntese causal"
+    },
+    {
+      "title": "24. Casos integradores suplementares"
+    },
+    {
+      "title": "25. Instrumentos e medidas para revisão posterior"
+    }
+  ],
+  "reference_entries": [
+    "1. NICE. **Falls: assessment and prevention in older people and in people 50 and over at higher risk (NG249)**. Publicada em 29 abr. 2025. https://www.nice.org.uk/guidance/ng249/chapter/Recommendations/",
+    "2. NICE. **Delirium: prevention, diagnosis and management in hospital and long-term care (CG103)**. Recomendações sobre 4AT e CAM-ICU atualizadas em 2023. https://www.nice.org.uk/guidance/cg103/chapter/Recommendations",
+    "3. AMERICAN GERIATRICS SOCIETY. **2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults.** *J Am Geriatr Soc*. 2023. Texto integral: https://pmc.ncbi.nlm.nih.gov/articles/PMC12478568/",
+    "4. O’MAHONY, D. et al. **STOPP/START criteria for potentially inappropriate prescribing in older people: version 3.** *Eur Geriatr Med*. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10447584/",
+    "**COMPLEMENTAR NA PRÓXIMA REVISÃO:** este é rascunho inicial de capítulo clínico, não obra final. Sem benchmark geriátrico equivalente no Drive, a comparação permanece PARCIAL. Não copiar ou parafrasear de perto o resumo de síndromes cognitivas consultado. Expandir cada domínio com conteúdo novo e clinicamente útil, sem repetição artificial. **Não publicar nem certificar sem validações editoriais e de imagem.**",
+    "**Exemplo de risco:** durante internação, hipoglicemia leva à suspensão de sulfonilureia e introdução de outro esquema; ao voltar para casa, a pessoa retoma automaticamente todos os comprimidos da caixa antiga além dos novos e sofre hipoglicemia e queda. A reconciliação deve conferir caixas, receitas e entendimento, não apenas imprimir nova lista.",
+    "**Caso A — síncope confundida com queda:** homem de 78 anos relata cair no banheiro sem lembrar de tropeço, após episódios de palpitações. ECG revela alteração de ritmo relevante. A abordagem deve priorizar possível síncope arrítmica e risco cardiovascular, não apenas reabilitação de marcha. Uma queda sem testemunha pode ocultar perda transitória de consciência.",
+    "**Caso B — carga anticolinérgica:** mulher de 82 anos começa fármaco para bexiga hiperativa e antialérgico sedativo. Desenvolve constipação, retenção urinária e confusão. A revisão encontra combinação anticolinérgica e vários precipitantes. O manejo depende de avaliação clínica e retirada/troca segura dos agentes responsáveis, não necessariamente de antipsicótico.",
+    "**Caso C — alta com duplicidade:** pessoa de 85 anos recebe prescrição de analgésico com nome comercial novo, mas retoma em casa equivalente anterior. Apresenta sedação e hipotensão. A reconciliação revela duplicação de princípio ativo. O caso ilustra por que perguntar apenas “quantos remédios?” é menos útil que conferir cada produto real.",
+    "**Caso D — dieta e exercício como prevenção:** mulher de 79 anos, com fraqueza de preensão e marcha lenta, recebe recomendação de repouso por medo de queda, reduz atividade e perde ainda mais independência. A intervenção correta envolve avaliação de risco, treino de força/equilíbrio progressivo e plano nutricional conforme necessidade, preservando mobilidade segura.",
+    "- **Avaliação funcional:** ABVD e AIVD com descrição concreta da ajuda necessária; distinguir não realizar por opção cultural de não conseguir realizar por declínio.",
+    "- **Fragilidade:** Fried com medidas validadas e CFS baseada em estado pré-evento, não quadro de internação aguda.",
+    "- **Sarcopenia:** triagem clínica, força de preensão, levantar-se da cadeira, velocidade de marcha, massa muscular quando indicada; evitar usar uma medida isolada como diagnóstico integral.",
+    "- **Quedas:** relato de eventos do último ano, PA ortostática, exame de marcha/equilíbrio, revisão de fármacos e domicílio; TUG como informação funcional, não previsão absoluta.",
+    "- **Delirium:** 4AT em hospital/longa permanência, CAM-ICU/ICDSC em contexto de UTI/recuperação, com história basal e procura de precipitantes.",
+    "- **Prescrição:** reconciliação real, AGS Beers 2023, STOPP/START v3, avaliação de função renal, contexto e prioridades.",
+    "- **Nutrição:** história alimentar/ponderal, disfagia, exame e ferramentas validadas como MNA quando pertinentes.",
+    "- **Risco ósseo:** fratura por fragilidade, fatores clínicos, densitometria e avaliação de risco apropriada, sem confundir risco de fratura com frequência de quedas.",
+    "**Aviso de status:** este complemento acrescenta temas relevantes, mas **não encerra auditoria do lote**. O objetivo de 60 mil caracteres didáticos úteis precisa ser medido após remover marcação e eventuais redundâncias. Antes de integrar ao site, conferir cada critério, doses, interações e referências, realizar comparação editorial equivalente quando acessível, curadoria de imagens com licenças e testes desktop/PWA. Rascunho, sem merge e sem deploy."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng249/chapter/Recommendations/",
+    "https://www.nice.org.uk/guidance/cg103/chapter/Recommendations",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12478568/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10447584/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Status: RASCUNHO AUTORAL PARCIAL, NÃO CERTIFICADO/NÃO PUBLICADO · Lote 09 (15/10/2026).** Objetivo: construir material autossuficiente em geriatria prática, integrando fragilidade, imobilidade, quedas, sarcopenia, síndromes cognitivas, iatrogenia, multimorbidade e desprescrição. Não usar este estágio como protocolo prescritivo. > > **Etapa zero obrigatória — benchmark parcial efetivamente realizado:** buscas no Google Drive conectado por “geriatria”, “quedas em idosos”, “polifarmacia”, “fragilidade” e “delirium”. Foi localizado e aberto o PDF “Síndromes cognitivas.pdf” (identificação no texto “Pré-Operatório — Maysa Mismetti”), com tópico"
+    },
+    {
+      "text": "A geriatria não se resume a prescrever medicação em pessoas mais velhas. Seu núcleo é compreender a interação entre **reserva fisiológica, doenças múltiplas, função, cognição, medicamentos, ambiente e objetivos de vida**. Duas pessoas de 80 anos podem apresentar a mesma pressão, creatinina ou diagnóstico de hipertensão, mas ter capacidades muito diferentes para realizar tarefas, tolerar internações e se recuperar de infecções. Por isso, idade cronológica é importante, porém insuficiente para estimar vulnerabilidade, prognóstico ou intensidade de intervenção."
+    },
+    {
+      "text": "Dias de leito causam perda de força e tolerância ao esforço, pioram constipação, risco de trombose e lesão por pressão. Sempre que clinicamente seguro, mobilização precoce, fisioterapia, participação nas ABVD e prevenção de sedação desnecessária ajudam a preservar função. A meta de alta deve incluir **capacidade de transferir-se, caminhar com segurança e gerenciar autocuidado**, não somente resolução do diagnóstico infeccioso."
+    },
+    {
+      "text": "A **NICE NG249 (2025)** recomenda perguntar sobre quedas no último ano e indica avaliação abrangente em quem caiu e apresenta fragilidade, lesão com necessidade de tratamento, perda de consciência, incapacidade de levantar-se sem auxílio ou **duas ou mais quedas no último ano**. Se houve queda única sem esses critérios, avaliar marcha/equilíbrio e oferecer intervenção quando há alteração. Em hospital ou residência assistida, a avaliação deve considerar fatores individuais e ambiente. **A diretriz desaconselha usar calculadoras preditivas de quedas como substituto de avaliação clínica individual.**"
+    },
+    {
+      "text": "Em termos clássicos, queda sustentada de pelo menos **20 mmHg na pressão sistólica ou 10 mmHg na diastólica** dentro de aproximadamente **três minutos ao levantar** sugere hipotensão ortostática, com ressalvas para circunstâncias específicas e hipertensão supina. Medir em condição padronizada e registrar sintomas; queda assintomática ainda pode importar no risco de quedas. Pessoas com diabetes, doença de Parkinson, desidratação ou uso de vasodilatadores/diuréticos são suscetíveis."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

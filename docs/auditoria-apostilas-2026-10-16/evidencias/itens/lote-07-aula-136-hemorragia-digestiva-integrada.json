@@ -1,0 +1,623 @@
+{
+  "key": "lote-07-aula-136-hemorragia-digestiva-integrada",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md",
+  "title": "LURIA — LOTE 7 · AULA 136",
+  "source_sha256": "a0fc644e95a451db9bdc992b41f3626d7f15990044278d7f70e475b7cc8b7755",
+  "chars_estimated": 64924,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — LOTE 7 · AULA 136",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Hemorragia digestiva: integração clínica, localização e decisões da emergência",
+      "level": 1
+    },
+    {
+      "line": 9,
+      "title": "0. Etapa zero — comparativos reais",
+      "level": 2
+    },
+    {
+      "line": 18,
+      "title": "0A. Fronteiras curriculares verificadas em 15/10/2026",
+      "level": 2
+    },
+    {
+      "line": 37,
+      "title": "0A.1. Exercício transversal de decisão com fonte incerta",
+      "level": 3
+    },
+    {
+      "line": 48,
+      "title": "0A.2. Achados de sobreposição que exigem revisão editorial posterior",
+      "level": 3
+    },
+    {
+      "line": 59,
+      "title": "1. Três síndromes clínicas, não três cores de fezes",
+      "level": 2
+    },
+    {
+      "line": 67,
+      "title": "2. Reconhecer choque antes de classificar Forrest",
+      "level": 2
+    },
+    {
+      "line": 76,
+      "title": "3. Localizar por probabilidade sem atrasar terapia",
+      "level": 2
+    },
+    {
+      "line": 89,
+      "title": "4. Qual relógio endoscópico?",
+      "level": 2
+    },
+    {
+      "line": 97,
+      "title": "5. Antitrombóticos e hemostasia: tratar dois riscos em paralelo",
+      "level": 2
+    },
+    {
+      "line": 103,
+      "title": "6. Fontes não raras e raras — construir um diferencial útil",
+      "level": 2
+    },
+    {
+      "line": 114,
+      "title": "7. Ferramentas de risco: usar quando o paciente está vivo e a pergunta é correta",
+      "level": 2
+    },
+    {
+      "line": 124,
+      "title": "8. Algoritmo integrador",
+      "level": 2
+    },
+    {
+      "line": 136,
+      "title": "9. Quatro casos integradores",
+      "level": 2
+    },
+    {
+      "line": 138,
+      "title": "Caso 1 — hematêmese e cirrose",
+      "level": 3
+    },
+    {
+      "line": 141,
+      "title": "Caso 2 — hematoquezia e choque, origem indeterminada",
+      "level": 3
+    },
+    {
+      "line": 144,
+      "title": "Caso 3 — AAS secundário e úlcera",
+      "level": 3
+    },
+    {
+      "line": 147,
+      "title": "Caso 4 — EDA/colonoscopia negativas com anemia e novo sangramento",
+      "level": 3
+    },
+    {
+      "line": 150,
+      "title": "10. Seis questões autorais comentadas",
+      "level": 2
+    },
+    {
+      "line": 152,
+      "title": "Questão 1",
+      "level": 3
+    },
+    {
+      "line": 157,
+      "title": "Questão 2",
+      "level": 3
+    },
+    {
+      "line": 162,
+      "title": "Questão 3",
+      "level": 3
+    },
+    {
+      "line": 167,
+      "title": "Questão 4",
+      "level": 3
+    },
+    {
+      "line": 172,
+      "title": "Questão 5",
+      "level": 3
+    },
+    {
+      "line": 177,
+      "title": "Questão 6",
+      "level": 3
+    },
+    {
+      "line": 182,
+      "title": "11. Imagens/esquemas candidatos — sem publicação",
+      "level": 2
+    },
+    {
+      "line": 185,
+      "title": "12. Referências verificáveis",
+      "level": 2
+    },
+    {
+      "line": 192,
+      "title": "13. Qualidade e pendências",
+      "level": 2
+    },
+    {
+      "line": 203,
+      "title": "CAMADA INTEGRADORA AVANÇADA — A HEMORRAGIA COMO SÍNDROME",
+      "level": 1
+    },
+    {
+      "line": 206,
+      "title": "14. Anatomia funcional: onde sangue se transforma em sintoma",
+      "level": 2
+    },
+    {
+      "line": 208,
+      "title": "14.1. Esôfago, estômago e duodeno proximal",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "14.2. Hipertensão portal não é vasodilatação gástrica isolada",
+      "level": 3
+    },
+    {
+      "line": 218,
+      "title": "14.3. Cólon proximal, reto e fonte no delgado",
+      "level": 3
+    },
+    {
+      "line": 223,
+      "title": "14.4. A lesão que sangra pode ser consequência de outro problema",
+      "level": 3
+    },
+    {
+      "line": 226,
+      "title": "15. Fisiologia do choque hemorrágico — por que o primeiro Hb pode enganar",
+      "level": 2
+    },
+    {
+      "line": 228,
+      "title": "15.1. Perfusão e oferta de oxigênio",
+      "level": 3
+    },
+    {
+      "line": 233,
+      "title": "15.2. Exemplo de hemoglobina aparentemente tranquilizadora",
+      "level": 3
+    },
+    {
+      "line": 238,
+      "title": "15.3. Lactato não é sinônimo de localização",
+      "level": 3
+    },
+    {
+      "line": 241,
+      "title": "15.4. Pressão normalizada não garante hemostasia",
+      "level": 3
+    },
+    {
+      "line": 244,
+      "title": "16. Transfusão e hemostasia: evitar simultaneamente subtratamento e excesso",
+      "level": 2
+    },
+    {
+      "line": 246,
+      "title": "16.1. Concentrado de hemácias",
+      "level": 3
+    },
+    {
+      "line": 251,
+      "title": "16.2. Plaquetas, plasma e fibrinogênio",
+      "level": 3
+    },
+    {
+      "line": 256,
+      "title": "16.3. Unidade de sangue não é “um número que resolve”",
+      "level": 3
+    },
+    {
+      "line": 259,
+      "title": "16.4. Uma diferença de prioridade em hepatopata",
+      "level": 3
+    },
+    {
+      "line": 262,
+      "title": "17. História clínica focada em um minuto",
+      "level": 2
+    },
+    {
+      "line": 264,
+      "title": "17.1. Um roteiro para comunicação em equipe",
+      "level": 3
+    },
+    {
+      "line": 274,
+      "title": "17.2. Medicamentos: cada um muda uma pergunta",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "17.3. Cirurgias que alteram o mapa",
+      "level": 3
+    },
+    {
+      "line": 286,
+      "title": "18. Escolher o exame é escolher como controlar a fonte",
+      "level": 2
+    },
+    {
+      "line": 288,
+      "title": "18.1. EDA quando fonte alta é provável",
+      "level": 3
+    },
+    {
+      "line": 293,
+      "title": "18.2. EDA negativa: o que significa?",
+      "level": 3
+    },
+    {
+      "line": 296,
+      "title": "18.3. Colonoscopia quando provável HDB estável",
+      "level": 3
+    },
+    {
+      "line": 299,
+      "title": "18.4. CTA é a ponte da síndrome ativa para a radiologia intervencionista",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "18.5. Angiografia e embolização",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "18.6. Cápsula, enteroscopia e delgado",
+      "level": 3
+    },
+    {
+      "line": 312,
+      "title": "19. Manejo de úlcera hemorrágica: da imagem Forrest à alta",
+      "level": 2
+    },
+    {
+      "line": 314,
+      "title": "19.1. Classificação Forrest aplicada a conduta",
+      "level": 3
+    },
+    {
+      "line": 326,
+      "title": "19.2. Hemostasia durável importa",
+      "level": 3
+    },
+    {
+      "line": 331,
+      "title": "19.3. IBP e *H. pylori*",
+      "level": 3
+    },
+    {
+      "line": 334,
+      "title": "19.4. Sinais de ressangramento",
+      "level": 3
+    },
+    {
+      "line": 337,
+      "title": "19.5. Nutrição e ferro",
+      "level": 3
+    },
+    {
+      "line": 340,
+      "title": "20. Manejo varicoso como pacote pré-endoscópico e pós-hemostasia",
+      "level": 2
+    },
+    {
+      "line": 342,
+      "title": "20.1. Por que antibiótico em sangramento sem infecção comprovada?",
+      "level": 3
+    },
+    {
+      "line": 345,
+      "title": "20.2. Vasoativo e tempo",
+      "level": 3
+    },
+    {
+      "line": 348,
+      "title": "20.3. Técnica endoscópica não é igual em toda variz",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "20.4. TIPS precoce versus resgate",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "20.5. Profilaxia secundária de varizes",
+      "level": 3
+    },
+    {
+      "line": 361,
+      "title": "21. HDB: por que a colite dolorosa segue outro tratamento",
+      "level": 2
+    },
+    {
+      "line": 363,
+      "title": "21.1. Divertículo e angiodisplasia",
+      "level": 3
+    },
+    {
+      "line": 368,
+      "title": "21.2. Colite isquêmica",
+      "level": 3
+    },
+    {
+      "line": 371,
+      "title": "21.3. Doença inflamatória intestinal, infecção e tumor",
+      "level": 3
+    },
+    {
+      "line": 374,
+      "title": "21.4. Sangramento pós-procedimento",
+      "level": 3
+    },
+    {
+      "line": 377,
+      "title": "22. Paciente com antitrombóticos: o risco trombótico continua presente",
+      "level": 2
+    },
+    {
+      "line": 379,
+      "title": "22.1. Quatro cenários com implicações distintas",
+      "level": 3
+    },
+    {
+      "line": 385,
+      "title": "22.2. Reversão não é sinônimo de suspensão",
+      "level": 3
+    },
+    {
+      "line": 390,
+      "title": "22.3. Retomada evita risco tardio",
+      "level": 3
+    },
+    {
+      "line": 393,
+      "title": "23. Delirium, fragilidade, gestação e outros grupos especiais",
+      "level": 2
+    },
+    {
+      "line": 395,
+      "title": "23.1. Idosos e fragilidade",
+      "level": 3
+    },
+    {
+      "line": 398,
+      "title": "23.2. Gestantes",
+      "level": 3
+    },
+    {
+      "line": 401,
+      "title": "23.3. Crianças/adolescentes",
+      "level": 3
+    },
+    {
+      "line": 404,
+      "title": "23.4. Pacientes críticos/UTI",
+      "level": 3
+    },
+    {
+      "line": 408,
+      "title": "24. Simulações de decisão clínica: cinco pacientes, cinco caminhos",
+      "level": 2
+    },
+    {
+      "line": 410,
+      "title": "Caso 5 — pressão arterial recuperada, úlcera ainda sangrando",
+      "level": 3
+    },
+    {
+      "line": 423,
+      "title": "Caso 6 — sangue vivo e anticoagulação, mas a cor não localiza",
+      "level": 3
+    },
+    {
+      "line": 436,
+      "title": "Caso 7 — cirrose com sangramento de úlcera, não de variz",
+      "level": 3
+    },
+    {
+      "line": 449,
+      "title": "Caso 8 — sangramento sentinela após cirurgia da aorta",
+      "level": 3
+    },
+    {
+      "line": 462,
+      "title": "Caso 9 — sangramento oculto e exame negativo de má qualidade",
+      "level": 3
+    },
+    {
+      "line": 475,
+      "title": "25. Questões inéditas de integração — oito erros frequentes",
+      "level": 2
+    },
+    {
+      "line": 477,
+      "title": "Questão 7 — hemoglobina e choque",
+      "level": 3
+    },
+    {
+      "line": 483,
+      "title": "Questão 8 — relógios endoscópicos",
+      "level": 3
+    },
+    {
+      "line": 489,
+      "title": "Questão 9 — Forrest IIb e 2026",
+      "level": 3
+    },
+    {
+      "line": 495,
+      "title": "Questão 10 — CTA",
+      "level": 3
+    },
+    {
+      "line": 501,
+      "title": "Questão 11 — cirrose e úlcera",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "Questão 12 — antitrombóticos",
+      "level": 3
+    },
+    {
+      "line": 513,
+      "title": "Questão 13 — fístula aortoentérica",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "Questão 14 — exame “negativo” incompleto",
+      "level": 3
+    },
+    {
+      "line": 525,
+      "title": "26. Teste de autossuficiência: integração não precisa virar repetição",
+      "level": 2
+    },
+    {
+      "line": 527,
+      "title": "26.1. O que este livro agora ensina sem exigir outra leitura",
+      "level": 3
+    },
+    {
+      "line": 532,
+      "title": "26.2. Matriz conteúdo → caso → questão",
+      "level": 3
+    },
+    {
+      "line": 546,
+      "title": "26.3. O que permanece ausente",
+      "level": 3
+    },
+    {
+      "line": 549,
+      "title": "27. Referências adicionais e registro de versões",
+      "level": 2
+    },
+    {
+      "line": 557,
+      "title": "28. Checklist após aprofundamento",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Laine L et al. ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding. *Am J Gastroenterol*, 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "2. ESGE. Peptic ulcer bleeding, guideline update 2026. https://www.esge.com/guidelines",
+    "3. de Franchis R et al. Baveno VII. *J Hepatol*, 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "4. ACG. Updated guideline on acute lower gastrointestinal bleeding, 2023. https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+    "5. ESGE. Acute lower gastrointestinal bleeding, 2021. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+    "6. ESGE, Gralnek IM et al. **Endoscopic diagnosis and management of peptic ulcer bleeding — Update 2026.** *Endoscopy*. 2026;58(8):899–924. Epub 13/05/2026. DOI 10.1055/a-2863-8314. https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "7. ESGE. **Correction** to 2026 peptic ulcer bleeding update. Epub 22/05/2026. DOI 10.1055/a-2881-7411. https://pubmed.ncbi.nlm.nih.gov/42173116/",
+    "8. Baveno VII. **Acute variceal bleeding**, consenso de hipertensão portal. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "9. ACG. **Small Bowel Bleeding**, orientação educacional institucional; não substitui guideline integral. https://gi.org/topics/small-bowel-bleeding/",
+    "**Nota de revisão científica:** a ESGE de maio/2026 tem correção editorial publicada posteriormente. A fonte da correção foi identificada, mas as consequências textuais detalhadas não foram verificadas integralmente nesta rodada; validar antes da certificação. Nenhuma fonte do Google Drive é considerada substituta de diretriz atual."
+  ],
+  "external_links": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/guidelines",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gi.org/journals-publications/ebgi/stratifying-the-risk-of-bleeding-in-lower-gi-bleeding/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42173116/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://gi.org/topics/small-bowel-bleeding/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 4,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Apresentação:** homem de 70 anos chega com hematoquezia abundante, sudorese, hipotensão e síncope. Tem antecedente de cirrose, usa AAS após infarto e relata episódios anteriores de melena. **Diferenciais:** fonte colorretal (divertículo, angioectasia), HDA maciça por varizes, úlcera péptica em cirrótico, outras fontes; nem cirrose prova varizes, nem hematoquezia prova cólon. **Etapa 1 — risco:** ABCDE, acesso, tipagem/hemograma seriados e avaliação de choque; decisão transfusional não espera número mágico se há perda ameaçadora à vida. **Etapa 2 — evidência para localização:** melena prévia, sinais de hipertensão portal, uso de AINE/AAS, presença de hematêmese e função renal aumentam/diminuem probabilidades, sem fechar diagnóstico. **Etapa 3 — terapia temporal:** se suspeita relevante de sangramento varicoso, considerar pacote específico antes de EDA conforme protocolo; realizar investigação endoscópica após ressuscitação, e angio-TC/colonoscopia conforme estabilidade, suspeita e exames. **Etapa 4 — fonte definida:** caso se identifique úlcera gástrica, tratar o vaso/estigma e não apenas a pressão portal; se fonte distal persistente, seguir rota de HDB. **Etapa 5 — pós-hemostasia:** revisar AAS de prevenção **secundária cardiovascular**, *H. pylori* se úlcera, risco de ressangramento, anemia e retorno planejado. **Por que este caso importa:** a habilidade própria da 136 é **mudar de algoritmo quando novos dados surgem**, evitando ancoragem e tratamento de varizes imaginárias.",
+      "pattern": 0
+    },
+    {
+      "text": "**Área:** Clínica Médica / Gastroenterologia / Urgência **Situação:** **RASCUNHO INTEGRADOR**, não publicado e não certificado como livro-texto autossuficiente. **Revisão:** 14/10/2026. **Vínculos curriculares:** aula 127, hemorragia digestiva alta; aula 132, hemorragia digestiva baixa. **Objetivo desta aula:** não fabricar uma terceira apostila repetindo mecanicamente úlceras, varizes, divertículos e colonoscopia. Construir um eixo transversal de diagnóstico, risco, escolha de testes, ressuscitação e prevenção de erros — **com explicações suficientes para interpretar os casos sem memorizar respostas**. Antes de promover o material, integrar ou incorporar as explicações autossuficientes necessárias da 127/132 respeitando o fluxo de produção, sem duplicação na biblioteca.",
+      "pattern": 1
+    },
+    {
+      "text": "**Fontes clínicas primárias:** ACG 2021 HDA ulcerosa, ESGE *peptic ulcer bleeding* 2026, ESGE varizes 2022/Baveno VII 2022, ACG HDB 2023 e ESGE HDB 2021. As diferenças entre tempos de EDA (úlcera vs varizes) não devem ser apagadas em fluxograma único.",
+      "pattern": 1
+    },
+    {
+      "text": "**Hierarquia de urgência coerente nas quatro versões atuais:** - Em **choque por sangramento**, suporte e hemostasia caminham juntos; hemoglobina inicialmente \"normal\" não exclui perda maciça. - Se a principal hipótese é **sangramento por úlcera não varicosa e há estabilização**, organizar EDA geralmente **em até 24 h**, sem impor ≤6/≤12 h a todos conforme atualização ESGE 2026. - Se há suspeita **de varizes esofagogástricas sangrantes**, o pacote pré-endoscópico inclui vasoativo e antibioticoprofilaxia apropriados, e a EDA é **idealmente em até 12 h após ressuscitação**. - Em **HDB com paciente estabilizado**, colonoscopia bem preparada durante internação pode ter mais valor que procedimento obrigatório abaixo de 24 h; se há **sangramento ativo hemodinamicamente significativo**, avaliar angio-TC e via de radiologia intervencionista conforme recurso, sem presumir que a fonte está no cólon. - **TIPS** possui perguntas diferentes: controle de ascite refratária em paciente selecionado (aula 126); prevenção pré-emptiva em subgrupo de alto risco de hemorragia varicosa ou resgate após falha (127). O fato de ambos se chamarem TIPS **não significa critério idêntico**. - Retorno de **antiagregação/anticoagulação** exige equilibrar hemostasia e trombose, especialmente após stent/AVC, e não pode ser dado pelo atalho \"suspender tudo até nunca sangrar\".",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Clínica Médica / Gastroenterologia / Urgência **Situação:** **RASCUNHO INTEGRADOR**, não publicado e não certificado como livro-texto autossuficiente. **Revisão:** 14/10/2026. **Vínculos curriculares:** aula 127, hemorragia digestiva alta; aula 132, hemorragia digestiva baixa. **Objetivo desta aula:** não fabricar uma terceira apostila repetindo mecanicamente úlceras, varizes, divertículos e colonoscopia. Construir um eixo transversal de diagnóstico, risco, escolha de testes, ressuscitação e prevenção de erros — **com explicações suficientes para interpretar os casos sem memorizar respostas**. Antes de promover o material, integrar ou incorporar as explicações autossuficientes necessárias da 127/132 respeitando o fluxo de produção, sem duplicação na biblioteca.",
+      "pattern": 2
+    },
+    {
+      "text": "**Fontes clínicas primárias:** ACG 2021 HDA ulcerosa, ESGE *peptic ulcer bleeding* 2026, ESGE varizes 2022/Baveno VII 2022, ACG HDB 2023 e ESGE HDB 2021. As diferenças entre tempos de EDA (úlcera vs varizes) não devem ser apagadas em fluxograma único.",
+      "pattern": 2
+    },
+    {
+      "text": "Esta apostila integradora **não substitui** os livros aprofundados de cirrose, HDA e HDB. A auditoria cruzada das versões do GitHub de 15/10/2026 encontrou coerência essencial nos tempos do procedimento e na prioridade de estabilização, mas também identificou risco de repetição de fisiologia do choque, Forrest, varizes e antitrombóticos. A política editorial correta é **reaproveitar o mínimo explicativo para resolver o caso agudo** e orientar o aprofundamento para a aula correspondente.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Clínica Médica / Gastroenterologia / Urgência **Situação:** **RASCUNHO INTEGRADOR**, não publicado e não certificado como livro-texto autossuficiente. **Revisão:** 14/10/2026. **Vínculos curriculares:** aula 127, hemorragia digestiva alta; aula 132, hemorragia digestiva baixa. **Objetivo desta aula:** não fabricar uma terceira apostila repetindo mecanicamente úlceras, varizes, divertículos e colonoscopia. Construir um eixo transversal de diagnóstico, risco, escolha de testes, ressuscitação e prevenção de erros — **com explicações suficientes para interpretar os casos sem memorizar respostas**. Antes de promover o material, integrar ou incorporar as explicações autossuficientes necessárias da 127/132 respeitando o fluxo de produção, sem duplicação na biblioteca."
+    },
+    {
+      "text": "**Acervo LURIA auditado:** os rascunhos específicos das aulas 127 e 132 já existem em `apostilas/_rascunhos`; o primeiro aborda HDA varicosa/úlcera, Forrest, endoscopia e TIPS; o segundo cobre divertículos, angiodisplasias, colites, colonoscopia, angio-TC e embolização. Não foi identificado diretório HTML autônomo de hemorragia digestiva geral na listagem principal."
+    }
+  ]
+}

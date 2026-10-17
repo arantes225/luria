@@ -1,0 +1,252 @@
+{
+  "sha": "3bfcd1f6013f1ef64a04575fe452f73e7b024211",
+  "path": "apostilas/_rascunhos/lote-08-aula-160-tabagismo-alcool-outras-drogas.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--3bfcd1f601",
+  "title": "LURIA | Aula 160 — Abordagem do tabagismo, álcool e outras drogas",
+  "format": ".md",
+  "chars_estimated": 55966,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA | Aula 160 — Abordagem do tabagismo, álcool e outras drogas"
+    },
+    {
+      "title": "1. Competências e percurso da aula"
+    },
+    {
+      "title": "2. O que significa usar uma substância? Conceitos essenciais"
+    },
+    {
+      "title": "3. Neurobiologia clínica: por que o comportamento pode se repetir apesar das consequências?"
+    },
+    {
+      "title": "4. Epidemiologia aplicada, determinantes e prevenção"
+    },
+    {
+      "title": "5. Como perguntar: anamnese, acolhimento e estratificação"
+    },
+    {
+      "title": "Instrumentos úteis e limites"
+    },
+    {
+      "title": "Interpretação aprofundada do rastreio na APS"
+    },
+    {
+      "title": "Três exemplos para interpretar instrumentos sem automatismo"
+    },
+    {
+      "title": "6. Entrevista motivacional e intervenção breve"
+    },
+    {
+      "title": "7. Tabagismo: dependência, riscos e avaliação inicial"
+    },
+    {
+      "title": "Abordagem estruturada"
+    },
+    {
+      "title": "Plano comportamental do primeiro mês"
+    },
+    {
+      "title": "8. Tratamento farmacológico do tabagismo"
+    },
+    {
+      "title": "Farmacologia clínica aplicada: escolhendo entre TRN, bupropiona e alternativas"
+    },
+    {
+      "title": "Por que não se deve prescrever por algoritmo rígido"
+    },
+    {
+      "title": "Recaída no primeiro mês: roteiro de reavaliação"
+    },
+    {
+      "title": "9. Tabagismo em situações especiais"
+    },
+    {
+      "title": "10. Álcool: do consumo de risco ao transtorno"
+    },
+    {
+      "title": "Elementos da consulta inicial"
+    },
+    {
+      "title": "Plano terapêutico longitudinal"
+    },
+    {
+      "title": "11. Síndrome de abstinência alcoólica: não perder a gravidade"
+    },
+    {
+      "title": "Fluxo de segurança na APS"
+    },
+    {
+      "title": "12. Outras drogas: padrões clínicos e prioridades"
+    },
+    {
+      "title": "Cannabis e canabinoides"
+    },
+    {
+      "title": "Cocaína, crack e outras substâncias estimulantes"
+    },
+    {
+      "title": "Opioides"
+    },
+    {
+      "title": "Benzodiazepínicos, hipnóticos e outros sedativos"
+    },
+    {
+      "title": "Inalantes e poliuso"
+    },
+    {
+      "title": "12.1. Transtornos por uso de opioides e continuidade após overdose"
+    },
+    {
+      "title": "12.2. Sedativos e a diferença entre dependência fisiológica e transtorno por uso"
+    },
+    {
+      "title": "12.3. Alucinógenos e substâncias sintéticas: limite do reconhecimento clínico"
+    },
+    {
+      "title": "12.4. Transtornos psiquiátricos coexistentes"
+    },
+    {
+      "title": "13. Urgências relacionadas a substâncias: raciocínio ABCDE"
+    },
+    {
+      "title": "14. Trabalho em rede no SUS e Projeto Terapêutico Singular"
+    },
+    {
+      "title": "15. Algoritmos de revisão rápida"
+    },
+    {
+      "title": "Algoritmo A — qualquer substância em consulta eletiva"
+    },
+    {
+      "title": "Algoritmo B — tabagismo"
+    },
+    {
+      "title": "Algoritmo C — parar álcool em pessoa que consome diariamente"
+    },
+    {
+      "title": "Plano longitudinal: o que acompanhar de maneira mensurável"
+    },
+    {
+      "title": "Comunicação clínica e enfrentamento do estigma"
+    },
+    {
+      "title": "Triagem de destino"
+    },
+    {
+      "title": "16. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Tabagismo após síndrome coronariana"
+    },
+    {
+      "title": "Caso 2 — Gestante com uso de cigarro eletrônico"
+    },
+    {
+      "title": "Caso 3 — Interrupção abrupta do álcool"
+    },
+    {
+      "title": "Caso 4 — Suspeita de overdose por opioide"
+    },
+    {
+      "title": "Caso 5 — Dor torácica após consumo de cocaína"
+    },
+    {
+      "title": "17. Questões autorais comentadas — estilo residência"
+    },
+    {
+      "title": "Questão 1 — Diagnóstico"
+    },
+    {
+      "title": "Questão 2 — Tratamento no SUS"
+    },
+    {
+      "title": "Questão 3 — Gestação"
+    },
+    {
+      "title": "Questão 4 — Abstinência de álcool"
+    },
+    {
+      "title": "Questão 5 — Intoxicação por opioide"
+    },
+    {
+      "title": "Questão 6 — Cocaína e dor torácica"
+    },
+    {
+      "title": "Questão 7 — ASSIST e AUDIT"
+    },
+    {
+      "title": "Questão 8 — Redução de danos e RAPS"
+    },
+    {
+      "title": "18. Pérolas de prova e prática"
+    },
+    {
+      "title": "19. Matriz de cobertura e teste de autossuficiência — preliminar"
+    },
+    {
+      "title": "20. Fontes primárias e diretrizes (para conferência)"
+    },
+    {
+      "title": "21. Camada visual a selecionar, sem incorporação prematura"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. **Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo**, aprovado pela Portaria Conjunta SCTIE/SAES/MS nº 10, de 16/04/2020; página de disponibilização atualizada em 21/01/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/t/tabagismo/view",
+    "2. Conitec. **Ministério da Saúde publica PCDT do Tabagismo**, 2020. https://www.gov.br/conitec/pt-br/assuntos/noticias/2020/abril/ministerio-da-saude-publica-protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo",
+    "3. World Health Organization. **WHO clinical treatment guideline for tobacco cessation in adults**, 2024. ISBN 978-92-4-009643-1. https://www.who.int/publications/i/item/9789240096431",
+    "4. World Health Organization. **The Alcohol, Smoking and Substance Involvement Screening Test (ASSIST): manual for use in primary care**, 2010. https://www.who.int/publications/i/item/978924159938-2",
+    "5. Ministério da Saúde. **Rede de Atenção Psicossocial (RAPS)**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "6. Ministério da Saúde. **Centros de Atenção Psicossocial**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps/caps",
+    "7. National Institute for Health and Care Excellence (NICE). **Alcohol-use disorders: diagnosis, assessment and management of harmful drinking and alcohol dependence** (CG115). https://www.nice.org.uk/guidance/cg115/chapter/Recommendations",
+    "8. NICE. **Alcohol-use disorders: diagnosis and management of physical complications** (CG100). https://www.nice.org.uk/guidance/cg100/chapter/recommendations",
+    "9. WHO. **Mental Health Gap Action Programme (mhGAP) guideline**, terceira edição, 2023. https://www.who.int/publications/i/item/9789240084278",
+    "10. Ministério da Saúde. **Leitos de Saúde Mental em Hospitais Gerais**. https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/leito-de-saude-mental-em-hospitais-gerais/leito-de-saude-mental-em-hospitais-gerais",
+    "---",
+    "**Auditoria editorial desta versão:** conteúdo inicial autoral com objetivos, fisiopatologia, diagnóstico, tratamento, cuidados especiais, comparações, cinco casos e oito questões. **Não homologar como livro premium final** antes de cumprir as pendências acima. Sem merge, deploy ou alteração das apostilas publicadas."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/t/tabagismo/view",
+    "https://www.gov.br/conitec/pt-br/assuntos/noticias/2020/abril/ministerio-da-saude-publica-protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo",
+    "https://www.who.int/publications/i/item/9789240096431",
+    "https://www.who.int/publications/i/item/978924159938-2",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps/caps",
+    "https://www.nice.org.uk/guidance/cg115/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/cg100/chapter/recommendations",
+    "https://www.who.int/publications/i/item/9789240084278",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/leito-de-saude-mental-em-hospitais-gerais/leito-de-saude-mental-em-hospitais-gerais"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Pulo do Gato LURIA:** perguntar sobre substâncias é parte da anamnese de qualquer paciente, não só de quem parece ter dependência. O objetivo da abordagem inicial é identificar risco, tratar emergências, construir vínculo e oferecer um próximo passo viável. Dependência não é sinônimo de falta de vontade, uso de substâncias não é diagnóstico moral, e a interrupção abrupta de álcool ou sedativos em pessoas dependentes pode ser clinicamente perigosa."
+    },
+    {
+      "text": "| Instrumento | O que avalia | Como interpretar clinicamente | |---|---|---| | Fagerström | Intensidade de dependência de nicotina em fumantes, por comportamentos e compulsão | Ajuda a planejar suporte; não substitui preferência, contraindicações nem história | | AUDIT / AUDIT-C | Padrão de ingestão de álcool, consequências e risco | Ferramenta de rastreio; resultados positivos exigem entrevista clínica, não diagnóstico automático | | ASSIST | Envolvimento e problemas associados a várias substâncias | Útil para abordagem de múltiplas drogas e indicação de intervenção breve/encaminhamento | | DSM-5-TR, entrevista clínica | Critérios e gravidad"
+    },
+    {
+      "text": "**O risco do rastreio positivo é perder o paciente na tradução do escore para o diagnóstico.** A pontuação deve abrir diálogo clínico, e não substituí-lo. O mesmo resultado pode surgir de padrões distintos: ingestão concentrada nos fins de semana, consumo diário menor, uso associado a sedativos ou consequências diferentes do mesmo volume. É necessário relacionar os itens assinalados a impactos concretos e à segurança imediata."
+    },
+    {
+      "text": "**Situação A:** mulher de 24 anos relata duas grandes festas mensais com consumo até perda de memória, mas não bebe no resto da semana. A pesquisa identifica risco agudo importante por intoxicação, sexualidade desprotegida, trauma e violência. A ausência de consumo diário não permite tranquilização automática nem identifica, por si só, dependência física."
+    },
+    {
+      "text": "**Situação B:** homem de 66 anos relata pequena quantidade diária de álcool e uso prescrito de clonazepam para dormir. A pergunta não é somente quantas doses bebe; é se a combinação aumenta sedação, quedas, déficit de memória e depressão respiratória. Revisão terapêutica, função hepática, fragilidade e risco de retirada de sedativos integram a decisão."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

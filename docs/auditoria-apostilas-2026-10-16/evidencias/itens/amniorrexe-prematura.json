@@ -1,0 +1,876 @@
+{
+  "key": "amniorrexe-prematura",
+  "kind": "apostila-html",
+  "path": "apostilas/amniorrexe-prematura/index.html",
+  "html_path": "apostilas/amniorrexe-prematura/index.html",
+  "title": "Amniorrexe prematura",
+  "source_sha256": "a5830443718eac22cadbdaab44e74de8248f5e83907cc70c6fe6ada48455e9d1",
+  "html_sha256": "a5830443718eac22cadbdaab44e74de8248f5e83907cc70c6fe6ada48455e9d1",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo"
+    },
+    {
+      "tag": "H4",
+      "title": "O que você precisa lembrar",
+      "section": "resumo"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Confirmar",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Procurar perigo",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Se estável e pré-termo",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Separar conceitos",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos e classificação",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Dois relógios distintos: semanas de gestação e tempo desde a rotura",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que o termo “prematura” pode confundir a prova?",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiopatologia e fatores de risco",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores associados",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Como uma membrana resistente se torna vulnerável",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Qual a consequência da perda de líquido sobre o pulmão fetal?",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H3",
+      "title": "Fatores de risco não são testes diagnósticos",
+      "section": "fisiopatologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. Diagnóstico: passo a passo",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "História clínica",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Exame especular estéril",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H4",
+      "title": "Evite toque vaginal digital de rotina",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Teste de cristalização",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Teste de pH",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Testes imunocromatográficos",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Ultrassonografia",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Amostra, momento e contaminação: por que os testes falham",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Exame especular, em sequência clínica segura",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H3",
+      "title": "Três histórias em que o diagnóstico fica incerto",
+      "section": "diagnostico"
+    },
+    {
+      "tag": "H2",
+      "title": "4. Diagnósticos diferenciais",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H3",
+      "title": "Corrimento, urina, sangue e líquido amniótico não são sinônimos",
+      "section": "diferenciais"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Avaliação após confirmar a rotura",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H3",
+      "title": "O que constitui estabilidade para uma conduta expectante?",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Conduta por idade gestacional",
+      "section": "conduta"
+    },
+    {
+      "tag": "H3",
+      "title": "Fluxo de decisão LURIA — primeiro segurança, depois idade gestacional",
+      "section": "conduta"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que 34 semanas não é uma resposta universal?",
+      "section": "conduta"
+    },
+    {
+      "tag": "H3",
+      "title": "Decisão em camadas: primeiro contraindicações, depois semanas",
+      "section": "conduta"
+    },
+    {
+      "tag": "H3",
+      "title": "O que a escolha entre 34 e 37 semanas realmente envolve?",
+      "section": "conduta"
+    },
+    {
+      "tag": "H3",
+      "title": "Condições logísticas fazem parte da medicina",
+      "section": "conduta"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Antibióticos de latência",
+      "section": "latencia"
+    },
+    {
+      "tag": "H4",
+      "title": "Esquema clássico de 7 dias",
+      "section": "latencia"
+    },
+    {
+      "tag": "H4",
+      "title": "Não confunda objetivos",
+      "section": "latencia"
+    },
+    {
+      "tag": "H3",
+      "title": "Três objetivos antibióticos que não podem ser misturados",
+      "section": "latencia"
+    },
+    {
+      "tag": "H3",
+      "title": "De onde vem o regime ampicilina–amoxicilina com macrolídeo?",
+      "section": "latencia"
+    },
+    {
+      "tag": "H3",
+      "title": "Como medir benefício sem perseguir dias a qualquer preço",
+      "section": "latencia"
+    },
+    {
+      "tag": "H2",
+      "title": "8. Corticoterapia antenatal",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H3",
+      "title": "O que o corticoide muda no feto — e o que ele não pode justificar",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H3",
+      "title": "Repetir o curso não é uma rotina de calendário",
+      "section": "corticoide"
+    },
+    {
+      "tag": "H2",
+      "title": "9. Sulfato de magnésio para neuroproteção",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que neuroproteção e tocólise não são a mesma conduta",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando a indicação deixa de valer",
+      "section": "magnesio"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Tocólise",
+      "section": "tocolise"
+    },
+    {
+      "tag": "H3",
+      "title": "Qual é a única pergunta que justifica considerar tocólise?",
+      "section": "tocolise"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Estreptococo do grupo B",
+      "section": "egb"
+    },
+    {
+      "tag": "H3",
+      "title": "Decidir profilaxia de EGB sem confundir cultura, rotura e antibióticos prévios",
+      "section": "egb"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Infecção intra-amniótica / corioamnionite",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H3",
+      "title": "Sinais de alerta",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H4",
+      "title": "Suspeita forte de infecção = antibiótico terapêutico + resolução",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H3",
+      "title": "O dado que muda a conduta expectante",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H3",
+      "title": "Os critérios de febre ajudam, mas uma paciente afebril também pode estar grave",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que antibiótico sem parto pode não controlar a fonte?",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H3",
+      "title": "Como conversar com a neonatologia",
+      "section": "infeccao"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Quando interromper independentemente da idade gestacional",
+      "section": "interromper"
+    },
+    {
+      "tag": "H3",
+      "title": "Um checklist de segurança que precede qualquer cálculo de latência",
+      "section": "interromper"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Via de parto e indução",
+      "section": "parto"
+    },
+    {
+      "tag": "H3",
+      "title": "Rotura, indução e cesárea respondem a perguntas diferentes",
+      "section": "parto"
+    },
+    {
+      "tag": "H2",
+      "title": "15. RPM pré-viável e periviável",
+      "section": "previavel"
+    },
+    {
+      "tag": "H3",
+      "title": "O aconselhamento deve explicar riscos distintos, não apenas taxas de sobrevida",
+      "section": "previavel"
+    },
+    {
+      "tag": "H3",
+      "title": "Antibióticos e maturação fetal antes de 24 semanas não seguem a mesma regra",
+      "section": "previavel"
+    },
+    {
+      "tag": "H3",
+      "title": "Cerclagem, amnioinfusão e tentativas de selar membranas",
+      "section": "previavel"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Complicações",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Complicações maternas: reconhecer mecanismo e tempo de evolução",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Complicações fetais e neonatais: mecanismos que se somam",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Por que uma cardiotocografia normal hoje não resolve a vigilância de amanhã?",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H3",
+      "title": "Após a alta ou o parto: o tema ainda não terminou",
+      "section": "complicacoes"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Casos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Casos comentados de decisão clínica — além da idade gestacional",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — Perda líquida, pH elevado e vaginose: o teste decide?",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — Rotura há cinco dias e PCR elevada: interromper imediatamente?",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 7 — 26 semanas, antibiótico de latência concluído e trabalho de parto",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 8 — 31 semanas, afebril, mas dor uterina e secreção purulenta",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 9 — 35 semanas, estabilidade e alternativas legítimas de conduta",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 10 — Rotura periviável com oligoâmnio importante",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 11 — 29 semanas com desacelerações variáveis recorrentes",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 12 — RPM a termo, EGB desconhecido e 19 horas de bolsa rota",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Fixação de erros de prova: responda sem memorizar uma frase isolada",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "18. Questões de fixação",
+      "section": "questoes"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências prioritárias",
+      "section": "referencias"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1455
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 522
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e classificação",
+      "chars": 3287
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia e fatores de risco",
+      "chars": 4083
+    },
+    {
+      "id": "diagnostico",
+      "title": "3. Diagnóstico: passo a passo",
+      "chars": 5853
+    },
+    {
+      "id": "diferenciais",
+      "title": "4. Diagnósticos diferenciais",
+      "chars": 2241
+    },
+    {
+      "id": "avaliacao",
+      "title": "5. Avaliação após confirmar a rotura",
+      "chars": 3308
+    },
+    {
+      "id": "conduta",
+      "title": "6. Conduta por idade gestacional",
+      "chars": 6702
+    },
+    {
+      "id": "latencia",
+      "title": "7. Antibióticos de latência",
+      "chars": 4186
+    },
+    {
+      "id": "corticoide",
+      "title": "8. Corticoterapia antenatal",
+      "chars": 3175
+    },
+    {
+      "id": "magnesio",
+      "title": "9. Sulfato de magnésio para neuroproteção",
+      "chars": 3085
+    },
+    {
+      "id": "tocolise",
+      "title": "10. Tocólise",
+      "chars": 2022
+    },
+    {
+      "id": "egb",
+      "title": "11. Estreptococo do grupo B",
+      "chars": 3245
+    },
+    {
+      "id": "infeccao",
+      "title": "12. Infecção intra-amniótica / corioamnionite",
+      "chars": 5084
+    },
+    {
+      "id": "interromper",
+      "title": "13. Quando interromper independentemente da idade gestacional",
+      "chars": 1594
+    },
+    {
+      "id": "parto",
+      "title": "14. Via de parto e indução",
+      "chars": 1825
+    },
+    {
+      "id": "previavel",
+      "title": "15. RPM pré-viável e periviável",
+      "chars": 4147
+    },
+    {
+      "id": "complicacoes",
+      "title": "16. Complicações",
+      "chars": 3970
+    },
+    {
+      "id": "casos",
+      "title": "17. Casos integradores",
+      "chars": 7965
+    },
+    {
+      "id": "questoes",
+      "title": "18. Questões de fixação",
+      "chars": 1392
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 1566
+    }
+  ],
+  "references": [
+    "FEBRASGO. Rotura prematura de membranas ovulares. Protocolos FEBRASGO Obstetrícia, n. 18, 3ª ed., 2024.",
+    "FEBRASGO. Ruptura prematura de membranas ovulares pré-termo — diagnóstico e conduta. Fluxogramas da CNE de Gestação de Alto Risco.",
+    "Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco.",
+    "ACOG. Prelabor Rupture of Membranes. Practice Bulletin No. 217; reaffirmed 2026.",
+    "ACOG. Increased Risk of Maternal Morbidity Associated With Previable and Periviable Preterm Prelabor Rupture of Membranes. Practice Advisory, 2025.",
+    "Society for Maternal-Fetal Medicine. Consult Series #71: Management of previable and periviable preterm prelabor rupture of membranes.",
+    "FEBRASGO. Fluxogramas: rotura prematura de membranas ovulares pré-termo — diagnóstico e conduta (Lavado, 2023; arquivo disponibilizado pela FEBRASGO).",
+    "ACOG. Prelabor Rupture of Membranes, Practice Bulletin 217 (2020; reafirmado em 2026).",
+    "NICE. Preterm Labour and Birth, NG25 — diagnóstico, antibióticos, corticoide e sulfato de magnésio.",
+    "RCOG. Green-top Guideline 73 — assistência à RPM pré-termo entre 24 e 36+6 semanas.",
+    "SMFM. Consult Series 71 — manejo da RPM pré-viável e periviável (2024).",
+    "ACOG. Atualização de critérios para suspeita de infecção intra-amniótica (2024).",
+    "ACOG. Practice Advisory — morbidade materna na RPM pré-viável/periviável (2025).",
+    "Cochrane. Antibiotics for Preterm Rupture of Membranes, CD001058.",
+    "Nota editorial LURIA: quando protocolos divergem, a apostila explicita a diferença e prioriza FEBRASGO/Ministério da Saúde para prática e provas brasileiras."
+  ],
+  "reference_links": [
+    {
+      "label": "FEBRASGO. Fluxogramas: rotura prematura de membranas ovulares pré-termo — diagnóstico e conduta (Lavado, 2023; arquivo disponibilizado pela FEBRASGO).",
+      "url": "https://www.febrasgo.org.br/wp-content/uploads/2026/05/Ruptura-prematura-de-membranas-ovulares.pdf",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Prelabor Rupture of Membranes, Practice Bulletin 217 (2020; reafirmado em 2026).",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/prelabor-rupture-of-membranes",
+      "in_references": true
+    },
+    {
+      "label": "NICE. Preterm Labour and Birth, NG25 — diagnóstico, antibióticos, corticoide e sulfato de magnésio.",
+      "url": "https://www.nice.org.uk/guidance/ng25/chapter/Recommendations",
+      "in_references": true
+    },
+    {
+      "label": "RCOG. Green-top Guideline 73 — assistência à RPM pré-termo entre 24 e 36+6 semanas.",
+      "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/care-of-women-presenting-with-suspected-preterm-prelabour-rupture-of-membranes-from-24plus0-weeks-of-gestation-green-top-guideline-no-73/",
+      "in_references": true
+    },
+    {
+      "label": "SMFM. Consult Series 71 — manejo da RPM pré-viável e periviável (2024).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39025459/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Atualização de critérios para suspeita de infecção intra-amniótica (2024).",
+      "url": "https://publications.smfm.org/publications/555-acog-clinical-practice-update-update-on-criteria-for/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Practice Advisory — morbidade materna na RPM pré-viável/periviável (2025).",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2025/05/increased-risk-of-maternal-morbidity-associated-with-previable-and-periviable-preterm-prelabor-rupture-of-membranes",
+      "in_references": true
+    },
+    {
+      "label": "Cochrane. Antibiotics for Preterm Rupture of Membranes, CD001058.",
+      "url": "https://www.cochrane.org/evidence/CD001058_antibiotics-preterm-rupture-membranes",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "FEBRASGO — RPMO",
+      "url": "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n18%20-%20O%20-%20Rotura%20prematura%20de%20membranas%20ovulares.pdf",
+      "in_references": false
+    },
+    {
+      "label": "ACOG PB 217",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/prelabor-rupture-of-membranes",
+      "in_references": false
+    },
+    {
+      "label": "RCOG, Green-top 73",
+      "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/care-of-women-presenting-with-suspected-preterm-prelabour-rupture-of-membranes-from-24plus0-weeks-of-gestation-green-top-guideline-no-73/",
+      "in_references": false
+    },
+    {
+      "label": "FEBRASGO. Fluxogramas: rotura prematura de membranas ovulares pré-termo — diagnóstico e conduta (Lavado, 2023; arquivo disponibilizado pela FEBRASGO).",
+      "url": "https://www.febrasgo.org.br/wp-content/uploads/2026/05/Ruptura-prematura-de-membranas-ovulares.pdf",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Prelabor Rupture of Membranes, Practice Bulletin 217 (2020; reafirmado em 2026).",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/prelabor-rupture-of-membranes",
+      "in_references": true
+    },
+    {
+      "label": "NICE. Preterm Labour and Birth, NG25 — diagnóstico, antibióticos, corticoide e sulfato de magnésio.",
+      "url": "https://www.nice.org.uk/guidance/ng25/chapter/Recommendations",
+      "in_references": true
+    },
+    {
+      "label": "RCOG. Green-top Guideline 73 — assistência à RPM pré-termo entre 24 e 36+6 semanas.",
+      "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/care-of-women-presenting-with-suspected-preterm-prelabour-rupture-of-membranes-from-24plus0-weeks-of-gestation-green-top-guideline-no-73/",
+      "in_references": true
+    },
+    {
+      "label": "SMFM. Consult Series 71 — manejo da RPM pré-viável e periviável (2024).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39025459/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Atualização de critérios para suspeita de infecção intra-amniótica (2024).",
+      "url": "https://publications.smfm.org/publications/555-acog-clinical-practice-update-update-on-criteria-for/",
+      "in_references": true
+    },
+    {
+      "label": "ACOG. Practice Advisory — morbidade materna na RPM pré-viável/periviável (2025).",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2025/05/increased-risk-of-maternal-morbidity-associated-with-previable-and-periviable-preterm-prelabor-rupture-of-membranes",
+      "in_references": true
+    },
+    {
+      "label": "Cochrane. Antibiotics for Preterm Rupture of Membranes, CD001058.",
+      "url": "https://www.cochrane.org/evidence/CD001058_antibiotics-preterm-rupture-membranes",
+      "in_references": true
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 16,
+  "paragraphs": 121,
+  "duplicated_paragraphs": [],
+  "duplicate_headings": [],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 94,
+      "status": "approved",
+      "section": "conduta",
+      "source_license": "Não informada",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/rpmo-fluxograma-conduta-pt.webp"
+    },
+    {
+      "id": 95,
+      "status": "pending",
+      "section": "egb",
+      "source_license": "Não informada",
+      "src": "https://files.passeidireto.com/fb3a87a8-5510-4c13-95e8-f7342e064fff/bg7.png"
+    },
+    {
+      "id": 96,
+      "status": "approved",
+      "section": "diagnostico",
+      "source_license": "Não informada",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/rpmo-ferning-real.webp"
+    },
+    {
+      "id": 98,
+      "status": "approved",
+      "section": "infeccao",
+      "source_license": "Artigo open access; verificar licença específica",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/rpmo-corioamnionite-histologia.webp"
+    },
+    {
+      "id": 99,
+      "status": "pending",
+      "section": "diagnostico",
+      "source_license": "CC BY-SA 3.0 / GFDL",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferning%2C%20as%20seen%20through%20microscope.jpg"
+    },
+    {
+      "id": 101,
+      "status": "approved",
+      "section": "fisiopatologia",
+      "source_license": "CC BY 4.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/amnio-arquitetura-placenta.webp"
+    },
+    {
+      "id": 108,
+      "status": "pending",
+      "section": "conduta",
+      "source_license": "CC BY conforme documento",
+      "src": "https://www.febrasgo.org.br/fluxopdf/assets/pdf/Ruptura-prematura-de-membranas-ovulares.pdf"
+    },
+    {
+      "id": 130,
+      "status": "pending",
+      "section": "diagnostico",
+      "source_license": "Uso educacional conforme fonte; verificar atribuição final",
+      "src": "https://www.febrasgo.org.br/wp-content/uploads/2026/05/Ruptura-prematura-de-membranas-ovulares.pdf"
+    },
+    {
+      "id": 131,
+      "status": "pending",
+      "section": "conduta",
+      "source_license": "Fonte pública institucional",
+      "src": "https://bvsms.saude.gov.br/bvs/publicacoes/gestacao_alto_risco.pdf"
+    },
+    {
+      "id": 132,
+      "status": "pending",
+      "section": "infeccao",
+      "source_license": "CC conforme página do arquivo",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chorial_vasculitis_and_chorioamnionitis_in_AIS%2C_HE_1.jpg"
+    },
+    {
+      "id": 134,
+      "status": "approved",
+      "section": "infeccao",
+      "source_license": "CC conforme página do arquivo",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/amnio-amnionitis-annotated.webp"
+    },
+    {
+      "id": 136,
+      "status": "pending",
+      "section": "diagnostico",
+      "source_license": "CC conforme página do arquivo",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferning%2C_as_seen_through_microscope.jpg"
+    },
+    {
+      "id": 137,
+      "status": "pending",
+      "section": "conceitos",
+      "source_license": "Licença conforme página do arquivo",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Architecture_of_the_human_term_placenta.jpg"
+    },
+    {
+      "id": 138,
+      "status": "pending",
+      "section": "conceitos",
+      "source_license": "CC conforme página do arquivo",
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Schematic_representation_of_a_human_placenta_at_term.jpg"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": false,
+  "samples": [
+    {
+      "section": "conceitos",
+      "text": "A idade gestacional indica o grau de maturidade fetal e ajuda a estimar as consequências de nascer agora. A latência, por sua vez, mede quanto tempo se passou desde a abertura das membranas até o início do parto ou nascimento, conforme a definição usada em cada estudo. Confundir os dois relógios é fonte de erro: uma gestante de 30 semanas com bolsa rota há poucas horas não tem o mesmo risco imediato que outra da mesma idade gestacional com cinco dias de evolução, mesmo que ambas estejam afebris. A probabilidade de infecção, parto espontâneo, sangramento e mudanças na quantidade de líquido deve ser reavaliada durante a observação.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "Uma rotura com 39 semanas e sem contrações continua sendo prematura em relação ao trabalho de parto, embora o feto esteja a termo. Uma rotura com 30 semanas é simultaneamente pré-trabalho de parto e pré-termo. Esse detalhe explica por que antibiótico de latência, corticoide e neuroproteção não são intervenções rotineiras em qualquer gestante com perda de líquido: cada uma tem indicação própria e faixa gestacional definida. O risco de sepse neonatal associado à duração prolongada da rotura é uma terceira dimensão, que não substitui avaliação de colonização por EGB.",
+      "pattern": 0
+    },
+    {
+      "section": "conduta",
+      "text": "Entre 34 e 36 semanas e 6 dias, o benefício de reduzir prematuridade precisa ser comparado ao risco infeccioso. A RCOG admite conduta expectante até 37 semanas quando não há contraindicação, enquanto outros protocolos selecionam resolução mais precoce. A decisão deve identificar a diretriz adotada e considerar infecção, bem-estar fetal, EGB, recursos neonatais e preferência informada. Isso é diferente de deixar a gestante sem um plano: registrar vigilância, sinais de retorno e limite da espera.",
+      "pattern": 0
+    },
+    {
+      "section": "conduta",
+      "text": "O diagrama gestacional só se aplica quando mãe e feto estão estáveis. A primeira bifurcação sempre procura indicação de resolução: infecção intra-amniótica suspeita, descolamento, sangramento importante, prolapso de cordão, alterações fetais graves ou trabalho de parto estabelecido que progride. Só depois a idade gestacional entra como ferramenta para estimar benefícios de ganhar dias de maturação fetal e danos potenciais da manutenção. Essa ordem evita o erro de “cumprir 34 semanas” apesar de a situação clínica ter mudado.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "A bolsa pode romper antes de existirem contrações regulares e modificações cervicais. Se o trabalho de parto começar depois, o diagnóstico passa a incluir duas condições que exigem decisões sobre antibióticos, vitalidade e momento de nascer.",
+      "pattern": 1
+    },
+    {
+      "section": "fisiopatologia",
+      "text": "A via hemorrágica ilustra outra possibilidade: sangramento na interface materno-fetal ativa processos inflamatórios e enzimáticos que interferem na integridade do tecido. A sobredistensão por gemelaridade ou polidrâmnio aplica tensão persistente sobre uma estrutura que pode já estar vulnerável. Insuficiência cervical e procedimentos invasivos alteram a estabilidade mecânica ou a continuidade da membrana. Em muitas pacientes não será possível encontrar uma causa isolada, e isso não deve atrasar diagnóstico e manejo.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "O líquido amniótico é mais alcalino que a secreção vaginal habitual. Valores em torno de ≥7 apoiam o diagnóstico, mas sangue, sêmen, vaginose bacteriana e antissépticos podem gerar falso-positivo.",
+      "pattern": 1
+    },
+    {
+      "section": "diagnostico",
+      "text": "Ajuda a quantificar líquido, avaliar crescimento, apresentação, placenta e anatomia fetal. Oligodrâmnio fortalece a suspeita, mas não é diagnóstico isolado. Volume de líquido normal também não exclui rotura.",
+      "pattern": 1
+    },
+    {
+      "section": "conceitos",
+      "text": "A expressão pré-viável não designa uma semana universal: a perspectiva de tratamento neonatal depende do peso estimado, precisão da datação, anomalias, recursos de terapia intensiva, práticas locais e decisões compartilhadas. Em torno dos limites de viabilidade, uma diferença de poucos dias pode influenciar a conversa, mas não transforma automaticamente um prognóstico difícil em favorável. A decisão deve partir de informação honesta e de objetivos de cuidado definidos com a gestante e a equipe materno-fetal e neonatal. [SMFM 71, 2024]",
+      "pattern": 2
+    },
+    {
+      "section": "avaliacao",
+      "text": "Os exames laboratoriais fazem parte da vigilância em muitos protocolos brasileiros, mas não há prova de que um valor de proteína C-reativa ou leucograma isoladamente defina infecção e justifique parto. A própria FEBRASGO salienta cautela com PCR isolada e recomenda avaliação clínica associada. Da mesma forma, Doppler não deve ser solicitado em série automaticamente pela RPM: sua utilidade é maior quando há suspeita de insuficiência placentária ou restrição de crescimento. A cardiotocografia também precisa ser interpretada conforme maturidade gestacional e objetivo de intervenção, pois traçados muito prematuros têm características diferentes daqueles a termo. [FEBRASGO, 2023/2024]",
+      "pattern": 2
+    },
+    {
+      "section": "conduta",
+      "text": "Conferência: FEBRASGO — RPMO; ACOG PB 217. Os detalhes de assistência variam conforme diretriz e recursos locais.",
+      "pattern": 2
+    },
+    {
+      "section": "conduta",
+      "text": "O limiar de 34 semanas não constitui autorização para esperar indefinidamente nem imposição universal de parto imediato. A FEBRASGO descreve resolução/indução nessa janela segundo protocolo do serviço; a ACOG PB 217, reafirmada em 2026, aborda tanto resolução quanto expectância individualizada entre 34 e 36+6; recomendações britânicas podem ser mais favoráveis à espera em pacientes selecionadas. Em qualquer uma, deterioração clínica muda a conduta. [FEBRASGO, fluxograma 2023; ACOG PB 217; RCOG GT 73]",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceitos",
+      "text": "A rotura prematura de membranas ovulares (RPMO) é a ruptura espontânea das membranas amniótica e coriônica antes do início do trabalho de parto. O termo “prematura” descreve a relação temporal com o trabalho de parto e não significa, obrigatoriamente, prematuridade fetal."
+    },
+    {
+      "section": "conceitos",
+      "text": "A idade gestacional indica o grau de maturidade fetal e ajuda a estimar as consequências de nascer agora. A latência, por sua vez, mede quanto tempo se passou desde a abertura das membranas até o início do parto ou nascimento, conforme a definição usada em cada estudo. Confundir os dois relógios é fonte de erro: uma gestante de 30 semanas com bolsa rota há poucas horas não tem o mesmo risco imediato que outra da mesma idade gestacional com cinco dias de evolução, mesmo que ambas estejam afebris. A probabilidade de infecção, parto espontâneo, sangramento e mudanças na quantidade de líquido deve ser reavaliada durante a observação."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 101,
+        "section": "fisiopatologia",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/amnio-arquitetura-placenta.webp",
+        "source_only": false
+      },
+      {
+        "id": 96,
+        "section": "diagnostico",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Positive_Fern_Test.jpg/500px-Positive_Fern_Test.jpg",
+        "source_only": false
+      },
+      {
+        "id": 98,
+        "section": "infeccao",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Histopathology_of_acute_choriodeciduitis_%28original%29.jpg/960px-Histopathology_of_acute_choriodeciduitis_%28original%29.jpg",
+        "source_only": false
+      },
+      {
+        "id": 134,
+        "section": "infeccao",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-amniorrexe-prematura/amnio-amnionitis-annotated.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 4
+  }
+}

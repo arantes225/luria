@@ -1,0 +1,178 @@
+{
+  "sha": "ff1906688e93ba420d5396fee975dcf062ce4d8f",
+  "path": "apostilas/_rascunhos/lote-06-117-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ff1906688e",
+  "title": "Isquemia Mesentérica e Abdome Agudo Vascular",
+  "format": ".json",
+  "chars_estimated": 80299,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "introducao",
+      "title": "Apresentação e objetivo de aprendizagem"
+    },
+    {
+      "id": "cap-01-escopo-competencias-e-nomenclatura",
+      "title": "1. Escopo, competências e nomenclatura"
+    },
+    {
+      "id": "cap-02-anatomia-vascular-e-fisiologia-que-explicam-a-clin",
+      "title": "2. Anatomia vascular e fisiologia que explicam a clínica"
+    },
+    {
+      "id": "cap-03-epidemiologia-e-riscos-quatro-mecanismos-que-nao-p",
+      "title": "3. Epidemiologia e riscos: quatro mecanismos que não podem ser misturados"
+    },
+    {
+      "id": "cap-04-quadro-clinico-como-reconhecer-antes-da-peritonite",
+      "title": "4. Quadro clínico — como reconhecer antes da peritonite"
+    },
+    {
+      "id": "cap-05-diagnostico-laboratorios-auxiliam-angiotc-responde",
+      "title": "5. Diagnóstico: laboratórios auxiliam, angioTC responde"
+    },
+    {
+      "id": "cap-06-manejo-nas-primeiras-horas-ressuscitar-diagnostica",
+      "title": "6. Manejo nas primeiras horas: ressuscitar, diagnosticar e reperfundir"
+    },
+    {
+      "id": "cap-07-isquemia-arterial-oclusiva-embolia-versus-trombose",
+      "title": "7. Isquemia arterial oclusiva: embolia versus trombose"
+    },
+    {
+      "id": "cap-08-trombose-venosa-mesenterica-congestao-anticoagulac",
+      "title": "8. Trombose venosa mesentérica: congestão, anticoagulação e cirurgia seletiva"
+    },
+    {
+      "id": "cap-09-nomi-intestino-em-choque-sem-trombo-visivel",
+      "title": "9. NOMI — intestino em choque sem trombo visível"
+    },
+    {
+      "id": "cap-10-isquemia-mesenterica-cronica-o-paciente-que-passou",
+      "title": "10. Isquemia mesentérica crônica: o paciente que passou a temer comida"
+    },
+    {
+      "id": "cap-11-colite-isquemica-nao-confundir-todo-sangramento-co",
+      "title": "11. Colite isquêmica: não confundir todo sangramento com IMA da AMS"
+    },
+    {
+      "id": "cap-12-diagnosticos-diferenciais-criticos",
+      "title": "12. Diagnósticos diferenciais críticos"
+    },
+    {
+      "id": "cap-13-algoritmo-clinico-integrado",
+      "title": "13. Algoritmo clínico integrado"
+    },
+    {
+      "id": "cap-14-complicacoes-prognostico-e-seguimento",
+      "title": "14. Complicações, prognóstico e seguimento"
+    },
+    {
+      "id": "cap-15-oito-perolas-de-prova-e-pratica",
+      "title": "15. Oito pérolas de prova e prática"
+    },
+    {
+      "id": "cap-16-entendendo-a-angiotomografia-como-um-exame-de-deci",
+      "title": "16. Entendendo a angiotomografia como um exame de decisões"
+    },
+    {
+      "id": "cap-17-farmacologia-pratica-e-seguranca-anticoagulantes-a",
+      "title": "17. Farmacologia prática e segurança: anticoagulantes, antibióticos e perfusão"
+    },
+    {
+      "id": "cap-18-cirurgia-vascular-e-cirurgia-digestiva-tecnica-a-s",
+      "title": "18. Cirurgia vascular e cirurgia digestiva: técnica a serviço da biologia"
+    },
+    {
+      "id": "cap-19-colite-isquemica-em-profundidade-espectro-avaliaca",
+      "title": "19. Colite isquêmica em profundidade: espectro, avaliação e alta segurança"
+    },
+    {
+      "id": "cap-20-isquemia-cronica-avancada-e-apresentacao-aguda-sob",
+      "title": "20. Isquemia crônica avançada e apresentação aguda sobre crônica"
+    },
+    {
+      "id": "cap-21-trombose-venosa-decisoes-sobre-etiologia-duracao-e",
+      "title": "21. Trombose venosa — decisões sobre etiologia, duração e recorrência"
+    },
+    {
+      "id": "cap-22-populacoes-especiais-e-cenarios-de-maior-risco",
+      "title": "22. Populações especiais e cenários de maior risco"
+    },
+    {
+      "id": "cap-23-medidas-de-seguranca-e-erros-clinicos-que-mais-cus",
+      "title": "23. Medidas de segurança e erros clínicos que mais custam vidas"
+    },
+    {
+      "id": "cap-24-prognostico-por-subtipo-e-prevencao-secundaria",
+      "title": "24. Prognóstico por subtipo e prevenção secundária"
+    },
+    {
+      "id": "cap-25-quadro-farmacologico-e-de-conduta-por-mecanismo",
+      "title": "25. Quadro farmacológico e de conduta por mecanismo"
+    },
+    {
+      "id": "cap-26-miniatlas-textual-que-imagem-realmente-ensina",
+      "title": "26. Miniatlas textual: que imagem realmente ensina?"
+    },
+    {
+      "id": "cap-27-revisao-estruturada-raciocinio-de-alta-retencao",
+      "title": "27. Revisão estruturada: raciocínio de alta retenção"
+    },
+    {
+      "id": "cap-28-oito-casos-clinicos-comentados",
+      "title": "28. Oito casos clínicos comentados"
+    },
+    {
+      "id": "cap-29-doze-questoes-autorais-comentadas",
+      "title": "29. Doze questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"WSES 2022 — Acute mesenteric ischemia: updated guidelines\",\"url\":\"https://link.springer.com/article/10.1186/s13017-022-00443-x\"}",
+    "{\"label\":\"ESVS 2025 — Diseases of the Mesenteric and Renal Arteries and Veins\",\"url\":\"https://doi.org/10.1016/j.ejvs.2025.06.010\"}",
+    "{\"label\":\"ESVS 2025 — PDF integral das recomendações\",\"url\":\"https://ris.utwente.nl/ws/portalfiles/portal/502462657/PIIS1078588425005167.pdf\"}",
+    "{\"label\":\"ESVS — Portal oficial das diretrizes\",\"url\":\"https://esvs.org/guidelines/\"}",
+    "{\"label\":\"WSES — Portal oficial das diretrizes\",\"url\":\"https://www.wses.org.uk/scientific-resources/guidelines\"}"
+  ],
+  "external_urls": [
+    "https://link.springer.com/article/10.1186/s13017-022-00443-x",
+    "https://doi.org/10.1016/j.ejvs.2025.06.010",
+    "https://ris.utwente.nl/ws/portalfiles/portal/502462657/PIIS1078588425005167.pdf",
+    "https://esvs.org/guidelines/",
+    "https://www.wses.org.uk/scientific-resources/guidelines"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O diagnóstico da isquemia mesentérica aguda é uma corrida contra a perda de intestino viável. Suspeita clínica e angiotomografia imediata importam mais que aguardar a elevação do lactato. Dor desproporcional ao exame é uma pista inicial, mas sua ausência não exclui a doença."
+    },
+    {
+      "text": "A IMA é incomum entre as admissões por dor abdominal, mas carrega mortalidade elevada. Em estudos e épocas diferentes, a proporção de embolia, trombose arterial e NOMI varia; não existe uma distribuição fixa que substitua a história clínica. O envelhecimento, a doença cardiovascular e o maior número de pacientes críticos modificam o perfil observado. Diretrizes WSES 2022 estimam aproximadamente 0,09–0,2% das admissões cirúrgicas agudas, com mortalidade substancial; não usar números populacionais como teste diagnóstico individual."
+    },
+    {
+      "text": "Registrar sinais vitais, perfusão periférica, estado mental, dor, grau de distensão, ruídos hidroaéreos e irritação peritoneal. Abolir ruídos não é pré-requisito de diagnóstico. A presença de defesa involuntária, rigidez, peritonite franca ou choque com forte suspeita de necrose modifica a via de tratamento: acionar imediatamente cirurgia de emergência para exploração. No paciente crítico sob sedação, marcadores de deterioração, aumento de vasopressores e exames de imagem podem ter maior peso."
+    },
+    {
+      "text": "AngioTC com contraste intravenoso, com aquisição arterial e venosa, é o exame inicial recomendado para suspeita de IMA, sem atraso evitável. A fase arterial avalia AMS, tronco celíaco e demais ramos; a fase venosa demonstra drenagem, trombose portal/mesentérica e alterações de perfusão de parede. Imagem sem contraste isolada não serve para excluir IMA. Contraste oral pode atrasar o exame e frequentemente não é útil no contexto agudo."
+    },
+    {
+      "text": "A necessidade de decisão urgente impõe discussão apropriada de contraste iodado mesmo em portadores de injúria renal; o risco de perder intestino viável muitas vezes supera o risco de deterioração renal relacionada ao contraste. Avaliar alergias e aspectos técnicos sem atrasos perigosos. Arteriografia não é o exame inicial obrigatório; pode integrar procedimento diagnóstico-terapêutico quando a estratégia endovascular está indicada."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

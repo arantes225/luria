@@ -1,0 +1,940 @@
+{
+  "key": "sangramento-uterino-anormal",
+  "kind": "apostila-html",
+  "path": "apostilas/sangramento-uterino-anormal/index.html",
+  "html_path": "apostilas/sangramento-uterino-anormal/index.html",
+  "title": "Sangramento Uterino Anormal",
+  "source_sha256": "0f3ae79743c5fa83262af166d36863d06b4d3857b0b0afa5489cd5224ec00e24",
+  "html_sha256": "0f3ae79743c5fa83262af166d36863d06b4d3857b0b0afa5489cd5224ec00e24",
+  "headings": [
+    {
+      "tag": "H2",
+      "title": "Em 30 segundos",
+      "section": "resumo-prova"
+    },
+    {
+      "tag": "H2",
+      "title": "Mapa mental",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "1. Emergência?",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "2. Gravidez?",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "3. Etiologia",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H3",
+      "title": "4. Tratamento",
+      "section": "mapa-mental"
+    },
+    {
+      "tag": "H2",
+      "title": "1. Conceitos, terminologia e Sistema 1 da FIGO",
+      "section": "conceitos"
+    },
+    {
+      "tag": "H2",
+      "title": "2. Fisiologia do sangramento menstrual: por que o endométrio para de sangrar?",
+      "section": "fisiologia"
+    },
+    {
+      "tag": "H2",
+      "title": "3. PALM — causas estruturais",
+      "section": "palm"
+    },
+    {
+      "tag": "H3",
+      "title": "P — Pólipo endometrial ou endocervical",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "palm"
+    },
+    {
+      "tag": "H3",
+      "title": "A — Adenomiose",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "palm"
+    },
+    {
+      "tag": "H3",
+      "title": "L — Leiomioma uterino",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "palm"
+    },
+    {
+      "tag": "H3",
+      "title": "M — Malignidade e hiperplasia endometrial",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "palm"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "palm"
+    },
+    {
+      "tag": "H2",
+      "title": "4. COEIN — causas não estruturais",
+      "section": "coein"
+    },
+    {
+      "tag": "H3",
+      "title": "C — Coagulopatia",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "coein"
+    },
+    {
+      "tag": "H3",
+      "title": "O — Disfunção ovulatória",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "coein"
+    },
+    {
+      "tag": "H3",
+      "title": "E — Disfunção endometrial primária",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "coein"
+    },
+    {
+      "tag": "H3",
+      "title": "I — Causa iatrogênica",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "coein"
+    },
+    {
+      "tag": "H3",
+      "title": "N — Não classificada em outras categorias",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que é e por que provoca sangramento?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "Como se apresenta e como investigar?",
+      "section": "coein"
+    },
+    {
+      "tag": "H4",
+      "title": "O que muda na conduta?",
+      "section": "coein"
+    },
+    {
+      "tag": "H2",
+      "title": "PALM-COEIN na prática: comparação e exemplos",
+      "section": "palm-exemplo"
+    },
+    {
+      "tag": "H2",
+      "title": "5. Avaliação inicial: primeiro segurança, depois etiologia",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 1 — estabilidade hemodinâmica",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 2 — excluir gestação",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 3 — história que realmente muda probabilidade",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Passo 4 — exame",
+      "section": "avaliacao"
+    },
+    {
+      "tag": "H2",
+      "title": "6. Exames laboratoriais e de imagem",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "Ultrassonografia transvaginal",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "Sonohisterografia e histeroscopia",
+      "section": "exames"
+    },
+    {
+      "tag": "H3",
+      "title": "Ressonância",
+      "section": "exames"
+    },
+    {
+      "tag": "H2",
+      "title": "7. Quando investigar o endométrio?",
+      "section": "endometrio"
+    },
+    {
+      "tag": "H2",
+      "title": "8. SUA agudo: abordagem de emergência",
+      "section": "agudo"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento hormonal",
+      "section": "agudo"
+    },
+    {
+      "tag": "H3",
+      "title": "Ácido tranexâmico",
+      "section": "agudo"
+    },
+    {
+      "tag": "H3",
+      "title": "Quando partir para procedimento",
+      "section": "agudo"
+    },
+    {
+      "tag": "H2",
+      "title": "9. SUA crônico: escolher tratamento pelo mecanismo e pelo objetivo",
+      "section": "cronico"
+    },
+    {
+      "tag": "H3",
+      "title": "SIU-LNG",
+      "section": "cronico"
+    },
+    {
+      "tag": "H3",
+      "title": "Contraceptivos hormonais combinados",
+      "section": "cronico"
+    },
+    {
+      "tag": "H3",
+      "title": "Progestagênios",
+      "section": "cronico"
+    },
+    {
+      "tag": "H3",
+      "title": "Ácido tranexâmico",
+      "section": "cronico"
+    },
+    {
+      "tag": "H3",
+      "title": "AINEs",
+      "section": "cronico"
+    },
+    {
+      "tag": "H2",
+      "title": "10. Tratamento dirigido às causas estruturais",
+      "section": "estrutural"
+    },
+    {
+      "tag": "H3",
+      "title": "Pólipo",
+      "section": "estrutural"
+    },
+    {
+      "tag": "H3",
+      "title": "Mioma submucoso",
+      "section": "estrutural"
+    },
+    {
+      "tag": "H3",
+      "title": "Adenomiose",
+      "section": "estrutural"
+    },
+    {
+      "tag": "H3",
+      "title": "Hiperplasia/câncer",
+      "section": "estrutural"
+    },
+    {
+      "tag": "H2",
+      "title": "11. Adolescência: pense em anovulação, mas não esqueça coagulopatia",
+      "section": "adolescencia"
+    },
+    {
+      "tag": "H2",
+      "title": "12. Perimenopausa: anovulação é comum, câncer não pode ser presumido ausente",
+      "section": "perimenopausa"
+    },
+    {
+      "tag": "H2",
+      "title": "13. Coagulopatias e anticoagulação",
+      "section": "coagulacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Doença de von Willebrand",
+      "section": "coagulacao"
+    },
+    {
+      "tag": "H3",
+      "title": "Anticoagulantes",
+      "section": "coagulacao"
+    },
+    {
+      "tag": "H2",
+      "title": "14. Anemia, ferro e seguimento",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H3",
+      "title": "Medir resposta e recuperar reserva de ferro",
+      "section": "seguimento"
+    },
+    {
+      "tag": "H2",
+      "title": "15. Casos clínicos integradores",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 1 — 17 anos, sangramento intenso desde a menarca",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 2 — 32 anos, SOP, ciclos de 60–90 dias",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 3 — 39 anos, fluxo intenso e mioma submucoso",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 4 — 47 anos, obesidade, sangramento irregular há 8 meses",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 5 — 28 anos, hemorragia aguda, estável, β-hCG negativo",
+      "section": "casos"
+    },
+    {
+      "tag": "H3",
+      "title": "Caso 6 — 36 anos, sangramento agudo e Doppler com vascularização serpiginosa de alta velocidade",
+      "section": "casos"
+    },
+    {
+      "tag": "H2",
+      "title": "16. Revisão de alto rendimento",
+      "section": "revisao"
+    },
+    {
+      "tag": "H2",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "section": "editorial-depth-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "PALM: entidades distintas",
+      "section": "editorial-depth-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "COEIN: mecanismos diferentes",
+      "section": "editorial-depth-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H2",
+      "title": "17. Fisiologia, diagnóstico etiológico e decisões terapêuticas: integração aprofundada",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.1 Como a menstruação normal termina: hemostasia e reparação endometrial",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.2 Fisiopatologia da anovulação: por que o ciclo pode ser espaçado e o sangramento intenso",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.3 Sistema FIGO 1 antes do PALM-COEIN: descrever a queixa para depois atribuir a causa",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.4 O mioma que sangra não é necessariamente o maior mioma",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.5 Adenomiose: o mecanismo de dor e sangramento é diferente do leiomioma",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.6 História hemorrágica e hemostasia sistêmica: identificando coagulopatias",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.7 Exames e amostragem endometrial: como evitar falsa tranquilização",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.8 Tratamento guiado pelo mecanismo e pelos objetivos da paciente",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H3",
+      "title": "17.9 Casos comentados: aprender a não fechar o diagnóstico cedo demais",
+      "section": "capitulo-integrado-sua-40k"
+    },
+    {
+      "tag": "H2",
+      "title": "Referências essenciais",
+      "section": "referencias"
+    },
+    {
+      "tag": "H2",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "section": "luria-livro-etiologias-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Pólipo, adenomiose e mioma não são sinônimos",
+      "section": "luria-livro-etiologias-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Hiperplasia e câncer endometrial",
+      "section": "luria-livro-etiologias-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "COEIN em profundidade",
+      "section": "luria-livro-etiologias-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento guiado por estabilidade e intenção",
+      "section": "luria-livro-etiologias-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H2",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "section": "capitulos-livro-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Pólipo, adenomiose e mioma",
+      "section": "capitulos-livro-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Hiperplasia e malignidade",
+      "section": "capitulos-livro-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Coagulopatia e ovulação",
+      "section": "capitulos-livro-sangramento-uterino-anormal"
+    },
+    {
+      "tag": "H3",
+      "title": "Tratamento por urgência e objetivo",
+      "section": "capitulos-livro-sangramento-uterino-anormal"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1695
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 556
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos, terminologia e Sistema 1 da FIGO",
+      "chars": 1529
+    },
+    {
+      "id": "fisiologia",
+      "title": "2. Fisiologia do sangramento menstrual: por que o endométrio para de sangrar?",
+      "chars": 825
+    },
+    {
+      "id": "palm",
+      "title": "3. PALM — causas estruturais",
+      "chars": 5466
+    },
+    {
+      "id": "coein",
+      "title": "4. COEIN — causas não estruturais",
+      "chars": 5735
+    },
+    {
+      "id": "palm-exemplo",
+      "title": "PALM-COEIN na prática: comparação e exemplos",
+      "chars": 1016
+    },
+    {
+      "id": "avaliacao",
+      "title": "5. Avaliação inicial: primeiro segurança, depois etiologia",
+      "chars": 1421
+    },
+    {
+      "id": "exames",
+      "title": "6. Exames laboratoriais e de imagem",
+      "chars": 1345
+    },
+    {
+      "id": "endometrio",
+      "title": "7. Quando investigar o endométrio?",
+      "chars": 906
+    },
+    {
+      "id": "agudo",
+      "title": "8. SUA agudo: abordagem de emergência",
+      "chars": 2006
+    },
+    {
+      "id": "cronico",
+      "title": "9. SUA crônico: escolher tratamento pelo mecanismo e pelo objetivo",
+      "chars": 1534
+    },
+    {
+      "id": "estrutural",
+      "title": "10. Tratamento dirigido às causas estruturais",
+      "chars": 1425
+    },
+    {
+      "id": "adolescencia",
+      "title": "11. Adolescência: pense em anovulação, mas não esqueça coagulopatia",
+      "chars": 577
+    },
+    {
+      "id": "perimenopausa",
+      "title": "12. Perimenopausa: anovulação é comum, câncer não pode ser presumido ausente",
+      "chars": 581
+    },
+    {
+      "id": "coagulacao",
+      "title": "13. Coagulopatias e anticoagulação",
+      "chars": 647
+    },
+    {
+      "id": "seguimento",
+      "title": "14. Anemia, ferro e seguimento",
+      "chars": 1550
+    },
+    {
+      "id": "casos",
+      "title": "15. Casos clínicos integradores",
+      "chars": 1473
+    },
+    {
+      "id": "revisao",
+      "title": "16. Revisão de alto rendimento",
+      "chars": 849
+    },
+    {
+      "id": "editorial-depth-sangramento-uterino-anormal",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 801
+    },
+    {
+      "id": "capitulo-integrado-sua-40k",
+      "title": "17. Fisiologia, diagnóstico etiológico e decisões terapêuticas: integração aprofundada",
+      "chars": 17962
+    },
+    {
+      "id": "referencias",
+      "title": "Referências essenciais",
+      "chars": 1158
+    },
+    {
+      "id": "luria-livro-etiologias-sangramento-uterino-anormal",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2166
+    },
+    {
+      "id": "capitulos-livro-sangramento-uterino-anormal",
+      "title": "Desenvolvimento etiológico: mecanismos e decisões clínicas",
+      "chars": 1221
+    }
+  ],
+  "references": [
+    "FEBRASGO. Sangramento uterino anormal. Femina. 2026;54(3):227–235. Protocolo nº 80, 2026.",
+    "FEBRASGO. Sangramento uterino anormal. Protocolo nº 28, 2021.",
+    "FEBRASGO. Diagnóstico e tratamento de sangramento uterino anormal agudo. Protocolo nº 80, 2021.",
+    "Munro MG et al. FIGO. PALM-COEIN classification system for causes of abnormal uterine bleeding.",
+    "Fraser IS et al. FIGO recommendations on terminologies and definitions for normal and abnormal uterine bleeding.",
+    "ACOG. Management of Acute Abnormal Uterine Bleeding in Nonpregnant Reproductive-Aged Women.",
+    "ACOG. Screening and Management of Bleeding Disorders in Adolescents With Heavy Menstrual Bleeding.",
+    "NICE. Heavy menstrual bleeding: assessment and management (NG88).",
+    "Ministério da Saúde. Portaria SCTIE/MS nº 101, de 8 de janeiro de 2026 — incorporação de ácido tranexâmico e DIU-LNG para leiomioma com sangramento intenso em indicações específicas.",
+    "Secretaria de Saúde do Distrito Federal. Protocolo de Sangramento Uterino Anormal.",
+    "Material educacional. Doses e condutas devem ser ajustadas a contraindicações, função renal/hepática, estabilidade, desejo reprodutivo e protocolos locais."
+  ],
+  "reference_links": [
+    {
+      "label": "Protocolo nº 80, 2026",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ03Z2026Z5.pdf",
+      "in_references": true
+    }
+  ],
+  "external_links": [
+    {
+      "label": "",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+      "in_references": false
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+      "in_references": false
+    },
+    {
+      "label": "CC BY-SA 2.0 Alemanha",
+      "url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "in_references": false
+    },
+    {
+      "label": "Ampliar fotografia ↗",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+      "in_references": false
+    },
+    {
+      "label": "FEBRASGO/Femina — sangramento uterino anormal, 2026",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ03Z2026Z5.pdf",
+      "in_references": false
+    },
+    {
+      "label": "protocolo FEBRASGO 2026",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ03Z2026Z5.pdf",
+      "in_references": false
+    },
+    {
+      "label": "Protocolo nº 80, 2026",
+      "url": "https://www.febrasgo.org.br/media/k2/attachments/FeminaZ03Z2026Z5.pdf",
+      "in_references": true
+    }
+  ],
+  "static_images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg",
+      "alt": "Imagem endoscópica real mostrando pólipo do corpo uterino antes da remoção",
+      "section": "estrutural",
+      "caption": "Pólipo endometrial — fotografia clínica real antes da retirada. A imagem permite reconhecer a alteração focal da cavidade uterina; não permite avaliar atipia ou excluir malignidade sem histopatologia. Autor: Dr. Andreas Ott (Freiburg, 2007). Fonte: Wikimedia Commons, licença CC BY-SA 2.0 Alemanha. Arquivo original sem alterações. Ampliar fotografia ↗",
+      "decorative": false
+    }
+  ],
+  "inline_svg": 0,
+  "tables": 6,
+  "paragraphs": 113,
+  "duplicated_paragraphs": [
+    {
+      "count": 2,
+      "sections": [
+        "palm",
+        "coein"
+      ],
+      "excerpt": "Como usar a classificação: PALM reúne causas estruturais, frequentemente identificáveis por imagem ou histologia; COEIN reúne causas não estruturais. Uma paciente pode ter mais de uma categoria ao mesmo tempo. Primeiro exclua gravidez e ava"
+    }
+  ],
+  "duplicate_headings": [
+    {
+      "title": "o que e e por que provoca sangramento?",
+      "sections": [
+        "palm",
+        "palm",
+        "palm",
+        "palm",
+        "coein",
+        "coein",
+        "coein",
+        "coein",
+        "coein"
+      ]
+    },
+    {
+      "title": "como se apresenta e como investigar?",
+      "sections": [
+        "palm",
+        "palm",
+        "palm",
+        "palm",
+        "coein",
+        "coein",
+        "coein",
+        "coein",
+        "coein"
+      ]
+    },
+    {
+      "title": "o que muda na conduta?",
+      "sections": [
+        "palm",
+        "palm",
+        "palm",
+        "palm",
+        "coein",
+        "coein",
+        "coein",
+        "coein",
+        "coein"
+      ]
+    }
+  ],
+  "long_headings": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "image_rows": [
+    {
+      "id": 313,
+      "status": "approved",
+      "section": "palm",
+      "source_license": "CC BY-SA 3.0",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-miomas-tipos.webp"
+    },
+    {
+      "id": 314,
+      "status": "approved",
+      "section": "palm",
+      "source_license": "CC BY-SA",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-adenomiose-rm.webp"
+    },
+    {
+      "id": 315,
+      "status": "approved",
+      "section": "palm",
+      "source_license": "Revisar permissão de uso",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-polipo-histero.webp"
+    },
+    {
+      "id": 319,
+      "status": "approved",
+      "section": "coein",
+      "source_license": "Revisar permissão de uso",
+      "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-mav-doppler.webp"
+    }
+  ],
+  "missing_image_targets": [],
+  "images_disabled": false,
+  "tools_loaded": true,
+  "db_published": true,
+  "catalog_fallback": true,
+  "samples": [
+    {
+      "section": "palm",
+      "text": "Suspeitar em sangramento persistente, irregular ou recorrente, sobretudo com idade ≥45 anos ou fatores de risco como obesidade, SOP/anovulação crônica, diabetes, síndrome de Lynch e tamoxifeno. Em menores de 45 anos, amostragem pode ser indicada por risco elevado, persistência ou falha do tratamento. A ultrassonografia identifica alterações e lesões, mas não substitui biópsia indicada; o ponto de corte endometrial usado em sangramento pós-menopausa não deve ser extrapolado sem crítica para mulheres menstruadas.",
+      "pattern": 0
+    },
+    {
+      "section": "endometrio",
+      "text": "O ponto não é “biopsiar toda paciente que sangra”, mas identificar quem tem risco suficiente para justificar avaliação histológica. Em geral, ≥45 anos com SUA merece amostragem endometrial; abaixo dessa idade, indicar quando há exposição estrogênica sem oposição, obesidade, SOP/anovulação crônica, persistência, falha terapêutica ou outros fatores de risco.",
+      "pattern": 0
+    },
+    {
+      "section": "perimenopausa",
+      "text": "A transição menopausal aumenta irregularidade e anovulação, mas essa explicação fisiológica não basta para dispensar investigação. Com idade crescente, aumenta a importância de pólipos, miomas, hiperplasia e malignidade. Por isso, a avaliação endometrial tem limiar mais baixo e a idade de 45 anos é um marco prático importante.",
+      "pattern": 0
+    },
+    {
+      "section": "capitulo-integrado-sua-40k",
+      "text": "Exemplo A: uma paciente de 18 anos relata fluxo muito intenso desde a menarca, hematomas espontâneos e epistaxe recorrente. Ainda que a irregularidade menstrual inicial possa decorrer de imaturidade do eixo hipotálamo-hipófise-ovário, a história de sangramento em outros sítios torna obrigatória a consideração de coagulopatia. O raciocínio correto é avaliar gravidade e anemia, excluir gestação quando pertinente e organizar investigação de hemostasia em vez de atribuir tudo à anovulação adolescente.",
+      "pattern": 0
+    },
+    {
+      "section": "conceitos",
+      "text": "O Sangramento Uterino Anormal é uma descrição clínica, não um diagnóstico etiológico. Ele engloba alterações do sangramento originado no corpo uterino em pessoas não grávidas. A nomenclatura moderna substitui expressões vagas como “hemorragia uterina disfuncional”, “menorragia” e “metrorragia” por descrições do padrão de sangramento e pela causa quando conhecida.",
+      "pattern": 1
+    },
+    {
+      "section": "palm",
+      "text": "Suspeitar em sangramento persistente, irregular ou recorrente, sobretudo com idade ≥45 anos ou fatores de risco como obesidade, SOP/anovulação crônica, diabetes, síndrome de Lynch e tamoxifeno. Em menores de 45 anos, amostragem pode ser indicada por risco elevado, persistência ou falha do tratamento. A ultrassonografia identifica alterações e lesões, mas não substitui biópsia indicada; o ponto de corte endometrial usado em sangramento pós-menopausa não deve ser extrapolado sem crítica para mulheres menstruadas.",
+      "pattern": 1
+    },
+    {
+      "section": "coein",
+      "text": "Padrão típico: ciclos imprevisíveis, oligomenorreia, atrasos importantes, alternância de amenorreia e fluxo prolongado. Investigar SOP, alterações tireoidianas, hiperprolactinemia, variações ponderais, deficiência energética, adolescência e perimenopausa. Iniciar pela exclusão de gestação; TSH, prolactina e avaliação de hiperandrogenismo são dirigidos pela história.",
+      "pattern": 1
+    },
+    {
+      "section": "coein",
+      "text": "Em geral ciclos com intervalo previsível, mas volume menstrual anormalmente elevado; exame e ultrassom podem não revelar lesão causadora. Não há teste laboratorial específico que confirme AUB-E: o diagnóstico resulta de avaliação clínica e exclusão criteriosa de causas concorrentes, incluindo gravidez e coagulopatias quando suspeitas.",
+      "pattern": 1
+    },
+    {
+      "section": "conceitos",
+      "text": "A avaliação começa descrevendo quatro eixos: frequência, regularidade, duração e volume/impacto. Para adultas em idade reprodutiva, a FIGO considera frequência menstrual usual de aproximadamente 24–38 dias; duração prolongada quando ultrapassa 8 dias. O volume é melhor julgado clinicamente pelo impacto funcional e sinais indiretos, porque medir mililitros no cotidiano é impraticável.",
+      "pattern": 2
+    },
+    {
+      "section": "fisiologia",
+      "text": "A menstruação normal é um evento hemostático altamente organizado. A queda de progesterona ao final de um ciclo ovulatório ativa mediadores inflamatórios, metaloproteinases e vasoconstrição das arteríolas espiraladas, promovendo descamação da camada funcional. Em seguida, plaquetas, coagulação, vasoconstrição e reparo endometrial limitam a perda.",
+      "pattern": 2
+    },
+    {
+      "section": "palm",
+      "text": "Além de sangramento intenso, podem produzir massa pélvica, pressão, sintomas urinários e dificuldade reprodutiva. A ultrassonografia deve mapear número, tamanho, vascularização, localização e relação com a cavidade. FIGO: tipo 0, intracavitário pediculado; 1, submucoso com componente intramural menor que 50%; 2, submucoso com componente intramural de 50% ou mais; 3, toca o endométrio mas é totalmente intramural; 4, inteiramente intramural; 5–7, predominantemente subserosos; 8, outras localizações. Alguns tumores recebem descrição híbrida.",
+      "pattern": 2
+    },
+    {
+      "section": "palm",
+      "text": "Esta categoria compreende hiperplasia endometrial (incluindo neoplasia intraepitelial endometrial/hiperplasia atípica) e câncer endometrial. A exposição estrogênica não contraposta por progesterona, particularmente em anovulação crônica, pode levar de proliferação excessiva a alterações pré-neoplásicas. SUA pode ser o sintoma inicial de doença grave.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "section": "conceitos",
+      "text": "O Sangramento Uterino Anormal é uma descrição clínica, não um diagnóstico etiológico. Ele engloba alterações do sangramento originado no corpo uterino em pessoas não grávidas. A nomenclatura moderna substitui expressões vagas como “hemorragia uterina disfuncional”, “menorragia” e “metrorragia” por descrições do padrão de sangramento e pela causa quando conhecida."
+    },
+    {
+      "section": "conceitos",
+      "text": "A avaliação começa descrevendo quatro eixos: frequência, regularidade, duração e volume/impacto. Para adultas em idade reprodutiva, a FIGO considera frequência menstrual usual de aproximadamente 24–38 dias; duração prolongada quando ultrapassa 8 dias. O volume é melhor julgado clinicamente pelo impacto funcional e sinais indiretos, porque medir mililitros no cotidiano é impraticável."
+    }
+  ],
+  "dom_simulation": {
+    "scope": "JSDOM; script real com RPC substituída por snapshot somente leitura; sem layout, autenticação real ou download de imagens",
+    "errors": [],
+    "inserted_figures": [
+      {
+        "id": 314,
+        "section": "palm",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-adenomiose-rm.webp",
+        "source_only": false
+      },
+      {
+        "id": 313,
+        "section": "palm",
+        "src": "https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-sangramento-uterino-anormal/sua-miomas-tipos.webp",
+        "source_only": false
+      }
+    ],
+    "total_article_images": 3
+  }
+}

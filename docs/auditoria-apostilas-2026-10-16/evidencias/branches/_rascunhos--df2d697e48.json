@@ -1,0 +1,331 @@
+{
+  "sha": "df2d697e48a98d2290e0fc89352bb2266e4020b2",
+  "path": "apostilas/_rascunhos/lote-10-aula-206-miomas-polipos-patologia-uterina-benigna.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--df2d697e48",
+  "title": "LURIA — Lote 10 · Apostila 206",
+  "format": ".md",
+  "chars_estimated": 67903,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 10 · Apostila 206"
+    },
+    {
+      "title": "Miomas, pólipos e patologia uterina benigna"
+    },
+    {
+      "title": "0. Auditoria de não duplicação e benchmark"
+    },
+    {
+      "title": "1. Objetivos e organização do raciocínio"
+    },
+    {
+      "title": "2. Anatomia do útero e a razão da classificação topográfica"
+    },
+    {
+      "title": "3. Fisiopatologia e epidemiologia que ajudam nas decisões"
+    },
+    {
+      "title": "4. Classificação FIGO: os tipos 0 a 8 na prática"
+    },
+    {
+      "title": "5. Quadro clínico: atribuição causal, não coincidência"
+    },
+    {
+      "title": "5.1 Sangramento menstrual intenso e repercussão de ferro"
+    },
+    {
+      "title": "5.2 Sintomas de volume"
+    },
+    {
+      "title": "5.3 Dor aguda em paciente com mioma"
+    },
+    {
+      "title": "5.4 Fertilidade e perdas gestacionais"
+    },
+    {
+      "title": "5.5 Sintomas associados a pólipo"
+    },
+    {
+      "title": "6. Diagnóstico diferencial aplicado: não transformar benignidade presumida em certeza"
+    },
+    {
+      "title": "7. Exames de imagem: que pergunta cada método responde?"
+    },
+    {
+      "title": "7.1 Ultrassonografia transvaginal: método inicial e mapa FIGO"
+    },
+    {
+      "title": "7.2 Sonohisterografia"
+    },
+    {
+      "title": "7.3 Histeroscopia diagnóstica e terapêutica"
+    },
+    {
+      "title": "7.4 Ressonância magnética"
+    },
+    {
+      "title": "7.5 Histologia: em quais momentos é indispensável?"
+    },
+    {
+      "title": "7.6 Exames laboratoriais"
+    },
+    {
+      "title": "8. Estratificação por objetivo: a pergunta anterior à prescrição"
+    },
+    {
+      "title": "9. Tratamento conservador: quando não operar é a escolha ativa"
+    },
+    {
+      "title": "9.1 Correção de ferro e anemia: parte do tratamento, não um detalhe"
+    },
+    {
+      "title": "9.2 Conduta do sangramento uterino agudo versus crônico"
+    },
+    {
+      "title": "9.3 Anti-inflamatórios não esteroidais"
+    },
+    {
+      "title": "9.4 Ácido tranexâmico"
+    },
+    {
+      "title": "9.5 Contraceptivos hormonais combinados e progestagênios"
+    },
+    {
+      "title": "9.6 Agonistas de GnRH"
+    },
+    {
+      "title": "9.7 Antagonistas de GnRH e terapia combinada"
+    },
+    {
+      "title": "10. Pólipos: identificar, tratar e confirmar histologia"
+    },
+    {
+      "title": "10.1 Quando observação pode ser adequada"
+    },
+    {
+      "title": "10.2 Polipectomia histeroscópica"
+    },
+    {
+      "title": "10.3 Recorrência, pólipos múltiplos e fatores associados"
+    },
+    {
+      "title": "10.4 Pólipo endocervical"
+    },
+    {
+      "title": "11. Miomectomia histeroscópica por tipo FIGO"
+    },
+    {
+      "title": "11.1 Por que tipo 0 não se conduz como tipo 2?"
+    },
+    {
+      "title": "11.2 Planejamento anterior ao procedimento"
+    },
+    {
+      "title": "11.3 Complicações típicas"
+    },
+    {
+      "title": "12. Miomectomia laparoscópica/robótica/aberta"
+    },
+    {
+      "title": "12.1 Indicações possíveis"
+    },
+    {
+      "title": "12.2 Reconstrução do miométrio e hemostasia"
+    },
+    {
+      "title": "12.3 Complicações"
+    },
+    {
+      "title": "12.4 Técnica de retirada de material e risco oncológico"
+    },
+    {
+      "title": "13. Embolização de artérias uterinas e outras técnicas preservadoras"
+    },
+    {
+      "title": "13.1 Mecanismo e candidatos"
+    },
+    {
+      "title": "13.2 Síndrome pós-embolização e riscos"
+    },
+    {
+      "title": "13.3 Ablação por radiofrequência e modalidades ablativas"
+    },
+    {
+      "title": "13.4 Histerectomia"
+    },
+    {
+      "title": "13.5 Comparação franca de procedimentos"
+    },
+    {
+      "title": "14. Fertilidade, gestação e perimenopausa: decisões que não cabem em algoritmo único"
+    },
+    {
+      "title": "14.1 Mulher com desejo gestacional imediato"
+    },
+    {
+      "title": "14.2 Miomas na gestação"
+    },
+    {
+      "title": "14.3 Transição menopausal"
+    },
+    {
+      "title": "14.4 Paciente com alto risco cirúrgico"
+    },
+    {
+      "title": "14.5 Adolescente com achado uterino"
+    },
+    {
+      "title": "15. A paciente com mais de uma causa: coocorrência importa"
+    },
+    {
+      "title": "16. Fluxos clínicos para uso em prova e ambulatório"
+    },
+    {
+      "title": "16.1 Lesão uterina identificada por acaso"
+    },
+    {
+      "title": "16.2 Sangramento e mioma ao US"
+    },
+    {
+      "title": "16.3 Mioma submucoso FIGO 0–2"
+    },
+    {
+      "title": "16.4 Massa uterina de risco oncológico"
+    },
+    {
+      "title": "16.5 Útero volumoso e compressão"
+    },
+    {
+      "title": "17. Casos clínicos autorais comentados"
+    },
+    {
+      "title": "Caso 1 — Mioma de 3 cm com anemia importante"
+    },
+    {
+      "title": "Caso 2 — Um mioma externo não explica todo spotting"
+    },
+    {
+      "title": "Caso 3 — Pólipo na pós-menopausa"
+    },
+    {
+      "title": "Caso 4 — Infertilidade e nódulo intramural sem distorção"
+    },
+    {
+      "title": "Caso 5 — FIGO 2 profundo e cirurgia complexa"
+    },
+    {
+      "title": "Caso 6 — Mioma cervical e hidronefrose"
+    },
+    {
+      "title": "Caso 7 — Massa crescente após menopausa"
+    },
+    {
+      "title": "Caso 8 — Sintomas persistem após retirada de pólipo"
+    },
+    {
+      "title": "18. Questões originais comentadas para residência"
+    },
+    {
+      "title": "Questão 1 — FIGO 1 ou 2?"
+    },
+    {
+      "title": "Questão 2 — FIGO 3"
+    },
+    {
+      "title": "Questão 3 — Mioma incidental e sangramento"
+    },
+    {
+      "title": "Questão 4 — Sangramento pós-menopausa com pólipo"
+    },
+    {
+      "title": "Questão 5 — Fertilidade com mioma FIGO 7"
+    },
+    {
+      "title": "Questão 6 — Diagnóstico e tratamento da lesão focal"
+    },
+    {
+      "title": "Questão 7 — SIU-LNG"
+    },
+    {
+      "title": "Questão 8 — Agonista de GnRH"
+    },
+    {
+      "title": "Questão 9 — Embolização e reprodução"
+    },
+    {
+      "title": "Questão 10 — Morcelamento e massa uterina atípica"
+    },
+    {
+      "title": "Questão 11 — Duas doenças no mesmo útero"
+    },
+    {
+      "title": "Questão 12 — Mioma com obstrução urinária"
+    },
+    {
+      "title": "19. Recursos visuais: necessidades de imagens para aprovação"
+    },
+    {
+      "title": "20. Referências científicas verificáveis"
+    },
+    {
+      "title": "21. Auditoria pedagógica e transferência"
+    }
+  ],
+  "reference_entries": [
+    "1. Lakabi R, Harth S, Meinhold-Heerlein I, et al. **Diagnosis and classification of uterine fibroids**. *Int J Gynaecol Obstet*. 2025;171(2):566–573. DOI 10.1002/ijgo.70538. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12553092/>. Texto integral consultado; licença da figura **não comercial**.",
+    "2. Meinhold-Heerlein I, Purandare N, Murji A, et al. **FIGO best practice guidance for diagnosis and treatment of fibroids**. *Int J Gynaecol Obstet*. 2025. DOI 10.1002/ijgo.70496. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12553093/>.",
+    "3. ACOG. **Management of Symptomatic Uterine Leiomyomas**, Practice Bulletin 228. 2021, reafirmado 2025. <https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas>. Página institucional conferida; conteúdo integral restrito, **não declarar leitura completa do boletim**.",
+    "4. NICE. **Heavy menstrual bleeding: assessment and management**, NG88. <https://www.nice.org.uk/guidance/ng88/chapter/Recommendations>. Diretriz britânica, dependente de adaptação ao Brasil.",
+    "5. ASRM Practice Committee. **Removal of myomas in asymptomatic patients to improve fertility and/or reduce miscarriage rate**. *Fertility and Sterility*. 2017;108:416–425. DOI 10.1016/j.fertnstert.2017.06.034. <https://www.asrm.org/practice-guidance/practice-committee-documents/removal-of-myomas-in-asymptomatic-patients-to-improve-fertility-andor-reduce-miscarriage-rate-a-guideline-2017/>.",
+    "6. ACOG. **Uterine Morcellation for Presumed Leiomyomas**, Committee Opinion 822. 2021. <https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/uterine-morcellation-for-presumed-leiomyomas>.",
+    "7. ACOG. **Uterine Fibroids** (informações sobre terapias e escolhas clínicas). <https://www.acog.org/womens-health/faqs/uterine-fibroids>.",
+    "8. Ministério da Saúde/CONITEC. **Leiomioma de útero**, protocolo em coletânea histórica <https://www.gov.br/conitec/pt-br/midias/protocolos/livros/livropcdt_volumeii.pdf>. **ATENÇÃO: antigo; a vigência e atualização em 2026 devem ser verificadas, não tomar como normativo atual automaticamente.**",
+    "**Estado do material:** rascunho original com oito casos e doze questões comentadas. Não há imagens aprovadas nem integração HTML/PWA. O conteúdo precisa de revisão especializada de diretrizes de tratamento, doses e contraindicações, registro de disponibilidade nacional dos tratamentos, avaliação de risco endometrial, revisão das referências de tecnologias e licenças.",
+    "**Controle de extensão:** contagem bruta do Markdown não comprova ≥60 mil caracteres didáticos úteis; exigir remoção de bibliografia/checklists/duplicatas na auditoria. **Comparativo Drive:** somente documentos parciais, não um livro integral equivalente; etapa zero NÃO certificada. **Autossuficiência:** ainda sujeita a teste cego de questões e revisão por profissional habilitado.",
+    "**Próxima sequência oficial:** aula **207 — Prolapso genital e incontinência urinária feminina**. Priorizar POP-Q, suporte dos compartimentos, fisioterapia, pessários, diferenciação de IUE versus urgência, diário miccional, seleção de urodinâmica, cirurgia, complicações de telas e seguimento. Preservar este livro e a apostila SUA preexistente."
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/40970558/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12553092/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12553093/",
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas",
+    "https://www.nice.org.uk/guidance/ng88/chapter/Recommendations",
+    "https://www.asrm.org/practice-guidance/practice-committee-documents/removal-of-myomas-in-asymptomatic-patients-to-improve-fertility-andor-reduce-miscarriage-rate-a-guideline-2017/",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/uterine-morcellation-for-presumed-leiomyomas",
+    "https://www.acog.org/womens-health/faqs/uterine-fibroids",
+    "https://www.gov.br/conitec/pt-br/midias/protocolos/livros/livropcdt_volumeii.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fontes clínicas externas conferidas:** FIGO “Diagnosis and classification of uterine fibroids” (IJGO 2025; PMID 40970558), ACOG Practice Bulletin 228 (2021, reafirmado 2025), NICE NG88 (avaliação de sangramento e tratamento de miomas), ASRM Practice Committee (2017, miomas e fertilidade). O documento ACOG completo exige acesso por assinatura; **não afirmar leitura integral desse boletim**. Todas as recomendações de custo/acesso no SUS devem ser nacionalizadas antes da publicação."
+    },
+    {
+      "text": "Muitos miomas têm alterações somáticas que favorecem crescimento de músculo liso e matriz, com participação de fatores como TGF-β, esteroides sexuais e mecanismos de remodelamento tecidual. **Mioma não é sinônimo de hiperestrogenismo sistêmico mensurável**: os sinais hormonais atuam em nível de tecido, e o comportamento tumoral é variável. Isso explica por que a simples dosagem hormonal não faz diagnóstico nem escolhe cirurgia."
+    },
+    {
+      "text": "| FIGO | Anatomia do mioma | Como raciocinar | | --- | --- | --- | | **0** | Submucoso **pediculado totalmente intracavitário** | Frequentemente alcançável por histeroscopia; sangramento e infertilidade plausíveis. | | **1** | Submucoso com **menos de 50%** de componente intramural | Histeroscopia muitas vezes factível; base e extensão precisam ser mapeadas. | | **2** | Submucoso com **50% ou mais** de componente intramural | Ressecção histeroscópica potencialmente mais difícil, pode exigir estágios/alternativas. | | **3** | **Totalmente intramural, em contato com endométrio** sem componente intracavitário | Não é simplesmente “submucoso fáci"
+    },
+    {
+      "text": "**Revisão de evidência ASRM 2017:** há evidência razoável para melhora de taxas de gravidez clínica após remoção histeroscópica de miomas submucosos deformantes, mas incerteza sobre nascidos vivos e aborto. **Miomectomia de subseroso isolado não demonstrou benefício reprodutivo consistente**, e remoção indiscriminada de mioma intramural sem distorção não é recomendação geral."
+    },
+    {
+      "text": "| Situação | Mioma | Pólipo | Adenomiose | Lesão endometrial atípica/câncer | | --- | --- | --- | --- | --- | | Padrão anatômico | Nódulo muscular geralmente bem delimitado | Formação focal intracavitária, frequentemente vaso nutridor | Miométrio heterogêneo, limites mal definidos, cistos e irregularidade juncional | Espessamento/irregularidade, lesão focal ou difusa, diagnóstico histológico | | Sintoma predominante possível | Sangramento ou compressão conforme FIGO | Spotting/intermenstrual | Sangramento + dismenorreia progressiva | Sangramento irregular/pós-menopausa, pode ser assintomática | | Exame mais útil inicial | USTV com mapa FIGO |"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

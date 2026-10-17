@@ -1,0 +1,346 @@
+{
+  "sha": "6b2459b408e3bc9e9a276098db8108e6d6813cb1",
+  "path": "apostilas/_rascunhos/lote-05-108-itu-infancia.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--6b2459b408",
+  "title": "LURIA — Apostila 108: Infecção urinária na criança",
+  "format": ".md",
+  "chars_estimated": 67953,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 108: Infecção urinária na criança"
+    },
+    {
+      "title": "0. Etapa zero: inventário, escopo e hierarquia de referências"
+    },
+    {
+      "title": "1. A primeira ideia: ITU pediátrica não é uma cultura positiva"
+    },
+    {
+      "title": "2. Epidemiologia, microbiologia e vulnerabilidades"
+    },
+    {
+      "title": "2.1. Por que E. coli ascende até o rim?"
+    },
+    {
+      "title": "2.2. Refluxo não é condição necessária nem suficiente"
+    },
+    {
+      "title": "3. Classificação útil para a prova e a decisão"
+    },
+    {
+      "title": "3.1. Cistite x pielonefrite x bacteriúria assintomática"
+    },
+    {
+      "title": "3.2. Primeira ITU, recorrente e ITU de escape"
+    },
+    {
+      "title": "3.3. Típica x atípica segundo NICE"
+    },
+    {
+      "title": "3.4. Complicada e não complicada"
+    },
+    {
+      "title": "4. Apresentações por idade: o mesmo agente, doenças reconhecidas de maneiras distintas"
+    },
+    {
+      "title": "4.1. Neonatos e menores de três meses"
+    },
+    {
+      "title": "4.2. Lactentes maiores e pré-escolares"
+    },
+    {
+      "title": "4.3. Escolares"
+    },
+    {
+      "title": "4.4. Adolescentes"
+    },
+    {
+      "title": "5. Anamnese e exame físico — o raciocínio vem antes da urocultura"
+    },
+    {
+      "title": "6. Coleta da urina: o ato técnico que determina a qualidade do diagnóstico"
+    },
+    {
+      "title": "6.1. Criança continente"
+    },
+    {
+      "title": "6.2. Criança não continente"
+    },
+    {
+      "title": "6.3. Pré-antibiótico, armazenamento e transporte"
+    },
+    {
+      "title": "6.4. Comparação prática"
+    },
+    {
+      "title": "7. Tira reagente e microscopia: a pergunta certa para cada marcador"
+    },
+    {
+      "title": "7.1. Esterase leucocitária"
+    },
+    {
+      "title": "7.2. Nitrito"
+    },
+    {
+      "title": "7.3. Microscopia e piúria"
+    },
+    {
+      "title": "7.4. O algoritmo NICE não é idêntico em todas as idades"
+    },
+    {
+      "title": "7.5. E se o resultado for discordante?"
+    },
+    {
+      "title": "8. Urocultura: interpretar unidades formadoras de colônia com cautela"
+    },
+    {
+      "title": "8.1. O número só tem sentido com o método"
+    },
+    {
+      "title": "8.2. Três exemplos que evitam erro"
+    },
+    {
+      "title": "8.3. O que fazer com cultura negativa após antibiótico?"
+    },
+    {
+      "title": "8.4. Cultura positiva sem inflamação"
+    },
+    {
+      "title": "9. Cistite ou pielonefrite? O padrão clínico guia exames e antibiótico"
+    },
+    {
+      "title": "10. Primeiras medidas na suspeita de pielonefrite ou urosepse"
+    },
+    {
+      "title": "11. Tratamento antimicrobiano: decisões e armadilhas de segurança"
+    },
+    {
+      "title": "11.1. Antes de escolher o fármaco"
+    },
+    {
+      "title": "11.2. Terapia oral em cistite baixa"
+    },
+    {
+      "title": "11.3. Terapia de ITU febril e pielonefrite"
+    },
+    {
+      "title": "11.4. Duração: evitar tanto subtratamento quanto inércia"
+    },
+    {
+      "title": "11.5. Reevaluar em 24–48 horas"
+    },
+    {
+      "title": "11.6. Quadro sem posologia automática"
+    },
+    {
+      "title": "12. Quando internar, encaminhar e acionar urologia"
+    },
+    {
+      "title": "13. Investigação por imagem: onde NICE e EAU realmente divergem"
+    },
+    {
+      "title": "13.1. Perguntas diferentes para US, UCM e DMSA"
+    },
+    {
+      "title": "13.2. NICE NG224 — ultrassom guiado por idade e perfil"
+    },
+    {
+      "title": "13.3. EAU 2026 — estratégia mais ampla em ITU febril"
+    },
+    {
+      "title": "13.4. Quadro comparativo sem falso consenso"
+    },
+    {
+      "title": "14. RVU: o que importa para a criança com infecção de repetição"
+    },
+    {
+      "title": "15. Profilaxia de ITU: usar menos antibiótico quando ele não agrega"
+    },
+    {
+      "title": "15.1. Prevenção não farmacológica com melhor plausibilidade"
+    },
+    {
+      "title": "15.2. Disfunção vesicointestinal (BBD) — o grande fator esquecido"
+    },
+    {
+      "title": "16. Complicações e prognóstico"
+    },
+    {
+      "title": "17. Algoritmo textual de plantão e ambulatório"
+    },
+    {
+      "title": "18. Pérolas clínicas de alto rendimento"
+    },
+    {
+      "title": "19. Casos clínicos com interpretação e conduta"
+    },
+    {
+      "title": "Caso 1 — Lactente de 45 dias com febre sem foco"
+    },
+    {
+      "title": "Caso 2 — Menina de sete anos com cistite típica"
+    },
+    {
+      "title": "Caso 3 — Menino febril com cultura de saco positiva"
+    },
+    {
+      "title": "Caso 4 — Escolar com febre persistente após antibiótico"
+    },
+    {
+      "title": "Caso 5 — Criança com ITU febril recorrente e constipação"
+    },
+    {
+      "title": "Caso 6 — Primeira ITU aos quatro meses: NICE versus EAU"
+    },
+    {
+      "title": "Caso 7 — ITU com dilatação urinária e choque"
+    },
+    {
+      "title": "Caso 8 — Cultura positiva em criança sem queixa"
+    },
+    {
+      "title": "20. Questões autorais — cinco alternativas justificadas por questão"
+    },
+    {
+      "title": "Questão 1 — Urina de saco coletor"
+    },
+    {
+      "title": "Questão 2 — Lactente jovem"
+    },
+    {
+      "title": "Questão 3 — Nitrito negativo"
+    },
+    {
+      "title": "Questão 4 — Resposta após 48 horas"
+    },
+    {
+      "title": "Questão 5 — Primeira ITU e UCM"
+    },
+    {
+      "title": "Questão 6 — Nitrofurantoína"
+    },
+    {
+      "title": "Questão 7 — Bacteriúria assintomática"
+    },
+    {
+      "title": "Questão 8 — Recidiva e hábitos miccionais"
+    },
+    {
+      "title": "Questão 9 — UTI febril e ultrassom"
+    },
+    {
+      "title": "Questão 10 — Obstrução com infecção"
+    },
+    {
+      "title": "21. Revisão de recomendações brasileiras da SBP 2023"
+    },
+    {
+      "title": "21.1. UFC e coleta: três limiares da SBP"
+    },
+    {
+      "title": "21.2. Antibióticos — dados documentais versus prescrição segura"
+    },
+    {
+      "title": "21.3. Duração de tratamento e cuidado com protocolos distintos"
+    },
+    {
+      "title": "21.4. Ultrassonografia e uretrocistografia"
+    },
+    {
+      "title": "21.5. Quimioprofilaxia e prevenção"
+    },
+    {
+      "title": "22. Camada visual obrigatória — dez candidatos, sem imagem de terceiros incorporada"
+    },
+    {
+      "title": "23. Referências bibliográficas e transparência metodológica"
+    },
+    {
+      "title": "24. Auditoria preliminar — não declarar apostila pronta"
+    }
+  ],
+  "reference_entries": [
+    "**Apostila dedicada:** não havia manuscrito da aula 108 no caminho editorial do GitHub previamente inspecionado. **Material do Drive:** “03 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf”, 20.932 caracteres extraídos, foi aberto e lido, mas aborda principalmente dilatação urinária, refluxo vesicoureteral, enurese e malformações, não constitui uma aula autossuficiente de ITU. Esse documento tem indicações de redistribuição por terceiros e licença comercial não verificada, portanto não será copiado. Seu conteúdo só serviu para reconhecer a ponte com **RVU, hidronefrose e disfunção vesicointest",
+    "**Fontes normativas identificadas em 15/10/2026:**",
+    "1. **Sociedade Brasileira de Pediatria (SBP)**: “Infecção urinária: diagnóstico, investigação e prevenção”, notícia/documento científico publicado em **13/09/2023**, https://www.sbp.com.br/fileadmin/user_upload/23956c-DC_-_InfeccaoUrinaria_Diagnost-Invest-Prevencao.pdf. O documento oficial confirmou o título, data e definição, **o PDF integral oficial (9 páginas) foi localizado e inspecionado visualmente**, inclusive os capítulos de cultura, antimicrobianos, prevenção e investigação por imagem. Doses e indicações permanecem em revisão farmacêutica independente.",
+    "2. **NICE NG224**, *Urinary tract infection in under 16s: diagnosis and management*, publicada em 2022, https://www.nice.org.uk/guidance/ng224/chapter/Recommendations. Texto completo HTML verificado, incluindo coleta, tiras, ultrassom, DMSA e uretrocistografia por idade.",
+    "3. **European Association of Urology (EAU), Paediatric Urology, capítulo 12, atualização 2026**, https://uroweb.org/guidelines/paediatric-urology/chapter/urinary-tract-infections-in-children. Texto completo HTML verificado, incluindo epidemiologia, cultura, imagem, abordagem de ITU febril e prevenção.",
+    "4. **NICE NG111**, pielonefrite aguda — antimicrobianos: https://www.nice.org.uk/guidance/ng111/chapter/recommendations.",
+    "5. **NICE NG109**, infecção urinária baixa — antimicrobianos: https://www.nice.org.uk/guidance/ng109/chapter/Recommendations.",
+    "6. **NICE NG112**, ITU recorrente — prevenção/antimicrobianos: https://www.nice.org.uk/guidance/ng112/chapter/recommendations.",
+    "7. **ISPN 2023**, diretriz de ITU e refluxo pediátrico (revisão regional não brasileira), https://www.ispn.org.in/pdf/Urinarytratinfection%28UTI%29andVURinchildren23.pdf. Candidata a leitura crítica, sem transcrição.",
+    "**Recorte curricular:** a aula 108 ensina diagnóstico, tratamento inicial, imagem e prevenção de ITU pediátrica. O estudo abrangente de síndrome nefrótica/nefrítica pertence à **113**; lesão renal aguda grave, à **106**; outras anomalias urológicas ficam como conexões e não substituem uma apostila específica de malformações.",
+    "**Objetivos verificáveis ao terminar:** reconhecer ITU febril em lactentes; escolher coleta urinária que permita interpretação válida; distinguir bacteriúria assintomática, cistite, pielonefrite e contaminação; selecionar estratégia de tratamento por gravidade; reconhecer a criança que precisa internar ou desobstruir; conhecer diferenças entre NICE e EAU para imagem; prevenir recidiva com foco em intestino e bexiga; responder questões clínicas sem depender de “decoreba de UFC”.",
+    "**Conceito-guia:** a probabilidade pré-teste depende de idade, contexto, sintomas e risco; a confiança no resultado depende da **qualidade da coleta**. O exame não existe separado do paciente.",
+    "**Escherichia coli** é o patógeno clássico dominante em muitos contextos comunitários. Outros: *Klebsiella*, *Proteus*, *Enterobacter*, *Enterococcus* e, em contextos específicos, *Pseudomonas*. **Espécies não-*E. coli***, especialmente em lactente/ITU recorrente ou complicada, aumentam interesse por malformação urinária, instrumentação, uso prévio de antibiótico e resistência; não são prova isolada dessas condições.",
+    "**Fatores de risco:** uropatias congênitas (CAKUT), refluxo vesicoureteral, dilatação urinária, obstrução, bexiga neurogênica, disfunção de esvaziamento, constipação, antecedentes de ITU, cateterização, imunossupressão e exposição prévia a antimicrobianos. Histórico de hidronefrose antenatal deve ser perguntado — porém nem toda dilatação pré-natal persiste nem significa que há obstrução grave.",
+    "**Antimicrobianos e ecologia local:** frequência de bactérias produtoras de ESBL e perfis de sensibilidade variam muito entre cidades, hospitais e grupos de pacientes. Percentuais de resistência de estudo estrangeiro não devem substituir o antibiograma de serviço brasileiro. Uma escolha empírica que é correta para criança estável em certa rede pode ser inadequada para lactente séptico, criança com malformação ou histórico de *E. coli* resistente.",
+    "**Armadilha:** febre em criança com bacteriúria incidental e foco respiratório comprovado não torna a urina necessariamente o foco. Em contrapartida, febre sem causa identificada em lactente exige pensar em ITU mesmo na ausência de choro ao urinar.",
+    "**Primeira ITU:** episódio inicial confirmado, importante para decidir condutas de imagem conforme diretriz e idade. **ITU recorrente:** depende de definição adotada; a NICE NG224 considera recorrência quando há ≥2 episódios de ITU alta, ou um episódio alto + ≥1 baixo, ou ≥3 ITUs baixas. **Infecção de escape:** ITU confirmada enquanto a criança recebe profilaxia antibiótica, exigindo revisar adesão, resistência e causas anatômicas/funcionais.",
+    "**Exemplo:** primeira ITU em criança de 4 anos, melhora rápida com terapia e crescimento de *E. coli*: tende a seguir circuito mais seletivo de imagem na NICE. O mesmo paciente com obstrução e bacteremia muda completamente de risco e de tempo de avaliação.",
+    "**Segurança clínica:** investigar perfusão, consciência, padrão respiratório, hidratação, temperatura, alimentação e sinais de gravidade. Não usar resultado negativo de nitrito como exclusão automática em bebê com elevada suspeita clínica.",
+    "**Vermelhos do plantão:** prostração, alteração de consciência, hipoperfusão, extremidades frias, oligúria importante, desidratação, vômitos que impedem hidratação/medicação, hipotensão, febre persistente apesar de antibiótico adequado, massa, jato urinário fraco, história de rim único ou malformação, imunossupressão e lactente muito pequeno.",
+    "**Jato médio após higiene orientada** é método preferido para cultura e EAS quando a criança consegue cooperar. Orientar retirada da primeira porção do jato, coleta direta em recipiente estéril e transporte rápido. A qualidade depende de técnica e manipulação; não presumir que toda cultura com baixa contagem é contaminação nem que todas amostras domiciliares são válidas por padrão.",
+    "**Clean catch (jato espontâneo coletado adequadamente):** método não invasivo que pode ser tentado se possível, inclusive com técnica adaptada ao lactente. A contaminação pode ser maior que em cateterização, variando com execução.",
+    "**Cateterismo vesical intermitente para coleta:** costuma oferecer amostra com menor contaminação, útil quando confirmação é necessária em bebê febril; envolve procedimento invasivo e higiene cuidadosa. **Punção suprapúbica:** obtém urina diretamente da bexiga e é altamente específica quando cultura demonstra uropatógeno; requer treinamento, técnica adequada e, conforme NICE, confirmação ultrassonográfica de urina vesical antes do procedimento.",
+    "**Saco coletor adesivo:** tem alta taxa de contaminação, portanto **urocultura positiva de saco NÃO confirma ITU**. Em algumas circunstâncias pode ser utilizado para triagem inicial de urina quando uma coleta melhor é impraticável, mas resultado positivo precisa ser confirmado por método adequado antes de rotular a criança. A EAU 2026 recomenda **não utilizar saco plástico como método de coleta** para diagnóstico em não continentes; existem variações de política entre serviços, mas a proibição de confirmar ITU com cultura positiva de saco é uma salvaguarda didática central.",
+    "**Nunca:** pressionar agressivamente região suprapúbica para forçar urina em criança instável, usar algodão/gaze/fralda como se fornecessem cultura estéril ou manter amostra morna por horas antes de enviar.",
+    "**Menores de três meses:** avaliação especializada, microscopia e cultura urgentes, sem depender apenas da tira.",
+    "**De três meses a menos de três anos:** NICE NG224 recomenda usar esterase/nitrito; ambos negativos, em criança com risco usual e sem critérios especiais, geralmente levam a não prescrever antibiótico nem cultivar; **se qualquer um for positivo**, enviar urocultura e considerar antibiótico. Mas cultura permanece indicada em sinais de pielonefrite, alto/intermediário risco de doença grave, ITU recorrente, discordância clínica-laboratorial ou não resposta 24–48 h.",
+    "**Três anos ou mais:** quando ambos positivos, normalmente tratar; nitrito positivo isolado em amostra fresca, tratar e cultivar; esterase positiva isolada, cultivar e avaliar sinais clínicos antes de tratar; ambos negativos, procurar causas alternativas se baixo risco. **Não aplicar o algoritmo de criança estável a criança séptica**.",
+    "**EAU 2026:** explicita controvérsia nos cortes e aceita considerar monocultura de 10³ a 10⁴ UFC/mL em amostras de coleta limpa/jato médio e cateterismo em cenários adequados; na punção suprapúbica, qualquer crescimento do agente pode ser significativo. Esses números são **interpretações contextuais**, não ordem de diagnosticar ITU em todas as crianças com 10³ UFC.",
+    "**SBP 2023 — Documento Científico nº 101, p. 4:** o limiar publicado é **mais de 50.000 UFC/mL por cateterismo**, **mais de 100.000 UFC/mL por jato médio** e **qualquer crescimento após punção suprapúbica**. A EAU 2026 admite contagens menores em certas monoculturas obtidas corretamente, desde que haja coerência clínica. Os limiares são **específicos da diretriz e método**, não verdades universais; valores abaixo do corte brasileiro não autorizam descartar ITU em bebê grave sem avaliação pediátrica."
+  ],
+  "external_urls": [
+    "https://www.sbp.com.br/fileadmin/user_upload/23956c-DC_-_InfeccaoUrinaria_Diagnost-Invest-Prevencao.pdf.",
+    "https://www.nice.org.uk/guidance/ng224/chapter/Recommendations.",
+    "https://uroweb.org/guidelines/paediatric-urology/chapter/urinary-tract-infections-in-children.",
+    "https://www.nice.org.uk/guidance/ng111/chapter/recommendations.",
+    "https://www.nice.org.uk/guidance/ng109/chapter/Recommendations.",
+    "https://www.nice.org.uk/guidance/ng112/chapter/recommendations.",
+    "https://www.ispn.org.in/pdf/Urinarytratinfection%28UTI%29andVURinchildren23.pdf.",
+    "https://www.sbp.com.br/fileadmin/user_upload/23183d-DC_Infec_TratoUrinario_Pediatria-Atualiz2021.pdf."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> **Como usar esta aula:** as recomendações são educacionais e não substituem protocolos do serviço, avaliação pediátrica e antibiograma local. Toda prescrição para criança deve considerar idade exata, peso, alergias, função renal, formulação comercial brasileira e gravidade. As divergências entre sociedades serão expostas, não apagadas."
+    },
+    {
+      "text": "**Fontes normativas identificadas em 15/10/2026:** 1. **Sociedade Brasileira de Pediatria (SBP)**: “Infecção urinária: diagnóstico, investigação e prevenção”, notícia/documento científico publicado em **13/09/2023**, https://www.sbp.com.br/fileadmin/user_upload/23956c-DC_-_InfeccaoUrinaria_Diagnost-Invest-Prevencao.pdf. O documento oficial confirmou o título, data e definição, **o PDF integral oficial (9 páginas) foi localizado e inspecionado visualmente**, inclusive os capítulos de cultura, antimicrobianos, prevenção e investigação por imagem. Doses e indicações permanecem em revisão farmacêutica independente. 2. **NICE NG224**, *Urinary tra"
+    },
+    {
+      "text": "**Recorte curricular:** a aula 108 ensina diagnóstico, tratamento inicial, imagem e prevenção de ITU pediátrica. O estudo abrangente de síndrome nefrótica/nefrítica pertence à **113**; lesão renal aguda grave, à **106**; outras anomalias urológicas ficam como conexões e não substituem uma apostila específica de malformações."
+    },
+    {
+      "text": "Infecção do trato urinário é um processo infeccioso/inflamatório envolvendo componentes do sistema urinário, usualmente por uropatógeno bacteriano. O diagnóstico deve integrar **sintomas/sinais, exame urinário, método de coleta e urocultura**, em vez de se basear na presença isolada de bactérias. Na criança, a apresentação varia muito com a idade: lactente jovem pode ter febre sem foco ou sinais inespecíficos; escolar pode descrever disúria e urgência; adolescente pode apresentar sintomas semelhantes aos do adulto, com contextos próprios."
+    },
+    {
+      "text": "Imagine dois cenários. **Criança A**, 2 meses, febre de 39°C, irritabilidade e ausência de foco claro, não consegue informar disúria. Necessita avaliação pediátrica urgente e amostra apropriada. **Criança B**, 7 anos, assintomática, cultura pedida sem indicação e resultado positivo de amostra possivelmente contaminada. Tratar indiscriminadamente a cultura da criança B não equivale a prevenir pielonefrite."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

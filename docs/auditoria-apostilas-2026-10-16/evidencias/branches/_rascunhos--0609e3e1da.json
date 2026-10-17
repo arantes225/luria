@@ -1,0 +1,81 @@
+{
+  "sha": "0609e3e1daf3834bb8ff9f1a231a029a16089aa6",
+  "path": "apostilas/_rascunhos/lote-08-aula-181-curadoria-ptbxl-imagens.md",
+  "branches": [
+    "origin/editorial/lote-08-inventario-e-producao-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--0609e3e1da",
+  "title": "LURIA — Lote 08, aula 181 | Curadoria efetiva de ECGs reais do PTB-XL",
+  "format": ".md",
+  "chars_estimated": 12689,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 08, aula 181 | Curadoria efetiva de ECGs reais do PTB-XL"
+    },
+    {
+      "title": "O que foi comprovadamente executado"
+    },
+    {
+      "title": "Os 12 registros realmente convertidos, com arquivo e descrição provisória"
+    },
+    {
+      "title": "Auditoria médica imagem a imagem: exigências de aprovação"
+    },
+    {
+      "title": "Limitações honestas e prevenção de confusão"
+    },
+    {
+      "title": "Próxima integração após revisão médica"
+    },
+    {
+      "title": "Segunda rodada validada tecnicamente — novos bloqueios de ramo"
+    },
+    {
+      "title": "Terceira rodada (15/10/2026): 500 Hz reais, escala vertical comparável — substituição técnica do pacote anterior"
+    },
+    {
+      "title": "Por que substituir as 14 primeiras renderizações de 100 Hz?"
+    },
+    {
+      "title": "Limitação importante descoberta durante a inspeção: falta tira de ritmo contínua"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://doi.org/10.13026/kfzx-aw45",
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://github.com/arantes225/luria/actions/runs/38692608147",
+    "https://github.com/arantes225/luria/actions/runs/38692816677",
+    "https://github.com/arantes225/luria/actions/runs/38696857730"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Rótulos não clínicos homologados:** cada descrição acima relata o **código da base de dados**, não a conclusão de uma revisão independente. O campo \\`source_scp_likelihood=0\\` em algumas entradas de ritmo significa que não foi atribuída probabilidade pelo esquema SCP, **não** que o diagnóstico tenha probabilidade zero. Não escrever uma legenda categórica antes da revisão."
+    },
+    {
+      "text": "| Gate | Como documentar | Status atual | |---|---|---| | Identidade e origem do registro | ECG ID, URL \\`records100\\`, dataset v1.0.3, DOI e licença CC BY 4.0 | Documentado no manifesto | | Rótulo de origem | Código SCP + revisão humana original / probabilidade, sem diagnóstico inventado | Parcial, metadados presentes | | Confirmar achado morfológico | Cardiologista medir/calcular e assinar interpretação do traçado | **Pendente** | | Diferenciais e contexto | Não chamar MI de infarto agudo; explicar correlação clínica | **Pendente** | | Qualidade visual | 12 derivações; papel digital a 100 Hz; ganhos; legibilidade no celular | Inspeção inici"
+    },
+    {
+      "text": "- Os dados são **ECGs clínicos reais**, mas os gráficos são **derivados digitais** de 100 Hz, não fotografias do papel original e não têm calibração física de impressão. - Folds 9/10 e \\`validated_by_human\\` elevam confiança nos metadados; não garantem que todo diagnóstico seja visível ou seja o melhor exemplo para alunos. - O artefato GitHub tem retenção de 7 dias e a entrega não o transforma automaticamente em arquivo versionado permanente. - **O workflow não escreve na \\`main\\` nem publica no GitHub Pages.** - A fonte não cobre necessariamente em quantidade suficiente exemplos de Wellens, de Winter, FA pré-excitada ou captura/fusão ventric"
+    },
+    {
+      "text": "Após cada exemplo ser validado, preparar legenda específica (\"Qual achado observar?\", \"Como reconhecer?\", \"Diagnósticos diferenciais\", \"Pulo do Gato\"), otimizar tamanho/pontos de zoom, preservar fonte e licença e posicionar nos capítulos 3, 5–10, 12–13 e 24–30 conforme contexto. Para padrões que exigem alta resolução, substituir pela fonte \\`records500/\\` antes de homologação. Os arquivos ainda não fazem parte de \\`apostilas/index.html\\` ou \\`content.json\\` e nenhuma aprovação clínica foi presumida."
+    },
+    {
+      "text": "Cada registro clínico contém 10 segundos; o desenho clássico 3×4 exibe quatro **janelas consecutivas de 2,5 s**, com derivações diferentes em cada coluna. Isso é suficiente para observar morfologia em 12 derivações, mas **não é uma tira de 10 s contínuos na mesma derivação**. Para concluir e ensinar **BAV II, BAV total, FA, flutter, arritmias intermitentes e regularidade de RR**, adicionar um painel de **DII contínuo por 10 s**, também extraído do próprio registro real de 500 Hz. Até que exista, **não certificar o material como traçado final para diagnóstico de dissociação AV**."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

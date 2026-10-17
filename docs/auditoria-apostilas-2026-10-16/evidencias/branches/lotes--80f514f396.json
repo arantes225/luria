@@ -1,0 +1,342 @@
+{
+  "sha": "80f514f3967219cd2ba97944ee489c6a3ccc1f0f",
+  "path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-02-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "lotes--80f514f396",
+  "title": "LURIA — Asma brônquica",
+  "format": ".md",
+  "chars_estimated": 151776,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Asma brônquica"
+    },
+    {
+      "title": "Percurso de aprendizagem"
+    },
+    {
+      "title": "1. Fundamentos e fisiopatologia"
+    },
+    {
+      "title": "1.1 O que é asma e por que o fluxo varia"
+    },
+    {
+      "title": "1.2 Inflamação brônquica, obstrução e hiperresponsividade"
+    },
+    {
+      "title": "2. Quadro clínico e diagnósticos diferenciais"
+    },
+    {
+      "title": "2.1 Reconhecimento clínico e diagnósticos diferenciais"
+    },
+    {
+      "title": "2.2 Asma relacionada ao trabalho: identificar, demonstrar e proteger o paciente"
+    },
+    {
+      "title": "2.3 Dispneia sem sibilos: obstrução laríngea induzível, respiração disfuncional e causas cardíacas"
+    },
+    {
+      "title": "3. Diagnóstico e interpretação funcional"
+    },
+    {
+      "title": "3.1 Como confirmar a suspeita"
+    },
+    {
+      "title": "3.2 A consulta diagnóstica como processo: documentar antes de tratar, quando possível"
+    },
+    {
+      "title": "3.3 Aprofundamento da espirometria — do gráfico ao diagnóstico"
+    },
+    {
+      "title": "4. Controle, gravidade e risco futuro"
+    },
+    {
+      "title": "4.1 Controle atual não é o mesmo que risco futuro"
+    },
+    {
+      "title": "4.2 Controle, gravidade e risco: uma matriz de decisões"
+    },
+    {
+      "title": "5. Tratamento controlador e estratégias AIR/MART"
+    },
+    {
+      "title": "5.1 Tratamento controlador: raciocínio antes da prescrição"
+    },
+    {
+      "title": "5.2 Plano terapêutico como ciclo de decisões, não escada automática"
+    },
+    {
+      "title": "5.3 Tratamento por etapas: tradução prática de GINA 2026 ao contexto brasileiro"
+    },
+    {
+      "title": "6. Exacerbação e emergência"
+    },
+    {
+      "title": "6.1 Reconhecer exacerbação e perigo imediato"
+    },
+    {
+      "title": "6.2 Exacerbação: uma sequência prática de segurança"
+    },
+    {
+      "title": "6.3 Crise asmática — intervenções quantificadas e decisões sem atraso"
+    },
+    {
+      "title": "7. Asma grave, biomarcadores e imunobiológicos"
+    },
+    {
+      "title": "7.1 Asma difícil de tratar e asma grave: biomarcadores e biológicos"
+    },
+    {
+      "title": "7.2 Asma difícil de tratar e asma grave não são a mesma categoria"
+    },
+    {
+      "title": "7.3 Fenótipos e endótipos: interpretar eosinófilos, IgE e FeNO sem confundir conceitos"
+    },
+    {
+      "title": "7.4 Escolha entre tratamentos adicionais: indicação internacional não equivale à incorporação brasileira"
+    },
+    {
+      "title": "7.5 Avaliar resposta, segurança e redução gradual: a vida depois de iniciar o biológico"
+    },
+    {
+      "title": "8. Populações especiais e comorbidades"
+    },
+    {
+      "title": "8.1 Populações em que a regra geral precisa de adaptação"
+    },
+    {
+      "title": "8.1.1 Populações especiais e comorbidades — decisões que caem em prova"
+    },
+    {
+      "title": "8.2 Gestação e puerpério: metas de controle e continuidade da terapia"
+    },
+    {
+      "title": "8.3 Asma entre 6 e 11 anos: atualização GINA 2026 e proteção anti-inflamatória desde a etapa inicial"
+    },
+    {
+      "title": "8.4 Crianças de 5 anos ou menos: chiado recorrente não autoriza copiar a tabela de escolares"
+    },
+    {
+      "title": "8.5 Espirometria em escolares: a porcentagem do valor previsto não é a do basal"
+    },
+    {
+      "title": "8.6 Exacerbação e plano de ação do escolar: o que muda a segurança"
+    },
+    {
+      "title": "8.7 AIR/MART entre 6 e 11 anos: como ler a dose sem transpor o esquema do adulto"
+    },
+    {
+      "title": "8.8 Escola, família e retorno após a crise: transformar prescrição em proteção real"
+    },
+    {
+      "title": "8.9 Sibilância no pré-escolar: bronquiolite, sibilância episódica e suspeita de asma"
+    },
+    {
+      "title": "9. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Espirometria normal entre episódios"
+    },
+    {
+      "title": "Caso 2 — Poucos sintomas, crise importante"
+    },
+    {
+      "title": "Caso 3 — Obstrução laríngea induzida por exercício, não presumir asma"
+    },
+    {
+      "title": "Caso 4 — Dispneia grave e tórax silencioso"
+    },
+    {
+      "title": "Caso 5 — Resposta broncodilatadora: aprender a conta"
+    },
+    {
+      "title": "Caso 6 — Excesso de resgate com baixa percepção de sintomas"
+    },
+    {
+      "title": "Caso 7 — Asma de difícil controle ou grave?"
+    },
+    {
+      "title": "Caso 8 — Eosinófilos após corticoide oral e possível indicação de imunobiológico"
+    },
+    {
+      "title": "Caso 9 — A falta de ar da padaria não era apenas “asma ruim”"
+    },
+    {
+      "title": "Caso 10 — Estridor durante corrida interpretado como asma resistente"
+    },
+    {
+      "title": "Caso 11 — Asma pouco sintomática em escolar não significa SABA isolado"
+    },
+    {
+      "title": "Caso 12 — Pré-escolar com episódios virais não recebe automaticamente MART escolar"
+    },
+    {
+      "title": "Caso 13 — Resposta broncodilatadora pediátrica com denominador errado"
+    },
+    {
+      "title": "Caso 14 — Escolar com crise grave que para de sibilar"
+    },
+    {
+      "title": "Caso 15 — “Oito jatos” não significa oito jatos adicionais de resgate"
+    },
+    {
+      "title": "Caso 16 — Prescrição com concentração adulta em escolar"
+    },
+    {
+      "title": "Caso 17 — Asma escolar bem controlada em casa, mas crises na educação física"
+    },
+    {
+      "title": "Caso 18 — Primeiro chiado aos sete meses não é sinônimo de asma"
+    },
+    {
+      "title": "Caso 19 — Pré-escolar com chiado recorrente e sintomas entre infecções"
+    },
+    {
+      "title": "Caso 20 — Pré-escolar com sintomas frequentes e crise prévia"
+    },
+    {
+      "title": "Caso 21 — A “asma grave” que melhorou ao corrigir a técnica inalatória"
+    },
+    {
+      "title": "Caso 22 — Crises apesar de tratamento confirmado: fenotipar sem confundir as regras do SUS"
+    },
+    {
+      "title": "10. Questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1"
+    },
+    {
+      "title": "Questão 2"
+    },
+    {
+      "title": "Questão 3 — Erro de técnica inalatória"
+    },
+    {
+      "title": "Questão 4 — Asma relacionada ao trabalho"
+    },
+    {
+      "title": "Questão 5 — Terapia de alívio"
+    },
+    {
+      "title": "Questão 6 — Atenção à gestante"
+    },
+    {
+      "title": "Questão 7"
+    },
+    {
+      "title": "Questão 8"
+    },
+    {
+      "title": "Questão 9"
+    },
+    {
+      "title": "Questão 10"
+    },
+    {
+      "title": "Questão 11"
+    },
+    {
+      "title": "Questão 12"
+    },
+    {
+      "title": "Questão 13 — Investigação do trabalho"
+    },
+    {
+      "title": "Questão 14 — Dispneia induzida por exercício"
+    },
+    {
+      "title": "Questão 15 — Asma durante a gestação"
+    },
+    {
+      "title": "Questão 16 — Atualização GINA 2026 em crianças 6–11 anos"
+    },
+    {
+      "title": "Questão 17 — Tratamento de escolar e pré-escolar não são iguais"
+    },
+    {
+      "title": "Questão 18 — Qual percentual define resposta broncodilatadora em criança?"
+    },
+    {
+      "title": "Questão 19 — Sinais de perigo na crise asmática infantil"
+    },
+    {
+      "title": "Questão 20 — Soma de manutenção e resgate na GINA 2026"
+    },
+    {
+      "title": "Questão 21 — Concentração pediátrica e adulta"
+    },
+    {
+      "title": "Questão 22 — Dose de alívio e risco no escolar"
+    },
+    {
+      "title": "Questão 23 — Primeiro episódio de sibilância em lactente"
+    },
+    {
+      "title": "Questão 24 — Ensaio terapêutico na suspeita de asma antes dos cinco anos"
+    },
+    {
+      "title": "Questão 25 — GINA 2026: criança de quatro anos e necessidade de CI"
+    },
+    {
+      "title": "Questão 26 — Asma difícil de tratar versus asma grave"
+    },
+    {
+      "title": "Questão 27 — Fenótipo T2, corticoide sistêmico e contexto brasileiro"
+    },
+    {
+      "title": "Referências essenciais"
+    }
+  ],
+  "reference_entries": [
+    "1. GINA Strategy Report 2026. https://ginasthma.org/2026-gina-strategy-report/",
+    "2. GINA Summary Guide 2026. https://ginasthma.org/2026-gina-summary-guide/",
+    "3. Ministério da Saúde — PCDT Asma (2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "4. SBPT — Consensos e diretrizes. https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "5. GINA — Difficult-to-Treat & Severe Asthma in Adolescent and Adult Patients, v7.0 (maio 2026). https://ginasthma.org/wp-content/uploads/2026/06/GINA-Severe-Asthma-Guide-2026-WEB-WMS.pdf"
+  ],
+  "external_urls": [
+    "https://www.cdc.gov/niosh/asthma/hcp/diagnosing/index.html",
+    "https://www.cdc.gov/niosh/bulletin/2026/asthma.html",
+    "https://ginasthma.org/2026-gina-strategy-report/",
+    "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+    "https://www.nice.org.uk/guidance/ng245/chapter/recommendations",
+    "https://publications.aap.org/pediatrics/article/134/5/e1474/75848/",
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://sbpt.org.br/portal/consensos-e-diretrizes-da-sbpt/",
+    "https://ginasthma.org/wp-content/uploads/2026/06/GINA-Severe-Asthma-Guide-2026-WEB-WMS.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Comece pelos fundamentos e critérios diagnósticos; avance para decisões terapêuticas e avaliação de risco. Use os casos e questões de consolidação após estudar o corpo clínico. As fontes ao final permitem conferir normas e atualizações."
+    },
+    {
+      "text": "Diferencie quatro afirmações: 1. **Sintoma compatível não confirma asma.** Sibilância também ocorre em DPOC, insuficiência cardíaca, obstrução de via aérea superior e algumas infecções. 2. **Ausência de sintoma no consultório não exclui asma.** A variabilidade é constitutiva da doença. 3. **Resposta subjetiva à bombinha não estabelece diagnóstico isoladamente.** Há efeito placebo, variações espontâneas e coexistência de outras causas de dispneia. 4. **Asma leve na frequência dos sintomas não significa crise incapaz de matar.** Pessoas pouco sintomáticas também podem exacerbar, especialmente quando não recebem tratamento anti-inflamatório apro"
+    },
+    {
+      "text": "O diagnóstico é uma construção de probabilidades: padrão clínico sugestivo combinado, sempre que possível, com comprovação objetiva de variabilidade da função pulmonar. O tratamento deve simultaneamente aliviar sintomas e reduzir risco de exacerbação, perda funcional e exposição a corticoide sistêmico."
+    },
+    {
+      "text": "**Conduta:** otimizar tratamento contendo CI, evitar exposição capaz de provocar crise grave, orientar proteção e discutir redução/cessação da exposição nociva com avaliação especializada. Não instruir o paciente a se expor deliberadamente para “provar a asma”. Uma mudança de emprego tem impacto social: documentar resultados, respeitar autonomia, discutir direitos de sigilo e encaminhar ao CEREST ou equipe de Medicina do Trabalho conforme rede local. O empregador não deve receber diagnóstico confidencial sem base legal ou autorização adequada."
+    },
+    {
+      "text": "Na obstrução laríngea durante exercício, a falta de ar pode atingir seu auge **durante esforço intenso** e melhorar rapidamente após cessá-lo; na broncoconstrição induzida por exercício, os sintomas podem surgir ou piorar **após** terminar a atividade. Esse padrão temporal é pista, não confirmação. A laringoscopia realizada **durante sintomas** ou provocação apropriada em serviço experiente pode evidenciar obstrução. Espirometria normal fora do episódio não afasta nem asma intermitente nem obstrução laríngea. Uma alça inspiratória achatada pode sugerir obstrução variável extratorácica, mas ausência do sinal em repouso não exclui o diagnóstico"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

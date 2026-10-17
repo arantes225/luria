@@ -1,0 +1,832 @@
+{
+  "key": "artrites-inflamatorias-doencas-autoimunes--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/artrites-inflamatorias-doencas-autoimunes/rascunho-editorial-lote09.md",
+  "title": "LURIA | Aula 171 — Artrites inflamatórias e doenças autoimunes",
+  "source_sha256": "6369719b9c2a6c8d72b8c549c30b1a38b7d9a0ef0a28d72cc3595cb7b455428c",
+  "chars_estimated": 116210,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Aula 171 — Artrites inflamatórias e doenças autoimunes",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Objetivos clínicos e roteiro de estudo",
+      "level": 2
+    },
+    {
+      "line": 27,
+      "title": "2. Linguagem clínica: o que está inflamado?",
+      "level": 2
+    },
+    {
+      "line": 35,
+      "title": "Comparação clínica rápida",
+      "level": 3
+    },
+    {
+      "line": 48,
+      "title": "3. Como classificar a síndrome articular antes de pedir exames",
+      "level": 2
+    },
+    {
+      "line": 50,
+      "title": "3.1. Número de articulações",
+      "level": 3
+    },
+    {
+      "line": 56,
+      "title": "3.2. Tempo",
+      "level": 3
+    },
+    {
+      "line": 60,
+      "title": "3.3. Distribuição",
+      "level": 3
+    },
+    {
+      "line": 66,
+      "title": "4. História clínica de alto rendimento",
+      "level": 2
+    },
+    {
+      "line": 83,
+      "title": "5. Exame físico reumatológico: técnica, não só articulações",
+      "level": 2
+    },
+    {
+      "line": 89,
+      "title": "O exame não termina na mão",
+      "level": 3
+    },
+    {
+      "line": 102,
+      "title": "6. Emergências reumatológicas: primeiro excluir ameaça imediata",
+      "level": 2
+    },
+    {
+      "line": 104,
+      "title": "6.1. Artrite séptica — articulação quente = diagnóstico urgente a excluir",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "6.2. Síndrome pulmão–rim",
+      "level": 3
+    },
+    {
+      "line": 116,
+      "title": "6.3. Arterite de células gigantes",
+      "level": 3
+    },
+    {
+      "line": 120,
+      "title": "6.4. Nefrite lúpica e microangiopatia",
+      "level": 3
+    },
+    {
+      "line": 124,
+      "title": "6.5. Miocardite, pericardite tamponante, crise renal esclerodérmica",
+      "level": 3
+    },
+    {
+      "line": 128,
+      "title": "7. Exames de sangue, urina e imagem — indicação e limites",
+      "level": 2
+    },
+    {
+      "line": 130,
+      "title": "7.1. Inflamação sistêmica",
+      "level": 3
+    },
+    {
+      "line": 136,
+      "title": "7.2. Autoanticorpos e testes especializados",
+      "level": 3
+    },
+    {
+      "line": 155,
+      "title": "7.3. Exames de imagem",
+      "level": 3
+    },
+    {
+      "line": 167,
+      "title": "8. Artrite reumatoide — conceito, imunopatologia e epidemiologia",
+      "level": 2
+    },
+    {
+      "line": 175,
+      "title": "8.1. Fenótipo clássico",
+      "level": 3
+    },
+    {
+      "line": 181,
+      "title": "8.2. Critérios ACR/EULAR 2010",
+      "level": 3
+    },
+    {
+      "line": 204,
+      "title": "8.3. Diagnóstico diferencial da AR",
+      "level": 3
+    },
+    {
+      "line": 214,
+      "title": "9. Tratamento da artrite reumatoide — abordagem Treat-to-Target",
+      "level": 2
+    },
+    {
+      "line": 218,
+      "title": "9.1. MMCD sintéticos convencionais",
+      "level": 3
+    },
+    {
+      "line": 230,
+      "title": "9.2. Glicocorticoides e anti-inflamatórios",
+      "level": 3
+    },
+    {
+      "line": 234,
+      "title": "9.3. MMCD biológicos e sintéticos-alvo",
+      "level": 3
+    },
+    {
+      "line": 240,
+      "title": "9.4. Antes da imunossupressão",
+      "level": 3
+    },
+    {
+      "line": 244,
+      "title": "9.5. Seguimento objetivo",
+      "level": 3
+    },
+    {
+      "line": 248,
+      "title": "10. Lúpus eritematoso sistêmico (LES) — de autoanticorpos a órgão-alvo",
+      "level": 2
+    },
+    {
+      "line": 254,
+      "title": "10.1. Clínica orientadora",
+      "level": 3
+    },
+    {
+      "line": 265,
+      "title": "10.2. Critérios EULAR/ACR 2019 de LES",
+      "level": 3
+    },
+    {
+      "line": 271,
+      "title": "10.3. Como avaliar atividade",
+      "level": 3
+    },
+    {
+      "line": 275,
+      "title": "10.4. Tratamento do LES",
+      "level": 3
+    },
+    {
+      "line": 283,
+      "title": "10.5. Nefrite lúpica",
+      "level": 3
+    },
+    {
+      "line": 289,
+      "title": "11. Síndrome antifosfolípide (SAF): trombose e obstetrícia",
+      "level": 2
+    },
+    {
+      "line": 297,
+      "title": "12. Espondiloartrites: família clínica e reconhecimento do padrão axial",
+      "level": 2
+    },
+    {
+      "line": 301,
+      "title": "12.1. Dor lombar inflamatória",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "12.2. Tratamento",
+      "level": 3
+    },
+    {
+      "line": 313,
+      "title": "13. Artrite psoriásica: pele, unhas, enteses e articulações",
+      "level": 2
+    },
+    {
+      "line": 317,
+      "title": "13.1. Critérios CASPAR e contexto",
+      "level": 3
+    },
+    {
+      "line": 321,
+      "title": "13.2. Tratamento por domínio",
+      "level": 3
+    },
+    {
+      "line": 327,
+      "title": "14. Artrite reativa e outras artrites pós-infecciosas",
+      "level": 2
+    },
+    {
+      "line": 337,
+      "title": "15. Gota, CPPD e monoartrites por cristais",
+      "level": 2
+    },
+    {
+      "line": 345,
+      "title": "15.1. Manejo da crise",
+      "level": 3
+    },
+    {
+      "line": 349,
+      "title": "15.2. Redução sustentada do urato",
+      "level": 3
+    },
+    {
+      "line": 355,
+      "title": "16. Síndrome de Sjögren: secura e manifestações sistêmicas",
+      "level": 2
+    },
+    {
+      "line": 365,
+      "title": "17. Esclerose sistêmica e fenômeno Raynaud",
+      "level": 2
+    },
+    {
+      "line": 371,
+      "title": "17.1. Achados que orientam o diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 375,
+      "title": "17.2. Complicações e manejo",
+      "level": 3
+    },
+    {
+      "line": 381,
+      "title": "18. Miopatias inflamatórias: fraqueza objetiva é a pista",
+      "level": 2
+    },
+    {
+      "line": 393,
+      "title": "19. Vasculites: calibre do vaso e órgãos ameaçados",
+      "level": 2
+    },
+    {
+      "line": 404,
+      "title": "19.1. AAV (vasculites associadas ao ANCA)",
+      "level": 3
+    },
+    {
+      "line": 410,
+      "title": "19.2. Arterite temporal e Takayasu",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "20. Osteoartrite, fibromialgia e artrite viral — falsos positivos de autoimunidade",
+      "level": 2
+    },
+    {
+      "line": 424,
+      "title": "21. Tratamento medicamentoso: segurança, doses e confusões perigosas",
+      "level": 2
+    },
+    {
+      "line": 447,
+      "title": "Antimaláricos e retina",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "Metotrexato e erros de receita",
+      "level": 3
+    },
+    {
+      "line": 455,
+      "title": "22. Monitorização, prevenção e integração à APS",
+      "level": 2
+    },
+    {
+      "line": 459,
+      "title": "Checklist antes de iniciar MMCD ou biológico",
+      "level": 3
+    },
+    {
+      "line": 469,
+      "title": "Acompanhamento longitudinal",
+      "level": 3
+    },
+    {
+      "line": 472,
+      "title": "23. Gravidez, lactação e planejamento reprodutivo",
+      "level": 2
+    },
+    {
+      "line": 482,
+      "title": "24. Complicações e prognóstico por doença",
+      "level": 2
+    },
+    {
+      "line": 496,
+      "title": "25. Populações especiais e diferenciais complexos",
+      "level": 2
+    },
+    {
+      "line": 498,
+      "title": "Pessoa idosa com polimialgia e suspeita de arterite temporal",
+      "level": 3
+    },
+    {
+      "line": 501,
+      "title": "Crianças e adolescentes",
+      "level": 3
+    },
+    {
+      "line": 504,
+      "title": "Imunossuprimidos",
+      "level": 3
+    },
+    {
+      "line": 507,
+      "title": "Comorbidades cardiovasculares e renais",
+      "level": 3
+    },
+    {
+      "line": 510,
+      "title": "Fenômenos de sobreposição",
+      "level": 3
+    },
+    {
+      "line": 513,
+      "title": "26. Algoritmos LURIA — da queixa à decisão",
+      "level": 2
+    },
+    {
+      "line": 515,
+      "title": "A. Articulação quente e inchada em poucas horas",
+      "level": 3
+    },
+    {
+      "line": 519,
+      "title": "B. Poliartrite inflamatória por mais de seis semanas",
+      "level": 3
+    },
+    {
+      "line": 523,
+      "title": "C. FAN reagente",
+      "level": 3
+    },
+    {
+      "line": 529,
+      "title": "D. Dor lombar crônica com suspeita inflamatória",
+      "level": 3
+    },
+    {
+      "line": 533,
+      "title": "E. Hematúria/proteinúria em possível LES",
+      "level": 3
+    },
+    {
+      "line": 537,
+      "title": "27. Pérolas de prova e armadilhas",
+      "level": 2
+    },
+    {
+      "line": 568,
+      "title": "28. Resumo final em uma tabela",
+      "level": 2
+    },
+    {
+      "line": 585,
+      "title": "29. Fontes primárias e complementares verificáveis",
+      "level": 2
+    },
+    {
+      "line": 603,
+      "title": "Como usar fontes divergentes",
+      "level": 3
+    },
+    {
+      "line": 607,
+      "title": "30. Status editorial antes da camada de alta utilidade",
+      "level": 2
+    },
+    {
+      "line": 627,
+      "title": "31. Casos clínicos comentados — do diagnóstico ao seguimento",
+      "level": 2
+    },
+    {
+      "line": 631,
+      "title": "Caso 1 — Poliartrite simétrica e anti-CCP elevado",
+      "level": 3
+    },
+    {
+      "line": 647,
+      "title": "Caso 2 — Artrite aguda do joelho com gota e risco infeccioso",
+      "level": 3
+    },
+    {
+      "line": 663,
+      "title": "Caso 3 — Lúpus com proteinúria e lesão renal silenciosa",
+      "level": 3
+    },
+    {
+      "line": 679,
+      "title": "Caso 4 — Lombalgia noturna de início aos 23 anos",
+      "level": 3
+    },
+    {
+      "line": 695,
+      "title": "Caso 5 — Dedo em salsicha e unhas com pitting",
+      "level": 3
+    },
+    {
+      "line": 711,
+      "title": "Caso 6 — Fenômeno de Raynaud e nova hipertensão grave",
+      "level": 3
+    },
+    {
+      "line": 727,
+      "title": "Caso 7 — Cefaleia temporal e amaurose transitória",
+      "level": 3
+    },
+    {
+      "line": 743,
+      "title": "Caso 8 — Fraqueza proximal, disfagia e sinal de Gottron",
+      "level": 3
+    },
+    {
+      "line": 759,
+      "title": "Caso 9 — Púrpura palpável, hemoptise e creatinina crescente",
+      "level": 3
+    },
+    {
+      "line": 775,
+      "title": "Caso 10 — Secura ocular, parotidomegalia e perda de peso",
+      "level": 3
+    },
+    {
+      "line": 791,
+      "title": "Caso 11 — Artrite aguda após febre por chikungunya",
+      "level": 3
+    },
+    {
+      "line": 807,
+      "title": "Caso 12 — Mulher planejando gestação com LES controlado",
+      "level": 3
+    },
+    {
+      "line": 824,
+      "title": "32. Questões autorais LURIA — 18 questões de prova corrigidas por alternativa",
+      "level": 2
+    },
+    {
+      "line": 828,
+      "title": "Questão 1 — Classificação AR 2010",
+      "level": 3
+    },
+    {
+      "line": 849,
+      "title": "Questão 2 — Metotrexato: prevenção de erro fatal",
+      "level": 3
+    },
+    {
+      "line": 870,
+      "title": "Questão 3 — FR versus anti-CCP",
+      "level": 3
+    },
+    {
+      "line": 891,
+      "title": "Questão 4 — Monoartrite febril",
+      "level": 3
+    },
+    {
+      "line": 912,
+      "title": "Questão 5 — LES: critérios EULAR/ACR 2019",
+      "level": 3
+    },
+    {
+      "line": 933,
+      "title": "Questão 6 — Nefrite lúpica silenciosa",
+      "level": 3
+    },
+    {
+      "line": 954,
+      "title": "Questão 7 — SAF e anticorpos",
+      "level": 3
+    },
+    {
+      "line": 975,
+      "title": "Questão 8 — Espondiloartrite axial",
+      "level": 3
+    },
+    {
+      "line": 996,
+      "title": "Questão 9 — Artrite psoriásica",
+      "level": 3
+    },
+    {
+      "line": 1017,
+      "title": "Questão 10 — Cristais de urato",
+      "level": 3
+    },
+    {
+      "line": 1038,
+      "title": "Questão 11 — CPPD",
+      "level": 3
+    },
+    {
+      "line": 1059,
+      "title": "Questão 12 — Crise renal esclerodérmica",
+      "level": 3
+    },
+    {
+      "line": 1080,
+      "title": "Questão 13 — Dermatomiosite e neoplasia",
+      "level": 3
+    },
+    {
+      "line": 1101,
+      "title": "Questão 14 — Vasculite pulmão–rim",
+      "level": 3
+    },
+    {
+      "line": 1122,
+      "title": "Questão 15 — Arterite de células gigantes",
+      "level": 3
+    },
+    {
+      "line": 1143,
+      "title": "Questão 16 — Triagem pré-biológico",
+      "level": 3
+    },
+    {
+      "line": 1164,
+      "title": "Questão 17 — Hidroxicloroquina no LES",
+      "level": 3
+    },
+    {
+      "line": 1185,
+      "title": "Questão 18 — Polimialgia versus arterite temporal",
+      "level": 3
+    },
+    {
+      "line": 1207,
+      "title": "33. Curadoria visual: 18 candidatos, prioridade diagnóstica",
+      "level": 2
+    },
+    {
+      "line": 1232,
+      "title": "Seleção e integração",
+      "level": 3
+    },
+    {
+      "line": 1245,
+      "title": "34. Auditoria desta fase e pendências de publicação",
+      "level": 2
+    },
+    {
+      "line": 1277,
+      "title": "35. Casos complementares para diferenciais pouco representados",
+      "level": 2
+    },
+    {
+      "line": 1281,
+      "title": "Caso 13 — FAN positivo na mulher com dor difusa, sem sinovite",
+      "level": 3
+    },
+    {
+      "line": 1295,
+      "title": "Caso 14 — Crise de podagra com ácido úrico normal",
+      "level": 3
+    },
+    {
+      "line": 1309,
+      "title": "Caso 15 — Fraqueza proximal, disfagia e mãos de mecânico",
+      "level": 3
+    },
+    {
+      "line": 1323,
+      "title": "Caso 16 — Dor persistente apesar de AR sem sinovite ativa",
+      "level": 3
+    },
+    {
+      "line": 1338,
+      "title": "36. Questões complementares: interpretação crítica e prevenção de erros",
+      "level": 2
+    },
+    {
+      "line": 1342,
+      "title": "Questão 19 — Artrite versus artralgia",
+      "level": 3
+    },
+    {
+      "line": 1363,
+      "title": "Questão 20 — Cristais e artrite séptica",
+      "level": 3
+    },
+    {
+      "line": 1384,
+      "title": "Questão 21 — HLA-B27 e diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 1405,
+      "title": "Questão 22 — Crise de gota com urato normal",
+      "level": 3
+    },
+    {
+      "line": 1426,
+      "title": "Questão 23 — AR controlada com dor persistente",
+      "level": 3
+    },
+    {
+      "line": 1447,
+      "title": "Questão 24 — Gestação e MMCD",
+      "level": 3
+    },
+    {
+      "line": 1469,
+      "title": "37. Atualização EULAR 2025 publicada em 2026: interpretação brasileira",
+      "level": 2
+    },
+    {
+      "line": 1477,
+      "title": "38. Auditoria editorial consolidada da Aula 171",
+      "level": 2
+    },
+    {
+      "line": 1483,
+      "title": "Verificações de qualidade",
+      "level": 3
+    },
+    {
+      "line": 1493,
+      "title": "Antes da publicação",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. Ministério da Saúde. **PCDT Artrite Reumatoide, Portaria Conjunta nº 33, de 19/01/2026**, página atualizada 19/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-reumatoide/view",
+    "2. Ministério da Saúde. **PCDT Artrite Psoriásica**, atualizado em 23/01/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-psoriasica/view",
+    "3. Ministério da Saúde. **PCDT Espondilite Ancilosante**, anexo alterado em 18/06/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/espondilite-ancilosante/view",
+    "4. Ministério da Saúde. **PCDT Lúpus Eritematoso Sistêmico**, anexo alterado em 16/11/2022. https://www.gov.br/saude/pt-br/assuntos/pcdt/l/lupus-eritematoso-sistemico/view",
+    "5. Ministério da Saúde. **PCDT Esclerose Sistêmica**, anexo alterado em 13/10/2022. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/esclerose-sistemica/view",
+    "6. Ministério da Saúde. **PCDT Vasculite associada a ANCA**, publicado em 13/11/2025; localizar na lista oficial. https://www.gov.br/saude/pt-br/assuntos/pcdt/v",
+    "7. Ministério da Saúde. **PCDT Artrite Reativa**. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-reativa/view",
+    "8. Ministério da Saúde. **PCDT Artrite Idiopática Juvenil**, atualização em 19/05/2026; no índice oficial A. https://www.gov.br/saude/pt-br/assuntos/pcdt/a",
+    "9. Ravn C et al. **Guideline for management of septic arthritis in native joints (SANJO)**. *J Bone Jt Infect*. 2023;8:29–37. https://jbji.copernicus.org/articles/8/29/2023/",
+    "10. Aringer M et al. **2019 EULAR/ACR Classification Criteria for Systemic Lupus Erythematosus**. *Arthritis Rheumatol*. 2019;71:1400–1412. https://doi.org/10.1002/art.40930",
+    "11. Fanouriakis A et al. **EULAR recommendations for the management of systemic lupus erythematosus: 2023 update**. *Ann Rheum Dis*. 2024;83:15–29. https://ard.bmj.com/content/83/1/15",
+    "12. Aletaha D et al. **2010 Rheumatoid arthritis classification criteria: ACR/EULAR collaborative initiative**. *Arthritis Rheum*. 2010;62:2569–2581. https://doi.org/10.1002/art.27584",
+    "13. Taylor W et al. **Classification criteria for psoriatic arthritis: development of new criteria from a large international study (CASPAR)**. *Arthritis Rheum*. 2006;54:2665–2673. https://doi.org/10.1002/art.21972",
+    "14. Neogi T et al. **2015 Gout Classification Criteria: an ACR/EULAR collaborative initiative**. *Arthritis Rheumatol*. 2015;67:2557–2568. https://doi.org/10.1002/art.39254",
+    "15. Ministério da Saúde. **Catálogo oficial de PCDT**: versões, incorporações e regras de acesso. https://www.gov.br/saude/pt-br/assuntos/pcdt",
+    "As **normas brasileiras do SUS** (PCDT) são prioritárias para elegibilidade e acesso aos medicamentos. Consensos internacionais podem apresentar algoritmos mais recentes ou modalidades terapêuticas não incorporadas no SUS; sempre identificar a fonte e nunca dizer que fármaco é universalmente disponível apenas porque aparece em guideline internacional. Os critérios ACR/EULAR servem sobretudo à classificação e discussão, não substituem história, exame, confirmação de órgão e exclusão de alternativas."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-reumatoide/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-psoriasica/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/espondilite-ancilosante/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/l/lupus-eritematoso-sistemico/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/e/esclerose-sistemica/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/v",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/artrite-reativa/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://jbji.copernicus.org/articles/8/29/2023/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/art.40930",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://ard.bmj.com/content/83/1/15",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/art.27584",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/art.21972",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1002/art.39254",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ard.2026.01.023",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41826212/",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 7,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "Pessoa geralmente acima de 50 anos com **cefaleia temporal nova, claudicação mandibular, sensibilidade de couro cabeludo e alteração visual** pode ter vasculite de grandes vasos. Risco de perda visual irreversível exige tratamento urgente quando a suspeita é elevada, sem aguardar biópsia/US temporal para iniciar glicocorticoide apropriado. Diferenciais incluem enxaqueca, causas oculares/neurológicas e infecções; avaliar VHS/PCR e imagem dirigida sem considerar normalidade de um exame como exclusão absoluta.",
+      "pattern": 0
+    },
+    {
+      "text": "**Hidroxicloroquina** é base terapêutica para a maioria dos pacientes, salvo contraindicações, associada a menor atividade e melhor prognóstico. EULAR 2023 recomenda dose-alvo em torno de **5 mg/kg de peso real/dia**, individualizada por risco de recaída e toxicidade retiniana; monitorar retina, rim e medicamentos como tamoxifeno. Não prescrever 400 mg/dia automaticamente a toda pessoa de baixo peso.",
+      "pattern": 0
+    },
+    {
+      "text": "**Glicocorticoides:** usar quando necessário para controle, com redução progressiva até a menor dose possível e, idealmente, retirada; EULAR 2023 considera meta de manutenção **≤5 mg/dia equivalente de prednisona**, conforme atividade e órgãos. Pulsoterapia pode ser necessária em ameaça de órgão/vida, mas não é tratamento de rash ou artralgia leves.",
+      "pattern": 0
+    },
+    {
+      "text": "O aluno deve conseguir: 1. Diferenciar artralgia, sinovite, entesite, dactilite, bursite, tendinopatia e lesão degenerativa a partir de história e exame. 2. Caracterizar monoartrite, oligoartrite e poliartrite, quadros agudos/crônicos e padrão axial/periférico. 3. Reconhecer sinais de artrite séptica, vasculite sistêmica, nefrite lúpica, síndrome pulmão–rim e comprometimento ocular inflamatório. 4. Aplicar racionalmente FR, anti-CCP, FAN, anti-dsDNA, anti-Sm, complementos, ANCA, HLA-B27, VHS/PCR e exames de urina. 5. Interpretar classificação ACR/EULAR para artrite reumatoide e LES sem transformá-la em teste diagnóstico infalível. 6. Diagnosticar artrite reumatoide, lúpus, artrite psoriásica, espondiloartrite axial, Sjögren, esclerose sistêmica, miopatias inflamatórias e vasculites. 7. Diferenciar gota, doença por deposição de CPPD, infecções virais, osteoartrite e fibromialgia de artrite inflamatória autoimune. 8. Entender o papel de anti-inflamatórios, glicocorticoides, antimaláricos, MMCD sintéticos, biológicos e inibidores de JAK, com prevenção e monitorização de toxicidade. 9. Organizar cuidado longitudinal no SUS com reumatologia, nefrologia, pneumologia, fisioterapia, imunizações e atenção primária. 10. Resolver casos de prova em que o diagnóstico muda com o padrão articular, a urgência ou a interpretação correta de um autoanticorpo.",
+      "pattern": 1
+    },
+    {
+      "text": "**Percurso:** reconhecer síndrome → excluir ameaça infecciosa/vascular → localizar padrão → selecionar exames → identificar doença → tratar por alvo e gravidade → prevenir toxicidade → reavaliar resposta.",
+      "pattern": 1
+    },
+    {
+      "text": "**Agudo:** horas a poucos dias; cristal, infecção, trauma, algumas artrites virais. **Subagudo:** dias a semanas; infecções específicas, inflamação em desenvolvimento. **Crônico:** geralmente mais de seis semanas, lembrando AR e espondiloartrites, sem excluir infecção subaguda.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área do cronograma:** Clínica Médica — Reumatologia **Lote:** 09 · Aula 171 de 180 · **Versão editorial:** 14/10/2026 **Escopo:** adulto com artralgia, artrite, manifestações sistêmicas reumatológicas, doenças autoimunes e emergências reumatológicas; referências pediátricas e obstétricas quando relevantes. **Estado de publicação:** RASCUNHO EDITORIAL; não publicado no site, não validado por reumatologista. **Base documental brasileira:** PCDT Artrite Reumatoide — Portaria Conjunta SAES/SCTIE nº 33, de **19/01/2026** (página atualizada em 19/05/2026); PCDT Artrite Psoriásica atualizado em 23/01/2026; PCDT Espondilite Ancilosante alterado em 18/06/2025; PCDT Lúpus Eritematoso Sistêmico com anexo alterado em 16/11/2022; PCDT de Vasculites ANCA publicado em novembro de 2025; PCDT de Esclerose Sistêmica com alteração de 2022.",
+      "pattern": 2
+    },
+    {
+      "text": "A artrite reumatoide (AR) é doença inflamatória crônica mediada por mecanismos imunes, predominantemente da membrana sinovial. O PCDT brasileiro **2026** aponta destruição articular progressiva por sinovite persistente e envolvimento de macrófagos, fibroblastos sinoviais, linfócitos e citocinas como TNF-α e IL-6. Em indivíduos suscetíveis, fatores ambientais, como tabagismo, podem interagir com predisposição genética (incluindo certos alelos HLA-DRB1) e respostas contra proteínas citrulinadas.",
+      "pattern": 2
+    },
+    {
+      "text": "O PCDT brasileiro de 2026 menciona maior frequência em mulheres e em adultos de meia-idade, mas AR pode começar em idosos e em diversas idades; estudos de prevalência variam conforme população. Evitar números de prevalência sem país/período definidos, especialmente quando se muda de estudos regionais para população geral.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área do cronograma:** Clínica Médica — Reumatologia **Lote:** 09 · Aula 171 de 180 · **Versão editorial:** 14/10/2026 **Escopo:** adulto com artralgia, artrite, manifestações sistêmicas reumatológicas, doenças autoimunes e emergências reumatológicas; referências pediátricas e obstétricas quando relevantes. **Estado de publicação:** RASCUNHO EDITORIAL; não publicado no site, não validado por reumatologista. **Base documental brasileira:** PCDT Artrite Reumatoide — Portaria Conjunta SAES/SCTIE nº 33, de **19/01/2026** (página atualizada em 19/05/2026); PCDT Artrite Psoriásica atualizado em 23/01/2026; PCDT Espondilite Ancilosante alterado em 18/06/2025; PCDT Lúpus Eritematoso Sistêmico com anexo alterado em 16/11/2022; PCDT de Vasculites ANCA publicado em novembro de 2025; PCDT de Esclerose Sistêmica com alteração de 2022."
+    },
+    {
+      "text": "O aluno deve conseguir: 1. Diferenciar artralgia, sinovite, entesite, dactilite, bursite, tendinopatia e lesão degenerativa a partir de história e exame. 2. Caracterizar monoartrite, oligoartrite e poliartrite, quadros agudos/crônicos e padrão axial/periférico. 3. Reconhecer sinais de artrite séptica, vasculite sistêmica, nefrite lúpica, síndrome pulmão–rim e comprometimento ocular inflamatório. 4. Aplicar racionalmente FR, anti-CCP, FAN, anti-dsDNA, anti-Sm, complementos, ANCA, HLA-B27, VHS/PCR e exames de urina. 5. Interpretar classificação ACR/EULAR para artrite reumatoide e LES sem transformá-la em teste diagnóstico infalível. 6. Diagnosticar artrite reumatoide, lúpus, artrite psoriásica, espondiloartrite axial, Sjögren, esclerose sistêmica, miopatias inflamatórias e vasculites. 7. Diferenciar gota, doença por deposição de CPPD, infecções virais, osteoartrite e fibromialgia de artrite inflamatória autoimune. 8. Entender o papel de anti-inflamatórios, glicocorticoides, antimaláricos, MMCD sintéticos, biológicos e inibidores de JAK, com prevenção e monitorização de toxicidade. 9. Organizar cuidado longitudinal no SUS com reumatologia, nefrologia, pneumologia, fisioterapia, imunizações e atenção primária. 10. Resolver casos de prova em que o diagnóstico muda com o padrão articular, a urgência ou a interpretação correta de um autoanticorpo."
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "sha": "538d1182092fe26e29b9d4e39351e75ad2f5e9ed",
+  "path": "apostilas/_rascunhos/lote-05-093-asma-infancia.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--538d118209",
+  "title": "LURIA — Apostila 093: Asma na infância",
+  "format": ".md",
+  "chars_estimated": 84081,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 093: Asma na infância"
+    },
+    {
+      "title": "0. Etapa zero — benchmarking obrigatório"
+    },
+    {
+      "title": "Matriz inicial de cobertura e lacunas"
+    },
+    {
+      "title": "1. O que é asma — começando pelo mecanismo"
+    },
+    {
+      "title": "2. Suspeita clínica e raciocínio diagnóstico"
+    },
+    {
+      "title": "3. Diagnósticos diferenciais que mudam a conduta"
+    },
+    {
+      "title": "4. Princípios contemporâneos do tratamento controlador"
+    },
+    {
+      "title": "5. Exacerbação — estrutura de decisão inicial"
+    },
+    {
+      "title": "6. Educação, prevenção e seguimento"
+    },
+    {
+      "title": "7. Casos clínicos — elaboração inicial"
+    },
+    {
+      "title": "8. Questões formativas comentadas — versão inicial"
+    },
+    {
+      "title": "9. Revisão obrigatória antes de integrar ao site"
+    },
+    {
+      "title": "Fontes de referência clínica"
+    },
+    {
+      "title": "10. Tratamento por degraus para escolares de 6 a 11 anos — aprofundamento baseado na GINA 2026"
+    },
+    {
+      "title": "Degrau 1: sintoma intermitente não é ausência de inflamação"
+    },
+    {
+      "title": "Degrau 2: controle regular"
+    },
+    {
+      "title": "Degraus 3 e 4: quando a intensificação realmente se justifica"
+    },
+    {
+      "title": "Degrau 5: asma grave é diagnóstico de exclusão operacional"
+    },
+    {
+      "title": "Reavaliação longitudinal e redução de degrau"
+    },
+    {
+      "title": "Microcasos de aplicação"
+    },
+    {
+      "title": "11. Diagnóstico funcional em escolares: como interpretar os números e evitar armadilhas"
+    },
+    {
+      "title": "11.1. Um exemplo numérico que cai em prova"
+    },
+    {
+      "title": "11.2. Se não houver espirometria"
+    },
+    {
+      "title": "11.3. Biomarcadores não substituem a função pulmonar"
+    },
+    {
+      "title": "11.4. Antes e depois do exame: perguntas de segurança"
+    },
+    {
+      "title": "12. Crianças até 5 anos: raciocínio diagnóstico e terapêutico que não é cópia do escolar"
+    },
+    {
+      "title": "12.1. Os três requisitos da GINA 2026"
+    },
+    {
+      "title": "12.1.1. Como documentar a confirmação sem inventar certeza"
+    },
+    {
+      "title": "12.2. Por que a história clínica precisa ser detalhada"
+    },
+    {
+      "title": "12.3. Tratamento do pré-escolar com provável asma"
+    },
+    {
+      "title": "12.4. Dispositivo: a prescrição não termina na molécula"
+    },
+    {
+      "title": "12.5. Sinais que mudam o percurso"
+    },
+    {
+      "title": "13. Exacerbações: do reconhecimento ao destino, por faixa etária"
+    },
+    {
+      "title": "13.1. O que procurar na porta do atendimento"
+    },
+    {
+      "title": "13.1.1. Gravidade não se decide por um único sinal"
+    },
+    {
+      "title": "13.2. Emergência em crianças de 6–11 anos"
+    },
+    {
+      "title": "13.3. Emergência em crianças de até 5 anos"
+    },
+    {
+      "title": "13.4. O que NÃO fazer rotineiramente"
+    },
+    {
+      "title": "13.5. Alta, observação ou internação?"
+    },
+    {
+      "title": "14. Quadros de raciocínio prático"
+    },
+    {
+      "title": "Quadro A — A idade muda a confirmação diagnóstica"
+    },
+    {
+      "title": "Quadro B — Falha aparente do controlador: roteiro original de auditoria"
+    },
+    {
+      "title": "Quadro C — Três hipóteses diante de “chiado” em lactente"
+    },
+    {
+      "title": "15. Casos aprofundados: hipótese, evidências, decisão e segurança"
+    },
+    {
+      "title": "Caso 5 — “O chiado é asma?” no lactente"
+    },
+    {
+      "title": "Caso 6 — Teste broncodilatador interpretado com denominador errado"
+    },
+    {
+      "title": "Caso 7 — Criança de 4 anos com suspeita evolutiva"
+    },
+    {
+      "title": "Caso 8 — Retorno à urgência após melhora inicial"
+    },
+    {
+      "title": "16. Questões originais de residência — alternativas integralmente comentadas"
+    },
+    {
+      "title": "Questão 1 — Diagnóstico funcional"
+    },
+    {
+      "title": "Questão 2 — Pré-escolar e critérios clínicos"
+    },
+    {
+      "title": "Questão 3 — Alívio e controle"
+    },
+    {
+      "title": "Questão 4 — Grave ou “melhorando”?"
+    },
+    {
+      "title": "Questão 5 — Prescrição pós-crise"
+    },
+    {
+      "title": "Questão 6 — Corpo estranho versus asma"
+    },
+    {
+      "title": "17. Registro científico específico desta ampliação"
+    },
+    {
+      "title": "18. Vigilância longitudinal: transformar controle em decisões mensuráveis"
+    },
+    {
+      "title": "18.1. Anamnese orientada para as últimas quatro semanas"
+    },
+    {
+      "title": "18.2. Risco de exacerbação e de efeitos adversos"
+    },
+    {
+      "title": "18.3. Crescimento e segurança do corticosteroide inalatório"
+    },
+    {
+      "title": "19. Fenótipos e contextos clínicos que costumam ser confundidos"
+    },
+    {
+      "title": "19.1. Asma associada a exercício"
+    },
+    {
+      "title": "19.2. Asma variante tosse"
+    },
+    {
+      "title": "19.3. Asma e rinite alérgica"
+    },
+    {
+      "title": "19.4. Asma, obesidade e sofrimento psicossocial"
+    },
+    {
+      "title": "19.5. Exacerbação e anafilaxia"
+    },
+    {
+      "title": "20. Administração inalatória: oficina prática e erros que mudam resultado"
+    },
+    {
+      "title": "20.1. Checklist de demonstração com aerossol pressurizado e espaçador"
+    },
+    {
+      "title": "20.2. Como medir adesão sem transformar a consulta em julgamento moral"
+    },
+    {
+      "title": "20.3. Educação para crianças maiores"
+    },
+    {
+      "title": "21. Integração com a rede de atenção no Brasil"
+    },
+    {
+      "title": "21.1. O papel da Atenção Primária"
+    },
+    {
+      "title": "21.2. Quando a referência especializada agrega valor"
+    },
+    {
+      "title": "21.3. Diferença entre diretriz internacional, PCDT e bula"
+    },
+    {
+      "title": "22. Roteiro editorial de figuras próprias e candidatas de imagem"
+    },
+    {
+      "title": "23. Auditoria de autossuficiência — tarefas que precisam ser aprovadas"
+    },
+    {
+      "title": "24. Reconciliação farmacológica 2026 — GINA internacional × PCDT brasileiro (complemento editorial)"
+    },
+    {
+      "title": "24.1. A concentração não pode desaparecer da recomendação"
+    },
+    {
+      "title": "24.2. O que o PCDT 2026 confirma — e o que ainda exige conferência"
+    },
+    {
+      "title": "24.3. Duas decisões clínicas para verificar aprendizado"
+    },
+    {
+      "title": "24.4. Validação farmacológica pendente antes da publicação"
+    }
+  ],
+  "reference_entries": [
+    "- Global Initiative for Asthma. *GINA 2026 Strategy Report*. https://ginasthma.org/reports/",
+    "- Global Initiative for Asthma. *Summary Guide for Asthma Management and Prevention 2026*. https://ginasthma.org/2026-gina-summary-guide/",
+    "- Ministério da Saúde do Brasil — protocolos e documentos nacionais pertinentes, a conferir na revisão de doses e apresentações.",
+    "**Rastreabilidade:** os PDFs do Drive foram efetivamente lidos, mas são resumos antigos e não têm autoria institucional verificável; nenhuma passagem, figura ou tabela foi importada desses arquivos.",
+    "**Este capítulo complementa a seção 4 e não constitui prescrição pronta.** Ao contrário de guias antigos, que frequentemente tratavam o salbutamol isolado como opção suficiente para casos leves, a GINA 2026 estabelece uma estratégia anti-inflamatória desde o primeiro degrau. A justificativa é dupla: o broncodilatador alivia a contração da musculatura lisa, mas não corrige a inflamação; além disso, episódios pouco frequentes de sintomas não garantem risco nulo de exacerbação grave. Ao planejar a prescrição, o profissional precisa distinguir a recomendação internacional da disponibilidade, autor",
+    "**Escolar ativo e sintomas esporádicos:** a criança joga futebol sem restrições na maior parte dos dias, mas apresentou uma exacerbação documentada no semestre. A decisão não pode se apoiar somente na frequência semanal dos sintomas; deve considerar histórico de exacerbação e uma estratégia de alívio que inclua ação anti-inflamatória, dentro das opções apropriadas para idade e medicamento.",
+    "**Sintomas apesar de CI prescrito:** antes de elevar a dose, pede-se que a família demonstre como a criança utiliza o dispositivo. Descobre-se que a medicação é usada apenas quando há chiado e que o espaçador não fica disponível na escola. O problema imediato é de implementação do plano, e não prova de falha farmacológica.",
+    "**CI-LABA com LABA não formoterol:** a família pergunta se pode usar a combinação de manutenção como medicação de alívio. A resposta é não presumir intercambialidade; esquemas MART dependem de combinação específica com formoterol e doses/limites confirmados para o produto.",
+    "**Fonte primária de atualização:** GINA, *Summary Guide 2026*, capítulo “Treatment steps for children 6–11 years” (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf). Este capítulo usa formulação e exemplos autorais, sem transcrever diagramas, escalas ou tabelas da GINA.",
+    "**Não basta escrever “espirometria com prova broncodilatadora positiva”.** É necessário saber qual variável foi medida, qual referência foi usada e se o exame é reprodutível. O VEF1 é o volume expirado no primeiro segundo de uma manobra forçada; a CVF representa o volume expirado ao término da manobra, e a relação VEF1/CVF caracteriza o componente obstrutivo quando comparada ao limite inferior de normalidade apropriado. Crianças não são adultos em miniatura: valores de referência e limiares usados na interpretação funcional devem respeitar idade, estatura e populações de referência.",
+    "- **A criança consegue realizar uma manobra válida?** Instruções padronizadas, incentivo e avaliação de aceitabilidade são indispensáveis.",
+    "- **Há exacerbação importante em curso?** Não atrasar o tratamento por testes funcionais.",
+    "- **Está usando broncodilatadores ou controlador?** O momento do uso interfere na sensibilidade diagnóstica; suspensões para teste devem ser individualizadas por profissional, sem criar riscos.",
+    "- **Os sintomas são predominantemente inspiratórios?** Pense em obstrução laríngea induzível, especialmente se dispneia durante exercício com rápida recuperação após cessar a atividade.",
+    "- **Há tosse isolada crônica?** Asma variante tosse existe, porém a atribuição automática de toda tosse à asma gera excesso de diagnóstico; procurar rinossinusite, rinite, infecções prolongadas, aspiração e outras causas relevantes.",
+    "**Pulo do gato:** *sintomas variáveis* e *fluxo expiratório variável* são fenômenos distintos que devem convergir; teste negativo em criança assintomática não é equivalente a ausência da doença.",
+    "**Requisito 1 — padrão recorrente confirmado.** A GINA 2026 requer pelo menos **dois episódios agudos de sibilância nos últimos 12 meses**, ou **um episódio agudo de sibilância associado a sintomas compatíveis com asma entre episódios**. Para contabilizar um episódio agudo nessa definição, os sintomas respiratórios compatíveis devem **durar mais de 24 horas**; não basta um ruído inespecífico e fugaz referido como “chiado”. Além disso, **em pelo menos um episódio é necessário reconhecer sibilância expiratória**, preferencialmente confirmada por profissional treinado ou, como alternativa, relata",
+    "**Requisito 2 — não haver explicação alternativa mais provável.** Uma criança com tosse úmida diária há meses, falha de crescimento, estridor recorrente ou achados focais persistentes não deve receber diagnóstico de asma por exclusão preguiçosa. A história e o exame direcionam a necessidade de investigação; não se impõe uma bateria de exames de rotina para todos.",
+    "**Requisito 3 — resposta clínica compatível e documentada à terapêutica.** A resposta pode ser observada numa exacerbação após broncodilatador inalatório ou durante um ensaio organizado de terapia controladora diária com CI, associado ao alívio indicado, acompanhado por cerca de dois a três meses. Melhorar durante tratamento é evidência que precisa ser interpretada criticamente: viroses melhoram naturalmente, observações parentais são sujeitas a lembrança seletiva, e a melhora só é significativa quando há sintomas ou episódios suficientes para comparação.",
+    "**Passo clínico 1: caracterizar o episódio.** Registrar data aproximada, duração, sintomas, repercussão sobre alimentação/brincadeira e necessidade de atendimento. Perguntar qual som o familiar ouviu e se o ruído ocorria na expiração, na inspiração ou tanto na entrada quanto na saída do ar. Um episódio autolimitado com menos de 24 horas, não examinado, não pode ser automaticamente contado como episódio confirmado por simples relato inespecífico.",
+    "**Passo clínico 2: avaliar causas alternativas.** A história deve procurar sintomas desde o nascimento, engasgos, dispneia ou tosse na alimentação, tosse produtiva persistente, alterações de crescimento, hipoxemia intercrises e achados focais. A inexistência de explicação alternativa mais provável não exige tomografia ou painel laboratorial universal; exames dirigidos dependem de sinais de alerta.",
+    "**Passo clínico 3: verificar resposta em tempo e desfecho verificáveis.** A GINA 2026 considera resposta clínica rápida à administração de SABA, em geral **dentro de 20 a 60 minutos**, documentada por equipe assistencial ou relatada convincentemente pelo cuidador. A resposta pode também ser observada ao longo de **2–3 meses de ensaio com corticosteroide inalatório diário**, quando há sintomas suficientes para comparar frequências e gravidade. O registro deve separar melhora objetiva da mera impressão retrospectiva; uma virose pode melhorar espontaneamente.",
+    "**Passo clínico 4: nomear corretamente a incerteza.** Quando um ou mais critérios estiverem ausentes, o prontuário deve indicar **suspeita de asma** e planejar reavaliação. Essa expressão não impede tratar uma exacerbação grave, nem obriga a manter controle crônico inadequado. O seguimento procura confirmar evolução, resposta e ausência de diagnósticos alternativos.",
+    "**Exemplo:** uma criança de 2 anos teve uma única sibilância observada em pronto atendimento durante infecção viral. Sem outros sintomas entre episódios e sem resposta clínica documentada, apresenta evidências insuficientes para um diagnóstico definitivo. Criança de 4 anos com três episódios recorrentes, um confirmado por profissional, sintomas ao correr entre infecções e melhora documentada com terapia pode reunir os três requisitos, depois de avaliação de outras causas.",
+    "**Referência da correção:** GINA, *Strategy Report 2026*, capítulo 10, “Diagnosis of asthma in children 5 years and younger” (https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf). Explicação e exemplos autorais.",
+    "**Uma resposta observável é melhor do que uma impressão vaga.** Em vez de “melhorou com bombinha”, registrar se houve redução de retrações, melhora da entrada de ar e da capacidade de brincar ou beber, a janela de observação e a medicação efetivamente administrada. Se a família não consegue recordar a dose, o dispositivo ou a técnica, documentar a incerteza.",
+    "**Saturação de ar ambiente em escolares (6–11 anos):** saturação ≥94% pode ser compatível com apresentação leve; 92–93% aumenta a preocupação; **<92%** é sinal que exige considerar quadro grave e transferência para nível de cuidado apropriado. A saturação **não** autoriza dispensar paciente sonolento, cianótico ou com tórax silencioso, mesmo que o oxímetro mostre valor aparentemente razoável. Em altitude, baixa perfusão e determinados tons de pele, a medida pode sofrer viés. Oxigênio suplementar deve ser titulado conforme protocolo e avaliação.",
+    "**Função expiratória em escolares:** quando for possível obter medida confiável sem retardar tratamento, PFE superior a 70% do previsto ou melhor pessoal pode acompanhar apresentação leve, 50–70% sugere obstrução de intensidade intermediária e <50% sugere maior gravidade. Esses números não substituem exame clínico, especialmente em criança exausta que não consegue executar a manobra.",
+    "**Até 5 anos:** a GINA 2026 usa gravidade de sinais compatível com idade: taquipneia, retrações, redução importante da entrada de ar, sibilância que pode desaparecer por fluxo mínimo, alterações da capacidade de falar/chorar/beber e estado mental. **SpO₂ <92% em ar ambiente** é alerta para crise grave, mas cianose, sonolência e confusão sinalizam ameaça à vida independentemente do número.",
+    "**Raciocínio com PRAM:** o *Pediatric Respiratory Assessment Measure* pode ajudar a documentar tendência, porém exige observação estruturada e técnica adequada. Não basta escrever “PRAM 8” sem registrar os componentes; uma melhora de escore deve vir acompanhada de melhor entrada de ar, menor esforço, manutenção de consciência e oxigenação. O uso de escala não pode atrasar transferência."
+  ],
+  "external_urls": [
+    "https://ginasthma.org/reports/",
+    "https://ginasthma.org/2026-gina-summary-guide/.",
+    "https://ginasthma.org/2026-gina-summary-guide/",
+    "https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf",
+    "https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/@@download/file"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Fonte primária de confronto:** GINA 2026, *Global Strategy for Asthma Management and Prevention*, seções de diagnóstico pediátrico, tratamento de 6–11 anos e exacerbações; https://ginasthma.org/reports/ e https://ginasthma.org/2026-gina-summary-guide/. Os arquivos da GINA são protegidos por direitos autorais: nenhuma figura ou tabela é reproduzida aqui."
+    },
+    {
+      "text": "Na inflamação do tipo 2, citocinas e células efetoras como eosinófilos, mastócitos e linfócitos participam de hiperresponsividade, edema e secreção. Entretanto, nem toda criança asmática apresenta o mesmo padrão biológico; usar 'asma alérgica' como sinônimo de toda asma levaria a diagnósticos e decisões incorretos. Além dos desencadeantes alérgicos, infecções respiratórias virais, exposição a fumaça, poluentes e exercício podem precipitar sintomas. As exposições precisam ser contextualizadas com sintomas, sazonalidade e ambiente familiar."
+    },
+    {
+      "text": "História familiar de atopia, eczema, rinite alérgica ou asma aumenta a probabilidade pré-teste, mas não confirma o diagnóstico isoladamente. O mesmo vale para a resposta subjetiva a uma única nebulização; observar melhora não autoriza ignorar pneumonia, corpo estranho ou disfunção de vias aéreas superiores. O exame físico pode ser inteiramente normal entre crises."
+    },
+    {
+      "text": "Nas crianças capazes de realizar testes reprodutíveis, buscar **evidência objetiva de limitação variável do fluxo expiratório**, preferencialmente com espirometria de qualidade, interpretação pediátrica e teste broncodilatador quando apropriado. Um exame normal em período assintomático não exclui a doença; repetir durante sintomas ou empregar testes especializados pode ser indicado conforme disponibilidade e segurança. Quando a criança já está em uso de anti-inflamatório inalatório, a documentação da variabilidade pode ficar mais difícil. Não suspender medicação apenas para 'provar' o diagnóstico sem ponderar risco."
+    },
+    {
+      "text": "Na faixa pré-escolar, episódios de sibilância são comuns durante viroses e o diagnóstico costuma ser probabilístico. Frequência, gravidade, sintomas entre infecções, história atópica, resposta a ensaio terapêutico estruturado e diagnósticos alternativos devem ser integrados longitudinalmente. A decisão de tratar e acompanhar pode preceder certeza diagnóstica absoluta, mas deve incluir reavaliação de hipótese, adesão e resposta."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

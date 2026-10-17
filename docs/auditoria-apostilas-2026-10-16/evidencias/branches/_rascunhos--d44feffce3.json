@@ -1,0 +1,378 @@
+{
+  "sha": "d44feffce3faa85ead37e417d987fc578bda66a0",
+  "path": "apostilas/_rascunhos/lote-10-aula-213-transtornos-ansiosos-toc-trauma.md",
+  "branches": [
+    "origin/editorial/lote-10-204-225"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--d44feffce3",
+  "title": "LURIA — APOSTILA 213",
+  "format": ".md",
+  "chars_estimated": 98200,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — APOSTILA 213"
+    },
+    {
+      "title": "Transtornos ansiosos, transtorno obsessivo-compulsivo e transtornos relacionados ao trauma"
+    },
+    {
+      "title": "0. Etapa zero — inventário, fontes de base e limites"
+    },
+    {
+      "title": "Objetivos de aprendizagem"
+    },
+    {
+      "title": "1. Ansiedade normal versus transtorno — o critério é significado clínico, não o sintoma isolado"
+    },
+    {
+      "title": "1.1 Fenômenos comuns"
+    },
+    {
+      "title": "1.2 Fatores de risco e fisiopatologia integrada"
+    },
+    {
+      "title": "2. TAG — transtorno de ansiedade generalizada"
+    },
+    {
+      "title": "2.1 Quadro clínico que reconhece a pessoa real"
+    },
+    {
+      "title": "2.2 Critérios e duração"
+    },
+    {
+      "title": "2.3 Entrevista dirigida"
+    },
+    {
+      "title": "2.4 Escalas GAD-2 e GAD-7"
+    },
+    {
+      "title": "2.5 Manejo escalonado e contextualizado"
+    },
+    {
+      "title": "3. Ataque de pânico e transtorno de pânico — primeiro excluir o que mata"
+    },
+    {
+      "title": "3.1 Fisiologia da crise"
+    },
+    {
+      "title": "3.2 Ataque versus transtorno"
+    },
+    {
+      "title": "3.3 Diagnóstico diferencial urgente"
+    },
+    {
+      "title": "3.4 Manejo inicial de crise em ambiente de urgência"
+    },
+    {
+      "title": "3.5 Tratamento longitudinal de transtorno de pânico"
+    },
+    {
+      "title": "4. Agorafobia — não significa obrigatoriamente medo de lugares abertos"
+    },
+    {
+      "title": "4.1 Núcleo diagnóstico"
+    },
+    {
+      "title": "4.2 Tratamento e meta funcional"
+    },
+    {
+      "title": "5. Transtorno de ansiedade social (fobia social)"
+    },
+    {
+      "title": "5.1 Medo central: avaliação negativa"
+    },
+    {
+      "title": "5.2 Diferenciar social, pânico, autismo e outros quadros"
+    },
+    {
+      "title": "5.3 Intervenções de primeira linha"
+    },
+    {
+      "title": "6. Fobia específica — medo circunscrito, evitação e exposição"
+    },
+    {
+      "title": "6.1 Formas clínicas"
+    },
+    {
+      "title": "6.2 Tratamento de escolha e limites"
+    },
+    {
+      "title": "6.3 Armadilha de prova"
+    },
+    {
+      "title": "7. Ansiedade de separação e mutismo seletivo"
+    },
+    {
+      "title": "8. TOC — transtorno obsessivo-compulsivo: conceito, sintomas e diagnóstico"
+    },
+    {
+      "title": "8.1 O TOC NÃO é classificado simplesmente como “transtorno ansioso” no DSM-5/DSM-5-TR"
+    },
+    {
+      "title": "8.2 Exemplos por dimensão, sem estereótipos"
+    },
+    {
+      "title": "8.3 Requisitos diagnósticos e insight"
+    },
+    {
+      "title": "8.4 Entrevista delicada e acolhedora"
+    },
+    {
+      "title": "8.5 Ferramentas e diagnóstico diferencial"
+    },
+    {
+      "title": "8.6 Fisiopatologia específica"
+    },
+    {
+      "title": "9. TOC — tratamento por gravidade, resposta e participação da família"
+    },
+    {
+      "title": "9.1 EPR: exposição com prevenção de resposta"
+    },
+    {
+      "title": "9.2 NICE CG31 — escolha pela interferência funcional"
+    },
+    {
+      "title": "9.3 ISRS em TOC e particularidades de dose e tempo"
+    },
+    {
+      "title": "9.4 Quando encaminhar e quando não rotular “mania”"
+    },
+    {
+      "title": "10. Transtornos relacionados ao estresse e trauma: por que nem todo sofrimento posterior é TEPT?"
+    },
+    {
+      "title": "10.1 Evento potencialmente traumático, reação aguda e transtorno"
+    },
+    {
+      "title": "10.2 Primeiros cuidados após evento adverso"
+    },
+    {
+      "title": "10.3 TEPT segundo DSM-5-TR: quatro grupos fundamentais"
+    },
+    {
+      "title": "10.4 CID-11 e TEPT complexo — não usar DSM como cópia"
+    },
+    {
+      "title": "10.5 Avaliação com sensibilidade ao trauma"
+    },
+    {
+      "title": "10.6 TEPT x TAG x TOC x pânico — o conteúdo da mente não basta"
+    },
+    {
+      "title": "11. Tratamento do TEPT: memória, significado, evitação e segurança"
+    },
+    {
+      "title": "11.1 Psicoterapia focada no trauma: primeira linha"
+    },
+    {
+      "title": "11.2 EMDR — indicação real e cuidados"
+    },
+    {
+      "title": "11.3 Intervenção precoce e monitoramento ativo"
+    },
+    {
+      "title": "11.4 Fármacos em TEPT quando indicados e preferidos"
+    },
+    {
+      "title": "11.5 TEPT complexo, violência atual e dissociação"
+    },
+    {
+      "title": "11.6 Cuidados no SUS brasileiro"
+    },
+    {
+      "title": "12. Farmacoterapia dos transtornos ansiosos e TOC — comparação aplicada"
+    },
+    {
+      "title": "12.1 Um ISRS pode servir para doenças diferentes, mas o tratamento não é idêntico"
+    },
+    {
+      "title": "12.2 Aspectos farmacológicos gerais relevantes"
+    },
+    {
+      "title": "12.3 Exemplo acadêmico de início de ISRS — não é receita"
+    },
+    {
+      "title": "12.4 Monitorizar resposta, não apenas receita"
+    },
+    {
+      "title": "13. Urgência, comorbidades e segurança"
+    },
+    {
+      "title": "13.1 Quando encaminhar imediatamente"
+    },
+    {
+      "title": "13.2 Depressão e bipolaridade com ansiedade"
+    },
+    {
+      "title": "13.3 Uso de substâncias, gravidez e envelhecimento"
+    },
+    {
+      "title": "14. Nove casos clínicos autorais — raciocínio, diagnóstico e conduta"
+    },
+    {
+      "title": "Caso 1 — “Meu coração está disparado”: primeiro episódio de pânico no pronto-socorro"
+    },
+    {
+      "title": "Caso 2 — Preocupação com tudo, todos os dias"
+    },
+    {
+      "title": "Caso 3 — Ataques inesperados com medo do próximo ataque"
+    },
+    {
+      "title": "Caso 4 — Medo de apresentar seminário e medo de ser humilhada"
+    },
+    {
+      "title": "Caso 5 — “Se não conferir dez vezes, alguém vai se machucar”"
+    },
+    {
+      "title": "Caso 6 — Pensamentos intrusivos que a pessoa tem vergonha de contar"
+    },
+    {
+      "title": "Caso 7 — Insônia após assalto, há duas semanas"
+    },
+    {
+      "title": "Caso 8 — Flashbacks, pesadelos e evitação após violência"
+    },
+    {
+      "title": "Caso 9 — Pesadelos persistentes no TEPT e solicitação de sedativo"
+    },
+    {
+      "title": "15. Questões originais de residência — 15 itens com comentários das alternativas"
+    },
+    {
+      "title": "Questão 1 — Transtorno de ansiedade generalizada"
+    },
+    {
+      "title": "Questão 2 — Pânico não significa necessariamente transtorno de pânico"
+    },
+    {
+      "title": "Questão 3 — Sinais de alerta antes de rotular “ansiedade”"
+    },
+    {
+      "title": "Questão 4 — Agorafobia"
+    },
+    {
+      "title": "Questão 5 — Ansiedade social"
+    },
+    {
+      "title": "Questão 6 — Fobia de sangue e síncope"
+    },
+    {
+      "title": "Questão 7 — Obsessão e compulsão"
+    },
+    {
+      "title": "Questão 8 — Pensamentos tabu no TOC"
+    },
+    {
+      "title": "Questão 9 — TOC com prejuízo grave"
+    },
+    {
+      "title": "Questão 10 — Resposta a ISRS no TOC"
+    },
+    {
+      "title": "Questão 11 — Duas semanas após trauma"
+    },
+    {
+      "title": "Questão 12 — TEPT e psicoterapia"
+    },
+    {
+      "title": "Questão 13 — Prazosina no TEPT"
+    },
+    {
+      "title": "Questão 14 — CID-11, DSM e TEPT complexo"
+    },
+    {
+      "title": "Questão 15 — Uso prolongado de benzodiazepínico"
+    },
+    {
+      "title": "16. Camada visual planejada — imagens precisam ensinar, não estigmatizar"
+    },
+    {
+      "title": "17. Referências científicas e orientações brasileiras — verificadas em consulta online"
+    },
+    {
+      "title": "18. Revisão de alto rendimento — quadro sinótico final"
+    },
+    {
+      "title": "19. Autoauditoria, delimitação de qualidade e próximos passos"
+    }
+  ],
+  "reference_entries": [
+    "**Currículo oficial:** o arquivo \\`assets/js/apostilas-lotes-225.js\\` atribui à **213** o tema “Transtornos ansiosos, TOC e transtornos relacionados ao trauma”. A aula **210** contém entrevista/exame do estado mental; a **211**, depressão e segurança; a **212**, transtorno bipolar; a **215**, emergências psiquiátricas e psicofarmacologia geral. Esta aula é **a aplicação diferencial e terapêutica por diagnóstico**, sem duplicar capítulos completos das demais.",
+    "**Repositório principal:** uma busca de caminhos em \\`apostilas/\\` não identificou livro publicado específico de ansiedade, fobia, pânico, TOC, TEPT ou trauma psicológico. Limitação: a inspeção foi por **nomes de arquivos**, não leitura de todos os conteúdos de todas as pastas; se houver capítulo correlato em outro tema, preservá-lo e harmonizá-lo na revisão final. Não sobrescrever.",
+    "**Google Drive do projeto:** consultas por “transtornos ansiosos”, “ansiedade”, “fobia”, “pânico”, “panico”, “TOC”, “obsessivo”, “trauma”, “estresse pós traumático”, “TEPT” e “transtorno de estresse” **não identificaram apostila integral equivalente**. Foram abertas/efetivamente lidas: \\`07 - GASOMETRIA ARTERIAL - PARTE 1.pdf\\` (6.722 caracteres extraídos), com **hiperventilação/ansiedade como uma das causas de alcalose respiratória**, também destacando dispneia por doença pulmonar; e \\`03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf\\` (9.765 caracteres), que identifica **síncope vasovagal relaciona",
+    "**Base científica verificada para a redação:** NICE CG113 (TAG e pânico), CG159 (ansiedade social), CG31 (TOC), NG116 (TEPT), **APA Clinical Practice Guideline for PTSD 2025**, VA/DoD PTSD 2023 e OMS mhGAP 3ª ed. 2023; Ministério da Saúde/BVS orientações de TOC (2024). Diferenciar **ano da diretriz, ano de eventual emenda e sistema classificatório**, sem chamar publicações de 2011 ou 2018 de “2026” só porque página online está acessível.",
+    "**O diagnóstico não deve punir vulnerabilidades sociais.** Pessoas submetidas a violência, insegurança econômica, discriminação, insegurança alimentar ou risco concreto podem ter preocupação proporcional à realidade e, simultaneamente, desenvolver transtorno; é necessário cuidado clínico e intervenção social. Não interpretar toda queixa em situação de violência como “pensamento irracional”. Também não minimizar sofrimento por “existir motivo”.",
+    "- **Hiperalerta:** atenção capturada por possíveis ameaças, dificultando tarefas complexas.",
+    "- **Preocupação:** sequência verbal/imaginativa de cenários negativos futuros, diferente de solucionar problemas concretos.",
+    "- **Ruminação:** repetição circular de pensamentos sobre falhas/perdas passadas ou atuais.",
+    "- **Evitação:** afastar-se de estímulos/situações que desencadeiam desconforto; pode aliviar a curto prazo e perpetuar incapacidade a longo prazo.",
+    "- **Comportamentos de segurança:** ações usadas para reduzir percepção de ameaça (“só saio com alguém”, “verifico o pulso sem parar”, “ensaio cada frase antes de falar”); alguns são úteis de fato, outros preservam crença de perigo exagerado.",
+    "- **Ataque de pânico:** subida abrupta e intensa de medo/desconforto com sintomas cognitivo-autonômicos. É **especificador/fenômeno transdiagnóstico**, não prova isolada de transtorno de pânico.",
+    "- **Pensamento intrusivo:** pensamento, imagem ou impulso que irrompe involuntariamente; comum em pessoas sem transtorno. No TOC, torna-se repetitivo, angustiante e ligado a rituais/neutralizações.",
+    "- **Flashback:** fenômeno de reexperiência em que a pessoa se sente como se o trauma ocorresse novamente, com intensidade variável e, por vezes, desorientação contextual.",
+    "- **Dissociação:** alteração de integração de memória, identidade, percepção ou consciência, exigindo contexto diagnóstico específico.",
+    "**Circuitos de ameaça:** amígdala e redes de saliência ajudam a sinalizar perigo; córtex pré-frontal e estruturas de memória/contexto (como hipocampo) regulam resposta e discriminação entre ameaça presente e lembrança. A exposição repetida a contextos seguros com aprendizagem corretiva pode alterar respostas automáticas — base teórica das terapias de exposição. É incorreto dizer que transtorno de ansiedade se resume a “amígdala aumentada” ou marcador diagnóstico.",
+    "**Neurotransmissão:** sistemas GABAérgicos, serotoninérgicos, noradrenérgicos e glutamatérgicos participam de excitabilidade, aprendizagem de medo, vigília e modulação do estresse. ISRS/IRSN modulam sinalização, mas o mecanismo clínico envolve adaptação e processos de aprendizagem ao longo de semanas; não há exame rotineiro de “falta de serotonina” para diagnosticar TAG ou TOC.",
+    "**HPA/estresse:** experiências adversas, trauma, privação crônica de sono e comorbidades podem aumentar reatividade fisiológica e sensibilização. Os efeitos variam muito entre indivíduos: trauma **não leva obrigatoriamente a TEPT**. Fatores genéticos são poligênicos; suporte e estratégias de enfrentamento modificam trajetórias.",
+    "**Aprendizagem e reforço:** se a pessoa teme elevador, evita entrar, sente alívio imediato e conclui “sobrevivi porque evitei”; o circuito de medo persiste sem chance de testar segurança. No TOC, o ritual neutraliza momentaneamente angústia e reforça sua repetição. Esse mecanismo explica por que “prometer que nada acontecerá” repetidamente e acomodar rituais pode manter o problema, mesmo quando feitos com boa intenção.",
+    "**GAD-2** é rastreio breve para nervosismo e dificuldade de controlar preocupações; **GAD-7** tem sete perguntas e permite acompanhar sintomas. A interpretação de pontos de corte varia conforme população/objetivo. Um escore alto não é diagnóstico psiquiátrico autossuficiente; deve ser relacionado a **duração, múltiplos domínios, prejuízo, diferenciais e contexto**. Use o mesmo instrumento ao longo do tempo quando apropriado, observando mudança significativa e recuperação funcional.",
+    "**TCC** aborda relação entre preocupação, crenças metacognitivas, intolerância à incerteza, evitação cognitiva, verificações/reasseguramento e padrões de atenção. Pode usar formulação individual, experimentos comportamentais, técnicas de resolução de problemas e exposição à incerteza. **Relaxamento aplicado**, quando estruturado, é outra opção com evidência em TAG conforme NICE. O objetivo não é prometer viver “sem sentir ansiedade”, mas recuperar liberdade funcional e tolerância à incerteza.",
+    "**Fármacos:** em adultos quando indicados e preferidos, **ISRS** são primeira opção frequente; NICE destaca **sertralina** como opção considerando custo-efetividade no contexto britânico, com observação histórica de licença. Se não for eficaz, considerar outro ISRS ou IRSN; NICE também cita **pregabalina** para quem não tolera ISRS/IRSN, com restrições/risco de uso indevido dependentes de jurisdição. **Disponibilidade, aprovação da indicação e custo no SUS brasileiro não podem ser inferidos** de NICE; verificar Anvisa e contexto antes de prescrever.",
+    "**Benzodiazepínicos:** não são tratamento de manutenção recomendado para TAG; NICE permite somente **medida breve em crise** em situações selecionadas. Riscos: sedação, quedas, comprometimento cognitivo, interação com álcool/opioides, dependência, tolerância e síndrome de retirada. Não interromper abruptamente uso crônico sem plano. **Antipsicóticos não são tratamento rotineiro de TAG na atenção primária** segundo NICE CG113.",
+    "**Seguimento:** monitorar sintomas, sono, funcionamento, efeitos colaterais, adesão, pensamentos de autoagressão, uso de substâncias e sinais de virada bipolar. A expectativa de benefício medicamentoso envolve semanas, e a resposta deve ser avaliada em ensaio apropriado. Evitar suspensão imediata após remissão; NICE recomenda, para quem responde ao fármaco em TAG, manter por **pelo menos um ano** devido à probabilidade de recaída — decisão individual e contexto clínico brasileiro devem ser discutidos.",
+    "**Círculo de pânico:** palpitação ou sensação respiratória → interpretação catastrófica (“infarto”, “vou desmaiar”) → aumento de medo/hiperventilação → amplificação do sintoma → reforço da crença. A pessoa começa a monitorar pulso e evitar esforço, perpetuando sensibilidade interoceptiva.",
+    "**Ataque de pânico:** episódio abrupto com escalada em minutos e sintomas físicos/cognitivos. Pode ocorrer em TAG, fobia, TEPT, depressão, intoxicação ou doença médica. **Transtorno de pânico:** **ataques inesperados recorrentes** e, em pelo menos um deles, **um mês ou mais** de preocupação persistente sobre novos ataques/consequências ou mudança comportamental desadaptativa relacionada; excluir substâncias/condições clínicas e outros transtornos que expliquem melhor. A presença de **agorafobia é independente**: pânico pode ocorrer com ou sem ela.",
+    "**Ataques esperados:** surgem diante de objeto/circunstância que a pessoa já teme (ex.: entrar em avião numa fobia de voar). **Inesperados:** não se limitam ao gatilho conhecido e são centrais ao transtorno de pânico. Após algumas crises, mesmo ataques originalmente inesperados podem gerar contextos temidos, criando sobreposição; avaliar história de início.",
+    "**Passo 1:** acolher, sinais vitais, segurança, identificar red flags e história de doença clínica.  ",
+    "**Passo 2:** explicar de modo não invalidante: “A sensação é intensa; vamos examinar sinais de perigo e ajudar seu corpo a estabilizar”.  ",
+    "**Passo 3:** ambiente calmo, orientações simples, acompanhar a pessoa; ensinar respiração confortável/lenta **sem forçar hiperventilação ou prender ar**, quando apropriado.  ",
+    "**Passo 4:** não impor “respirar dentro de saco de papel” — pode atrasar diagnóstico e ser inadequado na presença de hipóxia/doença cardiopulmonar.  "
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/cg159/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/cg31/chapter/Recommendations",
+    "https://www.nice.org.uk/guidance/ng116/chapter/recommendations",
+    "https://www.apa.org/ptsd-guideline/",
+    "https://www.healthquality.va.gov/guidelines/MH/ptsd/",
+    "https://doi.org/10.7326/M23-2757",
+    "https://www.who.int/publications/i/item/9789240084278",
+    "https://bvsms.saude.gov.br/transtorno-obsessivo-compulsivo-toc/",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "https://www.nice.org.uk/guidance/ng225/chapter/recommendations",
+    "https://dailymed.nlm.nih.gov/",
+    "https://www.ptsd.va.gov/professional/treat/txessentials/clinician_guide_meds.asp"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "> ## EM 30 SEGUNDOS > **TAG** = preocupação excessiva sobre **múltiplos domínios**, difícil de controlar, em geral por **≥6 meses** no DSM-5-TR. **Ataque de pânico** = pico abrupto de medo/desconforto intenso com sintomas autonômicos, mas **ataque isolado NÃO é transtorno de pânico**. **Transtorno de pânico** = ataques inesperados recorrentes **+ ≥1 mês** de preocupação persistente ou mudança comportamental relacionada; sempre considerar causas clínicas de dor torácica, dispneia e palpitações. **Fobia social** = medo de avaliação negativa em situações sociais; **agorafobia** = medo de situações em que escapar/obter ajuda seria difícil; **fobi"
+    },
+    {
+      "text": "**Currículo oficial:** o arquivo \\`assets/js/apostilas-lotes-225.js\\` atribui à **213** o tema “Transtornos ansiosos, TOC e transtornos relacionados ao trauma”. A aula **210** contém entrevista/exame do estado mental; a **211**, depressão e segurança; a **212**, transtorno bipolar; a **215**, emergências psiquiátricas e psicofarmacologia geral. Esta aula é **a aplicação diferencial e terapêutica por diagnóstico**, sem duplicar capítulos completos das demais."
+    },
+    {
+      "text": "**Google Drive do projeto:** consultas por “transtornos ansiosos”, “ansiedade”, “fobia”, “pânico”, “panico”, “TOC”, “obsessivo”, “trauma”, “estresse pós traumático”, “TEPT” e “transtorno de estresse” **não identificaram apostila integral equivalente**. Foram abertas/efetivamente lidas: \\`07 - GASOMETRIA ARTERIAL - PARTE 1.pdf\\` (6.722 caracteres extraídos), com **hiperventilação/ansiedade como uma das causas de alcalose respiratória**, também destacando dispneia por doença pulmonar; e \\`03 - CARDIO - MIOCARDITE, SINCOPE, IC.pdf\\` (9.765 caracteres), que identifica **síncope vasovagal relacionada a medo/ansiedade** e destaca alerta para síncop"
+    },
+    {
+      "text": "**O diagnóstico não deve punir vulnerabilidades sociais.** Pessoas submetidas a violência, insegurança econômica, discriminação, insegurança alimentar ou risco concreto podem ter preocupação proporcional à realidade e, simultaneamente, desenvolver transtorno; é necessário cuidado clínico e intervenção social. Não interpretar toda queixa em situação de violência como “pensamento irracional”. Também não minimizar sofrimento por “existir motivo”."
+    },
+    {
+      "text": "- **Hiperalerta:** atenção capturada por possíveis ameaças, dificultando tarefas complexas. - **Preocupação:** sequência verbal/imaginativa de cenários negativos futuros, diferente de solucionar problemas concretos. - **Ruminação:** repetição circular de pensamentos sobre falhas/perdas passadas ou atuais. - **Evitação:** afastar-se de estímulos/situações que desencadeiam desconforto; pode aliviar a curto prazo e perpetuar incapacidade a longo prazo. - **Comportamentos de segurança:** ações usadas para reduzir percepção de ameaça (“só saio com alguém”, “verifico o pulso sem parar”, “ensaio cada frase antes de falar”); alguns são úteis de fato,"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

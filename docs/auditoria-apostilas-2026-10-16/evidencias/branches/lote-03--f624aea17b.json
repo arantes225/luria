@@ -1,0 +1,115 @@
+{
+  "sha": "f624aea17ba994cd7c764258c8f16ed5b9b8c328",
+  "path": "apostilas/_rascunhos/lote-03/52-traumatismo-cranioencefalico.md",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "lote-03--f624aea17b",
+  "title": "LURIA — Aula 52 | TRAUMATISMO CRANIOENCEFÁLICO (TCE)",
+  "format": ".md",
+  "chars_estimated": 16886,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Aula 52 | TRAUMATISMO CRANIOENCEFÁLICO (TCE)"
+    },
+    {
+      "title": "1. Auditoria prévia e comparação pedagógica"
+    },
+    {
+      "title": "2. Da energia mecânica à lesão cerebral"
+    },
+    {
+      "title": "3. Epidemiologia e mecanismos"
+    },
+    {
+      "title": "4. Avaliação inicial ligada à gravidade"
+    },
+    {
+      "title": "5. Estratificação e decisão sobre tomografia"
+    },
+    {
+      "title": "6. Semiotécnica tomográfica — comparar padrões"
+    },
+    {
+      "title": "7. Hipertensão intracraniana — fisiologia e reconhecimento"
+    },
+    {
+      "title": "8. Pressão, convulsões e intervenções adicionais"
+    },
+    {
+      "title": "9. TCE leve, observação, alta e síndrome pós-concussional"
+    },
+    {
+      "title": "10. Prognóstico e consequências"
+    },
+    {
+      "title": "11. Algoritmo clínico em texto"
+    },
+    {
+      "title": "12. Casos clínicos originais comentados"
+    },
+    {
+      "title": "Caso 1 — Intervalo lúcido não é obrigatório"
+    },
+    {
+      "title": "Caso 2 — Queda leve, anticoagulação"
+    },
+    {
+      "title": "Caso 3 — Coma desproporcional à TC"
+    },
+    {
+      "title": "Caso 4 — Neurointensivismo orientado por perfusão"
+    },
+    {
+      "title": "13. Questões originais comentadas (6)"
+    },
+    {
+      "title": "14. Recursos visuais propostos"
+    },
+    {
+      "title": "15. Referências"
+    }
+  ],
+  "reference_entries": [
+    "- Brain Trauma Foundation. Guidelines for Severe TBI, 4th Edition: https://braintrauma.org/coma/guidelines/severe-tbi",
+    "- NICE. Head injury: assessment and early management, NG232: https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+    "- American College of Surgeons, ATLS 11: https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/",
+    "**Pendências:** aprofundar protocolos de lesões cirúrgicas e medidas em UTI, riscos de medicamentos, detalhes de populações especiais, imagem autorizada, critérios de transferências brasileiros, 60 mil caracteres didáticos úteis, testes/autossuficiência, revisão técnica e HTML/PWA. Não publicar."
+  ],
+  "external_urls": [
+    "https://braintrauma.org/coma/guidelines/severe-tbi",
+    "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Inspeção nominal da pasta de apostilas LURIA: nenhum diretório específico de TCE encontrado no acervo publicado; a aula 47 de Trauma Inicial já possui rascunho separado e deve ser cruzada para evitar reprodução de capítulos gerais. **Google Drive efetivamente lido:** “02 - TCE GRAVE, MORTE ENCEFALICA.pdf”, com classificação por Glasgow, exame inicial, lesões tomográficas, herniações, hipertensão intracraniana, sedação e critérios históricos para morte encefálica. O material apresenta identificação de distribuição informal e imagens de arquivos pessoais sem licença comercial verificada; não reproduzir textos nem imagens. Seu uso foi exclusivam"
+    },
+    {
+      "text": "| Lesão | Aparência típica | Erro clínico comum | |---|---|---| | Hematoma epidural/extradural | coleção extra-axial frequentemente biconvexa, usualmente limitada por suturas | exigir intervalo lúcido clássico; pode estar ausente | | Hematoma subdural | coleção extra-axial em crescente, acompanhando convexidade | considerar evolução lenta como ausência de gravidade | | Contusão hemorrágica | focos hemorrágicos em parênquima, especialmente regiões de impacto/contragolpe | supor que não evolui após primeiro exame | | Hemorragia subaracnóidea traumática | sangue em sulcos e cisternas | aplicar automaticamente manejo de aneurisma sem diagnóstico "
+    },
+    {
+      "text": "PIC aumentada prejudica fluxo cerebral e pode precipitar herniação. Em pacientes monitorizados, a Brain Trauma Foundation recomenda **tratar PIC acima de 22 mmHg**, contextualizando com exame e TC. Para adultos com TCE grave, PPC-alvo sugerida é **60–70 mmHg**, individualizada segundo autorregulação; forçar PPC acima de 70 com excesso de líquidos e vasopressores pode causar dano pulmonar. Esses valores não autorizam perseguir números isolados em pessoa sem monitorização, nem são regras universais pediátricas."
+    },
+    {
+      "text": "**Hiperventilação profilática prolongada** não é recomendada para TCE grave. Hiperventilação seletiva pode ser medida transitória na herniação iminente enquanto intervenção definitiva é organizada, não tratamento rotineiro para “baixar PIC” sem avaliar perfusão."
+    },
+    {
+      "text": "**Corticosteroides para TCE grave:** não recomendar, pois não melhoram prognóstico e altas doses de metilprednisolona associaram-se a dano; não confundir com indicações específicas de outras patologias neurológicas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

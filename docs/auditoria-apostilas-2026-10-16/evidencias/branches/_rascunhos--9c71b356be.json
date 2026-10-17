@@ -1,0 +1,313 @@
+{
+  "sha": "9c71b356be4b68ec80b1b225cf267ece1110ed21",
+  "path": "apostilas/_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md",
+  "branches": [
+    "origin/audit/enamed-7areas-lotes-finais-20261015",
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014",
+    "origin/editorial/lote-08-inventario-e-producao-20261014",
+    "origin/editorial/lote-10-apostilas-20261015",
+    "origin/editorial/lote-11-demensias-20261015",
+    "origin/editorial/lote-12-producao-20261015",
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--9c71b356be",
+  "title": "LURIA — LOTE 07 | AULA 127",
+  "format": ".md",
+  "chars_estimated": 48019,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — LOTE 07 | AULA 127"
+    },
+    {
+      "title": "Hemorragia Digestiva Alta: abordagem por síndrome, etiologia e risco"
+    },
+    {
+      "title": "0. Etapa zero: fontes de comparação realmente lidas e limites"
+    },
+    {
+      "title": "1. Definição e significado clínico"
+    },
+    {
+      "title": "2. Fisiologia e anatomia necessárias à decisão"
+    },
+    {
+      "title": "2.1. Barreira mucosa do estômago e duodeno"
+    },
+    {
+      "title": "2.2. Varizes esofagogástricas e circulação portal"
+    },
+    {
+      "title": "2.3. HDA com múltiplos mecanismos"
+    },
+    {
+      "title": "3. Etiologias organizadas pela fisiopatologia"
+    },
+    {
+      "title": "4. Reconhecimento de gravidade e reanimação"
+    },
+    {
+      "title": "4.1. O olhar antes dos exames"
+    },
+    {
+      "title": "4.2. ABCDE e equipes"
+    },
+    {
+      "title": "4.3. Estratégia transfusional"
+    },
+    {
+      "title": "4.4. Jejum e medicamentos antes da EDA"
+    },
+    {
+      "title": "5. Estratificação de risco: GBS e Rockall não são sinônimos"
+    },
+    {
+      "title": "Glasgow–Blatchford Score (GBS)"
+    },
+    {
+      "title": "Rockall"
+    },
+    {
+      "title": "Child–Pugh e MELD no sangramento varicoso"
+    },
+    {
+      "title": "6. Timing endoscópico: os dois relógios"
+    },
+    {
+      "title": "7. HDA não varicosa — úlcera péptica em profundidade"
+    },
+    {
+      "title": "7.1. Pistas etiológicas e mecanismo vascular"
+    },
+    {
+      "title": "7.2. Classificação de Forrest — traduzir visão em tratamento"
+    },
+    {
+      "title": "7.3. Métodos hemostáticos: reconhecer mecanismo e limitação"
+    },
+    {
+      "title": "7.4. IBP antes e depois da hemostasia"
+    },
+    {
+      "title": "7.5. *H. pylori* após úlcera sangrante"
+    },
+    {
+      "title": "7.6. Repetição de sangramento e falha endoscópica"
+    },
+    {
+      "title": "7.7. Transição para alta com redução de recidiva"
+    },
+    {
+      "title": "8. HDA varicosa — um caminho farmacológico/endoscópico diferente"
+    },
+    {
+      "title": "8.1. Suspeitar de hipertensão portal e iniciar terapia"
+    },
+    {
+      "title": "8.2. Vasoativos antes da endoscopia"
+    },
+    {
+      "title": "8.3. Antibiótico precoce em sangramento varicoso"
+    },
+    {
+      "title": "8.4. Endoscopia e técnicas por localização"
+    },
+    {
+      "title": "8.5. Alto risco e TIPS precoce"
+    },
+    {
+      "title": "8.6. Prevenção secundária"
+    },
+    {
+      "title": "8.7. IBP não é terapia de base da hipertensão portal"
+    },
+    {
+      "title": "9. Anticoagulantes, AAS e risco cardiovascular"
+    },
+    {
+      "title": "10. Diagnósticos diferenciais e mimetizadores"
+    },
+    {
+      "title": "11. Exames complementares e interpretação prática"
+    },
+    {
+      "title": "11.1. Hemograma seriado, não um resultado único"
+    },
+    {
+      "title": "11.2. Ureia e função renal"
+    },
+    {
+      "title": "11.3. Coagulograma"
+    },
+    {
+      "title": "11.4. Endoscopia: diagnóstico e tratamento"
+    },
+    {
+      "title": "12. Fluxos de decisão que não devem faltar na prova"
+    },
+    {
+      "title": "Fluxo A — qualquer paciente com hematêmese ou melena"
+    },
+    {
+      "title": "Fluxo B — úlcera com Forrest Ia/IIa"
+    },
+    {
+      "title": "Fluxo C — varizes"
+    },
+    {
+      "title": "13. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — HDA por úlcera duodenal com Forrest Ia"
+    },
+    {
+      "title": "Caso 2 — cirrótico com hematêmese"
+    },
+    {
+      "title": "Caso 3 — coágulo aderido Forrest IIb após atualização 2026"
+    },
+    {
+      "title": "Caso 4 — recorrência após hemostasia ulcerosa"
+    },
+    {
+      "title": "Caso 5 — hematochezia com choque pode ser HDA"
+    },
+    {
+      "title": "14. Oito questões autorais — alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — timing endoscópico, atualização 2026"
+    },
+    {
+      "title": "Questão 2 — suspeita varicosa"
+    },
+    {
+      "title": "Questão 3 — Forrest"
+    },
+    {
+      "title": "Questão 4 — Forrest IIb e ESGE 2026"
+    },
+    {
+      "title": "Questão 5 — epinefrina e hemostasia"
+    },
+    {
+      "title": "Questão 6 — ressangramento após EDA"
+    },
+    {
+      "title": "Questão 7 — hematoquezia"
+    },
+    {
+      "title": "Questão 8 — profilaxia depois de sangramento varicoso"
+    },
+    {
+      "title": "15. Pontos de alto rendimento e armadilhas de residência"
+    },
+    {
+      "title": "16. Plano de imagens reais e esquemas — não incorporados"
+    },
+    {
+      "title": "17. Fontes científicas e registro de atualização"
+    },
+    {
+      "title": "Fonte principal da HDA ulcerosa — **2026**"
+    },
+    {
+      "title": "Orientação de transição e fundamento não varicoso"
+    },
+    {
+      "title": "HDA varicosa e hipertensão portal"
+    },
+    {
+      "title": "Contexto brasileiro"
+    },
+    {
+      "title": "18. Auditoria parcial e pendências"
+    }
+  ],
+  "reference_entries": [
+    "**Inventário LURIA:** não havia diretório específico desta apostila na listagem nominal disponível em 14/10/2026. Houve criação de conteúdo sobre cirrose na aula 126 como referência correlata, mas não um texto autossuficiente de HDA. Evitar publicação de versão com terapêutica repetitiva e divergente.",
+    "**Benchmarks lidos no Google Drive:**",
+    "- “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Foco quase exclusivo em HDA varicosa, compressão esplâncnica, profilaxia, ligadura e TIPS, associado a capítulo de síndrome hepatopulmonar. Traz simplificações como “betabloqueador para todos com hipertensão portal” sem abordar contraindicações, hipotensão ou decisão por HPCS em contexto específico.",
+    "- “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”, cerca de 9 mil caracteres. Explica fisiologia gástrica, úlcera péptica, classificação de Forrest, ligadura de relação com H. pylori e opções de hemostasia. Há números históricos muito categóricos sobre associação entre úlcera e H. pylori e material não atualizado para novas alternativas de hemostasia.",
+    "- “04 - GASTRO - ASCITE + PBE.pdf” e “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, também lidos na aula 126, foram utilizados somente como contexto de complicações hepáticas e riscos de hipervolemia/IRA em pacientes com HDA varicosa.",
+    "**Atualização que muda o ensino:** a ESGE publicou em **13/05/2026** nova diretriz específica de **sangramento por úlcera péptica**, posterior ao documento geral de HDA não varicosa de 2021. Mudanças relevantes: não exigir EDA ≤6/≤12 horas em paciente estável com sangramento ulceroso; cautela com pré-EDA e preferência por hemostasia especializada; considerar tratamento de coágulo aderido Forrest IIb em mãos capacitadas; reconhecer clipes over-the-scope (OTS) como alternativa primária em sangramento ativo de alto risco; e discutir embolização transarterial (TAE) em falha endoscópica. O tempo-al",
+    "---",
+    "**Três erros iniciais comuns:**",
+    "1. tomar hemoglobina inicial normal como exclusão de perda importante;",
+    "2. ignorar risco de aspiração em paciente confuso e vomitando sangue;",
+    "3. atrasar suporte hemodinâmico para alcançar EDA “o quanto antes” sem estabilização.",
+    "**Atenção ao choque hemorrágico:** queda da pressão, alteração de consciência, lactato elevado em contexto de hipoperfusão, oligúria e extremidades frias são sinais de intervenção imediata. Uma hemoglobina de 11 g/dL logo após sangramento volumoso não tranquiliza frente a PA 75/45 mmHg.",
+    "- Avaliar via aérea e risco de aspiração, em especial hematêmese ativa, agitação, encefalopatia ou rebaixamento. Intubação não é recomendada por rotina em todo paciente de HDA, mas é indicada quando incapacidade de proteger a via aérea ou risco elevado de aspiração/necessidade de procedimento o justificam.",
+    "- Ofertar oxigênio apenas conforme hipoxemia ou necessidade clínica, evitando intervenção automática sem avaliação.",
+    "- Instalar acessos venosos calibrosos, monitor cardíaco, oximetria e PA seriada; colher hemograma, tipagem/prova de compatibilidade, INR, função renal, eletrólitos e avaliação de gravidade direcionada.",
+    "- Iniciar reposição controlada de cristalóides quando necessária enquanto se organiza terapia hemostática e hemocomponentes; não tratar choque hemorrágico grave com bolus indefinidos de solução salina.",
+    "- Acionar endoscopia de urgência, anestesia/UTI, banco de sangue e, nos casos apropriados, radiologia intervencionista e cirurgia.",
+    "- Revisar anticoagulantes, antiagregantes e comorbidades, incluindo indicação tromboembólica/cardiovascular que precisa ser preservada.",
+    "**Não reduzir a recomendação a “GBS 1 = alta de qualquer paciente”.** Sangramento ativo, instabilidade, sintomas importantes, anticoagulação complexa, inacessibilidade ao retorno e outros fatores podem alterar decisão. GBS não substitui julgamento em sangramento varicoso suspeito com doença hepática avançada.",
+    "**Injeção de adrenalina diluída:** tamponamento/vasoconstrição temporária; não costuma ser método único suficiente para sangramento ulceroso ativo de alto risco. Combinar com técnica de hemostasia definitiva conforme lesão e disponibilidade.",
+    "**Clipes through-the-scope (TTS):** hemostasia mecânica sobre vaso ou lesão; desempenho depende da acessibilidade, fibrose e ângulo endoscópico.  ",
+    "**Over-the-scope (OTS/OTSC):** sistema de clipagem de maior apreensão tecidual, com importância crescente em úlceras de alto risco ou ressangramento. A **ESGE 2026 sugere OTS como monoterapia alternativa de primeira linha para Forrest Ia/Ib**, dependendo de competência e anatomia.  ",
+    "**Terapia térmica e pinças com coagulação suave:** adequadas a certos estigmas e vasos, com risco de dano tecidual se aplicadas inadequadamente.  ",
+    "**Pós/pó hemostático tópico:** pode auxiliar em sangramento persistente refratário e lesões de difícil manejo, mas **ESGE 2026 sugere não usá-lo como monoterapia rotineira inicial** em úlceras com estigmas de alto risco; discutir técnica subsequente para hemostasia durável.  ",
+    "**Terapia combinada:** continua muito útil, sobretudo adrenalina seguida de técnica mecânica/térmica.",
+    "**Regime clássico usado como referência:** omeprazol/pantoprazol IV equivalente a 80 mg de carga seguido de 8 mg/h por 72 h **em pacientes selecionados após hemostasia**; regimes intermitentes de dose alta são alternativas. A concentração e produto local exigem verificação. Não dar dose de infusão como regra obrigatória para pequena lesão Forrest III de base limpa.",
+    "**ESGE 2026** também propõe considerar TAE **profilática** em casos selecionados de alto risco (instabilidade na admissão, úlcera duodenal posterior, lesão >2 cm ou hemostasia durável incerta). Isso não é embolização profilática universal; requer equipe de radiologia intervencionista e estimativa de risco.",
+    "**Varizes esofágicas:** ligadura elástica é modalidade preferida. Escleroterapia é alternativa em situações selecionadas em que ligadura não é possível, mas não é primeira escolha universal.  ",
+    "**Varizes gástricas:** classificar como gastroesofágicas ou isoladas, pois anatomia e fluxo definem terapias. Cianoacrilato (onde disponível/experiência) e técnicas guiadas por ecoendoscopia/endovasculares podem ter papel, além de TIPS/BRTO em subgrupos; não aplicar ligadura elástica cegamente a qualquer variz fúndica grande.  ",
+    "**Gastropatia hipertensiva portal:** sangramento pode exigir redução de pressão portal e, em casos específicos, hemostasia endoscópica; diferenciar de ectasia vascular antral gástrica (**GAVE**), que pode responder a abordagens endoscópicas locais e não é apenas “hipertensão portal” indiferenciada."
+  ],
+  "external_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/42127996/",
+    "https://www.esge.com/guidelines",
+    "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/",
+    "https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage",
+    "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-early-tips-management-variceal-bleeding",
+    "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/protocolos-setoriais-iag",
+    "https://sbhepatologia.org.br/publicacoes/artigos/evolving-portal-hypertension-through-baveno-vii-recommendations/"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Benchmarks lidos no Google Drive:** - “06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf”, aproximadamente 6,7 mil caracteres. Foco quase exclusivo em HDA varicosa, compressão esplâncnica, profilaxia, ligadura e TIPS, associado a capítulo de síndrome hepatopulmonar. Traz simplificações como “betabloqueador para todos com hipertensão portal” sem abordar contraindicações, hipotensão ou decisão por HPCS em contexto específico. - “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”, cerca de 9 mil caracteres. Explica fisiologia gástrica, úlcera péptica, classificação de Forrest, ligadura de relação com H. pylori e opções de hemostasia. Há números históricos mu"
+    },
+    {
+      "text": "**Atenção ao choque hemorrágico:** queda da pressão, alteração de consciência, lactato elevado em contexto de hipoperfusão, oligúria e extremidades frias são sinais de intervenção imediata. Uma hemoglobina de 11 g/dL logo após sangramento volumoso não tranquiliza frente a PA 75/45 mmHg."
+    },
+    {
+      "text": "Pró-cinético antes da EDA pode melhorar visualização quando se espera grande quantidade de sangue/coágulos: eritromicina IV tem indicação em casos selecionados, e atualização ESGE 2026 admite considerar metoclopramida IV quando eritromicina não estiver disponível, respeitando contraindicações, interações e necessidade real. Não indicar lavagem por sonda nasogástrica de rotina."
+    },
+    {
+      "text": "**Não reduzir a recomendação a “GBS 1 = alta de qualquer paciente”.** Sangramento ativo, instabilidade, sintomas importantes, anticoagulação complexa, inacessibilidade ao retorno e outros fatores podem alterar decisão. GBS não substitui julgamento em sangramento varicoso suspeito com doença hepática avançada."
+    },
+    {
+      "text": "A atualização ESGE 2026 é explícita ao não recomendar EDA de emergência (≤6 h) ou urgente (≤12 h) para úlcera péptica **de rotina**, salvo persistência de instabilidade apesar de medidas adequadas. Isso não contradiz o relógio específico da hemorragia varicosa: são síndromes com fisiopatologia e suporte farmacológico distintos."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

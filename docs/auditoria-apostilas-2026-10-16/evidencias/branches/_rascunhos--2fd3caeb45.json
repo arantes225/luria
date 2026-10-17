@@ -1,0 +1,46 @@
+{
+  "sha": "2fd3caeb456a27819349e22dd0eb559b8d628732",
+  "path": "apostilas/_rascunhos/lote-06-116-teste-autossuficiencia.md",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--2fd3caeb45",
+  "title": "Lote 06 · Tema 116 — Teste de autossuficiência e prévia técnica",
+  "format": ".md",
+  "chars_estimated": 4537,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Lote 06 · Tema 116 — Teste de autossuficiência e prévia técnica"
+    },
+    {
+      "title": "Resultado técnico"
+    },
+    {
+      "title": "Crítica editorial qualificada"
+    },
+    {
+      "title": "Pendências para publicação"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "| Questão | Objetivo | Capítulo de suporte | Âncora interna | Teste de termos | | --- | --- | --- | --- | --- | | 1 | Fenótipo nefrótico e hipoalbuminemia | 2 | `#cap-02-reconhecimento-das-sindromes-glomerulares` | Encontrou (sindrome nefrotica ✓, proteinuria ✓) | | 2 | IgA e hematúria sinfaringítica | 14 | `#cap-14-nefropatia-por-iga-e-vasculite-por-iga` | Encontrou (iga ✓, hematuria ✓) | | 3 | GNRP com deterioração renal rápida | 16 | `#cap-16-glomerulonefrite-rapidamente-progressiva-gnrp` | Encontrou (creatinina ✓, hematuria ✓) | | 4 | KDIGO 2025: proteinúria e meta em IgA | 14 | `#cap-14-nefropatia-por-iga-e-vasculite-por-iga` | Encontrou"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

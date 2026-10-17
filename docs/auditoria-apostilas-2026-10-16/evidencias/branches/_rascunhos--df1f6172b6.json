@@ -1,0 +1,350 @@
+{
+  "sha": "df1f6172b6cec1cef45a03afd76e2206639b917a",
+  "path": "apostilas/_rascunhos/lote-03-055-vigilancia-em-saude.md",
+  "branches": [
+    "origin/editorial/apostilas-lote-03-trauma-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--df1f6172b6",
+  "title": "LURIA — Apostila 055 | Vigilância em Saúde: sistema integrado, território, risco, inteligência e resposta",
+  "format": ".md",
+  "chars_estimated": 63617,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 055 | Vigilância em Saúde: sistema integrado, território, risco, inteligência e resposta"
+    },
+    {
+      "title": "0. Etapa zero — benchmark privado e fontes nacionais abertas"
+    },
+    {
+      "title": "1. Em 30 segundos: qual é a ideia central?"
+    },
+    {
+      "title": "2. Conceitos básicos para quem começa do zero"
+    },
+    {
+      "title": "2.1 Vigilância não é apenas fiscalização"
+    },
+    {
+      "title": "2.2 Informação, dado, indicador e decisão"
+    },
+    {
+      "title": "2.3 Risco, vulnerabilidade e determinantes"
+    },
+    {
+      "title": "2.4 Pessoa versus população"
+    },
+    {
+      "title": "3. A Política Nacional de Vigilância em Saúde (PNVS), Resolução CNS 588/2018"
+    },
+    {
+      "title": "3.1 Princípios, não apenas uma lista decorada"
+    },
+    {
+      "title": "3.2 Funções essenciais do ciclo"
+    },
+    {
+      "title": "3.3 Governança tripartite, sem fragmentar a responsabilidade"
+    },
+    {
+      "title": "4. Quatro vigilâncias — comparar problemas e instrumentos"
+    },
+    {
+      "title": "4.1 Vigilância epidemiológica: detectar mudança, não só contar casos"
+    },
+    {
+      "title": "4.2 Vigilância sanitária: ação antes de alguém adoecer"
+    },
+    {
+      "title": "4.3 Vigilância ambiental: meio ambiente como determinante e exposição"
+    },
+    {
+      "title": "4.4 Saúde do trabalhador: nexo, prevenção e proteção"
+    },
+    {
+      "title": "5. Da suspeita à intervenção: exemplo de surto de diarreia"
+    },
+    {
+      "title": "5.1 Como definir um caso operacional?"
+    },
+    {
+      "title": "5.2 Curva epidêmica e taxa de ataque"
+    },
+    {
+      "title": "5.3 Resposta integrada"
+    },
+    {
+      "title": "6. Sistemas de informação: nenhum banco responde a todas as perguntas"
+    },
+    {
+      "title": "6.1 O que cada sistema permite inferir?"
+    },
+    {
+      "title": "6.2 Qualidade de dados, subnotificação e vieses"
+    },
+    {
+      "title": "7. Notificação compulsória: ato de saúde pública, não atestado de certeza"
+    },
+    {
+      "title": "7.1 Atualização normativa de janeiro de 2026"
+    },
+    {
+      "title": "7.2 Por que notificar casos suspeitos?"
+    },
+    {
+      "title": "7.3 Notificação e sigilo"
+    },
+    {
+      "title": "8. Vigilância laboratorial e inteligência epidemiológica"
+    },
+    {
+      "title": "8.1 O papel dos CIEVS"
+    },
+    {
+      "title": "8.2 A vigilância epidemiológica hospitalar"
+    },
+    {
+      "title": "9. Vigilância e APS: integração longitudinal no território"
+    },
+    {
+      "title": "9.1 Vigilância em populações vulneráveis"
+    },
+    {
+      "title": "9.2 Análise de situação de saúde como ferramenta de planejamento"
+    },
+    {
+      "title": "9.3 Quando os indicadores pioram após implantação de serviço"
+    },
+    {
+      "title": "10. Emergência em saúde pública: prontidão, alerta e resposta"
+    },
+    {
+      "title": "10.1 Cinco perguntas iniciais"
+    },
+    {
+      "title": "10.2 Comunicação de risco versus comunicação de crise"
+    },
+    {
+      "title": "10.3 A comunicação não substitui a intervenção"
+    },
+    {
+      "title": "11. Vigilância de doenças crônicas, acidentes e violências"
+    },
+    {
+      "title": "11.1 Métodos de vigilância de fatores de risco"
+    },
+    {
+      "title": "11.2 Violência e saúde: cuidar e notificar sem expor"
+    },
+    {
+      "title": "12. Monitoramento e avaliação: o que muda depois da intervenção?"
+    },
+    {
+      "title": "12.1 Indicadores de estrutura, processo e resultado"
+    },
+    {
+      "title": "12.2 Risco de causalidade falsa após intervenção"
+    },
+    {
+      "title": "12.3 Ética e proteção de dados"
+    },
+    {
+      "title": "13. Integração da vigilância com o serviço assistencial: seis cenários de ponta a ponta"
+    },
+    {
+      "title": "13.1 O serviço hospitalar é um sensor, não só um consumidor de informação"
+    },
+    {
+      "title": "13.2 Atenção Primária participa antes, durante e depois do surto"
+    },
+    {
+      "title": "13.3 A rede privada também gera informação de interesse público"
+    },
+    {
+      "title": "13.4 Fronteiras municipais não são fronteiras epidemiológicas"
+    },
+    {
+      "title": "14. Tipos de vigilância por método: rotina, ativa, sentinela, laboratorial e baseada em eventos"
+    },
+    {
+      "title": "14.1 Vigilância sentinela não representa toda a população automaticamente"
+    },
+    {
+      "title": "14.2 Vigilância baseada em eventos e falsa informação"
+    },
+    {
+      "title": "15. Conceitos quantitativos que estruturam a análise de situação de saúde"
+    },
+    {
+      "title": "15.1 Incidência e prevalência respondem perguntas diferentes"
+    },
+    {
+      "title": "15.2 Taxa, proporção e denominador"
+    },
+    {
+      "title": "15.3 Sensibilidade do sistema versus especificidade de sinal"
+    },
+    {
+      "title": "15.4 Letalidade versus mortalidade"
+    },
+    {
+      "title": "15.5 Sinal temporal versus tendência real"
+    },
+    {
+      "title": "16. Preparação e resposta a desastres: risco sanitário além de epidemias"
+    },
+    {
+      "title": "16.1 O problema de avaliar apenas doenças confirmadas"
+    },
+    {
+      "title": "16.2 Grupos com maior risco de interrupção de cuidado"
+    },
+    {
+      "title": "16.3 Comunicação de água segura"
+    },
+    {
+      "title": "17. Segurança sanitária, farmacovigilância e eventos adversos"
+    },
+    {
+      "title": "17.1 Evento adverso não implica causalidade provada"
+    },
+    {
+      "title": "17.2 Tecnovigilância e hemovigilância"
+    },
+    {
+      "title": "18. Seis casos integrados de prova e serviço"
+    },
+    {
+      "title": "Caso 1 — Surto alimentar após evento escolar"
+    },
+    {
+      "title": "Caso 2 — Suspeita de sarampo em adolescente não vacinado"
+    },
+    {
+      "title": "Caso 3 — Exposição química na oficina"
+    },
+    {
+      "title": "Caso 4 — Anomalia congênita e atualização da lista 2026"
+    },
+    {
+      "title": "Caso 5 — Dois hospitais com casos semelhantes, nenhuma notificação municipal"
+    },
+    {
+      "title": "Caso 6 — Indicadores de dengue caem quando serviço fecha"
+    },
+    {
+      "title": "19. Dez questões autorais com justificativas"
+    },
+    {
+      "title": "Questão 1 — Componentes da PNVS"
+    },
+    {
+      "title": "Questão 2 — Natureza pública"
+    },
+    {
+      "title": "Questão 3 — Risco versus vulnerabilidade"
+    },
+    {
+      "title": "Questão 4 — Investigação de surto"
+    },
+    {
+      "title": "Questão 5 — Notificação 2026"
+    },
+    {
+      "title": "Questão 6 — Informação e sistema"
+    },
+    {
+      "title": "Questão 7 — Sentinela e representatividade"
+    },
+    {
+      "title": "Questão 8 — Núcleos hospitalares e CIEVS"
+    },
+    {
+      "title": "Questão 9 — Incidência versus prevalência"
+    },
+    {
+      "title": "Questão 10 — Vigilância após intervenção"
+    },
+    {
+      "title": "20. Plano visual sem incorporação de imagem não aprovada"
+    },
+    {
+      "title": "21. Resumo de alto rendimento e diferenciais fundamentais"
+    },
+    {
+      "title": "22. Matriz de cobertura e pendências impeditivas de publicação"
+    }
+  ],
+  "reference_entries": [
+    "**Documentos realmente abertos no Google Drive:** ",
+    "- \"Vigilância epidemiológica.pdf\": ficha de revisão com aproximadamente 2.732 caracteres extraídos, trata de vigilância sanitária, epidemiológica, ambiental, trabalhador, notificação, zoonoses e sistemas de informação. Não contém explicação aprofundada de análise territorial, governança, integração de vigilâncias, inteligência e resposta a emergências; diversas indicações de notificação estão desatualizadas. Arquivo cita pessoa física e não comprovou autoria Estratégia MED.",
+    "- \"SUS.pdf\": ficha de cerca de 2.670 caracteres extraídos; expõe SUS, descentralização, regionalização, participação social e competências, mas não é apostila especializada de vigilância. É referência apenas correlata.",
+    "- **Comparação LURIA:** inventário do repositório mostra a aula 055 sem página independente inspecionada; outras aulas curriculares da sequência são 060 (vigilância epidemiológica) e 065 (vigilância sanitária). É fundamental não replicar todo o curso de notificação e as regras de fiscalização sanitária em três apostilas idênticas. O presente recorte é a VISÃO SISTÊMICA e integração entre vigilâncias com atenção e território, com exemplos operacionais. A busca textual do GitHub não identificou título específico já criado. Isso não exclui possíveis registros em Supabase ou branches concorrentes.",
+    "**Fontes públicas efetivamente consultadas e oficiais:**",
+    "1. Conselho Nacional de Saúde, **Resolução CNS nº 588/2018** que institui a **Política Nacional de Vigilância em Saúde (PNVS)**, íntegra HTML da BVS/MS. https://bvsms.saude.gov.br/bvs/saudelegis/cns/2018/res0588_13_08_2018.html",
+    "2. Ministério da Saúde, **Portaria GM/MS nº 10.175/2026**, alteração da lista nacional de notificação compulsória com inclusão de anomalias congênitas. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10175_26_01_2026.html",
+    "3. Ministério da Saúde, **Notificação Compulsória** (página institucional e links à lista vigente). https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "4. Ministério da Saúde, **Rede CIEVS** (alerta e resposta às emergências). https://www.gov.br/saude/pt-br/composicao/svsa/cievs",
+    "5. Ministério da Saúde, **RENAVEH** (núcleos hospitalares de epidemiologia e detecção rápida). https://www.gov.br/saude/pt-br/composicao/svsa/renaveh/renaveh",
+    "6. Ministério da Saúde, **SISLAB** (rede nacional de laboratórios). https://www.gov.br/saude/pt-br/composicao/svsa/sislab",
+    "7. Ministério da Saúde, **SVSA — Vigilância em Saúde e Ambiente** (eixos, redes, informação e serviços). https://www.gov.br/saude/pt-br/composicao/svsa",
+    "8. Ministério da Saúde, Notas Técnicas 2026 de anomalias congênitas: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/anomalias-congenitas/notas-tecnicas-e-informativas",
+    "**Limitação do benchmark:** o Drive tem ficha curta de vigilância epidemiológica, não um livro geral da PNVS; etapa zero é suficiente para registro comparativo inicial, MAS NÃO para atestar benchmark equivalente nem a meta de 60K úteis. A autoria original de Estratégia MED não foi confirmada. Não citar links privados do Drive em repositório público e não copiar as listas do resumo.",
+    "**Ideia-resumo:** detectar → compreender → decidir → agir → comunicar → medir → corrigir. Se o sistema apenas recebe fichas e não toma decisões, há registro, mas a função de vigilância está incompleta.",
+    "**Dado** é registro bruto: dez pessoas procuraram UPA com vômitos após refeição. **Informação** integra dados de tempo, lugar, pessoa, exposição e definição de caso: oito comeram no mesmo restaurante em janela curta. **Indicador** transforma evento em medida comparável: taxa de ataque entre participantes de uma refeição, proporção de atendimentos por diarreia e taxa de positividade laboratorial. **Decisão** envolve investigar estabelecimento, examinar alimentos/água, tratar pessoas e comunicar riscos proporcionalmente. Um indicador sem finalidade de decisão vira número decorativo.",
+    "**Quatro componentes integrados previstos no artigo 3º:** vigilância epidemiológica; vigilância em saúde ambiental; vigilância em saúde do trabalhador e da trabalhadora; vigilância sanitária. **Análise de situação de saúde e laboratório** são atividades transversais essenciais; não são quinto e sexto tipos isolados que substituem os quatro eixos.",
+    "**Conhecimento do território:** organizar prioridades por necessidades concretas; evita aplicar a mesma campanha sem olhar riscos locais. **Integralidade:** conectar prevenção, vigilância e assistência, por exemplo identificar contatos de tuberculose e garantir diagnóstico/tratamento. **Descentralização e regionalização:** ações locais com coordenação de redes regionais; um município pode depender de laboratório estadual, sem perder dever de detectar suspeita. **Equidade:** maior atenção a populações com vulnerabilidade, não apenas igualdade de número de visitas. **Universalidade:** direitos d",
+    "**Pergunta de prova:** \"A PNVS aplica-se só a serviços públicos de atenção básica?\" Não. A política incide sobre pontos de atenção de diferentes níveis, inclusive serviços privados, estabelecimentos relacionados a produtos/tecnologias e ações intersetoriais, mantendo gestão pública.",
+    "1. Identificar riscos e prioridades no território por indicadores e escuta.",
+    "2. Definir eventos sob vigilância e fontes de informação (notificação, laboratório, inquéritos, mortalidade, ambiente).",
+    "3. Detectar sinais e validar dados (eliminar duplicidade e erros de digitação).",
+    "4. Investigar com definição de caso, tempo-lugar-pessoa e hipóteses.",
+    "5. Recomendar e implementar medidas proporcionais, em rede com gestão.",
+    "6. Comunicar risco de maneira transparente e acessível.",
+    "7. Monitorar resultados e eventos adversos de intervenções.",
+    "8. Revisar a estratégia e registrar lições aprendidas.",
+    "**União:** coordena políticas nacionais, sistemas, estratégias laboratoriais e de resposta, com apoio técnico e financiamento; **estados:** articulam vigilância regional, laboratório de referência, suporte a municípios, ações coordenadas e investigação de amplitude estadual; **municípios:** detectam e investigam eventos no território, notificam, executam intervenções locais e articulam atenção; **DF:** reúne competências pertinentes. Essas atribuições são gerais e se complementam: não significa que estado jamais investigue evento local, nem que União não execute ação em circunstância especial.",
+    "**Exemplo numérico:** entre 120 pessoas que consumiram alimento A, 36 adoeceram: 30%. Entre 80 que não consumiram A, oito adoeceram: 10%. A razão simples das taxas é 3. Isso sugere associação, mas é necessário investigar exposições concomitantes, definição de caso, vieses e incerteza. Não divulgar causalidade \"alimento A confirmado\" sem validação adicional.",
+    "**Epidemiológica:** identificar casos, perfis e contato, coordenar inquérito. **Sanitária:** inspecionar processo de armazenamento/preparo, coletar amostras quando apropriado e verificar segurança alimentar. **Ambiental:** avaliar origem e qualidade da água e possíveis fontes de contaminação. **Trabalhador:** investigar manipuladores e condições de trabalho, sem culpabilização automática. **Assistência:** reidratar e tratar gravidade, orientar pacientes e estabelecer fluxos de encaminhamento. **Comunicação:** informar medidas concretas, possíveis exposições e sinais de alarme, atualizando conf"
+  ],
+  "external_urls": [
+    "https://bvsms.saude.gov.br/bvs/saudelegis/cns/2018/res0588_13_08_2018.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10175_26_01_2026.html",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/notificacao-compulsoria/",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/cievs",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/renaveh/renaveh",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/sislab",
+    "https://www.gov.br/saude/pt-br/composicao/svsa",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/anomalias-congenitas/notas-tecnicas-e-informativas"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "A clínica trata a pessoa que procura ajuda, ao passo que a vigilância pergunta o que o caso sinaliza para os demais expostos e para o território. As duas dimensões são complementares. Um adolescente com suspeita de sarampo precisa diagnóstico e cuidado, enquanto a vigilância precisa avaliar contatos, deslocamentos, susceptibilidade vacinal e necessidade de resposta. O atendimento individual não substitui investigação de exposição; a investigação coletiva não deve atrasar atendimento clínico."
+    },
+    {
+      "text": "**Conhecimento do território:** organizar prioridades por necessidades concretas; evita aplicar a mesma campanha sem olhar riscos locais. **Integralidade:** conectar prevenção, vigilância e assistência, por exemplo identificar contatos de tuberculose e garantir diagnóstico/tratamento. **Descentralização e regionalização:** ações locais com coordenação de redes regionais; um município pode depender de laboratório estadual, sem perder dever de detectar suspeita. **Equidade:** maior atenção a populações com vulnerabilidade, não apenas igualdade de número de visitas. **Universalidade:** direitos de toda a população, inclusive quem não tem cadastr"
+    },
+    {
+      "text": "1. Identificar riscos e prioridades no território por indicadores e escuta. 2. Definir eventos sob vigilância e fontes de informação (notificação, laboratório, inquéritos, mortalidade, ambiente). 3. Detectar sinais e validar dados (eliminar duplicidade e erros de digitação). 4. Investigar com definição de caso, tempo-lugar-pessoa e hipóteses. 5. Recomendar e implementar medidas proporcionais, em rede com gestão. 6. Comunicar risco de maneira transparente e acessível. 7. Monitorar resultados e eventos adversos de intervenções. 8. Revisar a estratégia e registrar lições aprendidas."
+    },
+    {
+      "text": "| Eixo PNVS | Objeto privilegiado | Exemplo de pergunta | Resposta típica | |---|---|---|---| | Epidemiológica | Doenças transmissíveis/não transmissíveis, agravos e mudanças na distribuição | Casos de febre surgem agrupados em tempo/lugar? | Detectar, investigar, orientar medidas de prevenção/controle | | Sanitária | Produtos, serviços, processos, ambientes de prestação de serviços e circulação de bens | Um lote de alimento/medicamento pode causar dano? | Monitorar qualidade, regulamentar, inspecionar e intervir conforme autoridade | | Ambiental | Exposições por água, ar, solo, produtos químicos, desastres e mudanças ambientais | Um poço usa"
+    },
+    {
+      "text": "Identificar doenças relacionadas ao trabalho exige avaliar exposição, função, processos produtivos, temporalidade e outros fatores. Não é necessário reduzir a relação trabalho-saúde a acidentes agudos; há intoxicação crônica, perda auditiva, adoecimento mental, dermatoses, câncer ocupacional e distúrbios osteomusculares. Centros de Referência em Saúde do Trabalhador (Cerest) e rede de atenção podem apoiar investigação, recomendações e articulação intersetorial. O cuidado ao trabalhador não termina na assistência à lesão; busca reduzir exposição para outras pessoas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

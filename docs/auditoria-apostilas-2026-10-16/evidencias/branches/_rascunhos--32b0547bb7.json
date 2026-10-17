@@ -1,0 +1,191 @@
+{
+  "sha": "32b0547bb7f5fb69400ae742976718f656ecc414",
+  "path": "apostilas/_rascunhos/lote-06-131-build-input-preliminar.json",
+  "branches": [
+    "origin/editorial/lote-06-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--32b0547bb7",
+  "title": "Hepatites Virais",
+  "format": ".json",
+  "chars_estimated": 99202,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "id": "orientacoes",
+      "title": "Como usar esta apostila"
+    },
+    {
+      "id": "cap-01-hepatites-virais-cinco-virus-trajetorias-diferentes-",
+      "title": "1. Hepatites virais: cinco vírus, trajetórias diferentes e duas perguntas vitais"
+    },
+    {
+      "id": "cap-02-a-fisiologia-das-transaminases-bilirrubina-e-sintese",
+      "title": "2. A fisiologia das transaminases, bilirrubina e síntese hepática"
+    },
+    {
+      "id": "cap-03-avaliacao-inicial-de-uma-pessoa-com-suspeita-de-hepa",
+      "title": "3. Avaliação inicial de uma pessoa com suspeita de hepatite viral"
+    },
+    {
+      "id": "cap-04-hepatite-a-a-doenca-fecal-oral-geralmente-autolimita",
+      "title": "4. Hepatite A: a doença fecal–oral geralmente autolimitada"
+    },
+    {
+      "id": "cap-05-hepatite-b-entender-o-ciclo-viral-antes-da-sorologia",
+      "title": "5. Hepatite B: entender o ciclo viral antes da sorologia"
+    },
+    {
+      "id": "cap-06-hepatite-b-cronica-quem-precisa-de-tratamento-e-acom",
+      "title": "6. Hepatite B crônica: quem precisa de tratamento e acompanhamento"
+    },
+    {
+      "id": "cap-07-hepatite-c-anticorpo-nao-e-viremia-e-cura-nao-apaga-",
+      "title": "7. Hepatite C: anticorpo não é viremia e cura não apaga a fibrose"
+    },
+    {
+      "id": "cap-08-hepatite-d-por-que-nao-existe-hdv-cronico-independen",
+      "title": "8. Hepatite D: por que não existe HDV crônico independente de HBV"
+    },
+    {
+      "id": "cap-09-hepatite-e-a-excecao-da-persistencia-em-imunossuprim",
+      "title": "9. Hepatite E: a exceção da persistência em imunossuprimidos"
+    },
+    {
+      "id": "cap-10-hepatite-aguda-grave-e-insuficiencia-hepatica-aguda-",
+      "title": "10. Hepatite aguda grave e insuficiência hepática aguda: reconhecer a diferença"
+    },
+    {
+      "id": "cap-11-sorologia-da-hepatite-b-interpretar-o-painel-antes-d",
+      "title": "11. Sorologia da hepatite B: interpretar o painel antes de rotular a pessoa"
+    },
+    {
+      "id": "cap-12-hepatite-b-cronica-fases-objetivos-terapeuticos-e-in",
+      "title": "12. Hepatite B crônica: fases, objetivos terapêuticos e indicação de iniciar"
+    },
+    {
+      "id": "cap-13-vacinacao-hbv-e-prevencao-da-transmissao-vertical-do",
+      "title": "13. Vacinação HBV e prevenção da transmissão vertical: do pré-natal à primeira hora do recém-nascido"
+    },
+    {
+      "id": "cap-14-hepatite-c-o-pcdt-brasileiro-de-2026-muda-o-algoritm",
+      "title": "14. Hepatite C: o PCDT brasileiro de 2026 muda o algoritmo da prova"
+    },
+    {
+      "id": "cap-15-hepatite-c-farmacologia-dos-antivirais-e-armadilhas-",
+      "title": "15. Hepatite C: farmacologia dos antivirais e armadilhas que causam dano"
+    },
+    {
+      "id": "cap-16-hepatite-d-procurar-hdv-quando-ha-hbv-e-explicar-o-m",
+      "title": "16. Hepatite D: procurar HDV quando há HBV e explicar o mecanismo"
+    },
+    {
+      "id": "cap-17-hepatites-a-e-e-fecal-oral-surtos-riscos-especiais-e",
+      "title": "17. Hepatites A e E: fecal-oral, surtos, riscos especiais e profilaxia"
+    },
+    {
+      "id": "cap-18-coinfeccoes-hiv-hbv-e-hcv-dois-virus-alteram-o-plano",
+      "title": "18. Coinfecções HIV, HBV e HCV: dois vírus alteram o plano de ambos"
+    },
+    {
+      "id": "cap-19-reativacao-de-hbv-com-imunossupressao-uma-emergencia",
+      "title": "19. Reativação de HBV com imunossupressão: uma emergência evitável"
+    },
+    {
+      "id": "cap-20-acidente-com-material-biologico-e-prevencao-apos-exp",
+      "title": "20. Acidente com material biológico e prevenção após exposição"
+    },
+    {
+      "id": "cap-21-algoritmo-diagnostico-de-ictericia-aguda-e-elevacao-",
+      "title": "21. Algoritmo diagnóstico de icterícia aguda e elevação de aminotransferases"
+    },
+    {
+      "id": "cap-22-estadiamento-da-fibrose-reconhecer-quem-precisa-cont",
+      "title": "22. Estadiamento da fibrose: reconhecer quem precisa continuar sob vigilância"
+    },
+    {
+      "id": "cap-23-carcinoma-hepatocelular-suprimir-virus-reduz-risco-m",
+      "title": "23. Carcinoma hepatocelular: suprimir vírus reduz risco, mas não o elimina"
+    },
+    {
+      "id": "cap-24-gestacao-puerperio-e-planejamento-familiar-nas-hepat",
+      "title": "24. Gestação, puerpério e planejamento familiar nas hepatites virais"
+    },
+    {
+      "id": "cap-25-criancas-adolescentes-hemodialise-e-transplante-cena",
+      "title": "25. Crianças, adolescentes, hemodiálise e transplante: cenários que não cabem na receita adulta"
+    },
+    {
+      "id": "cap-26-diagnosticos-diferenciais-e-armadilhas-que-mais-caem",
+      "title": "26. Diagnósticos diferenciais e armadilhas que mais caem"
+    },
+    {
+      "id": "cap-27-fluxos-clinicos-operacionais-para-aps-ambulatorio-e-",
+      "title": "27. Fluxos clínicos operacionais para APS, ambulatório e emergência"
+    },
+    {
+      "id": "cap-28-perolas-erros-frequentes-e-verificacao-final-do-raci",
+      "title": "28. Pérolas, erros frequentes e verificação final do raciocínio"
+    },
+    {
+      "id": "cap-29-oito-casos-clinicos-comentados-decisoes-que-mudam-a-",
+      "title": "29. Oito casos clínicos comentados — decisões que mudam a conduta"
+    },
+    {
+      "id": "cap-30-doze-questoes-autorais-comentadas",
+      "title": "30. Doze questões autorais comentadas"
+    }
+  ],
+  "reference_entries": [
+    "{\"label\":\"Brasil. PCDT Hepatite B e Coinfecções — anexo alterado em 2024\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view\"}",
+    "{\"label\":\"Brasil. PCDT Hepatite C e Coinfecções — Portaria 39/2026\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes/view\"}",
+    "{\"label\":\"Brasil. Biblioteca de hepatites virais e manuais de diagnóstico\",\"url\":\"https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais\"}",
+    "{\"label\":\"OMS. Diretrizes de HBV crônico e prevenção 2024\",\"url\":\"https://www.who.int/publications/i/item/9789240090903\"}",
+    "{\"label\":\"EASL. Clinical Practice Guidelines HBV 2025\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/40348683/\"}",
+    "{\"label\":\"Brasil. PCDT transmissão vertical HIV, sífilis e hepatites\",\"url\":\"https://www.gov.br/aids/pt-br/centrais-de-conteudo/pcdts\"}",
+    "{\"label\":\"Liverpool Hepatitis Drug Interactions\",\"url\":\"https://www.hep-druginteractions.org/\"}",
+    "{\"label\":\"CDC. Diagnóstico da exposição perinatal ao HCV\",\"url\":\"https://www.cdc.gov/hepatitis-c/hcp/diagnosis-testing/perinatally-exposed-children.html\"}",
+    "{\"label\":\"OMS. Hepatites virais — prevenção e eliminação\",\"url\":\"https://www.who.int/health-topics/hepatitis\"}",
+    "{\"label\":\"Brasil. Hepatites virais — informações e vigilância\",\"url\":\"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais\"}"
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-coinfeccoes/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais",
+    "https://www.who.int/publications/i/item/9789240090903",
+    "https://pubmed.ncbi.nlm.nih.gov/40348683/",
+    "https://www.gov.br/aids/pt-br/centrais-de-conteudo/pcdts",
+    "https://www.hep-druginteractions.org/",
+    "https://www.cdc.gov/hepatitis-c/hcp/diagnosis-testing/perinatally-exposed-children.html",
+    "https://www.who.int/health-topics/hepatitis",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Um paciente com febre, prurido, colúria, acolia e dor em hipocôndrio direito pode apresentar obstrução biliar ou colangite; solicitar US e considerar via biliar mesmo se transaminases estiverem elevadas. Uma pessoa com hipotensão prolongada e AST/ALT muito altas pode ter hepatite isquêmica. Acetaminofeno/paracetamol em dose tóxica pode causar insuficiência hepática fulminante mesmo com bilirrubina inicialmente pouco elevada. O diagnóstico não se faz com a regra “TGP >1000 = vírus”."
+    },
+    {
+      "text": "Na maioria dos pacientes, manejo de suporte, hidratação proporcional, nutrição tolerada, evitar álcool e revisar hepatotóxicos são suficientes. Não prescrever antibiótico ou antiviral para HAV aguda de rotina. Sintomas intensos, coagulopatia, alteração mental, gestação em determinados cenários e comorbidades podem justificar avaliação hospitalar. Vacinação contra HAV e imunoglobulina pós-exposição em circunstâncias definidas devem seguir recomendações brasileiras vigentes de indicação, idade, susceptibilidade e momento de exposição; não improvisar esquema universal."
+    },
+    {
+      "text": "A EASL 2025 recomenda tratar pessoas com cirrose e HBV-DNA detectável independentemente de ALT ou magnitude da viremia; também considera HBV-DNA ≥2.000 UI/mL com ALT acima do limite e/ou fibrose significativa em hepatite crônica como indicação forte. Os critérios completos variam por diretriz e população. O PCDT brasileiro é a referência operacional do SUS; o fato de diretriz europeia ser atual não garante identidade com o PCDT nacional."
+    },
+    {
+      "text": "Tenofovir desoproxila (TDF), tenofovir alafenamida (TAF) e entecavir têm alta barreira genética à resistência em contextos apropriados e são opções de tratamento no SUS conforme indicações/fornecimento. Interferona peguilada pode ter papel em pacientes selecionados, com contraindicações relevantes, monitorização e limites de eficácia. A escolha envolve função renal, saúde óssea, comorbidades, gravidez, coinfecção HIV, resistência prévia e acesso local. Não suspender análogo nucleos(t)ídeo em paciente com cirrose apenas porque ALT normalizou, pois pode ocorrer reativação grave."
+    },
+    {
+      "text": "A OMS publicou em março de 2024 diretrizes que simplificam/ampliam critérios de tratamento de HBV crônico e consideram adolescentes, diagnóstico descentralizado e prevenção materno-infantil. Essa atualização responde a lacunas globais de testagem e acesso. O material deve mostrar que critérios internacionais não são automaticamente regras administrativas de dispensação no SUS; adequar ao PCDT e ao serviço. A prioridade ética é reconhecer quem tem benefício real e organizar acesso, não “tratar todos com qualquer marcador positivo” sem confirmação/estratificação."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

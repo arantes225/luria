@@ -1,0 +1,174 @@
+{
+  "sha": "ec87b770abb40fc1dc4addce8fe969f398a0b501",
+  "path": "apostilas/_rascunhos/lote-07-aula-133-meningites-encefalites.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-105-estudos-epidemiologicos-20261014",
+    "origin/editorial/lote-05-106-lesao-renal-aguda-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015",
+    "origin/editorial/lote-05-auditoria-clinica-20261014",
+    "origin/editorial/lote-05-hpp-tardia-asma-20261014"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--ec87b770ab",
+  "title": "LURIA — Lote 7 · Aula 133",
+  "format": ".md",
+  "chars_estimated": 23488,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 7 · Aula 133"
+    },
+    {
+      "title": "Meningites e encefalites na infância: uma emergência sindrômica"
+    },
+    {
+      "title": "0. Inventário e comparação efetiva"
+    },
+    {
+      "title": "1. O que separa meningite, encefalite e sepse?"
+    },
+    {
+      "title": "2. Anatomia e fisiopatologia"
+    },
+    {
+      "title": "3. Etiologia por idade e imunidade"
+    },
+    {
+      "title": "4. Apresentações clínicas e sinais de gravidade"
+    },
+    {
+      "title": "5. O passo a passo da primeira hora"
+    },
+    {
+      "title": "6. Punção lombar: quando e como interpretar"
+    },
+    {
+      "title": "6.1. Antes de punção, responder"
+    },
+    {
+      "title": "6.2. LCR básico e interpretação"
+    },
+    {
+      "title": "6.3. Resultado microbiológico"
+    },
+    {
+      "title": "7. Tratamento farmacológico — princípios seguros"
+    },
+    {
+      "title": "8. Condutas de vigilância e quimioprofilaxia"
+    },
+    {
+      "title": "9. Complicações e prognóstico"
+    },
+    {
+      "title": "10. Diferenciais que podem simular meningite"
+    },
+    {
+      "title": "11. Algoritmos"
+    },
+    {
+      "title": "12. Quatro casos comentados"
+    },
+    {
+      "title": "Caso 1 — lactente sem rigidez de nuca"
+    },
+    {
+      "title": "Caso 2 — adolescente com púrpura"
+    },
+    {
+      "title": "Caso 3 — encefalite temporal"
+    },
+    {
+      "title": "Caso 4 — meningite tuberculosa subaguda"
+    },
+    {
+      "title": "13. Seis questões autorais comentadas"
+    },
+    {
+      "title": "Questão 1 — decisão temporal"
+    },
+    {
+      "title": "Questão 2 — LCR"
+    },
+    {
+      "title": "Questão 3 — neonato"
+    },
+    {
+      "title": "Questão 4 — encefalite"
+    },
+    {
+      "title": "Questão 5 — contatos"
+    },
+    {
+      "title": "Questão 6 — PCR HSV negativo precoce"
+    },
+    {
+      "title": "14. Pérolas e pontos de prova"
+    },
+    {
+      "title": "15. Plano visual — sem imagem clínica obtida"
+    },
+    {
+      "title": "16. Referências"
+    },
+    {
+      "title": "17. Checklist pendente"
+    }
+  ],
+  "reference_entries": [
+    "- WHO. *Guidelines on meningitis diagnosis, treatment and care*. 2025. https://www.who.int/publications/i/item/9789240108042",
+    "- WHO. *Practical manual on meningitis diagnosis, treatment and care*. 26/05/2026. https://www.who.int/publications/i/item/9789240121027",
+    "- NICE NG240. *Meningitis (bacterial) and meningococcal disease*. 2024. https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+    "- Ministério da Saúde. *Guia de Vigilância em Saúde*, 6ª ed., seção de meningites. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/guia-de-vigilancia-em-saude-6o-edicao",
+    "- Ministério da Saúde. *Notas técnicas — Meningite*, revisões 2024–2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "- IDSA. *Management of Encephalitis*, 2008 (base histórica de diagnóstico HSV; revisão de atualização pendente). https://academic.oup.com/cid/article/47/3/303/313455",
+    "- [x] Fundamentos, reconhecimento, PL/LCR, tratamento por síndromes, vigilância, 4 casos, 6 questões.",
+    "- [x] Benchmark correlato do Drive lido com limites de equivalência explicitados.",
+    "- [ ] Tabelas completas de doses pediátricas por faixa etária, renal, máximos, via e diluição, verificadas em documentos nacionais.",
+    "- [ ] Protocolo detalhado neonatologia, HIV, TB, criptococose, encefalite autoimune e causas raras.",
+    "- [ ] Crescer para ≥60.000 caracteres didáticos úteis sem repetição; revisar PNI 2026 e riscos por imunização.",
+    "- [ ] Selecionar pelo menos dez candidatas reais com licença e aprovação Admin.",
+    "- [ ] Revisão médica formal, teste de autossuficiência e integração desktop/PWA.",
+    "**Estado: somente rascunho.**"
+  ],
+  "external_urls": [
+    "https://www.who.int/publications/i/item/9789240108042",
+    "https://www.who.int/publications/i/item/9789240121027",
+    "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/publicacoes/guia-de-vigilancia-em-saude-6o-edicao",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "https://academic.oup.com/cid/article/47/3/303/313455"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Ponto-chave:** a punção pode ser diagnóstica, mas **tratamento é tempo-dependente** e deve iniciar quando a punção atrasará ou for temporariamente contraindicada."
+    },
+    {
+      "text": "**Dexametasona:** NICE NG240 (2024) recomenda considerar/dar dexametasona IV em pessoas acima de 3 meses com forte suspeita ou confirmação de meningite bacteriana, preferencialmente antes/junto ao primeiro antibiótico; em lactentes de 28 dias a 3 meses, buscar orientação especializada. Seguir agente, idade e diretrizes nacionais. Se o antibiótico já é necessário, **não o atrasar pela dexametasona**. Para meningococcemia sem meningite, corticoide de rotina não é a recomendação NICE, salvo outras indicações hemodinâmicas."
+    },
+    {
+      "text": "**Meningite tuberculosa:** tratamento antituberculose por esquema e duração específicos, com corticoide adjuvante quando indicado; exige cuidado com hidrocefalia, infartos e pares cranianos. Não usar esquema de TB pulmonar simples sem conferir recomendações da forma meníngea no PCDT. **Criptococose meníngea:** imunossupressão, pressão de abertura elevada e esquema antifúngico indução/consolidação/manutenção; drenagem de LCR em hipertensão intracraniana é parte crítica em cenários apropriados. **Encefalite autoimune:** diagnóstico diferencial após excluir causas infecciosas, considerando EEG, RM, autoanticorpos e quadro clínico, com neurologia"
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

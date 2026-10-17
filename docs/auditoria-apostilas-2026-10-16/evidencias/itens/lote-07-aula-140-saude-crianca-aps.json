@@ -1,0 +1,664 @@
+{
+  "key": "lote-07-aula-140-saude-crianca-aps",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-140-saude-crianca-aps.md",
+  "title": "LURIA — Lote 7 · Aula 140",
+  "source_sha256": "f9e9dfdacb393d3ba7c6b0afff5862a24340f36d0b71bc4cda527ef3a61198f1",
+  "chars_estimated": 74900,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Lote 7 · Aula 140",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Saúde da criança na Atenção Primária: puericultura, desenvolvimento e cuidado integral",
+      "level": 1
+    },
+    {
+      "line": 7,
+      "title": "0. Etapa zero — acervo LURIA e comparativos do Drive",
+      "level": 2
+    },
+    {
+      "line": 18,
+      "title": "1. Por que a saúde da criança não é só “consultar bebê saudável”?",
+      "level": 2
+    },
+    {
+      "line": 33,
+      "title": "2. Organização das consultas de puericultura no SUS",
+      "level": 2
+    },
+    {
+      "line": 37,
+      "title": "Primeira semana: janela de alto valor",
+      "level": 3
+    },
+    {
+      "line": 42,
+      "title": "Em todas as consultas",
+      "level": 3
+    },
+    {
+      "line": 53,
+      "title": "3. A Caderneta da Criança como prontuário compartilhado",
+      "level": 2
+    },
+    {
+      "line": 61,
+      "title": "4. Crescimento normal: medida, técnica e interpretação",
+      "level": 2
+    },
+    {
+      "line": 63,
+      "title": "4.1. Peso, comprimento e estatura",
+      "level": 3
+    },
+    {
+      "line": 68,
+      "title": "4.2. Curvas OMS e Z-escores",
+      "level": 3
+    },
+    {
+      "line": 73,
+      "title": "4.3. Velocidade de crescimento",
+      "level": 3
+    },
+    {
+      "line": 78,
+      "title": "4.4. Prematuridade",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "5. Vigilância do desenvolvimento: não esperar regressão grave",
+      "level": 2
+    },
+    {
+      "line": 85,
+      "title": "5.1. Perguntas úteis por domínio",
+      "level": 3
+    },
+    {
+      "line": 94,
+      "title": "5.2. Rastreios do neurodesenvolvimento",
+      "level": 3
+    },
+    {
+      "line": 97,
+      "title": "5.3. Visão e audição",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "6. Aleitamento materno: técnica, suporte e comunicação",
+      "level": 2
+    },
+    {
+      "line": 109,
+      "title": "7. Alimentação complementar e deficiências nutricionais",
+      "level": 2
+    },
+    {
+      "line": 116,
+      "title": "8. Sobrepeso/obesidade infantil e linguagem sem estigma",
+      "level": 2
+    },
+    {
+      "line": 121,
+      "title": "9. Sono, telas, saúde mental e ambiente",
+      "level": 2
+    },
+    {
+      "line": 128,
+      "title": "10. Vacinação, prevenção de acidentes e proteção contra violência",
+      "level": 2
+    },
+    {
+      "line": 135,
+      "title": "11. Triagens neonatais e doenças prevalentes",
+      "level": 2
+    },
+    {
+      "line": 145,
+      "title": "12. Deficiência, prematuridade e vulnerabilidade",
+      "level": 2
+    },
+    {
+      "line": 150,
+      "title": "13. Algoritmo de consulta de puericultura",
+      "level": 2
+    },
+    {
+      "line": 163,
+      "title": "Quando acelerar referência?",
+      "level": 3
+    },
+    {
+      "line": 167,
+      "title": "14. Quatro casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 169,
+      "title": "Caso 1 — recém-nascido com mamadas ineficazes",
+      "level": 3
+    },
+    {
+      "line": 172,
+      "title": "Caso 2 — queda da velocidade de crescimento",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "Caso 3 — regressão da linguagem",
+      "level": 3
+    },
+    {
+      "line": 178,
+      "title": "Caso 4 — criança com IMC alto e dificuldades familiares",
+      "level": 3
+    },
+    {
+      "line": 181,
+      "title": "15. Oito questões autorais e comentários",
+      "level": 2
+    },
+    {
+      "line": 183,
+      "title": "Questão 1 — finalidade da Caderneta",
+      "level": 3
+    },
+    {
+      "line": 188,
+      "title": "Questão 2 — velocidade",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "Questão 3 — regressão do desenvolvimento",
+      "level": 3
+    },
+    {
+      "line": 198,
+      "title": "Questão 4 — aleitamento",
+      "level": 3
+    },
+    {
+      "line": 203,
+      "title": "Questão 5 — prematuridade",
+      "level": 3
+    },
+    {
+      "line": 208,
+      "title": "Questão 6 — sono seguro",
+      "level": 3
+    },
+    {
+      "line": 213,
+      "title": "Questão 7 — perda de oportunidade vacinal",
+      "level": 3
+    },
+    {
+      "line": 218,
+      "title": "Questão 8 — integralidade",
+      "level": 3
+    },
+    {
+      "line": 223,
+      "title": "16. Pulo do Gato — memorização aplicada",
+      "level": 2
+    },
+    {
+      "line": 240,
+      "title": "17. Sugestões de imagens didáticas — NENHUMA obtida/licenciada",
+      "level": 2
+    },
+    {
+      "line": 244,
+      "title": "18. Referências brasileiras verificáveis",
+      "level": 2
+    },
+    {
+      "line": 253,
+      "title": "19. Checklist de certificação",
+      "level": 2
+    },
+    {
+      "line": 266,
+      "title": "CAMADA DE APROFUNDAMENTO — SAÚDE DA CRIANÇA NA APS",
+      "level": 1
+    },
+    {
+      "line": 269,
+      "title": "20. Primeira semana de vida — consulta estruturada em problemas",
+      "level": 2
+    },
+    {
+      "line": 271,
+      "title": "20.1. A alta da maternidade não encerra a transição neonatal",
+      "level": 3
+    },
+    {
+      "line": 284,
+      "title": "20.2. Perda de peso: compreender tendência e contexto",
+      "level": 3
+    },
+    {
+      "line": 291,
+      "title": "20.3. Icterícia fisiológica versus doença que não pode esperar",
+      "level": 3
+    },
+    {
+      "line": 298,
+      "title": "20.4. Respiração e coração: quando um teste de triagem não basta",
+      "level": 3
+    },
+    {
+      "line": 303,
+      "title": "21. Crescimento — interpretar curvas sem aplicar atalhos numéricos inadequados",
+      "level": 2
+    },
+    {
+      "line": 305,
+      "title": "21.1. Qual curva para qual idade?",
+      "level": 3
+    },
+    {
+      "line": 319,
+      "title": "21.2. Posição e técnica são tão importantes quanto a fórmula",
+      "level": 3
+    },
+    {
+      "line": 324,
+      "title": "21.3. Genética familiar e puberdade",
+      "level": 3
+    },
+    {
+      "line": 329,
+      "title": "21.4. Investigação de baixa estatura: testes dirigidos a uma hipótese",
+      "level": 3
+    },
+    {
+      "line": 334,
+      "title": "21.5. Perímetro cefálico: o crescimento do cérebro deixa pistas",
+      "level": 3
+    },
+    {
+      "line": 339,
+      "title": "22. Desenvolvimento neuropsicomotor: vigilância por domínios e respostas proporcionais",
+      "level": 2
+    },
+    {
+      "line": 341,
+      "title": "22.1. O que é marco e por que é faixa?",
+      "level": 3
+    },
+    {
+      "line": 354,
+      "title": "22.2. Linguagem: ouvir vem antes de falar",
+      "level": 3
+    },
+    {
+      "line": 359,
+      "title": "22.3. Triagem de TEA e rastreios de desenvolvimento",
+      "level": 3
+    },
+    {
+      "line": 364,
+      "title": "22.4. Transtornos motores e paralisia cerebral",
+      "level": 3
+    },
+    {
+      "line": 369,
+      "title": "22.5. Desenvolvimento e vulnerabilidade social",
+      "level": 3
+    },
+    {
+      "line": 372,
+      "title": "23. Alimentação infantil — mecanismos, dificuldades e prioridades brasileiras",
+      "level": 2
+    },
+    {
+      "line": 374,
+      "title": "23.1. Os doze passos do Guia Alimentar não são apenas proibições",
+      "level": 3
+    },
+    {
+      "line": 379,
+      "title": "23.2. Progressão de textura",
+      "level": 3
+    },
+    {
+      "line": 384,
+      "title": "23.3. A alimentação responsiva protege vínculo e autorregulação",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "23.4. Ferro: da fisiologia à prevenção individualizada",
+      "level": 3
+    },
+    {
+      "line": 396,
+      "title": "23.5. Vitamina D, cálcio e raquitismo",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "23.6. Alergia alimentar versus intolerância e seletividade",
+      "level": 3
+    },
+    {
+      "line": 404,
+      "title": "24. Saúde bucal, olhos e audição são parte da puericultura",
+      "level": 2
+    },
+    {
+      "line": 406,
+      "title": "24.1. Cárie precoce e alimentação",
+      "level": 3
+    },
+    {
+      "line": 411,
+      "title": "24.2. Visão: por que perguntar mesmo depois do teste do olhinho?",
+      "level": 3
+    },
+    {
+      "line": 416,
+      "title": "24.3. Audição: triagem neonatal normal não é garantia vitalícia",
+      "level": 3
+    },
+    {
+      "line": 419,
+      "title": "24.4. Escola como fonte de sinais clínicos",
+      "level": 3
+    },
+    {
+      "line": 422,
+      "title": "25. Sono seguro, acidentes e prevenção de agravos por estágio do desenvolvimento",
+      "level": 2
+    },
+    {
+      "line": 424,
+      "title": "25.1. O ambiente importa mais que o acessório comprado",
+      "level": 3
+    },
+    {
+      "line": 429,
+      "title": "25.2. Engasgo, afogamento e queimaduras",
+      "level": 3
+    },
+    {
+      "line": 434,
+      "title": "25.3. Trânsito e quedas",
+      "level": 3
+    },
+    {
+      "line": 439,
+      "title": "26. Obesidade e pressão arterial: integrar comorbidades sem estigma",
+      "level": 2
+    },
+    {
+      "line": 441,
+      "title": "26.1. Obesidade não é explicação exclusiva para cansaço",
+      "level": 3
+    },
+    {
+      "line": 444,
+      "title": "26.2. Classificação por idade",
+      "level": 3
+    },
+    {
+      "line": 447,
+      "title": "26.3. A velocidade de crescimento é uma pista etiológica",
+      "level": 3
+    },
+    {
+      "line": 450,
+      "title": "26.4. Pressão arterial infantil",
+      "level": 3
+    },
+    {
+      "line": 455,
+      "title": "26.5. Tratamento realista e longitudinal",
+      "level": 3
+    },
+    {
+      "line": 458,
+      "title": "27. Adolescentes, confidencialidade e transição de cuidado",
+      "level": 2
+    },
+    {
+      "line": 460,
+      "title": "27.1. A saúde da criança não desaparece ao completar nove anos",
+      "level": 3
+    },
+    {
+      "line": 463,
+      "title": "27.2. Puberdade e sinais de alerta",
+      "level": 3
+    },
+    {
+      "line": 466,
+      "title": "27.3. Saúde mental e violência",
+      "level": 3
+    },
+    {
+      "line": 469,
+      "title": "28. Casos avançados — cinco decisões longitudinais novas",
+      "level": 2
+    },
+    {
+      "line": 471,
+      "title": "Caso 5 — icterícia com fezes acólicas",
+      "level": 3
+    },
+    {
+      "line": 479,
+      "title": "Caso 6 — baixa velocidade com ganho de peso",
+      "level": 3
+    },
+    {
+      "line": 487,
+      "title": "Caso 7 — alimentação seletiva e anemia",
+      "level": 3
+    },
+    {
+      "line": 495,
+      "title": "Caso 8 — regressão de desenvolvimento com triagem neonatal normal",
+      "level": 3
+    },
+    {
+      "line": 503,
+      "title": "Caso 9 — escola, violência e saúde mental",
+      "level": 3
+    },
+    {
+      "line": 511,
+      "title": "29. Oito questões adicionais de raciocínio clínico e APS",
+      "level": 2
+    },
+    {
+      "line": 513,
+      "title": "Questão 9 — icterícia persistente",
+      "level": 3
+    },
+    {
+      "line": 518,
+      "title": "Questão 10 — crescimento",
+      "level": 3
+    },
+    {
+      "line": 523,
+      "title": "Questão 11 — marcos",
+      "level": 3
+    },
+    {
+      "line": 528,
+      "title": "Questão 12 — alimentação complementar",
+      "level": 3
+    },
+    {
+      "line": 533,
+      "title": "Questão 13 — anemia e ferro",
+      "level": 3
+    },
+    {
+      "line": 538,
+      "title": "Questão 14 — triagem auditiva",
+      "level": 3
+    },
+    {
+      "line": 543,
+      "title": "Questão 15 — sono seguro",
+      "level": 3
+    },
+    {
+      "line": 548,
+      "title": "Questão 16 — APS integral",
+      "level": 3
+    },
+    {
+      "line": 553,
+      "title": "30. Matriz para teste de autossuficiência — aula 140",
+      "level": 2
+    },
+    {
+      "line": 572,
+      "title": "31. Fontes adicionais realmente consultadas em 15/10/2026",
+      "level": 2
+    },
+    {
+      "line": 581,
+      "title": "32. Estado editorial após a ampliação",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Ministério da Saúde. **Política Nacional de Atenção Integral à Saúde da Criança — PNAISC.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/pnaisc",
+    "2. Ministério da Saúde. **Caderneta da Criança.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+    "3. Ministério da Saúde. **Caderneta Digital da Criança / Meu SUS Digital.** https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+    "4. Ministério da Saúde. **Linha de Cuidado da Criança — Puericultura, APS.** https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+    "5. Ministério da Saúde. **Primeira Infância**, esquema de consultas e vigilância. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia",
+    "6. Ministério da Saúde. **Calendário Nacional de Vacinação 2026.** https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "7. Sociedade Brasileira de Pediatria. Documentos Científicos, Pediatria Ambulatorial e Desenvolvimento: acessar a recomendação específica antes de inserir doses. https://www.sbp.com.br/especiais/documentos-cientificos/"
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/pnaisc",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.sbp.com.br/especiais/documentos-cientificos/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/acompanhamento-da-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/alimentacao-saudavel",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno/eaab",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/news-room/questions-and-answers/item/child-growth-standards",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/tools/child-growth-standards/standards/length-height-for-age",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/outubro/quer-acompanhar-a-saude-da-crianca-pelo-celular-saiba-como-acessar-a-caderneta-digital-no-meu-sus-digital",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 2,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "A **PNAISC** brasileira organiza ações desde a gestação até os **9 anos**, com atenção especial à primeira infância e populações vulnerabilizadas. Seus sete eixos devem aparecer na lógica da consulta, e não apenas como mnemônico decorado: 1. atenção humanizada gestação–parto–nascimento–recém-nascido; 2. aleitamento e alimentação complementar; 3. crescimento e desenvolvimento integral; 4. atenção a agravos prevalentes, doenças crônicas; 5. violência, acidentes e cultura de paz; 6. deficiência, situações específicas e vulnerabilidade; 7. vigilância e prevenção de óbitos infantil, fetal e materno.",
+      "pattern": 0
+    },
+    {
+      "text": "A Caderneta da Criança acompanha nascimento a **9 anos** e contém orientações para família, curvas antropométricas, vigilância de marcos, vacinas, saúde bucal, visão, audição, prevenção de acidentes e violência. A versão digital integrada ao **Meu SUS Digital** amplia acesso aos registros; a física continua relevante para compartilhamento com equipes e famílias.",
+      "pattern": 0
+    },
+    {
+      "text": "Para **suplementação**, diferenciar prevenção de tratamento de anemia. A dose de **ferro elementar** e duração dependem de idade gestacional, peso ao nascer, dieta, exames e protocolos PNSF/SBP; nenhuma recomendação segura pode ser reduzida a “dar 1 mL de sulfato ferroso a toda criança” sem concentração. Em anemia importante ou refratária investigar adesão, diagnóstico alternativo, perdas crônicas, doença celíaca, talassemia e condições inflamatórias. Ferritina é reagente de fase aguda e pode estar “normal” apesar de deficiência em inflamação.",
+      "pattern": 0
+    },
+    {
+      "text": "**Drive — materiais efetivamente abertos e lidos:** 1. “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (~8.323 caracteres). Explica fases do crescimento, ganho ponderal, velocidade, perímetro cefálico, estatura-alvo, variantes normais e causas patológicas. Algumas frases absolutas como “a velocidade de crescimento nunca é menor que 5 cm/ano” são simplificações que **não devem ser transcritas como lei universal** — interpretar idade, estágio puberal, contexto e medida seriada. 2. “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (~7.919 caracteres). Discute IMC por idade, variantes de Z-escore conforme faixa, fatores de risco e comorbidades, mas rotinas de rastreio e indicações medicamentosas precisam ser reavaliadas à luz das recomendações atuais. 3. “Imunizações .pdf” (calendário 2020) foi aberto em sublote anterior; é fonte de comparação histórica, **não norma 2026**.",
+      "pattern": 1
+    },
+    {
+      "text": "Profissionais precisam explicar à família o significado dos gráficos, evitando gerar alarme com variação dentro da normalidade. A Caderneta não substitui avaliação clínica e não deve ser abandonada porque a unidade possui prontuário eletrônico próprio.",
+      "pattern": 1
+    },
+    {
+      "text": "**Estatura-alvo familiar aproximada** utiliza estatura dos pais com ajuste para sexo, mas é ferramenta imperfeita e não exclui doença. **Baixa estatura familiar** exige velocidade apropriada e contexto de estatura-alvo; **atraso constitucional do crescimento/puberdade** pode ter idade óssea atrasada e evolução típica; **causas patológicas** frequentemente se associam a queda de velocidade e sinais clínicos, embora haja exceções. Nunca dispensar investigação apenas porque os pais são baixos.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Medicina Preventiva / Pediatria / Estratégia Saúde da Família. **Estado:** rascunho original em revisão, **NÃO PUBLICADO**. **Data:** 14/10/2026. **Norma brasileira:** Ministério da Saúde, Política Nacional de Atenção Integral à Saúde da Criança (PNAISC); *Caderneta da Criança* (física e digital); Linha de Cuidado de Puericultura; Calendário Nacional de Vacinação 2026. O presente capítulo integra cuidado longitudinal e evita duplicar a aula 135 (imunizações), a aula 123 (febre sem sinais localizatórios) e a disciplina pediátrica de emergências.",
+      "pattern": 2
+    },
+    {
+      "text": "**Drive — materiais efetivamente abertos e lidos:** 1. “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (~8.323 caracteres). Explica fases do crescimento, ganho ponderal, velocidade, perímetro cefálico, estatura-alvo, variantes normais e causas patológicas. Algumas frases absolutas como “a velocidade de crescimento nunca é menor que 5 cm/ano” são simplificações que **não devem ser transcritas como lei universal** — interpretar idade, estágio puberal, contexto e medida seriada. 2. “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (~7.919 caracteres). Discute IMC por idade, variantes de Z-escore conforme faixa, fatores de risco e comorbidades, mas rotinas de rastreio e indicações medicamentosas precisam ser reavaliadas à luz das recomendações atuais. 3. “Imunizações .pdf” (calendário 2020) foi aberto em sublote anterior; é fonte de comparação histórica, **não norma 2026**.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Medicina Preventiva / Pediatria / Estratégia Saúde da Família. **Estado:** rascunho original em revisão, **NÃO PUBLICADO**. **Data:** 14/10/2026. **Norma brasileira:** Ministério da Saúde, Política Nacional de Atenção Integral à Saúde da Criança (PNAISC); *Caderneta da Criança* (física e digital); Linha de Cuidado de Puericultura; Calendário Nacional de Vacinação 2026. O presente capítulo integra cuidado longitudinal e evita duplicar a aula 135 (imunizações), a aula 123 (febre sem sinais localizatórios) e a disciplina pediátrica de emergências."
+    },
+    {
+      "text": "**Inventário LURIA:** não foi identificado diretório de “saúde-da-crianca-aps” no índice principal. A LURIA já possui \\`violencia-maus-tratos-criancas-adolescentes\\`, apostilas de infecções na gestação e a aula 135 de imunização, que devem ser preservadas e articuladas. A nova apostila aborda **consulta de puericultura**, crescimento, desenvolvimento, família, aleitamento, alimentação complementar, saúde mental, prevenção de acidentes, sinais de alarme e rede."
+    }
+  ]
+}

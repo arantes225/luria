@@ -1,0 +1,426 @@
+{
+  "sha": "c3192a3aacb71cd0405dfc7e9f2a4587e70a1572",
+  "path": "apostilas/_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md",
+  "branches": [
+    "origin/editorial/lote-06-continuacao-132-137-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--c3192a3aac",
+  "title": "LURIA — Tema 135 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)",
+  "format": ".md",
+  "chars_estimated": 79944,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Tema 135 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)"
+    },
+    {
+      "title": "Imunizações e Programa Nacional de Imunizações (PNI) — Brasil, outubro de 2026"
+    },
+    {
+      "title": "0. Etapa zero — por que os resumos antigos são perigosos"
+    },
+    {
+      "title": "1. Imunidade, antígeno e memória: fisiologia antes da tabela"
+    },
+    {
+      "title": "2. Plataformas vacinais e implicações clínicas"
+    },
+    {
+      "title": "3. Organização do PNI"
+    },
+    {
+      "title": "4. Calendário da criança — leitura orientada da página MS 2026"
+    },
+    {
+      "title": "4.1. A transição da VPC10 para VPC20"
+    },
+    {
+      "title": "4.2. Meningocócica ACWY no segundo ano de vida"
+    },
+    {
+      "title": "4.3. Poliomielite: VIP versus VOP"
+    },
+    {
+      "title": "5. Gestantes: imunidade materna e proteção do lactente"
+    },
+    {
+      "title": "6. Outros ciclos de vida"
+    },
+    {
+      "title": "7. Contraindicação verdadeira versus falsa contraindicação"
+    },
+    {
+      "title": "8. Eventos supostamente atribuíveis à vacinação (ESAVI)"
+    },
+    {
+      "title": "9. Cobertura, equidade e vacinação de bloqueio"
+    },
+    {
+      "title": "10. Fluxo de sala de vacina e UBS"
+    },
+    {
+      "title": "11. Quatro casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — criança em transição pneumocócica"
+    },
+    {
+      "title": "Caso 2 — reforço meningocócico"
+    },
+    {
+      "title": "Caso 3 — gestante e VSR"
+    },
+    {
+      "title": "Caso 4 — falso impedimento e atraso de vacinação"
+    },
+    {
+      "title": "12. Seis questões autorais — comentários completos"
+    },
+    {
+      "title": "Questão 1 — plataforma"
+    },
+    {
+      "title": "Questão 2 — poliomielite"
+    },
+    {
+      "title": "Questão 3 — pneumocócica"
+    },
+    {
+      "title": "Questão 4 — meningocócica"
+    },
+    {
+      "title": "Questão 5 — gestante"
+    },
+    {
+      "title": "Questão 6 — contraindicações"
+    },
+    {
+      "title": "13. Quadro de armadilhas de prova"
+    },
+    {
+      "title": "14. Camada visual planejada, sem arquivos aprovados"
+    },
+    {
+      "title": "15. Fontes oficiais datadas"
+    },
+    {
+      "title": "16. Auditoria editorial pendente"
+    },
+    {
+      "title": "AMPLIAÇÃO CIENTÍFICA E OPERACIONAL — PNI BRASIL 2026"
+    },
+    {
+      "title": "17. Como raciocinar com calendário técnico antes de decorar a tabela"
+    },
+    {
+      "title": "17.1. A decisão vacinal possui seis componentes"
+    },
+    {
+      "title": "17.2. Dose válida versus dose aplicada"
+    },
+    {
+      "title": "17.3. Falta de cartão não significa proibição de vacinar"
+    },
+    {
+      "title": "17.4. Calendário de rotina e situação de surto"
+    },
+    {
+      "title": "17.5. Calendário visual: ler todas as linhas, não só a idade"
+    },
+    {
+      "title": "18. Vacinação do nascimento aos cinco anos: mecanismos e exceções"
+    },
+    {
+      "title": "18.1. Ao nascer: por que hepatite B é urgente"
+    },
+    {
+      "title": "18.2. BCG: finalidade e vias"
+    },
+    {
+      "title": "18.3. Aos dois, quatro e seis meses: por que repetir pentavalente?"
+    },
+    {
+      "title": "18.4. Poliomielite: por que a VOP saiu da rotina?"
+    },
+    {
+      "title": "18.5. Rotavírus: a atualização mais perigosa para quem estuda por resumos antigos"
+    },
+    {
+      "title": "18.6. Influenza: primeira temporada não é igual a temporadas seguintes"
+    },
+    {
+      "title": "18.7. Covid-19 pediátrica: o esquema é dependente de produto"
+    },
+    {
+      "title": "18.8. Febre amarela: rotina e antecipação excepcional"
+    },
+    {
+      "title": "19. Vacinas conjugadas e as mudanças de 2026"
+    },
+    {
+      "title": "19.1. Por que conjugação funciona em lactentes?"
+    },
+    {
+      "title": "19.2. Transição VPC10 para VPC20: a fonte normativa resolve o aparente paradoxo"
+    },
+    {
+      "title": "19.3. Reconstruindo dois casos de transição"
+    },
+    {
+      "title": "19.4. Pneumococo e meningite: por que falha vacinal não significa indicação de antibiótico profilático"
+    },
+    {
+      "title": "19.5. Meningocócica C, MenACWY e por que a diferença não é cosmética"
+    },
+    {
+      "title": "19.6. Sorogrupo versus sorotipo"
+    },
+    {
+      "title": "20. Gestação e VSR: proteção passiva materna versus anticorpo monoclonal no bebê"
+    },
+    {
+      "title": "20.1. Revisar primeiro histórico de hepatite B e dT"
+    },
+    {
+      "title": "20.2. dTpa a partir de 20 semanas e toda gestação"
+    },
+    {
+      "title": "20.3. Vacina materna contra VSR a partir da 28ª semana"
+    },
+    {
+      "title": "20.4. Nirsevimabe não é vacina"
+    },
+    {
+      "title": "20.5. Febre amarela na gestação não é “segura de rotina”"
+    },
+    {
+      "title": "21. HPV e dengue: quando faixa etária muda a resposta"
+    },
+    {
+      "title": "21.1. HPV de rotina e esquemas especiais"
+    },
+    {
+      "title": "21.2. A vacina contra dengue não é um único produto"
+    },
+    {
+      "title": "21.3. Vacina e vigilância de dengue podem interagir"
+    },
+    {
+      "title": "22. Grupos especiais: CRIE/RIE e acesso como parte do tratamento"
+    },
+    {
+      "title": "22.1. Por que comorbidade modifica imunização?"
+    },
+    {
+      "title": "22.2. RIE/CRIE não é senha para nunca vacinar na UBS"
+    },
+    {
+      "title": "22.3. Imunossupressores e janela terapêutica"
+    },
+    {
+      "title": "22.4. HIV: estágio clínico importa"
+    },
+    {
+      "title": "22.5. Gestante com doença crônica ou imunossupressão"
+    },
+    {
+      "title": "23. O que fica explicitamente dependente de norma detalhada"
+    },
+    {
+      "title": "24. Segurança de vacinas é vigilância ativa, não uma lista de medos"
+    },
+    {
+      "title": "24.1. Três perguntas depois de um evento"
+    },
+    {
+      "title": "24.2. Eventos esperados versus sinais inesperados"
+    },
+    {
+      "title": "24.3. Anafilaxia: identificar rapidamente"
+    },
+    {
+      "title": "24.4. Como diferenciar síncope vasovagal de anafilaxia"
+    },
+    {
+      "title": "24.5. Como notificar no Brasil em 2026"
+    },
+    {
+      "title": "24.6. Erro de imunização não é sinônimo de reação adversa"
+    },
+    {
+      "title": "25. Rede de frio, preparação e registro: a eficácia depende da operação"
+    },
+    {
+      "title": "25.1. Por que temperatura importa?"
+    },
+    {
+      "title": "25.2. Procedimento para excursão de temperatura"
+    },
+    {
+      "title": "25.3. Frascos multidose e reconstituição"
+    },
+    {
+      "title": "25.4. Checagem de identidade e registro é etapa clínica"
+    },
+    {
+      "title": "26. Cobertura e microplanejamento: a epidemiologia determina a estratégia"
+    },
+    {
+      "title": "26.1. O denominador é tão importante quanto as doses"
+    },
+    {
+      "title": "26.2. Taxa de abandono do esquema"
+    },
+    {
+      "title": "26.3. Mapear oportunidades perdidas"
+    },
+    {
+      "title": "26.4. Doses registradas e indicadores em transição pneumocócica"
+    },
+    {
+      "title": "26.5. Campanha escolar e vacinação extramuros"
+    },
+    {
+      "title": "27. Comunicação clínica: hesitação não se resolve com sermão"
+    },
+    {
+      "title": "27.1. Perguntar antes de responder"
+    },
+    {
+      "title": "27.2. Comparar o risco certo"
+    },
+    {
+      "title": "27.3. Evitar slogans em perguntas técnicas"
+    },
+    {
+      "title": "28. Quatro novos casos clínicos comentados para treinamento de decisão"
+    },
+    {
+      "title": "Caso 5 — nascimento e prevenção de hepatite B perinatal"
+    },
+    {
+      "title": "Caso 6 — vacina pneumocócica na transição 2026"
+    },
+    {
+      "title": "Caso 7 — gestante e confusão entre vacinação e anticorpo"
+    },
+    {
+      "title": "Caso 8 — ESAVI grave versus síncope"
+    },
+    {
+      "title": "29. Oito questões autorais adicionais — justificativa de todas as alternativas"
+    },
+    {
+      "title": "Questão 7 — valência pneumocócica"
+    },
+    {
+      "title": "Questão 8 — rotavírus"
+    },
+    {
+      "title": "Questão 9 — anti-VSR"
+    },
+    {
+      "title": "Questão 10 — HPV"
+    },
+    {
+      "title": "Questão 11 — dengue"
+    },
+    {
+      "title": "Questão 12 — ESAVI"
+    },
+    {
+      "title": "Questão 13 — quebra de cadeia de frio"
+    },
+    {
+      "title": "Questão 14 — cobertura"
+    },
+    {
+      "title": "30. Matriz de autossuficiência: do capítulo à resposta"
+    },
+    {
+      "title": "31. Fontes da ampliação e hierarquia normativa"
+    },
+    {
+      "title": "32. Auditoria da ampliação (ainda não publicada)"
+    }
+  ],
+  "reference_entries": [
+    "1. Ministério da Saúde. *Calendário Nacional de Vacinação — portal por ciclo de vida*, dados acessados em 14/10/2026. https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "2. Ministério da Saúde. *Instrução Normativa que instrui o Calendário Nacional de Vacinação 2026*, publicação/atualização em julho–agosto de 2026. https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "3. Ministério da Saúde. *Calendário Nacional de Vacinação — Criança*, atualização 29/07/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view",
+    "4. Ministério da Saúde. *Calendário Nacional de Vacinação — Gestante*, atualização 13/10/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante/view",
+    "5. Sociedade Brasileira de Pediatria. *Calendário de Vacinação SBP 2026/2027*, publicado em 28/07/2026, descrevendo VPC20 e esquema de transição no SUS. https://www.sbp.com.br/confira-o-novo-calendario-de-vacinacao-da-sbp-atualizacao-2026-2027/",
+    "6. Ministério da Saúde. *Notas Técnicas — Meningite*, incluindo substituição de reforço MenC por MenACWY em 2025. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "- [x] Benchmark antigo 2020 identificado, aberto e contrastado explicitamente com 2026; autoria não presumida.",
+    "- [x] Fisiologia, plataformas, PNI, calendário da criança/gestante, transição pneumocócica e MenACWY, CRIE, contraindicações, ESAVI, cobertura e equidade.",
+    "- [x] Quatro casos e seis questões comentadas com todas as alternativas.",
+    "- [ ] Completar calendário técnico 2026 para todas as faixas etárias, intervalos mínimos, catch-up e grupos especiais, por produto e via, **diretamente da IN vigente**, após conferência integral.",
+    "- [ ] Verificar detalhes de vacinas sazonais, dengue em situações especiais e uso do monoclonal VSR nas populações elegíveis.",
+    "- [ ] Produzir livro premium ≥60 mil caracteres didáticos úteis, com farmacovigilância, microplanejamento e estratégias de cobertura brasileiras.",
+    "- [ ] Desenvolver figuras originais e validar licenças de uso comercial antes de integrar.",
+    "- [ ] Revisão médica, checagem normativa final em data de publicação, integração e teste PWA.",
+    "**Estado final do documento:** rascunho; não certifica calendário de aplicação e não foi integrado à biblioteca LURIA.",
+    "---",
+    "**Acesso às fontes:** 15/10/2026. **Situação:** texto original para ensino de Medicina, não substitui a Instrução Normativa vigente da unidade nem autoriza aplicação sem conferência de lote, indicação, histórico e bula. Esta ampliação foi produzida a partir da leitura efetiva do resumo “Imunizações.pdf” do Drive, que começa literalmente por “Calendário de vacinação PNI 2020”, e confrontada com a página oficial MS do calendário de 2026, o **Guia Técnico de introdução VPC20 de junho de 2026** (incluindo Quadro 1 conferido visualmente na página 11 do PDF, índice físico 10) e as notas técnicas atu",
+    "**Roteiro de seis perguntas:**",
+    "1. Qual é a data exata de nascimento? A recomendação diz “aos 12 meses” ou “até 11 meses e 29 dias”? O dia pode alterar validade.",
+    "2. Qual produto foi recebido anteriormente? “Pneumocócica” sem valência pode ser insuficiente para uma transição.",
+    "3. Há dose administrada no intervalo mínimo? Doses antecipadas podem não contar, com exceções regulamentadas.",
+    "4. A pessoa tem HIV, imunodeficiência, asplenia, doença renal crônica, transplante, neoplasia, gestação ou outras situações RIE/CRIE?",
+    "5. Qual documento normativo define o caso? A página pública resume rotina, mas a **Instrução Normativa 2026**, o **Guia VPC20** e notas de campanha podem especificar exceções.",
+    "6. Existe contraindicação **real** ou apenas crença de adiamento? Alergia inespecífica, resfriado leve ou antibiótico em uso não exigem perder toda oportunidade.",
+    "**Não confundir “idade de recomendação” e “idade máxima de resgate”.** A vacina pode estar prevista para um mês específico na rotina e ter janela de recuperação diferente. Também não inferir que “dose atrasada obriga reiniciar todo esquema”: a maioria dos esquemas permite completar com intervalos mínimos adequados, porém exceções existem e precisam ser checadas.",
+    "**Exemplo:** criança com três aplicações de um mesmo produto, mas duas administradas com intervalo menor que o mínimo. O simples número três no cartão não comprova série válida. O raciocínio deve recuperar datas, produto e norma antes de gerar indicação de quarta dose.",
+    "**Questão de raciocínio:** RN filho de mãe HBsAg positiva chega ao alojamento. A equipe administra vacina HB e anota “protegido”. O que faltou? Avaliar imunoglobulina específica, histórico materno, documentos de profilaxia e seguimento. A vacina é imunização **ativa**, não fornece neutralização imediata equivalente a imunoglobulina na exposição de alto risco.",
+    "**DTP versus dTpa:** DTP de células inteiras e dTpa acelular de conteúdo antigênico adaptado não são preparações intercambiáveis em qualquer idade. Gestação envolve dTpa para proteger bebê por anticorpos transferidos; isso não é substituto das doses de pentavalente do bebê. Eventos adversos e contraindicações a componente pertussis devem ser analisados por manual, não por rótulo genérico “reação a vacina”.",
+    "**Erro comum de prova:** aluno lembra esquema de “gotinha” e indica VOP no reforço da criança de quinze meses. A solução não é memorizar que “não existe VOP no planeta”; é reconhecer a política brasileira atual, o contexto epidemiológico e que o programa pode mudar conforme erradicação/campanhas.",
+    "**Contraindicação particularmente importante:** história de invaginação intestinal e imunodeficiência combinada grave. Malformações GI com risco ou outras condições têm recomendações conforme produto, e doença aguda importante pode justificar adiamento. Um bebê com resfriado leve sem doença sistêmica importante não deve ter oportunidade perdida por receio genérico. Toda administração é **oral**; via parenteral é erro de imunização."
+  ],
+  "external_urls": [
+    "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view",
+    "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante/view",
+    "https://www.sbp.com.br/confira-o-novo-calendario-de-vacinacao-da-sbp-atualizacao-2026-2027/",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf",
+    "https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-87-2026-svsa-saps-saes-sesai-ms.pdf",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv",
+    "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/julho/jovens-de-15-a-19-anos-podem-se-vacinar-contra-o-hpv-ate-dezembro",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/para-qual-faixa-etaria-esta",
+    "https://www.gov.br/saude/pt-br/vacinacao/esavi",
+    "https://www.gov.br/saude/pt-br/vacinacao/manuais",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-69-2026-cgici-dpni-svsa-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-7-2026-cgarb-dedt-svsa-ms.pdf"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "O Ministério da Saúde disponibilizou calendário da criança atualizado em **29/07/2026**, instrução normativa de 2026 e calendário de gestantes atualizado em **13/10/2026**. A vacina pneumocócica **VPC20** foi incorporada em 2026 com fase de transição de estoques da VPC10: a página oficial pode mostrar VPC20 em algumas idades e VPC10 em dose intermediária enquanto se executa esquema misto. A SBP publicou calendário 2026/2027 em julho/2026 e confirmou a transição; suas recomendações profissionais podem divergir de acesso e intervalos prioritários do SUS. **Não confundir recomendação da SBP com esquema disponibilizado universalmente pelo PNI**."
+    },
+    {
+      "text": "| Tecnologia | Exemplos | Princípio de segurança/indicação | |---|---|---| | Viva atenuada | BCG, tríplice viral, varicela, febre amarela, rotavírus | Replicação limitada; geralmente contraindicada em imunossupressão importante e certas gestações, com exceções específicas por risco/benefício | | Inativada | VIP, hepatite A, influenza inativada | Não replica; pode ser usada em várias populações com imunossupressão, embora resposta possa ser menor | | Subunidade/recombinante | Hepatite B, HPV, componentes de pneumocócica/meningocócica | Antígenos selecionados, frequentemente com adjuvantes | | Conjugada | Hib, pneumocócica conjugada, meningocóc"
+    },
+    {
+      "text": "**Fontes conferidas na página pública do Ministério da Saúde:** - **Ao nascer:** hepatite B e BCG. - **2 meses:** penta (DTP/Hib/HB), VIP, rotavírus e pneumocócica conjugada (VPC20, com transição de VPC10 por estoque). - **3 meses:** meningocócica C. - **4 meses:** segundas doses de penta, VIP, rotavírus e pneumocócica conjugada — o portal atualmente exibe VPC10 na dose de 4 meses em regime de transição. - **5 meses:** segunda meningocócica C. - **6 meses:** terceira penta e VIP, além de outras vacinas sazonais/por indicação segundo calendário vigente (influenza/covid etc.). - **9 meses:** **primeira dose de febre amarela** no calendário de r"
+    },
+    {
+      "text": "**Roteiro de seis perguntas:** 1. Qual é a data exata de nascimento? A recomendação diz “aos 12 meses” ou “até 11 meses e 29 dias”? O dia pode alterar validade. 2. Qual produto foi recebido anteriormente? “Pneumocócica” sem valência pode ser insuficiente para uma transição. 3. Há dose administrada no intervalo mínimo? Doses antecipadas podem não contar, com exceções regulamentadas. 4. A pessoa tem HIV, imunodeficiência, asplenia, doença renal crônica, transplante, neoplasia, gestação ou outras situações RIE/CRIE? 5. Qual documento normativo define o caso? A página pública resume rotina, mas a **Instrução Normativa 2026**, o **Guia VPC20** e n"
+    },
+    {
+      "text": "**Não confundir “idade de recomendação” e “idade máxima de resgate”.** A vacina pode estar prevista para um mês específico na rotina e ter janela de recuperação diferente. Também não inferir que “dose atrasada obriga reiniciar todo esquema”: a maioria dos esquemas permite completar com intervalos mínimos adequados, porém exceções existem e precisam ser checadas."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

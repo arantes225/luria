@@ -1,0 +1,573 @@
+{
+  "key": "lote-07-aula-125-rastreamento-prevencao-quaternaria",
+  "kind": "rascunho-md",
+  "path": "apostilas/_rascunhos/lote-07-aula-125-rastreamento-prevencao-quaternaria.md",
+  "title": "LURIA | Lote 7 — Aula 125",
+  "source_sha256": "3936d88e1962cd767babb10f4d80170c0426e9647965b63cd1cdc648dbfcaaea",
+  "chars_estimated": 62560,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA | Lote 7 — Aula 125",
+      "level": 1
+    },
+    {
+      "line": 2,
+      "title": "Rastreamento, prevenção quaternária e cuidado baseado em valor",
+      "level": 1
+    },
+    {
+      "line": 8,
+      "title": "Etapa zero — benchmark de amplitude e lacunas",
+      "level": 2
+    },
+    {
+      "line": 16,
+      "title": "1. Por que rastrear exige uma justificativa mais forte do que diagnosticar?",
+      "level": 2
+    },
+    {
+      "line": 24,
+      "title": "2. História natural, fase pré-clínica e janela de oportunidade",
+      "level": 2
+    },
+    {
+      "line": 32,
+      "title": "3. Epidemiologia aplicada ao teste: prevalência importa",
+      "level": 2
+    },
+    {
+      "line": 34,
+      "title": "Sensibilidade e especificidade",
+      "level": 3
+    },
+    {
+      "line": 43,
+      "title": "Exemplo didático — população de risco baixo",
+      "level": 3
+    },
+    {
+      "line": 48,
+      "title": "4. Quatro vieses e danos que tornam rastreamento um tema de prova",
+      "level": 2
+    },
+    {
+      "line": 50,
+      "title": "4.1. Viés de antecipação diagnóstica (lead-time)",
+      "level": 3
+    },
+    {
+      "line": 53,
+      "title": "4.2. Viés de duração (length-time)",
+      "level": 3
+    },
+    {
+      "line": 56,
+      "title": "4.3. Sobrediagnóstico",
+      "level": 3
+    },
+    {
+      "line": 59,
+      "title": "4.4. Falso positivo, falso negativo e sobretratamento",
+      "level": 3
+    },
+    {
+      "line": 62,
+      "title": "5. Critérios para recomendar um programa",
+      "level": 2
+    },
+    {
+      "line": 76,
+      "title": "6. Rastreio organizado, oportunístico e abordagem diagnóstica",
+      "level": 2
+    },
+    {
+      "line": 87,
+      "title": "7. Aplicação brasileira atual — exemplos de alto rendimento",
+      "level": 2
+    },
+    {
+      "line": 89,
+      "title": "7.1. Câncer do colo do útero",
+      "level": 3
+    },
+    {
+      "line": 100,
+      "title": "7.2. Câncer de mama",
+      "level": 3
+    },
+    {
+      "line": 105,
+      "title": "7.3. Câncer colorretal",
+      "level": 3
+    },
+    {
+      "line": 110,
+      "title": "7.4. Câncer de próstata",
+      "level": 3
+    },
+    {
+      "line": 113,
+      "title": "7.5. Exame anual “de tudo”",
+      "level": 3
+    },
+    {
+      "line": 116,
+      "title": "8. Prevenção quaternária: a quarta obrigação clínica",
+      "level": 2
+    },
+    {
+      "line": 131,
+      "title": "9. Decisão compartilhada e comunicação do risco",
+      "level": 2
+    },
+    {
+      "line": 146,
+      "title": "10. Quando interromper rastreamento",
+      "level": 2
+    },
+    {
+      "line": 152,
+      "title": "11. Casos clínicos comentados",
+      "level": 2
+    },
+    {
+      "line": 154,
+      "title": "Caso 1 — rastreamento mamário versus diagnóstico",
+      "level": 3
+    },
+    {
+      "line": 161,
+      "title": "Caso 2 — PSA em pessoa assintomática",
+      "level": 3
+    },
+    {
+      "line": 168,
+      "title": "Caso 3 — teste DNA-HPV em programa organizado",
+      "level": 3
+    },
+    {
+      "line": 175,
+      "title": "Caso 4 — FIT positivo e cuidado em rede",
+      "level": 3
+    },
+    {
+      "line": 182,
+      "title": "12. Seis questões de residência comentadas",
+      "level": 2
+    },
+    {
+      "line": 184,
+      "title": "Questão 1 — interpretação de teste e prevalência",
+      "level": 3
+    },
+    {
+      "line": 193,
+      "title": "Questão 2 — viés de antecipação",
+      "level": 3
+    },
+    {
+      "line": 202,
+      "title": "Questão 3 — prevenção quaternária",
+      "level": 3
+    },
+    {
+      "line": 211,
+      "title": "Questão 4 — colo do útero no SUS",
+      "level": 3
+    },
+    {
+      "line": 220,
+      "title": "Questão 5 — mamografia",
+      "level": 3
+    },
+    {
+      "line": 229,
+      "title": "Questão 6 — teste fecal",
+      "level": 3
+    },
+    {
+      "line": 238,
+      "title": "13. Resumo estruturado",
+      "level": 2
+    },
+    {
+      "line": 250,
+      "title": "14. Camada visual proposta — nenhuma imagem aprovada",
+      "level": 2
+    },
+    {
+      "line": 264,
+      "title": "15. Referências verificadas",
+      "level": 2
+    },
+    {
+      "line": 274,
+      "title": "16. Pendências e critérios de aprovação",
+      "level": 2
+    },
+    {
+      "line": 293,
+      "title": "NÚCLEO AVANÇADO — INTERPRETAR E OPERACIONALIZAR O RASTREAMENTO",
+      "level": 1
+    },
+    {
+      "line": 296,
+      "title": "17. Rastreamento como intervenção longitudinal, não como pedido de exame",
+      "level": 2
+    },
+    {
+      "line": 298,
+      "title": "17.1. A tríade população–teste–rede",
+      "level": 3
+    },
+    {
+      "line": 307,
+      "title": "17.2. O que diferencia rastreamento de busca ativa de casos?",
+      "level": 3
+    },
+    {
+      "line": 312,
+      "title": "17.3. O paradoxo do resultado positivo",
+      "level": 3
+    },
+    {
+      "line": 317,
+      "title": "18. Matemática clínica do rastreamento: dos indicadores ao paciente",
+      "level": 2
+    },
+    {
+      "line": 319,
+      "title": "18.1. Sensibilidade e especificidade não bastam",
+      "level": 3
+    },
+    {
+      "line": 327,
+      "title": "18.2. Tabela 2 × 2 inteiramente resolvida — hipótese didática",
+      "level": 3
+    },
+    {
+      "line": 340,
+      "title": "18.3. Como um exame normal pode não encerrar investigação?",
+      "level": 3
+    },
+    {
+      "line": 343,
+      "title": "18.4. Razões de verossimilhança (likelihood ratios)",
+      "level": 3
+    },
+    {
+      "line": 346,
+      "title": "18.5. Risco absoluto, risco relativo, NNT e dano",
+      "level": 3
+    },
+    {
+      "line": 351,
+      "title": "18.6. Por que não usar sobrevida em cinco anos como principal prova?",
+      "level": 3
+    },
+    {
+      "line": 360,
+      "title": "19. Recomendações brasileiras atualizadas: usar o ano correto",
+      "level": 2
+    },
+    {
+      "line": 362,
+      "title": "19.1. Quadro rápido com data e natureza da regra",
+      "level": 3
+    },
+    {
+      "line": 373,
+      "title": "19.2. Rastreio de colo: o que significa teste DNA-HPV primário?",
+      "level": 3
+    },
+    {
+      "line": 380,
+      "title": "19.3. Rastreio mamário: heterogeneidade biológica e risco",
+      "level": 3
+    },
+    {
+      "line": 392,
+      "title": "19.4. Câncer colorretal: não repetir FIT positivo como “desempate”",
+      "level": 3
+    },
+    {
+      "line": 399,
+      "title": "19.5. PSA: por que a discussão não termina em \"sim\" ou \"não\"?",
+      "level": 3
+    },
+    {
+      "line": 404,
+      "title": "20. Prevenção quaternária concretizada em consulta, internação e programa",
+      "level": 2
+    },
+    {
+      "line": 406,
+      "title": "20.1. Um algoritmo de cinco perguntas antes de pedir exame",
+      "level": 3
+    },
+    {
+      "line": 415,
+      "title": "20.2. Cascata de incidentaloma",
+      "level": 3
+    },
+    {
+      "line": 418,
+      "title": "20.3. Desprescrição: o rastreamento de dano também é prevenção",
+      "level": 3
+    },
+    {
+      "line": 421,
+      "title": "20.4. Comunicação de incerteza em número absoluto",
+      "level": 3
+    },
+    {
+      "line": 428,
+      "title": "20.5. Quando parar?",
+      "level": 3
+    },
+    {
+      "line": 433,
+      "title": "20.6. Rastreamento desorganizado pode aumentar desigualdade",
+      "level": 3
+    },
+    {
+      "line": 436,
+      "title": "21. Matrizes de revisão úteis para prova e para gestão da APS",
+      "level": 2
+    },
+    {
+      "line": 438,
+      "title": "21.1. O que o achado significa e qual a próxima etapa?",
+      "level": 3
+    },
+    {
+      "line": 451,
+      "title": "21.2. O que medir na unidade além da cobertura?",
+      "level": 3
+    },
+    {
+      "line": 464,
+      "title": "22. Casos clínicos avançados — aplicar a epidemiologia à pessoa",
+      "level": 2
+    },
+    {
+      "line": 466,
+      "title": "Caso 5 — teste excelente em população de baixíssimo risco",
+      "level": 3
+    },
+    {
+      "line": 473,
+      "title": "Caso 6 — rastreamento mamário em duas pessoas de 46 anos",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "Caso 7 — HPV positivo sem diagnóstico de câncer",
+      "level": 3
+    },
+    {
+      "line": 487,
+      "title": "Caso 8 — FIT positivo e falso alívio por repetição negativa",
+      "level": 3
+    },
+    {
+      "line": 494,
+      "title": "Caso 9 — PSA e decisão compartilhada numérica",
+      "level": 3
+    },
+    {
+      "line": 501,
+      "title": "Caso 10 — interromper rastreio não é abandonar pessoa",
+      "level": 3
+    },
+    {
+      "line": 508,
+      "title": "23. Oito questões comentadas: raciocínio estatístico, diretriz e continuidade",
+      "level": 2
+    },
+    {
+      "line": 510,
+      "title": "Questão 7 — valor preditivo e prevalência",
+      "level": 3
+    },
+    {
+      "line": 515,
+      "title": "Questão 8 — viés de antecipação diagnóstica",
+      "level": 3
+    },
+    {
+      "line": 520,
+      "title": "Questão 9 — política mamográfica nacional",
+      "level": 3
+    },
+    {
+      "line": 525,
+      "title": "Questão 10 — resultado cervical",
+      "level": 3
+    },
+    {
+      "line": 530,
+      "title": "Questão 11 — FIT positivo",
+      "level": 3
+    },
+    {
+      "line": 535,
+      "title": "Questão 12 — overdiagnosis",
+      "level": 3
+    },
+    {
+      "line": 540,
+      "title": "Questão 13 — rastrear x diagnosticar",
+      "level": 3
+    },
+    {
+      "line": 545,
+      "title": "Questão 14 — intervenção de alto valor",
+      "level": 3
+    },
+    {
+      "line": 550,
+      "title": "24. Matriz de autossuficiência (competência → texto → demonstração)",
+      "level": 2
+    },
+    {
+      "line": 567,
+      "title": "25. Fontes primárias desta etapa e limites da revisão",
+      "level": 2
+    }
+  ],
+  "references": [
+    "1. Ministério da Saúde. **Como funciona o rastreamento do câncer no SUS?** 28/04/2026. https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+    "2. Ministério da Saúde. **Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero**, Parte I: teste DNA-HPV oncogênico. Portaria Conjunta SAES/SECTICS nº 13/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "3. INCA. **Detecção precoce do câncer do colo do útero**; atualização sobre método molecular e população-alvo. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+    "4. INCA. **Ministério da Saúde padroniza informações para acesso à mamografia no SUS**. 29/09/2025. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "5. INCA. **SUS inclui teste de alta tecnologia para rastreamento de câncer colorretal**. 10/08/2026. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "6. Ministério da Saúde. **Câncer de próstata**, seção sobre riscos do rastreamento em assintomáticos. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata/cancer-de-prostata",
+    "7. Jamoulle M. **Prevenção quaternária: primeiro não causar dano.** Revista Brasileira de Medicina de Família e Comunidade. DOI: 10.5712/rbmfc10(35)1064. https://rbmfc.org.br/rbmfc/article/view/1064",
+    "8. Martins C, Godycki-Cwirko M, Heleno B, Brodersen J. **Quaternary prevention: reviewing the concept.** Eur J Gen Pract. 2018. https://pubmed.ncbi.nlm.nih.gov/29384397/",
+    "7. INCA/MS. **Ministério da Saúde padroniza informações para acesso ao exame de mamografia no SUS**, 29/09/2025. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+    "8. INCA. **Versão para profissionais — câncer de mama**, com nota de atualização 2025. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+    "9. INCA/MS. **Detecção precoce do câncer do colo do útero**, Portaria Conjunta SAES/SECTICS nº13/2025. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+    "10. Ministério da Saúde. **Diretriz Brasileira DNA-HPV — rastreamento organizado**, 18/08/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+    "11. INCA. **SUS inclui teste de alta tecnologia para rastreamento colorretal**, 10/08/2026. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+    "12. Ministério da Saúde. **Câncer de próstata — homens sem sinais ou sintomas**, portal. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata",
+    "13. USPSTF. **Recommendation: Breast Cancer Screening**, 30/04/2024. https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+    "14. OMS Europa. **Screening programmes: a short guide** (fundamentos de benefício/risco, métricas e vieses). https://iris.who.int/bitstream/handle/10665/330829/9789289054782-eng.pdf",
+    "**Pendências reais antes de aprovação:** revisão clínica/epidemiológica independente; conferência integral do fluxo DNA-HPV por genotipagem e dos fluxos especiais de colo/mama/colorretal; manuais operacionais FIT no SUS e tempos/garantia de colonoscopia; análise de evidência formal sobre tamanho de benefício e danos; comparação com apostila de epidemiologia clínica equivalente no Drive (não localizada); figuras autorais e mídia com direitos adequados; auditoria de redundância e legibilidade e testes HTML/PWA. **Os exemplos numéricos hipotéticos não foram apresentados como taxas reais dos exames. Não publicar automaticamente por contagem de caracteres.**"
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata/cancer-de-prostata",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://rbmfc.org.br/rbmfc/article/view/1064",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29384397/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://iris.who.int/bitstream/handle/10665/330829/9789289054782-eng.pdf",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 5,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos.",
+      "pattern": 0
+    },
+    {
+      "text": "- Rastrear = testar assintomáticos elegíveis; investigar = avaliar sinal/sintoma. - Ações preventivas exigem benefício líquido, não apenas diagnóstico mais cedo. - VPP depende de prevalência e, portanto, critérios de seleção importam. - Lead-time, length-time, falso positivo e sobrediagnóstico são fenômenos diferentes. - Prevenção quaternária atua em todas as fases para evitar dano desnecessário. - O SUS atualizou rastreamento do colo por DNA-HPV em 2025 e mamografia 50–74 bienal em 2025. - Em agosto de 2026 houve incorporação anunciada do FIT para 50–75 anos a cada 2 anos, com implementação dependente da rede. - MS/INCA não recomenda programa indiscriminado de PSA em assintomáticos; discutir riscos e benefícios individualmente. - Qualquer sintoma suspeito deve ser investigado independentemente da idade habitual de rastreamento.",
+      "pattern": 0
+    },
+    {
+      "text": "**Exercício contrastivo:** mulher de 46 anos, sem queixa, pergunta sobre mamografia. Trata-se de decisão individual de rastreamento e discussão de risco-benefício. Outra mulher de 46 anos com descarga papilar sanguinolenta espontânea unilateral exige investigação diagnóstica dirigida, independentemente de recomendação populacional.",
+      "pattern": 0
+    },
+    {
+      "text": "**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos.",
+      "pattern": 1
+    },
+    {
+      "text": "**Investigar não é rastrear.** Mulher com nódulo mamário palpável, sangramento pós-menopausa ou paciente com hematoquezia necessita avaliação **diagnóstica** apropriada, mesmo que esteja fora da faixa etária do programa de rastreamento. A idade recomendada para exame periódico em pessoas assintomáticas não serve como “proibição” de investigar sintomas.",
+      "pattern": 1
+    },
+    {
+      "text": "Um teste de rastreamento faz sentido quando existe uma fase detectável antes do aparecimento clínico e quando o tratamento nesse estágio melhora um desfecho importante, idealmente mortalidade específica ou total, morbidade ou qualidade de vida. **Descobrir antes não prova que a pessoa viverá mais**; às vezes só aumenta o tempo durante o qual ela conhece o diagnóstico.",
+      "pattern": 1
+    },
+    {
+      "text": "**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos.",
+      "pattern": 2
+    },
+    {
+      "text": "**Gabarito C.** Reflete adoção do teste molecular em 2025 e intervalo de referência. **A** configura excesso de teste. **B** ignora transição e disponibilidade. **D** confunde diagnóstico com rastreamento. **Minirrevisão:** diretrizes organizadas não bloqueiam investigação de sintomas.",
+      "pattern": 2
+    },
+    {
+      "text": "- Rastrear = testar assintomáticos elegíveis; investigar = avaliar sinal/sintoma. - Ações preventivas exigem benefício líquido, não apenas diagnóstico mais cedo. - VPP depende de prevalência e, portanto, critérios de seleção importam. - Lead-time, length-time, falso positivo e sobrediagnóstico são fenômenos diferentes. - Prevenção quaternária atua em todas as fases para evitar dano desnecessário. - O SUS atualizou rastreamento do colo por DNA-HPV em 2025 e mamografia 50–74 bienal em 2025. - Em agosto de 2026 houve incorporação anunciada do FIT para 50–75 anos a cada 2 anos, com implementação dependente da rede. - MS/INCA não recomenda programa indiscriminado de PSA em assintomáticos; discutir riscos e benefícios individualmente. - Qualquer sintoma suspeito deve ser investigado independentemente da idade habitual de rastreamento.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "Pesquisados no Drive materiais de “rastreamento”, “screening”, “prevenção quaternária” e “medicina preventiva”; não foi identificado caderno específico cobrindo a teoria global do rastreamento. Foram **abertos e lidos** dois resumos correlatos, “03 - COLO DE UTERO .pdf” (aprox. 9,5 mil caracteres) e “MASTOLOGIA.pdf” (aprox. 2,7 mil caracteres). São comparativos **parciais**, com foco clínico em câncer; não substituem apostila transversal de prevenção ou epidemiologia. Autoria institucional Estratégia MED não comprovada. Não copiar texto, quadros ou figuras."
+    },
+    {
+      "text": "**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos."
+    }
+  ]
+}

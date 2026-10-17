@@ -1,0 +1,318 @@
+{
+  "sha": "98e1740353f4b09230a5daf4fa00b02f83b0de80",
+  "path": "apostilas/_rascunhos/lote-13-250-transtornos-alimentares.md",
+  "branches": [
+    "origin/editorial/lote-13-preenchimento-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--98e1740353",
+  "title": "LURIA — Lote 13 · Apostila 250",
+  "format": ".md",
+  "chars_estimated": 61866,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Lote 13 · Apostila 250"
+    },
+    {
+      "title": "Transtornos alimentares: anorexia, bulimia, compulsão alimentar e diagnóstico diferencial"
+    },
+    {
+      "title": "Benchmark e critérios editoriais"
+    },
+    {
+      "title": "1. Por que o tema importa em diferentes serviços"
+    },
+    {
+      "title": "2. Termos indispensáveis"
+    },
+    {
+      "title": "3. Como formular uma hipótese com segurança"
+    },
+    {
+      "title": "Sinais que mudam a urgência"
+    },
+    {
+      "title": "4. Anorexia nervosa"
+    },
+    {
+      "title": "Apresentação"
+    },
+    {
+      "title": "Fisiopatologia das complicações"
+    },
+    {
+      "title": "5. Bulimia nervosa"
+    },
+    {
+      "title": "Principais complicações"
+    },
+    {
+      "title": "Tratamento e evidência"
+    },
+    {
+      "title": "6. Transtorno de compulsão alimentar (TCA/BED)"
+    },
+    {
+      "title": "7. ARFID e outros diagnósticos alimentares"
+    },
+    {
+      "title": "8. Diagnóstico diferencial: não atribuir toda perda de peso à psiquiatria"
+    },
+    {
+      "title": "9. Exames e estratificação médica"
+    },
+    {
+      "title": "10. Hospitalização e risco imediato"
+    },
+    {
+      "title": "Síndrome de realimentação"
+    },
+    {
+      "title": "11. Tratamento longitudinal e equipe"
+    },
+    {
+      "title": "Anorexia"
+    },
+    {
+      "title": "Bulimia"
+    },
+    {
+      "title": "Compulsão alimentar"
+    },
+    {
+      "title": "Prevenção de recaídas"
+    },
+    {
+      "title": "12. Situações especiais"
+    },
+    {
+      "title": "13. Fluxogramas textuais"
+    },
+    {
+      "title": "A. Suspeita inicial na APS"
+    },
+    {
+      "title": "B. Compulsão + purgação"
+    },
+    {
+      "title": "C. Restrição alimentar no adolescente"
+    },
+    {
+      "title": "13A. Diagnóstico diferencial avançado: entender o mecanismo por trás de uma mesma aparência"
+    },
+    {
+      "title": "A palavra “restrição” não define a doença"
+    },
+    {
+      "title": "Matriz sindrômica para prova e consulta"
+    },
+    {
+      "title": "Vômito autoinfligido e hipóteses orgânicas"
+    },
+    {
+      "title": "13B. O corpo sob déficit energético: da adaptação fisiológica à descompensação"
+    },
+    {
+      "title": "Como a restrição energética altera metabolismo e circulação"
+    },
+    {
+      "title": "Eixo gonadal, crescimento e osso"
+    },
+    {
+      "title": "Sistema hematológico, hepático e renal"
+    },
+    {
+      "title": "Exames iniciais interpretados por pergunta clínica"
+    },
+    {
+      "title": "13C. A admissão médica não é um diagnóstico psiquiátrico: estabilização e referência"
+    },
+    {
+      "title": "Separar risco orgânico agudo de sofrimento psicológico"
+    },
+    {
+      "title": "Abordagem da pessoa instável"
+    },
+    {
+      "title": "Sistema cardiovascular e purgação: quando investigar imediatamente"
+    },
+    {
+      "title": "13D. Realimentação: oferecer nutrição com monitorização adequada, não perpetuar restrição"
+    },
+    {
+      "title": "Mecanismo e período crítico"
+    },
+    {
+      "title": "Estratificar antes e seguir depois"
+    },
+    {
+      "title": "Relação entre equipe e paciente durante refeições"
+    },
+    {
+      "title": "13E. Psicoterapias e farmacologia: escolher por transtorno e ciclo de vida"
+    },
+    {
+      "title": "Anorexia nervosa: nutrição e psicoterapia andam juntas"
+    },
+    {
+      "title": "Bulimia nervosa: romper o ciclo de perda de controle e compensação"
+    },
+    {
+      "title": "Transtorno de compulsão alimentar: psicopatologia não é sinônimo de IMC alto"
+    },
+    {
+      "title": "ARFID: trabalhar a função da evitação e recuperar variedade"
+    },
+    {
+      "title": "Equipe brasileira: conectar especialidades e territórios"
+    },
+    {
+      "title": "13F. Populações esquecidas e vieses diagnósticos"
+    },
+    {
+      "title": "Adolescente cujo peso estacionou, mas o crescimento deveria continuar"
+    },
+    {
+      "title": "Homens, população LGBTQIA+ e diversidade cultural"
+    },
+    {
+      "title": "Diabetes mellitus e manipulação de tratamento"
+    },
+    {
+      "title": "Gestação e puerpério"
+    },
+    {
+      "title": "13G. Casos clínicos integrados e decisões de nível de cuidado"
+    },
+    {
+      "title": "Caso A — “IMC normal” e risco real"
+    },
+    {
+      "title": "Caso B — atleta com fratura por estresse"
+    },
+    {
+      "title": "Caso C — restrição por medo de engasgo"
+    },
+    {
+      "title": "Caso D — bulimia com síncope"
+    },
+    {
+      "title": "Caso E — diarreia e perda de peso por doença inflamatória"
+    },
+    {
+      "title": "Caso F — alta após atingir peso, porém sem seguimento"
+    },
+    {
+      "title": "Questões originais adicionais para consolidação"
+    },
+    {
+      "title": "Micro-resumo de 30 segundos"
+    },
+    {
+      "title": "Fontes específicas conferidas para esta ampliação"
+    },
+    {
+      "title": "14. Casos clínicos comentados"
+    },
+    {
+      "title": "Caso 1 — Adolescente com perda rápida e IMC ainda usual"
+    },
+    {
+      "title": "Caso 2 — Jovem com vômitos recorrentes após compulsão"
+    },
+    {
+      "title": "Caso 3 — Criança com medo de engasgar"
+    },
+    {
+      "title": "Caso 4 — Compulsão sem compensação"
+    },
+    {
+      "title": "Caso 5 — Desnutrição e realimentação"
+    },
+    {
+      "title": "15. Questões autorais comentadas"
+    },
+    {
+      "title": "16. Dez imagens didáticas candidatas ao Admin (não publicadas)"
+    },
+    {
+      "title": "17. Referências verificáveis"
+    },
+    {
+      "title": "18. Auditoria preliminar"
+    }
+  ],
+  "reference_entries": [
+    "1. **NICE NG69.** *Eating disorders: recognition and treatment*. Recomendações de diagnóstico, psicoterapia, avaliação clínica, internação sem limiar absoluto de IMC, realimentação e seguimento. https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+    "2. **American Psychiatric Association.** *Practice Guideline for the Treatment of Patients With Eating Disorders*, terceira edição, 2023. https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890424865",
+    "3. **Society for Adolescent Health and Medicine.** *Medical Management of Restrictive Eating Disorders in Adolescents and Young Adults*, posição 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC10864000/",
+    "4. **NICE NG69 — surveillance decision, maio/2024.** Evidências de psicoterapia para doença prolongada avaliadas, sem atualização integral da diretriz. https://www.nice.org.uk/guidance/ng69/evidence/2024-exceptional-surveillance-of-eating-disorders-recognition-and-treatment-nice-guideline-ng69-13427183341",
+    "5. **Ministério da Saúde.** Rede de Atenção Psicossocial — estrutura assistencial (adaptar à rede local). https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "**Limites editoriais:** os PDFs do Drive *Obesidade — Conceitos Gerais e Tratamento Não Farmacológico* e *Síndromes Cognitivas* foram relidos. O primeiro aborda tratamento metabólico do peso e não é guia de transtornos alimentares; o segundo menciona desnutrição/Wernicke, sem protocolo de realimentação. São comparadores **parciais**; conteúdo deles não foi reproduzido nem tomado como orientação para tratamento psiquiátrico. A faixa de referências internacionais foi distinguida do acesso/regulação brasileiros. Ainda faltam revisão por psiquiatra e nutricionista, verificação completa de farmacot",
+    "**Q1.** Adolescente com perda de peso rápida, bradicardia e IMC ainda na faixa considerada normal. Qual afirmação é correta?",
+    "**Gabarito C.** A/B ignoram deterioração rápida, D omite sofrimento e risco, E generaliza; C usa avaliação integrada. **Mini-revisão:** IMC não deve ser critério único de admissão.",
+    "**Q2.** Episódios de compulsão seguidos de purgação recorrente e preocupação exagerada com peso, mesmo em peso normal, sugerem:",
+    "**Gabarito A.** B usa peso indevidamente; C não tem medo central de ganho; D não explica psicopatologia; E exige ausência de compensação recorrente. **Mini-revisão:** bulimia não depende de baixo peso.",
+    "**Q3.** Em criança com restrição por aversão sensorial e medo de engasgar, sem foco em forma corporal, considerar:",
+    "**Gabarito A.** B/C/D não correspondem à motivação; E ignora ingestão efetiva; A orienta diferencial. **Mini-revisão:** avaliar transtorno e causas físicas.",
+    "**Q4.** A síndrome de realimentação associa-se principalmente a:",
+    "**Gabarito A.** B/C/E erram mecanismo, D agrava doença; A integra insulina, fósforo e risco sistêmico. **Mini-revisão:** monitorizar P/Mg/K, risco e alimentação com protocolo seguro.",
+    "**Q5.** Tratamento de primeira linha para adolescentes com anorexia e cuidadores disponíveis inclui:",
+    "**Gabarito B.** A não trata núcleo, C não considera gravidade, D é lesivo, E ignora suporte seguro; B é recomendado por APA. **Mini-revisão:** equipe multidisciplinar e metas de saúde.",
+    "**Q6.** Qual exame é especialmente recomendado em apresentação restritiva grave ou purgação significativa?",
+    "**Gabarito A.** B/C/D são exames sem indicação geral, E ignora arritmia; A segue APA. **Mini-revisão:** hipocalemia e QT prolongado são perigosos.",
+    "**Q7.** Pessoa tem compulsão alimentar recorrente sem comportamentos compensatórios recorrentes. Melhor hipótese diagnóstica, após confirmar critérios e excluir diferenciais?",
+    "**Gabarito A.** B requer compensação, C/D/E não correspondem ao quadro descrito; A é plausível. **Mini-revisão:** perda de controle + sofrimento + ausência de compensação regular.",
+    "1. Curva de crescimento fictícia com perda de percentis em adolescente.",
+    "2. Fluxograma autoral restrição: medo de engordar vs ARFID vs causa orgânica.",
+    "3. Diagrama fisiopatológico da síndrome de realimentação.",
+    "4. ECG didático licenciado de QT prolongado e hipocalemia (só se origem validada).",
+    "5. Comparativo clínico anorexia / bulimia / compulsão, em quadro original.",
+    "6. Quadro original de risco de internação: clínica, sinais, exames, psiquiatria e suporte.",
+    "7. Ilustração autoral de efeitos metabólicos da desnutrição e repercussões ósseas.",
+    "8. Fluxo familiar/equipe da reabilitação nutricional em adolescentes.",
+    "9. Imagem odontológica licenciada de erosões associadas a vômitos, se útil, contextualizada.",
+    "10. Quadro de monitorização multidisciplinar e prevenção de recaída."
+  ],
+  "external_urls": [
+    "https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+    "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890424865",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10864000/",
+    "https://www.nice.org.uk/guidance/ng69/evidence/2024-exceptional-surveillance-of-eating-disorders-recognition-and-treatment-nice-guideline-ng69-13427183341",
+    "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps",
+    "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines/eating-disorders",
+    "https://psychiatryonline.org/doi/full/10.1176/appi.ajp.23180001",
+    "https://www.nice.org.uk/guidance/ng69/chapter/recommendations",
+    "https://www.nice.org.uk/guidance/ng69/resources/2024-exceptional-surveillance-of-eating-disorders-recognition-and-treatment-nice-guideline-ng69-13427183341/chapter/Surveillance-decision",
+    "https://www.psychiatry.org/News-room/News-Releases/APA-Updated-guideline-on-eating-disorders"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Não usar IMC isolado como autorização de alta ou internação.** NICE NG69 recomenda considerar trajetória, observações, exames, suporte familiar, risco mental e capacidade do serviço, sem limiar absoluto único para admissão."
+    },
+    {
+      "text": "O exame físico procura sarcopenia, extremidades frias, lanugo, alterações de pele, hipotensão postural, bradicardia, desidratação e lesões relacionadas a vômitos. Contudo sinais tradicionais podem faltar, sobretudo na **anorexia atípica** — síndrome com características psicopatológicas típicas e perda ponderal importante sem peso abaixo da faixa usual. Essa apresentação pode cursar com instabilidade médica comparável em alguns casos; estigma de peso é fator de subdiagnóstico."
+    },
+    {
+      "text": "Outras apresentações incluem pica (ingestão persistente de substâncias não alimentares em contexto inapropriado à idade/cultura), transtorno de ruminação (regurgitação repetida não explicada por doença GI) e síndromes alimentares não especificadas. Diferenciar de seletividade alimentar transitória infantil: prejuízo nutricional/funcional, persistência, gravidade e sofrimento orientam diagnóstico."
+    },
+    {
+      "text": "**Testes de triagem** como SCOFF podem sinalizar avaliação adicional, mas **não confirmam nem excluem** o diagnóstico isoladamente; a NICE orienta não depender deles como único recurso."
+    },
+    {
+      "text": "Duas pessoas podem comer pouco por mecanismos radicalmente diferentes. A primeira reduz ingestão porque teme ganhar peso e interpreta qualquer variação corporal como fracasso; a segunda interrompe refeições depois de um episódio de engasgo, por medo de asfixia, sem desejar emagrecer; a terceira perdeu fome durante doença sistêmica inflamatória; a quarta usa dieta altamente seletiva por hipersensibilidade sensorial e tem prejuízo funcional desde a infância. A forma exterior — prato quase intocado — não autoriza o mesmo diagnóstico."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão"
+}

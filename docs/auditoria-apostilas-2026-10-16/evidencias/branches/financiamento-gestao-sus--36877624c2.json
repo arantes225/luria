@@ -1,0 +1,335 @@
+{
+  "sha": "36877624c2c2912fd65ce9ed46ed614d10f357c3",
+  "path": "apostilas/financiamento-gestao-sus/index.html",
+  "branches": [
+    "origin/editorial/lote-03-auditoria-20261014"
+  ],
+  "in_main": false,
+  "key": "financiamento-gestao-sus--36877624c2",
+  "title": "Imunizações na Infância",
+  "format": ".html",
+  "chars_estimated": 86182,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "Visão rápida — financiamento tripartite"
+    },
+    {
+      "title": "Apresentação editorial"
+    },
+    {
+      "title": "Comparação preliminar — fontes realmente lidas"
+    },
+    {
+      "title": "1. Financiamento não é apenas dinheiro transferido"
+    },
+    {
+      "title": "2. Fundos e transferências"
+    },
+    {
+      "title": "3. O cofinanciamento federal da APS precisa ser datado"
+    },
+    {
+      "title": "4. O planejamento deve acompanhar o território"
+    },
+    {
+      "title": "5. Oito casos de decisão gerencial com raciocínio completo"
+    },
+    {
+      "title": "Caso 1 — Município abaixo do piso, apesar de receber dinheiro federal"
+    },
+    {
+      "title": "Caso 2 — Pensões de trabalhadores da saúde na apuração do mínimo"
+    },
+    {
+      "title": "Caso 3 — Equipamento novo sem orçamento de operação"
+    },
+    {
+      "title": "Caso 4 — Duas equipes eSF: cadastro cresceu, mas diabéticos não são acompanhados"
+    },
+    {
+      "title": "Caso 5 — Município que não envia SIOPS apesar de cumprir o piso"
+    },
+    {
+      "title": "Caso 6 — Rede regional de oncologia: três municípios querem três aparelhos"
+    },
+    {
+      "title": "Caso 7 — Repasses para reforma, mas recurso é usado como folha de pagamento"
+    },
+    {
+      "title": "Caso 8 — Plano de saúde ambicioso sem PAS executável"
+    },
+    {
+      "title": "6. Dezesseis questões de residência comentadas por alternativa"
+    },
+    {
+      "title": "Questão 1 — Piso municipal com recursos próprios"
+    },
+    {
+      "title": "Questão 2 — Piso federal em 2026"
+    },
+    {
+      "title": "Questão 3 — Estado e município: qual percentual é qual?"
+    },
+    {
+      "title": "Questão 4 — ASPS e aposentadoria"
+    },
+    {
+      "title": "Questão 5 — Efeito indireto na saúde"
+    },
+    {
+      "title": "Questão 6 — Empenho de equipamento no fim do exercício"
+    },
+    {
+      "title": "Questão 7 — Repasses fundo a fundo e Portaria 3.992/2017"
+    },
+    {
+      "title": "Questão 8 — Qual é a nomenclatura de 2026?"
+    },
+    {
+      "title": "Questão 9 — Componentes de cofinanciamento da APS"
+    },
+    {
+      "title": "Questão 10 — Nota Técnica 8/2026"
+    },
+    {
+      "title": "Questão 11 — Plano, PAS e RAG"
+    },
+    {
+      "title": "Questão 12 — SIOPS não homologado"
+    },
+    {
+      "title": "Questão 13 — SUS regionalizado"
+    },
+    {
+      "title": "Questão 14 — LC227/2026 e base tributária"
+    },
+    {
+      "title": "Questão 15 — LC234/2026 e ASPS"
+    },
+    {
+      "title": "Questão 16 — O que mede qualidade real na APS?"
+    },
+    {
+      "title": "7. Constituição, seguridade social e o piso das ações e serviços públicos de saúde"
+    },
+    {
+      "title": "7.1 Por que financiamento do SUS não equivale ao orçamento do Ministério da Saúde"
+    },
+    {
+      "title": "7.2 Mínimos constitucionais: tabela para provas de 2026"
+    },
+    {
+      "title": "7.3 Exemplo de cálculo municipal com base definida"
+    },
+    {
+      "title": "7.4 Exemplo estadual: cuidado com a transferência aos municípios"
+    },
+    {
+      "title": "7.5 Reforma tributária e a LC 227/2026"
+    },
+    {
+      "title": "8. ASPS: o que entra no mínimo e o que fica fora"
+    },
+    {
+      "title": "8.1 O teste dos três requisitos cumulativos"
+    },
+    {
+      "title": "8.2 Lista comentada do art. 3º"
+    },
+    {
+      "title": "8.3 Exclusões relevantes do art. 4º"
+    },
+    {
+      "title": "8.4 Um quadro de classificação de seis gastos"
+    },
+    {
+      "title": "9. Orçamento público explicado do zero: PPA, LDO, LOA e fases da despesa"
+    },
+    {
+      "title": "9.1 Planejamento antes do gasto"
+    },
+    {
+      "title": "9.2 Receita estimada x arrecadada e empenho x liquidação x pagamento"
+    },
+    {
+      "title": "9.3 Restos a pagar: por que “empenhei tudo” não resolve"
+    },
+    {
+      "title": "9.4 Variação da receita durante o ano"
+    },
+    {
+      "title": "10. Fundos de Saúde e modalidades de transferência: passo a passo"
+    },
+    {
+      "title": "10.1 O que um Fundo de Saúde é — e o que não é"
+    },
+    {
+      "title": "10.2 Blocos federais em vigor — Portaria GM/MS 828/2020"
+    },
+    {
+      "title": "10.3 Saldo financeiro: a diferença entre poder e dever"
+    },
+    {
+      "title": "10.4 Rateio regional e equidade"
+    },
+    {
+      "title": "11. Atenção Primária em 2026: compreender cofinanciamento sem copiar fórmula vencida"
+    },
+    {
+      "title": "11.1 Mudanças a partir da Portaria GM/MS 3.493/2024"
+    },
+    {
+      "title": "11.2 Componente fixo: por que equipes homologadas importam?"
+    },
+    {
+      "title": "11.3 Vínculo e acompanhamento territorial: o cadastro é começo, não fim"
+    },
+    {
+      "title": "11.4 Qualidade: medir o que melhora cuidado"
+    },
+    {
+      "title": "11.5 Qualidade não é igual a volume absoluto"
+    },
+    {
+      "title": "11.6 Erros comuns de interpretação de valores da Portaria 3.493"
+    },
+    {
+      "title": "12. Média e alta complexidade, assistência farmacêutica e vigilância"
+    },
+    {
+      "title": "12.1 A rede precisa de cofinanciamento além da UBS"
+    },
+    {
+      "title": "12.2 Contratualização e regulação"
+    },
+    {
+      "title": "12.3 Assistência farmacêutica"
+    },
+    {
+      "title": "12.4 Vigilância e financiamento"
+    },
+    {
+      "title": "13. Planejamento sanitário: Plano de Saúde, PAS, RQPC/RDQA, RAG e DigiSUS"
+    },
+    {
+      "title": "13.1 O ciclo plurianual e a anualização"
+    },
+    {
+      "title": "13.2 Ligação entre objetivos e indicadores"
+    },
+    {
+      "title": "13.3 DigiSUS Gestor e SIOPS são sistemas diferentes"
+    },
+    {
+      "title": "14. SIOPS, transparência e consequências do descumprimento"
+    },
+    {
+      "title": "14.1 O que se declara no SIOPS"
+    },
+    {
+      "title": "14.2 Duas situações com consequências diferentes"
+    },
+    {
+      "title": "14.3 O perigo de confundir FPM e transferências fundo a fundo"
+    },
+    {
+      "title": "14.4 A prestação de contas não termina no SIOPS"
+    },
+    {
+      "title": "15. Eficiência, efetividade, eficácia e qualidade aplicada à gestão da saúde"
+    },
+    {
+      "title": "15.1 Por que uma unidade cheia nem sempre é uma boa unidade"
+    },
+    {
+      "title": "15.2 Indicadores de estrutura, processo e resultado"
+    },
+    {
+      "title": "15.3 Escolha difícil: custo-efetividade e orçamento"
+    },
+    {
+      "title": "15.4 Ciclo PDCA aplicado ao SUS"
+    },
+    {
+      "title": "16. Redes, regionalização e decisões de gestão com repercussão clínica"
+    },
+    {
+      "title": "16.1 Organização por escala e necessidade"
+    },
+    {
+      "title": "16.2 Contrarreferência é parte da qualidade"
+    },
+    {
+      "title": "16.3 Planejamento da fila"
+    },
+    {
+      "title": "16.4 Contratos, compras e continuidade operacional"
+    },
+    {
+      "title": "16.5 Oficina de interpretação financeira: cinco exercícios resolvidos"
+    },
+    {
+      "title": "16.6 Quadro de armadilhas quantitativas"
+    },
+    {
+      "title": "17. Matriz editorial de autossuficiência da aula 50"
+    },
+    {
+      "title": "18. Recursos visuais de alto valor didático — planejamento, não publicação"
+    },
+    {
+      "title": "19. Referências primárias e hierarquia normativa (checagem outubro/2026)"
+    },
+    {
+      "title": "20. Parecer editorial e pendências formais"
+    }
+  ],
+  "reference_entries": [],
+  "external_urls": [
+    "https://sxdsfklllilhdyuamvvg.supabase.co",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0828_24_04_2020.html",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017_comp.html",
+    "https://portalfns.saude.gov.br/sobre-o-fns/",
+    "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt3992_28_12_2017.html",
+    "https://portaria3992.saude.gov.br/perguntas-frequentes-faq/o-bloco-de-custeio-e-apenas-para-despesas-correntes-e-o-bloco-de-investimento-apenas-para-despesa-de-capital",
+    "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3493_11_04_2024_comp.html",
+    "https://www.gov.br/saude/pt-br/composicao/saps/esf/equipe-saude-da-familia/faq/quais-criterios-sao-considerados-para-repasse-de-incentivo-financeiro-da-uniao-as-esf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/guia-pratico-de-elaboracao-de-plano-municipal-de-saude-2026-2029.pdf",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/siops",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/siops/faq",
+    "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/instrumentos-de-planejamento/rag"
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "Diagnóstico: avaliar Plano/PAS/LOA, projeto de aquisição, fluxo de regulação, contratação, habilitação, manutenção, custo de energia e operação, contrato de garantia, tempo de espera e demanda epidemiológica."
+    },
+    {
+      "text": "Exemplo: município fecha contrato de tomografia de urgência com serviço vizinho. Sem transporte sanitário, canal de solicitação, laudo oportuno e fluxo de retorno, o recurso pago pode não resolver tempo até diagnóstico. Não basta contar aparelhos."
+    },
+    {
+      "text": "O Fundo recebeu R$ 800 mil para equipamento diagnóstico e há R$ 240 mil disponíveis após a contratação. Na UBS, faltam insumos de uso contínuo. O prefeito quer usar todo o saldo para compra de reagentes."
+    },
+    {
+      "text": "Uma equipe hipotética acompanhava 450 de 1.000 pessoas hipertensas cadastradas no início do quadrimestre, isto é, 45%. Após busca ativa, registrou 630 acompanhadas, mas validou diagnóstico de outras 200 pessoas no cadastro, totalizando 1.200. O percentual final é 630/1.200 = 52,5%, apesar de haver 180 pessoas adicionais acompanhadas."
+    }
+  ],
+  "stage": "HTML em branch; não comprova publicação",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}

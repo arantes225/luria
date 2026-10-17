@@ -1,0 +1,822 @@
+{
+  "key": "declaracao-obito-indicadores-mortalidade--rascunho-editorial-lote09",
+  "kind": "rascunho-md",
+  "path": "apostilas/declaracao-obito-indicadores-mortalidade/rascunho-editorial-lote09.md",
+  "title": "LURIA — Aula 175 | Declaração de óbito e indicadores de mortalidade",
+  "source_sha256": "afc1142894f066f9931105c4046196791fd934ce796eee15a6c9d57eda83c25c",
+  "chars_estimated": 92385,
+  "chars_scope": "estimativa Markdown; inclui elementos editoriais e não certifica 60K útil",
+  "headings": [
+    {
+      "line": 1,
+      "title": "LURIA — Aula 175 | Declaração de óbito e indicadores de mortalidade",
+      "level": 1
+    },
+    {
+      "line": 11,
+      "title": "1. Objetivos de aprendizagem e relevância clínica",
+      "level": 2
+    },
+    {
+      "line": 30,
+      "title": "2. Por que a Declaração de Óbito é um documento de saúde pública?",
+      "level": 2
+    },
+    {
+      "line": 40,
+      "title": "3. Conceitos fundamentais: DO, certidão, declaração de nascimento e atestado",
+      "level": 2
+    },
+    {
+      "line": 55,
+      "title": "4. Óbito natural, causas externas e morte suspeita",
+      "level": 2
+    },
+    {
+      "line": 65,
+      "title": "4.1. Classificação da causa externa",
+      "level": 3
+    },
+    {
+      "line": 71,
+      "title": "5. Quem emite a DO? O caminho depende da natureza e assistência",
+      "level": 2
+    },
+    {
+      "line": 75,
+      "title": "5.1. Morte natural com assistência médica",
+      "level": 3
+    },
+    {
+      "line": 81,
+      "title": "5.2. Morte natural sem assistência médica",
+      "level": 3
+    },
+    {
+      "line": 86,
+      "title": "5.3. Causa externa ou morte suspeita de violência",
+      "level": 3
+    },
+    {
+      "line": 90,
+      "title": "5.4. Diferença funcional SVO x IML",
+      "level": 3
+    },
+    {
+      "line": 102,
+      "title": "6. O que consta da Declaração de Óbito?",
+      "level": 2
+    },
+    {
+      "line": 106,
+      "title": "6.1. Princípio de completude",
+      "level": 3
+    },
+    {
+      "line": 112,
+      "title": "6.2. Dados perinatais",
+      "level": 3
+    },
+    {
+      "line": 116,
+      "title": "6.3. Responsável pelo preenchimento e codificação",
+      "level": 3
+    },
+    {
+      "line": 120,
+      "title": "7. Causa imediata, intermediária, básica e contribuinte",
+      "level": 2
+    },
+    {
+      "line": 124,
+      "title": "7.1. Parte I — sequência etiológica",
+      "level": 3
+    },
+    {
+      "line": 135,
+      "title": "7.2. Parte II — outras doenças contribuintes",
+      "level": 3
+    },
+    {
+      "line": 141,
+      "title": "7.3. Exemplo completo e correto — pneumonia e sepse",
+      "level": 3
+    },
+    {
+      "line": 153,
+      "title": "7.4. Exemplo — câncer colorretal metastático",
+      "level": 3
+    },
+    {
+      "line": 164,
+      "title": "7.5. Exemplo — AVC secundário a hipertensão?",
+      "level": 3
+    },
+    {
+      "line": 170,
+      "title": "8. O que NÃO preencher como causa básica?",
+      "level": 2
+    },
+    {
+      "line": 186,
+      "title": "8.1. Regras formais para Parte I",
+      "level": 3
+    },
+    {
+      "line": 196,
+      "title": "8.2. Tempo decorrido",
+      "level": 3
+    },
+    {
+      "line": 199,
+      "title": "9. Nascido vivo, óbito fetal e óbito neonatal — definições essenciais",
+      "level": 2
+    },
+    {
+      "line": 205,
+      "title": "9.1. Emissão obrigatória da DO fetal — referência geral",
+      "level": 3
+    },
+    {
+      "line": 215,
+      "title": "9.2. Nascido vivo que falece logo após parto",
+      "level": 3
+    },
+    {
+      "line": 221,
+      "title": "9.3. Luto materno e parental: lei de 2025 e portaria de 2026",
+      "level": 3
+    },
+    {
+      "line": 229,
+      "title": "10. Mortalidade neonatal, infantil, fetal e perinatal: recortes temporais",
+      "level": 2
+    },
+    {
+      "line": 246,
+      "title": "11. Óbito materno: definição e exceções que caem em prova",
+      "level": 2
+    },
+    {
+      "line": 256,
+      "title": "11.1. Morte materna tardia",
+      "level": 3
+    },
+    {
+      "line": 262,
+      "title": "11.2. Óbitos obstétricos diretos comuns",
+      "level": 3
+    },
+    {
+      "line": 271,
+      "title": "12. Indicadores de mortalidade: conceito, numerador, denominador, unidade",
+      "level": 2
+    },
+    {
+      "line": 281,
+      "title": "12.1. Quadro-mestre",
+      "level": 3
+    },
+    {
+      "line": 302,
+      "title": "12.2. Taxa bruta de mortalidade",
+      "level": 3
+    },
+    {
+      "line": 310,
+      "title": "12.3. Mortalidade por causas específicas",
+      "level": 3
+    },
+    {
+      "line": 316,
+      "title": "12.4. Mortalidade infantil e decomposição",
+      "level": 3
+    },
+    {
+      "line": 334,
+      "title": "12.5. Mortalidade fetal",
+      "level": 3
+    },
+    {
+      "line": 340,
+      "title": "12.6. Mortalidade perinatal",
+      "level": 3
+    },
+    {
+      "line": 346,
+      "title": "12.7. Razão de mortalidade materna",
+      "level": 3
+    },
+    {
+      "line": 352,
+      "title": "12.8. Mortalidade proporcional",
+      "level": 3
+    },
+    {
+      "line": 358,
+      "title": "12.9. Letalidade",
+      "level": 3
+    },
+    {
+      "line": 364,
+      "title": "12.10. Taxa de mortalidade específica por sexo/idade",
+      "level": 3
+    },
+    {
+      "line": 368,
+      "title": "13. Comparações e armadilhas: risco, proporção, letalidade e sobrevida",
+      "level": 2
+    },
+    {
+      "line": 376,
+      "title": "14. Padronização por idade e comparação entre municípios",
+      "level": 2
+    },
+    {
+      "line": 380,
+      "title": "Exemplo simplificado: duas cidades com riscos iguais por idade",
+      "level": 3
+    },
+    {
+      "line": 389,
+      "title": "14.1. Padronização indireta e SMR/RPM",
+      "level": 3
+    },
+    {
+      "line": 395,
+      "title": "15. SIM, SINASC e qualidade das estatísticas vitais",
+      "level": 2
+    },
+    {
+      "line": 397,
+      "title": "15.1. SIM — Sistema de Informações sobre Mortalidade",
+      "level": 3
+    },
+    {
+      "line": 403,
+      "title": "15.2. SINASC — Sistema de Informações sobre Nascidos Vivos",
+      "level": 3
+    },
+    {
+      "line": 409,
+      "title": "15.3. Dados do registro civil e outras fontes",
+      "level": 3
+    },
+    {
+      "line": 413,
+      "title": "16. Seleção da causa básica no SIM: o médico informa, o sistema codifica",
+      "level": 2
+    },
+    {
+      "line": 419,
+      "title": "16.1. Óbitos por causas mal definidas",
+      "level": 3
+    },
+    {
+      "line": 425,
+      "title": "16.2. Garbage codes e causas pouco úteis",
+      "level": 3
+    },
+    {
+      "line": 429,
+      "title": "16.3. Investigação de causa natural inespecífica",
+      "level": 3
+    },
+    {
+      "line": 433,
+      "title": "17. Vigilância dos óbitos maternos, fetais, infantis e evitáveis",
+      "level": 2
+    },
+    {
+      "line": 439,
+      "title": "17.1. Comitês de prevenção do óbito",
+      "level": 3
+    },
+    {
+      "line": 450,
+      "title": "17.2. Evitabilidade não é sinônimo de negligência",
+      "level": 3
+    },
+    {
+      "line": 454,
+      "title": "17.3. Atenção primária como fonte de dados",
+      "level": 3
+    },
+    {
+      "line": 458,
+      "title": "18. Interpretação epidemiológica: desigualdades e tendências",
+      "level": 2
+    },
+    {
+      "line": 462,
+      "title": "18.1. Comparabilidade",
+      "level": 3
+    },
+    {
+      "line": 476,
+      "title": "18.2. Efeito de pequenos números",
+      "level": 3
+    },
+    {
+      "line": 480,
+      "title": "18.3. Efeito de pandemia e choques externos",
+      "level": 3
+    },
+    {
+      "line": 484,
+      "title": "19. Tipos de estudo e interpretação dos indicadores",
+      "level": 2
+    },
+    {
+      "line": 488,
+      "title": "19.1. Falácia ecológica",
+      "level": 3
+    },
+    {
+      "line": 492,
+      "title": "19.2. Viés de informação",
+      "level": 3
+    },
+    {
+      "line": 496,
+      "title": "19.3. Mortalidade em hospital versus população",
+      "level": 3
+    },
+    {
+      "line": 500,
+      "title": "20. Óbito relacionado a condições especiais",
+      "level": 2
+    },
+    {
+      "line": 502,
+      "title": "20.1. Infecções e doenças emergentes",
+      "level": 3
+    },
+    {
+      "line": 506,
+      "title": "20.2. HIV e imunodepressão",
+      "level": 3
+    },
+    {
+      "line": 510,
+      "title": "20.3. Neoplasia de sítio primário conhecido",
+      "level": 3
+    },
+    {
+      "line": 514,
+      "title": "20.4. Intoxicação e drogas",
+      "level": 3
+    },
+    {
+      "line": 518,
+      "title": "20.5. Morte após cirurgia",
+      "level": 3
+    },
+    {
+      "line": 522,
+      "title": "20.6. Violência e suicídio",
+      "level": 3
+    },
+    {
+      "line": 526,
+      "title": "21. Comunicação do óbito, ética e família",
+      "level": 2
+    },
+    {
+      "line": 540,
+      "title": "21.1. Luto gestacional e neonatal",
+      "level": 3
+    },
+    {
+      "line": 544,
+      "title": "21.2. Risco de iatrogenia comunicacional",
+      "level": 3
+    },
+    {
+      "line": 548,
+      "title": "22. Algoritmos LURIA em fluxo textual",
+      "level": 2
+    },
+    {
+      "line": 550,
+      "title": "Fluxo A — Qual serviço deve emitir DO?",
+      "level": 3
+    },
+    {
+      "line": 554,
+      "title": "Fluxo B — Como preencher Parte I",
+      "level": 3
+    },
+    {
+      "line": 558,
+      "title": "Fluxo C — Morte fetal versus nascido vivo que faleceu",
+      "level": 3
+    },
+    {
+      "line": 562,
+      "title": "Fluxo D — Qual indicador a questão pede?",
+      "level": 3
+    },
+    {
+      "line": 566,
+      "title": "Fluxo E — Comparar dois municípios",
+      "level": 3
+    },
+    {
+      "line": 570,
+      "title": "23. Quadro de revisão: mortalidade e principais marcadores",
+      "level": 2
+    },
+    {
+      "line": 591,
+      "title": "24. Erros frequentes de prova e de serviço",
+      "level": 2
+    },
+    {
+      "line": 630,
+      "title": "25. Fontes primárias e atualização normativa 2026",
+      "level": 2
+    },
+    {
+      "line": 648,
+      "title": "Divergências, datas e interpretação",
+      "level": 3
+    },
+    {
+      "line": 657,
+      "title": "26. Auditoria editorial inicial",
+      "level": 2
+    },
+    {
+      "line": 679,
+      "title": "27. Casos clínicos e epidemiológicos integradores — 12 situações comentadas",
+      "level": 2
+    },
+    {
+      "line": 683,
+      "title": "Caso 1 — Pneumonia com sepse e diabetes contribuinte",
+      "level": 3
+    },
+    {
+      "line": 697,
+      "title": "Caso 2 — Fratura por queda e pneumonia meses depois",
+      "level": 3
+    },
+    {
+      "line": 711,
+      "title": "Caso 3 — Morte natural domiciliar sem acompanhamento",
+      "level": 3
+    },
+    {
+      "line": 725,
+      "title": "Caso 4 — Feto de 19 semanas com 520 gramas sem sinais de vida",
+      "level": 3
+    },
+    {
+      "line": 739,
+      "title": "Caso 5 — Nascido vivo muito prematuro que faleceu em dez minutos",
+      "level": 3
+    },
+    {
+      "line": 753,
+      "title": "Caso 6 — Morte no 20º dia do puerpério após eclâmpsia",
+      "level": 3
+    },
+    {
+      "line": 767,
+      "title": "Caso 7 — Morte por cardiopatia agravada pela gestação após 90 dias",
+      "level": 3
+    },
+    {
+      "line": 781,
+      "title": "Caso 8 — Gestante morta em acidente de trânsito",
+      "level": 3
+    },
+    {
+      "line": 795,
+      "title": "Caso 9 — O que uma taxa infantil de 9 por mil realmente significa?",
+      "level": 3
+    },
+    {
+      "line": 809,
+      "title": "Caso 10 — RMM 50: um óbito no pequeno município",
+      "level": 3
+    },
+    {
+      "line": 823,
+      "title": "Caso 11 — Mortalidade hospitalar por ocorrência distorce município",
+      "level": 3
+    },
+    {
+      "line": 837,
+      "title": "Caso 12 — Morte por neoplasia registrada como parada cardíaca",
+      "level": 3
+    },
+    {
+      "line": 853,
+      "title": "28. Questões autorais — 22 exercícios comentados por alternativa",
+      "level": 2
+    },
+    {
+      "line": 857,
+      "title": "Questão 1 — Causa básica em Parte I",
+      "level": 3
+    },
+    {
+      "line": 878,
+      "title": "Questão 2 — Mecanismo final não é causa básica",
+      "level": 3
+    },
+    {
+      "line": 899,
+      "title": "Questão 3 — Morte natural com assistência médica",
+      "level": 3
+    },
+    {
+      "line": 920,
+      "title": "Questão 4 — Morte natural sem assistência em município com SVO",
+      "level": 3
+    },
+    {
+      "line": 941,
+      "title": "Questão 5 — Óbito violento depois de semanas de internação",
+      "level": 3
+    },
+    {
+      "line": 962,
+      "title": "Questão 6 — DO fetal: qual conectivo?",
+      "level": 3
+    },
+    {
+      "line": 983,
+      "title": "Questão 7 — Nascido vivo de extremo baixo peso falece em 10 minutos",
+      "level": 3
+    },
+    {
+      "line": 1004,
+      "title": "Questão 8 — Classificação de morte aos 28 dias",
+      "level": 3
+    },
+    {
+      "line": 1025,
+      "title": "Questão 9 — Mortalidade infantil — conta",
+      "level": 3
+    },
+    {
+      "line": 1046,
+      "title": "Questão 10 — Decomposição da mortalidade infantil",
+      "level": 3
+    },
+    {
+      "line": 1067,
+      "title": "Questão 11 — Fetal: denominador",
+      "level": 3
+    },
+    {
+      "line": 1088,
+      "title": "Questão 12 — Mortalidade perinatal",
+      "level": 3
+    },
+    {
+      "line": 1109,
+      "title": "Questão 13 — Razão de mortalidade materna",
+      "level": 3
+    },
+    {
+      "line": 1130,
+      "title": "Questão 14 — Morte materna tardia",
+      "level": 3
+    },
+    {
+      "line": 1151,
+      "title": "Questão 15 — Gestante vítima de colisão",
+      "level": 3
+    },
+    {
+      "line": 1172,
+      "title": "Questão 16 — Mortalidade proporcional",
+      "level": 3
+    },
+    {
+      "line": 1193,
+      "title": "Questão 17 — Letalidade",
+      "level": 3
+    },
+    {
+      "line": 1214,
+      "title": "Questão 18 — Comparação de municípios com estruturas etárias distintas",
+      "level": 3
+    },
+    {
+      "line": 1235,
+      "title": "Questão 19 — Local de ocorrência versus residência",
+      "level": 3
+    },
+    {
+      "line": 1256,
+      "title": "Questão 20 — Sobrevida e viés de antecipação",
+      "level": 3
+    },
+    {
+      "line": 1277,
+      "title": "Questão 21 — Investigação obrigatória de óbito materno",
+      "level": 3
+    },
+    {
+      "line": 1298,
+      "title": "Questão 22 — Qualidade da causa básica",
+      "level": 3
+    },
+    {
+      "line": 1321,
+      "title": "29. Curadoria visual e tabelas de revisão — 15 candidatos",
+      "level": 2
+    },
+    {
+      "line": 1343,
+      "title": "Requisitos de aprovação visual",
+      "level": 3
+    },
+    {
+      "line": 1354,
+      "title": "30. Integração curricular e prática LURIA",
+      "level": 2
+    },
+    {
+      "line": 1358,
+      "title": "Flashcards que podem derivar do texto",
+      "level": 3
+    },
+    {
+      "line": 1380,
+      "title": "Critério de qualidade para questões numéricas",
+      "level": 3
+    },
+    {
+      "line": 1383,
+      "title": "31. Auditoria consolidada da Aula 175",
+      "level": 2
+    },
+    {
+      "line": 1387,
+      "title": "Verificações internas",
+      "level": 3
+    },
+    {
+      "line": 1400,
+      "title": "Pendências obrigatórias",
+      "level": 3
+    }
+  ],
+  "references": [
+    "1. **Ministério da Saúde. Declaração de Óbito — Manual de Instruções para Preenchimento.** Página oficial atualizada em **10/07/2026**. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/declaracao-de-obito-manual-de-instrucoes-para-preenchimento.pdf/view",
+    "2. **Ministério da Saúde. Sistema de Informações sobre Mortalidade (SIM).** https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim",
+    "3. **Ministério da Saúde. Manual de Vigilância do Óbito de Causa Natural Inespecífica no Brasil**, 2024. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-vigilancia-do-obito-de-causa-natural-inespecifica-no-brasil.pdf",
+    "4. **CFM. Resolução nº 1.779/2005**, responsabilidade pela emissão de DO. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2005/1779",
+    "5. **Ministério da Saúde. Portaria SVS/MS nº 116/2009.** https://bvs.saude.gov.br/bvs/saudelegis/svs/2009/prt0116_11_02_2009_atual.html",
+    "6. **CFM. Código de Ética Médica, Resolução nº 2.217/2018**, especialmente artigos 83 e 84. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+    "7. **CFM e Ministério da Saúde. A declaração de óbito: documento necessário e importante**, cartilha institucional. https://portal.cfm.org.br/wp-content/uploads/2023/01/cartilha_declaracao_obito.pdf",
+    "8. **Brasil. Lei nº 15.139, de 23/05/2025**, Política Nacional de Humanização do Luto Materno e Parental e nome ao natimorto. https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15139.htm",
+    "9. **Ministério da Saúde. Portaria GM/MS nº 10.273, de 26/02/2026**, política de luto integrada à Rede Alyne. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10273_27_02_2026.html",
+    "10. **Ministério da Saúde. Portaria de Consolidação nº 1/2017**, vigilância de óbitos maternos/mulheres em idade fértil. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0001_03_10_2017_comp.html",
+    "11. **Ministério da Saúde. Guia para avaliação do impacto de políticas de saúde no SUS**, indicadores de mortalidade, padronização e RMM. https://bvsms.saude.gov.br/bvs/publicacoes/avaliacao_impacto_politicas_saude_guia_sus.pdf",
+    "12. **Ministério da Saúde. SINASC — Sistema de Informações sobre Nascidos Vivos**, consultar página institucional e documentação DATASUS. https://datasus.saude.gov.br/informacoes-de-saude-tabnet/",
+    "13. **RIPSA/OPAS. Indicadores básicos para a saúde no Brasil: conceitos e aplicações.** https://www.paho.org/pt/brasil",
+    "14. **Ministério da Saúde. Portaria SVS/MS nº 72/2010 e normativas de investigação de óbitos infantis/fetais**, verificar versão de cada unidade federativa. https://bvsms.saude.gov.br/",
+    "15. **Organização Mundial da Saúde. International Classification of Diseases / Mortality statistics**, definição de causa básica e princípios de codificação. https://www.who.int/standards/classifications/classification-of-diseases",
+    "- **Manual da DO (página atualizada em 2026):** orienta preenchimento e responsabilidades; atualização da página não significa que todos os itens internos tenham sido reescritos em 2026.",
+    "- **Lei 15.139/2025 e Portaria 10.273/2026:** acrescentam direitos e políticas de acolhimento/luto; não se deve inferir revogação automática da Resolução CFM 1.779/2005 ou de normas de vigilância sem exame formal de conflito.",
+    "- **Óbito fetal:** definição biológica, obrigatoriedade de DO, direitos de registro e cálculo de indicadores são dimensões relacionadas, mas não equivalentes.",
+    "- **Óbito materno:** a investigação pode alcançar até um ano após gestação; o indicador clássico RMM limita-se a até 42 dias.",
+    "- **CID:** consultar versão usada pelo SIM no período analisado; não equiparar mudança de codificação à mudança real de risco.",
+    "- **Guias internacionais:** úteis para padronização, mas aplicar critérios oficiais de SIM/SINASC e legislação brasileira para situações nacionais."
+  ],
+  "external_links": [
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/declaracao-de-obito-manual-de-instrucoes-para-preenchimento.pdf/view",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/sistemas-de-informacao/sim",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-vigilancia-do-obito-de-causa-natural-inespecifica-no-brasil.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2005/1779",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvs.saude.gov.br/bvs/saudelegis/svs/2009/prt0116_11_02_2009_atual.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://portal.cfm.org.br/wp-content/uploads/2023/01/cartilha_declaracao_obito.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15139.htm",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2026/prt10273_27_02_2026.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0001_03_10_2017_comp.html",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/avaliacao_impacto_politicas_saude_guia_sus.pdf",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://datasus.saude.gov.br/informacoes-de-saude-tabnet/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.paho.org/pt/brasil",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/",
+      "label": "",
+      "in_references": false
+    },
+    {
+      "url": "https://www.who.int/standards/classifications/classification-of-diseases",
+      "label": "",
+      "in_references": false
+    }
+  ],
+  "static_images": [],
+  "inline_svg": 0,
+  "tables": 8,
+  "duplicated_paragraphs": [],
+  "image_rows": [],
+  "samples": [
+    {
+      "text": "**Caso:** mulher de 70 anos é internada com pneumonia bacteriana lobar, desenvolve sepse e morre; possui diabetes tipo 2 que agravou risco infeccioso.",
+      "pattern": 0
+    },
+    {
+      "text": "- idade gestacional **≥20 semanas**; **OU** - peso fetal **≥500 g**; **OU** - estatura/comprimento fetal **≥25 cm**.",
+      "pattern": 0
+    },
+    {
+      "text": "**O conectivo é OU, não E.** Se 19 semanas e 520 g, o peso já satisfaz critério; se 21 semanas e 430 g, a idade gestacional satisfaz. O profissional deve conferir normas e eventual atualização operacional nacional/local, inclusive possibilidades de emissão em perdas abaixo desses limites quando solicitada pela família nos cenários admitidos.",
+      "pattern": 0
+    },
+    {
+      "text": "1. Definir óbito, nascido vivo, óbito fetal, neonatal, infantil e materno, reconhecendo os limites de idade e temporalidade. 2. Diferenciar **Declaração de Óbito (DO)**, **Certidão de Óbito**, **Declaração de Nascido Vivo (DNV)**, relatório médico e atestado. 3. Saber quando deve ser emitida a DO e qual serviço/médico responde por causas naturais com assistência, causas naturais sem assistência, SVO e morte suspeita/violenta no IML. 4. Preencher a cadeia causal Parte I e Parte II, distinguindo causa básica, intermediária, imediata e condições contribuintes. 5. Evitar diagnósticos terminais inespecíficos, siglas e combinações sem coerência etiológica. 6. Reconhecer regras para óbitos fetais e neonatais, incluindo as diferenças da política brasileira de luto materno e parental vigente desde 2025/2026. 7. Explicar o fluxo da DO para registro civil e para o Sistema de Informações sobre Mortalidade (SIM). 8. Calcular taxas bruta e específica de mortalidade, coeficiente infantil, neonatal, pós-neonatal, fetal, perinatal e razão de mortalidade materna. 9. Distinguir **mortalidade**, **letalidade**, **mortalidade proporcional**, **sobrevida** e **risco de morrer**. 10. Interpretar sub-registro, causas mal definidas, diferenças regionais, padronização por idade e investigação de óbitos evitáveis. 11. Resolver casos clínicos e cálculos com numeradores, denominadores, período e unidade corretos. 12. Comunicar morte e apoiar familiares de forma ética e humanizada, sem misturar essa obrigação com o preenchimento correto de registros.",
+      "pattern": 1
+    },
+    {
+      "text": "**Morte suspeita/violenta** demanda acionamento dos fluxos periciais previstos, mesmo que haja hipótese clínica plausível. O médico do hospital não deve tratar como natural um óbito com sinais de agressão, overdose não esclarecida ou acidente de trânsito só para facilitar burocracia.",
+      "pattern": 1
+    },
+    {
+      "text": "- **Localidade com SVO:** encaminhamento ao **Serviço de Verificação de Óbito**, cuja função é esclarecer mortes de causa natural sem assistência ou sem diagnóstico elucidador, segundo critérios. - **Localidade sem SVO:** a emissão segue regra de médico do serviço público mais próximo e, na ausência, outro médico da localidade, conforme Resolução 1.779/2005 e Portaria 116/2009. A possibilidade de registrar **causa indeterminada** quando não há elementos é prevista em situações reguladas; não inventar doença.",
+      "pattern": 1
+    },
+    {
+      "text": "**Área:** Medicina Preventiva, Saúde Coletiva, Epidemiologia, Medicina Legal, Obstetrícia e Pediatria **Lote 09 · Aula 175 de 180 · Versão editorial: 15/10/2026** **Situação:** rascunho aprofundado para revisão científica e jurídica, sem publicação no PWA e sem autorização de uso como modelo oficial de documento.",
+      "pattern": 2
+    },
+    {
+      "text": "**Base prioritária:** Ministério da Saúde — *Declaração de Óbito: Manual de Instruções para Preenchimento* (página oficial atualizada em 10/07/2026); manual de vigilância do óbito de causa natural inespecífica (2024); Resolução CFM nº 1.779/2005; Portaria SVS/MS nº 116/2009; Código de Ética Médica (Resolução CFM nº 2.217/2018); SIM e SINASC; Lei nº 15.139/2025 e Portaria GM/MS nº 10.273/2026 (luto materno e parental).",
+      "pattern": 2
+    },
+    {
+      "text": "1. Definir óbito, nascido vivo, óbito fetal, neonatal, infantil e materno, reconhecendo os limites de idade e temporalidade. 2. Diferenciar **Declaração de Óbito (DO)**, **Certidão de Óbito**, **Declaração de Nascido Vivo (DNV)**, relatório médico e atestado. 3. Saber quando deve ser emitida a DO e qual serviço/médico responde por causas naturais com assistência, causas naturais sem assistência, SVO e morte suspeita/violenta no IML. 4. Preencher a cadeia causal Parte I e Parte II, distinguindo causa básica, intermediária, imediata e condições contribuintes. 5. Evitar diagnósticos terminais inespecíficos, siglas e combinações sem coerência etiológica. 6. Reconhecer regras para óbitos fetais e neonatais, incluindo as diferenças da política brasileira de luto materno e parental vigente desde 2025/2026. 7. Explicar o fluxo da DO para registro civil e para o Sistema de Informações sobre Mortalidade (SIM). 8. Calcular taxas bruta e específica de mortalidade, coeficiente infantil, neonatal, pós-neonatal, fetal, perinatal e razão de mortalidade materna. 9. Distinguir **mortalidade**, **letalidade**, **mortalidade proporcional**, **sobrevida** e **risco de morrer**. 10. Interpretar sub-registro, causas mal definidas, diferenças regionais, padronização por idade e investigação de óbitos evitáveis. 11. Resolver casos clínicos e cálculos com numeradores, denominadores, período e unidade corretos. 12. Comunicar morte e apoiar familiares de forma ética e humanizada, sem misturar essa obrigação com o preenchimento correto de registros.",
+      "pattern": 2
+    }
+  ],
+  "opening": [
+    {
+      "text": "**Área:** Medicina Preventiva, Saúde Coletiva, Epidemiologia, Medicina Legal, Obstetrícia e Pediatria **Lote 09 · Aula 175 de 180 · Versão editorial: 15/10/2026** **Situação:** rascunho aprofundado para revisão científica e jurídica, sem publicação no PWA e sem autorização de uso como modelo oficial de documento."
+    },
+    {
+      "text": "**Base prioritária:** Ministério da Saúde — *Declaração de Óbito: Manual de Instruções para Preenchimento* (página oficial atualizada em 10/07/2026); manual de vigilância do óbito de causa natural inespecífica (2024); Resolução CFM nº 1.779/2005; Portaria SVS/MS nº 116/2009; Código de Ética Médica (Resolução CFM nº 2.217/2018); SIM e SINASC; Lei nº 15.139/2025 e Portaria GM/MS nº 10.273/2026 (luto materno e parental)."
+    }
+  ]
+}

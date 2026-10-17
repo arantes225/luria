@@ -1,0 +1,353 @@
+{
+  "sha": "df05907cf62939b4acb00739b17ddb32bf72108d",
+  "path": "apostilas/_rascunhos/lote-05-107-hernias-parede-abdominal.md",
+  "branches": [
+    "origin/editorial/lote-05-103-tuberculose-infancia-20261015",
+    "origin/editorial/lote-05-107-hernias-parede-20261015",
+    "origin/editorial/lote-05-108-itu-infancia-20261015",
+    "origin/editorial/lote-05-109-puerperio-20261015",
+    "origin/editorial/lote-05-110-ensaios-revisoes-20261015",
+    "origin/editorial/lote-05-111-drc-20261015",
+    "origin/editorial/lote-05-112-diverticulite-20261015",
+    "origin/editorial/lote-05-113-nefrotica-nefritica-20261015",
+    "origin/editorial/lote-05-114-infeccao-puerperal-20261015",
+    "origin/editorial/lote-05-115-vieses-causalidade-20261015"
+  ],
+  "in_main": false,
+  "key": "_rascunhos--df05907cf6",
+  "title": "LURIA — Apostila 107: Hérnias da parede abdominal",
+  "format": ".md",
+  "chars_estimated": 63160,
+  "extension_certified": false,
+  "json_valid": true,
+  "headings": [
+    {
+      "title": "LURIA — Apostila 107: Hérnias da parede abdominal"
+    },
+    {
+      "title": "0. Etapa zero — inventário e decisão editorial"
+    },
+    {
+      "title": "1. Por que estudar hérnias além de “apareceu um caroço”?"
+    },
+    {
+      "title": "2. Anatomia cirúrgica da parede: entender o caminho da protrusão"
+    },
+    {
+      "title": "2.1. Planos da parede abdominal anterior"
+    },
+    {
+      "title": "2.2. Região inguinal e seus marcos"
+    },
+    {
+      "title": "2.3. Triângulo de Hesselbach: memorize os três limites"
+    },
+    {
+      "title": "2.4. O orifício miopectíneo de Fruchaud — conceito unificador"
+    },
+    {
+      "title": "2.5. Nervos da região e sua relação com dor pós-operatória"
+    },
+    {
+      "title": "3. Como classificar uma hérnia sem decorar rótulos soltos"
+    },
+    {
+      "title": "3.1. Irredutibilidade não é sinônimo de estrangulamento"
+    },
+    {
+      "title": "3.2. Hérnia de Richter, Maydl e deslizamento"
+    },
+    {
+      "title": "4. Epidemiologia e fatores de risco: o que é plausível e o que é demonstrável?"
+    },
+    {
+      "title": "5. Anamnese e exame físico: diagnóstico começa em pé"
+    },
+    {
+      "title": "5.1. Seis perguntas essenciais"
+    },
+    {
+      "title": "5.2. Inspeção dinâmica e palpação"
+    },
+    {
+      "title": "5.3. O que o exame pode não definir?"
+    },
+    {
+      "title": "5.4. Diferenciais de massa inguinal"
+    },
+    {
+      "title": "6. Ultrassonografia, tomografia e ressonância: cada exame tem propósito"
+    },
+    {
+      "title": "6.1. Quando a imagem agrega"
+    },
+    {
+      "title": "6.2. Quais informações pedir para hérnia incisional complexa?"
+    },
+    {
+      "title": "6.3. Imagem em suspeita de isquemia"
+    },
+    {
+      "title": "7. Hérnia inguinal: direta, indireta, mista e bilateral"
+    },
+    {
+      "title": "7.1. Direta versus indireta, de verdade"
+    },
+    {
+      "title": "7.2. Classificação de Nyhus — compreender e localizar"
+    },
+    {
+      "title": "7.3. Reparo: a escolha é técnica e centrada no paciente"
+    },
+    {
+      "title": "7.4. Lichtenstein, TEP e TAPP"
+    },
+    {
+      "title": "7.5. Hérnia bilateral e recidivada"
+    },
+    {
+      "title": "7.6. Mulheres e risco femoral oculto"
+    },
+    {
+      "title": "8. Hérnia femoral: pequena saliência, grande relevância clínica"
+    },
+    {
+      "title": "9. Observação vigilante versus cirurgia eletiva"
+    },
+    {
+      "title": "10. Hérnias primárias ventrais: umbilical e epigástrica"
+    },
+    {
+      "title": "11. Hérnia incisional — não confundir cicatriz com simples nódulo"
+    },
+    {
+      "title": "11.1. Fatores de risco e prevenção"
+    },
+    {
+      "title": "11.2. Avaliação pré-operatória"
+    },
+    {
+      "title": "11.3. Planos de tela — qual é qual?"
+    },
+    {
+      "title": "11.4. Fechar defeito é diferente de simplesmente cobrir buraco"
+    },
+    {
+      "title": "11.5. Abordagem aberta, laparoscópica ou robótica"
+    },
+    {
+      "title": "12. Hérnias menos comuns que realmente caem em prova"
+    },
+    {
+      "title": "13. Emergências da virilha — hérnia agudamente irredutível, isquemia e redução"
+    },
+    {
+      "title": "13.1. Avalie risco antes de tocar repetidamente na massa"
+    },
+    {
+      "title": "13.2. Redução manual (taxis): não transformar em receita universal"
+    },
+    {
+      "title": "13.3. Quando operar imediatamente?"
+    },
+    {
+      "title": "14. Hérnia ventral/incisional em emergência — por que 2026 mudou o debate?"
+    },
+    {
+      "title": "14.1. Primeiro decidir fisiologia e possibilidade de fechamento"
+    },
+    {
+      "title": "14.2. Plano de tela na emergência e a aparente contradição com eletiva"
+    },
+    {
+      "title": "14.3. Ferida contaminada não é variável única"
+    },
+    {
+      "title": "15. Pré-operatório e prevenção de complicações: o que ajustar antes de operar"
+    },
+    {
+      "title": "16. Pós-operatório: o sucesso não é apenas fechar o defeito"
+    },
+    {
+      "title": "17. Populações especiais e zonas cinzentas"
+    },
+    {
+      "title": "17.1. Gestação"
+    },
+    {
+      "title": "17.2. Crianças"
+    },
+    {
+      "title": "17.3. Idoso frágil"
+    },
+    {
+      "title": "17.4. Cirrose e ascite"
+    },
+    {
+      "title": "17.5. Obesidade e cirurgia bariátrica"
+    },
+    {
+      "title": "18. Diagnósticos diferenciais avançados e armadilhas de prova"
+    },
+    {
+      "title": "18.1. Hérnia versus diástase abdominal"
+    },
+    {
+      "title": "18.2. Lipoma de cordão espermático"
+    },
+    {
+      "title": "18.3. Dor esportiva sem hérnia demonstrável"
+    },
+    {
+      "title": "18.4. Massa pulsátil perigosa"
+    },
+    {
+      "title": "19. Fluxogramas clínicos: diagnóstico, ambulatório e emergência"
+    },
+    {
+      "title": "19.1. Abaulamento em paciente estável"
+    },
+    {
+      "title": "19.2. Massa dolorosa agudamente irredutível"
+    },
+    {
+      "title": "19.3. Hérnia ventral complicada: decisão intraoperatória"
+    },
+    {
+      "title": "19.4. Cinco perguntas para não errar a prova"
+    },
+    {
+      "title": "20. Casos clínicos integradores com raciocínio completo"
+    },
+    {
+      "title": "Caso 1 — Nódulo baixo doloroso em mulher idosa"
+    },
+    {
+      "title": "Caso 2 — Operar ou observar o homem assintomático?"
+    },
+    {
+      "title": "Caso 3 — Abaulamento que cruza o escroto"
+    },
+    {
+      "title": "Caso 4 — Abaulamento depois de laparotomia mediana"
+    },
+    {
+      "title": "Caso 5 — Dor após redução de hérnia"
+    },
+    {
+      "title": "Caso 6 — Hérnia umbilical sintomática em adulto"
+    },
+    {
+      "title": "Caso 7 — Obstrução intestinal sem grande abaulamento"
+    },
+    {
+      "title": "Caso 8 — Hérnia grande, peritonite e necessidade de priorizar vida"
+    },
+    {
+      "title": "21. Questões autorais estilo residência — cinco alternativas comentadas"
+    },
+    {
+      "title": "Questão 1 — Direta ou indireta?"
+    },
+    {
+      "title": "Questão 2 — Hesselbach"
+    },
+    {
+      "title": "Questão 3 — Femoral em mulher"
+    },
+    {
+      "title": "Questão 4 — Terminologia e redução"
+    },
+    {
+      "title": "Questão 5 — Abordagens laparoscópicas"
+    },
+    {
+      "title": "Questão 6 — Hérnia incisional eletiva"
+    },
+    {
+      "title": "Questão 7 — Umbilical adulta"
+    },
+    {
+      "title": "Questão 8 — Richter"
+    },
+    {
+      "title": "Questão 9 — Emergência de grande defeito"
+    },
+    {
+      "title": "Questão 10 — Recidiva após acesso anterior"
+    },
+    {
+      "title": "22. Quadro de revisão rápida — sete decisões de alto rendimento"
+    },
+    {
+      "title": "23. Imagens e recursos didáticos — candidatas, não integradas"
+    },
+    {
+      "title": "24. Fontes científicas verificadas e hierarquia"
+    },
+    {
+      "title": "25. Auditoria editorial de entrega parcial"
+    }
+  ],
+  "reference_entries": [
+    "1. HerniaSurge Group. *Update of the international HerniaSurge guidelines for groin hernia management*. **BJS Open**. 2023;7:zrad080. DOI 10.1093/bjsopen/zrad080. https://pmc.ncbi.nlm.nih.gov/articles/PMC10588975/. Base de inguinal/femoral, técnica com/sem tela, dor crônica, hérnia agudamente irredutível.",
+    "2. Sanders DL et al. *Midline incisional hernia guidelines: the European Hernia Society*. **Br J Surg**. 2023;110:1732–1768. DOI 10.1093/bjs/znad284. https://pmc.ncbi.nlm.nih.gov/articles/PMC10638550/. Reparação eletiva de incisional mediana passível de fechamento sem separação complexa.",
+    "3. Henriksen NA et al. *Guidelines for treatment of umbilical and epigastric hernias from the EHS and AHS*. **Br J Surg**. 2020;107:171–190. DOI 10.1002/bjs.11489. https://pubmed.ncbi.nlm.nih.gov/31916607/. Reparo com tela em hérnia ventral primária.",
+    "4. Stabilini C et al. *EHS Guidelines on the Management of Primary Ventral and Incisional Hernias Under Emergency Conditions*. **J Abdom Wall Surg**. 2026;5:16228. DOI 10.3389/jaws.2026.16228. https://pmc.ncbi.nlm.nih.gov/articles/PMC13044802/. Reparo de hérnia ventral/incisional na emergência, com recomendações condicionais e estratégia de danos.",
+    "5. Deerenberg EB et al. *Updated guideline for closure of abdominal wall incisions from the European and American Hernia Societies*. **Br J Surg**. 2022/2023, DOI 10.1093/bjs/znac302. https://pmc.ncbi.nlm.nih.gov/articles/PMC10364727/. Técnica de fechamento e prevenção de hérnia incisional.",
+    "6. *Ultrasound imaging for inguinal hernia: a pictorial review*. **Ultrasonography**, 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9262670/. Correlação ultrassom/anatomia; revisar licença antes de usar ilustração.",
+    "7. *US of the Inguinal Canal: Comprehensive Review of Pathologic Processes with CT and MR Imaging Correlation*. **RadioGraphics**. DOI 10.1148/rg.2016150181. https://pubs.rsna.org/doi/full/10.1148/rg.2016150181. Anatomia e imagem, acesso/licença próprios.",
+    "8. WSES, *2017 update of the WSES guidelines for emergency repair of complicated abdominal wall hernias*. **World J Emerg Surg**. 2017. https://pmc.ncbi.nlm.nih.gov/articles/PMC5545868/. Referência histórica e comparação com EHS 2026, não diretriz mais recente para ventral.",
+    "9. “HÉRNIAS.pdf” no Drive privado: **benchmark de cobertura sem permissão de reprodução verificada**; nenhuma cópia incorporada.",
+    "**Cobertos:** apresentação, anatomia, classificação (Nyhus), epidemiologia, clínica/diferenciais, ultrassonografia/TC/RM, inguinal/femoral/umbilical/epigástrica/incisional/Spiegel/especiais, técnicas e telas, vigilância e eletiva, emergência inguinal e EHS ventral 2026, pré/pós-operatório, casos e questões, camada visual candidata.",
+    "**Pendências:** confirmar minúcias de recomendações com leitura clínica por cirurgião de parede; referências de consensos brasileiros se aplicáveis; auditar cada questão/caso; aprofundar apresentações pediátricas complexas, recidivas e reabilitação sem prolixidade; compor mais casos conforme lacunas reais; figuras autorais e licenças; integração sem duplicar apostilas de obstrução abdominal; testes PWA, responsive, semântica de tabelas e links; aprovação editorial. **Arquivo em branch isolada, sem merge, deploy ou publicação.**"
+  ],
+  "external_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262670/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016150181",
+    "https://meetingarchive.ami.org/2017/project/a3-2-2-2/",
+    "https://www.researchgate.net/figure/Femoral-hernia-containing-incarcerated-small-bowel-resulting-in-small-bowel-obstruction_fig2_345941779",
+    "https://ugeskriftet.dk/videnskab/behandling-af-incisionalhernier-og-parastomalhernier",
+    "https://www.frontierspartnerships.org/journals/journal-of-abdominal-wall-surgery/articles/10.3389/jaws.2024.12542/full",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10588975/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13044802/",
+    "https://www.aafp.org/pubs/afp/issues/1999/0101/p143.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10638550/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10588975/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10638550/.",
+    "https://pubmed.ncbi.nlm.nih.gov/31916607/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13044802/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10364727/.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262670/.",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016150181.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5545868/."
+  ],
+  "embedded_images": [],
+  "samples": [
+    {
+      "text": "**Lote:** 5 · **Área:** Cirurgia Geral · **Foco:** R1 / ENAMED / internato / ambulatório e urgência. **Estado:** RASCUNHO CIENTÍFICO ORIGINAL, em revisão, não publicado. **Recorte:** hérnias inguinais, femorais, umbilicais, epigástricas, incisionais, de Spiegel e especiais, com anatomia, semiologia, diagnóstico diferencial, tratamento individualizado e emergências. Não substituir avaliação presencial nem protocolo cirúrgico institucional."
+    },
+    {
+      "text": "**Atualização científica com impacto na conduta:** - **HerniaSurge 2023:** reparo com tela para a maioria das hérnias da virilha; alternativa sem tela (Shouldice) em casos selecionados e com expertise; avaliação específica de dor crônica, técnica minimamente invasiva e hernia agudamente irredutível. - **EHS 2023 — hérnia incisional mediana eletiva:** sugere tela em plano retromuscular e fechamento do defeito fascial quando viável; a diretriz foi desenvolvida para cenários em que o fechamento não demanda técnicas complexas de separação de componentes. - **EHS/AHS 2020 — umbilical/epigástrica:** recomenda uso de tela para reduzir recidivas, hab"
+    },
+    {
+      "text": "**Limites:** recomendações cirúrgicas dependem do defeito, risco, recursos e julgamento do cirurgião. Não transformar resumo em ordem para realizar técnica específica. As referências completas estão ao fim; o conteúdo foi fundamentado nas publicações oficiais e seus recortes."
+    },
+    {
+      "text": "No ambulatório, as decisões fundamentais são confirmar diagnóstico, localizar defeito, avaliar sintomas e repercussão, discutir observação versus reparo e selecionar técnica segundo características individuais. No pronto atendimento, a prioridade é identificar hérnia de aparecimento doloroso ou agudamente irredutível, sinais de obstrução, sofrimento intestinal, instabilidade e necessidade de cirurgia emergencial. Na prova de residência, os pontos decisivos costumam ser **anatomia em relação aos vasos epigástricos e ligamento inguinal, classificação de urgência, femoral em mulher, escolha de tela e plano, e diferenças entre TEP/TAPP/Lichtenste"
+    },
+    {
+      "text": "**Vinheta-guia:** mulher de 67 anos apresenta pequeno nódulo doloroso na virilha, inferior ao ligamento inguinal, com vômitos e distensão; o exame mostra massa firme não redutível. Mesmo que a saliência pareça discreta, a hipótese de **hérnia femoral com obstrução/estrangulamento** exige urgência. Uma hérnia pequena não é sinônimo de baixo risco."
+    }
+  ],
+  "stage": "manuscrito em branch; integração pendente",
+  "next_actions": [
+    "comparar com versões do mesmo caminho/tema antes de consolidar",
+    "validar conteúdo e referências de cada capítulo",
+    "verificar imagens existentes e licenças",
+    "ligar ao registro central do tema com evidências de revisão",
+    "integrar somente após revisão clínica e editorial"
+  ],
+  "clinical_review_status": "não certificada; extração estrutural e bibliográfica desta versão",
+  "candidate_images": []
+}
