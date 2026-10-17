@@ -184,24 +184,76 @@
   body[data-ui="v2"][data-page="consolidar"] .learn-card :is(h2,p,.learn-cta) {grid-column:2;margin:0!important;}
   body[data-ui="v2"][data-page="consolidar"] .learn-card h2 {font-size:var(--ui-card-title);font-weight:650;color:var(--color-text-primary);}
   body[data-ui="v2"][data-page="consolidar"] .learn-card p {color:var(--color-text-secondary);font-size:.875rem;line-height:1.5;}
-  body[data-ui="v2"][data-page="consolidar"] .learn-cta {display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:40px!important;padding:.55rem 1.35rem!important;border-radius:var(--ui-radius-pill, 999px)!important;background:#ffffff!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;color:var(--color-primary,#155dfc)!important;font-size:.875rem!important;font-weight:700!important;text-decoration:none!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;transition:all 180ms ease!important;justify-self:start!important;}
-  body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta, body[data-ui="v2"][data-page="consolidar"] .learn-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary) 35%,transparent)!important;transform:translateY(-2px)!important;}
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-cta {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta, :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;}
-
-  /* Uniformidade de botões: Cronograma e Estatísticas (Branco c/ escrita azul -> Azul c/ escrita branca no hover) */
-  body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button),
-  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab) {
+  /* ==========================================================================
+     UNIFORMIDADE DE BOTÕES (Consolidar, Jogos, Cronograma, Estatísticas)
+     Padrão estrito: Fundo branco c/ escrita azul -> Azul degradê c/ escrita branca no hover.
+     Raio uniforme de 12px, altura mínima de 44px, tipografia 700.
+     ========================================================================== */
+  body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+    .learn-cta,
+    .games-link,
+    .luria-game .g-button,
+    .reference-new-activity,
+    #reference-new-activity,
+    .deck-distribute-button,
+    .cronograma-action,
+    .quick-activity-actions button,
+    .drop-file .button,
+    .stats-link,
+    .stats-tab:not(.active),
+    .stats-range button:not(.active),
+    .planner-view-toggle button:not(.active),
+    .agenda-activity-view-switch button:not(.active),
+    .agenda-insight-tabs button:not(.active),
+    .button:not(.active),
+    .btn:not(.active),
+    a.button:not(.active),
+    a.btn:not(.active),
+    button:not(.menu-open):not(.active):not(#quick-activity-close)
+  ) {
     background: #ffffff !important;
     color: var(--color-primary, #155dfc) !important;
-    border: 1px solid var(--color-border-interactive, #c8dcfa) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+    border: 1.5px solid var(--color-border-interactive, #c8dcfa) !important;
+    border-radius: 12px !important;
+    min-height: 44px !important;
+    padding: 0.625rem 1.35rem !important;
+    font-size: 0.875rem !important;
     font-weight: 700 !important;
-    transition: all 180ms ease !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+    transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease !important;
+    cursor: pointer !important;
   }
 
-  body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button):hover,
-  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab):hover {
+  body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+    .learn-cta,
+    .games-link,
+    .luria-game .g-button,
+    .reference-new-activity,
+    #reference-new-activity,
+    .deck-distribute-button,
+    .cronograma-action,
+    .quick-activity-actions button,
+    .drop-file .button,
+    .stats-link,
+    .stats-tab:not(.active),
+    .stats-range button:not(.active),
+    .planner-view-toggle button:not(.active),
+    .agenda-activity-view-switch button:not(.active),
+    .agenda-insight-tabs button:not(.active),
+    .button:not(.active),
+    .btn:not(.active),
+    a.button:not(.active),
+    a.btn:not(.active),
+    button:not(.menu-open):not(.active):not(#quick-activity-close)
+  ):hover,
+  body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta,
+  body[data-ui="v2"][data-page="jogos"] .game-card:hover .games-link {
     background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
     color: #ffffff !important;
     border-color: transparent !important;
@@ -209,23 +261,79 @@
     box-shadow: 0 6px 20px color-mix(in srgb, var(--color-primary, #155dfc) 35%, transparent) !important;
   }
 
-  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-range button.active, .stats-tab.active),
-  body[data-ui="v2"][data-page="cronograma"] :is(.planner-view-toggle button.active, .agenda-activity-view-switch button.active) {
+  body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+    .stats-tab.active,
+    .stats-range button.active,
+    .planner-view-toggle button.active,
+    .agenda-activity-view-switch button.active,
+    .agenda-insight-tabs button.active
+  ) {
     background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
     color: #ffffff !important;
-    border-color: transparent !important;
+    border: 1.5px solid transparent !important;
+    border-radius: 12px !important;
+    min-height: 44px !important;
+    padding: 0.625rem 1.35rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
     box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary, #155dfc) 30%, transparent) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button),
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab) {
+  /* Modo Escuro */
+  :root[data-theme="dark"] body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+    .learn-cta,
+    .games-link,
+    .luria-game .g-button,
+    .reference-new-activity,
+    #reference-new-activity,
+    .deck-distribute-button,
+    .cronograma-action,
+    .quick-activity-actions button,
+    .drop-file .button,
+    .stats-link,
+    .stats-tab:not(.active),
+    .stats-range button:not(.active),
+    .planner-view-toggle button:not(.active),
+    .agenda-activity-view-switch button:not(.active),
+    .agenda-insight-tabs button:not(.active),
+    .button:not(.active),
+    .btn:not(.active),
+    a.button:not(.active),
+    a.btn:not(.active),
+    button:not(.menu-open):not(.active):not(#quick-activity-close)
+  ) {
     background: var(--color-surface, #151e2c) !important;
     color: var(--color-primary-text, #93bbf0) !important;
     border-color: var(--color-border, #243347) !important;
   }
 
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button):hover,
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab):hover {
+  :root[data-theme="dark"] body[data-ui="v2"]:is([data-page="consolidar"],[data-page="jogos"],[data-page="cronograma"],[data-page="estatisticas"]) :is(
+    .learn-cta,
+    .games-link,
+    .luria-game .g-button,
+    .reference-new-activity,
+    #reference-new-activity,
+    .deck-distribute-button,
+    .cronograma-action,
+    .quick-activity-actions button,
+    .drop-file .button,
+    .stats-link,
+    .stats-tab:not(.active),
+    .stats-range button:not(.active),
+    .planner-view-toggle button:not(.active),
+    .agenda-activity-view-switch button:not(.active),
+    .agenda-insight-tabs button:not(.active),
+    .button:not(.active),
+    .btn:not(.active),
+    a.button:not(.active),
+    a.btn:not(.active),
+    button:not(.menu-open):not(.active):not(#quick-activity-close)
+  ):hover,
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta,
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="jogos"] .game-card:hover .games-link {
     background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
     color: #ffffff !important;
     border-color: transparent !important;
@@ -266,15 +374,13 @@
   body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day.today .month-day-number {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day.outside-month {background:var(--color-surface-elevated)!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.month-item,.month-event,.agenda-study-bar-label,.agenda-study-bar-value,.agenda-today-date,.agenda-empty,.agenda-goal-day span,.agenda-goal-day small,.agenda-study-total span) {font-size:.8125rem!important;line-height:1.5!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.planner-nav,.agenda-insight-tabs) {background:var(--color-surface-elevated)!important;border-color:var(--color-border)!important;border-radius:var(--ui-radius-pill, 999px)!important;padding:2px!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs) button {border-radius:var(--ui-radius-pill, 999px)!important;transition:all 160ms ease!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs) button.active {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.planner-nav,.agenda-insight-tabs) {background:var(--color-surface-elevated)!important;border:1px solid var(--color-border)!important;border-radius:14px!important;padding:3px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs) button {border-radius:12px!important;}
 
   body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] .stats-controls-row {overflow:visible!important;min-width:0!important;display:flex!important;align-items:start!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:1rem!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs-shell,.stats-range) {height:auto!important;max-height:none!important;width:auto!important;max-width:100%!important;flex:0 1 auto!important;min-width:0!important;overflow:visible!important;background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-pill, 999px)!important;padding:3px!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs,.stats-range) {display:flex!important;flex-wrap:wrap!important;min-width:0!important;gap:.25rem!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tab,.stats-range button) {font-size:.875rem!important;padding:.625rem .75rem!important;color:var(--color-text-secondary)!important;border-radius:var(--ui-radius-pill, 999px)!important;transition:all 160ms ease!important;}
-  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tab,.stats-range button).active {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs-shell,.stats-range) {height:auto!important;max-height:none!important;width:auto!important;max-width:100%!important;flex:0 1 auto!important;min-width:0!important;overflow:visible!important;background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:14px!important;padding:4px!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs,.stats-range) {display:flex!important;flex-wrap:wrap!important;min-width:0!important;gap:.35rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tab,.stats-range button) {font-size:.875rem!important;padding:.625rem .85rem!important;border-radius:12px!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-grid,.metric-strip) {grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1rem!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) {height:auto!important;min-height:0!important;padding:1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;background:var(--color-surface)!important;box-shadow:var(--ui-shadow)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) span {font-size:.875rem!important;font-weight:500!important;text-transform:none!important;letter-spacing:0!important;color:var(--color-text-secondary)!important;}

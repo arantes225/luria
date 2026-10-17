@@ -3464,21 +3464,28 @@
     position:relative;
     z-index:3;
     margin:0!important;
-    min-height:42px!important;
-    height:42px!important;
-    padding:0 18px!important;
-    border:1px solid rgba(255,255,255,.28)!important;
-    border-radius:10px!important;
-    background:rgba(255,255,255,.14)!important;
-    color:#fff!important;
-    box-shadow:none!important;
-    backdrop-filter:blur(5px);
+    min-height:44px!important;
+    height:auto!important;
+    padding:0.65rem 1.4rem!important;
+    border:1.5px solid var(--color-border-interactive,#c8dcfa)!important;
+    border-radius:12px!important;
+    background:#ffffff!important;
+    color:var(--color-primary,#155dfc)!important;
+    box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;
     white-space:nowrap;
-    font-size:11px!important;
-    font-weight:850!important;
+    font-size:0.875rem!important;
+    font-weight:700!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    transition:all 180ms ease!important;
   }
   body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover{
-    background:rgba(255,255,255,.22)!important;
+    background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;
+    color:#ffffff!important;
+    border-color:transparent!important;
+    transform:translateY(-2px)!important;
+    box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary,#155dfc) 35%,transparent)!important;
   }
 
   :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
@@ -3495,9 +3502,15 @@
   }
   :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity,
   body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
-    border-color:rgba(255,255,255,.28)!important;
-    background:rgba(255,255,255,.14)!important;
-    color:#fff!important;
+    border-color:var(--color-border,#243347)!important;
+    background:var(--color-surface,#151e2c)!important;
+    color:var(--color-primary-text,#93bbf0)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover{
+    background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;
+    color:#ffffff!important;
+    border-color:transparent!important;
   }
   :root[data-theme="leila-mood"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
     background:linear-gradient(
