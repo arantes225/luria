@@ -1,0 +1,698 @@
+import { saveBook } from './bloco-03-utils.mjs';
+
+const book = {
+  slug: 'doenca-do-refluxo-gastroesofagico-na-infancia',
+  title: 'Doença do Refluxo Gastroesofágico na Infância',
+  area: 'Pediatria',
+  materia: 'Gastroenterologia Pediátrica e Puericultura',
+  description: 'Tratado completo sobre Refluxo Gastroesofágico e DRGE na Infância: diferenciação clínica e prognóstica entre o refluxador fisiológico ("golfador feliz") e a DRGE patológica com sinais de alerta; diagnóstico diferencial com estenose hipertrófica de piloro (alcalose hipoclorêmica e USG de piloro), alergia à proteína do leite de vaca (APLV), malrotação com volvo e esofagite eosinofílica; propedêutica complementar (pH-impedanciometria intraluminal multicanal como padrão-ouro, pHmetria de 24h, EDA com biópsias e papel anatômico do SEED); manejo não farmacológico postural e nutricional com prevenção da SMSL; terapia medicamentosa com IBPs e desaconselhamento formal de pró-cinéticos; indicações cirúrgicas de fundoplicatura de Nissen; casos clínicos estruturados e questões comentadas de residência médica.',
+  sections: [
+    {
+      id: 'fisiologia-e-diferenca-refluxador-vs-drge',
+      title: '1. Fisiologia Gastroesofágica Infantil e a Distinção Crucial: Golfador Feliz vs DRGE',
+      body_html: `
+<h3>Anatomia Funcional e Fisiologia do Esôfago no Lactente</h3>
+<p>O refluxo gastroesofágico (RGE) consiste na passagem involuntária e retrógrada do conteúdo gástrico para o esôfago, com ou sem regurgitação externa pela cavidade oral e vômito. Nos primeiros meses de vida, o trato gastrointestinal superior do recém-nascido e do lactente jovem apresenta características anatômicas e neuromotoras transitórias que predispõem fisiologicamente a episódios frequentes de refluxo pós-prandial:</p>
+<ul>
+  <li><strong>Imaturidade do Esfíncter Esofágico Inferior (EEI):</strong> A zona de alta pressão do EEI é mais curta (comprimento &lt; 1,5 cm) e apresenta menor tônus pressórico basal de repouso em comparação ao adulto, além de estar quase inteiramente situada no compartimento intratorácico sob influência da pressão intratorácica negativa;</li>
+  <li><strong>Relaxamentos Transitórios do EEI (TLESRs):</strong> É o principal mecanismo fisiopatológico do refluxo na infância. Correspondem a episódios fisiológicos de relaxamento reflexo do esfíncter independente de deglutições voluntárias, deflagrados primariamente pela distensão do fundo gástrico por leite ou ar deglutido durante as mamadas para permitir a eructação gasosa;</li>
+  <li><strong>Ângulo de His Obtuso:</strong> No lactente, o ângulo formado entre o esôfago distal e a grande curvatura gástrica (ângulo esofagogástrico de His) é obtuso, diferindo do ângulo agudo do adulto, o que compromete o efeito de válvula mecânica intrínseca que impede o refluxo durante elevações transitórias da pressão intra-abdominal;</li>
+  <li><strong>Capacidade Gástrica Reduzida e Volume Alimentar Desproporcional:</strong> O estômago do lactente possui volume complacente limitado, enquanto a ingestão líquida diária de leite materno ou fórmula equivale a 150 a 180 mL/kg/dia (proporcionalmente, equivaleria a um adulto de 70 kg ingerir 10 a 12 litros de líquido diariamente);</li>
+  <li><strong>Decúbito Horizontal Predominante e Dieta 100% Líquida:</strong> O lactente permanece a maior parte do dia deitado na posição horizontal, desprovido do efeito benéfico da gravidade no clareamento esofágico, e alimenta-se exclusivamente de dieta líquida que possui baixa viscosidade e menor tempo de permanência gástrica.</li>
+</ul>
+
+<h3>O "Refluxador Fisiológico" ou "Golfador Feliz" (Happy Spitter)</h3>
+<p>O refluxo gastroesofágico fisiológico é um processo maturativo universal, benigno e autolimitado da primeira infância. Caracteriza-se pelo lactente que apresenta episódios repetidos de regurgitação de leite após as mamadas, mas que preenche rigorosamente todos os critérios de bem-estar:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Critério Clínico de Avaliação</th>
+      <th>O "Refluxador Fisiológico" / Golfador Feliz</th>
+      <th>A Doença do Refluxo Gastroesofágico (DRGE)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Estado Geral e Humor</strong></td>
+      <td>Criança ativa, sorridente, afebril, brinca e sorri logo após golfar ("happy spitter"). Sem choro paroxístico ou irritabilidade desproporcional.</td>
+      <td>Irritabilidade contínua, choro inconsolável durante ou logo após mamadas, arqueamento de tronco, fácies de dor retroesternal crônica e distúrbios graves do sono.</td>
+    </tr>
+    <tr>
+      <td><strong>Curva Pôndero-Estatural</strong></td>
+      <td><strong>Ganho de peso excelente</strong>, acompanhando ou superando os percentis normais das curvas da OMS (ganho &ge; 25 a 30 g/dia no primeiro trimestre).</td>
+      <td><strong>Estagnação ou perda ponderal (deficit pôndero-estatural)</strong>, queda de canais de percentis na curva de crescimento da OMS (falência do crescimento / failure to thrive).</td>
+    </tr>
+    <tr>
+      <td><strong>Comportamento Alimentar</strong></td>
+      <td>Apetite vigoroso, sucção forte ao seio ou mamadeira, aceitação espontânea de todas as mamadas.</td>
+      <td>Recusa alimentar progressiva, anorexia, aversão oral à mamadeira ("morde o bico, chora e solta"), saciedade precoce ou engasgos frequentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Repercussões Respiratórias</strong></td>
+      <td>Totalmente ausentes. Ausculta pulmonar normal, sem estridor, sem tosse noturna, sem episódios de laringite ou sibilância.</td>
+      <td>Tosse crônica noturna persistente, sibilância recorrente ("lactente chiador" de difícil controle), pneumonias aspirativas repetidas, laringite estridulosa crônica e eventos de BRUE/apneia obstrutiva.</td>
+    </tr>
+    <tr>
+      <td><strong>História Natural e Evolução</strong></td>
+      <td>Início nas primeiras 3 a 8 semanas de vida, pico de regurgitações aos <strong>4 meses</strong> (acomete até 60% a 70% dos lactentes sadios). Resolução espontânea em mais de 90% a 95% dos casos até os <strong>12 a 18 meses de vida</strong> (coincidindo com a postura sentada/em pé e alimentação pastosa/sólida).</td>
+      <td>Evolução crônica com persistência de sintomas e complicações teciduais (esofagite erosiva, anemia ferropriva, estenose esofágica péptica).</td>
+    </tr>
+    <tr>
+      <td><strong>Conduta Médica Apropriada</strong></td>
+      <td><strong>EXCLUSIVAMENTE ORIENTAÇÃO E TRANQUILIZAÇÃO FAMILIAR.</strong> Proscrição absoluta de exames complementares invasivos e de medicamentos antiácidos ou pró-cinéticos.</td>
+      <td>Investigação propedêutica estruturada, medidas posturais e dietéticas padronizadas e terapia farmacológica direcionada com IBPs quando indicada.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Definição Formal da Doença do Refluxo Gastroesofágico (DRGE)</h3>
+<p>Conforme o consenso internacional da NASPGHAN (<em>North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition</em>) e ESPGHAN (<em>European Society for Paediatric Gastroenterology, Hepatology and Nutrition</em>), a <strong>Doença do Refluxo Gastroesofágico (DRGE)</strong> existe quando o refluxo do conteúdo gástrico provoca <strong>sintomas incômodos que afetam o bem-estar da criança e/ou complicações teciduais clínicas documentadas</strong> (esofagite, sangramento digestivo, estenose, desnutrição ou comprometimento respiratório grave).</p>
+`
+    },
+    {
+      id: 'fisiopatologia-e-manifestacoes-drge',
+      title: '2. Fisiopatologia, Manifestações Clínicas e Sinais de Alarme (Red Flags)',
+      body_html: `
+<h3>Mecanismos Lesivos da Mucosa Esofágica</h3>
+<p>O epitélio do esôfago é pavimentoso estratificado não queratinizado, biologicamente desprovido da espessa camada de muco alcalino e bicarbonato que protege o estômago contra a acidez luminal. Quando o conteúdo gástrico reflui repetidamente para o lúmen esofágico:</p>
+<ol>
+  <li><strong>Agressão Ácida e Péptica:</strong> O ácido clorídrico (HCl) associado à pepsina ativada em pH ácido cliva proteínas de adesão intercelular (ocludinas e claudinas das junções de oclusão epiteliais). Isso provoca dilatação dos espaços intercelulares, permitindo a retrodifusão de íons H+ para as camadas profundas da submucosa, onde estimulam terminações nervosas sensoriais livres (causando dor e pirose) e deflagram influxo inflamatório neutrofílico e eosinofílico, culminando em erosões, microulcerações e sangramento oculto;</li>
+  <li><strong>Refluxo Não Ácido e Misto (Biliar):</strong> No lactente, o estômago permanece tamponado pelo leite materno ou fórmula alcalina durante longos períodos pós-prandiais (pH entre 4 e 7). Mesmo não sendo puramente ácido, o refluxo volumoso contém sais biliares conjugados e enzimas pancreáticas (tripsina), que exercem ação detergente sobre a bicamada fosfolipídica celular, perpetuando a lesão mucosa e os sintomas motores;</li>
+  <li><strong>Dismotilidade e Hipomotilidade de Depuração:</strong> Crianças com DRGE grave frequentemente apresentam ondas peristálticas secundárias esofágicas ineficazes, o que prolonga o tempo de contato ácido-mucoso (tempo de exposição ácida elevado).</li>
+</ol>
+
+<h3>Quadro Clínico em Lactentes vs Crianças Maiores e Adolescentes</h3>
+<p>A apresentação clínica da DRGE varia radicalmente conforme a idade e maturação cognitiva do paciente:</p>
+<ul>
+  <li><strong>Lactentes e Crianças Menores (&lt; 2 anos):</strong> Incapazes de verbalizar pirose retroesternal. Manifestam-se por irritabilidade extrema, choro inconsolável inconsequente às mamadas, aversão à alimentação (recusa da mamadeira após o primeiro gole, associada a fome voraz inicial), arqueamento do tronco para trás (opistótono), ganho insuficiente de peso ou emagrecimento, vômitos pós-prandiais, soluços persistentes e distúrbios de consolidação do sono;</li>
+  <li><strong>Crianças Maiores (&gt; 2 a 5 anos) e Adolescentes:</strong> Apresentam sintomas típicos análogos aos adultos: pirose retroesternal ("queimação no peito"), regurgitação ácida gustativa na garganta/boca, dor epigástrica, disfagia a alimentos sólidos, odinofagia, pigarro crônico, halitose e erosões do esmalte dentário (perimólise nos dentes molares posteriores).</li>
+</ul>
+
+<h3>Sinais de Alarme (Red Flags): Quando Não é Apenas Refluxo Simples</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Sinal de Alerta / "Red Flag"</th>
+      <th>Fisiopatologia Subjacente</th>
+      <th>Etiologias Graves a Investigar com Prioridade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Vômitos Biliosos (Coloração Verde-Escura)</strong></td>
+      <td>Obstrução mecânica da luz intestinal distal à ampola de Vater (segunda porção duodenal).</td>
+      <td><strong>Emergência cirúrgica pediátrica absoluta!</strong> Má rotação intestinal com volvo de intestino médio, atresia ou estenose duodenal, bridas de Ladd.</td>
+    </tr>
+    <tr>
+      <td><strong>Vômitos em Jato Pós-Prandiais Imediatos e Fome Voraz</strong></td>
+      <td>Obstrução mecânica concêntrica do canal pilórico gástrico de evolução subaguda (início entre 3 e 6 semanas de vida).</td>
+      <td><strong>Estenose Hipertrófica de Piloro (EHP)</strong>, com alcalose metabólica hipoclorêmica.</td>
+    </tr>
+    <tr>
+      <td><strong>Hematêmese, Melena ou Fezes Muco-Sanguinolentas</strong></td>
+      <td>Sangramento ativo por esofagite erosiva grave, úlcera péptica gástrica ou inflamação colônica alérgica.</td>
+      <td>Esofagite erosiva grau C/D, úlcera de estresse, Alergia à Proteína do Leite de Vaca (APLV), discrasias hemorrágicas, Síndrome de Mallory-Weiss.</td>
+    </tr>
+    <tr>
+      <td><strong>Má Progressão Ponderal / Parada de Crescimento (Failure to Thrive)</strong></td>
+      <td>Perda calórica líquida maciça por vômitos frequentes associada a anorexia inflamatória induzida pela esofagite.</td>
+      <td>DRGE grave complicada, erros inatos do metabolismo, fibrose cística, doença celíaca, cardiopatia congênita descompensada.</td>
+    </tr>
+    <tr>
+      <td><strong>Abaulamento de Fontanela, Macrocefalia Rápida ou Convulsões</strong></td>
+      <td>Hipertensão intracraniana gerando vômitos centrais em jato sem náusea prévia.</td>
+      <td>Meningite bacteriana, hematoma subdural (trauma/abuso infantil), hidrocefalia aguda, tumor de fossa posterior.</td>
+    </tr>
+    <tr>
+      <td><strong>Início Muito Tardio (após 6 a 12 meses) ou Persistência após 18 meses</strong></td>
+      <td>Etiologias não funcionais de refluxo.</td>
+      <td>Esofagite Eosinofílica (EoE), acalásia idiopática, hérnia de hiato volumosa, estenose esofágica congênita.</td>
+    </tr>
+    <tr>
+      <td><strong>Distensão Abdominal Importante e Falha de Eliminação de Mecônio</strong></td>
+      <td>Obstrução intestinal baixa ou aganglionose congênita.</td>
+      <td>Doença de Hirschsprung (megacólon congênito), íleo meconial, ânus imperfurado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Síndrome de Sandifer: O Espasmo Neurogastrointestinal Clássico</h3>
+<p>A <strong>Síndrome de Sandifer</strong> é uma manifestação neurocomportamental paroxística rara e altamente específica da DRGE em lactentes e crianças pequenas. Caracteriza-se por episódios estereotipados de <strong>postura anormal de arqueamento do tronco para trás (opistótono), rotação da cabeça e torcicolo espasmódico lateral</strong> que ocorrem tipicamente durante ou até 30 minutos após as mamadas, com duração de 1 a 3 minutos por crise. A criança frequentemente apresenta fácies de angústia e choro, mas <em>mantém o nível de consciência preservado</em> e o eletroencefalograma (EEG) é estritamente normal.</p>
+<p><em>Mecanismo Biológico:</em> O arqueamento cervical e a hiperextensão do pescoço produzem tração no esôfago distal, fechando o ângulo de His e desobstruindo a via aérea laringotraqueal superior, atuando como um reflexo postural inato para aliviar a dor retroesternal em queimação provocada pela esofagite e prevenir a broncoaspiração de conteúdo ácido. Erro frequente em provas: confundir Sandifer com epilepsia (crises convulsivas focais) ou discinesia extrapiramidal, submetendo a criança a anticonvulsivantes desnecessários. O tratamento com IBP ou correção do refluxo resolve completamente os espasmos posturais em poucos dias.</p>
+`
+    },
+    {
+      id: 'diagnostico-diferencial-pediatrico',
+      title: '3. Diagnósticos Diferenciais Críticos na Infância: EHP, APLV, Má Rotação e EoE',
+      body_html: `
+<h3>Estenose Hipertrófica de Piloro (EHP)</h3>
+<p>A Estenose Hipertrófica de Piloro consiste na hipertrofia e hiperplasia progressiva das camadas musculares circulares e longitudinais do piloro, provocando estreitamento concêntrico severo e elongação do canal pilórico com obstrução mecânica quase total ao esvaziamento gástrico. É a causa cirúrgica mais comum de vômitos não biliosos no lactente jovem (incidência de 2 a 5 por 1.000 nascidos vivos, com predomínio clássico em <strong>meninos primogênitos</strong> na proporção de 4:1):</p>
+<ul>
+  <li><strong>Idade Típica de Início:</strong> Os vômitos iniciam-se classicamente entre a <strong>3ª e a 6ª semana de vida</strong> (pico ao redor de 1 mês de idade), sendo raríssima antes de 2 semanas ou após 3 meses;</li>
+  <li><strong>Padrão dos Vômitos:</strong> Vômitos lácteos <strong>NÃO BILIOSOS</strong> (de coloração esbranquiçada ou com leite coagulado), que surgem logo após as mamadas com intensidade progressiva até se tornarem <strong>vômitos em jato ("projectile vomiting")</strong> e explosivos. Logo após o vômito, a criança não apresenta prostração, mas sim <strong>fome voraz insaciável</strong> ("lactente ávido pelo seio"), voltando a sugar vigorosamente;</li>
+  <li><strong>Exame Físico:</strong> Sinais de desidratação e emagrecimento; visualização de ondas peristálticas gástricas de hiperperistaltismo de luta propagando-se da esquerda para a direita no epigástrio (ondas de Kussmaul); e palpação da <strong>"Oliva Pilórica"</strong> (massa firme, móvel, ovoide de 1 a 2 cm de consistência fibrocartilaginosa localizada no hipocôndrio direito ou epigástrio, mais facilmente palpável durante a mamada tranquila ou logo após o esvaziamento gástrico por sonda);</li>
+  <li><strong>Distúrbio Metabólico Clássico de Prova:</strong> A perda contínua de suco gástrico rico em ácido clorídrico (HCl) e potássio pela via retrógrada desencadeia a clássica <strong>Alcalose Metabólica Hipoclorêmica e Hipocalêmica</strong> (&darr; Cl-, &darr; K+, &uarr; HCO3-, &uarr; pH arterial):
+    Com a contração do volume extracelular, o túbulo renal proximal reabsorve avidamente sódio e bicarbonato para manter a volemia. Na fase tardia, com a depleção grave de potássio, os túbulos coletores renais passam a excretar íons H+ na urina em troca do sódio reabsorvido, gerando o fenômeno da <strong>Acidúria Paradoxal</strong> (urina ácida em um paciente em alcalose metabólica sistêmica grave);</li>
+  <li><strong>Diagnóstico por Imagem:</strong> O método de escolha é a <strong>Ultrassonografia Abdominal</strong>, que demonstra os critérios diagnósticos clássicos: <strong>espessura do músculo pilórico &ge; 3,0 mm</strong> (ou &gt; 3,5 mm) e <strong>comprimento do canal pilórico &ge; 15 mm</strong>;</li>
+  <li><strong>Manejo Pré-Operatório Obrigatório:</strong> A cirurgia (piloromiotomia extramucosa de Fredet-Ramstedt) <strong>NÃO É UMA EMERGÊNCIA CIRÚRGICA IMEDIATA! É UMA EMERGÊNCIA MÉDICA CLÍNICA.</strong> Jamais operar o paciente em alcalose metabólica hipoclorêmica desidratado (risco de apneia grave pós-operatória e arritmias cardíacas intraoperatórias). O paciente deve ser internado, colocado em jejum com sonda nasogástrica aberta e submetido à hidratação venosa vigorosa com Soro Fisiológico a 0,9% enriquecido com Cloreto de Potássio até a normalização completa do cloro sérico (&gt; 100 mEq/L), potássio (&gt; 3,5 a 4,0 mEq/L), bicarbonato (&lt; 26 a 28 mEq/L) e diurese adequada antes de ir ao centro cirúrgico.</li>
+</ul>
+
+<h3>Alergia à Proteína do Leite de Vaca (APLV)</h3>
+<p>A APLV é a alergia alimentar mais comum da infância, com grande sobreposição clínica com a DRGE em lactentes menores de 1 ano. Manifesta-se por mecanismos imunológicos mediados por IgE (urticária aguda, angioedema, anafilaxia imediata) ou não mediados por IgE (mecanismo celular: proctocolite alérgica, enteropatia induzida por proteína alimentar):</p>
+<ul>
+  <li><strong>Quadro Clínico Diferencial:</strong> Regurgitações e vômitos frequentes associados a <strong>estrias de sangue vivo e muco nas fezes (hematoquezia)</strong> em lactente com excelente estado geral e sem fissura anal; dermatite atópica / eczema facial grave; histórico familiar forte de atopia em pais e irmãos; cólicas intensas desproporcionais;</li>
+  <li><strong>Associação com DRGE:</strong> A inflamação imunomediada da mucosa gástrica e duodenal lentifica o esvaziamento gástrico e deflagra episódios frequentes de refluxo secundário;</li>
+  <li><strong>Conduta Diagnóstica e Terapêutica (Teste de Exclusão):</strong> Não existem exames laboratoriais confiáveis para formas não mediadas por IgE. A conduta padrão-ouro é o <strong>Teste Terapêutico de Exclusão por 2 a 4 semanas</strong>:
+    <ol>
+      <li>Em lactente em aleitamento materno exclusivo: a mãe realiza <strong>Dieta de Exclusão Total de Leite de Vaca e Derivados</strong> por 2 a 4 semanas com reposição de cálcio oral;</li>
+      <li>Em lactente em uso de fórmula infantil: substitui-se a fórmula convencional por <strong>Fórmula Extensamente Hidrolisada (FEH)</strong> com base em soro ou caseína;</li>
+      <li>Se houver desaparecimento completo dos sintomas e regressão após o teste de provocação oral supervisionado subsequente, confirma-se a APLV e evita-se o uso desnecessário de antiácidos e IBPs.</li>
+    </ol>
+  </li>
+</ul>
+
+<h3>Malrotação Intestinal com Volvo de Intestino Médio</h3>
+<p>Anomalia congênita da rotação e fixação embriológica da alça intestinal primitiva (que deveria sofrer rotação anti-horária de 270 graus ao redor da artéria mesentérica superior entre a 4ª e a 10ª semana de gestação). Na malrotação, a raiz do mesentério permanece anormalmente estreita e o ceco fixa-se no hipocôndrio direito por bridas peritoneais anômalas (bridas de Ladd) que comprimem extrinsecamente o duodeno:</p>
+<ul>
+  <li><strong>Quadro Clínico:</strong> Lactente previamente hígido que subitamente desenvolve <strong>VÔMITOS VERDES FRANCOS (BILIOSOS)</strong> associados a dor abdominal aguda intensa, irritabilidade súbita com choro inconsolável e palidez, evoluindo rapidamente para distensão abdominal, sangramento retal (enterorragia) e choque distributivo séptico por isquemia e necrose de todo o intestino delgado;</li>
+  <li><strong>Diagnóstico:</strong> A <strong>Serigrafia Esôfago-Estômago-Duodeno (SEED)</strong> é o exame padrão-ouro, revelando ausência da transição duodenojejunal cruzando a linha média para a esquerda (ângulo de Treitz à direita e abaixo da sua posição normal) e aspecto em <strong>saca-rolhas (corkscrew sign)</strong> na presença de volvo;</li>
+  <li><strong>Conduta:</strong> <strong>Laparotomia exploradora imediata de urgência (Procedimento de Ladd)</strong>: desvolvo anti-horário do intestino médio, secção das bridas de Ladd, alargamento da raiz do mesentério e apendicectomia profilática.</li>
+</ul>
+
+<h3>Esofagite Eosinofílica (EoE)</h3>
+<p>Doença imunomediada crônica do esôfago caracterizada clinicamente por sintomas de disfunção esofágica e histologicamente por inflamação eosinofílica densa restrita ao esôfago:</p>
+<ul>
+  <li><strong>Clínica em Crianças Maiores:</strong> Disfagia progressiva para alimentos sólidos, dor torácica retroesternal ao engolir, sensação de parada do bolo alimentar, episódios de <strong>impactação esofágica de carne</strong> exigindo remoção endoscópica de urgência, e sintomas semelhantes a DRGE que <strong>não respondem à terapia com IBP em dose máxima</strong>;</li>
+  <li><strong>Diagnóstico Endoscópico:</strong> EDA com visualização de anéis traqueiformes concêntricos no esôfago ("esôfago em traqueia de gato"), sulcos longitudinais lineares e exsudatos esbranquiçados puntiformes (microabscessos de eosinófilos);</li>
+  <li><strong>Critério Histopatológico Obrigatório:</strong> Presença de <strong>&ge; 15 eosinófilos por campo de grande aumento (CGA)</strong> no epitélio da mucosa esofágica em biópsias proximais e distais. Tratamento inclui dieta empírica de eliminação de alimentos alergênicos (leite, trigo, ovo, soja), corticosteroides tópicos deglutidos (fluticasona ou budesonida viscosa oral) ou biológicos anti-IL-4/IL-13.</li>
+</ul>
+`
+    },
+    {
+      id: 'propedeutica-complementar-e-padroes-ouro',
+      title: '4. Propedêutica Complementar na DRGE: Padrões-Ouro e Indicações Precisas',
+      body_html: `
+<h3>Quando Indicar Exames Complementares?</h3>
+<p>Na prática pediátrica, <strong>não se solicita nenhum exame para o lactente com refluxo fisiológico simples (golfador feliz)</strong>. A investigação armada destina-se exclusivamente a: crianças com sinais de alarme (red flags), falência do tratamento conservador em DRGE suspeita, sintomas atípicos (tosse refratária, apneia, estridor), dor retroesternal persistente, suspeita de esofagite erosiva ou antes de intervenções cirúrgicas antirrefluxo.</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Método Diagnóstico</th>
+      <th>Mecanismo e Parâmetros Avaliados</th>
+      <th>Principais Indicações Clínicas</th>
+      <th>Limitações e Armadilhas Clássicas de Prova</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>pH-Impedanciometria Esofágica Intraluminal Multicanal (pH-MII de 24h)</strong></td>
+      <td><strong>PADRÃO-OURO ATUAL (NASPGHAN/ESPGHAN).</strong> Eletrodos múltiplos de anéis metálicos dispostos em cateter esofágico flexível medem a impedância elétrica intraluminal combinada com sensor de pH. A impedância detecta a movimentação de bolos líquidos e gasosos (líquidos conduzem eletricidade e reduzem a impedância; ar aumenta a impedância), registrando a direção retrógrada e a altura atingida pelo refluxo.</td>
+      <td>• Padrão-ouro para diferenciar refluxo ácido (pH &lt; 4), fracamente ácido (pH 4 a 7) e alcalino/biliar (pH &gt; 7);<br>• Correlaciona sintomas clínicos paroxísticos com episódios reais de refluxo por meio do <strong>Índice de Sintomas (SI &ge; 50%)</strong> e da <strong>Probabilidade de Associação de Sintomas (SAP &ge; 95%)</strong>;<br>• Investigação de apneia/BRUE, tosse crônica e asma refratária em uso ou não de IBP.</td>
+      <td>Exame invasivo, custo elevado, exige cooperação para manter cateter nasoesofágico por 24 horas e software específico de leitura.</td>
+    </tr>
+    <tr>
+      <td><strong>pHmetria Esofágica Convencional de 24 horas</strong></td>
+      <td>Cateter nasoesofágico com eletrodo de antimônio posicionado no esôfago distal (3 a 5 cm acima do EEI). Registra o <strong>Índice de Refluxo (RI)</strong>, que é a porcentagem do tempo total do exame em que o pH esofágico permanece inferior a 4,0 (valor normal em lactentes: RI &lt; 3% a 7%).</td>
+      <td>• Avaliação exclusiva do refluxo ácido e monitoramento da eficácia de supressão ácida do IBP;<br>• Diagnóstico de DRGE ácida oculta em pneumopatas crônicos.</td>
+      <td><strong>Limitação grave no lactente:</strong> É totalmente <em>cega para o refluxo não ácido ou fracamente ácido</em>. Como o lactente mama a cada 2 a 3 horas, o leite atua como um potente tampão alcalino gástrico, mantendo o estômago com pH entre 5 e 6 por até 2 horas pós-mamada. Portanto, a pHmetria convencional pode vir falsamente normal em lactentes sintomáticos!</td>
+    </tr>
+    <tr>
+      <td><strong>Endoscopia Digestiva Alta (EDA) com Biópsias Múltiplas</strong></td>
+      <td>Visualização direta da mucosa do esôfago, estômago e duodeno com coleta mandatória de múltiplos fragmentos de biópsia da mucosa esofágica distal e proximal.</td>
+      <td>• Diagnóstico e estadiamento da <strong>Esofagite Erosiva</strong> (Classificação de Los Angeles graus A, B, C e D);<br>• Detecção de complicações graves: estenose péptica de esôfago e Esôfago de Barrett (metaplasia intestinal com células caliciformes);<br>• Diagnóstico diferencial obrigatório com <strong>Esofagite Eosinofílica (EoE &ge; 15 eos/CGA)</strong>, esofagite infecciosa por cândida ou herpes em imunodeprimidos.</td>
+      <td>Exame com sedação/anestesia geral em crianças. <em>Importante:</em> Uma EDA normal NÃO exclui DRGE! Mais de 60% das crianças com DRGE patológica têm a forma não erosiva (NERD).</td>
+    </tr>
+    <tr>
+      <td><strong>Serigrafia Esôfago-Estômago-Duodeno (SEED / Raio-X Contrastado)</strong></td>
+      <td>Ingestão oral de contraste de bário seguida de radiografias seriadas dinâmicas sob escopia para avaliar a anatomia luminal e motilidade do trato gastrointestinal alto.</td>
+      <td><strong>EXAME EXCLUSIVAMENTE ANATÔMICO!</strong> Indicado formalmente para excluir anomalias congênitas estruturais:<br>• Má rotação intestinal com volvo de intestino médio;<br>• Hérnia hiatal volumosa;<br>• Estenose de esôfago congênita ou adquirida;<br>• Estenose hipertrófica de piloro;<br>• Acalásia e membranas esofágicas.</td>
+      <td><strong>PEGADINHA CLÁSSICA DE PROVA:</strong> O SEED <em>NÃO DEVE SER SOLICITADO PARA DIAGNOSTICAR OU QUANTIFICAR A DRGE!</em> Como o exame dura poucos minutos, a observação de refluxo de bário pode ocorrer em 50% dos lactentes normais sadios (falso-positivo), enquanto a ausência de refluxo naqueles minutos não descarta a doença (falso-negativo).</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'tratamento-nao-farmacologico-e-posicional',
+      title: '5. Manejo Não Farmacológico: Medidas Posturais, Dieta e Segurança do Sono',
+      body_html: `
+<h3>Segurança do Sono no Primeiro Ano de Vida e a Proscrição do Decúbito Ventral</h3>
+<p>Historicamente, acreditava-se que colocar o lactente em decúbito ventral (de bruços / pronação) ou em decúbito lateral diminuía as queixas de refluxo gastroesofágico por manter a junção esofagogástrica em nível superior ao conteúdo gástrico. Entretanto, evidências epidemiológicas definitivas e universais demonstraram que o decúbito ventral durante o sono eleva em mais de 5 a 10 vezes o risco de <strong>Síndrome da Morte Súbita do Lactente (SMSL / SIDS)</strong>, decorrente de asfixia posicional, reinalação de dióxido de carbono e falha nos mecanismos neurológicos de despertar do tronco encefálico.</p>
+
+<p>Por esse motivo, as diretrizes consolidadas da Sociedade Brasileira de Pediatria (SBP), da <em>American Academy of Pediatrics</em> (AAP) e da NASPGHAN/ESPGHAN são absolutas e intransigentes:</p>
+<blockquote><strong>"PARA DORMIR, TODO LACTENTE COM MENOS DE 1 ANO DE VIDA DEVE SER COLOCADO OBRIGATORIAMENTE EM DECÚBITO DORSAL (DE BARRIGA PARA CIMA), EM SUPERFÍCIE PLANA E FIRME, MESMO NAQUELES COM DIAGNÓSTICO DE REFLUXO OU DRGE!"</strong></blockquote>
+<p><em>Mito Clínico Derrubado:</em> Pais frequentemente temem que dormir de barriga para cima aumente o risco de o bebê engasgar e sufocar com o próprio vômito. A anatomia respiratória prova o contrário: em decúbito dorsal, a traqueia situa-se <em>anteriormente</em> ao esôfago; caso ocorra refluxo, a gravidade mantém o leite no esôfago e a epiglote sela a via aérea. Em decúbito ventral (bruços), a traqueia fica abaixo do esôfago, de modo que qualquer conteúdo refluído drena diretamente por gravidade para a laringe e traqueia, aumentando o risco de aspiração pulmonar fatal.</p>
+
+<h3>Medidas Posturais no Período Pós-Prandial Vigíl (Acordado)</h3>
+<p>Durante o período em que o lactente está acordado e sob supervisão direta dos pais:</p>
+<ul>
+  <li>Manter a criança em <strong>posição verticalizada ou elevada a 30 a 45 graus no colo</strong> por cerca de <strong>20 a 30 minutos após o término de cada mamada</strong>;</li>
+  <li>Evitar colocar o bebê imediatamente no carrinho, bebê-conforto ou cadeirinha de automóvel: o posicionamento fletido semi-sentado no bebê-conforto promove compressão da parede abdominal sobre o estômago, elevando a pressão gástrica e exacerbando os episódios de refluxo;</li>
+  <li>Evitar roupas apertadas, faixas abdominais e fraldas excessivamente comprimidas que aumentem a pressão intra-abdominal.</li>
+</ul>
+
+<h3>Modificações Dietéticas na Alimentação do Lactente</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Intervenção Dietética</th>
+      <th>Como Implementar na Prática</th>
+      <th>Efeitos Clínicos Comprovados e Cuidados</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fracionamento das Mamadas</strong></td>
+      <td>Oferecer mamadas com volumes menores por refeição em intervalos mais frequentes, respeitando a capacidade gástrica volumétrica da criança.</td>
+      <td>Diminui a distensão da parede gástrica e reduz o estímulo mecânico para o disparo de relaxamentos transitórios do EEI (TLESRs).</td>
+    </tr>
+    <tr>
+      <td><strong>Espessamento Alimentar de Fórmulas (Fórmulas Anti-Regurgitação - AR)</strong></td>
+      <td>Uso de fórmulas infantis comerciais já espessadas industrialmente com <strong>goma de semente de alfarroba ou amido de milho pré-gelatinizado</strong> (fórmulas AR), ou adição controlada de espessantes em lactentes que utilizam mamadeira.</td>
+      <td><strong>Atenção para Provas:</strong> O espessamento alimentar <em>reduz significativamente o volume e a frequência visível das regurgitações externas</em> (melhorando muito a ansiedade dos pais e a higiene), mas <strong>NÃO diminui o número total de episódios de refluxo registrados na pH-impedanciometria</strong> nem o tempo de exposição ácida esofágica. <em>Contraindicação:</em> Não se deve espessar leite materno nem utilizar espessantes de farinhas caseiras em menores de 4 meses por risco de excesso de calorias e cólicas fermentativas.</td>
+    </tr>
+    <tr>
+      <td><strong>Manutenção e Incentivo do Aleitamento Materno</strong></td>
+      <td>O aleitamento materno exclusivo sob livre demanda deve ser sempre preservado e incentivado.</td>
+      <td>O leite materno possui esvaziamento gástrico quase duas vezes mais rápido do que as fórmulas infantis à base de leite de vaca (tempo médio de esvaziamento de 48 minutos vs 78 minutos), o que minimiza o tempo em que o estômago permanece repleto.</td>
+    </tr>
+    <tr>
+      <td><strong>Teste Terapêutico de Exclusão de Proteínas Lácteas</strong></td>
+      <td>Dieta materna isenta de leite de vaca ou fórmula extensamente hidrolisada por 2 a 4 semanas.</td>
+      <td>Indicado antes de iniciar IBPs em lactentes com regurgitações volumosas, irritabilidade crônica ou má progressão ponderal para afastar Alergia à Proteína do Leite de Vaca (APLV).</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'terapia-farmacologica-ibp-vs-procineticos',
+      title: '6. Terapia Medicamentosa na DRGE: Uso Racional de IBPs e Proscrição de Pró-Cinéticos',
+      body_html: `
+<h3>Indicações Reais do Tratamento Farmacológico</h3>
+<p>O tratamento com medicamentos supressores de ácido está formalmente indicado apenas nos casos comprovados de <strong>DRGE com esofagite erosiva endoscópica, síndrome de Sandifer, estenose péptica de esôfago ou DRGE patológica grave documentada por pH-impedanciometria que falhou às medidas não farmacológicas</strong>. É um grave erro médico prescrever inibidores da bomba de prótons para lactentes com refluxo fisiológico simples ou cólica do lactente.</p>
+
+<h3>Inibidores da Bomba de Prótons (IBPs): Fármacos de Escolha</h3>
+<p>Os IBPs são os agentes de primeira linha para a cicatrização da mucosa esofágica e controle sintomático em crianças com DRGE erosiva:</p>
+<ul>
+  <li><strong>Mecanismo Farmacodinâmico:</strong> Pró-fármacos lipofílicos de base fraca que se acumulam seletivamente nos canalículos secretores das células parietais gástricas. No ambiente intensamente ácido (pH &lt; 2), sofrem protonação e convertem-se na forma ativa (sulfenamida), que forma ligações covalentes dissulfeto irreversíveis com os resíduos de cisteína da enzima <strong>H+/K+-ATPase (bomba de prótons)</strong>, inibindo a via final comum da secreção ácida gástrica estimulada por gastrina, histamina e acetilcolina;</li>
+  <li><strong>Posologia Pediátrica:</strong>
+    <ul>
+      <li><strong>Esomeprazol:</strong> Fármaco com aprovação pediátrica a partir de 1 mês de vida na dose de <strong>1 a 2 mg/kg/dia</strong> (dividido em 1 a 2 tomadas);</li>
+      <li><strong>Omeprazol:</strong> Dose de <strong>1 a 2 mg/kg/dia</strong> por via oral;</li>
+      <li><em>Horário Correto de Administração:</em> Para alcançar a máxima eficácia, o IBP deve ser administrado <strong>30 a 60 minutos antes da primeira mamada ou refeição da manhã</strong>, momento em que o maior número de bombas de prótons está ativado e sendo inserido na membrana canalicular. A duração inicial recomendada do curso terapêutico é de <strong>4 a 8 semanas</strong>, com tentativa de desmame gradual subsequente;</li>
+    </ul>
+  </li>
+  <li><strong>Riscos e Efeitos Adversos do Uso Prolongado de IBPs em Lactentes:</strong>
+    <p>O ácido clorídrico gástrico constitui uma barreira imunológica inata fundamental contra a colonização bacteriana do trato digestivo e vias aéreas. A supressão ácida profunda crônica e indiscriminada em lactentes está associada a:</p>
+    <ol>
+      <li>Aumento de 2 a 4 vezes no risco de <strong>infecções gastrointestinais agudas</strong> (gastroenterites por <em>Salmonella</em>, <em>Campylobacter</em> e colite pseudomembranosa por <em>Clostridioides difficile</em>);</li>
+      <li>Aumento significativo no risco de <strong>pneumonia adquirida na comunidade (PAC)</strong> por microaspiração de microbiota orofaríngea proliferada em pH gástrico alcalinizado;</li>
+      <li>Menor absorção de micronutrientes que dependem do meio ácido para solubilização (ferro não heme, cálcio, magnésio e vitamina B12).</li>
+    </ol>
+  </li>
+</ul>
+
+<h3>Bloqueadores dos Receptores H2 de Histamina (Anti-H2)</h3>
+<p>Os antagonistas H2 (como a <strong>Famotidina</strong> na dose de 0,5 a 1 mg/kg/dia) inibem competitivamente os receptores H2 nas células parietais. Apresentam início de ação mais rápido que os IBPs, mas possuem uma limitação farmacológica clássica cobrada em provas: o fenômeno da <strong>Taquifilaxia (Tolerância Farmacológica Rápida)</strong>, que ocorre após apenas 1 a 2 semanas de uso contínuo decorrente do aumento compensatório de receptores e da gastrina sérica, reduzindo expressivamente a sua eficácia terapêutica a médio prazo.</p>
+
+<h3>Por que os Pró-Cinéticos são Formalmente DESACONSELHADOS na Pediatria?</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Fármaco Pró-Cinético</th>
+      <th>Mecanismo Farmacológico Proposto</th>
+      <th>Toxicidade Grave e Justificativa da Contraindicação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Metoclopramida</strong></td>
+      <td>Antagonista dopaminérgico D2 periférico e central; estimula motilidade gastroduodenal.</td>
+      <td><strong>Toxicidade neurológica severa.</strong> Atravessa livremente a barreira hematoencefálica imatura do lactente, provocando <strong>reações extrapiramidais agudas</strong> (crises oculógiras, opistótono agudo, trismo e torcicolo distônico simulando tétano ou meningite), sedação profunda e risco de <strong>discinesia tardia irreversível</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Domperidona</strong></td>
+      <td>Antagonista D2 periférico com menor passagem na barreira hematoencefálica.</td>
+      <td><strong>Cardiotoxicidade grave.</strong> Provoca bloqueio dos canais de potássio hERG cardíacos, levando a <strong>prolongamento do intervalo QTc no eletrocardiograma e risco de arritmias ventriculares polimórficas fatais (Torsades de Pointes)</strong> e morte súbita, além de hiperprolactinemia e ginecomastia.</td>
+    </tr>
+    <tr>
+      <td><strong>Bromoprida</strong></td>
+      <td>Benzamida análoga à metoclopramida.</td>
+      <td>Mesmo perfil de toxicidade neurológica extrapiramidal e sonolência marcante, sem estudos clínicos controlados de eficácia na cicatrização de esofagite pediátrica.</td>
+    </tr>
+    <tr>
+      <td><strong>Cisaprida</strong></td>
+      <td>Agonista 5-HT4 serotoninérgico.</td>
+      <td><strong>Banida do mercado mundial</strong> e do Brasil devido a múltiplos óbitos por arritmias cardíacas ventriculares letais secundárias ao prolongamento maciço do QTc.</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Posicionamento das Diretrizes Internacionais (NASPGHAN / ESPGHAN / SBP):</strong> Não há evidências de que os pró-cinéticos promovam cicatrização de esofagite erosiva ou melhorem os desfechos clínicos relevantes da DRGE, enquanto o potencial de eventos adversos neurológicos e cardiovasculares letais é inaceitável. O uso rotineiro de pró-cinéticos em lactentes é <strong>contraindicado</strong>.</p>
+`
+    },
+    {
+      id: 'tratamento-cirurgico-fundoplicatura-de-nissen',
+      title: '7. Tratamento Cirúrgico: Fundoplicatura de Nissen, Indicações e Complicações',
+      body_html: `
+<h3>Princípios Anatômicos da Fundoplicatura de Nissen</h3>
+<p>A cirurgia antirrefluxo pediátrica padrão-ouro é a <strong>Fundoplicatura Total a 360 Graus descrita por Rudolph Nissen</strong>, realizada quase universalmente por <strong>videolaparoscopia</strong>. O procedimento compreende:</p>
+<ol>
+  <li>Dissecção do hiato esofágico e redução de eventual hérnia hiatal;</li>
+  <li>Mobilização de 2 a 3 cm de esôfago abdominal intra-abdominal desprovido de tensão;</li>
+  <li>Aproximação dos pilares diafragmáticos posteriores (crurorrafia) com pontos inabsorvíveis;</li>
+  <li>Confecção de uma válvula circunferencial completa a 360 graus envolvendo a face anterior e posterior do esôfago distal com o fundo gástrico previamente mobilizado (com ligadura dos vasos gástricos curtos).</li>
+</ol>
+<p><em>Mecanismo de Correção:</em> A válvula gástrica circunferencial restaura a zona de alta pressão do EEI intra-abdominal e transmite as pressões de contração gástrica diretamente sobre o esfíncter reconstituído, impedindo mecanicamente o refluxo retrógrado do conteúdo alimentar durante o peristaltismo gástrico.</p>
+
+<h3>Indicações Cirúrgicas Absolutas e Relativas na Infância</h3>
+<p>A cirurgia é reservada para um subgrupo estrito de pacientes que apresentam DRGE com risco de vida ou morbidade grave intratável clinicamente:</p>
+<ul>
+  <li><strong>Falha Inquestionável do Tratamento Clínico Otimizado:</strong> Persistência documentada de esofagite erosiva grave ou sintomas respiratórios severos apesar de terapia com IBP em dose máxima associada a medidas posturais e dietéticas rigorosas por tempo adequado;</li>
+  <li><strong>Eventos Respiratórios com Ameaça Iminente à Vida:</strong> Lactentes com história de episódios recorrentes de <strong>BRUE (Brief Resolved Unexplained Event)</strong> com apneia obstrutiva grave, cianose e necessidade de ressuscitação cardiorrespiratória diretamente relacionados ao refluxo gastroesofágico; ou pneumonias aspirativas necrotizantes de repetição com bronquiectasias;</li>
+  <li><strong>Estenose Péptica de Esôfago Refratária:</strong> Estenose esofágica fibrótica secundária a refluxo ácido grave que não responde ou recidiva rapidamente após dilatações endoscópicas seriadas;</li>
+  <li><strong>Crianças com Encefalopatia Crônica Não Progressiva (Paralisia Cerebral):</strong> Pacientes neuropatas com DRGE intratável, desnutrição grave e disfagia orofaríngea que necessitam de realização de <strong>Gastrostomia de Alimentação</strong> (a fundoplicatura é frequentemente associada à gastrostomia para prevenir que a dieta infundida diretamente no estômago deflagre refluxo maciço e pneumonia aspirativa);</li>
+  <li><strong>Hérnia Hiatal Paraesofágica Gigante Sintomática:</strong> Pelo risco mecânico de encarceramento, volvo gástrico intratorácico e isquemia do estômago.</li>
+</ul>
+
+<h3>Complicações Pós-Operatórias da Fundoplicatura</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Complicação Pós-Operatória</th>
+      <th>Fisiopatologia e Quadro Clínico</th>
+      <th>Manejo Clínico-Cirúrgico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Síndrome de Retenção Gasosa ("Gas Bloat Syndrome")</strong></td>
+      <td>A válvula de 360 graus atua com tanta eficácia mecânica que <em>impede a eructação gasosa fisiológica e o vômito</em>. O ar deglutido durante as mamadas fica aprisionado no estômago, causando distensão epigástrica exuberante, dor em cólica e saciedade precoce.</td>
+      <td>Fracionamento das mamadas, orientação de técnica de deglutição sem ar, descompressão gástrica periódica por sonda nasogástrica (ou abertura da gastrostomia se presente) e agentes antiespumantes (simeticona).</td>
+    </tr>
+    <tr>
+      <td><strong>Disfagia Precoce vs Tardia</strong></td>
+      <td>• Precoce (primeiras 2 a 4 semanas): decorrente de edema inflamatório local peri-esofágico transitório.<br>• Tardia (&gt; 6 semanas): válvula cirúrgica excessivamente apertada (overtight) ou crurorrafia hiatal muito constritiva.</td>
+      <td>A disfagia precoce regride espontaneamente com dieta líquida/pastosa. Disfagia tardia persistente exige SEED e dilatação endoscópica pneumática cuidadosa ou reintervenção cirúrgica.</td>
+    </tr>
+    <tr>
+      <td><strong>Desmanche ou Deslizamento da Válvula ("Slipped Nissen")</strong></td>
+      <td>Migração intratorácica da fundoplicatura através do hiato diafragmático ou escorregamento da válvula para o corpo gástrico, levando à recidiva precoce dos sintomas de refluxo e disfagia mecânica.</td>
+      <td>Confirmação anatômica por SEED. Exige reoperação cirúrgica para desmontagem e reconstrução da válvula laparoscópica.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'drge-em-populacoes-especiais',
+      title: '8. DRGE em Populações Pediátricas Especiais: Neuropatas, Atresia de Esôfago e Fibrose Cística',
+      body_html: `
+<h3>Crianças com Paralisia Cerebral e Distúrbios Neurológicos Severos</h3>
+<p>Lactentes e crianças com encefalopatia crônica não progressiva, síndromes genéticas ou paralisia cerebral tetraparética apresentam prevalência de DRGE patológica superior a 50% a 70%, decorrente de uma confluência de fatores desfavoráveis:</p>
+<ul>
+  <li>Dismotilidade esofágica e gastroduodenal neuropática grave com esvaziamento gástrico lentificado;</li>
+  <li>Espasticidade muscular contínua e convulsões frequentes que aumentam de forma sustentada a pressão intra-abdominal;</li>
+  <li>Deformidades ósseas de coluna (cifoescoliose acentuada) que distorcem a anatomia hiatal e o ângulo de His;</li>
+  <li>Permanência prolongada em decúbito dorsal horizontal no leito;</li>
+  <li>Disfagia orofaríngea com incoordenação de deglutição e microaspirações silenciosas crônicas.</li>
+</ul>
+<p>Nessas crianças, a DRGE frequentemente se manifesta de forma atípica por agitação psicomotora intensa, autoflagelação, posturas distônicas de opistótono simulando crises epilépticas e piora inexplicada da espasticidade muscular reflexa à dor péptica crônica. A abordagem exige limiar baixo para realização de EDA e pH-impedanciometria e indicação precoce de IBP e gastrostomia associada à fundoplicatura de Nissen para reabilitação nutricional segura.</p>
+
+<h3>Pacientes Pós-Correção Cirúrgica de Atresia de Esôfago</h3>
+<p>Quase 100% dos pacientes submetidos à anastomose cirúrgica primária de atresia de esôfago com ou sem fístula traqueoesofágica desenvolvem DRGE grave e persistente por toda a infância e adolescência. Os mecanismos envolvem:</p>
+<ol>
+  <li>Dismotilidade congênita intrínseca dos plexos mioentéricos esofágicos (ausência de peristalse primária coordenada no esôfago distal);</li>
+  <li>Encurtamento anatômico do esôfago sob tração da anastomose cirúrgica, tracionando o estômago para dentro do hiato diafragmático;</li>
+  <li>Presença concomitante de traqueomalácia congênita em mais de 70% dos casos.</li>
+</ol>
+<p>O refluxo ácido agride diretamente a linha de sutura esofágica, predispondo à formação de <strong>estenoses anastomóticas cicatriciais refratárias</strong> e fístulas traqueoesofágicas recidivantes. A diretriz internacional preconiza <strong>profilaxia medicamentosa de rotina com IBP em dose plena durante todo o primeiro ano de vida</strong> para todos os recém-nascidos operados de atresia de esôfago, independentemente de apresentarem ou não sintomas externos.</p>
+
+<h3>Fibrose Cística e o Ciclo Vicioso Pulmonar</h3>
+<p>Em pacientes com fibrose cística, a tosse paroxística vigorosa associada à hiperinsuflação pulmonar diafragmática crônica rebaixa a cúpula do diafragma e comprime o estômago, provocando relaxamentos mecânicos do EEI. O refluxo gástrico resultante atinge as vias aéreas superiores, sendo aspirado para a árvore brônquica, onde a pepsina e os ácidos biliares lesam o epitélio respiratório, acelerando a colonização por <em>Pseudomonas aeruginosa</em> e o declínio irreversível do volume expiratório forçado no primeiro segundo (VEF1). O controle agressivo da DRGE é parte integrante do manejo respiratório na fibrose cística.</p>
+`
+    },
+    {
+      id: 'casos-clinicos-drge-pediatria',
+      title: '9. Casos Clínicos Pediátricos Estruturados e Discussão Diagnóstica',
+      body_html: `
+<h3>Caso Clínico 1: O "Golfador Feliz" na Atenção Primária</h3>
+<p><strong>Identificação:</strong> Lactente do sexo feminino, 3 meses de vida, nascida a termo (IG 39 semanas, peso ao nascer: 3.250 g), em aleitamento materno exclusivo sob livre demanda. É trazida pela mãe à consulta de puericultura na UBS com queixa de que a criança "vomita todo o leite que mama desde o primeiro mês de vida". A mãe relata que a criança regurgita leite após praticamente todas as mamadas, por vezes em grande quantidade, molhando várias roupas e fraldas ao longo do dia. Contudo, relata que logo após golfar, a criança permanece ativa, sorridente, sem chorar e logo volta a interagir com os familiares. O sono noturno é tranquilo, acordando duas vezes para mamar. Nega febre, tosse, chiado no peito ou sangue no vômito. Ao exame físico: paciente em excelente estado geral, ativa, corada, hidratada, sem sinais de desconforto respiratório. Peso atual: 6.100 g (ganho médio de 32 g/dia desde o nascimento, peso situado no escore-Z +0,8 da curva de P/I da OMS). Abdome flácido, indolor, sem visceromegalias ou massas palpáveis.</p>
+
+<p><strong>Discussão Diagnóstica e Conduta:</strong></p>
+<ol>
+  <li><strong>Diagnóstico Clínico:</strong> Trata-se de um caso prototípico de <strong>Refluxo Gastroesofágico Fisiológico da Infância ("Golfador Feliz" / Happy Spitter)</strong>. A criança apresenta regurgitações frequentes decorrentes da imaturidade funcional do EEI, mas mantém ganho ponderal excelente, ausência de sintomas de dor/irritabilidade e ausência de complicações respiratórias ou sinais de alarme;</li>
+  <li><strong>Conduta Proscrita (O que NÃO fazer):</strong>
+    <ul>
+      <li>NÃO solicitar exames de imagem (SEED, ultrassom, cintilografia ou pHmetria);</li>
+      <li>NÃO prescrever medicamentos inibidores de acidez (omeprazol, ranitidina/famotidina);</li>
+      <li>NÃO prescrever pró-cinéticos (metoclopramida, domperidona);</li>
+      <li>NÃO suspender ou restringir o aleitamento materno nem introduzir fórmulas infantis artificiais;</li>
+    </ul>
+  </li>
+  <li><strong>Conduta Correta e Orientações Parentais:</strong> Acolher a angústia materna, explicar didaticamente a anatomia e a história natural do refluxo do lactente, ressaltando que o pico ocorre aos 4 meses e a resolução espontânea ocorre naturalmente em mais de 90% das crianças até 12 a 18 meses com a adoção da postura sentada/em pé e alimentação sólida. Orientar medidas posturais simples: manter a criança em posição vertical no colo por 20 a 30 minutos após as mamadas; evitar roupas e fraldas apertadas; e <strong>reforçar a orientação mandatória de segurança do sono: manter o bebê para dormir exclusivamente em decúbito dorsal (de barriga para cima) em superfície firme</strong> para prevenir a morte súbita.</li>
+</ol>
+
+<h3>Caso Clínico 2: Lactente com Vômitos em Jato e Fome Voraz</h3>
+<p><strong>Identificação:</strong> Lactente do sexo masculino, 5 semanas de vida (35 dias), primogênito, sem antecedentes patológicos perinatais, alimentado exclusivamente com fórmula infantil para lactentes. É trazido pela mãe ao pronto-socorro infantil com história de que há 5 dias iniciou episódios de vômitos logo após as mamadas. A mãe refere que inicialmente eram pequenas golfadas, mas que nas últimas 48 horas os vômitos tornaram-se "violentos, saindo como um jato forte que atravessa o berço" após todas as mamadas. O conteúdo é composto exclusivamente de leite talhado esbranquiçado, <em>sem nenhuma coloração amarelada ou esverdeada (não bilioso)</em>. A mãe destaca que, imediatamente após vomitar todo o conteúdo alimentar, o bebê chora desesperadamente demonstrando fome voraz, buscando o bico da mamadeira e sugando tudo avidamente. Nas últimas 24 horas, apresentou apenas uma micção com pouca urina e não evacuou há 2 dias. Ao exame físico: emagrecido, com olhos encovados, saliva escassa, turgor cutâneo diminuído (sinais de desidratação moderada a grave), frequência cardíaca de 165 bpm. Abdome escavado, visualizando-se discreta onda de contração peristáltica propagando-se no epigástrio da esquerda para a direita. À palpação profunda do hipocôndrio direito logo abaixo do rebordo hepático, o médico palpa uma massa firme, ovalada, de cerca de 1,5 cm, lembrando uma pequena azeitona.</p>
+
+<p><strong>Discussão Diagnóstica e Conduta Emergencial:</strong></p>
+<ol>
+  <li><strong>Hipótese Diagnóstica Principal:</strong> <strong>Estenose Hipertrófica de Piloro (EHP)</strong>, sustentada pela idade típica (5 semanas), sexo masculino, vômitos em jato não biliosos, fome voraz pós-vômito, ondas de Kussmaul visíveis e palpação da oliva pilórica patognomônica;</li>
+  <li><strong>Exames Laboratoriais e Distúrbio Metabólico Esperado:</strong> Gasometria venosa e eletrólitos séricos evidenciam o perfil clássico: pH 7,52, HCO3- de 36 mEq/L, pCO2 de 46 mmHg (alcalose metabólica com compensação respiratória parcial), Cloro sérico de 82 mEq/L (hipocloremia marcante) e Potássio sérico de 2,9 mEq/L (hipocalemia);</li>
+  <li><strong>Exame de Imagem Confirmatório:</strong> Ultrassonografia de abdome superior confirmando espessamento concêntrico da camada muscular pilórica medindo 4,2 mm (normal &lt; 3 mm) e canal pilórico elongado medindo 18 mm (normal &lt; 15 mm);</li>
+  <li><strong>Conduta Terapêutica Sequencial:</strong>
+    <ul>
+      <li>Colocar o paciente em jejum oral absoluto com sonda nasogástrica calibrosa aberta para drenagem e descompressão;</li>
+      <li><strong>NÃO levar imediatamente ao centro cirúrgico:</strong> iniciar ressuscitação hidroeletrolítica venosa vigorosa com Soro Fisiológico 0,9% na fase rápida de expansão volêmica, seguido de solução de manutenção contendo glicose e cloreto de sódio associada a Cloreto de Potássio (KCl 10% a 2 a 3 mEq/kg/dia) após confirmação de diurese efetiva;</li>
+      <li>Repetir gasometria e eletrólitos a cada 12 horas até a completa correção da alcalose e reposição do cloro e potássio;</li>
+      <li>Com a criança clinicamente hidratada e metabolicamente compensada, realizar a <strong>Piloromiotomia Extramucosa de Fredet-Ramstedt</strong> (por via laparoscópica ou incisão de incisão supraumbilical), com reintrodução da dieta oral fracionada após 12 a 24 horas da cirurgia.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Caso Clínico 3: Lactente com Choro, Má Progressão Ponderal e Sangue nas Fezes</h3>
+<p><strong>Identificação:</strong> Lactente masculino de 2 meses e meio de vida, em aleitamento materno complementado com fórmula infantil padrão à base de leite de vaca desde a 3ª semana de vida por queixa materna de hipogalactia. A mãe procura atendimento ambulatorial relatando que o bebê apresenta irritabilidade extrema, chorando por horas após as mamadas com o abdome endurecido e arqueando o tronco para trás. Apresenta regurgitações pós-prandiais frequentes e recusa alimentar progressiva. Nos últimos 7 dias, a mãe observou fezes amolecidas contendo estrias de sangue vermelho vivo e muco ("filetes de sangue"). O pediatra anterior prescreveu omeprazol e dimeticona há 2 semanas, sem nenhuma melhora clínica. Ao exame físico: paciente irritado, com lesões descamativas e eritematosas em bochechas e dobras flexoras (eczema atópico moderado). Peso atual: 4.400 g (ganho de apenas 10 g/dia no último mês, queda de percentil 50 para percentil 5 na curva da OMS). Abdome globoso, timpânico, difusamente doloroso à palpação profunda, sem visceromegalias. Inspeção anal sem fissuras ou hemorroidas.</p>
+
+<p><strong>Discussão Diagnóstica e Conduta Racional:</strong></p>
+<ol>
+  <li><strong>Diagnóstico Diferencial:</strong> A sobreposição de vômitos/regurgitações com choro paroxístico, recusa alimentar, dermatite atópica, má progressão ponderal e hematoquezia (estrias de sangue nas fezes) em lactente jovem em uso de fórmula láctea é a apresentação clínica clássica de <strong>Alergia à Proteína do Leite de Vaca (APLV)</strong> não mediada por IgE (proctocolite alérgica e enteropatia com DRGE secundária à dismotilidade inflamatória). O refluxo e a irritabilidade neste paciente são secundários à inflamação alérgica gastrointestinal e não à hiperacidez idiopática (o que explica a ineficácia completa do omeprazol prévio);</li>
+  <li><strong>Conduta Terapêutica:</strong>
+    <ul>
+      <li>Suspender imediatamente o omeprazol (o uso de IBP em alérgicos agrava o risco de sensibilização antigênica intestinal por impedir a digestão proteica ácida);</li>
+      <li>Suspender a fórmula infantil convencional à base de leite de vaca e prescrever <strong>Fórmula Extensamente Hidrolisada (FEH)</strong> para as mamadas complementares;</li>
+      <li>Se a mãe mantiver amamentação parcial, orientar <strong>Dieta Materna de Exclusão Rigorosa de Leite de Vaca e Derivados</strong> (com suplementação de 1.000 mg de carbonato de cálcio e vitamina D para a mãe);</li>
+      <li>Aguardar resposta clínica por 2 a 4 semanas: espera-se o desaparecimento do sangue nas fezes em 72 a 96 horas e melhora progressiva das regurgitações e da irritabilidade com recuperação do ganho ponderal.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Caso Clínico 4: Escolar com Asma Grave Refratária e Esofagite Erosiva</h3>
+<p><strong>Identificação:</strong> Menino de 8 anos de idade, com diagnóstico de asma brônquica desde os 4 anos, em acompanhamento com pneumologista pediátrico. Comparece à consulta especializada devido ao péssimo controle dos sintomas respiratórios nos últimos 8 meses, apesar do uso diário e correto de corticoide inalatório em dose alta associado a beta-2 agonista de longa duração (fluticasona + salmeterol) e montelucaste oral. A mãe relata crises repetidas de broncoespasmo noturno, tosse seca em acessos que desperta o paciente nas primeiras horas da madrugada, pigarro persistente e queixa frequente de dor em queimação retroesternal e gosto amargo na boca pela manhã. O paciente relata ainda que sente o alimento "descer rasgando e doloroso" quando engole pão ou carnes secas (odinofagia e disfagia leve). Ao exame físico: eupneico, emagrecido (escore-Z de IMC -1,4), ausculta pulmonar com sibilos expiratórios esparsos em bases, oroscopia evidenciando erosões severas no esmalte das faces linguais dos dentes molares (perimólise).</p>
+
+<p><strong>Discussão Propedêutica e Manejo Especializado:</strong></p>
+<ol>
+  <li><strong>Raciocínio Clínico:</strong> O paciente apresenta sintomas típicos de DRGE (pirose, regurgitação ácida, odinofagia) associados a manifestações extraesofágicas graves (asma grave refratária de difícil controle e erosão dentária). A microaspiração ácida repetida durante o sono estimula quimicamente os receptores vagais da via aérea e deflagra broncoespasmo reflexo mediado pelo sistema colinérgico, anulando o efeito dos broncodilatadores inalatórios;</li>
+  <li><strong>Investigação Diagnóstica Armada:</strong>
+    <ul>
+      <li><strong>Endoscopia Digestiva Alta (EDA):</strong> Exame mandatório devido aos sinais de alarme (odinofagia, disfagia, emagrecimento). O laudo revela esofagite erosiva confluente comprometendo mais de 75% da circunferência do esôfago distal (<strong>Esofagite Erosiva Grau C de Los Angeles</strong>) sem estenose fibrótica. Biópsias esofágicas múltiplas mostram hiperplasia da camada basal com alongamento de papilas, neutrófilos intraepiteliais e contagem de eosinófilos de apenas 4 por CGA (afastando esofagite eosinofílica);</li>
+      <li><strong>pH-Impedanciometria Esofágica de 24 horas:</strong> Demonstra tempo de exposição ácida (AET) patológico de 14,2% (normal &lt; 3% a 6%) e Índice de Sintomas (SI) de 85% para os episódios de tosse noturna, comprovando a relação causal direta entre o refluxo e as exacerbações respiratórias;</li>
+    </ul>
+  </li>
+  <li><strong>Conduta Terapêutica Definitiva:</strong> Iniciar tratamento com Inibidor da Bomba de Prótons em dose otimizada (<strong>Esomeprazol na dose de 20 mg duas vezes ao dia</strong>, 30 minutos antes do café da manhã e 30 minutos antes do jantar) por 8 a 12 semanas. Elevar a cabeceira da cama em 15 cm e evitar refeições volumosas até 3 horas antes de deitar. EDA de controle após 12 semanas para documentar a cicatrização completa da mucosa esofágica. Com a cicatrização e supressão ácida eficaz, espera-se melhora drástica da hiper-reatividade brônquica e controle efetivo da asma.</li>
+</ol>
+`
+    },
+    {
+      id: 'questoes-comentadas-residencia',
+      title: '10. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso',
+      body_html: `
+<h3>Questão 1 (ENAMED / Inep - Pediatria)</h3>
+<p>Um lactente de 3 meses de vida, em aleitamento materno exclusivo, é trazido pela mãe para consulta de puericultura na Unidade Básica de Saúde. A mãe relata que a criança regurgita pequenas quantidades de leite após todas as mamadas desde o primeiro mês de vida. Refere que a criança não chora ao golfar, sorri após as mamadas, dorme bem à noite e evacua normalmente fezes amareladas pastosas sem sangue. Ao exame físico: paciente em excelente estado geral, corado, hidratado, afebril, pesando 6.200 g, com ganho ponderal médio documentado de 35 g/dia desde a alta da maternidade. O abdome é flácido e indolor. Diante desse quadro clínico, de acordo com as diretrizes da Sociedade Brasileira de Pediatria e da NASPGHAN/ESPGHAN, a conduta correta é:</p>
+<p>A) Prescrever inibidor da bomba de prótons (esomeprazol) na dose de 1 mg/kg/dia por 8 semanas e solicitar serigrafia de esôfago, estômago e duodeno (SEED).<br>
+B) Orientar e tranquilizar a família quanto à natureza fisiológica, benigna e autolimitada da regurgitação do lactente ("golfador feliz"), reforçando que o bebê deve dormir sempre em decúbito dorsal (barriga para cima), sem indicação de exames ou medicamentos.<br>
+C) Prescrever domperidona associada a metoclopramida para acelerar o esvaziamento gástrico e orientar posicionamento em decúbito ventral (bruços) para dormir.<br>
+D) Suspender temporariamente o aleitamento materno e prescrever fórmula anti-regurgitação (AR) espessada com amido por 30 dias.<br>
+E) Indicar pH-impedanciometria esofágica de urgência para descartar esofagite erosiva oculta.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> O lactente preenche rigorosamente todos os critérios do <strong>refluxador fisiológico ("golfador feliz" / happy spitter)</strong>: excelente ganho ponderal (35 g/dia), ausência de irritabilidade ou dor, ausência de sintomas respiratórios e excelente estado clínico geral. Trata-se de um evento maturativo comum que atinge o pico aos 4 meses e se resolve espontaneamente em mais de 90% das crianças até 12 a 18 meses. A conduta correta é exclusivamente tranquilizar os pais e orientar medidas de puericultura, reforçando que <strong>o bebê deve dormir obrigatoriamente de barriga para cima (decúbito dorsal)</strong> para prevenir a síndrome da morte súbita do lactente. Não há indicação de exames invasivos nem de medicamentos antiácidos ou pró-cinéticos.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Não há indicação de IBP nem de SEED em refluxo fisiológico sem sinais de alarme.<br>
+C incorreta: Pró-cinéticos são desaconselhados pelo risco de arritmias (domperidona) e efeitos extrapiramidais (metoclopramida); e decúbito ventral para dormir é formalmente contraindicado pelo risco de morte súbita.<br>
+D incorreta: Jamais suspender o aleitamento materno em um lactente hígido ganhando 35 g/dia.<br>
+E incorreta: A pH-impedanciometria não é indicada em lactentes com desenvolvimento normal e sem complicações.</p>
+
+<h3>Questão 2 (USP / FUVEST - Residência Médica)</h3>
+<p>Lactente masculino de 4 semanas de vida é levado à emergência pediátrica com história de vômitos progressivos há 4 dias. A mãe relata que os vômitos ocorrem cerca de 10 a 20 minutos após todas as mamadas, são "em jato" e nunca apresentaram bile ou sangue. Imediatamente após vomitar, o bebê chora desesperadamente buscando mamar de novo com muita fome. Ao exame físico: olhos encovados, turgor diminuído, abdome escavado, com palpação de massa de consistência firme com formato de azeitona no hipocôndrio direito. Os exames laboratoriais revelam: gasometria venosa com pH 7,53, bicarbonato de 34 mEq/L, sódio 133 mEq/L, potássio 2,8 mEq/L e cloro 84 mEq/L. Em relação ao diagnóstico, distúrbio metabólico e manejo deste paciente, assinale a alternativa correta:</p>
+<p>A) Diagnóstico de estenose hipertrófica de piloro; apresenta acidose metabólica hipoclorêmica; a cirurgia de piloromiotomia deve ser realizada em caráter de emergência cirúrgica imediata antes de qualquer hidratação venosa.<br>
+B) Diagnóstico de doença do refluxo gastroesofágico grave; o distúrbio é alcalose respiratória compensada; o tratamento de escolha é esomeprazol venoso em altas doses.<br>
+C) Diagnóstico de estenose hipertrófica de piloro; o distúrbio clássico é a alcalose metabólica hipoclorêmica e hipocalêmica; o paciente deve ser estabilizado e hidratado com soro fisiológico e cloreto de potássio até a normalização dos eletrólitos e do equilíbrio ácido-base antes de ser operado.<br>
+D) Diagnóstico de malrotação intestinal com volvo de intestino médio; o distúrbio é alcalose metabólica; a conduta imediata é laparotomia de urgência com procedimento de Ladd.<br>
+E) Diagnóstico de atresia duodenal; a confirmação exige tomografia computadorizada com contraste oral e correção cirúrgica imediata com duodenoduodenostomia.</p>
+<p><strong>Gabarito Comentado: Alternativa C.</strong><br>
+<em>Justificativa:</em> O quadro clínico (lactente de 4 semanas, primogênito, vômitos em jato não biliosos, fome voraz pós-prandial e oliva pilórica palpável) é patognomônico de <strong>Estenose Hipertrófica de Piloro (EHP)</strong>. As perdas repetidas de ácido clorídrico gástrico levam ao distúrbio metabólico clássico: <strong>Alcalose Metabólica Hipoclorêmica e Hipocalêmica</strong> (pH elevado, bicarbonato aumentado, cloro baixo e potássio baixo). A regra de ouro é que a EHP é uma <strong>emergência clínica e não uma emergência cirúrgica imediata</strong>. A cirurgia (piloromiotomia de Fredet-Ramstedt) só deve ser autorizada após a correção volêmica e normalização completa dos eletrólitos séricos com cloreto de sódio e cloreto de potássio intravenosos, para evitar arritmias e apneias graves pós-operatórias.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: O distúrbio é alcalose e não acidose; e a cirurgia não pode ser feita antes da correção hidroeletrolítica.<br>
+B incorreta: Não se trata de DRGE nem de alcalose respiratória.<br>
+D incorreta: Volvo de intestino médio apresenta vômitos biliosos verdes e dor abdominal aguda súbita.<br>
+E incorreta: Atresia duodenal manifesta-se nos primeiros dias de vida com vômitos biliosos e sinal da dupla bolha radiológica.</p>
+
+<h3>Questão 3 (Unicamp - Residência Médica)</h3>
+<p>Lactente de 4 meses de idade, com história de episódios súbitos e paroxísticos de torcicolo espasmódico lateral com rotação da cabeça e hiperextensão acentuada do pescoço e tronco (arqueamento em opistótono) que ocorrem quase sempre cerca de 15 a 30 minutos após as mamadas. Durante as crises, a criança permanece de olhos abertos, sem desvio ocular, sem perda de consciência e sem liberação esfincteriana. Um eletroencefalograma (EEG) realizado em serviço prévio foi inteiramente normal. A mãe refere ainda ganho de peso limítrofe e regurgitações frequentes. Essa manifestação clínica é compatível com:</p>
+<p>A) Crises de espasmos epilépticos da Síndrome de West, indicando início imediato de ACTH e vigabatrina.<br>
+B) Síndrome de Sandifer associada à Doença do Refluxo Gastroesofágico, decorrente de reflexo postural para alívio da dor retroesternal péptica e proteção de vias aéreas.<br>
+C) Paralisia cerebral atetoide decorrente de encefalopatia bilirrubínica crônica neonatal.<br>
+D) Discinesia extrapiramidal congênita induzida por deficiência de piridoxina (vitamina B6).<br>
+E) Tétano acidental neonatal, exigindo soro antitetânico e sedação contínua com benzodiazepínicos.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> A <strong>Síndrome de Sandifer</strong> é uma manifestação neurocomportamental reflexa atípica da DRGE na infância. Caracteriza-se por episódios paroxísticos estereotipados de <strong>torcicolo espasmódico e arqueamento de tronco (opistótono)</strong> pós-prandiais, com nível de consciência estritamente preservado e EEG normal. O paciente adota a postura de hiperextensão para tracionar o esôfago distal, fechar o ângulo de His e desobstruir a via aérea superior, aliviando a queimação esofagítica. O quadro é frequentemente confundido com crises epilépticas, mas responde prontamente ao tratamento da DRGE com IBP.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Síndrome de West cursa com espasmos em flexão aos agrupamentos, atraso no desenvolvimento e padrão de hipsarritmia no EEG.<br>
+C, D e E incorretas: Não apresentam relação temporal pós-prandial nem EEG normal característico de Sandifer.</p>
+
+<h3>Questão 4 (UERJ - Residência Médica)</h3>
+<p>Em relação aos métodos diagnósticos complementares utilizados na avaliação do refluxo gastroesofágico em pediatria, assinale a afirmação correta:</p>
+<p>A) A serigrafia de esôfago, estômago e duodeno (SEED) é o exame padrão-ouro para o diagnóstico de DRGE e deve ser solicitada em todos os lactentes com regurgitações frequentes.<br>
+B) A pH-impedanciometria esofágica de 24 horas é considerada o padrão-ouro atual pela NASPGHAN/ESPGHAN por ser capaz de detectar tanto refluxos ácidos quanto fracamente ácidos e não ácidos, além de correlacionar episódios de refluxo com sintomas clínicos.<br>
+C) A endoscopia digestiva alta normal afasta de forma definitiva o diagnóstico de doença do refluxo gastroesofágico na criança.<br>
+D) A pHmetria convencional de 24 horas possui sensibilidade de 100% no lactente jovem, pois o leite materno acidifica fortemente o estômago logo após as mamadas.<br>
+E) A ultrassonografia abdominal é o método de escolha para quantificar o tempo de exposição ácida do esôfago e diagnosticar esofagite erosiva.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> A <strong>pH-impedanciometria intraluminal multicanal (pH-MII de 24 horas)</strong> é o <strong>padrão-ouro moderno</strong> para avaliação da DRGE em pediatria. Ao associar a mensuração da impedância elétrica (que detecta o movimento retrógrado de bolos líquidos e gasosos independentemente do pH) com o eletrodo de pH, o método diagnostica refluxos ácidos, fracamente ácidos e não ácidos/alcalinos (que são predominantes no lactente devido ao efeito tampão do leite), além de calcular índices de associação com sintomas como apneia e tosse (SI e SAP).<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: O SEED é um exame puramente anatômico para excluir malformações (malrotação, estenose de piloro) e NÃO diagnostica DRGE.<br>
+C incorreta: Mais de 60% dos pacientes pediátricos com DRGE apresentam a forma não erosiva (EDA macroscopicamente normal).<br>
+D incorreta: A pHmetria convencional falha no lactente porque o leite atua como tampão alcalino, tornando o refluxo não ácido e indetectável ao sensor de pH simples.<br>
+E incorreta: Ultrassonografia não avalia tempo de exposição ácida nem esofagite.</p>
+
+<h3>Questão 5 (SURCE / PSU-CE - Residência Médica)</h3>
+<p>Menino de 7 anos, com histórico de asma brônquica atópica e rinite alérgica, comparece à consulta com queixa de disfagia progressiva para alimentos sólidos nos últimos 6 meses. A mãe relata que a criança mastiga excessivamente a comida, bebe grande quantidade de líquidos para conseguir engolir e já apresentou dois episódios de sensação de entalo com carne bovina. Relata ainda azia e dor no peito que não melhoraram após uso de omeprazol prescrito por 8 semanas. A endoscopia digestiva alta revela mucosa esofágica com múltiplos anéis concêntricos circulares ("traqueização do esôfago"), sulcos longitudinais e pontos esbranquiçados. As biópsias da mucosa esofágica revelam contagem de 35 eosinófilos por campo de grande aumento (CGA). O diagnóstico mais provável e a conduta apropriada são:</p>
+<p>A) Doença do refluxo gastroesofágico erosiva; aumentar a dose do omeprazol para 4 mg/kg/dia.<br>
+B) Esofagite Eosinofílica; o tratamento inclui dieta empírica de eliminação alimentar ou uso de corticoide tópico deglutido (fluticasona/budesonida oral).<br>
+C) Acalásia idiopática de esôfago; encaminhar para dilatação pneumática imediata do esfíncter esofágico inferior.<br>
+D) Carcinoma epidermoide de esôfago; encaminhar para esofagectomia oncológica com linfadenectomia.<br>
+E) Estenose péptica de esôfago; iniciar dilatações endoscópicas seriadas com velas de Savary-Gilliard.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> O paciente preenche rigorosamente todos os critérios diagnósticos da <strong>Esofagite Eosinofílica (EoE)</strong>: 1. Sintomas de disfunção esofágica (disfagia para sólidos, impactação de alimento, refratariedade ao IBP em paciente atópico); 2. Achados endoscópicos típicos (traqueização esofágica / anéis concêntricos, sulcos longitudinais e exsudatos esbranquiçados); 3. Confirmação histopatológica de infiltração eosinofílica densa com <strong>&ge; 15 eosinófilos por CGA</strong> restrita ao esôfago (o paciente possui 35 eos/CGA). O tratamento farmacológico baseia-se em corticosteroides tópicos deglutidos (suspensão oral viscosa de budesonida ou spray de fluticasona deglutido sem espaçador) ou dietas de eliminação alimentar (dieta dos 6 alimentos: leite, trigo, ovo, soja, amendoim/nozes e peixes/frutos do mar).<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: A refratariedade ao IBP com &ge; 15 eosinófilos/CGA sela o diagnóstico de EoE e não de DRGE comum.<br>
+C incorreta: Acalásia cursa com aperistalse esofágica e ausência de relaxamento do EEI na manometria, sem eosinofilia tecidual maciça.<br>
+D incorreta: Neoplasia esofágica é excepcional nessa faixa etária.<br>
+E incorreta: Não há descrição de estenose fibrótica fixa na EDA.</p>
+
+<h3>Questão 6 (AMRIGS - Residência Médica)</h3>
+<p>Em relação às medidas posturais recomendadas para lactentes no primeiro ano de vida no contexto da prevenção e manejo do refluxo gastroesofágico, assinale a conduta que é formalmente respaldada pelas diretrizes da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP):</p>
+<p>A) Recomenda-se posicionar o lactente para dormir em decúbito ventral (bruços), pois essa postura comprovadamente elimina o risco de broncoaspiração e cura a DRGE.<br>
+B) O decúbito dorsal (de barriga para cima) é a única posição segura recomendada para o sono de lactentes com menos de 1 ano de vida, devendo ser mantida mesmo em crianças com refluxo ou DRGE para prevenir a Síndrome da Morte Súbita do Lactente.<br>
+C) Manter o lactente sentado no bebê-conforto por 2 horas após as mamadas é a melhor estratégia não farmacológica para reduzir o refluxo.<br>
+D) O uso de travesseiros antirrefluxo em plano inclinado a 45 graus durante o sono no berço é obrigatório para todos os recém-nascidos.<br>
+E) A posição de Trendelenburg invertida com o bebê em decúbito lateral esquerdo solto no berço é a postura de escolha durante a noite.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> As diretrizes universais de segurança do sono pediátrico estabelecem de forma categórica que <strong>todo lactente menor de 1 ano de idade deve dormir obrigatoriamente em decúbito dorsal (barriga para cima) em superfície firme</strong>. O receio de que o decúbito dorsal provoque sufocamento por vômito é anatomicamente infundado (a via aérea superior é anterior ao esôfago). A adoção do decúbito ventral (bruços) para dormir eleva drasticamente o risco de Síndrome da Morte Súbita do Lactente (SMSL), sendo expressamente proscrita. Travesseiros, almofadas e dispositivos de posicionamento no berço não previnem refluxo e aumentam o risco de asfixia.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Decúbito ventral no sono é causa maior de morte súbita.<br>
+C incorreta: O bebê-conforto comprime o abdome e aumenta o refluxo.<br>
+D e E incorretas: Travesseiros e posições instáveis elevam risco de asfixia mecânica no berço.</p>
+
+<h3>Questão 7 (UNICAMP - Residência Médica)</h3>
+<p>Lactente de 2 meses e meio de vida apresenta história de ganho de peso insuficiente, recusa parcial de mamadas ao seio, choro intenso às mamadas e episódios frequentes de tosse seca e estridor laríngeo. A mãe procurou um serviço de pronto-atendimento onde foi prescrita domperidona na dose de 0,3 mg/kg de 8 em 8 horas e metoclopramida se náuseas. Após 48 horas de uso das medicações, a criança é trazida à emergência em crise de desvio tônico conjugado dos olhos para cima (crise oculógira), espasmo de musculatura cervical com torcicolo fixo e trismo mandibular. O eletrocardiograma revela intervalo QTc prolongado de 480 ms. O médico intensivista reconhece toxicidade farmacológica grave associada aos pró-cinéticos. Em relação ao tratamento do refluxo gastroesofágico na infância, a conduta correta é:</p>
+<p>A) Manter os medicamentos na mesma dose e associar fenobarbital venoso para controle dos espasmos epilépticos.<br>
+B) Suspender imediatamente a metoclopramida e a domperidona, pois os pró-cinéticos são formalmente desaconselhados na pediatria devido ao alto risco de reações extrapiramidais agudas e arritmias cardíacas com prolongamento do QTc.<br>
+C) Substituir a metoclopramida por bromoprida na dose dobrada para acelerar a depuração da domperidona.<br>
+D) Indicar fundoplicatura de Nissen de urgência para suspender os medicamentos.<br>
+E) Manter a domperidona e prescrever amiodarona para tratar o prolongamento do intervalo QTc.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> O caso ilustra de forma dramática os dois maiores perigos farmacológicos dos pró-cinéticos em lactentes: 1. A <strong>metoclopramida</strong> atravessa a barreira hematoencefálica imatura e provoca <strong>reações extrapiramidais distônicas agudas</strong> (crises oculógiras, trismo e torcicolo espasmódico reversíveis com biperideno/difenidramina); e 2. A <strong>domperidona</strong> bloqueia canais hERG de potássio, causando <strong>prolongamento do intervalo QTc</strong> no eletrocardiograma com risco iminente de arritmias ventriculares fatais (<em>Torsades de Pointes</em>). Por esses motivos, e pela ausência de comprovação científica de cicatrização de esofagite, as diretrizes da SBP, AAP e NASPGHAN/ESPGHAN <strong>desaconselham formalmente o uso rotineiro de pró-cinéticos no tratamento do refluxo em lactentes</strong>.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Não se trata de epilepsia, mas de efeito extrapiramidal induzido por bloqueador dopaminérgico.<br>
+C incorreta: Bromoprida causa os mesmos efeitos extrapiramidais da metoclopramida.<br>
+D incorreta: Fundoplicatura não é indicada em intoxicação farmacológica.<br>
+E incorreta: Amiodarona prolonga ainda mais o intervalo QT, podendo precipitar parada cardíaca por torsades de pointes.</p>
+
+<h3>Questão 8 (FMUSP / HC-FMUSP - Residência Médica)</h3>
+<p>Um adolescente de 14 anos com encefalopatia crônica não progressiva grave (paralisia cerebral espástica tetraparética) decorrente de asfixia perinatal apresenta desnutrição grave (escore-Z de peso/idade &lt; -3), disfagia orofaríngea com aspirações traqueais frequentes documentadas por videodeglutograma e múltiplos episódios de pneumonia por aspiração nos últimos 12 meses. A endoscopia digestiva alta evidencia esofagite erosiva grave (Los Angeles grau D) com grande quantidade de secreção alimentar residual no estômago decorrente de gastroparesia. A equipe multidisciplinar indica a confecção de uma gastrostomia cirúrgica para suporte nutricional enteral de longo prazo. Diante deste quadro clínico, de acordo com as diretrizes de gastroenterologia e cirurgia pediátrica, a conduta correta é:</p>
+<p>A) Realizar a gastrostomia isolada sem abordagem do hiato esofágico, pois a alimentação intragástrica direta cura a DRGE espontaneamente.<br>
+B) Associar a confecção da gastrostomia à realização de uma cirurgia antirrefluxo (Fundoplicatura de Nissen videolaparoscópica), uma vez que a gastrostomia isolada em pacientes neuropatas com DRGE grave piora o refluxo e eleva o risco de pneumonia aspirativa fatal.<br>
+C) Contraindicar a via gástrica e realizar esofagostomia cervical definitiva associada a jejunostomia.<br>
+D) Tratar o paciente exclusivamente com espessamento dietético e manter alimentação por sonda nasoentérica por toda a vida.<br>
+E) Indicar fundoplicatura a 360 graus como procedimento exclusivo, mantendo a alimentação por via oral sem gastrostomia.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> Em crianças neuropatas com encefalopatia crônica não progressiva (paralisia cerebral) que apresentam disfagia grave com risco de broncoaspiração associada a DRGE patológica e esofagite grave (grau D de Los Angeles), a infusão direta de volumes alimentares na cavidade gástrica através de uma gastrostomia isolada aumenta a pressão intragástrica e agrava drasticamente os episódios de refluxo gastroesofágico, precipitando pneumonias aspirativas letais. A conduta cirúrgica padronizada consiste na <strong>associação da Gastrostomia com a Fundoplicatura de Nissen (a 360 graus) laparoscópica</strong> no mesmo ato cirúrgico, garantindo via de aporte nutricional segura e barreira mecânica competente contra a aspiração pulmonar.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: A gastrostomia isolada sem fundoplicatura em neuropatas com refluxo severo é iatrogênica.<br>
+C incorreta: Procedimento mutilante desnecessário.<br>
+D incorreta: Sonda nasoentérica crônica em neuropatas por anos causa úlceras de asa de nariz, refluxo mecânico e baixa adesão.<br>
+E incorreta: O paciente possui disfagia orofaríngea com aspiração direta comprovada no videodeglutograma; a via oral exclusiva é contraindicada.</p>
+`
+    },
+    {
+      id: 'algoritmos-e-fluxogramas-praticos',
+      title: '11. Algoritmos e Fluxogramas Decisórios na Prática Pediátrica',
+      body_html: `
+<h3>Algoritmo Decisório Diante do Lactente que Regurgita ou Vomita</h3>
+<p>A abordagem prática na puericultura e na emergência segue uma árvore de decisão escalonada:</p>
+<ol>
+  <li><strong>Passo 1: Investigar Sinais de Alarme (Red Flags):</strong>
+    <ul>
+      <li>Vômitos biliosos verdes? &rarr; <em>Encaminhar imediatamente para emergência cirúrgica (investigar má rotação/volvo intestinal ou atresia duodenal com SEED urgente)</em>;</li>
+      <li>Vômitos em jato não biliosos em lactente de 3 a 6 semanas com fome voraz? &rarr; <em>Solicitar Ultrassom de Abdome para Estenose Hipertrófica de Piloro; colher gasometria e eletrólitos</em>;</li>
+      <li>Hematêmese, melena, abaulamento de fontanela, convulsões ou distensão abdominal grave? &rarr; <em>Internação hospitalar e investigação etiológica de urgência</em>.</li>
+    </ul>
+  </li>
+  <li><strong>Passo 2: Na Ausência de Red Flags, Avaliar Ganho Ponderal e Sintomas de Incômodo:</strong>
+    <ul>
+      <li><strong>Ganho de peso adequado + humor preservado + sem sintomas respiratórios:</strong> &rarr; <strong>Refluxador Fisiológico ("Golfador Feliz")</strong>. Conduta: tranquilização parental, reforçar decúbito dorsal para dormir (segurança contra SMSL), verticalização vigíl pós-mamadas por 20-30 min. Zero exames, zero remédios!</li>
+      <li><strong>Ganho de peso insuficiente / perda ponderal / irritabilidade extrema / estrias de sangue nas fezes / dermatite atópica:</strong> &rarr; Suspeita de <strong>APLV ou DRGE Complicada</strong>. Realizar teste terapêutico com dieta de exclusão de leite de vaca por 2 a 4 semanas (mãe em dieta de exclusão se aleitamento materno ou fórmula extensamente hidrolisada se fórmula artificial).</li>
+      <li><strong>Se persistência de sintomas de DRGE ou esofagite erosiva confirmada após teste de APLV:</strong> Iniciar IBP (esomeprazol 1 a 2 mg/kg/dia 30 min antes da primeira refeição matinal) por 4 a 8 semanas, programando desmame progressivo.</li>
+    </ul>
+  </li>
+</ol>
+`
+    },
+    {
+      id: 'pontos-chave-enamed-drge',
+      title: '12. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais',
+      body_html: `
+<h3>Dez Mandamentos da DRGE Pediátrica para o ENAMED</h3>
+<ul>
+  <li><strong>1. "Golfador Feliz" não toma remédio:</strong> Lactente com ganho de peso normal, sem dor e sem complicações respiratórias não precisa de exames nem de IBPs/pró-cinéticos. Apenas orientação e tranquilização.</li>
+  <li><strong>2. Dormir SEMPRE de barriga para cima (Decúbito Dorsal):</strong> No berço, todo lactente &lt; 1 ano deve dormir em decúbito dorsal em superfície firme para prevenir a Síndrome da Morte Súbita do Lactente (SMSL). O decúbito ventral (bruços) é formalmente proibido para o sono.</li>
+  <li><strong>3. Estenose Hipertrófica de Piloro:</strong> Menino de 3 a 6 semanas com vômitos em jato não biliosos e fome voraz. Cursa com <strong>alcalose metabólica hipoclorêmica e hipocalêmica</strong> e oliva pilórica palpável. É emergência clínica: hidratar e corrigir eletrólitos antes de operar (piloromiotomia de Fredet-Ramstedt).</li>
+  <li><strong>4. Vômito Bilioso (Verde) é Emergência Cirúrgica:</strong> Suspeitar imediatamente de má rotação intestinal com volvo de intestino médio até prova em contrário. Solicitar SEED urgente.</li>
+  <li><strong>5. Síndrome de Sandifer:</strong> Paroxismos de arqueamento de tronco (opistótono) e torcicolo espasmódico pós-mamada em lactente com DRGE. Consciência preservada e EEG normal. Trata-se tratando o refluxo.</li>
+  <li><strong>6. Padrão-Ouro Diagnóstico:</strong> pH-Impedanciometria intraluminal multicanal de 24 horas (pH-MII). Detecta refluxo ácido, fracamente ácido e biliar e calcula associação com sintomas (SI e SAP).</li>
+  <li><strong>7. Papel do SEED:</strong> Exame puramente ANATÔMICO (detecta hérnia hiatal, má rotação, estenose). NUNCA usar para diagnosticar ou quantificar DRGE.</li>
+  <li><strong>8. Proscrição dos Pró-Cinéticos:</strong> Metoclopramida (risco extrapiramidal/discinesia) e Domperidona (prolongamento de QTc e arritmia fatal) são contraindicados na rotina pediátrica.</li>
+  <li><strong>9. Esofagite Eosinofílica (EoE):</strong> Escolar atópico com disfagia para sólidos, impactação de alimento refratária a IBP e EDA com esôfago traqueizado e &ge; 15 eosinófilos por campo de grande aumento.</li>
+  <li><strong>10. Fundoplicatura de Nissen:</strong> Válvula a 360 graus reservada para falha clínica documentada, eventos graves de ameaça à vida (BRUE/apneia) ou associada à gastrostomia em neuropatas graves com paralisia cerebral.</li>
+</ul>
+`
+    }
+  ],
+  references: [
+    {
+      title: 'NASPGHAN / ESPGHAN — Pediatric Gastroesophageal Reflux Clinical Practice Guidelines: Joint Recommendations',
+      url: 'https://www.naspghan.org/files/Pediatric_Gastroesophageal_Reflux_Clinical.pdf'
+    },
+    {
+      title: 'Sociedade Brasileira de Pediatria (SBP) — Departamento Científico de Gastroenterologia. Refluxo Gastroesofágico e DRGE na Infância: Guia Prático',
+      url: 'https://www.sbp.com.br/departamentos-cientificos/gastroenterologia/documentos-cientificos/'
+    },
+    {
+      title: 'American Academy of Pediatrics (AAP) — Sleep-Related Infant Deaths: Updated 2022 Recommendations for Reducing Infant Deaths in the Sleep Environment',
+      url: 'https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022'
+    },
+    {
+      title: 'Sociedade Brasileira de Pediatria (SBP) — Alergia à Proteína do Leite de Vaca (APLV): Consenso de Diagnóstico e Tratamento',
+      url: 'https://www.sbp.com.br/departamentos-cientificos/alergia/documentos-cientificos/'
+    },
+    {
+      title: 'World Health Organization (WHO) — The WHO Child Growth Standards: Length/height-for-age, weight-for-age, weight-for-length and body mass index-for-age',
+      url: 'https://www.who.int/tools/child-growth-standards'
+    }
+  ]
+};
+
+const chars = saveBook(book);
+console.log(`Finished ${book.slug}: ${chars} useful characters.`);

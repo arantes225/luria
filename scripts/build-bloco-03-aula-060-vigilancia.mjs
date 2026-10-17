@@ -1,0 +1,862 @@
+import { saveBook } from './bloco-03-utils.mjs';
+
+const book = {
+  slug: 'vigilancia-epidemiologica',
+  title: 'Vigilância Epidemiológica',
+  area: 'Medicina Preventiva',
+  materia: 'Vigilância em Saúde e Epidemiologia',
+  description: 'Tratado completo de Vigilância Epidemiológica para a prática médica e concursos de residência médica/ENAMED: conceito e ciclo contínuo da informação para a ação; modalidades de vigilância (passiva, ativa, sentinela e baseada em eventos); Lista Nacional de Notificação Compulsória (Portarias GM/MS vigentes, prazos imediatos em até 24 horas vs semanais, notificação negativa); investigação de surtos nos 10 passos clássicos do CDC/Ministério da Saúde; epidemiologia descritiva e curvas epidêmicas (fonte pontual, contínua e propagada); cálculo de taxas de ataque geral e específicas; sistemas de informação em saúde (SINAN, SIM, SINASC, SI-PNI, SISVAN, Sivep-Gripe); medidas de controle, isolamento, quarentena e bloqueio vacinal; casos epidemiológicos práticos e questões de residência comentadas.',
+  sections: [
+    {
+      id: 'conceito-objetivos-ciclo-vigilancia',
+      title: '1. Conceito, Objetivos e o Ciclo da Informação para a Ação',
+      body_html: `
+<h3>Definição Legal e Conceitual da Vigilância Epidemiológica</h3>
+<p>A Vigilância Epidemiológica constitui um dos pilares estruturantes do Sistema Único de Saúde (SUS), definida juridicamente no artigo 6º, § 2º da Lei Orgânica da Saúde (Lei Federal nº 8.080/1990) como:</p>
+<blockquote><em>"Um conjunto de ações que proporciona o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar as medidas de prevenção e controle das doenças ou agravos."</em></blockquote>
+<p>No modelo clássico formulado por Alexander Langmuir no <em>Centers for Disease Control and Prevention</em> (CDC) e consolidado pela Organização Pan-Americana da Saúde (OPAS), a vigilância epidemiológica não se confunde com o mero preenchimento burocrático de formulários estatísticos. A essência doutrinária da disciplina reside no aforismo: <strong>"Informação para a Ação"</strong>. A produção do dado epidemiológico só se justifica se retroalimentar decisões sanitárias oportunas e intervenções concretas capazes de interromper cadeias de transmissão, proteger grupos vulneráveis e mitigar danos na comunidade.</p>
+
+<h3>O Ciclo Contínuo da Vigilância Epidemiológica</h3>
+<p>A prática da vigilância epidemiológica opera como um ciclo dinâmico, ininterrupto e retroalimentado composto por seis etapas operacionais interdependentes:</p>
+<ol>
+  <li><strong>1. Coleta Sistemática de Dados:</strong> Registro e captação primária de eventos de interesse sanitário (notificações compulsórias, atestados de óbito, declarações de nascidos vivos, laudos laboratoriais, registros hospitalares, atendimentos ambulatoriais e rumores comunitários). A qualidade da vigilância depende da sensibilidade, oportunidade e abrangência da rede captadora.</li>
+  <li><strong>2. Consolidação e Processamento:</strong> Triagem, validação, conferência de duplicidades, cruzamento de bancos de dados (linkage) e alimentação dos sistemas de informação oficiais (como o SINAN, SIM e SINASC) nos níveis municipal, estadual e federal.</li>
+  <li><strong>3. Análise e Interpretação Epidemiológica:</strong> Transformação de dados brutos em indicadores epidemiológicos relevantes (coeficientes de incidência, prevalência, mortalidade, letalidade, taxas de ataque, proporções e distribuição espacial/temporal). Nessa etapa, identifica-se o padrão endêmico de base e detecta-se precocemente desvios anormais (epidemias, surtos ou emergências de saúde pública).</li>
+  <li><strong>4. Recomendação Oportuna de Medidas de Controle:</strong> Com base no diagnóstico epidemiológico, as autoridades sanitárias prescrevem intervenções específicas de prevenção, isolamento, quarentena, bloqueio vacinal, quimioprofilaxia, saneamento ambiental, fiscalização higiênico-sanitária ou alteração de protocolos clínicos.</li>
+  <li><strong>5. Implementação das Ações e Avaliação de Eficácia:</strong> Execução das intervenções pelas equipes de campo e monitoramento contínuo dos indicadores para mensurar se as medidas adotadas foram efetivas na redução da transmissão, casos graves e óbitos.</li>
+  <li><strong>6. Retroalimentação (Disseminação e Comunicação do Risco):</strong> Devolução regular das análises e relatórios aos profissionais de saúde notificadores, gestores do SUS, comunidade científica e sociedade em geral (boletins epidemiológicos, notas técnicas e informes públicos), promovendo transparência e engajamento social.</li>
+</ol>
+`
+    },
+    {
+      id: 'tipos-vigilancia-passiva-ativa-sentinela',
+      title: '2. Modalidades de Vigilância: Passiva, Ativa, Sentinela e Baseada em Eventos',
+      body_html: `
+<h3>Vigilância Passiva: O Padrão de Rotina dos Serviços</h3>
+<p>Na <strong>vigilância passiva</strong>, a equipe de epidemiologia aguarda a chegada espontânea das notificações emitidas rotineiramente pelos profissionais de saúde e estabelecimentos assistenciais (postos de saúde, consultórios, pronto-socorros, hospitais e laboratórios). Trata-se da modalidade mais econômica, de menor custo operacional e ampla cobertura territorial para o monitoramento contínuo de doenças endêmicas já estabelecidas.</p>
+<p><em>Limitações Críticas:</em> Apresenta risco elevado de <strong>subnotificação</strong>, subregistro e atraso temporal (perda de oportunidade). Muitos médicos deixam de notificar agravos clínicos cotidianos por sobrecarga de trabalho, desconhecimento das fichas ou crença equivocada de que apenas casos confirmados laboratorialmente devem ser comunicados.</p>
+
+<h3>Vigilância Ativa: A Busca Proativa no Território e nas Unidades</h3>
+<p>Na <strong>vigilância ativa</strong>, a equipe de vigilância epidemiológica desloca-se proativamente até as fontes de informação para pesquisar e resgatar casos suspeitos não notificados. O técnico ou epidemiologista examina prontuários em enfermarias hospitalares, livros de admissão de emergências, laudos laboratoriais de microbiologia/sorologia, livros de registros de necrópsias e realiza entrevistas domiciliares no território.</p>
+<p><em>Indicações Mandatórias de Vigilância Ativa:</em></p>
+<ul>
+  <li>Investigação de surtos e epidemias em andamento;</li>
+  <li>Programas de eliminação ou erradicação de doenças (como a busca ativa de paralisia flácida aguda para monitorar a poliomielite, e a busca ativa de casos suspeitos de sarampo e rubéola);</li>
+  <li>Ocorrência de eventos de saúde pública inusitados ou emergências sanitárias internacionais;</li>
+  <li>Auditoria de qualidade em municípios com suspeita de silêncio epidemiológico artificial.</li>
+</ul>
+
+<h3>Vigilância Sentinela: Monitoramento Amostral Estratégico</h3>
+<p>A <strong>vigilância sentinela</strong> não tem como objetivo contar todos os casos existentes na população total, mas sim captar tendências precoces, isolar cepas patogênicas circulantes e identificar alterações no padrão de gravidade por meio de uma rede selecionada de serviços de saúde altamente capacitados (unidades sentinelas):</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Rede Sentinela Estratégica</th>
+      <th>Objetivo Epidemiológico Central</th>
+      <th>Amostragem e Procedimentos Clínico-Laboratoriais</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Vigilância Sentinela de Síndrome Gripal (SG)</strong></td>
+      <td>Monitorar a circulação viral sazonal de Influenza A (H1N1, H3N2), Influenza B, Vírus Sincicial Respiratório (VSR), SARS-CoV-2 e outros vírus respiratórios no território nacional.</td>
+      <td>Unidades básicas de saúde e prontos-atendimentos selecionados coletam swabs de nasofaringe/orofaringe semanalmente de um número prefixado de pacientes com SG (ex: 5 amostras por semana) para realização de RT-PCR multiplex pelo Lacen. O dado orienta a composição anual da vacina contra a gripe.</td>
+    </tr>
+    <tr>
+      <td><strong>Monitorização das Doenças Diarreicas Agudas (Sivep-DDA)</strong></td>
+      <td>Detecção precoce de surtos de diarreia por patógenos bacterianos ou virais (como <em>Vibrio cholerae</em>, <em>Shigella</em>, <em>Rotavírus</em>, <em>Norovírus</em>) e avaliação do impacto de intervenções de saneamento e vacinação.</td>
+      <td>Unidades sentinelas notificam semanalmente o número consolidado de casos de diarreia aguda estratificados por faixas etárias e realizam coleta seriada de fezes para coprocultura e pesquisa viral em caso de aumento súbito acima do limiar endêmico.</td>
+    </tr>
+    <tr>
+      <td><strong>Sentinela de Acidentes de Trabalho Graves e Agravos Ocupacionais</strong></td>
+      <td>Mapear os setores industriais, comerciais e rurais com maiores riscos de mutilações, intoxicações e óbitos para orientar fiscalizações trabalhistas direcionadas.</td>
+      <td>Hospitais de trauma terciários e centros de referência em saúde do trabalhador (CEREST).</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Atenção para Provas de Residência:</strong> <em>Dados de unidades sentinelas NÃO devem ser utilizados diretamente para o cálculo de coeficientes de incidência da população geral</em>, pois a amostra não é representativa da totalidade do universo populacional. O valor da rede sentinela reside no alerta precoce, tipagem molecular de agentes e acompanhamento de curvas temporais.</p>
+
+<h3>Vigilância Baseada em Eventos (EBS) e Vigilância Sindrômica</h3>
+<p>A <strong>Vigilância Baseada em Eventos (Event-Based Surveillance - EBS)</strong> consiste na captação rápida, triagem e verificação em tempo real de informações informais e não estruturadas sobre eventos que possam representar riscos à saúde pública (como rumores em redes sociais, matérias na imprensa, mortes súbitas inexplicadas em animais - epizootias de primatas não humanos para febre amarela, mortalidade de aves para gripe aviária). Se validado, o rumor desencadeia investigação imediata antes mesmo da formalização de fichas no sistema clássico.</p>
+`
+    },
+    {
+      id: 'lista-nacional-notificacao-compulsoria',
+      title: '3. A Lista Nacional de Notificação Compulsória: Fundamentos e Obrigações Legais',
+      body_html: `
+<h3>O Marco Legal da Notificação Compulsória no Brasil</h3>
+<p>A Notificação Compulsória consiste na comunicação formal e obrigatória da suspeita ou confirmação de doença, agravo ou evento de saúde pública, realizada às autoridades sanitárias por profissionais de saúde, serviços assistenciais ou qualquer cidadão. O marco normativo federal baseia-se na Lei nº 6.259/1975, regulamentada pela Portaria de Consolidação GM/MS nº 4/2017 (Anexo 1 do Anexo V) e suas atualizações periódicas por portarias ministeriais vigentes.</p>
+
+<h3>Quem Deve Notificar e o Gatilho da Notificação</h3>
+<p>A obrigação legal de notificar recai sobre:</p>
+<ul>
+  <li><strong>Médicos em exercício profissional</strong> (da rede pública, privada, conveniada, militar, filantrópica ou cooperativa);</li>
+  <li>Enfermeiros, farmacêuticos, odontólogos, biólogos, biomédicos e demais profissionais de saúde no desempenho de suas atividades;</li>
+  <li>Responsáveis técnicos e diretores clínicos de hospitais, clínicas, laboratórios públicos e privados de análises clínicas, hemocentros e instituições de longa permanência de idosos (ILPI);</li>
+  <li>Gestores de estabelecimentos de ensino, creches, creches-escola e locais de trabalho;</li>
+  <li>Qualquer cidadão que tenha conhecimento de eventos incomuns ou emergências sanitárias pode comunicar o fato à autoridade pública.</li>
+</ul>
+
+<h3>Regra de Ouro da Prática Médica: Notifica-se a SUSPEITA Clínica!</h3>
+<p>Um dos erros mais graves e repetidos por alunos e médicos recém-formados é aguardar o resultado de exames sorológicos confirmatórios, culturas bacterianas ou biópsias para só então preencher a notificação compulsória:</p>
+<blockquote><strong>"A NOTIFICAÇÃO COMPULSÓRIA DEVE SER REALIZADA DIANTE DA SIMPLES SUSPEITA CLÍNICA, SEM NUNCA AGUARDAR CONFIRMAÇÃO LABORATORIAL!"</strong></blockquote>
+<p><em>Racional Biológico e Epidemiológico:</em> Para doenças de transmissão veloz e alta letalidade (como sarampo, meningite meningocócica, raiva humana, peste ou febre amarela), o tempo de espera pelo exame laboratorial (que pode demorar dias ou semanas) fecharia a janela de oportunidade para as ações de bloqueio vacinal, quimioprofilaxia de contatos e isolamento. Se a suspeita for descartada posteriormente pelo laboratório, a ficha de notificação será oportunamente cancelada e encerrada como "caso descartado" no sistema, sem qualquer prejuízo sanitário ou legal.</p>
+
+<h3>Sigilo Profissional e Excepcionalidade Sanitária</h3>
+<p>O Código de Ética Médica e a legislação brasileira estabelecem que o sigilo profissional médico não pode ser utilizado como justificativa para sonegar a notificação compulsória de doenças e agravos à autoridade sanitária. O cumprimento de dever legal constitui justa causa expressa para a revelação necessária dos dados à vigilância epidemiológica, que, por sua vez, está rigorosamente vinculada ao dever de sigilo ético e proteção de dados sensíveis dos pacientes.</p>
+
+<h3>O Conceito de Notificação Negativa Semanal</h3>
+<p>A <strong>Notificação Negativa</strong> é a comunicação formal semanal feita pelos estabelecimentos de saúde informando à autoridade de vigilância epidemiológica que, durante a semana epidemiológica correspondente, <em>não foi registrado nenhum caso suspeito ou confirmado</em> de qualquer das doenças ou agravos constantes da lista de notificação compulsória. Essa ferramenta é fundamental para assegurar que a ausência de registros reflete uma real ausência de morbidade no território, e não uma falha operacional de vigilância (silêncio epidemiológico ou negligência do serviço notificante).</p>
+`
+    },
+    {
+      id: 'prazos-fluxos-notificacao-imediata-vs-semanal',
+      title: '4. Prazos e Esferas de Notificação: Imediata em até 24 Horas vs Notificação Semanal',
+      body_html: `
+<h3>Estratificação Temporal: Imediata (Até 24 Horas) vs Semanal</h3>
+<p>A Lista Nacional de Notificação Compulsória classifica os agravos segundo a periodicidade máxima em que a informação deve alcançar o gestor de saúde:</p>
+<ol>
+  <li><strong>Notificação Imediata (em até 24 horas):</strong> Reservada para doenças com potencial de rápida disseminação internacional, alta transmissibilidade, elevada letalidade, eventos inusitados ou que exijam medidas emergenciais imediatas de controle (bloqueio de contatos, quimioprofilaxia, busca ativa). A notificação pode ser direcionada simultaneamente ao <strong>Ministério da Saúde (MS), Secretaria Estadual de Saúde (SES) e Secretaria Municipal de Saúde (SMS)</strong>, ou apenas à SES e SMS.</li>
+  <li><strong>Notificação Semanal:</strong> Aplicada a doenças e agravos de evolução crônica, menor velocidade de propagação pandêmica ou doenças endêmicas sob controle contínuo, onde o fechamento do lote semanal de fichas é suficiente para o planejamento de rotina.</li>
+</ol>
+
+<h3>Tabela Completa de Notificação Imediata (em até 24 Horas)</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Agravo / Doença / Evento</th>
+      <th>Esfera de Destino da Notificação Imediata</th>
+      <th>Gatilho Clínico e Medida Imediata Justificadora</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Botulismo, Cólera, Peste, Febre Amarela, Febre Maculosa e outras Rickettsioses</strong></td>
+      <td><strong>MS, SES e SMS</strong> (três esferas em até 24h).</td>
+      <td>Emergência sanitária grave. Exige bloqueio de fonte hídrica/alimentar, controle de vetores e soroterapia específica.</td>
+    </tr>
+    <tr>
+      <td><strong>Doenças sob Regulamento Sanitário Internacional (RSI):</strong> Varíola, Poliomielite (por vírus selvagem ou derivado), Influenza humana por nova cepa pandêmica (gripe aviária/suína), SARS, MERS, Febre Hemorrágica Viral (Ebola, Marburg, Lassa).</td>
+      <td><strong>MS, SES e SMS</strong> (três esferas em até 24h).</td>
+      <td>Potencial pandêmico global. Notificação imediata mandatória à Organização Mundial da Saúde (OMS).</td>
+    </tr>
+    <tr>
+      <td><strong>Sarampo e Rubéola</strong></td>
+      <td><strong>MS, SES e SMS</strong> (três esferas em até 24h).</td>
+      <td>Risco de reintrodução e surto. Bloqueio vacinal seletivo de contatos deve ser feito em no máximo 72 horas pós-exposição.</td>
+    </tr>
+    <tr>
+      <td><strong>Raiva Humana e Acidentes por Animais Potencialmente Transmissores de Raiva</strong></td>
+      <td>MS, SES e SMS para o caso humano; SES e SMS para os acidentes graves.</td>
+      <td>Letalidade de 100%. Exige profilaxia pós-exposição imediata com vacina de cultivo celular e soro antirrábico heterólogo/homólogo.</td>
+    </tr>
+    <tr>
+      <td><strong>Doença Meningocócica e outras Meningites Bacterianas</strong></td>
+      <td><strong>SES e SMS</strong> (em até 24h).</td>
+      <td>Quimioprofilaxia de contatos íntimos deve ser iniciada preferencialmente nas primeiras 24 a 48 horas (Rifampicina ou Ceftriaxona).</td>
+    </tr>
+    <tr>
+      <td><strong>Difteria e Tétano Neonatal</strong></td>
+      <td><strong>MS, SES e SMS</strong> (em até 24h).</td>
+      <td>Difteria exige isolamento de gotículas, bloqueio vacinal e soro antidiftérico; tétano neonatal reflete falha catastrófica do pré-natal.</td>
+    </tr>
+    <tr>
+      <td><strong>Violência Sexual e Tentativa de Suicídio (Violência Autoprovocada)</strong></td>
+      <td><strong>SMS e SES</strong> (em até 24h).</td>
+      <td>Violência sexual exige profilaxia contra ISTs e HIV em até 72 horas e contracepção de emergência; tentativa de suicídio exige acolhimento e manejo do risco iminente de reincidência letal.</td>
+    </tr>
+    <tr>
+      <td><strong>Acidentes por Animais Peçonhentos (Cobras, Aranhas, Escorpiões)</strong></td>
+      <td><strong>SMS e SES</strong> (em até 24h).</td>
+      <td>Risco de toxicidade sistêmica fulminante; monitoramento do estoque e aplicação oportuna de soros antipeçonhentos específicos.</td>
+    </tr>
+    <tr>
+      <td><strong>Óbito Materno e Óbito Infantil (Fetal e Não Fetal)</strong></td>
+      <td><strong>SMS e SES</strong> (em até 24h).</td>
+      <td>Investigação obrigatória pelo Comitê de Prevenção do Óbito Materno, Infantil e Fetal para identificar causas evitáveis.</td>
+    </tr>
+    <tr>
+      <td><strong>Evento Adverso Grave Pós-Vacinação (EAPV)</strong></td>
+      <td><strong>MS, SES e SMS</strong> (em até 24h).</td>
+      <td>Óbitos, internações hospitalares, anafilaxia ou eventos inusitados após administração de imunobiológicos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tabela de Agravos de Notificação Semanal</h3>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Categoria Epidemiológica</th>
+      <th>Doenças e Agravos de Notificação Compulsória Semanal</th>
+      <th>Comentário Clínico-Epidemiológico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Doenças Crônicas Transmissíveis</strong></td>
+      <td><strong>Tuberculose</strong> (todas as formas) e <strong>Hanseníase</strong>.</td>
+      <td>Notificação semanal permite o acompanhamento do tratamento padronizado, controle de contactantes e encerramento de coortes de cura.</td>
+    </tr>
+    <tr>
+      <td><strong>Arboviroses sem Sinais de Alarme ou Óbito</strong></td>
+      <td><strong>Dengue, Febre de Chikungunya e Zika vírus</strong> (casos clássicos/leves).</td>
+      <td>Notificação semanal alimenta as taxas de incidência no município e orienta o controle vetorial. <em>Atenção:</em> Casos graves de dengue (com choque, sangramento ou disfunção orgânica) e óbitos suspeitos por qualquer arbovirose possuem <strong>notificação IMEDIATA em até 24 horas</strong>!</td>
+    </tr>
+    <tr>
+      <td><strong>Infecções Sexualmente Transmissíveis (ISTs) e Transmissão Vertical</strong></td>
+      <td><strong>Sífilis</strong> (adquirida, em gestante e congênita), <strong>HIV/AIDS</strong>, <strong>Hepatites Virais</strong> (A, B, C, D e E), Infecção pelo HIV em gestante, parturiente ou puérpera e criança exposta ao risco de transmissão vertical do HIV.</td>
+      <td>Fundamental para o monitoramento da meta de eliminação da transmissão vertical da sífilis e do HIV no SUS.</td>
+    </tr>
+    <tr>
+      <td><strong>Endemias Rurais e Parasitoses</strong></td>
+      <td><strong>Doença de Chagas</strong> (fase crônica; fase aguda é imediata), <strong>Esquistossomose</strong>, <strong>Leishmaniose Tegumentar Americana</strong>, <strong>Leishmaniose Visceral</strong>, <strong>Malária</strong> (na região amazônica; fora da região amazônica é imediata em 24h).</td>
+      <td>Vigilância ambiental e terapêutica antiparasitária sob controle programático.</td>
+    </tr>
+    <tr>
+      <td><strong>Atualização Recente da Lista Nacional</strong></td>
+      <td><strong>Esporotricose Humana</strong> (micose subcutânea zoonótica por <em>Sporothrix brasiliensis</em> transmitida predominantemente por gatos).</td>
+      <td>Incluída oficialmente na lista nacional com notificação semanal obrigatória em todo o território nacional.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'sistemas-informacao-saude-sis',
+      title: '5. Sistemas de Informação em Saúde (SIS) e Integração Epidemiológica',
+      body_html: `
+<h3>O Ecossistema dos Sistemas de Informação do SUS</h3>
+<p>A vigilância epidemiológica fundamenta suas decisões na convergência de múltiplos sistemas informatizados de base nacional. Nenhum sistema isolado é capaz de fornecer o retrato integral da saúde coletiva; a perícia do médico e do sanitarista consiste em saber selecionar a base correta para cada pergunta investigativa e cruzar bancos de dados para contornar vieses e subregistros.</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Sistema de Informação</th>
+      <th>Documento / Instrumento Alimentador</th>
+      <th>Objeto Central e Uso em Vigilância</th>
+      <th>Principais Indicadores Derivados e Limitações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SINAN</strong><br>(Sistema de Informação de Agravos de Notificação)</td>
+      <td>Ficha Individual de Notificação (FIN) e Ficha Individual de Investigação (FII).</td>
+      <td>Registro, acompanhamento e investigação de todas as doenças e agravos de notificação compulsória no país. Acompanha o caso desde a suspeita até o desfecho final (cura, óbito por agravo, abandono, descarte).</td>
+      <td>• Coeficientes de incidência de agravos;<br>• Taxas de abandono e cura de tuberculose e hanseníase.<br><em>Limitação:</em> Subnotificação ambulatorial e atraso de digitação municipal.</td>
+    </tr>
+    <tr>
+      <td><strong>SIM</strong><br>(Sistema de Informações sobre Mortalidade)</td>
+      <td><strong>Declaração de Óbito (DO)</strong>, documento oficial padronizado pelo Ministério da Saúde.</td>
+      <td>Captação universal dos óbitos ocorridos no território nacional, discriminando causas básicas, contribuintes e imediatas de morte segundo a Classificação Internacional de Doenças (CID).</td>
+      <td>• Coeficiente de mortalidade geral, infantil e materna;<br>• Letalidade de patologias específicas.<br><em>Limitação:</em> Causas mal definidas de morte (Capítulo XVIII da CID-10) e subnotificação em áreas remotas.</td>
+    </tr>
+    <tr>
+      <td><strong>SINASC</strong><br>(Sistema de Informações sobre Nascidos Vivos)</td>
+      <td><strong>Declaração de Nascido Vivo (DNV)</strong> emitida em 3 vias pelo hospital ou cartório.</td>
+      <td>Registro sociodemográfico e clínico de todos os nascimentos vivos no país (peso ao nascer, idade gestacional, índice de Apgar, via de parto, escolaridade e idade materna, consultas de pré-natal, presença de anomalias congênitas).</td>
+      <td>• Fornece o <strong>denominador populacional</strong> real para o cálculo das taxas de mortalidade infantil e materna;<br>• Taxa de prematuridade e prevalência de baixo peso ao nascer.</td>
+    </tr>
+    <tr>
+      <td><strong>SI-PNI / RNDS</strong><br>(Sistema do PNI / Rede Nacional de Dados em Saúde)</td>
+      <td>Boletim Diário de Vacinação e registro eletrônico unificado por CPF do usuário.</td>
+      <td>Monitoramento das doses de imunobiológicos administradas, controle de estoques da rede de frio, cálculo de coberturas vacinais por faixa etária e seguimento individualizado de esquemas.</td>
+      <td>• Coberturas vacinais específicas e taxas de homogeneidade territorial.<br><em>Limitação:</em> Denominadores censitários desatualizados podem distorcer coberturas para valores fictícios &gt; 100%.</td>
+    </tr>
+    <tr>
+      <td><strong>SISVAN</strong><br>(Sistema de Vigilância Alimentar e Nutricional)</td>
+      <td>Formulários de triagem nutricional na Atenção Primária (e-SUS APS).</td>
+      <td>Monitoramento do estado nutricional (peso, estatura, IMC) e consumo alimentar de crianças, gestantes e idosos cadastrados no SUS e beneficiários do Bolsa Família.</td>
+      <td>• Prevalência de desnutrição (baixo peso, déficit de estatura) e excesso de peso/obesidade infantil.</td>
+    </tr>
+    <tr>
+      <td><strong>Sivep-Gripe</strong><br>(Sistema de Vigilância Epidemiológica da Gripe)</td>
+      <td>Ficha de Notificação de Síndrome Respiratória Aguda Grave (SRAG) hospitalizada.</td>
+      <td>Vigilância universal de todos os pacientes hospitalizados e óbitos por SRAG (febre, tosse, dispneia/dessaturação), monitorando Influenza, SARS-CoV-2, VSR e outros agentes.</td>
+      <td>• Taxas de internação por vírus respiratórios e identificação de variantes genômicas.</td>
+    </tr>
+    <tr>
+      <td><strong>SIH/SUS</strong> e <strong>SIA/SUS</strong></td>
+      <td>Autorização de Internação Hospitalar (AIH) e Boletim de Produção Ambulatorial (BPA).</td>
+      <td>Sistemas de faturamento financeiro e administrativo de internações e procedimentos ambulatoriais pagos pelo SUS.</td>
+      <td><em>Atenção:</em> São sistemas de faturamento; 1 procedimento registrado não significa 1 paciente único. Não cobrem internações da rede privada suplementar exclusiva.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'atributos-sistemas-vigilancia-e-declaracao-obito',
+      title: '6. Atributos dos Sistemas de Vigilância e Regras de Preenchimento da Declaração de Óbito (DO)',
+      body_html: `
+<h3>Atributos Quantitativos e Qualitativos dos Sistemas de Vigilância</h3>
+<p>Para que um sistema de vigilância epidemiológica seja considerado eficiente pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde, ele é avaliado periodicamente com base em sete atributos fundamentais:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Atributo do Sistema</th>
+      <th>Definição Operacional</th>
+      <th>Aplicação Prática e Trade-Offs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sensibilidade</strong></td>
+      <td>Capacidade do sistema de detectar a maior proporção possível de casos verdadeiros da doença ocorridos na população sob vigilância.</td>
+      <td>Fundamental em fases de erradicação/eliminação (como poliomielite e sarampo). Para aumentar a sensibilidade, amplia-se a definição de caso suspeito (critérios mais frouxos), o que reduz a especificidade e gera mais falsos-positivos.</td>
+    </tr>
+    <tr>
+      <td><strong>Valor Preditivo Positivo (VPP)</strong></td>
+      <td>Proporção de indivíduos notificados como casos suspeitos que realmente possuem a doença confirmada ($\text{VPP} = \frac{\text{Verdadeiros Positivos}}{\text{Total Notificado}}$).</td>
+      <td>Reflete a especificidade da definição de caso. Se o VPP for muito baixo, a vigilância despende recursos investigando muitos alarmes falsos; se for muito restrito, perde casos reais.</td>
+    </tr>
+    <tr>
+      <td><strong>Oportunidade (Timeliness)</strong></td>
+      <td>Velocidade e pontualidade com que a informação transita entre as etapas do ciclo (tempo entre primeiros sintomas, atendimento médico, digitação no SINAN e intervenção de campo).</td>
+      <td>Um sistema lento é inútil para o bloqueio de doenças agudas com período de incubação curto. Exemplo: um atraso de 5 dias na notificação do sarampo impede a vacinação de bloqueio em até 72 horas.</td>
+    </tr>
+    <tr>
+      <td><strong>Completude (Completeness)</strong></td>
+      <td>Proporção de campos obrigatórios e essenciais das fichas preenchidos de forma válida, sem dados "ignorados" ou em branco.</td>
+      <td>Campos como raça/cor, escolaridade, data de início de sintomas e evolução clínica sofrem com baixa completude, limitando análises de determinantes sociais da saúde.</td>
+    </tr>
+    <tr>
+      <td><strong>Representatividade</strong></td>
+      <td>Capacidade do sistema de refletir com fidedignidade a distribuição real da doença na população segundo tempo, espaço e subgrupos demográficos.</td>
+      <td>Se um sistema capta apenas pacientes da rede pública terciária e ignora a rede privada ou atenção primária, sua representatividade torna-se severamente comprometida por viés de seleção.</td>
+    </tr>
+    <tr>
+      <td><strong>Simplicidade e Flexibilidade</strong></td>
+      <td>Facilidade operacional da estrutura de notificação e capacidade de adaptação rápida a novos agravos ou mudanças de cenário epidemiológico.</td>
+      <td>Fichas excessivamente longas desestimulam o preenchimento pelo médico no plantão. Sistemas flexíveis incorporam novos códigos CID e definições sem paralisar a rotina.</td>
+    </tr>
+    <tr>
+      <td><strong>Aceitabilidade</strong></td>
+      <td>Disposição e engajamento dos profissionais de saúde, laboratórios e comunidade em colaborar voluntária e ativamente com o sistema.</td>
+      <td>Depende da percepção de utilidade: quando o médico percebe que suas notificações geram ações sanitárias concretas e boletins de retorno, a adesão aumenta significativamente.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Regras Éticas e Legais de Preenchimento da Declaração de Óbito (DO)</h3>
+<p>O preenchimento da Declaração de Óbito é ato médico indelegável, com repercussões jurídicas, epidemiológicas e civis. As diretrizes do Conselho Federal de Medicina (Resolução CFM nº 1.779/2005) e do Ministério da Saúde estabelecem competências estritas:</p>
+<ol>
+  <li><strong>Morte por Causa Natural em Paciente com Assistência Médica:</strong> O médico que vinha prestando assistência ao paciente (médico assistente) é o responsável legal pelo fornecimento e preenchimento da DO. Na sua ausência ou impedimento, o médico substituto ou médico plantonista da instituição que prestou atendimento deve atestar o óbito com base nos dados do prontuário;</li>
+  <li><strong>Morte por Causa Natural em Paciente sem Assistência Médica (Morte Súbita Domiciliar):</strong>
+    <ul>
+      <li>Em localidades com Serviço de Verificação de Óbito (SVO): o corpo deve ser encaminhado ao SVO para necrópsia clínica e emissão da DO pelo patologista do serviço;</li>
+      <li>Em localidades sem SVO: a DO deve ser fornecida pelo médico do serviço público de saúde mais próximo (médico da unidade básica de saúde do território) ou, na ausência, por qualquer médico da localidade após exame externo do cadáver e entrevista com familiares para afastar violência;</li>
+    </ul>
+  </li>
+  <li><strong>Morte por Causa Externa (Violenta ou Suspeita - Homicídios, Suicídios, Acidentes de Trânsito, Quedas, Afogamentos):</strong>
+    <p>A emissão da Declaração de Óbito é de competência EXCLUSIVA dos <strong>Médicos Legistas dos Institutos Médicos Legais (IML)</strong>, independentemente do tempo decorrido entre o trauma e o óbito (mesmo que a vítima tenha permanecido internada em UTI por semanas antes de falecer). É expressamente vedado ao médico assistente hospitalar atestar óbito decorrente de causa externa!</p>
+  </li>
+</ol>
+
+<h3>Estrutura da Parte I e Parte II da Declaração de Óbito</h3>
+<p>A causa de morte declarada no modelo internacional da OMS organiza-se em duas partes complementares:</p>
+<ul>
+  <li><strong>Parte I (Cadeia Causal Direta do Óbito):</strong> Deve ser lida de baixo para cima.
+    <ul>
+      <li><strong>Linha (d) ou última linha preenchida: CAUSA BÁSICA DA MORTE:</strong> É a doença ou lesão inicial que desencadeou diretamente a sucessão de eventos mórbidos que culminaram na morte. É o dado mais valioso para a vigilância epidemiológica e políticas públicas de prevenção. Exemplo: <em>Hipertensão Arterial Sistêmica Primária</em>; ou <em>Tabagismo / DPOC</em>; ou <em>Acidente Vascular Cerebral Isquêmico</em>;</li>
+      <li><strong>Linhas (c) e (b): CAUSAS INTERMEDIÁRIAS (Consequenciais):</strong> Doenças ou complicações desencadeadas pela causa básica que conduziram ao evento final. Exemplo: <em>Infarto Agudo do Miocárdio de Parede Anterior</em>;</li>
+      <li><strong>Linha (a): CAUSA IMEDIATA (Terminal):</strong> O mecanismo fisiopatológico final que causou a cessação dos batimentos. Exemplo: <em>Choque Cardiogênico</em>.</li>
+    </ul>
+  </li>
+  <li><strong>ERRO CLÁSSICO DE PREENCHIMENTO PROSCRITO:</strong> Preencher na linha (a) termos como "Parada Cardiorrespiratória", "Falência de Múltiplos Órgãos" ou "Insuficiência Cardíaca" isolados sem explicitar a causa básica. Parada cardiorrespiratória é a modalidade de morrer e não o diagnóstico causal, gerando perda do dado no SIM e sendo classificada no grupo das causas mal definidas (Capítulo XVIII da CID-10);</li>
+  <li><strong>Parte II (Outras Condições Mórbidas Significativas):</strong> Doenças preexistentes relevantes que contribuíram para o desfecho letal, mas que não entraram diretamente na cadeia causal da Parte I. Exemplo: <em>Diabetes Mellitus tipo 2</em>; <em>Insuficiência Renal Crônica</em>.</li>
+</ul>
+`
+    },
+    {
+      id: 'investigacao-epidemiologica-surtos-10-passos',
+      title: '7. Investigação Epidemiológica de Surtos: O Roteiro em 10 Passos do CDC e Ministério da Saúde',
+      body_html: `
+<h3>O Roteiro Sistemático de Investigação de Campo</h3>
+<p>Um surto ou epidemia ocorre quando o número de casos de uma determinada doença em uma população, área geográfica e período ultrapassa claramente o valor habitualmente esperado (acima do limiar endêmico superior no diagrama de controle). A investigação epidemiológica é uma emergência de saúde pública que exige rigor metódico. O Ministério da Saúde e o CDC norte-americano preconizam o clássico <strong>roteiro em 10 passos sequenciais</strong> (embora na prática de campo várias etapas ocorram simultaneamente):</p>
+
+<ol>
+  <li><strong>Passo 1: Confirmar a Existência do Surto:</strong> Comparar o número de casos observados no período recente com a média histórica observada no mesmo período e local em anos não epidêmicos (estabelecendo o canal endêmico). Deve-se descartar aumentos artificiais decorrentes de: mudanças na definição de caso, introdução de novos testes diagnósticos de maior sensibilidade, melhoria recente na rotina de notificação dos médicos ou duplicações de registros.</li>
+  <li><strong>Passo 2: Confirmar o Diagnóstico Clínico e Laboratorial:</strong> Revisar diretamente a história clínica dos primeiros casos atendidos, realizar exame físico e colher amostras biológicas representativas (sangue, fezes, secreção respiratória, swab, água ou restos de alimentos suspeitos) com transporte adequado sob cadeia de frio para o Laboratório Central de Saúde Pública (Lacen) de referência. Não é necessário testar todos os indivíduos em um surto extenso; a confirmação laboratorial de uma amostra inicial consistente valida o critério clínico-epidemiológico para os demais casos vinculados.</li>
+  <li><strong>Passo 3: Definir a Equipe, Recursos e Medidas de Biossegurança:</strong> Estruturar o comando de campo com epidemiologistas, médicos clínicos, infectologistas, agentes de controle de endemias, técnicos de laboratório e fiscais de vigilância sanitária, garantindo equipamentos de proteção individual (EPI) apropriados e veículos de apoio.</li>
+  <li><strong>Passo 4: Estabelecer a Definição Operacional de Caso:</strong> Criar critérios objetivos e padronizados baseados em quatro componentes indispensáveis: <em>Clínica</em> (sintomas-chave), <em>Tempo</em> (período em que os sintomas tiveram início), <em>Lugar</em> (local geográfico, escola, refeitório, bairro ou evento de exposição) e <em>Pessoa</em> (faixa etária, ocupação ou grupos específicos). Didaticamente, a definição desdobra-se em:
+    <ul>
+      <li><strong>Caso Suspeito:</strong> Critérios clínicos amplos e sensíveis para não deixar nenhum caso escapar da triagem inicial;</li>
+      <li><strong>Caso Provável:</strong> Suspeito com vínculo epidemiológico claro com um caso confirmado ou presença de achados laboratoriais inespecíficos;</li>
+      <li><strong>Caso Confirmado:</strong> Suspeito com confirmação laboratorial direta (cultura, RT-PCR, sorologia) ou por critério clínico-epidemiológico fechado;</li>
+      <li><strong>Caso Descartado:</strong> Indivíduo suspeito que apresentou diagnóstico alternativo comprovado ou exames laboratoriais negativos em tempo oportuno.</li>
+    </ul>
+  </li>
+  <li><strong>Passo 5: Busca Ativa e Elaboração da Lista de Casos (Case Line List):</strong> Realizar varredura em prontuários, contatos domiciliares e estabelecimentos comunitários. Organizar todos os pacientes identificados em uma planilha estruturada (linha de casos), contendo: identificador único, idade, sexo, endereço, ocupação, data e hora do início dos sintomas, manifestações clínicas principais, exposições específicas (alimentos consumidos, viagens, contatos), resultados laboratoriais, hospitalização e desfecho (cura/óbito).</li>
+  <li><strong>Passo 6: Epidemiologia Descritiva (Tempo, Lugar e Pessoa):</strong>
+    <ul>
+      <li><strong>Tempo:</strong> Construção e interpretação minuciosa da <strong>Curva Epidêmica</strong>;</li>
+      <li><strong>Lugar:</strong> Mapeamento geoespacial dos casos (mapa de pontos - dot map) para identificar aglomerados espaciais (clusters), proximidade com cursos de água, estações de tratamento ou reservatórios naturais;</li>
+      <li><strong>Pessoa:</strong> Cálculo de coeficientes específicos por faixa etária, sexo e ocupação para identificar subpopulações com maior vulnerabilidade biológica ou comportamental.</li>
+    </ul>
+  </li>
+  <li><strong>Passo 7: Formular Hipóteses Etiológicas e Mecanismos de Transmissão:</strong> Integrar os achados descritivos, o período de incubação presumido e os sintomas para formular hipóteses sobre o provável agente patogênico, veículo de transmissão, fonte de infecção e modo de propagação.</li>
+  <li><strong>Passo 8: Testar Hipóteses por Estudos Epidemiológicos Analíticos:</strong>
+    <ul>
+      <li><strong>Estudo de Coorte Retrospectiva:</strong> Desenho preferencial quando a população sob risco é bem delimitada e conhecida (ex: todos os convidados de um casamento, alunos de uma creche ou trabalhadores de uma fábrica). Calcula-se a <strong>Taxa de Ataque nos Expostos</strong>, a <strong>Taxa de Ataque nos Não Expostos</strong> e o <strong>Risco Relativo (RR)</strong> para cada fator de exposição;</li>
+      <li><strong>Estudo de Caso-Controle:</strong> Desenho preferencial quando a população exposta é aberta, indeterminada ou muito numerosa (ex: surto comunitário difuso em um município metropolitano). Compara-se a frequência de exposições prévias entre os doentes (casos) e indivíduos sadios similares (controles), calculando-se o <strong>Odds Ratio (OR)</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>Passo 9: Implementar e Ajustar Medidas de Prevenção e Controle:</strong> As medidas de controle NÃO devem aguardar o encerramento do passo 8 se o risco sanitário for elevado! Devem ser deflagradas no momento em que uma suspeita razoável é estabelecida: interdição de estabelecimentos contaminados, desinfecção de redes de água potável, recolhimento de lotes de alimentos, isolamento de casos, quarentena de expostos e bloqueio vacinal.</li>
+  <li><strong>Passo 10: Comunicação dos Resultados e Relatório Epidemiológico Final:</strong> Elaboração de relatório técnico final documentando toda a metodologia, curvas, fatores causais comprovados, impacto das medidas de controle e recomendações regulatórias para impedir a recorrência de eventos semelhantes. Devolução da informação à comunidade e aos gestores do SUS.</li>
+</ol>
+`
+    },
+    {
+      id: 'medidas-associacao-curvas-epidemicas',
+      title: '7. Análise Quantitativa: Taxas de Ataque e Interpretação de Curvas Epidêmicas',
+      body_html: `
+<h3>Taxas de Ataque: O Risco Proporcional em Surtos</h3>
+<p>Em investigações de surtos agudos, a <strong>Taxa de Ataque (TA)</strong> nada mais é do que uma forma especial de <em>incidência cumulativa</em> aplicada a uma população sob risco bem definida observada durante um intervalo restrito de tempo:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Indicador Quantitativo</th>
+      <th>Fórmula Matemática</th>
+      <th>Significado Epidemiológico e Interpretação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Taxa de Ataque Geral (TAG)</strong></td>
+      <td>$$\text{TAG} = \frac{\text{Número Total de Novos Doentes}}{\text{População Total Inicial Exposta sob Risco}} \times 100$$</td>
+      <td>Mede o impacto global do surto sobre toda a coletividade presente no evento. Exemplo: 60 pessoas adoeceram em um banquete com 200 convidados: $\text{TAG} = \frac{60}{200} = 30\%$.</td>
+    </tr>
+    <tr>
+      <td><strong>Taxa de Ataque Específica por Alimento Exposto ($\text{TAE}_{\text{exp}}$)</strong></td>
+      <td>$$\text{TAE}_{\text{exp}} = \frac{\text{Pessoas que comeram o alimento E adoeceram}}{\text{Total de pessoas que comeram o alimento}} \times 100$$</td>
+      <td>Mede o risco de adoecer condicionado à ingestão do alimento suspeito. Exemplo: 50 pessoas comeram maionese e 40 adoeceram: $\text{TAE} = \frac{40}{50} = 80\%$.</td>
+    </tr>
+    <tr>
+      <td><strong>Taxa de Ataque Específica por Alimento Não Exposto ($\text{TAE}_{\text{não exp}}$)</strong></td>
+      <td>$$\text{TAE}_{\text{não exp}} = \frac{\text{Pessoas que NÃO comeram o alimento E adoeceram}}{\text{Total de pessoas que NÃO comeram o alimento}} \times 100$$</td>
+      <td>Mede a taxa de adoecimento residual naqueles que não consumiram o alimento. Exemplo: 150 não comeram maionese e apenas 5 adoeceram: $\text{TAE} = \frac{5}{150} = 3,3\%$.</td>
+    </tr>
+    <tr>
+      <td><strong>Razão de Taxas de Ataque (RTA) / Risco Relativo (RR)</strong></td>
+      <td>$$\text{RTA} = \frac{\text{TAE}_{\text{expostos}}}{\text{TAE}_{\text{não expostos}}}$$</td>
+      <td>Indica a força de associação causal entre a exposição e a doença. O alimento com <strong>maior Risco Relativo ($\text{RR} \gg 1$)</strong>, associado a uma alta taxa de ataque nos expostos e baixa nos não expostos, é o provável veículo causal. No exemplo: $\text{RR} = \frac{80\%}{3,3\%} = 24,2$ (os que comeram maionese tiveram 24,2 vezes maior risco de adoecer).</td>
+    </tr>
+    <tr>
+      <td><strong>Taxa de Ataque Secundária (TAS)</strong></td>
+      <td>$$\text{TAS} = \frac{\text{Casos Secundários surgidos nos contatos familiares}}{\text{Total de contatos domiciliares suscetíveis expostos ao caso primário}} \times 100$$</td>
+      <td>Mede a <strong>capacidade de disseminação e transmissibilidade pessoa a pessoa</strong> do patógeno a partir de um caso índice em ambiente fechado (excluem-se do denominador os indivíduos já imunes por vacinação ou doença prévia).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Padrões Clássicos de Curvas Epidêmicas</h3>
+<p>A Curva Epidêmica é um histograma que plota o número de casos no eixo vertical (ordenadas - Y) em função da <strong>data e hora do início dos sintomas</strong> no eixo horizontal (abscissas - X). A forma geométrica da curva revela instantaneamente o modo de transmissão e a natureza da fonte:</p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Tipo de Fonte Epidêmica</th>
+      <th>Morfologia e Características Gráficas</th>
+      <th>Mecanismo Fisiopatológico e Exemplos Típicos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Fonte Comum Pontual (Ponto Único / "Point Source")</strong></td>
+      <td><strong>Curva Unimodal Simétrica ou com Cauda à Direita.</strong> Apresenta uma ascensão rápida e íngreme, atinge um pico agudo e bem definido, seguido de uma queda gradual. Todos os casos concentram-se rigorosamente dentro do intervalo correspondente a <strong>um único período de incubação</strong> da doença.</td>
+      <td>Todos os indivíduos foram expostos ao mesmo agente em um intervalo de tempo muito curto e simultâneo (exposição quase instantânea).<br><em>Exemplos:</em> Intoxicação alimentar estafilocócica em festa de aniversário (período de incubação de 1 a 6 horas); gastroenterite por <em>Salmonella</em> em banquete; surto químico acidental.</td>
+    </tr>
+    <tr>
+      <td><strong>2. Fonte Comum Contínua (Persistente)</strong></td>
+      <td><strong>Curva em Platô Prolongado.</strong> A curva ascende gradualmente e mantém um platô estável com casos contínuos distribuídos ao longo de dias, semanas ou meses, sem picos únicos agudos, estendendo-se por período superior a um período de incubação. A queda só ocorre quando a fonte é interrompida.</td>
+      <td>A exposição ao agente permanece ativa e contínua no tempo.<br><em>Exemplos:</em> Contaminação permanente de um poço artesiano comunitário ou reservatório de água potável por esgoto (cólera, febre tifoide); contaminação mantida de um lote comercial de fórmula infantil distribuída regionalmente.</td>
+    </tr>
+    <tr>
+      <td><strong>3. Propagada (Pessoa a Pessoa / Respiratória / Vetorial)</strong></td>
+      <td><strong>Curva Multimodal com Ondas Sucessivas.</strong> Apresenta múltiplos picos crescentes ao longo do tempo. A distância temporal média entre cada onda ou pico sucessivo corresponde aproximadamente ao <strong>período médio de incubação</strong> da doença. A amplitude dos picos tende a crescer enquanto houver suscetíveis na comunidade e cai quando a barreira imunológica é restabelecida.</td>
+      <td>Transmissão horizontal direta ou indireta de indivíduo a indivíduo através de gotículas, aerossóis, contato sexual ou vetores biológicos.<br><em>Exemplos:</em> Epidemia de Sarampo, Varicela, Coqueluche, Influenza, Covid-19, Meningite meningocócica ou surtos urbanos de Dengue transmitida pelo <em>Aedes aegypti</em>.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'medidas-controle-bloqueio-isolamento-quarentena',
+      title: '8. Medidas de Controle: Isolamento, Quarentena e Bloqueio Vacinal',
+      body_html: `
+<h3>Diferenças Conceituais entre Isolamento e Quarentena</h3>
+<p>Em provas de concursos e na prática da vigilância, os termos "isolamento" e "quarentena" são frequentemente confundidos, mas possuem definições técnico-jurídicas radicalmente distintas:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Conceito Sanitário</th>
+      <th>População-Alvo</th>
+      <th>Objetivo Clínico-Epidemiológico e Duração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISOLAMENTO</strong></td>
+      <td>Indivíduos comprovadamente <strong>DOENTES, infectados ou sintomáticos</strong> (ou portadores sãos bacterianos confirmados).</td>
+      <td>Separar as pessoas doentes daquelas sadias durante o <strong>período de transmissibilidade</strong> biológica do patógeno, visando interromper diretamente a emissão do agente infeccioso. Pode ser domiciliar ou hospitalar (em quartos de isolamento de contato, gotículas ou aerossóis com pressão negativa).</td>
+    </tr>
+    <tr>
+      <td><strong>QUARENTENA</strong></td>
+      <td>Indivíduos sadios <strong>ASSINTOMÁTICOS que sofreram EXPOSIÇÃO</strong> íntima conhecida a um caso infeccioso ou área de risco epidemiológico.</td>
+      <td>Restringir a mobilidade e monitorar o surgimento precoce de sinais/sintomas durante o <strong>período máximo de incubação</strong> da doença. Se o indivíduo quarentenado desenvolver febre ou sintomas, ele passa imediatamente da condição de quarentenado para a condição de caso suspeito sob isolamento.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Bloqueio Vacinal Seletivo vs Indiscriminado</h3>
+<p>O <strong>Bloqueio Vacinal</strong> é uma intervenção emergencial de imunização ativa de contatos e residentes na área geográfica circunvizinha a um caso suspeito ou confirmado de doença imunoprevenível, realizada em tempo recorde para formar um cinturão de proteção e estancar a propagação comunitária:</p>
+<ul>
+  <li><strong>Bloqueio Vacinal no Sarampo:</strong> A notificação deve ser imediata (&lt; 24h). A vacinação de bloqueio dos contatos suscetíveis (a partir dos 6 meses de vida) deve ser executada em um prazo máximo de <strong>até 72 horas</strong> após o contato índice para prevenir a doença ou atenuar significativamente a sua expressão clínica;</li>
+  <li><strong>Bloqueio na Febre Amarela:</strong> Identificado um caso humano ou epizootia de primata não humano confirmada em área com baixas coberturas, vacina-se ativamente toda a população não imunizada do território dentro de um raio geográfico pré-determinado;</li>
+  <li><strong>Bloqueio Seletivo vs Indiscriminado:</strong> No bloqueio <em>seletivo</em>, avalia-se a caderneta vacinal de cada contato e vacinam-se apenas aqueles com esquemas atrasados ou ausentes; no bloqueio <em>indiscriminado</em> (comum em campanhas de contenção rápida de surto escolar ou institucional), vacinam-se todos os elegíveis independentemente do histórico prévio documentado.</li>
+</ul>
+
+<h3>Quimioprofilaxia de Contatos em Doenças Bacterianas</h3>
+<p>A administração preventiva de antibióticos (quimioprofilaxia) é reservada exclusivamente para micro-organismos específicos com alta letalidade e risco documentado de transmissão em contatos íntimos:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Doença Bacteriana</th>
+      <th>Quem são os Contatos Elegíveis para Quimioprofilaxia?</th>
+      <th>Esquema Antimicrobiano Padronizado pelo Ministério da Saúde</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Doença Meningocócica</strong> (<em>Neisseria meningitidis</em>)</td>
+      <td>Contatos domiciliares íntimos que dormem sob o mesmo teto, colegas de dormitório militar ou creche que compartilham o mesmo ambiente nas últimas 4 horas por &gt; 5 dias na semana anterior, e profissionais de saúde que realizaram procedimentos invasivos geradores de aerossóis na via aérea (intubação, aspiração) <em>sem uso de máscara cirúrgica ou N95</em>.</td>
+      <td><strong>Rifampicina oral:</strong><br>• Adultos: 600 mg de 12/12h por 2 dias (4 doses);<br>• Crianças &ge; 1 mês: 10 mg/kg de 12/12h por 2 dias;<br>• Lactentes &lt; 1 mês: 5 mg/kg de 12/12h por 2 dias.<br><em>Alternativas:</em> <strong>Ceftriaxona intramuscular</strong> em dose única (250 mg no adulto; 125 mg na criança - fármaco de escolha para <strong>gestantes</strong>) ou Ciprofloxacino oral 500 mg dose única (apenas para adultos não gestantes).</td>
+    </tr>
+    <tr>
+      <td><strong>Coqueluche</strong> (<em>Bordetella pertussis</em>)</td>
+      <td>Todos os contatos domiciliares íntimos, independentemente do estado vacinal, especialmente quando houver lactentes &lt; 1 ano ou gestantes no domicílio.</td>
+      <td><strong>Azitromicina oral:</strong> 10 mg/kg/dia (máximo 500 mg) no 1º dia, seguido de 5 mg/kg/dia (máx 250 mg) do 2º ao 5º dia (total de 5 dias). Alternativa: Claritromicina por 7 dias.</td>
+    </tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'casos-epidemiologicos-investigacao',
+      title: '9. Casos Epidemiológicos Práticos de Investigação de Campo',
+      body_html: `
+<h3>Caso 1: Investigação de Surto Alimentar em Festa Escolar (Coorte Retrospectiva)</h3>
+<p><strong>Cenário:</strong> Em uma sexta-feira à noite, realizou-se o jantar de formatura de uma escola de ensino fundamental com a presença de 120 convidados. Entre o sábado à tarde e o domingo pela manhã (período de 14 a 36 horas após o evento), 48 pessoas procuraram serviços de pronto-atendimento apresentando febre alta (38,5 ºC a 39,5 ºC), cólicas abdominais intensas difusas, náuseas, vômitos e diarreia aquosa profusa com muco. Sete pacientes foram hospitalizados com desidratação moderada. A equipe municipal de vigilância epidemiológica e vigilância sanitária foi acionada na segunda-feira pela manhã.</p>
+
+<p><strong>Aplicação do Método Epidemiológico:</strong></p>
+<ol>
+  <li><strong>Definição Operacional de Caso:</strong> Qualquer pessoa que participou do jantar de formatura na sexta-feira e apresentou diarreia (&ge; 3 evacuações líquidas em 24h) associada a febre ou dor abdominal em até 72 horas após o evento.</li>
+  <li><strong>Construção da Linha de Casos e Entrevistas:</strong> A equipe contatou todos os 120 participantes (população fechada delimitada) aplicando um questionário estruturado de consumo alimentar contendo os 4 pratos servidos no bufê: Carne Assada, Arroz à Grega, Salada de Batata com Maionese Caseira e Salada Verde de Folhas.</li>
+  <li><strong>Cálculo das Taxas de Ataque Específicas por Alimento:</strong>
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>Alimento Servido</th>
+          <th>Comeram e Adoeceram / Total que Comeu</th>
+          <th>Taxa de Ataque nos Expostos (%)</th>
+          <th>NÃO Comeram e Adoeceram / Total que Não Comeu</th>
+          <th>Taxa de Ataque nos NÃO Expostos (%)</th>
+          <th>Risco Relativo (RR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Salada de Batata c/ Maionese</strong></td>
+          <td>44 / 55</td>
+          <td><strong>80,0%</strong></td>
+          <td>4 / 65</td>
+          <td><strong>6,1%</strong></td>
+          <td><strong>13,11</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Carne Assada</strong></td>
+          <td>36 / 90</td>
+          <td>40,0%</td>
+          <td>12 / 30</td>
+          <td>40,0%</td>
+          <td>1,00</td>
+        </tr>
+        <tr>
+          <td><strong>Arroz à Grega</strong></td>
+          <td>30 / 75</td>
+          <td>40,0%</td>
+          <td>18 / 45</td>
+          <td>40,0%</td>
+          <td>1,00</td>
+        </tr>
+        <tr>
+          <td><strong>Salada de Folhas Verdes</strong></td>
+          <td>14 / 40</td>
+          <td>35,0%</td>
+          <td>34 / 80</td>
+          <td>42,5%</td>
+          <td>0,82</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Interpretação Epidemiológica:</strong> A Salada de Maionese apresentou uma taxa de ataque de 80,0% entre os expostos e de apenas 6,1% entre os que não consumiram, resultando em um <strong>Risco Relativo de 13,11</strong> (p &lt; 0,001). Os demais alimentos apresentaram RR próximo de 1,0. Coproculturas de 5 pacientes e sobras da maionese isolaram <em>Salmonella enteritidis</em>. A inspeção sanitária identificou o uso de ovos crus não pasteurizados mantidos à temperatura ambiente por &gt; 6 horas antes da montagem da maionese.</li>
+  <li><strong>Medidas de Intervenção:</strong> Interdição cautelar da cozinha do bufê, descarte imediato dos lotes de ovos, notificação do surto no SINAN e capacitação obrigatória em boas práticas de manipulação de alimentos.</li>
+</ol>
+
+<h3>Caso 2: Alerta de Caso Importado de Sarampo e Bloqueio Vacinal Imediato</h3>
+<p><strong>Cenário:</strong> Um homem de 24 anos, tripulante de navio cargueiro, natural de país com circulação endêmica de sarampo, desembarcou em porto brasileiro há 4 dias. Procurou a UPA municipal queixando-se de febre alta (39,4 ºC) há 4 dias, associada a tosse seca produtiva, coriza intensa, fotofobia e conjuntivite bilateral com secreção serosa. Há 24 horas iniciou exantema maculopapular eritematoso confluente não pruriginoso, com início na linha de implantação do cabelo e região retroauricular, progredindo para face, pescoço e tronco (progressão craniocaudal). Ao exame oral: enantema em mucosa jugal com pequenos pontos esbranquiçados de 1 mm cercados por halo avermelhado opostos aos molares (<strong>Manchas de Koplik</strong>).</p>
+
+<p><strong>Condutas Imediatas da Vigilância:</strong></p>
+<ol>
+  <li><strong>Isolamento Imediato do Paciente:</strong> Transferir o paciente para quarto de isolamento respiratório para aerossóis (com pressão negativa e filtro HEPA) ou, na ausência deste, quarto privativo com ventilação natural com portas fechadas e colocação de máscara cirúrgica no paciente e máscara PFF2/N95 nos profissionais de saúde.</li>
+  <li><strong>Notificação Compulsória Imediata:</strong> Trata-se de agravo de <strong>notificação imediata em até 24 horas para o MS, SES e SMS</strong> pela simples suspeita clínica.</li>
+  <li><strong>Coleta Oportuna de Espécimes Clínicos:</strong> Coleta de sangue para dosagem sorológica de IgM e IgG específicos contra o vírus do sarampo; e coleta de swab combinado de orofaringe/nasofaringe e urina para isolamento viral e RT-PCR molecular para genotipagem viral no Lacen de referência.</li>
+  <li><strong>Bloqueio Vacinal Seletivo em até 72 Horas:</strong> Identificação e busca ativa de todos os contatos do caso (colegas de tripulação, passageiros do táxi, profissionais e pacientes da sala de espera da UPA). Todos os contatos suscetíveis (sem comprovação documental de duas doses de Tríplice Viral na faixa de 12 meses a 29 anos, ou sem comprovação de uma dose entre 30 e 59 anos) com 6 meses de vida ou mais devem receber a <strong>vacina Tríplice Viral de bloqueio no prazo máximo de 72 horas</strong> após o contato.</li>
+  <li><strong>Profilaxia para Imunocomprometidos e Gestantes Suscetíveis:</strong> Em contatos vulneráveis para os quais a vacina de vírus vivo é contraindicada (gestantes suscetíveis, crianças &lt; 6 meses ou imunodeprimidos graves), prescreve-se <strong>Imunoglobulina Humana Padrão (IGIV)</strong> por via intramuscular/venosa em até 6 dias pós-exposição.</li>
+</ol>
+
+<h3>Caso 3: Notificação de Violência Sexual e Tentativa de Suicídio</h3>
+<p><strong>Cenário:</strong> Uma jovem de 19 anos dá entrada no pronto-socorro municipal trazida por familiares às 22 horas de um sábado, após ter ingerido intencionalmente 30 comprimidos de clonazepam associados a ingestão alcoólica após ter sofrido agressão física e violência sexual por pessoa conhecida há cerca de 18 horas. A paciente encontra-se torporosa, mas com vias aéreas pérvias e estabilidade ventilatória e hemodinâmica. A médica de plantão conduz a desintoxicação e o suporte clínico inicial.</p>
+
+<p><strong>Dúvidas da Equipe e Diretrizes de Vigilância:</strong></p>
+<ul>
+  <li><strong>Prazo de Notificação da Violência Sexual:</strong> A violência sexual contra qualquer pessoa possui <strong>notificação imediata em até 24 horas</strong> para a autoridade de saúde local (SMS/SES), viabilizando a profilaxia de infecções sexualmente transmissíveis (ISTs), profilaxia pós-exposição ao HIV (PEP) em até 72 horas e anticoncepção oral de emergência.</li>
+  <li><strong>Prazo de Notificação da Tentativa de Suicídio:</strong> A tentativa de suicídio (violência autoprovocada) também é agravo de <strong>notificação imediata em até 24 horas</strong> para a Secretaria de Saúde, acionando a rede de atenção psicossocial (CAPS) para garantir acolhimento e evitar nova tentativa letal após a alta.</li>
+  <li><strong>Diferença entre Notificação Compulsória e Comunicação Policial:</strong> A ficha de notificação compulsória é um documento <em>estritamente sanitário e epidemiológico</em> protegido por sigilo médico, que tem por finalidade mobilizar cuidados de saúde e políticas públicas. Em se tratando de vítima maior de idade e capaz, a realização de Boletim de Ocorrência policial depende exclusivamente da manifestação de vontade da vítima (não é dever do médico denunciar o agressor à delegacia contra a vontade expressa da paciente maior de idade). Contudo, caso a vítima fosse criança, adolescente ou incapaz, haveria a obrigação legal concorrente de comunicação imediata ao Conselho Tutelar e à autoridade policial competente conforme o Estatuto da Criança e do Adolescente (ECA).</li>
+</ul>
+`
+    },
+    {
+      id: 'questoes-comentadas-residencia',
+      title: '10. Questões Comentadas no Padrão ENAMED e Principais Bancas de Concurso',
+      body_html: `
+<h3>Questão 1 (ENAMED / Inep - Medicina Preventiva)</h3>
+<p>Um médico do Programa de Saúde da Família atende uma criança de 4 anos de idade com quadro de febre há 3 dias, conjuntivite, tosse seca intensa e exantema maculopapular confluente que se iniciou na fronte e região retroauricular e avançou para tronco e extremidades. Ao exame da cavidade oral, visualiza manchas de Koplik na mucosa jugal. A criança não possui comprovação de vacinação na caderneta. Diante do quadro clínico altamente sugestivo de sarampo, qual deve ser a conduta do médico em relação à vigilância epidemiológica e às medidas de controle?</p>
+<p>A) Aguardar a confirmação sorológica por IgM e IgG para sarampo antes de notificar ao sistema, pois a notificação de casos não confirmados gera alarme indevido e distorce as estatísticas oficiais.<br>
+B) Notificar imediatamente o caso em até 24 horas às Secretarias de Saúde e ao Ministério da Saúde pela simples suspeita clínica, e desencadear o bloqueio vacinal seletivo com a vacina Tríplice Viral em todos os contatos suscetíveis no prazo máximo de até 72 horas.<br>
+C) Notificar o agravo na rotina semanal através do SINAN e prescrever antibioticoterapia profilática com azitromicina para todos os contatos domiciliares da criança.<br>
+D) Realizar o isolamento domiciliar da criança por 30 dias e coletar PPD em todos os contatos da creche antes de qualquer intervenção vacinal.<br>
+E) Encaminhar a criança para internação em hospital terciário para realização de quarentena institucional obrigatória por 14 dias.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> O sarampo é uma doença de elevada transmissibilidade respiratória com alto potencial de propagação comunitária. As normas do Ministério da Saúde determinam que a notificação deve ser <strong>imediata (em até 24 horas)</strong> para todas as três esferas gestoras (MS, SES e SMS) <strong>diante da simples suspeita clínica</strong>, independentemente da confirmação laboratorial prévia. O bloqueio vacinal com a vacina Tríplice Viral deve ser iniciado no menor tempo possível, respeitando o limite ótimo de <strong>até 72 horas</strong> após o contato índice para prevenir o surgimento da doença ou atenuar sua gravidade.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Esperar a sorologia provocaria a perda da janela de 72 horas para o bloqueio vacinal dos contatos.<br>
+C incorreta: Sarampo não tem notificação semanal nem é tratado com antibióticos bacterianos.<br>
+D incorreta: PPD não tem qualquer relação com o manejo ou investigação de surto de sarampo.<br>
+E incorreta: Crianças sem complicações graves de sarampo cumprem isolamento respiratório em domicílio; o conceito de quarentena se aplica a assintomáticos expostos e não ao paciente doente.</p>
+
+<h3>Questão 2 (USP / FUVEST - Residência Médica)</h3>
+<p>Durante a investigação de um surto de gastroenterite aguda ocorrido após uma confraternização de empresa na qual compareceram 200 funcionários, a equipe de vigilância epidemiológica municipal realizou uma coorte retrospectiva e construiu a tabela de consumo dos alimentos servidos:</p>
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>Alimento</th>
+      <th>Comeram e Adoeceram / Total que Comeu</th>
+      <th>NÃO Comeram e Adoeceram / Total que Não Comeu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Torta de Frango</strong></td>
+      <td>80 / 100</td>
+      <td>5 / 100</td>
+    </tr>
+    <tr>
+      <td><strong>Salada Caesar</strong></td>
+      <td>40 / 80</td>
+      <td>45 / 120</td>
+    </tr>
+    <tr>
+      <td><strong>Sobremesa de Chocolate</strong></td>
+      <td>42 / 105</td>
+      <td>43 / 95</td>
+    </tr>
+  </tbody>
+</table>
+<p>Com base nos dados fornecidos, a Taxa de Ataque Geral (TAG) do surto, a Taxa de Ataque naqueles que comeram a Torta de Frango e o Risco Relativo (RR) associado ao consumo da Torta de Frango são, respectivamente:</p>
+<p>A) TAG = 42,5%; Taxa de Ataque nos expostos à Torta = 80%; Risco Relativo = 16.<br>
+B) TAG = 85%; Taxa de Ataque nos expostos à Torta = 80%; Risco Relativo = 1,6.<br>
+C) TAG = 42,5%; Taxa de Ataque nos expostos à Torta = 40%; Risco Relativo = 4.<br>
+D) TAG = 50%; Taxa de Ataque nos expostos à Torta = 80%; Risco Relativo = 12.<br>
+E) TAG = 80%; Taxa de Ataque nos expostos à Torta = 100%; Risco Relativo = 20.</p>
+<p><strong>Gabarito Comentado: Alternativa A.</strong><br>
+<em>Justificativa Matemática e Epidemiológica:</em><br>
+1. Número total de indivíduos presentes na festa = 200.<br>
+2. Pessoas que adoeceram ao todo: analisando a torta de frango, 80 comeram e adoeceram + 5 não comeram e adoeceram = 85 pessoas doentes no total.<br>
+3. Taxa de Ataque Geral (TAG): $\text{TAG} = \frac{85}{200} = 42,5\%$.<br>
+4. Taxa de Ataque Específica nos Expostos à Torta de Frango ($\text{TAE}_{\text{exp}}$): $\text{TAE}_{\text{exp}} = \frac{80}{100} = 80\%$.<br>
+5. Taxa de Ataque Específica nos NÃO Expostos à Torta ($\text{TAE}_{\text{não exp}}$): $\text{TAE}_{\text{não exp}} = \frac{5}{100} = 5\%$.<br>
+6. Risco Relativo (RR) da Torta de Frango: $\text{RR} = \frac{80\%}{5\%} = 16$.<br>
+Os cálculos coincidem perfeitamente com a Alternativa A.<br>
+<em>Comentário dos Distratores:</em><br>
+B, C, D e E trazem equívocos no cálculo do denominador total da festa (TAG) ou na divisão das taxas de ataque.</p>
+
+<h3>Questão 3 (Unicamp - Residência Médica)</h3>
+<p>Analise o gráfico a seguir referente a uma investigação epidemiológica de surto comunitário de doença febril respiratória em um município de 50.000 habitantes:</p>
+<p><em>(Descrição do gráfico: Histograma temporal no qual os casos iniciam-se com um pequeno número, seguido por uma onda ascendente que atinge um primeiro pico na 2ª semana; após queda transitória, surge uma segunda onda de maior magnitude que atinge pico na 4ª semana; e uma terceira onda ainda mais ampla na 6ª semana, estendendo-se por quase dois meses).</em></p>
+<p>Essa curva epidêmica é compatível com um padrão de disseminação de:</p>
+<p>A) Fonte comum pontual decorrente de exposição maciça e instantânea em evento único.<br>
+B) Fonte comum contínua sem transmissão secundária, como contaminação contínua de água.<br>
+C) Transmissão propagada (pessoa a pessoa), na qual múltiplos picos sucessivos ocorrem separados pelo intervalo do período de incubação do agente infeccioso.<br>
+D) Erro sistemático de digitação no SINAN, simulando falsa sazonalidade climática.<br>
+E) Intoxicação alimentar estafilocócica com período de latência ultra-curto.</p>
+<p><strong>Gabarito Comentado: Alternativa C.</strong><br>
+<em>Justificativa:</em> O gráfico descrito representa uma <strong>Curva Epidêmica Propagada (Progressiva)</strong>. O traçado multimodal clássico, caracterizado por ondas sucessivas de amplitude crescente separadas por intervalos regulares que equivalem ao período de incubação do agente etiológico, é típico de doenças de transmissão direta interpessoal (respiratória, contato ou gotículas, como sarampo, influenza e varicela) ou transmitidas por vetores. Cada grupo de indivíduos infectados atua transmitindo o patógeno para uma nova geração de suscetíveis na comunidade.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: Fonte comum pontual produz curva unimodal, com ascensão e queda rápidas limitadas a um único período de incubação.<br>
+B incorreta: Fonte comum contínua exibe um platô achatado e prolongado sem ondas sucessivas.<br>
+D incorreta: É uma morfologia típica de dinâmica infecciosa e não mero erro de digitação.<br>
+E incorreta: Intoxicações alimentares produzem curvas de ponto único extremamente agudas.</p>
+
+<h3>Questão 4 (SURCE / PSU-CE - Residência Médica)</h3>
+<p>Uma enfermeira da Estratégia Saúde da Família notifica a ocorrência de uma paciente de 28 anos, previamente sadia, que procurou a unidade com lesões ulceradas eritematosas lineares em dorso de mão direita e antebraço há 3 semanas, com linfangite ascendente (padrão esporotricoide), após ter sofrido arranhadura por gato doméstico que apresentava feridas crostosas na face. O médico assistente confirma a hipótese diagnóstica de Esporotricose Humana. Em conformidade com a legislação federal vigente e as portarias consolidadas do Ministério da Saúde sobre notificação compulsória, a conduta correta em relação à notificação deste caso é:</p>
+<p>A) Trata-se de agravo de notificação compulsória exclusiva do nível hospitalar terciário.<br>
+B) A esporotricose humana foi recentemente incorporada à Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, devendo ser notificada formalmente na periodicidade semanal em todo o território nacional.<br>
+C) Não deve ser notificada, pois a esporotricose é uma micose que requer apenas notificação veterinária do animal infectado.<br>
+D) Deve ser notificada em caráter imediato (em até 24 horas) ao Ministério da Saúde pelo risco de pandemia fúngica.<br>
+E) Notificar apenas se a paciente apresentar evolução para sepse fúngica com hemocultura positiva.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> Em ato normativo recente que atualizou a Lista Nacional de Notificação Compulsória (Portaria GM/MS nº 6.734/2025 e consolidações vigentes), a <strong>Esporotricose Humana</strong> foi expressamente incluída na lista de agravos de <strong>notificação compulsória semanal</strong> em todo o território nacional. A medida visa conter o avanço epidêmico da transmissão zoonótica do fungo termodimórfico <em>Sporothrix brasiliensis</em> por felinos domésticos e mapear a dispersão geográfica da micose no país.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: A notificação é obrigatória em qualquer nível de atenção, inclusive na Atenção Primária à Saúde.<br>
+C incorreta: A notificação do caso humano é obrigatória e fundamental para a saúde pública integrada (One Health).<br>
+D incorreta: A esporotricose humana tem periodicidade semanal e não imediata em 24h.<br>
+E incorreta: A forma cutâneo-linfática típica deve ser notificada sem esperar complicações sistêmicas.</p>
+
+<h3>Questão 5 (UERJ - Residência Médica)</h3>
+<p>Médico pediatra atende na emergência um escolar de 7 anos com febre alta, rigidez de nuca, vômitos em jato e petéquias em tronco. A punção lombar evidencia líquor turvo com pleocitose neutrofílica marcante, hipoglicorraquia e diplococos Gram-negativos aos pares (compatível com <em>Neisseria meningitidis</em>). A criança reside com os pais, um irmão de 2 anos e uma avó de 68 anos. O médico inicia Ceftriaxona venosa. Em relação às medidas de vigilância epidemiológica e profilaxia de contatos, a conduta correta é:</p>
+<p>A) Notificar o caso à Secretaria Municipal de Saúde em caráter semanal após a identificação do sorogrupo pelo Lacen.<br>
+B) Notificar imediatamente o caso em até 24 horas à autoridade de saúde local e indicar quimioprofilaxia com Rifampicina oral para todos os contatos domiciliares íntimos.<br>
+C) Indicar quimioprofilaxia exclusivamente para o irmão de 2 anos, pois adultos possuem imunidade natural esterilizante.<br>
+D) Realizar quarentena hospitalar obrigatória de todos os familiares por 30 dias.<br>
+E) Contraindicar a quimioprofilaxia caso os contatos tenham recebido a vacina Meningocócica C no passado.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> A Doença Meningocócica é um agravo de <strong>notificação imediata em até 24 horas</strong> para a Secretaria Municipal e Estadual de Saúde. A quimioprofilaxia de contatos íntimos deve ser iniciada o mais rápido possível (idealmente nas primeiras 24 a 48 horas) e visa erradicar o estado de portador nasofaríngeo para bloquear a transmissão. Todos os contatos domiciliares íntimos que coabitam com o paciente são elegíveis, utilizando-se <strong>Rifampicina oral por 2 dias</strong> (ou Ceftriaxona intramuscular em dose única, especialmente para gestantes). O fato de o contato ter vacinação prévia NÃO dispensa a quimioprofilaxia, pois a vacina protege contra a doença invasiva, mas não impede completamente a colonização temporária da nasofaringe.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: A notificação é imediata em 24h e não espera o sorogrupo.<br>
+C incorreta: Adultos contactantes domiciliares transmitem o meningococo e devem receber profilaxia.<br>
+D incorreta: Não há indicação de quarentena hospitalar.<br>
+E incorreta: A vacinação prévia não exclui a indicação de quimioprofilaxia nos contatos domiciliares íntimos.</p>
+
+<h3>Questão 6 (AMRIGS - Residência Médica)</h3>
+<p>Em relação aos Sistemas de Informação em Saúde (SIS) utilizados pelo Ministério da Saúde e pelas secretarias estaduais e municipais, assinale a correlação correta entre o sistema, seu documento de entrada e sua finalidade precípua:</p>
+<p>A) O SINASC é alimentado pela Autorização de Internação Hospitalar (AIH) e mede os gastos públicos com obstetrícia.<br>
+B) O SIM é alimentado pela Declaração de Óbito (DO) e fornece dados fundamentais para o cálculo de coeficientes de mortalidade geral, infantil e por causas específicas.<br>
+C) O SINAN é alimentado pelo Boletim de Produção Ambulatorial (BPA) e monitora a produtividade dos médicos especialistas.<br>
+D) O SISVAN é alimentado pela Declaração de Nascido Vivo (DNV) e destina-se a calcular a taxa de cesarianas no Brasil.<br>
+E) O SI-PNI monitora as internações por pneumonia bacteriana com base nos registros do faturamento de leitos.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> O Sistema de Informações sobre Mortalidade (SIM) é oficialmente alimentado pela <strong>Declaração de Óbito (DO)</strong>, documento padronizado emitido pelo médico. Ele constitui a base oficial para o cálculo de todos os coeficientes de mortalidade populacional (geral, proporcional, materna e infantil) e análise das causas de morte segundo a CID-10.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: O SINASC é alimentado pela Declaração de Nascido Vivo (DNV).<br>
+C incorreta: O SINAN é alimentado pelas Fichas de Notificação e Investigação de Agravos.<br>
+D incorreta: O SISVAN é o sistema de vigilância alimentar e nutricional.<br>
+E incorreta: O SI-PNI é o sistema de informação do programa nacional de imunizações.</p>
+
+<h3>Questão 7 (FMUSP / HC-FMUSP - Residência Médica)</h3>
+<p>Um pedestre de 45 anos é atropelado por automóvel em via pública, sofrendo traumatismo cranioencefálico grave com hematoma subdural agudo e fraturas pélvicas. Permanece internado na Unidade de Terapia Intensiva (UTI) de um hospital universitário sob ventilação mecânica invasiva e cuidados intensivos por 25 dias. No 23º dia de internação, desenvolve pneumonia associada à ventilação mecânica por <em>Pseudomonas aeruginosa</em> multirresistente, evoluindo para choque séptico refratário e falecendo. A família solicita a Declaração de Óbito ao médico intensivista que cuidou do paciente nas últimas semanas. De acordo com a Resolução CFM nº 1.779/2005 e as normas do Ministério da Saúde, a conduta correta quanto ao atesto do óbito é:</p>
+<p>A) O médico intensivista deve emitir e assinar a Declaração de Óbito, colocando choque séptico como causa imediata e traumatismo cranioencefálico como causa básica, pois prestou assistência contínua por mais de 20 dias.<br>
+B) O corpo deve ser encaminhado obrigatoriamente ao Instituto Médico Legal (IML), cabendo exclusivamente ao médico legista a emissão da Declaração de Óbito, uma vez que o evento inicial desencadeador foi uma causa externa (morte não natural / violenta).<br>
+C) O corpo deve ser encaminhado ao Serviço de Verificação de Óbito (SVO) para realização de necrópsia clínica, já que o óbito decorreu de infecção hospitalar.<br>
+D) O médico intensivista pode emitir a Declaração de Óbito desde que declare como causa básica "Parada Cardiorrespiratória indeterminada".<br>
+E) A Declaração de Óbito deve ser preenchida em conjunto pelo médico assistente e pela autoridade policial que atendeu a ocorrência de trânsito.</p>
+<p><strong>Gabarito Comentado: Alternativa B.</strong><br>
+<em>Justificativa:</em> Em casos de morte decorrente de causas externas (acidentes de trânsito, atropelamentos, homicídios, suicídios, quedas, afogamentos ou suspeita de violência), a competência legal para a realização da necrópsia médico-legal e emissão da Declaração de Óbito é <strong>exclusiva do médico legista do Instituto Médico Legal (IML)</strong>. O tempo transcorrido entre o evento traumático inicial e o óbito (mesmo que de semanas ou meses de internação hospitalar) não descaracteriza a natureza violenta/acidental do óbito. O médico assistente não deve atestar mortes por causas externas, sob pena de infração ética e legal.<br>
+<em>Comentário dos Distratores:</em><br>
+A incorreta: É vedado ao médico assistente atestar óbito decorrente de trauma ou violência.<br>
+C incorreta: O SVO é destinado exclusivamente a mortes naturais sem assistência médica ou com diagnóstico clínico obscuro, nunca a mortes violentas.<br>
+D incorreta: Parada cardiorrespiratória não é diagnóstico de causa básica e o médico assistente não pode atestar morte externa.<br>
+E incorreta: A autoridade policial não emite nem assina a declaração médica de óbito.</p>
+
+<h3>Questão 8 (UNICAMP - Residência Médica)</h3>
+<p>Durante uma epidemia de febre de Chikungunya em um município do Nordeste, o comitê de vigilância epidemiológica municipal decidiu modificar a definição operacional de caso suspeito adotada nas unidades básicas de saúde: até então, exigia-se a presença de febre alta súbita, artralgia poliarticular simétrica intensa e exantema; com a alteração, passou-se a exigir apenas a presença de dor articular aguda de início súbito, sem necessidade de comprovação de febre ou exantema. Em relação aos atributos do sistema de vigilância epidemiológica, essa alteração na definição operacional de caso provocou, respectivamente:</p>
+<p>A) Aumento da sensibilidade do sistema e redução do valor preditivo positivo (VPP).<br>
+B) Redução da sensibilidade do sistema e aumento da especificidade.<br>
+C) Aumento da especificidade do sistema e aumento do valor preditivo positivo (VPP).<br>
+D) Redução da oportunidade do sistema e aumento da aceitabilidade.<br>
+E) Nenhuma alteração nos atributos operacionais, mantendo-se constante a sensibilidade.</p>
+<p><strong>Gabarito Comentado: Alternativa A.</strong><br>
+<em>Justificativa:</em> Ao tornar a definição operacional de caso mais ampla, permissiva e menos restritiva (exigindo apenas artralgia aguda em vez da tríade febre + artralgia + exantema), o sistema consegue captar um número muito maior de pessoas com a infecção, <strong>aumentando a sensibilidade</strong> da vigilância. Como consequência matemática direta, pessoas com outras afecções articulares (como osteoartrite descompensada, artrite gotosa ou lúpus) também passam a ser enquadradas como casos suspeitos (falsos-positivos), o que reduz a especificidade e <strong>diminui o Valor Preditivo Positivo (VPP)</strong> da notificação.<br>
+<em>Comentário dos Distratores:</em><br>
+B e C incorretas: Critérios mais brandos aumentam a sensibilidade e diminuem a especificidade e o VPP.<br>
+D e E incorretas: A mudança impacta frontalmente os indicadores quantitativos de sensibilidade e predição.</p>
+`
+    },
+    {
+      id: 'resumo-estrategico-vigilancia',
+      title: '11. Guia Rápido e Resumo de Alto Rendimento para Provas',
+      body_html: `
+<h3>Tabela Mnemônica: Doenças de Notificação Imediata em até 24 Horas para as Três Esferas (MS, SES e SMS)</h3>
+<p>Grave para a prova a lista prioritária dos agravos que devem chegar imediatamente ao <strong>Ministério da Saúde</strong> em Brasília:</p>
+<ul>
+  <li><strong>B</strong>otulismo</li>
+  <li><strong>C</strong>ólera</li>
+  <li><strong>F</strong>ebre Amarela e <strong>F</strong>ebres Hemorrágicas Virais (Ebola, Marburg, Lassa)</li>
+  <li><strong>F</strong>ebre Maculosa e outras Rickettsioses</li>
+  <li><strong>P</strong>este e <strong>P</strong>oliomielite</li>
+  <li><strong>R</strong>aiva Humana</li>
+  <li><strong>S</strong>arampo e <strong>R</strong>ubéola</li>
+  <li><strong>V</strong>aríola e <strong>I</strong>nfluenza humana por nova cepa pandêmica</li>
+  <li><strong>D</strong>ifteria e <strong>T</strong>étano Neonatal</li>
+  <li><strong>E</strong>vento Adverso Grave Pós-Vacinação e <strong>O</strong>utras emergências de saúde pública de importância internacional (ESPII)</li>
+</ul>
+
+<h3>Regras de Ouro Decisórias para o Plantão</h3>
+<ol>
+  <li><strong>Suspeitou, Notificou:</strong> Não espere PCR, Elisa ou cultura para notificar. A vigilância atua no caso suspeito;</li>
+  <li><strong>Alimento com maior Risco Relativo no surto:</strong> Calcule a Taxa de Ataque nos que comeram vs nos que não comeram. O alimento com a maior razão de taxas (RR) é o responsável pelo surto;</li>
+  <li><strong>Curva com múltiplos picos (multimodal):</strong> Transmissão pessoa a pessoa (propagada). Distância entre picos = período de incubação;</li>
+  <li><strong>Curva unimodal súbita e queda rápida:</strong> Fonte comum pontual (ex: maionese contaminada em almoço único);</li>
+  <li><strong>Isolamento separa o doente; Quarentena restringe o exposto sadio</strong> durante a incubação máxima;</li>
+  <li><strong>Esporotricose Humana:</strong> Agravo oficialmente inserido na Lista Nacional com notificação compulsória semanal em todo o Brasil.</li>
+</ol>
+`
+    },
+    {
+      id: 'pontos-chave-enamed-vigilancia',
+      title: '12. Pontos de Alto Rendimento para o ENAMED e Diretrizes Finais',
+      body_html: `
+<h3>Dez Mandamentos da Vigilância Epidemiológica para o ENAMED</h3>
+<ul>
+  <li><strong>1. Conceito Central:</strong> Vigilância epidemiológica é a "Informação para a Ação" — não termina no registro estatístico, exige intervenção oportuna e avaliação da eficácia.</li>
+  <li><strong>2. Notificação da Suspeita:</strong> É dever legal do médico notificar a suspeita clínica sem aguardar resultado confirmatório de laboratório. O sigilo médico não pode ser alegado como justificativa para sonegar a notificação.</li>
+  <li><strong>3. Notificação Negativa:</strong> Comunica formalmente a ausência de casos na semana epidemiológica, comprovando que o sistema de vigilância está operante e vigilante no território.</li>
+  <li><strong>4. Prazos Imediatos:</strong> Agravos imediatos devem ser comunicados em no máximo 24 horas. Agravos crônicos (tuberculose, hanseníase, sífilis, esporotricose) são notificados semanalmente.</li>
+  <li><strong>5. Diferença entre Dengue Leve e Grave:</strong> A dengue clássica sem alarme tem notificação semanal. Casos de dengue com sinais de alarme, dengue grave ou óbitos suspeitos possuem notificação imediata em até 24 horas!</li>
+  <li><strong>6. Cálculo da Taxa de Ataque:</strong> É a incidência cumulativa em surtos ($\text{Casos Novos} / \text{Expostos sob Risco} \times 100$). A Razão de Taxas de Ataque entre expostos e não expostos é o Risco Relativo.</li>
+  <li><strong>7. Curvas Epidêmicas:</strong> Pontual (unimodal), contínua (platô) e propagada (múltiplas ondas). Identifique imediatamente a fonte pelo padrão gráfico.</li>
+  <li><strong>8. Bloqueio Vacinal do Sarampo:</strong> Deve ser realizado em até 72 horas pós-exposição para contatos suscetíveis a partir de 6 meses de vida.</li>
+  <li><strong>9. Quimioprofilaxia do Meningococo:</strong> Indicada para contatos domiciliares íntimos com Rifampicina oral por 2 dias (ou Ceftriaxona IM em gestantes) no prazo preferencial de até 48 horas. Não é dispensada por vacinação prévia.</li>
+  <li><strong>10. Sistemas de Informação:</strong> SINAN (doenças notificáveis), SIM (mortalidade / Declaração de Óbito), SINASC (nascidos vivos / Declaração de Nascido Vivo — fornece denominadores), SISVAN (estado nutricional).</li>
+</ul>
+`
+    }
+  ],
+  references: [
+    {
+      title: 'Ministério da Saúde do Brasil — Guia de Vigilância em Saúde, 6ª edição revisada',
+      url: 'https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia-geral/guia-de-vigilancia-em-saude-6a-edicao'
+    },
+    {
+      title: 'Ministério da Saúde do Brasil — Portaria de Consolidação GM/MS nº 4/2017 e Portaria GM/MS nº 6.734/2025 (Lista Nacional de Notificação Compulsória)',
+      url: 'https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria'
+    },
+    {
+      title: 'Centers for Disease Control and Prevention (CDC) — Principles of Epidemiology in Public Health Practice, 3rd Edition',
+      url: 'https://www.cdc.gov/csels/dsepd/ss1978/index.html'
+    },
+    {
+      title: 'Organização Pan-Americana da Saúde (OPAS/OMS) — Módulos de Princípios de Epidemiologia para o Controle de Enfermidades (MOPECE)',
+      url: 'https://www.paho.org/bra'
+    },
+    {
+      title: 'Ministério da Saúde do Brasil — Manual de Investigação de Surtos de Doenças Transmitidas por Alimentos (DTA)',
+      url: 'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtha'
+    }
+  ]
+};
+
+const chars = saveBook(book);
+console.log(`Finished ${book.slug}: ${chars} useful characters.`);
