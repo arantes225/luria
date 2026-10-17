@@ -123,6 +123,26 @@ body[data-ui="v2"] {
 
 }
 body[data-ui="v2"] {color-scheme:light;}
+
+/* Universal Accessible Skip-Link: off-screen until focused, never bleeds into visual layout above logo */
+.ui-skip-link {
+  position: fixed !important;
+  left: 1rem !important;
+  top: -100rem !important;
+  padding: 0.75rem 1.25rem !important;
+  background: var(--color-primary, #184888) !important;
+  color: #ffffff !important;
+  z-index: 100000 !important;
+  border-radius: var(--ui-radius-control, 8px) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+  transition: top 0.2s ease !important;
+}
+.ui-skip-link:focus,
+.ui-skip-link:focus-visible {
+  top: 1rem !important;
+}
 body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
 
 /* Installed mode uses the same shell, with only safe-area dimensions added. */

@@ -648,3 +648,549 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ==============================================================================
+   LURIA — Hub Central de Jogos (jogos/index.html)
+   Estilos limpos, sem sobreposições ou declarações redundantes.
+   ============================================================================== */
+
+body[data-page="jogos"] .games-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: 8px;
+}
+
+body[data-page="jogos"] .games-page > * {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+body[data-page="jogos"] .games-spotlight {
+  height: 126px;
+  min-height: 126px;
+  margin: 0;
+  padding: 20px 28px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong {
+  font-size: clamp(27px, 2.6vw, 33px);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 9px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+body[data-page="jogos"] .games-spotlight-fig {
+  width: 170px;
+  height: 110px;
+  position: relative;
+  flex: none;
+  z-index: 2;
+  isolation: isolate;
+}
+
+body[data-page="jogos"] .games-spotlight-fig span {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 24px rgba(5, 20, 55, 0.19), inset 0 2px 2px rgba(255, 255, 255, 0.28);
+  transform: rotate(-10deg);
+  background: linear-gradient(145deg, #92c8ff, #377ac3);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:first-child {
+  right: 91px;
+  top: 19px;
+  transform: rotate(-15deg);
+  background: linear-gradient(145deg, #fff0b9, #edb34e);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:nth-child(2) {
+  right: 42px;
+  top: 32px;
+  transform: rotate(11deg);
+  background: linear-gradient(145deg, #d5e8ff, #709ddd);
+}
+
+body[data-page="jogos"] .games-spotlight-fig span:nth-child(3) {
+  right: 4px;
+  top: 12px;
+  transform: rotate(16deg);
+  background: linear-gradient(145deg, #b2f4de, #43a997);
+}
+
+body[data-page="jogos"] .games-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 2px 4px;
+}
+
+body[data-page="jogos"] .games-section-label h2 {
+  margin: 0;
+  color: var(--color-text-primary, #172033);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+body[data-page="jogos"] .games-section-label span {
+  font-size: 12px;
+  color: var(--color-text-secondary, #596579);
+}
+
+body[data-page="jogos"] .games-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  min-width: 0;
+}
+
+body[data-page="jogos"] :is(.games-feature, .games-mini) {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border, #e3e7ed);
+  border-radius: 15px;
+  background: var(--color-surface, #fff);
+  box-shadow: 0 2px 11px rgba(15, 35, 66, 0.045);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+body[data-page="jogos"] .games-feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 35, 66, 0.06);
+}
+
+body[data-page="jogos"] .games-mini:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 35, 66, 0.08);
+}
+
+body[data-page="jogos"] .games-feature {
+  min-height: 302px;
+  display: grid;
+  grid-template-columns: minmax(225px, 0.82fr) minmax(270px, 1fr);
+  gap: 3px;
+  align-items: stretch;
+  padding: 17px 0 17px 22px;
+}
+
+body[data-page="jogos"] .games-feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 11px;
+  z-index: 2;
+  padding: 4px 0;
+}
+
+body[data-page="jogos"] .games-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #184888;
+  background: #e9f0fa;
+  border: 1px solid #dbe6f4;
+  border-radius: 50px;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  padding: 6px 9px;
+}
+
+body[data-page="jogos"] .games-kicker .games-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #28896d;
+}
+
+body[data-page="jogos"] .games-feature h2 {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 38px);
+  color: #163c75;
+  font-weight: 760;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+body[data-page="jogos"] .games-feature p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--color-text-secondary, #596579);
+  margin: 0;
+  max-width: 310px;
+}
+
+body[data-page="jogos"] .games-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 1px 0 2px;
+}
+
+body[data-page="jogos"] .games-features span {
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 10px;
+  color: #547196;
+  background: #f3f7fc;
+  border: 1px solid #e5eef6;
+  white-space: nowrap;
+}
+
+body[data-page="jogos"] .games-link {
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%));
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  min-height: 42px;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent);
+  transition: all 180ms ease;
+}
+
+body[data-page="jogos"] .games-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 38%, transparent);
+}
+
+body[data-page="jogos"] .games-link:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+body[data-page="jogos"] .games-link svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body[data-page="jogos"] .games-board-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 0;
+  isolation: isolate;
+  padding: 5px 13px 0 0;
+}
+
+body[data-page="jogos"] .games-board-art:before {
+  content: "";
+  position: absolute;
+  inset: 5% 7% 3% -1%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #e8f4fa 10%, #e9f3ef 50%, transparent 75%);
+  z-index: -1;
+}
+
+body[data-page="jogos"] .games-board-art svg {
+  display: block;
+  width: 100%;
+  max-width: 485px;
+  height: auto;
+  filter: drop-shadow(0 12px 17px rgba(38, 84, 94, 0.12));
+}
+
+body[data-page="jogos"] .games-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+body[data-page="jogos"] .games-mini {
+  min-height: 189px;
+  padding: 16px 17px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body[data-page="jogos"] .games-mini-visual {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  position: relative;
+}
+
+body[data-page="jogos"] .games-mini-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 13px;
+  background: var(--mini-soft);
+  color: var(--mini-color);
+  transition: transform 0.2s;
+}
+
+body[data-page="jogos"] .games-mini:hover .games-mini-icon {
+  transform: scale(1.1);
+}
+
+body[data-page="jogos"] .games-mini-icon svg {
+  height: 25px;
+  width: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.85;
+}
+
+body[data-page="jogos"] .games-mini-status {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.015em;
+  color: var(--color-text-secondary, #596579);
+  background: #f3f5f8;
+  border-radius: 50px;
+  border: 1px solid #e4e9ef;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+body[data-page="jogos"] .games-mini h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary, #172033);
+  margin: 0;
+}
+
+body[data-page="jogos"] .games-mini p {
+  color: var(--color-text-secondary, #596579);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 390px;
+}
+
+body[data-page="jogos"] .games-mini .games-link {
+  margin-top: auto;
+  min-height: 44px;
+}
+
+body[data-page="jogos"] .games-mini--flash {
+  --mini-soft: #fff3e4;
+  --mini-color: #c57a1f;
+}
+
+body[data-page="jogos"] .games-mini--sequence {
+  --mini-soft: #e8f6f2;
+  --mini-color: #278d79;
+}
+
+body[data-page="jogos"] .games-mini--escape {
+  --mini-soft: #f0ecfb;
+  --mini-color: #7560ae;
+}
+
+body[data-page="jogos"] .games-footer-note {
+  color: var(--color-text-secondary, #596579);
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 4px 2px 0;
+}
+
+@media (min-width: 1550px) {
+  body[data-page="jogos"] .games-feature {
+    min-height: 318px;
+  }
+  body[data-page="jogos"] .games-mini {
+    min-height: 205px;
+  }
+}
+
+@media (max-width: 1130px) {
+  body[data-page="jogos"] .games-feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body[data-page="jogos"] .games-feature {
+    grid-template-columns: minmax(180px, 0.85fr) minmax(180px, 1fr);
+    padding-left: 16px;
+    min-height: 320px;
+  }
+  body[data-page="jogos"] .games-feature h2 {
+    font-size: 29px;
+  }
+  body[data-page="jogos"] .games-feature p {
+    font-size: 12px;
+  }
+  body[data-page="jogos"] .games-features {
+    gap: 4px;
+  }
+  body[data-page="jogos"] .games-features span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 850px) {
+  body[data-page="jogos"] .games-feature-grid {
+    grid-template-columns: 1fr;
+  }
+  body[data-page="jogos"] .games-feature {
+    min-height: 264px;
+    grid-template-columns: 1fr 1fr;
+  }
+  body[data-page="jogos"] .games-mini-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-page="jogos"] .games-mini {
+    min-height: 183px;
+  }
+}
+
+@media (max-width: 600px) {
+  body[data-page="jogos"] .games-spotlight {
+    height: 111px;
+    min-height: 111px;
+    padding: 18px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig {
+    width: 85px;
+    height: 80px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span {
+    width: 41px;
+    height: 41px;
+    font-size: 21px;
+    border-radius: 12px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:first-child {
+    right: 43px;
+    top: 18px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:nth-child(2) {
+    right: 20px;
+    top: 32px;
+  }
+  body[data-page="jogos"] .games-spotlight-fig span:nth-child(3) {
+    right: 0;
+    top: 7px;
+  }
+  body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy strong {
+    font-size: 27px;
+  }
+  body[data-page="jogos"] .games-spotlight .luria-page-spotlight-copy small {
+    font-size: 11px;
+    max-width: 230px;
+  }
+  body[data-page="jogos"] .games-section-label {
+    padding: 5px 2px 3px;
+  }
+  body[data-page="jogos"] .games-section-label span {
+    font-size: 10px;
+  }
+  body[data-page="jogos"] .games-feature {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: 0;
+    gap: 0;
+    min-height: 0;
+  }
+  body[data-page="jogos"] .games-board-art {
+    padding: 9px 19px 0;
+    height: 154px;
+  }
+  body[data-page="jogos"] .games-board-art svg {
+    max-width: 325px;
+    height: 148px;
+  }
+  body[data-page="jogos"] .games-feature-copy {
+    padding: 5px 17px 17px;
+    gap: 9px;
+    align-items: flex-start;
+  }
+  body[data-page="jogos"] .games-feature h2 {
+    font-size: 29px;
+  }
+  body[data-page="jogos"] .games-feature p {
+    max-width: none;
+  }
+  body[data-page="jogos"] .games-mini-grid {
+    grid-template-columns: 1fr;
+  }
+  body[data-page="jogos"] .games-mini {
+    min-height: 140px;
+    padding: 14px 15px;
+  }
+  body[data-page="jogos"] .games-mini-visual {
+    height: 44px;
+  }
+  body[data-page="jogos"] .games-mini-icon {
+    width: 43px;
+    height: 43px;
+  }
+  body[data-page="jogos"] .games-mini h3 {
+    font-size: 17px;
+  }
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .games-feature h2 {
+  color: var(--color-text-primary, #f4f8ff);
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .games-kicker {
+  background: var(--color-surface-secondary, #13233a);
+  color: var(--color-primary-text, #93bbf0);
+}
+
+:root[data-theme="dark"] body[data-page="jogos"] .games-features span,
+:root[data-theme="dark"] body[data-page="jogos"] .games-mini-status {
+  background: #13233a;
+  color: #b8c9d9;
+  border-color: #304358;
+}

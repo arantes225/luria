@@ -23,57 +23,6 @@
     display: none !important;
   }
 
-  .main .aplicar-nav a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    padding: 0.55rem 1.35rem !important;
-    min-height: 42px !important;
-    background: transparent !important;
-    color: var(--color-text-secondary) !important;
-    border: 1px solid transparent !important;
-    border-radius: var(--ui-radius-pill, 999px) !important;
-    font-size: 0.875rem !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    transition: all 180ms ease !important;
-    cursor: pointer;
-  }
-
-  .main .aplicar-nav a:hover {
-    background: var(--color-surface-elevated) !important;
-    color: var(--color-text-primary) !important;
-  }
-
-  .main .aplicar-nav a.active,
-  .main .aplicar-nav a[aria-selected="true"] {
-    background: var(--ui-pill-gradient, var(--color-primary)) !important;
-    color: #ffffff !important;
-    border-color: transparent !important;
-    box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent) !important;
-  }
-
-  .main .aplicar-nav a.active *,
-  .main .aplicar-nav a[aria-selected="true"] * {
-    color: #ffffff !important;
-    fill: currentColor !important;
-    stroke: currentColor !important;
-  }
-
-  .aplicar-nav a .nav-pill-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-  }
-
-  .aplicar-nav a .nav-pill-icon svg {
-    width: 16px;
-    height: 16px;
-  }
-
   /* Painéis da Seção Aplicar */
   .aplicar-panel {
     display: block;
