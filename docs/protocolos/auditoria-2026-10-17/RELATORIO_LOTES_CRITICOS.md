@@ -24,10 +24,10 @@
 - **133–138**: sepse/choque pediátricos com distinção do ambiente com/sem UTI e da presença de hipotensão; Planos A/B/C de desidratação/diarreia/gastroenterite, divergência entre zinco OMS 2024 e prática tradicional MS Brasil; bronquiolite com oxigênio e alto fluxo por necessidade clínica.
 - **139–145**: pneumonia, asma, crupe, coqueluche, otite, sinusite e faringoamigdalite; diferenciação viral/bacteriana, indicação e duração de antimicrobianos e critérios de observação/internação.
 - **146–156**: ITU (qualidade da urina e possível resistência), meningite, convulsão febril, estado de mal, anafilaxia (IM 1 mg/mL, 0,01 mg/kg máximo 0,5 mg conforme ASCIA), hipoglicemia, CAD (insulina após fluidos e potássio, sem bolus), intoxicações, FBAO infantil vs criança, invaginação e apendicite pediátrica.
-- **157–160**: icterícia neonatal (curvas AAP por idade em horas e IG ≥35 semanas; não descontar bilirrubina direta), sepse neonatal (NICE 2026 e condições estritas para suspender antimicrobianos às 36/48h), hipoglicemia neonatal (gel 40% ou glicose IV por gravidade), reanimação neonatal (ventilação eficaz antes de compressões; Mg? NÃO; adrenalina IV neonatal 0,01–0,03 mg/kg após 60 s de compressões/ventilação adequadas).
+- **157–160**: icterícia neonatal (curvas AAP por idade em horas e IG ≥35 semanas; não descontar bilirrubina direta), sepse neonatal (NICE 2026 e condições estritas para suspender antimicrobianos às 36/48h), hipoglicemia neonatal (gel 40% ou glicose IV por gravidade), reanimação neonatal (ventilação eficaz antes de compressões; adrenalina IV neonatal 0,01–0,03 mg/kg após 60 s de compressões/ventilação adequadas).
 
 ### 3. Emergências obstétricas (7)
-- **170 Pré-eclâmpsia**: PA ≥160 sistólica ou ≥110 diastólica e anticoletivos, MgSO₄ para prevenir convulsão e antihipertensivos para PA, critérios obstétricos de resolução.
+- **170 Pré-eclâmpsia**: PA ≥160 sistólica ou ≥110 diastólica, anti-hipertensivos, MgSO₄ para prevenir convulsão e antihipertensivos para PA, critérios obstétricos de resolução.
 - **171 Eclâmpsia**: sulfato de magnésio 4–6g ataque IV e 1–2g/h infusão; resgate e antídoto, estabilização e planejamento de parto.
 - **172 HELLP**: suspeita clínica inclusive sem proteinúria, hemólise/plaquetas/transaminases, hemoterapia, lesão hepática e vigilância no puerpério.
 - **176 Gravidez ectópica**: instabilidade e ruptura exigem cirurgia; gestação de localização desconhecida não deve receber metotrexato de forma automática; contraindicações e β-hCG no dia 4/7.
