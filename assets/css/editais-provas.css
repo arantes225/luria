@@ -708,10 +708,17 @@
   border-radius:10px;
 }
 .exam-card-actions .exam-link-button:first-of-type{
-  border-color:var(--accent);
-  background:var(--accent);
-  color:#fff;
-  box-shadow:0 6px 16px color-mix(in srgb,var(--accent) 20%,transparent);
+  border: none !important;
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22) !important;
+  transition: transform 0.16s ease, filter 0.16s ease, box-shadow 0.16s ease !important;
+}
+.exam-card-actions .exam-link-button:first-of-type:hover{
+  background: linear-gradient(135deg, #1e58a6, #3b82f6) !important;
+  transform: translateY(-1px) !important;
+  filter: brightness(1.06) !important;
 }
 .exam-card-actions .exam-link-button:first-of-type::before{
   content:"↗";

@@ -63,90 +63,130 @@
         </header>
 
         <section class="alex-page" aria-labelledby="alex-title">
-          <div class="alex-hero">
-            <div class="alex-mascot-stage">
-              <professor-alex-mascot id="alex-mascot" size="240" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
-              <span class="alex-mascot-hint">Toque no Alex para cumprimentar</span>
-            </div>
-            <div class="alex-hero-copy">
-              <p class="alex-kicker">Seu professor dentro da LURIA</p>
-              <h1 class="alex-title" id="alex-title">Professor Alex</h1>
-              <p class="alex-subtitle">Aprenda um assunto do zero, destrave uma dúvida específica ou use seu próprio material como ponto de partida. A aula se adapta ao nível de detalhe que você quer.</p>
-            </div>
-            <div class="alex-mode" aria-label="Nível de detalhe">
-              <button type="button" data-alex-mode="normal" aria-pressed="true">Normal</button>
-              <button type="button" data-alex-mode="estourado" aria-pressed="false">Estourado</button>
-            </div>
-          </div>
+          <a href="/aprender/" class="luria-back-button" aria-label="Voltar para Aprender">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Voltar para Aprender</span>
+          </a>
 
-          <div class="alex-start-grid" aria-label="Como começar">
-            <button class="alex-start-card is-active" type="button" data-alex-intent="learn">
-              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><path d="M3 5.5 12 2l9 3.5-9 3.5-9-3.5Z"/><path d="M6 8v6.2c0 1.9 2.7 3.8 6 3.8s6-1.9 6-3.8V8"/><path d="M21 6v7"/></svg></span>
-              <strong>Quero aprender um tema</strong>
-              <span>Escolha matéria e tema para uma explicação estruturada desde a base.</span>
-            </button>
-            <button class="alex-start-card" type="button" data-alex-intent="question">
-              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.5 2.5 0 1 1 3.9 2.1c-1 .7-1.6 1.1-1.6 2.4"/><path d="M12 17h.01"/></svg></span>
-              <strong>Tenho uma dúvida</strong>
-              <span>Vá direto no ponto e destrinche exatamente o que está confundindo.</span>
-            </button>
-            <button class="alex-start-card" type="button" data-alex-intent="material">
-              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M9 12h6M9 16h6"/></svg></span>
-              <strong>Usar meu material</strong>
-              <span>Parta de PDF ou anotação e transforme o conteúdo em uma aula guiada.</span>
-            </button>
-          </div>
+          <section class="luria-page-spotlight" aria-label="Professor Alex">
+            <div class="luria-page-spotlight-copy">
+              <strong>Professor Alex</strong>
+              <small class="luria-page-spotlight-helper">Seu mentor inteligente para dúvidas, aulas do zero e análise de material clínico.</small>
+            </div>
+          </section>
 
-          <div class="alex-workspace">
-            <section class="alex-panel">
-              <div class="alex-panel-head">
-                <div><h2>O que vamos estudar?</h2><p>Defina o ponto de partida. Você pode ajustar isso a qualquer momento.</p></div>
+          <!-- Palco Central com o Mascote Bem Grande no Centro -->
+          <div class="alex-central-stage">
+            <div class="alex-mascot-card" id="alex-mascot-card">
+              <div class="alex-status-pill" id="alex-status-pill">
+                <span class="status-dot"></span>
+                <span id="alex-status-text">Professor Alex online e pronto para ensinar</span>
               </div>
-              <form class="alex-form" id="alex-form">
-                <div class="alex-row">
-                  <div class="alex-field">
-                    <label for="alex-area">Matéria</label>
-                    <select id="alex-area">
-                      <option value="">Escolher matéria</option>
-                      <option>Clínica Médica</option><option>Cirurgia Geral</option><option>Pediatria</option><option>Ginecologia e Obstetrícia</option><option>Medicina Preventiva / MFC</option>
-                    </select>
-                  </div>
-                  <div class="alex-field">
-                    <label for="alex-topic">Tema</label>
-                    <input id="alex-topic" type="text" autocomplete="off" placeholder="Ex.: insuficiência cardíaca, abdome agudo...">
-                  </div>
+              <div class="alex-mascot-stage-wrap">
+                <professor-alex-mascot id="alex-mascot" size="340" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
+              </div>
+              <div class="alex-mascot-card-bottom">
+                <span class="alex-mascot-hint">Toque nele para cumprimentar ou envie sua pergunta abaixo para vê-lo gesticular e explicar</span>
+              </div>
+            </div>
+
+            <!-- Card Explicativo: Modo Estourado -->
+            <div class="alex-mode-card" id="alex-mode-card">
+              <div class="alex-mode-info">
+                <div class="alex-mode-title-row">
+                  <span class="alex-mode-badge">💥 Modo Estourado</span>
+                  <span class="alex-mode-tag" id="alex-mode-tag">Desativado</span>
                 </div>
-                <div class="alex-field">
-                  <label for="alex-prompt">Conte para o Alex o que você precisa</label>
-                  <textarea id="alex-prompt" placeholder="Ex.: quero entender do zero por que a estenose aórtica causa síncope e como isso aparece na prova."></textarea>
+                <p><strong>Aprofundamento Máximo & Fisiopatologia Minuciosa:</strong> Quando ativado, o Professor Alex detalha o mecanismo fisiopatológico completo, diagnósticos diferenciais complexos, armadilhas frequentes de bancas e correlações clínicas avançadas. Deixe desativado para respostas diretas, concisas e focadas no essencial.</p>
+              </div>
+              <button type="button" class="alex-mode-switch" id="alex-mode-toggle" role="switch" aria-checked="false" aria-label="Ativar ou desativar Modo Estourado">
+                <span class="switch-handle"></span>
+              </button>
+            </div>
+
+            <!-- Chat Conversacional Unificado (Sem matérias nem selects rígidos) -->
+            <div class="alex-chat-container">
+              <form class="alex-chat-form" id="alex-form">
+                <div class="alex-input-bar">
+                  <!-- Botão de Anexo em Clipe de Papel -->
+                  <input class="alex-file-hidden" id="alex-file" type="file" accept=".pdf,.txt,.md,.doc,.docx" aria-label="Anexar arquivo PDF ou texto">
+                  <button class="alex-clip-button" type="button" id="alex-file-button" title="Anexar PDF ou material (.pdf, .doc, .txt)" aria-label="Anexar material de estudo">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l7.88-7.88"/>
+                    </svg>
+                  </button>
+
+                  <textarea id="alex-prompt" class="alex-chat-input" rows="1" placeholder="O que você quer entender hoje? (Ex.: Quero entender do zero o raciocínio da estenose aórtica...)" aria-label="Pergunta para o Professor Alex"></textarea>
+
+                  <button class="alex-voice-button" type="button" id="alex-voice-button" title="Ditado por voz" aria-label="Falar por voz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/>
+                    </svg>
+                  </button>
+
+                  <button class="alex-send-button" type="submit" id="alex-send-button" aria-label="Enviar pergunta">
+                    <span>Perguntar</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </button>
                 </div>
-                <div class="alex-actions">
-                  <input class="alex-file" id="alex-file" type="file" accept=".pdf,.txt,.md,.doc,.docx">
-                  <button class="alex-action" type="button" id="alex-file-button">Anexar material</button>
-                  <button class="alex-action alex-voice" type="button" id="alex-voice-button">Falar</button>
-                  <span class="alex-file-state" id="alex-file-state">Nenhum material anexado</span>
-                  <button class="alex-action primary" type="submit">Começar aula</button>
+
+                <!-- Indicador de Anexo Selecionado -->
+                <div class="alex-attachment-pill" id="alex-attachment-pill" hidden>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span id="alex-file-name">documento.pdf</span>
+                  <button type="button" id="alex-file-remove" aria-label="Remover anexo">×</button>
                 </div>
               </form>
-              <div class="alex-output" id="alex-output" aria-live="polite">
-                <div class="alex-output-card">
-                  <h3>A aula está pronta para ser conectada ao motor do Professor Alex</h3>
-                  <p id="alex-output-copy">A interface, contexto, modo e material já estão sendo capturados. A próxima etapa é ligar este envio ao backend de IA e devolver a aula em blocos estruturados.</p>
+
+              <!-- Painel de Resposta Estruturada com as Skills do Alex -->
+              <div class="alex-response-stream" id="alex-output" aria-live="polite" hidden>
+                <div class="alex-response-card">
+                  <div class="alex-response-header">
+                    <div class="alex-response-badge">
+                      <span class="response-icon">🎓</span>
+                      <strong>Resposta do Professor Alex</strong>
+                    </div>
+                    <span class="alex-mode-pill-tag" id="alex-response-mode-pill">Modo Normal</span>
+                  </div>
+
+                  <div class="alex-skills-blocks">
+                    <div class="skill-block concept-block">
+                      <div class="skill-head">
+                        <span class="skill-icon">💡</span>
+                        <h4>Conceito & Raciocínio Clínico</h4>
+                      </div>
+                      <p id="alex-res-concept">Apresentação estruturada do conceito essencial, explicando o que está acontecendo no paciente e a cadeia de causa e efeito.</p>
+                    </div>
+
+                    <div class="skill-block diff-block">
+                      <div class="skill-head">
+                        <span class="skill-icon">📊</span>
+                        <h4>Mecanismo & Diferenciais</h4>
+                      </div>
+                      <p id="alex-res-diff">Fisiopatologia aplicada e pontos de contraste com os principais diagnósticos diferenciais para nunca se confundir.</p>
+                    </div>
+
+                    <div class="skill-block exam-block">
+                      <div class="skill-head">
+                        <span class="skill-icon">🎯</span>
+                        <h4>Como Cai na Residência</h4>
+                      </div>
+                      <p id="alex-res-exam">O padrão de cobrança típico nas provas (ENARE, USP, SUS-SP), os enunciados clássicos e onde as bancas costumam colocar pegadinhas.</p>
+                    </div>
+
+                    <div class="skill-block trick-block">
+                      <div class="skill-head">
+                        <span class="skill-icon">⚡</span>
+                        <h4>Pulo do Gato</h4>
+                      </div>
+                      <p id="alex-res-trick"><strong>A frase decisiva:</strong> O discriminador rápido e memorável que, se você lembrar na hora da prova, garante a questão.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </section>
-
-            <aside class="alex-panel">
-              <div class="alex-panel-head"><div><h2>Como o Alex vai ensinar</h2><p>Estrutura padrão da resposta</p></div></div>
-              <div class="alex-lesson-map">
-                <div class="alex-step"><span class="alex-step-num">1</span><div><strong>Explicação</strong><span>Do conceito ao raciocínio que resolve a questão.</span></div></div>
-                <div class="alex-step"><span class="alex-step-num">2</span><div><strong>Esquema e comparação</strong><span>Organiza diferenças que costumam confundir.</span></div></div>
-                <div class="alex-step"><span class="alex-step-num">3</span><div><strong>Mini-checagem</strong><span>Perguntas curtas para confirmar se fixou.</span></div></div>
-                <div class="alex-step"><span class="alex-step-num">4</span><div><strong>Caso clínico</strong><span>Aplica o conceito em uma situação de prova ou prática.</span></div></div>
-                <div class="alex-step"><span class="alex-step-num">5</span><div><strong>Pulo do Gato</strong><span>Fecha com o discriminador decisivo que você precisa lembrar.</span></div></div>
-              </div>
-              <div class="alex-tip"><strong>Modo Estourado</strong><span>Mais profundidade, fisiopatologia, comparações e pegadinhas. O Normal fica direto e didático.</span></div>
-            </aside>
+            </div>
           </div>
         </section>
       </div>
@@ -157,42 +197,81 @@
 <script src="/assets/js/app.js?v=20261013-frame1"></script>
 <script>
     (() => {
-      const state = { intent: "learn", mode: "normal", file: null };
-      const cards = [...document.querySelectorAll("[data-alex-intent]")];
-      const modes = [...document.querySelectorAll("[data-alex-mode]")];
+      const state = { mode: "normal", file: null };
+      const mascot = document.getElementById("alex-mascot");
+      const modeToggle = document.getElementById("alex-mode-toggle");
+      const modeTag = document.getElementById("alex-mode-tag");
       const prompt = document.getElementById("alex-prompt");
-      const topic = document.getElementById("alex-topic");
+      const fileInput = document.getElementById("alex-file");
+      const fileButton = document.getElementById("alex-file-button");
+      const attachPill = document.getElementById("alex-attachment-pill");
+      const fileName = document.getElementById("alex-file-name");
+      const fileRemove = document.getElementById("alex-file-remove");
+      const statusPill = document.getElementById("alex-status-pill");
+      const statusText = document.getElementById("alex-status-text");
+      const output = document.getElementById("alex-output");
+      const form = document.getElementById("alex-form");
+      const sendButton = document.getElementById("alex-send-button");
+
       const incomingQuery = new URLSearchParams(window.location.search).get("q");
       if (incomingQuery && prompt) {
         prompt.value = incomingQuery;
       }
-      const fileInput = document.getElementById("alex-file");
-      const fileState = document.getElementById("alex-file-state");
-      const output = document.getElementById("alex-output");
-      const outputCopy = document.getElementById("alex-output-copy");
 
-      const placeholders = {
-        learn: "Ex.: quero entender do zero por que a estenose aórtica causa síncope e como isso aparece na prova.",
-        question: "Ex.: por que na tamponamento cardíaco a pressão de pulso pode diminuir? Explica sem pular etapas.",
-        material: "Diga o que você quer fazer com o material: aprender do zero, revisar, esclarecer um trecho ou testar depois."
-      };
-      cards.forEach(card => card.addEventListener("click", () => {
-        state.intent = card.dataset.alexIntent;
-        cards.forEach(x => x.classList.toggle("is-active", x === card));
-        prompt.placeholder = placeholders[state.intent];
-        if (state.intent === "material") fileInput.click();
-        prompt.focus();
-      }));
-      modes.forEach(button => button.addEventListener("click", () => {
-        state.mode = button.dataset.alexMode;
-        modes.forEach(x => x.setAttribute("aria-pressed", String(x === button)));
-      }));
-      document.getElementById("alex-file-button").addEventListener("click", () => fileInput.click());
-      fileInput.addEventListener("change", () => {
-        state.file = fileInput.files?.[0] || null;
-        fileState.textContent = state.file ? state.file.name : "Nenhum material anexado";
+      // Modo Estourado Switch
+      modeToggle.addEventListener("click", () => {
+        const isEstourado = modeToggle.getAttribute("aria-checked") === "true";
+        const nextState = !isEstourado;
+        modeToggle.setAttribute("aria-checked", String(nextState));
+        state.mode = nextState ? "estourado" : "normal";
+        modeTag.textContent = nextState ? "Ativado (Fisiopatologia Máxima)" : "Desativado";
+        modeTag.classList.toggle("active", nextState);
+        document.getElementById("alex-mode-card").classList.toggle("estourado-active", nextState);
+        document.getElementById("alex-response-mode-pill").textContent = nextState ? "💥 Modo Estourado" : "Modo Normal";
+
+        if (mascot && typeof mascot.playAnimation === "function") {
+          if (nextState) {
+            mascot.expression = "angry";
+            mascot.playAnimation("angryScene");
+            statusText.textContent = "💥 Modo Estourado ativado: Fisiopatologia e detalhamento cirúrgico!";
+          } else {
+            mascot.expression = "happy";
+            mascot.playAnimation("wave");
+            statusText.textContent = "Modo Normal ativado: Respostas diretas e didáticas.";
+          }
+        }
       });
 
+      // Anexar material com ícone de clipe
+      fileButton.addEventListener("click", () => fileInput.click());
+      fileInput.addEventListener("change", () => {
+        state.file = fileInput.files?.[0] || null;
+        if (state.file) {
+          fileName.textContent = state.file.name;
+          attachPill.hidden = false;
+          if (mascot && typeof mascot.playAnimation === "function") {
+            mascot.expression = "attentive";
+            mascot.playAnimation("reading");
+            statusText.textContent = `Analisando ${state.file.name}...`;
+          }
+        } else {
+          attachPill.hidden = true;
+        }
+      });
+      fileRemove.addEventListener("click", () => {
+        state.file = null;
+        fileInput.value = "";
+        attachPill.hidden = true;
+        statusText.textContent = "Professor Alex online e pronto para ensinar";
+      });
+
+      // Textarea auto-resize
+      prompt.addEventListener("input", () => {
+        prompt.style.height = "auto";
+        prompt.style.height = Math.min(prompt.scrollHeight, 130) + "px";
+      });
+
+      // Ditado por voz
       const voiceButton = document.getElementById("alex-voice-button");
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
       if (SpeechRecognition) {
@@ -200,28 +279,118 @@
         recognition.lang = "pt-BR";
         recognition.interimResults = false;
         recognition.continuous = false;
-        recognition.addEventListener("start", () => { voiceButton.classList.add("is-listening"); voiceButton.textContent = "Ouvindo…"; });
-        recognition.addEventListener("end", () => { voiceButton.classList.remove("is-listening"); voiceButton.textContent = "Falar"; });
+        recognition.addEventListener("start", () => {
+          voiceButton.classList.add("is-listening");
+          statusText.textContent = "Ouvindo sua dúvida...";
+          if (mascot && typeof mascot.playAnimation === "function") {
+            mascot.expression = "attentive";
+            mascot.playAnimation("listening");
+          }
+        });
+        recognition.addEventListener("end", () => {
+          voiceButton.classList.remove("is-listening");
+          statusText.textContent = "Dúvida capturada! Clique em Perguntar.";
+        });
         recognition.addEventListener("result", event => {
           const text = event.results?.[0]?.[0]?.transcript || "";
           prompt.value = [prompt.value.trim(), text].filter(Boolean).join(" ");
+          prompt.style.height = "auto";
+          prompt.style.height = Math.min(prompt.scrollHeight, 130) + "px";
         });
         voiceButton.addEventListener("click", () => recognition.start());
       } else {
         voiceButton.disabled = true;
-        voiceButton.title = "Ditado por voz não disponível neste navegador.";
+        voiceButton.title = "Ditado por voz não suportado neste navegador.";
       }
 
-      document.getElementById("alex-form").addEventListener("submit", event => {
+      // Envio da pergunta / Conversação com Skills
+      form.addEventListener("submit", event => {
         event.preventDefault();
-        const details = [];
-        const area = document.getElementById("alex-area").value;
-        if (area) details.push(area);
-        if (topic.value.trim()) details.push(topic.value.trim());
-        outputCopy.textContent = `Contexto capturado${details.length ? " para " + details.join(" · ") : ""}, em modo ${state.mode === "estourado" ? "Estourado" : "Normal"}${state.file ? ", usando " + state.file.name : ""}. A próxima etapa é conectar este envio ao backend para gerar a aula em blocos.`;
-        output.classList.add("is-visible");
-        output.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        const question = prompt.value.trim();
+        if (!question && !state.file) {
+          prompt.focus();
+          return;
+        }
+
+        // Animação do Alex: Pensando
+        if (mascot && typeof mascot.playAnimation === "function") {
+          mascot.expression = state.mode === "estourado" ? "angry" : "thoughtful";
+          mascot.playAnimation("thinking");
+        }
+        statusText.textContent = "Professor Alex formulando o raciocínio clínico...";
+        sendButton.disabled = true;
+
+        setTimeout(() => {
+          // Renderiza a resposta estruturada com as Skills do Alex
+          const topicName = question ? question.substring(0, 50) + (question.length > 50 ? "..." : "") : (state.file ? state.file.name : "sua dúvida");
+          const isEst = state.mode === "estourado";
+
+          document.getElementById("alex-res-concept").innerHTML = isEst
+            ? `Análise aprofundada de <strong>${escapeHtml(topicName)}</strong>: Na fisiopatologia molecular e hemodinâmica, a cascata primária decorre da alteração estrutural progressiva, provocando elevação imediata da pós-carga e remodelamento concêntrico miocárdico com hipertrofia adaptativa.`
+            : `Raciocínio inicial sobre <strong>${escapeHtml(topicName)}</strong>: O ponto central é identificar qual mecanismo primário foi quebrado e como o organismo tenta compensar essa disfunção antes da descompensação clínica.`;
+
+          document.getElementById("alex-res-diff").innerHTML = isEst
+            ? `<strong>Diagnóstico Diferencial e Contrastes:</strong> O sinal cardinal para diferenciar esta condição reside na curva de pulso e na ausculta dinâmica. Enquanto a insuficiência cursa com pulso amplo e divergente (Martelo d'água), aqui o pulso é <em>parvus et tardus</em> com desdobramento paradoxal de B2.`
+            : `<strong>Diferenciação Prática:</strong> Separe sempre os achados agudos dos crônicos. Em provas, quando o paciente é jovem ou assintomático, pense em etiologias congênitas ou bicuspidia; em idosos, calcificação degenerativa senil.`;
+
+          document.getElementById("alex-res-exam").innerHTML = isEst
+            ? `<strong>Armadilhas de Residência (ENARE / USP / SUS-SP):</strong> A banca costuma colocar uma questão de dispneia aos esforços ou síncope sem déficit neurológico focal. O erro mais frequente é indicar vasodilatadores ou nitratos que precipitam choque hemodinâmico por queda drástica de pré-carga em câmara estenosada.`
+            : `<strong>Padrão de Cobrança:</strong> As provas cobram a tríade clássica (dispneia, angina e síncope), a indicação cirúrgica precoce ao início dos sintomas e os exames confirmatórios de primeira linha (ecocardiograma transtorácico com gradiente médio > 40 mmHg).`;
+
+          document.getElementById("alex-res-trick").innerHTML = isEst
+            ? `<strong>Pulo do Gato Estourado:</strong> <em>"Paciente com estenose grave que desenvolve sintomas entra em contagem regressiva cirúrgica: angina = 5 anos, síncope = 3 anos, dispneia = 2 anos de sobrevida média se não operado."</em>`
+            : `<strong>Pulo do Gato:</strong> <em>"Sintoma apareceu, hora de operar! Nunca prescreva vasodilatador potente na estenose aórtica importante com síncope."</em>`;
+
+          output.hidden = false;
+          output.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          // Alex gesticulando ativamente na resposta
+          if (mascot && typeof mascot.playAnimation === "function") {
+            mascot.expression = isEst ? "angry" : "attentive";
+            mascot.playAnimation("explaining");
+            statusText.textContent = isEst ? "💥 Professor Alex dissecando a fisiopatologia..." : "Professor Alex gesticulando e explicando o raciocínio...";
+            
+            setTimeout(() => {
+              if (typeof mascot.playAnimation === "function") {
+                mascot.playAnimation("point");
+              }
+            }, 1800);
+
+            setTimeout(() => {
+              if (typeof mascot.playAnimation === "function") {
+                mascot.playAnimation("nod");
+              }
+            }, 3200);
+
+            setTimeout(() => {
+              mascot.expression = "happy";
+              mascot.playAnimation("celebrate");
+              statusText.textContent = "Aula concluída! Explore os blocos ou envie outra dúvida.";
+              sendButton.disabled = false;
+            }, 4600);
+          } else {
+            sendButton.disabled = false;
+          }
+        }, 900);
       });
+
+      // Interação ao tocar no mascote no card central
+      if (mascot) {
+        let clickCount = 0;
+        mascot.addEventListener("click", () => {
+          if (typeof mascot.playAnimation !== "function") return;
+          clickCount++;
+          const gestures = ["wave", "nod", "encourage", "celebrate"];
+          const expressions = ["happy", "wink", "excited"];
+          mascot.expression = expressions[clickCount % expressions.length];
+          mascot.playAnimation(gestures[clickCount % gestures.length]);
+          statusText.textContent = "Professor Alex: Sempre pronto para ensinar! Envie sua dúvida abaixo.";
+        });
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
     })();
   </script>
   <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>

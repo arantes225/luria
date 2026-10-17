@@ -9,6 +9,10 @@ test('Arquitetura de arquivos da nova seção Aplicar', () => {
   assert(fs.existsSync('aplicar/vocacao/index.html'), 'aplicar/vocacao/index.html deve existir');
   assert(fs.existsSync('aplicar/radar/index.html'), 'aplicar/radar/index.html deve existir');
   assert(fs.existsSync('aplicar/editais/index.html'), 'aplicar/editais/index.html deve existir');
+  assert(fs.existsSync('aplicar/hall/index.html'), 'aplicar/hall/index.html deve existir');
+  assert(fs.existsSync('assets/img/aplicar-editais-art.svg'), 'assets/img/aplicar-editais-art.svg deve existir');
+  assert(fs.existsSync('assets/img/aplicar-vocacao-art.svg'), 'assets/img/aplicar-vocacao-art.svg deve existir');
+  assert(fs.existsSync('assets/img/aplicar-radar-art.svg'), 'assets/img/aplicar-radar-art.svg deve existir');
   assert(fs.existsSync('assets/css/aplicar.css'), 'assets/css/aplicar.css deve existir');
   assert(fs.existsSync('assets/js/aplicar-nav.js'), 'assets/js/aplicar-nav.js deve existir');
   assert(fs.existsSync('assets/js/aplicar-vocacao.js'), 'assets/js/aplicar-vocacao.js deve existir');
@@ -19,13 +23,15 @@ test('Arquitetura de arquivos da nova seção Aplicar', () => {
 test('Estrutura HTML e acessibilidade de aplicar/index.html', () => {
   const html = fs.readFileSync('aplicar/index.html', 'utf8');
   assert(html.includes('data-page="aplicar"'), 'Body deve ter data-page="aplicar"');
-  assert(html.includes('class="aplicar-nav"'), 'Deve conter barra de navegação aplicar-nav');
-  assert(html.includes('data-aplicar-tab="editais"'), 'Deve conter aba editais');
-  assert(html.includes('data-aplicar-tab="vocacao"'), 'Deve conter aba vocacao');
-  assert(html.includes('data-aplicar-tab="radar"'), 'Deve conter aba radar');
   assert(html.includes('id="aplicar-panel-editais"'), 'Deve conter painel de editais');
   assert(html.includes('id="aplicar-panel-vocacao"'), 'Deve conter painel de vocação');
   assert(html.includes('id="aplicar-panel-radar"'), 'Deve conter painel de radar');
+  assert(html.includes('id="aplicar-panel-hall"'), 'Deve conter painel do hall');
+  assert(html.includes('aplicar-hall-tools'), 'Deve conter grid de ferramentas do hall');
+  assert(!html.includes('class="tool-card-illustration"'), 'Não deve conter ilustrações SVG invasivas dentro dos cards do hall');
+  assert(html.includes('Editais e Provas'), 'Deve conter título do card editais');
+  assert(html.includes('Vocação Médica'), 'Deve conter título do card vocação');
+  assert(html.includes('Radar de Provas'), 'Deve conter título do card radar');
   assert(html.includes('id="editais-own-content"'), 'Deve reaproveitar editais-own-content');
   assert(html.includes('id="editais-catalog-content"'), 'Deve reaproveitar editais-catalog-content');
   assert(html.includes('id="exam-dialog"'), 'Deve conter exam-dialog');

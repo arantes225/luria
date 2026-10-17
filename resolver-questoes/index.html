@@ -83,7 +83,7 @@
     .qr-option.eliminated .qr-cut{opacity:.7}
     mark[data-qr-highlight]{border-radius:2px;padding:0 .04em}
     .qr-question-meta{margin:0;padding:12px 14px 0;gap:5px}
-    .qr-pill{font-size:7.5px;padding:3px 7px;border-radius:999px;font-weight:400}
+    .qr-pill{font-size:7.5px;padding:3px 7px;border-radius:8px;font-weight:600}
     .qr-stem{padding:11px 14px 3px;font-size:11px;line-height:1.58}
     .qr-image{margin:10px auto 4px}
     .qr-options{gap:0;margin-top:8px;padding:0 14px 8px}
@@ -105,6 +105,44 @@
     .qr-nav-switch button:hover:not(:disabled){background:var(--surface-2);color:var(--text)}
     .qr-nav-switch button.primary-nav{background:var(--accent);color:#fff}
     .qr-nav-switch button:disabled{opacity:.4;cursor:not-allowed}
+    .qr-actions .qr-btn,
+    .qr-actions button,
+    #qr-confirm,
+    #qr-comment-toggle,
+    .qr-talk-alex,
+    .qr-nav-switch button {
+      border-radius: 12px !important;
+    }
+    .qr-btn.primary,
+    #qr-confirm.primary,
+    .qr-talk-alex,
+    .qr-nav-switch button.primary-nav {
+      background: linear-gradient(135deg, #184888, #2563EB) !important;
+      color: #ffffff !important;
+      border: none !important;
+      box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22) !important;
+    }
+    .luria-back-button {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      height: 38px !important;
+      min-height: 38px !important;
+      padding: 0 16px !important;
+      border-radius: 12px !important;
+      border: 1px solid var(--border) !important;
+      background: var(--surface) !important;
+      color: var(--text) !important;
+      font-size: 11.5px !important;
+      font-weight: 750 !important;
+      text-decoration: none !important;
+      transition: transform 0.16s ease, border-color 0.16s ease, color 0.16s ease !important;
+    }
+    .luria-back-button:hover {
+      transform: translateX(-2px) !important;
+      border-color: var(--accent) !important;
+      color: var(--accent) !important;
+    }
     @media(max-width:720px){
       .qr-card-head{padding-inline:11px}
       .qr-card-tools{gap:0}
@@ -117,6 +155,7 @@
   </style>
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/questoes-lumina-v2.css?v=20261016-v1">
 <link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script></head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -125,14 +164,15 @@
   <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
   <main class="main"><div class="page">
 
-    <section class="luria-page-spotlight qs-page-spotlight" aria-label="Questões e Simulados">
+    <section class="luria-page-spotlight qs-page-spotlight" aria-label="Simulador de Questões">
       <div class="luria-page-spotlight-copy">
-        <strong>Questões e Simulados</strong>
+        <strong>Resolução de Questões</strong>
+        <small class="luria-page-spotlight-helper">Treine seu raciocínio clínico com cronômetro, comentários detalhados e apoio do Professor Alex.</small>
       </div>
     </section>
 
-    <div class="qr-navrow">
-      <a class="button secondary qr-back" href="/questoes-simulados/" aria-label="Voltar para Questões e Simulados">← Voltar</a>
+    <div class="qr-navrow" style="display:flex; margin-bottom: 12px;">
+      <a class="luria-back-button" href="/questoes-simulados/" aria-label="Voltar para Questões e Simulados">← Voltar para Questões e Simulados</a>
     </div>
     <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
     <section id="qr-layout" class="qr-layout" hidden>
@@ -189,15 +229,41 @@
       </div>
       </div>
       <aside class="qr-side">
-        <article class="qr-side-card"><div class="qr-side-title">◷ Tempo estimado</div><div class="qr-time-grid"><div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">1 min 30 s</strong></div><div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div></div></article>
+        <article class="qr-side-card">
+          <div class="qr-side-title">◷ Tempo estimado</div>
+          <div class="qr-time-grid">
+            <div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">0 min 00 s</strong></div>
+            <div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div>
+          </div>
+        </article>
+
         <article class="qr-side-card">
           <div class="qr-side-title">◉ Meu desempenho neste simulado</div>
-          <div class="qr-performance"><div class="qr-ring" id="qr-ring"><div class="qr-ring-label"><strong id="qr-accuracy">0%</strong><small>de acerto</small></div></div>
-          <div class="qr-perf-list"><div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">0</b></div><div class="qr-perf-row"><span>Erros</span><b id="qr-errors">0</b></div><div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div><div class="qr-perf-row"><span>Total</span><b id="qr-total">0</b></div></div></div>
+          <div class="qr-performance">
+            <div class="qr-ring" id="qr-ring">
+              <div class="qr-ring-label"><strong id="qr-accuracy">0%</strong><small>de acerto</small></div>
+            </div>
+            <div class="qr-perf-list">
+              <div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">0</b></div>
+              <div class="qr-perf-row"><span>Erros</span><b id="qr-errors">0</b></div>
+              <div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div>
+              <div class="qr-perf-row"><span>Total</span><b id="qr-total">0</b></div>
+            </div>
+          </div>
           <div id="qr-answer-grid" class="qr-answer-grid" aria-label="Gabarito do simulado"></div>
         </article>
-        <article class="qr-side-card"><div class="qr-side-title">◇ Tags da questão</div><div class="qr-tags" id="qr-tags"><span class="qr-tag">Infarto Agudo do Miocárdio</span><span class="qr-tag">IAM com Supra de ST</span><span class="qr-tag">Conduta inicial</span><span class="qr-tag">Reperfusão</span></div></article>
-        <article class="qr-side-card"><div class="qr-side-title">▤ Últimas questões respondidas</div><div class="qr-recent"><div class="qr-recent-row"><span class="qr-dot"></span><span>Insuficiência cardíaca com fração de ejeção reduzida</span><b>2 min</b></div><div class="qr-recent-row"><span class="qr-dot bad"></span><span>Arritmias supraventriculares</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Endocardite infecciosa</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Valvopatias — estenose aórtica</span><b>2 min</b></div></div></article>
+
+        <article class="qr-side-card">
+          <div class="qr-side-title">◇ Tags da questão</div>
+          <div class="qr-tags" id="qr-tags"><span class="qr-tag">Aguardando questão...</span></div>
+        </article>
+
+        <article class="qr-side-card">
+          <div class="qr-side-title">▤ Últimas questões respondidas</div>
+          <div class="qr-recent">
+            <div class="qr-recent-row"><span class="qr-dot"></span><span>Treino contínuo LURIA</span><b>Hoje</b></div>
+          </div>
+        </article>
       </aside>
     </section>
   </div></main>
@@ -231,7 +297,7 @@
    return [];
  }
  function explanationEntries(item){
-   const raw=item.answer_explanations??item.alternative_explanations??item.explanations??item.explicacoes_alternativas??item.justificativas??{};
+   const raw=item.answer_explanations??item.alternative_explanations??item.explanations??item.explicacoes??item.explicacoes_alternativas??item.justificativas??{};
    if(Array.isArray(raw)) return raw.map((x,i)=>({k:String(x?.k||x?.key||x?.letter||String.fromCharCode(65+i)).toUpperCase(),t:String(x?.t||x?.text||x?.explanation||x?.justification||"")})).filter(x=>x.t);
    const out=[];
    ["A","B","C","D","E"].forEach(k=>{
@@ -241,6 +307,35 @@
      if(val) out.push({k,t:String(typeof val==="string"?val:(val.text||val.explanation||val.justification||""))});
    });
    return out.filter(x=>x.t);
+ }
+ async function hydrateLuriaQuestions(){
+   try{
+     const res=await fetch("/assets/data/luria-questions.json");
+     if(!res.ok)return;
+     const bank=await res.json();
+     const byStem=new Map(), byId=new Map();
+     bank.forEach(q=>{
+       if(q.enunciado) byStem.set(q.enunciado.trim(), q);
+       if(q.id) byId.set(String(q.id), q);
+     });
+     state.items=state.items.map(item=>{
+       const text=(item.stem||item.raw_text||"").trim();
+       const match=byStem.get(text)||byId.get(String(item.id))||byId.get(String(item.question_bank_id));
+       if(!match)return item;
+       const updated={...item};
+       if(!updated.answer_explanations&&!updated.explicacoes&&match.explicacoes){
+         updated.answer_explanations=match.explicacoes;
+       }
+       if(!updated.pulo_do_gato&&match.pulo_do_gato){
+         updated.pulo_do_gato=match.pulo_do_gato;
+       }
+       if(!updated.official_answer&&match.gabarito){
+         updated.official_answer=String(match.gabarito).toUpperCase();
+       }
+       return updated;
+     });
+     render();
+   }catch(e){console.warn("Fallback de banco local indisponível",e)}
  }
  async function hydrateReferences(){
  const linked=state.items.filter(x=>x.question_bank_id),banks=new Map();
@@ -309,7 +404,18 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
        completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
      }
      status("Resposta salva.","success");
-   }catch(error){if(readerIsCurrent()&&ownerEpoch===epoch)status("Não foi possível salvar: "+error.message,"error")}
+   }catch(error){
+     state.attempts.set(item.id, row);
+     try {
+       const localAttempts = JSON.parse(localStorage.getItem(`luria:attempts:${state.set?.id}`) || "{}");
+       localAttempts[item.id] = row;
+       localStorage.setItem(`luria:attempts:${state.set?.id}`, JSON.stringify(localAttempts));
+     } catch (_) {}
+     if(!completed&&state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
+       completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
+     }
+     status("Resposta registrada.","success");
+   }
    finally{pendingAnswer=null;if(readerIsCurrent())render()}
  }
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
@@ -367,6 +473,16 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
        sb.from("question_attempts").select("*").eq("user_id",user.id)
      ]);
      set=setData;items=itemData||[];attempts=attemptData||[];loadError=se||ie||ae;
+     if ((!set || !items.length) && setId) {
+       try {
+         const localCache = JSON.parse(localStorage.getItem(`luria:question_set:${setId}`) || "null");
+         if (localCache && localCache.set && localCache.items?.length) {
+           set = localCache.set;
+           items = localCache.items;
+           loadError = null;
+         }
+       } catch (_) {}
+     }
    }
    if(!readerIsCurrent())return;
    if(loadError||!set||!items.length){$("qr-loading").textContent=isDaily?"Não foi possível montar as 50 questões de hoje.":"Não foi possível carregar esta lista.";return}
@@ -374,7 +490,7 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
    const ids=new Set(state.items.map(x=>x.id));
    attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
    state.index=firstUnanswered();
-   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();hydrateReferences().catch(console.error);
+   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();hydrateReferences().catch(console.error);hydrateLuriaQuestions().catch(console.error);
    withTimeout(signedImages(items),6000,null).then(signed=>{
      if(!signed||!readerIsCurrent())return;
      const urls=new Map(signed.map(x=>[x.id,x.image_url||null]));
@@ -419,6 +535,41 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
  $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
+ // Atalhos de teclado ergonômicos para o simulador
+ window.addEventListener("keydown", (e) => {
+   if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) return;
+   if (document.querySelector("dialog[open]")) return;
+   const key = e.key.toUpperCase();
+   const keyMap = { "1": "A", "2": "B", "3": "C", "4": "D", "5": "E" };
+   const optLetter = keyMap[key] || (["A", "B", "C", "D", "E"].includes(key) ? key : null);
+   if (optLetter && !e.ctrlKey && !e.altKey && !e.metaKey) {
+     const btn = document.querySelector(`.qr-option[data-opt="${optLetter}"]`);
+     if (btn && !btn.disabled) { e.preventDefault(); btn.click(); }
+     return;
+   }
+   if (key === "ENTER" || (e.code === "Space" && e.target === document.body)) {
+     const confirmBtn = $("qr-confirm");
+     if (confirmBtn && !confirmBtn.disabled) { e.preventDefault(); confirmBtn.click(); }
+     return;
+   }
+   if (key === "ARROWRIGHT" || key === "K" || key === "N") {
+     const nextBtn = $("qr-next");
+     if (nextBtn && !nextBtn.disabled) { e.preventDefault(); nextBtn.click(); }
+     return;
+   }
+   if (key === "ARROWLEFT" || key === "J" || key === "P") {
+     const prevBtn = $("qr-prev");
+     if (prevBtn && !prevBtn.disabled) { e.preventDefault(); prevBtn.click(); }
+     return;
+   }
+   if (key === "H") { e.preventDefault(); $("qr-highlight-tool")?.click(); return; }
+   if (key === "F") { e.preventDefault(); $("qr-favorite")?.click(); return; }
+   if (key === "C") {
+     const cBtn = $("qr-comment-toggle");
+     if (cBtn && !cBtn.hidden) { e.preventDefault(); cBtn.click(); }
+     return;
+   }
+ });
  $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário";$("qr-comment-toggle").setAttribute("aria-expanded",String(!fb.hidden))};
  $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
 })();

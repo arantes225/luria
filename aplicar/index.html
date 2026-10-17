@@ -45,7 +45,7 @@
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 
     <main class="main">
-      <div class="page aplicar-page">
+      <div class="page aplicar-page learn-page">
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading">
@@ -58,38 +58,53 @@
         <section class="luria-page-spotlight" aria-label="Aplicar">
           <div class="luria-page-spotlight-copy">
             <strong>Aplicar</strong>
-            <small>Planeje sua carreira médica, explore editais e analise a incidência de provas.</small>
+            <small class="luria-page-spotlight-helper">Planeje sua especialidade, acompanhe editais e analise a incidência de provas.</small>
           </div>
         </section>
 
-        <!-- Navegação Interna Elegante por Abas (Pills) -->
-        <nav class="aplicar-nav" aria-label="Opções da seção Aplicar">
-          <a href="/aplicar/#editais" data-aplicar-tab="editais" class="active" aria-selected="true" aria-controls="aplicar-panel-editais">
-            <span class="nav-pill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/></svg>
-            </span>
-            <span>Editais</span>
-          </a>
 
-          <a href="/aplicar/#vocacao" data-aplicar-tab="vocacao" aria-selected="false" aria-controls="aplicar-panel-vocacao">
-            <span class="nav-pill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
-            </span>
-            <span>Vocação</span>
-          </a>
+        <!-- ==================================================================
+             PAINEL 0: HALL APLICAR (Hub de Escolha Unificado)
+             ================================================================== -->
+        <section id="aplicar-panel-hall" class="aplicar-panel aplicar-hall-panel" aria-labelledby="aplicar-tab-hall">
+          <div class="learn-tools aplicar-hall-tools">
+            <a class="tool-card aplicar-card-tool" href="/aplicar/#editais" data-aplicar-action="editais">
+              <span class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/></svg>
+              </span>
+              <h3>Editais e Provas</h3>
+              <p>Acompanhe editais de residência médica, organize prazos de inscrição, datas de prova e defina metas de nota de corte.</p>
+              <span class="tool-cta">Acessar Editais →</span>
+            </a>
 
-          <a href="/aplicar/#radar" data-aplicar-tab="radar" aria-selected="false" aria-controls="aplicar-panel-radar">
-            <span class="nav-pill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m12 3 7 7-7 7-7-7 7-7Z"/></svg>
-            </span>
-            <span>Radar de Provas</span>
-          </a>
-        </nav>
+            <a class="tool-card aplicar-card-tool" href="/aplicar/#vocacao" data-aplicar-action="vocacao">
+              <span class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              </span>
+              <h3>Vocação Médica</h3>
+              <p>Mapeamento vocacional com 10 dimensões de prática clínica e algoritmo de afinidade calibrado para mais de 15 especialidades.</p>
+              <span class="tool-cta">Descobrir Vocação →</span>
+            </a>
+
+            <a class="tool-card aplicar-card-tool" href="/aplicar/#radar" data-aplicar-action="radar">
+              <span class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m12 3 7 7-7 7-7-7 7-7Z"/></svg>
+              </span>
+              <h3>Radar de Provas</h3>
+              <p>Inteligência estatística com incidência real de temas cobrados nas principais bancas do Brasil e mapas de calor de recorrência.</p>
+              <span class="tool-cta">Explorar Radar →</span>
+            </a>
+          </div>
+        </section>
 
         <!-- ==================================================================
              PAINEL 1: EDITAIS E PROVAS (Integrado e Preservado Integralmente)
              ================================================================== -->
-        <section id="aplicar-panel-editais" class="aplicar-panel" aria-labelledby="aplicar-tab-editais">
+        <section id="aplicar-panel-editais" class="aplicar-panel" aria-labelledby="aplicar-tab-editais" hidden>
+          <a href="/aplicar/#hall" class="luria-back-button" data-aplicar-action="hall" aria-label="Voltar para o Hall Aplicar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Voltar para Aplicar</span>
+          </a>
           <section class="editais-source-tabs">
             <button class="editais-source-tab active" type="button" data-editais-source="mine">
               Minhas provas
@@ -307,6 +322,10 @@
              PAINEL 2: VOCAÇÃO (Orientação de Especialidade Médica)
              ================================================================== -->
         <section id="aplicar-panel-vocacao" class="aplicar-panel" hidden="" aria-labelledby="aplicar-tab-vocacao">
+          <a href="/aplicar/#hall" class="luria-back-button" data-aplicar-action="hall" aria-label="Voltar para o Hall Aplicar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Voltar para Aplicar</span>
+          </a>
           <!-- Hero de Orientação Vocacional -->
           <div class="vocacao-hero">
             <div class="vocacao-hero-text">
@@ -429,6 +448,10 @@
              PAINEL 3: RADAR DE PROVAS (Inteligência & Estatística de Residência)
              ================================================================== -->
         <section id="aplicar-panel-radar" class="aplicar-panel" hidden="" aria-labelledby="aplicar-tab-radar">
+          <a href="/aplicar/#hall" class="luria-back-button" data-aplicar-action="hall" aria-label="Voltar para o Hall Aplicar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>Voltar para Aplicar</span>
+          </a>
           <!-- Filtros Combináveis do Radar -->
           <section class="radar-filter-bar">
             <div class="radar-filter-group">

@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Registrar questões · DocMap</title>
+  <title>Registrar questões · LURIA</title>
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=luria-pattern-14">
@@ -395,6 +395,7 @@
 <script>(function(){try{if(location.pathname.endsWith("/registrar-questoes.html"))history.replaceState(null,"","/registrar-questoes/"+location.search+location.hash);}catch(e){}})();</script>
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/questoes-lumina-v2.css?v=20261016-v1">
 <link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script></head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
@@ -414,6 +415,13 @@
             <h1 data-page-title></h1>
           </div>
         </header>
+
+        <section class="luria-page-spotlight qs-page-spotlight" aria-label="Registrar Questões">
+          <div class="luria-page-spotlight-copy">
+            <strong>Registrar Questões</strong>
+            <small class="luria-page-spotlight-helper">Cadastre suas sessões de estudo realizadas fora da plataforma para manter suas métricas e metas sempre atualizadas.</small>
+          </div>
+        </section>
 
         <div class="questions-stack">
 
@@ -468,8 +476,8 @@
                     <input id="question-date" type="date" required>
                   </label>
 
-                  <label class="question-field">
-                    <span>Plataforma</span>
+                  <div class="question-field">
+                    <label for="question-platform"><span>Plataforma</span></label>
                     <input
                       id="question-platform"
                       type="text"
@@ -481,12 +489,22 @@
                       <option value="Estratégia MED">
                       <option value="MedCof">
                       <option value="MedCurso">
+                      <option value="Aristo">
+                      <option value="Medway">
+                      <option value="Sanar">
                       <option value="Outro">
                     </datalist>
-                  </label>
+                    <div class="reg-chips-row" aria-label="Plataformas rápidas">
+                      <button type="button" class="reg-chip-btn" data-set-field="question-platform" data-value="Estratégia MED">Estratégia</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-platform" data-value="MedCof">MedCof</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-platform" data-value="MedCurso">MedCurso</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-platform" data-value="Aristo">Aristo</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-platform" data-value="Medway">Medway</button>
+                    </div>
+                  </div>
 
-                  <label class="question-field">
-                    <span>Área</span>
+                  <div class="question-field">
+                    <label for="question-area"><span>Grande Área</span></label>
                     <input
                       id="question-area"
                       type="text"
@@ -496,12 +514,19 @@
                     >
                     <datalist id="area-options">
                       <option value="Clínica Médica">
+                      <option value="Cirurgia Geral">
                       <option value="Pediatria">
                       <option value="Ginecologia e Obstetrícia">
-                      <option value="Cirurgia Geral">
                       <option value="Preventiva">
                     </datalist>
-                  </label>
+                    <div class="reg-chips-row" aria-label="Grandes áreas rápidas">
+                      <button type="button" class="reg-chip-btn" data-set-field="question-area" data-value="Clínica Médica">Clínica</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-area" data-value="Cirurgia Geral">Cirurgia</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-area" data-value="Pediatria">Pediatria</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-area" data-value="Ginecologia e Obstetrícia">GO</button>
+                      <button type="button" class="reg-chip-btn" data-set-field="question-area" data-value="Preventiva">Preventiva</button>
+                    </div>
+                  </div>
 
                   <label class="question-field">
                     <span>Matéria</span>
@@ -655,6 +680,18 @@
 <script src="assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261013-frame1"></script>
 <script src="assets/js/registrar-questoes.js?v=4.2"></script>
+<script>
+document.querySelectorAll(".reg-chip-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = document.getElementById(btn.dataset.setField);
+    if (target) {
+      target.value = btn.dataset.value;
+      target.dispatchEvent(new Event("input", { bubbles: true }));
+      target.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+  });
+});
+</script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>

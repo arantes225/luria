@@ -609,7 +609,7 @@
     grid.innerHTML = AREAS.map(area => {
       const count = counts[area] || 0;
       const pct = totalQuestions > 0 ? Math.round((count / totalQuestions) * 100) : 0;
-      const iconHtml = window.LuriaMedicalIcons ? window.LuriaMedicalIcons.icon(area.toLowerCase()) : "✚";
+      const iconHtml = window.LuriaMedicalIcons?.svg ? window.LuriaMedicalIcons.svg(area.toLowerCase()) : (window.LuriaMedicalIcons?.icon ? window.LuriaMedicalIcons.icon(area.toLowerCase()) : "✚");
 
       return `
         <div class="radar-area-stat">

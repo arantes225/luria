@@ -4563,8 +4563,9 @@
     if(wrong) wrong.innerHTML=under?'<div class="plantao-review-item"><span>!</span><span>Houve subtriagem de '+under+' vítima(s) que deveriam ser prioridade vermelha.</span></div>':'<div class="plantao-review-item"><span>✓</span><span>Nenhuma subtriagem vermelha registrada.</span></div>';
     const explain=$("plantao-case-explanation");
     if(explain) explain.innerHTML='<section class="plantao-understand-topic"><h3>Como funciona a cena?</h3><p>'+esc(d.explanation||"A estação avalia comando inicial, START, intervenções salvadoras e ordem de evacuação. O objetivo não é completar um atendimento hospitalar individual, mas organizar recursos escassos para o maior benefício coletivo.")+'</p></section>';
+    const caseSources=(state.current.source_refs && state.current.source_refs.length) ? state.current.source_refs : (d.protocol_audit?.primary_source ? [d.protocol_audit.primary_source] : []);
     const sources=$("plantao-sources");
-    if(sources) sources.innerHTML=(state.current.source_refs||[]).map(src=>'<a href="'+esc(luriaSafeContentUrl(src.url) || '#')+'" target="_blank" rel="noopener noreferrer">'+esc(src.title)+'</a>').join("");
+    if(sources) sources.innerHTML=caseSources.map(src=>'<a href="'+esc(luriaSafeContentUrl(src.url) || '#')+'" target="_blank" rel="noopener noreferrer">'+esc(src.title)+'</a>').join("");
   }
 
   async function finishDisasterCase(){
@@ -5133,7 +5134,8 @@
     const danger=(d.dangerous_actions||[]).map(text=>`<div class="plantao-review-item"><span>!</span><span>${esc(text)}</span></div>`);
     const dangerActionsEl=$("plantao-danger-actions"); if(dangerActionsEl) dangerActionsEl.innerHTML=danger.join("");
 
-    const sourcesEl=$("plantao-sources"); if(sourcesEl) sourcesEl.innerHTML=(state.current.source_refs||[]).map(src=>`<a href="${esc(luriaSafeContentUrl(src.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
+    const caseSources=(state.current.source_refs && state.current.source_refs.length) ? state.current.source_refs : (d.protocol_audit?.primary_source ? [d.protocol_audit.primary_source] : []);
+    const sourcesEl=$("plantao-sources"); if(sourcesEl) sourcesEl.innerHTML=caseSources.map(src=>`<a href="${esc(luriaSafeContentUrl(src.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
   }
 
   async function pruneCaseHistory(caseId) {

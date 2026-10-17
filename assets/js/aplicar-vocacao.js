@@ -779,7 +779,7 @@
         <div>
           <div class="vocacao-card-top">
             <div class="vocacao-card-icon">
-              ${window.LuriaMedicalIcons ? window.LuriaMedicalIcons.icon(spec.area.toLowerCase()) : "✚"}
+              ${window.LuriaMedicalIcons?.svg ? window.LuriaMedicalIcons.svg(spec.area.toLowerCase()) : (window.LuriaMedicalIcons?.icon ? window.LuriaMedicalIcons.icon(spec.area.toLowerCase()) : "✚")}
             </div>
             <span class="aplicar-badge">${spec.years} anos</span>
           </div>

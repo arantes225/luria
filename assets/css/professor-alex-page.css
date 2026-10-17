@@ -1,4 +1,464 @@
-body[data-page="professor_alex"] .alex-mascot-stage{flex:0 0 240px;display:grid;justify-items:center;align-content:center;max-width:100%;border-radius:24px;background:transparent}
-body[data-page="professor_alex"] .alex-mascot-stage professor-alex-mascot{display:block}
-body[data-page="professor_alex"] .alex-mascot-hint{margin:-6px 0 12px;font-size:11px;line-height:1.4;color:var(--muted);text-align:center}
-@media(max-width:620px){body[data-page="professor_alex"] .alex-mascot-stage{flex-basis:100%;width:100%}body[data-page="professor_alex"] .alex-mascot-stage professor-alex-mascot{width:210px}}
+/* Professor Alex - Reinvented Page Styles */
+body[data-page="professor_alex"] .alex-page {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  padding-bottom: 40px !important;
+}
+
+body[data-page="professor_alex"] .alex-central-stage {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  max-width: 880px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+body[data-page="professor_alex"] .alex-mascot-card,
+body[data-page="professor_alex"] .alex-mascot-box {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 24px 24px 18px !important;
+  border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+  border-radius: 24px !important;
+  background: radial-gradient(circle at 50% 28%, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.02) 50%, transparent 75%), var(--color-surface, var(--surface, #ffffff)) !important;
+  box-shadow: 0 14px 40px rgba(15, 35, 66, 0.08) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+:root[data-theme="dark"] body[data-page="professor_alex"] .alex-mascot-card,
+:root[data-theme="dark"] body[data-page="professor_alex"] .alex-mascot-box {
+  background: radial-gradient(circle at 50% 28%, rgba(59, 130, 246, 0.14) 0%, rgba(59, 130, 246, 0.03) 50%, transparent 75%), var(--surface, #0D1B30) !important;
+  border-color: #20344F !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.35) !important;
+}
+
+body[data-page="professor_alex"] .alex-mascot-stage-wrap {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 340px !important;
+  position: relative !important;
+}
+
+body[data-page="professor_alex"] professor-alex-mascot#alex-mascot {
+  display: block !important;
+  width: 340px !important;
+  height: 340px !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  filter: drop-shadow(0 12px 28px rgba(15, 35, 66, 0.12)) !important;
+  cursor: pointer !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body[data-page="professor_alex"] professor-alex-mascot#alex-mascot:hover {
+  transform: scale(1.02) !important;
+}
+
+body[data-page="professor_alex"] .alex-mascot-card-bottom {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 10px !important;
+  text-align: center !important;
+}
+
+body[data-page="professor_alex"] .alex-mascot-hint {
+  font-size: 12px !important;
+  color: var(--muted, #64748b) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+}
+
+@media (max-width: 600px) {
+  body[data-page="professor_alex"] .alex-mascot-card,
+  body[data-page="professor_alex"] .alex-mascot-box {
+    padding: 16px 14px 14px !important;
+  }
+  body[data-page="professor_alex"] .alex-mascot-stage-wrap {
+    min-height: 270px !important;
+  }
+  body[data-page="professor_alex"] professor-alex-mascot#alex-mascot {
+    width: 270px !important;
+    height: 270px !important;
+  }
+}
+
+body[data-page="professor_alex"] .alex-status-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 16px !important;
+  margin-bottom: 8px !important;
+  border-radius: 999px !important;
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+  font-size: 13px !important;
+  font-weight: 650 !important;
+  color: var(--color-text-primary, var(--text, #1e293b)) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+body[data-page="professor_alex"] .status-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: #10b981 !important;
+  box-shadow: 0 0 8px #10b981 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Card Explicativo: Modo Estourado */
+body[data-page="professor_alex"] .alex-mode-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 16px 20px !important;
+  border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+  border-radius: 16px !important;
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.25s ease !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-card.estourado-active {
+  border-color: #ef4444 !important;
+  background: linear-gradient(135deg, var(--color-surface, #ffffff), rgba(239, 68, 68, 0.08)) !important;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.15) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-info {
+  flex: 1 1 auto !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 6px !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-badge {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: var(--color-text-primary, var(--text, #1e293b)) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-tag {
+  display: inline-block !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 2px 8px !important;
+  border-radius: 6px !important;
+  background: var(--color-surface-elevated, #f1f5f9) !important;
+  color: var(--color-text-secondary, #64748b) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-tag.active {
+  background: #fef2f2 !important;
+  color: #dc2626 !important;
+  border: 1px solid #fca5a5 !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-info p {
+  margin: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: var(--color-text-secondary, #64748b) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-switch {
+  width: 52px !important;
+  height: 28px !important;
+  min-width: 52px !important;
+  padding: 2px !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--color-border-interactive, #cbd5e1) !important;
+  background: #cbd5e1 !important;
+  position: relative !important;
+  cursor: pointer !important;
+  transition: background 0.25s ease !important;
+  box-sizing: border-box !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-switch[aria-checked="true"] {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+
+body[data-page="professor_alex"] .switch-handle {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-switch[aria-checked="true"] .switch-handle {
+  transform: translateX(24px) !important;
+}
+
+/* Chat Conversacional Unificado */
+body[data-page="professor_alex"] .alex-chat-container {
+  width: 100% !important;
+}
+
+body[data-page="professor_alex"] .alex-input-bar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 12px !important;
+  border: 1.5px solid var(--color-border-interactive, var(--border, #cbd5e1)) !important;
+  border-radius: 16px !important;
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+body[data-page="professor_alex"] .alex-input-bar:focus-within {
+  border-color: var(--color-primary, var(--accent, #0284c7)) !important;
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.15) !important;
+}
+
+body[data-page="professor_alex"] .alex-file-hidden {
+  display: none !important;
+}
+
+body[data-page="professor_alex"] .alex-clip-button {
+  display: grid !important;
+  place-items: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  color: var(--color-text-secondary, #64748b) !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+body[data-page="professor_alex"] .alex-clip-button:hover {
+  background: var(--color-primary-subtle, rgba(2, 132, 199, 0.1)) !important;
+  color: var(--color-primary, #0284c7) !important;
+}
+
+body[data-page="professor_alex"] .alex-chat-input {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  max-height: 130px !important;
+  padding: 8px 6px !important;
+  border: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+  font: inherit !important;
+  font-size: 14.5px !important;
+  line-height: 1.45 !important;
+  color: var(--color-text-primary, #1e293b) !important;
+  resize: none !important;
+  box-sizing: border-box !important;
+}
+
+body[data-page="professor_alex"] .alex-voice-button {
+  display: grid !important;
+  place-items: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  color: var(--color-text-secondary, #64748b) !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+body[data-page="professor_alex"] .alex-voice-button:hover {
+  background: var(--color-primary-subtle, rgba(2, 132, 199, 0.1)) !important;
+  color: var(--color-primary, #0284c7) !important;
+}
+
+body[data-page="professor_alex"] .alex-voice-button.is-listening {
+  color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  animation: alex-pulse 1.2s infinite ease-in-out !important;
+}
+
+@keyframes alex-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+body[data-page="professor_alex"] .alex-send-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  height: 42px !important;
+  padding: 0 18px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.25) !important;
+  transition: all 0.15s ease !important;
+  white-space: nowrap !important;
+}
+
+body[data-page="professor_alex"] .alex-send-button:hover {
+  filter: brightness(1.08) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 16px rgba(24, 72, 136, 0.35) !important;
+}
+
+body[data-page="professor_alex"] .alex-send-button[disabled] {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+/* Indicador de anexo */
+body[data-page="professor_alex"] .alex-attachment-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 5px 12px !important;
+  margin-top: 8px !important;
+  border-radius: 8px !important;
+  background: var(--color-primary-subtle, rgba(2, 132, 199, 0.1)) !important;
+  border: 1px solid var(--color-primary, #0284c7) !important;
+  color: var(--color-primary, #0284c7) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+body[data-page="professor_alex"] .alex-attachment-pill button {
+  border: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  padding: 0 2px !important;
+}
+
+/* Painel de Resposta com Skills */
+body[data-page="professor_alex"] .alex-response-stream {
+  margin-top: 20px !important;
+  width: 100% !important;
+}
+
+body[data-page="professor_alex"] .alex-response-card {
+  border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+  border-radius: 18px !important;
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+  padding: 22px !important;
+}
+
+body[data-page="professor_alex"] .alex-response-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+}
+
+body[data-page="professor_alex"] .alex-response-badge {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 15px !important;
+  color: var(--color-text-primary, #1e293b) !important;
+}
+
+body[data-page="professor_alex"] .alex-mode-pill-tag {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 10px !important;
+  border-radius: 8px !important;
+  background: var(--color-surface-elevated, #f1f5f9) !important;
+  color: var(--color-text-secondary, #64748b) !important;
+}
+
+body[data-page="professor_alex"] .alex-skills-blocks {
+  display: grid !important;
+  gap: 12px !important;
+  margin-top: 16px !important;
+}
+
+body[data-page="professor_alex"] .skill-block {
+  padding: 14px 16px !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--color-border, var(--border, #cbd5e1)) !important;
+  background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
+}
+
+body[data-page="professor_alex"] .skill-head {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 6px !important;
+}
+
+body[data-page="professor_alex"] .skill-head h4 {
+  margin: 0 !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  color: var(--color-text-primary, #1e293b) !important;
+}
+
+body[data-page="professor_alex"] .skill-block p {
+  margin: 0 !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: var(--color-text-primary, #1e293b) !important;
+}
+
+body[data-page="professor_alex"] .concept-block {
+  border-left: 4px solid #3b82f6 !important;
+}
+
+body[data-page="professor_alex"] .diff-block {
+  border-left: 4px solid #8b5cf6 !important;
+}
+
+body[data-page="professor_alex"] .exam-block {
+  border-left: 4px solid #f59e0b !important;
+}
+
+body[data-page="professor_alex"] .trick-block {
+  border-left: 4px solid #10b981 !important;
+  background: rgba(16, 185, 129, 0.06) !important;
+}
+
+@media (max-width: 620px) {
+  body[data-page="professor_alex"] .alex-mode-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  body[data-page="professor_alex"] .alex-mode-switch {
+    align-self: flex-end !important;
+  }
+  body[data-page="professor_alex"] .alex-send-button span {
+    display: none !important;
+  }
+}

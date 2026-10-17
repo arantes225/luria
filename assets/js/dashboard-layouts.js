@@ -87,7 +87,6 @@
   function greeting() {
     return `<section class="luria-page-spotlight luria-dashboard-spotlight dl-dashboard-title-card" aria-label="Dashboard">
       <div class="luria-page-spotlight-copy">
-        <span class="luria-page-spotlight-label">VISÃO GERAL</span>
         <strong>Dashboard</strong>
         <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
       </div>

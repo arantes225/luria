@@ -13,19 +13,14 @@
     padding-bottom: 3rem;
   }
 
-  /* Navegação Interna por Abas / Pills (.aplicar-nav) */
+  /* Navegação Interna por Abas / Pills (.aplicar-nav) - Ocultada a pedido do usuário: manter apenas os callouts */
   .aplicar-nav {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin: 0 0 1.5rem 0;
-    padding: 5px;
-    border: 1px solid var(--color-border);
-    border-radius: var(--ui-radius-pill, 999px);
-    background: var(--color-surface);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    box-shadow: var(--shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.04));
+    display: none !important;
+  }
+  
+  /* Garantir que o hall de callouts respeite o estado ativo / hidden */
+  #aplicar-panel-hall[hidden] {
+    display: none !important;
   }
 
   .main .aplicar-nav a {
@@ -54,9 +49,16 @@
   .main .aplicar-nav a.active,
   .main .aplicar-nav a[aria-selected="true"] {
     background: var(--ui-pill-gradient, var(--color-primary)) !important;
-    color: var(--color-primary-foreground, #ffffff) !important;
+    color: #ffffff !important;
     border-color: transparent !important;
     box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent) !important;
+  }
+
+  .main .aplicar-nav a.active *,
+  .main .aplicar-nav a[aria-selected="true"] * {
+    color: #ffffff !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
   }
 
   .aplicar-nav a .nav-pill-icon {
@@ -80,6 +82,30 @@
 
   .aplicar-panel[hidden] {
     display: none !important;
+  }
+
+  /* Hall Aplicar - Cards e Grid de Ferramentas */
+  .aplicar-hall-panel {
+    display: block;
+    width: 100%;
+  }
+
+  body[data-ui="v2"][data-page="aplicar"] .aplicar-hall-tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    align-items: stretch !important;
+  }
+
+  body[data-ui="v2"][data-page="aplicar"] .aplicar-card-tool {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  @media (max-width: 960px) {
+    body[data-ui="v2"][data-page="aplicar"] .aplicar-hall-tools {
+      grid-template-columns: minmax(0, 1fr) !important;
+    }
   }
 
   @keyframes fadeInAplicar {

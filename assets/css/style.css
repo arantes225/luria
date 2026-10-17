@@ -200,9 +200,21 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   font-weight: 750;
 }
 
-.button.primary { background: var(--accent); color: #fff; }
-.button.primary:hover { background: var(--accent-strong); }
-.button.secondary { background: var(--surface-2); color: var(--text); border-color: var(--border); }
+.button.primary {
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22);
+  transition: transform 0.16s ease, filter 0.16s ease, box-shadow 0.16s ease;
+}
+.button.primary:hover {
+  background: linear-gradient(135deg, #1e58a6, #3b82f6) !important;
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(24, 72, 136, 0.28);
+}
+.button.secondary { background: var(--surface-2); color: var(--text); border-color: var(--border); border-radius: 12px; }
 
 .auth-message {
   min-height: 20px;
@@ -1783,8 +1795,8 @@ body .caderno-editor-content * {
 :root,
 :root[data-theme="light"] {
   --brand-light-blue: #184888;
-  --button-primary: #184888;
-  --button-primary-hover: #123A70;
+  --button-primary: linear-gradient(135deg, #184888, #2563EB);
+  --button-primary-hover: linear-gradient(135deg, #1e58a6, #3b82f6);
   --button-secondary-bg: #FFFFFF;
   --button-secondary-border: #184888;
   --button-secondary-text: #184888;
@@ -1797,15 +1809,23 @@ body .caderno-editor-content * {
 
 :root[data-theme="light"] .button.primary,
 :root[data-theme="light"] .primary-action {
-  background: var(--button-primary) !important;
-  border-color: var(--button-primary) !important;
+  background: linear-gradient(135deg, #184888, #2563EB) !important;
+  border: none !important;
+  border-color: transparent !important;
+  border-radius: 12px;
   color: #fff !important;
+  box-shadow: 0 4px 14px rgba(24, 72, 136, 0.22);
+  transition: transform 0.16s ease, filter 0.16s ease, box-shadow 0.16s ease;
 }
 
 :root[data-theme="light"] .button.primary:hover,
 :root[data-theme="light"] .primary-action:hover {
-  background: var(--button-primary-hover) !important;
-  border-color: var(--button-primary-hover) !important;
+  background: linear-gradient(135deg, #1e58a6, #3b82f6) !important;
+  border: none !important;
+  border-color: transparent !important;
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(24, 72, 136, 0.28);
 }
 
 :root[data-theme="light"] .button.secondary {
@@ -3229,7 +3249,7 @@ dialog[open]{
   color:var(--accent);font:inherit;font-size:9px;font-weight:900;cursor:pointer
 }
 .luria-time-picker-foot button.primary{
-  justify-self:end;background:var(--accent);color:var(--surface);min-width:86px
+  justify-self:end;background:linear-gradient(135deg, #184888, #2563EB);color:#fff;border-radius:12px;border:none;min-width:86px
 }
 #event-time{cursor:pointer}
 #event-time::-webkit-calendar-picker-indicator{opacity:.75;cursor:pointer}
@@ -3313,10 +3333,10 @@ body.auth-page>.auth-card{
    Referência geométrica: card "Anotações"
    ========================================================= */
 :root{
-  --luria-page-title-card-min-height:138px;
-  --luria-page-title-card-pad-y:24px;
-  --luria-page-title-card-pad-x:28px;
-  --luria-page-title-card-radius:15px;
+  --luria-page-title-card-min-height: auto;
+  --luria-page-title-card-pad-y: 12px;
+  --luria-page-title-card-pad-x: 18px;
+  --luria-page-title-card-radius: 14px;
 }
 
 /* Mantém a geometria dos cards superiores igual entre as páginas. */
@@ -3329,6 +3349,7 @@ body.auth-page>.auth-card{
   min-height:var(--luria-page-title-card-min-height)!important;
   padding:var(--luria-page-title-card-pad-y) var(--luria-page-title-card-pad-x)!important;
   border-radius:var(--luria-page-title-card-radius)!important;
+  margin-bottom: 12px !important;
 }
 
 /* O cabeçalho superior ocupa sempre a mesma largura útil. */
@@ -3348,9 +3369,9 @@ body.auth-page>.auth-card{
 
 @media(max-width:700px){
   :root{
-    --luria-page-title-card-min-height:118px;
-    --luria-page-title-card-pad-y:20px;
-    --luria-page-title-card-pad-x:20px;
+    --luria-page-title-card-min-height: auto;
+    --luria-page-title-card-pad-y: 10px;
+    --luria-page-title-card-pad-x: 14px;
   }
 }
 

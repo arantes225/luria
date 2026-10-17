@@ -234,7 +234,7 @@ body[data-dashboard-layout] .dl-greeting{
 .dl-mini-list{display:grid;gap:8px;margin-top:16px}
 .dl-mini-list>span{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--border);padding-top:8px;font-size:13px;color:var(--muted)}
 .dl-mini-list strong{color:var(--text)}
-.dl-primary{display:block;text-align:center;background:var(--accent);color:#fff;border-radius:8px;padding:11px 12px;font-weight:750;margin-top:14px;font-size:13px}
+.dl-primary{display:block;text-align:center;background:linear-gradient(135deg, #184888, #2563EB);color:#fff;border-radius:12px;padding:11px 12px;font-weight:750;margin-top:14px;font-size:13px}
 .dl-layout-1{grid-template-columns:minmax(0,1.7fr) minmax(260px,.95fr)}
 .dl-layout-1 .dl-agenda-large{min-height:420px}
 .dl-layout-1 .dl-side{display:grid;gap:16px;grid-template-rows:1.2fr .8fr}

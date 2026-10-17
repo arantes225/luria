@@ -6,8 +6,8 @@
 (() => {
   "use strict";
 
-  const VALID_TABS = ["editais", "vocacao", "radar"];
-  const DEFAULT_TAB = "editais";
+  const VALID_TABS = ["hall", "editais", "vocacao", "radar"];
+  const DEFAULT_TAB = "hall";
 
   function getActiveTabFromUrl() {
     const hash = window.location.hash.replace(/^#/, "").toLowerCase();
@@ -18,6 +18,7 @@
     if (path.includes("/vocacao")) return "vocacao";
     if (path.includes("/radar")) return "radar";
     if (path.includes("/editais")) return "editais";
+    if (path.includes("/hall")) return "hall";
 
     return DEFAULT_TAB;
   }
@@ -58,16 +59,29 @@
 
   function initAplicarNav() {
     const nav = document.querySelector(".aplicar-nav");
-    if (!nav) return;
+    if (nav) {
+      // Adiciona listener nos cliques de abas (se existir)
+      nav.addEventListener("click", event => {
+        const targetLink = event.target.closest("[data-aplicar-tab]");
+        if (!targetLink) return;
 
-    // Adiciona listener nos cliques de abas
-    nav.addEventListener("click", event => {
-      const targetLink = event.target.closest("[data-aplicar-tab]");
-      if (!targetLink) return;
+        event.preventDefault();
+        const tabId = targetLink.getAttribute("data-aplicar-tab");
+        activateTab(tabId, true);
+      });
+    }
+
+    // Adiciona listener nos cliques dos cards do Hall Aplicar
+    document.addEventListener("click", event => {
+      const actionCard = event.target.closest("[data-aplicar-action]");
+      if (!actionCard) return;
 
       event.preventDefault();
-      const tabId = targetLink.getAttribute("data-aplicar-tab");
-      activateTab(tabId, true);
+      const tabId = actionCard.getAttribute("data-aplicar-action");
+      if (VALID_TABS.includes(tabId)) {
+        activateTab(tabId, true);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     });
 
     // Escuta mudanças no hash da URL (navegação pelo histórico do navegador)
