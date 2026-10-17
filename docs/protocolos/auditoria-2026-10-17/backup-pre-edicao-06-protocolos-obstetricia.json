@@ -1,0 +1,876 @@
+{
+  "created_date": "2026-10-17",
+  "description": "Backup integral antes de revisão científica obstétrica de seis emergências",
+  "records": [
+    {
+      "id": 171,
+      "slug": "ginecologia-e-obstetricia-eclampsia",
+      "title": "Eclâmpsia",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Convulsão generalizada em gestante ou puérpera atribuível à doença hipertensiva da gestação após exclusão de causas alternativas. Emergência: proteger paciente, tratar com sulfato de magnésio, controlar PA grave e indicar resolução gestacional após estabilização.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Convulsão tônico-clônica ou alteração neurológica aguda em gestante, no parto ou no puerpério, muitas vezes com cefaleia, alterações visuais, hipertensão ou dor epigástrica.",
+            "A PA pode não estar no patamar grave imediatamente antes da crise; ausência de proteinúria não exclui eclâmpsia.",
+            "Pesquisar hipóxia, hipoglicemia, epilepsia, AVC, trombose venosa cerebral, infecção e outras causas conforme apresentação."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar equipe obstétrica/anestésica; proteger contra trauma, posicionar em decúbito lateral, aspirar secreções quando necessário e garantir oxigenação/via aérea. Não conter movimentos à força nem introduzir objetos na boca.",
+            "Checar glicemia capilar, saturação, sinais vitais e dois acessos venosos; iniciar sulfato de magnésio sem aguardar exames.",
+            "Tratar hipertensão grave persistente e avaliar paciente e feto após recuperação materna; preparar transferência/UTI se necessário."
+          ],
+          "title": "Atendimento imediato"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glicemia, hemograma/plaquetas, creatinina, AST/ALT, eletrólitos, DHL e bilirrubinas conforme suspeita de HELLP; proteinúria sem atrasar atendimento.",
+            "Neuroimagem e avaliação neurológica se déficit focal, convulsões persistentes/atípicas, coma prolongado ou suspeita de diagnóstico alternativo.",
+            "Avaliação fetal após estabilização e planejamento da via de parto."
+          ],
+          "title": "Investigação após estabilização"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Crise convulsiva em gestante ou puérpera com suspeita de eclâmpsia",
+          "then": "Suporte ABC, magnésio imediato e avaliação obstétrica urgente; não aguardar exames."
+        },
+        {
+          "if": "PA ≥160 sistólica ou ≥110 diastólica persistente",
+          "then": "Anti-hipertensivo rápido sob monitorização; reduzir risco de AVC sem hipotensão excessiva."
+        },
+        {
+          "if": "Crise recorrente apesar do ataque com magnésio",
+          "then": "Reavaliar oxigenação e glicemia, aplicar resgate com magnésio conforme protocolo e buscar outras causas; crise refratária exige manejo avançado de via aérea/UTI."
+        },
+        {
+          "if": "Estabilização materna alcançada",
+          "then": "Planejar parto em tempo oportuno; eclâmpsia isoladamente não obriga cesariana."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Esquema intravenoso utilizado no Brasil: dose de ataque de 4 g IV lentamente em 15–20 minutos, seguida de manutenção de 1 g/h em bomba (ajuste para 2 g/h em situações selecionadas e conforme protocolo). Alternativa: esquema de Pritchard IV/IM quando indicado.",
+            "Crise recorrente pode exigir 2 g IV de resgate sob monitorização especializada. Manter terapia por 24 horas após parto ou última crise, conforme protocolo do serviço.",
+            "Monitorar frequência respiratória, reflexo patelar e débito urinário. Suspeita de toxicidade: suspender magnésio, dar suporte e administrar gluconato de cálcio 10% (1 g IV lento) conforme protocolo de emergência."
+          ],
+          "title": "Sulfato de magnésio"
+        },
+        {
+          "items": [
+            "Tratar PA grave persistente com nifedipino oral ou hidralazina IV conforme protocolo. Não usar benzodiazepínico como substituto rotineiro do magnésio.",
+            "Restringir fluidos ao necessário, avaliar edema pulmonar e realizar planejamento obstétrico após estabilização materna."
+          ],
+          "title": "Outras medidas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Eclâmpsia pode se manifestar no pós-parto; investigar convulsão puerperal com o mesmo grau de urgência.",
+            "Considerar insuficiência renal para reduzir risco de acúmulo de magnésio e individualizar manutenção.",
+            "Se convulsão/alteração de consciência persistir, incluir AVC, encefalopatia posterior reversível, trombose venosa cerebral e etiologias metabólicas no diferencial."
+          ],
+          "title": "Puerpério e refratariedade"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorização materna contínua durante fase crítica, registro de crises, PA, reflexos, FR e diurese; acompanhamento fetal conforme viabilidade.",
+            "Após parto, acompanhar PA, função renal e sinais neurológicos; orientar retorno imediato por cefaleia intensa, dispneia, escotomas ou convulsões.",
+            "Revisão pressórica precoce e seguimento obstétrico especializado na alta."
+          ],
+          "title": "Vigilância"
+        }
+      ],
+      "red_flags": [
+        "Convulsão persistente ou recorrente, coma ou déficit focal.",
+        "Hipoxemia, aspiração, edema pulmonar ou incapacidade de proteger a via aérea.",
+        "PA grave persistente, oligúria, arreflexia ou depressão respiratória durante magnésio.",
+        "HELLP, sangramento/abruptio ou comprometimento fetal."
+      ],
+      "notification": {
+        "text": "Registrar horário de crises, doses e concentrações de magnésio, reflexos/FR/diurese, PA e decisão obstétrica. Seguir vigilância institucional de morbidade materna grave.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n19%20-%20O%20-%20Hipertens%C3%A3o%20na%20gesta%C3%A7%C3%A3o.pdf",
+          "label": "FEBRASGO — Hipertensão arterial crônica e gravidez, esquemas de magnésio (2024)"
+        },
+        {
+          "url": "https://site.homolog.febrasgo.org.br/noticia/sindromes-hipertensivas-da-gravidez/",
+          "label": "FEBRASGO — Síndromes hipertensivas da gravidez"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/biblioteca/",
+          "label": "FEBRASGO — Biblioteca de fluxogramas de urgências obstétricas"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de magnésio",
+        "hidralazina",
+        "nifedipino"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 172,
+      "slug": "ginecologia-e-obstetricia-sindrome-hellp",
+      "title": "Síndrome HELLP",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Síndrome HELLP combina hemólise (H), enzimas hepáticas elevadas (EL) e plaquetopenia (LP); pode ocorrer com hipertensão/proteinúria pouco expressivas. É emergência obstétrica com risco de CIVD, hematoma/rotura hepática, insuficiência renal e descolamento placentário. O parto é indicado após estabilização materna, independentemente da idade gestacional, de acordo com protocolo especializado.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Gestante ou puérpera com pré-eclâmpsia ou com dor epigástrica/hipocôndrio direito, náuseas, vômitos, mal-estar, cefaleia e alterações de PA.",
+            "Considerar HELLP mesmo se PA/proteinúria não forem marcadamente alteradas.",
+            "Plaquetopenia, transaminases elevadas e sinais de hemólise sustentam diagnóstico; pesquisar diferenciais como PTT/SHU e esteatose hepática aguda da gestação."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar obstetrícia de alto risco, anestesia, hematologia/hemoterapia e neonatal conforme necessidade; estabilizar ABC, monitorizar PA, saturação, débito urinário e sangramento.",
+            "Avaliar e tratar hipertensão grave; sulfato de magnésio se indicado para prevenção de convulsões.",
+            "Preparar parto após estabilização, com banco de sangue e condições de suporte terciário; não prolongar gestação esperando apenas maturação pulmonar fetal diante de HELLP estabelecida."
+          ],
+          "title": "Primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma/plaquetas, AST/ALT, DHL, bilirrubina, esfregaço periférico quando necessário, função renal, coagulograma, fibrinogênio e tipagem/prova cruzada.",
+            "Critérios usuais incluem plaquetas <100.000/mm³, AST ≥70 UI/L e DHL ≥600 UI/L, interpretados conforme classificação/laboratório e contexto.",
+            "Dor forte persistente em hipocôndrio direito, choque ou queda de hemoglobina indicam imagem hepática para hematoma/rotura, sem atrasar ressuscitação.",
+            "Monitorar vitalidade fetal e repetir exames seriados na evolução."
+          ],
+          "title": "Confirmação e complicações"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "HELLP suspeita ou confirmada",
+          "then": "Internar em centro terciário, estabilizar, avaliar coagulação e plaquetas e planejar resolução gestacional independentemente da idade gestacional."
+        },
+        {
+          "if": "PA grave ou sinais de iminência de eclâmpsia",
+          "then": "Controlar PA e iniciar magnésio conforme protocolo com monitorização de diurese, respiração e reflexos."
+        },
+        {
+          "if": "Trombocitopenia importante, sangramento ou procedimento iminente",
+          "then": "Planejar suporte transfusional e anestésico individualizado; não definir tipo anestésico somente por número isolado sem contexto e protocolo."
+        },
+        {
+          "if": "Dor hepática intensa, instabilidade ou suspeita de hematoma/rotura",
+          "then": "Ressuscitação, imagem dirigida se factível e equipe cirúrgica/intervencionista urgente."
+        },
+        {
+          "if": "Puerpério imediato após parto",
+          "then": "Manter vigilância seriada, pois alterações laboratoriais podem piorar transitoriamente antes da recuperação."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Resolução da gestação é o tratamento definitivo após estabilização, em serviço com suporte materno e neonatal; via de parto segundo situação obstétrica e condições maternas.",
+            "Sulfato de magnésio se indicado, controle da hipertensão grave e balanço hídrico restritivo/individualizado.",
+            "Corrigir coagulopatia e transfundir hemocomponentes conforme sangramento, contagem plaquetária, via de parto e plano anestésico; envolver banco de sangue precocemente."
+          ],
+          "title": "Estabilização e parto"
+        },
+        {
+          "items": [
+            "Pesquisar lesão renal, coagulação intravascular disseminada, hematoma hepático e descolamento de placenta; abordagem intensiva/cirúrgica quando necessário.",
+            "Corticoide para maturação fetal quando aplicável não deve postergar parto indicado por HELLP ou deterioração."
+          ],
+          "title": "Complicações"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Síndrome pode surgir ou se agravar no pós-parto; repetir avaliação de plaquetas, DHL, AST/ALT e função renal.",
+            "Considerar PTT/SHU, doença hepática gordurosa aguda da gestação e hepatites quando quadro laboratorial não for típico ou não evoluir como esperado.",
+            "No parto e anestesia, individualizar risco de sangramento e limiar de plaquetas em conjunto com anestesia/hematologia."
+          ],
+          "title": "Diagnóstico diferencial e puerpério"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Avaliar PA, sangramento, diurese, consciência e resultados laboratoriais seriados até tendência consistente de recuperação.",
+            "Orientar alta com controle pressórico, avaliação de função renal/hepática e sinais de retorno imediato; oferecer aconselhamento de risco de recorrência em gravidez futura."
+          ],
+          "title": "Vigilância após resolução"
+        }
+      ],
+      "red_flags": [
+        "Plaquetopenia progressiva, CIVD ou hemorragia.",
+        "Dor intensa em hipocôndrio direito, choque ou suspeita de rotura hepática.",
+        "Insuficiência renal, oligúria, edema pulmonar ou alterações neurológicas.",
+        "Descolamento prematuro de placenta, comprometimento fetal ou eclâmpsia."
+      ],
+      "notification": {
+        "text": "Registrar evolução seriada de plaquetas/hemólise/transaminases, plano de parto, hemocomponentes e complicações; seguir vigilância de morbidade materna grave.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n20%20-%20O%20-%20S%C3%ADndrome%20HELLP.pdf",
+          "label": "FEBRASGO — Protocolo Síndrome HELLP nº 20 (2024)"
+        },
+        {
+          "url": "https://site.homolog.febrasgo.org.br/noticia/sindromes-hipertensivas-da-gravidez/",
+          "label": "FEBRASGO — Síndromes hipertensivas da gravidez"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de magnésio",
+        "hidralazina",
+        "nifedipino"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 176,
+      "slug": "ginecologia-e-obstetricia-gravidez-ectopica",
+      "title": "Gravidez ectópica",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Gravidez ectópica é implantação gestacional fora da cavidade uterina, mais frequentemente tubária. É causa importante de hemorragia no primeiro trimestre. O diagnóstico combina quadro clínico, beta-hCG seriado e ultrassonografia transvaginal; instabilidade exige tratamento cirúrgico imediato.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Dor pélvica/abdominal, sangramento vaginal e atraso menstrual ou teste de gravidez positivo.",
+            "Fatores de risco incluem ectópica prévia, doença tubária, reprodução assistida e cirurgia tubária, mas muitas pacientes não têm fatores reconhecidos.",
+            "Dor no ombro, síncope, peritonismo ou choque sugerem ruptura e hemoperitônio."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar estabilidade e obter acesso venoso; em suspeita de ruptura, preparar ressuscitação e cirurgia.",
+            "Solicitar beta-hCG quantitativo, hemograma, tipagem/Rh e ultrassonografia transvaginal.",
+            "Acionar ginecologia/obstetrícia precocemente quando houver suspeita relevante."
+          ],
+          "title": "Abordagem imediata"
+        },
+        {
+          "items": [
+            "Reanimar e encaminhar à cirurgia imediatamente."
+          ],
+          "title": "Conduta inicial direcionada"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Ultrassonografia transvaginal pode mostrar massa anexial, saco gestacional extrauterino e líquido livre.",
+            "Ausência de gestação intrauterina acima de um único ponto de corte de beta-hCG não deve, isoladamente, determinar tratamento; interpretar tendência hormonal e imagem em conjunto.",
+            "Gestação de localização indeterminada exige seguimento seriado se paciente estável."
+          ],
+          "title": "Diagnóstico"
+        },
+        {
+          "items": [
+            "Ultrassom transvaginal, β-hCG, hemograma, grupo/Rh e exames para elegibilidade clínica."
+          ],
+          "title": "Avaliação complementar"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade, ruptura ou hemoperitônio significativo com piora clínica.",
+          "then": "Tratamento cirúrgico imediato."
+        },
+        {
+          "if": "Ectópica não rota, paciente estável e critérios adequados para tratamento medicamentoso.",
+          "then": "Metotrexato pode ser considerado com acompanhamento rigoroso e ausência de contraindicações."
+        },
+        {
+          "if": "Caso selecionado com beta-hCG baixo/decrescente e paciente assintomática.",
+          "then": "Manejo expectante pode ser considerado com seguimento confiável."
+        },
+        {
+          "if": "Instabilidade, dor súbita intensa, peritonite ou líquido livre compatível com ruptura",
+          "then": "Reanimar e encaminhar à cirurgia imediatamente."
+        },
+        {
+          "if": "Ectópica estável com critérios favoráveis e seguimento confiável",
+          "then": "Avaliar metotrexato conforme β-hCG, tamanho, embriocardia, exames e contraindicações."
+        },
+        {
+          "if": "Metotrexato contraindicado, não elegível ou falha",
+          "then": "Abordagem cirúrgica com escolha de técnica segundo estabilidade, integridade tubária e fertilidade."
+        },
+        {
+          "if": "Gestação de localização desconhecida",
+          "then": "β-hCG seriado e ultrassom repetido; risco de ruptura permanece mesmo com valor baixo."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Cirurgia pode ser salpingectomia ou salpingostomia conforme localização, dano tubário, fertilidade contralateral e desejo reprodutivo.",
+            "Metotrexato requer exclusão de contraindicações, orientação clara e monitorização seriada de beta-hCG.",
+            "Imunoprofilaxia anti-D deve seguir protocolo vigente para pacientes Rh negativas quando indicada."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Metotrexato requer avaliação renal/hepática/hematológica e monitorização seriada de β-hCG, inclusive dias 4 e 7 no regime de dose única.",
+            "Explicar necessidade de evitar nova gestação durante seguimento e risco de intervenção de resgate."
+          ],
+          "title": "Aprimoramento do tratamento"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ectópica intersticial, cervical, cicatriz de cesárea, ovariana e abdominal exigem manejo especializado.",
+            "Gestação heterotópica deve ser considerada após reprodução assistida mesmo quando há gestação intrauterina identificada.",
+            "Dor após metotrexato pode ocorrer, mas deterioração/hemodinâmica exige exclusão de ruptura."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Após metotrexato ou manejo expectante, seguir beta-hCG até negativação/nível não gestacional conforme protocolo.",
+            "Orientar retorno imediato por dor crescente, síncope ou sangramento intenso.",
+            "Discutir risco de recorrência e planejamento de gestação futura."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Acompanhar β-hCG até resolução e orientar retorno imediato por síncope, dor ou sangramento."
+          ],
+          "title": "Seguimento orientado"
+        }
+      ],
+      "red_flags": [
+        "Choque, síncope ou peritonite.",
+        "Líquido livre importante com dor intensa ou queda de hemoglobina.",
+        "Deterioração clínica durante seguimento expectante/medicamentoso.",
+        "Hipotensão, síncope, defesa abdominal ou hemoperitônio."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar localização suspeita, tendência de beta-hCG e estratégia escolhida.; Documentar critérios de elegibilidade e seguimento quando usado metotrexato.",
+        "items": [
+          "Registrar localização suspeita, tendência de beta-hCG e estratégia escolhida.",
+          "Documentar critérios de elegibilidade e seguimento quando usado metotrexato."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+          "label": "Ministério da Saúde — Manual de Gestação de Alto Risco, capítulo de gravidez ectópica"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "metotrexato"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [
+        {
+          "alt": "Ultrassonografia mostrando gravidez ectópica",
+          "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ectopic%20pregnancy.JPG",
+          "kind": "ultrasound",
+          "max_kb": 120,
+          "caption": "Gravidez ectópica — gestação extrauterina ao ultrassom",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ectopic_pregnancy.JPG",
+          "source_name": "X. Compagnion / Wikimedia Commons",
+          "approved_by_admin": true,
+          "compression_required": false,
+          "reusable_in_protocols": true,
+          "reusable_in_questions": true,
+          "reusable_in_summaries": true,
+          "reusable_in_flashcards": true
+        }
+      ],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 1,
+      "clinical_image_note": "US transvaginal de gravidez ectópica"
+    },
+    {
+      "id": 180,
+      "slug": "ginecologia-e-obstetricia-descolamento-prematuro-de-placenta",
+      "title": "Descolamento prematuro de placenta",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Descolamento prematuro de placenta (DPP) é separação parcial ou total da placenta após 20 semanas e antes do nascimento. É diagnóstico predominantemente clínico; ultrassonografia pode demonstrar hematoma retroplacentário, mas exame normal não exclui DPP. Gravidade depende da condição materna, fetal e intensidade do sangramento.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Sangramento vaginal doloroso, dor abdominal/uterina, hipertonia uterina ou contrações frequentes.",
+            "Sangramento pode ser oculto; volume vaginal não reflete necessariamente a gravidade.",
+            "Sofrimento fetal, choque desproporcional ao sangramento visível e coagulopatia sugerem DPP importante."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Avaliar ABC, dois acessos venosos calibrosos e monitorização materna.",
+            "Solicitar hemograma, tipagem/prova cruzada, fibrinogênio, coagulograma e função renal conforme gravidade.",
+            "Iniciar monitorização fetal contínua quando gestação viável e feto não estiver em parto iminente.",
+            "Preparar hemocomponentes se sangramento moderado/importante."
+          ],
+          "title": "Conduta imediata"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "O diagnóstico é clínico; ultrassom tem baixa sensibilidade e não exclui DPP quando normal.",
+            "Fibrinogênio baixo sugere maior gravidade e risco de coagulopatia.",
+            "Avaliar pré-eclâmpsia, trauma e outras causas de sangramento obstétrico."
+          ],
+          "title": "Diagnóstico"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Instabilidade materna ou sofrimento fetal persistente.",
+          "then": "Ressuscitação e interrupção imediata da gestação; cesariana se parto vaginal não for iminente."
+        },
+        {
+          "if": "Óbito fetal e mãe estável.",
+          "then": "Parto vaginal costuma ser preferido, com correção de coagulopatia e vigilância rigorosa."
+        },
+        {
+          "if": "DPP leve, mãe/feto estáveis e prematuridade significativa.",
+          "then": "Manejo expectante hospitalar selecionado, com vigilância materno-fetal estreita."
+        },
+        {
+          "if": "Dor abdominal intensa, hipertonia uterina e sangramento após 20 semanas",
+          "then": "Suspeitar DPP, avaliar hemodinâmica e sofrimento fetal; sangramento externo pode subestimar perda oculta."
+        },
+        {
+          "if": "Instabilidade materna, coagulopatia ou vitalidade fetal comprometida",
+          "then": "Reanimação, acesso venoso amplo, sangue/hemocomponentes e resolução obstétrica imediata conforme contexto."
+        },
+        {
+          "if": "DPP confirmado com feto vivo e comprometimento agudo",
+          "then": "Indicar interrupção urgente após estabilização, escolhendo via de parto conforme condições e rapidez da resolução."
+        },
+        {
+          "if": "Óbito fetal com mãe estável e sem contraindicações",
+          "then": "Individualizar via de parto, muitas vezes vaginal sob monitorização e preparo para coagulopatia."
+        },
+        {
+          "if": "Suspeita moderada/grave com fibrinogênio baixo ou sangramento persistente",
+          "then": "Ativar hemoterapia e monitorar coagulograma, fibrinogênio, plaquetas, perfusão e diurese."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Reposição volêmica e hemocomponentes conforme perdas e exames.",
+            "Corrigir hipofibrinogenemia/coagulopatia conforme protocolo transfusional.",
+            "Administrar corticosteroide antenatal e sulfato de magnésio para neuroproteção quando indicados pela idade gestacional e risco de parto prematuro.",
+            "Tratar hipertensão/pré-eclâmpsia concomitante conforme protocolo."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "O diagnóstico é clínico; ultrassom normal não exclui DPP. Não atrasar tratamento emergencial para confirmar hematoma retroplacentário."
+          ],
+          "title": "Conduta operacional aprimorada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "DPP pode ocorrer sem sangramento externo significativo.",
+            "Trauma abdominal é fator precipitante importante.",
+            "Útero de Couvelaire pode ocorrer em formas graves, mas não implica obrigatoriamente histerectomia."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar hemoglobina, fibrinogênio, coagulação, diurese e sinais vitais.",
+            "Após estabilização, orientar risco aumentado de recorrência em gestações futuras.",
+            "Revisar fatores de risco como hipertensão e tabagismo."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Acompanhar sangramento, anemia/coagulopatia, função renal e evolução neonatal; oferecer apoio psicológico e revisão de fatores de risco."
+          ],
+          "title": "Reavaliação dirigida"
+        }
+      ],
+      "red_flags": [
+        "Choque, coagulopatia ou fibrinogênio muito baixo.",
+        "Bradicardia fetal persistente ou traçado não tranquilizador.",
+        "Dor/hipertonia uterina intensa com deterioração clínica.",
+        "Hemorragia oculta com instabilidade.",
+        "Útero hipertônico, choque desproporcional ao sangramento aparente, CIVD ou bradicardia fetal."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar estimativa de sangramento, estado fetal, fibrinogênio e hemocomponentes usados.; Documentar horário da decisão e via de parto.",
+        "items": [
+          "Registrar estimativa de sangramento, estado fetal, fibrinogênio e hemocomponentes usados.",
+          "Documentar horário da decisão e via de parto."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/",
+          "label": "ACOG — Antepartum bleeding / placental abruption clinical guidance"
+        },
+        {
+          "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-pronto-atendimento/situacoes-urgencia/",
+          "label": "Ministério da Saúde — Linha de Cuidado Pré-Natal, Situações de Urgência"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": true,
+      "clinical_image_types": [
+        "ultrasound"
+      ],
+      "clinical_image_priority": 2,
+      "clinical_image_note": "US de descolamento placentário quando demonstrável"
+    },
+    {
+      "id": 186,
+      "slug": "ginecologia-e-obstetricia-hemorragia-pos-parto",
+      "title": "Hemorragia pós-parto",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Hemorragia pós-parto é urgência tempo-dependente. Quantificar objetivamente perda sanguínea e agir imediatamente diante de ≥500 mL, ou ≥300 mL com sinais hemodinâmicos anormais (abordagem OMS 2025), sem depender de limiar quando houver instabilidade. Aplicar pacote de resposta simultânea e buscar os 4 Ts: tônus, trauma, tecido e trombina.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Sangramento aumentado após parto vaginal ou cesariana; suspeitar mesmo com perda aparentemente menor quando há taquicardia, hipotensão, palidez, rebaixamento ou hipoperfusão.",
+            "Quantificar objetivamente sangue com coletores calibrados/pesagem de compressas quando possível; avaliação visual isolada subestima perdas.",
+            "Revisar 4 Ts: atonia uterina, trauma genital, retenção placentária/coágulos e coagulopatia; considerar hemorragia oculta."
+          ],
+          "title": "Reconhecimento e gravidade"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Acionar código de hemorragia e equipe obstétrica/anestesia/enfermagem/hemoterapia; manter monitorização contínua, aquecimento e comunicação com paciente/acompanhante.",
+            "Massagem uterina, uterotônico (ocitocina preferencial), ácido tranexâmico IV se HPP, cristaloide isotônico com reavaliação frequente, exame do canal genital e escalonamento precoce: ações simultâneas.",
+            "Dois acessos venosos calibrosos, coleta para hemograma/coagulação/fibrinogênio e tipagem/prova cruzada; considerar transfusão pelo estado clínico, não aguardar hemoglobina.",
+            "Palpar tônus uterino, revisar placenta e explorar lacerações; ativar controle de foco rapidamente."
+          ],
+          "title": "Pacote de resposta nos primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "PA, frequência cardíaca, índice de choque (FC/PAS), diurese, perfusão periférica e perda sanguínea seriada.",
+            "Hemograma, fibrinogênio, TP/INR, TTPa, gasometria/lactato conforme gravidade, eletrólitos, tipagem e prova cruzada; repetir de acordo com evolução.",
+            "Ultrassonografia se suspeita de restos/hemorragia oculta, sem atrasar controle de foco."
+          ],
+          "title": "Avaliação contínua"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Sangramento com útero flácido (atonia)",
+          "then": "Massagem uterina + ocitocina imediata; adicionar uterotônicos conforme resposta e contraindicações; compressão bimanual/tamponamento se refratária enquanto organiza intervenção definitiva."
+        },
+        {
+          "if": "Útero contraído, sangramento persistente",
+          "then": "Buscar lacerações/cervical-vaginal, hematomas, retenção placentária ou coagulopatia; tratar especificamente a causa."
+        },
+        {
+          "if": "Sangramento ativo ou instabilidade apesar de primeira linha",
+          "then": "Acionar protocolo de transfusão maciça conforme critérios do serviço, controle cirúrgico ou intervencionista imediato; não prolongar terapias ineficazes."
+        },
+        {
+          "if": "Controle obtido",
+          "then": "Observação em ambiente monitorizado, avaliação de anemia/coagulopatia, recuperação e seguimento."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Ocitocina é uterotônico inicial; dose e infusão conforme preparo institucional, evitando bólus IV rápido. Considerar misoprostol ou outros uterotônicos conforme resposta, disponibilidade e contraindicações.",
+            "Ácido tranexâmico: 1 g IV ao longo de 10 minutos, o mais cedo possível e até 3 horas do nascimento, como parte do tratamento de HPP. Pode repetir 1 g se sangramento persistir após 30 minutos ou reiniciar em até 24 horas, segundo protocolo.",
+            "Não usar metilergometrina em hipertensão grave/pré-eclâmpsia; avaliar contraindicações específicas de cada uterotônico."
+          ],
+          "title": "Tratamento medicamentoso"
+        },
+        {
+          "items": [
+            "Tratar lacerações/retirada de restos/rotura uterina quando presentes; considerar balão intrauterino, suturas hemostáticas, embolização ou cirurgia definitiva em refratariedade, conforme recursos.",
+            "Cristaloides isotônicos de forma cautelosa e precoce; indicar hemocomponentes e correção de hipofibrinogenemia/coagulopatia em hemorragia importante, orientados pela clínica e exames."
+          ],
+          "title": "Controle de foco e reanimação"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Em cesariana, avaliar sangramento intra-abdominal ou de origem cirúrgica; na placenta prévia/acretismo, convocar equipe experiente.",
+            "Sangramento tardio após alta requer avaliação de infecção, restos ovulares e outras causas.",
+            "Choque pode estar presente antes de a hipotensão surgir; atentar para aumento do índice de choque e sintomas de hipoperfusão."
+          ],
+          "title": "Situações especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Acompanhar em leito com observação rigorosa nas primeiras 24 horas após evento significativo; medir PA, FC, diurese, sangramento e repetir exames conforme gravidade.",
+            "Reavaliar anemia, reposição de ferro/transfusão quando indicada, lesões do canal de parto, apoio psicológico e plano de seguimento no puerpério.",
+            "Registrar perda estimada/quantificada, intervenções, resposta e eventual transfusão; realizar debriefing assistencial."
+          ],
+          "title": "Pós-controle"
+        }
+      ],
+      "red_flags": [
+        "Sangramento não controlado e aumento rápido da perda sanguínea.",
+        "Taquicardia persistente, hipotensão, índice de choque elevado, oligúria ou alteração de consciência.",
+        "Fibrinogênio baixo/coagulopatia, suspeita de rotura uterina ou placenta acreta.",
+        "Falha de uterotônicos/compressão ou necessidade de transfusão maciça."
+      ],
+      "notification": {
+        "text": "Registrar e revisar evento de hemorragia grave; seguir vigilância de morbidade materna grave e protocolos locais de segurança do paciente.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://site.homolog.febrasgo.org.br/fluxograma/procedimento-para-tratar-hemorragia-pos-parto/",
+          "label": "FEBRASGO — Fluxograma de hemorragia pós-parto"
+        },
+        {
+          "url": "https://www.who.int/publications/i/item/9789240115637",
+          "label": "OMS — Diretrizes consolidadas para hemorragia pós-parto (2025)"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK619233/table/ch3.tab33/",
+          "label": "OMS — Pacote de primeira resposta na hemorragia pós-parto (2025)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ocitocina",
+        "ácido tranexâmico",
+        "misoprostol",
+        "maleato de metilergometrina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 187,
+      "slug": "ginecologia-e-obstetricia-distocia-de-ombro",
+      "title": "Distócia de ombro",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Distócia de ombro é emergência obstétrica em que, após saída da cabeça fetal, os ombros não liberam com tração axial suave. Exige manobras sistemáticas e documentação precisa.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Cabeça retraindo contra o períneo.",
+            "Dificuldade de desprendimento dos ombros após saída da cabeça."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Chamar ajuda e registrar horário.",
+            "Evitar pressão fúndica e tração excessiva da cabeça.",
+            "Iniciar McRoberts e pressão suprapúbica."
+          ],
+          "title": "Conduta inicial"
+        },
+        {
+          "items": [
+            "Reconhecer distocia, chamar ajuda, anunciar tempo e interromper puxos/trações excessivas."
+          ],
+          "title": "Primeira conduta"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Diagnóstico é clínico intraparto."
+          ],
+          "title": "Exames"
+        },
+        {
+          "items": [
+            "Diagnóstico é clínico durante expulsivo; não aguardar exame complementar."
+          ],
+          "title": "Investigação adicional"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Critérios de gravidade ou complicação",
+          "then": "Escalonar manejo obstétrico imediatamente."
+        },
+        {
+          "if": "Após saída da cabeça fetal, ombros não desprendem por tração suave",
+          "then": "Reconhecer distocia, chamar ajuda, anunciar tempo e interromper puxos/trações excessivas."
+        },
+        {
+          "if": "Primeira tentativa após reconhecimento",
+          "then": "Executar McRoberts e pressão suprapúbica direcionada; nunca aplicar pressão fúndica."
+        },
+        {
+          "if": "Falha das manobras iniciais",
+          "then": "Progredir para manobras rotacionais internas e extração do braço posterior por profissional treinado."
+        },
+        {
+          "if": "Distocia persiste após sequência estruturada",
+          "then": "Escalonar manobras de resgate e pedir apoio obstétrico/anestésico/neonatal; documentar cronologia."
+        },
+        {
+          "if": "Nascimento concluído",
+          "then": "Avaliar reanimação neonatal, lesão de plexo braquial/fraturas e hemorragia/lacerações maternas."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Se falha, realizar manobras internas de rotação e/ou liberação do braço posterior.",
+            "Considerar posição de quatro apoios quando apropriado.",
+            "Manobras de resgate extremas são raras e de último recurso."
+          ],
+          "title": "Tratamento"
+        },
+        {
+          "items": [
+            "Evitar tração excessiva na cabeça fetal e manobra de Kristeller/pressão no fundo uterino.",
+            "Treino de equipe, comunicação e sequência cronometrada de manobras são essenciais."
+          ],
+          "title": "Conduta e segurança"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade gestacional e condição materno-fetal."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar resposta e organizar seguimento apropriado."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Documentar intervalo cabeça-corpo, manobras, equipe e avaliação neurológica neonatal; informar família."
+          ],
+          "title": "Plano de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Instabilidade hemodinâmica, sangramento importante ou comprometimento fetal.",
+        "Demora na liberação dos ombros, necessidade de manobras avançadas ou comprometimento neonatal."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar diagnóstico, conduta e resposta.",
+        "items": [
+          "Registrar diagnóstico, conduta e resposta."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2017/05/shoulder-dystocia",
+          "label": "ACOG — Practice Bulletin: Shoulder Dystocia"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
