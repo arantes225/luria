@@ -6067,6 +6067,32 @@
     host.innerHTML = cards.join("");
   }
 
+
+  function wireImageCapBackfill() {
+    const button = $("admin-image-cap-backfill");
+    if (!button || button.dataset.wired === "1") return;
+    button.dataset.wired = "1";
+    button.addEventListener("click", async () => {
+      const status = $("admin-image-cap-backfill-status");
+      button.disabled = true;
+      if (status) status.textContent = "Compactando imagens de conteúdo acima de 80 KiB...";
+      try {
+        const { data, error } = await sb.functions.invoke("admin-enforce-image-cap", { body: {} });
+        if (error) throw error;
+        const processed = Number(data?.processed || 0);
+        const skipped = Number(data?.skipped || 0);
+        const failures = Array.isArray(data?.failures) ? data.failures : [];
+        if (status) status.textContent = processed + " imagem(ns) atualizadas · " + skipped + " já dentro do limite" + (failures.length ? " · " + failures.length + " falha(s): " + failures.slice(0,3).map(item => item.path).join(", ") : "");
+        await loadLowResolutionImageQueue();
+      } catch (error) {
+        console.error("Falha ao aplicar limite às imagens existentes:", error);
+        if (status) status.textContent = "Não foi possível concluir a compactação: " + (error?.message || "erro");
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+
   function wireLowResolutionImageQueue() {
     const host = $("admin-low-resolution-list");
     if (!host || host.dataset.wired === "1") return;
@@ -6105,6 +6131,7 @@
     }
 
     wireLowResolutionImageQueue();
+    wireImageCapBackfill();
     loadLowResolutionImageQueue().catch(console.error);
 
     wirePinGate();
