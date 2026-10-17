@@ -74,4 +74,29 @@
     ]
   });
   psu.criteria.forEach((row,index)=>{row.number=['1.1','1.2','2','3','4','5','6','7','8','9','10','11'][index];});
+  const usprp=window.LuriaCurriculoRubricas.find(row=>row.institution==='USP-RP');
+  Object.assign(usprp,{
+    id:'usp-rp-2027-direto-v20260922', title:'USP-RP / HCFMRP · 2027 · Acesso direto', edition:'2027',
+    status:'reviewed',max:10,checkedAt:'2026-10-17',
+    source:'https://extranet.hcrp.usp.br/novorh/arquivos/3650/E3650239202610417.pdf',
+    listing:'https://extranet.hcrp.usp.br/novorh/ListaArquivos.aspx?area=0&edital=3650&s=3',
+    scope:'Acesso direto do HCFMRP-USP. Item 5 do edital 2027; a banca pode avaliar pertinência e qualidade das atividades, respeitando os tetos de cada bloco.',
+    criteria:[
+      criterion('rp-hospital','Hospital universitário da instituição de origem',.5,14,'Instituição de origem com hospital universitário próprio. Exige comprovação emitida pela instituição.',[part('rp-hospital','Hospital universitário próprio',.5)]),
+      {...criterion('rp-pos','Pós-graduação da instituição de origem',.5,14,'Programas de pós-graduação na área da saúde credenciados pela CAPES. Selecione apenas uma faixa.',[part('rp-pos5','Cinco ou mais programas',.5),part('rp-pos24','Dois a quatro programas',.3),part('rp-pos1','Um programa',.2)]),exclusive:true},
+      {...criterion('rp-enamed','Desempenho institucional no ENAMED',.5,14,'Conceito da instituição no último ENAMED. Selecione somente um conceito.',[part('rp-e1','Conceito 1',.1),part('rp-e2','Conceito 2',.2),part('rp-e3','Conceito 3',.3),part('rp-e4','Conceito 4',.4),part('rp-e5','Conceito 5',.5)]),exclusive:true},
+      criterion('rp-assistencia','Atividades assistenciais extracurriculares',2,14,'Liga: pelo menos 1 ano letivo consecutivo e 80 horas. Voluntariado social: últimos 7 anos e 120 horas por atividade.',[part('rp-liga','Ano letivo de liga estudantil elegível',.5,2),part('rp-voluntario','Bloco de 120 horas de trabalho voluntário social elegível',.5,2)]),
+      criterion('rp-ciencia','Atividades científicas',3,15,'Artigo completo, iniciação científica e apresentações. O teto do bloco é 3 pontos; não contar o mesmo período ou trabalho duas vezes.',[part('rp-artigo','Artigo completo elegível',1,3),part('rp-ic-sem','Ano de iniciação científica sem bolsa',.5,2),part('rp-ic-com','Ano de iniciação científica com bolsa',.7,2),part('rp-oral','Apresentação oral como primeiro autor',.5,2),part('rp-poster-reg','Pôster regional',.1,6),part('rp-poster-est','Pôster estadual',.15,4),part('rp-poster-nac','Pôster nacional',.2,3),part('rp-poster-int','Pôster internacional',.3,2)]),
+      criterion('rp-ensino','Ensino extracurricular',1.5,15,'Monitoria com bolsa, docência em preparação para vestibular, organização de eventos científicos, provas avaliativas não obrigatórias e prêmios acadêmicos. O teto do bloco é 1,5 ponto.',[part('rp-monitoria','Semestre de monitoria com bolsa',.25,4),part('rp-docencia','Ano letivo de docência elegível',.5,2),part('rp-organiza','Evento científico organizado',.3,2),part('rp-prova','Prova avaliativa elegível',.5,2),part('rp-premio','Prêmio acadêmico institucional',.2,2)]),
+      criterion('rp-estudantes','Atividades estudantis',2,16,'Cargos em entidades estudantis e representação discente, com pelo menos 1 ano letivo consecutivo e comprovação institucional. O teto do bloco é 2 pontos.',[part('rp-entidade','Ano letivo em cargo estudantil elegível',.5,2),part('rp-colegiado','Ano em colegiado oficial',.5,2),part('rp-comissao','Ano em comissão oficial de avaliação ou reforma curricular',.5,2)])
+    ],
+    groups:[
+      {id:'formacao',title:'Histórico acadêmico',tone:'violet',criteria:['rp-hospital','rp-pos','rp-enamed']},
+      {id:'academicas',title:'Assistência extracurricular',tone:'blue',criteria:['rp-assistencia']},
+      {id:'pesquisa',title:'Atividades científicas',tone:'amber',criteria:['rp-ciencia']},
+      {id:'ensino',title:'Ensino extracurricular',tone:'teal',criteria:['rp-ensino']},
+      {id:'estudantis',title:'Atividades estudantis',tone:'rose',criteria:['rp-estudantes']}
+    ]
+  });
+  usprp.criteria.find(row=>row.id==='rp-enamed').exclusive=true;
 })();

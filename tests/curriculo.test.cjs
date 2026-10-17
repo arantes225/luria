@@ -47,6 +47,14 @@ test('PSU-MG preserves the official 13-point scale and exclusive academic bands'
   assert.equal(core.score(psu,{'mg-n1a':1,'mg-n1b':1,'mg-n2a':1}).total,3);
   assert.equal(core.score(psu,{'mg-liga1':1,'mg-repr':1}).total,1.1);
 });
+test('USP-RP uses the official 10-point curriculum matrix and block ceilings',()=>{
+  const rp=sandbox.window.LuriaCurriculoRubricas.find(row=>row.institution==='USP-RP');
+  assert.equal(rp.status,'reviewed');
+  assert.match(rp.source,/E3650239202610417\.pdf/);
+  const answers={};rp.criteria.forEach(row=>row.parts.forEach(part=>{answers[part.id]=999;}));
+  assert.equal(core.score(rp,answers).subtotal,10);
+  assert.equal(core.score(rp,{['rp-hospital']:1,['rp-pos5']:1,['rp-pos24']:1,['rp-e5']:1}).subtotal,1.5);
+});
 test('Lattes parses supported records, removes duplicates, requires review and rejects unsafe XML', () => {
   const { DOMParser } = new JSDOM('').window;
   const xml = '<CURRICULO-VITAE><ARTIGO-PUBLICADO><DADOS-BASICOS-DO-ARTIGO TITULO-DO-ARTIGO="Estudo clínico" ANO-DO-ARTIGO="2025"/></ARTIGO-PUBLICADO><ARTIGO-PUBLICADO><DADOS-BASICOS-DO-ARTIGO TITULO-DO-ARTIGO="Estudo clínico" ANO-DO-ARTIGO="2025"/></ARTIGO-PUBLICADO></CURRICULO-VITAE>';
@@ -96,7 +104,7 @@ test('rubric changes persist and malformed saved answers recover', () => {
 test('pending institutions never display invented grades and verified coverage is explicit',()=>{
   const w=boot();
   assert.equal(w.document.querySelectorAll('.cv-institution').length,15);
-  assert.match(w.document.getElementById('cv-coverage').textContent,/2 editais conferidos/);
+  assert.match(w.document.getElementById('cv-coverage').textContent,/3 editais conferidos/);
   const option=[...w.document.getElementById('cv-exam').options].find(option=>option.textContent.startsWith('UNIFESP'));
   w.document.getElementById('cv-exam').value=option.value;
   w.document.getElementById('cv-exam').dispatchEvent(new w.Event('change'));
