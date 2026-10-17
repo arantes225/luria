@@ -125,3 +125,46 @@ create policy luria_admin_read_queued_low_resolution_images on storage.objects
 
 update storage.buckets set file_size_limit = 81920
  where id = 'apostila-media';
+
+
+create or replace function public.admin_queue_low_resolution_image(
+  p_bucket_id text,
+  p_object_name text,
+  p_width integer,
+  p_height integer,
+  p_size_bytes bigint,
+  p_source_page text
+) returns jsonb
+language plpgsql
+security definer
+set search_path = public, storage
+as $$
+declare
+  v_object storage.objects%rowtype;
+begin
+  if not public.is_admin() then raise exception 'Acesso administrativo necessário'; end if;
+  if p_bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
+     or p_width is null or p_height is null or least(p_width,p_height) >= 600
+     or p_size_bytes is null or p_size_bytes <= 0 or p_size_bytes > 81920 then
+    raise exception 'Dados de imagem inválidos';
+  end if;
+  select * into v_object from storage.objects
+   where bucket_id = p_bucket_id and name = p_object_name;
+  if not found or coalesce(v_object.metadata->>'mimetype','') not like 'image/%'
+     or coalesce(nullif(v_object.metadata->>'size','')::bigint,0) <> p_size_bytes then
+    raise exception 'Objeto ou metadados da imagem não conferem';
+  end if;
+  insert into public.low_resolution_image_review_queue
+    (bucket_id, object_name, owner_id, source_page, width, height, size_bytes, review_status, reviewed_at, reviewed_by)
+  values
+    (p_bucket_id, p_object_name, coalesce(v_object.owner_id::uuid,auth.uid()),
+     left(coalesce(p_source_page,'/admin/image-cap-backfill'),160),
+     p_width,p_height,p_size_bytes,'pending',null,null)
+  on conflict (bucket_id,object_name) do update
+    set width=excluded.width,height=excluded.height,size_bytes=excluded.size_bytes,
+        review_status='pending',created_at=now(),reviewed_at=null,reviewed_by=null;
+  return jsonb_build_object('queued',true,'review_status','pending');
+end;
+$$;
+revoke all on function public.admin_queue_low_resolution_image(text,text,integer,integer,bigint,text) from public, anon;
+grant execute on function public.admin_queue_low_resolution_image(text,text,integer,integer,bigint,text) to authenticated;
