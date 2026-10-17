@@ -157,23 +157,38 @@
   gap: 8px;
   min-height: 48px;
   padding: 12px 24px;
-  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
-  color: #ffffff !important;
-  border: 1px solid transparent !important;
+  background: #ffffff !important;
+  color: var(--color-primary, #155dfc) !important;
+  border: 1px solid var(--color-border-interactive, #c8dcfa) !important;
   border-radius: 12px;
   font-size: 13.5px;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
-    filter 0.18s ease;
+    background 0.18s ease,
+    color 0.18s ease;
 }
 .luria-game .g-button:hover:not(:disabled) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
   transform: translateY(-2px);
-  filter: brightness(1.08);
   box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 38%, transparent);
+}
+[data-theme="dark"] .luria-game .g-button,
+[data-ui-appearance="dark"] .luria-game .g-button {
+  background: var(--color-surface, #151e2c) !important;
+  color: var(--color-primary-text, #93bbf0) !important;
+  border-color: var(--color-border, #243347) !important;
+}
+[data-theme="dark"] .luria-game .g-button:hover:not(:disabled),
+[data-ui-appearance="dark"] .luria-game .g-button:hover:not(:disabled) {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
 }
 .luria-game .g-secondary {
   background: var(--color-surface) !important;
@@ -896,24 +911,40 @@ body[data-page="jogos"] .games-link {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%));
-  border: 1px solid transparent;
-  color: #ffffff;
+  background: #ffffff;
+  border: 1px solid var(--color-border-interactive, #c8dcfa);
+  color: var(--color-primary, #155dfc);
   padding: 12px 20px;
   border-radius: 12px;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 700;
   line-height: 1.2;
   min-height: 44px;
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   transition: all 180ms ease;
   margin-top: auto;
 }
 
 body[data-page="jogos"] .games-link:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
   transform: translateY(-2px);
-  filter: brightness(1.08);
   box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 38%, transparent);
+}
+
+[data-theme="dark"] body[data-page="jogos"] .games-link,
+[data-ui-appearance="dark"] body[data-page="jogos"] .games-link {
+  background: var(--color-surface, #151e2c);
+  color: var(--color-primary-text, #93bbf0);
+  border-color: var(--color-border, #243347);
+}
+
+[data-theme="dark"] body[data-page="jogos"] .games-link:hover,
+[data-ui-appearance="dark"] body[data-page="jogos"] .games-link:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
 }
 
 body[data-page="jogos"] .games-link:focus-visible {

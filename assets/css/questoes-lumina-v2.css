@@ -550,8 +550,14 @@ body[data-page="questoes"] .qs-search-input:focus {
 
 body[data-page="questoes"] .qs-home-my-lists-content {
   display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  overscroll-behavior-x: contain !important;
+  gap: 12px !important;
+  padding: 4px 4px 10px 0 !important;
+  scrollbar-width: thin !important;
 }
 
 /* List Card inside Minhas Listas */

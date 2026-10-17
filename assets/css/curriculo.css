@@ -575,26 +575,158 @@
   max-width: 100%;
 }
 
-/* Hub */
-.cv-hub {
+/* Hub 2x2 Grid — Aplicar Home */
+.cv-grid-2x2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  width: 100%;
 }
 
-.cv-hub .cv-card {
-  text-decoration: none;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+.cv-hub-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 24px 26px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--ui-radius-card, 18px);
+  box-shadow: var(--ui-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
-.cv-hub .cv-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+.cv-hub-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(24, 72, 136, 0.1);
   border-color: var(--color-border-interactive);
 }
 
-.cv-hub h2 {
+.cv-hub-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.cv-hub-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--color-primary-subtle, #e6f0fd);
+  color: var(--color-primary-text, #155dfc);
+  border: 1px solid var(--color-border, #d5e5fa);
+}
+
+.cv-hub-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cv-hub-badge {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-text, #155dfc);
+  background: var(--color-primary-subtle, #f0f6ff);
+  border: 1px solid color-mix(in srgb, var(--color-primary, #155dfc) 18%, transparent);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.cv-hub-card-body {
+  margin-bottom: 20px;
+  flex: 1 1 auto;
+}
+
+.cv-hub-card-body h2 {
+  font-size: 20px;
+  font-weight: 750;
   color: var(--color-text-primary);
+  letter-spacing: -0.025em;
+  margin: 0 0 8px;
+}
+
+.cv-hub-card-body p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.cv-hub-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 20px;
+  border-radius: 12px;
+  background: #ffffff !important;
+  color: var(--color-primary, #155dfc) !important;
+  border: 1px solid var(--color-border-interactive, #c8dcfa) !important;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 180ms ease;
+  margin-top: auto;
+}
+
+.cv-hub-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 180ms ease;
+}
+
+.cv-hub-btn:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary, #155dfc) 35%, transparent) !important;
+}
+
+.cv-hub-btn:hover svg {
+  transform: translateX(3px);
+}
+
+[data-theme="dark"] .cv-hub-btn,
+[data-ui-appearance="dark"] .cv-hub-btn {
+  background: var(--color-surface, #151e2c) !important;
+  color: var(--color-primary-text, #93bbf0) !important;
+  border-color: var(--color-border, #243347) !important;
+}
+
+[data-theme="dark"] .cv-hub-btn:hover,
+[data-ui-appearance="dark"] .cv-hub-btn:hover {
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+@media (max-width: 860px) {
+  .cv-grid-2x2 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 /* Tema Escuro */

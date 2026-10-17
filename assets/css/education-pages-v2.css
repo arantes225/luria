@@ -51,16 +51,23 @@
   body[data-ui="v2"][data-page="aprender"] .alex-attach {background:var(--color-surface);color:var(--color-primary-text);}
   body[data-ui="v2"][data-page="aprender"] .alex-attach svg {width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;}
   body[data-ui="v2"][data-page="aprender"] .alex-send {background:var(--ui-pill-gradient,var(--color-primary));color:#ffffff!important;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent);}
-  body[data-ui="v2"][data-page="aprender"] .alex-entry-actions {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;font-size:.8125rem;}
-  body[data-ui="v2"][data-page="aprender"] .alex-file-name {color:var(--color-text-secondary);overflow-wrap:anywhere;}
+  body[data-ui="v2"][data-page="aprender"] .alex-entry-actions {display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:.5rem!important;width:100%!important;margin-top:.4rem!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {display:flex!important;align-items:center!important;justify-content:center!important;gap:.625rem!important;width:100%!important;min-height:48px!important;padding:.75rem 1.25rem!important;background:#ffffff!important;color:var(--color-primary,#155dfc)!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;border-radius:12px!important;font-size:.9375rem!important;font-weight:700!important;text-decoration:none!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;transition:all 180ms ease!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;transform:translateY(-2px)!important;box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary) 35%,transparent)!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring svg {width:18px!important;height:18px!important;stroke:currentColor!important;stroke-width:2!important;fill:none!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-file-name {color:var(--color-text-secondary)!important;font-size:.8125rem!important;text-align:center!important;overflow-wrap:anywhere!important;}
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .learn-tools {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:stretch;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card {position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:start;gap:.5rem;padding:1rem 1.25rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--ui-radius-card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:var(--ui-shadow);transition:transform 220ms ease,box-shadow 220ms ease,border-color 220ms ease,background-color 220ms ease;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover {transform:translateY(-3px);box-shadow:0 12px 32px rgba(24,72,136,0.12);border-color:var(--color-border-interactive);background:var(--color-surface-elevated);}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card :is(h3,p) {margin:0;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card h3 {font-size:1.05rem;font-weight:650;color:var(--color-text-primary);}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card p {color:var(--color-text-secondary);font-size:.8125rem;line-height:1.45;}
-  body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta {display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:.4rem 1.1rem;margin-top:auto;border-radius:12px;background:var(--color-surface-elevated);border:1px solid var(--color-border-interactive);color:var(--color-text-primary);font-size:.8125rem;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 180ms ease;}
-  body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,var(--color-primary));color:#ffffff!important;border-color:transparent;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent);transform:translateY(-1px);}
+  body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta {display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:.4rem 1.1rem;margin-top:auto;border-radius:12px;background:#ffffff!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;color:var(--color-primary,#155dfc)!important;font-size:.8125rem;font-weight:650;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 180ms ease;}
+  body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent)!important;transform:translateY(-1px)!important;}
+  :root[data-theme="dark"] body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
+  :root[data-theme="dark"] body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover .tool-cta, :root[data-theme="dark"] body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-icon, body[data-ui="v2"][data-page="consolidar"] .learn-icon {display:grid;place-items:center;width:42px;height:42px;flex:none;border:1px solid var(--color-border);border-radius:12px;background:var(--color-primary-subtle);color:var(--color-primary-text);}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-icon svg, body[data-ui="v2"][data-page="consolidar"] .learn-icon svg {width:24px;height:24px;stroke:currentColor;stroke-width:1.8;fill:none;}
   body[data-ui="v2"][data-page="consolidar"] .learn-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;gap:1.25rem!important;align-items:stretch!important;height:auto!important;min-height:0!important;overflow:visible!important;}
@@ -71,10 +78,52 @@
   body[data-ui="v2"][data-page="consolidar"] .learn-card :is(h2,p,.learn-cta) {grid-column:2;margin:0!important;}
   body[data-ui="v2"][data-page="consolidar"] .learn-card h2 {font-size:var(--ui-card-title);font-weight:650;color:var(--color-text-primary);}
   body[data-ui="v2"][data-page="consolidar"] .learn-card p {color:var(--color-text-secondary);font-size:.875rem;line-height:1.5;}
-  body[data-ui="v2"][data-page="consolidar"] .learn-cta {display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:.55rem 1.35rem;border-radius:var(--ui-radius-pill, 999px);background:var(--color-surface-elevated);border:1px solid var(--color-border-interactive);color:var(--color-text-primary);font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all 180ms ease;justify-self:start;}
-  body[data-ui="v2"][data-page="consolidar"] .learn-card--hero .learn-cta {background:var(--ui-pill-gradient,var(--color-primary));color:var(--color-primary-foreground);border-color:transparent;box-shadow:0 4px 16px color-mix(in srgb,var(--color-primary) 32%,transparent);}
-  body[data-ui="v2"][data-page="consolidar"] .learn-card--hero:hover .learn-cta, body[data-ui="v2"][data-page="consolidar"] .learn-card--hero .learn-cta:hover {transform:translateY(-2px);box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary) 42%,transparent);filter:brightness(1.05);}
-  body[data-ui="v2"][data-page="consolidar"] .learn-card--secondary:hover .learn-cta, body[data-ui="v2"][data-page="consolidar"] .learn-card--secondary .learn-cta:hover {background:var(--ui-pill-gradient,var(--color-primary));color:var(--color-primary-foreground);border-color:transparent;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent);transform:translateY(-1px);}
+  body[data-ui="v2"][data-page="consolidar"] .learn-cta {display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:40px!important;padding:.55rem 1.35rem!important;border-radius:var(--ui-radius-pill, 999px)!important;background:#ffffff!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;color:var(--color-primary,#155dfc)!important;font-size:.875rem!important;font-weight:700!important;text-decoration:none!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;transition:all 180ms ease!important;justify-self:start!important;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta, body[data-ui="v2"][data-page="consolidar"] .learn-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary) 35%,transparent)!important;transform:translateY(-2px)!important;}
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-cta {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-card:hover .learn-cta, :root[data-theme="dark"] body[data-ui="v2"][data-page="consolidar"] .learn-cta:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;}
+
+  /* Uniformidade de botões: Cronograma e Estatísticas (Branco c/ escrita azul -> Azul c/ escrita branca no hover) */
+  body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button),
+  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab) {
+    background: #ffffff !important;
+    color: var(--color-primary, #155dfc) !important;
+    border: 1px solid var(--color-border-interactive, #c8dcfa) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+    font-weight: 700 !important;
+    transition: all 180ms ease !important;
+  }
+
+  body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button):hover,
+  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab):hover {
+    background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--color-primary, #155dfc) 35%, transparent) !important;
+  }
+
+  body[data-ui="v2"][data-page="estatisticas"] :is(.stats-range button.active, .stats-tab.active),
+  body[data-ui="v2"][data-page="cronograma"] :is(.planner-view-toggle button.active, .agenda-activity-view-switch button.active) {
+    background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary, #155dfc) 30%, transparent) !important;
+  }
+
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button),
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab) {
+    background: var(--color-surface, #151e2c) !important;
+    color: var(--color-primary-text, #93bbf0) !important;
+    border-color: var(--color-border, #243347) !important;
+  }
+
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="cronograma"] :is(.deck-distribute-button, .button, .cronograma-action, .quick-activity-actions button, .drop-file .button):hover,
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="estatisticas"] :is(.stats-link, .stats-range button, .stats-tab):hover {
+    background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+  }
 
   /* Hall cards: Clean typography without background SVG drawings */
   :is(.tool-card,.learn-card) > :is(.tool-icon,.learn-icon,h2,h3,p,.tool-cta,.learn-cta) {position:relative!important;z-index:2!important;}

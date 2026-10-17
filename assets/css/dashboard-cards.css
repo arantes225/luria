@@ -8,7 +8,8 @@
     & .dashboard-loading p {margin:0!important;line-height:1.5!important;}
     & .dashboard-loading a {color:var(--color-primary-text)!important;}
     & .dashboard-loading[hidden] {display:none!important;}
-    &[data-dashboard-view="cards"] :is(.ui-page-header,#dashboard-alternative,#ui-review-summary,#dashboard-fallback-shell) {display:none!important;}
+    &[data-dashboard-view="cards"] :is(.ui-page-header,#ui-review-summary,#dashboard-fallback-shell) {display:none!important;}
+    &[data-dashboard-view="cards"] #dashboard-alternative {display:block!important;margin-bottom:2.25rem!important;}
     & .dashboard-apps {display:block!important;margin:0!important;padding:0!important;}
     & .dashboard-apps[hidden] {display:none!important;}
     & .dashboard-apps-heading {margin:0 0 1.5rem!important;padding:0!important;}

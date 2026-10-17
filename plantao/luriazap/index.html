@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
   <link rel="stylesheet" href="/assets/css/plantao.css?v=20261013-consolidated1">
 
   <link rel="stylesheet" href="/assets/css/luriazap-ui-v2.css?v=1">
@@ -67,10 +68,11 @@
           <span>Voltar para Aprender</span>
         </a>
 
-        <section class="luriazap-heading" aria-labelledby="luriazap-heading-title">
-          <span class="luriazap-eyebrow">Prática em conversa</span>
-          <h1 id="luriazap-heading-title">LuriaZap</h1>
-          <p>Explore interconsultas e pratique suas respostas.</p>
+        <section class="luria-page-spotlight" aria-label="LuriaZap">
+          <div class="luria-page-spotlight-copy">
+            <strong>LuriaZap</strong>
+            <small class="luria-page-spotlight-helper">Prática médica simulada em formato de conversa interativa.</small>
+          </div>
         </section>
 
         <section id="plantao-library" class="plantao-library">
@@ -142,16 +144,35 @@
               <button id="plantao-phone-page-back" class="plantao-phone-page-back" type="button" aria-label="Voltar para o Plantão">← Voltar</button>
               <div class="plantao-phone-station">
               <div class="plantao-phone-device" aria-label="Telefone de interconsultas">
-                <div class="plantao-phone-notch" aria-hidden="true"></div>
-                <div class="plantao-phone-statusbar" aria-hidden="true">
-                  <strong id="plantao-phone-status-time">--:--</strong>
-                  <div class="plantao-phone-status-icons">
-                    <span class="plantao-phone-signal"><i></i><i></i><i></i><i></i></span>
-                    <span class="plantao-phone-wifi"><i></i></span>
-                    <span class="plantao-phone-battery"><i></i></span>
-                  </div>
-                </div>
                 <div class="plantao-phone-screen">
+                  <div class="plantao-phone-statusbar" aria-hidden="true">
+                    <strong id="plantao-phone-status-time">9:41</strong>
+                    <div class="plantao-phone-notch" aria-hidden="true">
+                      <span class="plantao-island-camera" aria-hidden="true"></span>
+                    </div>
+                    <div class="plantao-phone-status-icons">
+                      <span class="plantao-phone-signal" title="Sinal celular">
+                        <svg viewBox="0 0 18 14" width="16" height="12" fill="currentColor" aria-hidden="true">
+                          <rect x="0" y="9" width="3" height="5" rx="1"/>
+                          <rect x="4.5" y="6" width="3" height="8" rx="1"/>
+                          <rect x="9" y="3" width="3" height="11" rx="1"/>
+                          <rect x="13.5" y="0" width="3" height="14" rx="1"/>
+                        </svg>
+                      </span>
+                      <span class="plantao-phone-wifi" title="Wi-Fi">
+                        <svg viewBox="0 0 24 24" width="16" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                        </svg>
+                      </span>
+                      <span class="plantao-phone-battery" title="Bateria">
+                        <svg viewBox="0 0 26 14" width="22" height="12" fill="currentColor" aria-hidden="true">
+                          <rect x="0.75" y="0.75" width="21" height="12.5" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                          <rect x="2.5" y="2.5" width="15" height="9" rx="2" fill="currentColor"/>
+                          <path d="M23.5 4.5v5a1.5 1.5 0 0 0 1.5-1.5v-2a1.5 1.5 0 0 0-1.5-1.5z"/>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
                   <section id="plantao-phone-inbox" class="plantao-phone-inbox">
                     <header class="plantao-phone-chat-head plantao-phone-inbox-head">
                       <button id="plantao-phone-exit" type="button" aria-label="Voltar para o Plantão">‹</button>
@@ -194,6 +215,7 @@
                       <button id="plantao-phone-compose-send" type="submit" aria-label="Enviar mensagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v14"/></svg></button>
                     </form>
                   </section>
+                  <div class="plantao-phone-home-indicator" aria-hidden="true"></div>
                 </div>
               </div>
             </div>

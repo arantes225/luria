@@ -9078,71 +9078,67 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD 1 — LOWER CARDS BOTTOM BORDER v65 — 2026-10-05 */
 @media (min-width:981px){
-  /* Reduz em mais 20px a altura vertical de Progresso por área e Pulo do Gato. */
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
-    grid-template-rows:minmax(0,1fr) 120px!important;
+    grid-template-rows: auto auto !important;
+    gap: 20px !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
-    height:120px!important;
-    min-height:120px!important;
-    max-height:120px!important;
-    margin-top:-14px!important;
-    margin-bottom:6px!important;
-    align-self:start!important;
-    overflow:hidden!important;
-    box-sizing:border-box!important;
+    height: auto !important;
+    min-height: 200px !important;
+    max-height: none !important;
+    margin: 0 !important;
+    align-self: stretch !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
-    padding:9px 14px 10px!important;
+    padding: 18px 20px !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
-    margin-bottom:5px!important;
+    margin-bottom: 12px !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
-    min-height:17px!important;
-    margin:1px 0!important;
+    min-height: 24px !important;
+    margin: 4px 0 !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
-    padding:9px 14px 10px!important;
+    padding: 18px 20px !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
-    height:70px!important;
-    min-height:70px!important;
-    max-height:70px!important;
+    height: auto !important;
+    min-height: 100px !important;
+    max-height: none !important;
   }
 }
 
-
-/* DASHBOARD 1 — LEFT PAIR BOTTOM ALIGN v64 — 2026-10-05 */
+/* DASHBOARD 1 — COMFORTABLE AND HARMONIOUS LAYOUT */
 @media (min-width:981px){
-  /* Correção visual medida pelo alinhamento com a base da Ofensiva:
-     Atividades do dia + Estudar agora estavam descendo além da coluna da direita. */
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
-    height:calc(100% - 18px)!important;
-    min-height:0!important;
-    max-height:calc(100% - 18px)!important;
-    align-self:start!important;
-    overflow:hidden!important;
-    box-sizing:border-box!important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    align-self: stretch !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
-    height:100%!important;
-    min-height:0!important;
-    max-height:100%!important;
-    align-self:stretch!important;
-    overflow:hidden!important;
-    box-sizing:border-box!important;
+    height: auto !important;
+    min-height: 220px !important;
+    max-height: none !important;
+    align-self: stretch !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
   }
 
   /* Mantém a base da coluna da direita como referência de alinhamento. */
@@ -10315,11 +10311,11 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     position:relative!important;
     inset:auto!important;
     width:100%!important;
-    height:118px!important;
-    min-height:118px!important;
-    max-height:118px!important;
+    height:auto!important;
+    min-height:200px!important;
+    max-height:none!important;
     margin:0!important;
-    padding-top:8px!important;
+    padding:18px 20px!important;
     transform:none!important;
     translate:none!important;
     align-self:stretch!important;
@@ -10399,9 +10395,75 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100%!important;min-height:0!important;max-height:100%!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding:16px 18px 18px!important;box-sizing:border-box!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative{display:grid!important;grid-template-rows:138px minmax(0,1fr)!important;gap:8px!important;flex:1!important;min-height:0!important;height:100%!important;max-height:100%!important;padding:0!important;margin:0!important;overflow:hidden!important;box-sizing:border-box!important;}
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .luria-dashboard-spotlight{height:138px!important;min-height:138px!important;max-height:138px!important;margin:0!important;box-sizing:border-box!important;}
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .dl-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:minmax(0,1.2fr) minmax(0,1fr)!important;gap:8px!important;height:100%!important;min-height:0!important;max-height:100%!important;margin:0!important;padding:0!important;align-content:stretch!important;overflow:hidden!important;}
+html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 !important;
+  margin: 0 0 24px !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight {
+  height: auto !important;
+  min-height: var(--luria-page-card-height, 74px) !important;
+  max-height: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .dl-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-rows: auto auto !important;
+  gap: 18px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative .dl-grid .dl-card {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 220px !important;
+  max-height: none !important;
+  padding: 22px 24px !important;
+  margin: 0 !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--ui-radius-card, 18px) !important;
+  background: var(--color-surface) !important;
+  box-shadow: var(--ui-shadow) !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 1100px) {
+  html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .dl-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .dl-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+html body[data-page="dashboard"]:is([data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative{display:grid!important;grid-template-rows:138px minmax(0,1fr)!important;gap:8px!important;flex:1!important;min-height:0!important;height:100%!important;max-height:100%!important;padding:0!important;margin:0!important;overflow:hidden!important;box-sizing:border-box!important;}
+html body[data-page="dashboard"]:is([data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .luria-dashboard-spotlight{height:138px!important;min-height:138px!important;max-height:138px!important;margin:0!important;box-sizing:border-box!important;}
+html body[data-page="dashboard"]:is([data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .dl-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:minmax(0,1.2fr) minmax(0,1fr)!important;gap:8px!important;height:100%!important;min-height:0!important;max-height:100%!important;margin:0!important;padding:0!important;align-content:stretch!important;overflow:hidden!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative .dl-agenda-study-pair-1,html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative .dl-side{display:contents!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative .dl-grid .dl-card{position:relative!important;inset:auto!important;transform:none!important;translate:none!important;grid-column:auto!important;grid-row:auto!important;display:flex!important;flex-direction:column!important;gap:0!important;width:100%!important;height:100%!important;block-size:100%!important;min-height:0!important;min-block-size:0!important;max-height:100%!important;max-block-size:100%!important;padding:12px!important;margin:0!important;overflow:auto!important;box-sizing:border-box!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative .dl-layout-1 .dl-agenda-large{grid-column:1!important;grid-row:1!important;}

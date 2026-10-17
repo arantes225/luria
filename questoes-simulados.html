@@ -2352,17 +2352,27 @@ body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily {
 
   body[data-page="questoes"] .qs-home-my-lists-content {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-x: contain !important;
+    gap: 12px !important;
     height: auto !important;
     max-height: none !important;
+    padding: 4px 4px 10px 0 !important;
+    scrollbar-width: thin !important;
   }
 
   body[data-page="questoes"] .qs-home-user-card {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 10px !important;
-    height: auto !important;
-    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex: 0 0 240px !important;
+    min-width: 240px !important;
+    max-width: 250px !important;
+    height: 140px !important;
+    min-height: 140px !important;
   }
 
   body[data-page="questoes"] .qs-home-actions-compact {

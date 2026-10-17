@@ -27,6 +27,13 @@
       return;
     }
     body.dataset.dashboardView = selected;
+    const alternative = document.getElementById("dashboard-alternative");
+    if (alternative && panel) {
+      if (selected === "cards") {
+        panel.before(alternative);
+        alternative.hidden = false;
+      }
+    }
     panel.hidden = selected !== "cards";
     if (loading) loading.hidden = true;
     main?.setAttribute("aria-busy", "false");
