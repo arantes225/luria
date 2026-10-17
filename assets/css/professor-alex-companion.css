@@ -7,6 +7,7 @@
   font: 14px/1.5 system-ui, -apple-system, sans-serif;
   box-sizing: border-box;
   pointer-events: none;
+  opacity: 1 !important;
 }
 * { box-sizing: border-box; }
 button, a { font: inherit; }
@@ -197,8 +198,8 @@ professor-alex-mascot {
   width: 100%;
   min-height: 36px;
   border-radius: 12px !important;
-  border: 1px solid rgba(234, 88, 12, 0.25) !important;
-  background: rgba(234, 88, 12, 0.08) !important;
+  border: 1px solid #fed7aa !important;
+  background: #fff7ed !important;
   color: #c2410c !important;
   font-size: 11.5px !important;
   font-weight: 750 !important;
@@ -206,7 +207,7 @@ professor-alex-mascot {
   transition: transform 0.15s ease, background 0.15s ease !important;
 }
 .help .recharge-btn:hover {
-  background: rgba(234, 88, 12, 0.15) !important;
+  background: #ffedd5 !important;
   transform: translateY(-1px);
 }
 .help .minimize {
@@ -231,6 +232,9 @@ professor-alex-mascot {
   .robot { height: 96px; }
 }
 
+:host([data-theme="dark"]) .help,
+:host([data-ui-appearance="dark"]) .help,
+.help.dark-theme,
 :host-context([data-theme="dark"]) .help,
 :host-context([data-ui-appearance="dark"]) .help {
   background: #0f1c2e !important;
@@ -242,16 +246,25 @@ professor-alex-mascot {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
+:host([data-theme="dark"]) .help h2,
+:host([data-ui-appearance="dark"]) .help h2,
+.help.dark-theme h2,
 :host-context([data-theme="dark"]) .help h2,
 :host-context([data-ui-appearance="dark"]) .help h2 {
   color: #f8fafc !important;
 }
 
+:host([data-theme="dark"]) .help p,
+:host([data-ui-appearance="dark"]) .help p,
+.help.dark-theme p,
 :host-context([data-theme="dark"]) .help p,
 :host-context([data-ui-appearance="dark"]) .help p {
   color: #94a3b8 !important;
 }
 
+:host([data-theme="dark"]) .alex-quick-input,
+:host([data-ui-appearance="dark"]) .alex-quick-input,
+.help.dark-theme .alex-quick-input,
 :host-context([data-theme="dark"]) .alex-quick-input,
 :host-context([data-ui-appearance="dark"]) .alex-quick-input {
   background: #18263a !important;
@@ -259,10 +272,22 @@ professor-alex-mascot {
   color: #f8fafc !important;
 }
 
+:host([data-theme="dark"]) .help .minimize,
+:host([data-ui-appearance="dark"]) .help .minimize,
+.help.dark-theme .minimize,
 :host-context([data-theme="dark"]) .help .minimize,
 :host-context([data-ui-appearance="dark"]) .help .minimize {
   background: #18263a !important;
   border-color: #2c3f59 !important;
   color: #94a3b8 !important;
 }
+
+:host([data-theme="dark"]) .help .recharge-btn,
+:host([data-ui-appearance="dark"]) .help .recharge-btn,
+.help.dark-theme .recharge-btn {
+  background: #2c1e17 !important;
+  border-color: #7c2d12 !important;
+  color: #fdba74 !important;
+}
+
 

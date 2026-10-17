@@ -24,8 +24,9 @@ test('Estrutura HTML e acessibilidade de aplicar/index.html', () => {
   const html = fs.readFileSync('aplicar/index.html', 'utf8');
   assert(html.includes('data-page="aplicar"'), 'Body deve ter data-page="aplicar"');
   assert(html.includes('class="luria-page-spotlight"'), 'Deve conter spotlight banner');
-  assert(html.includes('class="cv-nav"'), 'Deve conter navegação por abas/pills');
-  assert(html.includes('class="cv-hub"'), 'Deve conter grid de cartões da central');
+  assert(!html.includes('class="cv-nav"'), 'Início do Aplicar não deve conter navegação por abas/pills no topo');
+  assert(html.includes('cv-grid-2x2'), 'Deve conter grid 2x2 de cartões');
+  assert(html.includes('cv-hub'), 'Deve conter grid de cartões da central');
   assert(html.includes('href="/editais/"'), 'Deve conter link para editais');
   assert(html.includes('href="/aplicar/curriculo/"'), 'Deve conter link para currículo');
   assert(html.includes('href="/aplicar/radar/"'), 'Deve conter link para radar');
