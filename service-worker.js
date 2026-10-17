@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-neutral-20261017-curriculo-v4-vocacao-answers";
+const CACHE_VERSION = "luria-pwa-neutral-20261017-curriculo-v5-vocacao-flow";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -77,7 +77,7 @@ const APP_SHELL = [
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261013-frame1",
   "/assets/css/vocacao.css?v=2",
-  "/assets/js/vocacao.js?v=1",
+  "/assets/js/vocacao.js?v=2",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
   "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
   "/assets/css/flashcards-ui-v2.css?v=1",
@@ -119,7 +119,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/app.js?v=20261013-frame1",
   "/assets/css/vocacao.css?v=2",
-  "/assets/js/vocacao.js?v=1",
+  "/assets/js/vocacao.js?v=2",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/luria-brand-v5.js?v=12"
 ]);

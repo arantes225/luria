@@ -105,18 +105,36 @@
     $("voc-back").disabled = current === 0;
     $("voc-next").textContent = current === items.length - 1 ? "Ver meu mapa →" : "Próxima →";
     $("voc-error").textContent = "";
+    syncAnswerChoices(answers[current]);
+  }
+
+  function syncAnswerChoices(selectedValue) {
     optionBox.querySelectorAll(".voc-option").forEach((button) => {
-      button.setAttribute("aria-pressed", String(Number(button.dataset.value) === answers[current]));
+      const selected = selectedValue !== null && Number(button.dataset.value) === selectedValue;
+      button.setAttribute("aria-pressed", String(selected));
     });
+  }
+
+  function advanceQuestion() {
+    if (current === items.length - 1) {
+      renderResults();
+      return;
+    }
+    current += 1;
+    renderQuestion();
+    $("voc-question").focus();
+  }
+
+  function chooseAnswer(value) {
+    answers[current] = value;
+    syncAnswerChoices(value);
+    $("voc-error").textContent = "";
+    advanceQuestion();
   }
 
   optionBox.querySelectorAll(".voc-option").forEach((button) => {
     button.addEventListener("click", () => {
-      answers[current] = Number(button.dataset.value);
-      optionBox.querySelectorAll(".voc-option").forEach((node) => {
-        node.setAttribute("aria-pressed", String(node === button));
-      });
-      $("voc-error").textContent = "";
+      chooseAnswer(Number(button.dataset.value));
     });
   });
 
@@ -186,12 +204,7 @@
     $("voc-question").focus();
   });
   document.addEventListener("keydown", (event) => {
-    if (quiz.hidden || !/^[1-5]$/.test(event.key)) return;
-    const value = Number(event.key);
-    answers[current] = value;
-    optionBox.querySelectorAll(".voc-option").forEach((node) => {
-      node.setAttribute("aria-pressed", String(Number(node.dataset.value) === value));
-    });
-    $("voc-error").textContent = "";
+    if (quiz.hidden || event.repeat || !/^[1-5]$/.test(event.key)) return;
+    chooseAnswer(Number(event.key));
   });
 })();
