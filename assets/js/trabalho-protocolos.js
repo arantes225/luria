@@ -142,7 +142,7 @@
       ${listSection("Situações especiais", r.special_situations)}
       ${listSection("Acompanhamento", r.follow_up)}
       ${Array.isArray(r.red_flags) && r.red_flags.length ? `<section class="protocol-section danger"><h3>Quando encaminhar / internar / reavaliar com urgência</h3><ul>${r.red_flags.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></section>` : ""}
-      ${r.notification?.text ? `<section class="protocol-section notification"><h3>Notificação</h3><p>${esc(r.notification.text)}</p></section>` : ""}
+      ${r.notification?.text ? `<section class="protocol-section notification"><h3>${r.notification.text.startsWith("Registro assistencial:") ? "Registro assistencial" : "Notificação"}</h3><p>${esc(r.notification.text)}</p></section>` : ""}
       ${renderRefs(r.source_refs)}
     `;
 
