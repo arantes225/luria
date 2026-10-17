@@ -4,60 +4,166 @@
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="aprender"],[data-page="consolidar"],[data-page="aplicar"]) .learn-page {display:grid!important;grid-template-rows:none!important;gap:0.85rem!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="aprender"],[data-page="consolidar"],[data-page="aplicar"]) .learn-page > .luria-page-spotlight {margin:0!important;}
   @media (min-width: 981px) {
-    html:has(body[data-page="aprender"]),
-    body[data-page="aprender"] {
-      height: 100dvh !important;
-      max-height: 100dvh !important;
-      overflow: hidden !important;
-    }
-    body[data-page="aprender"] .page {
-      height: 100% !important;
-      display: flex !important;
-      flex-direction: column !important;
-      overflow: hidden !important;
-    }
     body[data-page="aprender"] .learn-page {
-      flex: 1 1 auto !important;
-      min-height: 0 !important;
       display: flex !important;
       flex-direction: column !important;
-      overflow: hidden !important;
-      gap: 12px !important;
+      gap: 16px !important;
     }
     body[data-ui="v2"][data-page="aprender"] .alex-hero {
       flex: 0 0 auto !important;
-      padding: 0.75rem 1.25rem !important;
+      padding: 1.5rem 1.75rem !important;
     }
     body[data-ui="v2"][data-page="aprender"] .learn-tools {
-      flex: 1 1 auto !important;
-      min-height: 0 !important;
-      gap: 12px !important;
+      flex: 0 0 auto !important;
+      gap: 16px !important;
     }
     body[data-ui="v2"][data-page="aprender"] .tool-card {
-      height: 100% !important;
-      min-height: 0 !important;
-      padding: 0.9rem 1.15rem !important;
+      min-height: 180px !important;
+      padding: 1.25rem 1.35rem !important;
     }
   }
-  body[data-ui="v2"][data-page="aprender"] .alex-hero {display:grid;grid-template-columns:144px minmax(0,1fr);gap:1.25rem;align-items:center;padding:0.85rem 1.4rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--ui-radius-card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:var(--ui-shadow);}
-  body[data-ui="v2"][data-page="aprender"] .alex-visual {display:flex;align-items:center;justify-content:center;}
-  body[data-ui="v2"][data-page="aprender"] .alex-character-img {display:block;width:144px;height:144px;max-width:144px;}
-  body[data-ui="v2"][data-page="aprender"] .alex-content {min-width:0;display:grid;gap:0.4rem;}
-  body[data-ui="v2"][data-page="aprender"] .alex-content h2 {margin:0;font-size:1.2rem;}
-  body[data-ui="v2"][data-page="aprender"] .alex-quote {color:var(--color-text-secondary);font-size:0.85rem;}
-  body[data-ui="v2"][data-page="aprender"] .alex-ask {display:grid;grid-template-columns:38px minmax(0,1fr) 38px;gap:.45rem;align-items:center;margin:0;}
-  body[data-ui="v2"][data-page="aprender"] .alex-attach-input {display:none;}
-  body[data-ui="v2"][data-page="aprender"] .alex-ask button {display:grid;place-items:center;padding:.4rem!important;min-width:38px;height:38px;border:1px solid var(--color-border-interactive);border-radius:12px;}
-  body[data-ui="v2"][data-page="aprender"] .alex-attach {background:var(--color-surface);color:var(--color-primary-text);}
-  body[data-ui="v2"][data-page="aprender"] .alex-attach svg {width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;}
-  body[data-ui="v2"][data-page="aprender"] .alex-send {background:var(--ui-pill-gradient,var(--color-primary));color:#ffffff!important;box-shadow:0 4px 14px color-mix(in srgb,var(--color-primary) 30%,transparent);}
-  body[data-ui="v2"][data-page="aprender"] .alex-entry-actions {display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:.5rem!important;width:100%!important;margin-top:.4rem!important;}
-  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {display:flex!important;align-items:center!important;justify-content:center!important;gap:.625rem!important;width:100%!important;min-height:48px!important;padding:.75rem 1.25rem!important;background:#ffffff!important;color:var(--color-primary,#155dfc)!important;border:1px solid var(--color-border-interactive,#c8dcfa)!important;border-radius:12px!important;font-size:.9375rem!important;font-weight:700!important;text-decoration:none!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;transition:all 180ms ease!important;}
-  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;border-color:transparent!important;transform:translateY(-2px)!important;box-shadow:0 6px 20px color-mix(in srgb,var(--color-primary) 35%,transparent)!important;}
-  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring svg {width:18px!important;height:18px!important;stroke:currentColor!important;stroke-width:2!important;fill:none!important;}
-  body[data-ui="v2"][data-page="aprender"] .alex-file-name {color:var(--color-text-secondary)!important;font-size:.8125rem!important;text-align:center!important;overflow-wrap:anywhere!important;}
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {background:var(--color-surface,#151e2c)!important;color:var(--color-primary-text,#93bbf0)!important;border-color:var(--color-border,#243347)!important;}
-  :root[data-theme="dark"] body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover {background:var(--ui-pill-gradient,linear-gradient(135deg,#1d72fe 0%,#155dfc 100%))!important;color:#ffffff!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-hero {
+    display: grid !important;
+    grid-template-columns: 144px minmax(0, 1fr) !important;
+    gap: 1.25rem 1.75rem !important;
+    align-items: center !important;
+    padding: 1.5rem 1.75rem !important;
+    background: var(--color-surface) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--ui-radius-card) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    box-shadow: var(--ui-shadow) !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-visual {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-character-img {
+    display: block !important;
+    width: 144px !important;
+    height: 144px !important;
+    max-width: 144px !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+    display: grid !important;
+    gap: 0.5rem !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-content h2 {
+    margin: 0 !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: var(--color-text-primary) !important;
+    letter-spacing: -0.025em !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-quote {
+    color: var(--color-text-secondary) !important;
+    font-size: 0.875rem !important;
+    padding: 0.5rem 0.85rem !important;
+    border-radius: 12px !important;
+    background: var(--color-surface-elevated) !important;
+    border: 1px solid var(--color-border) !important;
+    justify-self: start !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-ask {
+    display: grid !important;
+    grid-template-columns: 40px minmax(0, 1fr) 40px !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+    margin: 0.25rem 0 0 !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-attach-input {
+    display: none !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-ask button {
+    display: grid !important;
+    place-items: center !important;
+    padding: 0.4rem !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    border: 1px solid var(--color-border-interactive) !important;
+    border-radius: 12px !important;
+    cursor: pointer !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-attach {
+    background: var(--color-surface) !important;
+    color: var(--color-primary-text) !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-attach svg {
+    width: 18px !important;
+    height: 18px !important;
+    fill: none !important;
+    stroke: currentColor !important;
+    stroke-width: 2 !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-send {
+    background: var(--ui-pill-gradient, var(--color-primary)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 30%, transparent) !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-file-name {
+    color: var(--color-text-secondary) !important;
+    font-size: 0.8125rem !important;
+    overflow-wrap: anywhere !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    min-height: 56px !important;
+    padding: 1rem 1.75rem !important;
+    background: var(--ui-hero-gradient, linear-gradient(135deg, #184888 0%, #2563EB 55%, #0284C7 100%)) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-size: 1.0625rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.015em !important;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(24, 72, 136, 0.24) !important;
+    transition: all 180ms ease !important;
+    cursor: pointer !important;
+    margin-top: 0.25rem !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover {
+    background: linear-gradient(135deg, #1e58a6 0%, #1d4ed8 55%, #0369a1 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 28px rgba(24, 72, 136, 0.36) !important;
+    filter: brightness(1.05) !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 4px 12px rgba(24, 72, 136, 0.24) !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring svg {
+    width: 20px !important;
+    height: 20px !important;
+    stroke: currentColor !important;
+    stroke-width: 2.2 !important;
+    fill: none !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    transition: transform 180ms ease !important;
+  }
+  body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring:hover svg {
+    transform: translateX(4px) !important;
+  }
+  :root[data-theme="dark"] body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {
+    background: var(--ui-hero-gradient, linear-gradient(135deg, #184888 0%, #2563EB 55%, #0284C7 100%)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45) !important;
+  }
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .learn-tools {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:stretch;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card {position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:start;gap:.5rem;padding:1rem 1.25rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--ui-radius-card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:var(--ui-shadow);transition:transform 220ms ease,box-shadow 220ms ease,border-color 220ms ease,background-color 220ms ease;}
   body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .tool-card:hover {transform:translateY(-3px);box-shadow:0 12px 32px rgba(24,72,136,0.12);border-color:var(--color-border-interactive);background:var(--color-surface-elevated);}
@@ -255,10 +361,11 @@
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .schedule-summary {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .summary-card:last-child {grid-column:1/-1!important;}
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .month-planner {grid-template-columns:repeat(7,minmax(84px,1fr))!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;}
-    body[data-ui="v2"][data-page="aprender"] .alex-hero {grid-template-columns:72px minmax(0,1fr);padding:1rem;gap:1rem;align-items:start;}
-    body[data-ui="v2"][data-page="aprender"] .alex-content {display:contents;}
-    body[data-ui="v2"][data-page="aprender"] .alex-content h2 {align-self:center;}
-    body[data-ui="v2"][data-page="aprender"] :is(.alex-quote,.alex-ask,.alex-entry-actions) {grid-column:1/-1;}
+    body[data-ui="v2"][data-page="aprender"] .alex-hero {grid-template-columns:72px minmax(0,1fr)!important;padding:1.25rem 1rem!important;gap:1rem!important;align-items:center!important;}
+    body[data-ui="v2"][data-page="aprender"] .alex-visual {grid-column:1!important;grid-row:1!important;}
+    body[data-ui="v2"][data-page="aprender"] .alex-character-img {width:72px!important;height:72px!important;max-width:72px!important;}
+    body[data-ui="v2"][data-page="aprender"] .alex-content {grid-column:2!important;grid-row:1!important;display:grid!important;gap:.35rem!important;}
+    body[data-ui="v2"][data-page="aprender"] .alex-open-tutoring {grid-column:1/-1!important;grid-row:2!important;min-height:50px!important;font-size:1rem!important;padding:.85rem 1rem!important;}
     body[data-ui="v2"]:is([data-page="aprender"],[data-page="aplicar"]) .learn-tools, body[data-ui="v2"][data-page="consolidar"] .learn-grid {grid-template-columns:minmax(0,1fr)!important;}
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.agenda-insights-side,.month-filter-tools) {grid-template-columns:minmax(0,1fr)!important;}
     body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day {padding:.25rem!important;min-height:80px!important;}
