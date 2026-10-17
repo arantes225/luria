@@ -1,0 +1,1495 @@
+{
+  "created_date": "2026-10-17",
+  "description": "Backup integral de 10 protocolos de alto risco antes de revisão científica incisiva, rodada 2",
+  "records": [
+    {
+      "id": 147,
+      "slug": "pediatria-meningite-pediatrica",
+      "title": "Meningite pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Meningite bacteriana pediátrica é emergência hospitalar. Não atrasar antimicrobiano para punção lombar/neuroimagem quando há instabilidade ou contraindicação. O esquema empírico deve distinguir neonatos/lactentes jovens de crianças maiores, considerar epidemiologia local e ser descalonado conforme microbiologia.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Febre, cefaleia, fotofobia, rigidez de nuca, vômitos, alteração de consciência ou convulsões; rigidez pode faltar em lactentes.",
+            "No período neonatal: irritabilidade, hipotermia/febre, recusa alimentar, letargia, fontanela abaulada, apneia ou instabilidade.",
+            "Petéquias, púrpura rapidamente progressiva e choque sugerem meningococcemia, exigindo ressuscitação e antibioticoterapia imediatas."
+          ],
+          "title": "Suspeita imediata"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABCDE, monitorização, precauções por gotículas quando meningococo é possível, contato com pediatria/infectologia e acesso venoso.",
+            "Coletar hemoculturas antes dos antibióticos se não atrasar; realizar punção lombar apenas quando segura, sem comprometer suporte respiratório/hemodinâmico.",
+            "Iniciar terapia antimicrobiana IV com urgência se a meningite bacteriana for provável, independentemente de coleta de líquor adiada.",
+            "Considerar dexametasona associada à primeira dose de antibiótico em casos selecionados, conforme faixa etária/agente e protocolo; não iniciar sem indicação indiscriminadamente."
+          ],
+          "title": "Primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Punção lombar quando estável e sem contraindicações: pressão de abertura quando factível, células/diferencial, glicose simultânea à glicemia, proteínas, Gram, cultura e testes moleculares conforme disponibilidade.",
+            "Hemograma, PCR/procalcitonina, eletrólitos, função renal, glicose, coagulograma conforme gravidade, além de hemoculturas.",
+            "Neuroimagem antes da punção apenas com indicações como déficit focal, papiledema, crises focais/alteração mental persistente ou suspeita de lesão expansiva; imagem normal não elimina todas as contraindicações de PL.",
+            "Pesquisar HSV/encefalite e outras etiologias em neonatos, lactentes ou apresentação atípica."
+          ],
+          "title": "Líquor e exames complementares"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Suspeita de meningite bacteriana com choque, rebaixamento importante ou instabilidade",
+          "then": "ABC/ressuscitação, hemocultura sem atraso e antimicrobiano IV imediato; adiar punção lombar até segurança, internar e avaliar UTI."
+        },
+        {
+          "if": "Neonato/lactente jovem (sobretudo <28 dias) com meningite bacteriana suspeita",
+          "then": "Usar esquema empírico neonatal apropriado, como ampicilina + cefotaxima, com gentamicina conforme protocolo/foco e epidemiologia; considerar Listeria e Gram-negativos; evitar ceftriaxona neonatal quando contraindicada."
+        },
+        {
+          "if": "Criança além do período neonatal com suspeita comunitária",
+          "then": "Ceftriaxona ou cefotaxima IV em dose de meningite; associar vancomicina quando resistência pneumocócica regional justificar, até cultura/sensibilidade."
+        },
+        {
+          "if": "Vesículas, convulsões, hepatite, encefalopatia ou contexto de HSV",
+          "then": "Associar aciclovir IV precocemente segundo protocolo etário sem retardar cobertura bacteriana."
+        },
+        {
+          "if": "Doença meningocócica/Hib suspeita ou confirmada",
+          "then": "Notificar vigilância imediatamente e avaliar profilaxia de contatos elegíveis, mantendo precauções por gotículas pelo intervalo indicado após antibiótico efetivo."
+        },
+        {
+          "if": "Cultura/PCR identifica agente e susceptibilidade",
+          "then": "Revisar antimicrobiano, duração e necessidade de medidas de saúde pública; monitorar complicações neurológicas e audição."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Neonatos: ampicilina com cefotaxima (com ou sem gentamicina de acordo com protocolo local e suspeita etiológica); dose, intervalo e escolha ajustados a peso, idade gestacional/pós-natal e função renal. Gentamicina isolada não substitui antibiótico com boa penetração liquórica.",
+            "Ceftriaxona deve ser evitada ou submetida a contraindicações específicas em RN com hiperbilirrubinemia e em administração concomitante com cálcio IV; conferir bula neonatal.",
+            "Crianças maiores: ceftriaxona ou cefotaxima IV; vancomicina adicional conforme risco de pneumococo resistente. Ajustar culturas e antibiograma."
+          ],
+          "title": "Tratamento empírico por idade"
+        },
+        {
+          "items": [
+            "Controle de convulsões, fluidos cuidadosamente ajustados a perfusão e natremia, suporte respiratório e tratamento de choque quando necessário.",
+            "Dexametasona como adjuvante em cenários apropriados próximos da primeira dose de antibiótico; avaliação por idade e etiologia.",
+            "Organizar triagem auditiva/avaliação audiológica após meningite bacteriana e vigilância neurológica/desenvolvimento."
+          ],
+          "title": "Suporte e prevenção de sequelas"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Isolamento por gotículas nos casos com suspeita de doença meningocócica até pelo menos 24 horas de antibiótico eficaz conforme protocolo local.",
+            "A escolha neonatal deve cobrir agentes por faixa etária (por exemplo estreptococo do grupo B, enterobactérias e Listeria conforme contexto).",
+            "Se história de derivação ventricular, neurocirurgia ou imunodeficiência, escolher esquema hospitalar específico; o algoritmo de meningite comunitária não é suficiente."
+          ],
+          "title": "Controle epidemiológico e diferenciais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Acompanhar consciência, convulsões, sódio, diurese, focos metastáticos e resultados microbiológicos; repetir exames/imagens se piora ou falha terapêutica.",
+            "Planejar acompanhamento auditivo e de desenvolvimento, orientar família e atualizar vacinação conforme PNI após recuperação.",
+            "Em casos transmissíveis, equipe de vigilância define investigação e quimioprofilaxia de contatos conforme agente."
+          ],
+          "title": "Vigilância e alta"
+        }
+      ],
+      "red_flags": [
+        "Púrpura fulminante, choque, rápida deterioração ou hipotensão.",
+        "Convulsão persistente, déficit focal, rebaixamento ou sinais de hipertensão intracraniana.",
+        "Neonato com apneia, instabilidade térmica e má perfusão.",
+        "Antibiótico atrasado para obter TC ou líquor na presença de instabilidade."
+      ],
+      "notification": {
+        "text": "Meningites são agravos de notificação compulsória no Brasil. Comunicar suspeita segundo fluxos e prazos de vigilância atuais; suspeita de doença meningocócica requer resposta imediata da vigilância e avaliação de quimioprofilaxia para contatos elegíveis.",
+        "required": true
+      },
+      "source_refs": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite",
+          "label": "Ministério da Saúde — Meningite: diagnóstico, tratamento e vigilância"
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao/view",
+          "label": "Ministério da Saúde — Guia de Vigilância em Saúde, volume 2, 6ª edição revisada (2026)"
+        },
+        {
+          "url": "https://www.who.int/publications/i/item/9789240108042",
+          "label": "OMS — Diretrizes para meningites (2025)"
+        },
+        {
+          "url": "https://www.who.int/publications/i/item/9789240102903/",
+          "label": "OMS — Manejo de meningite em lactentes 0–59 dias"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "ampicilina",
+        "sulfato de gentamicina",
+        "cefotaxima",
+        "ceftriaxona",
+        "vancomicina",
+        "aciclovir"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 148,
+      "slug": "pediatria-convulsao-febril",
+      "title": "Convulsão febril",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Convulsão febril ocorre tipicamente entre 6 meses e 5 anos, associada a febre, sem infecção do SNC, alteração metabólica aguda ou crise afebril anterior. Simples: generalizada, dura <15 minutos e não recorre em 24 horas; complexa: focal, duração ≥15 minutos ou recorrente. Primeiro tratar crise prolongada e procurar causa da febre.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Confirmar idade, duração, características focais/generalizadas, recorrência em 24 horas e retorno ao basal.",
+            "Simples: generalizada, <15 min, única em 24h, recuperação completa. Complexa se focalidade, duração ≥15 minutos ou repetição em 24 horas.",
+            "Distinguir meningite/encefalite, epilepsia, hipoglicemia, distúrbios eletrolíticos e eventos não epilépticos."
+          ],
+          "title": "Classificação"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Marcar tempo, proteger criança de trauma, posicionar lateralmente se possível, abordar ABC, oxigenação, glicemia se crise prolongada/alteração mental e monitorização.",
+            "Se crise ≥5 minutos ou recorrente sem despertar, seguir protocolo de estado de mal epiléptico com benzodiazepínico conforme peso/rota, sem atraso.",
+            "Após cessação, exame neurológico e identificação do foco febril, com atenção à vacinação e sinais meníngeos."
+          ],
+          "title": "Durante a crise"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Convulsão febril simples com recuperação e exame normais: EEG, neuroimagem e exames de rotina não são recomendados apenas pela convulsão.",
+            "Punção lombar quando há suspeita de meningite, sinais neurológicos anormais ou outras indicações; individualizar em lactentes e vacinação incompleta.",
+            "Exames metabólicos e de imagem nos casos atípicos, complexos ou com recuperação anormal, guiados pelo quadro clínico."
+          ],
+          "title": "Exames seletivos"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Convulsão em curso por ≥5 minutos",
+          "then": "Tratar como crise convulsiva prolongada/status conforme protocolo, com benzodiazepínico e suporte ABC; avaliar glicemia."
+        },
+        {
+          "if": "Crise simples cessada, recuperação neurológica completa e criança bem",
+          "then": "Buscar foco da febre, observar até retorno basal, evitar EEG/TC/PL rotineiros e orientar cuidadores."
+        },
+        {
+          "if": "Crise complexa ou recuperação neurológica prolongada",
+          "then": "Observação e avaliação pediátrica ampliadas, incluindo investigação de CNS/metabólica dirigida e consideração de especialista."
+        },
+        {
+          "if": "Sinais meníngeos, púrpura, toxicidade, déficit focal persistente",
+          "then": "Priorizar investigação e tratamento de infecção do SNC/sepse, não atribuir automaticamente o episódio à febre."
+        },
+        {
+          "if": "Recorrência com crises prolongadas",
+          "then": "Discutir plano de resgate domiciliar e seguimento neurológico individualizado."
+        },
+        {
+          "if": "Crise generalizada <15 minutos, única em 24 horas, criança de 6–60 meses e retorno ao basal",
+          "then": "Convulsão febril simples: avaliar foco febril e sinais de meningite; geralmente não requer EEG, TC ou anticonvulsivante contínuo."
+        },
+        {
+          "if": "Crise >5 minutos ou recorrente sem recuperação",
+          "then": "Tratar como estado de mal epiléptico com benzodiazepínico e suporte ABC; investigar etiologia aguda."
+        },
+        {
+          "if": "Crise focal, ≥15 minutos ou recorrente em 24 horas",
+          "then": "Classificar como complexa, individualizar investigação por exame neurológico, estado clínico e suspeita de infecção do SNC."
+        },
+        {
+          "if": "Rigidez nucal, petéquias, rebaixamento persistente ou lactente com avaliação preocupante",
+          "then": "Investigar meningite/encefalite e realizar punção lombar quando segura e indicada, sem atrasar tratamento se instabilidade."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Proteção e suporte ABC na fase convulsiva; benzodiazepínico se crise durar ≥5 minutos, seguindo protocolo de status e doses pediátricas.",
+            "Antitérmicos apenas para conforto; paracetamol/ibuprofeno não previnem de forma confiável nova convulsão febril.",
+            "Não indicar anticonvulsivante contínuo preventivo em convulsão febril simples de rotina."
+          ],
+          "title": "Conduta"
+        },
+        {
+          "items": [
+            "Antitérmico é para conforto, não previne convulsão febril de modo confiável; profilaxia anticonvulsivante crônica não é de rotina.",
+            "Orientar cuidadores a lateralizar e proteger a criança, cronometrar crise e buscar emergência se durar ≥5 minutos ou houver sinais de alarme."
+          ],
+          "title": "Aprimoramento de condutas — revisão editorial"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Primeira crise abaixo de 6 meses ou acima de 5 anos exige avaliação alternativa.",
+            "Atraso do despertar e sinais focais exigem descartar meningite/encefalite e outras etiologias.",
+            "Avaliar história familiar, desenvolvimento, vacinação e risco de recorrência."
+          ],
+          "title": "Risco"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Explicar postura lateral, remover objetos ao redor, nunca conter movimentos ou pôr objetos na boca, cronometrar a crise e acionar urgência se ≥5 minutos.",
+            "Reavaliar se recorrência, prostração persistente, rigidez nucal, dificuldade de respirar ou foco infeccioso grave.",
+            "Fornecer plano escrito para novas crises e retorno pediátrico conforme risco."
+          ],
+          "title": "Orientação de alta"
+        },
+        {
+          "items": [
+            "Explicar prognóstico geralmente benigno da forma simples e risco de recorrência; reavaliar se mudanças no padrão."
+          ],
+          "title": "Reavaliação e segurança de seguimento"
+        }
+      ],
+      "red_flags": [
+        "Crise ≥5 minutos, recorrência sem despertar.",
+        "Déficit focal persistente ou consciência não recuperada.",
+        "Petéquias/púrpura, meningismo, choque ou suspeita de meningite.",
+        "Idade fora da faixa típica ou quadro atípico.",
+        "Estado de mal, déficit focal persistente ou ausência de recuperação.",
+        "Suspeita de meningite/encefalite ou sepse."
+      ],
+      "notification": {
+        "text": "Registrar duração, semiótica, temperatura, antecedentes, recuperação e avaliação do foco febril; notificação apenas se agente/foco requerer.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/127/2/389/65172/Febrile-Seizures-Guideline-for-the-Neurodiagnostic",
+          "label": "AAP — Febrile Seizures: Neurodiagnostic Evaluation (guideline)"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/NG143/chapter/recommendations",
+          "label": "NICE NG143 — Fever in under 5s, investigação e antipiréticos"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+          "label": "NICE NG217 — Status epilepticus, atualizado 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "maleato de midazolam",
+        "lorazepam",
+        "diazepam"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-15 02:20:14.231103+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 149,
+      "slug": "pediatria-estado-de-mal-epileptico-pediatrico",
+      "title": "Estado de mal epiléptico pediátrico",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Estado de mal epiléptico convulsivo exige tratamento a partir de 5 minutos de crise contínua ou de crises sem recuperação interictal. Ações em etapas com tempo registrado, proteção de via aérea e glicemia, benzodiazepínico adequado (não repetir indefinidamente), antiepiléptico de segunda linha e UTI/EEG para refratariedade.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Crise tônico-clônica ≥5 minutos, ou crises repetidas sem recuperar consciência entre episódios.",
+            "Pesquisar hipoglicemia, distúrbios de eletrólitos, febre/meningoencefalite, trauma, intoxicação e falha de adesão a antiepilépticos.",
+            "Movimentos que cessam com inconsciência persistente podem representar estado não convulsivo: considerar EEG."
+          ],
+          "title": "Definição operacional"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Cronometrar a crise; colocar em posição segura, abordar ABCDE, oxigenação/ventilação, aspiração de secreções quando necessário, monitor cardiorrespiratório e acesso IV/IO.",
+            "Aferir glicemia capilar imediatamente e tratar hipoglicemia se presente, sem retardar anticonvulsivante em crise ≥5 minutos.",
+            "Rever plano de resgate prévio e doses administradas antes da chegada, evitando duplicar benzodiazepínicos."
+          ],
+          "title": "0–5 minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glicemia, eletrólitos (Na, Ca, Mg), gasometria conforme caso, hemograma, investigação infecciosa/toxicológica segundo história, níveis séricos se aplicável.",
+            "EEG urgente ou contínuo quando consciência não recupera após aparente cessação motora, suspeita de crise não convulsiva ou sedação profunda.",
+            "Imagem neurológica e punção lombar somente após estabilização e conforme suspeita clínica e contraindicações."
+          ],
+          "title": "Após/ao lado da estabilização"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Crise convulsiva ≥5 minutos",
+          "then": "Administrar benzodiazepínico de primeira linha imediatamente: lorazepam IV 0,1 mg/kg (máx. 4 mg) ou midazolam intranasal/bucal conforme protocolo, sem aguardar acesso venoso se indisponível."
+        },
+        {
+          "if": "Persiste 3–5 minutos após primeira dose",
+          "then": "Repetir uma segunda dose de benzodiazepínico conforme protocolo, contabilizando doses pré-hospitalares; preparar medicação de segunda linha e suporte respiratório."
+        },
+        {
+          "if": "Crise persiste após duas doses apropriadas de benzodiazepínico",
+          "then": "Carregamento intravenoso de antiepiléptico de segunda linha (por exemplo levetiracetam, fosfenitoína/fenitoína ou valproato segundo contraindicações e disponibilidade) com monitorização."
+        },
+        {
+          "if": "Persiste após segunda linha / recorrência sem despertar",
+          "then": "Estado de mal refratário: UTI pediátrica, possível intubação/infusão anestésica e EEG contínuo sob neurologia/intensivista."
+        },
+        {
+          "if": "Crise cessa",
+          "then": "Monitorar recuperação neurológica e respiratória, investigar etiologia e ajustar plano de prevenção."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Lorazepam IV/IO 0,1 mg/kg (máximo 4 mg/dose) se acesso; se não houver acesso imediato, midazolam intranasal 0,2–0,3 mg/kg (máx. 10 mg, de acordo com formulação/protocolo) ou IM 0,2 mg/kg (máx. 10 mg).",
+            "Não administrar mais que duas doses iniciais de benzodiazepínico sem avançar para terapia de segunda linha; monitorar risco de apneia e hipotensão."
+          ],
+          "title": "Primeira linha"
+        },
+        {
+          "items": [
+            "Selecionar levetiracetam IV, fosfenitoína/fenitoína ou valproato conforme síndrome epiléptica, função hepática, cardiopatia, interações e protocolo de infusão; equipe deve preparar enquanto primeira linha é administrada.",
+            "Refratário requer ambiente intensivo, manejo de via aérea e EEG para detectar crise elétrica persistente."
+          ],
+          "title": "Segunda linha/refratário"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Neonatos têm algoritmo e doses distintos: não aplicar indiscriminadamente protocolo de >28 dias.",
+            "Não atrasar tratamento empírico de meningite/encefalite suspeita por neuroimagem ou punção quando contraindicações/instabilidade estiverem presentes.",
+            "Em epilepsia conhecida, conferir doses perdidas e plano domiciliar; considerar exposição tóxica e distúrbios metabólicos."
+          ],
+          "title": "Causas e riscos"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Vigiar recuperação do nível de consciência, sinais de depressão respiratória pós-benzodiazepínico e recidiva convulsiva; EEG se despertar tardio.",
+            "Orientar cuidadores sobre medicação de resgate, tempo para acionar emergência e necessidade de revisão neurológica com diagnóstico etiológico."
+          ],
+          "title": "Após controle"
+        }
+      ],
+      "red_flags": [
+        "Convulsão ≥5 minutos ou recorrência sem recuperação.",
+        "Apneia, hipoxemia ou aspiração, hipotensão pós-sedação.",
+        "Persistência após duas doses de benzodiazepínico e medicamento de segunda linha.",
+        "Déficit focal novo, meningismo, febre com alteração mental ou coma prolongado."
+      ],
+      "notification": {
+        "text": "Registrar horário de início e cessação da crise, doses pré-hospitalares, medicamentos/doses/vias, glicemia e recuperação neurológica; notificação específica se etiologia exigida pela vigilância.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+          "label": "NICE NG217 — Status epilepticus, atualizado janeiro de 2025"
+        },
+        {
+          "url": "https://www.chop.edu/clinical-pathway/status-epilepticus-clinical-pathway",
+          "label": "Children's Hospital of Philadelphia — Status Epilepticus Clinical Pathway"
+        },
+        {
+          "url": "https://www.erc.edu/umbraco/api/download-page/download/053c0724-acae-4886-960e-c4e3e31c4cd2",
+          "label": "European Resuscitation Council — Paediatric Life Support, 2025"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "lorazepam",
+        "maleato de midazolam",
+        "diazepam",
+        "levetiracetam",
+        "fenitoína",
+        "fosfenitoína"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 150,
+      "slug": "pediatria-anafilaxia-pediatrica",
+      "title": "Anafilaxia pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Anafilaxia é reação sistêmica aguda potencialmente fatal, frequentemente com manifestações cutâneo-mucosas, respiratórias ou cardiovasculares após exposição a alérgeno. Pode ocorrer sem lesões cutâneas. A adrenalina IM na face anterolateral da coxa é o tratamento de primeira linha e não deve ser atrasada.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Início rápido após alimento, medicamento, picada ou exposição, com urticária/angioedema mais dificuldade respiratória, hipotensão, colapso ou sintomas gastrointestinais intensos.",
+            "Broncoespasmo, estridor ou hipotensão súbitos após alérgeno conhecido também sustentam diagnóstico, mesmo sem urticária.",
+            "Avaliar ABC, perfusão, consciência, peso estimado e possível necessidade de via aérea avançada."
+          ],
+          "title": "Reconhecer clinicamente"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Interromper exposição quando possível, acionar ajuda, posicionar paciente de modo seguro (decúbito; evitar ortostatismo súbito) e iniciar monitorização.",
+            "Administrar imediatamente adrenalina 1 mg/mL (1:1.000) IM no vasto lateral da coxa: 0,01 mg/kg = 0,01 mL/kg, máximo usual 0,3 mg em crianças; adolescentes podem seguir limite de 0,5 mg conforme protocolo.",
+            "Repetir adrenalina IM após 5–15 minutos se resposta insuficiente; ofertar oxigênio em hipoxemia, acesso IV e reposição volêmica se choque.",
+            "Não atrasar adrenalina para obter acesso venoso nem substituí-la por corticoides, anti-histamínicos ou broncodilatadores."
+          ],
+          "title": "Ações imediatas"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Diagnóstico e tratamento são clínicos. Monitorar frequência respiratória, SpO2, PA, FC e sinais de obstrução de via aérea; não aguardar laboratório.",
+            "Triptase sérica pode ajudar na confirmação retrospectiva em casos selecionados, mas não deve atrasar nem alterar medidas de emergência.",
+            "Após estabilização, identificar possível gatilho, exposições, história de asma e riscos de recorrência."
+          ],
+          "title": "Investigação sem retardar tratamento"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Suspeita clínica de anafilaxia",
+          "then": "Adrenalina IM imediata (0,01 mg/kg de 1 mg/mL) na coxa, posição segura, ABC e monitorização."
+        },
+        {
+          "if": "Sintomas persistem ou agravam após primeira dose",
+          "then": "Repetir adrenalina IM em 5–15 minutos, otimizar oxigênio e volume, solicitar equipe avançada."
+        },
+        {
+          "if": "Choque ou broncoespasmo refratários após doses IM",
+          "then": "Manejo em ambiente crítico: infusão IV de adrenalina por equipe experiente e monitorização contínua; nunca fazer bólus IV empírico de adrenalina concentrada."
+        },
+        {
+          "if": "Estabilidade após tratamento",
+          "then": "Observação por risco de reação bifásica, por pelo menos 4–6 horas, prolongada conforme gravidade, necessidade de doses repetidas ou acesso a serviços."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Adrenalina IM 1 mg/mL: 0,01 mg/kg (0,01 mL/kg), máx. usual 0,3 mg em crianças; repetir após 5–15 minutos se necessário. Conferir concentração e evitar erro de via.",
+            "Adrenalina não tem contraindicação absoluta diante de anafilaxia."
+          ],
+          "title": "Medicamento de primeira linha"
+        },
+        {
+          "items": [
+            "Cristaloide isotônico IV em bolus reavaliados se choque; oxigênio se necessário e equipe de via aérea precoce diante de estridor/edema progressivo.",
+            "Salbutamol inalatório apenas como adjuvante para broncoespasmo persistente; anti-histamínicos para sintomas cutâneos depois da adrenalina. Corticosteroides não previnem de maneira confiável reação bifásica."
+          ],
+          "title": "Medidas complementares"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Em lactentes, sinais podem ser inespecíficos; avaliar mudança abrupta do padrão respiratório, hipotonia e prostração após exposição.",
+            "Asma coexistente e exposição a alérgeno previamente associado a anafilaxia aumentam a preocupação com gravidade.",
+            "Plano para autoinjetor de adrenalina, quando disponível/indicado, treinamento familiar e encaminhamento à alergologia."
+          ],
+          "title": "Atenção especial"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Observar clinicamente por tempo individualizado, mais prolongado se hipotensão, comprometimento respiratório grave, doses repetidas ou dificuldade de retorno.",
+            "Entregar plano escrito com gatilhos prováveis, orientação para adrenalina e acionamento do SAMU/emergência em recorrência.",
+            "Orientar alergologia para investigação e prevenção, com registro de suspeita de agente em prontuário."
+          ],
+          "title": "Segurança na alta"
+        }
+      ],
+      "red_flags": [
+        "Estridor, rouquidão progressiva, cianose ou hipoxemia.",
+        "Hipotensão, síncope ou alteração de consciência.",
+        "Broncoespasmo persistente ou necessidade de doses repetidas de adrenalina.",
+        "Recorrência de sintomas durante observação."
+      ],
+      "notification": {
+        "text": "Registrar substância suspeita, cronologia, manifestações, concentração/via/dose/horário da adrenalina e resposta. Notificar reação a medicamento/imunizante quando aplicável pelos canais de farmacovigilância/vigilância do PNI.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://asbairj.org.br/consensos-e-livros/",
+          "label": "ASBAI-RJ — Consenso de alergia alimentar 2025 ASBAI/SBP e anafilaxia"
+        },
+        {
+          "url": "https://www.sbp.com.br/flip/consenso-alergia-alimentar-parte-02/14/",
+          "label": "SBP — Manejo de anafilaxia em documento conjunto de alergia alimentar"
+        },
+        {
+          "url": "https://rmmg.org/artigo/detalhes/1342",
+          "label": "Revista Médica de Minas Gerais — Documento conjunto sobre alergia alimentar e anafilaxia"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "adrenalina",
+        "sulfato de salbutamol"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 152,
+      "slug": "pediatria-cetoacidose-diabetica-pediatrica",
+      "title": "Cetoacidose diabética pediátrica",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "CAD pediátrica: glicemia elevada (tipicamente >200 mg/dL), cetose (β-hidroxibutirato ≥3 mmol/L ou cetonúria moderada/importante) e acidose metabólica (pH venoso <7,30 ou bicarbonato <18 mmol/L). Tratar em ambiente monitorizado com fluidos calculados, reposição de potássio e infusão de insulina após hidratação inicial; vigiar lesão cerebral.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Poliúria, polidipsia, emagrecimento, desidratação, vômitos, dor abdominal e taquipneia/Kussmaul; CAD pode ser apresentação inicial de diabetes.",
+            "Confirmar hiperglicemia, acidose e cetose; atenção à CAD euglicêmica em contextos especiais.",
+            "Classificar gravidade por pH/bicarbonato e estado clínico, principalmente alteração de consciência, choque e distúrbio eletrolítico."
+          ],
+          "title": "Diagnóstico e gravidade"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "ABC, peso para cálculo de fluidos, dois acessos quando possível, glicemia, cetonas, gasometria e eletrólitos; registrar nível de consciência e pupilas.",
+            "Iniciar cristaloide isotônico, em geral 10–20 mL/kg na fase inicial conforme perfusão e protocolo; choque requer expansão adicional guiada por sinais clínicos.",
+            "Iniciar insulina regular em infusão IV somente após aproximadamente 1 hora de fluidos, com potássio conhecido e seguro; NÃO aplicar bolus de insulina.",
+            "Monitorar sinais neurológicos de hora em hora e glicemia horária; definir plano de reposição de déficit/manutenção e potássio com especialista pediátrico."
+          ],
+          "title": "Estabilização e monitorização"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Glicemia capilar frequente, gasometria venosa, β-hidroxibutirato, sódio, potássio, cloro, ureia, creatinina, magnésio/fósforo conforme caso; ânion gap e sódio corrigido.",
+            "Acompanhar declínio de cetonas e fechamento do ânion gap; evitar interpretar normalização da glicemia como resolução da CAD.",
+            "Investigar gatilho infeccioso/omissão de insulina apenas se clinicamente indicado; leucocitose isolada pode ser de estresse."
+          ],
+          "title": "Exames seriados"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Choque ou hipoperfusão relevante",
+          "then": "Priorizar cristalóide isotônico e reavaliação hemodinâmica; acionar UTI pediátrica em choque persistente."
+        },
+        {
+          "if": "CAD confirmada, após fluidos iniciais e K+ seguro",
+          "then": "Insulina regular IV contínua 0,05–0,1 UI/kg/h, sem bolus, com reposição de potássio segundo diurese e eletrólitos; monitorar glicemia e acidose."
+        },
+        {
+          "if": "Potássio baixo ou risco grave de hipocalemia",
+          "then": "Corrigir potássio antes da insulina, conforme protocolo de emergência; ECG e monitorização contínua."
+        },
+        {
+          "if": "Glicose cai antes de resolver cetose/acidose",
+          "then": "Adicionar glicose ao fluido IV e manter insulina necessária à depuração de cetonas, ajustando vigilância de potássio e glicemia."
+        },
+        {
+          "if": "Cefaleia progressiva, alteração do comportamento, bradicardia, queda de consciência ou outros sinais de lesão cerebral",
+          "then": "Tratar imediatamente edema/lesão cerebral suspeita com medidas de emergência e terapia hiperosmolar conforme protocolo, sem aguardar TC."
+        },
+        {
+          "if": "Acidose/cetose resolvidas e paciente estável, capaz de se alimentar",
+          "then": "Transição cuidadosamente sobreposta para insulina SC com endocrinologia pediátrica e educação da família."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Reposição de déficit + manutenção planejada, evitando modificações osmóticas abruptas; titulação conforme perfusão e sódio corrigido.",
+            "Insulina regular IV 0,05–0,1 UI/kg/h após 1 hora de hidratação (doses menores podem bastar em crianças pequenas e CAD menos acidótica); não fazer bolus.",
+            "Adicionar glicose ao soro quando glicemia se aproxima de 250–300 mg/dL ou cai rapidamente, mantendo supressão da cetogênese até resolução bioquímica."
+          ],
+          "title": "Fluidoterapia e insulina"
+        },
+        {
+          "items": [
+            "Reposição de potássio é frequentemente necessária mesmo com valor inicial normal/alto, mas depende de potássio, diurese e função renal; não administrar sem monitorização.",
+            "Não usar bicarbonato rotineiramente, por riscos associados e ausência de benefício habitual; exceções específicas requerem especialista.",
+            "Suspeita de lesão cerebral: elevar cabeceira, evitar hipóxia/hipotensão, administrar terapia hiperosmolar segundo protocolo e acionar UTI imediatamente."
+          ],
+          "title": "Eletrólitos e cérebro"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Criança menor, CAD grave ou hiperosmolalidade elevada têm risco maior de complicações neurológicas; pedir apoio precoce de endocrinologia/UTI.",
+            "Se hipoglicemia durante infusão, aumentar oferta de glicose antes de simplesmente interromper toda a insulina, conforme segurança clínica.",
+            "Registrar exposição a inibidores SGLT2 quando pertinente e investigar outras causas de acidose quando cetose não acompanha evolução."
+          ],
+          "title": "Cuidados especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Avaliar resolução clínica e bioquímica: melhora do estado geral, tolerância oral, pH/bicarbonato/β-hidroxibutirato ou ânion gap normalizados conforme protocolo.",
+            "Transição com sobreposição de insulina SC e IV; ajustar basal/bolus, orientar monitorização glicêmica, cetonas em dias de doença e sinais de alerta.",
+            "Investigar fatores precipitantes, oferecer educação diabetológica e consulta especializada."
+          ],
+          "title": "Critérios de resolução e alta"
+        }
+      ],
+      "red_flags": [
+        "Deterioração neurológica, cefaleia súbita intensa, bradicardia ou alteração pupilar.",
+        "Potássio baixo ou arritmia, hipoglicemia, acidose em piora.",
+        "Choque, anúria, hipernatremia/hiponatremia em evolução anormal.",
+        "Insulina iniciada antes de volume e potássio avaliados ou administrada em bolus."
+      ],
+      "notification": {
+        "text": "Registrar evolução horária de glicemia/estado mental, curva de potássio/sódio, fluidos, dose de insulina e critérios de resolução; realizar revisão de segurança em eventos de lesão cerebral.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://www.ispad.org/static/6dd62eae-c8cb-4b4a-84e1efc768505746/Ch11PediatricDiabetes.pdf",
+          "label": "ISPAD Clinical Practice Consensus Guidelines 2022 — Diabetic ketoacidosis in children"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "insulina humana regular",
+        "cloreto de potássio",
+        "Glicose 10%"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 157,
+      "slug": "pediatria-ictericia-neonatal",
+      "title": "Icterícia neonatal",
+      "category": "Pediatria",
+      "setting": "ambulatorial",
+      "status": "review_needed",
+      "summary": "Icterícia neonatal é comum, mas níveis elevados de bilirrubina não conjugada podem causar neurotoxicidade. A avaliação deve considerar idade em horas, idade gestacional e fatores de risco.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Icterícia nas primeiras 24 h é sempre patológica até prova em contrário.",
+            "Progressão craniocaudal, prematuridade, hemólise e dificuldade de alimentação aumentam risco."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Dosar bilirrubina sérica/transcutânea e plotar por idade em horas.",
+            "Avaliar alimentação, perda de peso e fatores de hemólise."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Bilirrubina total e direta quando indicado.",
+            "Coombs, hemograma/reticulócitos e G6PD em suspeita de hemólise."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Icterícia nas primeiras 24 horas",
+          "then": "Investigar imediatamente icterícia potencialmente patológica: dosar bilirrubina sérica, avaliar grupo/Rh, teste de antiglobulina direto e evidências de hemólise conforme contexto."
+        },
+        {
+          "if": "RN ≥35 semanas, bem, icterícia após 24 horas",
+          "then": "Usar bilirrubina total, idade em horas, semanas gestacionais e fatores de neurotoxicidade em curva AAP 2022 para decidir fototerapia e controle."
+        },
+        {
+          "if": "Bilirrubina atinge limiar específico de fototerapia",
+          "then": "Iniciar fototerapia intensiva, proteger olhos conforme equipamento, monitorar hidratação e resposta laboratorial."
+        },
+        {
+          "if": "Bilirrubina próxima do limiar de exsanguineotransfusão ou sinais de encefalopatia",
+          "then": "Escalonar atendimento neonatal imediatamente, fototerapia intensiva e preparar terapia avançada conforme curva e riscos."
+        },
+        {
+          "if": "Aumento de bilirrubina direta ou icterícia prolongada",
+          "then": "Investigar colestase neonatal e outras etiologias, sem usar tabela de fototerapia como tratamento de hiperbilirrubinemia conjugada."
+        },
+        {
+          "if": "Icterícia após 24 horas",
+          "then": "Interpretar bilirrubina em curva por horas de vida, idade gestacional e fatores de neurotoxicidade."
+        },
+        {
+          "if": "Bilirrubina ultrapassa limiar específico de fototerapia",
+          "then": "Iniciar fototerapia e monitorar resposta sem suspender alimentação."
+        },
+        {
+          "if": "Sinais de encefalopatia bilirrubínica ou nível de exsanguineotransfusão",
+          "then": "Suporte neonatal emergencial, fototerapia intensiva e avaliação para exsanguineotransfusão."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "AAP 2022 para ≥35 semanas: indicar fototerapia por bilirrubina TOTAL sérica, idade exata em horas, idade gestacional e fatores de neurotoxicidade; não usar ponto de corte único.",
+            "Fatores como hemólise, sepse, albumina baixa e instabilidade reduzem limiares específicos.",
+            "Fototerapia intensiva conforme aparelho e monitorização; terapias adicionais (imunoglobulina/exsanguineotransfusão) exigem critérios e equipe especializados."
+          ],
+          "title": "Conduta orientada por curvas"
+        },
+        {
+          "items": [
+            "Jamais usar valor fixo universal de bilirrubina: decisões variam com horas de vida, IG e fatores de risco."
+          ],
+          "title": "Conduta operacional revisada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar condutas por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clinicamente e garantir orientação de retorno/seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Programar rechecagem da bilirrubina com base na distância ao limiar de fototerapia, tendência e capacidade de seguimento; avaliar alimentação, perda de peso e sinais neurológicos."
+          ],
+          "title": "Alta e seguimento"
+        },
+        {
+          "items": [
+            "Programar recontrole de bilirrubina após alta e monitorar possível rebote após fototerapia."
+          ],
+          "title": "Seguimento e reavaliação"
+        }
+      ],
+      "red_flags": [
+        "Icterícia nas primeiras 24 horas.",
+        "Sucção fraca, letargia, hipotonia/hipertonia ou choro agudo.",
+        "Elevação rápida da bilirrubina ou hemólise.",
+        "Icterícia conjugada/fezes hipocólicas.",
+        "Icterícia precoce, alteração de sucção/consciência, hipotonia ou hipertonia."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar evolução, doses e resposta ao tratamento.",
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/150/3/e2022058859/188726/Clinical-Practice-Guideline-Revision-Management",
+          "label": "AAP — Clinical Practice Guideline Revision: Hyperbilirubinemia in Newborns ≥35 Semanas"
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/150/3/e2022058859/188726/",
+          "label": "AAP — Hyperbilirubinemia guideline ≥35 semanas (2022)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 158,
+      "slug": "pediatria-sepse-neonatal",
+      "title": "Sepse neonatal",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Sepse neonatal pode apresentar sinais inespecíficos e progredir rapidamente. Avaliação e antibiótico empírico precoce são essenciais quando houver suspeita clínica relevante.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Instabilidade térmica, desconforto respiratório, apneia, má perfusão, letargia ou dificuldade alimentar.",
+            "Distinguir início precoce e tardio conforme idade e fatores perinatais."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Estabilizar ABC, obter culturas e iniciar antibiótico sem atraso em recém-nascido doente.",
+            "Monitorar glicemia e perfusão."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemocultura antes do antibiótico quando possível.",
+            "Punção lombar se estável e houver suspeita de meningite.",
+            "Hemograma e marcadores inflamatórios ajudam, mas não excluem sepse isoladamente."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Neonato com apneia, hipoatividade, má sucção, temperatura instável, hipotensão ou dificuldade respiratória",
+          "then": "Abordar como possível sepse, estabilizar ABC, glicemia e perfusão e iniciar avaliação infecciosa urgente."
+        },
+        {
+          "if": "RN com instabilidade hemodinâmica ou suspeita forte de sepse",
+          "then": "Colher hemocultura sem atrasar antibioticoterapia IV empírica, avaliar líquor quando seguro e internar em unidade neonatal."
+        },
+        {
+          "if": "Sepse precoce nas primeiras 72h e fatores de risco maternos",
+          "then": "Investigar colonização por estreptococo B, corioamnionite e prematuridade; esquema empírico conforme flora neonatal e protocolo."
+        },
+        {
+          "if": "Sepse tardia ou associada a cateter/internação",
+          "then": "Investigar foco e flora hospitalar; cobertura adaptada a resistência local, considerar retirada de dispositivo infectado."
+        },
+        {
+          "if": "Culturas e evolução disponíveis",
+          "then": "Reavaliar indicação de antibiótico em 36–48h quando culturas negativas e clínica incompatível, ou ajustar/durar tratamento conforme foco confirmado."
+        },
+        {
+          "if": "Recém-nascido com apneia, instabilidade térmica, recusa alimentar, letargia ou má perfusão",
+          "then": "Avaliar ABC, glicose e perfusão, colher hemocultura sem atrasar tratamento, iniciar antimicrobiano IV se sepse provável."
+        },
+        {
+          "if": "Suspeita de sepse precoce por fatores perinatais e/ou sintomas",
+          "then": "Estratificar risco materno/neonatal, coletar hemocultura adequada e considerar ampicilina + gentamicina segundo idade/protocolo e epidemiologia."
+        },
+        {
+          "if": "Suspeita de sepse tardia hospitalar, cateter ou foco específico",
+          "then": "Antibiótico ajustado a flora da unidade, culturas e resistência; investigar cateter, meningite e outros focos."
+        },
+        {
+          "if": "Culturas negativas, RN assintomático e baixa probabilidade clínica após observação",
+          "then": "Reavaliar suspensão precoce de antibiótico de acordo com evolução e protocolos de stewardship."
+        },
+        {
+          "if": "Cultura positiva, convulsões ou suspeita de meningite",
+          "then": "Punção lombar quando segura, terapia com adequada penetração no SNC e infectologia/neonatologia."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Esquema neonatal comunitário frequentemente inclui ampicilina e gentamicina, com modificação se suspeita de meningite ou microrganismos resistentes; confirmar doses pela idade gestacional, dias de vida e função renal.",
+            "Culturas, monitorização de glicemia, saturação, pressão e diurese; líquidos e vasoativos de forma individualizada, evitando sobrecarga.",
+            "Se suspeita de meningite, selecionar penetração no LCR e não usar ceftriaxona de rotina em neonatos com risco de interação com cálcio/hiperbilirrubinemia."
+          ],
+          "title": "Antibioticoterapia e suporte"
+        },
+        {
+          "items": [
+            "Hemocultura com volume adequado antes do antibiótico quando sem atraso; evitar manutenção prolongada injustificada de antimicrobianos na sepse não confirmada."
+          ],
+          "title": "Conduta operacional aprimorada"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar condutas por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clinicamente e garantir orientação de retorno/seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Registrar tempo de antibiótico, resultados de hemoculturas, controle de foco e estabilidade respiratória/hemodinâmica; avaliar audição e neurodesenvolvimento em casos complicados."
+          ],
+          "title": "Evolução"
+        },
+        {
+          "items": [
+            "Revisar resultados de culturas em 24–48 horas, função renal, glicose, perfusão e efeitos adversos."
+          ],
+          "title": "Reavaliação dirigida"
+        }
+      ],
+      "red_flags": [
+        "Hipotermia ou febre associada à prostração.",
+        "Apneia, perfusão ruim, choque ou convulsões.",
+        "Sinais de meningite, púrpura e deterioração rápida.",
+        "Apneia, convulsão, choque, hipotermia persistente ou acidose progressiva."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar evolução, doses e resposta ao tratamento.",
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.sbp.com.br/fileadmin/user_upload/23488c-DC_Sepse_neonatal_precoce_e_abordagem_RN_de_risco.pdf",
+          "label": "Sociedade Brasileira de Pediatria — Sepse neonatal precoce e abordagem do recém-nascido de risco"
+        },
+        {
+          "url": "https://www.nice.org.uk/guidance/ng195",
+          "label": "NICE NG195 — Neonatal infection: antibiotics for prevention and treatment, atualizada em maio de 2026"
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/142/6/e20182894/37343/Management-of-Neonates-Born-at-35-0-7-Weeks",
+          "label": "AAP — Management of Neonates Born at ≥35 Weeks With Suspected Early-Onset Bacterial Sepsis"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de gentamicina",
+        "ampicilina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 159,
+      "slug": "pediatria-hipoglicemia-neonatal",
+      "title": "Hipoglicemia neonatal",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Hipoglicemia neonatal requer atenção especial em prematuros, pequenos ou grandes para idade gestacional e filhos de mães diabéticas. O tratamento depende de sintomas e valor glicêmico.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Tremores, letargia, apneia, hipotonia, má sucção ou convulsão.",
+            "Muitos recém-nascidos são assintomáticos; rastrear grupos de risco."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Promover alimentação precoce e pele a pele quando possível.",
+            "Medir glicemia em recém-nascidos de risco conforme protocolo."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Confirmar valores baixos persistentes com método laboratorial quando possível, sem atrasar tratamento.",
+            "Investigar hiperinsulinismo/doença metabólica se persistente."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "RN sintomático com tremores persistentes, apneia, convulsões, letargia ou glicose baixa",
+          "then": "Aferir glicose imediatamente, estabilizar ABC e iniciar glicose IV conforme protocolo neonatal, sem esperar confirmação laboratorial se gravidade."
+        },
+        {
+          "if": "RN assintomático em grupo de risco (prematuro, PIG, GIG, filho de diabética)",
+          "then": "Rastrear glicemia nos horários do protocolo, favorecer alimentação precoce e contato pele a pele, reavaliando após mamada."
+        },
+        {
+          "if": "Hipoglicemia assintomática leve e RN apto a mamar",
+          "then": "Alimentação assistida e considerar gel de glicose bucal 40% conforme disponibilidade/limiar local; repetir medição em prazo curto."
+        },
+        {
+          "if": "Hipoglicemia persistente ou grave apesar de alimentação",
+          "then": "Glicose IV com velocidade de infusão calculada por peso e monitorização seriada; investigar causas e ajustar aporte."
+        },
+        {
+          "if": "Hipoglicemia recorrente, após 48–72 h ou que exige aporte elevado",
+          "then": "Investigar hiperinsulinismo, endocrinopatias, sepse e doença metabólica, com amostra crítica quando seguro."
+        },
+        {
+          "if": "RN de risco assintomático",
+          "then": "Alimentar cedo e realizar rastreio de glicemia conforme horas de vida e risco."
+        },
+        {
+          "if": "Hipoglicemia assintomática elegível nas primeiras 72h",
+          "then": "Oferecer alimentação e gel de glicose bucal 40%, 0,5 mL/kg, se disponível e protocolo permitir; recontrolar."
+        },
+        {
+          "if": "Convulsão, apneia, rebaixamento ou glicemia gravemente baixa",
+          "then": "Glicose IV imediata em esquema neonatal, monitorar e ajustar taxa de infusão conforme resposta."
+        },
+        {
+          "if": "Episódios persistentes após transição neonatal",
+          "then": "Avaliar hiperinsulinismo, sepse e causas endócrinas/metabólicas com neonatologia."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Limiar de intervenção depende de horas de vida, sintomas e risco; não aplicar indiscriminadamente o protocolo de criança maior.",
+            "Sintomáticos/graves podem requerer glicose 10% IV, com bolus e infusão individualizados conforme protocolo neonatal, enquanto se organiza suporte de alimentação.",
+            "Acompanhar glicemia após cada ajuste e não suspender aporte abruptamente; doses, velocidades e metas exigem confirmação pelo serviço neonatal."
+          ],
+          "title": "Suporte metabólico neonatal"
+        },
+        {
+          "items": [
+            "Não extrapolar pontos de corte para crianças maiores: os limiares neonatais variam com horas de vida.",
+            "Gel de glicose não substitui infusão IV no RN sintomático."
+          ],
+          "title": "Condutas e critérios aprimorados"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Ajustar condutas por idade, peso e comorbidades."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Reavaliar clinicamente e garantir orientação de retorno/seguimento."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Documentar glicemias estáveis antes e entre mamadas, alimentação eficaz, causa e plano de rechecagem; episódios persistentes exigem especialista."
+          ],
+          "title": "Alta e segurança"
+        },
+        {
+          "items": [
+            "Confirmar estabilidade glicêmica e alimentação efetiva por ciclos antes da alta."
+          ],
+          "title": "Seguimento recomendado"
+        }
+      ],
+      "red_flags": [
+        "Convulsão, apneia ou prostração associadas à hipoglicemia.",
+        "Glicose baixa persistente apesar de intervenção.",
+        "Recorrência após estabilização ou necessidade de alta taxa de infusão.",
+        "Apneia, convulsões, letargia ou hipoglicemia recorrente grave."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar evolução, doses e resposta ao tratamento.",
+        "items": [
+          "Registrar evolução, doses e resposta ao tratamento."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.rch.org.au/rchcpg/hospital_clinical_guideline_index/Neonatal_Hypoglycaemia/",
+          "label": "Royal Children’s Hospital — Neonatal Hypoglycaemia, diretriz clínica"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25957977/",
+          "label": "Pediatric Endocrine Society — Recomendações para hipoglicemia persistente em lactentes e crianças"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "Glicose 10%"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 160,
+      "slug": "pediatria-reanimacao-neonatal",
+      "title": "Reanimação neonatal",
+      "category": "Pediatria",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Reanimação neonatal prioriza ventilação eficaz. A maioria dos recém-nascidos responde a aquecimento, posicionamento, estímulo e ventilação com pressão positiva; compressões são indicadas se FC permanece <60/min apesar de ventilação eficaz.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "Apneia/gasping ou FC <100/min após passos iniciais.",
+            "FC <60/min após 30 s de ventilação eficaz indica compressões."
+          ],
+          "title": "Reconhecimento"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Aquecer, posicionar via aérea, secar/estimular quando apropriado.",
+            "Ventilar com pressão positiva se apneia/gasping ou FC <100/min.",
+            "Avaliar elevação da FC como principal marcador de ventilação eficaz."
+          ],
+          "title": "Conduta inicial"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Oximetria pré-ductal quando suporte respiratório é necessário.",
+            "ECG pode fornecer FC mais rapidamente em reanimação avançada."
+          ],
+          "title": "Exames"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "Recém-nascido respira/chora, bom tônus e transição fisiológica",
+          "then": "Cuidados de rotina, aquecimento, contato pele a pele e clampeamento oportuno do cordão conforme situação."
+        },
+        {
+          "if": "Apneia/gasping ou FC <100/min após passos iniciais",
+          "then": "Iniciar ventilação com pressão positiva eficaz até 60 segundos de vida; monitorar elevação da frequência cardíaca."
+        },
+        {
+          "if": "FC permanece <100/min apesar de ventilação",
+          "then": "Revisar máscara, posição, permeabilidade e pressão; considerar via aérea alternativa por equipe treinada."
+        },
+        {
+          "if": "FC <60/min após ventilação efetiva e manobras corretivas",
+          "then": "Compressões torácicas coordenadas 3:1 com ventilação, aumentar suporte de O₂ conforme algoritmo e considerar via aérea avançada."
+        },
+        {
+          "if": "FC <60/min após compressões e ventilação efetivas",
+          "then": "Administrar adrenalina IV/UVC/IO 0,01–0,03 mg/kg conforme protocolo neonatal, repetindo quando indicado, e investigar hipovolemia/pneumotórax."
+        },
+        {
+          "if": "Recuperação após reanimação",
+          "then": "Cuidados pós-ressuscitação: glicemia, temperatura, respiração, avaliação neurológica e decisão de UTI neonatal."
+        },
+        {
+          "if": "RN a termo, bom tônus e respiração/choro efetivos",
+          "then": "Cuidados de rotina, termorregulação, pele a pele e clampeamento tardio quando apropriado."
+        },
+        {
+          "if": "Apneia/gasping ou FC <100/min após cuidados iniciais",
+          "then": "Iniciar ventilação com pressão positiva efetiva prontamente e avaliar FC/elevação torácica."
+        },
+        {
+          "if": "FC continua <100/min após ventilação",
+          "then": "Corrigir técnica de ventilação, vedação, posicionamento e via aérea; considerar dispositivo avançado."
+        },
+        {
+          "if": "FC <60/min apesar de ventilação efetiva",
+          "then": "Intubação ou máscara laríngea conforme condições, compressões 3:1 com ventilação e oxigênio conforme protocolo neonatal."
+        },
+        {
+          "if": "FC permanece <60/min após medidas coordenadas",
+          "then": "Adrenalina por acesso venoso umbilical ou IO conforme algoritmo e investigar hipovolemia/pneumotórax."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Preparar equipe e material antes do parto; prevenir hipotermia, avaliar respiração/FC e iniciar ventilação no primeiro minuto se apneia ou FC <100/min.",
+            "VPP normalmente 30–60 insuflações/min conforme diretriz AHA/AAP 2025, buscando elevação da FC.",
+            "Compressões quando FC <60/min mesmo após ventilação efetiva; relação 3:1; adrenalina intravascular apenas se FC continuar <60/min após compressões/ventilação adequadas.",
+            "Oximetria pré-ductal e FiO₂ ajustadas aos alvos por minuto e idade gestacional; não oferecer O₂ a 100% indiscriminadamente desde o nascimento."
+          ],
+          "title": "Prioridade absoluta à ventilação"
+        },
+        {
+          "items": [
+            "Ventilação é a intervenção mais importante na reanimação neonatal. AHA/AAP 2025 prevê 30–60 insuflações/min; ao comprimir, relação 3:1 coordenada."
+          ],
+          "title": "Tratamento — revisão individual"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Individualizar por idade, contexto familiar e condições clínicas."
+          ],
+          "title": "Pontos de atenção"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Monitorar crescimento, resposta e adesão às orientações."
+          ],
+          "title": "Seguimento"
+        },
+        {
+          "items": [
+            "Avaliar glicemia, temperatura e lesões associadas; registrar cronologia de FC, ventilação, compressões e medicações; organizar cuidado neonatal especializado."
+          ],
+          "title": "Pós-ressuscitação e qualidade"
+        },
+        {
+          "items": [
+            "Cuidados pós-reanimação: temperatura, glicose, oxigenação, exame neurológico, documentação e suporte familiar."
+          ],
+          "title": "Acompanhamento orientado"
+        }
+      ],
+      "red_flags": [
+        "Apneia/gasping e FC <100/min.",
+        "FC <60/min apesar de ventilação efetiva.",
+        "Ventilação ineficaz ou deterioração térmica.",
+        "Necessidade de reanimação prolongada ou suspeita de encefalopatia.",
+        "Apneia, FC <60/min persistente, ventilação ineficaz ou hipotermia."
+      ],
+      "notification": {
+        "text": "Registro assistencial: Registrar avaliação, orientações e plano de seguimento.",
+        "items": [
+          "Registrar avaliação, orientações e plano de seguimento."
+        ]
+      },
+      "source_refs": [
+        {
+          "url": "https://www.aap.org/en/pedialink/neonatal-resuscitation-program/neonatal-resuscitation-guidelines/",
+          "label": "AAP — Diretrizes do Programa de Reanimação Neonatal"
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/157/1/e2025074352/205237/Part-5-Neonatal-Resuscitation-2025-American-Heart",
+          "label": "AHA/AAP — Neonatal Resuscitation 2025"
+        },
+        {
+          "url": "https://newsroom.heart.org/news/updated-cpr-guidelines-released-for-pediatric-and-neonatal-emergency-care-and-resuscitation",
+          "label": "Diretriz de referência"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "adrenalina"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    },
+    {
+      "id": 170,
+      "slug": "ginecologia-e-obstetricia-pre-eclampsia",
+      "title": "Pré-eclâmpsia",
+      "category": "Ginecologia e Obstetrícia",
+      "setting": "emergencia",
+      "status": "review_needed",
+      "summary": "Hipertensão de início após 20 semanas (PA ≥140/90 mmHg) com proteinúria e/ou disfunção materna de órgão-alvo, ou comprometimento uteroplacentário. Identificar rapidamente gravidade (PA ≥160 sistólica ou ≥110 diastólica, sintomas neurológicos, alterações hepáticas/renais/hematológicas ou edema pulmonar), estabilizar e definir local e momento do parto.",
+      "tags": [],
+      "suspicion": [
+        {
+          "items": [
+            "PA sistólica ≥140 ou diastólica ≥90 mmHg a partir de 20 semanas, confirmada com técnica adequada; se ≥160/110, confirmar em curto intervalo (cerca de 15 minutos) e tratar sem aguardar quatro horas.",
+            "Cefaleia persistente, escotomas, dor em epigástrio/hipocôndrio direito, dispneia, oligúria ou piora abrupta do edema sugerem gravidade, mesmo sem proteinúria.",
+            "Investigar pré-eclâmpsia sobreposta à hipertensão crônica e apresentação no puerpério."
+          ],
+          "title": "Quando suspeitar"
+        }
+      ],
+      "initial_actions": [
+        {
+          "items": [
+            "Verificar PA com manguito apropriado, sinais vitais, saturação, estado neurológico, débito urinário e presença de sinais de edema pulmonar; avaliar idade gestacional e vitalidade fetal.",
+            "PA grave persistente (≥160 sistólica OU ≥110 diastólica): acesso venoso, avaliação obstétrica urgente e anti-hipertensivo de ação rápida segundo protocolo institucional.",
+            "Se critérios graves/iminência de eclâmpsia: iniciar sulfato de magnésio e monitorização hospitalar, além de controle pressórico; não aguardar resultado de proteinúria.",
+            "Evitar sobrecarga volêmica e envolver obstetrícia de alto risco/anestesia conforme gravidade."
+          ],
+          "title": "Primeiros minutos"
+        }
+      ],
+      "exams": [
+        {
+          "items": [
+            "Hemograma com plaquetas, creatinina, AST/ALT, relação proteína/creatinina urinária ou proteinúria de 24h conforme disponibilidade; solicitar DHL/bilirrubinas/coagulograma quando suspeita de HELLP ou sangramento.",
+            "Proteinúria significativa: ≥300 mg/24h ou relação proteína/creatinina ≥0,3 mg/mg; sua ausência não exclui pré-eclâmpsia com disfunção orgânica.",
+            "Avaliar crescimento fetal e líquido amniótico por ultrassonografia; Doppler e cardiotocografia/testes de vitalidade conforme indicação e idade gestacional."
+          ],
+          "title": "Diagnóstico e estratificação"
+        }
+      ],
+      "decision_flow": [
+        {
+          "if": "PA ≥160 sistólica ou ≥110 diastólica persistente, sintomas graves, disfunção orgânica ou comprometimento materno-fetal",
+          "then": "Emergência obstétrica: internar, controlar PA rapidamente, iniciar magnésio quando indicado e planejar parto após estabilização; não manejar em ambulatório."
+        },
+        {
+          "if": "Pré-eclâmpsia sem sinais graves com ≥37 semanas",
+          "then": "Programar resolução da gestação após avaliação obstétrica, mantendo vigilância materno-fetal."
+        },
+        {
+          "if": "Pré-eclâmpsia sem sinais graves com <37 semanas",
+          "then": "Vigilância clínica/laboratorial e fetal frequente em serviço habilitado; individualizar acompanhamento e critérios de internação."
+        },
+        {
+          "if": "Pré-eclâmpsia com critérios graves com ≥34 semanas ou agravamento em qualquer idade",
+          "then": "Após estabilização, indicar resolução gestacional; não atrasar diante de instabilidade, eclâmpsia, HELLP progressiva, edema pulmonar ou condição fetal crítica."
+        },
+        {
+          "if": "Pré-eclâmpsia grave antes de 34 semanas e mãe/feto estáveis",
+          "then": "Conduta expectante apenas em centro de referência com monitorização intensiva e plano de interrupção imediato se houver deterioração."
+        }
+      ],
+      "treatment": [
+        {
+          "items": [
+            "Hipertensão grave persistente: nifedipino oral de liberação imediata ou hidralazina intravenosa conforme protocolo, reavaliando PA e perfusão; evitar hipotensão excessiva.",
+            "Para controle sustentado, escolher anti-hipertensivo compatível com gestação e condições maternas; não usar IECA/BRA durante gestação."
+          ],
+          "title": "Controle da hipertensão"
+        },
+        {
+          "items": [
+            "Sulfato de magnésio é indicado nos quadros com sinais de gravidade/iminência de eclâmpsia; monitorar reflexos, respiração e diurese e manter gluconato de cálcio disponível.",
+            "A resolução da gestação é o tratamento definitivo; a via de parto depende de indicação obstétrica, não apenas do diagnóstico.",
+            "AAS em baixa dose e suplementação de cálcio são medidas preventivas para grupos indicados, não substituem tratamento da pré-eclâmpsia instalada."
+          ],
+          "title": "Prevenção de convulsões e obstetrícia"
+        }
+      ],
+      "special_situations": [
+        {
+          "items": [
+            "Considerar HELLP com plaquetopenia, hemólise e citólise; envolver equipe multiprofissional e banco de sangue quando necessário.",
+            "A doença pode surgir ou piorar até dias após o parto. Manter vigilância pressórica e educação sobre sinais de alarme no puerpério.",
+            "Individualizar corticoterapia para maturação fetal na prematuridade sem postergar parto urgente por instabilidade materna ou fetal."
+          ],
+          "title": "Condições especiais"
+        }
+      ],
+      "follow_up": [
+        {
+          "items": [
+            "Na internação: PA seriada, sintomas, balanço hídrico, plaquetas/creatinina/transaminases e avaliação fetal conforme evolução.",
+            "Após parto: monitorar PA e complicações, reavaliar anti-hipertensivos e informar sinais de retorno imediato; planejar revisão precoce da PA, especialmente nos primeiros 7–10 dias.",
+            "Em seguimento: reavaliar normalização pressórica, função renal e risco cardiovascular futuro; orientar planejamento reprodutivo."
+          ],
+          "title": "Monitorização e alta"
+        }
+      ],
+      "red_flags": [
+        "PA ≥160/110 mmHg persistente.",
+        "Cefaleia intensa refratária, alterações visuais, convulsão.",
+        "Dispneia/edema pulmonar, oligúria ou elevação rápida de creatinina.",
+        "Epigastralgia importante, plaquetopenia/HELLP ou sangramento.",
+        "Sinais de descolamento placentário ou comprometimento fetal."
+      ],
+      "notification": {
+        "text": "Registrar critérios, idade gestacional, exames, PA seriada, condutas e plano obstétrico; investigar e notificar eventos maternos graves conforme fluxo de vigilância local.",
+        "required": false
+      },
+      "source_refs": [
+        {
+          "url": "https://site.homolog.febrasgo.org.br/noticia/sindromes-hipertensivas-da-gravidez/",
+          "label": "FEBRASGO — Síndromes hipertensivas da gravidez: diagnóstico e manejo"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/pre-eclampsia-condicao-exige-atencao-e-acompanhamento-pre-natal-rigoroso-para-proteger-mae-e-bebe/",
+          "label": "FEBRASGO — Pré-eclâmpsia e acompanhamento (2026)"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n19%20-%20O%20-%20Hipertens%C3%A3o%20na%20gesta%C3%A7%C3%A3o.pdf",
+          "label": "FEBRASGO — Hipertensão arterial crônica e gravidez, protocolo 19 (2024)"
+        }
+      ],
+      "linked_recipe_slugs": [],
+      "linked_drug_terms": [
+        "sulfato de magnésio",
+        "hidralazina",
+        "nifedipino"
+      ],
+      "reviewed_at": null,
+      "created_at": "2026-09-29 04:52:07.724196+00",
+      "updated_at": "2026-10-17 06:11:46.871979+00",
+      "image_assets": [],
+      "clinical_image_required": false,
+      "clinical_image_types": [],
+      "clinical_image_priority": null,
+      "clinical_image_note": null
+    }
+  ]
+}
