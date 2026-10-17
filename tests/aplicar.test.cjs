@@ -23,18 +23,17 @@ test('Arquitetura de arquivos da nova seção Aplicar', () => {
 test('Estrutura HTML e acessibilidade de aplicar/index.html', () => {
   const html = fs.readFileSync('aplicar/index.html', 'utf8');
   assert(html.includes('data-page="aplicar"'), 'Body deve ter data-page="aplicar"');
-  assert(html.includes('id="aplicar-panel-editais"'), 'Deve conter painel de editais');
-  assert(html.includes('id="aplicar-panel-vocacao"'), 'Deve conter painel de vocação');
-  assert(html.includes('id="aplicar-panel-radar"'), 'Deve conter painel de radar');
-  assert(html.includes('id="aplicar-panel-hall"'), 'Deve conter painel do hall');
-  assert(html.includes('aplicar-hall-tools'), 'Deve conter grid de ferramentas do hall');
-  assert(!html.includes('class="tool-card-illustration"'), 'Não deve conter ilustrações SVG invasivas dentro dos cards do hall');
-  assert(html.includes('Editais e Provas'), 'Deve conter título do card editais');
-  assert(html.includes('Vocação Médica'), 'Deve conter título do card vocação');
-  assert(html.includes('Radar de Provas'), 'Deve conter título do card radar');
-  assert(html.includes('id="editais-own-content"'), 'Deve reaproveitar editais-own-content');
-  assert(html.includes('id="editais-catalog-content"'), 'Deve reaproveitar editais-catalog-content');
-  assert(html.includes('id="exam-dialog"'), 'Deve conter exam-dialog');
+  assert(html.includes('class="luria-page-spotlight"'), 'Deve conter spotlight banner');
+  assert(html.includes('class="cv-nav"'), 'Deve conter navegação por abas/pills');
+  assert(html.includes('class="cv-hub"'), 'Deve conter grid de cartões da central');
+  assert(html.includes('href="/editais/"'), 'Deve conter link para editais');
+  assert(html.includes('href="/aplicar/curriculo/"'), 'Deve conter link para currículo');
+  assert(html.includes('href="/aplicar/radar/"'), 'Deve conter link para radar');
+  assert(html.includes('href="/vocacao/"'), 'Deve conter link para mapa de interesses');
+  assert(html.includes('Editais e provas'), 'Deve conter título do card editais');
+  assert(html.includes('Currículo & Lattes'), 'Deve conter título do card currículo');
+  assert(html.includes('Radar de provas'), 'Deve conter título do card radar');
+  assert(html.includes('Mapa de interesses'), 'Deve conter título do card vocação');
 });
 
 test('Navegação e sidebar em app.js', () => {

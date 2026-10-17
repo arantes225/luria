@@ -156,26 +156,38 @@
   justify-content: center;
   gap: 8px;
   min-height: 48px;
-  padding: 12px 21px;
-  background: var(--color-primary);
-  color: var(--color-primary-foreground);
-  border: 1px solid transparent;
-  border-radius: 11px;
-  font-size: 13px;
+  padding: 12px 24px;
+  background: var(--ui-pill-gradient, linear-gradient(135deg, #1d72fe 0%, #155dfc 100%)) !important;
+  color: #ffffff !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px;
+  font-size: 13.5px;
   font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 28%, transparent);
   transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    filter 0.18s ease;
 }
 .luria-game .g-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px #18488820;
+  filter: brightness(1.08);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 38%, transparent);
 }
 .luria-game .g-secondary {
-  background: var(--color-surface);
-  color: var(--color-primary-text);
-  border-color: var(--color-border);
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border-interactive) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.luria-game .g-secondary:hover:not(:disabled) {
+  background: var(--color-surface-elevated) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary-text) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
 }
 .luria-game .g-actions {
   display: flex;
