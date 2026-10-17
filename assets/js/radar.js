@@ -5,26 +5,26 @@
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const el = (tag, text, cls) => { const n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n; };
   let data, bank, area = areas[0];
-  function profiles() { return bank.medcof?.perfis || []; }
+  function profiles() { return bank.historical?.perfis || []; }
   function selectBank() {
     bank = data.provas.find(p => p.prova === $('radar-bank').value);
     $('radar-profile').replaceChildren(...profiles().map(p => { const o = el('option', p.perfil); o.value = p.perfil; return o; }));
     $('radar-profile-field').hidden = profiles().length < 2;
-    $('radar-source').value = profiles().length ? 'medcof' : 'aristo';
+    $('radar-source').value = profiles().length ? 'historical' : 'editorial';
     $('radar-source').options[0].disabled = !profiles().length;
-    $('radar-source').options[1].disabled = !bank.aristo;
+    $('radar-source').options[1].disabled = !bank.editorial;
     render();
   }
   function render() {
-    const fromMedcof = $('radar-source').value === 'medcof';
+    const fromHistorical = $('radar-source').value === 'historical';
     const profile = profiles().find(p => p.perfil === $('radar-profile').value) || profiles()[0];
-    const all = fromMedcof ? profile?.areas[area] || [] : bank.aristo?.temas.filter(t => t.area === area) || [];
+    const all = fromHistorical ? profile?.areas[area] || [] : bank.editorial?.temas.filter(t => t.area === area) || [];
     const query = normalize($('radar-search').value.trim());
     const rows = all.filter(t => normalize(t.tema).includes(query));
     $('radar-area-title').textContent = area;
     $('radar-count').textContent = `${rows.length} tema${rows.length === 1 ? '' : 's'}`;
-    $('radar-summary').textContent = fromMedcof ? 'Ordem pela contagem publicada entre os temas selecionados no artigo. Empates compartilham a posição.' : 'Destaques gerais com área explicitamente identificada no mapa. Ordem editorial preservada; sem contagens de questões.';
-    $('radar-period').textContent = fromMedcof ? `Recorte: ${bank.medcof.fonte.periodo_descrito || 'anos das questões não explicitados no artigo'}.` : 'Recorte: últimos três anos, conforme o material de 2026.';
+    $('radar-summary').textContent = fromHistorical ? 'Ordem pela contagem publicada entre os temas selecionados no artigo. Empates compartilham a posição.' : 'Destaques gerais com área explicitamente identificada no mapa. Ordem editorial preservada; sem contagens de questões.';
+    $('radar-period').textContent = fromHistorical ? `Recorte: ${bank.historical.fonte.periodo_descrito || 'anos das questões não explicitados no artigo'}.` : 'Recorte: últimos três anos, conforme o material de 2026.';
     const list = $('radar-list'); list.replaceChildren();
     if (!rows.length) {
       const empty = el('div', undefined, 'cv-empty');
@@ -33,29 +33,29 @@
     }
     rows.forEach(t => {
       const item = el('li', undefined, 'radar-topic');
-      const rank = el('span', fromMedcof ? String(t.posicao).padStart(2, '0') : '•', 'radar-rank'); rank.setAttribute('aria-label', fromMedcof ? `Posição ${t.posicao}` : 'Destaque editorial');
+      const rank = el('span', fromHistorical ? String(t.posicao).padStart(2, '0') : '•', 'radar-rank'); rank.setAttribute('aria-label', fromHistorical ? `Posição ${t.posicao}` : 'Destaque editorial');
       const copy = el('div', undefined, 'radar-topic-copy'); copy.append(el('h3', t.tema));
-      if (fromMedcof) copy.append(el('small', t.subarea_fonte || t.area_fonte));
+      if (fromHistorical) copy.append(el('small', t.subarea_fonte || t.area_fonte));
       else copy.append(el('small', 'Destaque editorial · página 3'));
       item.append(rank, copy);
-      if (fromMedcof) item.append(el('span', `${t.questoes_publicadas} questões`, 'radar-value'));
+      if (fromHistorical) item.append(el('span', `${t.questoes_publicadas} questões`, 'radar-value'));
       list.append(item);
     });
     const notes = $('radar-notes'); notes.replaceChildren();
-    if (fromMedcof) {
-      (bank.medcof.observacoes || []).forEach(text => notes.append(el('p', text)));
-      const blocked = bank.medcof.revisao || 0;
+    if (fromHistorical) {
+      (bank.historical.observacoes || []).forEach(text => notes.append(el('p', text)));
+      const blocked = bank.historical.revisao || 0;
       if (blocked) notes.append(el('p', `${blocked} entrada(s) desta análise ficaram fora da ordenação por precisarem de revisão ou não serem temas específicos.`));
     } else notes.append(el('p', 'Os destaques sem classificação explícita de área permanecem na referência geral abaixo. Ausência nesta lista não significa ausência na prova.'));
     notes.hidden = !notes.childElementCount;
-    $('radar-aristo').hidden = !bank.aristo;
-    $('radar-aristo-list').replaceChildren(...(bank.aristo?.geral || []).map(t => el('li', t)));
+    $('radar-editorial').hidden = !bank.editorial;
+    $('radar-editorial-list').replaceChildren(...(bank.editorial?.geral || []).map(t => el('li', t)));
     document.querySelectorAll('[data-radar-area]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.radarArea === area)));
     $('radar-status').textContent = `${bank.prova} · ${area} · ${rows.length} temas exibidos`;
   }
   async function init() {
     try {
-      const response = await fetch('/assets/data/radar-provas.json?v=20261016-radar2');
+      const response = await fetch('/assets/data/radar-provas.json?v=20261017-neutral1');
       if (!response.ok) throw Error('Dados indisponíveis');
       data = await response.json();
       $('radar-bank').replaceChildren(...data.provas.map(p => { const o = el('option', p.prova); o.value = p.prova; return o; }));

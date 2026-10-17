@@ -7,9 +7,9 @@
 
 ## Etapa zero — benchmark de amplitude e lacunas
 
-Pesquisados no Drive materiais de “rastreamento”, “screening”, “prevenção quaternária” e “medicina preventiva”; não foi identificado caderno específico cobrindo a teoria global do rastreamento. Foram **abertos e lidos** dois resumos correlatos, “03 - COLO DE UTERO .pdf” (aprox. 9,5 mil caracteres) e “MASTOLOGIA.pdf” (aprox. 2,7 mil caracteres). São comparativos **parciais**, com foco clínico em câncer; não substituem apostila transversal de prevenção ou epidemiologia. Autoria institucional Estratégia MED não comprovada. Não copiar texto, quadros ou figuras.
+Pesquisados no Drive materiais de “rastreamento”, “screening”, “prevenção quaternária” e “medicina preventiva”; não foi identificado caderno específico cobrindo a teoria global do rastreamento. Foram **abertos e lidos** dois resumos correlatos, “03 - COLO DE UTERO .pdf” (aprox. 9,5 mil caracteres) e “MASTOLOGIA.pdf” (aprox. 2,7 mil caracteres). São comparativos **parciais**, com foco clínico em câncer; não substituem apostila transversal de prevenção ou epidemiologia. Autoria institucional material de referência não comprovada. Não copiar texto, quadros ou figuras.
 
-**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de cursinho rapidamente envelhecem em temas normativos.
+**Lacuna importante nas referências comparativas:** o material do colo indica início/periodicidade citológica antigos e descreve rastreamento predominantemente por Papanicolau, sem incorporar as Diretrizes Brasileiras de rastreamento organizado por teste molecular de DNA-HPV de 2025. O resumo de mastologia cita mamografia de rastreamento de 50–69 anos no SUS, enquanto nota técnica do Ministério da Saúde divulgada em setembro de 2025 passou a recomendar **50–74 anos, a cada dois anos** para população de risco habitual. Assim, o comparativo é útil sobretudo para explicitar que materiais de material de estudo rapidamente envelhecem em temas normativos.
 
 **Inventário LURIA:** não foi identificada pasta específica com este nome no diretório nominal de apostilas examinado; produzir em rascunho. A inexistência do diretório não prova ausência total de conteúdo relacionado em capítulos de outras apostilas.
 
@@ -259,7 +259,7 @@ D. Encaminhar para investigação diagnóstica conforme protocolo, com garantia 
 9. Fluxo de decisão compartilhada.
 10. Infográfico de prevenção quaternária e cascata diagnóstica.
 
-Elementos novos devem ser produzidos sem cópia de imagens de cursinhos; exames reais só serão submetidos ao Admin depois de checar licença, autoria, qualidade e consentimento quando aplicável.
+Elementos novos devem ser produzidos sem cópia de imagens de material de estudo; exames reais só serão submetidos ao Admin depois de checar licença, autoria, qualidade e consentimento quando aplicável.
 
 ## 15. Referências verificadas
 1. Ministério da Saúde. **Como funciona o rastreamento do câncer no SUS?** 28/04/2026. https://www.gov.br/saude/pt-br/composicao/saes/atencao-ao-cancer/faq/faq/como-funciona-o-rastreamento-do
@@ -291,7 +291,7 @@ Elementos novos devem ser produzidos sem cópia de imagens de cursinhos; exames 
 ---
 
 # NÚCLEO AVANÇADO — INTERPRETAR E OPERACIONALIZAR O RASTREAMENTO
-**Revisão de 15/10/2026; complementa as seções 1–16.** Etapa zero repetida nesta rodada: os arquivos de Drive "MASTOLOGIA.pdf" (~2.720 caracteres) e "03 - COLO DE UTERO .pdf" (~9.477) foram abertos e lidos. Ambos contêm abordagem comparável de rastreamento de câncer, mas não uma apostila integral de epidemiologia clínica/prevenção quaternária. O primeiro descreve o intervalo antigo INCA 50–69 e um posicionamento de sociedade desde 40 anos; o segundo detalha citologia anterior à transição DNA-HPV e manejo de lesões cervicais. A autoria do Estratégia MED não foi demonstrada. Esses resumos foram usados apenas para mapear lacunas, **não como base normativa atual nem como fonte textual reproduzida**. Foram consultados INCA/MS 2025–2026, USPSTF 2024, diretrizes brasileiras de DNA-HPV 2025, comunicação INCA FIT agosto/2026 e materiais metodológicos da OMS/IARC.
+**Revisão de 15/10/2026; complementa as seções 1–16.** Etapa zero repetida nesta rodada: os arquivos de Drive "MASTOLOGIA.pdf" (~2.720 caracteres) e "03 - COLO DE UTERO .pdf" (~9.477) foram abertos e lidos. Ambos contêm abordagem comparável de rastreamento de câncer, mas não uma apostila integral de epidemiologia clínica/prevenção quaternária. O primeiro descreve o intervalo antigo INCA 50–69 e um posicionamento de sociedade desde 40 anos; o segundo detalha citologia anterior à transição DNA-HPV e manejo de lesões cervicais. A autoria do material de referência não foi demonstrada. Esses resumos foram usados apenas para mapear lacunas, **não como base normativa atual nem como fonte textual reproduzida**. Foram consultados INCA/MS 2025–2026, USPSTF 2024, diretrizes brasileiras de DNA-HPV 2025, comunicação INCA FIT agosto/2026 e materiais metodológicos da OMS/IARC.
 
 ## 17. Rastreamento como intervenção longitudinal, não como pedido de exame
 

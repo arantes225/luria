@@ -13,9 +13,9 @@ Não foi identificado diretório específico “história natural da doença” 
 **Drive pesquisado:** “história natural”, “níveis de prevenção”, “medicina preventiva”, “prevenção primária”. Não foi localizado livro integral desse tema. Foram abertos e lidos:
 - “SUS.pdf”, aprox. 2,7 mil caracteres, com princípios de universalidade, integralidade e equidade, organização assistencial e participação social;
 - “Estudos Epidemiológicos.pdf”, aprox. 3,1 mil caracteres, que cita coortes como estudo capaz de examinar incidência e história natural, bem como medidas epidemiológicas;
-- correlatos de prevenção encontrados nos resultados, sem comprovação de equivalência ou autoria editorial Estrategia MED.
+- correlatos de prevenção encontrados nos resultados, sem comprovação de equivalência ou autoria editorial material de referência.
 
-Esses resumos são **parciais** e não comprovam autoria da Estratégia MED; não reproduzir frases, figuras ou estrutura. O comparativo da aula 125 com colo do útero e mastologia permanece fonte de contraste curricular, não deve ser repetido. Este rascunho distingue fontes do Drive de literatura histórica e diretrizes atuais.
+Esses resumos são **parciais** e não comprovam autoria da material de referência; não reproduzir frases, figuras ou estrutura. O comparativo da aula 125 com colo do útero e mastologia permanece fonte de contraste curricular, não deve ser repetido. Este rascunho distingue fontes do Drive de literatura histórica e diretrizes atuais.
 
 ## 1. Por que estudar história natural antes de memorizar exames?
 
@@ -626,7 +626,7 @@ A LURIA pode produzir esquemas originais internamente. Imagens clínicas reais d
 
 ## 17A. Referências e comparação atualizadas nesta rodada
 
-**Etapa zero:** a equipe abriu e releu “SUS.pdf” (2.670 caracteres extraídos) e “Estudos Epidemiológicos.pdf” (3.081) do Drive em 15/10/2026, com autoria institucional do Estratégia MED **não identificada**. São resumos de princípios do SUS e desenhos de estudos, não livro abrangente sobre história natural e prevenção. O rascunho LURIA existente foi auditado antes de inserir mecanismos causais, prevenção populacional, território, transição epidemiológica e linha de cuidado. Não foram reproduzidos textos/ilustrações dos comparativos. A aula 125 foi usada como fronteira: manter rastreamentos, matemática de testes e políticas de detecção específicas **lá**, não repetir aqui.
+**Etapa zero:** a equipe abriu e releu “SUS.pdf” (2.670 caracteres extraídos) e “Estudos Epidemiológicos.pdf” (3.081) do Drive em 15/10/2026, com autoria institucional do material de referência **não identificada**. São resumos de princípios do SUS e desenhos de estudos, não livro abrangente sobre história natural e prevenção. O rascunho LURIA existente foi auditado antes de inserir mecanismos causais, prevenção populacional, território, transição epidemiológica e linha de cuidado. Não foram reproduzidos textos/ilustrações dos comparativos. A aula 125 foi usada como fronteira: manter rastreamentos, matemática de testes e políticas de detecção específicas **lá**, não repetir aqui.
 
 - Brasil. **Lei nº 8.080, de 19 de setembro de 1990**, art. 3º, com redação da Lei 12.864/2013, determinantes/condicionantes da saúde. https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
 - Brasil. **Lei nº 8.142, de 28 de dezembro de 1990**, participação da comunidade e transferências de recursos na saúde. https://www.planalto.gov.br/ccivil_03/leis/l8142.htm

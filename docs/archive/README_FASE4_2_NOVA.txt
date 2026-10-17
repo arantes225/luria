@@ -77,7 +77,7 @@ Com menos de 3 erros na área, o Dashboard mostra "poucos dados".
 PDF
 
 Nesta versão, o parser funciona com PDFs que possuem texto selecionável,
-como o exemplo Aristo usado no desenvolvimento.
+como o exemplo formato-numerado usado no desenvolvimento.
 
 PDFs que sejam apenas imagens/scans ainda não passam por OCR automático.
 Isso pode ser adicionado depois.

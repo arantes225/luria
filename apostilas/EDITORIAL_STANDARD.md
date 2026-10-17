@@ -1,14 +1,14 @@
 # Padrão editorial das Apostilas LURIA
 
-## Etapa zero obrigatória: benchmark no Drive (prioridade Estratégia MED)
+## Etapa zero obrigatória: benchmark no Drive (prioridade material de referência)
 
-**ANTES de criar, ampliar ou editar conteúdo médico de qualquer apostila LURIA, buscar, abrir e ler uma apostila semelhante no Google Drive conectado. Priorizar materiais do Estratégia MED quando a autoria for verificável.** Esta regra também vale ao continuar revisões previamente iniciadas. Localizar o nome de um arquivo na busca, sem examinar o conteúdo, não satisfaz a etapa.
+**ANTES de criar, ampliar ou editar conteúdo médico de qualquer apostila LURIA, buscar, abrir e ler uma apostila semelhante no Google Drive conectado. Priorizar materiais do material de referência quando a autoria for verificável.** Esta regra também vale ao continuar revisões previamente iniciadas. Localizar o nome de um arquivo na busca, sem examinar o conteúdo, não satisfaz a etapa.
 
 **Roteiro de execução obrigatório:**
-1. Pesquisar o nome exato, sinônimos, siglas e condições correlatas no Drive; preferir apostila completa do Estratégia MED com tema equivalente. Confirmar a instituição por elementos do arquivo, não apenas deduzir pelo nome ou pelo padrão numérico.
+1. Pesquisar o nome exato, sinônimos, siglas e condições correlatas no Drive; preferir apostila completa do material de referência com tema equivalente. Confirmar a instituição por elementos do arquivo, não apenas deduzir pelo nome ou pelo padrão numérico.
 2. Abrir e inspecionar efetivamente o material: sumário, cobertura de tópicos, profundidade, sequenciamento pedagógico, tabelas, fluxogramas, diagramas, casos, imagens clínicas e questões.
 3. Comparar a apostila existente da LURIA com o material do Drive e diretrizes científicas atuais. Elaborar matriz de lacunas por capítulo: presente e bom / superficial / ausente / redundante / possivelmente desatualizado; localizar exatamente onde cada melhoria deve entrar.
-4. **Criar conteúdo inteiramente original.** Usar o cursinho como referência de cobertura e didática, jamais copiar ou parafrasear de perto seus textos, questões, figuras, tabelas, imagens ou projeto gráfico protegido. Para fatos médicos, doses e condutas, confirmar nas diretrizes oficiais e bibliografia científica vigente. Preservar o visual próprio da LURIA.
+4. **Criar conteúdo inteiramente original.** Usar o material de estudo como referência de cobertura e didática, jamais copiar ou parafrasear de perto seus textos, questões, figuras, tabelas, imagens ou projeto gráfico protegido. Para fatos médicos, doses e condutas, confirmar nas diretrizes oficiais e bibliografia científica vigente. Preservar o visual próprio da LURIA.
 5. Se não houver referência exatamente equivalente, examinar o material mais próximo e declarar quais tópicos ele não cobre. Se não for possível abrir nenhum comparável adequado, registrar a lacuna e **não certificar** a revisão como finalizada; trabalho preparatório ainda pode prosseguir desde que seja identificado como parcial.
 6. Ao fim, conferir que o estudante aprende integralmente com **somente a apostila LURIA**, dentro do padrão de 60.000 caracteres didáticos úteis, sem redundâncias nem transformar tabelas, esquemas e fluxos em textos longos.
 7. Registrar no controle editorial o nome da referência, data, se foi de fato aberta/lida, tópicos comparados, matriz de lacunas, mudanças realizadas e pendências. Não colocar identificadores ou URLs de documentos privados do Drive no GitHub público.
@@ -21,13 +21,13 @@
 
 **Não criar, reescrever, ampliar, revisar conteúdo ou reformular a apresentação de apostila sem primeiro abrir e examinar um material semelhante disponível no Google Drive do projeto.** Essa consulta é parte do trabalho, e não uma sugestão para uma etapa futura. Aplicar a regra também a ajustes individuais, a revisões em lote e a materiais já publicados.
 
-**Ordem de prioridade:** (1) apostila da mesma matéria produzida pelo **Estratégia MED**, quando identificada de forma verificável no Drive; (2) outro material do Estratégia MED da especialidade ou dos mesmos sistemas; (3) outra apostila de residência do Drive sobre a matéria; (4) material próximo que permita comparação parcial. Não presumir que um PDF pertence ao Estratégia MED só por conter termos médicos: confirmar capa, identificação institucional ou metadados. Quando nenhum material correlato estiver acessível, **interromper a revisão e solicitar acesso/referência**, em vez de declarar a checagem realizada.
+**Ordem de prioridade:** (1) apostila da mesma matéria produzida pelo **material de referência**, quando identificada de forma verificável no Drive; (2) outro material do material de referência da especialidade ou dos mesmos sistemas; (3) outra apostila de residência do Drive sobre a matéria; (4) material próximo que permita comparação parcial. Não presumir que um PDF pertence ao material de referência só por conter termos médicos: confirmar capa, identificação institucional ou metadados. Quando nenhum material correlato estiver acessível, **interromper a revisão e solicitar acesso/referência**, em vez de declarar a checagem realizada.
 
 ### Passos obrigatórios antes de começar a editar
 1. Buscar no Drive pelo tema exato, sinônimos, siglas, doenças fundamentais e especialidade; identificar um documento correspondente. Abrir o arquivo e **examinar efetivamente seu conteúdo**, não apenas nome, miniatura ou resultado de pesquisa. Se necessário, conferir páginas e elementos visuais para compreender a estrutura didática.
 2. Levantar sumário, sequência de raciocínio, tópicos, nível de aprofundamento, tabelas, mapas, imagens diagnósticas, algoritmos, casos clínicos e aplicação em prova. Comparar com a apostila LURIA existente e registrar **lacunas concretas e pontos fortes a preservar**.
 3. Usar a comparação como **benchmark de escopo e experiência de aprendizagem**, não como licença para copiar: escrever texto, tabelas, casos, diagramas e elementos gráficos originais da LURIA; não transcrever, parafrasear de perto, replicar ilustrações ou publicar imagens de terceiros sem licença e aprovação.
-4. Atualizar decisões clínicas com documentos científicos primários e diretrizes vigentes, prioritariamente FEBRASGO, Ministério da Saúde e sociedades relevantes. Material de cursinho serve para comparação pedagógica; não substitui conferência técnica.
+4. Atualizar decisões clínicas com documentos científicos primários e diretrizes vigentes, prioritariamente FEBRASGO, Ministério da Saúde e sociedades relevantes. Material de material de estudo serve para comparação pedagógica; não substitui conferência técnica.
 5. Registrar para rastreabilidade: nome e link do(s) documento(s) consultado(s), origem editorial confirmada ou não, data da consulta, escopo efetivamente examinado, lacunas identificadas e medidas aplicadas. **Não marcar a apostila como revisada sem referência comparativa do Drive registrada.**
 6. Preservar o padrão de design LURIA: conferir primeiro apostila semelhante **já padronizada no próprio site**, além do benchmark do Drive, para garantir menus, tipografia, espaçamentos, tabelas, diagramas, identidade visual e responsividade desktop/PWA. O livro de terceiros nunca deve ser reproduzido visualmente de modo a confundir a identidade das marcas.
 
@@ -37,7 +37,7 @@
 
 ## Regra inegociável — autossuficiência integral para estudo de residência
 
-**Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila LURIA é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar cursinho, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
+**Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila LURIA é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar material de estudo, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
 
 ### O que a autossuficiência exige na prática
 1. **Ensinar pré-requisitos no momento em que forem necessários.** Explicar termos, anatomia, fisiologia, exames e farmacologia indispensáveis antes de utilizá-los em decisões clínicas; conceitos transversais podem receber remissão interna funcional somente se já tiverem sido efetivamente ensinados nesta mesma apostila.
@@ -63,7 +63,7 @@
 
 - **Aprofundamento aditivo e localizado:** ampliar causas, mecanismos, sinais, diagnóstico diferencial, interpretação de exames, escolhas de conduta, exceções, complicações e seguimento no capítulo da doença ou sistema correspondente; nunca despejar apêndice genérico ao final.
 - **Os visuais continuam ensinando:** manter e, quando cabível, aprofundar tabelas, algoritmos, fluxogramas, esquemas, mapas mentais, callouts, quadros e imagens aprovadas. Explicações breves e causais acompanham a figura ou o ponto de decisão; não substituir a figura por várias páginas de prosa nem escrever por extenso tudo que a tabela já comunica.
-- **Leitura como cursinho premium:** alternar parágrafos enxutos e conectados, subtítulos informativos e recursos visuais pertinentes; utilizar casos, comparação de entidades, valores de exames e decisões clínicas para ensinar fatos novos. Cortar redundância mesmo quando isso reduzir a contagem — depois completar com ciência útil, não enchimento.
+- **Leitura como material de estudo premium:** alternar parágrafos enxutos e conectados, subtítulos informativos e recursos visuais pertinentes; utilizar casos, comparação de entidades, valores de exames e decisões clínicas para ensinar fatos novos. Cortar redundância mesmo quando isso reduzir a contagem — depois completar com ciência útil, não enchimento.
 - **Revisão de repetição:** verificar se dois blocos, tabelas ou casos transmitem a mesma conclusão sem ganho real. Consolidar o redundante, preservar o melhor recurso e preencher lacunas em outro ponto. Novos blocos precisam responder uma pergunta ainda não respondida na apostila.
 - **Condição de conclusão:** >=60.000 caracteres úteis *e* autossuficiência demonstrada em matriz de cobertura e teste de questões, revisão clínica, de redundância, fontes/doses, layout desktop/PWA, imagens e navegação. Bater o número não gera selo automático.
 
@@ -258,14 +258,14 @@ Uma apostila revisada só pode ser considerada concluída se:
 
 ---
 
-## Referência visual de cursinho — Drive, auditoria de 12/10/2026
+## Referência visual de material de estudo — Drive, auditoria de 12/10/2026
 
 A pedido do responsável pela LURIA, foram examinados diretamente os PDFs disponibilizados no Drive:
 - \`02 - CORRIMENTOS VAGINAIS .pdf\`: **10 páginas**, composição em **duas colunas**, hierarquia cromática viva, quadro inicial com fluxograma diagnóstico, texto curto em blocos, gráficos, esquemas de microbiota e epitélio, imagem de microscopia real, comparativos e pequenos destaques.
 - \`02 - ASSISTENCIA AO PRE-NATAL.pdf\`: **8 páginas**, duas colunas, visão de alto rendimento na abertura, tabelas compactas, ilustrações clínicas, esquemas, caixas realçadas e subtítulos frequentes.
 - Como controle, outras três referências consultadas (\`01 - IAMCSST.pdf\`, \`01 - CIRURGIA CARDIACA - DOENCA DA AORTA.pdf\`, \`12 - ABDOME AGUDO OBSTRUTIVO.pdf\`) tinham 9, 10 e 4 páginas. **Não afirmar que essas referências específicas possuem 40–60 páginas**, pois não possuem.
 
-**O que se deve emular:** princípios gerais de linguagem editorial de cursinho de medicina — fragmentação pedagógica, duas colunas em páginas impressas quando couber, ótima densidade informativa, figuras orientadas por raciocínio, quadros de prova, distinção clínica e algoritmos reais. **Não copiar texto, ilustrações proprietárias, logotipos, assinatura de marca, composição idêntica ou elementos gráficos protegidos dos arquivos externos.** Manter identidade azul/rosa/escuro e visual LURIA.
+**O que se deve emular:** princípios gerais de linguagem editorial de material de estudo de medicina — fragmentação pedagógica, duas colunas em páginas impressas quando couber, ótima densidade informativa, figuras orientadas por raciocínio, quadros de prova, distinção clínica e algoritmos reais. **Não copiar texto, ilustrações proprietárias, logotipos, assinatura de marca, composição idêntica ou elementos gráficos protegidos dos arquivos externos.** Manter identidade azul/rosa/escuro e visual LURIA.
 
 ### Formato digital e impressão
 1. O site LURIA é **responsivo e de rolagem contínua**, portanto **não converter todo o conteúdo em cartões enormes nem fixar dimensões A4 na tela do PWA**. Na versão desktop, usar ocasionalmente duas colunas internas quando isso melhora leituras comparativas; em telas estreitas, empilhar em uma coluna sem reduzir legibilidade.
@@ -279,7 +279,7 @@ A pedido do responsável pela LURIA, foram examinados diretamente os PDFs dispon
 9. **Aprovação editorial final requer comparação visual de antes/depois**, manutenção dos elementos originais e avaliação de uma amostra de tela mobile + desktop + exportação/print.
 10. O nível de aprofundamento não será medido por total de páginas isoladamente, mas também pela completude, legibilidade, valor pedagógico e fidelidade às diretrizes atuais.
 
-**Meta de percepção:** parecer uma apostila de cursinho premium com identidade própria da LURIA, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
+**Meta de percepção:** parecer uma apostila de material de estudo premium com identidade própria da LURIA, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
 
 
 ---
@@ -350,7 +350,7 @@ A apostila deve ter identidade gráfica consistente, leitura agradável e **rela
 
 
 
-## Ajuste final de legibilidade — referência visual de cursinhos
+## Ajuste final de legibilidade — referência visual de material de estudo
 
 Comparação feita com os PDFs de referência da pasta do responsável ("02 - CORRIMENTOS VAGINAIS .pdf" e "02 - ASSISTENCIA AO PRE-NATAL.pdf") e o padrão de apostila extensa + ficha de revisão de preparatórios para residência. **São inspirações para hierarquia, não autorização para copiar textos, imagens, identidade visual ou diagramação proprietária.**
 
@@ -385,7 +385,7 @@ A qualidade deve ser avaliada por perguntas clínicas reais que o material permi
 - se os parágrafos mantêm comprimento confortável, títulos seguem ordem didática, exemplos aparecem após fundamentos e a bibliografia é verificável;
 - se a leitura em computador e PWA não exige fonte pequena, largura excessiva, galerias repetidas ou deslocamento lateral de toda a página.
 
-**Referência dos cursinhos do Drive**: estudar a hierarquia de capítulos, tabelas resumidas de decisão, recursos visuais oportunos, quantidade de explicação por assunto e espaçamentos. Recriar linguagem e figuras originais e adaptar para leitura digital. Não copiar seu texto, páginas, design proprietário ou imagens sem licença.
+**Referência dos material de estudo do Drive**: estudar a hierarquia de capítulos, tabelas resumidas de decisão, recursos visuais oportunos, quantidade de explicação por assunto e espaçamentos. Recriar linguagem e figuras originais e adaptar para leitura digital. Não copiar seu texto, páginas, design proprietário ou imagens sem licença.
 
 **Critério de aprovação:** selecionar um conjunto diverso de questões representativas da residência para cada capítulo; só considerar o caderno autossuficiente quando a maior parte das respostas puder ser fundamentada por trechos do próprio caderno, sem depender de conhecimento não ensinado. A revisão permanece aberta até esse teste; a contagem de caracteres, isoladamente, não prova suficiência.
 

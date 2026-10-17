@@ -3,7 +3,7 @@ Teste-18-09-2026---18-53-download.pdf
 
 RESULTADO ESPERADO
 - 20 questões detectadas
-- fonte: MedCof QBank
+- fonte: formato-estruturado banco de questões
 - seção GABARITO detectada
 - gabarito com 20 entradas:
   1 A

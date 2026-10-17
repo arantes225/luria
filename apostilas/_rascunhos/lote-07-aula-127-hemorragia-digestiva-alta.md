@@ -17,7 +17,7 @@
 - “01 - ENDOSCOPIA - ULCERA PEPTICA.pdf”, cerca de 9 mil caracteres. Explica fisiologia gástrica, úlcera péptica, classificação de Forrest, ligadura de relação com H. pylori e opções de hemostasia. Há números históricos muito categóricos sobre associação entre úlcera e H. pylori e material não atualizado para novas alternativas de hemostasia.
 - “04 - GASTRO - ASCITE + PBE.pdf” e “05 - GASTRO - ENCEFALOPATIA HEPATICA SINDROME HEPATORRENAL.pdf”, também lidos na aula 126, foram utilizados somente como contexto de complicações hepáticas e riscos de hipervolemia/IRA em pacientes com HDA varicosa.
 
-Esses textos são material de comparação de escopo, **não transcrição nem fonte mais forte que diretriz**. Seus créditos indicam circulação “Medicina livre”; a atribuição a Estratégia MED **não foi confirmada**. A apostila da aula 127 deve superar a separação rígida “HDA é varizes” e organizar um fluxograma único inicial com dois caminhos terapêuticos após identificar etiologia provável.
+Esses textos são material de comparação de escopo, **não transcrição nem fonte mais forte que diretriz**. Seus créditos indicam circulação “Medicina livre”; a atribuição a material de referência **não foi confirmada**. A apostila da aula 127 deve superar a separação rígida “HDA é varizes” e organizar um fluxograma único inicial com dois caminhos terapêuticos após identificar etiologia provável.
 
 **Atualização que muda o ensino:** a ESGE publicou em **13/05/2026** nova diretriz específica de **sangramento por úlcera péptica**, posterior ao documento geral de HDA não varicosa de 2021. Mudanças relevantes: não exigir EDA ≤6/≤12 horas em paciente estável com sangramento ulceroso; cautela com pré-EDA e preferência por hemostasia especializada; considerar tratamento de coágulo aderido Forrest IIb em mãos capacitadas; reconhecer clipes over-the-scope (OTS) como alternativa primária em sangramento ativo de alto risco; e discutir embolização transarterial (TAE) em falha endoscópica. O tempo-alvo **de HDA varicosa segue outro algoritmo** (EDA idealmente ≤12 h após estabilização).
 
@@ -625,7 +625,7 @@ D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de 
 | 11 | Diagrama original mucosa gástrica e vaso subjacente | Fisiologia da úlcera sangrante |
 | 12 | Fluxograma autoral varicosa × não varicosa com relógios | Fixar ≤12 h e ≤24 h conforme síndrome |
 
-**Regra:** nenhum arquivo foi obtido, licenciado ou incluído neste rascunho. Antes de entrada no produto, validar fonte confiável, fidelidade do diagnóstico, licença para uso comercial, créditos, compressão WebP, tamanho responsivo e fluxo de aprovação no Admin. Proibida reprodução das ilustrações de cursinho encontradas no Drive.
+**Regra:** nenhum arquivo foi obtido, licenciado ou incluído neste rascunho. Antes de entrada no produto, validar fonte confiável, fidelidade do diagnóstico, licença para uso comercial, créditos, compressão WebP, tamanho responsivo e fluxo de aprovação no Admin. Proibida reprodução das ilustrações de material de estudo encontradas no Drive.
 
 ## 17. Fontes científicas e registro de atualização
 
@@ -650,7 +650,7 @@ D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de 
 ## 18. Auditoria parcial e pendências
 
 - [x] Conteúdo original estruturado por fisiopatologia, gravidade, etiologia e manejo.
-- [x] Dois benchmarks equivalentes em subtemas (HDA varicosa e úlcera) efetivamente abertos e lidos; autoria institucional de cursinho não comprovada.
+- [x] Dois benchmarks equivalentes em subtemas (HDA varicosa e úlcera) efetivamente abertos e lidos; autoria institucional de material de estudo não comprovada.
 - [x] Diferença de timing **varicosa ≤12 h × não varicosa ≤24 h** ensinada sem confundir estabilização com relógio.
 - [x] ESGE 2026 integrada em Forrest IIb, OTS, pro-cinéticos, ressangramento e cuidados pós-hemostasia.
 - [x] Fluxos, classificação Forrest, procedimentos endoscópicos, antibióticos em sangramento varicoso, TIPS.
@@ -670,7 +670,7 @@ D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de 
 
 ## 17A. Atualização temática e etapa zero repetida (15/10/2026)
 
-**Comparativos Drive efetivamente abertos:** "01 - ENDOSCOPIA - ULCERA PEPTICA.pdf" (9.035 caracteres extraídos), "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654), "02 - ESTOMAGO 2 ULCERA, H. PYLORI, GASTRITE ATROFICA E DISPEPSIA FUNCIONAL.pdf" (11.130) e "03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf" (6.806). São temas correlatos e **não** uma apostila profunda equivalente de HDA; autoria Estratégia MED não confirmada, e os materiais exibem marca "Medicina livre". Nenhuma figura/texto foi copiado. Algumas simplificações dos comparativos foram recusadas: úlcera duodenal sangrante não pode ser reduzida a "terapia dupla em toda Forrest"; terapia antitrombótica depende da indicação e do risco; endoscopia padrão **não alcança** todos segmentos após bypass; a diretriz ESGE 2026 altera Forrest IIb e resgate endoscópico.
+**Comparativos Drive efetivamente abertos:** "01 - ENDOSCOPIA - ULCERA PEPTICA.pdf" (9.035 caracteres extraídos), "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654), "02 - ESTOMAGO 2 ULCERA, H. PYLORI, GASTRITE ATROFICA E DISPEPSIA FUNCIONAL.pdf" (11.130) e "03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf" (6.806). São temas correlatos e **não** uma apostila profunda equivalente de HDA; autoria material de referência não confirmada, e os materiais exibem marca "Medicina livre". Nenhuma figura/texto foi copiado. Algumas simplificações dos comparativos foram recusadas: úlcera duodenal sangrante não pode ser reduzida a "terapia dupla em toda Forrest"; terapia antitrombótica depende da indicação e do risco; endoscopia padrão **não alcança** todos segmentos após bypass; a diretriz ESGE 2026 altera Forrest IIb e resgate endoscópico.
 
 **Principal referência nova verificada:** Gralnek IM et al. *Endoscopic diagnosis and management of peptic ulcer bleeding: European Society of Gastrointestinal Endoscopy Guideline — Update 2026.* *Endoscopy*. 2026;58:899–924. Epub 13/05/2026, DOI 10.1055/a-2863-8314, PMID 42127996. **Há errata publicada em 22/05/2026**, que deve ser lida antes da certificação editorial de quaisquer números/texto corrigidos: https://pubmed.ncbi.nlm.nih.gov/42127996/
 

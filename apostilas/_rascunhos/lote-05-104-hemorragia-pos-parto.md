@@ -4,7 +4,7 @@
 
 ## Etapa zero — referência comparativa e preservação
 
-**Referência efetivamente aberta no Google Drive:** “04 - HEMORRAGIA POS PARTO.pdf”, resumo extenso (~13 mil caracteres de texto extraído), com seções de definição, fatores de risco, prevenção, identificação da perda, índice de choque, quatro T, uterotônicos, ácido tranexâmico, procedimentos e sequência de abordagem. O arquivo traz marca de redistribuição “Medicina livre”, mas **a instituição autora e a procedência editorial original não foram comprovadas**; não será chamado de Estratégia MED, nem utilizado para reprodução de material protegido. URL do arquivo privado omitida do repositório público.
+**Referência efetivamente aberta no Google Drive:** “04 - HEMORRAGIA POS PARTO.pdf”, resumo extenso (~13 mil caracteres de texto extraído), com seções de definição, fatores de risco, prevenção, identificação da perda, índice de choque, quatro T, uterotônicos, ácido tranexâmico, procedimentos e sequência de abordagem. O arquivo traz marca de redistribuição “Medicina livre”, mas **a instituição autora e a procedência editorial original não foram comprovadas**; não será chamado de material de referência, nem utilizado para reprodução de material protegido. URL do arquivo privado omitida do repositório público.
 
 **LURIA existente inspecionada:** \`apostilas/assistencia-ao-parto/index.html\` (~83,8 mil caracteres de HTML). Contém seção introdutória de HPP, causas pelos quatro T, vigilância intraparto e prevenção; merece preservação. O propósito desta apostila 104 é expandir **diagnóstico e resposta à emergência hemorrágica**, sem copiar aquela abordagem geral nem substituir o arquivo existente. As duas apostilas deverão se remeter mutuamente na integração final.
 

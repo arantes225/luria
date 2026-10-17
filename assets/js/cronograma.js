@@ -2461,7 +2461,7 @@ function isPdfCourseNoiseLine(
     || normalized ===
       "alta media baixa bonus diamante"
     || normalized.startsWith(
-      "https://aulas.medcof.com.br/cronograma"
+      "https://"
     )
   ) {
     return true;

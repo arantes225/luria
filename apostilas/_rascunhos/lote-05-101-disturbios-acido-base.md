@@ -20,7 +20,7 @@ O modelo visual da apostila \`apostilas/amniorrexe-prematura/index.html\` foi ef
 
 **Material C — \`06 - DIABETES - EMERGENCIAS HIPERGLICEMICAS (CAD E EHH).pdf\`.** Foi aberto e lido como complemento contextual, principalmente para interpretação de CAD, beta-hidroxibutirato, cetose e acidose. Os critérios antigos de CAD enfatizam glicemia >250 mg/dL e usam o ânion gap como critério de resolução; **não reproduzir isso como definição atual**: o consenso ADA/EASD 2024 adotou glicemia ≥200 mg/dL ou história prévia de diabetes, com cetose e acidose, e recomenda beta-hidroxibutirato como indicador central. Não copiar protocolo de insulina/fluido desse resumo sem validação vigente.
 
-**Autoria:** esses três PDFs contêm marca de redistribuição educacional (“Medicina livre”), e não estabelecem vínculo institucional comprovado ao Estratégia MED. Foram utilizados exclusivamente para comparar abrangência, tópicos e lacunas; nenhuma figura, tabela ou trecho protegido foi reproduzido. Referências externas servem para correção e aprofundamento científico e estão discriminadas abaixo.
+**Autoria:** esses três PDFs contêm marca de redistribuição educacional (“Medicina livre”), e não estabelecem vínculo institucional comprovado ao material de referência. Foram utilizados exclusivamente para comparar abrangência, tópicos e lacunas; nenhuma figura, tabela ou trecho protegido foi reproduzido. Referências externas servem para correção e aprofundamento científico e estão discriminadas abaixo.
 
 ### 0.3. Fontes técnico-científicas para revisão
 
@@ -669,7 +669,7 @@ E. O cloro urinário decide sozinho a dose de bicarbonato IV.
 - **CAD/EHH:** consenso internacional ADA/EASD/JBDS/AACE/DTS 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/ — substitui cortes antigos de >250 mg/dL como definição única de CAD e não recomenda AG como critério primário de resolução se cetonemia estiver disponível.
 - **Acidemia grave com LRA:** Jung et al., BICARICU-2, JAMA 2025;334:2000–2010. https://jamanetwork.com/journals/jama/fullarticle/2840824 — mortalidade primária neutra; terapia renal substitutiva secundária reduzida no grupo bicarbonato.
 - **Salicilatos:** EXTRIP Workgroup, recomendações específicas. https://www.extrip-workgroup.org/salicylates — indicações extracorpóreas condicionadas por clínica, função renal, níveis e gravidade.
-- **Pontos divergentes com PDFs didáticos do Drive:** compensação crônica da hipercapnia, notação de AG, denominadores delta, limiares de cloro urinário e critérios diagnósticos/resolução de CAD. **Não reproduzir desatualizações apenas para manter identidade com cursinho.** A procedência institucional dos PDFs é não confirmada.
+- **Pontos divergentes com PDFs didáticos do Drive:** compensação crônica da hipercapnia, notação de AG, denominadores delta, limiares de cloro urinário e critérios diagnósticos/resolução de CAD. **Não reproduzir desatualizações apenas para manter identidade com material de estudo.** A procedência institucional dos PDFs é não confirmada.
 
 
 ## 24. Pendências para atingir o padrão final do lead_apostilas

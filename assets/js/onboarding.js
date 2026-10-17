@@ -22,8 +22,8 @@
     {page:"configuracoes", target:"[data-weekday], .weekday-grid, .study-days, .setting-row:nth-of-type(2)", title:"Dias de estudo", transparent:true, text:"Escolha em quais dias você quer estudar. O cronograma e as revisões respeitam essa disponibilidade."},
     {page:"configuracoes", target:".interval-editor, [data-interval-field]", title:"Revisões", text:"Defina os intervalos de revisão. O LURIA distribui as revisões dentro dos dias permitidos."},
 
-    {page:"cronograma", target:".topbar, .page-heading", title:"Seu cronograma", text:"O cronograma é a base da organização do LURIA. Você pode importar o material do cursinho por PDF ou Excel, ou montar tudo manualmente.", top:true, demo:"schedule"},
-    {page:"cronograma", target:"#file-drop, #schedule-file", title:"PDF, Excel ou manual", text:"PDF: envie o cronograma do cursinho. Excel: importe uma planilha estruturada. Manual: cadastre área, matéria, tema e data diretamente no LURIA.", top:true, noScroll:true, demo:"schedule"},
+    {page:"cronograma", target:".topbar, .page-heading", title:"Seu cronograma", text:"O cronograma é a base da organização do LURIA. Você pode importar o seu material de estudo por PDF ou Excel, ou montar tudo manualmente.", top:true, demo:"schedule"},
+    {page:"cronograma", target:"#file-drop, #schedule-file", title:"PDF, Excel ou manual", text:"PDF: envie o seu cronograma. Excel: importe uma planilha estruturada. Manual: cadastre área, matéria, tema e data diretamente no LURIA.", top:true, noScroll:true, demo:"schedule"},
     {page:"cronograma", target:".import-mode, [name=import-mode], #manual-topic-form", title:"Como importar", transparent:true, text:"Você decide se as aulas entram já programadas ou no Deck. O cadastro manual serve para inserir uma aula por vez sem arquivo.", demo:"schedule"},
     {page:"cronograma", target:"#deck-panel, #deck-list", title:"Deck", text:"O Deck é a área de espera das aulas ainda não programadas. Deixamos duas atividades simuladas aqui para você visualizar como funciona.", demo:"schedule"},
     {page:"cronograma", target:"#week-planner", title:"Semana", text:"As aulas programadas aparecem distribuídas na semana. Deixamos cinco atividades simuladas para mostrar a organização visual.", demo:"schedule"},
@@ -51,7 +51,7 @@
     {page:"questoes", target:"label[for='qs-file']", title:"Selecionar arquivo", text:"No modo automático, clique em Escolher PDF. Para o onboarding, o LURIA já separou um Simulado Onbording de Eletrocardiograma para demonstrar o fluxo sem usar nenhum arquivo seu.", action:"questions-file", transparent:true},
     {page:"questoes", target:"#qs-onboarding-pdf-preview", title:"Visualizando o PDF", text:"Antes de extrair, você consegue conferir o material. Durante esta etapa o PDF de demonstração percorre as páginas apenas para você visualizar como um arquivo real entra no fluxo.", action:"questions-pdf", transparent:true, forceCardTop:true},
     {page:"questoes", target:"#qs-extraction-mode", title:"Tipo de extração", text:"Extração rápida prioriza velocidade. Extração detalhada cruza mais estratégias e tenta preservar melhor questões, textos e imagens. Se o PDF for complexo, prefira a detalhada.", action:"questions-create", transparent:true},
-    {page:"questoes", target:"#qs-source-profile", title:"Origem do material", text:"Informe de onde veio o PDF. O perfil adapta a leitura ao padrão visual mais comum de cada cursinho, como MEDCOF, Aristo, Medway, Estratégia MED ou Medcurso. Neste exemplo usamos Geral.", action:"questions-create", transparent:true},
+    {page:"questoes", target:"#qs-source-profile", title:"Formato do PDF", text:"Escolha a estrutura do PDF para adaptar a leitura do documento. Neste exemplo usamos Geral.", action:"questions-create", transparent:true},
     {page:"questoes", target:"#qs-import", title:"Extrair questões", text:"Com o arquivo, o tipo de extração e a origem definidos, clique em Extrair questões. No onboarding simulamos o processamento local sem gravar nada no banco.", action:"questions-extract", transparent:true},
     {page:"questoes", target:"#qs-answer-panel, #qs-question-list", title:"Questões extraídas", text:"O LURIA separou as 10 questões do PDF. Aqui você confere cada questão individualmente antes de trabalhar com o gabarito.", action:"questions-answer", transparent:true},
     {page:"questoes", target:"#qs-open-answer-import", title:"Leitor de gabarito", text:"Depois das questões extraídas, você pode importar um print do resultado. O leitor identifica as questões corretas e erradas e prepara o preenchimento do gabarito.", action:"questions-reader", transparent:true},
@@ -92,7 +92,7 @@
   const SUMMARY_TITLES = new Set([
     "Prepare o seu LURIA","Seu cronograma","PDF, Excel ou manual","Flashcards",
     "Caderno de Erros","Questões e Simulados","Automático ou manual","Selecionar arquivo",
-    "Visualizando o PDF","Tipo de extração","Origem do material","Questões extraídas",
+    "Visualizando o PDF","Tipo de extração","Formato do PDF","Questões extraídas",
     "Leitor de gabarito","Gabarito reconhecido","Introduzir gabarito","Gabarito aplicado",
     "Enviar erros ao Caderno de Erros","Meus simulados","Dashboard","Estatísticas","Editais e Provas",
     "Amigos","Seu LURIA está pronto"
@@ -1740,7 +1740,7 @@
     {target:"label[for='qs-file']",title:"Selecionar PDF",text:"No modo automático, escolha o PDF do simulado. Para este guia, o LURIA carrega o mesmo PDF de demonstração usado no onboarding.",action:"questions-file"},
     {target:"#qs-onboarding-pdf-preview",title:"Visualizar o PDF",text:"O PDF-guia aparece aqui para você conferir o material antes da extração. Esta demonstração não grava nenhum arquivo novo na sua conta.",action:"questions-pdf"},
     {target:"#qs-extraction-mode",title:"Tipo de extração",text:"Rápida é mais ágil. Detalhada usa mais estratégias e é indicada quando o PDF tem imagens, colunas ou diagramação complexa.",action:"questions-create"},
-    {target:"#qs-source-profile",title:"Origem do material",text:"Escolha a origem do material para adaptar o extrator ao padrão visual mais provável do PDF.",action:"questions-create"},
+    {target:"#qs-source-profile",title:"Formato do PDF",text:"Escolha a origem do material para adaptar o extrator ao padrão visual mais provável do PDF.",action:"questions-create"},
     {target:"#qs-import",title:"Extrair questões",text:"Aqui o LURIA extrai as questões do PDF de demonstração. No guia, usamos a mesma simulação segura do onboarding.",action:"questions-extract"},
     {target:"#qs-question-list",title:"Questões extraídas",text:"Depois da extração, as questões aparecem separadas e prontas para receber o resultado do gabarito.",action:"questions-answer"},
     {target:"#qs-open-answer-import",title:"Adicionar gabarito",text:"Agora abrimos o leitor de gabarito. O guia carrega o gabarito de demonstração que já existe no site, igual ao onboarding.",action:"questions-reader"},

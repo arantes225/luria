@@ -8,7 +8,7 @@
 
 ## Registro obrigatório da etapa zero — benchmark pedagógico
 
-- **Material do Google Drive efetivamente aberto:** “13 - ABDOME AGUDO PERFURATIVO.pdf”, texto recuperado e lido em 14/10/2026. Cerca de 4 mil caracteres de tópicos sobre úlcera perfurada, pneumoperitônio, sítios gastrointestinais, achados radiográficos e cirurgia. O próprio texto exibe identificação de circulação “Medicina livre”; **não foi verificada autoria da Estratégia MED**.
+- **Material do Google Drive efetivamente aberto:** “13 - ABDOME AGUDO PERFURATIVO.pdf”, texto recuperado e lido em 14/10/2026. Cerca de 4 mil caracteres de tópicos sobre úlcera perfurada, pneumoperitônio, sítios gastrointestinais, achados radiográficos e cirurgia. O próprio texto exibe identificação de circulação “Medicina livre”; **não foi verificada autoria da material de referência**.
 - **Comparação com LURIA:** a pasta “apostilas/perfuracao-de-viscera-oca” não estava presente no inventário nominal consultado. Este rascunho inaugura cobertura específica, sem modificar apostilas aprovadas nem copiar estrutura textual ou figuras do comparativo.
 - **Lacunas do benchmark:** diferenças entre perfuração livre, bloqueada, contida e retroperitoneal; fisiologia do peritônio; interpretação e limitações da radiografia e TC; raciocínio por topografia; sepse e controle de foco; critérios rigorosos para não operar; papel e limitações de laparoscopia; câncer em úlcera gástrica; manejo das perfurações colônicas; seguimento e antibiótico segundo controle de foco; questões e casos com resolução de cada alternativa.
 - **Cautela científica:** o comparativo traz porcentagens etiológicas muito categóricas para H. pylori e recomendações cirúrgicas uniformes para perfurações esofágicas. Essas afirmações não são reproduzidas como verdades universais: a indicação depende da etiologia, topografia, viabilidade e estabilidade, com atualização em fontes primárias.
@@ -313,7 +313,7 @@ Em candidemia ou peritonite fúngica verdadeira, escolher agente de acordo com e
 - **Carbapenêmicos:** selecionar pela resistência provável; não usar como "mais forte" indiscriminadamente.
 - **Antifúngicos:** interações, hepatotoxicidade, ajuste renal e susceptibilidade específica.
 
-O aspecto farmacológico de prescrição segura demanda tabelas por peso, dose em mg/kg, máximo, preparo, função renal e protocolo institucional; **não deduzir essas doses de resumos não normativos de cursinho**.
+O aspecto farmacológico de prescrição segura demanda tabelas por peso, dose em mg/kg, máximo, preparo, função renal e protocolo institucional; **não deduzir essas doses de resumos não normativos de material de estudo**.
 
 ## 10. Situações especiais
 
@@ -591,7 +591,7 @@ D. Culturas negativas excluem perfuração.
 
 ## 17A. Fontes específicas da segunda etapa e comparativo de 15/10/2026
 
-**Etapa zero repetida:** "13 - ABDOME AGUDO PERFURATIVO.pdf" (~4.012 caracteres extraídos), "Doença Ulcerosa Péptica.pdf" (~2.869) e "10 - ABDOME AGUDO INFLAMATORIO - DIVERTICULITE AGUDA.pdf" (~6.088) foram abertos e lidos antes desta edição, sem atribuição institucional verificável a Estratégia MED. O primeiro oferece resumo de úlcera perfurada e radiografia, mas simplifica a decisão na perfuração esofágica; o último associa Hinchey IV automaticamente a Hartmann, o que **não representa decisão universal**. O rascunho LURIA já cobria mecanismos básicos, logo a ampliação foi posicionada em diagnóstico (§6), estratégia de controle (§8), antibioticoterapia (§9), casos (§13) e questões (§14), para não criar repetição extensa. Nenhum texto, imagem ou tabela do Drive foi copiado.
+**Etapa zero repetida:** "13 - ABDOME AGUDO PERFURATIVO.pdf" (~4.012 caracteres extraídos), "Doença Ulcerosa Péptica.pdf" (~2.869) e "10 - ABDOME AGUDO INFLAMATORIO - DIVERTICULITE AGUDA.pdf" (~6.088) foram abertos e lidos antes desta edição, sem atribuição institucional verificável a material de referência. O primeiro oferece resumo de úlcera perfurada e radiografia, mas simplifica a decisão na perfuração esofágica; o último associa Hinchey IV automaticamente a Hartmann, o que **não representa decisão universal**. O rascunho LURIA já cobria mecanismos básicos, logo a ampliação foi posicionada em diagnóstico (§6), estratégia de controle (§8), antibioticoterapia (§9), casos (§13) e questões (§14), para não criar repetição extensa. Nenhum texto, imagem ou tabela do Drive foi copiado.
 
 4. Tarasconi A et al. **Perforated and bleeding peptic ulcer: WSES guidelines.** *World J Emerg Surg*. 2020;15:3. DOI 10.1186/s13017-019-0283-9. https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/
 5. Sartelli M et al. **2020 update of the WSES guidelines for acute colonic diverticulitis in the emergency setting.** *World J Emerg Surg*. 2020;15:32. DOI 10.1186/s13017-020-00313-4. https://pmc.ncbi.nlm.nih.gov/articles/PMC7206757/

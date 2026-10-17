@@ -20,7 +20,7 @@ A referência visual \`apostilas/amniorrexe-prematura/index.html\` foi inspecion
 
 **Referência terciária:** \`03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf\`, com seção sobre hérnia interna após derivação gástrica, clínica intermitente e limitações da TC. Útil para identificar a necessidade de capítulo de alto risco pós-bariátrica, evitando concluir que TC normal exclui hérnia interna se a suspeita clínica for alta.
 
-**Autoria:** os arquivos apresentam marcas de redistribuição e/ou autoria individual, sem comprovação de vínculo institucional com Estratégia MED. É incorreto denominá-los material oficial do cursinho. A comparação foi estrutural e crítica, não cópia textual.
+**Autoria:** os arquivos apresentam marcas de redistribuição e/ou autoria individual, sem comprovação de vínculo institucional com material de referência. É incorreto denominá-los material oficial do material de estudo. A comparação foi estrutural e crítica, não cópia textual.
 
 ### 0.3. Fontes externas de atualização
 
@@ -373,7 +373,7 @@ Uma alça estrangulada pode progredir para necrose, perfuração e peritonite fe
 
 ## 17. Volvo de sigmoide e ceco segundo a ASCRS: por que um não é tratado como o outro
 
-A **American Society of Colon and Rectal Surgeons (ASCRS)** publicou diretriz específica em 2021 para volvo de cólon e pseudo-obstrução colônica aguda. Diferentemente do resumo de cursinho, a orientação distingue viabilidade, localização e necessidade de prevenção de recidiva.
+A **American Society of Colon and Rectal Surgeons (ASCRS)** publicou diretriz específica em 2021 para volvo de cólon e pseudo-obstrução colônica aguda. Diferentemente do resumo de material de estudo, a orientação distingue viabilidade, localização e necessidade de prevenção de recidiva.
 
 ### 17.1. Sigmoide sem isquemia
 
